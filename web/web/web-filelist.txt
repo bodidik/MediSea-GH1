@@ -1,1 +1,0 @@
-web\app\sections\behcet\page.tsx

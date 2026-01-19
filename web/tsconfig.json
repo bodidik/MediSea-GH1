@@ -47,6 +47,8 @@
     "node_modules",
     "tests",
     "vitest.config.ts",
-    "vitest.setup.ts"
+    "vitest.setup.ts",
+    ".next",
+    "__route_archive"
   ]
 }

@@ -1,62 +1,38 @@
-// FILE: web/app/api/revalidate/route.ts
-// On-Demand Revalidation for App Router (Next.js 14)
-import { backendBase } from "@/lib/backend";
-// Secure with Bearer token. Supports tag(s) and path(s).
+import { NextRequest, NextResponse } from "next/server";
 
-import { NextResponse } from "next/server";
-import { revalidatePath, revalidateTag } from "next/cache";
-
-export const runtime = "nodejs"; // cache APIs require Node runtime
-
-function unauthorized(msg = "Unauthorized") {
-  return NextResponse.json({ ok: false, error: msg }, { status: 401 });
-}
-
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  // 1) Token: Bearer / ?secret= / x-revalidate-token
   const auth = req.headers.get("authorization") || "";
-  const token = auth.startsWith("Bearer ") ? auth.slice(7) : "";
+  const bearer = auth.replace(/^Bearer\s+/i, "").trim();
+  const qs = new URL(req.url).searchParams.get("secret") || "";
+  const alt = req.headers.get("x-revalidate-token") || "";
+  const token = bearer || qs || alt;
 
-  if (!process.env.REVALIDATE_SECRET) {
-    return NextResponse.json({ ok: false, error: "REVALIDATE_SECRET missing" }, { status: 500 });
-  }
-  if (token !== process.env.REVALIDATE_SECRET) {
-    return unauthorized();
+  if (!process.env.REVALIDATE_SECRET || token !== process.env.REVALIDATE_SECRET) {
+    return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 
-  let body: any = {};
+  // 2) Body: { paths?: string[], tags?: string[] }
+  let body: { paths?: string[]; tags?: string[] } = {};
+  try { body = await req.json(); } catch {}
+
+  const paths = Array.isArray(body.paths) ? body.paths : [];
+  const tags  = Array.isArray(body.tags)  ? body.tags  : [];
+
+  // 3) Revalidate
   try {
-    body = await req.json();
-  } catch {
-    // allow empty body
+    const jobs: Promise<any>[] = [];
+    // @ts-ignore - Next provides these in route handlers
+    const rp = (global as any).revalidatePath;
+    // @ts-ignore
+    const rt = (global as any).revalidateTag;
+
+    for (const p of paths) if (rp) jobs.push(rp(p));
+    for (const t of tags)  if (rt) jobs.push(rt(t));
+    await Promise.all(jobs);
+
+    return NextResponse.json({ ok: true, paths, tags });
+  } catch (err: any) {
+    return NextResponse.json({ ok: false, error: String(err?.message || err) }, { status: 500 });
   }
-
-  const tags: string[] = [];
-  const paths: string[] = [];
-
-  if (typeof body?.tag === "string") tags.push(body.tag);
-  if (Array.isArray(body?.tags)) tags.push(...body.tags.filter((x: any) => typeof x === "string"));
-
-  if (typeof body?.path === "string") paths.push(body.path);
-  if (Array.isArray(body?.paths)) paths.push(...body.paths.filter((x: any) => typeof x === "string"));
-
-  // No input? Fail fast
-  if (tags.length === 0 && paths.length === 0) {
-    return NextResponse.json({ ok: false, error: "Provide tag(s) or path(s)" }, { status: 400 });
-  }
-
-  // Deduplicate
-  const uniqTags = [...new Set(tags)];
-  const uniqPaths = [...new Set(paths)];
-
-  // Revalidate
-  for (const t of uniqTags) revalidateTag(t);
-  for (const p of uniqPaths) revalidatePath(p);
-
-  return NextResponse.json({ ok: true, revalidated: { tags: uniqTags, paths: uniqPaths } });
 }
-
-export function GET() {
-  // Optional health endpoint (does not revalidate). Useful for uptime checks.
-  return NextResponse.json({ ok: true, service: "revalidate" });
-}
-

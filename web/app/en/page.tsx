@@ -1,33 +1,83 @@
+// FILE: web/app/en/page.tsx
 export const revalidate = 0;
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
+import navConfig from "@/app/config/nav";
 
-const sections = [
-  { href: "/en/sections/romatoloji", title: "Rheumatology" },
-  { href: "/en/sections/hematoloji", title: "Hematology" },
-  { href: "/en/sections/endokrinoloji", title: "Endocrinology" },
-  { href: "/en/sections/nefroloji", title: "Nephrology" },
-  { href: "/en/sections/gastroenteroloji", title: "Gastroenterology" },
-  { href: "/en/sections/kardiyoloji", title: "Cardiology" },
-  { href: "/en/sections/enfeksiyon-hastaliklari", title: "Infectious Diseases" },
-  { href: "/en/sections/onkoloji-hematolojik-onkoloji", title: "Oncology & Hematologic Oncology" },
-  { href: "/en/sections/pulmonoloji", title: "Pulmonology" },
-  { href: "/en/sections/alerji-immunoloji", title: "Allergy & Immunology" },
-  { href: "/en/sections/geriatri-genel-dahiliye", title: "Geriatrics & General Medicine" },
-  { href: "/en/sections/yogun-bakim-acil-dahiliye", title: "Critical Care & Emergency Medicine" },
-  { href: "/en/sections/palyatif-bakim", title: "Palliative Care" }
-  // Health Board (saglik-kurulu) intentionally omitted in EN
-];
+// EN section whitelist / mapping (TR slug -> EN route + title)
+const EN_SECTIONS: Record<
+  string,
+  { href: string; title: string }
+> = {
+  romatoloji: { href: "/en/sections/romatoloji", title: "Rheumatology" },
+  hematoloji: { href: "/en/sections/hematoloji", title: "Hematology" },
+  endokrinoloji: { href: "/en/sections/endokrinoloji", title: "Endocrinology" },
+  nefroloji: { href: "/en/sections/nefroloji", title: "Nephrology" },
+  gastroenteroloji: { href: "/en/sections/gastroenteroloji", title: "Gastroenterology" },
+  kardiyoloji: { href: "/en/sections/kardiyoloji", title: "Cardiology" },
+
+  // TR navConfig'de "infeksiyon" var; EN'de route farklı
+  infeksiyon: { href: "/en/sections/enfeksiyon-hastaliklari", title: "Infectious Diseases" },
+
+  // TR navConfig'de "onkoloji" var; EN'de route farklı
+  onkoloji: { href: "/en/sections/onkoloji-hematolojik-onkoloji", title: "Oncology & Hematologic Oncology" },
+
+  // TR navConfig'de "gogus" var; EN'de pulmonoloji
+  gogus: { href: "/en/sections/pulmonoloji", title: "Pulmonology" },
+
+  // TR navConfig'de "immunoloji" var; EN'de allergy & immunology
+  immunoloji: { href: "/en/sections/alerji-immunoloji", title: "Allergy & Immunology" },
+
+  // TR navConfig'de "geriatri" var; EN'de geriatrics & general medicine
+  geriatri: { href: "/en/sections/geriatri-genel-dahiliye", title: "Geriatrics & General Medicine" },
+
+  // EN'de ayrıca kritik bakım sayfası var; TR nav'de yok, o yüzden burada ayrıca ekliyoruz
+  __extra_icu__: { href: "/en/sections/yogun-bakim-acil-dahiliye", title: "Critical Care & Emergency Medicine" },
+  __extra_palliative__: { href: "/en/sections/palyatif-bakim", title: "Palliative Care" },
+};
+
+function sectionSlugFromHref(href: string) {
+  // "/sections/nefroloji" -> "nefroloji"
+  const parts = String(href || "").split("/").filter(Boolean);
+  if (parts.length >= 2 && parts[0] === "sections") return parts[1];
+  return parts[parts.length - 1] || "";
+}
 
 export default function Page() {
+  // navConfig sırasını koruyalım; sadece EN_SECTIONS'da olanları listeleyelim (404 riskini sıfırlar)
+  const fromNav = navConfig.sections
+    .map((s) => sectionSlugFromHref(s.href))
+    .map((slug) => EN_SECTIONS[slug])
+    .filter(Boolean) as { href: string; title: string }[];
+
+  // EN'e özel ekler (nav sırasına bağlı değil)
+  const extras = [EN_SECTIONS.__extra_icu__, EN_SECTIONS.__extra_palliative__].filter(Boolean) as {
+    href: string;
+    title: string;
+  }[];
+
+  const sections = [...fromNav, ...extras];
+
   return (
-    <main className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">MediSea — Internal Medicine (EN)</h1>
-      <p className="opacity-70 mb-6">Pick a section to browse its topics in English.</p>
+    <main className="max-w-6xl mx-auto p-6 space-y-6">
+      <header className="space-y-2">
+        <h1 className="text-3xl font-bold">MediSea — Internal Medicine (EN)</h1>
+        <p className="opacity-70">Pick a section to browse its topics in English.</p>
+        <div className="text-sm">
+          <Link href="/en/sections" className="underline opacity-80 hover:opacity-100">
+            Sections index →
+          </Link>
+        </div>
+      </header>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {sections.map(it => (
-          <Link key={it.href} href={it.href} className="block border rounded-xl p-4 hover:shadow">
+        {sections.map((it) => (
+          <Link
+            key={it.href}
+            href={it.href}
+            className="block border rounded-xl p-4 hover:shadow bg-white"
+          >
             <div className="font-semibold">{it.title}</div>
             <div className="text-xs opacity-60">{it.href}</div>
           </Link>
@@ -36,5 +86,4 @@ export default function Page() {
     </main>
   );
 }
-
 

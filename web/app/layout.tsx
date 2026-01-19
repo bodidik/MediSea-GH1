@@ -3,8 +3,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Merriweather, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/app/components/AppShell";
-export const revalidate = 0;
-export const dynamic = "force-dynamic";
 
 // Google Fonts (TR/EN uyumlu)
 const inter = Inter({
@@ -31,13 +29,13 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Medknowledge",
-    template: "%s � Medknowledge",
+    template: "%s   Medknowledge",
   },
-  description: "�� hastal�klar� e�itim ve s�nav platformu",
+  description: "   hastal klar  e itim ve s nav platformu",
   applicationName: "Medknowledge",
   authors: [{ name: "Medknowledge" }],
   keywords: [
-    "i� hastal�klar�",
+    "i  hastal klar ",
     "nefroloji",
     "hematoloji",
     "endokrinoloji",
@@ -50,7 +48,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Medknowledge",
-    description: "�� hastal�klar� e�itim ve s�nav platformu",
+    description: "   hastal klar  e itim ve s nav platformu",
     type: "website",
     locale: "tr_TR",
     siteName: "Medknowledge",

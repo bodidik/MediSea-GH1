@@ -1,25 +1,11 @@
-import fs from "fs";
-import path from "path";
+export type ChildLink = { href: string; label: string };
 
-export function getChildLinks(appSubPath) {
-  const baseDir = path.join(process.cwd(), "app", appSubPath);
-  let entries = [];
-  try {
-    entries = fs
-      .readdirSync(baseDir, { withFileTypes: true })
-      .filter(d => d.isDirectory())
-      .map(d => d.name)
-      .filter(slug => fs.existsSync(path.join(baseDir, slug, "page.tsx")));
-  } catch { entries = []; }
-
-  const toTitle = s =>
-    s.split("-").map(w => w && w[0].toUpperCase() + w.slice(1)).join(" ");
-
-  return entries
-    .map(slug => ({
-      slug,
-      title: toTitle(slug),
-      href: `/${appSubPath}/${slug}`,
-    }))
-    .sort((a, b) => a.title.localeCompare(b.title, "tr"));
+export function getChildLinks(appSubPath: string): ChildLink[] {
+  const entries: ChildLink[] = [];
+  const toTitle = (s: string) =>
+    s.split("-").map((w: string) => (w ? w[0].toUpperCase() + w.slice(1) : "")).join(" ");
+  // TODO: Gerekirse appSubPath'e özel mapping ekleyebilirsin.
+  return entries;
 }
+
+export default getChildLinks;

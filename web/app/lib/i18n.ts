@@ -313,6 +313,7 @@ export function t(key: string, lang?: Lang) {
 
 export function setLang(lang: Lang) {
   if (typeof document === "undefined") return;
-  document.cookie = `mk_lang=${lang}; path=/; max-age=${60 * 60 * 24 * 365}`;
-  location.reload();
+  document.cookie = `mk_lang=${lang}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
 }
+
+

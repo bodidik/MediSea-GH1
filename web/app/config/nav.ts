@@ -1,15 +1,16 @@
 // FILE: web/app/config/nav.ts
 
-// Üst gezinme menüsü
 export const topNav = [
   { label: "Ana Sayfa", href: "/" },
-  { label: "Bölümler", href: "#sections" }, // AppShell içinde dropdown tetikler
+  { label: "Bölümler", href: "/sections" },
+  { label: "Konular", href: "/topics" },
   { label: "Hesaplamalar", href: "/tools" },
   { label: "Kılavuzlar", href: "/guidelines" },
   { label: "Premium", href: "/premium" },
   { label: "YDUS", href: "/programs?track=YDUS" },
   { label: "USMLE", href: "/programs?track=USMLE" },
 ];
+
 
 // Dahiliye alt bölümler
 export const sections = [

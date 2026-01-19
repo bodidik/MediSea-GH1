@@ -47,7 +47,7 @@ export default function RomatolojiIndex() {
       <ul className="list-disc pl-5 space-y-1">
         {TOPICS.map(item => (
           <li key={item.slug}>
-            <Link href={`/topics/romatoloji/${item.slug}`} className="underline">
+            <Link href={`./${item.slug}`} className="underline">
               {item.title}
             </Link>
           </li>

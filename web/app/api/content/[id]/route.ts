@@ -1,18 +1,14 @@
-// FILE: web/app/api/content/[id]/route.ts
-import { backendBase } from "@/lib/backend";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: Request) {
-const backend = backendBase();
-  const { id } = await (context as any).params;
-  const r = await fetch(`${backend}/api/content/${encodeURIComponent(id)}`, { cache: "no-store" });
-  const j = await r.json();
-  return new Response(JSON.stringify(j), {
-    headers: { "Content-Type": "application/json" },
-    status: r.status,
-  });
+export async function GET(
+  req: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  try {
+    const { id } = params;
+    // TODO: mevcut içeriğini buraya taşı (id ile içerik getir)
+    return NextResponse.json({ ok: true, id });
+  } catch (err: any) {
+    return NextResponse.json({ ok: false, error: String(err?.message || err) }, { status: 500 });
+  }
 }
-
-
-
-
-

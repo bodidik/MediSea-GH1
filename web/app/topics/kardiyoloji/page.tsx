@@ -3,7 +3,7 @@ export const revalidate = 7776000;
 import ChildLinks from "@/components/ChildLinks";
 import Link from "next/link";
 
-const items = [];
+const items: Array<{ href: string; label: string }> = [];
 export default function Page() {
   return (
     <main className="max-w-5xl mx-auto p-6">
@@ -20,6 +20,7 @@ export default function Page() {
 </main>
   );
 }
+
 
 
 
