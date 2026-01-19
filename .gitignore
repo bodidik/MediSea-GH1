@@ -48,3 +48,14 @@ server/.env
 server/.env
 web/.env.local
 web/.vercel/
+
+# Catch-all env variants
+.env.*
+!.env.example
+!.env.*.example
+
+# Runtime data
+data/
+tmp/
+temp/
+uploads/
