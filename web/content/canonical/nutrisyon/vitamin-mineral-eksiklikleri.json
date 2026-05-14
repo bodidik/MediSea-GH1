@@ -1,0 +1,19 @@
+{
+  "title": "Ch 326: Vitamin ve Eser Element Eksiklikleri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nütrisyon", "B12", "D Vitamini", "Çinko"],
+    "parent": "nutrisyon-hastaliklari",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Suda Eriyen Vitaminler",
+      "text": "<ul class='list-none space-y-2 mt-2'><li class='bg-blue-50 p-2 rounded'>🧠 <strong>Tiamin (B1):</strong> Alkoliklerde eksikliği <strong>Wernicke-Korsakoff</strong> (Ataksi, Konfüzyon, Oftalmopleji) yapar. Önce Tiamin, sonra Glikoz verilmelidir!</li><li class='bg-red-50 p-2 rounded'>🩸 <strong>Kobalamin (B12):</strong> Megaloblastik anemi ve subakut kombine dejenerasyon (Nöropati) yapar.</li><li class='bg-orange-50 p-2 rounded'>🍊 <strong>C Vitamini:</strong> Skorbüt (Diş eti kanaması, peteşi, yara iyileşmesinde gecikme).</li></ul>"
+    },
+    {
+      "heading": "Yağda Eriyenler ve Mineraller",
+      "text": "<div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-yellow-50 p-3 rounded'><strong class='text-yellow-900'>D Vitamini:</strong> Osteomalazi (Yetişkin) ve Raşitizm (Çocuk). Kas güçsüzlüğü yapar.</div><div class='bg-gray-50 p-3 rounded'><strong class='text-gray-900'>Çinko:</strong> Tat duyusu kaybı (Dizgözi), dermatit (Akrodermatitis enteropatika) ve yara iyileşmesinde bozulma.</div></div>"
+    }
+  ]
+}

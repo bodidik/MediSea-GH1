@@ -1,0 +1,14 @@
+{
+  "title": "Hematopoez ve Kanın Biyolojisi",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "Fizyoloji", "Harrison"],
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Bölüm Özeti",
+      "text": "<p>Kan yapımı (hematopoez), kök hücre biyolojisi ve periferik yayma yorumlama prensipleri.</p>"
+    }
+  ]
+}

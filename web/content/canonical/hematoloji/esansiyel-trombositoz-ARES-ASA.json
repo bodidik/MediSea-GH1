@@ -1,0 +1,23 @@
+{
+  "title": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Hematoloji", "ET", "ARES Çalışması", "Plain Aspirin", "Yalancı Direnç", "Farmakokinetik"],
+    "parent": "esansiyel-trombositoz",
+    "order": 14
+  },
+  "sections": [
+    {
+      "heading": "4. Enterik Kaplı (EC) Aspirin ve 'Yalancı Direnç' Paradoksu",
+      "html": "<p>ET hastalarında saptanan aspirin direncinin önemli bir kısmı, ilaçtan ziyade <strong>formülasyon kaynaklıdır</strong>. EC aspirin mideden ziyade ince bağırsakta emildiği için düz (plain) aspirine kıyasla daha geç <strong>Tmax</strong> ve daha düşük <strong>Cmax</strong> değerlerine sahiptir. Bu farmakokinetik profil, ET'deki hipermetabolik trombosit üretimiyle birleştiğinde <strong>TxA2 inhibisyonunda yetersizliğe</strong> (yalancı direnç) yol açar.</p>"
+    },
+    {
+      "heading": "5. Düz (Plain) Aspirinin Farmakolojik Üstünlüğü",
+      "html": "<p>ARES çalışması verileri, EC formuna dirençli ET hastalarında düz aspirine geçildiğinde trombosit aktivasyon parametrelerinin hızla normale döndüğünü kanıtlamıştır. Düz aspirin:</p><ul class=\"mb-4\"><li>Bireyler arası ihmal edilebilir değişkenlikle hızlı emilim sağlar.</li><li>Sistolik ve diyastolik TxA2 baskılanmasını daha efektif gerçekleştirir.</li><li>Klinik sanılanın aksine, GI kanama veya ülser önlemede EC formuna göre anlamlı bir dezavantaj taşımaz.</li></ul>"
+    },
+    {
+      "heading": "6. Gastrointestinal Güvenlik Mitinin Çöküşü",
+      "html": "<p>EC formülasyonu mide mukozasını koruma amacıyla geliştirilmiş olsa da, klinik çalışmalar üst GI sistem hasarını önlemede düz aspirine üstünlük sağlamadığını; aksine <strong>ince bağırsak mukozasında</strong> daha fazla hasar potansiyeli taşıyabileceğini (enteropati) bildirmektedir. Bu nedenle, ET yönetiminde etkinlik ve emilim güvenilirliği için <strong>düz (plain) aspirin</strong> altın standarttır.</p>"
+    }
+  ]
+}

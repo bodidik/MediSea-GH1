@@ -1,0 +1,15 @@
+{
+  "title": "Marjinal Zon Lenfoma (MALT)",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "H.pylori"],
+    "parent": "nhl-genel",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Klinik",
+      "text": "<p>Genellikle lenf nodu dışı (ekstranodal) dokularda görülür. En sık Mide MALT lenfoma görülür ve etiyolojide <strong>Helicobacter pylori</strong> enfeksiyonu rol oynar. Erken evrede sadece antibiyotik ile gerileyebilir.</p>"
+    }
+  ]
+}

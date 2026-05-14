@@ -1,0 +1,27 @@
+{
+  "title": "Kronik Miyeloid Lösemi (KML)",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "MDS/MPN", "KML", "KMML", "CNL", "ICC 2022"],
+    "parent": "miyeloproliferatif",
+    "order": 12
+  },
+  "sections": [
+    {
+      "heading": "Kronik Miyeloid Lösemi (KML)",
+      "html": "<p><strong>Sınıflandırma ve Tanı:</strong> WHO 2022 sınıflandırmasında KML için akselere faz (AP) kategorisi kaldırılarak hastalık yalnızca Kronik Faz (CP) ve Blastik Faz (BP) olarak ikiye ayrılmıştır. Ancak ICC kılavuzlarında AP tanımı halen korunmaktadır. Tanı için <strong>t(9;22)</strong> veya <strong>BCR::ABL1</strong> füzyonunun gösterilmesi şarttır.</p><p><strong>Risk Değerlendirmesi:</strong> TKI çağında, prognostik değerlendirme için geleneksel Sokal veya Hasford skorları yerine, spesifik olarak TKI ile tedavi edilen hastalardan türetilen <strong>ELTS (EUTOS Long-Term Survival)</strong> skorunun kullanılması güçlü bir şekilde önerilmektedir.</p><p><strong>Terapötik Yaklaşımlar ve Yeni Ajanlar:</strong> İlk basamakta imatinib ve ikinci kuşak TKI'lar benzer sağkalım sunarken, ikinci kuşaklar daha hızlı ve derin moleküler yanıt (DMR) sağlar. Klasik ATP bölgesi yerine ABL1'in miristoil cebine bağlanarak allosterik inhibisyon yapan <strong>Asciminib</strong>, yeni tanılı veya T315I mutasyonlu olgularda onaylanmış güçlü bir dördüncü kuşak seçenektir. Geniş mutasyon spektrumuna etkili üçüncü kuşak <em>Olverembatinib</em> de dirençli olgularda öne çıkmaktadır.</p><p><strong>Tedavisiz Remisyon (TFR):</strong> Günümüzde KML tedavisinin en önemli hedeflerinden biri, derin moleküler yanıt (MR4 veya MR4.5) elde eden ve bunu uzun süre koruyan hastalarda TKI tedavisinin kesilmesiyle sağlanan <strong>TFR</strong> durumudur.</p>"
+    },
+    {
+      "heading": "Esansiyel Trombositemi (ET)",
+      "html": "<p><strong>Tanı ve Moleküler Profil:</strong> ET tanısı için trombositlerin &ge;450 x 10^9/L olması, kemik iliğinde iri ve hiperlobüle megakaryositlerin varlığı gereklidir. Olguların %90'ında <strong>JAK2 (%60-65)</strong>, <strong>CALR (%20-25)</strong> veya <strong>MPL (%5)</strong> sürücü mutasyonları bulunur. <em>'Triple-negatif'</em> hastalarda tanıyı doğrulamak için NGS ile diğer klonal belirteçlerin (TET2, ASXL1) gösterilmesi elzemdir.</p><p><strong>Klinik Fenotip:</strong> JAK2 mutant hastalar ileri yaş, yüksek tromboz ve PV'ye evrilme riski taşırken; CALR mutant (özellikle tip 2) hastalar daha genç, daha yüksek trombositli ve daha düşük tromboz riskine sahiptir. Ancak <em>CALR tip 1</em> mutasyonları miyelofibrozise ilerleme açısından yüksek risk barındırır.</p><p><strong>Skorlama ve Yönetim:</strong> Trombotik risk için <strong>Revize IPSET-Tromboz</strong> skoru; genel sağkalım ve transformasyon için yüksek riskli mutasyonları (SRSF2, SF3B1, U2AF1, TP53) içeren <strong>MIPSS-ET</strong> skoru kullanılır. Yüksek riskli hastalarda aspirine ek olarak sitoredüktif tedavi standarttır.</p>"
+    },
+    {
+      "heading": "Kronik Miyelomonositik Lösemi (KMML)",
+      "html": "<p><strong>Güncel Tanı Kriterleri:</strong> ICC ve WHO 2022 güncellemeleri, oligomonositik hastalık formlarını da kapsayacak şekilde tanısal mutlak monosit sayısı eşiğini <strong>&ge;0.5 x 10^9/L</strong>'ye düşürmüştür. Hastalık, lökosit sayısına göre <em>MP-CMML</em> (&ge;13 x 10^9/L) ve <em>MD-CMML</em> (<13 x 10^9/L) olarak alt tiplere ayrılır.</p><p><strong>Premalign Durumlar (CMUS ve CCMUS):</strong> Kemik iliği displazisi olmaksızın miyeloid neoplazm ilişkili mutasyonların saptandığı persistan monositoz olguları, <strong>Klonal Monositoz (CMUS)</strong>; sitopeni eşlik ediyorsa <strong>CCMUS</strong> adını alır.</p><p><strong>Mutasyonel Peyzaj:</strong> Hastalarda en sık <em>TET2, SRSF2</em> ve <em>ASXL1</em> mutasyonları izlenir. ASXL1 mutasyonları sağkalımı bağımsız olarak olumsuz etkiler. Prognostik değerlendirmede ASXL1 ve diğer moleküler verileri entegre eden <strong>Mayo Moleküler Modeli (MMM)</strong> ve <strong>CPSS-Mol</strong> skorlama sistemleri, kök hücre nakli gibi tedavi kararlarına yön verir.</p>"
+    },
+    {
+      "heading": "CNL ve Atipik KML (aCML)",
+      "html": "<p><strong>Kronik Nötrofilik Lösemi (CNL):</strong> Displazi olmaksızın periferik kanda aşırı nötrofili ile karakterize nadir bir MPN'dir. Olguların %80-100'ünde <strong>CSF3R</strong> geninde (en sık T618I) aktive edici sürücü mutasyonlar bulunur. Bu mutasyonlar JAK-STAT yolağını aktive ettiğinden, <em>Ruxolitinib</em> gibi JAK inhibitörlerine duyarlılık gösterebilirler.</p><p><strong>Atipik KML (aCML):</strong> KML'nin aksine BCR::ABL1 füzyonu taşımaz ve belirgin displastik nötrofiller (disgranülopoez) ile karakterizedir. Vakaların yaklaşık üçte birinde <strong>SETBP1</strong> veya <strong>ETNK1</strong> mutasyonları görülür ve klasik MPN sürücü mutasyonları tipik olarak bulunmaz.</p>"
+    }
+  ]
+}

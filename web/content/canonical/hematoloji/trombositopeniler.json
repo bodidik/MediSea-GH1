@@ -1,0 +1,18 @@
+{
+  "title": "İmmün Trombositopeni (İTP)",
+  "meta": {
+    "updatedAt": "28 Şub 2026",
+    "tags": ["Hematoloji", "Trombosit"],
+    "parent": "trombosit-hastaliklari-genel-bakis"
+  },
+  "sections": [
+    {
+      "heading": "Tanım",
+      "text": "<p>Trombositlere karşı gelişen antikorlar sonucu yıkımın artmasıdır. İzole trombosit düşüklüğü vardır.</p>"
+    },
+    {
+      "heading": "Bulgular",
+      "text": "<p>Peteşi, purpura ve ekimozlar görülür. Dalak büyümesi (Splenomegali) <strong>BEKLENMEZ</strong>. Eğer dalak büyükse başka tanı düşünülmelidir.</p>"
+    }
+  ]
+}

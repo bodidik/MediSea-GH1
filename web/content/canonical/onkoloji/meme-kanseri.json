@@ -1,0 +1,24 @@
+{
+  "title": "Ch 84: Meme Kanseri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": [
+      "Onkoloji",
+      "Meme",
+      "BRCA",
+      "ER/PR"
+    ],
+    "parent": "onkoloji-hastaliklari",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Risk Faktörleri ve Tarama",
+      "text": "<p>BRCA1/2 mutasyonu, erken menarş, geç menopoz, nulliparite riski artırır. 40 yaşından sonra yıllık <strong>Mamografi</strong> taraması önerilir.</p>"
+    },
+    {
+      "heading": "Moleküler Alt Tipler",
+      "text": "<p>Tedavi, tümörün biyolojik özelliklerine göre belirlenir (İmmünohistokimya):</p><ul class='list-none space-y-2 mt-2 text-sm'><li class='bg-pink-50 p-2 rounded'>🌸 <strong>Luminal A/B:</strong> Hormon reseptörü (ER/PR) Pozitif. Hormon tedavisi (Tamoksifen/Aromataz İnh.) verilir.</li><li class='bg-purple-50 p-2 rounded'>🧬 <strong>HER2 Pozitif:</strong> Agresiftir. Akıllı ilaç (Trastuzumab/Herceptin) verilir.</li><li class='bg-gray-50 p-2 rounded'>⚫ <strong>Üçlü Negatif (Triple Negative):</strong> ER, PR ve HER2 negatiftir. En agresif tiptir, kemoterapi/immünoterapi verilir.</li></ul>"
+    }
+  ]
+}

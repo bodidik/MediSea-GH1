@@ -1,0 +1,41 @@
+{
+  "title": "Akut Adrenal Kriz (Addison Krizi)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": [
+      "Endokrin Acil",
+      "Şok",
+      "Hidrokortizon",
+      "Sıvı Resüsitasyonu",
+      "Sick Day Rules"
+    ],
+    "parent": "adrenal-yetmezlik",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Tanım ve Önemi",
+      "text": "<p><strong>Akut Adrenal Kriz</strong>, yeterli kortizolün bulunmaması sonucu gelişen, kardiyovasküler kollaps (şok) ile karakterize, hayatı tehdit eden acil bir tıbbi durumdur. Genellikle tanı konmamış hastalarda ilk başvuru şekli olabileceği gibi, tanı almış hastalarda araya giren stres faktörleri veya tedavinin kesilmesiyle de gelişebilir. Tanı ve tedavideki gecikme, vazopressörlere ve sıvı tedavisine yanıt vermeyen şok ve ölümle sonuçlanabilir.</p>"
+    },
+    {
+      "heading": "Tetikleyici Faktörler",
+      "text": "<p>Kriz genellikle kortizol ihtiyacının arttığı stres durumlarında, mevcut rezervin veya dışarıdan alınan dozun yetersiz kalmasıyla tetiklenir. Yaygın nedenler şunlardır:</p><ul><li><strong>Enfeksiyonlar:</strong> En sık tetikleyicidir. Özellikle gastroenterit (kusma/ishal nedeniyle ilaç emiliminin bozulması), pnömoni ve sepsis.</li><li><strong>İlaç Kesilmesi:</strong> Glukokortikoid tedavisinin aniden kesilmesi veya hasta uyumsuzluğu.</li><li><strong>Fiziksel Stres:</strong> Cerrahi müdahale, travma, anestezi (özellikle etomidat kullanımı), doğum ve ağır egzersiz.</li><li><strong>Diğer:</strong> Adrenal kanama (bilateral infarktüs/Waterhouse-Friderichsen), tirotoksikoz veya tedavi edilmemiş hastaya tiroksin başlanması (kortizol yıkımını artırır).</li></ul>"
+    },
+    {
+      "heading": "Klinik Belirti ve Bulgular",
+      "text": "<p>Hastalarda kronik yetmezlik bulgularının (kilo kaybı, hiperpigmentasyon) üzerine eklenen akut bir kötüleşme görülür.</p><ul><li><strong>Şok ve Hipotansiyon:</strong> Mevcut hastalığın şiddetiyle orantısız hipotansiyon ve şok en belirgin bulgudur. Genellikle vazopressörlere dirençlidir.</li><li><strong>Gastrointestinal Semptomlar:</strong> Bulantı, kusma, iştahsızlık ve karın ağrısı (%92) çok sıktır. Karın ağrısı bazen \"akut batın\" tablosunu taklit edebilir.</li><li><strong>Nörolojik Bulgular:</strong> İlgisizlik, konfüzyon, deliryum, letarji ve komaya kadar giden bilinç değişiklikleri görülebilir.</li><li><strong>Sistemik:</strong> Açıklanamayan ateş (enfeksiyon olmasa bile görülebilir) ve ciddi dehidratasyon.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar Bulguları",
+      "text": "<p>Kriz anında görülebilecek metabolik bozukluklar şunlardır:</p><ul><li><strong>Hiponatremi:</strong> Sıklıkla görülür (%88), mineralokortikoid eksikliğine bağlı su ve tuz kaybı veya uygunsuz ADH salınımı (SIADH) ile ilişkilidir.</li><li><strong>Hiperkalemi:</strong> Primer adrenal yetmezlikte (%64) görülür, aldosteron eksikliğine bağlıdır. Sekonder yetmezlikte genellikle görülmez.</li><li><strong>Hipoglisemi:</strong> Kortizol eksikliğine bağlı glukoneogenez azalması sonucu gelişir, özellikle çocuklarda ve zayıf erişkinlerde belirgindir.</li><li><strong>Diğer:</strong> Prerenal azotemi (BUN/Kreatinin artışı), eozinofili ve lenfositoz.</li></ul>"
+    },
+    {
+      "heading": "Acil Tedavi Yönetimi",
+      "text": "<p>Adrenal kriz şüphesi varsa <strong>laboratuvar sonuçları beklenmeden</strong> tedaviye başlanmalıdır.</p><ol><li><strong>Sıvı Resüsitasyonu:</strong> Geniş damar yolu açılmalı ve ilk 1 saatte 1 litre izotonik (%0.9 NaCl) veya %5 dekstrozlu izotonik (hipoglisemi varsa) hızla verilmelidir. İlk 24 saatte toplam 2-3 litre sıvı gerekebilir. Hipotonik sıvılardan kaçınılmalıdır.</li><li><strong>Glukokortikoid Tedavisi:</strong> Hemen <strong>100 mg Hidrokortizon IV bolus</strong> yapılmalıdır. Takiben 24 saat boyunca ya sürekli infüzyonla (200 mg/gün) ya da her 6 saatte bir 50 mg IV/IM olarak devam edilmelidir.</li><li><strong>Alternatif Steroidler:</strong> Hidrokortizon yoksa 40 mg metilprednizolon veya 4-6 mg deksametazon verilebilir. Deksametazon, plazma kortizol ölçümünü etkilemediği için tanısal test yapılması planlanıyorsa tercih edilebilir.</li><li><strong>Mineralokortikoidler:</strong> Akut dönemde yüksek doz hidrokortizonun (günde >40-50 mg) mineralokortikoid etkisi yeterli olduğundan fludrokortizon verilmesine gerek yoktur. Hidrokortizon dozu azaltıldığında ve oral alım başladığında tedaviye eklenir.</li><li><strong>Tetikleyicinin Tedavisi:</strong> Altta yatan enfeksiyon varsa kültürler alınıp ampirik antibiyotik başlanmalıdır.</li></ol>"
+    },
+    {
+      "heading": "Hasta Eğitimi ve Önleme (Sick Day Rules)",
+      "text": "<p>Krizlerin önlenmesi için hasta eğitimi şarttır.</p><ul><li><strong>Doz Ayarlaması (3x3 Kuralı):</strong> Ateşli hastalıklarda veya minör streste, günlük steroid dozu 3 gün boyunca 2-3 katına çıkarılmalıdır.</li><li><strong>Acil Durum Kiti:</strong> Hastalar yanlarında 100 mg enjeksiyonluk hidrokortizon bulundurmalı; kusma, ishal veya travma durumunda kendilerine enjekte etmeleri öğretilmelidir.</li><li><strong>Tıbbi Kimlik:</strong> Hastalar \"Adrenal Yetmezlik\" tanısını belirten tıbbi bileklik veya kart taşımalıdır.</li></ul>"
+    }
+  ]
+}

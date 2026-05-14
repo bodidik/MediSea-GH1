@@ -1,0 +1,31 @@
+{
+  "title": "Primer Hiperaldosteronizm (Conn Sendromu)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Adrenal", "Aldosteron", "Conn", "Hipertansiyon", "ARR"],
+    "parent": "adrenal-korteks-hastaliklari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & Endocrine Society 2024 PA Guideline referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p>Renin-Anjiyotensin sisteminden bağımsız, otonom aşırı aldosteron salınımıdır.</p><ul class=\"mb-4\"><li><strong>Adrenal Adenom (Conn Sendromu - %35):</strong> Genellikle tek taraflı, cerrahi ile kür şansı yüksek.</li><li><strong>Bilateral İdiyopatik Hiperplazi (%60):</strong> En sık neden; medikal tedavi gerektirir.</li><li><strong>Sonuç:</strong> Sodyum tutulumu (Hipertansiyon) ve Potasyum/Hidrojen kaybı (Hipokalemi ve Metabolik Alkaloz).</li></ul>"
+    },
+    {
+      "heading": "Kimleri Taramalıyız? (Kırmızı Bayraklar)",
+      "html": "<p>Sadece her hipertansiyonu değil, şu vakaları taramak kritiktir:</p><ul class=\"mb-4\"><li>Dirençli hipertansiyon (3 ilaçla kontrol edilemeyen).</li><li>Spontan veya diüretik ile indüklenen şiddetli hipokalemi.</li><li>Erken yaşta ( < 40 ) başlayan hipertansiyon.</li><li>Adrenal insidentaloma saptanan hastalar.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Algoritma: ARR ve Ötesi",
+      "html": "<p>Tanı üç aşamalıdır:</p><ol class=\"mb-4\"><li><strong>Tarama:</strong> Aldosteron / Plazma Renin Aktivitesi (ARR) oranı. <strong>ARR > 30</strong> ve Aldosteron > 10 ng/dL ise pozitif kabul edilir.</li><li><strong>Doğrulama:</strong> Tuz yükleme testi veya Kaptopril testi (Aldosteron baskılanmıyorsa tanı PA'dır).</li><li><strong>Lokalizasyon:</strong> Adrenal BT. ⚠️ <em>Kritik Not:</em> Görüntüleme adenom mu hiperplazi mi olduğunu her zaman ayırt edemez; cerrahi planlanıyorsa <strong>Adrenal Venöz Örnekleme (AVS)</strong> altın standarttır.</li></ol>"
+    },
+    {
+      "heading": "Tedavi Stratejisi",
+      "html": "<ul class=\"mb-4\"><li><strong>Tek Taraflı (Adenom):</strong> Laparoskopik Adrenalektomi.</li><li><strong>Çift Taraflı (Hiperplazi):</strong> Mineralokortikoid Reseptör Antagonistleri (<strong>Spironolakton</strong> veya daha spesifik olan <strong>Eplerenon</strong>).</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "ADH", "Diabetes İnsipidus", "SIADH", "Hiponatremi", "Vaptan"],
+    "parent": "hipofiz-hastaliklari-ana",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 Güncel Hiponatremi Kılavuzları referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Antidiüretik Hormon (ADH) Dinamiği",
+      "html": "<p>ADH (Vazopressin), supraoptik ve paraventriküler çekirdeklerde sentezlenip arka hipofizde depolanır. V2 reseptörleri aracılığıyla toplayıcı kanallarda <strong>Akuaporin-2</strong> kanallarını açarak suyun geri emilimini sağlar.</p>"
+    },
+    {
+      "heading": "Diabetes İnsipidus (DI): Su Kaybı Fırtınası",
+      "html": "<p>ADH etkisinin azalması sonucu gelişen poliüri (bol idrar) ve polidipsi (susama) tablosudur.</p><ul class=\"mb-4\"><li><strong>Santral DI:</strong> Hipotalamik-hipofizer hasar (travma, cerrahi, tümör) nedeniyle ADH sentez/salınım eksikliği.</li><li><strong>Nefrojenik DI:</strong> Böbreğin ADH'a yanıtsızlığı (Lityum kullanımı, hiperkalsemi, hipokalemi, V2 mutasyonu).</li></ul>"
+    },
+    {
+      "heading": "Tanı: Su Kısıtlama Testi (Water Deprivation Test)",
+      "html": "<p>Polidipsik hastada ayrım için kullanılır:</p><ol class=\"mb-4\"><li><strong>Faz 1 (Dehidratasyon):</strong> Hasta susuz bırakılır. İdrar osmolalitesi artmıyorsa (idrar hala dilüe ise) DI tanısı konur.</li><li><strong>Faz 2 (Desmopressin Yanıtı):</strong> Eksojen ADH (Desmopressin) verilir. <ul><li>İdrar osmolalitesi <strong>>%50 artarsa:</strong> Santral DI.</li><li>İdrar osmolalitesi <strong>artmazsa:</strong> Nefrojenik DI.</li></ul></li></ol>"
+    },
+    {
+      "heading": "SIADH: Su Zehirlenmesi ve Hiponatremi",
+      "html": "<p>Uygunsuz ADH Salınımı Sendromu, fizyolojik bir uyaran olmaksızın aşırı ADH salınımıdır.</p><ul class=\"mb-4\"><li><strong>Etiyoloji:</strong> Akciğer hastalıkları (Küçük hücreli CA - ektopik üretim), SSS hastalıkları (İnme, enfeksiyon), İlaçlar (SSRI, Karbamazepin).</li><li><strong>Tanı Kriterleri:</strong> Övolemik hiponatremi, idrar osmolalitesi > 100 mOsm/kg, idrar sodyumu > 40 mEq/L, normal adrenal ve tiroid fonksiyonu.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yönetimi: Vaptanlar ve Tuz",
+      "html": "<ul class=\"mb-4\"><li><strong>Diabetes İnsipidus:</strong> Santral DI'da ilk seçenek <strong>Desmopressin (dDAVP)</strong>'dir. Nefrojenik DI'da ise altta yatan neden düzeltilir, Tiyazid diüretikleri ve Amilorid kullanılabilir.</li><li><strong>SIADH:</strong> <ul><li><em>Sıvı Kısıtlaması:</em> İlk basamak tedavidir (< 800-1000 mL/gün).</li><li><em>Vaptanlar (Tolvaptan):</em> V2 reseptör antagonistleri, dirençli övolemik hiponatremide kullanılır.</li><li><em>⚠️ Kritik Uyarı:</em> Kronik hiponatremi düzeltilirken <strong>Osmotik Demiyelinizasyon Sendromu (Santral Pontin Miyelinozis)</strong> riskini önlemek için sodyum artış hızı < 8-10 mEq/L/gün olmalıdır.</li></ul></li></ul>"
+    }
+  ]
+}

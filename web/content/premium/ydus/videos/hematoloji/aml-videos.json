@@ -1,0 +1,23 @@
+{
+  "locked": false,
+  "items": [
+    {
+      "title": "AML Genetik Risk Sınıflandırması ve WHO",
+      "section": "Patofizyoloji",
+      "url": "/tr/premium/video/izle?id=aml-genetik",
+      "duration": 15
+    },
+    {
+      "title": "Hedefe Yönelik Tedaviler (FLT3, IDH1/2)",
+      "section": "Farmakoloji",
+      "url": "/tr/premium/video/izle?id=aml-hedef",
+      "duration": 22
+    },
+    {
+      "title": "Onkolojik Aciller: Lökostaz ve TLS Yönetimi",
+      "section": "Klinik Yönetim",
+      "url": "/tr/premium/video/izle?id=aml-acil",
+      "duration": 18
+    }
+  ]
+}

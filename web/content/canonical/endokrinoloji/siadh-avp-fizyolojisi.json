@@ -1,0 +1,23 @@
+{
+  "title": "Modül 1: AVP Fizyolojisi, Reseptör Dinamikleri ve Kopeptin",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Fizyoloji", "AVP", "Vazopressin", "V1-V2 Reseptörler", "Kopeptin"],
+    "parent": "siadh-sendromu",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🧠 AVP Sentezi ve Salınımı",
+      "html": "<p>Arjinin Vazopressin (AVP), hipotalamustaki magnoselüler nöronlarda sentezlenir ve arka hipofizde depolanır. Salınımı, anterior hipotalamustaki <strong>ozmoreseptörler</strong> (tonisite artışı) ve arkus aortadaki <strong>baroreseptörler</strong> (basınç düşüşü) tarafından milimetrik hassasiyetle yönetilir.</p>"
+    },
+    {
+      "heading": "🧬 Reseptör Alt Tipleri ve Fonksiyonları",
+      "html": "<ul class=\"mb-4\"><li><strong>V1a:</strong> Vasküler düz kaslarda vazokonstriksiyon.</li><li><strong>V1b (V3):</strong> Ön hipofizde ACTH salınımı.</li><li><strong>V2 (Kritik):</strong> Böbrek toplayıcı kanallarda <strong>PKA kaskadını</strong> aktive ederek <strong>Akuaporin-2 (AQP2)</strong> kanallarını apikal membrana taşır (translokasyon). Ayrıca UT-A1 ve ENaC aktivasyonu ile medüller ozmotik gradiyenti güçlendirir.</li></ul>"
+    },
+    {
+      "heading": "🧪 Kopeptin: AVP'nin Stabil Aynası",
+      "html": "<p>AVP'nin yarı ömrü kısa ve ölçümü zordur. <strong>Kopeptin</strong>, pre-pro-AVP'den birebir eşmolar oranda salınır ve plazmada çok daha stabildir. Diabetes İnsipidus ve SIADH ayırıcı tanısında 'Altın Standart' biyobelirteç olarak klinik pratiğe girmiştir.</p>"
+    }
+  ]
+}

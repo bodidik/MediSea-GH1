@@ -1,0 +1,23 @@
+{
+  "title": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik",
+  "meta": {
+    "updatedAt": "03 May 2026",
+    "tags": ["Kardiyoloji", "Nefroloji", "Aprocitentan", "Spironolakton", "Enalapril", "Renal Güvenlik", "YDUS"],
+    "parent": "aprocitentan-direncli-hipertansiyon",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "1. Aprocitentan ve ACE İnhibitörü Kombinasyonu (Renal Güvenlik)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Aprocitentan ve bir anjiyotensin dönüştürücü enzim (ACE) inhibitörü (örneğin enalapril) kombinasyonunun böbrek fonksiyonları üzerindeki etkileri, klasik dördüncü basamak ajan olan spironolakton ile kıyaslandığında belirgin bir farmakolojik ve renal güvenlik üstünlüğü sergilemektedir.</p><div class=\"bg-emerald-50 border-l-4 border-emerald-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-1 flex items-center gap-2\">Böbrek Fonksiyonlarını Koruyan Kan Basıncı Düşüşü</h4><p class=\"text-[11.5px] text-emerald-800 leading-relaxed\">Sodyum kısıtlaması altındaki hipertansif hayvan modellerinde (örneğin spontan hipertansif - SHR deneklerde), aprocitentan ve enalaprilin eşzamanlı kullanımının, kan basıncını etkili bir şekilde düşürmeye devam ederken <strong>böbrek fonksiyonlarını bozmadığı</strong> kanıtlanmıştır. Bu kombinasyon altında, plazma üre ve kreatinin seviyelerinde herhangi bir artış izlenmemiştir.</p></div>"
+    },
+    {
+      "heading": "2. Spironolakton ile Kıyaslama (YDUS İçin Kritik Ayrım)",
+      "html": "<div class=\"bg-rose-50 border border-rose-200 p-5 rounded-xl shadow-sm mb-4\"><p class=\"text-[11.5px] text-slate-700 leading-relaxed mb-3\">Aynı deneysel modellerde, aprocitentan yerine spironolakton, ACE inhibitörü (enalapril) ile kombine edildiğinde sonuçlar ciddi bir tezat oluşturmuştur.</p><div class=\"bg-white p-3 rounded-lg border border-rose-100\"><strong class=\"text-[11px] text-rose-900 block mb-1\">Renal Bozulma (Renal Impairment) ve Azotemi Tablosu</strong><p class=\"text-[11px] text-slate-700 leading-relaxed\">Spironolakton ve enalapril kombinasyonu kan basıncını additif olarak düşürmeyi başarsa da, plazma üre ve kreatinin konsantrasyonlarında <strong>istatistiksel olarak son derece anlamlı düzeyde (p &lt; 0.0001) bir artışa</strong> neden olmuş ve belirgin bir böbrek fonksiyon bozukluğuna yol açmıştır.</p></div></div>"
+    },
+    {
+      "heading": "💡 Farmakodinamik Sonuç ve Pratik Yansıma",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white\"><p class=\"text-[11.5px] text-slate-200 leading-relaxed\">Aprocitentanın RAS blokerleri (ACE inhibitörleri) ile birlikte kullanımı, spironolakton kombinasyonlarında görülen <strong>akut hemodinamik bozulma ve azotemi tablosunu tetiklemez.</strong> Bu özellik, bilhassa böbrek fonksiyonlarında bozulma eğilimi olan dirençli hipertansiyon hastalarında ilacı spironolaktona karşı oldukça güçlü bir dördüncü basamak alternatif haline getirmektedir.</p></div>"
+    }
+  ]
+}

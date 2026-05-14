@@ -1,0 +1,24 @@
+{
+  "title": "Ch 86: Kolorektal Kanser",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": [
+      "Onkoloji",
+      "Kolon",
+      "Polip",
+      "CEA"
+    ],
+    "parent": "onkoloji-hastaliklari",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Patogenez ve Tarama",
+      "text": "<p>Çoğunlukla adenomatöz poliplerden gelişir (Adenoma-Karsinom sekansı). 45-50 yaşından sonra <strong>Kolonoskopi</strong> ile tarama, poliplerin çıkarılmasını ve kanserin önlenmesini sağlar.</p>"
+    },
+    {
+      "heading": "Tedavi Yaklaşımı",
+      "text": "<div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-green-50 p-3 rounded border border-green-200'><strong class='text-green-900'>Lokal Hastalık:</strong> Cerrahi rezeksiyon küratiftir. Evre 3 (Lenf nodu pozitif) hastalara adjuvan kemoterapi verilir.</div><div class='bg-red-50 p-3 rounded border border-red-200'><strong class='text-red-900'>Metastatik Hastalık:</strong> Karaciğer en sık metastaz yeridir. RAS/BRAF mutasyonuna göre akıllı ilaçlar (Cetuximab/Bevacizumab) kemoterapiye eklenir.</div></div>"
+    }
+  ]
+}

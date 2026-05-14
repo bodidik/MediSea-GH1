@@ -1,0 +1,39 @@
+{
+  "title": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "DLBCL", "Agresif Lenfoma", "R-CHOP", "CAR-T", "Yapay Zeka Taslağı"],
+    "parent": "lenfomalar",
+    "order": 18
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Klinik Prezantasyon",
+      "html": "<p><strong>Diffüz Büyük B Hücreli Lenfoma (DLBCL)</strong>, normal lenfositlerin en az iki katı büyüklüğündeki atipik B hücrelerinin lenf nodu mimarisini tamamen silerek (diffüz) büyümesiyle karakterize, agresif ancak <strong>kürabl (şifa sağlanabilen)</strong> bir Non-Hodgkin Lenfomadır. Tüm NHL vakalarının %30-40'ını oluşturur.</p><p><strong>Klinik:</strong> Hastalar genellikle boyun, koltuk altı veya kasıkta <strong>hızla büyüyen, ağrısız lenfadenopati</strong> ile başvurur. %30-40 vakada <strong>ekstranodal tutulum</strong> (en sık gastrointestinal sistem [mide], kemik, SSS, testis, tiroid) görülür. Ateş, gece terlemesi ve kilo kaybından oluşan <strong>B semptomları</strong> ve artmış serum LDH seviyesi hastaların yaklaşık üçte birinde tabloya eşlik eder.</p>"
+    },
+    {
+      "heading": "Hücresel Köken (Cell of Origin - COO)",
+      "html": "<p>Gen ekspresyon profili (GEP) veya immünhistokimyasal <strong>Hans Algoritması</strong> (CD10, BCL6 ve MUM1 boyanması) ile DLBCL iki ana biyolojik alt tipe ayrılır:</p><ul class=\"mb-4\"><li><strong>Germinal Merkez B-Hücreli (GCB):</strong> CD10+ veya (CD10-, BCL6+, MUM1-) paternidir. Genellikle EZH2 ve BCL2 mutasyonları taşır. Kemoterapiye yanıtı ve prognozu <em>daha iyidir</em>.</li><li><strong>Aktive B-Hücreli (ABC / Non-GCB):</strong> (CD10-, MUM1+) paternidir. Kronik aktif B-hücre reseptör (BCR) sinyali ve <strong>NF-κB</strong> yolağı aktivasyonu (MYD88, CD79b mutasyonları) ile karakterizedir. Standart R-CHOP tedavisine yanıtı <em>daha kötüdür</em>.</li></ul>"
+    },
+    {
+      "heading": "Double-Hit ve Triple-Hit Lenfomalar (HGBL)",
+      "html": "<p>DLBCL morfolojisine sahip ancak genetik olarak <strong>MYC</strong> gen rearanjmanı ile birlikte <strong>BCL2</strong> ve/veya <strong>BCL6</strong> gen rearanjmanını (translokasyonunu) aynı anda barındıran agresif lenfomalardır.</p><p>Güncel WHO/ICC sınıflamasında bunlar <em>\"High-Grade B-Cell Lymphoma (HGBL) with MYC and BCL2/BCL6 rearrangements\"</em> olarak ayrı bir antite kabul edilir. Sadece immünhistokimya ile protein düzeyinde aşırı ekspresyon varsa bunlara <strong>Double-Expressor (DEL)</strong> denir (prognozu kötüdür ama double-hit kadar ölümcül değildir). <strong>Double-Hit lenfomalarda standart R-CHOP tedavisi yetersizdir</strong>; DA-EPOCH-R gibi daha yoğun rejimler gerektirir.</p>"
+    },
+    {
+      "heading": "Prognostik Skorlama: IPI Skoru",
+      "html": "<p>Uluslararası Prognostik İndeks (IPI), sağkalımı belirlemede altın standarttır. Her bir parametre 1 puan alır (Maksimum 5 puan):</p><ul class=\"mb-4\"><li><strong>A</strong>ge (Yaş): >60</li><li><strong>S</strong>tage (Evre): Ann Arbor Evre III veya IV</li><li><strong>E</strong>xtranodal Tutulum: >1 bölge</li><li><strong>P</strong>erformance Status (ECOG Performans): ≥2 (yatalak/düşkün)</li><li><strong>L</strong>DH: Normalin üst sınırından (ULN) yüksek olması</li></ul><p>Skor arttıkça 5 yıllık genel sağkalım dramatik şekilde düşer. Genç hastalar için yaşa uyarlanmış (aaIPI) versiyonu da mevcuttur.</p>"
+    },
+    {
+      "heading": "Birinci Basamak Tedavi Stratejileri",
+      "html": "<p>Erken evre (I-II) ve <em>bulky</em> (dev) olmayan hastalıkta kısa süreli R-CHOP (3-4 kür) + tutulu alan radyoterapisi (ISRT) veya 6 kür R-CHOP uygulanabilir.</p><p><strong>İleri Evre (III-IV) Tedavisi:</strong> Yirmi yılı aşkın süredir standart tedavi 21 günde bir uygulanan <strong>6 kür R-CHOP</strong> (Rituksimab, Siklofosfamid, Doksorubisin, Vinkristin, Prednizolon) rejimidir.</p><p><strong>Güncel Paradigma Değişikliği (POLARIX):</strong> IPI skoru 2-5 olan (orta-yüksek/yüksek riskli) hastalarda, Vinkristin yerine anti-CD79b antikor-ilaç konjugatı (ADC) olan <strong>Polatuzumab vedotin</strong>'in eklendiği <strong>Pola-R-CHP</strong> rejimi, standart R-CHOP'a kıyasla progresyonsuz sağkalımı (PFS) anlamlı derecede uzatmış ve güncel kılavuzlarda 1. basamak standart seçenekler arasına girmiştir.</p>"
+    },
+    {
+      "heading": "Relaps/Refrakter (R/R) Hastalık ve İleri Tedaviler",
+      "html": "<p>R-CHOP sonrası nüks eden veya dirençli olan hastaların yaklaşık %30-40'ında kurtarma (salvage) stratejilerine geçilir:</p><ul class=\"mb-4\"><li><strong>Kök Hücre Nakline Uygun Hastalar:</strong> R-ICE, R-DHAP gibi platin bazlı kurtarma kemoterapileri verilir. Yanıt (CR/PR) alınırsa, yüksek doz kemoterapi ve <strong>Otolog Kök Hücre Nakli (ASCT)</strong> ile konsolide edilir.</li><li><strong>CAR-T Hücre Devrimi:</strong> <em>Axi-cel, Tisa-cel</em> ve <em>Liso-cel</em> (CD19 hedefli CAR-T hücreleri), özellikle ilk 12 ayda erken nüks eden (primer refrakter) hastalarda ASCT'den daha üstün bulunarak <strong>2. basamak tedaviye</strong> yükselmiştir.</li><li><strong>Diğer Yenilikçi Ajanlar (Nakle/CAR-T'ye Uygun Olmayanlar):</strong> CD3xCD20 Bispesifik Antikorlar (<em>Epcoritamab, Glofitamab</em>), CD19 Antikor-İlaç Konjugatları (<em>Loncastuximab tesirine</em>) veya <em>Tafasitamab + Lenalidomid</em> kombinasyonu, dirençli hastalıkta oldukça yüksek yanıt oranları sunan modern \"chemo-free\" silahlardır.</li></ul>"
+    }
+  ]
+}

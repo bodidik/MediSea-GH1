@@ -1,0 +1,15 @@
+{
+  "title": "Ch 94: Jinekolojik Kanserler",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Over", "Rahim", "HPV"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 13
+  },
+  "sections": [
+    {
+      "heading": "Klinik Özellikler",
+      "text": "<div class='grid gap-4 md:grid-cols-3 mt-4'><div class='bg-pink-50 p-3 rounded border border-pink-200'><h5 class='font-bold text-pink-900'>Endometrium</h5><p class='text-xs mt-1 text-gray-700'>En sık görülendir. Postmenopozal kanama ile erken bulgu verir. Obezite ve östrojen riski artırır.</p></div><div class='bg-purple-50 p-3 rounded border border-purple-200'><h5 class='font-bold text-purple-900'>Serviks (Rahim Ağzı)</h5><p class='text-xs mt-1 text-gray-700'>Nedeni HPV virüsüdür. Smear/HPV testi ile önlenebilir. Aşı ile korunma mümkündür.</p></div><div class='bg-gray-50 p-3 rounded border border-gray-200'><h5 class='font-bold text-gray-900'>Over (Yumurtalık)</h5><p class='text-xs mt-1 text-gray-700'>En ölümcül olanıdır. Sinsi seyreder, genellikle ileri evrede (asit) tanı alır. BRCA mutasyonu önemlidir.</p></div></div>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Hemolitik Anemi", "G6PD", "Heinz Cisimciği", "Isırılmış Hücre", "Oksidatif Stres"],
+    "parent": "hemolitik-anemiler-genel-bakis",
+    "order": 38
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji ve Oksidatif Stres",
+      "html": "<p><strong>Glukoz-6-Fosfat Dehidrogenaz (G6PD) Eksikliği</strong>, X kromozomuna bağlı (X-linked) resesif geçiş gösteren, dünyada en sık karşılaşılan eritrosit enzim defektidir. Erkeklerde (hemizigot) tam klinik tablo görülürken, kadınlar genellikle taşıyıcıdır.</p><p>Olgun eritrositlerde mitokondri bulunmadığı için enerji ve koruyucu molekül sentezi kısıtlıdır. G6PD enzimi, <strong>Heksoz Monofosfat Şantının</strong> (Pentoz Fosfat Yolağı) ilk ve hız kısıtlayıcı basamağıdır. Bu yolak, <strong>NADPH</strong> üreterek hücre içi glutatyonu redükte (aktif) formda tutar. Redükte glutatyon, eritrositi serbest oksijen radikallerinin ve peroksitlerin (oksidatif stresin) yıkıcı etkilerinden koruyan yegane kalkandır. G6PD eksikliğinde NADPH üretilemez, okside edici ajanlar hemoglobinin sülfhidril gruplarına saldırır ve hemoglobini denatüre eder.</p>"
+    },
+    {
+      "heading": "Tetikleyiciler ve Klinik Prezantasyon",
+      "html": "<p>Hastalık genellikle asemptomatiktir ve kronik bir hemoliz tablosu yaratmaz. Klinik tablo, sadece eritrositler akut bir <strong>oksidatif strese</strong> maruz kaldığında ani başlayan (episodik) hemolitik krizler şeklinde ortaya çıkar.</p><p><strong>Majör Tetikleyiciler:</strong></p><ul class=\"mb-4\"><li><strong>Enfeksiyonlar:</strong> Akut hemolizin en sık nedenidir. Makrofajların fagositoz sırasında ürettiği serbest radikaller eritrositleri hasara uğratır.</li><li><strong>İlaçlar:</strong> Antimalaryaller (Primakin), Sülfonamid grubu antibiyotikler, Dapson, Nitrofurantoin, kinolonlar ve yüksek doz aspirin.</li><li><strong>Besinler (Favizm):</strong> Özellikle Akdeniz varyantında (Sınıf II), bakla (fava beans) tüketimi sonrası 24-48 saat içinde şiddetli intravasküler hemoliz gelişmesi tablosudur.</li></ul><p><strong>Bulgular:</strong> Tetikleyici temastan 2-4 gün sonra ani başlayan halsizlik, sarılık, sırt/bel ağrısı ve intravasküler hemolize bağlı idrar renginde koyulaşma (hemoglobinüri) görülür.</p>"
+    },
+    {
+      "heading": "Laboratuvar ve Periferik Yayma",
+      "html": "<p>Atak sırasında LDH yüksekliği, haptoglobin düşüklüğü ve indirekt hiperbilirubinemi gibi klasik hemoliz bulguları mevcuttur. Direkt Antiglobulin Testi (DAT / Coombs) <strong>negatiftir</strong> (immün hemolizi dışlar).</p><p><strong>Patognomonik Morfolojik Bulgular:</strong></p><ul class=\"mb-4\"><li><strong>Heinz Cisimcikleri:</strong> Oksidatif strese dayanamayıp denatüre olan (çöken) hemoglobin molekülleridir. Standart Wright-Giemsa boyası ile görülmezler; <em>Kristal Viyole</em> veya <em>Metilen Mavisi</em> gibi supravital boyalarla eritrosit zarına yapışmış mor/mavi inklüzyonlar olarak izlenirler.</li><li><strong>Isırılmış Hücreler (Bite Cells / Degmasitler):</strong> Heinz cisimcikleri içeren eritrositler dalaktan geçerken, dalak makrofajları bu çökelmiş proteinleri zarın bir kısmıyla birlikte koparıp alır (\"ısırır\"). Geriye kalan hasarlı hücreler periferik yaymada karakteristik yarım ay veya ısırılmış kurabiye şeklinde görülür.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Algoritma ve Klinik Tuzak",
+      "html": "<p>Kesin tanı, eritrositlerdeki kantitatif G6PD enzim aktivitesinin spektrofotometrik yöntemlerle ölçülmesiyle konur. Ancak burada hayati bir <strong>klinik tuzak</strong> mevcuttur:</p><p>⚠️ <strong>Akut Hemoliz Sırasında Test Zamanlaması:</strong> Akut kriz sırasında yaşlı ve enzim düzeyi en düşük olan eritrositler zaten yıkılmış (hemolize uğramış) durumdadır. Kemik iliği, yıkımı kompanse etmek için kana bolca genç eritrosit (retikülosit) pompalar. <strong>Genç eritrositlerde ve retikülositlerde G6PD enzim düzeyi normale yakındır.</strong> Bu nedenle, akut hemoliz atağı sırasında yapılan enzim düzeyi ölçümü <strong>yalancı normal (false-negative)</strong> sonuç verebilir.</p><p>Doğru tanı için enzim ölçümü, hemolitik atak tamamen geçtikten ve retikülosit yanıtı normale döndükten <strong>2-3 ay sonra</strong> yapılmalıdır.</p>"
+    },
+    {
+      "heading": "Tedavi ve Yönetim",
+      "html": "<p>G6PD eksikliğinin spesifik bir medikal veya cerrahi tedavisi (splenektomi genellikle faydasızdır) yoktur. Tedavinin temel taşı <strong>korunma ve önlemedir</strong>.</p><ul class=\"mb-4\"><li>Hastalara, oksidatif stres yaratan ilaçların ve besinlerin (bakla) yer aldığı yasaklılar listesi verilir ve bu ajanlardan ömür boyu kaçınmaları sağlanır.</li><li>Akut ataklar sırasında hidrasyonun sağlanması (böbrekleri serbest hemoglobinin toksik etkisinden korumak için) ve gerektiğinde kan transfüzyonu yapılması destekleyici tedavinin esasını oluşturur.</li></ul>"
+    }
+  ]
+}

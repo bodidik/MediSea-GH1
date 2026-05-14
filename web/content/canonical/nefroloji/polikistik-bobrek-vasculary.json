@@ -1,0 +1,31 @@
+{
+  "title": "ADPKD İleri Okuma: Vasküler Patofizyoloji ve Anevrizma",
+  "meta": {
+    "updatedAt": "27 Mar 2026",
+    "tags": ["Nefroloji", "ADPKD", "Vasküler", "Anevrizma", "Endotel", "Nitrik Oksit"],
+    "parent": "polikistik-bobrek-ekstrarenal",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🩸 Vasküler Disfonksiyona Giriş",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">PKD1 (Polikistin-1, PC1) ve PKD2 (Polikistin-2, PC2) mutasyonları, damar yapısını hem endotel hücreleri (EC) hem de vasküler düz kas hücreleri (VSMC) düzeyinde doğrudan etkileyerek geniş çaplı vasküler disfonksiyona neden olur. Hastalığın ilerlemesiyle gözlemlenen vasküler anormalliklerin ardında yatan kesin hücresel mekanizmalar şu şekildedir:</p>"
+    },
+    {
+      "heading": "1. Endotel Disfonksiyonu ve Azalan Nitrik Oksit (NO)",
+      "html": "<p class=\"text-sm leading-relaxed\">PC1 ve PC2 proteinleri, kan damarlarının iç yüzeyini kaplayan endotel hücrelerinin primer silyumlarında, kan akışının yarattığı <strong>sıvı kayma stresini (fluid shear stress)</strong> algılayan temel mekanosensörler olarak görev yapar.</p><ul class=\"list-disc pl-5 mt-3 space-y-2 text-sm text-slate-700\"><li>Normal fizyolojide kan basıncı arttığında, silyumlar bu mekanik kuvveti algılar ve PC1/PC2 kanal kompleksi aracılığıyla hücre içine <strong>kalsiyum (Ca<sup>2+</sup>)</strong> girişini başlatır.</li><li>Hücre içi kalsiyumdaki bu artış, nitrik oksit sentezini (NO) ve endotelyal hiperpolarizasyonu uyarır. Üretilen NO düz kas hücrelerine geçerek vazodilatasyonu (damar genişlemesini) sağlar.</li><li><span class=\"text-rose-700 font-bold\">ADPKD Patolojisi:</span> PKD1 veya PKD2 mutasyonlarında bu silyer mekanosensör fonksiyon kaybolur. Sıvı kayma stresine bağlı kalsiyum akışı engellendiği için NO üretimi ve salınımı ciddi şekilde körelir, endotele bağımlı damar gevşemesi (vazorelaksasyon) bozulur.</li></ul> "
+    },
+    {
+      "heading": "2. Vasküler Düz Kas Hücreleri (VSMC) ve Miyojenik Tonus Kaybı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3\">Polikistinler, vasküler düz kas hücrelerinde damar içi basınca karşı verilen koruyucu kasılma yanıtını (miyojenik tonus ve otoregülasyon) kontrol etmek üzere birbirleriyle oldukça karmaşık bir etkileşim halindedir.</p><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl text-sm space-y-3\"><p>Normalde PC2, düz kas hücrelerinde mekanik gerilime bağlı katyon girişini ve kasılabilirliği inhibe eden bir rol oynar. PC1 ise PC2 ile bir kompleks oluşturup onu bağlayarak PC2'nin bu inhibitör etkisini baskılar ve böylece damarın gerilime karşı kasılabilme (mekanosensitivite) yeteneğini serbest bırakır.</p><p><strong>PKD1 eksikliğinde</strong>, düz kas hücrelerinin basınca bağlı miyojenik kasılma ve mekanosensitivite özellikleri bozulur. <strong>PKD2 eksikliğinde</strong>, serebral arterlerdeki gerilime duyarlı katyonik akımlar kaybolur ve basınca bağlı daralma azalır.</p><p class=\"font-bold text-amber-900\">Hücresel düzeyde bu disfonksiyonlara, mutant düz kas hücrelerindeki düşük kalsiyum (Ca<sup>2+</sup>) ve yüksek siklik AMP (cAMP) seviyeleri eşlik eder. Bu hücresel sinyal bozuklukları, düz kas hücrelerinin anormal bir şekilde çoğalmasına ve damarın tunica media tabakasının düzensizce kalınlaşmasına yol açar.</p></div>"
+    },
+    {
+      "heading": "3. Anevrizma Oluşumu ve Damar Duvarı Kırılganlığı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3\">PC2'nin damar kasılmasını düzenleyici etkileri, aktin hücre iskeleti (sitoskeleton) ile yapısal olarak doğrudan etkileşimine bağlıdır.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl text-sm space-y-2 text-rose-900\"><p>Mutasyonlar nedeniyle PC2 ve aktin hücre iskeleti arasındaki etkileşim bozulduğunda, damarın basınca bağlı kasılma ve kendini koruma (otoregülasyon) yeteneği zayıflar.</p><p>Basınç kontrolünün (miyojenik yanıtın) bozulması, damar duvarını aşırı basınca ve hemodinamik strese karşı doğrudan korumasız bırakır.</p><p><strong>Klinik Sonuç:</strong> Zayıflamış damar bütünlüğü; anormal vasküler yeniden modellenme, tunika media kalınlaşması ve fokal kanamalarla sonuçlanır. Bu mekanik ve yapısal zayıflık, ADPKD hastalarında genel popülasyona kıyasla çok daha yüksek oranlarda görülen <strong>intrakraniyal anevrizmalar (İKA), aort diseksiyonları ve vasküler rüptürlerin (yırtılmaların)</strong> moleküler temel sebebidir.</p></div> "
+    },
+    {
+      "heading": "4. Vasküler Oksidatif Stres ve İnflamasyon",
+      "html": "<p class=\"text-sm leading-relaxed\">NO miktarının azalması ve bozulmuş endotel fonksiyonu, damar duvarında reaktif oksijen türlerinin (ROS) birikmesine ve pro-inflamatuar bir ortamın doğmasına neden olur. Endotelyal bariyer fonksiyonunu bozarak geçirgenliği ve lokal doku hasarını artıran bu durum, artmış arteriyel sertlik (stiffness) ve ilerleyici bir damar sertliği (ateroskleroz) riskini beraberinde getirir.</p>"
+    }
+  ]
+}

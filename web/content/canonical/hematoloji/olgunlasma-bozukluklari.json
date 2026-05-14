@@ -1,0 +1,15 @@
+{
+  "title": "Olgunlaşma Bozukluğu Anemileri",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Anemi", "Matürasyon"],
+    "parent": "anemiler",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Özet",
+      "text": "<p>Hücre çekirdek veya sitoplazma gelişimindeki uyumsuzluktur. Genellikle MCV yüksektir.</p>"
+    }
+  ]
+}

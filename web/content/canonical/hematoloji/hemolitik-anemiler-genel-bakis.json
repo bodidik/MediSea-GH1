@@ -1,0 +1,35 @@
+{
+  "title": "Hemolitik Anemiler",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Hemolitik Anemi", "Hemoliz", "Haptoglobin", "Kategori"],
+    "parent": "anemiler",
+    "order": 35
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Temel Kavramlar",
+      "html": "<p><strong>Hemolitik Anemiler</strong>, eritrositlerin normal ömürlerini (yaklaşık 120 gün) tamamlamadan, fizyolojik olmayan bir hızda ve erken yıkıma uğraması (hemoliz) sonucu gelişen anemilerdir. Kemik iliği, bu yıkımı kompanse etmek amacıyla eritropoietin uyarısıyla üretimini 6-8 katına kadar artırabilir (hiperproliferatif yanıt). Yıkım hızının, kemik iliğinin maksimum üretim kapasitesini aştığı noktada klinik anemi tablosu ortaya çıkar.</p>"
+    },
+    {
+      "heading": "Hemolizin Evrensel Laboratuvar Bulguları",
+      "html": "<p>Etiyolojiden bağımsız olarak, artmış eritrosit yıkımı ve kemik iliğinin buna verdiği kompanse edici yanıt kanda spesifik laboratuvar profilleri oluşturur:</p><ul class=\"mb-4\"><li><strong>Artmış Yıkım Bulguları:</strong> Eritrosit içi enzimlerin ve hemoglobin yıkım ürünlerinin kana karışması sonucu <strong>Laktat Dehidrogenaz (LDH) artışı</strong> ve <strong>İndirekt Bilirubin yüksekliği</strong> izlenir. Serbest hemoglobini bağlayarak kandan uzaklaştıran taşıyıcı protein olan <strong>Haptoglobin düzeyi düşer</strong> (haptoglobin, hemolizin en hassas göstergelerinden biridir).</li><li><strong>Artmış Üretim Bulguları:</strong> Kemik iliği yanıtını gösteren <strong>Düzeltilmiş Retikülosit Sayısı artmıştır</strong> (>%2 veya Retikülosit Üretim İndeksi >2). Çevre kanı yaymasında polikromazi (genç, hafif bazofilik boyanan iri eritrositler) ve nükleuslu eritrositler (normoblastlar) izlenebilir. Kemik iliğinde eritroid hiperplazi saptanır.</li></ul>"
+    },
+    {
+      "heading": "İntravasküler ve Ekstravasküler Hemoliz Ayrımı",
+      "html": "<p>Eritrosit yıkımının gerçekleştiği anatomik bölge, klinik tabloyu ve idrar bulgularını belirler:</p><ul class=\"mb-4\"><li><strong>Ekstravasküler Hemoliz (En Sık):</strong> Yıkım, retiküloendotelyal sistemde (dalak ve karaciğerdeki makrofajlar) gerçekleşir. Hb böbreklerden süzülmez, bu nedenle hemoglobinüri görülmez. <strong>Splenomegali</strong>, sarılık ve uzun dönemde pigmentli safra taşları (kolelitiazis) tipiktir. <em>Örnek: Herediter Sferositoz, Sıcak tip Otoimmün Hemolitik Anemi.</em></li><li><strong>İntravasküler Hemoliz:</strong> Yıkım doğrudan damar yatağı (kan akımı) içinde gerçekleşir. Serbest hemoglobin kana karışır. <strong>Hemoglobinemi</strong> (plazmanın kırmızı/kahverengi olması) ve idrarda <strong>Hemoglobinüri</strong> (idrarın çay/kola rengini alması) tipiktir. Kronikleşirse renal tübüler epitel hücrelerinde biriken demirin atılmasıyla <strong>Hemosiderinüri</strong> saptanır. <em>Örnek: Paroksismal Nokturnal Hemoglobinüri (PNH), Mikroanjiyopatik Hemolitik Anemiler (TTP, HÜS, DİK), mekanik kalp kapağı hasarı.</em></li></ul>"
+    },
+    {
+      "heading": "Etiyolojik Sınıflandırma",
+      "html": "<p>Hemolitik anemiler, defektin eritrositin kendisine mi yoksa dış faktörlere mi bağlı olduğuna göre iki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>1. Kalıtsal (İntrinsik/Korpüsküler) Hemolitik Anemiler:</strong> Sorun eritrositin kendi yapısındadır.<ul><li><em>Membran Defektleri:</em> Herediter Sferositoz, Herediter Eliptositoz.</li><li><em>Enzim Eksiklikleri:</em> G6PD eksikliği (Oksidatif stres duyarlılığı), Piruvat Kinaz eksikliği.</li><li><em>Hemoglobinopatiler:</em> Orak Hücreli Anemi, Talasemiler.</li></ul></li><li><strong>2. Edinsel (Ekstrinsik/Ekstrakorpüsküler) Hemolitik Anemiler:</strong> Eritrosit normaldir ancak dış faktörler tarafından yıkılır. (<em>İstisna: Paroksismal Nokturnal Hemoglobinüri (PNH) edinseldir ancak intrinsik bir defekttir</em>).<ul><li><em>İmmün (Antikor Aracılı):</em> Otoimmün Hemolitik Anemi (Sıcak, Soğuk tipler), İlaç ilişkili, Transfüzyon reaksiyonları, Yenidoğanın Hemolitik Hastalığı.</li><li><em>Non-İmmün:</em> Mikroanjiyopatik Hemolitik Anemiler (eritrositlerin fibrin ağlarına veya trombüslere çarpıp parçalanması sonucu <strong>Şistositler</strong> oluşur; TTP, HÜS, DİK). Mekanik travma (protez kapaklar) ve enfeksiyonlar (Sıtma, Babesiyoz).</li></ul></li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım (Direkt Antiglobulin Testi - DAT)",
+      "html": "<p>Hemoliz varlığı (LDH, indirekt bilirubin, haptoglobin, retikülosit ile) kanıtlandıktan sonra, etiyolojiyi belirlemedeki en kritik ilk adım <strong>Direkt Antiglobulin Testi (Direkt Coombs)</strong> uygulamasıdır.</p><ul class=\"mb-4\"><li><strong>Coombs Pozitif:</strong> İmmün aracılı hemolizi (Otoimmün Hemolitik Anemi, ilaçlar veya transfüzyon reaksiyonu) gösterir.</li><li><strong>Coombs Negatif:</strong> İmmün olmayan nedenlere yönlendirir. Bu aşamada <strong>periferik yayma incelemesi</strong> altın standarttır (Şistositler mikroanjiyopatiyi, sferositler herediter sferositozu, bite cell/ısırılmış hücreler G6PD eksikliğini düşündürür).</li></ul>"
+    }
+  ]
+}

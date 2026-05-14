@@ -1,0 +1,518 @@
+{
+  "id": "fc-hem-aml-mega-001",
+  "accessLevel": "premium",
+  "topic": "AML (Akut Myeloid Lösemi) Mega Paket",
+  "description": "YDUS Hematoloji serisi: AML morfolojisi, genetiği, hedefe yönelik tedavileri, nadir varyantlar, güncel ICC/WHO5 kılavuzları, kök hücre nakli, pediatrik AML ve relaps yönetimini kapsayan devasa 85 soruluk hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "AML hastasının periferik yaymasında hücre sitoplazmasında izlenen, iğneye benzer eozinofilik inklüzyon cisimcikleri nelerdir?",
+      "back": "Auer Çubukları (Auer Rods). En sık AML M3 (APL)'de görülür.",
+      "tag": "Morfoloji"
+    },
+    {
+      "id": "card-2",
+      "front": "Diş eti hipertrofisi (Gingival hiperplazi) ve MSS tutulumu en sık hangi AML alt tipinde görülür?",
+      "back": "AML M5 (Akut Monositik Lösemi).",
+      "tag": "Klinik"
+    },
+    {
+      "id": "card-3",
+      "front": "t(15;17) translokasyonu hangi AML alt tipi için patognomoniktir ve bu mutasyon hangi reseptörü bozar?",
+      "back": "AML M3 (Akut Promyelositik Lösemi - APL). Retinoik Asit Reseptör Alfa (RAR-alfa) genini bozar.",
+      "tag": "Genetik"
+    },
+    {
+      "id": "card-4",
+      "front": "AML M3 (APL) tedavisinde devrim yaratan, hücreleri olgunlaşmaya zorlayan spesifik ajan nedir?",
+      "back": "ATRA (All-Trans Retinoik Asit) +/- Arsenik Trioksit.",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-5",
+      "front": "inv(16) veya t(16;16) sitogenetik anormalliği olan AML alt tipinde (FAB M4Eo) kemik iliği morfolojisinde hangi hücrelerde belirgin anormallik görülür ve bu durum hangi genlerin füzyonu ile sonuçlanır?",
+      "back": "Eozinofillerde anormallik (büyük, koyu bazofilik granüller) görülür. Bu anormallik CBFB ve MYH11 genlerinin füzyonu ile sonuçlanır. Favorable (iyi) prognostik gruptadır.",
+      "tag": "Sitogenetik / Morfoloji"
+    },
+    {
+      "id": "card-6",
+      "front": "FLT3-ITD mutasyonu saptanan de novo AML hastalarının indüksiyon ve konsolidasyon tedavisine eklenmesi sağkalımı belirgin şekilde uzatan hedefe yönelik tirozin kinaz inhibitörleri nelerdir?",
+      "back": "Midostaurin ve Quizartinib. Ayrıca relaps/refrakter FLT3 mutasyonlu AML tedavisinde Gilteritinib (monoterapi olarak) kullanılır.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-7",
+      "front": "Normal karyotipli (sitogenetik olarak normal) AML'de en sık görülen ve FLT3-ITD mutasyonu eşlik etmediğinde (veya düşük allelik oranda olduğunda) 'favorable' (iyi) prognoz göstergesi olan gen mutasyonu hangisidir?",
+      "back": "NPM1 (Nükleofosmin 1) mutasyonu. NPM1 mutasyonu sıklıkla belirgin nükleer invajinasyonlar (çanak / cuplike benzeri çekirdek) ile karakterizedir.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "card-8",
+      "front": "Akut Promyelositik Lösemi'nin (APL - AML M3) klasik hipergranüler formunda karakteristik akım sitometri (flow sitometri) bulguları nelerdir?",
+      "back": "Myeloid blast markerları olan CD13, CD33 ve CD117 pozitiftir; ancak diğer AML'lerin aksine karakteristik olarak HLA-DR ve CD34 ekspresyonu negatiftir.",
+      "tag": "İmmünofenotip"
+    },
+    {
+      "id": "card-9",
+      "front": "75 yaş üstü veya yoğun kemoterapiye uygun olmayan (unfit) yeni tanı AML hastalarının standart birinci basamak tedavisinde Hipometile edici ajanlar (Azasitidin veya Desitabin) ile kombine edilen oral BCL-2 inhibitörü nedir?",
+      "back": "Venetoklaks (Venetoclax). Bu kombinasyon yaşlı ve unfit hastalarda tam yanıt oranlarını ve medyan sağkalımı standart azasitidin tedavisine kıyasla belirgin olarak artırır.",
+      "tag": "Tedavi / Yaşlı Hasta"
+    },
+    {
+      "id": "card-10",
+      "front": "IDH1 ve IDH2 mutasyonu saptanan, yoğun kemoterapiye uygun olmayan (unfit) veya relaps/refrakter AML hastalarında kullanılan spesifik oral inhibitör ajanların adları sırasıyla nelerdir?",
+      "back": "IDH1 mutasyonu için İvosidenib (veya Olutasidenib), IDH2 mutasyonu için Enasidenib kullanılır. Bu ajanlar onkometabolit oluşumunu engelleyerek lösemik hücrelerin farklılaşmasını sağlar.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-11",
+      "front": "Sekonder AML (örneğin MDS zemininde gelişen) veya tedavi ilişkili AML (t-AML) vakalarında standart 7+3 kemoterapisine kıyasla sağkalım avantajı gösteren, sitarabin ve daunorubisinin 5:1 oranında lipozomal formülasyonu olan kemoterapötik ajanın adı nedir?",
+      "back": "CPX-351 (Vyxeos). Yaşlı yetişkinlerde tedaviyle ilişkili AML ve miyelodisplazi ile ilişkili değişiklikler gösteren AML'de ilk seçeneklerdendir.",
+      "tag": "Tedavi / Farmakoloji"
+    },
+    {
+      "id": "card-12",
+      "front": "Kanda dev hipogranüler trombositler, kemik iliğinde mikromegakaryositler, normal veya artmış trombosit sayısı ile prezente olan; GATA2 enhancer bölgesinin yer değiştirerek MECOM (EVI1) geninin aşırı ekspresyonuna neden olduğu kötü prognozlu (adverse risk) sitogenetik anormallik hangisidir?",
+      "back": "inv(3)(q21.3q26.2) veya t(3;3)(q21.3;q26.2). Ek olarak sıklıkla multilineage displazi ve atipik megakaryopoez görülür.",
+      "tag": "Sitogenetik / Klinik"
+    },
+    {
+      "id": "card-13",
+      "front": "Down sendromlu (Trizomi 21) yenidoğanlarda görülebilen, kendiliğinden gerileyebilen ancak daha sonra AML'ye (sıklıkla AML M7) dönüşme riski taşıyan, GATA1 somatik mutasyonu ile ilişkili tablonun adı nedir?",
+      "back": "Geçici Anormal Miyelopoez (Transient Abnormal Myelopoiesis - TAM). Sonrasında bu hastalarda Akut Megakaryoblastik Lösemi (AMKL) gelişme riski yüksektir.",
+      "tag": "Pediatrik Hematoloji"
+    },
+    {
+      "id": "card-14",
+      "front": "Miyeloid Sarkom (Kloroma) nedir ve hastanın kanında/kemik iliğinde blast artışı (<%20) olmasa dahi tek başına izole varlığı hangi tanıyı koydurur?",
+      "back": "Miyeloid blastların doku mimarisini bozarak kemik iliği dışında ekstramedüller kitle oluşturmasıdır. Kanda veya kemik iliğinde blast yüzdesine bakılmaksızın izole varlığı bile direkt AML tanısı koydurur.",
+      "tag": "Klinik / Tanı"
+    },
+    {
+      "id": "card-15",
+      "front": "AML hastalarında en kötü prognoz (adverse risk) göstergelerinden biri olan, yaşlılarda ve kompleks karyotip (complex karyotype) ile birlikte çok sık görülen; ayrıca akut eritroid lösemi (AEL) ile yakından ilişkili olan tümör baskılayıcı gen mutasyonu hangisidir?",
+      "back": "TP53 mutasyonu. Klasik kemoterapiye dirençlidir ve sağkalımı (OS) önemli ölçüde düşürür.",
+      "tag": "Moleküler Genetik / Prognoz"
+    },
+    {
+      "id": "card-16",
+      "front": "2022 ELN ve Uluslararası Konsensüs Sınıflandırması (ICC) güncellemelerine göre, CEBPA geninde hangi spesifik mutasyon tipinin varlığı AML'de 'favorable' (iyi) prognoz göstergesi olarak kabul edilir?",
+      "back": "Sadece in-frame bZIP (basic leucine zipper) bölgesini etkileyen CEBPA mutasyonları iyi prognoz göstergesidir. Önceden aranan biallelik mutasyon şartı artık aranmamakta olup, bu mutasyonun monoallelik veya biallelik olması tek başına yeterlidir.",
+      "tag": "Sınıflandırma / Moleküler Genetik"
+    },
+    {
+      "id": "card-17",
+      "front": "Normalde iyi prognozlu kabul edilen Core Binding Factor (CBF) lösemilerinde (t(8;21) ve inv(16)), özellikle t(8;21) vakalarında saptandığında artmış relaps riski ve kötü sağkalım ile ilişkili olan tirozin kinaz gen mutasyonu hangisidir?",
+      "back": "KIT mutasyonu (özellikle ekzon 8 ve 17'yi etkileyen mutasyonlar) t(8;21) AML'de genel sağkalımı ve relapssız sağkalımı düşürerek kötü prognoz yaratır.",
+      "tag": "Moleküler Genetik / Prognoz"
+    },
+    {
+      "id": "card-18",
+      "front": "Klinik ve morfolojik olarak Akut Promyelositik Lösemi'yi (APL) taklit edebilen, sıklıkla yaygın damar içi pıhtılaşma (DIC) ve eritrofagositoz ile karakterize olan, alkilleyici ajanlara veya topoizomeraz II inhibitörlerine sekonder olarak da gelişebilen kötü prognozlu sitogenetik anormallik hangisidir?",
+      "back": "t(8;16)(p11.2;p13.3) translokasyonu ve bunun sonucunda gelişen KAT6A::CREBBP füzyonudur.",
+      "tag": "Sitogenetik / Klinik"
+    },
+    {
+      "id": "card-19",
+      "front": "Özellikle çocukluk çağında sık görülen KMT2A (MLL) translokasyonları ile NUP98 yeniden düzenlenmeleri saptanan lösemi hastalarının tedavisinde, histon metiltransferaz kompleksine müdahale ederek hücresel diferansiyasyonu uyaran yeni nesil hedefe yönelik ajan sınıfı nedir?",
+      "back": "Menin inhibitörleri (örneğin Revumenib) bu spesifik genetik anormalliklerde yüksek etkinlik gösterir. Bu ajanlar, mutasyona uğramış onkogenik proteinler ile Menin proteini arasındaki etkileşimi bloke ederek etki eder.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-20",
+      "front": "Kemik iliğinde belirgin bazofili, pansitopeni ve sıklıkla multilineage displazi ile seyreden, nükleer taşıma (nuclear transport) proteinini bozarak DEK::NUP214 füzyonu oluşturan ve FLT3-ITD mutasyonlarının çok sık eşlik ettiği sitogenetik anormallik hangisidir?",
+      "back": "t(6;9)(p22.3;q34.1) translokasyonudur. Bu anormallik elverişsiz (adverse) risk grubundadır ve çok kötü bir prognoza sahiptir.",
+      "tag": "Sitogenetik / Kötü Prognoz"
+    },
+    {
+      "id": "card-21",
+      "front": "Yaşlı ve yoğun kemoterapiye uygun olmayan AML hastalarında standart hale gelen Venetoklaks (BCL-2 inhibitörü) tedavisine karşı gelişen birincil veya kazanılmış (adaptif) direnç, en sık hangi genlerdeki mutasyonlar veya kayıplar üzerinden gerçekleşir?",
+      "back": "FLT3 ve RAS gibi kinaz sinyal yolaklarını aktive eden mutasyonlar ile TP53 geninin biallelik mutasyonları/kayıpları (disruptions) üzerinden gerçekleşir.",
+      "tag": "Farmakoloji / Direnç Mekanizmaları"
+    },
+    {
+      "id": "card-22",
+      "front": "Genellikle infantlarda masif organomegali ve abdominal kitle ile prezente olan, solid tümörleri (örneğin nöroblastom) taklit eden ekstramedüller myeloid sarkom bulgularıyla seyreden, Down sendromu dışı akut megakaryoblastik lösemi (AMKL) alt tipine hangi anormallik neden olur?",
+      "back": "t(1;22)(p13.3;q13.1) translokasyonu ve sonucunda gelişen RBM15::MRTFA füzyonu.",
+      "tag": "Pediatrik Hematoloji / Sitogenetik"
+    },
+    {
+      "id": "card-23",
+      "front": "AML tanısında birçok rekürren genetik anormallik (örn. t(15;17), inv(16)) kanda veya kemik iliğinde %20 blast sınırı gerektirmezken; KML (Kronik Myeloid Lösemi) blastik krizinden ayırımı yapabilmek adına, ICC ve WHO5 sistemlerinde tanı için hala en az %20 blast eşiği aranan Philadelphia kromozomu pozitifliği durumu hangi füzyon ile tanımlanır?",
+      "back": "t(9;22)(q34.1;q11.2) translokasyonu ile oluşan BCR::ABL1 füzyonu. CML'nin ileri evresi ile örtüşmeyi önlemek için %20 blast eşiği korunmuştur.",
+      "tag": "Sınıflandırma / Tanı"
+    },
+    {
+      "id": "card-24",
+      "front": "Normal karyotipli, özellikle genç erişkinlerde (%1-3 oranında) görülen, morfolojik displazi, trisomi 8, WT1 mutasyonları ve FLT3-ITD ile sık birliktelik gösteren, ribozomal RNA transkripsiyonunun epigenetik regülasyonunda rol oynayan ve kötü prognoz yaratan yeni nesil tandem duplikasyon (TD) hangi gendedir?",
+      "back": "UBTF (Upstream Binding Transcription Factor) genindeki tandem duplikasyonlardır.",
+      "tag": "Yeni Belirteçler / Moleküler Genetik"
+    },
+    {
+      "id": "card-25",
+      "front": "Uluslararası Konsensüs Sınıflandırması'na (ICC) göre, %20 ve üzeri blast varlığında 'Myelodisplazi ilişkili gen mutasyonları olan AML' (AML with myelodysplasia-related gene mutations) tanısı koyduran, genelde RNA splicing (kırpılma) ve kromatin modifikasyonunda rol alan 9 adet spesifik gen hangileridir?",
+      "back": "ASXL1, BCOR, EZH2, RUNX1, SF3B1, SRSF2, STAG2, U2AF1 ve ZRSR2 genleridir. (Not: RUNX1 mutasyonu WHO5 sisteminde bu gruptan çıkarılmış, ancak ICC sisteminde listeye dahil edilmiştir).",
+      "tag": "Sınıflandırma / Epigenetik"
+    },
+    {
+      "id": "card-26",
+      "front": "Yetişkinlerde sıklıkla germline (kalıtsal) patojenik varyant zemininde gelişebilen, ancak HMA ve Venetoklaks kombinasyonuna mükemmel yanıt vererek 'favorable' (iyi) prognoz ve uzun sağkalım gösteren yeni gen mutasyonu hangisidir?",
+      "back": "DDX41 mutasyonu. Bu mutasyona sahip AML vakaları yoğun kemoterapiye veya HMA tabanlı tedavilere çok iyi yanıt verir.",
+      "tag": "Moleküler Genetik / Prognoz"
+    },
+    {
+      "id": "card-27",
+      "front": "Down sendromlu yenidoğanlarda görülen Geçici Anormal Miyelopoez (TAM) ile ilk 4 yaşta gelişen Akut Megakaryoblastik Lösemi (AMKL) tablolarının patogenezinde ortak olarak rol oynayan ve intrauterin dönemde kazanılan spesifik gen mutasyonu nedir?",
+      "back": "GATA1 mutasyonu. Bu lösemi alt tipi çocukluk çağında standart AML'ye kıyasla yüksek kür oranlarına ve iyi prognoza sahiptir.",
+      "tag": "Pediatrik Hematoloji"
+    },
+    {
+      "id": "card-28",
+      "front": "IDH inhibitörleri (İvosidenib, Enasidenib) veya Menin inhibitörleri ile tedavi edilen hastalarda aniden ortaya çıkabilen; ateş, periferik ödem, hipotansiyon ve plevral/perikardiyal efüzyonlarla karakterize sendromun adı nedir ve tedavisinde ilk seçenek ajan hangisidir?",
+      "back": "Diferansiyasyon Sendromu (Farklılaşma Sendromu). Şüphelenildiği anda vakit kaybetmeden sistemik glukokortikoidler (tercihen Deksametazon) başlanmalıdır.",
+      "tag": "Komplikasyon / Tedavi"
+    },
+    {
+      "id": "card-29",
+      "front": "Kromozom analizi ile genellikle saptanamayan 'kriptik' bir anormallik olan, sıklıkla FLT3 ve WT1 mutasyonlarının eşlik ettiği, HOX gen kümelerinin upregülasyonuna yol açarak kötü prognoz yaratan ve Menin inhibitörlerine belirgin duyarlılık gösteren gen füzyonları hangileridir?",
+      "back": "NUP98 gen yeniden düzenlenmeleri (örn. t(5;11) ile gelişen NUP98::NSD1 veya NUP98::KDM5A füzyonları).",
+      "tag": "Sitogenetik / Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-30",
+      "front": "CD33 pozitif AML tedavisinde kullanılan Gemtuzumab Ozogamisin (GO) sonrası allojenik kök hücre nakli (HCT) yapılacak hastalarda, ölümcül olabilen hangi karaciğer komplikasyonunun riskini azaltmak için naklin son dozdan 60-90 gün sonraya ertelenmesi önerilir?",
+      "back": "Hepatik Sinüzoidal Obstrüksiyon Sendromu (SOS) / Veno-Oklüzif Hastalık (VOD).",
+      "tag": "Toksisite / Kök Hücre Nakli"
+    },
+    {
+      "id": "card-31",
+      "front": "Yaşlı ve yoğun kemoterapiye uygun olmayan AML hastalarında düşük doz sitarabin (LDAC) ile kombine edilen, Hedgehog sinyal yolağını antagonize eden (Smoothened - SMO inhibitörü) ve QT uzamasına/teratojenisiteye yol açabilen oral hedefe yönelik ajan hangisidir?",
+      "back": "Glasdegib.",
+      "tag": "Hedefe Yönelik Tedavi / Farmakoloji"
+    },
+    {
+      "id": "card-32",
+      "front": "ELN 2024 'Düşük Yoğunluklu Tedaviler' (örn. Venetoklaks + Azasitidin) risk sınıflandırmasına göre; normalde 'iyi (favorable)' grupta yer alan NPM1 veya IDH2 mutasyonlu hastalarda hangi spesifik yolağa ait mutasyonların eşlik etmesi Venetoklaks direncine yol açarak hastayı 'orta (intermediate)' risk grubuna düşürür?",
+      "back": "FLT3-ITD, KRAS ve NRAS gibi aktive edici sinyal (signaling gene) mutasyonlarının varlığı.",
+      "tag": "Kılavuzlar / Direnç Mekanizmaları"
+    },
+    {
+      "id": "card-33",
+      "front": "Uluslararası Konsensüs Sınıflandırması'na (ICC) göre; eski WHO sistemlerindeki Akut Eritroid Lösemiyi (AEL) de büyük oranda içine alan ve tanı koymak için allelik duruma bakılmaksızın varyant allel frekansının (VAF) en az %10 olmasının yeterli kabul edildiği yüksek riskli alt tip hangisidir?",
+      "back": "Mutasyona uğramış TP53'lü AML (AML with mutated TP53).",
+      "tag": "Sınıflandırma / ICC"
+    },
+    {
+      "id": "card-34",
+      "front": "Özellikle KML'nin blastik krizinde ve tedaviyle ilişkili sekonder AML/MDS vakalarında sık saptanan; RUNX1 geninin 3q26 kromozom bandındaki partnerleri olan EAP, MDS1 ve EVI1 genleri ile füzyonu sonucunda oluşan karakteristik translokasyon hangisidir?",
+      "back": "t(3;21)(q26;q22) translokasyonu.",
+      "tag": "Sitogenetik / Sekonder Lösemi"
+    },
+    {
+      "id": "card-35",
+      "front": "Akut Promyelositik Lösemi'nin (APL) klasik t(15;17) PML::RARA formu dışındaki varyant translokasyonlarından biri olan ve kromozom 11'deki PLZF geni ile RARA'nın birleşmesiyle karakterize edilen nadir anormallik hangisidir?",
+      "back": "t(11;17)(q23;q11-12) translokasyonu sonucu oluşan PLZF::RARA füzyonu.",
+      "tag": "Nadir Varyantlar / Sitogenetik"
+    },
+    {
+      "id": "card-36",
+      "front": "Yoğun indüksiyon ve konsolidasyon tedavisi ile ilk tam remisyona (CR/CRi) giren ancak allojenik kök hücre nakli (HCT) için uygun olmayan (özellikle ≥55 yaş) hastaların idame tedavisinde kullanılan ve sağkalımı (OS) belirgin olarak uzattığı gösterilen oral ajan nedir?",
+      "back": "Oral Azasitidin (CC-486). Bu formülasyon klasik subkutan/IV azasitidinden farmakokinetik olarak farklıdır ve idame tedavisinde standartlar arasına girmiştir.",
+      "tag": "İdame Tedavisi / Farmakoloji"
+    },
+    {
+      "id": "card-37",
+      "front": "FLT3 mutasyonlu AML tedavisinde kullanılan tirozin kinaz inhibitörlerinden hangileri hem ITD hem de TKD mutasyonlarında etkilidir ve hangisi spesifik olarak sadece FLT3-ITD mutasyonunda onaylıdır?",
+      "back": "Midostaurin (indüksiyonda) ve Gilteritinib (relaps/refrakterde) hem ITD hem TKD mutasyonlarına etkilidir. Quizartinib ise sadece FLT3-ITD (Internal Tandem Duplication) mutasyonunda endikedir.",
+      "tag": "Hedefe Yönelik Tedavi / Farmakoloji"
+    },
+    {
+      "id": "card-38",
+      "front": "Dünya Sağlık Örgütü'nün (WHO5) güncel sınıflamasına göre 'Akut Eritroid Lösemi (AEL)' tanısı koymak için kemik iliğinde eritroid serinin toplamı ve proeritroblast (pronormoblast) oranı sırasıyla en az yüzde kaç olmalıdır?",
+      "back": "Kemik iliği hücrelerinin en az %80'i eritroid seriden olmalı ve bunların ≥%30'unu proeritroblastlar oluşturmalıdır. (Not: ICC sisteminde bu tanı büyük oranda 'Mutasyona uğramış TP53'lü AML' başlığına taşınmıştır).",
+      "tag": "Sınıflandırma / Morfoloji"
+    },
+    {
+      "id": "card-39",
+      "front": "Yaşlı veya yoğun kemoterapiye uygun olmayan (unfit) AML hastalarında Venetoklaks ve Hipometile edici ajan (Azasitidin/Desitabin) kombinasyonu başlanırken, Tümör Lizis Sendromu (TLS) riskini en aza indirmek için uygulanan doz stratejisi nasıldır?",
+      "back": "İlk kürde 3 günlük kademeli doz artırımı (ramp-up/dose-escalation) yapılır: 1. gün 100 mg, 2. gün 200 mg, 3. gün (ve sonrasında) 400 mg olacak şekilde uygulanır. Hastalar TLS açısından sıkı laboratuvar takibine alınır.",
+      "tag": "Komplikasyon Yönetimi / Tedavi"
+    },
+    {
+      "id": "card-40",
+      "front": "Morfolojik olarak belirgin eritrofagositoz ile karakterize olan, klinik olarak APL'yi (yaygın DIC) taklit edebilen, KAT6A (eski adıyla MOZ) ve CREBBP (CBP) genlerinin füzyonu sonucu gelişen kötü prognozlu sitogenetik anormallik hangisidir?",
+      "back": "t(8;16)(p11;p13) translokasyonu (KAT6A::CREBBP füzyonu).",
+      "tag": "Sitogenetik / Nadir Varyantlar"
+    },
+    {
+      "id": "card-41",
+      "front": "Relaps veya refrakter AML hastalarının tedavisinde denenen, T hücrelerindeki CD3 ile miyeloid blastlardaki CD123'ü (IL-3 reseptör alfa zinciri) birbirine bağlayarak etki gösteren (Bispesifik DART antikoru) ve en sık yan etkisi Sitokin Salınım Sendromu (CRS) olan immünoterapi ajanı hangisidir?",
+      "back": "Flotetuzumab. Refrakter ve erken relaps vakalarında (ve immün infiltrasyon varlığında) yüksek yanıt oranları bildirilmiştir.",
+      "tag": "İmmünoterapi / Salvage Tedavi"
+    },
+    {
+      "id": "card-42",
+      "front": "Klonal Hematopoez (CHIP) zemininde gelişen ileri yaş ve sekonder AML (t-AML, MDS/AML) vakalarında en sık saptanan; epigenetik regülasyon ve DNA metilasyonunda görev alan 'early-event' (erken dönem) 3'lü mutasyon (DTA mutasyonları) hangileridir?",
+      "back": "DNMT3A, TET2 ve ASXL1 gen mutasyonlarıdır.",
+      "tag": "Moleküler Genetik / Patogenez"
+    },
+    {
+      "id": "card-43",
+      "front": "Avrupa Lösemi Ağı (ELN) 2022 güncel risk sınıflandırmasına göre; daha önceleri NPM1 mutasyonu varlığında ve düşük allelik oranda (<0.5) olduğunda 'Favorable (iyi)' grupta sayılan FLT3-ITD mutasyonunun güncel durumu nedir?",
+      "back": "FLT3-ITD mutasyonu (allelik oranına bakılmaksızın ve NPM1 ile birlikte olup olmadığına bakılmaksızın) taşıyan tüm AML hastaları, FLT3 inhibitörlerine olan duyarlılıkları nedeniyle artık 'Orta (Intermediate) Risk' kategorisinde sınıflandırılmaktadır.",
+      "tag": "Prognoz / ELN 2022"
+    },
+    {
+      "id": "card-44",
+      "front": "Akut Myeloid Lösemi'de (AML) Santral Sinir Sistemi (SSS) tutulumu (Lösemik Menenjit / MSS relapsı) ALL'ye kıyasla oldukça nadirdir (%5-10). En sık hangi FAB morfolojik alt tiplerinde ve hangi risk faktörünün varlığında görülür?",
+      "back": "Monositik veya Miyelomonositik farklılaşma gösteren alt tiplerde (FAB M4 ve M5) ve Hiperlokositoz (WBC >100,000/microL) veya yüksek lökosit artış hızının bulunduğu durumlarda görülme riski en yüksektir.",
+      "tag": "Klinik / SSS Tutulumu"
+    },
+    {
+      "id": "card-45",
+      "front": "Down sendromlu (Trizomi 21) çocuklarda yaşamın ilk 4 yılında görülen, genellikle GATA1 somatik mutasyonunun eşlik ettiği Akut Megakaryoblastik Lösemi (AMKL - FAB M7) vakalarında standart/sporadik AMKL'ye göre kemoterapi (sitarabin) yanıtı ve prognoz nasıldır?",
+      "back": "Down sendromu ile ilişkili AMKL vakaları kemoterapiye (özellikle sitarabine) oldukça duyarlıdır ve prognozları son derece iyidir (>%80 kür oranı).",
+      "tag": "Pediatrik Hematoloji / Prognoz"
+    },
+    {
+      "id": "card-46",
+      "front": "Alkilleyici ajanlar (örn. melfalan) ile Topoizomeraz II inhibitörlerine (örn. etoposid) ikincil gelişen tedavi ilişkili AML (t-AML) vakalarında sırasıyla beklenen latent (gecikme) süreleri ve patogenezden en sık sorumlu tutulan genetik anormallikler nelerdir?",
+      "back": "Alkilleyici ajanlar için latent süre 5-7 yıldır ve kromozom 5/7 anormallikleri veya TP53 mutasyonu ile seyreder. Topoizomeraz II inhibitörleri için latent süre 1-3 yıldır ve genellikle 11q23 (KMT2A/MLL) gen yeniden düzenlenmeleri görülür.",
+      "tag": "Sekonder AML / Genetik"
+    },
+    {
+      "id": "card-47",
+      "front": "Klasik APL (t(15;17) PML::RARA) ATRA tedavisine dramatik yanıt verirken, morfolojik olarak APL'yi taklit edebilen ancak karakteristik olarak ATRA'ya (all-trans retinoik asit) dirençli olan ve nadir bir varyant olan t(11;17)(q23;q21) translokasyonu hangi genlerin füzyonu ile oluşur?",
+      "back": "ZBTB16::RARA (eski adıyla PLZF::RARA) füzyonu. Bu varyant standart APL tedavisinden farklı bir yaklaşım gerektirir.",
+      "tag": "Tedavi Direnci / APL Varyantları"
+    },
+    {
+      "id": "card-48",
+      "front": "AML'de tam remisyon sonrası Minimal/Ölçülebilir Kalıntı Hastalık (MRD) takibinde yüksek duyarlılığa (10^-4 ila 10^-5) sahip kantitatif PCR (RT-qPCR) yöntemiyle izlenmesi Avrupa Lösemi Ağı (ELN) tarafından altın standart kabul edilen karakteristik füzyonlar ve mutasyonlar nelerdir?",
+      "back": "Mutasyona uğramış NPM1, CBFB::MYH11, RUNX1::RUNX1T1, KMT2A::MLLT3, DEK::NUP214 ve BCR::ABL1 gibi lösemiye özgü kararlı hedeflerdir. (Not: FLT3-ITD klonal heterojenite ve evrim nedeniyle MRD takibinde tek başına PCR hedefi olarak yetersiz kalabilir).",
+      "tag": "MRD Takibi / Moleküler Tanı"
+    },
+    {
+      "id": "card-49",
+      "front": "Allojenik kök hücre nakli (HCT) sonrasında nüks (relaps) eden AML hastalarında, özellikle hastada aktif GVHD (Graft-Versus-Host Disease) bulunmuyorsa immünsüpresyonun kesilmesinin ardından uygulanan ve Graft-versus-Leukemia (GVL) etkisini artırarak %20-35 oranında tam remisyon sağlayabilen hücresel immünoterapi yöntemi nedir?",
+      "back": "Donör Lenfosit İnfüzyonu (Donor Lymphocyte Infusion - DLI).",
+      "tag": "Kök Hücre Nakli / Komplikasyon Yönetimi"
+    },
+    {
+      "id": "card-50",
+      "front": "Özellikle pediatrik ve genç erişkin AML vakalarında görülen, klasik sitogenetik inceleme (G-bantlama) ile kolay saptanamayan 'kriptik' yapıdaki, KMT2A ve HOX gen kümeleriyle epigenetik etkileşime giren ve 'Menin inhibitörlerine' terapötik duyarlılık gösteren gen yeniden düzenlenmeleri grubu hangisidir?",
+      "back": "NUP98 gen yeniden düzenlenmeleri (örn. t(5;11); NUP98::NSD1 veya t(11;12); NUP98::KDM5A).",
+      "tag": "Kriptik Sitogenetik / Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-51",
+      "front": "Kronik Myeloid Lösemi (KML) blastik krizi ekarte edildikten sonra 'de novo AML' alt tipleri arasında yer alan; blastik hücre sitoplazmasında metakromatik granüllerin tespit edildiği ve toluidin mavisi (toluidine blue) boyası ile pozitiflik veren çok nadir varyantın adı nedir?",
+      "back": "Akut Bazofilik Lösemi (Acute Basophilic Leukemia).",
+      "tag": "Nadir Varyantlar / Sitokimya"
+    },
+    {
+      "id": "card-52",
+      "front": "Relaps veya primer refrakter AML hastalarında allojenik kök hücre nakline (HCT) köprü oluşturmak amacıyla 'salvage' (kurtarma) tedavisi olarak yaygın kullanılan; Fludarabin, Yüksek Doz Sitarabin ve G-CSF'den oluşan temel kemoterapi rejimi (akronim) nedir ve bu rejime İdarubisin eklendiğinde ne ad verilir?",
+      "back": "FLAG rejimi. İdarubisin eklendiğinde rejimin adı FLAG-Ida olur.",
+      "tag": "Salvage Tedavi / Farmakoloji"
+    },
+    {
+      "id": "card-53",
+      "front": "Beyaz küre sayısının >100.000/mikroL olması durumunda mikrovasküler dolaşımın tıkanarak solunum sıkıntısı, hipoksi ve nörolojik defisitlerle seyrettiği 'Lökostaz Sendromu', periferik kandaki blast hücrelerinin büyük ve yapışkan karakteri nedeniyle en sık hangi FAB morfolojik AML alt tiplerinde izlenir?",
+      "back": "Akut Monositik (M5) ve Akut Miyelomonositik (M4) AML alt tiplerinde (Özellikle monoblastların artmış endotelyal adezyon özellikleri nedeniyle).",
+      "tag": "Onkolojik Aciller / Klinik"
+    },
+    {
+      "id": "card-54",
+      "front": "Saf Eritroid Lösemi (Pure Erythroid Leukemia) tanısında, DSÖ 5. Baskı (WHO5) ile Uluslararası Konsensüs Sınıflandırması (ICC 2022) arasında büyük bir ayrım mevcuttur. ICC sistemine göre eskiden bu tanıyı alan yüksek riskli vakalar artık hangi genetik başlık altında sınıflandırılmaktadır?",
+      "back": "ICC'ye göre AEL (Akut Eritroid Lösemi) ayrı bir alt tip olmaktan büyük oranda çıkarılmış olup, bu vakaların çoğunluğu artık doğrudan 'Mutasyona uğramış TP53'lü AML (AML with mutated TP53)' çatısı altında sınıflandırılmaktadır.",
+      "tag": "Sınıflandırma Farkları / WHO5 vs ICC"
+    },
+    {
+      "id": "card-55",
+      "front": "RUNX1::RUNX1T1 füzyonu olan t(8;21) AML hastalarında, akım sitometrik analizde normalde B-lenfositlere özgü olan hangi belirteçlerin (markerların) aberan ekspresyonu çok sıktır ve bu durumun löseminin mikst fenotipli (MPAL) olduğu şeklinde yanlış yorumlanmaması gerekir?",
+      "back": "CD19, PAX5 ve sitoplazmik CD79 aberan ekspresyonları oldukça sıktır ve iyi prognostik t(8;21) vakalarında B-hücreli lenfoid karakterizasyondan ziyade bu lösemi tipine has tipik bir akım sitometri bulgusudur.",
+      "tag": "İmmünofenotipleme / Flow Sitometri"
+    },
+    {
+      "id": "card-56",
+      "front": "Miyelodisplazi ile ilişkili genetik anormalliklerin veya mutasyonların saptandığı ancak blast oranının %10-19 arasında olduğu vakalar, Uluslararası Konsensüs Sınıflandırması (ICC) ve Dünya Sağlık Örgütü 5. Baskı (WHO5) sistemlerinde sırasıyla hangi tanı isimlerini alır?",
+      "back": "ICC sisteminde bu vakalar için 'MDS/AML' yeni kategorisi yaratılmıştır. WHO5 sisteminde ise bu durum 'Artmış blastlı MDS 2 (MDS-IB2)' olarak sınıflandırılmaya devam eder.",
+      "tag": "Sınıflandırma / ICC vs WHO5"
+    },
+    {
+      "id": "card-57",
+      "front": "İleri dönemde AML, MDS veya T-hücreli ALL gelişimine yüksek yatkınlık yaratan, klinik olarak uzun süreli hafif-orta şiddette trombositopeni ve aspirin benzeri fonksiyonel trombosit defekti (hafif kanama eğilimi) ile prezente olan otozomal dominant ailesel sendroma hangi genin germline (kalıtsal) mutasyonu neden olur?",
+      "back": "RUNX1 geninin germline monoallelik mutasyonu neden olur. (Hastalık: Miyeloid Malignitelere Yatkınlık Yaratan Ailesel Trombosit Bozukluğu - FPDMM).",
+      "tag": "Ailesel Lösemiler / Genetik"
+    },
+    {
+      "id": "card-58",
+      "front": "KMT2A (eski adıyla MLL) yeniden düzenlemeleri veya NUP98 füzyonları olan AML hastalarında yüksek etkinlik gösteren 'Menin inhibitörleri'ne (örn. Revumenib) karşı tedavi sürecinde gelişen klinik direnç, tipik olarak hangi gende sonradan kazanılan (edinsel) mutasyonlar ile ilişkilidir?",
+      "back": "MEN1 geninde kazanılmış mutasyonların gelişmesiyle ilişkilidir.",
+      "tag": "Hedefe Yönelik Tedavi / Direnç"
+    },
+    {
+      "id": "card-59",
+      "front": "Genellikle iyi prognozlu kabul edilen Core Binding Factor (CBF) lösemilerinden t(8;21) / RUNX1::RUNX1T1 AML'de, akım sitometri (flow sitometri) analizinde hangi spesifik yüzey antijeninin ekspresyonu artmış nüks (relaps) riski ile ilişkili bulunmuştur?",
+      "back": "CD56 ekspresyonunun varlığı t(8;21) AML'de artmış nüks riski ve kötü klinik gidişatın bağımsız bir göstergesi olarak kabul edilir.",
+      "tag": "İmmünofenotipleme / Prognoz"
+    },
+    {
+      "id": "card-60",
+      "front": "Kök hücre nakli sonrası veya tedavi takibinde Ölçülebilir/Minimal Kalıntı Hastalık (MRD) takibi yapılırken, DNMT3A, TET2 ve ASXL1 (DTA mutasyonları) neden tek başına nüksü öngörmede güvenilir MRD hedefleri olarak kabul edilmez?",
+      "back": "Bu mutasyonlar sıklıkla 'Önemi Belirsiz Klonal Hematopoez'i (CHIP) yansıtırlar ve klinik remisyondaki hastalarda varlıklarını sürdürmeleri AML nüksü veya kötü sağkalım ile doğrudan ilişkili bulunmamıştır.",
+      "tag": "MRD Takibi / Moleküler Genetik"
+    },
+    {
+      "id": "card-61",
+      "front": "CEBPA gen mutasyonlu AML tanısında, mutasyon tipi ve kemik iliği blast eşiği açısından güncel ICC ve WHO5 sistemleri arasındaki belirgin kural farkları nelerdir?",
+      "back": "ICC tanıyı sadece 'in-frame bZIP' bölgesindeki mutasyonlarla sınırlar ve %10 blast eşiğini yeterli görür. WHO5 ise hem bZIP hem de biallelik mutasyonları kapsar ancak tanı koymak için hala en az %20 blast varlığını şart koşar.",
+      "tag": "Sınıflandırma / Moleküler Genetik"
+    },
+    {
+      "id": "card-62",
+      "front": "Klasik t(8;21) vakalarından farklı olarak, inv(16) / t(16;16) anormalliği ile ilişkili olan Akut Miyelomonositik Lösemi (M4Eo) alt tipinde, kanda veya kemik iliğinde görülen anormal eozinofil granülleri hangi spesifik sitokimyasal boya ile pozitif reaksiyon verir?",
+      "back": "Naftol AS-D kloroasetat esteraz (CAE) boyası ile pozitif boyanır (Not: Normal eozinofiller veya t(8;21) ilişkili eozinofiller bu boya ile negatif boyanır).",
+      "tag": "Sitokimya / Morfoloji"
+    },
+    {
+      "id": "card-63",
+      "front": "Dev ve hipogranüler trombositler, pseudo-Pelger Huët anomalisine sahip nötrofiller ve multilineage displazi ile seyreden inv(3) veya t(3;3) AML'de; patogenezden sorumlu olan MECOM (EVI1) geninin aşırı ekspresyonuna, hangi genin distal enhancer (güçlendirici) bölgesinin MECOM'un yanına yer değiştirmesi yol açar?",
+      "back": "GATA2 geninin distal enhancer bölgesidir. Bu yer değiştirme, MECOM'u aktive ederken aynı zamanda GATA2 geninde haployetersizliğe (haploinsufficiency) neden olur.",
+      "tag": "Sitogenetik / Patogenez"
+    },
+    {
+      "id": "card-64",
+      "front": "Ewing sarkomu veya miksoid liposarkom gibi solid tümörlerde görülen füzyon genlerine çarpıcı bir şekilde benzeyen; KML'nin blastik krizinde, tedavi ilişkili MDS'de veya de novo AML'de saptanabilen ve FUS (TLS) geni ile ERG geninin birleşmesiyle oluşan spesifik translokasyon hangisidir?",
+      "back": "t(16;21)(p11;q22) translokasyonu sonucu oluşan TLS/FUS::ERG füzyonudur. Bu durum birden fazla hücre tipinde onkogenik dönüşüme yol açabilen ortak bir diferansiyasyon bozukluğunu yansıtır.",
+      "tag": "Nadir Varyantlar / Sitogenetik"
+    },
+    {
+      "id": "card-65",
+      "front": "ELN 2024 'Düşük Yoğunluklu Tedaviler' risk sınıflandırmasına göre, aktive edici sinyal yolak mutasyonları (örn. FLT3, RAS) eşlik etse dahi, spesifik olarak 'Azasitidin + İvosidenib' kombinasyonu uygulandığı için doğrudan 'Favorable (İyi)' risk grubunda kabul edilen AML profili hangisidir?",
+      "back": "IDH1 mutasyonlu AML hastalarıdır. Bu spesifik tedavi kombinasyonuna verdikleri olağanüstü ve kalıcı yanıt nedeniyle, normalde riski artıran sinyal mutasyonları olsa bile ELN 2024'te düşük yoğunluklu tedavi kılavuzunda 'İyi Risk' grubunda sınıflandırılırlar.",
+      "tag": "Prognoz / ELN 2024"
+    },
+    {
+      "id": "card-66",
+      "front": "Kromozom 7 anormallikleri (-7, del(7q)) sıklıkla sekonder ve tedavi ilişkili AML'de görülür. Bu delesyon segmentinde yer alan (özellikle 7q22 bandı çevresinde) ve lösemigenezden sorumlu tutulan haployetersiz tümör baskılayıcı ve epigenetik düzenleyici genler hangileridir?",
+      "back": "CUX1, SAMD9 ve EZH2 genleridir. Bu genlerin kaybı lösemik transformasyonda önemli bir mekanizmadır.",
+      "tag": "Sitogenetik / Patogenez"
+    },
+    {
+      "id": "card-67",
+      "front": "t(8;21) / RUNX1::RUNX1T1 translokasyonu erişkinlerde oldukça iyi (favorable) bir prognoz göstergesi iken, bu translokasyonun en sık görüldüğü grup olan çocukluk çağı AML vakalarında hangi ikincil anormalliklerin eşlik etmesi kötü prognoza (poor outcome) işaret eder?",
+      "back": "Kromozom 9q delesyonu (del(9q)) veya Kromozom 4 kazanımı (+4) eşlik ettiğinde, pediatrik t(8;21) vakalarının prognozu erişkinlere kıyasla belirgin derecede kötüdür.",
+      "tag": "Pediatrik Hematoloji / Prognoz"
+    },
+    {
+      "id": "card-68",
+      "front": "Retinoik asit (ATRA) tedavisine dirençli olan, t(11;17)(q23;q21) anormalliği sonucu gelişen ZBTB16::RARA (eski adıyla PLZF::RARA) füzyonuna sahip Akut Promyelositik Lösemi (APL) varyantının tipik morfolojik farkları nelerdir?",
+      "back": "Klasik hipergranüler APL'nin (bilobe / böbrek şeklinde çekirdek) aksine, bu hücrelerin çekirdekleri genellikle düzgün yuvarlak-ovaldir. Sıklıkla Auer çubukları izlenmez ve arka planda pelgeroid (hipolobe) nötrofiller görülür.",
+      "tag": "Morfoloji / APL Varyantları"
+    },
+    {
+      "id": "card-69",
+      "front": "Hem Akut Lenfoblastik Lösemi (T-ALL) hem de AML'de görülebilen; T-ALL'de normal prognoza sahipken, çocukluk çağı AML'sinde saptandığında dramatik olarak kötü prognoz ile ilişkili olan t(10;11)(p12;q14) translokasyonu hangi füzyon genini oluşturur?",
+      "back": "PICALM::MLLT10 (eski adıyla CALM::AF10) füzyonunu oluşturur.",
+      "tag": "Sitogenetik / Pediatrik Hematoloji"
+    },
+    {
+      "id": "card-70",
+      "front": "Allojenik kök hücre naklinde (HCT) kullanılan hazırlama (conditioning) rejimlerinin 'Miyeloablatif (MAC)' olarak kabul edilebilmesi için kullanılan kemoterapötik ajanların (Busulfan, Melfalan veya Thiotepa) ve Total Vücut Işınlamasının (TBI) alt sınır dozları nelerdir?",
+      "back": "Busulfan > 8 mg/kg, Melfalan > 140 mg/m², Thiotepa > 10 mg/kg veya TBI > 8 Gray (Gy) olmalıdır.",
+      "tag": "Kök Hücre Nakli / Tedavi"
+    },
+    {
+      "id": "card-71",
+      "front": "Akut Promyelositik Lösemi (APL) indüksiyon tedavisinde (ATRA ve/veya Arsenik Trioksit) gelişebilecek ölümcül 'Diferansiyasyon Sendromu'nu (DS) önlemek amacıyla, profilaktik Deksametazon (2.5 mg/m² 12 saatte bir) başlanması önerilen iki majör risk kriteri nedir?",
+      "back": "Hastaneye başvuruda Beyaz küre (WBC) sayısının > 5.000/mikroL olması veya Serum kreatinin düzeyinin > 1.4 mg/dL olmasıdır.",
+      "tag": "Komplikasyon Yönetimi / APL"
+    },
+    {
+      "id": "card-72",
+      "front": "Geçmişte 'Miyelodisplazi ile ilişkili değişiklikler gösteren AML (AML-MRC)' kategorisinde değerlendirilen, sıklıkla multilineage displazi ve belirgin sekonder eritroid hiperplazi ile seyreden nadir t(3;5)(q25;q35) translokasyonu hangi genlerin füzyonudur?",
+      "back": "NPM1 ve MLF1 genlerinin füzyonudur (NPM1::MLF1). Yeni sınıflandırmalarda 'nadir rekürren translokasyonlar' başlığında incelenir.",
+      "tag": "Nadir Varyantlar / Sitogenetik"
+    },
+    {
+      "id": "card-73",
+      "front": "Remisyonda olmayan (aktif) relaps/refrakter AML hastalarında miyeloablatif allojenik kök hücre nakli (HCT) öncesi sağkalımı öngörmede kullanılan 5 parametreli pre-transplant skorlama sisteminde yer alan risk faktörleri nelerdir?",
+      "back": "1) İlk CR süresinin kısa olması (≤6 ay), 2) Kötü riskli (poor) sitogenetik, 3) Donör tipi (Uyumsuz akraba dışı veya HLA uyumsuz akraba), 4) Dolaşımda (periferik kanda) blast varlığı, 5) Karnofsky performans skorunun < %90 olması.",
+      "tag": "Kök Hücre Nakli / Prognoz"
+    },
+    {
+      "id": "card-74",
+      "front": "Akut miyeloid lösemide kemik iliği hücre kültürlerinde CD34(pozitif), CD38(negatif) ve HLA-DR(negatif) immünofenotipi ile karakterize edilen nadir, primitif hücre popülasyonu neyi temsil eder ve standart kemoterapiye neden dirençlidir?",
+      "back": "Lösemik Kök Hücreleri (Leukemic Stem Cells - LSC) temsil eder. Bu hücreler genellikle hücre döngüsünde istirahat (noncycling / G0) fazında bulundukları ve kendi kendini yenileme (self-renewal) özelliğine sahip oldukları için geleneksel kemoterapiye dirençlidirler.",
+      "tag": "Patogenez / Flow Sitometri"
+    },
+    {
+      "id": "card-75",
+      "front": "KMT2A (MLL) geni normal hematopoezde hangi mekanizma ile gen transkripsiyonunu düzenler ve translokasyonları sonucunda oluşan füzyon proteinleri (örn. KMT2A::MLLT3) lösemigeneze nasıl yol açar?",
+      "back": "KMT2A bir histon metiltransferazdır (epigenetik düzenleyici). Translokasyonlar sonucu aktivasyon domaini (metiltransferaz aktivitesi) kaybolur ve oluşan füzyon proteinleri Menin ve LEDGF ile etkileşime girerek HOXA gen kümeleri ve MEIS1'in anormal upregülasyonuna (aşırı ekspresyonuna) yol açar.",
+      "tag": "Moleküler Genetik / Epigenetik"
+    },
+    {
+      "id": "card-76",
+      "front": "AML'de kromozomların parçalanıp rastgele yeniden birleşmesiyle karakterize 'tek seferlik' (single event) genomik felaket olayına ne ad verilir ve bu durum en sık hangi gen mutasyonları ve karyotip bulgusu ile birliktedir?",
+      "back": "Kromotripsis (Chromothripsis) adı verilir. En sık TP53 gen mutasyonları ve kompleks karyotip ile birlikte görülür, çok kötü (dismal) prognoza sahiptir.",
+      "tag": "Moleküler Genetik / Prognoz"
+    },
+    {
+      "id": "card-77",
+      "front": "Geçmişte AML'nin nadir bir alt tipi olarak değerlendirilen ancak güncel sınıflamalarda ayrı bir hastalık antitesi (neoplazi) kabul edilen, klinik olarak cilt tutulumu ile prezente olan ve interlökin-3 reseptör alfa zinciri olan CD123'ün aşırı ekspresyonu ile karakterize malignite hangisidir?",
+      "back": "Blastik Plazmasitoid Dendritik Hücreli Neoplazi (Blastic Plasmacytoid Dendritic-Cell Neoplasm - BPDCN).",
+      "tag": "Sınıflandırma / Nadir Varyantlar"
+    },
+    {
+      "id": "card-78",
+      "front": "AML hastalarında görülebilen, klinik olarak lösemi kutis'i (kutanöz miyeloid sarkom) taklit edebilen ancak biyopside immatür blastik infiltrasyon yerine belirgin dermal ödem ve matür nötrofilik infiltrasyon izlenen, steroid tedavisine yanıt veren tablonun adı nedir?",
+      "back": "Sweet Sendromu (Akut Febril Nötrofilik Dermatoz). Lösemi kutisten farklı olarak reaktif bir süreçtir ve altta yatan AML'nin tedavisine veya sistemik kortikosteroidlere yanıt verir.",
+      "tag": "Klinik / Dermatoloji"
+    },
+    {
+      "id": "card-79",
+      "front": "Normal karyotipli AML'de hücre çekirdeğinde belirgin invajinasyonlar ('çanak / fincan' benzeri - cuplike çekirdek) saptanması en sık hangi spesifik gen mutasyonuna işaret eder ve bu alt tipte flow sitometride tipik olarak hangi belirteçlerin ekspresyonu kaybolur?",
+      "back": "NPM1 gen mutasyonuna (sıklıkla FLT3-ITD ile birlikte) işaret eder. Akım sitometride karakteristik olarak HLA-DR ve CD34 ekspresyonları negatiftir.",
+      "tag": "Morfoloji / Moleküler Genetik"
+    },
+    {
+      "id": "card-80",
+      "front": "Pediatrik AML hastalarında allojenik kök hücre nakli (HCT) yapılırken, kronik GVHD (Graft-Versus-Host Hastalığı) ve nakil ilişkili mortaliteyi (TRM) azaltmak amacıyla periferik kan kök hücreleri (PBSPC) yerine öncelikle tercih edilmesi önerilen greft kaynağı nedir?",
+      "back": "Kemik İliği (Bone Marrow). Pediatrik olgularda periferik kandan toplanan hücrelerle nakil yapıldığında sağkalım benzer olsa da kronik GVHD ve geç dönem mortalite oranları kabul edilemez düzeyde yüksek bulunmuştur.",
+      "tag": "Pediatrik Hematoloji / Kök Hücre Nakli"
+    },
+    {
+      "id": "card-81",
+      "front": "Yaşlı veya 'unfit' AML hastalarında standart hale gelen Venetoklaks ve Hipometile edici ajan (HMA) kombinasyonu başlandığında, klonal temizlenmeye bağlı gelişebilecek uzamış ve şiddetli aplaziyi yönetebilmek için ilk kemik iliği yanıt değerlendirmesinin ne zaman yapılması önerilir?",
+      "back": "Yüksek erken yanıt oranları ve aplazi riski nedeniyle ilk değerlendirme birinci siklusun çok erken döneminde (tercihen 14. ile 21. günler arasında) yapılmalıdır.",
+      "tag": "Tedavi / Takip"
+    },
+    {
+      "id": "card-82",
+      "front": "Akut Bazofilik Lösemi'nin özellikle erkek bebeklerde (infantlarda) ortaya çıkan ve klinik olarak yeni bir antite şeklinde değerlendirilen, MYB geni ile GATA1 geninin birleşmesine yol açan karakteristik translokasyonu hangisidir?",
+      "back": "t(X;6)(p11.2;q23.3) translokasyonudur (MYB::GATA1 füzyonu).",
+      "tag": "Nadir Varyantlar / Pediatrik Hematoloji"
+    },
+    {
+      "id": "card-83",
+      "front": "Klinik ve morfolojik olarak Akut Promyelositik Lösemi'den (APL) kuvvetle şüphelenilen, ancak klasik t(15;17) PML::RARA füzyonunun standart testlerle (karyotip veya spesifik PCR) gösterilemediği durumlarda varyant transkasyonları (örn. NPM1::RARA) yakalamak için hangi spesifik test kullanılmalıdır?",
+      "back": "RARA break-apart FISH probu (RARA geni üzerinde kopma-ayrılmayı saptayan floresan in situ hibridizasyon) kullanılmalıdır.",
+      "tag": "Tanı / Moleküler Genetik"
+    },
+    {
+      "id": "card-84",
+      "front": "Yaşlı AML hastalarının yoğun kemoterapiye uygunluğunu (fitness) objektif olarak belirlemede kullanılan; yürüme hızı ve sandalyeden kalkma gibi parametreleri değerlendirip skoru <9 olduğunda, yaştan veya ECOG performansından bağımsız olarak artmış mortaliteyi öngören geriatrik test nedir?",
+      "back": "Kısa Fiziksel Performans Bataryası (Short Physical Performance Battery - SPPB).",
+      "tag": "Geriatrik Hematoloji / Prognostik Skorlama"
+    },
+    {
+      "id": "card-85",
+      "front": "Güncel Uluslararası Konsensüs Sınıflandırmasına (ICC) göre 11q23.3 (KMT2A) yeniden düzenlenmeleri arasında; klasik t(9;11)(p21.3;q23.3) MLLT3::KMT2A 'orta (intermediate)' risk grubunda iken, t(4;11) ve t(6;11) gibi diğer partnerleri içeren KMT2A translokasyonlarının prognostik önemi nedir?",
+      "back": "Diğer partner genleri içeren KMT2A (eski adıyla MLL) translokasyonları genellikle kötü (adverse / poor) prognoz göstergesi olarak kabul edilir.",
+      "tag": "Prognoz / Sitogenetik"
+    }
+  ]
+}

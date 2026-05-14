@@ -1,0 +1,35 @@
+{
+  "title": "Amenore ve Kadın Hipogonadizmi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Amenore", "Turner", "POI", "Progesteron Testi"],
+    "parent": "reproduktif-endokrinoloji-ana",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 ASRM Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanısal Sınıflandırma",
+      "html": "<ul class=\"mb-4\"><li><strong>Primer Amenore:</strong> 13 yaşına kadar sekonder seks karakterleri gelişmemiş veya 15 yaşına kadar adet görmemiş hastadır.</li><li><strong>Sekonder Amenore:</strong> Önceden adet gören bir kadında 3-6 ay süreyle adetin kesilmesidir.</li></ul>"
+    },
+    {
+      "heading": "Sekonder Amenore Algoritması: Dört Basamak",
+      "html": "<p>Tanıya giderken şu sıra izlenmelidir:</p><ol class=\"mb-4\"><li><strong>Gebeligi Dışla:</strong> Her zaman ilk adım Beta-hCG.</li><li><strong>TSH ve Prolaktin:</strong> Tiroid bozuklukları ve hiperprolaktinemi dışlanır.</li><li><strong>Progesteron Çekilme Testi:</strong> 10 gün progesteron verilir ve kesilir. <ul><li><em>Kanama varsa:</em> Endojen östrojen var, uterus sağlam, sorun anovülasyondur (Örn: PCOS).</li><li><em>Kanama yoksa:</em> Östrojen eksikliği veya anatomik defekt (Asherman) vardır.</li></ul></li><li><strong>LH ve FSH Ölçümü:</strong> <ul><li>FSH yüksek (>20-40): <strong>Primer Over Yetmezliği (POI).</strong></li><li>FSH düşük/normal: <strong>Santral (Hipotalamik/Hipofizer) Nedenler.</strong></li></ul></li></ol>"
+    },
+    {
+      "heading": "Turner Sendromu (45, X0)",
+      "html": "<p>Primer over yetmezliğinin en sık genetik nedenidir. Kısa boy, yelken boyun (webbed neck), düşük saç çizgisi ve streak (çizgi) gonadlar ile karakterizedir.</p>"
+    },
+    {
+      "heading": "Primer Over Yetmezliği (POI)",
+      "html": "<p>40 yaşından önce over fonksiyonlarının kaybıdır. Sadece bir fertilite sorunu değil; osteoporoz ve kardiyovasküler risk nedeniyle 50 yaşına kadar <strong>Hormon Replasman Tedavisi (HRT)</strong> zorunluluğudur.</p>"
+    },
+    {
+      "heading": "Klinik İnci: Asherman Sendromu",
+      "html": "<p>Kürtaj veya enfeksiyon sonrası uterus içinde gelişen sineşilerdir (yapışıklık). Hormonlar tamamen normaldir ancak uterus yanıt veremez.</p>"
+    }
+  ]
+}

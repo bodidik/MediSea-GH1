@@ -1,0 +1,35 @@
+{
+  "title": "Trombofililer ve Hiperkoagülabilite",
+  "meta": {
+    "updatedAt": "15 Mar 2026",
+    "tags": ["Hematoloji", "Trombofili", "Faktör V Leiden", "Antifosfolipid Sendromu", "Protein C", "Antitrombin", "Virchow Triadı", "DVT"],
+    "parent": "benign-hematoloji",
+    "order": 48
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji: Virchow Triadı",
+      "html": "<p><strong>Trombofili (Hiperkoagülabilite)</strong>, hemostaz dengesinin kanama yerine patolojik pıhtılaşma (tromboz) lehine bozulduğu kalıtsal veya edinsel bozuklukları tanımlar. Tromboz riskini belirleyen üç temel evrensel faktör (Virchow Triadı) şunlardır:</p><ul class=\"mb-4\"><li><strong>Endotel Hasarı:</strong> Travma, cerrahi, inflamasyon, sigara ve hipertansiyon endotelin antitrombotik yapısını bozar.</li><li><strong>Kan Akımında Staz (Durgunluk):</strong> Uzun süreli immobilizasyon (yatak istirahatı, uzun uçuşlar), obezite, gebelik ve atriyal fibrilasyon kan akımını yavaşlatarak prokoagülan faktörlerin birikmesine neden olur.</li><li><strong>Kanın Hiperkoagülabilitesi:</strong> Pıhtılaşma faktörlerinin aşırı aktivitesi veya doğal antikoagülanların (Protein C, S, Antitrombin) eksikliğidir. Trombofili panelleri doğrudan bu maddeyi inceler.</li></ul>"
+    },
+    {
+      "heading": "Kalıtsal Trombofililer",
+      "html": "<p>Kalıtsal trombofililer genellikle <strong>venöz tromboz</strong> (Derin Ven Trombozu - DVT ve Pulmoner Emboli - PE) riskini artırır, arteriyel tromboz (MI, inme) ile ilişkileri çok zayıftır.</p><ul class=\"mb-4\"><li><strong>Faktör V Leiden Mutasyonu (En Sık):</strong> Toplumda en sık görülen kalıtsal trombofilidir. Faktör V molekülündeki tek bir aminoasit değişimi, bu faktörü doğal antikoagülan olan Aktif Protein C'nin (APC) yıkımına karşı dirençli hale getirir (<strong>Aktif Protein C Direnci</strong>). Faktör V sürekli aktif kalarak trombozu tetikler.</li><li><strong>Protrombin (Faktör II) G20210A Mutasyonu (İkinci Sık):</strong> Protrombin geninin promotor bölgesindeki bu mutasyon, kanda protrombin (Faktör II) düzeyinin artmasına yol açarak pıhtılaşma kaskadını hızlandırır.</li><li><strong>Doğal Antikoagülan Eksiklikleri (Protein C, Protein S ve Antitrombin):</strong> Toplumda daha nadir görülürler ancak tromboz riskini Faktör V Leiden'a göre çok daha fazla artırırlar.<ul><li><em>Antitrombin Eksikliği:</em> Heparin, antitrombin üzerinden etki gösterdiği için bu hastalarda <strong>Heparin Direnci</strong> (aPTT'nin heparine rağmen uzamaması) görülür.</li><li><em>Protein C Eksikliği:</em> Warfarin (Coumadin) başlandığında, yarı ömrü en kısa olan K vitamini bağımlı faktör Protein C olduğu için ilk 24-48 saatte geçici bir hiperkoagülabilite ve <strong>Warfarin İlişkili Cilt Nekrozu</strong> gelişebilir.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Edinsel Trombofililer ve Antifosfolipid Sendromu (APS)",
+      "html": "<p>Edinsel hiperkoagülabilite nedenleri arasında maligniteler (Trousseau sendromu), gebelik, oral kontraseptifler ve nefrotik sendrom (Antitrombin kaybı) bulunur. Ancak en önemli ve spesifik olanı <strong>Antifosfolipid Sendromudur (APS)</strong>.</p><p>APS, fosfolipid bağlayan proteinlere karşı gelişen otoantikorların neden olduğu edinsel bir trombofilidir. Kalıtsal trombofililerin aksine <strong>hem venöz hem de arteriyel trombozlar</strong> yapar.</p><ul class=\"mb-4\"><li><strong>Klinik Kriterler:</strong> Vasküler tromboz (DVT, inme) ve/veya gebelik morbiditesi (tekrarlayan erken düşükler veya geç fetal kayıplar).</li><li><strong>Laboratuvar Kriterleri (3 Antikor):</strong> <em>Lupus Antikoagülanı (LA), Antikardiyolipin Antikorları ve Anti-Beta-2-Glikoprotein I Antikorları</em>. Tanı için en az birinin en az 12 hafta arayla iki kez pozitif saptanması gerekir.</li><li>⚠️ <strong>Klinik Tuzak:</strong> Lupus antikoagülanı in vivo (vücutta) şiddetli pıhtılaşma yaparken, in vitro (test tüpünde) fosfolipidleri bağladığı için <strong>aPTT süresini paradoksal olarak uzatır</strong>.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Trombofili Tarama Endikasyonları",
+      "html": "<p>Her DVT veya PE geçiren hastaya trombofili paneli bakılmaz. Tarama, test sonucunun antikoagülasyon süresini veya yoğunluğunu değiştireceği spesifik durumlarda endikedir:</p><ul class=\"mb-4\"><li>Genç yaşta (< 50 yaş) <strong>sebepsiz (unprovoked)</strong> VTE geçirenler.</li><li>Tekrarlayan (rekürren) VTE atakları olanlar.</li><li>Olağandışı bölgelerde tromboz (serebral venöz sinüs trombozu, hepatik/portal ven trombozu [Budd-Chiari], mezenterik ven trombozu) gelişenler.</li><li>Güçlü aile VTE öyküsü olanlar ve tekrarlayan gebelik kayıpları (APS şüphesi) yaşayan kadınlar.</li></ul>"
+    },
+    {
+      "heading": "Yönetim ve Tedavi Prensipleri",
+      "html": "<p>Trombofili saptanan hastaların yönetimi trombozun geçirilip geçirilmediğine ve tipine göre belirlenir:</p><ul class=\"mb-4\"><li><strong>Asemptomatik Taşıyıcılar:</strong> Sadece heterozigot mutasyonu olup hiç tromboz geçirmemiş hastalara rutin uzun süreli antikoagülasyon önerilmez; ancak cerrahi, gebelik veya uzun uçuşlar gibi yüksek riskli durumlarda kısa süreli profilaksi verilir.</li><li><strong>VTE Yönetimi:</strong> Akut tromboz durumunda standart DVT/PE tedavi protokolleri uygulanır (Düşük Molekül Ağırlıklı Heparin - DMAH veya Yeni Nesil Oral Antikoagülanlar - DOAC). Kalıtsal trombofilisi olanlarda DOAC'lar (Apiksaban, Rivaroksaban) warfarine alternatif olarak güvenle kullanılabilir.</li><li><strong>APS Yönetimi:</strong> APS'de DOAC kullanımı arteriyel tromboz riskini artırabileceği için tartışmalıdır. Çift veya üçlü antikor pozitifliği olan yüksek riskli APS hastalarında <strong>Warfarin (Coumadin)</strong> hala altın standarttır. APS ilişkili gebelik kayıplarını önlemek için gebelik boyunca <strong>Düşük Doz Aspirin + DMAH</strong> kombinasyonu uygulanır.</li></ul>"
+    }
+  ]
+}

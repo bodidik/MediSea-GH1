@@ -1,0 +1,31 @@
+{
+  "title": "Kurşun Zehirlenmesi ve Anemi",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Mikrositer", "Kurşun Zehirlenmesi", "Bazofilik Noktalanma", "Sideroblastik"],
+    "parent": "mikrositer-anemiler",
+    "order": 37
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji ve Hem Sentezi İnhibisyonu",
+      "html": "<p><strong>Kurşun Zehirlenmesi (Plumbizm)</strong>, kurşunun vücutta birikerek özellikle hematopoietik ve nörolojik sistemlerde toksik etkiler yaratması durumudur. Hematolojik açıdan kurşun, hemoglobinin temel yapıtaşı olan <strong>Hem (Heme) sentez yolağındaki</strong> iki kritik enzimi doğrudan inhibe eder:</p><ul class=\"mb-4\"><li><strong>ALA Dehidrataz (Aminolevülinik Asit Dehidrataz):</strong> Bu enzimin inhibisyonu sonucu kanda ve idrarda ALA birikimi (artışı) gözlenir.</li><li><strong>Ferroşelataz:</strong> Mitokondri içinde demirin (Fe+2) protoporfirin halkasına eklenerek Hem molekülünü oluşturmasını sağlayan enzimdir. İnhibe olduğunda demir halkaya giremez ve mitokondride birikir; aynı zamanda <strong>Serbest Eritrosit Protoporfirini (FEP)</strong> kanda yükselir.</li></ul><p>Demirin porfirin halkasına entegre edilememesi, sitoplazmada yetersiz hemoglobin sentezine ve sonuç olarak <strong>mikrositik ve hipokromik</strong> (bazen normositik) bir anemiye yol açar.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon",
+      "html": "<p>Etiyolojide genellikle eski tip kurşunlu boyaların yutulması (çocuklarda pika), akü imalatı, madencilik veya eski su borularından kaynaklanan mesleki/çevresel maruziyet yatar. Sistemik bulgular anemiden daha ön plandadır:</p><ul class=\"mb-4\"><li><strong>Gastrointestinal (Kurşun Kolik'i):</strong> Şiddetli ve kramp tarzında karın ağrısı, inatçı kabızlık ve iştahsızlık.</li><li><strong>Nörolojik:</strong> Çocuklarda kan-beyin bariyeri daha geçirgen olduğu için <strong>kurşun ensefalopatisi</strong> (kognitif gerilik, konvüzyonlar, koma) gelişebilir. Erişkinlerde ise motor nöronları tutan periferik nöropati (özellikle ekstansör kas zayıflığına bağlı <strong>düşük el / wrist drop</strong> ve düşük ayak) tipiktir.</li><li><strong>Burton Çizgisi:</strong> Diş etleri ile dişlerin birleşim hattında kurşun sülfür birikimine bağlı olarak ortaya çıkan mavi-siyah renkli çizgilenmedir.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar ve Periferik Yayma Bulguları",
+      "html": "<p>Tanıda hemoliz ve üretim kusuru bulguları bir arada değerlendirilir. Kurşun, aynı zamanda eritrosit membranındaki Na/K-ATPaz pompasını da bozarak hafif bir ekstravasküler hemolize neden olabilir.</p><ul class=\"mb-4\"><li><strong>Periferik Yayma (Bazofilik Noktalanma):</strong> Kurşun, eritrosit içindeki ribozomları yıkan pirimidin 5'-nükleotidaz enzimini inhibe eder. Yıkılamayan ribozomal RNA kalıntıları, Wright-Giemsa boyamasında eritrositlerin içinde kaba, mavi-mor granüller (<strong>Basophilic Stippling</strong>) şeklinde görülür. Bu bulgu kurşun zehirlenmesi için oldukça karakteristiktir.</li><li><strong>Kemik İliği Biyopsisi:</strong> Hem halkasına giremeyen demir, normoblastların çekirdeği etrafındaki mitokondrilerde birikerek Prusya mavisi boyamasında <strong>Yüzük (Ring) Sideroblastları</strong> oluşturur. Bu nedenle kurşun zehirlenmesi, edinsel sideroblastik anemilerin önemli bir alt nedenidir.</li><li><strong>Biyokimyasal Parametreler:</strong> Kan kurşun düzeyinin yüksekliği kesin tanıyı koydurur. Ek olarak idrarda ALA yüksekliği ve kanda FEP (Serbest Eritrosit Protoporfirini) yüksekliği saptanır.</li></ul>"
+    },
+    {
+      "heading": "Tedavi ve Şelasyon Yaklaşımı",
+      "html": "<p>Tedavide en kritik ve ilk adım, <strong>hastanın kurşun maruziyet kaynağından derhal uzaklaştırılmasıdır.</strong></p><ul class=\"mb-4\"><li><strong>Şelasyon Tedavisi:</strong> Kan kurşun düzeyi belirli bir eşiğin üzerinde olan (çocuklarda genellikle >45 µg/dL, erişkinlerde semptomatik veya >70 µg/dL) hastalara kurşunu bağlayarak böbreklerden atılmasını sağlayan şelatör ajanlar verilir.</li><li><strong>Ajanlar:</strong> Hafif-orta vakalarda oral <strong>Süksimer (DMSA)</strong> tercih edilirken; ensefalopati bulguları olan veya kan kurşun düzeyi çok yüksek olan ağır vakalarda parenteral <strong>Dimerkaprol (BAL) ve EDTA (Kalsiyum disodyum EDTA)</strong> kombinasyonu kullanılır. (EDTA tek başına verilirse beyne kurşun geçişini artırabileceğinden ensefalopatide önce BAL başlanması önerilir).</li></ul>"
+    }
+  ]
+}

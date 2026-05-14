@@ -1,0 +1,31 @@
+{
+  "title": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu",
+  "meta": {
+    "updatedAt": "29 Nis 2026",
+    "tags": ["Mikrobiyoloji", "Enfeksiyon Hastalıkları", "CR-hvKP", "Endoftalmi", "Metastatik Yayılım", "Hipopiyon", "İleri Okuma"],
+    "parent": "cr-hvkp-metastatik-yayilim",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "👁️ Uzman Özeti: Fokal Odaktan Göze Sıçrama",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700 mb-2\">CR-hvKP ve klasik hipervirülan suşlarda (hvKP) göz tutulumu (endoftalmi), genellikle karaciğer apsesi gibi primer bir enfeksiyon odağından kan yoluyla (hematojen) yayılan, nadir ancak oldukça yıkıcı seyreden metastatik bir komplikasyondur.</p>"
+    },
+    {
+      "heading": "1. Görülme Sıklığı (Risk Oranı) ve Primer Odaklar",
+      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-5 shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-[12px] uppercase mb-2\">%6 Risk Faktörü</h4><p class=\"text-[11.5px] text-indigo-800 leading-relaxed mb-3\">Özellikle Tayvan gibi Doğu Asya ülkelerinde yapılan ve toplam 524 <em>K. pneumoniae</em> karaciğer apsesi hastasını içeren üç büyük çalışmada, hastaların %12'sinde metastatik enfeksiyon geliştiği ve bu metastazların yarısının <strong>(toplam hastaların %6'sının)</strong> endoftalmi olduğu saptanmıştır.</p><div class=\"bg-white p-3 rounded-xl border border-indigo-200\"><strong class=\"text-[11px] text-indigo-900 uppercase tracking-widest block mb-1\">Karaciğer Dışı Odaklar</strong><span class=\"text-[11px] text-slate-700\">Endoftalmi en çok karaciğer apsesi ile ilişkilendirilse de sadece bununla sınırlı değildir; <strong>perinefrik apse, piyelonefrit, prostatit, prostat apsesi ve akciğer enfeksiyonu (pnömoni)</strong> gibi diğer primer odaklardan da göze sıçrayabilir.</span></div></div>"
+    },
+    {
+      "heading": "2. Klinik Bulgular ve \"Hipopiyon\"",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Temel Şikayetler</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Endoftalmi gelişen hastalar tipik olarak gözde ağrı, görmede bulanıklık/azalma ve gözde kızarıklık şikayetleriyle başvururlar. Hastalık genellikle tek veya çift taraflı olabilir, ancak <strong>tek taraflı (unilateral) tutulum daha sık</strong> görülmektedir.</p></div></div><div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Kötü Prognostik İşaret: Hipopiyon</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Gözün ön kamarasında beyaz kan hücrelerinin (lökosit) tabakalaşması anlamına gelen <strong>hipopiyon, hastaların %72'sinde görülür</strong> ve klinik açıdan oldukça kötü bir prognostik işaret olarak kabul edilir.</p></div></div></div>"
+    },
+    {
+      "heading": "3. Hastalığın İlerleme Hızı ve Kalıcı Hasar Riski",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-5 rounded-2xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[12px] uppercase tracking-widest mb-2\">Zamanla Yarış: Fulminan Seyir</h4><p class=\"text-[11.5px] text-amber-800 leading-relaxed mb-3\">Bu enfeksiyon <strong>fulminan (çok hızlı ve şiddetli)</strong> bir seyir gösterir. Şikayetler başladıktan sonra tanı ve tedavinin 24 saatten fazla gecikmesi, durumun kalıcı görme kaybına hızla ilerlemesine yol açar.</p><ul class=\"text-[11.5px] text-amber-900 font-medium list-disc list-inside space-y-2 ml-1\"><li>61 hastalık retrospektif bir derlemede, hastaların <strong>%87'sinin başvuru anında görme keskinliğinin son derece düşük</strong> (4/200'den az) olduğu saptanmıştır.</li><li>Enfeksiyondan 3 ay sonra ise hastaların %76'sında zayıf görme keskinliği devam etmiş, <strong>%58'i ise ışık algısını tamamen kaybetmiştir.</strong></li></ul></div>"
+    },
+    {
+      "heading": "4. Çift Yönlü Klinik Takip Algoritması (YDUS Spotu)",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-sky-400 text-xs uppercase tracking-widest mb-3 flex items-center gap-2\">🔄 Klinik Refleks: Göz ve Batın Arası Tarama</h4><div class=\"space-y-3\"><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[12px] text-white block mb-1\">Senaryo A: Sistemik Enfeksiyondan Göze</strong><p class=\"text-[11.5px] text-slate-300 leading-relaxed\"><em>K. pneumoniae</em> enfeksiyonu olan herhangi bir hastada tek/çift taraflı görme azalması, bulanık görme veya göz ağrısı şikayeti ortaya çıktığında <strong>mutlaka endoftalmi düşünülmelidir.</strong></p></div><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[12px] text-white block mb-1\">Senaryo B: Gözden Sistemik Enfeksiyona</strong><p class=\"text-[11.5px] text-slate-300 leading-relaxed\">Bunun tam tersi bir senaryoda, endojen <em>K. pneumoniae</em> endoftalmisi tablosuyla başvuran hastalarda, enfeksiyonun ana kaynağını bulmak amacıyla başta <strong>karaciğer apsesi olmak üzere</strong> diğer odakların varlığı şiddetle şüphelenilerek araştırılmalıdır.</p></div></div></div>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Miyelodisplastik Sendromlar (MDS)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MDS", "Sitopeni", "Displazi", "Pelger-Huët", "Azasitidin", "Del(5q)"],
+    "parent": "hematolojik-maligniteler",
+    "order": 41
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Miyelodisplastik Sendromlar (MDS)</strong>, hematopoietik kök hücrelerin klonal bir bozukluğu olup, kemik iliğinde artmış apoptoz (inefektif hematopoez) sonucu gelişen periferik kan sitopenileri, hücresel morfolojide displazi ve <strong>Akut Miyeloid Lösemiye (AML) transforme olma riski</strong> ile karakterize heterojen bir hastalık grubudur.</p><p>Hastaların kemik iliği genellikle hiperselülerdir (hücreden zengindir), ancak üretilen hücreler defektif olduğu için kemik iliği içinde erken yıkıma uğrarlar (apoptoz). Bu paradoksal durum, periferik kanda anemi, nötropeni ve/veya trombositopeni olarak yansır.</p>"
+    },
+    {
+      "heading": "Morfolojik Bulgular (Displazi)",
+      "html": "<p>Tanının temel taşı, periferik yayma ve kemik iliği aspirasyonunda en az bir seride <strong>≥%10 oranında displastik hücre</strong> saptanmasıdır. Her seriye özgü spesifik bulgular şunlardır:</p><ul class=\"mb-4\"><li><strong>Eritroid Seri:</strong> Çekirdek tomurcuklanması, multinükleasyon, megaloblastik değişiklikler ve Prusya mavisi boyamasında mitokondrilerde demir birikimini gösteren <strong>Yüzük (Ring) Sideroblastlar</strong>.</li><li><strong>Granülositik (Miyeloid) Seri:</strong> Sitoplazmik granülasyon kaybı (hipogranüler nötrofiller) ve bilobe veya segmente olmamış (gözlük şeklinde) çekirdek yapısı ile karakterize <strong>Pelger-Huët Anomalisi (Pseudo-Pelger-Huët)</strong>.</li><li><strong>Megakaryositik Seri:</strong> Mikromegakaryositler ve hipolobe (tek çekirdekli) megakaryositler tipiktir.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon",
+      "html": "<p>MDS genellikle ileri yaş hastalığıdır (medyan tanı yaşı 70 civarındadır). Birçok hasta rutin kan sayımında izole makrositik anemi veya bositopeni/pansitopeni saptanmasıyla asemptomatik evrede tanı alır.</p><p>Semptomatik hastalarda klinik tablo, eksik olan hücre serisine bağlıdır: Dirençli anemiye bağlı yorgunluk ve efor dispnesi (en sık), nötropeniye bağlı tekrarlayan enfeksiyonlar ve trombositopeniye bağlı mukokutanöz kanamalar görülür. Fizik muayenede izole MDS olgularında genellikle organomegali (hepatosplenomegali) veya lenfadenopati <strong>beklenmez</strong> (varsa KML, miyelofibrozis veya örtüşen MDS/MPN sendromları düşünülmelidir).</p>"
+    },
+    {
+      "heading": "Sitogenetik ve Risk Sınıflandırması (IPSS-R / IPSS-M)",
+      "html": "<p>Prognozu ve tedavi kararını belirleyen en önemli faktörler kemik iliğindeki blast oranı, sitopenilerin derinliği ve sitogenetik/moleküler anomalilerdir. Günümüzde Revize Uluslararası Prognostik Skorlama Sistemi (IPSS-R) ve moleküler verilerin eklendiği IPSS-M kullanılmaktadır.</p><ul class=\"mb-4\"><li><strong>İyi Prognostik Bulgular:</strong> Normal karyotip, izole del(5q), izole del(20q) veya -Y.</li><li><strong>Kötü Prognostik Bulgular:</strong> Kompleks karyotip (≥3 anomali), 7. kromozom anomalileri (-7, del(7q)). Moleküler düzeyde özellikle <strong>TP53</strong>, ASXL1 ve RUNX1 mutasyonları yüksek AML transformasyon riski ve kötü sağkalım ile ilişkilidir.</li><li><strong>SF3B1 Mutasyonu:</strong> Genellikle ring sideroblastlarla ilişkili olup (MDS-RS), nispeten daha iyi bir prognoza işaret eder.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve Spesifik Ajanlar",
+      "html": "<p>Tedavi, hastanın risk grubuna (düşük vs. yüksek) göre planlanır. Düşük riskli hastalarda amaç sitopenileri düzeltmek ve yaşam kalitesini artırmak iken, yüksek riskli hastalarda amaç AML'ye dönüşümü geciktirmek ve sağkalımı uzatmaktır.</p><ul class=\"mb-4\"><li><strong>Düşük Risk Grubu:</strong> Semptomatik anemi için Eritropoez Uyarıcı Ajanlar (ESA) kullanılır. Ring sideroblastlı ve ESA'ya dirençli hastalarda TGF-beta yolağını modüle eden <strong>Luspatercept</strong> etkilidir.</li><li><strong>İzole Del(5q) Sendromu:</strong> Genellikle ileri yaş kadınlarda, makrositik anemi ve normal/yüksek trombosit sayısı ile seyreden özel bir MDS alt tipidir. Bu hasta grubunda <strong>Lenalidomid</strong> (immünomodülatör bir ajan) son derece spesifik ve yüksek etkili bir tedavidir, hastaların büyük kısmında transfüzyon bağımsızlığı sağlar.</li><li><strong>Yüksek Risk Grubu:</strong> AML'ye ilerleme riski yüksek olan bu grupta DNA metiltransferaz inhibitörleri olan <strong>Hipometile Edici Ajanlar (Azasitidin ve Desitabin)</strong> standart farmakolojik tedavidir. Bu ajanlar sağkalımı uzatır.</li><li><strong>Küratif Tedavi:</strong> Yüksek riskli, genç ve performansı uygun hastalarda yegane küratif seçenek <strong>Allojenik Hematopoietik Kök Hücre Naklidir (Allo-HSCT)</strong>.</li></ul>"
+    }
+  ]
+}

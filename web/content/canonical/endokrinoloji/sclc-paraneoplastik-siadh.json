@@ -1,0 +1,23 @@
+{
+  "title": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Onkoloji", "SIADH", "SCLC", "Paraneoplastik", "Vazopressin"],
+    "parent": "siadh-sendromu",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🔬 Onkolojik Mekanizma: Ektopik Üretim",
+      "html": "<p>Küçük Hücreli Akciğer Kanseri (SCLC), nöroendokrin kökenli olması nedeniyle ektopik <strong>Arjinin Vazopressin (AVP)</strong> üretiminin en sık kaynağıdır. Vakaların %50'sinde ektopik üretim mevcuttur, ancak klinik hiponatremi ileri evrelerde %75'e kadar çıkabilir.</p>"
+    },
+    {
+      "heading": "Genetik Derepresyon Teorisi",
+      "html": "<p>SCLC hücrelerinde vazopressin geninin aktivasyonu tam açıklanamasa da, komşu <strong>Oksitosin</strong> geninin de eş zamanlı üretilmesi, bu bölgedeki genetik baskılanmanın (derepresyon) kalktığını kanıtlar niteliktedir.</p>"
+    },
+    {
+      "heading": "Klinik Seyir ve Tedavi Yanıtı",
+      "html": "<p>Çoğu hasta rutin tetkiklerde saptanan hafif hiponatremi ile asemptomatiktir. Ancak <strong>mental konfüzyon ve nöbet</strong> gibi ağır semptomlar onkolojik acil durum göstergesidir. Altta yatan tümörün kemoterapisi AVP üretimini azaltsa da, bu yanıt klinik olarak oldukça yavaştır.</p>"
+    }
+  ]
+}

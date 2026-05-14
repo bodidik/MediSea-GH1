@@ -1,0 +1,31 @@
+{
+  "title": "Hipotiroidizm",
+  "meta": {
+    "updatedAt": "08 May 2026",
+    "tags": ["Endokrinoloji", "Hipotiroidizm", "SERCA2", "Miksödem Koması", "Resmetirom", "Geriatri", "YDUS"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🧬 1. Tanım ve Etiyopatogenez",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hipotiroidizm, tiroid hormonlarının yetersiz sentezi veya biyolojik etkisinin azalmasıyla karakterize sendromdur.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Tanısal Kriterler</h4><ul class=\"text-[11px] text-indigo-800 space-y-1 list-disc list-inside\"><li><strong>Aşikar (Overt):</strong> TSH > 10 mIU/L ve sT4 düşük.</li><li><strong>Subklinik (SCH):</strong> sT4 normal, TSH yüksek (4.5-10 mIU/L).</li></ul></div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Etyolojik İpuçları</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">En sık neden <strong>Hashimoto</strong>'dur. Radyoterapi alanlarda 1-3 yıl sonra risk artar. Genetik defektlerde (dishormonogenez) <strong>TPO gen mutasyonları (örn. Tyr55X)</strong> TIOD/PIOD ve guatrlı hipotiroidiye yol açar.</p></div></div>"
+    },
+    {
+      "heading": "🫀 2. Kardiyovasküler ve Metabolik Etkiler",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1 flex items-center gap-2\">KVS Patofizyolojisi</h4><p class=\"text-[11px] text-rose-800 leading-relaxed mb-2\">SVR artar, preload azalır, afterload yükselir. <strong>SERCA2 ekspresyonunun azalması</strong> (Ca geri pompalanması bozulur) sistolik/diyastolik disfonksiyon yapar. Arteriyel sertlik (PWV artışı) ve endotel disfonksiyonu belirgindir. <strong>TIA için bağımsız risk faktörüdür (RR=1.45).</strong></p></div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Metabolizma ve Karaciğer (MASLD)</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">LDL reseptör aktivitesi azalır, HMG-CoA redüktaz bozulur; sonuç <strong>hiperkolesterolemi</strong>. LPL aktivite düşüşü trigliserit klirensini engeller ve steatoza yol açar. Hipotiroidi, <strong>MASLD/NAFLD</strong> için majör risk faktörüdür.</p></div></div>"
+    },
+    {
+      "heading": "🧠 3. Nöropsikiyatrik ve Nörolojik Sistem",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Bilişsel ve Psikiyatrik Tablo</h4><p class=\"text-[11px] text-slate-700 leading-relaxed mb-2\">Hipokampal hacim azalır, dentat girus'ta (DG) uzun süreli potansiyelizasyon (LTP) bozulur. <strong>Miksödem Psikozu (Myxedema Madness):</strong> Mani, halüsinasyon ve persekütuar hezeyanlar görülebilir.</p></div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Nöropati ve Ataksi</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Potasyum kanallarının (<strong>Kv1.1</strong>) azalması sinir hipereksitabilitesine (ağrı) yol açar. Geri dönüşlü serebellar ataksi (dismetri, tremor) ve migren prevalansında artış izlenir.</p></div></div>"
+    },
+    {
+      "heading": "💊 4. Tedavi Yönetimi ve Yeni Ufuklar",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-emerald-900 border border-emerald-700 p-5 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-emerald-300 text-[12px] uppercase tracking-widest mb-3\">Replasman ve Kombinasyon</h4><ul class=\"text-[11px] text-emerald-100 space-y-2 list-disc list-inside\"><li><strong>Standart:</strong> LT4 (1.5-1.6 &micro;g/kg/gün). Emilimi bozanlar: Demir, PPI, Antiasit.</li><li><strong>Kombine (LT4+LT3):</strong> TSH normal olsa da semptomu süren <strong>\"mutsuz hipotiroidi\"</strong> (DIO2 polimorfizmi) vakalarında 13:1 - 20:1 oranında LT3 eklenebilir.</li></ul></div><div class=\"bg-rose-900 border border-rose-700 p-5 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-rose-300 text-[12px] uppercase mb-2\">🚨 Miksödem Koması Acili</h4><p class=\"text-[11px] leading-relaxed\"><strong>İV T4 (300-500 mcg)</strong> yüklemesi şarttır. <strong>KRİTİK:</strong> Akut adrenal krizi önlemek için tiroid hormonundan önce mutlaka <strong>İV Hidrokortizon (100-200 mg)</strong> başlanmalıdır.</p></div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Yeni Nesil: THR-&beta; Agonistleri</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">MASLD tedavisinde <strong>Resmetirom (Rezdiffra)</strong> FDA onayı almıştır. Ayrıca Zn, Mg ve Vitamin A takviyesinin sT4/sT3 düzeylerini iyileştirdiği gösterilmiştir.</p></div></div>"
+    },
+    {
+      "heading": "🧓 5. Geriatrik Popülasyon ve Subklinik Hipotiroidi (Sınav Spotu)",
+      "html": "<div class=\"bg-slate-50 border border-slate-300 p-5 rounded-2xl shadow-sm\"><h4 class=\"font-black text-slate-900 text-[12px] uppercase mb-3\">TRUST ve IEMO 80-Plus Verileri</h4><p class=\"text-[11.5px] text-slate-800 leading-relaxed mb-3\">65 yaş üstü hafif SCH (TSH 4.5-10) vakalarında LT4 tedavisinin yaşam kalitesini artırmadığı ve MACE riskini azaltmadığı kanıtlanmıştır. Gereksiz tedavi <strong>atriyal fibrilasyon ve osteoporoz</strong> riskini artırır.</p><div class=\"bg-white p-4 rounded-xl border border-slate-200\"><h5 class=\"font-bold text-[11px] text-indigo-900 uppercase mb-2\">Fransız Endokrinoloji Derneği Formülü</h5><p class=\"text-[11.5px] text-indigo-800 leading-relaxed font-bold\">Normal TSH Üst Limiti = Hastanın Yaşı / 10</p><p class=\"text-[11px] text-slate-600 mt-1\">(Örn: 80 yaşındaki hasta için normal üst sınır 8 mIU/L'dir. TSH < 10 ise aktif sürveyans önerilir).</p></div></div>"
+    }
+  ]
+}

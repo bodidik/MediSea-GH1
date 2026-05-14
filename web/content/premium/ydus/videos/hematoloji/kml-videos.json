@@ -1,0 +1,23 @@
+{
+  "locked": false,
+  "items": [
+    {
+      "title": "KML Patogenezi ve WHO/ICC Çatışması",
+      "section": "Tanı ve Sınıflandırma",
+      "url": "/tr/premium/video/izle?id=kml-patogenez",
+      "duration": 16
+    },
+    {
+      "title": "Hedefe Yönelik TKI Seçimi ve Komorbiditeler",
+      "section": "Farmakoterapi",
+      "url": "/tr/premium/video/izle?id=kml-tki-secimi",
+      "duration": 24
+    },
+    {
+      "title": "T315I Mutasyonu, Asciminib ve TFR Kriterleri",
+      "section": "İleri Yönetim",
+      "url": "/tr/premium/video/izle?id=kml-direnc-tfr",
+      "duration": 19
+    }
+  ]
+}

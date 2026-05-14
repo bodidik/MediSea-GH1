@@ -1,0 +1,35 @@
+{
+  "title": "Kolesterol Emboli Sendromu (Aterotrombotik Renal Hastalık)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nefroloji", "Kolesterol Embolisi", "Mavi Parmak", "Livedo Reticularis", "Anjiyografi"],
+    "parent": "renovaskuler-hastaliklar",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea Akademik Modül</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji: Kristal Fırtınası",
+      "html": "<p>Kolesterol Emboli Sendromu, büyük arterlerdeki (aort gibi) aterosklerotik plaklardan kopan mikroskobik kolesterol kristallerinin küçük arterleri (150-200 μm) tıkamasıdır.</p><ul class=\"mb-4\"><li><strong>Tetikleyici Faktörler:</strong> %90 vakada invaziv vasküler girişimler (Anjiyografi, stent, cerrahi) veya antikoagülan/trombolitik tedavi sonrası gelişir.</li><li><strong>Mekanizma:</strong> Kristaller sadece tıkanıklık yapmaz; aynı zamanda şiddetli bir yabancı cisim inflamatuar yanıtı başlatarak damar lümeninin tamamen kapanmasına (fibrozis) yol açar.</li></ul>"
+    },
+    {
+      "heading": "Klinik Tablo: Sistemik İpuçları",
+      "html": "<p>Böbrek hasarı genellikle sinsi ve basamaklı bir GFR kaybı ile seyreder. Ancak tanıya götüren bulgular 'böbrek dışı' ipuçlarıdır:</p><ul class=\"mb-4\"><li><strong>Cilt Bulguları:</strong> Alt ekstremitelerde <strong>Livedo Reticularis</strong> (ağsı morarma) ve <strong>Mavi Parmak (Blue Toe) Sendromu</strong> (periferik nabızlar açık olmasına rağmen parmakların morarması).</li><li><strong>Hohlhorst Plakları:</strong> Oftalmoskopik muayenede retinal arterlerde parlayan kolesterol kristalleri izlenebilir.</li><li><strong>Böbrek Hasarı:</strong> Akut veya subakut böbrek yetmezliği. Genellikle girişimden 1-4 hafta sonra ortaya çıkar.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar ve Patoloji: Eozinofili Tuzağı",
+      "html": "<p>Klinik şüpheyi destekleyen özgün laboratuvar bulguları şunlardır:</p><ul class=\"mb-4\"><li><strong>Eozinofili ve Hipokomplemanemi:</strong> Kristallerin kompleman sistemini aktive etmesi sonucu vakaların %80'inde görülür.</li><li><strong>Böbrek Biyopsisi:</strong> Tanı için şart değildir ancak yapılırsa arter lümeninde kristallerin dökülmesiyle oluşan karakteristik <strong>İğne Şeklinde (Bifrekans) Yarıklar</strong> (Cholesterol Clefts) izlenir.</li></ul>"
+    },
+    {
+      "heading": "Tanı ve Ayırıcı Tanı",
+      "html": "<p>Girişimsel işlem sonrası gelişen böbrek yetmezliğinde <strong>Kontrast Nefropatisi</strong> ile karıştırılmamalıdır:</p><ul class=\"mb-4\"><li><strong>Kontrast Nefropatisi:</strong> İlk 24-48 saatte başlar, hızla düzelir, sistemik bulgu yoktur.</li><li><strong>Kolesterol Embolisi:</strong> Haftalar sonra başlar, kalıcı hasar bırakma eğilimindedir, sistemik (cilt vb.) bulgular eşlik eder.</li></ul>"
+    },
+    {
+      "heading": "Tedavi: Destek ve Korunma",
+      "html": "<p>Maalesef yerleşmiş emboli için spesifik bir tedavi (çözücü ajan) yoktur; hasar genellikle kalıcıdır.</p><ul class=\"mb-4\"><li><strong>Agresif Statin Tedavisi:</strong> Plakları stabilize etmek için yüksek doz statin önerilir.</li><li><strong>Antikoagülanlardan Kaçınma:</strong> Antikoagülasyon, plakların iyileşmesini engelleyip yeni embolilere yol açabileceği için (eğer hayati değilse) kesilmelidir.</li><li><strong>Steroidler:</strong> İnflamatuar fazı baskılamak için bazı vakalarda denense de kanıt düzeyi düşüktür.</li></ul>"
+    }
+  ]
+}

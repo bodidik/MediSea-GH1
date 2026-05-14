@@ -1,0 +1,19 @@
+{
+  "title": "Kronik Böbrek Hastalığı (KBH)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nefroloji", "GFR", "Diyaliz", "Üre"],
+    "parent": null,
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Evreleme (KDIGO)",
+      "text": "<p>Böbrek yapısının veya fonksiyonunun 3 aydan uzun süre bozuk olmasıdır. Evreleme GFR'ye göre yapılır:</p><ul class='list-none space-y-2 mt-2'><li class='bg-green-50 p-2 rounded'>🟢 <strong>Evre 1-2:</strong> GFR > 60 (Genellikle asemptomatik)</li><li class='bg-yellow-50 p-2 rounded'>🟡 <strong>Evre 3a-3b:</strong> GFR 30-59 (Komplikasyonlar başlar: Anemi, Kemik hastalığı)</li><li class='bg-orange-50 p-2 rounded'>🟠 <strong>Evre 4:</strong> GFR 15-29 (Hazırlık dönemi)</li><li class='bg-red-50 p-2 rounded'>🔴 <strong>Evre 5 (SDBY):</strong> GFR < 15 (Diyaliz veya Transplantasyon endikasyonu)</li></ul>"
+    },
+    {
+      "heading": "Renal Replasman Tedavileri (Ch 323 & 325)",
+      "text": "<div class='flex gap-4'><div class='flex-1 bg-gray-50 p-3 rounded border border-gray-200'><h5 class='font-bold text-gray-800'>Hemodiyaliz / PD</h5><p class='text-xs mt-1'>Toksinlerin ve fazla sıvının yarı geçirgen membran aracılığıyla temizlenmesidir.</p></div><div class='flex-1 bg-blue-50 p-3 rounded border border-blue-200'><h5 class='font-bold text-blue-800'>Transplantasyon</h5><p class='text-xs mt-1'>SDBY için altın standart tedavidir. En iyi sağkalım ve yaşam kalitesini sunar.</p></div></div>"
+    }
+  ]
+}

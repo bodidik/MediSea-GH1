@@ -1,0 +1,23 @@
+{
+  "title": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Tanı", "SIADH", "Schwartz-Bartter", "FE-UA", "Kopeptin", "Reset Osmostat"],
+    "parent": "siadh-sendromu",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🔍 Klasik Schwartz-Bartter Kriterleri",
+      "html": "<p>SIADH tanısı için şu temel taşların yerinde olması gerekir:</p><ul class=\"mb-4\"><li>Plazma Osmolalitesi < 275 mOsm/kg (Gerçek hiponatremi).</li><li>İdrar Osmolalitesi > 100 mOsm/kg (Uygunsuz konsantrasyon).</li><li><strong>Klinik Övolemi:</strong> Ödem, asit veya dehidratasyon bulgusu yok.</li><li>İdrar Sodyumu > 30 mmol/L (Normal tuz alımında).</li><li>⚠️ <em>Dışlama:</em> Hipotiroidi, Adrenal Yetmezlik ve Diüretik kullanımı mutlaka ekarte edilmelidir.</li></ul>"
+    },
+    {
+      "heading": "🧪 FE-Ürik Asit: Tanısal Anahtar",
+      "html": "<p>SIADH'da hiponatremiye sekonder gelişen proksimal tübüler disfonksiyon nedeniyle plazma ürik asidi düşer (<4 mg/dL). <strong>Fraksiyone Ürik Asit Ekskresyonu (FE-UA) > %12</strong> olması, özellikle diüretik kullanan hastalarda SIADH tanısı için %100'e yakın pozitif öngörü değerine sahiptir.</p>"
+    },
+    {
+      "heading": "🧬 SIADH Alt Tipleri ve Kopeptin Dinamiği",
+      "html": "<ul class=\"mb-4\"><li><strong>Tip 1:</strong> Osmolaliteden bağımsız kaotik AVP salınımı.</li><li><strong>Tip 2:</strong> Baskılanamayan bazal AVP sekresyonu.</li><li><strong>Tip 3 (Reset Osmostat):</strong> AVP salınım eşiği daha düşük bir osmolaliteye set edilmiştir (Sıklıkla gebelik ve yaşlılıkta).</li><li><strong>Tip 4 (Nefrojenik SIAD):</strong> AVP/Kopeptin düşük olsa da aktive edici V2 reseptör mutasyonu nedeniyle tablo oluşur.</li><li><strong>Tip 5 (Barostat Reset):</strong> Artan osmolalite ile kopeptinin lineer düşüşü izlenir.</li></ul>"
+    }
+  ]
+}

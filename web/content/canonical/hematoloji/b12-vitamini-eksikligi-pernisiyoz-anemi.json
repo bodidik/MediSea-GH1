@@ -1,0 +1,35 @@
+{
+  "title": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Megaloblastik", "B12 Vitamini", "Pernisiyöz Anemi", "Nörolojik Bulgular"],
+    "parent": "anemiler-genel-bakis",
+    "order": 34
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji ve Emilim Fizyolojisi",
+      "html": "<p><strong>B12 Vitamini (Kobalamin)</strong>, DNA sentezinde (timidin üretimi) ve sinir sisteminde miyelin kılıfının bütünlüğünün korunmasında elzem olan, hayvansal kaynaklı bir vitamindir. Eksikliği, kemik iliğinde inefektif eritropoeze (megaloblastik anemi) ve sinir sisteminde demyelinizasyona yol açar.</p><p><strong>Emilim Mekanizması:</strong> B12 vitamininin emilimi oldukça spesifik ve çok basamaklı bir süreçtir:</p><ol class=\"mb-4\"><li>Mide asidi ve pepsin, besinlerdeki B12'yi proteinlerden ayırır. Tükürükten salgılanan <em>Haptokorrin (R-binder)</em> B12'ye bağlanarak onu mide asidinden korur.</li><li>Midenin <strong>paryetal hücrelerinden</strong> salgılanan <strong>İntrinsik Faktör (IF)</strong> duodenuma geçer. Pankreas enzimleri haptokorrini yıkar ve B12, İntrinsik Faktör ile birleşir.</li><li>B12-IF kompleksi, spesifik reseptörler (Kübilin) aracılığıyla <strong>terminal ileumdan</strong> emilir.</li></ol>"
+    },
+    {
+      "heading": "Etiyoloji",
+      "html": "<p>Vücudun karaciğerdeki B12 depoları 3 ila 5 yıl yetecek kadar geniştir. Bu nedenle eksikliğin klinik bulgu vermesi yıllar alır. Başlıca nedenler emilim bozukluklarıdır:</p><ul class=\"mb-4\"><li><strong>Pernisiyöz Anemi (En Sık Neden):</strong> Mide paryetal hücrelerine veya İntrinsik Faktöre (IF) karşı gelişen otoimmün yıkım sonucu IF eksikliği gelişmesidir. Genellikle atrofik gastrit ve aklorhidri (mide asidi yokluğu) ile birliktedir. Mide adenokarsinomu ve karsinoid tümör riski artmıştır.</li><li><strong>Gastrointestinal Cerrahiler:</strong> Total/parsiyel gastrektomi (IF eksikliği) ve bariyatrik cerrahiler (Roux-en-Y gastrik bypass).</li><li><strong>Terminal İleum Hastalıkları:</strong> Crohn hastalığı, terminal ileum rezeksiyonu ve kör loop (kör mukoza) sendromu (bakteriyel aşırı çoğalma).</li><li><strong>İlaçlar:</strong> Uzun süreli Proton Pompa İnhibitörü (PPI) veya H2 reseptör blokörü kullanımı (asit baskılanması), <em>Metformin</em> (kalsiyum bağımlı ileal emilimi bozar).</li><li><strong>Diyet:</strong> Yetersiz alım genellikle sadece katı vegan (hayvansal ürün tüketmeyen) diyeti uygulayanlarda görülür.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon",
+      "html": "<p>Megaloblastik aneminin klasik bulgularına (yorgunluk, efor dispnesi, solukluk, hafif ikter, Hunter glositi) ek olarak, spesifik nörolojik komplikasyonlar B12 eksikliğinin temel ayırıcı özelliğidir.</p><p><strong>Nörolojik Bulgular (Subakut Kombine Dejenerasyon):</strong></p><ul class=\"mb-4\"><li>Spinal kordun <strong>dorsal (arka) kolonlarının</strong> (vibrasyon ve propriyosepsiyon kaybı, duyu ataksisi) ve <strong>lateral kortikospinal traktuslarının</strong> (spastisite, hiperrefleksi, Babinski pozitifliği) demyelinizasyonu tablosudur.</li><li>Hastalarda genellikle ilk semptom el ve ayaklarda simetrik parestezi (uyuşma, karıncalanma) şeklindedir. İleri evrelerde demans, hafıza kayıpları ve psikiyatrik bozukluklar (Megaloblastik delilik) görülebilir.</li><li><em>Klinik Uyarı: Nörolojik bulgular anemi tablosu gelişmeden de (normal MCV ve Hb ile) ortaya çıkabilir.</em></li></ul>"
+    },
+    {
+      "heading": "Laboratuvar ve Tanısal Yaklaşım",
+      "html": "<p>Periferik yaymada <strong>makroovalositler (MCV > 100 fL)</strong> ve <strong>hipersegmente nötrofiller</strong> (≥5 loblu) saptanır. Kemik iliğinde inefektif eritropoeze bağlı sekonder olarak LDH ve indirekt biluribin artışı izlenir.</p><ul class=\"mb-4\"><li><strong>Serum B12 Düzeyi:</strong> Genellikle < 200 pg/mL'dir. Sınırda değerlerde (200-300 pg/mL) metabolit testlerine başvurulmalıdır.</li><li><strong>Metabolit Testleri (Kesin Tanı):</strong> B12 vitamini, hem homosisteinin metiyonine dönüşümünde hem de metilmalonik asidin (MMA) süksinil-CoA'ya dönüşümünde kofaktördür. Bu nedenle B12 eksikliğinde <strong>hem Serum Homosistein hem de Metilmalonik Asit (MMA) düzeyleri YÜKSEKTİR</strong>. (Sadece homosistein yüksekliği folat eksikliğini işaret eder).</li><li><strong>Pernisiyöz Anemi Tanısı:</strong> <em>Anti-İntrinsik Faktör Antikoru</em> (çok spesifik) ve <em>Anti-Paryetal Hücre Antikoru</em> (çok sensitif) testleri istenir. Tanı alan hastalarda gastrik atrofi ve malignite taraması için üst GİS endoskopisi endikedir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi ve Yönetim",
+      "html": "<p>Tedavinin temel amacı hematolojik bozukluğu düzeltmek ve nörolojik hasarı (erken evredeyse) geri döndürmektir.</p><ul class=\"mb-4\"><li><strong>Parenteral Tedavi (İntramüsküler/Subkütan Siyanokobalamin):</strong> Pernisiyöz anemi, emilim bozukluğu veya ciddi nörolojik bulguları olan hastalarda standarttır. Genellikle ilk 1-2 hafta her gün veya gün aşırı yükleme dozu, ardından ömür boyu ayda bir idame doz şeklinde uygulanır.</li><li><strong>Oral/Sublingual Tedavi:</strong> Emilim kusuru olmayan diyet eksikliklerinde veya çok yüksek doz (1000 mcg/gün) oral preparatlar kullanıldığında (pasif difüzyon ile %1 emilim sağlandığından) idame tedavisinde etkilidir.</li><li><strong>Yanıt ve Komplikasyonlar:</strong> Tedaviye başlandıktan sonraki ilk hafta içinde belirgin <strong>retikülosit krizi</strong> beklenir. Bu dönemde artmış hücre üretimine bağlı olarak <strong>ciddi hipokalemi</strong> gelişebileceğinden potasyum düzeyleri yakından izlenmelidir. Folat eksikliğinde olduğu gibi, gizli B12 eksikliği olan hastaya sadece folik asit verilmesi nörolojik hasarı hızlandırır ve şiddetlendirir.</li></ul>"
+    }
+  ]
+}

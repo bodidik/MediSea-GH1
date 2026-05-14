@@ -1,0 +1,15 @@
+{
+  "title": "Adrenal Medulla Hastalıkları",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Endokrin", "Medulla", "Katekolamin"],
+    "parent": "adrenal-bez-hastaliklari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Fizyoloji",
+      "text": "<p>Adrenal bezin iç kısmıdır. Sempatik sinir sisteminin bir parçası gibi çalışır. Kromafin hücrelerden oluşur ve stres anında kana <strong>Adrenalin (Epinefrin)</strong> ve Noradrenalin salgılar.</p>"
+    }
+  ]
+}

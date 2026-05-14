@@ -1,0 +1,35 @@
+{
+  "title": "Hodgkin Lenfoma (HL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Hodgkin", "Reed-Sternberg", "ABVD", "Brentuximab", "PD-1 İnhibitörleri", "Yapay Zeka Taslağı"],
+    "parent": "lenfomalar",
+    "order": 20
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Hodgkin Lenfoma (HL)</strong>, germinal merkez B hücrelerinden köken alan, ancak tipik B hücre belirteçlerini kaybetmiş, dev, çok çekirdekli (baykuş gözü / owl-eye) <strong>Reed-Sternberg (RS)</strong> hücreleri ve mononükleer <strong>Hodgkin</strong> hücreleri ile karakterize bir lenfomadır. İşin ilginç yanı, tümör kitlesinin %99'u reaktif T hücreleri, eozinofiller, makrofajlar ve plazma hücrelerinden oluşurken, neoplastik hücreler sadece %1-2'lik bir kısmı oluşturur.</p><p>Hastalığın patogenezinde <strong>Epstein-Barr Virüsü (EBV)</strong> enfeksiyonu (özellikle mikst selüler tipte) ve 9p24.1 gen amplifikasyonu (<strong>PD-L1 ve PD-L2 aşırı ekspresyonu</strong> ile immün sistemden kaçış) kritik rol oynar.</p>"
+    },
+    {
+      "heading": "Sınıflandırma ve İmmünofenotip",
+      "html": "<p>İki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>1. Klasik Hodgkin Lenfoma (cHL):</strong> Vakaların %95'idir. RS hücreleri <strong>CD15+ ve CD30+</strong>'tir. Klasik B (CD20) ve T (CD3) belirteçleri ve CD45 (LCA) negatiftir. Zayıf PAX5 pozitifliği gösterir. Kendi içinde 4 alt tipi vardır:<ul><li><em>Nodüler Sklerozan (NSHL):</em> En sık görülenidir (%70). Genç kadınlarda, mediastinal kitle ve laküner hücrelerle seyreder. Kalın kollajen bantlar (skleroz) tipiktir.</li><li><em>Mikst Selüler (MCHL):</em> EBV ve HIV ile en sık ilişkili olandır. Eozinofil ve plazma hücresi zengindir.</li><li><em>Lenfositten Zengin (LRHL):</em> En iyi prognoza sahip alt tiptir.</li><li><em>Lenfositten Fakir (LDHL):</em> En nadir ve en kötü prognozlu tiptir. İleri yaş ve HIV+ olgularda sıktır.</li></ul></li><li><strong>2. Nodüler Lenfositten Zengin (Predominant) Hodgkin Lenfoma (NLPHL):</strong> Vakaların %5'idir. Klasik RS hücreleri yerine <strong>Popcorn (patlamış mısır) hücreleri / LP hücreleri</strong> bulunur. Klasik HL'nin aksine <strong>CD20+ ve CD45+</strong> iken, CD15 ve CD30 negatiftir. Foliküler lenfoma gibi indolent seyreder ve DLBCL'ye transforme olma riski vardır.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Evreleme",
+      "html": "<p>Genellikle boyun (servikal) ve supraklaviküler bölgede ağrısız, lastik kıvamında lenfadenopati ile başvurur. HL'nin yayılımı NHL'nin aksine <strong>öngörülebilir ve ardışıktır</strong> (komşu lenf nodu istasyonlarına sırayla atlar). Klasik B semptomlarına (ateş, terleme, kilo kaybı) ek olarak, <strong>alkol alımı sonrası lenf nodunda ağrı</strong> ve dalgalı seyreden <strong>Pel-Ebstein ateşi</strong> spesifik ancak nadir bulgulardır.</p><p>Evreleme <strong>Lugano (Ann Arbor)</strong> sistemine ve <strong>PET-BT</strong> görüntülemesine göre yapılır. PET-BT, HL'de hem ilk evrelemede hem de tedavi yanıtını değerlendirmede (<strong>Deauville Skoru</strong>) mutlak altın standarttır.</p>"
+    },
+    {
+      "heading": "Birinci Basamak Tedavi Stratejileri",
+      "html": "<p>HL, modern kemoterapi ile <strong>kür oranı %80-90'lara varan</strong> bir başarı öyküsüdür.</p><ul class=\"mb-4\"><li><strong>Klasik ABVD Rejimi:</strong> <em>Adriyamisin, Bleomisin, Vinblastin, Dakarbazin</em>. On yıllardır standart tedavidir.</li><li><strong>PET-Adaptif Yaklaşım (RATHL Çalışması):</strong> 2 kür ABVD sonrası yapılan ara PET (PET-2) negatif (Deauville 1-3) gelirse, pulmoner toksisite (pulmoner fibrozis) riskini sıfırlamak için <strong>Bleomisin tedaviden çıkarılır</strong> ve kalan 4 kür <strong>AVD</strong> olarak tamamlanır.</li><li><strong>İleri Evre (Evre III-IV) Modern Tedaviler:</strong> Yüksek riskli ileri evre hastalarda Bleomisin yerine anti-CD30 ADC'si <strong>Brentuximab vedotin</strong>'in eklendiği <strong>A+AVD (ECHELON-1)</strong> rejimi veya en güncel çalışmalar (SWOG S1826) ışığında <strong>Nivolumab + AVD</strong> rejimi, geleneksel ABVD'ye kıyasla üstün sağkalım göstererek birinci basamakta paradigma değiştirmiştir.</li></ul>"
+    },
+    {
+      "heading": "Relaps/Refrakter Hastalık ve İmmünoterapi",
+      "html": "<p>Birinci basamakta kür sağlanamayan veya nüks eden hastalarda <strong>kurtarma kemoterapisi (ICE, DHAP, IGEV)</strong> ve ardından <strong>Otolog Kök Hücre Nakli (ASCT)</strong> standarttır.</p><p>ASCT sonrası nüks eden veya nakle uygun olmayan hastalarda HL'nin o eşsiz genetiği (9p24.1 amplifikasyonu) devreye girer. Tümör hücreleri üzerindeki PD-L1/L2 kalkanını indiren <strong>PD-1 İnhibitörleri (Nivolumab, Pembrolizumab)</strong>, dirençli HL'de muazzam (%70'e varan) yanıt oranları sağlar. Ayrıca anti-CD30 <strong>Brentuximab vedotin</strong>, hem nakil öncesi köprülemede hem de nakil sonrası idamede temel taşlardan biridir.</p>"
+    }
+  ]
+}

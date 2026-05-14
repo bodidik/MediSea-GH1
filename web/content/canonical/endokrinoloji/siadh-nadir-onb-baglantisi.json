@@ -1,0 +1,23 @@
+{
+  "title": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Onkoloji", "SIADH", "ONB", "Estezinöroblastom", "DOTANOC", "Nadir Vakalar"],
+    "parent": "siadh-sendromu",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "👃 Olfaktör Nöroblastoma (ONB) ve Hormonal Sır",
+      "html": "<p>Olfaktör nöroblastoma (estezinöroblastom), nazal kaviteden köken alan nadir bir malignitedir. Tipik nöroendokrin özellikler (CD56, Sinaptofizin, NSE pozitifliği) gösterir. Nadir vakalarda bu hücreler ektopik <strong>ADH (AVP)</strong> salgılayarak dirençli SIADH tablosu yaratır.</p>"
+    },
+    {
+      "heading": "🔍 Gizli Odakların Tespiti: Nükleer Tıp",
+      "html": "<p>Açıklanamayan SIADH'da akciğer odağı saptanamazsa kafa tabanı taranmalıdır. ONB hücreleri <strong>Somatostatin Reseptör Tip 2 (SSTR2)</strong> eksprese ettiği için, standart BT/MRG'nin göremediği tümörleri yakalamada <strong>68Ga-DOTANOC PET-CT</strong> altın standarttır.</p>"
+    },
+    {
+      "heading": "🛡️ Tedavi: Cerrahi ve Radyoligand",
+      "html": "<p>Temel tedavi cerrahi rezeksiyondur; tümörün çıkarılması SIADH tablosunu hızla çözer. İleri evrelerde (Hyams evreleme) adjuvan radyoterapi veya hedefe yönelik <strong>177Lu-DOTATATE</strong> gibi radyoligand tedavileri klinik yönetime eklenir.</p>"
+    }
+  ]
+}

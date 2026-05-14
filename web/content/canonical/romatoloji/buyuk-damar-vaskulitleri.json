@@ -1,0 +1,19 @@
+{
+  "title": "Dev Hücreli Arterit ve Takayasu",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Temporal Arterit", "PMR", "Körlük"],
+    "parent": "vaskulit-sendromlari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Dev Hücreli Arterit (GCA) ve PMR",
+      "text": "<div class='grid gap-4 md:grid-cols-2'><div class='bg-red-50 p-3 rounded border border-red-200'><strong class='text-red-900'>Dev Hücreli (Temporal) Arterit:</strong> 50 yaş üstünde en sık vaskülittir. Şiddetli baş ağrısı, çene kladikasyosu ve görme kaybı (Amaurosis fugax) yapar. Sedimantasyon (ESR) çok yüksektir. Körlüğü önlemek için biyopsi sonucu beklenmeden acil steroid başlanmalıdır.</div><div class='bg-orange-50 p-3 rounded border border-orange-200'><strong class='text-orange-900'>Polimiyalji Romatika (PMR):</strong> GCA ile %50 birliktelik gösterir. Omuz ve kalça kuşağında sabah tutukluğu/ağrı yapar. Düşük doz steroide (15mg) dramatik yanıt verir.</div></div>"
+    },
+    {
+      "heading": "Takayasu Arteriti",
+      "text": "<p>Genellikle 40 yaş altı Asyalı kadınlarda görülür. Aort ve ana dallarını tutar. 'Nabızsızlık Hastalığı' olarak bilinir. Kollarda tansiyon farkı (>10 mmHg) ve kladikasyo (kol yorgunluğu) tipiktir.</p>"
+    }
+  ]
+}

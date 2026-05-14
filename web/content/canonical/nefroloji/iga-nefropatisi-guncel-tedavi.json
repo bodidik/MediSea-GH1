@@ -1,0 +1,35 @@
+{
+  "title": "İleri Okuma: IgA Nefropatisi -Tedavi",
+  "meta": {
+    "updatedAt": "01 Nis 2026",
+    "tags": ["Nefroloji", "IgA Nefropatisi", "SGLT2i", "Sparsentan", "Nefecon", "APRIL/BAFF", "Kompleman"],
+    "parent": "iga-nefropatisi-berger",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "💊 Uzman Özeti: \"Bekle ve Gör\"den Çoklu Hedefli (Multi-Targeted) Yaklaşıma",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">IgA Nefropatisi (IgAN) yönetimi, sadece RAS blokajı ve toksik sistemik steroidlere dayanan klasik yaklaşımdan; nefron kaybını durduran hemodinamik modülatörlerin (SGLT2i, ERA) ve patojenik antikor üretimini/kompleman kaskadını kaynağında kesen hedefe yönelik ajanların (Nefecon, APRIL/BAFF inhibitörleri) eşzamanlı kullanıldığı <strong>\"çoklu hedefli (multi-targeted)\"</strong> bir paradigma değişimine uğramıştır.</p> "
+    },
+    {
+      "heading": "1. Optimize Edilmiş Destekleyici Bakım (Temel Taş)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yeni nesil immünolojik ajanlar başlansa bile, hiperfiltrasyonu azaltan bu temel bakım ömür boyu sürdürülmelidir. <strong>KDIGO 2021/2025</strong> kılavuzlarına göre proteinürisi >0.5 g/gün olan tüm IgAN hastalarında:</p><ul class=\"grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-800 mb-4\"><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">🩸 <strong>Maksimum Tolere Edilebilir RAS İnhibisyonu (ACEi/ARB)</strong></div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">🎯 <strong>Kan Basıncı Hedefi: <120/70 mmHg</strong></div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">🧂 <strong>Sodyum Kısıtlaması (<2 g/gün)</strong></div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">⚖️ <strong>Kilo Kontrolü ve KVR Yönetimi</strong></div></li></ul>"
+    },
+    {
+      "heading": "2. KBH İlerlemesini Yavaşlatan Hemodinamik/Anti-Fibrotik Ajanlar",
+      "html": "<div class=\"space-y-4\"><div class=\"bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-blue-900 text-[11px] uppercase mb-1 tracking-wider\">SGLT2 İnhibitörleri (DAPA-CKD, EMPA-KIDNEY)</h4><p class=\"text-xs text-blue-800 leading-relaxed\">DAPA-CKD IgAN kohortunda böbrek hastalığı ilerleme riskinde <strong>%71 azalma</strong> saptanmıştır. Tubuloglomerüler geri bildirimi modüle edip glomerül içi basıncı azaltan bu ajanlar, optimal RAS blokajına rağmen proteinürisi >0.5 g/gün olan hastalarda <strong>güncel standart tedavinin vazgeçilmez bir parçasıdır.</strong></p></div><div class=\"bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-cyan-900 text-[11px] uppercase mb-1 tracking-wider\">Endotelin Reseptör Antagonistleri (ERA) - Sparsentan</h4><p class=\"text-xs text-cyan-800 leading-relaxed\">Endotelin-1, glomerüler vazokonstriksiyon ve fibrozisin ana aracıdır. <strong>Sparsentan</strong>, hem ETA hem de AT1 reseptörünü aynı anda bloke eden çift etkili bir antagonisttir (DEARA). PROTECT Faz 3 çalışması, irbesartana kıyasla proteinüriyi %40 daha fazla düşürdüğünü ve eGFR kaybını anlamlı yavaşlattığını göstermiş, FDA'dan tam onay almıştır.</p></div></div>"
+    },
+    {
+      "heading": "3. Mukozal İmmünitenin Modülasyonu: TRF-Budesonid (Nefecon)",
+      "html": "<div class=\"bg-amber-50 border-2 border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><p class=\"text-sm text-amber-900 leading-relaxed\">IgAN patogenezinin \"ilk vuruşu\" olan anormal Gd-IgA1 üretimini, distal ileumdaki Peyer plaklarında lokal bağışıklık modülasyonu ile hedefleyen <strong>Nefecon</strong>, hastalığa özgü onay alan ilk tedavidir. Yüksek karaciğer ilk-geçiş metabolizması sistemik steroid toksisitesini en aza indirir. <strong>NefIgArd Faz 3 çalışması</strong>, 9 aylık Nefecon tedavisinin, ilaç kesildikten 15 ay sonra bile (toplam 2 yıl) eGFR korunmasında plaseboya kıyasla <strong>+5.05 mL/dk/1.73 m²</strong> fark yarattığını kanıtlamıştır.</p></div> "
+    },
+    {
+      "heading": "4. İmmünsüpresifler ve Sitokin/Plazma Hücre Hedefleri",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Destekleyici bakımla kontrol edilemeyen glomerüler inflamasyonda hedefe yönelik ajanlar ön plana çıkmaktadır:</p><ul class=\"space-y-4 text-sm text-slate-800\"><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">⚠️</span><div><strong class=\"block text-slate-900\">Sistemik Steroidler (TESTING Çalışması):</strong> Yüksek doz steroid ciddi/ölümcül enfeksiyon riskini artırır. TESTING çalışması, <strong>azaltılmış doz metilprednizolonun (0.4 mg/kg/gün)</strong> P. jirovecii profilaksisi ile eşzamanlı verildiğinde yüksek doz kadar etkili olduğunu ve yan etkileri azalttığını göstermiştir. (MMF kombinasyonu beyaz ırkta hala tartışmalıdır).</div></li><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">🎯</span><div><strong class=\"block text-slate-900\">APRIL ve BAFF İnhibitörleri (B Hücre Modülasyonu):</strong> Mukoza kaynaklı B hücrelerinin sınıf değişimi ve sağkalımını sağlayan sitokinleri hedefler. Sadece APRIL'i bloke eden <strong>Sibeprenlimab / Zigakibart</strong> ve çift etkili (dual) reseptörler olan <strong>Atacicept / Povetacicept</strong>, ciddi immünsüpresyon yaratmadan Gd-IgA1 seviyelerinde ve proteinüride dramatik (>%50) düşüşler sağlar.</div></li><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">🛡️</span><div><strong class=\"block text-slate-900\">Anti-CD38 Terapileri:</strong> Antikor üreten uzun ömürlü plazma hücrelerini doğrudan silen <strong>Felzartamab ve Mezagitamab</strong> kalıcı modifikasyonlar sağlayarak araştırılmaktadır.</div></li></ul>"
+    },
+    {
+      "heading": "5. Kompleman Sisteminin İnhibisyonu",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Alternatif Yol (Faktör B)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Oral selektif Faktör B inhibitörü <strong>İptacopan</strong>, eGFR stabilizasyonu ve proteinüride ~%38 düşüş sağlayarak (APPLAUSE-IgAN) FDA onayı almıştır. Sefaxersen (siRNA) çalışmaları sürmektedir.</p></div></div><div><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Terminal ve Lektin Yolu</h4><p class=\"text-xs text-slate-600 leading-relaxed\">MASP-2 inhibitörü Narsoplimab'ın Faz 3 çalışması durdurulmuş olsa da; terminal yolu (C5) hedefleyen <strong>Ravulizumab, Cemdisiran ve Avacopan</strong> proteinüriyi güvenle düşüren ümit verici Faz 2 verilerine sahiptir.</p></div></div></div>"
+    }
+  ]
+}

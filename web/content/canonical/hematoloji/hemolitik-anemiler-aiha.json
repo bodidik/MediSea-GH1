@@ -1,0 +1,35 @@
+{
+  "title": "Otoimmün Hemolitik Anemiler (AİHA)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Hemolitik Anemi", "AİHA", "Coombs Testi", "Sıcak Antikor", "Soğuk Antikor"],
+    "parent": "hemolitik-anemiler-genel-bakis",
+    "order": 42
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Sınıflandırma",
+      "html": "<p><strong>Otoimmün Hemolitik Anemi (AİHA)</strong>, bağışıklık sisteminin eritrosit yüzeyindeki antijenlere karşı otokorlar (otoantikorlar) üretmesi ve bu antikorların eritrositlerin erken yıkımına (hemoliz) yol açmasıyla karakterize edinsel bir hastalıktır.</p><p>Hastalık, otoantikorların eritrositlere en ideal bağlandığı sıcaklığa (termal amplitüd) göre iki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>Sıcak Tip AİHA (Warm AİHA):</strong> Olguların %70-80'ini oluşturur. Sorumlu antikor <strong>IgG</strong> yapısındadır ve 37°C'de (vücut ısısında) maksimum reaktivite gösterir.</li><li><strong>Soğuk Tip AİHA (Cold Agglutinin Disease / KHA):</strong> Olguların %20-30'udur. Sorumlu antikor <strong>IgM</strong> yapısındadır ve 0-4°C'de (özellikle ekstremitelerde) optimum bağlanma gösterir.</li></ul>"
+    },
+    {
+      "heading": "Sıcak Tip AİHA (IgG Aracılı Hemoliz)",
+      "html": "<p><strong>Patofizyoloji:</strong> IgG antikorları 37°C'de eritrositlere bağlanır ancak komplemanı tam olarak aktive edemezler. Antikor kaplı bu eritrositler dalaktan geçerken, dalak makrofajlarının Fc reseptörleri tarafından yakalanır. Makrofajlar eritrosit zarından bir parça kopararak hücreyi <strong>sferosite</strong> dönüştürür ve nihayetinde hücre dalakta yıkılır (<strong>Ekstravasküler Hemoliz</strong>).</p><p><strong>Etiyoloji:</strong> Vakaların yarısı idiyopatiktir. Sekonder nedenler arasında KLL (Kronik Lenfositik Lösemi), Non-Hodgkin Lenfoma, Sistemik Lupus Eritematozus (SLE) ve ilaçlar (Metildopa, Penisilin, Sefalosporinler) yer alır.</p><p><strong>Klinik ve Laboratuvar:</strong> Şiddetli anemi, sarılık ve splenomegali tipiktir. Periferik yaymada <strong>sferositler</strong> saptanır.</p>"
+    },
+    {
+      "heading": "Soğuk Tip AİHA (IgM Aracılı Hemoliz)",
+      "html": "<p><strong>Patofizyoloji:</strong> Devasa bir molekül olan IgM, soğuk ekstremitelerde (eller, ayaklar, burun, kulak) eritrositlere bağlanarak onların kümeleşmesine (aglütinasyon) neden olur. IgM komplemanı (C3b) çok güçlü bir şekilde aktive eder. Hücreler merkezi dolaşıma (37°C'ye) döndüğünde IgM eritrositten ayrılır, ancak kompleman (C3b/C3d) hücre zarında asılı kalır. Bu kompleman kaplı hücreler karaciğerdeki Kupffer hücreleri tarafından yıkılır (<strong>Karaciğerde Ekstravasküler Hemoliz</strong>) veya Membran Atak Kompleksi (MAC) oluşumuyla damar içinde parçalanır (İntravasküler Hemoliz).</p><p><strong>Etiyoloji:</strong> İdiyopatik (klonal B hücreli lenfoproliferatif hastalık/Waldenström) veya sekonder olabilir. Sekonder nedenlerin en klasikleri <strong>Mycoplasma pneumoniae</strong> ve <strong>Epstein-Barr Virüsü (EBV / İnfeksiyöz Mononükleoz)</strong> enfeksiyonlarıdır.</p><p><strong>Klinik ve Laboratuvar:</strong> Soğuğa maruziyetle tetiklenen akrosiyanoz (parmak uçlarında morarma) ve livedo retikülaris saptanır. Periferik yaymada eritrositlerin rulo formasyonu dışında düzensiz kümeler oluşturduğu <strong>aglütinasyon</strong> saptanır.</p>"
+    },
+    {
+      "heading": "Tanı: Direkt Antiglobulin Testi (DAT / Coombs)",
+      "html": "<p>Hemoliz bulguları (LDH artışı, indirekt bilirubinemi, düşük haptoglobin) saptandıktan sonra tanının altın standardı <strong>Direkt Coombs (DAT)</strong> testidir. Test, in vivo olarak (hastanın vücudunda) antikor veya komplemanla kaplanmış eritrositleri saptar.</p><p>İki hastalık arasındaki DAT profili tanısaldır:</p><ul class=\"mb-4\"><li><strong>Sıcak Tip AİHA:</strong> DAT, <strong>IgG için POZİTİF</strong> (kompleman C3d pozitif veya negatif olabilir) saptanır.</li><li><strong>Soğuk Tip AİHA:</strong> DAT, IgG için negatif iken <strong>SADECE C3d için POZİTİF</strong> saptanır. (Çünkü yıkama işlemi sırasında IgM hücreden ayrılır, geriye sadece aktive ettiği kompleman kalır).</li></ul>"
+    },
+    {
+      "heading": "Tedavi Algoritmaları",
+      "html": "<p>Her iki tipin etki mekanizması farklı olduğu için tedavileri de tamamen farklıdır:</p><p><strong>Sıcak Tip AİHA Tedavisi:</strong></p><ul class=\"mb-4\"><li><strong>Birinci Basamak:</strong> <strong>Kortikosteroidler (Prednizolon).</strong> Makrofajların Fc reseptör ekspresyonunu azaltarak dalaktaki yıkımı hızla durdurur.</li><li><strong>İkinci Basamak:</strong> Steroide dirençli veya bağımlı vakalarda <strong>Rituksimab</strong> (Anti-CD20) veya <strong>Splenektomi</strong> (yıkım yeri dalak olduğu için çok etkilidir) tercih edilir.</li></ul><p><strong>Soğuk Tip AİHA Tedavisi:</strong></p><ul class=\"mb-4\"><li><strong>Birinci Kural:</strong> Soğuktan korunmak ve hastayı sıcak tutmak esastır.</li><li><strong>İlaç Tedavisi:</strong> Kortikosteroidler ve Splenektomi soğuk tipte <strong>ETKİSİZDİR</strong> (yıkım dalakta değil, karaciğerde ve damar içindedir). Semptomatik ve anemik hastalarda altta yatan B hücre klonunu baskılamak için <strong>Rituksimab</strong> birinci basamak farmakolojik tedavidir.</li><li><strong>Acil Durum:</strong> Akut, şiddetli hemolitik krizlerde kandan IgM'yi hızla uzaklaştırmak için <strong>Plazmaferez</strong> uygulanabilir (Sıcak tipte IgG ekstravasküler alana dağıldığı için plazmaferez pek işe yaramaz).</li></ul>"
+    }
+  ]
+}

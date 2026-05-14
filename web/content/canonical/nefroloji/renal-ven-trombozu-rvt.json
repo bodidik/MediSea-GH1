@@ -1,0 +1,35 @@
+{
+  "title": "Renal Ven Trombozu (RVT)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nefroloji", "RVT", "Tromboz", "Nefrotik Sendrom", "Membranöz GN"],
+    "parent": "renovaskuler-hastaliklar",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea Akademik Modül</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji: Hiperkoagülabilite Odağı",
+      "html": "<p>Renal Ven Trombozu (RVT), bir veya her iki renal vende pıhtı oluşumudur. En sık <strong>Nefrotik Sendrom</strong> zemininde gelişir. Böbrekten aşırı miktarda Antitrombin III, Protein C ve S kaybı olması, böbreği pıhtılaşmaya karşı savunmasız bırakır.</p><ul class=\"mb-4\"><li><strong>Membranöz Glomerülonefrit:</strong> RVT riskinin en yüksek olduğu nefrotik tablodur (%30-40 vakada görülür).</li><li><strong>Diğer Nedenler:</strong> Renal Hücreli Karsinom (venöz invazyon), dehidratasyon (bebeklerde), antifosfolipid sendromu ve oral kontraseptif kullanımı.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon: Akut vs. Kronik",
+      "html": "<p>RVT'nin klinik seyri pıhtının oluşum hızına bağlıdır:</p><ul class=\"mb-4\"><li><strong>Akut Form:</strong> Genellikle gençlerde veya ani gelişen durumlarda görülür. Şiddetli <strong>yan ağrısı (böbrek kolik benzeri)</strong>, ani başlayan makroskobik hematüri, böbrekte büyüme ve GFR'de hızlı düşüş ile karakterizedir.</li><li><strong>Kronik Form:</strong> Erişkin nefrotiklerde daha sıktır. Genellikle sessiz (asemptomatik) seyreder. İlk bulgu <strong>Pulmoner Emboli</strong> olabilir. Proteinüride ani bir artış saptanabilir.</li></ul>"
+    },
+    {
+      "heading": "Tanı: Görüntüleme ve Kritik İpuçları",
+      "html": "<p>Klinik şüphe tanının anahtarıdır.</p><ul class=\"mb-4\"><li><strong>Doppler USG:</strong> İlk basamak testidir; venöz akım kaybını veya ven içindeki trombüsü gösterebilir.</li><li><strong>BT / MR Venografi:</strong> Altın standart olmaya aday non-invaziv testlerdir. Renal venin doluş defektleri ve böbrekte ödem net izlenir.</li><li><strong>Renal Venografi:</strong> Tarihsel altın standarttır ancak invazivliği nedeniyle nadiren kullanılır.</li></ul>"
+    },
+    {
+      "heading": "Komplikasyonlar ve Sol Testis Bağlantısı",
+      "html": "<p>RVT'nin en korkulan komplikasyonu Pulmoner Emboli'dir. Ayrıca sol taraflı RVT'de özel bir durum vardır:</p><ul class=\"mb-4\"><li><strong>Sol Varikosel:</strong> Sol testiküler ven, sol renal vene döküldüğü için, renal vendeki bir tıkanıklık sol tarafta ani gelişen varikosel (testis damarlarında genişleme) yapabilir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi: Antikoagülasyon Protokolü",
+      "html": "<p>Tedavinin temel amacı pıhtının ilerlemesini ve emboliyi önlemektir.</p><ul class=\"mb-4\"><li><strong>Antikoagülan Tedavi:</strong> En az 6-12 ay süreyle Warfarin veya DOAK'lar kullanılır. Eğer risk faktörü (Nefrotik sendrom) devam ediyorsa tedavi süresiz uzatılabilir.</li><li><strong>Trombolitik Tedavi:</strong> Bilateral akut RVT veya ağır böbrek yetmezliği gelişen vakalarda doğrudan ven içine (kateter aracılı) uygulanabilir.</li><li><strong>Destek:</strong> Nefrotik sendromun primer tedavisi ve ödem kontrolü esastır.</li></ul>"
+    }
+  ]
+}

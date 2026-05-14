@@ -1,0 +1,15 @@
+{
+  "title": "Hemofili A (Faktör VIII Eksikliği)",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "Genetik"],
+    "parent": "kanama-bozukluklari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "text": "<p>X kromozomuna bağlı resesif geçiş gösteren, Faktör VIII eksikliği ile karakterize hastalıktır.</p>"
+    }
+  ]
+}

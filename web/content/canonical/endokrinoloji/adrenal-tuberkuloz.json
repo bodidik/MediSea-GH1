@@ -1,0 +1,32 @@
+{
+  "title": "Adrenal Tüberküloz (Tuberculous Adrenalitis)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": [
+      "Enfeksiyon",
+      "Kalsifikasyon",
+      "Addison",
+      "Gelişmekte Olan Ülkeler"
+    ],
+    "parent": "adrenal-yetmezlik",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bilgiler ve Epidemiyoloji",
+      "text": "<p>Thomas Addison hastalığı ilk tanımladığında en sık neden tüberkülozdu. Günümüzde gelişmiş ülkelerde olguların sadece %7-20'sini oluştursa da, <strong>gelişmekte olan ülkelerde hala primer adrenal yetmezliğin en sık nedenlerinden biridir</strong>. Enfeksiyon genellikle akciğer, gastrointestinal sistem veya böbrekteki aktif enfeksiyonun hematojen (kan yoluyla) yayılımı sonucu her iki adrenal beze ulaşır.</p>"
+    },
+    {
+      "heading": "Patofizyoloji",
+      "text": "<p>Adrenal bez yıkımı yavaş ve kademeli gerçekleşir. Otoimmün adrenalitin aksine, tüberküloz enfeksiyonu sadece korteksi değil, <strong>adrenal medullayı da harap eder</strong>. Hastaların çoğunda ekstra-adrenal (akciğer vb.) tüberküloz bulgusu vardır, ancak bazen latent (gizli) kalabilir.</p>"
+    },
+    {
+      "heading": "Görüntüleme Bulguları (BT ve MRG)",
+      "text": "<p>Tanıda adrenal görüntüleme, hastalığın evresine göre farklılık gösterir:</p><ul><li><strong>Erken Evre (Aktif Enfeksiyon):</strong> Adrenal bezler, enflamatuar hücre infiltrasyonu ve granülomlar nedeniyle <strong>büyümüştür (kitle görünümü)</strong>. BT'de periferik kontrastlanma ve nekroz alanları görülebilir.</li><li><strong>Geç Evre (Kronikleşme):</strong> Yaklaşık 2 yıl sonra kazeöz nekrozun yerini fibrozis alır ve bezler normal boyuta döner veya <strong>atrofik (küçük)</strong> hale gelir.</li><li><strong>Kalsifikasyon:</strong> Hastaların yaklaşık <strong>%50'sinde</strong> adrenal kalsifikasyonlar görülür. Bu bulgu, otoimmün adrenalitten (genellikle kalsifikasyon görülmez) ayrımda önemlidir; ancak adrenal kanama, mantar enfeksiyonları ve bazı tümörlerde de görülebileceği unutulmamalıdır.</li></ul>"
+    },
+    {
+      "heading": "Klinik Seyir ve Tedavi Sonrası",
+      "text": "<p>Etkili anti-tüberküloz tedavi verilse bile adrenal fonksiyonların geri dönüşü <strong>nadirdir</strong>; ancak bazı vakalarda iyileşme bildirilmiştir. Bezdeki harabiyet genellikle kalıcıdır ve ömür boyu replasman gerektirir.</p>"
+    }
+  ]
+}

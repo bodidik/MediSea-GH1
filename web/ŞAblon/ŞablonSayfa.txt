@@ -1,0 +1,23 @@
+{
+  "title": "BURAYA EKRANDA GÖRÜNECEK ANA BAŞLIK GELECEK",
+  "meta": {
+    "updatedAt": "07 Mar 2026",
+    "tags": ["Branş Adı", "Kategori", "Anahtar Kelime 1", "Anahtar Kelime 2"],
+    "parent": "baglanacagi-baba-dosyanin-adi", 
+    "order": 1,
+    "summary": "Arama sonuçlarında ve liste önizlemelerinde görünecek kısa açıklama (SEO özeti)."
+  },
+  "summary": "Sayfa açıldığında en üstte o şık, mavi kutunun içinde görünecek olan genel konu özeti. Buraya HTML yazmana gerek yok, düz metin yeterli.",
+  "sections": [
+    {
+      "heading": "İlk Paragrafın Başlığı",
+      "text": "<p>Buraya içeriğin kendisi gelecek. İstersen <strong>kalın yazıları</strong> ve <ul><li>madde</li><li>işaretlerini</li></ul> bu şekilde HTML etiketleriyle zenginleştirebilirsin.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Sadece Hekimlere Özel Algoritma Başlığı",
+      "text": "<p>Buraya dozajlar, acil yaklaşımlar veya uzmanlık seviyesi bilgiler gelebilir.</p>",
+      "visibility": "M"
+    }
+  ]
+}

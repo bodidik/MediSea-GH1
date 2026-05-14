@@ -1,0 +1,23 @@
+{
+  "title": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
+  "meta": {
+    "updatedAt": "30 Nis 2026",
+    "tags": ["Farmakoloji", "Enfeksiyon Hastalıkları", "Dalbavansin", "Çapraz Duyarlılık", "DRESS", "SJS", "Daptomisin", "Linezolid", "YDUS"],
+    "parent": "dalbavansin-derleme",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "⚠️ Uzman Özeti: Yapısal Risk ve Gerçek Hayat Verisi",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700 mb-3\">Dalbavansin, yapısal özellikleri gereği glikopeptit (vankomisin, teikoplanin) ve diğer lipoglikopeptitlerle <strong>çapraz duyarlılık (cross-sensitivity)</strong> riski taşır. Tedavi öncesi aşırı duyarlılık öyküsü mutlaka taranmalıdır.</p><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-1\">Klinik Veriler Cesaret Verici mi?</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Çapraz duyarlılık riski yapısal bir gerçeklik olsa da, E-Sağlık kayıtlarında vankomisin alerjisi (IgE anafilaksi, gecikmiş döküntü veya infüzyon reaksiyonu) belgelenmiş 10 hastayı içeren bir incelemede, bu hastaların tamamı dalbavansin almış ve <strong>hiçbirinde yeni bir advers reaksiyon bildirilmemiştir.</strong></p></div>"
+    },
+    {
+      "heading": "1. Kritik YDUS Spotu: Uzun Yarı Ömür Dezavantajı",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-xs uppercase tracking-widest mb-3 flex items-center gap-2\">🚨 Avantajın Kâbusa Dönüştüğü An</h4><p class=\"text-[11.5px] leading-relaxed text-slate-200 mb-3\">Dalbavansin kullanımında uzmanlık ve sınav (YDUS) düzeyinde dikkat edilmesi gereken en kritik nokta uzun yarı ömür dezavantajıdır. İlacın tek veya iki dozluk uygulanabilmesini sağlayan bu muazzam yarı ömür, çapraz reaksiyona bağlı bir alerji durumunda <strong>büyük bir probleme dönüşebilir.</strong></p><p class=\"text-[11.5px] font-bold bg-slate-800/80 p-3 rounded-xl border border-slate-600 text-amber-300\">Çünkü alerjik semptomlar, ilaç kesildikten veya tedavi tamamlandıktan AYLAR SONRA BİLE devam edebilir.</p></div>"
+    },
+    {
+      "heading": "2. Klinik Yönetim ve Alternatif Antibiyotikler",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Kesin Kontrendikasyonlar</h4><p class=\"text-[11.5px] text-rose-800 leading-relaxed\">Vankomisin veya teikoplanine karşı; <strong>DRESS (Eozinofili ve Sistemik Semptomların Eşlik Ettiği İlaç Reaksiyonu) sendromu, Stevens-Johnson sendromu (SJS) veya ciddi IgE aracılı anafilaksi</strong> gibi şiddetli aşırı duyarlılık reaksiyonu öyküsü olanlarda, çapraz reaksiyon riski kesinlikle GÖZE ALINMAMALIDIR.</p></div><div class=\"bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-blue-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Güvenli Alternatiflere Geçiş</h4><p class=\"text-[11.5px] text-blue-800 leading-relaxed\">Bu tür yüksek riskli hastalarda, yapısal olarak glikopeptitlerle ilişkisi olmayan, farklı etki mekanizmalarına sahip <strong>Daptomisin (hücre zarı inhibitörü) veya Linezolid (protein sentez inhibitörü)</strong> gibi alternatif antibiyotik gruplarına yönelinmelidir.</p></div></div>"
+    }
+  ]
+}

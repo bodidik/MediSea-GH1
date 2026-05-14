@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "sistemik-lupus-eritematozus-sle-klinik-yonetim",
+    "title": "Sistemik Lupus Eritematozus (SLE)",
+    "section": "romatoloji",
+    "summary": "SLE, immün tolerans kaybı ve otoantikor üretimi ile karakterize kronik bir hastalıktır.",
+    "sections": [
+      {
+        "title": "Giriş",
+        "html": "<p>Sistemik Lupus Eritematozus (SLE), multisistemik otoimmün bir hastalıktır.</p>",
+        "visibility": "V"
+      }
+    ],
+    "references": []
+  }
+]

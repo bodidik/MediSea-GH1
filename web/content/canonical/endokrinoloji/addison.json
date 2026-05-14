@@ -1,0 +1,45 @@
+{
+  "title": "Addison Hastalığı (Primer Adrenal Yetmezlik)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": [
+      "Endokrin",
+      "Otoimmün",
+      "Hiperpigmentasyon",
+      "Adrenal Kriz",
+      "Kortizol"
+    ],
+    "parent": "adrenal-yetmezlik",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Tanım ve Genel Bilgiler",
+      "text": "<p><strong>Primer Adrenal Yetmezlik (Addison Hastalığı)</strong>, adrenal korteksin harabiyeti veya disfonksiyonu sonucu glukokortikoid (kortizol), mineralokortikoid (aldosteron) ve adrenal androjenlerin yetersiz üretimi ile karakterize, hayatı tehdit edebilen kronik bir durumdur. Kortizol eksikliği sonucu hipofizden salgılanan ACTH (Adrenokortikotropik Hormon) üzerindeki negatif geri bildirim kalkar ve plazma ACTH seviyeleri yükselir. Bu durum, santral (sekonder/tersiyer) adrenal yetmezlikten en önemli ayrım noktasıdır; zira santral formda mineralokortikoid üretimi genellikle korunur ve ACTH düşüktür.</p>"
+    },
+    {
+      "heading": "Etiyoloji (Nedenler)",
+      "text": "<p>Gelişmiş ülkelerde en sık neden <strong>otoimmün adrenalittir</strong> (%70-90).</p><ul><li><strong>Otoimmün Nedenler:</strong> İzole olabilir veya Otoimmün Poliglandüler Sendromların (APS Tip 1 veya Tip 2) bir parçası olarak görülebilir. Hastaların %80'inden fazlasında 21-hidroksilaz antikorları pozitiftir.</li><li><strong>Enfeksiyonlar:</strong> Tüberküloz (gelişmekte olan ülkelerde hala sıktır), mantar enfeksiyonları (histoplazmoz vb.), HIV/AIDS ve CMV adrenaliti.</li><li><strong>Genetik Nedenler:</strong> Konjenital Adrenal Hiperplazi (KAH), Adrenolökodistrofi (erkeklerde), Adrenal Hipoplazi.</li><li><strong>Diğer Nedenler:</strong> Bilateral adrenal kanama (antikoagülan kullanımı, sepsis/Waterhouse-Friderichsen), metastatik kanser (akciğer, meme, böbrek), infiltratif hastalıklar (amiloidoz, sarkoidoz) ve ilaçlar (Ketokonazol, Etomidat, İmmün Checkpoint İnhibitörleri).</li></ul>"
+    },
+    {
+      "heading": "Klinik Bulgular",
+      "text": "<p>Semptomlar genellikle sinsice başlar ve adrenal korteksin %90'ından fazlası harap olunca belirginleşir.</p><ul><li><strong>Genel Semptomlar:</strong> Halsizlik, yorgunluk ve bitkinlik (%100), iştahsızlık ve kilo kaybı (%100) en sık görülen bulgulardır. Bulantı, kusma ve karın ağrısı (%92) eşlik edebilir.</li><li><strong>Hiperpigmentasyon:</strong> Primer adrenal yetmezliğin en karakteristik fizik muayene bulgusudur (%94). Artan ACTH ve MSH (Melanosit Uyarıcı Hormon) seviyelerine bağlı olarak gelişir. Özellikle güneş gören bölgelerde, avuç içi çizgilerinde, diş etlerinde (bukkal mukoza), dirseklerde ve yara izlerinde koyulaşma görülür.</li><li><strong>Kardiyovasküler ve Metabolik:</strong> Hipotansiyon (özellikle ortostatik, %88-94) ve tuz açlığı (salt craving) (%16) mineralokortikoid eksikliğine işaret eder.</li><li><strong>Kadınlarda:</strong> Adrenal androjen eksikliğine bağlı olarak koltuk altı ve pubik kıllarda dökülme ve libido kaybı görülebilir.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar Bulguları",
+      "text": "<p>Tanısal ipuçları şunları içerir:</p><ul><li><strong>Elektrolit Bozuklukları:</strong> Hiponatremi (%88), Hiperkalemi (%64) (aldosteron eksikliğine bağlı, sekonder yetmezlikte görülmez), nadiren hiperkalsemi.</li><li><strong>Hematoloji:</strong> Normokromik anemi, eozinofili, lenfositozis.</li><li><strong>Hormonal Profil:</strong> Düşük sabah kortizolu, Yüksek plazma ACTH (>2 kat artış), Yüksek plazma renin aktivitesi (PRA) ve Düşük Aldosteron.</li></ul>"
+    },
+    {
+      "heading": "Tanı Yaklaşımı",
+      "text": "<p>Tanı için klinik şüphe esastır.</p><ol><li><strong>Tarama (Sabah Kortizolü):</strong> Sabah 06:00-09:00 arası ölçülür. <ul><li><strong>&lt;3 mcg/dL:</strong> Adrenal yetmezlik kuvvetle muhtemeldir.</li><li><strong>&gt;18 mcg/dL (veya yeni kitlerle &gt;14 mcg/dL):</strong> Adrenal yetmezlik dışlanır.</li><li><strong>3-18 mcg/dL arası:</strong> Ara değerdir, uyarı testi gerekir.</li></ul></li><li><strong>Doğrulama (ACTH Uyarı Testi):</strong> Altın standarttır. 250 mcg sentetik ACTH (Cosyntropin) verilir. 30. veya 60. dakikada kortizolün <strong>&gt;18 mcg/dL</strong> (veya yeni kitlerle &gt;14-15 mcg/dL) seviyesine çıkması gerekir. Yetersiz yanıt tanı koydurucudur.</li><li><strong>Etiyolojik Ayrım:</strong> Tanı doğrulandıktan sonra ACTH düzeyine bakılır. ACTH yüksekse <strong>Primer</strong> (Addison), düşük/normal ise <strong>Santral</strong> yetmezliktir. Primer yetmezlikte otoimmüniteyi doğrulamak için 21-hidroksilaz antikorlarına bakılır; negatifse adrenal BT çekilir.</li></ol>"
+    },
+    {
+      "heading": "Tedavi",
+      "text": "<p>Tüm hastalarda ömür boyu replasman tedavisi gerekir.</p><ul><li><strong>Glukokortikoid Replasmanı:</strong> Tercih edilen ajan <strong>Hidrokortizon</strong>dur (günde 15-25 mg). Sirkadiyen ritmi taklit etmek için bölünmüş dozlarda verilir (örn. sabah 2/3, öğleden sonra 1/3 veya 3 doz halinde). Alternatif olarak prednizolon (3-5 mg/gün) kullanılabilir.</li><li><strong>Mineralokortikoid Replasmanı:</strong> Primer adrenal yetmezlikte <strong>Fludrokortizon</strong> (0.05-0.2 mg/gün) eklenmelidir. Doz; kan basıncı, serum sodyum/potasyum ve plazma renin aktivitesine göre ayarlanır.</li><li><strong>Androjen Replasmanı:</strong> Standart tedaviye rağmen libido kaybı ve düşük enerji seviyesi devam eden kadın hastalarda DHEA (25-50 mg/gün) denenebilir.</li></ul>"
+    },
+    {
+      "heading": "Adrenal Kriz ve Yönetimi",
+      "text": "<p>Adrenal kriz, hayati tehdit eden acil bir durumdur. Tetikleyiciler arasında enfeksiyon, travma, cerrahi veya ilacın aniden kesilmesi yer alır.</p><p><strong>Acil Tedavi Protokolü:</strong></p><ol><li><strong>Sıvı Resüsitasyonu:</strong> Hemen damar yolu açılır ve ilk 1 saatte 1 litre izotonik (%0.9 NaCl) verilir. İlk 24 saatte toplam 2-3 litre sıvı gerekebilir. Hipoglisemi varsa %5 dekstroz eklenir.</li><li><strong>Steroid Tedavisi:</strong> 100 mg Hidrokortizon IV bolus yapılır. Takiben 24 saat boyunca her 6 saatte bir 50 mg (veya 200 mg/24 saat infüzyon) devam edilir. Hidrokortizon yoksa deksametazon verilebilir (test sonuçlarını etkilemez).</li><li><strong>Tetikleyicinin Tedavisi:</strong> Enfeksiyon gibi altta yatan neden bulunup tedavi edilmelidir.</li></ol><p><strong>Hasta Eğitimi (Sick Day Rules):</strong> Hastalar acil durum bilekliği taşımalıdır. Ateşli hastalıklarda günlük steroid dozu 2-3 katına çıkarılmalıdır (3x3 kuralı). Kusma/ishal durumunda parenteral (iğne) form kullanılmalıdır.</p>"
+    }
+  ]
+}

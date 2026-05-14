@@ -1,0 +1,19 @@
+
+{
+  "title": "Üst GİS Kanamaları",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Gastro", "Acil", "Kanama"],
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Etiyoloji (Nedenler)",
+      "text": "<p>En sık neden Peptik Ülser (%50) dir. Bunu Özofagus Varisleri ve Mallory-Weiss yırtıkları izler.</p>"
+    },
+    {
+      "heading": "Nadir Sebepler ve Ayırıcı Tanı",
+      "text": "<p>Eğer hastada açıklanamayan tekrarlayan kanamalar varsa, altta yatan bir koagülopati (pıhtılaşma bozukluğu) mutlaka sorgulanmalıdır. Özellikle genç erkek hastalarda <a href='/tr/topics/hematoloji/hemofili-a' class='text-blue-600 font-bold hover:underline decoration-2'>Hemofili A</a> veya vWD gibi kalıtsal hastalıklar akla gelmelidir.</p>"
+    }
+  ]
+}

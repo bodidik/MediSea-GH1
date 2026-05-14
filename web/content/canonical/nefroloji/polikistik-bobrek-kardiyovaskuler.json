@@ -1,0 +1,39 @@
+{
+  "title": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları",
+  "meta": {
+    "updatedAt": "27 Mar 2026",
+    "tags": ["Nefroloji", "ADPKD", "Kardiyovasküler", "LVH", "MVP", "KDIGO 2025", "SCAD"],
+    "parent": "polikistik-bobrek-ekstrarenal",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🫀 Sistematik Kardiyovasküler Tutuluma Giriş",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">ADPKD, izole bir böbrek hastalığı olmaktan ziyade, polikistin-1 (PC1) ve polikistin-2 (PC2) proteinlerinin kardiyovasküler sistem dahil olmak üzere vücuttaki yaygın ekspresyonu nedeniyle sistemik bir hastalıktır. <strong>Kardiyovasküler hastalıklar, ADPKD hastalarında en önde gelen morbidite ve mortalite (ölüm) nedenidir.</strong> Uzman düzeyinde ADPKD kardiyak tutulumu anatomik, yapısal ve klinik olarak spesifik alt başlıklar altında incelenir.</p>"
+    },
+    {
+      "heading": "1. Kapak Hastalıkları (Valvüler Patolojiler)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3\">Polikistin proteinleri, kalp kapakçıklarındaki kardiyak fibroblastlarda eksprese edilir ve bu proteinlerin fonksiyon kaybı, hücre dışı matrikste (ECM) anormalliklere yol açar.</p><ul class=\"list-disc pl-5 mt-2 space-y-2 text-sm text-slate-700\"><li><strong>Mitral Kapak Prolapsusu (MVP) ve Aort Yetersizliği:</strong> Ekokardiyografik çalışmalarda eskiden %25-30 olarak bildirilen kapak anormallikleri (en sık MVP ve aort kökü dilatasyonuna sekonder aort yetersizliği), güncel ve katı kriterlerle yapılan çalışmalarda çocuklarda %1, yetişkinlerde %3.4 civarında (genel popülasyonla benzer) bulunmuştur.</li><li><strong>Histopatoloji:</strong> Etkilenen kapak dokusu incelendiğinde, Marfan ve Ehlers-Danlos sendromlarında görülenlere benzer şekilde, kollajen liflerinin bütünlüğünün bozulduğu ve <strong class=\"text-indigo-700\">miksoid dejenerasyon</strong> olduğu saptanır.</li><li><strong>Klinik Seyir:</strong> Çoğu hasta asemptomatiktir ve üfürüm harici bulgu vermez. Kapak replasmanı gerektirecek kadar şiddetli hemodinamik bozukluk yaratmaları nadirdir.</li></ul> "
+    },
+    {
+      "heading": "2. Sol Ventrikül Hipertrofisi (LVH)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3\">Sol ventrikül hipertrofisi, ADPKD'de en sık karşılaşılan ve kardiyovasküler riski doğrudan artıran yapısal kalp değişikliklerinden biridir.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl text-sm space-y-3\"><p><strong>Prevalans ve Patofizyoloji:</strong> İleri evre KBH hastaları karşılaştırıldığında, ADPKD'si olmayanlarda %55 olan LVH oranı, ADPKD hastalarında <strong>%65'tir</strong>. Temel mekanizma, böbrek kistlerinin lokal iskemi yaratarak Renin-Anjiyotensin-Aldosteron Sistemini (RAAS) aktive etmesi ve erken yaşta ortaya çıkan hipertansiyondur. LVH, normotansif çocuklarda bile saptanabilmektedir, bu da kardiyovasküler hasarın çok erken başladığını gösterir.</p><p><strong>Klinik Yönetim:</strong> Genç ve böbrek fonksiyonu korunmuş (eGFR >60) hastalarda uygulanan sıkı kan basıncı kontrolünün <strong class=\"text-rose-800\">(hedef <110/75 mmHg - HALT-PKD çalışması)</strong> ve ilk seçenek olarak <strong>ACE inhibitörleri (ACEi) veya Anjiyotensin Reseptör Blokerleri (ARB)</strong> kullanılmasının sol ventrikül kütle indeksini (LVMI) belirgin şekilde azalttığı ve gerilettiği kanıtlanmıştır.</p></div> "
+    },
+    {
+      "heading": "3. Perikardiyal Efüzyon",
+      "html": "<p class=\"text-sm leading-relaxed\">ADPKD hastalarında genellikle rutin veya diğer nedenlerle çekilen BT ve MRG taramalarında sıklıkla asemptomatik perikardiyal efüzyonlar saptanır. Çeşitli çalışmalarda bu durumun genel popülasyona kıyasla çok daha yüksek bir oranda <strong>(%20 ila %35)</strong> bulunduğu görülmüştür. Sıvı miktarı bazen orta-ciddi boyuta ulaşabilse de, hastalarda bu efüzyonlar çok iyi tolere edilir ve son derece nadir kardiyak tamponad vakaları dışında klinik olarak hemodinamik bir probleme yol açmazlar; spesifik bir drenaj gerektirmezler.</p>"
+    },
+    {
+      "heading": "4. Koroner Arter Anomalileri ve Spontan Diseksiyon",
+      "html": "<ul class=\"list-none space-y-3 text-sm text-slate-700\"><li>🔍 <strong>Koroner Anevrizmalar ve Ektazi:</strong> Aterosklerotik hastalık olmaksızın koroner arter anevrizmaları ve ektazik damar lezyonları bildirilmiştir.</li><li>🚨 <strong class=\"text-rose-700\">Spontan Koroner Arter Diseksiyonu (SCAD):</strong> Özellikle genç kadın hastalarda nadir de olsa görülebilen, akut koroner sendrom / miyokard enfarktüsü tablosu ile acile başvuruya neden olan hayatı tehdit edici bir komplikasyondur. Damar düz kası ve endotelindeki polikistin defektinin damar duvarı mekanik bütünlüğünü bozmasına bağlanır.</li></ul>"
+    },
+    {
+      "heading": "5. Kardiyomiyopatiler ve Konjenital Kalp Anomalileri",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Kardiyomiyopatiler</h4><p class=\"text-xs text-slate-600 leading-relaxed\">İdiyopatik kardiyomiyopatilerin (dilatasyonlu, hipertrofik [%2.5] ve sol ventrikül non-kompaksiyonu [%0.3]) görülme sıklığı ADPKD hastalarında beklenenden biraz daha yüksektir.</p></div><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Konjenital & Lateralite Defektleri</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Özellikle <strong>PKD2</strong> mutasyonu taşıyan az sayıda vakada <em>dekstrokardi, situs inversus totalis</em> gibi lateralite defektlerinin yanı sıra, soldan sağa şantlar ve aort koarktasyonu bildirilmiştir (polikistinlerin silyer nodal akışı yönlendirmedeki rolüne bağlı olarak).</p></div></div>"
+    },
+    {
+      "heading": "📋 KDIGO 2025: Klinik Tarama ve Görüntüleme Önerileri",
+      "html": "<div class=\"bg-indigo-50 border border-indigo-200 p-5 rounded-2xl\"><p class=\"text-sm font-medium text-indigo-900 mb-3\">Uzman kılavuzlarına göre, her ADPKD hastasına rutin tarama ekokardiyografisi yapılması <strong>ÖNERİLMEZ</strong>. Ancak aşağıdaki risk faktörlerini taşıyan hastalarda ekokardiyografik değerlendirme (başlangıçta ve sonrasında aralıklı olarak) <strong>mutlaka sunulmalıdır:</strong></p><ol class=\"list-decimal pl-5 space-y-2 text-sm font-bold text-indigo-800\"><li>Fizik muayenede üfürüm duyulması veya kalp yetmezliği semptomlarının varlığı,</li><li>Şiddetli veya ilaçlara dirençli, kontrolsüz hipertansiyon öyküsü,</li><li>Ailede torasik aort anevrizması (TAA) veya iskemik olmayan kardiyomiyopati öyküsü bulunması.</li></ol></div>"
+    }
+  ]
+}

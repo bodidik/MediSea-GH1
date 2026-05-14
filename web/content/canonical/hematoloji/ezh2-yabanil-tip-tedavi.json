@@ -1,0 +1,31 @@
+{
+  "title": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "EZH2 Wild-Type", "Bispesifik Antikorlar", "CAR-T", "PI3K"],
+    "parent": "folikuler-lenfoma",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "Genel Durum ve Tedavi Yaklaşımı",
+      "html": "<p>EZH2 mutasyonu (örn. Y646, A682, A692) taşımayan (yabanıl tip/wild-type) relaps veya refrakter (R/R) foliküler lenfoma (FL) vakalarında tedavi seçimi; önceki alınan tedavilere, remisyon süresine ve hastanın performans statüsüne göre belirlenir. Yeni nesil immünoterapiler ve kemoterapisiz (<em>chemo-free</em>) kombinasyonlar bu grupta ana tedavi şemasını oluşturur.</p>"
+    },
+    {
+      "heading": "İmmünoterapiler: Bispesifik Antikorlar ve CAR-T",
+      "html": "<p><strong>Bispesifik Antikorlar (BsAb):</strong> T-hücre yönlendirici (CD3xCD20 hedefli) bispesifik antikorlar olan <em>Mosunetuzumab, Epcoritamab</em> ve <em>Odronextamab</em>, EZH2 mutasyon durumundan bağımsız olarak çoklu nüks hastalarda oldukça etkilidir. Yaklaşık %80 Genel Yanıt Oranı (ORR) sunarlar. Hazır (off-the-shelf) bulunabilirlikleri ve üretim süresi gerektirmemeleri nedeniyle hücresel tedavilere alternatif veya köprüleyici güçlü seçeneklerdir.</p><p><strong>CAR-T Hücre Tedavileri:</strong> <em>Aksikabtagen siloleusel, Tisagenlekleusel</em> ve <em>Lisokabtagen maraleusel</em>, hücresel terapiye (anti-CD19) uygun, en az iki basamak tedavi almış veya erken kür başarısızlığı gösteren yüksek riskli EZH2 WT hastalar için %90'ları aşan ORR ile çok uzun süreli remisyon hedefleyen küratif potansiyelli seçeneklerdir.</p>"
+    },
+    {
+      "heading": "Hedefe Yönelik Diğer Kombinasyonlar",
+      "html": "<p><strong>BTK İnhibitör Kombinasyonları:</strong> <em>İbrutinib</em> monoterapisi FL'de düşük yanıt oranlarına (%21-38) sahip olup önerilmezken; bir diğer BTK inhibitörü <em>Zanubrutinib</em>'in <em>Obinutuzumab</em> ile kombinasyonu (ROSEWOOD çalışması) en az iki seri sistemik tedavi almış R/R FL hastalarında etkinliğini kanıtlamıştır ve kılavuz onaylı bir hedefe yönelik seçenektir.</p><p><strong>Lenalidomid Tabanlı Rejimler:</strong> İmmünomodülatör ajan <em>Lenalidomid</em> ile <em>Rituksimab</em> kombinasyonu (R2) temel seçeneklerden biridir. Son dönemde etkinliği artırmak amacıyla R2 rejimine anti-CD19 monoklonal antikoru <em>Tafasitamab</em> veya bispesifik antikor <em>Epcoritamab</em>'ın eklenmesi de nüks vakalarda progresyonsuz sağkalımı (PFS) artıran güçlü stratejiler arasına girmiştir.</p><p><strong>Antikor-İlaç Konjugatları (ADC):</strong> Anti-CD19 hedefli <em>Loncastuximab tesirine</em> (rituksimab ile kombine) veya anti-CD79b hedefli <em>Polatuzumab vedotin</em>, çoklu nüks ve dirençli vakalarda (off-label veya dahil olunan çalışmalar kapsamında) yönetilebilir profilleriyle kullanılabilecek alternatiflerdir.</p>"
+    },
+    {
+      "heading": "Tazemetostat'ın EZH2 Yabanıl Tip (WT) Kullanımı",
+      "html": "<p><em>Tazemetostat</em> (EZH2 inhibitörü) öncelikli olarak EZH2 mutant kohortta konumlanmış olsa da, FDA tarafından 'tatmin edici alternatif bir tedavi seçeneği kalmayan' EZH2 yabanıl tip R/R FL hastaları için de onaylıdır. Mutant grupta %69 ORR ve 14 ay PFS elde edilirken, yabanıl tip grupta %35 ORR (sadece %4 Tam Yanıt) ve 11 ay PFS bildirilmiştir. Bu nedenle EZH2 WT olgularda ilk sıralarda tercih edilmese de frajil hastalarda toksisite/fayda oranı gözetilerek oral bir seçenek olarak denenebilir.</p>"
+    },
+    {
+      "heading": "Klinik Uyarı: PI3K İnhibitörlerinin Durumu",
+      "html": "<p>⚠️ <strong>PI3K İnhibitörlerinin Durumu:</strong> Tarihsel olarak R/R FL yönetiminde onay almış olan PI3K inhibitörleri (<em>Idelalisib, Copanlisib, Duvelisib, Umbralisib</em>), başlangıçtaki etkinliklerine rağmen uzun dönem takipte artan toksisite profilleri (özellikle ölümcül enfeksiyon riskleri) ve olumsuz risk-fayda dengeleri nedeniyle üreticileri tarafından FL endikasyonlarından <strong>gönüllü olarak geri çekilmiştir</strong>.</p>"
+    }
+  ]
+}

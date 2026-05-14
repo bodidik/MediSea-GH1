@@ -1,0 +1,15 @@
+{
+  "title": "Mantle Hücreli Lenfoma (MCL)",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "t(11;14)", "Siklin D1"],
+    "parent": "nhl-genel",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "Tanısal Özellikler",
+      "text": "<p>B-hücreli lenfomaların %5-10'unu oluşturur. Patognomonik bulgusu <strong>t(11;14)</strong> translokasyonu sonucu <strong>Siklin D1 (Cyclin D1)</strong> pozitifliğidir. Genellikle tanıda yaygın evredir (Kemik iliği ve GİS tutulumu sıktır).</p>"
+    }
+  ]
+}

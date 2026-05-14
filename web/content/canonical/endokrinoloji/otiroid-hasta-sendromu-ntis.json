@@ -1,0 +1,27 @@
+{
+  "title": "Ötiroid Hasta Sendromu",
+  "meta": {
+    "updatedAt": "07 May 2026",
+    "tags": ["Endokrinoloji", "Yoğun Bakım", "NTIS", "Düşük T3 Sendromu", "rT3", "Deiyodinaz", "YDUS"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 10
+  },
+  "sections": [
+    {
+      "heading": "🔬 1. Tanım ve Patofizyolojik Mekanizmalar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ötiroid Hasta Sendromu (NTIS), altta yatan sistemik bir hastalığa (enfeksiyon, cerrahi, travma, açlık) ikincil olarak tiroid aksında meydana gelen değişikliklerdir. Bu durum tiroid bezinin primer bir hastalığı değil, vücudun şiddetli strese karşı geliştirdiği bir adaptasyon mekanizmasıdır.</p><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Moleküler Temel: Deiyodinaz Disfonksiyonu</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Hastalığın temelinde <strong>sitokin fırtınası (IL-6, TNF-&alpha;)</strong> ve oksidatif stres yer alır:</p><ul class=\"text-[11px] text-indigo-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Tip 1 ve Tip 2 Deiyodinaz İnhibisyonu:</strong> Periferik dokularda T4'ün aktif T3'e dönüşümü azalır (Düşük T3 sendromu).</li><li><strong>Tip 3 Deiyodinaz Aktivasyonu:</strong> T4'ün inaktif <strong>revers T3 (rT3)</strong>'e dönüşümü artar.</li><li><strong>Santral Baskılanma:</strong> İleri evrelerde TRH ve TSH sekresyonu da hipotalamik düzeyde baskılanır.</li></ul></div>"
+    },
+    {
+      "heading": "📊 2. Laboratuvar Evreleri ve Dinamik Seyir",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Evre 1: Düşük T3 Sendromu (En Sık)</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Hafif-orta şiddetli hastalıklarda görülür. <strong>Total ve Serbest T3 düşük, rT3 yüksek, TSH ve T4 normaldir.</strong></p></div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Evre 2: Düşük T3 - Düşük T4 Sendromu</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Hastalık şiddeti arttıkça (yoğun bakım hastaları) T4 düzeyi de düşmeye başlar. Bu evrede <strong>mortalite %80'lere ulaşabilir.</strong> TSH genellikle düşük veya normal sınırdadır.</p></div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Evre 3: İyileşme (Rebound) Dönemi</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Hasta iyileşirken TSH düzeyi hafif yükselebilir (<strong>&lt;20 mU/L</strong>). Bu durum sıklıkla <em>primer hipotiroidi ile karıştırılır</em>; ancak sT4 normalse tedavi gerektirmez.</p></div></div>"
+    },
+    {
+      "heading": "🔍 3. Ayırıcı Tanı ve Kritik Gösterge: rT3",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-amber-400 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">Primer/Santral Hipotiroidi Ayrımı</h4><p class=\"text-[11.5px] text-slate-200 leading-relaxed mb-3\">NTIS'i primer veya santral hipotiroididen ayıran en değerli parametre <strong>Revers T3 (rT3)</strong> düzeyidir.</p><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><table class=\"w-full text-[11px] text-left text-slate-300\"><thead><tr class=\"border-b border-slate-700 text-amber-300\"><th>Parametre</th><th>NTIS</th><th>Hipotiroidi</th></tr></thead><tbody><tr class=\"border-b border-slate-700\"><td><strong>rT3</strong></td><td class=\"text-emerald-400 font-bold\">Artmış</td><td class=\"text-rose-400 font-bold\">Azalmış</td></tr><tr class=\"border-b border-slate-700\"><td><strong>TSH</strong></td><td>Normal / Düşük</td><td class=\"text-rose-400 font-bold\">Yüksek / Uygunsuz Düşük</td></tr><tr><td><strong>sT4</strong></td><td>Normal / Düşük</td><td class=\"text-rose-400 font-bold\">Düşük</td></tr></tbody></table></div></div>"
+    },
+    {
+      "heading": "💊 4. Klinik Yönetim ve Tedavi Yaklaşımı",
+      "html": "<div class=\"bg-emerald-900 border border-emerald-700 p-5 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-emerald-300 text-[12px] uppercase tracking-widest mb-2 flex items-center gap-2\">🚨 Tedavi Gereksizliği</h4><p class=\"text-[11.5px] text-emerald-100 leading-relaxed\">NTIS tablosunda levotiroksin (LT4) veya T3 replasmanının sağkalım üzerinde olumlu etkisi saptanmamıştır. <strong>Rutin hormon replasmanı önerilmez.</strong></p><ul class=\"text-[11px] text-emerald-100 space-y-2 list-disc list-inside mt-3 ml-1\"><li>Tedavinin temeli <strong>altta yatan asıl hastalığın</strong> (sepsis, KKY, vb.) düzeltilmesidir.</li><li>Dopamin ve glukokortikoidler TSH'ı baskılayarak tabloyu ağırlaştırabilir, dikkat edilmelidir.</li><li>Hastalık iyileştikçe tiroid aksı kendiliğinden normale döner.</li></ul></div>"
+    }
+  ]
+}

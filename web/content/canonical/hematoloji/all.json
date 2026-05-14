@@ -1,0 +1,35 @@
+{
+  "title": "Akut Lenfoblastik Lösemi (ALL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "ALL", "Akut Lenfoblastik Lösemi", "Blinatumomab", "CAR-T", "MRD", "Yapay Zeka Taslağı"],
+    "parent": "losemiler",
+    "order": 15
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Prezantasyon",
+      "html": "<p><strong>Akut Lenfoblastik Lösemi (ALL)</strong>, B veya T lenfoid öncül hücrelerinin (lenfoblastların) kemik iliği, periferik kan ve ekstramedüller organlarda klonal proliferasyonuyla karakterize agresif bir hematolojik malignitedir. Olguların %80-85'i <strong>B-ALL</strong>, %15-20'si ise <strong>T-ALL</strong> kökenlidir.</p><p><strong>Klinik Bulgular:</strong> Kemik iliği yetmezliğine bağlı anemi (yorgunluk), nötropeni (enfeksiyon) ve trombositopeni (kanama) bulgularıyla başvurur. ALL, AML'ye kıyasla <strong>ekstramedüller tutulumu</strong> (özellikle Santral Sinir Sistemi [SSS] ve testisler) çok daha sık yapar. Hastalarda yaygın lenfadenopati, hepatosplenomegali ve şiddetli kemik ağrıları görülür. T-ALL vakaları sıklıkla genç erkeklerde <strong>büyük mediastinal kitle</strong> (vena kava süperior sendromu, plevral efüzyon) ve yüksek lökosit sayısıyla prezante olur.</p>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım ve İmmünofenotipleme",
+      "html": "<p>Tanı için kemik iliğinde (veya periferik kanda) <strong>>%20 lenfoblast</strong> saptanması gereklidir. Lenfoblastlar morfolojik olarak dar sitoplazmalı, belirsiz nükleollü hücrelerdir. Myeloperoksidaz (MPO) negatiftirler.</p><ul class=\"mb-4\"><li><strong>B-ALL Akım Sitometrisi (Flow):</strong> Erken dönem (immatür) belirteci olan <strong>TdT</strong> ve <strong>CD34</strong> sıklıkla pozitiftir. Pan-B hücre belirteçleri olan <strong>CD19, CD22, CD79a</strong> ve PAX5 tanısaldır.</li><li><strong>T-ALL Akım Sitometrisi:</strong> TdT ve CD34 pozitifliğine ek olarak, sitoplazmik/yüzey <strong>CD3 (en spesifik)</strong>, CD7 (en duyarlı) ve CD5 pozitifliği izlenir. MPO ve B-hücre belirteçleri negatiftir. <em>Erken T-hücreli Prekürsör (ETP-ALL)</em> alt tipi ise CD1a ve CD8 negatifliği, myeloid/kök hücre belirteçleri (CD13, CD33, CD34) ekspresyonu ile karakterize olup kemoterapiye daha dirençlidir.</li></ul>"
+    },
+    {
+      "heading": "Genetik Sınıflandırma ve Risk Stratifikasyonu",
+      "html": "<p>Karyotip ve moleküler genetik, ALL'de prognozu belirleyen en temel faktördür.</p><p><strong>Kötü Prognostik Genetik Faktörler:</strong></p><ul class=\"mb-4\"><li><em>t(9;22) BCR::ABL1 (Philadelphia [Ph] kromozomu):</em> Erişkin B-ALL'de en sık (%25-30) görülen mutasyondur. Tirozin Kinaz İnhibitörleri (TKI) kullanımından önce en ölümcül gruptu.</li><li><em>Ph-like (Ph-benzeri) ALL:</em> Ph kromozomu <strong>yoktur</strong>, ancak gen ekspresyon profili Ph+ ALL'ye çok benzer (sıklıkla CRLF2, JAK2, ABL sınıfı füzyonlar). Standart kemoterapiye dirençlidir, Ruxolitinib veya Dasatinib eklenebilir.</li><li><em>KMT2A (MLL) Rearranjmanları t(4;11):</em> Özellikle infant (bebek) ALL'de sıktır, SSS tutulumu fazladır ve prognozu çok kötüdür.</li><li><em>Hipodiploidi:</em> (<44 kromozom) Çok yüksek riskli gruptur.</li></ul><p><strong>İyi Prognostik Faktörler (Daha çok çocuklarda):</strong> <em>ETV6::RUNX1 t(12;21)</em> ve Hiperdiploidi (51-65 kromozom).</p>"
+    },
+    {
+      "heading": "MRD (Ölçülebilir Kalıntı Hastalık) Kavramı",
+      "html": "<p>Klinik ve genetik faktörlerden (yaş, lökosit sayısı) bağımsız olarak, ALL'de sağkalımı belirleyen <strong>en kritik prognostik faktör MRD'dir</strong>. İndüksiyon (veya konsolidasyon) sonrası çok renkli akım sitometrisi (MFC) veya PCR (Ig/TCR gen rearranjmanları) ile 10^-4 ile 10^-6 duyarlılıkta hastalık taranır. <strong>MRD pozitifliği, relapsın en güçlü habercisidir</strong> ve tedavi stratejisini (örn. Blinatumomab'a geçiş veya allo-HSCT kararı) doğrudan değiştirir.</p>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve İmmünoterapi Devrimi",
+      "html": "<p>Erişkin ALL tedavisi indüksiyon, konsolidasyon ve uzun süreli idame (toplam 2-3 yıl) fazlarından oluşur. Genç erişkinlerde (AYA grubu, <40 yaş) <strong>pediatrik ilhamlı (pediatric-inspired) protokoller</strong> sağkalımı dramatik olarak artırmıştır. SSS profilaksisi (intratekal MTX/Sitarabin) tedavinin ayrılmaz bir parçasıdır.</p><p><strong>Ph-Pozitif (Ph+) ALL Tedavisi:</strong> Kemoterapi omurgasına mutlaka bir <strong>TKI (İmatinib, Dasatinib veya Ponatinib)</strong> eklenir. Günümüzde <em>Ponatinib + Blinatumomab</em> gibi kemoterapisiz (chemo-free) veya düşük yoğunluklu rejimler mükemmel derin moleküler yanıtlar sağlamaktadır.</p><p><strong>Relaps/Refrakter (R/R) ALL'de İmmünoterapi:</strong></p><ul class=\"mb-4\"><li><strong>Blinatumomab:</strong> CD19 ve CD3'ü bağlayan BiTE (Bispecific T-cell Engager) antikorudur. Hastanın kendi T hücrelerini lösemi hücrelerine yönlendirir. MRD pozitif hastalarda ve R/R B-ALL'de standarttır.</li><li><strong>İnotuzumab ozogamisin:</strong> Sitotoksik bir ajan (kalikeamisin) taşıyan <strong>anti-CD22</strong> antikor-ilaç konjugatıdır (ADC). Veno-oklüzif hastalık (VOD) riski (özellikle kök hücre nakli öncesi/sonrası) akılda tutulmalıdır.</li><li><strong>CAR-T Hücre Tedavileri:</strong> <em>Tisagenlecleucel</em> ve <em>Brexucabtagene autoleucel</em>, CD19 hedefli genetiği değiştirilmiş T hücreleridir. R/R B-ALL'de %80'leri aşan remisyon oranları ile devrim yaratmıştır.</li></ul>"
+    }
+  ]
+}

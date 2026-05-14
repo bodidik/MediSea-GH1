@@ -1,0 +1,35 @@
+{
+  "title": "Adrenal İnsidentaloma Yaklaşımı",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Adrenal", "İnsidentaloma", "Adrenokortikal CA", "Hounsfield"],
+    "parent": "adrenal-bez-hastaliklari",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 ESE Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve İlk Adım",
+      "html": "<p>Adrenal hastalık şüphesi yokken başka bir nedenle yapılan görüntülemede saptanan ≥1 cm kitlelerdir. <strong>İlk kural:</strong> Tüm insidentalomalar hormonal olarak taranmalı ve radyolojik olarak malignite açısından değerlendirilmelidir.</p>"
+    },
+    {
+      "heading": "1. Radyolojik Değerlendirme (Benign vs. Malign)",
+      "html": "<p>BT özellikleri bize kitlenin kimliğini söyler:</p><ul class=\"mb-4\"><li><strong>Benign (Adenom) Lehine:</strong> Hounsfield Ünitesi (HU) <strong>< 10</strong> (yağdan zengin), homojen, düzgün sınırlı ve hızlı kontrast boşalımı (washout > %60).</li><li><strong>Malign (ACC/Metastaz) Lehine:</strong> HU <strong>> 20</strong>, heterojen, kalsifikasyon içeren, düzensiz sınırlı ve yavaş kontrast boşalımı.</li><li><strong>Boyut:</strong> 4 cm'nin üzerindeki kitlelerde malignite riski belirgin artar.</li></ul>"
+    },
+    {
+      "heading": "2. Fonksiyonel Değerlendirme (Hormon Taraması)",
+      "html": "<p>Hasta asemptomatik olsa bile şu üç tarama <strong>şarttır</strong>:</p><ul class=\"mb-4\"><li><strong>Cushing Taraması:</strong> 1 mg Deksametazon Baskılama Testi (en kritik test).</li><li><strong>Feokromositoma Taraması:</strong> Plazma veya idrar metanefrinleri.</li><li><strong>Conn Taraması (Sadece hipertansifse):</strong> Aldosteron/Renin oranı.</li></ul>"
+    },
+    {
+      "heading": "MACS (Mild Autonomous Cortisol Secretion)",
+      "html": "<p>Modern terminolojide 'Subklinik Cushing' yerine kullanılır. Belirgin klinik bulgu yoktur ama 1 mg DST sonrası kortizol 1.8 - 5.0 µg/dL arasındadır. Bu hastalar diyabet ve hipertansiyon açısından risk altındadır.</p>"
+    },
+    {
+      "heading": "Cerrahi Endikasyonları (Adrenalektomi)",
+      "html": "<ul class=\"mb-4\"><li>Hormonal olarak aktif olduğu kanıtlanan kitleler (Feokromositoma, Conn, belirgin Cushing).</li><li>Radyolojik olarak şüpheli (HU > 20) veya 4 cm'den büyük kitleler.</li><li>İzlemde boyutu >1 cm artan kitleler.</li></ul>"
+    }
+  ]
+}

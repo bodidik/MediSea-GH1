@@ -1,0 +1,35 @@
+{
+  "title": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi",
+  "meta": {
+    "updatedAt": "29 Nis 2026",
+    "tags": ["Mikrobiyoloji", "Enfeksiyon Hastalıkları", "CR-hvKP", "Metastaz", "Endoftalmi", "Karaciğer Apsesi", "Klinik İzlem"],
+    "parent": "cr-hvkp-hipervirulan-varyant",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🔍 Uzman Özeti: Fokal Başlangıç, Sistemik Yıkım",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700 mb-2\">Hipervirülan <em>Klebsiella pneumoniae</em> (hvKP) ve karbapenem dirençli varyantı (CR-hvKP), tipik olarak primer piyojenik karaciğer apsesi ile başlasa da kanda dolaşarak (bakteriyemi) vücudun diğer bölgelerine sıçrama <strong>(metastatik yayılım)</strong> kapasitesiyle bilinir.</p><p class=\"text-sm font-medium leading-relaxed text-slate-700\">Bu yayılımın izlenmesi, hastanın klinik semptomlarının yakından takibi ve şüpheli bölgelere yönelik spesifik radyolojik görüntüleme yöntemlerinin (BT, MRG, USG) entegre edilmesiyle yapılır.</p>"
+    },
+    {
+      "heading": "1. Göz Tutulumu (Endoftalmi)",
+      "html": "<div class=\"bg-blue-50 border-l-4 border-blue-500 p-5 shadow-sm mb-4\"><h4 class=\"font-black text-blue-900 text-[12px] uppercase mb-2\">Klinik İzlem ve Görme Kaybı Riski</h4><p class=\"text-[11.5px] text-blue-800 leading-relaxed mb-3\">Endojen endoftalmi, hvKP'nin en yıkıcı metastatik komplikasyonlarından biridir ve hızla <strong>kalıcı görme kaybına</strong> yol açabilir. <em>K. pneumoniae</em> enfeksiyonu olan bir hastada tek/çift taraflı görme azalması, bulanık görme, kızarıklık veya göz ağrısı şikayetleri aktif olarak sorgulanmalıdır.</p><div class=\"bg-white p-3 rounded-xl border border-blue-200\"><strong class=\"text-[11px] text-blue-900 uppercase tracking-widest block mb-1\">Karşılıklı Tarama Kuralı (YDUS Spotu)</strong><span class=\"text-[11px] text-slate-700\">Eğer bir hastada ilk bulgu olarak <em>K. pneumoniae</em> endoftalmisi saptanırsa, bakterinin ana kaynağı olabilecek <strong>gizli bir karaciğer apsesi mutlaka radyolojik olarak taranmalıdır.</strong></span></div></div>"
+    },
+    {
+      "heading": "2. Santral Sinir Sistemi (Menenjit ve Beyin Apsesi)",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-purple-50 border border-purple-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-purple-900 text-[11px] uppercase mb-2\">Nörolojik İzlem</h4><p class=\"text-[11px] text-purple-800 leading-relaxed\">Hastalarda pürülan menenjit, ventrikülit veya subdural ampiyem gelişebilir. <strong>Ateş, bilinç değişikliği, kusma, nöbetler ve ense sertliği</strong> gibi yeni gelişen nörolojik bulgular yakından takip edilir.</p></div></div><div><div class=\"bg-purple-50 border border-purple-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-purple-900 text-[11px] uppercase mb-2\">Radyolojik Tarama</h4><p class=\"text-[11px] text-purple-800 leading-relaxed\">Nörolojik bulgu gelişen hastalarda <strong>Beyin BT ve MRG</strong> kullanılır. Bu yöntemler hidrosefali, ventrikülit veya subdural efüzyon gibi metastatik odakları ortaya çıkarır.</p></div></div></div>"
+    },
+    {
+      "heading": "3. Akciğer ve Plevra (Pulmoner Metastaz)",
+      "html": "<div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Hematojen Akciğer Apsesi ve Ampiyem</h4><p class=\"text-[11.5px] text-sky-800 leading-relaxed\">Karaciğer apsesi olan hastalarda kan yoluyla akciğer apseleri veya plevral enfeksiyonlar gelişebilir. Hastalar öksürük, ateş, nefes darlığı ve plevral göğüs ağrısı gibi klinik bulgular açısından izlenirken; kesin tanı ve apse takibi <strong>Akciğer Grafisi ve Toraks BT</strong> kullanılarak yapılır.</p></div>"
+    },
+    {
+      "heading": "4. Kas, İskelet Sistemi ve Yumuşak Doku",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-rose-900 text-[12px] uppercase mb-1 flex items-center gap-2\">Piyomiyozit ve Nekrotizan Fasiit</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Kan dolaşımındaki bakteriler kas dokusuna yerleşerek kas apsesine (piyomiyozit) veya çok daha hızlı ilerleyen nekrotizan fasiite (et yiyen bakteri tablosu) yol açabilir. Etkilenen bölgede şiddetli ağrı, şişlik ve eritem günlük olarak izlenir. Bazen ciltte kızarıklık olmadan da <strong>hastanın dayanılmaz ağrı tarif etmesi ilk belirti olabilir.</strong></p></div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-1\">Osteomiyelit, Septik Artrit ve Görüntüleme</h4><p class=\"text-[11.5px] text-slate-700 leading-relaxed\">Kan yoluyla omurgada (vertebral osteomiyelit, epidural apse) veya büyük eklemlerde enfeksiyon gelişebilir. Eklem boşluklarında <strong>gaz oluşumu</strong> görülebilir. Derin doku apseleri, kemik enfeksiyonları ve spinal metastazların yerini tespit etmek için BT veya MRG taramaları şarttır.</p></div></div>"
+    },
+    {
+      "heading": "5. Diğer Karın İçi Organlar ve Genel İzlem Stratejisi",
+      "html": "<div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Böbrek, Dalak ve Mikotik Anevrizmalar</h4><p class=\"text-[11.5px] text-amber-800 leading-relaxed mb-3\">Hastalarda dalak apsesi (sol üst kadran ağrısı), böbrek/prostat apseleri veya enfekte damar genişlemesi olan mikotik anevrizmalar gelişebilir. Bu organların izlenmesi için rutin abdominal ultrasonografi ve BT kullanılır.</p><div class=\"bg-white p-4 rounded-xl border border-amber-200\"><h4 class=\"font-black text-slate-900 text-[12px] uppercase tracking-widest mb-2\">Genel İzlem Algoritması</h4><p class=\"text-[11.5px] text-slate-700 leading-relaxed\">Nedeni bilinmeyen (veya kaynağı bulunamayan) bir <em>K. pneumoniae</em> bakteriyemisinde, hasta uygun antibiyotiği almasına rağmen <strong>ateşi düşmüyorsa</strong>, sessiz bir karaciğer apsesi ve ona eşlik eden metastatik organ tutulumlarını aramak için <strong>derhal batın ultrasonografisi veya tomografisi yapılmalıdır.</strong></p></div></div>"
+    }
+  ]
+}

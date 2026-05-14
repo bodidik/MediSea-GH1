@@ -1,0 +1,31 @@
+{
+  "title": "İmmün Aracılı Nekrotizan Miyopati (IMNM)",
+  "meta": {
+    "updatedAt": "03 Nis 2026",
+    "tags": ["Farmakoloji", "SAMS", "IMNM", "Otoimmün", "Anti-HMGCR", "Miyopati"],
+    "parent": "farmakoloji-statin-miyopatisi-sams",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🚨 YDUS Kritik Uyarı: IMNM (Red Code)",
+      "html": "<div class=\"bg-rose-900 border border-rose-700 p-6 rounded-2xl shadow-2xl relative overflow-hidden text-white\"><div class=\"absolute right-0 top-0 w-40 h-40 bg-rose-500/20 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none\"></div><h3 class=\"text-lg font-black text-rose-300 uppercase tracking-widest mb-3\">Nadir Fakat Yıkıcı Tablo</h3><p class=\"text-sm leading-relaxed text-rose-100\">Statin kullanan her 100.000 hastanın yaklaşık 2-3'ünde görülen İmmün Aracılı Nekrotizan Miyopati (IMNM); statin tedavisinin kesilmesine rağmen kas zayıflığı ve hasarının düzelmediği, aksine <strong>ilerleyerek kötüleştiği</strong> şiddetli bir otoimmün sendromdur.</p></div>"
+    },
+    {
+      "heading": "1. Patofizyoloji: Kriptik Epitoplar ve HLA-DRB1",
+      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Statin kullanımı normalde kasta HMGCR enziminin <em>ekspresyonunu (üretimini)</em> artırır. Ancak statinin bu enzime bağlanması, ölümcül bir zincirleme reaksiyon başlatabilir:</p><div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-r-2xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[12px] uppercase mb-2\">1. Antijenik Değişim</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">Statinin enzime bağlanması, proteinde konformasyonel değişikliklere yol açarak bağışıklık sisteminden gizli kalan <strong>kriptik epitopları</strong> açığa çıkarır. Makrofajlar bu enzimi 'yabancı' algılar ve <strong>anti-HMGCR otoantikorları</strong> üretilir.</p></div></div><div><div class=\"bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-2xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[12px] uppercase mb-2\">2. Genetik Tetikleyici</h4><p class=\"text-xs text-amber-800 leading-relaxed\">Bu otoimmün reaksiyonun gelişiminde özellikle <strong>HLA-DRB1*11:01</strong> genetik allelini taşıyan bireylerin anti-HMGCR miyopatisi geliştirme riskinin çok yüksek olduğu kanıtlanmıştır.</p></div></div></div>"
+    },
+    {
+      "heading": "2. Klinik Bulgular ve Laboratuvar",
+      "html": "<div class=\"space-y-4\"><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-1\">Kas ve Ekstramüsküler Bulgular</h4><p class=\"text-xs text-slate-700 leading-relaxed\">Hastalar simetrik, ilerleyici ve proksimal kas güçsüzlüğü yaşarlar. Zayıflık özellikle <strong>posterior (arka) ve medial uyluk ile gluteal</strong> kompartmanları ağır etkiler. Dermatomiyoziti taklit eden cilt döküntüleri nadiren eşlik edebilir.</p></div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-rose-900 text-[12px] uppercase tracking-widest mb-1 flex items-center gap-2\">Aşırı CK Yüksekliği</h4><p class=\"text-xs text-rose-800 font-medium\">Laboratuvar testlerinde kreatin kinaz (CK) seviyeleri ekstrem boyutlardadır. Değerler sıklıkla ULN'nin 10-100 katı arasındadır <strong>(genellikle 2.000 ile 20.000 IU/L üzeri)</strong>.</p></div></div>"
+    },
+    {
+      "heading": "3. Teşhis Araçları: Altın Standartlar",
+      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Tanı sürecinde otoimmün yıkımı kanıtlamak için çok yönlü araçlar kullanılır:</p><div class=\"grid grid-cols-1 md:grid-cols-3 gap-4 mb-4\"><div class=\"bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-blue-900 text-[11px] uppercase mb-2\">Anti-HMGCR Titresi</h4><p class=\"text-[11px] text-blue-800 leading-relaxed\">Kanda spesifik otoantikorun pozitifliği tanıyı destekler. Titre yüksekliği, hastadaki <strong>kas yıkımının ve hastalığın şiddetiyle doğrudan orantılıdır.</strong></p></div><div class=\"bg-purple-50 border border-purple-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-purple-900 text-[11px] uppercase mb-2\">İskelet Kası MRG & EMG</h4><p class=\"text-[11px] text-purple-800 leading-relaxed\">MRG (STIR), yaygın kas içi ödemi, fasyal inflamasyonu ve <strong>yağlı replasmanı</strong> gösterir. EMG'de fibrilasyon ve keskin dalga formasyonları izlenir.</p></div><div class=\"bg-emerald-50 border-t-4 border-emerald-500 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase tracking-widest mb-2\">Kas Biyopsisi (Altın Standart)</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Polimiyozitin aksine <strong>belirgin T-hücre inflamasyonu YOKTUR.</strong> Temel bulgu; nekrozu temizleyen <strong>devasa makrofaj infiltrasyonları</strong> ve yaygın kas lifi nekrozudur.</p></div></div>"
+    },
+    {
+      "heading": "4. Uzman Düzeyinde Yönetim ve Agresif İmmünsüpresyon",
+      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Statinin kesilmesi bağışıklık saldırısını durdurmaz; otonomi kazanmış bu reaksiyon için agresif müdahale şarttır:</p><ul class=\"space-y-3\"><li class=\"bg-slate-50 border-l-4 border-slate-800 p-4 shadow-sm rounded-r-xl\"><strong class=\"text-xs text-slate-900 uppercase block mb-1\">1. Hızlı Başlangıç:</strong> Statin kesilir kesilmez yüksek doz kortikosteroid (prednizon 1 mg/kg/gün) başlanmalıdır.</li><li class=\"bg-slate-50 border-l-4 border-slate-800 p-4 shadow-sm rounded-r-xl\"><strong class=\"text-xs text-slate-900 uppercase block mb-1\">2. İdame / Steroid-Sparing:</strong> Steroid yan etkilerinden kaçınmak için tedaviye <strong>metotreksat, azatiyoprin veya mikofenolat mofetil</strong> eklenir.</li><li class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm rounded-r-xl\"><strong class=\"text-xs text-amber-900 uppercase block mb-1\">3. Dirençli veya Çok Şiddetli Vakalar:</strong> 8-12 haftada yanıt alınamazsa veya tablo ilk başta çok ağırsa; <strong>İntravenöz İmmünglobulin (IVIG)</strong> veya B hücresi hedefli <strong>Rituksimab</strong> kullanımı hayat kurtarıcıdır (IVIG, 1. basamak olarak da tercih edilebilir).</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Kopeptin Algoritması ve NDI Moleküler Tedavi Paradoksları",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Endokrinoloji", "Kopeptin", "Diabetes İnsipidus", "V2R", "AQP2", "Tiyazid Paradoksu"],
+    "parent": "arka-hipofiz-bozukluklari-di-ve-siadh",
+    "order": 15
+  },
+  "sections": [
+    {
+      "heading": "🧬 Kopeptin: Tanısal Altın Standart ve Co-MED Verileri",
+      "html": "<p>AVP'nin teknik kısıtlılıkları (kısa yarı ömür, trombosit bağlanması) nedeniyle, eşmolar salınan stabil <strong>Kopeptin</strong> tanıya yerleşmiştir. Klasik su kısıtlama testinin %76'lık doğruluğuna karşın, Kopeptin odaklı yaklaşım %96.5 doğruluk sunar.</p><ul class=\"mb-4\"><li><strong>Bazal Kopeptin > 21.4 pmol/L:</strong> %100 özgüllükle Nefrojenik DI (NDI).</li><li><strong>Uyarılmış Kopeptin (Hipertonik Salin veya Arjinin sonrası) > 4.9 pmol/L:</strong> Primer Polidipsi.</li><li><strong>Uyarılmış Kopeptin ≤ 4.9 pmol/L:</strong> Santral DI (CDI).</li></ul>"
+    },
+    {
+      "heading": "🔬 Primer Polidipside 'Wash-out' ve AQP2 Down-regülasyonu",
+      "html": "<p>Kronik aşırı su alımı, renal medüller osmotik gradiyenti yıkar (wash-out). Sürekli hipoosmolalite, toplayıcı kanallarda <strong>Akuaporin-2 (AQP2)</strong> kanallarının sentezini genetik düzeyde down-regüle ederek geçici bir vazopressin direnci yaratır ve testi 'Parsiyel CDI' ile karıştırılabilir hale getirir.</p>"
+    },
+    {
+      "heading": "⚗️ Nefrojenik DI Tedavisinde Moleküler Paradokslar",
+      "html": "<ul class=\"mb-4\"><li><strong>Tiyazid Paradoksu:</strong> Distal tübülde Na blokajı yaparak hafif hipovolemi yaratır. Bu durum, proksimal tübülde kompanse edici sodyum ve su geri emilimini dramatik artırarak distal dirençli segmente giden yükü azaltır.</li><li><strong>NSAİİ (İndometazin):</strong> AVP antagonisti olan Prostaglandin E2 (PGE2) sentezini inhibe eder, V2 reseptör duyarlılığını ve proksimal reabsorpsiyonu artırır.</li><li><strong>Amilorid (Lityum Spesifik):</strong> Lityumun hücre içine girdiği <strong>ENaC</strong> kanallarını bloke ederek toksisiteyi ve AVP sinyal bozulmasını engeller.</li></ul>"
+    },
+    {
+      "heading": "⚠️ Genetik Mimari: V2R ve AQP2",
+      "html": "<p>Konjenital NDI vakalarının %90'ı X'e bağlı resesif <strong>AVPR2</strong> mutasyonudur (misfolding nedeniyle yüzeye çıkamayan reseptör). %10'luk kısım ise otozomal AQP2 mutasyonlarıdır.</p>"
+    }
+  ]
+}

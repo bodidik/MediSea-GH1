@@ -1,0 +1,23 @@
+{
+  "title": "Tiroid Hastalıkları",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Tiroid", "Navigasyon", "Harrison"],
+    "parent": null,
+    "order": 0
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>Bu sayfa, tiroid bezinin metabolik, immünolojik ve neoplastik süreçlerini inceleyen akademik serinin ana merkezidir.</em></p>"
+    },
+    {
+      "heading": "Metabolizmanın Termostatı: Tiroid",
+      "html": "<p>Tiroid bezi, sentezlediği T4 ve T3 hormonları aracılığıyla vücudun enerji tüketimini, ısı üretimini ve protein sentezini regüle eder. Harrison 21. Baskı ve 2024-2025 ATA (American Thyroid Association) kılavuzları ışığında hazırlanan serimiz başlamıştır.</p>"
+    },
+    {
+      "heading": "📚 Seri İçeriği",
+      "html": "<ul class=\"list-none p-0\"><li>🔥 <strong>Bölüm 1:</strong> Tiroid Fizyolojisi ve Testlerin Yorumlanması</li><li>❄️ <strong>Bölüm 2:</strong> Hipotiroidi ve Hashimoto</li><li>⚡ <strong>Bölüm 3:</strong> Hipertiroidi ve Graves Hastalığı</li><li>🩹 <strong>Bölüm 4:</strong> Tiroiditler (Ağrılı ve Ağrısız)</li><li>🔍 <strong>Bölüm 5:</strong> Tiroid Nodüllerine Yaklaşım (TI-RADS)</li><li>🎗️ <strong>Bölüm 6:</strong> Tiroid Maligniteleri</li></ul>"
+    }
+  ]
+}

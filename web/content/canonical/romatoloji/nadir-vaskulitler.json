@@ -1,0 +1,23 @@
+{
+  "title": "Nadir, Tek Organ ve Sekonder Vaskülitler",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Cogan", "Beyin", "İlaç"],
+    "parent": "vaskulit-sendromlari",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Cogan Sendromu",
+      "text": "<p>Genç erişkinlerde görülür. İnterstisiyel keratit (Göz kızarıklığı, ağrı) ve vestibüloaudituar disfonksiyon (Ani işitme kaybı, vertigo) ile karakterizedir. Sistemik vaskülit (Aortit) eşlik edebilir. Tedavide yüksek doz steroid verilir.</p>"
+    },
+    {
+      "heading": "Primer SSS Vasküliti (PACNS)",
+      "text": "<p>Sadece beyin ve omurilik damarlarını tutar. Sistemik bulgu yoktur. Kronik baş ağrısı ve inme atakları ile gelir. Tanı için beyin biyopsisi altın standarttır.</p>"
+    },
+    {
+      "heading": "Sekonder Vaskülitler",
+      "text": "<div class='bg-gray-50 p-3 rounded border border-gray-300'><h5 class='font-bold text-gray-900'>Tetikleyiciler</h5><ul class='list-disc pl-5 mt-1 text-xs text-gray-700'><li><strong>İlaçlar:</strong> Hidralazin, Propiltiourasil (PTU), Kokain (Levamizol içeren). Genellikle p-ANCA pozitiftir.</li><li><strong>Enfeksiyonlar:</strong> Hepatit B (PAN benzeri), Hepatit C (Kriyoglobülinemi), HIV, Sifiliz.</li><li><strong>Malignite:</strong> Lenfoma ve Lösemiler (Paraneoplastik vaskülit).</li></ul></div>"
+    }
+  ]
+}

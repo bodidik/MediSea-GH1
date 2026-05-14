@@ -1,0 +1,24 @@
+{
+  "title": "Onkolojik Aciller",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": [
+      "Onkoloji",
+      "Acil",
+      "Tümör Lizis",
+      "Nötropeni"
+    ],
+    "parent": "onkoloji-hastaliklari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Metabolik Aciller",
+      "text": "<div class='space-y-3'><div class='bg-red-50 p-3 rounded border-l-4 border-red-500'><strong class='text-red-900'>Tümör Lizis Sendromu:</strong> Hızlı hücre yıkımı sonucu Ürik Asit, Potasyum ve Fosfor artar; Kalsiyum düşer. Böbrek yetmezliği yapar. Tedavi: Hidrasyon + Rasburikaz/Allopurinol.</div><div class='bg-yellow-50 p-3 rounded border-l-4 border-yellow-500'><strong class='text-yellow-900'>Hiperkalsemi:</strong> En sık görülen metabolik acildir (Meme, Akciğer, Myeloma). Bilinç değişikliği yapar. Tedavi: Hidrasyon + Bifosfonat.</div></div>"
+    },
+    {
+      "heading": "Yapısal ve Enfeksiyöz Aciller",
+      "text": "<ul class='list-disc pl-5 space-y-2 mt-2'><li><strong>Febril Nötropeni:</strong> Nötrofil < 500 ve Ateş > 38.3°C. Acil geniş spektrumlu antibiyotik (Anti-psödomonal) başlanmalıdır.</li><li><strong>Vena Cava Superior Sendromu:</strong> Yüzde şişme, nefes darlığı. Genellikle akciğer kanserine bağlıdır.</li><li><strong>Spinal Kord Basısı:</strong> Sırtta bant tarzı ağrı, güçsüzlük. Acil MR ve Steroid/Radyoterapi gerekir.</li></ul>"
+    }
+  ]
+}

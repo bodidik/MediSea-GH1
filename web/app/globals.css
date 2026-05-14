@@ -1,0 +1,138 @@
+/* 👇 EN ÖNEMLİ KISIM: BU 3 SATIR MUTLAKA EN ÜSTTE OLMALI */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 👇 SENİN ÖZEL TASARIM AYARLARIN (Hepsini koruduk) */
+:root {
+  --bg: #ffffff;
+  --fg: #111827;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system,
+               BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+               Arial, 'Noto Sans', sans-serif,
+               'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+               'Noto Color Emoji';
+
+  --font-serif: 'Merriweather', Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+               Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans); /* Gövde: Inter */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraflar */
+p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+/* Alıntılar */
+blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: #374151; /* gray-700 */
+  border-left: 4px solid #2563eb; /* blue-600 */
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* Resim altı yazı */
+figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+  color: #6b7280; /* gray-500 */
+  margin-top: 0.5rem;
+}
+
+/* Kod parçaları */
+code, pre {
+  font-family: var(--font-mono);
+  background: #f9fafb; /* gray-50 */
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+code {
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.45;
+}
+
+/* Bağlantılar */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Butonlar */
+button {
+  cursor: pointer;
+}
+
+/* Markdown / MDX tipografi (prose) */
+.prose {
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  color: var(--fg);
+}
+
+.prose h1, .prose h2, .prose h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: #f3f4f6; /* gray-100 */
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+}
+
+.prose pre {
+  font-family: var(--font-mono);
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }

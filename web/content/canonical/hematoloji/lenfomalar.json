@@ -1,0 +1,13 @@
+{
+  "title": "Lenfomalar (Hodgkin ve NHL)",
+  "meta": {
+    "parent": "hematolojik-maligniteler",
+    "order":5
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "text": "<p>Lenfatik sistem tümörleridir.</p>"
+    }
+  ]
+}

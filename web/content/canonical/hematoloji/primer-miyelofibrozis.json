@@ -1,0 +1,35 @@
+{
+  "title": "Primer Miyelofibrozis (PMF)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "Miyelofibrozis", "JAK2", "CALR", "Yapay Zeka Taslağı"],
+    "parent": null,
+    "order": 13
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Primer Miyelofibrozis (PMF)</strong>, klonal megakaryosit ve granülosit proliferasyonu ile karakterize, BCR-ABL1 negatif bir miyeloproliferatif neoplazmdır. Kemik iliğindeki fibrozis (bağ dokusu artışı) klonal <em>değildir</em>; neoplastik megakaryositlerden salınan pro-fibrotik sitokinlerin (<strong>TGF-β, PDGF, bFGF</strong>) reaktif (poliklonal) fibroblastları aşırı uyarması sonucu gelişir.</p><p>Hastaların yaklaşık %90'ında üç majör sürücü mutasyondan biri saptanır: <strong>JAK2 V617F (~%60)</strong>, <strong>CALR (~%25)</strong> veya <strong>MPL (~%5)</strong>. Kalan %10'luk kesim 'üçlü-negatif' (triple-negative) olarak adlandırılır ve en kötü prognoza sahip gruptur.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Periferik Yayma",
+      "html": "<p><strong>Ekstramedüller Hematopoez (EMH):</strong> Kemik iliğinin fibrozisle kaplanması sonucu kan yapımı dalak ve karaciğere kayar. Bu durum, PV veya ET'den çok daha dramatik olan <strong>masif splenomegaliye</strong> (erken doyma, karın ağrısı, solunum sıkıntısı) ve hepatomegaliye yol açar.</p><p><strong>Konstitüsyonel Semptomlar ve Sitopeniler:</strong> Şiddetli yorgunluk, istemsiz kilo kaybı (kaşeksi), gece terlemesi ve hafif ateş (B semptomları) çok belirgindir. İlerleyen evrelerde derin anemi ve trombositopeni tabloya hâkim olur.</p><p><strong>Periferik Yayma:</strong> PMF'nin patognomonik periferik kan bulgusu <strong>lökoeritroblastik tablo</strong> (çekirdekli eritrositler ve immatür miyeloid öncüller) ve <strong>gözyaşı hücreleri (dakrositler)</strong> varlığıdır.</p>"
+    },
+    {
+      "heading": "Tanı Kriterleri (DSÖ / ICC)",
+      "html": "<p>PMF kliniği iki evrede incelenir: <strong>Pre-fibrotik PMF</strong> (kemik iliğinde fibrozis yok veya grade 1, ancak atipik megakaryosit proliferasyonu ve artmış selülarite var) ve <strong>Aşikar (Overt) PMF</strong> (retikülin ve/veya kollajen fibrozisin Evre 2 veya 3 olması).</p><p>Tanı için kemik iliği biyopsisinde <em>bizar, çıplak nükleuslu, kümeler oluşturan atipik megakaryositlerin</em> saptanması, sürücü mutasyon (JAK2/CALR/MPL) varlığı ve reaktif fibrozis nedenlerinin dışlanması majör kriterlerdir.</p>"
+    },
+    {
+      "heading": "Prognostik Modeller",
+      "html": "<p>Sağkalımı öngörmek için kullanılan modeller zamanla evrilmiştir:</p><ul class=\"mb-4\"><li><strong>DIPSS / DIPSS-Plus:</strong> Yaş >65, anemi, lökositoz, periferik blast >%1, konstitüsyonel semptomlar, trombositopeni ve elverişsiz karyotip gibi tamamen klinik ve sitogenetik verilere dayanır.</li><li><strong>MIPSS70 ve MIPSS70+ v2.0:</strong> Klinik verilere <em>Yüksek Moleküler Risk (HMR)</em> mutasyonlarını ekleyen modern sistemlerdir. <strong>ASXL1, SRSF2, EZH2, IDH1/2</strong> ve <strong>U2AF1Q157</strong> mutasyonları PMF'de lösemik dönüşüm ve kötü sağkalım için güçlü bağımsız risk faktörleridir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yönetimi ve JAK İnhibitörleri",
+      "html": "<p><strong>Küratif Tedavi:</strong> PMF'de tek küratif seçenek <strong>Allojenik Kök Hücre Naklidir (Allo-HSCT)</strong>. Genellikle Orta-2 (Int-2) ve Yüksek riskli, performansı uygun hastalara önerilir.</p><p><strong>Semptom ve Dalak Kontrolü (JAK İnhibitörleri):</strong> Nakle uygun olmayan veya köprüleme bekleyen hastalarda dalak boyutunu küçültmek ve konstitüsyonel semptomları baskılamak için kullanılırlar:</p><ul class=\"mb-4\"><li><em>Ruxolitinib:</em> Standart ilk basamak JAK1/2 inhibitörüdür. En sık yan etkisi anemi ve trombositopenidir.</li><li><em>Fedratinib:</em> Ruxolitinib dirençli/intoleran vakalarda veya ilk basamakta kullanılabilen JAK2 inhibitörüdür (Wernicke ensefalopatisi riski nedeniyle Tiamin takibi gerektirir).</li><li><em>Pacritinib:</em> Özellikle <strong>trombosit sayısı < 50.000/mcL</strong> olan şiddetli trombositopenik PMF hastalarında güvenle kullanılabilen JAK2/IRAK1 inhibitörüdür.</li><li><em>Momelotinib:</em> JAK1, JAK2 ve ACVR1'i inhibe ederek hepsidin salınımını azaltır; bu sayede dalak küçültücü etkisine ek olarak <strong>anemiyi iyileştirici</strong> (transfüzyon bağımsızlığı sağlayan) benzersiz bir profile sahiptir.</li></ul>"
+    }
+  ]
+}

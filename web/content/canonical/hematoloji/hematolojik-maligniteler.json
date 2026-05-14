@@ -1,0 +1,32 @@
+{
+  "title": "Hematolojik Maligniteler",
+  "meta": {
+    "order": 4,
+    "tags": ["Onkoloji", "Malignite", "Genel Bakış", "WHO5", "ICC 2022"],
+    "parent": null,
+    "summary": "Hematopoetik sistemin malign hastalıklarına genel bakış, sınıflandırma ve temel hücresel mekanizmalar."
+  },
+  "summary": "Hematopoetik sistemin malign hastalıklarıdır. Kemik iliği, lenf düğümleri ve kan hücrelerinin kontrolsüz çoğalmasıyla karakterizedir. Normalde sıkı bir şekilde düzenlenen hücre proliferasyonu ve farklılaşması mekanizmaları bozularak, etkilenen hücrelerin kontrolsüz bir biçimde çoğalmasına yol açar.",
+  "sections": [
+    {
+      "heading": "Giriş ve Patogenez",
+      "text": "<p>Hematolojik maligniteler, kemik iliğindeki malign hematopoetik öncü hücrelerin klonal genişlemesinden kaynaklanan agresif kan hücresi kanserleridir. Bu lösemik hücreler (blastlar) kemik iliğinde hızla birikerek normal kan hücrelerinin (eritrosit, lökosit ve trombosit) üretimini engeller; bu tablo da hastalarda anemi, ağır enfeksiyonlar ve kanama gibi ölümcül olabilen komplikasyonlara neden olur.</p><p>Normal hematopoez süreci, tüm kan hücrelerine dönüşebilme kapasitesine sahip olan pluripotent hematopoetik kök hücrelerin gelişimi ile başlar. Kanserleşen bu popülasyon içerisinde, sınırsız kendi kendini yenileme potansiyeline sahip küçük bir <strong>'lösemik kök hücre' (LSC)</strong> havuzu bulunur ve bu hücreler hastalığın sürdürülmesinden (ve sıklıkla nüksünden) sorumludur.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Sınıflandırma Sistemleri",
+      "text": "<p>Hematolojik malignitelerin sınıflandırılması, hastalığın patofizyolojisi ve genetiğinin daha iyi anlaşılmasıyla evrim geçirmiştir. Geleneksel olarak hücrelerin mikroskobik morfolojisine dayanan eski sistemlerin (örneğin FAB sınıflandırması) yerini günümüzde genetik temelli sistemler almıştır.</p><p>Güncel olarak iki temel sistem kullanılmaktadır: <strong>Dünya Sağlık Örgütü 5. Baskı (WHO5)</strong> ve <strong>Uluslararası Konsensüs Sınıflandırması (ICC 2022)</strong>. Her iki sistem de hastalıkları hücresel morfoloji, hücre yüzey belirteçleri (immünofenotip), sitogenetik anormallikler ve moleküler mutasyonları entegre ederek sınıflandırır.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Genetik, Çevresel ve Kalıtsal Risk Faktörleri",
+      "text": "<p>Hematolojik malignitelerin çoğu, yaşam boyunca kazanılan spontan somatik mutasyonlar (ör. FLT3, NPM1, TP53 mutasyonları) ve kromozomal translokasyonlar sonucunda <em>de novo</em> (birincil) olarak ortaya çıkar. Ancak bazı spesifik risk faktörleri de tanımlanmıştır:</p><ul><li><strong>Tedavi İlişkili (Sekonder) Neoplaziler:</strong> Başka bir kanser türü nedeniyle daha önceden DNA hasarı yaratan sitotoksik kemoterapi (ör. alkilleyici ajanlar, topoizomeraz II inhibitörleri) veya radyoterapi almış hastalarda, yıllar sonra ortaya çıkan oldukça agresif seyirli hematolojik malignitelerdir (t-MN).</li><li><strong>Kalıtsal (Germline) Yatkınlıklar:</strong> Çoğu lösemi edinsel mutasyonlara bağlı olsa da; Down sendromu (Trizomi 21), Fanconi anemisi ve Diamond-Blackfan anemisi gibi konjenital kemik iliği yetmezliği sendromları olan veya <em>RUNX1, CEBPA, TP53, GATA2</em> gibi genlerde kalıtsal kusurları bulunan bireylerde hematolojik malignite riski çok daha yüksektir.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Klinik Arşiv: Alt Hastalık Gruplarına Hızlı Erişim",
+      "text": "<p>Spesifik tanı, tedavi ve YDUS algoritmaları için aşağıdaki başlıklara ilerleyebilirsiniz:</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mt-6\"><a href=\"/topics/hematoloji/all\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Akut Lenfoblastik Lösemi (ALL) <span class=\"float-right text-slate-300\">→</span></a><a href=\"/topics/hematoloji/kll\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Kronik Lenfositik Lösemi (KLL) <span class=\"float-right text-slate-300\">→</span></a><a href=\"/topics/hematoloji/hodgkin-lenfoma\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Hodgkin Lenfoma <span class=\"float-right text-slate-300\">→</span></a><a href=\"/topics/hematoloji/nhl\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Non-Hodgkin Lenfomalar (NHL) <span class=\"float-right text-slate-300\">→</span></a><a href=\"/topics/hematoloji/burkitt-lenfoma\" class=\"block p-5 bg-blue-50 border-l-4 border-blue-500 border-y border-r border-slate-200 rounded-2xl text-blue-900 font-bold hover:bg-blue-100 hover:border-blue-600 transition-all\">Burkitt Lenfoma (Öne Çıkan) <span class=\"float-right text-blue-400\">→</span></a><a href=\"/topics/hematoloji/multiple-myelom\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Multiple Myelom & Plazma Hastalıkları <span class=\"float-right text-slate-300\">→</span></a></div>",
+      "visibility": "V"
+    }
+  ]
+}

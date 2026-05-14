@@ -1,0 +1,19 @@
+{
+  "title": "Ch 327: Malnütrisyon ve Nütrisyonel Değerlendirme",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nütrisyon", "Kaşeksi", "Sarkopeni", "GLIM"],
+    "parent": "nutrisyon-hastaliklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Tanım ve Kriterler",
+      "text": "<p>Yetersiz beslenme sonucu vücut kompozisyonunun bozulmasıdır. Hastaneye yatan hastalarda %30-50 oranında görülür. Tanı için <strong>GLIM Kriterleri</strong> (Fenotipik: Kilo kaybı, Düşük BMI + Etiyolojik: Azalmış alım, İnflamasyon) kullanılır.</p>"
+    },
+    {
+      "heading": "Klinik Tipler",
+      "text": "<div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-yellow-50 p-3 rounded border border-yellow-200'><strong class='text-yellow-900'>Marasmus:</strong> Kalori eksikliği ön plandadır. Ciddi kas ve yağ kaybı (bir deri bir kemik) vardır. Albümin normal olabilir.</div><div class='bg-red-50 p-3 rounded border border-red-200'><strong class='text-red-900'>Kwashiorkor:</strong> Protein eksikliği ön plandadır. Ödem (Karında şişlik), hepatomegali ve cilt değişiklikleri görülür. Albümin düşüktür.</div></div>"
+    }
+  ]
+}

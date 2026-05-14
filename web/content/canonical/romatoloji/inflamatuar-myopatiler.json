@@ -1,0 +1,31 @@
+{
+  "title": "İnflamatuar Miyopatiler",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Miyozit", "Polimiyozit", "Dermatomiyozit", "Gottron", "CPK"],
+    "parent": null,
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Modülü",
+      "html": "<p><em>⚠️ İnflamatuar miyopatiler, iskelet kasının kronik inflamasyonu ve güçsüzlüğü ile karakterize heterojen bir gruptur. Malignite taraması bu hastaların yönetiminde hayati bir adımdır. Harrison 21st Ed & 2025 EULAR/ACR referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Klinik Spektrum ve Ortak Bulgular",
+      "html": "<p>Temel özellik, <strong>simetrik proksimal kas güçsüzlüğüdür</strong> (saç tarama, merdiven çıkma, oturduğu yerden kalkma zorluğu). Ağrı genellikle ön planda değildir; asıl sorun 'güç kaybıdır'.</p><ul class=\"mb-4\"><li><strong>Polimiyozit (PM):</strong> Kas liflerinin doğrudan CD8+ T hücreleri tarafından istila edildiği (endomizyal inflamasyon) saf kas tutulumu.</li><li><strong>Dermatomiyozit (DM):</strong> Perivasküler inflamasyon ve kompleman aracılı hasar. Kas güçsüzlüğüne karakteristik cilt bulguları eşlik eder.</li><li><strong>İnklüzyon Cisimli Miyozit (IBM):</strong> Genellikle 50 yaş üstü erkeklerde, <strong>distal</strong> kasların (el parmak fleksiyonu) ve kuadrisepsin asimetrik tutulumu ile seyreder. Tedaviye dirençlidir.</li></ul>"
+    },
+    {
+      "heading": "2. Dermatomiyozit: Cildin İmzası",
+      "html": "<p>Kas bulguları başlamadan önce veya sonra görülebilen patognomonik belirtiler:</p><ul class=\"mb-4\"><li><strong>Gottron Papülleri:</strong> El eklemlerinin (MKP, PİP) üzerinde eritemli, skuamlı papüller.</li><li><strong>Helyotrop Rash:</strong> Üst göz kapaklarında menekşe rengi (viyole) renk değişimi ve ödem.</li><li><strong>V-işareti ve Şal Belirtisi:</strong> Güneş gören bölgelerde (boyun, omuzlar) fotosensitif döküntü.</li><li><strong>Mekanikçi Eli:</strong> Parmak uçlarında ve yanlarında hiperkeratoz ve çatlaklar (Antisentez sendromu ile ilişkili).</li></ul>"
+    },
+    {
+      "heading": "3. Tanı: Enzimler, EMG ve Antikorlar",
+      "html": "<ul class=\"mb-4\"><li><strong>Kas Enzimleri:</strong> <strong>CPK (Kreatin Fosfokinaz)</strong> en duyarlı göstergedir (10-50 kat artış). Aldolaz, AST/ALT ve LDH da yükselebilir.</li><li><strong>EMG:</strong> Miyopatik traseler (kısa süreli, düşük amplitüdlü polifazik potansiyeller).</li><li><strong>Altın Standart: Kas Biyopsisi.</strong> (PM'de endomizyal, DM'de perifasiküler atrofi ve perivasküler inflamasyon).</li><li><strong>Miyozit Spesifik Antikorlar (MSA):</strong> <ul><li><em>Anti-Jo-1:</em> Antisentez sendromu (İAH, Raynaud, mekanikçi eli).</li><li><em>Anti-Mi-2:</em> Klasik DM, iyi tedavi yanıtı.</li><li><em>Anti-TIF1-gama / Anti-NXP2:</em> <strong>Malignite</strong> ile güçlü ilişki!</li><li><em>Anti-MDA5:</em> Hızlı ilerleyen interstisyel akciğer hastalığı (İAH) ve cilt ülserleri.</li></ul></li></ul>"
+    },
+    {
+      "heading": "4. Tedavi ve Takip",
+      "html": "<ul class=\"mb-4\"><li><strong>Birinci Basamak:</strong> Yüksek doz Glukokortikoidler (Prednizon 1 mg/kg).</li><li><strong>Steroid Koruyucu Ajanlar:</strong> Metotreksat veya Azatioprin.</li><li><strong>Dirençli Vakalar:</strong> IVIG (özellikle DM'de), Rituksimab veya Siklofosfamid.</li><li>⚠️ <strong>Kanser Taraması:</strong> Özellikle DM tanısı alan yetişkinlerde ilk 2-3 yıl boyunca yaşa uygun kapsamlı malignite taraması (BT, kolonoskopi, mamografi vb.) zorunludur.</li></ul>"
+    }
+  ]
+}

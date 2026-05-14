@@ -1,0 +1,27 @@
+{
+  "title": "Temel Bilimler: Zona Glomerulosa Neden Kortizol Üretemez?",
+  "meta": {
+    "updatedAt": "03 Nis 2026",
+    "tags": ["Nefroloji", "Endokrinoloji", "Steroidogenez", "CYP17A1", "CYP11B2", "Aldosteron", "Kortizol"],
+    "parent": "aldosteron",
+    "order": 12
+  },
+  "sections": [
+    {
+      "heading": "🔬 Uzman Özeti: Enzimatik Kavşak",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Adrenal korteksin zona glomerulosa tabakasının glukokortikoid (özellikle kortizol) sentezleyememesinin temel nedeni, bu bölgedeki hücrelerde <strong>17α-hidroksilaz (CYP17A1 veya P450c17)</strong> enziminin bulunmamasıdır (eksprese edilmemesidir). Bu hücresel kısıtlılık, korteks tabakalarının kendine has hormon üretim fonksiyonlarını belirleyen en kritik enzimatik bariyerdir.</p> "
+    },
+    {
+      "heading": "1. 17-Hidroksilasyon Zorunluluğu ve CYP17A1'in Rolü",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2\">Yapısal Ön Koşul</h4><p class=\"text-xs text-rose-800 leading-relaxed\">Kortizol gibi glukokortikoidlerin üretilebilmesi için, öncü steroid molekülleri olan pregnenolon veya progesteronun karbon-17 (C17) pozisyonundan hidroksillenmesi hücresel ve yapısal anlamda <strong>mutlak bir ön koşuldur.</strong></p></div></div><div><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-2\">CYP17A1 Enzim Eksikliği</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">Bir mikrozomal enzim olan 17α-hidroksilaz, pregnenolonu 17α-hidroksipregnenolona ve progesteronu 17α-hidroksiprogesterona dönüştürür. Normal adrenal fizyolojisinde bu enzim <em>yalnızca zona fassikülata ve zona retikülariste aktiftir.</em> Zona glomerulosa hücreleri herhangi bir 17α-hidroksilaz aktivitesine sahip olmadığı için 17-hidroksillenmiş steroid ara ürünlerini üretemez.</p></div></div></div>"
+    },
+    {
+      "heading": "2. Yolağın Mineralokortikoidlere Yönlendirilmesi: CYP11B2",
+      "html": "<div class=\"bg-amber-50 border-2 border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><p class=\"text-sm text-amber-900 leading-relaxed\">17α-hidroksilaz enziminin yokluğu, substratın glukokortikoid veya androjen sentez yolaklarına girmesini en baştan engeller. <br/><br/>Bunun yerine zona glomerulosa hücreleri, <strong>sadece kendi tabakalarında spesifik olarak bulunan aldosteron sentaz (CYP11B2) enzimi</strong> sayesinde, mevcut substratları (progesteron ve deoksikortikosteron) sıralı oksidasyon işlemleriyle mineralokortikoid yolağına sokarak nihai ürün olan aldosterona dönüştürür.</p></div> "
+    },
+    {
+      "heading": "3. Klinik ve Moleküler Sonuç",
+      "html": "<div class=\"bg-slate-800 p-5 rounded-2xl shadow-md\"><p class=\"text-sm text-slate-200 font-medium leading-relaxed italic\">\"Özetle, zona glomerulosa hücresi genetik ve enzimatik donanım olarak kortizol üretecek kavşak enzimi olan 17α-hidroksilazdan yoksundur ve bu nedenle steroidogenez fabrikası mecburi olarak aldosteron üretimi yönünde çalışır.\"</p></div>"
+    }
+  ]
+}

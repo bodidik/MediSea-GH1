@@ -1,0 +1,31 @@
+{
+  "title": "Hipofiz Adenomları: Klinik Tanı ve Tedavi Rehberi",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipofiz", "Adenom", "Prolaktinoma", "Akromegali", "Cushing"],
+    "parent": "on-hipofiz-hastaliklari-giris",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Özeti: Adenom Tipleri",
+      "html": "<p>Hipofiz adenomları, ön hipofizden köken alan iyi huylu neoplazilerdir. Boyutlarına göre <strong>Mikroadenom (<10 mm)</strong> veya <strong>Makroadenom (≥10 mm)</strong> olarak sınıflandırılırlar.</p><p>Klinik tablo iki mekanizma ile oluşur: 1. Hormon fazlalığı, 2. Kitle etkisi (Optik kiyazma basısına bağlı <strong>Bitemporal Hemianopsi</strong>).</p>"
+    },
+    {
+      "heading": "1. Prolaktinomalar (En Sık Görülen)",
+      "html": "<ul class=\"mb-4\"><li><strong>Klinik:</strong> Kadınlarda amenore, galaktore; erkeklerde libido kaybı ve jinekomasti.</li><li><strong>Tanı:</strong> Serum Prolaktin (PRL) seviyesi. ⚠️ <em>Hook Effect:</em> Çok yüksek PRL düzeylerinde laboratuvarın yanlışlıkla düşük sonuç vermesi riskine dikkat!</li><li><strong>Tedavi:</strong> İlk seçenek cerrahi DEĞİL, <strong>Dopamin Agonistleri</strong> (Kabergolin, Bromokriptin).</li></ul>"
+    },
+    {
+      "heading": "2. Akromegali (GH Salgılayan Adenom)",
+      "html": "<ul class=\"mb-4\"><li><strong>Klinik:</strong> El ve ayaklarda büyüme, kaba yüz hatları, makroglossi (dil büyümesi), uyku apnesi, diyabet ve hipertansiyon.</li><li><strong>Tanı:</strong> Tarama için <strong>IGF-1</strong> ölçülür. Kesin tanı için <strong>75g Oral Glukoz Tolerans Testi (OGTT)</strong> yapılır; GH seviyesi baskılanmıyorsa ( < 1 µg/L) tanı konur.</li><li><strong>Tedavi:</strong> İlk tercih <strong>Transsfenoidal Cerrahi</strong>.</li></ul>"
+    },
+    {
+      "heading": "3. Cushing Hastalığı (ACTH Salgılayan Adenom)",
+      "html": "<ul class=\"mb-4\"><li><strong>Ayırıcı Tanı:</strong> Adrenal kaynaklı Cushing'den ayırmak için <strong>Yüksek Doz Deksametazon Süpresyon Testi</strong> kullanılır. Hipofiz adenomunda kortizol %50'den fazla baskılanırken, sürrenal tümörlerde baskılanmaz.</li><li><strong>Tedavi:</strong> Cerrahi eksizyon.</li></ul>"
+    },
+    {
+      "heading": "4. Hormonal Olarak İnaktif (Non-fonksiyonel) Adenomlar",
+      "html": "<p>Hormon salgılamazlar. Genellikle makroadenom boyutuna ulaştıklarında baş ağrısı ve görme kaybı ile fark edilirler. Tedavi gerekiyorsa cerrahidir.</p>"
+    }
+  ]
+}

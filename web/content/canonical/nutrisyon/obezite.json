@@ -1,0 +1,22 @@
+{
+  "title": "Ch 329: Obezite ve Metabolik Sendrom",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nütrisyon", "BMI", "Bariatrik", "GLP-1"],
+    "parent": "nutrisyon-hastaliklari",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Sınıflandırma ve Komplikasyonlar",
+      "text": "<p>Vücut Kitle İndeksi (BMI) > 30 kg/m² olmasıdır. Tip 2 Diyabet, Hipertansiyon, Uyku Apnesi ve Kanser riskini artırır. Bel çevresi (Erkek >102, Kadın >88 cm) viseral yağlanmanın en iyi göstergesidir.</p>
+
+[Image of BMI classification chart]
+"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "text": "<ul class='list-none space-y-2 mt-2'><li class='bg-green-50 p-2 rounded'>🥗 <strong>Yaşam Tarzı:</strong> Diyet + Egzersiz (Temel taş).</li><li class='bg-blue-50 p-2 rounded'>💉 <strong>Farmakoterapi:</strong> GLP-1 Analogları (Semaglutide, Liraglutide) iştahı baskılar ve %15-20 kilo kaybı sağlar.</li><li class='bg-purple-50 p-2 rounded'>🔪 <strong>Bariatrik Cerrahi:</strong> BMI > 40 veya BMI > 35 + Komorbidite varsa endikedir. En etkili kalıcı tedavi yöntemidir.</li></ul>"
+    }
+  ]
+}
