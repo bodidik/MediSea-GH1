@@ -120,14 +120,40 @@ export async function list(req, res) {
 /** GET /api/topics/:slug */
 export async function detail(req, res) {
   try {
-    const slug = String(req.params.slug || "");
-    const doc = await Topic.findOne({ slug }).lean();
+    const raw = req.params.slug ?? "";
+    const key = decodeURIComponent(String(raw || "")).trim();
+
+    if (!key) return res.status(400).json({ ok: false, error: "bad_request" });
+
+    // 1) Önce exact slug
+    let doc = await Topic.findOne({ slug: key }).lean();
+
+    // 2) Exact bulunamazsa: case-insensitive slug (fallback)
+    // (DB'de slug casing/normalize kaymışsa diye)
+    if (!doc) {
+      doc = await Topic.findOne({ slug: { $regex: `^${escapeRegex(key)}$`, $options: "i" } }).lean();
+    }
+
+    // 3) Hâlâ yoksa: ObjectId ise _id fallback
+    if (!doc) {
+      const mongoose = (await import("mongoose")).default;
+      if (mongoose.isValidObjectId(key)) {
+        doc = await Topic.findById(key).lean();
+      }
+    }
+
     if (!doc) return res.status(404).json({ ok: false, error: "not_found" });
+
     const item = pickTopicForOutput(doc);
     res.json({ ok: true, item });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
   }
+}
+
+// küçük helper: regex escape
+function escapeRegex(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 /** POST /api/topics */

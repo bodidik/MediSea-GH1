@@ -1,9 +1,0 @@
-{
-  "title": "Sistemik Lupus Eritematozus (SLE) — Genel Anlatım",
-  "sections": [
-    { "heading": "Kısa Tanım", "text": "SLE; çoklu organ tutulumlu, otoimmün bir bağışıklık sistemi bozukluğudur." },
-    { "heading": "Klinik İpuçları", "text": "Foto-duyarlılık, malar döküntü, artrit, hematolojik bozukluklar ve renal tutulum sık görülür." },
-    { "heading": "Tedavi Çerçevesi", "text": "Hafif hastalıkta hidroksiklorokin temeldir; alevlenmelerde steroid ve immünomodülatörler eklenebilir." }
-  ],
-  "meta": { "updatedAt": "2025-10-03", "tags": ["romatoloji","SLE"] }
-}

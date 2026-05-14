@@ -1,6 +1,7 @@
 ﻿// FILE: server/server.js
 import express from "express";
 import mongoose from "mongoose";
+import contentRoutes from './routes/content.js';
 import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
@@ -79,6 +80,7 @@ app.use("/api/protected", protectedRoutes);
 app.use("/api/topics", topicRoutes);
 app.use("/api/guidelines", guidelinesRoutes);
 app.use("/api/admin/topics", topicAdminRoutes);
+app.use('/api/content', contentRoutes);
 
 // 🆕 Translate endpoint
 app.use("/translate", translateRoutes);

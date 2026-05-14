@@ -7,7 +7,9 @@
     "start": "node -r dotenv/config server.js",
     "lint": "eslint . --ext .js,.cjs,.mjs --max-warnings=0",
     "test": "echo \"No tests yet\" && exit 0",
-    "seed:endo": "node scripts/seedEndoPlaceholders.mjs"
+    "seed": "node scripts/seedAll.mjs",
+    "seed:endo": "node scripts/seedEndoPlaceholders.mjs",
+    "add": "node scripts/quickAdd.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
