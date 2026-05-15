@@ -1,7 +1,0 @@
-{
-  "sectionMap": { "romatoloji": "rheumatology" },
-  "topicSlugOverrides": {
-    "romatoloji/romatoid-artrit": "rheumatoid-arthritis",
-    "romatoloji/sistemik-skleroz": "systemic-sclerosis"
-  }
-}
