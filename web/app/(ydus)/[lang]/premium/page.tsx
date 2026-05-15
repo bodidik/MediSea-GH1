@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import PlanBadge, { type PlanType } from "@/components/PlanBadge";
+import PlanBadge, { type PlanType } from "@/app/components/PlanBadge";
 import PremiumCard from "@/app/components/PremiumCard";
 import { 
   Activity, Flame, Target, Zap, BrainCircuit, 
