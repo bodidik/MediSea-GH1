@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import PlanBadge, { type PlanType } from "@/components/PlanBadge";
-import PremiumCard from "@/components/PremiumCard";
+import PremiumCard from "@/app/components/PremiumCard";
 import { 
   Activity, Flame, Target, Zap, BrainCircuit, 
   PlaySquare, Stethoscope, Map, AlertTriangle, Layers, Crown 
