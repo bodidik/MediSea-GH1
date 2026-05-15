@@ -1,5 +1,5 @@
 'use client';
-import SimulatorEngine, { SimData } from '../../../../components/SimulatorEngine';
+import SimulatorEngine from "@/components/SimulatorEngine";
 // Not: import yolunu kendi klasör derinliğine göre '../components/SimulatorEngine' vb. olarak ayarla
 
 const DKA_CASE_DATA: SimData = {
