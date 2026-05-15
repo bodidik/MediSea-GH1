@@ -1,0 +1,39 @@
+{
+  "title": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Metformin", "SGLT-2i", "GLP-1Ra", "Tirzepatid", "ADA 2026"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> ADA 2026 'Pharmacological Approaches to Glycemic Treatment' rehberi baz alınmıştır.</em></p>"
+    },
+    {
+      "heading": "1. Birinci Basamak: Metformin (Biguanid)",
+      "html": "<p>Kontrendikasyon yoksa hala çoğu hasta için ilk tercihtir. <strong>Etki Mekanizması:</strong> AMPK aktivasyonu üzerinden hepatik glukoz üretimini azaltır ve insülin duyarlılığını artırır.</p><ul class=\"mb-4\"><li><strong>Avantajlar:</strong> Hipoglisemi yapmaz, kilo aldırmaz, ucuzdur.</li><li><strong>Kritik Yan Etki:</strong> B12 eksikliği ve Laktik Asidoz (GFR < 30 ise kontrendikedir).</li></ul>"
+    },
+    {
+      "heading": "2. SGLT-2 İnhitibörleri (Gliflozinler): Böbrek ve Kalp Kalkanı",
+      "html": "<p>Proksimal tübülde glukoz geri emilimini engellerler. <strong>Mekanizma:</strong> Glukozüri ve natriürez sağlayarak hem şekeri hem tansiyonu düşürürler.</p><ul class=\"mb-4\"><li><strong>Endikasyon:</strong> Kalp yetersizliği (HFrEF/HFpEF) ve Kronik Böbrek Yetmezliği (KBY) olan hastalarda HbA1c'den bağımsız olarak <strong>ilk tercih</strong> haline gelmiştir.</li><li><strong>Yan Etkiler:</strong> Genital mikotik enfeksiyonlar ve nadir görülen 'Öglisemik DKA'.</li></ul>"
+    },
+    {
+      "heading": "3. GLP-1 Reseptör Agonistleri: Tokluk ve Kilo Kaybı",
+      "html": "<p>Bağırsaktan salınan inkretin hormonlarını taklit ederler. <strong>Etki:</strong> Glukoza bağımlı insülin salınımı, glukagon baskılanması ve mide boşalmasının yavaşlatılması.</p><ul class=\"mb-4\"><li><strong>KVH Koruma:</strong> Liraglutid, Semaglutid ve Dulaglutid belirgin kardiyovasküler koruma sağlar.</li><li><strong>Obezite Yönetimi:</strong> Yüksek doz formları (Wegovy vb.) diyabet dışı obezite tedavisinde de altın standarttır.</li></ul>"
+    },
+    {
+      "heading": "4. Yeni Nesil: GIP/GLP-1 Çift Agonistleri (Tirzepatid)",
+      "html": "<p>'Twinretin' olarak adlandırılan bu moleküller, hem GLP-1 hem de GIP reseptörlerini uyararak HbA1c'de %2-2.5, kiloda ise %20'ye varan azalma sağlayan devrimsel ajanlardır.</p>"
+    },
+    {
+      "heading": "5. Klasik Ajanlar: Sülfonilüreler ve DPP-4 İnhibitörleri",
+      "html": "<ul class=\"mb-4\"><li><strong>Sülfonilüreler (Glimepirid/Gliklazid):</strong> Güçlüdür ama hipoglisemi ve kilo alımı riski yüksektir.</li><li><strong>DPP-4i (Gliptinler):</strong> Kilo nötrdür, yan etkileri azdır ama KVH koruyucu özellikleri yoktur.</li></ul>"
+    },
+    {
+      "heading": "ADA 2026 Tedavi Algoritması Özeti",
+      "html": "<div class=\"bg-blue-50 p-4 border-l-4 border-blue-500 mb-4\"><strong>Karar Ağacı:</strong><ol><li><strong>ASCVD (Damar Sertliği) ön plandaysa:</strong> GLP-1Ra veya SGLT-2i.</li><li><strong>Kalp Yetersizliği veya KBY ön plandaysa:</strong> SGLT-2i (İlk tercih).</li><li><strong>Kilo Kaybı Hedefse:</strong> Tirzepatid veya Semaglutid.</li></ol></div>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Polikistik Over Sendromu (PCOS)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "PCOS", "Rotterdam", "İnsülin Direnci", "Hiperandrojenizm"],
+    "parent": "reproduktif-endokrinoloji-ana",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2023 International PCOS Guideline referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanı: Modern Rotterdam Kriterleri",
+      "html": "<p>Tanı için şu üç kriterden en az ikisinin varlığı (ve diğer etiyolojilerin dışlanması) gerekir:</p><ul class=\"mb-4\"><li><strong>1. Oligo-anovülasyon:</strong> Seyrek adet görme veya amenore.</li><li><strong>2. Hiperandrojenizm:</strong> Klinik (Hirsutizm, akne, androgenetik alopesi) veya Biyokimyasal (Serbest testosteron yüksekliği).</li><li><strong>3. Polikistik Over (PCOM):</strong> USG'de her bir overde ≥12-20 folikül veya over hacmi >10 ml.</li></ul>"
+    },
+    {
+      "heading": "Patofizyoloji: LH Artışı ve İnsülin Direnci",
+      "html": "<p>PCOS'ta hormonal denge iki koldan bozulur:</p><ul class=\"mb-4\"><li><strong>Nöroendokrin:</strong> GnRH puls frekansı artar, bu da <strong>LH/FSH oranının artmasına</strong> (>2-3) yol açar. Yüksek LH, over teka hücrelerinden aşırı androjen üretimini tetikler.</li><li><strong>Metabolik:</strong> Hastaların çoğunda (zayıf olsalar bile) <strong>İnsülin Direnci</strong> vardır. Hiperinsülinemi, karaciğerden SHBG sentezini azaltarak serbest androjenleri daha da artırır.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yönetimi: Hedefe Yönelik Yaklaşım",
+      "html": "<p>Tedavi hastanın önceliğine (gebelik isteği vs. semptom kontrolü) göre planlanır:</p><ul class=\"mb-4\"><li><strong>Yaşam Tarzı Değişikliği:</strong> %5-10 kilo kaybı, ovülasyonun geri dönmesinde ve insülin direncinin kırılmasında en etkili adımdır.</li><li><strong>Kombine Oral Kontraseptifler (KOK):</strong> İlk seçenek. Adet düzenini sağlar ve SHBG'yi artırarak hirsutizmi baskılar.</li><li><strong>Anti-androjenler (Spironolakton):</strong> KOK'a rağmen düzelmeyen hirsutizmde eklenir. (Teratojenik olduğu için kontrasepsiyon şarttır).</li><li><strong>Metformin:</strong> Bozulmuş glukoz toleransı olan vakalarda eklenir.</li><li><strong>İnfertilite:</strong> İlk seçenek <strong>Letrozol</strong> (Aromataz inhibitörü), ikinci seçenek Klomifen Sitrat'tır.</li></ul>"
+    }
+  ]
+}

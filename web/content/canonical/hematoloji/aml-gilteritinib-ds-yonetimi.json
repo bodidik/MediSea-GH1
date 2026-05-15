@@ -1,0 +1,23 @@
+{
+  "title": "AML: Gilteritinib ve Diferansiyasyon Sendromu Yönetimi",
+  "meta": {
+    "updatedAt": "06 Mar 2026",
+    "tags": ["Hematoloji", "AML", "Gilteritinib", "Diferansiyasyon Sendromu", "Onkolojik Aciller", "FLT3"],
+    "parent": "aml-gilteritinib-genel",
+    "order": 3,
+    "summary": "Nüks veya refrakter FLT3 mutasyonlu AML tedavisinde kullanılan Gilteritinib'in en kritik komplikasyonu olan Diferansiyasyon (Farklılaşma) Sendromu'nun klinik bulguları ve acil yönetim algoritması."
+  },
+  "summary": "Gilteritinib, nüks (relaps) veya refrakter FLT3 mutasyonlu (ITD ve TKD) Akut Miyeloid Lösemi (AML) hastalarında kullanılan oldukça etkili bir ajandır. Ancak FDA tarafından siyah kutu uyarısı ile belirtilen ve hayatı tehdit eden en kritik toksisitesi Diferansiyasyon (Farklılaşma) Sendromu'dur (DS).",
+  "sections": [
+    {
+      "heading": "Klinik Bulgular ve Tanısal Şüphe",
+      "text": "<p><strong>Başlangıç Zamanı:</strong> Sendrom genellikle tedavi başlandıktan sonraki birkaç gün ile birkaç hafta içerisinde kendini gösterir.</p><p><strong>Klinik Bulgular:</strong> Diferansiyasyon Sendromu şüphesi doğuran temel klinik işaretler şunlardır:</p><ul><li>Açıklanamayan ateş</li><li>Periferik ödem ve ani kilo alımı</li><li>Hipotansiyon</li><li>Plevral ve/veya perikardiyal efüzyonlar</li><li>Radyografik pulmoner opasiteler (infiltrasyonlar)</li><li>Lökositoz (dolaşımdaki blast sayısında hızlı artış)</li><li>Akut böbrek hasarı</li></ul><p><strong>Diğer Önemli Toksisiteler:</strong> Bu süreçte hastalar ayrıca Posterior Reversible Ensefalopati Sendromu (PRES), QT mesafesinde uzama ve Pankreatit açısından da yakın takip edilmelidir.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Acil Yönetim Algoritması",
+      "text": "<ul><li><strong>1. Sistemik Glukokortikoidler:</strong> Klinik şüphe uyanır uyanmaz, enfeksiyon dışlaması gibi tanısal testlerin sonucu <strong>beklenmeden derhal</strong> sistemik glukokortikoid (örn. 12 saatte bir 10 mg Deksametazon) başlanmalıdır. Bu, hayat kurtarıcı en kritik adımdır.</li><li><strong>2. Destekleyici Bakım ve Sitoredüksiyon:</strong> Sıkı sıvı dengesi yönetimi, oksijen desteği ve ampirik antibiyotik uygulanır. Eşlik eden lökositoz varsa kontrol altına almak amacıyla tedaviye <strong>Hidroksiüre</strong> eklenebilir.</li><li><strong>3. İlacın Kesilmesi ve Yoğun Bakım:</strong> Ağır ve hayatı tehdit eden vakalarda gilteritinib tedavisine geçici olarak ara verilir (discontinuation). İhtiyaca göre mekanik ventilatör, vazopressör desteği veya böbrek replasman tedavisi (diyaliz) uygulanarak hasta stabilize edilir.</li></ul>",
+      "visibility": "M"
+    }
+  ]
+}

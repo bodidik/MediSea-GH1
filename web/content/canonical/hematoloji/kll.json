@@ -1,0 +1,39 @@
+{
+  "title": "Kronik Lenfositik Lösemi (KLL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "KLL", "Kronik Lenfositik Lösemi", "BTK İnhibitörleri", "Venetoklaks", "TP53", "Yapay Zeka Taslağı"],
+    "parent": "losemiler",
+    "order": 16
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Prezantasyon",
+      "html": "<p><strong>Kronik Lenfositik Lösemi (KLL)</strong>, morfolojik olarak olgun (matür) ancak immünolojik olarak inkompetan klonal B lenfositlerin kan, kemik iliği, lenf düğümleri ve dalakta birikmesiyle karakterize indolent bir lenfoproliferatif hastalıktır. Batı toplumlarında erişkinlerde en sık görülen lösemi tipidir. Medyan tanı yaşı 70 civarındadır.</p><p><strong>Klinik Bulgular:</strong> Hastaların büyük çoğunluğu (%70-80) asemptomatiktir ve tanı rutin hemogramda saptanan <strong>izole lenfositoz</strong> ile konur. Semptomatik hastalarda ağrısız, lastik kıvamında lenfadenopati (servikal, aksiller), splenomegali ve hepatomegali görülür. İleri evrelerde kemik iliği yetmezliğine bağlı anemi ve trombositopeni gelişir.</p><p><strong>İmmün Disfonksiyon:</strong> KLL sadece bir tümör değil, aynı zamanda bir bağışıklık kusurudur. Hipogammaglobulinemiye sekonder <strong>tekrarlayan enfeksiyonlar</strong> (pnömoni, herpes zoster) majör morbidite nedenidir. Ayrıca hastaların %10-25'inde <strong>Otoimmün Hemolitik Anemi (Otoimmün HA)</strong> veya İmmün Trombositopeni (İTP) gibi otoimmün komplikasyonlar izlenir.</p>"
+    },
+    {
+      "heading": "Tanısal Kriterler ve Morfoloji",
+      "html": "<p>KLL tanısı periferik kandan <strong>Akım Sitometrisi (Flow Cytometry)</strong> ile konur; kemik iliği biyopsisi rutin tanıda şart değildir.</p><ul class=\"mb-4\"><li><strong>Tanı Kriteri:</strong> Periferik kanda en az 3 ay boyunca klonal B lenfosit sayısının <strong>≥ 5 x 10^9/L</strong> olması. (Sayı < 5 x 10^9/L ise ve LAP/organomegali yoksa tanı <em>Monoklonal B Lenfositoz [MBL]</em> olur).</li><li><strong>İmmünofenotip:</strong> Tipik KLL hücreleri pan-B belirteçlerini (CD19, CD20 [zayıf], CD23) ve karakteristik olarak bir T hücre belirteci olan <strong>CD5</strong>'i eksprese eder. (CD5+, CD23+, FMC7-, Siklin D1-). Mantel Hücreli Lenfomadan ayrımda CD23 pozitifliği ve Siklin D1 negatifliği kritiktir.</li><li><strong>Periferik Yayma:</strong> Küçük, dar sitoplazmalı, matür görünümlü lenfositler ve preparat hazırlanırken hücrelerin parçalanmasıyla oluşan karakteristik <strong>Ezme/Gölge Hücreleri (Smudge Cells / Gümprecht lekeleri)</strong> görülür.</li></ul>"
+    },
+    {
+      "heading": "Prognostik Faktörler ve Moleküler Risk",
+      "html": "<p>KLL'de klinik evreleme sistemleri (<strong>Rai</strong> ve <strong>Binet</strong>) halen kullanılsa da, tedavi kararını ve sağkalımı belirleyen asıl faktörler FISH ve moleküler genetik testlerdir:</p><ul class=\"mb-4\"><li><strong>del(17p) ve/veya TP53 Mutasyonu:</strong> En kötü prognostik gruptur. Klasik kemoimmünoterapiye (FCR, BR) dirençlidirler. Bu hastalarda mutlaka hedefli ajanlar (BTK veya BCL-2 inhibitörleri) kullanılmalıdır.</li><li><strong>IGHV Mutasyon Durumu:</strong> <em>Mutasyona uğramamış (Unmutated) IGHV:</em> Kötü prognoz, agresif seyir ve daha kısa sağkalım. <em>Mutasyona uğramış (Mutated) IGHV:</em> İyi prognoz ve daha yavaş seyir.</li><li><strong>del(11q):</strong> Bulky (dev) lenfadenopati ile seyreder, klasik olarak kötü prognozludur ancak modern BTK inhibitörleri bu olumsuz riski büyük ölçüde kırmıştır.</li><li><strong>del(13q) (İzole):</strong> KLL'de en sık saptanan (%50) genetik anomalidir ve <strong>en iyi prognoza</strong> sahiptir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Endikasyonları (Ne Zaman Tedavi Edelim?)",
+      "html": "<p>Asemptomatik erken evre (Rai 0/Binet A) KLL hastaları tedavi edilmez, <strong>\"İzle ve Bekle\" (Watch and Wait)</strong> stratejisi uygulanır. Tedaviye başlamak için <strong>iWCLL kriterlerinin</strong> karşılanması gerekir:</p><ul class=\"mb-4\"><li>İlerleyici kemik iliği yetmezliği (kötüleşen anemi ve/veya trombositopeni).</li><li>Masif (≥10 cm) veya ilerleyici/semptomatik lenfadenopati.</li><li>Masif (kosta altını ≥6 cm geçen) veya ilerleyici/semptomatik splenomegali.</li><li>Hızlı lenfosit katlanma zamanı (Doubling time < 6 ay veya 2 ayda >%50 artış).</li><li>Dirençli otoimmün komplikasyonlar (Otoimmün HA, İTP).</li><li>Şiddetli konstitüsyonel semptomlar (B semptomları, aşırı yorgunluk).</li></ul>"
+    },
+    {
+      "heading": "Modern Tedavi Stratejileri (Kemo-Free Çağı)",
+      "html": "<p>Geçmişin altın standardı olan FCR (Fludarabin, Siklofosfamid, Rituksimab) rejimi, günümüzde yerini büyük ölçüde hedefe yönelik oral ajanlara bırakmıştır.</p><p><strong>1. BTK (Bruton Tirozin Kinaz) İnhibitörleri:</strong> B hücre reseptör (BCR) sinyal yolağını bloke ederler. <em>İbrutinib</em> (1. kuşak), <em>Akalabrutinib</em> ve <em>Zanubrutinib</em> (2. kuşak). Sürekli (hastalık ilerleyene dek) kullanılırlar. Hem del(17p) hem de IGHV unmutated hastalarda mükemmel etkinlik gösterirler. İbrutinib'in atriyal fibrilasyon ve kanama gibi yan etkileri 2. kuşaklarda daha azdır.</p><p><strong>2. BCL-2 İnhibitörleri:</strong> <em>Venetoklaks</em>, anti-apoptotik BCL-2 proteinini inhibe ederek lösemi hücrelerini hızla ölüme sürükler. Genellikle bir anti-CD20 monoklonal antikoru (örn. <em>Obinutuzumab</em> veya <em>Rituksimab</em>) ile kombine edilerek <strong>\"Sabit Süreli\" (Fixed-Duration, 1 veya 2 yıl)</strong> olarak uygulanır. En büyük riski, hızla parçalanan tümör hücrelerine bağlı gelişen <strong>Tümör Lizis Sendromu'dur (TLS)</strong>; bu nedenle doz kademeli (ramp-up) artırılır.</p>"
+    },
+    {
+      "heading": "Richter Transformasyonu",
+      "html": "<p>KLL hastalarının %2-10'unda, indolent hastalığın aniden agresif bir lenfomaya (ezici çoğunlukla <strong>Diffüz Büyük B Hücreli Lenfoma [DLBCL]</strong>, nadiren Hodgkin Lenfoma) dönüşmesi tablosudur. Ateş, terleme, hızla büyüyen asimetrik lenf nodları ve aniden yükselen LDH şüphe uyandırır. Tanı, PET/BT'de en yüksek SUVmax tutulumu gösteren noddan yapılan re-biyopsi ile konur. Prognozu oldukça kötüdür ve standart DLBCL rejimlerine (R-CHOP vb.) yanıt düşüktür.</p>"
+    }
+  ]
+}

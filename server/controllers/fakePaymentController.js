@@ -1,0 +1,1 @@
+export const createSession=async(_req,res)=>res.json({sessionId:'sess_'+Math.random().toString(36).slice(2),amount:0,currency:'TRY'});export const activatePremium=async(_req,res)=>res.json({ok:true,role:'P'});

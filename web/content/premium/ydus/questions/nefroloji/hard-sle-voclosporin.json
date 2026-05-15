@@ -1,0 +1,23 @@
+{
+  "id": "q-sle-adv-005",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["Lupus", "Dirençli Vaka", "Voclosporin", "Yeni İlaçlar"],
+  "question": {
+    "text": "Class IV Lupus Nefriti tanılı hasta, 6 aylık MMF + Steroid standart indüksiyon tedavisine rağmen 'Kısmi Yanıt' (Proteinüri %50 azalmış ama hala >1 g/gün) veriyor. Kreatinin stabil seyrediyor. 2024 KDIGO/EULAR kılavuzlarına göre, bu hastada tedaviye eklenebilecek, kalsinörin inhibitörü (CNI) sınıfından olup ilaç düzeyi takibi gerektirmeyen YENİ onaylı ajan hangisidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Siklosporin A" },
+    { "id": "B", "label": "Takrolimus" },
+    { "id": "C", "label": "Voclosporin" },
+    { "id": "D", "label": "Anifrolumab" },
+    { "id": "E", "label": "Abatacept" }
+  ],
+  "answer": "C",
+  "explanation": {
+    "intro": "Bu bir 'Dirençli/Kısmi Yanıtlı' Lupus Nefriti yönetimi sorusudur.",
+    "content": "<p>Doğru cevap <strong>Voclosporin</strong>'dir.</p><ul><li><strong>Neden Voclosporin?</strong> Yeni nesil bir Kalsinörin İnhibitörüdür (CNI). MMF + Steroid tedavisine eklendiğinde (Triple tedavi), renal yanıtı belirgin artırır ve steroid kümülatif dozunu azaltır. En büyük avantajı, Takrolimus gibi sıkı ilaç düzeyi takibi gerektirmemesidir.</li><li><strong>Tuzak Analizi:</strong> Takrolimus (B şıkkı) da kullanılabilir (Multi-Target Therapy) ancak soruda özellikle 'düzey takibi gerektirmeyen' denilerek Voclosporin işaret edilmiştir.</li><li><strong>Diğer Şıklar:</strong> Anifrolumab cilt lupusunda etkilidir, nefritte rutin değildir. Abatacept çalışmaları nefritte başarısız olmuştur.</li></ul><div class='bg-blue-50 p-3 rounded mt-2 text-xs'><strong>💡 Klinik Not:</strong> Voclosporin kullanırken GFR takibi yapılmalıdır, çünkü hemodinamik etkiyle GFR'yi hafif düşürebilir.</div>"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Ch 83: Akciğer Kanserleri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": [
+      "Onkoloji",
+      "Akciğer",
+      "Sigara",
+      "EGFR"
+    ],
+    "parent": "onkoloji-hastaliklari",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Sınıflandırma",
+      "text": "<p>Histolojik olarak iki ana gruba ayrılır. Tedavi yaklaşımları tamamen farklıdır.</p><div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-gray-100 p-3 rounded'><h5 class='font-bold text-gray-800'>1. Küçük Hücreli Dışı (KHDAK - %85)</h5><p class='text-xs mt-1'>Adenokarsinom (En sık), Skuamöz Hücreli, Büyük Hücreli. Erken evrede cerrahi şansı vardır. Mutasyon analizi (EGFR, ALK, ROS1) şarttır.</p></div><div class='bg-blue-100 p-3 rounded'><h5 class='font-bold text-blue-800'>2. Küçük Hücreli (KHAK - %15)</h5><p class='text-xs mt-1'>Nöroendokrin kökenlidir. Çok hızlı büyür ve erken metastaz yapar. Cerrahi şansı azdır, kemoradyoterapiye duyarlıdır.</p></div></div>"
+    },
+    {
+      "heading": "Moleküler Testler",
+      "text": "<p>Adenokarsinomlarda <strong>Driver Mutasyonlar</strong> bakılmalıdır. EGFR pozitif ise Osimertinib, ALK pozitif ise Alectinib gibi haplar (TKI) kemoterapiden çok daha etkilidir.</p>"
+    }
+  ]
+}

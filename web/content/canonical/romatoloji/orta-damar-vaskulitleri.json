@@ -1,0 +1,19 @@
+{
+  "title": "Poliarteritis Nodosa (PAN) ve Kawasaki",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "HBV", "Çocuk", "Koroner"],
+    "parent": "vaskulit-sendromlari",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Poliarteritis Nodosa (PAN)",
+      "text": "<p>Nekrotizan vaskülittir. Böbrek damarlarını tutar (Hipertansiyon, İnfarkt) ancak Glomerülonefrit YAPMAZ (İdrarda eritrosit silendiri görülmez). <strong>Hepatit B</strong> ile ilişkilidir. Düşük ayak (Mononöritis multipleks) ve anjiyografide mikroanevrizmalar ('Tespih tanesi') tipiktir.</p>"
+    },
+    {
+      "heading": "Kawasaki Hastalığı",
+      "text": "<div class='bg-red-100 p-4 rounded border-l-4 border-red-500'><h5 class='font-bold text-red-900'>Çocukluk Çağı Vasküliti</h5><p class='text-sm mt-1 text-gray-700'>5 yaş altı çocuklarda görülür. <strong>CRASH</strong> bulguları: <strong>C</strong>onjunctivitis (Pürülan olmayan), <strong>R</strong>ash (Gövdede döküntü), <strong>A</strong>denopathy (Servikal), <strong>S</strong>trawberry tongue (Çilek dili), <strong>H</strong>and/Foot (El-ayak ödemi/soyulma) + 5 günden uzun süren Ateş. En korkulan komplikasyonu <strong>Koroner Arter Anevrizması</strong>dır. Tedavide IVIG + Aspirin verilir.</p></div>"
+    }
+  ]
+}

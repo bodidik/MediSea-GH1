@@ -1,0 +1,19 @@
+{
+  "title": "Ch 93: Testis Kanseri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Testis", "Seminom", "Genç"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 12
+  },
+  "sections": [
+    {
+      "heading": "Sınıflandırma",
+      "text": "<p>Ağrısız kitle ile gelir. <strong>Germ Hücreli Tümörler</strong> (%95) ikiye ayrılır:</p><ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Seminom:</strong> Radyoterapiye çok duyarlıdır. Prognozu mükemmeldir.</li><li><strong>Non-Seminom:</strong> AFP ve beta-hCG yükselebilir. Daha agresiftir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Başarısı",
+      "text": "<div class='bg-green-50 p-4 rounded border-l-4 border-green-500'><h5 class='font-bold text-green-900'>Sisplatin Mucizesi</h5><p class='text-sm mt-2 text-gray-700'>Metastatik olsa bile (Beyin metastazı dahil) <strong>BEP rejimi</strong> (Bleomisin, Etoposid, Sisplatin) ile %90 üzerinde kür (tam iyileşme) sağlanır. Genç hastalarda fertilite koruyucu önlemler (sperm dondurma) unutulmamalıdır.</p></div>"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "ACTH Aksı ve Cushing Hastalığı",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Cushing", "ACTH", "Kortizol", "Deksametazon Testi", "IPSS"],
+    "parent": "Ön-hipofiz-hastaliklari-giris",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & Endocrine Society 2024/25 Cushing's Syndrome Guideline referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Terminoloji: Sendrom vs. Hastalık",
+      "html": "<p>Hiperkortizolizm tanısında terminolojik kesinlik hayati önem taşır:</p><ul class=\"mb-4\"><li><strong>Cushing Sendromu:</strong> Herhangi bir nedenle (eksojen steroid, adrenal tümör, ektopik ACTH vb.) kronik glukokortikoid fazlalığının klinik sonucudur.</li><li><strong>Cushing Hastalığı:</strong> Hiperkortizolizmin nedeninin <strong>ACTH salgılayan bir hipofiz adenomu</strong> olmasıdır (Cushing Sendromu'nun en sık endojen nedenidir).</li></ul>"
+    },
+    {
+      "heading": "Klinik İpuçları: Spesifik vs. Non-spesifik",
+      "html": "<p>Birçok bulgu (obezite, hipertansiyon) non-spesifik olsa da, Cushing tanısını destekleyen <strong>yüksek diskriminatif</strong> bulgular şunlardır:</p><ul class=\"mb-4\"><li><strong>Proksimal Kas Güçsüzlüğü:</strong> Sandalyeden kalkmada zorluk.</li><li><strong>Geniş Mor Stria:</strong> > 1 cm genişliğinde, mor renkli cilt çatlakları.</li><li><strong>Pletorik Yüz ve Bufalo Hörgücü:</strong> Supraklaviküler yağ yastıkçıkları ile birlikte.</li><li><strong>Cilt İnceltisi ve Ekimozlar:</strong> Kağıt inceliğinde cilt (atropi).</li></ul>"
+    },
+    {
+      "heading": "Birinci Basamak Tanı: Hiperkortizolizmin Kanıtlanması",
+      "html": "<p>Önce 'Cushing var mı?' sorusu yanıtlanmalıdır. Aşağıdaki üç testten en az biri pozitif olmalıdır:</p><ol class=\"mb-4\"><li><strong>24 Saatlik İdrar Serbest Kortizolü:</strong> Normalin 3 katı yükseklik anlamlıdır.</li><li><strong>Gece Yarısı (23:00) Tükürük Kortizolü:</strong> Kortizolün sirkadiyen ritminin bozulduğunu gösterir.</li><li><strong>1 mg Gece Deksametazon Baskılama Testi (DST):</strong> Sabah kortizolü < 1.8 µg/dL (50 nmol/L) ise Cushing dışlanır.</li></ol>"
+    },
+    {
+      "heading": "İkinci Basamak: Ayırıcı Tanı (ACTH Ölçümü)",
+      "html": "<p>Cushing kanıtlandıktan sonra 'Kaynak neresi?' sorusu için plazma ACTH ölçülür:</p><ul class=\"mb-4\"><li><strong>ACTH < 5 pg/mL:</strong> ACTH Bağımsız (Adrenal kaynaklı). <strong>Adrenal BT</strong> çekilir.</li><li><strong>ACTH > 20 pg/mL:</strong> ACTH Bağımlı (Hipofiz veya Ektopik).</li></ul>"
+    },
+    {
+      "heading": "Üçüncü Basamak: Hipofiz mi, Ektopik mi?",
+      "html": "<p>ACTH bağımlı vakalarda ayrım en zor basamaktır:</p><ul class=\"mb-4\"><li><strong>Hipofiz MRI:</strong> Adenom izlenirse tanıya yaklaşıılır (> 6mm).</li><li><strong>Yüksek Doz (8 mg) DST:</strong> Cushing hastalığında kortizol baskılanır; ektopik vakalarda genellikle baskılanmaz.</li><li><strong>İnferior Petrozal Sinüs Örneklemesi (IPSS):</strong> <strong>Altın Standart.</strong> MRI negatif veya şüpheli ise hipofiz ve periferik ACTH gradyentini ölçerek kesin ayrımı yapar.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "html": "<ul class=\"mb-4\"><li><strong>Cerrahi:</strong> Transsfenoidal rezeksiyon (Cushing Hastalığı için ilk seçenek).</li><li><strong>Medikal Tedavi:</strong> Cerrahi başarısızlığında veya hazırlık aşamasında kullanılır. <em>Ketokonazol</em> (steroidogenez inhibitörü) veya yeni bir ajan olan <strong>Osilodrostat</strong>.</li><li><strong>Bilateral Adrenalektomi:</strong> Hiçbir tedaviye yanıt vermeyen refrakter vakalarda son seçenek (Dikkat: <em>Nelson Sendromu</em> riski).</li></ul>"
+    }
+  ]
+}

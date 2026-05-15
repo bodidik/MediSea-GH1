@@ -1,0 +1,31 @@
+{
+  "title": "Lösemiler",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Lösemi", "AML", "ALL", "KML", "KLL", "Kategori", "Yapay Zeka Taslağı"],
+    "parent": "hematolojik-maligniteler",
+    "order": 21
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, alt lösemi türlerini (AML, ALL, KLL, KML) tek bir çatı altında toplamak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş bir <strong>kategori (hub) taslağıdır</strong>. İlerleyen süreçte yazarın özgün notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Temel Patofizyoloji",
+      "html": "<p><strong>Lösemiler</strong>, kemik iliğindeki kan yapıcı (hematopoietik) kök veya progenitör hücrelerde meydana gelen genetik mutasyonlar sonucu ortaya çıkan klonal malignitelerdir. Kontrolsüz çoğalan bu neoplastik hücreler (lösemi hücreleri) kemik iliğini istila ederek normal kan yapımını (hematopoezi) baskılar. Bunun sonucunda hastalarda <strong>kemik iliği yetmezliği</strong> bulguları olan anemi (yorgunluk), nötropeni (enfeksiyonlara yatkınlık) ve trombositopeni (kanama eğilimi) gelişir.</p>"
+    },
+    {
+      "heading": "Sınıflandırma Mantığı (Dört Ana Sütun)",
+      "html": "<p>Lösemiler tarihsel ve klinik olarak iki temel eksende sınıflandırılır:</p><ul class=\"mb-4\"><li><strong>1. Hücrenin Olgunlaşma (Matürasyon) Derecesi ve Klinik Seyir:</strong><br><ul><li><em>Akut Lösemiler:</em> Olgunlaşmamış öncül hücrelerin (blastların) kemik iliğinde hızla (%20'nin üzerinde) birikmesiyle oluşur. Tedavi edilmezse haftalar/aylar içinde ölümcüldür.</li><li><em>Kronik Lösemiler:</em> Kısmen olgunlaşmış (matür görünümlü) hücrelerin yavaş ama sürekli birikimiyle oluşur. Yıllar süren indolent (yavaş) bir seyir izlerler.</li></ul></li><li><strong>2. Hücresel Köken (Lineage):</strong><br><ul><li><em>Miyeloid Seri:</em> Eritrosit, granülosit, monosit veya megakaryosit öncüllerinden köken alır.</li><li><em>Lenfoid Seri:</em> B veya T lenfosit öncüllerinden köken alır.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Akut Lösemiler Çatısı (Hızlı ve Agresif)",
+      "html": "<p>Bu gruptaki hastalıklar acil hematolojik müdahale gerektirir. Tanı için kemik iliğinde veya periferik kanda <strong>>%20 blast</strong> saptanması şarttır (belirli genetik mutasyonlar hariç).</p><ul class=\"mb-4\"><li><strong>Akut Miyeloid Lösemi (AML):</strong> Erişkinlerde en sık görülen akut lösemidir. <em>Auer çubukları (Auer rods)</em> ve Myeloperoksidaz (MPO) pozitifliği karakteristiktir.</li><li><strong>Akut Lenfoblastik Lösemi (ALL):</strong> Çocukluk çağının en sık görülen kanseridir ancak erişkinlerde de görülür. SSS tutulumu sıktır. TdT ve CD19/CD3 gibi lenfoid belirteçler pozitiftir.</li></ul>"
+    },
+    {
+      "heading": "Kronik Lösemiler Çatısı (İndolent ve Sinsi)",
+      "html": "<p>Bu gruptaki hastalıklar genellikle rutin kan sayımlarında tesadüfen saptanır ve yıllarca semptom vermeyebilir. Ancak zamanla akut lösemilere veya agresif lenfomalara dönüşüm (transformasyon) riskleri vardır.</p><ul class=\"mb-4\"><li><strong>Kronik Miyeloid Lösemi (KML):</strong> <em>t(9;22) Philadelphia kromozomu (BCR::ABL1 füzyonu)</em> ile karakterizedir. Tirozin kinaz inhibitörleri (TKI) ile yönetilir. Tedavi edilmezse Akut Blastik Faza (Lösemiye) dönüşür.</li><li><strong>Kronik Lenfositik Lösemi (KLL):</strong> Erişkinlerde (Batı toplumunda) en sık görülen lösemidir. Olgun görünümlü B hücrelerinin (CD5+, CD23+) birikimiyle oluşur. <em>Richter transformasyonu</em> (DLBCL'ye dönüşüm) en korkulan komplikasyonudur.</li></ul>"
+    }
+  ]
+}

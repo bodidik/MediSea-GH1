@@ -1,0 +1,27 @@
+{
+  "title": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı",
+  "meta": {
+    "updatedAt": "03 May 2026",
+    "tags": ["Kardiyoloji", "Nefroloji", "Aprocitentan", "KBH", "Endikasyon", "YDUS"],
+    "parent": "aprocitentan-direncli-hipertansiyon",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "1. Onaylı Endikasyon Kısıtlılığı (Kritik Ayrım)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Dirençli hipertansiyonu (RH) <strong>olmayan</strong> ve Evre 3-4 Kronik Böbrek Hastalığı (KBH) bulunan hastalarda aprocitentan&apos;ın güncel kılavuz onaylı bir kullanımı veya bu spesifik gruba ait klinik çalışma verisi <strong>bulunmamaktadır.</strong></p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1 flex items-center gap-2\">FDA ve EMA Onay Sınırı</h4><p class=\"text-[11.5px] text-rose-800 leading-relaxed\">Aprocitentan yalnızca en az üç farklı sınıftan antihipertansif ilacın (biri diüretik olmak koşuluyla) maksimum tolere edilebilir dozda kullanılmasına rağmen kan basıncı kontrol edilemeyen <strong>dirençli hipertansiyonlu</strong> erişkin hastaların tedavisinde onaylanmıştır. Dirençli olmayan esansiyel hipertansiyonda veya yalnızca KBH&apos;da progresyonu yavaşlatmak amacıyla kullanımı için <strong>bir endikasyon onayı yoktur.</strong></p></div>"
+    },
+    {
+      "heading": "2. Klinik Verilerin Kökeni ve Çalışma Kısıtlılıkları",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">PRECISION Çalışması (Evre 3-4 KBH)</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Evre 3-4 KBH hastalarının aprocitentandan fayda gördüğüne ve albümin/kreatinin oranında (UACR) %30 düşüş sağlandığına dair verilerin tamamı PRECISION çalışmasına dayanır. Ancak bu çalışmadaki hastaların <strong>tümü \"gerçek dirençli hipertansiyon\" olgularıdır.</strong> Bu olumlu sonuçlar, dirençli olmayan KBH hastalarına doğrudan ekstrapole edilemez.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Faz 2 (Verweij ve ark.) Dışlama Kriterleri</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">İlacın dirençli olmayan Evre 1-2 esansiyel HT hastalarındaki etkinliği bir Faz 2 doz-yanıt çalışmasında test edilmiş ve lisinopril/plaseboya karşı etkili bulunmuştur. Ancak dizayn gereği <strong>böbrek yetmezliği, KVH ve diyabeti olan hastalar çalışmadan dışlanmıştır.</strong> Bu nedenle, dirençsiz Evre 3-4 KBH hastalarındaki etkinliğine ve sıvı retansiyonu riskine dair veri elde edilememiştir.</p></div></div></div>"
+    },
+    {
+      "heading": "3. Gelecek Perspektifi: ERA'lar ve KBH",
+      "html": "<div class=\"space-y-4 mb-4\"><p class=\"text-[11.5px] leading-relaxed text-slate-700\">Endotelin reseptör antagonistlerinin (ERA), proteinüriyi azaltarak KBH progresyonunu yavaşlatma potansiyeli (başka bir ERA olan <em>atrasentan&apos;ın SONAR çalışmasındaki başarısı</em> gibi) bilinmektedir.</p><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Aprocitentan İçin Mevcut Durum</h4><ul class=\"text-[11px] text-indigo-800 space-y-2 list-disc list-inside ml-1\"><li>Aprocitentanın bu özellikleri taşıdığına dair biyolojik rasyonel mevcut olsa da, diyabetik nefropati, KBH progresyonu veya pulmoner arteriyel hipertansiyonda kullanımını araştıran <strong>büyük çaplı aktif bir Faz 2/Faz 3 klinik çalışması bulunmamaktadır.</strong></li><li>Dirençli HT ve KBH birlikteliğini spesifik incelemek üzere tasarlanan Faz 3 <strong>INSPIRE-CKD (NCT04162366)</strong> çalışması, tıbbi olmayan (ticari) kararlar neticesinde hasta alımı tamamlanmadan <strong>sonlandırılmış ve sonuç raporlanmamıştır.</strong></li></ul></div></div>"
+    },
+    {
+      "heading": "💡 YDUS Klinik Pratik Spotu",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white\"><p class=\"text-[11.5px] font-bold text-amber-400 leading-relaxed text-center tracking-wide\">Sonuç Olarak:</p><p class=\"text-[11.5px] text-slate-200 leading-relaxed mt-2 text-center\">Aprocitentan, Evre 3-4 KBH hastalarında <strong>ancak ve ancak altta yatan dirençli hipertansiyon tablosu varsa endikedir</strong>; tek başına hipertansif Evre 3-4 KBH hastalarında kullanımı şu an için söz konusu değildir.</p></div>"
+    }
+  ]
+}

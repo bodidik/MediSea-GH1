@@ -1,0 +1,15 @@
+{
+  "title": "Adrenal Korteks Hastalıkları",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Endokrin", "Korteks", "Steroid"],
+    "parent": "adrenal-bez-hastaliklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Anatomi",
+      "text": "<p>Adrenal bezin dış kısmıdır ve %90'ını oluşturur. Üç tabakadan oluşur: <strong>Zona Glomerulosa</strong> (Aldosteron), <strong>Zona Fasiculata</strong> (Kortizol) ve <strong>Zona Reticularis</strong> (Androjenler).</p>"
+    }
+  ]
+}

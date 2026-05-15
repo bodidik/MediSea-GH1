@@ -1,0 +1,31 @@
+{
+  "title": "Mikrositer Anemiler",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Mikrositer", "MCV", "Talasemi", "Sideroblastik", "Yapay Zeka Taslağı"],
+    "parent": "anemiler",
+    "order": 31
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji: Neden Küçülürler?",
+      "html": "<p>Eritrositlerin ortalama hacminin (MCV) <strong>80 fL'nin altında</strong> olmasına mikrositoz denir. Mikrositer anemilerin temelinde tek bir ortak mekanizma yatar: <strong>Hemoglobin sentezindeki kusur.</strong></p><p>Hemoglobin molekülü üç ana bileşenden oluşur: <strong>Demir + Porfirin (Halkası) + Globin (Zincirleri)</strong>. Bu üçünden herhangi birinin eksikliği veya sentez kusuru, hücrenin sitoplazmasını yeterince dolduramamasına ve hücre bölünmesi sırasında eritrositin giderek küçülmesine neden olur.</p>"
+    },
+    {
+      "heading": "Ayırıcı Tanı (TAILS Akronimi)",
+      "html": "<p>Mikrositer anemilerin ayırıcı tanısı, tıbbın en meşhur akronimlerinden biri olan <strong>TAILS</strong> ile akılda tutulur:</p><ul class=\"mb-4\"><li><strong>T - Talasemi (Thalassemia):</strong> Globin zinciri sentez kusuru. (Genetik mutasyonlar).</li><li><strong>A - Anemia of Chronic Disease (Kronik Hastalık Anemisi):</strong> İleri evrede demirin makrofajlarda hapsolması nedeniyle mikrositerleşir. (Hepsidin yüksekliği).</li><li><strong>I - Iron Deficiency (Demir Eksikliği Anemisi - DEA):</strong> Demir eksikliği. (Dünyada en sık neden).</li><li><strong>L - Lead Poisoning (Kurşun Zehirlenmesi):</strong> Porfirin sentezindeki enzimlerin (ALA dehidrataz ve Ferroşelataz) kurşun tarafından inhibe edilmesi.</li><li><strong>S - Sideroblastic Anemia (Sideroblastik Anemi):</strong> Porfirin halkasının sentez kusuru. Demir vardır ama hem halkasına giremez, mitokondride birikir.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Algoritma ve Mentzer İndeksi",
+      "html": "<p>Mikrositer bir anemi ile karşılaşıldığında ilk bakılacak parametre <strong>Serum Ferritin</strong> düzeyidir:</p><ul class=\"mb-4\"><li><strong>Ferritin Düşük (<15-30 ng/mL):</strong> Kesin tanı <em>Demir Eksikliği Anemisi (DEA)</em>'dir. Başka test aramaya gerek yoktur, kanama odağı (etyoloji) aranmalıdır.</li><li><strong>Ferritin Normal veya Yüksek:</strong> Demir eksikliği dışlanmıştır. Diğer nedenlere (TALS) yönelmek gerekir:<ul><li><em>Talasemi Minör (Taşıyıcılığı) vs. DEA Ayrımı:</em> Talasemide kemik iliği sağlamdır, anemiye tepki olarak bolca ama küçük (mikrositik) eritrosit üretir. Bu nedenle <strong>Eritrosit (RBC) sayısı normal/yüksektir (>5 milyon)</strong>. DEA'da ise kemik iliği demirsiz kaldığı için RBC sayısı düşüktür.</li><li><strong>Mentzer İndeksi (MCV / RBC):</strong> Bu oran <strong>< 13 ise Talasemi</strong> lehine (hücreler çok küçük ama sayıları çok fazla); <strong>> 13 ise DEA</strong> lehinedir. Ayrıca Talasemide hücrelerin hepsi aynı genetik defekti taşıdığı için boyutları birbirine benzer (RDW normaldir); DEA'da ise RDW yüksektir.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Sideroblastik Anemi ve Kurşun Zehirlenmesi",
+      "html": "<p>Demir depolarda (Ferritin) ve kanda yüksektir, ancak porfirin halkası yapılamadığı için demir mitokondrilerde hapsolur.</p><ul class=\"mb-4\"><li><strong>Sideroblastik Anemi:</strong> Herediter (ALAS2 enzim mutasyonu, X'e bağlı) veya edinsel (Alkolizm, İzoniyazid [B6 vitamini eksikliği yapar], Bakır eksikliği, MDS) olabilir. Kesin tanı, kemik iliği aspirasyonunda Prusya mavisi boyası ile çekirdek etrafında mitokondrilerde biriken demirin oluşturduğu <strong>Yüzük (Ring) Sideroblastların</strong> görülmesiyle konur.</li><li><strong>Kurşun Zehirlenmesi:</strong> Genellikle eski boyalı evlerde yaşayan çocuklarda veya endüstri işçilerinde görülür. Periferik yaymada eritrositlerin içinde yıkılamayan ribozom kalıntılarına bağlı <strong>Bazofilik Noktalanma (Basophilic Stippling)</strong> görülmesi tipiktir. Diş etlerinde mavi kurşun çizgisi (Burton çizgisi), karın ağrısı ve nöropati (düşük el/bilek) kliniğe eşlik eder.</li></ul>"
+    }
+  ]
+}

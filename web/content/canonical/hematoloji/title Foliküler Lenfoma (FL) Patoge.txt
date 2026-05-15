@@ -1,0 +1,14 @@
+"title": "Foliküler Lenfoma (FL) Patogenezinde t(14;18) Translokasyonunun Rolü",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "İndolen", "t(14;18)"],
+    "parent": "folikuler-lenfoma",
+    "order": 6
+  },
+  "sections": [
+{
+      "heading": "Foliküler Lenfoma (FL) Patogenezinde t(14;18) Translokasyonunun Rolü",
+      "html": "<p><strong>Kemik İliği Evresi ve Genetik Temel:</strong> t(14;18)(q32;q21) translokasyonu, klasik FL vakalarının yaklaşık %85-90'ında saptanan ve patogenezi başlatan bir olaydır. B hücre gelişiminin erken dönemlerinde, kemik iliğindeki pre-B veya pro-B hücre evresinde gerçekleşir. Bu olay, RAG1 ve RAG2 enzimlerinin aracılık ettiği V(D)J rekombinasyonu sırasındaki bir DNA onarım hatası sonucunda meydana gelir.</p><p><strong>BCL2 Aşırı Ekspresyonu ve Apoptoz Direnci:</strong> IGH promotörünün etkisiyle, anti-apoptotik bir protein olan BCL2'nin konstitütif ve yüksek düzeyde ekspresyonu (aşırı ekspresyon) gerçekleşir. Normalde germinal merkezde yüksek afiniteli antikor üretemeyen B hücreleri apoptoza yönlendirilirken, BCL2 aşırı ekspresyonu bu programlı hücre ölümünü bloke ederek hücrelere olağandışı ve uzamış bir sağkalım avantajı sağlar.</p><p><strong>Germinal Merkez Olayları ve Genomik İnstabilite:</strong> Apoptozdan kaçan bu 'kurucu' klonlar lenf düğümlerine göç ederek germinal merkez reaksiyonlarına dahil olurlar ve burada işlevselliklerini korurlar. Germinal merkezde, aktivasyon-indüklü sitidin deaminaz (AID) enziminin tetiklediği somatik hipermutasyon (SHM) ve sınıf değiştirme rekombinasyonu (CSR) süreçlerine maruz kalırlar. BCL2 sayesinde ölmeyen bu hücrelerde, AID aracılı bu süreçler hücresel genomik instabilite yaratarak ek lenfomajenik mutasyonların birikmesine zemin hazırlar.</p><p><strong>Yeterlilik Durumu ve İkincil Vuruşlar:</strong> t(14;18) translokasyonu ve BCL2 aşırı ekspresyonu FL gelişimi için gereklidir ancak tek başına yeterli değildir. Nitekim, sağlıklı yetişkinlerin periferik kanında veya lenfoid dokularında çok düşük seviyelerde t(14;18) taşıyan B hücreleri tespit edilebilir ve bu kişilerin neredeyse hiçbiri lenfoma geliştirmez. Gerçek lenfomagenezin tamamlanması için KMT2D, CREBBP, EZH2, EP300 gibi epigenetik regülatör genleri hedef alan ikincil (sürücü) mutasyonların da kazanılması şarttır.</p>"
+    }
+  [
+}

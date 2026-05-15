@@ -1,0 +1,31 @@
+{
+  "title": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "DKA", "HHS", "Anyon Açığı", "İnsülin İnfüzyonu", "Hipokalemi"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Kritik Bakım Modülü:</strong> Harrison 21st Ed & ADA 2025 Acil Yönetim Protokolü baz alınmıştır.</em></p>"
+    },
+    {
+      "heading": "1. Patofizyolojik Farklar: Asidoz vs. Dehidratasyon",
+      "html": "<p>Her iki tabloda da insülin eksikliği ve karşıt hormon (glukagon, kortizol, katekolamin) artışı vardır:</p><ul class=\"mb-4\"><li><strong>Diyabetik Ketoasidoz (DKA):</strong> Genellikle Tip 1 diyabetlilerde görülür. Mutlak insülin eksikliği lipolizi tetikler, serbest yağ asitleri karaciğerde <strong>keton cisimlerine</strong> (asetoasetat, beta-hidroksibütirat) dönüşür.</li><li><strong>Hiperozmolar Hiperglisemik Durum (HHS):</strong> Genellikle Tip 2 diyabetlilerde görülür. Mevcut olan az miktardaki insülin ketogenezi engeller ama hiperglisemiyi önleyemez. Ozmotik diürez nedeniyle <strong>şiddetli dehidratasyon</strong> ön plandadır.</li></ul>"
+    },
+    {
+      "heading": "2. Tanı Kriterleri ve Laboratuvar Karşılaştırması",
+      "html": "<div class=\"overflow-x-auto mb-6\"><table class=\"min-w-full text-xs text-left text-slate-600 border border-slate-200 rounded-lg\"> <thead class=\"bg-slate-100 text-slate-700 uppercase\"> <tr> <th class=\"px-4 py-2\">Parametre</th> <th class=\"px-4 py-2\">DKA (Hafif/Ağır)</th> <th class=\"px-4 py-2\">HHS</th> </tr> </thead> <tbody> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">Plazma Glukozu</td> <td class=\"px-4 py-2\">> 250 mg/dL</td> <td class=\"px-4 py-2 text-red-600\">> 600 mg/dL</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">Arteriyel pH</td> <td class=\"px-4 py-2\">< 7.30 (Ağırda < 7.0)</td> <td class=\"px-4 py-2\">> 7.30</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">Serum Bikarbonat</td> <td class=\"px-4 py-2\">< 18 mEq/L</td> <td class=\"px-4 py-2\">> 18 mEq/L</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">İdrar/Serum Ketonu</td> <td class=\"px-4 py-2 font-bold\">Pozitif (+++)</td> <td class=\"px-4 py-2\">Negatif / Eser</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">Efektif Ozmolalite</td> <td class=\"px-4 py-2\">Değişken</td> <td class=\"px-4 py-2 text-red-600\">> 320 mOsm/kg</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">Anyon Açığı</td> <td class=\"px-4 py-2 text-red-600\">Yüksek (> 12)</td> <td class=\"px-4 py-2\">Normal</td> </tr> </tbody></table></div>"
+    },
+    {
+      "heading": "3. Tedavi Yönetimi: Adım Adım Müdahale",
+      "html": "<p>Tedavide öncelik sırası hayati önem taşır:</p><ul class=\"mb-4\"><li><strong>Sıvı Replasmanı:</strong> İlk saatte 1-1.5 L İzotonik (%0.9 NaCl). Sodyum durumuna göre tedavi devam eder.</li><li><strong>Potasyum (K) Yönetimi:</strong> ⚠️ <em>Kritik:</em> K < 3.3 mEq/L ise insülin <strong>asla başlanmaz</strong>, önce potasyum replasmanı yapılır. İnsülin potasyumu hücre içine sokarak arrest riskini artırır.</li><li><strong>İnsülin İnfüzyonu:</strong> 0.1 ünite/kg bolus, ardından 0.1 ünite/kg/saat infüzyon. Glukoz 200'e (DKA) veya 300'e (HHS) düştüğünde sıvıya <strong>Dekstroz (%5)</strong> eklenir.</li><li><strong>Asidoz Takibi (DKA için):</strong> Kriter, kan şekerinin düşmesi değil, <strong>anyon açığının kapanması</strong> ve pH'ın düzelmesidir.</li></ul>"
+    },
+    {
+      "heading": "4. Komplikasyonlar ve Kapatma",
+      "html": "<p>Tedavi sırasında en büyük risk <strong>Serebral Ödem</strong>'dir (Özellikle çocuklarda ve kan şekeri çok hızlı düşürüldüğünde). Hastada bilinç değişikliği olursa akla gelmelidir.</p>"
+    }
+  ]
+}

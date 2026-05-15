@@ -1,0 +1,38 @@
+{
+  "title": "AML: FLT3 İnhibitörleri (Genel Bakış)",
+  "meta": {
+    "updatedAt": "07 Mar 2026",
+    "tags": ["Hematoloji", "AML", "FLT3", "Tirozin Kinaz İnhibitörleri", "Midostaurin", "Gilteritinib", "Quizartinib"],
+    "parent": "aml",
+    "order": 2,
+    "summary": "AML hastalarında saptanan FLT3 (ITD veya TKD) mutasyonlarını hedefleyen tirozin kinaz inhibitörlerinin (TKI) sınıflandırılması ve klinik stratejileri."
+  },
+  "summary": "Akut Miyeloid Lösemi (AML) hastalarının yaklaşık %30-35'inde saptanan ve lösemik hücrelerin proliferasyonunu artırarak özellikle ITD formunda kötü prognozla ilişkili olan FLT3 gen mutasyonlarını (ITD veya TKD) hedefleyen hedefe yönelik tirozin kinaz inhibitörleridir (TKI).",
+  "sections": [
+    {
+      "heading": "Midostaurin (Birinci Kuşak, Tip 1 İnhibitör)",
+      "text": "<ul><li><strong>Hedef Spektrumu:</strong> Geniş spektrumlu multikinaz inhibitörüdür. FLT3'ün yanı sıra KIT'i de inhibe eder. Hem FLT3-ITD hem de FLT3-TKD mutasyonlarına karşı etkilidir.</li><li><strong>Klinik Endikasyon ve Kullanım:</strong> Yeni tanı (de novo) FLT3 mutasyonlu AML hastalarının birinci basamak tedavisinde onaylıdır. Tek başına kullanılmaz; standart '7+3' indüksiyon ve konsolidasyon kemoterapisi ile kombine edilerek (8. ve 21. günler arası) verilir. Remisyon sonrası 1 yıla kadar idame tedavisi olarak da kullanılabilir.</li><li><strong>Kanıt ve Direnç:</strong> RATIFY (CALGB 10603) Faz 3 çalışması ile kanıtlanmıştır. FLT3 N676 mutasyonu gelişimi ile direnç izlenir.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Gilteritinib (Üçüncü Kuşak, Tip 1 İnhibitör)",
+      "text": "<ul><li><strong>Hedef Spektrumu:</strong> FLT3 reseptörüne karşı yüksek seçiciliğe ve güce sahiptir. Hem FLT3-ITD hem de FLT3-TKD mutasyonlarını hedefler.</li><li><strong>Klinik Endikasyon ve Kullanım:</strong> Nüks (relaps) veya dirençli (refrakter) FLT3 mutasyonlu erişkin AML hastalarının standart tedavisidir. Kemoterapi ile kombine edilmez, monoterapi (tek ajan) olarak sürekli kullanılır.</li><li><strong>Kanıt ve Direnç:</strong> ADMIRAL Faz 3 çalışması. Tedavi altında klonal seleksiyonla gelişen NRAS veya KRAS gibi sekonder aktive edici sinyal yolak mutasyonları direnç yapar.</li><li><strong>Yan Etki Profili:</strong> Siyah kutu uyarısı olan <strong>Diferansiyasyon Sendromu</strong>, PRES, pankreatit ve QTc uzaması.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Quizartinib (İkinci Kuşak, Tip 2 İnhibitör)",
+      "text": "<ul><li><strong>Hedef Spektrumu:</strong> FLT3 reseptörüne karşı son derece spesifik ve güçlüdür ancak <strong>yalnızca FLT3-ITD</strong> mutasyonlarına karşı etkilidir (FLT3-TKD mutasyonlarına karşı etkisizdir).</li><li><strong>Klinik Endikasyon ve Kullanım:</strong> Yeni tanı FLT3-ITD pozitif AML hastalarında standart '7+3' yoğun indüksiyon kemoterapisine eklenerek (8-21. günlerde) kullanılır. Konsolidasyon sonrası 3 yıla kadar tek ajan idame tedavisinde yeri vardır.</li><li><strong>Yan Etki Profili:</strong> Ciddi QTc mesafesinde uzama, torsades de pointes ve kardiyak arrest riski (bu nedenle sıkı REMS programı ile verilir). QuANTUM-First Faz 3 çalışması ile onaylanmıştır.</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Sorafenib (Birinci Kuşak, Tip 2 İnhibitör)",
+      "text": "<ul><li><strong>Hedef Spektrumu:</strong> Multikinaz inhibitörüdür. Tip 2 olduğu için FLT3-ITD'ye etkili olmakla birlikte FLT3-TKD mutasyonlarına karşı dirençlidir.</li><li><strong>Klinik Endikasyon ve Kullanım:</strong> Öncelikle hepatosellüler ve renal hücreli karsinomlarda onaylıdır. AML'de endikasyon dışı (off-label) olarak, özellikle ileri yaş / yoğun kemoterapiye uygun olmayan (unfit) hastalarda azasitidin veya standart kemoterapilerle kombinasyon halinde kullanılmaktadır.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Özet Klinik Strateji Algoritması",
+      "text": "<ul><li><strong>Yeni Tanı Fit Hasta:</strong> İndüksiyon/Konsolidasyon + Midostaurin (ITD veya TKD varlığında) <strong>VEYA</strong> Quizartinib (Sadece ITD varlığında).</li><li><strong>Nüks veya Dirençli Hasta:</strong> Kurtarma tedavisi olarak Gilteritinib monoterapisi (ITD veya TKD varlığında).</li></ul>",
+      "visibility": "M"
+    }
+  ]
+}

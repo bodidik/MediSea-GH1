@@ -1,0 +1,5 @@
+import StudyProgram from '../models/StudyProgram.js';
+import StudyProgress from '../models/StudyProgress.js';
+export const getProgram = async (req,res)=>{const prog=await StudyProgram.findOne({code:req.params.code}).lean();if(!prog)return res.status(404).json({error:'Program not found'});res.json(prog)};
+export const getMyProgress = async (req,res)=>{const userId=req.user?._id||'demo';const g=await StudyProgress.findOne({userId,programCode:req.params.code}).lean();res.json(g||{userId,programCode:req.params.code,completedDays:[]})};
+export const toggleDay = async (req,res)=>{const userId=req.user?._id||'demo';const {dayNo}=req.body;if(dayNo===undefined)return res.status(400).json({error:'dayNo required'});let doc=await StudyProgress.findOne({userId,programCode:req.params.code});if(!doc)doc=new StudyProgress({userId,programCode:req.params.code,completedDays:[]});const i=doc.completedDays.indexOf(dayNo);if(i>=0)doc.completedDays.splice(i,1);else doc.completedDays.push(dayNo);doc.updatedAt=new Date();await doc.save();res.json({ok:true,completedDays:doc.completedDays})};

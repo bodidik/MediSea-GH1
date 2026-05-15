@@ -1,0 +1,39 @@
+{
+  "title": "Multipl Miyelom (MM)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Multipl Miyelom", "Plazma Hücresi", "CRAB", "Daratumumab", "CAR-T", "Yapay Zeka Taslağı"],
+    "parent": "hematolojik-maligniteler",
+    "order": 22
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Multipl Miyelom (MM)</strong>, kemik iliğinde klonal (kanserleşmiş) plazma hücrelerinin kontrolsüz çoğalması ve genellikle kana veya idrara monoklonal bir immünglobulin (M-proteini / Paraprotein) salgılamasıyla karakterize bir B hücreli malignitedir.</p><p>Neoplastik plazma hücreleri, kemik iliğini istila ederek normal kan yapımını bozar (anemi) ve osteoklastları aşırı aktive edip osteoblastları baskılayarak kemik yıkımına (litik lezyonlar ve hiperkalsemi) neden olur. Ayrıca salgılanan serbest hafif zincirler (Bence-Jones proteinleri) böbrek tübüllerini tıkayarak <strong>Kast (Cast) Nefropatisi</strong> adı verilen akut böbrek yetmezliğine yol açar.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon (CRAB Kriterleri)",
+      "html": "<p>Miyelomun klasik uç organ hasarı bulguları <strong>CRAB</strong> akronimi ile özetlenir. Hastaların tedavisine başlanması için bu bulgulardan en az birinin (veya SLiM kriterlerinden birinin) olması şarttır:</p><ul class=\"mb-4\"><li><strong>C - Calcium (Hiperkalsemi):</strong> Kemik yıkımına bağlı serum kalsiyumunun >11 mg/dL olması. Konfüzyon, kabızlık ve poliüri ile gelir.</li><li><strong>R - Renal Yetmezlik:</strong> Kreatinin klerensinin <40 mL/dk veya serum kreatinin >2 mg/dL olması. (En sık neden hafif zincir atılımına bağlı kast nefropatisidir).</li><li><strong>A - Anemi:</strong> Hemoglobinin normalin alt sınırından 2 g/dL düşük veya <10 g/dL olması. (Kemik iliği infiltrasyonu ve azalan EPO üretimi).</li><li><strong>B - Bone (Kemik Lezyonları):</strong> Direkt grafi, PET-BT veya MR'da bir veya daha fazla osteolitik lezyon görülmesi. En sık bel/sırt ağrısı ve patolojik fraktürlerle prezante olur.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım ve SLiM Kriterleri",
+      "html": "<p>Tanı için kemik iliğinde <strong>≥%10 klonal plazma hücresi</strong> saptanması veya biyopsi ile kanıtlanmış kemik/ekstramedüller plazmasitom varlığı gereklidir. Periferik yaymada eritrositlerin rulo (para) dizilimi yapması (<strong>Rouleaux formasyonu</strong>) tipiktir.</p><p>Uç organ hasarı (CRAB) olmasa bile, hastada aşağıdaki <strong>SLiM (Malignite Biyobelirteçleri)</strong> kriterlerinden biri varsa aktif miyelom kabul edilir ve tedavi başlanır:</p><ul class=\"mb-4\"><li><strong>S</strong>ixty (Altmış): Kemik iliğinde klonal plazma hücresi oranının <strong>≥%60</strong> olması.</li><li><strong>Li</strong>ght Chain (Hafif Zincir): Serum etkilenen/etkilenmeyen serbest hafif zincir (sFLC) oranının <strong>≥100</strong> olması (etkilenen zincirin mutlak değeri ≥100 mg/L olmalı).</li><li><strong>M</strong>RI (MR Görüntüleme): MR'da boyutu 5 mm'den büyük, en az 1 adet fokal kemik iliği lezyonu saptanması.</li></ul>"
+    },
+    {
+      "heading": "Evreleme: R-ISS (Revize Uluslararası Evreleme Sistemi)",
+      "html": "<p>Prognozu belirlemede albumin, beta-2 mikroglobulin (B2M), LDH ve yüksek riskli sitogenetik veriler kullanılır:</p><ul class=\"mb-4\"><li><strong>Evre I:</strong> B2M <3.5 mg/L <em>VE</em> Albumin ≥3.5 g/dL <em>VE</em> Normal LDH <em>VE</em> Standart riskli sitogenetik.</li><li><strong>Evre III:</strong> B2M ≥5.5 mg/L <em>VE</em> (Yüksek LDH <em>VEYA</em> Yüksek riskli sitogenetik [del(17p), t(4;14), t(14;16)]).</li><li><strong>Evre II:</strong> Evre I ve Evre III kriterlerine uymayan ara gruptur.</li></ul>"
+    },
+    {
+      "heading": "Birinci Basamak Tedavi (İndüksiyon ve Nakil)",
+      "html": "<p>Tedavi kararı hastanın <strong>Otolog Kök Hücre Nakline (ASCT) uygun olup olmamasına</strong> göre ikiye ayrılır.</p><p><strong>Nakle Uygun Hastalar (Fit/Genç):</strong></p><ul class=\"mb-4\"><li><strong>İndüksiyon:</strong> Dörtlü (Quadruple) rejimler yeni standarttır. <em>Daratumumab + VRd</em> (Bortezomib, Lenalidomid, Deksametazon) rejimi 4-6 kür uygulanır. (Eğer Daratumumab ulaşılamazsa üçlü VRd standarttır).</li><li><strong>Konsolidasyon:</strong> Yüksek doz Melphalan ve <strong>Otolog Kök Hücre Nakli (ASCT)</strong> uygulanır.</li><li><strong>İdame:</strong> Hastalık progresyonuna kadar <em>Lenalidomid</em> (yüksek risklilerde Bortezomib eklenebilir) verilir.</li></ul><p><strong>Nakle Uygun Olmayan Hastalar (Frajil/Yaşlı):</strong> <em>Daratumumab + Rd</em> (Lenalidomid, Deksametazon) veya VRd rejimi sürekli (progresyona kadar) kullanılır.</p>"
+    },
+    {
+      "heading": "Nüks/Dirençli (R/R) Miyelom ve Yenilikçi İmmünoterapiler",
+      "html": "<p>Miyelom günümüzde hala kesin şifası (kürü) olmayan, sürekli nüks eden bir hastalıktır. Refrakter vakalarda oyunun kurallarını değiştiren <strong>BCMA (B-Cell Maturation Antigen)</strong> hedefli ajanlar kullanılır:</p><ul class=\"mb-4\"><li><strong>CAR-T Hücre Tedavileri:</strong> <em>Idecabtagene vicleucel (Ide-cel)</em> ve <em>Ciltacabtagene autoleucel (Cilta-cel)</em>, çoklu tedavi almış ve dirençli hastalarda benzeri görülmemiş derin yanıtlar (MRD negatifliği) sağlamaktadır.</li><li><strong>Bispesifik Antikorlar (T-cell Engagers):</strong> <em>Teclistamab</em> (BCMAxCD3) ve <em>Talquetamab</em> (GPRC5DxCD3), CAR-T'ye ulaşamayan hastalar için rafta hazır bulunan ve poliklinik şartlarında uygulanabilen devrim niteliğinde güçlü antikorlardır.</li></ul>"
+    }
+  ]
+}

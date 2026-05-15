@@ -1,0 +1,31 @@
+{
+  "title": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Enfeksiyon", "Fosfomisin", "Daptomisin", "Biyofilm", "PJI", "Osteomiyelit", "MRSA"],
+    "parent": "fosfomisin-daptomisin-sinerji",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🦠 Uzman Özeti: Biyofilm İçi Resensitizasyon",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Fosfomisin ve daptomisin kombinasyonu, özellikle metisiline dirençli <em>Staphylococcus aureus</em> (MRSA) ve vankomisine dirençli enterokok (VRE) gibi <strong>biyofilm oluşturan patojenlere karşı</strong> \"hücre zarfı pertürbasyonu yoluyla yeniden duyarlı hale getirme\" (resensitization) mekanizmasıyla güçlü bir sinerji sergiler. Bu moleküler sinerjinin biyofilm tabakalarındaki işleyişi şu temel süreçlere dayanmaktadır:</p>"
+    },
+    {
+      "heading": "1. Biyofilm Penetrasyonu ve Yapısal Bozulma",
+      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl mb-3\"><p class=\"text-sm text-indigo-900 leading-relaxed\">Fosfomisin, düşük moleküler ağırlığı sayesinde matür biyofilm tabakalarına mükemmel şekilde penetre olabilir ve biyofilmin polimerik matris yapısını bozarak <strong>daptomisinin derin tabakalardaki sessiz (sessile) bakterilere ulaşmasını kolaylaştırır.</strong></p></div> "
+    },
+    {
+      "heading": "2. Hücre Zarfı Modülasyonu ve Elektrostatik Etki",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Biyofilm içindeki daptomisin dirençli suşlar genellikle hücre yüzeyindeki net pozitif yükü artırarak daptomisini elektrostatik olarak iter.</p><ul class=\"list-none space-y-2 text-sm text-slate-800\"><li class=\"p-3 bg-white border border-slate-200 rounded-xl\">⚡ <strong>Fosfomisinin Rolü:</strong> Hücre zarfını pertürbe ederek bu net pozitif yükü azaltır, membran akışkanlığını değiştirir ve kardiyolipin lokalizasyonunu yeniden düzenler.</li><li class=\"p-3 bg-white border border-slate-200 rounded-xl\">🎯 <strong>Sonuç:</strong> Bu süreç daptomisinin hedef bölgelerine bağlanmasını ve membran potansiyelini depolarize etmesini sağlar.</li></ul> "
+    },
+    {
+      "heading": "3. Genetik Direncin Baskılanması",
+      "html": "<p class=\"text-sm leading-relaxed text-slate-700\">Yapılan <em>in vitro</em> biyofilm modellerinde, bu kombinasyonun daptomisin direncinden sorumlu olan <strong><em>mprF</em></strong> ve fosfomisin direncinden sorumlu olan <strong><em>murA</em></strong> gen mutasyonlarının ortaya çıkmasını sinerjik olarak engellediği gösterilmiştir.</p>"
+    },
+    {
+      "heading": "4. Bakteriyel Eradikasyon ve Klinik Yansımalar (PJI)",
+      "html": "<div class=\"space-y-4\"><p class=\"text-sm leading-relaxed text-slate-700\">Sinerji sadece biyofilm biyokütlesini azaltmakla kalmaz, aynı zamanda metabolik aktiviteyi de ciddi oranda düşürür. Özellikle linezolid dirençli <em>E. faecalis</em> ve MRSA kaynaklı kronik implant enfeksiyonu modellerinde, kombinasyonun tekli tedavilere göre <strong>anlamlı düzeyde daha yüksek kür oranları</strong> sağladığı saptanmıştır.</p><div class=\"bg-emerald-50 border-2 border-emerald-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-emerald-800 text-xs uppercase mb-1 flex items-center gap-2\">🩺 Klinik Avantaj</h4><p class=\"text-xs text-emerald-900 font-medium leading-relaxed\">Bu sinerjik etkileşim, özellikle <strong>protez eklem enfeksiyonları (PJI) ve osteomiyelit</strong> gibi biyofilm varlığının tedaviyi zorlaştırdığı derin doku enfeksiyonlarında klinik olarak kritik bir avantaj sunmaktadır.</p></div></div>"
+    }
+  ]
+}

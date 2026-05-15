@@ -1,0 +1,39 @@
+{
+  "title": "Sistemik Lupus Eritematozus (SLE)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Lupus", "ANA", "Anti-dsDNA", "Lupus Nefriti", "EULAR/ACR"],
+    "parent": null,
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 EULAR/ACR SLE Classification and Management Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Patofizyoloji: Tolerans Kaybı ve İmmün Kompleksler",
+      "html": "<p>SLE, nükleer antijenlere karşı immün toleransın kaybolmasıyla karakterizedir. <strong>Mekanizma:</strong> Apoptoz sonrası temizlenemeyen nükleer materyallere karşı antikor üretilir. Oluşan <strong>Tip 3 Aşırı Duyarlılık</strong> (immün kompleksler) damar duvarlarında ve dokularda (böbrek, eklem, deri) birikerek inflamasyonu başlatır.</p>"
+    },
+    {
+      "heading": "2. Modern Tanı: EULAR/ACR 2019 Kriterleri",
+      "html": "<p>Tanı için giriş kriteri <strong>ANA pozitifliği (≥ 1:80)</strong> olmasıdır. Eğer ANA negatifse, SLE tanısından uzaklaşılır. Tanı için klinik ve immünolojik kriterlerden toplamda <strong>≥ 10 puan</strong> toplanmalıdır.</p><ul class=\"mb-4\"><li><strong>Kritik İmmünolojik Puanlar:</strong> Anti-dsDNA (6 puan), Anti-Smith (6 puan), Kompleman (C3/C4) düşüklüğü (3-4 puan).</li><li><strong>Klinik Puanlar:</strong> Akut kutanöz lupus (6 puan), Artrit (6 puan), Perikardit (6 puan).</li></ul>"
+    },
+    {
+      "heading": "3. Klinik Belirtiler: Tepeden Tırnağa Lupus",
+      "html": "<ul class=\"mb-4\"><li><strong>Dermatolojik:</strong> Malar rash (Kelebek döküntü - nazolabial olukları korur), Diskoid lupus (skar bırakır), Fotosensitivite.</li><li><strong>Musküloskeletal:</strong> Jaccoud Artropatisi (Erozyonsuz ama deformite yapan artrit).</li><li><strong>Hematolojik:</strong> Lökopeni, Lenfopeni ve Otoimmün Hemolitik Anemi (Coombs +).</li><li><strong>Nöropsikiyatrik:</strong> Nörolupus (Psikoz, nöbet, kognitif bozukluk).</li></ul>"
+    },
+    {
+      "heading": "4. Lupus Nefriti (LN): Hayati Komplikasyon",
+      "html": "<p>Hastaların %50'sinde görülür ve prognozu belirleyen en önemli faktördür. ISN/RPS sınıflaması:</p><ul class=\"mb-4\"><li><strong>Evre 3 ve 4 (Fokal/Diffüz Proliferatif):</strong> En agresif ve kötü seyirli formdur; acil immünsupresyon gerektirir.</li><li><strong>Evre 5 (Membranöz):</strong> Nefrotik düzeyde proteinüri ile karakterizedir.</li></ul>"
+    },
+    {
+      "heading": "5. Antikor Paneli ve Anlamları",
+      "html": "<ul class=\"mb-4\"><li><strong>ANA:</strong> En duyarlı test (Tarama için).</li><li><strong>Anti-dsDNA:</strong> Spesifiktir, hastalık aktivitesi ve nefrit ile koreledir.</li><li><strong>Anti-Smith:</strong> En spesifik antikor (Tanı koydurur).</li><li><strong>Anti-Ro (SSA) ve Anti-La (SSB):</strong> Yenidoğan lupusu (Konjenital kalp bloğu) ve Sjögren ile ilişkilidir.</li><li><strong>Anti-Histon:</strong> İlaçla indüklenen lupus (Hidralazin, Prokainamid).</li></ul>"
+    },
+    {
+      "heading": "6. Tedavi Stratejisi",
+      "html": "<ul class=\"mb-4\"><li><strong>Hidroksiklorokin (Plaquenil):</strong> Kontrendike olmadıkça TÜM lupus hastaları kullanmalıdır (Alevlenmeleri önler, sağkalımı artırır).</li><li><strong>Kortikosteroidler:</strong> Akut alevlenmelerde 'köprü' tedavisi.</li><li><strong>İmmünsupresifler:</strong> Mikofenolat Mofetil (MMF) veya Siklofosfamid (özellikle Nefrit vakalarında).</li><li><strong>Biyolojikler:</strong> Belimumab (B-hücre aktivatör inhibitörü) ve Anifrolumab.</li></ul>"
+    }
+  ]
+}

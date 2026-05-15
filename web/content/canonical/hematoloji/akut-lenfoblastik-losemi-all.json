@@ -1,0 +1,35 @@
+{
+  "title": "Miyelodisplastik Sendromlar (MDS)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MDS", "Miyelodisplastik Sendrom", "Sitopeni", "Luspatercept", "Yapay Zeka Taslağı"],
+    "parent": "hematolojik-maligniteler",
+    "order": 14
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Miyelodisplastik Sendromlar (MDS)</strong>, inefektif (etkisiz) hematopoez, periferik sitopeniler ve kemik iliğinde genellikle hiperselülerite ile karakterize klonal hematopoietik kök hücre hastalıklarıdır. Normal kan hücresi yapımı bozulduğu için hücreler kemik iliğinde olgunlaşmadan (apoptoza uğrayarak) ölür, bu da periferde sitopeniye yol açar. MDS, zaman içinde artan bir oranda <strong>Akut Miyeloid Lösemiye (AML)</strong> transforme olma riski taşır.</p><p>Hastalığın temelinde epigenetik regülatörler (<em>TET2, ASXL1, DNMT3A</em>), RNA splaysom genleri (<em>SF3B1, SRSF2, U2AF1</em>) ve transkripsiyon faktörlerindeki (<em>RUNX1, TP53</em>) somatik mutasyonlar yatar.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Morfoloji",
+      "html": "<p>Klinik tablo genellikle sinsi başlar. En sık görülen semptom anemiye bağlı yorgunluk, halsizlik ve efor dispnesidir. Nötropeniye bağlı tekrarlayan enfeksiyonlar ve trombositopeniye bağlı mukokutanöz kanamalar (peteşi, ekimoz) eşlik edebilir.</p><p><strong>Periferik Yayma ve Kİ Morfolojisi:</strong> Periferik kanda makroovalositler, hiposegmente/hipogranüler nötrofiller (<strong>Pelger-Huët anomalisi</strong>) ve dev trombositler izlenir. Kemik iliğinde eritroid seride nükleer tomurcuklanma, demir boyasıyla <strong>yüzük (ring) sideroblastlar</strong>; megakaryositlerde mikromegakaryosit veya multinükleasyon (pawn-ball/piyon megakaryosit) gibi displastik bulgular (%10'dan fazla hücrede) tanısaldır.</p>"
+    },
+    {
+      "heading": "Sınıflandırma (WHO 2022 ve ICC 2022)",
+      "html": "<p>Güncel sınıflandırma, salt morfolojik (blast sayısına dayalı) yapıdan ziyade <strong>genetik tanımlayıcılara</strong> (Genetic-first approach) kaymıştır:</p><ul class=\"mb-4\"><li><strong>MDS, SF3B1 mutant:</strong> Ring sideroblast varlığından bağımsız olarak, SF3B1 mutasyonu saptanan ve iyi prognozlu gruptur.</li><li><strong>MDS, bi-allelik TP53 mutant:</strong> TP53 geninin her iki allelinin de kaybı/mutasyonu ile karakterize, en kötü prognozlu ve AML'ye hızlı transforme olan gruptur.</li><li><strong>MDS, del(5q):</strong> İzole 5q delesyonu olan, kadınlarda daha sık görülen, belirgin makrositik anemi ve normal/artmış trombosit ile seyreden gruptur (Lenalidomid'e mükemmel yanıt verir).</li><li><strong>Blast artışlı MDS:</strong> Genetik tanımlayıcı yoksa blast oranına göre sınıflandırma devam eder (MDS-IB1 ve MDS-IB2).</li></ul>"
+    },
+    {
+      "heading": "Prognostik Risk Skorlaması: IPSS-M",
+      "html": "<p>Eski IPSS ve IPSS-R skorları yerine günümüzde moleküler verileri entegre eden <strong>Moleküler Uluslararası Prognostik Skorlama Sistemi (IPSS-M)</strong> kullanılmaktadır. Bu sistem; klinik parametreleri (Hemoglobin, trombosit, nötrofil ve Kİ blast yüzdesi) tam <strong>31 genin mutasyon durumu</strong> (özellikle <em>TP53, FLT3, MLL/KMT2A</em> multihit mutasyonları vb.) ile birleştirerek hastaları 6 risk grubuna (Çok Düşük, Düşük, Orta-Düşük, Orta-Yüksek, Yüksek, Çok Yüksek) ayırır.</p>"
+    },
+    {
+      "heading": "Tedavi Stratejileri",
+      "html": "<p>Tedavi, hastanın IPSS-M risk grubuna, yaşına ve semptomlarına göre iki ana kolda yönetilir:</p><p><strong>Düşük Riskli MDS (Amaç: Semptom kontrolü ve kan transfüzyon ihtiyacını azaltmak):</strong></p><ul class=\"mb-4\"><li><em>Eritropoietik Uyarıcı Ajanlar (ESA):</em> Serum EPO düzeyi <500 mU/mL olan semptomatik anemili hastalarda ilk tercihtir.</li><li><em>Luspatercept:</em> Bir eritroid matürasyon ajanıdır. Özellikle <strong>SF3B1 mutant</strong> veya ring sideroblastlı (+), ESA'ya dirençli/yanıtsız hastalarda transfüzyon bağımsızlığı sağlamada onaylıdır.</li><li><em>Lenalidomid:</em> <strong>del(5q)</strong> taşıyan düşük riskli hastalarda anemi tedavisinde hedefli ve oldukça etkili ilk basamak ajandır.</li><li><em>İmmünsüpresif Tedavi (ATG + Siklosporin):</em> Özellikle genç, hiposelüler Kİ olan, HLA-DR15 pozitif, PNH klonu taşıyan hastalarda tercih edilir.</li></ul><p><strong>Yüksek Riskli MDS (Amaç: AML'ye dönüşümü geciktirmek ve sağkalımı uzatmak):</strong></p><ul class=\"mb-4\"><li><em>Hipometile Edici Ajanlar (HMA):</em> <strong>Azasitidin</strong> ve <strong>Desitabin</strong>. Yüksek riskli hastalarda genel sağkalımı uzattığı kanıtlanmış temel tedavi omurgasıdır. Günümüzde Venetoklaks ile kombinasyonları yaygın olarak kullanılmaktadır.</li><li><em>Allojenik Kök Hücre Nakli (Allo-HSCT):</em> Yüksek riskli ve transplantasyona uygun hastalarda (genellikle <70-75 yaş) <strong>tek küratif</strong> seçenektir.</li></ul>"
+    }
+  ]
+}

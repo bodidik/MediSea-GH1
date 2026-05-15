@@ -1,0 +1,35 @@
+{
+  "title": "Ön Hipofiz Hastalıklarına Giriş",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipofiz", "Adenoma", "İnsidentaloma", "Harrison"],
+    "parent": "hipofiz-hastaliklari-ana",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & Endocrine Society 2024 standartlarındadır.</em></p>"
+    },
+    {
+      "heading": "Hipofiz Adenomlarının Sınıflandırılması",
+      "html": "<p>Hipofiz adenomları, ön hipofiz hücrelerinden köken alan selim epitelyal tümörlerdir. İki ana kritere göre sınıflandırılırlar:</p><ul class=\"mb-4\"><li><strong>1. Boyuta Göre:</strong> <ul><li><strong>Mikroadenom:</strong> < 10 mm çap.</li><li><strong>Makroadenom:</strong> ≥ 10 mm çap.</li></ul></li><li><strong>2. Fonksiyona Göre:</strong> <ul><li><strong>Fonksiyonel (Salgı Yapan):</strong> Prolaktinoma (%50), Somatotropinoma (GH), Kortikotropinoma (ACTH).</li><li><strong>Non-fonksiyonel (Sessiz):</strong> Hormon salgılamayan, genellikle kitle etkisiyle tanı alan tümörler.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Kitle Etkisi ve Nöro-Oftalmoloji",
+      "html": "<p>Sellan bölgedeki genişleme, çevre dokulara bası yaparak spesifik semptomlara yol açar.</p><ul class=\"mb-4\"><li><strong>Optik Kiyazma Basısı:</strong> Klasik olarak <strong>Bitemporal Hemianopsi</strong> (her iki dış görme alanının kaybı).</li><li><strong>Kavernöz Sinüs İnvazyonu:</strong> III, IV, VI. kranial sinirlerin ve V. sinirin oftalmik dalının etkilenmesi sonucu oftalmopleji ve diplopi.</li><li><strong>Kafa İçi Basınç Artışı:</strong> Şiddetli baş ağrısı, bulantı ve kusma.</li></ul>"
+    },
+    {
+      "heading": "Hipofizer İnsidentalloma Yönetimi",
+      "html": "<p>Başka bir nedenle (Örn: travma) çekilen beyin görüntülemesinde tesadüfen saptanan lezyonlardır. Yönetim protokolü şöyledir:</p><ol class=\"mb-4\"><li><strong>Biyokimyasal Tarama:</strong> Lezyon boyutu ne olursa olsun tüm hastalarda hormon hipersekresyonu (özellikle Prolaktin, IGF-1) ve hipopituitarizm taranmalıdır.</li><li><strong>Görme Alanı Testi:</strong> Lezyon optik kiyazmaya yakınsa veya > 10 mm ise mutlaka yapılmalıdır.</li><li><strong>Takip:</strong> Mikro-insidentallomalar 1-2 yıl arayla MRI ile izlenirken, makro-insidentallomalar daha yakın (6. ayda bir) takip gerektirir.</li></ol>"
+    },
+    {
+      "heading": "Hipofiz Apopleksisi: Bir Endokrin Acil",
+      "html": "<p>Mevcut bir adenom içine aniden kanama olması veya enfarktüs gelişmesidir.</p><ul class=\"mb-4\"><li><strong>Klinik:</strong> Ani başlayan 'hayatımın en kötü baş ağrısı', görme kaybı, oftalmopleji ve <strong>Akut Adrenal Yetersizlik</strong> (ACTH kaybına bağlı).</li><li><strong>Yönetim:</strong> Acil yüksek doz IV glukokortikoid (hidrokortizon) ve gerekirse acil nöroşirürjik dekompresyon.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım ve Görüntüleme",
+      "html": "<p><strong>Altın Standart:</strong> Kontrastlı (Gadolinium) <strong>Hipofiz Dinamik MRI</strong>. Bilgisayarlı Tomografi (BT) sadece MRI kontrendike ise veya kemik yapıyı değerlendirmek için kullanılır.</p>"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Adrenal Yetmezlik (Addison ve Santral)",
+  "meta": {
+    "updatedAt": "15 Mar 2026",
+    "tags": ["Endokrin", "Kortizol", "Addison", "Adrenal Kriz"],
+    "parent": "adrenal-korteks-hastaliklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Tanım ve Sınıflandırma",
+      "text": "<p>Adrenal korteksten fizyolojik ihtiyacı karşılayacak düzeyde kortizol (ve bazen aldosteron) üretiminin yetersiz olması durumudur. Patolojinin seviyesine göre ikiye ayrılır:</p>\n\n<!-- Image: HPA axis regulation -->\n<div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-blue-50 p-4 rounded border-l-4 border-blue-500'><h5 class='font-bold text-blue-900'>1. Primer (Addison Hastalığı)</h5><p class='text-sm mt-2 text-gray-700'>Adrenal korteksin kendisi haraptır. Hem Kortizol hem <strong>Aldosteron</strong> eksikliği vardır. Geri bildirim kaybı nedeniyle <strong>ACTH Yüksektir</strong> (Hiperpigmentasyon yapar).</p></div><div class='bg-gray-50 p-4 rounded border-l-4 border-gray-500'><h5 class='font-bold text-gray-900'>2. Santral (Sekonder/Tersiyer)</h5><p class='text-sm mt-2 text-gray-700'>Hipofiz (ACTH) veya Hipotalamus (CRH) sorunudur. Sadece Kortizol eksiktir; RAAS sistemi çalıştığı için <strong>Aldosteron genellikle korunur</strong>. ACTH düşüktür (Cilt soluktur).</p></div></div>"
+    },
+    {
+      "heading": "Etiyoloji",
+      "text": "<ul class='list-disc pl-5 space-y-2'><li><strong>Otoimmün Adrenalit (%70-90):</strong> Gelişmiş ülkelerde en sık nedendir. 21-Hidroksilaz antikorları pozitiftir. (APS Tip 1 veya 2 parçası olabilir).</li><li><strong>Enfeksiyonlar:</strong> Tüberküloz (Gelişmekte olan ülkelerde sık), HIV, Mantar enfeksiyonları.</li><li><strong>İlaçlar:</strong> Uzun süreli steroid kullanımının aniden kesilmesi (En sık Santral neden), Ketokonazol, Etomidat, İmmün Checkpoint İnhibitörleri.</li><li><strong>Genetik:</strong> Adrenolökodistrofi (Erkek çocuk), Konjenital Adrenal Hiperplazi.</li><li><strong>Vasküler:</strong> Waterhouse-Friderichsen Sendromu (Meningokoksemide bilateral kanama).</li></ul>"
+    },
+    {
+      "heading": "Klinik Bulgular",
+      "text": "<p>Halsizlik, yorgunluk, iştahsızlık ve kilo kaybı hastaların %100'ünde görülür. Hipotansiyon (özellikle ortostatik) sıktır.</p><div class='my-4 bg-yellow-50 p-4 rounded border border-yellow-200'><h5 class='font-bold text-yellow-900 text-sm'>🎨 Primer vs Santral Ayrımı</h5><ul class='list-none mt-2 text-sm text-gray-700 space-y-1'><li><strong>Hiperpigmentasyon:</strong> Sadece Primerde görülür (Yüksek ACTH ve MSH etkisiyle). Diş etleri, ameliyat izleri ve avuç içi çizgilerinde koyulaşma tipiktir.</li><li><strong>Tuz Açlığı:</strong> Sadece Primerde görülür (Aldosteron eksikliği).</li><li><strong>Hipoglisemi:</strong> Santral yetmezlikte daha belirgindir (GH eksikliği de eşlik edebilir).</li></ul></div>"
+    },
+    {
+      "heading": "Tanı Algoritması",
+      "text": "<p>Tanı için dinamik testler şarttır. Tek başına kortizol düzeyi yanıltıcı olabilir.</p><ol class='list-decimal pl-5 mt-2 space-y-2'><li><strong>Sabah Kortizolu (Tarama):</strong> &lt;3 µg/dL ise tanı kesinleşir. &gt;18 µg/dL ise dışlanır. Aradaki değerler için test gerekir.</li><li><strong>ACTH Stimülasyon Testi (Gold Standart):</strong> 250 mcg Sentetik ACTH (Cosyntropin) verilir. 30. veya 60. dakikada kortizol <strong>&gt;18 µg/dL</strong> olmalıdır. (Yeni nesil kitlerde sınır 14-15 µg/dL olabilir).</li><li><strong>Plazma ACTH:</strong> Primer (&gt;100 pg/mL) ile Santralin ayrımını sağlar.</li></ol>"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "text": "<div class='space-y-4'><div class='bg-red-50 p-4 rounded border-l-4 border-red-500'><h5 class='font-bold text-red-800 flex items-center gap-2'>🚨 Adrenal Kriz (Acil Durum)</h5><p class='text-sm mt-1'>Şok, bulantı, kusma ve karın ağrısı ile gelir. Tedavi test sonuçları beklenmeden başlanmalıdır:</p><ul class='list-disc pl-5 mt-1 text-xs text-red-900'><li><strong>IV Hidrokortizon:</strong> 100 mg bolus, sonra 24 saatte 200 mg infüzyon.</li><li><strong>IV Sıvı:</strong> İzotonik (%0.9 NaCl). Hipoglisemi varsa <strong>%5 Dekstroz</strong> eklenmelidir.</li></ul></div><div class='bg-green-50 p-4 rounded border-l-4 border-green-500'><h5 class='font-bold text-green-800'>💊 Kronik İdame Tedavisi</h5><ul class='list-disc pl-5 mt-1 text-sm text-gray-700'><li><strong>Glukokortikoid:</strong> Hidrokortizon (Tercih edilen) veya Prednizolon. Sirkadiyen ritme uygun (Sabah 2/3, Öğlen 1/3) verilir.</li><li><strong>Mineralokortikoid:</strong> Fludrokortizon (Sadece Primer tipte). Renin düzeyine ve tansiyona göre doz ayarlanır.</li><li><strong>Hasta Eğitimi:</strong> 'Sick Day Rules' (Ateşli hastalıkta doz 2-3 katına çıkılır).</li></ul></div></div>"
+    }
+  ]
+}

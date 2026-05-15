@@ -1,0 +1,66 @@
+# FILE: docker-compose.yml
+services:
+  mongo:
+    image: mongo:7
+    container_name: mk_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD-SHELL", "mongosh --quiet --eval \"db.runCommand({ ping: 1 }).ok\" | grep 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: mk_api
+    environment:
+      # PROD’DA Atlas kullanacaksan bunu .env’den ver (AŞAĞIDA ÖRNEK VAR):
+      # MONGODB_URI: ${MONGODB_URI}
+      # DEV/LOCAL Mongo için:
+      MONGODB_URI: mongodb://mongo:27017/medknowledge?directConnection=true&serverSelectionTimeoutMS=10000
+      HOST: 0.0.0.0
+      PORT: 4000
+      CORS_ORIGIN: http://localhost:3000
+      VIDEO_ALLOWED_ORIGINS: http://localhost:3000
+      JWT_SECRET: change_me
+      KAYSERITIP_SECRET: change_me
+      VIDEO_HLS_SECRET: change_me
+    ports:
+      - "4000:4000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:4000/health || exit 1"]
+      interval: 15s
+      timeout: 3s
+      retries: 10
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BACKEND_URL: "http://localhost:4000"  # tarayıcı (client) görsün
+    container_name: mk_web
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      # SSR tarafındaki fetch’lerde kullanacağın env (kodda process.env.BACKEND_URL kullanırsan):
+      BACKEND_URL: http://api:4000
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

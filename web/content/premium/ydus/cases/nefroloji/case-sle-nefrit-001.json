@@ -1,0 +1,85 @@
+{
+  "id": "case-sle-nefrit-001",
+  "accessLevel": "premium",
+  "title": "Aktif Sediment ve Hızlı Yükselen Kreatinin",
+  "difficulty": "Expert",
+  "topic": "Lupus Nefriti Yönetimi",
+  "tags": [
+    "Lupus",
+    "Nefrit",
+    "Biyopsi",
+    "Siklofosfamid",
+    "Euro-Lupus"
+  ],
+  "stages": [
+    {
+      "step": 1,
+      "type": "presentation",
+      "content": "24 yaşında kadın hasta, SLE tanısıyla izleniyor. Bacaklarda ödem ve idrar renginde koyulaşma şikayetiyle başvuruyor. TA: 150/95 mmHg. Lab: Kreatinin 0.7 -> 1.4 mg/dL'ye yükselmiş. İdrar: Proteinüri (3g/gün), Hematüri (Dismorfik eritrositler) ve Eritrosit silendirleri mevcut. C3 ve C4 düşük, Anti-dsDNA pozitif.",
+      "question": "Bu aşamada yönetim için **en kritik** ve öncelikli adım nedir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ampirik Pulse Steroid + MMF başlanması"
+        },
+        {
+          "id": "B",
+          "text": "Acil Böbrek Biyopsisi"
+        },
+        {
+          "id": "C",
+          "text": "Sadece ACE İnhibitörü ekleyip 2 hafta sonra kontrol"
+        },
+        {
+          "id": "D",
+          "text": "Plazmaferez"
+        }
+      ],
+      "correctAnswer": "B",
+      "pearl": {
+        "title": "YDUS Kuralı #1",
+        "text": "Lupus nefriti şüphesinde BİYOPSİ şarttır! Çünkü Class III/IV (Acil İmmünsüpresyon) ile Class V veya TMA (Trombotik Mikroanjiyopati) ayrımı sadece doku tanısı ile yapılır. Tedaviler tamamen farklıdır."
+      }
+    },
+    {
+      "step": 2,
+      "type": "progression",
+      "content": "Biyopsi sonucu: **Class IV (Diffüz Proliferatif GN)**. 'Full House' boyanma paterni mevcut. Aktivite indeksi: 12/24 (Yüksek), Kronisite indeksi: 1/12. Hasta doğurganlık çağında ve ileride çocuk sahibi olmak istiyor.",
+      "question": "Over rezervini korumak ve etkin remisyon sağlamak için en uygun **İndüksiyon Tedavisi** hangisidir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yüksek Doz Siklofosfamid (NIH Protokolü: Aylık 0.75-1g/m2)"
+        },
+        {
+          "id": "B",
+          "text": "Düşük Doz Siklofosfamid (Euro-Lupus: 2 haftada bir 500mg x 6 doz)"
+        },
+        {
+          "id": "C",
+          "text": "Sadece Oral Steroid"
+        },
+        {
+          "id": "D",
+          "text": "Rituksimab Monoterapisi"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "<p><strong>Neden Euro-Lupus?</strong></p><ul><li>Class III/IV indüksiyonunda MMF veya Siklofosfamid (CYC) standarttır.</li><li>Ancak NIH protokolü (Yüksek doz CYC) yüksek kümülatif doz nedeniyle <strong>gonadal toksisite (kısırlık)</strong> riski taşır.</li><li><strong>Euro-Lupus Protokolü</strong> (Düşük doz) benzer etkinlik sağlar ancak toksisitesi çok daha azdır. Doğurganlık koruyucu yaklaşım için (MMF tercih edilmiyorsa) Euro-Lupus altın standarttır.</li></ul>"
+    }
+  ],
+  "navigation": {
+    "nextCase": {
+      "title": "Sıradaki Vaka: Dirençli Hipertansiyon",
+      "url": "/tr/premium/ydus/cases/nefroloji/case-002"
+    },
+    "pearls": {
+      "title": "Lupus İncileri",
+      "url": "/tr/premium/ydus/pearls/lupus"
+    },
+    "exit": {
+      "title": "Nefroloji Paneline Dön",
+      "url": "/tr/premium/ydus/nefroloji"
+    }
+  }
+}

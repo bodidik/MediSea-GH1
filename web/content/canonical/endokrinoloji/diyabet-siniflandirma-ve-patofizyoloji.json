@@ -1,0 +1,31 @@
+{
+  "title": "Diyabet Sınıflandırması ve Patofizyoloji",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Diyabet", "Patofizyoloji", "Tip 1", "Tip 2", "Ominous Octet"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>İleri Düzey Modül:</strong> Harrison 21st Ed ve DeFronzo Metabolik Modelleri temel alınmıştır.</em></p>"
+    },
+    {
+      "heading": "1. Tip 1 Diyabet: Mutlak İnsülin Eksikliği",
+      "html": "<p>Genetik olarak yatkın bireylerde (HLA-DR3, DR4) çevresel bir tetikleyici ile başlayan otoimmün süreçtir.</p><ul class=\"mb-4\"><li><strong>Patogenez:</strong> T-hücre aracılı bir saldırı ile pankreas beta hücreleri progresif olarak yıkılır. Klinik belirtiler genellikle beta hücre rezervinin %80-90'ı yok olduğunda ortaya çıkar.</li><li><strong>İşaretleyiciler:</strong> Anti-GAD, Anti-İnsülin ve IA-2 antikorları tanıda kritiktir.</li><li><strong>LADA (Latent Autoimmune Diabetes in Adults):</strong> Erişkin yaşta başlayan, başlangıçta Tip 2 sanılan ama aslında yavaş seyirli bir Tip 1 varyantıdır.</li></ul>"
+    },
+    {
+      "heading": "2. Tip 2 Diyabet: Korkunç Sekizli (Ominous Octet)",
+      "html": "<p>Tip 2 sadece insülin direnci değildir; 8 farklı organ/mekanizma hiperglisemiye katkıda bulunur:</p><ul class=\"mb-4\"><li><strong>Pankreas (Beta Hücreleri):</strong> İnsülin salgı kapasitesinde azalma.</li><li><strong>Pankreas (Alfa Hücreleri):</strong> Aşırı Glukagon salınımı (şekeri sürekli yükseltir).</li><li><strong>Karaciğer:</strong> Artmış hepatik glukoz üretimi (açlık hiperglisemisinin ana nedeni).</li><li><strong>Kas:</strong> Azalmış periferik glukoz alımı (insülin direnci).</li><li><strong>Yağ Dokusu:</strong> Artmış lipoliz (serbest yağ asitleri insülin direncini körükler).</li><li><strong>Bağırsak:</strong> Azalmış İnkretin (GLP-1/GIP) etkisi.</li><li><strong>Böbrek:</strong> Artmış glukoz geri emilimi (SGLT-2 üzerinden).</li><li><strong>Beyin:</strong> Nörotransmitter disfonksiyonu ve iştah kontrol kaybı.</li></ul>"
+    },
+    {
+      "heading": "3. MODY (Maturity-Onset Diabetes of the Young)",
+      "html": "<p>Otozomal dominant geçişli, tek gen defektine bağlı diyabettir. Genellikle 25 yaş altı, obez olmayan, güçlü aile öyküsü olan bireylerde görülür.</p><ul class=\"mb-4\"><li><strong>MODY 3 (HNF1-alfa):</strong> En sık tip. Sülfonilüreye aşırı duyarlıdırlar.</li><li><strong>MODY 2 (Glukokinaz):</strong> 'Glikostat' ayarının bozulmasıdır. Hafif seyirlidir, genellikle tedavi gerektirmez.</li></ul>"
+    },
+    {
+      "heading": "4. İnsülin Direnci ve Acanthosis Nigricans",
+      "html": "<p>İnsülin direnci, reseptör sonrası (post-receptor) sinyal yolaklarındaki defektlerden kaynaklanır. Fizik muayenede boyun ve koltuk altındaki kadifemsi koyulaşma (Acanthosis Nigricans), hiperinsülineminin en net kanıtıdır.</p>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Ailesel Akdeniz Ateşi (FMF)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "FMF", "MEFV", "Pirin", "Kolşisin", "Amiloidoz"],
+    "parent": null,
+    "order": 9
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Modülü",
+      "html": "<p><em>⚠️ FMF, herediter periyodik ateş sendromlarının prototipidir. 'Otoimmün' değil, 'Otoinflamatuar' bir hastalıktır (antikor değil, nötrofil hakimiyeti). Harrison 21st Ed & EULAR FMF Management Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Genetik ve Patofizyoloji: Pirin Defekti",
+      "html": "<p>FMF, 16. kromozom üzerindeki <strong>MEFV geni</strong> mutasyonlarına bağlı olarak gelişen otozomal resesif bir hastalıktır. <strong>Mekanizma:</strong> Mutasyon, nötrofillerde bulunan 'Pirin' proteininin fonksiyonunu bozar. Bu durum, <strong>İnterlökin-1 beta (IL-1β)</strong> üretiminin kontrolsüz artışına ve spontan inflamasyon ataklarına yol açar.</p><ul class=\"mb-4\"><li><strong>M694V Mutasyonu:</strong> En ağır seyreden, en sık görülen ve amiloidoz riski en yüksek olan mutasyondur.</li></ul>"
+    },
+    {
+      "heading": "2. Klinik Ataklar: Serozit ve Ateş",
+      "html": "<p>Ataklar genellikle 1-3 gün sürer ve kendiliğinden düzelir. Atak dışında hasta tamamen normaldir.</p><ul class=\"mb-4\"><li><strong>Ateş:</strong> 38-40°C arası, titreme ile yükselir.</li><li><strong>Karın Ağrısı:</strong> Peritonit (akut batın taklit edebilir).</li><li><strong>Göğüs Ağrısı:</strong> Plörit veya perikardit.</li><li><strong>Artrit:</strong> Genellikle diz veya ayak bileğinde büyük eklem monoartriti.</li><li><strong>Erizipel Benzeri Eritem:</strong> Ayak bileği veya ayak sırtında görülen, selülit ile karışabilen karakteristik döküntü.</li></ul>"
+    },
+    {
+      "heading": "3. En Korkulan Komplikasyon: AA Tipi Amiloidoz",
+      "html": "<p>FMF tedavisinin ana hedefi bu komplikasyonu önlemektir. Kronik inflamasyon nedeniyle kanda yükselen <strong>Serum Amyloid A (SAA)</strong> proteini böbreklerde, karaciğerde ve gastrointestinal sistemde birikir. Sonuç: Ağır proteinüri ve Son Dönem Böbrek Yetmezliği (SDBY).</p>"
+    },
+    {
+      "heading": "4. Tanı Kriterleri: Tel-Hashomer",
+      "html": "<p>Tanı esas olarak kliniktir. Tel-Hashomer kriterlerine göre:</p><ul class=\"mb-4\"><li><strong>Majör Kriterler:</strong> Periyodik ateş/serozit atakları, AA tipi amiloidoz, kolşisine mükemmel yanıt.</li><li><strong>Minör Kriterler:</strong> Birinci derece akrabada FMF öyküsü, erizipel benzeri eritem.</li></ul>"
+    },
+    {
+      "heading": "5. Tedavi: Kolşisin ve Ötesi",
+      "html": "<ul class=\"mb-4\"><li><strong>Kolşisin (Altın Standart):</strong> Atakları önler ve daha önemlisi amiloidoz gelişimini durdurur. Ömür boyu kesintisiz kullanılmalıdır.</li><li><strong>Kolşisin Direnci/İntoleransı:</strong> Maksimum doz (2-3 mg/gün) kolşisine rağmen yılda >6 atak geçirenlerde <strong>Biyolojik Tedaviler (Anti-IL-1)</strong> (Anakinra, Canakinumab) başlanır.</li><li>⚠️ <strong>Önemli:</strong> Gebelik ve emzirme döneminde kolşisin güvenlidir ve asla kesilmemelidir.</li></ul>"
+    }
+  ]
+}

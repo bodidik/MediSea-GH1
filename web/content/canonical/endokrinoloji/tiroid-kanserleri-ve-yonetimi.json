@@ -1,0 +1,35 @@
+{
+  "title": "Tiroid Kanserleri: Patoloji, Cerrahi ve Takip",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Onkoloji", "Tiroid Kanseri", "Papiller", "Medüller", "Radyoaktif İyot"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 NCCN/ATA Thyroid Carcinoma Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Sınıflandırma ve Patolojik Spektrum",
+      "html": "<p>Tiroid kanserleri köken aldıkları hücrelere göre iki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>1. Foliküler Hücre Kaynaklı (Diferansiye):</strong> <ul><li><strong>Papiller Kanser (%85):</strong> En sık görülen, en iyi prognozlu tip. Radyasyon maruziyeti ile ilişkilidir. Lenfatik yayılım sıktır.</li><li><strong>Foliküler Kanser (%10):</strong> Hematojen (kan yoluyla) yayılır (kemik, akciğer).</li><li><strong>Anaplastik Kanser (<%1):</strong> Çok agresif, hızla büyüyen, genellikle kür şansı düşük tip.</li></ul></li><li><strong>2. Parafoliküler (C Hücresi) Kaynaklı:</strong> <ul><li><strong>Medüller Kanser (%5):</strong> Kalsitonin salgılar. %25'i ailesel (MEN 2A/2B) geçişlidir.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Papiller Tiroid Kanseri: 'Orphan Annie Eye' Çekirdekleri",
+      "html": "<p>Karakteristik patolojik bulguları ile tanınır. <strong>Psammom cisimcikleri</strong> (kalsifikasyonlar) ve buzlu cam manzaralı çekirdekler tipiktir.</p><ul class=\"mb-4\"><li><strong>Prognoz:</strong> 10 yıllık sağkalım >%95'tir.</li><li><strong>Genetik:</strong> <em>BRAF</em> mutasyonları sıktır ve daha agresif seyirle ilişkili olabilir.</li></ul>"
+    },
+    {
+      "heading": "Medüller Tiroid Kanseri (MTK) ve MEN Sendromları",
+      "html": "<p>MTK saptanan her hastada <strong>RET proto-onkogen</strong> mutasyonu taranmalıdır.</p><ul class=\"mb-4\"><li><strong>Tarama:</strong> Serum <strong>Kalsitonin</strong> ve CEA düzeyleri takipte kullanılır.</li><li><strong>Klinik İnci:</strong> MTK cerrahisinden önce hasta mutlaka <strong>Feokromositoma</strong> (MEN 2 birlikteliği) açısından taranmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yaklaşımı: Cerrahi ve Ötesi",
+      "html": "<ul class=\"mb-4\"><li><strong>Cerrahi:</strong> Temel tedavi total veya subtotal tiroidektomidir. Lenf nodu metastazı varsa boyun disseksiyonu eklenir.</li><li><strong>Radyoaktif İyot (RAİ) Ablasyonu:</strong> Diferansiye (Papiller/Foliküler) kanserlerde cerrahi sonrası kalıntı dokuyu veya mikroskobik metastazları yok etmek için kullanılır. ⚠️ <em>Not:</em> Medüller ve Anaplastik kanserler iyot tutmaz, RAİ etkisizdir.</li><li><strong>TSH Supresyonu:</strong> Diferansiye kanserlerde nüksü önlemek için Levotiroksin ile TSH baskılanır (genellikle < 0.1 mU/L).</li></ul>"
+    },
+    {
+      "heading": "Takip: Tiroglobulin ve USG",
+      "html": "<p>Total tiroidektomi ve RAİ sonrası <strong>Serum Tiroglobulin (Tg)</strong> 'tümör markırı' olarak kullanılır. Tg düzeyinin yükselmesi nüksü gösterir. Anti-Tg antikorları varlığında Tg ölçümü yanıltıcı olabilir.</p>"
+    }
+  ]
+}

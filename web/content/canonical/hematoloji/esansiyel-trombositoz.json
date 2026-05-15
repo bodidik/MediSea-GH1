@@ -1,0 +1,49 @@
+{
+  "title": "Esansiyel Trombositemi (ET)",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": [
+      "Hematoloji",
+      "MPN",
+      "Esansiyel Trombositemi",
+      "JAK2",
+      "CALR",
+      "MPL",
+      "Tromboz",
+      "aVWS"
+    ],
+    "parent": "miyeloproliferatif",
+    "order": 11
+  },
+  "sections": [
+     	
+    {
+      "heading": "1. Sınıflandırma ve Ayırıcı Tanıdaki Zorluklar (ICC 2022 / DSÖ 5. Edisyon)",
+      "html": "<p><strong>Esansiyel Trombositemi (ET)</strong>, pluripotent kök hücreden köken alan klonal bir miyeloproliferatif neoplazmdır (MPN). Tanı için trombosit sayısının sürekli <strong>&ge;450 x 10^9/L</strong> olması ve kemik iliğinde normoselülerite ile birlikte iri, olgun, hiperlobüle nükleuslu (<em>'geyik boynuzu'</em>) megakaryositlerin gevşek kümeler halinde izlenmesi şarttır.</p><p><strong>Kritik Ayırıcı Tanı:</strong> ET, <em>Erken/Prefibrotik Primer Miyelofibrozis (pre-PMF)</em> ile karıştırılmamalıdır. Pre-PMF'de ilik yaşa göre hiperselülerdir, granülositik proliferasyon mevcuttur ve megakaryositler 'bulboz/bulut benzeri' atipik nükleuslarla sıkı kümeler oluşturur. Klinik olarak pre-PMF'de anemi, lökositoz, artmış LDH ve splenomegali daha sıktır.</p>"
+    },
+    {
+      "heading": "2. İleri Moleküler Biyoloji ve Patogenez",
+      "html": "<p>Olguların %85-90'ında üç temel 'sürücü' (driver) mutasyon saptanır:</p><ul class=\"mb-4\"><li><strong>JAK2 V617F (%60-65):</strong> İleri yaş, yüksek Hb/lökosit ve belirgin arteriyel tromboz riski ile ilişkilidir.</li><li><strong>CALR Mutasyonları (%20-25):</strong> Tip 2 (insersiyon) mutasyonları genç yaş, ekstrem trombositoz ve düşük tromboz riski ile seyreder. Tip 1 (delesyon) ise fibrotik progresyona daha meyillidir.</li><li><strong>MPL Mutasyonları (%4-5):</strong> W515L/K mutasyonları reseptörü konstitütif aktif tutar.</li><li><strong>Üçlü-Negatif (Triple-Negative):</strong> NGS ile LNK (SH2B3) veya atipik MPL mutasyonları saptanabilir; genellikle en indolent seyirli gruptur.</li></ul><p><strong>Yüksek Moleküler Risk (HMR):</strong> <em>SF3B1, SRSF2, U2AF1</em> ve <em>TP53</em> mutasyonları bağımsız olarak kısa sağkalım ve yüksek AML dönüşüm riski ile ilişkilidir.</p>"
+    },
+    {
+      "heading": "3. Klinik Prezentasyon ve Kazanılmış von Willebrand Sendromu (aVWS)",
+      "html": "<p>Major morbidite nedeni trombotik olaylardır. <strong>Nötrofil-Lenfosit Oranı (NLR) &ge;5</strong> olması venöz tromboz için güçlü bir biyobelirteçtir. Eritromelalji ve TİA gibi mikrovasküler semptomlar sıktır.</p><p><strong>aVWS Tehlikesi:</strong> Trombosit sayısı <strong>>1.000 x 10^9/L</strong> olduğunda, aşırı trombosit kitlesi VWF multimerlerini bağlayıp tükettiği için 'Kazanılmış von Willebrand Sendromu' gelişir. VWF:RCo < %20-30 olan bu hastalarda <strong>aspirin kullanımı mukozal kanama riski nedeniyle kesinlikle kontrendikedir.</strong></p>"
+    },
+    {
+      "heading": "4. Prognostik Modeller ve Trombotik Risk Stratifikasyonu",
+      "html": "<p><strong>Revize IPSET-Tromboz</strong> skoru hastaları 4 gruba ayırır:</p><ul class=\"mb-4\"><li><strong>Çok Düşük:</strong> Yaş &le;60, tromboz (-) ve JAK2 (-).</li><li><strong>Düşük:</strong> Yaş &le;60, tromboz (-) ve <strong>JAK2 (+)</strong>.</li><li><strong>Orta:</strong> Yaş >60, tromboz (-) ve JAK2 (-).</li><li><strong>Yüksek:</strong> Tromboz öyküsü VEYA (Yaş >60 + JAK2 (+)).</li></ul><p>Sağkalım öngörüsü için mutasyonel verileri içeren <strong>MIPSS-ET</strong> veya basit klinik verilere dayanan <strong>Triple A (AAA)</strong> modelleri kullanılmalıdır.</p>"
+    },
+    {
+      "heading": "5. İleri Tedavi Stratejileri ve Yeni Nesil Ajanlar",
+      "html": "<p><strong>Antiplatelet Optimizasyonu:</strong> ET'deki yüksek trombosit turnover'ı nedeniyle standart tek doz aspirin yetersiz kalabilir. Kardiyovasküler riski yüksek vakalarda <strong>günde iki kez (100 mg BID)</strong> ve 'plain' (EC olmayan) aspirin kullanımı TxA2 inhibisyonu için daha üstündür.</p><p><strong>Sitoredüktif Terapi:</strong><ul><li><strong>Hidroksiüre (HU):</strong> Yüksek riskte hala ilk basamak altın standarttır.</li><li><strong>İnterferon-alfa (IFN-&alpha;):</strong> Genç ve gebe hastalarda ilk tercihtir. Mutant allel yükünü (VAF) düşürerek 'disease-modifying' etki gösterebilir.</li><li><strong>Anagrelid:</strong> HU intoleransında kullanılır ancak arteriyel tromboz ve fibrotik dönüşüm riski HU'dan yüksektir.</li><li><strong>Yeni Ajanlar:</strong> LSD-1 inhibitörü <em>Bomedemstat</em> ve BET inhibitörü <em>Pelabresib</em> araştırma aşamasındadır.</li></ul>"
+    },
+    {
+      "heading": "6. Özel Senaryolar: Gebelik ve Splanik Ven Trombozu (SVT)",
+      "html": "<p><strong>Gebelik:</strong> İlk trimesterden itibaren aspirin başlanmalı, sitoredüksiyon gerekirse plasentayı geçmeyen <strong>IFN-&alpha;</strong> tek seçenektir. HU ve anagrelid teratojeniktir.</p><p><strong>Splanik Ven Trombozu (SVT):</strong> Portal veya mezenterik ven trombozları genellikle JAK2 V617F ile ilişkilidir (okült MPN). Tedavide derhal LMWH/DOAC antikoagülasyonu ile birlikte HU başlanmalıdır.</p>"
+    },
+    {
+      "heading": "7. Doğal Seyir, Transformasyon ve Nakil",
+      "html": "<p>Post-ET Miyelofibrozis dönüşüm oranı 15 yılda %4-9'dur. Tanı için grade 2-3 fibrozis, anemi ve splenomegali (MYSEC-PM kriterleri) gerekir. Lösemik (AML) transformasyon oranı 10 yılda < %1'dir; ancak <strong>TP53 mutasyonu</strong> varlığında bu oran dramatik artar.</p><p><strong>Allo-HSCT:</strong> Küratif tek seçenektir. Zamanlama için <em>ASXL1</em> gibi mutasyon profillerini içeren <strong>MTSS</strong> skoru kullanılmalıdır.</p>"
+    }
+  ]
+}

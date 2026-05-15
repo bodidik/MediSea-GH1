@@ -1,0 +1,139 @@
+{
+  "id": "quiz-hem-aml-001",
+  "accessLevel": "premium",
+  "title": "AML Mega Deneme Sınavı - Tam Sürüm",
+  "description": "Güncel ICC 2022, WHO5 ve ELN 2024 kılavuzları eşliğinde, vaka temelli board-tipi YDUS Hematoloji denemesi. Süre: 20 Dakika.",
+  "timeLimitSeconds": 1200,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Yetmiş sekiz yaşında, komorbiditeleri nedeniyle yoğun kemoterapiye uygun olmayan (unfit) bir erkek hasta acil servise halsizlik ve diş eti kanaması şikayetleriyle başvuruyor. Hastanın laboratuvar incelemesinde lökosit sayısı 18.000/μL, hemoglobin 8.2 g/dL ve trombosit sayısı 40.000/μL saptanıyor. Kemik iliği aspirasyonunda %45 oranında miyeloid blast izleniyor. Yeni Nesil Dizileme (NGS) panelinde IDH1 gen mutasyonu saptanırken; TP53, FLT3-ITD, NRAS ve KRAS mutasyonları izlenmiyor (wild-type). Standart karyotip normal olarak raporlanıyor.\n\nBu hastanın güncel ELN 2024 'Düşük Yoğunluklu Tedavi' genetik risk sınıflandırmasına göre prognostik risk kategorisi ve kılavuzların bu hasta profili için özellikle 'Favorable (İyi)' sonuçlar doğurduğunu belirttiği hedefe yönelik ajan-kombinasyon tedavisi aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "Favorable (İyi) Risk / Azasitidin + İvosidenib" },
+        { "id": "B", "text": "Orta (Intermediate) Risk / Azasitidin + Enasidenib" },
+        { "id": "C", "text": "Adverse (Kötü) Risk / Azasitidin + Venetoklaks" },
+        { "id": "D", "text": "Favorable (İyi) Risk / Düşük Doz Sitarabin + Glasdegib" },
+        { "id": "E", "text": "Orta (Intermediate) Risk / Azasitidin + Midostaurin" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "<p><strong>Doğru Cevap: A</strong></p><p><strong>A Şıkkı (DOĞRU):</strong> Güncel ELN 2024, yoğun kemoterapiye uygun olmayan (unfit) hastalar için 'Düşük Yoğunluklu Tedaviler' kılavuzunu yayımlamıştır. Bu rehbere göre, aktive edici sinyal yolak mutasyonları (örn. FLT3, RAS) olmaksızın ve TP53 wild-type olan IDH1 mutasyonlu AML hastaları doğrudan <strong>'Favorable (İyi)'</strong> risk grubunda sınıflandırılır. Bu durum, özellikle bir IDH1 inhibitörü olan İvosidenib ve Azasitidin kombinasyonu ile tedavi edilmeleri bağlamında geçerlidir.</p><ul><li><strong>B Şıkkı:</strong> IDH2 mutasyonu saptansaydı Enasidenib kullanılabilirdi, hasta IDH1 mutasyonludur.</li><li><strong>C Şıkkı:</strong> IDH1 mutasyonlular Venetoklaks + Azasitidin alabilir ancak 'Favorable' sınıflandırması İvosidenib senaryosuna dayanır. Hasta kötü risk grubunda değildir.</li><li><strong>D Şıkkı:</strong> Glasdegib bir Hedgehog inhibitörüdür, IDH1'e özgü değildir.</li><li><strong>E Şıkkı:</strong> Midostaurin bir FLT3 inhibitörüdür, hastada FLT3 wild-type'tır.</li></ul>"
+    },
+    {
+      "id": "q2",
+      "text": "Altmış dokuz yaşında bir erkek hasta, son 3 aydır giderek artan nefes darlığı ve yorgunluk şikayetiyle değerlendiriliyor. Çevresel kan yaymasında ve kemik iliği aspirasyonunda belirgin multilinj displazi (multilineage dysplasia) izleniyor. Kemik iliği blast oranı %14 olarak saptanıyor. Genetik analizde karyotipte del(5q) ve monozomi 7 saptanırken, NGS analizinde varyant allel frekansı (VAF) %45 olan tek bir TP53 gen mutasyonu tespit ediliyor.\n\nUluslararası Konsensüs Sınıflandırması (ICC 2022) ve Dünya Sağlık Örgütü 5. Baskı (WHO5) kriterleri göz önüne alındığında, bu hastanın en doğru tanısı aşağıdakilerden hangisinde sırasıyla verilmiştir?",
+      "options": [
+        { "id": "A", "text": "ICC: Mutasyona uğramış TP53'lü AML / WHO5: Artmış blastlı MDS 2 (MDS-IB2)" },
+        { "id": "B", "text": "ICC: Mutasyona uğramış TP53'lü MDS/AML / WHO5: Mutasyona uğramış TP53'lü MDS" },
+        { "id": "C", "text": "ICC: Myelodisplazi ilişkili gen mutasyonları olan MDS/AML / WHO5: Myelodisplazi ilişkili AML" },
+        { "id": "D", "text": "ICC: Başka türlü adlandırılamayan AML (AML, NOS) / WHO5: Minimal diferansiyasyonlu AML" },
+        { "id": "E", "text": "ICC: Mutasyona uğramış TP53'lü MDS/AML / WHO5: Mutasyona uğramış TP53'lü AML" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "<p><strong>Doğru Cevap: B</strong></p><p><strong>B Şıkkı (DOĞRU):</strong> İki güncel kılavuz arasında %10-19 arası blast içeren vakaların tanımlanmasında belirgin farklar vardır. <strong>ICC 2022</strong>, %10-19 blast ve TP53 mutasyonu olanlar için <em>'Mutasyona uğramış TP53'lü MDS/AML'</em> ara kategorisini oluşturmuştur. <strong>WHO5</strong> ise MDS/AML gibi bir geçiş kategorisi kabul etmez; blast <%20 olduğu için bu vakayı <em>'Mutasyona uğramış TP53'lü MDS'</em> olarak sınıflandırır.</p><ul><li><strong>A ve E Şıkları:</strong> Blast <%20 olduğu için ICC direkt AML demez (A yanlış), WHO5 de TP53 mutasyonlu olsa bile blast <%20 ise AML demez (E yanlış).</li><li><strong>C Şıkkı:</strong> TP53 mutasyonu varlığı, diğer dispoetik genlerin önüne geçerek hastayı doğrudan TP53'e özel kategoriye sokar.</li><li><strong>D Şıkkı:</strong> Tanımlayıcı genetik anormallik (TP53) olduğu için AML, NOS olamaz.</li></ul>"
+    },
+    {
+      "id": "q3",
+      "text": "Kırk yaşındaki kadın hasta, belirgin lökositoz (110.000/μL) ve solunum sıkıntısı tablosuyla acil servise getiriliyor. Çevresel kan yaymasında hacimce büyük, bol sitoplazmalı, çekirdek zarı katlantılı monositik/promonositik özellikte %80 oranında immatür hücre (blast) izleniyor. Akım sitometride hücrelerin CD14 ve CD64 pozitif olduğu görülüyor. Arteriyel kan gazında belirgin hipoksi saptanıyor ve hastanın şuuru giderek kapanıyor.\n\nLökostaz sendromu düşünülen bu hastanın acil yönetiminde ilk planda yapılması gerekenler ve özellikle KESİNLİKLE KAÇINILMASI GEREKEN müdahale aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+      "options": [
+        { "id": "A", "text": "Derhal ATRA başlanmalıdır; Hidroksiüre verilmesinden kaçınılmalıdır." },
+        { "id": "B", "text": "Acil lökoferez ve/veya sitoredüktif kemoterapi başlanmalıdır; zorunlu olmadıkça Eritrosit (RBC) transfüzyonu yapmaktan kaçınılmalıdır." },
+        { "id": "C", "text": "Agresif hidrasyon ve Rasburikaz başlanmalıdır; Trombosit transfüzyonu yapmaktan kaçınılmalıdır." },
+        { "id": "D", "text": "Proflaktik kranial ışınlama yapılmalıdır; Deksametazon kullanımından kaçınılmalıdır." },
+        { "id": "E", "text": "Hedefe yönelik Venetoklaks başlanmalıdır; Lökoferez yapmaktan kesinlikle kaçınılmalıdır." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "<p><strong>Doğru Cevap: B</strong></p><p><strong>B Şıkkı (DOĞRU):</strong> Hasta, monositik özellikler taşıyan AML zemininde gelişen <strong>Lökostaz Sendromu</strong> kliniğindedir. Acil tedavide hücre sayısını düşürmek için derhal lökoferez, hidroksiüre veya yoğun indüksiyon başlanmalıdır. Çok kritik kural: kanda viskozite halihazırda çok yüksek olduğu için, kanın akışkanlığını daha da bozarak lökostazı kötüleştirebileceğinden, hayati bir endikasyon olmadıkça <strong>Eritrosit (RBC) transfüzyonundan kaçınılmalıdır.</strong></p><ul><li><strong>A Şıkkı:</strong> ATRA, Lökostazda değil APL'de koagülopati varsa acildir.</li><li><strong>C Şıkkı:</strong> Bu, Tümör Lizis Sendromu (TLS) profilaksisidir. Lökostazda trombosit transfüzyonu kontrendike değildir.</li><li><strong>D Şıkkı:</strong> Kranial ışınlama standart tedavi değildir, çözüm sitoredüksiyondur.</li><li><strong>E Şıkkı:</strong> Lökoferezden kaçınılmaz, tam aksine şiddetle önerilir.</li></ul>"
+    },
+    {
+      "id": "q4",
+      "text": "Otuz iki yaşında hiçbir bilinen hastalığı olmayan erkek hasta göğüs duvarında hızla büyüyen sert bir kitle ile başvuruyor. Kitlenin biyopsisinde doku mimarisini bozan ve CD34, CD13, CD33 ve miyeloperoksidaz (MPO) pozitif immatür hücre infiltrasyonu izlenerek 'Miyeloid Sarkom (Kloroma)' tanısı konuyor. Hastanın eş zamanlı yapılan kemik iliği biyopsisinde %12 oranında ince, uzun Auer çubukları içeren blastlar izleniyor ve genetik incelemede t(8;21)(q22;q22.1) translokasyonu ile hücresel yüzeyde belirgin aberran CD19 ekspresyonu saptanıyor.\n\nBu hastanın tanısı, sınıflaması ve klinik özellikleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        { "id": "A", "text": "Kemik iliği blastı <%20 olduğu için hasta AML tanısı alamaz; miyelodisplastik sendrom (MDS) olarak takip edilmelidir." },
+        { "id": "B", "text": "Hem CD33 (miyeloid) hem de CD19 (B-lenfoid) pozitifliği olduğu için hastalık MPAL olarak kabul edilmelidir." },
+        { "id": "C", "text": "t(8;21) varlığında aberran CD19 sıktır, MPAL anlamına gelmez; blast <%20 olsa da genetik anormallik ve miyeloid sarkom nedeniyle tanı AML'dir." },
+        { "id": "D", "text": "Bu mutasyon, CBFB ve MYH11 genlerinin füzyonuna neden olarak Core Binding Factor'ün beta alt ünitesini bozar." },
+        { "id": "E", "text": "Ekstramedüller tutulum saptanması, hastayı otomatik olarak 'Adverse (Kötü)' prognostik gruba sokar." }
+      ],
+      "correctAnswer": "C",
+      "explanation": "<p><strong>Doğru Cevap: C</strong></p><p><strong>C Şıkkı (DOĞRU):</strong> Güncel ICC ve WHO5 kılavuzlarına göre <strong>miyeloid sarkom</strong> varlığı veya <strong>t(8;21)</strong> gibi tanımlayıcı genetik anormalliklerin saptanması durumunda AML tanısı koymak için blast oranının %20'yi geçmesine gerek yoktur. Ayrıca t(8;21) taşıyan lösemik blastlarda lenfoid bir belirteç olan <strong>CD19'un aberran ekspresyonu çok tipiktir</strong> ve mikst fenotipli akut lösemi (MPAL) olarak yanlış yorumlanmamalıdır.</p><ul><li><strong>A Şıkkı:</strong> t(8;21) ve miyeloid sarkom varlığında blast eşiğine bakılmaz, tanı direkt AML'dir.</li><li><strong>B Şıkkı:</strong> CD19 pozitifliği MPAL değil, t(8;21)'in klasik aberran bulgusudur.</li><li><strong>D Şıkkı:</strong> CBFB/MYH11 füzyonu inv(16)'da görülür. t(8;21) ise RUNX1::RUNX1T1 füzyonu yapar.</li><li><strong>E Şıkkı:</strong> Miyeloid sarkom tek başına 'Favorable (İyi)' olan t(8;21) prognozunu 'Adverse' gruba düşürmez.</li></ul>"
+    },
+    {
+      "id": "q5",
+      "text": "Elli yaşında bir erkek hasta lökositoz ve splenomegali ile başvuruyor. Daha önce herhangi bir kan hastalığı öyküsü bulunmuyor. Hastanın periferik kan ve kemik iliğinde %25 oranında blast saptanıyor. Konvansiyonel sitogenetik ve FISH incelemelerinde t(9;22)(q34.1;q11.2) - BCR::ABL1 füzyonu pozitif bulunuyor. Morfolojik olarak bazofili veya cüce (dwarf) megakaryositler dikkati çekmiyor.\n\nICC 2022 ve WHO5 kılavuzlarına göre bu 'de novo BCR::ABL1 pozitif AML' vakasıyla ilgili aşağıdakilerden hangisi KESİNLİKLE doğrudur?",
+      "options": [
+        { "id": "A", "text": "Blast oranı %15 olsaydı bile, BCR::ABL1 tanımlayıcı olduğu için her iki kılavuza göre direkt AML tanısı konurdu." },
+        { "id": "B", "text": "Bu hastalık BCR::ABL1 füzyonu nedeniyle her iki sistemde de 'Favorable (İyi)' prognostik grupta değerlendirilir." },
+        { "id": "C", "text": "Bu hastalığın tanısını koymadan önce, 'Kronik Miyeloid Löseminin (KML) blastik krizi' fazının dikkatle ekarte edilmiş olması gereklidir." },
+        { "id": "D", "text": "Bu mutasyona sahip AML vakalarında FLT3-ITD ve NPM1 mutasyonlarının görülmesi imkansızdır." },
+        { "id": "E", "text": "Tedavide yoğun kemoterapi (7+3) kontrendikedir, hastaya yalnızca tirozin kinaz inhibitörleri (TKI) verilmelidir." }
+      ],
+      "correctAnswer": "C",
+      "explanation": "<p><strong>Doğru Cevap: C</strong></p><p><strong>C Şıkkı (DOĞRU):</strong> Gerçek (de novo) BCR::ABL1 pozitif AML çok nadir bir entitedir (<%1). Hastada daha önceden var olan ancak fark edilmemiş bir <strong>Kronik Miyeloid Lösemi (KML) tablosunun blastik faza geçiş yapıp yapmadığını dışlamak</strong> tanının temel kuralıdır.</p><ul><li><strong>A Şıkkı:</strong> ICC ve WHO5'te BCR::ABL1 pozitifliğinde blast eşiği KESİNLİKLE ≥%20 olarak tutulmuştur (KML'nin hızlanmış evresiyle karışmaması için).</li><li><strong>B Şıkkı:</strong> BCR::ABL1 pozitif AML agresif seyreder ve 'Adverse (Kötü)' prognostik grupta yer alır.</li><li><strong>D Şıkkı:</strong> De novo AML'de FLT3-ITD ve NPM1 mutasyonları görülebilir (KML blastik krizinde ise nadirdir, tanısal ayırımda ipucudur).</li><li><strong>E Şıkkı:</strong> Yoğun kemoterapi kontrendike değildir; fit hastalarda yoğun kemoterapi + TKI eklenmesi standart yaklaşımdır.</li></ul>"
+    },
+    {
+      "id": "q6",
+      "text": "Altmış sekiz yaşında kadın hasta, 5 yıl önce meme kanseri nedeniyle antrasiklin ve alkilleyici ajan (siklofosfamid) içeren adjuvan kemoterapi ve radyoterapi öyküsü ile izlenmektedir. Son 1 aydır gelişen halsizlik ve ateş nedeniyle yapılan kan sayımında pansitopeni saptanıyor. Kemik iliği biyopsisinde %40 oranında miyeloid blast izleniyor ve genetik analizde kompleks karyotip tespit ediliyor. Hastanın ECOG performans skoru 1 olup, yoğun kemoterapiyi (intensive chemotherapy) tolere edebilecek durumdadır (fit).\n\nGüncel kılavuzlara göre, bu hastada (Tedavi İlişkili AML - t-AML) standart 7+3 (Sitarabin + Daunorubisin) indüksiyon rejimine kıyasla genel sağkalımı anlamlı ölçüde artırdığı kanıtlanmış olan ve ilk seçenek olarak tercih edilmesi gereken tedavi aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "Venetoklaks + Azasitidin" },
+        { "id": "B", "text": "Midostaurin + 7+3 Kemoterapisi" },
+        { "id": "C", "text": "CPX-351 (Lipozomal Sitarabin ve Daunorubisin)" },
+        { "id": "D", "text": "Gemtuzumab Ozogamisin + 7+3 Kemoterapisi" },
+        { "id": "E", "text": "Fludarabin, Yüksek Doz Sitarabin, G-CSF ve İdarubisin (FLAG-İda)" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "<p><strong>Doğru Cevap: C</strong></p><p><strong>C Şıkkı (DOĞRU):</strong> Hastada geçmişte alınan sitotoksik tedavilere (antrasiklin ve alkilleyici ajan) bağlı gelişen, kompleks karyotipli Tedavi İlişkili AML (t-AML) mevcuttur. Fit (yoğun kemoterapiye uygun) hastalarda t-AML veya miyelodisplazi ile ilişkili değişiklikler gösteren AML (AML-MRC) vakalarında, sitarabin ve daunorubisinin 5:1 oranında özel bir lipozomal formülasyonu olan <strong>CPX-351 (Vyxeos)</strong>, standart 7+3 rejimine kıyasla hem yanıt oranlarını hem de genel sağkalımı anlamlı derecede artırmış ve bu spesifik popülasyon için FDA/EMA onayı alarak standart tedavi haline gelmiştir.</p><ul><li><strong>A Şıkkı:</strong> Venetoklaks + Azasitidin, yoğun kemoterapiye uygun olmayan (unfit) ileri yaş hastalar içindir.</li><li><strong>B Şıkkı:</strong> Midostaurin, FLT3 mutasyonu saptanan de novo AML hastalarının indüksiyon tedavisine eklenir.</li><li><strong>D Şıkkı:</strong> Gemtuzumab Ozogamisin (GO), iyi veya orta riskli CD33+ AML'lerde kullanılır; T-AML 'Kötü (Adverse)' risk grubundadır.</li><li><strong>E Şıkkı:</strong> FLAG-İda daha çok relaps/refrakter AML'de bir kurtarma (salvage) rejimidir.</li></ul>"
+    },
+    {
+      "id": "q7",
+      "text": "Yetmiş iki yaşında erkek hasta, yorgunluk ve nötropenik ateş ile başvuruyor. Yapılan kemik iliği incelemesinde %60 oranında blast saptanıyor ve genetik incelemelerde IDH2 mutasyonu saptanarak AML tanısı konuyor. Hastaya tek ajan (monoterapi) olarak hedefe yönelik oral Enasidenib tedavisi başlanıyor. Tedavinin 3. haftasında hastada aniden gelişen nefes darlığı, ateş (39°C), hipotansiyon, kilo artışı ve bilateral plevral efüzyonlar saptanıyor. Lökosit sayısında belirgin bir artış trendi izleniyor.\n\nBu klinik tabloda en olası tanı ve vakit kaybetmeden başlanması gereken hayat kurtarıcı medikal müdahale aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "Tümör Lizis Sendromu (TLS) - Rasburikaz ve yoğun hidrasyon başlanması" },
+        { "id": "B", "text": "Lökostaz Sendromu - Acil lökoferez yapılması" },
+        { "id": "C", "text": "Nötropenik Sepsis - Geniş spektrumlu antibiyotik ve G-CSF başlanması" },
+        { "id": "D", "text": "Diferansiyasyon Sendromu (DS) - Sistemik deksametazon başlanması" },
+        { "id": "E", "text": "İlaca bağlı Akut Pulmoner Toksisite - Enasidenib'in derhal kesilmesi ve metilprednizolon başlanması" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "<p><strong>Doğru Cevap: D</strong></p><p><strong>D Şıkkı (DOĞRU):</strong> Hasta IDH2 inhibitörü olan Enasidenib tedavisi altında klasik bir <strong>Diferansiyasyon (Farklılaşma) Sendromu</strong> tablosu geliştirmekte olup, bu durum ilacın prospektüsünde siyah kutu uyarısı olan ölümcül bir komplikasyondur. Lösemik blastların hızla olgunlaşmasına bağlı salgılanan sitokinler; ateş, dispne, hipotansiyon, periferik ödem, plevral/perikardiyal efüzyon ve böbrek yetmezliğine neden olur. Bu durumda yapılması gereken en acil hamle, klinik şüphe anında <strong>sistemik deksametazon</strong> (genellikle 10 mg 12 saatte bir) başlanmasıdır.</p><ul><li><strong>A Şıkkı:</strong> TLS'de ürik asit/potasyum yüksekliği ve böbrek hasarı ön plandadır; plevral efüzyon veya ateş yapan primer bir sendrom değildir.</li><li><strong>B Şıkkı:</strong> Lökostazda temel bulgu mikrovasküler tıkanıklığa bağlı nörolojik defisit ve hipoksidir; efüzyonlar ve ödem DS'ye özgüdür.</li><li><strong>C Şıkkı:</strong> Efüzyonlar, ödem ve ilaç öyküsü spesifik olarak diferansiyasyon sendromuna işaret eder.</li><li><strong>E Şıkkı:</strong> Sadece ilacı kesmek hastayı kurtarmaz, sitokin fırtınasını baskılamak için derhal Deksametazon verilmelidir.</li></ul>"
+    },
+    {
+      "id": "q8",
+      "text": "Altmış beş yaşında bir erkek hasta, yeni tanı 'Orta (Intermediate)' risk AML nedeniyle standart 7+3 indüksiyon ve ardından sitarabin bazlı konsolidasyon kemoterapilerini tamamlamıştır. Hastanın kemik iliğinde blast oranı <%5 (Tam Remisyon - CR) olarak değerlendirilmiştir. Ancak hastanın eşlik eden ciddi konjestif kalp yetmezliği ve böbrek disfonksiyonu nedeniyle Allojenik Kök Hücre Nakli (HCT) için uygun bir aday olmadığına karar verilmiştir.\n\nBu hastada relapsı geciktirmek, remisyonsuz sağkalımı ve genel sağkalımı anlamlı derecede uzatmak amacıyla güncel kılavuzlara göre (QUAZAR AML-001 çalışması referansıyla) standart olarak başlanması önerilen İdame (Maintenance) tedavisi aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "Subkutan Azasitidin (28 günlük döngülerin 5 günü)" },
+        { "id": "B", "text": "Oral Venetoklaks (Sürekli kullanım)" },
+        { "id": "C", "text": "Oral Azasitidin (CC-486) (28 günlük döngülerin 14 günü)" },
+        { "id": "D", "text": "Düşük doz Sitarabin (LDAC)" },
+        { "id": "E", "text": "Midostaurin (Hedefe yönelik mutasyon aranmaksızın)" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "<p><strong>Doğru Cevap: C</strong></p><p><strong>C Şıkkı (DOĞRU):</strong> QUAZAR AML-001 faz 3 klinik çalışması, yoğun indüksiyon ve konsolidasyon tedavisi alarak ilk tam remisyona (CR veya CRi) giren ancak yaş veya komorbiditeler nedeniyle allojenik HCT olamayacak 55 yaş ve üzeri hastalarda, idame tedavisi olarak <strong>Oral Azasitidin'in (CC-486)</strong> genel sağkalımı (OS: 24.7 aya karşılık 14.8 ay) ve relapssız sağkalımı (RFS) plaseboya kıyasla anlamlı derecede uzattığını göstermiştir. FDA/EMA onaylı yeni standart idame tedavisidir.</p><ul><li><strong>A Şıkkı:</strong> Subkutan/Parenteral azasitidinin idame olarak kullanıldığı çalışmalar genel sağkalım avantajı gösterememiştir. Oral azasitidin farmakokinetik olarak farklıdır.</li><li><strong>B Şıkkı:</strong> Oral venetoklaks monoterapisinin standart kemoterapi sonrası izole olarak sağkalımı uzattığına dair randomize onaylı bir standart verisi henüz yoktur.</li><li><strong>D Şıkkı:</strong> Düşük doz sitarabin (LDAC), yoğun tedavi alamayanların birincil tedavisinde kullanılır, idame yaklaşımı değildir.</li><li><strong>E Şıkkı:</strong> Midostaurin idamesi sadece FLT3 mutasyonu saptanan hastalar için geçerlidir.</li></ul>"
+    },
+    {
+      "id": "q9",
+      "text": "Kırk beş yaşında kadın hasta yaygın cilt ekimozları, diş eti kanaması ve belirgin burun kanaması ile başvuruyor. Laboratuvar testlerinde ağır pansitopeni, hipofibrinojenemi, uzamış PT/aPTT ve artmış D-dimer ile Yaygın Damar İçi Pıhtılaşma (DIC) saptanıyor. Kemik iliği yaymasında yoğun granüllü, ancak klasik bilobe (böbrekvari) çekirdek yerine düzgün, yuvarlak-oval çekirdekli blastlar görülüyor. Auer çubukları çok nadirdir. Genetik incelemede klasik t(15;17) saptanmıyor, ancak FISH analizi ile t(11;17)(q23.2;q21.2) translokasyonu saptanıyor.\n\nHastalığın morfolojik varyantı ve hedefe yönelik ATRA (All-trans retinoik asit) tedavisine yanıtı göz önüne alındığında, bu genetik anormallik sonucunda oluşan füzyon geni ve klinik özelliği aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "PML::RARA füzyonu; ATRA'ya dramatik (mükemmel) yanıt verir." },
+        { "id": "B", "text": "NPM1::RARA füzyonu; Arsenik Trioksite (ATO) çok duyarlıdır, ATRA dirençlidir." },
+        { "id": "C", "text": "ZBTB16::RARA (PLZF::RARA) füzyonu; ATRA tedavisine karakteristik olarak dirençlidir." },
+        { "id": "D", "text": "STAT5B::RARA füzyonu; ATRA ile diferansiyasyon sendromu gelişimi en yüksektir." },
+        { "id": "E", "text": "KMT2A::MLLT3 füzyonu; DIC sıktır ve menin inhibitörlerine yanıt verir." }
+      ],
+      "correctAnswer": "C",
+      "explanation": "<p><strong>Doğru Cevap: C</strong></p><p><strong>C Şıkkı (DOĞRU):</strong> Akut Promyelositik Lösemi (APL) klinik bulgularıyla (ağır DIC) gelen ancak klasik PML::RARA t(15;17) taşımayan hastalarda APL varyantları düşünülmelidir. Verilen vakadaki t(11;17)(q23.2;q21.2) translokasyonu sonucu <strong>ZBTB16::RARA (eski adıyla PLZF::RARA)</strong> füzyonu oluşur. Bu varyant morfolojik olarak klasik APL'den farklıdır; çekirdekler bilobe değil düzgün yuvarlak/ovaldir ve karakteristik Auer çubukları sıklıkla görülmez. En kritik klinik özelliği ise klasik APL'nin aksine <strong>ATRA (All-trans retinoik asit) tedavisine dirençli olmasıdır.</strong></p><ul><li><strong>A Şıkkı:</strong> PML::RARA klasik t(15;17)'dir, bilobe çekirdekleri ve Auer çubukları vardır, ATRA'ya mükemmel yanıt verir.</li><li><strong>B ve D Şıkları:</strong> NPM1::RARA t(5;17) ve STAT5B::RARA t(17;17) nadir varyantlardır ancak senaryodaki t(11;17) sitogenetiği ZBTB16 ile RARA genini birleştirir.</li><li><strong>E Şıkkı:</strong> KMT2A::MLLT3 t(9;11) anormalliğidir, monositik lösemilerde sıktır ancak APL varyantı değildir.</li></ul>"
+    },
+    {
+      "id": "q10",
+      "text": "Elli beş yaşında erkek hasta de novo FLT3-ITD mutasyonlu AML tanısı ile 7+3 kemoterapisi ve Midostaurin kombinasyonu almış, remisyona (CR) girmiş, ancak tedavisinin 8. ayında nüks (relaps) ile başvurmuştur. Hastanın relapsında alınan kemik iliği örneğinde FLT3-ITD mutasyonunun devam ettiği görülmüş olup, hastanın performansı (ECOG: 1) hedefe yönelik tedavilere uygundur.\n\nProspektif randomize klinik çalışmalara (ADMIRAL) dayanarak, FLT3 mutasyonlu relaps/refrakter AML hastalarının tedavisinde standart kurtarma (salvage) kemoterapisine kıyasla genel sağkalımı anlamlı derecede uzattığı kanıtlanan ve bu endikasyonla monoterapide onaylı olan hedefe yönelik ajan aşağıdakilerden hangisidir?",
+      "options": [
+        { "id": "A", "text": "İvosidenib" },
+        { "id": "B", "text": "Glasdegib" },
+        { "id": "C", "text": "Venetoklaks" },
+        { "id": "D", "text": "Quizartinib" },
+        { "id": "E", "text": "Gilteritinib" }
+      ],
+      "correctAnswer": "E",
+      "explanation": "<p><strong>Doğru Cevap: E</strong></p><p><strong>E Şıkkı (DOĞRU):</strong> <strong>Gilteritinib</strong>, FLT3-ITD ve FLT3-TKD mutasyonlarını hedefleyen güçlü bir FLT3 inhibitörüdür. ADMIRAL faz 3 çalışmasında, FLT3 mutasyonlu relaps veya refrakter (nüks/dirençli) AML hastalarında monoterapi olarak kullanıldığında, standart kurtarma (salvage) kemoterapisine kıyasla medyan genel sağkalımı anlamlı derecede (9.3 aya karşılık 5.6 ay) uzattığı gösterilmiş ve bu endikasyonla FDA/EMA onayı alarak yeni standart haline gelmiştir.</p><ul><li><strong>A Şıkkı:</strong> İvosidenib, IDH1 mutasyonlu relaps/refrakter veya yeni tanı unfit AML'de kullanılır.</li><li><strong>B Şıkkı:</strong> Glasdegib, bir Hedgehog sinyal yolağı (SMO) inhibitörüdür, FLT3 mutasyonlu nüks AML'de yeri yoktur.</li><li><strong>C Şıkkı:</strong> Venetoklaks (BCL-2 inhibitörü), FLT3 mutasyonlu relaps/refrakter AML için doğrudan Gilteritinib'in sahip olduğu primer onaya (sağkalım avantajına) sahip değildir.</li><li><strong>D Şıkkı:</strong> Quizartinib de bir FLT3-ITD inhibitörüdür ancak temel onayı 'yeni tanı' FLT3-ITD pozitif AML hastalarında 7+3 indüksiyonuna eklenmek (QuANTUM-First çalışması) üzeredir. Relaps/refrakter ortamda Gilteritinib monoterapisi standarttır.</li></ul>"
+    }
+  ]
+}

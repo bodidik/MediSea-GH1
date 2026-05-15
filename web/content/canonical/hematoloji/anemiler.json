@@ -1,0 +1,31 @@
+{
+  "title": "Anemiler",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "MCV", "Retikülosit", "Sınıflandırma", "Kategori", "Yapay Zeka Taslağı"],
+    "parent": null,
+    "order": 29
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</strong>. HEmatoloji.</em></p>"
+    },
+    {
+      "heading": "Tanım ve DSÖ Kriterleri",
+      "html": "<p><strong>Anemi</strong>, dolaşımdaki kırmızı kan hücrelerinin (eritrosit) kitlesinde veya hemoglobin (Hb) konsantrasyonunda azalma olması durumudur. Bu durum, dokulara oksijen taşınmasını bozarak doku hipoksisine yol açar.</p><p>Dünya Sağlık Örgütü (DSÖ) kriterlerine göre deniz seviyesinde anemi sınırları şunlardır:</p><ul class=\"mb-4\"><li><strong>Erişkin Erkek:</strong> Hemoglobin < 13 g/dL</li><li><strong>Erişkin Kadın (Gebe olmayan):</strong> Hemoglobin < 12 g/dL</li><li><strong>Gebe Kadın:</strong> Hemoglobin < 11 g/dL</li></ul>"
+    },
+    {
+      "heading": "Morfolojik Sınıflandırma (MCV Ekseni)",
+      "html": "<p>Anemilere tanısal yaklaşımda en temel ve ilk adım, eritrositlerin ortalama hacmini gösteren <strong>MCV (Mean Corpuscular Volume)</strong> değerine bakmaktır:</p><ul class=\"mb-4\"><li><strong>Mikrositik Anemiler (MCV < 80 fL):</strong> Eritrositler küçüktür. Genellikle hemoglobin sentezi kusurludur. (Örn: <em>Demir Eksikliği Anemisi, Talasemiler, Kronik Hastalık Anemisi [geç evre], Sideroblastik Anemi, Kurşun Zehirlenmesi</em>).</li><li><strong>Normositik Anemiler (MCV 80-100 fL):</strong> Eritrosit boyutu normaldir ancak sayıları azdır. (Örn: <em>Akut kan kaybı, Kronik Hastalık Anemisi [erken/tipik evre], Böbrek Yetmezliği, Aplastik Anemi, bazı Hemolitik Anemiler</em>).</li><li><strong>Makrositik Anemiler (MCV > 100 fL):</strong> Eritrositler anormal derecede büyüktür. Kendi içinde ikiye ayrılır:<ul><li><em>Megaloblastik:</em> DNA sentez bozukluğu vardır, nötrofillerde hipersegmentasyon görülür (<strong>B12 Vitamini ve Folik Asit Eksikliği</strong>).</li><li><em>Non-Megaloblastik:</em> DNA sentez sorunu yoktur (<strong>Alkolizm, Karaciğer Hastalığı, Hipotiroidi, MDS, Retikülositoz</strong>).</li></ul></li></ul>"
+    },
+    {
+      "heading": "Kinetik Sınıflandırma (Retikülosit Ekseni)",
+      "html": "<p>Aneminin kemik iliğinde üretim azlığından mı yoksa periferde yıkım/kayıptan mı kaynaklandığını anlamak için <strong>Düzeltilmiş Retikülosit Sayısı</strong> (veya Retikülosit Üretim İndeksi - RPI) kullanılır.</p><ul class=\"mb-4\"><li><strong>Hipoproliferatif (Düşük Retikülosit):</strong> Kemik iliği anemiye yeterli yanıt veremez (RPI < 2). Temel maddelerin eksikliği (Demir, B12, Folat), kemik iliği hasarı (Aplastik anemi, infiltrasyon) veya uyarıcı eksikliği (Böbrek yetmezliğinde EPO eksikliği) durumlarında görülür.</li><li><strong>Hiperproliferatif (Yüksek Retikülosit):</strong> Kemik iliği sağlamdır ve anemiye yanıt olarak kana bolca genç eritrosit (retikülosit) pompalar (RPI > 2 veya >3). <strong>Akut kanamalar</strong> ve <strong>Hemolitik Anemilerde (yıkım)</strong> görülür.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Spesifik İpuçları",
+      "html": "<p>Aneminin genel semptomları doku hipoksisine bağlı yorgunluk, halsizlik, solukluk (özellikle konjonktiva ve palmar çizgilerde), efor dispnesi ve taşikardidir. Ancak alt tiplere özgü spesifik bulgular tanıyı ele verir:</p><ul class=\"mb-4\"><li><strong>Demir Eksikliği:</strong> Pika (buz, toprak yeme isteği), kaşık tırnak (koilonişi), dudak kenarlarında çatlak (angular stomatit), yutma güçlüğü (Plummer-Vinson Sendromu).</li><li><strong>B12 Eksikliği:</strong> Simetrik nöropati, denge kaybı, ataksi, kırmızı ve ağrılı dil (Hunter glositi).</li><li><strong>Hemolitik Anemiler:</strong> Skleralarda sarılık (ikter), idrar renginde koyulaşma, safra taşları ve splenomegali.</li></ul>"
+    }
+  ]
+}

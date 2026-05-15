@@ -1,0 +1,19 @@
+{
+  "title": "IgA Vasküliti ve Kriyoglobülinemi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "HSP", "HCV", "Purpura"],
+    "parent": "vaskulit-sendromlari",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "IgA Vasküliti (Henoch-Schönlein Purpurası)",
+      "text": "<p>Çocuklarda en sık görülen vaskülittir. Genellikle ÜSYE sonrası gelişir. Klasik Tetrad: 1. <strong>Palpabl Purpura</strong> (Kalça ve bacaklarda), 2. <strong>Artrit/Artralji</strong>, 3. <strong>Karın Ağrısı</strong> (İnvajinasyon riski), 4. <strong>Renal Tutulum</strong> (IgA Nefropatisi). Genellikle kendiliğinden düzelir.</p>"
+    },
+    {
+      "heading": "Kriyoglobülinemik Vaskülit",
+      "text": "<p>Soğukta çöken immünoglobulinlerin damar duvarında birikmesidir. Tip 2 ve 3 (Mikst) formu %90 <strong>Hepatit C (HCV)</strong> ile ilişkilidir. Meltzer Triadı: Purpura + Halsizlik + Artralji. Kompleman C4 düzeyi çok düşüktür.</p>"
+    }
+  ]
+}

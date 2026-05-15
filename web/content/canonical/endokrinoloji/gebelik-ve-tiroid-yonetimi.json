@@ -1,0 +1,35 @@
+{
+  "title": "Gebelikte Tiroid Hastalıkları Yönetimi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Gebelik", "Tiroid", "hCG", "Levotiroksin", "PTU"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 ATA Thyroid in Pregnancy Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Fizyolojik Değişimler: hCG ve TBG Etkisi",
+      "html": "<p>Gebelik, tiroid fizyolojisini dramatik olarak değiştirir:</p><ul class=\"mb-4\"><li><strong>hCG Etkisi:</strong> hCG yapısı TSH'a çok benzer. İlk trimesterde yükselen hCG, tiroidi uyararak fT4'ü artırır ve <strong>TSH'ı baskılar.</strong> Bu fizyolojik bir durumdur.</li><li><strong>TBG Artışı:</strong> Östrojen etkisiyle karaciğerden Tiroksin Bağlayıcı Globülin (TBG) sentezi artar. Bu da <strong>Total T4</strong> düzeyini yükseltir ancak serbest T4 normal kalma eğilimindedir.</li><li><strong>İyot İhtiyacı:</strong> Renal iyot klirensi arttığı ve fetüse iyot transferi başladığı için iyot ihtiyacı %50 artar.</li></ul>"
+    },
+    {
+      "heading": "Gebelikte Hipotiroidi: Fetüsün IQ Bekçisi",
+      "html": "<p>Fetüs, ilk 18-20 haftaya kadar kendi tiroid hormonu sentezleyemez ve tamamen anneye bağımlıdır. Maternal hipotiroidi; düşük, erken doğum ve çocukta nörokognitif (IQ) düşüklüğü ile ilişkilidir.</p><ul class=\"mb-4\"><li><strong>TSH Hedefleri:</strong> Gebeliğe özgü referanslar kullanılmalıdır. Eğer laboratuvar vermemişse; 1. Trimesterde <strong>TSH < 2.5 mU/L</strong>, sonraki dönemlerde <strong>< 3.0 mU/L</strong> hedeflenir.</li><li><strong>Doz Ayarı:</strong> Gebelik teşhis edildiği anda mevcut Levotiroksin dozu hemen <strong>%30-50 (haftalık 2 ek doz)</strong> artırılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Gebelikte Hipertiroidi: Graves ve Gestasyonel Tirotoksikoz",
+      "html": "<p>Ayırıcı tanı hayati önem taşır:</p><ul class=\"mb-4\"><li><strong>Gestasyonel Geçici Tirotoksikoz:</strong> hCG yüksekliğine bağlıdır. Genellikle hiperemezis gravidarum eşlik eder. Tedavi gerektirmez, 20. haftadan sonra düzelir.</li><li><strong>Graves Hastalığı:</strong> TRAb pozitiftir. Antitiroid tedavi şarttır.</li><li><strong>İlaç Seçimi:</strong> <ul><li><strong>1. Trimester:</strong> Teratojenite (Aplasia cutis) riski nedeniyle <strong>Propiltiyoürasil (PTU)</strong> tercih edilir.</li><li><strong>2. ve 3. Trimester:</strong> Karaciğer toksisitesi riski nedeniyle <strong>Metimazol</strong>'e geçiş önerilir.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Postpartum Tiroidit (PPT)",
+      "html": "<p>Doğumdan sonraki ilk 1 yıl içinde görülür. Genellikle geçici bir hipertiroidi fazını, bir hipotiroidi fazı takip eder. Anti-TPO pozitifliği en önemli risk faktörüdür.</p>"
+    },
+    {
+      "heading": "Klinik İnci: Tarama Gerekliliği",
+      "html": "<p>Genel populasyonda rutin tarama tartışmalı olsa da; aile öyküsü, Tip 1 DM, guatr veya infertilite öyküsü olan her gebede <strong>Prekonsepsiyonel (gebelik öncesi) TSH</strong> mutlaka bakılmalıdır.</p>"
+    }
+  ]
+}

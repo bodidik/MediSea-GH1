@@ -1,0 +1,27 @@
+{
+  "title": "Tazemetostat'ın EZH2 Mutasyonlu POD24 Hastalarındaki Etkinliği",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "Tazemetostat", "EZH2", "POD24"],
+    "parent": "folikuler-lenfoma",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Mevcut Veri Durumu ve EZH2 Kohortu",
+      "html": "<p>Mevcut kılavuzlarda ve ana Faz 1/2 çalışmasında (NCT01897571), spesifik olarak sadece <strong>'POD24 (ilk 24 ayda progresyon) ve EZH2 mutasyonu birlikteliği'</strong> gösteren alt gruba ait izole bir etkinlik veya sağkalım verisi sunulmamıştır.</p><p>Ancak, POD24 hastalarını da içeren, en az iki seri sistemik tedavi almış relaps/refrakter (R/R) EZH2 mutasyonlu genel kohortun etkinlik ve güvenlilik verileri mevcuttur ve karar algoritmalarına yön vermektedir.</p>"
+    },
+    {
+      "heading": "EZH2 Mutant R/R Kohort Etkinlik Verileri",
+      "html": "<ul class=\"mb-4\"><li><strong>Genel Yanıt Oranı (ORR):</strong> %69</li><li><strong>Tam Yanıt (CR):</strong> %13</li><li><strong>Kısmi Yanıt (PR):</strong> %56</li><li><strong>Medyan Progresyonsuz Sağkalım (PFS):</strong> 13.8 ay (~14 ay)</li><li><strong>Medyan Yanıt Süresi (DOR):</strong> 11 ay</li></ul><p><strong>Yabanıl Tip (Wild-Type) ile Karşılaştırma:</strong> <em>Tazemetostat</em>, EZH2 yabanıl tip hastalarda sadece %35 ORR ve %4 CR sağlarken, EZH2 mutasyonlu grupta bu oranların belirgin şekilde yüksek olması <strong>hedefe yönelik tedavinin (precision medicine)</strong> önemini net bir şekilde vurgulamaktadır.</p>"
+    },
+    {
+      "heading": "POD24 Hastalarının Yönetimindeki Yeri",
+      "html": "<p><em>Tazemetostat</em>; Y646, A682 veya A692 gibi spesifik EZH2 mutasyonları taşıyan ve en az iki basamak sistemik tedavi almış R/R FL hastaları ile tatmin edici alternatif bir tedavi seçeneği olmayan hastalar için FDA onaylıdır.</p><p>POD24 gibi erken ve agresif nüks gösteren, CAR-T hücre tedavisine veya bispesifik antikorlara uygun olmayan ya da bu tedavilere dirençli/ulaşamayan hastalar için kılavuzlarda yer alan çok önemli bir oral hedefe yönelik seçenektir.</p>"
+    },
+    {
+      "heading": "Tolerabilite ve Güvenlilik Profili",
+      "html": "<p>Günde iki kez 800 mg oral yolla uygulanan bu ajan, kemoimmünoterapilere ve hücresel tedavilere kıyasla oldukça iyi tolere edilir. Yan etkilerin çoğu Grade 1-2 olup yorgunluk, üst solunum yolu enfeksiyonu, kas-iskelet ağrısı ve bulantı şeklinde görülür. Ağır sitopeni nadirdir (%2-3 Grade 3). Bu profil, frajil veya komorbiditeleri yüksek POD24 hastalarında onu oldukça değerli kılar.</p><p>⚠️ <strong>Klinik Uyarı:</strong> Tedavinin yönetimi kolay olmakla birlikte, Tazemetostat kullanımının uzun dönemde miyelodisplastik sendrom (MDS), akut miyeloid lösemi (AML) ve T veya B hücreli lenfoblastik neoplaziler gibi <strong>ikincil malignite (sekonder kanser)</strong> riskini artırabileceği mutlaka akılda tutulmalıdır.</p>"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Periferik T-Hücreli Lenfomalar (PTCL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "PTCL", "T-Hücreli Lenfoma", "CD30", "Brentuximab", "Yapay Zeka Taslağı"],
+    "parent": "lenfomalar",
+    "order": 19
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Genel Özellikler",
+      "html": "<p><strong>Periferik T-Hücreli Lenfomalar (PTCL)</strong>, post-timik (olgun) T hücrelerinden ve NK (Doğal Katil) hücrelerinden köken alan, agresif seyirli ve heterojen bir Non-Hodgkin Lenfoma (NHL) grubudur. Genel olarak B-hücreli lenfomalardan daha kötü prognoza sahiptirler. Hücresel kökene göre T-helper (CD4+), sitotoksik T (CD8+) veya NK hücresi fenotipi gösterebilirler.</p><p>Hastalarda B semptomları (ateş, gece terlemesi, kilo kaybı), jeneralize lenfadenopati ve kemik iliği, deri, karaciğer, dalak gibi <strong>ekstranodal tutulumlar</strong> çok sıktır. Ayrıca bu hastalarda makrofaj aktivasyon sendromu / <strong>Hemofagositik Lenfohistiyositoz (HLH)</strong> gelişme riski oldukça yüksektir.</p>"
+    },
+    {
+      "heading": "Majör Alt Tipler (WHO / ICC 2022)",
+      "html": "<ul class=\"mb-4\"><li><strong>PTCL, NOS (Başka Türlü Adlandırılamayan):</strong> En sık görülen alt tiptir (~%30). Spesifik bir fenotipi olmayan, adeta bir 'çöp tenekesi' tanısıdır ve prognozu kötüdür.</li><li><strong>Anaplastik Büyük Hücreli Lenfoma (ALCL):</strong> Evrensel olarak <strong>CD30 (Ki-1) pozitifliği</strong> ve <em>hallmark (at nalı) hücreleri</em> ile karakterizedir. <strong>ALK pozitif</strong> olanlar genellikle çocuk/genç erişkinlerde görülür ve prognozu mükemmeldir. <strong>ALK negatif</strong> olanlar ise ileri yaşta görülür ve prognozu daha kötüdür.</li><li><strong>Anjiyoimmünoblastik T-Hücreli Lenfoma (AITL):</strong> T-Folliküler Helper (TFH) hücrelerinden köken alır. Poliklonal hipergammaglobulinemi, yaygın deri döküntüsü (rash), otoimmün hemolitik anemi (Coombs +) ve eozinofili gibi immün disregülasyon bulgularıyla prezante olur. <em>RHOA, TET2, IDH2</em> ve <em>DNMT3A</em> mutasyonları tipiktir.</li><li><strong>Ekstranodal NK/T-Hücreli Lenfoma, Nazal Tip:</strong> Neredeyse tamamı <strong>Epstein-Barr Virüsü (EBV)</strong> ile ilişkilidir ve Asya/Güney Amerika popülasyonunda sıktır. Yüz orta hattında (nazal kavite, damak) nekrotizan, yıkıcı kitlelerle gelir.</li><li><strong>Erişkin T-Hücreli Lösemi/Lenfoma (ATLL):</strong> <strong>HTLV-1</strong> virüsü endemik bölgelerinde (Japonya, Karayipler) görülür. Hiperkalsemi, litik kemik lezyonları, yonca yaprağı (flower cells) morfolojisi ve deri tutulumu tipiktir.</li></ul>"
+    },
+    {
+      "heading": "Birinci Basamak Tedavi Stratejileri",
+      "html": "<p>T-hücreli lenfomalarda (ALK+ ALCL hariç) standart <strong>CHOP kemoterapisi genellikle yetersiz kalır</strong>. Daha genç ve fit hastalarda CHOP rejimine <em>Etoposid</em> eklenmesi (<strong>CHOEP</strong>) progresyonsuz sağkalımı artırabilir.</p><p><strong>ECHELON-2 Devrimi (CD30+ Hastalar):</strong> Anaplastik Büyük Hücreli Lenfoma (ALCL) ve diğer CD30 eksprese eden PTCL alt tiplerinde, anti-CD30 antikor-ilaç konjugatı olan <strong>Brentuximab vedotin</strong>'in CHP (Vinkristin çıkarılmış CHOP) ile kombinasyonu (<strong>BV+CHP</strong>), standart CHOP'a göre hem progresyonsuz hem de genel sağkalımı anlamlı şekilde uzatmış ve 1. basamak standart tedavi olmuştur.</p><p><strong>Konsolidasyon:</strong> B-hücreli lenfomaların aksine, çoğu PTCL alt tipinde (ALK+ ALCL hariç) birinci tam remisyona (CR1) giren hastalarda, hastalığın yüksek nüks riski nedeniyle <strong>upfront (erken dönem) Otolog Kök Hücre Nakli (ASCT)</strong> ile konsolidasyon standart yaklaşımdır.</p>"
+    },
+    {
+      "heading": "Relaps/Refrakter (R/R) Hastalık ve İleri Tedaviler",
+      "html": "<p>Nüks eden T-hücreli lenfomalarda prognoz oldukça kötüdür ve hedefe yönelik ajanlar veya klinik çalışmalar devreye girer:</p><ul class=\"mb-4\"><li><strong>HDAC İnhibitörleri:</strong> <em>Romidepsin</em> ve <em>Belinostat</em>, epigenetik modülasyon yaparak PTCL hücrelerinde apoptozu indükler.</li><li><strong>Antifolatlar:</strong> <em>Pralatreksat</em>, hücre içine daha fazla alınan ve R/R PTCL'de onaylı olan spesifik bir folat analoğudur.</li><li><strong>Monoklonal Antikorlar:</strong> <em>Mogamulizumab</em> (anti-CCR4 antikoru), özellikle ATLL ve kutanöz T-hücreli lenfomalarda oldukça etkilidir. <em>Alemtuzumab</em> (anti-CD52) da kullanılabilir ancak ciddi enfeksiyon riski (CMV reaktivasyonu) vardır.</li><li><strong>Allojenik Kök Hücre Nakli:</strong> Uygun, genç hastalarda relaps sonrası uzun süreli remisyon sağlayabilen yegane küratif seçenektir.</li></ul>"
+    }
+  ]
+}

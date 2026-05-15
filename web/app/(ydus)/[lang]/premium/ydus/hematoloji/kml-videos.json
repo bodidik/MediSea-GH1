@@ -1,0 +1,23 @@
+[
+  {
+    "id": "kml-giris",
+    "title": "KML Patofizyolojisi ve Tanı",
+    "duration": "18:45",
+    "thumbnail": "/thumbnails/kml-1.jpg",
+    "url": "#"
+  },
+  {
+    "id": "kml-tki",
+    "title": "TKI Seçimi ve Yan Etki Yönetimi",
+    "duration": "24:10",
+    "thumbnail": "/thumbnails/kml-2.jpg",
+    "url": "#"
+  },
+  {
+    "id": "kml-tfr",
+    "title": "Tedavisiz Remisyon (TFR) Protokolü",
+    "duration": "12:30",
+    "thumbnail": "/thumbnails/kml-3.jpg",
+    "url": "#"
+  }
+]

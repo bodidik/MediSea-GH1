@@ -1,0 +1,43 @@
+{
+  "title": "Akut Myeloid Lösemi (AML)",
+  "meta": {
+    "updatedAt": "06 Mar 2026",
+    "tags": ["Hematoloji", "Lösemi", "AML", "ELN 2022", "WHO5"],
+    "parent": "losemiler",
+    "order": 1,
+    "summary": "Hematoloji uzmanlık ve yan dal uzmanlık (YDUS) seviyesine uygun, en güncel kılavuzları (ICC 2022, WHO5 ve ELN 2022/2024) baz alan kapsamlı Akut Myeloid Lösemi (AML) klinik rehberidir."
+  },
+  "summary": "Erişkinlerde en sık görülen akut lösemi türü olan AML, eski FAB ve morfolojik %20 blast kriterlerinden uzaklaşarak tamamen moleküler ve genetik tabanlı (ICC 2022 ve WHO5) yeni bir sınıflandırma ve tedavi (hedefe yönelik ajanlar, menin inhibitörleri) dönemine girmiştir.",
+  "sections": [
+    {
+      "heading": "Epidemiyoloji ve Patogenez",
+      "text": "<p><strong>İnsidans ve Yaş:</strong> AML, erişkinlerde en sık görülen akut lösemidir (tüm akut lösemilerin yaklaşık %80'i). Medyan tanı yaşı 65-68 civarındadır ve yaşla birlikte insidans artar.</p><p><strong>Patogenez:</strong> Çoğu vaka de novo olarak başlasa da, yaşlanmayla artan <strong>Önemi Belirsiz Klonal Hematopoez (CHIP)</strong> (DNMT3A, TET2, ASXL1 mutasyonları) zemininden gelişebilir.</p><ul><li><strong>Alkilleyici ajanlar/Radyoterapi (t-AML):</strong> 5-7 yıllık uzun bir latent süreye sahiptir. Kromozom 5/7 anomalileri, kompleks karyotip ve sıklıkla TP53 mutasyonu ile ilişkilidir ve prognozu çok kötüdür.</li><li><strong>Topoizomeraz II inhibitörleri (örn. Antrasiklinler):</strong> 1-3 yıllık kısa latent süreye sahiptir. Sıklıkla 11q23 (KMT2A) yeniden düzenlenmeleri görülür.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Güncel Tanı ve Sınıflandırma (ICC 2022 ve WHO5)",
+      "text": "<p>Eski FAB sınıflandırması ve standart %20 blast kuralı, yerini moleküler ve sitogenetik belirleyicilere bırakmıştır.</p><ul><li><strong>Blast Eşiğindeki Değişim:</strong> t(15;17)/PML::RARA, t(8;21)/RUNX1::RUNX1T1, inv(16)/CBFB::MYH11 ve mutant NPM1 gibi tanımlayıcı genetik anormalliklerin varlığında, WHO5 sistemine göre blast oranına bakılmaksızın AML tanısı konur. ICC 2022 ise bu grupta en az %10 blast varlığını şart koşar.</li><li><strong>BCR::ABL1 İstisnası:</strong> Her iki sistem de Kronik Myeloid Löseminin (KML) blastik krizinden ayırımı yapabilmek için BCR::ABL1 t(9;22) pozitif de novo AML tanısında ≥%20 blast eşiğini korumuştur.</li><li><strong>Yeni Kategori (MDS/AML):</strong> ICC 2022 sistemi, %10-19 arası blastı olan ve tanımlayıcı bir genetik anormalliği olmayan veya spesifik MDS ilişkili mutasyonlar taşıyan vakalar için \"MDS/AML\" geçiş kategorisini tanımlamıştır. WHO5 bu grubu hala MDS (MDS-IB2) olarak sınıflandırır.</li><li><strong>TP53 Mutasyonu:</strong> ICC sistemine göre varyant allel frekansı (VAF) ≥%10 olan TP53 mutasyonu saptandığında, hasta spesifik olarak \"Mutasyona uğramış TP53'lü AML\" tanısı alır. Bu kategori, eski saf eritroid lösemi (AEL) vakalarının çoğunu içine almıştır.</li><li><strong>Miyelodisplazi İlişkili AML:</strong> ICC ve WHO5'te sadece morfolojik displazi tanıyı değiştirmek için yeterli değildir. ASXL1, BCOR, EZH2, RUNX1 (ICC'de), SF3B1, SRSF2, STAG2, U2AF1, ZRSR2 gibi splicing (kırpılma) veya epigenetik modifikasyon genlerinden birinin mutasyonu hastalığı bu kategoriye sokar.</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Risk Sınıflandırması (ELN 2022)",
+      "text": "<p>ELN 2022, prognostik gruplandırmayı genetik bazda üç kategoriye ayırmıştır:</p><p><strong>1. Favorable (İyi) Risk:</strong></p><ul><li>t(8;21) ve inv(16) / t(16;16) (Core Binding Factor Lösemileri).</li><li>NPM1 mutasyonu (Eğer FLT3-ITD eşlik etmiyorsa).</li><li><strong>Güncelleme:</strong> CEBPA geninin sadece bZIP bölgesindeki in-frame mutasyonları (monoallelik veya biallelik olması fark etmeksizin) iyi risk kabul edilir.</li></ul><p><strong>2. Intermediate (Orta) Risk:</strong></p><ul><li>t(9;11) MLLT3::KMT2A.</li><li><strong>Güncelleme:</strong> FLT3-ITD mutasyonu saptanan tüm hastalar (NPM1 eşlik etse de etmese de veya allelik oranı düşük olsa bile) artık orta risk grubundadır.</li></ul><p><strong>3. Adverse (Kötü) Risk:</strong></p><ul><li>TP53 mutasyonları ve KMT2A (11q23) yeniden düzenlenmeleri.</li><li>inv(3) veya t(3;3) (MECOM/GATA2 aşırı ekspresyonu) ve t(6;9) (DEK::NUP214).</li><li>Kompleks karyotip (≥3 anormallik) ve monozomal karyotip.</li><li>MDS-ilişkili gen mutasyonları (ASXL1, BCOR, vb.).</li></ul><p><em>Klinik Not: ELN 2024 düşük yoğunluklu tedavi alan yaşlı/unfit hastalar için ek bir risk modeli sunmuştur. Azasitidin + İvosidenib tedavisi alan IDH1 mutasyonlu hastalar doğrudan \"Favorable\" risk kabul edilmektedir.</em></p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Tedavi Algoritması ve Hedefe Yönelik Ajanlar",
+      "text": "<p>Tedavi seçimi hastanın kronolojik yaşından ziyade performans statüsüne (ECOG) ve komorbiditelerine göre belirlenen <strong>Medikal Fitness</strong> durumuna göre yapılır.</p><p><strong>A) Yoğun Kemoterapiye Uygun (Fit) Genç ve Erişkin Hastalar:</strong></p><ul><li><strong>İndüksiyon:</strong> Klasik standart \"7+3\" rejimi (7 gün Sitarabin + 3 gün Antrasiklin) uygulanır.</li><li><strong>T-AML veya MDS-ilişkili AML:</strong> CPX-351 (Sitarabin ve Daunorubisin'in lipozomal formülasyonu), genel sağkalımı artırdığı için ilk seçenektir.</li><li><strong>Hedefe Yönelik Eklemeler:</strong> FLT3 Mutasyonunda Midostaurin veya Quizartinib eklenir. Core Binding Factor (CBF) AML / CD33+ durumunda Gemtuzumab Ozogamisin (GO) eklenir.</li><li><strong>Konsolidasyon:</strong> İyi risk grubunda Yüksek Doz Sitarabin (HiDAC). Orta ve kötü riskte ilk tam remisyonda (CR1) Allojenik Kök Hücre Nakli (HCT) endikedir.</li></ul><p><strong>B) Yoğun Kemoterapiye Uygun Olmayan (Unfit / Frail) Hastalar:</strong></p><ul><li><strong>Yeni Standart:</strong> Hipometile edici ajan (Azasitidin veya Desitabin) + Venetoklaks (BCL-2 inhibitörü) kombinasyonu (VIALE-A çalışması).</li><li><strong>Mutasyon Spesifik:</strong> IDH1 mutasyonunda İvosidenib + Azasitidin.</li></ul><p><strong>C) İdame ve Relaps Tedavisi:</strong></p><ul><li><strong>İdame:</strong> CR'ye giren ancak nakle gidemeyen hastalarda Oral Azasitidin (CC-486) standarttır (QUAZAR AML-001).</li><li><strong>Relaps/Dirençli:</strong> FLT3 mutasyonunda Gilteritinib monoterapisi, IDH1'de Olutasidenib/İvosidenib, IDH2'de Enasidenib kullanılır.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Onkolojik Aciller ve Komplikasyonlar Yönetimi",
+      "text": "<ul><li><strong>Akut Promyelositik Lösemi (APL) ve DİC:</strong> t(15;17). Medikal bir acildir. Ölümcül koagülopati sıktır. Şüphelenildiği an genetik doğrulama beklenmeden derhal ATRA başlanmalıdır. Kesin tedavisi ATRA + Arsenik Trioksit (ATO).</li><li><strong>Lökostaz (Hiperlokositoz):</strong> Beyaz küre >100.000/microL. İri monoblastlar mikrovasküler tıkanıklığa yol açar (AML-M4 ve M5). Acil lökoferez veya hidroksiüre başlanmalıdır. <em>Kural: Kan vizkozitesini artırmamak için hayati zorunluluk olmadıkça RBC transfüzyonundan kaçınılmalıdır.</em></li><li><strong>Diferansiyasyon Sendromu:</strong> APL'de ATRA/ATO veya hedefe yönelik ajanlar sonrası blastların aniden olgunlaşmasına bağlı gelişen kapiller kaçış sendromudur. Acil sistemik Deksametazon başlanmalıdır.</li><li><strong>Tümör Lizis Sendromu (TLS):</strong> Agresif hidrasyon ve allopurinol/rasburikaz ile profilaksi ve tedavi sağlanır.</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Hedefe Yönelik Tedavide Güncel Gelişmeler",
+      "text": "<ul><li><strong>Menin İnhibitörleri (örn. Revumenib):</strong> Özellikle KMT2A (MLL) yeniden düzenlemeleri ve NUP98 füzonları olan AML hastalarında kromatin yapısını ve transkripsiyonu regüle ederek çalışır (Diferansiyasyon Sendromu riski vardır).</li><li><strong>UBTF Tandem Duplikasyonları:</strong> Genç yetişkinlerde görülen, MDS özellikleri, Trizomi 8 ve FLT3-ITD ile ilişkili, Menin inhibitörlerine potansiyel yanıt verebilecek yeni ve kötü prognozlu bir genomik alt gruptur.</li></ul>",
+      "visibility": "V"
+    }
+  ]
+}

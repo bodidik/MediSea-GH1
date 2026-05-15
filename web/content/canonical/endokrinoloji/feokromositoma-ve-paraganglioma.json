@@ -1,0 +1,35 @@
+{
+  "title": "Feokromositoma ve Paraganglioma: Katekolamin Fırtınası",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Feokromositoma", "Katekolamin", "MEN2", "VHL", "Metanefrin"],
+    "parent": "adrenal-medulla-hastaliklari",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 Pheochromocytoma Management Updates referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Patobiyoloji: %10 Kuralından Genetik Devrime",
+      "html": "<p>Feokromositoma, adrenal medulla kromaffin hücrelerinden köken alan bir tümördür. Eskiden '%10 kuralı' (bilateral, malign, ekstra-adrenal) ile anılırdı; ancak günümüzde vakaların %35-40'ının <strong>germ-line mutasyonlar</strong> (RET, VHL, NF1, SDHx) sonucu geliştiği bilinmektedir.</p>"
+    },
+    {
+      "heading": "Klinik: Klasik Triad ve 5P Belirtisi",
+      "html": "<p>Ataklar (paroksizmler) saniyeler veya saatler sürebilir. <strong>Klasik Triad:</strong> Başağrısı + Çarpıntı + Terleme. Triadın özgüllüğü %94'tür.</p><ul class=\"mb-4\"><li><strong>P</strong>alpitations (Çarpıntı)</li><li><strong>P</strong>ain (Başağrısı)</li><li><strong>P</strong>erspiration (Terleme)</li><li><strong>P</strong>allor (Yüzde solukluk - vazokonstrüksiyona bağlı)</li><li><strong>P</strong>ressure (Dirençli veya paroksizmal hipertansiyon)</li></ul>"
+    },
+    {
+      "heading": "Biyokimyasal Tanı: Metanefrinlerin Üstünlüğü",
+      "html": "<p>Eskiden bakılan VMA (Vanilmandelik asit) artık terkedilmiştir. Modern laboratuvar yaklaşımı:</p><ul class=\"mb-4\"><li><strong>Plazma Serbest Metanefrinleri:</strong> En duyarlı testtir (Negatif tahmini değeri %100'e yakındır).</li><li><strong>24 Saatlik İdrar Metanefrinleri:</strong> Tanıyı doğrulamak için altın standarttır.</li><li>⚠️ <em>Kritik:</em> Ölçümden önce kafein, trisiklik antidepresanlar ve beta-blokerler gibi sonuçları bozan ajanlar kesilmelidir.</li></ul>"
+    },
+    {
+      "heading": "Görüntüleme ve Lokalizasyon",
+      "html": "<p>Biyokimya tanı koyar, görüntüleme yerini bulur:</p><ul class=\"mb-4\"><li><strong>BT ve MR:</strong> İlk basamak. MR, tümörün T2 ağırlıklı görüntülerde 'parlak (lightbulb sign)' olmasıyla karakterizedir.</li><li><strong>Fonksiyonel Görüntüleme:</strong> Metastaz şüphesi veya paraganglioma arayışında <strong>123I-MIBG Sintigrafisi</strong> veya <strong>68Ga-DOTATATE PET/BT</strong> (en duyarlı yöntem) kullanılır.</li></ul>"
+    },
+    {
+      "heading": "Cerrahi Öncesi Alfa-Blokaj: Hayati Hazırlık",
+      "html": "<div class=\"bg-red-50 p-4 border-l-4 border-red-500 mb-4\"><strong>⚠️ ASLA ÖNCE BETA-BLOKER VERME!</strong><p>Eğer alfa-reseptörleri bloke etmeden beta-bloker verirseniz, 'unopossed alpha' etkisiyle vazokonstrüksiyon tavan yapar ve hasta hipertansif krizle ex olur. Sıralama her zaman:</p><ol><li><strong>1. Alfa-Blokaj (Fenoksibenzamin veya Doksazosin):</strong> En az 10-14 gün önce başlanır.</li><li><strong>2. Hidrasyon:</strong> Alfa-blokajla gelişen vazodilatasyonu hacimle doldurmak için bol sıvı ve tuz.</li><li><strong>3. Beta-Blokaj:</strong> Sadece taşikardi gelişirse alfa-blokajdan sonra eklenir.</li></ol></div>"
+    }
+  ]
+}

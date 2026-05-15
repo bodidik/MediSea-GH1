@@ -1,0 +1,35 @@
+{
+  "title": "Hipopitüitarizm ve Sheehan Sendromu",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipopitüitarizm", "Sheehan Sendromu", "Panhipopitüitarizm", "Hormon Replasmanı"],
+    "parent": "hipofiz-hastaliklari-ana",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 Endokrinoloji Güncellemeleri referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Etiyoloji: Dokuz Hormonun Çöküşü",
+      "html": "<p>Hipopitüitarizm, bir veya daha fazla hipofiz hormonunun eksikliğidir. Tüm hormonlar eksikse <strong>Panhipopitüitarizm</strong> olarak adlandırılır.</p><ul class=\"mb-4\"><li><strong>Tümörler:</strong> En sık neden hipofiz adenomları ve bunların cerrahi/radyoterapi ile tedavisidir.</li><li><strong>İnfiltratif Hastalıklar:</strong> Sarkoidoz, Hemokromatozis, Histiositoz X.</li><li><strong>İnflamatuar:</strong> Lenfositik Hipofizit (Genellikle gebelik sonu veya postpartum görülür).</li><li><strong>Vasküler:</strong> Hipofizer Apopleksi ve Sheehan Sendromu.</li></ul>"
+    },
+    {
+      "heading": "Hormon Kayıp Sırası: 'Go Look For Adenoma'",
+      "html": "<p>Hipofiz yavaşça hasar alırken hormonlar genellikle belirli bir sırayla kaybolur (Mnemoni: <strong>Go Look For Adenoma</strong>):</p><ol class=\"mb-4\"><li><strong>GH</strong> (Büyüme Hormonu) - İlk kaybolan.</li><li><strong>LH / FSH</strong> (Gonadotropinler).</li><li><strong>TSH</strong> (Tiroid Stimülan Hormon).</li><li><strong>ACTH</strong> (Adrenokortikotropik Hormon) - Genellikle en son etkilenen ama en hayati olan.</li></ol>"
+    },
+    {
+      "heading": "Sheehan Sendromu: Postpartum Felaket",
+      "html": "<p>Doğum sırasında meydana gelen şiddetli kanama ve hipotansiyon (şok) sonucu, gebelikte büyümüş olan hipofiz bezinin iskemik nekrozudur.</p><ul class=\"mb-4\"><li><strong>Klinik İpucu 1:</strong> Doğum sonrası <strong>laktasyonun başlayamaması</strong> (Prolaktin eksikliği).</li><li><strong>Klinik İpucu 2:</strong> Doğumdan sonra menstrüasyonun geri dönmemesi (Gonadotropin eksikliği).</li><li><strong>Uzun Dönem:</strong> Yıllar içinde gelişen halsizlik, iştahsızlık ve soğuğa tahammülsüzlük (TSH ve ACTH eksikliği).</li></ul>"
+    },
+    {
+      "heading": "Tanı: Statik ve Dinamik Testler",
+      "html": "<ul class=\"mb-4\"><li><strong>Bazal Testler:</strong> Sabah (08:00) Kortizol, Serbest T4, TSH, FSH, LH, Testosteron/Östradiol ve IGF-1 ölçülür.</li><li><strong>İnsülin Tolerans Testi (ITT):</strong> GH ve ACTH eksikliği için <strong>Altın Standart</strong> dinamik testtir. İnsülinle hipoglisemi yaratılır; normal yanıt GH ve Kortizolün yükselmesidir. (⚠️ <em>Dikkat:</em> Koroner arter hastalığı ve epilepside kontrendikedir).</li><li><strong>Görüntüleme:</strong> Sella MRI. Sheehan sendromunda geç dönemde <strong>Boş Sella (Empty Sella)</strong> görüntüsü izlenebilir.</li></ul>"
+    },
+    {
+      "heading": "Hayati Kural: Replasman Sıralaması",
+      "html": "<p>Hipopitüitarizm tedavisinde ilaçların başlanma sırası hayat kurtarıcıdır:</p><div class=\"bg-red-50 p-4 border-l-4 border-red-500 mb-4\"><strong>⚠️ ÖNCE KORTİZOL:</strong> Eğer hastada hem ACTH hem de TSH eksikliği varsa, önce glukokortikoid (Hidrokortizon/Prednizolon) replasmanı yapılmalıdır. Önce Levotiroksin verilmesi, metabolizmayı hızlandırarak mevcut sınırlı kortizolü tüketir ve <strong>Akut Adrenal Krizi</strong> tetikleyebilir.</div>"
+    }
+  ]
+}

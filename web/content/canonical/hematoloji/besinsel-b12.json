@@ -1,0 +1,15 @@
+{
+  "title": "Besinsel B12 Vitamini Eksikliği",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Anemi", "Vegan", "B12"],
+    "parent": "megaloblastik-anemi",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Risk Grupları",
+      "text": "<p>B12 vitamini sadece hayvansal gıdalarda bulunur. Bu nedenle katı <strong>Vegan</strong> diyeti uygulayanlarda sık görülür. Ayrıca terminal ileum rezeksiyonu (Crohn hastalığı cerrahisi) geçirenlerde de emilim bozulur.</p>"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Adrenal Yetmezlik Tanısı",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": [
+      "Tanı Algoritması",
+      "ACTH Testi",
+      "Kortizol",
+      "Ayırıcı Tanı",
+      "Laboratuvar"
+    ],
+    "parent": "adrenal-yetmezlik",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Tanısal Yaklaşım ve Tarama",
+      "text": "<p>Adrenal yetmezlik tanısı klinik şüphe ile başlar. Tanı, uygunsuz derecede düşük kortizol üretiminin gösterilmesine dayanır.</p><ul><li><strong>Bazal Serum Kortizolü:</strong> Sabah 06:00-09:00 saatleri arasında (veya uyanınca ilk 3 saat içinde) ölçülmelidir.<ul><li><strong>&le;3 mcg/dL (80 nmol/L):</strong> Adrenal yetmezlik kuvvetle muhtemeldir. Klinik bulgular uyumluysa ileri test gerekmeyebilir.</li><li><strong>&ge;18 mcg/dL (500 nmol/L):</strong> Adrenal yetmezlik büyük oranda dışlanır.</li><li><strong>3 - 18 mcg/dL Arası (Gri Bölge):</strong> Sonuç belirsizdir, tanı için dinamik uyarı testi (ACTH testi) yapılması şarttır.</li></ul></li><li><strong>Önemli Not (Yeni Kitler):</strong> Yeni nesil monoklonal antikor veya LC-MS/MS yöntemlerinde kortizol eşik değeri daha düşüktür. Bu yöntemlerde <strong>13-14 mcg/dL</strong> üzerindeki değerler adrenal yetmezliği dışlamak için yeterli kabul edilmektedir.</li></ul>"
+    },
+    {
+      "heading": "Doğrulama Testi: ACTH Uyarı Testi",
+      "text": "<p>Bazal kortizolün tanı koydurmadığı \"gri bölge\" hastalarında altın standart testtir.</p><ul><li><strong>Standart Yüksek Doz Testi (250 mcg):</strong> Sentetik ACTH (Cosyntropin/Synacthen) IV veya IM uygulanır. 0., 30. ve 60. dakikalarda kortizol ölçülür.<ul><li><strong>Normal Yanıt:</strong> Pik kortizol düzeyinin <strong>&ge;18 mcg/dL</strong> (yeni kitlerle &ge;14-15 mcg/dL) olması gerekir.</li><li><strong>Yetersiz Yanıt:</strong> Pik değerin bu sınırların altında kalması adrenal yetmezliği doğrular.</li></ul></li><li><strong>Düşük Doz Testi (1 mcg):</strong> Teknik zorluklar ve standart teste göre belirgin bir tanısal üstünlüğü olmaması nedeniyle rutin kullanımda önerilmemektedir.</li></ul>"
+    },
+    {
+      "heading": "Etiyolojik Ayrım (Primer vs Santral)",
+      "text": "<p>Kortizol eksikliği doğrulandıktan sonraki en kritik adım, sorunun kaynağını (adrenal bez mi yoksa hipofiz/hipotalamus mu?) belirlemektir. Bunun için sabah açlıkta plazma ACTH düzeyine bakılır.</p><ul><li><strong>Primer Adrenal Yetmezlik (Addison):</strong> Plazma ACTH düzeyi referans aralığın üst sınırının üzerindedir (genellikle >2 kat yüksektir, >100-200 pg/mL). Beraberinde <strong>Renin (PRA) yüksekliği</strong> ve <strong>Aldosteron düşüklüğü</strong> saptanır.</li><li><strong>Santral (Sekonder/Tersiyer) Adrenal Yetmezlik:</strong> Plazma ACTH düzeyi düşüktür veya kortizol düşüklüğüne rağmen uygunsuz şekilde \"normal\" aralıktadır. Renin ve aldosteron düzeyleri genellikle normaldir (korunmuştur).</li></ul>"
+    },
+    {
+      "heading": "Primer Adrenal Yetmezlikte İleri İnceleme",
+      "text": "<p>Etiyolojiyi belirlemek için şu sıra izlenir:</p><ol><li><strong>Otoantikorlar:</strong> İlk olarak <strong>21-Hidroksilaz Antikorları</strong> ölçülür. Pozitif olması otoimmün adrenaliti (Addison) gösterir ve olguların %90'ını açıklar.</li><li><strong>VLCFA (Çok Uzun Zincirli Yağ Asitleri):</strong> Antikor negatif <strong>erkek</strong> hastalarda X-baplı Adrenolökodistrofi (X-ALD) dışlanmalıdır.</li><li><strong>Görüntüleme (Adrenal BT):</strong> Antikor negatif hastalarda yapılır.<ul><li><strong>Büyük/Kalsifiye Adrenaller:</strong> Tüberküloz, mantar enfeksiyonları, kanama, metastaz veya lenfoma düşündürür.</li><li><strong>Küçük/Atrofik Adrenaller:</strong> Genellikle otoimmün nedenleri düşündürür.</li></ul></li><li><strong>17-OH Progesteron:</strong> Konjenital Adrenal Hiperplazi (KAH) şüphesinde bakılır.</li></ol>"
+    },
+    {
+      "heading": "Santral Adrenal Yetmezlikte İleri İnceleme",
+      "text": "<p>Tanı konduktan sonra hipofiz ve hipotalamusun görüntülenmesi gerekir.</p><ul><li><strong>Hipofiz MRG:</strong> Tümör, apopleksi, empty sella veya infiltratif hastalıkları (sarkoidoz vb.) göstermek için çekilir.</li><li><strong>İlaç Öyküsü:</strong> Ekzojen glukokortikoid kullanımı (oral, topikal, eklem içi) en sık nedendir ve mutlaka sorgulanmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Özel Durumlar ve Uyarılar",
+      "text": "<p>Tanı sürecinde dikkat edilmesi gereken özel durumlar şunlardır:</p><ul><li><strong>Adrenal Kriz Şüphesi:</strong> Hipotansiyon ve şok tablosundaki hastada test sonuçları <strong>beklenmez</strong>. Kan örneği (Kortizol, ACTH) alındıktan hemen sonra tedaviye başlanır.</li><li><strong>Kortizol Bağlayıcı Globulin (CBG) Etkisi:</strong> Gebelik ve oral kontraseptif kullanımı CBG'yi artırarak total kortizolü yanlışlıkla yüksek (normal) gösterebilir. Bu durumlarda tükürük kortizolü daha güvenilirdir veya tanı eşik değerleri yükseltilmelidir. Siroz ve nefrotik sendromda ise tam tersine düşük ölçülebilir.</li><li><strong>Yakın Zamanda Gelişen ACTH Eksikliği:</strong> Hipofiz cerrahisi veya travma sonrası ilk 4-6 haftada adrenal bezler henüz atrofiye uğramadığı için ACTH uyarı testine (yanlış pozitif) normal yanıt verebilir. Bu dönemde klinik izlem veya İnsülin Tolerans Testi (ITT) gerekebilir.</li></ul>"
+    }
+  ]
+}

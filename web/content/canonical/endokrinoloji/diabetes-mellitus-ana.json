@@ -1,0 +1,23 @@
+{
+  "title": "Diabetes Mellitus",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Diyabet", "İnsülin", "Metabolizma", "ADA", "Harrison"],
+    "parent": null,
+    "order": 0
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>Bu sayfa, glukoz metabolizması bozukluklarını ve modern diyabet yönetimini inceleyen akademik serinin ana merkezidir.</em></p>"
+    },
+    {
+      "heading": "Metabolizmanın Amiral Gemisi",
+      "html": "<p>Diabetes Mellitus, dünya genelinde morbidite ve mortalitenin en önemli nedenlerinden biridir. Harrison 21. Baskı ve 2025-2026 ADA (American Diabetes Association) güncel kılavuzları temel alınmıştır.</p>"
+    },
+    {
+      "heading": "📚 Seri İçeriği",
+      "html": "<ul class=\"list-none p-0\"><li>🧪 <strong>Bölüm 1:</strong> Sınıflandırma ve Patofizyoloji</li><li>📈 <strong>Bölüm 2:</strong> Tanı Kriterleri ve Prediyabet</li><li>🚨 <strong>Bölüm 3:</strong> Akut Komplikasyonlar (DKA ve HHS)</li><li>👓 <strong>Bölüm 4:</strong> Kronik Komplikasyonlar</li><li>💊 <strong>Bölüm 5:</strong> Farmakolojik Tedavi (OAD ve Enjeksiyonlar)</li><li>💉 <strong>Bölüm 6:</strong> İnsülin ve Diyabet Teknolojileri</li></ul>"
+    }
+  ]
+}

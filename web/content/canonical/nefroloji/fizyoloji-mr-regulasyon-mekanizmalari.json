@@ -1,0 +1,31 @@
+{
+  "title": "Mineralokortikoid Reseptör Regülasyonu",
+  "meta": {
+    "updatedAt": "03 Nis 2026",
+    "tags": ["Nefroloji", "Fizyoloji", "MR", "Rac1", "S843", "11β-HSD2", "Liddle", "Hipertansiyon"],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 10
+  },
+  "sections": [
+    {
+      "heading": "🔬 Uzman Özeti: MR'nin Çok Katmanlı Kontrolü",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Aldosteronun etkilerini gösterdiği Mineralokortikoid Reseptörlerinin (MR) up-regülasyonu ve down-regülasyonu; reseptör sentezi, post-translasyonel modifikasyonlar, proteolitik yıkım ve pre-reseptör (enzimatik) seviyedeki kontrollerle yönetilir. Bu hassas denge, elektrolit homeostazı ve kan basıncı regülasyonu için hayati öneme sahiptir.</p> "
+    },
+    {
+      "heading": "1. Genetik Ekspresyon ve Sayısal Düzenleme",
+      "html": "<div class=\"space-y-4\"><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-1\">Tuz Alımı ve Rac1 Yolağı (Up-regülasyon)</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">Yüksek diyet tuzu (NaCl) alımı, Rho ailesine ait <strong>Rac1 GTPaz</strong> aktivasyonunu artırır. Rac1, doğrudan MR ekspresyonunu tetikleyerek reseptörleri up-regüle eder. Bu durum, tuza duyarlı (salt-sensitive) hipertansiyonun moleküler temelini oluşturur.</p></div>  <div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-1\">CHIP ve Ubikuitinasyon (Yıkım/Down-regülasyon)</h4><p class=\"text-xs text-rose-800 leading-relaxed\">MR'nin hücresel ömrü <strong>CHIP</strong> adı verilen bir ubikuitin-protein ligazı tarafından denetlenir. CHIP, reseptörü işaretleyerek proteazomal yıkıma gönderir ve hücre içindeki toplam reseptör sayısını azaltarak fizyolojik bir down-regülasyon sağlar.</p></div></div>"
+    },
+    {
+      "heading": "2. Post-Translasyonel Modifikasyonlar: Ser-843 Anahtarı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">MR'nin fonksiyonel aktivitesi, ligand bağlama kapasitesini değiştiren fosforilasyon süreçleriyle anlık olarak modüle edilir:</p>  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border-2 border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Fosforilasyon (Down-regülasyon)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Hiperkalemi durumunda MR'nin ligand bağlayıcı alanındaki <strong>Ser-843 (S843)</strong> bölgesi fosforile olur. Fosforile MR, aldosterona bağlanamaz ve fonksiyonel olarak inaktif hale gelir. (İnterkalar hücrelerde baskındır).</p></div></div><div><div class=\"bg-white border-2 border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Defosforilasyon (Up-regülasyon)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Hacim deplesyonunda salgılanan <strong>Angiotensin II</strong>, S843 bölgesindeki defosforilasyonu uyarır. Bu, reseptörün ligand bağlama yeteneğini ve aktivasyon potansiyelini belirgin şekilde artırır (up-regüle eder).</p></div></div></div><div class=\"bg-slate-50 p-3 rounded-xl border border-slate-200\"><p class=\"text-xs text-slate-600 italic\"><strong>Not:</strong> Sumoylasyon (PIAS1/SUMO-1) ise reseptörün gen okuma kapasitesini baskılayarak transkripsiyonel bir down-regülasyon sağlar.</p></div>"
+    },
+    {
+      "heading": "3. Pre-Reseptör Düzeyinde Koruma ve 11β-HSD2",
+      "html": "<div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-xs uppercase mb-1\">Görünür Mineralokortikoid Fazlalığı (AME)</h4><p class=\"text-xs text-amber-800 leading-relaxed\">Böbrekteki <strong>11β-HSD2</strong> enzimi, kortizolü inaktif kortizona çevirerek MR'yi korur. <strong>Meyan kökü (licorice)</strong> tüketimi veya genetik defektler bu enzimi inhibe ettiğinde, MR kortizol tarafından sürekli işgal edilir. Bu patolojik aktivasyon, 'Görünür Up-regülasyon' yaratarak şiddetli hipertansiyona yol açar.</p></div> "
+    },
+    {
+      "heading": "4. Şaperonlar ve Kritik Mutasyonlar (S810L)",
+      "html": "<div class=\"space-y-4\"><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-1\">Konformasyonel Regülasyon (Hsp90/FKBP)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Sitoplazmada MR; <strong>Hsp90, FKBP51 ve FKBP52</strong> ile kompleks halindedir. Aldosteron bağlanınca FKBP51 ayrılır ve reseptör çekirdeğe göç eder. Spironolakton gibi antagonistler ise bu değişimi engelleyerek reseptörü <strong>transrepresyon</strong> (ko-represörleri çekme) yoluyla down-regüle ederler.</p></div>  <div class=\"bg-rose-800 p-5 rounded-2xl shadow-md\"><h4 class=\"font-black text-rose-200 text-sm uppercase mb-2\">Kritik Klinik İpucu: S810L Mutasyonu</h4><p class=\"text-sm text-slate-100 leading-relaxed\">Bu mutasyonda, normalde antagonist olan <strong>progesteron</strong> paradoksal olarak güçlü bir agoniste dönüşür. Reseptörün aşırı aktivasyonu (paradoksal up-regülasyon), gebelikte (progesteron artışıyla) şiddetlenen hipertansiyona neden olur.</p></div></div>"
+    }
+  ]
+}

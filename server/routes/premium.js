@@ -1,0 +1,1 @@
+import {Router} from 'express';import roleGuard from '../middlewares/roleGuard.js';const r=Router();r.get('/stats',roleGuard('P'),(_req,res)=>res.json({solvedQuestions:124,progressPercent:45}));export default r;

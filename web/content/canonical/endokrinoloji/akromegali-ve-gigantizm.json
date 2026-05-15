@@ -1,0 +1,35 @@
+{
+  "title": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Akromegali", "GH", "IGF-1", "OGTT", "Somatostatin Analogları"],
+    "parent": "Ön-hipofiz-hastaliklari-giris",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & Endocrine Society 2024 (Acromegaly Guideline) referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji: GH-IGF-1 Aksı",
+      "html": "<p>Büyüme Hormonu (GH) salgılayan bir hipofiz adenomunun (genellikle makroadenom) yol açtığı klinik tablodur.</p><ul class=\"mb-4\"><li><strong>Gigantizm:</strong> Epifiz plakları kapanmadan önce (çocukluk/erken adölesan) gelişen aşırı boy uzaması.</li><li><strong>Akromegali:</strong> Epifiz plakları kapandıktan sonra gelişen, uç organlarda ve yumuşak dokularda büyüme ile seyreden tablo.</li><li><strong>Mekanizma:</strong> Pulsatil GH salınımı karaciğerden <strong>IGF-1 (İnsülin Benzeri Büyüme Faktörü-1)</strong> üretimini uyarır. Klinik bulguların çoğundan sürekli yüksek seyreden IGF-1 sorumludur.</li></ul>"
+    },
+    {
+      "heading": "Klinik Spektrum: Sinsi İlerleme",
+      "html": "<p>Akromegali tanısı genellikle semptomlar başladıktan 7-10 yıl sonra konur. İpuçları şunlardır:</p><ul class=\"mb-4\"><li><strong>Yumuşak Doku ve İskelet:</strong> El ve ayaklarda büyüme (yüzük/ayakkabı numarasında artış), prognatizm (çene ilerlemesi), diş aralıklarının açılması (diastema), makroglossi.</li><li><strong>Metabolik:</strong> İnsülin direnci, DM (%25), hipertrigliseridemi.</li><li><strong>Sistemik:</strong> Uyku apnesi (en sık), karpal tünel sendromu, hipertansiyon ve <strong>Kolon Polipleri</strong> (kolon kanseri riski artmıştır).</li><li><strong>Kardiyak:</strong> Biventriküler hipertrofi ve restriktif kardiyomiyopati.</li></ul>"
+    },
+    {
+      "heading": "Tanı Algoritması: Uzman Basamakları",
+      "html": "<p>Tanı iki aşamalı doğrulanır:</p><ol class=\"mb-4\"><li><strong>Birinci Basamak (Tarama):</strong> <strong>Serum IGF-1 düzeyi</strong>. GH düzeyi pulsatil olduğu için tek başına anlamsızdır; ancak IGF-1 gün boyu stabildir.</li><li><strong>İkinci Basamak (Konfırmasyon):</strong> <strong>75g OGTT ile GH Supresyon Testi</strong>. Normalde glukoz yüklemesi sonrası GH < 1 µg/L (bazı kılavuzlarda < 0.4) olmalıdır. Akromegalide GH suprese olmaz.</li><li><strong>Görüntüleme:</strong> Biyokimyasal tanı konduktan sonra <strong>Hipofiz MRI</strong> (Genellikle makroadenom izlenir).</li></ol>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve Yeni Ajanlar",
+      "html": "<p>Hedef: IGF-1'in normal yaş/cinsiyet sınırlarına çekilmesi ve GH'ın < 1 µg/L altına indirilmesidir.</p><ul class=\"mb-4\"><li><strong>Cerrahi (Transsfenoidal Rezeksiyon):</strong> Mikroadenomlarda ve kitle basısı olan makroadenomlarda ilk seçenektir.</li><li><strong>Medikal Tedavi:</strong> <ul><li><strong>Somatostatin Analogları (Oktreotid, Lanreotid):</strong> İlk seçenek medikal tedavi. SSTR2 reseptörleri üzerinden GH salınımını azaltır.</li><li><strong>GH Reseptör Antagonisti (Pegvisomant):</strong> GH'ın etkisini reseptör düzeyinde bloke eder. IGF-1'i en güçlü düşüren ajandır.</li><li><strong>Dopamin Agonistleri (Kabergolin):</strong> Bazı tümörlerde GH salınımını baskılayabilir (genellikle ek tedavi).</li><li><strong>Pasireotid:</strong> SSTR5 afinitesi yüksek yeni nesil analog (özellikle dirençli vakalarda).</li></ul></li><li><strong>Radyoterapi:</strong> Cerrahi ve medikal tedaviye dirençli vakalarda son seçenek olarak kullanılır.</li></ul>"
+    },
+    {
+      "heading": "Klinik İnci: Takip Prosedürü",
+      "html": "<p>Akromegali hastalarında sadece hormon takibi yetmez. Tanı anında ve periyodik olarak <strong>Kolonoskopi</strong>, Ekokardiyografi ve Uyku Çalışması mutlaka yapılmalıdır.</p>"
+    }
+  ]
+}

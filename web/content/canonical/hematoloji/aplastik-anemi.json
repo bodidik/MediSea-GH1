@@ -1,0 +1,35 @@
+{
+  "title": "Aplastik Anemi",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Aplastik Anemi", "Pansitopeni", "Kemik İliği Yetmezliği", "ATG", "Eltrombopag"],
+    "parent": "anemiler-genel-bakis",
+    "order": 40
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Aplastik Anemi (AA)</strong>, hematopoietik kök hücrelerin (HSC) hasarlanması ve sayılarının dramatik şekilde azalması sonucu, kemik iliğinin kan hücrelerini üretememesi ve yağ dokusu ile yer değiştirmesi (hiposelüler ilik) ile karakterize, hayatı tehdit eden bir kemik iliği yetmezliği sendromudur.</p><p>Hastalığın temelinde <strong>immün aracılı bir yıkım</strong> yatar. Genetik veya çevresel bir tetikleyici, otoreaktif sitotoksik T hücrelerini (CD8+) aktive eder. Bu T hücreleri, Fas ligandı (FasL) ve İnterferon-gama (IFN-gama) / TNF-alfa gibi sitokinler salgılayarak kök hücrelerde apoptozu indükler. Sonuç olarak periferik kanda üç serinin de eksikliği (<strong>pansitopeni</strong>) gelişir.</p>"
+    },
+    {
+      "heading": "Etiyoloji (Edinsel ve Kalıtsal Nedenler)",
+      "html": "<p>Olguların yaklaşık %70-80'i <strong>İdiyopatik</strong> (nedeni bilinmeyen, otoimmün) kabul edilir. Ancak sekonder ve kalıtsal nedenler mutlaka dışlanmalıdır:</p><ul class=\"mb-4\"><li><strong>İlaçlar ve Toksinler:</strong> Radyasyon, Benzen (petrokimya endüstrisi), Kloramfenikol (doza bağımsız, idiyosenkratik reaksiyon), antiepileptikler (Karbamazepin, Fenitoin), altın tuzları ve sülfonamidler.</li><li><strong>Viral Enfeksiyonlar:</strong> En spesifik olanı <strong>Seronegatif (Non-A, Non-B, Non-C) Akut Hepatit</strong> sonrası gelişen hepatit ilişkili aplastik anemidir. EBV, CMV, HIV ve Parvovirus B19 (daha çok saf kırmızı hücre aplazisi yapar) diğer etkenlerdir.</li><li><strong>Kalıtsal (Konjenital) Sendromlar:</strong> Genç hastalarda (genellikle <20 yaş) ve dismorfik bulguları olanlarda <em>Fanconi Anemisi</em> (DNA tamir defekti, başparmak anomalileri, café-au-lait lekeleri) ve <em>Diskeratozis Konjenita</em> (telomeraz defekti, tırnak distrofisi, lökoplaki) akla gelmelidir.</li><li><strong>İmmünolojik Durumlar:</strong> Gebelik, eozinofilik fasiit, timoma. Paroksismal Nokturnal Hemoglobinüri (PNH) klonu, AA hastalarının önemli bir kısmında saptanır.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon (Kritik Negatif Bulgu)",
+      "html": "<p>Klinik tablo pansitopeninin derecesine göre şekillenir. Başlangıç sinsi veya fulminan olabilir:</p><ul class=\"mb-4\"><li><strong>Anemi:</strong> Yorgunluk, halsizlik, solukluk, çarpıntı ve efor dispnesi.</li><li><strong>Trombositopeni:</strong> Mukokutanöz kanamalar, peteşi, purpura, diş eti kanamaları ve menoraji.</li><li><strong>Nötropeni:</strong> Tekrarlayan, dirençli ve bazen hayatı tehdit eden bakteriyel/fungal enfeksiyonlar (ateş, mukozal ülserler).</li></ul><p>⚠️ <strong>Ayırıcı Tanıda Altın Kural:</strong> Aplastik anemide <strong>Hepatosplenomegali (HSM) veya Lenfadenopati (LAP) BEKLENMEZ.</strong> Eğer hastada pansitopeni ile birlikte dalak/karaciğer büyüklüğü veya lenf bezi büyümesi varsa, tanı aplastik anemi değil; lösemi, lenfoma veya miyelofibrozis gibi infiltratif/malign bir hastalıktır.</p>"
+    },
+    {
+      "heading": "Laboratuvar ve Kemik İliği (Altın Standart)",
+      "html": "<p>Tanı, kan sayımındaki sitopenilerin Kİ biyopsisi ile korelasyonuna dayanır.</p><ul class=\"mb-4\"><li><strong>Periferik Yayma:</strong> Ciddi pansitopeni ve <strong>mutlak retikülositopeni</strong> (< 20.000/microL) saptanır. Displazi, blast veya anormal hücre saptanmaz.</li><li><strong>Kemik İliği Aspirasyon ve Biyopsisi:</strong> Tanının kesinleştirilmesi için mutlak şarttır. Biyopside hematopoietik hücrelerin yerini tamamen adipositlerin (yağ hücrelerinin) aldığı <strong>Boş İlik (Empty Marrow)</strong> görünümü karakteristiktir. İlik selülaritesi genellikle <strong><%25</strong>'tir. Artmış fibrozis, malign infiltrasyon veya displastik hücre (MDS ayrımı için) <em>yoktur</em>.</li><li><strong>İleri Tetkikler:</strong> PNH klonunu dışlamak için flow sitometri (CD55, CD59 eksikliği), genç hastalarda Fanconi anemisi için kromozom kırık testi (DEB testi) yapılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Hastalık Şiddeti ve Tedavi Algoritması",
+      "html": "<p>Şiddetli Aplastik Anemi (SAA) kriterleri: İlik selülaritesi <%25 ve şu üç kriterden en az ikisinin varlığı: Nötrofil <500, Trombosit <20.000, Retikülosit <20.000. Çok şiddetli (vSAA) formda nötrofil <200'dür.</p><p>Tedavi, destekleyici bakımın (kan transfüzyonları, enfeksiyon kontrolü) yanı sıra hastanın yaşına ve donör durumuna göre belirlenir:</p><ul class=\"mb-4\"><li><strong>Allojenik Hematopoietik Kök Hücre Nakli (Allo-HSCT):</strong> <strong>< 40 yaş</strong> (tercihen <50 yaş) olan ve HLA-uyumlu kardeş (veya uygun akraba dışı) <strong>donörü bulunan</strong> hastalarda standart birinci basamak, küratif tedavidir.</li><li><strong>İmmünsüpresif Tedavi (İST) ve TPO Agonistleri:</strong> Nakil adayı olmayan (donörü olmayan veya > 40-50 yaş) hastalarda <strong>At-Antitimosit Globulini (h-ATG / e-ATG) + Siklosporin A (CsA)</strong> standart immünsüpresif rejimdir. Günümüzde bu ikiliye trombopoietin (TPO) reseptör agonisti olan <strong>Eltrombopag</strong>'ın eklenmesi (üçlü tedavi), yanıt oranlarını (%80'lere) ve klonal evrimi (MDS/AML'ye dönüşümü) iyileştiren yeni standart haline gelmiştir.</li></ul>"
+    }
+  ]
+}

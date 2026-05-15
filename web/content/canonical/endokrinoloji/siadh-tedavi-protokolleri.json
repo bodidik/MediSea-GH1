@@ -1,0 +1,23 @@
+{
+  "title": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Tedavi", "SIADH", "Hipertonik Salin", "Bolus", "ODS", "Re-lowering"],
+    "parent": "siadh-sendromu",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🚨 Akut ve Şiddetli Hiponatremi: Bolus Stratejisi",
+      "html": "<p>48 saatten kısa sürede gelişen semptomatik vakalarda hedef, beyin ödemini hızla geriletmektir. <strong>Güncel Yaklaşım:</strong> Sürekli infüzyon yerine 10-15 dakikada <strong>100-150 mL %3 Hipertonik Salin (NaCl) Bolus</strong> uygulamasıdır. Gerekirse 2-3 kez tekrarlanabilir. Bolus tedavisi, semptomları daha hızlı düzeltirken aşırı düzeltme (overcorrection) riskini azaltır.</p>"
+    },
+    {
+      "heading": "⚠️ Kronik Hiponatremi ve ODS Sınırları",
+      "html": "<p>Beyin hücreleri hipotonik ortama adapte olduğu için (>48 saat), hızlı düzeltme <strong>Ozmotik Demiyelinizasyon Sendromuna (ODS)</strong> yol açar. Güvenli sınırlar şunlardır:</p><ul class=\"mb-4\"><li><strong>Hedef:</strong> 24 saatte 4-8 mmol/L artış.</li><li><strong>Maksimum Sınır:</strong> Standart hastada 24 saatte 10-12 mmol/L.</li><li><strong>Yüksek Riskli Hasta (Alkol, Malnütrisyon, Siroz, Hipokalemi):</strong> 24 saatte <strong>8 mmol/L</strong> asla geçilmemelidir.</li></ul>"
+    },
+    {
+      "heading": "🔄 Re-lowering: Sodyumu Geri Düşürme Manevrası",
+      "html": "<p>Eğer düzeltme sınırları kazara aşılırsa (Overcorrection), ODS'yi önlemek için sodyum derhal geri düşürülmelidir. <strong>Protokol:</strong> Aktif sodyum tedavisi kesilir, <strong>IV %5 Dekstroz</strong> başlanır ve böbrekten su kaybını durdurmak için <strong>Desmopressin (DDAVP)</strong> uygulanır.</p>"
+    }
+  ]
+}

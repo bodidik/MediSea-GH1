@@ -1,0 +1,19 @@
+{
+  "title": "Ch 87: Karaciğer (HCC) ve Safra Yolu Kanserleri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "HCC", "Siroz", "AFP"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "Hepatosellüler Karsinom (HCC)",
+      "text": "<p>Genellikle Siroz zemininde gelişir. Tarama için 6 ayda bir USG ve AFP bakılır. Tanı için biyopsi her zaman gerekmeyebilir (Radyolojik tanı kriterleri vardır).</p>"
+    },
+    {
+      "heading": "Tedavi Seçenekleri",
+      "text": "<ul class='list-none space-y-2 mt-2'><li class='bg-green-50 p-2 rounded'>✅ <strong>Erken Evre:</strong> Transplantasyon (Milan Kriterleri), Rezeksiyon veya Ablasyon (RFA).</li><li class='bg-yellow-50 p-2 rounded'>⚠️ <strong>Orta Evre:</strong> Kemoembolizasyon (TACE).</li><li class='bg-red-50 p-2 rounded'>🚫 <strong>İleri Evre:</strong> Sistemik tedavi. İmmünoterapi (Atezolizumab + Bevacizumab) artık standarttır. TKI (Sorafenib/Lenvatinib) ikinci seçenektir.</li></ul>"
+    }
+  ]
+}

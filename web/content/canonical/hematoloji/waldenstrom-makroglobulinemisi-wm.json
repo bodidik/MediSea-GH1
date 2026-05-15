@@ -1,0 +1,31 @@
+{
+  "title": "Waldenström Makroglobulinemisi (WM)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Lenfoma", "Waldenström", "IgM", "Hiperviskozite", "MYD88", "Yapay Zeka Taslağı"],
+    "parent": "hematolojik-maligniteler",
+    "order": 28
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI Taslak Modülü",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> Bu modül Yapay Zeka (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Genetik Patogenez",
+      "html": "<p><strong>Waldenström Makroglobulinemisi (WM)</strong>, kemik iliğinin lenfoplazmasitik hücreler (B lenfositler ve plazma hücreleri arası geçiş formları) tarafından infiltre edildiği ve kanda <strong>monoklonal IgM tipi paraprotein (makroglobulin)</strong> üretiminin eşlik ettiği indolent (yavaş seyirli) bir B hücreli lenfomadır.</p><p>Hastalığın patogenezinde iki temel genetik imza öne çıkar:</p><ul class=\"mb-4\"><li><strong>MYD88 L265P Mutasyonu:</strong> Vakaların >%90'ında saptanır. Hastalığın temel sürücüsüdür ve NF-κB yolağını sürekli aktif tutar. (Tanısal olarak Multipl Miyelom ve diğer B-hücreli lenfomalardan ayrımda çok değerlidir).</li><li><strong>CXCR4 WHIM Mutasyonları:</strong> Vakaların ~%30-40'ında görülür. İbrutinib gibi BTK inhibitörlerine karşı direnç veya gecikmiş yanıt ile ilişkilidir.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon (IgM'nin Yükü)",
+      "html": "<p>WM kliniği, Multipl Miyelom'un (MM) aksine litik kemik lezyonları (CRAB) veya böbrek yetmezliği yapmaz. Bunun yerine devasa IgM molekülünün fiziksel ve immünolojik özelliklerinden kaynaklanan benzersiz bir tablo oluşur:</p><ul class=\"mb-4\"><li><strong>Hiperviskozite Sendromu:</strong> Beşli yapısı (pentamer) nedeniyle IgM çok büyük bir proteindir ve kanı koyulaştırır (viskoziteyi artırır). Hastalarda <em>baş ağrısı, baş dönmesi, epistaksis (burun kanaması), sağırlık</em> ve retinal venlerde sosis benzeri boğumlanmalara bağlı <em>görme bulanıklığı</em> gelişir.</li><li><strong>Otoimmün Fenomenler:</strong> IgM molekülü sıklıkla otoantikor gibi davranır. Sinir kılıfına (anti-MAG) saldırarak <strong>periferik nöropati</strong>, eritrositlere saldırarak <strong>Soğuk Aglütinin Hastalığı (KHA)</strong> veya <strong>Kriyoglobulinemi (Tip 1)</strong> yapabilir.</li><li><strong>Tümör Yükü:</strong> İlik infiltrasyonuna bağlı anemi (en sık semptom) ve lenfoma doğası gereği <strong>hepatosplenomegali ve lenfadenopati</strong> (MM'de nadirdir) izlenir.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım",
+      "html": "<p>Kesin tanı için iki ana kriterin bir arada olması şarttır:</p><ol class=\"mb-4\"><li>Serumda <strong>monoklonal IgM</strong> proteinin elektroforez ve immünfiksasyon ile gösterilmesi (miktarı tanı için şart değildir, önemli olan varlığıdır).</li><li>Kemik iliği biyopsisinde <strong>≥%10 lenfoplazmasitik infiltrasyon</strong> saptanması.</li></ol><p><strong>İmmünofenotip:</strong> Hücreler pan-B belirteçlerini (CD19+, CD20+) eksprese ederken, KLL ve Foliküler Lenfoma'dan ayrım için <strong>CD5 NEGATİF</strong> ve <strong>CD10 NEGATİF</strong> olması kritiktir.</p>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve Plazmaferez",
+      "html": "<p>Asemptomatik (Smoldering) WM hastaları tedavi edilmez, 'İzle ve Bekle' stratejisi uygulanır.</p><ul class=\"mb-4\"><li><strong>Acil Müdahale (Plazmaferez):</strong> Semptomatik hiperviskozite sendromu olan hastalarda, kemoterapi etki edene kadar kanı inceltmek (IgM'yi vücuttan hızla uzaklaştırmak) için <strong>Terapötik Plazmaferez</strong> hayat kurtarıcı ilk hamledir.</li><li><strong>Birinci Basamak Medikal Tedavi:</strong> <em>Rituksimab</em> (Anti-CD20) temelli kemoimmünoterapiler standarttır. Özellikle <strong>BR (Bendamustin + Rituksimab)</strong> veya DRC (Deksametazon, Rituksimab, Siklofosfamid) en sık kullanılan, etkin ve tolere edilebilir rejimlerdir.</li><li><strong>Hedefe Yönelik Ajanlar (BTK İnhibitörleri):</strong> <strong>İbrutinib</strong> ve yeni nesil <strong>Zanubrutinib</strong>, özellikle <em>MYD88 mutant / CXCR4 wild-type</em> olan hastalarda inanılmaz derecede etkilidir ve kemoterapisiz (chemo-free) mükemmel bir seçenek sunar.</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';const S=new mongoose.Schema({userId:String,programCode:String,completedDays:[Number],updatedAt:{type:Date,default:Date.now}});export default mongoose.model('StudyProgress',S);

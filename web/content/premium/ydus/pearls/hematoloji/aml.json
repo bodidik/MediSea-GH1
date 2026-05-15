@@ -1,0 +1,77 @@
+{
+  "id": "pearl-hem-aml-001",
+  "accessLevel": "premium",
+  "topic": "AML Onkolojik Aciller ve Nakil İncileri",
+  "pearls": [
+    {
+      "id": "p-aml-01",
+      "level": "Farmakoloji",
+      "title": "Diferansiyasyon Sendromu Tetikleyici Ajanları",
+      "content": "Klasik olarak Akut Promyelositik Lösemi (APL) tedavisinde kullanılan ATRA (All-trans retinoik asit) ve Arsenik Trioksit (ATO) nedeniyle görülen Diferansiyasyon (Farklılaşma) Sendromu; güncel pratikte AML tedavisinde kullanılan hedefe yönelik **IDH1/IDH2 inhibitörleri (İvosidenib, Enasidenib)** ve **Menin inhibitörleri (örn. Revumenib)** kullanımı sırasında da lösemik hücrelerin hızla olgunlaşmasına bağlı olarak ortaya çıkmaktadır.",
+      "trigger": "İlaç Etkileşimi"
+    },
+    {
+      "id": "p-aml-02",
+      "level": "Kritik Acil",
+      "title": "Diferansiyasyon Sendromu Kliniği ve Acil Yönetimi",
+      "content": "Hastalarda günler veya haftalar içinde ortaya çıkan açıklanamayan ateş, hipotansiyon, kilo alımı (ödem), plevral veya perikardiyal efüzyonlar, akut böbrek hasarı ve pulmoner infiltratlarla karakterizedir. Güçlü klinik şüphe veya tanı anında vakit kaybetmeden **sistemik glukokortikoid (12 saatte bir 10 mg/m2 Deksametazon)** tedavisine başlanmalı, ağır vakalarda lökosit sayısını düşürmek için hidroksiüre eklenmeli ve hedefe yönelik ilaç geçici olarak kesilmelidir.",
+      "trigger": "Acil Servis"
+    },
+    {
+      "id": "p-aml-03",
+      "level": "Kılavuz",
+      "title": "İlk Tam Remisyonda (CR1) Kök Hücre Nakli (HCT) Endikasyonları",
+      "content": "Avrupa Lösemi Ağı (ELN) ve güncel rehberlere göre, yoğun indüksiyon kemoterapisi ile ilk tam remisyonunu (CR1) elde etmiş **'Orta (Intermediate)'** veya **'Kötü (Adverse)'** risk grubunda yer alan AML hastaları, hastalık nüks (relaps) riskinin çok yüksek olması sebebiyle standart olarak allojenik kök hücre nakline (HCT) yönlendirilmelidir.",
+      "trigger": "Nakil Konseyi"
+    },
+    {
+      "id": "p-aml-04",
+      "level": "Expert",
+      "title": "İyi (Favorable) Risk Grubunda HCT İstisnaları",
+      "content": "Normalde t(8;21), inv(16) veya izole NPM1 mutasyonu gibi iyi riskli hastalarda ilk tam remisyonda allojenik nakil önerilmez; ancak iyi riskli kabul edilen t(8;21) vakalarında kötü prognostik **KIT mutasyonunun** (özellikle ekzon 8 ve 17) eşlik etmesi veya konsolidasyon tedavilerine rağmen Minimal Kalıntı Hastalık **(MRD) pozitifliğinin devam etmesi** durumunda allojenik HCT güçlü bir seçenek haline gelir.",
+      "trigger": "Risk Analizi"
+    },
+    {
+      "id": "p-aml-05",
+      "level": "Prognostik",
+      "title": "Nakil Başarısında Ölçülebilir Kalıntı Hastalık (MRD) Etkisi",
+      "content": "HCT öncesinde hastanın morfolojik olarak (%5 altı blast) tam remisyonda olması tek başına yeterli değildir; flow sitometri veya moleküler (RT-qPCR/NGS) yöntemlerle saptanan **MRD pozitifliği**, nakil sonrası nüks riskinin ciddi oranda artması ve sağkalımın düşmesi ile doğrudan ilişkilidir.",
+      "trigger": "Laboratuvar Sonucu"
+    },
+    {
+      "id": "p-aml-06",
+      "level": "Patofizyoloji",
+      "title": "Tümör Lizis Sendromu (TLS) Patofizyolojisi",
+      "content": "Hiperlokositozu veya yüksek tümör yükü olan hastalarda kemoterapi başladıktan sonra (veya nadiren spontan) lösemik hücrelerin hızlı yıkımı sonucu intraselüler metabolitlerin kana karışmasıdır. Ürik asit, potasyum ve fosfat **yükselir**; kalsiyum ise artan fosfata sekonder olarak **düşer**, bu durum böbrek yetmezliği ve ölümcül aritmilerle sonuçlanabilir.",
+      "trigger": "Laboratuvar Takibi"
+    },
+    {
+      "id": "p-aml-07",
+      "level": "Tedavi",
+      "title": "Tümör Lizis Sendromu Acil Yönetimi",
+      "content": "TLS riskinin en iyi yönetimi profilaksidir. Hastalarda kemoterapi ile eş zamanlı veya öncesinde agresif intravenöz hidrasyon başlatılmalı, idrar akışı sağlanmalı ve ürik asidi hızla düşürmek için **allopurinol** veya yüksek riskli hastalarda **rasburikaz** uygulanmalıdır.",
+      "trigger": "Profilaksi"
+    },
+    {
+      "id": "p-aml-08",
+      "level": "Klinik",
+      "title": "Lökostaz Sendromu Kliniği",
+      "content": "Beyaz küre sayısının genellikle 100.000/mikroL'nin üzerinde olması (hiperlokositoz) durumunda, blastların mikrovasküler yatakları tıkamasıyla gelişen tıbbi bir acildir. Doku perfüzyonu bozularak sıklıkla pulmoner lökostaz (solunum sıkıntısı, hipoksi) ve santral sinir sistemi bulguları (konfüzyon, letarji, inme) görülür. Hücre hacimlerinin büyük olması ve artmış adezyon özellikleri nedeniyle en sık **monositik (M5)** ve **miyelomonositik (M4)** AML alt tiplerinde izlenir.",
+      "trigger": "Hiperlokositoz"
+    },
+    {
+      "id": "p-aml-09",
+      "level": "Hardcore",
+      "title": "Lökostaz Sendromu Acil Tedavisi",
+      "content": "Lökostaz tablosunda hücre sayısını hızla düşürmek için acil lökoferez, hidroksiüre veya yoğun indüksiyon kemoterapisine derhal başlanmalıdır. Çok kritik bir nokta olarak; bu hastalarda kan viskozitesini (koyuluğunu) daha da artırarak lökostazı alevlendirebileceğinden, kesin zorunluluk (şiddetli semptomatik anemi) olmadıkça **eritrosit (RBC) transfüzyonlarından kaçınılmalıdır.**",
+      "trigger": "Kan Merkezi Onayı"
+    },
+    {
+      "id": "p-aml-10",
+      "level": "Hayat Kurtarıcı",
+      "title": "APL'de Koagülopati ve Yaygın Damar İçi Pıhtılaşma (DIC) Aciliyeti",
+      "content": "APL hastalarında blastlardan salınan doku faktörü, elastaz ve annexin II'ye bağlı olarak ölümcül yaygın DIC (özellikle intrakraniyal ve pulmoner kanama riski) tablosu oldukça sıktır. APL şüphesi olan hastada genetik/moleküler tanı sonucu beklenmeden **derhal ATRA başlanmalı**; kanamayı önlemek amacıyla fibrinojen düzeyi >100-150 mg/dL ve trombosit sayısı >50.000/mikroL olacak şekilde agresif kriyopresipitat ve trombosit transfüzyonu yapılmalıdır.",
+      "trigger": "Kırmızı Kod"
+    }
+  ]
+}

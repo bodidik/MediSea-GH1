@@ -1,0 +1,19 @@
+{
+  "title": "Ch 92: Prostat Kanseri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Prostat", "PSA", "Gleason"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 11
+  },
+  "sections": [
+    {
+      "heading": "Tarama ve Tanı",
+      "text": "<p>50 yaş üstü erkeklerde PSA ve Rektal Tuşe ile tarama önerilir. Tanı transrektal biyopsi ile konur. Histolojik derecelendirme <strong>Gleason Skoru</strong> ile yapılır (Skor ne kadar yüksekse o kadar agresif).</p>"
+    },
+    {
+      "heading": "Androjen Deprivasyon Tedavisi (ADT)",
+      "text": "<p>Prostat kanseri hormona duyarlıdır. Testosteronun baskılanması (Medikal veya Cerrahi Kastrasyon) tedavinin temelidir. Direnç gelişirse yeni nesil anti-androjenler (Enzalutamid, Abirateron) kullanılır. Kemik metastazı sıktır.</p>"
+    }
+  ]
+}

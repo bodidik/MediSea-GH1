@@ -1,0 +1,35 @@
+{
+  "title": "Trombosit Hastalıkları (Genel Bakış)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Trombosit", "Hemostaz", "Glanzmann", "Bernard-Soulier", "Trombositopeni", "Kategori"],
+    "parent": "benign-hematoloji",
+    "order": 44
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Primer Hemostaz Fizyolojisi",
+      "html": "<p>Trombositler (kan pulçukları), kemik iliğindeki megakaryositlerin sitoplazmik parçalanmasıyla oluşan, çekirdeksiz ve disk şeklinde hücresel elemanlardır. <strong>Primer hemostazın</strong> (vasküler hasar sonrası ilk tıkaç oluşumu) temel aktörleridir.</p><p>Primer hemostaz üç ana aşamada gerçekleşir:</p><ol class=\"mb-4\"><li><strong>Adezyon (Yapışma):</strong> Endotel hasarlandığında açığa çıkan subendotelyal kollajene bağlanan von Willebrand Faktör (vWF) üzerinden, trombositler <strong>Glikoprotein Ib/IX/V (GpIb)</strong> reseptörleriyle bölgeye tutunur.</li><li><strong>Aktivasyon ve Sekresyon:</strong> Tutunan trombositler aktive olarak şekil değiştirir ve granüllerini (ADP, Tromboksan A2, Serotonin) salgılayarak diğer trombositleri bölgeye çağırır.</li><li><strong>Agregasyon (Kümelenme):</strong> Aktive olan trombositler, yüzeylerindeki <strong>Glikoprotein IIb/IIIa (GpIIb/IIIa)</strong> reseptörlerinin konformasyonel değişimi sayesinde fibrinojen molekülleri aracılığıyla birbirlerine çapraz bağlanır ve sağlam bir primer trombosit tıkacı oluşturur.</li></ol>"
+    },
+    {
+      "heading": "Klinik Prezantasyon: Primer Hemostaz Kanamaları",
+      "html": "<p>Trombosit hastalıklarının (ve vWF eksikliğinin) kliniği, sekonder hemostaz bozukluklarından (koagülasyon faktör eksiklikleri, örn: Hemofililer) tamamen farklıdır.</p><p><strong>Karakteristik Trombosit Kanamaları:</strong></p><ul class=\"mb-4\"><li><strong>Mukokutanöz (Deri ve Mukoza):</strong> Peteşi (toplu iğne başı kadar kanamalar, trombositopeninin en spesifik bulgusudur), purpura, ekimoz, diş eti kanamaları, epistaksis (burun kanaması) ve kadınlarda menoraji tipiktir.</li><li><strong>Travmaya Yanıt:</strong> Kesik veya travma sonrası kanama <strong>hemen</strong> başlar (sekonder hemostazda ise gecikmiş kanama görülür).</li><li><strong>Negatif Bulgular:</strong> Derin doku hematomları ve hemartroz (eklem içi kanama) trombosit hastalıklarında <em>beklenmez</em>.</li></ul>"
+    },
+    {
+      "heading": "Kantitatif Bozukluklar (Trombositopeniler)",
+      "html": "<p>Periferik kanda trombosit sayısının <strong>< 150.000 / microL</strong> olmasına trombositopeni denir. Kanama riski genellikle sayı < 50.000 altına inmeden belirginleşmez; spontan (kendiliğinden) hayatı tehdit edici kanamalar (Sss kanaması vb.) ise genellikle < 10.000 - 20.000 düzeylerinde görülür. Temel mekanizmalar şunlardır:</p><ul class=\"mb-4\"><li><strong>Üretim Azalması:</strong> Kemik iliği yetmezlikleri (Aplastik anemi), infiltratif hastalıklar (Lösemi, Lenfoma, Miyelom), kemoterapi ve radyoterapi, B12/Folat eksikliği.</li><li><strong>Artmış Yıkım / Tüketim:</strong> İmmün mekanizmalar (İmmün Trombositopeni - ITP, İlaca bağlı, SLE), Non-immün mekanizmalar (TTP, HÜS, DİK).</li><li><strong>Dağılım Bozukluğu (Göllenme):</strong> Hipersplenizm (Dalak büyümesi, normalde %30 olan dalaktaki trombosit havuzunu %90'lara kadar çıkararak periferik trombositopeni yapar).</li><li><strong>Yalancı Trombositopeni (Psödotrombositopeni):</strong> EDTA'lı tüplere alınan kanda, in vitro olarak trombositlerin kümeleşmesi (clumping) sonucu cihazın sayımı düşük okumasıdır. Periferik yayma veya sitratlı tüple kan alınarak doğrulanmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Kalitatif (Fonksiyonel) Bozukluklar ve Kalıtsal Sendromlar",
+      "html": "<p>Trombosit sayısı normal olmasına rağmen fonksiyonlarının (adezyon veya agregasyon) bozuk olduğu durumlardır. Üremi (Böbrek yetmezliği) ve Aspirin/Klopidogrel kullanımı en sık görülen <em>edinsel</em> nedenlerdir. En meşhur iki <em>kalıtsal</em> sendrom şunlardır:</p><ul class=\"mb-4\"><li><strong>Bernard-Soulier Sendromu (Dev Trombosit Sendromu):</strong> <strong>GpIb</strong> reseptör eksikliğidir (Adezyon defekti). Trombositler vWF'ye bağlanamaz. Çevre kanında sayıca hafif düşük ancak <strong>devasa boyutta (eritrosit kadar) trombositler</strong> görülür.</li><li><strong>Glanzmann Trombastenisi:</strong> <strong>GpIIb/IIIa</strong> reseptör kompleksinin eksikliğidir (Agregasyon defekti). Trombositler birbirine tutunamaz. Trombosit sayısı ve morfolojisi tamamen <em>normaldir</em>.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar: Trombosit Agregasyon Testleri (Ristosetin)",
+      "html": "<p>Kalitatif bozuklukların kesin ayrımı spesifik agregasyon testleri ile yapılır. Ristosetin, in vitro ortamda vWF ile GpIb reseptörünü birleştirerek agregasyonu (kümelenmeyi) başlatan özel bir antibiyotiktir.</p><ul class=\"mb-4\"><li><strong>Bernard-Soulier Sendromu:</strong> GpIb eksik olduğu için Ristosetin eklendiğinde agregasyon <strong>OLMAZ</strong>. (Kalan diğer ajanlarla; ADP, epinefrin, kollajen ile agregasyon normaldir).</li><li><strong>Glanzmann Trombastenisi:</strong> GpIIb/IIIa (ortak çapraz bağlayıcı) eksik olduğu için ADP, epinefrin ve kollajen ile agregasyon <strong>OLMAZ</strong>. Ancak Ristosetin eklendiğinde GpIb-vWF etkileşimi sağlam olduğu için sadece Ristosetin ile <strong>NORMAL</strong> agregasyon yanıtı alınır.</li></ul>"
+    }
+  ]
+}

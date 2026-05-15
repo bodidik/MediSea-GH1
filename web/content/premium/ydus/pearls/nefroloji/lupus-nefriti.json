@@ -1,0 +1,28 @@
+{
+  "id": "pearl-sle-nefrit-001",
+  "accessLevel": "premium",
+  "topic": "Lupus Nefriti Spot Bilgiler",
+  "pearls": [
+    {
+      "id": "p-sle-01",
+      "level": "Hardcore",
+      "title": "Full House Paterni",
+      "content": "Böbrek biyopsisinde immünfloresan boyamada **'Full House'** (IgG, IgA, IgM, C3, C1q hepsinin pozitif olması) görüyorsan, hasta %99 **Lupus Nefriti**dir. Lupus serolojisi (ANA/Anti-dsDNA) negatif olsa bile bu tanıdan şaşma!",
+      "trigger": "Biyopsi Raporu"
+    },
+    {
+      "id": "p-sle-02",
+      "level": "Expert",
+      "title": "Kompleman Tuzağı",
+      "content": "Lupus Nefritinde C3 ve C4 genelde **düşüktür**. Eğer nefrotik düzeyde proteinüri var ama **C3/C4 normalse**, aklına hemen **Lupus Podositopatisi** gelmeli. Bu durumda tedaviye sadece Steroid (MCD gibi) yeterli olabilir.",
+      "trigger": "Lab Sonuçları"
+    },
+    {
+      "id": "p-sle-03",
+      "level": "Therapy",
+      "title": "Hayat Sigortası: HCQ",
+      "content": "Tüm Lupus Nefriti hastaları, kontrendikasyon (retinal toksisite) yoksa, remisyonda olsa bile **ömür boyu Hidroksiklorokin (HCQ)** almalıdır. Renal alevlenmeleri %50 azaltır ve sağkalımı artırır. Gebelikte de güvenlidir.",
+      "trigger": "Reçete"
+    }
+  ]
+}

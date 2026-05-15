@@ -1,0 +1,40 @@
+{
+  "title": "Miyeloproliferatif Neoplazmlar (MPN)",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "JAK2", "CALR", "MPL", "Polisitemi Vera", "ET", "Miyelofibrozis"],
+    "parent": null,
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Miyeloproliferatif Neoplazmlar (MPN)</em></p>"
+    },
+
+    {
+      "heading": "1. Esansiyel Trombositemi (ET): Tanı ve Ayırıcı Tanı (DSÖ 5. Edisyon)",
+      "html": "<p>ET, klonal bir kök hücre bozukluğudur. Tanı için trombosit <strong>&ge;450 x 10^9/L</strong> olmalı ve ilikte iri, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryositler izlenmelidir.</p><p><strong>Kritik Ayrım:</strong> ET ile <em>Erken/Prefibrotik Miyelofibrozis (pre-PMF)</em> ayrımı hayati önem taşır. Pre-PMF'de ilik hiperselülerdir, megakaryositler 'bulut benzeri/atipik' nükleuslara sahiptir ve progresyon riski ET'den çok daha yüksektir.</p>"
+    },
+    {
+      "heading": "2. MPN Moleküler Peyzajı: Sürücü ve Yolcu Mutasyonlar",
+      "html": "<ul class=\"mb-4\"><li><strong>JAK2 V617F:</strong> PV'de %95+, ET ve PMF'de %60. Yaşlı popülasyon ve yüksek tromboz riskiyle ilişkilidir.</li><li><strong>CALR (Kalretikulin):</strong> ET ve PMF'de %25. Tip 1 (delesyon) fibrozis riski, Tip 2 (insersiyon) ise genç yaş ve ekstrem trombositoz ile ilişkilidir.</li><li><strong>MPL (W515L/K):</strong> TPO reseptör aktivasyonu sağlar (%5).</li><li><strong>HMR (Yüksek Moleküler Risk):</strong> <em>ASXL1, EZH2, IDH1/2, SRSF2, U2AF1</em> ve <em>TP53</em> mutasyonları, bağımsız olarak kısa sağkalım ve AML transformasyon riskini artırır.</li></ul>"
+    },
+    {
+      "heading": "3. Polisitemi Vera (PV): Tanı ve Veneseksiyon Yönetimi",
+      "html": "<p>Tanı için Hb >16.5 (erkek) / 16.0 (kadın) veya Hct >%49 / %48 gereklidir. <strong>JAK2 V617F veya ekzon 12 mutasyonu</strong> majör kriterdir.</p><p><strong>Tedavi Hedefi:</strong> Hematokrit (Hct) kesinlikle <strong><%45</strong> tutulmalıdır. Demir eksikliği yaratarak eritropoezi dizginlemek (veneseksiyon ile) standarttır ancak semptomatik hastalarda sitoredüksiyon (HU veya Ropeginterferon) eklenmelidir.</p>"
+    },
+    {
+      "heading": "4. Klinik Komplikasyonlar: Tromboz ve aVWS",
+      "html": "<p><strong>Tromboz Riski:</strong> JAK2 pozitifliği ve NLR &ge;5 olması venöz olayları öngörür. Splanik ven trombozu (SVT) sıklıkla okült MPN belirtisidir.</p><p><strong>aVWS (Kazanılmış von Willebrand):</strong> Trombosit >1.000 x 10^9/L olduğunda multimer tüketimi nedeniyle kanama riski artar. VWF:RCo < %30 ise <strong>aspirin kontrendikedir.</strong></p>"
+    },
+    {
+      "heading": "5. Tedavi Optimizasyonu: Aspirin BID ve Yeni Ajanlar",
+      "html": "<p><strong>Aspirin Direnci:</strong> ET'de yüksek trombosit turnover'ı nedeniyle günde tek doz yetersiz kalabilir. Yüksek riskli arteriyel grupta <strong>günde iki kez (100 mg BID)</strong> 'plain' aspirin önerilir.</p><p><strong>Sitoredüksiyon:</strong> 1. basamak Hidroksiüre (HU). Gençlerde ve allel yükünü azaltmak (disease-modifying) için <strong>Ropeginterferon alfa-2b</strong>. Dirençli vakalarda Ruxolitinib veya LSD-1 inhibitörü <em>Bomedemstat</em>.</p>"
+    },
+    {
+      "heading": "6. Progresyon: Miyelofibrozis ve AML Transformasyonu",
+      "html": "<p>Post-ET/PV MF tanısı için grade 2-3 fibrozis ve splenomegali (MYSEC-PM kriterleri) esastır. Transformasyon riskinde <strong>TP53</strong> ve <strong>NFE2</strong> mutasyonları kilit rol oynar. Küratif tek seçenek <strong>Allo-HSCT</strong> olup, zamanlama için mutasyonel <strong>MTSS</strong> skoru kullanılmalıdır.</p>"
+    }
+  ]
+}

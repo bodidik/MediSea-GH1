@@ -1,0 +1,15 @@
+{
+  "title": "Talasemiler",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Anemi", "Genetik"],
+    "parent": "anemiler",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "Tanı",
+      "text": "<p>Hemoglobin elektroforezi ile tanı konur.</p>"
+    }
+  ]
+}

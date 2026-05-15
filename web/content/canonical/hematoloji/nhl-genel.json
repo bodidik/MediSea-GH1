@@ -1,0 +1,13 @@
+{
+  "title": "Non-Hodgkin Lenfomalar (NHL)",
+  "meta": {
+    "parent": "lenfomalar",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Alt Tipler",
+      "text": "<p>NHL alt tiplerini buradan seçebilirsiniz.</p>"
+    }
+  ]
+}

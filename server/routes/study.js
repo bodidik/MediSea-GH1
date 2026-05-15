@@ -1,0 +1,1 @@
+import {Router} from 'express';import roleGuard from '../middlewares/roleGuard.js';import {getProgram,getMyProgress,toggleDay} from '../controllers/studyController.js';const r=Router();r.get('/:code',roleGuard('P'),getProgram);r.get('/:code/progress',roleGuard('P'),getMyProgress);r.post('/:code/toggle',roleGuard('P'),toggleDay);export default r;

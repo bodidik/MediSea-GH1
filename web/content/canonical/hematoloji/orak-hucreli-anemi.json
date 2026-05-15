@@ -1,0 +1,35 @@
+{
+  "title": "Orak Hücreli Anemi",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Hemolitik Anemi", "Orak Hücre", "HbS", "Vazooklüzif Kriz", "Hidroksiüre"],
+    "parent": "hemolitik-anemiler-genel-bakis",
+    "order": 39
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji ve Moleküler Temel",
+      "html": "<p><strong>Orak Hücreli Anemi (OHA)</strong>, beta-globin genindeki (Kromozom 11) nokta mutasyonu sonucu gelişen otozomal resesif geçişli bir hemoglobinopatidir. Mutasyon sonucunda, beta-globin zincirinin 6. pozisyonundaki hidrofilik glutamik asit yerine hidrofobik valin aminoasiti geçer. Bu değişiklik <strong>Hemoglobin S (HbS)</strong> adı verilen anormal hemoglobin varyantını oluşturur.</p><p>HbS molekülleri, deoksijenize (oksijensiz) ortamlarda, asidozda, dehidratasyonda veya enfeksiyon durumlarında birbirleriyle hidrofobik bağlar kurarak polimerize olurlar. Bu polimerler (taktiodler), eritrosit iskeletini bozarak hücrenin karakteristik <strong>orak (sickle)</strong> veya hilal şeklini almasına neden olur. Başlangıçta oksijenlenme ile geri dönebilen (reversibl) bu şekil değişikliği, tekrarlayan ataklar sonucu membran hasarına yol açarak kalıcı (irreversibl) orak hücrelerin oluşumuyla sonuçlanır.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Kriz Tipleri",
+      "html": "<p>Oraklaşan eritrositler hem normalden çok daha hızlı yıkılırlar (20 gün) hem de rijit yapıları nedeniyle mikrovasküler yatağı tıkayarak doku iskemisine yol açarlar. Hastalığın kliniği akut krizler ve kronik organ hasarları ile seyreder:</p><ul class=\"mb-4\"><li><strong>Vazooklüzif (Damar Tıkayıcı) Krizler:</strong> En sık görülen ve en ağrılı kriz tipidir. Kemik, kas ve eklem ağrıları ile karakterizedir. Bebeklerde ilk bulgu genellikle el ve ayak sırtında ağrılı şişlik olan <strong>Daktilit (El-Ayak Sendromu)</strong> şeklindedir. Yetişkinlerde avasküler nekroz (özellikle femur başı) ve priapizm sıktır.</li><li><strong>Akut Göğüs Sendromu:</strong> Akciğer mikrosirkülasyonunun tıkanması veya kemik iliği nekrozuna bağlı yağ embolisi sonucu gelişir. Ateş, göğüs ağrısı, hipoksi ve akciğer grafisinde yeni infiltrasyonlar ile seyreder; <strong>OHA'da erişkinlerdeki en sık ölüm nedenidir.</strong></li><li><strong>Sekestrasyon Krizi:</strong> Oraklaşan hücrelerin dalak (çocuklarda) veya karaciğerde (erişkinlerde) aniden göllenmesi sonucu gelişen, hızlı ve derin anemi, masif organomegalisi ve hipovolemik şok tablosudur.</li><li><strong>Aplastik Kriz:</strong> Genellikle <strong>Parvovirus B19</strong> enfeksiyonunun eritroid öncülleri baskılaması sonucu ani gelişen retikülositopeni ve ağır anemi ile karakterizedir.</li></ul>"
+    },
+    {
+      "heading": "Kronik Komplikasyonlar ve Otosplenektomi",
+      "html": "<p>Mikrovasküler tıkanıklıklar zamanla tüm organlarda geri dönüşsüz hasar yaratır:</p><ul class=\"mb-4\"><li><strong>Dalak (Otosplenektomi):</strong> Dalak damarlarının sürekli tıkanması sonucu tekrarlayan enfarktüsler gelişir ve dalak çocukluk çağının sonlarına doğru tamamen fibrotik, küçük ve işlevsiz bir kalıntıya dönüşür (otosplenektomi). Bu durum hastaları Pnömokok, Meningokok ve H. influenzae gibi <strong>kapsüllü bakterilere karşı ölümcül sepsis (OPSI)</strong> riskine açık hale getirir.</li><li><strong>Böbrek:</strong> Renal papiller nekroz, hematüri ve idrar konsantrasyon defekti (hipostenüri) sıktır.</li><li><strong>Nörolojik:</strong> Çocuklarda iskemik, erişkinlerde hemorajik inme (strok) riski oldukça yüksektir.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar ve Tanısal Algoritma",
+      "html": "<p>Tanı, hemoliz bulgularının (LDH yüksekliği, indirekt hiperbilirubinemi, retikülositoz) spesifik testlerle doğrulanmasına dayanır:</p><ul class=\"mb-4\"><li><strong>Periferik Yayma:</strong> Klasik orak hücreler (drepanositler), hedef hücreleri (target cells) saptanır. Otosplenektomi gelişmiş hastalarda dalak fonksiyonunun kaybolduğunu gösteren <strong>Howell-Jolly cisimcikleri</strong> (çekirdek kalıntıları içeren eritrositler) izlenir.</li><li><strong>Oraklaşma Testi (Sodyum Metabisülfit):</strong> Eritrositler deoksijenizan bir ajan olan sodyum metabisülfit ile karşılaştırıldığında oraklaşmanın mikroskopta gözlenmesi prensibine dayanır. Tarama testidir.</li><li><strong>Hemoglobin Elektroforezi (Altın Standart):</strong> Kesin tanı elektroforez veya HPLC ile konur. Homozigot (HbSS) hastalarda <strong>HbA saptanmaz (%0)</strong>, dominant fraksiyon HbS'dir (%85-95) ve fetal hemoglobin (HbF) kompansatuar olarak artmıştır. (Taşıyıcılarda/Orak Hücre Özelliğinde ise HbA %60, HbS %40 civarındadır).</li></ul>"
+    },
+    {
+      "heading": "Tedavi ve Yönetim Stratejileri",
+      "html": "<p>Küratif tek seçenek uygun hastalarda Allojenik Kök Hücre Naklidir (Allo-HSCT). Medikal tedavi krizleri önlemeye ve semptomları hafifletmeye yöneliktir:</p><ul class=\"mb-4\"><li><strong>Akut Kriz Yönetimi:</strong> Agresif intravenöz hidrasyon, güçlü analjezi (opioidler), oksijen desteği ve enfeksiyon şüphesinde geniş spektrumlu antibiyotikler esastır. Ağır krizlerde (Akut göğüs sendromu, inme) <strong>Exchange Transfüzyon</strong> (kan değişimi) ile HbS oranı düşürülüp HbA oranı artırılır.</li><li><strong>Hidroksiüre:</strong> OHA tedavisinin temel taşıdır. Gama-globin gen ekspresyonunu artırarak <strong>HbF (Fetal Hemoglobin) üretimini stimüle eder</strong>. HbF, polimerizasyona katılmadığı için oraklaşmayı engeller, kriz sıklığını ve mortaliteyi belirgin şekilde azaltır.</li><li><strong>Profilaksi:</strong> Otosplenektomiye bağlı sepsis riskini önlemek için yenidoğan döneminden 5 yaşına kadar oral <strong>profilaktik penisilin</strong> verilir. Pnömokok, meningokok ve yıllık influenza aşılamaları mutlak endikasyondur.</li></ul>"
+    }
+  ]
+}

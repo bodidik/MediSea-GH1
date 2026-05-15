@@ -1,0 +1,31 @@
+{
+  "title": "Makrositer Anemiler",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Makrositer", "MCV", "Megaloblastik", "B12", "Folat"],
+    "parent": "anemiler",
+    "order": 33
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji: Neden Büyürler?",
+      "html": "<p>Eritrositlerin ortalama hacminin (MCV) <strong>100 fL'nin üzerinde</strong> (bazen 115-120 fL'lere kadar çıkar) olmasına makrositoz denir. Makrositer anemiler, kemik iliğindeki üretim kusurunun doğasına göre klinik ve morfolojik olarak iki dev ana gruba ayrılır: <strong>Megaloblastik</strong> ve <strong>Non-Megaloblastik</strong> anemiler.</p>"
+    },
+    {
+      "heading": "1. Megaloblastik Anemiler (DNA Sentez Kusuru)",
+      "html": "<p>Temel sorun <strong>DNA sentezinin bozulmasıdır</strong>. Hücre bölünemez (çekirdek olgunlaşamaz), ancak sitoplazmada RNA ve protein sentezi devam ettiği için hücre giderek devasa boyutlara ulaşır. Kemik iliğinde dev öncül hücreler (megaloblastlar) görülür.</p><ul class=\"mb-4\"><li><strong>B12 Vitamini (Kobalamin) Eksikliği:</strong> En sık nedeni Pernisiyöz Anemi (İntrinsik Faktör eksikliği), terminal ileum hastalıkları (Crohn) veya katı vegan diyetidir. Spesifik olarak <em>nörolojik bulgular</em> (subakut kombine dejenerasyon) yapar.</li><li><strong>Folat (B9 Vitamini) Eksikliği:</strong> Yetersiz beslenme, alkolizm ve gebelikte sıktır. Nörolojik bulgu <em>yapmaz</em>.</li><li><strong>İlaçlar:</strong> DNA sentezini doğrudan bloke eden ajanlar (<em>Metotreksat, Hidroksiüre, Azatiyoprin, 5-Florourasil, Zidovudin</em>).</li></ul><p><strong>Patognomonik Periferik Yayma:</strong> Dev oval eritrositler (Makroovalositler) ve <strong>Hipersegmente Nötrofiller</strong> (çekirdeği 5 veya daha fazla loba ayrılmış nötrofiller) megaloblastik aneminin mutlak imzasındır.</p>"
+    },
+    {
+      "heading": "2. Non-Megaloblastik Anemiler",
+      "html": "<p>DNA sentezi tamamen normaldir. Eritrositlerin büyümesinin nedeni membran lipit yapısındaki değişiklikler veya kan dolaşımına çok genç (ve doğal olarak büyük) hücrelerin çıkmasıdır. Yaymada hipersegmente nötrofil <em>görülmez</em>.</p><ul class=\"mb-4\"><li><strong>Kronik Alkolizm:</strong> Alkolün kemik iliğine doğrudan toksik etkisi. (Folat eksikliği ile de birleşebilir).</li><li><strong>Karaciğer Hastalıkları:</strong> Eritrosit membranında kolesterol ve fosfolipid birikimi hücreyi genişletir (Hedef hücreleri / Target cells ve Spur cells görülebilir).</li><li><strong>Hipotiroidi (Miksödem):</strong> Metabolizmanın yavaşlaması eritrosit boyutunu artırabilir.</li><li><strong>Retikülositoz:</strong> Akut kanama veya hemolitik anemi sonrası kemik iliği kana bolca retikülosit pompalar. Retikülositler olgun eritrositlerden %20 daha büyük olduğu için (MCV ~105-110 fL) yalancı makrositoz yapar.</li><li><strong>Miyelodisplastik Sendrom (MDS):</strong> Özellikle yaşlı hastalarda, <em>del(5q)</em> gibi klonal kemik iliği hastalıkları dirençli makrositik anemi ile prezante olur.</li></ul>"
+    },
+    {
+      "heading": "Laboratuvar Algoritması ve Tanısal İpuçları",
+      "html": "<p>Makrositik bir anemi ile karşılaşıldığında tanı basamakları şunlardır:</p><ol class=\"mb-4\"><li><strong>Periferik Yayma ve Retikülosit:</strong> Retikülosit yüksekse kanama/hemoliz düşün. Nötrofillerde hipersegmentasyon varsa Megaloblastik gruba yönel.</li><li><strong>B12 ve Folat Düzeyleri:</strong> Her iki düzeye de aynı anda bakılmalıdır.</li><li><strong>Kritik Ayrım (MMA ve Homosistein):</strong> B12 ve Folat düzeyleri sınırda ise metabolitlere bakılır:<ul><li>Sadece <strong>Homosistein</strong> yüksek, MMA normal: <em>Folat Eksikliği</em>.</li><li>Hem <strong>Homosistein</strong> hem de <strong>Metilmalonik Asit (MMA)</strong> yüksek: <em>B12 Vitamini Eksikliği</em>.</li></ul></li><li><strong>Diğer Tetkikler:</strong> Vitaminler normalse; Tiroid fonksiyon testleri (TSH), Karaciğer enzimleri ve ileri yaşta MDS şüphesi için Kemik İliği Biyopsisi istenir.</li></ol>"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Fosfomisin ve Beta-Laktam Sinerjisi",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Enfeksiyon", "Fosfomisin", "Beta-Laktam", "Sinerji", "PBP", "MRSA", "Pseudomonas"],
+    "parent": "fosfomisin-klinik-rehber",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "4. 'Önden ve Arkadan Saldırı' (Front-and-Rear Attack) Stratejisi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Fosfomisin ve β-laktam antibiyotiklerin kombinasyonunda kullanılan \"önden ve arkadan saldırı\" (front-and-rear attack) stratejisi, bakteriyel hücre duvarı (peptidoglikan) sentezinin farklı ve birbirini izleyen aşamalarının aynı anda bloke edilmesini ifade eder. Bu mekanizmanın uzman düzeyindeki detayları şu şekildedir:</p><div class=\"space-y-3\"><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-1\">1. Ön Saldırı: Fosfomisin ve MurA İnhibisyonu</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">Hücre duvarı sentezinin en erken ve kritik aşamasında fosfomisin devreye girer. Bakteriyel sitoplazmada bulunan <strong>MurA (UDP-GlcNAc enolpiruvil transferaz)</strong> enzimini geri dönüşümsüz olarak inhibe eder. Bu engelleme, peptidoglikan öncülü olan UDP-MurNAc oluşumunu durdurarak hücre duvarı biyosentez sistemini \"kırılgan\" bir hale getirir ve hücrenin geçirgenliğini artırır.</p></div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-1\">2. Arka Saldırı: β-laktamlar ve PBP Bağlanması</h4><p class=\"text-xs text-rose-800 leading-relaxed\">β-laktam antibiyotikler (penisilinler, sefalosporinler, karbapenemler) ise sentezin son aşamasını hedef alır. Hücre duvarının son halini almasını sağlayan çapraz bağlanma (transpeptidasyon) işlemlerinden sorumlu olan <strong>Penisilin Bağlayıcı Proteinlere (PBP'ler)</strong> geri dönüşümsüz olarak bağlanırlar.</p></div></div>"
+    },
+    {
+      "heading": "5. Sinerjinin Moleküler Sonuçları ve Klinik Rasyonel",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Bu ardışık (sequential) blokaj stratejisi şu sonuçları doğurur:</p><ul class=\"list-none space-y-3 text-sm text-slate-800 mb-4\"><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl\">💥 <strong>Hücre Duvarı Stresi:</strong> Hücre duvarı sentezinin hem başında hem sonunda meydana gelen bu çifte darbe, bakteride ağır bir hücre duvarı stresi oluşturur.</div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl\">🔓 <strong>Artmış Duyarlılık:</strong> Fosfomisinin sitoplazmik basamaktaki etkisi, β-laktamların hedef proteinleri olan PBP'lere erişimini ve bağlanma kapasitesini kolaylaştırır.</div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl\">⚡ <strong>Hızlı Bakterisid Etki:</strong> Tek başlarına kullanıldıklarında direnç gelişme riski yüksek olan bu ajanlar, birlikte kullanıldıklarında bakteriyel lizisi (parçalanmayı) belirgin şekilde hızlandırır ve sinerjik bir bakterisid etki gösterirler.</div></li></ul><div class=\"bg-slate-100 p-4 rounded-lg border border-slate-300 text-sm text-slate-700 font-medium italic\">Bu strateji, özellikle multidirençli (MDR) Gram-negatif patojenlerde (örneğin KPC üreten K. pneumoniae veya dirençli P. aeruginosa) tekli antibiyotik sınıflarının yetersiz kaldığı durumlarda direnci kırmak ve duyarlılığı yeniden sağlamak için temel bir rasyonel oluşturur.</div> "
+    }
+  ]
+}

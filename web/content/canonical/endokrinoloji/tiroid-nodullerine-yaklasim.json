@@ -1,0 +1,35 @@
+{
+  "title": "Tiroid Nodüllerine Yaklaşım ve TI-RADS",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Tiroid Nodülü", "TI-RADS", "Bethesda", "İİAB"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed, ACR TI-RADS ve Bethesda 2023 güncellemeleri referanslıdır.</em></p>"
+    },
+    {
+      "heading": "İlk Basamak: TSH ve Ultrasonografi",
+      "html": "<p>Palpabl veya rastlantısal saptanan her tiroid nodülünde ilk adım <strong>Serum TSH</strong> ölçümü ve <strong>Tiroid USG</strong>'dir.</p><ul class=\"mb-4\"><li><strong>TSH Düşükse:</strong> Nodül 'sıcak' (hiperfonksiyonel) olabilir. <strong>Tiroid Sintigrafisi</strong> istenir. Sıcak nodüllerin malignite riski çok düşüktür, biyopsi genellikle gerekmez.</li><li><strong>TSH Normal/Yüksekse:</strong> USG özelliklerine göre biyopsi (İİAB) kararı verilir.</li></ul>"
+    },
+    {
+      "heading": "ACR TI-RADS: Biyopsi Gereklilik Skorlaması",
+      "html": "<p>Ultrasonografik özelliklere göre nodüller 1 ile 5 arasında puanlanır. Malignite şüphesini artıran bulgular:</p><ul class=\"mb-4\"><li><strong>Ekojenite:</strong> Çok hipoekoik olması (+3 puan).</li><li><strong>Şekil:</strong> 'Genişliğinden daha uzun' (Taller-than-wide) olması (+3 puan).</li><li><strong>Kenar:</strong> Ekstratiroidal yayılım veya düzensiz sınırlar (+3 puan).</li><li><strong>Odaklar:</strong> Noktasal ekojenik odaklar (Mikrokalsifikasyonlar) (+3 puan).</li></ul>"
+    },
+    {
+      "heading": "İnce İğne Aspirasyon Biyopsisi (İİAB) Endikasyonları",
+      "html": "<p>Her nodüle biyopsi yapılmaz. ACR TI-RADS'a göre eşikler:</p><ul class=\"mb-4\"><li><strong>TR3 (Hafif Şüpheli):</strong> ≥ 2.5 cm ise.</li><li><strong>TR4 (Orta Şüpheli):</strong> ≥ 1.5 cm ise.</li><li><strong>TR5 (Yüksek Şüpheli):</strong> ≥ 1.0 cm ise.</li><li>⚠️ <em>Not:</em> 1 cm altındaki nodüllere, çok yüksek riskli özellikler (invazyon vb.) yoksa genellikle biyopsi önerilmez.</li></ul>"
+    },
+    {
+      "heading": "Sitolojik Değerlendirme: Bethesda Sistemi",
+      "html": "<p>Biyopsi sonucu 6 kategoride raporlanır:</p><div class=\"overflow-x-auto mb-6\"><table class=\"min-w-full text-xs text-left text-slate-600 border border-slate-200 rounded-lg\"> <thead class=\"bg-slate-100 text-slate-700 uppercase\"> <tr> <th class=\"px-4 py-2\">Kategori</th> <th class=\"px-4 py-2\">Tanım</th> <th class=\"px-4 py-2\">Yönetim</th> </tr> </thead> <tbody> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">I</td> <td class=\"px-4 py-2\">Tanısız / Yetersiz</td> <td class=\"px-4 py-2\">Tekrar İİAB</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">II</td> <td class=\"px-4 py-2\">Benign (Sıklıkla Kolloidal)</td> <td class=\"px-4 py-2\">Klinik İzlem</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">III / IV</td> <td class=\"px-4 py-2\">Belirsiz (AUS/FLUS / Foliküler Neoplazi)</td> <td class=\"px-4 py-2 text-blue-600\">Moleküler Test veya Cerrahi</td> </tr> <tr class=\"border-b\"> <td class=\"px-4 py-2 font-bold\">V / VI</td> <td class=\"px-4 py-2\">Malignite Şüphesi / Malign</td> <td class=\"px-4 py-2 text-red-600\">Cerrahi (Tiroidektomi)</td> </tr> </tbody></table></div>"
+    },
+    {
+      "heading": "Klinik İnci: Sıcak vs. Soğuk Nodül",
+      "html": "<p>Sintigrafide tutulumun olmaması (Soğuk nodül) malignite riskini artırırken (%5-10), hiperfonksiyonel (Sıcak) nodüller neredeyse daima benign karakterdedir.</p>"
+    }
+  ]
+}

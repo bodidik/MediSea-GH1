@@ -1,0 +1,27 @@
+{
+  "title": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği",
+  "meta": {
+    "updatedAt": "07 May 2026",
+    "tags": ["Endokrinoloji", "Kadın Doğum", "Hipotiroksinemi", "İyot", "Levotiroksin", "YDUS İleri Okuma"],
+    "parent": "gebelikte-hipotiroidizm-yonetimi",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🔬 1. Tanım ve Güncel Kılavuz Yaklaşımı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İzole maternal hipotiroksinemi, maternal serbest T4 (sT4) konsantrasyonunun gebelik referans aralığının <strong>alt %2,5 ila %5'lik diliminde</strong> yer alması ve buna tamamen normal bir tiroid uyarıcı hormon (TSH) düzeyinin eşlik etmesi durumudur. Gebelikte nispeten sık karşılaşılır.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1 flex items-center gap-2\">Kritik Kılavuz Kararı (ATA ve TEMD)</h4><p class=\"text-[11.5px] text-rose-800 leading-relaxed\">Güncel tıbbi kılavuzlar ve otoriteler, izole maternal hipotiroksinemi saptanan gebe kadınlarda rutin sentetik tiroid hormonu (levotiroksin - LT4) replasman tedavisi başlanmasını <strong>ÖNERMEMEKTEDİR.</strong></p></div>"
+    },
+    {
+      "heading": "📊 2. Bilimsel Gerekçeler (Neden LT4 Önerilmez?)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu kararın temelinde, LT4 tedavisinin gebelik komplikasyonlarını azalttığına veya çocuktaki nörogelişimsel fonksiyonları iyileştirdiğine dair literatürde <strong>yeterli kanıt bulunmaması</strong> yatmaktadır.</p><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm mb-4\"><strong class=\"text-[11px] text-slate-800 uppercase block mb-2\">Nörobilişsel ve Obstetrik Sonuçlara Etkisizlik</strong><p class=\"text-[11px] text-slate-700 leading-relaxed mb-2\">Kapsamlı randomize kontrollü çalışmalarda, LT4 tedavisi (13.-16. haftalarda başlanan) alan ve almayan annelerin çocukları kıyaslandığında; çocukların <strong>zeka (IQ) skorlarında, nörogelişimsel süreçlerinde veya davranışsal sonuçlarında anlamlı bir farklılık saptanmamıştır.</strong></p><p class=\"text-[11px] text-slate-700 leading-relaxed\">Buna ek olarak levotiroksin tedavisinin <strong>erken doğum, preeklampsi, gestasyonel hipertansiyon veya düşük oranları</strong> gibi anne ve fetüse ait diğer obstetrik komplikasyonların sıklığında belirgin bir iyileşme sağlamadığı kanıtlanmıştır.</p></div>"
+    },
+    {
+      "heading": "💊 3. Klinik Yönetim Stratejisi: İyot ve Takip",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Sentetik tiroid hormonu tedavisi gerekmese de, bu hastaların yönetiminde özellikle dikkat edilmesi gereken hayati noktalar mevcuttur:</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">İyot Desteği (Kritik Önlem)</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Türkiye gibi endemik iyot eksikliği bölgelerinde, izole hipotiroksinemi saptandığında ilk akla <strong>iyot eksikliği</strong> gelmelidir. Tüm uzmanlar, oluşabilecek komplikasyonları önlemek adına anne adayına <strong>100-150 &micro;g/gün iyot takviyesi</strong> sağlanmasında hemfikirdir.</p></div></div><div><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Otoantikorların Değerlendirilmesi</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Klinik takipte, tiroid otoantikor pozitifliğinin (özellikle <strong>TPO antikorları</strong>) ve gebenin iyot durumunun bilinmesi, olası gebelik komplikasyonlarını öngörebilmek ve takip edebilmek açısından büyük önem taşır.</p></div></div></div>"
+    },
+    {
+      "heading": "💡 Özet ve YDUS Spotu",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white\"><p class=\"text-[11.5px] text-slate-200 leading-relaxed text-center\">İzole maternal hipotiroksinemi tablosunda levotiroksin ile farmakolojik bir hormon replasmanı başlatılmasına gerek duyulmamakta olup, asıl odaklanılması gereken nokta tiroid bezinin normal işlevlerini sürdürebilmesi için <strong>gebenin optimal iyot desteğini eksiksiz olarak almasını</strong> sağlamaktır.</p></div>"
+    }
+  ]
+}
