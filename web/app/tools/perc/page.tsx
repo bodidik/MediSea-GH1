@@ -145,7 +145,7 @@ export default function PERCPage() {
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              PERC kuralı yalnızca Pulmoner Emboli olasılığı klinisyen tarafından "Düşük" (< %15) olarak değerlendirilen hastalarda geçerlidir. Yüksek riskli hastalarda kriterlere bakılmaksızın tetkik planlanmalıdır.
+              PERC kuralı yalnızca Pulmoner Emboli olasılığı klinisyen tarafından "Düşük" (&lt; %15) olarak değerlendirilen hastalarda geçerlidir. Yüksek riskli hastalarda kriterlere bakılmaksızın tetkik planlanmalıdır.
             </p>
           </div>
         </div>

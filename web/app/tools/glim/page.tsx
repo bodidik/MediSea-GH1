@@ -49,8 +49,8 @@ export default function GLIMPage() {
                 <span className="text-[10px] font-bold text-slate-400 uppercase">Kilo Kaybı</span>
                 <select onChange={(e)=>setPhenotype({...phenotype, weight: Number(e.target.value)})} className="w-full p-3 rounded-xl bg-slate-50 text-xs font-bold outline-none border-none ring-2 ring-slate-100 focus:ring-amber-400">
                   <option value="0">Yok / Anlamsız</option>
-                  <option value="1">Evre 1 (Hafif-Orta): 6 ayda %5-10 veya >6 ayda %10-20</option>
-                  <option value="2">Evre 2 (Şiddetli): 6 ayda >%10 veya >6 ayda >%20</option>
+                  <option value="1">Evre 1 (Hafif-Orta): 6 ayda %5-10 veya &gt;6 ayda %10-20</option>
+		  <option value="2">Evre 2 (Şiddetli): 6 ayda &gt;%10 veya &gt;6 ayda &gt;%20</option
                 </select>
               </label>
 

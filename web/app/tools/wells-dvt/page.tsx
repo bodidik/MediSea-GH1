@@ -117,7 +117,7 @@ export default function WellsDVTPage() {
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              Wells DVT skoru, klinik olasılığı belirlemek içindir. "DVT Olası" (≥2) grubundaki hastalara Doppler USG, "DVT Olası Değil" (<2) grubundaki hastalara ise D-dimer tetkiki önerilir.
+              Wells DVT skoru, klinik olasılığı belirlemek içindir. "DVT Olası" (≥2) grubundaki hastalara Doppler USG, "DVT Olası Değil" (&lt;2) grubundaki hastalara ise D-dimer tetkiki önerilir.
             </p>
           </div>
         </div>

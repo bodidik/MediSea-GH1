@@ -62,7 +62,7 @@ export default function NRS2002Page() {
               className="w-full p-4 rounded-xl bg-slate-50 border-none font-bold text-sm outline-none ring-2 ring-slate-100 focus:ring-amber-400"
             >
               <option value="0">Normal (0 Puan)</option>
-              <option value="1">Hafif: >%5 kilo kaybı veya < %50-75 alım (1 Puan)</option>
+              <option value="1">Hafif: &gt;%5 kilo kaybı veya &lt; %50-75 alım (1 Puan)</option>
               <option value="2">Orta: >%5 kilo kaybı (2 ay) veya < %25-50 alım (2 Puan)</option>
               <option value="3">Ağır: >%5 kilo kaybı (1 ay) veya < %0-25 alım (3 Puan)</option>
             </select>

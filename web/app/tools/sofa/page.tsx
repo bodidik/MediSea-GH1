@@ -199,7 +199,7 @@ export default function SOFAPage() {
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2 text-center">TOPLAM ORGAN YETMEZLİĞİ SKORU</span>
            <div className="text-7xl font-black text-white drop-shadow-lg">{total}</div>
            <p className="mt-4 text-[10px] font-bold text-amber-400 uppercase tracking-widest text-center italic">
-             Skor arttıkça hastane içi mortalite riski artar. (0-2: %10, >11: %95)
+             Skor arttıkça hastane içi mortalite riski artar. (0-2: %10, &gt;11: %95)
            </p>
         </div>
 
