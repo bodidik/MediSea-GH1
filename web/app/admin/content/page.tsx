@@ -150,64 +150,57 @@ export default function AdminContentPage() {
 		<th className="text-left px-3 py-2">Edit</th>
               </tr>
             </thead>
-            <tbody>
-              {filtered.map((x) => {
-                const isSel = !!selected[x.id];
-                return (
-                  <tr key={x.id} className={`border-b ${isSel ? "bg-gray-50" : ""}`}>
-                    <td className="px-3 py-2">
-                      <input
-                        type="checkbox"
-                        checked={isSel}
-                        onChange={() => toggleOne(x.id)}
-                      />
-                    </td>
-                    <td className="px-3 py-2 font-mono text-xs">{x.id}</td>
-                    <td className="px-3 py-2">{x.title}</td>
-                    <td className="px-3 py-2">{x.type}</td>
-                    <td className="px-3 py-2">{x.section}</td>
-                    <td className="px-3 py-2">
-                      {new Date(x.createdAt).toLocaleDateString("tr-TR")}
-                    </td>
-                    <td className="px-3 py-2">
-                      <AddToSRButton
-                        contentIds={[x.id]}
-                        section={x.section}
-                        type={x.type}
-                        label="SR"
-                        className="px-2 py-1 rounded-lg border text-xs"
-/>
-		     <td className="px-3 py-2">
-  		       {x.type === "topic" ? (
-    		         <Link
-      			   className="underline text-xs"
-   			   href={`/admin/content/topics/${encodeURIComponent(x.id)}`}
-    			  >
-    			    Düzenle
- 		          </Link>
-  			) : (
-  			  <span className="text-xs opacity-50">—</span>
- 			)}
-		      </td>
-                      />
-                    </td>
-                  </tr>
-                );
-              })}
-              {!filtered.length && (
-                <tr>
-                  <td colSpan={7} className="p-4 text-center text-sm text-gray-500">
-                    Kriterlere uygun iÃ§erik bulunamadÄ±.
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
-  );
-}
+         <tbody>
+  {filtered.map((x) => {
+    const isSel = !!selected[x.id];
+    return (
+      <tr key={x.id} className={`border-b ${isSel ? "bg-gray-50" : ""}`}>
+        <td className="px-3 py-2">
+          <input
+            type="checkbox"
+            checked={isSel}
+            onChange={() => toggleOne(x.id)}
+          />
+        </td>
+        <td className="px-3 py-2 font-mono text-xs">{x.id}</td>
+        <td className="px-3 py-2">{x.title}</td>
+        <td className="px-3 py-2">{x.type}</td>
+        <td className="px-3 py-2">{x.section}</td>
+        <td className="px-3 py-2">
+          {new Date(x.createdAt).toLocaleDateString("tr-TR")}
+        </td>
+        <td className="px-3 py-2">
+          <AddToSRButton
+            contentIds={[x.id]}
+            section={x.section}
+            type={x.type}
+            label="SR"
+            className="px-2 py-1 rounded-lg border text-xs"
+          />
+        </td>
+        <td className="px-3 py-2">
+          {x.type === "topic" ? (
+            <Link
+              className="underline text-xs"
+              href={`/admin/content/topics/${encodeURIComponent(x.id)}`}
+            >
+              Düzenle
+            </Link>
+          ) : (
+            <span className="text-xs opacity-50">—</span>
+          )}
+        </td>
+      </tr>
+    );
+  })}
+  {!filtered.length && (
+    <tr>
+      <td colSpan={8} className="p-4 text-center text-sm text-gray-500">
+        Kriterlere uygun içerik bulunamadı.
+      </td>
+    </tr>
+  )}
+</tbody>
 
 
 
