@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import InlineTopicEditor from "@/app/components/topics/InlineTopicEditor";
+import InlineTopicEditor from "@/components/topics/InlineTopicEditor";
 
 export const dynamic = "force-dynamic";
 

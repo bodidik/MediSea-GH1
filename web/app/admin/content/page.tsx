@@ -176,6 +176,7 @@ export default function AdminContentPage() {
                         type={x.type}
                         label="SR"
                         className="px-2 py-1 rounded-lg border text-xs"
+/>
 		     <td className="px-3 py-2">
   		       {x.type === "topic" ? (
     		         <Link

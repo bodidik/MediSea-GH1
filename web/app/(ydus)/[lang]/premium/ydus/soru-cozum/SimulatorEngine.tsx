@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useUser } from '../context/UserContext';
+import { UserContext } from '@/app/(ydus)/context/UserContext';
 
 // --- GÜÇLÜ TİP TANIMLAMALARI (Mimarinin Temeli) ---
 export type SimOption = {
