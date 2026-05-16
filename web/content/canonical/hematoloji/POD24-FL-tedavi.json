@@ -1,0 +1,27 @@
+{
+  "title": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "POD24", "İleri Okuma", "Tedavi"],
+    "parent": "folikuler-lenfoma",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Genel Prensipler ve POD24 Tanımı",
+      "html": "<p>İlk kemoimmünoterapiden (BR, R-CHOP, R-CVP) veya R2 (lenalidomid + rituksimab) tedavisinden sonraki <strong>24 ay içinde (POD24)</strong> ya da tek ajan anti-CD20/radyoterapiden sonraki 12 ay içinde progresyon gösteren hastalar 'erken tedavi başarısızlığı' olarak tanımlanır ve standart yaklaşımlara kötü yanıt verdikleri için yüksek riskli alt grubu oluştururlar.</p><p>Bu hasta grubunda ilk ve en kritik adım, histolojik transformasyonu (HT) dışlamak için (özellikle FDG-PET'te SUVmax >10 olan aktif lezyonlardan) <strong>mutlaka re-biyopsi yapılmasıdır</strong>. POD24 vakalarının yönetimi zordur; bu nedenle hastaların öncelikle klinik araştırmalara yönlendirilmesi kuvvetle tavsiye edilir.</p>"
+    },
+    {
+      "heading": "İkinci Basamak Tedavi Seçenekleri",
+      "html": "<p><strong>İlk Tedavisi Kemoimmünoterapi Olanlar:</strong> İlk basamakta kemoimmünoterapi alanlarda klasik kemoterapi rejimleriyle tekrar tedavi önerilmez. Bu hastalarda lenalidomid + obinutuzumab, R2 (rituksimab + lenalidomid) kombinasyonuna anti-CD19 monoklonal antikoru <em>tafasitamab</em> veya CD3xCD20 bispesifik antikoru <em>epcoritamab</em> eklenmesi güncel tercih edilen rejimlerdir.</p><p><strong>İlk Tedavisi R2 Olanlar:</strong> İlk basamak tedavisi R2 olan hastalarda ise relaps anında standart kemoimmünoterapilere (örn. O-CHOP veya O-Bendamustin gibi obinutuzumab tabanlı rejimlere) geçiş yapılması önerilir.</p>"
+    },
+    {
+      "heading": "Hücresel Tedaviler ve Konsolidasyon",
+      "html": "<p><strong>CAR-T Hücre Tedavisi:</strong> POD24 hastalarında en güçlü ve hedeflenen tedavi araçlarından biridir. <em>Lisokabtagen maraleusel (liso-cel)</em>, TRANSCEND-FL çalışmasında POD24 hastalarında 2. basamakta kullanıldığında %96 ORR (tamamı CR) gibi çarpıcı bir yanıt oranı göstermiştir. <em>Aksikabtagen siloleusel (axi-cel)</em> ve <em>tisagenlekleusel (tisa-cel)</em> de çoklu nüks veya ilk seriye dirençli FL'de FDA/EMA onaylıdır ve ikinci basamak tedaviden sadece kısmi yanıt (PR) alınan veya nüks eden uygun hastalarda konsolidasyon amaçlı veya kurtarma tedavisi olarak standart hale gelmiştir.</p><p><strong>Otolog Kök Hücre Nakli (ASCT):</strong> Geçmiş yıllarda kemoduyarlı erken nükslerde sağkalım avantajı sağladığı düşünülmekle birlikte, bu verilerin histolojik transformasyonlu hastaları da içermesi nedeniyle netliği tartışmalıdır. Günümüzde hedefe yönelik yeni ajanların ve CAR-T hücre tedavilerinin yaygınlaşmasıyla birlikte ASCT'nin FL'deki rolü ve kullanımı giderek azalmaktadır.</p>"
+    },
+    {
+      "heading": "Yeni Nesil Hedefe Yönelik Ajanlar",
+      "html": "<p><strong>Bispesifik T Hücre Yönlendirici Antikorlar:</strong> <em>Mosunetuzumab, epcoritamab</em> ve <em>odronextamab</em> gibi ajanlar; POD24 ve anti-CD20/alkilleyici ajana dirençli 'çifte refrakter' vakalar dahil olmak üzere, çoklu nüks/dirençli grupta yaklaşık %80 ORR ve yüksek oranda CR sağlamaktadır. Hazır ('off-the-shelf') bulunmaları ve poliklinik şartlarında yönetilebilir sitokin salınım sendromu (CRS) profilleri ile CAR-T'ye alternatif veya tamamlayıcı bir strateji sunarlar.</p><p><strong>EZH2 İnhibitörleri:</strong> <em>Tazemetostat</em>, spesifik EZH2 mutasyonu (Y646, A682, A692) taşıyan ve en az iki seri sistemik tedavi almış hastalarda iyi tolere edilen, %69 ORR sağlayan etkili bir oral seçenektir.</p><p><strong>Diğer Alternatifler:</strong> Hücresel tedavilere veya bispesifiklere uygun olmayan ya da bunlara erişimi olmayan POD24 hastalarında; zanubrutinib + obinutuzumab kombinasyonu veya loncastuximab tesirine + rituksimab, etkinlikleri klinik çalışmalarla desteklenen kılavuz onaylı/off-label opsiyonlardır.</p>"
+    }
+  ]
+}

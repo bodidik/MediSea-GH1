@@ -1,0 +1,27 @@
+{
+  "title": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Enfeksiyon", "Fosfomisin", "Daptomisin", "mprF", "Direnç", "MRSA", "VRE"],
+    "parent": "fosfomisin-daptomisin-sinerji",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🧬 Uzman Özeti: Moleküler Koruma Kalkanı",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Fosfomisin ve daptomisin kombinasyonunun <strong><em>mprF</em> mutasyonlarını baskılama rolü</strong>, daptomisin direncinin gelişimini engellemek ve bakterinin bu antibiyotiğe karşı duyarlılığını korumak açısından kritik bir moleküler mekanizmadır. Kaynaklar ışığında, bu baskılama rolü ve mekanizması spesifik genetik ve fiziksel müdahalelerle açıklanmaktadır.</p>"
+    },
+    {
+      "heading": "1. Direnç Mutasyonlarının Engellenmesi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Daptomisin monoterapisi altında, özellikle MRSA suşlarında daptomisin direncinden sorumlu olan en yaygın genetik değişiklik <strong><em>mprF</em> genindeki mutasyonlardır.</strong> Yakın zamanda yapılan çalışmalar (Ai ve ark., 2025), bu kombinasyonun direnç gelişimini nasıl yönettiğini şu şekilde ortaya koymuştur:</p><div class=\"space-y-3\"><div class=\"bg-rose-50 border border-rose-100 p-4 rounded-xl\"><h4 class=\"font-black text-rose-800 text-xs uppercase mb-1\">Monoterapide Mutasyonlar</h4><p class=\"text-xs text-rose-900 leading-relaxed\">Tek başına daptomisin kullanımı <em>mprF</em> mutasyonlarını, tek başına fosfomisin kullanımı ise <em>murA</em> mutasyonlarını doğrudan tetikler.</p></div><div class=\"bg-indigo-50 border border-indigo-100 p-4 rounded-xl\"><h4 class=\"font-black text-indigo-800 text-xs uppercase mb-1\">Kombinasyonda Baskılama</h4><p class=\"text-xs text-indigo-900 leading-relaxed\">Fosfomisin ve daptomisin birlikte uygulandığında, kombinasyon grubunda <strong>ne <em>mprF</em> ne de <em>murA</em> mutasyonlarına</strong> rastlanmıştır. Bu durum, kombinasyonun dirençle ilişkili genetik evrimi (evolution of resistance) doğrudan baskıladığını kanıtlamaktadır.</p></div></div>"
+    },
+    {
+      "heading": "2. Hücre Zarfı Resensitizasyonu (Yeniden Duyarlı Hale Getirme)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\"><em>mprF</em> mutasyonları, hücre zarfında net pozitif yükün artmasına ve daptomisinin (kalsiyuma bağımlı olarak) membran lipidlerine bağlanmasını engelleyen bir <strong>\"elektrostatik itme\"</strong> mekanizmasına yol açar.</p>  <ul class=\"list-none space-y-3 text-sm text-slate-800\"><li class=\"flex gap-3 items-start\"><span class=\"text-lg\">🛡️</span><div><strong class=\"block text-slate-900\">Fosfomisinin Rolü:</strong> Fosfomisin hücre zarfını pertürbe ederek net yüzey pozitif yükünü azaltır ve membran akışkanlığını etkiler.</div></li><li class=\"flex gap-3 items-start\"><span class=\"text-lg\">🔄</span><div><strong class=\"block text-slate-900\">Sonuç:</strong> Bu fiziksel ve genetik müdahale, <em>mprF</em> mutasyonu yoluyla gelişen adaptasyonları bozar ve bakteriyi daptomisinin membran depolarize edici etkisine karşı <strong>tekrar duyarlı hale getirir (resensitization).</strong></div></li></ul>"
+    },
+    {
+      "heading": "3. Klinik Önem ve Sinerji",
+      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Bu baskılama mekanizması sayesinde kombinasyon tedavisi, her iki ilacın da minimum inhibitör konsantrasyonunu (MİK) düşürür ve bakteriyel klerensi hızlandırır.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Biyofilm Etkinliği</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Bu genetik baskılama sadece serbest hücrelerde değil, daptomisin penetrasyonunun kısıtlı olduğu <strong>matür biyofilmlerde de</strong> dirençli alt popülasyonların ortaya çıkmasını engellemede etkilidir.</p></div><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Mortalite Üzerindeki Etkisi</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Klinik olarak daptomisin ve fosfomisin kombinasyonunun, vancomycin-resistant enterococci (VRE) kan akımı enfeksiyonlarında mortaliteyi monoterapilere kıyasla <strong>anlamlı ölçüde (%17,8) azalttığı</strong> bildirilmiştir.</p></div></div>  <div class=\"bg-amber-50 p-4 rounded-xl border-l-4 border-amber-500\"><p class=\"text-sm text-amber-900 font-medium leading-relaxed\"><strong>🎯 Klinik İnci:</strong> Özetle, fosfomisin; daptomisinin <em>\"topuğunu\"</em> (mprF mutasyonu ile gelişen direnç) koruma altına alarak hem mevcut sinerjiyi maksimize eder hem de tedavi sırasında dirençli suşların seçilimini proaktif olarak engeller.</p></div>"
+    }
+  ]
+}

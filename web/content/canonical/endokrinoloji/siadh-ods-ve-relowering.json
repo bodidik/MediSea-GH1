@@ -1,0 +1,23 @@
+{
+  "title": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Nöroloji", "SIADH", "ODS", "Re-lowering", "Desmopressin", "D5W"],
+    "parent": "siadh-sendromu",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🧠 ODS Patofizyolojisi: Hücresel Büzülme ve Apoptoz",
+      "html": "<p>Kronik hiponatremide beyin, ödemi önlemek için <strong>myoinositol, glutamin ve taurin</strong> gibi organik ozmolitleri dışarı atar. Sodyum çok hızlı yükseltilirse, su hücreden aniden çıkar; nöronal büzülme (krenasyon) ve kan-beyin bariyeri hasarı gelişir. Sonuç: Astrosit ve oligodendrosit apoptozu ile <strong>Santral Pontin Miyelinozis</strong>.</p>"
+    },
+    {
+      "heading": "⚠️ Yüksek Risk Grupları",
+      "html": "<p>Şu faktörlere sahip hastalarda ODS riski tavan yapar ve sodyum artış sınırı 24 saatte <strong>6-8 mmol/L</strong> ile kısıtlanmalıdır:</p><ul class=\"mb-4\"><li>Başlangıç Sodyumu < 105 mmol/L</li><li>Hipokalemi (K+ düşüklüğü sodyumun hücre içine girişini hızlandırır)</li><li>Alkol Kullanım Bozukluğu</li><li>Malnütrisyon ve İleri Evre Karaciğer Hastalığı</li></ul>"
+    },
+    {
+      "heading": "🔄 Re-lowering (Sodyumu Geri Düşürme) Protokolü",
+      "html": "<p>Düzeltme limitleri (24 saatte >10-12 mmol/L) aşılırsa uygulanacak acil prosedür:</p><ol class=\"mb-4\"><li><strong>Sodyum Artırıcı Tedaviyi Kes:</strong> Hipertonik salin veya Vaptan derhal durdurulur.</li><li><strong>Su Kaybını Durdur:</strong> İntravenöz <strong>Desmopressin (DDAVP)</strong> (2-4 mcg) verilerek böbrekten serbest su çıkışı engellenir.</li><li><strong>Serbest Su Replasmanı:</strong> <strong>%5 Dekstroz (D5W)</strong> (3 mL/kg/saat) başlanarak serum sodyumu güvenli hedeflere geri çekilir.</li></ol>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Sürekli ve Log-Doğrusal (Log-Linear) Risk Azalması Kuralı",
+  "meta": {
+    "updatedAt": "14 May 2026",
+    "tags": ["Kardiyoloji", "Lipidoloji", "Log-Linear", "Kardiyovasküler Risk", "LDL-C", "YDUS"],
+    "parent": "hiperlipidemi-dusuk-ldl-hedefleri",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "📉 1. Log-Doğrusal (Log-Linear) İlişki Ne Demektir?",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Sürekli ve log-doğrusal risk azalması, lipid düşürücü tedavilerin kardiyovasküler hastalıklar üzerindeki etkisini açıklayan <strong>en temel matematiksel ve klinik kuraldır</strong>.</p><div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Tanım</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Epidemiyolojide \"log-doğrusal\" terimi, LDL kolesteroldeki sabit bir <em>mutlak</em> düşüşün, kardiyovasküler olay riskinde sabit bir <em>oransal (rölatif)</em> düşüş sağlaması anlamına gelir.</p></div><div class=\"bg-rose-900 border border-rose-700 p-5 rounded-2xl shadow-xl text-white\"><h4 class=\"font-black text-rose-300 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">CTT Kuralı ve Pratik Örnek (Sınav Spotu)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-3\">Kapsamlı meta-analizlere (özellikle Cholesterol Treatment Trialists - CTT verilerine) göre; LDL kolesterolde sağlanan <strong>her 1 mmol/L'lik (yaklaşık 38.7 - 40 mg/dL) düşüş, majör vasküler olay (MI, inme, revaskülarizasyon) riskini %21 ila %22 oranında azaltır.</strong></p><p class=\"text-[11px] font-bold text-slate-900 bg-amber-400 p-2 rounded border border-amber-500\">Uygulama: Eğer LDL'yi 40 mg/dL düşürürseniz riski %22 azaltırsınız. Tedaviyi yoğunlaştırıp bir 40 mg/dL daha (toplam 80 mg/dL) düşürürseniz, KALAN RİSK ÜZERİNDEN bir %22 daha (toplamda ~%40-45 arası) azalma elde edersiniz. İlişkinin logaritmik olarak \"doğrusal\" olması, bu faydanın doza bağımlı ve kesin olarak öngörülebilir olduğunu gösterir.</p></div></div>"
+    },
+    {
+      "heading": "♾️ 2. Sürekli (Continuous) İlişki Ne Demektir?",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Taban (Plato) Etkisinin Yıkılması</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">\"Sürekli\" kelimesi, faydanın LDL-C belirli bir \"normal\" seviyeye indiğinde duraklamadığını (plato çizmediğini) ifade eder. Geçmişte 70 mg/dL gibi hedeflere düşüldüğünde ekstra risk azalması sağlanamayacağı sanılıyordu. Statinlere eklenen ezetimib ve özellikle <strong>PCSK9 inhibitörleri</strong> ile yapılan devasa çalışmalar bu algıyı yıkmıştır.</p></div></div><div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">\"Ne Kadar Düşük, O Kadar İyi\"</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Güncel veriler, LDL-C seviyeleri <strong>25 mg/dL'nin, hatta 20 mg/dL'nin altına indirildiğinde bile</strong> aterosklerotik olay riskindeki azalmanın durmaksızın devam ettiğini (sürekli olduğunu) kanıtlamıştır. Uzmanların <em>hiçbir alt sınır (lower limit) belirlememesinin</em> altında yatan gerçek budur.</p></div></div></div>"
+    },
+    {
+      "heading": "🎯 3. Uzman Perspektifinden Klinik Yansımaları",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-4 rounded-xl shadow-xl text-white\"><ul class=\"text-[11px] text-slate-300 space-y-3 list-disc list-inside ml-1\"><li><strong>Strateji Değişimi:</strong> Bu iki kavramın birleşimi stratejiyi değiştirmiştir. Sadece \"statin vermek\" değil, <strong>\"hedefe yönelik tedavi (treat-to-target)\"</strong> yaklaşımıyla LDL-C'yi mümkün olan en düşük seviyelere çekmek kurgulanır.</li><li><strong class=\"text-sky-400\">Mutlak Fayda Kuralı:</strong> Bu kurala göre, hastanın aterosklerotik olay geçirme konusundaki <strong>başlangıç riski (mutlak riski) ne kadar yüksekse</strong>, LDL-C'yi düşürerek elde edeceği <em>mutlak fayda</em> da o kadar dramatik ve hayat kurtarıcı olacaktır.</li></ul></div>"
+    }
+  ]
+}

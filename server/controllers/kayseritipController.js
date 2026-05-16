@@ -1,0 +1,3 @@
+import jwt from 'jsonwebtoken';
+const maskIp = ip => { if(!ip) return '0.0.0.x'; const p=ip.split('.'); return p.length===4?`${p[0]}.${p[1]}.${p[2]}.x`:ip };
+export const viewDoc = (req,res)=>{const token=req.query.token;try{const payload=jwt.verify(token,process.env.KAYSERITIP_SECRET);const user=req.user||{_id:'anon'};const ip=(req.headers['x-forwarded-for']?.toString().split(',')[0])||req.ip;res.json({ok:true,docId:payload.docId||'demo',user:String(user._id),ipMasked:maskIp(ip)})}catch(e){res.status(401).json({error:'Invalid or expired link'})}};

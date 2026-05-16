@@ -1,0 +1,19 @@
+{
+  "title": "Ch 85: Mide ve Özofagus Kanserleri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Mide", "Helicobacter", "Yutma Güçlüğü"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "Risk Faktörleri",
+      "text": "<ul class='list-disc pl-5 space-y-2'><li><strong>Özofagus:</strong> Skuamöz hücreli (Alkol, Sigara) ve Adenokarsinom (Barrett, Reflü, Obezite).</li><li><strong>Mide:</strong> <em>H. pylori</em> enfeksiyonu (En önemli neden), tuzlu/tütsülenmiş gıda, sigara.</li></ul>"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "text": "<div class='grid gap-4 md:grid-cols-2 mt-4'><div class='bg-blue-50 p-3 rounded border border-blue-200'><strong class='text-blue-900'>Cerrahi ve Neo-adjuvan:</strong> Lokal ileri evrede önce Kemoterapi/Radyoterapi (FLOT rejimi) verilir, tümör küçültülüp sonra ameliyat edilir.</div><div class='bg-purple-50 p-3 rounded border border-purple-200'><strong class='text-purple-900'>Metastatik:</strong> HER2 testi şarttır. Pozitifse Trastuzumab eklenir. İmmünoterapi (Nivolumab) sağkalımı artırır.</div></div>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Tigesiklin Tedavisinde Kritik Uyarılar",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Antibiyotikler", "Tigesiklin", "FDA Uyarısı", "Hipoglisemi", "Koagülopati", "Yan Etkiler"],
+    "parent": "tigesiklin-derleme",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🚨 Uzman Özeti: Artmış Ölüm Riski (Kara Kutu Uyarısı)",
+      "html": "<div class=\"bg-rose-50 border-2 border-rose-600 p-5 rounded-2xl shadow-sm mb-4\"><h4 class=\"font-black text-rose-800 text-sm uppercase flex items-center gap-2 mb-2\">⬛ FDA Kara Kutu Uyarısı (Boxed Warning)</h4><p class=\"text-sm text-rose-900 font-medium leading-relaxed\">Klinik deney verilerine göre tigesiklin, diğer antibiyotiklerle karşılaştırıldığında <strong>tüm nedenlere bağlı ölüm riskinde artış</strong> göstermektedir. Bu ölümlerin genellikle enfeksiyonun kötüleşmesi veya altta yatan ek hastalıklardan kaynaklandığı bildirilmiştir. Bu nedenle tigesiklin, <strong>sadece diğer alternatif tedavilerin uygun olmadığı</strong> durumlarda kullanılmak üzere saklı tutulmalıdır.</p></div>"
+    },
+    {
+      "heading": "1. Kullanılmaması Gereken Endikasyonlar",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Tigesiklin, aşağıdaki tablolarda daha düşük etkinlik ve artmış ölüm oranları sergilediği için bu durumların tedavisinde <strong>onaylı değildir ve kesinlikle önerilmemektedir:</strong></p><ul class=\"grid grid-cols-1 md:grid-cols-3 gap-3 text-sm text-slate-800\"><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">🦶 <strong>Diyabetik Ayak Enfeksiyonları</strong></div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">🫁 <strong>HAP ve VAP</strong><br/><span class=\"text-[10px] text-slate-500 uppercase tracking-widest\">Hastane/Ventilatör Kökenli Pnömoni</span></div></li><li><div class=\"bg-white border border-slate-200 p-3 rounded-xl shadow-sm text-center\">💥 <strong>Bağırsak Perforasyonu</strong><br/><span class=\"text-[10px] text-slate-500 uppercase tracking-widest\">Sepsis Riski (Monoterapi Yapılmaz)</span></div></li></ul>"
+    },
+    {
+      "heading": "2. Şiddetli Metabolik ve Hematolojik Aciller",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl h-full\"><h4 class=\"font-black text-amber-900 text-xs uppercase mb-2\">Şiddetli ve Dirençli Hipoglisemi</h4><p class=\"text-xs text-amber-800 leading-relaxed\">Diyabet hastası olmayanlarda dahi aniden kan şekerinde tehlikeli düşüşlere yol açabilir. Tedavi sırasında veya <strong>ilacın kesilmesinden sonraki günlerde de</strong> devam edebilir; geri döndürülmesi için IV dekstroz tedavisi gerektirebilir.</p></div></div><div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl h-full\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2\">Pıhtılaşma Bozuklukları (Koagülopati)</h4><p class=\"text-xs text-rose-800 leading-relaxed\">Özellikle böbrek/karaciğer yetmezliği olanlarda, doza ve süreye bağlı olarak PT ve aPTT testlerinde uzama ile birlikte <strong>hipofibrinojenemiye</strong> neden olabilir. Ciddi kanama riski nedeniyle düzenli koagülasyon takibi şarttır.</p></div></div></div>"
+    },
+    {
+      "heading": "3. Organ Toksisiteleri (Karaciğer ve Pankreas)",
+      "html": "<div class=\"space-y-3\"><div class=\"bg-white border border-slate-200 p-4 rounded-xl\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-1\">Karaciğer Yetmezliği ve Hepatotoksisite</h4><p class=\"text-xs text-slate-600 leading-relaxed\">İlaç temel olarak safra yoluyla atıldığı için, ağır karaciğer yetmezliği olan <strong>(Child-Pugh Sınıf C)</strong> hastalarda idame dozunun %50 oranında düşürülmesi zorunludur. Ciddi karaciğer yetmezliğine yol açabilir.</p></div><div class=\"bg-white border border-slate-200 p-4 rounded-xl\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-1\">Ölümcül Pankreatit</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Önceden risk faktörü taşımayan hastalarda dahi <strong>akut pankreatit</strong> gelişebilir ve bu tablo ölümcül seyredebilir. Pankreatit şüphesi doğduğunda ilacın kullanımı derhal durdurulmalıdır.</p></div></div>"
+    },
+    {
+      "heading": "4. Özel Popülasyonlar (Pediatri, Gebelik, Emzirme)",
+      "html": "<ul class=\"space-y-3 text-sm text-slate-800\"><li class=\"flex gap-3 items-start\"><span class=\"text-lg\">👶</span><div><strong class=\"block text-slate-900\">Pediatrik Kullanım (Diş ve Kemik Hasarı):</strong> Tetrasiklin sınıf etkisi olarak, 8 yaşından küçük çocuklarda dişlerde kalıcı sarı-gri-kahverengi renk değişimine ve mine hipoplazisine yol açar. Çok acil alternatifsiz durumlar dışında önerilmez.</div></li><li class=\"flex gap-3 items-start\"><span class=\"text-lg\">🤰</span><div><strong class=\"block text-slate-900\">Gebelik ve Emzirme Uyarısı:</strong> Plasentadan geçer. İn utero maruziyet fetüsün iskelet gelişimini yavaşlatabilir. Emziren annelerde tedavi 3 haftayı aşacaksa bebekte kemik gelişimi inhibisyonu riski nedeniyle emzirmeye ara verilmeli veya ilaç kesilmelidir.</div></li></ul>"
+    },
+    {
+      "heading": "5. Çapraz Duyarlılık ve Sınıf Etkileri",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Tetrasiklin ailesinin bir üyesi olması nedeniyle aşağıdaki spesifik sınıf etkileri ve komplikasyonlar akılda tutulmalıdır:</p><div class=\"bg-slate-50 p-4 rounded-xl border border-slate-200\"><ul class=\"list-disc pl-5 space-y-2 text-xs text-slate-700\"><li><strong>Aşırı Duyarlılık ve Anafilaksi:</strong> Doksisiklin, minosiklin gibi diğer tetrasiklinlere alerjisi olanlarda yapısal benzerlikleri nedeniyle ölümcül çapraz duyarlılık/anafilaktik şok yaratabilir.</li><li><strong>Süperenfeksiyon ve CDAD:</strong> Uzun süreli kullanımı, dirençli mantar/bakteri üremesine ve ciddi <em>Clostridioides difficile</em> ishali (CDAD) tablolarına yol açabilir.</li><li><strong>Karakteristik Tetrasiklin Etkileri:</strong> Artan BUN, azotemi, asidoz gibi antianabolik etkilere, ışığa duyarlılığa (fotosensitivite) ve kafa içi basınç artışına <strong>(psödotümör serebri)</strong> yol açabilme potansiyeline sahiptir.</li></ul></div>"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Sarkoidoz",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Göğüs Hastalıkları", "Sarkoidoz", "Löfgren", "ACE", "Granülom"],
+    "parent": null,
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 ATS/ERS/WASOG Sarkoidoz Tanı ve Tedavi Rehberi referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Patogenez: Kazeifiye Olmayan Granülom",
+      "html": "<p>Sarkoidoz, bilinmeyen bir antijene karşı gelişen abartılı bir hücresel immün yanıtın (Th1 aracılı) sonucudur. <strong>Patognomonik Bulgusu:</strong> Histopatolojik olarak nekroz içermeyen (non-kazeifiye) epiteloid hücreli granülomlardır.</p><ul class=\"mb-4\"><li>Granülomların merkezinde dev hücreler (Langhans tipi) ve bazen <strong>Asteroid</strong> veya <strong>Schaumann cisimcikleri</strong> görülebilir.</li></ul>"
+    },
+    {
+      "heading": "2. Klinik Spektrum ve Organ Tutulumları",
+      "html": "<p>Sarkoidoz 'büyük taklitçidir'; her organı tutabilir:</p><ul class=\"mb-4\"><li><strong>Akciğer (%90+):</strong> En sık tutulan organ. Bilateral hiler lenfadenopati (BHL) tipiktir.</li><li><strong>Deri:</strong> <em>Eritema Nodosum</em> (genellikle iyi prognoz göstergesi) ve <em>Lupus Pernio</em> (kronik seyir ve kötü prognoz göstergesi).</li><li><strong>Göz:</strong> En sık anterior üveit görülür; tedavi edilmezse körlük yapabilir.</li><li><strong>Kalp (Nörosarkoidoz):</strong> En tehlikeli tutulumlardır. Aritmiler, ani ölüm veya kraniyal sinir felçlerine (en sık Fasiyal Paralizi) neden olabilir.</li></ul>"
+    },
+    {
+      "heading": "3. Spesifik Sendromlar",
+      "html": "<ul class=\"mb-4\"><li><strong>Löfgren Sendromu:</strong> Akut ve selim seyirlidir. Triad: <strong>Eritema Nodosum + Bilateral Hiler LAP + Gezici Artralji.</strong> Genellikle tedavi gerektirmeden düzelir.</li><li><strong>Heerfordt Sendromu (Uveoparotid Ateş):</strong> Üveit + Parotit büyümesi + Fasiyal paralizi + Ateş.</li></ul>"
+    },
+    {
+      "heading": "4. Radyolojik Evreleme (Scadding Evreleri)",
+      "html": "<p>Akciğer grafisi bulgularına göre prognoz belirlenir:</p><ul class=\"mb-4\"><li><strong>Evre 0:</strong> Normal akciğer grafisi (%5-10 vaka).</li><li><strong>Evre 1:</strong> Sadece Bilateral Hiler LAP (Prognoz en iyi).</li><li><strong>Evre 2:</strong> BHL + Parankimal infiltrasyon.</li><li><strong>Evre 3:</strong> Sadece Parankimal infiltrasyon (LAP yok).</li><li><strong>Evre 4:</strong> İleri evre Fibrozis ve bal peteği akciğer.</li></ul>"
+    },
+    {
+      "heading": "5. Tanısal İpuçları ve Biyokimya",
+      "html": "<ul class=\"mb-4\"><li><strong>ACE (Anjiyotensin Dönüştürücü Enzim):</strong> Granülomlardaki epiteloid hücrelerden salınır. Aktif hastalıkta %60-80 yükselir (Spesifik değil ama takipte değerlidir).</li><li><strong>Kalsiyum Metabolizması:</strong> Granülomlardaki makrofajlar kontrolsüz 1-alfa hidroksilaz aktivitesine sahiptir; bu da <strong>Hiperkalsiüri</strong> ve <strong>Hiperkalsemiye</strong> yol açar.</li><li><strong>Kesin Tanı:</strong> Klinik/radyolojik uyum + biyopside nekrotizan olmayan granülomların gösterilmesi + diğer nedenlerin (Tüberküloz, Berilyozis) dışlanmasıdır.</li></ul>"
+    },
+    {
+      "heading": "6. Tedavi Yönetimi",
+      "html": "<p>Her hasta tedavi edilmez! Evre 1 asemptomatik hastalar izlenebilir. <strong>Tedavi Endikasyonları:</strong> Ciddi semptomlar, görme tehdidi, nörolojik tutulum, kardiyak tutulum veya ilerleyici akciğer fonksiyon kaybı.</p><ul class=\"mb-4\"><li><strong>İlk Seçenek:</strong> Sistemik Kortikosteroidler (Prednizon).</li><li><strong>Steroid Dirençli Vakalar:</strong> Metotreksat, Azatioprin veya Anti-TNF (İnfliksimab) ajanlar.</li></ul>"
+    }
+  ]
+}

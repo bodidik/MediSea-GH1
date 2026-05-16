@@ -1,0 +1,35 @@
+{
+  "title": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları",
+  "meta": {
+    "updatedAt": "03 Nis 2026",
+    "tags": ["Nefroloji", "Fizyoloji", "Aldosteron", "ENaC", "SGK1", "11β-HSD2", "Potasyum"],
+    "parent": "diuretikler",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🔬 Uzman Özeti: Aldosterona Duyarlı Distal Nefron (ASDN)",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Aldosteronun nefrondaki etkileri, hücresel sinyal yolakları ve iyon transport mekanizmaları üzerinden son derece kompleks bir süreci kapsar. Böbrekte temel olarak <strong>\"aldosterona duyarlı distal nefron\" (ASDN)</strong> olarak adlandırılan; distal kıvrımlı tübülün geç kısmı (DCT2), birleştirici tübül (CNT) ile kortikal ve medüller toplayıcı kanalları (CCD ve MCD) hedefler.</p> "
+    },
+    {
+      "heading": "1. Reseptör Seçiciliği ve 11β-HSD2 Enziminin Koruyucu Rolü",
+      "html": "<div class=\"bg-rose-50 border-2 border-rose-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-sm uppercase mb-2\">Kortizol İstilasına Karşı Koruma: 11β-HSD2</h4><p class=\"text-sm text-rose-800 leading-relaxed\">Aldosteron, sitoplazmadaki yüksek afiniteli <strong>mineralokortikoid reseptörüne (MR)</strong> bağlanır. Normalde kanda kortizol seviyesi aldosterondan 100-1000 kat yüksektir ve MR'a afinitesi eşdeğerdir. ASDN hücrelerinde seçiciliği sağlayan temel mekanizma, <strong>11β-hidroksisteroid dehidrogenaz tip 2 (11β-HSD2)</strong> enzimidir. Bu enzim, kortizolü MR'a bağlanamayan <em>inaktif kortizona</em> dönüştürerek reseptörü yalnızca aldosteronun aktivasyonuna açık hale getirir.</p></div>"
+    },
+    {
+      "heading": "2. Genomik Etkiler: Erken ve Geç Faz Transkripsiyonel Yanıtlar",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Aldosteron-MR kompleksi hücre çekirdeğine transloke olarak spesifik hormon yanıt elementlerine (HRE) bağlanır. Bu genomik yanıt iki fazda gerçekleşir:</p>  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-2\">Erken Faz (İlk 30 dk) ve SGK1 Yolağı</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Aldosteron uyarısıyla <strong>SGK1</strong> enziminin transkripsiyonu hızla artar. SGK1, <em>Nedd4-2</em> adlı ubikuitin ligazı fosforile eder. Normalde ENaC'yi yıkılmak üzere işaretleyen Nedd4-2, fosforile olunca ENaC'ye bağlanamaz. Böylece ENaC'nin hücre zarındaki yarı ömrü ve açık kalma olasılığı dramatik biçimde artar.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-2\">Geç Faz (Saatler Süren Yanıt)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Geç fazda aldosteron, ENaC'nin özellikle α-alt biriminin (α-ENaC) ve bazolateral membrandaki <strong>Na⁺/K⁺-ATPase pompalarının</strong> <em>de novo</em> (yeni) sentezini doğrudan artırır.</p></div></div></div>"
+    },
+    {
+      "heading": "3. Elektrofizyolojik Sonuçlar: Na⁺, K⁺ ve H⁺ Transportu",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Artan ENaC aktivitesi ve pompa sayısının nefron lümenindeki elektrofizyolojik yansımaları birbirine zincirleme bağlıdır:</p>  <ul class=\"space-y-4 text-sm text-slate-800\"><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">⚡</span><div><strong class=\"block text-slate-900\">Elektrojenik Sodyum Reabsorpsiyonu:</strong> Lümendeki sodyumun ENaC üzerinden (yanında bir anyon olan klorürü almadan) hücre içine girmesi ASDN'deki iyon transportunun hız kısıtlayıcı basamağıdır. Giren sodyum, bazolateral Na⁺/K⁺-ATPase ile kana ekstrüde edilir.</div></li><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">🧲</span><div><strong class=\"block text-slate-900\">Lümen-Negatif Potansiyel ve K⁺ Sekresyonu:</strong> Elektrojenik sodyum emilimi, tübül lümeninde güçlü bir negatif elektriksel potansiyel (-80 mV'a kadar) yaratır. Bu lümen-negatif gradyanın itici gücüyle, hücre içindeki yüksek potasyum apikal <strong>ROMK ve akıma duyarlı BK (maxi-K) kanalları</strong> üzerinden idrara salgılanır. <em>(Yani potasyum atıcı etki, doğrudan sodyumun yarattığı elektriksel itici güce bağlıdır).</em></div></li><li class=\"flex gap-3 items-start\"><span class=\"text-2xl\">🧪</span><div><strong class=\"block text-slate-900\">Proton (H⁺) Atılımı:</strong> Toplayıcı kanallardaki α-interkalare hücreleri de uyararak apikal <strong>H⁺-ATPase</strong> aktivitesini artırır. Proton sekresyonunu tetikleyerek idrarın asitleşmesine, kanda ise metabolik alkaloza neden olur.</div></li></ul>"
+    },
+    {
+      "heading": "4. Distal Kıvrımlı Tübülde (DCT) NCC Aktivasyonu",
+      "html": "<div class=\"bg-blue-50 border-l-4 border-blue-500 p-4 shadow-sm mb-4\"><p class=\"text-xs text-blue-900 leading-relaxed\">Aldosteronun etkisi sadece toplayıcı kanallardaki ENaC ile sınırlı değildir. Hormon, erken distal nefronda (DCT) tiyazid duyarlı <strong>Na⁺-Cl⁻ ortak taşıyıcısını (NCC)</strong> da uyarır. Bu etki, SGK1'in <strong>WNK4 ve SPAK kinaz sinyal kaskadını</strong> fosforile ederek NCC'yi aktive etmesi yoluyla (veya hipokaleminin dolaylı yoldan WNK kinazları aktive etmesiyle) gerçekleşir.</p></div>"
+    },
+    {
+      "heading": "5. Non-Genomik (Hızlı) Etkiler",
+      "html": "<div class=\"bg-slate-800 p-4 rounded-xl\"><p class=\"text-xs text-slate-200 leading-relaxed\">Klasik genetik transkripsiyon süreçlerinden bağımsız olarak aldosteron; saniyeler/dakikalar içinde gelişen, MR-bağımsız (veya zara bağlı MR üzerinden) hızlı hücresel yanıtlara da neden olur. G proteinine kenetli östrojen reseptörü (GPER) veya hücre zarına bağlı EGFR gibi alternatif reseptörler üzerinden işleyen bu yollar; <strong>hızlı kalsiyum akışına, Protein Kinaz C (PKC) ve ERK aktivasyonuna</strong> yol açarak hem sodyum kanallarının anlık aktivitesini hem de renal vasküler direnci modüle eder.</p></div>"
+    }
+  ]
+}

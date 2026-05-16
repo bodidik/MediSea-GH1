@@ -1,0 +1,35 @@
+{
+  "title": "Saçlı Hücreli Lösemi (HCL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Lösemi", "HCL", "BRAF V600E", "Kladribin", "Monositopeni", "Yapay Zeka Taslağı"],
+    "parent": "losemiler",
+    "order": 27
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI Taslak Modülü",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> Bu modül Yapay Zeka (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Genetik Patogenez",
+      "html": "<p><strong>Saçlı Hücreli Lösemi (Hairy Cell Leukemia - HCL)</strong>, sitoplazmik uzantılara (saçsı saçaklara) sahip, nadir görülen indolent (yavaş seyirli) bir matür B-hücreli lenfoproliferatif hastalıktır.</p><p>Hastalığın genetik imzası tek ve çok nettir: Klasik HCL vakalarının <strong>>%95'inde BRAF V600E mutasyonu</strong> saptanır. Bu mutasyon, hücre içi BRAF-MEK-ERK (MAP kinaz) sinyal yolağını sürekli aktif hale getirerek hücrenin apoptozdan kaçmasını ve kontrolsüz çoğalmasını sağlar.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon",
+      "html": "<p>HCL, kemik iliğini ve dalağın kırmızı pulpasını yoğun bir şekilde infiltre eder. Klinik tablo diğer lösemilerden oldukça karakteristik farklılıklar gösterir:</p><ul class=\"mb-4\"><li><strong>Pansitopeni ve Monositopeni:</strong> Hastaların çoğunda anemi, nötropeni ve trombositopeni görülür. Ancak HCL'nin en spesifik ve evrensel hematolojik bulgusu <strong>derin monositopenidir</strong> (monositlerin neredeyse tamamen kaybolması).</li><li><strong>Masif Splenomegali:</strong> Dalağın kırmızı pulpa infiltrasyonuna bağlı olarak devasa boyutlara ulaşan splenomegali sıktır. (Not: KLL'nin aksine HCL'de <em>lenfadenopati çok nadirdir</em>).</li><li><strong>Kuru Aspirasyon (Dry Tap):</strong> Neoplastik hücreler kemik iliğinde belirgin <strong>retikülin fibrozisine</strong> neden olur. Bu yüzden Kİ aspirasyonunda sıvı gelmez (dry tap), tanı için Kİ biyopsisi şarttır.</li><li><strong>Enfeksiyonlar:</strong> Monosit ve nötrofil eksikliğine bağlı olarak atipik mikobakteriler, <em>Pneumocystis jirovecii</em> ve <em>Legionella</em> gibi fırsatçı enfeksiyon riskleri artmıştır.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım ve İmmünofenotip",
+      "html": "<p>Periferik kan yaymasında saçsı sitoplazmik uzantıları olan geniş hücreler görülür. Kemik iliği biyopsisinde hücrelerin etrafında geniş ve berrak bir sitoplazma halesi bulunur (<strong>Fried Egg / Sahanda Yumurta görünümü</strong>).</p><p><strong>Altın Standart (Akım Sitometrisi):</strong> HCL hücreleri parlak CD20+ B hücreleridir. Klasik HCL'nin 4'lü spesifik yüzey belirteç paneli şudur: <strong>CD11c (+), CD25 (+), CD103 (+), CD123 (+)</strong>.</p><p>Ayrıca sitokimyasal olarak <strong>TRAP (Tartarata Dirençli Asit Fosfataz)</strong> boyası pozitiftir, ancak günümüzde flow sitometri ve BRAF mutasyon analizi TRAP boyasının yerini almıştır.</p>"
+    },
+    {
+      "heading": "HCL-Varyant (HCL-v)",
+      "html": "<p>Klasik HCL'den farklı olarak <strong>BRAF V600E mutasyonu ve CD25 ekspresyonu NEGATİFTİR</strong> (Genellikle <em>MAP2K1</em> mutasyonu bulunur). Ayrıca monositopeni görülmez (hatta lökositoz olabilir). Klasik pürin analoglarına (Kladribin) yanıtı çok kötüdür, tedavisi çok daha zordur.</p>"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "html": "<p>Asemptomatik ve sitopenisi olmayan hastalar sadece izlenir. Tedavi endikasyonu: Semptomatik splenomegali, tekrarlayan enfeksiyonlar veya belirgin sitopenilerdir (Nötrofil <1.000, Hb <11, Trombosit <100.000).</p><ul class=\"mb-4\"><li><strong>Birinci Basamak (Pürin Analogları):</strong> HCL, kemoterapiye en duyarlı tümörlerden biridir. Tek ajan <strong>Kladribin (2-CdA)</strong> veya <strong>Pentostatin</strong> ile tek kürde (5-7 günlük tedavi) %80-90 oranında uzun yıllar süren Tam Remisyon (CR) elde edilir.</li><li><strong>Relaps/Refrakter Hastalık:</strong> Kladribin sonrası nüks eden hastalarda <em>Rituksimab</em> (anti-CD20) kombinasyonları kullanılır. Çoklu dirençli vakalarda ise hedefe yönelik BRAF inhibitörleri (<strong>Vemurafenib, Dabrafenib</strong>) veya anti-CD22 immünotoksini (<strong>Moxetumomab pasudotox</strong>) devreye girer.</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Etelcalcetide ve Evocalcet (Yeni Nesil Kalsimimetikler)",
+  "meta": {
+    "updatedAt": "03 May 2026",
+    "tags": ["Farmakoloji", "Nefroloji", "Kalsimimetikler", "Etelcalcetide", "Evocalcet", "YDUS"],
+    "parent": "kbh-dvitamini-ve-kalsimimetikler",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "1. Etelcalcetide (İntravenöz Kalsimimetik)",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-1 flex items-center gap-2\">Moleküler Mekanizma</h4><p class=\"text-[11.5px] text-indigo-800 leading-relaxed\">Yedi D-amino asit ve bir L-sistein içeren sentetik bir peptittir. CaSR'nin ekstraselüler alanındaki <strong>Cys482'ye kovalent disülfit bağıyla</strong> bağlanır. Cinacalcet'ten farklı olarak ekstraselüler kalsiyum seviyelerinden bağımsız olarak <strong>doğrudan agonist aktiviteye</strong> sahiptir.</p></div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1\">Farmakokinetik ve Birikim Riski</h4><p class=\"text-[11.5px] text-rose-800 leading-relaxed\">Diyaliz seansları sonunda IV olarak uygulanır. Karaciğerde metabolize olmaz ve CYP enzimleri ile etkileşmez. Ancak <strong>serum albüminine geri dönüşümlü olarak bağlandığı için</strong> diyaliz hastalarında dolaşımda kalarak birikir (kararlı duruma yaklaşık 46 günde ulaşır).</p></div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-1\">Klinik Profil ve QT Uzaması</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Cinacalcet'e göre daha fazla PTH supresyonu sağlasa da <strong>şiddetli hipokalsemi ve buna bağlı QT uzaması riski çok daha yüksektir.</strong> IV uygulanmasına rağmen şaşırtıcı bir şekilde bulantı/kusma gibi GİS yan etkileri Cinacalcet ile benzer oranda görülür.</p></div></div>"
+    },
+    {
+      "heading": "2. Evocalcet (Yeni Nesil Oral Kalsimimetik)",
+      "html": "<div class=\"bg-emerald-50 border border-emerald-200 p-5 rounded-2xl shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[12px] uppercase mb-3 flex items-center gap-2\">🌟 Farmakodinamik Üstünlük</h4><p class=\"text-[11.5px] text-emerald-800 leading-relaxed mb-3\">Cinacalcet ile aynı bölgeye (Glu837) bağlanan oral bir pozitif allosterik modülatördür. <strong>Biyoyararlanımı yüksektir</strong> ve çok daha düşük dozlarda terapötik plazma konsantrasyonlarına ulaşır.</p><div class=\"bg-white p-3 rounded-xl border border-emerald-100\"><strong class=\"text-[11px] text-emerald-900 block mb-1\">Klinik Avantajları</strong><ul class=\"text-[11px] text-slate-700 space-y-2 list-disc list-inside ml-1\"><li>En büyük üstünlüğü, hedef dokulara daha düşük dozda ulaşması sayesinde mide mukozal irritasyonunun ve dolayısıyla <strong>bulantı/kusma gibi yan etkilerin belirgin şekilde az olmasıdır.</strong></li><li><strong>CYP2D6 inhibisyonu yapmadığından</strong> çoklu ilaç kullanan hastalarda ilaç etkileşimi riski çok düşüktür.</li></ul></div></div>"
+    },
+    {
+      "heading": "💡 Klinik ve YDUS Spot Bilgileri",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><div class=\"space-y-3\"><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[11.5px] text-sky-300 block mb-1\">Spot 1: Birikim Yapan Kalsimimetik</strong><p class=\"text-[11.5px] text-slate-200 leading-relaxed\">Karaciğerde metabolize olmayan, CYP etkileşimi riski taşımayan ancak albümine bağlandığı için diyaliz hastalarında birikebilen kalsimimetik: <strong>Etelcalcetide.</strong></p></div><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[11.5px] text-amber-300 block mb-1\">Spot 2: Cinacalcet İntoleransında Tercih</strong><p class=\"text-[11.5px] text-slate-200 leading-relaxed\">Şiddetli bulantı/kusma veya tehlikeli düzeyde CYP2D6 ilaç etkileşimi (örn. psikiyatrik/kardiyak ilaçlar) nedeniyle Cinacalcet'i tolere edemeyen hastada ilk tercih edilecek alternatif: <strong>Evocalcet.</strong></p></div></div></div>"
+    }
+  ]
+}

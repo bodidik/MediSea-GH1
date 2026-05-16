@@ -1,0 +1,23 @@
+{
+  "title": "Modül 6 (Genişletilmiş): Nadir Ektopik AVP Kaynakları ve ONB Patolojisi",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Onkoloji", "SIADH", "ONB", "Estezinöroblastom", "DOTANOC", "Homer-Wright"],
+    "parent": "siadh-sendromu",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "👃 Olfaktör Nöroblastoma (ONB): Sinsi Paraneoplazi",
+      "html": "<p>ONB, nazal kavitedeki olfaktör plakoddan köken alır. Vakaların %2'sinde burun tıkanıklığı/kanama olmadan <strong>döngüsel şiddetli hiponatremi</strong> tek bulgu olabilir. Açıklanamayan SIADH'da akciğer temizse SSTR2 ekspresyonu sayesinde <strong>68Ga-DOTANOC PET-CT</strong> gizli odağı saptamada hayat kurtarıcıdır.</p>"
+    },
+    {
+      "heading": "🔬 Histopatoloji ve İmmünohistokimya",
+      "html": "<p>Tipik nöroendokrin profil: <strong>CD56(+), Sinaptofizin(+), NSE(+)</strong>. Mikroskopide 'tuz-karabiber' kromatin yapısı ve karakteristik <strong>Homer Wright rozetleri</strong> (psödorozetler) tanı koydurucudur. Lenfoma (CD45) ve karsinom (Sitokeratin) belirteçleri negatiftir.</p>"
+    },
+    {
+      "heading": "🎯 Gelişmiş Tedavi: PRRT Protokolü",
+      "html": "<p>Cerrahi rezeksiyon hormon salınımını anında durdurur. Ancak nüks veya metastatik vakalarda, SSTR2 ekspresyonu hedef alınarak <strong>177Lu-DOTATATE (PRRT)</strong> radyoligand tedavisi umut verici bir hedefe yönelik stratejidir.</p>"
+    }
+  ]
+}

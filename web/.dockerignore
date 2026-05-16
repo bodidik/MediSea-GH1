@@ -1,0 +1,12 @@
+# FILE: .dockerignore
+node_modules
+.next
+dist
+coverage
+*.log
+*.local
+*.bak
+Dockerfile*
+docker-compose*.yml
+.env*
+playwright-report

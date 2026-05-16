@@ -1,0 +1,482 @@
+{
+  "id": "fc-endo-akromegali-001",
+  "accessLevel": "premium",
+  "topic": "Akromegali",
+  "description": "YDUS Endokrinoloji serisi: Akromegali tanısı, testleri, komplikasyonları ve güncel tedavi yaklaşımlarını kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Akromegalide tanıyı kesinleştirmek için kullanılan biyokimyasal eşik değer nedir?",
+      "back": "Yaşa göre normalin üst sınırının (ULN) 1.3 katından fazla olan serum IGF-I düzeyi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-2",
+      "front": "Akromegalide oral glukoz tolerans testi (OGTT) sonrası tanısal GH nadir değeri kaçtır?",
+      "back": "Glukoz yüklemesinden iki saat sonra GH konsantrasyonunun > 1 ng/mL olması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-3",
+      "front": "Akromegali hastalarında vertebral fraktür (VF) prevalansı genel popülasyona göre yaklaşık ne kadar artmıştır?",
+      "back": "3 ile 8 kat arasında.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-4",
+      "front": "Akromegalide kemik mineral dansitesi (BMD) ölçümünde DXA'nın en büyük kısıtlılığı nedir?",
+      "back": "Eşlik eden osteofitler ve faset eklem hipertrofisi nedeniyle BMD değerinin yapay olarak yüksek çıkması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-5",
+      "front": "Akromegalide kemik mikromimarisini ve kırık riskini BMD'den daha iyi öngören parametre nedir?",
+      "back": "Trabeküler Kemik Skoru (TBS).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-6",
+      "front": "Genant sınıflamasına göre 'orta derece' vertebral fraktür tanımı için yükseklik kaybı oranı ne olmalıdır?",
+      "back": "%25 ile %40 arası azalma.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-7",
+      "front": "Büyüme hormonu (GH), osteoblastogenezi hangi hücre tipine dönüşümü baskılayarak doğrudan uyarır?",
+      "back": "Adipogenez.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-8",
+      "front": "IGF-I, Wnt sinyal yolunun hangi bileşenini stabilize ederek dolaylı yoldan osteoblastogenezi destekler?",
+      "back": "Beta-katenin.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-9",
+      "front": "Akromegalide kemik rezorpsiyonunu artıran temel mekanizma nedir?",
+      "back": "IGF-1 etkisiyle RANKL sentezinin artması ve osteoprotegerin (decoy reseptör) ekspresyonunun azalması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-10",
+      "front": "Akromegalide serum 1,25-dihidroksivitamin D düzeylerinin artmasının renal mekanizması nedir?",
+      "back": "IGF-1'in 1-alfa-hidroksilaz aktivitesini ve ekspresyonunu uyarması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-11",
+      "front": "Akromegalide 'kemik döngüsü kopukluğu' (uncoupling) terimi neyi ifade eder?",
+      "back": "Kemik rezorpsiyonunun kemik formasyonuna göre aşırı artmış olmasını.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-12",
+      "front": "Akromegalide femur boynu BMD'sindeki azalma hangi klinik olay için güçlü bir öngördürücüdür?",
+      "back": "İnsidans (yeni gelişen) vertebral fraktürler.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-13",
+      "front": "Kontrollü akromegali hastalarında VF gelişimi için en önemli bağımsız risk faktörü nedir?",
+      "back": "Başlangıçta mevcut olan (prevalan) vertebral fraktürlerin varlığı.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-14",
+      "front": "Aktif akromegali hastalarında insidans kırık riskini belirleyen temel faktör nedir?",
+      "back": "Aktif hastalık süresi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-15",
+      "front": "Akromegalide tanı gecikmesinin (>10 yıl) kemik sağlığı üzerindeki temel etkisi nedir?",
+      "back": "İnsidans vertebral fraktür riski için güçlü bir belirleyici olması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-16",
+      "front": "Akromegalide kolesalsiferol (Vitamin D) takviyesinin ispatlanmış en önemli iskeletsel faydası nedir?",
+      "back": "İnsidans morfometrik vertebral fraktür riskini azaltması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-17",
+      "front": "Akromegali hastalarında somatostatin reseptör ligandları (SRL) kullanımı neden Vitamin D eksikliğine zemin hazırlar?",
+      "back": "Lipofilik maddelerin emilim bozukluğuna (malabsorbsiyon) neden olabildikleri için.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-18",
+      "front": "Pasireotid tedavisinin kemik metabolizması üzerinde Pegvisomant'a göre potansiyel üstünlüğü nedir?",
+      "back": "GH düzeylerini de düşürerek hem sistemik hem lokal IGF-1 etkilerini azaltması ve VF insidansını düşürmesi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-19",
+      "front": "Akromegalide kardiyovasküler mortalitenin en yaygın üç nedeni nedir?",
+      "back": "Aritmiler, akromegalik kardiyomiyopati ve hipertansiyon.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-20",
+      "front": "Akromegalide GH'ın hepatik glukoz metabolizması üzerindeki temel etkisi nedir?",
+      "back": "Hepatik glukoneogenezi uyarması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-21",
+      "front": "Akromegali hastalarında görülen dislipidemi paterni nasıldır?",
+      "back": "Yüksek TG, LDL ve Lp(a) ile birlikte düşük HDL düzeyleri.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-22",
+      "front": "Akromegalide GH fazlalığı LDL subfraksiyonlarını nasıl etkiler?",
+      "back": "Daha aterojenik olan küçük ve yoğun LDL partiküllerinin oranını artırır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-23",
+      "front": "Akromegalide görülen hipertansiyonun temel patofizyolojik mekanizması nedir?",
+      "back": "Ekstraselüler sıvı hacminin genişlemesi ve renal sodyum/su tutulumunun artması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-24",
+      "front": "Akromegali hastalarında vücut kompozisyonu değişikliği nasıldır?",
+      "back": "Visseral ve subkutan yağ azalırken intermüsküler yağ miktarı artar.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-25",
+      "front": "Akromegalide endotel disfonksiyonuna katkıda bulunan 'hücre yapışma molekülleri' hangileridir?",
+      "back": "ICAM-1 ve VCAM-1.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-26",
+      "front": "Akromegalik kardiyomiyopatide miyokardda görülen karakteristik yapısal değişiklikler nelerdir?",
+      "back": "Konsantrik sol ventrikül hipertrofisi, miyosit boyutunda artış ve interstisyel fibrozis.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-27",
+      "front": "Akromegalide GH'ın pıhtılaşma parametreleri üzerindeki etkisi nasıldır?",
+      "back": "Plazma fibrinojen seviyelerinde artışla karakterize hiperkoagülabl bir durum.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-28",
+      "front": "Akromegalide antitrombin III seviyeleri aktif hastalıkta nasıl değişir?",
+      "back": "Belirgin şekilde artar (trombin etkisini inhibe etmek üzere).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-29",
+      "front": "Erkek akromegali hastalarında hipogonadizm prevalansı yaklaşık ne kadardır?",
+      "back": "%30 ile %50 arasındadır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-30",
+      "front": "Akromegalide hipogonadotropik hipogonadizmin cerrahi dışı temel nedeni nedir?",
+      "back": "Adenoma bağlı stalk (sap) basısı sonucu gelişen hiperprolaktinemi veya doğrudan GH/IGF-1'in GnRH pulsativitesini bozması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-31",
+      "front": "Fulminant hipofiz apopleksisi ile sessiz (subklinik) apopleksi arasındaki temel klinik fark nedir?",
+      "back": "Fulminant tipte ani şiddetli baş ağrısı ve hızlı görme kaybı görülürken, sessiz tipte akut semptom yoktur.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-32",
+      "front": "Akromegalide Speckle Tracking Ekokardiyografi'de görülen erken diyastolik fonksiyon göstergesi nedir?",
+      "back": "Elastik Geri Tepme İşareti (Elastic Recoil Sign - ERS).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-33",
+      "front": "Akromegalide sol ventrikül hipertrofisi tanımı için CMR veya EKO'da kütle eşikleri (erkekler için) nedir?",
+      "back": "200 g'dan fazla veya > 103 g/m2.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-34",
+      "front": "Akromegalide GH fazlalığına bağlı gelişen uyku apnesinin (OSA) en sık nedeni nedir?",
+      "back": "Makroglossi ve yumuşak doku farengeal şişliği.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-35",
+      "front": "Akromegali hastalarında kolon kanseri taraması neden rutin olarak önerilir?",
+      "back": "Artmış kolonik polipozis ve malignite riski nedeniyle.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-36",
+      "front": "Akromegalide GH ve IGF-1'in kemik metabolizmasındaki doğrudan etkisi için gerekli olan endojen kontrol mekanizması nedir?",
+      "back": "Paratiroid Hormon (PTH) kontrolü.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-37",
+      "front": "Akromegalide kullanılan 'opportunistic morphometry' yaklaşımı neyi ifade eder?",
+      "back": "Başka nedenlerle çekilen göğüs radyografilerinden vertebral fraktür taraması yapılması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-38",
+      "front": "Akromegalide Vitamin D bağlayıcı protein (VDBP) seviyeleri nasıl değişir?",
+      "back": "Artar, bu da serbest vitamin D seviyelerinin azalmasına neden olur.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-39",
+      "front": "Akromegalide yüksek GH düzeylerinin kemik üzerine doğrudan 'anabolik' etkisi nedir?",
+      "back": "Osteokalsinin karboksilasyonunu ve kemik matriksinde birikimini uyarması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-40",
+      "front": "Akromegali hastalarında hangi tip kemik kaybı daha belirgindir: Kortikal mi yoksa Trabeküler mi?",
+      "back": "Trabeküler kemik (mikromimari bozulması daha şiddetlidir).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-41",
+      "front": "Akromegalide görülen osteoartropatinin karakteristik radyolojik özelliği nedir?",
+      "back": "Eklem mesafelerinde genişleme ve yumuşak doku hipertrofisi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-42",
+      "front": "Akromegalide cerrahi sonrası 'biyokimyasal remisyon' kriteri nedir?",
+      "back": "Rastgele GH veya OGTT GH nadiri < 1 ng/mL ve normal IGF-1 düzeyi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-43",
+      "front": "Akromegalide görülen ikincil diyabetin (DM) patofizyolojik ana bileşeni nedir?",
+      "back": "Periferik dokularda (kas ve yağ) insülin direncinin gelişmesi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-44",
+      "front": "Akromegalide GH fazlalığı 'lipoprotein lipaz' aktivitesini nasıl etkiler?",
+      "back": "Aktiviteyi azaltarak hipertrigliseridemiye katkıda bulunur.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-45",
+      "front": "Akromegalik hastalarda sol ventrikül hipertrofisi prevalansı yaklaşık yüzde kaçtır?",
+      "back": "%80'e kadar ulaşabilir.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-46",
+      "front": "Akromegalide 'karotis intima-media kalınlığı' (CIMT) kontrol altındaki hastalara göre aktif hastalarda nasıldır?",
+      "back": "Aktif hastalarda anlamlı derecede daha kalındır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-47",
+      "front": "Akromegali hastalarında görülen 'homosistein' seviyeleri kardiyovasküler riski nasıl etkiler?",
+      "back": "Endotel hasarı ve oksidatif stresi artırarak aterosklerozu hızlandırır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-48",
+      "front": "Akromegalide görülen valvüler kalp hastalığından en sık etkilenen kapaklar hangileridir?",
+      "back": "Mitral ve aort kapakları.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-49",
+      "front": "Akromegali tedavisinde kullanılan 'Pegvisomant'ın kemik üzerindeki potansiyel riski nedir?",
+      "back": "Dolaşımdaki GH seviyelerini artırabilmesi ve bunun kemik üzerine doğrudan zararlı etkileri olması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-50",
+      "front": "Akromegalide 'Sclerostin' düzeyleri genellikle nasıldır?",
+      "back": "Düşüktür (yüksek kemik döngüsü ile ilişkili olarak).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-51",
+      "front": "Akromegalide kemik sağlığı için önerilen takip sıklığı nedir?",
+      "back": "Başlangıçta DXA ve vertebral morfometri; sonrasında risk durumuna göre 18-24 ayda bir tekrarı.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-52",
+      "front": "Akromegalide Vitamin D direnci durumu hangi hastalıkla benzerlik gösterir?",
+      "back": "Cushing Hastalığı.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-53",
+      "front": "Akromegalide 'Bone Material Strength Index' (BMSI) ölçüm yöntemi nedir?",
+      "back": "Tibial yüzey üzerinden yapılan kemik mikroindentasyonu.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-54",
+      "front": "Akromegali hastalarında klinik kalça kırığı riski genel popülasyona göre ne kadar artmıştır?",
+      "back": "Hazard Ratio (HR) 2.52 (yaklaşık 2.5 kat).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-55",
+      "front": "Akromegalide hipopituitarizm en sık hangi tedavi yönteminden sonra görülür?",
+      "back": "Konvansiyonel radyoterapi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-56",
+      "front": "Akromegalide GH'ın beta hücreleri üzerindeki etkisi nedir?",
+      "back": "Beta hücre disfonksiyonuna ve glukoza yanıt olarak insülin salınımında azalmaya yol açabilir.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-57",
+      "front": "Akromegalik kardiyomiyopatide diyastolik disfonksiyonun erken dönemdeki CMR bulgusu nedir?",
+      "back": "Atriyal strain (gerilme) azalması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-58",
+      "front": "Akromegalide görülen 'sagittal spinal dengesizlik' (spinal sagittal imbalance) ne ile ilişkilidir?",
+      "back": "Vertebral fraktürlerin varlığı ve yaşam kalitesindeki düşüşle.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-59",
+      "front": "Akromegalide GH fazlalığı 'VDBP' üretimini hangi organ üzerinden artırır?",
+      "back": "Karaciğer.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-60",
+      "front": "Akromegalide postmenopozal kadınlarda kemik koruyucu tedavi olarak ne düşünülmelidir?",
+      "back": "Östrojen replasman tedavisi (IGF-1 düşürücü etkisi nedeniyle).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-61",
+      "front": "Akromegalide kemik döngüsü belirteçlerinden hangisi rezorpsiyonu gösterir?",
+      "back": "Beta-crosslaps (CTX).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-62",
+      "front": "Akromegalide 'Trabeküler Bone Score' (TBS) değeri ile VF varlığı arasındaki ilişki nasıldır?",
+      "back": "VF olan hastalarda TBS değerleri anlamlı derecede daha düşüktür.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-63",
+      "front": "Akromegalide GH'ın adipositler üzerindeki metabolik etkisi nedir?",
+      "back": "Lipolizi uyararak serbest yağ asidi düzeylerini artırması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-64",
+      "front": "Akromegalide görülen 'interselüler adhezyon molekülü-1' (ICAM-1) artışının klinik sonucu nedir?",
+      "back": "Ateroskleroz riskinde artış.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-65",
+      "front": "Akromegalide 'concentric remodeling' CMR çalışmalarında nasıl karakterize edilir?",
+      "back": "Hem hücre içi (intraselüler) hem hücre dışı (ekstraselüler) kütle artışı.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-66",
+      "front": "Akromegalide tanı anında 'makroadenom' görülme oranı yaklaşık kaçtır?",
+      "back": "%77 ile %90 arasındadır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-67",
+      "front": "Akromegalide cerrahi sonrası GH düzeylerinin hızla düşmesiyle azalan yeni biyokimyasal belirteç nedir?",
+      "back": "Çözünür alfa-Klotho.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-68",
+      "front": "Akromegalide 'vokal değişiklikler' tedaviden sonra tamamen düzelir mi?",
+      "back": "Ödem azalsa da bir grup hastada kalıcı vokal değişiklikler devam edebilir.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-69",
+      "front": "Akromegalide 'ekstrahepatik akromegali' hipotezi neyi savunur?",
+      "back": "Hastalık yükünün sadece karaciğer kaynaklı IGF-1 ile değil, GH'ın diğer dokulardaki doğrudan etkileriyle de belirlendiğini.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-70",
+      "front": "Akromegalide prostat kanseri riski yönetimi için ne önerilir?",
+      "back": "Uzun dönem yönetimde PSA takibi ve prostat muayenesi.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-71",
+      "front": "Akromegalide apopleksi sonrası IGF-I düzeyleri ile PT (Protrombin Zamanı) arasında nasıl bir ilişki saptanmıştır?",
+      "back": "Pozitif korelasyon (IGF-1 arttıkça PT uzama eğilimindedir).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-72",
+      "front": "Akromegalide GH/IGF-1 fazlalığının kıkırdak üzerindeki etkisi nedir?",
+      "back": "Kıkırdak hipertrofisi ve dejeneratif eklem hastalığı başlangıcı.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-73",
+      "front": "Akromegalide 'kemik kalitesi' değerlendirmesinde kullanılan yüksek çözünürlüklü görüntüleme yöntemi nedir?",
+      "back": "HR-pQCT (Yüksek çözünürlüklü periferik kantitatif bilgisayarlı tomografi).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-74",
+      "front": "Akromegali hastalarında cerrahi sonrası 'remisyon' tanımında GH nadiri için en güncel cut-off değer (hassas assayler ile) kaçtır?",
+      "back": "< 0.4 µg/L.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-75",
+      "front": "Akromegalide görülen 'osteopeni' tablosu vertebral fraktürler için bir risk faktörü müdür?",
+      "back": "Evet, radyolojik olarak osteopeni/osteoporoz varlığı VF riskini artırır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-76",
+      "front": "Akromegalide tanı gecikmesinin kadın ve erkeklerdeki farkı nedir?",
+      "back": "Kadınlarda tanı gecikmesi erkeklere göre ortalama 3.1 yıl daha fazladır.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-77",
+      "front": "Akromegalide 'Mycapssa' (oral oktreotid) tedavisinin temel avantajı nedir?",
+      "back": "Enjeksiyon yeri ağrısı ve komplikasyonlarını ortadan kaldırması.",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-78",
+      "front": "Akromegalide 'SAGIT' enstrümanı ne amaçla kullanılır?",
+      "back": "Hastalık şiddetini ve klinik durumun çok boyutlu değerlendirilmesi (S: Symptoms, A: Associated comorbidities, G: GH levels, I: IGF-1, T: Tumor profile).",
+      "tag": "Endokrinoloji / Akromegali"
+    },
+    {
+      "id": "card-79",
+      "front": "Akromegali hastalarında 'karpal tünel sendromu' gelişim mekanizması nedir?",
+      "back": "Ligamentöz ve yumuşak doku hipertrofisi sonucu median sinir basısı.",
+      "tag": "Endokrinoloji / Akromegali"
+    }
+  ]
+}

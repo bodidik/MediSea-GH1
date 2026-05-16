@@ -1,0 +1,1 @@
+import {Router} from 'express';import Content from '../models/Content.js';const r=Router();r.get('/content/pending',async(_req,res)=>res.json(await Content.find({status:'pending'}).limit(50).lean()));export default r;

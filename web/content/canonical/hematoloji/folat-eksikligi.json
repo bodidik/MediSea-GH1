@@ -1,0 +1,35 @@
+{
+  "title": "Folat (B9 Vitamini) Eksikliği",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Makrositer", "Megaloblastik", "Folat", "Homosistein"],
+    "parent": "makrositer-anemiler",
+    "order": 32
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Folat (B9 Vitamini) Eksikliği</strong>, DNA sentezinin bozulması sonucu hücre çekirdeğinin olgunlaşamaması, ancak sitoplazmanın (RNA ve protein sentezinin devam etmesiyle) büyümeye devam etmesi tablosu olan <strong>Megaloblastik Anemilerin</strong> en sık görülen iki nedeninden biridir (diğeri B12 eksikliğidir).</p><p>Folat, vücutta pürin ve pirimidin (timidilat) sentezi için elzem olan tek karbon (metil) vericisidir. Eksikliğinde eritrosit öncüllerinde hücre bölünmesi yavaşlar, bu da periferik kana dev (makrositik, MCV > 100 fL) ve dayanıksız (kısa ömürlü) eritrositlerin çıkmasına yol açar.</p>"
+    },
+    {
+      "heading": "Etiyoloji (Nedenler)",
+      "html": "<p>Vücudun folat depoları oldukça sınırlıdır (sadece 3-4 ay kadar yeter). Bu nedenle eksiklik çok hızlı gelişir:</p><ul class=\"mb-4\"><li><strong>Yetersiz Alım (En Sık):</strong> Folat yeşil yapraklı sebzeler, narenciye ve karaciğerde bulunur. Aşırı kaynatma folatı yok eder. <strong>Kronik alkolizm</strong> (hem diyeti bozuktur hem de alkol folat metabolizmasını inhibe eder) ve ileri yaş/düşkün hastalarda çok sıktır.</li><li><strong>Artmış İhtiyaç:</strong> <strong>Gebelik (nöral tüp defektini önlemek için profilaksi şarttır)</strong>, laktasyon, prematüre bebekler ve kronik hemolitik anemiler (örn: Orak Hücreli Anemi, kronik hücre yıkımı/yapımı döngüsünde folatı tüketir).</li><li><strong>Malabsorbsiyon:</strong> Çölyak hastalığı (folat en çok proksimal ince bağırsak/jejunumdan emilir), tropikal sprue.</li><li><strong>İlaçlar:</strong> <em>Metotreksat, Trimetoprim</em> (dihidrofolat redüktaz enzimini bloke ederler) ve <em>Fenitoin</em> (barsaktan emilimi bozar).</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon (B12'den Farkı)",
+      "html": "<p>Aneminin klasik bulguları (yorgunluk, efor dispnesi, solukluk) ve hafif sarılık (inefektif eritropoez/hücre yıkımına bağlı) görülür. Gastrointestinal hücre döngüsü de etkilendiği için <strong>ağrılı, kırmızı ve düzleşmiş dil (Hunter glositi)</strong> ve ishal tipiktir.</p><p>⚠️ <strong>Altın Kural:</strong> B12 vitamini eksikliğinden klinik olarak tek ve en büyük farkı, folat eksikliğinde <strong>Nörolojik Bulguların (periferik nöropati, ataksi, kognitif bozukluk) OLMAMASIDIR.</strong></p>"
+    },
+    {
+      "heading": "Laboratuvar ve Ayırıcı Tanı",
+      "html": "<p>Periferik yaymada <strong>makroovalositler (MCV > 100-115 fL)</strong> ve megaloblastik aneminin patognomonik bulgusu olan <strong>Hipersegmente Nötrofiller</strong> (5 lobdan fazla çekirdeğe sahip nötrofiller) görülür.</p><ul class=\"mb-4\"><li><strong>Serum Folat Düzeyi:</strong> < 4 ng/mL olması eksikliği gösterir. Ancak yakın zamandaki beslenmeden etkilenebilir.</li><li><strong>Eritrosit İçi Folat:</strong> Doku (gerçek) folat deposunu yansıtan daha güvenilir bir testtir.</li><li><strong>Metabolitler (B12 ile Ayrım):</strong> Folat eksikliğinde pürin döngüsü bozulduğu için <strong>Homosistein düzeyi YÜKSEK</strong>, ancak B12'den farklı olarak <strong>Metilmalonik Asit (MMA) düzeyi NORMALDİR.</strong> (B12 eksikliğinde her ikisi de yüksektir).</li></ul>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve Ölümcül Hata",
+      "html": "<p>Tedavi, oral folik asit (genellikle günde 1-5 mg) replasmanıdır. Yanıt çok hızlıdır (ilk haftada retikülosit krizi görülür). Gebelerde nöral tüp defektini (Spina Bifida) önlemek için gebelik öncesi ve erken dönemde 400 mcg/gün profilaktik olarak başlanmalıdır.</p><p>⚠️ <strong>En Büyük Klinik Hata:</strong> Megaloblastik bir anemisi olan hastaya B12 vitamini düzeyi kontrol edilmeden sadece folik asit başlanması <strong>kesinlikle kontrendikedir.</strong> Folik asit verilmesi anemi tablosunu ve kan sayımını düzeltir (maskeler), ancak altta yatan gizli bir B12 eksikliği varsa <strong>nörolojik hasar (subakut kombine dejenerasyon) ilerlemeye devam eder</strong> ve kalıcı felce yol açabilir!</p>"
+    }
+  ]
+}

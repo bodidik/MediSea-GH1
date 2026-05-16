@@ -1,0 +1,35 @@
+{
+  "title": "İnsülin Tedavisi ve Modern Diyabet Teknolojileri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "İnsülin", "CGM", "İnsülin Pompası", "Yapay Pankreas", "Time in Range"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Teknoloji Modülü:</strong> ADA 2026 'Diabetes Technology' ve Harrison 21st Ed baz alınmıştır.</em></p>"
+    },
+    {
+      "heading": "1. İnsülin Farmakolojisi: Hız ve Süre",
+      "html": "<p>Modern insülinler, fizyolojik insülin salınımını taklit etmek için modifiye edilmiş analoglardır:</p><ul class=\"mb-4\"><li><strong>Ultra Hızlı Etkili (Aspart, Lispro, Glulisine):</strong> Yemekten hemen önce (veya sonra) uygulanır. 15 dk içinde başlar, 1-2 saatte pik yapar.</li><li><strong>Uzun Etkili / Bazal (Glarjin U100/U300, Detemir, Degludec):</strong> Pik yapmazlar, 24-42 saat arası stabil salınım sağlarlar. Açlık şekerini regüle ederler.</li><li><strong>İnhale İnsülin (Afrezza):</strong> Hızlı etkilidir, sadece yemek öncesi için uygundur. KOAH/Astım hastalarında kontrendikedir.</li></ul>"
+    },
+    {
+      "heading": "2. Tedavi Rejimleri: Bazal-Bolus Stratejisi",
+      "html": "<p>Yoğun insülin tedavisi altın standarttır. Günde bir kez bazal insülin ve her ana yemek öncesi hızlı etkili bolus insülin uygulanır. Toplam dozun %50'si bazal, %50'si bolus olarak paylaştırılır.</p>"
+    },
+    {
+      "heading": "3. Sürekli Glukoz Monitörizasyonu (CGM)",
+      "html": "<p>HbA1c artık tek kriter değil. CGM teknolojisi ile <strong>'Time in Range' (TIR - Hedef Aralıkta Süre)</strong> kavramı ön plana çıkmıştır.</p><ul class=\"mb-4\"><li><strong>Hedef:</strong> Şekerin günün en az %70'inde 70-180 mg/dL arasında kalmasıdır.</li><li><strong>Trend Okları:</strong> Şekerin sadece o anki değerini değil, ne yöne ve ne hızla gittiğini göstererek hipoglisemiyi önceden haber verir.</li></ul>"
+    },
+    {
+      "heading": "4. Akıllı Pompa Sistemleri ve Yapay Pankreas",
+      "html": "<p>Modern pompalar (AID - Automated Insulin Delivery), CGM ile haberleşerek insülin dozunu otomatik ayarlar:</p><ul class=\"mb-4\"><li><strong>Düşük Şekerde Duraklatma:</strong> Şeker düşmeye başladığında pompayı durdurarak ağır hipoglisemiyi engeller.</li><li><strong>Hibrit Kapalı Devre (Hybrid Closed-Loop):</strong> Bazal insülini sensör verisine göre sürekli günceller. Kullanıcı sadece yemeklerde karbonhidrat miktarını girer.</li></ul>"
+    },
+    {
+      "heading": "5. İnsülin Tedavisinin Komplikasyonları",
+      "html": "<ul class=\"mb-4\"><li><strong>Hipoglisemi:</strong> En ciddi engel. Şeker < 70 mg/dL 'seviye 1', < 54 mg/dL 'seviye 2' (ciddi) kabul edilir.</li><li><strong>Lipohipertrofi:</strong> Aynı bölgeye sürekli enjeksiyon yapılması sonucu yağ dokusu kalınlaşması. Emilimi bozar ve şeker dalgalanmalarına yol açar.</li></ul>"
+    }
+  ]
+}

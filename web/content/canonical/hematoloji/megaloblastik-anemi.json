@@ -1,0 +1,19 @@
+{
+  "title": "Megaloblastik Anemiler (Genel)",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Anemi", "Makrositer", "DNA Sentezi"],
+    "parent": "olgunlasma-bozukluklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Patofizyoloji",
+      "text": "<p>DNA sentezindeki bozukluk sonucu hücre çekirdeğinin olgunlaşamaması (nükleer-sitoplazmik uyumsuzluk) ile karakterizedir. Kemik iliğinde dev öncü hücreler (Megaloblastlar) ve periferik yaymada <strong>Hipersegmente Nötrofiller</strong> görülür.</p>"
+    },
+    {
+      "heading": "Etiyoloji",
+      "text": "<p>En sık neden B12 vitamini (Kobalamin) veya Folat eksikliğidir. Aşağıdaki başlıklardan spesifik hastalıkları inceleyebilirsiniz.</p>"
+    }
+  ]
+}

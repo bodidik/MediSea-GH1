@@ -1,0 +1,35 @@
+{
+  "title": "Erkek Hipogonadizmi: Tanı ve Tedavi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipogonadizm", "Testosteron", "Klinefelter", "LOH"],
+    "parent": "reproduktif-endokrinoloji-ana",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 Endocrine Society Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Sınıflandırma",
+      "html": "<p>Hipogonadizm, testiste yetersiz testosteron üretimi ve/veya defektif sperm üretimidir.</p><ul class=\"mb-4\"><li><strong>Primer (Hipergonadotropik):</strong> Testis hasarı vardır. LH/FSH yüksek, Testosteron düşüktür. (Örn: Klinefelter, Kabakulak orşiti).</li><li><strong>Sekonder (Hipogonadotropik):</strong> Hipofiz/Hipotalamus hasarı vardır. LH/FSH düşük veya normal, Testosteron düşüktür. (Örn: Kallmann, Prolaktinoma).</li></ul>"
+    },
+    {
+      "heading": "Tanı: Sabahın Gücü",
+      "html": "<p>Testosteron düzeyleri diürnal ritim gösterir (sabah en yüksek). Tanı için:</p><ul class=\"mb-4\"><li>En az iki kez, sabah (08:00 - 10:00 arası) bakılan <strong>Total Testosteron</strong> düşüklüğü (< 300 ng/dL) şarttır.</li><li><strong>Serbest Testosteron:</strong> Obezite veya yaşlılık gibi SHBG'yi etkileyen durumlarda daha güvenilirdir.</li></ul>"
+    },
+    {
+      "heading": "Klinefelter Sendromu (47, XXY)",
+      "html": "<p>En sık görülen primer hipogonadizm nedenidir.</p><ul class=\"mb-4\"><li><strong>Klinik:</strong> Uzun boy, jinekomasti, küçük ve sert testisler, infertilite (azospermi).</li><li><strong>Laboratuvar:</strong> Aşırı yüksek FSH/LH (feedback kaybı) ve düşük testosteron.</li></ul>"
+    },
+    {
+      "heading": "Geç Başlangıçlı Hipogonadizm (LOH)",
+      "html": "<p>'Erkek menopozu' olarak da bilinir. Yaşla birlikte testosteronun kademeli düşüşüdür. Tedavi kararı sadece rakama değil, belirgin semptomların (libido kaybı, erektil disfonksiyon, uyku hali) varlığına göre verilir.</p>"
+    },
+    {
+      "heading": "Testosteron Replasman Tedavisi (TRT)",
+      "html": "<p>Replasman öncesi ve sırasında güvenlik takibi esastır:</p><ul class=\"mb-4\"><li><strong>Kontrendikasyonlar:</strong> Meme kanseri, aktif Prostat Kanseri, Hematokrit > %54, tedavi edilmemiş ağır uyku apnesi.</li><li><strong>Takip:</strong> PSA ve Hematokrit düzeyleri düzenli izlenmelidir (TRT eritrositozu tetikleyebilir).</li></ul>"
+    }
+  ]
+}

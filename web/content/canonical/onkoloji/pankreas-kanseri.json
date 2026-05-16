@@ -1,0 +1,19 @@
+{
+  "title": "Ch 88: Pankreas Kanseri",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Pankreas", "CA 19-9", "Sarılık"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 8
+  },
+  "sections": [
+    {
+      "heading": "Klinik ve Tanı",
+      "text": "<p>Sinsi ilerler. Ağrısız sarılık (Pankreas başı tümörü) veya sırta vuran kuşak tarzı ağrı ile gelir. Tümör belirteci <strong>CA 19-9</strong>'dur.</p>"
+    },
+    {
+      "heading": "Whipple ve Kemoterapi",
+      "text": "<div class='bg-gray-50 p-4 rounded border-l-4 border-gray-500'><h5 class='font-bold text-gray-900'>Tedavi Stratejisi</h5><p class='text-sm mt-2 text-gray-700'>Sadece %15-20 hasta tanı anında ameliyat edilebilir (Whipple prosedürü). Çoğu hasta metastatik veya lokal ileridir. Agresif kemoterapi (FOLFIRINOX veya Gemcitabine+Nab-Paclitaxel) verilir. BRCA mutasyonu varsa PARP inhibitörleri etkilidir.</p></div>"
+    }
+  ]
+}

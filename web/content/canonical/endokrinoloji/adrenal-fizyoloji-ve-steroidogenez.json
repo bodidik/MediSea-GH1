@@ -1,0 +1,27 @@
+{
+  "title": "Adrenal Fizyoloji ve Steroidogenez",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Adrenal", "Steroidogenez", "Kortizol", "Aldosteron", "GFR"],
+    "parent": "adrenal-bez-hastaliklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 Adrenal Fizyoloji güncellemeleri referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Adrenal Korteks Katmanları: GFR Mnemonisi",
+      "html": "<p>Adrenal korteks dıştan içe üç tabakadan oluşur ve her tabaka spesifik enzimler nedeniyle farklı hormonlar üretir:</p><ul class=\"mb-4\"><li><strong>Zona Glomerulosa (G):</strong> En dış katman. <strong>Aldosteron</strong> (Mineralokortikoid) sentezler. Angiotensin II ve potasyum ile regüle edilir.</li><li><strong>Zona Fasciculata (F):</strong> Orta ve en geniş katman. <strong>Kortizol</strong> (Glukokortikoid) sentezler. ACTH kontrolündedir.</li><li><strong>Zona Reticularis (R):</strong> En iç katman. <strong>DHEA ve Androstenedion</strong> (Androjenler) sentezler. ACTH kontrolündedir.</li><li><strong>Adrenal Medulla:</strong> En merkezdeki kısım. Epinefrin ve Norepinefrin (Katekolaminler) sentezler.</li></ul>"
+    },
+    {
+      "heading": "Steroidogenez Yolağı ve Kritik Enzimler",
+      "html": "<p>Tüm steroidler kolesterolden sentezlenir. Kolesterolün mitokondriye girişi (StAR proteini) hız kısıtlayıcı adımdır.</p><ul class=\"mb-4\"><li><strong>21-Hidroksilaz:</strong> Hem aldosteron hem kortizol yolu için ortaktır. Eksikliğinde CAH tablosu gelişir.</li><li><strong>11-beta Hidroksilaz:</strong> Kortizol sentezinin son basamağıdır.</li><li><strong>Aldosteron Sentaz:</strong> Sadece Zona Glomerulosa'da bulunur; bu yüzden aldosteron sadece orada üretilebilir.</li></ul>"
+    },
+    {
+      "heading": "Kortizol ve Aldosteronun Temel Etkileri",
+      "html": "<ul class=\"mb-4\"><li><strong>Kortizol:</strong> Glukoneogenezi artırır, protein yıkımını tetikler, inflamasyonu baskılar ve vasküler tonusu (tansiyonu) korur.</li><li><strong>Aldosteron:</strong> Böbrek distal tübülünde <strong>Sodyum geri emilimini</strong>, <strong>Potasyum ve Hidrojen atılımını</strong> sağlar.</li></ul>"
+    }
+  ]
+}

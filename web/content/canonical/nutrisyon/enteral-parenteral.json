@@ -1,0 +1,19 @@
+{
+  "title": "Ch 328: Nütrisyonel Destek Tedavisi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nütrisyon", "PEG", "TPN", "Refeeding"],
+    "parent": "nutrisyon-hastaliklari",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Karar Algoritması",
+      "text": "<p>Altın kural: <strong>'Bağırsak çalışıyorsa, onu kullan'</strong> (Enteral > Parenteral). Enteral beslenme mukozal bariyeri korur ve immüniteyi destekler.</p><ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Enteral (EN):</strong> Kısa süreli ise Nazogastrik (NG), >4 hafta ise PEG/PEJ tercih edilir.</li><li><strong>Parenteral (PN):</strong> GİS yetmezliği (kısa bağırsak, ileus, fistül) varsa santral damar yolundan (TPN) verilir.</li></ul>"
+    },
+    {
+      "heading": "Refeeding Sendromu",
+      "text": "<div class='bg-red-50 p-4 rounded border-l-4 border-red-500'><h5 class='font-bold text-red-900'>⚠️ Kritik Uyarı</h5><p class='text-sm mt-1 text-gray-700'>Uzun süre aç kalmış hastada hızlı beslenme başlanması sonucu İnsülin artışı ile <strong>Hipofosfatemi</strong>, Hipokalemi ve Hipomagnezemi gelişmesidir. Kalp yetmezliği ve ölüme yol açar. Beslenme yavaş artırılmalı ve tiamin desteği verilmelidir.</p></div>"
+    }
+  ]
+}

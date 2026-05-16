@@ -1,0 +1,71 @@
+{
+  "title": "Polikistik Böbrek hastalığı (ADPKD)",
+  "meta": {
+    "updatedAt": "26 Mart 2026",
+    "tags": ["Nefroloji", "ADPKD", "Tolvaptan", "Mayo 1C-1E", "htTKV", "PROPKD", "Polisistin"],
+    "parent": null,
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "👨‍⚕️ Uzmanlık Notu",
+      "html": "<p><em>Bu ünite; <strong>en güncel kaynaklarla</strong>, <strong>KDIGO 2024</strong> ve <strong>ERA-EDTA</strong> hazırlanmış klinik anlatımdır.</em></p>"
+    },
+    {
+      "heading": "I. Tanım ve Epidemiyolojik Progresyon",
+      "html": "<p>Otozomal Dominant Polikistik Böbrek Hastalığı (ADPKD), böbreklerde sıvı dolu multipl kistlerin progresif büyümesiyle karakterize, dünyanın en yaygın monogenik böbrek hastalığıdır. 1:400 - 1:1000 sıklıkta görülür. Vakaların %50'si 60 yaşına kadar son dönem böbrek yetmezliğine (SDBY) ilerler.</p>"
+    },
+    {
+      "heading": "II. Genetik Mimari ve NGS Verileri",
+      "html": "<div class=\"space-y-4\"><p>Hastalık yüksek genetik heterojenite gösterir:</p><ul class=\"list-disc pl-5 space-y-2\"><li><strong>PKD1 (%78-85):</strong> 16p13.3 kromozomunda. <em>Polisistin-1 (PC1)</em> kusuru. En ağır fenotiptir; SDBY yaşı ortalama 54-58.</li><li><strong>PKD2 (%10-15):</strong> 4q21 kromozomunda. <em>Polisistin-2 (PC2)</em> kalsiyum kanalı kusuru. SDBY yaşı ortalama 70'lerdir.</li><li><strong>Atipik Genler (NGS ile saptanan):</strong> <em>GANAB</em>, <em>DNAJB11</em>, <em>ALG5/8/9</em> ve <em>IFT140</em> mutasyonları tanımlanmıştır. Özellikle <em>DNAJB11</em>, kistik böbrek ile birlikte belirgin karaciğer kist yükü (PLD) yapabilir.</li><li><strong>Çift Vuruş (Two-Hit) Hipotezi:</strong> Kist oluşumu için germline mutasyonun üzerine, tübüler hücrede normal alelde de somatik bir mutasyon/kayıp (ikinci vuruş) gerçekleşmesi şarttır.</li></ul></div>"
+    },
+    {
+      "heading": "III. Moleküler Patofizyoloji: cAMP ve Sıvı Sekresyonu",
+      "html": "<div class=\"p-4 bg-slate-50 border-l-4 border-amber-500 rounded-r-xl font-medium text-sm\"><p>PC1/PC2 kompleksinin fonksiyon kaybı, hücre içi <strong>Kalsiyum (Ca2+)</strong> seviyelerini düşürür. Bu düşüş iki kritik yolu tetikler:</p><ol class=\"list-decimal pl-5 mt-2 space-y-2\"><li><strong>Adenilat Siklaz Aktivasyonu:</strong> Hücre içi <strong>cAMP</strong> dramatik artar. cAMP, Protein Kinaz A (PKA) üzerinden <strong>B-Raf/MEK/ERK</strong> yolağını aktive ederek kontrolsüz hücre proliferasyonuna yol açar.</li><li><strong>Sıvı Sekresyonu:</strong> cAMP, apikal membrandaki <strong>CFTR (Klor kanalı)</strong> aktivitesini uyarır; kist lümenine aktif klor ve su sekresyonu başlar.</li></ol></div>"
+    },
+    {
+      "heading": "IV. Renal Komplikasyonlar ve Klinik Yönetim",
+      "html": "<div class=\"space-y-4\"><p><strong>1. Hipertansiyon (HT):</strong> En erken bulgudur. Kist basısıyla oluşan intrarenal iskemi sonucu lokal <strong>RAAS aktivasyonu</strong> ile gelişir. TKV (Toplam Böbrek Hacmi) ile doğrudan ilişkilidir.</p><p><strong>2. İdrar Konsantrasyon Defekti:</strong> Medüller gradientin bozulması sonucu erken dönemde noktüri ve poliüri izlenir.</p><p><strong>3. Kist Enfeksiyonları:</strong> Genellikle Gram-negatif (E. coli) kaynaklıdır. Tedavide kist duvarını aşabilen lipid çözünürlüğü yüksek <strong>Florokinolonlar</strong> (Siprofloksasin) veya <strong>TMP-SMX</strong> seçilmelidir.</p><p><strong>4. Nefrolitiyazis:</strong> %20 sıklıktadır; ürik asit ve kalsiyum oksalat taşları en sıktır.</p></div>"
+    },
+    {
+      "heading": "V. Ekstrarenal Sistemik Manifestasyonlar",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><h4 class=\"font-black text-amber-700 text-xs uppercase mb-2\">Gastrointestinal & Karaciğer</h4><ul class=\"text-xs space-y-1 font-bold\"><li>• <strong>PLD:</strong> En yaygın bulgu (>%80). Kadınlarda östrojen etkisiyle daha masiftir.</li><li>• <strong>Kolon Divertikülleri:</strong> Divertükülozis riski genel popülasyona göre anlamlı derecede yüksektir.</li></ul></div><div><h4 class=\"font-black text-rose-700 text-xs uppercase mb-2\">Kardiyovasküler & Nörolojik</h4><ul class=\"text-xs space-y-1 font-bold\"><li>• <strong>İntrakraniyal Anevrizma (İKA):</strong> %10 prevalans. Aile öyküsü varsa <strong>MRA</strong> ile tarama zorunludur.</li><li>• <strong>Kalp Kapakları:</strong> MVP (%25) ve aort anevrizma riski.</li></ul></div></div>"
+    },
+    {
+      "heading": "VI. Görüntüleme Temelli Tanı Kriterleri",
+      "html": "<div class=\"space-y-4\"><p>Pozitif aile öyküsü olanlarda <strong>Unified (Pei-Ravine) USG Kriterleri</strong> uygulanır:</p><ul class=\"list-disc pl-5\"><li><strong>15-39 Yaş:</strong> Toplam ≥3 kist (tek veya çift taraflı).</li><li><strong>40-59 Yaş:</strong> Her böbrekte ≥2 kist (Toplam ≥4).</li><li><strong>≥60 Yaş:</strong> Her böbrekte ≥4 kist (Toplam ≥8).</li></ul><p><em>Erken teşhis ve donör adaylarında MRG, USG'den üstündür; 10 kist varlığı tanı koydururken <5 kist tanıyı dışlar.</em></p></div>"
+    },
+    {
+      "heading": "VII. Mayo Klinik Görüntüleme Sınıflaması (MIC)",
+      "html": "<div class=\"p-5 bg-amber-50 border border-amber-200 rounded-2xl\"><h4 class=\"font-black text-amber-800 text-sm mb-3 uppercase tracking-widest\">Hızlı Progresyonun Belirlenmesi: htTKV</h4><p class=\"text-xs leading-relaxed mb-4\">Boy uzunluğuna göre düzeltilmiş <strong>Toplam Böbrek Hacmi (htTKV)</strong>, GFR kaybını öngören en güçlü biyobelirteçtir:</p><ul class=\"grid grid-cols-1 gap-2 text-[10px] font-bold\"><li class=\"p-2 bg-white rounded border\">Sınıf 1A - 1B: Yavaş ilerleyen grup (Düşük Risk)</li><li class=\"p-2 bg-emerald-100 text-emerald-800 border-emerald-200 border rounded\">Sınıf 1C: %2.6 - 3.9 büyüme/yıl (HIZLI İLERLEYİCİ)</li><li class=\"p-2 bg-orange-100 text-orange-800 border-orange-200 border rounded\">Sınıf 1D: %3.9 - 5.0 büyüme/yıl (ÇOK HIZLI İLERLEYİCİ)</li><li class=\"p-2 bg-rose-100 text-rose-800 border-rose-200 border rounded\">Sınıf 1E: > %5.0 büyüme/yıl (EKSTREM RİSK)</li></ul><p class=\"mt-4 text-[10px] italic text-amber-900\">* Tolvaptan tedavisi 1C, 1D ve 1E hastaları için önceliklidir.</p></div>"
+    },
+    {
+      "heading": "VIII. PROPKD Skoru: Genetik-Klinik Entegrasyon",
+      "html": "<div class=\"space-y-4\"><p>Genetik mutasyon tipi ve erken klinik olayları harmanlayan risk modelidir:</p><ul class=\"list-none space-y-2 text-xs font-bold\"><li>✅ <strong>Erkek Cinsiyet:</strong> +1 Puan</li><li>✅ <strong>< 35 Yaş Hipertansiyon:</strong> +2 Puan</li><li>✅ <strong>< 35 Yaş Ürolojik Olay (Kist Kanaması vb.):</strong> +2 Puan</li><li>🧬 <strong>PKD1 Truncating Mutasyon:</strong> +4 Puan</li></ul><p class=\"font-black text-rose-700 italic\">Skor > 6 ise 'Hızlı İlerleyici' (Rapid Progressor) kabul edilir.</p></div>"
+    },
+    {
+      "heading": "IX. Progresyon Belirteçleri: Kopeptin",
+      "html": "<p class=\"text-sm leading-relaxed font-medium\">Vazopressin prekürsörü olan <strong>Serum Kopeptin</strong> yüksekliği, böbrek hacmindeki hızlı artış ve eGFR düşüşü ile en güçlü korelasyon gösteren biyokimyasal parametredir.</p>"
+    },
+    {
+      "heading": "X. Yönetim ve Tedavi Stratejileri",
+      "html": "<p>ADPKD tedavisi; genel konservatif önlemler ve 'Hızlı İlerleyici' (Rapid Progressor) hastalara yönelik spesifik farmakolojik tedavi olarak ikiye ayrılır.</p>"
+    },
+    {
+      "heading": "XI. Konservatif Tedavi ve Agresif Hedefler",
+      "html": "<div class=\"space-y-4\"><p><strong>1. Kan Basıncı Kontrolü (HALT-PKD Standartları):</strong></p><ul class=\"list-disc pl-5\"><li><strong>< 50 Yaş ve Korunmuş GFR (>60):</strong> Hedef kan basıncı <strong>< 110/75 mmHg</strong> olmalıdır. Bu agresif hedef, böbrek hacmindeki (TKV) yıllık artış hızını anlamlı ölçüde yavaşlatır.</li><li><strong>> 50 Yaş veya GFR 30-60:</strong> Hedef standart < 130/80 mmHg'dir.</li><li><strong>İlaç Seçimi:</strong> RAAS blokajı (ACE inhibitörü veya ARB) birinci basamaktır.</li></ul><p><strong>2. Yaşam Tarzı ve Diyet:</strong></p><ul class=\"list-disc pl-5\"><li><strong>Sıvı Tüketimi:</strong> eGFR izin verdiği ölçüde günlük >3 Litre su tüketimi önerilir. Amaç, endojen vazopressini (AVP) ozmotik olarak baskılamaktır.</li><li><strong>Sodyum Kısıtlaması:</strong> Günlük < 2 gram (tuz < 5g). Yüksek sodyum, AVP salınımını ve kist büyümesini tetikler.</li><li><strong>Protein Alımı:</strong> Standart renal diyet (0.8 g/kg/gün) önerilir; aşırı protein yükünden kaçınılmalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "XII. Hastalık Modifiye Edici Tedavi: Tolvaptan",
+      "html": "<div class=\"p-5 bg-indigo-50 border border-indigo-200 rounded-2xl\"><h4 class=\"font-black text-indigo-800 text-sm mb-3 uppercase tracking-widest\">V2 Reseptör Antagonist Protokolü</h4><p class=\"text-sm leading-relaxed mb-4\">Tolvaptan, kist epitelindeki V2 reseptörlerini bloke ederek hücre içi cAMP'yi düşürür ve kist gelişimini yavaşlatır.</p><ul class=\"space-y-3\"><li>✅ <strong>Endikasyon:</strong> Mayo Sınıf 1C, 1D, 1E olan veya yıllık eGFR kaybı ≥ 3 mL/dk olan 'Hızlı İlerleyiciler'.</li><li>✅ <strong>GFR Eşiği:</strong> Genellikle eGFR ≥ 25 mL/dk/1.73m² olan hastalarda başlanması önerilir (REPRISE Çalışması).</li><li>⚠️ <strong>Önemli Yan Etki (Aquaresis):</strong> Poliüri, noktüri ve susuzluk hissi. Hastalar bu dehidratasyon riski konusunda eğitilmelidir.</li><li>🚨 <strong>Hepatotoksisite Takibi:</strong> İdiyosenkratik KCFT yüksekliği riski nedeniyle <strong>ilk 18 ay boyunca her ay</strong>, sonrasında 3 ayda bir ALT/AST takibi zorunludur.</li></ul></div>"
+    },
+    {
+      "heading": "XIII. Diğer Tedaviler ve Komplikasyon Yönetimi",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">PLD (Karaciğer Kistleri)</h4><p class=\"text-xs text-slate-600\">Masif karaciğer kistlerinde semptom kontrolü için <strong>Somatostatin Analogları</strong> (Oktreotid/Lanreotid) kullanılabilir. Bu ajanlar karaciğer hacmini küçültür ancak böbrek fonksiyonu üzerinde kalıcı koruyucu etkileri zayıftır.</p></div><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Enfeksiyon Yönetimi</h4><p class=\"text-xs text-slate-600\">Kist enfeksiyonu şüphesinde kist içine penetrasyonu yüksek (lipid çözünür) <strong>Florokinolonlar</strong> (Siprofloksasin/Levofloksasin) tercih edilmelidir. Beta-laktamlar kist duvarını geçmekte yetersiz kalabilir.</p></div></div>"
+    },
+    {
+      "heading": "XIV. Son Dönem Böbrek Yetmezliği (SDBY)",
+      "html": "<p>SDBY aşamasında (Evre 5) hastalar Hemodiyaliz, Periton Diyalizi veya Transplantasyon seçeneklerine yönlendirilir.</p><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Transplantasyon:</strong> ADPKD hastalarında en ideal seçenektir. Canlı donör taramasında potansiyel adaylarda MRG ile 'kist yokluğu' doğrulanmalıdır.</li><li><strong>Nefrektomi:</strong> Transplantasyon öncesi rutin nefrektomi önerilmez. Sadece masif kanama, kronik enfeksiyon veya transplantasyon için mekanik yer yokluğu (devasa böbrekler) durumunda endikedir.</li></ul>"
+    }
+  ]
+}

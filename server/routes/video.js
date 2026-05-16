@@ -1,0 +1,1 @@
+import {Router} from 'express';import roleGuard from '../middlewares/roleGuard.js';import {signPlay,master,media,segment} from '../controllers/videoController.js';const r=Router();r.post('/sign',roleGuard('P'),signPlay);r.get('/hls/:videoId/master.m3u8',master);r.get('/hls/:videoId/media_0.m3u8',media);r.get('/hls/:videoId/:seg',segment);export default r;

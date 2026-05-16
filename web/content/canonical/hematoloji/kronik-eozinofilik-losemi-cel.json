@@ -1,0 +1,31 @@
+{
+  "title": "Kronik Eozinofilik Lösemi (CEL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "CEL", "Kronik Eozinofilik Lösemi", "Eozinofili", "PDGFRA", "İmatinib", "Yapay Zeka Taslağı"],
+    "parent": "miyeloproliferatif",
+    "order": 25
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Hayati Sınıflandırma Farkı (WHO / ICC 2022)",
+      "html": "<p><strong>Kronik Eozinofilik Lösemi (CEL)</strong>, kemik iliğinde eozinofilik öncüllerin otonom ve klonal proliferasyonu sonucu periferik kanda kalıcı hipereozinofili ve buna bağlı uç organ hasarı ile karakterize bir Miyeloproliferatif Neoplazmdır (MPN).</p><p>⚠️ <strong>Klinik Uyarı:</strong> Güncel WHO ve ICC kılavuzlarında, eozinofili ile seyreden hastalıklar genetik temellerine göre kesin çizgilerle ayrılmıştır:</p><ul class=\"mb-4\"><li><strong>Eozinofili ve Tirozin Kinaz Gen Rearranjmanları Olan Miyeloid/Lenfoid Neoplaziler:</strong> <em>PDGFRA, PDGFRB, FGFR1, JAK2, FLT3</em> veya <em>ETV6::ABL1</em> mutasyonları saptanan hastalar CEL'den ayrılarak <strong>müstakil bir hastalık grubu</strong> olarak sınıflandırılır.</li><li><strong>CEL, NOS (Başka Türlü Adlandırılamayan):</strong> Yukarıdaki tirozin kinaz füzyonlarının <em>bulunmadığı</em>, ancak klonalitenin genetik (örn. <em>ASXL1, TET2, SRSF2</em> mutasyonları) veya sitogenetik olarak ispatlandığı YA DA periferik kanda/kemik iliğinde blast artışının (%2-19) saptandığı gruptur.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Uç Organ Hasarı",
+      "html": "<p>CEL ve Hipereozinofilik Sendromda (HES) temel morbidite ve mortalite nedeni, degranüle olan eozinofillerden salınan toksik proteinlerin (Majör Bazik Protein, Eozinofil Katyonik Protein vb.) dokularda yarattığı yıkımdır.</p><ul class=\"mb-4\"><li><strong>Kardiyak Tutulum (En Ölümcül):</strong> Eozinofilik infiltrasyon ve fibrozise sekonder restriktif kardiyomiyopati gelişir (<strong>Löffler Endokarditi / Endomiyokardiyal Fibrozis</strong>). Kapak yetmezlikleri ve intrakaviter trombüsler sıktır.</li><li><strong>Dermatolojik:</strong> Şiddetli pruritus (kaşıntı), anjiyoödem, ürtiker ve kutanöz nodüller.</li><li><strong>Nörolojik ve Pulmoner:</strong> Periferik nöropati, ensefalopati ve akciğerde eozinofilik infiltratlar (öksürük, nefes darlığı).</li><li><strong>Hematolojik:</strong> Splenomegali ve hepatomegali klasik CEL hastalarında çok belirgindir.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Yaklaşım (Kademeli Dışlama)",
+      "html": "<p>CEL tanısı, eozinofilinin <strong>reaktif (sekonder) nedenlerinin</strong> adım adım dışlanmasına dayanır:</p><ol class=\"mb-4\"><li><strong>Reaktif Nedenleri Dışla:</strong> Paraziter enfeksiyonlar (Strongyloides, Toxocara vb.), alerjik hastalıklar, ilaç reaksiyonları, bağ dokusu hastalıkları (Churg-Strauss / EGPA) ve Hodgkin Lenfoma gibi eozinofili yapan maligniteler dışlanmalıdır.</li><li><strong>Lenfositik Varyant HES'i Dışla:</strong> Flow sitometri ile anormal T-hücre klonları (örn. CD3- CD4+ hücreler) taranmalıdır (IL-5 üreterek eozinofili yaparlar).</li><li><strong>Klonaliteyi Göster:</strong> Kemik iliği biyopsisi, Karyotip tayini ve NGS (Yeni Nesil Dizileme) ile miyeloid mutasyon paneli bakılmalıdır. Mutlak eozinofil sayısı <strong>≥1.5 x 10^9/L</strong> olmalı ve blast oranı <strong><%20</strong> olmalıdır (≥%20 ise Akut Lösemidir).</li></ol>"
+    },
+    {
+      "heading": "Hedefe Yönelik Tedavi Stratejileri",
+      "html": "<p>Eozinofili klonalitesini saptadığımız an tedavi moleküler hedefe göre şekillenir:</p><ul class=\"mb-4\"><li><strong>PDGFRA veya PDGFRB Mutant Grup (En Sık FIP1L1-PDGFRA):</strong> Bu hastalar gerçek CEL, NOS sayılmasa da kliniği aynıdır. Tedavide <strong>İmatinib (düşük doz, 100 mg/gün)</strong> mucizevi bir etki gösterir. Hastalar günler/haftalar içinde tam hematolojik ve moleküler remisyona girer.</li><li><strong>FGFR1 Mutant Grup:</strong> 8p11 miyeloproliferatif sendromu olarak da bilinir. İmatinib'e <em>dirençlidir</em>. Genellikle lenfoma ile birliktelik gösterir. Hedefe yönelik FGFR inhibitörü olan <strong>Pemigatinib</strong> onaylı ve etkilidir. Uygun hastalarda kür için Allo-HSCT (Kök Hücre Nakli) gereklidir.</li><li><strong>CEL, NOS (Gerçek CEL) Tedavisi:</strong> İmatinib'e yanıt vermezler. İlk basamakta <strong>Hidroksiüre (HU)</strong> veya <strong>Pegile İnterferon-alfa</strong> kullanılır. Organ hasarını önlemek için yüksek doz kortikosteroidler verilebilir. Anti-IL5 monoklonal antikoru olan <em>Mepolizumab</em> eozinofil sayısını düşürmede etkilidir. Agresif seyirli ve yüksek riskli mutasyon taşıyan hastalarda Allo-HSCT temel hedeftir.</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Tedavi", "SIADH", "Tolvaptan", "Üre", "SGLT2 İnhibitörü", "Empagliflozin"],
+    "parent": "siadh-sendromu",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🧪 Vaptanlar: V2 Reseptör Antagonistleri",
+      "html": "<p>Vaptanlar (Tolvaptan, Conivaptan), AQP2 su kanallarını bloke ederek doğrudan <strong>Akuarez</strong> sağlar. Sodyumu yükseltmede çok güçlüdürler ancak <strong>aşırı hızlı düzeltme (overcorrection)</strong> riskini 5.7 kat artırırlar. Tolvaptan hepatotoksisite riski nedeniyle 30 günle sınırlanmalı ve sirozda kullanılmamalıdır.</p>"
+    },
+    {
+      "heading": "🍬 Oral Üre Tedavisi: Güvenli Alternatif",
+      "html": "<p>Günlük 15-60 g dozda kullanılan Üre, ozmotik diürez yaratarak serbest su atılımını artırır. <strong>Kritik Avantaj:</strong> Preklinik çalışmalarda ODS gelişimine karşı koruyucu etkisi olduğu gösterilmiştir. En büyük kısıtlılığı hasta uyumunu bozan tadıdır.</p>"
+    },
+    {
+      "heading": "🌟 SGLT2 İnhibitörleri (Empagliflozin)",
+      "html": "<p>Kütüphanenin en yeni üyesi! Proksimal tübülde glikozüriye bağlı gelişen ozmotik diürez mekanizması ile serum sodyumunu anlamlı şekilde artırır. Yakın tarihli randomize kontrollü çalışmalar, kronik SIADH yönetiminde umut vaat edici sonuçlar vermiştir.</p>"
+    },
+    {
+      "heading": "⚠️ Demeclocycline: Gözden Düşen Ajan",
+      "html": "<p>Nefrojenik DI tablosu yaratarak etki eder. Ancak nefroksisite riski ve öngörülemeyen etki başlangıcı nedeniyle güncel kılavuzlarda artık rutin kullanımı <strong>önerilmemektedir</strong>.</p>"
+    }
+  ]
+}

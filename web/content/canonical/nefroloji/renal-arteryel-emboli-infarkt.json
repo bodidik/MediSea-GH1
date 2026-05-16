@@ -1,0 +1,31 @@
+{
+  "title": "Renal Arteryel Emboli ve İnfarkt",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nefroloji", "Emboli", "İnfarkt", "Atrial Fibrilasyon", "Renal Kriz"],
+    "parent": "renovaskuler-hastaliklar",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea Akademik Modül</em></p>"
+    },
+    {
+      "heading": "Tanım ve Etyoloji: Böbreğin İnfarktüsü",
+      "html": "<p>Renal infarkt, renal arterin veya dallarının tıkanması sonucu böbrek parankiminde iskemik nekroz gelişmesidir. En sık neden <strong>Kardiyak Kaynaklı Tromboembolilerdir</strong>.</p><ul class=\"mb-4\"><li><strong>Atrial Fibrilasyon (AF):</strong> En yaygın emboli kaynağıdır.</li><li><strong>Diğer Nedenler:</strong> Valvüler kalp hastalıkları, vejetasyonlar (Endokardit), ventriküler trombus (MI sonrası) ve aortik ateromlar.</li><li><strong>Hiperkoagülabilite:</strong> Antifosfolipid sendromu ve maligniteler.</li></ul>"
+    },
+    {
+      "heading": "Klinik Tablo: Böbrek Krizi",
+      "html": "<p>Klinik tablo genellikle ani ve şiddetlidir. Hastalar sıklıkla taş düşürdüğünü sanarak başvurur.</p><ul class=\"mb-4\"><li><strong>Şiddetli Yan Ağrısı:</strong> Ani başlayan, keskin ve sürekli karakterdedir.</li><li><strong>Eşlik Eden Bulgular:</strong> Bulantı, kusma ve bazen hafif ateş (nekroza sekonder inflamasyon).</li><li><strong>Hipertansiyon:</strong> İskemik alandan aniden salınan Renin nedeniyle tansiyon fırlayabilir.</li><li><strong>Laboratuvar:</strong> İdrarda hematüri görülebilir ancak vakaların %30'unda idrar tamamen normaldir (tıkanıklık tam ise). Serumda <strong>LDH yüksekliği</strong> (izole ve belirgin) en önemli biyokimyasal ipucudur.</li></ul>"
+    },
+    {
+      "heading": "Tanı: BT Anjiyografi ve 'Kama Şeklinde' Hasar",
+      "html": "<p>Tanı için görüntüleme şarttır.</p><ul class=\"mb-4\"><li><strong>Kontrastlı BT:</strong> İnfarkt alanı tipik olarak <strong>Kama (Wedge) Şeklinde</strong>, kontrast tutmayan hipodens bir bölge olarak izlenir.</li><li><strong>Renal Doppler USG:</strong> Akım kaybını gösterebilir ancak küçük dallardaki tıkanıklıkları atlayabilir.</li><li><strong>DSA (Dijital Subtraksiyon Anjiyografi):</strong> Kesin tanı ve olası müdahale için altın standarttır.</li></ul>"
+    },
+    {
+      "heading": "Tedavi ve Yönetim Stratejileri",
+      "html": "<p>Zaman, böbrek dokusunu kurtarmak için hayatidir.</p><ul class=\"mb-4\"><li><strong>Antikoagülasyon:</strong> Hemen IV Heparin başlanmalı ve sonrasında uzun süreli (AF varsa ömür boyu) oral antikoagülanlara geçilmelidir.</li><li><strong>Revaskülarizasyon:</strong> Erken başvurularda (<6-12 saat) veya bilateral tıkanıklıklarda intra-arteriyel tromboliz veya cerrahi embolektomi düşünülür.</li><li><strong>Tansiyon Kontrolü:</strong> Renin fırtınası nedeniyle ACE inhibitörleri tercih edilebilir (böbrek fonksiyonu elverdiği sürece).</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Osteoporoz: Patogenez ve Farmakolojik Tedavi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Osteoporoz", "DEXA", "Bisfosfonat", "Denosumab", "Teriparatid"],
+    "parent": "kalsiyum-metabolizmasi-ana",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 IOF/ASBMR Güncel Kılavuzları referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Risk Faktörleri",
+      "html": "<p>Osteoporoz, kemik direncinin azalarak kırık riskinin artmasıyla karakterize sistemik bir iskelet hastalığıdır.</p><ul class=\"mb-4\"><li><strong>Primer:</strong> Postmenopozal (Tip 1) ve Senil (Tip 2).</li><li><strong>Sekonder:</strong> Glukokortikoid kullanımı (en sık), Hipogonadizm, Hiperparatiroidi, Malabsorpsiyon ve İmmobilizasyon.</li><li><strong>FRAX Skoru:</strong> Hastanın 10 yıllık kalça ve majör osteoporotik kırık riskini hesaplayan temel araçtır.</li></ul>"
+    },
+    {
+      "heading": "Tanı: DEXA ve T-Skoru Standartları",
+      "html": "<p>Tanı, Dual-Enerji X-Ray Absorpsiyometri (DEXA) ile konur:</p><ul class=\"mb-4\"><li><strong>Normal:</strong> T-skoru ≥ -1.0</li><li><strong>Osteopeni:</strong> T-skoru -1.0 ile -2.5 arası.</li><li><strong>Osteoporoz:</strong> T-skoru ≤ -2.5</li><li><strong>Ağır (Yerleşmiş) Osteoporoz:</strong> T-skoru ≤ -2.5 + en az bir fragilite kırığı.</li><li>⚠️ <em>Not:</em> Premenopozal kadınlarda ve genç erkeklerde T-skoru yerine <strong>Z-skoru</strong> (yaşdaşlarına göre kıyaslama) kullanılır.</li></ul>"
+    },
+    {
+      "heading": "Farmakolojik Tedavi: Antirezorptif vs Anabolik",
+      "html": "<p>Tedavi stratejisi kemik döngüsü hızına göre belirlenir:</p><div class=\"bg-blue-50 p-4 border-l-4 border-blue-500 mb-4\"><strong>1. Antirezorptif Ajanlar (Yıkımı Durduranlar):</strong><ul><li><strong>Bisfosfonatlar (Alendronat, Zoledronik Asit):</strong> İlk seçenek. Osteoklastları inhibe eder. <em>Yan etki:</em> Çene osteonekrozu ve atipik femur kırığı (uzun süreli kullanımda).</li><li><strong>Denosumab (RANKL İnhibitörü):</strong> 6 ayda bir subkutan. Böbrek yetmezliğinde güvenlidir. ⚠️ Kesildiğinde 'rebound' kırık riski nedeniyle mutlaka bir bisfosfonat ile devam edilmelidir.</li><li><strong>SERM (Raloksifen):</strong> Sadece vertebra kırıklarını önler, meme kanseri riskini azaltır.</li></ul></div><div class=\"bg-green-50 p-4 border-l-4 border-green-500 mb-4\"><strong>2. Anabolik Ajanlar (Kemik Yapanlar):</strong><ul><li><strong>Teriparatid / Abaloparatid (PTH Analogları):</strong> Osteoblastik aktiviteyi artırır. Çok yüksek kırık riskli hastalarda tercih edilir.</li><li><strong>Romosozumab (Sklerostin İnhibitörü):</strong> Hem kemik yapımını artırır hem yıkımı azaltır (Dual etki).</li></ul></div>"
+    },
+    {
+      "heading": "Klinik İnci: İlaç Tatili (Drug Holiday)",
+      "html": "<p>Oral bisfosfonatlarda 5 yıl, IV bisfosfonatlarda 3 yıl stabil seyir sonrası yan etkileri azaltmak için tedaviye ara verilebilir. Ancak Denosumab ve Anabolik ajanlarda <strong>tatil yoktur</strong>, tedavi kesilirse kazanımlar hızla kaybolur.</p>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "HHG Aksı ve Steroidogenez Fizyolojisi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Reprodüktif", "GnRH", "Steroidogenez", "LH", "FSH"],
+    "parent": "reproduktif-endokrinoloji-ana",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & Endocrine Society 2025 Fizyoloji serisi referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Hipotalamo-Hipofizer-Gonadal (HHG) Aks",
+      "html": "<p>Üreme fonksiyonlarının kontrolü, üç seviyeli bir hiyerarşiye dayanır:</p><ul class=\"mb-4\"><li><strong>GnRH (Gonadotropin Salgılatıcı Hormon):</strong> Hipotalamustan <strong>pulsatil</strong> olarak salınır. Sürekli (non-pulsatil) salınım, reseptörleri down-regüle ederek aksı susturur.</li><li><strong>LH ve FSH:</strong> Ön hipofizden salınır. LH esas olarak steroidogenezi (hormon üretimi), FSH ise gametogenezi (sperm/yumurta gelişimi) uyarır.</li><li><strong>İnhibinler:</strong> Gonadlardan salınarak selektif olarak FSH'ı baskılar.</li></ul>"
+    },
+    {
+      "heading": "Steroidogenez: Kolesterolden Hormona",
+      "html": "<p>Tüm seks steroidlerinin ham maddesi kolesteroldür. En kritik adım, kolesterolün mitokondriye <strong>StAR</strong> proteini aracılığıyla taşınmasıdır.</p><ul class=\"mb-4\"><li><strong>İki Hücre-İki Gonadotropin Teorisi (Over):</strong> <ul><li><em>Techa Hücresi:</em> LH uyarısıyla kolesterolden <strong>Androstenedion</strong> üretir.</li><li><em>Granüloza Hücresi:</em> FSH uyarısıyla androjeni <strong>Aromatizasyon</strong> yoluyla Östradiol'e (E2) dönüştürür.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Klinik İnci: SHBG ve Serbest Hormon",
+      "html": "<p>Seks Hormon Bağlayıcı Globülin (SHBG), hormonları kanda taşır. <strong>İnsülin direnci ve obezite SHBG'yi düşürür;</strong> bu da serbest (aktif) androjen düzeyini artırarak hirsutizmi tetikler.</p>"
+    }
+  ]
+}

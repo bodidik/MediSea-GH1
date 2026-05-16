@@ -1,0 +1,19 @@
+{
+  "title": "Pernisiyöz Anemi",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Anemi", "B12", "Otoimmün", "İntrinsik Faktör"],
+    "parent": "megaloblastik-anemi",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Mekanizma",
+      "text": "<p>Mide paryetal hücrelerine karşı gelişen otoantikorlar sonucu <strong>İntrinsik Faktör (IF)</strong> eksikliği oluşur. IF olmayınca B12 vitamini ileumdan emilemez.</p>"
+    },
+    {
+      "heading": "Klinik",
+      "text": "<p>Anemi bulgularına ek olarak Glossit (Hunter dili) ve ciddi <strong>Nörolojik Bulgular</strong> (Subakut Kombine Dejenerasyon) görülür. Tanıda Anti-Paryetal ve Anti-IF antikorları pozitiftir.</p>"
+    }
+  ]
+}

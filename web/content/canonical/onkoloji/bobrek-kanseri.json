@@ -1,0 +1,19 @@
+{
+  "title": "Ch 90: Renal Hücreli Karsinom (RCC)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Onkoloji", "Böbrek", "VHL", "İmmünoterapi"],
+    "parent": "onkoloji-hastaliklari",
+    "order": 9
+  },
+  "sections": [
+    {
+      "heading": "Özellikler",
+      "text": "<p>Klasik triad (Yan ağrısı, Hematüri, Kitle) hastaların azında görülür. 'Dahiliyenin Tümörü' olarak bilinir çünkü paraneoplastik sendromlar (Polisitemi, Hiperkalsemi) sıktır. En sık tip: <strong>Berrak Hücreli (Clear Cell)</strong>.</p>"
+    },
+    {
+      "heading": "Tedavi: Kemoterapi Yok!",
+      "text": "<p>RCC, klasik kemoterapiye dirençlidir. Tedavide anjiyogenez (damar) inhibitörleri (Sunitinib, Pazopanib) ve İmmünoterapi (Nivolumab/Ipilimumab) kullanılır. Parsiyel veya radikal nefrektomi küratiftir.</p>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export default (need)=>(req,res,next)=>{const r=req.user?.role||'V';if(Array.isArray(need)?need.includes(r):r===need)return next();res.status(403).json({error:'Forbidden'});};

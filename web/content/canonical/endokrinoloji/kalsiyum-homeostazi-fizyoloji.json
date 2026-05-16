@@ -1,0 +1,27 @@
+{
+  "title": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Kalsiyum", "PTH", "Vitamin D", "CaSR", "Fosfor"],
+    "parent": null,
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & ASBMR Fizyoloji serisi referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Kalsiyumun Vücuttaki Dağılımı",
+      "html": "<p>Vücuttaki toplam kalsiyumun %99'u kemiklerde hidroksiapatit kristallerinde depolanır. Plazmadaki kalsiyum üç formdadır:</p><ul class=\"mb-4\"><li><strong>İyonize Kalsiyum (%50):</strong> Biyolojik olarak aktif, serbest formdur.</li><li><strong>Albümine Bağlı Kalsiyum (%40):</strong> Plazma pH'ı değiştikçe bağlanma oranı değişir.</li><li><strong>Kompleks Form (%10):</strong> Sitrat ve fosfatla bağlı.</li><li>⚠️ <em>Klinik İnci:</em> Albümin düşükse 'Düzeltilmiş Kalsiyum' hesaplanmalıdır: [Ölçülen Ca + 0.8 * (4.0 - Albümin)].</li></ul>"
+    },
+    {
+      "heading": "Paratiroid Hormon (PTH): Kalsiyumun Koruyucusu",
+      "html": "<p>PTH, kalsiyum düştüğünde paratiroid bezlerindeki <strong>CaSR (Kalsiyum Algılayan Reseptör)</strong> üzerinden milisaniyeler içinde salınır:</p><ul class=\"mb-4\"><li><strong>Kemik:</strong> Hızlıca kalsiyum ve fosfor rezorpsiyonunu artırır.</li><li><strong>Böbrek:</strong> Distal tübülde kalsiyum geri emilimini artırırken, <strong>Fosfor atılımını (fosfatüri) artırır.</strong></li><li><strong>Vitamin D Aktivasyonu:</strong> Böbrekte 1-alfa-hidroksilaz enzimini uyararak Vitamin D'yi en aktif formuna (Kalsitriol) dönüştürür.</li></ul>"
+    },
+    {
+      "heading": "Vitamin D Metabolizması: İki Aşamalı Güç",
+      "html": "<p>Vitamin D sentezi ve aktivasyonu tam bir takım çalışmasıdır:</p><ol class=\"mb-4\"><li><strong>Karaciğer (25-hidroksilasyon):</strong> 25(OH)D (Kalsidiol) oluşur. Vücuttaki ana depo formudur.</li><li><strong>Böbrek (1-hidroksilasyon):</strong> PTH etkisiyle 1,25(OH)2D (Kalsitriol) oluşur. <strong>Bağırsaklardan kalsiyum ve fosfor emilimini</strong> sağlayan asıl aktördür.</li></ol>"
+    }
+  ]
+}

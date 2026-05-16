@@ -1,0 +1,27 @@
+{
+  "title": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "m7-FLIPI", "NGS", "Genetik"],
+    "parent": "folikuler-lenfoma",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "Gerekli NGS Paneli ve Kapsamı",
+      "html": "<p><strong>m7-FLIPI</strong> skorunu hesaplamak için zorunlu kılınan tek bir standart ticari NGS (Yeni Nesil Dizileme) paneli (örneğin spesifik bir marka) tanımlanmamıştır. Ancak, kullanılacak olan hedefe yönelik (targeted) NGS veya tüm ekzom dizileme (WES) panelinin, modelin temelini oluşturan spesifik <strong>7 genin</strong> mutasyon durumunu mutlaka kapsaması gerekmektedir.</p>"
+    },
+    {
+      "heading": "Kapsanması Gereken 7 Gen",
+      "html": "<p>Bu kromatin modifiye edici ve transkripsiyon faktörü olan genler şunlardır:</p><ul class=\"mb-4\"><li><em>EZH2</em></li><li><em>ARID1A</em></li><li><em>MEF2B</em></li><li><em>EP300</em></li><li><em>FOXO1</em></li><li><em>CREBBP</em></li><li><em>CARD11</em></li></ul>"
+    },
+    {
+      "heading": "Hesaplama Bileşenleri",
+      "html": "<p><strong>Genetik Parametresi:</strong> Panelin yukarıda belirtilen 7 genin somatik mutasyon durumunu tespit edebilmesi şarttır.</p><p><strong>Klinik Parametresi:</strong> Genetik verilere ek olarak, skorlamanın tamamlanması için hastanın standart klinik <strong>FLIPI skoru</strong> (Yaş, LDH, Hemoglobin, Evre, Nodal alan sayısı) ve performans statüsü genetik verilerle entegre edilir.</p>"
+    },
+    {
+      "heading": "Klinik Uyarı ve Güncel Pratik",
+      "html": "<p>⚠️ <strong>Klinik Uyarı:</strong> Foliküler lenfomada mutasyon profiline dayalı bu skorlama R-CHOP veya R-CVP gibi rejimlerde yüksek riskli olguları başarıyla öngörse de; güncel ilk basamak tedavilerden olan <strong>bendamustin veya obinutuzumab tabanlı rejimlerde m7-FLIPI'nin prediktif (öngörücü) değerinin olmaması</strong> klinik uygulanabilirliğini kısıtlamaktadır.</p><p>Bu nedenle söz konusu 7 geni içeren NGS panelleri, günümüzde rutin pratikten ziyade daha çok <em>araştırma amaçlı (investigational)</em> kullanılmaktadır.</p>"
+    }
+  ]
+}

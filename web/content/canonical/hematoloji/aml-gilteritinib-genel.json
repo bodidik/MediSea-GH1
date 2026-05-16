@@ -1,0 +1,38 @@
+{
+  "title": "AML: Gilteritinib Klinik Profili",
+  "meta": {
+    "updatedAt": "07 Mar 2026",
+    "tags": ["Hematoloji", "AML", "Gilteritinib", "Onkolojik Aciller", "FLT3"],
+    "parent": "aml-flt3-inhibitorleri",
+    "order": 3,
+    "summary": "Nüks veya refrakter FLT3 mutasyonlu Akut Miyeloid Lösemi (AML) tedavisinde kullanılan Gilteritinib'in sınıfı, etki mekanizması, referans çalışmaları ve yan etki yönetimi."
+  },
+  "summary": "Nüks veya refrakter FLT3 mutasyonlu Akut Miyeloid Lösemi (AML) tedavisinde kullanılan, hedefe yönelik, oral, küçük moleküllü bir tirozin kinaz inhibitörüdür.",
+  "sections": [
+    {
+      "heading": "Sınıf ve Etki Mekanizması",
+      "text": "<p><strong>Sınıf:</strong> Üçüncü kuşak, Tip 1 FLT3 inhibitörü.</p><p><strong>Mekanizma:</strong> FLT3 genindeki hem ITD (İnternal Tandem Duplikasyon) hem de TKD (Tirozin Kinaz Domain) mutasyonlarını yüksek seçicilik ve güçle inhibe ederek, lösemik hücrelerin proliferasyonunu durdurur ve apoptozu tetikler.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Klinik Endikasyon ve Kullanım",
+      "text": "<ul><li><strong>Temel Endikasyon:</strong> FDA onaylı bir test ile saptanmış FLT3 mutasyonu (ITD veya TKD) taşıyan nüks (relaps) veya dirençli (refrakter) erişkin AML hastaları.</li><li><strong>Kullanım Şekli:</strong> Kemoterapi ile kombine edilmez; standart olarak monoterapi (tek ajan) şeklinde kullanılır.</li><li><strong>Dozaj ve Uygulama:</strong> Klinik fayda sürdüğü veya tolere edilemeyen bir toksisite gelişmediği sürece günde tek doz 120 mg oral (ağızdan) yolla sürekli (continuous) olarak verilir.</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Klinik Kanıtlar (ADMIRAL Faz 3 Çalışması)",
+      "text": "<p>Nüks veya refrakter FLT3 mutasyonlu hastalarda standart kurtarma (salvage) kemoterapisi ile karşılaştırıldığında, tek başına Gilteritinib kullanımının medyan genel sağkalımı (OS) anlamlı derecede uzattığı (5.6 aya karşılık 9.3 ay) ve remisyon oranlarını (CR/CRh: %15.3'e karşılık %34.0) belirgin şekilde artırdığı kanıtlanmıştır.</p>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Güvenlik, Yan Etki Profili ve Onkolojik Aciller",
+      "text": "<p><strong>Siyah Kutu Uyarısı (Diferansiyasyon Sendromu):</strong> Açıklanamayan ateş, dispne, plevral ve/veya perikardiyal efüzyonlar, pulmoner infiltratlar, periferik ödem, hipotansiyon ve akut böbrek hasarı ile seyreder. Klinik şüphe anında derhal sistemik glukokortikoid (Deksametazon) başlanmalı, hemodinamik destek sağlanmalı, ağır vakalarda ilaç geçici olarak kesilmeli ve lökositoz varsa hidroksiüre eklenmelidir.</p><p><strong>Diğer Ciddi Toksisiteler:</strong></p><ul><li>PRES (Posterior Reversible Ensefalopati Sendromu)</li><li>QTc mesafesinde uzama (düzenli EKG takibi gerektirir)</li><li>Pankreatit</li><li>Ağır sitopeniler (febril nötropeni, anemi, trombositopeni)</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Direnç Gelişimi",
+      "text": "<p>Tedavi süreci boyunca klonal seleksiyonla ortaya çıkan NRAS veya KRAS gibi aktive edici sekonder (ikincil) sinyal yolak mutasyonları, Gilteritinib'e karşı klinik direnç gelişimiyle ilişkilidir.</p>",
+      "visibility": "M"
+    }
+  ]
+}

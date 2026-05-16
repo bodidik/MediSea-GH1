@@ -1,0 +1,35 @@
+{
+  "title": "Konjenital Adrenal Hiperplazi (CAH)",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Adrenal", "CAH", "21-Hidroksilaz", "17-OHP", "Virilizasyon"],
+    "parent": "adrenal-bez-hastaliklari",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 Endocrine Society CAH Clinical Practice Guideline referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji: Enzimatik Blok ve Feedback",
+      "html": "<p>CAH, steroid biyosentezindeki enzimlerin otozomal resesif eksikliğidir. En sık neden (%95) <strong>21-Hidroksilaz</strong> eksikliğidir.</p><ul class=\"mb-4\"><li><strong>Mekanizma:</strong> Kortizol üretilemez -> Negatif feedback kalkar -> ACTH aşırı artar -> Adrenal bez hiperplaziye uğrar ve tüm öncül maddeler blokajın olmadığı <strong>Androjen yolağına</strong> akar.</li></ul>"
+    },
+    {
+      "heading": "Klinik Tipler: Klasik vs. Non-Klasik",
+      "html": "<p>Enzimin aktivite düzeyine göre üç klinik tablo görülür:</p><ul class=\"mb-4\"><li><strong>1. Tuz Kaybettiren Tip (Klasik):</strong> Enzim aktivitesi %0. Hem kortizol hem aldosteron eksik. Bebeklikte 'Adrenal Kriz' ve kızlarda ambigous genitalya ile gelir.</li><li><strong>2. Basit Virilize Tip (Klasik):</strong> Enzim aktivitesi %1-2. Sadece kortizol eksik, aldosteron yeterli. Kızlarda doğumda virilizasyon, erkeklerde erken puberte.</li><li><strong>3. Non-Klasik Tip (Geç Başlangıçlı):</strong> Enzim aktivitesi %20-50. Doğumda normaldir; puberte sonrası hirsutizm, akne ve infertilite (PCOS ile karışır) ile başvurur.</li></ul>"
+    },
+    {
+      "heading": "Tanı: 17-Hidroksiprogesteron (17-OHP)",
+      "html": "<p>Tanıda altın standart, 21-hidroksilazın substratı olan <strong>17-OHP</strong> düzeyidir:</p><ul class=\"mb-4\"><li>Bazal 17-OHP > 200 ng/dL ise şüphelenilir.</li><li><strong>ACTH Stimülasyon Testi:</strong> Uyarı sonrası 17-OHP > 1000 ng/dL ise tanı kesinleşir.</li></ul>"
+    },
+    {
+      "heading": "Diğer Nadir Enzim Eksiklikleri",
+      "html": "<p>Ayırıcı tanıda tansiyon ve potasyum belirleyicidir:</p><ul class=\"mb-4\"><li><strong>11-beta Hidroksilaz Eksikliği:</strong> Androjen artar + 11-DOC birikimine bağlı <strong>Hipertansiyon</strong> görülür.</li><li><strong>17-alfa Hidroksilaz Eksikliği:</strong> Androjenler ve kortizol DÜŞÜK + Mineralokortikoid artışına bağlı <strong>Hipertansiyon ve Hipokalemi</strong> görülür.</li></ul>"
+    },
+    {
+      "heading": "Tedavi İlkeleri",
+      "html": "<ul class=\"mb-4\"><li><strong>Glukokortikoidler:</strong> Eksik olanı yerine koymak ve ACTH'ı baskılayarak androjen üretimini durdurmak (Deksametazon/Hidrokortizon).</li><li><strong>Mineralokortikoidler:</strong> Tuz kaybettiren tipte Fludrokortizon eklenir.</li></ul>"
+    }
+  ]
+}

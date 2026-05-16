@@ -1,0 +1,35 @@
+{
+  "title": "Hipokalsemi ve Hipoparatiroidi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipokalsemi", "PTH", "Tetani", "Chvostek", "Trousseau"],
+    "parent": "kalsiyum-metabolizmasi-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 Endokrinoloji Acil Yaklaşım Rehberi referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Etiyoloji: PTH Eksikliği mi, Direnci mi?",
+      "html": "<p>Hipokalsemi, iyonize kalsiyumun düşmesiyle karakterizedir. Mekanizmalar şöyledir:</p><ul class=\"mb-4\"><li><strong>1. Hipoparatiroidi (Düşük PTH):</strong> <ul><li><strong>Postoperatif:</strong> En sık neden (Tiroidektomi/Paratiroidektomi sonrası hasar).</li><li><strong>Otoimmün:</strong> APS Tip 1'in parçası olarak.</li><li><strong>Hipomagnezemi:</strong> Şiddetli düşük Mg, hem PTH salınımını bozar hem de doku yanıtını azaltır.</li></ul></li><li><strong>2. İkincil Nedenler (Yüksek PTH):</strong> <ul><li>Vitamin D eksikliği (en yaygın).</li><li>Kronik Böbrek Hastalığı (Kalsitriol sentezlenemez).</li><li>Psödohipoparatiroidi (PTH direnci).</li></ul></li></ul>"
+    },
+    {
+      "heading": "Klinik: Nöromüsküler İrritabilite",
+      "html": "<p>Düşük kalsiyum, sinir hücrelerinin eşik değerini düşürerek uyarılabilirliği artırır:</p><ul class=\"mb-4\"><li><strong>Paresteziler:</strong> El, ayak ve ağız çevresinde uyuşma (karıncalanma).</li><li><strong>Tetani:</strong> Kas spazmları.</li><li><strong>Kritik Bulgular:</strong> Laringospazm ve Jeneralize Nöbetler (Acil müdahale gerektirir).</li><li>⚠️ <em>Kardiyak:</em> EKG'de <strong>QT mesafesinde uzama</strong> (Torsades de Pointes riski).</li></ul>"
+    },
+    {
+      "heading": "Fizik Muayene İpuçları: Klasik İşaretler",
+      "html": "<p>Gizli tetaniyi saptamak için iki efsanevi test:</p><ul class=\"mb-4\"><li><strong>Chvostek İşareti:</strong> Fasiyal sinire (kulak önü) vurulduğunda dudak ve burun kanadında seyirme (Duyarlılığı düşüktür).</li><li><strong>Trousseau İşareti:</strong> Tansiyon aleti manşonu sistolik basıncın üzerine şişirilip 3 dk beklendiğinde elde <strong>'Ebe Eli' (Karpal Spazm)</strong> oluşmasıdır. (Daha spesifiktir).</li></ul>"
+    },
+    {
+      "heading": "Tanısal Algoritma: PTH ve Magnezyum",
+      "html": "<p>Hipokalsemi saptandığında izlenecek yol:</p><ol class=\"mb-4\"><li><strong>Albümin Düzeltmesi:</strong> Önce kalsiyumun gerçekten düşük olduğu kanıtlanır.</li><li><strong>Magnezyum (Mg) Ölçümü:</strong> Mg düşükse, kalsiyum yerine konmadan önce Mg düzeltilmelidir; aksi halde kalsiyum yükselmez.</li><li><strong>PTH ve Fosfor:</strong> <ul><li>PTH düşük, Fosfor yüksek: <strong>Hipoparatiroidi.</strong></li><li>PTH yüksek, Fosfor düşük: <strong>Vitamin D eksikliği.</strong></li></ul></li></ol>"
+    },
+    {
+      "heading": "Tedavi: Akut ve Kronik Yönetim",
+      "html": "<ul class=\"mb-4\"><li><strong>Acil (Semptomatik):</strong> IV <strong>Kalsiyum Glukonat</strong> (%10'luk solüsyon, yavaş infüzyon).</li><li><strong>Kronik:</strong> Oral Kalsiyum + Aktif Vitamin D (Kalsitriol). ⚠️ <em>Kritik Takip:</em> Hipoparatiroidide idrar kalsiyumu çok artar. Böbrek taşı riskini önlemek için idrar kalsiyumu yakından izlenmeli, gerekirse Tiyazid diüretikleri eklenmelidir.</li></ul>"
+    }
+  ]
+}

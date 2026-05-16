@@ -1,0 +1,47 @@
+{
+  "title": "Polistemia Vera (PV) Kapsamlı Özeti",
+  "meta": {
+    "updatedAt": "13 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "Polistemia Vera", "JAK2", "Rusfertide", "Ropeginterferon"],
+    "parent": "miyeloproliferatif",
+    "order": 10
+  },
+  "sections": [
+    {
+      "heading": "Tanım ve Patofizyoloji",
+      "html": "<p><strong>Polistemia Vera (PV)</strong>, BCR::ABL1-negatif kronik miyeloproliferatif neoplaziler (MPN) grubunda yer alan, kök hücre kaynaklı klonal bir hastalıktır. Hastaların yaklaşık %95-98'inde <strong>JAK2 V617F (ekzon 14)</strong> mutasyonu, %2-4'ünde ise JAK2 ekzon 12 mutasyonu saptanır.</p><p>Bu mutasyonlar, JAK2 psödokinaz (JH2) domainindeki otosüpresif etkiyi ortadan kaldırarak JAK-STAT sinyal yolağının yapısal (sürekli) aktivasyonuna yol açar. PV patogenezi sadece JAK2 mutasyonu ile sınırlı olmayıp; <em>TET2, ASXL1, DNMT3A, SRSF2, IDH1/2</em> ve <em>TP53</em> gibi epigenetik düzenleyicileri ve splaysom elemanlarını kodlayan genlerdeki ek (<em>non-driver</em>) mutasyonlar da hastalığın fenotipini ve progresyonunu şekillendirir.</p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon: Semptomatoloji",
+      "html": "<p><strong>Genel Özellikler:</strong> PV olgularının tanı anındaki medyan yaşı genellikle 60-65 civarındadır ve erkeklerde biraz daha sık görülür. Birçok hasta asemptomatiktir ve tanı rutin tam kan sayımında (CBC) rastlantısal olarak konur. Ancak hastaların yaklaşık %60'ı tanı anında semptomatiktir.</p><p><strong>Hiperviskozite Bulguları:</strong> Artmış eritrosit kitlesi serebral ve sistemik kan akımını yavaşlatarak; baş ağrısı, baş dönmesi (vertigo), <em>tinnitus</em> (kulak çınlaması), konsantrasyon güçlüğü ve geçici görme bozukluklarına (örn. <em>amaurosis fugax</em>) yol açar.</p><p><strong>Vazomotor ve Pruritus:</strong> PV'ye özgü en karakteristik vazomotor komplikasyon <strong>eritromelaljidir</strong> (distal ekstremitelerde yanıcı ağrı, eritem). Trombosit aktivasyonuna bağlıdır ve düşük doz aspirine dramatik yanıt verir. Ayrıca hastaların büyük kısmında su sıcaklığından bağımsız olarak banyo/duş sonrası tetiklenen, JAK2 mutant mast hücrelerinden histamin deşarjına bağlı <strong>akuajenik pruritus (kaşıntı)</strong> oldukça spesifiktir.</p>"
+    },
+    {
+      "heading": "Komplikasyonlar ve Fizik Muayene",
+      "html": "<p><strong>Trombotik ve Kanamaya Bağlı Komplikasyonlar:</strong> Arteryel ve venöz trombozlar PV'de majör morbidite ve mortalite nedenidir. Özellikle <strong>splanik ven trombozu</strong> (hepatik ven/<em>Budd-Chiari sendromu</em>, portal ven) ve serebral venöz sinüs trombozu PV hastalarında çok tipiktir. Öte yandan, ekstrem trombositoz (>1.000.000/mcL) varlığında yüksek molekül ağırlıklı von Willebrand faktör multimerlerinin tükenmesi sonucu <strong>Kazanılmış von Willebrand Sendromu</strong> gelişerek paradoksal kanama diyatezi (epistaksis, GİS kanaması) ortaya çıkabilir.</p><p><strong>Fizik Muayene Bulguları:</strong></p><ul class=\"mb-4\"><li><strong>Pletore (Ruddy Cyanosis):</strong> Yüzde, avuç içlerinde ve mukozalarda vişne çürüğü renk değişikliği.</li><li><strong>Vasküler Konjesyon:</strong> Konjonktival ve retinal venlerde belirgin dolgunluk.</li><li><strong>Organomegali:</strong> Artmış kan hacmi ve ekstramedüller hematopoeze (EMH) bağlı olarak hastaların %36-75'inde <strong>splenomegali</strong> (erken doyma hissi yapar) ve %30-40'ında hepatomegali palpe edilir.</li><li><strong>Hipertansiyon:</strong> Artmış kan viskozitesine sekonder gelişir veya kötüleşir.</li></ul>"
+    },
+    {
+      "heading": "Tükenmiş Evre (Spent Phase) ve Progresyon",
+      "html": "<p>Hastalığın 10-20 yıllık seyri sonunda <strong>'Tükenmiş Evre' (Spent Phase)</strong> veya Post-Polistemik Miyelofibrozis (Post-PV MF) gelişebilir (hastaların ~%10-20'si). Bu evrede klinik tablo tamamen değişir;</p><p>Eritrositoz kaybolur, yerini anemi ve/veya pansitopeni alır. Splenomegali devasa (masif) boyutlara ulaşabilir. Periferik kan yaymasında <strong>gözyaşı (teardrop) hücreleri</strong> ve lökoeritroblastik tablo izlenir. Kaşeksi, kemik ağrıları ve kilo kaybı gibi konstitüsyonel semptomlar bu evrede çok daha şiddetlidir.</p>"
+    },
+    {
+      "heading": "Tanı Kriterleri (2022 ICC ve DSÖ)",
+      "html": "<p>PV tanısı için <strong>3 majör kriterin</strong> VEYA <strong>ilk 2 majör ile minör kriterin</strong> bir arada bulunması gerekir.</p><p><strong>Majör Kriterler:</strong></p><ul class=\"mb-4\"><li><strong>1.</strong> Hemoglobinin erkeklerde >16.5 g/dL, kadınlarda >16.0 g/dL olması; VEYA hematokritin erkeklerde >%49, kadınlarda >%48 olması VEYA eritrosit kitlesinde artış.</li><li><strong>2.</strong> Kemik iliği biyopsisinde yaşa göre artmış hücresellik ve belirgin eritroid, granülositik ve megakaryositik proliferasyon (<em>panmiyelozis</em>) ile birlikte pleomorfik, olgun megakaryositlerin varlığı.</li><li><strong>3.</strong> <em>JAK2 V617F</em> veya <em>JAK2 ekzon 12</em> mutasyonunun saptanması.</li></ul><p><strong>Minör Kriter:</strong></p><ul><li>Serum eritropoietin (EPO) düzeyinin referans aralığın altında (<em>subnormal</em>) olması.</li></ul>"
+    },
+    {
+      "heading": "Risk Stratifikasyonu",
+      "html": "<p>PV'de tromboz ve sağkalım riskini belirleyen iki temel faktör <strong>yaş</strong> ve <strong>tromboz öyküsüdür</strong>. Yaşı <60 olan ve geçmiş tromboz öyküsü bulunmayan hastalar <em>'Düşük Risk'</em> grubunda değerlendirilirken; <strong>yaşı ≥60 olan VEYA tromboz öyküsü bulunan</strong> hastalar <em>'Yüksek Risk'</em> kategorisine girer.</p><p>Ayrıca lökositozun devam etmesi ve JAK2 V617F allel yükünün (VAF) <strong>>%50</strong> olması trombotik olaylar ve miyelofibrotik progresyon için potansiyel risk faktörleri olarak değerlendirilmektedir.</p>"
+    },
+    {
+      "heading": "Tedavi Algoritması",
+      "html": "<p><strong>Temel Tedavi:</strong> Risk grubundan bağımsız olarak tüm hastalara tromboz riskini azaltmak amacıyla <strong>hedef hematokrit < %45</strong> olacak şekilde terapötik <strong>flebotomi</strong> ve kontrendikasyon yoksa düşük doz <strong>aspirin (75-100 mg/gün)</strong> başlanmalıdır.</p><p><strong>Düşük Risk Grubu:</strong> Tipik olarak sadece flebotomi ve aspirin ile izlenir. Ancak şiddetli semptomlar, ilerleyici splenomegali, artan lökositoz, veya sık flebotomi ihtiyacı gibi durumlarda sitoredüktif tedavi başlanabilir. <em>Ropeginterferon alfa-2b</em>'nin düşük riskli PV'de flebotomi ihtiyacını belirgin şekilde azalttığı gösterilmiştir.</p><p><strong>Yüksek Risk Grubu (1. Basamak):</strong> Yüksek riskli hastalarda sitoredüktif tedavi endikedir. Standart birinci basamak tedavi <em>Hidroksiüre (HU)</em> veya interferon formülasyonlarıdır. <strong>Ropeginterferon alfa-2b</strong>, risk kategorisine bakılmaksızın PV tedavisi için onaylanmıştır ve JAK2 allel yükünde uzun dönemde progresif azalma sağlayarak hastalık seyrini modifiye etme potansiyeli taşır. Genç hastalarda (örn. <60 yaş) potansiyel lösemik riskten kaçınmak için interferon tercih edilebilir.</p><p><strong>İkinci Basamak ve Direnç Durumu:</strong> Hidroksiüreye (ELN kriterlerine göre) direnç veya intolerans gelişen hastalarda ilaç değişikliği gereklidir. İkinci basamakta spesifik bir JAK1/2 inhibitörü olan <strong>Ruxolitinib</strong> oldukça etkilidir; hematokrit ve dalak boyutunda kontrol sağlarken, PV ile ilişkili pruritus ve gece terlemesi gibi semptomları da dramatik olarak iyileştirir.</p>"
+    },
+    {
+      "heading": "Yenilikçi Hedefe Yönelik Tedaviler",
+      "html": "<ul class=\"mb-4\"><li><strong>Hepsidin Mimetikleri (Rusfertide/PTG-300):</strong> Demirin makrofajlardan salınımını bloke ederek (ferroportin üzerinden) eritropoez için gerekli demir miktarını kısıtlar. <em>VERIFY</em> çalışmalarında <strong>flebotomi ihtiyacını neredeyse tamamen ortadan kaldırmış</strong> ve hematokriti başarılı bir şekilde < %45'in altında tutmuştur.</li><li><strong>MDM2 İnhibitörleri (İdasanutlin, Navtemadlin):</strong> TP53 yolak aktivasyonunu artırarak apoptosisi uyarır; ancak gastrointestinal yan etkiler kullanımını sınırlayabilmektedir.</li><li><strong>HDAC İnhibitörleri (Givinostat):</strong> JAK2 V617F mutant hücrelerini selektif olarak hedefler. Semptom kontrolü ve allel yükünde azalma ile umut vericidir.</li><li><strong>LSD1 İnhibitörleri (Bomedemstat):</strong> Hematopoietik farklılaşma üzerine etkili LSD1'i inhibe ederek hücre proliferasyonunu kısıtlar.</li></ul>"
+    },
+    {
+      "heading": "Prognoz ve Komplikasyonlar",
+      "html": "<p>PV indolent bir hastalıktır ve medyan sağkalım genel olarak on yılı aşsa da, hastalık zamanla <strong>post-polistemik miyelofibrozise (PPV-MF)</strong> veya Akut Miyeloid Lösemiye (<strong>MPN-BP</strong>) dönüşebilir.</p><p>Lösemik transformasyon riski yaş, uzamış hastalık süresi, anormal sitogenetik ve özellikle sekonder <strong>TP53 mutasyonu</strong> varlığı ile doğrudan ilişkilidir. Tedaviye dirençli MPN-BP durumunda transplantasyon (HSCT) veya HMA (hipometile edici ajanlar) + <em>Venetoclax</em> kombinasyonları değerlendirilebilir.</p>"
+    }
+  ]
+}

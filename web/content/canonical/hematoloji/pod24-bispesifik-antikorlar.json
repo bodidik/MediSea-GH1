@@ -1,0 +1,31 @@
+{
+  "title": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "Bispesifik Antikorlar", "POD24", "İleri Okuma"],
+    "parent": "folikuler-lenfoma",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "POD24 Vakalarında Bispesifik Antikorların Yeri",
+      "html": "<p>CD3xCD20 bispesifik T-hücre yönlendirici antikorlar (BsAb) olan <em>mosunetuzumab</em>, <em>epcoritamab</em> ve <em>odronextamab</em>, relaps veya refrakter foliküler lenfoma (FL) tedavisinde önemli bir yere sahiptir. BsAb'ler, yüksek riskli alt gruplarda, özellikle ilk basamak tedaviden sonraki 24 ay içinde progresyon gösteren (<strong>POD24</strong>) hastalarda oldukça yüksek etkinlik göstermektedir.</p><p><em>Mosunetuzumab</em> ile yapılan çalışmalarda, POD24 durumu gibi yüksek risk faktörlerinden bağımsız olarak genel popülasyona benzer şekilde <strong>%80.9 oranında Genel Yanıt Oranı (ORR)</strong> ve <strong>%59.6 oranında Tam Yanıt (CR)</strong> sağlandığı gösterilmiştir. Benzer şekilde, <em>epcoritamab</em> da POD24 alt grubunda yanıt oranlarının genel hasta grubuyla benzer olduğunu kanıtlamıştır.</p><p>CAR-T hücre tedavilerine kıyasla <strong>'off-the-shelf' (hazır)</strong> olmaları, kişiselleştirilmiş üretim süresi gerektirmemeleri ve hızlıca başlanabilmeleri, POD24 gibi hastalığın agresif seyrettiği ve hızlı müdahale gerektiren durumlarda bu ajanları oldukça cazip kılmaktadır. Ayrıca hücresel tedavilere göre daha yönetilebilir bir toksisite profiline sahip olmaları, poliklinik şartlarında dahi uygulanabilmelerine olanak tanır.</p>"
+    },
+    {
+      "heading": "Yan Etki Yönetimi: Sitokin Salınım Sendromu (CRS)",
+      "html": "<p>BsAb tedavilerinde hastaların yaklaşık yarısında <strong>Sitokin Salınım Sendromu (CRS)</strong> görülmektedir, ancak bu vakaların büyük çoğunluğu Evre 1 veya 2 şiddetindedir ve Evre 3 ve üzeri ciddi CRS görülme oranı %5'in altındadır. CRS riskini ve şiddetini azaltmak için tüm ajanlarda 1. siklusta <strong>basamaklı doz artırımı (step-up dosing)</strong> stratejisi uygulanır ve tedavi öncesi (premedikasyon) olarak kortikosteroidler verilir.</p><p>Çoğu CRS olgusu tedavinin ilk 1-2 siklusunda ortaya çıkar ve geçicidir. Yönetimde hastalar CRS semptomları açısından eğitilmeli, ateş takibi yapabilmeli ve gerektiğinde kullanılmak üzere oral deksametazon reçete edilmelidir. İlerleyen CRS durumlarında IL-6 inhibitörü <em>tosilizumab</em> ve sistemik kortikosteroidler başarıyla kullanılmaktadır. İlk tam dozun ardından 24 saatlik kısa süreli hastaneye yatış ve monitörizasyon düşünülebilir.</p>"
+    },
+    {
+      "heading": "Nörotoksisite (ICANS)",
+      "html": "<p>CAR-T hücre tedavilerinden farklı olarak, BsAb'lerde <strong>immün efektör hücre ile ilişkili nörotoksisite sendromu (ICANS)</strong> oldukça nadirdir ve saptanan vakaların neredeyse tamamı Evre 1-2 düzeyindedir. Nörotoksisitenin nadir olması nedeniyle, CAR-T tedavisindeki gibi sıkı nörolojik değerlendirmelere veya araç kullanma kısıtlamalarına çoğu durumda gerek duyulmaz.</p>"
+    },
+    {
+      "heading": "Enfeksiyonlar ve Sitopeniler",
+      "html": "<p>BsAb kullanımında nötropeni ve enfeksiyonlar en sık karşılaşılan ve dikkat edilmesi gereken yan etkilerdir. Klinik çalışmalarda özellikle COVID-19 kaynaklı fatal enfeksiyonlar bildirilmiştir. Enfeksiyon riski, hastalığın ilerlemesine veya toleranssızlığa kadar <strong>sürekli tedavi (indefinite treatment)</strong> olarak uygulanan ajanlarda (<em>epcoritamab, odronextamab</em>), <strong>sabit süreli (fixed-duration)</strong> uygulanan ajanlara (<em>mosunetuzumab</em>) kıyasla daha yaygın olabilir. Nötropeni gelişen hastalarda büyüme faktörü (<strong>G-CSF</strong>) desteği düşünülebilir.</p>"
+    },
+    {
+      "heading": "Profilaksi ve İmmünglobulin Takibi",
+      "html": "<p>Tüm hastalara profilaktik olarak <strong>Varisella-Zoster Virüs (VZV)</strong> profilaksisi başlanmalıdır. Özellikle sık kortikosteroid kullanılan <em>epcoritamab</em> ve <em>odronextamab</em> gibi ajanlarda <strong>Pneumocystis jirovecii (PJP)</strong> profilaksisi de endikedir. Hastalarda aktif bir enfeksiyon gelişirse BsAb dozları enfeksiyon düzelene kadar bekletilmelidir.</p><p>Uzamış B-hücre deplesyonuna bağlı olarak hipogammaglobulinemi sık görülür; hastaların immünglobulin (IgG) seviyeleri yakından izlenmeli ve özellikle enfeksiyon geçiren hastalarda <strong>intravenöz immünglobulin (IVIG)</strong> replasmanı planlanmalıdır.</p>"
+    }
+  ]
+}

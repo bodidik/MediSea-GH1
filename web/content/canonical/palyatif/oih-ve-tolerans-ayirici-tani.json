@@ -1,0 +1,31 @@
+{
+  "title": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Algoloji", "Opioid", "OIH", "Hiperaljezi", "Tolerans", "NMDA", "Ayırıcı Tanı"],
+    "parent": "opioidler-ana-sayfa",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "⚖️ Uzman Özeti: İki Farklı Fenomen",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Opioid kaynaklı hiperaljezi (OIH) ve opioid toleransı, her ikisi de opioidlerin analjezik etkisinin azalmasına yol açsa da, klinik görünümleri ve altta yatan mekanizmaları açısından birbirlerinden belirgin şekilde ayrılan iki farklı fenomendir.</p>"
+    },
+    {
+      "heading": "1. Doz Artışına Verilen Yanıt (Klinik Ayırıcı Tanı)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Klinik ortamda bu iki durumu ayırt etmenin en pratik yolu, ilaç dozunun artırılmasına verilen yanıttır:</p>  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-1\">Tolerans (Direnç)</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">Tekrarlanan opioid kullanımı sonucunda ilaca verilen yanıtın azalmasıdır; ancak bu durumda <strong>doz artırıldığında ağrı kontrolü iyileşir.</strong></p></div><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-1\">OIH (Paradoksal Yanıt)</h4><p class=\"text-xs text-rose-800 leading-relaxed\">Opioidlere maruz kalmanın ağrı duyarlılığını paradoksal olarak artırdığı bir durumdur. OIH'de <strong>doz artırıldığında ağrı azalmak yerine daha da kötüleşir.</strong></p></div></div>"
+    },
+    {
+      "heading": "2. Ağrının Niteliği ve Dağılımı",
+      "html": "<ul class=\"space-y-3 text-sm text-slate-800\"><li class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><strong class=\"text-indigo-700 block mb-1 text-xs uppercase tracking-wider\">Tolerans Gelişimi:</strong> Genellikle mevcut ağrının kontrol altına alınamaması veya analjezi süresinin (etki süresinin) kısalması şeklinde kendini gösterir.</li><li class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm\"><strong class=\"text-rose-700 block mb-1 text-xs uppercase tracking-wider\">Hiperaljezi (OIH):</strong> Ağrı, orijinal durumun ilerlemesiyle açıklanamayacak şekilde kötüleşir. Genellikle yaygın (diffüz) ağrı veya orijinal ağrı bölgesinden farklı anatomik alanlarda ağrı <strong>(allodini)</strong> hissedilmesiyle karakterizedir.</li></ul>"
+    },
+    {
+      "heading": "3. Altta Yatan Mekanizmalar",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Tolerans Mekanizması</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Esas olarak hücresel adaptasyon süreçlerine dayanır. Reseptörlerin duyarsızlaşması (desensitizasyon), internalizasyonu veya aşağı regülasyonu (downregulation) sonucunda <strong>fonksiyonel reseptör sayısının azalmasıyla</strong> ilişkilidir.</p></div></div><div><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">OIH Mekanizması</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Bir \"duyarlılaşma\" (sensitization) sürecidir. Merkezi glutaminerjik sistemdeki değişiklikler, spinal dinorfin içeriğinin artması ve özellikle <strong>NMDA reseptör sisteminin aktivasyonu</strong> bu süreçte kritik rol oynar.</p></div></div></div> "
+    },
+    {
+      "heading": "4. Tedavi ve Yönetim Yaklaşımları",
+      "html": "<div class=\"space-y-4\"><div class=\"bg-teal-50 border border-teal-100 p-4 rounded-xl\"><h4 class=\"font-black text-teal-800 text-xs uppercase mb-1\">Tolerans Yönetimi</h4><p class=\"text-xs text-teal-900 leading-relaxed\">Genellikle opioid dozunun titrasyonu (artırılması) veya bir opioidden diğerine geçiş yapılarak (opioid rotasyonu) <strong>\"eksik çapraz tolerans\"tan</strong> faydalanılmasıyla yönetilir.</p></div><div class=\"bg-amber-50 border border-amber-100 p-4 rounded-xl\"><h4 class=\"font-black text-amber-800 text-xs uppercase mb-1\">OIH Yönetimi</h4><p class=\"text-xs text-amber-900 leading-relaxed\">Tedavi genellikle <strong>opioid dozunun azaltılmasını veya ilacın tamamen kesilmesini</strong> gerektirir; çünkü opioid miktarını düşürmek ağrı duyarlılığını paradoksal olarak azaltabilir. Ayrıca <strong>NMDA reseptör antagonistleri</strong> (örn: ketamin) veya düşük doz naltrekson gibi adjuvan tedaviler kullanılabilir.</p></div><div class=\"bg-slate-800 p-5 rounded-2xl text-center shadow-md\"><p class=\"text-sm text-white font-medium italic tracking-wide\">\"Tolerans ilacın etkisinin kaybıdır, hiperaljezi ise ağrının ilaca bağlı olarak aktif bir şekilde artmasıdır.\"</p></div></div>"
+    }
+  ]
+}

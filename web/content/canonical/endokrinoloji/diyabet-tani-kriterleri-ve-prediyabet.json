@@ -1,0 +1,31 @@
+{
+  "title": "Diyabet Tanı Kriterleri, Tarama ve Prediyabet",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Diyabet", "HbA1c", "OGTT", "Prediyabet", "ADA"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Klinik Modül:</strong> ADA 2025 ve Harrison 21st Ed standardizasyonu baz alınmıştır.</em></p>"
+    },
+    {
+      "heading": "1. Diyabet Tanı Kriterleri: Dört Altın Yol",
+      "html": "<p>Tanı konulması için aşağıdaki kriterlerden birinin varlığı yeterlidir. Asemptomatik hastalarda tanının <strong>farklı bir günde, aynı veya farklı bir testle</strong> doğrulanması şarttır:</p><ul class=\"mb-4\"><li><strong>HbA1c:</strong> ≥ %6.5 (NGSP sertifikalı ve DCCT standartlarına uygun laboratuvar).</li><li><strong>Açlık Plazma Glukozu (APG):</strong> ≥ 126 mg/dL (En az 8 saatlik açlık sonrası).</li><li><strong>OGTT (75 gr) 2. Saat:</strong> ≥ 200 mg/dL (Dünya Sağlık Örgütü standartlarında).</li><li><strong>Rastgele Plazma Glukozu:</strong> ≥ 200 mg/dL + <strong>Klasik Hiperglisemi Semptomları</strong> (Poliüri, polidipsi, açıklanamayan kilo kaybı). <em>Not: Bu durumda doğrulama gerekmez.</em></li></ul>"
+    },
+    {
+      "heading": "2. HbA1c Ölçümünde Dikkat Edilmesi Gereken Tuzaklar",
+      "html": "<p>HbA1c, son 3 aylık ortalamayı yansıtır ancak eritrosit ömrünü değiştiren durumlarda yanıltıcıdır:</p><ul class=\"mb-4\"><li><strong>Yanlış Düşük HbA1c:</strong> Hemolitik anemi, gebelik (2. ve 3. trimester), eritropoetin tedavisi, akut kan kaybı.</li><li><strong>Yanlış Yüksek HbA1c:</strong> Demir eksikliği anemisi, B12 eksikliği, splenektomi.</li><li><em>Klinik İnci:</em> Bu durumlarda glisemik kontrolü değerlendirmek için <strong>Fruktozamin</strong> veya <strong>Glike Albümin</strong> (son 2-3 haftayı gösterir) tercih edilmelidir.</li></ul>"
+    },
+    {
+      "heading": "3. Prediyabet: Gri Bölge ve Vasküler Risk",
+      "html": "<p>Prediyabet, diyabet gelişimi ve kardiyovasküler hastalıklar için yüksek riskli bir durumdur:</p><ul class=\"mb-4\"><li><strong>Bozulmuş Açlık Glukozu (IFG):</strong> APG 100 - 125 mg/dL arası.</li><li><strong>Bozulmuş Glukoz Toleransı (IGT):</strong> OGTT 2. saat 140 - 199 mg/dL arası.</li><li><strong>Yüksek Riskli HbA1c:</strong> %5.7 - %6.4 arası.</li></ul>"
+    },
+    {
+      "heading": "4. Tarama Stratejisi: Kimleri Test Etmeliyiz?",
+      "html": "<ul class=\"mb-4\"><li><strong>Genel Popülasyon:</strong> Herhangi bir risk faktörü olmasa bile 35 yaşından itibaren herkes taranmalıdır.</li><li><strong>Riskli Bireyler:</strong> VKİ ≥ 25 kg/m² olan ve ek bir risk faktörü (Fiziksel inaktivite, birinci derece akrabada diyabet, HT, HDL < 35 mg/dL, PCOS, KVH öyküsü) bulunan yetişkinler yaşa bakılmaksızın taranmalıdır.</li><li><strong>Tekrar:</strong> Test sonuçları normalse tarama en az 3 yılda bir tekrarlanmalıdır.</li></ul>"
+    }
+  ]
+}

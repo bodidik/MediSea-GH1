@@ -1,0 +1,31 @@
+{
+  "title": "Diabetes İnsipidus: Poliüri ve Susuzluk Mekanizması",
+  "meta": {
+    "updatedAt": "18 Mar 2026",
+    "tags": ["Endokrinoloji", "Diabetes İnsipidus", "ADH", "Desmopressin", "Poliüri"],
+    "parent": "arka-hipofiz-bozukluklari-di-ve-siadh",
+    "order": 13
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Modülü: Patogenez",
+      "html": "<p><em>⚠️ Diabetes İnsipidus (DI), ADH (Vazopressin) yetersizliği veya böbreğin bu hormona yanıt vermemesi sonucu gelişen, idrar konsantrasyon yeteneğinin kaybıdır.</em></p><p>Günde >3 litre (bazen 20 litreye kadar) düşük osmolaliteli (<300 mOsm/kg) idrar çıkışı ile karakterizedir. Plazma osmolalitesi yükselir, hasta bu durumu polidipsi (aşırı su içme) ile kompanse etmeye çalışır.</p>"
+    },
+    {
+      "heading": "1. Sınıflandırma: Santral vs. Nefrojenik",
+      "html": "<ul class=\"mb-4\"><li><strong>Santral DI (ADH Eksikliği):</strong> Hipotalamus veya arka hipofiz hasarı. Nedenler: Travma, hipofiz cerrahisi, Sheehan sendromu, granülomatöz hastalıklar (Sarkoidoz, Histiyositoz X).</li><li><strong>Nefrojenik DI (ADH Direnci):</strong> Böbrek V2 reseptörlerinde veya akuaporin kanallarında defekt. Nedenler: <strong>Lityum kullanımı</strong>, hiperkalsemi, hipokalemi, polikistik böbrek hastalığı.</li><li><strong>Gestasyonel DI:</strong> Plasentadan salınan 'vazopressinaz' enziminin ADH'yı parçalaması.</li></ul>"
+    },
+    {
+      "heading": "2. Tanı: Su Kısıtlama (Miller-Moses) Testi",
+      "html": "<p>DI tanısında altın standarttır. Hasta susuz bırakılır ve idrar osmolalitesi izlenir:</p><ul class=\"mb-4\"><li><strong>Normal Yanıt:</strong> Susuz kalınca idrar osmolalitesi yükselir (idrar konsantre olur).</li><li><strong>DI Yanıtı:</strong> Susuzluğa rağmen idrar dilüe (düşük osmolaliteli) kalmaya devam eder.</li></ul><p><strong>Ayrıcı Tanı (Desmopressin Yanıtı):</strong> Susuzluk testi sonrası hastaya eksojen ADH (Desmopressin) verilir:</p><ul><li>İdrar osmolalitesi %50'den fazla artarsa: <strong>Santral DI</strong>.</li><li>İdrar osmolalitesinde artış olmazsa: <strong>Nefrojenik DI</strong>.</li></ul>"
+    },
+    {
+      "heading": "3. Tedavi Yönetimi",
+      "html": "<ul class=\"mb-4\"><li><strong>Santral DI:</strong> Temel tedavi <strong>Desmopressin (DDAVP)</strong>'dir (Oral, nazal veya IV).</li><li><strong>Nefrojenik DI:</strong> <ul><li>Neden olan ilaç (Lityum vb.) kesilir, elektrolit bozukluğu düzeltilir.</li><li><strong>Tiyazid Diüretikleri:</strong> Paradoksikal olarak proksimal tübülde su geri emilimini artırarak idrar miktarını azaltır.</li><li><strong>Amilorid:</strong> Özellikle Lityum kaynaklı DI'da tercih edilir.</li><li><strong>NSAİİ (İndometazin):</strong> Prostaglandinleri inhibe ederek ADH etkisini artırır.</li></ul></li></ul>"
+    },
+    {
+      "heading": "4. Kritik Uyarı: Adipsik DI",
+      "html": "<p>Hipotalamustaki susama merkezinin de hasar gördüğü vakalardır. Hasta su içme isteği duymaz; bu durum ölümcül hipernatremiye yol açabilir. Bu hastalar saatlik su içme çizelgeleriyle takip edilmelidir.</p>"
+    }
+  ]
+}

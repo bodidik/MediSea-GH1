@@ -1,0 +1,14 @@
+{
+  "title": "Adrenal (Sürrenal) Bez Hastalıkları",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Endokrin", "Adrenal", "Korteks", "Medulla"],
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Anatomi ve Fizyoloji",
+      "text": "<p>Her iki böbreğin üzerinde yer alan, hayati hormonları salgılayan bezlerdir. İki ana kısımdan oluşur: <strong>Korteks</strong> (Dış kabuk; Kortizol, Aldosteron, Androjenler) ve <strong>Medulla</strong> (İç kısım; Adrenalin, Noradrenalin).</p>"
+    }
+  ]
+}

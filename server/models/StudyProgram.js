@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';const Day=new mongoose.Schema({dayNo:Number,title:String,topics:[String],contentRefs:[String]});const S=new mongoose.Schema({code:{type:String,unique:true},title:String,lang:{type:String,enum:['tr','en'],default:'tr'},days:[Day]});export default mongoose.model('StudyProgram',S);

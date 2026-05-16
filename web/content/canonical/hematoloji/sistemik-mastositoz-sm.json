@@ -1,0 +1,39 @@
+{
+  "title": "Sistemik Mastositoz (SM)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "Sistemik Mastositoz", "UpToDate", "U", "KIT D816V"],
+    "parent": "miyeloproliferatif-neoplaziler-mpn-genel",
+    "order": 26
+  },
+  "sections": [
+    {
+      "heading": "📘 [U] İçerik Uyarısı (UpToDate Özeti)",
+      "html": "<p><em>⚠️ <strong>[U] İbaresi:</strong> Bu modül, <strong>UpToDate</strong> verileri temel alınarak hazırlanmış standart bir özettir. Yazarın kendi daha kapsamlı, özgün ve derinlemesine klinik notlarıyla karşılaştırıldığında eksiklikler barındırabilir. İlerleyen süreçte özgün notlarla revize edilecektir.</em></p>"
+    },
+    {
+      "heading": "Patogenez ve Sınıflandırma",
+      "html": "<p><strong>Sistemik mastositoz (SM)</strong>, klonal mast hücrelerinin kemik iliği, deri, karaciğer, dalak ve gastrointestinal kanal gibi ekstrakütanöz dokularda birikimi ile karakterize heterojen bir neoplazidir. Olguların %90'ından fazlasında mast hücrelerinin büyüme, farklılaşma ve apoptozdan kaçışını sağlayan <strong>KIT D816V</strong> somatik mutasyonu saptanır.</p><p>Hastalık iki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>İleri Olmayan (İndolan) SM:</strong> Genellikle indolan seyirli, yaşam süresinin onyıllarla ölçüldüğü gruptur. (Kİ Mastositozu [BMM], İndolan SM [ISM], Smoldering SM [SSM]).</li><li><strong>İleri SM (advSM):</strong> Agresif seyirli, sistemik tedavi gerektiren ve prognozu kötü olan gruptur. (Agresif SM [ASM], Mast Hücreli Lösemi [MCL] ve Eşlik Eden Hematolojik Neoplazm ile Birlikte SM [SM-AHN]).</li></ul>"
+    },
+    {
+      "heading": "Tanı Kriterleri (DSÖ ve ICC)",
+      "html": "<p>SM tanısı için <strong>1 Majör ve 1 Minör</strong> kriter VEYA <strong>3 Minör</strong> kriter karşılanmalıdır:</p><ul class=\"mb-4\"><li><strong>Majör Kriter:</strong> Kemik iliği veya diğer ekstrakütanöz organlarda triptaz gibi özel boyalarla saptanan, <strong>15 veya daha fazla</strong> mast hücresi içeren multifokal, yoğun mast hücresi agregatlarının tespiti.</li><li><strong>Minör Kriterler:</strong><br>1. İleri organ kesitlerindeki infiltratlarda mast hücrelerinin <strong>>%25'inin iğsi (spindle)</strong> veya atipik morfolojide olması.<br>2. Kanda veya dokuda <strong>KIT kodon 816 (örn. D816V)</strong> mutasyonunun tespiti.<br>3. Mast hücrelerinin normal belirteçlere ek olarak aberan şekilde <strong>CD25 ve/veya CD2</strong> eksprese etmesi.<br>4. Serum total triptaz düzeyinin kalıcı olarak <strong>>20 ng/mL</strong> olması (SM-AHN varsa geçersizdir).</li></ul>"
+    },
+    {
+      "heading": "B ve C Bulguları (Hastalık Yükü ve Organ Hasarı)",
+      "html": "<p><strong>B Bulguları (Hastalık Yükü):</strong></p><ul class=\"mb-4\"><li>Kemik iliğinde odaklarda yoğun mast hücresi infiltrasyonunun <strong>>%30</strong> olması ve serum total triptaz düzeyinin <strong>>200 ng/mL</strong> olması (veya KIT D816V allel frekansının ≥%10 olması).</li><li>Organ fonksiyon bozukluğu <em>olmaksızın</em> hepatomegali, splenomegali ve/veya lenfadenopati tespiti.</li><li>Mast hücresi dışındaki serilerde displazi/proliferasyon (ancak AHN kriterlerini tam karşılamayan) belirtileri.</li></ul><p><strong>C Bulguları (Organ Disfonksiyonu):</strong></p><ul class=\"mb-4\"><li>Neoplastik infiltrasyona bağlı belirgin sitopeniler (Nötrofil <1.000, Hb <10 g/dL, Trombosit <100.000).</li><li>Karaciğer fonksiyon bozukluğu, asit/portal hipertansiyon ile birlikte hepatomegali veya hipersplenizm ile giden splenomegali.</li><li>Büyük (≥2 cm) osteolitik iskelet lezyonları veya GİS infiltratlarına bağlı malabsorpsiyon/kilo kaybı.</li></ul>"
+    },
+    {
+      "heading": "Tanı ve Değerlendirme Yaklaşımı",
+      "html": "<p><strong>Başlangıç Testleri:</strong> Bazal serum total triptaz düzeyi, periferik yayma, karaciğer enzimleri ve kanda yüksek duyarlılıklı PCR ile KIT D816V analizi mutlaka yapılmalıdır.</p><p><strong>Kemik İliği Biyopsisi:</strong> Ekstrakütanöz bulguları/cilt lezyonları olan yetişkinlerde veya REMA skoru ≥2 olan hastalarda sistemik değerlendirme amacıyla endikedir. Retikülin boyaması ile birlikte CD117, CD25 ve triptaz immünohistokimyası uygulanmalıdır.</p><p><strong>İleri Genetik İnceleme:</strong> Özellikle ileri evre (advSM) hastalarında prognostik risk sınıflandırması ve AHN komponentini değerlendirmek için <em>SRSF2, ASXL1 ve RUNX1 (S/A/R)</em> başta olmak üzere çoklu gen NGS paneli çalışılması önerilir.</p>"
+    },
+    {
+      "heading": "Tedavi Yönetimi",
+      "html": "<p><strong>İleri Olmayan (İndolan) SM Tedavisi:</strong></p><ul class=\"mb-4\"><li><strong>Semptom Yönetimi:</strong> Tetikleyicilerden (NSAİİ, sıcak, böcek sokması) kaçınmak esastır. Anafilaksi riski için tüm hastalara <strong>Epinefrin otoenjektörü</strong> reçete edilmelidir. H1/H2 antihistaminikler ve kromolin sodyum kullanılır.</li><li><strong>Dirençli Vakalar:</strong> Dirençli anafilaksi için Omalizumab (Anti-IgE) kullanılabilir. Semptom yükü ağır olanlarda FDA onaylı <strong>Avapritinib (25 mg/gün)</strong> verilebilir.</li></ul><p><strong>İleri Evre (advSM) Tedavisi:</strong></p><ul class=\"mb-4\"><li><strong>Avapritinib:</strong> Trombosit >50.000 olan ve intrakraniyal kanama riski bulunmayan advSM hastalarında ilk tercih edilen spesifik KIT inhibitörüdür (dozaj 200 mg/gün).</li><li><strong>Midostaurin:</strong> Kontrendikasyon nedeniyle Avapritinib verilemeyen durumlarda FDA/EMA onaylı multikinaz inhibitörüdür.</li><li><strong>Allojenik HCT:</strong> İleri SM'de yegane küratif potansiyeli olan tedavidir. Yüksek riskli mutasyonlara (S/A/R) sahip, agresif hastalarda (özellikle MCL ve yüksek riskli SM-AHN) düşünülmelidir.</li></ul>"
+    },
+    {
+      "heading": "Prognoz ve Risk Skorlaması",
+      "html": "<p>İndolan SM'de yaşam beklentisi normale yakındır (sadece %3 agresif forma progresyon). Ancak ileri evre SM'de medyan sağkalım ASM için yaklaşık 41 ay, MCL için ise <2 yıl ile oldukça kötüdür.</p><p>İleri yaş (>60), yüksek LDH/ALP, trombositopeni ve <strong>ek genetik anomalilerin (SRSF2, ASXL1, RUNX1 - S/A/R)</strong> saptanması çok güçlü kötü prognostik göstergelerdir.</p>"
+    }
+  ]
+}

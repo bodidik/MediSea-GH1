@@ -1,0 +1,35 @@
+{
+  "title": "Diyabetin Kronik Komplikasyonları",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Nefropati", "Retinopati", "Nöropati", "Albuminüri", "KVH"],
+    "parent": "diabetes-mellitus-ana",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & ADA 2026 Standards of Care referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Mikrovasküler Hasar Mekanizması",
+      "html": "<p>Yüksek glukoz, hücre içinde <strong>Sorbitol</strong> birikimine, <strong>İleri Glikozillenme Son Ürünleri (AGE)</strong> oluşumuna ve Protein Kinaz C aktivasyonuna yol açar. Bu süreç kılcal damar bazal membranını kalınlaştırarak organ hasarını başlatır.</p>"
+    },
+    {
+      "heading": "2. Diyabetik Nefropati (Diyabetik Böbrek Hastalığı)",
+      "html": "<p>Dünya genelinde son dönem böbrek yetmezliğinin (SDBY) en sık nedenidir.</p><ul class=\"mb-4\"><li><strong>Evreleme:</strong> Albuminüri düzeyine göre (UACR: İdrar Albümin/Kreatinin Oranı) takip edilir. UACR > 30 mg/g 'artmış' kabul edilir.</li><li><strong>Klinik İnci:</strong> Tip 1 diyabette tanıdan 5 yıl sonra, Tip 2 diyabette ise <strong>tanı anında</strong> (hastalığın ne zaman başladığı bilinmediği için) tarama başlamalıdır.</li><li><strong>Tedavi:</strong> ACE inhibitörleri veya ARB'ler (kan basıncından bağımsız renal koruma) ve proteinüriyi azaltan <strong>SGLT-2 inhibitörleri</strong> temel taşlardır.</li></ul>"
+    },
+    {
+      "heading": "3. Diyabetik Retinopati",
+      "html": "<p>Erişkinlerde körlüğün en sık nedenidir. İki ana evreye ayrılır:</p><ul class=\"mb-4\"><li><strong>Non-proliferatif:</strong> Mikroanevrizmalar, sert eksudalar ve 'cotton-wool' lekeleri.</li><li><strong>Proliferatif:</strong> İskemiye yanıt olarak <strong>Neovaskülarizasyon</strong> (yeni damar oluşumu) başlar. Bu damarlar kırılgandır; vitreus kanamasına ve traksiyonel retinal dekolmana yol açabilir.</li></ul>"
+    },
+    {
+      "heading": "4. Diyabetik Nöropati",
+      "html": "<p>En sık görülen form <strong>Distal Simetrik Polinöropati</strong>'dir ('Eldiven-çorap' tarzı uyuşma ve ağrı). Ancak otonom nöropati (Gastroparezi, erektil disfonksiyon, ağrısız MI riski) mortalite açısından daha tehlikelidir.</p>"
+    },
+    {
+      "heading": "5. Makrovasküler Komplikasyonlar",
+      "html": "<p>Diyabet, aterosklerozu hızlandırır. Tip 2 diyabetli bir hasta için <strong>Kardiyovasküler Hastalık (KVH)</strong> en sık ölüm nedenidir. Hedef sadece şekeri değil; kan basıncı (<130/80 mmHg) ve LDL kolesterolü (<55-70 mg/dL) de agresif şekilde yönetmektir.</p>"
+    }
+  ]
+}

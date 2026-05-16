@@ -1,0 +1,44 @@
+{
+  "title": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": [
+      "Endokrinoloji",
+      "SIADH",
+      "Hiponatremi",
+      "Kopeptin",
+      "Tolvaptan",
+      "ODS",
+      "V2-Reseptör",
+      "SGLT2i"
+    ],
+    "parent": "arka-hipofiz-bozukluklari-di-ve-siadh",
+    "order": 12
+  },
+  "sections": [
+    {
+      "heading": "1. Patofizyoloji ve Moleküler Mekanizmalar",
+      "html": "<p>SIADH, plazma osmolalitesinin düşük olmasına ve hipovolemi bulunmamasına rağmen, Arjinin Vazopressin (AVP) hormonunun ozmotik olmayan yollarla uygunsuz salınımı ile karakterize bir su tutulumu bozukluğudur. AVP, böbrek toplayıcı kanallarındaki bazolateral <strong>V2 reseptörlerine</strong> bağlanarak cAMP yolağını aktive eder ve apikal membrana <strong>Akuaporin-2 (AQP2)</strong> su kanallarının yerleşimini uyarır. Ayrıca AVP, üre taşıyıcılarını (<strong>UT-A1</strong>) aktive ederek medüller interstisyel osmolaliteyi ve idrar konsantrasyon kapasitesini artırır.</p><p>Su tutulumu, ECF hacminde hafif artışla 'basınç natriürezi'ni tetikler, aldosteronu baskılar ve ANP'yi artırır. Kronik dönemde böbrek, V2 reseptörlerini aşağı regüle ederek (down-regulation) su tutulumunu sınırlamaya çalışır; buna <strong>'antidiürezden kaçış' (vasopressin escape)</strong> denir.</p>"
+    },
+    {
+      "heading": "2. AVP/Kopeptin Salınım Paternleri ve Alt Tipler",
+      "html": "<ul class=\"mb-4\"><li><strong>Tip A:</strong> Osmolaliteden bağımsız, düzensiz ve yüksek AVP salınımı (En sık).</li><li><strong>Tip B (Reset Osmostat):</strong> AVP salınım eşiği daha düşük osmolaliteye set edilmiştir; sodyum 125-135 mmol/L arasında stabildir.</li><li><strong>Tip C:</strong> Düşük osmolalitelerde anormal (baskılanamayan) AVP sızıntısı.</li><li><strong>Tip D:</strong> Ölçülemeyen AVP/Kopeptin seviyelerine rağmen SIADH (Nefrojenik SIAD - V2 reseptör aktive edici mutasyonu).</li><li><strong>Tip E (Barostat Reset):</strong> Artan osmolalite ile kopeptin konsantrasyonunun lineer düşüşü.</li></ul>"
+    },
+    {
+      "heading": "3. Klinik ve Nörokognitif Etkiler",
+      "html": "<p><strong>Akut (<48 sa):</strong> Ani beyin ödemi, nöbet, KİBAS ve herniasyon riski. <br><strong>Kronik (>48 sa):</strong> Beyin hücreleri inorganik elektrolitleri ve organik ozmolitleri (miyoinozitol, glutamin, taurin) dışarı atarak adapte olur. Ancak kronik hiponatremi; dikkat eksikliği, reaksiyon süresinde uzama ve kognitif disfonksiyon yaratır. Ayrıca kemikteki V1 reseptörleri aracılığıyla osteoklast aktivasyonu artar, kemik mineral yoğunluğu azalır ve kırık riski yükselir.</p>"
+    },
+    {
+      "heading": "4. Tanısal Algoritma ve İleri Tetkikler",
+      "html": "<ul class=\"mb-4\"><li><strong>Plazma Osmolalitesi:</strong> < 275 mOsm/kg.</li><li><strong>İdrar Osmolalitesi:</strong> > 100 mOsm/kg (Sıklıkla > 500 mOsm/kg).</li><li><strong>İdrar Sodyumu:</strong> > 30 mmol/L (Klinik övolemi ile).</li><li><strong>FE-UA (Fraksiyone Ürik Asit):</strong> > %12 olması, özellikle diüretik kullananlarda %100'e yakın pozitif öngörü değerine sahiptir.</li><li><strong>Adrenal Dışlama:</strong> Sabah kortizolü > 300 nmol/L olmalıdır; aksi halde ACTH stimülasyon testi gerekir.</li></ul>"
+    },
+    {
+      "heading": "5. Akut ve Kronik Yönetim Stratejileri",
+      "html": "<ul class=\"mb-4\"><li><strong>Acil Tedavi:</strong> Nörolojik semptomda <strong>%3 Hipertonik Salin (100-150 mL bolus)</strong>. Aralıklı bolus, sürekli infüzyona göre daha güvenli ve hızlıdır.</li><li><strong>Sıvı Kısıtlaması (FR):</strong> İlk basamak. <strong>Furst Oranı (UNa + UK / SNa) > 1</strong> ise FR başarısızlık ihtimali yüksektir.</li><li><strong>Vaptanlar (Tolvaptan):</strong> 7.5 mg düşük dozla başlanır; serbest su erişimi engellenmemelidir.</li><li><strong>Üre Tedavisi:</strong> 15-60 g/gün. Ozmotik diürez sağlar. <strong>Nöroprotektif:</strong> Hücre içi organik ozmolit depolarını yenileyerek ODS'ye karşı korur.</li><li><strong>SGLT2 İnhibitörleri (Empagliflozin):</strong> Proksimal tübülde ozmotik diürez yaratarak serbest su atılımını artıran yeni bir alternatiftir.</li></ul>"
+    },
+    {
+      "heading": "6. ODS ve Re-lowering (Geri Düşürme) Protokolü",
+      "html": "<p>Sodyum düzeltme sınırı 24 saatte 8-10 mmol/L (yüksek riskli grupta 6-8 mmol/L) aşılmamalıdır. <br>⚠️ <strong>Re-lowering:</strong> Aşırı düzeltmede sodyumu derhal güvenli sınıra çekmek için <strong>IV %5 Dekstroz + Desmopressin (DDAVP)</strong> uygulanır.</p>"
+    }
+  ]
+}

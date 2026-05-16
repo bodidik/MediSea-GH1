@@ -1,0 +1,19 @@
+{
+  "title": "Reprodüktif Endokrinoloji",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Reprodüktif", "Gonad", "PCOS", "Testosteron", "Harrison"],
+    "parent": null,
+    "order": 0
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>Bu sayfa, üreme sisteminin hormonal kontrolünü ve klinik bozukluklarını inceleyen akademik serinin ana merkezidir.</em></p>"
+    },
+    {
+      "heading": "📚 Seri İçeriği",
+      "html": "<ul class=\"list-none p-0\"><li>🧬 <strong>Bölüm 1:</strong> HHG Aksı ve Steroidogenez Fizyolojisi</li><li>🌸 <strong>Bölüm 2:</strong> Polikistik Over Sendromu (PCOS)</li></ul>"
+    }
+  ]
+}

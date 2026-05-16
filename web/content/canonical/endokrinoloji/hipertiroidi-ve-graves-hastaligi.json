@@ -1,0 +1,35 @@
+{
+  "title": "Hipertiroidi ve Graves Hastalığı",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipertiroidi", "Graves", "Tirotoksikoz", "Tiroid Fırtınası", "TRAB"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 ATA Hyperthyroidism Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Terminoloji: Tirotoksikoz vs. Hipertiroidi",
+      "html": "<p>Klinik pratikte karıştırılan iki kavram:</p><ul class=\"mb-4\"><li><strong>Tirotoksikoz:</strong> Kaynağı ne olursa olsun (aşırı alım, tiroidit, üretim artışı) dokuların aşırı tiroid hormonuna maruz kalmasıdır.</li><li><strong>Hipertiroidi:</strong> Tiroid bezinin <strong>aktif olarak</strong> fazla hormon sentezlemesi durumudur.</li></ul>"
+    },
+    {
+      "heading": "Graves Hastalığı: Otoimmün Fırtına",
+      "html": "<p>Hipertiroidinin en sık nedenidir (%60-80). TSH reseptörüne karşı gelişen uyarıcı antikorlar (<strong>TRAb / TSI</strong>) sorumludur.</p><ul class=\"mb-4\"><li><strong>Graves Triadı:</strong> Hipertiroidi, Oftalmopati (Ekzoftalmi) ve Pretibial Miksödem (Dermopati).</li><li><strong>Oftalmopati:</strong> Göz arkasındaki fibroblastların TRAb etkisiyle çoğalması ve glikozaminoglikan birikimi sonucu oluşur. ⚠️ <em>Klinik İnci:</em> Sigara içmek oftalmopati riskini ve şiddetini dramatik artırır.</li></ul>"
+    },
+    {
+      "heading": "Etiyolojik Ayrım: Sintigrafi ve İyot Uptake",
+      "html": "<p>Tanı konduktan sonra nedenin belirlenmesi tedaviyi değiştirir:</p><ul class=\"mb-4\"><li><strong>Yüksek Radyoaktif İyot Tutulumu (RAIU):</strong> Graves, Toksik Multinodüler Guatr, Toksik Adenom.</li><li><strong>Düşük Radyoaktif İyot Tutulumu (RAIU):</strong> Tiroiditler (hasar sonucu dökülme), Eksojen hormon alımı, Jod-Basedow (iyot yüklenmesi).</li></ul>"
+    },
+    {
+      "heading": "Tedavi Seçenekleri: Üç Silahşörler",
+      "html": "<ul class=\"mb-4\"><li><strong>1. Antitiroid İlaçlar (ATİ):</strong> Metimazol (ilk seçenek) ve Propiltiyoürasil (PTU). ⚠️ <em>Kritik Yan Etki:</em> <strong>Agranülositoz</strong> (ateş ve boğaz ağrısı olan hastada hemen tam kan bakılmalı). PTU özellikle gebeliğin ilk trimesterinde ve tiroid fırtınasında tercih edilir.</li><li><strong>2. Radyoaktif İyot (RAİ):</strong> Bezdeki aktif hücreleri yok eder. Oftalmopatisi olanlarda steroid koruması altında yapılmalıdır.</li><li><strong>3. Cerrahi (Tiroidektomi):</strong> Büyük guatr, malignite şüphesi veya kesin çözüm isteyenlerde tercih edilir.</li><li><strong>Beta Blokerler (Propranolol):</strong> Semptomatik (taşikardi, titreme) kontrol için vazgeçilmezdir.</li></ul>"
+    },
+    {
+      "heading": "Tiroid Fırtınası: Acil Durum Yönetimi",
+      "html": "<p>Hayatı tehdit eden, dekompanse tirotoksikoz tablosudur. Tanı klinik olarak (Burch-Wartofsky skoru) konur.</p><ul class=\"mb-4\"><li><strong>Yönetim Sıralaması:</strong> <ul><li>1. Beta Bloker (Semptomlar için).</li><li>2. PTU (Hormon sentezini ve periferik T4->T3 dönüşümünü durdurur).</li><li>3. İyot (Lugol solüsyonu - <em>PTU'dan en az 1 saat sonra</em> verilmelidir).</li><li>4. Glukokortikoidler (Periferik dönüşümü engeller ve adrenal yetmezliği önler).</li></ul></li></ul>"
+    }
+  ]
+}

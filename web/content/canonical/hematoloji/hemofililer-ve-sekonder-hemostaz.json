@@ -1,0 +1,41 @@
+{
+  "title": "Hemofililer ve Sekonder Hemostaz Bozuklukları",
+  "meta": {
+    "updatedAt": "15 Mar 2026",
+    "tags": ["Hematoloji", "Hemostaz", "Koagülasyon", "Hemofili", "Faktör VIII", "Faktör IX", "aPTT", "Hemartroz"],
+    "parent": "benign-hematoloji",
+    "order": 46
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uyarı:</strong> MediSea</em></p>"
+    },
+    {
+      "heading": "Patofizyoloji: Sekonder Hemostaz ve Koagülasyon Kaskadı",
+      "html": "<p>Primer hemostaz sonucu oluşan geçici trombosit tıkacının, çözünmeyen ve sağlam bir <strong>çapraz bağlı fibrin ağına</strong> dönüştürülerek sabitlenmesi işlemine <strong>Sekonder Hemostaz</strong> denir. Bu süreç, karaciğerde sentezlenen inaktif proenzimlerin (koagülasyon faktörlerinin) şelale (kaskad) şeklinde birbirini aktive etmesiyle gerçekleşir.</p><p>Koagülasyon kaskadı klasik olarak üç yolağa ayrılır:</p><ul class=\"mb-4\"><li><strong>İntrinsik (İç) Yolak:</strong> Faktör XII, XI, IX ve VIII'i içerir. Laboratuvarda <strong>aPTT (Aktive Parsiyel Tromboplastin Zamanı)</strong> ile ölçülür.</li><li><strong>Ekstrinsik (Dış) Yolak:</strong> Doku Faktörü (TF) ve Faktör VII'yi içerir. Laboratuvarda <strong>PT (Protrombin Zamanı)</strong> ile ölçülür.</li><li><strong>Ortak Yolak:</strong> İki yolağın birleştiği, Faktör X, V, II (Protrombin) ve I (Fibrinojen) içeren son aşamadır. Her iki test (PT ve aPTT) tarafından da değerlendirilir.</li></ul>
+
+[Image of coagulation cascade intrinsic extrinsic common pathway]
+"
+    },
+    {
+      "heading": "Klinik Prezantasyon: Sekonder Hemostaz Kanamaları",
+      "html": "<p>Koagülasyon faktör eksikliklerinin klinik tablosu, trombosit hastalıklarından (peteşi, purpura, yüzeyel kanamalar) tamamen farklıdır. Karakteristik kanama profili şöyledir:</p><ul class=\"mb-4\"><li><strong>Derin Doku Kanamaları:</strong> Kas içi (intramüsküler) hematomlar, retroperitoneal kanamalar ve psoas kanamaları tipiktir.</li><li><strong>Hemartroz (Eklem İçi Kanama):</strong> Özellikle diz, ayak bileği ve dirsek gibi yük taşıyan büyük eklemlere spontan kanamalar görülür. Tekrarlayan hemartrozlar zamanla kıkırdak yıkımına, sinovyal hipertrofiye ve kalıcı eklem sakatlıklarına (hemofilik artropati) yol açar.</li><li><strong>Gecikmiş Kanama:</strong> Travma, diş çekimi veya cerrahi sonrasında kanama hemen durmuş gibi görünür (çünkü trombosit tıkacı normal çalışır), ancak saatler veya günler sonra fibrin ağı kurulamadığı için kanama <em>yeniden ve şiddetli</em> başlar.</li></ul>
+
+[Image of hemarthrosis knee joint bleeding hemophilia]
+"
+    },
+    {
+      "heading": "Hemofili A ve B (Genetik ve Patofizyoloji)",
+      "html": "<p>Hemofililer, <strong>X kromozomuna bağlı (X-linked) resesif</strong> geçiş gösteren, bu nedenle neredeyse sadece erkeklerde görülen (kadınlar taşıyıcıdır) klasik koagülasyon defektleridir.</p><ul class=\"mb-4\"><li><strong>Hemofili A (Klasik Hemofili):</strong> Vakaların %80-85'ini oluşturur. İntrinsik yolağın kritik bir kofaktörü olan <strong>Faktör VIII (FVIII)</strong> eksikliğidir.</li><li><strong>Hemofili B (Christmas Hastalığı):</strong> Vakaların %15-20'sidir. İntrinsik yolakta FVIII ile kompleks oluşturan <strong>Faktör IX (FIX)</strong> eksikliğidir.</li></ul><p>Klinik şiddet, kanda kalan faktör düzeyine göre belirlenir: <%1 Ağır (spontan hemartrozlar sıktır), %1-5 Orta (küçük travmalarla kanar), %5-40 Hafif (sadece majör cerrahi veya travmada kanar).</p>"
+    },
+    {
+      "heading": "Laboratuvar Tanısı ve Karışım Testi (Mixing Study)",
+      "html": "<p>Tipik bir hemofili hastasında primer hemostaz testleri (trombosit sayısı ve kanama zamanı) ve ekstrinsik yolak (PT) tamamen normaldir.</p><ul class=\"mb-4\"><li><strong>aPTT Uzaması:</strong> FVIII ve FIX intrinsik yolakta yer aldığından <strong>aPTT belirgin şekilde uzamıştır</strong>.</li><li><strong>Kesin Tanı:</strong> Spesifik Faktör VIII ve Faktör IX aktivite düzeylerinin ölçülmesiyle konur.</li><li>⚠️ <strong>Karışım Testi (Mixing Study):</strong> Uzamış aPTT'nin nedeninin bir <em>faktör eksikliği</em> mi (Hemofili) yoksa faktörü yıkan bir <em>otoantikor/inhibitör</em> mü (Örn: Lupus antikoagülanı veya edinsel hemofili) olduğunu ayırt etmek için yapılır. Hastanın plazması normal plazma ile (1:1) karıştırılır:<ul><li>Eğer aPTT normale dönerse (<strong>Düzelme var</strong>): Sorun eksikliktir, normal plazma eksik faktörü yerine koymuştur (<strong>Hemofili</strong>).</li><li>Eğer aPTT uzun kalmaya devam ederse (<strong>Düzelme yok</strong>): Kanda inhibitör vardır ve normal plazmadan gelen faktörleri de yıkmıştır.</li></ul></li></ul>"
+    },
+    {
+      "heading": "Tedavi Stratejileri ve Yeni Nesil Ajanlar",
+      "html": "<p>Tedavinin temel taşı eksik faktörün intravenöz olarak yerine konmasıdır (Replikasyon tedavisi).</p><ul class=\"mb-4\"><li><strong>Faktör Konsantreleri:</strong> Akut kanamalarda (talep tedavisi) veya ağır hemofililerde spontan kanamaları önlemek için düzenli aralıklarla (profilaksi) rekombinant FVIII veya FIX infüzyonları verilir.</li><li><strong>Desmopressin (DDAVP):</strong> Sadece <strong>Hafif Hemofili A</strong> vakalarında etkilidir. Endotel hücrelerindeki Weibel-Palade cisimciklerinden depolanmış vWF ve ona bağlı olan Faktör VIII'in kana salınımını artırarak geçici bir yükselme sağlar. (Hemofili B'de yeri yoktur).</li><li><strong>Emicizumab (Hemofili A):</strong> Faktör VIII'in görevini taklit eden (Faktör IXa ile Faktör X'u birbirine bağlayan) bispesifik monoklonal bir antikordur. Subkütan uygulanabilmesi ve faktör inhibitörü (antikor) gelişmiş hastalarda bile çalışması nedeniyle profilaksi kılavuzlarını kökten değiştirmiştir.</li><li><strong>Gen Tedavisi:</strong> Son yıllarda FVIII (Valoctocogene roxaparvovec) ve FIX (Etranacogene dezaparvovec) için adeno-ilişkili viral vektörlerle yapılan gen transferi tedavileri FDA onayı almış olup küratif potansiyel taşımaktadır.</li></ul>"
+    }
+  ]
+}

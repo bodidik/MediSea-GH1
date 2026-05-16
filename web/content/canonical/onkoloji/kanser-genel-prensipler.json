@@ -1,0 +1,25 @@
+{
+  "title": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": [
+      "Onkoloji",
+      "Evreleme",
+      "TNM",
+      "Kemoterapi",
+      "İmmünoterapi"
+    ],
+    "parent": "onkoloji-hastaliklari",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Yaklaşım ve Evreleme (TNM)",
+      "text": "<p>Kanser tanısı doku biyopsisi ile kesinleşir. Evreleme, prognoz ve tedavi için temeldir. <strong>T</strong> (Tümör boyutu), <strong>N</strong> (Lenf nodu tutulumu) ve <strong>M</strong> (Metastaz) sistemine göre yapılır. Performans durumu (ECOG veya Karnofsky) tedavi kararını belirler.</p>"
+    },
+    {
+      "heading": "Tedavi Modaliteleri",
+      "text": "<div class='grid gap-4 md:grid-cols-3 mt-4'><div class='bg-gray-50 p-3 rounded border border-gray-300'><h5 class='font-bold text-gray-900'>1. Kemoterapi</h5><p class='text-xs mt-1 text-gray-700'>Hızlı bölünen hücreleri hedefler (Sitotoksik). Yan etkiler: Alopesi, Mukozi, Myelosüpresyon.</p></div><div class='bg-blue-50 p-3 rounded border border-blue-300'><h5 class='font-bold text-blue-900'>2. Hedefe Yönelik</h5><p class='text-xs mt-1 text-gray-700'>Kanser hücresindeki spesifik mutasyonları (örn. EGFR, ALK, HER2) bloke eder. 'Akıllı İlaçlar' olarak bilinir.</p></div><div class='bg-purple-50 p-3 rounded border border-purple-300'><h5 class='font-bold text-purple-900'>3. İmmünoterapi</h5><p class='text-xs mt-1 text-gray-700'>Bağışıklık sisteminin kanseri tanımasını sağlar (Checkpoint İnhibitörleri: PD-1/PD-L1, CTLA-4).</p></div></div>"
+    }
+  ]
+}

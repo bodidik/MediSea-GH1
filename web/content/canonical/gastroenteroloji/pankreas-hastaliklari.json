@@ -1,0 +1,35 @@
+{
+  "title": "Pankreas Hastalıkları: Akut, Kronik ve Neoplaziler",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Gastroenteroloji", "Pankreas", "Pankreatit", "Amilaz", "Lipaz", "Ranson"],
+    "parent": null,
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Modülü",
+      "html": "<p><em>⚠️ Pankreas hastalıkları, erken tanının hayati olduğu 'enzimatik bir bombadır'. Harrison 21st Ed & 2025 American College of Gastroenterology (ACG) Guidelines referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Akut Pankreatit: Otodijesyon Fırtınası",
+      "html": "<p>Pankreas enzimlerinin (tripsinojen vb.) parankim içinde vaktinden önce aktive olup organı 'sindirmesi'dir.</p><ul class=\"mb-4\"><li><strong>Etiyoloji:</strong> En sık iki neden <strong>Safra Taşları</strong> ve <strong>Alkol</strong>'dür. Diğerleri: Hipertrigliseridemi (>1000 mg/dL), ERCP sonrası ve ilaçlar.</li><li><strong>Klinik:</strong> Sırta vuran kuşak tarzında şiddetli epigastrik ağrı, bulantı, kusma.</li><li><strong>Tanı:</strong> En az 2 kriter olmalı: (1) Tipik ağrı, (2) Amilaz/Lipaz > 3 kat artış, (3) BT/MR görüntüleme bulguları. <em>Not:</em> <strong>Lipaz</strong>, amilaza göre daha spesifiktir ve kanda daha uzun süre yüksek kalır.</li></ul>"
+    },
+    {
+      "heading": "2. Şiddet Tayini ve Ranson Kriterleri",
+      "html": "<p>Prognozu belirlemek için başvuruda ve 48. saatte bakılan parametreler kritiktir. <strong>BISAP skoru</strong> ve <strong>Balthazar BT skorlaması</strong> modern pratikte yaygın kullanılır. Şiddetli vakalarda 'Sıvı Resüsitasyonu' tedavinin en önemli basamağıdır.</p>"
+    },
+    {
+      "heading": "3. Kronik Pankreatit: Kalıcı Hasar",
+      "html": "<p>Tekrarlayan inflamasyon atakları sonucu parankimin fibrozise uğraması ve fonksiyon kaybıdır. <strong>Triad:</strong> Pankreatik kalsifikasyon + Steatore (yağlı dışkı) + Diyabetes Mellitus.</p><ul class=\"mb-4\"><li><strong>Tanı:</strong> Altın standart 'Sekretin Stimülasyon Testi'dir ancak pratikte <strong>Fekal Elastaz-1</strong> düşüklüğü ve BT'de kalsifikasyonlar kullanılır.</li></ul>"
+    },
+    {
+      "heading": "4. Pankreas Adenokarsinomu",
+      "html": "<p>Gastrointestinal sistemin en kötü prognozlu kanserlerinden biridir. Genellikle <strong>pankreas başında</strong> yerleşir.</p><ul class=\"mb-4\"><li><strong>Risk Faktörleri:</strong> Sigara (en güçlü), kronik pankreatit, aile öyküsü (BRCA2, Peutz-Jeghers).</li><li><strong>Klinik:</strong> Ağrısız tıkanma sarılığı (Courvoisier bulgusu - ele gelen gergin safra kesesi) ve kilo kaybı.</li><li><strong>Belirteç:</strong> <strong>CA 19-9</strong> tanıdan ziyade tedavi takibinde kullanılır.</li></ul>"
+    },
+    {
+      "heading": "5. Komplikasyonlar: Psödokist ve Nekroz",
+      "html": "<ul class=\"mb-4\"><li><strong>Psödokist:</strong> Epitel döşemesi olmayan sıvı koleksiyonu. 6 haftadan uzun sürerse veya semptomatikse drenaj gerektirir.</li><li><strong>Nekrotizan Pankreatit:</strong> Enfekte nekroz varlığında mortalite tavan yapar; ince iğne aspirasyonu (İİA) ile kültür gerekebilir.</li></ul>"
+    }
+  ]
+}

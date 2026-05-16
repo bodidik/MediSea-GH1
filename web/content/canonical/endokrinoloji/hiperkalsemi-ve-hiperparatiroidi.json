@@ -1,0 +1,35 @@
+{
+  "title": "Hiperkalsemi ve Primer Hiperparatiroidi",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hiperkalsemi", "PTH", "Hiperparatiroidi", "Sestamibi", "Cinacalcet"],
+    "parent": "kalsiyum-metabolizmasi-ana",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2024 International Workshop on PHPT referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Etiyoloji: %90 Kuralı",
+      "html": "<p>Ayaktan hastalarda hiperkalseminin en sık nedeni <strong>Primer Hiperparatiroidi</strong> iken, yatan hastalarda en sık neden <strong>Malignite</strong>'dir.</p><ul class=\"mb-4\"><li><strong>Primer Hiperparatiroidi:</strong> Genellikle tek bir paratiroid adenomu (%85).</li><li><strong>Malignite:</strong> PTHrP (PTH ilişkili protein) salınımı (Skuamöz hücreli CA) veya kemik metastazları.</li><li><strong>İlaçlar:</strong> Tiyazid diüretikleri (idrarda kalsiyum atılımını azaltır) ve Lityum (PTH eşiğini yükseltir).</li></ul>"
+    },
+    {
+      "heading": "Klinik: 'Stones, Bones, Groans, Moans'",
+      "html": "<p>Hiperkalsemi klasik olarak şu dörtlü ile hatırlanır:</p><ul class=\"mb-4\"><li><strong>Stones (Taşlar):</strong> Nefrolitiazis (Böbrek taşları).</li><li><strong>Bones (Kemikler):</strong> Osteopeni/Osteoporoz, kemik ağrıları ve patolojik kırıklar.</li><li><strong>Groans (İnlemeler):</strong> GİS semptomları (Kabızlık, bulantı, pankreatit, peptik ülser).</li><li><strong>Moans (Sızlanmalar):</strong> Nöropsikiyatrik bulgular (Depresyon, konfüzyon, letarji).</li><li>⚠️ <em>Kardiyak:</em> EKG'de <strong>QT mesafesinde kısalma.</strong></li></ul>"
+    },
+    {
+      "heading": "Tanı: PTH Odaklı Ayırıcı Tanı",
+      "html": "<p>Hiperkalsemi saptandığında ilk adım <strong>Serum PTH</strong> ölçümüdür:</p><ul class=\"mb-4\"><li><strong>PTH Yüksek/Normal:</strong> PTH-Bağımlı (Primer Hiperparatiroidi veya FHH). <ul><li><em>FHH (Ailesel Hipokalsiürik Hiperkalsemi):</em> Ayırt etmek için 24 saatlik idrar kalsiyumu bakılır (FHH'de idrar kalsiyumu düşüktür).</li></ul></li><li><strong>PTH Düşük (< 20 pg/mL):</strong> PTH-Bağımsız (Malignite, Vitamin D intoksikasyonu, Sarkoidoz taranmalı).</li></ul>"
+    },
+    {
+      "heading": "Primer Hiperparatiroidi'de Cerrahi Endikasyonları",
+      "html": "<p>Asemptomatik hastalarda şu kriterlerden biri varsa cerrahi önerilir:</p><ul class=\"mb-4\"><li>Serum kalsiyumu normalin üst sınırından <strong>> 1.0 mg/dL</strong> yüksekse.</li><li>Genç yaş (<strong>< 50 yaş</strong>).</li><li>Böbrek tutulumu (GFR < 60 mL/dk veya 24st idrar Ca > 400 mg/gün veya taş öyküsü).</li><li>Kemik tutulumu (DEXA T-skoru <strong>< -2.5</strong> veya vertebra kırığı).</li></ul>"
+    },
+    {
+      "heading": "Akut Hiperkalsemik Kriz Yönetimi",
+      "html": "<p>Kalsiyum > 14 mg/dL ise acil müdahale gerekir:</p><ol class=\"mb-4\"><li><strong>Hidrasyon:</strong> En önemlisi. Bol IV İzotonik (%0.9 NaCl).</li><li><strong>Loop Diüretikleri (Furosemid):</strong> Sadece hidrasyon sağlandıktan sonra, kalsiüriyi artırmak için.</li><li><strong>Bisfosfonatlar (Zoledronik Asit):</strong> Osteoklastları inhibe eder (etkisi 24-48 saatte başlar).</li><li><strong>Kalsitonin:</strong> Hızlı ama geçici etki.</li><li><strong>Denosumab:</strong> Refrakter malignite vakalarında.</li></ol>"
+    }
+  ]
+}

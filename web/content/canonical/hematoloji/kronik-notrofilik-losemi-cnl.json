@@ -1,0 +1,31 @@
+{
+  "title": "Kronik Nötrofilik Lösemi (CNL)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "MPN", "CNL", "Kronik Nötrofilik Lösemi", "CSF3R", "Ruxolitinib", "Yapay Zeka Taslağı"],
+    "parent": "miyeloproliferatif",
+    "order": 24
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Genetik Patogenez",
+      "html": "<p><strong>Kronik Nötrofilik Lösemi (CNL)</strong>, periferik kanda ve kemik iliğinde displazi olmaksızın olgun (matür) nötrofillerin sürekli ve belirgin proliferasyonu ile karakterize, oldukça nadir görülen bir BCR-ABL1 negatif Miyeloproliferatif Neoplazmdır (MPN).</p><p><strong>CSF3R Mutasyonu:</strong> CNL patogenezinin mutlak merkezinde Koloni Uyarıcı Faktör 3 Reseptörü (<em>CSF3R</em>) genindeki aktive edici mutasyonlar yatar. Olguların %80-100'ünde, özellikle membran proksimal bölgesinde yer alan <strong>CSF3R T618I</strong> mutasyonu saptanır. Bu mutasyon, reseptörün liganddan (G-CSF) bağımsız olarak sürekli aktif kalmasına ve alt akım <strong>JAK-STAT yolağını</strong> aşırı uyarmasına neden olur. Kötü prognozla ilişkili <em>ASXL1</em> ve <em>SETBP1</em> mutasyonları da sıklıkla (%50-60) CSF3R'ye eşlik eder.</p>"
+    },
+    {
+      "heading": "Tanı Kriterleri (DSÖ ve ICC 2022)",
+      "html": "<p>CNL tanısı koyabilmek için reaktif (sekonder) nötrofilinin (enfeksiyon, inflamasyon, plazma hücreli diskraziler) kesin olarak dışlanması gerekir. Temel tanı kriterleri şunlardır:</p><ul class=\"mb-4\"><li><strong>Periferik Kan:</strong> Lökosit sayısının <strong>≥25 x 10^9/L</strong> olması. Bu hücrelerin <strong>≥%80'inin</strong> olgun (segmentli) nötrofil veya çomak (band) formunda olması. İmmatür granülositlerin (promiyelosit, miyelosit vb.) <%10, miyeloblastların ise <%1 olması.</li><li><strong>Kemik İliği:</strong> Hiperselüler Kİ'de nötrofilik granülopoezde belirgin artış. Eritroid ve megakaryositik serilerde <em>displazi olmaması</em>. Retikülin fibrozis genellikle yoktur veya çok hafiftir.</li><li><strong>Genetik:</strong> <strong>CSF3R</strong> mutasyonunun gösterilmesi (Eğer yoksa, reaktif nedenlerin dışlanması ve klonalitenin başka yollarla ispatı gerekir). <em>BCR::ABL1, PDGFRA, PDGFRB, FGFR1, PCM1-JAK2</em> rearanjmanlarının NEGATİF olması.</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Prognoz",
+      "html": "<p>Hastalar genellikle ileri yaşta (medyan 60-65) tanı alır. En sık görülen fizik muayene bulgusu progresif <strong>hepatosplenomegali</strong>'dir (hastaların büyük çoğunluğunda görülür). Yüksek nötrofil döngüsüne (turnover) bağlı olarak <strong>hiperürisemi, gut atakları</strong> ve pruritus sıktır. Mukokutanöz kanamalar ve trombotik olaylar görülebilir.</p><p><strong>Prognoz:</strong> Tarihsel olarak agresif seyirlidir (medyan sağkalım 2-3 yıl). Hastalığın doğal seyrinde <strong>refrakter sitopenilere, miyelofibrozise</strong> veya hızla <strong>Akut Miyeloid Lösemiye (AML)</strong> (%20-30 oranında) transformasyon riski yüksektir.</p>"
+    },
+    {
+      "heading": "Tedavi Yönetimi (Hedefe Yönelik Çağ)",
+      "html": "<p>Nadirliği nedeniyle standardize edilmiş geniş çaplı klinik çalışma verileri eksiktir, ancak güncel yaklaşım şu şekildedir:</p><ul class=\"mb-4\"><li><strong>Birinci Basamak Sitoredüksiyon:</strong> <strong>Hidroksiüre (HU)</strong>, lökosit sayısını ve dalak boyutunu kontrol etmek için hala en sık kullanılan ilk basamak ajandır. Ancak hastalık genellikle kısa sürede HU'ye dirençli hale gelir.</li><li><strong>JAK İnhibitörleri (Ruxolitinib):</strong> CSF3R T618I mutasyonunun JAK-STAT yolağını güçlü bir şekilde aktive ettiği anlaşıldıktan sonra, <strong>Ruxolitinib</strong> CNL tedavisinde devrim yaratmıştır. Özellikle HU dirençli/intoleran vakalarda nötrofil sayısını hızla düşürür, dalağı küçültür ve semptomları (kaşıntı, terleme) dramatik şekilde iyileştirir.</li><li><strong>Küratif Tedavi:</strong> Transplantasyona uygun (fit) ve yüksek riskli mutasyonlara (örn. <em>ASXL1, SETBP1</em>) sahip hastalarda, hastalık transforme olmadan (erken dönemde) <strong>Allojenik Kök Hücre Nakli (Allo-HSCT)</strong> yegane şifa seçeneğidir.</li></ul>"
+    }
+  ]
+}

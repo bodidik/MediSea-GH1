@@ -1,0 +1,23 @@
+{
+  "title": "ET'de Antiplatelet Optimizasyonu: Aspirin BID Stratejisi ve Farmakodinamik",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Hematoloji", "ET", "Aspirin Direnci", "ARES Çalışması", "COX-1", "TxA2"],
+    "parent": "esansiyel-trombositoz",
+    "order": 13
+  },
+  "sections": [
+    {
+      "heading": "1. 'Yalancı' Aspirin Direnci ve Trombosit Turnover Mekanizması",
+      "html": "<p>ET hastalarında görülen aspirin yetersizliği, gerçek bir dirençten ziyade <strong>yüksek trombosit turnover (yıkım-yapım hızı)</strong> ile ilişkilidir. Aspirin dolaşımdaki mevcut COX-1 enzimlerini kalıcı olarak asetillerken, kemik iliğinden sürekli salınan <strong>genç (retiküle) trombositler</strong> sisteme yeni, bloke edilmemiş COX-1 ve COX-2 enzimleri taşır.</p>"
+    },
+    {
+      "heading": "2. BID (Günde İki Kez) Dozlamanın Bilimsel Temeli",
+      "html": "<p><strong>ARES (Aspirin Regimens in Essential Thrombocythemia)</strong> çalışması, tek doz aspirinin 24 saatlik TxA2 inhibisyonu sağlamada yetersiz kaldığını kanıtlamıştır. Günde iki kez dozlama, gün içinde dolaşıma katılan genç trombositlerin de asetillenmesini sağlayarak trombosit aktivasyonunu kesintisiz baskılar.</p>"
+    },
+    {
+      "heading": "3. Klinik Uygulama ve Doz Optimizasyonu",
+      "html": "<ul class=\"mb-4\"><li><strong>Endikasyon:</strong> Standart QD doza rağmen dirençli vazomotor semptomları (eritromelalji, TİA benzeri ataklar) devam eden yüksek riskli hastalar.</li><li><strong>Dozlama Stratejisi:</strong> Gastrointestinal yan etki ve kanama riskini minimize etmek için toplam günlük dozun 100 mg civarında tutulması (örn. 2 x 50 mg veya 2 x 42 mg) önerilir.</li><li><strong>Dinamik Yönetim:</strong> Sitoredüktif tedavi (HU, IFN) ile trombosit sayısı normale dönen hastalarda turnover hızı yavaşlayacağı için <strong>standart tek doza (QD) geri dönülmelidir.</strong></li></ul>"
+    }
+  ]
+}

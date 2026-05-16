@@ -1,0 +1,27 @@
+{
+  "title": "t(14;18) Translokasyonunun Rolü",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "t(14;18)", "İleri Okuma", "Genetik"],
+    "parent": "folikuler-lenfoma",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "1. Kemik İliği Evresi ve Genetik Temel",
+      "html": "<p><strong>t(14;18)(q32;q21) translokasyonu</strong>, klasik FL vakalarının yaklaşık %85-90'ında saptanan ve patogenezi başlatan bir olaydır. B hücre gelişiminin erken dönemlerinde, kemik iliğindeki pre-B veya pro-B hücre evresinde gerçekleşir. Bu olay, RAG1 ve RAG2 enzimlerinin aracılık ettiği V(D)J rekombinasyonu sırasındaki bir DNA onarım hatası sonucunda meydana gelir. Sonuç olarak, kromozom 18q21'deki <em>BCL2</em> geni, kromozom 14q32'deki immünoglobulin ağır zincir (IGH) geninin güçlü promotör/enhancer elementlerinin kontrolü altına girer.</p>"
+    },
+    {
+      "heading": "2. BCL2 Aşırı Ekspresyonu ve Apoptoz Direnci",
+      "html": "<p>IGH promotörünün etkisiyle, anti-apoptotik bir protein olan BCL2'nin konstitütif ve yüksek düzeyde ekspresyonu (aşırı ekspresyon) gerçekleşir. Normalde germinal merkezde yüksek afiniteli antikor üretemeyen B hücreleri apoptoza yönlendirilirken, BCL2 aşırı ekspresyonu bu programlı hücre ölümünü bloke ederek hücrelere olağandışı ve uzamış bir sağkalım avantajı sağlar.</p>"
+    },
+    {
+      "heading": "3. Germinal Merkez Olayları ve Genomik İnstabilite",
+      "html": "<p>Apoptozdan kaçan bu 'kurucu' klonlar lenf düğümlerine göç ederek germinal merkez reaksiyonlarına dahil olurlar ve burada işlevselliklerini korurlar. Germinal merkezde, aktivasyon-indüklü sitidin deaminaz (AID) enziminin tetiklediği somatik hipermutasyon (SHM) ve sınıf değiştirme rekombinasyonu (CSR) süreçlerine maruz kalırlar. BCL2 sayesinde ölmeyen bu hücrelerde, AID aracılı bu süreçler hücresel genomik instabilite yaratarak ek lenfomajenik mutasyonların birikmesine zemin hazırlar.</p>"
+    },
+    {
+      "heading": "4. Yeterlilik Durumu ve İkincil Vuruşlar",
+      "html": "<p>t(14;18) translokasyonu ve BCL2 aşırı ekspresyonu FL gelişimi için gereklidir ancak tek başına yeterli değildir. Nitekim, sağlıklı yetişkinlerin periferik kanında veya lenfoid dokularında çok düşük seviyelerde t(14;18) taşıyan B hücreleri (FL-benzeri hücreler) tespit edilebilir ve bu kişilerin neredeyse hiçbiri lenfoma geliştirmez. Gerçek lenfomagenezin tamamlanması için <strong>KMT2D, CREBBP, EZH2, EP300</strong> gibi kromatin modifiye edici ve epigenetik regülatör genleri hedef alan, hücrenin terminal diferansiyasyonunu bozan ikincil (sürücü) mutasyonların da kazanılması şarttır.</p>"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Burkitt Lenfoma",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Burkitt Lenfoma", "c-MYC", "Tümör Lizis Sendromu", "Yapay Zeka Taslağı"],
+    "parent": "lenfomalar",
+    "order": 17
+  },
+  "sections": [
+    {
+      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
+      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
+    },
+    {
+      "heading": "Tanım ve Viyolojik Alt Tipler",
+      "html": "<p><strong>Burkitt Lenfoma</strong>, germinal merkez B hücrelerinden köken alan, son derece agresif (yüksek dereceli) bir Non-Hodgkin Lenfomadır. İnsanlarda bilinen en hızlı replike olan tümördür. Üç ana klinik varyantı bulunur:</p><ul class=\"mb-4\"><li><strong>Endemik (Afrika) Tip:</strong> Neredeyse tamamı <em>Epstein-Barr Virüsü (EBV)</em> ile ilişkilidir. Genellikle çocuklarda çene, yüz kemikleri ve orbita tutulumu ile prezante olur. Sıtma (malarya) endemik bölgeleriyle örtüşür.</li><li><strong>Sporadik Tip:</strong> Batı toplumlarında görülür. EBV birlikteliği daha düşüktür (~%20-30). En sık <strong>ileoçekal bölge</strong> (ileoçekal intussusepsiyon yapabilir), overler ve retroperitoneal alan gibi abdominal tutulumla gelir.</li><li><strong>İmmünyetmezlik İlişkili Tip:</strong> Genellikle HIV pozitif hastalarda (özellikle CD4 sayısı nispeten yüksekken dahi) veya solid organ nakli alıcılarında görülür.</li></ul>"
+    },
+    {
+      "heading": "Genetik Patogenez: c-MYC Translokasyonu",
+      "html": "<p>Hastalığın mutlak genetik karakteristiği, 8. kromozomdaki <strong>c-MYC</strong> proto-onkogeninin aktivasyonudur. Vakaların %80'inde <strong>t(8;14)(q24;q32)</strong> translokasyonu izlenir ve c-MYC, İmmünglobulin Ağır Zincir (IGH) promotörünün kontrolüne girer. Kalan vakalarda t(2;8) veya t(8;22) gibi hafif veya kappa zincir bölgelerine translokasyonlar görülür.</p><p>c-MYC'nin bu aşırı (konstitütif) ekspresyonu, hücre döngüsünü durdurulamaz bir şekilde hızlandırarak o devasa proliferasyon hızını (Ki-67 ~%100) yaratır.</p>"
+    },
+    {
+      "heading": "Morfoloji ve İmmünofenotip",
+      "html": "<p><strong>Morfoloji (Yıldızlı Gökyüzü):</strong> Biyopside, birbiriyle aynı boyutta (monomorfik), dar ve bazofilik (koyu mavi) sitoplazmalı, lipid vakuolleri içeren orta boy B hücrelerinden oluşan yoğun bir örtü izlenir. Hücreler o kadar hızlı çoğalır ve ölür (apoptoz) ki, bu hücre döküntülerini temizlemek için aralara makrofajlar (tingible-body macrophages) göç eder. Koyu renkli lenfosit denizinin ortasındaki bu soluk makrofajlar, klasik <strong>'Yıldızlı Gökyüzü' (Starry Sky)</strong> manzarasını oluşturur.</p><p><strong>İmmünofenotip:</strong> Olgun B hücre (CD19+, CD20+) ve germinal merkez (CD10+, BCL6+) belirteçleri pozitiftir. Ancak Foliküler Lenfoma ve DLBCL'den en büyük farkı, anti-apoptotik olan <strong>BCL2'nin NEGATİF</strong> olmasıdır. <strong>Ki-67 proliferasyon indeksi %95-100'dür.</strong></p>"
+    },
+    {
+      "heading": "Klinik Prezantasyon ve Hematolojik Aciller",
+      "html": "<p>Tümör boyutunun 24-48 saatte ikiye katlanması nedeniyle hastalar haftalar değil, <strong>günler içinde</strong> gelişen devasa kitlelerle başvurur. Karın ağrısı, asit, gastrointestinal kanama, barsak obstrüksiyonu (sporadik tipte) veya çene/yüz asimetrisi (endemik tipte) sık görülür. Kemik iliği ve <strong>Santral Sinir Sistemi (SSS)</strong> tutulum riski son derece yüksektir.</p><p>⚠️ <strong>Tümör Lizis Sendromu (TLS):</strong> Yüksek hücre döngüsü (spontan) veya kemoterapi başlanmasıyla hücrelerin hızla parçalanması sonucu kana devasa miktarda potasyum, fosfor ve ürik asit salınır. Bu durum akut böbrek yetmezliğine ve ölümcül aritmilere yol açar. Burkitt Lenfoma, TLS riskinin en yüksek olduğu malignitedir.</p>"
+    },
+    {
+      "heading": "Tedavi Stratejisi",
+      "html": "<p>Burkitt Lenfoma, standart lenfoma kemoterapisi olan R-CHOP'a iyi yanıt <em>vermez</em> (yetersiz kalır). Küratiftir ancak tedavisi son derece yoğun (intensive), kısa süreli ve SSS penetrasyonu yüksek rejimler gerektirir:</p><ul class=\"mb-4\"><li><strong>Yoğun Rejimler:</strong> CODOX-M/IVAC, Dose-adjusted (DA) EPOCH-R veya HyperCVAD gibi yüksek doz Metotreksat ve Sitarabin içeren, anti-CD20 (Rituksimab) destekli protokoller kullanılır.</li><li><strong>SSS Profilaksisi:</strong> Her hastaya mutlaka intratekal kemoterapi (MTX, Sitarabin) uygulanmalıdır.</li><li><strong>TLS Yönetimi:</strong> Kemoterapi öncesi ve sırasında agresif intravenöz hidrasyon, idrar alkalinizasyonu ve yüksek riskli hastalarda ürik asiti allantoin'e yıkan <strong>Rasburikaz</strong> enzimi hayat kurtarıcıdır.</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "KMT2D", "t(14;18) Negatif", "Genetik", "İleri Okuma"],
+    "parent": "folikuler-lenfoma",
+    "order": 9
+  },
+  "sections": [
+    {
+      "heading": "Genel Durum",
+      "html": "<p>Klasik foliküler lenfoma (FL) vakalarının büyük çoğunluğunda (yaklaşık %80-90) <strong>KMT2D (MLL2)</strong> mutasyonları saptanırken, t(14;18) negatif veya BCL2 negatif FL vakalarında KMT2D mutasyonlarının sıklığı klasik vakalara kıyasla belirgin şekilde daha düşüktür.</p>"
+    },
+    {
+      "heading": "Biyolojik ve Patogenetik Anlamı",
+      "html": "<p><strong>Geç Germinal Merkez Fenotipi:</strong> KMT2D fonksiyon kaybı mutasyonları, lenfosit proliferasyonunu artırıp B hücresi diferansiyasyonunu engelleyerek germinal merkez (GC) hücre genleşmesini (expansion) tetikler. t(14;18) negatif FL'lerde KMT2D mutasyon oranının düşük olması, bu tümörlerin gen ekspresyonu ve mikroRNA profilleriyle de desteklendiği üzere, <em>'geç germinal merkez (late/exit GC) fenotipine'</em> sahip olmaları konseptiyle biyolojik olarak kusursuz biçimde örtüşmektedir.</p><p><strong>Karşılaştırmalı Mutasyon Profili:</strong> t(14;18) ve BCL2 rearanjmanı negatif vakalarda KMT2D mutasyon frekansı azalırken, bunun aksine <strong>STAT6</strong> genindeki mutasyon sıklığı klasik t(14;18) pozitif FL'ye göre daha yüksek saptanmaktadır.</p>"
+    },
+    {
+      "heading": "Spesifik t(14;18) Negatif Alt Tiplerde KMT2D",
+      "html": "<p><strong>Pediatrik Tip FL (PTFL):</strong> Pediatrik tip FL'ler karakteristik olarak t(14;18) ve BCL2 rearanjmanı içermezler. Bu alt tipte klasik FL'de sık görülen epigenetik modifiye edici gen mutasyonları oldukça nadirdir. Ancak KMT2D mutasyonu, %16 gibi nispeten düşük bir oranda görülmesine rağmen PTFL grubunda en sık saptanan epigenetik modifiye edici alterasyon olarak öne çıkmaktadır.</p><p><strong>Primer Kutanöz Folikül Merkezli Lenfoma (PCFCL):</strong> Aynı şekilde genellikle t(14;18) negatif olan indolent seyirli primer kutanöz folikül merkezli lenfomalarda (PCFCL); nodal FL'ye kıyasla KMT2D ve CREBBP mutasyonları oldukça düşük bir frekansta (sadece %20-25 oranında) görülmektedir.</p>"
+    },
+    {
+      "heading": "Klinik Çıkarım",
+      "html": "<p><strong>Sonuç olarak,</strong> KMT2D mutasyonlarının t(14;18) negatif FL'lerdeki azalmış frekansı; bu alt grubun klasik FL patogenezinden ayrılarak farklı bir B hücre maturasyon aşamasından (özellikle <em>germinal merkezden çıkış evresi</em>) köken aldığını kanıtlayan klinik ve genetik açıdan kritik bir göstergedir.</p>"
+    }
+  ]
+}

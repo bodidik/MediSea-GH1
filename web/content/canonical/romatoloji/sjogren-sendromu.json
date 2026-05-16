@@ -1,0 +1,35 @@
+{
+  "title": "Sjögren Sendromu",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Romatoloji", "Sjögren", "Sicca", "Anti-Ro", "Anti-La", "Lenfoma"],
+    "parent": null,
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "🤖 Uzman Modülü",
+      "html": "<p><em>⚠️ Sjögren Sendromu, tükürük ve gözyaşı bezlerinin lenfositik infiltrasyonu (Sicca kompleksi) ile seyreden sistemik bir hastalıktır. Harrison 21st Ed & 2024 ACR/EULAR Sjögren Sınıflandırma Kriterleri referanslıdır.</em></p>"
+    },
+    {
+      "heading": "1. Patogenez: Epitelyal Sialadenit",
+      "html": "<p>Hastalığın temelinde B-hücre hiperaktivitesi ve ekzokrin bez epitelyal hücrelerinin lenfositler (özellikle CD4+ T hücreleri) tarafından infiltrasyonu yatar. <strong>Primer</strong> (tek başına) veya <strong>Sekonder</strong> (RA, SLE veya Skleroderma ile birlikte) görülebilir.</p>"
+    },
+    {
+      "heading": "2. Glandüler Bulgular: Sicca Kompleksi",
+      "html": "<ul class=\"mb-4\"><li><strong>Kseroftalmi (Göz Kuruluğu):</strong> Keratokonjonktivitis sikka, kum batması hissi ve kornea ülseri riski.</li><li><strong>Kserostomi (Ağız Kuruluğu):</strong> Çiğneme/yutma zorluğu, yaygın diş çürükleri ve oral kandidiyazis.</li><li><strong>Parotis Büyümesi:</strong> Hastaların %30-50'sinde görülür; genellikle bilateral ve ağrısızdır.</li></ul>"
+    },
+    {
+      "heading": "3. Ekstraglandüler (Sistemik) Tutulumlar",
+      "html": "<p>Sjögren sadece bezlerle sınırlı kalmaz:</p><ul class=\"mb-4\"><li><strong>Vaskülit:</strong> Genellikle purpura şeklinde (hipergamaglobulinemik purpura).</li><li><strong>Böbrek:</strong> İnterstisyel nefrit ve Tip 1 Renal Tübüler Asidoz (RTA) sık görülür.</li><li><strong>Nörolojik:</strong> Periferik duyusal nöropati.</li><li>⚠️ <strong>Lenfoma Riski:</strong> Sjögren hastalarında B-hücreli lenfoma (özellikle MALT lenfoma) gelişme riski genel popülasyona göre <strong>44 kat</strong> daha fazladır. Persistan parotis büyümesi ve düşük C4 seviyeleri risk göstergesidir.</li></ul>"
+    },
+    {
+      "heading": "4. Tanı: Seroloji ve Biyopsi",
+      "html": "<p>ACR/EULAR kriterlerine göre tanısal ağırlıklar:</p><ul class=\"mb-4\"><li><strong>Anti-Ro (SS-A) ve Anti-La (SS-B):</strong> En karakteristik antikorlar. Anti-Ro pozitifliği tanısal ağırlığı en yüksek kriterdir (%50-70 pozitiflik).</li><li><strong>Schirmer Testi:</strong> Gözyaşı üretiminin ölçülmesi (5 dakikada < 5 mm patolojiktir).</li><li><strong>Minör Tükürük Bezi Biyopsisi:</strong> Alt dudaktan alınır. <strong>Focus Score ≥ 1</strong> (4 mm²'de > 50 lenfosit) olması altın standarttır.</li></ul>"
+    },
+    {
+      "heading": "5. Tedavi Yönetimi",
+      "html": "<ul class=\"mb-4\"><li><strong>Semptomatik:</strong> Suni gözyaşları, siklosporin damlalar, oral pilokarpin (sekresyon artırıcı).</li><li><strong>Sistemik Tutulum:</strong> Hidroksiklorokin (artralji/halsizlik için), steroidler ve ağır organ tutulumunda Rituksimab (B-hücre deplesyonu).</li></ul>"
+    }
+  ]
+}

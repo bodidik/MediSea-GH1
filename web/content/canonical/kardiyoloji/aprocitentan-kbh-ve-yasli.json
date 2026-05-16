@@ -1,0 +1,23 @@
+{
+  "title": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+  "meta": {
+    "updatedAt": "03 May 2026",
+    "tags": ["Kardiyoloji", "Nefroloji", "Aprocitentan", "KBH", "Kalp Yetmezliği", "Diüretik", "YDUS İleri Okuma"],
+    "parent": "aprocitentan-direncli-hipertansiyon",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🔬 Neden En Çok KBH ve Yaşlılar Fayda Görüyor?",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">PRECISION çalışması, aprocitentanın &ge;75 yaş ve Evre 3-4 KBH hastalarında genel popülasyondan daha güçlü bir kan basıncı düşüşü sağladığını kanıtlamıştır. Bunun temel patofizyolojik nedenleri şunlardır:</p><div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-1 flex items-center gap-2\">1. Hiperkalemi Riski Olmayan 4. Basamak</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Evre 3-4 KBH'da (eGFR &lt; 30-45) klasik 4. basamak ajanı <strong>spironolakton kontrendikedir</strong> (hiperkalemi riski). Aprocitentan serum potasyumunu artırmaz, hemodinamiği bozmaz, bu nedenle bu popülasyonda ideal bir alternatiftir.</p></div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1 flex items-center gap-2\">2. Artmış Endotelin-1'in (ET-1) Bloke Edilmesi</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">İleri yaş, KBH ve diyabette <strong>ET-1 üretimi ve aktivitesi fizyolojik olarak artmıştır.</strong> RAAS blokerlerinin etkisiz kaldığı bu hiperaktif ET-1 durumunu dual bloke etmek daha dramatik bir kan basıncı düşüşü sağlar.</p></div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-1\">3. Nefroprotektif ve Antiproteinürik Etki</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Sadece kan basıncını düşürmekle kalmaz; makroalbüminürisi olanlarda albümin/kreatinin oranını (UACR) <strong>%28-31 azaltır.</strong> ET-1 blokajı inflamasyon ve fibrozisi azaltarak KBH progresyonunu yavaşlatır.</p></div></div>"
+    },
+    {
+      "heading": "🚨 Kesin Kontrendikasyonlar ve Kaçınılması Gerekenler",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">Kesinlikle Kaçınılması Gereken Durumlar</h4><ul class=\"text-[11.5px] text-slate-200 space-y-3 list-disc list-inside ml-1\"><li><strong>İleri Evre KY (NYHA III-IV / NT-proBNP &ge;500):</strong> PRECISION'da KY atağı nedeniyle yatan hastaların çoğu aprocitentan kolundadır. Semptomatik Kalp Yetmezliğinde KONTRENDİKEDİR.</li><li><strong>İleri Evre Böbrek Yetmezliği (eGFR &lt; 15):</strong> Diyaliz (Evre 5) hastalarında kullanımı araştırılmamıştır, önerilmez.</li><li><strong>Orta ve Şiddetli Karaciğer Yetmezliği:</strong> (Child-Pugh B ve C).</li><li><strong>Şiddetli Anemi:</strong> Plazma hacmini genişlettiği (hemodilüsyon) için bazal hemoglobinde 1-2 g/dL düşüş yapabilir. Aktif anemide başlanmamalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "💡 Klinik Yönetim: Diüretik Optimizasyonu",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İleri yaş ve KBH hastaları, ilacın en majör yan etkisi olan <strong>sıvı retansiyonu (ödem)</strong> açısından en yüksek risk altındaki gruptur.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Diüretik Sınıf Değişimi</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Övolemi sağlamak şarttır. eGFR &lt; 30 mL/dk altına düştüğünde tiyazidler etkisini yitirir. Bu hastalarda aprocitentan ile birlikte <strong>güçlü bir loop diüretiği (furosemid) veya yüksek doz tiyazid benzeri (klortalidon)</strong> kullanımına geçilmelidir.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Volüm Takibi ve Doz Seçimi</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Sıvı retansiyonu riski tedavinin ilk 4-6 haftasında en yüksektir. Yüksek riskli KBH hastalarında <strong>12.5 mg gibi düşük bir başlangıç dozu ile açılması</strong> ödemi tolere edilebilir düzeyde tutmak için en makul stratejidir.</p></div></div></div>"
+    }
+  ]
+}

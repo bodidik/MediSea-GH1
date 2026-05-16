@@ -1,0 +1,31 @@
+{
+  "title": "Adinamik Kemik Hastalığı: Vasküler Kalsifikasyon ve Kısır Döngü",
+  "meta": {
+    "updatedAt": "02 May 2026",
+    "tags": ["Nefroloji", "Adinamik Kemik Hastalığı", "Vasküler Kalsifikasyon", "Sklerostin", "Wnt Yolağı", "YDUS"],
+    "parent": "kbh-osteoporoz-ckd-mbd",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🔄 Uzman Özeti: Kemik-Damar Ekseni (Bone-Vascular Axis)",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700 mb-3\">Adinamik kemik hastalığı (ABD) ile vasküler kalsifikasyon arasındaki ilişki, pasif bir mineral çökmesinden ziyade <strong>&quot;kemik-damar ekseninde&quot; (bone-vascular axis)</strong> gerçekleşen aktif bir hücresel ve endokrinolojik süreçtir.</p>"
+    },
+    {
+      "heading": "1. Kemiğin Tamponlama Kapasitesinin Kaybı",
+      "html": "<div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Mineral Yükünün Yön Değiştirmesi</h4><p class=\"text-[11.5px] text-slate-700 leading-relaxed\">Düşük kemik döngüsü nedeniyle osteoblastik aktivite ve kemik yapımı durduğu için, kemik dokusu sistemik kalsiyum ve fosfor yükünü matrikse entegre etme (tamponlama) yeteneğini kaybeder. <strong>Diyetle veya ilaçlarla alınan fazla kalsiyum kemiğe gidemediği için kanda kalır ve doğrudan damar duvarına yönelir.</strong></p></div>"
+    },
+    {
+      "heading": "2. Vasküler Düz Kas Transdiferansiyasyonu",
+      "html": "<div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Osteojenik Dönüşüm ve Wnt Yolağı</h4><p class=\"text-[11.5px] text-amber-800 leading-relaxed mb-2\">Kanda artan kalsiyum, fosfor ve üremik toksin yükü, damar düz kas hücrelerinin fenotip değiştirerek <strong>osteoblast benzeri hücrelere dönüşmesine</strong> (osteojenik transdiferansiyasyon) neden olur.</p><p class=\"text-[11px] font-bold text-amber-900 bg-amber-200/50 p-2 rounded\">Kalsifikasyon Paradoksu: Bu süreç, damar duvarında Wnt/beta-katenin yolağının aktive olduğu aktif bir kemikleşme durumudur.</p></div>"
+    },
+    {
+      "heading": "3. Sklerostin Salınımı ve Ölümcül Kısır Döngü (YDUS Spotu)",
+      "html": "<div class=\"bg-rose-900 border border-rose-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-300 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">🚨 Sistemik Sklerostin Taşkını</h4><p class=\"text-[11.5px] leading-relaxed text-rose-100 mb-3\">Kalsifiye olan damar duvarındaki osteoblast benzeri hücreler, artan Wnt aktivitesini dengelemek amacıyla normalde kemik dokusuna özgü olduğu bilinen <strong>sklerostin proteinini lokal olarak üretmeye başlar.</strong></p><div class=\"bg-rose-950/50 p-4 rounded-xl border border-rose-800/50\"><strong class=\"text-[11px] text-rose-200 uppercase block mb-1\">Ölümcül Döngünün Mekanizması</strong><p class=\"text-[11px] text-slate-300 leading-relaxed\">Damardan kana karışıp sistemik dolaşıma &quot;taşan&quot; bu ekstra sklerostin, kemiğe geri dönerek oradaki Wnt/beta-katenin yolağını da bloke eder ve kemik yapımını daha şiddetli baskılar. Kemik yapımı daha da durunca kemiğin kalsiyum tamponlama kapasitesi tamamen sıfırlanır; bu da kalsiyumun damara gidişini ivmelendirerek <strong>adinamizm ve vasküler kalsifikasyon arasında ölümcül bir kısır döngü</strong> yaratır.</p></div></div>"
+    },
+    {
+      "heading": "4. Klinik Yönetim ve Kesin Kontrendikasyonlar",
+      "html": "<div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Neden Kaçınmalıyız?</h4><p class=\"text-[11.5px] text-slate-700 leading-relaxed mb-3\">Bu mekanizma, adinamik kemik hastalarında aşağıdaki ajanlardan neden kesinlikle kaçınmamız gerektiğini çok net açıklamaktadır:</p><ul class=\"text-[11px] text-slate-800 font-medium space-y-2 list-disc list-inside ml-1\"><li><strong>Kalsiyum Bazlı Fosfat Bağlayıcılar:</strong> Kalsiyum yükünü artırıp doğrudan damar duvarına yönlendirdikleri için.</li><li><strong>Bisfosfonatlar:</strong> Kemik döngüsünü ve yapımını daha da baskılayıp tamponlama kapasitesini tamamen sıfırladıkları için.</li></ul></div>"
+    }
+  ]
+}

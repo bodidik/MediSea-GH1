@@ -1,0 +1,23 @@
+{
+  "title": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)",
+  "meta": {
+    "updatedAt": "05 May 2026",
+    "tags": ["Endokrinoloji", "PBMAH", "Cushing Sendromu", "Genetik", "ARMC5", "KDM1A", "YDUS İleri Okuma"],
+    "parent": "cushing-sendromu-patofizyoloji-klinik",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🔬 1. PBMAH: Genetik Heterojenite ve Kalıtım",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Primer Bilateral Makronodüler Adrenal Hiperplazi (PBMAH), endojen Cushing sendromunun nadir (&#60;%2) bir nedenidir. Eskiden sporadik sanılsa da, günümüzde <strong>büyük oranda otozomal dominant kalıtımla</strong> ailevi geçiş gösterdiği kanıtlanmıştır. Temel mekanizma, tümör baskılayıcı gen inaktivasyonu ve ektopik reseptör ekspresyonudur.</p>"
+    },
+    {
+      "heading": "🧬 2. Temel Genetik Sürücüler (YDUS Spotları)",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-1 flex items-center gap-2\">ARMC5 Mutasyonları (En Sık Klasik Form)</h4><ul class=\"text-[11px] text-indigo-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Genetik/Mekanizma:</strong> Sporadik sanılan hastaların %25'inde germline ARMC5 mutasyonu saptanır. <em>\"İki vuruşlu\" (two-hit) modele</em> uyar (germline + somatik delesyon).</li><li><strong>Klinik Riskler:</strong> Fenotipik olarak daha şiddetli CS geliştirirler. <strong>Menenjiyom</strong> gelişimi klasik bir ailevi eşlikçidir. Ailede asemptomatik taşıyıcılık oranı çok yüksektir.</li></ul></div><div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-1 flex items-center gap-2\">KDM1A Mutasyonları (GIP-Bağımlı Form)</h4><ul class=\"text-[11px] text-amber-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Mekanizma:</strong> Besin/GIP bağımlı CS'nin genetik sürücüsüdür (Yemek yemekle kortizol artar). GIP ve LH/hCG reseptörlerinin devasa ektopik ekspresyonuna neden olur.</li><li><strong>Kanser Riski:</strong> Ailede <strong>Multipl miyelom, rektal kanser ve bronşiyal nöroendokrin tümör</strong> riskleri belirgin artmıştır. Derhal genetik ve kanser taraması gerektirir.</li></ul></div><div class=\"bg-slate-50 border border-slate-300 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-1 flex items-center gap-2\">GNAS Mutasyonu (McCune-Albright Sendromu)</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Pediatrik PBMAH olguları MAS'ın bir parçası olabilir. Gs alfa alt birimini kodlayan GNAS'ın somatik aktive edici mutasyonuna bağlıdır.</p></div></div>"
+    },
+    {
+      "heading": "3. Sendromik Birliktelikler ve Aile Tarama Algoritması",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Sendromik PBMAH Eşlikçileri</h4><ul class=\"text-[11px] text-slate-700 space-y-2 list-disc list-inside ml-1\"><li><strong>MEN1:</strong> %20'sinde adrenal lezyonlar saptanır.</li><li><strong>FAP (APC geni):</strong> Adrenal hiperplazi bildirilmiştir.</li><li><strong>Herediter Leiomyomatozis (FH geni):</strong> Bilateral hiperplazi eşlik edebilir.</li></ul></div></div><div><div class=\"bg-rose-900 border border-rose-700 p-4 rounded-xl shadow-xl text-white h-full\"><h4 class=\"font-black text-rose-300 text-[11px] uppercase mb-2\">Aile Taraması (Protokol)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed\">İndeks vakanın 25 yaş üstü 1. derece akrabaları taranmalıdır. İlk basamak biyokimyasal tarama <strong>1-mg DST'dir (&#60;1.8 olmalıdır).</strong> Anormallik saptanan bireylerde <strong>adrenal BT/MRG</strong> istenir ve ektopik reseptör (GIP vb.) testleri yapılır.</p></div></div></div>"
+    }
+  ]
+}

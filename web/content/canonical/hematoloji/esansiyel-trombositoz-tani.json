@@ -1,0 +1,23 @@
+{
+  "title": "ET Tanısal Yaklaşımı: DSÖ/ICC Kriterleri ve Morfolojik Diferansiyasyon",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Hematoloji", "ET Tanı", "DSÖ 5. Edisyon", "ICC 2022", "pre-PMF", "Kemik İliği Morfolojisi"],
+    "parent": "esansiyel-trombositoz",
+    "order": 11
+  },
+  "sections": [
+    {
+      "heading": "1. DSÖ ve ICC Tanı Kriterleri (2022/2024 Güncel)",
+      "html": "<p>ET tanısı için 4 majör kriterin tamamı veya ilk 3 majör + 1 minör kriter gereklidir:</p><ul class=\"mb-4\"><li><strong>Majör 1:</strong> Trombosit &ge; 450 x 10^9/L (Sürekli).</li><li><strong>Majör 2:</strong> Kİ Biyopsisi: İri, olgun, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryosit proliferasyonu; granülositik/eritroid seride artış olmaması.</li><li><strong>Majör 3:</strong> Dışlama: KML, PV, PMF, MDS kriterlerinin karşılanmaması (BCR::ABL1 negatifliği şart).</li><li><strong>Majör 4:</strong> Klonallik: <em>JAK2, CALR</em> veya <em>MPL</em> sürücü mutasyonu.</li><li><strong>Minör:</strong> Sürücü mutasyon yoksa; reaktif nedenlerin dışlanması veya klonal marker (<em>ASXL1, EZH2, TET2, SF3B1</em> vb.) varlığı.</li></ul>"
+    },
+    {
+      "heading": "2. Morfolojik Savaş: ET vs. Prefibrotik PMF (pre-PMF)",
+      "html": "<p>İzole trombositoz ile başvuran vakalarda en kritik ayrım pre-PMF'dir:</p><table class=\"min-w-full text-xs\"><thead><tr><th>Özellik</th><th>Esansiyel Trombositemi (ET)</th><th>Prefibrotik PMF (pre-PMF)</th></tr></thead><tbody><tr><td><strong>İlik Selüleritesi</strong></td><td>Yaşa göre normoselüler</td><td>Belirgin hiperselüler</td></tr><tr><td><strong>Megakaryositler</strong></td><td>İri, olgun, hiperlobüle, gevşek kümeler</td><td>Atipik, 'bulut benzeri' nükleus, sıkı kümeler</td></tr><tr><td><strong>Granülopoez</strong></td><td>Normal</td><td>Artmış (Sola kayma)</td></tr><tr><td><strong>Klinik/Laboratuvar</strong></td><td>Düşük LDH, splenomegali nadir</td><td>Yüksek LDH, anemi, lökositoz, splenomegali</td></tr></tbody></table>"
+    },
+    {
+      "heading": "3. Moleküler Algoritma ve Ayırıcı Tanı İpuçları",
+      "html": "<ul class=\"mb-4\"><li><strong>JAK2 VAF (Allel Yükü):</strong> ET'de genellikle <%20-25 iken, PV'de sıklıkla >%50 (homozigotlaşma) izlenir.</li><li><strong>Üçlü-Negatif ET:</strong> Sürücü mutasyon yoksa NGS ile epigenetik mutasyonlar (<em>ASXL1, EZH2</em>) klonallik kanıtı için aranmalıdır.</li><li><strong>MDS/MPN-RS-T:</strong> Trombositoza anemi ve %15+ halka sideroblast eşlik ediyorsa <em>SF3B1</em> mutasyonu sorgulanmalıdır.</li><li><strong>Herediter Trombositoz:</strong> Genç yaş ve mutasyon-negatif aile öyküsünde germline <em>THPO</em> veya <em>MPL S505N</em> bakılmalıdır.</li></ul>"
+    }
+  ]
+}

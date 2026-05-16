@@ -1,0 +1,35 @@
+{
+  "title": "Demir Eksikliği Anemisi (DEA)",
+  "meta": {
+    "updatedAt": "14 Mar 2026",
+    "tags": ["Hematoloji", "Anemi", "Demir Eksikliği", "Ferritin", "Mikrositik", "RDW", "U"],
+    "parent": "mikrositer-anemiler",
+    "order": 30
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ Geliştirilecek içerik</em></p>"
+    },
+    {
+      "heading": "Tanım ve Demir Metabolizması",
+      "html": "<p><strong>Demir Eksikliği Anemisi (DEA)</strong>, vücuttaki toplam demir depolarının tükenmesi sonucu, eritrosit yapımı için kemik iliğine yeterli demir sağlanamaması ve nihayetinde hemoglobin sentezinin bozulmasıyla karakterize <strong>mikrositik ve hipokromik</strong> bir anemidir.</p><p><strong>Demir Döngüsü:</strong> Demir duodenumdan emilir, kanda <em>Transferrin</em> ile taşınır ve dokularda (özellikle karaciğer ve makrofajlarda) <em>Ferritin</em> ve hemosiderin formunda depolanır. Demir emiliminin ana orkestra şefi karaciğerden salgılanan <strong>Hepsidin</strong> hormonudur. İnflamasyon veya demir fazlalığı durumunda hepsidin artar, enterositlerdeki <em>Ferroportin</em> kapılarını yıkarak demirin kana geçişini kilitler.</p>"
+    },
+    {
+      "heading": "Etiyoloji (Nedenler)",
+      "html": "<p>Demir eksikliği bir hastalık değil, <strong>bir bulgudur</strong>. Altta yatan kök neden mutlaka bulunmalıdır:</p><ul class=\"mb-4\"><li><strong>Kan Kaybı (En Sık):</strong> Gelişmiş ülkelerde erişkinlerdeki en sık nedendir. Kadınlarda <em>menoraji</em>, erkeklerde ve postmenopozal kadınlarda ise mutlaka <strong>Gastrointestinal (GİS) maligniteler / kanamalar</strong> (ülser, kolon kanseri, anjiyodisplazi) akla gelmelidir.</li><li><strong>Artmış İhtiyaç:</strong> Gebelik, laktasyon ve çocukluk/ergenlik dönemindeki hızlı büyüme evreleri.</li><li><strong>Emilim Kusurları:</strong> Çölyak hastalığı (duodenum tutulumu), bariyatrik cerrahi (mide baypası), atrofik gastrit ve H. pylori enfeksiyonu (mide asidinin azalması demir emilimini bozar).</li><li><strong>Yetersiz Alım:</strong> Gelişmekte olan ülkelerde en sık nedendir (yetersiz diyet, vegan beslenme).</li></ul>"
+    },
+    {
+      "heading": "Klinik Prezantasyon",
+      "html": "<p>Genel anemi semptomlarına (yorgunluk, solukluk, çarpıntı) ek olarak, dokularda demir eksikliğine bağlı spesifik (ve bazen tuhaf) bulgular ortaya çıkar:</p><ul class=\"mb-4\"><li><strong>Pika:</strong> Besin olmayan maddeleri (buz [pagofaji], toprak, kil, kağıt) yeme arzusu.</li><li><strong>Epitelyal Değişiklikler:</strong> <em>Koilonişi</em> (kaşık tırnak), saç dökülmesi, angular stomatit (dudak köşelerinde çatlaklar) ve ağrılı/düzleşmiş dil (atrofik glossit).</li><li><strong>Plummer-Vinson Sendromu:</strong> DEA, özofagusta web (ağ) oluşumu ve yutma güçlüğü (disfaji) üçlüsüdür. Skuamöz hücreli özofagus kanseri riski artmıştır.</li><li><strong>Nörolojik:</strong> Huzursuz Bacak Sendromu (Restless Legs Syndrome) DEA ile güçlü şekilde ilişkilidir.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Laboratuvar Bulguları",
+      "html": "<p>Laboratuvarda 3 aşamalı bir evrim izlenir: Önce depolar boşalır (Ferritin düşer), sonra kanda demir azalır, en son anemi (Hb ve MCV düşüşü) gelişir.</p><ul class=\"mb-4\"><li><strong>Periferik Yayma:</strong> <em>Mikrositik (MCV <80 fL)</em> ve <em>Hipokromik (soluk)</em> eritrositler, anizositoz (boyut farklılıkları) ve kalem (puro) hücreleri görülür.</li><li><strong>Demir Paneli (Altın Standart):</strong><ul><li><strong>Ferritin Düşüklüğü (<15-30 ng/mL):</strong> DEA için en spesifik testtir. Ancak ferritin bir akut faz reaktanı olduğu için inflamasyon, enfeksiyon veya karaciğer hastalığında <em>yalancı olarak normal/yüksek</em> çıkabilir.</li><li><strong>Serum Demiri:</strong> Düşüktür.</li><li><strong>Total Demir Bağlama Kapasitesi (TDBK / Transferrin):</strong> Yüksektir (Vücut demir aradığı için taşıyıcı protein üretimini artırır).</li><li><strong>Transferrin Satürasyonu:</strong> <strong><%16-20</strong> olması DEA'yı destekler.</li></ul></li><li><strong>RDW (Eritrosit Dağılım Genişliği):</strong> DEA'da <strong>yüksektir</strong> (farklı boyutlarda hücreler vardır). Talasemi taşıyıcılığında (minör) ise RDW genellikle normaldir. (<em>Mentzer İndeksi = MCV/RBC < 13 ise Talasemi, > 13 ise DEA lehinedir</em>).</li></ul>"
+    },
+    {
+      "heading": "Tedavi ve Yönetim Stratejileri",
+      "html": "<p>Öncelikli kural, aneminin altında yatan kanama odağını (özellikle GİS) bulmak ve tedavi etmektir.</p><ul class=\"mb-4\"><li><strong>Oral Demir Tedavisi:</strong> İlk seçenektir. Emilimi artırmak için <strong>aç karnına</strong> (veya C vitamini/portakal suyu ile) alınmalıdır. Çay, kahve, süt ve antiasitler emilimi bozar.<ul><li><em>Güncel Yaklaşım (Günaşırı Dozaj):</em> Her gün yüksek doz demir almak karaciğerden Hepsidin salınımını tetikleyerek ertesi günkü emilimi bloke eder. Bu nedenle günümüzde <strong>iki günde bir (günaşırı) tek doz</strong> oral demir verilmesi, hem emilimi artırmakta hem de GİS yan etkilerini (kabızlık, mide ağrısı, siyah dışkı) azaltmaktadır.</li></ul></li><li><strong>İntravenöz (IV) Demir Tedavisi:</strong> Oral demiri tolere edemeyenlerde, inflamatuar bağırsak hastalığı (IBH) olanlarda, kronik böbrek yetmezliğinde, ağır/hızlı kan kaybı olanlarda veya bariyatrik cerrahi geçirenlerde tercih edilir. Anafilaksi riski yeni nesil preperatlarda (Ferrik karboksimaltoz vb.) oldukça düşüktür.</li><li><strong>Yanıtın Takibi:</strong> Tedaviye ilk yanıt 7-10 gün içinde <strong>Retikülosit krizidir</strong> (artışıdır). Hemoglobin seviyesi 4-8 haftada normale döner. Ancak depoları doldurmak için tedaviye Hb normale döndükten sonra <strong>en az 3-6 ay daha devam edilmelidir.</strong></li></ul>"
+    }
+  ]
+}

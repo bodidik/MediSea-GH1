@@ -1,0 +1,23 @@
+{
+  "title": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi",
+  "meta": {
+    "updatedAt": "11 Mar 2026",
+    "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "KMT2D", "CREBBP", "Genetik", "m7-FLIPI"],
+    "parent": "folikuler-lenfoma",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Epigenetik Regülatörler: Genel Kavram",
+      "html": "<p><strong>KMT2D (MLL2)</strong> ve <strong>CREBBP</strong>, kromatin modifiye edici genler (epigenetik regülatörler) olup, foliküler lenfoma (FL) patogenezinin genetik temelini oluşturan en sık mutasyon hedefleridir. Her iki gen de germinal merkez B hücre gelişiminde görev alsa da, hastalığın evrimi ve prognostik skorlama sistemlerindeki klinik ağırlıkları birbirinden farklıdır.</p>"
+    },
+    {
+      "heading": "CREBBP Mutasyonları",
+      "html": "<p><strong>Patogenezdeki Yeri:</strong> Bir histon asetiltransferaz (HAT) olan CREBBP, FL vakalarının yaklaşık %30-60'ında mutasyona uğrar. Genellikle t(14;18) translokasyonundan sonra ortaya çıkan erken <em>'kurucu' (founder)</em> veya ikincil <em>'sürücü' (driver)</em> olaylardan biri olarak kabul edilir.</p><p><strong>Prognostik ve Klinik Önemi:</strong> CREBBP mutasyonları veya delesyonları azalmış genel sağkalım (OS) ile ilişkilidir. En kritik klinik ve prognostik özelliği, genomik verileri entegre eden <strong>m7-FLIPI</strong> skorlama sisteminin temel bir bileşeni olmasıdır. CREBBP mutasyon durumu; EZH2, ARID1A, MEF2B, EP300, FOXO1 ve CARD11 genleri ile birlikte değerlendirildiğinde, birinci basamakta R-CHOP veya R-CVP kemoimmünoterapisi alan hastalarda yüksek riskli olguları saptayarak başarısızlık içermeyen sağkalımı (failure-free survival) güçlü bir şekilde öngörür.</p>"
+    },
+    {
+      "heading": "KMT2D (MLL2) Mutasyonları",
+      "html": "<p><strong>Patogenezdeki Yeri:</strong> Bir histon metiltransferaz enzimini kodlayan KMT2D, tümör baskılayıcı fonksiyon kaybına yol açarak lenfomagenezi hızlandırır. FL vakalarının %80-90'ında izlenen ve FL'de <strong>en sık rastlanan somatik mutasyondur</strong>. Bazı FL klonal evrim modellerinde, CREBBP'nin aksine hastalığın seyrinde daha geç dönemde ortaya çıkan, progresyona ve/veya ilaç direnci gelişimine katkıda bulunan bir <em>'hızlandırıcı' (accelerator)</em> veya üçüncül (tertiary) mutasyon olarak rol oynayabileceği belirtilmiştir.</p><p><strong>Prognostik ve Klinik Önemi:</strong> KMT2D mutasyonları, vakaların ezici çoğunluğunda (%80-90) bulunduğu için tek başına spesifik bir bağımsız risk katmanlaşması sağlamaz ve bu nedenle <strong>m7-FLIPI gibi standardize edilmiş genetik prognostik skorlama modellerine dahil edilmemiştir</strong>. Ancak KMT2D mutasyon frekansının spesifik alt gruplarda (örneğin t(14;18) negatif FL'lerde veya indolent seyirli duodenal tip FL'lerde) klasik sistemik nodal FL'ye kıyasla daha düşük saptanması, hastalığın biyolojik alt tiplerini ve agresivite potansiyelini anlamada dolaylı bir biyolojik gösterge sunar.</p>"
+    }
+  ]
+}

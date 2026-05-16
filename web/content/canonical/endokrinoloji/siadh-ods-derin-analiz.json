@@ -1,0 +1,23 @@
+{
+  "title": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi",
+  "meta": {
+    "updatedAt": "19 Mar 2026",
+    "tags": ["Nöroloji", "ODS", "Krenasyon", "Re-lowering", "Ozmolitler", "Hipokalemi"],
+    "parent": "siadh-sendromu",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🔬 Hücresel Mekanizma: Ozmotik Stres ve Krenasyon",
+      "html": "<p>Kronik hiponatremide beyin hücreleri, inorganik iyonlardan sonra <strong>myoinositol, glutamin ve taurin</strong> gibi organik ozmolitleri dışarı atarak denge sağlar. Hızlı sodyum düzeltilmesi, ekstraselüler hipertonisite yaratarak hücreden suyun aniden çıkmasına (<strong>krenasyon</strong>) ve oligodendrosit apoptozuna yol açar.</p>"
+    },
+    {
+      "heading": "🧠 Klinik Seyir: Locked-in Sendromu ve Radyolojik Gecikme",
+      "html": "<p>ODS semptomları tipik olarak <strong>bifaziktir</strong>; sodyum düzeltildikten günler sonra disartri, spastik kuadriparezi ve 'locked-in' tablosu gelişir. ⚠️ <em>Kritik Not:</em> Beyin MR'ındaki (T2/FLAIR hiperintensite) patolojik bulgular klinik semptomlardan <strong>2-4 hafta sonra</strong> ortaya çıkabilir; erken dönem negatif MR tanıyı dışlamaz.</p>"
+    },
+    {
+      "heading": "🚨 Aktif Re-lowering (Sodyumu Geri Düşürme) Protokolü",
+      "html": "<p>Düzeltme sınırları (Yüksek riskli: 6-8 mmol/L, Standart: 10-12 mmol/L / 24 saat) aşılırsa uygulanacak acil manevra:</p><ol class=\"mb-4\"><li><strong>Durdur:</strong> Tüm sodyum artırıcı tedaviler derhal kesilir.</li><li><strong>Bloke Et:</strong> Serbest su kaybını (akuarez) durdurmak için <strong>Desmopressin (DDAVP)</strong> (1-4 mcg IV/SC, 6-8 saatte bir).</li><li><strong>Replase Et:</strong> 3 mL/kg/saat hızında <strong>IV %5 Dekstroz (D5W)</strong> infüzyonu ile sodyum güvenli hedefe geri çekilir.</li></ol>"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Ch 330: Yeme Bozuklukları",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Nütrisyon", "Anoreksiya", "Bulimiya", "Psikiyatri"],
+    "parent": "nutrisyon-hastaliklari",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Anoreksiya Nervoza",
+      "text": "<p>Kilo almaktan aşırı korku ve bozulmuş beden algısıdır. BMI çok düşüktür. Amenore, lanugo tüyleri ve bradikardi görülür. Mortalitesi en yüksek psikiyatrik hastalıktır (Kalp durması).</p>"
+    },
+    {
+      "heading": "Bulimiya Nervoza",
+      "text": "<div class='bg-purple-50 p-4 rounded border-l-4 border-purple-500'><h5 class='font-bold text-purple-900'>Tıkanırcasına Yeme ve Çıkarma</h5><p class='text-sm mt-1 text-gray-700'>Kilo genellikle normaldir. Tekrarlayan aşırı yeme ataklarını kusma veya laksatif kullanımı (Purging) izler. Kusmaya bağlı diş minesi erozyonu, parotis büyümesi ve el sırtında nasır (Russell belirtisi) görülür.</p></div>"
+    }
+  ]
+}

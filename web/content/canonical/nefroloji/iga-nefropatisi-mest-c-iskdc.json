@@ -1,0 +1,27 @@
+{
+  "title": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları",
+  "meta": {
+    "updatedAt": "01 Nis 2026",
+    "tags": ["Nefroloji", "IgA Nefropatisi", "MEST-C", "ISKDC", "Böbrek Biyopsisi", "Kresentik GN"],
+    "parent": "iga-nefropatisi-berger",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🔬 Uzman Özeti: Oxford MEST-C Sınıflandırması",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Oxford MEST-C sınıflandırması, 2009'da IgA nefropatisi (IgAN) için geliştirilmiş ve 2016'da kresentlerin (C) eklenmesiyle güncellenmiş uluslararası bir histopatolojik skorlama sistemidir. En büyük prognostik değeri; hastaların tanı anındaki klinik özelliklerinden (kan basıncı, proteinüri, GFR) <strong>bağımsız olarak</strong> Son Dönem Böbrek Yetmezliğine (SDBY) ilerleme riskini tek başına öngörebilmesidir.</p> "
+    },
+    {
+      "heading": "1. MEST-C Lezyonlarının Spesifik Prognostik Değerleri",
+      "html": "<div class=\"space-y-3\"><div class=\"bg-rose-50 border-l-4 border-rose-500 p-3 shadow-sm\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-1\">T (Tübülointerstisyel Fibrozis / Atrofi)</h4><p class=\"text-xs text-rose-800 leading-relaxed\">Böbrek yetmezliğine (SDBY) gidişi öngörmede çoklu değişkenli analizlerde <strong>en tutarlı ve en güçlü bağımsız göstergedir.</strong></p></div><div class=\"bg-slate-50 border-l-4 border-slate-500 p-3 shadow-sm\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-1\">M (Mesangiyal) ve S (Segmental) Lezyonlar</h4><p class=\"text-xs text-slate-700 leading-relaxed\">Mesangiyal hiperselülarite (M) ve Segmental glomerüloskleroz (S), böbrek sağkalımında kötü gidişatın bağımsız öngörücüleri olarak kabul edilirler.</p></div><div class=\"bg-blue-50 border-l-4 border-blue-500 p-3 shadow-sm\"><h4 class=\"font-black text-blue-900 text-xs uppercase mb-1\">E (Endokapiller Hiperselülarite) - Geri Döndürülebilir Lezyon</h4><p class=\"text-xs text-blue-800 leading-relaxed\">Geleneksel olarak sadece <em>immünsüpresif tedavi almayan</em> hastalarda hızlı GFR düşüşü ile ilişkilidir. İmmünsüpresif alanlarda bu kötü prognostik ilişkinin kaybolması, E lezyonunun <strong>tedaviye yanıt verebilen, aktif ve geri döndürülebilir bir inflamatuar süreç</strong> olduğunu kanıtlar.</p></div><div class=\"bg-amber-50 border-l-4 border-amber-500 p-3 shadow-sm\"><h4 class=\"font-black text-amber-900 text-xs uppercase mb-1\">C (Kresent Oluşumu)</h4><p class=\"text-xs text-amber-800 leading-relaxed\">• <strong>C1 (%1-24 kresent):</strong> Sadece immünsüpresyon almayan hastalarda kötü prognozu öngörür.<br/>• <strong>C2 (>%25 kresent):</strong> Hastanın immünsüpresif tedavi alıp almadığına bakılmaksızın <em>bağımsız olarak</em> daha kötü böbrek sonlanımlarını öngörür.</p></div></div>"
+    },
+    {
+      "heading": "2. Oxford Sınıflandırmasının Kısıtlılıkları ve Klinik Entegrasyon",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">MEST-C'nin en önemli dezavantajı, özellikle endokapiller hiperselülarite (E) ve kresentlerin (C) patologlar arasındaki değerlendirme uyumunun (tekrarlanabilirliğinin) görece düşük olmasıdır.</p><div class=\"bg-slate-800 p-4 rounded-xl\"><p class=\"text-xs text-slate-200 leading-relaxed\"><strong>Klinik Kural:</strong> Güncel kılavuzlar, bu skorlamanın tek başına immünsüpresif tedavi kararlarını yönlendirmek için kullanılamayacağını vurgular. Mutlaka klinik verilerle harmanlanarak <strong>Uluslararası IgAN Tahmin Aracı'na (International IgAN Prediction Tool)</strong> dahil edilmeli ve bireyselleştirilmiş risk hesaplanmalıdır.</p></div>"
+    },
+    {
+      "heading": "3. Pediatrik Popülasyon: ISKDC Sınıflandırması",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">ISKDC (International Study of Kidney Disease in Children), çocuklardaki IgA vasküliti nefritinin (IgAV / HSP) histolojik şiddetini Evre I'den VI'ya kadar derecelendiren en yaygın sistemdir. Değerlendirme temel olarak mesangiyal proliferasyona ve <strong>glomerüler kresentlerin yüzdesine</strong> dayanır.</p>  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-800 text-xs uppercase mb-2\">Kresent Yükü ve Prognostik Korelasyon</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Özellikle biyopside <strong>>%50 oranında kresent varlığı (Evre IV ve V)</strong>, çok yüksek bir SDBY riski taşır. Uzun dönem takiplerde SDBY'ye ilerleyen hastaların %86'sında başlangıçta >%50 kresent olduğu saptanmıştır. Kresenti olmayan veya çok az olan grubun (%70'lik kesim) renal sağkalımı ise mükemmele yakındır.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-800 text-xs uppercase mb-2\">ISKDC'nin Kısıtlılıkları</h4><p class=\"text-xs text-slate-600 leading-relaxed\">ISKDC sisteminin en büyük dezavantajı, Oxford sınıflandırmasının aksine uzun dönemli sonuçları ciddi şekilde etkilediği kesin olarak bilinen <strong>endokapiller hiperselülarite (E) veya kronik tübülointerstisyel fibrozis (T)</strong> gibi kritik parametreleri hesaba katmamasıdır.</p></div></div></div>"
+    }
+  ]
+}

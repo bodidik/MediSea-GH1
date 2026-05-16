@@ -1,0 +1,1 @@
+import {Router} from 'express';import {viewDoc} from '../controllers/kayseritipController.js';const r=Router();r.get('/view',viewDoc);export default r;

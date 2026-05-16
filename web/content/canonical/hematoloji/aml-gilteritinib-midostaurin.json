@@ -1,0 +1,33 @@
+{
+  "title": "AML: Gilteritinib ve Midostaurin Karşılaştırması",
+  "meta": {
+    "updatedAt": "07 Mar 2026",
+    "tags": ["Hematoloji", "AML", "FLT3", "Gilteritinib", "Midostaurin", "Tirozin Kinaz İnhibitörleri"],
+    "parent": "aml-gilteritinib-genel",
+    "order": 2,
+    "summary": "Akut Miyeloid Lösemi (AML) tedavisinde FLT3 mutasyonlarını hedefleyen Gilteritinib ve Midostaurin'in endikasyon, etki mekanizması, referans çalışmalar ve yan etki profillerinin klinik karşılaştırması."
+  },
+  "summary": "Her ikisi de Tip 1 FLT3 inhibitörü olan Gilteritinib ve Midostaurin, FLT3 genindeki hem ITD (İnternal Tandem Duplikasyon) hem de TKD (Tirozin Kinaz Domain) mutasyonlarına karşı etkinlik gösterirler. Ancak klinik pratikteki kullanım evreleri ve toksisite profilleri belirgin şekilde ayrışır.",
+  "sections": [
+    {
+      "heading": "Klinik Endikasyon ve Kullanım Evresi",
+      "text": "<ul><li><strong>Midostaurin:</strong> Yeni tanı (de novo) FLT3 mutasyonlu AML hastalarının birinci basamak tedavisi. Tek başına kullanılmaz; standart '7+3' (Sitarabin + Daunorubisin) indüksiyon ve konsolidasyon kemoterapisi ile kombine edilerek verilir. Remisyon sonrası 1 yıla kadar idame (maintenance) tedavisi olarak kullanılabilir.</li><li><strong>Gilteritinib:</strong> Relaps veya refrakter (nüks/dirençli) FLT3 mutasyonlu AML hastalarının tedavisi. Kemoterapi ile kombine edilmez, standart olarak monoterapi (tek ajan) şeklinde kullanılır.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Etki Mekanizması ve Dozaj",
+      "text": "<ul><li><strong>Midostaurin:</strong> Birinci kuşak (first-generation), geniş spektrumlu 'multikinaz' inhibitörüdür. FLT3'e ek olarak KIT gibi diğer reseptör tirozin kinazları da inhibe eder. İndüksiyon kemoterapisinin 8. ve 21. günleri arasında (kemoterapi ile eş zamanlı değil, hemen sonrasında) günde iki kez 50 mg oral yolla verilir.</li><li><strong>Gilteritinib:</strong> Üçüncü kuşak (third-generation), FLT3'e karşı çok daha yüksek seçiciliğe ve güce sahip bir inhibitördür. Klinik fayda sürdüğü veya kabul edilemez bir toksisite gelişmediği sürece sürekli (continuous) olarak, günde tek doz 120 mg oral yolla uygulanır.</li></ul>",
+      "visibility": "V"
+    },
+    {
+      "heading": "Kanıt Temeli (Referans Çalışmalar)",
+      "text": "<ul><li><strong>Midostaurin (RATIFY Çalışması):</strong> Standart 7+3 kemoterapisine eklenmesi, genel sağkalımı (OS) anlamlı şekilde artırmıştır (medyan 75 aya karşılık 26 ay).</li><li><strong>Gilteritinib (ADMIRAL Çalışması):</strong> Klasik kurtarma (salvage) kemoterapisine kıyasla, tek başına kullanımının medyan sağkalımı belirgin şekilde uzattığını (9.3 aya karşılık 5.6 ay) ve remisyon oranlarını artırdığını göstermiştir.</li></ul>",
+      "visibility": "M"
+    },
+    {
+      "heading": "Direnç Mekanizmaları ve Yan Etki Profili",
+      "text": "<ul><li><strong>Midostaurin:</strong> Spesifik olarak FLT3 N676 mutasyonu Midostaurin'e direnç sağlar. Diferansiyasyon Sendromu için klasik bir uyarı bulunmamaktadır.</li><li><strong>Gilteritinib:</strong> Klonal seleksiyonla gelişen NRAS gibi aktive edici sekonder sinyal yolak mutasyonları direnç gelişimine yol açar. Hayatı tehdit edici <strong>Diferansiyasyon (Farklılaşma) Sendromu</strong> gelişebilir (kara kutu uyarısı mevcuttur). Ayrıca PRES (Posterior Reversible Encephalopathy Syndrome), pankreatit ve QT uzaması risklerine dikkat edilmelidir.</li></ul>",
+      "visibility": "V"
+    }
+  ]
+}

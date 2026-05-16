@@ -1,0 +1,31 @@
+{
+  "title": "Fosfomisin ve Ceftazidime-Avibactam (CZA) Sinerjisi",
+  "meta": {
+    "updatedAt": "28 Mar 2026",
+    "tags": ["Enfeksiyon", "Fosfomisin", "CZA", "MDR", "Pseudomonas", "CRKP", "Salvage"],
+    "parent": "fosfomisin-klinik-rehber",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "🛡️ Uzman Özeti: MDR Patojenlerde Kurtarma (Salvage) Stratejisi",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Fosfomisin ve ceftazidime-avibactam (CZA) kombinasyonu, özellikle multidirençli (MDR) ve zor tedavi edilen dirençli (DTR) Gram-negatif patojenlerin neden olduğu invaziv enfeksiyonlarda önemli bir sinerjik seçenek sunmaktadır. Bu kombinasyonun etkili olduğu başlıca suşlar ve klinik durumlar spesifik hedeflere ayrılır.</p>"
+    },
+    {
+      "heading": "1. Karbapenem Dirençli Pseudomonas aeruginosa (CR-PA)",
+      "html": "<div class=\"bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-xl mb-3\"><p class=\"text-sm text-teal-900 leading-relaxed\">Kombinasyon, karbapenem dirençli <em>P. aeruginosa</em> (CR-PA) suşlarına karşı laboratuvar modellerinde ve klinik vakalarda yüksek etkinlik göstermektedir. Moleküler düzeyde fosfomisin, Pseudomonas kökenli sefalosporinaz (PDC) ekspresyonunu indükleyen <strong>PBP-3 proteinini aşağı regüle (downregulate) ederek</strong>, avibaktamın beta-laktamaz hidrolizini engelleme etkisini güçlendirir.</p></div> "
+    },
+    {
+      "heading": "2. CRKP ve MBL Üreten Enterobacterales",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-3\"><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">Karbapenem Dirençli K. pneumoniae (CRKP)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Özellikle KPC üreten ve bazı çalışmalara göre metalo-beta-laktamaz (MBL) üreten <em>K. pneumoniae</em> suşlarında kombinasyonun her iki ilacın MİK değerlerini düşürdüğü ve bakteriyel klerensi hızlandırdığı saptanmıştır.</p></div><div><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">MBL Üreten Enterobacterales</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Bazı uzman görüşleri ve vaka serileri, MBL üreten suşlarda CZA’nın aztreonam ile kullanımının yanı sıra, fosfomisin ile kombinasyonunun da duyarlılığı geri kazandırabileceğini veya tedavi başarısını artırabileceğini belirtmektedir.</p></div></div>"
+    },
+    {
+      "heading": "3. Kritik Klinik Uygulama Alanları",
+      "html": "<div class=\"space-y-4\"><p class=\"text-sm leading-relaxed text-slate-700\">Bu kombinasyonun özellikle <strong>santral sinir sistemi (SSS) enfeksiyonlarında (post-nöroşirürjik ventrikülit veya menenjit)</strong> karbapenem dirençli Pseudomonas veya Klebsiella suşlarına karşı tercih edilen bir \"salvage\" (kurtarma) tedavisi olduğu vurgulanmaktadır.</p>  <div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl\"><p class=\"text-sm text-indigo-900 leading-relaxed\">Ayrıca, KPC üreten suşların neden olduğu <strong>septik tromboz veya kan akımı enfeksiyonlarında</strong>, ceftazidime-avibaktam monoterapisine yanıt alınamayan vakalarda fosfomisin eklenmesinin klinik başarıyı belirgin şekilde artırdığı bildirilmiştir.</p></div></div>"
+    },
+    {
+      "heading": "4. Direnç Seçilimi ve Kombinasyon Zorunluluğu",
+      "html": "<div class=\"bg-rose-50 border-2 border-rose-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-rose-800 text-xs uppercase mb-1 flex items-center gap-2\">🚨 Terapötik Uyarı</h4><p class=\"text-xs text-rose-900 font-medium leading-relaxed\">Tedavi sırasında dirençli mutantların seçilimini proaktif olarak engellemek için fosfomisinin bu dirençli suşlarda (MDR ve DTR Gram-negatifler) <strong>mutlaka kombinasyonun bir parçası olarak</strong> kullanılması uzman düzeyinde kesin bir öneridir.</p></div>"
+    }
+  ]
+}

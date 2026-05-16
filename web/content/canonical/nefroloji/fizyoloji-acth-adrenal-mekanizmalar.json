@@ -1,0 +1,35 @@
+{
+  "title": "ACTH, Adrenal bezde Aldesteron biyosentezini etkiler mi?",
+  "meta": {
+    "updatedAt": "03 Nis 2026",
+    "tags": ["Nefroloji", "Endokrinoloji", "ACTH", "Steroidogenez", "Aldosteron", "MC2R", "StAR"],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 11
+  },
+  "sections": [
+    {
+      "heading": "🔬 Uzman Özeti: ACTH'ın Adrenal Korteks Üzerindeki Rolü",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">ACTH (adrenokortikotropik hormon), adrenal korteks üzerinde birincil olarak kortizol sentezini hızlandırıp salgısını artırarak etki gösterir. Adrenal bezde önceden depolanmış kortizol miktarı minimal olduğundan, ACTH uyarısı doğrudan <em>de novo</em> sentezi tetikler.</p> "
+    },
+    {
+      "heading": "1. Hücresel Etki Mekanizması: MC2R ve cAMP Yolağı",
+      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-2\">Reseptör Aktivasyonu ve Sinyal İletimi</h4><p class=\"text-xs text-indigo-800 leading-relaxed\">ACTH, adrenal hücre yüzeyindeki <strong>melanokortin 2 reseptörüne (MC2R)</strong> bağlanır. Bu reseptörün zarda işlevsel olması için <strong>MRAP (melanocortin receptor accessory protein)</strong> adlı yardımcı protein şarttır. Bağlanma sonrası adenilat siklaz aktive olur; artan hücre içi <strong>cAMP</strong> seviyeleri Protein Kinaz A'yı (PKA) uyararak steroid üretiminde görevli proteinlerin fosforilasyonunu başlatır.</p></div>"
+    },
+    {
+      "heading": "2. Akut Yanıt: Kolesterolün Mitokondriye Girişi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">ACTH'ın dakikalar içinde gelişen akut etkisi, steroidogenez sürecinin <strong>hız kısıtlayıcı basamağını</strong> kontrol eder:</p>  <div class=\"bg-white border-2 border-slate-200 p-4 rounded-xl shadow-sm\"><p class=\"text-xs text-slate-600 leading-relaxed\">ACTH uyarısıyla aktive olan <strong>StAR (steroidogenic acute regulatory)</strong> proteini, kolesterolü iç mitokondriyal zara taşır. Burada kolesterol, <strong>CYP11A1</strong> enzimi tarafından ilk steroid ara ürünü olan <em>delta-5-pregnenolona</em> dönüştürülür.</p></div>"
+    },
+    {
+      "heading": "3. Kronik Yanıt: Fabrika Kapasitesinin Artırılması",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Saatler ve günler süren kronik ACTH uyarısı, adrenal korteksin steroid üretim kapasitesini fiziksel olarak büyütür:</p><ul class=\"space-y-3 text-sm text-slate-800\"><li class=\"bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-sm\">📊 <strong>Enzim Upregülasyonu:</strong> CYP11A1, CYP17, CYP21A2 ve CYP11B1 gibi ana enzimlerin gen transkripsiyonunu artırır.</li><li class=\"bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-sm\">🧬 <strong>Reseptör Duyarlılığı:</strong> Kendi reseptörü olan MC2R'nin ekspresyonunu artırarak hücreyi sonraki uyarılara daha duyarlı hale getirir.</li><li class=\"bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-sm\">🏗️ <strong>Hücre Büyümesi:</strong> LDL/HDL reseptör sayısını artırarak kolesterol alımını hızlandırır. Kronik uyarım adrenal kütlede <strong>hiperplazi ve hipertrofiye</strong> yol açarken, ACTH yokluğu atrofiye neden olur.</li></ul>"
+    },
+    {
+      "heading": "4. Adrenal Korteks Zonlarına Göre Etki Dağılımı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">ACTH'ın etkisi adrenal korteksin katmanlarına göre farklılık gösterir:</p>  <div class=\"grid grid-cols-1 md:grid-cols-3 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[10px] uppercase mb-1 tracking-wider\">Zona Fasciculata</h4><p class=\"text-[11px] text-slate-600 italic\">Kortizol Sentezi</p><p class=\"text-xs text-slate-700 leading-relaxed mt-2\">ACTH'ın <strong>en güçlü</strong> etkisini gösterdiği bölgedir. Birincil glukokortikoid üretim merkezidir.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[10px] uppercase mb-1 tracking-wider\">Zona Reticularis</h4><p class=\"text-[11px] text-slate-600 italic\">Androjen Sentezi</p><p class=\"text-xs text-slate-700 leading-relaxed mt-2\">DHEA ve androstendion salgılanmasını akut olarak uyarır.</p></div></div><div><div class=\"bg-amber-50 border-2 border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[10px] uppercase mb-1 tracking-wider\">Zona Glomerulosa</h4><p class=\"text-[11px] text-amber-700 italic\">Aldosteron Sentezi</p><p class=\"text-xs text-amber-800 leading-relaxed mt-2\">Temel yönetim RAAS ve K+ düzeyindedir. ACTH <strong>akut</strong> olarak aldosteron salınımını uyarırken (Kosintropin testi), <strong>kronik</strong> uyarımda aldosteron sentazı baskılayarak üretimi azaltır.</p></div></div></div>"
+    },
+    {
+      "heading": "5. Negatif Geri Bildirim (Feedback) Mekanizması",
+      "html": "<div class=\"bg-slate-800 p-5 rounded-2xl shadow-md\"><p class=\"text-sm text-slate-200 leading-relaxed\">Sistemin dengesi için ACTH uyarısıyla üretilen <strong>kortizol</strong>; hipotalamus (CRH) ve hipofiz (ACTH) bezine negatif geri bildirim uygulayarak salgıyı baskılar. Bu aks, vücudun stres yanıtını ve metabolik dengesini yönetir.</p></div> "
+    }
+  ]
+}

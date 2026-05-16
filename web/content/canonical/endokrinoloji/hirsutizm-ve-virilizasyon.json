@@ -1,0 +1,35 @@
+{
+  "title": "Hirsutizm ve Virilizasyon Yaklaşımı",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hirsutizm", "Virilizasyon", "Ferriman-Gallwey", "DHEAS", "Testosteron"],
+    "parent": "reproduktif-endokrinoloji-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>⚠️ <strong>Uzman Modülü:</strong> Harrison 21st Ed & 2025 Androjen Fazlalığı Yönetimi referanslıdır.</em></p>"
+    },
+    {
+      "heading": "Tanım: Hirsutizm vs. Hipertrikoz",
+      "html": "<p>Klinik pratikte karıştırılmaması gereken iki terim:</p><ul class=\"mb-4\"><li><strong>Hirsutizm:</strong> Kadınlarda androjen duyarlı bölgelerde (üst dudak, çene, göğüs, sırt, karın) terminal kıl artışıdır.</li><li><strong>Hipertrikoz:</strong> Vücudun her yerinde (androjen bağımsız) görülen ince (vellus) tüy artışıdır (İlaçlar, metabolik hastalıklar).</li></ul>"
+    },
+    {
+      "heading": "Ferriman-Gallwey Skorlaması",
+      "html": "<p>Hirsutizmin şiddetini objektif olarak değerlendirmek için 9 vücut bölgesi 0-4 arası puanlanır. Genellikle <strong>≥8 puan</strong> hirsutizm lehinedir.</p>"
+    },
+    {
+      "heading": "Virilizasyon: Kırmızı Hat",
+      "html": "<p>Eğer hirsutizme aşağıdakiler eşlik ediyorsa <strong>agresif bir androjen kaynağı (Tümör!)</strong> düşünülmelidir:</p><ul class=\"mb-4\"><li>Klitoromegali (en spesifik bulgu).</li><li>Ses kalınlaşması ve temporal kellik.</li><li>Meme atrofisi ve kas kütlesi artışı.</li><li>Hızlı ilerleyen semptomlar.</li></ul>"
+    },
+    {
+      "heading": "Tanısal Algoritma: Kaynak Neresi?",
+      "html": "<p>Laboratuvar, androjenin over mi yoksa adrenal kaynaklı mı olduğunu söyler:</p><ul class=\"mb-4\"><li><strong>Total Testosteron > 200 ng/dL:</strong> Over veya adrenal tümör şüphesi (Görüntüleme şart).</li><li><strong>DHEAS > 700 µg/dL:</strong> Adrenal kaynaklı patoloji (Adrenal CA veya hiperplazi) lehinedir.</li><li><strong>17-OH Progesteron:</strong> Geç başlangıçlı Konjenital Adrenal Hiperplazi (CAH) dışlanması için istenir.</li></ul>"
+    },
+    {
+      "heading": "Tedavi İlkeleri",
+      "html": "<ul class=\"mb-4\"><li><strong>Kozmetik:</strong> Lazer/Epilasyon (Hormonal tedaviyle kombine edilmeli).</li><li><strong>Farmakolojik:</strong> KOK'lar (SHBG'yi artırıp serbest androjenleri bağlar).</li><li><strong>Anti-androjenler:</strong> Spironolakton (androjen reseptör blokajı) veya Finasterid (5-alfa redüktaz inhibisyonu).</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import mongoose from 'mongoose';const S=new mongoose.Schema({section:String,title:String,description:String,videos:[{url:String,title:String}]});export default mongoose.model('Subtopic',S);

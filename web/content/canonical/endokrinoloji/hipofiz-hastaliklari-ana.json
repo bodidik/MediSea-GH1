@@ -1,0 +1,27 @@
+{
+  "title": "Hipofiz Hastalıkları",
+  "meta": {
+    "updatedAt": "16 Mar 2026",
+    "tags": ["Endokrinoloji", "Hipofiz", "Navigasyon", "Harrison"],
+    "parent": null,
+    "order": 0
+  },
+  "sections": [
+    {
+      "heading": "🤖",
+      "html": "<p><em>Bu sayfa, hipofiz bezinin anatomik, fizyolojik ve patolojik süreçlerini inceleyen akademik serinin ana indeksidir.</em></p>"
+    },
+    {
+      "heading": "Hipofiz: Endokrin Orkestranın Şefi",
+      "html": "<p>Hipofiz bezi (Glandula Pituitaria), sella turcica içinde yer alan ve neredeyse tüm endokrin organları denetleyen merkezi bir yapıdır. Harrison 21. Baskı temel alınarak hazırlanan bu seride aşağıdaki başlıklar incelenmektedir:</p>"
+    },
+    {
+      "heading": "📚 Seri İçeriği",
+      "html": "<ul class=\"list-none p-0\"><li>🔵 <strong>Bölüm 1:</strong> Ön Hipofiz Giriş ve Adenom Genel Yaklaşımı</li><li>🔵 <strong>Bölüm 2:</strong> Hiperprolaktinemi ve Prolaktinomalar</li><li>🔵 <strong>Bölüm 3:</strong> Büyüme Hormonu Patolojileri (Akromegali/Gigantizm)</li><li>🔵 <strong>Bölüm 4:</strong> ACTH Aksı ve Cushing Hastalığı</li><li>🔵 <strong>Bölüm 5:</strong> Hipopituitarizm ve Sheehan Sendromu</li><li>🔵 <strong>Bölüm 6:</strong> Arka Hipofiz (Diabetes İnsipidus ve SIADH)</li></ul>"
+    },
+    {
+      "heading": "Anatomik Komşuluklar ve Klinik Önem",
+      "html": "<p>Hipofiz hastalıklarında sadece hormonal değil, anatomik komşuluklar nedeniyle nöro-oftalmolojik bulgular da hayati önem taşır. Optik kiyazma, kavernöz sinüs ve kranial sinir (III, IV, V1, V2, VI) ilişkileri klinik tablonun ana belirleyicileridir.</p>"
+    }
+  ]
+}

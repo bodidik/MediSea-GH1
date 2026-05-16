@@ -1,0 +1,15 @@
+{
+  "title": "Hemofili B (Christmas Hastalığı)",
+  "meta": {
+    "updatedAt": "10 Mar 2026",
+    "tags": ["Hematoloji", "Faktör 9"],
+    "parent": "kanama-bozukluklari",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "text": "<p>Faktör IX (9) eksikliği sonucu oluşan kanama bozukluğudur. Klinik olarak Hemofili A ile aynıdır.</p>"
+    }
+  ]
+}
