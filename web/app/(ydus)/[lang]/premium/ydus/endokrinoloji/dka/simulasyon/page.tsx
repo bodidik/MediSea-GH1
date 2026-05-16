@@ -1,6 +1,6 @@
 'use client';
 // Karmaşık yolu sildik, doğrudan hedefi gösteriyoruz:
-import SimulatorEngine, { SimData } from '@/app/components/SimulatorEngine';
+import SimulatorEngine from '@/app/(ydus)/[lang]/premium/ydus/soru-cozum/SimulatorEngine';
 
 const DKA_CASE_DATA: SimData = {
   id: "dka_vaka_1",

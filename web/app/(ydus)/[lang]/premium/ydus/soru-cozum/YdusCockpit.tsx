@@ -4,7 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 // --- ZIRH EKLENTİLERİ ---
-import { useUser } from '../context/UserContext';
+
+import { UserContext } from '@/app/(ydus)/context/UserContext';
 import LiteProtected from '@/components/LiteProtected';
 
 // --- TİP TANIMLAMALARI ---

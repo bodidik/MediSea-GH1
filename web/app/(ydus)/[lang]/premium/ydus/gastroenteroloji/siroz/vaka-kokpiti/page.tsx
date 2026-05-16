@@ -1,5 +1,5 @@
 'use client';
-import SimulatorEngine from "@/app/components/SimulatorEngine";
+import SimulatorEngine from '@/app/(ydus)/[lang]/premium/ydus/soru-cozum/SimulatorEngine';
 
 const DKA_CASE_DATA: SimData = {
   id: "dka_vaka_1",
