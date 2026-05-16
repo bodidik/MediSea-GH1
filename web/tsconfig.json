@@ -8,7 +8,8 @@
     ],
      "baseUrl": ".",
      "paths": {
-       "@/*": ["./*"]
+ 	 "@/components/*": ["app/components/*", "components/*"],
+ 	 "@/*": ["./*"]
      },
     "allowJs": true,
     "skipLibCheck": true,
