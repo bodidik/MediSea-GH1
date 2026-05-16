@@ -1,6 +1,0 @@
-# FILE: .github/CODEOWNERS
-*       @bodidik
-
-/web/   @bodidik
-/server/   @bodidik
-/.github/workflows/   @bodidik
