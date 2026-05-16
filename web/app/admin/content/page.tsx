@@ -201,6 +201,11 @@ export default function AdminContentPage() {
     </tr>
   )}
 </tbody>
-
+	  </table>
+        </div>
+      )}
+    </div>
+  );
+}
 
 
