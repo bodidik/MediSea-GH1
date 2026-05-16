@@ -6,10 +6,12 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    },
+     "baseUrl": ".",
+     "paths": {
+     "@/components/*": ["app/components/*"],
+     "@/app/components/*": ["app/components/*"],
+     "@/*": ["./*"]
+     },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,

@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 
 // --- ZIRHLI İMPORTLAR ---
-import PremiumVideoRecommendations from '@/components/PremiumVideoRecommendations';
+import PremiumVideoRecommendations from '@/app/components/PremiumVideoRecommendations';
 import amlVideoData from '@/content/premium/ydus/videos/hematoloji/aml-videos.json';
 import amlCanonicalData from '@/content/canonical/hematoloji/aml.json';
 
