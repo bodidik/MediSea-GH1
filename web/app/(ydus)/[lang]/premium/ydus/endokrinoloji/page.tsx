@@ -116,9 +116,11 @@ export default function EndoPage() {
 
   return (
     <BranchTemplate 
-      data={ENDO_DATA} 
-      openCategory={openCategory} 
-      setOpenCategory={setOpenCategory} 
+      {...({ 
+        data: ENDO_DATA, 
+        openCategory, 
+        setOpenCategory 
+      } as any)} 
     />
   );
 }
