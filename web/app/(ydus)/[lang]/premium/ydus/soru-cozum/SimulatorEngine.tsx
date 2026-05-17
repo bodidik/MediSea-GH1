@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Link from 'next/link';
 import { UserContext } from '@/app/(ydus)/context/UserContext';
 
+// 🛡️ TS BEKÇİSİ İÇİN YEREL KANCA (useContext artık react'tan güvenle geliyor)
 const useUser = () => useContext(UserContext) as any;
 
 // --- GÜÇLÜ TİP TANIMLAMALARI (Mimarinin Temeli) ---
