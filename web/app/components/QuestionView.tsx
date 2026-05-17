@@ -4,7 +4,7 @@
 import * as React from "react";
 import ProtectedContent from "@/components/ProtectedContent";
 import AddToSRButton from "@/components/AddToSRButton";
-import type { Question } from "@/types/question";
+type Question = any;
 
 type Props = {
   question: Question;
