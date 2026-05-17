@@ -28,7 +28,7 @@ export default function WellsDVTPage() {
   ITEMS.forEach(i => { initial[i.key] = s?.get(i.key) === "1"; });
 
   const [sel, setSel] = React.useState<Record<string, boolean>>(initial);
-  function toggle(k: string) { setSel(v => ({ ...s, [k]: !v[k] })); }
+  function toggle(k: string) { setSel(v => ({ ...v, [k]: !v[k] })); }
 
   const score = ITEMS.reduce((sum, it) => sum + (sel[it.key] ? it.pts : 0), 0);
 
