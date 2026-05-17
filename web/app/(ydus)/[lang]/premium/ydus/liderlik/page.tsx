@@ -93,11 +93,10 @@ export default function LeadershipBoard() {
                       {user.avatar}
                     </div>
                     <div className="overflow-hidden">
-                      <h3 className={`font-black text-lg truncate ${user.isMe ? 'text-blue-400' : 'text-white'}`}>
+                      <h3 className={`font-black text-lg truncate ${(user as any).isMe ? 'text-blue-400' : 'text-white'}`}>
                         {user.name}
                       </h3>
                       <p className="text-xs font-bold text-slate-500 uppercase tracking-widest truncate">
-                        {user.title}
                       </p>
                     </div>
                   </div>
