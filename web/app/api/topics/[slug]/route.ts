@@ -1,6 +1,3 @@
-// FILE: web/app/api/topics/[slug]/route.ts
-import { backendBase } from "@/lib/backend";
-import { NextRequest, NextResponse } from "next/server";
 
 // FILE: web/app/api/topics/[slug]/route.ts
 import { backendBase } from "@/lib/backend";
