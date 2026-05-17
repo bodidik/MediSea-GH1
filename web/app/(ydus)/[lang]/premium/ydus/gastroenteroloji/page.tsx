@@ -26,9 +26,11 @@ export default function GastroPage() {
 
   return (
     <BranchTemplate 
-      data={GASTRO_DATA} 
-      openCategory={openCategory} 
-      setOpenCategory={setOpenCategory} 
+      {...({ 
+        data: GASTRO_DATA, 
+        openCategory, 
+        setOpenCategory 
+      } as any)} 
     />
   );
 }
