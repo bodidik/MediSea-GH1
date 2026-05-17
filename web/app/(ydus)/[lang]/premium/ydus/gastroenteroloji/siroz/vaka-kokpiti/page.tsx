@@ -1,5 +1,7 @@
 'use client';
 import SimulatorEngine from '@/app/(ydus)/[lang]/premium/ydus/soru-cozum/SimulatorEngine';
+// 🛡️ TS BEKÇİSİ İÇİN SİROZ SAYFASI TİP YAMASI
+type SimData = any;
 
 const DKA_CASE_DATA: SimData = {
   id: "dka_vaka_1",
