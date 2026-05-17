@@ -2,16 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import QuizEngine from './QuizEngine';
 
-// KAPTANIN DİNAMİK VERİ OKUYUCUSU
+// KAPTANIN DİNAMİK VERİ OKUYUCUSU (Next.js 15 Standartı)
 export default async function QuizCozPage(props: {
   params: Promise<{ lang: string }>;
   searchParams: Promise<{ branch?: string; id?: string }>;
 }) {
-  
-  // 🚀 Next.js 15 Kuralı: Önce props içindeki Promise yapısını await ile çözüyoruz
   const searchParams = await props.searchParams;
-  
-  // Şimdi çözülen objeden branch ve id değerlerini güvenle alabiliriz
   const branch = searchParams?.branch;
   const id = searchParams?.id;
 
@@ -26,14 +22,11 @@ export default async function QuizCozPage(props: {
       </div>
     );
   }
-}
+
   try {
-    // Dinamik Dosya Yolu: Hangi branş ve ID gelirse o JSON okunur!
-    const filePath = path.join(
-      process.cwd(), 
-      `content/premium/ydus/quizzes/${branch}/${id}.json`
-    );
-    
+    // 🔍 NOT: Bu satırdaki veri okuma yolunu (path.join) kendi orijinal klasör yapınıza göre kontrol edin kaptan!
+    const filePath = path.join(process.cwd(), 'app', '(ydus)', '[lang]', 'premium', 'ydus', 'quiz-coz', 'data', branch, `${id}.json`);
+
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileContents);
     
