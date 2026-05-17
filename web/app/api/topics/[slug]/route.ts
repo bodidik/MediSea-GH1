@@ -69,9 +69,11 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ slug: strin
 }
 export async function PUT(
   req: NextRequest,
-  { params }: { params: { slug: string } }
+  ctx: { params: Promise<{ slug: string }> }
 ) {
   const backend = backendBase();
+  // 🚀 Next.js 15 kuralı: Önce Promise olan params yapısını çözüyoruz
+  const params = await ctx.params;
   const slug = String(params?.slug || "").trim();
   const url = new URL(`/api/topics/${encodeURIComponent(slug)}`, backend);
 
@@ -95,13 +97,13 @@ export async function PUT(
     }
 
     const j = await r.json();
-    return NextResponse.json(j, { status: 200 });
+    return Response.json(j, { status: 200 });
     
   } catch (err: any) {
     // 🚨 BACKEND ULAŞILAMAZSA: EDİTÖRÜ (CMS) ÇÖKERTME, MOCK BAŞARI DÖN!
     console.warn(`Backend'e ulaşılamadı. Konu Güncelleme (PUT: ${slug}) yedek motoru devrede.`);
     
-    return NextResponse.json({
+    return Response.json({
       ok: true,
       mock: true,
       message: `Konu (${slug}) başarıyla güncellendi (Mock).`
