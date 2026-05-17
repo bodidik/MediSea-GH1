@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import BranchTemplate from "@/components/BranchTemplate"; 
+import BranchTemplate from '../components/BranchTemplate';
 import Link from 'next/link';
 
 const ONKO_DATA = {
