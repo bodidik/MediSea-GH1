@@ -6,7 +6,8 @@ import { useParams } from 'next/navigation';
 import { 
   ChevronLeft, Scissors, Pill, Radiation, 
   Baby, RotateCcw, Zap, AlertTriangle, 
-  Target, Info, ShieldCheck, Activity
+  Target, Info, ShieldCheck, Activity,
+  ShieldAlert
 } from 'lucide-react';
 
 export default function AkromegaliTedaviPage() {
