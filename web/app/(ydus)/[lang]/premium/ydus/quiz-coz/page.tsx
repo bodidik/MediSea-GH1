@@ -3,12 +3,15 @@ import path from 'path';
 import QuizEngine from './QuizEngine';
 
 // KAPTANIN DİNAMİK VERİ OKUYUCUSU
-export default async function QuizPage({
-  searchParams,
-}: {
-  searchParams: { branch: string; id: string };
+export default async function QuizCozPage(props: {
+  params: Promise<{ lang: string }>;
+  searchParams: Promise<{ branch?: string; id?: string }>;
 }) {
-  // URL'den gelen ?branch=... ve &id=... parametrelerini yakalıyoruz
+  
+  // 🚀 Next.js 15 Kuralı: Önce props içindeki Promise yapısını await ile çözüyoruz
+  const searchParams = await props.searchParams;
+  
+  // Şimdi çözülen objeden branch ve id değerlerini güvenle alabiliriz
   const branch = searchParams?.branch;
   const id = searchParams?.id;
 
@@ -23,7 +26,7 @@ export default async function QuizPage({
       </div>
     );
   }
-
+}
   try {
     // Dinamik Dosya Yolu: Hangi branş ve ID gelirse o JSON okunur!
     const filePath = path.join(
