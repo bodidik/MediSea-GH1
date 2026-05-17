@@ -17,7 +17,7 @@ const factor: any = new Proxy(() => 1, {
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
  */
 
-type ConversionKind = keyof typeof factor.mmolFromMgdl;
+type ConversionKind = "glucose" | "ureaNitrogen" | "creatinine" | "calcium";
 
 const UNITS: { key: ConversionKind; label: string; icon: string }[] = [
   { key: "glucose", label: "Glikoz", icon: "🍬" },
