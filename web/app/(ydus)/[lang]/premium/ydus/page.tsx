@@ -88,7 +88,7 @@ const FLEET_STATUS = [
 ];
 
 export default function YdusMainDashboard() {
-  const { user } = useUser();
+  const { user } = useUser() as any;
   const params = useParams();
   const lang = params?.lang || 'tr'; // Mevcut dili alıyoruz (tr, en vs.)
   const plan = (user?.plan ?? "free") as "free" | "member" | "premium";
