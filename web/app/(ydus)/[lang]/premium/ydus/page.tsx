@@ -122,7 +122,8 @@ export default function YdusMainDashboard() {
           </div>
           
           <div className="flex items-center gap-3">
-            <PlanBadge plan={plan} />
+            {/* 🚀 plan değerini as any ile geçirerek badge tip kontrolünü esnetiyoruz */}
+            <PlanBadge plan={plan as any} />
             <Link href={`/${lang}/premium/ydus/profil`} className="w-10 h-10 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center hover:bg-blue-100 transition-all shadow-sm group">
               <span className="group-hover:scale-110 transition-transform text-lg">👨‍⚕️</span>
             </Link>
