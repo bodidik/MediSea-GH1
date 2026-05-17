@@ -1,7 +1,7 @@
 'use client';
 // Karmaşık yolu sildik, doğrudan hedefi gösteriyoruz:
 import SimulatorEngine from '@/app/(ydus)/[lang]/premium/ydus/soru-cozum/SimulatorEngine';
-
+type SimData = any;
 const DKA_CASE_DATA: SimData = {
   id: "dka_vaka_1",
   title: "DKA Resüsitasyon Kokpiti",
