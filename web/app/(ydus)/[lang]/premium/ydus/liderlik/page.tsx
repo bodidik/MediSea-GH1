@@ -77,7 +77,7 @@ export default function LeadershipBoard() {
                 <div 
                   key={user.id} 
                   className={`flex items-center gap-4 p-4 rounded-2xl border transition-all ${
-                    user.isMe 
+                    (user as any).isMe 
                       ? "border-blue-500 bg-blue-900/20 shadow-[0_0_20px_rgba(59,130,246,0.15)] scale-[1.02] z-20" 
                       : "border-slate-800/50 hover:bg-slate-800 hover:border-slate-700"
                   }`}
