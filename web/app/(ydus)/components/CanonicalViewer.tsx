@@ -22,7 +22,7 @@ type CanonicalData = {
 // ZIRH: branch ve id parametrelerini Studio'ya yönlendirme yapabilmek için ekledik
 export default function CanonicalViewer({ data, branch, id }: { data: CanonicalData, branch?: string, id?: string }) {
   // ZIRH: Sadece rütbesi uygun olanlara editör kapısını açıyoruz
-  const { user } = useUser() || { user: { id: "Misafir" } };
+  const { user } = (useUser() as any) || { user: { id: "Misafir" } };
   const isAdmin = user?.id === 'Kaptan' || user?.id === 'admin';
 
   return (
