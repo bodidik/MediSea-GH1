@@ -103,7 +103,7 @@ export default function LeadershipBoard() {
 
                   {/* XP Puanı */}
                   <div className="text-right shrink-0">
-                    <div className={`font-black text-2xl tracking-tighter ${user.isMe ? 'text-blue-400' : 'text-slate-300'}`}>
+                    <div className={`font-black text-2xl tracking-tighter ${(user as any).isMe ? 'text-blue-400' : 'text-slate-300'}`}>
                       {user.xp.toLocaleString()}
                     </div>
                     <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
