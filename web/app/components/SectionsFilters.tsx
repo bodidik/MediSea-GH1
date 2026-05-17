@@ -50,22 +50,28 @@ export default function SectionsFilters({ rows, onChange }: { rows: Row[]; onCha
         />
       </div>
 
-      {/* Sıralama Kontrolleri */}
-      <div className="flex items-center gap-3 text-sm font-medium text-slate-300">
-        <label className="hidden sm:inline-block">Sırala:</label>
-        <div className="flex items-center gap-2 w-full md:w-auto">
-          <select 
-            value={sortKey} 
-            onChange={(e) => setSortKey(e.target.value as SortKey)} 
-            className="flex-1 px-3 py-2.5 rounded-xl border border-slate-600 bg-slate-900/50 text-slate-200 text-sm focus:border-blue-500 outline-none transition-colors appearance-none [&>option]:bg-slate-800"
-          >
-            {SORT_OPTS.map((o) => (
-              <option key={o.key} value={o.key}>{o.label}</option>
-            ))}
-          </select>
-          <button 
-            onClick={() => setDesc((d) => !d)} 
-            className="flex items-center justify-center w-10 h-10 rounded-xl border border-slate-600 bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors shadow-sm"
-            title="Sıralama Yönünü Değiştir"
-          >
-            {desc ? "
+          {/* Sıralama Kontrolleri */}
+          <div className="flex items-center gap-3 text-sm font-medium text-slate-300">
+            <label className="hidden sm:inline-block">Sırala:</label>
+            <div className="flex items-center gap-2 w-full md:w-auto">
+              <select 
+                value={sortKey} 
+                onChange={(e) => setSortKey(e.target.value as SortKey)} 
+                className="flex-1 px-3 py-2.5 rounded-xl border border-slate-600 bg-slate-900/50 text-slate-200 text-sm focus:border-blue-500 outline-none transition-colors appearance-none [&>option]:bg-slate-800"
+              >
+                {SORT_OPTS.map((o) => (
+                  <option key={o.key} value={o.key}>{o.label}</option>
+                ))}
+              </select>
+              <button 
+                onClick={() => setDesc((d) => !d)} 
+                className="flex items-center justify-center w-10 h-10 rounded-xl border border-slate-600 bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors shadow-sm"
+                title="Sıralama Yönünü Değiştir"
+              >
+                {desc ? "↓" : "↑"}
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
