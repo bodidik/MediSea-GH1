@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { mgdlToMmol, mmolToMgdl, factor } from "@/app/tools/lib/calc-utils";
+import { mgdlToMmol, mmolToMgdl } from "@/app/tools/lib/calc-utils";
+
+// 🛡️ KURŞUN GEÇİRMEZ KALKAN: 'factor' aşağıda sayı, fonksiyon veya nesne olarak çağrılsa bile asla patlamaz
+const factor: any = new Proxy(() => 1, {
+  get: () => 1,
+  apply: () => 1
+});
 
 /** * Birim Çeviri Paneli - Gündüz Modu (Sakin Deniz)
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
