@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { UserContext } from '@/app/(ydus)/context/UserContext';
 
+const useUser = () => useContext(UserContext) as any;
+
 // --- GÜÇLÜ TİP TANIMLAMALARI (Mimarinin Temeli) ---
 export type SimOption = {
   id: string;
