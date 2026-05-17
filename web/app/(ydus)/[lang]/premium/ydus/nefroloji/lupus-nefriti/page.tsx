@@ -1,5 +1,6 @@
 'use client';
 import SimulatorEngine from '@/app/(ydus)/[lang]/premium/ydus/soru-cozum/SimulatorEngine';
+type SimData = any;
 
 // 1 MİLYON DOLARLIK VERİ YAPISI (Bunu ileride veritabanından da çekebilirsin)
 const LUPUS_CASE_DATA: SimData = {
