@@ -160,4 +160,22 @@ export default function SiteHeader() {
                       <div>
                         <p className="text-sm font-bold text-slate-800 group-hover:text-blue-700">{result.title}</p>
                         <p className="text-xs text-slate-500 capitalize">
-                           {result.type === 'section' ? 'Ana
+                           {result.type === 'section' ? 'Ana Bölüm' : result.section}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </>
+              ) : (
+                <div className="px-4 py-6 text-center text-sm text-slate-400">
+                  Sonuç bulunamadı.
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
+      </div>
+    </header>
+  );
+}
