@@ -34,5 +34,14 @@ const ROMA_DATA = {
 
 export default function RomaPage() {
   const [openCategory, setOpenCategory] = useState<string | null>("vaskulitler");
-  return <BranchTemplate data={ROMA_DATA} openCategory={openCategory} setOpenCategory={setOpenCategory} />;
+  
+  return (
+    <BranchTemplate 
+      {...({ 
+        data: ROMA_DATA, 
+        openCategory, 
+        setOpenCategory 
+      } as any)} 
+    />
+  );
 }
