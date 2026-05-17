@@ -123,7 +123,7 @@ export default function ChadsVascPage() {
         {/* ALT PANEL: PAYLAŞIM VE İSTİHBARAT */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4">
-            <ToolShare params={shareParams} />
+            <ToolShare params={{} as any} />
           </div>
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
