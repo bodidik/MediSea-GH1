@@ -268,7 +268,7 @@ export default function FmfDashboard() {
             <Activity className="text-emerald-500" /> FMF Video Brifingleri
           </h2>
           {/* FMF video listesi JSON üzerinden okunacak */}
-          <PremiumVideoRecommendations data={fmfVideoData} />
+          <PremiumVideoRecommendations data={fmfVideoData as any} />
         </div>
 
       </div>
