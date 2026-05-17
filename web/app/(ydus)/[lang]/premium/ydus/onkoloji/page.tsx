@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import BranchTemplate from "@/components/BranchTemplate"; 
 import Link from 'next/link';
 
 const ONKO_DATA = {
@@ -33,5 +34,14 @@ const ONKO_DATA = {
 
 export default function OnkoPage() {
   const [openCategory, setOpenCategory] = useState<string | null>("solid");
-  return <BranchTemplate data={ONKO_DATA} openCategory={openCategory} setOpenCategory={setOpenCategory} />;
+  
+  return (
+    <BranchTemplate 
+      {...({ 
+        data: ONKO_DATA, 
+        openCategory, 
+        setOpenCategory 
+      } as any)} 
+    />
+  );
 }
