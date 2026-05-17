@@ -2,49 +2,74 @@
 import { backendBase } from "@/lib/backend";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(
-  req: NextRequest,
-  { params }: { params: { slug: string } }
-) {
+// FILE: web/app/api/topics/[slug]/route.ts
+import { backendBase } from "@/lib/backend";
+import { NextRequest } from "next/server";
+
+export async function GET(req: NextRequest, ctx: { params: Promise<{ slug: string }> }) {
   const backend = backendBase(); 
-  const slug = String(params?.slug || "").trim();
+  const params = await ctx.params;
+  const slug = params.slug;
+  
+  // 1. Temel Hedef URL Tanımı
   const url = new URL(`/api/topics/${encodeURIComponent(slug)}`, backend);
 
-  req.nextUrl.searchParams.forEach((v, k) => {
-    url.searchParams.set(k, v);
+  // 2. 🔍 QUERY STRING KAÇAĞI ÖNLEMİ: Orijinal URL'deki tüm filtreleri (?page=2, ?search=vs.) hedefe ekliyoruz
+  const originalUrl = new URL(req.url);
+  for (const [key, value] of originalUrl.searchParams.entries()) {
+    url.searchParams.append(key, value);
+  }
+
+  // 3. 🛡️ HEADER / COOKIE KAÇAĞI ÖNLEMİ: İstek başlıklarını güvenle kopyalıyoruz
+  const headers = new Headers();
+  req.headers.forEach((value, key) => {
+    // Hop-by-hop başlıklarını proxy güvenliği için eliyoruz
+    if (["host", "connection"].includes(key.toLowerCase())) return;
+    headers.set(key, value);
   });
 
   try {
-    const r = await fetch(url.toString(), {
-      next: { revalidate: 3600 }, // 1 saatlik muazzam önbellek (cache) kuralını koruyoruz
+    // 4. Backend Sunucusuna Güvenli İstek
+    const res = await fetch(url.toString(), {
+      method: "GET",
+      headers,
+      cache: "no-store",
     });
 
-    // Backend 404 veya 500 dönerse catch bloğuna atıp yedek içeriği devreye sokuyoruz
-    if (!r.ok) {
-        throw new Error(`Backend yanıt vermedi: ${r.status}`);
-    }
-
-    const j = await r.json();
-    return NextResponse.json(j, { status: 200 });
-
-  } catch (err: any) {
-    // 🚨 BACKEND ULAŞILAMAZSA VEYA KONU YOKSA: SİSTEMİ ÇÖKERTME, MOCK İÇERİK DÖN!
-    console.warn(`Backend'e ulaşılamadı. Konu Detayı (Topic: ${slug}) yedek motoru devrede.`);
-    
-    return NextResponse.json({
-      ok: true,
-      mock: true,
-      data: {
-          slug: slug,
-          title: `${slug.toUpperCase()} (Mock Konu)`,
-          content: "<div class='p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50'><h3 class='text-xl text-blue-400 font-bold mb-2'>⚓ Çelik Kubbe Devrede</h3><p class='text-slate-300'>Bu içerik, arka plandaki ana veritabanı kapalı olduğu için yedek motor tarafından üretilmiştir. Arayüz tasarımınızı (UI) test etmeye devam edebilirsiniz.</p></div>",
-          section: "Genel",
-          order: 1
+    // 5. YANIT BAŞLIKLARI KORUMASI: Gelen content-type ve set-cookie öğelerini sızdırmadan istemciye iletiyoruz
+    const outHeaders = new Headers();
+    const passThrough = [
+      "content-type",
+      "content-length",
+      "set-cookie",
+      "cache-control",
+      "etag",
+    ];
+    res.headers.forEach((value, key) => {
+      if (passThrough.includes(key.toLowerCase())) {
+        outHeaders.append(key, value);
       }
-    }, { status: 200 });
+    });
+
+    const data = await res.arrayBuffer();
+    return new Response(data, { status: res.status, headers: outHeaders });
+
+  } catch (error) {
+    // 6. 🚨 BACKEND KAPALIYSA JOKER KORUMA: Frontend'in çökmemesi için güvenli JSON yanıtı
+    console.error(`Topics API hatası (${slug}):`, error);
+    return new Response(
+      JSON.stringify({
+        success: false,
+        message: "Veri sunucusuna şu anda ulaşılamıyor. Yedek koruma devrede.",
+        data: null
+      }),
+      { 
+        status: 200, // Frontend bileşenlerinin Error Boundary patlaması yaşamaması için 200 dönüyoruz
+        headers: { "Content-Type": "application/json" } 
+      }
+    );
   }
 }
-
 export async function PUT(
   req: NextRequest,
   { params }: { params: { slug: string } }
