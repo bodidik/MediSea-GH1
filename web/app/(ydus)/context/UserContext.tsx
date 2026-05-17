@@ -10,7 +10,7 @@ type UserState = {
   completeModule: (moduleId: string, earnedXp: number, badgeId?: string) => void;
 };
 
-const UserContext = createContext<UserState | undefined>(undefined);
+export const UserContext = createContext<UserState | undefined>(undefined);
 
 export function UserProvider({ children }: { children: ReactNode }) {
   const [xp, setXp] = useState(0);
