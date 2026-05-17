@@ -1,12 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import Link from 'next/link';
 
 // --- ZIRH EKLENTİLERİ ---
 
 import { UserContext } from '@/app/(ydus)/context/UserContext';
 import LiteProtected from '@/components/LiteProtected';
+
+const useUser = () => useContext(UserContext) as any;
 
 // --- TİP TANIMLAMALARI ---
 type Option = { id: string; text: string };
