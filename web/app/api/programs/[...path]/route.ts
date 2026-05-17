@@ -83,21 +83,32 @@ function getPathParam(params: { path?: string[] }) {
   return (params?.path || []).join("/");
 }
 
-export async function GET(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "GET", getPathParam(ctx.params));
+export async function GET(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "GET", getPathParam(params));
 }
-export async function POST(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "POST", getPathParam(ctx.params));
+
+export async function POST(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "POST", getPathParam(params));
 }
-export async function PUT(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "PUT", getPathParam(ctx.params));
+
+export async function PUT(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "PUT", getPathParam(params));
 }
-export async function PATCH(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "PATCH", getPathParam(ctx.params));
+
+export async function PATCH(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "PATCH", getPathParam(params));
 }
-export async function DELETE(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "DELETE", getPathParam(ctx.params));
+
+export async function DELETE(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "DELETE", getPathParam(params));
 }
-export async function OPTIONS(req: NextRequest, ctx: { params: { path?: string[] } }) {
-  return proxy(req, "OPTIONS", getPathParam(ctx.params));
+
+export async function OPTIONS(req: NextRequest, ctx: { params: Promise<{ path?: string[] }> }) {
+  const params = await ctx.params;
+  return proxy(req, "OPTIONS", getPathParam(params));
 }
