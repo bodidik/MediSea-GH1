@@ -41,6 +41,15 @@ const SPECIALTIES = [
     text: "text-purple-600",
   },
   {
+    title: "Klinik Nütrisyon",
+    slug: "klinik-nutrisyon",
+    desc: "Enteral ve Parenteral Nütrisyon, ESPEN/ASPEN Kılavuzları, Malnütrisyon Yönetimi, PEG ve Refeeding Sendromu",
+    icon: "🍏",
+    color: "hover:border-emerald-500 hover:shadow-emerald-100",
+    bg: "bg-emerald-50",
+    text: "text-emerald-700",
+  },
+  {
     title: "Nefroloji",
     slug: "nefroloji",
     desc: "ABH, KBH, Elektrolitler",

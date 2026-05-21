@@ -1,0 +1,31 @@
+{
+  "title": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi",
+  "meta": {
+    "updatedAt": "14 May 2026",
+    "tags": ["Klinik Nütrisyon", "ESPEN", "Enteral Beslenme", "Gastroparezi", "GRV", "YDUS"],
+    "parent": "klinik-nutrisyon-ana-unite",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "🛑 1. İntolerans Tanımı ve Klinik Komplikasyonlar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Enteral beslenme intoleransı, beslenme girişimlerine yanıt olarak gastrointestinal fonksiyonun kötüleşmesi olarak tanımlanır ve tüple beslenme alan hastalarda çeşitli intestinal motilite sorunları şeklinde ortaya çıkar.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Sık Karşılaşılan Sorunlar</h4><p class=\"text-[11px] text-rose-800 leading-relaxed mb-2\">Midede besin birikimi, gastropareziye bağlı intolerans, bulantı, kusma ve regürjitasyondur. Ayrıca karın şişkinliği, <strong>Ogilvie sendromuna (akut kolonik psödo-obstrüksiyon)</strong> kadar varabilen bağırsak genişlemesi ve intestinal iskemi görülebilir.</p><p class=\"text-[11px] font-bold text-rose-900 bg-rose-100 p-2 rounded\">Klinik Gerçek: Hastanede yatan hastalarda enteral beslenmenin en sık görülen komplikasyonları ishal ve kabızlıktır.</p></div>"
+    },
+    {
+      "heading": "💊 2. Prokinetik Ajanların Kullanımı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Akut karın komplikasyonu şüphesi yoksa ve yüksek gastrik rezidüel volüm (GRV &gt; 500 mL/6 saat) devam ediyorsa prokinetikler düşünülmelidir.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">İlk Basamak: IV Eritromisin</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Mide motilitesini artırır. Genellikle 2-4 gün boyunca günde üç kez 100-250 mg dozlarında kullanılır. <strong>Sınav Spotu: Etkinliği 72 saat sonra üçte birine düştüğü için kullanımının 3 gün sonra sonlandırılması tavsiye edilir.</strong></p></div></div><div><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Alternatif Tedaviler</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">İntravenöz metoklopramid (günde iki/üç kez 10 mg) veya metoklopramid + eritromisin kombinasyonu kullanılabilir. Sadece beslenmeyi artırmak için değil, komplikasyonları önlemek için verilmelidir.</p></div></div></div>"
+    },
+    {
+      "heading": "🔄 3. Beslenme Yolu ve Şeklinin Ayarlanması",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-white border border-slate-300 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Postpilorik (Mide Çıkışı Sonrası) Beslenme</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Prokinetiklere rağmen intolerans çözülemiyorsa veya <strong>yüksek aspirasyon riski</strong> varsa, beslenme kesilmemeli, postpilorik (örn. jejunal) yola geçilmelidir. Gastroparezide mideyi boşaltmak (venting) ve jejunumdan beslenmek için PEG-J gibi ikili sistemler yararlıdır.</p></div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Lifli Formüller ve Sürekli Beslenme</h4><ul class=\"text-[11px] text-emerald-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Lif:</strong> İshal ve kabızlık yönetiminde çözünebilir/çözünmez lif karışımlı (örn. 30 g) formüller dışkı kıvamını iyileştirir.</li><li><strong>Uygulama:</strong> Sürekli (kontinü) enteral beslenme, aralıklı bolus uygulamasına kıyasla <em>ishal oranlarını önemli ölçüde azaltır</em>.</li></ul></div></div>"
+    },
+    {
+      "heading": "📊 4. Gastrik Rezidüel Volüm (GRV) Takibi",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Eşik Değer ve İzlem Kuralı</h4><p class=\"text-[11px] text-amber-800 leading-relaxed mb-2\">Gastrik aspirat hacmi <strong>6 saatte 500 mL'nin üzerindeyse</strong> enteral beslenme yavaşlatılmalı veya ertelenmelidir. Ancak beslenme düzene girdikten sonra rutinde sürekli GRV ölçümü yapmak gerekli DEĞİLDİR.</p><p class=\"text-[11px] font-bold text-amber-900 bg-amber-100 p-2 rounded\">Not: İntolerans sadece mideyle sınırlandırılmamalı, GIDS (Gastrointestinal Disfonksiyon Skoru) gibi araçlarla tüm bağırsak disfonksiyonu değerlendirilmelidir.</p></div>"
+    },
+    {
+      "heading": "🚨 5. Beslenmenin Ertelenmesi/Kesilmesi Gereken Durumlar",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">Kırmızı Bayraklar (Mutlak Kontrendikasyonlar)</h4><p class=\"text-[11.5px] text-slate-300 leading-relaxed mb-3\">Aşağıdaki şiddetli durumlarda enteral beslenme DERHAL ertelenmeli/durdurulmalı ve parenteral beslenmeye (PN) geçilmelidir:</p><ul class=\"text-[11px] text-slate-300 space-y-2 list-disc list-inside ml-1\"><li>İntestinal iskemi</li><li>Şok tablosunun kontrol altına alınamaması (hemodinamik hedefsizlik)</li><li>Karın içi basıncının aşırı yükseldiği <strong>Abdominal Kompartman Sendromu</strong></li><li>Distal erişim sağlanamayan yüksek debili intestinal fistüller</li><li>Onarılmamış anastomoz kaçakları</li></ul></div>"
+    }
+  ]
+}

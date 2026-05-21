@@ -1,0 +1,27 @@
+{
+  "title": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi",
+  "meta": {
+    "updatedAt": "20 May 2026",
+    "tags": ["Klinik Nütrisyon", "PEG", "Refeeding Sendromu", "Enteral Beslenme", "Palyatif Bakım", "YDUS"],
+    "parent": "klinik-nutrisyon-ana-unite",
+    "order": 8
+  },
+  "sections": [
+    {
+      "heading": "⏱️ 1. Anestezi Sonrası Erken Beslenme",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Gastrostomi (PEG) gibi endoskopik girişimler uygulanan hastalarda enteral beslenmeye (realimentasyon) geçerken hız ve zamanlama kritik öneme sahiptir.</p><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Geleneksel Açlık Algısının Yıkılması</h4><p class=\"text-[11px] text-sky-800 leading-relaxed mb-2\">Endoskopik gastrostomi (PEG) işlemi sonrasında, eğer işlem komplikasyonsuz geçmişse, hastaların aç bırakılmasına veya kısıtlı bir diyet uygulanmasına <strong>GEREK YOKTUR.</strong> Literatürde, endoskopi sonrası uzun süreli açlığın veya kısıtlamanın klinik bir fayda sağladığına dair kanıt bulunmamaktadır.</p><p class=\"text-[11px] font-bold text-sky-900 bg-sky-100 p-2 rounded\">Klinik Kural: Hastanede malnütrisyon riskini önlemek amacıyla, anestezi/sedasyon etkisi geçer geçmez hastalar standart diyetlerini tüketmeye geri dönmelidir. Enteral beslenme endikasyonu kesinleştiğinde, gecikme olmaksızın başlanmalıdır.</p></div>"
+    },
+    {
+      "heading": "⚠️ 2. Refeeding (Yeniden Beslenme) Sendromunun Önlenmesi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Özellikle malnütrisyonu olan veya risk altındaki hastalarda tüple enteral beslenmeye erken dönemde başlanması hayati önem taşır; ancak <strong>refeeding sendromu</strong> riski için çok katı kurallar izlenmelidir.</p><div class=\"bg-rose-900 border border-rose-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-300 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">Kademeli Artış ve Elektrolit Takibi</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-3\">Beslenme miktarı ve enerji yükü <strong>ilk 3 gün (72 saat) içinde yavaş ve kademeli olarak</strong> artırılmalıdır. Bu dönemde hastanın kan <em>fosfat, magnezyum, potasyum ve tiamin</em> düzeylerine özel bir dikkat gösterilmeli, hafif bir eksiklik saptandığında bile bu mikro besinler MUTLAKA takviye edilmelidir.</p><p class=\"text-[11px] font-bold text-slate-900 bg-amber-400 p-2 rounded border border-amber-500\">Sınav Spotu (Yoğun Bakım): YBÜ ortamındaki hastalarda yeniden beslenmeye bağlı HİPOFOSFATEMİ gibi bulgular gelişirse, enerji sağlanması 48 SAAT SÜREYLE KISITLANMALI, daha sonra kademeli artışa devam edilmelidir.</p></div>"
+    },
+    {
+      "heading": "🗣️ 3. Oral Alım ve Fiziksel Yaklaşım",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Oral Alımın Sürdürülmesi</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">PEG tüpü takılması yutma işlevinin tamamen durdurulması anlamına gelmez. Klinik olarak güvenli olduğu sürece ağızdan gıda/sıvı alımı teşvik edilmelidir. Disfajisi olanlarda dahi, yutma uzmanlarınca belirlenen güvenli kıvamdaki gıdaların ağızdan azar azar alınması; <strong>yutma fonksiyonunu uyarır, orofarinksi temizler ve yaşam kalitesini artırır.</strong></p></div></div><div><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Sedasyon ve Kısıtlamalardan Kaçınma</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Hastanın tüpü tolere etmesi için <strong>KESİNLİKLE farmakolojik sedasyon veya fiziksel kısıtlama (bağlama)</strong> kullanılmamalıdır. Bu kısıtlamalar hastanın immobilizasyonuna sebep olarak kas/yağsız vücut kütlesinde kayıplara ve bilişsel bozulmaya yol açar; bu durum beslenme tedavisinin temel amacı olan hastanın güçlendirilmesi ilkesiyle doğrudan çelişir.</p></div></div></div>"
+    },
+    {
+      "heading": "🔄 4. Sürekli Yeniden Değerlendirme (Reasessment)",
+      "html": "<div class=\"bg-slate-100 border-l-4 border-slate-500 p-4 shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Palyatif Süreç ve Konfor Beslenmesi</h4><p class=\"text-[11px] text-slate-700 leading-relaxed mb-2\">PEG üzerinden sağlanan beslenmenin fayda ve riskleri bireysel olarak sürekli değerlendirilmelidir. Ağızdan yeterli beslenme yeteneğinin geri kazanılması ya da enteral beslenmenin hastaya artık ek bir fayda sağlamaması durumunda PEG sonlandırılmalıdır.</p><p class=\"text-[11px] font-bold text-slate-800\">Klinik Vizyon: Terminal veya palyatif evredeki hastalarda kalori hedeflerinden ziyade, hastanın sadece tolere edebildiği ve arzu ettiği kadar oral alım yapmasına izin verilen \"KONFOR BESLENMESİ\" yaklaşımı benimsenmelidir.</p></div>"
+    }
+  ]
+}
