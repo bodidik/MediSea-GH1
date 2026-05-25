@@ -1,0 +1,27 @@
+{
+  "title": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
+  "meta": {
+    "updatedAt": "21 May 2026",
+    "tags": ["Gastroenteroloji", "Çölyak", "Diyet Lifi", "Akdeniz Diyeti", "Psödotahıl", "YDUS"],
+    "parent": "colyak-akdeniz-beslenme",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "⚠️ 1. Ticari Glutensiz Ürünlerdeki Lif ve Protein Açığı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ticari olarak sunulan standart glutensiz gıda ürünlerinin besin profilleri incelendiğinde, en belirgin eksikliklerin <strong>düşük diyet lifi ve düşük protein oranları</strong> olduğu, buna karşılık kalori, yağ, basit şeker ve tuz içeriklerinin oldukça yüksek olduğu görülmektedir.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><p class=\"text-[11px] text-rose-800 leading-relaxed font-bold mb-1\">Klinik Sonuç:</p><p class=\"text-[11px] text-rose-800 leading-relaxed\">Çölyak hastalığı gibi durumlarda uygulanan klasik glutensiz diyetler, bu endüstriyel ürünlerin tüketimine dayandığında hastalarda diyet lifi, B vitaminleri, demir ve eser mineral eksikliklerine yol açabilmektedir.</p></div>"
+    },
+    {
+      "heading": "🌾 2. Strateji 1: Pseudotahılların Tüketimi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Akdeniz tipi glutensiz bir diyet modelinde lif alımını artırmak ve metabolik dengeyi sağlamak için diyeti doğası gereği gluten içermeyen ve besin yoğunluğu son derece yüksek olan gıdalara dayandırmak en etkili yoldur.</p><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Çok Yönlü Besin Profili</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Kinoa, karabuğday ve amarant gibi pseudotahıllar (yalancı tahıllar), ticari glutensiz ürünlerin aksine <strong>yalnızca yüksek oranda diyet lifi sağlamakla kalmaz</strong>; aynı zamanda uygun makrobesin (karbonhidrat, protein, yağ) kalitesi ve oranlarına sahip olup, fitokimyasallar ile mikrobesinler açısından da zengin bir yapı sunarlar.</p></div>"
+    },
+    {
+      "heading": "🔄 3. Strateji 2: Yeniden Formüle Edilmiş Ürünlerin Tercihi",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Reformülasyon Şartı</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Hastalar piyasadaki ticari glutensiz gıdaları tüketecekse, basit şeker içeriği düşük, ancak <strong>lif içeriği özel olarak artırılmış ve besin açısından dengelenmiş</strong> olacak şekilde yeniden formüle (reformüle) edilmiş ürünlere yönlendirilmelidir.</p></div>"
+    },
+    {
+      "heading": "👩‍⚕️ 4. Strateji 3: Uzman İzlemi ve Genel Sonuç",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Kişiselleştirilmiş İzlem</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Akdeniz stiline uyarlanmış bu diyetin başarılı bir şekilde sürdürülebilmesi için hastaların uzman ve yetkin bir diyetisyen tarafından düzenli izlenmesi şarttır. Diyetin kişiselleştirilmesi, <strong>obezite ve metabolik sendrom risklerine karşı etkin koruma sağlar.</strong></p></div></div><div><div class=\"bg-indigo-900 border border-indigo-700 p-4 rounded-xl shadow-xl text-white h-full\"><h4 class=\"font-black text-indigo-300 text-[11px] uppercase mb-2\">Klinik Özet (Spot Bilgi)</h4><p class=\"text-[11px] text-indigo-100 leading-relaxed\">Bu doğrultuda Akdeniz tipi glutensiz beslenmede lif alımı; besin açısından fakir ve hiperkalorik ticari gıdaların yerini doğal, lif ve fitokimyasal içeriği yoğun alternatiflerin (özellikle pseudotahılların) almasıyla ve doğru diyet planlamasıyla güvenli bir biçimde artırılmaktadır.</p></div></div></div>"
+    }
+  ]
+}

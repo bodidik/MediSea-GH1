@@ -1,0 +1,23 @@
+{
+  "title": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
+  "meta": {
+    "updatedAt": "21 May 2026",
+    "tags": ["Gastroenteroloji", "Çölyak", "Glutensiz Diyet", "Obezite", "Metabolik Sendrom", "YDUS"],
+    "parent": "colyak-beslenme",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "⚖️ 1. Kilo Artışının Fizyolojik Temeli: Mukozal İyileşme",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Çölyak hastalarında glutensiz diyete geçilmesiyle birlikte gözlemlenen kilo artışı ve obezite eğilimi, bağırsak fonksiyonlarındaki iyileşme ve tüketilen gıdaların makrobesin profillerindeki dengesizlikler gibi birkaç temel faktörden kaynaklanmaktadır.</p><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Mukoza Emiliminin Düzelmesi</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Çölyak hastalığının klasik tablosunda yer alan malabsorpsiyon (emilim bozukluğu) ve kilo kaybının aksine, glutensiz diyete uyum sağlanmasıyla beraber <strong>hasarlı bağırsak mukozasında iyileşme</strong> meydana gelir. Mukoza absorpsiyonundaki (emilim kapasitesindeki) bu fizyolojik düzelme ve artış, alınan besinlerin çok daha yüksek oranda vücuda katılmasına olanak tanıyarak <em>doğrudan kilo artışıyla</em> sonuçlanır.</p></div>"
+    },
+    {
+      "heading": "🍩 2. Ticari Glutensiz Ürünlerin Karanlık Yüzü",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Hiperkalorik ve Dengesiz Profil</h4><p class=\"text-[11px] text-amber-800 leading-relaxed mb-2\">Kilo artışı ve obezite, glutensiz diyetin olumsuz sonuçları listesine eklenmiştir. Ticari glutensiz gıdaların önemli bir kısmı <strong>hiperkalorik (yüksek kalorili)</strong> olarak üretilmektedir.</p><ul class=\"text-[11px] text-amber-900 font-bold space-y-1 list-disc list-inside ml-1\"><li>Düşük oranlar: Protein ve diyet lifi.</li><li>Yüksek oranlar: Kalori, yağ, basit şeker ve tuz.</li></ul><p class=\"text-[11px] text-amber-800 mt-2\">Bu yüksek yağ ve karbonhidrat içeriği, hastanın günlük enerji alımını farkında olmadan artırır.</p></div></div><div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Yanlış Beslenme Alışkanlıkları</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Klinik uygulamalarda, lezzetsiz ve maliyetli olabilen standart ticari glutensiz ürünlerin tüketim zorluğu nedeniyle, hastaların zamanla <strong>daha yüksek yağ içeriğine sahip olan alternatif ticari glutensiz ürünlere</strong> yöneldiği ve bu durumun kötü beslenme alışkanlıklarını tetiklediği belirlenmiştir.</p></div></div></div>"
+    },
+    {
+      "heading": "🚨 3. Klinik Sonuçlar ve Uzman Önerisi (Metabolik Sendrom)",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-3 flex items-center gap-2\">Obezite ve Metabolik Sendrom Riski (Klinik Çıktı)</h4><p class=\"text-[11px] text-slate-300 leading-relaxed mb-3\">Bu faktörlerin tamamının bir yansıması olarak, glutensiz diyet uygulayan çölyak hastaları arasında <strong>fazla kilolu olma oranının neredeyse İKİ KATINA çıktığı</strong> rapor edilmiştir. Hatta bazı uzun dönemli izlemler, glutensiz diyete başlandıktan sadece BİR YIL SONRA hastalarda metabolik sendrom oranının ve obezite sıklığının belirgin şekilde arttığını göstermektedir.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-400 p-2 rounded border border-emerald-500\">Uzman Tavsiyesi: Glutensiz diyet alan çölyak hastaları mutlaka nitelikli diyetisyenler tarafından kalori, yağ ve şeker açısından dengelenmiş, besin yoğunluğu yüksek (pseudotahıllar gibi doğal glutensiz gıdalara dayalı) bir Akdeniz tipi beslenme modeline yönlendirilmelidir.</p></div>"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart",
+  "meta": {
+    "updatedAt": "21 May 2026",
+    "tags": ["Klinik Nütrisyon", "GLIM", "Malnütrisyon", "VKİ", "Sarkopeni", "YDUS"],
+    "parent": "klinik-nutrisyon-ana-unite",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🌍 1. GLIM Kriterlerine Giriş ve İki Aşama Kuralı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Global Leadership Initiative on Malnutrition (GLIM) kriterleri, malnütrisyon (kötü beslenme) tanısı koymak için uluslararası bir fikir birliği ile oluşturulmuş, klinik nütrisyonda standartları belirleyen güncel bir yaklaşımdır. Bu sistem iki aşamalı bir değerlendirme süreci sunar:</p><ul class=\"text-[11px] text-slate-700 space-y-2 list-disc list-inside ml-1 mb-4\"><li><strong>İlk Aşama:</strong> Hastanın doğrulanmış bir tarama aracı ile malnütrisyon riski açısından taranması.</li><li><strong>İkinci Aşama:</strong> Risk saptanan hastalarda fenotipik ve etiyolojik kriterlerin incelendiği detaylı bir tanısal değerlendirme yapılması.</li></ul><div class=\"bg-rose-900 border border-rose-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-300 text-[12px] uppercase tracking-widest mb-2 flex items-center gap-2\">Altın Kural (Tanı Zorunluluğu)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed font-bold\">GLIM kriterlerine göre bir hastaya malnütrisyon tanısı konulabilmesi için, tanımlanmış fenotipik (yapısal) ve etiyolojik (nedene dayalı) kriterlerden HER İKİ GRUPTAN DA EN AZ BİRER TANESİNİN aynı anda bulunması ZORUNLUDUR (1 Fenotipik + 1 Etiyolojik).</p></div>"
+    },
+    {
+      "heading": "📏 2. Fenotipik (Yapısal) Kriterler",
+      "html": "<div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><ul class=\"text-[11px] text-sky-800 space-y-3 list-disc list-inside ml-1\"><li><strong>Kilo Kaybı (Sınav Spotu):</strong> Hastanın son 6 ay içerisinde vücut ağırlığının <strong>&gt;%5'ini</strong> veya 6 aydan daha uzun bir süre diliminde <strong>&gt;%10'unu</strong> kaybetmiş olmasıdır.</li><li><strong>Düşük Vücut Kitle İndeksi (VKİ):</strong> VKİ'nin Kafkas ırkı için <strong>&lt;20 kg/m&sup2;</strong>'nin, 70 yaş üstü bireylerde ise <strong>&lt;22 kg/m&sup2;</strong>'nin altında olmasıdır. <em>(Asya ırkları için bu referans sınırları 1.5 kg/m&sup2; daha düşük kabul edilmektedir).</em></li><li><strong>Azalmış Kas Kütlesi:</strong> Kas kütlesindeki azalmanın, ideal olarak Çift Enerjili X-Işını Absorpsiyometrisi <strong>(DXA)</strong> ile veya alternatif bir yöntem olarak Biyoelektrik Empedans Analizi <strong>(BİA)</strong> kullanılarak nesnel biçimde saptanmasıdır.</li></ul></div>"
+    },
+    {
+      "heading": "🦠 3. Etiyolojik (Nedene Dayalı) Kriterler",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><ul class=\"text-[11px] text-amber-800 space-y-3 list-disc list-inside ml-1\"><li><strong>Azalmış Gıda Alımı veya Malassimilasyon:</strong> GLIM, gıda alımının değerlendirilebilmesi için tabak diyagramları veya 7 günlük besin tüketim günlükleri gibi yarı kantitatif izlem yöntemlerinin kullanılmasını savunur. Gıda alımının bir haftadan daha uzun bir süre boyunca <strong>enerji gereksiniminin &le;%50'sine düşmesi</strong> ya da gıda alımındaki herhangi bir yetersizliğin <strong>2 haftadan uzun sürmesi</strong> kriterdir. Gıdanın emilimini bozan kronik gastrointestinal rahatsızlıklar da buraya girer.</li><li><strong>İnflamasyon veya Hastalık Yükü:</strong> Akut bir hastalık/yaralanmaya bağlı gelişen şiddetli bir durum (örn. YBÜ gerektiren kritik hastalık) ya da kronik bir hastalığın yol açtığı sistemik inflamasyon varlığıdır.</li></ul></div>"
+    },
+    {
+      "heading": "📌 4. Klinik Uygulama ve Etki Alanı",
+      "html": "<div class=\"bg-slate-100 border-l-4 border-slate-500 p-4 shadow-sm\"><p class=\"text-[11px] text-slate-700 leading-relaxed\">Yayınlandıkları 2019 yılından bu yana klinik nütrisyon çalışmalarına rehberlik eden GLIM kriterleri, hastalık ve inflamasyon odaklı olup; örneğin inflamatuar bağırsak hastalıkları (IBH) veya çeşitli gastrointestinal hastalıkları bulunan klinik hastalarda malnütrisyon riskinin belirlenmesi, teşhisi ve <strong>sarkopeni</strong> gibi durumların değerlendirilmesinde pratik olarak uygulanabilmektedir.</p></div>"
+    },
+    {
+  "heading": "💪 5. GLIM'e Göre Azalmış Kas Kütlesinin Ölçümü",
+  "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">GLIM kriterlerine göre azalmış kas kütlesi, malnütrisyon teşhisinde kullanılan temel fenotipik kriterlerden biridir. Kas kütlesinin değerlendirilmesinde, radyolojik/biyofiziksel yöntemler ile fonksiyonel testler bir arada kullanılmalıdır.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Kantitatif Ölçüm</h4><ul class=\"text-[11px] text-indigo-800 space-y-2 list-disc list-inside ml-1\"><li><strong>DXA (Altın Standart):</strong> Appendiküler iskelet kası kütlesi indeksi hassas şekilde hesaplanır.</li><li><strong>BİA:</strong> DXA'ya erişim yoksa pratik bir alternatiftir.</li><li><strong>BT ve MR (Sınav Spotu):</strong> İleri düzey vakalarda, <strong>L3 vertebra seviyesindeki</strong> toplam abdominal kas alanının ölçülmesi son derece güvenilir bir yaklaşımdır.</li></ul></div></div><div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">İskelet Kası Fonksiyon Testleri</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed mb-2\">Klinik süreç genellikle kasın fonksiyonel değerlendirilmesiyle başlar; zayıflık saptanırsa kompozisyon analizlerine geçilir:</p><ul class=\"text-[11px] text-emerald-900 font-bold space-y-2 list-disc list-inside ml-1\"><li>Dinamometre ile el kavrama gücünün (handgrip strength) ölçülmesi.</li><li>Diz ekstansör gücünün değerlendirilmesi.</li><li>Sandalyeden kalkma testleri (5 tekrarlı veya 30 saniyelik test).</li></ul></div></div></div>"
+   }
+  ]
+}

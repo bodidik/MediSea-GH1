@@ -1,0 +1,27 @@
+{
+  "title": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
+  "meta": {
+    "updatedAt": "21 May 2026",
+    "tags": ["Gastroenteroloji", "Çölyak", "Diyetsel Yağ", "Obezite", "Akdeniz Diyeti", "NAFLD", "YDUS"],
+    "parent": "colyak-akdeniz-beslenme",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "⚖️ 1. Klinik Tablodaki Değişim ve Obezite Paradoksu",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Çölyak hastalığının klinik tablosu tarihsel olarak malabsorpsiyon (besin emilim bozukluğu) ve kilo kaybı ile özdeşleştirilmiş olsa da, güncel veriler hastaların tanı anında <strong>%40'a varan oranda fazla kilolu ve %13 oranında obez</strong> olduğunu, genel celiac popülasyonunda ise fazla kilo ve obezite oranlarının <strong>%32'lere ulaştığını</strong> göstermektedir.</p><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><p class=\"text-[11px] text-sky-800 leading-relaxed font-bold mb-1\">Temel Sorumlu: Diyetsel Yağ ve Kalori</p><p class=\"text-[11px] text-sky-800 leading-relaxed\">Hastaların glutensiz diyete uyum sağlamasıyla birlikte bağırsak mukozasındaki emilim fonksiyonlarının iyileşmesi kilo alımına yol açmaktadır, ancak fazla kilo ve metabolik sendrom riskindeki bu dramatik artışın temel sorumlusu genellikle tüketilen glutensiz ürünlerin içerdiği diyetsel yağ ve kaloridir.</p></div>"
+    },
+    {
+      "heading": "🍔 2. Diyetsel Yağ ve Ticari Glutensiz Ürünlerin Yarattığı Riskler",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Endüstriyel Ürünlerin Dengesizliği</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Piyasada bulunan ticari glutensiz gıdaların besin profilleri uzmanlar tarafından sıklıkla sorgulanmaktadır; zira bu endüstriyel ürünlerin temel eksiklikleri düşük protein ve diyet lifi oranları iken, <strong>en belirgin tehlikeleri yüksek kalori, diyetsel yağ, basit şeker ve tuz içermeleridir.</strong></p></div></div><div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Kötü Beslenme Alışkanlıkları ve NAFLD</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Standart ürünlerin lezzetsiz/maliyetli olması, hastaların alternatif hiperkalorik ticari gıdalara yönelmesine neden olur. Yüksek diyetsel yağ ve kalori yükü; <strong>Non-Alkolik Yağlı Karaciğer Hastalığı (NAFLD), lipit profili anormallikleri, metabolik sendrom ve obezite</strong> gelişim riskini doğrudan artırır.</p></div></div></div>"
+    },
+    {
+      "heading": "🥗 3. Akdeniz Tipi Beslenme Modelinin Rolü ve Uygulanması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ticari glutensiz gıdaların neden olduğu bu metabolik riskleri yönetmek, besinsel eksiklikleri gidermek ve vücuttaki yağ oranını dengelemek için, diyetlerin <strong>\"Akdeniz tipi\"</strong> beslenme modeline adapte edilmesi güçlü bir şekilde önerilmektedir. Akdeniz diyeti, metabolik sendrom, obezite ve NAFLD'nin önlenmesi ile tedavisinde kanıtlanmış bir altın standarttır.</p><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Temel Adaptasyon Kuralları</h4><ul class=\"text-[11px] text-emerald-800 space-y-3 list-disc list-inside ml-1\"><li><strong>İşlenmiş Yağlardan Doğal Gıdalara Geçiş:</strong> Yüksek yağlı/hiperkalorik ticari gıdalar yerine; diyetin temeli doğası gereği gluten içermeyen <em>pseudotahıllar (yalancı tahıllar)</em> gibi doğal gıdalarla oluşturulmalıdır.</li><li><strong>Makrobesin ve Diyetsel Yağ Kalitesi:</strong> Tüketilen yağın miktarından ziyade kalitesi artırılmalı, diyet uygun makrobesin (karbonhidrat, protein, yağ) oranlarına sahip olacak şekilde yeniden formüle edilmelidir.</li><li><strong>Besin Yoğunluğu ve Lif Artışı:</strong> Düşük lifli standart diyetin aksine, fitokimyasallar ve mikrobesinler (vitamin/mineraller) açısından zengin, besin yoğunluğu yüksek ve diyet lifi artırılmış gıdalar tercih edilmelidir.</li></ul></div>"
+    },
+    {
+      "heading": "👩‍⚕️ 4. Klinik Takip ve Uzman Rehberliği",
+      "html": "<div class=\"bg-indigo-900 border border-indigo-700 p-4 rounded-xl shadow-xl text-white\"><p class=\"text-[11px] text-indigo-100 leading-relaxed font-bold\">Bu geçişin sağlıklı bir şekilde sürdürülebilmesi ve diyetsel yağ kısıtlamasının hastanın yaşam kalitesini bozmadan uygulanabilmesi için, hastaların mutlaka uzman ve kayıtlı bir diyetisyen rehberliğinde klinik olarak takip edilmeleri, diyetlerinin de bireysel ihtiyaçlarına (kişiselleştirilmiş beslenme planlarına) göre düzenlenmesi son derece önemlidir.</p></div>"
+    }
+  ]
+}
