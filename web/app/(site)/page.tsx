@@ -5,6 +5,16 @@ import Link from "next/link";
 
 // --- MEDISEA BRANŞ DÜZENLEMESİ ---
 const SPECIALTIES = [
+  
+  {
+    "title": "Genel Dahiliye",
+    "slug": "genel-dahiliye",
+    "desc": "İç hastalıkları, tanı ve tedavi süreçleri",
+    "icon": "⚕️",
+    "color": "hover:border-blue-500 hover:shadow-blue-100",
+    "bg": "bg-blue-50",
+    "text": "text-blue-600"
+  },
   {
     title: "Gastroenteroloji",
     slug: "gastroenteroloji",
