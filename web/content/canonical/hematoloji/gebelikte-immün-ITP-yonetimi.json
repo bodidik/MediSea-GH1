@@ -1,0 +1,31 @@
+{
+  "title": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi",
+  "meta": {
+    "updatedAt": "02 Jun 2026",
+    "tags": ["Hematoloji", "İTP", "Gebelik", "Trombositopeni", "HELLP", "YDUS", "IVIg"],
+    "parent": "immun-trombositopeni-itp",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "🤰 1. Tanısal Yaklaşım ve Ayırıcı Tanı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Gebelik sürecinde İTP yönetimi, maternal kanama riskini en aza indirirken fetüsün sağlığını korumayı hedefleyen bireyselleştirilmiş bir yaklaşım gerektirir. Saptanan trombositopeninin yönetiminde ilk adım, İTP'yi gebeliğe özgü diğer durumlardan (Gestasyonel trombositopeni, preeklampsi, HELLP sendromu ve TMA) ayırmaktır.</p><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">İdeal Tarama Paneli</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Periferik kan yayması, retikülosit sayımı, karaciğer ve tiroid fonksiyon testleri, pıhtılaşma testleri, antinükleer antikor (ANA) ve antifosfolipid antikor (APLA) düzeyleri mutlak değerlendirilmelidir.</p></div>"
+    },
+    {
+      "heading": "🎯 2. İzlem ve Güvenli Trombosit Eşikleri",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Aktif kanaması olmayan ve trombosit sayısı <strong>&ge; 20-30 &times; 10<sup>9</sup>/L</strong> düzeyinde seyreden gebelerde, doğuma veya prematüre eylem riskinin arttığı <strong>36. gebelik haftasına kadar</strong> farmakolojik müdahale olmaksızın yakın klinik izlem önerilir. İTP, gebe kalmayı engelleyen mutlak bir kontrendikasyon değildir.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Normal (Vajinal) Doğum</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed\">Trombosit sayısının en az <strong>&ge; 50 &times; 10<sup>9</sup>/L</strong> olması genel olarak önerilmektedir.</p></div></div><div><div class=\"bg-rose-900 border border-rose-700 p-4 rounded-xl shadow-xl text-white h-full\"><h4 class=\"font-black text-rose-300 text-[11px] uppercase mb-2\">Nöraksiyel (Spinal/Epidural) Anestezi</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-2\">Spinal epidural hematom riskini asgariye indirmek için güvenli eşik <strong>&ge; 70-80 &times; 10<sup>9</sup>/L</strong> olarak kabul edilir.</p><p class=\"text-[11px] font-bold text-slate-900 bg-rose-400 p-2 rounded\">Sınav Spotu: Trombosit düzeyinin 50 &times; 10<sup>9</sup>/L'nin altında olduğu durumlarda nöraksiyel girişimlerden kesinlikle kaçınılmalıdır.</p></div></div></div>"
+    },
+    {
+      "heading": "💊 3. Birinci Basamak Tedaviler (Acil ve İdame)",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">Kortikosteroidler (Prednizon Tercihi)</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Tedaviye en düşük etkili doz ile (genellikle 10-20 mg/gün prednizon) başlanmalı ve doz kademeli olarak azaltılmalıdır. Plasenta tarafından büyük ölçüde inaktif hale getirildiği için <strong>prednizon tercih edilirken</strong>, fetüsü doğrudan etkileme potansiyeline sahip olan <strong>deksametazondan kaçınılmalıdır.</strong></p></div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">İntravenöz İmmünoglobulin (IVIg)</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Trombosit sayısında hızlı bir artış gerektiren acil durumlarda veya doğuma kısa süre kala hazırlık amacıyla kullanılır (1-2 g/kg tek doz veya ardışık 5 gün 400 mg/kg/gün). Dirençli durumlarda IVIg ve yüksek doz metilprednizolon kombine edilebilir.</p></div></div>"
+    },
+    {
+      "heading": "🚫 4. İkinci Basamak, TPO-RA ve Kontrendike Ajanlar",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">TPO-RA ve Off-Label Kullanım</h4><p class=\"text-[11px] text-slate-700 leading-relaxed mb-2\">Eltrombopag ve romiplostim teratojenik riskler nedeniyle rutin önerilmez. Ancak son trimesterdeki <em>hayatı tehdit eden dirençli kanamalarda</em> kısa maruziyetle (off-label) kullanılarak başarılı sonuçlar alınmaktadır.</p><p class=\"text-[11px] font-bold text-slate-900 bg-slate-200 p-2 rounded\">rhTPO Spotu: Molekül yapısı gereği plasentayı geçmediği bildirilmiştir, oldukça güvenli bir alternatif olarak gösterilir.</p></div></div><div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">İmmünsüpresanlar ve Kontrendikasyonlar</h4><ul class=\"text-[11px] text-rose-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Güvenli:</strong> Azatiyoprin ve siklosporin-A sonraki basamaklarda kullanılabilir.</li><li><strong>Rituximab:</strong> Fetal B-hücre inhibisyonu sebebiyle genel olarak önerilmez.</li><li><strong>Mutlak Kontrendike (Kırmızı Bayrak):</strong> Teratojenik etkileri kesin olarak bilinen <strong>Mikofenolat Mofetil (MMF) ve Vinka Alkaloidlerinin</strong> kullanımı gebelik boyunca kesinlikle yasaktır.</li></ul></div></div></div>"
+    },
+    {
+      "heading": "🔪 5. Cerrahi Müdahale (Splenektomi Kararı)",
+      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-emerald-400 text-[12px] uppercase tracking-widest mb-2\">Gebelikte Splenektomi Zamanlaması</h4><p class=\"text-[11px] text-slate-300 leading-relaxed\">Gebelikte splenektomi ideal bir tedavi yöntemi olarak kabul edilmez. Ancak medikal tedavilere hiçbir şekilde yanıt vermeyen ve şiddetli kanama riski taşıyan refrakter İTP vakalarında, anestezik ve obstetrik riskler göz önünde bulundurularak, <strong>en güvenli dönem olan ikinci trimesterde ve mümkünse laparoskopik yaklaşımla</strong> uygulanması düşünülebilir.</p></div>"
+    }
+  ]
+}
