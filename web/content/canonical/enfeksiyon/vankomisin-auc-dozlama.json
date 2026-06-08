@@ -1,0 +1,31 @@
+{
+  "title": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar",
+  "meta": {
+    "updatedAt": "08 Jun 2026",
+    "tags": ["Farmakoloji", "Vankomisin", "AUC/MIC", "Bayesian", "MRSA", "YDUS", "PK/PD"],
+    "parent": "vanco-bobrek",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🎯 1. AUC Kılavuzluğuna Geçiş ve Temel Hedef",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">AUC kılavuzluğunda dozlama, özellikle MRSA kaynaklı ciddi enfeksiyonların (bakteriyemi, endokardit, osteomiyelit, pnömoni, sepsis ve menenjit) yönetiminde etkinliği maksimize etmek ve nefrotoksisiteyi azaltmak için geleneksel vadi (trough) izleminin yerini alan majör yaklaşımdır. Optimal PK/PD hedef, sıvı mikrodilüsyonla belirlenen <strong>MIC 1 mg/L varsayıldığında, 24 saatlik AUC/MIC oranının 400 ila 600 mg&middot;h/L arasında</strong> tutulmasıdır.</p>"
+    },
+    {
+      "heading": "💻 2. Bayesian Yaklaşımı (Yazılım Temelli Modelleme)",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-1\">Zamanlama ve Klinik Avantaj</h4><p class=\"text-[11px] text-sky-800 leading-relaxed mb-2\">Yükleme ve ilk idame dozunun ardından ilk 24-48 saat içinde <strong>iki adet (Peak ve Trough)</strong> konsantrasyon alınır. Tepe (peak) infüzyondan 1-2 saat sonra; vadi (trough) bir sonraki dozdan hemen önce alınır.</p><p class=\"text-[11px] font-bold text-slate-900 bg-sky-200 p-2 rounded\">Sınav Spotu: En büyük avantajı, sistemin hesaplama için hastanın \"kararlı durum\" (steady-state) konsantrasyonlarına ulaşmasını beklemeye gerek DUYMAMASIDIR.</p></div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-1\">Dezavantajı</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Hastanede lisanslı yazılım satın alınmasını, farmakologların eğitimini ve laboratuvar ile servisler arası entegre bir iş akışı kurulmasını gerektirir.</p></div></div>"
+    },
+    {
+      "heading": "🧮 3. Birinci Derece PK Denklemleri (Manuel Analitik Model)",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Zamanlama (Steady-State Şartı)</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Bayesian yönteminin aksine, bu formülün kullanılabilmesi için <strong>hastanın kesinlikle kararlı duruma ulaşmış olması ŞARTTIR.</strong> Genellikle <em>dördüncü doz uygulamasında</em> kararlı duruma ulaşıldığı kabul edilir ve hesaplama dördüncü doz etrafındaki peak/trough ile yapılır.</p></div></div><div><div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Doz Ayarı ve Kısıtlılık</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Mevcut AUC hesaplanır; 400-600 hedefine ulaşmak için günlük toplam doz lineer kinetikle orantılı ayarlanır. Kısıtlılığı: Yalnızca kan alınan döneme ait bir <strong>\"anlık görüntü\" (snapshot)</strong> sağlar. Değişken doz şemaları alan karmaşık hastalarda (YBÜ) maruziyeti doğru tahmin edemez.</p></div></div></div>"
+    },
+    {
+      "heading": "🎓 4. İleri Düzey Akademik Noktalar: MIC Değişimleri",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">MIC Değeri &lt; 1 mg/L ise (Örn: 0.5)</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Sadece matematiksel formülü tutturmak amacıyla vankomisin dozunu 400 hedefinin altına düşürmek <strong>kesinlikle önerilmez.</strong></p></div><div class=\"bg-rose-900 border border-rose-700 p-4 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-rose-300 text-[11px] uppercase mb-2 flex items-center gap-2\">MIC Değeri &gt; 1 mg/L ise (Örn: &ge;2) - Kırmızı Bayrak</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-2\">Geleneksel dozlarla 400 AUC/MIC hedefine nefrotoksisite yaratmadan ulaşma ihtimali çok düşüktür. Vankomisin dozu agresif artırılmamalıdır.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-400 p-2 rounded\">Klinik Karar: Tedavi için daptomisin, linezolid veya seftarolin gibi alternatif ajanlara geçiş yapılmalıdır.</p></div><div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Trough (Vadi) Değerinin Yetersizliği İspatı</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Geleneksel 15-20 mcg/mL vadi hedefi AUC'yi öngörmede zayıftır (vakaların %34'ünde örtüşmez). <strong>Sınav Spotu:</strong> &ge;400 AUC elde edilen hastaların %60'ında vadi değerleri toksisite sınırı olan 15 mg/L'nin <em>altında</em> kalabildiği için, AUC kullanımı hastaları gereksiz böbrek yükünden korur.</p></div></div>"
+    },
+    {
+      "heading": "⚠️ 5. AUC Kılavuzluğunun Kullanılmaması Gereken Durumlar",
+      "html": "<div class=\"bg-amber-100 border-l-4 border-amber-500 p-5 rounded-r-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[12px] uppercase tracking-widest mb-2\">Klinik İstisnalar (Kontrendikasyonlar)</h4><p class=\"text-[11px] text-amber-800 leading-relaxed mb-2\">AUC hesaplama dinamikleri sadece stabil böbrek fonksiyonu olan hastalarda geçerlidir. Aşağıdaki hasta gruplarında AUC KILAVUZLUĞU YAPILMAZ:</p><ul class=\"text-[11px] text-amber-900 font-medium space-y-1 list-disc list-inside ml-1 mb-2\"><li>Kararsız (akut olarak bozulan veya hızla düzelen) böbrek fonksiyonu olan hastalar.</li><li>Renal replasman tedavisi (hemodiyaliz vb.) alan hastalar.</li><li>Ciddi olmayan enfeksiyonlar (Cilt/yumuşak doku veya komplike olmayan İYE).</li></ul><p class=\"text-[11px] text-slate-800 bg-amber-200 p-2 rounded\">Bu popülasyonlarda klasik \"konsantrasyona göre doz (dose per concentration)\" yaklaşımıyla ve yalnızca vadi (trough) düzeyleriyle izlem devam ettirilir.</p></div>"
+    }
+  ]
+}

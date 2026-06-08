@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "03 Jun 2026",
     "tags": ["Endokrinoloji", "Hiperkalsemi", "Bifosfonat", "Denosumab", "FHH", "Cinacalcet", "YDUS"],
-    "parent": "endokrin-aciller",
-    "order": 1
+    "parent": null,
+    "order": 17
   },
   "sections": [
     {
