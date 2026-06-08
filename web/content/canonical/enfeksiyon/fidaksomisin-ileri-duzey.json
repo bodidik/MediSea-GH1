@@ -1,0 +1,31 @@
+{
+  "title": "Fidaksomisin: Clostridioides difficile Yönetiminde İleri Düzey Derleme",
+  "meta": {
+    "updatedAt": "08 Jun 2026",
+    "tags": ["Farmakoloji", "Fidaksomisin", "C. difficile", "Mikrobiyom", "RNA Polimeraz", "YDUS"],
+    "parent": "antibiyotikler-ana-sayfa",
+    "order": 14
+  },
+  "sections": [
+    {
+      "heading": "🧬 1. Tanım ve Etki Mekanizması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Fidaksomisin, <em>Clostridioides difficile</em> enfeksiyonunun (CDI) güncel klinik yönetiminde özellikle nüks oranlarını düşürmedeki belirgin başarısıyla öne çıkan, makrosiklik yapıda yeni nesil bir antibiyotiktir. Etki mekanizması, spesifik olarak <strong>bakteriyel RNA polimeraz enzimini inhibe ederek</strong> transkripsiyonu durdurmaya dayanır.</p>"
+    },
+    {
+      "heading": "📉 2. Klinik Avantajları ve Nüks (Recurrence) Üzerindeki Etkisi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İlk ataklarda vankomisin ile başlangıç kür oranları benzer olsa da, tedavinin tamamlanmasından 4 hafta sonraki <strong>kalıcı klinik yanıt (sustained clinical response)</strong> oranları fidaksomisin kullananlarda istatistiksel olarak daha yüksektir.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Yüksek Riskli Gruplarda İlk Tercih</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">İleri düzey kılavuzlar; <strong>&ge;65 yaş, immün yetmezlik, şiddetli CDI öyküsü veya hipervirülan ribotip (027/078/244)</strong> taşıyan yüksek nüks riskli hastalarda ilk atakta dahi vankomisin yerine fidaksomisin tercih edilmesini önerir.</p></div></div><div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Şiddetli (Severe) Vakalar</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Retrospektif çalışmalarda, şiddetli CDI vakalarında fidaksomisin kullanımı 30 günlük relaps oranını vankomisine kıyasla dramatik düzeyde azaltmıştır <strong>(%2.4'e karşı %13.6)</strong>.</p></div></div></div>"
+    },
+    {
+      "heading": "🛡️ 3. Bağırsak Mikrobiyom Dinamikleri ve VRE Kolonizasyonu",
+      "html": "<div class=\"bg-emerald-50 border-l-4 border-emerald-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Flora Koruması (Minimal Disbiyozis)</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed mb-2\">Fidaksomisinin en kritik ekolojik ve farmakodinamik avantajı, dar spektrumlu yapısı sayesinde normal bağırsak florasında (mikrobiyom) vankomisin ve metronidazole kıyasla <em>çok daha az disbiyozise</em> yol açmasıdır.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-200 p-2 rounded\">Sınav Spotu: Vankomisin ve metronidazol florayı bozarak Vankomisine Dirençli Enterokok (VRE) kolonizasyonunu artırırken; fidaksomisin mikrobiyotayı koruyarak VRE ve Klebsiella pneumoniae aşırı çoğalmasını başarılı bir şekilde önler.</p></div>"
+    },
+    {
+      "heading": "⏳ 4. Uzatılmış-Aralıklı (Extended-Pulsed) Rejim Avantajı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Standart 10 günlük (2x200 mg) dozajın ötesinde, <strong>uzatılmış-aralıklı şema (1-5. günler BID, 7-25. günlerde günaşırı tek doz 200 mg)</strong> çok yüksek etkinlik gösterir. Bu rejim floranın restorasyonuna izin verirken, persistan fekal sporlardan çıkabilecek vejetatif formları yok eder.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">İstatistiksel Üstünlük</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">Standart vankomisin tedavisine göre 30 günlük kalıcı kür oranını anlamlı artırmış <strong>(%70'e karşı %59)</strong> ve nüks oranını olağanüstü düşürmüştür <strong>(%2'ye karşı %17)</strong>.</p></div></div><div><div class=\"bg-purple-50 border border-purple-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-purple-900 text-[11px] uppercase mb-2\">Kurtarıcı (Salvage) Rejim</h4><p class=\"text-[11px] text-purple-800 leading-relaxed\">Azaltılarak kesilen (tapered) vankomisin tedavisinin başarısız olduğu çoklu nüks vakalarında da kullanıldığında 30 ve 90 günlük kalıcı kür oranlarını yüksek tutar (sırasıyla %74 ve %61).</p></div></div></div>"
+    },
+    {
+      "heading": "🚨 5. Dezavantaj ve Sınırları: Fulminan Hastalık Kuralı",
+      "html": "<div class=\"bg-rose-950 border border-rose-800 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-2 flex items-center gap-2\">Kırmızı Bayrak (Mutlak Kontrendikasyon)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-2\">Kür kalıcılığı ve mikrobiyom korunumu açısından son derece avantajlı olmasına rağmen, <strong>fidaksomisin FULMİNAN CDI (hipotansiyon, şok, ileus veya toksik megakolon tablosu) yönetiminde KESİNLİKLE KULLANILMAZ.</strong> Etkinliğine dair kanıt eksiktir.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-400 p-2 rounded border border-emerald-500\">Doğru Yaklaşım: Hayati tehlike arz eden bu spesifik senaryoda yüksek doz oral vankomisin ve parenteral metronidazol kombinasyonu tercih edilmelidir.</p></div>"
+    }
+  ]
+}
