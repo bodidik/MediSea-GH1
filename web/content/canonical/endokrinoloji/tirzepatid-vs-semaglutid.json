@@ -1,0 +1,31 @@
+{
+  "title": "Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi",
+  "meta": {
+    "updatedAt": "09 Jun 2026",
+    "tags": ["Endokrinoloji", "Obezite", "T2DM", "Tirzepatid", "Semaglutid", "Twincretin", "YDUS"],
+    "parent": "tirzepatid-genel-profil",
+    "order": 17
+  },
+  "sections": [
+    {
+      "heading": "🧬 1. Farmakolojik Profil ve Etki Mekanizması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Tirzepatid ve semaglutid, klinik pratiğe yön veren yenilikçi inkretin bazlı terapiler olmakla birlikte farmakodinamik profilleri açısından birbirinden ayrışır.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Semaglutid (Selektif)</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Fizyolojik mekanizmada sadece glukagon benzeri peptid-1 <strong>(GLP-1)</strong> reseptörleri üzerinden etki gösteren selektif bir GLP-1 reseptör agonistidir.</p></div></div><div><div class=\"bg-indigo-900 border border-indigo-700 p-4 rounded-xl shadow-xl text-white h-full\"><h4 class=\"font-black text-emerald-400 text-[11px] uppercase mb-2\">Tirzepatid (\"Twincretin\")</h4><p class=\"text-[11px] text-indigo-100 leading-relaxed\">Klinik farmakolojide \"twincretin\" (ikili inkretin) olarak adlandırılır. Hem GLP-1 hem de glukoza bağımlı insülinotropik polipeptid <strong>(GIP)</strong> reseptörlerini eşzamanlı aktive eden dual agonisttir. GIP eklenmesi, pankreatik &beta; hücre fonksiyonunu daha güçlü modüle eder ve tokluk merkezinde sinerjistik etki yaratarak kalori alımını daha yoğun baskılar.</p></div></div></div>"
+    },
+    {
+      "heading": "⚖️ 2. Kilo Kaybı ve Obezite Yönetimindeki Üstünlük",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Güncel meta-analizler ve başa baş (head-to-head) çalışmalar, tirzepatidin semaglutide kıyasla istatistiksel ve klinik olarak daha üstün bir kilo kaybı profili sunduğunu kanıtlamıştır.</p><div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2 flex items-center gap-2\">SURMOUNT Çalışmaları ve Meta-Analiz Verileri</h4><ul class=\"text-[11px] text-slate-700 space-y-2 list-disc list-inside ml-1 mb-2\"><li><strong>Ortalama Ağırlık Değişimi:</strong> Tirzepatid kullananlarda <strong>% -11.4</strong> iken, semaglutid kullananlarda <strong>% -7.3</strong> olarak saptanmıştır (Fark: -4.84 kg).</li><li><strong>Agresif Hedefler:</strong> Tirzepatid alan hastaların vücut ağırlıklarında %20 ve üzerinde (&ge;%20) azalma hedefine ulaşma oranı belirgin derecede daha yüksektir.</li></ul></div>"
+    },
+    {
+      "heading": "🩸 3. Tip 2 Diabetes Mellitus ve Glisemik Kontrol",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">SURPASS Klinik Çalışma Programı</h4><p class=\"text-[11px] text-amber-800 leading-relaxed mb-2\">Tirzepatid (5, 10 ve 15 mg dozlarında) ile semaglutid (1 mg) doğrudan karşılaştırılmıştır. Tirzepatid tedavisi, 104 haftalık süreçlerde <strong>HbA1c seviyelerinde %1.87 ila %3.02 arasında güçlü düşüşler sağlayarak</strong>, glisemik regülasyon açısından semaglutide (1 mg) göre de daha üstün bir etkinlik sergilemiştir.</p></div>"
+    },
+    {
+      "heading": "🤢 4. Yan Etki, Tolerabilite ve Anesteziyolojik Uyarı",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-1\">Gastrointestinal İntolerans</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Her iki ajan için de klinik etkinlikteki farklılıklara rağmen yan etki profilleri ortaktır (bulantı, kusma, ishal, kabızlık). Yan etkiler çoğunlukla <em>doz titrasyonu evrelerinde ortaya çıkarak</em> idame döneminde hafiflemektedir.</p></div><div class=\"bg-rose-950 border border-rose-800 p-5 rounded-2xl shadow-xl text-white\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-2 flex items-center gap-2\">Anesteziyolojik Kırmızı Bayrak (Pulmoner Aspirasyon)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-2\">Mide boşalmasında yarattıkları yavaşlama, postprandiyal glisemiyi kontrol etmede yararlı olsa da anesteziyolojik açıdan kritiktir. İlaçlar midede gıda/sıvı retansiyonuna (rezidüel gastrik içerik) yol açar.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-400 p-2 rounded\">Klinik Kural: Elektif cerrahilerde, endoskopik girişimlerde, genel anestezi veya derin sedasyon gerektiren işlemlerde standart açlık sürelerine uyulsa dahi pulmoner aspirasyon riski artmıştır!</p></div></div>"
+    },
+    {
+      "heading": "🚫 5. Ortak Kontrendikasyonlar ve Majör Riskler",
+      "html": "<div class=\"bg-slate-100 border-l-4 border-slate-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Klinik Takipte Ortak Majör Uyarılar</h4><ul class=\"text-[11px] text-slate-800 space-y-2 list-disc list-inside ml-1 mb-3\"><li>Hızlı kilo kaybına sekonder safra kesesi komplikasyonları (kolelitiazis ve kolesistit).</li><li>Akut pankreatit riski.</li><li>Diyabetik retinopatide hızlı glisemik regülasyona bağlı gelişebilecek geçici kötüleşmeler.</li></ul><p class=\"text-[11px] font-bold text-white bg-rose-600 p-2 rounded\">Mutlak Kontrendikasyon (Onkolojik Spot): Her ikisi de rodent modellerinde tiroid C-hücresi tümörleri ile ilişkilendirildiğinden, Medüller Tiroid Karsinomu (MTC) veya Multiple Endokrin Neoplazi Tip 2 (MEN-2) sendromu öyküsü olan hastalarda KESİNLİKLE KULLANILAMAZ.</p></div>"
+    }
+  ]
+}

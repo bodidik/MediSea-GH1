@@ -1,0 +1,27 @@
+{
+  "title": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler",
+  "meta": {
+    "updatedAt": "09 Jun 2026",
+    "tags": ["Endokrinoloji", "Tirzepatid", "Kardiyovasküler", "Nefroprotektif", "SURMOUNT", "YDUS", "AKI"],
+    "parent": "tirzepatid-genel-profil",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "🫀 1. Pleiotropik Etki ve Kardiyovasküler Koruma",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Tirzepatid, GIP ve GLP-1 reseptörleri üzerinden gösterdiği dual agonistik etki sayesinde salt glisemik kontrol ve kilo kaybının ötesinde, <strong>kardiyorenal eksende majör koruyucu (pleiotropik)</strong> etkilere sahip yenilikçi bir ajandır.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Hemodinamik İyileşme (SURMOUNT)</h4><p class=\"text-[11px] text-sky-800 leading-relaxed\">Sistolik ve diyastolik kan basıncında klinik olarak anlamlı düzelme (-5.1 ila -7.2 ve -3.2 mmHg düşüş) sağlar.</p></div></div><div><div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Lipit Profilinde Modülasyon</h4><p class=\"text-[11px] text-amber-800 leading-relaxed\">Trigliseritlerde %24.8-27.2 ve non-HDL kolesterolde %5.9-9.7 belirgin azalma yaparken; kardiyoprotektif <strong>HDL kolesterolde %8.0-9.0 kalıcı artış</strong> sağlar.</p></div></div></div>"
+    },
+    {
+      "heading": "🛡️ 2. Ateroskleroz, OSA ve Kalp Yetersizliği Yönetimi",
+      "html": "<div class=\"space-y-4 mb-4\"><div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-1\">Ateroskleroz ve MACE (SURPASS-CVOT)</h4><p class=\"text-[11px] text-indigo-800 leading-relaxed\">GIP reseptörüne yüksek seçiciliği; anti-enflamatuvar etkileri güçlendirir, miyokard/endotelde apoptozu azaltır ve otofajiyi uyarır. Bu da endotel fonksiyonunu koruyup aterosklerozu yavaşlatır (Uzun dönem MACE-4 faydaları SURPASS-CVOT ile araştırılmaktadır).</p></div><div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Obstrüktif Uyku Apnesi (OSA) ve Kalp Yetersizliği</h4><p class=\"text-[11px] text-emerald-800 leading-relaxed mb-2\"><strong>SURMOUNT-OSA:</strong> Apne-hipopne indeksini ve popülasyon bazında bağımsız bir kardiyovasküler mortalite prediktörü olan <em>total hipoksik yükü</em> dramatik düzeyde azaltır.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-200 p-2 rounded\">SUMMIT Çalışması: Korunmuş ejeksiyon fraksiyonlu kalp yetersizliği (HFpEF) olan hastalarda, miyokard fonksiyonları üzerindeki etkinliği araştırılmaktadır.</p></div></div>"
+    },
+    {
+      "heading": "🩸 3. Renal Koruyucu (Nefroprotektif) Etkiler",
+      "html": "<div class=\"bg-slate-100 border border-slate-300 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Patofizyolojik Hedefler ve Klinik Sonlanım</h4><p class=\"text-[11px] text-slate-700 leading-relaxed mb-2\">Renal hasarı tetikleyen insülin direncinin kırılması, kan basıncının düşürülmesi, lipotoksisitenin önlenmesi ve inflamasyonun azaltılması ile glomerüler ateroskleroz ve hiperfiltrasyon zeminindeki fibrotik kaskadlar baskılanır.</p><ul class=\"text-[11px] text-slate-700 space-y-2 list-disc list-inside ml-1\"><li><strong>SURPASS Verileri:</strong> Yeni başlangıçlı makroalbüminüri gelişimi insidansında azalma sağlar.</li><li>Böbrek kompozit sonlanım riskini (eGFR'de &ge;%40 düşüş, Son Dönem Böbrek Yetmezliği [ESRD] gelişimi ve böbrek yetmezliğine bağlı ölüm oranlarını) belirgin şekilde geriletir.</li></ul></div>"
+    },
+    {
+      "heading": "⚠️ 4. Böbrek Yetmezliğinde Dozaj ve Prerenal AKI Riski",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Böbrek Yetmezliğinde Dozaj Özgürlüğü</h4><p class=\"text-[11px] text-sky-800 leading-relaxed mb-2\">Tirzepatidin klirens hızı renal disfonksiyondan klinik olarak anlamlı bir boyutta etkilenmez. Hafif, orta ve şiddetli böbrek yetmezliği olan hastalarda <strong>hiçbir spesifik doz ayarlaması yapılmaksızın</strong> güvenle kullanılabilir.</p><p class=\"text-[11px] text-slate-500 italic mt-1\">(Not: ESRD grubunda klinik veri kısıtlılığından dolayı rutin kullanımı önerilmemektedir).</p></div></div><div><div class=\"bg-rose-950 border border-rose-800 p-5 rounded-2xl shadow-xl text-white h-full\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-2\">Klinik Uyarı (Prerenal AKI Tuzağı)</h4><p class=\"text-[11px] text-rose-100 leading-relaxed mb-2\">Tirzepatidin yol açtığı şiddetli GİS intoleransı (bulantı/kusma/ishal), belirgin dehidratasyona ve intravasküler volüm deplasmanına yol açabilir.</p><p class=\"text-[11px] font-bold text-slate-900 bg-emerald-400 p-2 rounded\">Sonuç: Bu şiddetli sıvı kaybı, prerenal akut böbrek hasarına (AKI) veya kronik böbrek yetmezliğinin akut alevlenmesine neden olabilir. GİS semptomlarında agresif sıvı replasmanı şarttır!</p></div></div></div>"
+    }
+  ]
+}
