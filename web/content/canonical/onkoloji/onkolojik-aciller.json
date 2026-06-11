@@ -8,8 +8,8 @@
       "Tümör Lizis",
       "Nötropeni"
     ],
-    "parent": "onkoloji-hastaliklari",
-    "order": 2
+    "parent": null,
+    "order": 8
   },
   "sections": [
     {

@@ -1,5 +1,5 @@
 {
-  "title": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi",
+  "title": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH",
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": [
@@ -9,8 +9,8 @@
       "Kemoterapi",
       "İmmünoterapi"
     ],
-    "parent": "onkoloji-hastaliklari",
-    "order": 1
+    "parent": null,
+    "order": 19
   },
   "sections": [
     {

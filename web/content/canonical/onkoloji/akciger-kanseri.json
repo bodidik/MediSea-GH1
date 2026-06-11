@@ -1,5 +1,5 @@
 {
-  "title": "Ch 83: Akciğer Kanserleri",
+  "title": "Ch 83: Akciğer Kanserleri-PH",
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": [
@@ -8,7 +8,7 @@
       "Sigara",
       "EGFR"
     ],
-    "parent": "onkoloji-hastaliklari",
+    "parent": null,
     "order": 3
   },
   "sections": [

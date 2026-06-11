@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Onkoloji", "Over", "Rahim", "HPV"],
-    "parent": "onkoloji-hastaliklari",
-    "order": 13
+    "parent": null,
+    "order": 23
   },
   "sections": [
     {
