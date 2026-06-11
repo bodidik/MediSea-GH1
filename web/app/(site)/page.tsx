@@ -6,16 +6,7 @@ import Link from "next/link";
 // --- MEDISEA BRANŞ DÜZENLEMESİ ---
 const SPECIALTIES = [
   
-  {
-    "title": "Genel Dahiliye",
-    "slug": "genel-dahiliye",
-    "desc": "İç hastalıkları, tanı ve tedavi süreçleri",
-    "icon": "⚕️",
-    "color": "hover:border-blue-500 hover:shadow-blue-100",
-    "bg": "bg-blue-50",
-    "text": "text-blue-600"
-  },
-  {
+ {
     title: "Gastroenteroloji",
     slug: "gastroenteroloji",
     desc: "Konu anlatımları, Hepatoloji, İBH",
@@ -121,6 +112,15 @@ const SPECIALTIES = [
     href: "/topics/palyatif",
     color: "text-teal-600", // Temana uygun bir renk
     bgHover: "hover:bg-teal-50"
+ },
+ {
+    "title": "Genel Dahiliye",
+    "slug": "genel-dahiliye",
+    "desc": "İç hastalıkları, tanı ve tedavi süreçleri",
+    "icon": "⚕️",
+    "color": "hover:border-blue-500 hover:shadow-blue-100",
+    "bg": "bg-blue-50",
+    "text": "text-blue-600"
 }
 ];
 
@@ -174,7 +174,7 @@ export default function Home() {
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Uzmanlık Düzeyinde Güncel Anlatımlar</p>
           </div>
           <p className="text-slate-400 text-xs font-bold uppercase max-w-xs text-right hidden md:block">
-            Hekimlere yönelik güncellenen Tıp Kütüphanesi.
+            Hekimlere yönelik eğitsel bilgi içerir -TEST YAYINI
           </p>
         </div>
         
