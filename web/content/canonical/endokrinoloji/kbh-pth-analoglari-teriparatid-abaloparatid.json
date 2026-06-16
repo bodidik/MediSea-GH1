@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "02 May 2026",
     "tags": ["Nefroloji", "Endokrinoloji", "Adinamik Kemik Hastalığı", "Teriparatid", "Abaloparatid", "PTH Analogları", "Osteoporoz", "YDUS"],
-    "parent": "kbh-osteoporoz-ckd-mbd",
+    "parent": "kbh-adinamizm-vaskuler-kalsifikasyon",
     "order": 3
   },
   "sections": [

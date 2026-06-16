@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "01 May 2026",
     "tags": ["Nefroloji", "Endokrinoloji", "Osteoporoz", "CKD-MBD", "Bisfosfonat", "Denosumab", "Romosozumab", "YDUS"],
-    "parent": "osteoporoz-ve-tedavi",
-    "order": 1
+    "parent": "osteoporoz-ana-sayfa",
+    "order": 41
   },
   "sections": [
     {
