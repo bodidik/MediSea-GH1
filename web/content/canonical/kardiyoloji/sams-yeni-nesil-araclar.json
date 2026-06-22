@@ -1,10 +1,10 @@
 {
-  "title": "SAMS: Umut Vadeden Tanı ve Tedavi Araçları",
+  "title": "SAMS: Umut Vadeden Tanı ve Tedaviler",
   "meta": {
     "updatedAt": "03 Nis 2026",
     "tags": ["Farmakoloji", "Lipidoloji", "SAMS", "Farmakogenomik", "Bempedoik Asit", "Inclisiran", "IMNM"],
-    "parent": "farmakoloji-statin-miyopatisi-sams",
-    "order": 3
+    "parent": "lipidoloji-statin-miyopatisi-sams",
+    "order": 13
   },
   "sections": [
     {
