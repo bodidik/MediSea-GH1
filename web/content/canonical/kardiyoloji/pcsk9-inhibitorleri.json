@@ -1,10 +1,10 @@
 {
-  "title": "PCSK9 İnhibisyonu ve Yeni Hedefler",
+  "title": "PCSK9 İnhibisyonu",
   "meta": {
     "updatedAt": "21 Nis 2026",
     "tags": ["Lipidoloji", "Farmakoloji", "PCSK9", "İnclisiran", "Lp(a)", "EBBINGHAUS"],
-    "parent": "lipidoloji-guncel-kilavuz",
-    "order": 1
+    "parent": "lipidoloji-tedavi-ana",
+    "order": 25
   },
   "sections": [
     {
