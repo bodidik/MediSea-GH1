@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Tiroid Nodülü", "TI-RADS", "Bethesda", "İİAB"],
     "parent": "tiroid-hastaliklari-ana",
+    "hidden": true,
     "order": 2
   },
   "sections": [

@@ -4,6 +4,7 @@
   "meta": {
     "updatedAt": "10 Mar 2026",
     "tags": ["Gastro", "Acil", "Kanama"],
+    "hidden": true,
     "order": 3
   },
   "sections": [

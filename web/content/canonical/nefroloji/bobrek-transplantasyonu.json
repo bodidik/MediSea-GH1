@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Nefroloji", "Transplantasyon", "İmmünsüpresyon", "Rejeksiyon", "HLA"],
     "parent": null,
+    "hidden": true,
     "order": 8
   },
   "sections": [

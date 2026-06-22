@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Onkoloji", "Tiroid Kanseri", "Papiller", "Medüller", "Radyoaktif İyot"],
-    "parent": "tiroid-hastaliklari-ana",
+    "parent": "tiroid-hastaliklari-ana", "hidden": true,
     "order": 6
   },
   "sections": [

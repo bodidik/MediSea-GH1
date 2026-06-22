@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "18 Mar 2026",
     "tags": ["Endokrinoloji", "Diabetes İnsipidus", "ADH", "Desmopressin", "Poliüri"],
-    "parent": "arka-hipofiz-bozukluklari-di-ve-siadh",
+    "parent": "arka-hipofiz-bozukluklari-di-ve-siadh","hidden": true,
     "order": 13
   },
   "sections": [

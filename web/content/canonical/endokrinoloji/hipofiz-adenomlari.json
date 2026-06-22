@@ -4,6 +4,7 @@
     "updatedAt": "18 Mar 2026",
     "tags": ["Endokrinoloji", "Hipofiz", "Adenom", "Prolaktinoma", "Akromegali", "Cushing"],
     "parent": "on-hipofiz-hastaliklari-giris",
+    "hidden": true
     "order": 3
   },
   "sections": [

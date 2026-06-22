@@ -4,7 +4,6 @@ import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-// 🚀 Önbellek sorunlarını önlemek için eklendi
 export const dynamic = "force-dynamic";
 
 export default async function BranchListPage({ 
@@ -33,8 +32,8 @@ export default async function BranchListPage({
           slug: file.replace(".json", ""),
           title: content.title || file.replace(".json", ""),
           order: Number(content.meta?.order ?? 999),
-          // 🚀 YENİ: Babanın kim olduğunu öğreniyoruz
           parent: content.meta?.parent || null, 
+	  hidden: content.meta?.hidden || false,
         };
       } catch (err) {
         // Bozuk JSON sistemi çökertmez, sadece loglanır ve atlanır
@@ -42,7 +41,7 @@ export default async function BranchListPage({
         return null;
       }
     })
-    .filter(Boolean) as { slug: string; title: string; order: number; parent: string | null }[];
+    .filter(Boolean) as { slug: string; title: string; order: number; parent: string | null; hidden: boolean }[];
 
   // 3. Stabil Sıralama: Önce Order (Sayısal), sonra Alfabetik (Türkçe-Base)
   topicList.sort((a, b) => {
@@ -51,7 +50,7 @@ export default async function BranchListPage({
   });
 
   // 🚀 4. YENİ: SADECE ANA KONULARI FİLTRELE (Alt konular burada görünmesin)
-  const mainTopics = topicList.filter(t => !t.parent);
+  const mainTopics = topicList.filter(t => !t.parent && !t.hidden);
 
   return (
     <div className="min-h-screen bg-white py-16 px-6 font-sans">

@@ -20,7 +20,7 @@ export default async function TopicDetailPage({
 
   // 1. Ana Dosyayı Oku
   const rawData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-
+  
   const topicItem = {
     slug: topicSlug,
     title: rawData.title || topicSlug.replace(/-/g, " "),
@@ -46,21 +46,22 @@ export default async function TopicDetailPage({
         slug: file.replace(".json", ""), 
         title: content.title, 
         parent: content.meta?.parent || null,
+        hidden: content.meta?.hidden || false,
         order: content.meta?.order || 99
       };
     } catch (e) { return null; }
-  }).filter(Boolean) as {slug: string, title: string, parent: string | null, order: number}[];
+  }).filter(Boolean) as {slug: string, title: string, parent: string | null, hidden: boolean, order: number}[];
 
   // Doğrudan çocukları bul ve sıraya (order) göre diz
   const childTopics = allTopics
-    .filter(t => t.parent === topicSlug)
+    .filter(t => t.parent === topicSlug && !t.hidden)  
     .sort((a, b) => a.order - b.order);
 
   // Her çocuğun kendi alt çocuklarını (Torunları) bul
   const tree = childTopics.map(child => ({
     ...child,
     grandchildren: allTopics
-      .filter(t => t.parent === child.slug)
+      .filter(t => t.parent === child.slug && !t.hidden)
       .sort((a, b) => a.order - b.order)
   }));
 

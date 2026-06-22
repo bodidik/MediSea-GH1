@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Adrenal", "İnsidentaloma", "Adrenokortikal CA", "Hounsfield"],
     "parent": "adrenal-bez-hastaliklari",
+    "hidden": true,
     "order": 6
   },
   "sections": [

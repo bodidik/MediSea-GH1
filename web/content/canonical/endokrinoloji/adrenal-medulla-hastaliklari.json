@@ -4,6 +4,7 @@
     "updatedAt": "14 Mar 2026",
     "tags": ["Endokrin", "Medulla", "Katekolamin"],
     "parent": "adrenal-bez-hastaliklari",
+    "hidden": true,
     "order": 2
   },
   "sections": [

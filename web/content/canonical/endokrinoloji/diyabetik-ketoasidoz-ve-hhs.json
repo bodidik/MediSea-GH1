@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "DKA", "HHS", "Anyon Açığı", "İnsülin İnfüzyonu", "Hipokalemi"],
-    "parent": "diabetes-mellitus-ana",
+    "parent": "diabetes-mellitus-ana","hidden": true,
     "order": 3
   },
   "sections": [

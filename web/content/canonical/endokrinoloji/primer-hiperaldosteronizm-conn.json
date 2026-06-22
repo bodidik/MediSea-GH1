@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Adrenal", "Aldosteron", "Conn", "Hipertansiyon", "ARR"],
     "parent": "adrenal-korteks-hastaliklari",
+    "hidden": true,
     "order": 2
   },
   "sections": [

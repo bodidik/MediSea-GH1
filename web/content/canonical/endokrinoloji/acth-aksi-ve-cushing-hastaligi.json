@@ -3,7 +3,8 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Cushing", "ACTH", "Kortizol", "Deksametazon Testi", "IPSS"],
-    "parent": "Ön-hipofiz-hastaliklari-giris",
+    "parent": "on-hipofiz-hastaliklari-giris",
+    "hidden": true,
     "order": 4
   },
   "sections": [

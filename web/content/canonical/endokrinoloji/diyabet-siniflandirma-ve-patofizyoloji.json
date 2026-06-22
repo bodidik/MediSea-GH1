@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Diyabet", "Patofizyoloji", "Tip 1", "Tip 2", "Ominous Octet"],
-    "parent": "diabetes-mellitus-ana",
+    "parent": "diabetes-mellitus-ana","hidden": true,
     "order": 1
   },
   "sections": [

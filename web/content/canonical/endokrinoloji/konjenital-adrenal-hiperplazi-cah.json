@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Adrenal", "CAH", "21-Hidroksilaz", "17-OHP", "Virilizasyon"],
     "parent": "adrenal-bez-hastaliklari",
+    "hidden": true,
     "order": 5
   },
   "sections": [

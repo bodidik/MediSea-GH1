@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Nefropati", "Retinopati", "Nöropati", "Albuminüri", "KVH"],
-    "parent": "diabetes-mellitus-ana",
+    "parent": "diabetes-mellitus-ana","hidden": true,
     "order": 4
   },
   "sections": [

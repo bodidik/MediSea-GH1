@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Prolaktin", "Dopamin Agonist", "Hook Effect", "Makroprolaktinemi"],
-    "parent": "on-hipofiz-hastaliklari-giris",
+    "parent": "on-hipofiz-hastaliklari-giris","hidden": false,
     "order": 2
   },
   "sections": [

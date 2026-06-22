@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Hipertiroidi", "Graves", "Tirotoksikoz", "Tiroid Fırtınası", "TRAB"],
-    "parent": "tiroid-hastaliklari-ana",
+    "parent": "tiroid-hastaliklari-ana","hidden": true,
     "order": 3
   },
   "sections": [

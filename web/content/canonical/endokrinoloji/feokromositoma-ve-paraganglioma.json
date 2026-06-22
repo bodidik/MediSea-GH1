@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Feokromositoma", "Katekolamin", "MEN2", "VHL", "Metanefrin"],
     "parent": "adrenal-medulla-hastaliklari",
+    "hidden": true,
     "order": 3
   },
   "sections": [

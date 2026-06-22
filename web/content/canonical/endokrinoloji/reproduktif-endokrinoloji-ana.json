@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Endokrinoloji", "Reprodüktif", "Gonad", "PCOS", "Testosteron", "Harrison"],
-    "parent": null,
+    "parent": null,"hidden": true,
     "order": 0
   },
   "sections": [
