@@ -1,9 +1,9 @@
 {
-  "title": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi, Fetomaternal Patofizyoloji ve Takip Protokolü",
+  "title": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
   "meta": {
     "updatedAt": "24 Haz 2026",
     "tags": ["Endokrinoloji", "Obstetri", "Gebelik ve Tiroid", "Graves", "Hashimoto", "YDUS"],
-    "parent": null,
+    "parent": "tiroid-hastaliklari-ana",
     "order": 1
   },
   "sections": [
