@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "Ankilozan Spondilit", "HLA-B27", "Sakroileit", "Entezit", "ASAS"],
-    "parent": null,
+    "parent": null, "hidden": true,
     "order": 5
   },
   "sections": [

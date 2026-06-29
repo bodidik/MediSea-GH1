@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "Artrit", "Anti-CCP", "Erozyon", "Biyolojikler", "JAK"],
-    "parent": null,
+    "parent": null, "hidden": true,
     "order": 2
   },
   "sections": [

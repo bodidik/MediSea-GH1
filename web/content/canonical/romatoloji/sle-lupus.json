@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "Lupus", "ANA", "Anti-dsDNA", "Lupus Nefriti", "EULAR/ACR"],
-    "parent": null,
+    "parent": null, "hidden": true,
     "order": 4
   },
   "sections": [

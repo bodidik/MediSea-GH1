@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "Miyozit", "Polimiyozit", "Dermatomiyozit", "Gottron", "CPK"],
-    "parent": null,
+    "parent": null, "hidden": true,
     "order": 6
   },
   "sections": [

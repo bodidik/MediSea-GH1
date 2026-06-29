@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "id": "kml",
+    "branch": "hematoloji",
+    "baslik": "Kronik Miyeloid Lösemi (KML)",
+    "altbaslik": "t(9;22) BCR::ABL1, ELTS skoru ve TKI yönetimi",
+    "rozetler": ["Ph(+) & TKI Çağı", "WHO/ICC 2022"],
+    "guncelleme": "2025-01"
+  },
+
+  "moduller": {
+    "flashcard": true,
+    "inciler": true,
+    "quiz": false,
+    "vaka": false,
+    "video": true
+  },
+
+  "istatistikler": {
+    "soru": 0,
+    "flashcard": 12,
+    "inci": 5
+  },
+
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve genetik",
+      "satirlar": [
+        {
+          "metin": "KML, hematopoietik kök hücrenin BCR::ABL1 füzyon geni içeren klonal proliferasyonudur."
+        },
+        {
+          "yil": "YDUS-2019",
+          "metin": "t(9;22)(q34;q11) translokasyonu sonucu oluşan Philadelphia kromozomu patognomoniktir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "WHO 2022 akselere fazı kaldırdı — sadece kronik faz (CP) ve blastik kriz (BP) var. ICC 2022 ise %10–19 blast eşiğiyle akselere fazı korumaya devam ediyor."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Faz kriterleri karşılaştırması",
+      "kolonlar": ["Faz", "WHO 2022", "ICC 2022"],
+      "satirlar": [
+        {
+          "hucreler": ["Kronik faz (CP)", "< %10 blast", "< %10 blast"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["Akselere faz (AP)", "Kaldırıldı", "%10–19 blast"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["Blastik kriz (BP)", "≥ %20 blast veya miyeloid sarkom", "≥ %20 blast veya miyeloid sarkom"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "ELTS skoru",
+      "satirlar": [
+        {
+          "yil": "YDUS-2022",
+          "metin": "TKI çağında Sokal skorunun yerini alan risk sınıflamasıdır. Yaş, dalak boyutu, periferik blast yüzdesi ve trombosit sayısını içerir."
+        },
+        {
+          "metin": "Yaş faktörünün negatif etkisi Sokal'a göre belirgin biçimde daha azdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KML transkript şifreleri",
+      "kolonlar": ["Transkript", "Klinik fenotip", "Not"],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["p210 (M-BCR)", "Klasik KML — iyi prognoz", "Olguların %95'i (e13a2 veya e14a2)"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["p190 (e1a2)", "Belirgin monositoz", "KMML'yi taklit edebilir; Ph+ ALL'nin en sık nedeni"]
+        },
+        {
+          "hucreler": ["p230 (e19a2)", "Belirgin nötrofili", "İndolent seyir, CNL benzeri tablo"]
+        },
+        {
+          "hucreler": ["Kriptik Ph(−)", "Karyotip negatif", "Tanı için FISH veya RT-PCR şart (%1–5)"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "TKI seçimi ilkeleri",
+      "satirlar": [
+        {
+          "metin": "1. kuşak imatinib güvenlilik profili en iyisidir; sıvı retansiyonu, kas krampları yapar."
+        },
+        {
+          "yil": "YDUS-2021",
+          "metin": "Dasatinib plevral efüzyon riski (%20–30) taşır ve emilimi için asidik ortam gerekir — PPI ile birlikte verilmez."
+        },
+        {
+          "metin": "Ponatinib T315I mutasyonunda güçlüdür ancak fatal arteriyel/venöz tromboz riski yüksektir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Gebelikte tüm TKI'lar teratojenik — özellikle ilk trimesterde kesilmelidir. Güvenli alternatif interferon-alfa'dır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "TKI yoksunluk sendromu: ilacı bırakanların %20–30'unda polimiyalji benzeri kas-eklem ağrıları görülür. Nükslerin büyük çoğunluğu ilk 6 ayda olur."
+    },
+    {
+      "tip": "metin",
+      "baslik": "TFR (Tedavisiz Remisyon) kriterleri",
+      "satirlar": [
+        {
+          "metin": "Sadece kronik fazda olmak, en az 3–5 yıl aralıksız TKI kullanmış olmak ve en az 2 yıl boyunca DMR (MR4 veya MR4.5) düzeyinde kalmak gerekir."
+        },
+        {
+          "yil": "YDUS-2023",
+          "metin": "TFR girişiminin başarısızlık oranı yaklaşık %50'dir; nüksler genellikle ilk 6 ayda gerçekleşir ve TKI'ya yeniden yanıt iyidir."
+        }
+      ]
+    }
+  ]
+}

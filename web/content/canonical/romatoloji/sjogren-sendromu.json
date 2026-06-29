@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "Sjögren", "Sicca", "Anti-Ro", "Anti-La", "Lenfoma"],
-    "parent": null,
+    "parent": null, "hidden": true,
     "order": 7
   },
   "sections": [
