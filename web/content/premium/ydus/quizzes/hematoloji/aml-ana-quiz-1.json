@@ -123,6 +123,102 @@
       "etiketler": ["GO", "SOS", "VOD", "Allo-HCT", "Hepatotoksisite", "CBF AML"],
       "zorluk": "orta",
       "kaynak": "Döhner et al. Blood 2022; Hills et al. Lancet Oncol 2014; NCCN AML v2024"
+    },
+    {
+      "id": "s6",
+      "metin": "Altmış iki yaşında bir erkek hasta, FLT3-ITD pozitif, nüks AML tanısıyla gilteritinib 120 mg/gün başlanmış ve 3 haftadır tedavi sürmektedir. Hasta, iki gündür gelişen 39.1°C ateş, giderek artan nefes darlığı ve kuru öksürük şikayetiyle acile başvuruyor. Fizik muayenede her iki akciğerde kaba rallerin yanı sıra sağda azalmış solunum sesi saptanıyor. Akciğer grafisinde bilateral infiltratlar ve sağ plevral efüzyon izleniyor. Kan kültürleri alındı; şimdiye kadar üreme yok. Nötropeni mevcut. Prokalsitonin hafif yüksek (1.8 ng/mL).\n\nBu klinik tabloda en uygun tedavi yaklaşımı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Gilteritinib kalıcı olarak kesilmeli ve geniş spektrumlu antibiyotik tedavisi başlanmalıdır; klinik tablo ağır pnömoni ile uyumludur, diferansiyasyon sendromu bu kadar erken gelişmez.",
+        "B": "Gilteritinib dozunu artırmak gereklidir; bu bulgular lösemik ilerlemenin işaretidir ve daha güçlü FLT3 inhibisyonu gerekmektedir.",
+        "C": "Sistemik kortikosteroid hemen başlanmalı, gilteritinib geçici olarak kesilmeli; eş zamanlı olarak geniş spektrumlu antibiyotik ile enfeksiyon dışlama çalışmaları sürdürülmelidir.",
+        "D": "Yalnızca geniş spektrumlu antibiyotik tedavisi başlanmalıdır; tablo febril nötropeni ile uyumludur, gilteritinib pulmoner komplikasyonlara yol açmaz.",
+        "E": "Bronkoskopi ve bronkoalveoler lavaj (BAL) yapılana kadar ilaç kesilmemeli, hiçbir tedavi eklenmemelidir; aksi hâlde yanlış yönetim riski doğar."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Gilteritinibin FDA siyah kutu uyarısına sahip en tehlikeli yan etkisi diferansiyasyon sendromudur. Şüphelenilir şüphelenilmez steroid başla, ilacı geçici kes, enfeksiyonu paralelde dışla.",
+      "aciklama_detay": "Diferansiyasyon sendromu (DS), gilteritinib tedavisinde lösemik blastların hızlı olgunlaşmasıyla tetiklenen sitokin fırtınasıdır. APL'deki ATRA-DS ile aynı patofizyolojiyi taşır. Klinik triad: ateş + pulmoner infiltrat/efüzyon + hipotansiyon. Tablo bu hastada klasik biçimde mevcut. FDA etiketinde siyah kutu uyarısı var. Şüphelenildiği anda kortikosteroid (Deksametazon 10 mg IV) başlanır; ilaç geçici kesilir; hastanede yakın gözlem ve eş zamanlı enfeksiyon dışlaması yapılır. Tablodan 48 saat içinde belirgin düzelme olmazsa ya da ağır seyrediyorsa kalıcı ilaç kesilmesi düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — DS ilk 2 haftadan sonra da (hatta daha geç) gelişebilir; '3 haftada gelişmez' bilgisi yanlıştır. Kalıcı ilaç kesilmesi ilk adım değildir; kortikosteroid başlanarak geçici kesilme ve yanıta göre karar verme standart yaklaşımdır.",
+        "B": "YANLIŞ — Doz artışı kesinlikle yanlış ve tehlikelidir. Diferansiyasyon sendromunun temel mekanizması FLT3 inhibisyonuna bağlı hızlı blast olgunlaşmasıdır; inhibisyonu güçlendirmek tabloyu derinleştirir.",
+        "C": "DOĞRU — Şüphelenilen DS'de steroid (örn. Deksametazon 10 mg IV/günde iki kez) gecikmeksizin başlanır, gilteritinib geçici olarak kesilir. Enfeksiyon DS ile birlikte olabilir veya tetikleyici olabilir; paralelde antibiyotik ve kültür çalışmaları sürdürülür.",
+        "D": "YANLIŞ — Gilteritinib pulmoner komplikasyona yol açmaz demek klinik olarak tehlikelidir. DS'nin öldürücü komplikasyonu solunum yetmezliğidir. Salt antibiyotik vermek hayat kurtarıcı steroid başlangıcını geciktirir.",
+        "E": "YANLIŞ — BAL tanı koydurucu olabilir; ancak beklemek ve tedavisiz geçirmek DS'de mortaliteyi artırır. Şüphe = steroid başla kuralı bronkoskopi sonucu beklenerek askıya alınamaz."
+      },
+      "etiketler": ["Gilteritinib", "Diferansiyasyon Sendromu", "FLT3", "Relaps AML", "Toksisite"],
+      "zorluk": "orta",
+      "kaynak": "Perl et al. NEJM 2019 (ADMIRAL); FDA Xospata Prescribing Information; ELN 2022"
+    },
+    {
+      "id": "s7",
+      "metin": "Elli yedi yaşında bir erkek hasta, birinci nüks FLT3-ITD pozitif AML nedeniyle gilteritinib 120 mg/gün başlanmış ve başlangıçta tam remisyon (CR) elde edilmiştir. Altı ay süren tedavi sonrasında hastanın genel durumunun bozulması üzerine yapılan kemik iliği biyopsisinde %38 blast saptanıyor ve hastalığın ilerlediği teyit ediliyor. Tekrarlanan NGS panelinde FLT3-ITD mutasyonu aynı klonda hâlâ mevcut; ek olarak yeni gelişen NRAS G12D mutasyonu saptanıyor.\n\nBu hastadaki gilteritinib direncinin moleküler mekanizması aşağıdakilerden hangisiyle en iyi açıklanır?",
+      "secenekler": {
+        "A": "NRAS G12D mutasyonu, RAS/MAPK yolağını FLT3'ten bağımsız olarak sürekli aktive ederek gilteritinib'in etkisini bypass etmekte ve lösemik klona farklılaşmadan bağımsız proliferasyon avantajı sağlamaktadır.",
+        "B": "FLT3-ITD mutasyonu, gilteritinib tedavisi süresince Tip 2 tirozin kinaz domain mutasyonuna dönüşmüş; bu durum gilteritinib bağlanmasını engellemiştir.",
+        "C": "NRAS mutasyonu doğrudan FLT3 ATP-bağlanma cebine yerleşerek gilteritinib'in reseptöre bağlanmasını sterik olarak engeller.",
+        "D": "Uzun süreli gilteritinib kullanımında FLT3 reseptörünün yüzey ekspresyonu düşer; direnç mekanizması farmakodinamik tolerans ile açıklanır.",
+        "E": "FLT3-ITD klonu baskılanmış, NRAS mutasyonu taşıyan FLT3-negatif bir subklon seçilmiştir; bu nedenle gilteritinib hedefsiz kalmaktadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "NRAS/KRAS mutasyonları RAS/MAPK yolağını FLT3'ten bağımsız aktive ederek gilteritinibe karşı bypass direnci oluşturur; FLT3 hedef seçimi korunsa da aşağı yolak baskılanamaz.",
+      "aciklama_detay": "Gilteritinib, FLT3 reseptörünü inhibe ederek aşağı akış sinyal yolaklarını (RAS/MAPK, PI3K/AKT, STAT5) engeller. Klonal seleksiyon sırasında ortaya çıkan NRAS veya KRAS aktivasyon mutasyonları, bu yolakları FLT3'ün üstünde (upstream) değil, yanından (bypass) aktive eder. Sonuç olarak FLT3 kinaz tamamen inhibe edilmiş olsa bile RAS→MEK→ERK ekseni sürekli çalışmaya devam eder ve lösemik proliferasyon durdurulamaz. Bu, hedefe yönelik tedavilerde 'bypass direnci' paradigmasının klasik örneğidir. Klinik pratikte yanıt kaybında NGS tekrarı şarttır; NRAS/KRAS saptanırsa MEK inhibitörü kombinasyonları araştırılmaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — NRAS G12D, GTPaz aktivitesini kalıcı olarak bozarak RAS'ı sürekli 'açık' konumda tutar. Bu, FLT3'ün inhibisyonundan bağımsız olarak aşağı yolakları aktive eder. FLT3 hedefi korunmuş olsa bile terapötik etki kaybolur; 'bypass direnci' mekanizmasının prototipidir.",
+        "B": "YANLIŞ — Gilteritinib Tip 1 TKI olduğundan hem ITD hem de TKD mutasyonlarını inhibe edebilir; quizartinib (Tip 2) sadece ITD'yi kapsar. Bu vakada FLT3'ün Tip 2 dönüşümü gerçekleşmemiştir; ayrıca böyle bir dönüşüm mekanizması tanımlanmamıştır.",
+        "C": "YANLIŞ — NRAS, sitoplazmik bir küçük GTPaz proteinidir; FLT3 ATP-bağlanma cebinde sterik engel oluşturma kapasitesi yoktur. NRAS ve FLT3 farklı hücresel kompartmanlarda ve farklı sinyal hiyerarşilerinde yer alır.",
+        "D": "YANLIŞ — FLT3 reseptör ekspresyonunun azalması (downregulation) gilteritinib direncinin tanımlı mekanizması değildir. Farmakodinamik tolerans, FLT3 inhibitörleri için kanıtlanmış bir direnç yolu olarak kılavuzlarda yer almaz.",
+        "E": "YANLIŞ — NGS panelinde FLT3-ITD hâlâ mevcut; dolayısıyla FLT3-negatif subklon seçimi hipotezi bu vaka ile uyuşmaz. Üstelik NRAS mutasyonu taşıyan bir klonun FLT3-negatif olması zorunlu değildir; her iki mutasyon aynı klonda birlikte bulunabilir."
+      },
+      "etiketler": ["Gilteritinib", "Direnç", "NRAS", "Bypass Mutasyonu", "FLT3", "RAS/MAPK"],
+      "zorluk": "zor",
+      "kaynak": "Perl et al. NEJM 2019 (ADMIRAL); McMahon et al. Cancer Cell 2019; ELN 2022"
+    },
+    {
+      "id": "s8",
+      "metin": "Yetmiş iki yaşında, ECOG PS 1 bir erkek hasta, yeni tanı AML ile değerlendiriliyor. Sitogenetik incelemede monozomi 7 saptanıyor, NGS panelinde TP53 mutasyonu mevcut; ELN 2022 adverse (kötü) risk. Tıbbi özgeçmişinde kontrollü tip 2 diyabet, DLCO %58 (beklenenin %58'i), EF %46 ve 5 yıl önce tedavi görmüş, şu an remisyonda olan prostat kanseri bulunmaktadır. Hesaplanan HCT-CI skoru 5'tir.\n\nBu hastanın tedavi planlanmasına ilişkin aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Adverse riskli tüm hastalarda HCT-CI skoru ne olursa olsun Miyeloablatif Hazırlık (MAC) zorunludur; yüksek HCT-CI kondisyon yoğunluğu kararını değiştirmez.",
+        "B": "HCT-CI ≥3, hastanın herhangi bir Allo-HCT şeklinden yararlanamayacağını gösterir; tedavi palyatif destek ile sınırlı tutulmalıdır.",
+        "C": "Yüksek HCT-CI (≥3), Allo-HCT planlanıyorsa RIC/NMA kondisyonuna yönlendirilmesi gerektiğini; aynı zamanda standart 7+3 yoğun indüksiyon yerine venetoklaks + hipometile edici ajan kombinasyonunun değerlendirilmesi gerektiğini gösterir.",
+        "D": "HCT-CI yalnızca nakil kondisyon yoğunluğu seçiminde kullanılır; yoğun indüksiyon kemoterapi uygunluğunun (medikal fitness) belirlenmesinde bu skorun bir rolü yoktur.",
+        "E": "HCT-CI ≥3, hem MAC hem RIC ile eşit derecede kötü sonuçlar öngörür; bu nedenle kondisyon seçiminin prognoz üzerinde etkisi yoktur ve tercih hekimin deneyimine bırakılabilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "HCT-CI ≥3; hem nakil kondisyonunu MAC'tan RIC/NMA'ya çevirir hem de indüksiyon uygunluğunu sorgulattırarak 7+3 yerine Ven+HMA'yı gündeme taşır.",
+      "aciklama_detay": "HCT-CI çift işlevlidir: (1) Kondisyon yoğunluğu — HCT-CI ≥3 olan hastalarda MAC'ın organ toksisitesi, zaten azalmış rezervi olan karaciğer, akciğer ve kalbi daha da zorlar; erken mortalite %29'a çıkabilir. Bu hastalarda GVL etkisine dayanan RIC/NMA rejimleri hayat kurtarıcıdır. (2) Medikal fitness — aynı komorbidite yükü, 7+3 indüksiyonunun yaratacağı uzun miyelosupresyon dönemini tolere etme kapasitesini de sorgulattırır. Bu hastada DLCO %58, EF %46 ve yaş ≥70 üçlüsü, 7+3 yerine Ven+Aza veya Ven+LDAC gibi daha düşük toksisiteli rejimler lehine güçlü bir sinyal oluşturur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 'Adverse risk = MAC zorunlu' kuralı fit, genç hastalarda geçerlidir. HCT-CI ≥3, MAC'ın neden olacağı toksisitenin nakilden elde edilecek faydayı silip silmeyeceğini sorgulatan kritik bir eşiktir. Bu hastada MAC kararı vermeden önce organ rezervleri bireysel olarak değerlendirilmelidir.",
+        "B": "YANLIŞ — HCT-CI ≥3, Allo-HCT için mutlak kontrendikasyon değildir. RIC ve NMA rejimleri, yüksek komorbiditeli ve ileri yaş hastaları için geliştirilmiş; bu grupta nakil olanağını fiilen açık tutmaktadır. Palyatif bakıma yönlendirmek bu aşamada premature bir karardır.",
+        "C": "DOĞRU — İki ayrı ancak birbiriyle bağlantılı karar HCT-CI tarafından yönlendirilir: kondisyon yoğunluğu (MAC → RIC/NMA) ve indüksiyon stratejisi (7+3 → Ven+HMA). Yüksek HCT-CI, her ikisinde de daha az yoğun, toksisite açısından daha güvenli yaklaşım lehine güçlü sinyal verir.",
+        "D": "YANLIŞ — İçerikte açıkça belirtildiği üzere HCT-CI, medikal fitness değerlendirmesine entegre edilmektedir. Komorbidite yükü, indüksiyon miyelosupresyon dönemini atlatma kapasitesiyle doğrudan ilişkilidir; bu nedenle 7+3 kararında HCT-CI skoru göz ardı edilmemelidir.",
+        "E": "YANLIŞ — RIC/NMA, organ toksisitesini MAC'a kıyasla belirgin biçimde azaltır. Klinik çalışmalarda HCT-CI ≥3 olan hastalarda RIC ile MAC'a oranla anlamlı düzeyde daha iyi tolere edilebilirlik ve daha düşük TRM (Tedavi İlişkili Mortalite) gösterilmiştir. Kondisyon seçiminin prognozla ilgisiz olduğu iddiası kanıt dışıdır."
+      },
+      "etiketler": ["HCT-CI", "Kondisyon Rejimi", "MAC", "RIC", "Medikal Fitness", "Ven+HMA"],
+      "zorluk": "zor",
+      "kaynak": "Sorror et al. Blood 2005; Sorror et al. JCO 2014; ELN 2022; NCCN AML v2024"
+    },
+    {
+      "id": "s9",
+      "metin": "Yetmiş beş yaşında, yalnız yaşayan bir kadın hasta, yeni tanı adverse riskli AML ile değerlendiriliyor. ECOG PS 1. Pratik Geriatrik Değerlendirme (PGA) kapsamında Edmonton Kırılganlık Ölçeği (EFS) uygulanıyor. Bulgular şöyle: saat çizim testi anormal, geçen yıl bir kez hastaneye yatış, alışveriş ve mali işlerde yardıma ihtiyaç duyuyor (IADL kısıtlı), yakın sosyal desteği yok, 7 ilaç kullanıyor (polifarmasi), 3 ayda 5 kg istemsiz kilo kaybı, çoğu zaman üzgün hissediyor, üriner inkontinans mevcut, Kalk-Yürü testi 18 saniye (patolojik). Toplam EFS skoru: 12.\n\nBu hastanın tedavi planlanmasına ilişkin aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "ECOG PS 1 olması nedeniyle hasta medikal olarak 'fit' kabul edilmelidir; standart 7+3 indüksiyon kemoterapisi başlanması uygundur.",
+        "B": "EFS skoru 12, ciddi kırılganlık (severe frailty) kategorisine karşılık gelir; yoğun kemoterapiye bağlı erken mortalite riski kabul edilemez düzeyde yüksek olduğundan, düşük yoğunluklu tedavi (Ven+HMA) veya palyatif destek değerlendirilmelidir.",
+        "C": "EFS skoru 12 orta derece kırılganlık sınırındadır; bu nedenle standart 7+3 yerine daha az toksik bir yoğun rejim olan CPX-351 tercih edilmelidir.",
+        "D": "PGA bulguları tedaviye uyumu için belgelenir; ancak EFS skoru, AML tedavi yoğunluğu kararını doğrudan değiştirmez.",
+        "E": "EFS ≥10 olan hastalarda tüm antilösemik tedaviler kontrendikedir; hasta yalnızca palyatif bakıma yönlendirilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "EFS 12 = Ciddi Kırılgan (12–17 aralığı). ECOG'un gizlediği çok boyutlu zafiyet bu skorla açığa çıkar; yoğun kemo yerine Ven+HMA ya da palyatif bakım kararını tetikler.",
+      "aciklama_detay": "PGA'nın kritik katkısı, ECOG veya Karnofsky gibi tek boyutlu performans ölçeklerinin gözden kaçırdığı bilişsel, psikososyal ve fonksiyonel zafiyetleri tespit etmesidir. Bu hastada ECOG PS 1 yüzeysel olarak 'fit' görüntüsü verse de EFS 12 puan; ciddi bilişsel bozukluk, beslenme yetersizliği, polifarmasi, sosyal izolasyon ve fonksiyonel kısıtlılığın bir arada bulunduğunu ortaya koyar. EFS >10, yoğun kemoterapi toleransının son derece azalmış olduğunu ve 7+3'e bağlı erken mortalite riskinin kabul edilemez düzeye çıktığını gösterir. Bu hastada Ven+Azasitidin veya Ven+LDAC gibi düşük yoğunluklu rejimler ya da prognoz/hasta tercihi gözetilerek yalnızca palyatif destek uygun tedavi seçeneğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — ECOG PS 1, standart aktivite bozukluğunu tanımlar; bilişsel durum, beslenme, sosyal destek, polifarmasi ve fonksiyonel bağımsızlık gibi çok boyutlu zafiyetleri ölçemez. PGA'nın temel felsefesi tam da ECOG'un bu kör noktasını doldurmaktır. EFS 12 = Ciddi Kırılgan; 7+3 bu hastada kabul edilemez erken ölüm riskine yol açar.",
+        "B": "DOĞRU — EFS 12–17 arası 'Ciddi Kırılgan' kategorisine karşılık gelir. Kılavuzlar EFS >10'u yoğun kemoterapiye bağlı ağır morbidite ve mortalitenin güçlü prediktörü olarak tanımlar; bu eşiğin üzerindeki hastalarda Ven+HMA veya palyatif bakım, 7+3'e tercih edilmelidir.",
+        "C": "YANLIŞ — EFS 12, orta derece kırılganlık değil ciddi kırılganlık aralığındadır (12–17). Bunun yanı sıra CPX-351, sekonder AML veya tedavi ilişkili AML için tasarlanmış yoğun bir indüksiyon rejimidir; 'daha az toksik yoğun rejim' olarak sınıflandırmak hatalıdır ve bu olguda de novo AML için endikasyonu yoktur.",
+        "D": "YANLIŞ — PGA, yalnızca dokümantasyon amacıyla kullanılan pasif bir araç değildir. EFS skoru ve PGA bulguları, Eylem Çizelgesi aracılığıyla hem tedavi yoğunluğu kararını hem de destekleyici multidisipliner müdahaleleri (diyetisyen, fizyoterapist, psikolog vb.) doğrudan tetikler.",
+        "E": "YANLIŞ — EFS ≥10, tüm antilösemik tedavileri değil yalnızca yoğun kemoterapi uygulamasını riskli kılar. Azasitidin veya desitabin + venetoklaks gibi düşük yoğunluklu rejimler tolere edilebilir toksisite profilleriyle bu grupta etkin bir seçenek olmaya devam etmektedir; EFS ≥10'u mutlak palyatif karar olarak yorumlamak klinik açıdan hatalıdır."
+      },
+      "etiketler": ["PGA", "Edmonton Frail Scale", "Kırılganlık", "Medikal Fitness", "Ven+HMA", "Geriatri"],
+      "zorluk": "orta",
+      "kaynak": "Mohile et al. JCO 2018; Klepin et al. JCO 2020; ELN 2022; NCCN AML v2024"
     }
   ]
 }
