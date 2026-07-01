@@ -1,49 +1,68 @@
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 import QuizEngine from './QuizEngine';
 
-// KAPTANIN DİNAMİK VERİ OKUYUCUSU (Next.js 15 Standartı)
+export const revalidate = 86400;
+
+const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
+
+function quizYukle(branch: string, id: string) {
+  try {
+    const dosyaYolu = path.join(
+      process.cwd(),
+      'content', 'premium', 'ydus', 'quizzes', branch, `${id}.json`
+    );
+    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+  } catch {
+    return null;
+  }
+}
+
 export default async function QuizCozPage(props: {
   params: Promise<{ lang: string }>;
   searchParams: Promise<{ branch?: string; id?: string }>;
 }) {
-  const searchParams = await props.searchParams;
-  const branch = searchParams?.branch;
-  const id = searchParams?.id;
+  const { lang } = await props.params;
+  const { branch, id } = await props.searchParams;
 
-  if (!branch || !id) {
+  const S = {
+    minHeight: '80vh', background: '#fff',
+    display: 'flex', flexDirection: 'column' as const,
+    alignItems: 'center', justifyContent: 'center',
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    padding: '2rem',
+  };
+
+  if (!branch || !id || !isValidParam(branch) || !isValidParam(id)) {
     return (
-      <div className="flex h-screen items-center justify-center bg-slate-950">
-        <div className="bg-red-900/20 text-red-400 p-8 rounded-2xl border border-red-500/30 text-center shadow-2xl">
-          <span className="text-4xl mb-4 block">⚠️</span>
-          <h2 className="text-2xl font-black tracking-widest uppercase mb-2">Rota Hatası</h2>
-          <p className="text-sm">Gidilecek branş veya sınav dosyası belirtilmedi.</p>
-        </div>
+      <div style={S}>
+        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
+        <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Parametre eksik</h2>
+        <p style={{ color: '#6a8aaa', fontSize: '13px' }}>branch ve id zorunludur.</p>
       </div>
     );
   }
 
-  try {
-    // 🔍 NOT: Bu satırdaki veri okuma yolunu (path.join) kendi orijinal klasör yapınıza göre kontrol edin kaptan!
-    const filePath = path.join(process.cwd(), 'app', '(ydus)', '[lang]', 'premium', 'ydus', 'quiz-coz', 'data', branch, `${id}.json`);
+  const veri = quizYukle(branch, id);
 
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
-    
-    return <QuizEngine data={data} />;
-    
-  } catch (error) {
-    console.error("Quiz veri okuma hatası:", error);
+  if (!veri) {
     return (
-      <div className="flex h-screen items-center justify-center bg-slate-950">
-        <div className="bg-slate-900 text-slate-400 p-8 rounded-2xl border border-slate-800 text-center shadow-2xl">
-          <span className="text-4xl mb-4 block">🌊</span>
-          <h2 className="text-2xl font-black text-white tracking-widest uppercase mb-2">Kayıt Bulunamadı</h2>
-          <p className="text-sm">
-            <span className="text-blue-400 font-mono">{branch}/{id}.json</span> seyir defterinde yok.
-          </p>
-        </div>
+      <div style={S}>
+        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
+        <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Quiz bulunamadı</h2>
+        <p style={{ color: '#6a8aaa', fontSize: '13px', marginBottom: '1.5rem' }}>
+          <code style={{ background: '#f0f4f8', padding: '2px 6px', borderRadius: '4px' }}>{branch}/{id}.json</code> mevcut değil.
+        </p>
+        <Link href={`/${lang}/premium/ydus/${branch}`} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← Branşa dön
+        </Link>
       </div>
     );
   }
+
+  return <QuizEngine veri={veri} lang={lang} branch={branch} />;
 }

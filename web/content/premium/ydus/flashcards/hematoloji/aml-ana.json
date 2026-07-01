@@ -1,0 +1,488 @@
+{
+  "id": "fc-hem-aml-ana-001",
+  "accessLevel": "premium",
+  "topic": "AML — Kapsamlı Soru Seti",
+  "description": "ELN 2022/2024, WHO5 & ICC 2022 güncellemeleri, hedefe yönelik tedaviler, HCT, MRD ve onkolojik aciller dahil AML için 80 soruluk YDUS odaklı kart seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "2017 ELN risk sınıflamasına göre, hangi gen mutasyonları neredeyse sadece sekonder AML'de görülür?",
+      "back": "$ZRSR2$, $ASXL1$, $EZH2$, $BCOR$ veya $STAG2$ mutasyonları.",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-2",
+      "front": "Erişkin Akut Lenfoblastik Lösemi'de (ALL) en sık görülen sitogenetik anomali nedir?",
+      "back": "$t(9;22)$ (Philadelphia kromozomu).",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-3",
+      "front": "Philadelphia kromozomu ($t(9;22)$) hangi iki genin füzyonuna neden olur?",
+      "back": "Kromozom 22 üzerindeki $BCR$ ve kromozom 9 üzerindeki $ABL1$ genleri.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "card-4",
+      "front": "ALL ve KML ayrımında kullanılan $BCR-ABL1$ füzyon proteini ağırlıkları nasıldır?",
+      "back": "ALL'de genellikle 190-kD (p190), KML'de ise 210-kD (p210) protein bulunur.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "card-5",
+      "front": "Erişkin B-hücreli ALL'de kötü prognozla ilişkili olan ve $KMT2A$ ile $AF4$ genlerini içeren translokasyon hangisidir?",
+      "back": "$t(4;11)$.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-6",
+      "front": "Burkitt lenfoma lösemik varyantı ile ilişkili olan, $MYC$ ve immünglobülin ağır zincir genini içeren translokasyon hangisidir?",
+      "back": "$t(8;14)$.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-7",
+      "front": "$FLT3$ mutasyonu saptanan AML hastalarında kemoterapiye (gün 8-21) eklenen oral ilaç hangisidir?",
+      "back": "Midostaurin (günde iki kez 50 mg).",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-8",
+      "front": "Yaşlı erişkinlerde tedavi ilişkili AML ve miyelodisplazi ilişkili AML'de kullanılan lipozomal daunorubisin/sitarabin kombinasyonu nedir?",
+      "back": "CPX-351 ($65\\ mg/m^{2}$ sitarabin, $29\\ mg/m^{2}$ daunorubisin).",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-9",
+      "front": "Morfolojik tam remisyon tanımı için kemik iliğindeki blast oranı ne olmalıdır?",
+      "back": "$\\le \\%5$ blast.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-10",
+      "front": "Nüks eden $IDH1$ mutasyonlu AML hastalarında onaylanan oral hedefli inhibitör hangisidir?",
+      "back": "Ivosidenib.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-11",
+      "front": "Nüks eden $IDH2$ mutasyonlu AML hastalarında onaylanan oral hedefli inhibitör hangisidir?",
+      "back": "Enasidenib.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-12",
+      "front": "Nüks/refrakter $FLT3$ mutasyonlu AML'de standart kurtarma kemoterapisine göre sağkalımı artıran TKI hangisidir?",
+      "back": "Gilteritinib (günlük 120 mg).",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-13",
+      "front": "AML'de tam remisyon sonrası nüks riskini azaltmak için kullanılan en etkili yöntem hangisidir?",
+      "back": "Allojeneik hematopoetik hücre nakli.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-14",
+      "front": "Allojeneik nakil öncesi post-transplant nüks riskini en çok artıran biyolojik parametre nedir?",
+      "back": "Nakil anında ölçülebilir kalıntı hastalık (MRD) varlığı.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-15",
+      "front": "Meta-analizlere göre, birinci remisyondaki hangi AML risk grubunda allojeneik naklin sağkalım avantajı tartışmalıdır veya yoktur?",
+      "back": "Favorable (iyi) risk grubu.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-16",
+      "front": "AML'de tam remisyon tanımı için mutlak nötrofil sayısı (ANC) ne olmalıdır?",
+      "back": "$>1000/\\mu L$.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-17",
+      "front": "AML'de tam remisyon tanımı için trombosit sayısı ne olmalıdır?",
+      "back": "$>100,000/\\mu L$.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-18",
+      "front": "ELN 2022 risk sınıflamasına göre 'Favorable' grupta yer alan $CEBPA$ mutasyonunun spesifik özelliği nedir?",
+      "back": "bZIP içi (in-frame) mutasyon (mono- veya bi-allelik).",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-19",
+      "front": "2024 yılında $KMT2A$ düzenlenmesi içeren relaps/refrakter akut lösemiler için onaylanan menin inhibitörü hangisidir?",
+      "back": "Revumenib.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-20",
+      "front": "Tümör lizis sendromunda (TLS) serum fosfat ve kalsiyum düzeyleri nasıl değişir?",
+      "back": "Serum fosfat yükselirken, serum kalsiyum ikincil olarak düşer.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-21",
+      "front": "Lökostaz semptomları genellikle hangi beyaz küre (WBC) değerinin üzerinde görülür?",
+      "back": "$>100,000/\\mu L$.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-22",
+      "front": "AML'de sitarabin dozu $1000\\ mg/m^{2}$ üzerine çıktığında özellikle 60 yaş üstü hastalarda hangi toksisite riski artar?",
+      "back": "Serebellar toksisite.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "card-23",
+      "front": "ELN 2022'ye göre, $FLT3-ITD$ mutasyonu varlığında (allelik oran fark etmeksizin) hastanın risk kategorisi nedir?",
+      "back": "Intermediate (orta) risk.",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-24",
+      "front": "ICC (International Consensus Classification) kriterlerine göre $BCR::ABL1$ pozitif AML tanısı için minimum blast eşiği nedir?",
+      "back": "$\\ge \\%20$ blast.",
+      "tag": "WHO/ICC 2022"
+    },
+    {
+      "id": "card-25",
+      "front": "Hangi gen mutasyonları, kalıntı hastalık (MRD) takibinde değil, klonal hematopoez (CHIP) göstergesi olarak kabul edilir?",
+      "back": "$DNMT3A$, $TET2$ ve $ASXL1$ mutasyonları.",
+      "tag": "MRD"
+    },
+    {
+      "id": "card-26",
+      "front": "Auer rodları (Auer çubukları) varlığında blast oranı $\\%5$ olsa bile bu durum nasıl sınıflandırılır?",
+      "back": "Tam remisyon (CR) sağlanamamış olarak kabul edilir.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-27",
+      "front": "AML indüksiyonunda kullanılan '7+3' rejimi hangi ilaçları içerir?",
+      "back": "7 gün sitarabin infüzyonu ve 1-3. günlerde antrasiklin (daunorubisin veya idarubisin).",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-28",
+      "front": "Akut Promiyelositik Lösemi (APL) tedavisinde medikal acil durum olarak kabul edilen en büyük risk nedir?",
+      "back": "Katastrofik kanama (koagülopatiye bağlı).",
+      "tag": "APL"
+    },
+    {
+      "id": "card-29",
+      "front": "ELN 2022'ye göre, $t(8;21)$ veya $inv(16)$ varlığında $KIT$ mutasyonu olması risk kategorisini değiştirir mi?",
+      "back": "Hayır, 'Favorable' kategorisinde kalmaya devam eder.",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-30",
+      "front": "Yaşlı/unfit $IDH1$ mutasyonlu AML hastalarında Azasitidin ile kombine edilerek sağkalım avantajı sağlayan ilaç hangisidir?",
+      "back": "Ivosidenib (AGILE çalışması).",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-31",
+      "front": "Hangi spesifik ALL translokasyonu infantlarda ve tedavi ilişkili lösemilerde sık görülür?",
+      "back": "$KMT2A$ (Mixed-Lineage Leukemia - MLL) gen düzenlenmeleri.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-32",
+      "front": "Tümör lizis sendromunda hiperürisemiye bağlı gelişebilecek en ciddi komplikasyon nedir?",
+      "back": "Akut böbrek yetmezliği.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-33",
+      "front": "AML indüksiyon tedavisi sonrası 'Refrakter Hastalık' tanımı için ne kadar süre geçmelidir?",
+      "back": "İki siklus yoğun indüksiyon tedavisine tam remisyon yanıtı alınamaması.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-34",
+      "front": "Lökostazlı bir AML hastasında, acil lökoferez yerine öncelikle önerilen yaklaşım nedir?",
+      "back": "Sitoredüktif kemoterapinin (örneğin hidroksiüre veya indüksiyon) hızlıca başlanması.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-35",
+      "front": "ELN 2022'de advers risk grubuna yeni eklenen ve $MECOM$ genini içeren sitogenetik anomali hangisidir?",
+      "back": "$t(3q26.2;v)$.",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-36",
+      "front": "ICC sınıflamasında blast oranı $\\%10-19$ olan durumlar nasıl adlandırılır?",
+      "back": "Miyelodisplastik sendrom/neoplazm (MDS)/AML.",
+      "tag": "WHO/ICC 2022"
+    },
+    {
+      "id": "card-37",
+      "front": "ELN 2022'ye göre, $TP53$ mutasyonunun advers risk olarak kabul edilmesi için minimum VAF (variant allele fraction) oranı ne olmalıdır?",
+      "back": "$\\ge \\%10$.",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-38",
+      "front": "Hangi ilaç sadece $FLT3-ITD$ mutasyonu için onaylanmış olup, TKD mutasyonlarında endike değildir?",
+      "back": "Quizartinib.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-39",
+      "front": "AML'de immunofenotipik incelemede blast markerı olarak en sık kullanılan CD belirteçleri nelerdir?",
+      "back": "CD34 ve CD117.",
+      "tag": "İmmünofenotip"
+    },
+    {
+      "id": "card-40",
+      "front": "Akut Lenfoblastik Lösemi'de (B-serisi) 'Common ALL' fenotipini belirleyen CD nedir?",
+      "back": "CD10.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-41",
+      "front": "ELN 2024 'Less-Intensive' sınıflamasına göre, $NPM1$ mutasyonu hangi genlerin 'wild-type' olması durumunda favorable kabul edilir?",
+      "back": "$FLT3-ITD$, $NRAS$, $KRAS$ ve $TP53$.",
+      "tag": "ELN 2024 / Risk"
+    },
+    {
+      "id": "card-42",
+      "front": "Relaps/Refrakter AML'de $CD33$ pozitif vakalarda kullanılabilen antikor-ilaç konjugatı nedir?",
+      "back": "Gemtuzumab Ozogamisin (GO).",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-43",
+      "front": "Gemtuzumab Ozogamisin kullanımında en ciddi 'black-box' uyarısı hangi toksisiteye yöneliktir?",
+      "back": "Hepatotoksisite ve Sinüzoidal Obstrüksiyon Sendromu (VOD).",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "card-44",
+      "front": "ALL'de $t(4;11)$ varlığında hangi immünofenotipik özellik sık görülür?",
+      "back": "CD10 negatifliği (Pro-B fenotipi).",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-45",
+      "front": "Lökostaz semptomları gösteren bir hastada akciğer grafisinde tipik olarak ne görülür?",
+      "back": "İnterstisyel infiltratlar.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-46",
+      "front": "Diferansiyasyon sendromu (DS) riski hangi AML ilaçlarında belirgindir?",
+      "back": "Ivosidenib, Olutasidenib, Enasidenib ve Gilteritinib.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "card-47",
+      "front": "Philadelphia pozitif lösemilerde tirozin kinaz aktivitesini sağlayan ana mekanizma nedir?",
+      "back": "$ABL1$ kinazının konstitütif (sürekli) aktivasyonu.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "card-48",
+      "front": "AML konsolidasyonunda kullanılan yüksek doz sitarabin (HiDAC) için standart eşik doz nedir?",
+      "back": "$2-3\\ g/m^{2}$ (her 12 saatte bir).",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-49",
+      "front": "WHO 5. edisyon sınıflamasına göre, 'Pure Erythroid Leukemia' artık hangi kategoriye girer?",
+      "back": "AML with $TP53$ mutation.",
+      "tag": "WHO/ICC 2022"
+    },
+    {
+      "id": "card-50",
+      "front": "Tümör lizis sendromunda hiperfosfatemi yönetimi için kullanılan bir fosfat bağlayıcı örnek veriniz.",
+      "back": "Kalsiyum asetat (veya Sevelamer).",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-51",
+      "front": "ELN 2022'ye göre, hangi sitogenetik anomali artık 'complex karyotype' tanımına dahil edilmez?",
+      "back": "Hiperdiploid karyotipler (çoklu trizomiler veya polizomiler).",
+      "tag": "ELN 2022 / Risk"
+    },
+    {
+      "id": "card-52",
+      "front": "Relaps AML'de nakil kararı verilirken ilk remisyon süresinin önemi nedir?",
+      "back": "İlk remisyonun $>6$ ay sürmesi, ikinci bir remisyon şansını belirgin artırır.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-53",
+      "front": "Myeloablatif hazırlık rejimleri sonrası sağkalım, AML hangi aşamadayken en yüksektir?",
+      "back": "Birinci tam remisyon (CR1).",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-54",
+      "front": "HKHN öncesi Karnofsky performans skoru neyin altındaysa survi belirgin düşer?",
+      "back": "$\\le \\%90$ (veya bazen $\\%70$ eşiği kullanılır).",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-55",
+      "front": "FLAG rejimi hangi ilaçların kombinasyonudur?",
+      "back": "Fludarabin, Sitarabin (Ara-C) ve G-CSF.",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-56",
+      "front": "AML'de MRD ölçümünde 'Multiparametrik Flow Sitometri'nin 'qPCR'ye göre avantajı nedir?",
+      "back": "Vakaların yaklaşık $\\%90$'ına uygulanabilir olması (qPCR sadece füzyon/mutasyon olan $\\%50$ vakada kullanılabilir).",
+      "tag": "MRD"
+    },
+    {
+      "id": "card-57",
+      "front": "Sekonder AML tanımı için kullanılan 'Miyelodisplazi ilişkili genler' listesinden WHO 5'te çıkarılan gen hangisidir?",
+      "back": "$RUNX1$.",
+      "tag": "WHO/ICC 2022"
+    },
+    {
+      "id": "card-58",
+      "front": "Lösemik hücrelerin merkezi sinir sistemi (MSS) tutulumu şüphesinde hangi tetkik altın standarttır?",
+      "back": "Beyin omurilik sıvısı (BOS) sitolojisi ve akım sitometrisi.",
+      "tag": "Klinik / Tanı"
+    },
+    {
+      "id": "card-59",
+      "front": "$IDH$ diferansiyasyon sendromu tedavisinde ilk adım nedir?",
+      "back": "Yüksek doz steroid tedavisi (Deksametazon 10 mg, günde iki kez).",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "card-60",
+      "front": "Haploidentik donör nakillerinde Graft-Versus-Host Hastalığı (GVHH) profilaksisinde devrim yaratan ilaç hangisidir?",
+      "back": "Post-transplant siklofosfamid (PT-Cy).",
+      "tag": "APL"
+    },
+    {
+      "id": "card-61",
+      "front": "AML hastalarında monositik diferansiyasyon varlığında hangi laboratuvar bulgusu böbrek hasarı riskini işaret eder?",
+      "back": "Yüksek serum lizozim düzeyleri.",
+      "tag": "Klinik / Tanı"
+    },
+    {
+      "id": "card-62",
+      "front": "2023 yılında onaylanan ve sadece $FLT3-ITD$ mutasyonlu AML'de indüksiyon ve konsolidasyonda kullanılan ilaç hangisidir?",
+      "back": "Quizartinib.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-63",
+      "front": "WHO 5. edisyona göre $NPM1$ mutasyonlu AML tanısı için blast oranı zorunluluğu nedir?",
+      "back": "Herhangi bir blast oranında ($<\\%20$ olsa bile) tanı konulabilir.",
+      "tag": "WHO/ICC 2022"
+    },
+    {
+      "id": "card-64",
+      "front": "Erişkin ALL'de kötü prognoz göstergesi olan sitogenetik silinme hangisidir?",
+      "back": "$del(9p)$.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-65",
+      "front": "Hangi hematolojik malignitede lökostaz riski, blastların boyutu ve rijitliği nedeniyle daha yüksektir?",
+      "back": "Akut Miyeloid Lösemi (AML).",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-66",
+      "front": "TLS profilaksisinde ürik asidi hızlıca düşürmek için kullanılan rekombinant ürat oksidaz enzimi nedir?",
+      "back": "Rasburicase.",
+      "tag": "Onkolojik Acil"
+    },
+    {
+      "id": "card-67",
+      "front": "AML'de 'Miyeloid Sarkom' varlığı blast oranı düşük olsa bile tanı için yeterli midir?",
+      "back": "Evet, ekstramedüller blast birikimi (Miyeloid Sarkom) AML tanısı koydurur.",
+      "tag": "Klinik / Tanı"
+    },
+    {
+      "id": "card-68",
+      "front": "HKHN hazırlık rejiminde 'Reduced Intensity' (RIC) tanımı neyi ifade eder?",
+      "back": "Direkt sitotoksik etkiden ziyade, donör immün sisteminin engraftmanına (GvL etkisine) dayanan daha düşük dozlu rejim.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-69",
+      "front": "Venetoklaks hangi proteinin inhibitörüdür?",
+      "back": "B-hücreli lenfoma/lösemi 2 (BCL-2) proteini.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "card-70",
+      "front": "Yaşlı hastalarda 'TRM' (Treatment Related Mortality) tahmininde en önemli faktör yaş mıdır?",
+      "back": "Hayır, yaş tek başına belirleyici değildir; performans statüsü ve eşlik eden hastalıklar daha önemlidir.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-71",
+      "front": "Hangi genetik belirteç hem tanısal hem de MRD takibinde en güvenilir moleküler markerlardan biridir?",
+      "back": "Mutasyonlu $NPM1$ transkript seviyeleri.",
+      "tag": "MRD"
+    },
+    {
+      "id": "card-72",
+      "front": "APL hastasında $t(15;17)$ füzyonunun moleküler karşılığı nedir?",
+      "back": "$PML::RARA$.",
+      "tag": "APL"
+    },
+    {
+      "id": "card-73",
+      "front": "AML indüksiyon tedavisi sırasında gelişen Mallory-Weiss yırtığı riski nasıl azaltılır?",
+      "back": "Etkili anti-emetik yönetimi (bulantı/kusmanın önlenmesi) ile.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "card-74",
+      "front": "Donör seçiminde HLA uyumlu kardeşler arasında tercih önceliği nasıldır?",
+      "back": "Benzer ağırlık, benzer yaş ve aynı cinsiyet (immünolojik uyumsuzluğu azaltmak için).",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-75",
+      "front": "AML'de 'CRh' (Complete Remission with partial hematologic recovery) tanımı için ANC ve trombosit eşikleri nedir?",
+      "back": "$ANC \\ge 0.5 \\times 10^{9}/L$ ve trombosit $\\ge 50 \\times 10^{9}/L$.",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-76",
+      "front": "Relaps/Refrakter AML'de kullanılan bispesifik antikor (DART) hedefi hangisidir?",
+      "back": "CD3 epsilon ve CD123 (Flotetuzumab).",
+      "tag": "Yanıt Kriterleri"
+    },
+    {
+      "id": "card-77",
+      "front": "AML blastlarında monositik diferansiyasyonu gösteren sitokimyasal boya hangisidir?",
+      "back": "Non-spesifik esteraz (NSE).",
+      "tag": "İmmünofenotip"
+    },
+    {
+      "id": "card-78",
+      "front": "Philadelphia-like ALL'de sık görülen genetik özellikler nelerdir?",
+      "back": "$IKZF1$, $CRLF2$ ve $JAK2$ gibi B-lenfoid transkripsiyon faktörlerinin bozulması.",
+      "tag": "ALL"
+    },
+    {
+      "id": "card-79",
+      "front": "HKHN sonrası donör lenfosit infüzyonu (DLI) hangi amaçla kullanılır?",
+      "back": "Relaps durumunda graft-versus-leukemia (GvL) etkisini yeniden uyarmak için.",
+      "tag": "HCT / Nakil"
+    },
+    {
+      "id": "card-80",
+      "front": "AML tanısı için periferik kanda veya kemik iliğinde gereken standart blast oranı eşiği nedir?",
+      "back": "$\\ge \\%20$ (belirli genetik anomali yoksa).",
+      "tag": "Tanı Kriterleri"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "id": "hematoloji",
+    "baslik": "Hematoloji",
+    "aciklama": "Lösemiler, lenfomalar ve kanama bozukluklarını kapsayan kapsamlı sınav hazırlık modülü.",
+    "renk": "#a01f1f",
+    "emoji": "🩸"
+  },
+  "kategoriler": [
+    {
+      "id": "losemiler",
+      "baslik": "Lösemiler",
+      "aciklama": "Akut ve kronik lösemiler, blastik kriz",
+      "emoji": "🧬",
+      "konular": [
+        {
+          "id": "aml-ana",
+          "baslik": "Akut Miyeloid Lösemi (AML)",
+          "rozetler": ["POPÜLER", "ZOR"],
+          "hazir": true
+        },
+        {
+          "id": "kml",
+          "baslik": "Kronik Miyeloid Lösemi (KML)",
+          "rozetler": ["YENİ"],
+          "hazir": true
+        },
+        {
+          "id": "all",
+          "baslik": "Akut Lenfoblastik Lösemi (ALL)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "kll",
+          "baslik": "Kronik Lenfositik Lösemi (KLL)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "lenfomalar",
+      "baslik": "Lenfomalar",
+      "aciklama": "Hodgkin, Non-Hodgkin ve evreleme sistemleri",
+      "emoji": "🦠",
+      "konular": [
+        {
+          "id": "hodgkin",
+          "baslik": "Hodgkin Lenfoma",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "dlbcl",
+          "baslik": "Diffüz Büyük B Hücreli Lenfoma",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "kanama",
+      "baslik": "Kanama ve Pıhtılaşma",
+      "aciklama": "ITP, TTP, hemofili ve tromboz yönetimi",
+      "emoji": "💉",
+      "konular": [
+        {
+          "id": "itp",
+          "baslik": "İmmün Trombositopeni (ITP)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    }
+  ]
+}

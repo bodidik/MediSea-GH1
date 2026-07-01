@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AML Patogenezi — MediSea YDUS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#fff;overflow:hidden;height:100vh;color:#1a2a3a}
+#slideshow{width:100vw;height:100vh;position:relative}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .35s ease;pointer-events:none;display:flex;flex-direction:column}
+.slide.active{opacity:1;pointer-events:auto}
+#progress{position:fixed;top:0;left:0;height:3px;background:#a01f1f;transition:width .3s ease;z-index:100}
+#nav{position:fixed;bottom:1.25rem;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:.75rem;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:.5px solid #d0e4f5;border-radius:50px;padding:.45rem 1rem;box-shadow:0 2px 12px rgba(26,58,107,.08)}
+#counter{font-size:12px;font-weight:600;color:#1a3a6b;min-width:52px;text-align:center}
+.nbtn{background:none;border:.5px solid #b8cfe8;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:14px;color:#1a3a6b;display:flex;align-items:center;justify-content:center}
+.nbtn:hover{background:#f0f7ff}
+
+/* Layout */
+.wrap{max-width:1100px;margin:0 auto;width:100%;padding:2.5rem 4rem;flex:1;display:flex;flex-direction:column;justify-content:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;align-items:start}
+
+/* Typography */
+.lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#a01f1f;margin-bottom:.6rem}
+h1{font-size:2.8rem;font-weight:700;color:#1a3a6b;line-height:1.1}
+h2{font-size:1.75rem;font-weight:700;color:#1a3a6b;line-height:1.2;margin-bottom:.9rem}
+h3{font-size:1rem;font-weight:600;color:#1a3a6b;margin-bottom:.45rem}
+.sub{font-size:1.05rem;color:#4a6a8a;line-height:1.6;margin-top:.75rem}
+p{font-size:.9rem;line-height:1.7;color:#2a3a4a}
+
+/* Bullets */
+ul.pts{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+ul.pts li{font-size:.88rem;line-height:1.65;color:#1a2a3a;padding-left:1.2rem;position:relative}
+ul.pts li::before{content:'▸';position:absolute;left:0;color:#a01f1f;font-size:.75rem;top:.15em}
+ul.pts li strong{color:#1a3a6b}
+
+/* Cards */
+.card{background:#f5f9ff;border:.5px solid #b8cfe8;border-left:3px solid #1a3a6b;border-radius:0 8px 8px 0;padding:.75rem 1rem}
+.card.red{background:#fff5f5;border-left-color:#a01f1f;border-color:#e8b0b0}
+.card.green{background:#f0fbf5;border-left-color:#1a6640;border-color:#80c898}
+.card.orange{background:#fff8f0;border-left-color:#8a4800;border-color:#e8c080}
+.card h3{margin-bottom:.3rem}
+.card p,.card ul.pts li{font-size:.82rem}
+
+/* Tags */
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;text-transform:uppercase;letter-spacing:.04em;margin-right:4px;margin-bottom:4px}
+.tr{background:#fff0f0;color:#a01f1f;border:.5px solid #e8b0b0}
+.tb{background:#e6f0fb;color:#1a3a6b;border:.5px solid #b8cfe8}
+.tg{background:#f0fbf5;color:#1a5c2e;border:.5px solid #80c898}
+.to{background:#fff8f0;color:#8a4800;border:.5px solid #e8c080}
+.tp{background:#f5f0ff;color:#4a1a7a;border:.5px solid #c0a0e0}
+
+/* Title slide */
+.s1-bg{background:linear-gradient(135deg,#f5f9ff 0%,#ffffff 60%,#fff8f5 100%)}
+.s1-bar{width:4px;height:80px;background:#a01f1f;border-radius:2px;margin-bottom:1.5rem}
+
+/* Section divider */
+.divider{height:.5px;background:#d0e4f5;margin:1rem 0}
+
+/* Numbered list */
+ol.num{list-style:none;counter-reset:n;display:flex;flex-direction:column;gap:.5rem}
+ol.num li{counter-increment:n;font-size:.88rem;line-height:1.6;color:#1a2a3a;padding-left:2rem;position:relative}
+ol.num li::before{content:counter(n);position:absolute;left:0;width:20px;height:20px;background:#1a3a6b;color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;top:.1em}
+
+/* Timeline */
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:flex;gap:1rem;align-items:flex-start}
+.tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:.35rem}
+.tl-line{width:2px;height:32px;margin-left:5px;background:#d0e4f5}
+.tl-body{flex:1;padding-bottom:1.25rem}
+.tl-body h3{font-size:.88rem;margin-bottom:.2rem}
+.tl-body p{font-size:.8rem;color:#4a6a8a;line-height:1.5}
+
+/* Footer */
+.slide-footer{padding:.6rem 4rem;display:flex;justify-content:space-between;align-items:center;border-top:.5px solid #eef4fc}
+.footer-lbl{font-size:11px;color:#8aaacc;font-weight:500}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<div id="slideshow">
+
+<!-- ══════════════ SLIDE 1: BAŞLIK ══════════════ -->
+<div class="slide s1-bg">
+<div class="wrap" style="justify-content:center">
+  <div class="s1-bar"></div>
+  <div class="lbl">Hematoloji · YDUS Hazırlık</div>
+  <h1>AML Patogenezi</h1>
+  <p class="sub" style="max-width:560px">Klonal hematopoez, iki vuruşlu model ve moleküler alt tipler — uzman düzey, görsel anlatım</p>
+  <div style="margin-top:2rem;display:flex;gap:.6rem;flex-wrap:wrap">
+    <span class="tag tr">Lösemik Kök Hücre</span>
+    <span class="tag tb">İki Vuruş Hipotezi</span>
+    <span class="tag to">CHIP → AML</span>
+    <span class="tag tp">IDH / Onkometabolit</span>
+    <span class="tag tg">Sekonder AML</span>
+  </div>
+  <div style="margin-top:3rem;font-size:.8rem;color:#8aaacc">← → veya Space ile geçiş yapın</div>
+</div>
+<div class="slide-footer">
+  <span class="footer-lbl">MediSea YDUS</span>
+  <span class="footer-lbl">AML · Patogenez</span>
+</div>
+</div>
+
+<!-- ══════════════ SLIDE 2: AML NEDİR ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="two">
+    <div>
+      <div class="lbl">Temel tanım</div>
+      <h2>AML Nedir?</h2>
+      <ul class="pts">
+        <li><strong>Klonal hastalık</strong> — tek bir transforme hücreden kaynaklanan tüm blastlar aynı genetik profili taşır</li>
+        <li><strong>İki temel defekt</strong>: kontrolsüz proliferasyon + farklılaşma bloğu</li>
+        <li>Kemik iliği ve periferik kanda <strong>immatür miyeloid blastlar</strong> birikir</li>
+        <li>Somatik mutasyonlar ve epigenetik değişiklikler normal hematopoezi sekteye uğratır</li>
+        <li>Pansitopeni → anemi, enfeksiyon, kanama üçlüsü</li>
+      </ul>
+    </div>
+    <!-- SVG: Normal vs AML -->
+    <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-height:280px">
+      <!-- Normal side -->
+      <text x="90" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#1a3a6b">Normal Hematopoez</text>
+      <!-- HSC -->
+      <circle cx="90" cy="50" r="20" fill="#e6f0fb" stroke="#1a3a6b" stroke-width="1.5"/>
+      <text x="90" y="54" text-anchor="middle" font-size="9" font-weight="700" fill="#1a3a6b">HSC</text>
+      <!-- Branch lines -->
+      <line x1="90" y1="70" x2="50" y2="105" stroke="#b8cfe8" stroke-width="1.5"/>
+      <line x1="90" y1="70" x2="130" y2="105" stroke="#b8cfe8" stroke-width="1.5"/>
+      <!-- CMP / CLP -->
+      <circle cx="50" cy="118" r="16" fill="#f0fbf5" stroke="#1a6640" stroke-width="1"/>
+      <text x="50" y="122" text-anchor="middle" font-size="8" font-weight="600" fill="#1a6640">CMP</text>
+      <circle cx="130" cy="118" r="16" fill="#fff8f0" stroke="#8a4800" stroke-width="1"/>
+      <text x="130" y="122" text-anchor="middle" font-size="8" font-weight="600" fill="#8a4800">CLP</text>
+      <!-- Mature cells -->
+      <line x1="50" y1="134" x2="30" y2="168" stroke="#b8cfe8" stroke-width="1"/>
+      <line x1="50" y1="134" x2="70" y2="168" stroke="#b8cfe8" stroke-width="1"/>
+      <line x1="130" y1="134" x2="110" y2="168" stroke="#b8cfe8" stroke-width="1"/>
+      <line x1="130" y1="134" x2="150" y2="168" stroke="#b8cfe8" stroke-width="1"/>
+      <circle cx="30" cy="178" r="10" fill="#d0e8ff" stroke="#4a7aaa" stroke-width="1"/>
+      <text x="30" y="196" text-anchor="middle" font-size="7" fill="#4a7aaa">Nötrofil</text>
+      <circle cx="70" cy="178" r="10" fill="#ffd0d0" stroke="#aa4a4a" stroke-width="1"/>
+      <text x="70" y="196" text-anchor="middle" font-size="7" fill="#aa4a4a">Eritrosit</text>
+      <circle cx="110" cy="178" r="10" fill="#d0ffd8" stroke="#4aaa5a" stroke-width="1"/>
+      <text x="110" y="196" text-anchor="middle" font-size="7" fill="#4aaa5a">Trombosit</text>
+      <circle cx="150" cy="178" r="10" fill="#ffe0d0" stroke="#aa7a4a" stroke-width="1"/>
+      <text x="150" y="196" text-anchor="middle" font-size="7" fill="#aa7a4a">Lenfosit</text>
+      <text x="90" y="220" text-anchor="middle" font-size="9" fill="#1a6640" font-weight="600">✓ Matür fonksiyonel hücreler</text>
+
+      <!-- Divider -->
+      <line x1="200" y1="15" x2="200" y2="285" stroke="#d0e4f5" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+      <!-- AML side -->
+      <text x="320" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#a01f1f">AML</text>
+      <!-- LSC -->
+      <circle cx="320" cy="50" r="20" fill="#fff0f0" stroke="#a01f1f" stroke-width="1.5"/>
+      <text x="320" y="54" text-anchor="middle" font-size="8" font-weight="700" fill="#a01f1f">LSC</text>
+      <!-- Blasts accumulating -->
+      <line x1="320" y1="70" x2="320" y2="100" stroke="#e8a0a0" stroke-width="1.5"/>
+      <!-- Block symbol -->
+      <rect x="295" y="100" width="50" height="22" rx="4" fill="#ffd0d0" stroke="#e08080" stroke-width="1"/>
+      <text x="320" y="115" text-anchor="middle" font-size="9" font-weight="700" fill="#a01f1f">⊗ BLOK</text>
+      <!-- Blasts piling up -->
+      <circle cx="295" cy="150" r="11" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <circle cx="320" cy="145" r="13" fill="#ff9090" stroke="#a01f1f" stroke-width="1.5"/>
+      <circle cx="345" cy="150" r="11" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <circle cx="280" cy="170" r="10" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <circle cx="305" cy="172" r="12" fill="#ff9090" stroke="#a01f1f" stroke-width="1.5"/>
+      <circle cx="335" cy="170" r="11" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <circle cx="358" cy="168" r="9" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <circle cx="290" cy="190" r="10" fill="#ff9090" stroke="#a01f1f" stroke-width="1.5"/>
+      <circle cx="320" cy="195" r="12" fill="#ff7070" stroke="#a01f1f" stroke-width="2"/>
+      <circle cx="350" cy="190" r="10" fill="#ff9090" stroke="#a01f1f" stroke-width="1"/>
+      <text x="320" y="228" text-anchor="middle" font-size="9" fill="#a01f1f" font-weight="600">Blast birikim = Pansitopeni</text>
+
+      <!-- Labels inside blasts -->
+      <text x="320" y="148" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">B</text>
+      <text x="305" y="175" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">B</text>
+      <text x="320" y="198" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">B</text>
+    </svg>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">1 — AML Tanımı</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 3: LSC ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="two">
+    <!-- SVG: LSC Hierarchy -->
+    <svg viewBox="0 0 380 310" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-height:290px">
+      <!-- Triangle -->
+      <polygon points="190,30 50,270 330,270" fill="#fff5f5" stroke="#e08080" stroke-width="1.5"/>
+      <!-- LSC zone -->
+      <polygon points="190,30 155,100 225,100" fill="#ffd0d0" stroke="#a01f1f" stroke-width="1.5"/>
+      <text x="190" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#a01f1f">LSC</text>
+      <text x="190" y="85" text-anchor="middle" font-size="8" fill="#a01f1f">CD34⁺/CD38⁻</text>
+      <!-- Self-renewal loop -->
+      <path d="M 232 58 C 270 30 270 95 232 80" fill="none" stroke="#a01f1f" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+      <text x="278" y="62" font-size="8" fill="#a01f1f" font-weight="600">Kendi</text>
+      <text x="278" y="73" font-size="8" fill="#a01f1f" font-weight="600">kendini</text>
+      <text x="278" y="84" font-size="8" fill="#a01f1f" font-weight="600">yenileme</text>
+      <!-- Progenitor zone -->
+      <text x="190" y="148" text-anchor="middle" font-size="10" font-weight="600" fill="#8a4800">Progenitör</text>
+      <text x="190" y="162" text-anchor="middle" font-size="8" fill="#8a4800">Sınırlı kendi kendini yenileme</text>
+      <!-- Blast bulk -->
+      <text x="190" y="220" text-anchor="middle" font-size="10" font-weight="600" fill="#4a4a4a">Blast Havuzu</text>
+      <text x="190" y="236" text-anchor="middle" font-size="8" fill="#4a4a4a">Büyük kütle · Kemoterapi hedefi</text>
+      <!-- Chemo arrow -->
+      <line x1="340" y1="230" x2="310" y2="250" stroke="#1a3a6b" stroke-width="2"/>
+      <text x="348" y="215" font-size="8" fill="#1a3a6b" font-weight="700">Kemo</text>
+      <text x="348" y="226" font-size="8" fill="#1a3a6b">↓ Blast</text>
+      <text x="348" y="237" font-size="8" fill="#1a3a6b">temizler</text>
+      <!-- LSC survives arrow -->
+      <line x1="228" y1="65" x2="310" y2="65" stroke="#a01f1f" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <text x="248" y="58" font-size="7" fill="#a01f1f">LSC sağ kalır</text>
+      <!-- Relapse arrow -->
+      <path d="M 340 80 C 370 150 370 250 340 260" fill="none" stroke="#a01f1f" stroke-width="2" stroke-dasharray="4,2"/>
+      <text x="355" y="165" font-size="8" fill="#a01f1f" font-weight="700">NÜKS</text>
+      <defs>
+        <marker id="arr" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="#a01f1f"/>
+        </marker>
+        <marker id="arr2" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="#a01f1f"/>
+        </marker>
+      </defs>
+      <!-- Quiescent label -->
+      <rect x="100" y="42" width="60" height="20" rx="4" fill="#fffdf0" stroke="#e8d070" stroke-width=".5"/>
+      <text x="130" y="55" text-anchor="middle" font-size="8" fill="#7a5800">Sessiz (G₀)</text>
+    </svg>
+
+    <div>
+      <div class="lbl">Hücresel köken</div>
+      <h2>Lösemik Kök Hücre (LSC)</h2>
+      <ul class="pts">
+        <li><strong>CD34⁺/CD38⁻/HLA-DR⁻</strong> fraksiyonunda bulunur — sağlıklı HSC ile aynı fenotipi paylaşır</li>
+        <li>SCID/NOD fare modellerinde bu fraksiyonun AML klonunu <strong>yeniden oluşturabildiği</strong> kanıtlanmıştır</li>
+        <li><strong>Sessiz (quiescent)</strong> kalır → çoğu kemoterapötik ajan döngüdeki hücreleri hedefler</li>
+        <li>Kendi kendini yenileme + diferansiyasyon asimetrisi → blast havuzunu idame ettirir</li>
+        <li>Kemoterapi sonrası <strong>nüksün kaynağı</strong> LSC'dir — küçük ancak yok edilemeyen klonal rezerv</li>
+      </ul>
+      <div style="margin-top:1rem" class="card red">
+        <h3>Klinik Önemi</h3>
+        <p>CR sonrası MRD değerlendirmesinde LSC kompartımanının kalıcılığı → erken nüks prediktörü. Hedefe yönelik LSC eliminasyonu yeni ilaç geliştirme alanı.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">2 — Lösemik Kök Hücre</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 4: İKİ VURUŞ ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="lbl">Lösemogenez modeli</div>
+  <h2>İki Vuruşlu (Two-Hit) Hipotez</h2>
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr;gap:0;align-items:center;margin-top:1rem">
+    <!-- Class I box -->
+    <div class="card red" style="padding:1.25rem">
+      <div class="tag tr" style="margin-bottom:.5rem">Sınıf I (Tip 1)</div>
+      <h3 style="color:#a01f1f;font-size:1rem;margin-bottom:.5rem">Proliferasyon</h3>
+      <ul class="pts">
+        <li>Sinyal yolak aktivasyonu</li>
+        <li>Sağkalım avantajı</li>
+        <li><strong>FLT3-ITD / TKD</strong></li>
+        <li><strong>KRAS, NRAS</strong></li>
+        <li><strong>KIT</strong></li>
+      </ul>
+    </div>
+    <!-- Plus sign -->
+    <div style="text-align:center;font-size:2.5rem;color:#1a3a6b;font-weight:300">+</div>
+    <!-- Class II box -->
+    <div class="card orange" style="padding:1.25rem">
+      <div class="tag to" style="margin-bottom:.5rem">Sınıf II (Tip 2)</div>
+      <h3 style="color:#8a4800;font-size:1rem;margin-bottom:.5rem">Farklılaşma Bloğu</h3>
+      <ul class="pts">
+        <li>Transkripsiyon faktörü bozulması</li>
+        <li>Apoptoz defekti</li>
+        <li><strong>CEBPA mut.</strong></li>
+        <li><strong>RUNX1::RUNX1T1</strong> t(8;21)</li>
+        <li><strong>CBFB::MYH11</strong> inv(16)</li>
+      </ul>
+    </div>
+    <!-- Equals -->
+    <div style="text-align:center;font-size:2.5rem;color:#1a3a6b;font-weight:300">=</div>
+    <!-- Result -->
+    <div style="background:#fff0f0;border:.5px solid #e08080;border-radius:12px;padding:1.25rem;text-align:center">
+      <div style="font-size:2rem;margin-bottom:.4rem">🔴</div>
+      <div style="font-size:1rem;font-weight:700;color:#a01f1f;margin-bottom:.4rem">AML</div>
+      <div style="font-size:.78rem;color:#6a1a1a;line-height:1.5">Blastlar birikir<br>Normal üretim durur<br>Pansitopeni</div>
+    </div>
+  </div>
+  <div style="margin-top:1.25rem" class="card">
+    <p><strong>Günümüz perspektifi:</strong> Tam genom dizileme çalışmaları AML klonlarının ortalama <strong>8–13 kodlayıcı mutasyon</strong> taşıdığını göstermiştir. İkili model bir çerçeve sunar; ancak gerçekte çok adımlı klonal evrim söz konusudur. Mutasyonlar patofizyolojik etkilerine göre <strong>9 ana kategoride</strong> sınıflandırılır.</p>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">3 — İki Vuruş Hipotezi</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 5: 9 KATEGORİ ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="lbl">Genomik karmaşıklık</div>
+  <h2>8–13 Mutasyon · 9 Fonksiyonel Kategori</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1rem">
+    <div style="background:#f5f9ff;border:.5px solid #b8cfe8;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tb" style="margin-bottom:.35rem">1</div>
+      <h3 style="font-size:.85rem">DNA Metilasyonu</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">DNMT3A, TET2, IDH1/2</p>
+    </div>
+    <div style="background:#fff8f0;border:.5px solid #e8c080;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag to" style="margin-bottom:.35rem">2</div>
+      <h3 style="font-size:.85rem">Tümör Baskılayıcılar</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">TP53, WT1</p>
+    </div>
+    <div style="background:#fff0f0;border:.5px solid #e8b0b0;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tr" style="margin-bottom:.35rem">3</div>
+      <h3 style="font-size:.85rem">Transkripsiyon Faktörü Füzyonları</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">RUNX1::RUNX1T1, CBFB::MYH11, KMT2A rearr.</p>
+    </div>
+    <div style="background:#f5f0ff;border:.5px solid #c0a0e0;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tp" style="margin-bottom:.35rem">4</div>
+      <h3 style="font-size:.85rem">Nükleofosmin</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">NPM1 (en sık, %27–35)</p>
+    </div>
+    <div style="background:#fff0f0;border:.5px solid #e8b0b0;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tr" style="margin-bottom:.35rem">5</div>
+      <h3 style="font-size:.85rem">Sinyal Molekülleri</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">FLT3, RAS, KIT, JAK2</p>
+    </div>
+    <div style="background:#f5f9ff;border:.5px solid #b8cfe8;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tb" style="margin-bottom:.35rem">6</div>
+      <h3 style="font-size:.85rem">Kromatin Modifikasyonu</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">ASXL1, EZH2, KMT2A, KDM6A</p>
+    </div>
+    <div style="background:#f0fbf5;border:.5px solid #80c898;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tg" style="margin-bottom:.35rem">7</div>
+      <h3 style="font-size:.85rem">Miyeloid Transkripsiyon Faktörleri</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">CEBPA, RUNX1, GATA2</p>
+    </div>
+    <div style="background:#fff8f0;border:.5px solid #e8c080;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag to" style="margin-bottom:.35rem">8</div>
+      <h3 style="font-size:.85rem">Kohezin Kompleksi</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">STAG2, RAD21, SMC1A/3</p>
+    </div>
+    <div style="background:#f5f0ff;border:.5px solid #c0a0e0;border-radius:8px;padding:.7rem .9rem">
+      <div class="tag tp" style="margin-bottom:.35rem">9</div>
+      <h3 style="font-size:.85rem">Splisozom Kompleksi</h3>
+      <p style="font-size:.78rem;color:#4a6a8a">SF3B1, SRSF2, U2AF1, ZRSR2</p>
+    </div>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">4 — Genomik Kategoriler</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 6: CHIP → AML ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="lbl">Klonal evrim</div>
+  <h2>CHIP → AML: Epigenetik Kurucu Olaylar</h2>
+  <div style="margin-top:1.25rem">
+    <!-- Timeline visual -->
+    <div style="display:flex;align-items:center;gap:0;margin-bottom:1.5rem">
+      <!-- Step 1 -->
+      <div style="flex:1;background:#f5f9ff;border:.5px solid #b8cfe8;border-radius:10px 0 0 10px;padding:.9rem 1rem">
+        <div class="tag tb" style="margin-bottom:.4rem">Adım 1</div>
+        <h3 style="font-size:.85rem;margin-bottom:.3rem">CHIP Zemini</h3>
+        <p style="font-size:.78rem;color:#4a6a8a"><strong>DNMT3A, TET2, ASXL1</strong><br>Kurucu (founder) mutasyonlar<br>Sessiz klon · Yaşla sıklaşır</p>
+      </div>
+      <div style="font-size:1.5rem;color:#b8cfe8;padding:0 .3rem">→</div>
+      <!-- Step 2 -->
+      <div style="flex:1;background:#fff8f0;border:.5px solid #e8c080;border-radius:0;padding:.9rem 1rem">
+        <div class="tag to" style="margin-bottom:.4rem">Adım 2</div>
+        <h3 style="font-size:.85rem;margin-bottom:.3rem">Geç Mutasyonlar</h3>
+        <p style="font-size:.78rem;color:#4a6a8a"><strong>FLT3, NRAS, RUNX1</strong><br>Proliferatif avantaj<br>Klonal genişleme başlar</p>
+      </div>
+      <div style="font-size:1.5rem;color:#b8cfe8;padding:0 .3rem">→</div>
+      <!-- Step 3 -->
+      <div style="flex:1;background:#fff5f5;border:.5px solid #e8b0b0;border-radius:0;padding:.9rem 1rem">
+        <div class="tag tr" style="margin-bottom:.4rem">Adım 3</div>
+        <h3 style="font-size:.85rem;margin-bottom:.3rem">Aşikar AML</h3>
+        <p style="font-size:.78rem;color:#4a6a8a">Farklılaşma bloğu<br>≥%20 blast (veya tanımlayıcı genetik)<br>Klinik semptomlar</p>
+      </div>
+      <div style="font-size:1.5rem;color:#b8cfe8;padding:0 .3rem">→</div>
+      <!-- Step 4 -->
+      <div style="flex:1;background:#fff0f0;border:.5px solid #e08080;border-radius:0 10px 10px 0;padding:.9rem 1rem">
+        <div class="tag tr" style="margin-bottom:.4rem">Nüks</div>
+        <h3 style="font-size:.85rem;margin-bottom:.3rem">Klonal Evrim</h3>
+        <p style="font-size:.78rem;color:#4a6a8a">Kemoterapi baskısı altında<br>Yeni mutasyonlar<br>Tedavi direnci</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div class="card">
+        <h3>Epigenetik Mekanizma</h3>
+        <p>DNMT3A/TET2 bozulması → DNA metilasyon dengesi bozulur → olgunlaşma genlerinin silenslenmesi → matürasyon engeli</p>
+      </div>
+      <div class="card red">
+        <h3>Klinik Uyarı</h3>
+        <p>Remisyon sonrası DNMT3A/TET2/ASXL1 mutasyonları CHIP göstergesi olarak kalabilir — MRD değerlendirmesinde yanıltıcı olabilir. Bu genlerin varlığı tek başına nüks kanıtı değildir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">5 — CHIP → AML</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 7: IDH1/2 ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="two">
+    <div>
+      <div class="lbl">Metabolik onkogenez</div>
+      <h2>IDH1/2 Mutasyonları ve 2-HG</h2>
+      <ul class="pts" style="margin-bottom:1rem">
+        <li>AML'nin <strong>%15–20</strong>'sinde IDH1 veya IDH2 mutasyonu</li>
+        <li>Mutant IDH enzimi <strong>neomorfik aktivite</strong> kazanır</li>
+        <li>Normal substrat α-ketoglutarat yerine <strong>2-hidroksiglutarat (2-HG)</strong> üretir</li>
+        <li>2-HG bir <strong>onkometabolit</strong> — hücre içinde birikir</li>
+        <li>α-KG bağımlı dioiksijenazları (özellikle <strong>TET2</strong>) inhibe eder</li>
+        <li>Sonuç: DNA hipermetilasyonu → matürasyon genleri susturulur → <strong>farklılaşma bloğu</strong></li>
+      </ul>
+      <div class="card green">
+        <h3>Tedaviye Yansıması</h3>
+        <p>IDH inhibitörleri (İvosidenib / Olutasidenib IDH1; Enasidenib IDH2) 2-HG üretimini bloke ederek farklılaşma bloğunu geri döndürür → <strong>diferansiyasyon sendromu</strong> riski!</p>
+      </div>
+    </div>
+    <!-- SVG: IDH pathway -->
+    <svg viewBox="0 0 340 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-height:280px">
+      <defs>
+        <marker id="a3" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1a3a6b"/></marker>
+        <marker id="a4" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a01f1f"/></marker>
+        <marker id="a5" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1a6640"/></marker>
+      </defs>
+
+      <!-- Normal pathway (left) -->
+      <text x="85" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#1a3a6b">Normal</text>
+      <rect x="30" y="28" width="110" height="34" rx="6" fill="#e6f0fb" stroke="#1a3a6b" stroke-width="1"/>
+      <text x="85" y="48" text-anchor="middle" font-size="10" font-weight="600" fill="#1a3a6b">α-Ketoglutarat</text>
+      <line x1="85" y1="62" x2="85" y2="92" stroke="#1a3a6b" stroke-width="1.5" marker-end="url(#a3)"/>
+      <text x="100" y="80" font-size="9" fill="#4a6a8a">IDH wt</text>
+      <rect x="30" y="96" width="110" height="30" rx="6" fill="#f0fbf5" stroke="#1a6640" stroke-width="1"/>
+      <text x="85" y="115" text-anchor="middle" font-size="10" font-weight="600" fill="#1a6640">Glutamat</text>
+      <line x1="85" y1="126" x2="85" y2="156" stroke="#1a6640" stroke-width="1.5" marker-end="url(#a5)"/>
+      <text x="100" y="145" font-size="9" fill="#4a6a8a">TET2 aktif</text>
+      <rect x="30" y="160" width="110" height="40" rx="6" fill="#f0fbf5" stroke="#1a6640" stroke-width="1"/>
+      <text x="85" y="178" text-anchor="middle" font-size="9" font-weight="600" fill="#1a6640">DNA demetilasyon</text>
+      <text x="85" y="193" text-anchor="middle" font-size="9" fill="#1a6640">✓ Matürasyon genleri açık</text>
+      <!-- Normal arrow down -->
+      <line x1="85" y1="200" x2="85" y2="230" stroke="#1a6640" stroke-width="1.5" marker-end="url(#a5)"/>
+      <rect x="40" y="232" width="90" height="28" rx="6" fill="#f0fbf5" stroke="#1a6640" stroke-width="1"/>
+      <text x="85" y="250" text-anchor="middle" font-size="9" font-weight="600" fill="#1a6640">Matür hücreler ✓</text>
+
+      <!-- Divider -->
+      <line x1="170" y1="10" x2="170" y2="280" stroke="#d0e4f5" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- Mutant pathway (right) -->
+      <text x="255" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#a01f1f">IDH mut</text>
+      <rect x="200" y="28" width="110" height="34" rx="6" fill="#e6f0fb" stroke="#1a3a6b" stroke-width="1"/>
+      <text x="255" y="48" text-anchor="middle" font-size="10" font-weight="600" fill="#1a3a6b">α-Ketoglutarat</text>
+      <line x1="255" y1="62" x2="255" y2="92" stroke="#a01f1f" stroke-width="1.5" marker-end="url(#a4)"/>
+      <text x="272" y="80" font-size="9" fill="#a01f1f" font-weight="600">IDH mut</text>
+      <!-- 2-HG box -->
+      <rect x="200" y="96" width="110" height="34" rx="6" fill="#fff0f0" stroke="#a01f1f" stroke-width="2"/>
+      <text x="255" y="112" text-anchor="middle" font-size="10" font-weight="700" fill="#a01f1f">2-HG</text>
+      <text x="255" y="124" text-anchor="middle" font-size="8" fill="#a01f1f">Onkometabolit ⚠</text>
+      <!-- 2-HG → TET2 inhibit -->
+      <line x1="255" y1="130" x2="255" y2="158" stroke="#a01f1f" stroke-width="1.5" marker-end="url(#a4)"/>
+      <rect x="200" y="160" width="110" height="36" rx="6" fill="#fff5f5" stroke="#e08080" stroke-width="1"/>
+      <text x="255" y="177" text-anchor="middle" font-size="9" font-weight="600" fill="#a01f1f">TET2 inhibisyonu</text>
+      <text x="255" y="190" text-anchor="middle" font-size="8" fill="#a01f1f">⊗ Demetilasyon blok</text>
+      <line x1="255" y1="196" x2="255" y2="224" stroke="#a01f1f" stroke-width="1.5" marker-end="url(#a4)"/>
+      <rect x="200" y="226" width="110" height="36" rx="6" fill="#fff0f0" stroke="#a01f1f" stroke-width="1.5"/>
+      <text x="255" y="243" text-anchor="middle" font-size="9" font-weight="700" fill="#a01f1f">Hipermetilasyon</text>
+      <text x="255" y="256" text-anchor="middle" font-size="8" fill="#a01f1f">→ Farklılaşma bloğu</text>
+    </svg>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">6 — IDH / 2-HG Patogenezi</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 8: NPM1 & TP53 ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="lbl">Spesifik mutasyonlar</div>
+  <h2>NPM1 ve TP53</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem">
+    <!-- NPM1 -->
+    <div style="border:.5px solid #b8cfe8;border-radius:12px;overflow:hidden">
+      <div style="background:#f0f7ff;padding:.9rem 1.2rem;border-bottom:.5px solid #b8cfe8">
+        <span class="tag tb">NPM1</span>
+        <h3 style="margin-top:.4rem;color:#1a3a6b">Sitoplazmik Mislokaizasyon</h3>
+      </div>
+      <div style="padding:1rem 1.2rem">
+        <svg viewBox="0 0 260 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;margin-bottom:.75rem">
+          <defs>
+            <marker id="a6" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#1a3a6b"/></marker>
+            <marker id="a7" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#a01f1f"/></marker>
+          </defs>
+          <!-- Normal cell -->
+          <circle cx="60" cy="65" r="50" fill="#f5f9ff" stroke="#b8cfe8" stroke-width="1"/>
+          <circle cx="60" cy="55" r="22" fill="#e6f0fb" stroke="#1a3a6b" stroke-width="1"/>
+          <text x="60" y="52" text-anchor="middle" font-size="8" font-weight="700" fill="#1a3a6b">Çekirdek</text>
+          <text x="60" y="63" text-anchor="middle" font-size="8" fill="#1a3a6b">NPM1</text>
+          <text x="60" y="105" text-anchor="middle" font-size="8" fill="#1a6640">Normal ✓</text>
+          <!-- Arrow -->
+          <text x="130" y="35" text-anchor="middle" font-size="9" fill="#a01f1f">Frameshift</text>
+          <text x="130" y="47" text-anchor="middle" font-size="9" fill="#a01f1f">mutasyonu</text>
+          <line x1="112" y1="60" x2="148" y2="60" stroke="#a01f1f" stroke-width="1.5" marker-end="url(#a7)"/>
+          <!-- Mutant cell -->
+          <circle cx="200" cy="65" r="50" fill="#fff5f5" stroke="#e08080" stroke-width="1"/>
+          <circle cx="200" cy="55" r="22" fill="#fff0f0" stroke="#e08080" stroke-width="1"/>
+          <text x="200" y="52" text-anchor="middle" font-size="8" font-weight="700" fill="#e08080">Çekirdek</text>
+          <!-- NPMc arrows to cytoplasm -->
+          <circle cx="178" cy="80" r="8" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+          <text x="178" y="83" text-anchor="middle" font-size="6" fill="#a01f1f">N</text>
+          <circle cx="220" cy="82" r="8" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+          <text x="220" y="85" text-anchor="middle" font-size="6" fill="#a01f1f">N</text>
+          <circle cx="195" cy="90" r="8" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+          <text x="195" y="93" text-anchor="middle" font-size="6" fill="#a01f1f">N</text>
+          <text x="200" y="110" text-anchor="middle" font-size="8" fill="#a01f1f">Sitoplazmik NPM ⚠</text>
+        </svg>
+        <ul class="pts">
+          <li>C-terminal frameshift → yeni nüklear export sinyali</li>
+          <li>Sitoplazmik birikim → <strong>HOXA/HOXB overekspresyonu</strong></li>
+          <li>En sık mutasyon (<strong>%27–35</strong>), FLT3-ITD negatifse favorable</li>
+          <li>MRD takibinde güvenilir moleküler marker</li>
+        </ul>
+      </div>
+    </div>
+    <!-- TP53 -->
+    <div style="border:.5px solid #e8b0b0;border-radius:12px;overflow:hidden">
+      <div style="background:#fff5f5;padding:.9rem 1.2rem;border-bottom:.5px solid #e8b0b0">
+        <span class="tag tr">TP53</span>
+        <h3 style="margin-top:.4rem;color:#a01f1f">Genomik Gözetçi Kaybı</h3>
+      </div>
+      <div style="padding:1rem 1.2rem">
+        <ul class="pts" style="margin-bottom:.75rem">
+          <li>p53 proteini DNA hasarı sonrası <strong>hücre döngüsü arresti / apoptoz</strong> sağlar</li>
+          <li>TP53 mutasyonu → bu gözetçi mekanizması çöker</li>
+          <li>Sıklıkla <strong>kompleks/monozomal karyotip</strong> ile birlikte</li>
+          <li>del(5q), del(7q) gibi ağır kromozomal hasarlar eşlik eder</li>
+          <li><strong>Kemoterapi direncinin</strong> majör mekanizması</li>
+          <li>Medyan sağkalım <strong>5–8 ay</strong> — ELN 2022 adverse grubu</li>
+        </ul>
+        <div class="card red">
+          <h3>VAF Eşiği</h3>
+          <p>ELN 2022'de adverse risk için VAF <strong>≥%10</strong> gerekir. Düşük VAF TP53'ler erken klonal evre — ayrı değerlendirilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">7 — NPM1 & TP53</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 9: PANSİTOPENİ ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="two">
+    <div>
+      <div class="lbl">Mekanizma güncelleme</div>
+      <h2>Pansitopeni: Sadece "Yer Kaplama" Değil</h2>
+      <div class="card orange" style="margin-bottom:1rem">
+        <h3>Eski Model (Yanlış)</h3>
+        <p>Blastlar kemik iliğini fiziksel olarak doldurup normal hücreleri iter → pansitopeni</p>
+      </div>
+      <div class="card green">
+        <h3>Güncel Kanıt</h3>
+        <p>AML hastalarında normal HSC rezervi <strong>normal veya artmış</strong> olabilir — ancak fonksiyonel olarak baskılanmıştır</p>
+      </div>
+      <div style="margin-top:1rem" class="card">
+        <h3>Lösemik Niş (Niche) Etkisi</h3>
+        <ul class="pts" style="margin-top:.4rem">
+          <li>LSC ve blastlar kemik iliği mikroçevresini ele geçirir</li>
+          <li><strong>Parakrin sinyaller</strong> — DKK1, CXCL12, SCF sekresyonu bozulur</li>
+          <li>Normal HSC'nin matür hücre üretme fonksiyonu inaktif hale gelir</li>
+          <li>Hücresel iletişim ve <strong>direkt hücre-hücre teması</strong> yoluyla baskılama</li>
+        </ul>
+      </div>
+    </div>
+    <!-- SVG: Niche -->
+    <svg viewBox="0 0 340 310" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-height:300px">
+      <defs>
+        <marker id="pa" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#a01f1f"/></marker>
+        <marker id="pb" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#8a4800"/></marker>
+      </defs>
+      <!-- Bone marrow background -->
+      <rect x="20" y="20" width="300" height="270" rx="16" fill="#fafcff" stroke="#d0e4f5" stroke-width="1"/>
+      <text x="170" y="40" text-anchor="middle" font-size="11" font-weight="600" fill="#6a8aaa">Kemik İliği Mikroçevresi</text>
+
+      <!-- Normal HSC (suppressed, gray) -->
+      <circle cx="70" cy="100" r="22" fill="#e8e8e8" stroke="#a0a0a0" stroke-width="1.5" stroke-dasharray="3,2"/>
+      <text x="70" y="97" text-anchor="middle" font-size="8" fill="#808080">Normal</text>
+      <text x="70" y="108" text-anchor="middle" font-size="8" fill="#808080">HSC</text>
+      <text x="70" y="135" text-anchor="middle" font-size="8" fill="#a01f1f">⊗ Baskılanmış</text>
+
+      <!-- LSC (dominant) -->
+      <circle cx="200" cy="90" r="28" fill="#ffd0d0" stroke="#a01f1f" stroke-width="2"/>
+      <text x="200" y="86" text-anchor="middle" font-size="9" font-weight="700" fill="#a01f1f">LSC</text>
+      <text x="200" y="100" text-anchor="middle" font-size="8" fill="#a01f1f">Niş kontrolü</text>
+
+      <!-- Paracrine signals from LSC to HSC -->
+      <line x1="174" y1="100" x2="98" y2="100" stroke="#a01f1f" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#pa)"/>
+      <text x="136" y="92" text-anchor="middle" font-size="8" fill="#a01f1f">Parakrin sinyal</text>
+      <text x="136" y="103" text-anchor="middle" font-size="7" fill="#a01f1f">DKK1, CXCL12↓</text>
+
+      <!-- Blast pool -->
+      <circle cx="90" cy="190" r="16" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <text x="90" y="194" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+      <circle cx="130" cy="200" r="18" fill="#ff9090" stroke="#a01f1f" stroke-width="1.5"/>
+      <text x="130" y="204" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+      <circle cx="170" cy="185" r="16" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <text x="170" y="189" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+      <circle cx="210" cy="195" r="18" fill="#ff9090" stroke="#a01f1f" stroke-width="1.5"/>
+      <text x="210" y="199" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+      <circle cx="250" cy="182" r="14" fill="#ffb0b0" stroke="#a01f1f" stroke-width="1"/>
+      <text x="250" y="186" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+      <circle cx="155" cy="230" r="20" fill="#ff7070" stroke="#a01f1f" stroke-width="2"/>
+      <text x="155" y="234" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">Blast</text>
+      <circle cx="240" cy="225" r="16" fill="#ff9090" stroke="#a01f1f" stroke-width="1"/>
+      <text x="240" y="229" text-anchor="middle" font-size="7" fill="#a01f1f">Blast</text>
+
+      <!-- Normal HSC can't produce -->
+      <line x1="70" y1="122" x2="70" y2="165" stroke="#a0a0a0" stroke-width="1.5" stroke-dasharray="2,3"/>
+      <rect x="35" y="165" width="70" height="26" rx="5" fill="#f0f0f0" stroke="#c0c0c0" stroke-width=".5"/>
+      <text x="70" y="181" text-anchor="middle" font-size="8" fill="#808080">⊗ Matür hücre üretemez</text>
+
+      <!-- Result box -->
+      <rect x="25" y="265" width="290" height="20" rx="6" fill="#fff0f0" stroke="#e08080" stroke-width=".5"/>
+      <text x="170" y="279" text-anchor="middle" font-size="9" font-weight="600" fill="#a01f1f">Pansitopeni = Fonksiyonel baskı + Kısmi yer kaplama</text>
+    </svg>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">8 — Pansitopeni Mekanizması</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 10: SEKONDER AML ══════════════ -->
+<div class="slide">
+<div class="wrap">
+  <div class="lbl">Etiyoloji</div>
+  <h2>Sekonder / Tedavi İlişkili AML (t-MN)</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem">
+    <!-- Type 1 -->
+    <div style="border:.5px solid #e8b0b0;border-radius:12px;overflow:hidden">
+      <div style="background:#fff0f0;padding:.85rem 1.1rem;border-bottom:.5px solid #e8b0b0">
+        <span class="tag tr">Tip A</span>
+        <h3 style="margin-top:.4rem;color:#a01f1f">Alkilleyici Ajan / Radyoterapi</h3>
+      </div>
+      <div style="padding:1rem 1.1rem">
+        <ul class="pts">
+          <li>Latent dönem: <strong>4–6 yıl</strong></li>
+          <li>Sıklıkla MDS fazı sonrasında aşikar AML</li>
+          <li>Kromozom <strong>5 ve 7 kayıpları</strong> — del(5q), -7</li>
+          <li><strong>TP53 mutasyonu</strong> sık</li>
+          <li>Kötü prognoz — CPX-351 tercih edilir</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Type 2 -->
+    <div style="border:.5px solid #c0a0e0;border-radius:12px;overflow:hidden">
+      <div style="background:#f5f0ff;padding:.85rem 1.1rem;border-bottom:.5px solid #c0a0e0">
+        <span class="tag tp">Tip B</span>
+        <h3 style="margin-top:.4rem;color:#4a1a7a">Topoizomeraz II İnhibitörleri</h3>
+      </div>
+      <div style="padding:1rem 1.1rem">
+        <p style="font-size:.78rem;color:#4a6a8a;margin-bottom:.5rem"><em>Etoposid, Antrasiklinler</em></p>
+        <ul class="pts">
+          <li>Latent dönem: <strong>1–2 yıl</strong> (çok kısa!)</li>
+          <li>MDS fazı <strong>olmaksızın</strong> doğrudan AML</li>
+          <li><strong>Monositik fenotip</strong> ile prezentasyon</li>
+          <li>Doğrudan <strong>11q23 (KMT2A)</strong> veya 21q22 kırılması</li>
+          <li>Kimerik onkogen → agresif lösemogenez</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Genetic predisposition -->
+  <div style="margin-top:1.25rem;border:.5px solid #d0e4f5;border-radius:10px;padding:1rem 1.2rem">
+    <h3 style="margin-bottom:.6rem">Genetik Yatkınlık Sendromları</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+      <span class="tag tb">DDX41 germline</span>
+      <span class="tag tb">RUNX1 germline</span>
+      <span class="tag tb">CEBPA germline</span>
+      <span class="tag tb">GATA2 germline</span>
+      <span class="tag tr">Fanconi Anemisi</span>
+      <span class="tag tr">Bloom Sendromu</span>
+      <span class="tag tr">Diamond-Blackfan Anemisi</span>
+      <span class="tag to">Benzen / Sigara</span>
+    </div>
+    <p style="margin-top:.6rem;font-size:.8rem;color:#4a6a8a">Germline mutasyon saptandığında aile taraması ve allo-HCT donör seçimi kritik önem taşır</p>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">9 — Sekonder AML Etiyolojisi</span></div>
+</div>
+
+<!-- ══════════════ SLIDE 11: ÖZET ══════════════ -->
+<div class="slide" style="background:linear-gradient(135deg,#f5f9ff 0%,#fff 60%,#fff8f5 100%)">
+<div class="wrap">
+  <div class="lbl">Kapanış</div>
+  <h2>AML Patogenezi — Temel Mesajlar</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-top:1rem">
+    <div class="card">
+      <h3>1. Klonal hastalık</h3>
+      <p>Tek LSC'den kaynaklanan, sessiz kalan ve nükse yol açan klonal rezerv</p>
+    </div>
+    <div class="card">
+      <h3>2. İki vuruş</h3>
+      <p>Proliferasyon (Sınıf I) + Farklılaşma bloğu (Sınıf II) — minimal kombinasyon</p>
+    </div>
+    <div class="card">
+      <h3>3. CHIP zemini</h3>
+      <p>DNMT3A/TET2/ASXL1 erken olaylar; geç mutasyonlarla aşikar AML</p>
+    </div>
+    <div class="card red">
+      <h3>4. IDH onkometabolitik</h3>
+      <p>2-HG → TET2 inhibisyonu → hipermetilasyon — hedefe yönelik tedavi kapısı</p>
+    </div>
+    <div class="card">
+      <h3>5. Pansitopeni = Niche baskısı</h3>
+      <p>Fiziksel değil, fonksiyonel — parakrin mikroçevre disregülasyonu</p>
+    </div>
+    <div class="card orange">
+      <h3>6. Sekonder AML iki tipi</h3>
+      <p>Alkile edici (4–6y, chr5/7, TP53) vs Topo II (1–2y, 11q23, monositik)</p>
+    </div>
+  </div>
+</div>
+<div class="slide-footer"><span class="footer-lbl">MediSea YDUS</span><span class="footer-lbl">AML Patogenezi — Son</span></div>
+</div>
+
+</div><!-- /slideshow -->
+
+<div id="nav">
+  <button class="nbtn" id="p">←</button>
+  <span id="counter">1 / 11</span>
+  <button class="nbtn" id="n">→</button>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+const total = slides.length;
+
+function show(i) {
+  slides[cur].classList.remove('active');
+  cur = ((i % total) + total) % total;
+  slides[cur].classList.add('active');
+  document.getElementById('counter').textContent = `${cur + 1} / ${total}`;
+  document.getElementById('progress').style.width = `${((cur + 1) / total) * 100}%`;
+}
+
+document.getElementById('n').onclick = () => show(cur + 1);
+document.getElementById('p').onclick = () => show(cur - 1);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); show(cur + 1); }
+  if (e.key === 'ArrowLeft') show(cur - 1);
+});
+
+show(0);
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "06 Mar 2026",
     "tags": ["Hematoloji", "AML", "Gilteritinib", "Diferansiyasyon Sendromu", "Onkolojik Aciller", "FLT3"],
-    "parent": "aml-gilteritinib-genel",
+    "parent": "gilteritinib-flt3-aml",
     "order": 3,
     "summary": "Nüks veya refrakter FLT3 mutasyonlu AML tedavisinde kullanılan Gilteritinib'in en kritik komplikasyonu olan Diferansiyasyon (Farklılaşma) Sendromu'nun klinik bulguları ve acil yönetim algoritması."
   },

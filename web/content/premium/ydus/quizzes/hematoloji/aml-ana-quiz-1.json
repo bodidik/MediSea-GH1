@@ -1,0 +1,128 @@
+{
+  "id": "quiz-hem-aml-ana-001",
+  "baslik": "AML Patogenezi — Soru Seti 1",
+  "branch": "hematoloji",
+  "topic": "aml-ana",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Akut miyeloid lösemi (AML) patogenezini açıklayan \"İki Vuruşlu (Two-Hit) Hipotez\" ve hastalığa özgü moleküler mekanizmalar dikkate alındığında, aşağıdaki genetik anormallik ve patojenik etki eşleştirmelerinden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "FLT3-ITD mutasyonu – Reseptör tirozin kinazın liganddan bağımsız aktivasyonuna yol açarak hücreye proliferatif avantajı sağlayan Sınıf I (Tip 1) mutasyondur.",
+        "B": "IDH1 ve IDH2 mutasyonları – Alfa-ketoglutaratın bir onkometabolit olan 2-hidroksiglutarata (2-HG) dönüşümünü katalize ederek diferansiyasyon bloğuna neden olur.",
+        "C": "DNMT3A ve TET2 mutasyonları – Hücre farklılaşmasını bozan ve CHIP evresinde de sıkça izlenen, DNA metilasyon sürecini etkileyen mutasyonlardır.",
+        "D": "CEBPA mutasyonu – Sinyal ileti yolaklarında sürekli aktivasyona yol açarak lösemik klona proliferatif ve sağkalım avantajı sunan Sınıf I (Tip 1) mutasyonlarından biridir.",
+        "E": "PML::RARA translokasyonu – Promyelositlerin terminal farklılaşmasını baskılayan ve ATRA ile aşılabilecek kalıcı bir transkripsiyonel represyona yol açan kimerik bir proteindir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "CEBPA, hematopoetik farklılaşmayı bozan Sınıf II (Tip 2) mutasyondur. Proliferatif avantaj sağlayan Sınıf I ile karıştırılmamalıdır.",
+      "aciklama_detay": "AML lösemogenezi İki Vuruşlu Hipotez çerçevesinde açıklanır: Sınıf I mutasyonlar proliferatif sinyal (FLT3-ITD, KRAS, NRAS, KIT), Sınıf II mutasyonlar ise farklılaşma bloğu (CEBPA, CBF translokasyonları) sağlar. CEBPA bZIP domain mutasyonları miyeloid farklılaşmayı sağlayan transkripsiyon faktörünü inaktive eder — proliferatif sinyal değil, diferansiyasyon defektidir. Bu nedenle D seçeneği yanlış eşleştirmedir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU eşleştirme. FLT3-ITD, reseptörün iç tandem duplikasyon mutasyonu nedeniyle ligand (FL) bağlanması olmaksızın konstitütif aktive olmasıdır. MAPK, PI3K ve STAT5 yolakları sürekli uyarılır → proliferatif ve antiapoptotik avantaj = Sınıf I.",
+        "B": "DOĞRU eşleştirme. Mutant IDH1/2 enzimleri normal substrat α-KG yerine 2-hidroksiglutarat (2-HG) üretir. Biriken 2-HG → TET2'yi inhibe eder → DNA hipermetilasyonu → matürasyon genleri silenslenir → farklılaşma bloğu.",
+        "C": "DOĞRU eşleştirme. DNMT3A ve TET2, DNA metilasyonunu düzenleyen epigenetik enzimlerdir. Bu genlerdeki mutasyonlar lösemogenezdeki en erken (kurucu) olaylardır ve CHIP evresinde de saptanır. CHIP sonrası ek mutasyonların birikmesiyle aşikar AML gelişir.",
+        "D": "YANLIŞ eşleştirme — doğru cevap budur. CEBPA (CCAAT/Enhancer Binding Protein Alpha), miyeloid farklılaşmayı yöneten transkripsiyon faktörüdür. bZIP domain mutasyonları bu farklılaşmayı sekteye uğratır → Sınıf II (Tip 2) mutasyon. Proliferatif sinyal yolak aktivasyonu CEBPA'nın işlevi DEĞİLDİR.",
+        "E": "DOĞRU eşleştirme. t(15;17) translokasyonu → PML::RARA füzyon proteini → N-CoR ko-represör ile güçlü bağ → retinoik asit hedef genlerinin transkripsiyonel baskılanması → promyelosit farklılaşması durur. ATRA (fizyolojik dozun üzerinde) bu baskıyı kırar, farklılaşmayı yeniden başlatır."
+      },
+      "etiketler": ["İki Vuruş", "Sınıf I/II", "CEBPA", "FLT3", "IDH", "CHIP", "APL"],
+      "zorluk": "zor",
+      "kaynak": "ELN 2022, Döhner et al. 2022, NEJM"
+    },
+    {
+      "id": "s2",
+      "metin": "Acil servise şiddetli diş eti kanaması ve ciltte yaygın ekimozlarla başvuran 29 yaşındaki kadın hastanın laboratuvar bulgularında lökosit 3.200/µL, hemoglobin 7.8 g/dL ve trombosit 18.000/µL saptanıyor. Periferik kan yaymasında bol granüllü, bilobüler çekirdekli hücreler ile hücre içi Auer çubuk demetleri (faggot cells) izleniyor. Koagülasyon testlerinde PT 22 sn, aPTT 55 sn, fibrinojen 0.8 g/L (↓↓) ile uyumlu DİK tablosu mevcut. Hastanın akım sitometri ve sitogenetik sonuçları henüz hazır değil.\n\nBu klinik tabloda en öncelikli tedavi adımı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Akım sitometri ve t(15;17) FISH sonuçları kesinleşene kadar beklenmeli; tedaviye yalnızca tanı doğrulandıktan sonra başlanmalıdır.",
+        "B": "Trombosit sayısı kritik derecede düşük olduğundan, öncelikle lökoferez uygulanarak lösemik hücre yükü hızla azaltılmalıdır.",
+        "C": "Genetik sonuçlar beklenmeksizin, klinik şüphe temelinde ATRA (all-trans retinoik asit) hemen başlanmalıdır.",
+        "D": "DİK tablosunun kontrol altına alınması için yalnızca taze donmuş plazma, kriyopresipitat ve trombosit süspansiyonu ile destekleyici tedavi verilmelidir.",
+        "E": "Tanı doğrulanmadan ilaç başlanamayacağı için standart 7+3 indüksiyon kemoterapisi başlatılmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "APL şüphesinde genetik sonuçlar beklenmez. ATRA gecikmesi, tedavi edilebilir bir hastalıkta katastrofik kanama ile ölüme yol açabilir.",
+      "aciklama_detay": "Klinik tablo APL'ye işaret ediyor: genç hasta, pansitopeni (hiperlökositoz YOK), faggot cells, ağır DİK. APL, AML'nin diğer tüm alt tiplerinden ayrılan tek tıbbi acildir; fatal kanama riski nedeniyle ATRA klinik şüphede başlatılmalı, genetik doğrulama beklenmemelidir. Tanı doğrulandıktan sonra düşük/orta riskli olgularda (lökosit <10.000/µL) ATRA + ATO kombinasyonu yüksek tedavi oranı (%90+) sağlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — En tehlikeli seçenek. APL'de tedavi saatlerle yarışır. Genetik doğrulama beklenirken fatal kanama gelişebilir. ATRA'nın trombosit ve hemostaza zarar vermesi söz konusu değildir; aksine farklılaşmayı başlatarak DİK'i düzeltir.",
+        "B": "YANLIŞ — Lökoferez APL'de KESİNLİKLE KONTRAENDİKEDİR. Ağır DİK zemininde lökoferez, trombotik ve hemorajik komplikasyon riskini dramatik şekilde artırır. Lökosit de zaten <10.000/µL (hiperlökositoz yok).",
+        "C": "DOĞRU — Faggot cells + DİK + genç hasta → APL şüphesi = ATRA hemen başla. Klinik şüphe tanıyı doğrulamaya yeter; bekleme ölüm riskini artırır. ELN ve NCCN kılavuzları bu öneriyi net biçimde belirtiyor.",
+        "D": "YANLIŞ — Kan ürünleri destek tedavisinin parçasıdır; ancak ALTERNATİF değil EKLEMEDİR. ATRA başlatılmadan yalnızca kan ürünü vermek DİK'i kontrol etmez; blastlar farklılaşmadığı sürece prokoagülan sinyaller devam eder.",
+        "E": "YANLIŞ — Standart 7+3 APL için endike değildir. Antrasiklinler APL tedavisinde kullanılır; ancak birinci basamakta ATRA ve ATO'ya ek olarak — tek başına 7+3 olarak değil. Ayrıca tanı doğrulanmadan 7+3 vermek hem hatalı hem de tehlikelidir."
+      },
+      "etiketler": ["APL", "ATRA", "DİK", "Onkolojik Acil", "Tedavi"],
+      "zorluk": "orta",
+      "kaynak": "Lo-Coco et al. NEJM 2013; Döhner et al. Blood 2022; NCCN AML Kılavuzu v2024"
+    },
+    {
+      "id": "s3",
+      "metin": "Kırk sekiz yaşında, ECOG PS 0, organ fonksiyonları normal bir erkek hasta yeni tanı AML ile değerlendiriliyor. Kemik iliğinde %62 blast, normal karyotip saptanıyor. NGS panelinde FLT3-D835 nokta mutasyonu (TKD, tirozin kinaz domain) pozitif; FLT3-ITD negatif; NPM1 wild-type; diğer sık mutasyonlar negatif. ELN 2022 risk sınıflandırmasına göre hasta orta (intermediate) risk grubundadır ve HLA-uyumlu kardeş donörü mevcuttur.\n\nBu hasta için aşağıdaki tedavi planlarından hangisi kılavuz önerilerine en uygun ve DOĞRUDUR?",
+      "secenekler": {
+        "A": "7+3 indüksiyonu + Midostaurin (8–21. günler) → Tam remisyon (CR1) sonrası uygun donörle Allojenik Kök Hücre Nakli (Allo-HCT)",
+        "B": "7+3 indüksiyonu + Quizartinib → CR1 sonrası HiDAC ile konsolidasyon (Nakil gerekmez)",
+        "C": "7+3 indüksiyonu + Midostaurin (8–21. günler) → CR1 sonrası HiDAC × 3–4 kür (FLT3 mutasyonlu hastalarda nakil yerine HiDAC tercih edilir)",
+        "D": "FLT3-TKD nokta mutasyonları FLT3 inhibitörü endikasyonu kapsamı dışında olduğundan, midostaurin eklenmeksizin standart 7+3 monoterapisi uygulanmalıdır.",
+        "E": "CPX-351 indüksiyonu → CR1 sonrası Allo-HCT (Orta riskli olgularda sekonder AML protokolü tercih edilir)"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Midostaurin hem ITD hem TKD mutasyonlarını kapsar; quizartinib yalnızca ITD içindir. Orta riskli fit hastada CR1'de Allo-HCT standarttır.",
+      "aciklama_detay": "FLT3 mutasyonlarında iki kritik ayrım var: (1) İlaç seçimi — midostaurin (RATIFY) hem ITD hem TKD için endikeyken quizartinib (QUAZAR/QuANTUM-First) yalnızca FLT3-ITD için onaylanmıştır; TKD mutasyonunda quizartinib endikasyonu yoktur. (2) Post-remisyon strateji — FLT3-TKD/NPM1 wild-type kombinasyonu ELN 2022'de intermediate risk oluşturur; fit intermediate risk hastada uygun donör varsa CR1'de Allo-HCT standarttır, HiDAC tek başına yeterli değildir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU. Midostaurin FLT3 mutasyonlarının her iki alt tipini (ITD ve TKD) kapsar → 7+3 rejimine eklenir. ELN 2022 intermediate risk + uygun donör + fit hasta → CR1'de Allo-HCT en güçlü post-remisyon seçeneğidir.",
+        "B": "YANLIŞ — İki hata var. (1) Quizartinib yalnızca FLT3-ITD için onaylıdır; bu hastada ITD negatif, TKD pozitif → quizartinib endike değil. (2) Intermediate riskli fit hastada HiDAC tek başına yeterli değil; HCT tercih edilir.",
+        "C": "YANLIŞ — Midostaurin seçimi doğru (TKD için de endike), ancak post-remisyon stratejisi yanlış. HiDAC monoterapisi favorable riskli hastalarda standarttır; intermediate riskli bu hastada HCT üstündür. 'FLT3 mutasyonunda HiDAC tercih edilir' ifadesi kılavuzlarda yer almaz.",
+        "D": "YANLIŞ — Midostaurin'in endikasyon kapsamı hem ITD hem TKD'yi içerir. RATIFY çalışmasında midostaurin her iki alt tipte de sağkalım avantajı göstermiştir. TKD'de inhibitör eklememek güncel kılavuzlara aykırıdır.",
+        "E": "YANLIŞ — CPX-351 sekonder AML (önceki MDS) veya tedavi ilişkili AML (t-AML) için endikedir; bu hasta de novo AML. Orta riskli de novo AML protokolü CPX-351 değildir."
+      },
+      "etiketler": ["FLT3", "Midostaurin", "Quizartinib", "Allo-HCT", "Post-remisyon", "ELN 2022"],
+      "zorluk": "zor",
+      "kaynak": "Stone et al. NEJM 2017 (RATIFY); Erba et al. Lancet 2023 (QuANTUM-First); ELN 2022"
+    },
+    {
+      "id": "s4",
+      "metin": "Kırk dört yaşında, ECOG PS 0, organ fonksiyonları normal bir kadın hasta. inv(16)/CBFB::MYH11 pozitif Core Binding Factor (CBF) AML tanısı mevcut, CD33 pozitif. ELN 2022 favorable risk. 7+3 + Gemtuzumab Ozogamisin (GO) ile indüksiyon sonrası tam remisyon (CR1) elde edilmiş. İki kür HiDAC konsolidasyonu uygulanmış. Tedavi sonrası kemik iliği morfolojik olarak temiz, ancak kantitatif PCR ile CBFB::MYH11 füzyon transkripti hâlâ saptanmaktadır (MRD pozitif). HLA-tam uyumlu kardeş donörü mevcuttur.\n\nBu aşamada en uygun tedavi stratejisi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Favorable riskli hastalarda CR1'de Allo-HCT endike olmadığından, MRD pozitifliğine rağmen kemoterapi ile izleme devam edilmelidir.",
+        "B": "MRD pozitifliği nüks riskini belirgin artırdığından, bu hastada Allo-HCT son derece rasyonel bir seçenektir.",
+        "C": "Bir kür daha HiDAC uygulanmalı; CBF lösemilerinde MRD geç negatifleşebildiğinden nakil kararı ertelenmelidir.",
+        "D": "Favorable riskli hastalarda MRD pozitifliği klinik önemi olmayan bir PCR artefaktıdır; tedavi değişikliği gerektirmez.",
+        "E": "Allojenik nakil yerine otolog kök hücre nakli tercih edilmeli; bu şekilde GVL etkisi devreye girmeksizin daha güvenli bir remisyon pekiştirme sağlanabilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Favorable risk grubunda CR1'de rutin HCT yapılmaz — ancak persistan MRD pozitifliği relaps riskini %35–40 üzerine taşır ve HCT'yi rasyonel kılar.",
+      "aciklama_detay": "ELN 2022 favorable risk grubunda (CBF, izole NPM1, bZIP CEBPA) standart konsolidasyon kemoterapisi ile kür oranları yüksek olduğundan rutin CR1 Allo-HCT önerilmez. Ancak bu kuralın kritik istisnası persistan MRD pozitifliğidir. Post-kemoterapi PCR ile saptanan rezidüel transkript, mikroskobik lösemik klon varlığını ve >%35–40 relaps riskini gösterir. Bu tabloda GVL etkisinden yararlanmak için seçilmiş fit hastalarda Allo-HCT fayda-zarar dengesini HCT lehine çevirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 'Favorable riskli hastaya HCT yapılmaz' kuralı RUTIN CR1 HCT için geçerlidir. Persistan MRD bu genel kuralı geçersiz kılan bir istisnadır; MRD pozitif favorable riskli hastada izlem ile devam etmek nükse zemin hazırlar.",
+        "B": "DOĞRU — İki kür HiDAC sonrası persistan PCR pozitifliği, rezidüel klon temizlenemediğini ve relaps riskinin belirgin yükseldiğini (%35–40 üzeri) gösterir. Favorable risk sınıflandırması tek başına HCT'yi dışlamaz; GVL etkisinden yararlanmak rasyoneldir.",
+        "C": "YANLIŞ — İki tam konsolidasyon küründen sonra hâlâ saptanabilen MRD'nin ek bir HiDAC küründen sonra negatifleşeceği beklentisi kanıt dışıdır. Nakil kararını ertelemek relaps penceresini genişletir.",
+        "D": "YANLIŞ — Kantitatif PCR ile saptanan CBFB::MYH11 transkripti özellikle post-konsolidasyon dönemde güçlü nüks prediktörüdür. 'Artefakt' yorumu tehlikeli ve klinik kanıtlarla çelişir.",
+        "E": "YANLIŞ — Otolog nakil GVL etkisinden yararlanamaz, dolayısıyla bu senaryoda MRD'ye karşı koyacak immünolojik mekanizmadan yoksundur. Allo-HCT'nin üstünlüğü tam da bu GVL etkisinden kaynaklanır."
+      },
+      "etiketler": ["Allo-HCT", "MRD", "Favorable Risk", "CBF AML", "GVL"],
+      "zorluk": "zor",
+      "kaynak": "ELN 2022; Döhner et al. Blood 2022; NCCN AML v2024"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz sekiz yaşında, ECOG PS 0, karaciğer fonksiyonları normal bir erkek hasta. t(8;21)/RUNX1::RUNX1T1 pozitif, CD33+ CBF AML tanısıyla 7+3 + Gemtuzumab Ozogamisin (GO) ile indüksiyon tedavisi uygulanmış; son GO dozu indüksiyonun 8. gününde verilmiştir. Tam remisyon (CR1) elde edilmiş, ancak post-HiDAC PCR ile MRD pozitifliği saptanmış. ELN 2022 intermediate/favorable risk değerlendirmesi ve persistan MRD bulguları göz önüne alınarak Allo-HCT planlanmaktadır. HLA-tam uyumlu kardeş donörü mevcuttur.\n\nNakil infüzyonunu planlarken, son GO dozu ile Allo-HCT infüzyonu arasında bırakılması gereken bekleme süresi konusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "GO'nun hepatotoksik etkisi infüzyon sırasında sınırlıdır; geç dönem SOS/VOD riski nakil zamanlamasından bağımsızdır. Remisyon doğrulandıktan sonra zaman kaybedilmeksizin nakle geçilebilir.",
+        "B": "Son GO dozundan itibaren en az 30 gün beklenmesi, SOS/VOD riskini klinik açıdan anlamlı biçimde azaltmak için yeterlidir.",
+        "C": "Son GO dozundan itibaren en az 60–90 günlük bir bekleme penceresi önerilmektedir; bu süre, GO'nun gecikmiş hepatotoksisitesinin ortaya çıkması ve klirensine yönelik olarak belirlenmiştir.",
+        "D": "GO kullanımı Allo-HCT için mutlak kontrendikasyon oluşturduğundan, bu hastada nakil planlamasından vazgeçilmeli ve konsolidasyon kemoterapisine devam edilmelidir.",
+        "E": "GO'ya bağlı SOS/VOD riski yalnızca Busulfan temelli MAC rejimlerinde geçerlidir; azaltılmış yoğunluklu (RIC) hazırlık uygulanacaksa bekleme süresine gerek yoktur."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Son GO dozu ile HCT infüzyonu arasında 60–90 günlük bekleme penceresi önerilir; bu süre GO'nun gecikmiş hepatik endotel toksisitesini ve SOS riskini minimize etmek için gereklidir.",
+      "aciklama_detay": "Gemtuzumab Ozogamisin (GO), anti-CD33 monoklonal antikora bağlı bir kalicheamycin konjugatıdır. Aktif metaboliti karaciğer sinüzoidal endotel hücrelerinde birikir ve bağ dokusu aktivasyonuna yol açar. Allo-HCT kondisyonu (özellikle Busulfan) bu hasarlı zemin üzerine eklenen ikinci bir insult oluşturarak SOS/VOD'u tetikler. Bu iki-vuruşlu hepatotoksisite mekanizması nedeniyle güncel kılavuzlar son GO dozu ile HCT infüzyonu arasında 60–90 günlük bekleme penceresi önermektedir. Bu süre hem GO'nun biyolojik klirensine hem de sinüzoidal iyileşmeye olanak tanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — GO'nun SOS/VOD riski nakil zamanlamasından doğrudan etkilenir. GO, kalicheamycin bileşiği aracılığıyla sinüzoidal endotelde kalıcı hasar bırakır; kondisyon rejimi bu hasarlı dokuya ikinci toksik vurumu uygular. Erken nakle geçmek SOS riskini dramatik biçimde artırır.",
+        "B": "YANLIŞ — 30 günlük süre, sinüzoidal endotelyal iyileşme ve GO klirensinin tamamlanması için yeterli değildir. Klinik çalışmalar ve kılavuzlar (NCCN, ELN pratiği) 30 günlük eşiği güvenli kabul etmemektedir; minimum 60 gün, tercihen 90 gün önerilir.",
+        "C": "DOĞRU — GO'ya bağlı SOS/VOD riskinin minimize edilmesi için son doz ile HCT infüzyonu arasında 60–90 günlük pencere bırakılması güncel hematoloji pratiğindeki standarttır. Bu süre hem farmakolojik klirensi hem de hepatik endotel iyileşmesini kapsamaktadır.",
+        "D": "YANLIŞ — GO kullanımı Allo-HCT için mutlak kontrendikasyon oluşturmaz. Yeterli bekleme süresi (60–90 gün) ve uygun hasta seçimi ile GO öncesi maruziyeti olan hastalarda nakil güvenle uygulanabilir. GO'nun CBF AML'de sağkalım avantajı sağladığı unutulmamalıdır.",
+        "E": "YANLIŞ — SOS/VOD riski yalnızca Busulfan ile sınırlı değildir; kondisyondan bağımsız olarak GO'nun sinüzoidal endotel hasarı bekleme penceresinin temel gerekçesidir. RIC kullanılacak olsa bile 60–90 günlük bekleme önerilmektedir."
+      },
+      "etiketler": ["GO", "SOS", "VOD", "Allo-HCT", "Hepatotoksisite", "CBF AML"],
+      "zorluk": "orta",
+      "kaynak": "Döhner et al. Blood 2022; Hills et al. Lancet Oncol 2014; NCCN AML v2024"
+    }
+  ]
+}

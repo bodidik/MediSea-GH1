@@ -1,242 +1,271 @@
-// "C:\Users\hucig\Medknowledge\web\app\(ydus)\[lang]\premium\ydus\[branch]\page.tsx"
-'use client';
-
-import { useState } from 'react';
+import { notFound } from 'next/navigation';
+import fs from 'fs';
+import path from 'path';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 
-// --- HASTALIK ODAKLI BRANŞ VERİTABANI ---
-const BRANCH_DATA: Record<string, any> = {
-  hematoloji: {
-    title: "Hematoloji",
-    shipClass: "Amiral Gemisi",
-    port: "Karadeniz Suları",
-    color: "rose",
-    icon: "🩸",
-    categories: [
-      {
-        id: "cat_losemiler",
-        title: "Lösemiler",
-        desc: "Akut ve Kronik Lösemiler, Blastik Kriz",
-        icon: "🧬",
-        items: [
-          { title: "AML Mega Deneme Sınavı", href: "/tr/premium/ydus/quiz-coz?branch=hematoloji&id=aml-quiz-1", isReady: true, badges: ["POPÜLER", "ZOR"] },
-          { title: "AML Klinik Vaka Simülasyonu", href: "/tr/premium/ydus/soru-cozum?branch=hematoloji&id=case-aml-fit", isReady: true, badges: ["KOKPİT"] },
-          { title: "AML Tıbbi İstihbarat (İnciler)", href: "/tr/premium/ydus/inciler?branch=hematoloji&id=aml", isReady: true, badges: ["HAYAT KURTARICI"] },
-          { title: "AML Taktiksel Hızlı Tekrar", href: "/tr/premium/ydus/hizli-tekrar?branch=hematoloji&id=aml", isReady: true, badges: ["3D KART"] },
-          { title: "Kronik Miyeloid Lösemi (KML)", href: "/tr/premium/ydus/hematoloji/kml", isReady: true, badges: ["YENİ", "İSTİHBARAT"] },
-          { title: "Akut Lenfoblastik Lösemi (ALL)", href: "#", isReady: false, badges: ["YENİ"] },
-          { title: "Kronik Lenfositik Lösemi (KLL)", href: "#", isReady: false, badges: ["YENİ"] }
-        ]
-      },
-      {
-        id: "cat_lenfomalar",
-        title: "Lenfomalar",
-        desc: "Hodgkin, Non-Hodgkin ve Evreleme Sistemleri",
-        icon: "🦠",
-        items: [
-          { title: "Lenfoma Karma Deneme Sınavı", href: "#", isReady: false, badges: ["YAKINDA"] }
-        ]
-      },
-      {
-        id: "cat_kanama",
-        title: "Kanama ve Pıhtılaşma Bozuklukları",
-        desc: "ITP, TTP, Hemofili ve Tromboz Yönetimi",
-        icon: "💉",
-        items: [
-          { title: "DİC ve Koagülopati Vakaları", href: "#", isReady: false, badges: ["HAZIRLANIYOR"] }
-        ]
-      }
-    ]
-  },
-  romatoloji: {
-    title: "Romatoloji",
-    shipClass: "Fırkateyn",
-    port: "Akdeniz Suları",
-    color: "emerald",
-    icon: "🦴",
-    categories: [
-      {
-        id: "cat_otoenflamatuar",
-        title: "Otoenflamatuar Sendromlar",
-        desc: "FMF, TRAPS ve Periyodik Ateş Sendromları",
-        icon: "🔥",
-        items: [
-          { title: "Ailesel Akdeniz Ateşi (FMF)", href: "/tr/premium/ydus/romatoloji/fmf", isReady: true, badges: ["POPÜLER", "İSTİHBARAT"] },
-          { title: "FMF Klinik Vaka Simülasyonu", href: "#", isReady: false, badges: ["KOKPİT"] },
-          { title: "FMF İncileri", href: "/tr/premium/ydus/inciler?branch=romatoloji&id=fmf", isReady: true, badges: ["HAYAT KURTARICI"] }
-        ]
-      },
-      {
-        id: "cat_vaskulitler",
-        title: "Sistemik Vaskülitler",
-        desc: "Büyük, Orta ve Küçük Damar Vaskülitleri",
-        icon: "🩸",
-        items: [
-          { title: "ANCA İlişkili Vaskülitler", href: "#", isReady: false, badges: ["HAZIRLANIYOR"] }
-        ]
-      }
-    ]
+export const revalidate = 86400;
+
+interface Konu {
+  id: string;
+  baslik: string;
+  rozetler: string[];
+  hazir: boolean;
+}
+
+interface Kategori {
+  id: string;
+  baslik: string;
+  aciklama: string;
+  emoji: string;
+  konular: Konu[];
+}
+
+interface BransVerisi {
+  meta: {
+    id: string;
+    baslik: string;
+    aciklama: string;
+    renk: string;
+    emoji: string;
+  };
+  kategoriler: Kategori[];
+}
+
+function bransYukle(branch: string): BransVerisi | null {
+  try {
+    const dosyaYolu = path.join(
+      process.cwd(),
+      'content', 'premium', 'ydus', 'branches', `${branch}.json`
+    );
+    const icerik = fs.readFileSync(dosyaYolu, 'utf-8');
+    return JSON.parse(icerik) as BransVerisi;
+  } catch {
+    return null;
   }
+}
+
+const ROZET_STILLERI: Record<string, { arka: string; renk: string; kenar: string }> = {
+  'POPÜLER':  { arka: '#e6f0fb', renk: '#1a3a6b', kenar: '#b8cfe8' },
+  'ZOR':      { arka: '#fff0f0', renk: '#8b1a1a', kenar: '#f5b8b8' },
+  'YENİ':     { arka: '#f0fbf5', renk: '#1a5c2e', kenar: '#a8e0b8' },
+  'YAKINDA':  { arka: '#f5f5f5', renk: '#6a6a6a', kenar: '#d0d0d0' },
+  'DEFAULT':  { arka: '#f5f9ff', renk: '#1a3a6b', kenar: '#b8cfe8' },
 };
 
-export default function BranchDeck() {
-  const params = useParams();
-  const branchSlug = (params.branch as string) || '';
-  
-  // Branş bulunamadıysa gösterilecek özel radar ekranı
-  if (!BRANCH_DATA[branchSlug]) {
+export default async function BransSayfasi({
+  params,
+}: {
+  params: Promise<{ lang: string; branch: string }>;
+}) {
+  const { lang, branch } = await params;
+  const veri = bransYukle(branch);
+
+  if (!veri) {
     return (
-      <div className="min-h-[80vh] bg-[#0a0f1c] flex flex-col items-center justify-center p-6 text-slate-100 font-sans">
-        <div className="relative w-32 h-32 mb-8 flex items-center justify-center">
-          <div className="absolute inset-0 border-2 border-slate-700 rounded-full animate-ping opacity-30"></div>
-          <div className="absolute inset-4 border-2 border-slate-600 rounded-full shadow-[0_0_15px_rgba(255,255,255,0.1)]"></div>
-          <div className="text-5xl z-10">🧭</div>
-        </div>
-        <h1 className="text-3xl font-black text-white uppercase tracking-widest mb-3">Bilinmeyen Sular</h1>
-        <p className="text-slate-300 font-medium mb-8 text-center max-w-md text-sm">
-          <span className="text-blue-400 font-mono font-bold tracking-widest">[{branchSlug}]</span> rotasında herhangi bir tıbbi birlik tespit edilemedi. Seyir defterini kontrol edin.
+      <div style={{
+        minHeight: '80vh',
+        background: '#fff',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        color: '#1a2a3a',
+        padding: '2rem',
+      }}>
+        <div style={{ fontSize: '48px', marginBottom: '1rem' }}>🧭</div>
+        <h1 style={{ fontSize: '22px', fontWeight: 600, color: '#1a3a6b', marginBottom: '0.5rem' }}>
+          Branş bulunamadı
+        </h1>
+        <p style={{ color: '#6a8aaa', marginBottom: '1.5rem', fontSize: '14px' }}>
+          <strong>{branch}</strong> için henüz içerik hazırlanmadı.
         </p>
-        <Link href="/tr/premium/ydus" className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-black transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] uppercase tracking-[0.2em] text-xs">
-          Ana Üsse Dön ⚓
+        <Link href={`/${lang}/premium/ydus`} style={{
+          padding: '8px 20px',
+          background: '#1a3a6b',
+          color: '#fff',
+          borderRadius: '8px',
+          textDecoration: 'none',
+          fontSize: '13px',
+          fontWeight: 500,
+        }}>
+          Ana sayfaya dön
         </Link>
       </div>
     );
   }
 
-  const data = BRANCH_DATA[branchSlug];
-
-  const [openCategory, setOpenCategory] = useState<string | null>(
-    data.categories.length > 0 ? data.categories[0].id : null
+  const toplamKonu = veri.kategoriler.reduce((acc, kat) => acc + kat.konular.length, 0);
+  const hazirKonu = veri.kategoriler.reduce(
+    (acc, kat) => acc + kat.konular.filter(k => k.hazir).length, 0
   );
 
-  const toggleCategory = (id: string) => {
-    setOpenCategory(prev => (prev === id ? null : id));
-  };
-
   return (
-    <div className="min-h-screen bg-[#0a0f1c] py-8 px-4 sm:px-6 font-sans text-slate-100 selection:bg-blue-500/30">
-      <div className="max-w-5xl mx-auto">
-        
-        {/* Üst Navigasyon (Yüksek Kontrast) */}
-        <div className="mb-8 flex items-center justify-between border-b border-slate-800 pb-6">
-          <div className="flex items-center gap-2 text-xs font-black text-slate-500 tracking-widest uppercase">
-            <Link href="/tr/premium/ydus" className="hover:text-blue-400 transition-colors">⚓ Lobi</Link>
-            <span>/</span>
-            <span className={`text-${data.color}-400`}>{data.title}</span>
-          </div>
-          <Link href="/tr/premium/ydus" className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-black text-[10px] transition-all border border-slate-700 shadow-lg uppercase tracking-[0.2em]">
-            Açık Denize Dön ↩
-          </Link>
-        </div>
+    <div style={{
+      minHeight: '100vh',
+      background: '#fff',
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      color: '#1a2a3a',
+    }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '1.5rem 1rem' }}>
 
-        {/* HERO BÖLÜMÜ (Neon Gölgeli ve Berrak) */}
-        <div className={`bg-slate-900 rounded-3xl p-6 sm:p-10 mb-8 shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-${data.color}-900/50 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center gap-6`}>
-          <div className={`w-20 h-20 rounded-2xl bg-slate-950 flex items-center justify-center text-5xl shrink-0 border border-slate-800 shadow-[0_0_15px_rgba(255,255,255,0.05)] z-10`}>
-            {data.icon}
+        {/* BREADCRUMB */}
+        <nav style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '6px',
+          fontSize: '12px',
+          marginBottom: '1.5rem',
+          color: '#6a8aaa',
+        }}>
+          <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500 }}>
+            Ana sayfa
+          </Link>
+          <span>/</span>
+          <span style={{ color: veri.meta.renk, fontWeight: 500 }}>{veri.meta.baslik}</span>
+        </nav>
+
+        {/* HERO */}
+        <div style={{
+          border: '0.5px solid #b8cfe8',
+          borderLeft: `4px solid ${veri.meta.renk}`,
+          borderRadius: '0 12px 12px 0',
+          padding: '1.25rem 1.5rem',
+          marginBottom: '1.5rem',
+          background: '#f5f9ff',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem',
+        }}>
+          <div style={{
+            width: '52px',
+            height: '52px',
+            borderRadius: '12px',
+            background: '#fff',
+            border: `0.5px solid #b8cfe8`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '26px',
+            flexShrink: 0,
+          }}>
+            {veri.meta.emoji}
           </div>
-          <div className="relative z-10 flex-1">
-            <span className={`inline-block px-3 py-1 mb-3 text-[10px] font-black tracking-[0.3em] uppercase bg-${data.color}-900/20 text-${data.color}-400 border border-${data.color}-500/30 rounded-lg shadow-sm`}>
-              {data.shipClass} SINIFI
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-black text-white mb-2 tracking-tight italic uppercase">
-              {data.title} İndeksi
+          <div style={{ flex: 1 }}>
+            <h1 style={{ fontSize: '20px', fontWeight: 600, color: '#1a3a6b', marginBottom: '0.25rem' }}>
+              {veri.meta.baslik}
             </h1>
-            <p className="text-slate-300 font-medium text-sm sm:text-base max-w-2xl">
-              İlgilendiğiniz hastalık grubunu seçerek görevleri ve istihbarat dosyalarını görüntüleyin.
+            <p style={{ fontSize: '13px', color: '#4a6a8a', lineHeight: 1.5, margin: 0 }}>
+              {veri.meta.aciklama}
             </p>
           </div>
-          <div className={`absolute -bottom-16 -right-16 w-64 h-64 bg-${data.color}-600 rounded-full blur-[100px] opacity-15 pointer-events-none`}></div>
+          <div style={{ textAlign: 'right', flexShrink: 0 }}>
+            <div style={{ fontSize: '20px', fontWeight: 600, color: veri.meta.renk }}>{hazirKonu}</div>
+            <div style={{ fontSize: '11px', color: '#6a8aaa' }}>{toplamKonu} konudan</div>
+          </div>
         </div>
 
-        {/* AKORDİYON LİSTESİ (Berrak Yazılar ve Net Sınırlar) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {data.categories.map((cat: any) => {
-            const isOpen = openCategory === cat.id;
-            
-            return (
-              <div 
-                key={cat.id} 
-                className={`bg-slate-900 rounded-2xl border transition-all duration-300 overflow-hidden flex flex-col shadow-lg
-                  ${isOpen ? `border-${data.color}-500/50 shadow-[0_0_20px_rgba(59,130,246,0.1)] ring-1 ring-${data.color}-500/20` : 'border-slate-800 hover:border-slate-700'}
-                `}
-              >
-                <div 
-                  onClick={() => toggleCategory(cat.id)}
-                  className="p-5 flex items-center justify-between cursor-pointer select-none group"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl transition-colors border
-                      ${isOpen ? `bg-${data.color}-900/30 border-${data.color}-500/30` : 'bg-slate-950 border-slate-800 group-hover:bg-slate-800'}
-                    `}>
-                      {cat.icon}
-                    </div>
-                    <div>
-                      <h2 className={`font-black text-lg transition-colors ${isOpen ? `text-${data.color}-400` : 'text-slate-200 group-hover:text-white'}`}>
-                        {cat.title}
-                      </h2>
-                      <p className="text-slate-400 text-[11px] font-medium mt-0.5">{cat.desc}</p>
-                    </div>
-                  </div>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 
-                    ${isOpen ? `bg-${data.color}-900/30 text-${data.color}-400 rotate-180 border border-${data.color}-500/30` : 'bg-slate-950 text-slate-500 border border-slate-800 group-hover:text-slate-300'}
-                  `}>
-                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
+        {/* KATEGORİLER */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {veri.kategoriler.map((kat) => (
+            <div key={kat.id} style={{
+              border: '0.5px solid #d0e4f5',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              background: '#fafcff',
+            }}>
+              {/* Kategori başlığı */}
+              <div style={{
+                padding: '0.9rem 1.25rem',
+                borderBottom: '0.5px solid #d0e4f5',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                background: '#f0f7ff',
+              }}>
+                <span style={{ fontSize: '18px' }}>{kat.emoji}</span>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a3a6b' }}>{kat.baslik}</div>
+                  <div style={{ fontSize: '11px', color: '#6a8aaa' }}>{kat.aciklama}</div>
                 </div>
-
-                {/* Kusursuz Esneyen Akordiyon İçeriği */}
-                <div 
-                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="p-4 pt-0 flex flex-col gap-3 bg-slate-950 border-t border-slate-800 mt-1">
-                      {cat.items.map((item: any, idx: number) => (
-                        <Link 
-                          key={idx}
-                          href={item.href}
-                          className={`flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl border transition-all mt-2
-                            ${item.isReady 
-                              ? `bg-slate-900 border-slate-800 hover:border-${data.color}-500/50 hover:bg-slate-800 group cursor-pointer shadow-sm` 
-                              : 'bg-transparent border-slate-900 opacity-60 cursor-not-allowed'}
-                          `}
-                        >
-                          <div className="flex items-center gap-3 mb-3 sm:mb-0">
-                            <span className={`w-2 h-2 rounded-full shrink-0 ${item.isReady ? `bg-${data.color}-500 text-${data.color}-500 shadow-[0_0_10px_currentColor] animate-pulse` : 'bg-slate-600'}`}></span>
-                            <span className={`font-black text-xs uppercase tracking-tight ${item.isReady ? `text-slate-200 group-hover:text-white` : 'text-slate-500'}`}>
-                              {item.title}
-                            </span>
-                          </div>
-                          <div className="flex items-center gap-2 pl-5 sm:pl-0 flex-wrap">
-                            {item.badges.map((badge: string, bIdx: number) => {
-                              let badgeStyle = "bg-slate-900 text-slate-400 border-slate-800";
-                              if (badge === 'POPÜLER') badgeStyle = "bg-blue-900/30 text-blue-400 border-blue-500/30";
-                              if (badge === 'ZOR' || badge === 'KOKPİT') badgeStyle = "bg-red-900/30 text-red-400 border-red-500/30";
-                              if (badge === 'HAYAT KURTARICI' || badge === 'İSTİHBARAT') badgeStyle = "bg-yellow-900/30 text-yellow-400 border-yellow-500/30";
-                              if (badge === '3D KART') badgeStyle = "bg-purple-900/30 text-purple-400 border-purple-500/30";
-                              if (badge === 'YENİ') badgeStyle = "bg-emerald-900/30 text-emerald-400 border-emerald-500/30";
-                              
-                              return (
-                                <span 
-                                  key={bIdx} 
-                                  className={`text-[9px] font-black px-2.5 py-1 rounded border tracking-widest uppercase ${badgeStyle}`}
-                                >
-                                  {badge}
-                                </span>
-                              );
-                            })}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            );
-          })}
+
+              {/* Konular */}
+              <div style={{ padding: '0.5rem' }}>
+                {kat.konular.map((konu) => (
+                  <Link
+                    key={konu.id}
+                    href={konu.hazir ? `/${lang}/premium/ydus/${branch}/${konu.id}` : '#'}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '10px 12px',
+                      borderRadius: '8px',
+                      marginBottom: '4px',
+                      background: konu.hazir ? '#fff' : 'transparent',
+                      border: konu.hazir ? '0.5px solid #d0e4f5' : '0.5px solid transparent',
+                      textDecoration: 'none',
+                      opacity: konu.hazir ? 1 : 0.5,
+                      cursor: konu.hazir ? 'pointer' : 'default',
+                      pointerEvents: konu.hazir ? 'auto' : 'none',
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <span style={{
+                        width: '7px',
+                        height: '7px',
+                        borderRadius: '50%',
+                        background: konu.hazir ? veri.meta.renk : '#c0c0c0',
+                        flexShrink: 0,
+                      }} />
+                      <span style={{
+                        fontSize: '13px',
+                        fontWeight: konu.hazir ? 500 : 400,
+                        color: konu.hazir ? '#1a2a3a' : '#8a9aaa',
+                      }}>
+                        {konu.baslik}
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
+                      {konu.rozetler.map((rozet, i) => {
+                        const stil = ROZET_STILLERI[rozet] ?? ROZET_STILLERI['DEFAULT'];
+                        return (
+                          <span key={i} style={{
+                            fontSize: '10px',
+                            fontWeight: 600,
+                            padding: '2px 7px',
+                            borderRadius: '4px',
+                            background: stil.arka,
+                            color: stil.renk,
+                            border: `0.5px solid ${stil.kenar}`,
+                          }}>
+                            {rozet}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ALT NAVİGASYON */}
+        <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '0.5px solid #d0e4f5' }}>
+          <Link href={`/${lang}/premium/ydus`} style={{
+            fontSize: '12px',
+            fontWeight: 500,
+            color: '#1a3a6b',
+            border: '0.5px solid #b8cfe8',
+            borderRadius: '8px',
+            padding: '7px 14px',
+            background: '#f5f9ff',
+            textDecoration: 'none',
+          }}>
+            ← Ana sayfa
+          </Link>
         </div>
 
       </div>

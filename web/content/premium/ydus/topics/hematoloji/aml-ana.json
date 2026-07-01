@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "id": "aml-ana",
+    "branch": "hematoloji",
+    "baslik": "Akut Miyeloid Lösemi (AML)",
+    "altbaslik": "Patogenez, sınıflandırma, genetik, risk stratifikasyonu ve tedavi",
+    "rozetler": ["WHO5 & ICC 2022", "ELN 2022/2024"],
+    "guncelleme": "2025-01"
+  },
+
+  "moduller": {
+    "flashcard": true,
+    "inciler": true,
+    "quiz": true,
+    "vaka": false,
+    "video": true
+  },
+
+  "istatistikler": {
+    "soru": 24,
+    "flashcard": 80,
+    "inci": 7
+  },
+
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "AML, kemik iliğindeki hematopoetik kök veya progenitör hücrelerin malign transformasyonu sonucu ortaya çıkan heterojen ve agresif bir hematolojik malignite grubudur. Klonal genişleme, normal kan hücrelerinin üretimini baskılayarak anemi, enfeksiyonlar ve kanama gibi komplikasyonlara yol açar."
+        },
+        {
+          "metin": "Erişkin akut lösemilerinin yaklaşık %80'ini oluşturur. İnsidans yaşla belirgin biçimde artar; tanı anındaki medyan yaş 65–69 bandındadır."
+        }
+      ]
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "Patogenez — çift vuruş (two-hit) hipotezi",
+      "satirlar": [
+        {
+          "metin": "Lösemogenez, proliferatif avantaj sağlayan Tip 1 mutasyonlar (FLT3-ITD, KRAS, KIT) ile hematopoetik farklılaşmayı bozan Tip 2 mutasyonların (CEBPA, CBF translokasyonları) ardışık birikimi ile açıklanır."
+        },
+        {
+          "metin": "DNMT3A, TET2 ve ASXL1 gibi epigenetik düzenleyici mutasyonlar nispeten erken olaylar olup 'Önemi Belirsiz Klonal Hematopoez' (CHIP) zemininde AML gelişimine zemin hazırlar."
+        },
+        {
+          "metin": "AML hücre havuzu, hastalığın sürdürülmesinden ve nüksünden sorumlu, kendi kendini yenileme potansiyeline sahip küçük bir 'lösemik kök hücre' kompartımanı tarafından idame ettirilir."
+        }
+      ]
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "Klinik prezantasyon",
+      "satirlar": [
+        {
+          "metin": "Hastalar kemik iliği yetmezliğine bağlı semptomlarla başvurur: halsizlik, solukluk, peteşi, purpura, mukozal kanamalar ve dirençli enfeksiyonlar."
+        },
+        {
+          "metin": "Lösemik blastların ekstramedüller invazyonu sonucu miyeloid sarkom (kloroma), lösemi kutis veya gingival hipertrofi izlenebilir."
+        }
+      ]
+    },
+
+    {
+      "tip": "tablo",
+      "baslik": "Onkolojik acil durumlar",
+      "kolonlar": ["Durum", "Mekanizma / Bulgular", "Yönetim"],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": ["Hiperlökositoz / Lökostaz", "Lökosit >100.000/µL → mikrovasküler tıkanma; dispne, hipoksi, şuur bulanıklığı", "Acil lökoferez veya hidroksiüre ile sitoredüksiyon"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["APL Koagülopatisi (DIC)", "Ağır DIC + katastrofik kanama riski", "Genetik sonuç beklenmeden ATRA başla"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["Diferansiyasyon Sendromu", "ATRA/ATO veya FLT3/IDH inhibitörleri → blastların hızla olgunlaşması; ateş, dispne, pulmoner infiltrat", "Yüksek doz deksametazon; gerekirse tedaviyi kes"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["Tümör Lizis Sendromu (TLS)", "Hızlı hücre yıkımı → hiperürisemi, böbrek yetmezliği, hiperkalemi, hipokalsemi", "Yoğun hidrasyon + rasburikaz / allopurinol"]
+        }
+      ]
+    },
+
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "APL şüphesinde genetik sonuçlar beklenmeden ATRA başlanmalıdır. Gecikme katastrofik kanama riski taşır."
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "Tanı — morfoloji ve immünofenotip",
+      "satirlar": [
+        {
+          "metin": "Tanı morfolojik, immünofenotipik ve moleküler verilerin entegrasyonu ile konur. Blast sitoplazmalarında Auer çubuklarının görülmesi AML için patognomoniktir."
+        },
+        {
+          "metin": "Akım sitometride blastlar tipik olarak CD34, HLA-DR, CD117, MPO, CD13 ve CD33 eksprese eder."
+        }
+      ]
+    },
+
+    {
+      "tip": "tablo",
+      "baslik": "Blast eşiği — WHO5 ve ICC 2022 karşılaştırması",
+      "kolonlar": ["Genetik / Durum", "WHO 5. Baskı", "ICC 2022"],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["PML::RARA, t(8;21), inv(16), NPM1 mut", "Blast oranına bakılmaz", "≥%10 blast yeterli"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["BCR::ABL1 / t(9;22) — KML blastik kriz ayrımı", "≥%20 blast şartı KORUNUYOR", "≥%20 blast şartı KORUNUYOR"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["CEBPA mutasyonu", "≥%20 blast şartı KORUNUYOR", "Blast oranına bakılmaz"]
+        },
+        {
+          "hucreler": ["Tanımlayıcı genetik yok, blast %10–19", "MDS kategorisinde değerlendirilir", "MDS/AML (yeni geçiş kategorisi)"]
+        }
+      ]
+    },
+
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "BCR::ABL1 (t(9;22)) pozitif vakalarda AML tanısı için ≥%20 blast şartı hem WHO5 hem ICC 2022'de KESİNLİKLE korunmaktadır. KML blastik krizinden ayırım için bu kural asla esnetilemez."
+    },
+
+    {
+      "tip": "tablo",
+      "baslik": "Temel genetik anormallikler ve prognostik önemi",
+      "kolonlar": ["Genetik / Mutasyon", "Risk", "Klinik Not"],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["t(8;21) / RUNX1::RUNX1T1", "Favorable", "CBF AML; KIT mutasyonu eşlik ederse relaps riski artar"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["inv(16) / CBFB::MYH11", "Favorable", "CBF AML; GO eklenmesi sürveyi uzatır"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["NPM1 mutasyonu (FLT3-ITD negatif)", "Favorable", "En sık mutasyon (%27–35)"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["CEBPA bZIP in-frame mut (monoallelik)", "Favorable", "Artık tek allellik yeterli — biallelik şartı kalktı (ELN 2022)"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["FLT3-ITD veya TKD", "Intermediate/Adverse", "Konstitütif aktivasyon; midostaurin veya quizartinib ile hedeflenir"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["TP53 mutasyonu", "Adverse", "Medyan sağkalım 5–8 ay; ICC 2022'de ayrı kategori"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["Kompleks/monozomal karyotip, -5, -7, inv(3)", "Adverse", "MDS ilişkili mutasyonlar da adverse kabul edilir"]
+        }
+      ]
+    },
+
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "MDS ilişkili adverse mutasyonlar: ASXL1, BCOR, EZH2, SF3B1, SRSF2, STAG2, U2AF1, ZRSR2 ve RUNX1. Bu genlerin herhangi birinde mutasyon → direkt adverse risk."
+    },
+
+    {
+      "tip": "tablo",
+      "baslik": "ELN 2022 risk stratifikasyonu",
+      "kolonlar": ["Risk Grubu", "Tanımlayıcı Özellikler"],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["Favorable (İyi)", "t(8;21), inv(16), izole NPM1 mut (FLT3-ITD negatif), in-frame bZIP CEBPA mut"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["Intermediate (Orta)", "NPM1 mut + FLT3-ITD, NPM1 wild-type + FLT3-ITD, t(9;11) MLLT3::KMT2A"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["Adverse (Kötü)", "TP53 mut, kompleks/monozomal karyotip, t(6;9), inv(3), t(9;22), MDS ilişkili mutasyonlar, -5/-7"]
+        }
+      ]
+    },
+
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "ELN 2024 güncelleme: HMA + Venetoklaks alan unfit hastalarda IDH1 mutasyonu doğrudan Favorable risk kategorisine alınmıştır."
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "Fit hastalarda tedavi",
+      "satirlar": [
+        {
+          "metin": "Tedavi seçimi takvim yaşından ziyade 'Medikal Fitness' (organ fonksiyonu, HCT-CI, ECOG) ile belirlenir."
+        },
+        {
+          "metin": "İndüksiyon: Standart '7+3' rejimi — 7 gün sitarabin + 3 gün antrasiklin (daunorubisin/idarubisin)."
+        },
+        {
+          "metin": "FLT3 mutasyonunda (ITD veya TKD) rejime Midostaurin, yalnızca ITD'de Quizartinib eklenir. CD33+ CBF AML'de Gemtuzumab Ozogamisin (GO) eklenmesi sürveyi uzatır."
+        },
+        {
+          "metin": "Sekonder ve tedavi ilişkili AML'de (t-AML) CPX-351 (sitarabin + daunorubisin lipozomal formülasyonu) tercih edilir."
+        },
+        {
+          "metin": "Konsolidasyon: Favorable riskli grupta HiDAC (Yüksek Doz Sitarabin). Adverse riskli ve transplantasyona uygun Intermediate riskli grupta CR1'de Allo-HCT standarttır."
+        }
+      ]
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "Unfit / ileri yaş hastalarda tedavi",
+      "satirlar": [
+        {
+          "metin": "Yeni altın standart: HMA (Azasitidin veya Desitabin) + BCL-2 inhibitörü Venetoklaks kombinasyonu."
+        },
+        {
+          "metin": "IDH1 mutasyonu saptanan hastalarda Azasitidin + İvosidenib kombinasyonu yüksek remisyon oranları ile ön planda önerilir."
+        }
+      ]
+    },
+
+    {
+      "tip": "metin",
+      "baslik": "İdame ve relaps/refrakter hastalık",
+      "satirlar": [
+        {
+          "metin": "İdame: Allojenik nakle gidemeyen 55 yaş üstü hastalarda Oral Azasitidin (CC-486) OS'yi uzatır (QUAZAR çalışması). FLT3 mutasyonlularda post-transplant FLT3 inhibitörü idamesi devam edilebilir."
+        },
+        {
+          "metin": "Relaps/Refrakter: FLT3 mutasyonunda Gilteritinib; IDH1 mutasyonunda İvosidenib veya Olutasidenib; IDH2 mutasyonunda Enasidenib kurtarma tedavisi olarak standarttır."
+        },
+        {
+          "metin": "Kurtarma tedavisi ile elde edilen remisyon sonrası kür için yegâne seçenek — uygun hastalarda — Allo-HCT'dir."
+        }
+      ]
+    },
+
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Relaps/refrakter AML'de yeniden biyopsi ve moleküler profilleme zorunludur. Klonal evrim nedeniyle başlangıçtaki mutasyon profili değişmiş olabilir."
+    }
+  ]
+}

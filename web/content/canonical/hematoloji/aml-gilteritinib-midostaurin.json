@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "07 Mar 2026",
     "tags": ["Hematoloji", "AML", "FLT3", "Gilteritinib", "Midostaurin", "Tirozin Kinaz İnhibitörleri"],
-    "parent": "aml-gilteritinib-genel",
+    "parent": "gilteritinib-flt3-aml",
     "order": 2,
     "summary": "Akut Miyeloid Lösemi (AML) tedavisinde FLT3 mutasyonlarını hedefleyen Gilteritinib ve Midostaurin'in endikasyon, etki mekanizması, referans çalışmalar ve yan etki profillerinin klinik karşılaştırması."
   },
