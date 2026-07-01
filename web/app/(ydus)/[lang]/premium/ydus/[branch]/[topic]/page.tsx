@@ -264,7 +264,7 @@ const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) =
   flashcard: (l, b, t) => `/${l}/premium/ydus/hizli-tekrar?branch=${b}&id=${t}`,
   inciler:   (l, b, t) => `/${l}/premium/ydus/inciler?branch=${b}&id=${t}`,
   quiz:      (l, b, t) => `/${l}/premium/ydus/quiz-coz?branch=${b}&id=${t}-quiz-1`,
-  vaka:      (l, b, t) => `/${l}/premium/ydus/soru-cozum?branch=${b}&id=case-${t}`,
+  vaka:      (l, b, t) => `/${l}/premium/ydus/vaka-coz?branch=${b}&id=${t}-vaka-1`,
   video:     (l, b, t) => `/${l}/premium/ydus/${b}/${t}/video`,
 };
 
@@ -481,23 +481,51 @@ export default async function KonuSayfasi({
                 }}>
                   İçerik
                 </div>
+                <style>{`.stat-link:hover { background: #eef4fc; }`}</style>
                 {istatistikler.soru !== undefined && (
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '5px 0', borderBottom: '0.5px solid #e8f0f8' }}>
-                    <span style={{ color: '#4a6a8a' }}>Soru</span>
-                    <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.soru || '—'}</span>
-                  </div>
+                  moduller.quiz ? (
+                    <Link href={`/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${topic}-quiz-1`}
+                      className="stat-link"
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
+                      <span style={{ color: '#4a6a8a' }}>📝 Soru</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.soru || '—'}</span>
+                    </Link>
+                  ) : (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 6px', marginBottom: '2px' }}>
+                      <span style={{ color: '#4a6a8a' }}>📝 Soru</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.soru || '—'}</span>
+                    </div>
+                  )
                 )}
                 {istatistikler.flashcard !== undefined && (
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '5px 0', borderBottom: '0.5px solid #e8f0f8' }}>
-                    <span style={{ color: '#4a6a8a' }}>Flashcard</span>
-                    <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.flashcard || '—'}</span>
-                  </div>
+                  moduller.flashcard ? (
+                    <Link href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${topic}`}
+                      className="stat-link"
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
+                      <span style={{ color: '#4a6a8a' }}>🃏 Flashcard</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.flashcard || '—'}</span>
+                    </Link>
+                  ) : (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 6px', marginBottom: '2px' }}>
+                      <span style={{ color: '#4a6a8a' }}>🃏 Flashcard</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.flashcard || '—'}</span>
+                    </div>
+                  )
                 )}
                 {istatistikler.inci !== undefined && (
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '5px 0' }}>
-                    <span style={{ color: '#4a6a8a' }}>İnci</span>
-                    <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.inci || '—'}</span>
-                  </div>
+                  moduller.inciler ? (
+                    <Link href={`/${lang}/premium/ydus/inciler?branch=${branch}&id=${topic}`}
+                      className="stat-link"
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
+                      <span style={{ color: '#4a6a8a' }}>💎 İnci</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.inci || '—'}</span>
+                    </Link>
+                  ) : (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 6px' }}>
+                      <span style={{ color: '#4a6a8a' }}>💎 İnci</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.inci || '—'}</span>
+                    </div>
+                  )
                 )}
               </div>
             )}

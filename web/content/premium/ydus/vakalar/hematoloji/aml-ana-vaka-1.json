@@ -1,0 +1,106 @@
+{
+  "id": "vaka-hem-aml-001",
+  "baslik": "Yorgunluk ve Diş Eti Kanaması: Tanıdan Tedaviye",
+  "branch": "hematoloji",
+  "topic": "aml-ana",
+  "zorluk": "orta",
+  "sure_dk": 12,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "İlk Başvuru",
+      "klinik_bilgi": "68 yaşında kadın hasta, 3 haftadır giderek artan yorgunluk, tekrarlayan diş eti kanaması ve kollarda belirginleşen morarmalar yakınmasıyla polikliniğe başvuruyor. Bilinen hipertansiyon ve tip 2 diyabeti mevcut; bunların dışında öz geçmişi temiz. Sigara ve alkol kullanmıyor.\n\nFizik muayenede: genel durumu orta, soluk görünümlü, afebril. Alt ekstremitede multipl ekimozlar. Dalak ele gelmiyor. Lenfadenopati yok.",
+      "soru": "Bu klinik tabloda tanıya götürecek ilk ve en öncelikli tetkik hangisidir?",
+      "secenekler": {
+        "A": "PT, aPTT, D-dimer (koagülopati taraması)",
+        "B": "Tam kan sayımı + periferik kan yayması",
+        "C": "Kemik iliği biyopsisi",
+        "D": "Vitamin B12, folik asit, demir parametreleri",
+        "E": "Toraks BT (lenfoma dışlanması)"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Pansitopeni şüphesinde klinisyenin ilk refleksi tam kan sayımı + periferik kan yaymasıdır; diğer tüm tetkikler bu sonuca göre yönlendirilir.",
+      "aciklama_detay": "Yorgunluk + kanama diatezi + yaşlı hasta üçlüsü öncelikle hematolojik bir süreci işaret eder. Kemik iliği biyopsisi kesin tanı koydurucu olmakla birlikte, invazif bir işlem olarak ancak periferik kan bulgularının yönlendirmesiyle endike hale gelir. Koagülasyon testleri (A) tamamlayıcıdır; ancak B12/demir (D) ve görüntüleme (E), mevcut tablonun ilk değerlendirmesinde ikincil önceliğe sahiptir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Koagülopati taraması destekleyici bilgi sağlar; ancak tanı koydurucu değil, tamamlayıcı bir adımdır. Hemogram olmadan hangi koagülopatinin söz konusu olduğunu yorumlamak güçtür.",
+        "B": "DOĞRU — Tam kan sayımı pansitopeniyi, trombositopeniyi ve blast varlığını hızla ortaya koyar. Periferik yayma ise morfolojik inceleme ile blastları ve Auer çubuklarını görünür kılar; tüm ileri tetkikler bu bulgulara göre planlanır.",
+        "C": "YANLIŞ — Kemik iliği biyopsisi tanının altın standardıdır; ancak periferik kan bulguları olmadan doğrudan biyopsiye gitmek algoritma dışıdır ve gereksiz invazyon anlamına gelir.",
+        "D": "YANLIŞ — B12 ve demir eksikliği yorgunluk ve anemi yapabilir; ancak kanama diatezi ve ekimozları açıklamaz. Bu tablo beslenme eksikliği ile uyumlu değildir.",
+        "E": "YANLIŞ — Lenfoma için toraks BT erken evrelemede yer alır; ancak henüz hematolojik süreç bile doğrulanmadan görüntülemeye geçmek gereksiz maliyet ve radyasyon anlamına gelir."
+      },
+      "sonraki_bilgi": "Tam kan sayımı sonuçlandı:\nHemoglobin: 6.8 g/dL ↓↓ | Lökosit: 1.600/µL ↓↓ | Trombosit: 18.000/µL ↓↓\n\nPeriferik kan yayması: Tüm serilerde belirgin azalma. Büyük, düzensiz çekirdekli hücreler hâkim; bunların büyük çoğunluğu (%64) blast morfolojisinde. Birden fazla blastta Auer çubuğu (tek tek, dağınık) seçiliyor. Granülosit ve eritroid seriler ciddi biçimde baskılanmış."
+    },
+    {
+      "adim": 2,
+      "baslik": "Hemogram ve Periferik Yayma Yorumu",
+      "klinik_bilgi": "Hemoglobin: 6.8 g/dL | Lökosit: 1.600/µL | Trombosit: 18.000/µL\nPeriferik yayma: %64 blast, Auer çubuğu (+), granülosit ve eritroid seri belirgin baskılanmış.",
+      "soru": "Bu periferik kan tablosu en çok hangi tanı ile uyumludur?",
+      "secenekler": {
+        "A": "Aplastik anemi",
+        "B": "Miyelodisplastik sendrom (MDS) — yüksek risk",
+        "C": "Akut miyeloid lösemi (AML)",
+        "D": "B12 megaloblastik anemisi",
+        "E": "Kronik lenfositik lösemi (KLL) blastik transformasyon"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "%64 blast + Auer çubuğu = AML tanısı. WHO ve ICC 2022 kriterleri gereği periferik kanda ≥20 blast, ya da spesifik sitogenetik/füzyon pozitifliği AML tanısını kurar.",
+      "aciklama_detay": "AML tanımı için blast eşiği WHO 5. baskı ve ICC 2022 kılavuzlarında ≥20 olarak belirlenmiştir (AML'ye özgü genetik anormallikler — örn. t(8;21), inv(16), PML::RARA — varlığında bu eşik aranmaz). Bu hastada %64 blast bu eşiğin çok üzerindedir. Auer çubuğu, granülosit serisine özgü anormal lizozom birikimi olup tek başına AML'yi işaret eden patolognomik bulgudur; hiçbir diğer tanıda Auer çubuğu görülmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Aplastik anemide kemik iliği boş ve hiposellülerdir; periferik yayma blast içermez. Bu hastada %64 blast bulunması aplastik anemi ile bağdaşmaz.",
+        "B": "YANLIŞ — MDS'de displastik hücreler görülür; blast oranı <%20'de kalır (aksi hâlde MDS-EB-2 → AML'ye dönüşüm tanımlanır). %64 blast yüksek riskli MDS sınırlarını çoktan aşmıştır.",
+        "C": "DOĞRU — %64 blast + Auer çubuğu AML'nin morfolojik imzasıdır. Auer çubuğu, olgunlaşmamış miyeloid seri blastlarına özgü anormal granüler yapılar içerir; pratik olarak AML dışında görülmez.",
+        "D": "YANLIŞ — B12 eksikliğinde megaloblastik değişiklikler ve hipersegmente nötrofiller gözlenir; blast artışı ve Auer çubuğu beklenmez. Klinik tablo megaloblastik anemi ile hiç uyumlu değil.",
+        "E": "YANLIŞ — KLL'de küçük, olgun lenfositler periferik kana çıkar. Blastik dönüşüm (Richter sendromu) büyük hücreli lenfoma formunda olmakla birlikte; Auer çubuğu içermez ve mevcut blast morfolojisiyle uyuşmaz."
+      },
+      "sonraki_bilgi": "Kemik iliği aspirasyonu ve biyopsisi yapıldı:\n— Blast oranı: %72 (miyeloid belirteçler: CD33+, CD117+, MPO+)\n— Sitogenetik: Normal karyotip (46,XX)\n— NGS paneli: NPM1 ekzon 12 mutasyonu pozitif; FLT3-ITD negatif; FLT3-TKD negatif; DNMT3A R882H pozitif\n— ELN 2022 risk sınıflandırması: Favorable (İyi Risk)\n\nHastayla görüşüldü. ECOG PS 1. HCT-CI: 1 (kontrollü HT, DM). Kardiyak EF %62, DLCO %88."
+    },
+    {
+      "adim": 3,
+      "baslik": "Tanı Kesinleşti — Tedavi Planı",
+      "klinik_bilgi": "Kemik iliği: %72 blast, CD33+, MPO+\nNGS: NPM1 mut (+), FLT3-ITD (–), FLT3-TKD (–), DNMT3A R882H (+)\nELN 2022: Favorable Risk\nECOG PS 1 | HCT-CI: 1 | EF %62 | DLCO %88",
+      "soru": "Bu fit, favorable riskli NPM1 mutant AML hastası için en uygun indüksiyon stratejisi hangisidir?",
+      "secenekler": {
+        "A": "Azasitidin + Venetoklaks (yaşlı hastada yoğun kemo verilmez)",
+        "B": "7+3 (Sitozin arabinozid 7 gün + İdarubisin 3 gün) standart indüksiyonu",
+        "C": "7+3 + Midostaurin (FLT3 inhibitörü eklenmeli)",
+        "D": "CPX-351 (liposomal sitozin + daunorubisin) indüksiyonu",
+        "E": "ATRA + Arsenik trioksit başlanmalı (NPM1 mutasyonu → APL protokolü)"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ECOG PS 1, HCT-CI 1, EF %62 → hasta fit. FLT3 negatif → midostaurin endikasyonu yok. De novo AML → CPX-351 değil. Favorable risk fit hasta: 7+3 standart indüksiyon.",
+      "aciklama_detay": "Tedavi yoğunluğu kararı: yaş değil organ fonksiyonu ve kırılganlık belirler. Bu hastada ECOG 1, HCT-CI 1, normal kardiyak ve pulmoner fonksiyon → fit → 7+3 standart indüksiyon endikedir. FLT3-ITD/TKD negatif olduğu için midostaurin eklenmesinin kanıtlanmış faydası yoktur (RATIFY çalışması FLT3 pozitif hastalarda yapıldı). CPX-351 sekonder AML veya tedavi ilişkili AML içindir, de novo için değil. APL (ATRA protokolü) ise PML::RARA füzyonu gerektirir; NPM1 mutasyonu APL ile karıştırılmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Ven+Aza 'unfit' veya yoğun kemoterapi tolere edemeyecek hastalar için tasarlanmıştır. Bu hasta 68 yaşında olmakla birlikte organ fonksiyonları tam ve performansı iyi; kroniksel yaş tek başına yoğun kemoterapi kontrendikasyonu değildir.",
+        "B": "DOĞRU — Fit hasta + de novo AML + FLT3 negatif → 7+3 standart indüksiyonu altın standarttır. Favorable risk grubunda 7+3 ile CR oranı %70–80'i aşmakta ve uzun dönem kür beklentisi yüksektir.",
+        "C": "YANLIŞ — Midostaurin FLT3-ITD veya FLT3-TKD pozitif hastalarda 7+3'e eklenir (RATIFY çalışması). Bu hastada her iki FLT3 mutasyonu da negatif; midostaurin eklemek fayda sağlamaz, toksisite riski ekler.",
+        "D": "YANLIŞ — CPX-351, tedavi ilişkili AML (t-AML) veya MDS'den gelişen sekonder AML'de üstünlüğü kanıtlanmış özel bir liposomal formülasyondur. De novo AML'de ilk tercih değildir.",
+        "E": "YANLIŞ — ATRA + ATO APL'nin (PML::RARA) tedavisidir. NPM1 mutasyonu APL'den kökten farklı bir moleküler mekanizma taşır; ATRA bu hastada etki göstermez ve gereksiz toksisite üretir. NPM1 ile APL karıştırmak tehlikeli bir hatadır."
+      },
+      "sonraki_bilgi": "7+3 indüksiyonu tamamlandı (Sitozin arabinozid 100 mg/m² x 7 gün + İdarubisin 12 mg/m² x 3 gün). Tedavinin 28. gününde kemik iliği kontrolü yapıldı:\n— Blast oranı: <%5 (morfolojik tam remisyon — CR1 elde edildi)\n— NPM1 PCR (MRD): hâlâ pozitif (transkript saptanıyor)\n\nHasta şimdi konsolidasyon planlaması aşamasında. CR1 belgelenmiş, ancak PCR ile MRD pozitifliği devam ediyor."
+    },
+    {
+      "adim": 4,
+      "baslik": "CR1 Sonrası — MRD Pozitif, Ne Yapmalı?",
+      "klinik_bilgi": "CR1 elde edildi. Kemik iliği morfolojik olarak temiz (<%5 blast).\nAncak NPM1 PCR-MRD: POZİTİF (transkript hâlâ saptanıyor).\nELN 2022: Favorable Risk | HLA-tam uyumlu kardeş donörü mevcut.",
+      "soru": "Bu aşamada en uygun post-remisyon stratejisi hangisidir?",
+      "secenekler": {
+        "A": "Hemen Allo-HCT — favorable risk bile olsa MRD pozitifliği HCT'yi mutlak endike kılar",
+        "B": "HiDAC konsolidasyonu uygula, MRD izlemini sürdür — negatifleşirse HCT planlamaya gerek kalmaz",
+        "C": "MRD pozitifliği favorable riskli hastada klinik önemi olmayan bir PCR artefaktıdır; ek tedaviye gerek yoktur",
+        "D": "Oral azasitidin (CC-486) idame tedavisi başla — MRD pozitifliği idame endikasyonudur",
+        "E": "Bir kür daha 7+3 indüksiyonu ver — CR derinleştirilmeli, HiDAC'a geçilmemeli"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Favorable risk + CR1 → standart konsolidasyon HiDAC'tır. MRD takibi yapılır; negatifleşirse HCT gerekmeyebilir. MRD ısrar ederse HCT devreye girer.",
+      "aciklama_detay": "ELN 2022'ye göre favorable risk grubunda rutin CR1 Allo-HCT önerilmez; GVHD ve TRM riski beklenen faydayı aşar. Standart yaklaşım: HiDAC konsolidasyonu (3–4 kür) + NPM1 PCR izlemi. CR1 sonrası ilk 2 kür HiDAC sonrasında MRD negatifleşirse uzun dönem sağkalım excellent'tır. MRD ısrar ederse — ki bu hasta zaten post-indüksiyon MRD pozitif — ilerleyen kurlarda negatifleşme beklenir; negatifleşmezse HCT kararı gündeme alınır. Şu an için HiDAC + MRD takibi standarttır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Post-indüksiyon MRD pozitifliği, favorable risk hastada hemen HCT için yeterli endikasyon değildir. Konsolidasyon kürleriyle MRD'nin negatifleşmesi hedeflenir; persistan MRD HCT kararını tetikler ama henüz bu aşamada değiliz.",
+        "B": "DOĞRU — Favorable risk + CR1 = HiDAC konsolidasyonu. NPM1 PCR ile seri MRD takibi yapılır. HiDAC sonrası MRD negatifleşirse HCT zorunlu değildir; MRD ısrar ederse HCT rasyonel hale gelir. Bu aşama için doğru strateji budur.",
+        "C": "YANLIŞ — NPM1 PCR, post-kemoterapi dönemde nüks için güçlü prediktif değer taşır. Özellikle CR1 sonrası erken dönemde saptanan transkript, klonal artığın varlığını gösterir; 'artefakt' yorumu tehlikeli ve yanlıştır.",
+        "D": "YANLIŞ — CC-486 (oral azasitidin) CR1'deki fit genç hastada değil, yoğun kemo sonrası konsolidasyonu tamamlanmış ve HCT adayı olmayan hastalarda idame ajanı olarak kullanılır. Şu an konsolidasyon aşamasındayız; idame kararı çok erken.",
+        "E": "YANLIŞ — 7+3 indüksiyonu CR elde etmek içindir; CR elde edildikten sonra tekrarlanmaz. Konsolidasyon için HiDAC (yüksek doz sitozin arabinozid) kullanılır. İkinci indüksiyona geçmek hem algoritma dışıdır hem de gereksiz toksisite üretir."
+      },
+      "sonraki_bilgi": "Vaka tamamlandı. Hasta 3 kür HiDAC konsolidasyonu aldı. İkinci kür sonrasında NPM1 PCR negatifleşti (MRD negatif). Rutin izleme alındı — Allo-HCT'ye ihtiyaç duyulmadı. 18. ayda hasta hastalıksız, performansı tam."
+    }
+  ]
+}

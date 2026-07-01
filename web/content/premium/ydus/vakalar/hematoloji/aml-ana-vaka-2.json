@@ -1,0 +1,106 @@
+{
+  "id": "vaka-hem-aml-002",
+  "baslik": "Diş Eti Kanaması ve DİK: APL Acil Yönetimi",
+  "branch": "hematoloji",
+  "topic": "aml-ana",
+  "zorluk": "zor",
+  "sure_dk": 14,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "Acil Başvuru",
+      "klinik_bilgi": "29 yaşında kadın hasta, 3 gündür giderek kötüleşen şiddetli diş eti kanaması, burun kanaması ve ciltte yaygın morarmalar yakınmasıyla acile getiriliyor. Son 24 saatte adet kanamasında da belirgin artış mevcut. Bilinen ek hastalığı yok.\n\nFizik muayene: Genel durum orta-kötü, soluk görünüm, aktif burun kanaması, gövde ve ekstremitelerde yaygın peteşi ve ekimozlar.\n\nLab: Hb 8.2 g/dL | WBC 3.800/µL | PLT 11.000/µL\nPT: 23 sn ↑ | aPTT: 58 sn ↑ | Fibrinojen: 0.7 g/L ↓↓ | D-dimer: ++\n\nPeriferik kan yayması: Bol azürofilik granüllü, bilobüler çekirdekli hücreler. Bazı hücrelerde birden fazla Auer çubuğunun demet oluşturduğu faggot cells izleniyor.",
+      "soru": "Bu acil tabloda en öncelikli klinik karar aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "t(15;17) FISH ve akım sitometri sonuçları kesinleşene kadar beklenmeli; tanı doğrulanmadan tedaviye başlanmamalıdır.",
+        "B": "Tablo febril nötropeni ile uyumludur; hemen geniş spektrumlu antibiyotik + antifungal başlanmalıdır.",
+        "C": "Klinik şüphe temelinde ATRA (all-trans retinoik asit) hemen başlanmalı; genetik doğrulama beklenmemelidir.",
+        "D": "DİK'i kontrol altına almak ve hücre yükünü azaltmak amacıyla lökoferez uygulanmalıdır.",
+        "E": "Standart 7+3 indüksiyonu başlanmalıdır; APL de bir AML alt tipidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Faggot cells + DİK + genç hasta = APL şüphesi. ATRA saatlerle yarışır; genetik bekleme ölümcül kanama riskini katlayarak artırır.",
+      "aciklama_detay": "APL (Akut Promyelositik Lösemi), AML alt tipleri içinde tek tıbbi acil olarak kabul edilir. Nedeni: PML::RARA füzyon proteininin tetiklediği prokoagülan aktivasyon, tedavisiz bırakıldığında intrakranyal kanama başta olmak üzere fatal hemorajilere yol açar. ATRA, promyelositlerin diferansiyasyonunu yeniden başlatarak bu prokoagülan süreci kırar. Kılavuzlar, güçlü klinik şüphe (faggot cells + DİK + pansitopeni) varlığında ATRA'nın genetik doğrulama beklenmeksizin başlatılmasını net biçimde önermektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — En tehlikeli seçenek. Genetik sonuç saatler-günler alırken fatal intrakranyal kanama dakikalar içinde gelişebilir. Klinik şüphe yeterliyse tanıyı beklemek APL'de kabul edilemez.",
+        "B": "YANLIŞ — WBC 3.800/µL ile ateş yok; febril nötropeni tanımı karşılanmıyor. Üstelik DİK tablosu enfeksiyonla açıklanamaz; bu tablo APL'nin prokoagülan aktivasyonunu yansıtıyor.",
+        "C": "DOĞRU — Faggot cells + DİK + genç hasta üçlüsü APL için klinisyenin refleks ATRA başlamasını gerektiren tablodur. ELN ve NCCN kılavuzları bu öneriyi net biçimde destekler.",
+        "D": "YANLIŞ — Lökoferez APL'de kesinlikle kontrendikedir. Zaten DİK zemininde yapılacak bir lökoferez, trombotik ve hemorajik komplikasyon riskini dramatik biçimde artırır. Ayrıca WBC 3.800/µL — hiperlökositoz yok.",
+        "E": "YANLIŞ — APL'de 7+3 standart indüksiyon değildir. APL'nin tedavisi ATRA + ATO (veya yüksek riskli olgularda antrasiklindir); sitozin arabinozid bazlı 7+3 bu alt tipte gereksiz toksisite üretir ve etkinliği düşüktür."
+      },
+      "sonraki_bilgi": "ATRA başlandı. Ertesi gün genetik sonuçlar geldi:\nt(15;17)/PML::RARA pozitif ✓ — APL tanısı teyit edildi.\nCD33 pozitif. WBC başvuruda 3.800/µL iken bugün 4.200/µL.\n\nSellow kriterleri: WBC <10.000/µL → Düşük/Orta risk APL."
+    },
+    {
+      "adim": 2,
+      "baslik": "APL Teyit Edildi — Risk Sınıflaması ve Tedavi Seçimi",
+      "klinik_bilgi": "t(15;17)/PML::RARA pozitif, CD33+, APL tanısı doğrulandı.\nWBC: 4.200/µL (başvuru 3.800 → düşük/orta risk)\nPLT: 11.000/µL | Fibrinojen düzelmeye başladı: 1.1 g/L\nATRA 4. gün, hasta hemodinamik olarak stabil.",
+      "soru": "Düşük/orta riskli bu APL hastası için kılavuzların önerdiği optimal indüksiyon rejimi hangisidir?",
+      "secenekler": {
+        "A": "ATRA + standart kemoterapi (7+3 — sitozin arabinozid + daunorubisin)",
+        "B": "ATRA + Arsenik Trioksit (ATO) — kemoterapi olmaksızın",
+        "C": "ATRA tek başına yeterlidir; ATO eklenmesi toksisiteyi artırır",
+        "D": "ATO tek başına; ATRA yan etki riski nedeniyle kesilmelidir",
+        "E": "Hemen Allo-HCT planlanmalıdır; APL'de CR1'de nakil standarttır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Düşük/orta riskli APL'de ATRA + ATO kombinasyonu, kemoterapi olmaksızın %90+ kür sağlar. Lo-Coco 2013 (NEJM) paradigmayı değiştirdi.",
+      "aciklama_detay": "2013'te yayımlanan Lo-Coco çalışması (AIDA-0493/0499), düşük/orta riskli APL'de ATRA + ATO kombinasyonunun standart ATRA + kemoterapiye göre daha iyi OS ve daha az toksisite sağladığını gösterdi. Bu bulgular hematoloji pratiğinde paradigma değişikliği yarattı: WBC <10.000/µL olan APL hastalarında artık kemoterapisiz ATRA + ATO standart tedavidir. Kür oranı %90'ın üzerindedir. Bu hasta için ATRA + ATO optimal seçimdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Standart kemoterapi (7+3) artık düşük/orta riskli APL'de birinci tercih değildir. ATRA + ATO, hem etkinlik hem de toksisite profili açısından kemoterapiye göre üstün bulunmuştur.",
+        "B": "DOĞRU — Lo-Coco 2013 çalışması (NEJM), ATRA + ATO kombinasyonunun düşük/orta riskli APL'de kemoterapisiz >%90 kür sağladığını kanıtladı. Bu kılavuzların birinci öneridir.",
+        "C": "YANLIŞ — ATRA monoterapisi relaps riskini belirgin artırır. ATO hem sinerjistik diferansiyasyon etkisi yapar hem de APL klonunun eradikasyonuna katkıda bulunur; eklenmesi toksisite değil, kür sağlar.",
+        "D": "YANLIŞ — ATO monoterapisi etkindir; ancak ATRA + ATO kombinasyonu sinerjistik etki nedeniyle monoterapiden üstündür. ATRA kesilmesi için klinik bir neden (örn. diferansiyasyon sendromu) olmadıkça kesilmez.",
+        "E": "YANLIŞ — APL, kemoterapi ile kürü mümkün olan yüksek yanıtlı bir alt tiptir; CR1'de rutin Allo-HCT önerilmez. Nakil yalnızca relaps veya refrakter olgular için düşünülür."
+      },
+      "sonraki_bilgi": "ATRA + ATO kombinasyonu başlandı. Tedavinin 11. gününde hasta polikliniğe ateş (38.6°C), artan nefes darlığı ve her iki bacakta belirgin ödem yakınmasıyla başvurdu. WBC 3.800'den 17.400/µL'ye yükselmiş. Akciğer grafisinde bilateral infiltratlar izleniyor. Prokalsitonin: 0.4 ng/mL (hafif yüksek). Kan kültürleri alındı."
+    },
+    {
+      "adim": 3,
+      "baslik": "11. Gün Komplikasyonu",
+      "klinik_bilgi": "ATRA + ATO 11. gün.\nAteş 38.6°C | WBC: 17.400/µL (↑↑, başlangıç 3.800)\nBilateral akciğer infiltratları | Alt ekstremite ödemi\nProkalsitonin: 0.4 ng/mL | Kan kültürleri bekleniyor\nSolunum sayısı: 24/dk | SpO₂: %93 (oda havası)",
+      "soru": "Bu tabloda en uygun klinik yönetim aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "ATRA ve ATO kalıcı olarak kesilmeli, derhal yoğun kemoterapi başlanmalıdır.",
+        "B": "Tablo ağır pnömoni ile uyumludur; geniş spektrumlu antibiyotik başla, ATRA/ATO'ya devam et.",
+        "C": "Diferansiyasyon sendromu (DS) düşünülerek deksametazon hemen başlanmalı; ATRA/ATO geçici olarak kesilmeli, enfeksiyon paralelde dışlanmalıdır.",
+        "D": "WBC yükseldiğinden lökoferez yapılmalı; DS'de hücre yükünü hızla düşürmek gerekir.",
+        "E": "Tablo panik gerektirmez; hasta izleme alınmalı, 24 saat beklenmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "ATRA + ATO altında WBC artışı + pulmoner infiltrat + ödem = Diferansiyasyon Sendromu. Deksametazon derhal; ATRA/ATO geçici kes; enfeksiyonu paralelde dışla.",
+      "aciklama_detay": "Diferansiyasyon Sendromu (DS), ATRA ve/veya ATO ile APL blastlarının hızla olgunlaşmasına bağlı sitokin salınımı ve kapiller kaçak ile karakterizedir. Tanı kriterleri: ≥2 bulgu — ateş, pulmoner infiltrat, plevral/perikardiyal efüzyon, hipotansiyon, böbrek yetmezliği, kilo artışı/ödem ve açıklanamayan WBC artışı. Bu hastada 5 kriter mevcut. Yönetim: (1) Deksametazon 10 mg IV günde iki kez hemen başla; (2) ATRA ve ATO geçici olarak kes; (3) tablonun 48 saat içinde belirgin düzelmesi beklenir; düzelirse ilaçlar yeniden başlanır; (4) Enfeksiyon DS ile birlikte olabilir — paralelde değerlendir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — DS, ilaçların kalıcı kesilmesi için endikasyon değildir. Geçici kesilme + deksametazon ile tablo genellikle hızla düzelir ve tedaviye devam edilebilir. Kalıcı kesme ve acele kemoterapi DS yönetiminde yeri yoktur.",
+        "B": "YANLIŞ — Prokalsitonin hafif yüksek ve kültürler negatif; ağır pnömoni tanısı bu tabloda yetersiz kanıta dayanır. Sadece antibiyotik vermek DS'ye özgü müdahaleyi (deksametazon) geciktirir ve solunum yetmezliğine zemin hazırlar.",
+        "C": "DOĞRU — Ateş + WBC artışı + bilateral infiltrat + ödem → DS kriterleri karşılanıyor. Deksametazon hemen başlanmalı, ATRA/ATO geçici kesilmeli, enfeksiyon paralelde dışlanmalıdır. 48 saatte düzelme olursa tedaviye devam edilir.",
+        "D": "YANLIŞ — Lökoferez APL'de kontrendikedir ve DS yönetiminde yeri yoktur. WBC 17.400/µL hiperlökositoz eşiğinin çok altındadır; WBC artışının nedeni diferansiyasyona bağlı olgunlaşmadır.",
+        "E": "YANLIŞ — SpO₂ %93 ve solunum sıkıntısı mevcut; bu aktif bir klinik acildir. Bekleme solunum yetmezliğinin ilerlemesine ve fatal seyre yol açabilir."
+      },
+      "sonraki_bilgi": "Deksametazon başlandı. ATRA + ATO geçici olarak kesildi. 36 saat içinde hasta dramatik biçimde düzeldi: ateş geriledi, SpO₂ %98'e çıktı, infiltratlar belirgin azaldı. Kültürler negatif geldi. Deksametazon 15 günlük kür tamamlandıktan sonra ATRA + ATO yeniden başlandı; hasta toleransı iyi.\n\nİndüksiyon + 2 konsolidasyon küründen sonra kemik iliği: blast yok, PML::RARA PCR: NEGATİF (moleküler tam remisyon)."
+    },
+    {
+      "adim": 4,
+      "baslik": "Moleküler Remisyon Elde Edildi — Sonraki Adım?",
+      "klinik_bilgi": "ATRA + ATO indüksiyon + 2 konsolidasyon küründen sonra:\nKemik iliği morfolojisi: Blast yok ✓\nPML::RARA PCR: NEGATİF ✓ (moleküler tam remisyon)\n\nHasta 29 yaşında, genel durumu mükemmel, ECOG PS 0.\nHLA-tam uyumlu kardeş donörü mevcut.",
+      "soru": "Bu düşük/orta riskli APL hastasında moleküler tam remisyon sonrası en uygun strateji hangisidir?",
+      "secenekler": {
+        "A": "Allo-HCT planlanmalıdır; APL'de CR1'de nakil standarttır ve kür için zorunludur.",
+        "B": "Otolog kök hücre nakli yapılmalıdır; moleküler remisyon donörden bağımsız kürü mümkün kılar.",
+        "C": "ATRA + ATO ile idame tedavisi ve seri PCR izlemi; Allo-HCT planlanmaz.",
+        "D": "Konsolidasyona ek yoğun kemoterapi kürleri verilmeli, ardından HCT değerlendirilmelidir.",
+        "E": "Moleküler remisyon sağlandığı için hiçbir tedavi gerekmez; hasta taburcu edilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Düşük/orta riskli APL + moleküler remisyon = Allo-HCT yok. ATRA + ATO ile >%90 kür; nakil yalnızca relaps için düşünülür.",
+      "aciklama_detay": "APL, hematolojik maligniteler içinde en yüksek kür oranına sahip alt tiptir; düşük/orta riskli olgularda ATRA + ATO ile kür %90'ın üzerindedir. Moleküler remisyon elde edilmesi — PML::RARA PCR negatifliği — uzun dönem hastalıksız sağkalımın güçlü prediktörüdür. Bu tabloda Allo-HCT'nin potansiyel GVHD ve TRM riski, sağlanacak faydayı çoktan aşar. Standart yaklaşım: tamamlanan konsolidasyon ardından idame (ATRA ± ATO ± 6-merkaptopürin) ve seri PCR takibi. Nakil ancak relaps ya da moleküler relaps varlığında gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — APL'de CR1 Allo-HCT için endikasyon değildir. Yüksek kür oranları nedeniyle nakil riski fayda dengesini geçmektedir; kılavuzlar CR1'de rutin HCT önermez.",
+        "B": "YANLIŞ — Otolog HCT de CR1'de önerilmez. Ayrıca otolog nakil sadece PCR-negatif apheresis ürünü toplanabildiğinde ve yalnızca relaps vakalarında gündemdedir.",
+        "C": "DOĞRU — Moleküler remisyon + düşük/orta risk = ATRA + ATO ile idame ve seri PCR izlemi. Allo-HCT planlanmaz. Bu hasta >%90 ihtimalle hastalıksız yaşayacak.",
+        "D": "YANLIŞ — Ek yoğun kemoterapi gereksiz toksisite üretir ve sağ kalıma katkısı kanıtlanmamıştır. Moleküler remisyona ulaşmış hastada kemoterapiyi artırmak için endikasyon yoktur.",
+        "E": "YANLIŞ — Moleküler remisyon kalıcı değildir; PCR ile izlem şarttır. Sessiz moleküler relaps erken tespit edilmezse klinik relaps kaçınılmazdır. Takipsiz bırakmak ciddi bir hatadır."
+      },
+      "sonraki_bilgi": "Hasta ATRA + ATO ile idame tedavisine alındı. Seri PML::RARA PCR takibi planlandı. 3 yıllık izlemde PCR negatif, hasta hastalıksız ve aktif iş hayatında. APL; doğru tanı ve zamanında ATRA ile %90+ kür sağlanan, hematolojinin en başarılı hikayelerinden biridir."
+    }
+  ]
+}
