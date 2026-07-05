@@ -162,9 +162,17 @@ export default async function TopicDetailPage({
               )}
             </div>
 
-            {/* İçerik Editörü */}
-            <div className="bg-white rounded-[2.5rem] shadow-xl border border-slate-100 overflow-hidden min-h-[500px]">
-              <InlineTopicEditor item={topicItem} />
+            {/* İçerik Editörü (Yönetici Paneli) — okuyucu içeriğinden görsel olarak ayrıştırılmıştır */}
+            <div className="pt-4 mt-4 border-t-2 border-dashed border-slate-200">
+              <div className="flex items-center gap-2 mb-3 px-2">
+                <span className="w-2 h-2 rounded-full bg-slate-300"></span>
+                <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.25em]">
+                  Yönetici Paneli · Bu bölüm ziyaretçilere görünmez varsayılmalıdır
+                </span>
+              </div>
+              <div className="bg-slate-50 rounded-[2.5rem] shadow-inner border border-slate-200 overflow-hidden min-h-[500px]">
+                <InlineTopicEditor item={topicItem} />
+              </div>
             </div>
           </div>
 

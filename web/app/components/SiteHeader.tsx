@@ -83,7 +83,7 @@ export default function SiteHeader() {
         </Link>
 
         {/* BRANŞ LİNKLERİ (Sadece çok geniş ekranda) */}
-        <nav className="hidden 2xl:flex items-center gap-5 overflow-x-auto no-scrollbar mask-edges flex-shrink-0">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-5 overflow-x-auto no-scrollbar mask-edges flex-shrink-0">
           {branches.map((branch) => (
             <Link
               key={branch.slug}

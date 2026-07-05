@@ -26,11 +26,12 @@ const SPECIALTIES = [
   },
   {
     title: "LİTERATÜR & JOURNAL CLUB",
-    icon: "📰", 
-    description: "En güncel Faz 3 çalışmaları ve literatür özetleri",
-    slug: "/journal-club", // Senin sistemin muhtemelen bu href'i klasör adıyla eşleştiriyor
-    color: "text-blue-700",
-    bgHover: "hover:bg-blue-50"
+    icon: "📰",
+    desc: "En güncel Faz 3 çalışmaları ve literatür özetleri",
+    slug: "journal-club",
+    color: "hover:border-blue-500 hover:shadow-blue-100",
+    bg: "bg-blue-50",
+    text: "text-blue-600",
 },
   {
     title: "Endokrinoloji",
@@ -107,11 +108,11 @@ const SPECIALTIES = [
   {
     title: "Palyatif",
     slug: "palyatif",
-    icon: "🕊️", // Veya 🪷, 🤝 gibi huzur/destek belirten bir ikon
-    description: "Ağrı yönetimi, semptom kontrolü, yaşam sonu bakımı",
-    href: "/topics/palyatif",
-    color: "text-teal-600", // Temana uygun bir renk
-    bgHover: "hover:bg-teal-50"
+    icon: "🕊️",
+    desc: "Ağrı yönetimi, semptom kontrolü, yaşam sonu bakımı",
+    color: "hover:border-teal-500 hover:shadow-teal-100",
+    bg: "bg-teal-50",
+    text: "text-teal-600",
  },
  {
     "title": "Genel Dahiliye",
@@ -141,8 +142,8 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <div className="mb-8 flex flex-wrap justify-center gap-4">
-            <span className="rounded-full bg-blue-900 text-white px-4 py-1 text-[10px] font-black uppercase tracking-widest shadow-lg">
-              MediSea v1.0 🚀
+            <span className="rounded-full bg-blue-50 text-blue-900 border border-blue-100 px-4 py-1 text-[10px] font-black uppercase tracking-widest">
+              Beta
             </span>
             <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-4 py-1 text-[10px] font-black uppercase tracking-widest hover:bg-yellow-500 transition-all shadow-md">
               Premium YDUS ⚓
@@ -174,7 +175,7 @@ export default function Home() {
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Uzmanlık Düzeyinde Güncel Anlatımlar</p>
           </div>
           <p className="text-slate-400 text-xs font-bold uppercase max-w-xs text-right hidden md:block">
-            Hekimlere yönelik eğitsel bilgi içerir -TEST YAYINI
+            Hekimlere yönelik eğitsel bilgi içerir
           </p>
         </div>
         
