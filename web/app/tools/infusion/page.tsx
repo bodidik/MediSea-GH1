@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * İnfüzyon Hesapları Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -16,17 +17,17 @@ export default function InfusionPage() {
   // 1) mL/saat ↔ gtt/dk
   const [rateMlHr, setRateMlHr] = React.useState<string>("0");
   const [dropFactor, setDropFactor] = React.useState<string>("20");
-  const rateMlHrNum = parseFloat(rateMlHr) || 0;
-  const dropFactorNum = parseFloat(dropFactor) || 0;
+  const rateMlHrNum = parseLocaleNumber(rateMlHr);
+  const dropFactorNum = parseLocaleNumber(dropFactor);
   const gttPerMin = React.useMemo(() => round((rateMlHrNum * dropFactorNum) / 60, 1), [rateMlHrNum, dropFactorNum]);
 
   // 2) Doz (mg/kg/dk) ↔ mL/saat
   const [weightKg, setWeightKg] = React.useState<string>("70");
   const [doseMgKgMin, setDoseMgKgMin] = React.useState<string>("0");
   const [concentrationMgMl, setConcentrationMgMl] = React.useState<string>("1");
-  const weightKgNum = parseFloat(weightKg) || 0;
-  const doseMgKgMinNum = parseFloat(doseMgKgMin) || 0;
-  const concentrationMgMlNum = parseFloat(concentrationMgMl) || 0;
+  const weightKgNum = parseLocaleNumber(weightKg);
+  const doseMgKgMinNum = parseLocaleNumber(doseMgKgMin);
+  const concentrationMgMlNum = parseLocaleNumber(concentrationMgMl);
 
   const mlPerHrFromDose = React.useMemo(() => {
     const mgPerMin = doseMgKgMinNum * weightKgNum;
@@ -64,18 +65,18 @@ export default function InfusionPage() {
             <div className="space-y-4">
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Hız (mL/saat)</span>
-                <input 
-                  type="number" 
-                  value={rateMlHr} 
+                <input
+                  type="text" inputMode="decimal"
+                  value={rateMlHr}
                   onChange={e => setRateMlHr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold"
                 />
               </label>
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Set Faktörü (gtt/mL)</span>
-                <input 
-                  type="number" 
-                  value={dropFactor} 
+                <input
+                  type="text" inputMode="decimal"
+                  value={dropFactor}
                   onChange={e => setDropFactor(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold"
                 />
@@ -101,21 +102,21 @@ export default function InfusionPage() {
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Vücut Ağırlığı (kg)</span>
               <input 
-                type="number" value={weightKg} onChange={e => setWeightKg(e.target.value)}
+                type="text" inputMode="decimal" value={weightKg} onChange={e => setWeightKg(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Hedef Doz (mg/kg/dk)</span>
               <input 
-                type="number" value={doseMgKgMin} onChange={e => setDoseMgKgMin(e.target.value)}
+                type="text" inputMode="decimal" value={doseMgKgMin} onChange={e => setDoseMgKgMin(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Konsantrasyon (mg/mL)</span>
               <input 
-                type="number" value={concentrationMgMl} onChange={e => setConcentrationMgMl(e.target.value)}
+                type="text" inputMode="decimal" value={concentrationMgMl} onChange={e => setConcentrationMgMl(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>

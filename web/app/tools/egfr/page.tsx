@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { egfrCkdEpi2021, Sex } from "@/app/tools/lib/calc-utils";
+import { egfrCkdEpi2021, Sex, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * eGFR (CKD-EPI 2021) Gündüz Modu (Sakin Deniz)
  * Race-Free (Irk Faktörü İçermeyen) Modern Standart
@@ -15,8 +15,8 @@ export default function EgfrPage() {
   const [age, setAge] = useState<string>("45");
   const [sex, setSex] = useState<Sex>("male");
 
-  const scrNum = parseFloat(scr) || 0;
-  const ageNum = parseInt(age, 10) || 0;
+  const scrNum = parseLocaleNumber(scr);
+  const ageNum = Math.round(parseLocaleNumber(age));
 
   // lib içindeki o meşhur race-free formülü çağırıyoruz
   const result = useMemo(() => egfrCkdEpi2021(scrNum, ageNum, sex), [scrNum, ageNum, sex]);
@@ -56,14 +56,14 @@ export default function EgfrPage() {
           <label className="flex flex-col gap-2">
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Serum Kreatinin (mg/dL)</span>
             <input
-              type="number" step="0.1" value={scr} onChange={(e) => setScr(e.target.value)}
+              type="text" inputMode="decimal" value={scr} onChange={(e) => setScr(e.target.value)}
               className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all"
             />
           </label>
           <label className="flex flex-col gap-2">
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Yaş</span>
             <input
-              type="number" value={age} onChange={(e) => setAge(e.target.value)}
+              type="text" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value)}
               className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all"
             />
           </label>

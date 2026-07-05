@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * SOFA (Sequential Organ Failure Assessment) Gündüz Modu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -26,14 +27,14 @@ export default function SOFAPage() {
   const [cr, setCr] = React.useState<string>(s?.get("cr") || "1.0");
   const [urine, setUrine] = React.useState<string>(s?.get("ur") || "1000");
 
-  const pfNum = parseFloat(pf) || 0;
-  const pltNum = parseFloat(plt) || 0;
-  const biliNum = parseFloat(bili) || 0;
-  const mapNum = parseFloat(map) || 0;
-  const doseNum = parseFloat(dose) || 0;
-  const gcsNum = parseFloat(gcs) || 0;
-  const crNum = parseFloat(cr) || 0;
-  const urineNum = parseFloat(urine) || 0;
+  const pfNum = parseLocaleNumber(pf);
+  const pltNum = parseLocaleNumber(plt);
+  const biliNum = parseLocaleNumber(bili);
+  const mapNum = parseLocaleNumber(map);
+  const doseNum = parseLocaleNumber(dose);
+  const gcsNum = parseLocaleNumber(gcs);
+  const crNum = parseLocaleNumber(cr);
+  const urineNum = parseLocaleNumber(urine);
 
   // --- SKORLAMA MANTIKLARI (SENTEZ) ---
   const scoreResp = () => {
@@ -124,7 +125,7 @@ export default function SOFAPage() {
             <div className="space-y-3">
               <label className="flex flex-col gap-1">
                 <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">PaO₂ / FiO₂ Oranı</span>
-                <input type="number" value={pf} onChange={e=>setPf(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
+                <input type="text" inputMode="decimal" value={pf} onChange={e=>setPf(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
               </label>
               <label className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer">
                 <input type="checkbox" checked={respSupport} onChange={()=>setRespSupport(!respSupport)} className="w-4 h-4 rounded border-slate-300 text-blue-900" />
@@ -142,7 +143,7 @@ export default function SOFAPage() {
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
                 <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">MAP (mmHg)</span>
-                <input type="number" value={map} onChange={e=>setMap(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
+                <input type="text" inputMode="decimal" value={map} onChange={e=>setMap(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
               </label>
               <label className="flex flex-col gap-1">
                 <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">Vazopresör</span>
@@ -157,7 +158,7 @@ export default function SOFAPage() {
               {pressor !== "none" && (
                 <label className="flex flex-col gap-1 col-span-2">
                   <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">Doz (µg/kg/dk)</span>
-                  <input type="number" step="0.01" value={dose} onChange={e=>setDose(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold border-amber-400 outline-none" />
+                  <input type="text" inputMode="decimal" value={dose} onChange={e=>setDose(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold border-amber-400 outline-none" />
                 </label>
               )}
             </div>
@@ -172,11 +173,11 @@ export default function SOFAPage() {
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
                 <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">Kreatinin (mg/dL)</span>
-                <input type="number" step="0.1" value={cr} onChange={e=>setCr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
+                <input type="text" inputMode="decimal" value={cr} onChange={e=>setCr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
               </label>
               <label className="flex flex-col gap-1">
                 <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">İdrar (mL/gün)</span>
-                <input type="number" value={urine} onChange={e=>setUrine(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
+                <input type="text" inputMode="decimal" value={urine} onChange={e=>setUrine(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold focus:border-blue-900 outline-none" />
               </label>
             </div>
           </section>
@@ -190,15 +191,15 @@ export default function SOFAPage() {
             <div className="space-y-3">
               <label className="flex items-center justify-between gap-4">
                 <span className="text-[9px] font-bold text-slate-500 uppercase">GKS (3-15):</span>
-                <input type="number" value={gcs} onChange={e=>setGcs(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
+                <input type="text" inputMode="decimal" value={gcs} onChange={e=>setGcs(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
               </label>
               <label className="flex items-center justify-between gap-4">
                 <span className="text-[9px] font-bold text-slate-500 uppercase">Trombosit (10³/µL):</span>
-                <input type="number" value={plt} onChange={e=>setPlt(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
+                <input type="text" inputMode="decimal" value={plt} onChange={e=>setPlt(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
               </label>
               <label className="flex items-center justify-between gap-4">
                 <span className="text-[9px] font-bold text-slate-500 uppercase">Bilirubin (mg/dL):</span>
-                <input type="number" step="0.1" value={bili} onChange={e=>setBili(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
+                <input type="text" inputMode="decimal" value={bili} onChange={e=>setBili(e.target.value)} className="w-24 bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-bold" />
               </label>
             </div>
           </section>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 // 🚀 Fonksiyonları geçici isimlerle alıyoruz
-import { mgdlToMmol as _mgdlToMmol, mmolToMgdl as _mmolToMgdl } from "@/app/tools/lib/calc-utils";
+import { mgdlToMmol as _mgdlToMmol, mmolToMgdl as _mmolToMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 // 🛡️ BÜTÜN DOSYAYI KURTARAN ZIRH: Fonksiyonları as any yaparak parametre kontrollerini tamamen esnetiyoruz
 const mgdlToMmol = _mgdlToMmol as any;
@@ -31,23 +31,22 @@ export default function UnitConverterPage() {
   const [mgdlValue, setMgdlValue] = useState<string>("100");
   const [mmolValue, setMmolValue] = useState<string>("");
 
-  // mg/dL değişince mmol/L hesapla
+  // mg/dL değişince mmol/L hesapla (hem nokta hem virgül ondalık ayracı kabul edilir)
   useEffect(() => {
-    const val = parseFloat(mgdlValue);
-    if (!isNaN(val)) {
-      setMmolValue(mgdlToMmol(val, selectedUnit).toString());
-    } else {
+    if (mgdlValue.trim() === "") {
       setMmolValue("");
+      return;
     }
+    const val = parseLocaleNumber(mgdlValue);
+    setMmolValue(mgdlToMmol(val, selectedUnit).toString());
   }, [mgdlValue, selectedUnit]);
 
   // Manuel mmol/L girişi için ters çeviri
   const handleMmolChange = (val: string) => {
     setMmolValue(val);
-    const parsed = parseFloat(val);
-    if (!isNaN(parsed)) {
-      setMgdlValue(mmolToMgdl(parsed, selectedUnit).toString());
-    }
+    if (val.trim() === "") return;
+    const parsed = parseLocaleNumber(val);
+    setMgdlValue(mmolToMgdl(parsed, selectedUnit).toString());
   };
 
   return (
@@ -93,8 +92,8 @@ export default function UnitConverterPage() {
             <div className="space-y-4 text-center md:text-left">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">GELENEKSEL BİRİM</span>
               <div className="relative">
-                <input 
-                  type="number" 
+                <input
+                  type="text" inputMode="decimal"
                   value={mgdlValue}
                   onChange={(e) => setMgdlValue(e.target.value)}
                   className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-5xl font-black text-blue-900 p-4 focus:border-amber-400 outline-none transition-all text-center md:text-left rounded-t-2xl"
@@ -114,8 +113,8 @@ export default function UnitConverterPage() {
             <div className="space-y-4 text-center md:text-left">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.2em] block text-center md:text-right">SI BİRİMİ</span>
               <div className="relative">
-                <input 
-                  type="number" 
+                <input
+                  type="text" inputMode="decimal"
                   value={mmolValue}
                   onChange={(e) => handleMmolChange(e.target.value)}
                   className="w-full bg-blue-900 border-b-4 border-amber-400 text-5xl font-black text-white p-4 focus:border-white outline-none transition-all text-center md:text-right rounded-t-2xl shadow-xl"

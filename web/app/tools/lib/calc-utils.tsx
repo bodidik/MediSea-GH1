@@ -3,6 +3,21 @@
 export type Sex = "male" | "female";
 
 /**
+ * 0. Kullanıcı girdisini güvenli şekilde sayıya çevirir.
+ * Hem nokta (8.5) hem virgül (8,5 - TR klavye alışkanlığı) ondalık ayracını kabul eder.
+ * NOT: Bu proje genelinde sayısal <input>'lar type="text" + inputMode="decimal"
+ * olarak tutulur; type="number" KULLANILMAZ çünkü tarayıcılar "8," veya "8." gibi
+ * geçici/yarım girdilerde e.target.value'yu boş string'e çevirip alanı siliyor.
+ */
+export function parseLocaleNumber(input: string | number | undefined | null): number {
+  if (typeof input === "number") return isNaN(input) ? 0 : input;
+  if (!input) return 0;
+  const normalized = String(input).replace(",", ".").trim();
+  const n = parseFloat(normalized);
+  return isNaN(n) ? 0 : n;
+}
+
+/**
  * 1. eGFR (CKD-EPI 2021) Hesaplayıcı - Race-Free Standartı
  */
 export function egfrCkdEpi2021(scr: number, age: number, sex: Sex): number {

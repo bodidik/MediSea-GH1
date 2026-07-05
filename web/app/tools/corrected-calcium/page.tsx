@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { correctedCalciumMgdl } from "@/app/tools/lib/calc-utils";
+import { correctedCalciumMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * Düzeltilmiş Kalsiyum (Payne Formülü) Gündüz Modu
  * Formül: Measured Ca + 0.8 * (4.0 - Albumin)
@@ -14,8 +14,8 @@ export default function CorrectedCalciumPage() {
   const [ca, setCa] = useState<string>("8.5");
   const [alb, setAlb] = useState<string>("4.0");
 
-  const caNum = parseFloat(ca) || 0;
-  const albNum = parseFloat(alb) || 0;
+  const caNum = parseLocaleNumber(ca);
+  const albNum = parseLocaleNumber(alb);
 
   // lib içindeki formülü kullanıyoruz
   const result = useMemo(() => correctedCalciumMgdl(caNum, albNum), [caNum, albNum]);
@@ -45,14 +45,14 @@ export default function CorrectedCalciumPage() {
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Ölçülen Kalsiyum (mg/dL)</span>
             <input
-              type="number" step="0.1" value={ca} onChange={(e) => setCa(e.target.value)}
+              type="text" inputMode="decimal" value={ca} onChange={(e) => setCa(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Albumin (g/dL)</span>
             <input
-              type="number" step="0.1" value={alb} onChange={(e) => setAlb(e.target.value)}
+              type="text" inputMode="decimal" value={alb} onChange={(e) => setAlb(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>

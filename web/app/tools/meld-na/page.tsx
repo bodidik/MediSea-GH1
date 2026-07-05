@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * MELD-Na (2016) Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -23,10 +24,10 @@ export default function MeldNaPage() {
   const [onDialysis, setOnDialysis] = React.useState<boolean>(s?.get("dial") === "1");
   const [capCreat4, setCapCreat4] = React.useState<boolean>(s?.get("cap") === "1");
 
-  const crNum = parseFloat(cr) || 0;
-  const tbNum = parseFloat(tb) || 0;
-  const inrNum = parseFloat(inr) || 0;
-  const naNum = parseFloat(na) || 0;
+  const crNum = parseLocaleNumber(cr);
+  const tbNum = parseLocaleNumber(tb);
+  const inrNum = parseLocaleNumber(inr);
+  const naNum = parseLocaleNumber(na);
 
   const naAdj = clamp(naNum, 125, 137);
   let crUsed = onDialysis ? 4.0 : crNum;
@@ -68,7 +69,7 @@ export default function MeldNaPage() {
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Kreatinin (mg/dL)</span>
                 <input
-                  type="number" step="0.01" value={cr}
+                  type="text" inputMode="decimal" value={cr}
                   onChange={e => setCr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
@@ -76,7 +77,7 @@ export default function MeldNaPage() {
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Total Bilirubin (mg/dL)</span>
                 <input
-                  type="number" step="0.01" value={tb}
+                  type="text" inputMode="decimal" value={tb}
                   onChange={e => setTb(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
@@ -86,7 +87,7 @@ export default function MeldNaPage() {
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">INR</span>
                 <input
-                  type="number" step="0.01" value={inr}
+                  type="text" inputMode="decimal" value={inr}
                   onChange={e => setInr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
@@ -94,7 +95,7 @@ export default function MeldNaPage() {
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Sodyum (mEq/L)</span>
                 <input
-                  type="number" step="1" value={na}
+                  type="text" inputMode="decimal" value={na}
                   onChange={e => setNa(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />

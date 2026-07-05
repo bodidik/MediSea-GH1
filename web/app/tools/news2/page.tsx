@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * NEWS2 Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -66,11 +67,11 @@ export default function NEWS2Page() {
   const [temp, setTemp] = React.useState<string>(s?.get("temp") || "36.8");
   const [avpu, setAvpu] = React.useState<string>(s?.get("avpu") || "A");
 
-  const rrNum = parseFloat(rr) || 0;
-  const spo2Num = parseFloat(spo2) || 0;
-  const sbpNum = parseFloat(sbp) || 0;
-  const hrNum = parseFloat(hr) || 0;
-  const tempNum = parseFloat(temp) || 0;
+  const rrNum = parseLocaleNumber(rr);
+  const spo2Num = parseLocaleNumber(spo2);
+  const sbpNum = parseLocaleNumber(sbp);
+  const hrNum = parseLocaleNumber(hr);
+  const tempNum = parseLocaleNumber(temp);
 
   const sc_rr = scoreRR(rrNum);
   const sc_sp = scoreSpO2(spo2Num, onO2);
@@ -111,12 +112,12 @@ export default function NEWS2Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Solunum Sayısı (dk)</span>
-              <input type="number" value={rr} onChange={e=>setRr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="text" inputMode="decimal" value={rr} onChange={e=>setRr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <div className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">SpO₂ (%)</span>
               <div className="flex gap-2">
-                <input type="number" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+                <input type="text" inputMode="decimal" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
                 <button onClick={()=>setOnO2(!onO2)} className={`px-4 rounded-xl text-[10px] font-black transition-all border-2 ${onO2 ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-slate-400'}`}>
                   EK O₂
                 </button>
@@ -124,15 +125,15 @@ export default function NEWS2Page() {
             </div>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sistolik KB (mmHg)</span>
-              <input type="number" value={sbp} onChange={e=>setSbp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="text" inputMode="decimal" value={sbp} onChange={e=>setSbp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Nabız (dk)</span>
-              <input type="number" value={hr} onChange={e=>setHr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="text" inputMode="decimal" value={hr} onChange={e=>setHr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sıcaklık (°C)</span>
-              <input type="number" step="0.1" value={temp} onChange={e=>setTemp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="text" inputMode="decimal" value={temp} onChange={e=>setTemp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Bilinç (AVPU)</span>

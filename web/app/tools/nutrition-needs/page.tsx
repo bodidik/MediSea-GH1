@@ -2,18 +2,22 @@
 
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * MediSea Donanması - Nütrisyon Üssü
  * Enerji ve Protein Gereksinimi Hesaplayıcısı (ESPEN Bazlı)
  */
 
 export default function NutritionNeedsPage() {
-  const [weight, setWeight] = useState<number>(0);
+  // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin, virgül/nokta
+  // ondalık ayracı ile yazabilsin diye — sayıya çevirme sadece hesaplama anında yapılır.
+  const [weight, setWeight] = useState<string>("");
   const [stressFactor, setStressFactor] = useState<number>(25); // kcal/kg default
   const [proteinFactor, setProteinFactor] = useState<number>(1.2); // g/kg default
 
-  const energyResult = weight * stressFactor;
-  const proteinResult = weight * proteinFactor;
+  const weightNum = parseLocaleNumber(weight);
+  const energyResult = weightNum * stressFactor;
+  const proteinResult = weightNum * proteinFactor;
 
   const stressLevels = [
     { label: "Normal / Stabil (Bazal)", kcal: 25, pro: 1.0 },
@@ -45,10 +49,11 @@ export default function NutritionNeedsPage() {
           {/* Ağırlık Girişi */}
           <div className="space-y-3">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Vücut Ağırlığı (kg)</span>
-            <input 
-              type="number" 
+            <input
+              type="text" inputMode="decimal"
               placeholder="Örn: 70"
-              onChange={(e) => setWeight(Number(e.target.value))}
+              value={weight}
+              onChange={(e) => setWeight(e.target.value)}
               className="w-full p-6 rounded-2xl bg-slate-50 border-none font-black text-2xl outline-none ring-2 ring-slate-100 focus:ring-amber-400 transition-all"
             />
             <p className="text-[9px] text-slate-400 font-bold italic uppercase leading-none">* Ödemli hastada 'kuru ağırlık', obez hastada 'ideal ağırlık' baz alınmalıdır.</p>
@@ -104,7 +109,7 @@ export default function NutritionNeedsPage() {
 
         {/* REÇETE NOTLARI */}
         <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm space-y-6">
-          <ToolShare params={{ w: weight, kcal: stressFactor, pro: proteinFactor }} />
+          <ToolShare params={{ w: weightNum, kcal: stressFactor, pro: proteinFactor }} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-80">
             <div className="space-y-2">
               <h4 className="text-[10px] font-black text-blue-900 uppercase">Klinik İnciler 💡</h4>
