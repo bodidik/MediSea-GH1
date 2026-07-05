@@ -23,12 +23,13 @@ export default async function TopicDetailPage({
   
   const topicItem = {
     slug: topicSlug,
+    branch: slug,
     title: rawData.title || topicSlug.replace(/-/g, " "),
     summary: rawData.summary || rawData.meta?.summary || "",
     parent: rawData.meta?.parent || null,
-    sections: Array.isArray(rawData.sections) 
+    sections: Array.isArray(rawData.sections)
       ? rawData.sections.map((s: any) => ({
-          title: s.heading || s.title || "Başlıksız Blok",
+          heading: s.heading || s.title || "Başlıksız Blok",
           html: s.text || s.html || "",
           visibility: s.visibility || "V"
         }))
@@ -150,7 +151,7 @@ export default async function TopicDetailPage({
                         </span>
                       )}
                       <h2 className="text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3">
-                        <span className="text-blue-200">#</span>{section.title}
+                        <span className="text-blue-200">#</span>{section.heading}
                       </h2>
                       <div 
                         className="text-slate-600 leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:mb-2 [&>strong]:text-blue-950 [&>strong]:font-black"

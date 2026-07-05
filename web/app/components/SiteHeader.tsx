@@ -33,6 +33,7 @@ export default function SiteHeader() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   // Arama Motoru Mantığı
@@ -212,17 +213,92 @@ export default function SiteHeader() {
         </div>
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-2 border-l border-slate-200 pl-4 sm:pl-6">
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-2 border-l border-slate-200 pl-3 sm:pl-6">
           <Link href="/login" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
             Giriş
           </Link>
-          <Link href="/register" className="bg-blue-950 text-white text-sm font-bold px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2">
+          <Link href="/register" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-4 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
             <span>Üye Ol</span>
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
           </Link>
+
+          {/* HAMBURGER (branşlar / araçlar / premium - dar ekranlarda) */}
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Menü"
+            aria-expanded={menuOpen}
+            className="xl:hidden flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
+          >
+            {menuOpen ? (
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
         </div>
 
       </div>
+
+      {/* --- MOBİL / TABLET AÇILIR MENÜ --- */}
+      {menuOpen && (
+        <div className="xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="max-w-[1800px] mx-auto px-5 py-5 space-y-5">
+
+            {/* Branşlar (lg ve altı - üstteki nav gizliyken) */}
+            <div className="lg:hidden">
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Branşlar</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {branches.map((branch) => (
+                  <Link
+                    key={branch.slug}
+                    href={`/topics/${branch.slug}`}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-[13px] font-bold text-slate-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg px-3 py-2 transition-colors"
+                  >
+                    {branch.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="h-px bg-slate-100 lg:hidden"></div>
+
+            {/* Vitrin linkleri (xl altı - üstteki butonlar gizliyken) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <Link
+                href="/tr/premium/ydus"
+                onClick={() => setMenuOpen(false)}
+                className="bg-amber-400 hover:bg-amber-500 text-blue-950 text-xs font-black tracking-widest px-4 py-3 rounded-2xl flex items-center justify-center gap-2 transition-all"
+              >
+                PREMİUM YDUS <span>⚓</span>
+              </Link>
+              <Link
+                href="/tools"
+                onClick={() => setMenuOpen(false)}
+                className="bg-slate-50 hover:bg-slate-100 border border-slate-200 text-blue-950 text-xs font-black tracking-widest px-4 py-3 rounded-2xl flex items-center justify-center gap-2 transition-all"
+              >
+                🧪 KLİNİK ARAÇLAR
+              </Link>
+            </div>
+
+            {/* Giriş (md altı - sağdaki link gizliyken) */}
+            <div className="md:hidden pt-1">
+              <Link
+                href="/login"
+                onClick={() => setMenuOpen(false)}
+                className="block text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
+              >
+                Giriş Yap
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      )}
     </header>
   );
 }
