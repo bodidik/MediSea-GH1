@@ -13,27 +13,34 @@ function round(n: number, dp = 0) { return Math.round(n * Math.pow(10, dp)) / Ma
 export default function MeldNaPage() {
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
-  const [cr, setCr] = React.useState<number>(parseFloat(s?.get("cr") || "1"));
-  const [tb, setTb] = React.useState<number>(parseFloat(s?.get("tb") || "1"));
-  const [inr, setInr] = React.useState<number>(parseFloat(s?.get("inr") || "1"));
-  const [na, setNa] = React.useState<number>(parseFloat(s?.get("na") || "135"));
+  // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
+  // sayıya çevirme sadece hesaplama anında yapılır.
+  const [cr, setCr] = React.useState<string>(s?.get("cr") || "1");
+  const [tb, setTb] = React.useState<string>(s?.get("tb") || "1");
+  const [inr, setInr] = React.useState<string>(s?.get("inr") || "1");
+  const [na, setNa] = React.useState<string>(s?.get("na") || "135");
 
   const [onDialysis, setOnDialysis] = React.useState<boolean>(s?.get("dial") === "1");
   const [capCreat4, setCapCreat4] = React.useState<boolean>(s?.get("cap") === "1");
 
-  const naAdj = clamp(na, 125, 137);
-  let crUsed = onDialysis ? 4.0 : cr;
+  const crNum = parseFloat(cr) || 0;
+  const tbNum = parseFloat(tb) || 0;
+  const inrNum = parseFloat(inr) || 0;
+  const naNum = parseFloat(na) || 0;
+
+  const naAdj = clamp(naNum, 125, 137);
+  let crUsed = onDialysis ? 4.0 : crNum;
   if (capCreat4) crUsed = Math.min(crUsed, 4.0);
 
   const crAdj = Math.max(1, crUsed);
-  const tbAdj = Math.max(1, tb);
-  const inrAdj = Math.max(1, inr);
+  const tbAdj = Math.max(1, tbNum);
+  const inrAdj = Math.max(1, inrNum);
 
   const meld = 0.957 * Math.log(crAdj) + 0.378 * Math.log(tbAdj) + 1.12 * Math.log(inrAdj) + 0.643;
   const meldNa = meld + 1.59 * (135 - naAdj);
   const score = round(meldNa, 0);
 
-  const params = { cr, tb, inr, na, dial: onDialysis ? 1 : "", cap: capCreat4 ? 1 : "" };
+  const params = { cr: crNum, tb: tbNum, inr: inrNum, na: naNum, dial: onDialysis ? 1 : "", cap: capCreat4 ? 1 : "" };
 
   return (
     // SAKİN DENİZ: bg-slate-50 | text-blue-950
@@ -60,17 +67,17 @@ export default function MeldNaPage() {
             <div className="space-y-4">
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Kreatinin (mg/dL)</span>
-                <input 
-                  type="number" step="0.01" value={cr} 
-                  onChange={e => setCr(parseFloat(e.target.value || "0"))} 
+                <input
+                  type="number" step="0.01" value={cr}
+                  onChange={e => setCr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
               </label>
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Total Bilirubin (mg/dL)</span>
-                <input 
-                  type="number" step="0.01" value={tb} 
-                  onChange={e => setTb(parseFloat(e.target.value || "0"))} 
+                <input
+                  type="number" step="0.01" value={tb}
+                  onChange={e => setTb(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
               </label>
@@ -78,17 +85,17 @@ export default function MeldNaPage() {
             <div className="space-y-4">
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">INR</span>
-                <input 
-                  type="number" step="0.01" value={inr} 
-                  onChange={e => setInr(parseFloat(e.target.value || "0"))} 
+                <input
+                  type="number" step="0.01" value={inr}
+                  onChange={e => setInr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
               </label>
               <label className="flex flex-col gap-1.5">
                 <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Sodyum (mEq/L)</span>
-                <input 
-                  type="number" step="1" value={na} 
-                  onChange={e => setNa(parseFloat(e.target.value || "0"))} 
+                <input
+                  type="number" step="1" value={na}
+                  onChange={e => setNa(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold text-lg"
                 />
               </label>

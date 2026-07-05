@@ -56,29 +56,37 @@ function scoreAVPU(avpu: string) {
 export default function NEWS2Page() {
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
-  const [rr, setRr] = React.useState<number>(parseFloat(s?.get("rr") || "18"));
-  const [spo2, setSpo2] = React.useState<number>(parseFloat(s?.get("spo2") || "97"));
+  // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
+  // sayıya çevirme sadece hesaplama anında yapılır.
+  const [rr, setRr] = React.useState<string>(s?.get("rr") || "18");
+  const [spo2, setSpo2] = React.useState<string>(s?.get("spo2") || "97");
   const [onO2, setOnO2] = React.useState<boolean>(s?.get("o2") === "1");
-  const [sbp, setSbp] = React.useState<number>(parseFloat(s?.get("sbp") || "120"));
-  const [hr, setHr] = React.useState<number>(parseFloat(s?.get("hr") || "80"));
-  const [temp, setTemp] = React.useState<number>(parseFloat(s?.get("temp") || "36.8"));
+  const [sbp, setSbp] = React.useState<string>(s?.get("sbp") || "120");
+  const [hr, setHr] = React.useState<string>(s?.get("hr") || "80");
+  const [temp, setTemp] = React.useState<string>(s?.get("temp") || "36.8");
   const [avpu, setAvpu] = React.useState<string>(s?.get("avpu") || "A");
 
-  const sc_rr = scoreRR(rr);
-  const sc_sp = scoreSpO2(spo2, onO2);
-  const sc_temp = scoreTemp(temp);
-  const sc_sbp = scoreSBP(sbp);
-  const sc_hr = scorePulse(hr);
+  const rrNum = parseFloat(rr) || 0;
+  const spo2Num = parseFloat(spo2) || 0;
+  const sbpNum = parseFloat(sbp) || 0;
+  const hrNum = parseFloat(hr) || 0;
+  const tempNum = parseFloat(temp) || 0;
+
+  const sc_rr = scoreRR(rrNum);
+  const sc_sp = scoreSpO2(spo2Num, onO2);
+  const sc_temp = scoreTemp(tempNum);
+  const sc_sbp = scoreSBP(sbpNum);
+  const sc_hr = scorePulse(hrNum);
   const sc_avpu = scoreAVPU(avpu);
 
   const total = sc_rr + sc_sp + sc_temp + sc_sbp + sc_hr + sc_avpu;
 
   let risk = { label: "Düşük", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
   if (total >= 7) risk = { label: "YÜKSEK (Acil Müdahale)", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
-  else if (total >= 5 || [sc_rr, sc_sp, sc_temp, sc_sbp, sc_hr, sc_avpu].some(v => v === 3)) 
+  else if (total >= 5 || [sc_rr, sc_sp, sc_temp, sc_sbp, sc_hr, sc_avpu].some(v => v === 3))
     risk = { label: "Orta (Acil Değerlendirme)", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
 
-  const params = { rr, spo2, o2: onO2 ? 1 : "", sbp, hr, temp, avpu };
+  const params = { rr: rrNum, spo2: spo2Num, o2: onO2 ? 1 : "", sbp: sbpNum, hr: hrNum, temp: tempNum, avpu };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -103,12 +111,12 @@ export default function NEWS2Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Solunum Sayısı (dk)</span>
-              <input type="number" value={rr} onChange={e=>setRr(parseFloat(e.target.value||"0"))} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="number" value={rr} onChange={e=>setRr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <div className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">SpO₂ (%)</span>
               <div className="flex gap-2">
-                <input type="number" value={spo2} onChange={e=>setSpo2(parseFloat(e.target.value||"0"))} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+                <input type="number" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
                 <button onClick={()=>setOnO2(!onO2)} className={`px-4 rounded-xl text-[10px] font-black transition-all border-2 ${onO2 ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-slate-400'}`}>
                   EK O₂
                 </button>
@@ -116,15 +124,15 @@ export default function NEWS2Page() {
             </div>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sistolik KB (mmHg)</span>
-              <input type="number" value={sbp} onChange={e=>setSbp(parseFloat(e.target.value||"0"))} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="number" value={sbp} onChange={e=>setSbp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Nabız (dk)</span>
-              <input type="number" value={hr} onChange={e=>setHr(parseFloat(e.target.value||"0"))} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="number" value={hr} onChange={e=>setHr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sıcaklık (°C)</span>
-              <input type="number" step="0.1" value={temp} onChange={e=>setTemp(parseFloat(e.target.value||"0"))} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+              <input type="number" step="0.1" value={temp} onChange={e=>setTemp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Bilinç (AVPU)</span>

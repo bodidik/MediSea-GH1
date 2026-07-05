@@ -9,12 +9,17 @@ import { egfrCkdEpi2021, Sex } from "@/app/tools/lib/calc-utils";
  */
 
 export default function EgfrPage() {
-  const [scr, setScr] = useState<number>(1.0);
-  const [age, setAge] = useState<number>(45);
+  // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
+  // sayıya çevirme sadece hesaplama anında yapılır.
+  const [scr, setScr] = useState<string>("1.0");
+  const [age, setAge] = useState<string>("45");
   const [sex, setSex] = useState<Sex>("male");
 
+  const scrNum = parseFloat(scr) || 0;
+  const ageNum = parseInt(age, 10) || 0;
+
   // lib içindeki o meşhur race-free formülü çağırıyoruz
-  const result = useMemo(() => egfrCkdEpi2021(scr, age, sex), [scr, age, sex]);
+  const result = useMemo(() => egfrCkdEpi2021(scrNum, ageNum, sex), [scrNum, ageNum, sex]);
 
   // Evreleme ve Klinik Yorumlama
   const interpretation = useMemo(() => {
@@ -26,7 +31,7 @@ export default function EgfrPage() {
     return { label: "G5: Böbrek Yetmezliği", color: "text-rose-900", bg: "bg-rose-100" };
   }, [result]);
 
-  const shareParams = { scr, age, sex };
+  const shareParams = { scr: scrNum, age: ageNum, sex };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -50,15 +55,15 @@ export default function EgfrPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-6">
           <label className="flex flex-col gap-2">
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Serum Kreatinin (mg/dL)</span>
-            <input 
-              type="number" step="0.1" value={scr} onChange={(e) => setScr(parseFloat(e.target.value || "0"))}
+            <input
+              type="number" step="0.1" value={scr} onChange={(e) => setScr(e.target.value)}
               className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all"
             />
           </label>
           <label className="flex flex-col gap-2">
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Yaş</span>
-            <input 
-              type="number" value={age} onChange={(e) => setAge(parseInt(e.target.value || "0"))}
+            <input
+              type="number" value={age} onChange={(e) => setAge(e.target.value)}
               className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all"
             />
           </label>

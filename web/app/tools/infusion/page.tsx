@@ -11,22 +11,29 @@ function round(n: number, dp = 2) {
 }
 
 export default function InfusionPage() {
+  // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
+  // sayıya çevirme sadece hesaplama anında yapılır.
   // 1) mL/saat ↔ gtt/dk
-  const [rateMlHr, setRateMlHr] = React.useState<number>(0);
-  const [dropFactor, setDropFactor] = React.useState<number>(20); 
-  const gttPerMin = React.useMemo(() => round((rateMlHr * dropFactor) / 60, 1), [rateMlHr, dropFactor]);
+  const [rateMlHr, setRateMlHr] = React.useState<string>("0");
+  const [dropFactor, setDropFactor] = React.useState<string>("20");
+  const rateMlHrNum = parseFloat(rateMlHr) || 0;
+  const dropFactorNum = parseFloat(dropFactor) || 0;
+  const gttPerMin = React.useMemo(() => round((rateMlHrNum * dropFactorNum) / 60, 1), [rateMlHrNum, dropFactorNum]);
 
   // 2) Doz (mg/kg/dk) ↔ mL/saat
-  const [weightKg, setWeightKg] = React.useState<number>(70);
-  const [doseMgKgMin, setDoseMgKgMin] = React.useState<number>(0);
-  const [concentrationMgMl, setConcentrationMgMl] = React.useState<number>(1); 
+  const [weightKg, setWeightKg] = React.useState<string>("70");
+  const [doseMgKgMin, setDoseMgKgMin] = React.useState<string>("0");
+  const [concentrationMgMl, setConcentrationMgMl] = React.useState<string>("1");
+  const weightKgNum = parseFloat(weightKg) || 0;
+  const doseMgKgMinNum = parseFloat(doseMgKgMin) || 0;
+  const concentrationMgMlNum = parseFloat(concentrationMgMl) || 0;
 
   const mlPerHrFromDose = React.useMemo(() => {
-    const mgPerMin = doseMgKgMin * weightKg;
+    const mgPerMin = doseMgKgMinNum * weightKgNum;
     const mgPerHr = mgPerMin * 60;
-    if (!concentrationMgMl || concentrationMgMl <= 0) return 0;
-    return round(mgPerHr / concentrationMgMl, 2);
-  }, [doseMgKgMin, weightKg, concentrationMgMl]);
+    if (!concentrationMgMlNum || concentrationMgMlNum <= 0) return 0;
+    return round(mgPerHr / concentrationMgMlNum, 2);
+  }, [doseMgKgMinNum, weightKgNum, concentrationMgMlNum]);
 
   return (
     // SAKİN DENİZ: bg-slate-50 | text-blue-950
@@ -60,7 +67,7 @@ export default function InfusionPage() {
                 <input 
                   type="number" 
                   value={rateMlHr} 
-                  onChange={e => setRateMlHr(parseFloat(e.target.value || "0"))} 
+                  onChange={e => setRateMlHr(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold"
                 />
               </label>
@@ -69,7 +76,7 @@ export default function InfusionPage() {
                 <input 
                   type="number" 
                   value={dropFactor} 
-                  onChange={e => setDropFactor(parseFloat(e.target.value || "0"))} 
+                  onChange={e => setDropFactor(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold"
                 />
                 <span className="text-[9px] text-blue-900/40 font-bold uppercase tracking-tighter">Standart Makro: 20 · Mikro: 60</span>
@@ -94,21 +101,21 @@ export default function InfusionPage() {
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Vücut Ağırlığı (kg)</span>
               <input 
-                type="number" value={weightKg} onChange={e => setWeightKg(parseFloat(e.target.value || "0"))} 
+                type="number" value={weightKg} onChange={e => setWeightKg(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Hedef Doz (mg/kg/dk)</span>
               <input 
-                type="number" value={doseMgKgMin} onChange={e => setDoseMgKgMin(parseFloat(e.target.value || "0"))} 
+                type="number" value={doseMgKgMin} onChange={e => setDoseMgKgMin(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>
             <label className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Konsantrasyon (mg/mL)</span>
               <input 
-                type="number" value={concentrationMgMl} onChange={e => setConcentrationMgMl(parseFloat(e.target.value || "0"))} 
+                type="number" value={concentrationMgMl} onChange={e => setConcentrationMgMl(e.target.value)}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold"
               />
             </label>
