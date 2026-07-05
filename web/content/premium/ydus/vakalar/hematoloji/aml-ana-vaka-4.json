@@ -1,0 +1,106 @@
+{
+  "id": "vaka-hem-aml-004",
+  "baslik": "74 Yaşında AML: Fitness Kararından Tedaviye",
+  "branch": "hematoloji",
+  "topic": "aml-ana",
+  "zorluk": "orta",
+  "sure_dk": 13,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "Başvuru — Yaşlı Hasta, Ağır Komorbidite",
+      "klinik_bilgi": "Yetmiş dört yaşında erkek hasta, 6 haftadır giderek artan yorgunluk, 4 kg istemsiz kilo kaybı ve son 2 ayda 3 kez alt solunum yolu enfeksiyonu geçirme yakınmalarıyla başvuruyor.\n\nÖzgeçmiş: Tip 2 DM (insülin), Atriyal Fibrilasyon (antikoagülan), KOAH (DLCO %62), Kronik Böbrek Hastalığı (Kreatinin 1.9 mg/dL, eGFR 38 mL/dk). 5'ten fazla ilaç kullanıyor (polifarmasi).\n\nFizik muayene: ECOG PS 2. Soluk görünüm, bilateral bazallerde ronküsler.\n\nLaboratuvar:\nHb: 7.8 g/dL ↓ | WBC: 18.400/µL (diferansiyelde %38 blast) | PLT: 42.000/µL ↓\nKemik iliği biyopsisi planlandı.",
+      "soru": "Bu hastanın tedavi yoğunluğuna karar verirken en belirleyici yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hasta 74 yaşında olduğundan kroniksel yaş tek başına yoğun kemoterapi kontrendikasyonu oluşturur; düşük yoğunluklu tedaviye geçilmelidir.",
+        "B": "Tedavi yoğunluğu kararı kroniksel yaşa değil; HCT-CI skoru, organ fonksiyonları ve kapsamlı kırılganlık değerlendirmesine (performans, polifarmasi, beslenme) göre bireyselleştirilmelidir.",
+        "C": "WBC 18.400/µL ile dolaşımda %38 blast var; lösemi yükü yüksek olduğu için yoğun kemoterapi şarttır.",
+        "D": "KOAH tanısı tek başına tüm sistemik kemoterapiler için kontrendikasyon oluşturur; bu hasta tedavi edilemez.",
+        "E": "İleri yaş AML'de tedavi etkinliği çok düşüktür; en uygun yaklaşım palyatif destek tedavidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yaş sayı değil, organ fonksiyonu ve kırılganlık belirler. HCT-CI + ECOG + Edmonton Frail Scale üçlüsü yoğun vs düşük yoğunluklu tedavi kararının zeminini oluşturur.",
+      "aciklama_detay": "Modern hematoloji pratiğinde tedavi yoğunluğu kararı kronolojik yaşa değil, fizyolojik rezerve dayanır. 65 yaşında yüksek komorbiditeli bir hasta, 80 yaşında tamamen fit bir hastadan daha kötü aday olabilir. Bu değerlendirme; HCT-CI skoru (organ bazlı komorbidite puanı), ECOG performans durumu, Edmonton Kırılganlık Ölçeği ve günlük yaşam aktiviteleri (IADL) bütünü üzerinden yapılır. Yalnızca lösemi yüküne bakarak 7+3 kararı vermek, tedavi ilişkili mortaliteyi göz ardı etmek anlamına gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Yaş tek başına kontrendikasyon değildir. 74 yaşında bile organ fonksiyonları yeterli ve kırılganlık düşükse 7+3 uygulanabilir. Tersine, 60 yaşında yüksek HCT-CI'li hasta yoğun kemoterapiye uygun olmayabilir.",
+        "B": "DOĞRU — HCT-CI, ECOG PS ve kırılganlık ölçekleri (Edmonton vb.) birlikte değerlendirilir. Bu bütüncül yaklaşım, hastanın yoğun kemoterapi dönemini atlatma kapasitesini nesnel olarak ortaya koyar.",
+        "C": "YANLIŞ — Lösemi yükü aciliyeti belirler; ancak tedavi yoğunluğu seçimini belirlemez. Blast sayısı ne olursa olsun, hasta tolere edemeyeceği bir tedaviyle kaybedilirse lösemi yükünün hiçbir önemi kalmaz.",
+        "D": "YANLIŞ — KOAH, %62 DLCO ile orta düzey solunum fonksiyon bozukluğu gösteriyor; bu tek başına kemoterapi kontrendikasyonu değildir. HCT-CI'da ağırlıklı puanlamasına girer, ama tedaviyi tamamen dışlamaz.",
+        "E": "YANLIŞ — Venetoklaks + Hipometile Edici Ajan (Ven+HMA) gibi düşük yoğunluklu tedaviler, yaşlı/unfit AML hastalarında %65-70 yanıt oranı ve belirgin sağkalım faydası göstermiştir. Palyatif bakımı tercih etmek bu hastada premature bir karardır."
+      },
+      "sonraki_bilgi": "Kemik iliği sonuçlandı:\nBlast: %54 | Normal karyotip | NGS: DNMT3A R882H, IDH1 R132H, NPM1 wt\nELN 2022: Intermediate risk\n\nKapsamlı değerlendirme tamamlandı:\nHCT-CI: KOAH (1) + DM (1) + Böbrek Yetmezliği (2) = 4 (Yüksek komorbidite)\nEdmonton Frail Scale: 11 puan (Orta-ciddi kırılgan)\nECOG PS: 2\n\nSonuç: Hasta yoğun kemoterapi (7+3) için UNFIT. Düşük yoğunluklu tedavi endike."
+    },
+    {
+      "adim": 2,
+      "baslik": "Unfit Kararı Verildi — Tedavi Seçimi",
+      "klinik_bilgi": "Blast: %54 | IDH1 R132H (+) | Normal karyotip | ELN Intermediate risk\nHCT-CI: 4 | Edmonton Frail Scale: 11 | ECOG PS: 2\nKBY (eGFR 38) | KOAH (DLCO %62) | DM | AF\nSonuç: Yoğun kemoterapi (7+3) için UNFIT.",
+      "soru": "Bu unfit hastada birinci basamak tedavi için en uygun rejim hangisidir?",
+      "secenekler": {
+        "A": "7+3 standart indüksiyon kemoterapisi (hasta 54'ten genç göründüğü için denenebilir)",
+        "B": "CPX-351 liposomal indüksiyonu",
+        "C": "Azasitidin + Venetoklaks (Ven+HMA)",
+        "D": "Yalnızca hidroksiüre ile sitoreduktif tedavi",
+        "E": "Düşük doz sitozin arabinozid (LDAC) monoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Unfit AML'de Ven+HMA altın standart. VIALE-A çalışması: azasitidin + venetoklaks, azasitidin monoterapisine göre OS'yi 14.7 vs 9.6 ay'a taşıdı.",
+      "aciklama_detay": "VIALE-A Faz 3 çalışması (DiNardo et al., NEJM 2020), yeni tanı unfit AML hastalarında azasitidin + venetoklaks kombinasyonunun azasitidin monoterapisine kıyasla belirgin OS avantajı sağladığını gösterdi (14.7 vs 9.6 ay, HR 0.66). CR/CRi oranı %36.7 ile monoterapinin iki katına çıktı. Bu çalışma Ven+HMA'yı unfit AML birinci basamak standardı haline getirdi. CPX-351 sekonder AML için, 7+3 fit hastalar için, LDAC ise günümüzde Ven+HMA'nın altında kalan bir seçenektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — HCT-CI 4, ECOG PS 2 ve EFS 11 kombinasyonu 7+3 için net UNFIT kararı doğurur. 7+3 ile erken mortalite bu hasta grubunda %20-30'u aşabilir. 'Genç görünmesi' tıbbi değerlendirmenin yerine geçmez.",
+        "B": "YANLIŞ — CPX-351, sekonder AML (önceki MDS) veya tedavi ilişkili AML (t-AML) için tasarlanmış yoğun bir indüksiyon rejimidir. Bu hastada de novo AML mevcut ve UNFIT kararı verilmiş; CPX-351 her iki açıdan da endike değil.",
+        "C": "DOĞRU — VIALE-A'ya dayanan FDA/EMA onaylı unfit AML birinci basamak standardı. Ven+HMA, düşük toksisiteli profiliyle yüksek komorbiditeli hastalarda güvenle uygulanabilir.",
+        "D": "YANLIŞ — Hidroksiüre sadece sitoreduktif (WBC kontrolü) amaçlı kullanılır; antilösemik etkisi yoktur, remisyon sağlamaz ve tek başına küratif değildir.",
+        "E": "YANLIŞ — LDAC monoterapisi Ven+HMA öncesi dönemde kullanılıyordu; günümüzde Ven+HMA'nın anlamlı üstünlüğü nedeniyle artık tercih edilmez."
+      },
+      "sonraki_bilgi": "Azasitidin (75 mg/m², 7 gün) + Venetoklaks (400 mg/gün, gün 1-28) başlandı.\n\nTaburculuk reçetesinde dikkat çekici bir detay: Hasta fungal profilaksi için daha önce Flukonazol 200 mg/gün kullanıyordu. Hemşire ilaç mutabakatı sırasında bunu fark etti ve hekime bildirdi."
+    },
+    {
+      "adim": 3,
+      "baslik": "İlaç Mutabakatı — Flukonazol Alarmı",
+      "klinik_bilgi": "Ven+HMA başlandı. Venetoklaks: 400 mg/gün.\nFungal profilaksi olarak Flukonazol 200 mg/gün mevcut (daha önce başlanmış, devam ediyor).\nHemşire ilaç mutabakatı sırasında bu kombinasyonu fark etti.",
+      "soru": "Flukonazol + Venetoklaks kombinasyonunda doğru yönetim hangisidir?",
+      "secenekler": {
+        "A": "Flukonazol güçlü bir CYP3A4 inhibitörüdür; birlikte verilirse venetoklaks plazma düzeyi 5-6 kat artar. Venetoklaks dozu 400 mg'dan 100 mg'a düşürülmelidir.",
+        "B": "Flukonazol orta düzey bir CYP3A4 inhibitörüdür; venetoklaks dozu 400 mg'dan 200 mg'a düşürülmesi yeterlidir.",
+        "C": "Flukonazol–venetoklaks etkileşimi klinik olarak önemsizdir; doz değişikliği gerekmez.",
+        "D": "Venetoklaks kesilmeli, flukonazol ile eş zamanlı kullanım mutlak kontrendikasyondur.",
+        "E": "Flukonazol yerine vorikonazol kullanılmalıdır; vorikonazol CYP3A4 ile etkileşmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Flukonazol güçlü CYP3A4 inhibitörüdür. Venetoklaks maruziyetini 5-6 kat artırır → doz 400 mg'dan 100 mg'a düşürülür. Azaltılmadan verilmek ciddi hematolojik toksisite yaratır.",
+      "aciklama_detay": "Venetoklaks, karaciğerde CYP3A4 enzimi aracılığıyla metabolize edilir. Flukonazol güçlü bir CYP3A4 inhibitörü olarak bu enzimi baskılar ve venetoklaks AUC'unu yaklaşık 5.8 kat artırır. Bu durum aşırı hematolojik toksisiteye (ağır nötropeni, trombositopeni, enfeksiyon) ve tümör lizis sendromu riskinde artışa yol açabilir. Kılavuz önerisi nettir: flukonazol (ve diğer güçlü CYP3A4 inhibitörleri) ile birlikte kullanımda venetoklaks dozu 400 mg → 100 mg'a düşürülür. Flukonazol'ün alternatif bir fungal profilaksi ile değiştirilmesi de bir seçenektir (örn. mikafungin IV, anidulafungin gibi CYP3A4'ü etkilemeyenler).",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Flukonazol güçlü CYP3A4 inhibitörüdür (zayıf değil). Venetoklaks dozunun 100 mg'a düşürülmesi FDA onaylı etiket bilgisinde açıkça yer almaktadır. Bu ilaç mutabakatı adımı hayat kurtarıcıdır.",
+        "B": "YANLIŞ — Flukonazol orta değil güçlü CYP3A4 inhibitörüdür. 200 mg'a düşürme yeterli değildir; hedef doz 100 mg. Vorikonazol da güçlü CYP3A4 inhibitörüdür — aynı sorun geçerlidir.",
+        "C": "YANLIŞ — Etkileşim klinik olarak son derece önemlidir; göz ardı edilmesi ağır hematolojik toksisite ve artmış TLS riskine yol açar. Bu kombinasyon için doz ayarı zorunludur.",
+        "D": "YANLIŞ — Venetoklaks mutlak kontrendike değildir; doz ayarı ile güvenle kullanılabilir. Doz ayarı yapılmadan kesme, hastayı antilösemik tedavisiz bırakır.",
+        "E": "YANLIŞ — Vorikonazol da CYP3A4'ün güçlü inhibitörüdür. Flukonazol yerine vorikonazol geçmek etkileşimi ortadan kaldırmaz; sorun aynı şekilde devam eder. CYP3A4'ü etkilemeyen ajanlar (mikafungin, anidulafungin) gerçek alternatiflerdir."
+      },
+      "sonraki_bilgi": "Venetoklaks 400 mg → 100 mg'a düşürüldü. Flukonazol mikafungine değiştirildi (alternatif: venetoklaks 400 mg olarak sürebilirdi).\n\n1. kür tamamlandı. 28. gün kemik iliği değerlendirmesi:\n— Blast oranı: %3\n— ANC (Mutlak Nötrofil Sayısı): 820/µL\n— Trombosit: 68.000/µL\n— Hemoglobin: 9.2 g/dL"
+    },
+    {
+      "adim": 4,
+      "baslik": "1. Kür Sonrası Kemik İliği — Yanıt Kategorisi?",
+      "klinik_bilgi": "1. Kür (Ven+HMA) sonrası 28. gün kemik iliği:\nBlast: %3 (kemik iliği morfolojik olarak temiz)\nANC: 820/µL | Trombosit: 68.000/µL | Hb: 9.2 g/dL\n\nHatırlatma — Tam Remisyon (CR) kriterleri:\nBlast <%5 + ANC ≥1.000/µL + PLT ≥100.000/µL + transfüzyon bağımsızlığı",
+      "soru": "Bu tablo hangi remisyon kategorisine girer ve bundan sonra ne yapılmalıdır?",
+      "secenekler": {
+        "A": "Tam Remisyon (CR): blast <%5 kriterleri karşılandı; tam hematolojik iyileşme sağlandı.",
+        "B": "Tam Remisyon — Eksik Hematolojik İyileşme (CRi): blast <%5 ancak ANC <1.000/µL ve/veya PLT <100.000/µL. Ven+HMA'ya devam edilmeli; ilerleyen kürlerde sayımların normalleşmesi beklenir.",
+        "C": "Yanıtsızlık (refrakter): blast %3 yeterli azalma sağlanmadı; tedavi değiştirilmelidir.",
+        "D": "Morfololojik Lösemisiz Durum (MLFS): blast <%5 ama sayımlar tam normalleşmedi; CR ile aynı prognostik önemi taşır.",
+        "E": "Kısmi Remisyon (PR): blast ≥%5'ten <%25'e düştü, bu sınıflandırmaya girer."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Blast <%5 ✓ ama ANC 820 (<1.000) ve PLT 68.000 (<100.000) → CRi. Tedaviye devam; unfit AML'de CRi de anlamlı klinik fayda sağlar.",
+      "aciklama_detay": "ELN 2022 remisyon kriterleri net biçimde tanımlar: CR için blast <%5 + ANC ≥1.000/µL + PLT ≥100.000/µL + transfüzyon bağımsızlığı birlikte gereklidir. Bu hastada blast <%5 sağlandı ancak ANC 820 (<1.000) ve PLT 68.000 (<100.000) olduğu için tam hematolojik iyileşme kriterleri karşılanmıyor — bu CRi (CR with incomplete hematologic recovery) tanımıdır. MLFS (Morphologic Leukemia-Free State), blast <%5 ancak sayımların hedef değerlere ulaşmadığı ve CRi kriterlerinin de tam sağlanmadığı hafif daha düşük bir kategoridir. Unfit AML'de CRi, klinik fayda ve sağkalım açısından CR ile benzer sonuçlar vermektedir; tedaviyi kesmek için neden yoktur, ilerleyen kürlerde hematolojik iyileşme beklenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — CR için ANC ≥1.000/µL VE PLT ≥100.000/µL birlikte gereklidir. Bu hastada her ikisi de eşiğin altında; dolayısıyla CR kriterleri karşılanmıyor.",
+        "B": "DOĞRU — Blast <%5 ✓ + ANC <1.000 + PLT <100.000 = CRi tanımı. Unfit AML'de CRi prognostik açıdan anlamlıdır; Ven+HMA'ya devam edilir, ilerleyen kürlerde hematolojik iyileşme beklenir.",
+        "C": "YANLIŞ — Refrakter hastalık, birden fazla kür sonrası blast ≥%5 veya blast temizlenmemesi anlamına gelir. Bu hastada blast %3; tek kür sonrasında bu yanıt, özellikle unfit hasta ve Ven+HMA rejimi düşünüldüğünde, başarılı bir erken yanıttır.",
+        "D": "YANLIŞ — MLFS (Morfololojik Lösemisiz Durum), blast <%5 ama ANC ve/veya PLT düşük olan ve CRi kriterlerinin sınırında kaldığı durumlar için kullanılır; CRi'dan daha düşük bir kategoridir. Bu hastada ANC 820 ve PLT 68.000 ile CRi kriterleri karşılanıyor; MLFS bu tablo için değil.",
+        "E": "YANLIŞ — Kısmi Remisyon (PR), blast sayısının ≥%5'ten <%25'e düşmesi ve kemik iliğinin henüz tam temizlenmediği durumlar için tanımlanır. Bu hastada blast %3; PR değil, daha derin bir yanıt (CRi) mevcut."
+      },
+      "sonraki_bilgi": "CRi olarak değerlendirildi. Ven+HMA 2. küre geçildi. 2. kür sonrası ANC 1.200/µL, PLT 112.000/µL → CR elde edildi.\n\nHasta 6. kürde hâlâ CR'da. Fonksiyonel performansı düzeldi (ECOG PS 1'e geriledi), yaşam kalitesi anlamlı biçimde arttı. Ven+HMA; yaşlı ve unfit AML hastalarına kür değil, anlamlı yaşam süresi ve kalite kazandıran modern hematolojinin başarı öykülerinden biri."
+    }
+  ]
+}

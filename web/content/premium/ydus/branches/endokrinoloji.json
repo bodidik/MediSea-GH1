@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "id": "endokrinoloji",
+    "baslik": "Endokrinoloji",
+    "aciklama": "Tiroid, adrenal, hipofiz, diyabet ve metabolik hastalıkları kapsayan uzmanlık sınav modülü.",
+    "renk": "#8a4800",
+    "emoji": "⚗️"
+  },
+  "kategoriler": [
+    {
+      "id": "tiroid",
+      "baslik": "Tiroid Hastalıkları",
+      "aciklama": "Hipotiroidizm, hipertiroidizm, tiroidit ve tiroid nodülleri",
+      "emoji": "🦋",
+      "konular": [
+        {
+          "id": "santral-hipotiroidizm",
+          "baslik": "Santral Hipotiroidizm",
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
+        },
+        {
+          "id": "graves-hastaligi",
+          "baslik": "Graves Hastalığı",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "hashimoto-tiroiditi",
+          "baslik": "Hashimoto Tiroiditi",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "adrenal",
+      "baslik": "Adrenal Hastalıklar",
+      "aciklama": "Cushing, Addison, feokromositoma ve adrenal insidentaloma",
+      "emoji": "🫁",
+      "konular": [
+        {
+          "id": "primer-adrenal-yetmezlik",
+          "baslik": "Primer Adrenal Yetmezlik (Addison)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "cushing-sendromu",
+          "baslik": "Cushing Sendromu",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "hipofiz",
+      "baslik": "Hipofiz Hastalıkları",
+      "aciklama": "Hipopituitarizm, prolaktinoma, akromegali",
+      "emoji": "🧠",
+      "konular": [
+        {
+          "id": "hipopituitarizm",
+          "baslik": "Hipopituitarizm",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "diyabet",
+      "baslik": "Diyabet ve Metabolizma",
+      "aciklama": "Tip 1, Tip 2, DKA, HHS ve insülin yönetimi",
+      "emoji": "🩺",
+      "konular": [
+        {
+          "id": "dka-yonetimi",
+          "baslik": "Diyabetik Ketoasidoz (DKA)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    }
+  ]
+}

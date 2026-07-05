@@ -1,0 +1,106 @@
+{
+  "id": "vaka-hem-aml-003",
+  "baslik": "CR1 Sonrası Nüks: FLT3+ AML'de Kurtarma Stratejisi",
+  "branch": "hematoloji",
+  "topic": "aml-ana",
+  "zorluk": "zor",
+  "sure_dk": 15,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "Kontrol Ziyareti — Alarm Sinyalleri",
+      "klinik_bilgi": "Elli iki yaşında erkek hasta. On altı ay önce FLT3-ITD pozitif, intermediate risk AML tanısıyla 7+3 + Midostaurin indüksiyonu almış; CR1 elde etmiş. Ardından 3 kür HiDAC konsolidasyonu tamamlanmış.\n\nŞimdi rutin kontrol ziyaretinde 3 haftadır artan yorgunluk, gece terlemeleri ve iki haftadır kemik ağrıları yakınıyor. Ateş yok. ECOG PS 1.\n\nTam kan sayımı:\nHb: 9.1 g/dL ↓ | WBC: 2.400/µL ↓ | PLT: 78.000/µL ↓\nPeriferik kan yayması: Lökoredüksiyon belirgin; blast benzeri, büyük çekirdekli hücreler %8 oranında izleniyor.",
+      "soru": "Bu klinik tabloda en öncelikli adım hangisidir?",
+      "secenekler": {
+        "A": "Semptomlar ve izole sitopeniler post-kemoterapi geç etki ile uyumludur; hasta 4 hafta sonra tekrar çağrılmalıdır.",
+        "B": "Kemik iliği aspirasyonu ve biyopsisi ile olası nüks teyit edilmelidir.",
+        "C": "Periferik yaymada blast görüldüğü için hemen FLAG-Ida kurtarma kemoterapisi başlanmalıdır.",
+        "D": "FLT3-ITD öyküsü olduğu için tanı beklenmeksizin gilteritinib başlanmalıdır.",
+        "E": "Sitopeninin nedeni olarak B12/folik asit eksikliği araştırılmalı; AML nüksü bu kadar erken görülmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Periferik yaymada blast + sistemik semptomlar + sitopeniler = nüks kanıtlanana kadar nüks. Önce kemik iliği ile doğrulama, sonra tedavi kararı.",
+      "aciklama_detay": "AML remisyon takibinde periferik yaymada %8 blast görülmesi, özellikle hematolojik tablonun kötüleşmesiyle birlikte, aksi kanıtlanana kadar nüks olarak değerlendirilir. Tedaviye doğrulama yapılmadan başlamak (C, D seçeneği) algoritma hatasıdır; ilaç seçimi sitogenetik ve NGS profili güncellenmeden doğru yapılamaz. Post-kemoterapi geç etki beklentisiyle (A) bekleme yaklaşımı ise nüksü gözden kaçırma riskini taşır. Kemik iliği biyopsisi hem tanıyı doğrular hem de yeni edinilmiş mutasyonları ve klonal evrimi ortaya koyar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Aktif sistemik semptomlar (gece terlemeleri, kemik ağrısı) + sitopenilerin kötüleşmesi + yaymada blast: bu tablo 'geç etki' ile uyuşmuyor. 4 hafta bekleme kritik tanı gecikmesine yol açar.",
+        "B": "DOĞRU — Kemik iliği biyopsisi nüksü doğrular, blast oranını, sitogenetiği ve yeni klonal gelişimi ortaya koyar. Tedavi kararı bu bilgiye göre verilir; atlamak algoritmayı kırar.",
+        "C": "YANLIŞ — Periferik yaymada blast, birden fazla tanıyla uyumlu olabilir. Doğrulama yapılmadan FLAG-Ida gibi yoğun kurtarma kemoterapisi başlamak hem tanı hatası riskini hem de gereksiz toksisiteyi beraberinde getirir.",
+        "D": "YANLIŞ — FLT3-ITD öyküsü gilteritinib başlamak için tek başına yeterli değildir. Nüksün teyidi ve güncel FLT3 statüsünün doğrulanması gerekir; relaps sırasında klonal evrim sonucu FLT3 kaybı da mümkündür.",
+        "E": "YANLIŞ — Ortalama AML nüks zamanı 12–18 aydır; bu hasta 16 aylık remisyonda — nüks için tam klasik zaman dilimindedir. B12/folik asit eksikliği blast artışını açıklamaz."
+      },
+      "sonraki_bilgi": "Kemik iliği aspirasyonu ve biyopsisi yapıldı:\n— Blast oranı: %48\n— İmmünfenotip: CD33+, CD117+, MPO+ (miyeloid)\n— Sitogenetik: Normal karyotip (46,XY)\n— NGS paneli: FLT3-ITD pozitif (yüksek alel oranı: 0.78), DNMT3A R882H pozitif (kalıcı), YENİ: IDH2 R140Q pozitif\n\nTanı: Relaps AML. ELN 2022: Intermediate risk (relaps).\nHasta fit: ECOG PS 1, HCT-CI: 1, EF %64."
+    },
+    {
+      "adim": 2,
+      "baslik": "Relaps Teyit Edildi — Salvage Stratejisi",
+      "klinik_bilgi": "Relaps AML teyit edildi.\nBlast: %48 | FLT3-ITD (+), alel oranı 0.78 | IDH2 R140Q (yeni) | DNMT3A R882H\nECOG PS 1 | HCT-CI: 1 | EF %64\nHLA-tam uyumlu kardeş donörü mevcut.",
+      "soru": "Bu relaps/refrakter FLT3-ITD pozitif AML hastası için en uygun salvage (kurtarma) stratejisi hangisidir?",
+      "secenekler": {
+        "A": "FLAG-Ida (Fludarabin + Yüksek doz AraC + İdarubisin) yoğun kurtarma kemoterapisi",
+        "B": "Gilteritinib 120 mg/gün monoterapi",
+        "C": "Azasitidin + Venetoklaks (Ven+HMA protokolü)",
+        "D": "CPX-351 liposomal indüksiyonu",
+        "E": "Hemen Allo-HCT — aktif hastalıkla doğrudan nakil"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Relaps/refrakter FLT3+ AML'de gilteritinib monoterapisi FDA/EMA onaylı standarttır (ADMIRAL çalışması: OS 9.3 vs 5.6 ay).",
+      "aciklama_detay": "ADMIRAL Faz 3 çalışması (Perl et al., NEJM 2019), FLT3 mutasyonlu (ITD veya TKD) relaps/refrakter AML hastalarında gilteritinib 120 mg/gün monoterapisinin araştırmacı seçimli kemoterapi karşısında belirgin OS avantajı sağladığını gösterdi (9.3 vs 5.6 ay, HR 0.64). Gilteritinib hem ITD hem TKD'yi kapsar; oral kullanım ve görece iyi tolere edilebilirlik ek avantajdır. Birincil hedef CR2 elde ederek uygun hastayı Allo-HCT'ye köprülemektir (bridge-to-transplant). FLAG-Ida alternatif olmakla birlikte, kılavuz birinci tercih olarak gilteritinibi önermektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — FLAG-Ida relaps AML'de etkin bir kurtarma rejimidir; ancak ADMIRAL çalışması sonrası FLT3+ relaps olgularda kılavuz birinci tercihi gilteritinib lehine değişmiştir. FLAG-Ida daha yüksek toksisite profili taşır.",
+        "B": "DOĞRU — ADMIRAL verilerine dayanan FDA/EMA onaylı standart. FLT3-ITD ve TKD'yi kapsayan Tip 1 TKI. CR/CRh oranı %34 ile kemoterapinin (%15.3) iki katından fazla. Oral kullanım ve Bridge-to-HCT stratejisi için ideal.",
+        "C": "YANLIŞ — Ven+HMA, yoğun kemoterapi tolere edemeyen yaşlı/unfit hastalarda birinci basamak ve relaps tedavisi için kullanılır. Bu fit hastada FLT3 hedefli tedavi tercih edilmelidir; Ven+HMA FLT3 inhibisyonu sağlamaz.",
+        "D": "YANLIŞ — CPX-351 sekonder AML (önceki MDS) veya tedavi ilişkili AML için geliştirilmiştir; relaps FLT3+ de novo AML için endikasyonu ve üstünlüğü kanıtlanmamıştır.",
+        "E": "YANLIŞ — Aktif hastalıkla (%48 blast) doğrudan Allo-HCT, nakil ilişkili mortaliteyi ve relaps riskini dramatik biçimde artırır. Nakil öncesinde CR2 elde edilmesi hedeflenir; aktif hastalıkla gidildiğinde 3 yıllık sağkalım %35'in altına düşer."
+      },
+      "sonraki_bilgi": "Gilteritinib 120 mg/gün başlandı. Tedavinin 21. gününde rutin EKG çekildi.\n\nEKG bulgusu: QTc: 510 ms (başlangıç: 428 ms)\nHasta asemptomatik, çarpıntı yok, senkop yok.\n\nElektrolit değerleri:\nK⁺: 3.1 mEq/L ↓ | Mg²⁺: 0.7 mg/dL ↓\nEş zamanlı ilaçlar: Flukonazol (profilaksi), Ondansetron (bulantı)"
+    },
+    {
+      "adim": 3,
+      "baslik": "21. Gün: QTc Uzaması",
+      "klinik_bilgi": "Gilteritinib 21. gün. Hasta asemptomatik.\nEKG: QTc 510 ms (başlangıçta 428 ms, artış: +82 ms)\nK⁺: 3.1 mEq/L ↓ | Mg²⁺: 0.7 mg/dL ↓\nEş zamanlı QT uzatıcı ilaçlar: Flukonazol + Ondansetron",
+      "soru": "Bu tabloda en uygun yönetim hangisidir?",
+      "secenekler": {
+        "A": "Gilteritinib QTc uzamasına yol açmaz; EKG tekrarlanmalı, mevcut tedaviye devam edilmelidir.",
+        "B": "Potasyum ve magnezyum replasmanı yapılmalı; QT uzatıcı eş zamanlı ilaçlar gözden geçirilmeli; gilteritinib geçici kesilmeli veya doz azaltılmalı, QTc yakın takibe alınmalıdır.",
+        "C": "QTc >500 ms ventriküler aritmi riski çok yüksektir; gilteritinib kalıcı olarak kesilmeli ve başka bir ajan planlanmalıdır.",
+        "D": "Acil kardiyoversiyon hazırlığı yapılmalı; QTc 510 ms kritik eşiğin üzerindedir.",
+        "E": "Antiaritmik ilaç (Amiodaron) başlanmalı; gilteritinibe devam edilebilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "QTc uzaması gilteritinib sınıf etkisidir. Elektrolit düzelt + QT uzatıcı ilaçları gözden geçir + geçici doz azalt/kes + EKG takibi. Kalıcı kesilme gerekmez.",
+      "aciklama_detay": "Gilteritinib FLT3 inhibisyonuna bağlı QTc uzamasına yol açabilir; bu sınıf etkisi tüm FLT3 inhibitörlerinde görülür. QTc >500 ms veya başlangıca göre >60 ms artış klinik anlamlıdır ve müdahale gerektirir. Ancak asemptomatik QTc uzamasında kalıcı kesilme değil, düzeltilebilir faktörlerin (hipokalemi, hipomagnezemi, eş zamanlı QT uzatıcı ilaçlar) giderilmesi önceliklidir. Bu hastada K düşük, Mg düşük, flukonazol ve ondansetron mevcut — üç düzeltilebilir faktör var. Replasman ve ilaç düzenlemesi yapıldıktan sonra EKG tekrarlanır; QTc normale dönerse gilteritinib, gerekirse düşük dozda, yeniden başlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — QTc uzaması gilteritinib FDA etiketinde açıkça belgelenmiş kardiyovasküler yan etkidir. +82 ms artış ve 510 ms mutlak değer klinik müdahale gerektirir; görmezden gelmek ciddi aritmi riskine zemin hazırlar.",
+        "B": "DOĞRU — Hiyerarşik yaklaşım: (1) Düzeltilebilir faktörleri gider: K ve Mg replasmanı, QT uzatıcı ilaçları değiştir/kes. (2) Gilteritinib geçici kes veya doz azalt. (3) EKG takibi sürdür; QTc <480 ms'ye döndükten sonra dikkatli yeniden başla. Kalıcı kesilme ilk adım değildir.",
+        "C": "YANLIŞ — Asemptomatik QTc uzamasında kalıcı kesilme kılavuz önerisi değildir. Düzeltilebilir faktörler (elektrolitler, ilaçlar) giderildikten sonra QTc çoğunlukla normalleşir; bu hastada üç düzeltilebilir faktör mevcut.",
+        "D": "YANLIŞ — Kardiyoversiyon, hemodinamik açıdan instabil taşiaritmiler için endikedir. Hasta asemptomatik ve sinüs ritminde; kardiyoversiyon hazırlığı bu tabloya tamamen yersizdir.",
+        "E": "YANLIŞ — Amiodaron kendisi güçlü bir QT uzatıcıdır ve mevcut tabloyu ağırlaştırır. Antiaritmik başlamak düzeltilebilir nedenleri çözmeden önce endike değildir."
+      },
+      "sonraki_bilgi": "K ve Mg replasmanı yapıldı. Flukonazol mikafungine değiştirildi. Ondansetron kesildi, domperidon başlandı. Gilteritinib 7 gün kesildi.\n\n7 gün sonra EKG: QTc 451 ms. Gilteritinib 80 mg/gün ile yeniden başlandı, elektrolit takibi yoğunlaştırıldı.\n\n6 hafta sonra kemik iliği değerlendirmesi:\n— Blast oranı: %3 (CR2 elde edildi)\n— FLT3-ITD: PCR negatif\n— Hasta fit: ECOG PS 0, HCT-CI: 1"
+    },
+    {
+      "adim": 4,
+      "baslik": "CR2 Elde Edildi — Bundan Sonra?",
+      "klinik_bilgi": "Gilteritinib ile CR2 elde edildi.\nBlast: %3 | FLT3-ITD PCR: negatif\nECOG PS 0 | HCT-CI: 1 | EF %64\nYaş: 52 | HLA-tam uyumlu kardeş donörü mevcut\nELN 2022: Intermediate risk (relaps sonrası CR2)",
+      "soru": "Bu hasta için CR2'deki en uygun post-remisyon stratejisi hangisidir?",
+      "secenekler": {
+        "A": "Gilteritinib ile idame tedavisine devam edilmeli; CR2 sürdürüldüğü sürece HCT'ye gerek yoktur.",
+        "B": "Allo-HCT planlanmalıdır; CR2'de fit hastada Allo-HCT tek küratif potansiyele sahip stratejidir.",
+        "C": "HiDAC konsolidasyon kürleri uygulanmalı, ardından gilteritinib idamesi sürdürülmelidir.",
+        "D": "Oral azasitidin (CC-486) idame tedavisi başlanmalıdır.",
+        "E": "Otolog kök hücre nakli yapılmalıdır; allo-HCT'nin GVHD riski CR2'de faydasını aşar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Relaps AML'de CR2 = Allo-HCT penceresi. Fit hasta + uygun donör + CR2: nakil tek küratif seçenektir. Gilteritinib köprü oldu, hedefe ulaşıldı.",
+      "aciklama_detay": "AML'de CR2'nin klinik önemi tam burada yatmaktadır: Allo-HCT için optimal pencereyi açmak. Relaps AML'de kemoterapi veya hedefe yönelik tedavi tek başına kalıcı kür sağlayamaz; GVL etkisine dayanan Allo-HCT olmadan uzun dönem sağkalım son derece düşüktür (%15-20). Gilteritinib bu hastayı CR2'ye taşıdı — asıl görevi buydu. CR2 + fit hasta + uygun donör kombinasyonu Allo-HCT için ideal tablodur; erteleme relaps riskini artırır. Nakil sonrası gilteritinib idamesi (MORPHO çalışması) tartışmalı olmakla birlikte FLT3+ relaps olgularda bazı merkezlerce uygulanmaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Gilteritinib CR2'yi sürdürebilir; ancak AML'de TKI monoterapisi ile kalıcı kür elde etmek mümkün değildir. Klonal seleksiyon ve direnç gelişimi kaçınılmazdır. Gilteritinibin misyonu bu hastayı CR2'ye taşımaktı; şimdi HCT'ye geçmek gerekiyor.",
+        "B": "DOĞRU — Relaps AML'de CR2 + fit + donör = Allo-HCT endikasyonu. GVL etkisi, kemoterapi veya TKI'nın ulaşamayacağı rezidüel klonu temizleyebilir. Bu hasta için tek gerçekçi kür şansı budur.",
+        "C": "YANLIŞ — CR2'de HiDAC konsolidasyonu CR1'deki gibi etkin değildir; nüks riski yüksek kalır. HiDAC HCT'nin yerine geçemez; zaman kaybettirdiği için nakil fırsatını da riske atar.",
+        "D": "YANLIŞ — CC-486 (oral azasitidin), CR1 HCT adayı olmayan yaşlı hastalarda konsolidasyon sonrası idame için onaylanmıştır. CR2'deki fit hastada HCT yerine CC-486 seçmek küratif potansiyeli bilerek terk etmektir.",
+        "E": "YANLIŞ — Otolog HCT, GVL etkisinden yararlanamaz. Relaps AML'de otolog naklin Allo-HCT'ye kıyasla çok daha düşük uzun dönem sağkalım sağladığı bilinmektedir; fit hastada tercih edilmez."
+      },
+      "sonraki_bilgi": "MAC kondisyon rejimi (Busulfan + Fludarabin) ile HLA-tam uyumlu kardeş donöründen Allo-HCT yapıldı. Nakil ilişkili komplikasyon gelişmedi. Nakil sonrası 100. gün kemik iliğinde blast yok, tam donör kimersizmi elde edildi. Hasta 28. ayda hastalıksız ve aktif iş hayatında. FLT3-ITD relaps AML'de gilteritinib → CR2 → Allo-HCT: modern hematolojinin kür yolu."
+    }
+  ]
+}

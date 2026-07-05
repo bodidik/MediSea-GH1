@@ -264,7 +264,7 @@ const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) =
   flashcard: (l, b, t) => `/${l}/premium/ydus/hizli-tekrar?branch=${b}&id=${t}`,
   inciler:   (l, b, t) => `/${l}/premium/ydus/inciler?branch=${b}&id=${t}`,
   quiz:      (l, b, t) => `/${l}/premium/ydus/quiz-coz?branch=${b}&id=${t}-quiz-1`,
-  vaka:      (l, b, t) => `/${l}/premium/ydus/vaka-coz?branch=${b}&id=${t}-vaka-1`,
+  vaka:      (l, b, t) => `/${l}/premium/ydus/vaka-coz?branch=${b}&topic=${t}`,
   video:     (l, b, t) => `/${l}/premium/ydus/${b}/${t}/video`,
 };
 

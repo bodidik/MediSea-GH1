@@ -54,16 +54,19 @@ export default async function TopicDetailPage({
 
   // Doğrudan çocukları bul ve sıraya (order) göre diz
   const childTopics = allTopics
-    .filter(t => t.parent === topicSlug && !t.hidden)  
+    .filter(t => t.parent === topicSlug && !t.hidden)
     .sort((a, b) => a.order - b.order);
 
-  // Her çocuğun kendi alt çocuklarını (Torunları) bul
-  const tree = childTopics.map(child => ({
+  // Her çocuğun KENDİ çocuğu var mı diye bak (dinamik: parent-child grafiğinden çıkarılır)
+  // - Kendi çocuğu OLAN bir alt konu = "hub" (menü) -> Menü ızgarasında gösterilir, tıklanınca kendi menüsünü/içeriğini açar
+  // - Kendi çocuğu OLMAYAN bir alt konu = "kılcal" (leaf) -> İleri Okuma listesinde gösterilir
+  const childrenWithDepth = childTopics.map(child => ({
     ...child,
-    grandchildren: allTopics
-      .filter(t => t.parent === child.slug && !t.hidden)
-      .sort((a, b) => a.order - b.order)
+    hasOwnChildren: allTopics.some(t => t.parent === child.slug && !t.hidden)
   }));
+
+  const hubChildren = childrenWithDepth.filter(c => c.hasOwnChildren);
+  const leafChildren = childrenWithDepth.filter(c => !c.hasOwnChildren);
 
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans">
@@ -91,6 +94,43 @@ export default async function TopicDetailPage({
                 Güncelleme: {rawData.meta?.updatedAt || "06 MAR 2026"}
               </div>
             </div>
+
+            {/* Alt Başlıklar Menüsü (Hub Çocukları) — konuyu bulana kadar menü açılmaya devam eder */}
+            {hubChildren.length > 0 && (
+              <div className="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm p-6 md:p-8">
+                <div className="flex items-center justify-between mb-5">
+                  <h2 className="text-xs font-black text-blue-950 uppercase tracking-[0.2em]">
+                    Alt Başlıklar
+                  </h2>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    {hubChildren.length} kategori
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {hubChildren.map(child => (
+                    <Link
+                      key={child.slug}
+                      href={`/topics/${slug}/${child.slug}`}
+                      className="group p-3 bg-slate-50 border border-slate-100 rounded-[1.75rem] hover:border-blue-900 hover:bg-white hover:shadow-xl transition-all duration-300 flex justify-between items-center"
+                    >
+                      <div className="flex items-center gap-4">
+                        <span className="text-xs font-black text-blue-900/20 group-hover:text-blue-900/40 transition-colors italic">
+                          #{child.order < 99 ? child.order : "•"}
+                        </span>
+                        <h3 className="text-base font-black text-blue-950 uppercase italic group-hover:text-blue-700">
+                          {child.title}
+                        </h3>
+                      </div>
+                      <div className="text-blue-900 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
               {topicItem.summary && (
@@ -133,42 +173,24 @@ export default async function TopicDetailPage({
             
             <div className="sticky top-32 space-y-8">
               
-              {/* Dinamik Alt Menüler (Ağaç Yapısı) */}
-              {tree.length > 0 && (
+              {/* İleri Okuma: SADECE kılcal (kendi çocuğu olmayan) alt konular */}
+              {leafChildren.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
                   <h3 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                     İleri Okuma
                   </h3>
-                  
+
                   <ul className="space-y-4">
-                    {tree.map(child => (
-                      <li key={child.slug} className="flex flex-col gap-2">
-                        {/* 1. Kademe (Çocuk) */}
-                        <Link 
+                    {leafChildren.map(child => (
+                      <li key={child.slug}>
+                        <Link
                           href={`/topics/${slug}/${child.slug}`}
                           className="group flex items-start gap-3 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
                         >
                           <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">↳</span>
                           <span className="leading-tight">{child.title}</span>
                         </Link>
-                        
-                        {/* 2. Kademe (Torunlar - İç içe liste) */}
-                        {child.grandchildren.length > 0 && (
-                          <ul className="ml-6 space-y-2 border-l-2 border-slate-100 pl-4 py-1">
-                            {child.grandchildren.map(gc => (
-                              <li key={gc.slug}>
-                                <Link 
-                                  href={`/topics/${slug}/${gc.slug}`}
-                                  className="group flex items-start gap-2 text-xs font-semibold text-slate-500 hover:text-blue-600 transition-colors"
-                                >
-                                  <span className="text-slate-300 group-hover:text-blue-400">-</span>
-                                  <span className="leading-snug">{gc.title}</span>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
                       </li>
                     ))}
                   </ul>
