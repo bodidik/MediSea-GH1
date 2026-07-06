@@ -92,7 +92,7 @@ export function checkPercCriteria(criteria: Record<string, boolean>): boolean {
  * 6. Wells DVT Skoru Hesaplayıcı
  */
 export function calculateWellsDvt(
-  criteria: Record<string, boolean>, 
+  criteria: Record<string, boolean>,
   alternativeDiagnosisMinusTwo: boolean
 ): number {
   let score = 0;
@@ -101,4 +101,49 @@ export function calculateWellsDvt(
   });
   if (alternativeDiagnosisMinusTwo) score -= 2;
   return score;
+}
+
+/**
+ * 7. Anyon Açığı (Anion Gap)
+ * AG = Na - (Cl + HCO3). Normal aralık yaklaşık 8-12 mEq/L (laboratuvara göre değişir).
+ */
+export function anionGap(na: number, cl: number, hco3: number): number {
+  if (!na || !cl || !hco3) return 0;
+  return Math.round((na - (cl + hco3)) * 10) / 10;
+}
+
+/**
+ * 7b. Albumin Düzeltmeli Anyon Açığı
+ * Hipoalbüminemi anyon açığını gizleyebilir; her 1 g/dL albumin düşüşü için AG'ye +2.5 eklenir.
+ */
+export function correctedAnionGap(ag: number, albumin: number): number {
+  if (!albumin) return ag;
+  return Math.round((ag + 2.5 * (4.0 - albumin)) * 10) / 10;
+}
+
+/**
+ * 8. Hiperglisemide Düzeltilmiş Sodyum (Katz Formülü)
+ * Her 100 mg/dL glukoz artışı için ölçülen Na'ya +1.6 mEq/L eklenir.
+ */
+export function correctedSodium(na: number, glucose: number): number {
+  if (!na || !glucose) return 0;
+  return Math.round((na + 1.6 * ((glucose - 100) / 100)) * 10) / 10;
+}
+
+/**
+ * 9. HbA1c -> Tahmini Ortalama Glukoz (ADA/NGSP Formülü, mg/dL)
+ * eAG = 28.7 * A1c - 46.7
+ */
+export function hba1cToEagMgdl(a1c: number): number {
+  if (!a1c) return 0;
+  return Math.round(28.7 * a1c - 46.7);
+}
+
+/**
+ * 10. Vücut Yüzey Alanı (Mosteller Formülü) - m²
+ * BSA = sqrt((boy_cm * kilo_kg) / 3600)
+ */
+export function bsaMosteller(heightCm: number, weightKg: number): number {
+  if (!heightCm || !weightKg) return 0;
+  return Math.round(Math.sqrt((heightCm * weightKg) / 3600) * 100) / 100;
 }

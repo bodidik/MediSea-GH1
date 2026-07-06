@@ -15,13 +15,29 @@ const TOOLS_DATABASE = [
       { slug: "nutrition-needs", name: "Enerji & Protein Gereksinimi", desc: "Klinik duruma göre kcal/pro hesaplayıcı" },
     ]
   },
-  { 
-    category: "Nefroloji", 
+  {
+    category: "Nefroloji",
     icon: "🧪",
     items: [
-      { slug: "egfr-ckdepi", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
+      { slug: "egfr", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
-      { slug: "fena", name: "Fraksiyonel Sodyum Ekskresyonu (FeNa)", desc: "Prerenal - Renal ABH ayrımı" },
+      { slug: "anion-gap", name: "Anyon Açığı", desc: "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)" },
+    ]
+  },
+  {
+    category: "Endokrinoloji & Metabolizma",
+    icon: "🦋",
+    items: [
+      { slug: "hba1c-eag", name: "HbA1c → Ortalama Glukoz", desc: "Tahmini ortalama glukoz (ADA/NGSP)" },
+      { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", desc: "Hiperglisemi düzeltmesi (Katz formülü)" },
+      { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
+    ]
+  },
+  {
+    category: "Onkoloji",
+    icon: "🎗️",
+    items: [
+      { slug: "bsa", name: "Vücut Yüzey Alanı (BSA)", desc: "Mosteller formülü — kemoterapi dozlama" },
     ]
   },
   { 
@@ -30,7 +46,7 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
-      { slug: "duke-ie", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
+      { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
     ]
   },
   { 
@@ -48,7 +64,6 @@ const TOOLS_DATABASE = [
     icon: "🍺",
     items: [
       { slug: "meld-na", name: "MELD-Na Skoru", desc: "ESKH mortalite tahmini" },
-      { slug: "child-pugh", name: "Child-Pugh Sınıflaması", desc: "Siroz şiddet ve prognozu" },
     ]
   }
 ];
