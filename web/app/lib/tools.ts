@@ -32,22 +32,27 @@ export const TOOLS: Record<string, ToolRef> = {
   "corrected-sodium": { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", icon: "🧂" },
   "hba1c-eag": { slug: "hba1c-eag", name: "HbA1c → Ort. Glukoz", icon: "📈" },
   "bsa": { slug: "bsa", name: "Vücut Yüzey Alanı", icon: "📐" },
+  "ecog": { slug: "ecog", name: "ECOG Performans", icon: "🎗️" },
+  "gcs": { slug: "gcs", name: "Glasgow Koma Skalası", icon: "🧠" },
+  "heart-score": { slug: "heart-score", name: "HEART Skoru", icon: "💔" },
+  "child-pugh": { slug: "child-pugh", name: "Child-Pugh", icon: "🍺" },
 };
 
 // branş slug -> ilgili hesaplayıcı slug'ları (öncelik sırasına göre)
 export const BRANCH_TOOLS: Record<string, string[]> = {
-  "kardiyoloji": ["chads-vasc", "has-bled", "timi-ua"],
+  "kardiyoloji": ["heart-score", "chads-vasc", "has-bled", "timi-ua"],
   "nefroloji": ["egfr", "corrected-calcium", "anion-gap", "unit-converter"],
   "endokrinoloji": ["corrected-calcium", "hba1c-eag", "corrected-sodium", "anion-gap", "egfr", "unit-converter"],
-  "gastroenteroloji": ["meld-na"],
+  "gastroenteroloji": ["meld-na", "child-pugh"],
   "enfeksiyon": ["qsofa", "sofa", "curb65", "news2", "endocarditis"],
   "gogus": ["wells-pe", "perc", "curb65"],
   "hematoloji": ["wells-dvt", "has-bled"],
-  "genel-dahiliye": ["news2", "qsofa", "sofa", "infusion", "anion-gap", "corrected-sodium"],
+  "genel-dahiliye": ["news2", "qsofa", "sofa", "gcs", "infusion", "anion-gap", "corrected-sodium"],
   "romatoloji": ["sle", "sledai2k"],
-  "onkoloji": ["bsa", "infusion", "nutrition-needs"],
+  "onkoloji": ["ecog", "bsa", "infusion", "nutrition-needs"],
   "klinik-nutrisyon": ["nrs-2002", "mna", "glim", "nutrition-needs"],
-  // "palyatif" ve "journal-club" için henüz ilişkili bir hesaplayıcı yok — bölüm gizlenir
+  "palyatif": ["ecog"],
+  // "journal-club" için ilişkili bir hesaplayıcı yok — bölüm gizlenir
 };
 
 /** Bir branşla ilişkili hesaplayıcıları döner; ilişki yoksa boş dizi (bölüm o zaman gizlenir). */

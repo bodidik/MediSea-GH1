@@ -38,32 +38,36 @@ const TOOLS_DATABASE = [
     icon: "🎗️",
     items: [
       { slug: "bsa", name: "Vücut Yüzey Alanı (BSA)", desc: "Mosteller formülü — kemoterapi dozlama" },
+      { slug: "ecog", name: "ECOG Performans Durumu", desc: "Fonksiyonel kapasite / tedavi uygunluğu" },
     ]
   },
-  { 
-    category: "Kardiyoloji", 
+  {
+    category: "Kardiyoloji",
     icon: "❤️",
     items: [
+      { slug: "heart-score", name: "HEART Skoru", desc: "Göğüs ağrısı risk stratifikasyonu" },
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
       { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
     ]
   },
-  { 
-    category: "Acil & Kritik Bakım", 
+  {
+    category: "Acil & Kritik Bakım",
     icon: "🚨",
     items: [
       { slug: "wells-pe", name: "Wells Skoru (PE)", desc: "Pulmoner emboli klinik olasılığı" },
       { slug: "perc", name: "PERC Kriterleri", desc: "PE düşük risk dışlama protokolü" },
       { slug: "qsofa", name: "qSOFA Skoru", desc: "Hızlı sepsis yatak başı değerlendirme" },
+      { slug: "gcs", name: "Glasgow Koma Skalası", desc: "Bilinç düzeyi değerlendirmesi (E+V+M)" },
       { slug: "infusion", name: "İnfüzyon Hesaplama", desc: "IV doz ve damla sayısı asistanı" },
     ]
   },
-  { 
-    category: "Hepatoloji & Gastroenteroloji", 
+  {
+    category: "Hepatoloji & Gastroenteroloji",
     icon: "🍺",
     items: [
       { slug: "meld-na", name: "MELD-Na Skoru", desc: "ESKH mortalite tahmini" },
+      { slug: "child-pugh", name: "Child-Pugh Sınıflaması", desc: "Siroz şiddet ve prognozu" },
     ]
   }
 ];
