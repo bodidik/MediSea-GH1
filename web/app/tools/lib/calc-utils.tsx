@@ -147,3 +147,23 @@ export function bsaMosteller(heightCm: number, weightKg: number): number {
   if (!heightCm || !weightKg) return 0;
   return Math.round(Math.sqrt((heightCm * weightKg) / 3600) * 100) / 100;
 }
+
+/**
+ * 11. DAS28-ESR (Romatoid Artrit Hastalık Aktivite Skoru)
+ * DAS28-ESR = 0.56*sqrt(TJC28) + 0.28*sqrt(SJC28) + 0.70*ln(ESR) + 0.014*GH
+ * TJC/SJC: 0-28 hassas/şiş eklem sayısı, ESR: mm/saat, GH: hasta genel değerlendirmesi (0-100 VAS)
+ */
+export function das28Esr(tjc28: number, sjc28: number, esr: number, gh: number): number {
+  const safeEsr = Math.max(esr, 1); // ln(0) tanımsız — pratikte ESR>=1 varsayılır
+  const val = 0.56 * Math.sqrt(tjc28) + 0.28 * Math.sqrt(sjc28) + 0.70 * Math.log(safeEsr) + 0.014 * gh;
+  return Math.round(val * 100) / 100;
+}
+
+/**
+ * 11b. DAS28-CRP
+ * DAS28-CRP = 0.56*sqrt(TJC28) + 0.28*sqrt(SJC28) + 0.36*ln(CRP+1) + 0.014*GH + 0.96
+ */
+export function das28Crp(tjc28: number, sjc28: number, crp: number, gh: number): number {
+  const val = 0.56 * Math.sqrt(tjc28) + 0.28 * Math.sqrt(sjc28) + 0.36 * Math.log(crp + 1) + 0.014 * gh + 0.96;
+  return Math.round(val * 100) / 100;
+}
