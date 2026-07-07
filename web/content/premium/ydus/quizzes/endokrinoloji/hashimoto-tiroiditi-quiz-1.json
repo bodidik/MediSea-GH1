@@ -213,6 +213,96 @@
       ],
       "zorluk": "orta",
       "kaynak": "Carella et al. Eur J Endocrinol 2004; TEMD 2025"
+    },
+    {
+      "id": "s8",
+      "metin": "Otuz beş yaşında Hashimoto tiroiditi tanılı kadın hasta, rutin tiroid USG'sinde 1.8 cm sağ lob nodülü saptandı. İİAB sonucu papiller tiroid karsinomu (PTC) ile uyumlu. Hastaya cerrahi planlanıyor.\n\nHT zemininde gelişen PTC olgularının, HT olmaksızın gelişen PTC olgularıyla karşılaştırıldığında genel olarak nasıl bir prognoz beklenmektedir?",
+      "secenekler": {
+        "A": "HT zeminindeki PTC daha saldırgandır; BRAF^V600E mutasyonu daha sık, santral lenf nodu metastazı daha fazla ve genel sağkalım daha kötüdür.",
+        "B": "HT zeminindeki PTC daha iyi prognozludur; tümör daha küçük, santral metastaz daha nadir, BRAF^V600E mutasyon sıklığı belirgin az ve sağkalım daha olumludur. HT'nin tümör mikroçevresi koruyucu bariyer işlevi görür.",
+        "C": "HT ile PTC birlikteliğinde prognoz değişmez; HT tümör biyolojisini etkilemez.",
+        "D": "HT zemininde PTC geliştiğinde mutlaka daha agresif cerrahi yapılmalıdır; profilaktik santral boyun diseksiyonu standarttır.",
+        "E": "Hashimoto tiroiditi, PTC riskini azalttığından bu İİAB sonucu artefakttır; tekrar biyopsi yapılmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HT zemininde gelişen PTC: tümör küçük, santral metastaz nadir, BRAF^V600E az, prognoz iyi. HT tümör mikroçevresi (lenfosit infiltrasyonu) tümöre karşı bariyer oluşturur — 'iki keskinli kılıç' konsepti.",
+      "aciklama_detay": "Hashimoto tiroiditi ve PTC ilişkisi epidemiyolojik açıdan 'iki keskinli kılıç' olarak tanımlanır. HT kronik inflamasyon ve TSH yüksekliği yoluyla PTC gelişim riskini artırır. Ancak tümör oluştuktan sonra HT'nin immün mikroçevresi (TIL — tümör infiltre eden lenfositler) tümörün ilerlemesini frenler. HT zemininde gelişen PTC'de: boyut daha küçük, santral lenf nodu metastazı daha nadir, ekstratiroidal yayılım az, BRAF^V600E mutasyonu daha seyrek, sağkalım daha iyi. Prognoz farkı cerrahi genişliği değiştirmez — standart kılavuz önerileri uygulanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HT zeminindeki PTC daha az agresif değil daha az agresiftir; BRAF^V600E daha az sıklıkta görülür.",
+        "B": "DOGRU — HT tümör mikroçevresi koruyucu etkisi → daha iyi prognoz. 'İki keskinli kılıç' konsepti.",
+        "C": "YANLIS — HT tümör biyolojisini anlamlı biçimde etkiler; prognoz farklıdır.",
+        "D": "YANLIS — Prognoz avantajı cerrahi yaklaşımı değiştirmez; profilaktik santral diseksiyonu rutin önerilmez.",
+        "E": "YANLIS — HT ve PTC birlikteliği gerçektir; İİAB sonucunu HT varlığıyla göz ardı etmek hatalıdır."
+      },
+      "etiketler": [
+        "PTC + Hashimoto",
+        "Tümör Mikroçevresi",
+        "BRAF V600E",
+        "İki Keskinli Kılıç",
+        "Prognoz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Boi et al. J Endocrinol Invest 2015; Resende de Paiva et al. Thyroid 2017"
+    },
+    {
+      "id": "s9",
+      "metin": "Hashimoto tiroiditi patogenezinde Th1/Th17 polarizasyonu ve Treg hücre disfonksiyonu anahtar rol oynar.\n\nAşağıdaki sitokin-mekanizma eşleşmelerinden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "IFN-γ → tirositlerde Fas ekspresyonu artışı → apoptozis",
+        "B": "IL-1β + TNF-α → tiroid hücrelerinde FasL upregülasyonu → ölüm reseptörü yolağı aktivasyonu",
+        "C": "Perforin + Granzim B → CD8+ T hücrelerden salgılanır → doğrudan membran hasarı",
+        "D": "Anti-TPO antikorları → plasentayı geçer → fetal tiroid bezini direkt uyarır ve neonatal hipertiroidi yapar",
+        "E": "ROS + HIF-1α → oksidatif stres amplifikasyonu → inflamatuar sürecin şiddetlenmesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Anti-TPO antikorları plasentayı geçmez (ya çok az geçer) ve fetal tiroid bezini uyarmaz — TRAb (TSH reseptör antikoru) geçer ve Graves hastalığında fetal hipertiroidi yapar. Anti-TPO neonatal hipertiroidiye neden olmaz.",
+      "aciklama_detay": "Anti-TPO antikorları tiroid peroksidaz enzimine karşı gelişen IgG antikorlarıdır. IgG plasentayı geçebilir; ancak Anti-TPO fetal tiroid bezini stimüle etmez — TPO hücre içi bir enzimdir, TSH reseptörü gibi uyarılabilir yüzey reseptörü değildir. Fetal hipertiroidi TRAb (TSH reseptör uyarıcı antikor) ile olur — bu Graves hastalığının belirtecidir. Seçenekler A, B, C ve E gerçek Hashimoto patogenez mekanizmalarını doğru tanımlamaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU mekanizma — yanlış DEĞİL. IFN-γ tirositlerde Fas ekspresyonunu artırır.",
+        "B": "DOĞRU mekanizma — yanlış DEĞİL. IL-1β + TNF-α ölüm reseptörü yolağını aktive eder.",
+        "C": "DOĞRU mekanizma — yanlış DEĞİL. CD8+ T hücrelerden salınan perforin/granzim doğrudan membran hasarı verir.",
+        "D": "YANLIŞ MEKANİZMA — bu DOĞRU CEVAP. Anti-TPO fetal hipertiroidi yapmaz; bunu yapan TRAb'dir.",
+        "E": "DOĞRU mekanizma — yanlış DEĞİL. ROS + HIF-1α inflamasyonu amplifikasyonu."
+      },
+      "etiketler": [
+        "İmmünopatogenez",
+        "Anti-TPO",
+        "TRAb",
+        "Fetal Hipertiroidi",
+        "Fas/FasL"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Stassi & De Maria Nat Rev Immunol 2002; TEMD 2025"
+    },
+    {
+      "id": "s10",
+      "metin": "Yetmiş iki yaşında erkek hasta, yeni tanı aşikar hipotiroidi (Hashimoto) nedeniyle endokrinoloji polikliniğine başvurdu. Özgeçmişinde stabil anjina pektoris ve 6 ay önce geçirilmiş NSTEMI var. TSH: 18 mU/L, sT4: 0.54 ng/dL.\n\nBu hastada LT4 tedavisini başlama stratejisi için en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Genç hastalara uygulanan tam replasman dozu hesaplanarak (1.6 µg/kg/gün) hemen başlanmalıdır; geç tedavi kardiyak riski artırır.",
+        "B": "LT4 tedavisi kardiyovasküler hastalığı olan yaşlı hastada 12.5–25 µg/gün düşük doz ile başlanmalı; her 6–8 haftada TSH kontrolüyle yavaş titre edilmelidir.",
+        "C": "Aktif koroner hastalığı bulunan hastalarda LT4 başlanmamalı; kardiyoloji konsültasyonu sonrası tiroid tedavisi ertelenebilir.",
+        "D": "TSH 18 mU/L ile acil LT4 replasmanı gereklidir; ilk doz 100 µg IV olarak uygulanmalıdır.",
+        "E": "KAH'lı hastalarda LT4 yerine T3/T4 kombinasyonu kullanılmalıdır; T3 kardiyak koruma sağlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yaşlı + KAH: LT4 12.5–25 µg ile başla, her 6–8 haftada titre et. Hızlı doz artışı anjina, aritmi veya akut koroner sendrom tetikleyebilir.",
+      "aciklama_detay": "Hipotiroidide LT4 başlangıç dozu yaş ve kardiyovasküler duruma göre değişir. Genç/sağlıklı: 1.5–1.7 µg/kg/gün tam replasman. Yaşlı/KAH: 12.5–25 µg/gün ile başla. Mekanizma: Hipotiroidi uzun süreli düşük metabolizma ile kompanse kardiyak fonksiyon sağlar; LT4 hızla metabolizmayı artırdığında miyokard oksijen tüketimi artar → mevcut koroner stenoz yetersiz kalır → anjina veya MI tetiklenebilir. IV T3/T4 miksödem koması için rezerve edilir; bu hasta kronik hipotiroidi. T3 kardiyak koruma sağlamaz — aksine taşikardi/atriyal fibrilasyon riski yaratır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam replasman dozu KAH'lı yaşlıda kontrendike; miyokard iskemisini tetikler.",
+        "B": "DOGRU — 12.5–25 µg başlangıç + yavaş titrasyon: KAH'lı yaşlıda altın standart.",
+        "C": "YANLIS — Aşikar hipotiroidi tedavisiz bırakılmaz; düşük doz ile dikkatli başlanır.",
+        "D": "YANLIS — IV LT4/T3 miksödem koması içindir; bu hastada koma yok.",
+        "E": "YANLIS — T3/T4 kombinasyonunun KAH'ta üstünlüğü kanıtlanmamış; T3 aritmojenik potansiyel taşır."
+      },
+      "etiketler": [
+        "LT4 Başlangıç Dozu",
+        "KAH + Hipotiroidi",
+        "Yaşlı Hasta",
+        "Kardiyak Risk",
+        "Tirasyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Garber et al. Thyroid 2012; TEMD 2025"
     }
   ]
 }

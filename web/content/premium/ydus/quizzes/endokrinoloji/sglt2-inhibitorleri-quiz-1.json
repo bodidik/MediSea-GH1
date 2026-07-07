@@ -1,0 +1,308 @@
+{
+  "id": "quiz-endo-sglt2-001",
+  "baslik": "SGLT2 İnhibitörleri — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "sglt2-inhibitorleri",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Diyabetik böbrek hastalığı (DKD) olan bir hastada proksimal tübüler hücrelerde kronik hipoksi ve demir metabolizması bozukluğuna bağlı lipit peroksidasyonu aracılı hücre ölümü (ferroptozis) araştırılıyor. Hastaya empagliflozin başlanıyor.\n\nSGLT2 inhibitörünün ferroptozisi önleyici moleküler mekanizması hangisidir?",
+      "secenekler": {
+        "A": "mTORC1'i aktive ederek antioksidan gen ekspresyonunu artırır.",
+        "B": "AMPK/NRF2 yolağını aktive ederek nükleer translokasyon sağlar; GPX4 ve GCLM gibi antioksidan genlerin ekspresyonunu artırır ve HIF-1α/HO-1 aşırı aktivasyonunu baskılayarak Fenton reaksiyonuna girecek labile demir salınımını sınırlar.",
+        "C": "Doğrudan glutatyon peroksidaz 4'ü (GPX4) inhibe ederek lipit peroksidasyonunu durdurur.",
+        "D": "Tübüler hücrelerde demir alımını artırarak Fenton reaksiyonunu hızlandırır ve kompanzatuar antioksidan yanıtı tetikler.",
+        "E": "NHE3 aktivasyonu üzerinden demir homeostazını düzenler; AMPK/NRF2 ile ilgisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i: AMPK/NRF2 aktivasyonu → GPX4/GCLM artışı (antioksidan) + HIF-1α/HO-1 baskılanması → labile demir azalır → ferroptozis önlenir.",
+      "aciklama_detay": "SGLT2 inhibitörlerinin nefroprotektif etkisinin bir bileşeni ferroptozis inhibisyonudur. DKD'de kronik hipoksi ve bozulmuş demir metabolizması, lipit peroksidasyonu aracılı ferroptozise zemin hazırlar. SGLT2i'ler AMPK/NRF2 yolağını aktive ederek NRF2'nin nükleer translokasyonunu sağlar; bu da GPX4 (lipit peroksidasyonunu nötralize eden antioksidan enzim) ve GCLM gibi antioksidan genlerin ekspresyonunu artırır. Ayrıca tübüler hücrelerdeki patolojik HIF-1α/HO-1 aşırı aktivasyonunu baskılayarak Fenton reaksiyonuna girecek serbest (labile) demir salınımını sınırlandırırlar. Bu iki mekanizma birlikte ferroptozisi önler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SGLT2i mTORC1'i AKTİVE ETMEZ, tam tersine AMPK üzerinden BASKILAR.",
+        "B": "DOGRU — AMPK/NRF2 aktivasyonu → GPX4/GCLM artışı + HIF-1α/HO-1 baskısı → labile demir↓ → ferroptozis önlenir.",
+        "C": "YANLIS — SGLT2i GPX4'ü artırır, inhibe etmez.",
+        "D": "YANLIS — Mekanizma tam tersidir; demir alımını artırmaz, labile demiri sınırlar.",
+        "E": "YANLIS — Ferroptozis inhibisyonu AMPK/NRF2 yolağı ile ilişkilidir; NHE3 natriürez/renoproteksiyonla ilgilidir, demir homeostazı ile doğrudan bağlantılı değildir."
+      },
+      "etiketler": [
+        "Ferroptozis",
+        "AMPK/NRF2",
+        "GPX4",
+        "HIF-1α",
+        "Diyabetik Böbrek Hastalığı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Zhou et al. Am J Physiol Renal Physiol 2022; Packer M. Circulation 2022"
+    },
+    {
+      "id": "s2",
+      "metin": "SGLT2 inhibitörlerinin kardiyoprotektif etkisiyle ilgili bir çalışmada, kalp dokusunda SGLT2 reseptörünün eksprese edilmediği ancak yine de dapagliflozinin miyokardiyal düzeyde koruyucu etki gösterdiği belirtiliyor.\n\nBu \"off-target\" kardiyoprotektif etkinin moleküler temeli ve böbrekteki natriüretik mekanizmadan farkı nedir?",
+      "secenekler": {
+        "A": "Kalpte SGLT2i, NHE3'ü inhibe ederek natriürez sağlar; bu böbrekteki mekanizma ile aynıdır.",
+        "B": "Kalpte SGLT2i, miyokardiyal NHE1'i inhibe ederek hücre içi Na+/Ca2+ aşırı yükünü azaltır ve mitokondriyal Ca2+ regülasyonunu düzeltir; böbrekte ise SGLT2, NHE3 ile MAP17 chaperone proteini aracılığıyla proksimal tübülde kompleks oluşturur — bu iki etki farklı NHE izoformları (NHE1 vs NHE3) ve farklı organ mekanizmalarıdır.",
+        "C": "Kardiyoprotektif etki tamamen kilo kaybı ve kan basıncı düşüşüne bağlıdır; doğrudan miyokardiyal bir mekanizma yoktur.",
+        "D": "Kalpte SGLT1 reseptörü inhibe edilerek glukoz alımı bloke edilir ve bu doğrudan antiaritmik etki sağlar.",
+        "E": "Miyokardiyal etki, böbrekteki SGLT2 inhibisyonunun sekonder sonucu olan hafif hipovolemiye bağlıdır; doğrudan kalp üzerinde bir hedef yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kalp: NHE1 inhibisyonu (off-target, SGLT2 reseptörü kalpte yok) → Na+/Ca2+ yükü azalır → aritmi/fibrozis azalır. Böbrek: SGLT2–NHE3–MAP17 kompleksi → NHE3 inhibisyonu → natriürez artar. Farklı NHE izoformları, farklı organlar.",
+      "aciklama_detay": "SGLT2 inhibitörlerinin kardiyorenal koruyucu etkileri iki farklı NHE (Na+/H+ değiştirici) izoformu üzerinden, iki farklı organda gerçekleşir. Kalpte SGLT2 reseptörü eksprese edilmez; bu nedenle kardiyoprotektif etki bir off-target mekanizma olan NHE1 inhibisyonu ile açıklanır — hücre içi Na+ ve Ca2+ aşırı yükü azalır, mitokondriyal kalsiyum regülasyonu düzelir, aritmi riski ve miyokardiyal fibrozis azalır. Böbrekte ise proksimal tübülde SGLT2, NHE3 ile MAP17 adlı bir chaperone protein aracılığıyla aynı apikal mikrodomende fonksiyonel bir kompleks oluşturur; SGLT2 inhibisyonu eş zamanlı olarak NHE3 aktivitesini de baskılayarak natriürezi ve distal klorür sunumunu belirgin artırır. Bu ayrım (NHE1-kalp vs NHE3-böbrek) sınavlarda sıkça karıştırılan kritik bir noktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalpte mekanizma NHE1 üzerinden, böbrekte NHE3 üzerindendir; aynı değildir.",
+        "B": "DOGRU — NHE1 (kalp, off-target) vs NHE3-MAP17 kompleksi (böbrek) — iki ayrı izoform, iki ayrı organ.",
+        "C": "YANLIS — Doğrudan miyokardiyal NHE1 inhibisyonu tanımlanmıştır; etki yalnızca sekonder kilo/KB değişimine bağlı değildir.",
+        "D": "YANLIS — Kardiyoprotektif mekanizma SGLT1 değil NHE1 inhibisyonu ile açıklanır.",
+        "E": "YANLIS — Etki doğrudan miyokardiyal bir hedefe (NHE1) bağlıdır, sekonder hipovolemiye değil."
+      },
+      "etiketler": [
+        "NHE1",
+        "NHE3",
+        "MAP17",
+        "Off-Target Etki",
+        "Kardiyoproteksiyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Packer M. Circulation 2022; Uthman et al. Diabetologia 2018"
+    },
+    {
+      "id": "s3",
+      "metin": "SGLT2 inhibitörü kullanan bir hastada gerçek bir kalori kısıtlaması olmamasına rağmen hücresel düzeyde \"açlık taklidi\" (fasting-mimicking) durumu geliştiği gösteriliyor.\n\nBu metabolik şalter değişiminin altında yatan yolak ve sonuçları hangisidir?",
+      "secenekler": {
+        "A": "AMPK baskılanır, mTORC1 aktive olur; bu da de-novo lipogenezi artırır ve otofajiyi baskılar.",
+        "B": "AMPK aktive olur ve mTORC1 kompleksini baskılar; proksimal tübülde de-novo lipogenez baskılanır, CPT1A upregüle olarak mitokondriyal yağ asidi β-oksidasyonu (FAO) hızlanır ve otofaji teşvik edilir.",
+        "C": "İnsülin sekresyonu doğrudan artırılarak lipogenez uyarılır.",
+        "D": "Glukagon sekresyonu tamamen baskılanarak ketogenez engellenir.",
+        "E": "CPT1A enzimi baskılanarak yağ asidi oksidasyonu durdurulur ve hücre içi lipit birikimi artırılır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i: AMPK aktivasyonu → mTORC1 baskılanması → lipogenez↓, CPT1A↑ → FAO hızlanır, otofaji artar = açlık taklidi metabolik profili.",
+      "aciklama_detay": "SGLT2 inhibitörleri, vücutta gerçek bir açlık olmamasına rağmen enerji algılayıcı AMPK'yı aktive edip mTORC1 kompleksini baskılayarak hücreleri \"açlık taklidi\" (fasting-mimicking) durumuna sokar. Bu metabolik şalter değişimi sayesinde proksimal tübülde de-novo lipogenez baskılanır, CPT1A (karnitin palmitoiltransferaz 1A) enzimi upregüle edilerek mitokondriyal yağ asidi β-oksidasyonu (FAO) hızlanır ve otofaji teşvik edilir. Bu mekanizma, SGLT2i'lerin ketogenez artışı (öglisemik DKA riski) ve hücresel temizlenme/onarım süreçlerini destekleyici etkilerinin de temelini oluşturur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersi doğrudur: AMPK AKTİVE olur, mTORC1 BASKILANIR.",
+        "B": "DOGRU — AMPK↑ → mTORC1↓ → lipogenez↓, CPT1A↑ → FAO↑, otofaji↑.",
+        "C": "YANLIS — SGLT2i glukozüri yoluyla dolaylı olarak insülin ihtiyacını AZALTIR, doğrudan insülin sekresyonunu artırmaz.",
+        "D": "YANLIS — SGLT2i glukagon/insülin oranını ketogenez lehine değiştirir (glukagonu baskılamaz, tam tersi bir eğilim söz konusudur); bu da öglisemik DKA riskiyle ilişkilidir.",
+        "E": "YANLIS — CPT1A upregüle edilir (baskılanmaz), FAO hızlanır."
+      },
+      "etiketler": [
+        "AMPK",
+        "mTORC1",
+        "CPT1A",
+        "Fasting-Mimicking",
+        "Otofaji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Packer M. Diabetes Obes Metab 2020; Verma et al. JACC Basic Transl Sci 2021"
+    },
+    {
+      "id": "s4",
+      "metin": "Elli sekiz yaşında kadın hasta, HFpEF (LVEF %58) tanılı, aynı zamanda tip 2 diyabetik. Kardiyoloji, kalp yetersizliği tedavi rejimine SGLT2 inhibitörü eklemeyi planlıyor. Hasta önceden Sakubitril/Valsartan (ARNI) denemiş ancak EF korunduğu için belirgin fayda görmemiş.\n\nSGLT2 inhibitörlerinin LVEF spektrumundaki etkinlik profili ARNI'den nasıl ayrılır?",
+      "secenekler": {
+        "A": "SGLT2i yalnızca LVEF <%40 olan hastalarda etkilidir, HFpEF'te faydası yoktur — ARNI ile aynı sınırlılığı taşır.",
+        "B": "SGLT2i, LVEF spektrumunun tamamında (<%50, %50-59, ≥%60) KV mortalite ve KY hastaneye yatış riskini tutarlı biçimde azaltır; bu 'sınıf etkisi', EF korundukça etkinliğini yitiren ARNI'den SGLT2i'yi net biçimde ayırır.",
+          "C": "ARNI de tüm EF spektrumunda SGLT2i ile eşdeğer etkinlik gösterir; aralarında fark yoktur.",
+        "D": "SGLT2i yalnızca HFpEF'te etkilidir, HFrEF'te ARNI'ye üstünlüğü yoktur.",
+        "E": "SGLT2i'nin EF spektrumundaki etkinliği yalnızca diyabetik hastalarla sınırlıdır; diyabetik olmayan HFpEF hastalarında fayda gösterilmemiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i tüm LVEF spektrumunda (HFrEF, HFmrEF, HFpEF) tutarlı fayda gösterir — ARNI'nin EF korundukça etkinliğini kaybetmesinden farklı olarak. Bu 'uniform sınıf etkisi' SGLT2i'yi ayırt eden özelliktir.",
+      "aciklama_detay": "SGLT2 inhibitörleri (DAPA-HF, EMPEROR-Reduced HFrEF'te; DELIVER, EMPEROR-Preserved HFpEF/HFmrEF'te) sol ventrikül ejeksiyon fraksiyonu spektrumunun tamamında (<%50, %50-59 ve ≥%60) kardiyovasküler mortalite ve kalp yetersizliği hastaneye yatış riskini tutarlı bir şekilde azaltmıştır. Bu 'sınıf etkisi', ejeksiyon fraksiyonu korundukça (HFpEF) etkinliğini yitiren Sakubitril/Valsartan (ARNI, PARAGON-HF çalışmasında sınırlı/marjinal fayda) tedavisinden SGLT2 inhibitörlerini klinik olarak net bir şekilde ayırır ve SGLT2i'lerin HFpEF'te (diyabetik olsun olmasın) tercih edilen temel tedavi haline gelmesini sağlamıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SGLT2i'nin en önemli özelliği tam tersine HFpEF'te de etkili olmasıdır.",
+        "B": "DOGRU — Tüm EF spektrumunda tutarlı fayda; ARNI'den bu yönüyle ayrılır.",
+        "C": "YANLIS — ARNI, HFpEF'te (PARAGON-HF) SGLT2i kadar tutarlı/güçlü fayda göstermemiştir.",
+        "D": "YANLIS — SGLT2i hem HFrEF hem HFpEF'te etkilidir, HFrEF'te de kanıtlanmış temel tedavidir.",
+        "E": "YANLIS — Fayda diyabetik olmayan HFpEF hastalarında da (DELIVER, EMPEROR-Preserved) gösterilmiştir."
+      },
+      "etiketler": [
+        "HFpEF",
+        "HFrEF",
+        "ARNI",
+        "LVEF Spektrumu",
+        "Sınıf Etkisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Solomon et al. N Engl J Med 2022 (DELIVER); McMurray et al. N Engl J Med 2019 (DAPA-HF)"
+    },
+    {
+      "id": "s5",
+      "metin": "Altmış dört yaşında erkek hasta, akut ST-elevasyonlu miyokard infarktüsü (STEMI) geçiriyor ve başarılı primer PKG sonrası taburcu edilirken erken dönemde SGLT2 inhibitörü başlanması planlanıyor.\n\nEMPACT-MI ve DAPA-MI çalışmalarının sonuçlarına göre, post-AMI erken dönemde başlanan SGLT2 inhibitörünün beklenen klinik faydası hangisidir?",
+      "secenekler": {
+        "A": "Tekrarlayan miyokard infarktüsü ve inme gibi iskemik (aterotrombotik) MACE sonlanımlarını anlamlı şekilde azaltır.",
+        "B": "İskemik/aterotrombotik MACE sonlanımlarını (tekrar Mİ, inme, KV ölüm) azaltmamıştır; asıl fayda miyokardiyal remodeling'i yavaşlatarak sekonder kalp yetersizliği (HHF) gelişimini engellemesidir.",
+        "C": "Erken dönemde başlandığında kontrendikedir; akut Mİ sonrası en az 3 ay beklenmelidir.",
+        "D": "Yalnızca kardiyak ölümü azaltır, kalp yetersizliği hastaneye yatışı üzerinde etkisi yoktur.",
+        "E": "Post-AMI faydası tamamen glisemik kontrole bağlıdır; diyabetik olmayan hastalarda hiçbir fayda gösterilmemiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "EMPACT-MI/DAPA-MI: post-AMI erken SGLT2i iskemik MACE'i azaltmaz; fayda remodeling'i yavaşlatarak HHF gelişimini önlemekle sınırlıdır.",
+      "aciklama_detay": "EMPACT-MI ve DAPA-MI çalışmaları, akut miyokard infarktüsü sonrası erken dönemde (birkaç gün içinde) başlanan SGLT2 inhibitörlerinin kardiyovasküler mortalite, tekrarlayan miyokard infarktüsü veya inme gibi iskemik (aterotrombotik) koroner MACE sonlanımlarını azaltmadığını göstermiştir. Aterosklerotik plak üzerindeki anti-inflamatuvar etkileri hücresel düzeyde gösterilmiş olsa da, akut evredeki asıl klinik fayda 'iskemiyi önlemekten' ziyade miyokardiyal yeniden şekillenmeyi (remodeling) yavaşlatarak sekonder kalp yetersizliği (HHF) gelişimini engellemek olmuştur. Bu, sınavlarda sıkça karıştırılan önemli bir ayrımdır: SGLT2i post-Mİ 'antiiskemik' değil, 'antiremodeling/HF-önleyici' bir ajandır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu tam tersidir; çalışmalar iskemik MACE'de anlamlı azalma GÖSTERMEMİŞTİR.",
+        "B": "DOGRU — İskemik MACE'de fayda yok; asıl kazanım remodeling yavaşlaması ve HHF önlenmesi.",
+        "C": "YANLIS — Erken başlama kontrendike değildir; çalışmalar erken başlangıcı değerlendirmiştir ve güvenlidir.",
+        "D": "YANLIS — Asıl gösterilen fayda KY hastaneye yatışının azalmasıdır, kardiyak ölüm üzerinde belirgin bağımsız etki gösterilmemiştir.",
+        "E": "YANLIS — Bu çalışmalar diyabetik olmayan post-AMI popülasyonunu da kapsamaktaydı; fayda glisemik kontrolle sınırlı değildir."
+      },
+      "etiketler": [
+        "EMPACT-MI",
+        "DAPA-MI",
+        "Post-AMI",
+        "MACE",
+        "Remodeling"
+      ],
+      "zorluk": "zor",
+      "kaynak": "James et al. N Engl J Med 2024 (EMPACT-MI); Oyama et al. Eur Heart J 2024 (DAPA-MI)"
+    },
+    {
+      "id": "s6",
+      "metin": "Evre 5 kronik böbrek hastalığı nedeniyle hemodiyaliz programında olan 55 yaşında diyabetik hasta, mevcut kılavuzlarda SGLT2 inhibitörü başlama eşiği olan eGFR ≥20 mL/dk sınırının çok altında. Nefroloji ekibi yine de dapagliflozin başlamayı tartışıyor.\n\nBu klinik kararın dayandığı güncel kanıt ve farmakokinetik gerekçe hangisidir?",
+      "secenekler": {
+        "A": "Faz 3 çalışmalarının (DAPA-CKD, EMPA-KIDNEY) doğrudan diyaliz hastalarını içerdiği ve bu popülasyonda kanıtlanmış fayda gösterdiği bilinmektedir.",
+        "B": "Faz 3 çalışmaların dışlama kriteri olan evre 5 KBH/diyaliz hastalarında target trial emulation çalışmaları, SGLT2i kullanımının diyalize başlama riskini ve KV mortaliteyi anlamlı azalttığını göstermiştir; dapagliflozin diyalize edilemediği ve kümülatif toksisite yaratmadığı için bu grupta güvenli bir PK profili sunar.",
+        "C": "Diyaliz hastalarında SGLT2i tamamen kontrendikedir; glukozürik etkinin diyaliz ile birlikte ölümcül hipoglisemiye yol açacağı gösterilmiştir.",
+        "D": "SGLT2i diyaliz membranından tamamen filtre edildiğinden diyaliz seansları sırasında ek doz gerekir.",
+        "E": "Bu popülasyonda kanıt yalnızca hayvan modellerine dayanmaktadır; insan verisi mevcut değildir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "DAPA-CKD/EMPA-KIDNEY diyaliz hastalarını dışlamıştı; ancak target trial emulation çalışmaları bu grupta fayda gösterdi. Dapagliflozin diyalize edilmez, kümülatif toksisite yapmaz → PK açısından güvenli.",
+      "aciklama_detay": "Güncel kılavuzlar SGLT2i'nin eGFR ≥20 mL/dk düzeyinde başlanmasını önerir çünkü pivot Faz 3 çalışmaları (DAPA-CKD, EMPA-KIDNEY) evre 5 KBH ve diyaliz hastalarını dışlama kriteri olarak almıştır. Ancak observasyonel target trial emulation tasarımlı çalışmalar, bu popülasyonda (hemodiyaliz/periton diyalizi) SGLT2i kullanımının diyalize başlama riskini ve kardiyovasküler mortaliteyi anlamlı ölçüde azalttığını göstermiştir. Dapagliflozinin diyaliz membranından edilememesi (diyalize edilmez) ve kümülatif toksisite yaratmaması, bu grupta farmakokinetik açıdan güvenli bir profil sunar. Ayrıca periton diyalizi hastalarında rezidüel böbrek fonksiyonunu koruyabildikleri ve peritoneal glukoz absorpsiyonunu modüle ederek ultrafiltrasyon yetmezliğini düzeltebilecekleri yönünde küçük çaplı veriler birikmektedir. Bu, güncel off-label kullanım alanlarından biridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — DAPA-CKD ve EMPA-KIDNEY diyaliz hastalarını DIŞLAMIŞTIR, içermemiştir.",
+        "B": "DOGRU — Target trial emulation verileri + güvenli PK profili (diyalize edilmeme) off-label kullanımı destekler.",
+        "C": "YANLIS — SGLT2i hipoglisemi riskini monoterapi olarak belirgin artırmaz; bu iddia yanlıştır.",
+        "D": "YANLIS — Diyalize edilmediği için ek doz gerekmez; bu farmakokinetik avantajın ta kendisidir.",
+        "E": "YANLIS — İnsan gözlemsel/target trial emulation verileri mevcuttur, yalnızca hayvan modeli değildir."
+      },
+      "etiketler": [
+        "Diyaliz",
+        "Evre 5 KBH",
+        "Target Trial Emulation",
+        "Off-Label",
+        "Dapagliflozin PK"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Fu et al. J Am Soc Nephrol 2023; Kidney Disease: Improving Global Outcomes (KDIGO) 2024"
+    },
+    {
+      "id": "s7",
+      "metin": "Övolemik hiponatremi (Na 122 mEq/L) ile başvuran ve ileri tetkiklerle SIADH tanısı konan bir hastada, tolvaptan tedavisinin maliyeti ve hepatotoksisite riski nedeniyle alternatif bir yaklaşım değerlendiriliyor.\n\nSGLT2 inhibitörlerinin SIADH kaynaklı övolemik hiponatremide vaptanlara rasyonel bir alternatif oluşturmasının mekanizması nedir?",
+      "secenekler": {
+        "A": "SGLT2i doğrudan vazopressin reseptörünü (V2R) antagonize ederek vaptanlarla aynı mekanizmayla etki gösterir.",
+        "B": "SGLT2i'nin glukozürik ozmotik diürezi, loop diüretiklerin aksine medüller konsantrasyon gradiyentini bozmaz; bu sayede vazopressin aktivitesi devam etse bile toplayıcı tübüllerdeki su geri emilimi engellenerek elektrolitsiz serbest su klerensi artırılır.",
+        "C": "SGLT2i, ADH sekresyonunu hipotalamik düzeyde doğrudan baskılayarak etki gösterir.",
+        "D": "SGLT2i'nin etkisi yalnızca hipervolemik hiponatremide geçerlidir, övolemik SIADH'de etkisizdir.",
+        "E": "SGLT2i, aldosteron sekresyonunu artırarak sodyum geri emilimini artırır ve bu yolla hiponatremiyi düzeltir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i glukozürik ozmotik diürez yapar, medüller gradiyenti bozmaz (loop diüretiklerden farklı olarak); vazopressin etkisi sürerken toplayıcı tübülde su geri emilimini engelleyip elektrolitsiz serbest su klerensini artırır.",
+      "aciklama_detay": "SIADH'de asıl sorun, uygunsuz yüksek ADH aktivitesine bağlı toplayıcı tübüllerde aşırı su geri emilimidir. SGLT2 inhibitörlerinin proksimal tübüldeki glukozürik ozmotik diürezi, loop diüretikleri gibi medüller konsantrasyon gradiyentini bozmaz (loop diüretikler Henle kulpunda Na-K-2Cl kotransportunu inhibe ederek gradiyenti yıkar). Medüller gradiyent korunduğu için, vazopressin aktivitesi devam etse bile, glukozürinin oluşturduğu ozmotik yük toplayıcı tübüllerdeki net su geri emilimini azaltarak elektrolitsiz serbest su klerensini artırır. Bu özellik, SGLT2i'leri SIADH kaynaklı övolemik hiponatremide, pahalı ve hepatotoksisite riski taşıyan vaptanlara karşı rasyonel, ucuz bir alternatif haline getirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SGLT2i V2 reseptörünü antagonize etmez; mekanizma tamamen farklıdır (tübüler ozmotik etki).",
+        "B": "DOGRU — Medüller gradiyent korunur + ozmotik diürez → elektrolitsiz serbest su klerensi artışı.",
+        "C": "YANLIS — ADH sekresyonunu hipotalamik düzeyde baskılamaz; renal düzeyde etki gösterir.",
+        "D": "YANLIS — Asıl rasyonel kullanım alanı tam olarak övolemik SIADH'dir.",
+        "E": "YANLIS — SGLT2i aldosteronu artırmaz; bu mekanizma tanımlanmamıştır ve hiponatremiyi açıklamaz."
+      },
+      "etiketler": [
+        "SIADH",
+        "Övolemik Hiponatremi",
+        "Elektrolitsiz Serbest Su Klerensi",
+        "Vaptan Alternatifi",
+        "Medüller Gradiyent"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Refardt et al. J Am Soc Nephrol 2023; Blevins et al. J Endocr Soc 2022"
+    },
+    {
+      "id": "s8",
+      "metin": "T2DM'li 62 yaşında kırılgan (frail) hasta, empagliflozin başlandıktan sonraki 6 ayda kilo veriyor ve serum kreatininde beklenmedik şekilde hafif düşüş + eGFR'de \"iyileşme\" izleniyor. Nefroloji, bu bulgunun gerçek bir renal fonksiyon iyileşmesi mi yoksa metodolojik bir yanılgı mı olduğunu tartışıyor.\n\nBu durumun altında yatan olası metodolojik kritik hangisidir?",
+      "secenekler": {
+        "A": "SGLT2i'ler doğrudan kreatinin sekresyonunu tübüler düzeyde artırarak yapay olarak düşük kreatinin gösterir; gerçek GFR değişmez.",
+        "B": "SGLT2i'lere bağlı kronik, hafif iskelet kası kütlesi azalması dolaşımdaki total kreatinin havuzunu düşürür; kreatinin bazlı eGFR hesaplamalarında bu durum 'fonksiyonun daha iyi korunduğu' yönünde yanlılık (bias) yaratabilir — Sistatin-C bazlı GFR ile doğrulama önerilir.",
+        "C": "Bu bulgu yalnızca laboratuvar hatasına bağlıdır ve klinik çalışmalarda hiç tartışılmamıştır.",
+        "D": "SGLT2i'ler glomerüler filtrasyonu gerçek anlamda artırarak hiperfiltrasyonu tetikler; bu istenmeyen bir etkidir.",
+        "E": "Kreatinin düşüşü yalnızca hidrasyon durumundaki değişikliğe bağlıdır, kas kütlesiyle ilgisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i'ye bağlı hafif sarkopeni → total kreatinin havuzu azalır → kreatinin bazlı eGFR yapay olarak yüksek/korunmuş görünebilir. Gerçek etkinin doğrulanması için Sistatin-C bazlı GFR önerilir.",
+      "aciklama_detay": "SGLT2 inhibitörleri ortalama 2-3 kg kilo kaybettirir; bunun büyük kısmı yağ kütlesinden olsa da iskelet kası kütlesinde de istatistiksel olarak anlamlı, klinik olarak minimal bir azalma gözlenir. Bu kronik ve yavaş kas kütlesi kaybı, dolaşımdaki total kreatinin havuzunu düşürür (kreatinin kas metabolizmasının bir yan ürünüdür). DAPA-CKD, EMPA-KIDNEY gibi böbrek koruyucu çalışmaların tamamı kreatinin bazlı eGFR formüllerini kullanmıştır. SGLT2i kullananlarda azalan kas kütlesine bağlı düşen kreatinin üretimi, serum kreatininini olduğundan düşük gösterip eGFR'de 'fonksiyonun çok daha iyi korunduğu' yönünde matematiksel bir yanlılık (bias) yaratmış olabilir. Bu nedenle araştırmacılar, SGLT2i'lerin gerçek böbrek koruyucu etkisinin (özellikle eGFR yamaç/slope analizlerinin), kas kütlesinden bağımsız olan Sistatin-C bazlı GFR formülleriyle de yeniden değerlendirilmesi gerektiğini tartışmaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tanımlanan mekanizma tübüler kreatinin sekresyonu artışı değil, azalan kas kütlesine bağlı düşük kreatinin ÜRETİMİDİR.",
+        "B": "DOGRU — Sarkopeniye bağlı düşük kreatinin üretimi → eGFR'de yapay iyileşme görünümü → Sistatin-C ile doğrulama önerisi.",
+        "C": "YANLIS — Bu, güncel literatürde ciddi şekilde tartışılan, iyi tanımlanmış bir metodolojik kritiktir; laboratuvar hatası değildir.",
+        "D": "YANLIS — SGLT2i'ler tam tersine tek nefron hiperfiltrasyonunu AZALTIR (TGF restorasyonu); artırmaz.",
+        "E": "YANLIS — Hidrasyon tek başına açıklayıcı değildir; kronik, sürekli kas kütlesi kaybı asıl mekanizma olarak öne sürülmektedir."
+      },
+      "etiketler": [
+        "Sarkopeni",
+        "Kreatinin Bazlı eGFR",
+        "Sistatin-C",
+        "Metodolojik Bias",
+        "DAPA-CKD"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Adamson et al. Diabetes Obes Metab 2023; Heerspink et al. N Engl J Med 2020 (DAPA-CKD)"
+    },
+    {
+      "id": "s9",
+      "metin": "Aterosklerotik kardiyovasküler hastalığı olan T2DM'li bir hastada tedavi rejimine hem SGLT2 inhibitörü hem de GLP-1 reseptör agonisti eklenmesi planlanıyor.\n\nBu kombinasyon tedavisinin, her bir ajanın monoterapisine kıyasla sağladığı ek fayda ve mekanistik gerekçe hangisidir?",
+      "secenekler": {
+        "A": "İki ajan da aynı hemodinamik mekanizma (natriürez) üzerinden etki eder; kombinasyon yalnızca additif glisemik kontrol sağlar, kardiyovasküler fayda üst üste binmez (redundant).",
+        "B": "SGLT2i hemodinamik/miyokardiyal yollardan (NHE1 inhibisyonu, natriürez) kalp yetersizliğini hedeflerken, GLP-1 RA sistemik anti-inflamatuvar/anti-aterojenik yollardan Mİ ve inmeyi engeller; bu örtüşmeyen mekanizmalar sayesinde kombinasyon MACE, HHF ve mortaliteyi additif biçimde daha belirgin azaltır.",
+        "C": "GLP-1 RA'nın kardiyovasküler faydası yalnızca kilo kaybına bağlıdır; SGLT2i eklenmesi bu faydayı nötralize eder.",
+        "D": "Kombinasyon tedavisi güvenlik nedeniyle önerilmez; iki ilaç birlikte kullanıldığında ciddi hipoglisemi riski nedeniyle kontrendikedir.",
+        "E": "SGLT2i ve GLP-1 RA kombinasyonunun kardiyovasküler sonlanımlar üzerine hiçbir kanıtı yoktur, yalnızca teorik bir öngörüdür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SGLT2i (hemodinamik/miyokardiyal, HHF odaklı) + GLP-1 RA (anti-inflamatuvar/anti-aterojenik, Mİ/inme odaklı) — örtüşmeyen mekanizmalar additif kardiyovasküler fayda sağlar.",
+      "aciklama_detay": "SGLT2i ve GLP-1 RA'lar farklı, birbirini tamamlayan kardiyoprotektif mekanizmalara sahiptir. SGLT2i'ler esas olarak hemodinamik (natriürez, ön/art yük azaltımı) ve miyokardiyal (NHE1 inhibisyonu, enerji reprogramlaması) yollardan kalp yetersizliğine bağlı hastaneye yatışı (HHF) azaltmada güçlüdür. GLP-1 RA'lar ise sistemik anti-inflamatuvar ve anti-aterojenik etkilerle (plak stabilizasyonu, endotel fonksiyonu, kilo kaybı, kan basıncı) miyokard infarktüsü ve inme gibi aterotrombotik olayları azaltmada öne çıkar. Bu nedenle, kardiyovasküler riski yüksek T2DM hastalarında iki ajanın kombinasyonu, yalnızca glisemik kontrol/kilo/kan basıncı gibi risk faktörlerini güçlendirmekle kalmaz; her birinin monoterapisine kıyasla MACE, HHF ve hem kardiyovasküler hem tüm nedenli mortaliteyi additif bir etkiyle daha belirgin azaltır. Güncel kardiyovasküler risk odaklı tedavi algoritmaları bu nedenle yüksek riskli hastalarda kombinasyonu teşvik etmektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mekanizmalar örtüşmez (hemodinamik/miyokardiyal vs anti-inflamatuvar/anti-aterojenik); fayda redundant değil additiftir.",
+        "B": "DOGRU — Farklı, tamamlayıcı mekanizmalar → additif MACE/HHF/mortalite azalması.",
+        "C": "YANLIS — GLP-1 RA'nın kardiyovasküler faydası kilo kaybından bağımsız mekanizmaları da içerir (anti-inflamatuvar, anti-aterojenik); SGLT2i bu faydayı nötralize etmez.",
+        "D": "YANLIS — Kombinasyon güvenlidir; monoterapi olarak ikisi de belirgin hipoglisemi riski taşımaz (insülin sekretagogu değildir); kontrendikasyon yoktur.",
+        "E": "YANLIS — Kombinasyonun kardiyovasküler faydasına dair gözlemsel ve randomize kanıtlar mevcuttur, yalnızca teorik değildir."
+      },
+      "etiketler": [
+        "GLP-1 RA Kombinasyonu",
+        "MACE",
+        "Additif Etki",
+        "Kardiyoprotektif Mekanizma",
+        "Kombinasyon Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Rossing et al. Diabetes Obes Metab 2023; ElSayed et al. Diabetes Care (ADA Standards of Care) 2024"
+    },
+    {
+      "id": "s10",
+      "metin": "Kompanse Child-Pugh B sirozu olan bir hastada, artmış RAAS aktivitesine sekonder diüretik dirençli asit gelişiyor. Hastanın proksimal tübülde NHE3 aşırı aktivasyonuna bağlı sodyum tutulumu belirgin.\n\nSGLT2 inhibitörlerinin bu klinik senaryoda araştırılan potansiyel faydasının mekanizması hangisidir?",
+      "secenekler": {
+        "A": "SGLT2i, distal tübülde epitelyal sodyum kanalını (ENaC) doğrudan bloke ederek spironolakton ile aynı etkiyi gösterir.",
+        "B": "SGLT2i, dekompanse sirozda artmış RAAS aktivitesine bağlı proksimal NHE3 aşırı çalışmasını SGLT2–NHE3 fonksiyonel bağlantısı üzerinden bloke ederek natriürezi artırır; bu diüretik dirençli asit yönetiminde potansiyel bir yaklaşım olarak araştırılmaktadır.",
+        "C": "SGLT2i karaciğerde albumin sentezini artırarak onkotik basıncı düzeltir ve bu yolla asiti azaltır.",
+        "D": "SGLT2i'nin sirotik hastalarda hiçbir rasyonel kullanım gerekçesi yoktur; bu popülasyonda kesinlikle kontrendikedir.",
+        "E": "SGLT2i, hepatik venöz basıncı doğrudan düşürerek portal hipertansiyonu tedavi eder."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dekompanse sirozda RAAS↑ → proksimal NHE3 aşırı aktivasyonu → Na tutulumu. SGLT2i, SGLT2–NHE3 bağlantısı üzerinden NHE3'ü bloke ederek natriürezi artırır — diüretik dirençli asitte araştırılan bir strateji.",
+      "aciklama_detay": "Dekompanse sirozda splanknik vazodilatasyona sekonder efektif dolaşım hacmi azalması, RAAS aktivasyonuna ve buna bağlı proksimal tübülde NHE3 aracılı aşırı sodyum geri emilimine yol açar — bu durum diüretik direncine katkıda bulunan mekanizmalardan biridir. SGLT2 inhibitörleri, proksimal tübülde SGLT2–NHE3–MAP17 fonksiyonel kompleksi üzerinden NHE3 aktivitesini de baskılayarak natriürez ve distal klorür sunumunu artırabilir. Bu özellik, dekompanse sirozda diüretik dirençli asit yönetiminde potansiyel bir tedavi stratejisi olarak araştırma aşamasındadır (henüz standart tedavi değildir, dikkatli klinik değerlendirme ve izlem gerektirir — özellikle volüm durumu ve renal fonksiyon açısından).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SGLT2i ENaC'ı bloke etmez; bu spironolaktonun/amiloridin mekanizmasıdır.",
+        "B": "DOGRU — SGLT2–NHE3 bağlantısı üzerinden NHE3 blokajı → natriürez artışı → diüretik dirençli asitte araştırılan potansiyel.",
+        "C": "YANLIS — SGLT2i albumin sentezini artırmaz; onkotik basınç mekanizması ile ilgili değildir.",
+        "D": "YANLIS — Kesin kontrendikasyon yoktur; potansiyel fayda araştırılmaktadır (dikkatli klinik değerlendirme gerekir).",
+        "E": "YANLIS — SGLT2i doğrudan hepatik venöz basıncı düşürmez; portal hipertansiyon tedavisi değildir, natriürez üzerinden asit yönetimine katkı sağlayabilir."
+      },
+      "etiketler": [
+        "Sirotik Asit",
+        "NHE3",
+        "RAAS",
+        "Diüretik Direnci",
+        "Off-Label"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Zhang et al. Hepatol Int 2023; Kalambokis et al. Liver Int 2022"
+    }
+  ]
+}

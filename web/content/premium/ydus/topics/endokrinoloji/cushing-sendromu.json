@@ -1,0 +1,381 @@
+{
+  "meta": {
+    "id": "cushing-sendromu",
+    "branch": "endokrinoloji",
+    "baslik": "Cushing Sendromu",
+    "altbaslik": "ACTH-bağımlı/bağımsız etiyoloji, USP8/PRKACA/ARMC5 moleküler genetiği, tanı algoritması, BIPSS ve medikal tedavi (osilodrostat, mifepriston, block-and-replace)",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Cushing sendromu (CS); dokuların kronik ve uygunsuz olarak yüksek düzeyde glukokortikoide maruz kalması sonucu ortaya çıkan, multisistemik, metabolik, kardiyovasküler ve nöropsikiyatrik komplikasyonlarla seyreden klinik bir tablodur. Erken tanı ve tedavi artmış morbidite/mortaliteyi önlemek açısından kritiktir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyoloji ve Sınıflandırma",
+      "kolonlar": [
+        "Kategori",
+        "Alt Tip (Oran)",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "ACTH-Bağımlı (~%80) ★",
+            "Cushing Hastalığı (%68-70)",
+            "Hipofiz ACTH-salgılayan adenom (genellikle mikroadenom); kadın:erkek 3-8:1"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "ACTH-Bağımlı",
+            "Ektopik ACTH Sendromu (%10-15)",
+            "En sık küçük hücreli akciğer Ca, bronşiyal/timik NET, pankreatik adacık tm, medüller tiroid Ca. Erkeklerde sık; hızlı progresyon, miyopati, şiddetli hipokalemi"
+          ]
+        },
+        {
+          "hucreler": [
+            "ACTH-Bağımlı",
+            "Ektopik CRH Sendromu (<%1)",
+            "Çok nadir; CRH salgılayan tümör"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "ACTH-Bağımsız (~%20)",
+            "Adrenal Adenom (%10)",
+            "Genellikle yalnız kortizol salgılar; androjen artışı beklenmez"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "ACTH-Bağımsız",
+            "Adrenokortikal Karsinom (ACC) (%8)",
+            "Hızlı başlangıç; kortizol + androjen prekürsörleri → virilizasyon/hirsutizm eşlik eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "ACTH-Bağımsız",
+            "Primer Bilateral Makronodüler Adrenal Hiperplazi (PBMAH) (<%1)",
+            "Bilateral >1 cm nodüller"
+          ]
+        },
+        {
+          "hucreler": [
+            "ACTH-Bağımsız",
+            "Primer Pigmente Nodüler Adrenokortikal Hastalık (PPNAD) (<%1)",
+            "Carney kompleksinin parçası veya izole"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Pseudo-Cushing (Non-Neoplastik Hiperkortizolizm): Gerçek tümöral patoloji olmaksızın HPA aksının kronik aktivasyonu sonucu hafif hiperkortizolizm gelişir. Obezite, PKOS, majör depresif bozukluk, kontrolsüz DM, gebelik, malnütrisyon ve kronik alkolizmde görülür."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Moleküler Genetik — YDUS Spot Bilgiler",
+      "kolonlar": [
+        "Tutulum",
+        "Gen / Mutasyon",
+        "Mekanizma ve Klinik Önem"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Cushing Hastalığı (Hipofizer) ★",
+            "USP8 (%40-50 somatik mutasyon)",
+            "USP8 deubikuitinaz; mutasyonla EGFR lizozomal yıkımdan kurtulup yıkım yerine hücre zarına geri döner (recycling) → EGFR sinyali aşırı aktifleşir → POMC/ACTH sentezi artar. Bu tümörlerde SSTR5 ekspresyonu yüksek → pasireotide daha iyi yanıt"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Adrenal Adenom ★",
+            "PRKACA (L205R/L206R, %40-50)",
+            "PKA katalitik alt birimi aktive edici mutasyon; katalitik alt birim düzenleyici alt birimden ayrılır → cAMP'den bağımsız sürekli aktivasyon. Hafif otonom sekresyonlu (MACS) adenomlarda ise CTNNB1 (β-katenin, Wnt yolağı) dominan"
+          ]
+        },
+        {
+          "hucreler": [
+            "PPNAD / Carney Kompleksi",
+            "PRKAR1A (inaktive edici)",
+            "PKA düzenleyici tip 1α alt birimi kaybı → PKA aşırı aktivasyonu"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "PBMAH — Aberran Reseptör",
+            "GİP, V1-vazopressin, LH/hCG, β-adrenerjik reseptör",
+            "Adrenal hücrelerde uygunsuz ekspresyon → uyarıyla kortizol üretimi (GİP-bağımlı form = gıda ile alevlenen Cushing)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "PBMAH — ARMC5 ★",
+            "ARMC5 (germline+somatik, ~%25, OD geçiş)",
+            "Tümör baskılayıcı gen; daha ağır klinik tablo + ailevi menenjiyom riski"
+          ]
+        },
+        {
+          "hucreler": [
+            "PBMAH — GİP-bağımlı",
+            "KDM1A",
+            "Gıda alımıyla tetiklenen (GİP aracılı) Cushing sendromunun genetik temeli"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Klinik Sınav Spotu: USP8 mutasyonlu kortikotrop adenomlar SSTR5 ekspresyonu yüksek olduğundan pasireotide daha duyarlıdır. PRKACA mutasyonu = unilateral adrenal adenomda en sık somatik mutasyon (L205R/L206R). ARMC5 = PBMAH'ta hem daha ağır hastalık hem ailevi menenjiyom riski ile hatırlanır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular ve Komplikasyonlar",
+      "satirlar": [
+        {
+          "metin": "**Yüksek özgüllüğe sahip (discriminatory) bulgular:** Proksimal kas güçsüzlüğü (miyopati), fasiyal pletora, travmasız kolay morarma (ekimoz), >1 cm genişliğinde mor/viyolase strialar, genç yaşta açıklanamayan osteoporoz — en güçlü öngörücüler. Pediatride kilo artışına eşlik eden büyüme/boy uzama geriliği tipiktir."
+        },
+        {
+          "metin": "**Düşük özgüllüğe sahip bulgular:** Santral obezite, hipertansiyon, diyabet/glukoz intoleransı, depresyon — genel popülasyonda sık olduğundan tanısal ayırıcılığı düşük."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kardiyovasküler ve Koagülasyon: Hiperkortizolizm Faktör VIII ve vWF sentezini artırır, fibrinolizi bozar → DVT/PE riski belirgin yüksek. Aktif hastalık döneminde, perioperatif dönemde ve remisyon sonrası bir süre daha tromboprofilaksi (DMAH) gerekir. Şiddetli hiperkortizolizmde böbrekte 11-beta HSD2 satüre olur → kortizol mineralokortikoid reseptörü uyarır → şiddetli hipokalemik alkaloz + HT (özellikle ektopik ACTH sendromunda)."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "İmmünosüpresyon: CD4+ T-helper azalır, CD8+ artar (düşük CD4/CD8 oranı). Atipik mantar enfeksiyonları, Pneumocystis jirovecii pnömonisi ve sepsise duyarlılık artar. Hiperkortizolizm hızla düzeltilirse İmmün Rekonstitüsyon İnflamatuar Sendromu (IRIS) gelişebilir — romatoid artrit, sarkoidoz veya tiroidit gibi otoimmün hastalıkların yeni başlangıcı/alevlenmesi şeklinde prezente olur."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı Adım 1 — Tarama Testleri (Hiperkortizolizmin İspatı)",
+      "satirlar": [
+        {
+          "metin": "Dışarıdan glukokortikoid kullanımı (inhaler, topikal, eklem içi dahil) dışlandıktan sonra, birinci basamak testlerden **en az ikisinin anormal olması** ile tanı konur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tarama Testleri",
+      "kolonlar": [
+        "Test",
+        "Yorum",
+        "Tuzak / Sınırlama"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "1-mg Gece Boyu DST ★",
+            "<1.8 mcg/dL normal; 1.8-5 mcg/dL = MACS (Hafif Otonom Kortizol Sekresyonu); >5 mcg/dL = Overt CS",
+            "OKS → CBG↑ ile yalancı pozitif; CYP3A4 indükleyicisi → hızlı klirens ile yalancı pozitif"
+          ]
+        },
+        {
+          "hucreler": [
+            "24-Saatlik İdrar Serbest Kortizolü (UFC)",
+            "Normalin üst sınırının >3-4 katı güçlü kanıt",
+            "CrCl <60 (böbrek yetmezliği) → yalancı negatif"
+          ]
+        },
+        {
+          "hucreler": [
+            "Gece Yarısı Tükürük Kortizolü (LNSC)",
+            "Sirkadiyen ritim kaybını gösterir",
+            "Vardiyalı çalışanlarda yanıltıcı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı Adım 2 — ACTH Bağımlılığının Saptanması",
+      "satirlar": [
+        {
+          "metin": "Hiperkortizolizm doğrulandıktan sonra plazma ACTH ölçülür. **ACTH <10 pg/mL:** ACTH-bağımsız (adrenal) CS → sonraki adım ince kesitli adrenal BT. **ACTH >20 pg/mL:** ACTH-bağımlı CS (hipofizer veya ektopik). **ACTH 10-20 pg/mL (gri zon):** CRH veya desmopressin stimülasyon testleriyle ayırım yapılır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı Adım 3 — Cushing Hastalığı vs Ektopik ACTH (Lokalizasyon)",
+      "satirlar": [
+        {
+          "metin": "**Hipofiz MRG:** Adenom >6 mm ise ve klinik/biyokimyasal uyum varsa (örn. Yüksek Doz [8mg] DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konur."
+        },
+        {
+          "metin": "**BIPSS (Bilateral İnferior Petrozal Sinüs Örneklemesi) ★ — Altın Standart:** Hipofiz MRG normal veya lezyon <6 mm ise uygulanır. Merkez(petrozal)/Perifer ACTH oranı bazalde ≥2, veya CRH/Desmopressin uyarısı sonrası ≥3 ise Cushing Hastalığı kanıtlanır. Gradiyent yoksa Ektopik ACTH düşünülerek Toraks/Batın BT, Ga-68 DOTATATE veya FDG-PET çekilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Tanı Algoritması Özeti: (1) Tarama testlerinden ≥2'si pozitif → hiperkortizolizm ispatlanır. (2) ACTH ölç: <10 = adrenal (BT), >20 = ACTH-bağımlı, 10-20 = CRH/DDAVP testi. (3) ACTH-bağımlıysa: MRG'de >6mm adenom + biyokimyasal uyum → Cushing Hastalığı; MRG negatif/<6mm → BIPSS (altın standart) → gradiyent yoksa ektopik kaynak taraması."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi — Cerrahi",
+      "kolonlar": [
+        "Hastalık",
+        "Yaklaşım",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Cushing Hastalığı",
+            "Transsfenoidal mikrocerrahi (TSS) ★",
+            "Altın standart; başarısızlıkta radyoterapi veya medikal tedavi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Adrenal Adenom/Karsinom",
+            "Adrenalektomi",
+            "—"
+          ]
+        },
+        {
+          "hucreler": [
+            "PBMAH",
+            "Unilateral veya bilateral adrenalektomi",
+            "Şiddete göre seçilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Refrakter / kaynak bulunamayan",
+            "Bilateral Adrenalektomi",
+            "Hayat kurtarıcı olabilir; ömür boyu steroid replasmanı gerekir; hipofizer kaynaklıysa **Nelson Sendromu** riski (artan ACTH'ye bağlı agresif tümör büyümesi + hiperpigmentasyon)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi — Medikal Farmakoterapi",
+      "kolonlar": [
+        "Sınıf / Ajan",
+        "Mekanizma",
+        "Kritik Nokta"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ketokonazol / Levoketokonazol",
+            "CYP11B1, CYP11A1, CYP17A1 inhibisyonu",
+            "Siyah kutu uyarılı hepatotoksisite + QTc uzaması; sık KC enzimi takibi; erkeklerde hipogonadizm"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Metirapon (Metyrapone)",
+            "11-beta hidroksilaz (CYP11B1) inhibisyonu",
+            "Etkisi hızlı başlar; biriken androjen/DOC → şiddetli hipokalemi, HT, akne, hirsutizm. **Gebede tercih edilen ajan**"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Osilodrostat ★",
+            "Güçlü 11-beta hidroksilaz + aldosteron sentaz inhibitörü (oral)",
+            "Cushing hastalığında UFC normalizasyonu ~%80; hipokalemi, HT, QTc uzaması, adrenal yetmezlik riski"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Etomidat",
+            "Yalnızca IV — güçlü CYP11B1 inhibitörü",
+            "NPO / akut psikoz, sepsis, GİS perforasyonu gibi şiddetli hiperkortizolizm acillerinde infüzyon"
+          ]
+        },
+        {
+          "hucreler": [
+            "Mitotan",
+            "Adrenolitik (adrenal hücre yıkıcı)",
+            "Temel endikasyon: adrenokortikal karsinom; etkisi haftalar-aylar sonra başlar"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Pasireotid",
+            "SSTR5 yüksek afiniteli somatostatin analoğu",
+            "USP8 mutasyonlu adenomlar daha duyarlı; en sık yan etki hiperglisemi/diyabet"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kabergolin",
+            "Dopamin D2 reseptör agonisti",
+            "Hafif-orta Cushing hastalığında kullanılabilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Mifepriston ★",
+            "Glukokortikoid (ve progesteron) reseptör antagonisti",
+            "Cerrahi adayı olmayan + hiperglisemi/DM veya glukoz intoleransı olan CS'de FDA onaylı. Feedback kalktığından kortizol/ACTH DEVASA artar → tedavi takibi kortizol ile YAPILAMAZ; klinik + kan şekeri + potasyum ile izlenir. Hipokalemi, endometrial kalınlaşma/kanama riski"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Şiddetli (Severe) Cushing Sendromu Acil Yönetimi: UFC'nin normalin üst sınırının 5-10 katından fazla olması veya hayatı tehdit eden komplikasyon (sepsis, akut psikoz, ciddi hipokalemi) varlığında hastalar yoğun bakımda izlenmelidir. Geleneksel titrasyon yerine **'Bloke et ve yerine koy' (Block and Replace)** stratejisi tercih edilir: Etomidat, osilodrostat veya yüksek doz ketokonazol+metirapon kombinasyonuyla adrenal üretim tamamen durdurulur; Addison krizini önlemek için fizyolojik dozda dışarıdan kortikosteroid replasmanı eklenir. Bu yöntem dalgalı kortizol düzeylerinden ve prekürsör birikiminin yaratacağı biyokimyasal kafa karışıklığından kaçınmayı sağlar."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Cushing Sendromu 6 Altın Kural: (1) ACTH <10 = adrenal kaynak, >20 = ACTH-bağımlı, 10-20 = gri zon (CRH/DDAVP testi). (2) BIPSS = MRG negatif/<6mm'de altın standart lokalizasyon testi. (3) USP8 mutasyonu → SSTR5↑ → pasireotide iyi yanıt; PRKACA → unilateral adrenal adenomun en sık mutasyonu. (4) Gebede metirapon tercih edilir. (5) Mifepriston tedavisi kortizol ile TAKİP EDİLEMEZ — klinik + glukoz + K ile izlenir. (6) Şiddetli acil CS'de 'block and replace' stratejisi (etomidat/osilodrostat + fizyolojik steroid replasmanı)."
+    }
+  ]
+}

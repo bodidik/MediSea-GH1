@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "id": "sglt2-inhibitorleri",
+    "branch": "endokrinoloji",
+    "baslik": "SGLT2 İnhibitörleri",
+    "altbaslik": "Ferroptozis, NHE1/NHE3 ikilemi, mTOR/AMPK açlık taklidi, kardiyorenal spektrum (HFpEF, post-AMI, diyaliz, TAVR), off-label ufuklar ve sarkopeni-eGFR tartışması",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "SGLT2 inhibitörlerinin (gliflozinler) nefroprotektif ve kardiyoprotektif etkileri, basit bir tubuloglomerüler feedback (TGF) restorasyonu veya hemodinamik yük azaltımının çok ötesindedir. Moleküler düzeyde ferroptozis inhibisyonu, enerji reprogramlaması (AMPK/mTOR) ve off-target NHE etkileri; klinik düzeyde ise kardiyorenal spektrumun tamamına yayılan ve hâlâ genişleyen bir endikasyon yelpazesi söz konusudur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İleri Moleküler Patofizyoloji",
+      "kolonlar": [
+        "Mekanizma",
+        "Yolak",
+        "Sonuç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Ferroptozis İnhibisyonu ★",
+            "AMPK/NRF2 aktivasyonu → nükleer translokasyon → GPX4 ve GCLM (antioksidan genler) ekspresyon artışı",
+            "DKD'de kronik hipoksi + demir metabolizması bozukluğuna bağlı lipit peroksidasyonu aracılı hücre ölümü (ferroptozis) engellenir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Labile Demir Kontrolü",
+            "Tübüler hücrelerde patolojik HIF-1α/HO-1 aşırı aktivasyonu baskılanır",
+            "Fenton reaksiyonuna girecek serbest (\"labile\") demir salınımı sınırlanır"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Miyokardiyal NHE1 İnhibisyonu ★",
+            "Kalpte SGLT2 reseptörü YOKTUR (off-target etki); gliflozinler NHE1'i doğrudan inhibe eder",
+            "Hücre içi Na+ ve Ca2+ aşırı yükü azalır → mitokondriyal Ca2+ regülasyonu düzelir → aritmi riski ve miyokardiyal fibrozis azalır"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Renal SGLT2–NHE3–MAP17 Kompleksi ★",
+            "Proksimal tübülde SGLT2, NHE3 ile MAP17 (\"chaperone\" protein) aracılığıyla aynı apikal mikrodomende fonksiyonel kompleks oluşturur",
+            "SGLT2 inhibisyonu eş zamanlı NHE3 aktivitesini de baskılar → natriürez ve distal klorür sunumu eksponansiyel artar"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "mTOR İnhibisyonu / Açlık Taklidi (Fasting-Mimicking) ★",
+            "AMPK aktivasyonu → mTORC1 baskılanması (gerçek açlık olmaksızın)",
+            "Proksimal tübülde de-novo lipogenez baskılanır; CPT1A upregüle olur → mitokondriyal yağ asidi β-oksidasyonu (FAO) hızlanır; otofaji artar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Kalpte SGLT2 reseptörü bulunmaz — kardiyoprotektif etki off-target NHE1 inhibisyonu üzerinden gelişir. Böbrekte ise SGLT2–NHE3–MAP17 kompleksi natriürezi güçlendirir. İkisi de farklı NHE izoformları (NHE1 vs NHE3) ve farklı organ mekanizmalarıdır — sınavda karıştırılan kritik bir ayrım."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Kardiyorenal Spektrumda Fark Yaratan ve Tartışmalı Kanıtlar",
+      "kolonlar": [
+        "Alan",
+        "Bulgu",
+        "Klinik Anlamı"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "HFpEF vs HFrEF ★",
+            "LVEF spektrumunun tamamında (<%50, %50-59, ≥%60) KV mortalite ve KY hastaneye yatışını TUTARLI (uniform) şekilde azaltır",
+            "Bu \"sınıf etkisi\", EF korundukça etkinliğini yitiren ARNI'den (Sakubitril/Valsartan) SGLT2i'yi net biçimde ayırır"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Post-AMI Erken Dönem ★ (EMPACT-MI, DAPA-MI)",
+            "Erken başlanan SGLT2i, KV mortalite, tekrarlayan Mİ veya inme gibi iskemik (aterotrombotik) koroner MACE sonlanımlarını AZALTMAMIŞTIR",
+            "Asıl fayda iskemiyi önlemek değil, miyokardiyal remodeling'i yavaşlatarak sekonder kalp yetersizliği (HHF) gelişimini engellemektir"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "İleri Evre KBH ve Diyaliz (Off-Label) ★",
+            "Kılavuzlar eGFR ≥20 mL/dk'da başlamayı önerir; ancak target trial emulation çalışmalarında Evre 5 KBH/hemodiyaliz/PD hastalarında diyalize başlama riski ve KV mortalite anlamlı azalmıştır",
+            "Dapagliflozin diyalize edilemez ve kümülatif toksisite yaratmaz → güvenli PK profili. PD hastalarında rezidüel böbrek fonksiyonu korunumu + peritoneal glukoz absorpsiyonu modülasyonu ile ultrafiltrasyon yetmezliği düzelebilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "TAVR Sonrası",
+            "Ciddi aort darlığı + basınç yüklenmesine bağlı remodeling gelişmiş hastalarda TAVR sonrası SGLT2i eklenmesi tüm nedenli mortalite ve HHF riskini ~%25 azaltır",
+            "Yapısal kalp hastalığı sonrası da sınıf etkisi genişliyor"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "EMPACT-MI/DAPA-MI Kritik Ayrım: Post-AMI SGLT2i başlanması iskemik/aterotrombotik MACE'i (tekrar Mİ, inme, KV ölüm) AZALTMAZ. Fayda spesifik olarak kalp yetersizliği gelişimini/hastaneye yatışını önlemekle sınırlıdır — 'antiiskemik' değil 'antiremodeling' bir etkidir. Sınavda 'post-Mİ SGLT2i MACE'i azaltır mı?' sorusuna dikkat."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Metabolik, Endokrin ve Off-Target Yeni Endikasyon Arayışları",
+      "kolonlar": [
+        "Alan",
+        "Mekanizma / Bulgu",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "MASLD (eski NAFLD)",
+            "Kilo kaybından bağımsız olarak karaciğer visseral yağını, CAP (steatoz) ve LSM (fibrozis) değerlerini anlamlı azaltır",
+            "Etki T2DM eşlik eden hastalarda daha kuvvetli"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "SIADH / Övolemik Hiponatremi ★",
+            "Glukozürik ozmotik diürez, loop diüretiklerin aksine medüller konsantrasyon gradiyentini bozmaz → vazopressin aktivitesi sürerken toplayıcı tübülde su geri emilimini engelleyerek elektrolitsiz serbest su klerensini artırır",
+            "Vaptanlara (toksik, pahalı) karşı rasyonel, ucuz alternatif"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Dekompanse Siroz / Diüretik Dirençli Asit ★",
+            "Artmış RAAS aktivitesine bağlı proksimal NHE3 aşırı çalışması, SGLT2–NHE3 bağlantısı üzerinden bloke edilir",
+            "Diüretik dirençli asit yönetiminde çığır açma potansiyeli (araştırma aşamasında)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Otoimmün Tiroid Hastalıkları",
+            "IL-6, TNF-α, NLRP3 inflamozom baskılanması + adiponektin artışı (fasting-mimicking immünomodülasyon); Graves oftalmopatisinde orbital fibroblast proliferasyonu ve hyaluronan sentezini azaltma; Hashimoto'da kronik lenfositik inflamasyonu yavaşlatma",
+            "Off-label, araştırma aşamasında"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kan Basıncı Doz-Yanıt",
+            "Ortalama 3-5 mmHg fayda sağlar; Bayes ağ meta-analizlerinde bu etki DOZDAN BAĞIMSIZDIR (örn. empagliflozin 10 mg ile 25 mg farksız)",
+            "Doz artırmanın KB üzerinde ek fayda sağlamayacağı akılda tutulmalı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Geriatrik / Sarkopenik (Frail) Hastalarda Kullanım",
+      "satirlar": [
+        {
+          "metin": "SGLT2 inhibitörleri kalori atılımı ile ortalama **2-3 kg kilo verdirir**. Yağ kütlesinde (özellikle visseral adipozite) belirgin kayıp yaşanırken, iskelet kası kütlesinde istatistiksel olarak anlamlı fakat yağ kaybına oranla klinik olarak minimal bir azalma görülür. Totalde \"iskelet kası/yağ\" oranı arttığından insülin direnci ve metabolik profil iyileşir. Yine de ileri sarkopenik yaşlılarda direnç egzersizi ve yeterli protein alımı ile desteklenmeleri önerilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kreatinin Bazlı eGFR Yanılgısı — Metodolojik Kritik ★: Kas kütlesindeki kronik yavaş azalma, dolaşımdaki total kreatinin havuzunu düşürür. DAPA-CKD, EMPA-KIDNEY gibi böbrek koruyucu çalışmaların tamamı kreatinin bazlı eGFR kullanmıştır. SGLT2i kullananlarda kas yıkımına bağlı azalan kreatinin üretimi, serum kreatininini olduğundan düşük gösterip eGFR'de 'fonksiyonun çok daha iyi korunduğu' yönünde matematiksel bir yanlılık (bias) yaratmış olabilir. Bu nedenle gerçek böbrek koruyucu etkinin (özellikle eGFR yamaç analizlerinin) kas kütlesinden bağımsız Sistatin-C bazlı GFR formülleriyle yeniden değerlendirilmesi önerilmektedir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sinerjistik Strateji: GLP-1 RA Kombinasyonu",
+      "satirlar": [
+        {
+          "metin": "Kardiyovasküler riski çok yüksek veya aterosklerotik KVD'si olan hastalarda SGLT2i + GLP-1 RA kombinasyonu, yalnızca risk faktörlerini (HbA1c, ağırlık, KB) daha güçlü kontrol etmekle kalmaz; her birinin monoterapisine kıyasla MACE, KY'ye bağlı hastaneye yatışları ve hem KV hem tüm nedenli mortaliteyi aditif bir etkiyle daha belirgin düşürür."
+        },
+        {
+          "metin": "**Mekanizma ayrımı:** SGLT2i hemodinamik ve miyokardiyal yollardan (NHE1 inhibisyonu, natriürez, ön/art yük azaltımı) HHF'yi hedeflerken; GLP-1 RA sistemik anti-inflamatuvar ve anti-aterojenik yollardan miyokard infarktüsü ve inmeyi engeller — birbirini tamamlayan, örtüşmeyen kardiyoprotektif mekanizmalar."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — SGLT2 İnhibitörleri 6 Altın Kural: (1) Kardiyoproteksiyon = off-target NHE1 inhibisyonu (kalpte SGLT2 reseptörü yok); renoproteksiyon = SGLT2–NHE3–MAP17 kompleksi. (2) HFpEF'de de HFrEF kadar etkili — ARNI'den bu yönüyle ayrılır. (3) Post-AMI erken başlanırsa iskemik MACE'i AZALTMAZ, yalnızca HHF'yi önler. (4) eGFR ≥20 kılavuz eşiği olsa da diyaliz hastalarında bile fayda gösterilmiştir (dapagliflozin diyalize edilmez). (5) SIADH'de vaptan alternatifi: elektrolitsiz serbest su klerensini artırır. (6) Kas kütlesi azalışı → kreatinin düşük ölçülür → eGFR yanılgısı; Sistatin-C ile doğrulama önerilir."
+    }
+  ]
+}

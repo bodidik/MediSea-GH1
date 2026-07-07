@@ -68,9 +68,10 @@
           "id": "cushing-sendromu",
           "baslik": "Cushing Sendromu",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         }
       ]
     },
@@ -99,6 +100,38 @@
         {
           "id": "dka-yonetimi",
           "baslik": "Diyabetik Ketoasidoz (DKA)",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        },
+        {
+          "id": "sglt2-inhibitorleri",
+          "baslik": "SGLT2 İnhibitörleri",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    },
+    {
+      "id": "kalsiyum-kemik",
+      "baslik": "Kalsiyum ve Kemik Metabolizması",
+      "konular": [
+        {
+          "id": "hipoparatiroidizm",
+          "baslik": "Hipoparatiroidizm",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "hiperparatiroidizm",
+          "baslik": "Hiperparatiroidizm",
           "rozetler": [
             "YAKINDA"
           ],

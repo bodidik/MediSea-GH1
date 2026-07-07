@@ -28,7 +28,10 @@
       "baslik": "Tanım ve Epidemiyoloji",
       "satirlar": [
         {
-          "metin": "Hashimoto tiroiditi (kronik lenfositik tiroidit); T-hücre aracılı kronik otoimmün bir tiroid hastalığıdır. **İyot alımının yeterli olduğu bölgelerde diffüz guatr ve primer hipotiroidinin en sık sebebidir.** Kadınlarda erkeklere göre **7–8 kat** daha sık görülür. Yaşla birlikte prevalansı artar; ailesel kümelenme belirgindir."
+          "metin": "Hashimoto tiroiditi (kronik lenfositik tiroidit); organa özgü T-hücre aracılı otoimmün bir tiroid hastalığıdır. **İyot alımının yeterli olduğu bölgelerde diffüz guatr ve primer hipotiroidinin en sık sebebidir.** Görülme sıklığı küresel çapta artış eğilimindedir."
+        },
+        {
+          "metin": "Kadınlarda erkeklere göre **4–10 kat** daha sık; **pik insidans 40–60 yaş** aralığında. Ailesel kümelenme belirgindir."
         }
       ]
     },
@@ -75,9 +78,46 @@
       ]
     },
     {
-      "tip": "bilgi_kutusu",
-      "tur": "ek_bilgi",
-      "metin": "Otoimmün Mekanizma: Hücresel immünite (sitotoksik T lenfositler) ile hümoral immünite (Anti-TPO, Anti-Tg) birlikte çalışır. Lenfositlerden salgılanan sitokinler tiroid follikül hücrelerinde apoptoza yol açarken, antikorlar hücre aracılı sitotoksisite ile doku hasarı oluşturur."
+      "tip": "tablo",
+      "baslik": "İmmünopatogenez — Tirosit Harabiyetinin 3 Yolağı",
+      "kolonlar": [
+        "Yolak",
+        "Mekanizma",
+        "Anahtar Moleküller"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Doğrudan Sitotoksisite",
+            "CD8+ sitotoksik T lenfositler tiroid hücre membranını parçalar",
+            "Perforin, Granzim B"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ölüm Reseptörü Aracılı Apoptozis",
+            "İnfiltre eden hücrelerden salgılanan sitokinler tirositlerde Fas/FasL ekspresyonunu artırır → programlı hücre ölümü",
+            "IFN-γ, TNF-α, IL-1β → Fas/FasL"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hümoral — ADCC ★",
+            "Anti-TPO ve Anti-Tg antikorları, antikora bağımlı hücresel sitotoksisite (ADCC) ile organ hasarına katkıda bulunur",
+            "Anti-TPO, Anti-Tg, NK hücreler"
+          ]
+        },
+        {
+          "hucreler": [
+            "Oksidatif Stres (Amplifikasyon)",
+            "Artan ROS ve HIF-1α regülasyonu inflamatuar süreci şiddetlendirir; Treg fonksiyon bozukluğu Th1/Th17 hakimiyetini artırır",
+            "ROS, HIF-1α, Treg↓, Th1/Th17↑"
+          ]
+        }
+      ]
     },
     {
       "tip": "tablo",
@@ -126,13 +166,10 @@
       "baslik": "Klinik Bulgular ve Doğal Seyir",
       "satirlar": [
         {
-          "metin": "Hastaların **%75'i tanı anında ötiroiddir**. Kalan %25'i subklinik veya aşikar hipotiroidi bulgularıyla başvurur. Doğal seyirde yılda **%3–5 oranında** subklinik hipotiroididen aşikar hipotiroidiye progresyon gelişir."
+          "metin": "Hastaların **%75'i tanı anında ötiroiddir**. Yılda **%3–5 oranında** subklinik hipotiroididen aşikar hipotiroidiye progresyon izlenir. Hipotiroidinin derinleşmesiyle bazal metabolizma yavaşlar: yorgunluk, soğuk intoleransı, kilo alımı, cilt kuruluğu, saç dökülmesi, kabızlık, bradikardi, hafıza sorunları. İleri dönemde cilt altı glikozaminoglikan birikimi → **miksödem** tablosu."
         },
         {
-          "metin": "Guatr varlığında tiroid bezi ağrısız, sert/lastik kıvamında ve irregüler hissedilebilir. Büyük guatrlarda **dispne, disfaji, ses kısıklığı** gibi bası semptomları görülebilir."
-        },
-        {
-          "metin": "Aşikar hipotiroidide klasik metabolik yavaşlama bulguları: yorgunluk, kilo alımı, cilt kuruluğu, kabızlık, soğuk intoleransı, seste kalınlaşma."
+          "metin": "Fizik muayenede tiroid bezi ağrısız, lastik sertliğinde, simetrik büyümüş. Büyük guatrlarda dispne, disfaji, ses kısıklığı. Nadir: **'ağrılı Hashimoto tiroiditi' varyantı** — boyun ağrısı + geçici tirotoksikoz atağı; subakut tiroiditle karışabilir."
         }
       ]
     },
@@ -198,31 +235,31 @@
         {
           "renk": "mavi",
           "hucreler": [
-            "Anti-TPO (antimikrozomal Ab) ★",
-            "%90–100 pozitif",
-            "En değerli serolojik belirteç; tanıda altın standart"
+            "Anti-TPO ★",
+            "%90–95 pozitif",
+            "Birincil tanı belirteci; yüksekliği aşikar hipotiroidiye ilerlemenin en güçlü prediktörü"
           ]
         },
         {
           "hucreler": [
-            "Anti-Tg (anti-tiroglobulin Ab)",
-            "%20–50 pozitif",
+            "Anti-Tg",
+            "%60–80 pozitif",
             "Tek başına daha az spesifik; Anti-TPO negatif şüpheli vakalarda bakılır"
           ]
         },
         {
           "hucreler": [
-            "TSH",
-            "Normal / yüksek (hastalık evresine göre)",
-            "Başlangıçta yüksek Anti-TPO + yüksek TSH = aşikar hipotiroidi riski prediktörü"
+            "TSH / sT4",
+            "Erken: normal; İleri: TSH↑ + sT4↓",
+            "Primer hipotiroidinin klasik biyokimyası"
           ]
         },
         {
           "renk": "sari",
           "hucreler": [
             "USG ★",
-            "Diffüz hipoekojenite + heterojen parankim + mikronodüler/psödonodül patern",
-            "Oldukça spesifik görünüm; fibrotik septasyonlar yalancı nodül izlenimi verir"
+            "Diffüz hipoekojenite + heterojen parankim + mikronodüler/psödonodül patern + internal fibröz bantlar",
+            "Oldukça spesifik görünüm"
           ]
         },
         {
@@ -230,7 +267,7 @@
           "hucreler": [
             "Doppler USG",
             "Kanlanma azalmış (↓)",
-            "Graves'ten ayrımda önemli: Graves'te 'tiroid inferno' (belirgin artmış akım) vardır"
+            "Graves'ten ayrımda kritik: Graves = tiroid inferno (↑↑); Hashimoto = azalmış akım"
           ]
         }
       ]
@@ -239,6 +276,11 @@
       "tip": "bilgi_kutusu",
       "tur": "pratik",
       "metin": "USG Ayırımı — Hashimoto vs Graves: Hashimoto'da parankim kanlanması AZALMIŞ (hipoekojen, heterojen). Graves'te parankim kanlanması AŞIRI ARTMIŞ — 'tiroid inferno' olarak tanımlanır. Doppler USG iki hastalığı birbirinden ayırt etmede kritik rol oynar."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Hashimoto + Papiller Tiroid Kanseri — 'İki Keskinli Kılıç': Kronik inflamasyon ve yüksek TSH uyarısı PTC gelişim riskini artırır. Ancak HT zemininde gelişen PTC olgularında tümör mikroçevresi koruyucu bariyer işlevi görür: tümör boyutu daha küçük, santral lenf nodu metastazı ve ekstratiroidal yayılım nadir, BRAF^V600E mutasyon sıklığı belirgin az, genel sağkalım ve rekürrens profili daha olumlu."
     },
     {
       "tip": "tablo",
@@ -259,15 +301,31 @@
         {
           "renk": "mavi",
           "hucreler": [
-            "Hipotiroidi (subklinik özel koşullar / aşikar)",
-            "Levotiroksin (LT4): ~1.2–1.6 µg/kg/gün",
-            "Hedef TSH normal aralığa çek; yaşlı/KAH'lıda düşük doz başla"
+            "Aşikar Hipotiroidi — Genç/Sağlıklı",
+            "LT4: 1.5–1.7 µg/kg/gün tam replasman",
+            "Hedef TSH normal aralık; 6–8 haftada kontrol"
           ]
         },
         {
           "renk": "sari",
           "hucreler": [
-            "Dev Guatr (bası + medikal başarısızlık) ★",
+            "Aşikar Hipotiroidi — Yaşlı/KAH ★",
+            "LT4: 12.5–25 µg/gün ile başla, her 6–8 haftada titre et",
+            "Hızlı doz artışı → anjina, aritmi riski"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Subklinik Hipotiroidi (TSH 4.5–9.9)",
+            "Anti-TPO+, gebelik planı, KVH varsa: tedavi düşün; Asemptomatik + risk yok: izle",
+            "Bireyselleştir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Dev Guatr (bası + LT4 yanıtsız) ★",
             "Total tiroidektomi",
             "Rutin yeri yok; medikal tedaviye rağmen gerilemeyen dev guatrda endikasyon"
           ]
@@ -282,9 +340,9 @@
         },
         {
           "hucreler": [
-            "Selenyum",
-            "Rutin önerilmez",
-            "Anti-TPO titrelerini düşürebilir; ancak klinik hipotiroidi seyrini değiştirdiğine dair güçlü kanıt yoktur"
+            "Selenyum / D Vitamini",
+            "Klinik eksiklikte düşün; rutin replasman önerilmez",
+            "Anti-TPO titrelerini düşürebilir; glutatyon peroksidaz aktivasyonu, Treg güçlendirme. Hipotiroidisi önlemez."
           ]
         }
       ]
@@ -292,7 +350,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Hashimoto 5 Altın Kural: (1) Anti-TPO %90–100 pozitif — birincil tanı belirteci. (2) %75'i ötiroid başlar; yılda %3–5 aşikar hipotiroidiye ilerler → takip şart. (3) Haşitoksikozda ATİ verme — yıkım tirotoksikozu, kendiliğinden geçer. (4) Hızlı büyüyen asimetrik kitle = tiroid lenfoması düşün. (5) USG: hipoekojen + heterojen + psödonodül + Doppler↓ (Graves'te inferno↑)."
+      "metin": "Pratik Özet — Hashimoto 6 Altın Kural: (1) Anti-TPO %90–95 pozitif — birincil tanı belirteci; Anti-Tg %60–80. (2) %75'i ötiroid başlar; yılda %3–5 aşikar hipotiroidiye ilerler. (3) Haşitoksikozda ATİ verme — yıkım tirotoksikozu, beta-bloker yeterli. (4) Hızlı büyüyen asimetrik kitle = tiroid lenfomasını düşün. (5) USG: hipoekojen + heterojen + psödonodül + Doppler↓ (Graves: inferno↑). (6) LT4 dozu: genç/sağlıklı 1.5–1.7 µg/kg; yaşlı/KAH 12.5–25 µg ile başla titre et."
     }
   ]
 }

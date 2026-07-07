@@ -1,0 +1,218 @@
+{
+  "id": "quiz-endo-hipopara-001",
+  "baslik": "Hipoparatiroidizm — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hipoparatiroidizm",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "On dört yaşında kız çocuğu, 3 yıldır tekrarlayan hipokalsemik nöbetler ve el/ayak parmak uçlarında uyuşma yakınmalarıyla nöroloji tarafından endokrinolojiye yönlendiriliyor. Annesinde de benzer nöbetler geçirme öyküsü var.\n\nTetkikler:\nSerum Ca: 6.8 mg/dL ↓↓\nPTH: 8 pg/mL ↓ (N: 15–65)\n24 saatlik idrar Ca: 520 mg/gün ↑ (N: <300)\nSerum Mg: normal\n\nBu tablo için en olası tanı ve kesin tanı yöntemi hangisidir?",
+      "secenekler": {
+        "A": "Otoimmün hipoparatiroidizm; anti-paratiroid antikoru bakılmalıdır.",
+        "B": "Otozomal Dominant Hipokalsemi (ADH); kesin tanı CASR veya GNA11 mutasyon analizi ile konur.",
+        "C": "İdiyopatik hipoparatiroidizm; yüksek doz kalsiyum + kalsitriol ile serum Ca normalize edilmelidir.",
+        "D": "Psödohipoparatiroidizm; PTH direnci söz konusudur ve cAMP yanıtı değerlendirilmelidir.",
+        "E": "Hipomagnezemi kaynaklı hipokalsemi; serum Mg normal olduğu için bu tanı dışlanmıştır ve izlem yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ailesel hipokalsemi + hipokalsemik nöbetler + tedavisiz halde hiperkalsiüri = ADH (Otozomal Dominant Hipokalsemi). CaSR aktive edici mutasyon. Kesin tanı: CASR/GNA11 mutasyon analizi.",
+      "aciklama_detay": "ADH'nin klasik klinik triadı: (1) Ailesel hipokalsemi (otozomal dominant), (2) Düşük/normal PTH, (3) Tedavisiz halde idrar Ca orantısız yüksek (böbrekte CaSR sürekli aktif → Ca geri emilimi azalmış). Otoimmün hipoparatiroidizm genellikle APS-1 bağlamında görülür ve ailesel değildir. Psödohipoparatiroidizm'de PTH direnci olduğundan PTH düzeyi genellikle yüksektir. Kesin tanı biyokimyasal testlerle değil, genetik mutasyon analiziyle konur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Otoimmün hipoparatiroidizm ailesel değildir; APS-1 bağlamında görülür. Aile öyküsü ve hiperkalsiüri ADH'ye işaret eder.",
+        "B": "DOGRU — ADH: ailesel + hiperkalsiüri + düşük PTH. Kesin tanı = mutasyon analizi.",
+        "C": "YANLIS — ADH'de hedefi 'normalleştirmek' değil, 'semptom giderme'. Yüksek doz Ca/kalsitriol → hiperkalsiüri → nefrokalsinozis.",
+        "D": "YANLIS — Psödohipoparatiroidizmde PTH yüksek (direnç var); bu hastada PTH düşük.",
+        "E": "YANLIS — Mg normal olduğundan bu yorum doğru; ancak 'izlem yeterlidir' hatalı — hipokalsemik nöbet tedavi gerektiriyor."
+      },
+      "etiketler": [
+        "ADH",
+        "CaSR Mutasyonu",
+        "Hiperkalsiüri",
+        "Ailesel Hipokalsemi",
+        "Mutasyon Analizi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nesbit et al. N Engl J Med 1996; Hannan et al. Nat Rev Endocrinol 2018"
+    },
+    {
+      "id": "s2",
+      "metin": "Otuz sekiz yaşında kadın hasta, bilateral tiroid kanseri nedeniyle total tiroidektomi + boyun diseksiyonu yapılmış. Operasyondan 18 saat sonra perioral uyuşma, el bileklerinde kasılma hissi ve Trousseau bulgusu saptandı.\n\nTetkikler:\nSerum Ca: 7.1 mg/dL ↓\nPTH: <3 pg/mL ↓↓\nMg: 1.6 mg/dL (normal)\n\nBu tablonun yönetimi için doğru sıralama hangisidir?",
+      "secenekler": {
+        "A": "Semptomlar hafif; oral kalsiyum karbonat 1 g TID başlan ve 48 saatte kontrol et.",
+        "B": "İV kalsiyum glukonat bolüs + sürekli infüzyon, ardından oral kalsiyum + kalsitriol replasmanına geç; 6–8 haftada paratiroid fonksiyonu kendiliğinden düzelebileceğinden kalıcı karar için bekle.",
+        "C": "PTH düzeyi bu kadar düşük olduğundan kalıcı hipoparatiroidizm kesinleşmiştir; ömür boyu PTH 1-84 (rekombinan) başlan.",
+        "D": "Önce Mg replasmanı yapılmalı; Mg düzeyi 1.6 mg/dL ile kritik düşük.",
+        "E": "Trousseau bulgusu klinik anlam taşımaz; biyokimyasal doğrulama beklenmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Posttirooidektomi hipokalsemi akut yönetimi: IV Ca glukonat → oral Ca + kalsitriol. 6–8 haftada paratiroid fonksiyonu geri dönebilir; kalıcılık için beklenmeli.",
+      "aciklama_detay": "Postoperatif hipokalsemi tiroidektominin en sık komplikasyonudur. Semptomatik vakada (tetani, Trousseau+, Ca <7.5 mg/dL) IV kalsiyum glukonat uygulanır (100 mg elementer Ca 10 dk IV, ardından infüzyon). Kalsitriol eklenir çünkü PTH eksikliğinde aktif D vitamini dönüşümü bozulur. Paratiroid bezlerinin vaskülarizasyonu 48–72 saatte kısmen düzelebilir; geçici vs kalıcı ayrımı için en az 6 ay beklenir (bazı kılavuzlar 12 ayı önerir). Mg 1.6 mg/dL normal sınırda (alt sınır ~1.5); burada asıl sorun hipoparatiroidizm.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Trousseau pozitif + Ca 7.1 → semptomatik; yalnızca oral kalsiyum yetersiz, IV gerekir.",
+        "B": "DOGRU — IV Ca glukonat → oral Ca + kalsitriol; kalıcılık için 6–8 haftada değerlendir.",
+        "C": "YANLIS — 18 saatlik postop dönemde 'kalıcı' kararı vermek çok erken; paratiroid kendini toparlamış olabilir.",
+        "D": "YANLIS — Mg 1.6 mg/dL normal; asıl sorun PTH eksikliği.",
+        "E": "YANLIS — Trousseau latent tetaniyi gösterir; klinisyen derhal müdahale etmelidir."
+      },
+      "etiketler": [
+        "Postoperatif Hipokalsemi",
+        "Tiroidektomi Komplikasyonu",
+        "IV Kalsiyum",
+        "Kalsitriol",
+        "Geçici vs Kalıcı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Bilezikian et al. J Bone Miner Res 2022; TEMD 2025"
+    },
+    {
+      "id": "s3",
+      "metin": "Elli iki yaşında erkek hasta, şiddetli primer hiperparatiroidizm (PTH 890 pg/mL, Ca 14.2 mg/dL, DEXA T-skoru −3.4) nedeniyle total paratiroidektomi + ön kol ototransplantasyonu yapıldı. Ameliyattan 36 saat sonra:\n\nSerum Ca: 6.2 mg/dL ↓↓\nSerum PO4: 1.4 mg/dL ↓ (N: 2.5–4.5)\nSerum Mg: 1.2 mg/dL ↓\n24 saatlik idrar Ca: 20 mg/gün ↓↓\n\nBu tablonun en doğru tanısı ve patofizyolojisi nedir?",
+      "secenekler": {
+        "A": "Postoperatif hipoparatiroidizm; paratiroid bezleri çıkarılmıştır.",
+        "B": "Aç Kemik Sendromu (Hungry Bone Syndrome): uzun süreli PTH fazlasından sonra aniden PTH düşünce, mineralize olmamış kemik matriks kalsiyumu aç kemikler hızla emer → hipokalsemi + hipofosfatemi + hipomagnezemi + düşük idrar Ca.",
+        "C": "D vitamini eksikliği; preoperatif D vitamini düzeyi sorgulanmalıdır.",
+        "D": "Postoperatif hiperventilasyon alkalozu; serum Ca iyonize fraksiyonunu azaltarak semptoma yol açar.",
+        "E": "Transplante paratiroid dokusu çalışmıyor; ototransplantasyon başarısız kabul edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Şiddetli hiperPTH sonrası paratiroidektomi + Ca↓ + PO4↓ + Mg↓ + idrar Ca çok düşük = AÇ KEMİK SENDROMU. Kemikler mineralizasyon için kandan aç gibi Ca çeker; idrar Ca paradoks düşer.",
+      "aciklama_detay": "Aç Kemik Sendromu (AKS), uzun süreli şiddetli hiperparatiroidizm (veya hipertiroidi/Paget) zemin hazırladıktan sonra PTH'ın aniden düşmesiyle ortaya çıkar. Kemikler uzun süre PTH uyarısıyla remodele olmuş; PTH kalktığında mineral depolamak için kandan aç gibi kalsiyum, fosfat ve magnezyum çekerler. Klasik bulgular: Ca↓ + PO4↓ + Mg↓ + idrar Ca çok düşük (kemikler kalsiyumu 'yuttuğundan' idrar Ca düşer — bu, rutin hipoparatiroidizmden ayırt eden en kritik bulgudur). Tedavi: agresif IV Ca, aktif D vitamini, Mg replasmanı; haftalar-aylar sürebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ototransplantasyon yapılmış; paratiroid tamamen çıkarılmamış. Ayrıca hipofosfatemi + düşük idrar Ca postoperatif hipoparatiroidizmde tipik değil.",
+        "B": "DOGRU — AKS: şiddetli hiperPTH + paratiroidektomi + üçlü eksiklik (Ca + PO4 + Mg) + düşük idrar Ca.",
+        "C": "YANLIS — D vitamini eksikliği Ca↓ yapabilir ama PO4 normal veya düşük-normal olur; bu kadar düşük idrar Ca açıklanamaz.",
+        "D": "YANLIS — Alkaloz iyonize Ca'yı düşürür ama total Ca, PO4, Mg ve idrar Ca'yı etkilemez.",
+        "E": "YANLIS — Ototransplant işlevini 36 saatte değerlendirmek çok erken; AKS bağımsız bir mekanizmadır."
+      },
+      "etiketler": [
+        "Aç Kemik Sendromu",
+        "Paratiroidektomi",
+        "Hiperparatiroidizm Sonrası",
+        "Hipokalsemi",
+        "Düşük İdrar Ca"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Witteveen et al. Eur J Endocrinol 2013; Hannan et al. Nat Rev Endocrinol 2018"
+    },
+    {
+      "id": "s4",
+      "metin": "Otuz yaşında kadın hasta, 6 yıldır idiyopatik hipoparatiroidizm tanılı. Oral kalsiyum 3 g/gün + kalsitriol 1.5 µg/gün ile tedavi altında; serum Ca 7.8 mg/dL'de stabil ama 24 saatlik idrar Ca 680 mg/gün ↑↑. Renal USG'de bilateral nefrokalsinozis saptandı. Böbrek fonksiyonları henüz bozulmamış.\n\nBu hastanın yönetiminde en doğru adım hangisidir?",
+      "secenekler": {
+        "A": "Kalsitriol dozu artırılarak serum Ca 8.5 mg/dL'ye çıkarılmalıdır; nefrokalsinozis serum Ca düşüklüğüne bağlıdır.",
+        "B": "Kalsiyum ve kalsitriol dozları azaltılmalı; tedaviye tiyazid diüretik eklenerek renal kalsiyum kaybı azaltılmalı ve/veya PTH 1-34 veya 1-84 subkutan enjeksiyon tedavisine geçiş değerlendirilmelidir.",
+        "C": "Hipoparatiroidizmde nefrokalsinozis kaçınılmazdır; mevcut tedaviye devam edilmeli.",
+        "D": "Kalsiyum tedavisi kesilerek yalnızca kalsitriol devam ettirilmeli ve su içimi artırılmalıdır.",
+        "E": "Nefrokalsinozis böbrek fonksiyonlarını bozmadığı sürece tedaviyi değiştirmeye gerek yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Nefrokalsinozis + yüksek idrar Ca: konvansiyonel tedavinin komplikasyonu. Çözüm: Ca/kalsitriol azalt + tiyazid ekle veya PTH analoguna geç (idrar Ca artırmadan serum Ca korur).",
+      "aciklama_detay": "Hipoparatiroidizmde konvansiyonel Ca + kalsitriol tedavisinin uzun dönem komplikasyonları: hiperkalsiüri, nefrokalsinozis, renal taş, kronik böbrek hastalığı. PTH 1-34 veya 1-84 bu sorunları önler çünkü PTH renal tübüler Ca geri emilimini artırır → aynı serum Ca için çok daha az idrar Ca atılır. Bu hastada nefrokalsinozis gelişmiş → PTH analogu değerli bir seçenek. Tiyazid diüretikler de idrar Ca'yı azaltır ama PTH analogu kadar etkili değil. Kesinlikle Ca artırarak serum Ca yükseltmek hatalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalsitriol artırmak idrar Ca'yı daha da yükseltir; nefrokalsinozi kötüleştirir.",
+        "B": "DOGRU — Konvansiyonel tedaviyi azalt + tiyazid ekle veya PTH analoguna geç.",
+        "C": "YANLIS — Nefrokalsinozis kaçınılmaz değildir; PTH analogları bu komplikasyonu önlemede etkilidir.",
+        "D": "YANLIS — Sadece kalsiyum kesmek serum Ca'yı daha da düşürür, semptom yaratır; sistematik yaklaşım gerekir.",
+        "E": "YANLIS — Nefrokalsinozis ilerleyebilir; böbrek korunması için erken müdahale şarttır."
+      },
+      "etiketler": [
+        "Hipoparatiroidizm Komplikasyon",
+        "Nefrokalsinozis",
+        "PTH Analogu",
+        "Tiyazid",
+        "Hiperkalsiüri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bilezikian et al. J Bone Miner Res 2022; Brandi et al. J Clin Endocrinol Metab 2016"
+    },
+    {
+      "id": "s5",
+      "metin": "ADH tip 1 (CaSR gain-of-function mutasyonu) tanılı 22 yaşında erkek hasta, kontrole geliyor. Serum Ca 7.0 mg/dL, semptomları yok. Başka bir merkezde doktor kalsitriol + kalsiyum başlamış.\n\nHangi seçenek bu hastanın tedavi yönetimini en doğru özetler?",
+      "secenekler": {
+        "A": "Kalsitriol ve kalsiyum ile serum Ca 8.5–9.5 mg/dL normal aralığa getirilmeli; nöbet riski azalır.",
+        "B": "ADH'de Ca/kalsitriol tedavisi hiperkalsiüriye ve nefrokalsinozise yol açar. Asemptomatikse tedavi başlanmamalı; semptomatikse yalnızca semptomu giderecek minimum Ca düzeyi hedeflenmeli, tiyazid eklenmeli ve 24 saatlik idrar Ca yakından izlenmeli.",
+        "C": "Ca tedavisi yerine direkt PTH 1-84 başlanmalıdır; ADH'de PTH analogu birinci seçenektir.",
+        "D": "Semptom olmadığı için hiçbir tedavi gerekmez; yıllık kontrol yeterlidir.",
+        "E": "Kalsilitik ajan (encaleret) standart birinci basamak tedavidir; hemen başlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ADH'de Ca/kalsitriol tuzağı: CaSR böbrekte sürekli aktif → serum Ca normale getirilirse idrar Ca dramatik artar → nefrokalsinozis. Asemptomatikse tedavisiz izle; semptomatikse minimum etkin doz + tiyazid + yakın idrar Ca takibi.",
+      "aciklama_detay": "ADH, diğer hipoparatiroidizm tiplerinden tedavi yaklaşımı açısından kritik biçimde ayrılır. CaSR böbrekte sürekli aktif olduğundan, serum Ca yükseldikçe idrar Ca orantısız artar — 'nefrokalsinozis tuzağı'. Bu nedenle: (1) Asemptomatik ADH'de tedavi başlama, (2) Semptomatikse hedef 'normalleştirme' değil 'semptom giderme', (3) Tiyazid + düşük doz Ca ile idrar Ca yönet, (4) Her 6 ayda 24 saatlik idrar Ca ve böbrek fonksiyon takibi. Kalsilitikler henüz araştırma aşamasında.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Serum Ca normalleştirmek ADH'de kontrendike; hiperkalsiüri → nefrokalsinozis.",
+        "B": "DOGRU — ADH yönetiminin özeti: asemptomatik ise tedavisiz; semptomatik ise minimum doz + tiyazid + idrar Ca takibi.",
+        "C": "YANLIS — PTH analogları diğer hipoparatiroidizm tiplerinde kullanılır; ADH'de teorik olarak CaSR aktivasyonunu değiştirmez. Kanıta dayalı önerilmez.",
+        "D": "YANLIS — Yıllık kontrol yetersiz; 6 ayda idrar Ca ve böbrek fonksiyonu izlemek gerekir.",
+        "E": "YANLIS — Kalsilitikler (encaleret) klinik geliştirme aşamasında; henüz standart tedavi değil."
+      },
+      "etiketler": [
+        "ADH Tedavi Tuzağı",
+        "Nefrokalsinozis",
+        "CaSR",
+        "Minimum Ca Hedefi",
+        "Tiyazid"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Nesbit et al. N Engl J Med 1996; Hannan et al. Nat Rev Endocrinol 2018"
+    },
+    {
+      "id": "s6",
+      "metin": "On altı yaşında kız çocuğu, son 2 yıldır mukokutanöz kandidiyazis tedavisine dirençli oral kandida + el tırnaklarında fungal enfeksiyon ile takip ediliyordu. Şimdi acil servise tetani ile başvurdu.\n\nTetkikler:\nSerum Ca: 6.4 mg/dL ↓↓\nPTH: <5 pg/mL ↓\nACTH stimülasyon testi: cevapsız (sekonder adrenal yetmezlik)\nAnti-paratiroid antikoru: Pozitif\n\nBu hastanın tam tanısı ve altta yatan genetik mekanizma nedir?",
+      "secenekler": {
+        "A": "Otoimmün poliglandüler sendrom tip 2 (APS-2 / Schmidt sendromu): Addison + hipotiroidi + otoimmün tiroidit.",
+        "B": "Otoimmün poliglandüler sendrom tip 1 (APS-1 / APECED): mukokutanöz kandida + hipoparatiroidizm + adrenal yetmezlik; AIRE gen mutasyonu.",
+        "C": "Edinsel hipoparatiroidizm + adrenal yetmezlik birlikteliği; altta yatan genetik mekanizma yok.",
+        "D": "DiGeorge sendromu (22q11.2 delesyonu): paratiroid aplazisi + timik hipoplazi + kardiyak anomaliler.",
+        "E": "Pseudohipoparatiroidizm tip 1a: PTH direnci + Albright herediter osteodistrofisi bulguları."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Mukokutanöz kandida + hipoparatiroidizm + adrenal yetmezlik = APS-1 (APECED). AIRE gen mutasyonu. Klasik üçlü: kandida (ilk), hipoparatiroidizm, Addison (sırayla gelişir).",
+      "aciklama_detay": "APS-1 (Autoimmune Polyendocrinopathy-Candidiasis-Ectodermal Dystrophy), AIRE (autoimmune regulator) geninin biallelik mutasyonundan kaynaklanır. AIRE, timusta santral tolerans için gereklidir. Klasik üçlü: (1) Mukokutanöz kandidiazis (genellikle ilk; çocuklukta başlar), (2) Hipoparatiroidizm (anti-paratiroid ab, anti-CaSR ab), (3) Adrenal yetmezlik (Addison). APS-2'de (Schmidt sendromu) kandida yoktur ve otozomal dominant (CTLA-4, PTPN22). DiGeorge'da kandida tipik değil, kardiyak anomali ve timik hipoplazi ön planda.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — APS-2 (Schmidt): Addison + otoimmün tiroidit ± Tip 1 DM; mukokutanöz kandida yoktur.",
+        "B": "DOGRU — APS-1 üçlüsü: kandida + hipoparatiroidizm + Addison. AIRE mutasyonu.",
+        "C": "YANLIS — Açık genetik mekanizma var: AIRE mutasyonu.",
+        "D": "YANLIS — DiGeorge'da kardiyak anomali, timik hipoplazi, düşük Ca (paratiroid aplazisi) vardır; mukokutanöz kandida tipik değil.",
+        "E": "YANLIS — Psödohipoparatiroidizmde PTH yüksek (direnç), Albright bulguları (kısa boy, yuvarlak yüz, kısa 4. metakarpal); bu tabloda PTH düşük."
+      },
+      "etiketler": [
+        "APS-1",
+        "APECED",
+        "AIRE Mutasyonu",
+        "Mukokutanöz Kandida",
+        "Otoimmün Hipoparatiroidizm"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Husebye et al. Endocr Rev 2019; Finnish-German APECED Consortium 1997"
+    },
+    {
+      "id": "s7",
+      "metin": "Kırk beş yaşında kadın hasta, geçirilmiş total paratiroidektomi sonrası kronik hipoparatiroidizm tanılı. Oral kalsiyum 2.5 g/gün + kalsitriol 1.0 µg/gün kullanırken Ca 7.9 mg/dL, idrar Ca 410 mg/gün. Konvansiyonel tedaviye geçiş sırasında PTH 1-84 (rekombinant) başlanması planlanıyor.\n\nPTH analoglarının konvansiyonel tedaviye (Ca + kalsitriol) üstünlüğünün patofizyolojik temeli nedir?",
+      "secenekler": {
+        "A": "PTH analogları D vitamini aktivasyonunu tamamen engeller ve kalsiyumun bağırsaktan emilimini azaltarak güvenli etki gösterir.",
+        "B": "Rekombinant PTH; renal tübüler Ca geri emilimini artırırken kemik rezorbsiyonunu da artırarak çift yönlü kalsemik etki gösterir; idrar Ca artışı olmaksızın serum Ca'yı korur.",
+        "C": "PTH analogları yalnızca paratiroid bezlerini uyararak endojen PTH sentezini tetikler.",
+        "D": "PTH analogları karaciğerde kalsitriol üretimini artırır; D vitamini etkisiyle aynı mekanizmayı kullanır.",
+        "E": "PTH analogları hipokalsemi nöbetlerini engeller ancak serum Ca düzeyi üzerinde etkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PTH: (1) Böbrekte tübüler Ca geri emilimi artırır → idrar Ca azalır, (2) Kemik rezorbsiyonunu ve 1-alfa-hidroksilazı aktive eder → Ca mobilizasyonu. Net etki: serum Ca korunur + idrar Ca artmaz → konvansiyonel tedavinin nefrokalsinozis tuzağı aşılır.",
+      "aciklama_detay": "Hipoparatiroidizmde konvansiyonel tedavi (Ca + kalsitriol) serum Ca'yı yükseltirken böbrekte PTH etkisi olmadığından tübüler Ca geri emilimi artmaz → idrar Ca dramatik yükselir → nefrokalsinozis. PTH analogları ise: (1) Renal tübüler Ca geri emilimini artırır (PTH1R uyarısı), (2) Kemik rezorbsiyonunu artırır (kısa süreli etkiyle), (3) Renal 1-alfa-hidroksilazı uyarır → kalsitriol üretimi. Bu çok yönlü etki, serum Ca'yı korurken idrar Ca'yı artırmadan tutar — konvansiyonel tedavinin böbrek komplikasyonunu önler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PTH analogları D vitamini aktivasyonunu engellemez; aksine 1-alfa-hidroksilazı uyarır.",
+        "B": "DOGRU — Renal Ca geri emilimi + kemik mobilizasyonu → serum Ca korunur, idrar Ca artmaz.",
+        "C": "YANLIS — Kalıcı hipoparatiroidizmde paratiroid dokusu yok; uyarılacak bez mevcut değil.",
+        "D": "YANLIS — PTH analogları primer olarak böbrek ve kemikte PTH1R agonisti olarak çalışır; karaciğer değil.",
+        "E": "YANLIS — PTH analogları serum Ca'yı doğrudan etkiler; bu onların temel kalsemik etkisidir."
+      },
+      "etiketler": [
+        "PTH Analogu",
+        "rhPTH 1-84",
+        "Renal Tübüler Ca Geri Emilimi",
+        "Nefrokalsinozis Önleme",
+        "Hipoparatiroidizm Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Bilezikian et al. J Bone Miner Res 2022; Rejnmark et al. J Clin Endocrinol Metab 2014"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "id": "hipoparatiroidizm",
+    "branch": "endokrinoloji",
+    "baslik": "Hipoparatiroidizm",
+    "altbaslik": "ADH tip 1/2, CaSR mutasyonları, Aç Kemik Sendromu, kalsiyum/D vitamini tuzağı ve PTH analogları",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 7,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Hipoparatiroidizm; düşük serum PTH + hipokalsemi ile karakterize bir endokrin bozukluktur. Biyokimyasal tanım: düşük/uygunsuz normal PTH + düşük serum kalsiyum (en az iki ölçümde, ≥2 hafta arayla). Etiyoloji: genetik, otoimmün ve iyatrojenik (cerrahi) başlıkları altında incelenir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyoloji — Genel Bakış",
+      "kolonlar": [
+        "Kategori",
+        "Başlıca Nedenler",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "İyatrojenik (En Sık)",
+            "Tiroid/paratiroid cerrahisi: paratiroid bezlerinin çıkarılması veya vaskülarizasyonun bozulması",
+            "Kalıcı hipoparatiroidizmin en sık sebebi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Aç Kemik Sendromu ★",
+            "Şiddetli hiperparatiroidi sonrası paratiroidektomi; kemikler kana hızla Ca çeker → geçici şiddetli hipokalsemi + hipofosfatemi + hipomagnezemi",
+            "Geçici; PTH aniden düşer, kemikler kalsiyum emer"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Genetik — ADH Tip 1",
+            "CaSR geninde aktive edici (gain-of-function) mutasyon",
+            "Kalsiyum-PTH eğrisi sola kayar; set-point anormal düşük"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Genetik — ADH Tip 2",
+            "GNA11 geninde aktive edici mutasyon (Gα11 alt birimi)",
+            "ADH1'e benzer; boy kısalığı eşlik edebilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Otoimmün",
+            "APS tip 1 (AIRE mutasyonu); anti-CaSR otoantikorları in vitro reseptörü aktive ederek PTH salgısını inhibe eder",
+            "APS-1: hipoparatiroidizm + Addison + mukokutanöz kandida üçlüsü"
+          ]
+        },
+        {
+          "hucreler": [
+            "Diğer",
+            "Hemokromatoz, Wilson, radyasyon, infiltratif hastalıklar, ağır hipomagnezemin (PTH salgısını baskılar)",
+            "Hipomagnezemide önce Mg replasmanı!"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "ADH — Moleküler Mekanizma (Sınav Spotu): CaSR'de aktive edici mutasyon → reseptör set-pointi aşağı kayar → düşük serum kalsiyum 'normal' olarak algılanır → PTH baskılanır → hipokalsemi. AYRICA böbrekte CaSR sürekli aktif → idrar kalsiyum atılımı YÜKSEK (hiperkalsiüri) → Ca/Kalsitriol tedavisi verilirse nefrokalsinozis + böbrek taşı."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "ADH Tip 1 vs Tip 2 Karşılaştırması",
+      "kolonlar": [
+        "Özellik",
+        "ADH Tip 1",
+        "ADH Tip 2"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Mutasyon",
+            "CaSR (CASR geni)",
+            "Gα11 alt birimi (GNA11 geni)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Mekanizma",
+            "CaSR direkt gain-of-function",
+            "CaSR sinyal iletiminde downstream aktivasyon"
+          ]
+        },
+        {
+          "hucreler": [
+            "Boy kısalığı",
+            "Yok / nadir",
+            "Eşlik edebilir ★"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Bartter benzeri tablo ★",
+            "Bazı hastalarda: hipokalemi + metabolik alkaloz + potasyum kaybı",
+            "CaSR renal K geri emilimini inhibe eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "Tedavi farklılığı",
+            "İkisi de benzer — kalsilitikler (encaleret, NPS2143) ADH1 için daha çok çalışılmış",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik ve Biyokimyasal Bulgular",
+      "satirlar": [
+        {
+          "metin": "Lab: Düşük total/iyonize kalsiyum + düşük veya uygunsuz normal PTH + hiperfosfatemi (PTH renal fosfat atılımını artırdığından eksikliğinde fosfat birikim). Mg düzeyini kontrol et: hipomagnezemin PTH salgısını baskılar."
+        },
+        {
+          "metin": "**ADH özelliği:** Tedavisiz durumda bile idrar kalsiyumu YÜKSEK (böbrekte CaSR sürekli aktif). Diğer hipoparatiroidizm tiplerinden bu bulguyla ayrılır. ADH hastalarının yaklaşık **%27'si asemptomatiktir**; özellikle 18 yaş altında hipokalsemik nöbetler ile prezente olabilir."
+        },
+        {
+          "metin": "**Semptomlar:** Parestezi (perioral + el/ayak parmakları), Chvostek bulgusu (yüz siniri vurma → yüz kasları kasılır), Trousseau bulgusu (manşon ile karpal spazm), tetani, laringospazm, nöbetler. Uzun dönemde katarakt, bazal ganglia kalsifikasyonu, nöropsikiyatrik bulgular."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Kesin Tanı: Biyokimyasal testler tek başına ADH'yi diğer hipoparatiroidizm tiplerinden ayırt edemez. Tanıyı düşündüren: (1) Aile öyküsü, (2) Tedaviyle hızla gelişen böbrek komplikasyonları (nefrokalsinozis). Kesin tanı: CASR veya GNA11 mutasyon analizi."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Stratejileri",
+      "kolonlar": [
+        "Tedavi",
+        "Mekanizma / Ajan",
+        "ADH'de Özel Durum"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Konvansiyonel",
+            "Oral kalsiyum + aktif D vitamini (kalsitriol)",
+            "ADH'de RİSKLİ: idrar Ca artışı → nefrokalsinozis, böbrek taşı. Yalnızca semptomatikse ver; hedef Ca = semptomsuz minimum düzey (alt referans değil!)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Tiyazid Diüretikler",
+            "Renal kalsiyum geri emilimini artırır",
+            "ADH'de idrar Ca azaltmak + serum Ca desteklemek için eklenir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "PTH Analogları (rhPTH)",
+            "PTH 1-34 (teriparatid) veya PTH 1-84: sc enjeksiyon",
+            "İdrar Ca artırmadan serum Ca korur; yüksek doz kalsitriol/Ca ihtiyacını kaldırır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sürekli sc PTH 1-34 infüzyonu",
+            "Özellikle ADH1'li çocuklarda nöbet sıklığını belirgin azaltır",
+            "Tekrarlayan nöbet + Ca/kalsitriol direnci = güçlü endikasyon"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kalsilitikler ★ (Gelecek)",
+            "NPS2143, encaleret: CaSR antagonisti → set-point sıfırlar → endojen PTH üretimi + idrar Ca↓",
+            "ADH1 için en rasyonel tedavi; henüz araştırma/onay aşamasında"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "ADH'de Ca/Kalsitriol Tedavisinin Tuzağı: Serum kalsiyumu 'normale' çıkarmak hedeflenmemeli. CaSR böbrekte sürekli aktif olduğundan serum Ca yükseldikçe idrar Ca dramatik artar → nefrokalsinozis → kronik böbrek hastalığı. HEDEF: semptomları giderecek asgari serum Ca düzeyi."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Hipoparatiroidizm 5 Altın Kural: (1) PTH↓ + Ca↓ + PO4↑ = hipoparatiroidizm. (2) ADH'de idrar Ca zaten yüksek → Ca/Kalsitriol verirsen nefrokalsinozis. (3) Aç Kemik Sendromu = şiddetli hiperparatiroidi sonrası paratiroidektomide geçici şiddetli hipokalsemi. (4) Hipomagnezemin → PTH salgısını baskılar → önce Mg düzelt. (5) ADH kesin tanı = CASR/GNA11 mutasyon analizi."
+    }
+  ]
+}
