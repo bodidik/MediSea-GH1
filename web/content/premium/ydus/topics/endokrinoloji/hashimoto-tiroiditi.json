@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "id": "hashimoto-tiroiditi",
+    "branch": "endokrinoloji",
+    "baslik": "Hashimoto Tiroiditi",
+    "altbaslik": "Kronik otoimmün tiroidit — etyopatogenez, Haşitoksikoz, USG patern, selenyum ve tiroid lenfoması riski",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 7,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "Hashimoto tiroiditi (kronik lenfositik tiroidit); T-hücre aracılı kronik otoimmün bir tiroid hastalığıdır. **İyot alımının yeterli olduğu bölgelerde diffüz guatr ve primer hipotiroidinin en sık sebebidir.** Kadınlarda erkeklere göre **7–8 kat** daha sık görülür. Yaşla birlikte prevalansı artar; ailesel kümelenme belirgindir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etyopatogenez — Genetik ve Çevresel Faktörler",
+      "kolonlar": [
+        "Kategori",
+        "Faktörler",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Genetik",
+            "CTLA-4, PTPN22, zinc-finger, tiroglobulin (Tg) gen polimorfizmleri",
+            "T hücre aktivasyonu ve santral tolerans bozukluğu"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "HLA İlişkisi",
+            "Atrofik form: HLA-DR3 | Guatröjen form: HLA-DR5",
+            "Farklı patolojik formların genetik altyapısı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Çevresel",
+            "Viral enfeksiyonlar, yüksek iyot alımı, selenyum eksikliği, sigara, ağır metaller, kronik hepatit C",
+            "Kronik yüksek iyot: Tg iyodinasyonunu artırır → antigenite↑ → otoimmünite tetiklenir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "İlaçlar ★",
+            "Amiodaron, lityum, interferon-alfa, IL-2, tirozin kinaz inhibitörleri, immün kontrol noktası inhibitörleri",
+            "Tiroid otoimmünitesini başlatır veya alevlendirir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Otoimmün Mekanizma: Hücresel immünite (sitotoksik T lenfositler) ile hümoral immünite (Anti-TPO, Anti-Tg) birlikte çalışır. Lenfositlerden salgılanan sitokinler tiroid follikül hücrelerinde apoptoza yol açarken, antikorlar hücre aracılı sitotoksisite ile doku hasarı oluşturur."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Histopatoloji ve Patolojik Formlar",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tipik Histoloji",
+            "Yaygın lenfosit + plazma hücresi infiltrasyonu; germinal merkezli lenfoid folliküller; folliküler atrofi, fibrozis"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Hürthle (Askanazy) Hücreleri ★",
+            "Folliküler epitel hücrelerinin onkositik metaplazisi — İİAB'de görülmesi tanı koydurucudur"
+          ]
+        },
+        {
+          "hucreler": [
+            "Guatröjen Form",
+            "Tiroid büyük, lenfositik infiltrasyon baskın; HLA-DR5 ilişkili"
+          ]
+        },
+        {
+          "hucreler": [
+            "Atrofik Form",
+            "Tiroid küçük, fibrozis baskın; HLA-DR3 ilişkili; hipotiroidi daha erken ve ağır"
+          ]
+        },
+        {
+          "renk": "ek_bilgi",
+          "hucreler": [
+            "Fibrozan Varyant",
+            "Riedel tiroiditi ile karışabilir; sert, ahşap kıvamda tiroid; ayırıcı tanıda akılda tutulmalı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular ve Doğal Seyir",
+      "satirlar": [
+        {
+          "metin": "Hastaların **%75'i tanı anında ötiroiddir**. Kalan %25'i subklinik veya aşikar hipotiroidi bulgularıyla başvurur. Doğal seyirde yılda **%3–5 oranında** subklinik hipotiroididen aşikar hipotiroidiye progresyon gelişir."
+        },
+        {
+          "metin": "Guatr varlığında tiroid bezi ağrısız, sert/lastik kıvamında ve irregüler hissedilebilir. Büyük guatrlarda **dispne, disfaji, ses kısıklığı** gibi bası semptomları görülebilir."
+        },
+        {
+          "metin": "Aşikar hipotiroidide klasik metabolik yavaşlama bulguları: yorgunluk, kilo alımı, cilt kuruluğu, kabızlık, soğuk intoleransı, seste kalınlaşma."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Haşitoksikoz (Hashitoxicosis) — Sınav Spotu: Hashimoto zemininde nadir görülen geçici bir tirotoksikoz dönemidir. İki mekanizma: (1) Follikül yıkımıyla depolardan kana kaçan tiroid hormonu (yıkım tirotoksikozu = ATİ'siz geçer), (2) TSH reseptörü uyarıcı antikorların (TSHSAb) geçici etkisi. Hastalık önce hipertiroidi, sonra hipotiroidi ile seyreder. Geçici olduğundan ATİ verilmez — tedavi semptomatik (beta-bloker)."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Tiroid Lenfoması — Kritik Uyarı: Hashimoto tiroiditi, primer tiroid lenfoması için bilinen en önemli risk faktörüdür. Hashimoto zemininde hızlı büyüyen, asimetrik, ağrılı ve bası bulgusu yaratan kitlede TİROİD LENFOMASINI MUTLAKA DÜŞÜN. İİAB veya tru-cut biyopsiyle ekarte edilmelidir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Eşlik Eden Otoimmün Hastalıklar",
+      "kolonlar": [
+        "Hastalık",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tip 1 Diabetes Mellitus",
+            "En sık eşlik eden endokrin otoimmün hastalık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Pernisiyöz Anemi (Anti-IF, Anti-pariyetal hücre Ab)",
+            "B12 eksikliği ile birlikte izlenir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Addison Hastalığı",
+            "Poliglandüler otoimmün sendrom (PGA tip 2 — Schmidt)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Çölyak Hastalığı",
+            "Açıklanamayan hipotiroidi direncinde düşün"
+          ]
+        },
+        {
+          "hucreler": [
+            "Vitiligo, Romatoid Artrit, Sjögren Sendromu",
+            "Sistemik otoimmünite birlikteliği"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Laboratuvar ve USG Bulguları",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu",
+        "Yorum"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Anti-TPO (antimikrozomal Ab) ★",
+            "%90–100 pozitif",
+            "En değerli serolojik belirteç; tanıda altın standart"
+          ]
+        },
+        {
+          "hucreler": [
+            "Anti-Tg (anti-tiroglobulin Ab)",
+            "%20–50 pozitif",
+            "Tek başına daha az spesifik; Anti-TPO negatif şüpheli vakalarda bakılır"
+          ]
+        },
+        {
+          "hucreler": [
+            "TSH",
+            "Normal / yüksek (hastalık evresine göre)",
+            "Başlangıçta yüksek Anti-TPO + yüksek TSH = aşikar hipotiroidi riski prediktörü"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "USG ★",
+            "Diffüz hipoekojenite + heterojen parankim + mikronodüler/psödonodül patern",
+            "Oldukça spesifik görünüm; fibrotik septasyonlar yalancı nodül izlenimi verir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Doppler USG",
+            "Kanlanma azalmış (↓)",
+            "Graves'ten ayrımda önemli: Graves'te 'tiroid inferno' (belirgin artmış akım) vardır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "USG Ayırımı — Hashimoto vs Graves: Hashimoto'da parankim kanlanması AZALMIŞ (hipoekojen, heterojen). Graves'te parankim kanlanması AŞIRI ARTMIŞ — 'tiroid inferno' olarak tanımlanır. Doppler USG iki hastalığı birbirinden ayırt etmede kritik rol oynar."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yönetim ve Tedavi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Ötiroid + Asemptomatik",
+            "Tedavi yok; 6–12 aylık TSH takibi",
+            "Hipotiroidi gelişimi açısından periyodik izlem"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hipotiroidi (subklinik özel koşullar / aşikar)",
+            "Levotiroksin (LT4): ~1.2–1.6 µg/kg/gün",
+            "Hedef TSH normal aralığa çek; yaşlı/KAH'lıda düşük doz başla"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Dev Guatr (bası + medikal başarısızlık) ★",
+            "Total tiroidektomi",
+            "Rutin yeri yok; medikal tedaviye rağmen gerilemeyen dev guatrda endikasyon"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Dominant Nodül — İİAB şüpheli ★",
+            "Total tiroidektomi",
+            "Malignite / tiroid lenfoması şüphesinde — lenfomayla birliktelik akılda tutulmalı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Selenyum",
+            "Rutin önerilmez",
+            "Anti-TPO titrelerini düşürebilir; ancak klinik hipotiroidi seyrini değiştirdiğine dair güçlü kanıt yoktur"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Hashimoto 5 Altın Kural: (1) Anti-TPO %90–100 pozitif — birincil tanı belirteci. (2) %75'i ötiroid başlar; yılda %3–5 aşikar hipotiroidiye ilerler → takip şart. (3) Haşitoksikozda ATİ verme — yıkım tirotoksikozu, kendiliğinden geçer. (4) Hızlı büyüyen asimetrik kitle = tiroid lenfoması düşün. (5) USG: hipoekojen + heterojen + psödonodül + Doppler↓ (Graves'te inferno↑)."
+    }
+  ]
+}

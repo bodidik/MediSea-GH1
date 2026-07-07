@@ -24,7 +24,12 @@
         "D": "YANLIŞ — TSH'ın santral hastalıkta asla yükselmeyeceği bilgisi yanlıştır. Biyolojik olarak inaktif ama immünolojik olarak ölçülebilen TSH molekülleri nedeniyle TSH 5–10 mU/L arasında saptanabilir. Bu, santral hipotiroidinin önemli bir sınav tuzağıdır.",
         "E": "YANLIŞ — Kabergolin dopamin agonisti olarak TSH'ı suprese etme değil, prolaktini düşürme etkisi gösterir. Kabergolin TSH veya sT4 üzerinde primer etkisi olmayan bir ilaçtır; bu tablo kabergoline bağlanamaz."
       },
-      "etiketler": ["Santral Hipotiroidi", "TSH Paradoksu", "Biyolojik İnaktif TSH", "Prolaktinoma"],
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "TSH Paradoksu",
+        "Biyolojik İnaktif TSH",
+        "Prolaktinoma"
+      ],
       "zorluk": "zor",
       "kaynak": "Persani et al. Eur J Endocrinol 2018; Visser et al. Nat Rev Endocrinol 2021"
     },
@@ -48,7 +53,13 @@
         "D": "YANLIŞ — Testosteron replasmanı önemli olmakla birlikte, adrenal yetmezliğe kıyasla hayati aciliyeti yoktur. Önce adrenal aks güvenceye alınır, ardından gonadal eksiklik tedavi edilir.",
         "E": "YANLIŞ — Kraniyal MRG santral hipotiroidili her hastada yapılmalıdır; ancak bu görüntüleme için LT4'ü bekletmek gerekmez. Görüntüleme ile tedavi aynı anda planlanabilir; adrenal kriz riskini gidermek tek acil önceliktir."
       },
-      "etiketler": ["Santral Hipotiroidi", "Adrenal Yetmezlik", "LT4 Öncesi", "Glukokortikoid", "Hipofiz Cerrahisi"],
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "Adrenal Yetmezlik",
+        "LT4 Öncesi",
+        "Glukokortikoid",
+        "Hipofiz Cerrahisi"
+      ],
       "zorluk": "orta",
       "kaynak": "Persani et al. Eur J Endocrinol 2018; Endocrine Society Guidelines 2021"
     },
@@ -72,9 +83,134 @@
         "D": "YANLIŞ — LT4'ü kesmek santral hipotiroidide ciddi bir hatadır. TSH baskılanması iatrojenik hipertiroidi göstergesi değildir; sT4 referans sınırları içindeyse hasta ötiroid kabul edilir. İlaç kesilmesi semptomatik hipotiroidiye yol açar.",
         "E": "YANLIŞ — Santral hipotiroidide TSH takip parametresi olarak kullanılmaz; 0.1–1.0 mU/L hedef aralığı gibi bir öneri kılavuzlarda yer almaz. Tek güvenilir izlem parametresi sT4'tür."
       },
-      "etiketler": ["Santral Hipotiroidi", "LT4 Takip", "sT4 Hedef", "TSH Kullanılmaz", "Sheehan Sendromu"],
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "LT4 Takip",
+        "sT4 Hedef",
+        "TSH Kullanılmaz",
+        "Sheehan Sendromu"
+      ],
       "zorluk": "orta",
       "kaynak": "Persani et al. Eur J Endocrinol 2018; Endocrine Society Guidelines 2021"
+    },
+    {
+      "id": "s4",
+      "metin": "Otuz iki yaşında erkek hasta, adrenokortikal karsinom tanısıyla 4 aydır mitotan tedavisi alıyor. Rutin kontrol tetkiklerinde:\n\nsT4: 0.71 ng/dL ↓\nTSH: 2.1 mU/L (normal)\nTiroid antikorları: Negatif\n\nHastanın önceki tetkiklerinde tiroid fonksiyonları tamamen normaldi.\n\nBu tablonun en olası açıklaması aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Tiroid antikorları negatif olduğundan mitotan tiroid bezini etkilemez; tablo rastlantısaldır.",
+        "B": "Mitotan santral hipotiroidiye yol açan spesifik bir ajandır; sT4 düşük ve TSH uygunsuz normal bulunması bu tabloya uyumludur.",
+        "C": "Mitotan periferik tiroid hormon metabolizmasını bozar, sT4 klerensini artırır; TSH normal kaldığından bu tablo ilaca bağlı artefakttır.",
+        "D": "Mitotan adrenokortikal karsinom tedavisinde kullanılır, tiroid üzerinde etkisi yoktur; primer hipotiroidi araştırılmalıdır.",
+        "E": "TSH 2.1 mU/L normal sınırda olduğundan tiroid fonksiyon bozukluğu yoktur; sT4 düşüklüğü laboratuvar hatası olabilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Mitotan (adrenokortikal karsinom ilacı) santral hipotiroidiye yol açabilen spesifik bir ajandır. sT4↓ + TSH uygunsuz normal → santral hipotiroidi paternini taklit eder.",
+      "aciklama_detay": "Mitotan, beksaroten, immün kontrol noktası inhibitörleri ve bazı psikotrop ilaçlar santral hipotiroidiye özgü ajanlardır. Mitotan hipofizer TSH salgısını bozar; sonuçta tiroid bezi uyarı almadan sT4 düşer, ancak TSH paradoks biçimde normal kalabilir. Primer hipotiroidide TSH belirgin yükselirdi. Anti-TPO negatif + hipofize yönelik ilaç öyküsü + sT4↓ + TSH normal = ilaç kaynaklı santral hipotiroidi.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tiroid antikorlarının negatif olması santral hipotiroidisi dışlamaz; santral hastalıkta tiroid bezinin kendisi sağlıklıdır, otoimmün hasar yoktur zaten.",
+        "B": "DOGRU — Mitotan santral hipotiroidiye yol açan, sınav spotlarında özellikle sorulan bir onkoloji ajanıdır. Beksaroten (RXR ligandı) ile birlikte en spesifik ilaç nedenlerinden biridir.",
+        "C": "YANLIS — Fenitoin ve karbamazepin sT4 klerensini artırarak artefakt düşüklük yapabilir; bu durum TSH normal kalırken sT4'ü düşük gösterir. Ancak mitotan mekanizması farklıdır: hipofizer TSH salgısını baskılar.",
+        "D": "YANLIS — Mitotan santral hipotiroidiye yol açabilir; bu iyi belgelenmiş bir ilaç yan etkisidir.",
+        "E": "YANLIS — Santral hipotiroidinin lab paradoksu: sT4 düşük + TSH normal/hafif yüksek. TSH'ın normal olması hipotiroidisi olmadığı anlamına gelmez; aksine santral hastalığın karakteristik bulgusudur."
+      },
+      "etiketler": [
+        "İlaca Bağlı Santral Hipotiroidi",
+        "Mitotan",
+        "Adrenokortikal Karsinom",
+        "TSH Paradoksu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Persani et al. Eur J Endocrinol 2018"
+    },
+    {
+      "id": "s5",
+      "metin": "Kırk dört yaşında kadın hasta, melanom tanısıyla ipilimumab + nivolumab kombinasyon immünoterapisi alıyor. İkinci kür sonrasında halsizlik, soğuk intoleransı ve konsantrasyon güçlüğü gelişiyor.\n\nTetkikler:\nsT4: 0.65 ng/dL ↓\nTSH: 3.8 mU/L (normal sınırda)\nHipofiz MRG: Lenfositik hipofizit ile uyumlu hipofiz büyümesi\n\nBu hastada gelişen tabloya en doğru tanı ve olası mekanizma hangisidir?",
+      "secenekler": {
+        "A": "İpilimumab + nivolumab kombinasyonu Hashimoto tiroiditini tetiklemiştir; tiroid otoantikorları araştırılmalıdır.",
+        "B": "İmmün kontrol noktası inhibitörleri (özellikle anti-CTLA-4 ipilimumab) lenfositik hipofiziti tetikleyerek santral hipotiroidiye yol açmıştır.",
+        "C": "Nivolumab (anti-PD-1) tiroid bezini direkt olarak hasarlar; bu tablo primer hipotiroidiye uygundur.",
+        "D": "İmmünoterapi hipofizi etkilemez; semptomlar melanomun merkezi sinir sistemi metastazından kaynaklanıyor olabilir.",
+        "E": "TSH 3.8 mU/L normal sınırda olduğundan tiroid fonksiyon bozukluğu yoktur; bu bulgular psikosomatik değerlendirilebilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İpilimumab (anti-CTLA-4) lenfositik hipofiziti santral hipotiroidiye yol açan en bilinen immünoterapi ajandır. MRG hipofizit bulgusu tanıyı destekliyor.",
+      "aciklama_detay": "İmmün kontrol noktası inhibitörleri (ICI) immün ilişkili advers etkiler (irAE) yapabilir. Hipofiz en sık etkilenen endokrin organ olup özellikle ipilimumab (anti-CTLA-4) bağlı lenfositik hipofizit klasik bir bulgudur. Nivolumab ve pembrolizumab (anti-PD-1/PD-L1) da hipofiz, tiroid ve adrenal gibi endokrin organlara zarar verebilir. Lenfositik hipofizit sonucunda TSH eksikliği → santral hipotiroidi gelişir. TSH 3.8 mU/L ile uygunsuz normal, sT4 düşük + hipofizit MRG bulgusu = santral hipotiroidi. Bu hastalarda adrenal yetmezlik de birlikte değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ICI'ler Hashimoto tiroiditini tetikleyebilir (primer hipotiroidi yapabilir); ancak bu hastada MRG'de hipofizit bulgusu var ve TSH normal — bu santral hipotiroididir.",
+        "B": "DOGRU — İpilimumab (anti-CTLA-4) lenfositik hipofizit ile santral hipotiroidinin en iyi bilinen ilişkisini oluşturur. Sınav spotlarında özellikle ipilimumab + hipofizit + santral hipotiroidi üçlüsü sorulur.",
+        "C": "YANLIS — Nivolumab primer hipotiroidiye de yol açabilir, ancak bu hastada MRG hipofizit bulgusu santral hipotiroidiye işaret ediyor. Primer hipotiroidide TSH belirgin yükselirdi.",
+        "D": "YANLIS — ICI'ler hipofizi etkileyebilir; bu iyi bilinen bir irAE'dir. MRG'de hipofizit bulgusu bu mekanizmayı doğruluyor.",
+        "E": "YANLIS — sT4 0.65 ng/dL ile belirgin düşük; bu patolojik bir bulgudur. TSH'ın normal sınırda olması santral hipotiroidinin lab paradoksudur."
+      },
+      "etiketler": [
+        "İmmün Kontrol Noktası İnhibitörleri",
+        "İpilimumab",
+        "Lenfositik Hipofizit",
+        "Santral Hipotiroidi",
+        "irAE"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ryder et al. J Clin Endocrinol Metab 2014; Persani et al. Eur J Endocrinol 2018"
+    },
+    {
+      "id": "s6",
+      "metin": "Yirmi sekiz yaşında kadın hasta, 28. gebelik haftasında endokrinoloji konsültasyonu isteniyor. Beş yıl önce konjenital santral hipotiroidizm tanısı konulmuş; gebelik öncesinde levotiroksin 100 mcg/gün kullanmaktaydı. Obstetrisyen 'tiroid kontrolü yapın' diye yönlendiriyor.\n\nTetkikler:\nsT4: 1.05 ng/dL (gebeliğe özgü N: 0.80–1.60 ng/dL)\nTSH: 0.04 mU/L — baskılanmış\n\nBu gebenin yönetimi için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "TSH baskılanmış, LT4 dozu azaltılmalı; TSH 0.4–4.0 mU/L aralığına getirilmeli.",
+        "B": "sT4 1.05 ng/dL, gebeliğe özgü referans aralığının alt yarısında — doz artışı yapılarak sT4 üst çeyreğe (>1.35 ng/dL) çıkarılmalıdır; TSH izlemde kullanılmaz.",
+        "C": "Gebelikte tiroid hormon ihtiyacı değişmez; mevcut doz uygundur.",
+        "D": "sT4 normal aralıkta olduğundan doz değişikliği gerekmez; TSH baskılı ise dozu azalt.",
+        "E": "Santral hipotiroidide gebelikte TSH hedefi 0.1–0.4 mU/L arasında tutulmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Santral hipotiroidili gebede sT4 gebeliğe özgü referansın üst çeyreğinde tutulmalıdır (TSH kullanılmaz). sT4 1.05 ng/dL referansın alt yarısında → doz artışı gerekir.",
+      "aciklama_detay": "Gebelikte tiroid hormon ihtiyacı artar (plasental T4 metabolizması, anne-fetus T4 transferi); normal gebelerde de LT4 dozu yaklaşık %25–50 artırılır. Santral hipotiroidili gebelerde TSH kullanılamadığından doz ayarlaması yalnızca sT4'e göre yapılır. Hedef: sT4 gebeliğe özgü normal referans aralığının üst çeyreğinde (upper quartile). Bu hastada sT4 1.05 ng/dL, 0.80–1.60 aralığının alt yarısında; üst çeyrek >1.35 ng/dL. Fetal tiroid hormona bağımlı nörolojik gelişim için annenin sT4 yeterli düzeyde olmalı.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gebelikte santral hipotiroidide TSH takibi kullanılmaz. TSH'ı normalize etmeye çalışmak dozu azaltır; bu fetüs için yetersiz T4 anlamına gelir.",
+        "B": "DOGRU — Santral hipotiroidili gebede sT4 üst çeyrekte tutulması kılavuz önerisidir. sT4 1.05 ng/dL referansın altında — doz artırılmalıdır.",
+        "C": "YANLIS — Gebelikte tiroid hormon ihtiyacı artar; doz artışı tüm hipotiroidili gebelerde (santral dahil) gereklidir.",
+        "D": "YANLIS — TSH baskılı olduğu için doz azaltmak santral hipotiroidinin takibinde hatalıdır. sT4 hedef aralığın altında; doz artışı gerekir.",
+        "E": "YANLIS — Santral hipotiroidide TSH hedef aralığı tanımlanamaz; takip parametresi TSH değil sT4'tür."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "Gebelik",
+        "LT4 Gebelik Dozu",
+        "sT4 Üst Çeyrek",
+        "TSH Kullanılmaz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Persani et al. Eur J Endocrinol 2018; Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s7",
+      "metin": "Ağır pnömoni nedeniyle YBÜ'de takip edilen 63 yaşında erkek hastanın tiroid fonksiyon testleri:\n\nsT3: 0.5 pg/mL ↓↓ (N: 2.3–4.2)\nsT4: 0.72 ng/dL ↓\nrT3: 0.8 ng/mL ↑ (N: 0.10–0.25)\nTSH: 0.6 mU/L — düşük-normal\n\nKlinikte tiroid ikame tedavisi tartışılıyor.\n\nBu tablonun en olası tanısı ve doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "sT4 ve TSH birlikte düşük — santral hipotiroidizm; LT4 başlanmalı, ancak önce adrenal yetmezlik dışlanmalıdır.",
+        "B": "Tiroid dışı hastalık sendromu (TDHS); periferik T4→T3 dönüşüm bozukluğu sonucu sT3↓↓ ve rT3↑ ile karakterizedir. Tiroid ikamesi önerilmez; altta yatan hastalığın tedavisi önceliklidir.",
+        "C": "sT3↓↓ ve sT4↓ kombinasyonu primer hipotiroidizm ile uyumludur; TSH beklenmedik düşüklüğü analitik hata nedeniyle olabilir.",
+        "D": "rT3 yüksekliği santral hipotiroidizmin patofizyolojik göstergesidir; bu bulgu ikame tedavisi başlanması için endikasyondur.",
+        "E": "YBÜ hastalarında tiroid tetkiklerinin güvenilirliği düşük olduğundan yorum yapılmamalı, hasta taburcu olduktan sonra değerlendirilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "sT3↓↓ + rT3↑ + ağır akut hastalık zemini = TDHS (tiroid dışı hastalık sendromu). Periferik dönüşüm bozukluğu; tiroid ikamesi faydalı değil, hatta zararlı olabilir.",
+      "aciklama_detay": "TDHS (ötiroid hasta sendromu), ağır sistemik hastalıklarda periferik T4→T3 dönüşümünü sağlayan tip 1 deiyodinazın baskılanması sonucu gelişir. T4 inaktif rT3'e yönelir → rT3 yüksek, sT3 çok düşük. TSH genellikle normal veya düşük-normal; sT4 düşük olabilir. Santral hipotiroididen ayırt edilmesi kritiktir çünkü TDHS'de tiroid ikamesi fayda sağlamaz (randomize çalışmalar negatif). Kural: rT3↑ + sT3↓↓ + ağır hastalık zemini = TDHS; altta yatan hastalığı tedavi et, tiroid ikamesinden kaçın.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu tablo santral hipotiroidizm değil TDHS'dir. Santral hipotiroidide rT3 yükselmez; burada rT3↑ + sT3↓↓ + YBÜ zemini kesinlikle TDHS'ye işaret eder.",
+        "B": "DOGRU — rT3 yüksekliği TDHS'nin karakteristik bulgusudur (deiyodinaz yönelimi T4→rT3). sT3 çok düşük, rT3 çok yüksek + ağır infeksiyon = TDHS. Tiroid ikamesi randomize çalışmalarda mortalite veya iyileşme üzerinde fayda göstermemiştir.",
+        "C": "YANLIS — Primer hipotiroidide TSH belirgin yüksek olurdu. rT3 yüksekliği primer hipotiroidiye özgü değildir.",
+        "D": "YANLIS — rT3 yüksekliği santral hipotiroidizmin değil, TDHS'nin periferik dönüşüm bozukluğunun göstergesidir. Santral hipotiroidide rT3 normal beklenir.",
+        "E": "YANLIS — YBÜ'de tiroid tetkiklerinin yorumu güçtür ancak TDHS paternini tanımak klinisyenin görevi; 'ölçme, yorum yapma' yaklaşımı doğru değildir."
+      },
+      "etiketler": [
+        "TDHS",
+        "Tiroid Dışı Hastalık Sendromu",
+        "rT3",
+        "Ayırıcı Tanı",
+        "YBÜ"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Economidou et al. Hormones 2011; Persani et al. Eur J Endocrinol 2018"
     }
   ]
 }

@@ -16,20 +16,37 @@
         {
           "id": "santral-hipotiroidizm",
           "baslik": "Santral Hipotiroidizm",
-          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
           "hazir": true
         },
         {
           "id": "graves-hastaligi",
           "baslik": "Graves Hastalığı",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         },
         {
           "id": "hashimoto-tiroiditi",
           "baslik": "Hashimoto Tiroiditi",
-          "rozetler": ["YAKINDA"],
-          "hazir": false
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "gebelik-tiroid",
+          "baslik": "Gebelik ve Tiroid Hastalıkları",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     },
@@ -42,13 +59,17 @@
         {
           "id": "primer-adrenal-yetmezlik",
           "baslik": "Primer Adrenal Yetmezlik (Addison)",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         },
         {
           "id": "cushing-sendromu",
           "baslik": "Cushing Sendromu",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
@@ -62,7 +83,9 @@
         {
           "id": "hipopituitarizm",
           "baslik": "Hipopituitarizm",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
@@ -76,7 +99,9 @@
         {
           "id": "dka-yonetimi",
           "baslik": "Diyabetik Ketoasidoz (DKA)",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]

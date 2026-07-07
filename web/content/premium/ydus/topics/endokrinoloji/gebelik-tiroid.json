@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "id": "gebelik-tiroid",
+    "branch": "endokrinoloji",
+    "baslik": "Gebelik ve Tiroid Hastalıkları",
+    "altbaslik": "Fizyolojik adaptasyon, hipotiroidi, Graves, PTU↔MMI geçişi, nodül ve postpartum tiroidit — TEMD 2025 kılavuzu ışığında",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 7,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Gebelikte Normal Tiroid Fizyolojisi",
+      "satirlar": [
+        {
+          "metin": "Fetüs kendi tiroid bezi fonksiyon görmeye başlayana kadar (**10–12. haftaya kadar**) tiroid hormonu için tamamen anneye bağımlıdır. Bu nedenle annenin tiroid fonksiyonu, fetal nörolojik gelişimi doğrudan etkiler."
+        },
+        {
+          "metin": "**hCG etkisi:** İlk trimesterde zirveye ulaşan hCG, yapısal benzerliği nedeniyle TSH reseptörünü zayıfça uyarır → tiroid hormonu üretimi artar → TSH baskılanır. Sağlıklı gebelerin **%20'sinde TSH normalin alt sınırının altına inebilir** — fizyolojiktir, tedavi gerektirmez."
+        },
+        {
+          "metin": "**TBG artışı:** Östrojen kaynaklı TBG (Tiroksin Bağlayıcı Globulin) artışı total T4/T3'ü referans üst sınırının **~1.5 katına** çıkarır. Serbest T4 ölçümleri gebelikte yanıltıcı olabilir; klinisyen gerektiğinde total T4 değerini 1.5 faktörüyle yorumlamalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Gebelikte Trimestere Özgü TSH Referans Aralıkları",
+      "kolonlar": [
+        "Trimester",
+        "TSH Üst Sınırı (öneri)",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "1. Trimester (0–12 hafta)",
+            "2.5 mU/L",
+            "hCG etkisiyle TSH fizyolojik olarak baskılanır; alt sınır ~0.1 mU/L"
+          ]
+        },
+        {
+          "hucreler": [
+            "2. Trimester (13–26 hafta)",
+            "3.0 mU/L",
+            "hCG düşer, TSH yavaşça yükselir"
+          ]
+        },
+        {
+          "hucreler": [
+            "3. Trimester (27–40 hafta)",
+            "3.0–4.0 mU/L",
+            "Laboratuvara özgü trimester referansı yoksa ~4.0 mU/L kullanılabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Altın Kural",
+            "Mümkünse laboratuvara özgü trimester referansı kullan",
+            "Yoksa: 1. tri ≤2.5, 2.–3. tri ≤3.0 mU/L uygula"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "İyot İhtiyacı: Artan renal iyot atılımı ve fetal ihtiyaç nedeniyle gebelik/laktasyonda günlük iyot gereksinimi 250 µg'ye çıkar (WHO ve TEMD önerisi). Türkiye gibi endemik bölgelerde rutin diyet + iyotlu tuz tüketimine ek olarak 100–150 µg/gün potasyum iyodür takviyesi şiddetle tavsiye edilir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Gebelikte Hipotiroidi",
+      "satirlar": [
+        {
+          "metin": "Tedavisiz hipotiroidi: preeklampsi, erken doğum, düşük doğum ağırlığı, plasenta dekolmanı, postpartum kanama ve en önemlisi **fetal nöropsikolojik/bilişsel gelişim geriliği (düşük IQ)** ile ilişkilidir. En sık neden Hashimoto tiroiditia (otoimmün tiroidit)."
+        },
+        {
+          "metin": "**Aşikar hipotiroidi (TSH↑ + sT4↓):** Kesinlikle tedavi edilmeli. Tek ajan: **Levotiroksin (LT4)**. T3 preparatları (liyotironin) plasentayı geçemez — kullanılmaz."
+        },
+        {
+          "metin": "**Subklinik hipotiroidi (TSH↑ + sT4 normal):** Anti-TPO pozitifse ve TSH trimester eşiğini aşıyorsa LT4 başla. Anti-TPO negatif + TSH ≥10 mU/L → mutlaka tedavi et. Anti-TPO negatif + TSH 2.5–10 mU/L arası → risk faktörlerine göre bireyselleştir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Gebelikte Subklinik Hipotiroidi — Tedavi Kararı",
+      "kolonlar": [
+        "TSH Düzeyi",
+        "Anti-TPO Durumu",
+        "Karar"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "≥10 mU/L",
+            "Pozitif veya Negatif",
+            "LT4 başla — tartışmasız"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Trimester eşiğinin üstü (<10)",
+            "Pozitif",
+            "LT4 başla"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Trimester eşiğinin üstü (<10)",
+            "Negatif",
+            "Bireyselleştir — risk faktörlerine bak"
+          ]
+        },
+        {
+          "hucreler": [
+            "Trimester eşiğinin altı",
+            "Pozitif (subklinik)",
+            "İzle; tedavi zorunlu değil, tartışmalı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "LT4 Doz Artışı — Kritik Kural: Gebelik öncesi hipotiroid + LT4 kullanan kadınlarda gebe kalındığı öğrenilir öğrenilmez doz %25–50 artırılmalıdır. Pratik yöntem: haftanın 2 gününde çift doz al (7 günlük doz = 9 günlük). Her 4 haftada TSH kontrolü; hedef TSH: **0.4–2.5 mU/L**."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Gebelikte Hipertiroidi — GTT vs Graves",
+      "satirlar": [
+        {
+          "metin": "En kritik adım: **Gestasyonel Geçici Tirotoksikoz (GTT)** mı, **Graves Hastalığı** mı? İkisi arasındaki ayrım tedaviyi tamamen değiştirir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "GTT vs Graves Hastalığı — Ayırıcı Tanı",
+      "kolonlar": [
+        "Özellik",
+        "GTT",
+        "Graves Hastalığı"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Mekanizma",
+            "hCG aşırı TSH reseptör uyarımı",
+            "Otoimmün (TRAb)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "TRAb",
+            "Negatif ★",
+            "Pozitif ★"
+          ]
+        },
+        {
+          "hucreler": [
+            "Guatr / Oftalmopati",
+            "Yok",
+            "Sıklıkla var"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hiperemezis Gravidarum",
+            "Sık birliktelik (%50–60)",
+            "Yok / tesadüf"
+          ]
+        },
+        {
+          "hucreler": [
+            "Seyir",
+            "14–18. haftada kendiliğinden düzelir",
+            "Tedavisiz devam eder, fetüse zarar verir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Antitiroid İlaç",
+            "VERİLMEZ ★",
+            "Verilmeli"
+          ]
+        },
+        {
+          "hucreler": [
+            "Tedavi",
+            "Destek: IV hidrasyon, antiemetik",
+            "PTU (1. tri) → MMI (2.-3. tri)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "PTU ↔ MMI Geçiş Kuralı — Kritik Sınav Spotu:\n• 1. Trimester (organogenez): PTU tercih et — MMI metimazol embriyopatisine (aplasia cutis, koanal atrezi, omfalosel) neden olabilir.\n• 16. haftadan sonra: PTU'dan MMI'ye geç (1:20 doz oranı: PTU 100 mg = MMI 5 mg) — PTU uzun süreli fulminan karaciğer yetmezliği riski taşır.\n• Radyoaktif iyot (RAI): Gebelikte kesinlikle kontrendike. RAI sonrası en az 6 ay gebe kalınmamalı."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Graves Tedavisinde Hedef Doz: Anneyi tam ötiroid yapmak fetüste guatr + hipotiroidiye neden olur (ATİ plasentayı geçer, fetal tiroid daha duyarlı). Bu nedenle mümkün olan en düşük ATİ dozu kullan, annenin sT4 düzeyini normalin üst sınırında veya hafifçe üzerinde tut. 'Blok ve replasman' (ATİ + LT4) yöntemi gebelikte KESİNLİKLE KONTRENDİKE."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Fetal İzlem: TRAb ve Fetal Hipertiroidi",
+      "satirlar": [
+        {
+          "metin": "Annedeki **TRAb (TSH Reseptör Antikoru) plasentayı geçer** → fetal tiroid bezini uyarır → fetal hipertiroidi + kalp yetmezliği riski. Riskli gebelerde (özellikle yüksek TRAb titresinde) **18–22. haftada TRAb ölçülmeli**; titreleri yüksekse **fetal guatr ve taşikardi için USG ile sıkı takip** yapılmalıdır. Daha önce RAI veya tiroidektomi geçirmiş Graves hastalarında da TRAb kanda yıllarca pozitif kalabileceğinden bu takip ihmal edilmemelidir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Gebelikte Tiroid Nodülü ve Kanseri",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Nodül değerlendirmesi",
+            "USG — güvenli, ilk seçenek",
+            "Gebeliğin her döneminde uygulanabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Biyopsi (İİAB)",
+            "Endikasyonlar gebe olmayan ile aynı",
+            "Gebeliğin her döneminde güvenle yapılabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rutin kalsitonin / tiroglobulin",
+            "Önerilmez (MTK şüphesi yoksa)",
+            "—"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "DTK — agresif değil",
+            "Cerrahiyi doğum sonrasına ertele",
+            "Çoğu DTK yavaş seyirli; gebelik süresince izle"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "DTK — agresif / hızlı büyüme",
+            "Gebelik içi cerrahi gerekirse: 2. trimester en güvenli",
+            "1. tri (organogenez riski) ve 3. tri (preterm eylem riski) tercih edilmez"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "RAI, Sintigrafi",
+            "Gebelikte KESİNLİKLE KONTRENDİKE",
+            "Fetüse doğrudan iyonizan radyasyon zarar verir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Postpartum Tiroidit (PPT)",
+      "satirlar": [
+        {
+          "metin": "Doğum sonrası immün reboundla birlikte otoimmün hastalıklar alevlenir. **PPT**, doğumdan sonraki **ilk 1 yıl** içinde görülen ağrısız tiroidittir. Anti-TPO pozitif kadınların **%50**'sinde gelişme riski vardır."
+        },
+        {
+          "metin": "**Klasik trifazik seyir:** (1) **Tirotoksikoz fazı** (1–4. ay, yıkım kaynaklı) → (2) **Hipotiroidi fazı** (4–8. ay) → (3) **Ötiroidiye dönüş** (6–12. ay). Olguların **%20–30'unda kalıcı hipotiroidi** gelişir; bu grupta uzun süreli LT4 tedavisi gerekir."
+        },
+        {
+          "metin": "**Tedavi:** Tirotoksikoz fazı semptomluysa β-bloker (propranolol) kullanılır — ATİ verilmez (yıkım kaynaklı, yeni sentez yok). Hipotiroidi fazı semptomluysa LT4 başlanır. Emziren annelerde ATİ gerekirse: PTU max 300 mg/gün, MMI max 20 mg/gün, emzirmeden hemen sonra alınarak etkiye uğramadan önce süt üretimi tamamlanmış olur."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Gebelik + Tiroid 6 Altın Kural: (1) 1. trimesterde TSH üst sınırı 2.5 mU/L. (2) LT4 gebe kalır kalınmaz %25–50 artır; hedef TSH 0.4–2.5. (3) Gebelikte hipertiroidi → önce GTT mi Graves mı? TRAb ayırt eder. (4) 1. trimesterde ATİ lazımsa PTU; 16. haftadan sonra MMI'ye geç. (5) Blok + replasman gebelikte kontrendike. (6) RAI/sintigrafi kesinlikle yasak."
+    }
+  ]
+}

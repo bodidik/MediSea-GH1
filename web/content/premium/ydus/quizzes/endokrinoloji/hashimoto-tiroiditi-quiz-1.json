@@ -1,0 +1,218 @@
+{
+  "id": "quiz-endo-hashimoto-001",
+  "baslik": "Hashimoto Tiroiditi — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hashimoto-tiroiditi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Kırk iki yaşında kadın hasta, 3 aydır çarpıntı, sinirlilik ve 3 kg kilo kaybı yakınmalarıyla başvuruyor. Özgeçmişinde 5 yıl önce Hashimoto tiroiditi tanısı konulmuş, izlemdeymiş, ilaç kullanmıyormuş.\n\nTetkikler:\nTSH: <0.01 mU/L ↓\nsT4: 2.9 ng/dL ↑\nAnti-TPO: 1840 IU/mL ↑ (referans <35)\nTRAb: Negatif\nUSG: Heterojen, hipoekojen parankim; Doppler'da azalmış akım\n\nBu hastada tirotoksikozun en olası mekanizması ve doğru tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Hashimoto zemininde Graves hastalığı gelişmiştir; metimazol başlanmalıdır.",
+        "B": "Haşitoksikoz: follikül yıkımıyla kana karışan tiroid hormonu ve/veya geçici TSH reseptörü uyarıcı antikorların etkisi. Geçici bir dönemdir; ATİ verilmez, semptomlar için beta-bloker kullanılır.",
+        "C": "Subakut tiroidit gelişmiş; ağrı ve ESR yüksekliği araştırılmalıdır.",
+        "D": "Anti-TPO yüksekliği bu düzeyde doğrudan hipertiroidiye neden olmaktadır; antikor titresi düşürülmelidir.",
+        "E": "Tiroid sintigrafisi ile tanı kesinleştirilmeli; ardından radyoaktif iyot tedavisi planlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hashimoto + tirotoksikoz + TRAb negatif + Doppler azalmış akım = Haşitoksikoz. Yıkım kaynaklı geçici; ATİ verilmez, beta-bloker ile semptom kontrolü yapılır.",
+      "aciklama_detay": "Haşitoksikoz, Hashimoto tiroiditinde nadir görülen geçici tirotoksikoz dönemidir. İki mekanizma: (1) İnflamatuvar follikül yıkımıyla depolardaki T4/T3'ün kana salınması, (2) Geçici TSH reseptörü uyarıcı antikorların varlığı. Kritik ayırım: Graves'te TRAb pozitif, Doppler'da 'tiroid inferno' (belirgin artmış akım) vardır — bu hastada TRAb negatif ve Doppler azalmış akım gösteriyor. ATİ (metimazol/PTU) verilmesi gereksizdir çünkü yeni sentez artsın diye değil, yıkım olduğu için tiroid hormonu yüksektir. Beta-bloker (propranolol) semptom kontrolü için yeterlidir; tablo genellikle kendiliğinden geçer.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Graves'te TRAb pozitif ve Doppler artmış akım beklenir. Bu hastada ikisi de yok; Graves değil Haşitoksikoz.",
+        "B": "DOGRU — Haşitoksikoz: TRAb negatif + azalmış Doppler + Hashimoto öyküsü. ATİ değil, beta-bloker.",
+        "C": "YANLIS — Subakut tiroiditte boyun ağrısı, ESR yüksekliği ve önce tirotoksikoz sonra hipotiroidi seyri tipiktir. Bu hastada ağrı yok ve Hashimoto öyküsü var.",
+        "D": "YANLIS — Anti-TPO doku hasarına yol açar ancak doğrudan hipertiroidiye neden olmaz; antikoru düşürmek için spesifik tedavi yoktur.",
+        "E": "YANLIS — Sintigrafi ve RAI endikasyonu yok; üstelik yıkım tirotoksikozunda sintigrafide uptake düşük çıkar (Graves'ten farkı). RAI bu tabloya uygun değil."
+      },
+      "etiketler": [
+        "Haşitoksikoz",
+        "Hashimoto",
+        "Yıkım Tirotoksikozu",
+        "TRAb Negatif",
+        "ATİ Verilmez"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Swain et al. Best Pract Res Clin Endocrinol Metab 2019"
+    },
+    {
+      "id": "s2",
+      "metin": "Elli altı yaşında erkek hasta, boynunda hızla büyüyen, sert ve ağrılı bir şişlik nedeniyle başvuruyor. Dört yıldır Hashimoto tiroiditi tanılı. Son 6 haftada kilo kaybı (%8) ve boyun lenf bezi büyümesi gelişmiş.\n\nTetkikler:\nTSH: 4.8 mU/L\nAnti-TPO: 2100 IU/mL\nUSG: Sağ lobda 4.2 cm heterojen, hipoekojen, düzensiz sınırlı kitle; servikal LAP\n\nBu hastada öncelikli akla gelmesi gereken tanı ve ilk yapılması gereken adım hangisidir?",
+      "secenekler": {
+        "A": "Hashimoto tiroiditinde bu büyüklükte kitleler sıktır; LT4 dozu artırılarak kitle küçültülmeli.",
+        "B": "Tiroid lenfoması (büyük olasılıkla diffüz büyük B hücreli lenfoma); öncelikle İİAB veya tru-cut biyopsi yapılmalıdır.",
+        "C": "Papiller tiroid kanseri; İİAB yapılmalı, PTC'de bu büyüklükte kitleler beklenen bulgudur.",
+        "D": "Subakut tiroidit; NSAID tedaviyle kitle gerileyecektir.",
+        "E": "Hızlı büyüme Graves'in Hashimoto'ya eklenmesiyle açıklanabilir; TRAb ölçülmeli."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hashimoto zemininde hızlı büyüyen, sert, ağrılı kitle + servikal LAP + kilo kaybı = TİROİD LENFOMASINI DÜŞÜN. Hashimoto primer tiroid lenfoması için en önemli risk faktörüdür; biyopsi acilen yapılmalıdır.",
+      "aciklama_detay": "Primer tiroid lenfoması; genellikle Hashimoto tiroiditi zemininde gelişen nadir ama agresif bir malignitedir. Olguların büyük çoğunluğu DLBCL (diffüz büyük B hücreli lenfoma) veya MALT lenfoma tipindedir. Klasik sunum: Hashimoto öyküsü + hızlı büyüyen sert kitle + boyun LAP + B semptomları (kilo kaybı, ateş, terleme). İİAB bazen yetersiz kalır; tru-cut/eksizyonel biyopsi gerekebilir. LT4 kitleyi küçültmez — bu hipotiroidizm değil lenfoma.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — LT4 lenfoma kitlesini küçültmez. 6 haftada %8 kilo kaybı + hızlı büyüyen sert kitle malignite işaretleridir.",
+        "B": "DOGRU — Hashimoto + hızlı büyüyen kitle = tiroid lenfoması olasılığını derhal akla getir; biyopsi acil.",
+        "C": "YANLIS — PTC daha yavaş büyür; 6 haftada bu hızdaki büyüme ve ağrı PTC ile uyumsuz. Lenfoma daha olası.",
+        "D": "YANLIS — Subakut tiroiditte diffüz ağrı, ateş, ESR yüksekliği tipiktir; bu hastada belirgin kitle ve LAP var.",
+        "E": "YANLIS — TRAb ölçümü burada gereksiz; Graves ve lenfoma birlikteliği son derece nadir, klinik tablo lenfomayla çok daha uyumlu."
+      },
+      "etiketler": [
+        "Tiroid Lenfoması",
+        "Hashimoto Komplikasyon",
+        "Hızlı Büyüyen Kitle",
+        "B Semptomları",
+        "Biyopsi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Derringer et al. Am J Surg Pathol 2000; TEMD 2025"
+    },
+    {
+      "id": "s3",
+      "metin": "Otuz sekiz yaşında kadın hasta, yıllık kontrolünde. Hashimoto tiroiditi tanısıyla 3 yıldır izleniyor; herhangi bir ilaç kullanmıyor.\n\nTetkikler:\nTSH: 6.8 mU/L (N: 0.4–4.0) — hafif yüksek\nsT4: 0.88 ng/dL (N: 0.80–1.80) — normal\nAnti-TPO: 640 IU/mL ↑\n\nFizik muayenede tiroid normal boyutlarda. Hasta asemptomatik.\n\nSubklinik hipotiroidi yönetimi için doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH 6.8 mU/L, tedavi için yeterince yüksek; levotiroksin 50 mcg/gün hemen başlanmalıdır.",
+        "B": "Asemptomatik subklinik hipotiroidi + Anti-TPO pozitif hastada tedavi kararı; TSH düzeyi ve risk faktörlerine göre bireyselleştirilmeli. TSH <10 mU/L + asemptomatik ise izlem tercih edilebilir; ancak Anti-TPO pozitifliği hipotiroidiye ilerleme riskini artırdığından yakın takip şarttır.",
+        "C": "sT4 normal olduğundan bu tablo subklinik hipotiroidi değildir; herhangi bir tetkike gerek yoktur.",
+        "D": "Anti-TPO titresini düşürmek için selenyum tedavisi başlanmalı; TSH normale döndükten sonra selenyum kesilir.",
+        "E": "TSH 10 mU/L altında olduğundan subklinik hipotiroidi tanısı konamaz; hasta 6 ayda kontrole çağrılmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TSH 6.8 (subklinik) + Anti-TPO pozitif + asemptomatik → izlem veya bireyselleştirilmiş tedavi. TSH <10 + asemptomatik ise izlem tercih edilebilir; Anti-TPO pozitifliği ilerleme riskini artırır → yakın takip.",
+      "aciklama_detay": "Subklinik hipotiroidide (TSH yüksek, sT4 normal) tedavi kararı TSH düzeyine, semptomlara ve risk faktörlerine göre verilir. TSH ≥10 mU/L: tedavi tartışmasız başlanır. TSH 4–10 mU/L: Anti-TPO pozitif, gebelik planı, kardiyovasküler hastalık gibi risk faktörleri varsa tedavi düşünülür; asemptomatik ve risk faktörü yoksa izlem tercih edilebilir. Bu hastada TSH 6.8, anti-TPO pozitif ama asemptomatik → bireyselleştirme uygun. Anti-TPO pozitifliği yılda %3–5 aşikar hipotiroidiye ilerleme riskini artırır → 6 aylık TSH takibi şarttır. Selenyum antikor titrelerini düşürebilir ancak klinik seyri değiştirdiğine dair güçlü kanıt yoktur; rutin önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TSH 6.8 mU/L tek başına zorunlu tedavi endikasyonu değil. Asemptomatik + TSH <10 mU/L → bireyselleştir.",
+        "B": "DOGRU — Doğru yaklaşım: bireyselleştir, risk değerlendir, yakın takip.",
+        "C": "YANLIS — Subklinik hipotiroidi tanımı: TSH yüksek + sT4 normal. Bu tam olarak subklinik hipotiroididir.",
+        "D": "YANLIS — Selenyum Anti-TPO titrelerini düşürebilir ancak TSH'ı normalize etmez ve klinik sonuç değiştirdiğine dair kanıt yoktur.",
+        "E": "YANLIS — TSH 10 mU/L zorunlu tedavi eşiğidir; subklinik hipotiroidi tanımı için eşik değil. TSH 6.8 mU/L subklinik hipotiroidizme uygun."
+      },
+      "etiketler": [
+        "Subklinik Hipotiroidi",
+        "Hashimoto",
+        "Tedavi Kararı",
+        "Anti-TPO",
+        "İzlem"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Garber et al. Thyroid 2012"
+    },
+    {
+      "id": "s4",
+      "metin": "Yirmi dokuz yaşında kadın hasta, Hashimoto tiroiditi tanısıyla 2 yıldır levotiroksin 75 mcg/gün kullanıyor. TSH 1.8 mU/L ile iyi kontrol altındaymış. Ancak son 6 ayda levotiroksin dozunu artırmasına rağmen TSH yükselmeye devam ediyor: TSH 9.4 mU/L.\n\nÖzgeçmiş: LT4 aç karnına almakta, kalsiyum süplementasyonu yok, başka ilaç yok.\n\nLT4 dozuna direnç araştırılırken aşağıdakilerden hangisi bu hastada öncelikle araştırılmalıdır?",
+      "secenekler": {
+        "A": "Anti-TPO titresinin yükseldiği varsayılarak LT4 dozu doğrudan 150 mcg'ye çıkarılmalıdır.",
+        "B": "Çölyak hastalığı araştırılmalıdır; otoimmün tiroidit ile birlikte görülebilen çölyak, LT4 intestinal emilimini bozarak görünürde ilaç direncine yol açar.",
+        "C": "Santral hipotiroidizm geliştiğinden LT4 serum sT4'e göre titre edilmelidir.",
+        "D": "Tiroid lenfoması gelişmiş olabilir; USG acilen istenmelidir.",
+        "E": "LT4 markasının değiştirilmesi tedavi yanıtsızlığını açıklayabilir; aynı markaya dönülmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hashimoto + LT4 direnci → çölyak hastalığını düşün. Çölyak intestinal villusları hasarlar → LT4 emilimi azalır → görünürde direnç. Anti-TTG/Anti-endomisyum bakılmalıdır.",
+      "aciklama_detay": "Çölyak hastalığı ve Hashimoto tiroiditi sıkça birlikte görülen otoimmün hastalıklardır. Çölyak hastalığı duodenum/jejunumda villüs atrofisine yol açar — LT4 ağırlıklı olarak bu bölgede emildiğinden, tanısız çölyakta LT4 emilimi ciddi şekilde bozulabilir. Bu durum 'LT4'e direnç' veya 'doz ihtiyacında artış' olarak kendini gösterir. Tedavi: glütensiz diyet başlandıktan sonra LT4 emilimi normale döner, doz ihtiyacı düşer. Otoimmün tiroiditli hastalarda açıklanamayan LT4 direncinde anti-TTG IgA araştırılmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Dozu kör artırmak altta yatan nedeni atlar; direnç nedenini araştır.",
+        "B": "DOGRU — Hashimoto + LT4 direnç → çölyak. Otoimmün birliktelik + emilim bozukluğu mekanizması.",
+        "C": "YANLIS — Santral hipotiroidide TSH düşük/normal olurdu; bu hastada TSH yüksek — santral değil.",
+        "D": "YANLIS — Tiroid lenfoması LT4 direncine değil, hızlı büyüyen kitleye yol açar.",
+        "E": "YANLIS — Marka değişikliği biyoeşdeğerlilik sorununa neden olabilir; ancak 6 aylık kademeli direnç bunu açıklamaz ve ilk araştırılacak neden değildir."
+      },
+      "etiketler": [
+        "LT4 Direnci",
+        "Çölyak Hastalığı",
+        "Hashimoto",
+        "Otoimmün Birliktelik",
+        "Emilim Bozukluğu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Collins et al. Thyroid 2012; TEMD 2025"
+    },
+    {
+      "id": "s5",
+      "metin": "Hashimoto tiroiditi nedeniyle izlenen 45 yaşında kadın hastanın tiroid USG'sinde:\n• Diffüz hipoekojen ve heterojen parankim\n• Fibrotik septasyonlar arasında 'psödonodül (yalancı nodül)' görünümü\n• Renkli Doppler USG: azalmış parankim kanlanması\n\nBu USG bulgularının hangi hastalıkla karıştırılmaması için Doppler özelliği en kritik öneme sahiptir?",
+      "secenekler": {
+        "A": "Subakut tiroidit",
+        "B": "Tiroid kanseri",
+        "C": "Graves hastalığı",
+        "D": "Multinodüler guatr",
+        "E": "Riedel tiroiditi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Hashimoto'da Doppler azalmış (↓). Graves'te Doppler belirgin artmış — 'tiroid inferno'. İkisi klinik olarak karışabilir (her ikisinde de guatr, tiroid disfonksiyonu olabilir); Doppler en kritik ayırıcı bulgudur.",
+      "aciklama_detay": "Hashimoto ve Graves hastalığı her ikisinde de guatr ve tiroid fonksiyon bozukluğu olabilir. Ayırıcı tanıda: (1) TRAb pozitif = Graves, negatif = Hashimoto; (2) Renkli Doppler USG: Graves'te tiroid parankiminde belirgin artmış kanlanma (hiperemi — 'tiroid inferno'), Hashimoto'da ise kanlanma azalmış veya normal-alt. Doppler, özellikle hem hipoekojenite hem guatr olan vakalarda iki hastalığı birbirinden ayırt etmede kritik rol oynar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Subakut tiroiditte ağrı ve hipoekojenik bölgeler vardır; Doppler da azalmış olabilir. Hashimoto-subakut tiroidit Doppler ile değil klinik (ağrı, ESR, ateş) ile ayrılır.",
+        "B": "YANLIS — Tiroid kanseri genellikle fokal nodüler yapıdadır; diffüz parankim Doppler değişikliği ile ayrılmaz.",
+        "C": "DOGRU — Graves vs Hashimoto ayrımında Doppler USG kritik: Graves = tiroid inferno (↑↑), Hashimoto = azalmış akım (↓).",
+        "D": "YANLIS — Multinodüler guatırda fokal nodüller görülür; diffüz Doppler değişikliği tipik değil.",
+        "E": "YANLIS — Riedel tiroiditinde çevre dokulara invazyon ve fibrozis vardır; USG'de belirgin hipoekojen sert kitle. Doppler ile ayrım bu kadar kritik değil."
+      },
+      "etiketler": [
+        "USG",
+        "Doppler",
+        "Tiroid İnferno",
+        "Graves Ayırımı",
+        "Hashimoto USG"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Ralls et al. Radiology 1988; TEMD 2025"
+    },
+    {
+      "id": "s6",
+      "metin": "Elli yaşında kadın hasta, 12 yıldır Hashimoto tiroiditi tanılı. Levotiroksin 100 mcg/gün kullanıyor, TSH 2.1 mU/L. Rutin kontrol USG'sinde sağ lobda 2.8 cm dominant nodül saptandı. İİAB sonucu: 'Lenfositik infiltrasyon yoğun, birkaç Hürthle hücresi, Bethesda Kategori III (önemi belirsiz atipi — AUS/FLUS)'.\n\nBu İİAB bulgusunu yorumlarken Hashimoto bağlamında aşağıdakilerden hangisi en doğru ifadedir?",
+      "secenekler": {
+        "A": "Bethesda III kesinlikle maligniteyi dışlamaz; doğrudan tiroidektomi planlanmalıdır.",
+        "B": "Hashimoto tiroiditinde yoğun lenfositik infiltrasyon ve Hürthle hücreleri İİAB'de Bethesda III'e yol açabilir; bu bağlamda gerçek malignite riski gebe olmayan Bethesda III'e kıyasla düşebilir. Tekrar İİAB veya moleküler test düşünülmelidir.",
+        "C": "Hashimoto tiroiditinin kendisi malign dönüşüme yol açar; cerrahi kaçınılmazdır.",
+        "D": "Lenfositik infiltrasyon İİAB'de artefakt oluşturur; biyopsi tekrarlanmalı ve Hashimoto bağlamı göz ardı edilmelidir.",
+        "E": "Hürthle hücreleri her zaman folliküler neoplazma belirtisidir; tiroidektomi acilen yapılmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hashimoto'da yoğun lenfositler ve Hürthle hücreleri İİAB'i Bethesda III'e iterek 'yanlış yüksek' atipiye yol açabilir. Bu bağlamda gerçek malignite riski görece düşük; tekrar biyopsi veya moleküler test önce gelmeli.",
+      "aciklama_detay": "Hashimoto tiroiditinde İİAB yorumu güçleşebilir: lenfositik arka plan, Hürthle hücre varlığı ve folliküler yapı bozukluğu gerçek Bethesda III AUS/FLUS atipisini 'taklit' edebilir. Çalışmalar, Hashimoto zeminindeki Bethesda III nodüllerin malignite riskinin genel Bethesda III'ten daha düşük olduğunu öne sürmektedir. Bu nedenle direkt cerrahiye gitmeden tekrar İİAB (6 ayda) veya ThyroSeq/Afirma gibi moleküler testler değerli bilgi sağlar. Hürthle hücreleri her zaman neoplazm anlamına gelmez — Hashimoto'da reaktif Hürthle hücresi sık görülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bethesda III'te doğrudan tiroidektomi standart yaklaşım değil; tekrar İİAB veya moleküler test önce tercih edilmeli.",
+        "B": "DOGRU — Hashimoto bağlamında Bethesda III'ün gerçek malignite riski düşer; tekrar biyopsi veya moleküler test.",
+        "C": "YANLIS — Hashimoto malign dönüşümü doğrudan artırmaz; ancak tiroid lenfoması riskini artırır (karsinom değil).",
+        "D": "YANLIS — Bağlamı göz ardı etmek hatadır; Hashimoto'nun İİAB yorumuna etkisini bilmek klinisyenin görevidir.",
+        "E": "YANLIS — Hashimoto'da Hürthle hücreleri reaktif olabilir; folliküler neoplazm için daha spesifik kriterler gerekir."
+      },
+      "etiketler": [
+        "İİAB Bethesda III",
+        "Hashimoto",
+        "Hürthle Hücresi",
+        "Lenfositik Arka Plan",
+        "Malignite Riski"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Cibas & Ali Thyroid 2017 (Bethesda System); Trimboli et al. Thyroid 2020"
+    },
+    {
+      "id": "s7",
+      "metin": "Kırk sekiz yaşında erkek hasta, sistemik lupus eritematozus (SLE) nedeniyle altı aydır interferon-alfa tedavisi almakta. Son 2 ayda yorgunluk ve soğuk intoleransı gelişti.\n\nTetkikler:\nTSH: 11.2 mU/L ↑\nsT4: 0.58 ng/dL ↓\nAnti-TPO: 920 IU/mL ↑ (geçmiş tetkikinde negatifmiş)\n\nBu tablo için en olası açıklama hangisidir?",
+      "secenekler": {
+        "A": "Interferon-alfa kullanımı bu tabloya neden olamaz; primer Hashimoto tiroiditi bağımsız gelişmiştir.",
+        "B": "İnterferon-alfa tiroid otoimmünitesini tetikleyebilir veya mevcut Hashimoto tiroiditini alevlendirebilir; ilaç başlandıktan sonra ortaya çıkan Anti-TPO pozitifliği + hipotiroidi bu mekanizmayla açıklanabilir.",
+        "C": "Lupus böbrekleri etkilediğinden tiroid hormon bağlayıcı proteinleri azalmış ve sT4 artefakt düşük görünmektedir.",
+        "D": "TSH bu düzeyde yükseldiğinde interferon kesilmeden LT4 başlanamaz.",
+        "E": "Bu tablo geçici TDHS (tiroid dışı hastalık sendromu) ile açıklanabilir; SLE aktivasyonuna bağlıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İnterferon-alfa, amiodaron, lityum ve immün kontrol noktası inhibitörleri gibi ilaçlar tiroid otoimmünitesini tetikleyebilir. Daha önce Anti-TPO negatif olan hastada interferon sonrası pozitifleşme = ilaç tetikli Hashimoto/hipotiroidi.",
+      "aciklama_detay": "İnterferon-alfa (HBV, HCV, bazı malignite tedavilerinde), immün sistemi aktive ederek tiroid otoantikorlarının oluşmasını tetikleyebilir. Mekanizma: IFN-alfa tiroid hücrelerinde MHC sınıf I ekspresyonunu artırır ve NK hücre aktivitesini güçlendirir → otoimmünite. Benzer mekanizma amiodaron (iyot yükü + direkt toksisite), lityum (TSH'ı yükseltir, tiroid baskılanır), IL-2, TKI'lar ve ICI'lar için de geçerlidir. Bu hastada önceden negatif olan Anti-TPO'nun interferon başlandıktan sonra pozitifleşmesi ve hipotiroidi geliştirmesi bu mekanizmayı doğruluyor. LT4 başlamak için ilacı kesmek gerekmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnterferon-alfa tiroid otoimmünitesini tetikleyebilir; bu iyi bilgelenmiş bir ilaç yan etkisidir.",
+        "B": "DOGRU — İlaç tetikli otoimmün tiroidit; interferon-alfa + yeni Anti-TPO pozitifliği + hipotiroidi = klasik tablo.",
+        "C": "YANLIS — SLE böbrek tutulumu sT4'ü etkilemez; TSH 11.2 mU/L gerçek hipotiroidiye işaret eder.",
+        "D": "YANLIS — Aşikar hipotiroidide LT4 başlamak için interferon kesilmesi gerekmez; iki tedavi eş zamanlı sürdürülebilir.",
+        "E": "YANLIS — TDHS'de TSH genellikle normal veya düşük olur; Anti-TPO pozitifleşmesi TDHS ile açıklanamaz."
+      },
+      "etiketler": [
+        "İlaç Tetikli Tiroidit",
+        "İnterferon-alfa",
+        "Hashimoto",
+        "Anti-TPO",
+        "Otoimmünite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Carella et al. Eur J Endocrinol 2004; TEMD 2025"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "quiz-endo-gebtiroid-001",
+  "baslik": "Gebelik ve Tiroid Hastalıkları — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "gebelik-tiroid",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yirmi altı yaşında kadın hasta, 9. gebelik haftasında rutin kontrol tetkiklerinde şu sonuçlar saptandı:\n\nTSH: 0.18 mU/L ↓ (trimester referansı: 0.1–2.5)\nsT4: 1.42 ng/dL (normal)\nTRAb: Negatif\nAnti-TPO: Negatif\nÇarpıntı ve el titremesi yok; bulantı var\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tirotoksikoz söz konusudur; PTU başlanmalıdır.",
+        "B": "TSH 0.18 mU/L ile trimester referans aralığının içindedir; bu fizyolojik hCG kaynaklı TSH baskılanmasıdır, tedavi gerekmez.",
+        "C": "TRAb negatif olsa da Graves hastalığı dışlanamaz; 4 hafta sonra TRAb tekrar ölçülmelidir.",
+        "D": "TSH baskılanmış, bu subklinik hipertiroidizme uyumludur; 6 hafta sonra kontrol yeterlidir ve gebelik izlemi yoğunlaştırılmalıdır.",
+        "E": "Bulantı semptomuna hCG etkisi de katkıda bulunabilir; metoklopramid ile semptomatik tedavi yeterlidir, tiroid tedavisi gerekmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İlk trimesterde hCG TSH reseptörünü uyarır → TSH fizyolojik olarak düşer. TSH 0.18 trimester referansının içinde (0.1–2.5), sT4 normal, TRAb negatif, semptom yok → tamamen fizyolojik.",
+      "aciklama_detay": "1. trimesterde hCG zirvesi TSH'ı baskılar; sağlıklı gebelerin %20'sinde TSH alt sınırın altına inebilir. Bu fizyolojik bir bulgudur ve Graves hastalığından ayrılması kritiktir. Graves'te TRAb pozitif, guatr veya oftalmopati olabilir, semptomlar belirgindir. Bu hastada TSH trimester referansının içinde, TRAb negatif, sT4 normal, semptom yok — müdahale gerekmez. PTU başlamak gereksiz, hatta fetüs için zararlı olur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TSH trimester referansının içinde; sT4 normal; semptom yok. PTU gereksiz ve fetüse zarar verir.",
+        "B": "DOGRU — Fizyolojik hCG kaynaklı TSH baskılanması, trimester referansı içinde → tedavi gerektirmez.",
+        "C": "YANLIS — TRAb negatif + klinik bulgu yok + TSH trimester referansı içinde = Graves dışlanabilir. Rutin TRAb tekrarına endikasyon yok.",
+        "D": "YANLIS — TSH trimester referans aralığının içinde (0.18 > 0.10); subklinik hipertiroidizm tanımı yanlış.",
+        "E": "YANLIS — Seçenek E içeriği olarak doğru gözükse de soru tiroid yaklaşımı üzerine; metoklopramid ek tedavi olabilir ama sorunun odağı 'tiroid tedavisi gerekir mi' — cevap B'dir."
+      },
+      "etiketler": [
+        "Gestasyonel Fizyoloji",
+        "hCG",
+        "TSH Trimester Referansı",
+        "Graves Ayırımı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD 2025; Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s2",
+      "metin": "Otuz iki yaşında kadın hasta, 7. gebelik haftasında şiddetli bulantı-kusma, 4 kg kilo kaybı ve çarpıntı yakınmasıyla başvuruyor. Tetkikler:\n\nTSH: <0.01 mU/L ↓↓\nsT4: 2.8 ng/dL ↑↑\nTRAb: Negatif\nAnti-TPO: Negatif\nhCG: 210.000 IU/L ↑\n\nFizik muayenede guatr yok, oftalmopati yok.\n\nBu tablo için en uygun tanı ve tedavi hangisidir?",
+      "secenekler": {
+        "A": "Graves hastalığı; PTU 200 mg/gün başlanmalıdır.",
+        "B": "Gestasyonel geçici tirotoksikoz (GTT) + Hiperemezis Gravidarum; IV hidrasyon ve antiemetik ile destekleyici tedavi yapılmalı, ATİ verilmemeli.",
+        "C": "Gestasyonel geçici tirotoksikoz; PTU düşük dozda (50 mg) başlanabilir, 14–18. haftada kesilir.",
+        "D": "Subklinik hipertiroidi; yalnızca izlem yeterlidir, tedavi gerekmez.",
+        "E": "Graves hastalığı dışlanamaz; TRAb tekrar ölçülmeli, bu sürede metimazol başlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TRAb negatif + guatr/oftalmopati yok + hCG çok yüksek + hiperemezis = GTT. ATİ verilmez; destek tedavisi ve 14–18. haftada kendiliğinden düzelme beklenir.",
+      "aciklama_detay": "GTT, birinci trimesterde aşırı yüksek hCG'nin TSH reseptörünü aşırı uyarması sonucu gelişir. Hiperemezis Gravidarum ile sık birliktelik gösterir. Guatr, oftalmopati ve TRAb pozitifliği yoktur — bunlar Graves'i düşündürür. GTT'de antitiroid ilaç verilmez: mekanizma yeni sentez değil, aşırı uyarımdır; ATİ yararlı olmaz. Tedavi: IV hidrasyon, antiemetik, semptomatik. 14–18. haftalarda hCG düştükçe kendiliğinden düzelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TRAb negatif, guatr yok, hiperemezis var → GTT. Graves için PTU endikasyonu yoktur.",
+        "B": "DOGRU — Klasik GTT + Hiperemezis tablosu. ATİ kontrendike; destek tedavisi ver.",
+        "C": "YANLIS — GTT'de ATİ hiç başlanmaz; 'düşük doz' da olsa doğru değil.",
+        "D": "YANLIS — sT4 belirgin yüksek, TSH sıfır — bu aşikar tirotoksikoz, subklinik değil.",
+        "E": "YANLIS — 1. trimesterde metimazol (MMI) metimazol embriyopatisi riski taşır. TRAb negatif + klinik Graves bulgusu yok → başlamak hatalı."
+      },
+      "etiketler": [
+        "GTT",
+        "Hiperemezis Gravidarum",
+        "Graves Ayırımı",
+        "ATİ Kontrendike",
+        "hCG"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD 2025; Ross et al. Thyroid 2016"
+    },
+    {
+      "id": "s3",
+      "metin": "Yirmi sekiz yaşında gebelik öncesi Graves tanılı kadın hasta, gebeliği 11. haftasında. Graves için 6 aydır PTU 200 mg/gün kullanıyor, ötiroid. Karaciğer fonksiyon testleri şu an normal.\n\nDoz ayarı açısından değerlendirildiğinde, 16. gebelik haftasından itibaren hangi değişiklik en doğrudur?",
+      "secenekler": {
+        "A": "PTU etkin ve iyi tolere ediliyor; tüm gebelik boyunca PTU ile devam edilmeli.",
+        "B": "16. haftadan sonra PTU'dan metimazole (MMI) geçilmeli (PTU 100 mg = MMI 5 mg oranıyla); PTU'nun uzun süreli kullanımı fulminan karaciğer yetmezliği riski taşır.",
+        "C": "16. haftadan sonra ATİ kesilebilir; Graves genellikle gebeliğin 2. yarısında kendiliğinden remisyona girer.",
+        "D": "16. haftada 'blok ve replasman' (MMI + LT4) yöntemine geçilmeli; böylece hem anne hem fetüs ötiroid korunur.",
+        "E": "PTU'dan karbimozol'e geçilmeli; karbimozol gebelikte en güvenli ATİ olarak kabul edilmektedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "1. trimester: PTU tercih (MMI embriyopati riski). 16. haftadan sonra: PTU → MMI geç (PTU fulminan hepatit riski). 1:20 dönüşüm: PTU 100 mg = MMI 5 mg.",
+      "aciklama_detay": "PTU ve MMI'nin gebelikte kullanımı trimestere göre değişir. Organogenez döneminde (1. tri) MMI metimazol embriyopatisine (aplasia cutis, koanal atrezi, omfalosel) neden olabileceğinden PTU tercih edilir. Ancak PTU'nun uzun süreli kullanımında fulminan karaciğer yetmezliği riski bulunduğundan, 16. haftadan sonra MMI'ye geçilmesi kılavuz önerisidir. Dönüşüm oranı: PTU 100 mg → MMI 5 mg (1:20). 'Blok ve replasman' gebelikte kesinlikle kontrendike — ATİ plasentayı geçer, LT4 geçemez, fetus hipotiroid olur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PTU uzun süreli fulminan hepatit riski taşır; 16. haftadan sonra MMI'ye geçilmesi önerilir.",
+        "B": "DOGRU — Klasik PTU→MMI geçiş kuralı. 16. haftadan sonra PTU kesilir, 1:20 oranıyla MMI başlanır.",
+        "C": "YANLIS — Graves gebeliğin 2. yarısında kısmen remisyona girebilir; ancak ATİ'yi kesmek güvenli değil, özellikle aktif hastalıkta.",
+        "D": "YANLIS — Blok ve replasman gebelikte kesinlikle kontrendike. ATİ plasentayı geçer, LT4 geçemez → fetal hipotiroid + guatr.",
+        "E": "YANLIS — Karbimozol aktif halde MMI'ye dönüşür; embriyopati riski MMI ile aynıdır. 1. trimesterde karbimozol da kullanılmamalıdır."
+      },
+      "etiketler": [
+        "Graves Gebelik",
+        "PTU",
+        "Metimazol",
+        "PTU-MMI Geçişi",
+        "Metimazol Embriyopatisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Ross et al. Thyroid 2016"
+    },
+    {
+      "id": "s4",
+      "metin": "Otuz beş yaşında kadın hasta, 14 ay önce doğum yapmış. Son 3 aydır yorgunluk, soğuk intoleransı ve 5 kg kilo alımı şikayetleriyle başvuruyor. Gebelik öncesinde tiroid hastalığı öyküsü yok.\n\nTetkikler:\nTSH: 12.4 mU/L ↑\nsT4: 0.61 ng/dL ↓\nAnti-TPO: 840 IU/mL ↑ (N: <35)\n\nBu hastanın en olası tanısı nedir ve ne önerilmelidir?",
+      "secenekler": {
+        "A": "Gebelik sonrası gelişen Hashimoto tiroiditi; LT4 başlanmalı ve ömür boyu kullanılacağı söylenmelidir.",
+        "B": "Postpartum tiroidit — hipotiroidi fazı; bu olguların %70–80'i 6–12 ayda ötiroidiye döner. LT4 başlanabilir, ancak 6–12 ayda doz azaltılarak tiroid fonksiyonu yeniden değerlendirilmelidir.",
+        "C": "Postpartum tiroidit ile primer Hashimoto ayırımı yapılamaz; tiroid sintigrafisi yapılmalıdır.",
+        "D": "Anti-TPO yüksek olduğundan bu tablo Hashimoto tiroiditi ile uyumludur; kalıcı hipotiroid olarak tedavi planlanmalıdır.",
+        "E": "Postpartum dönemde subklinik hipotiroidi tedavi gerekmez; yalnızca izlem önerilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Doğumdan 14 ay sonra hipotiroidi + yüksek Anti-TPO = postpartum tiroidit hipotiroidi fazı. Olguların %70–80'i remisyona girer; LT4 geçici başlanır, 6–12 ayda yeniden değerlendirilir.",
+      "aciklama_detay": "PPT trifazik seyreder: tirotoksikoz (1–4. ay) → hipotiroidi (4–8. ay) → ötiroid (6–12. ay). Bu hasta 14. ayda hipotiroidi fazında. Anti-TPO pozitifliği PPT için tanısal destek sağlar (PPT otoimmün zeminli). Kalıcı hipotiroidi riski %20–30; bu nedenle LT4 başlanır ama 12. ayda doz azaltılarak test edilir. Primer Hashimoto ile PPT'yi ayırt etmek için sintigrafi gerekmez — klinik seyir ve Anti-TPO tanıyı destekler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 'Ömür boyu kullanılacağı söylenmelidir' hatalı; PPT'de olguların çoğu remisyona girer, kalıcı LT4 kararı erken verilmemeli.",
+        "B": "DOGRU — PPT hipotiroidi fazı; LT4 başla, 6–12 ayda yeniden değerlendir.",
+        "C": "YANLIS — Sintigrafi PPT-Hashimoto ayırımı için rutin önerilmez; klinik seyir yeterli.",
+        "D": "YANLIS — Anti-TPO yüksekliği hem PPT hem Hashimoto'da görülür; tek başına 'kalıcı hipotiroidi' kararı aldırmaz.",
+        "E": "YANLIS — TSH 12.4 mU/L + sT4 düşük = aşikar hipotiroidi; tedavi gerekmektedir."
+      },
+      "etiketler": [
+        "Postpartum Tiroidit",
+        "PPT",
+        "Hipotiroidi Fazı",
+        "Anti-TPO",
+        "Geçici vs Kalıcı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Stagnaro-Green et al. Thyroid 2011"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz yaşında kadın hasta, 34. gebelik haftasında rutin kontrolde. İki yıl önce Graves hastalığı için RAI tedavisi almış; şu an LT4 125 mcg/gün kullanıyor. Obstetrisyen fetal izlem amacıyla endokrinoloji konsültasyonu istiyor.\n\nHangisi bu hasta için en önemli fetal izlem endikasyonudur?",
+      "secenekler": {
+        "A": "LT4 dozu gebelikte arttırılmıştır; fetal hipotiroidizm açısından tiroid volüm ölçümü gerekir.",
+        "B": "RAI tedavisi almış Graves hastalarında TRAb yıllarca pozitif kalabilir; yüksek TRAb plasentayı geçerek fetal hipertiroidi ve taşikardiye neden olabilir. TRAb ölçülmeli, yüksekse USG ile fetal guatr ve kardiyak hız takibi yapılmalıdır.",
+        "C": "RAI sonrası tiroid bezi ablate edildiğinden TRAb üretimi durmuştur; fetal risk yoktur.",
+        "D": "Sadece LT4 kullanan gebelerde fetal tiroid izlemi gerekmez; standart obstetrik takip yeterlidir.",
+        "E": "TRAb yalnızca aktif Graves hastalığında yüksek olur; RAI tedavisi görmüş hastada Graves remisyondadır ve TRAb negatiftir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "RAI/tiroidektomi sonrası Graves hastaları TRAb üretmeye devam edebilir — yıllarca pozitif kalır. TRAb plasenta geçer → fetal hipertiroidi. 18–22. haftada TRAb ölç; yüksekse USG takibi.",
+      "aciklama_detay": "Graves hastalığında otoimmünite bitmez — tiroid ablate edilse bile B lenfositler TRAb üretmeye devam edebilir. Bu antikorlar plasentayı geçerek fetal tiroid bezini uyarır → fetal hipertiroidi, guatr, taşikardi, kalp yetmezliği. Daha önce RAI veya tiroidektomi geçirmiş Graves hastalarında da TRAb ölçümü gereklidir. Titreleri yüksekse 18–22. haftadan itibaren ultrasonla fetal guatr ve kardiyak ritim takibi yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — LT4 replasmanı fetal hipotiroidiye değil, yetersiz dozla ötiroid kalınamamasına neden olabilir. Asıl risk TRAb kaynaklı fetal hipertiroidizm.",
+        "B": "DOGRU — RAI sonrası Graves'te TRAb takibi kritiktir. Fetal hipertiroidi TRAb kaynaklıdır.",
+        "C": "YANLIS — RAI tiroid bezini ablate eder ama otoimmüniteyi (B hücre TRAb üretimini) durdurmaz.",
+        "D": "YANLIS — Bu hasta yalnızca LT4 almıyor; Graves öyküsü var, TRAb riski devam eder.",
+        "E": "YANLIS — TRAb, Graves remisyonda da pozitif kalabilir; remisyon semptomların değil tiroid hormonunun normale dönmesini ifade eder."
+      },
+      "etiketler": [
+        "Graves Gebelik",
+        "TRAb",
+        "Fetal Hipertiroidi",
+        "RAI Sonrası",
+        "Fetal İzlem"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Ross et al. Thyroid 2016; Laurberg et al. Eur J Endocrinol 2014"
+    },
+    {
+      "id": "s6",
+      "metin": "Yirmi dokuz yaşında kadın hasta, 6. gebelik haftasında. Hashimoto tiroiditi nedeniyle gebelik öncesinde LT4 75 mcg/gün kullanıyor ve ötiroiddi (TSH 1.8 mU/L). Gebe kaldığını yeni öğrendi.\n\nBu hasta için ilk yapılması gereken doğru adım hangisidir?",
+      "secenekler": {
+        "A": "TSH kontrol edilmeli; TSH yükselmişse doz artırılacak, normal ise değişiklik gerekmez.",
+        "B": "Gebe kaldığı öğrenilir öğrenilmez LT4 dozu artırılmalı (%25–50 veya haftanın 2 günü çift doz); ardından 4 haftada bir TSH kontrolü yapılmalı.",
+        "C": "Gebelikte LT4 dozunu değiştirmek güvenli değildir; mevcut doz korunmalı.",
+        "D": "Gebe kalındıktan sonra doz artışı ancak TSH 2.5 mU/L'nin üzerine çıkınca yapılabilir.",
+        "E": "Anti-TPO pozitif olduğundan LT4 dozu ikiye katlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Gebe kalır kalınmaz (TSH beklemeden) LT4 dozunu %25–50 artır. Gebelik tiroid hormon ihtiyacını hemen artırır; gecikme fetal nörolojik gelişimi riske atar.",
+      "aciklama_detay": "Gebelik başlar başlamaz tiroid hormon ihtiyacı artar (artan TBG, plasental T4 metabolizması, anne-fetus T4 transferi). Doz artışı için TSH yükselene kadar beklemek hatalıdır — ilk trimester, fetal nörolojik gelişim için en kritik dönemdir. Pratik uygulama: haftanın 2 günü çift doz (7'lik doza 2 ekle = 9 günlük). Ardından 4 haftada bir TSH kontrolü, hedef 0.4–2.5 mU/L. Doz iki katına çıkarmak aşırıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TSH beklemek geciktirir; ilk trimesterde fetal risk artar. Doz artışı proaktif yapılmalı.",
+        "B": "DOGRU — Gebe kalır kalınmaz aksiyon al; %25–50 artış veya haftanın 2 günü çift doz.",
+        "C": "YANLIS — Gebelikte doz artışı güvenlidir ve gereklidir.",
+        "D": "YANLIS — TSH 2.5 eşiği beklenmez; artan ihtiyaç gebeliğin başından itibaren vardır.",
+        "E": "YANLIS — Anti-TPO durumu doz miktarını belirlemez; standart %25–50 artış her LT4 kullanan gebe için geçerlidir."
+      },
+      "etiketler": [
+        "LT4 Doz Artışı",
+        "Gebelik",
+        "Hashimoto",
+        "Proaktif Tedavi",
+        "Fetal Nöroloji"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD 2025; Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s7",
+      "metin": "Yirmi iki yaşında kadın hasta, 16. gebelik haftasında tiroid nodülü saptanarak endokrinoloji polikliniğine yönlendirildi. Tiroid USG: 2.1 cm, düzensiz sınırlı, mikrokalsifikasyon içeren sağ lob nodülü (TIRADS 5). Tiroid fonksiyon testleri normal. TİROİD İNCE İĞNE ASPİRASYON BİYOPSİSİ (İİAB) öneriliyor.\n\nAşağıdaki seçeneklerden hangisi bu hasta için en doğru yaklaşımı yansıtır?",
+      "secenekler": {
+        "A": "İİAB gebelikte yapılamaz; 2. trimesterin sonunda biyopsi planlanmalıdır.",
+        "B": "İİAB gebeliğin her döneminde güvenle yapılabilir; şüpheli nodülde (TIRADS 5) biyopsi geciktirilmemeli.",
+        "C": "Gebelikte malignite düşük oranda seyreder; İİAB doğuma kadar ertelenebilir.",
+        "D": "Tanı için önce Tc-99m tiroid sintigrafisi yapılmalıdır.",
+        "E": "Nodülün boyutu 2 cm'nin üzerinde olduğundan cerrahi endikasyon vardır; tiroidektomi ikinci trimester başında planlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İİAB gebelikte kontrendike değildir; TIRADS 5 nodülde biyopsi gebe olmayan ile aynı endikasyona göre yapılır. Sintigrafi ve RAI ise gebelikte kesinlikle kontrendike.",
+      "aciklama_detay": "Gebelikte tiroid nodülü değerlendirmesinde endikasyonlar gebe olmayanla aynıdır. İİAB güvenli; USG eşliğinde gebeliğin her döneminde yapılabilir. Sintigrafi/RAI ise fetüse iyonizan radyasyon verir — kesinlikle kontrendike. İİAB sonucu diferansiye tiroid kanseri çıkarsa: çoğu DTK yavaş seyirlidir, cerrahi doğum sonrasına ertelenebilir. Hızlı büyüme veya ileri lokal invazyon varsa 2. trimester cerrahi için en güvenli dönem.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İİAB gebeliğin her döneminde yapılabilir; ertelemek gerekmez.",
+        "B": "DOGRU — İİAB gebelikte güvenlidir ve TIRADS 5 nodülde beklenmeden yapılmalıdır.",
+        "C": "YANLIS — Malignite riski gebelikte azalmaz; değerlendirme geciktirilmez.",
+        "D": "YANLIS — Tiroid sintigrafisi radyoaktif ajan kullanır; gebelikte kesinlikle kontrendike.",
+        "E": "YANLIS — Nodül boyutu tek başına cerrahi endikasyonu değildir; İİAB ile histoloji önce belirlenmeli. Agresif DTK kanıtı olmadan hemen cerrahi önerilmez."
+      },
+      "etiketler": [
+        "Tiroid Nodülü Gebelik",
+        "İİAB",
+        "TIRADS",
+        "Sintigrafi Kontrendike",
+        "DTK Gebelik"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD 2025; Haugen et al. Thyroid 2016"
+    }
+  ]
+}

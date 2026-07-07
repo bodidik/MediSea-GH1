@@ -3,8 +3,11 @@
     "id": "santral-hipotiroidizm",
     "branch": "endokrinoloji",
     "baslik": "Santral Hipotiroidizm",
-    "altbaslik": "Hipofizer/hipotalamik kaynaklı TSH eksikliğine bağlı tiroid hormonu yetersizliği — tanı, ayırıcı tanı ve tedavi yönetimi",
-    "rozetler": ["SINAV SPOTU", "YENİ"],
+    "altbaslik": "Hipofizer/hipotalamik kaynaklı TSH eksikliğine bağlı tiroid hormonu yetersizliği — patogenez, lab paradoksu, adrenal kriz önlemi ve gebelik yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
     "guncelleme": "2026-07"
   },
   "moduller": {
@@ -15,148 +18,292 @@
     "video": false
   },
   "istatistikler": {
-    "soru": 3,
+    "soru": 7,
     "flashcard": 0,
     "inci": 0
   },
   "icerik": [
     {
       "tip": "metin",
-      "baslik": "Tanım",
+      "baslik": "Tanım ve Epidemiyoloji",
       "satirlar": [
         {
-          "metin": "Santral hipotiroidizm; hipofiz, hipotalamus veya hipotalamo-hipofizer portal dolaşımı etkileyen bozukluklar sonucunda TSH ve/veya TRH eksikliğine bağlı olarak gelişen tiroid hormonu yetersizliğidir. Kalıcı veya geçici olarak ikiye ayrılır."
+          "metin": "Santral hipotiroidizm; hipofiz, hipotalamus veya hipotalamo-hipofizer portal dolaşımı etkileyen bozukluklar sonucunda TSH ve/veya TRH eksikliğine bağlı olarak gelişen tiroid hormonu yetersizliğidir. Hipofiz patolojisine bağlı olana **sekonder**, hipotalamik patolojiye bağlı olana **tersiyer** hipotiroidizm de denilmektedir."
+        },
+        {
+          "metin": "Görülme sıklığı genel popülasyonda **1:20.000 – 1:80.000** olup nadir bir tablodur. Kalıcı ve geçici formlar olmak üzere ikiye ayrılır."
         }
       ]
     },
     {
       "tip": "tablo",
-      "baslik": "Etiyoloji: Kalıcı ve Geçici Nedenler",
-      "kolonlar": ["Kategori", "Nedenler", "Not"],
+      "baslik": "Etiyoloji — Kalıcı Nedenler",
+      "kolonlar": [
+        "Kategori",
+        "Başlıca Nedenler",
+        "Klinik İpucu"
+      ],
       "satirlar": [
         {
           "renk": "mavi",
-          "hucreler": ["Kalıcı — En Sık", "Hipofiz adenomları (en sık)", "Kitle etkisi + hormon basısı"]
+          "hucreler": [
+            "En Sık",
+            "Hipofiz adenomları",
+            "Kitle etkisi + hormonal bası; diğer hipofiz hormon eksiklikleri eşlik eder"
+          ]
         },
         {
-          "hucreler": ["Kalıcı — İyatrojenik", "Hipofizer/hipotalamik cerrahi, radyoterapi", "Doz bağımlı hasar"]
+          "hucreler": [
+            "İyatrojenik",
+            "Hipofizer/hipotalamik cerrahi, ≥30–40 Gy radyoterapi (baş-boyun/beyin)",
+            "Doz bağımlı; RT sonrası yıllar içinde ortaya çıkabilir"
+          ]
         },
         {
-          "hucreler": ["Kalıcı — Vasküler", "Sheehan sendromu (postpartum pituiter nekroz)", "Doğum sonrası şok öyküsü"]
+          "hucreler": [
+            "Vasküler",
+            "Sheehan sendromu (postpartum hipofizer nekroz), inme, subaraknoid kanama, travmatik beyin hasarı",
+            "Doğum sonrası şok/masif kanama öyküsü sorgulanmalı"
+          ]
         },
         {
-          "hucreler": ["Kalıcı — İnfiltratif", "Lenfositik hipofizit, sarkoidoz, hemokromatozis", "Sistemik hastalık bulguları eşlik eder"]
+          "hucreler": [
+            "İnfiltratif",
+            "Lenfositik hipofizit, sarkoidoz, hemokromatozis",
+            "Gebelik/postpartum dönemde hipofizit; sistemik hastalık bulguları eşlik eder"
+          ]
         },
         {
           "renk": "kirmizi",
-          "hucreler": ["Kalıcı — Genetik", "TSH-β, TRH-R, IGSF-1, PROP1, PIT1 mutasyonları", "Aile öyküsü, erken yaşta başlangıç"]
+          "hucreler": [
+            "Genetik — İzole",
+            "TSH-β, TRH reseptörü, IGSF-1, TBL1X, IRS4 mutasyonları",
+            "Aile öyküsü; erken yaşta başlangıç; sadece TSH eksikliği"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Genetik — Kombine",
+            "PROP1, POU1F1 (PIT1), HESX1, SOX3, SOX2 mutasyonları",
+            "Birden fazla hipofiz hormonu eksikliği; septo-optik displazi (HESX1, SOX3)"
+          ]
         },
         {
           "renk": "sari",
-          "hucreler": ["İlaca Bağlı ★", "Beksaroten, Mitotan, İmmün kontrol noktası inhibitörleri", "Sınav spotu — onkoloji ilaçları"]
+          "hucreler": [
+            "İlaca Bağlı ★",
+            "Beksaroten, Mitotan, İmmün kontrol noktası inhibitörleri (ipilimumab, nivolumab, pembrolizumab), bazı TKİ'ler",
+            "Onkoloji hastasında yeni başlayan santral hipotiroidi → ilaç öyküsü sorgula"
+          ]
         },
         {
-          "renk": "yesil",
-          "hucreler": ["Geçici", "Tiroid dışı hastalık sendromu (TDHS), hipertiroidi tedavisi sonrası", "Altta yatan durum düzelince normale döner"]
+          "renk": "sari",
+          "hucreler": [
+            "İlaca Bağlı — Psikotrop ★",
+            "Roksadustat (HIF-PH inhibitörü), sitalopram, sertralin, mirtazapin, ketiapin",
+            "Psikiyatri/hematoloji hastasında izole santral hipotiroidi"
+          ]
         }
       ]
     },
     {
       "tip": "bilgi_kutusu",
-      "tur": "uyari",
-      "metin": "Sınav Spotu — İlaca Bağlı Santral Hipotiroidi: Beksaroten (RXR ligandı, kutanöz T hücreli lenfoma), Mitotan (adrenokortikal karsinom) ve immün kontrol noktası inhibitörleri (ipilimumab, nivolumab) izole veya kombine santral hipotiroidiye yol açabilen spesifik onkoloji ajanlardır."
+      "tur": "ek_bilgi",
+      "metin": "Geçici Santral Hipotiroidi: Ağrısız tiroidit, postpartum tiroidit veya subakut tiroiditin iyileşme fazında, hipertiroidi tedavisini takiben (uzun süreli tirotoksikoz sonrası tirotrop hücre baskılanması) ve ağır tiroid dışı hastalık sendromu (TDHS) sırasında geçici olarak ortaya çıkabilir. Altta yatan durum düzelince kendiliğinden normalleşir."
     },
     {
       "tip": "metin",
       "baslik": "Klinik Bulgular",
       "satirlar": [
         {
-          "metin": "Klinik tablo primer hipotiroidiye benzer ancak genellikle daha hafiftir. En önemli fark: guatr tipik bulgu DEĞİLDİR (tiroid TSH uyarısından yoksun kaldığı için büyümez)."
+          "metin": "Klinik tablo primer hipotiroidiye benzer (yorgunluk, soğuk intoleransı, kilo alımı, kas krampları) ancak genellikle **daha hafiftir**. En önemli fark: **guatr tipik bulgu DEĞİLDİR** — tiroid, TSH uyarısından yoksun kaldığı için büyümez."
         },
         {
-          "metin": "Olguların çoğunda izole TSH eksikliği değil, diğer ön hipofiz hormonlarının da eksikliği (hipogonadizm, büyüme hormonu eksikliği, sekonder adrenal yetmezlik) veya fazlalığı (hiperprolaktinemi) eşlik eder."
+          "metin": "Olguların büyük kısmında izole TSH eksikliği yerine **panhipopitüitarizm** tablosu vardır; diğer ön hipofiz hormonlarının eksikliği hipotiroidi bulgularını maskeleyebilir. Örnek: Hipogonadizme bağlı **sıcak basmaları**, soğuk intoleransını örter; adrenal yetmezliğe bağlı **iştahsızlık ve kilo kaybı**, hipotiroidinin kilo alımını maskeler."
         },
         {
-          "metin": "Klinik tuzak: Hipogonadizme bağlı sıcak basmaları hipotiroidinin soğuk intoleransını maskeleyebilir; adrenal yetmezliğe bağlı kilo kaybı tiroid hastalığını örter."
+          "metin": "Çocuklarda büyüme geriliği, gecikmiş puberte ve ağır olgularda kretenizm tablosuyla prezente olabilir."
         }
       ]
     },
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Kritik Sınav Sorusu — Lab Paradoksu: Santral hipotiroidide sT4 düşük olmasına karşın TSH düşük, normal veya hafif yüksek (5–10 mU/L) bulunabilir. Bunun nedeni: TRH eksikliğine bağlı TSH glikozilasyon bozukluğu → immünolojik olarak ölçülebilen ama biyolojik olarak inaktif TSH molekülleri. sT4 düşük + TSH normal/hafif yüksek → santral hipotiroid ihtimalini akla getir."
+      "metin": "Kritik Lab Paradoksu: Santral hipotiroidide sT4 düşük olmasına karşın TSH düşük, normal veya hafif yüksek (5–10 mU/L) saptanabilir. Mekanizma: TRH eksikliğine bağlı TSH glikozilasyon bozukluğu → immünolojik olarak ölçülebilen ama biyolojik olarak inaktif TSH molekülleri. Ayrıca fizyolojik noktürnal TSH piki (gece geç saatlerde hipotalamik kontrol altında gerçekleşen) kaybolur → günlük total TSH salgısı düşer → klinik hipotiroidi. sT4↓ + TSH düşük/normal/hafif↑ = Santral hipotiroidi düşün."
     },
     {
       "tip": "tablo",
-      "baslik": "Laboratuvar Bulguları ve Tanı",
-      "kolonlar": ["Parametre", "Santral Hipotiroidi", "Primer Hipotiroidi"],
+      "baslik": "Santral Hipotiroidi vs Primer Hipotiroidi — Karşılaştırma",
+      "kolonlar": [
+        "Parametre",
+        "Santral Hipotiroidi",
+        "Primer Hipotiroidi"
+      ],
       "satirlar": [
         {
-          "hucreler": ["sT4", "Düşük veya düşük-normal", "Düşük"]
+          "hucreler": [
+            "sT4",
+            "Düşük veya düşük-normal",
+            "Düşük"
+          ]
         },
         {
           "renk": "sari",
-          "hucreler": ["TSH", "Düşük / Normal / Hafif yüksek (5–10)", "Belirgin yüksek (>10, genellikle >>)"]
+          "hucreler": [
+            "TSH",
+            "Düşük / Normal / 5–10 mU/L arası hafif↑",
+            "Belirgin yüksek (>10, çoğu zaman >>)"
+          ]
         },
         {
-          "hucreler": ["Guatr", "Yok (tipik değil)", "Sıklıkla var"]
+          "hucreler": [
+            "Guatr",
+            "Yok (tipik değil)",
+            "Sıklıkla var"
+          ]
         },
         {
-          "hucreler": ["Diğer hipofiz hormonları", "Eksik olabilir (GH, gonadotropin, kortizol)", "Normal"]
+          "hucreler": [
+            "Diğer hipofiz hormonları",
+            "Eksik olabilir (GH, LH/FSH, kortizol)",
+            "Normal"
+          ]
         },
         {
-          "hucreler": ["Noktürnal TSH piki", "Kaybolmuş", "Abartılı yüksek"]
+          "hucreler": [
+            "Noktürnal TSH piki",
+            "Kaybolmuş",
+            "Abartılı yüksek"
+          ]
         },
         {
-          "hucreler": ["Görüntüleme", "Kraniyal MRG zorunlu", "Tiroid USG / sintigrafi"]
+          "hucreler": [
+            "TSH biyolojik aktivite",
+            "Bozulmuş glikozilasyon — inaktif TSH",
+            "Normal aktif TSH"
+          ]
+        },
+        {
+          "hucreler": [
+            "Görüntüleme",
+            "Kraniyal MRG — zorunlu",
+            "Tiroid USG/sintigrafi"
+          ]
         }
       ]
     },
     {
       "tip": "tablo",
       "baslik": "Ayırıcı Tanı",
-      "kolonlar": ["Durum", "sT4", "TSH", "Ayırt Edici Bulgu"],
+      "kolonlar": [
+        "Durum",
+        "sT4",
+        "TSH",
+        "Ayırt Edici Bulgu"
+      ],
       "satirlar": [
         {
           "renk": "mavi",
-          "hucreler": ["Santral Hipotiroidi", "↓", "↓ / N / hafif↑", "Diğer ön hipofiz eksiklikleri, kraniyal MRG bulgusu"]
+          "hucreler": [
+            "Santral Hipotiroidi",
+            "↓",
+            "↓ / N / hafif↑",
+            "Diğer ön hipofiz eksiklikleri, kraniyal MRG bulgusu"
+          ]
         },
         {
-          "hucreler": ["Tiroid Dışı Hastalık Sendromu (TDHS)", "↓ (sT3↓↓)", "↓ / N", "rT3 ↑, ağır akut hastalık zemini, sT3 çok düşük"]
+          "renk": "kirmizi",
+          "hucreler": [
+            "Tiroid Dışı Hastalık Sendromu (TDHS)",
+            "↓ (ağırlıklı sT3↓↓)",
+            "↓ / N",
+            "rT3 ↑ (periferik dönüşüm bozukluğu), ağır akut hastalık zemini; TRH stimülasyon testinde TDHS'de normal yanıt, santral hipotiroidide yanıt yok (hipofizer) ya da gecikmiş (hipotalamik)"
+          ]
         },
         {
-          "hucreler": ["Fenitoin / Karbamazepin etkisi", "↓", "Normal", "İlaç öyküsü; TSH normaldir, sT3 normal"]
+          "hucreler": [
+            "Fenitoin / Karbamazepin",
+            "↓ (artefakt)",
+            "Normal",
+            "İlaç sT4 klerensini artırır → sT4 artefakt düşük, TSH normal; sT3 de normal"
+          ]
         },
         {
           "renk": "sari",
-          "hucreler": ["Subklinik Hipertiroidi", "Normal/↓-N", "↓", "sT3 normal veya yüksek-normal; klinik hipertiroidi bulguları"]
+          "hucreler": [
+            "Subklinik Hipertiroidi",
+            "Normal/düşük-N",
+            "↓",
+            "sT3 normal veya yüksek-normal; klinik hipertiroidi bulguları; tiroid nodülleri"
+          ]
         }
       ]
     },
     {
       "tip": "bilgi_kutusu",
-      "tur": "uyari",
-      "metin": "Kritik Sınav Kuralı — Adrenal Yetmezlik Önce Dışlanmalı: LT4 başlanmadan önce hipofizer-adrenal aks değerlendirilmeli ve sekonder adrenal yetmezlik ekarte edilmelidir. Tespit edilmemiş adrenal yetmezlikte doğrudan LT4 vermek → metabolizma hızlanması → akut adrenal kriz (Addison krizi). Adrenal yetmezlik varsa: önce glukokortikoid (hidrokortizon), sonra veya eş zamanlı LT4."
+      "tur": "ek_bilgi",
+      "metin": "TRH Stimülasyon Testi: Santral hipotiroidi–TDHS ayırımında kullanılır (ülkemizde pratikte nadiren bulunur). İV TRH sonrası TSH ölçülür: TDHS'de normal TSH yanıtı alınırken, hipofizer hastalıkta yanıt alınamaz, hipotalamik hastalıkta ise gecikmiş TSH yanıtı gözlenir."
     },
     {
-      "tip": "metin",
-      "baslik": "Tedavi",
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Tedavi Öncesi Altın Kural — Adrenal Yetmezlik Önce Dışlanmalı: LT4 başlanmadan önce hipofizer-adrenal aks (ACTH stimülasyon testi veya bazal kortizol) değerlendirilmeli ve sekonder adrenal yetmezlik ekarte edilmelidir. Tanısız adrenal yetmezlikte LT4 → metabolizma hızlanması → karaciğerde kortizol klerensi artar → akut adrenal kriz (ölümcül). Kural: Adrenal yetmezlik saptanırsa LT4'ten ÖNCE veya eş zamanlı hidrokortizon başla."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi ve Takip",
+      "kolonlar": [
+        "Başlık",
+        "Detay",
+        "Not"
+      ],
       "satirlar": [
         {
-          "metin": "Tedavide sentetik levotiroksin (LT4) kullanılır. Başlangıç dozu yaklaşık 1.6 µg/kg/gün olarak hesaplanır. Yaşlılarda ve koroner arter hastalarında düşük dozla başlanıp yavaş titre edilir."
+          "renk": "mavi",
+          "hucreler": [
+            "Ajan",
+            "Sentetik levotiroksin (LT4)",
+            "Tercih edilen tek ajan; T3/T4 kombinasyonunun üstünlüğü kanıtlanmamış"
+          ]
         },
         {
-          "metin": "Tedavi takibinde TSH KESİNLİKLE KULLANILMAZ. Sebebi: sT4'ü normalize eden LT4 dozlarında TSH zaten <0.1 mU/L'ye baskılanır; TSH'ı takip etmek yanıltıcıdır."
+          "hucreler": [
+            "Başlangıç Dozu",
+            "~1.6 µg/kg/gün (genç-orta yaş)",
+            "Yaşlı ve KAH'lıda düşük doz başla (25–50 µg/gün), yavaş titre et"
+          ]
         },
         {
-          "metin": "Doz ayarlaması yalnızca serbest T4 (sT4) düzeyi ve klinik ile yapılır. Hedef: sT4 laboratuvar referans aralığının üst yarısında (normal aralık ortası ile üst sınır arasında). Doz başlangıcından veya değişikliğinden 6–8 hafta sonra sT4 kontrolü; titrasyon tamamlandıktan sonra 6–12 aylık periyotlarla izlem."
+          "renk": "kirmizi",
+          "hucreler": [
+            "Takip Parametresi ★",
+            "TSH KESİNLİKLE KULLANILMAZ",
+            "sT4 normal aralığın üst yarısında iken TSH <0.1 mU/L'ye baskılanmış olabilir; TSH takibi yanıltıcıdır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Hedef sT4 ★",
+            "Referans aralığının üst yarısı (medyanın biraz üzerinde)",
+            "Doz başlangıcından/değişikliğinden 6–8 hafta sonra sT4 kontrolü; stabil olduktan sonra 6–12 aylık takip"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Gebelikte Yönetim ★",
+            "LT4 dozu %25–50 artır; sT4'ü gebeliğe özgü referans aralığının üst çeyreğinde (upper quartile) tut",
+            "TSH kullanılamaz; fetüs tiroid hormona muhtaç — doz yetersizliği nörolojik zarar riski taşır"
+          ]
         }
       ]
     },
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Santral Hipotiroidide 3 Altın Kural: (1) sT4 düşük + TSH düşük/normal/hafif yüksek → Santral hipotiroid düşün, TSH'a bakarak yanlış reassure olma. (2) LT4 başlamadan önce adrenal yetmezliği dışla — yoksa adrenal kriz. (3) Takipte TSH kullanma, sT4'ü üst yarıda tut."
+      "metin": "Pratik Özet — Santral Hipotiroidide 5 Altın Kural: (1) sT4↓ + TSH düşük/normal/hafif↑ → santral hipotiroidi düşün; TSH'ı normal diye geçme. (2) LT4'ten önce adrenal yetmezliği dışla — yoksa ölümcül adrenal kriz. (3) Takipte TSH kullanma — sT4'ü üst yarıda tut. (4) Guatr yok + multiple hipofizer eksiklik → MRG al. (5) Gebelikte sT4 üst çeyreğinde tut, doz %25–50 artır."
     }
   ]
 }
