@@ -113,6 +113,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "tirzepatid",
+          "baslik": "Tirzepatid",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     },

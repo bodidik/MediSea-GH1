@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "id": "tirzepatid",
+    "branch": "endokrinoloji",
+    "baslik": "Tirzepatid",
+    "altbaslik": "GIP/GLP-1 dual agonisti (\"twincretin\"), Aib/C20 modifikasyonları, SURPASS/SURMOUNT programları, perioperatif aspirasyon riski ve MTC/MEN-2 kontrendikasyonu",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Tirzepatid; GIP (glukoza bağımlı insülinotropik polipeptid) ve GLP-1 (glukagon benzeri peptid-1) reseptörlerine yüksek afinite ile bağlanan ve onları aktive eden, sınıfının ilk örneği (\"first-in-class\") dual bir agonisttir (\"twincretin\"). Moleküler yapısı temel olarak nativ GIP amino asit sekansına dayanır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yapısal Özellikler",
+      "kolonlar": [
+        "Modifikasyon",
+        "Konum",
+        "Amaç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Aib (aminoizobütirik asit) ★",
+            "2. ve 13. pozisyonlar",
+            "DPP-4 enzimi tarafından yıkımı önler"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "C20 Yağ Asidi (1,20-eikozandioik asit) ★",
+            "20. pozisyondaki lizin rezidüsüne bağlayıcı ile eklenir",
+            "Plazma albümine yüksek bağlanma (%99) → yarı ömrü ~5 güne uzatır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Farmakodinamik Mekanizma",
+      "satirlar": [
+        {
+          "metin": "Pankreatik β hücrelerinde reseptör bağlanması → adenilat siklaz-cAMP-PKA yolağı aktive olur. Artan hücre içi ATP → K+ kanalları kapanır → depolarizasyon → voltaj kapılı Ca2+ kanalları açılır → endoplazmik retikulumdan sekonder Ca2+ salınımı → **glukoza bağımlı insülin sekresyonu**. PKA aynı zamanda insülin gen transkripsiyonunu doğrudan uyarır."
+        },
+        {
+          "metin": "Ek etkiler: **Glukagon sekresyonunu inhibe eder**; hiperinsülinemik öglisemik klemp çalışmalarında periferik insülin duyarlılığını belirgin artırır. **Santral sinir sisteminde** (iştah merkezleri) GIP/GLP-1 reseptörlerini aktive ederek tokluk hissini artırır, kalori alımını kısıtlar, yüksek kalorili/yağlı gıdalara aşermeyi (craving) baskılar. İnsan adipositlerinde GIP reseptörleri üzerinden lipit ve glukoz döngüsünü regüle eder."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Farmakokinetik Profil",
+      "kolonlar": [
+        "Parametre",
+        "Değer / Özellik",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tmax",
+            "Medyan 24 saat (dağılım 8-72 saat)",
+            "SC uygulama sonrası"
+          ]
+        },
+        {
+          "hucreler": [
+            "Biyoyararlanım",
+            "~%80",
+            "SC yoldan mutlak biyoyararlanım"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Yarı Ömür ★",
+            "~5 gün",
+            "C20 yağ asidi → %99 albümin bağlanma → renal klirens azalır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Metabolizma",
+            "Peptid omurgasının proteolitik klevajı, C20 zincirinin β-oksidasyonu, amid hidrolizi",
+            "İntakt tirzepatid idrar/feçeste saptanmaz; atılım metabolitler halinde renal + biliyer"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Özel Popülasyonlar ★",
+            "Yaş (≥65), cinsiyet, ırk, vücut ağırlığı PK'yı klinik olarak anlamlı değiştirmez",
+            "Hafif/orta/şiddetli böbrek VEYA karaciğer yetmezliğinde doz ayarlaması GEREKMEZ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Endikasyonlar ve Doz Şeması",
+      "kolonlar": [
+        "Endikasyon",
+        "Kriter",
+        "Doz Şeması"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tip 2 Diabetes Mellitus",
+            "Glisemik regülasyon amacıyla",
+            "Haftada bir SC"
+          ]
+        },
+        {
+          "hucreler": [
+            "Obezite / Kronik Kilo Yönetimi",
+            "VKİ ≥30 kg/m², veya VKİ 27-<30 kg/m² + ≥1 ağırlık ilişkili komorbidite (HT, dislipidemi, T2DM, prediyabet, OSA, KVH)",
+            "Düşük kalorili diyet + egzersize ek olarak"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Titrasyon Şeması ★",
+            "Başlangıç: 2.5 mg/hafta (ilk 4 hafta) — glisemik kontrol/kilo kaybı için DEĞİL, tolerabilite ve GİS yan etki minimizasyonu içindir",
+            "4 haftalık aralıklarla 2.5 mg basamaklarla artırılır: 5 mg → 10 mg → maksimum 15 mg/hafta SC"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "SURPASS Programı — Glisemik Kontrol",
+      "kolonlar": [
+        "Karşılaştırma",
+        "HbA1c Değişimi",
+        "Kilo Değişimi"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Plasebo, semaglutid 1mg, dulaglutid, insülin degludec/glarjin'e karşı",
+            "Doza bağlı %1.87 – %3.02 düşüş",
+            "5.4 – 12.9 kg azalma"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "SURMOUNT Programı — Obezite",
+      "kolonlar": [
+        "Çalışma",
+        "Popülasyon",
+        "Ana Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "SURMOUNT-1 ★",
+            "T2DM olmayan obez/fazla kilolu",
+            "72. haftada 15 mg ile %22.4'e varan (ort. 20.9 kg) kilo kaybı; hastaların %50.1-56.7'si ≥%20 kilo kaybına ulaştı"
+          ]
+        },
+        {
+          "hucreler": [
+            "SURMOUNT-2",
+            "T2DM'si olan bireyler",
+            "15 mg ile %14.7 kilo kaybı"
+          ]
+        },
+        {
+          "hucreler": [
+            "SURMOUNT-3",
+            "12 haftalık agresif yaşam tarzı sonrası randomize",
+            "İlave %20.8 kilo kaybı"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "SURMOUNT-4 ★",
+            "Randomize çekilme (withdrawal) tasarımı",
+            "Tirzepatid kesilip plaseboya geçilmesi ciddi 'kilo geri kazanımına' (weight regain) yol açtı — kronik kullanımın zorunluluğunu kanıtladı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Semaglutid ile Direkt Karşılaştırma: Baş-başa (head-to-head) çalışmaların meta-analizinde tirzepatid ağırlık kaybında semaglutide göre klinik olarak üstün bulunmuştur (ortalama -%11.4'e karşı -%7.3); net fark tirzepatid lehine ortalama -4.84 kg (p<0.001)."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Pleiotropik ve Kardiyometabolik Yararlar",
+      "kolonlar": [
+        "Alan",
+        "Bulgu",
+        "İlgili Çalışma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Kan Basıncı / Lipid",
+            "Sistolik KB 5.1-7.2 mmHg↓, diyastolik KB 3.2 mmHg↓, trigliserit %24.8-27.2↓, HDL belirgin↑",
+            "SURMOUNT alt analizleri"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "KV Mortalite/Morbidite (MACE-4)",
+            "Ateroskleroz/hücre hasarını inflamasyon baskısı + otofaji teşviki ile önleyici potansiyel; uzun dönem spesifik KV sonlanım verisi bekleniyor",
+            "SURPASS-CVOT (devam ediyor)"
+          ]
+        },
+        {
+          "hucreler": [
+            "HFpEF",
+            "Korunmuş EF'li kalp yetmezliğinde etki araştırılıyor",
+            "SUMMIT"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "OSA ★",
+            "Apne-hipopne indeksi (AHI) ve total hipoksik yükü azaltır; KV mortalite riskini bağımsız düşürebilir",
+            "SURMOUNT-OSA"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "NASH/MASH",
+            "Olumlu primer sonlanımlar elde edildi (faz 2)",
+            "SYNERGY-NASH"
+          ]
+        },
+        {
+          "hucreler": [
+            "Böbrek",
+            "İnsülin direncini kırma + inflamasyon azaltma + glomerüler endotel korunması → KBH progresyonu yavaşlar, yeni makroalbüminüri riski azalır",
+            "SURPASS alt analizleri"
+          ]
+        },
+        {
+          "hucreler": [
+            "İskelet Kası Kompozisyonu",
+            "Dramatik kilo kaybına rağmen plaseboya kıyasla yağ kütlesi azalırken yağsız (kas) kütle oranı göreceli korunur",
+            "SURMOUNT alt analizleri"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yan Etki Profili ve Riskler",
+      "kolonlar": [
+        "Kategori",
+        "Bulgu / Risk",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "GİS ve Gastrik Boşalma ★",
+            "En sık: bulantı, kusma, diyare, konstipasyon — titrasyon fazında zirve yapar",
+            "Mide boşalmasını güçlü yavaşlatır ancak uzun süreli maruziyette 'taşifilaksi' (ilerleyici tolerans) gelişir; ilerleyen aylarda gastrik boşalma normale yaklaşır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Perioperatif Aspirasyon Riski ★",
+            "Standart açlık kurallarına uyulsa bile rezidüel gastrik dolgunluk → genel anestezi/derin sedasyonda pulmoner aspirasyon riski artar",
+            "Öneri: prokinetik ajan, yatak başı gastrik USG veya uzatılmış açlık süresi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Malignite Uyarısı — MTC/MEN-2 ★",
+            "Rodentlerde doz/süre ilişkili tiroid C-hücreli adenom ve medüller karsinom (MTC) artışı",
+            "MTC öyküsü veya MEN-2 sendromunda KESİN KONTRENDİKE"
+          ]
+        },
+        {
+          "hucreler": [
+            "Safra Kesesi / Pankreas",
+            "Kolelitiazis, kolesistit, akut pankreatit riski",
+            "Şiddetli/yayılan abdominal ağrıda ilaç kesilmeli"
+          ]
+        },
+        {
+          "hucreler": [
+            "Renal / Endokrin",
+            "GİS kayıplarına sekonder dehidratasyon → AKI riski. İnsülin/sülfonilüre ile birlikte hipoglisemi riski katlanır (doz azaltımı düşünülmeli). Ani glisemik düzelme diyabetik retinopatide geçici kötüleşmeye yol açabilir",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "MTC / MEN-2 Kontrendikasyonu: Tüm GLP-1/GIP bazlı ajanlarda ortak sınıf uyarısıdır. Kişisel veya ailesel MTC öyküsü ya da MEN-2 sendromu (MEN-2A/2B) varlığında tirzepatid KESİN KONTRENDİKEDİR — rodent çalışmalarındaki doz/süre ilişkili C-hücre tümör artışına dayanır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "İlaç Etkileşimleri",
+      "satirlar": [
+        {
+          "metin": "**Oral Kontraseptifler:** Gastrik motiliteyi yavaşlatıcı etki, oral emilimi bozabilir. OKS'lerin Cmax'ı %55-66 oranında azalabilir; tirzepatid başlangıcında ve her doz artışından sonraki 4 haftalık dönemde non-oral veya bariyer yöntemine geçiş önerilir."
+        },
+        {
+          "metin": "**Parasetamol:** Cmax düşse de toplam maruziyet (AUC) etkilenmez → doz değişimi gerekmez."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Gebelik ve Laktasyon: Rodentlerde iskelet-visseral malformasyon ve fetal büyüme geriliği gösterildiğinden gebelikte KONTRENDİKE. Yarı ömrün ~5 gün olması nedeniyle planlı gebelikten en az 1 ay önce kesilmelidir. Laktasyonda anne sütüne geçiş verisi yetersiz olduğundan kullanımından kaçınılmalı/dikkatle yaklaşılmalıdır (molekül ağırlığı 4813 Da yüksek olsa da veri eksikliği nedeniyle temkinli yaklaşım gerekir)."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Tirzepatid 6 Altın Kural: (1) İlk GIP/GLP-1 dual agonisti; Aib (DPP-4 direnci) + C20 yağ asidi (albümin bağlanma → 5 gün yarı ömür). (2) Böbrek/karaciğer yetmezliğinde doz ayarlaması GEREKMEZ. (3) Başlangıç dozu (2.5 mg) tolerabilite içindir, etkinlik için değil. (4) MTC öyküsü/MEN-2 = kesin kontrendikasyon. (5) Perioperatif dönemde aspirasyon riski nedeniyle uzatılmış açlık/prokinetik değerlendirilmeli. (6) OKS kullanan hastalarda doz artışı sonrası 4 hafta non-oral/bariyer kontrasepsiyon eklenmeli."
+    }
+  ]
+}

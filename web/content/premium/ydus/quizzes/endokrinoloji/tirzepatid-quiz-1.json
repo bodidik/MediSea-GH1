@@ -1,0 +1,308 @@
+{
+  "id": "quiz-endo-tirzepatid-001",
+  "baslik": "Tirzepatid — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "tirzepatid",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Tirzepatidin moleküler yapısı incelendiğinde, nativ GIP amino asit sekansına dayandığı ve iki farklı modifikasyon taşıdığı görülüyor.\n\nBu modifikasyonların yapısı ve işlevsel amacı hangisidir?",
+      "secenekler": {
+        "A": "2. ve 13. pozisyonlarda aminoizobütirik asit (Aib) modifikasyonu DPP-4 yıkımını önler; 20. pozisyondaki lizine bağlanan C20 yağ asidi (1,20-eikozandioik asit) albümin bağlanmasını artırarak yarı ömrü uzatır.",
+        "B": "Modifikasyonların tamamı yalnızca reseptör afinitesini artırmak içindir; yarı ömür veya DPP-4 direnciyle ilgisi yoktur.",
+        "C": "C20 yağ asidi DPP-4 enzimini doğrudan inhibe eder; Aib modifikasyonu albümin bağlanmasını sağlar.",
+        "D": "Tirzepatid nativ GLP-1 sekansına dayanır; GIP benzeri etkinliği yalnızca çapraz reaktivite ile açıklanır.",
+        "E": "Modifikasyonlar yalnızca oral biyoyararlanımı artırmak için tasarlanmıştır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Aib (2. ve 13. pozisyon) → DPP-4 direnci. C20 yağ asidi (20. pozisyon lizine bağlı) → yüksek albümin bağlanma (%99) → uzamış yarı ömür (~5 gün).",
+      "aciklama_detay": "Tirzepatidin moleküler yapısı nativ GIP amino asit sekansına dayanır. İki kritik modifikasyon taşır: (1) 2. ve 13. pozisyonlarda aminoizobütirik asit (Aib) modifikasyonları — bu, dipeptidil peptidaz-4 (DPP-4) enzimi tarafından yıkımı önler, çünkü DPP-4 N-terminal dipeptid bağını tanıyamaz hale gelir. (2) Molekülün 20. pozisyonundaki lizin rezidüsüne bir bağlayıcı aracılığıyla eklenen 1,20-eikozandioik asit (C20 yağ asidi) — bu, plazma albümine yüksek oranda (%99) bağlanmayı sağlayarak renal klirensi azaltır ve eliminasyon yarı ömrünü yaklaşık 5 güne uzatır. Bu iki modifikasyon birlikte haftada bir uygulama şemasını mümkün kılar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Aib → DPP-4 direnci; C20 yağ asidi → albümin bağlanması → uzun yarı ömür.",
+        "B": "YANLIS — Modifikasyonların temel amacı tam olarak DPP-4 direnci ve yarı ömür uzatımıdır.",
+        "C": "YANLIS — Mekanizmalar ters açıklanmış; C20 albümin bağlanmasını sağlar, Aib DPP-4 direncini sağlar.",
+        "D": "YANLIS — Tirzepatid nativ GIP sekansına dayanır, GLP-1'e değil.",
+        "E": "YANLIS — Tirzepatid SC uygulanır, oral biyoyararlanım hedeflenmemiştir."
+      },
+      "etiketler": [
+        "Aib Modifikasyonu",
+        "C20 Yağ Asidi",
+        "DPP-4 Direnci",
+        "Moleküler Yapı",
+        "Albümin Bağlanma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Coskun et al. Mol Metab 2018; Frias et al. Lancet 2018"
+    },
+    {
+      "id": "s2",
+      "metin": "Tirzepatidin pankreatik β hücresi düzeyindeki hücre içi sinyal iletim mekanizması araştırılıyor.\n\nReseptör aktivasyonundan glukoza bağımlı insülin salınımına kadar olan sinyal yolağı hangi sıra ile doğru tanımlanmıştır?",
+      "secenekler": {
+        "A": "Reseptör aktivasyonu → adenilat siklaz-cAMP-PKA yolağı → ATP artışı → K+ kanalları AÇILIR → hiperpolarizasyon → Ca2+ kanalları kapanır → insülin salınımı azalır.",
+        "B": "Reseptör aktivasyonu → adenilat siklaz-cAMP-PKA yolağı → hücre içi ATP artışı → K+ kanalları KAPANIR → depolarizasyon → voltaj kapılı Ca2+ kanalları açılır → ER'den sekonder Ca2+ salınımı → glukoza bağımlı insülin sekresyonu; PKA ayrıca insülin gen transkripsiyonunu uyarır.",
+        "C": "Reseptör aktivasyonu doğrudan insülin gen transkripsiyonunu uyarır; iyon kanalı aracılı bir mekanizma yoktur.",
+        "D": "Reseptör aktivasyonu fosfolipaz C yolağını aktive ederek IP3 aracılı Ca2+ salınımı sağlar; cAMP/PKA yolağıyla ilgisi yoktur.",
+        "E": "K+ kanalları kapanması glukozdan bağımsız gerçekleşir; bu nedenle hipoglisemi riski her koşulda yüksektir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Reseptör → adenilat siklaz-cAMP-PKA → ATP↑ → K+ kanalı KAPANIR → depolarizasyon → Ca2+ kanalı açılır → ER'den sekonder Ca2+ salınımı → glukoza bağımlı insülin sekresyonu. PKA ayrıca insülin gen transkripsiyonunu uyarır.",
+      "aciklama_detay": "Tirzepatid pankreatik β hücrelerindeki GIP/GLP-1 reseptörlerine bağlanarak adenilat siklaz-cAMP-protein kinaz A (PKA) yolağını aktive eder. Artan hücre içi ATP seviyeleri plazma membranındaki ATP-duyarlı K+ kanallarının KAPANMASINA ve hücrenin depolarize olmasına yol açar. Bu depolarizasyon voltaj kapılı Ca2+ kanallarını açarak hem ekstraselüler Ca2+ girişini hem de endoplazmik retikulumdan sekonder Ca2+ salınımını tetikler; sonuç olarak glukoza bağımlı insülin sekresyonu gerçekleşir. PKA ayrıca insülin gen transkripsiyonunu doğrudan uyarır. Bu mekanizmanın 'glukoza bağımlı' olması, sülfonilürelerden farklı olarak hipoglisemi riskinin monoterapide düşük kalmasını açıklar — düşük glukoz düzeyinde ATP üretimi yetersiz kalır ve kaskad tetiklenmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — K+ kanalları KAPANIR (açılmaz), depolarizasyon olur (hiperpolarizasyon değil); mekanizma tam tersine tanımlanmış.",
+        "B": "DOGRU — ATP↑ → K+ kanalı kapanması → depolarizasyon → Ca2+ kanalı açılması → insülin sekresyonu; doğru sıra budur.",
+        "C": "YANLIS — İyon kanalı aracılı mekanizma temel yolaktır, transkripsiyon buna ek bir etkidir.",
+        "D": "YANLIS — Asıl yolak adenilat siklaz-cAMP-PKA'dır, fosfolipaz C değil.",
+        "E": "YANLIS — Mekanizma tam olarak GLUKOZA BAĞIMLIDIR; bu nedenle monoterapide hipoglisemi riski düşüktür."
+      },
+      "etiketler": [
+        "cAMP/PKA Yolağı",
+        "K+ Kanalı",
+        "Ca2+ Kanalı",
+        "Glukoza Bağımlı İnsülin Sekresyonu",
+        "β Hücre Sinyali"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Willard et al. JCI Insight 2020; Coskun et al. Mol Metab 2018"
+    },
+    {
+      "id": "s3",
+      "metin": "Evre 4 kronik böbrek hastalığı (eGFR 22 mL/dk) ve orta derecede karaciğer yetmezliği (Child-Pugh B) olan 60 yaşında T2DM'li hastada tirzepatid başlanması planlanıyor.\n\nBu hastada doz ayarlamasıyla ilgili en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hem böbrek hem karaciğer yetmezliği nedeniyle başlangıç dozu yarıya (1.25 mg) düşürülmeli.",
+        "B": "Yaş, cinsiyet, ırk ve vücut ağırlığı gibi hafif/orta/şiddetli böbrek ve karaciğer yetmezliği durumları tirzepatidin farmakokinetiğini klinik olarak anlamlı değiştirmediğinden herhangi bir doz ayarlaması gerekmez; standart titrasyon şeması (2.5 mg başlangıç) uygulanır.",
+        "C": "Şiddetli böbrek yetmezliğinde tirzepatid kesin kontrendikedir.",
+        "D": "Karaciğer yetmezliğinde ilaç aktif metabolitleri karaciğerde biriktirdiğinden dozun üçte birine düşürülmesi gerekir.",
+        "E": "Böbrek yetmezliğinde ilaç intakt formda idrarla atıldığından eGFR'ye göre doz titre edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tirzepatid PK'sı hafif/orta/şiddetli böbrek VE karaciğer yetmezliğinde klinik olarak anlamlı değişmez — doz ayarlaması gerekmez. Standart titrasyon (2.5 mg başlangıç) uygulanır.",
+      "aciklama_detay": "Tirzepatidin farmakokinetik profili özel popülasyonlarda dikkat çekici derecede stabildir: yaş (≥65 yaş dahil), cinsiyet, ırk ve vücut ağırlığı parametreleri farmakokinetiği klinik olarak anlamlı düzeyde değiştirmez. Aynı şekilde hafif, orta veya şiddetli böbrek yetmezliği ile hafif, orta veya şiddetli karaciğer yetmezliği durumlarında dahi herhangi bir doz ayarlaması gerekmez. Bu, ilacın peptid omurgasının proteolitik klevajı, C20 zincirinin beta-oksidasyonu ve amid hidrolizi yollarıyla metabolize edilmesinden kaynaklanır — intakt tirzepatid idrar veya feçeste saptanmaz, esas atılım metabolitler halinde böbrek ve biliyer sistem üzerinden gerçekleşir, tek bir organ eliminasyonuna bağımlı değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Doz ayarlaması gerekmez; standart 2.5 mg başlangıç dozu tolerabilite amaçlıdır, organ yetmezliğine göre değiştirilmez.",
+        "B": "DOGRU — Böbrek/karaciğer yetmezliğinde (hafif-şiddetli) PK anlamlı değişmez; standart şema uygulanır.",
+        "C": "YANLIS — Şiddetli böbrek yetmezliği kontrendikasyon değildir; ilaç güvenle kullanılabilir.",
+        "D": "YANLIS — İlaç karaciğerde aktif metabolit birikimi göstermez; doz azaltımı gerekmez.",
+        "E": "YANLIS — İntakt tirzepatid idrarda saptanmaz (metabolitler atılır); eGFR'ye göre doz titrasyonu gerekmez."
+      },
+      "etiketler": [
+        "Farmakokinetik",
+        "Böbrek Yetmezliği",
+        "Karaciğer Yetmezliği",
+        "Doz Ayarlaması",
+        "Özel Popülasyonlar"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Urva et al. Clin Pharmacokinet 2022; FDA Prescribing Information — Tirzepatide"
+    },
+    {
+      "id": "s4",
+      "metin": "T2DM olmayan, VKİ 34 kg/m² olan bir hastada obezite tedavisi için tirzepatid başlanıyor. Hasta 72. haftada değerlendiriliyor.\n\nSURMOUNT-1 çalışmasının 15 mg doz grubunda 72. haftada gözlenen kilo kaybı ve başlangıç ağırlığının ≥%20'sini kaybeden hasta oranı ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Ortalama %22.4'e varan (yaklaşık 20.9 kg) kilo kaybı; hastaların %50.1-56.7'si başlangıç ağırlığının ≥%20'sini kaybetmiştir.",
+        "B": "Ortalama %8-10 kilo kaybı; ≥%20 kilo kaybına ulaşan hasta oranı %5'in altındadır.",
+        "C": "SURMOUNT-1'de yalnızca T2DM'li hastalar değerlendirilmiştir, bu senaryo çalışma popülasyonuyla uyumsuzdur.",
+        "D": "Kilo kaybı yalnızca ilk 12 haftada gerçekleşir, sonrasında plato yapıp geri kazanılır.",
+        "E": "72. haftada kilo kaybı yalnızca 5 mg dozunda değerlendirilmiştir, 15 mg verisi mevcut değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SURMOUNT-1 (T2DM olmayan obez/fazla kilolu): 72. haftada 15 mg ile %22.4'e varan (ort. 20.9 kg) kilo kaybı; hastaların %50.1-56.7'si ≥%20 kilo kaybına ulaştı.",
+      "aciklama_detay": "SURMOUNT-1, T2DM olmayan obez/fazla kilolu hastaları içeren pivotal obezite çalışmasıdır. 72. hafta itibarıyla en yüksek doz olan 15 mg ile %22.4'e varan (ortalama 20.9 kg) vücut ağırlığı kaybı elde edilmiştir. Hastaların yarısından fazlası (%50.1-56.7) başlangıç ağırlıklarının ≥%20'sini kaybetmeyi başarmıştır — bu, bariatrik cerrahiye yaklaşan bir etkinlik düzeyidir ve farmakoterapide önceki ajanlarla (örn. semaglutid 2.4 mg, STEP çalışmaları) elde edilenden daha yüksektir. SURMOUNT-2 ise T2DM'si olan hastalarda yürütülmüş ve 15 mg ile %14.7 kilo kaybı gösterilmiştir (T2DM'li hastalarda kilo kaybı tipik olarak daha düşüktür).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — SURMOUNT-1, 15 mg, 72. hafta: %22.4'e varan kilo kaybı, %50.1-56.7 hasta ≥%20 kayba ulaştı.",
+        "B": "YANLIS — Gerçek sonuçlar çok daha yüksektir; bu rakamlar SURMOUNT-1 verisiyle uyuşmaz.",
+        "C": "YANLIS — SURMOUNT-1 spesifik olarak T2DM OLMAYAN obez/fazla kilolu popülasyonu incelemiştir; T2DM'li popülasyon SURMOUNT-2'dir.",
+        "D": "YANLIS — Kilo kaybı progresif olarak 72. haftaya kadar devam etmiştir, erken plato/geri kazanım gösterilmemiştir (SURMOUNT-4'te ancak ilaç KESİLDİĞİNDE geri kazanım olur).",
+        "E": "YANLIS — 15 mg verisi mevcuttur ve en yüksek etkinliği gösteren doz grubudur."
+      },
+      "etiketler": [
+        "SURMOUNT-1",
+        "Obezite",
+        "Kilo Kaybı",
+        "72. Hafta",
+        "15 mg Doz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Jastreboff et al. N Engl J Med 2022 (SURMOUNT-1)"
+    },
+    {
+      "id": "s5",
+      "metin": "Tirzepatid ile 15 mg dozunda 72 hafta boyunca başarılı kilo kaybı sağlanan bir hastada, ilacın kesilip plaseboya geçirildiği bir izlem çalışması yürütülüyor.\n\nSURMOUNT-4 (randomize çekilme) çalışmasının temel bulgusu ve klinik önemi nedir?",
+      "secenekler": {
+        "A": "İlaç kesildikten sonra kilo kaybı kalıcı olarak korunmuş, hastalar plasebo grubunda dahi ağırlıklarını korumuştur.",
+        "B": "Tirzepatidin kesilip plaseboya geçilmesi ciddi bir 'kilo geri kazanımına' (weight regain) yol açmıştır; bu bulgu kronik/sürekli kullanımın zorunluluğunu kanıtlamıştır.",
+        "C": "İlaç kesildikten sonra hastalarda hipoglisemi riski artmış, bu nedenle kademeli kesim önerilmiştir.",
+        "D": "SURMOUNT-4 yalnızca glisemik parametreleri değerlendirmiştir, kilo geri kazanımı hiç incelenmemiştir.",
+        "E": "İlacın kesilmesi herhangi bir ağırlık değişikliğine yol açmamıştır çünkü etkisi kalıcıdır (yarı ömrü sonsuzdur)."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SURMOUNT-4: tirzepatid kesilip plaseboya geçilince belirgin kilo geri kazanımı (weight regain) gözlendi — obezitenin kronik bir hastalık olduğunu ve tedavinin sürekli kullanım gerektirdiğini kanıtladı.",
+      "aciklama_detay": "SURMOUNT-4, randomize çekilme (randomized withdrawal) tasarımıyla, 36 haftalık açık etiketli tirzepatid tedavisi sonrası hastaları ya tirzepatide devam etme ya da plaseboya geçme koluna randomize etmiştir. Plasebo grubuna geçen hastalarda belirgin kilo geri kazanımı (weight regain) gözlenmiştir; buna karşın tirzepatide devam eden grup kilo kaybını korumuş, hatta bir miktar daha ilerletmiştir. Bu bulgu, obezitenin kronik, tedavi kesildiğinde nüks eden bir hastalık olduğunu ve GIP/GLP-1 agonisti tedavisinin sürekli/kronik kullanım gerektirdiğini net biçimde göstermiştir — tıpkı hipertansiyon veya diyabet gibi, obezite tedavisinin de 'kür' değil 'kronik yönetim' modeliyle ele alınması gerektiği mesajını pekiştirmiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersi gösterilmiştir; plasebo grubunda belirgin kilo geri kazanımı olmuştur.",
+        "B": "DOGRU — İlaç kesilince kilo geri kazanımı → kronik kullanım gerekliliği kanıtlanmıştır.",
+        "C": "YANLIS — Çalışmanın odağı kilo geri kazanımıdır, hipoglisemi kesim protokolüyle ilgili değildir.",
+        "D": "YANLIS — SURMOUNT-4'ün temel sonlanımı tam olarak kilo değişikliği/geri kazanımdır.",
+        "E": "YANLIS — Yarı ömür ~5 gündür, sonsuz değildir; ilaç kesildiğinde etkisi zamanla kaybolur ve kilo geri kazanımı olur."
+      },
+      "etiketler": [
+        "SURMOUNT-4",
+        "Randomize Çekilme",
+        "Kilo Geri Kazanımı",
+        "Kronik Tedavi",
+        "Obezite Yönetimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Aronne et al. JAMA 2024 (SURMOUNT-4)"
+    },
+    {
+      "id": "s6",
+      "metin": "Elli beş yaşında hasta, elektif laparoskopik kolesistektomi için genel anestezi planlanıyor. Hasta 3 aydır tirzepatid 10 mg/hafta kullanmakta ve standart ASA açlık kurallarına (katı gıda için 8 saat, berrak sıvı için 2 saat) tam uyum sağlamış.\n\nBu hastada perioperatif dönemde en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Standart açlık kurallarına uyulduğu için ek bir önlem gerekmez; aspirasyon riski GLP-1/GIP agonisti kullanıcılarında artmaz.",
+        "B": "GLP-1/GIP ko-agonistleri standart açlık kurallarına uyulmuş olsa bile rezidüel gastrik dolgunluğa yol açarak pulmoner aspirasyon riskini artırabilir; prokinetik ajan kullanımı, yatak başı gastrik ultrasonografi veya uzatılmış açlık süresi gibi ek önlemler değerlendirilmelidir.",
+        "C": "Tirzepatid kullanan hastalarda genel anestezi kesin kontrendikedir; yalnızca lokal anestezi uygulanabilir.",
+        "D": "Aspirasyon riski yalnızca 15 mg dozunda anlamlıdır; 10 mg dozunda herhangi bir önlem gerekmez.",
+        "E": "Rezidüel gastrik dolgunluk yalnızca titrasyon fazının ilk 4 haftasında görülür; 3 aylık kullanımda bu risk tamamen ortadan kalkmıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "GLP-1/GIP ko-agonistleri gastrik boşalmayı yavaşlatır; standart açlığa uyulsa bile rezidüel gastrik içerik kalabilir → aspirasyon riski. Önlemler: prokinetik, gastrik USG, uzatılmış açlık süresi.",
+      "aciklama_detay": "Tirzepatid, fizyolojik düzeylerde dahi mide boşalmasını ve gastrointestinal motiliteyi güçlü biçimde yavaşlatır. Tıbbi literatürde, GLP-1/GIP ko-agonistlerinin standart pre-operatif açlık kurallarına tam uyum sağlanmış olsa bile rezidüel gastrik dolgunluğa yol açarak, genel anestezi veya derin sedasyon gerektiren işlemlerde pulmoner aspirasyon riskini artırdığı raporlanmıştır. Bu, standart ASA açlık protokollerinin bu ilaç sınıfı için yeterli güvenceyi sağlamayabileceği anlamına gelir. Klinik derlemeler cerrahi öncesi prokinetik ajanların (örn. metoklopramid) kullanımını, yatak başı gastrik ultrasonografik inceleme ile rezidüel içerik değerlendirmesini veya uzatılmış açlık sürelerini önermektedir. Bu risk taşifilaksiye (tolerans gelişimine) rağmen tamamen ortadan kalkmaz ve doza bağımlı kesin bir eşik tanımlanmamıştır; bu nedenle her doz düzeyinde dikkatli değerlendirme gerekir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Standart açlık kuralları bu ilaç sınıfında yeterli güvenceyi sağlamayabilir; ek önlem gereklidir.",
+        "B": "DOGRU — Rezidüel gastrik dolgunluk riski nedeniyle prokinetik/gastrik USG/uzatılmış açlık gibi ek önlemler önerilir.",
+        "C": "YANLIS — Genel anestezi kontrendike değildir; risk yönetimi ile birlikte uygulanabilir.",
+        "D": "YANLIS — Risk doza kesin bağımlı olarak sınırlandırılmamıştır; 10 mg dozunda da dikkat gereklidir.",
+        "E": "YANLIS — Taşifilaksi gastrik boşalmayı kısmen normale yaklaştırsa da rezidüel dolgunluk riskini tamamen ortadan kaldırdığına dair kesin veri yoktur; klinik dikkat sürdürülmelidir."
+      },
+      "etiketler": [
+        "Perioperatif Yönetim",
+        "Aspirasyon Riski",
+        "Gastrik Boşalma",
+        "Genel Anestezi",
+        "Prokinetik Ajan"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Kindel et al. ASA/ASGE Multi-Society Consensus 2023; Sen et al. Anesth Analg 2024"
+    },
+    {
+      "id": "s7",
+      "metin": "Yirmi sekiz yaşında hasta, ailesinde medüller tiroid karsinomu (MTC) öyküsü olduğu ve kendisinde MEN-2A sendromu tanısı bulunduğu için endokrinolojiye başvuruyor. Hasta obezite tedavisi için tirzepatid kullanmayı talep ediyor.\n\nBu hastada tirzepatid kullanımıyla ilgili en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "MEN-2A sendromu tirzepatid kullanımı için rölatif bir kontrendikasyondur; dikkatli izlemle kullanılabilir.",
+        "B": "Kişisel veya ailesel MTC öyküsü ya da MEN-2 sendromu (2A/2B) varlığında tirzepatid KESİN KONTRENDİKEDİR; bu, rodent çalışmalarında gösterilen doz/süre ilişkili tiroid C-hücre tümör artışına dayanan bir sınıf uyarısıdır.",
+        "C": "MEN-2A yalnızca paratiroid ve feokromositoma bileşenleriyle ilişkilidir, MTC riski taşımaz; bu nedenle tirzepatid güvenle kullanılabilir.",
+        "D": "Kontrendikasyon yalnızca aktif MTC hastalığı için geçerlidir; MEN-2A taşıyıcılığı tek başına bir engel oluşturmaz.",
+        "E": "Tirzepatid MTC riskini insanlarda artırmadığı kesin olarak kanıtlanmıştır; rodent verileri klinik olarak anlamsızdır ve kontrendikasyon kaldırılmıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kişisel/ailesel MTC öyküsü veya MEN-2 sendromu (2A/2B) = kesin kontrendikasyon. Rodent çalışmalarında doz/süre ilişkili C-hücre adenom/MTC artışı gösterilmiştir; bu tüm GLP-1/GIP bazlı ajanlar için sınıf uyarısıdır.",
+      "aciklama_detay": "Rodentlerde yapılan çalışmalarda tirzepatid ve diğer GLP-1 reseptör agonistleri, doz ve maruziyet süresiyle ilişkili olarak tiroid C-hücreli (parafolliküler hücre) adenom ve medüller karsinom (MTC) prevalansında artış göstermiştir. Bu bulgu insan verisiyle kesin olarak doğrulanmamış olsa da, düzenleyici kurumlar önlem amaçlı olarak kişisel veya ailesel MTC öyküsü ya da Multipl Endokrin Neoplazi Tip 2 (MEN-2A veya MEN-2B) sendromu olan hastalarda tirzepatid kullanımını KESİN KONTRENDİKE ilan etmiştir. MEN-2A sendromu (MTC + feokromositoma + primer hiperparatiroidi) ve MEN-2B (MTC + feokromositoma + mukozal nöromlar/marfanoid habitus) her ikisi de RET proto-onkogeni mutasyonuna bağlıdır ve yüksek MTC riski taşır — bu nedenle her iki sendrom da mutlak kontrendikasyon oluşturur, yalnızca aktif hastalık değil taşıyıcılık/sendrom tanısının kendisi yeterlidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Rölatif değil, KESİN (mutlak) kontrendikasyondur.",
+        "B": "DOGRU — MTC öyküsü/MEN-2 sendromu = kesin kontrendikasyon; rodent C-hücre tümör verisine dayanır.",
+        "C": "YANLIS — MEN-2A'nın üç bileşeninden biri tam olarak MTC'dir (+feokromositoma+hiperparatiroidi); MTC riski yüksektir.",
+        "D": "YANLIS — Kontrendikasyon yalnızca aktif hastalıkla sınırlı değildir; sendrom/öykü varlığının kendisi yeterlidir.",
+        "E": "YANLIS — İnsan verisi rodent bulgusunu kesin olarak dışlamamıştır; kontrendikasyon güncel olarak yürürlüktedir."
+      },
+      "etiketler": [
+        "MEN-2",
+        "Medüller Tiroid Karsinomu",
+        "Kesin Kontrendikasyon",
+        "RET Mutasyonu",
+        "Sınıf Uyarısı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide (Boxed Warning); Bezin et al. Diabetes Care 2023"
+    },
+    {
+      "id": "s8",
+      "metin": "Otuz iki yaşında kadın hasta, kombine oral kontraseptif kullanmakta ve obezite tedavisi için tirzepatid başlanıyor. Doz 5 mg'dan 10 mg'a artırılıyor.\n\nBu doz artışı sonrası kontrasepsiyon yönetimiyle ilgili en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tirzepatid oral kontraseptif etkinliğini etkilemez; herhangi bir ek önlem gerekmez.",
+        "B": "Tirzepatidin gastrik motiliteyi yavaşlatıcı etkisi OKS'nin Cmax'ını %55-66 oranında azaltabileceğinden, tirzepatid başlangıcında ve her doz artışından sonraki 4 haftalık dönemde non-oral veya bariyer yöntemine geçilmesi önerilir.",
+        "C": "Parasetamol ile aynı mekanizma nedeniyle OKS'nin toplam maruziyeti (AUC) de belirgin azalır; kalıcı olarak non-oral yönteme geçilmelidir.",
+        "D": "Bu etkileşim yalnızca 15 mg maksimum dozda anlamlıdır; 10 mg'a çıkışta önlem gerekmez.",
+        "E": "OKS etkinliği azalmaz, yalnızca emilim hızı değişir; bu nedenle klinik olarak önemsizdir ve önlem gerektirmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tirzepatid gastrik motiliteyi yavaşlatarak OKS Cmax'ını %55-66 azaltabilir → başlangıçta ve HER doz artışından sonraki 4 hafta boyunca non-oral/bariyer kontrasepsiyon önerilir.",
+      "aciklama_detay": "Tirzepatidin gastrik motiliteyi yavaşlatıcı etkisi, birlikte alınan oral ilaçların emilimini bozabilir. Özellikle oral kontraseptiflerin maksimum plazma konsantrasyonu (Cmax) %55-66 oranında azalabilir; bu, kontraseptif etkinliği tehlikeye atabilecek klinik olarak anlamlı bir etkileşimdir (parasetamol örneğinden farklı olarak — parasetamolde Cmax düşse de toplam maruziyet/AUC etkilenmediği için doz değişimi gerekmez). Bu nedenle tirzepatid tedavisine başlarken VE her doz artışından sonraki 4 haftalık dönemde (motilite etkisinin en belirgin olduğu, henüz taşifilaksinin tam gelişmediği pencere) hastaların non-oral bir kontrasepsiyon yöntemine (örn. enjeksiyon, IUD) veya bariyer yöntemine (kondom) geçmesi önerilir. Bu, her doz eskalasyonunda tekrarlanması gereken bir danışmanlık noktasıdır, yalnızca tedavi başlangıcıyla sınırlı değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Cmax'ta %55-66 azalma klinik olarak anlamlıdır; önlem gereklidir.",
+        "B": "DOGRU — OKS Cmax'ı düşer → başlangıç + her doz artışı sonrası 4 hafta non-oral/bariyer yöntem önerilir.",
+        "C": "YANLIS — Bu tam tersine parasetamol örneğidir (AUC etkilenmez); OKS örneğinde asıl vurgu Cmax düşüşüdür ve kalıcı değil, geçici (4 haftalık) bir önlem gereklidir.",
+        "D": "YANLIS — Etkileşim doza özgü sınırlı değildir; her doz artışı sonrası önlem tekrarlanmalıdır.",
+        "E": "YANLIS — Cmax düşüşü kontraseptif etkinliği tehlikeye atabileceğinden klinik olarak önemlidir."
+      },
+      "etiketler": [
+        "Oral Kontraseptif Etkileşimi",
+        "Gastrik Motilite",
+        "Cmax",
+        "Kontrasepsiyon Danışmanlığı",
+        "Doz Artışı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; Urva et al. Clin Pharmacokinet 2022"
+    },
+    {
+      "id": "s9",
+      "metin": "Yirmi altı yaşında kadın hasta, tirzepatid 10 mg/hafta kullanmakta ve gebelik planlamaktadır. Kliniğe önerilen zamanlama ve gerekçe konusunda danışmanlık için başvuruyor.\n\nBu hastada tirzepatidin kesilme zamanlaması ve gerekçesi hangisidir?",
+      "secenekler": {
+        "A": "Gebelik oluşana kadar ilaca devam edilebilir; pozitif gebelik testi alındığı anda kesilmesi yeterlidir.",
+        "B": "Rodentlerde gösterilen teratojenik etkiler (iskelet-visseral malformasyon, fetal büyüme geriliği) ve ilacın ~5 günlük yarı ömrü göz önüne alındığında, planlı gebelikten en az 1 ay önce tirzepatid kesilmelidir.",
+        "C": "Tirzepatidin yarı ömrü çok kısa olduğundan (birkaç saat) gebelik planlanan hafta kesilmesi yeterlidir.",
+        "D": "Tirzepatid gebelikte güvenlidir; insan verileri teratojenik riski kesin olarak dışlamıştır.",
+        "E": "Kesilme zamanlaması ilacın yarı ömründen bağımsızdır; yalnızca hastanın tercihine göre belirlenir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Rodent teratojenite verisi + ~5 gün yarı ömür → planlı gebelikten en az 1 ay önce kesilmeli. Bu, ilacın vücuttan tam temizlenmesini (yaklaşık 5 yarı ömür = ~25 gün) güvenceye alır.",
+      "aciklama_detay": "Tirzepatid, rodent çalışmalarında iskelet-visseral malformasyonlar ve fetal büyüme geriliği gibi teratojenik etkiler gösterdiğinden gebelikte kontrendikedir. İlacın sistemik yarı ömrünün yaklaşık 5 gün olması, bir ilacın vücuttan büyük ölçüde temizlenmesi için gereken süreyi (genellikle 4-5 yarı ömür, yani ~20-25 gün) hesaba katarak, planlı gebelikten EN AZ 1 AY ÖNCE kesilmesi gerektiği önerisinin farmakokinetik gerekçesini oluşturur. Bu, gebelik testi pozitif çıktıktan sonra kesmenin yetersiz olacağı, çünkü organogenez döneminde (ilk trimester, özellikle ilk 8 hafta) ilacın hâlâ sistemik dolaşımda anlamlı düzeyde bulunabileceği anlamına gelir. Bu nedenle üreme çağındaki kadınlarda tedavi başlanmadan önce gebelik planlaması mutlaka sorgulanmalı ve etkili kontrasepsiyon konusunda danışmanlık verilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Pozitif test alındığında kesim çok geç kalabilir; organogenez döneminde ilaç hâlâ dolaşımda olabilir.",
+        "B": "DOGRU — Rodent teratojenite + ~5 gün yarı ömür → en az 1 ay önceden kesim önerisi.",
+        "C": "YANLIS — Yarı ömür kısa değil, yaklaşık 5 gündür; bu nedenle uzun bir kesim penceresi gerekir.",
+        "D": "YANLIS — İnsan gebelik verisi yetersizdir; güvenlik kesin olarak gösterilmemiştir, kontrendikasyon geçerlidir.",
+        "E": "YANLIS — Zamanlama doğrudan farmakokinetik yarı ömre dayanır, keyfi değildir."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Teratojenite",
+        "Yarı Ömür",
+        "Kontrasepsiyon Planlaması",
+        "İlaç Kesim Zamanlaması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; Reprotoxicology data, Eli Lilly 2022"
+    },
+    {
+      "id": "s10",
+      "metin": "T2DM ve obezitesi olan bir hastada tirzepatid tedavisinin kardiyorenal ve metabolik sistemler üzerindeki pleiotropik etkileri değerlendiriliyor.\n\nAşağıdaki eşleştirmelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "SURMOUNT-OSA: Tirzepatid apne-hipopne indeksini (AHI) ve total hipoksik yükü azaltır.",
+        "B": "SYNERGY-NASH: Tirzepatid MASH/NASH tedavisinde faz 2 çalışmasında olumlu primer sonlanımlar göstermiştir.",
+        "C": "SURPASS alt analizleri: Tirzepatid insülin direncini kırma, inflamasyonu azaltma ve glomerüler endotel korunması yoluyla KBH progresyonunu yavaşlatır ve yeni makroalbüminüri riskini azaltır.",
+        "D": "SURPASS-CVOT: Bu çalışma tamamlanmış olup tirzepatidin MACE-4 sonlanımlarını azaltmadığını kesin olarak göstermiştir.",
+        "E": "SURMOUNT alt analizleri: Dramatik kilo kaybına rağmen plaseboya kıyasla yağsız (kas) kütle oranı göreceli olarak korunmuştur."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "SURPASS-CVOT HENÜZ TAMAMLANMAMIŞTIR — sürmekte olan bir çalışmadır; MACE-4 sonuçları henüz açıklanmamıştır. Diğer tüm eşleştirmeler (A, B, C, E) doğrudur.",
+      "aciklama_detay": "Tirzepatidin kardiyovasküler mortalite ve morbidite (MACE-4) üzerine uzun dönemli spesifik etkileri SÜRMEKTE OLAN SURPASS-CVOT çalışmasıyla aydınlatılmaya çalışılmaktadır; bu çalışma tamamlanmamıştır ve kesin bir sonuç henüz mevcut değildir. Bu nedenle 'tamamlanmış olup MACE-4'ü azaltmadığını kesin olarak gösterdi' ifadesi yanlıştır — hem çalışmanın durumu (devam ediyor) hem de sonucu (bilinmiyor) hatalı belirtilmiştir. Diğer seçenekler doğru eşleştirmelerdir: SURMOUNT-OSA obstrüktif uyku apnesinde AHI ve hipoksik yükü azaltmıştır; SYNERGY-NASH faz 2'de MASH/NASH için olumlu sonuçlar vermiştir; SURPASS alt analizleri böbrek koruyucu etkileri (KBH progresyonu yavaşlaması, makroalbüminüri riski azalması) göstermiştir; SURMOUNT alt analizlerinde kilo kaybı sırasında yağsız kas kütlesi oranı göreceli korunmuştur.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU eşleştirme — yanlış DEĞİL. SURMOUNT-OSA gerçekten AHI ve hipoksik yükü azaltmıştır.",
+        "B": "DOĞRU eşleştirme — yanlış DEĞİL. SYNERGY-NASH faz 2'de olumlu primer sonlanımlar gösterilmiştir.",
+        "C": "DOĞRU eşleştirme — yanlış DEĞİL. SURPASS alt analizleri renoprotektif etkileri desteklemektedir.",
+        "D": "YANLIŞ EŞLEŞTİRME — bu DOĞRU CEVAP. SURPASS-CVOT halen sürmekte olup kesin MACE-4 sonucu henüz mevcut değildir.",
+        "E": "DOĞRU eşleştirme — yanlış DEĞİL. Yağsız kütle korunumu SURMOUNT alt analizlerinde gösterilmiştir."
+      },
+      "etiketler": [
+        "SURPASS-CVOT",
+        "MACE-4",
+        "SURMOUNT-OSA",
+        "SYNERGY-NASH",
+        "Pleiotropik Etkiler"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ClinicalTrials.gov NCT04255433 (SURPASS-CVOT); Malhotra et al. N Engl J Med 2024 (SURMOUNT-OSA)"
+    }
+  ]
+}
