@@ -1,0 +1,458 @@
+{
+  "id": "fc-gogus-sarkoidoz-001",
+  "accessLevel": "premium",
+  "topic": "Sarkoidoz — Kapsamlı Kart Seti",
+  "description": "Epidemiyoloji, patogenez, radyoloji, kalsiyum metabolizması, kardiyak/oküler tutulum, tanı biyobelirteçleri, tedavi ve yaşam kalitesi dahil sarkoidoz için 75 kartlık YDUS odaklı set.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Erişkinlerde Akut Disseminize Ensefalomiyelit (ADEM) tanısı için radyolojik bulgular ve BOS anormallikleri kesin bir gereklilik midir?",
+      "back": "Hayır, tanıyı destekleyici bulgulardır ancak tanı için şart değildirler.",
+      "tag": "Komplikasyon"
+    },
+    {
+      "id": "card-2",
+      "front": "Sarkoidozun doğal seyrinde Evre I radyografik hastalık için beklenen spontan remisyon oranı aralığı nedir?",
+      "back": "$\\%60$ ile $\\%80$ arasındadır.",
+      "tag": "Radyoloji / Scadding"
+    },
+    {
+      "id": "card-3",
+      "front": "Sarkoidozda Evre III radyografik hastalıkta spontan remisyon olasılığı nedir?",
+      "back": "$\\%30$'dan azdır.",
+      "tag": "Radyoloji / Scadding"
+    },
+    {
+      "id": "card-4",
+      "front": "Sarkoidozun genel prognozunda en güçlü belirleyici faktörlerden biri nedir?",
+      "back": "Tutulan organ sistemlerinin sayısıdır.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-5",
+      "front": "Sarkoidoz hastalarında pulmoner hipertansiyon gelişiminin temel mekanizması nedir?",
+      "back": "İleri akciğer fibrozisi, pulmoner vasküler granülomatöz inflamasyon veya kardiyak sarkoidoz komplikasyonlarıdır.",
+      "tag": "Komplikasyon"
+    },
+    {
+      "id": "card-6",
+      "front": "Sarkoidozda kronik pulmoner aspergillozis (KPA) hangi spesifik radyolojik boşluk yapısı içinde miçetom oluşumu ile karakterizedir?",
+      "back": "Fibrokistik boşluklar.",
+      "tag": "Komplikasyon"
+    },
+    {
+      "id": "card-7",
+      "front": "Sarkoidoz ile ilişkili tubülointerstisyel nefrit tanısı için altın standart tanı yöntemi nedir?",
+      "back": "Böbrek biyopsisidir.",
+      "tag": "Kalsiyum / Böbrek"
+    },
+    {
+      "id": "card-8",
+      "front": "Aktif sarkoidoz ilişkili tubülointerstisyel nefrit tedavisinde ilk basamak öneri (Grade 2C) nedir?",
+      "back": "Glukokortikoid tedavisidir.",
+      "tag": "Kalsiyum / Böbrek"
+    },
+    {
+      "id": "card-9",
+      "front": "Kardiyak sarkoidozda aktif miyokardiyal inflamasyonun değerlendirilmesinde kullanılan en hassas nükleer tıp görüntüleme yöntemi nedir?",
+      "back": "^{18}F-fluorodeoksiglukoz pozitron emisyon tomografisi ($^{18}F-FDG\\text{ PET}$).",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-10",
+      "front": "Kardiyak sarkoidozda primer korunma amaçlı ICD implantasyonu için LVEF eşik değeri nedir?",
+      "back": "$\\le \\%35$.",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-11",
+      "front": "Kardiyak sarkoidozda pacemaker ihtiyacı olan yüksek dereceli AV bloklu hastalarda hangi cihaz tercih edilmelidir?",
+      "back": "ICD fonksiyonelliği olan pacemaker sistemi.",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-12",
+      "front": "Sarkoidoz patogenezinde en güçlü ilişkiye sahip olduğu bildirilen iki spesifik mikroorganizma hangisidir?",
+      "back": "Cutibacterium acnes ve Mycobacterium tuberculosis.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-13",
+      "front": "Sarkoidozun bağırsak mikrobiyotası ile ilişkisinde artış gösteren iki ana filum (phyla) hangisidir?",
+      "back": "Actinobacteria ve Firmicutes.",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-14",
+      "front": "Bağırsak-akciğer ekseni (gut-lung axis) üzerinden sarkoidoz gelişimini tetikleyen pro-inflamatuar sitokinler nelerdir?",
+      "back": "IL-6, IL-12, IL-18 ve TNF-$\\alpha$.",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-15",
+      "front": "Sarkoidoz gelişimine genetik yatkınlıkta rol oynayan temel HLA bölgesi alleli hangisidir?",
+      "back": "HLA-DRB1.",
+      "tag": "Genetik / HLA"
+    },
+    {
+      "id": "card-16",
+      "front": "Sarkoidozda granülom süresini artırabileceği düşünülen non-HLA gen varyantları hangileridir?",
+      "back": "ANXA11 ve XAF1.",
+      "tag": "Genetik / HLA"
+    },
+    {
+      "id": "card-17",
+      "front": "Afro-Amerikalılarda progresif fibrotik sarkoidoz ile güçlü ilişkisi saptanan uzun kodlamayan RNA (long-coding RNA) lokusu hangisidir?",
+      "back": "PVT1 haplotipi.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-18",
+      "front": "Deneysel sarkoidoz tedavisinde kullanılan 'CLEAR' rejimi hangi ilaçların kombinasyonundan oluşur?",
+      "back": "Levofloksasin, etambutol, azitromisin ve rifampin.",
+      "tag": "Tedavi"
+    },
+    {
+      "id": "card-19",
+      "front": "Kutanöz sarkoidoz remisyonunu indüklemek için kullanılan düşük doz antibiyotikler hangileridir?",
+      "back": "Minosiklin veya doksisiklin.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-20",
+      "front": "Sarkoidoz tanısında oküler ve non-oküler ayrımı için meta-analizlerde önerilen serum biyomarkeri nedir?",
+      "back": "Serum çözünür interlökin-2 reseptörü (sIL-2R).",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-21",
+      "front": "Sarkoidoz aktivitesini ve klinik seyri öngörmede anjiyotensin dönüştürücü enzim (ACE) ile kombine edilen enzim nedir?",
+      "back": "Kitotriosidaz.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-22",
+      "front": "Bağ dokusu hastalığı ilişkili interstisyel akciğer hastalığı (CTD-ILD) taramasında ERS-EULAR tarafından HRCT yerine önerilmeyen yöntem nedir?",
+      "back": "Akciğer ultrasonu (LUS) veya PFT (FVC/DLCO).",
+      "tag": "Radyoloji / Scadding"
+    },
+    {
+      "id": "card-23",
+      "front": "İdiyopatik inflamatuar miyopati ilişkili ILD'de şiddet ve prognozu değerlendirmede kullanılan fonksiyonel test nedir?",
+      "back": "6 dakika yürüme testi (6MWT).",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-24",
+      "front": "Sarkoidoz hastalarında yorgunluğu değerlendirmek için valide edilmiş, 10-50 arası puanlanan ölçek hangisidir?",
+      "back": "Fatigue Assessment Scale (FAS).",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-25",
+      "front": "King's Sarcoidosis Questionnaire (KSQ) akciğer skoru için klinik olarak anlamlı minimum fark (MCID) değeri kaçtır?",
+      "back": "4 puan.",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-26",
+      "front": "Sarkoidozda akciğer biyopsisi ile Th1 tipi antijen yanıtında aşırı eksprese edilen sitokinler hangileridir?",
+      "back": "IL-7 ve IL-15.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-27",
+      "front": "Sarkoidoz-lenfoma sendromunda zamansal ilişki nasıldır?",
+      "back": "Sarkoidoz lenfomadan önce gelişir.",
+      "tag": "Komplikasyon"
+    },
+    {
+      "id": "card-28",
+      "front": "Anti-TNF ilaç kullanımına bağlı gelişen sarkoidoz benzeri reaksiyonlarda en sık raporlanan biyolojik ajanlar hangileridir?",
+      "back": "Adalimumab ve infliximab.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-29",
+      "front": "Sarkoidozda spirometri ile obstrüksiyon tanısı hangi parametrenin düşüklüğü ile konur?",
+      "back": "FEV_1/FVC oranı.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-30",
+      "front": "2022 ERS/ATS kılavuzlarına göre ventilatuar bozukluk şiddetini derecelendirmede tercih edilen metodoloji nedir?",
+      "back": "Z-skoru.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-31",
+      "front": "Sarkoidoz tanısında mediastinal lenfadenopatiyi değerlendirmede EBUS-TBNA'ya tamamlayıcı olarak önerilen endoskopik yöntem nedir?",
+      "back": "EUS-B (Özofageal ultrason eşliğinde ince iğne aspirasyonu).",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-32",
+      "front": "Sarkoidoz granülomlarında monoklonal antikorlar ile vakaların $\\%63$'ünde gösterilen patojen nedir?",
+      "back": "Propionibacterium (Cutibacterium) acnes.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-33",
+      "front": "Sarkoidozda gut mikrobiyotasında bolluğu artan ve hem sentezi ile ilişkili olan tür hangisidir?",
+      "back": "Cereibacter sphaeroides.",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-34",
+      "front": "Sarkoidoz hastalarında kemik mineral dansitesi (BMD) ölçümü hangi erkek hasta grubuna rutin önerilmez?",
+      "back": "50 yaş altı risk faktörü olmayan erkekler.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-35",
+      "front": "Sarkoidozda hangi akciğer grafisi evresinde remisyon şansı en düşüktür?",
+      "back": "Evre IV (Fibrozis evresi).",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-36",
+      "front": "Bronkoalveoler lavaj (BAL) sıvısında CD4+/CD8+ oranının artışı hangi hastalık lehinedir?",
+      "back": "Sarkoidoz.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-37",
+      "front": "Sarkoidoz ilişkili hiperkalsemi veya böbrek disfonksiyonunda tercih edilen tedavi yaklaşımı nedir?",
+      "back": "Oral glukokortikoidler $\\pm$ steroid koruyucu ajanlar.",
+      "tag": "Kalsiyum / Böbrek"
+    },
+    {
+      "id": "card-38",
+      "front": "Sarkoidozda 'organ tehdit edici hastalık' tanımı içine giren üç majör ekstrapulmoner tutulum hangisidir?",
+      "back": "Kardiyak, nörolojik ve oküler tutulum.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-39",
+      "front": "Sarkoidoz hastalarında obesitenin (BMI $\\ge 30$) risk üzerindeki etkisi nedir?",
+      "back": "Sarkoidoz riskini yaklaşık 2.5 kat artırır.",
+      "tag": "Epidemiyoloji"
+    },
+    {
+      "id": "card-40",
+      "front": "World Trade Center (WTC) döküntü yığını üzerinde çalışmakla ilişkili olan akciğer hastalığı hangisidir?",
+      "back": "Sarkoidoz.",
+      "tag": "Epidemiyoloji"
+    },
+    {
+      "id": "card-41",
+      "front": "Sarkoidozda akciğer fonksiyon kaybı takibinde hangi parametre yıllık olarak izlenmelidir?",
+      "back": "FVC ve DLCO.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-42",
+      "front": "Epworth Sleepiness Scale (ESS) ölçeğinde patolojik uykululuk sınırı kaçtır?",
+      "back": "10 puan üzeri.",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-43",
+      "front": "Sarkoidoz patogenezinde rol oynayan Th1 sitokin ağında yer alan transkripsiyon faktörü hangisidir?",
+      "back": "STAT1.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-44",
+      "front": "Sarkoidozda protein ekspresyonunu etkileyen ve şiddetli hastalıkla ilişkilendirilen mitokondriyal protein hangisidir?",
+      "back": "Mitokondriyal ribozomal protein L43.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-45",
+      "front": "Pulmoner sarkoidozda interstisyel akciğer hastalığı (ILD) ile karşılaştırıldığında daha bol bulunan mikroorganizma cinsleri nelerdir?",
+      "back": "Cutibacterium ve Neisseria.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-46",
+      "front": "Sarkoidozda miçetom ile komplike olan vakaların yarısından fazlasında görülen yaşamı tehdit eden semptom nedir?",
+      "back": "Hemoptizi.",
+      "tag": "Komplikasyon"
+    },
+    {
+      "id": "card-47",
+      "front": "Löfgren sendromu olan bir hastada tedavi yaklaşımı genellikle nasıldır?",
+      "back": "İmmünomodülatör tedavi olmaksızın sadece gözlem (veya NSAİİ).",
+      "tag": "Klinik Sendromlar"
+    },
+    {
+      "id": "card-48",
+      "front": "Kardiyak sarkoidozda ani ölümü önlemek için kullanılan primer önleme cihazı hangisidir?",
+      "back": "İmplantabl kardiyoverter-defibrilatör (ICD).",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-49",
+      "front": "Sarkoidozda gut mikrobiyotası fonksiyonel yollarında hangi metabolitlerin azaldığı saptanmıştır?",
+      "back": "Kısa zincirli yağ asitleri (SCFA).",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-50",
+      "front": "Sarkoidoz hastalarında kullanılan Small Fiber Neuropathy Screening List (SFNSL) hangi semptom grubuna odaklanır?",
+      "back": "Ağrı ve duyusal semptomlar.",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-51",
+      "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV_1 \\% predicted değeri kaç olmalıdır?",
+      "back": "$\\le \\%50$.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-52",
+      "front": "Sarkoidozda tipik olarak görülmeyen ancak ileri evre fibroziste gelişebilen obstrüktif bulgu nedir?",
+      "back": "Wheezing ve hava hapsi (hyperinflation).",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-53",
+      "front": "Sarkoidozda radyografik Evre II hastalığın tanımı nedir?",
+      "back": "Bilateral hiler lenfadenopati ile birlikte akciğer parankimal infiltrasyonu.",
+      "tag": "Radyoloji / Scadding"
+    },
+    {
+      "id": "card-54",
+      "front": "Kardiyak sarkoidozda kesin veya olası tanısı olan, semptomatik ve aktif inflamasyonu olan hastalarda önerilen tedavi (Grade 2C) nedir?",
+      "back": "İmmünosüpresif tedavi.",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-55",
+      "front": "Sarkoidozda bağırsak geçirgenliğinin (intestinal permeability) artması hangi sonuca yol açar?",
+      "back": "Sistemik dolaşıma mikrobiyal ürünlerin girmesi ve granülom oluşumunun tetiklenmesi.",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-56",
+      "front": "Sarkoidoz patogenezinde akciğer remodeling (yeniden yapılanma) sürecinde rol aldığı düşünülen proteazlar hangileridir?",
+      "back": "MMP-12 ve ADAMDEC1.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-57",
+      "front": "Sarkoidozda saptanan serum KL-6 (Krebs von den Lungen-6) seviyesi neyi yansıtır?",
+      "back": "İnterstisyel akciğer hastalığının şiddetini ve prognozunu.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-58",
+      "front": "Sarkoidozda düşük düzeydeki hangi peptitler pulmoner disbiyoza ve patojenik tetiklemeye neden olabilir?",
+      "back": "Antimikrobiyal peptitler (AMPs).",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-59",
+      "front": "Kardiyak sarkoidozda tanısal doğruluğu en yüksek olan ileri görüntüleme yöntemleri nelerdir?",
+      "back": "Kardiyak CMR (skar için) ve FDG-PET (inflamasyon için).",
+      "tag": "Kardiyak Sarkoidoz"
+    },
+    {
+      "id": "card-60",
+      "front": "Sarkoidozda mikrobiyota dengesini sağlamak için önerilen ancak hala deneysel olan tedavi yaklaşımları nelerdir?",
+      "back": "Probiyotik desteği, diyet değişiklikleri ve fekal mikrobiyota transplantasyonu.",
+      "tag": "Mikrobiyota"
+    },
+    {
+      "id": "card-61",
+      "front": "Sarkoidozda akciğer fonksiyon takibinde kullanılan 6MWT'de hangi parametre respiratuar kötüleşmeyi öngörür?",
+      "back": "Düşük yürüme mesafesi ($6MWD$) ve $SpO_2$ desatürasyonu.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-62",
+      "front": "Sarkoidoz tanısı için biyopsi örneğinde görülen karakteristik histolojik yapı nedir?",
+      "back": "Kazeifiye olmayan (noncaseating) granülomlar.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-63",
+      "front": "Sarkoidozda deri tutulumunu değerlendirmek için kullanılan spesifik PROM modülü hangisidir?",
+      "back": "KSQ Skin (Deri) modülü.",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-64",
+      "front": "Sarkoidozda hiler lenfadenopatiyi lenfomadan ayırt etmede BT radyomik analizinin yeri nedir?",
+      "back": "Mediastinal lenf nodlarının diferansiyel tanısında kullanılabilir.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-65",
+      "front": "Sarkoidoz patogenezinde mikrobiyal antijenlerin Th17 yanıtını tetiklemesi hangi sürece katkıda bulunur?",
+      "back": "Granülom formasyonu ve kronik inflamasyon.",
+      "tag": "Patogenez / İmmünoloji"
+    },
+    {
+      "id": "card-66",
+      "front": "Sarkoidozda kemik tutulumu için en duyarlı görüntüleme yöntemi hangisidir?",
+      "back": "FDG-PET/CT.",
+      "tag": "Genel"
+    },
+    {
+      "id": "card-67",
+      "front": "Sarkoidozda spirometri sonucu 'mümkün kısıtlama' (possible restriction) olarak değerlendirilmesi için hangi bulgu gereklidir?",
+      "back": "Normal FEV_1/FVC oranı ile birlikte düşük FVC.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-68",
+      "front": "Sarkoidoz hastalarında uykululuk değerlendirmesinde kullanılan tek maddelik ölçekler hangileridir?",
+      "back": "Karolinska Sleepiness Scale (KSS) ve Stanford Sleepiness Scale (SSS).",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-69",
+      "front": "Sarkoidozda serum anjiyotensin dönüştürücü enzim (ACE) düzeyinin tanısal değeri nedir?",
+      "back": "Sınırlı duyarlılık ve özgüllüğe sahiptir, esas olarak tedavi yanıtı takibinde kullanılır.",
+      "tag": "Tanı / Biyobelirteç"
+    },
+    {
+      "id": "card-70",
+      "front": "Sarkoidozda kullanılan Leicester Cough Questionnaire (LCQ) hangi semptomun yaşam kalitesi üzerindeki etkisini ölçer?",
+      "back": "Kronik öksürük.",
+      "tag": "Yaşam Kalitesi / PROM"
+    },
+    {
+      "id": "card-71",
+      "front": "Sarkoidoz gelişiminde rol oynayan HLA dışı genlerden SLC11A1 hangi tür enfeksiyonlara yatkınlıkla ilişkilidir?",
+      "back": "Mycobacterium türleri.",
+      "tag": "Genetik / HLA"
+    },
+    {
+      "id": "card-72",
+      "front": "Sarkoidozda akciğer fonksiyonel şiddetini belirlemede FEV_1 z-skoru için 'orta derece' (moderate) sınırları nedir?",
+      "back": "$-2.5$ ile $-4.0$ arası.",
+      "tag": "Solunum Fonksiyonu"
+    },
+    {
+      "id": "card-73",
+      "front": "Sarkoidozda parankimal infiltrasyon olmaksızın sadece bilateral hiler lenfadenopati varlığı hangi radyolojik evredir?",
+      "back": "Evre I.",
+      "tag": "Radyoloji / Scadding"
+    },
+    {
+      "id": "card-74",
+      "front": "Sarkoidozda tubülointerstisyel nefrit şüphesi olan bir hastada idrar sedimenti bulgusu nasıldır?",
+      "back": "Bland (temiz) idrar sedimenti veya steril piyüri.",
+      "tag": "Kalsiyum / Böbrek"
+    },
+    {
+      "id": "card-75",
+      "front": "Kardiyak sarkoidozda skar varlığını gösteren en önemli CMR bulgusu nedir?",
+      "back": "Geç gadolinyum tutulumu (LGE).",
+      "tag": "Kardiyak Sarkoidoz"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "id": "sarkoidoz",
+    "branch": "gogus-hastaliklari",
+    "baslik": "Sarkoidoz",
+    "altbaslik": "Multisistemik granülomatöz hastalık — patogenez, sendromlar, tanı biyobelirteçleri ve güncel tedavi paradigması",
+    "rozetler": ["SINAV SPOTU", "YENİ"],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": true,
+    "vaka": true,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 7,
+    "flashcard": 75,
+    "inci": 0,
+    "vaka": 1
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Patogenez",
+      "satirlar": [
+        {
+          "metin": "Sarkoidoz; etiyolojisi tam aydınlatılamamış, genetik yatkınlığı olan bireylerde çevresel/enfeksiyöz antijenlere karşı gelişen abartılı T hücre ve makrofaj yanıtı sonucunda ortaya çıkan multisistemik, kazeifiye olmayan granülomatöz bir hastalıktır."
+        },
+        {
+          "metin": "Dendritik hücreler ve makrofajlar antijeni HLA Sınıf II molekülleri aracılığıyla naif CD4+ T lenfositlerine sunar. Ortamda **Th1 ve Th17.1 hücre polarizasyonu** hakimdir. Güncel çalışmalarda **mTORC1** ve **JAK-STAT** yolağının granülom gelişiminde ve makrofaj aktivasyonunda aşırı etkinleştiği gösterilmiştir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Genetik Yatkınlık — HLA Spotları",
+      "kolonlar": ["HLA Alleli", "İlişki", "Klinik Önemi"],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": ["HLA-DRB1*1101", "Majör risk alleli", "Genel sarkoidoz riski — en güçlü genetik belirteç"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["HLA-DRB1*0301 + DQB1*0201", "Löfgren sendromu", "Akut başlangıç + spontan remisyon şansı çok yüksek"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["HLA-DRB1*15 (yokluğu)", "Kötü prognoz", "Löfgren'de kronik artrit, nüks ve persistan seyir göstergesi"]
+        },
+        {
+          "hucreler": ["Antijenik Hedefler", "mKatG, Vimentin, NDPD peptid", "mKatG: mikobakteriyel; NDPD: A. nidulans kökenli, Löfgren'de CD4+ T hücrelerini uyarır"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Histopatoloji — Granülom Mimarisi",
+      "satirlar": [
+        {
+          "metin": "**Granülom yapısı:** Merkezde epiteloid hücreler, multinükleer dev hücreler ve CD4+ T lenfositleri; periferde fibroblastlar, B lenfositler ve CD8+ T lenfositleri. Tüberkülozdan farkı: **kazeifikasyon nekrozu yoktur.** Çevresindeki lenfositik infiltrasyon seyrek olduğu için patolojide **'çıplak granülom' (naked granuloma)** olarak adlandırılır."
+        },
+        {
+          "metin": "**Dev hücre içi inklüzyonlar** (tanıyı güçlü destekler, sarkoidoza spesifik değildir): Asteroid cisimcikler (yıldız şekilli lipid kompleksleri), Schaumann cisimcikleri (laminasyon gösteren kalsiyum oksalat/protein yapıları) ve birefrenjan kristaller."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Scadding Radyolojik Evrelemesi",
+      "kolonlar": ["Evre", "Radyolojik Bulgular", "Spontan Remisyon"],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["Evre I", "Sadece bilateral hiler lenfadenopati (BHL)", "%60–80 — en iyi prognoz"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["Evre II", "BHL + parankimal retikülonodüler opasiteler", "%50–60"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["Evre III", "Parankimal infiltrasyon, BHL yok", "<%30"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["Evre IV", "Geri dönüşümsüz fibrozis — bal peteği, traksiyon bronşiektazisi, hacim kaybı", "Yok — irreversibl"]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "HRCT Bulguları: Nodüller tipik olarak **perilenfatik dağılım** gösterir (bronkovasküler demetler, plevra ve interlober septalar boyunca). Birleşen mikronodüllerin oluşturduğu büyük kitlesel görünüme **'Galaksi bulgusu' (Galaxy sign)** adı verilir. Scadding evrelemesi fonksiyonel defisiti değil anatomik dağılımı yansıtır; evreler arası ardışık ilerleme şart değildir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ekstrapulmoner Tutulumlar ve Spesifik Sendromlar",
+      "satirlar": [
+        {
+          "metin": "**Löfgren Sendromu:** Ateş + bilateral hiler lenfadenopati + eritema nodozum (EN) + ayak bileği artriti. Kadınlarda EN baskın, erkeklerde EN olmaksızın periartiküler ayak bileği artriti daha sık. Prognoz çok iyi. **EN lezyonundan biyopsi alınmaz** — granülom içermez, septal panikülit tablosudur."
+        },
+        {
+          "metin": "**Heerfordt Sendromu (Üveoparotid Ateş):** Uveit + bilateral parotis büyümesi + fasyal sinir paralizisi (CN VII) + ateş. Sarkoidoz için oldukça spesifik bir prezantasyondur."
+        },
+        {
+          "metin": "**Lupus Pernio:** Burun, yanak ve kulaklarda mor/kırmızı renkli, kronik ve destrüktif endüre plaklar. Üst solunum yolu tutulumu ve kronik akciğer hastalığıyla yüksek birliktelik gösterir."
+        },
+        {
+          "metin": "**Kardiyak Tutulum:** Klinik %5, otopside %20–70. AV tam blok, ventriküler taşikardi, kalp yetmezliği. Tanıda altın standart: **Kardiyak MR** (T2 ödem + Geç Gadolinyum Tutulumu — LGE) + **FDG-PET.**"
+        },
+        {
+          "metin": "**Oküler Tutulum:** En sık anterior üveit. Slit lamba: **'Mutton-fat' keratik presipitatlar** + Koeppe/Busacca iris nodülleri."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Sınav Spotu — Kalsiyum Mekanizması: Granülomdaki makrofajlar **otonom 1-alfa-hidroksilaz** aktivitesiyle 25-OH D vitaminini aktif forma (1,25-(OH)₂ D — Kalsitriol) aşırı dönüştürür. Karakteristik profil: **PTH↓, 25-OH D↓, 1,25-(OH)₂ D↑, Hiperkalsiüri (%40)** ve hiperkalsemi (%2–20). Nefrokalsinozis ve kronik böbrek yetmezliği yapabilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanısal Yaklaşım ve Biyobelirteçler",
+      "kolonlar": ["Araç", "Bulgu / Eşik", "Yorum"],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": ["BAL CD4/CD8 oranı", ">3.5 — spesifite %93–96", "Sarkoidoza güçlü tanısal destek (HP <2.0, TB <1.0)"]
+        },
+        {
+          "hucreler": ["Serum ACE", "Yüksek", "Duyarlılık ve özgüllük düşük; tek başına tanı değeri sınırlı"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["Serum sIL-2R", "Kantitatif T hücre aktivasyonunu gösterir", "ACE'den çok daha duyarlı; hastalık aktivitesi ve nüks öngörüsünde üstün"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["Chitotriosidase (CHIT1)", "Makrofaj aktivasyon belirteci", "Hastalık yükünü yansıtır; ACE'den üstün; fibrotik süreçte prognostik marker"]
+        },
+        {
+          "hucreler": ["24 saatlik idrar kalsiyumu", "Yüksek", "Sarkoidozu IPF/cHP'den ayırt etmede yüksek spesifite"]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Biyopsi gerektirmeyen durumlar: Klasik **Löfgren sendromu**, **Heerfordt sendromu** ve **klasik lupus pernio** vakalarında veya asemptomatik evre I BHL varlığında doku biyopsisi olmadan tanı konulabilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Basamakları",
+      "kolonlar": ["Basamak", "Ajan", "Sınav Spotu"],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": ["1. Basamak", "Kortikosteroidler (Prednisolon)", "SARCORT çalışması: 20 mg/gün başlangıç dozu, 40 mg'a kıyasla non-inferior + daha az yan etki"]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": ["1. Basamak Alternatifi / Steroid Tasarruf", "Metotreksat (10–15 mg/hafta oral)", "PREDMETH çalışması: ilk basamakta MTX, glukokortikoidler kadar etkili ve güvenilir"]
+        },
+        {
+          "hucreler": ["2. Basamak", "Azatiyoprin, Leflunomid, Mikofenolat Mofetil (MMF)", "MTX kullanılamayan veya dirençli vakalarda tercih"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["3. Basamak (Anti-TNF)", "İnfliksimab (tercih), Adalimumab", "Refrakter lupus pernio, ağır nörolojik/kardiyak tutulum; kanıt düzeyi en yüksek ajan infliksimab"]
+        },
+        {
+          "renk": "sari",
+          "hucreler": ["3. Basamak — TUZAK ★", "Etanercept — ETKİSİZ", "Sarkoidozda akciğer ve oküler tutulumda etkinlik gösterilemedi. Tedavide YERİ YOK."]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Yeni Nesil Tedaviler: JAK inhibitörleri (Tofacitinib, Ruxolitinib) cilt ve pulmoner formlar için umut vadetmektedir. mTOR inhibitörleri (Sirolimus) makrofaj sinyal yolağını hedeflemektedir. **Namilumab (anti-GM-CSF)** ve **Sarilumab (IL-6 inhibitörü)** faz 2 çalışmalarında birincil son noktaya ulaşamadı — başarısız."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Sarkoidoz 5 Altın Spot: (1) Löfgren EN'den biyopsi alma — septal panikülit, granülom içermez. (2) HLA-DRB1*15 yokluğu = Löfgren'de kötü prognoz. (3) sT4↓ + TSH hafif↑ değil, bu AML — burada: sIL-2R > ACE tanıda. (4) Hiperkalsemide PTH↓ + 1,25(OH)₂D↑ = otonom makrofaj 1-alfa-hidroksilaz. (5) Anti-TNF lazımsa infliksimab — etanercept sarkoidozda ETKİSİZ."
+    }
+  ]
+}

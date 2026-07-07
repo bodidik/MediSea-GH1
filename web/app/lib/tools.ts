@@ -65,3 +65,14 @@ export function getBranchTools(slug: string): ToolRef[] {
   const slugs = BRANCH_TOOLS[slug] || [];
   return slugs.map((s) => TOOLS[s]).filter(Boolean);
 }
+
+/**
+ * TERS EŞLEME: bir hesaplayıcının ilişkili olduğu branş slug'larını döner.
+ * Araç sayfalarındaki üst navigasyon çubuğunda ("Branş Sayfası" linki) kullanılır.
+ * Bir araç birden fazla branşta geçebilir (ör. düzeltilmiş kalsiyum: nefroloji + endokrinoloji).
+ */
+export function getToolBranchSlugs(toolSlug: string): string[] {
+  return Object.entries(BRANCH_TOOLS)
+    .filter(([, tools]) => tools.includes(toolSlug))
+    .map(([branchSlug]) => branchSlug);
+}

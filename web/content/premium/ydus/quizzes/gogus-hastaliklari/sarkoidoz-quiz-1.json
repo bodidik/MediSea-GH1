@@ -1,0 +1,217 @@
+{
+  "id": "quiz-gogus-sarkoidoz-001",
+  "baslik": "Sarkoidoz — Soru Seti 1",
+  "branch": "gogus-hastaliklari",
+  "topic": "sarkoidoz",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Otuz iki yaşında bir kadın hasta, ani başlayan ateş, her iki ayak bileğinde şişlik ve ağrı ile her iki bacakta kızarık, hassas, kabarık deri lezyonları nedeniyle başvuruyor. Akciğer grafisinde bilateral hiler lenfadenopati (BHL) saptanıyor; parankimde infiltrasyon yok. HLA tiplemesinde HLA-DRB1*0301 ve DQB1*0201 pozitif, HLA-DRB1*15 negatif bulunuyor.\n\nBu hastanın prognozunu ve biyopsi kararını en doğru şekilde açıklayan ifade hangisidir?",
+      "secenekler": {
+        "A": "HLA-DRB1*0301 pozitifliği kötü prognozla ilişkilidir; tanıyı doğrulamak için bacak lezyonlarından hemen biyopsi alınmalıdır.",
+        "B": "Bu tablo klasik Löfgren sendromudur; HLA-DRB1*15 negatifliği hastalığın kronik artrite ilerleyebileceğine işaret eder. Deri lezyonundan biyopsi zorunlu değildir.",
+        "C": "HLA-DRB1*0301 pozitifliği spontan remisyonla güçlü ilişkilidir ve HLA-DRB1*15 negatifliğinin ek olumsuz etkisi yoktur; hasta tamamen iyi prognozludur.",
+        "D": "Löfgren sendromunun tanısı için bacaktaki eritema nodozum lezyonundan biyopsi alınmalı, kazeifiye olmayan granülom gösterilmelidir.",
+        "E": "BHL varlığında lenfoma dışlanamayacağından tanısal amaçlı mediastinoskopi planlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Löfgren sendromu (ateş + BHL + EN + ayak bileği artriti) = klinik tanı, biyopsi gerekmez. HLA-DRB1*0301 iyi prognozla ilişkili olmakla birlikte HLA-DRB1*15 yokluğu bu hastada kronik artrit ve nüks riskini artırır. EN lezyonu septal panikülit olduğundan granülom içermez, biyopsi gereksiz ve yanıltıcıdır.",
+      "aciklama_detay": "HLA-DRB1*0301 ve DQB1*0201 allelleri Löfgren sendromunun akut başlangıçlı formunun genetik belirtecidir ve spontan remisyonla güçlü ilişkilidir. Ancak aynı hastada HLA-DRB1*15'in bulunmaması, hastalığın kronik artrit ve nükse ilerlemesi için ayrı bir kötü prognostik faktördür. Bu çift genetik bilginin birleşimi sınav sorusunda sık kullanılır. Löfgren sendromu (klasik üçlü: BHL + EN + ayak bileği artriti + ateş) klinik olarak tanı konulabilir, biyopsi zorunlu değildir. Eritema nodozum lezyonunun histolojik alt yapısı septal panikülit olup granülom içermediğinden biyopsi alınması hem tanısal kazanç sağlamaz hem de gereksiz müdahale olur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — HLA-DRB1*0301, kötü değil iyi prognozla ilişkilidir. Ayrıca deri lezyonu septal panikülit (EN) olup granülom içermez; buradan biyopsi almak tanısal değer taşımaz.",
+        "B": "DOĞRU — Klasik Löfgren sendromu klinik tanı alır, biyopsi gerekmez. HLA-DRB1*0301 iyi prognozu desteklese de HLA-DRB1*15 yokluğu kronik seyir riskini artırır — bu ikili bilgi sınavın temel sorguladığı noktadır.",
+        "C": "YANLIŞ — HLA-DRB1*15 yokluğu, Löfgren hastasında nüks ve kronik artrit için bağımsız kötü prognostik işarettir. Sadece HLA-DRB1*0301 pozitifliğine bakarak tam iyi prognoz demek eksik ve hatalıdır.",
+        "D": "YANLIŞ — Eritema nodozum lezyonunun biyopsisi Löfgren sendromunun tanısında zorunlu değildir. EN kazeifiye olmayan granülom içermez; biyopsi gereksizdir.",
+        "E": "YANLIŞ — Asemptomatik veya klasik Löfgren sendromlu BHL vakalarında lenfoma dışlanması için mediastinoskopi gerekmez. Yalnızca atipik prezantasyonlarda (tek taraflı adenopati, sistemik B semptomu, atipik yaş) invazif tanı düşünülür."
+      },
+      "etiketler": [
+        "Löfgren Sendromu",
+        "HLA-DRB1*0301",
+        "HLA-DRB1*15",
+        "Eritema Nodozum",
+        "Biyopsi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Grunewald et al. Nat Rev Dis Primers 2019; Spagnolo et al. Lancet 2018"
+    },
+    {
+      "id": "s2",
+      "metin": "Elli dört yaşında erkek hasta, 6 aydır devam eden öksürük, nefes darlığı ve yorgunluk nedeniyle başvuruyor. Toraks HRCT'de bilateral üst lob ağırlıklı perilenfatik mikronodüller ve mediastinal lenfadenopati izleniyor. Bronkoskopi ile bronkoalveolar lavaj (BAL) yapılıyor.\n\nBAL sonucunda aşağıdaki hangi bulgu sarkoidoz tanısını en güçlü destekler?",
+      "secenekler": {
+        "A": "BAL'da nötrofil hakimiyeti (%25) ve CD4/CD8 oranı 1.2",
+        "B": "BAL'da lenfositoz (%42) ve CD4/CD8 oranı 4.8",
+        "C": "BAL'da eozinofili (%18) ve CD4/CD8 oranı 0.8",
+        "D": "BAL'da makrofaj hakimiyeti (%85) ve CD4/CD8 oranı 1.9",
+        "E": "BAL'da lenfositoz (%38) ve CD4/CD8 oranı 0.6"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sarkoidozda BAL karakteristik bulgusu lenfositik alveolittir. CD4/CD8 oranı >3.5 olması %93–96 spesifiteyle sarkoidozu destekler. CD4/CD8 <1 → TB veya HP'yi düşündürür.",
+      "aciklama_detay": "Sarkoidozda BAL, Th1 polarizasyonu ve CD4+ T hücre infiltrasyonu nedeniyle karakteristik lenfositik alveolit + CD4/CD8 oranı >3.5 gösterir (spesifite %93–96). Bu oran hem tanıyı güçlü destekler hem de ayırıcı tanıda değerlidir: Hipersensitivite pnömonisinde CD4/CD8 <2.0 (lenfositik ama düşük oran), tüberkülozda <1.0, normal BAL'da 1.5–3.5 arasındadır. Nötrofil hakimiyeti akut bakteri pnömonisini veya aktif fibrozisi, eozinofili akut eozinofil pnömonisi veya mantar enfeksiyonunu, düşük CD4/CD8 ise TB/HP'yi düşündürür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Nötrofil hakimiyeti sarkoidoz için tipik değildir; akut bakteriyel süreç veya fibrotik akciğer hastalığını akla getirir. CD4/CD8 1.2 normal sınırlarda kalır.",
+        "B": "DOĞRU — Lenfositik alveolit + CD4/CD8 4.8 (>3.5 eşiği) sarkoidozu %93–96 spesifiteyle destekler. HRCT'deki perilenfatik dağılım ve mediastinal lenfadenopatiyle birlikte değerlendirildiğinde tanı güçlü şekilde desteklenmektedir.",
+        "C": "YANLIŞ — Eozinofil hakimiyeti ve düşük CD4/CD8 sarkoidozu düşündürmez. Eozinofil pnömonisi, alerjik alveolit veya parazitik enfeksiyonlar akla gelmelidir.",
+        "D": "YANLIŞ — Makrofaj hakimiyeti ve CD4/CD8 1.9 sarkoidoz için spesifik değildir. Bu bulgu normal BAL paterni veya kronik sigara kullanımıyla uyumludur.",
+        "E": "YANLIŞ — Lenfositoz bulunsa da CD4/CD8 0.6 (<1.0) tüberküloz veya viral pnömoniyi düşündürür. Sarkoidozda CD4/CD8 düşüklüğü beklenmez."
+      },
+      "etiketler": [
+        "BAL",
+        "CD4/CD8 Oranı",
+        "Lenfositik Alveolit",
+        "Sarkoidoz Tanısı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Drent et al. Eur Respir J 2012; Koth & Solberg, Clin Chest Med 2015"
+    },
+    {
+      "id": "s3",
+      "metin": "Kırk sekiz yaşında kadın hasta, bilinen pulmoner sarkoidoz nedeniyle takip edilmektedir. Kontrolünde serum kalsiyumu 11.4 mg/dL (hafif hiperkalsemi), PTH 8 pg/mL (düşük), 25-OH Vitamin D 14 ng/mL (düşük), 1,25-(OH)₂ Vitamin D 78 pg/mL (yüksek) bulunuyor.\n\nBu hastalarda hiperkalsemi ve hiperkalsüri gelişiminin doğru mekanizması hangisidir?",
+      "secenekler": {
+        "A": "Sarkoidozda kemik metastazlarına bağlı osteoklast aktivasyonu artarak kalsiyum serbestleşmesi olur; PTH geri bildirim mekanizmasıyla baskılanır.",
+        "B": "Sarkoid granülomlarındaki makrofajlar PTH bağımsız otonom 1-alfa-hidroksilaz aktivitesiyle 25-OH D vitaminini aktif kalsitriol (1,25-(OH)₂ D) formuna aşırı dönüştürür; bu kalsiyum absorbsiyonunu artırır.",
+        "C": "Sarkoidozda renal tubüler asidoz gelişerek kalsiyum atılımı azalır ve birikim hiperkalsemiye neden olur.",
+        "D": "Granülomlardan salınan IL-6, karaciğerde CYP27B1 enzimini indükler ve bu enzim sistematik olarak vitamin D aktivasyonunu hızlandırır.",
+        "E": "Sarkoidozda artmış PTH benzeri protein (PTHrP) salgısı kalsiyum reabsorbsiyonunu artırarak hiperkalsemiye yol açar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Granülomdaki makrofajlarda PTH'dan bağımsız otonom 1-alfa-hidroksilaz aktivitesi → 25-OH D → 1,25-(OH)₂ D (kalsitriol) aşırı dönüşümü → intestinal kalsiyum absorbsiyonu ↑. Karakteristik profil: PTH↓, 25-OH D↓, 1,25-(OH)₂ D↑.",
+      "aciklama_detay": "Normal fizyolojide 1-alfa-hidroksilaz enzimi böbrek proksimal tübüllerinde bulunur ve PTH tarafından regüle edilir. Sarkoidozda ise aktive granülom makrofajları bu enzimi otonom olarak eksprese eder; PTH'dan bağımsız biçimde 25-OH D vitaminini aktif kalsitriol (1,25-(OH)₂ D) formuna dönüştürür. Kalsitriol intestinal kalsiyum absorbsiyonunu artırır, hiperkalsiüri (olguların ~%40'ı) ve hiperkalsemiye (%2–20) yol açar. PTH yüksek kalsiyum tarafından negatif geri bildirimle baskılandığından düşük çıkar. 25-OH D'nin düşük olması ise bu ham maddenin hızlı tüketimine işaret eder. Bu elektrokimyasal tablo sınav klasiğidir: PTH↓ + 25-OH D↓ + 1,25-(OH)₂D↑ = sarkoidoz düşün.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Sarkoidozda kemik metastazı beklenmez; hastalık benign granülomatöz bir süreçtir. Osteoklast aktivasyonu sarkoidozda hiperkalseminin mekanizması değildir.",
+        "B": "DOĞRU — Makrofajlardaki otonom 1-alfa-hidroksilaz aktivasyonu sarkoidoz hiperkalsemisinin temel mekanizmasıdır. PTH baskılı, 25-OH D düşük, 1,25-(OH)₂ D yüksek bulgusu bu mekanizmanın laboratuvar yansımasıdır.",
+        "C": "YANLIŞ — Renal tübüler asidoz sarkoidoz hiperkalsemisinin mekanizması değildir. Tam tersine, hiperkalsemi ve hiperkalsiüri uzun vadede nefrokalsinozis ve kronik böbrek hasarına zemin hazırlar.",
+        "D": "YANLIŞ — CYP27B1 enzimi (25-hidroksilaz değil, 1-alfa-hidroksilaz) böbrekte bulunur ve PTH tarafından regüle edilir. Sarkoidozda bu enzimin granülom makrofajlarınca otonom ekspresyonu söz konusudur; IL-6 aracılı karaciğer aktivasyonu doğru mekanizma değildir.",
+        "E": "YANLIŞ — PTHrP (PTH-benzeri protein) malignitelere bağlı hiperkalseminin mekanizmasıdır (humoral hiperkalsemi of malignancy). Sarkoidoz benign bir hastalık olup PTHrP salgılamaz."
+      },
+      "etiketler": [
+        "Hiperkalsemi",
+        "1-alfa-hidroksilaz",
+        "Kalsitriol",
+        "Granülom Makrofaj",
+        "PTH Profili"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tebben et al. N Engl J Med 2016; Baughman et al. Am J Respir Crit Care Med 2020"
+    },
+    {
+      "id": "s4",
+      "metin": "Kırk üç yaşında erkek hasta, 3 yıldır pulmoner sarkoidoz tanısıyla takip edilmektedir. Prednisolon ve metotreksat kombinasyonuna yetersiz yanıt alınmış; hastalık aktif seyretmekte, solunum fonksiyonları kötüleşmektedir. Bunun üzerine anti-TNF tedavisi planlanmaktadır. Doktor, mevcut üç anti-TNF seçeneği (infliksimab, adalimumab, etanercept) arasında seçim yapmak durumundadır.\n\nBu hastada en uygun anti-TNF seçimi ve gerekçesi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Etanercept seçilmelidir; TNF-alfa'ya en yüksek bağlanma afinitesine sahip olduğundan granülom baskılanmasında en etkili ajandır.",
+        "B": "İnfliksimab seçilmelidir; sarkoidozda refrakter pulmoner ve oküler tutulumda klinik çalışmalarda kanıtlanmış etkinliği mevcuttur. Etanercept hem akciğer hem oküler formda etkinlik gösterememiştir.",
+        "C": "Adalimumab seçilmemelidir; sarkoidozda tümör nekroz faktörü inhibitörleri arasında yalnızca etanercept etkindir.",
+        "D": "Tüm anti-TNF ajanlar sarkoidozda eşit etkinlik göstermektedir; seçimde hasta tercihi ve uygulama kolaylığı belirleyici olmalıdır.",
+        "E": "Anti-TNF ajanlar sarkoidozda kontrendikedir; granülom içindeki TNF-alfa granülomun çözünmesini sağlar, bloke edilmesi hastalığı kötüleştirir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sarkoidozda 3. basamak anti-TNF tedavisinde kanıt düzeyi en yüksek ajan infliksimab'dır. Etanercept hem pulmoner hem oküler sarkoidozda etkinlik gösterememiş, tedavide yeri yoktur.",
+      "aciklama_detay": "Anti-TNF ajanlar arasında önemli bir farklılık vardır: İnfliksimab (kimerik monoklonal antikor) ve adalimumab (tam insan monoklonal antikoru) sarkoidozda refrakter vakalarda etkinlik göstermiştir. Buna karşın etanercept (soluble TNF reseptör füzyon proteini) sarkoidozda hem pulmoner hem de oküler tutulumda randomize kontrollü çalışmalarda etkinliği kanıtlanamamış ve bu ajana özgü bir başarısızlık gözlemlenmiştir. Bu durum patogenezdeki sitokin redundansı ve etanerceptin membrana bağlı TNF'yi bloke etmekte yetersiz kalmasıyla açıklanmaktadır. Kanıt düzeyi en yüksek ajan infliksimab'dır; bu ayrım sınavlarda 'tuzak' olarak sık sorulur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Etanercept sarkoidozda klinik çalışmalarda etkisiz bulunmuştur. 'Bağlanma afinitesi yüksek olduğundan etkilidir' ifadesi teorik olup klinik kanıtlarla çelişir. Etanercept sarkoidoz tedavisinde yer almaz.",
+        "B": "DOĞRU — İnfliksimab, sarkoidozda refrakter pulmoner tutulumda (BCCT gibi çalışmalar) ve oküler tutulumda kanıtlanmış en güçlü anti-TNF seçeneğidir. Etanerceptin akciğer ve göz tutulumunda etkinlik gösterememesi bu seçimi zorunlu kılar.",
+        "C": "YANLIŞ — Bu önerme tersine çevrilmiş bir hatadır. Sarkoidozda etkin olan infliksimab ve adalimumab'dır; etanercept etkisizdir. Adalimumab ikinci tercih olarak kullanılabilir.",
+        "D": "YANLIŞ — Anti-TNF ajanlar sarkoidozda eşit etkinlik göstermez. Etanerceptin açıkça etkisiz olduğu klinik çalışmalarla kanıtlanmıştır. Bu fark klinik ve sınav açısından kritiktir.",
+        "E": "YANLIŞ — Anti-TNF ajanlar sarkoidozda kontrendike değildir; tersine 3. basamak tedavinin temel taşıdır. TNF-alfa blokajı granülom baskılanmasında etkilidir. Ancak anti-TNF başlamadan önce aktif tüberküloz dışlanmalıdır."
+      },
+      "etiketler": [
+        "Anti-TNF",
+        "İnfliksimab",
+        "Etanercept",
+        "Refrakter Sarkoidoz",
+        "Biyolojik Tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Baughman et al. Chest 2006; Judson et al. Sarcoidosis Vasc Diffuse Lung Dis 2012"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz yedi yaşında kadın hasta, 2 yıldır semptomatik evre II pulmoner sarkoidoz tanısıyla izlenmektedir. Sistemik kortikosteroid tedavisi öneriliyor; ancak hasta, diyabetes mellitus ve osteoporoz öyküsü nedeniyle steroid yan etkilerinden kaygılanmaktadır. Doktor, başlangıç steroid dozunu düşük tutmayı ya da birinci basamak alternatif ajan kullanmayı değerlendirmektedir.\n\nBu hasta için aşağıdaki tedavi kararlarından hangisi güncel klinik çalışma verileriyle en iyi desteklenmektedir?",
+      "secenekler": {
+        "A": "Kortikosteroid başlangıç dozunun 20 mg/gün olması, 40 mg/güne kıyasla klinik etkinlik açısından inferiordur; steroid yan etkisinden kaçınmak için 40 mg ile başlanmalı ve hızla azaltılmalıdır.",
+        "B": "SARCORT çalışması, 20 mg/gün başlangıç prednisolonun 40 mg/güne klinik etkinlik açısından non-inferior olduğunu kanıtlamıştır; bu hastada daha düşük doz tercih edilebilir. Alternatif olarak PREDMETH çalışması, ilk basamakta oral metotreksatın kortikosteroidlerle benzer etkinlik gösterdiğini valide etmiştir.",
+        "C": "Bu hastada önce kortikosteroid 20 mg/gün başlanmalı, yeterli yanıt alınamazsa metotreksat eklenmelidir; metotreksat hiçbir zaman birinci basamakta tek başına kullanılamaz.",
+        "D": "Pulmoner sarkoidozda tüm semptomatik hastalar için başlangıç steroid dozu 1 mg/kg/gün (en az 40 mg) olmalıdır; düşük doz başlanması nüks riskini kanıtlı şekilde artırır.",
+        "E": "Bu hastada steroid yan etki riski nedeniyle kortikosteroidler hiç kullanılmamalı; direkt anti-TNF tedavisine geçilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SARCORT: 20 mg prednisolon başlangıç dozu 40 mg'a non-inferior + daha az yan etki. PREDMETH: ilk basamakta oral MTX kortikosteroidler kadar etkili. Her ikisi de bu hasta için geçerli seçenekler.",
+      "aciklama_detay": "İki önemli güncel çalışma sarkoidoz tedavi paradigmasını değiştirmiştir. SARCORT çalışması, semptomatik pulmoner sarkoidozda başlangıç prednisolon dozunun 20 mg/gün olmasının 40 mg/güne klinik etkinlik açısından non-inferior (eşdeğer) olduğunu göstermiş; aynı zamanda 20 mg grubunda daha az metabolik ve kemik yan etkisi saptanmıştır. PREDMETH çalışması ise ilk basamakta glukokortikoid yerine doğrudan oral metotreksat (10–15 mg/hafta) kullanımının kortikosteroidlerle karşılaştırılabilir klinik etkinliğe sahip olduğunu valide etmiştir. Bu hasta özelinde hem 20 mg steroid tercih etmek hem de birinci basamak alternatif olarak MTX seçmek güncel verilerce desteklenebilir. Steroid almadan direkt anti-TNF'ye geçmek kılavuzlarla uyuşmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — SARCORT çalışması tam tersi bir sonuç vermiştir: 20 mg başlangıç dozu 40 mg'a non-inferior bulunmuştur. Yan etkiden kaçınmak için yüksek dozla başlayıp hızla azaltmak gereksiz ve kötü tolere edilen bir stratejidir.",
+        "B": "DOĞRU — SARCORT ve PREDMETH çalışmalarının her ikisini de doğru aktaran tek seçenektir. Bu hastada 20 mg steroid veya birinci basamak MTX güncel kılavuz ve çalışma verileriyle tutarlıdır.",
+        "C": "YANLIŞ — PREDMETH çalışması, metotreksatın birinci basamakta tek başına, kortikosteroid olmadan da etkili olduğunu göstermiştir. MTX'in yalnızca ek ajan olarak kullanılabileceği eski bir yaklaşımdır.",
+        "D": "YANLIŞ — '1 mg/kg/gün' dozu pulmoner sarkoidoz için kılavuz standardı değildir ve SARCORT çalışmasıyla çelişmektedir. Düşük doz başlangıcının nüks riskini artırdığına dair kanıt bulunmamaktadır.",
+        "E": "YANLIŞ — Anti-TNF ajanlar, kortikosteroid ve en az iki ikinci basamak ajana yetersiz yanıt alınan refrakter vakalarda kullanılır. Kortikosteroidleri hiç denemeden anti-TNF'ye geçmek kılavuzlarla uyuşmaz."
+      },
+      "etiketler": [
+        "SARCORT",
+        "PREDMETH",
+        "Prednisolon Dozu",
+        "Metotreksat",
+        "Steroid Tasarruf"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Vorselaars et al. SARCORT NEJM 2013; Baughman et al. PREDMETH Am J Respir Crit Care Med 2021"
+    },
+    {
+      "id": "s6",
+      "metin": "Elli iki yaşında erkek hasta, iki yıldır bilinen pulmoner sarkoidoz tanısıyla izlenmektedir. Son kontrolünde böğür ağrısı ve hematüri nedeniyle yapılan görüntülemede bilateral renal taşlar saptanıyor. Metabolik tetkikler sonuçlandı:\n\nSerum kalsiyum: 11.6 mg/dL ↑\nPTH: 5 pg/mL ↓ (N: 15–65)\n25-OH Vitamin D: 11 ng/mL ↓ (N: 30–100)\n1,25-(OH)₂ Vitamin D: 94 pg/mL ↑ (N: 18–72)\n24 saatlik idrar kalsiyumu: 580 mg/gün ↑\n\nBu laboratuvar tablosunu en doğru açıklayan patofizyolojik mekanizma hangisidir?",
+      "secenekler": {
+        "A": "Primer hiperparatiroidizm: PTH aşırı salgısı renal 1-alfa-hidroksilazı uyarır, kalsitriol artar ve kalsiyum emilimi artarak hiperkalsemi gelişir.",
+        "B": "Granülom makrofajlarındaki otonom 1-alfa-hidroksilaz, PTH regülasyonundan bağımsız çalışarak 25-OH D'yi kalsitriole dönüştürür; artan kalsitriol bağırsakta kalsiyum emilimini artırır, yüksek kalsiyum PTH'ı negatif geri bildirimle baskılar.",
+        "C": "Eksojen D vitamini toksisitesi: Aşırı D vitamini takviyesi hem 25-OH D hem de 1,25-(OH)₂ D'yi artırır, PTH baskılanır.",
+        "D": "Sekonder hiperparatiroidizm: Kronik böbrek hastalığına bağlı fosfat tutulumu PTH'ı artırır, kemik rezorpsiyonu ile hiperkalsemi gelişir.",
+        "E": "Renal tübüler asidoz: Kalsiyum geri emilimi bozulur, kompansatuar PTH yükselmesi 1,25-(OH)₂ D üretimini artırır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sarkoidozda karakteristik profil: PTH↓ + 25-OH D↓ + 1,25-(OH)₂ D↑. Granülom makrofajlarındaki otonom 1-alfa-hidroksilaz PTH'dan bağımsız çalışır; 25-OH D hızla aktif forma dönüştürüldüğünden düşük kalır, bu durum 'D vitamini eksikliği' olarak yanlış yorumlanabilir.",
+      "aciklama_detay": "Normal fizyolojide 1-alfa-hidroksilaz böbrekte PTH tarafından regüle edilir: yüksek kalsiyum → PTH azalır → kalsitriol üretimi düşer. Sarkoidozda granülom makrofajları bu enzimi otonom eksprese eder, PTH negatif geri bildiriminden kaçar. 25-OH D hızla kalsitriole dönüştürüldüğünden serum düzeyi düşük kalır — bu sık görülen bir laboratuvar tuzağıdır, 'D vitamini eksikliği' zannedilmemelidir. Yüksek kalsitriol bağırsakta Ca/P emilimini artırır ve osteoklastogenezi uyarır; sonuç: hiperkalsemi + hiperkalsiüri → nefrolitiyazis/nefrokalsinozis.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Primer hiperparatiroidizmde PTH yüksek olur. Bu hastada PTH 5 pg/mL ile belirgin baskılı; granülom kaynaklı otonom kalsitriol üretimi PTH'ı negatif geri bildirimle baskılamaktadır.",
+        "B": "DOĞRU — PTH↓ + 25-OH D↓ + 1,25-(OH)₂ D↑ kombinasyonu sarkoidozun parmak izi laboratuvar tablosudur. Otonom makrofaj 1-alfa-hidroksilazı PTH'dan bağımsız çalışır; 25-OH D'nin düşük olması D vitamini eksikliği değil, hızlı tüketimin göstergesidir.",
+        "C": "YANLIŞ — D vitamini toksisitesinde 25-OH D belirgin yüksek (>150 ng/mL) bulunur. Bu hastada 25-OH D 11 ng/mL ile düşük — bu iki tablonun ayırt edilmesi klinisyen için kritik öneme sahiptir.",
+        "D": "YANLIŞ — Sekonder hiperparatiroidizmde PTH yüksek olur ve 1,25-(OH)₂ D azalmıştır (renal 1-alfa-hidroksilaz yetersizliği). Bu hastanın tablosuyla çelişmektedir.",
+        "E": "YANLIŞ — Renal tübüler asidozda PTH kompansatuar yükselir; bu tabloda PTH baskılıdır. Ayrıca 1,25-(OH)₂ D bu kadar belirgin yükselmez."
+      },
+      "etiketler": [
+        "Hiperkalsemi",
+        "1-alfa-hidroksilaz",
+        "Kalsitriol",
+        "PTH Profili",
+        "Nefrolitiyazis"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tebben et al. N Engl J Med 2016; Sharma OP. Chest 1996"
+    },
+    {
+      "id": "s7",
+      "metin": "Sarkoidozda kalsiyum homeostazının bozulmasının immünolojik altyapısı inceleniyor. Granülom içindeki makrofajlarda 1-alfa-hidroksilaz enziminin otonom aktivasyonunu doğrudan uyaran sitokin hangisidir ve hangi hücre tarafından üretilmektedir?",
+      "secenekler": {
+        "A": "IL-6 — granülom içi makrofajlar tarafından salgılanır; mTORC1 yolağı üzerinden 1-alfa-hidroksilaz ekspresyonunu artırır.",
+        "B": "IFN-γ — aktive T lenfositleri tarafından salgılanır; makrofaj kaynaklı 1,25-(OH)₂ D üretimini güçlü biçimde uyarır.",
+        "C": "TNF-α — dendritik hücreler tarafından salgılanır; renal CYP27B1 enzimini indükleyerek sistemik kalsitriol artışına yol açar.",
+        "D": "IL-17 — Th17 hücrelerinden salgılanır; granülom formasyonunu tetikleyerek dolaylı yoldan 1-alfa-hidroksilaz aktivasyonuna katkı sağlar.",
+        "E": "IL-10 — B lenfositleri tarafından salgılanır; antiinflamatuar etkiyle granülom genişlemesini sınırlarken otonom kalsitriol üretimini artırır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aktive T lenfositlerinin salgıladığı IFN-γ, granülom makrofajlarında 1-alfa-hidroksilaz aktivasyonunu doğrudan uyarır. Sarkoidozun Th1-dominant immün yanıtı → IFN-γ → otonom kalsitriol üretimi zinciri.",
+      "aciklama_detay": "Sarkoidozda Th1 ve Th17.1 polarizasyonu hakimdir. Aktive CD4+ T lenfositleri salgıladıkları IFN-γ ile granülom makrofajlarında CYP27B1 (1-alfa-hidroksilaz) gen ekspresyonunu güçlü biçimde artırır. Bu otonom enzim aktivasyonu PTH regülasyonundan bağımsız işlediğinden kalsiyum homeostazı normal negatif geri bildirimle kontrol edilemez. Bu mekanizma aynı zamanda sarkoidoz hiperkalsemisinin kortikosteroide neden bu kadar iyi yanıt verdiğini de açıklar: steroidler hem granülom inflamasyonunu hem T hücre aktivasyonunu baskılar → IFN-γ azalır → makrofaj 1-alfa-hidroksilaz aktivitesi düşer → kalsitriol normalleşir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — IL-6 plazma hücresi farklılaşmasını yönlendiren bir sitokindir. mTORC1 üzerinden makrofaj 1-alfa-hidroksilaz aktivasyonu sarkoidoz için tanımlanmış spesifik bir mekanizma değildir; mTORC1 granülomogenezde rol oynasa da bu eşleştirme hatalıdır.",
+        "B": "DOĞRU — IFN-γ, aktive T lenfositlerinin temel Th1 sitokinidir. Makrofajlarda CYP27B1 ekspresyonunu doğrudan artırdığı gösterilmiştir. Bu bağlantı; sarkoidozun immün aktivasyonu, kalsiyum bozukluğu ve kortikosteroid yanıtını birbirine bağlayan kritik patofizyolojik halkadır.",
+        "C": "YANLIŞ — TNF-α, granülom oluşumu ve sürdürülmesinde rol oynasa da renal CYP27B1 enzimini indükleme mekanizması tanımlanmamıştır. Anti-TNF tedavisinin (infliksimab) sarkoidozda etkinliği farklı mekanizmalar üzerinden işler.",
+        "D": "YANLIŞ — IL-17, Th17 hücrelerinden salgılanır ve mukozal immünitede rol oynar. Sarkoidozda Th17.1 hücreleri bulunsa da 1-alfa-hidroksilaz aktivasyonunu doğrudan uyardığına dair kanıt yoktur.",
+        "E": "YANLIŞ — IL-10 antiinflamatuar bir sitokindir ve granülom büyümesini sınırlar. Sarkoidozda IFN-γ ağırlıklı Th1 yanıtı hâkimdir; IL-10 baskın değildir. 'Otonom kalsitriol üretimini artırma' mekanizması IL-10 için tanımlanmamıştır."
+      },
+      "etiketler": [
+        "IFN-γ",
+        "T Lenfosit",
+        "Makrofaj Aktivasyonu",
+        "1-alfa-hidroksilaz",
+        "Th1 Polarizasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Adams JS et al. J Clin Invest 1985; Baughman RP et al. Sarcoidosis 2020"
+    }
+  ]
+}

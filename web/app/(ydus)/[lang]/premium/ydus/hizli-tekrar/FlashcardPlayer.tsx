@@ -60,13 +60,23 @@ function tagStil(tag: string) {
   return TAG_RENKLERI[tag] ?? { bg: '#e6f0fb', text: '#1a3a6b' };
 }
 
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
+  const [deck] = useState<Card[]>(() => shuffle(cards));
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [bilinen, setBilinen] = useState<Set<string>>(new Set());
 
-  const card = cards[index];
-  const total = cards.length;
+  const card = deck[index];
+  const total = deck.length;
 
   const next = useCallback(() => {
     setFlipped(false);

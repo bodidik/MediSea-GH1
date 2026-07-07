@@ -1,6 +1,23 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  // Branch kartı dinamik renkler için (bg-${branchColor}-500 vb.)
+  safelist: [
+    {
+      pattern: /^bg-(rose|orange|emerald|cyan|violet|teal|sky)-(50|100|200|400|500|600)$/,
+      variants: ['hover'],
+    },
+    {
+      pattern: /^border-(rose|orange|emerald|cyan|violet|teal|sky)-(100|200|400)$/,
+      variants: ['hover'],
+    },
+    {
+      pattern: /^text-(rose|orange|emerald|cyan|violet|teal|sky)-(600|700)$/,
+    },
+    {
+      pattern: /^from-(rose|orange|emerald|cyan|violet|teal|sky)-50$/,
+    },
+  ],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * İnfüzyon Hesapları Gündüz Modu (Sakin Deniz) Versiyonu
@@ -40,7 +41,9 @@ export default function InfusionPage() {
     // SAKİN DENİZ: bg-slate-50 | text-blue-950
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
-        
+
+        <ToolTopNav toolSlug="infusion" />
+
         {/* BAŞLIK VE GÜNEŞ DETAYI */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">

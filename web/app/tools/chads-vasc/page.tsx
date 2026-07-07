@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 type Item = { key: keyof State; label: string; pts: number };
 
@@ -62,7 +63,9 @@ export default function ChadsVascPage() {
     // SAKİN DENİZ: bg-slate-50 (Açık Mavi/Gri) | text-blue-950 (Lacivert)
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
-        
+
+        <ToolTopNav toolSlug="chads-vasc" />
+
         {/* BAŞLIK VE GÜNEŞ DETAYI */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">

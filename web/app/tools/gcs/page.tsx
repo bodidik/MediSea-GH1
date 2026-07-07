@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 /** * Glasgow Koma Skalası (GKS) Gündüz Modu (Sakin Deniz)
  * Toplam = Göz Açma (E, 1-4) + Sözel Yanıt (V, 1-5) + Motor Yanıt (M, 1-6)
@@ -85,6 +86,8 @@ export default function GcsPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
+
+        <ToolTopNav toolSlug="gcs" />
 
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">

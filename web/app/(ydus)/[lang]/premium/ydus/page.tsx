@@ -76,14 +76,14 @@ const FLEET_STATUS = [
     progress: 0,
     status: 'İKMAL BEKLENİYOR'
   },
-  { 
-    id: 'gogus_hastaliklari', 
-    name: 'Göğüs Hastalıkları', 
-    shipType: 'Devriye Gemisi', 
-    currentPort: 'Ege Denizi', 
-    lastReport: 'Hava sahası temiz.',
-    progress: 0,
-    status: 'İKMAL BEKLENİYOR'
+  {
+    id: 'gogus-hastaliklari',
+    name: 'Göğüs Hastalıkları',
+    shipType: 'Devriye Gemisi',
+    currentPort: 'Ege Denizi',
+    lastReport: 'Sarkoidoz istihbaratı tamamlandı, granülom haritası hazır.',
+    progress: 8,
+    status: 'HAZIR'
   }
 ];
 
@@ -93,7 +93,7 @@ export default function YdusMainDashboard() {
   const lang = params?.lang || 'tr'; // Mevcut dili alıyoruz (tr, en vs.)
   const plan = (user?.plan ?? "free") as "free" | "member" | "premium";
   
-  const READY_BRANCHES = ['hematoloji', 'endokrinoloji', 'romatoloji'];
+  const READY_BRANCHES = ['hematoloji', 'endokrinoloji', 'romatoloji', 'gogus-hastaliklari'];
 
   const branchColorMap: Record<string, string> = {
     endokrinoloji: 'orange', // Gün Batımı Turuncusu
@@ -101,7 +101,7 @@ export default function YdusMainDashboard() {
     romatoloji: 'emerald',   // Ferah Yeşillik
     tibbi_onkoloji: 'violet', 
     enfeksiyon: 'teal',      
-    gogus_hastaliklari: 'cyan', 
+    'gogus-hastaliklari': 'cyan',
     slate: 'slate' 
   };
 

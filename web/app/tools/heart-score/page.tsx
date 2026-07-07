@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 /** * HEART Skoru Gündüz Modu (Sakin Deniz)
  * History, ECG, Age, Risk factors, Troponin — göğüs ağrısı risk stratifikasyonu
@@ -78,6 +79,8 @@ export default function HeartScorePage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
+
+        <ToolTopNav toolSlug="heart-score" />
 
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">

@@ -1,0 +1,94 @@
+{
+  "id": "sarkoidoz-vaka-1",
+  "baslik": "Sarkoidozda Hiperkalsemi ve Renal Komplikasyon",
+  "zorluk": "orta",
+  "sure_dk": 12,
+  "branch": "gogus-hastaliklari",
+  "topic": "sarkoidoz",
+  "adimlar": [
+    {
+      "adim": 1,
+      "klinik_bilgi": "Kirk sekiz yasinda kadin hasta, son 3 aydir giderek artan yorgunluk, kemik agrisi, asiri susama ve sik idrara cikma yakinmalariyla nefroloji polikliniğine basvuruyor.\n\nIki yil once Evre II pulmoner sarkoidoz tanisi konulmus; semptomssuz oldugu icin o donemde tedavi baslanmamis, izleme alinmis.\n\n**Fizik muayene:** Kan basinci 148/90 mmHg, nabiz 88/dk. Bogur hassasiyeti mevcut. Akciger muayenesi normal.\n\n**Tetkikler:**\nSerum kalsiyum: 11.8 mg/dL ↑ (N: 8.5–10.2)\nSerum kreatinin: 1.6 mg/dL ↑\nPTH: 6 pg/mL ↓ (N: 15–65)\n25-OH Vitamin D: 10 ng/mL ↓ (N: 30–100)\nBobrek ultrasonografisi: Sag ureter proksimalinde 7 mm tas, bilateral bobrek parankiminde hiperekojenik odaklar (nefrokalsinozis)",
+      "soru": "PTH 6 pg/mL ile belirgin baskili, 25-OH D 10 ng/mL ile dusuk olan bu tabloda hiperkalseminin en olasi mekanizmasi asagidakilerden hangisidir?",
+      "secenekler": {
+        "A": "Primer hiperparatiroidizm: PTH asiri salgisi renal 1-alfa-hidroksilazi uyararak kalsitriol uretimini artirmaktadir.",
+        "B": "Sarkoidoz granulomlarindaki aktive makrofajlarin PTH'dan bagimsiz otonom 1-alfa-hidroksilaz aktivitesiyle 25-OH D'yi kalsitriole donusturmesi; artan kalsitriol bagirsakta kalsiyum emilimini artirmakta, yuksek kalsiyum ise PTH'i negatif geri bildirimle baskılamaktadır.",
+        "C": "Maligniteye bagli humoral hiperkalsemi (PTHrP): Tumor tarafindan salgılanan PTH benzeri protein kalsiyum reabsorbsiyonunu artirmaktadir.",
+        "D": "Eksojen D vitamini toksisitesi: Asiri takviye nedeniyle 25-OH D ve kalsitriol birlikte yukselmiş, PTH baskilanmistir.",
+        "E": "Sekonder hiperparatiroidizm: Kronik bobrek hastaligina bagli fosfat birikimi PTH'i artirarak kemik rezorbsiyonunu tetiklemektedir."
+      },
+      "dogru": "B",
+      "aciklamalar": {
+        "A": "YANLIS — Primer hiperparatiroidizmde PTH yuksek olur. Bu hastada PTH 6 pg/mL ile belirgin baskili; baskili PTH, yuksek kalsiyumun negatif geri bildirim sonucudur ve granulom kaynakli otonom kalsitriol uretimiyle uyumludur.",
+        "B": "DOGRU — Sarkoidoz granulomlarindaki makrofajlar CYP27B1 (1-alfa-hidroksilaz) enzimini otonom eksprese eder. PTH regulasyonundan bagimsiz calisan bu enzim 25-OH D'yi hizla kalsitriole donusturur; 25-OH D'nin dusuk olmasi eksikligi degil hizli tuketimi yansitir. Karakteristik profil: PTH↓ + 25-OH D↓ + yuksek kalsiyum.",
+        "C": "YANLIS — PTHrP malignitede gorulur; sarkoidoz benign bir granulomatoz hastaliktur. PTHrP'de 25-OH D yuksek, kalsitriol normal beklenir.",
+        "D": "YANLIS — D vitamini toksisitesinde 25-OH D belirgin yuksek (>150 ng/mL) olur; bu hastada 10 ng/mL ile dusuk. Eksojen D vitamini toksisitesinin tam tersi bir tablo mevcuttur.",
+        "E": "YANLIS — Sekonder hiperparatiroidizmde PTH yuksek, kalsiyum dusuk ya da normal olur. Bu hastada PTH baskili ve kalsiyum yuksek — sekonder HPT ile celisir."
+      },
+      "sonraki_bilgi": "1,25-(OH)₂ Vitamin D (kalsitriol) sonucu geldi: **96 pg/mL ↑** (N: 18–72 pg/mL)\n\nTablo netlesti: PTH↓ + 25-OH D↓ + 1,25-(OH)₂D↑ → Sarkoidoza bagli otonom kalsitriol asiri uretimi dogrulandi.\n\nHastanin bilinen pulmoner sarkoidozu ve aktif granulom yuku goz onune alindiginda hiperkalseminin etiyolojisi kesinlesti. Nefrouroloji konsultasyonunda tas icin once konservatif izlem karari alindi; hiperkalseminin kontrolu onceliklendirildi."
+    },
+    {
+      "adim": 2,
+      "klinik_bilgi": "Sarkoidoza bagli hiperkalsemi tanisi kesinlesti. Hasta semptomatik (yorgunluk, kemik agrisi, polidipsi) ve renal komplikasyon gelismis (nefrokalsinozis + tas).\n\nKontrol laboratuvarlari:\nKalsiyum: 11.8 mg/dL ↑\nKreatinin: 1.6 mg/dL ↑\n24 saatlik idrar kalsiyumu: 620 mg/gun ↑ (N: <300)\n1,25-(OH)₂D: 96 pg/mL ↑\n25-OH D: 10 ng/mL ↓",
+      "soru": "Bu hastada hiperkalsemi yonetiminde ilk basamak tedavi secenegi asagidakilerden hangisidir?",
+      "secenekler": {
+        "A": "D vitamini takviyesi baslanmali; 25-OH D 10 ng/mL ile dusuk olan hasta D vitamini eksikligi acisindan tedavi edilmelidir.",
+        "B": "Oral glukokortikoid (prednizolon) baslanmali; kortikosteroidler granulom makrofajlarindaki otonom 1-alfa-hidroksilaz aktivitesini baskılayarak kalsitriol uretimini azaltir.",
+        "C": "Intravenoz bifosfonat (zoledronat) baslanmali; kemik rezorbsiyonunu engelleyerek hiperkalsemiyi hizli kontrol altina alir.",
+        "D": "Kalsitonin ve IV hidrasyon ile akut hiperkalsemi krizi yonetimi yapilmali; sarkoidoz tedavisi ertelenebilir.",
+        "E": "Anti-TNF tedavisi (infliksimab) dogrudan baslanmali; granulom aktivitesini baskılamak icin birinci basamakta en etkili ajandır."
+      },
+      "dogru": "B",
+      "aciklamalar": {
+        "A": "YANLIS — Bu kritik bir tuzaktir. Sarkoidozda 25-OH D'nin dusuk olmasi, aktif 1-alfa-hidroksilaz nedeniyle hizli tuketimi yansitir. D vitamini takviyesi vermek, otonom enzim aktivitesi devam ettiği surece daha fazla substrat saglar → daha fazla kalsitriol → hiperkalsemi kötülesir. Sarkoidoz hiperkalsemisinde D vitamini takviyesi kontrendikedir.",
+        "B": "DOGRU — Oral glukokortikoidler sarkoidoz kaynakli hiperkalseminin birinci basamak tedavisidir. Kortikosteroidler T hucre aktivasyonunu ve granulom inflamasyonunu baskılayarak makrofaj 1-alfa-hidroksilaz aktivitesini azaltir → kalsitriol duşer → kalsiyum normalleshir. Cogunlukla 1–4 hafta icinde yanit alinir.",
+        "C": "YANLIS — Bifosfonatlar osteoporoz ve malignite kaynakli hiperkalsemide etkindir; ancak sarkoidozun primer mekanizmasi (otonom kalsitriol asiri uretimi) bifosfonat ile tedavi edilemez. Ayrica bu hastada kreatinin 1.6 mg/dL — bobrek fonksiyonu bozukken IV zoledronat riski artar.",
+        "D": "YANLIS — Kalsitonin ve hidrasyon akut agir hiperkalsemi krizinde (Ca >14 mg/dL) gecici onlem olarak kullanilabilir; bu hastada kalsiyum 11.8 mg/dL ile orta derecede yuksek ve kronik surec mevcut. Etiyolojiye yonelik tedavi onceliklidir.",
+        "E": "YANLIS — Infliksimab, iki veya daha fazla ikinci basamak ajana direcli refrakter sarkoidozda kullanilir. Yeni tani/tedavi naif hiperkalsemide direkt anti-TNF baslamak kilavuz disidir."
+      },
+      "sonraki_bilgi": "Prednizolon **20 mg/gun** baslandı (SARCORT calismasina uygun dusuk baslangic dozu).\n\n**4. hafta kontrolu:**\nKalsiyum: 9.4 mg/dL → normale döndu ✓\nKreatinin: 1.3 mg/dL → duzelme var ✓\n24 saatlik idrar kalsiyumu: 280 mg/gun → normale dondu ✓\n1,25-(OH)₂D: 44 pg/mL → normale dondu ✓\n25-OH D: 14 ng/mL → hala dusuk\n\nHasta: \"Doktorum, kalsiyum duzeldi ama D vitamini hala dusuk. Eczaneden D vitamini alayim mi?\""
+    },
+    {
+      "adim": 3,
+      "klinik_bilgi": "4. hafta kontrol sonuclari:\nKalsiyum: 9.4 mg/dL (normal) ✓\nKreatinin: 1.3 mg/dL (duzelme) ✓\n25-OH D: 14 ng/mL — hala dusuk\n1,25-(OH)₂D: 44 pg/mL (normale dondu) ✓\n\nHasta, 25-OH D'nin hala dusuk olmasi uzerine D vitamini takviyesi almak istiyor. Steroid dozu 20 mg'dan 15 mg'a indirildi.\n\nHasta aktif sigara kullanmiyor, gunes isinina maruziyeti kisitli, diyeti normal.",
+      "soru": "Prednizolon tedavisi altinda, kalsiyumu normale donen bu hastada 25-OH D'nin 14 ng/mL duzeyinde seyretmesi karsisinda dogru yaklasim hangisidir?",
+      "secenekler": {
+        "A": "D vitamini takviyesi derhal baslanmalidir; 25-OH D <20 ng/mL osteoporoz riski tasir ve steroid kullanan hastada kemik korumasi icin sarttir.",
+        "B": "D vitamini takviyesi baslanmamalidir; aktif sarkoidozda 25-OH D'nin dusuk gorunmesi otonom 1-alfa-hidroksilaz tarafindan hizla tuketilmesini yansitir. Takviye verilmesi halinde granulom aktivitesi devam ediyorsa kalsitriol yeniden yukselir ve hiperkalsemi nuksetebilir.",
+        "C": "Dusuk doz (400 IU/gun) D vitamini guvenle verilebilir; yuksek doz riski tasimakalibir dusuk doz farmakoetkiyle hiperkalsemi yapmaz.",
+        "D": "D vitamini vermeden once tekrar 1,25-(OH)₂D olculumeli; kalsitriol >50 pg/mL ise takviye ertelenmeli, <50 pg/mL ise verilebilir.",
+        "E": "25-OH D 20 ng/mL'nin altinda oldugunden prednizolon dozu artirilmali ve D vitamini sorunu kendilignden cozulecektir."
+      },
+      "dogru": "B",
+      "aciklamalar": {
+        "A": "YANLIS — Bu sarkoidoz hiperkalsemisinin en klasik tuzaklarindan biridir. Steroid kullanan hastada kemik korumasi mantikli gorunse de aktif sarkoidozda 1-alfa-hidroksilaz enzimi hala calisiyor olabilir. Verilen D vitamini substrat olarak kullanilir → kalsitriol artisi → hiperkalsemi nuksu. Kortikosteroidle kalsiyum normale donmus olsa bile sarkoidoz aktivitesi tam baskılanmamissa takviye tehlikelidir.",
+        "B": "DOGRU — Sarkoidozda 25-OH D'nin dusuk olmasi, eksiklik degil otonom granulom enziminin hizli tuketiminin gostergesidir. Hastalik aktivitesi tamamen baskılanip granulomlar gerilediginde 25-OH D kendilignden yukselecektir. D vitamini takviyesi ancak hastalik tam remisyona girdiginde, 1,25-(OH)₂D normal sınirda izlenirken ve yakin kalsiyum takibiyle dusunulebilir.",
+        "C": "YANLIS — 'Dusuk doz guvenlidir' yanilsamasi klinisyenlerin sik dustugu bir tuzaktir. Granulom enzimi doza bagimsiz calisir; substrat arttikca urun artar. Doz miktari degil, enzim aktivitesinin varligi belirleyicidir.",
+        "D": "YANLIS — Kalsitriol olcumu mantikli bir fikir olsa da 50 pg/mL esigine gore karar vermek kanıta dayali bir yaklasim degildir. Aktif sarkoidozda 1-alfa-hidroksilaz aktivitesi dalgalanabilir; tek olcum guvenilir guvence saglamaz.",
+        "E": "YANLIS — Prednizolon dozunu artirmak 25-OH D sorununu cozmez; zaten dusuk olmasinin nedeni eksiklik degil tuketimdir. Steroid dozunu gereksiz yere artirmak yan etki riskini arttirir."
+      },
+      "sonraki_bilgi": "D vitamini takviyesi verilmedi. Hastaya mekanizma aciklandi: '25-OH D dusuk gorunmesi vitamin eksikligi degil, granulomların otonom enziminin aktif calismasının gostergesi.'\n\n6. ay kontrolunde:\nKalsiyum: 9.2 mg/dL ✓\n25-OH D: 22 ng/mL → yukselme basladi ✓ (granulom aktivitesi azaliyor)\nKreatinin: 1.2 mg/dL ✓\n\nAncak yeni sorun: Prednizolon 6 ay sonunda **kemik mineral yogunlugu (KMY) olcumu** yapildi.\nLomber omurga T-skoru: **−2.7** (osteoporoz siniri)\nFemur boynu T-skoru: **−2.4**\n\nHasta steroid yan etkilerinden sikayetci. Doz azaltmak icin steroid-tasarruf edici ajan planlanıyor."
+    },
+    {
+      "adim": 4,
+      "klinik_bilgi": "6 aylik prednizolon tedavisi sonrasi:\nKalsiyum kontrol altinda ✓\nGranulom aktivitesi azaliyor (25-OH D yukseliyor) ✓\nAncak osteoporoz gelisti (T-skoru −2.7)\nHasta: kilo artisi, insomni, glukoz yuksekligi bildiriyor\n\nSteroid dozu su an 10 mg/gun'e indirilmis. Uzun vadeli sarkoidoz kontrolu icin steroid-tasarruf edici ajan eklenerek doz daha da dusuruulmek isteniyor.\n\nHastanin ozgecmisi: Tip 2 diyabet yok (HOMA-IR hafif yuksek), karaciger fonksiyonlari normal, tam kan sayimi normal.",
+      "soru": "Bu hastada uzun donem steroid dozunu azaltmak icin eklenmesi en uygun birinci seccenek steroid-tasarruf edici ajan hangisidir?",
+      "secenekler": {
+        "A": "Infliksimab: Refrakter sarkoidozda kanitlanmis etkinligiyle baslangiclta bu ajana gecilmelidir.",
+        "B": "Metotreksat (MTX, 10–15 mg/hafta): PREDMETH calısmasıyla sarkoidozda birinci basamak steroid alternatifi veya tasarruf ajani olarak valide edilmis; etkinlik ve guvenlik profili en iyi kanitli ajandır.",
+        "C": "Etanercept: Anti-TNF ajanlar arasinda en uzun deneyim ve en iyi guvenlik profiline sahiptir; sarkoidozda tercih edilmelidir.",
+        "D": "Siklosporin: Kalsinörin inhibitoru olarak Th1 yanitini baskılar; sarkoidozda en guclu steroid-tasarruf edici ajandır.",
+        "E": "Hidroksiklorokin: Kutanoz ve hiperkalsiuri olgularinda onerilir; bu hastada ilk tercih olarak uygulanabilir."
+      },
+      "dogru": "B",
+      "aciklamalar": {
+        "A": "YANLIS — Infliksimab 3. basamak tedavide, iki veya daha fazla ikinci basamak ajana yanit alinamayan refrakter vakalarda kullanilir. Bu hasta steroid-tasarruf ajani gerektiriyor; direkt anti-TNF'ye gecmek kilavuzlarla uyumlu degil.",
+        "B": "DOGRU — PREDMETH calismasi, oral metotreksatin (10–15 mg/hafta) sarkoidozda steroid-tasarruf edici ajan olarak kortikosteroidlerle kiyaslanabilir etkinlige sahip oldugunu gostermistir. Bu hasta icin karaciger fonksiyonu normal, tam kan sayimi uygun — MTX'in birinci seccenek olmasi icin engel yok. Folik asit (1 mg/gun) ile birlikte verilmesi yan etkileri azaltir.",
+        "C": "YANLIS — Bu sarkoidozun en kritik anti-TNF tuzagidir. Etanercept (soluble TNF reseptor fuzyon proteini) sarkoidozda hem pulmoner hem okulter tutulumda randomize kontrollu calismalarda etkinlik gosterememistir ve bu hastalikta kullanim yeri yoktur. Anti-TNF tercih edilecekse infliksimab secilmelidir.",
+        "D": "YANLIS — Siklosporin sarkoidozda kanit duzeyi dusuk ve toksisitesi yuksek bir ajandır; nefrotoksisite bu hastada zaten bozuk olan bobrek fonksiyonunu daha da kotulestebilir.",
+        "E": "YANLIS — Hidroksiklorokin daha cok kutanoz sarkoidoz ve hafif hiperkalsiurili vakalarda yardimci ajan olarak kullanilir. Bu hastada sistemik tutulum ve osteoporoz mevcut; etkinligi MTX'e kiyasla yetersiz kalir."
+      },
+      "sonraki_bilgi": "Metotreksat 10 mg/hafta + folik asit 1 mg/gun baslandı.\n\n**12. ay degerlendirmesi:**\nKalsiyum: 9.0 mg/dL ✓\nKreatinin: 1.1 mg/dL (iyilesme) ✓\n25-OH D: 28 ng/mL (remisyon gostergesi) ✓\nPrednizolon: 5 mg/gun'e indirildi ✓\nKMY: Bifosfonat (alendronat) + kalsiyum (diyet) eklendi, takipte stabilizasyon bekleniyor\n\nHasta 18. ayda tam remisyona girdi. Sarkoidoza bagli hiperkalsemi ve bobrek komplikasyonu MTX ile desteklenen dusuk doz steroid ile kontrol altina alindi."
+    }
+  ]
+}

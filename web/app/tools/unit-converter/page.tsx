@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 // 🚀 Fonksiyonları geçici isimlerle alıyoruz
 import { mgdlToMmol as _mgdlToMmol, mmolToMgdl as _mmolToMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
@@ -52,7 +53,9 @@ export default function UnitConverterPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-10 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-8">
-        
+
+        <ToolTopNav toolSlug="unit-converter" />
+
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">

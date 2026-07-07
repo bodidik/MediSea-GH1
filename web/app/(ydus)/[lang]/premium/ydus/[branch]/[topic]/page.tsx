@@ -7,9 +7,10 @@ export const revalidate = 86400;
 
 // --- BRANCH RENK SİSTEMİ ---
 const BRANCH_META: Record<string, { label: string; renk: string }> = {
-  hematoloji:       { label: 'Hematoloji',        renk: '#a01f1f' },
-  endokrinoloji:    { label: 'Endokrinoloji',      renk: '#8a4800' },
-  romatoloji:       { label: 'Romatoloji',         renk: '#1a5c2e' },
+  hematoloji:           { label: 'Hematoloji',          renk: '#a01f1f' },
+  endokrinoloji:        { label: 'Endokrinoloji',        renk: '#8a4800' },
+  romatoloji:           { label: 'Romatoloji',           renk: '#1a5c2e' },
+  'gogus-hastaliklari': { label: 'Göğüs Hastalıkları',  renk: '#0d6b8a' },
   gastroenteroloji: { label: 'Gastroenteroloji',   renk: '#4a1a7a' },
   nefroloji:        { label: 'Nefroloji',          renk: '#1a3a6b' },
   onkoloji:         { label: 'Onkoloji',           renk: '#5a1a6b' },

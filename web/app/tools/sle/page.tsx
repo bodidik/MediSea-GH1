@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 /** * SLEDAI-2K Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -63,7 +64,9 @@ export default function SLEDAIPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-5xl mx-auto space-y-6">
-        
+
+        <ToolTopNav toolSlug="sle" />
+
         {/* BAŞLIK */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b-2 border-blue-900/10 pb-6">
           <div className="flex items-center gap-4">

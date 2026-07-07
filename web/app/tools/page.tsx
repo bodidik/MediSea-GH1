@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
 const TOOLS_DATABASE = [
@@ -104,6 +105,7 @@ const TOOLS_DATABASE = [
 ];
 
 export default function ToolsPage() {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredData = TOOLS_DATABASE.map(cat => ({
@@ -118,7 +120,25 @@ export default function ToolsPage() {
     <div className="min-h-screen bg-white text-slate-900 font-sans">
       
       <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8 space-y-12">
-        
+
+        {/* NAVİGASYON */}
+        <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest">
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+            Geri
+          </button>
+          <Link
+            href="/"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"
+          >
+            🏠 Ana Sayfa
+          </Link>
+        </div>
+
         {/* BAŞLIK PANELİ */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b-2 border-slate-100 pb-12">
           <div>

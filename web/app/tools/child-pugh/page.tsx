@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 /** * Child-Pugh Sınıflaması Gündüz Modu (Sakin Deniz)
  * 5 parametre x 1-3 puan; toplam 5-15 → Class A/B/C
@@ -78,6 +79,8 @@ export default function ChildPughPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
+
+        <ToolTopNav toolSlug="child-pugh" />
 
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">

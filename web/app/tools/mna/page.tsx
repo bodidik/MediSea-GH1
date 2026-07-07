@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
+import ToolTopNav from "../components/ToolTopNav";
 
 /** * MediSea Donanması - Geriatri & Nütrisyon Üssü
  * MNA® - Mini Nutritional Assessment (Kısa Form)
@@ -81,7 +82,9 @@ export default function MNAPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
-        
+
+        <ToolTopNav toolSlug="mna" />
+
         {/* HEADER */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">👴</div>

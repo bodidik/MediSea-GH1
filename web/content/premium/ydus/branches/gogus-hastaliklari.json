@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "id": "gogus-hastaliklari",
+    "baslik": "Göğüs Hastalıkları",
+    "aciklama": "İnterstisyel akciğer hastalıkları, obstrüktif hastalıklar, plevra ve solunum yetmezliğini kapsayan uzmanlık sınav modülü.",
+    "renk": "#0d6b8a",
+    "emoji": "🫁"
+  },
+  "kategoriler": [
+    {
+      "id": "interstisyel",
+      "baslik": "İnterstisyel Akciğer Hastalıkları",
+      "aciklama": "Sarkoidoz, IPF, HP, ILD ve granülomatöz hastalıklar",
+      "emoji": "🔬",
+      "konular": [
+        {
+          "id": "sarkoidoz",
+          "baslik": "Sarkoidoz",
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
+        },
+        {
+          "id": "ipf",
+          "baslik": "İdiyopatik Pulmoner Fibrozis (IPF)",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "hipersensitivite-pnomonisi",
+          "baslik": "Hipersensitivite Pnömonisi",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "obstrutif",
+      "baslik": "Obstrüktif Hastalıklar",
+      "aciklama": "KOAH, astım ve bronşiektazi",
+      "emoji": "💨",
+      "konular": [
+        {
+          "id": "koah",
+          "baslik": "KOAH",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        },
+        {
+          "id": "astim",
+          "baslik": "Astım",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "plevra",
+      "baslik": "Plevra ve Mediyasten",
+      "aciklama": "Plevral efüzyon, pnömotoraks, mezotelyoma",
+      "emoji": "🫧",
+      "konular": [
+        {
+          "id": "plevral-efuzyon",
+          "baslik": "Plevral Efüzyon — Tanısal Yaklaşım",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "solunum-yetmezligi",
+      "baslik": "Solunum Yetmezliği ve YBÜ",
+      "aciklama": "ARDS, mekanik ventilasyon ve weaning",
+      "emoji": "🏥",
+      "konular": [
+        {
+          "id": "ards",
+          "baslik": "ARDS",
+          "rozetler": ["YAKINDA"],
+          "hazir": false
+        }
+      ]
+    }
+  ]
+}

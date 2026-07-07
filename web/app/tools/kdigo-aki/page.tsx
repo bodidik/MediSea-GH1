@@ -2,6 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * KDIGO AKI Evrelemesi Gündüz Modu (Sakin Deniz)
@@ -60,6 +61,8 @@ export default function KdigoAkiPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-2xl mx-auto space-y-6">
+
+        <ToolTopNav toolSlug="kdigo-aki" />
 
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
