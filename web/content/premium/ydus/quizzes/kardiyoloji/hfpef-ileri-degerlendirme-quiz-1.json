@@ -1,0 +1,308 @@
+{
+  "id": "quiz-kardiyo-hfpef-001",
+  "baslik": "HFpEF İleri Değerlendirme — Soru Seti 1",
+  "branch": "kardiyoloji",
+  "topic": "hfpef-ileri-degerlendirme",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Efor dispnesi olan ve LVEF'si %60 ölçülen bir hastada diyastolik fonksiyon değerlendirmesi yapılıyor. Sonuçlar: Septal e' 6 cm/sn (düşük), ortalama E/e' 16 (yüksek), LAVI 30 mL/m² (normal), pik TR hızı 2.5 m/sn (normal).\n\nASE/EACVI algoritmasına göre bu hastada diyastolik fonksiyon durumu nasıl sınıflandırılır?",
+      "secenekler": {
+        "A": "4 kriterden 2'si pozitif olduğundan (e' düşük + E/e' yüksek) durum 'belirsiz (indeterminate)' olarak değerlendirilir.",
+        "B": "4 kriterden 3'ü pozitif olduğundan diyastolik disfonksiyon kesinleşir.",
+        "C": "Tüm kriterler pozitif olduğundan diyastolik disfonksiyon kesin olarak doğrulanır.",
+        "D": "Yalnızca 1 kriter pozitif olduğundan fonksiyon normal kabul edilir.",
+        "E": "Bu algoritma yalnızca LVEF düşük hastalarda kullanılır, LVEF %60 olan bu hastada uygulanamaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "4 parametreden yalnızca 2'si pozitif (e' düşük ve E/e' yüksek; LAVI ve TR hızı normal) → sınav kuralına göre durum 'belirsiz (indeterminate)' olarak değerlendirilir.",
+      "aciklama_detay": "ASE/EACVI algoritmasında 4 temel parametre değerlendirilir: (1) Septal e' <7 cm/sn veya Lateral e' <10 cm/sn, (2) Ortalama E/e' >14, (3) LAVI >34 mL/m², (4) Pik TR hızı >2.8 m/sn. Bu hastada septal e' 6 cm/sn (eşik <7, POZİTİF) ve ortalama E/e' 16 (eşik >14, POZİTİF) olmak üzere 2 kriter pozitiftir; LAVI 30 mL/m² (eşik >34, NEGATİF) ve pik TR hızı 2.5 m/sn (eşik >2.8, NEGATİF) negatiftir. Sınav kuralına göre: 4'ü veya 3'ü pozitifse diyastolik disfonksiyon kesinleşir; yalnızca 1'i pozitif veya hepsi negatifse fonksiyon normal kabul edilir; 2'si pozitifse durum 'belirsiz (indeterminate)' olarak değerlendirilir. Bu hastada tam olarak 2 kriter pozitif olduğundan sonuç 'belirsiz'dir ve ek değerlendirme (örn. egzersiz ekokardiyografisi, H2FPEF/HFA-PEFF skorlaması) gerekebilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 2 pozitif kriter (e' düşük + E/e' yüksek) = belirsiz (indeterminate) kategori.",
+        "B": "YANLIS — Yalnızca 2 kriter pozitiftir (e' ve E/e'), 3 değil; LAVI ve TR hızı normaldir.",
+        "C": "YANLIS — Tüm 4 kriter pozitif değildir; yalnızca 2'si pozitiftir.",
+        "D": "YANLIS — 1 değil, 2 kriter pozitiftir; bu nedenle 'normal' değil 'belirsiz' kategorisine girer.",
+        "E": "YANLIS — Bu algoritma özellikle LVEF'i NORMAL/korunmuş olan hastalarda (HFpEF şüphesinde) diyastolik disfonksiyonu değerlendirmek için kullanılır; LVEF %60 olan bu hasta tam olarak hedef popülasyondur."
+      },
+      "etiketler": [
+        "ASE/EACVI Algoritması",
+        "Diyastolik Disfonksiyon",
+        "E/e' Oranı",
+        "İndeterminate",
+        "HFpEF Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nagueh et al. J Am Soc Echocardiogr 2016 (ASE/EACVI Guidelines)"
+    },
+    {
+      "id": "s2",
+      "metin": "Ekokardiyografide mitral akım paterni değerlendirilen bir hastada E/A oranı 2.5 ve E/e' oranı 16 olarak ölçülüyor.\n\nBu bulgular hangi dolum basıncı derecesiyle (Grade) uyumludur ve sol atriyum basıncı hakkında ne söylenebilir?",
+      "secenekler": {
+        "A": "Grade I (Bozulmuş Gevşeme); sol atriyum basıncı normaldir.",
+        "B": "Grade II (Psödonormal); sol atriyum basıncı hafif artmıştır.",
+        "C": "Grade III (Restriktif Patern); E/A ≥2 VE E/e' >14 kriterleri karşılandığından sol atriyum basıncı belirgin olarak artmıştır.",
+        "D": "Bu bulgular herhangi bir Grade ile uyumlu değildir, ölçüm hatası düşünülmelidir.",
+        "E": "Grade II ve III arasında ayrım yapmak için E/A oranı tek başına yeterlidir, E/e' oranına gerek yoktur."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "E/A ≥2 VE E/e' >14 = Grade III (Restriktif Patern) — sol atriyum basıncı belirgin artmıştır. Bu hastada E/A 2.5 (≥2) ve E/e' 16 (>14) her iki kriteri de karşılamaktadır.",
+      "aciklama_detay": "Dolum basınçlarının derecelendirilmesinde (Grade I-III) mitral akım paterni (E/A oranı) kullanılır: Grade I (Bozulmuş Gevşeme) E/A ≤0.8 ve E hızı ≤50 cm/sn ile karakterizedir, sol atriyum basıncı normaldir. Grade II (Psödonormal) E/A oranı >0.8 ila <2 arasındadır, artmış sol atriyum (dolum) basıncı vardır. Grade III (Restriktif Patern) E/A oranı ≥2 VE E/e' oranı >14 olması ile tanımlanır, sol atriyum basıncı belirgin olarak artmıştır. Bu hastada E/A 2.5 (≥2 kriterini karşılıyor) ve E/e' 16 (>14 kriterini karşılıyor) olduğundan Grade III restriktif patern ile uyumludur — bu, en ileri derecede diyastolik disfonksiyonu ve belirgin sol atriyum basınç artışını gösterir, genellikle daha kötü prognozla ilişkilidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Grade I'de E/A ≤0.8 beklenir, bu hastada E/A 2.5'tir; uyumsuz.",
+        "B": "YANLIS — Grade II'de E/A 0.8-2 arası beklenir, bu hastada E/A 2.5 olup Grade II üst sınırını (2) aşmaktadır; ayrıca Grade III'ün E/e' kriteri de karşılanmaktadır.",
+        "C": "DOGRU — E/A ≥2 VE E/e' >14 birlikte Grade III restriktif paterni tanımlar; SA basıncı belirgin artmıştır.",
+        "D": "YANLIS — Bu bulgular tam olarak tanımlanmış Grade III kriterleriyle uyumludur, ölçüm hatası değildir.",
+        "E": "YANLIS — Grade III tanımı için hem E/A ≥2 HEM E/e' >14 kriterinin birlikte karşılanması gerekir; yalnızca E/A yeterli değildir."
+      },
+      "etiketler": [
+        "Dolum Basıncı",
+        "Grade III",
+        "Restriktif Patern",
+        "E/A Oranı",
+        "Mitral Akım"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nagueh et al. J Am Soc Echocardiogr 2016"
+    },
+    {
+      "id": "s3",
+      "metin": "Kardiyak amiloidoz şüphesiyle değerlendirilen bir hastada Global Longitudinal Strain (GLS) analizi yapılıyor. Bazal ve orta segmentlerde strain belirgin azalmış (mutlak değer <%10) iken apikal segmentlerde strain nispeten korunmuş (mutlak değer ~%18) bulunuyor.\n\nBu strain paterni hangi tanıyı destekler ve bu bulgunun adı nedir?",
+      "secenekler": {
+        "A": "Bu patern normal miyokardiyal fonksiyonu gösterir, herhangi bir patolojiyi düşündürmez.",
+        "B": "Bu patern 'apikal sparing' (apikal korunma) olarak adlandırılır ve kardiyak amiloidozda tipik olarak görülür — bazal segmentlerde strain düşerken apekste korunması karakteristiktir.",
+        "C": "Bu patern hipertrofik kardiyomiyopatinin patognomonik bulgusudur, amiloidozla ilişkisi yoktur.",
+        "D": "Apikal sparing paterni yalnızca HFrEF hastalarında görülür, HFpEF/amiloidoz değerlendirmesinde yeri yoktur.",
+        "E": "Bu bulgu teknik bir görüntüleme artefaktıdır, klinik anlamı yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bazal segmentlerde düşük strain + apekste korunmuş strain = 'apikal sparing' paterni — kardiyak amiloidozun karakteristik GLS bulgusudur.",
+      "aciklama_detay": "Global Longitudinal Strain (GLS) analizi, LVEF'si korunmuş hastalarda gizli miyokardiyal disfonksiyonu saptamada kritiktir. Normal mutlak GLS değeri >%18 iken, <%16 olması anormal kabul edilir. Kardiyak amiloidozda infiltratif sürecin miyokard tabakalarını homojen olmayan şekilde tutması nedeniyle, bazal segmentlerde strain belirgin düşerken apikal segmentlerde strain nispeten korunur — bu karakteristik patern 'apikal sparing (apical sparing)' olarak adlandırılır ve genellikle bir 'bull's-eye' (öküz gözü) haritalama görüntüsünde belirgin bir görsel patern oluşturur (bazalde koyu/azalmış renk, apekste açık/korunmuş renk). Bu bulgu, HFpEF ayırıcı tanısında infiltratif kardiyomiyopatileri (özellikle amiloidoz) düşündüren önemli, non-invaziv bir görüntüleme ipucudur ve HFA-PEFF algoritmasının 'Final etyolojik tanı' basamağında amiloidoz araştırmasını tetikleyebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu patern anormal ve spesifiktir, normal fonksiyonla uyumlu değildir.",
+        "B": "DOGRU — Apikal sparing = kardiyak amiloidozun karakteristik GLS paterni.",
+        "C": "YANLIS — Apikal sparing amiloidoza özgüdür; hipertrofik kardiyomiyopatinin patognomonik bulgusu değildir (HKMP'de farklı strain paternleri görülebilir).",
+        "D": "YANLIS — Apikal sparing tam olarak HFpEF ayırıcı tanısında (infiltratif kardiyomiyopati/amiloidoz araştırmasında) kullanılan bir bulgudur.",
+        "E": "YANLIS — Bu, iyi tanımlanmış, klinik olarak anlamlı ve tanısal değere sahip bir strain paternidir, artefakt değildir."
+      },
+      "etiketler": [
+        "GLS",
+        "Apikal Sparing",
+        "Kardiyak Amiloidoz",
+        "Strain Analizi",
+        "HFpEF Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Phelan et al. Heart 2012 (apical sparing pattern); Garcia-Pavia et al. Eur Heart J 2021"
+    },
+    {
+      "id": "s4",
+      "metin": "Sakubitril/valsartan (ARNI) tedavisi altında olan bir HFrEF hastasında tedavi yanıtını izlemek için natriüretik peptid takibi planlanıyor. Hastada hem BNP hem NT-proBNP ölçülüyor; BNP düzeyi beklenenden yüksek çıkarken NT-proBNP düşük seyrediyor.\n\nBu farkı açıklayan mekanizma ve doğru takip stratejisi nedir?",
+      "secenekler": {
+        "A": "Bu, laboratuvar hatasını gösterir; iki test aynı sonucu vermelidir.",
+        "B": "ARNI tedavisi neprilisin inhibisyonu yoluyla BNP'nin yıkımını engelleyerek BNP düzeylerini yükseltir (yalancı yükseklik); NT-proBNP ise neprilisin substratı olmadığından bu durumdan etkilenmez ve bu nedenle ARNI alan hastalarda takipten sorumlu asıl test NT-proBNP olmalıdır.",
+        "C": "NT-proBNP, ARNI tedavisinden BNP'den daha fazla etkilenir; bu nedenle takipte BNP tercih edilmelidir.",
+        "D": "ARNI tedavisi her iki peptidi de eşit oranda etkiler, aralarında fark beklenmez.",
+        "E": "Bu fark yalnızca böbrek yetmezliği olan hastalarda görülür, bu hastanın böbrek fonksiyonu mutlaka bozuk olmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ARNI (neprilisin inhibisyonu) BNP yıkımını engelleyerek BNP'yi yükseltir (yalancı artış); NT-proBNP neprilisin substratı değildir, etkilenmez — bu nedenle ARNI alan hastalarda takip NT-proBNP ile yapılmalıdır.",
+      "aciklama_detay": "ARNI (sakubitril/valsartan) tedavisi alanlarda, neprilisin inhibisyonuna bağlı olarak BNP düzeyleri yükselirken, NT-proBNP neprilisin substratı olmadığı için bu durumdan etkilenmez ve takipten sorumlu asıl test olmalıdır. Neprilisin, doğal olarak BNP'yi (aktif hormon) parçalayan bir endopeptidazdır; sakubitril bu enzimi inhibe ederek BNP'nin yıkımını engeller ve dolaşımdaki BNP düzeyini yapay olarak yükseltir — bu, tedavinin etkisizliğini değil, ilacın FARMAKOLOJİK MEKANİZMASININ beklenen bir sonucunu yansıtır. Buna karşın NT-proBNP (N-terminal pro-B-tipi natriüretik peptid), inaktif bir öncül parçadır ve neprilisin tarafından metabolize edilmez; bu nedenle ARNI tedavisinden etkilenmeden gerçek klinik durumu (hemodinamik stres düzeyini) yansıtmaya devam eder. Bu farmakokinetik gerçeklik nedeniyle, ARNI alan hastalarda tedavi yanıtını izlemek için NT-proBNP kullanılmalı, BNP'nin yükselmesi yanlışlıkla kötüleşme olarak yorumlanmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu, laboratuvar hatası değil, ARNI'nin bilinen ve beklenen farmakolojik bir etkisidir.",
+        "B": "DOGRU — Neprilisin inhibisyonu BNP'yi yükseltir (substrat); NT-proBNP etkilenmez, takipte tercih edilmelidir.",
+        "C": "YANLIS — Durum tam tersidir; BNP, ARNI'den etkilenir (yükselir), NT-proBNP etkilenmez.",
+        "D": "YANLIS — İki peptid ARNI'den FARKLI şekilde etkilenir; BNP yükselirken NT-proBNP etkilenmez.",
+        "E": "YANLIS — Bu fark ARNI'nin mekanizmasına bağlıdır, böbrek fonksiyonuyla doğrudan ilişkili değildir; böbrek yetmezliği ayrı bir konfonder olabilir ama bu senaryonun açıklaması değildir."
+      },
+      "etiketler": [
+        "ARNI",
+        "Sakubitril/Valsartan",
+        "Neprilisin İnhibisyonu",
+        "NT-proBNP",
+        "BNP Takip"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Vodovar et al. Eur Heart J 2015; McMurray et al. N Engl J Med 2014 (PARADIGM-HF)"
+    },
+    {
+      "id": "s5",
+      "metin": "Yetmiş sekiz yaşında kronik böbrek hastalığı (eGFR 35 mL/dk) olan kadın hasta, açıklanamayan efor dispnesi ile başvuruyor. NT-proBNP düzeyi böbrek yetmezliğine bağlı olarak yorumlanması güç bir aralıkta çıkıyor. Ekokardiyografide triküspit yetersizliği ve inferior vena kava dilatasyonu saptanıyor.\n\nBu hastada sağ kalp/konjesyon durumunu değerlendirmek için NT-proBNP'ye tamamlayıcı olarak kullanılabilecek biyobelirteç ve gerekçesi nedir?",
+      "secenekler": {
+        "A": "Troponin I; sağ kalp disfonksiyonunu NT-proBNP'den daha iyi yansıtır.",
+        "B": "CA-125 (Karbonhidrat Antijeni 125); kalp yetersizliğinde sistemik venöz konjesyonun, serozal inflamasyonun ve sağ kalp disfonksiyonunun güçlü bir göstergesidir; renal disfonksiyon ve yaştan NT-proBNP'ye kıyasla daha az etkilenmesi, onu özellikle yaşlı ve böbrek yetmezlikli hastalarda kıymetli bir tamamlayıcı biyobelirteç yapar.",
+        "C": "CA 19-9; over veya pankreas malignitesi olmayan hastalarda kalp yetersizliği değerlendirmesinde standart bir belirteçtir.",
+        "D": "CA-125, yalnızca over kanseri tanısında kullanılır ve kalp yetersizliği değerlendirmesinde hiçbir rolü yoktur.",
+        "E": "hsTnT, bu hastada CA-125'in yerini tamamen alabilecek, sağ kalp konjesyonuna özgü bir belirteçtir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "CA-125, sistemik venöz konjesyon/serozal inflamasyon/sağ kalp disfonksiyonunun göstergesidir; NT-proBNP'ye kıyasla renal fonksiyon ve yaştan daha az etkilenir — yaşlı/böbrek yetmezlikli hastalarda değerli bir tamamlayıcı belirteçtir.",
+      "aciklama_detay": "CA-125 (Karbonhidrat Antijeni 125), klasik olarak bir over tümör markerı olarak bilinse de, kalp yetersizliğinde sistemik venöz konjesyonun, serozal inflamasyonun ve sağ kalp disfonksiyonunun (örn. triküspit yetersizliği, inferior vena kava dilatasyonu — bu hastada her ikisi de mevcut) güçlü bir göstergesidir. Mekanizma, periton/plevral seröz yüzeylerin venöz konjesyona bağlı mekanik gerilmesi ve inflamasyonuyla CA-125 salınımının artmasıdır. NT-proBNP temel olarak sol kalp hemodinamik stresiyle ilişkiliyken, CA-125 sağ kalp ve volüm yükünü yansıtır — bu farklı fizyolojik pencere, ikisinin birbirini tamamlayıcı bilgi sağlamasına olanak tanır. Ayrıca CA-125'in renal disfonksiyondan ve yaştan NT-proBNP'ye kıyasla daha az etkilenmesi, onu özellikle bu vakadaki gibi yaşlı VE böbrek yetmezlikli hastalarda (NT-proBNP yorumunun güç olduğu bir senaryoda) kıymetli bir tamamlayıcı biyobelirteç yapar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Troponin miyokard hasarını gösterir, sağ kalp konjesyonuna özgü bir belirteç değildir.",
+        "B": "DOGRU — CA-125, sağ kalp/konjesyon göstergesi olarak NT-proBNP'yi tamamlar; yaş/renal fonksiyondan daha az etkilenir.",
+        "C": "YANLIS — CA 19-9 kalp yetersizliği değerlendirmesinde tanımlanmış bir biyobelirteç değildir.",
+        "D": "YANLIS — Metinde açıkça belirtildiği gibi CA-125'in kalp yetersizliğinde (sağ kalp/konjesyon göstergesi olarak) iyi tanımlanmış bir rolü vardır.",
+        "E": "YANLIS — hsTnT miyokardiyal stres/hasar belirtecidir, CA-125'in sağ kalp/konjesyona özgü rolünün yerini almaz; farklı bir bilgi sağlar."
+      },
+      "etiketler": [
+        "CA-125",
+        "Sağ Kalp Disfonksiyonu",
+        "Venöz Konjesyon",
+        "Böbrek Yetmezliği",
+        "Biyobelirteç Yorumlama"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Núñez et al. Clin Chem Lab Med 2016; Núñez et al. Eur J Heart Fail 2020 (CA-125 in HF)"
+    },
+    {
+      "id": "s6",
+      "metin": "Elli beş yaşında hasta, hipertansiyon dışında risk faktörü olmadan rutin taramada hafif yüksek hsTnT saptanıyor (Evre A/B risk kategorisi, klinik kalp yetersizliği semptomu yok). NT-proBNP normal sınırlarda.\n\nBu izole hsTnT yüksekliğinin klinik önemi nedir?",
+      "secenekler": {
+        "A": "hsTnT yüksekliği yalnızca akut miyokard infarktüsünde anlamlıdır; bu hastada klinik önemi yoktur ve göz ardı edilebilir.",
+        "B": "Kalp yetersizliği olmayan ancak risk taşıyan popülasyonlarda (Evre A ve B), hsTnT'nin kalıcı hafif yükseklik göstermesi, NT-proBNP'den bağımsız olarak miyokardiyal stresi ve ileride gelişecek klinik kalp yetersizliği riskini öngörür.",
+        "C": "NT-proBNP normal olduğu için hsTnT yüksekliği mutlaka laboratuvar hatasıdır, tekrar bakılmasına gerek yoktur.",
+        "D": "hsTnT yüksekliği yalnızca NT-proBNP ile birlikte yüksek olduğunda anlamlıdır; izole yükseklik hiçbir prognostik değer taşımaz.",
+        "E": "Bu bulgu, hastada zaten aşikar klinik kalp yetersizliği (Evre C) geliştiğini gösterir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Evre A/B'de hafif kalıcı hsTnT yüksekliği, NT-proBNP'den bağımsız olarak miyokardiyal stresi ve gelecekteki klinik KY riskini öngören prognostik bir bulgudur.",
+      "aciklama_detay": "Kalp yetersizliği olmayan ancak risk taşıyan popülasyonlarda (Evre A — risk faktörleri var ama yapısal kalp hastalığı yok; Evre B — yapısal kalp hastalığı var ama semptom yok), hsTnT'nin kalıcı düşüklük yerine hafif yüksek seyretmesi, NT-proBNP'den BAĞIMSIZ olarak miyokardiyal stresi ve ileride gelişecek klinik kalp yetersizliği riskini öngörür. Bu, subklinik, düşük dereceli miyokardiyal hasarın (kardiyomiyosit ölümü/hasarı) devam ettiğini gösteren önemli bir prognostik biyobelirteçtir — akut koroner sendromdaki masif troponin yükselmesinden farklı olarak, burada kronik, hafif düzeyde ama persistan bir yükseklik söz konusudur. Bu bilgi, Evre A/B hastalarda risk stratifikasyonu ve daha yakın izlem/erken müdahale kararlarında (agresif risk faktörü kontrolü gibi) kullanılabilir; NT-proBNP normal olsa bile hsTnT yüksekliği tek başına anlamlı prognostik bilgi taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — hsTnT'nin kronik, hafif yüksekliği AMI dışında da (Evre A/B risk popülasyonunda) prognostik değer taşır; göz ardı edilmemelidir.",
+        "B": "DOGRU — Hafif kalıcı hsTnT yüksekliği, NT-proBNP'den bağımsız olarak gelecekteki KY riskini öngörür.",
+        "C": "YANLIS — Bu, laboratuvar hatası değil, NT-proBNP'den bağımsız çalışan, iyi tanımlanmış bir prognostik bulgudur.",
+        "D": "YANLIS — İzole hsTnT yüksekliği (NT-proBNP normal olsa dahi) tek başına prognostik değer taşıdığı gösterilmiştir; NT-proBNP ile birlikte yüksek olma şartı yoktur.",
+        "E": "YANLIS — Hastada klinik semptom yoktur (Evre A/B), bu bulgu Evre C (aşikar klinik KY) geliştiğini göstermez; gelecekteki RİSKİ öngörür."
+      },
+      "etiketler": [
+        "hsTnT",
+        "Evre A/B Kalp Yetersizliği",
+        "Subklinik Miyokard Hasarı",
+        "Risk Stratifikasyonu",
+        "Prognostik Biyobelirteç"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Roberts et al. Circulation 2020; deFilippi & Christenson JAMA Cardiol 2018"
+    },
+    {
+      "id": "s7",
+      "metin": "Altmış beş yaşında obez (BMI 34), 2 antihipertansif ilaç kullanan, paroksismal atriyal fibrilasyon öyküsü olan ve efor dispnesi tarifleyen bir hastada H2FPEF skoru hesaplanıyor. Sistolik PAB 32 mmHg (normal), ekoda E/e' 11 (yüksek, >9).\n\nBu hastanın H2FPEF skoru kaçtır ve bu skor HFpEF olasılığı hakkında ne söyler?",
+      "secenekler": {
+        "A": "Skor 9/9'dur (maksimum); HFpEF tanısı kesin olarak dışlanır.",
+        "B": "Skor 8/9'dur (BMI>30: 2p + antihipertansif: 1p + AF öyküsü: 3p + Elder>60: 1p + E/e'>9: 1p = 8; PAB normal olduğundan pulmoner HT puanı alınmaz); bu yüksek skor HFpEF olasılığını güçlü şekilde desteklemektedir.",
+        "C": "Skor 3/9'dur; düşük skor HFpEF olasılığını dışlar.",
+        "D": "AF öyküsü H2FPEF skorunda değerlendirilmez, bu nedenle skor hesaplanamaz.",
+        "E": "PAB normal olduğu için toplam skor 0'dır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "H2FPEF: BMI>30 (2p) + ≥2 antihipertansif (1p) + AF öyküsü (3p, en ağırlıklı) + >60 yaş (1p) + E/e'>9 (1p) = 8 puan. PAB normal olduğundan pulmoner HT puanı (1p) alınmaz. Yüksek skor (8/9) HFpEF olasılığını güçlü destekler.",
+      "aciklama_detay": "H2FPEF Skoru (Mayo Clinic) toplam 9 puan üzerinden hesaplanır: Heavy (BMI >30 kg/m²) = 2 puan; Hypertensive (≥2 antihipertansif ilaç) = 1 puan; Atrial Fibrillation (geçmiş veya mevcut AF) = 3 puan (en yüksek ağırlıklı parametre); Pulmonary Hypertension (sistolik PAB >35 mmHg) = 1 puan; Elder (>60 yaş) = 1 puan; Filling Pressures (ekoda E/e' >9) = 1 puan. Bu hastada: BMI 34 (>30) → 2 puan; 2 antihipertansif ilaç → 1 puan; paroksismal AF öyküsü → 3 puan; PAB 32 mmHg (≤35, NEGATİF) → 0 puan; yaş 65 (>60) → 1 puan; E/e' 11 (>9) → 1 puan. Toplam: 2+1+3+0+1+1 = 8 puan. Yüksek H2FPEF skoru (genellikle ≥6 yüksek olasılık kabul edilir) HFpEF tanısını güçlü şekilde desteklemektedir; bu skorda genellikle ileri invaziv test olmadan tanı konulabilir veya yüksek klinik güvenle tedaviye başlanabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Skor 9 değil 8'dir (PAB normal olduğundan 1 puan eksik); ayrıca yüksek skor HFpEF'i DIŞLAMAZ, tam tersine olasılığını DESTEKLER.",
+        "B": "DOGRU — Doğru hesaplama: 2+1+3+0+1+1=8; yüksek skor HFpEF olasılığını güçlü destekler.",
+        "C": "YANLIS — Hesaplama hatalıdır; doğru toplam 8'dir, 3 değil.",
+        "D": "YANLIS — AF öyküsü H2FPEF'in en yüksek ağırlıklı (3 puanlık) bileşenidir, değerlendirmeye dahildir.",
+        "E": "YANLIS — Yalnızca PAB kriteri karşılanmamıştır (0 puan katkısı), diğer 5 kriterin puanları toplama dahildir; toplam skor 0 değildir."
+      },
+      "etiketler": [
+        "H2FPEF Skoru",
+        "Atriyal Fibrilasyon",
+        "Skorlama Hesaplama",
+        "Mayo Clinic Skoru",
+        "HFpEF Olasılığı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Reddy et al. Circulation 2018 (H2FPEF Score)"
+    },
+    {
+      "id": "s8",
+      "metin": "Efor dispnesi olan bir hastada H2FPEF skoru 'ara (intermediate)' aralıkta çıkıyor; istirahat ekokardiyografisi ve NP düzeyleri de borderline sınırlarda kalıyor. Tanıyı kesinleştirmek için ileri değerlendirme planlanıyor.\n\nBu klinik senaryoda HFpEF tanısını koymak veya dışlamak için altın standart yöntem ve tanı kriteri hangisidir?",
+      "secenekler": {
+        "A": "Kardiyak MR görüntüleme; T1 mapping değerleri tek başına tanı koydurucudur.",
+        "B": "İnvaziv Hemodinamik Egzersiz Testi; sağ kalp kateterizasyonunda pulmoner kapiller uç basıncının (PCWP) istirahatte ≥15 mmHg veya egzersiz sırasında ≥25 mmHg olarak saptanması HFpEF tanısını kesinleştirir.",
+        "C": "24 saatlik ambulatuar kan basıncı takibi; tanı kesinleştirmede altın standarttır.",
+        "D": "Koroner anjiyografi; HFpEF tanısı için zorunlu ve yeterli bir testtir.",
+        "E": "Yalnızca semptom günlüğü tutulması, invaziv testlere gerek kalmadan tanıyı kesinleştirir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ara olasılıklı/borderline hastalarda altın standart İnvaziv Hemodinamik Egzersiz Testidir. PCWP istirahatte ≥15 mmHg veya egzersizde ≥25 mmHg HFpEF tanısını kesinleştirir.",
+      "aciklama_detay": "Yukarıdaki skorlamalarda (H2FPEF, HFA-PEFF) 'ara (intermediate) olasılıklı' çıkan ve istirahat ekosu/NP seviyeleri borderline olan hastalarda HFpEF tanısını koymak veya dışlamak için altın standart yöntem İnvaziv Hemodinamik Egzersiz Testidir. Bu testte sağ kalp kateterizasyonu yapılır ve pulmoner kapiller uç basıncı (PCWP) hem istirahatte hem de egzersiz sırasında ölçülür. PCWP'nin istirahatte ≥15 mmHg VEYA egzersiz sırasında ≥25 mmHg olarak saptanması HFpEF tanısını kesinleştirir. Bu test özellikle önemlidir çünkü bazı HFpEF hastalarında istirahat dolum basınçları normal kalabilir ve yalnızca egzersizle (artmış venöz dönüş ve talep karşısında) patolojik derecede yükselen sol atriyum/pulmoner kapiller basınç ortaya çıkar — bu, 'egzersizle indüklenen HFpEF' olarak adlandırılan, istirahat testleriyle atlanabilecek önemli bir fenotiptir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kardiyak MR (T1 mapping dahil) değerli bir görüntüleme aracıdır (özellikle infiltratif hastalıkta) ancak HFpEF tanısında tek başına altın standart değildir; invaziv hemodinamik test bu rolü üstlenir.",
+        "B": "DOGRU — İnvaziv egzersiz hemodinamisi altın standarttır; PCWP eşikleri (istirahat ≥15 veya egzersiz ≥25 mmHg) tanı koydurur.",
+        "C": "YANLIS — Ambulatuar KB takibi hipertansiyon değerlendirmesi içindir, HFpEF tanı altın standardı değildir.",
+        "D": "YANLIS — Koroner anjiyografi eşlik eden KAH'ı değerlendirir ama HFpEF tanısı için zorunlu/yeterli bir test değildir.",
+        "E": "YANLIS — Semptom günlüğü subjektif bir araçtır; borderline/ara olasılıklı vakalarda objektif hemodinamik doğrulama (invaziv test) gereklidir."
+      },
+      "etiketler": [
+        "İnvaziv Hemodinamik Test",
+        "PCWP",
+        "Egzersiz Hemodinamisi",
+        "Altın Standart",
+        "Sağ Kalp Kateterizasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Borlaug et al. Circulation 2010; Obokata et al. Circulation 2017 (exercise hemodynamics)"
+    },
+    {
+      "id": "s9",
+      "metin": "Obez (BMI 36) bir HFpEF hastası, klasik volüm yüklenmesi bulgularından ziyade eforla artan nefes darlığı ile karakterize bir klinik seyir gösteriyor. Patofizyolojik değerlendirmede artmış epikardiyal adipoz doku dikkat çekiyor.\n\nObez HFpEF fenotipinin patofizyolojik mekanizması ve klinik sunumu hakkında en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Obez HFpEF fenotipinde epikardiyal adipoz dokunun hiçbir patofizyolojik rolü yoktur, obezite yalnızca mekanik bir yük oluşturur.",
+        "B": "Obez HFpEF fenotipinde artmış epikardiyal adipoz doku, sistemik inflamasyonu körükleyerek koroner mikrovasküler disfonksiyona ve miyokardiyal fibrozise yol açar; bu hastalar genellikle volüm yüklenmesinden ziyade eforla indüklenen sol atriyum basınç artışıyla (nefes darlığı) başvururlar.",
+        "C": "Bu fenotip, geleneksel (obez olmayan) HFpEF hastalarıyla tamamen aynı patofizyolojiyi ve klinik sunumu paylaşır, ayrı bir fenotip olarak tanımlanmamıştır.",
+        "D": "Epikardiyal adipoz doku yalnızca aritmi riskini artırır, miyokardiyal fibrozisle ilişkisi tanımlanmamıştır.",
+        "E": "Obez HFpEF hastaları tipik olarak istirahatte belirgin volüm yüklenmesi ile başvurur, eforla ilişkili semptomlar nadirdir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Obez HFpEF fenotipinde epikardiyal yağ dokusu sistemik inflamasyon üzerinden koroner mikrovasküler disfonksiyon ve miyokardiyal fibrozise yol açar; hastalar tipik olarak eforla indüklenen SA basınç artışıyla (istirahat değil) prezente olur.",
+      "aciklama_detay": "Son epidemiyolojik veriler, obezite ile HFpEF arasında nedensellik düzeyinde bir ilişki olduğunu göstermektedir. Geleneksel HFpEF hastalarından farklı olarak, obez HFpEF fenotipinde artmış epikardiyal adipoz doku, sistemik inflamasyonu körükleyerek koroner mikrovasküler disfonksiyona ve miyokardiyal fibrozise yol açar. Epikardiyal yağ dokusu, miyokarda doğrudan komşuluğu nedeniyle parakrin yolla proinflamatuar sitokinler (IL-6, TNF-α gibi) salgılayarak lokal koroner mikrovasküler endotel fonksiyonunu bozar ve zamanla interstisyel fibrozise katkıda bulunur — bu, HFpEF'in 'sistemik inflamasyon-mikrovasküler disfonksiyon' hipotezinin obeziteye özgü bir uzantısıdır. Klinik olarak bu hastalar genellikle volüm yüklenmesinden (istirahatte belirgin ödem, ortopne gibi) ziyade eforla indüklenen sol atriyum basınç artışıyla (egzersiz sırasında disproporsiyonel nefes darlığı) başvururlar — bu, istirahat ekokardiyografisinin bazen normal/borderline kalabileceği, egzersiz testinin (invaziv hemodinamik egzersiz testi dahil) tanısal değerinin öne çıktığı bir klinik profildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Epikardiyal adipoz doku, tanımlanmış aktif bir patofizyolojik rol (inflamasyon, mikrovasküler disfonksiyon, fibrozis) oynar, yalnızca mekanik yük değildir.",
+        "B": "DOGRU — Epikardiyal yağ → inflamasyon → mikrovasküler disfonksiyon/fibrozis; eforla SA basınç artışı klinik sunumu.",
+        "C": "YANLIS — Obez HFpEF, geleneksel HFpEF'ten farklı patofizyoloji (epikardiyal yağ aracılı) ve klinik sunum (eforla vs volüm yüklenmesi) gösteren ayrı bir fenotip olarak tanımlanmıştır.",
+        "D": "YANLIS — Epikardiyal adipoz doku miyokardiyal fibrozisle DOĞRUDAN ilişkilendirilmiştir, yalnızca aritmi riskiyle sınırlı değildir.",
+        "E": "YANLIS — Tam tersine, bu hastalar tipik olarak EFORLA indüklenen semptomlarla başvurur, istirahat volüm yüklenmesi ile değil."
+      },
+      "etiketler": [
+        "Obez HFpEF Fenotipi",
+        "Epikardiyal Adipoz Doku",
+        "Koroner Mikrovasküler Disfonksiyon",
+        "Miyokardiyal Fibrozis",
+        "Fenotip Bazlı Yaklaşım"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Obokata et al. Circulation 2017 (obese HFpEF phenotype); Packer & Kitzman JACC Basic Transl Sci 2020"
+    },
+    {
+      "id": "s10",
+      "metin": "Obez HFpEF fenotipi tanılı bir hastada tedavi planlanıyor. Hasta halihazırda maksimum tolere dozda SGLT2 inhibitörü (empagliflozin) kullanmaktadır ancak semptomları ve efor kapasitesi hâlâ belirgin kısıtlı; BMI 33.\n\nGüncel literatüre göre bu hastada eklenebilecek, obezite ilişkili HFpEF fenotipine özgü ek tedavi seçeneği ve kanıtı hangisidir?",
+      "secenekler": {
+        "A": "GLP-1/GIP reseptör agonistleri (Semaglutid [STEP-HFpEF çalışması], Tirzepatid [SUMMIT çalışması]); kilo kaybı ve metabolik modülasyon sağlayarak semptomları ve efor kapasitesini anlamlı ölçüde iyileştirdiği gösterilmiştir.",
+        "B": "Ek SGLT2 inhibitörü eklenmesi (iki farklı SGLT2i kombinasyonu); bu, tek ajan kullanımına kıyasla üstün kanıtlanmıştır.",
+        "C": "Yüksek doz tiyazid diüretik monoterapisi; obez HFpEF fenotipinde birinci basamak ve tek kanıtlanmış tedavidir.",
+        "D": "Bariatrik cerrahi tüm obez HFpEF hastalarında zorunlu ilk basamak tedavidir, farmakoterapi denenmeden uygulanmalıdır.",
+        "E": "GLP-1/GIP agonistleri obez HFpEF hastalarında kontrendikedir çünkü kalp yetersizliğini kötüleştirdiği gösterilmiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "GLP-1/GIP reseptör agonistleri (Semaglutid-STEP-HFpEF, Tirzepatid-SUMMIT), kilo kaybı ve metabolik modülasyon yoluyla obez HFpEF fenotipinde semptom ve efor kapasitesini anlamlı iyileştirmiştir — SGLT2i'ye ek olarak güncel kılavuzlara giren önemli bir seçenektir.",
+      "aciklama_detay": "Obez HFpEF fenotipinde SGLT2 inhibitörleri (empagliflozin ve dapagliflozin) ana tedavi olmakla birlikte; obezite ilişkili HFpEF fenotipinde kilo kaybı ve metabolik modülasyon sağlayan GLP-1/GIP reseptör agonistlerinin (Semaglutid [STEP-HFpEF çalışması], Tirzepatid [SUMMIT çalışması]) semptomları ve efor kapasitesini anlamlı ölçüde iyileştirdiği güncel kılavuzlara ve literatüre yeni giren, önemli bir bilgidir. Bu ajanlar, obez HFpEF fenotipinin altında yatan patofizyolojik mekanizmayı (epikardiyal adipoz doku aracılı inflamasyon, kilo fazlalığına bağlı hemodinamik yük) doğrudan hedefler — kilo kaybı sağlayarak hem mekanik yükü azaltır hem de sistemik/epikardiyal inflamasyonu geriletebilir. STEP-HFpEF çalışması semaglutidin, SUMMIT çalışması ise tirzepatidin obez HFpEF popülasyonunda KCCQ (Kansas City Cardiomyopathy Questionnaire) semptom skorları ve 6 dakika yürüme mesafesi gibi fonksiyonel parametrelerde anlamlı iyileşme sağladığını göstermiştir. Bu, obez HFpEF'in artık yalnızca 'kalp yetersizliği' olarak değil, kardiyometabolik bir sendrom olarak ele alınması gerektiğini destekleyen güncel bir paradigma değişimini yansıtır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — GLP-1/GIP agonistleri (Semaglutid/STEP-HFpEF, Tirzepatid/SUMMIT) obez HFpEF'te semptom/efor kapasitesini iyileştirir.",
+        "B": "YANLIS — İki farklı SGLT2 inhibitörünün kombine kullanımı standart veya kanıtlanmış bir yaklaşım değildir.",
+        "C": "YANLIS — Diüretikler semptomatik konjesyon yönetiminde kullanılır ancak obez HFpEF'in birinci basamak/tek kanıtlanmış tedavisi olarak tanımlanmamıştır; hastalığı modifiye eden bir tedavi değildir.",
+        "D": "YANLIS — Bariatrik cerrahi tüm hastalarda zorunlu ilk basamak değildir; farmakolojik seçenekler (SGLT2i, GLP-1/GIP agonistleri) önce değerlendirilir.",
+        "E": "YANLIS — Tam tersine, STEP-HFpEF ve SUMMIT çalışmaları bu ajanların obez HFpEF'te FAYDALI olduğunu, kötüleştirmediğini göstermiştir."
+      },
+      "etiketler": [
+        "GLP-1/GIP Agonistleri",
+        "Semaglutid",
+        "Tirzepatid",
+        "STEP-HFpEF",
+        "SUMMIT Çalışması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kosiborod et al. N Engl J Med 2023 (STEP-HFpEF); SUMMIT Trial (Tirzepatide in obese HFpEF) 2024-2025"
+    }
+  ]
+}

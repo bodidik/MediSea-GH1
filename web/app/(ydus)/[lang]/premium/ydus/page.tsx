@@ -34,12 +34,11 @@ type NewestTopicRaw = NewestTopic & { mtimeMs: number };
 
 // İçerik dosyası henüz eklenmemiş, ilerleyen dönemde açılacak branşlar
 const LOCKED_BRANCHES: LockedBranch[] = [
-  { id: 'kardiyoloji', baslik: 'Kardiyoloji' },
   { id: 'tibbi_onkoloji', baslik: 'Tıbbi Onkoloji' },
   { id: 'enfeksiyon', baslik: 'Enfeksiyon Hastalıkları' },
 ];
 
-const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji'];
+const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji'];
 
 function bransYukle(id: string): BransVerisi | null {
   try {

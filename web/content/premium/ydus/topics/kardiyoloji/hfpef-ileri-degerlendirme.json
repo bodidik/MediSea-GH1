@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "id": "hfpef-ileri-degerlendirme",
+    "branch": "kardiyoloji",
+    "baslik": "HFpEF — İleri Görüntüleme, Biyobelirteçler ve Tanı Skorlamaları",
+    "altbaslik": "ASE/EACVI diyastolik fonksiyon algoritması, GLS/apikal sparing, NT-proBNP/CA-125/hsTnT yorumlama tuzakları, H2FPEF ve HFA-PEFF skorlamaları, invaziv egzersiz hemodinamisi ve obez HFpEF fenotipi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Korunmuş Ejeksiyon Fraksiyonlu Kalp Yetersizliği (HFpEF) tanısı, gri zonda kalan bir klinik problemdir. Bu modül, ASE/EACVI diyastolik fonksiyon algoritmalarını, H2FPEF/HFA-PEFF skorlamalarını ve ileri biyobelirteç analizlerini kapsar."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "ASE/EACVI Diyastolik Fonksiyon Değerlendirmesi — 4 Temel Parametre",
+      "kolonlar": [
+        "Parametre",
+        "Eşik Değer"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Anüler e' Hızı",
+            "Septal e' <7 cm/sn VEYA Lateral e' <10 cm/sn"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Ortalama E/e' Oranı ★",
+            ">14 — SOL ATRİYUM BASINCI/LV dolum basıncı artışının EN GÜÇLÜ non-invaziv göstergesi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sol Atriyum Hacim İndeksi (LAVI)",
+            ">34 mL/m²"
+          ]
+        },
+        {
+          "hucreler": [
+            "Pik Triküspit Yetersizliği (TR) Hızı",
+            ">2.8 m/sn"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Sınav Kuralı — 4 Parametre Yorumlama: 4'ü veya 3'ü pozitifse → Diyastolik Disfonksiyon KESİNLEŞİR. Yalnızca 1'i pozitif veya hepsi negatifse → fonksiyon NORMAL kabul edilir. 2'si pozitifse → durum 'BELİRSİZ (indeterminate)' olarak değerlendirilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Dolum Basıncı Derecelendirmesi (Mitral Akım Paterni — E/A Oranı)",
+      "kolonlar": [
+        "Grade",
+        "E/A ve Ek Kriter",
+        "Sol Atriyum Basıncı"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Grade I — Bozulmuş Gevşeme",
+            "E/A ≤0.8 ve E hızı ≤50 cm/sn",
+            "Normal"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Grade II — Psödonormal",
+            "E/A >0.8 ila <2 arası",
+            "Artmış (dolum basıncı yüksek)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Grade III — Restriktif Patern",
+            "E/A ≥2 VE E/e' >14",
+            "Belirgin artmış"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Global Longitudinal Strain (GLS)",
+      "satirlar": [
+        {
+          "metin": "GLS analizi, LVEF'si korunmuş hastalarda gizli miyokardiyal disfonksiyonu saptamada kritiktir. Normal mutlak GLS değeri **>%18**; **<%16** olması anormal kabul edilir. **Kardiyak amiloidozda** bazal segmentlerde strain düşerken apekste korunması (**'apikal sparing'**) tipiktir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Natriüretik Peptidler (NP) — Yaşa Göre Rule-in / Rule-out Eşikleri",
+      "kolonlar": [
+        "Amaç",
+        "Eşik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Rule-in (Tanıyı Doğrulama) — Yaşa Göre NT-proBNP ★",
+            "<50 yaş: >450 pg/mL; 50-75 yaş: >900 pg/mL; >75 yaş: >1800 pg/mL"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Rule-out (Tanıyı Ekarte Etme) — Akut Dispne",
+            "NT-proBNP <300 pg/mL VEYA BNP <100 pg/mL"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "NP Yorumlama Tuzakları: (1) Obezite, adipositlerdeki klerens reseptörleri nedeniyle NP seviyelerini DÜŞÜRÜR ('NP eksikliği sendromu') — HFpEF tanısını zorlaştırabilir. (2) ARNI (sakubitril/valsartan) tedavisi alanlarda neprilisin inhibisyonu BNP düzeylerini YÜKSELTİR (yalancı yükseklik); NT-proBNP neprilisin substratı OLMADIĞINDAN bu durumdan etkilenmez ve takipte kullanılması gereken asıl testtir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "CA-125 — Sağ Kalp/Konjesyon Belirteci: Klasik bir over tümör markerı olan CA-125, kalp yetersizliğinde sistemik venöz konjesyonun, serozal inflamasyonun ve sağ kalp disfonksiyonunun (TY, İVC dilatasyonu) güçlü bir göstergesidir. NT-proBNP sol kalp hemodinamik stresini yansıtırken, CA-125 sağ kalp/volüm yükünü yansıtır; renal disfonksiyon ve yaştan NT-proBNP'ye kıyasla DAHA AZ etkilenmesi, onu yaşlı ve böbrek yetmezlikli hastalarda kıymetli bir tamamlayıcı biyobelirteç yapar."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Yüksek Duyarlıklı Troponin (hsTnT)",
+      "satirlar": [
+        {
+          "metin": "Kalp yetersizliği olmayan ancak risk taşıyan popülasyonlarda (Evre A ve B), hsTnT'nin kalıcı düşüklük yerine **hafif yüksek** seyretmesi, NT-proBNP'den BAĞIMSIZ olarak miyokardiyal stresi ve ileride gelişecek klinik kalp yetersizliği riskini öngörür."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "H2FPEF Skoru (Mayo Clinic) — Toplam 9 Puan",
+      "kolonlar": [
+        "Parametre",
+        "Kriter",
+        "Puan"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "H — Heavy (Ağır)",
+            "BMI >30 kg/m²",
+            "2 puan"
+          ]
+        },
+        {
+          "hucreler": [
+            "H — Hypertensive",
+            "≥2 antihipertansif ilaç kullanımı",
+            "1 puan"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "A — Atrial Fibrillation ★",
+            "Geçmiş veya mevcut AF",
+            "3 puan — EN YÜKSEK ağırlıklı parametre"
+          ]
+        },
+        {
+          "hucreler": [
+            "P — Pulmonary Hypertension",
+            "Sistolik PAB >35 mmHg",
+            "1 puan"
+          ]
+        },
+        {
+          "hucreler": [
+            "E — Elder (İleri Yaş)",
+            ">60 yaş",
+            "1 puan"
+          ]
+        },
+        {
+          "hucreler": [
+            "F — Filling Pressures",
+            "Ekoda E/e' >9",
+            "1 puan"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "HFA-PEFF Algoritması (ESC)",
+      "satirlar": [
+        {
+          "metin": "Dört basamaklıdır: **(P)** Pretest değerlendirme → **(E)** Ekokardiyografik ve Natriüretik Peptid skorlaması → **(F)** Fonksiyonel testler (egzersiz eko veya invaziv egzersiz hemodinamisi) → **(F)** Final etyolojik tanı (amiloidoz, Fabry vb. için spesifik testler)."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Altın Standart — İnvaziv Hemodinamik Egzersiz Testi ★: H2FPEF/HFA-PEFF skorlamalarında 'ara (intermediate) olasılıklı' çıkan ve istirahat ekosu/NP seviyeleri borderline olan hastalarda tanıyı koymak veya dışlamak için altın standarttır. Sağ kalp kateterizasyonunda PCWP'nin istirahatte ≥15 mmHg VEYA EGZERSİZ SIRASINDA ≥25 mmHg olması HFpEF tanısını kesinleştirir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Obezite ve HFpEF — Spesifik Fenotip",
+      "satirlar": [
+        {
+          "metin": "Obezite ile HFpEF arasında nedensellik düzeyinde bir ilişki gösterilmiştir. Obez HFpEF fenotipinde artmış epikardiyal adipoz doku, sistemik inflamasyonu körükleyerek **koroner mikrovasküler disfonksiyona ve miyokardiyal fibrozise** yol açar. Bu hastalar genellikle volüm yüklenmesinden ziyade **eforla indüklenen sol atriyum basınç artışıyla** (nefes darlığı) başvururlar."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Obez HFpEF Fenotipinde Tedavi",
+      "kolonlar": [
+        "Sınıf",
+        "Ajan",
+        "Kanıt"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "SGLT2 İnhibitörleri",
+            "Empagliflozin, Dapagliflozin",
+            "Ana tedavi — tüm HFpEF fenotiplerinde temel taş"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "GLP-1/GIP Reseptör Agonistleri ★",
+            "Semaglutid (STEP-HFpEF), Tirzepatid (SUMMIT)",
+            "Kilo kaybı + metabolik modülasyon ile semptomları ve efor kapasitesini anlamlı ölçüde iyileştirir — obezite ilişkili HFpEF fenotipine özgü, güncel kılavuzlara yeni giren yüksek önemde bilgi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — HFpEF İleri Değerlendirme 8 Altın Kural: (1) 4 diyastolik parametreden 3-4 pozitif=DD kesin, 1 pozitif/hepsi negatif=normal, 2 pozitif=belirsiz. (2) E/e' >14 = LV dolum basıncı artışının en güçlü non-invaziv göstergesi. (3) GLS <%16 anormal; amiloidozda apikal sparing tipik. (4) ARNI kullananlarda takip NT-proBNP ile yapılır (BNP neprilisin ile yalancı yükselir). (5) Obezite NP düzeyini düşürür (NP eksikliği sendromu) — tanıyı zorlaştırır. (6) CA-125 sağ kalp/konjesyonu, NT-proBNP sol kalp stresini yansıtır. (7) H2FPEF'te AF en ağırlıklı parametre (3 puan). (8) Ara olasılıklı hastalarda altın standart: invaziv egzersiz hemodinamisi (PCWP istirahat ≥15 veya egzersiz ≥25 mmHg)."
+    }
+  ]
+}

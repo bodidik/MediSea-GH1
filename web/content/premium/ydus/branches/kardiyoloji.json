@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "id": "kardiyoloji",
+    "baslik": "Kardiyoloji",
+    "aciklama": "Kalp yetersizliği, koroner arter hastalığı, aritmiler ve kapak hastalıklarını kapsayan uzmanlık sınav modülü.",
+    "renk": "#1a4a6b",
+    "emoji": "❤️"
+  },
+  "kategoriler": [
+    {
+      "id": "kalp-yetersizligi",
+      "baslik": "Kalp Yetersizliği",
+      "aciklama": "HFpEF/HFrEF tanı, görüntüleme ve tedavi yaklaşımları",
+      "emoji": "🫀",
+      "konular": [
+        {
+          "id": "hfpef-ileri-degerlendirme",
+          "baslik": "HFpEF — İleri Görüntüleme, Biyobelirteçler ve Tanı Skorlamaları",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    }
+  ]
+}
