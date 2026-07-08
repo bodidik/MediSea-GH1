@@ -42,9 +42,10 @@
           "id": "sle",
           "baslik": "Sistemik Lupus Eritematozus (SLE)",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         }
       ]
     },

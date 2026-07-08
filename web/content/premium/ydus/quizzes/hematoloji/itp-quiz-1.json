@@ -1,0 +1,308 @@
+{
+  "id": "quiz-hemato-itp-001",
+  "baslik": "İmmün Trombositopeni (İTP) — Soru Seti 1 (Patogenez)",
+  "branch": "hematoloji",
+  "topic": "itp",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "İTP tanılı bir hastada otoantikor profili inceleniyor ve IgG yapısındaki antikorların trombosit yüzey glikoproteinlerine bağlandığı gösteriliyor.\n\nBu otoantikorların en sık hedeflediği iki glikoprotein kompleksi ve bunların fonksiyonu nedir?",
+      "secenekler": {
+        "A": "GPIIb/IIIa (fibrinojen reseptörü) ve GPIb/IX/V (von Willebrand reseptörü) — İTP'de otoantikorların en sık hedeflediği iki kompleks.",
+        "B": "Yalnızca GPIIb/IIIa hedeflenir; GPIb/IX/V kompleksi İTP patogenezinde hiçbir rol oynamaz.",
+        "C": "Otoantikorlar trombosit içi granül proteinlerini (örn. PF4) hedefler, yüzey glikoproteinlerini değil.",
+        "D": "GPIIb/IIIa yalnızca eritrositlerde eksprese edilir, trombosit otoantikorlarının hedefi olamaz.",
+        "E": "GPIb/IX/V, fibrinojen reseptörüdür ve İTP'nin birincil hedefidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İTP'de otoantikorlar en sık GPIIb/IIIa (fibrinojen reseptörü) ve GPIb/IX/V (von Willebrand reseptörü) komplekslerini hedefler — bu, hastalığın en iyi tanımlanmış patogenez mekanizmasının başlangıç noktasıdır.",
+      "aciklama_detay": "İTP patofizyolojisinde en iyi tanımlanmış mekanizma, B hücre klonları tarafından üretilen IgG yapısındaki otoantikorların trombosit yüzey glikoproteinlerine (GP) bağlanmasıdır. Bu otoantikorlar sıklıkla GPIIb/IIIa (fibrinojen reseptörü) ve GPIb/IX/V (von Willebrand reseptörü) komplekslerini hedef alır. Bu iki glikoprotein kompleksi trombosit fonksiyonunda (agregasyon ve adezyon) kritik rol oynar; otoantikorların bu yapıları hedeflemesi hem trombositlerin immün klerensine yol açar hem de (bağlanma bölgesine göre) trombosit fonksiyonunu doğrudan etkileyebilir. Anti-GPIIb/IIIa ve anti-GPIb/IX/V antikorları arasındaki ayrım önemlidir çünkü aşağı yöndeki klerens mekanizmaları farklılık gösterir (örn. anti-GPIIb/IIIa kompleman aktivasyonuyla, anti-GPIb/IX ise desialilasyon yoluyla Fc-bağımsız klerensle daha güçlü ilişkilidir).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — GPIIb/IIIa ve GPIb/IX/V, İTP'de otoantikorların en sık hedeflediği iki majör kompleks.",
+        "B": "YANLIS — GPIb/IX/V kompleksi de İTP patogenezinde (özellikle desialilasyon mekanizmasında) merkezi bir rol oynar.",
+        "C": "YANLIS — İTP'nin klasik hedefi trombosit YÜZEY glikoproteinleridir, granül içi proteinler (PF4 farklı bir bağlamda — HIT'te — hedeftir) değil.",
+        "D": "YANLIS — GPIIb/IIIa trombositlerde eksprese edilen bir fibrinojen reseptörüdür, eritrositlerle ilgisi yoktur.",
+        "E": "YANLIS — Fibrinojen reseptörü GPIIb/IIIa'dır, GPIb/IX/V von Willebrand faktör reseptörüdür; tanımlar birbirine karıştırılmıştır."
+      },
+      "etiketler": [
+        "GPIIb/IIIa",
+        "GPIb/IX/V",
+        "Otoantikor",
+        "Trombosit Glikoproteinleri",
+        "Temel Patogenez"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Cines & Blanchette N Engl J Med 2002; Cooper & Ghanima N Engl J Med 2019"
+    },
+    {
+      "id": "s2",
+      "metin": "İTP hastalarında dalağın hem trombosit klerensinde hem de hastalığın devamlılığında merkezi bir rol oynadığı biliniyor.\n\nDalak makrofajlarının İTP patogenezindeki ikili (dual) rolü nedir?",
+      "secenekler": {
+        "A": "Dalak makrofajları yalnızca opsonize trombositleri FcγR aracılığıyla fagosite eder; başka bir immünolojik fonksiyonları yoktur.",
+        "B": "Dalak makrofajları hem otoantikorlarla kaplanmış (opsonize) trombositleri Fcγ reseptörleri (FcγR) aracılığıyla fagosite eder, hem de antijen sunan hücreler (APC) olarak işlev görerek otoimmün yanıtı sürekli hale getiren bir döngü oluşturur.",
+        "C": "Dalak makrofajları trombosit klerensinde rol oynamaz, bu işlev yalnızca karaciğer Kupffer hücrelerine aittir.",
+        "D": "Dalak makrofajlarının APC işlevi, İTP patogeneziyle ilgisiz, tamamen bağımsız bir immünolojik süreçtir.",
+        "E": "Dalak makrofajları yalnızca M2 (anti-inflamatuar) polarizasyon gösterir, bu nedenle fagositoz kapasiteleri düşüktür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dalak makrofajları çift rol oynar: (1) FcγR ile opsonize trombositleri fagosite eder, (2) APC olarak otoimmün yanıtı SÜREKLİ HALE GETİREN bir döngü oluşturur — bu ikinci rol, dalağın neden hem yıkım hem de hastalığın devamlılığı için kritik olduğunu açıklar.",
+      "aciklama_detay": "Otoantikorlarla kaplanmış (opsonize) trombositler, retiküloendotelyal sistemde, özellikle dalakta bulunan makrofajlar tarafından Fcγ reseptörleri (FcγR) aracılığıyla fagosite edilerek dolaşımdan uzaklaştırılır. Bu süreçte dalak makrofajları aynı zamanda antijen sunan hücreler (APC) olarak işlev görerek otoimmün yanıtı sürekli hale getiren bir döngü oluştururlar. Bu ikili rol kritiktir: makrofajlar yalnızca trombositleri pasif olarak yok etmekle kalmaz, aynı zamanda fagosite ettikleri trombosit antijenlerini T hücrelerine sunarak otoreaktif immün yanıtın devam etmesini ve güçlenmesini sağlarlar — bu, splenektominin (dalağın cerrahi olarak çıkarılması) neden bazı kronik/refrakter İTP hastalarında etkili bir tedavi seçeneği olduğunu patofizyolojik olarak açıklar: hem yıkım bölgesi hem de immün yanıtı besleyen APC kaynağı ortadan kaldırılmış olur. İTP'de monositlerin artmış proenflamatuar FcγRI ekspresyonu ve makrofajların M1 (proinflamatuar) polarizasyonu artmış fagositoz kapasitesi ile ilişkilidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Dalak makrofajlarının APC işlevi de patogenezde eşit derecede önemlidir, yalnızca fagositozla sınırlı değildir.",
+        "B": "DOGRU — Çift rol: FcγR aracılı fagositoz + APC işleviyle otoimmün döngünün sürdürülmesi.",
+        "C": "YANLIS — Dalak, İTP'de trombosit klerensinin BAŞLICA (birincil) bölgesidir, bu rolü Kupffer hücrelerine devretmez.",
+        "D": "YANLIS — APC işlevi tam olarak İTP patogeneziyle doğrudan ilişkilidir; otoimmün döngünün sürmesinin ana mekanizmalarından biridir.",
+        "E": "YANLIS — İTP'de makrofajlar M1 (PROİNFLAMATUAR) polarizasyon gösterir, M2 değil; bu da ARTMIŞ fagositoz kapasitesiyle ilişkilidir."
+      },
+      "etiketler": [
+        "Dalak Makrofajları",
+        "FcγR",
+        "Antijen Sunan Hücre",
+        "M1 Polarizasyon",
+        "Splenektomi Rasyoneli"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Audia et al. Front Immunol 2021; Kuwana et al. Blood 2002"
+    },
+    {
+      "id": "s3",
+      "metin": "Anti-GPIIb/IIIa antikoru pozitif bir İTP hastasında trombosit yüzeyinde C3b birikimi gösteriliyor.\n\nBu bulgu hangi ek klerens mekanizmasını işaret eder ve bu mekanizma otoantikor aracılı fagositozdan nasıl farklıdır?",
+      "secenekler": {
+        "A": "C3b birikimi, klasik kompleman yolağının aktivasyonunu gösterir; anti-GPIIb/IIIa antikorlarının varlığında bu aktivasyon daha belirgindir ve makrofajlardaki kompleman reseptörleri (CR1) üzerinden trombosit klerensini hızlandırır — bu, saf FcγR aracılı fagositozdan ayrı, tamamlayıcı bir mekanizmadır.",
+        "B": "C3b birikimi, trombosit üretiminin arttığını gösteren pozitif bir bulgudur, yıkımla ilgisi yoktur.",
+        "C": "Kompleman aktivasyonu yalnızca anti-GPIb/IX antikorlarında görülür, anti-GPIIb/IIIa ile ilişkisi yoktur.",
+        "D": "C3b birikimi FcγR aracılı fagositozu tamamen inhibe eder, klerensi yavaşlatan koruyucu bir mekanizmadır.",
+        "E": "Kompleman aktivasyonu İTP patogenezinde hiçbir rol oynamadığı kanıtlanmış bir mekanizmadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anti-GPIIb/IIIa antikorları klasik kompleman yolağını aktive ederek trombosit yüzeyinde C3b birikimine yol açar; bu, makrofajlardaki CR1 reseptörleri üzerinden ek, FcγR'den bağımsız bir klerens yolu sağlar.",
+      "aciklama_detay": "Otoantikorların fagositozu artırmasının yanı sıra, klasik kompleman yolağını aktive ederek de trombosit yıkımına katkıda bulunduğu bilinmektedir. Özellikle anti-GPIIb/IIIa antikorlarının varlığında kompleman aktivasyonu daha belirgindir ve bu durum trombosit yüzeyinde C3b birikimine yol açarak makrofajlardaki kompleman reseptörleri (CR1) üzerinden hücre klerensini hızlandırır. Bu mekanizma, klasik FcγR aracılı fagositozdan bağımsız/ek bir yol sunar — yani bir trombosit hem FcγR (Fc bölgesi tanıma) hem de CR1 (kompleman C3b tanıma) yoluyla eşzamanlı olarak makrofaj saldırısına maruz kalabilir, bu da klerensin hızını ve etkinliğini artırır. Bu bilgi, İTP tedavisinde neden yalnızca FcγR blokajına dayanan tedavilerin (örn. IVIG) bazı hastalarda tam yanıt sağlayamayabileceğini, kompleman aracılı ek bir mekanizmanın devrede olabileceğini açıklayan önemli bir patofizyolojik detaydır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Klasik kompleman yolağı aktivasyonu → C3b birikimi → CR1 aracılı ek klerens mekanizması.",
+        "B": "YANLIS — C3b birikimi trombosit ÜRETİMİYLE değil, YIKIMLA (klerens hızlanmasıyla) ilişkilidir.",
+        "C": "YANLIS — Metinde açıkça belirtildiği gibi kompleman aktivasyonu özellikle ANTİ-GPIIb/IIIa antikorlarının varlığında belirgindir.",
+        "D": "YANLIS — C3b birikimi FcγR aracılı fagositozu inhibe etmez; tam tersine EK bir klerens yolu (CR1 üzerinden) sağlayarak toplam yıkımı ARTIRIR.",
+        "E": "YANLIS — Kompleman aktivasyonu İTP'de iyi tanımlanmış, katkıda bulunan bir mekanizmadır."
+      },
+      "etiketler": [
+        "Kompleman Aktivasyonu",
+        "C3b",
+        "CR1",
+        "Anti-GPIIb/IIIa",
+        "Klasik Yolak"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Peerschke et al. Br J Haematol 2010; Tsubakio et al. Br J Haematol 1986"
+    },
+    {
+      "id": "s4",
+      "metin": "Anti-GPIb/IX antikoru pozitif bir İTP hastasında, klasik FcγR aracılı dalak fagositozundan bağımsız, karaciğerde gerçekleşen alternatif bir trombosit klerens mekanizması araştırılıyor.\n\nBu Fc-bağımsız klerens yolağının basamakları nelerdir?",
+      "secenekler": {
+        "A": "Anti-GPIb/IX antikorları (veya CD8+ sitotoksik T hücreleri) nöraminidaz aktivitesini artırarak trombosit membranındaki sialik asit kalıntılarını uzaklaştırır (desialilasyon); desialile trombositler karaciğerde hepatositler üzerindeki Ashwell-Morell reseptörleri (AMR) tarafından tanınarak karaciğerde sekestre edilir.",
+        "B": "Bu mekanizma tamamen dalak-bağımlıdır, karaciğerin bu süreçte hiçbir rolü yoktur.",
+        "C": "Desialilasyon süreci trombosit üretimini artırarak trombositopeniyi kompanse eden koruyucu bir mekanizmadır.",
+        "D": "Ashwell-Morell reseptörleri yalnızca eritrositlerin yaşlanmasında rol oynar, trombosit klerensiyle ilgisi yoktur.",
+        "E": "Bu mekanizma yalnızca FcγR aracılı fagositozun güçlendirilmiş bir formudur, Fc bölgesinden tamamen bağımsız değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anti-GPIb/IX antikorları/CD8+ CTL → nöraminidaz aktivasyonu → sialik asit kaybı (desialilasyon) → hepatositlerdeki Ashwell-Morell reseptörleri (AMR) tanıması → karaciğerde sekestrasyon. Bu, Fc-BAĞIMSIZ bir yolaktır.",
+      "aciklama_detay": "Geleneksel FcγR aracılı yıkıma ek olarak, başta anti-GPIb/IX antikorları olmak üzere bazı otoantikorlar trombosit desialilasyonunu tetikleyerek Fc-bağımsız bir yıkım yolağını aktive eder. Otoantikorların (veya CD8+ sitotoksik T hücrelerinin) etkisiyle nöraminidaz aktivitesi artar ve trombosit membranındaki sialik asit kalıntıları uzaklaştırılır. Desialile olmuş bu yaşlanmış veya modifiye trombositler, karaciğerde hepatositler üzerinde bulunan Ashwell-Morell reseptörleri (AMR) tarafından tanınır ve karaciğerde sekestre edilerek dolaşımdan hızla uzaklaştırılır. Bu mekanizma klinik açıdan önemlidir çünkü Fc bölgesini hedef alan tedaviler (IVIG, anti-D gibi, veya FcγR blokajı) bu Fc-bağımsız yolağı etkilemez — bu, bazı İTP hastalarının neden standart FcγR-hedefli tedavilere dirençli olabileceğini açıklayan güncel bir patofizyolojik kavramdır ve nöraminidaz inhibitörlerinin (örn. oseltamivir) araştırma amaçlı denenmesinin de rasyonelini oluşturur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Nöraminidaz aktivasyonu → desialilasyon → hepatik AMR tanıması → karaciğerde sekestrasyon; Fc-bağımsız yolak.",
+        "B": "YANLIS — Bu mekanizma tam olarak KARACİĞER kaynaklıdır (AMR, hepatositler üzerinde), dalaktan bağımsız bir ek yolaktır.",
+        "C": "YANLIS — Desialilasyon üretim artışı değil, klerens/YIKIM sürecinin bir parçasıdır; trombositopeniyi KÖTÜLEŞTİRİR.",
+        "D": "YANLIS — Ashwell-Morell reseptörleri bu bağlamda spesifik olarak DESİALİLE TROMBOSİTLERİ tanır ve karaciğer sekestrasyonunu sağlar; trombosit klerensiyle doğrudan ilişkilidir.",
+        "E": "YANLIS — Bu yolak açıkça 'Fc-bağımsız' olarak tanımlanmıştır; FcγR aracılı fagositozdan MEKANİSTİK OLARAK FARKLI, ayrı bir süreçtir."
+      },
+      "etiketler": [
+        "Desialilasyon",
+        "Nöraminidaz",
+        "Ashwell-Morell Reseptörü",
+        "Fc-Bağımsız Klerens",
+        "Karaciğer Sekestrasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Li et al. Nat Commun 2015; Grozovsky et al. Nat Med 2015"
+    },
+    {
+      "id": "s5",
+      "metin": "Kronik İTP tanılı bir hastada immünolojik profil çalışılıyor ve enflamatuar T hücre alt gruplarında artış, regülatör T hücrelerinde (Treg) ise azalma saptanıyor. Ayrıca foliküler T helper (TFH) hücrelerinin aktivitesinde artış gözleniyor.\n\nBu T hücre disregülasyonunun hastalığın kronikleşmesindeki rolü nasıl açıklanır?",
+      "secenekler": {
+        "A": "Enflamatuar Th1, Th17 ve Th22 hücrelerinde aşırı artış, Treg sayı/fonksiyonunda azalma meydana gelir. TFH hücreleri, CD40/CD154 etkileşimi ve IL-21 salınımı yoluyla otoreaktif B hücrelerinin çoğalmasını ve patojenik antikor üreten plazma hücrelerine farklılaşmasını stimüle eder.",
+        "B": "Treg hücrelerinin artması, İTP'nin kronikleşmesinin ana nedenidir; bu hücreler otoimmün yanıtı güçlendirir.",
+        "C": "TFH hücrelerinin B hücreleriyle etkileşimi İTP patogeneziyle ilgisizdir, yalnızca normal immün yanıtın bir parçasıdır.",
+        "D": "Th1, Th17 ve Th22 hücrelerinde azalma, İTP'nin kronikleşmesinden sorumlu tutulan temel bulgudur.",
+        "E": "IL-21, yalnızca T hücre aktivasyonunu baskılayan anti-inflamatuar bir sitokindir, B hücre farklılaşmasında rolü yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İTP'de Th1/Th17/Th22 artar, Treg azalır. TFH hücreleri CD40/CD154 + IL-21 ile otoreaktif B hücrelerini/plazma hücrelerini besleyerek otoantikor üretimini sürdürür — bu, hastalığın kronikleşmesinin T-hücre temelli mekanizmasıdır.",
+      "aciklama_detay": "İTP'de T lenfosit anormallikleri hastalığın kronikleşmesinde ve şiddetinde kritik rol oynar. İmmün toleransın bozulmasıyla birlikte enflamatuar Th1, Th17 ve Th22 hücrelerinde aşırı bir artış, immün yanıtı baskılayan regülatör T hücrelerinin (Treg) sayı ve fonksiyonlarında ise azalma meydana gelir — bu dengesizlik (proinflamatuar hücrelerin artışı + baskılayıcı hücrelerin azalışı), otoimmün yanıtın kontrolsüz devam etmesine zemin hazırlar. Foliküler T helper (TFH) hücreleri, CD40/CD154 etkileşimi ve interlökin-21 (IL-21) salınımı yoluyla otoreaktif B hücrelerinin çoğalmasını ve patojenik antikor üreten plazma hücrelerine farklılaşmasını stimüle eder — bu, germinal merkez reaksiyonunun otoimmün bağlamda 'yoldan çıkmış' bir versiyonudur ve otoantikor üretiminin sürekliliğini sağlayan hücresel motor işlevi görür. Bu T hücre disregülasyon paterni (Th1/17/22↑, Treg↓, TFH aktivasyonu), İTP'nin akut formdan kronik forma geçişinde önemli bir belirleyici olarak kabul edilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Th1/Th17/Th22 artışı + Treg azalması + TFH-CD40/IL-21 ekseni ile otoreaktif B hücre/plazma hücre desteği.",
+        "B": "YANLIS — Treg hücreleri AZALIR (artmaz); Treg'lerin azalması otoimmün yanıtın kontrolsüz kalmasına katkıda bulunur, güçlendirmez tam tersine baskılayıcı işlevlerini kaybederler.",
+        "C": "YANLIS — TFH-B hücre etkileşimi İTP'de tam olarak PATOLOJİK otoreaktif B hücre/plazma hücre gelişimini destekleyen merkezi bir mekanizmadır.",
+        "D": "YANLIS — Th1, Th17 ve Th22 hücrelerinde AZALMA değil, AŞIRI ARTIŞ görülür; bu, hastalığın enflamatuar zeminini oluşturur.",
+        "E": "YANLIS — IL-21, B hücre çoğalması ve plazma hücresine FARKLILAŞMAYI UYARAN (baskılamayan) bir sitokindir; TFH hücrelerinin bu etkisi otoreaktif B hücreleri için de geçerlidir."
+      },
+      "etiketler": [
+        "Th1/Th17/Th22",
+        "Treg",
+        "Foliküler T Helper",
+        "IL-21",
+        "Kronik İTP"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Zhu et al. Blood 2016; Audia et al. Front Immunol 2021"
+    },
+    {
+      "id": "s6",
+      "metin": "İTP tanılı bir hastada CD8+ sitotoksik T lenfositlerin (CTL) perforin ve granzim B eksprese ettiği gösteriliyor.\n\nBu CTL'lerin hedef aldığı hücreler ve etki mekanizması nedir?",
+      "secenekler": {
+        "A": "CD8+ CTL'ler yalnızca periferik trombositleri hedef alır, kemik iliğindeki megakaryositlere etkisi yoktur.",
+        "B": "CD8+ sitotoksik T lenfositler (CTL) perforin ve granzim B eksprese ederek hem periferik trombositleri hem de kemik iliğindeki megakaryositleri doğrudan lizise uğratır veya apoptozise sevk eder.",
+        "C": "Perforin ve granzim B yalnızca B hücrelerinin apoptozunu tetikler, trombosit veya megakaryositlerle ilgisi yoktur.",
+        "D": "CD8+ CTL'lerin İTP patogenezinde hiçbir rolü yoktur, yalnızca CD4+ T hücreleri etkilidir.",
+        "E": "CD8+ CTL'ler yalnızca kemik iliğindeki megakaryositleri hedef alır, periferik trombositlere etkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "CD8+ CTL'ler perforin/granzim B ile HEM periferik trombositleri HEM DE kemik iliğindeki megakaryositleri doğrudan hedef alıp lizis/apoptoza uğratır — bu, hem periferik yıkımı hem de üretim bozukluğunu açıklayan ortak bir hücresel mekanizmadır.",
+      "aciklama_detay": "CD8+ sitotoksik T lenfositler (CTL) perforin ve granzim B eksprese ederek hem periferik trombositleri hem de kemik iliğindeki megakaryositleri doğrudan lizise uğratır veya apoptozise sevk eder. Bu, İTP patogenezinde son derece önemli bir birleştirici (unifying) mekanizmadır çünkü hem periferik trombosit yıkımını (klasik otoantikor aracılı mekanizmaya ek olarak) hem de kemik iliğindeki yetersiz trombosit üretimini (megakaryosit hasarı yoluyla) TEK bir hücresel efektör mekanizma ile açıklar. Perforin, hedef hücre membranında por oluşturarak granzim B'nin hücre içine girmesini sağlar; granzim B ise kaspaz aktivasyonu yoluyla apoptozu tetikler. Bu doğrudan sitotoksik saldırı, özellikle antikor aracılı mekanizmalara yanıt vermeyen (örn. IVIG'e dirençli) bazı İTP hastalarının patogenezinde baskın rol oynayabilir ve bu hastalarda T hücre hedefli tedavilerin (örn. siklosporin gibi immünsüpresifler) neden etkili olabileceğini açıklar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — CTL'ler tam olarak HEM trombositleri HEM DE megakaryositleri hedef alır; megakaryosit etkisi göz ardı edilemez.",
+        "B": "DOGRU — CD8+ CTL, perforin/granzim B ile hem trombositleri hem megakaryositleri doğrudan öldürür.",
+        "C": "YANLIS — Perforin/granzim B mekanizması bu bağlamda spesifik olarak trombosit VE megakaryositleri hedefler, B hücreleriyle sınırlı bir mekanizma olarak tanımlanmamıştır.",
+        "D": "YANLIS — CD8+ CTL'ler İTP patogenezinde (özellikle hücresel sitotoksisite bileşeninde) merkezi ve iyi tanımlanmış bir role sahiptir.",
+        "E": "YANLIS — CTL'ler yalnızca megakaryositlerle sınırlı değildir; periferik trombositleri de doğrudan hedef alır."
+      },
+      "etiketler": [
+        "CD8+ Sitotoksik T Lenfosit",
+        "Perforin",
+        "Granzim B",
+        "Megakaryosit Hasarı",
+        "Hücresel Sitotoksisite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Olsson et al. Nat Med 2003; Zhao et al. Ann Hematol 2014"
+    },
+    {
+      "id": "s7",
+      "metin": "İTP tanılı bir hastada kemik iliği incelemesi yapılıyor ve megakaryositlerin farklılaşma/olgunlaşmasının bozulduğu, kemik iliği ekstraselüler matriksine adezyonun azaldığı gösteriliyor.\n\nMegakaryositlerin İTP'de neden immün saldırının doğrudan hedefi haline geldiği açıklaması hangisidir?",
+      "secenekler": {
+        "A": "Megakaryositler, olgunlaşma evrelerinde periferik trombositlerle aynı yüzey glikoproteinlerini eksprese ettiklerinden, otoantikorların ve otoreaktif sitotoksik T hücrelerinin doğrudan hedefi olurlar.",
+        "B": "Megakaryositler trombositlerle hiçbir ortak yüzey antijeni paylaşmaz, bu nedenle immün saldırıya uğramaları rastlantısaldır.",
+        "C": "Megakaryositler yalnızca kemik iliğinde bulunur ve bağışıklık sisteminden tamamen izole (immün ayrıcalıklı) bir bölgede korunur.",
+        "D": "Megakaryosit hasarı yalnızca doğrudan toksik ilaç etkisiyle oluşur, immünolojik bir mekanizmayla ilgisi yoktur.",
+        "E": "Otoantikorlar yalnızca olgun trombositleri tanır, megakaryositlerdeki glikoproteinleri tanıma yeteneğine sahip değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Megakaryositler olgunlaşırken trombositlerle AYNI yüzey glikoproteinlerini (GPIIb/IIIa, GPIb/IX/V gibi) eksprese eder — bu paylaşılan antijenite, onları hem otoantikorların hem de otoreaktif CTL'lerin doğrudan hedefi haline getirir.",
+      "aciklama_detay": "Megakaryositler olgunlaşma evrelerinde periferik trombositlerle aynı yüzey glikoproteinlerini eksprese ettiklerinden, otoantikorların ve otoreaktif sitotoksik T hücrelerinin doğrudan hedefi olurlar. Bu immün saldırı megakaryosit farklılaşmasını ve olgunlaşmasını engeller, kemik iliği ekstraselüler matriks proteinlerine adezyonu bozar, osteoblastik nişten vasküler nişe migrasyonu engeller ve nihayetinde proplatelet formasyonunu büyük ölçüde azaltır. Bu, İTP'deki trombositopeninin yalnızca periferik yıkımla değil, aynı zamanda kemik iliğinde yetersiz trombosit üretimi (impaired thrombopoiesis) ile de açıklandığı 'ikili darbe' (dual hit) modelinin temelini oluşturur — hem üretim azalır hem de yıkım artar. Bu paylaşılan antijenite kavramı, İTP tedavisinde neden trombopoietin reseptör agonistlerinin (TPO-RA, örn. eltrombopag, romiplostim) etkili olduğunu da açıklar: bu ajanlar megakaryopoezi doğrudan uyararak, immün saldırıya rağmen trombosit üretimini artırmaya çalışır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Paylaşılan yüzey glikoproteinleri (megakaryosit-trombosit) → ortak immün hedef → üretim bozukluğu.",
+        "B": "YANLIS — Tam tersine, megakaryositler trombositlerle AYNI yüzey glikoproteinlerini paylaşır; bu paylaşım rastlantısal değil, mekanistik bir açıklamadır.",
+        "C": "YANLIS — Megakaryositler immün ayrıcalıklı bir bölgede korunmaz; tam tersine otoantikor ve CTL saldırısına açıktır.",
+        "D": "YANLIS — Megakaryosit hasarı, açıkça İMMÜNOLOJİK bir mekanizmayla (otoantikor + CTL aracılı) açıklanmaktadır, ilaç toksisitesiyle değil.",
+        "E": "YANLIS — Otoantikorlar tam olarak PAYLAŞILAN glikoproteinler nedeniyle megakaryositleri de tanıyabilir; bu tanıma yeteneği patogenezin temelidir."
+      },
+      "etiketler": [
+        "Megakaryosit",
+        "Paylaşılan Yüzey Glikoproteinleri",
+        "Trombopoez Bozukluğu",
+        "Kemik İliği Nişi",
+        "Proplatelet Formasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chang et al. Blood 2003; Houwerzijl et al. Blood 2004"
+    },
+    {
+      "id": "s8",
+      "metin": "İTP tanılı bir hasta ile aplastik anemi tanılı bir hastanın serum trombopoietin (TPO) düzeyleri karşılaştırılıyor. Her iki hastada da trombositopeni mevcut ancak TPO düzeyleri belirgin farklılık gösteriyor.\n\nİTP'de serum TPO düzeyinin beklenen paterni ve bunun altında yatan mekanizma nedir?",
+      "secenekler": {
+        "A": "İTP'de TPO düzeyleri aplastik anemideki gibi kompanzatuar olarak belirgin yükselir, çünkü her iki hastalıkta da mekanizma aynıdır.",
+        "B": "İTP hastalarında megakaryosit kütlesine bağlı reseptör aracılı klerens aktif kaldığından, serbest TPO seviyeleri trombositopeni derecesine göre uygunsuz şekilde normal veya düşük bulunur — bu, kemik iliğinde megakaryosit kütlesinin (aplastik animedeki gibi azalmamış, hatta bazen artmış) korunmuş olmasından kaynaklanır.",
+        "C": "TPO düzeyi İTP'de her zaman sıfırdır, hiç ölçülemez.",
+        "D": "TPO düzeyi trombosit sayısından tamamen bağımsızdır, hiçbir hastalıkta prediktif değeri yoktur.",
+        "E": "İTP'de düşük TPO düzeyi, kemik iliğinin tamamen aplastik hale geldiğini gösterir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İTP'de TPO uygunsuz normal/düşüktür çünkü megakaryosit kütlesi korunmuştur (aplastik anemideki gibi azalmamıştır) ve reseptör aracılı TPO klerensi aktif kalır — bu, aplastik anemideki kompanzatuar yüksek TPO paterninden temel bir farktır.",
+      "aciklama_detay": "İTP hastalarında megakaryosit kütlesine bağlı reseptör aracılı klerens aktif kaldığından, serbest trombopoietin (TPO) seviyeleri trombositopeni derecesine göre uygunsuz şekilde normal veya düşük bulunur. TPO'nun dolaşımdaki düzeyi büyük ölçüde megakaryosit/trombosit kütlesi üzerindeki TPO reseptörleri (c-Mpl) aracılığıyla gerçekleşen reseptör aracılı klerens ile düzenlenir — kemik iliğinde megakaryosit kütlesi normal veya artmış olduğunda (İTP'de tipik olarak böyledir, çünkü periferik yıkım kompanzatuar megakaryopoezi tetikler ve kemik iliğinde megakaryosit sayısı genellikle normal/artmış bulunur), bu kütle TPO'yu 'emerek' dolaşımdaki serbest TPO düzeyini düşük/normal tutar. Buna karşın aplastik anemi gibi kemik iliği yetmezliği durumlarında megakaryosit kütlesi belirgin AZALDIĞINDAN, TPO'yu tüketecek reseptör havuzu küçülür ve serbest TPO düzeyleri kompanzatuar olarak BELİRGİN YÜKSELİR. Bu farklılık, klinik pratikte trombositopeninin periferik (İTP gibi) mi yoksa santral/üretim kaynaklı (aplastik anemi gibi) mi olduğunu ayırt etmede TPO ölçümünün (sınırlı da olsa) kullanılabileceğini gösterir ve TPO-RA (trombopoietin reseptör agonisti) tedavilerinin İTP'de neden etkili olduğunu da açıklar (baskılanmamış TPO sinyalizasyon potansiyeli mevcuttur).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, İTP ve aplastik anemide TPO paterni FARKLIDIR; aplastik anemide TPO yüksek, İTP'de uygunsuz normal/düşüktür.",
+        "B": "DOGRU — Korunmuş megakaryosit kütlesi → aktif reseptör aracılı TPO klerensi → uygunsuz normal/düşük serbest TPO.",
+        "C": "YANLIS — TPO İTP'de sıfır değildir, ölçülebilir düzeydedir; yalnızca beklenenden (trombositopeni derecesine göre) düşük/normal seyreder.",
+        "D": "YANLIS — TPO düzeyi, megakaryosit/trombosit kütlesiyle (reseptör aracılı klerens üzerinden) yakından ilişkilidir; tamamen bağımsız değildir.",
+        "E": "YANLIS — Düşük/normal TPO, İTP'de kemik iliğinin APLASTİK olduğunu göstermez; tam tersine megakaryosit kütlesinin KORUNMUŞ olduğunu gösterir."
+      },
+      "etiketler": [
+        "Trombopoietin",
+        "TPO",
+        "Reseptör Aracılı Klerens",
+        "Aplastik Anemi Ayrımı",
+        "Megakaryosit Kütlesi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Kuter DJ. Hematol Oncol Clin North Am 2009; Kosugi et al. Br J Haematol 1996"
+    },
+    {
+      "id": "s9",
+      "metin": "Kronik Helicobacter pylori enfeksiyonu olan bir hastada sekonder İTP gelişiyor ve H. pylori eradikasyonu sonrası trombosit sayısında belirgin düzelme gözleniyor.\n\nBu klinik senaryoyu açıklayan sekonder İTP patogenez mekanizması hangisidir?",
+      "secenekler": {
+        "A": "Sekonder İTP'de sıklıkla enfeksiyöz antijenler ile normal trombosit antijenleri arasındaki moleküler mimikri (çapraz reaksiyon), immün kompleks aracılıklı klerens veya T/B hücre dengesini bozan geniş çaplı bir genel immün disregülasyon sorumludur.",
+        "B": "H. pylori, trombositleri doğrudan enfekte ederek trombositlerin fiziksel olarak parçalanmasına neden olur; immünolojik bir mekanizma söz konusu değildir.",
+        "C": "Sekonder İTP'de enfeksiyöz ajanlarla trombosit antijenleri arasında hiçbir moleküler benzerlik yoktur, mekanizma tamamen rastlantısaldır.",
+        "D": "H. pylori eradikasyonu trombosit sayısını yalnızca beslenme durumunu iyileştirerek (demir emilimi artışı yoluyla) düzeltir, immün mekanizmayla ilgisi yoktur.",
+        "E": "Sekonder İTP, primer İTP'den tamamen farklı, otoantikorların hiç rol oynamadığı bir mekanizmayla oluşur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sekonder İTP'de enfeksiyöz antijenler (H. pylori gibi) ile trombosit antijenleri arasındaki moleküler mimikri, immün kompleks aracılı klerens veya genel immün disregülasyon sorumlu tutulur — bu, eradikasyon sonrası klinik düzelmeyi açıklar.",
+      "aciklama_detay": "Sekonder patogenezde sıklıkla enfeksiyöz antijenler ile normal trombosit antijenleri arasındaki moleküler mimikri (çapraz reaksiyon), immün kompleks aracılıklı klerens veya T/B hücre dengesini bozan geniş çaplı bir genel immün disregülasyon sorumludur. H. pylori enfeksiyonu ile İTP arasındaki ilişki iyi belgelenmiştir; H. pylori antijenlerine (özellikle CagA proteinine) karşı gelişen antikorların trombosit yüzey glikoproteinleriyle çapraz reaksiyona girdiği (moleküler mimikri) öne sürülmüştür. Bu, bazı H. pylori pozitif İTP hastalarında eradikasyon tedavisi sonrası trombosit sayısında belirgin ve bazen kalıcı düzelme görülmesinin patofizyolojik temelini oluşturur — enfeksiyöz uyaranın (ve buna bağlı çapraz reaktif immün yanıtın) ortadan kaldırılması, otoantikor üretimini tetikleyen döngüyü kırar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Moleküler mimikri, immün kompleks klerensi veya genel immün disregülasyon sekonder İTP'nin temel mekanizmalarıdır.",
+        "B": "YANLIS — H. pylori trombositleri doğrudan fiziksel olarak parçalamaz; mekanizma İMMÜNOLOJİKTİR (moleküler mimikri gibi).",
+        "C": "YANLIS — Moleküler mimikri kavramı tam olarak enfeksiyöz antijenler ile trombosit antijenleri arasındaki YAPISAL BENZERLİĞE dayanır, rastlantısal değildir.",
+        "D": "YANLIS — Trombosit sayısındaki düzelme immünolojik mekanizmayla (çapraz reaktif immün yanıtın ortadan kalkması) ilişkilidir, yalnızca demir emilimi düzelmesiyle açıklanmaz.",
+        "E": "YANLIS — Sekonder İTP'de de otoantikorlar (ve genel immün disregülasyon mekanizmaları) merkezi rol oynar; primer İTP ile ortak patofizyolojik zemin paylaşılır, farkı tetikleyici faktördür (altta yatan hastalık/enfeksiyon)."
+      },
+      "etiketler": [
+        "Sekonder İTP",
+        "Helicobacter pylori",
+        "Moleküler Mimikri",
+        "İmmün Kompleks",
+        "Eradikasyon Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Stasi et al. Blood 2009; Franchini & Veneri Haematologica 2003"
+    },
+    {
+      "id": "s10",
+      "metin": "Kinin kullanımı sonrası akut, şiddetli trombositopeni gelişen bir hastada ilaca bağlı immün trombositopeni (DİTP) düşünülüyor. Hastanın daha önce hiç kinin kullanmadığı ancak dolaşımında zayıf afiniteli, doğal olarak bulunan antikorların varlığı biliniyor.\n\nDİTP'nin altında yatan moleküler mekanizma ve bu mekanizmanın fulminan klinik seyri nasıl açıklar?",
+      "secenekler": {
+        "A": "Kinin veya oksaliplatin gibi ilaçlar (veya metabolitleri), dolaşımda doğal olarak bulunan zayıf afiniteli antikorların tamamlayıcılığı belirleyici bölgelerine (CDR) bağlanarak antikor konformasyonunu değiştirir ve antikorun trombosit yüzey antijenlerine afinitesini dramatik biçimde artırarak fulminan hücre yıkımına neden olur.",
+        "B": "DİTP'de ilaç, trombositleri doğrudan toksik etkiyle öldürür; hiçbir antikor aracılı mekanizma söz konusu değildir.",
+        "C": "İlaca bağlı antikorlar yalnızca ilaca uzun süreli (aylar) maruziyet sonrası, yavaş bir duyarlanma süreciyle gelişir; akut fulminan seyir DİTP ile uyumsuzdur.",
+        "D": "Kinin, trombosit yüzeyindeki tüm glikoproteinleri kalıcı olarak yok ederek trombositopeniye yol açar, antikor konformasyon değişikliğiyle ilgisi yoktur.",
+        "E": "DİTP mekanizması, zayıf afiniteli antikorların ilaç varlığında afinitesinin AZALMASI ve trombositlerden ayrılmasıyla açıklanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İlaç (kinin/oksaliplatin), dolaşımda zaten var olan zayıf afiniteli antikorların CDR bölgesine bağlanarak konformasyonu değiştirir ve trombosit antijenlerine afiniteyi DRAMATİK artırır — bu, önceden var olan bir immünolojik 'hazırlık' üzerine ilacın tetikleyici etkisiyle FULMİNAN yıkımı açıklar.",
+      "aciklama_detay": "İlaca bağlı immün trombositopenilerde (DİTP) temel mekanizma ilaca bağımlı, trombosit reaktif antikorların gelişimidir. Sıklıkla kinin veya oksaliplatin gibi ilaçlar (veya metabolitleri), dolaşımda doğal olarak bulunan zayıf afiniteli antikorların tamamlayıcılığı belirleyici bölgelerine (CDR) bağlanarak antikor konformasyonunu değiştirir ve antikorun trombosit yüzey antijenlerine afinitesini dramatik biçimde artırarak fulminan hücre yıkımına neden olur. Bu mekanizma, DİTP'nin neden ilk maruziyette bile (klasik 'duyarlanma' gerektiren gecikmeli aşırı duyarlılık modelinden farklı olarak) çok hızlı ve şiddetli gelişebildiğini açıklar — çünkü zayıf afiniteli antikorlar zaten dolaşımda mevcuttur (önceden var olan doğal antikorlar), ilaç yalnızca bu antikorların konformasyonunu değiştirerek onları 'aktive' eder ve trombosit yüzeyine yüksek afiniteyle bağlanmalarını sağlar. Bazı vakalarda ise ilacın trombosit yüzeyine bağlanmasıyla yeni neoepitoplar açığa çıkar ve bunlara karşı immün yanıt gelişir — bu, ikinci alternatif bir DİTP mekanizmasıdır. Her iki mekanizma da ilacın kesilmesiyle antikor etkisinin hızla ortadan kalkmasını ve trombosit sayısının genellikle birkaç gün içinde düzelmesini açıklar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İlaç CDR bölgesine bağlanıp konformasyon değiştirir → zayıf afiniteli antikor yüksek afiniteli hale gelir → fulminan yıkım.",
+        "B": "YANLIS — DİTP mekanizması açıkça İMMÜNOLOJİK (antikor aracılı) bir süreçtir, doğrudan toksisite değildir.",
+        "C": "YANLIS — Mekanizma tam olarak ÖNCEDEN VAR OLAN doğal antikorların ilaçla aktive olmasına dayanır; bu nedenle uzun duyarlanma süreci gerekmeden, ilk maruziyette bile hızlı/fulminan seyir görülebilir.",
+        "D": "YANLIS — Mekanizma glikoproteinlerin yok edilmesi değil, antikorun KONFORMASYONEL DEĞİŞİKLİĞİ ve afinite artışı üzerinden işler.",
+        "E": "YANLIS — Mekanizma tam tersidir: ilaç afiniteyi AZALTMAZ, DRAMATİK ŞEKİLDE ARTIRIR; bu artış trombosit yıkımının nedenidir."
+      },
+      "etiketler": [
+        "DİTP",
+        "Kinin",
+        "Oksaliplatin",
+        "CDR Bölgesi",
+        "Antikor Konformasyon Değişikliği"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Aster & Bougie N Engl J Med 2007; Curtis BR. Immunohematology 2014"
+    }
+  ]
+}

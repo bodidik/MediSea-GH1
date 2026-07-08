@@ -40,6 +40,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "ince-bagirsak-hastaliklari",
+      "baslik": "İnce Bağırsak ve Malabsorpsiyon Hastalıkları",
+      "aciklama": "Çölyak hastalığı, SIBO ve malabsorpsiyon sendromları",
+      "emoji": "🌾",
+      "konular": [
+        {
+          "id": "colyak-hastaligi",
+          "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,308 @@
+{
+  "id": "quiz-gastro-colyak-001",
+  "baslik": "Çölyak Hastalığı — Soru Seti 1",
+  "branch": "gastroenteroloji",
+  "topic": "colyak-hastaligi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yirmi altı yaşında Tip 1 Diabetes Mellitus tanılı kadın hasta, hiçbir gastrointestinal şikayeti olmadığı halde rutin kontrol için başvuruyor. Hekim, çölyak hastalığı taraması yapılmasını planlıyor.\n\nBu yaklaşımın gerekçesi ve genel prensip hangisidir?",
+      "secenekler": {
+        "A": "Çölyak taraması yalnızca gastrointestinal semptomu olan hastalarda yapılır; asemptomatik bir hastada tarama gereksizdir.",
+        "B": "Birinci/ikinci derece akrabalar, Tip 1 DM, otoimmün tiroidit, otoimmün karaciğer hastalıkları, Down/Turner/Williams sendromu, juvenil idiopatik artrit ve selektif IgA eksikliği gibi risk gruplarındaki bireyler tamamen asemptomatik olsalar dahi rutin çölyak taramasından geçirilmelidir.",
+        "C": "Tip 1 DM ile çölyak hastalığı arasında herhangi bir epidemiyolojik ilişki gösterilmemiştir, tarama endikasyonu yoktur.",
+        "D": "Tarama yalnızca hastada büyüme geriliği veya kilo kaybı gibi belirgin malabsorpsiyon bulguları geliştiğinde yapılmalıdır.",
+        "E": "Bu hastada tarama endikasyonu yalnızca ailede çölyak öyküsü varsa geçerlidir, Tip 1 DM tek başına yeterli bir risk faktörü değildir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tip 1 DM dahil tanımlanmış risk gruplarındaki bireyler asemptomatik olsalar dahi rutin çölyak taramasından geçirilmelidir — bu, güçlü genetik/otoimmün birliktelik nedeniyle önerilen bir yaklaşımdır.",
+      "aciklama_detay": "Güçlü genetik temelleri nedeniyle çölyak hastalığı prevalansının çok yüksek olduğu spesifik gruplar tanımlanmıştır: Birinci ve ikinci derece akrabalar, Tip 1 Diabetes Mellitus, otoimmün tiroidit (Hashimoto), otoimmün karaciğer hastalıkları, Down sendromu, Turner sendromu, Williams sendromu, juvenil idiopatik artrit ve Selektif IgA eksikliği olan hastalarda çölyak görülme riski normale göre belirgin artmıştır. Bu risk gruplarına mensup bireyler, tamamen asemptomatik olsalar dahi rutin çölyak taramasından geçirilmelidir — çünkü çölyak hastalığının subklinik (sessiz) formu, hiçbir semptom vermeden villüs atrofisi ve uzun dönem komplikasyonlara (osteoporoz, malignite riski, infertilite) yol açabilir. Tip 1 DM ile çölyak hastalığı arasındaki birliktelik, her iki hastalığın da ortak otoimmün/genetik yatkınlık zeminini (HLA ilişkili) paylaşmasından kaynaklanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, asemptomatik risk grubu bireyleri de tarama kapsamına girer; bu, subklinik formu yakalamak için gereklidir.",
+        "B": "DOGRU — Tip 1 DM dahil tanımlanmış risk gruplarında asemptomatik tarama önerilir.",
+        "C": "YANLIS — Tip 1 DM ile çölyak arasındaki ilişki iyi tanımlanmış, kanıta dayalı bir birlikteliktir.",
+        "D": "YANLIS — Tarama, semptom gelişmesini beklemeden, risk grubu tanımlandığı anda yapılmalıdır; bu, sessiz formu erken yakalamanın amacıdır.",
+        "E": "YANLIS — Tip 1 DM tek başına (aile öyküsünden bağımsız olarak) tanımlanmış bir risk faktörüdür ve tarama endikasyonu oluşturur."
+      },
+      "etiketler": [
+        "Risk Grupları",
+        "Tip 1 DM",
+        "Asemptomatik Tarama",
+        "Epidemiyoloji",
+        "Otoimmün Birliktelik"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Husby et al. J Pediatr Gastroenterol Nutr 2020 (ESPGHAN); Lebwohl & Rubio-Tapia Gastroenterology 2021"
+    },
+    {
+      "id": "s2",
+      "metin": "Otuz iki yaşında hasta, seçici IgA eksikliği tanılı olup çölyak hastalığı şüphesiyle değerlendiriliyor. Standart tTG-IgA testi negatif çıkıyor ancak klinik şüphe devam ediyor.\n\nBu hastada izlenmesi gereken doğru tanısal yaklaşım nedir?",
+      "secenekler": {
+        "A": "tTG-IgA negatifliği bu hastada çölyak hastalığını kesin olarak dışlar, ek test gerekmez.",
+        "B": "Her yaş grubunda birinci basamak tarama testi tTG-IgA'dır ve beraberinde Total Serum IgA ölçülmelidir; bu hastada IgA eksikliği zaten bilindiğinden tTG-IgA yanlış negatif çıkabilir, bu nedenle IgG tabanlı testlere (DGP-IgG veya tTG-IgG) başvurulmalıdır.",
+        "C": "IgA eksikliği olan hastalarda çölyak hastalığı gelişmesi mümkün değildir, bu tanı dışlanmalıdır.",
+        "D": "Bu hastada tek doğru yaklaşım doğrudan HLA-DQ2/DQ8 genetik testine geçmektir, IgG tabanlı seroloji gereksizdir.",
+        "E": "IgA eksikliği tTG testinin sonucunu etkilemez, negatif sonuç güvenilirdir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "IgA eksikliği tTG-IgA'yı yanlış negatif yapar. Bu durumda IgG tabanlı testlere (DGP-IgG veya tTG-IgG) geçilmelidir — bu yüzden ilk taramada Total IgA da mutlaka bakılır.",
+      "aciklama_detay": "Her yaş grubunda ilk tarama testi olarak spesifikliği ve duyarlılığı çok yüksek olan IgA anti-doku transglutaminaz (tTG-IgA) bakılmalı ve beraberinde olası bir selektif IgA eksikliğini dışlamak için Total Serum IgA düzeyi ölçülmelidir. Eğer hastada IgA eksikliği saptanırsa, test yanlış negatif geleceği için IgG tabanlı testlere (DGP-IgG veya tTG-IgG) başvurulmalıdır. Bu, tTG-IgA'nın adından da anlaşılacağı gibi bir IgA sınıfı antikor testi olması nedeniyle mantıklıdır — hastanın vücudunda yeterli IgA üretimi yoksa, gerçekten çölyak hastası olsa bile tTG-IgA antikoru düşük/negatif ölçülecektir. Bu klinik tuzağı önlemek için Total IgA'nın rutin olarak birlikte bakılması ve düşük çıkması durumunda otomatik olarak IgG bazlı testlere geçilmesi standart algoritmadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bilinen IgA eksikliği varlığında tTG-IgA negatifliği güvenilir değildir; yalancı negatif olabilir.",
+        "B": "DOGRU — IgA eksikliğinde tTG-IgA yanılabilir; IgG tabanlı testlere (DGP-IgG/tTG-IgG) geçilmelidir.",
+        "C": "YANLIS — IgA eksikliği çölyak hastalığı gelişimini engellemez; aksine selektif IgA eksikliği çölyak için bilinen bir risk faktörüdür.",
+        "D": "YANLIS — HLA testi tanı koydurucu değildir (yüksek popülasyon prevalansı nedeniyle); IgG tabanlı seroloji öncelikli, doğru yaklaşımdır.",
+        "E": "YANLIS — IgA eksikliği tTG-IgA sonucunu doğrudan ve önemli ölçüde etkiler; bu nedenle Total IgA taraması esastır."
+      },
+      "etiketler": [
+        "Selektif IgA Eksikliği",
+        "tTG-IgA",
+        "DGP-IgG",
+        "Total Serum IgA",
+        "Seroloji Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Husby et al. J Pediatr Gastroenterol Nutr 2020; Rubio-Tapia et al. Am J Gastroenterol 2013 (ACG Guideline)"
+    },
+    {
+      "id": "s3",
+      "metin": "Çölyak hastalığı şüphesiyle üst GİS endoskopisi planlanan bir hastada, endoskopist yalnızca duodenal bulbustan tek bir biyopsi almayı planlıyor.\n\nBu yaklaşımın yetersizliğinin nedeni ve doğru biyopsi protokolü nedir?",
+      "secenekler": {
+        "A": "Tek bir bulbus biyopsisi yeterlidir, çölyak hastalığı bağırsakta homojen tutulum gösterir.",
+        "B": "Hastalık bağırsakta yamalı (patchy) tutulum yapabildiğinden, duodenal bulbustan 1-2 adet ve distal duodenumdan en az 4 adet olmak üzere çoklu biyopsi alınması zorunludur; tek bölgeden alınan biyopsi hastalığı gözden kaçırabilir.",
+        "C": "Biyopsi yalnızca ince bağırsağın en distal kısmından (terminal ileum) alınmalıdır, duodenum örneklemesi gereksizdir.",
+        "D": "Çölyak hastalığı tanısı için biyopsi sayısının hiçbir önemi yoktur, tek örnek her zaman yeterlidir.",
+        "E": "Bulbus biyopsisi çölyak tanısında hiçbir zaman alınmamalıdır, yalnızca distal duodenum örneklenir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Çölyak hastalığı yamalı tutulum gösterebildiğinden bulbustan 1-2 + distal duodenumdan en az 4 olmak üzere çoklu biyopsi zorunludur — tek bölge örneklemesi hastalığı gözden kaçırabilir.",
+      "aciklama_detay": "Serolojisi pozitif olan hastalarda tanıyı doğrulamak için üst GİS endoskopisi ile ince bağırsak biyopsisi alınmalıdır. Hastalık bağırsakta yamalı (yama tarzı) tutulum yapabildiğinden, duodenal bulbusdan 1-2 adet ve distal duodenumdan en az 4 adet olmak üzere çoklu biyopsi alınması zorunludur. Bu çoklu örnekleme protokolü, çölyak hastalığının histolojik lezyonlarının bağırsak boyunca homojen olarak dağılmayabileceği, bazı segmentlerin daha az etkilenirken bazılarının belirgin villüs atrofisi gösterebileceği gerçeğine dayanır. Yalnızca tek bir bölgeden (örneğin sadece bulbustan veya sadece bir distal duodenal noktadan) alınan biyopsi, hastalığı olan bir hastada yanlışlıkla normal/hafif bulgu göstererek tanının kaçırılmasına (örnekleme hatası, 'sampling error') yol açabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, tutulum YAMALI'dır (homojen değildir); bu nedenle çoklu bölge örneklemesi gereklidir.",
+        "B": "DOGRU — Yamalı tutulum nedeniyle bulbus (1-2) + distal duodenum (≥4) çoklu biyopsi zorunludur.",
+        "C": "YANLIS — Çölyak tanısında standart örnekleme bölgesi duodenumdur (bulbus + distal); terminal ileum rutin biyopsi bölgesi değildir.",
+        "D": "YANLIS — Biyopsi sayısı ve lokasyonu tanısal doğruluk için kritik önem taşır; tek örnek yanlış negatif riski taşır.",
+        "E": "YANLIS — Bulbus biyopsisi standart protokolün bir PARÇASIDIR (1-2 adet), tamamen dışlanmaz; ancak tek başına yeterli değildir, distal duodenum örnekleri de gereklidir."
+      },
+      "etiketler": [
+        "Duodenal Biyopsi",
+        "Yamalı Tutulum",
+        "Endoskopi Protokolü",
+        "Örnekleme Hatası",
+        "Tanı Doğrulama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Rubio-Tapia et al. Am J Gastroenterol 2013 (ACG Guideline); Bonamico et al. J Pediatr Gastroenterol Nutr 2008"
+    },
+    {
+      "id": "s4",
+      "metin": "Çölyak hastalığı şüphesiyle değerlendirilen bir hastada HLA-DQ2/DQ8 genetik testi isteniyor ve sonuç NEGATİF çıkıyor.\n\nBu negatif sonucun klinik yorumu ve genetik testin çölyak hastalığı tanısındaki asıl kullanım amacı nedir?",
+      "secenekler": {
+        "A": "HLA-DQ2/DQ8 pozitifliği çölyak hastalığını kesin olarak kanıtlar, bu nedenle testin asıl amacı tanı koymaktır.",
+        "B": "Hastaların %99'undan fazlası bu genleri taşıdığından genetik testin tanı koydurucu özelliği yoktur (pozitifliği hastalığı kanıtlamaz) ancak negatif prediktif değeri %99'dur; bu nedenle negatif sonuç çölyak hastalığını büyük olasılıkla dışlar ve test esas olarak 'hastalığı dışlamak' amacıyla kullanılır.",
+        "C": "HLA-DQ2/DQ8 negatifliği hiçbir klinik anlam taşımaz, tanısal süreçte göz ardı edilebilir.",
+        "D": "Genetik test, seroloji ve biyopsi sonuçlarından tamamen bağımsız olarak, her çölyak şüphesi olan hastada rutin ilk basamak test olarak kullanılmalıdır.",
+        "E": "HLA-DQ2/DQ8 testi yalnızca dermatitis herpetiformis tanısında kullanılır, klasik çölyak hastalığında yeri yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HLA-DQ2/DQ8 pozitifliği tanı koydurmaz (popülasyonda çok yaygın) ama negatif prediktif değeri %99'dur — negatif sonuç hastalığı büyük olasılıkla dışlar. Bu yüzden test 'dışlama' amaçlı kullanılır, tanı koymak için değil.",
+      "aciklama_detay": "HLA-DQ2/HLA-DQ8 genetik tiplemesi: Hastaların %99'undan fazlası bu genleri taşıdığından, genetik testin tanı koydurucu özelliği yoktur (pozitifliği hastalığı kanıtlamaz) ancak negatif prediktif değeri %99'dur. Bu, HLA-DQ2/DQ8'in genel popülasyonda da (çölyak hastalığı olmayan bireylerde) oldukça yaygın bulunması nedeniyledir (yaklaşık popülasyonun %30-40'ı bu genleri taşır ama yalnızca küçük bir kısmı çölyak geliştirir) — bu nedenle pozitiflik tek başına anlamlı değildir. Ancak neredeyse TÜM çölyak hastaları bu genlerden en az birini taşıdığından, negatif sonuç hastalığı çok güçlü bir olasılıkla (NPV %99) dışlar. Genetik test; seroloji ve biyopsinin çeliştiği gri zon vakalarında, hasta gluten diyeti altındayken tanının ekarte edilmesinde veya riskli aile bireylerinin taranmasında 'hastalığı dışlamak' amacıyla kullanılır — rutin ilk basamak tanı testi değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, pozitiflik tanı koydurmaz (çok yaygın bir bulgu); testin asıl gücü negatif sonuçla dışlamadadır.",
+        "B": "DOGRU — Pozitiflik tanısal değildir; NPV %99 ile negatif sonuç hastalığı güçlü şekilde dışlar; asıl kullanım amacı dışlamadır.",
+        "C": "YANLIS — Negatif sonuç aksine güçlü bir klinik anlam taşır (hastalığı büyük olasılıkla dışlar), göz ardı edilemez.",
+        "D": "YANLIS — HLA testi rutin ilk basamak test değildir; belirli endikasyonlarla (gri zon, dışlama amaçlı) kullanılır, seroloji/biyopsiden önce veya bağımsız rutin kullanılmaz.",
+        "E": "YANLIS — HLA-DQ2/DQ8, dermatitis herpetiformis dahil TÜM çölyak spektrumunda (klasik dahil) aynı genetik yatkınlık prensibiyle geçerlidir, yalnızca dermatitis herpetiformisle sınırlı değildir."
+      },
+      "etiketler": [
+        "HLA-DQ2/DQ8",
+        "Negatif Prediktif Değer",
+        "Genetik Tipleme",
+        "Dışlama Testi",
+        "Tanı Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Husby et al. J Pediatr Gastroenterol Nutr 2020; Kagnoff MF. Gastroenterology 2005"
+    },
+    {
+      "id": "s5",
+      "metin": "Sekiz yaşında çocukta çölyak hastalığı şüphesiyle yapılan seroloji testinde tTG-IgA düzeyi normalin üst sınırının 12 katı (12x ULN) olarak ölçülüyor. İkinci farklı bir kan örneğinde EMA-IgA pozitif bulunuyor.\n\nGüncel ESPGHAN 2020 kriterlerine göre bu çocukta tanısal yaklaşım nasıl olmalıdır?",
+      "secenekler": {
+        "A": "Bu değerler yeterli değildir; tanı için mutlaka endoskopik duodenal biyopsi yapılmalı ve ayrıca HLA-DQ2/DQ8 testi de bakılmalıdır.",
+        "B": "tTG-IgA seviyesi ≥10x ULN olan çocuklarda, ikinci farklı bir kan örneğinde EMA-IgA pozitifliğinin de gösterilmesi biyopsisiz kesin tanı için yeterlidir; eski kılavuzlardaki HLA-DQ2/DQ8 zorunluluğu güncel rehberlerde kaldırılmıştır.",
+        "C": "Biyopsisiz tanı yaklaşımı yalnızca semptomatik çocuklarda geçerlidir, bu çocuk asemptomatikse biyopsi zorunludur.",
+        "D": "ESPGHAN 2020 kriterleri yalnızca erişkinler için geçerlidir, pediatrik popülasyonda biyopsisiz tanı onaylanmamıştır.",
+        "E": "İkinci kan örneğinde doğrulama gereksizdir, tek bir tTG-IgA ≥10x ULN sonucu tek başına tanı için yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ESPGHAN 2020: tTG-IgA ≥10x ULN + ikinci farklı kan örneğinde EMA-IgA pozitifliği = biyopsisiz kesin tanı (semptomatik/asemptomatik ayrımı yok). HLA-DQ2/DQ8 artık zorunlu değil.",
+      "aciklama_detay": "Pediatrik Yaklaşım (ESPGHAN 2020 Kriterleri): Semptomatik veya asemptomatik ayrımı olmaksızın, tTG-IgA seviyesi normalin üst sınırının 10 katından (≥10x ULN) yüksek olan çocuklarda, ikinci farklı bir kan örneğinde EMA-IgA pozitifliğinin de gösterilmesi biyopsisiz kesin tanı için yeterlidir. Eski kılavuzlardaki HLA-DQ2/DQ8 bakılma zorunluluğu güncel rehberlerde kaldırılmıştır — bu, tanı sürecini basitleştiren önemli bir güncellemedir. Bu vakada tTG-IgA 12x ULN (≥10x eşiğini karşılıyor) ve ikinci örnekte EMA-IgA pozitif olduğundan, bu iki kriter birlikte biyopsisiz kesin tanı için yeterlidir; invaziv endoskopi/biyopsiye gerek kalmaz. Bu yaklaşım, özellikle çocuklarda anestezi/sedasyon gerektiren invaziv işlemlerden kaçınma avantajı sağlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu kriterler (≥10x ULN + ikinci örnekte EMA+) tam olarak biyopsiyi GEREKSİZ kılan koşullardır; ayrıca HLA testi artık zorunlu değildir.",
+        "B": "DOGRU — tTG-IgA ≥10x ULN + ikinci örnekte EMA-IgA (+) = biyopsisiz kesin tanı; HLA zorunluluğu kaldırıldı.",
+        "C": "YANLIS — ESPGHAN 2020 kriterleri semptomatik/asemptomatik ayrımı yapmaz, her iki durumda da geçerlidir.",
+        "D": "YANLIS — ESPGHAN 2020 kriterleri özellikle PEDİATRİK popülasyon için geliştirilmiştir; erişkin kriterleri (ESsCD 2025) ayrı ve daha yeni bir gelişmedir.",
+        "E": "YANLIS — İkinci farklı kan örneğinde doğrulama (EMA-IgA ile) kriterin ZORUNLU bir parçasıdır, tek ölçüm yeterli değildir."
+      },
+      "etiketler": [
+        "ESPGHAN 2020",
+        "Biyopsisiz Tanı",
+        "tTG-IgA 10x ULN",
+        "EMA-IgA",
+        "Pediatrik Çölyak"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Husby et al. J Pediatr Gastroenterol Nutr 2020 (ESPGHAN Guidelines)"
+    },
+    {
+      "id": "s6",
+      "metin": "Otuz sekiz yaşında hasta, hafif karın rahatsızlığı dışında alarm semptomu (hematokezya, disfaji, obstrüksiyon bulgusu) taşımıyor. tTG-IgA düzeyi 15x ULN olarak ölçülüyor ve ikinci bir kan örneğinde bu yükseklik doğrulanıyor. Hasta, mümkünse endoskopiden kaçınmak istediğini belirtiyor.\n\n2025 ESsCD kılavuzlarına göre bu erişkin hastada biyopsisiz tanı için gerekli koşullar karşılanıyor mu?",
+      "secenekler": {
+        "A": "Hayır; erişkinlerde biyopsisiz tanı hiçbir zaman kabul edilmez, endoskopi her erişkin hastada zorunludur.",
+        "B": "Evet; 2025 Avrupa Kılavuzları (ESsCD) ile yetişkinlerde de biyopsisiz tanı şartlı olarak onaylanmıştır — 45 yaşından küçük, alarm semptomu bulunmayan hastada tTG-IgA ≥10x ULN olması ve bu yüksekliğin ikinci bir kan örneğinde doğrulanması, hastanın ortak onayı ile duodenal biyopsiden kaçınılarak tanı konulmasına izin verir. Bu hasta (38 yaş, alarm semptomu yok, tTG-IgA 15x ULN, doğrulanmış) kriterleri karşılamaktadır.",
+        "C": "Hayır; erişkinlerde biyopsisiz tanı yalnızca tTG-IgA ≥20x ULN olduğunda geçerlidir, 15x ULN yetersizdir.",
+        "D": "Evet; ancak bu yaklaşım için hasta onayı gerekmez, klinisyen tek başına karar verebilir.",
+        "E": "Hayır; erişkinlerde biyopsisiz tanı yalnızca 60 yaş üzeri hastalarda uygulanabilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ESsCD 2025: <45 yaş + alarm semptomu yok + tTG-IgA ≥10x ULN + ikinci örnekte doğrulama + hasta onayı = erişkinde de biyopsisiz tanı mümkün. Bu hasta (38y, alarm yok, 15x ULN, doğrulanmış) tüm kriterleri karşılıyor.",
+      "aciklama_detay": "Yetişkin Yaklaşımı (ESsCD 2025 Kriterleri - YENİ!): İlk kez 2025 Avrupa Kılavuzları (ESsCD) ile yetişkinlerde de biyopsisiz tanı şartlı olarak onaylanmıştır. 45 yaşından küçük, alarm (kırmızı bayrak) semptomları (örneğin hematokezya, disfaji, obstrüksiyon bulguları) bulunmayan yetişkinlerde; tTG-IgA seviyesi ≥10x ULN ise ve bu yükseklik ikinci bir kan örneğinde doğrulanıyorsa, hastanın da ortak onayı ile duodenal biyopsiden kaçınılarak tanı konulabilir. Bu vakada hasta 38 yaşında (< 45 eşiği), alarm semptomu tanımlanmamış, tTG-IgA 15x ULN (≥10x eşiğinin üzerinde) ve ikinci örnekte doğrulanmış durumdadır — tüm kriterler karşılanmaktadır. Hastanın onayı da (endoskopiden kaçınma isteği, ortak karar süreci) alınabilir. Bu, çölyak tanı sürecinde önemli bir paradigma değişimidir — daha önce yalnızca pediatride kabul gören biyopsisiz yaklaşımın artık uygun şartlarda erişkinlere de genişletildiğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 2025 ESsCD kılavuzları tam olarak bu şartlar altında erişkinlerde biyopsisiz tanıyı onaylamıştır; mutlak zorunluluk artık geçerli değildir.",
+        "B": "DOGRU — Tüm ESsCD 2025 kriterleri (yaş, alarm semptomu yokluğu, tTG-IgA eşiği, doğrulama, onam) bu hastada karşılanmaktadır.",
+        "C": "YANLIS — Eşik ≥10x ULN'dir, ≥20x değil; 15x ULN bu eşiği zaten karşılamaktadır.",
+        "D": "YANLIS — Hastanın ORTAK ONAYI kriterin açık bir parçasıdır; klinisyen tek başına karar veremez.",
+        "E": "YANLIS — Yaş kriteri <45 yaştır (daha genç hastalar için), 60 yaş üzeri ile sınırlı veya ona özgü bir kriter değildir."
+      },
+      "etiketler": [
+        "ESsCD 2025",
+        "Erişkin Biyopsisiz Tanı",
+        "Alarm Semptomları",
+        "tTG-IgA Eşiği",
+        "Güncel Kılavuz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESsCD 2025 Adult Celiac Disease Guidelines (European Society for the study of Coeliac Disease)"
+    },
+    {
+      "id": "s7",
+      "metin": "Duodenal biyopsi raporunda 'villüs ve kript mimarisi normal, ancak intraepitelyal lenfosit sayısı 100 enterosit başına 32 (artmış)' bulgusu bildiriliyor.\n\nBu histopatolojik bulgu Marsh-Oberhuber sınıflamasına göre hangi evreye karşılık gelir?",
+      "secenekler": {
+        "A": "Marsh 0 — tamamen normal biyopsi, herhangi bir patoloji yok.",
+        "B": "Marsh 1 (İnfiltratif) — villüs ve kript mimarisi tamamen normaldir, ancak epitelyumda intraepitelyal lenfosit (IEL) artışı (100 enterosit başına >25 lenfosit) vardır.",
+        "C": "Marsh 2 (Hiperplastik) — bu bulgu mutlaka kript hiperplazisini de içerir.",
+        "D": "Marsh 3 (Destrüktif) — bu bulgu villüs atrofisini gösterir.",
+        "E": "Bu bulgu Marsh sınıflamasının hiçbir kategorisine uymaz, sınıflama dışı kabul edilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Normal villüs/kript mimarisi + IEL artışı (>25/100 enterosit) = Marsh 1 (İnfiltratif). Bu bulguda 32/100 IEL eşiği aşmakta, ancak mimari yapı bozulmamış durumda.",
+      "aciklama_detay": "Marsh 1 (İnfiltratif) evresi: Villüs ve kript mimarisi tamamen normaldir, ancak epitelyumda intraepitelyal lenfosit (IEL) artışı (100 enterosit başına >25 lenfosit) vardır. Bu vakada bildirilen bulgu tam olarak bu tanıma uymaktadır: mimari normal (villüs atrofisi veya kript hiperplazisi YOK) ancak IEL sayısı 32/100 enterosit ile eşiğin (>25) üzerindedir. Marsh 1, çölyak hastalığının erken/hafif bir histolojik evresidir ve tek başına (seroloji negatifse) potansiyel çölyak hastalığı ile de uyumlu olabilir — ancak eğer seroloji pozitifse (tTG-IgA/EMA), Marsh 1 bulgusu erken evre aktif çölyak hastalığını destekleyebilir, klinik bağlamla değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Marsh 0 tamamen normal biyopsiyi (IEL artışı da dahil hiçbir bulgu yok) tanımlar; bu vakada IEL artışı mevcuttur.",
+        "B": "DOGRU — Normal mimari + IEL artışı (>25/100) = Marsh 1 tanımı ile tam uyumlu.",
+        "C": "YANLIS — Marsh 2 için kript hiperplazisi (uzaması) de gereklidir; bu vakada mimari 'tamamen normal' olarak bildirilmiş, hiperplazi yoktur.",
+        "D": "YANLIS — Marsh 3 villüs atrofisi gerektirir; bu vakada villüs/kript mimarisi normal olarak tanımlanmıştır, atrofi yoktur.",
+        "E": "YANLIS — Bu bulgu Marsh sınıflamasının tam olarak Marsh 1 kategorisine karşılık gelir, sınıflama dışı değildir."
+      },
+      "etiketler": [
+        "Marsh 1",
+        "İntraepitelyal Lenfosit",
+        "Histopatoloji",
+        "Marsh-Oberhuber Sınıflaması",
+        "Biyopsi Yorumlama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Oberhuber et al. Eur J Gastroenterol Hepatol 1999 (Modified Marsh Classification)"
+    },
+    {
+      "id": "s8",
+      "metin": "Yeni tanı çölyak hastalığı olan 42 yaşında bir kadın hasta glutensiz diyete başlıyor. Hastanın geç tanı aldığı ve tanı anında şiddetli malabsorpsiyon bulguları (belirgin kilo kaybı, düşük vitamin D düzeyi) olduğu biliniyor.\n\nBu hastanın kemik sağlığı açısından izlem stratejisi nasıl olmalıdır?",
+      "secenekler": {
+        "A": "Bu hasta çocuk olmadığından kemik mineralizasyonunun diyetle geri dönmesi beklenmez; DXA taraması hiçbir zaman gerekmez.",
+        "B": "Yetişkin hastalarda, sekonder hiperparatiroidizme bağlı osteopeni/osteoporoz riski yüksek olduğundan, diyetin 1. yılında risk faktörleri (şiddetli malabsorpsiyon, geç tanı) bulunan bu hastaya DXA (kemik dansitometrisi) çekilmelidir.",
+        "C": "DXA taraması yalnızca erkek hastalarda endikedir, kadın hastalarda gerekmez.",
+        "D": "Bu hastada DXA taraması tanı anında değil, yalnızca diyete başladıktan 10 yıl sonra düşünülmelidir.",
+        "E": "Kemik sağlığı çölyak hastalığında hiçbir zaman etkilenmez, bu nedenle DXA endikasyonu yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yetişkinde risk faktörü (şiddetli malabsorpsiyon, geç tanı) varsa diyetin 1. yılında DXA çekilmelidir — sekonder hiperparatiroidizme bağlı osteopeni/osteoporoz riski yüksektir. Bu hasta tam olarak bu risk profiline uyuyor.",
+      "aciklama_detay": "Replasman ve Kemik Sağlığı: Yetişkin hastalarda, sekonder hiperparatiroidizme bağlı osteopeni ve osteoporoz riski yüksek olduğundan, diyetin 1. yılında risk faktörleri bulunan (şiddetli malabsorpsiyon, geç tanı) bireylere DXA (kemik dansitometrisi) çekilmelidir. Bu hastada hem şiddetli malabsorpsiyon bulguları (belirgin kilo kaybı, düşük D vitamini) hem de geç tanı öyküsü mevcuttur — bu iki risk faktörü de DXA endikasyonunu güçlü şekilde desteklemektedir. Mekanizma: uzun süreli kalsiyum ve D vitamini malabsorpsiyonu, kompanzatuar sekonder hiperparatiroidizme yol açar; bu da kronik kemik rezorpsiyonunu artırarak osteopeni/osteoporoza zemin hazırlar. Buna karşın çocuklarda kemik mineralizasyonu diyetle mükemmel geri döndüğünden rutin DXA taraması önerilmez — bu, yetişkin ve pediatrik popülasyonlar arasındaki önemli bir izlem farkıdır (çocukların büyüme potansiyeli sayesinde kemik yapısının kendini onarma kapasitesi daha yüksektir).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Erişkinlerde risk faktörü varlığında DXA taraması TAM OLARAK endikedir; 'hiçbir zaman gerekmez' ifadesi yanlıştır.",
+        "B": "DOGRU — Risk faktörlü (şiddetli malabsorpsiyon + geç tanı) erişkinde diyetin 1. yılında DXA endikedir.",
+        "C": "YANLIS — DXA endikasyonu cinsiyetten değil, risk faktörlerinin (malabsorpsiyon şiddeti, tanı gecikmesi) varlığından bağımsız olarak tüm yetişkinlerde değerlendirilir.",
+        "D": "YANLIS — DXA zamanlaması diyetin 1. YILINDA'dır, 10 yıl beklemek uygun değildir ve osteoporozun geç fark edilmesine yol açar.",
+        "E": "YANLIS — Kemik sağlığı çölyak hastalığında SIK etkilenir (kalsiyum/D vitamini malabsorpsiyonu + sekonder hiperparatiroidizm); bu iddia yanlıştır."
+      },
+      "etiketler": [
+        "DXA",
+        "Osteoporoz",
+        "Sekonder Hiperparatiroidizm",
+        "Erişkin İzlem",
+        "Geç Tanı Riski"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Rubio-Tapia et al. Am J Gastroenterol 2013 (ACG Guideline); Fouda et al. Nutr Rev 2012"
+    },
+    {
+      "id": "s9",
+      "metin": "Glutensiz diyete 14 ay boyunca uzman diyetisyen rehberliğinde sıkı şekilde uyan bir çölyak hastasında seroloji (tTG-IgA) negatifleşmiş olmasına rağmen klinik malabsorpsiyon bulguları ve kontrol biyopsisinde villüs atrofisi devam ediyor. Diyet kaçakları, SIBO, mikroskobik kolit ve irritabl bağırsak sendromu dışlanıyor.\n\nBu klinik tablo hangi tanıyı düşündürür ve bu tanının konulabilmesi için gereken minimum süre nedir?",
+      "secenekler": {
+        "A": "Bu tablo Refrakter Çölyak Hastalığı (RCD) ile uyumludur; tanı için uzman diyetisyen rehberliğinde uygulanan tam kısıtlı glutensiz diyete en az 12 ay boyunca uyulması ve diğer nedenlerin (diyet kaçağı, İBS, SIBO, mikroskobik kolit) ekarte edilmiş olması gerekir — bu vakada 14 aylık uyum ve dışlama süreci bu kriterleri karşılamaktadır.",
+        "B": "Bu tablo basitçe yetersiz diyet uyumunu gösterir, RCD tanısı için en az 5 yıllık diyet takibi gereklidir.",
+        "C": "Seroloji negatifleştiğinden bu hastada aktif çölyak hastalığı veya komplikasyon düşünülmemelidir, bulgular tesadüfidir.",
+        "D": "RCD tanısı yalnızca villüs atrofisi olmadan, seroloji pozitifliğiyle konulur.",
+        "E": "Bu klinik tablo mutlaka EATL (Enteropati İlişkili T-Hücreli Lenfoma) tanısını gösterir, ileri tetkike gerek yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "RCD tanımı: ≥12 ay sıkı GFD'ye rağmen seroloji negatifleşirken malabsorpsiyon+villüs atrofisi devam etmesi + diğer nedenlerin (diyet kaçağı, İBS, SIBO, mikroskobik kolit) dışlanması. Bu vaka (14 ay, dışlamalar yapılmış) kriterleri karşılıyor.",
+      "aciklama_detay": "Uzman bir diyetisyen rehberliğinde uygulanan tam kısıtlı glutensiz diyete en az 12 ay boyunca uyulmasına rağmen, kanda seroloji negatifleşirken klinik malabsorpsiyon bulgularının ve ince bağırsaktaki villüs atrofisinin devam etmesi durumu Refrakter Çölyak Hastalığı (RCD) olarak adlandırılır. RCD teşhisi koymadan önce mutlaka diyet kaçakları, irritabl bağırsak sendromu, SIBO veya mikroskobik kolit gibi diğer nedenler ekarte edilmelidir — bu vakada bu dışlama süreci tamamlanmış olarak belirtilmiştir. Bu vakada 14 aylık sıkı diyet uyumu (≥12 ay eşiğini aşan), seroloji negatifleşmesine rağmen devam eden villüs atrofisi ve diğer nedenlerin sistematik olarak dışlanmış olması, RCD tanısı için gereken tüm kriterleri karşılamaktadır. Bir sonraki adım, RCD'yi Tip 1 veya Tip 2 olarak alt sınıflandırmak için intraepitelyal lenfositlerin immünofenotipik (akım sitometrisi) ve moleküler (T-hücre klonalitesi) analizinin yapılmasıdır — çünkü bu iki tip arasında prognoz ve tedavi kökten farklıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 14 ay (≥12 ay eşiği) sıkı diyet + diğer nedenlerin dışlanması = RCD tanı kriterleri karşılanmış.",
+        "B": "YANLIS — RCD tanısı için gereken minimum süre 12 aydır, 5 yıl değildir; bu süre zaten aşılmıştır ve sıkı diyet uyumu belirtilmiştir (yetersiz uyum değil).",
+        "C": "YANLIS — Seroloji negatifleşmesi diyet uyumunun göstergesidir ancak mukozal iyileşmenin GARANTİSİ DEĞİLDİR; devam eden villüs atrofisi ciddiye alınmalıdır, tesadüfi kabul edilemez.",
+        "D": "YANLIS — RCD tanısı tam tersine VİLLÜS ATROFİSİNİN DEVAM ETMESİ ile karakterizedir (seroloji genellikle negatifleşmiştir), seroloji pozitifliği ile değil.",
+        "E": "YANLIS — Bu klinik tablo RCD ile uyumludur ancak EATL tanısı için ek ileri tetkik (IEL immünfenotipleme, görüntüleme, gerekirse ek biyopsi) gereklidir; otomatik EATL tanısı konulamaz."
+      },
+      "etiketler": [
+        "Refrakter Çölyak Hastalığı",
+        "RCD Tanı Kriterleri",
+        "Diyet Uyumu",
+        "Villüs Atrofisi",
+        "Dışlama Tanısı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Malamut & Cellier Gastroenterology 2015; Rubio-Tapia & Murray Curr Opin Gastroenterol 2010"
+    },
+    {
+      "id": "s10",
+      "metin": "Refrakter Çölyak Hastalığı tanılı bir hastada akım sitometrik inceleme yapılıyor; intraepitelyal lenfositlerin %35'inde hücre içi CD3 eksprese edilirken yüzey CD3 ve CD8 kaybolduğu saptanıyor. Moleküler analizde T-hücre reseptör gen yeniden düzenlenmesinde monoklonal bir patern gösteriliyor.\n\nBu bulgular hangi RCD alt tipini gösterir ve bu hastada azatiyoprin tedavisi neden önerilmez?",
+      "secenekler": {
+        "A": "Bu bulgular RCD Tip 1 ile uyumludur; azatiyoprin bu tip için standart birinci basamak tedavidir ve önerilir.",
+        "B": "Bu bulgular RCD Tip 2 ile uyumludur (aberran fenotip: hücre içi CD3+ ama yüzey CD3/CD8 kaybı, monoklonal T-hücre); azatiyoprin lenfoma (EATL) riskini artırabileceği endişesiyle önerilmez, bunun yerine kladribin, fludarabin, ağır vakalarda otolog HKHN veya JAK inhibitörleri (tofasitinib) tercih edilir.",
+        "C": "Bu fenotipik bulgular RCD sınıflamasında bir anlam taşımaz, tedavi kararını etkilemez.",
+        "D": "Monoklonal T-hücre paterni, hastalığın aslında poliklonal ve iyi prognozlu Tip 1 olduğunu gösterir.",
+        "E": "Azatiyoprin, RCD Tip 2'de EATL riskini azaltıcı koruyucu bir ajan olduğu için özellikle tercih edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aberran fenotip (hücre içi CD3+, yüzey CD3/CD8 kaybı) + monoklonal T-hücre = RCD Tip 2. Azatiyoprin lenfoma (EATL) riskini artırabileceği için önerilmez; kladribin/fludarabin/HKHN/JAK inhibitörü tercih edilir.",
+      "aciklama_detay": "Tip 2 RCD: Akım sitometrisi ile incelendiğinde IEL'lerin %20'sinden fazlasında hücre içi CD3 eksprese edilirken, yüzey CD3 ve CD8 moleküllerinin kaybolduğu aberran (anormal) bir fenotip saptanır. Moleküler incelemede T-hücre klonalitesi (monoklonalite) mevcuttur. Bu vakada IEL'lerin %35'inde bu aberran fenotip ve monoklonal T-hücre reseptör yeniden düzenlenmesi gösterilmiştir — her iki bulgu da Tip 2 RCD tanımını tam olarak karşılamaktadır. RCD Tip 2, hastaların yaklaşık yarısında Enteropati İlişkili T-Hücreli Lenfoma'ya (EATL) dönüşüm riski taşıyan agresif ve mortal (pre-malign) bir tablodur. Tedavisinde azatiyoprin lenfoma riskini artırabileceği endişesiyle ÖNERİLMEZ; bunun yerine cladribin (kladribin), fludarabin, şiddetli vakalarda otolog hematopoietik kök hücre nakli ve yeni nesil JAK inhibitörleri (tofasitinib) tercih edilir. Bu, Tip 1 RCD'nin (poliklonal, normal fenotip, iyi prognoz, azatiyoprin/merkaptopürin ile tedavi edilebilir) tam tersi bir tedavi yaklaşımını gerektirir — bu ayrım klinik pratikte hayati önem taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tarif edilen bulgular (aberran fenotip + monoklonalite) Tip 1'in DEĞİL, Tip 2'nin karakteristik özellikleridir; Tip 1'de IEL'ler normal ve poliklonaldir.",
+        "B": "DOGRU — Aberran fenotip + monoklonalite = RCD Tip 2; azatiyoprin lenfoma riski nedeniyle önerilmez, kladribin/fludarabin/HKHN/JAK inhibitörü tercih edilir.",
+        "C": "YANLIS — Bu fenotipik ve moleküler bulgular RCD alt tiplemesinde MERKEZİ öneme sahiptir ve tedavi kararını doğrudan yönlendirir.",
+        "D": "YANLIS — Monoklonal T-hücre paterni tam tersine Tip 2'nin (kötü prognozlu) tanımlayıcı özelliğidir; Tip 1 poliklonaldir.",
+        "E": "YANLIS — Azatiyoprin, EATL riskini AZALTMAZ, tam tersine bu riski ARTIRABİLECEĞİ endişesiyle Tip 2'de kaçınılan bir ajandır."
+      },
+      "etiketler": [
+        "RCD Tip 2",
+        "Aberran IEL Fenotipi",
+        "Monoklonalite",
+        "EATL Riski",
+        "Kladribin"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Malamut & Cellier Gastroenterology 2015; Al-Toma et al. United European Gastroenterol J 2019"
+    }
+  ]
+}

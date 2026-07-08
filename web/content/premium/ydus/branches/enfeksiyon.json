@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "id": "enfeksiyon",
+    "baslik": "Enfeksiyon Hastalıkları",
+    "aciklama": "İnvaziv fungal enfeksiyonlar, sepsis ve fırsatçı patojenleri kapsayan uzmanlık sınav modülü.",
+    "renk": "#1a5a3a",
+    "emoji": "🦠"
+  },
+  "kategoriler": [
+    {
+      "id": "firsatci-enfeksiyonlar",
+      "baslik": "Fırsatçı ve İnvaziv Enfeksiyonlar",
+      "aciklama": "İmmünsüpresif hastalarda invaziv fungal ve fırsatçı enfeksiyonlar",
+      "emoji": "🍄",
+      "konular": [
+        {
+          "id": "invaziv-fungal-enfeksiyonlar",
+          "baslik": "İnvaziv Fungal Enfeksiyonlar (İFE) — İleri Kavramlar",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    }
+  ]
+}

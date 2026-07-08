@@ -1,0 +1,308 @@
+{
+  "id": "quiz-onko-fn-001",
+  "baslik": "Febril Nötropeni Yönetimi — Soru Seti 1",
+  "branch": "onkoloji",
+  "topic": "febril-notropeni",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Akut miyeloid lösemi indüksiyon kemoterapisi alan bir hastada tam kan sayımında ANC 80 hücre/µL ölçülüyor.\n\nBu ANC değeri hangi nötropeni kategorisine girer ve klinik önemi nedir?",
+      "secenekler": {
+        "A": "Şiddetli nötropeni (ANC <500); invaziv enfeksiyon riski orta düzeydedir.",
+        "B": "Derin nötropeni (ANC <100); invaziv enfeksiyon ve bakteriyemi riski DRAMATİK olarak artmıştır.",
+        "C": "Hafif nötropeni; klinik olarak anlamlı değildir, izlem yeterlidir.",
+        "D": "Bu değer nötropeni tanımına girmez, ek tetkik gerekmez.",
+        "E": "ANC <100 değeri yalnızca pediatrik hastalarda klinik önem taşır, erişkinde anlamsızdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ANC <100 hücre/µL = derin nötropeni; bu düzeyde invaziv enfeksiyon ve bakteriyemi riski dramatik olarak artar. Bu, şiddetli nötropeninin (ANC<500) ötesinde ayrı ve daha ciddi bir kategoridir.",
+      "aciklama_detay": "Nötropeni terminolojisinde üç düzey tanımlanır: Şiddetli nötropeni, ANC'nin <500 hücre/µL olması veya önümüzdeki 48 saat içinde bu değerin altına düşmesinin öngörülmesidir. Derin nötropeni ise ANC'nin <100 hücre/µL olduğu, invaziv enfeksiyon ve bakteriyemi riskinin dramatik olarak arttığı tablodur. Bu hastada ANC 80 hücre/µL olduğundan derin nötropeni kategorisine girmektedir — bu, yalnızca 'şiddetli' kategoriden daha ciddi bir risk düzeyini temsil eder ve agresif izlem/tedavi yaklaşımını gerektirir. Akut lösemi indüksiyon kemoterapisi zaten yüksek riskli bir klinik senaryo olup (nötropeni süresi >7 gün beklenir), derin nötropeni düzeyi bu riski daha da artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ANC 80, şiddetli nötropeni eşiğinin (< 500) çok altında, derin nötropeni (< 100) sınırındadır; risk 'orta düzey' değil dramatik olarak artmıştır.",
+        "B": "DOGRU — ANC <100 = derin nötropeni; bakteriyemi/invaziv enfeksiyon riski dramatik artar.",
+        "C": "YANLIS — Bu düzey nötropeni asla 'hafif' veya klinik olarak önemsiz değildir; en ciddi kategoridir.",
+        "D": "YANLIS — ANC 80, nötropeni tanımının kesinlikle içindedir (şiddetli nötropeni eşiği bile 500'dür).",
+        "E": "YANLIS — Derin nötropeni tanımı ve klinik önemi erişkin onkoloji/hematoloji pratiğinde de merkezi bir kavramdır, pediatriyle sınırlı değildir."
+      },
+      "etiketler": [
+        "Derin Nötropeni",
+        "ANC",
+        "Terminoloji",
+        "Bakteriyemi Riski",
+        "AML İndüksiyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline); Klastersky et al. Ann Oncol 2016 (ESMO)"
+    },
+    {
+      "id": "s2",
+      "metin": "Kemoterapi sonrası nötropenik dönemde olan bir hasta acil servise ateş ile başvuruyor. Hemşire, standart protokol gereği rektal ısı ölçümü yapmayı ve tuşe muayenesiyle perianal apse açısından değerlendirme yapmayı planlıyor.\n\nBu yaklaşımla ilgili en doğru müdahale hangisidir?",
+      "secenekler": {
+        "A": "Rektal ısı ölçümü ve tuşe, nötropenik hastalarda standart ve güvenli bir uygulamadır, devam edilmelidir.",
+        "B": "Dijital rektal muayene (tuşe) ve rektal ısı ölçümünden KESİNLİKLE KAÇINILMALIDIR; bu işlemler frajil gastrointestinal mukozaya travma vererek nötropenik enterokoliti (tiflit) kötüleştirebilir ve dolaşıma endojen flora geçişini (bakteriyemiyi) tetikleyebilir.",
+        "C": "Yalnızca tuşe kontrendikedir, rektal ısı ölçümü güvenle yapılabilir.",
+        "D": "Bu kontrendikasyon yalnızca derin nötropenili (ANC<100) hastalar için geçerlidir, şiddetli nötropenide (ANC<500) sorun yoktur.",
+        "E": "Rektal muayeneden kaçınma önerisi yalnızca pediatrik hastalar içindir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Nötropenik hastalarda hem rektal ısı ölçümü hem tuşe kontrendikedir — frajil GİS mukozasına travma, tiflit kötüleşmesi ve bakteriyemi tetiklenmesi riski nedeniyle her ikisinden de kaçınılmalıdır.",
+      "aciklama_detay": "Frajil gastrointestinal mukoza yapısı nedeniyle, nötrofilik enterokolit (tiflit) tablosunu kötüleştirmemek ve dolaşıma endojen flora geçişini (bakteriyemiyi) tetiklememek adına dijital rektal muayene (tuşe) VE rektal ısı ölçümü yapılmasından kesinlikle kaçınılmalıdır. Nötropenik hastalarda bağırsak mukozası kemoterapiye bağlı hasar nedeniyle zaten frajildir; rektal bölgeye yapılacak herhangi bir mekanik manipülasyon (muayene veya termometre girişi) bu hassas mukozada mikro-yırtıklara yol açarak lokal bakterilerin sistemik dolaşıma geçmesine (translokasyon, bakteriyemi) veya var olan nötropenik enterokolitin şiddetlenmesine neden olabilir. Bu nedenle bu iki uygulama da (yalnızca biri değil) nötropenik hastalarda standart protokolden çıkarılmalı, alternatif ısı ölçüm yöntemleri (oral, aksiller, timpanik) kullanılmalı ve perianal bölge yalnızca GÖRSEL olarak (invaziv olmayan şekilde) değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, her iki uygulama da nötropenik hastalarda KONTRENDİKEDİR.",
+        "B": "DOGRU — Hem tuşe hem rektal ısı ölçümünden kaçınılmalı; tiflit kötüleşmesi ve bakteriyemi riski.",
+        "C": "YANLIS — Yalnızca tuşe değil, rektal ısı ölçümü de kontrendikedir; her ikisi de mekanik travma riski taşır.",
+        "D": "YANLIS — Bu kontrendikasyon nötropeni düzeyine göre ayrım yapmaz; şiddetli nötropenide (ANC<500) de aynı önlem geçerlidir.",
+        "E": "YANLIS — Bu öneri tüm nötropenik hastalar (erişkin dahil) için geçerlidir, pediatriyle sınırlı değildir."
+      },
+      "etiketler": [
+        "Rektal Muayene Kontrendikasyonu",
+        "Nötropenik Enterokolit",
+        "Tiflit",
+        "Klinik Değerlendirme",
+        "Bakteriyemi Önleme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline)"
+    },
+    {
+      "id": "s3",
+      "metin": "Febril nötropeni tanısı alan bir hastada, ampirik antibiyotik başlanmadan önce mikrobiyolojik örnekleme planlanıyor. Hastada çift lümenli bir santral venöz kateter (CVC) mevcut.\n\nKan kültürü alım protokolü açısından en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca periferik venden tek bir kan kültürü seti almak yeterlidir, CVC örneklemesi gereksizdir.",
+        "B": "İlk ampirik antibiyotik dozundan önce, CVC'nin HER BİR LÜMENİNDEN ve periferik venden eşzamanlı kan kültürleri (en az 2 set aerobik/anaerobik) mutlaka alınmalıdır.",
+        "C": "Kan kültürleri yalnızca ilk antibiyotik dozu verildikten 24 saat sonra alınmalıdır, örnekleme antibiyotik başlangıcını geciktirmemelidir.",
+        "D": "CVC'nin yalnızca bir lümeninden örnek almak yeterlidir, her iki lümenin ayrı ayrı örneklenmesine gerek yoktur.",
+        "E": "Kan kültürü alımı, hastanın ateşi 39°C'yi geçmedikçe gerekli değildir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İlk antibiyotik dozundan ÖNCE, CVC'nin HER LÜMENİNDEN + periferik venden eşzamanlı en az 2 set (aerobik/anaerobik) kan kültürü alınmalıdır — kateter ilişkili enfeksiyonu saptamak için her lümen ayrı örneklenir.",
+      "aciklama_detay": "İlk ampirik antibiyotik dozundan önce, santral venöz kateterin (CVC) her bir lümeninden ve periferik venden eşzamanlı kan kültürleri (en az 2 set aerobik/anaerobik) mutlaka alınmalıdır. CVC'nin her lümeninden ayrı örnekleme yapılmasının nedeni, kateter ilişkili kan dolaşımı enfeksiyonunu (CLABSI) saptamaktır — farklı lümenler farklı derecede kolonize/enfekte olabilir ve karşılaştırmalı üreme zamanı analizi (differential time to positivity) ile kateter kaynaklı enfeksiyon tanısı desteklenebilir. Örnekleme, antibiyotik başlangıcını GECİKTİRMEMELİDİR — ideal olarak örnekler hızlıca alınıp hemen ardından (60 dakika kuralı çerçevesinde) ampirik antibiyotik başlanmalıdır; örnekleme antibiyotik öncesi yapılmalıdır çünkü antibiyotik sonrası alınan kültürlerin duyarlılığı belirgin azalır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yalnızca periferik kültür yetersizdir; CVC'nin her lümeninden de örnekleme kateter ilişkili enfeksiyonu saptamak için gereklidir.",
+        "B": "DOGRU — Antibiyotik öncesi, CVC her lümen + periferik venden eşzamanlı ≥2 set kültür.",
+        "C": "YANLIS — Kültürler antibiyotik ÖNCESİ alınmalıdır; antibiyotik sonrası alınan kültürlerin duyarlılığı düşer ve gerçek etkeni gösteremeyebilir.",
+        "D": "YANLIS — Her iki lümenin AYRI AYRI örneklenmesi, hangi lümenin (varsa) enfekte olduğunu belirlemek için önemlidir.",
+        "E": "YANLIS — Kan kültürü alımı ateş derecesinden bağımsız olarak febril nötropeni tanımını karşılayan (≥38.3°C tek ölçüm veya ≥38.0°C 1 saat) her hastada endikedir."
+      },
+      "etiketler": [
+        "Kan Kültürü",
+        "Santral Venöz Kateter",
+        "Mikrobiyolojik Örnekleme",
+        "CLABSI",
+        "Antibiyotik Öncesi Kültür"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline)"
+    },
+    {
+      "id": "s4",
+      "metin": "Febril nötropeni tanısı ile acil servise başvuran bir hasta triyaj edilip değerlendiriliyor. Hemodinamik olarak stabil ancak yüksek riskli kategoriye girmektedir.\n\nAmpirik antibiyotik başlama zamanlaması açısından güncel öneri nedir?",
+      "secenekler": {
+        "A": "Nötropenik ateş, tanısal veya yatış işlemleri geciktirilmeksizin acil bir tıbbi durum olarak kabul edilmeli ve hastaya triyaj anından sonraki en geç 60 dakika içinde geniş spektrumlu ampirik antibiyotik başlanmalıdır.",
+        "B": "Antibiyotik başlanmadan önce tüm görüntüleme (toraks BT, batın BT) sonuçlarının beklenmesi gerekir, bu süre 24 saati bulabilir.",
+        "C": "Hasta hemodinamik olarak stabil olduğundan antibiyotik başlangıcı 12-24 saat ertelenebilir, aciliyet yoktur.",
+        "D": "Antibiyotik yalnızca kan kültürü sonuçları (üreme olup olmadığı) netleştikten sonra (genellikle 48-72 saat) başlanmalıdır.",
+        "E": "60 dakika kuralı yalnızca derin nötropenili (ANC<100) hastalar için geçerlidir, diğer yüksek riskli hastalarda süre sınırı yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Nötropenik ateş acil tıbbi durumdur; tanısal/yatış işlemleri geciktirilmeksizin triyaj anından sonraki en geç 60 dakika içinde ampirik antibiyotik başlanmalıdır — hemodinamik stabilite bu kuralı değiştirmez.",
+      "aciklama_detay": "Nötropenik ateş tanısal veya yatış işlemleri geciktirilmeksizin acil bir tıbbi durum (medical emergency) olarak kabul edilmeli ve hastaya triaj anından sonraki en geç 60 dakika içinde geniş spektrumlu ampirik antibiyotik başlanmalıdır. Bu kural, hastanın o anki hemodinamik stabilitesinden bağımsız olarak uygulanır çünkü nötropenik hastalarda klinik kötüleşme çok hızlı gelişebilir (saatler içinde stabil bir hastadan septik şoka ilerleme mümkündür) ve gecikmiş antibiyotik başlangıcının mortaliteyi artırdığı gösterilmiştir. Görüntüleme sonuçları veya kültür üreme sonuçları beklenmemeli; bu tetkikler ampirik tedavi başlangıcından SONRA veya PARALEL olarak değerlendirilmeye devam edilmelidir. Bu 60 dakikalık pencere, tüm yüksek riskli febril nötropeni hastaları için geçerlidir, yalnızca derin nötropenili alt grupla sınırlı değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 60 dakika kuralı: tanısal işlemler beklenmeden acil ampirik antibiyotik başlangıcı.",
+        "B": "YANLIS — Görüntüleme sonuçlarının beklenmesi antibiyotik başlangıcını KESİNLİKLE geciktirmemelidir; bu yaklaşım hatalıdır ve mortaliteyi artırabilir.",
+        "C": "YANLIS — Hemodinamik stabilite, antibiyotik başlangıcının ertelenmesini haklı çıkarmaz; 60 dakika kuralı stabil hastalarda da geçerlidir çünkü hızla kötüleşebilirler.",
+        "D": "YANLIS — Kan kültürleri antibiyotik ÖNCESİ alınır ancak SONUÇLARI beklenmeden ampirik tedavi başlanır; kültür sonuçları günler alabilir ve bu gecikme kabul edilemez.",
+        "E": "YANLIS — 60 dakika kuralı derin nötropeniyle sınırlı değildir, febril nötropeni tanımını karşılayan tüm yüksek riskli (ve genel olarak tüm) hastalar için geçerlidir."
+      },
+      "etiketler": [
+        "60 Dakika Kuralı",
+        "Onkolojik Acil",
+        "Ampirik Antibiyotik",
+        "Triyaj",
+        "Zamanlama"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline); NCCN Guidelines — Prevention and Treatment of Cancer-Related Infections"
+    },
+    {
+      "id": "s5",
+      "metin": "Yüksek riskli febril nötropeni tanılı, penisilin alerjisi (anafilaksi öyküsü) olan bir hastada ampirik antibiyotik seçimi yapılıyor.\n\nBu hastada standart antipsödomonal beta-laktam monoterapisi yerine hangi kombinasyon tercih edilmelidir?",
+      "secenekler": {
+        "A": "Vankomisin monoterapisi; hem gram-pozitif hem gram-negatif kapsamı tek başına sağlar.",
+        "B": "Aztreonam (gram-negatifler için) + Vankomisin (gram-pozitifler için) kombinasyonu; bu, penisilin alerjisi olan hastalarda beta-laktam çapraz reaktivitesinden kaçınırken hem gram-negatif hem gram-pozitif kapsamı sağlar.",
+        "C": "Standart piperasilin-tazobaktam dozunda hiçbir değişiklik yapılmadan devam edilmelidir, penisilin alerjisi klinik olarak önemsizdir.",
+        "D": "Yalnızca oral siprofloksasin yeterlidir, bu hasta ayaktan izlenebilir.",
+        "E": "Aminoglikozid monoterapisi, penisilin alerjisi olan yüksek riskli hastalarda tek başına yeterli ampirik kapsamı sağlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Penisilin alerjisi olanlarda gram-negatifler için Aztreonam + gram-pozitifler için Vankomisin kombinasyonu tercih edilir — bu, beta-laktam çapraz reaktivite riskini önlerken gerekli geniş kapsamı sağlar.",
+      "aciklama_detay": "Penisilin alerjisi olanlarda gram-negatifler için aztreonam; gram-pozitifler için vankomisin kombinasyonu tercih edilir. Aztreonam, bir monobaktam antibiyotik olup diğer beta-laktamlarla (penisilinler, sefalosporinler, karbapenemler) minimal çapraz reaktivite gösterir ve güçlü gram-negatif (Pseudomonas dahil) kapsam sağlar — bu, ciddi penisilin alerjisi (anafilaksi gibi) olan hastalarda güvenli bir alternatiftir. Ancak aztreonam gram-pozitif kapsam SAĞLAMADIĞINDAN, yüksek riskli febril nötropeni hastasında gerekli olan geniş kapsamı tamamlamak için vankomisin eklenir (gram-pozitif organizmaları, özellikle olası stafilokok/streptokok enfeksiyonlarını kapsamak için). Bu kombinasyon, standart antipsödomonal beta-laktam monoterapisinin (sefepim, piperasilin-tazobaktam gibi — bunlar penisilin alerjik hastalarda çapraz reaksiyon riski taşıyabilir) yerini alan, güvenli ve etkili bir alternatiftir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Vankomisin yalnızca gram-pozitif kapsam sağlar; tek başına kritik gram-negatif (Pseudomonas dahil) kapsamdan yoksundur, yeterli değildir.",
+        "B": "DOGRU — Aztreonam (gram-negatif) + Vankomisin (gram-pozitif) = penisilin alerjisinde güvenli, geniş kapsamlı kombinasyon.",
+        "C": "YANLIS — Piperasilin-tazobaktam bir beta-laktamdır ve ciddi penisilin alerjisi (anafilaksi) olan hastada çapraz reaksiyon riski taşır; değiştirilmelidir.",
+        "D": "YANLIS — Bu hasta YÜKSEK RİSKLİ kategoridedir; yüksek riskli hastalar IV, geniş spektrumlu tedavi ve genellikle yatış gerektirir, oral monoterapi/ayaktan izlem uygun değildir.",
+        "E": "YANLIS — Aminoglikozid monoterapisi yeterli gram-pozitif kapsam sağlamaz ve genellikle tek başına ampirik monoterapi olarak önerilmez."
+      },
+      "etiketler": [
+        "Penisilin Alerjisi",
+        "Aztreonam",
+        "Vankomisin",
+        "Ampirik Tedavi Seçimi",
+        "Antibiyotik Kombinasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline)"
+    },
+    {
+      "id": "s6",
+      "metin": "Febril nötropeni tanısı ile antipsödomonal beta-laktam monoterapisi başlanan bir hastada, mukoza hasarı olmaksızın ve hemodinamik olarak stabil seyrederken, ampirik olarak vankomisin de tedaviye ekleniyor.\n\nBu yaklaşım hakkında en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Rutin vankomisin eklenmesi doğru bir yaklaşımdır; her yüksek riskli febril nötropeni hastasına başlangıçtan itibaren vankomisin eklenmelidir.",
+        "B": "Rutin vankomisin kullanımı sağkalımı veya genel prognozu iyileştirmediği için ampirik olarak her hastaya başlanmaz; bu hastada spesifik bir endikasyon (hemodinamik instabilite, şiddetli mukozit+kinolon profilaksisi öyküsü, MRSA/dirençli pnömokok kültürü, kateter enfeksiyonu, dökümante pnömoni) belirtilmediğinden vankomisin eklenmesi gerekçesiz olabilir.",
+        "C": "Vankomisin yalnızca düşük riskli hastalarda eklenir, yüksek riskli hastalarda hiçbir zaman kullanılmaz.",
+        "D": "Vankomisin eklendiğinde süresiz olarak devam edilmelidir, kesilme kriteri yoktur.",
+        "E": "Vankomisin yalnızca oral yolla verildiğinde etkilidir, IV formunun febril nötropenide yeri yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Rutin vankomisin eklenmesi sağkalımı iyileştirmez ve yalnızca spesifik endikasyonlarla (hemodinamik instabilite, kinolon profilaksili şiddetli mukozit, MRSA/dirençli pnömokok, kateter enfeksiyonu, dökümante pnömoni) eklenmelidir; bu hastada böyle bir endikasyon belirtilmemiştir.",
+      "aciklama_detay": "Rutin vankomisin kullanımı sağkalımı veya genel prognozu iyileştirmediği için ampirik olarak her hastaya başlanmaz. Sadece hemodinamik instabilite (sepsis/septik şok), şiddetli mukoza hasarı eşliğinde önceden kinolon profilaksisi alınmış olması (viridans streptokok bakteriyemisi riski), kültürde üreyen MRSA veya sefalosporin dirençli pnömokok bulunması, kateter ilişkili enfeksiyon veya radyolojik dökümante pnömoni şüphesinde ampirik tedaviye eklenir. Bu vakada hasta hemodinamik olarak stabildir ve mukoza hasarı belirtilmemiştir; bu nedenle vankomisin eklenmesi için tanımlanan spesifik endikasyonlardan hiçbiri karşılanmamış görünmektedir. Gereksiz vankomisin kullanımı, vankomisine dirençli enterokok (VRE) gelişimi riskini artırma, nefrotoksisite ve gereksiz ilaç maliyeti gibi olumsuz sonuçlara yol açabileceğinden, endikasyonsuz kullanımdan kaçınılmalıdır. Eğer eklenirse, ilk 48-72 saatte dirençli bir gram-pozitif etken izole edilmezse tedavi kesilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu tam olarak yanlış/gereksiz uygulamadır; rutin, endikasyonsuz vankomisin eklenmesi önerilmez.",
+        "B": "DOGRU — Vankomisin yalnızca spesifik endikasyonlarla eklenir; bu vakada belirtilen bir endikasyon yoktur.",
+        "C": "YANLIS — Vankomisin, endike olduğunda YÜKSEK riskli hastalarda kullanılır (hemodinamik instabilite, MRSA şüphesi gibi); düşük riskli hastalarla sınırlı değildir.",
+        "D": "YANLIS — Vankomisin başlandığında ilk 48-72 saatte dirençli gram-pozitif etken izole edilmezse KESİLMELİDİR; süresiz devam önerisi yanlıştır.",
+        "E": "YANLIS — Vankomisin febril nötropenide IV yolla kullanılır (oral vankomisin sistemik emilmez, yalnızca C. difficile kolitinde lokal etki için kullanılır); soru öncülü tersine çevrilmiştir."
+      },
+      "etiketler": [
+        "Vankomisin Endikasyonları",
+        "Gereksiz Antibiyotik Kullanımı",
+        "Ampirik Tedavi",
+        "VRE Riski",
+        "Antibiyotik Yönetimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline)"
+    },
+    {
+      "id": "s7",
+      "metin": "Geniş spektrumlu ampirik antibiyotik tedavisi alan, hemodinamik olarak stabil, hematolojik maligniteli bir hastada tedavinin 3. gününde hâlâ ateş devam ediyor. Klinik kötüleşme, yeni bulgu veya kültür pozitifliği yok.\n\nBu durumda en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "3. günde hâlâ ateş devam ettiğinden derhal antibiyotik rejimi değiştirilmeli ve antifungal eklenmelidir.",
+        "B": "Geniş spektrumlu antibiyoterapi alan stabil hastalarda ateşin düşmesi 4-5 günü bulabilir; klinik kötüleşme yoksa salt ateşin devam etmesi antimikrobiyal değişimi gerektirmez, izlem sürdürülmelidir.",
+        "C": "Ateş 3. günde devam ediyorsa hasta mutlaka mantar enfeksiyonu açısından pozitif kabul edilmeli ve ampirik antifungal tedavi hemen başlanmalıdır.",
+        "D": "Bu durumda antibiyotik tamamen kesilmeli ve yalnızca semptomatik tedaviye geçilmelidir.",
+        "E": "3 gün sonra hâlâ ateşli olan her hasta, nötropeni süresinden bağımsız olarak yüksek riskli antifungal tedavi endikasyonuna girer."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Stabil hastalarda ateşin düşmesi 4-5 günü bulabilir. Klinik kötüleşme yoksa yalnızca ateşin devam etmesi (3. gün gibi erken bir zamanda) antimikrobiyal değişimi veya antifungal eklenmesini gerektirmez.",
+      "aciklama_detay": "Geniş spektrumlu antibiyoterapi alan stabil hematolojik maligniteli bir hastada ateşin düşmesi 4 ila 5 günü bulabilir. Klinik kötüleşme yok ise salt ateşin devam etmesi antimikrobiyal değişimi gerektirmez. Bu, sabırsız/erken antibiyotik değişikliğinin önlenmesi gereken bir sınav ve klinik pratik tuzağıdır — 3. gün gibi erken bir zaman noktasında hâlâ ateşli olmak, tedavi başarısızlığı anlamına gelmez; enfeksiyon yükünün ve konak yanıtının klinik olarak çözülmesi zaman alabilir. Antifungal tedavinin gündeme gelmesi için beklenen eşik, nötropeni süresi 7 günü aşan VE ampirik antibiyotik tedavisine rağmen ateşin 4-7 gün sonra HÂLÂ devam ettiği yüksek riskli olgulardır. Bu hastada henüz bu süre eşiğine ulaşılmamıştır (3. gün) ve klinik kötüleşme de yoktur; bu nedenle mevcut tedaviye devam edilip yakın izlem sürdürülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 3. günde hâlâ ateşli olmak beklenen bir seyirdir (4-5 gün sürebilir); klinik kötüleşme olmadan derhal değişiklik gerekmez.",
+        "B": "DOGRU — Stabil hastada ateş 4-5 gün sürebilir; klinik kötüleşme yoksa erken değişiklik gerekmez.",
+        "C": "YANLIS — 3. günde ateş devamı, mantar enfeksiyonunu 'pozitif kabul etme' kriteri değildir; antifungal eşiği 4-7 gün sonrasıdır ve klinik değerlendirme gerektirir.",
+        "D": "YANLIS — Antibiyotiğin tamamen kesilmesi uygun değildir; hasta hâlâ nötropenik ve enfeksiyon riski altındadır, tedaviye devam edilmelidir.",
+        "E": "YANLIS — Antifungal endikasyonu yalnızca ateş süresine değil, nötropeni süresinin (>7 gün) ve yüksek risk durumunun birlikte değerlendirilmesine dayanır."
+      },
+      "etiketler": [
+        "Dirençli Ateş",
+        "Klinik İzlem",
+        "Antifungal Zamanlaması",
+        "Erken Tedavi Değişikliği Tuzağı",
+        "Ateş Süresi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline); Pappas et al. Clin Infect Dis 2016 (IDSA Candidiasis Guideline)"
+    },
+    {
+      "id": "s8",
+      "metin": "Nötropeni süresi 9 günü bulan, ampirik geniş spektrumlu antibiyotik tedavisine rağmen 6. günde hâlâ ateşi devam eden yüksek riskli bir hastada akciğer BT'sinde kaviter lezyon saptanıyor. Bu bulgu, hastanın nötrofil sayısının toparlanmaya başladığı döneme denk geliyor.\n\nBu radyolojik bulgu hangi tanıyı düşündürür ve tedavi yaklaşımı nasıl olmalıdır?",
+      "secenekler": {
+        "A": "Kaviter lezyon, nötrofillerin geri kazanılmaya başlandığı evrede sıklıkla Aspergillus veya Fusarium invazyonunun güçlü bir işaretidir; bu bulgu ve klinik senaryo (>7 gün nötropeni + 4-7 gün sonra devam eden ateş) preemptif antifungal tedaviyi (ekinokandin, lipozomal amfoterisin B veya vorikonazol) destekler.",
+        "B": "Kaviter lezyon yalnızca bakteriyel apseyi düşündürür, mantar enfeksiyonuyla hiçbir ilişkisi yoktur.",
+        "C": "Bu bulgu tamamen normal bir iyileşme sürecinin parçasıdır, ek tedavi gerektirmez.",
+        "D": "Kaviter lezyon yalnızca tüberküloz enfeksiyonunu düşündürür, bu hastada antitüberküloz tedavi başlanmalıdır.",
+        "E": "Nötrofil toparlanması sırasında görülen kaviter lezyonlar, mantar enfeksiyonu riskinin ORTADAN KALKTIĞINI gösterir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Nötrofil toparlanma döneminde saptanan kaviter akciğer lezyonu, güçlü bir Aspergillus/Fusarium invazyon işaretidir. Bu klinik senaryo (>7 gün nötropeni + 4-7 gün süren dirençli ateş) preemptif antifungal tedaviyi destekler.",
+      "aciklama_detay": "Akciğer BT'sinde kaviter lezyonlar izlenmesi sıklıkla nötrofillerin geri kazanılmaya başlandığı evrede Aspergillus veya Fusarium invazyonunun güçlü bir işareti olabilir. Bu, invaziv küf mantarı enfeksiyonlarının patofizyolojisiyle ilişkilidir: nötropeni sırasında konak, enfekte dokuda etkili bir inflamatuar/nekrotizan yanıt oluşturamaz; nötrofiller geri döndüğünde (toparlanma), bu hücreler enfekte akciğer dokusuna saldırarak nekroz ve kavitasyona yol açar — bu nedenle kaviter lezyonlar paradoksal olarak nötrofil toparlanma döneminde daha belirgin hale gelebilir ('immün rekonstitüsyon' benzeri bir fenomen). Bu hastada zaten nötropeni süresi (9 gün) beklenen eşiği (>7 gün) aşmış ve ampirik tedaviye rağmen ateş 4-7 gün eşiğinde (6. gün) devam etmektedir — bu, preemptif/ampirik antifungal tedavi (ekinokandin, lipozomal amfoterisin B veya vorikonazol) başlanması için tanımlanan klinik endikasyonu karşılamaktadır. Kaviter lezyon bulgusu bu kararı radyolojik olarak güçlü şekilde destekler.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Nötrofil toparlanma döneminde kaviter lezyon = Aspergillus/Fusarium işareti; klinik senaryo preemptif antifungali destekler.",
+        "B": "YANLIS — Bu spesifik klinik bağlamda (nötropenik hasta, toparlanma dönemi) kaviter lezyon özellikle invaziv küf mantarı enfeksiyonunu düşündürür, salt bakteriyel apse değil.",
+        "C": "YANLIS — Bu bulgu normal bir iyileşme süreci değildir; ciddi bir enfeksiyöz komplikasyonu (invaziv fungal enfeksiyon) işaret eder ve tedavi gerektirir.",
+        "D": "YANLIS — Bu klinik bağlamda (nötropenik hasta, dirençli ateş, toparlanma döneminde kaviter lezyon) asıl düşünülmesi gereken invaziv mantar enfeksiyonudur, tüberküloz birincil düşünce değildir.",
+        "E": "YANLIS — Tam tersine, bu bulgu mantar enfeksiyonu riskinin/varlığının GÜÇLÜ bir işaretidir, riskin ortadan kalktığını göstermez."
+      },
+      "etiketler": [
+        "Kaviter Lezyon",
+        "Aspergillus",
+        "Nötrofil Toparlanması",
+        "Preemptif Antifungal",
+        "İnvaziv Mantar Enfeksiyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Pappas et al. Clin Infect Dis 2016; Patterson et al. Clin Infect Dis 2016 (Aspergillosis Guideline)"
+    },
+    {
+      "id": "s9",
+      "metin": "Bir onkoloji merkezinde, uygulanacak yeni bir kemoterapi rejiminin febril nötropeni riski hesaplanıyor ve %25 olarak bulunuyor.\n\nBu risk oranına göre G-CSF profilaksisi kararı nasıl verilmelidir?",
+      "secenekler": {
+        "A": "FN riski %25 olduğundan (≥%20 eşiğinin üzerinde), bu rejimi alacak tüm hastalarda primer profilaksi olarak filgrastim veya pegfilgrastim gibi G-CSF ajanlarının TÜM KÜRLERDE uygulanması gerekir.",
+        "B": "G-CSF profilaksisi yalnızca hasta daha önce bir febril nötropeni atağı geçirmişse düşünülmelidir, ilk kürde gerekmez.",
+        "C": "Risk %25 olsa dahi G-CSF yalnızca 65 yaş üstü hastalarda uygulanmalıdır, genç hastalarda gereksizdir.",
+        "D": "G-CSF profilaksisi yalnızca febril nötropeni atağı geliştikten sonra (terapötik amaçlı) başlanmalıdır, primer profilaksi kavramı geçerli değildir.",
+        "E": "Risk %25 eşiği G-CSF kararı için anlamsızdır, karar yalnızca hastanın performans durumuna göre verilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "FN riski ≥%20 olan tüm rejimlerde primer profilaksi olarak G-CSF (filgrastim/pegfilgrastim) TÜM KÜRLERDE uygulanmalıdır. Bu hastada risk %25 olduğundan eşiği aşmaktadır ve profilaksi endikedir.",
+      "aciklama_detay": "Uygulanacak kemoterapi rejimine bağlı gelişebilecek febril nötropeni riskinin %20 veya üzerinde olduğu hesaplanan tüm olgularda, primer profilaksi olarak filgrastim, pegfilgrastim gibi ajanların tüm kürlerde uygulanması gerekir. Bu risk bazlı yaklaşım, rejimin kendisinin miyelosüpresif potansiyeline göre önceden (ilk kürden itibaren) koruyucu tedavi başlatılması prensibine dayanır — hastanın geçmişte FN atağı geçirip geçirmediğine bakılmaksızın, rejim riski eşiği aştığında profilaksi endikedir. Risk oranın %10-20 aralığında kaldığı ancak hastanın 65 yaş üzerinde olduğu, ileri tümör evresi bulunduğu veya başka kronik disfonksiyon taşıdığı durumlarda da yine profilaktik miyeloid büyüme faktörü uygulanması hedeflenir — bu, ek hasta bazlı risk faktörlerinin rejim riskini 'yükselttiği' bir ara kategoridir. Bu senaryoda risk zaten %25 (≥%20 eşiğinin üzerinde) olduğundan, hasta yaşından veya diğer faktörlerden bağımsız olarak doğrudan primer profilaksi endikasyonu mevcuttur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Risk ≥%20 → primer G-CSF profilaksisi tüm kürlerde, ilk kürden itibaren.",
+        "B": "YANLIS — Primer profilaksi kavramı tam olarak İLK kürden itibaren, önceki bir atak öyküsü olmadan uygulanmasını ifade eder; risk eşiği aşıldığında geçmiş atak şartı aranmaz.",
+        "C": "YANLIS — Risk %20 üzerinde olduğunda profilaksi TÜM hastalara (yaştan bağımsız) uygulanır; 65 yaş kriteri yalnızca ARA risk kategorisinde (%10-20) ek bir faktör olarak devreye girer.",
+        "D": "YANLIS — Primer profilaksi kavramı tam olarak atak GELİŞMEDEN ÖNCE, riske dayalı olarak uygulanan yaklaşımdır; terapötik (atak sonrası) kullanım ayrı ve farklı önerilen bir kategoridir.",
+        "E": "YANLIS — Risk yüzdesi (rejime bağlı FN riski) G-CSF kararının TEMEL belirleyicisidir; performans durumu ek bir faktör olabilir ama tek belirleyici değildir."
+      },
+      "etiketler": [
+        "G-CSF Profilaksisi",
+        "Filgrastim",
+        "Pegfilgrastim",
+        "Primer Profilaksi",
+        "Risk Eşiği %20"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Smith et al. J Clin Oncol 2015 (ASCO G-CSF Guideline Update); NCCN Guidelines — Myeloid Growth Factors"
+    },
+    {
+      "id": "s10",
+      "metin": "Febril nötropeni atağı gelişen, hemodinamik olarak stabil ve solunum yetmezliği bulunmayan bir hastada, klinik ekip tedaviye terapötik G-CSF eklemeyi tartışıyor.\n\nBu klinik senaryoda terapötik G-CSF kullanımı hakkında en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Enfeksiyon veya ateş geliştikten sonra (nötropenik atak esnasında) terapötik amaçlı G-CSF kullanımı, sepsis veya ciddi solunum yetmezliği durumları DIŞINDA klinik genel prognozu ve ölüm oranını net şekilde iyileştirmediği için rutin olarak önerilmemektedir; bu stabil hastada rutin eklenmesi gerekçesiz olabilir.",
+        "B": "Terapömatik G-CSF, febril nötropeni atağı gelişen TÜM hastalarda mutlaka eklenmelidir, bu standart bakımın bir parçasıdır.",
+        "C": "Terapötik G-CSF yalnızca profilaktik G-CSF hiç uygulanmamış hastalarda endikedir, önceden profilaksi alanlarda kontrendikedir.",
+        "D": "G-CSF, febril nötropeni atağı sırasında yalnızca antifungal tedaviyle birlikte kullanılabilir, antibiyotikle birlikte kullanılamaz.",
+        "E": "Terapötik G-CSF kullanımı, atak sırasında ANC düzeyinden bağımsız olarak her zaman mortaliteyi anlamlı azaltır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Terapötik (atak sırasında) G-CSF kullanımı, sepsis veya ciddi solunum yetmezliği DIŞINDA prognozu/mortaliteyi net iyileştirmediği için rutin önerilmez. Bu stabil, solunum yetmezliği olmayan hastada rutin ekleme gerekçesiz olabilir.",
+      "aciklama_detay": "Enfeksiyon veya ateş geliştikten sonra (nötropenik atak esnasında) terapötik amaçlı G-CSF kullanımı (sepsis veya ciddi solunum yetmezliği durumları dışında) klinik genel prognozu ve ölüm oranını net şekilde iyileştirmediği için rutin olarak önerilmemektedir. Bu, G-CSF'nin iki farklı kullanım bağlamı arasındaki önemli ayrımı vurgular: (1) Primer/sekonder PROFİLAKSİ — atak gelişmeden önce, risk bazlı olarak uygulanır ve FN insidansını azaltmada kanıtlanmış faydası vardır; (2) TERAPÖTİK kullanım — atak zaten geliştikten sonra, nötrofil toparlanmasını hızlandırmak amacıyla eklenir, ancak bu kullanımın genel mortalite/prognoz üzerine anlamlı faydası gösterilememiştir (nötropeni süresini kısaltabilse de klinik sonlanımları değiştirmez). İstisna, sepsis veya ciddi solunum yetmezliği gibi hayatı tehdit eden komplikasyonların varlığıdır — bu durumlarda G-CSF eklenmesi düşünülebilir. Bu vakada hasta stabil ve solunum yetmezliği yoktur, bu nedenle terapötik G-CSF eklenmesi için tanımlanan istisnai endikasyon karşılanmamaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Terapötik G-CSF, sepsis/ciddi solunum yetmezliği dışında rutin önerilmez; bu stabil hastada endikasyon yok.",
+        "B": "YANLIS — Terapötik G-CSF TÜM hastalarda standart değildir; kanıt genel prognozu iyileştirmediğini göstermiştir, rutin uygulama önerilmez.",
+        "C": "YANLIS — Terapötik kullanım kararı, önceden profilaksi alıp almadığına göre değil, atak sırasındaki klinik ciddiyete (sepsis/solunum yetmezliği) göre verilir.",
+        "D": "YANLIS — G-CSF kullanımı antibiyotik veya antifungal tedaviyle birlikte kullanım açısından böyle bir kısıtlamaya tabi değildir; bu iddia gerçek dışıdır.",
+        "E": "YANLIS — Tam tersine, kanıtlar terapötik G-CSF'nin genel mortaliteyi ANLAMLI şekilde AZALTMADIĞINI göstermiştir (istisnai ciddi durumlar dışında)."
+      },
+      "etiketler": [
+        "Terapötik G-CSF",
+        "Profilaksi vs Terapötik Kullanım",
+        "Mortalite",
+        "Sepsis",
+        "Solunum Yetmezliği"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Smith et al. J Clin Oncol 2015 (ASCO Guideline); Clark et al. J Clin Oncol 2005 (meta-analysis)"
+    }
+  ]
+}

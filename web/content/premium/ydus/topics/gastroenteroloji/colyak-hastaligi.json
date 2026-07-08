@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "id": "colyak-hastaligi",
+    "branch": "gastroenteroloji",
+    "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)",
+    "altbaslik": "Oslo klinik fenotipleri, ESPGHAN 2020/ESsCD 2025 biyopsisiz tanı kriterleri, Marsh-Oberhuber evrelemesi ve Tip 1/2 refrakter çölyak hastalığı yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Çölyak hastalığı, genetik olarak yatkın bireylerde (HLA-DQ2 ve/veya HLA-DQ8 pozitif) buğday, arpa ve çavdarda bulunan glutene karşı gelişen immün yanıtın tetiklediği; ince bağırsak mukozasında inflamasyon, kript hiperplazisi ve villüs atrofisi ile karakterize kronik, sistemik ve otoimmün bir enteropatidir."
+        },
+        {
+          "metin": "Doku transglutaminazı (tTG), bağırsağa ulaşan gluten peptidlerini deamide ederek HLA-DQ2/DQ8 moleküllerine afinitesini artırır ve T hücrelerini aktive eden güçlü bir otoimmün kaskadı başlatır. Hastalık yalnızca ince bağırsakla sınırlı kalmayıp multisistemik bir 'klinik bukalemun' olarak geniş bir yelpazede bulgu verebilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Epidemiyoloji ve Risk Grupları",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Prevalans",
+            "Genel popülasyonda ~%1-1.4; kadınlarda erkeklere göre 2 kat daha sık"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Rutin Tarama Gereken Risk Grupları ★",
+            "1./2. derece akrabalar, Tip 1 DM, otoimmün tiroidit (Hashimoto), otoimmün karaciğer hastalıkları, Down sendromu, Turner sendromu, Williams sendromu, juvenil idiopatik artrit, Selektif IgA eksikliği — ASEMPTOMATİK olsalar dahi taranmalı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Fenotipler (Oslo Sınıflandırması)",
+      "kolonlar": [
+        "Fenotip",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Klasik Çölyak",
+            "Özellikle çocuklukta sık; diyare, steatore, kilo kaybı, ciddi büyüme geriliği ile belirgin malabsorpsiyon"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Klasik Olmayan (Atipik) Çölyak ★",
+            "Erişkin/büyük çocukta sık; GİS bulgusu yerine ekstraintestinal bulgular ön planda (açıklanamayan demir eksikliği anemisi, osteoporoz, kronik yorgunluk, hipertransaminazemi, puberte gecikmesi, nörolojik semptom, tekrarlayan düşük)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Subklinik (Sessiz) Çölyak",
+            "Semptom eşiğinin altında; taramada seroloji pozitif + biyopside enteropati (villüs atrofisi) var"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Potansiyel Çölyak ★",
+            "Seroloji (tTG-IgA/EMA) pozitif AMA duodenal biyopside mukozal mimari TAMAMEN NORMAL (Marsh 0-1)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Dermatitis Herpetiformis",
+            "Çölyağın spesifik kutanöz bulgusu; diz/dirsek/sakrum/kalça ekstansör yüzlerde simetrik, aşırı kaşıntılı papüloveziküler döküntü; deri biyopsisinde granüler IgA birikimi ile tanı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Tanısal Altın Kural: Serolojik testler veya endoskopi yapılmadan ÖNCE hasta MUTLAKA normal miktarda gluten içeren diyetine devam ediyor olmalıdır — glutensiz diyete geçmiş bir hastada yapılan testler yalancı negatif sonuç verebilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Seroloji Basamakları",
+      "kolonlar": [
+        "Test",
+        "Kullanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "tTG-IgA + Total Serum IgA ★",
+            "Her yaşta BİRİNCİ BASAMAK tarama testi. Total IgA, olası selektif IgA eksikliğini dışlamak için beraberinde bakılır"
+          ]
+        },
+        {
+          "hucreler": [
+            "DGP-IgG veya tTG-IgG",
+            "IgA eksikliği saptanırsa (tTG-IgA yanlış negatif verir) kullanılır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "EMA-IgA (Endomisyum Antikoru)",
+            "İkinci basamak; spesifite %99-100 ama maliyetli/uygulayıcı bağımlı — genellikle YÜKSEK TİTRELİ tTG-IgA'yı doğrulamak için kullanılan referans test"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Endoskopi ve Histopatoloji (Altın Standart)",
+      "satirlar": [
+        {
+          "metin": "Serolojisi pozitif hastada tanı doğrulaması için üst GİS endoskopisi + ince bağırsak biyopsisi alınmalıdır. Hastalık YAMALI tutulum yapabildiğinden, duodenal bulbusdan 1-2 adet ve distal duodenumdan EN AZ 4 adet olmak üzere çoklu biyopsi ZORUNLUDUR."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "HLA-DQ2/HLA-DQ8 Genetik Tipleme: Hastaların %99'undan fazlası bu genleri taşıdığından POZİTİFLİĞİ tanı koydurmaz. Ancak NEGATİF PREDİKTİF DEĞERİ %99'DUR — yani negatif sonuç hastalığı büyük olasılıkla dışlar. Kullanım alanı: seroloji-biyopsi çelişen gri zon vakalar, hasta gluten diyetindeyken tanıyı EKARTE ETMEK, riskli aile bireylerini taramak."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Biyopsisiz Tanı (No-Biopsy Approach)",
+      "kolonlar": [
+        "Popülasyon",
+        "Kriter"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Pediatrik — ESPGHAN 2020 ★",
+            "Semptomatik/asemptomatik ayrımı yok. tTG-IgA ≥10x ULN + İKİNCİ farklı kan örneğinde EMA-IgA pozitifliği = biyopsisiz kesin tanı. Eski HLA-DQ2/DQ8 zorunluluğu KALDIRILDI"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Erişkin — ESsCD 2025 (YENİ!) ★",
+            "İlk kez 2025'te erişkinde de biyopsisiz tanı onaylandı: <45 yaş + alarm semptomu YOK (hematokezya, disfaji, obstrüksiyon) + tTG-IgA ≥10x ULN + ikinci örnekte doğrulama + hasta ortak onayı → biyopsiden kaçınılabilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Marsh-Oberhuber Histopatolojik Evrelemesi",
+      "kolonlar": [
+        "Evre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Marsh 0",
+            "Normal mimari, IEL artışı yok"
+          ]
+        },
+        {
+          "hucreler": [
+            "Marsh 1 (İnfiltratif)",
+            "Villüs/kript mimarisi TAMAMEN NORMAL; yalnızca intraepitelyal lenfosit (IEL) artışı (100 enterosit başına >25 lenfosit)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Marsh 2 (Hiperplastik)",
+            "IEL artışına EK olarak kript hiperplazisi (uzama)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Marsh 3 (Destrüktif) ★",
+            "Marsh 2 + VİLLÜS ATROFİSİ. 3a (hafif), 3b (orta), 3c (total). Seroloji pozitif hastada Marsh 2/3 = tanı KESİNLEŞİR"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi, Nütrisyon ve İzlem",
+      "kolonlar": [
+        "Konu",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Glutensiz Diyet (GFD) ★",
+            "Tek medikal tedavi, ÖMÜR BOYU. Güvenli eşik <10 mg gluten/gün. Saf (kontamine olmamış) yulaf çoğu hastada güvenle tolere edilir ve önerilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Replasman",
+            "Tanı anında demir, folik asit, B12, D vitamini, kalsiyum taranmalı ve eksiklikler replase edilmeli"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kemik Sağlığı (DXA) ★",
+            "Erişkinde diyetin 1. yılında risk faktörü (şiddetli malabsorpsiyon, geç tanı) varsa DXA çekilir. ÇOCUKLARDA kemik mineralizasyonu diyetle mükemmel düzeldiğinden rutin DXA ÖNERİLMEZ"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Aşılama ★",
+            "Fonksiyonel hiposplenizm riski → özellikle 65 yaş üstü/refrakter/ağır otoimmün komplikasyonlu hastalara Pnömokok aşısı önerilir. HepB aşısına yanıtsızlık riski yüksek → anti-HBs kontrolü, gerekirse rapel"
+          ]
+        },
+        {
+          "hucreler": [
+            "Takip",
+            "tTG-IgA ilk yıl 3-6 ayda bir ölçülür, normalleşince yıllık kontrole geçilir. Seroloji negatifleşmesi diyet uyumunun en güçlü göstergesidir AMA mukozal iyileşmenin GARANTİSİ DEĞİLDİR. Semptomu geçmeyen/riskli erişkinlerde 1-2. yıl kontrol endoskopi/biyopsi düşünülebilir; klinik yanıtlı ÇOCUKLARDA rutin kontrol biyopsisi KESİNLİKLE ÖNERİLMEZ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Refrakter Çölyak Hastalığı (RCD) Tanımı: Uzman diyetisyen rehberliğinde ≥12 ay sıkı GFD'ye uyulmasına rağmen, seroloji NEGATİFLEŞİRKEN klinik malabsorpsiyon + villüs atrofisinin DEVAM ETMESİ. Tanı öncesi diyet kaçakları, İBS, SIBO veya mikroskobik kolit MUTLAKA ekarte edilmelidir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "RCD Tip 1 vs Tip 2",
+      "kolonlar": [
+        "Özellik",
+        "Tip 1",
+        "Tip 2"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "IEL Fenotipi",
+            "Normal, POLİKLONAL",
+            "Aberran: IEL'lerin >%20'sinde hücre içi CD3 (+) ama yüzey CD3/CD8 KAYIP; MONOKLONAL T-hücre"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Prognoz",
+            "İYİ — 5 yıllık sağkalım >%90",
+            "KÖTÜ — hastaların ~yarısında EATL'ye (Enteropati İlişkili T-Hücreli Lenfoma) dönüşüm; sağkalım yarı yarıya düşer"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Tedavi ★",
+            "1. basamak: açık kapsül BUDESONİD; dirençli vakada azatiyoprin/merkaptopürin",
+            "Azatiyoprin ÖNERİLMEZ (lenfoma riskini artırabilir); Kladribin, Fludarabin, ağır vakada otolog HKHN, JAK inhibitörleri (tofasitinib). EATL/ağır ülseratif jejunitte cerrahi rezeksiyon gerekebilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Çölyak Hastalığı 8 Altın Kural: (1) Test öncesi hasta MUTLAKA gluten diyetinde olmalı. (2) İlk basamak tTG-IgA + Total IgA; IgA eksikliğinde DGP-IgG/tTG-IgG. (3) Distal duodenumdan ≥4 + bulbustan 1-2 biyopsi — yamalı tutulum nedeniyle. (4) HLA-DQ2/DQ8: pozitiflik tanı koydurmaz, negatiflik (%99 NPV) dışlar. (5) Pediatride tTG-IgA ≥10x ULN + 2. örnekte EMA(+) = biyopsisiz tanı (HLA artık şart değil); erişkinde 2025'ten itibaren <45 yaş + alarm yok + aynı kriterle biyopsisiz tanı mümkün. (6) Marsh 2/3 + pozitif seroloji = tanı kesin. (7) Çocukta rutin DXA/kontrol biyopsisi gerekmez, erişkinde riskli durumda gerekir. (8) RCD Tip 2 = monoklonal, aberran CD3/CD8, EATL riski — azatiyoprin YASAK, kladribin/JAK inhibitörü tercih edilir."
+    }
+  ]
+}

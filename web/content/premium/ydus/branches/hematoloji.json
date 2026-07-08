@@ -68,8 +68,8 @@
         {
           "id": "itp",
           "baslik": "İmmün Trombositopeni (ITP)",
-          "rozetler": ["YAKINDA"],
-          "hazir": false
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
         }
       ]
     }

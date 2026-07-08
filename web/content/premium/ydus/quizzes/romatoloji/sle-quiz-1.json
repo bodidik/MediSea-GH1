@@ -1,0 +1,308 @@
+{
+  "id": "quiz-roma-sle-001",
+  "baslik": "Sistemik Lupus Eritematozus (SLE) — Soru Seti 1",
+  "branch": "romatoloji",
+  "topic": "sle",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Elli sekiz yaşında, 20 yıldır SLE tanılı bir kadın hasta akut göğüs ağrısı ile acil servise başvuruyor ve EKG'de akut miyokard infarktüsü ile uyumlu değişiklikler saptanıyor. Hasta ve ailesi, aktif lupus alevlenmesi olmadığı halde bu tablonun neden geliştiğini soruyor.\n\nSLE'de uzun dönem mortalitenin en önemli belirleyicisi hakkında en doğru açıklama hangisidir?",
+      "secenekler": {
+        "A": "SLE hastalarında ileri yıllarda ölümün başlıca nedeni hâlâ aktif lupus nefriti ve SSS tutulumudur, kardiyovasküler risk artmamıştır.",
+        "B": "Hastalığın ilk yıllarında enfeksiyonlar ve aktif lupus (böbrek/SSS) başlıca ölüm nedeniyken, ilerleyen yıllarda prematüre ateroskleroz ve kardiyovasküler olaylar (özellikle miyokard enfarktüsü) öne çıkar.",
+        "C": "SLE hastalarında kardiyovasküler hastalık riski genel popülasyondan farksızdır, bu hastanın MI'ı tesadüfidir.",
+        "D": "SLE'de mortalite paterni yaşla değişmez; ilk yıldan itibaren kardiyovasküler olaylar tek ölüm nedenidir.",
+        "E": "Bu hastadaki MI, yalnızca yüksek doz glukokortikoid kullanımına bağlıdır, hastalığın kendisiyle ilgisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SLE'de mortalite paterni zamanla değişir: erken yıllarda enfeksiyon+aktif lupus (böbrek/SSS), ileri yıllarda prematüre ateroskleroz/KV olaylar (özellikle MI) öne çıkar. 10 yıllık sağkalım >%85'tir.",
+      "aciklama_detay": "SLE hastalarında 10 yıllık sağkalım %85'in üzerindedir. Hastalığın ilk yıllarında enfeksiyonlar ve aktif lupus (özellikle böbrek ve SSS tutulumu) başlıca ölüm nedeniyken, ilerleyen yıllarda prematüre ateroskleroz ve kardiyovasküler olaylar (özellikle miyokard enfarktüsü) öne çıkar. Bu iki fazlı mortalite paterni, SLE'nin kronik inflamatuar doğasının zamanla vasküler endotele kümülatif hasar vererek erken/hızlanmış ateroskleroz geliştirmesiyle açıklanır — bu risk geleneksel kardiyovasküler risk skorlamalarıyla (Framingham gibi) genellikle olduğundan düşük tahmin edilir. Bu nedenle uzun süredir SLE tanılı hastalarda (bu vakada 20 yıl), aktif hastalık bulgusu olmasa dahi kardiyovasküler olaylar ciddiye alınmalı ve agresif risk faktörü yönetimi (KB, lipid, HCQ kullanımı, hastalık aktivitesi kontrolü) sürdürülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İleri yıllarda ölüm nedeni öne çıkan olarak KARDİYOVASKÜLER olaylara kayar, yalnızca aktif lupusla sınırlı kalmaz.",
+        "B": "DOGRU — İki fazlı mortalite paterni: erken enfeksiyon/aktif lupus, geç prematüre ateroskleroz/KV olaylar.",
+        "C": "YANLIS — SLE, genel popülasyona kıyasla belirgin artmış KV risk taşır; tesadüfi değildir.",
+        "D": "YANLIS — Patern zamanla değişir, tek tip bir neden ilk yıldan itibaren baskın değildir.",
+        "E": "YANLIS — MI riski yalnızca steroide bağlı değildir; SLE'nin kendisi (kronik inflamasyon, erken ateroskleroz) bağımsız bir risk faktörüdür."
+      },
+      "etiketler": [
+        "Mortalite",
+        "Kardiyovasküler Risk",
+        "Prematüre Ateroskleroz",
+        "Sağkalım",
+        "Epidemiyoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bertsias et al. Ann Rheum Dis 2012; Yurkovich et al. Arthritis Care Res 2014"
+    },
+    {
+      "id": "s2",
+      "metin": "SLE'nin patogenezinde nötrofillerden salınan hücre dışı tuzakların (NET) temizlenememesi kritik bir rol oynamaktadır.\n\nBu bozulmuş klerans mekanizmasının aşağı yöndeki (downstream) immünolojik sonucu hangisidir?",
+      "secenekler": {
+        "A": "NET birikimi doğrudan B hücrelerini apoptoza sürükleyerek otoantikor üretimini durdurur.",
+        "B": "Temizlenemeyen apoptotik/NET kaynaklı nükleik asitler, plazmasitoid dendritik hücrelerdeki Toll-benzeri reseptörleri (TLR) uyararak aşırı Tip 1 İnterferon (IFN-alfa) salınımına yol açar; bu da T/B hücre tolerans kaybına ve nükleer antijenlere karşı patojenik otoantikor üretimine katkıda bulunur.",
+        "C": "NET birikimi yalnızca lokal cilt inflamasyonuna yol açar, sistemik bir etkisi yoktur.",
+        "D": "Bu mekanizma yalnızca kompleman sisteminin aşırı aktivasyonuna yol açar, interferon yolağıyla ilişkisi yoktur.",
+        "E": "Bozulmuş NET kleransı, hastalığın yalnızca kas-iskelet sistemi tutulumunu belirler, diğer organ sistemlerini etkilemez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Temizlenemeyen NET/apoptotik nükleik asitler → plazmasitoid DC'lerde TLR uyarısı → aşırı Tip 1 IFN-alfa salınımı → T/B tolerans kaybı → otoantikor üretimi. Bu, SLE patogenezinin merkezi immünolojik ekseni.",
+      "aciklama_detay": "SLE patogenezinde immünolojik kusurların merkezinde, apoptotik hücre artıklarının (özellikle nötrofil kaynaklı NET'lerin) fagositler tarafından temizlenememesi (bozulmuş klerans) yer alır. Bu klerans bozukluğu sonucunda nükleik asitler (DNA, RNA içeren kompleksler) dokularda ve dolaşımda birikir. Bu birikim, plazmasitoid dendritik hücrelerdeki Toll-benzeri reseptörleri (TLR, özellikle TLR7 ve TLR9) uyararak aşırı Tip 1 İnterferon (IFN-alfa) salınımına yol açar — bu, SLE'nin 'interferon imzası' olarak bilinen, hastalığın çoğu yatkınlık geninin de ilişkili olduğu merkezi patogenetik eksendir. Yüksek IFN-alfa ortamı, T ve B hücrelerindeki tolerans mekanizmalarını bozarak nükleer antijenlere (dsDNA, Sm gibi) karşı patojenik otoantikorların üretilmesine ve bu otoantikorların dokularda immün kompleks oluşturarak (örn. glomerüler bazal membranda) organ hasarına yol açmasına neden olur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — NET birikimi B hücre apoptozunu tetiklemez; tam tersine otoantikor üretimini (B hücre aktivasyonu yoluyla) TEŞVİK eder.",
+        "B": "DOGRU — NET/nükleik asit birikimi → TLR uyarısı → IFN-alfa → tolerans kaybı → otoantikor üretimi.",
+        "C": "YANLIS — Bu mekanizma SİSTEMİK bir immün aktivasyona yol açar, yalnızca cilt ile sınırlı değildir.",
+        "D": "YANLIS — Bu mekanizma öncelikle Tip 1 IFN yolağı ile ilişkilidir; kompleman aktivasyonu ayrı, sonraki bir immün kompleks sürecinin parçasıdır, birbirini dışlamaz.",
+        "E": "YANLIS — Bu merkezi immünolojik mekanizma, SLE'nin çoklu organ tutulumunun (renal, mukokutanöz, hematolojik vb.) temelini oluşturur, kas-iskelet sistemiyle sınırlı değildir."
+      },
+      "etiketler": [
+        "NET",
+        "Tip 1 İnterferon",
+        "TLR",
+        "Patogenez",
+        "Plazmasitoid Dendritik Hücre"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Tsokos NG. N Engl J Med 2011; Crow MK. Nat Rev Immunol 2014"
+    },
+    {
+      "id": "s3",
+      "metin": "SLE tanılı bir hastada el bileklerini, MKP ve PIP eklemlerini simetrik tutan artrit gelişiyor; grafilerde erozyon saptanmıyor ancak yıllar içinde bağ/tendon gevşekliğine bağlı redükte edilebilir (reducible) ulnar deviasyon deformitesi gelişiyor.\n\nBu klinik tablo hangi antite ile uyumludur ve romatoid artritten temel ayırıcı özelliği nedir?",
+      "secenekler": {
+        "A": "Bu tablo klasik erozif romatoid artrittir; grafilerde erozyon görülmemesi teknik bir eksikliktir.",
+        "B": "Jaccoud artropatisi; bağ ve tendon gevşekliğine bağlı deformitelerle gider ancak NON-EROZİV'dir — bu, kemik/kıkırdak destrüksiyonu ile giden erozif RA deformitelerinden temel ayırıcı özelliğidir.",
+        "C": "Bu tablo 'Rhupus' olarak adlandırılır ve SLE ile RA'nın aynı anda, erozif seyirle bulunmasını tanımlar.",
+        "D": "Jaccoud artropatisi yalnızca romatoid ateşte görülür, SLE ile ilişkisi yoktur.",
+        "E": "Bu deformite geri dönüşümsüzdür ve cerrahi düzeltme dışında hiçbir manevra ile redükte edilemez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Jaccoud artropatisi: SLE'de bağ/tendon gevşekliğine bağlı, NON-EROZİV, redükte edilebilir deformite. Erozyon olmaması RA'dan temel ayırıcı özelliktir.",
+      "aciklama_detay": "SLE'de kas-iskelet tutulumu hastaların %90'ından fazlasında görülür; tipik olarak el bilekleri, MKP, PIP ve dizleri tutan simetrik ve NON-EROZİV bir poliartrit tablosu vardır. Nadiren bağ ve tendon gevşekliğine bağlı deformitelerle giden Jaccoud artropatisi gelişebilir. Jaccoud artropatisinin kritik özelliği, kemik/kıkırdak erozyonu OLMAKSIZIN, yalnızca periartiküler yumuşak doku (kapsül, bağ, tendon) gevşekliğine bağlı gelişen deformitelerdir — bu deformiteler genellikle pasif olarak redükte edilebilir (elle düzeltilebilir), çünkü altta yatan eklem yüzeyleri sağlamdır. Bu, Romatoid Artritteki erozif, kemik/kıkırdak destrüksiyonuna bağlı kalıcı deformitelerden köklü şekilde farklıdır ve radyografik olarak (erozyon yokluğu) kolayca ayırt edilebilir. RA ile SLE'nin BİRLİKTE, genellikle her ikisinin de kendi karakteristik özellikleriyle (RA'da erozif olabilen) bulunmasına klinik pratikte 'Rhupus' denir — bu, Jaccoud artropatisinden farklı bir kavramdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Erozyon olmaması teknik bir eksiklik değil, Jaccoud artropatisinin TANIMLAYICI özelliğidir.",
+        "B": "DOGRU — Jaccoud artropatisi non-erozif, redükte edilebilir deformite; RA'dan (erozif) bu yönüyle ayrılır.",
+        "C": "YANLIS — Rhupus, SLE+RA birlikteliğini tanımlar (genellikle RA bileşeni erozif olabilir); bu, tek başına SLE'de görülen non-erozif Jaccoud artropatisinden farklı bir kavramdır.",
+        "D": "YANLIS — Jaccoud artropatisi klasik olarak romatizmal ateş sonrası tanımlanmış olsa da, SLE'de de iyi bilinen ve sık görülen bir tablodur.",
+        "E": "YANLIS — Jaccoud artropatisinin ayırıcı özelliği tam olarak REDÜKTE EDİLEBİLİR olmasıdır (bağ gevşekliğine bağlı, kemik hasarı yok); bu RA'nın kalıcı, redükte edilemeyen deformitelerinden farkıdır."
+      },
+      "etiketler": [
+        "Jaccoud Artropatisi",
+        "Non-Eroziv Artrit",
+        "Rhupus",
+        "RA Ayırıcı Tanı",
+        "Kas-İskelet Tutulumu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Santiago & Galvao Semin Arthritis Rheum 2008; Bertsias et al. Ann Rheum Dis 2012"
+    },
+    {
+      "id": "s4",
+      "metin": "SLE tanılı bir hastada yeni gelişen proteinüri (2.8 g/gün) ve mikroskopik hematüri saptanıyor. Serum kreatinin normal sınırlarda. Anti-dsDNA titresi belirgin yüksek, C3/C4 düşük.\n\nBu hastada kesin tanı ve tedavi kararı için zorunlu bir sonraki adım nedir?",
+      "secenekler": {
+        "A": "Böbrek biyopsisi gereksizdir; anti-dsDNA yüksekliği ve düşük kompleman tek başına lupus nefriti Sınıf III/IV tanısı için yeterlidir, doğrudan siklofosfamid başlanmalıdır.",
+        "B": "Böbrek biyopsisi ZORUNLUDUR; kesin tanı ve evreleme (Sınıf I-VI) yalnızca biyopsi ile konur. Sınıf III ve IV en agresif formlardır ve acil immünsüpresyon gerektirir, bu nedenle biyopsi sonucu tedavi seçimini doğrudan yönlendirir.",
+        "C": "Biyopsi yalnızca serum kreatinin yükseldiğinde endikedir; normal kreatinin biyopsi ihtiyacını ortadan kaldırır.",
+        "D": "Bu hastada tanı yalnızca idrar tahlili ile konur, herhangi bir doku örneklemesi gerekmez.",
+        "E": "Anti-dsDNA ve kompleman düzeyleri lupus nefritinde hiçbir prognostik veya tanısal değer taşımaz."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Lupus nefriti kesin tanı ve evrelemesi (Sınıf I-VI) yalnızca böbrek biyopsisi ile konur — bu zorunludur. Sınıf III/IV en agresif formlardır ve acil immünsüpresyon gerektirir; biyopsi tedavi kararını yönlendirir.",
+      "aciklama_detay": "Lupus nefriti hastaların %35-50'sinde gelişir ve ESKD riskini artırır; proteinüri, hematüri ve hücresel silendirlerle kendini gösterir. Kesin tanı ve evreleme (Sınıf I-VI, ISN/RPS sınıflandırması) için böbrek biyopsisi ŞARTTIR — klinik ve laboratuvar bulguları (anti-dsDNA yüksekliği, düşük kompleman, proteinüri) lupus nefritini güçlü şekilde düşündürse de, hastalığın histolojik sınıfını (ve dolayısıyla agresiflik derecesini, tedavi kararını) belirleyemez. Sınıf III (fokal proliferatif) ve Sınıf IV (diffüz proliferatif) en agresif formlardır ve acil immünsüpresyon (MMF veya düşük doz siklofosfamid indüksiyonu) gerektirir; Sınıf I/II (mezangiyal) veya Sınıf V (membranöz) farklı tedavi yaklaşımları gerektirebilir. Bu nedenle biyopsi, hem tanıyı doğrulamak hem de agresif immünsüpresyonun gerekip gerekmediğine karar vermek için vazgeçilmezdir — laboratuvar bulguları tek başına bu ayrımı yapamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Laboratuvar bulguları güçlü destekleyici olsa da histolojik sınıfı (III/IV vs diğerleri) belirleyemez; biyopsi olmadan agresif tedaviye (siklofosfamid) karar vermek uygun değildir.",
+        "B": "DOGRU — Biyopsi zorunlu; Sınıf I-VI evrelemesi tedavi kararını (özellikle III/IV'te acil immünsüpresyon) doğrudan belirler.",
+        "C": "YANLIS — Biyopsi endikasyonu proteinüri/hematüri gibi klinik bulgulara dayanır, yalnızca kreatinin yükselmesini beklemek gecikmeye ve geri dönüşümsüz hasara yol açabilir.",
+        "D": "YANLIS — İdrar tahlili tarama amaçlıdır ancak kesin tanı ve evreleme için doku (biyopsi) örneklemesi gereklidir.",
+        "E": "YANLIS — Anti-dsDNA titre yüksekliği ve düşük kompleman, hastalık aktivitesi ve ÖZELLİKLE lupus nefriti ile yakından korele olan önemli laboratuvar bulgularıdır; tanısal/prognostik değer taşırlar (biyopsinin yerini tutmasalar da)."
+      },
+      "etiketler": [
+        "Lupus Nefriti",
+        "Böbrek Biyopsisi",
+        "Sınıf III/IV",
+        "Anti-dsDNA",
+        "Evreleme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bajema et al. Kidney Int 2018 (ISN/RPS classification); Fanouriakis et al. Ann Rheum Dis 2020 (EULAR Lupus Nephritis)"
+    },
+    {
+      "id": "s5",
+      "metin": "SLE şüphesiyle değerlendirilen bir hastada 2019 EULAR/ACR sınıflandırma kriterleri kullanılıyor. Hastanın ANA titresi 1:40 olarak ölçülüyor.\n\nBu bulgu, sınıflandırma kriterlerinin uygulanması açısından ne ifade eder?",
+      "secenekler": {
+        "A": "ANA 1:40, giriş kriteri eşiğini (≥1:80) karşılamadığından bu hastada 2019 EULAR/ACR kriterleri uygulanamaz; SLE sınıflandırması için ANA titresinin en az 1:80 olması gerekir.",
+        "B": "ANA titresi 1:40 dahi olsa, diğer klinik/immünolojik kriterler yeterliyse SLE sınıflandırması yapılabilir; giriş kriteri esnektir.",
+        "C": "2019 EULAR/ACR kriterlerinde giriş kriteri ANA değil, anti-dsDNA pozitifliğidir.",
+        "D": "ANA titresi sınıflandırma kriterlerinde hiçbir rol oynamaz, yalnızca klinik bulgular yeterlidir.",
+        "E": "ANA 1:40 titresi, SLE tanısını kesin olarak dışlar ve hasta başka bir hastalık yönünden araştırılmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "2019 EULAR/ACR kriterlerinde giriş kriteri ANA ≥1:80'dir. Bu eşiğin altındaki (1:40 gibi) titrelerde sınıflandırma kriterleri formel olarak uygulanamaz.",
+      "aciklama_detay": "Güncel 2019 EULAR/ACR kriterlerine göre SLE tanısı için giriş kriteri ANA (Antinükleer Antikor) titresinin ≥1:80 olmasıdır. Bu, bir 'kapı' (entry) kriteridir — yani bu eşik karşılanmadan diğer klinik ve immünolojik kriterlerin puanlanmasına geçilmez. ANA titresi 1:40 olan bir hastada, bu giriş kriteri karşılanmadığından, 2019 EULAR/ACR sınıflandırma sistemi formel olarak uygulanamaz. Bu, düşük titre ANA pozitifliğinin SLE'yi kesin olarak dışladığı anlamına gelmez (klinik değerlendirme ve tekrar test gerekebilir), ancak sınıflandırma kriterleri açısından bu eşiğin altında kalan bir titre ile sınıflandırma yapılamayacağı, sınavlarda sıkça vurgulanan bir teknik detaydır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Giriş kriteri ANA ≥1:80'dir; bu eşiğin altında sınıflandırma kriterleri uygulanamaz.",
+        "B": "YANLIS — Giriş kriteri KATI bir eşiktir (≥1:80); bu karşılanmadan diğer kriterlerin puanlanmasına geçilmez.",
+        "C": "YANLIS — Giriş kriteri ANA'dır, anti-dsDNA değil; anti-dsDNA daha sonraki immünolojik puanlama kriterlerinden biridir.",
+        "D": "YANLIS — ANA, 2019 EULAR/ACR kriterlerinin merkezi ve zorunlu giriş kriteridir, rol oynamaması söz konusu değildir.",
+        "E": "YANLIS — Düşük titre ANA, SLE'yi kesin olarak dışlamaz; yalnızca sınıflandırma kriterlerinin formel uygulanabilirliğini etkiler, klinik değerlendirme devam edebilir."
+      },
+      "etiketler": [
+        "2019 EULAR/ACR Kriterleri",
+        "ANA",
+        "Giriş Kriteri",
+        "Sınıflandırma",
+        "Tanı Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Aringer et al. Arthritis Rheumatol 2019 (2019 EULAR/ACR SLE Classification Criteria)"
+    },
+    {
+      "id": "s6",
+      "metin": "Yeni tanı SLE hastası, kontrendikasyonu olmadığı halde hidroksiklorokin (HCQ) başlanıp başlanmayacağını soruyor.\n\nHCQ tedavisinin SLE'deki temel gerekçeleri ve izlem gereksinimleri hangisidir?",
+      "secenekler": {
+        "A": "HCQ yalnızca cilt tutulumu olan hastalarda kullanılır, sistemik faydası gösterilmemiştir.",
+        "B": "Kontrendikasyon yoksa HCQ (maksimum 5 mg/kg/gün) TÜM SLE hastalarına başlanmalıdır; hastalık alevlenmelerini önler, sağkalımı artırır, tromboz ve böbrek hastalığı gelişme riskini düşürür. Retinal toksisite riski nedeniyle yıllık göz muayenesi gereklidir.",
+        "C": "HCQ'nun SLE'de sağkalım üzerine hiçbir kanıtlanmış etkisi yoktur, yalnızca semptomatik rahatlama sağlar.",
+        "D": "HCQ dozu böbrek fonksiyonundan tamamen bağımsız olarak sınırsız artırılabilir, maksimum doz sınırı yoktur.",
+        "E": "Retinal toksisite riski olmadığından göz muayenesi gerekmez, bu yalnızca teorik bir endişedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HCQ (max 5 mg/kg/gün), kontrendikasyon yoksa TÜM SLE hastalarına verilmelidir: alevlenmeyi önler, sağkalımı artırır, tromboz/böbrek riskini azaltır. Retinal toksisite nedeniyle yıllık göz muayenesi gerekir.",
+      "aciklama_detay": "Kontrendikasyon yoksa Hidroksiklorokin (HCQ) (maksimum 5 mg/kg/gün) tüm SLE hastalarına başlanmalıdır. HCQ'nun SLE'deki faydaları çok yönlüdür: hastalık alevlenmelerini önler, uzun dönem sağkalımı artırır, tromboz riskini ve böbrek hastalığı (lupus nefriti) gelişme riskini düşürür. Bu geniş kapsamlı fayda profili, HCQ'yu SLE tedavisinin temel taşı (foundational therapy) haline getirir — yalnızca cilt veya eklem tutulumu olan hafif hastalarla sınırlı değildir, ciddi organ tutulumu olan hastalarda da diğer immünsüpresiflerle birlikte devam ettirilir. Ancak HCQ'nun bilinen, doza ve kümülatif kullanım süresine bağlı bir yan etkisi retinal toksisitedir (bull's eye makülopati); bu nedenle tedavi başlangıcında ve düzenli aralıklarla (kılavuzlara göre genellikle yıllık, yüksek riskli hastalarda daha sık) oftalmolojik muayene (özellikle spektral domain OCT ve görme alanı testleri ile) yapılması gereklidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HCQ'nun sağkalım, tromboz ve böbrek koruyucu etkileri sistemik ve kanıtlanmış faydalardır, yalnızca cilt tutulumuyla sınırlı değildir.",
+        "B": "DOGRU — HCQ tüm hastalara verilir; çok yönlü fayda (alevlenme önleme, sağkalım, tromboz/böbrek koruması) + retinal toksisite izlemi gerekir.",
+        "C": "YANLIS — HCQ'nun sağkalımı artırdığı iyi belgelenmiş, kanıta dayalı bir bulgudur, yalnızca semptomatik değildir.",
+        "D": "YANLIS — HCQ dozu maksimum 5 mg/kg/gün ile sınırlıdır (retinal toksisite riskini azaltmak için); sınırsız artırılamaz.",
+        "E": "YANLIS — Retinal toksisite gerçek ve iyi belgelenmiş bir risktir; bu nedenle düzenli göz muayenesi standart bir izlem gereksinimidir."
+      },
+      "etiketler": [
+        "Hidroksiklorokin",
+        "HCQ",
+        "Retinal Toksisite",
+        "Sağkalım",
+        "Temel Tedavi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Fanouriakis et al. Ann Rheum Dis 2019 (EULAR SLE Recommendations); Ruiz-Irastorza et al. Ann Rheum Dis 2010"
+    },
+    {
+      "id": "s7",
+      "metin": "Şiddetli lupus nefriti (Sınıf IV) tanılı 32 yaşında kadın hasta, indüksiyon tedavisiyle remisyona giriyor ve idame tedaviye geçiliyor. Hasta gebelik planlamak istediğini belirtiyor; halihazırda Mikofenolat Mofetil (MMF) kullanmaktadır.\n\nBu hastanın gebelik planlaması konusunda en doğru danışmanlık hangisidir?",
+      "secenekler": {
+        "A": "MMF gebelikte güvenle kullanılabilir, herhangi bir değişiklik gerekmez; gebelik hemen planlanabilir.",
+        "B": "Gebelik mutlaka hastalık en az 6 ay boyunca remisyondayken planlanmalıdır; MMF teratojenik olduğundan konsepsiyondan 3-6 ay önce kesilerek gebelikte güvenli kabul edilen bir ajana (örn. Azatioprin) geçiş yapılmalıdır.",
+        "C": "Bu hastada aktif lupus nefriti öyküsü olduğundan gebelik ömür boyu kesin kontrendikedir, tekrar değerlendirilemez.",
+        "D": "MMF'nin teratojenik etkisi yalnızca ilk trimesterle sınırlıdır, 2. trimesterden itibaren devam edilebilir.",
+        "E": "Gebelik planlaması sırasında ilaç değişikliği gerekmez, yalnızca doğumdan hemen önce MMF kesilmesi yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Gebelik ≥6 ay remisyon şartıyla planlanmalı. MMF teratojeniktir, konsepsiyondan 3-6 ay önce kesilip güvenli bir ajana (HCQ, AZA, Takrolimus) geçilmelidir.",
+      "aciklama_detay": "SLE hastalarında gebelik maternal ve fetal komplikasyonlar açısından yüksek risklidir. Gebelik mutlaka hastalık en az 6 ay boyunca remisyondayken planlanmalıdır; aktif lupus nefriti varlığında gebelik kontrendikedir (ancak bu hasta remisyondaysa ve tedavi uygun şekilde ayarlanırsa gebelik planlanabilir — kalıcı/ömür boyu kontrendikasyon değildir). HCQ, AZA ve Takrolimus gebelikte güvenle kullanılabilir; ancak MMF, Metotreksat ve Siklofosfamid TERATOJENİK olduğu için konsepsiyondan 3-6 ay önce kesilmelidir ve genellikle gebelikte güvenli kabul edilen alternatif bir immünsüpresife (örn. Azatioprin) geçilir. Bu geçiş süreci dikkatli planlama gerektirir çünkü hem hastalık kontrolünün korunması hem de teratojenik ajanların yeterince önceden vücuttan temizlenmesi/etkisinin sonlanması sağlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MMF gebelikte TERATOJENİKTİR (fetal malformasyon riski); güvenle kullanılamaz, mutlaka değiştirilmelidir.",
+        "B": "DOGRU — ≥6 ay remisyon şartı + MMF'nin konsepsiyondan 3-6 ay önce kesilip güvenli ajana geçiş.",
+        "C": "YANLIS — Aktif lupus nefriti öyküsü olması, hastalık remisyona girdiğinde ve uygun ilaç düzenlemesi yapıldığında gebeliği ömür boyu kontrendike kılmaz; kontrendikasyon aktif hastalık DÖNEMİYLE ilişkilidir.",
+        "D": "YANLIS — MMF'nin teratojenik riski konsepsiyon ÖNCESİ döneme odaklanır; ilk trimesterle sınırlı bir güvenlik penceresi tanımlanmamıştır, ilaç konsepsiyon öncesinde kesilmelidir.",
+        "E": "YANLIS — Doğumdan hemen önce kesmek yetersizdir; teratojenik risk özellikle ORGANOGENEZ döneminde (erken gebelik) kritiktir, bu nedenle ilaç konsepsiyondan AYLAR önce kesilmelidir."
+      },
+      "etiketler": [
+        "Gebelik Planlaması",
+        "MMF Teratojenite",
+        "Lupus Nefriti Remisyon",
+        "Azatioprin",
+        "Konsepsiyon Öncesi Danışmanlık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Andreoli et al. Ann Rheum Dis 2017 (EULAR Pregnancy Recommendations); Sammaritano et al. Arthritis Rheumatol 2020"
+    },
+    {
+      "id": "s8",
+      "metin": "Anti-Ro (SSA) pozitif SLE tanılı gebe bir hasta rutin obstetrik takibe geliyor. Hasta, bu antikorun bebeği için taşıdığı spesifik riski soruyor.\n\nAnti-Ro pozitifliğinin fetal/neonatal riski ve önerilen izlem stratejisi nedir?",
+      "secenekler": {
+        "A": "Anti-Ro pozitifliği fetüs için herhangi bir risk taşımaz, ek izlem gerekmez.",
+        "B": "Anti-Ro (SSA) pozitif annelerde bebekte konjenital kalp bloğu (Neonatal Lupus) gelişimi riski vardır; bu nedenle 16-26. haftalarda fetal ekokardiyografi takibi şarttır.",
+        "C": "Anti-Ro pozitifliği yalnızca anneyi etkiler, plasentayı geçmez, fetal risk oluşturmaz.",
+        "D": "Konjenital kalp bloğu riski yalnızca Anti-dsDNA pozitif annelerde görülür, Anti-Ro ile ilişkisi yoktur.",
+        "E": "Fetal ekokardiyografi, gebeliğin yalnızca 3. trimesterinde (30. haftadan sonra) yapılmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Anti-Ro (SSA) pozitif annelerde konjenital kalp bloğu (Neonatal Lupus) riski vardır; bu risk nedeniyle 16-26. haftalarda fetal ekokardiyografi takibi zorunludur — kritik pencere bu dönemdir.",
+      "aciklama_detay": "Anti-Ro (SSA) ve Anti-La (SSB) antikorları, subakut kutanöz lupus, neonatal lupus ve sekonder Sjögren sendromu ile ilişkilidir. Anti-Ro antikorları plasentayı geçebilen IgG tipi antikorlardır ve fetal kalp dokusundaki iletim sistemini (özellikle AV nod bölgesini) hedefleyerek inflamasyon ve fibrozise yol açabilir — bu, konjenital kalp bloğu (genellikle tam/3. derece AV blok) şeklinde ortaya çıkan, potansiyel olarak geri dönüşümsüz ve ciddi bir neonatal lupus komponentidir. Bu riskin en yüksek olduğu dönem gebeliğin 16-26. haftaları arasıdır; bu nedenle Anti-Ro (SSA) pozitif annelerde bu dönemde seri fetal ekokardiyografi ile fetal kalp ritmi ve AV ileti yakından izlenmelidir — erken saptama, bazı vakalarda maternal deksametazon gibi tedavi girişimlerine olanak tanıyabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Anti-Ro pozitifliği, konjenital kalp bloğu riski nedeniyle önemli bir fetal risk taşır; ek izlem (fetal eko) gereklidir.",
+        "B": "DOGRU — Anti-Ro → konjenital kalp bloğu riski → 16-26. haftalarda fetal ekokardiyografi zorunlu.",
+        "C": "YANLIS — Anti-Ro, IgG tipi bir antikordur ve plasentayı GEÇER; bu tam olarak fetal riskin mekanizmasıdır.",
+        "D": "YANLIS — Konjenital kalp bloğu riski spesifik olarak Anti-Ro (SSA) (ve Anti-La/SSB) ile ilişkilendirilmiştir, Anti-dsDNA ile değil.",
+        "E": "YANLIS — Kritik izlem penceresi 16-26. HAFTALARDIR (2. trimester), yalnızca 3. trimesterle sınırlı değildir; bu dönemde erken saptama önemlidir."
+      },
+      "etiketler": [
+        "Anti-Ro (SSA)",
+        "Konjenital Kalp Bloğu",
+        "Neonatal Lupus",
+        "Fetal Ekokardiyografi",
+        "Gebelik Takibi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Izmirly et al. Circulation 2011; Brito-Zerón et al. Nat Rev Dis Primers 2016"
+    },
+    {
+      "id": "s9",
+      "metin": "SLE tanılı bir hastada kardiyovasküler risk değerlendirmesi yapılıyor. Geleneksel Framingham risk skoru düşük-orta risk gösteriyor, ancak klinisyen bu sonucun hastanın gerçek riskini yeterince yansıtmayabileceğinden endişe ediyor.\n\nBu endişenin bilimsel gerekçesi ve önerilen yönetim stratejisi nedir?",
+      "secenekler": {
+        "A": "Framingham skoru SLE hastalarında her zaman gerçek riski olduğundan yüksek gösterir, bu nedenle endişe gereksizdir.",
+        "B": "SLE'de kardiyovasküler risk, geleneksel skorlamalarla (örn. Framingham) genellikle olduğundan daha düşük tahmin edilir; bu nedenle antihipertansif hedefi <130/80 mmHg olarak belirlenmeli, lupus nefritinde proteinüriyi de azaltan ACEi/ARB tercih edilmeli ve HCQ ile hastalık aktivitesinin kontrolü KV riski azaltmada önemli bir strateji olarak sürdürülmelidir.",
+        "C": "Framingham skoru SLE hastalarında kardiyovasküler riski mükemmel doğrulukla öngörür, ek bir önlem gerekmez.",
+        "D": "SLE hastalarında kardiyovasküler risk değerlendirmesi hiçbir zaman yapılmamalıdır çünkü hastalığın kendisi zaten maksimum riski oluşturur.",
+        "E": "Antihipertansif hedefi SLE hastalarında genel popülasyondan daha gevşek (<150/90 mmHg) olmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SLE'de KV risk, Framingham gibi geleneksel skorlamalarla OLDUĞUNDAN DÜŞÜK tahmin edilir. Bu nedenle sıkı KB hedefi (<130/80), ACEi/ARB tercihi ve HCQ/hastalık aktivite kontrolü ile agresif risk yönetimi gerekir.",
+      "aciklama_detay": "SLE, genel popülasyona kıyasla önemli ölçüde artmış bir erken ateroskleroz ve kardiyovasküler olay riskine (inme ve miyokard enfarktüsü) sahiptir. Bu risk geleneksel skorlamalarla (örn. Framingham) genellikle olduğundan daha düşük tahmin edilir — çünkü bu skorlamalar SLE'ye özgü inflamatuar/immünolojik risk faktörlerini (kronik inflamasyon, otoantikorlar, immünsüpresif tedaviler, antifosfolipid antikorlar) hesaba katmaz, yalnızca geleneksel risk faktörlerine (yaş, sigara, lipid, KB) dayanır. Bu nedenle SLE hastalarında kardiyovasküler risk yönetimi, hesaplanan skordan bağımsız olarak agresif bir yaklaşımla ele alınmalıdır: antihipertansif hedefi <130/80 mmHg olarak belirlenmeli, lupus nefritinde proteinüriyi de azaltmak adına ACE inhibitörü veya ARB'ler tercih edilmelidir. HCQ'nun ve hastalık aktivitesinin kontrol altında tutulmasının KV riski azalttığı gösterilmiştir. Antifosfolipid antikor (aPL) profili yüksek riskli olan hastalarda birincil koruma için düşük doz aspirin uygulanması önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersine, Framingham gibi skorlar SLE'de riski OLDUĞUNDAN DÜŞÜK tahmin eder, yüksek değil.",
+        "B": "DOGRU — Framingham riski hafife alır → sıkı KB hedefi + ACEi/ARB + HCQ/hastalık kontrolü ile agresif yönetim gerekir.",
+        "C": "YANLIS — Framingham skoru SLE'ye özgü inflamatuar risk faktörlerini yakalayamadığından bu popülasyonda yetersiz kalır, mükemmel doğruluk göstermez.",
+        "D": "YANLIS — Risk değerlendirmesi ve aktif yönetim (KB hedefi, ilaç seçimi, HCQ, aPL bazlı aspirin) tam olarak önerilen yaklaşımdır; değerlendirmeden vazgeçilmesi doğru değildir.",
+        "E": "YANLIS — Hedef, genel popülasyona göre DAHA GEVŞEK değil, aksine SIKI (<130/80 mmHg) olarak belirlenmelidir; artmış risk nedeniyle."
+      },
+      "etiketler": [
+        "Kardiyovasküler Risk",
+        "Framingham Skoru",
+        "Kan Basıncı Hedefi",
+        "ACEi/ARB",
+        "Risk Yönetimi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Drosos et al. Ann Rheum Dis 2022 (EULAR CVD Risk in Rheumatic Diseases); Petri Rheum Dis Clin North Am 2022"
+    },
+    {
+      "id": "s10",
+      "metin": "Şiddetli, tedaviye dirençli otoimmün hemolitik anemi ve trombositopeni ile prezente olan bir SLE hastasında standart immünsüpresif tedaviye (steroid + AZA) yeterli yanıt alınamıyor.\n\nBu refrakter hematolojik tabloda düşünülmesi gereken biyolojik/hedefe yönelik ajan hangisidir?",
+      "secenekler": {
+        "A": "Anifrolumab; Tip 1 IFN reseptör antagonisti olup refrakter hematolojik tutulumda birincil endikasyondur.",
+        "B": "Rituksimab; Anti-CD20 ajanı olup refrakter hemolitik anemi/trombositopeni veya böbrek tutulumunda kullanılabilir.",
+        "C": "Belimumab; yalnızca cilt ve eklem tutulumunda etkilidir, hematolojik tutulumda hiçbir rolü yoktur.",
+        "D": "Bu klinik tabloda hiçbir biyolojik ajanın yeri yoktur, yalnızca yüksek doz steroide devam edilmelidir.",
+        "E": "Hidroksiklorokin dozunun maksimum sınırın üzerine çıkarılması refrakter hematolojik tutulumun standart tedavisidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Rituksimab (Anti-CD20), refrakter hemolitik anemi/trombositopeni veya böbrek tutulumunda kullanılabilecek biyolojik ajandır — bu spesifik klinik senaryoda tercih edilir.",
+      "aciklama_detay": "Biyolojik ajanlar arasında B hücre büyüme faktörünü bloke eden Belimumab ve Tip 1 IFN reseptör antagonisti olan Anifrolumab standart tedaviye dirençli vakalarda onaylanmıştır (bunlar genellikle cilt, eklem, genel hastalık aktivitesi kontrolünde kullanılır). Ancak refrakter hemolitik anemi/trombositopeni veya böbrek tutulumunda Anti-CD20 ajanı Rituksimab kullanılabilir — bu, B hücrelerini doğrudan deplete ederek otoantikor üreten hücre havuzunu (özellikle hemolitik anemi ve trombositopeniye yol açan otoantikorları üreten B hücreleri) hedefler ve şiddetli hematolojik sitopeni tablolarında özellikle değerli bir seçenektir. Bu, biyolojik ajan seçiminin SLE'nin tuttuğu spesifik organ/sisteme göre bireyselleştirilmesi gerektiğini gösteren önemli bir klinik ayrımdır — her biyolojik ajan aynı endikasyon spektrumuna sahip değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Anifrolumab, standart tedaviye dirençli genel SLE aktivitesinde (özellikle cilt/eklem) onaylıdır; refrakter hematolojik tutulum için birincil endikasyon olarak tanımlanmamıştır.",
+        "B": "DOGRU — Rituksimab, refrakter hemolitik anemi/trombositopeni veya böbrek tutulumunda kullanılabilecek Anti-CD20 ajanıdır.",
+        "C": "YANLIS — Belimumab'ın rolü cilt/eklem ile sınırlı değildir ancak refrakter hematolojik tutulumda özellikle tercih edilen ajan Rituksimab'dır.",
+        "D": "YANLIS — Refrakter hematolojik tutulumda biyolojik ajanların (özellikle Rituksimab) tanımlanmış bir rolü vardır; yalnızca steroid artırımı yeterli/güvenli bir strateji değildir.",
+        "E": "YANLIS — HCQ dozunun maksimum sınırın (5 mg/kg/gün) üzerine çıkarılması retinal toksisite riskini artırır ve önerilmez; refrakter hematolojik tutulum için standart yaklaşım değildir."
+      },
+      "etiketler": [
+        "Rituksimab",
+        "Refrakter Hemolitik Anemi",
+        "Trombositopeni",
+        "Anti-CD20",
+        "Biyolojik Tedavi Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fanouriakis et al. Ann Rheum Dis 2019 (EULAR Recommendations); Md Yusof et al. Ann Rheum Dis 2017"
+    }
+  ]
+}

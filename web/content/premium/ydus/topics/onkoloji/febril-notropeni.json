@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "id": "febril-notropeni",
+    "branch": "onkoloji",
+    "baslik": "Febril Nötropeni Yönetimi",
+    "altbaslik": "MASCC/CISNE risk stratifikasyonu, 60 dakika kuralı, antipsödomonal ampirik tedavi, vankomisin/antifungal endikasyonları ve G-CSF profilaksisi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Tanım ve Terminoloji",
+      "kolonlar": [
+        "Terim",
+        "Tanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Ateş ★",
+            "Tek oral ölçüm ≥38.3°C (101°F) VEYA ≥38.0°C (100.4°F) ateşin 1 saat boyunca devam etmesi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Şiddetli Nötropeni",
+            "ANC <500 hücre/µL VEYA önümüzdeki 48 saatte bu değerin altına düşmesinin öngörülmesi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Derin Nötropeni ★",
+            "ANC <100 hücre/µL — invaziv enfeksiyon ve bakteriyemi riski DRAMATİK olarak artar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyoloji ve Mikrobiyoloji",
+      "satirlar": [
+        {
+          "metin": "Kemoterapötik ajanların sitotoksik hasarı mukozal bariyer bütünlüğünü bozar → endojen mikrobiyotanın GİS/solunum yolu mukozasından sistemik dolaşıma translokasyonu. FN ataklarının yalnızca **%20-30'unda** enfeksiyöz kaynak mikrobiyolojik olarak belirlenebilir; olguların ancak **%10-25'inde** bakteriyemi saptanır."
+        },
+        {
+          "metin": "**Etken dağılımı değişti:** Tarihsel olarak gram-negatif baskınken, günümüzde intravasküler kateter kullanımı + kinolon profilaksisi nedeniyle dökümante enfeksiyonların büyük çoğunluğundan **gram-pozitif** organizmalar (S. epidermidis, S. aureus, Enterococcus, viridans streptokoklar) sorumludur. Ancak *P. aeruginosa*, *E. coli*, *Klebsiella* gibi gram-negatif basiller SEPSİSE HIZLI İLERLEME potansiyeli nedeniyle ampirik tedavinin ANA HEDEFİ olmaya devam eder."
+        },
+        {
+          "metin": "Nötropeni süresi **7 günü aştığında** mantar enfeksiyonları (*Candida*, *Aspergillus*) riski belirgin artar. Viral enfeksiyonlar (HSV, VZV) de ciddi morbiditeye katkıda bulunabilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Risk Stratifikasyonu",
+      "kolonlar": [
+        "Kategori",
+        "Kriterler"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yüksek Risk ★",
+            "Beklenen nötropeni süresi >7 gün (akut lösemi indüksiyonu, allojenik HKHN); MASCC <21 veya solid tümörde CISNE ≥3; hemodinamik instabilite, yeni konfüzyon, solunum yetmezliği, oligüri, KrCl <30 mL/dk, şiddetli oral/GİS mukozit, KC enzimlerinde >5 kat artış"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Düşük Risk",
+            "Beklenen şiddetli nötropeni (<500) süresi ≤7 gün, komorbidite/organ disfonksiyonu yok, stabil, MASCC ≥21 veya CISNE=0"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Klinik Değerlendirme Tuzağı: Hücresel inflamasyon baskılandığından klasik enfeksiyon bulguları (püy, lokalize eritem, ısı artışı) MASKELENEBİLİR — ateş bazen tek belirti olabilir. Cilt, mukoza, diş eti, orofarinks, perianal bölge, kateter giriş yeri her gün değerlendirilmelidir. Ancak frajil GİS mukozası nedeniyle nötropenik enterokoliti (tiflit) kötüleştirmemek ve bakteriyemiyi tetiklememek için **dijital rektal muayene (tuşe) ve rektal ısı ölçümünden KESİNLİKLE KAÇINILMALIDIR**."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Mikrobiyolojik Örnekleme",
+      "satirlar": [
+        {
+          "metin": "İLK ampirik antibiyotik dozundan ÖNCE, santral venöz kateterin (CVC) HER LÜMENİNDEN ve periferik venden eşzamanlı kan kültürleri (en az 2 set aerobik/anaerobik) mutlaka alınmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Görüntüleme ve Biyobelirteçler",
+      "kolonlar": [
+        "Yöntem",
+        "Endikasyon"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Toraks BT (yüksek çözünürlük/kontrastsız)",
+            "Solunum yolu şikayeti veya risk faktörü varsa — PA grafi NORMAL olsa dahi pnömoni/aspergilloz erken tanısı için istenmeli"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kontrastlı Batın BT",
+            "Karın ağrısı varlığında C. difficile koliti veya nötropenik enterokolit şüphesinde"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Galaktomannan / (1,3)-Beta-D-Glukan ★",
+            "Uzun süreli derin nötropenik + yüksek riskli vakalarda invaziv mantar taraması için haftada 1-2 periyodik izlem"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "60 Dakika Kuralı ★: Nötropenik ateş, tanısal/yatış işlemleri geciktirilmeksizin ACİL TIBBİ DURUM (medical emergency) kabul edilmelidir. Triage anından sonraki EN GEÇ 60 DAKİKA içinde geniş spektrumlu ampirik antibiyotik başlanmalıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ampirik Tedavi — Yüksek Risk",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Standart Monoterapi ★",
+            "IV antipsödomonal beta-laktam: sefepim, meropenem, imipenem-silastatin VEYA piperasilin-tazobaktam"
+          ]
+        },
+        {
+          "hucreler": [
+            "Hemodinamik İnstabilite / Dirençli Patojen Şüphesi",
+            "Beta-laktama ikinci gram-negatif ajan (aminoglikozid veya kinolon) VEYA MRSA için vankomisin eklenebilir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Penisilin Alerjisi",
+            "Gram-negatifler için AZTREONAM + gram-pozitifler için VANKOMİSİN kombinasyonu tercih edilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Vankomisin Endikasyonları (Rutin BAŞLANMAZ — sağkalımı iyileştirmez): Yalnızca şu durumlarda eklenir: (1) hemodinamik instabilite (sepsis/septik şok), (2) şiddetli mukoza hasarı + önceden kinolon profilaksisi (viridans strep bakteriyemi riski), (3) kültürde MRSA veya sefalosporin dirençli pnömokok, (4) kateter ilişkili enfeksiyon, (5) radyolojik dökümante pnömoni şüphesi. **İlk 48-72 saatte dirençli gram-pozitif etken izole edilmezse vankomisin KESİLMELİDİR.**"
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ampirik Tedavi — Düşük Risk",
+      "satirlar": [
+        {
+          "metin": "Kısa gözlemle komplike olmadığı anlaşılan, MASCC ≥21 ve ciddi odaksal semptomu olmayan stabil hastalar AYAKTAN takip edilebilir. **Oral siprofloksasin veya levofloksasin + amoksisilin-klavulanat** ilk seçenektir. Şart: evde refakatçi olması, transport sorunu olmaması, nozokomiyal kinolon direnci gelişmemiş olması."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Dirençli Ateş ve Preemptif Antifungal: Geniş spektrumlu tedavi alan stabil hastada ateşin düşmesi 4-5 günü bulabilir; klinik kötüleşme YOKSA salt ateş devamı antimikrobiyal değişimi GEREKTİRMEZ. Ancak nötropeni beklenen 7 günü aşan ve ampirik tedaviye rağmen ateş 4-7 gün sonra HÂLÂ devam eden yüksek riskli olgularda, ekinokandin, lipozomal amfoterisin B veya vorikonazol ile preemptif antifungal başlanmalıdır. Akciğer BT'sinde kaviter lezyon — özellikle nötrofillerin geri kazanılmaya başladığı evrede — güçlü bir *Aspergillus*/*Fusarium* invazyon işaretidir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Korunma ve Profilaksi",
+      "kolonlar": [
+        "Sınıf",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Antibakteriyel",
+            "Nötropenisi >7 gün öngörülen yüksek riskli hastalarda (akut lösemi, HKHN) primer profilaksi: levofloksasin/siprofloksasin. Düşük riskli SOLİD TÜMÖR hastalarında rasyonel endikasyon YOK — kinolon direnci riski nedeniyle önerilmez"
+          ]
+        },
+        {
+          "hucreler": [
+            "Antifungal / Antiviral",
+            "Ciddi uzun nötropenide küf mantarlarına karşı posakonazol (veya flukonazol/ekinokandin, rehbere göre). HSV/VZV seropozitif vakalarda asiklovir/valasiklovir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "G-CSF — Primer Profilaksi ★",
+            "FN riski ≥%20 hesaplanan TÜM rejimlerde her kürde filgrastim/pegfilgrastim uygulanmalı. Risk %10-20 + (65 yaş üzeri, ileri tümör evresi, kronik organ disfonksiyonu) varsa yine profilaktik uygulanır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "G-CSF — Terapötik (Atak Sırasında) ★",
+            "Enfeksiyon/ateş GELİŞTİKTEN SONRA rutin G-CSF (sepsis veya ciddi solunum yetmezliği dışında) genel prognoz/mortaliteyi net iyileştirmediği için ÖNERİLMEZ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Febril Nötropeni 8 Altın Kural: (1) ANC <500 şiddetli, <100 derin nötropeni. (2) Günümüzde gram-pozitifler daha sık dökümante edilir ama ampirik hedef hâlâ Pseudomonas dahil gram-negatiflerdir. (3) Rektal tuşe/ısı ölçümü YASAK. (4) Kan kültürleri (CVC her lümen + periferik) İLK DOZ ÖNCESİ alınır. (5) 60 dakika içinde ampirik antibiyotik başlanmalı — onkolojik acil. (6) Vankomisin rutin değil, spesifik endikasyonlarla eklenir ve 48-72 saatte kültür negatifse kesilir. (7) 4-7 gün süren dirençli ateş + >7 gün nötropeni = preemptif antifungal. (8) G-CSF: risk ≥%20'de primer profilaksi verilir; atak SIRASINDA terapötik kullanım rutin önerilmez."
+    }
+  ]
+}

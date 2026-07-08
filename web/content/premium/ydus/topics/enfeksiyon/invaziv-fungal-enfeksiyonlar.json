@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "id": "invaziv-fungal-enfeksiyonlar",
+    "branch": "enfeksiyon",
+    "baslik": "İnvaziv Fungal Enfeksiyonlar (İFE) — İleri Kavramlar",
+    "altbaslik": "C. auris patogenezi, BDG/GM/T2Candida biyobelirteç dinamikleri, azol/ekinokandin direnç mekanizmaları, yeni nesil antifungaller (rezafungin, ibrexafungerp, fosmanogepix, olorofim) ve spesifik klinik sendromlar",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Fırsatçı mantarların hastalık oluşturabilmesi hem kendi virülans faktörlerine hem de konağın immün yanıtındaki spesifik defektlere bağlıdır. Bu modül, moleküler patogenezden yeni nesil antifungallere ve spesifik klinik sendromlara kadar İFE'yi ileri düzeyde ele alır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Moleküler Patogenez — Candida auris Özel Örneği",
+      "kolonlar": [
+        "Mekanizma",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Deri Kolonizasyonu / Doku Tropizmi ★",
+            "C. auris, diğer Candida türlerinin aksine MUKOZAL yüzeyler yerine DERİDE kalıcı kolonizasyon yeteneğine sahip eşsiz bir patojendir; Scf1 ve Als4112 adezinleriyle deri epitel hücrelerine/hücre dışı matrikse tutunur"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "İmmün Kaçış",
+            "Nötrofil toplanmasında bozulma + makrofaj yanıtı anormalliği. C. albicans'ın aksine NÖTROFİLLER C. auris'e saldırmaktan KAÇINIR"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "IFN-γ Paradoksu ★",
+            "Genellikle koruyucu kabul edilen IFN-γ, C. auris deri enfeksiyonunda ZARARLI rol oynar: aşırı üretim epitel bariyerine doğrudan hasar verip derin tabakalara yayılmayı ve kronik kolonizasyonu kolaylaştırır; koruyucu IL-17 (Th17) yanıtını da BASKILAR"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Biyofilm ve 'Persister' Hücreler: Başta C. parapsilosis ve C. tropicalis olmak üzere Candida türleri polimerik hücre dışı matriks salgılayarak biyofilm oluşturur. Biyofilm hem antifungal penetrasyonunu engeller hem de yüksek ROS stresi ile başa çıkabilen 'persister' (kalıcı) hücrelerin gelişmesine olanak tanıyarak enfeksiyonun RELAPSINA neden olur."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İleri Diagnostik Yöntemler ve Biyobelirteçler",
+      "kolonlar": [
+        "Test",
+        "Özellik ve Sınırlılıklar"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Kültür",
+            "Kandidemide dahi sensitivite yalnızca ~%50 — kültür-bağımsız testleri zorunlu kılar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "(1,3)-Beta-D-Glukan (BDG) ★",
+            "C. albicans'ta yüksek titrede salınır; C. glabrata, C. parapsilosis, C. auris'te kalın mannoprotein tabakası BDG'yi MASKELER (sensitivite %51-63'e düşer). Mukorales ve Cryptococcus'ta BDG SAPTANMAZ. IVIG, diyaliz filtreleri, bakteriyel enfeksiyonlar yalancı pozitiflik yapabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Galaktomannan (GM)",
+            "Esas olarak Aspergillus'ta; Fusarium/Histoplasma/Blastomyces ile çapraz reaksiyon verebilir. SOT alıcılarında serum GM sensitivitesi düşük, hematolojik malignite/nötropenik hastada yüksek"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Plazma cfDNA / mNGS ★",
+            "Karius testi gibi plazma metagenomik NGS platformları dolaşan fungal DNA fragmanlarını saptar; kültür/PCR negatifken özellikle Mukorales gibi Aspergillus-dışı küflerin saptanmasında konvansiyonel yöntemlerden ÜSTÜN"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "T2 Manyetik Rezonans (T2Candida)",
+            "Tam kandan kültürsüz 3-5 saatte 5 major Candida türünü saptar (C.albicans/tropicalis, C.glabrata/krusei, C.parapsilosis grupları); 1 CFU/mL gibi çok düşük inokulumu bile saptar → erken hedefe yönelik tedavi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Direnç Mekanizmaları",
+      "kolonlar": [
+        "Sınıf (Hedef)",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Azoller (Lanosterol 14-α-demetilaz / ERG11) ★",
+            "ERG11 mutasyonları (Y132F, K143R) veya CDR1/MDR1 efluks pompası upregülasyonu. A. fumigatus'ta tarımsal fungisit kullanımına bağlı cyp51A promotör mutasyonları (TR34/L98H, TR46/Y121F/T289A) GLOBAL bir kriz"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ekinokandinler (1,3-Beta-D-Glukan Sentaz)",
+            "FKS1/FKS2 genlerinde 'hot spot' mutasyonlar; C. glabrata'da oran giderek artıyor"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yenilikçi / Geliştirme Aşamasındaki Antifungaller",
+      "kolonlar": [
+        "Ajan",
+        "Sınıf / Mekanizma",
+        "Öne Çıkan Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Rezafungin",
+            "Yeni kuşak ekinokandin",
+            "Yarı ömür >130 saat → HAFTADA BİR IV. Kandidemi/invaziv kandidiyaziste onaylı"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "İbrexafungerp ★",
+            "Triterpenoid, oral, glukan sentaz inhibitörü (farklı bağlanma yeri)",
+            "FKS mutasyonlu ekinokandine DİRENÇLİ Candida suşlarına ve C. auris'e AKTİF"
+          ]
+        },
+        {
+          "hucreler": [
+            "Fosmanogepix",
+            "İlk sınıf — Gwt1 enzimi inhibitörü (GPI ankor biyosentezi)",
+            "Maya + küflere (Aspergillus, Fusarium, Scedosporium) geniş spektrum; bazı Mukorales'e ETKİSİZ"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Olorofim ★",
+            "Orotomid sınıfı — dihidroorotat dehidrogenaz inhibisyonu (primidin sentezi)",
+            "Mayalara VE Mukorales'e ETKİSİZ; ama Lomentospora, Scedosporium ve azol dirençli Aspergillus dahil tedavisi zor küflere GÜÇLÜ etkili"
+          ]
+        },
+        {
+          "hucreler": [
+            "Oteseconazole",
+            "Tetrazol — ergosterol biyosentez inhibitörü",
+            "İnsan CYP450'ye düşük afinite → az ilaç etkileşimi. Rekürren vulvovajinal kandidiyazis onaylı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Encochleated Amfoterisin B (cAmB/MAT2203)",
+            "AmB'nin fosfolipid kristal içine hapsedilmiş hali",
+            "GİS yıkımından korunur, fagositozla dokuya taşınır; ORAL kullanılabilir, nefrotoksisite riski yok denecek kadar az"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Spesifik Klinik Sendromlar — Candida Endokarditi/Süpüratif Tromboflebit",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Risk Faktörü",
+            "Santral venöz kateter veya IV ilaç bağımlılığı (özellikle C. parapsilosis, C. albicans)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Tedavi Prensibi ★",
+            "İnfekte kapak/cihaz veya tromboze venin CERRAHİ REZEKSİYONU MUTLAKA gereklidir. Antifungal: yüksek doz ekinokandin (kaspofungin 150mg/gün) veya L-AmB ± Flusitozin; kültür negatifliği sonrası duyarlıysa yüksek doz oral flukonazole geç; toplam 6 hafta VEYA protez kapakta ÖMÜR BOYU supresif tedavi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Santral Sinir Sistemi (SSS) Mantar Enfeksiyonları",
+      "satirlar": [
+        {
+          "metin": "**Candida menenjiti:** Ekinokandinlerin makromoleküler yapısı nedeniyle BOS penetrasyonu ZAYIFTIR ve KULLANILMAMALIDIR. Primer tedavi: L-AmB (3-5 mg/kg) + Flusitozin (25 mg/kg qid), stabil hastada ardından flukonazole geçiş."
+        },
+        {
+          "metin": "**Kriptokoksik menenjit:** Klasik indüksiyon aynı şekilde L-AmB + Flusitozin'dir; tedavi ayrıca intrakraniyal basıncın agresif yönetimini (tekrarlayan lomber ponksiyonlar) de içerir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Osteoartiküler Kandidiyazis ve Vertebral Osteomiyelit",
+      "satirlar": [
+        {
+          "metin": "Kandidemi ataklarından AYLAR sonra dahi hematojen tohumlanmayla gelişebilir. Lökosit/CRP artar, **ateş genellikle YOKTUR**. Özellikle *C. glabrata* saptanırsa flukonazol direnci akla gelmeli. Tedavi: cerrahi debridman (veya protez çıkarılması) + 2 hafta ekinokandin/L-AmB, ardından (duyarlı suşta) **6-12 aylık oral azol** (flukonazol/vorikonazol)."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "İnvaziv Fusariosis ★: Ciddi nötropenik/T hücre yetmezlikli hastalarda anjiyoinvaziv, deride çok sayıda eritematöz, ağrılı, santrali NEKROTİK papül/nodüllerle karakterize ÖLÜMCÜL bir enfeksiyondur. Fusarium in vivo sporülasyon yapabildiğinden KAN KÜLTÜRLERİNDE ÜREYEBİLİR (çoğu küften farklı). Primer tedavi: yüksek doz L-AmB (5 mg/kg); ağır/yanıtsız vakada L-AmB+Vorikonazol kombinasyonu. Cerrahi debridman + konak immünitesinin sağlanması (G-CSF/GM-CSF, immünsüpresyon azaltma) kritik. EKİNOKANDİNLER BU MANTARLARA ETKİSİZDİR."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ekstrem İmmünsüpresyonda Profilaksi",
+      "kolonlar": [
+        "Popülasyon",
+        "Risk / Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "HSCT / Akut Lösemi ★",
+            "Uzamış nötropeni (≥10 gün, <100/µL) aspergilloz+mukormikoz riskini dramatik artırır. Posakonazol, küf etkinliği sayesinde flukonazol/itrakonazole göre invaziv aspergilloz sıklığını VE mortaliteyi belirgin azaltır — STANDART profilaksi ajanı"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "SOT — Akciğer Transplantı ★",
+            "Hava yollarının dış ortama açık olması + silier disfonksiyon → EN YÜKSEK riskli grup (İFE sıklığı %3-42). Kistik fibrozis/CMV/hava yolu stenti riski artırır. Vorikonazol veya izavukonazol ile üniversal/hedeflenmiş küf profilaksisi standart"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Mekanik Sirkülatuar Destek (LVAD vb.)",
+            "Fungal biyofilm (özellikle Candida) için ideal zemin; enfeksiyon halinde mortalite >%40. Yalnız ilaç tedavisi genellikle BAŞARISIZ — enfekte cihazın radikal cerrahi eksizyonu + uzun süreli antifungal kombinasyonu ELZEM"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — İFE 8 Altın Kural: (1) C. auris deride kolonize olur, nötrofiller ona saldırmaktan kaçınır; IFN-γ burada ZARARLIDIR. (2) BDG, C. glabrata/parapsilosis/auris'te mannoprotein maskesi nedeniyle daha az duyarlıdır; Mukorales/Cryptococcus'ta hiç saptanmaz. (3) Direnç: azollerde ERG11/cyp51A (TR34/L98H), ekinokandinlerde FKS1/FKS2. (4) İbrexafungerp FKS-mutant/C.auris'e etkili; Olorofim mayalara etkisiz ama zor küflere güçlü; Fosmanogepix bazı Mukorales'e etkisiz. (5) Candida menenjitinde ekinokandin KULLANILMAZ (BOS penetrasyonu zayıf) — L-AmB+Flusitozin. (6) Osteoartiküler kandidiyazis genelde AFEBRİL seyreder. (7) Fusariosis'te ekinokandinler etkisizdir, kan kültüründe üreyebilir (sporülasyon). (8) HSCT'de posakonazol, SOT-akciğerde vorikonazol/izavukonazol standart profilaksidir."
+    }
+  ]
+}

@@ -46,7 +46,7 @@ const BRANCH_ICONS: Record<string, React.ElementType> = {
   gastroenteroloji: Pill,
   nefroloji: Filter,
   kardiyoloji: HeartPulse,
-  tibbi_onkoloji: Microscope,
+  onkoloji: Microscope,
   enfeksiyon: Bug,
 };
 

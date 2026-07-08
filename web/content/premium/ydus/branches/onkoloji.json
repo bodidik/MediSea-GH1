@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "onkoloji",
+    "baslik": "Tıbbi Onkoloji",
+    "aciklama": "Solid tümörler, hematolojik maligniteler ve onkolojik acillerin yönetimini kapsayan uzmanlık sınav modülü.",
+    "renk": "#5a1a6b",
+    "emoji": "🎗️"
+  },
+  "kategoriler": [
+    {
+      "id": "onkolojik-aciller",
+      "baslik": "Destek Tedavi ve Onkolojik Aciller",
+      "aciklama": "Febril nötropeni, tümör lizis sendromu, immünoterapi toksisiteleri",
+      "emoji": "🆘",
+      "konular": [
+        {
+          "id": "febril-notropeni",
+          "baslik": "Febril Nötropeni Yönetimi",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "tumor-lizis-sendromu",
+          "baslik": "Tümör Lizis Sendromu",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        }
+      ]
+    }
+  ]
+}

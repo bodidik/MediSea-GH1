@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "id": "sle",
+    "branch": "romatoloji",
+    "baslik": "Sistemik Lupus Eritematozus (SLE)",
+    "altbaslik": "Tip 1 interferon ekseni, 2019 EULAR/ACR tanı kriterleri, lupus nefriti sınıflaması, hidroksiklorokin/belimumab/anifrolumab tedavisi ve gebelik yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "SLE, bağışıklık sisteminin kendi dokularına saldırması sonucu gelişen, kronik, multisistemik ve inflamatuar bir otoimmün hastalıktır. Seyir alevlenmeler ve spontan remisyonlarla karakterizedir; klinik spektrum hafif cilt tutulumundan yaşamı tehdit eden organ yetmezliklerine kadar geniş bir yelpazede yer alır — 'büyük taklitçi' olarak bilinir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Epidemiyoloji ve Mortalite",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Cinsiyet/Yaş ★",
+            "Hastaların ~%90'ı kadın; en sık doğurganlık çağında (menarş-menopoz arası). Kadın:erkek oranı 9:1"
+          ]
+        },
+        {
+          "hucreler": [
+            "Irk/Etnik Köken",
+            "Siyahi kadınlarda risk en yüksek (1/400), sonra Hispanik (1/800), sonra Beyaz kadınlar (1/1100)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Mortalite Paterni ★",
+            "10 yıllık sağkalım >%85. Erken yıllarda ölüm: enfeksiyonlar + aktif lupus (böbrek/SSS). İleri yıllarda ölüm: PREMATÜRE ATEROSKLEROZ ve kardiyovasküler olaylar (özellikle MI)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Etiyopatogenez — Genetik Yatkınlık",
+      "satirlar": [
+        {
+          "metin": "Tek yumurta ikizlerinde konkordans %24-70 iken, çift yumurta ikizlerinde %2'dir. 150'den fazla yatkınlık lokusu tanımlanmıştır; **HLA-DR2 ve HLA-DR3** ile **kompleman eksiklikleri (C1q, C1r, C1s, C2, C4)** hastalığa zemin hazırlar. Yatkınlık genlerinin çoğu **Tip 1 İnterferon (IFN)** üretimi ve sinyalizasyonu ile ilişkilidir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "İmmünolojik Kusur Mekanizması: Apoptotik hücre artıklarının (özellikle nötrofil kaynaklı NET'lerin) fagositler tarafından temizlenememesi (bozulmuş klerans) → nükleik asit birikimi → plazmasitoid dendritik hücrelerdeki Toll-benzeri reseptörlerin (TLR) uyarılması → aşırı Tip 1 İnterferon (IFN-alfa) salınımı. T/B hücrelerindeki tolerans kaybı, nükleer antijenlere karşı patojenik otoantikor üretimine ve doku immün kompleks birikimine yol açar. Çevresel tetikleyiciler: UV ışık (keratinosit apoptozu), EBV enfeksiyonu, düşük sosyoekonomik durum, mikrobiyom değişiklikleri."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Manifestasyonlar",
+      "kolonlar": [
+        "Sistem",
+        "Bulgular"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Anayasal",
+            "Ateş, aşırı yorgunluk, iştahsızlık, kilo kaybı"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Mukokutanöz ★",
+            "Nazolabial olukları KORUYAN klasik 'malar raş' (kelebek döküntüsü), fotosensitivite, diskoid lupus (skar+alopesi yapabilir), ağrısız oral/nazal ülserler. ~1/3'ünde Raynaud fenomeni"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kas-İskelet ★",
+            ">%90'ında görülür. El bilekleri/MKP/PIP/dizleri tutan simetrik, NON-EROZİV poliartrit. Nadiren Jaccoud artropatisi (bağ/tendon gevşekliği ile deformite, erozyon YOK). RA birlikteliği = 'Rhupus'"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Renal — Lupus Nefriti ★",
+            "%35-50'sinde gelişir, ESKD riskini artırır. Proteinüri+hematüri+hücresel silendirler. Kesin tanı/evreleme (Sınıf I-VI) için biyopsi ŞART; Sınıf III/IV en agresif, ACİL immünsüpresyon gerektirir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Nöropsikiyatrik",
+            "Kognitif disfonksiyon ('brain fog'), baş ağrısı, nöbetler, psikoz. Transvers miyelit TIBBİ ACİLDİR"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kardiyopulmoner",
+            "Plevrit/perikardit (serozit) yaygın. Akut pnömonit, diffüz alveoler hemoraji, 'büzüşen akciğer sendromu'. Miyokardit ve Libman-Sacks endokarditi (özellikle aPL ile ilişkili)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Hematolojik",
+            "Anemi (kronik hastalık veya otoimmün hemolitik), lökopeni (özellikle lenfopeni), trombositopeni"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı — Laboratuvar Otoantikorları",
+      "kolonlar": [
+        "Test",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "ANA ★",
+            "2019 EULAR/ACR kriterlerinde GİRİŞ KRİTERİ: titre ≥1:80"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Anti-dsDNA ★",
+            "Hastalığa çok spesifik (%75-99). Titre yüksekliği hastalık aktivitesi ve ÖZELLİKLE LUPUS NEFRİTİ ile yakından korele"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Anti-Sm (Smith) ★",
+            "SLE için EN SPESİFİK otoantikor ancak yalnızca ~%30 hastada bulunur"
+          ]
+        },
+        {
+          "hucreler": [
+            "Anti-Ro (SSA) / Anti-La (SSB)",
+            "Subakut kutanöz lupus, NEONATAL LUPUS ve sekonder Sjögren ile ilişkili"
+          ]
+        },
+        {
+          "hucreler": [
+            "Antifosfolipid Antikorlar (aPL)",
+            "Tromboz, inme ve tekrarlayan düşük riski"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kompleman (C3, C4)",
+            "Aktif hastalık/alevlenmede immün kompleks tüketimine bağlı DÜŞER"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Basamakları",
+      "kolonlar": [
+        "Basamak",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Genel Önlemler",
+            "Güneşten korunma (geniş spektrum UVA/UVB), sigara bırakma, KV risk faktörlerinin sıkı yönetimi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hidroksiklorokin (HCQ) ★",
+            "Kontrendikasyon yoksa TÜM hastalara başlanmalı (max 5 mg/kg/gün). Alevlenmeleri önler, sağkalımı artırır, tromboz/böbrek riski düşürür. Retinal toksisite → yıllık göz muayenesi şart"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Glukokortikoidler",
+            "Akut alevlenme/ciddi organ tutulumunda hayat kurtarıcı (metilprednizolon nabız). Yan etki riski nedeniyle mümkün olan EN DÜŞÜK dozda (≤5 mg/gün prednizon eşdeğeri) tutulmalı, en kısa sürede kesilmeli"
+          ]
+        },
+        {
+          "hucreler": [
+            "Hafif-Orta İmmünsüpresif",
+            "Metotreksat, Azatioprin (AZA), Mikofenolat Mofetil (MMF)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Şiddetli/Organ Tehdit Eden (Nefrit, SSS) ★",
+            "İndüksiyon: MMF veya düşük doz Siklofosfamid. Kalsinörin inhibitörleri (Takrolimus, Voklosporin) özellikle proteinüri kontrolünde eklenebilir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Biyolojik Ajanlar ★",
+            "Belimumab (B hücre büyüme faktörü blokajı) ve Anifrolumab (Tip 1 IFN reseptör antagonisti) dirençli vakalarda onaylı. Rituksimab (Anti-CD20): refrakter hemolitik anemi/trombositopeni veya böbrek tutulumunda"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Gebelik Yönetimi: Gebelik mutlaka hastalık en az 6 AY remisyondayken planlanmalı; AKTİF LUPUS NEFRİTİ varlığında gebelik KONTRENDİKEDİR. Güvenli: HCQ, AZA, Takrolimus. TERATOJENİK (konsepsiyondan 3-6 ay önce kesilmeli): MMF, Metotreksat, Siklofosfamid. Preeklampsi profilaksisi için düşük doz aspirin. Anti-Ro (SSA) pozitif annelerde konjenital kalp bloğu (Neonatal Lupus) riski için 16-26. haftalarda fetal ekokardiyografi ŞART."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kardiyovasküler Risk: SLE'de erken ateroskleroz/KV olay riski (inme, MI) belirgin artmıştır ve geleneksel skorlamalarla (Framingham) genellikle OLDUĞUNDAN DÜŞÜK tahmin edilir. Antihipertansif hedef <130/80 mmHg; lupus nefritinde proteinüriyi de azaltan ACEi/ARB tercih edilmeli. HCQ + hastalık aktivitesi kontrolü KV riski azaltır. Yüksek riskli aPL profilinde birincil koruma için düşük doz aspirin önerilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — SLE 8 Altın Kural: (1) ANA ≥1:80 = 2019 EULAR/ACR giriş kriteri; Anti-Sm en spesifik (ama az duyarlı, %30), Anti-dsDNA nefritle korele. (2) C3/C4 düşüklüğü = aktif hastalık/alevlenme göstergesi. (3) Jaccoud artropatisi = non-eroziv, geri dönüşümlü deformite (RA'dan ayrımı). (4) Lupus nefriti Sınıf III/IV = acil immünsüpresyon endikasyonu, tanı biyopsiyle. (5) HCQ tüm hastalara verilir — sağkalım + tromboz + böbrek koruması + retinal toksisite izlemi gerektirir. (6) Şiddetli nefrit/SSS'de MMF veya düşük doz siklofosfamid indüksiyon. (7) Gebelikte MMF/MTX/siklofosfamid kontrendike; Anti-Ro pozitifse fetal eko (16-26. hafta) şart. (8) İleri dönem mortalite nedeni aktif lupus değil, prematüre ateroskleroz/KV olaylardır — Framingham riski hafife alır."
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "id": "quiz-enf-ife-001",
+  "baslik": "İnvaziv Fungal Enfeksiyonlar — Soru Seti 1",
+  "branch": "enfeksiyon",
+  "topic": "invaziv-fungal-enfeksiyonlar",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Candida auris ile kolonize bir hastada, mikrobiyolojik özellikler diğer Candida türlerinden belirgin şekilde farklı bulunuyor. Kültür örnekleri mukozal yüzeylerden değil, deriden alınarak pozitif sonuç veriyor ve immünolojik incelemede nötrofillerin patojene karşı saldırgan davranış sergilemediği gözleniyor.\n\nBu bulgular C. auris'in hangi eşsiz patogenez özellikleriyle uyumludur?",
+      "secenekler": {
+        "A": "C. auris, tüm Candida türleri gibi öncelikle mukozal yüzeylerde kolonize olur; deri kolonizasyonu tesadüfi bir bulgudur.",
+        "B": "C. auris, diğer Candida türlerinin aksine mukozal yüzeylerden ziyade deride kalıcı kolonizasyon yeteneğine sahiptir (Scf1 ve Als4112 adezinleri aracılığıyla); ayrıca nötrofil toplanmasında bozulma ile karakterizedir — C. albicans'ın aksine nötrofiller C. auris'e saldırmaktan kaçınır.",
+        "C": "Nötrofillerin C. auris'e saldırmaktan kaçınması, yalnızca in vitro bir laboratuvar artefaktıdır, in vivo klinik önemi yoktur.",
+        "D": "Scf1 ve Als4112 adezinleri, C. auris'in yalnızca kan dolaşımında tutunmasını sağlar, deri epiteliyle ilişkisi yoktur.",
+        "E": "C. auris'in deri tropizmi, konak immün sisteminden tamamen bağımsız, pasif bir kolonizasyon sürecidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "C. auris, diğer Candida'lardan farklı olarak deride (mukozal değil) kalıcı kolonizasyon yapar (Scf1/Als4112 adezinleri) ve nötrofiller ona saldırmaktan kaçınır — bu, eşsiz bir immün kaçış ve doku tropizmi profilidir.",
+      "aciklama_detay": "C. auris, diğer Candida türlerinin aksine mukozal yüzeylerden ziyade deride kalıcı kolonizasyon yeteneğine sahip, eşsiz bir patojendir. C. auris, deri epitel hücrelerine ve hücre dışı matrikse tutunmayı sağlayan Scf1 ve Als4112 gibi spesifik adezinler üretir — bu, onun deriye özgü tropizminin moleküler temelidir. Ayrıca C. auris enfeksiyonu, nötrofil toplanmasında bozulma ve makrofaj yanıtlarında anormallik ile karakterizedir; C. albicans'ın aksine nötrofiller C. auris'e saldırmaktan kaçınır. Bu immün kaçış mekanizması, C. auris'in neden bu kadar kalıcı deri kolonizasyonu yapabildiğini ve hastane ortamlarında bu kadar zor eradike edilebildiğini açıklar — bu özellikler onu enfeksiyon kontrolü açısından da özellikle zorlu bir patojen haline getirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — C. auris'in deri kolonizasyonu tesadüfi değil, spesifik adezinlerle (Scf1, Als4112) desteklenen bir eşsiz tropizm özelliğidir.",
+        "B": "DOGRU — Deri tropizmi (Scf1/Als4112) + nötrofil kaçınma, C. auris'in eşsiz patogenez özellikleridir.",
+        "C": "YANLIS — Bu bulgu klinik olarak anlamlıdır; C. auris'in immün sistemden kaçışının ve kalıcı kolonizasyonunun temelini oluşturur.",
+        "D": "YANLIS — Bu adezinler spesifik olarak DERİ epitel hücrelerine ve hücre dışı matrikse tutunmayı sağlar, kan dolaşımıyla sınırlı değildir.",
+        "E": "YANLIS — Deri tropizmi tam olarak konak immün yanıtındaki spesifik defektlerle (nötrofil kaçınma, IFN-γ paradoksu) ilişkilidir, immün sistemden bağımsız değildir."
+      },
+      "etiketler": [
+        "Candida auris",
+        "Deri Kolonizasyonu",
+        "Adezinler",
+        "Nötrofil Kaçışı",
+        "Moleküler Patogenez"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Horton et al. mBio 2020; Jackson et al. J Fungi 2019"
+    },
+    {
+      "id": "s2",
+      "metin": "C. auris deri enfeksiyonu olan bir hastanın immünolojik profilinde belirgin yüksek IFN-γ düzeyleri saptanıyor. Klinisyen, IFN-γ'nın genellikle koruyucu bir sitokin olduğunu bildiğinden bu yüksekliğin faydalı olacağını düşünüyor.\n\nC. auris'e özgü IFN-γ paradoksu göz önüne alındığında bu varsayımın yanlışlığı nasıl açıklanır?",
+      "secenekler": {
+        "A": "IFN-γ, C. auris enfeksiyonunda da diğer fungal enfeksiyonlardaki gibi tamamen koruyucudur; klinisyenin varsayımı doğrudur.",
+        "B": "C. auris deri enfeksiyonlarında aşırı IFN-γ üretimi zararlı bir rol oynar; epitel bariyerine doğrudan hasar vererek mantarın derinin derin tabakalarına yayılmasına ve kronik kolonizasyona zemin hazırlar, aynı zamanda koruyucu IL-17 (Th17) yanıtlarını baskılar.",
+        "C": "IFN-γ, C. auris enfeksiyonunda hiçbir immünolojik etki göstermez, nötr bir sitokindir.",
+        "D": "IFN-γ yalnızca IL-17 yanıtını güçlendirir, epitel bariyeri üzerinde herhangi bir etkisi yoktur.",
+        "E": "Bu paradoks yalnızca C. albicans enfeksiyonlarında görülür, C. auris'te IFN-γ standart koruyucu rolünü korur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "C. auris'te IFN-γ paradoksal olarak ZARARLIDIR: epitel bariyerine hasar verip derin doku yayılımını kolaylaştırır ve koruyucu IL-17/Th17 yanıtını baskılar — genel fungal immünite prensibinin bir istisnası.",
+      "aciklama_detay": "Genellikle koruyucu olduğu düşünülen IFN-γ, C. auris deri enfeksiyonlarında zararlı bir rol oynar. Aşırı IFN-γ üretimi, epitel bariyerine doğrudan hasar vererek mantarın derinin derin tabakalarına yayılmasına ve kronik kolonizasyona zemin hazırlar. Aynı zamanda koruyucu IL-17 (Th17) yanıtlarını baskılar — IL-17/Th17 yolağı, mukokutanöz kandidiyaziste kritik bir koruyucu immün mekanizma olarak bilinir (örn. IL-17 yolağı defektleri kronik mukokutanöz kandidiyazise yatkınlık yaratır). C. auris'te IFN-γ'nın bu yolağı baskılaması, hem doğrudan doku hasarı hem de dolaylı olarak koruyucu immünitenin zayıflatılması yoluyla enfeksiyonun kronikleşmesine katkıda bulunur. Bu, 'IFN-γ her zaman fungal enfeksiyonlarda korumacıdır' şeklindeki genel varsayımın C. auris özelinde geçerli olmadığını gösteren önemli bir immünolojik istisnadır ve sınavlarda dikkat çekici bir 'paradoks' konsepti olarak sorgulanabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — C. auris'e özgü olarak IFN-γ zararlıdır; bu, genel fungal immünite kuralının bir istisnasıdır.",
+        "B": "DOGRU — Aşırı IFN-γ → epitel hasarı + derin doku yayılımı + IL-17/Th17 baskılanması = paradoksal zararlı etki.",
+        "C": "YANLIS — IFN-γ, C. auris enfeksiyonunda nötr değil, aktif olarak zararlı bir immünolojik role sahiptir.",
+        "D": "YANLIS — IFN-γ IL-17 yanıtını GÜÇLENDİRMEZ, BASKILAR; ayrıca epitel bariyerine doğrudan hasar verir.",
+        "E": "YANLIS — Bu paradoks spesifik olarak C. auris için tanımlanmıştır, C. albicans'la sınırlı değildir; tam tersine C. auris'e özgü bir bulgudur."
+      },
+      "etiketler": [
+        "IFN-γ Paradoksu",
+        "IL-17/Th17",
+        "Candida auris",
+        "İmmünoloji",
+        "Epitel Bariyeri"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Bruno et al. Nat Microbiol 2020; Kumar et al. J Immunol 2021"
+    },
+    {
+      "id": "s3",
+      "metin": "Kandidemi şüphesi olan bir hastada serum (1,3)-Beta-D-Glukan (BDG) testi isteniyor. Sonuç negatif çıkıyor ancak klinik şüphe devam ediyor ve kan kültüründe C. parapsilosis üremesi bekleniyor.\n\nBu negatif BDG sonucunun yorumlanmasında dikkat edilmesi gereken metodolojik tuzak nedir?",
+      "secenekler": {
+        "A": "BDG testi tüm Candida türlerinde eşit duyarlılığa sahiptir; negatif sonuç kandidemiyi kesin olarak dışlar.",
+        "B": "C. glabrata, C. parapsilosis ve C. auris gibi türlerde hücre duvarındaki kalın mannoprotein tabakası BDG'yi maskeleyebilir ve testin sensitivitesini düşürebilir (%51-63 seviyelerine kadar); bu nedenle negatif BDG, özellikle bu türler şüphelenildiğinde kandidemiyi güvenle dışlamaz.",
+        "C": "BDG testi yalnızca Aspergillus enfeksiyonlarında kullanılır, Candida türleri için hiçbir tanısal değeri yoktur.",
+        "D": "Negatif BDG sonucu, hastanın mutlaka bakteriyel bir enfeksiyonu olduğunu gösterir.",
+        "E": "C. parapsilosis, BDG testinde en yüksek duyarlılığı gösteren Candida türüdür, bu nedenle negatif sonuç güvenilirdir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "C. glabrata, C. parapsilosis ve C. auris'te hücre duvarı mannoprotein tabakası BDG'yi maskeler, sensitivite %51-63'e düşer. Bu türler şüphelenildiğinde negatif BDG kandidemiyi güvenle dışlamaz.",
+      "aciklama_detay": "(1,3)-Beta-D-Glukan (BDG) fungal hücre duvarı polisakkaritidir ve duyarlılığı patojene göre değişir. C. albicans'ta yüksek titrelerde salınırken, C. glabrata, C. parapsilosis ve C. auris gibi türlerde hücre duvarındaki kalın mannoprotein tabakası BDG'yi maskeleyebilir ve testin sensitivitesini düşürebilir (%51-63 seviyelerine kadar). Bu, klinik pratikte önemli bir tuzaktır: eğer klinisyen bu tür-spesifik duyarlılık farkını bilmezse, C. parapsilosis gibi bir türle enfekte bir hastada negatif BDG sonucunu yanlışlıkla 'kandidemi yok' şeklinde yorumlayabilir ve tanıyı gözden kaçırabilir. Bu nedenle klinik şüphe yüksekse (bu vakada olduğu gibi), negatif BDG tek başına kandidemiyi dışlamak için yeterli değildir; kan kültürü sonucu beklenmeli ve gerekirse diğer tanısal yöntemler (T2Candida gibi) devreye sokulmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — BDG duyarlılığı türe göre BELİRGİN FARKLILIK gösterir; tüm türlerde eşit değildir, negatif sonuç kesin dışlama sağlamaz.",
+        "B": "DOGRU — Mannoprotein maskeleme etkisi, C. glabrata/parapsilosis/auris'te BDG sensitivitesini düşürür (%51-63); negatif sonuç güvenilir dışlama sağlamaz.",
+        "C": "YANLIS — BDG, Candida dahil birçok mantar türünde (Aspergillus, Pneumocystis vb.) kullanılan geniş kapsamlı bir pan-fungal belirteçtir.",
+        "D": "YANLIS — Negatif BDG bakteriyel enfeksiyonu doğrudan göstermez; yalnızca (düşük duyarlılıkla) fungal enfeksiyon olasılığını azaltabilir.",
+        "E": "YANLIS — Tam tersine, C. parapsilosis BDG testinde DÜŞÜK duyarlılık gösteren türlerden biridir (mannoprotein maskeleme nedeniyle)."
+      },
+      "etiketler": [
+        "BDG",
+        "Beta-D-Glukan",
+        "C. parapsilosis",
+        "Mannoprotein Maskeleme",
+        "Tanı Testi Sınırlılıkları"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Karageorgopoulos et al. Clin Infect Dis 2011; Lamoth et al. Clin Infect Dis 2018"
+    },
+    {
+      "id": "s4",
+      "metin": "Uzamış nötropenik bir hastada kan kültürü ve konvansiyonel PCR testleri negatif kalmasına rağmen invaziv fungal enfeksiyon şüphesi devam ediyor. Özellikle Aspergillus-dışı bir küf (Mukorales) enfeksiyonundan şüpheleniliyor.\n\nBu klinik senaryoda konvansiyonel yöntemlerden daha yüksek tanısal değer sunabilecek yöntem hangisidir?",
+      "secenekler": {
+        "A": "Standart galaktomannan testi tekrarlanmalıdır; Mukorales enfeksiyonlarında en yüksek duyarlılığa sahip testtir.",
+        "B": "Plazma hücresiz DNA (cfDNA) temelli metagenomik yeni nesil dizileme (mNGS, örn. Karius testi); kanda dolaşan fungal DNA fragmanlarını tespit ederek, kültür ve PCR negatif kaldığında, özellikle Mukorales gibi Aspergillus-dışı küflerin saptanmasında konvansiyonel yöntemlerden daha yüksek tanısal değer sunar.",
+        "C": "T2Candida testi, Mukorales enfeksiyonlarını saptamada altın standarttır.",
+        "D": "Bu klinik senaryoda ek bir tanısal test yapılmasının hiçbir faydası yoktur, ampirik tedaviye güvenilmelidir.",
+        "E": "(1,3)-Beta-D-Glukan testi, Mukorales enfeksiyonlarında yüksek duyarlılıkla pozitif çıkar ve tanı koydurucudur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Plazma cfDNA/mNGS (Karius testi gibi), kültür/PCR negatif kalan durumlarda, özellikle Mukorales gibi Aspergillus-dışı küflerin saptanmasında konvansiyonel yöntemlerden üstün tanısal değer sunar.",
+      "aciklama_detay": "Plazma Hücresiz DNA (cfDNA) ve mNGS: Karius testi gibi plazma metagenomik yeni nesil dizileme (mNGS) platformları, kanda dolaşan fungal DNA fragmanlarını tespit eder. Geleneksel kültür ve PCR'nin negatif olduğu durumlarda, özellikle Aspergillus dışı küflerin (örn. Mukorales) saptanmasında konvansiyonel yöntemlerden daha yüksek tanısal değer sunar. Bu teknoloji, kültürde üretilmesi zor veya yavaş olan, ya da standart PCR panellerinde hedeflenmeyen nadir/atipik fungal patojenleri saptayabilme avantajına sahiptir — kan örneğinden doğrudan, kültüre gerek kalmadan geniş bir mikrobiyal DNA havuzunu tarayarak çalışır. Bu, özellikle Mukorales gibi galaktomannan ve BDG testlerinde tipik olarak NEGATİF kalan (bu belirteçleri salgılamayan) küf enfeksiyonlarının tanısında büyük klinik değer taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Galaktomannan esas olarak Aspergillus'a özgüdür; Mukorales enfeksiyonlarında GM tipik olarak NEGATİF kalır, yüksek duyarlılık göstermez.",
+        "B": "DOGRU — Plazma cfDNA/mNGS, kültür/PCR negatifken Mukorales dahil Aspergillus-dışı küfleri saptamada üstündür.",
+        "C": "YANLIS — T2Candida yalnızca Candida türlerini (5 major grup) saptar, Mukorales gibi küflerle ilgili bir kullanımı yoktur.",
+        "D": "YANLIS — Bu klinik senaryoda ileri tanısal testler (cfDNA/mNGS gibi) tam olarak faydalı olabilecek, tanıyı netleştirebilecek araçlardır.",
+        "E": "YANLIS — Mukorales takımında BDG SAPTANMAZ (metinde açıkça belirtildiği gibi); bu test Mukorales tanısında kullanışlı değildir."
+      },
+      "etiketler": [
+        "cfDNA",
+        "mNGS",
+        "Karius Testi",
+        "Mukorales",
+        "İleri Tanı Yöntemleri"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hong et al. Clin Infect Dis 2021 (Karius plasma mNGS); Armstrong et al. J Clin Microbiol 2019"
+    },
+    {
+      "id": "s5",
+      "metin": "Flukonazol dirençli bir Aspergillus fumigatus izolatının moleküler analizinde cyp51A geninde promotör bölge mutasyonu (TR34/L98H) saptanıyor. Hastanın hiç azol grubu antifungal kullanmadığı, ancak kırsal bir bölgede tarımla uğraştığı öğreniliyor.\n\nBu direnç paterninin epidemiyolojik kaynağı ve önemi nedir?",
+      "secenekler": {
+        "A": "Bu mutasyon yalnızca hastane ortamında uzun süreli azol maruziyeti sonucu gelişir, çevresel bir kaynağı olamaz.",
+        "B": "A. fumigatus'ta çevresel fungisitlerin tarımsal kullanımına bağlı olarak gelişen cyp51A promotör mutasyonları (TR34/L98H ve TR46/Y121F/T289A) global bir sağlık krizidir; hasta hiç azol kullanmamış olsa dahi çevreden (tarımsal alan) TR34/L98H taşıyan dirençli suşla enfekte/kolonize olabilir.",
+        "C": "TR34/L98H mutasyonu yalnızca laboratuvar ortamında görülen teorik bir bulgudur, klinik izolatlarda saptanmaz.",
+        "D": "Bu direnç paterni yalnızca ekinokandin sınıfı ilaçlara karşı geçerlidir, azollerle ilgisi yoktur.",
+        "E": "Tarımsal fungisit kullanımı ile insan Aspergillus enfeksiyonlarındaki azol direnci arasında hiçbir epidemiyolojik bağlantı gösterilmemiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TR34/L98H ve TR46/Y121F/T289A cyp51A promotör mutasyonları, tarımsal fungisit kullanımına bağlı ÇEVRESEL kaynaklıdır — hasta hiç azol kullanmasa dahi çevreden dirençli suşla enfekte olabilir; bu global bir kriz olarak tanımlanır.",
+      "aciklama_detay": "Azoller (hedef: Lanosterol 14-α-demetilaz / ERG11) direnç mekanizmalarında sıklıkla ERG11 mutasyonları (örn. Y132F, K143R) veya CDR1/MDR1 gibi efluks pompalarının upregülasyonu rol oynar. Ancak A. fumigatus'ta özel ve epidemiyolojik olarak önemli bir mekanizma vardır: çevresel fungisitlerin (tarımda kullanılan azol grubu fungisitler) tarımsal kullanımına bağlı olarak gelişen cyp51A promotör mutasyonları (TR34/L98H ve TR46/Y121F/T289A) global bir krizdir. Bu mutasyonlar, hastane/klinik ortamındaki azol maruziyetinden BAĞIMSIZ olarak, çevredeki (toprak, bitki artıkları) A. fumigatus popülasyonlarında tarımsal fungisit baskısı altında gelişir. Bu nedenle, hiç azol kullanmamış bir hasta bile çevreden (örn. tarımsal alanlarda solunum yoluyla) bu önceden dirençli hale gelmiş suşla enfekte veya kolonize olabilir — bu, 'de novo çevresel direnç' kavramının klinik bir örneğidir ve azol dirençli aspergillozun neden bazı azol-naif hastalarda da görülebildiğini açıklar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu spesifik mutasyon paterni (TR34/L98H) tam olarak ÇEVRESEL/tarımsal kaynaklıdır, hastane azol maruziyetinden bağımsız gelişebilir.",
+        "B": "DOGRU — TR34/L98H/TR46 mutasyonları tarımsal fungisit kullanımına bağlı çevresel kaynaklıdır, azol-naif hastalarda da görülebilir.",
+        "C": "YANLIS — Bu mutasyonlar klinik izolatlarda yaygın olarak saptanmış, gerçek ve önemli bir direnç mekanizmasıdır.",
+        "D": "YANLIS — Bu mutasyon azol hedefi (cyp51A/ERG11 promotör bölgesi) ile ilgilidir, ekinokandin direnciyle (FKS genleri) ilgisi yoktur.",
+        "E": "YANLIS — Bu bağlantı iyi belgelenmiş, tanınmış bir epidemiyolojik ilişkidir ve 'global bir kriz' olarak nitelendirilmektedir."
+      },
+      "etiketler": [
+        "cyp51A Mutasyonu",
+        "TR34/L98H",
+        "Tarımsal Fungisit",
+        "Azol Direnci",
+        "Aspergillus fumigatus"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Verweij et al. Lancet Infect Dis 2016; Chowdhary et al. PLoS Pathog 2013"
+    },
+    {
+      "id": "s6",
+      "metin": "FKS mutasyonuna bağlı ekinokandine dirençli bir Candida suşuyla enfekte olan hasta, standart ekinokandin tedavisine yanıt vermiyor.\n\nBu hastada, aynı hedef enzimi (glukan sentaz) inhibe etmesine rağmen farklı bağlanma bölgesi sayesinde etkinlik gösterebilecek yeni nesil ajan hangisidir?",
+      "secenekler": {
+        "A": "Rezafungin; klasik bir ekinokandin olduğundan FKS mutasyonlu suşlara karşı da etkisizdir, farklı bağlanma yeri yoktur.",
+        "B": "İbrexafungerp; triterpenoid sınıfı, oral formu bulunan bir ajandır. Ekinokandinlerle aynı enzimi (glukan sentaz) inhibe etse de bağlanma yeri farklıdır, bu nedenle FKS mutasyonlu ekinokandine dirençli Candida suşlarına ve C. auris'e karşı aktiftir.",
+        "C": "Olorofim; glukan sentazı hedef alır ve FKS mutasyonlu suşlara etkilidir.",
+        "D": "Fosmanogepix, FKS mutasyonlu suşlara karşı glukan sentaz üzerinden etki gösteren bir diğer ekinokandin türevidir.",
+        "E": "Oteseconazole, glukan sentaz inhibitörü olup FKS mutasyonlu suşlara özel etkinlik gösterir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İbrexafungerp, triterpenoid sınıfı oral bir ajan olup glukan sentazı FARKLI bir bağlanma bölgesinden inhibe eder — bu sayede FKS mutasyonlu ekinokandine dirençli suşlara ve C. auris'e karşı aktiftir.",
+      "aciklama_detay": "İbrexafungerp, triterpenoid sınıfı, oral formu bulunan yeni bir antifungal ajandır. Ekinokandinlerle aynı enzimi (Glukan sentaz) inhibe etse de bağlanma yeri farklıdır. Bu farklı bağlanma bölgesi, FKS1/FKS2 genlerindeki 'hot spot' mutasyonlarının (klasik ekinokandin direncinin moleküler temeli) ibrexafungerp'in etkinliğini bozmaması anlamına gelir — çünkü mutasyon klasik ekinokandin bağlanma bölgesini etkilerken, ibrexafungerp farklı bir konformasyonel etkileşimle enzimi inhibe eder. Bu nedenle ibrexafungerp, FKS mutasyonlu ekinokandine dirençli Candida suşlarına ve ayrıca doğal olarak azol/ekinokandin çoklu direnç gösterebilen C. auris'e karşı aktiftir — bu, dirençli enfeksiyonların yönetiminde önemli bir terapötik boşluğu doldurur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Rezafungin klasik bir ekinokandindir ve FKS mutasyonlarından ETKİLENİR (aynı bağlanma bölgesi); farklı bağlanma yeri özelliği ibrexafungerp'e aittir.",
+        "B": "DOGRU — İbrexafungerp farklı bağlanma bölgesiyle FKS mutasyonlu suşlara ve C. auris'e etkilidir.",
+        "C": "YANLIS — Olorofim, glukan sentazı değil, dihidroorotat dehidrogenazı (primidin sentezi) hedefler; farklı bir mekanizmadır ve mayalara/Mukorales'e etkisizdir.",
+        "D": "YANLIS — Fosmanogepix bir ekinokandin türevi değildir; Gwt1 enzimini (GPI ankor biyosentezi) hedefler, glukan sentazla ilgisi yoktur.",
+        "E": "YANLIS — Oteseconazole bir tetrazol/azol sınıfı ajandır ve ergosterol biyosentezini (glukan sentaz değil) inhibe eder."
+      },
+      "etiketler": [
+        "İbrexafungerp",
+        "FKS Mutasyonu",
+        "Glukan Sentaz",
+        "Ekinokandin Direnci",
+        "Triterpenoid"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wring et al. Antimicrob Agents Chemother 2019; Ghannoum et al. Antimicrob Agents Chemother 2020"
+    },
+    {
+      "id": "s7",
+      "metin": "Kandidemi sonrası protez kalp kapağı olan bir hastada Candida endokarditi gelişiyor.\n\nBu hastanın tedavi yönetiminde en kritik, tek başına antifungal tedaviyle telafi edilemeyecek adım ve tedavi süresi hakkında en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca uzun süreli yüksek doz antifungal tedavi yeterlidir, cerrahi girişime gerek yoktur.",
+        "B": "İnfekte kapağın cerrahi rezeksiyonu (değişimi) mutlaka gereklidir; antifungal olarak yüksek doz ekinokandin veya L-AmB ± Flusitozin ile başlanmalı, kültür negatifliği sonrası duyarlıysa yüksek doz oral flukonazole geçilerek protez kapak varlığında ÖMÜR BOYU supresif tedavi verilmelidir.",
+        "C": "Cerrahi girişim yalnızca antifungal tedaviye 6 aydan uzun yanıtsızlık durumunda düşünülmelidir.",
+        "D": "Protez kapak endokarditi tedavisi tamamlandıktan sonra (6 hafta) supresif tedaviye gerek yoktur, tedavi kesilebilir.",
+        "E": "Bu hastada tek başına oral flukonazol ile başlangıç tedavisi yeterlidir, IV tedaviye gerek yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Candida endokarditinde cerrahi rezeksiyon (kapak değişimi) ZORUNLUDUR. Protez kapak varlığında tedavi süresi ÖMÜR BOYU supresif tedaviye kadar uzayabilir (doğal kapakta 6 hafta yeterli olabilirken).",
+      "aciklama_detay": "Candida endokarditinde tedavide mutlaka infekte kapağın/cihazın veya tromboze venin cerrahi rezeksiyonu gereklidir — bu, biyofilm içindeki organizmaların antifungal penetrasyonuna dirençli olması ve embolik komplikasyon riski nedeniyle vazgeçilmez bir adımdır, yalnızca ilaç tedavisiyle telafi edilemez. Antifungal olarak yüksek doz ekinokandin (örn. kaspofungin 150 mg/gün) veya Lipozomal Amfoterisin B (L-AmB) ± Flusitozin ile başlanmalı, kültür negatifliğinden sonra duyarlı ise yüksek doz oral flukonazole geçilerek toplam 6 hafta VEYA protez kapak varsa ÖMÜR BOYU supresif tedavi verilmelidir. Protez kapaklı hastalarda, yeniden enfeksiyon riski ve kalıcı yabancı cisim varlığı nedeniyle standart 6 haftalık tedavi süresi yeterli değildir; bu hastalar kronik/ömür boyu düşük doz oral azol supresyonuna alınmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Cerrahi rezeksiyon MUTLAKA gereklidir; yalnızca antifungal tedavi biyofilm/protez varlığında yetersiz kalır.",
+        "B": "DOGRU — Cerrahi rezeksiyon zorunlu + protez kapakta ömür boyu supresif tedavi.",
+        "C": "YANLIS — Cerrahi, tedaviye yanıtsızlık beklenmeden, tanı konulduğunda erken planlanmalıdır; 6 ay bekleme yaklaşımı yanlış ve tehlikelidir.",
+        "D": "YANLIS — Protez kapak varlığında tedavi 6 haftayla sınırlı değildir; ÖMÜR BOYU supresif tedavi gerekir.",
+        "E": "YANLIS — Başlangıç tedavisi IV (yüksek doz ekinokandin veya L-AmB ± Flusitozin) olmalıdır; oral flukonazole geçiş yalnızca kültür negatifliği ve duyarlılık sonrası, stabilizasyon sağlandıktan sonra yapılır."
+      },
+      "etiketler": [
+        "Candida Endokarditi",
+        "Protez Kapak",
+        "Cerrahi Rezeksiyon",
+        "Supresif Tedavi",
+        "Kaspofungin"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pappas et al. Clin Infect Dis 2016 (IDSA Candidiasis Guideline)"
+    },
+    {
+      "id": "s8",
+      "metin": "Candida albicans menenjiti tanılı bir hastada tedavi planlanırken, ekip ilk basamak olarak yüksek doz IV kaspofungin (ekinokandin) monoterapisi başlamayı öneriyor.\n\nBu tedavi yaklaşımının neden uygun olmadığı ve doğru ilk basamak rejim hangisidir?",
+      "secenekler": {
+        "A": "Ekinokandinler Candida menenjitinde ilk seçenektir, bu yaklaşım tamamen doğrudur.",
+        "B": "Ekinokandinlerin makromoleküler yapıları nedeniyle BOS penetrasyonları zayıftır ve Candida menenjitinde KULLANILMAMALIDIR; primer tedavi L-AmB (3-5 mg/kg) + Flusitozin (25 mg/kg qid) kombinasyonu ile yapılmalı, ardından stabil hastalarda flukonazole geçilmelidir.",
+        "C": "Bu hastada tek başına yüksek doz oral flukonazol ile başlangıç tedavisi yeterlidir.",
+        "D": "Ekinokandinlerin BOS penetrasyonu mükemmeldir, ancak Candida menenjitinde etkisiz olmalarının nedeni farklı bir mekanizmadır.",
+        "E": "Vorikonazol, Candida menenjitinde altın standart ilk basamak tedavidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ekinokandinler makromoleküler yapıları nedeniyle BOS'a zayıf penetre olur ve Candida menenjitinde kullanılmamalıdır. Doğru rejim: L-AmB (3-5 mg/kg) + Flusitozin (25 mg/kg qid), stabilizasyon sonrası flukonazole geçiş.",
+      "aciklama_detay": "Candida menenjitinde, ekinokandinlerin makromoleküler yapıları nedeniyle BOS penetrasyonları zayıftır ve kullanılmamalıdır. Ekinokandinler büyük, lipofilik olmayan moleküllerdir ve kan-beyin bariyerini/kan-BOS bariyerini etkin şekilde geçemezler; bu nedenle sistemik olarak etkili olsalar da SSS enfeksiyonlarında terapötik BOS konsantrasyonlarına ulaşamazlar. Primer tedavi L-AmB (3-5 mg/kg) + Flusitozin (25 mg/kg qid) kombinasyonu ile yapılmalı, ardından stabil hastalarda flukonazole geçilmelidir. Bu kombinasyon (Amfoterisin B'nin fungisidal etkisi + Flusitozin'in BOS'a iyi penetrasyonu ve sinerjistik etkisi), SSS Candida enfeksiyonlarının standart indüksiyon tedavisidir — bu prensip, kriptokoksik menenjitteki klasik L-AmB+Flusitozin indüksiyonuna da benzerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ekinokandinler tam tersine BOS penetrasyonu zayıf olduğundan Candida menenjitinde KULLANILMAMALIDIR.",
+        "B": "DOGRU — Ekinokandin BOS penetrasyonu zayıf → kullanılmaz; doğru rejim L-AmB+Flusitozin, sonra flukonazol.",
+        "C": "YANLIS — Başlangıç tedavisi tek başına flukonazol değil, L-AmB+Flusitozin kombinasyon indüksiyonudur; flukonazole geçiş yalnızca stabilizasyon SONRASI yapılır.",
+        "D": "YANLIS — Ekinokandinlerin BOS penetrasyonu ZAYIFTIR (mükemmel değil); etkisizliklerinin nedeni tam olarak bu zayıf penetrasyondur.",
+        "E": "YANLIS — Altın standart ilk basamak L-AmB+Flusitozin kombinasyonudur, vorikonazol değil (vorikonazol Candida menenjitinde birincil tedavi olarak tanımlanmamıştır)."
+      },
+      "etiketler": [
+        "Candida Menenjiti",
+        "Ekinokandin BOS Penetrasyonu",
+        "L-AmB",
+        "Flusitozin",
+        "SSS Fungal Enfeksiyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pappas et al. Clin Infect Dis 2016 (IDSA Candidiasis Guideline)"
+    },
+    {
+      "id": "s9",
+      "metin": "Şiddetli nötropenik bir hastada, ateş ve akut lösemi tedavisi sırasında derinin çeşitli bölgelerinde çok sayıda eritematöz, ağrılı, santrali nekrotik papül ve nodüller gelişiyor. Kan kültüründe bir küf üremesi tespit ediliyor — bu, klinisyenler için beklenmedik bir bulgu çünkü çoğu küf türü rutin kan kültüründe üremez.\n\nBu klinik-mikrobiyolojik tablo hangi tanıyı düşündürür ve tedavi yaklaşımı nasıl olmalıdır?",
+      "secenekler": {
+        "A": "İnvaziv aspergilloz; Aspergillus türleri kan kültüründe sıklıkla ürer ve tedavide ekinokandin monoterapisi yeterlidir.",
+        "B": "İnvaziv fusariosis; Fusarium türleri in vivo sporülasyon yapabildikleri için kan kültürlerinde üreyebilir (çoğu küften farklı olarak). Karakteristik anjiyoinvaziv deri lezyonlarıyla uyumludur. Primer tedavide yüksek doz L-AmB (5 mg/kg) önerilir; ekinokandinlerin bu mantarlara karşı etkinliği YOKTUR.",
+        "C": "Mukormikoz; bu hastalık grubunda kan kültürü pozitifliği tipiktir ve tedavide ekinokandin ilk seçenektir.",
+        "D": "Kandidemi ile ilişkili deri lezyonları; tedavi flukonazol monoterapisi ile yapılmalıdır.",
+        "E": "Bu bulgular bakteriyel ektima gangrenozumla uyumludur, antifungal tedaviye gerek yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Fusarium, anjiyoinvaziv, santrali nekrotik deri lezyonları yapar VE in vivo sporülasyon yeteneği sayesinde (çoğu küften farklı olarak) kan kültüründe üreyebilir. Primer tedavi yüksek doz L-AmB; ekinokandinler ETKİSİZDİR.",
+      "aciklama_detay": "İnvaziv Fusariosis, özellikle ciddi nötropenik hastalarda veya T hücre yetmezliğinde, invaziv anjiyoinvazyon yapan, deride çok sayıda eritematöz, ağrılı ve santrali nekrotik papül/nodüller ile karakterize ölümcül bir enfeksiyondur. Fusarium türleri in vivo sporülasyon yapabildikleri için kan kültürlerinde üreyebilirler — bu, Fusarium'u diğer çoğu invaziv küf enfeksiyonundan (örn. Aspergillus, Mukorales, ki bunlar tipik olarak kan kültüründe ÜREMEZ) ayıran önemli ve sınavlarda sıkça vurgulanan bir mikrobiyolojik özelliktir. Primer tedavide L-AmB (5 mg/kg) yüksek dozda önerilir. Çok ağır vakalarda veya monoterapiye yanıtsızlıkta L-AmB + Vorikonazol kombinasyonuna başvurulur. Cerrahi debridman ve konak immünitesinin sağlanması (G-CSF/GM-CSF, immünsüpresyonun azaltılması) hayatta kalım için kritiktir. Ekinokandinlerin bu mantarlara karşı etkinliği yoktur — bu nedenle ekinokandin monoterapisi bu tabloda kesinlikle yanlış bir seçimdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Aspergillus türleri TİPİK OLARAK kan kültüründe ÜREMEZ; bu bulgu Fusarium'a özgü bir ayırıcı özelliktir. Ayrıca ekinokandin monoterapisi Aspergillus'ta da tek başına yeterli değildir.",
+        "B": "DOGRU — Fusarium: anjiyoinvaziv nekrotik deri lezyonları + kan kültüründe üreme (sporülasyon) + L-AmB tedavisi, ekinokandin etkisiz.",
+        "C": "YANLIS — Mukormikoz'da da kan kültürü pozitifliği TİPİK DEĞİLDİR; ayrıca ekinokandinler Mukorales'e de etkisizdir, ilk seçenek olamaz.",
+        "D": "YANLIS — Bu klinik tablo (anjiyoinvaziv nekrotik lezyonlar + küf üremesi) kandidemiyle değil, invaziv küf enfeksiyonuyla (Fusarium) uyumludur.",
+        "E": "YANLIS — Bu bulgular ciddi bir fırsatçı fungal enfeksiyonla (Fusarium) uyumludur ve acil antifungal tedavi gerektirir, bakteriyel bir tanı ile açıklanamaz."
+      },
+      "etiketler": [
+        "İnvaziv Fusariosis",
+        "Anjiyoinvazyon",
+        "Kan Kültüründe Üreme",
+        "L-AmB",
+        "Nötropenik Hasta"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Nucci & Anaissie Clin Microbiol Rev 2007; Pfaller & Diekema Clin Infect Dis 2007"
+    },
+    {
+      "id": "s10",
+      "metin": "Akciğer transplantasyonu geçiren bir hasta post-operatif dönemde antifungal profilaksi açısından değerlendiriliyor.\n\nAkciğer transplant alıcılarının neden İFE açısından en yüksek riskli SOT grubunu oluşturduğu ve standart profilaksi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Akciğer transplant alıcıları diğer SOT gruplarıyla aynı İFE riskini taşır, özel bir profilaksi stratejisi gerekmez.",
+        "B": "Akciğer transplant alıcıları, hava yollarının dış ortama açık olması ve silier disfonksiyon nedeniyle İFE açısından en yüksek riskli gruptur (İFE sıklığı %3-42); kistik fibrozis, CMV enfeksiyonu veya hava yolu stentleri riski daha da artırır. Bu hastalarda vorikonazol veya izavukonazol ile üniversal veya hedeflenmiş küf profilaksisi standart uygulamadır.",
+        "C": "Akciğer transplant alıcılarında profilaksi için flukonazol yeterlidir, küf-etkin ajanlara gerek yoktur.",
+        "D": "İFE riski akciğer transplantında %1'in altındadır, rutin profilaksi maliyet-etkin değildir.",
+        "E": "Kistik fibrozis öyküsü, akciğer transplant sonrası İFE riskini AZALTAN koruyucu bir faktördür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Akciğer transplant alıcıları hava yollarının dış ortama açık olması + silier disfonksiyon nedeniyle en yüksek riskli SOT grubudur (%3-42). Vorikonazol/izavukonazol ile küf-etkin profilaksi standarttır.",
+      "aciklama_detay": "Solid Organ Transplantasyonu (SOT) alıcıları arasında özellikle akciğer transplant alıcıları, hava yollarının dış ortama açık olması ve silier disfonksiyon nedeniyle İFE açısından en yüksek riskli gruptur (İFE sıklığı %3-42). Bu yüksek risk, akciğer greftinin sürekli olarak inhale edilen fungal sporlara (özellikle Aspergillus) doğrudan maruz kalması ve nakil sonrası bozulmuş mukosiliyer klirens mekanizmasının bu sporların etkin şekilde temizlenmesini engellemesinden kaynaklanır — diğer solid organ transplantlarında (böbrek, karaciğer gibi) greft dokusu doğrudan çevresel patojenlere bu şekilde maruz kalmaz. Kistik fibrozis, CMV enfeksiyonu veya hava yolu stentleri bu riski daha da artırır (kistik fibrozis hastalarında zaten bozulmuş mukosiliyer klirens ve kronik hava yolu kolonizasyonu mevcuttur). Bu nedenle akciğer transplant alıcılarında vorikonazol veya izavukonazol ile üniversal (tüm hastalara) veya hedeflenmiş (yüksek riskli alt gruplara) küf profilaksisi standart uygulamadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Akciğer transplant alıcıları diğer SOT gruplarından (böbrek, karaciğer vb.) belirgin şekilde DAHA YÜKSEK İFE riski taşır; özel profilaksi stratejisi gereklidir.",
+        "B": "DOGRU — Hava yolu açıklığı + silier disfonksiyon → en yüksek risk (%3-42); vorikonazol/izavukonazol standart profilaksi.",
+        "C": "YANLIS — Flukonazol küf-etkin DEĞİLDİR (yalnızca maya/Candida'ya etkilidir); akciğer transplantında asıl risk küf enfeksiyonlarıdır (Aspergillus), bu nedenle küf-etkin ajanlar (vorikonazol/izavukonazol) gereklidir.",
+        "D": "YANLIS — Bildirilen İFE sıklığı %3-42 gibi belirgin yüksek bir aralıktadır, %1'in altında değildir; rutin profilaksi standart ve gerekçelidir.",
+        "E": "YANLIS — Kistik fibrozis öyküsü tam tersine İFE riskini ARTIRAN bir faktördür, koruyucu değildir."
+      },
+      "etiketler": [
+        "Akciğer Transplantasyonu",
+        "SOT Profilaksisi",
+        "Vorikonazol",
+        "İzavukonazol",
+        "İFE Risk Faktörleri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Husain & Camargo Am J Transplant 2019; Pappas et al. Clin Infect Dis 2016"
+    }
+  ]
+}

@@ -33,12 +33,9 @@ interface KonuVerisi {
 type NewestTopicRaw = NewestTopic & { mtimeMs: number };
 
 // İçerik dosyası henüz eklenmemiş, ilerleyen dönemde açılacak branşlar
-const LOCKED_BRANCHES: LockedBranch[] = [
-  { id: 'tibbi_onkoloji', baslik: 'Tıbbi Onkoloji' },
-  { id: 'enfeksiyon', baslik: 'Enfeksiyon Hastalıkları' },
-];
+const LOCKED_BRANCHES: LockedBranch[] = [];
 
-const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji'];
+const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji', 'onkoloji', 'enfeksiyon'];
 
 function bransYukle(id: string): BransVerisi | null {
   try {
