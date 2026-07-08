@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "id": "adpkd",
+    "branch": "nefroloji",
+    "baslik": "Otozomal Dominant Polikistik Böbrek Hastalığı (ADPKD)",
+    "altbaslik": "PKD1/PKD2 genetiği, siliyer disfonksiyon ve cAMP/mTOR ekseni, Pei-Ravine tanı kriterleri, Mayo Görüntüleme Sınıflaması ve PROPKD skoru, Tolvaptan ve ekstrarenal komplikasyon yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "ADPKD, dünya çapında en sık görülen monogenik geçişli kronik böbrek hastalığıdır; prevalansı canlı doğumlarda ~1:400 ile 1:1000 arasındadır. Genetik geçişli böbrek hastalıkları arasında SDBY'ye gidişin en sık nedeni olup, tüm SDBY vakalarının **%5-10'unu** oluşturur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Genetik Heterojenite — PKD1 vs PKD2",
+      "kolonlar": [
+        "Gen",
+        "Sıklık / Protein",
+        "Fenotip"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "PKD1 (16p13.3) ★",
+            "Vakaların %78-85'i; Polikistin-1 (PC1)",
+            "Ağır fenotip; özellikle truncating (fonksiyon tamamen bozan) mutasyonlarda SDBY yaşı ortalama 55-58"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "PKD2 (4q21)",
+            "Vakaların %10-15'i; Polikistin-2 (PC2)",
+            "Daha hafif fenotip; SDBY yaşı genellikle 70'li yaşların ortası"
+          ]
+        },
+        {
+          "hucreler": [
+            "Minör Genler (NGS ile tanımlı)",
+            "GANAB, DNAJB11, ALG5, ALG8, ALG9, IFT140, NEK8",
+            "Atipik fenotip katkısı (yalnız karaciğer tutulumu, geç başlangıç) — klinik spektrumu genişletir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Siliyer Disfonksiyon ve İki Vuruş (Two-Hit) Hipotezi",
+      "satirlar": [
+        {
+          "metin": "PC1 ve PC2 proteinleri, tübül epitel hücrelerinin apikal yüzeyindeki primer silyumlarda reseptör-kanal kompleksi oluşturarak hücre içi Ca2+ homeostazını düzenleyen bir mekanosensör görevi görür. Otozomal dominant geçişe rağmen, kistogenezin BAŞLAMASI için normal (wild-type) alelin de somatik bir mutasyona uğraması gerekir — 'iki vuruş (two-hit)' hipotezi."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Kistogenezin Moleküler Motoru — cAMP ve mTOR",
+      "kolonlar": [
+        "Yolak",
+        "Mekanizma",
+        "Sonuç"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "cAMP-PKA ★",
+            "Polikistin işlev kaybı → Ca2+↓ → adenilat siklaz aktivasyonu → hücre içi cAMP masif artış → PKA aktivasyonu → B-Raf/ERK",
+            "Kistik epitelde kontrolsüz PROLİFERASYON"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "CFTR Aktivasyonu ★",
+            "Artmış cAMP, apikal membrandaki CFTR klorür kanallarını aktive eder",
+            "Kist lümenine Cl- + sekonder ozmotik sıvı sekresyonu → kistler sıvıyla dolup büyür"
+          ]
+        },
+        {
+          "hucreler": [
+            "mTOR Hiperaktivasyonu",
+            "Polikistin-1 disfonksiyonu mTOR kompleksini hiperaktive eder",
+            "Kist epitelinde hiperplazi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Metabolik Reprogramlama",
+            "ADPKD epitel hücreleri mitokondriyal oksidatif fosforilasyon yerine aerobik glikolizi (Warburg etkisi) tercih eder",
+            "Kanser hücrelerine benzer metabolik profil"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Renal Manifestasyonlar",
+      "kolonlar": [
+        "Bulgu",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Hipertansiyon ★",
+            "%70-80'inde, GFR HENÜZ NORMALKEN, genellikle 30'lu yaşlarda ortaya çıkar. Kistlerin intrarenal damarlara basısı → lokal iskemi → RAAS hiperaktivasyonu; mortalitenin en önemli belirleyicisi olan KV olayların zeminini hazırlar"
+          ]
+        },
+        {
+          "hucreler": [
+            "İdrar Konsantrasyon Defekti",
+            "Poliüri/noktüri en erken fonksiyonel bulgulardandır; artmış AVP aktivitesine böbreğin direnç/defekti ile ilişkilidir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ağrı, Kanama, Hematüri",
+            "En sık başvuru semptomu; kist içi kanama/rüptür/gerilmeye bağlı. Makroskopik hematüri atakları sık ve genellikle kendini sınırlar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Nefrolitiyazis ★",
+            "%20-30'unda görülür. İdrar stazı + düşük idrar sitratı nedeniyle EN SIK ÜRİK ASİT taşları (genel popülasyondan farklı!), ikinci sıklıkta kalsiyum oksalat"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Kist Enfeksiyonları ★",
+            "Dirençli ateş + lokalize yan ağrısı ile gelen spesifik/zorlu tablo. Kist içine LİPİD ÇÖZÜNÜRLÜĞÜ YÜKSEK antibiyotikler (florokinolonlar, TMP-SMX) penetre olabilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ekstrarenal Sistemik Manifestasyonlar",
+      "kolonlar": [
+        "Bulgu",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Polikistik Karaciğer Hastalığı (PLD) ★",
+            "En sık ekstrarenal bulgu (>%80). Kadınlarda çok daha masif — kist büyümesi ÖSTROJEN tarafından hızlandırılır (OKS/gebelik sonrası semptomatik hepatomegali). KCFT devasa boyutta dahi genellikle NORMALDİR"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "İntrakraniyal Anevrizma (İKA) ★",
+            "En mortal komplikasyon. Genel popülasyona göre risk 4-5 kat (prevalans %9-12). Aile öyküsünde İKA/SAK varsa risk %25'e çıkar — bu grupta MRA taraması ENDİKE"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kardiyovasküler",
+            "Kapak hastalıkları (en sık Mitral Kapak Prolapsusu), sol ventrikül hipertrofisi, aort kökü dilatasyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Gastrointestinal / Diğer",
+            "Batın içi basınç artışına bağlı abdominal duvar fıtıkları (inguinal, insizyonel, umblikal) ve kolon divertikülleri genel popülasyondan çok daha sık; erkeklerde %40-60 seminal vezikül kisti"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı — Pei-Ravine Kriterleri (Pozitif Aile Öyküsü Varlığında)",
+      "kolonlar": [
+        "Yaş Grubu",
+        "Kist Sayısı Kriteri"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "15-39 yaş",
+            "İki böbrekte toplam ≥3 kist (tek veya çift taraflı) — tanıyı doğrular"
+          ]
+        },
+        {
+          "hucreler": [
+            "40-59 yaş",
+            "Her iki böbrekte ≥2'şer kist (toplam ≥4) — tanıyı koydurur"
+          ]
+        },
+        {
+          "hucreler": [
+            "≥60 yaş",
+            "Her iki böbrekte ≥4'er kist"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Dışlama Kriteri ★",
+            "Aile öyküsü olup 40 yaş üzerinde USG'de HİÇ kist izlenmemesi — %100 negatif prediktif değer, hastalığı dışlar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Aile Öyküsü Olmayanlarda Tanı: Klasik Pei-Ravine kriterleri uygulanamaz. Her böbrekte ≥10 kist + eşlik eden hepatomegali/karaciğer kistleri varsa ADPKD'den kuvvetle şüphelenilir; CT/MRG veya genetik test gerekebilir. Genetik test endikasyonları: equivokal görüntüleme, aile öyküsü yokluğu, atipik prezantasyon (belirgin asimetri, kist yüküyle uyumsuz hızlı böbrek yetmezliği), de-novo mutasyon şüphesi, 30 yaş altı canlı donör adayı."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Prognostik Risk Stratifikasyonu",
+      "kolonlar": [
+        "Araç",
+        "Bileşenler",
+        "Yorum"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Mayo Imaging Classification (MIC) ★",
+            "Yaş + boy + MR/CT ile hesaplanan Toplam Böbrek Hacmi (htTKV) → 1A-1E sınıfları",
+            "1A-1B: yavaş ilerleyen, düşük SDBY riski. 1C-1D-1E: hızlı progresyon (rapid progressor) — Tolvaptan endikasyon grubu"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "PROPKD Skoru ★",
+            "Erkek cinsiyet (1p), ≤35 yaşta HT (2p), ≤35 yaşta ilk ürolojik olay (2p), PKD2 (0p), PKD1 non-truncating (2p), PKD1 truncating (4p) — toplam 0-9",
+            ">6 skor: 60 yaş öncesi SDBY'yi yüksek duyarlılıkla öngörür (yüksek risk)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "GFR düşüşü progresyonu saptamak için GEÇ KALAN bir indikatördür (yıllarca hiperfiltrasyonla korunabilir) — bu yüzden htTKV/MIC ve PROPKD gibi erken risk araçları önemlidir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Konservatif Yönetim",
+      "kolonlar": [
+        "Önlem",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Kan Basıncı Kontrolü ★",
+            "HALT-PKD: <50 yaş + eGFR>60'da agresif KB kontrolü (<110/75 mmHg) htTKV artışını yavaşlatır; ≥50 yaşta hedef ≤120/80 mmHg. Birinci basamak ACEi VEYA ARB (kombinasyon ÖNERİLMEZ)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sıvı ve Sodyum Alımı ★",
+            "Günde >2.5-3 L su (idrar ozmolalitesi <280 mOsm/kg hedefiyle, AVP baskısı için) — GFR/serum Na izin verdikçe. Sodyum kısıtlaması (<2 g/gün Na = <5 g tuz) kritik; yüksek sodyum kist büyümesini TETİKLER"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kilo Kontrolü",
+            "Aşırı kilo bağımsız bir progresyon risk faktörüdür"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Hastalık Modifiye Edici Tedavi — Tolvaptan",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Mekanizma",
+            "Arjinin-Vazopressin V2 reseptör (V2R) antagonisti; toplayıcı kanal/distal tübülde cAMP'yi baskılayarak PKA aracılı proliferasyonu ve CFTR üzerinden sıvı sekresyonunu bloke eder"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Kanıt (TEMPO 3:4, REPRISE) ★",
+            "Plaseboya kıyasla TKV artış hızını neredeyse yarı yarıya düşürür ve eGFR kaybını yavaşlatır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Endikasyon",
+            "Hızlı progresyon (Mayo MIC 1C/1D/1E), eGFR ≥25 mL/dk/1.73m² (sıklıkla ≤55 yaş) erişkinler"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yan Etki / Takip ★",
+            "Akuaretik etki: masif poliüri, noktüri, polidipsi (en sık). En sınırlayıcı risk: İDİOSENKRAZİK HEPATOTOKSİSİTE — REMS protokolü gereği transaminazlar İLK 18 AY BOYUNCA HER AY kontrol edilmelidir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Somatostatin Analogları (Oktreotid/Lanreotid) — Sınırlı Rol: cAMP sentezini inhibe ederler. ALADIN ve DIPAK 1 çalışmaları, TKV ve özellikle Polikistik Karaciğer Hacmini (TLV) durdurduğunu gösterse de UZUN VADELİ eGFR düşüşünü İYİLEŞTİRMEDİKLERİ tespit edilmiştir — böbrek progresyonu için RUTİN ÖNERİLMEZ. ADPLD'de veya devasa karaciğer kist kütlesine bağlı ağır mekanik semptomlarda seçilmiş cerrahi (kist fenestrasyonu/rezeksiyon) ile birlikte kullanılabilir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Diyaliz ve Transplantasyon",
+      "satirlar": [
+        {
+          "metin": "Ciddi kist boyutlarına bağlı fıtıklar/karın içi basınç periton diyalizi için görece zorluk oluştursa da hem HD hem PD uygulanabilir. **Transplantasyon her iki modelden de üstündür ve altın standarttır.** Dev boyutlu kistik yerli böbreklerin çıkarılması (nefrektomi), ancak greft için anatomik alan kalmaması veya yineleyen dirençli enfeksiyon/kanama varlığında uygulanmalıdır — RUTİN önerilmez."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — ADPKD 8 Altın Kural: (1) PKD1 (%78-85, ağır, SDBY~55-58y) vs PKD2 (%10-15, hafif, SDBY~70ler). (2) Kistogenez: Ca2+↓→cAMP↑→PKA/ERK proliferasyon + CFTR sıvı sekresyonu + mTOR hiperaktivasyonu. (3) HT genellikle GFR normalken, 30'lu yaşlarda başlar — RAAS aracılı. (4) ADPKD'de en sık taş tipi ÜRİK ASİT'tir (genel popülasyondan farklı!). (5) PLD kadınlarda östrojenle hızlanır, KCFT genelde normal kalır. (6) Aile öyküsünde İKA/SAK varsa MRA taraması endike (%25 risk). (7) Tolvaptan (V2R antagonisti) hızlı progresörlerde (MIC 1C-1E) endike; hepatotoksisite riski nedeniyle ilk 18 ay aylık transaminaz takibi şart. (8) Somatostatin analogları TKV/TLV'yi durdurur ama eGFR'yi korumaz — rutin önerilmez."
+    }
+  ]
+}

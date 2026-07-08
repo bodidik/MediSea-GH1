@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "id": "primer-skuamoz-hucreli-karsinom",
+    "branch": "gastroenteroloji",
+    "baslik": "Karaciğerin Primer Skuamöz Hücreli Karsinomu (PSCCL)",
+    "altbaslik": "Skuamöz metaplazi-neoplazi sekansı, AFP-negatif atipik kistik/solid kitle, P40/P63/CK5-6 immünprofili ve dışlama tanısı esasları",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ",
+      "NADİR"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "Karaciğerin primer skuamöz hücreli karsinomu (PSCCL), fizyolojik şartlarda karaciğer dokusunda skuamöz epitel bulunmaması nedeniyle **olağanüstü nadir** görülen, agresif bir malignitedir; tüm primer karaciğer kanserlerinin yalnızca ~%0.2'sini oluşturur. Literatürde 1970'lerden bu yana bildirilen vaka sayısı yaklaşık 30-50 civarındadır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Dışlama Tanısı Esası: Karaciğerde saptanan skuamöz hücreli tümörlerin büyük çoğunluğu akciğer, baş-boyun, özofagus veya GİS gibi primer odaklardan kaynaklanan METASTAZLARDIR. PSCCL tanısı ancak detaylı klinik/radyolojik dışlama (özellikle PET-BT ile ekstrahepatik primer arama) sonucunda konulabilir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Etiyoloji ve Patogenez",
+      "satirlar": [
+        {
+          "metin": "Kesin etiyoloji aydınlatılamamış olsa da, malignitenin genellikle **kronik inflamatuar süreçler** zemininde geliştiği kabul edilir. Eşlik eden patolojiler: benign non-parazitik karaciğer kistleri, intrahepatik safra yolu taşları (hepatolitiazis), hepatik teratomlar, siliyer hepatik foregut kistleri, **Caroli hastalığı**."
+        },
+        {
+          "metin": "**Temel patogenetik mekanizma:** Konjenital kistlerin/safra kanallarının enfeksiyon, taş veya kronik irritasyona maruz kalması → glandüler (biliyer) epitelin sekonder **skuamöz metaplaziye** uğraması → metaplastik dokunun zamanla neoplastik transformasyon göstererek skuamöz karsinoma ilerlemesi. Alternatif hipotezler: pluripotent kök hücrelerin malign skuamöz hücrelere dönüşümü veya adenokarsinom hücrelerinin skuamöz diferansiyasyonu."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik ve Laboratuvar Bulguları",
+      "kolonlar": [
+        "Bulgu",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Klinik Prezentasyon",
+            "Spesifik değil: sağ üst kadran (künt) ağrı, kilo kaybı, ateş, iştahsızlık, dispepsi, sarılık; muayenede hassasiyet ve palpabl kitle"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "AFP ★",
+            "HCC'de tipik olarak yüksek olan alfa-fetoprotein, PSCCL'de ÇOĞUNLUKLA NORMAL sınırlardadır — ayırıcı tanıda kritik ipucu"
+          ]
+        },
+        {
+          "hucreler": [
+            "KCFT",
+            "AST/ALT/bilirubin/ALP/GGT'de kitle etkisi veya inflamasyona bağlı hafif-orta yükseklik olabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Diğer Belirteçler",
+            "Spesifik bir biyobelirteç tanımlanmamıştır; bazı olgularda CEA, CA19-9 ve SCC (Skuamöz Hücreli Karsinom) antijeni yükselebilir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Paraneoplastik Bulgular ★",
+            "Tümörün PTHrP ve IL-6 salgılamasına bağlı olarak lökositoz ve hiperkalsemi tabloları ile prezente olabilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Radyolojik Görüntüleme",
+      "kolonlar": [
+        "Yöntem",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "USG",
+            "Düzensiz sınırlı, heterojen ekojenite, kistik+solid komponentleri bir arada barındıran hipoekoik kitle"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "BT / MRG",
+            "Sıklıkla santral nekroz/kistik dejenerasyon içeren, sınırları belirsiz düşük dansiteli lezyon. Dinamik seride arteriyel fazda periferik (rim) düzensiz/hafif tutulum, portal venöz/geç fazda uzamış kontrastlanma (**iCCA'ya benzer patern**). Hava-sıvı seviyeleri, kalsifikasyon, komşu safra yolu dilatasyonu görülebilir"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PET-BT ★",
+            "Primer tümörün karaciğer dışı bir organdan (akciğer, baş-boyun vb.) kaynaklanmadığını dışlamak ve ekstrahepatik metastaz/LAP tutulumunu değerlendirmek için BÜYÜK ÖNEM taşır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Histopatoloji",
+      "satirlar": [
+        {
+          "metin": "Atipik, nükleus/sitoplazma oranı artmış skuamöz hücrelerin yuvalar (nestler) veya tabakalar halinde büyümesi, belirgin interselüler köprüleşmeler, parakeratoz ve **keratin incileri (keratin pearls)** varlığı skuamöz diferansiyasyonu doğrular."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İmmünhistokimya (İHK) Profili",
+      "kolonlar": [
+        "Belirteç",
+        "Sonuç",
+        "Anlamı"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "P40, P63, CK5/6 ★",
+            "GÜÇLÜ POZİTİF",
+            "Skuamöz epitel kökenini doğrular"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "CK19, CK7",
+            "Sıklıkla POZİTİF",
+            "Biliyer epitel kökenini (metaplazi zemini) destekler"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "HepPar-1, Arginaz-1 ★",
+            "NEGATİF",
+            "HCC'yi EKARTE ETTİRİR"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "TTF-1 ★",
+            "NEGATİF",
+            "Akciğer veya tiroid kökenli METASTAZI DIŞLAR"
+          ]
+        },
+        {
+          "hucreler": [
+            "PD-L1",
+            "Olguların bir kısmında araştırılır",
+            "İmmün kontrol noktası inhibitörüne yanıtı öngörebilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Yönetimi",
+      "kolonlar": [
+        "Yaklaşım",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Cerrahi Rezeksiyon ★",
+            "Ekstrahepatik metastazı olmayan + karaciğer rezervi uygun hastalarda ANA TEDAVİ SEÇENEĞİ. Rezeksiyon uygulananlar palyatif tedaviye kıyasla anlamlı daha uzun yaşar (medyan sağkalım 17 ay vs 5 ay)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sistemik/Lokal Tedaviler",
+            "İnoperabl vakalarda veya adjuvan olarak: radyoterapi, sistemik kemoterapi (Cisplatin + 5-Fluorourasil kombinasyonları), TACE veya alkol enjeksiyonu"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "İmmünoterapi ★",
+            "MSI-H (mikrosatellit instabilite-yüksek) veya yüksek TMB'li (tümör mutasyon yükü) vakalarda PD-1 inhibitörleri (örn. Pembrolizumab) ile umut verici yanıtlar bildirilmiştir — kemoradyoterapiye dirençli olgularda yeni bir fırsat"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Prognoz: Klinik gidişat son derece agresif ve prognoz kötüdür. Cerrahi ve kombine tedavilere rağmen literatürdeki sağkalım genel olarak 1 yılın altında (medyan 5-7.5 ay) kalmaktadır. Kist zemininde gelişen tümörlerin, safra yolu taşı kaynaklı olanlara göre daha kötü prognozlu olduğu düşünülmektedir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — PSCCL 6 Altın Kural: (1) Karaciğerde skuamöz tümör saptanınca ÖNCE metastaz (akciğer/baş-boyun/özofagus/GİS) dışlanmalı — PET-BT esastır. (2) AFP genellikle NORMAL — HCC'den ayıran kritik laboratuvar bulgusu. (3) Patogenez: kronik kist/taş irritasyonu → biliyer epitelde skuamöz metaplazi → neoplastik transformasyon (Caroli hastalığı, hepatolitiazis eşlik edebilir). (4) İHK: P40/P63/CK5-6 POZİTİF + HepPar-1/Arginaz-1/TTF-1 NEGATİF = tanıyı doğrular ve HCC/metastazı dışlar. (5) Tek küratif şans cerrahi rezeksiyon (medyan sağkalım 17 ay vs palyatifte 5 ay). (6) MSI-H/yüksek TMB varlığında pembrolizumab gibi PD-1 inhibitörleri denenebilir."
+    }
+  ]
+}

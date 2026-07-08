@@ -57,6 +57,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "kalitsal-kistik",
+      "baslik": "Kalıtsal ve Kistik Böbrek Hastalıkları",
+      "aciklama": "Polikistik böbrek hastalığı ve genetik nefropatiler",
+      "emoji": "🧬",
+      "konular": [
+        {
+          "id": "adpkd",
+          "baslik": "Otozomal Dominant Polikistik Böbrek Hastalığı (ADPKD)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,308 @@
+{
+  "id": "quiz-nefro-adpkd-001",
+  "baslik": "ADPKD — Soru Seti 1",
+  "branch": "nefroloji",
+  "topic": "adpkd",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Otuz iki yaşında erkek hasta, ADPKD tanısı ile takip ediliyor. Genetik test PKD1 geninde truncating (protein fonksiyonunu tamamen bozan) bir mutasyon gösteriyor. Kardeşinde ise PKD2 mutasyonu saptanmış.\n\nBu iki kardeşin beklenen klinik seyri hakkında en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Her iki mutasyon da aynı klinik seyre yol açar; gen tipi prognozu etkilemez.",
+        "B": "PKD1 truncating mutasyonu taşıyan hasta daha ağır fenotip sergiler ve SDBY'ye ortalama 55-58 yaşında ulaşırken; PKD2 mutasyonu taşıyan kardeşin fenotipi daha hafiftir ve SDBY yaşı genellikle 70'li yaşların ortasıdır.",
+        "C": "PKD2 mutasyonu her zaman PKD1'den daha ağır bir fenotiple seyreder.",
+        "D": "Truncating olmayan (non-truncating) PKD1 mutasyonları, truncating mutasyonlardan daha ağır fenotiple ilişkilidir.",
+        "E": "Gen tipi yalnızca ekstrarenal bulguları etkiler, böbrek fonksiyon kaybı hızını etkilemez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PKD1 (özellikle truncating mutasyon) daha ağır fenotip + SDBY ~55-58 yaş. PKD2 daha hafif fenotip + SDBY ~70'li yaşların ortası. Gen tipi ve mutasyon şiddeti prognozu doğrudan belirler.",
+      "aciklama_detay": "ADPKD'de genotip-fenotip ilişkisi iyi tanımlanmıştır. PKD1 geni (16p13.3) vakaların %78-85'inden sorumludur ve Polikistin-1 (PC1) proteinini kodlar; PKD1 mutasyonuna sahip hastalar, özellikle truncating (protein fonksiyonunu tamamen bozan) mutasyonlarda, daha ağır bir fenotip sergiler ve SDBY'ye ulaşma yaşları ortalama 55-58'dir. PKD2 geni (4q21) vakaların %10-15'inden sorumludur ve Polikistin-2 (PC2) proteinini kodlar; fenotipi daha hafiftir ve SDBY yaşı genellikle 70'li yaşların ortasıdır. Bu genotip-fenotip korelasyonu, PROPKD skoru gibi prognostik araçların temelini oluşturur (PKD1 truncating mutasyon en yüksek puanı alır).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gen tipi ve mutasyon şiddeti prognozu belirgin şekilde etkiler; aynı seyir beklenmez.",
+        "B": "DOGRU — PKD1 (özellikle truncating) ağır, erken SDBY; PKD2 hafif, geç SDBY.",
+        "C": "YANLIS — Tam tersi doğrudur; PKD1 genellikle PKD2'den daha ağır seyreder.",
+        "D": "YANLIS — Truncating (tam fonksiyon kaybı) mutasyonlar non-truncating (kısmi fonksiyonlu) mutasyonlardan DAHA AĞIR seyreder, tersi değil.",
+        "E": "YANLIS — Gen tipi böbrek fonksiyon kaybı hızını (SDBY yaşını) doğrudan etkiler, yalnızca ekstrarenal bulgularla sınırlı değildir."
+      },
+      "etiketler": [
+        "PKD1",
+        "PKD2",
+        "Genotip-Fenotip",
+        "Truncating Mutasyon",
+        "SDBY Yaşı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cornec-Le Gall et al. J Am Soc Nephrol 2013; Cornec-Le Gall et al. Clin J Am Soc Nephrol 2018"
+    },
+    {
+      "id": "s2",
+      "metin": "ADPKD'de kistogenezin moleküler mekanizması araştırılıyor. Polikistin kompleksinin işlev kaybı sonucu hücre içi kalsiyum düzeyinde düşüş gözleniyor ve bunu takiben hücre içi cAMP düzeyinde masif artış saptanıyor.\n\nBu cAMP artışının kist büyümesine yol açan İKİ paralel etkisi hangisidir?",
+      "secenekler": {
+        "A": "cAMP artışı yalnızca hücre proliferasyonunu artırır, sıvı sekresyonu üzerinde hiçbir etkisi yoktur.",
+        "B": "cAMP artışı PKA yolağı üzerinden B-Raf/ERK aktivasyonu ile kistik epitelde kontrolsüz proliferasyona yol açarken, aynı zamanda apikal membrandaki CFTR klorür kanallarını aktive ederek kist lümenine klor ve sekonder ozmotik sıvı sekresyonunu tetikler.",
+        "C": "cAMP artışı yalnızca CFTR aracılı sıvı sekresyonunu tetikler, hücre proliferasyonu üzerinde etkisi yoktur.",
+        "D": "cAMP artışı doğrudan mTOR'u inhibe ederek kist büyümesini yavaşlatır.",
+        "E": "cAMP artışı hücre içi kalsiyum düzeyini yeniden yükselterek kompanzasyon sağlar, kist büyümesiyle ilişkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "cAMP artışı iki paralel etki gösterir: (1) PKA→B-Raf/ERK ile kontrolsüz hücre proliferasyonu, (2) CFTR aktivasyonu ile kist lümenine Cl-/ozmotik sıvı sekresyonu. Bu ikisi birlikte kistlerin büyümesini sağlar.",
+      "aciklama_detay": "Polikistin kompleksinin işlev kaybı hücre içi Ca2+ seviyelerinde düşüşe neden olur; bu durum adenilat siklazı aktive ederek hücre içi cAMP seviyelerinde masif bir artışa yol açar. Bu artmış cAMP iki paralel ve tamamlayıcı mekanizma ile kist büyümesine katkıda bulunur: (1) Protein Kinaz A (PKA) yolağını aktive ederek B-Raf ve ERK üzerinden kistik epitel hücrelerinde kontrolsüz proliferasyona neden olur — kist duvarını oluşturan hücre sayısı artar; (2) aynı zamanda apikal membrandaki CFTR klorür kanallarını aktive ederek kist lümenine klor ve sekonder olarak ozmotik sıvı sekresyonunu tetikler — bu da kistlerin sıvı ile dolarak büyümesini sağlar. Proliferasyon (daha fazla hücre) ve sekresyon (daha fazla sıvı) birlikte kistlerin ilerleyici büyümesini açıklar. Bu iki mekanizma, tolvaptan gibi V2R antagonistlerinin etki mekanizmasının da temelini oluşturur — tolvaptan cAMP'yi baskılayarak her iki süreci de bloke eder.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — cAMP artışı hem proliferasyonu HEM sıvı sekresyonunu etkiler, yalnızca birini değil.",
+        "B": "DOGRU — PKA/B-Raf/ERK proliferasyonu + CFTR aracılı sıvı sekresyonu; iki paralel mekanizma.",
+        "C": "YANLIS — cAMP artışı hem proliferasyonu HEM sekresyonu tetikler, yalnızca sekresyonla sınırlı değildir.",
+        "D": "YANLIS — cAMP mTOR'u inhibe etmez; Polikistin-1 disfonksiyonu ayrıca mTOR kompleksini AYRI bir mekanizmayla HİPERAKTİVE eder (cAMP'den bağımsız ek bir yolak).",
+        "E": "YANLIS — cAMP artışı Ca2+ düşüşünün SONUCUDUR ve kist büyümesine doğrudan katkıda bulunur, kompanzasyon değildir."
+      },
+      "etiketler": [
+        "cAMP",
+        "PKA",
+        "CFTR",
+        "Kistogenez Mekanizması",
+        "B-Raf/ERK"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Torres & Harris J Am Soc Nephrol 2014; Chebib & Torres Clin J Am Soc Nephrol 2018"
+    },
+    {
+      "id": "s3",
+      "metin": "ADPKD tanılı bir hastada nefrolitiyazis gelişiyor ve taş analizi isteniyor. Hekim, genel popülasyondan farklı olarak bu hasta grubunda belirli bir taş tipinin daha sık görüldüğünü biliyor.\n\nADPKD hastalarında en sık görülen böbrek taşı tipi ve bunun nedeni nedir?",
+      "secenekler": {
+        "A": "Kalsiyum oksalat taşları en sık görülür; bu, genel popülasyonla aynı dağılımı yansıtır.",
+        "B": "Ürik asit taşları en sık görülür; ADPKD anatomi ve fizyolojisine bağlı idrar stazı ve düşük idrar sitratı nedeniyle genel popülasyondan farklı olarak bu taş tipi baskındır, ikinci sıklıkta kalsiyum oksalat taşları izlenir.",
+        "C": "Struvit (enfeksiyon) taşları en sık görülür; kist enfeksiyonlarının doğrudan sonucudur.",
+        "D": "Sistin taşları en sık görülür; ADPKD'nin genetik defekti sistin transportunu da etkiler.",
+        "E": "ADPKD hastalarında nefrolitiyazis riski genel popülasyondan daha düşüktür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ADPKD'de en sık taş tipi ürik asit taşlarıdır (genel popülasyondan farklı!) — idrar stazı ve düşük idrar sitratına bağlı. İkinci sıklıkta kalsiyum oksalat taşları görülür.",
+      "aciklama_detay": "Nefrolitiyazis, ADPKD hastalarının %20-30'unda görülür. Genel popülasyonda en sık taş tipi kalsiyum oksalat iken, ADPKD hastalarında ADPKD'ye özgü anatomi ve fizyolojiye bağlı idrar stazı (kistlerin toplayıcı sistemi distorte etmesi) ve düşük idrar sitratı nedeniyle EN SIK ürik asit taşları izlenir — bu, genel popülasyondan belirgin şekilde farklı bir epidemiyolojik paterndir ve sınavlarda sıkça vurgulanan bir ayrımdır. İkinci sıklıkta kalsiyum oksalat taşları saptanır. Bu bilgi, ADPKD hastalarında taş önleme stratejilerinin (idrar alkalizasyonu, sitrat replasmanı gibi) genel popülasyondan farklı şekillendirilmesi gerektiğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ADPKD'de en sık taş tipi genel popülasyondan FARKLI olarak ürik asittir, kalsiyum oksalat ikinci sıradadır.",
+        "B": "DOGRU — İdrar stazı + düşük idrar sitratı → ürik asit taşları en sık; kalsiyum oksalat ikinci sırada.",
+        "C": "YANLIS — Struvit taşları ADPKD'de en sık taş tipi olarak tanımlanmamıştır.",
+        "D": "YANLIS — ADPKD'nin genetik defekti (PKD1/PKD2) sistin transportuyla ilişkili değildir; sistin taşları ayrı bir genetik hastalıkla (sistinüri) ilişkilidir.",
+        "E": "YANLIS — ADPKD hastalarında nefrolitiyazis riski genel popülasyona göre ARTMIŞTIR (%20-30), azalmamıştır."
+      },
+      "etiketler": [
+        "Nefrolitiyazis",
+        "Ürik Asit Taşı",
+        "İdrar Sitratı",
+        "ADPKD Komplikasyonları",
+        "Taş Epidemiyolojisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Torres et al. Kidney Int 1993; Bergmann et al. Nat Rev Dis Primers 2018"
+    },
+    {
+      "id": "s4",
+      "metin": "ADPKD tanılı bir hasta, dirençli ateş ve sol yan ağrısı ile başvuruyor. Görüntülemede büyük bir renal kistte enfeksiyon şüphesi var. Ampirik antibiyotik seçimi yapılacak.\n\nBu klinik senaryoda antibiyotik seçiminde dikkat edilmesi gereken temel farmakolojik prensip nedir?",
+      "secenekler": {
+        "A": "Tüm antibiyotikler kist duvarını eşit oranda geçer, seçim yalnızca patojen duyarlılığına göre yapılmalıdır.",
+        "B": "Kist içerisine ancak lipid çözünürlüğü yüksek antibiyotikler (örn. florokinolonlar veya trimetoprim-sülfametoksazol) penetre olabilir; bu nedenle ampirik tedavide bu ajanlar tercih edilmelidir.",
+        "C": "Yalnızca beta-laktam grubu antibiyotikler kist içine penetre olabilir.",
+        "D": "Kist enfeksiyonlarında antibiyotik penetrasyonu önemli değildir; tedavi yalnızca cerrahi drenaj ile yapılmalıdır.",
+        "E": "Aminoglikozidler kist duvarını en iyi geçen antibiyotik grubudur ve ilk tercih olmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kist enfeksiyonlarında yalnızca lipid çözünürlüğü yüksek antibiyotikler (florokinolonlar, TMP-SMX) kist duvarını geçip epitelyal olmayan kist sıvısına etkin şekilde penetre olabilir — ampirik tedavi seçiminde bu farmakokinetik özellik esastır.",
+      "aciklama_detay": "'Kist enfeksiyonu' ADPKD'de spesifik ve zorlu bir klinik tablodur; basit üriner sistem enfeksiyonundan farklı olarak, enfeksiyon ajanının epitel ile döşenmemiş (veya sınırlı döşenmiş) kist boşluğuna ulaşması gerekir. Kist duvarının farmakokinetik özellikleri nedeniyle, yalnızca lipid çözünürlüğü yüksek (lipofilik) antibiyotikler kist içerisine etkin şekilde penetre olabilir — bunlar arasında florokinolonlar (siprofloksasin gibi) ve trimetoprim-sülfametoksazol (TMP-SMX) öne çıkar. Hidrofilik antibiyotikler (örn. çoğu beta-laktam ve aminoglikozid) kist duvarını yeterince geçemediğinden kist enfeksiyonu tedavisinde etkinlikleri sınırlıdır, ampirik seçimde önceliklendirilmemelidir. Bu farmakokinetik prensip, kist enfeksiyonu şüphesinde ampirik antibiyotik seçiminde klinik pratikte doğrudan uygulanan kritik bir bilgidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Antibiyotiklerin kist duvarı penetrasyonu eşit değildir; lipid çözünürlüğü belirleyici bir faktördür.",
+        "B": "DOGRU — Lipid çözünürlüğü yüksek ajanlar (florokinolon, TMP-SMX) kist içine penetre olabilir; ampirik seçimde tercih edilir.",
+        "C": "YANLIS — Beta-laktamlar genellikle hidrofiliktir ve kist penetrasyonu florokinolon/TMP-SMX kadar etkin değildir.",
+        "D": "YANLIS — Antibiyotik penetrasyonu tedavinin temelidir; cerrahi drenaj yalnızca büyük/dirençli apse benzeri kistlerde ek bir seçenektir, tek tedavi değildir.",
+        "E": "YANLIS — Aminoglikozidler hidrofiliktir ve kist duvarı penetrasyonu zayıftır, ilk tercih değildir."
+      },
+      "etiketler": [
+        "Kist Enfeksiyonu",
+        "Antibiyotik Penetrasyonu",
+        "Florokinolon",
+        "TMP-SMX",
+        "Lipid Çözünürlüğü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Sallée et al. Clin J Am Soc Nephrol 2009; Bergmann et al. Nat Rev Dis Primers 2018"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz sekiz yaşında kadın ADPKD hastası, iki gebelik ve uzun süreli oral kontraseptif kullanımı sonrası nefes darlığı, erken doyma ve karında masif kitle hissi ile başvuruyor. Görüntülemede devasa boyutlarda polikistik karaciğer saptanıyor; karaciğer fonksiyon testleri normal.\n\nBu klinik tabloyu açıklayan mekanizma ve beklenen laboratuvar profili hangisidir?",
+      "secenekler": {
+        "A": "Karaciğer kist büyümesi androjenler tarafından hızlandırılır; bu hastada androjen düzeyinin araştırılması gerekir.",
+        "B": "Polikistik karaciğer hastalığı (PLD) kadınlarda çok daha masif boyutlara ulaşır çünkü kist büyümesi östrojen tarafından hızlandırılır (OKS/gebelik bu süreci tetikler); karaciğer fonksiyon testleri devasa boyutlarda dahi genellikle normaldir çünkü karaciğer parankim fonksiyonu korunur, kitle etkisi mekaniktir.",
+        "C": "Normal karaciğer fonksiyon testleri, bu hastada PLD tanısını dışlar; başka bir karaciğer patolojisi aranmalıdır.",
+        "D": "PLD, ADPKD hastalarının yalnızca %5'inde görülen nadir bir bulgudur.",
+        "E": "Oral kontraseptif kullanımı PLD gelişimini önler, bu nedenle hastanın semptomları başka bir nedene bağlı olmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PLD kadınlarda östrojen etkisiyle (OKS/gebelik) çok daha masif boyutlara ulaşır. KCFT'ler devasa boyutta dahi genellikle normal kalır çünkü kitle etkisi mekaniktir, parankim fonksiyonu korunur.",
+      "aciklama_detay": "Polikistik Karaciğer Hastalığı (PLD), ADPKD'nin en sık görülen ekstrarenal bulgusudur (>%80 prevalans). Karaciğer kistleri kadınlarda çok daha masif boyutlara ulaşır; bunun nedeni kist büyümesinin östrojen tarafından hızlandırılmasıdır. Hastalar oral kontraseptifler veya çoklu gebelikler sonrası (yüksek östrojen maruziyeti dönemleri) semptomatik hepatomegali (nefes darlığı — diyafram basısı, erken doyma — mide basısı, kitle etkisi) tablosuyla başvurabilir. Önemli bir klinik nokta: karaciğer fonksiyon testleri (AST, ALT, bilirubin, albümin) devasa boyutlarda kistik tutulum olsa dahi genellikle NORMALDİR — çünkü kistler karaciğer parankimini fonksiyonel olarak büyük ölçüde korurken yer kaplayan lezyonlar şeklinde büyür (kitle etkisi mekaniktir, hepatoselüler hasar değildir). Bu nedenle normal KCFT, PLD tanısını dışlamaz; aksine PLD'nin karakteristik ve beklenen bir laboratuvar profilidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PLD kist büyümesi ÖSTROJEN ile ilişkilidir, androjenlerle değil.",
+        "B": "DOGRU — Östrojen (OKS/gebelik) → kadınlarda masif PLD; KCFT normalliği kitle etkisinin mekanik doğasını yansıtır.",
+        "C": "YANLIS — Normal KCFT, PLD'nin TİPİK ve beklenen bulgusudur, tanıyı dışlamaz.",
+        "D": "YANLIS — PLD, ADPKD hastalarının %80'inden fazlasında görülen EN SIK ekstrarenal bulgudur, nadir değildir.",
+        "E": "YANLIS — OKS kullanımı tam tersine PLD'nin semptomatik hale gelmesini/büyümesini HIZLANDIRAN bir faktördür, önleyici değil."
+      },
+      "etiketler": [
+        "Polikistik Karaciğer Hastalığı",
+        "Östrojen",
+        "PLD",
+        "Karaciğer Fonksiyon Testleri",
+        "Ekstrarenal Manifestasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chapman AB. Semin Nephrol 2017 (PLD); Bergmann et al. Nat Rev Dis Primers 2018"
+    },
+    {
+      "id": "s6",
+      "metin": "Yirmi sekiz yaşında ADPKD tanılı erkek hasta, ailesinde 42 yaşında kardeşinin subaraknoid kanama (SAK) geçirdiği öğreniliyor. Hasta nöroşirürji tarafından değerlendirilmek isteniyor.\n\nBu hastada intrakraniyal anevrizma (İKA) tarama stratejisi ve risk düzeyi hakkında en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "ADPKD hastalarında İKA riski genel popülasyonla aynıdır, rutin tarama gerekmez.",
+        "B": "Ailesinde İKA veya SAK öyküsü olan ADPKD hastalarında risk %25'e kadar çıkar; bu yüksek riskli grupta MRA (Manyetik Rezonans Anjiyografi) ile tarama endikedir.",
+        "C": "İKA taraması yalnızca semptomatik (baş ağrısı, görme bozukluğu olan) ADPKD hastalarında yapılmalıdır, asemptomatik yüksek riskli hastalarda gerekmez.",
+        "D": "ADPKD'de İKA prevalansı genel popülasyondan düşüktür, bu nedenle aile öyküsü olsa dahi tarama önerilmez.",
+        "E": "İKA taraması için BT anjiyografi, MRA'ya kıyasla tercih edilen standart yöntemdir çünkü kontrast gerektirmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ailede İKA/SAK öyküsü olan ADPKD hastalarında risk %25'e çıkar (genel ADPKD popülasyonunda %9-12). Bu yüksek riskli grupta MRA ile tarama endikedir — İKA, ADPKD'nin en mortal komplikasyonudur.",
+      "aciklama_detay": "İntrakraniyal anevrizmalar (İKA), ADPKD'nin en mortal komplikasyonudur. Genel popülasyona göre risk yaklaşık 4-5 kat artmıştır (ADPKD'de genel prevalans %9-12). Ancak ailesinde İKA veya subaraknoid kanama (SAK) öyküsü olan hastalarda bu risk belirgin şekilde daha yüksektir ve %25'e kadar çıkabilir. Bu yüksek riskli alt grupta (pozitif aile öyküsü), MRA (Manyetik Rezonans Anjiyografi) ile tarama açıkça endikedir — kontrast gerektirmeyen, non-invaziv bir görüntüleme yöntemi olarak İKA taramasında standart tercih MRA'dır (BT anjiyografi kontrast ve radyasyon gerektirdiğinden, tekrarlayan taramalar için MRA daha uygun kabul edilir). Bu hastada 28 yaşında olması ve kardeşinde genç yaşta (42) SAK öyküsü bulunması, onu yüksek riskli kategoriye sokar ve MRA taraması önerilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ADPKD'de İKA riski genel popülasyona göre 4-5 kat ARTMIŞTIR, aynı değildir.",
+        "B": "DOGRU — Aile öyküsü pozitif → risk %25 → MRA taraması endike.",
+        "C": "YANLIS — Yüksek riskli (aile öyküsü pozitif) hastalarda tarama ASEMPTOMATİK dönemde de endikedir; semptom beklemek anevrizma rüptürü riskini artırır.",
+        "D": "YANLIS — ADPKD'de İKA prevalansı genel popülasyondan DÜŞÜK değil YÜKSEKTİR (%9-12 vs genel popülasyonda ~%2-3).",
+        "E": "YANLIS — MRA, kontrast gerektirmeyen (veya minimal) ve radyasyon içermeyen özelliğiyle İKA taramasında tercih edilen standart yöntemdir; BT anjiyografi radyasyon+kontrast içerir ve tekrarlayan taramalar için daha az uygundur."
+      },
+      "etiketler": [
+        "İntrakraniyal Anevrizma",
+        "Aile Öyküsü",
+        "MRA Taraması",
+        "Subaraknoid Kanama",
+        "Ekstrarenal Komplikasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pirson Y. Adv Chronic Kidney Dis 2010; Bergmann et al. Nat Rev Dis Primers 2018"
+    },
+    {
+      "id": "s7",
+      "metin": "Otuz beş yaşında hasta, ailesinde ADPKD öyküsü nedeniyle tarama USG'sine geliyor. Sağ böbrekte 2, sol böbrekte 1 kist saptanıyor (toplam 3 kist).\n\nPei-Ravine tanı kriterlerine göre bu bulgu ile ilgili en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Bu hasta 40-59 yaş grubunda değerlendirilmelidir ve her iki böbrekte ayrı ayrı en az 2 kist gerektiğinden tanı doğrulanamaz.",
+        "B": "15-39 yaş arası için kriter, iki böbrekte (tek veya çift taraflı) TOPLAM en az 3 kist bulunmasıdır; bu hastada toplam 3 kist mevcut olduğundan (dağılımdan bağımsız) tanı DOĞRULANIR.",
+        "C": "Tanı için mutlaka her iki böbrekte eşit sayıda kist bulunması gerekir, asimetrik dağılım tanıyı dışlar.",
+        "D": "35 yaşında yalnızca 3 kist bulunması, yaşa göre çok düşük bir sayı olduğundan hastalığı kesin olarak dışlar.",
+        "E": "Pei-Ravine kriterleri yalnızca aile öyküsü olmayan hastalarda kullanılır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "15-39 yaş grubunda kriter: iki böbrekte TOPLAM en az 3 kist (tek veya çift taraflı dağılım fark etmez). Bu hastada toplam 3 kist var → tanı doğrulanır.",
+      "aciklama_detay": "Pei-Ravine tanı kriterleri, pozitif aile öyküsü olan bireylerde yaşa göre modifiye edilmiş kist sayısı eşiklerini tanımlar: 15-39 yaş arasında, iki böbrekte (tek veya çift taraflı dağılımda) TOPLAM en az 3 kist bulunması tanıyı doğrular. Bu hastada sağ böbrekte 2, sol böbrekte 1 olmak üzere toplam 3 kist saptanmıştır — dağılımın asimetrik olması (2+1) kriteri geçersiz kılmaz, önemli olan toplam sayıdır ve bu kriter karşılanmaktadır. 40-59 yaş grubu için kriter farklıdır: her iki böbrekte AYRI AYRI en az 2'şer kist (toplam ≥4) gerekir — ancak bu hasta 35 yaşında olduğundan 15-39 yaş kriterine tabidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hasta 35 yaşında olup 15-39 yaş grubuna girer, 40-59 yaş kriteri (her böbrekte ayrı ≥2) burada uygulanmaz.",
+        "B": "DOGRU — 15-39 yaş: toplam ≥3 kist (dağılımdan bağımsız) yeterlidir; bu hastada kriter karşılanmıştır.",
+        "C": "YANLIS — Kriter TOPLAM kist sayısına dayanır, her böbrekte eşit dağılım şartı yoktur (15-39 yaş grubu için).",
+        "D": "YANLIS — Tam tersine, bu yaş grubunda 3 kist tanı için YETERLİDİR, dışlayıcı değildir.",
+        "E": "YANLIS — Pei-Ravine kriterleri özellikle POZİTİF aile öyküsü olan bireyler için geliştirilmiştir; aile öyküsü olmayanlarda farklı bir yaklaşım (≥10 kist/böbrek + hepatomegali) kullanılır."
+      },
+      "etiketler": [
+        "Pei-Ravine Kriterleri",
+        "Tanı Algoritması",
+        "Ultrasonografi",
+        "Aile Öyküsü",
+        "Kist Sayısı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pei et al. J Am Soc Nephrol 2009 (Pei-Ravine criteria)"
+    },
+    {
+      "id": "s8",
+      "metin": "ADPKD tanılı 40 yaşında hasta, MR ile hesaplanan yaşa ve boya göre ayarlanmış Toplam Böbrek Hacmi (htTKV) temelinde Mayo Imaging Classification sınıf 1D olarak sınıflandırılıyor. eGFR'si 48 mL/dk/1.73m².\n\nBu hastanın risk profili ve tedavi yaklaşımı hakkında en doğru değerlendirme hangisidir?\n",
+      "secenekler": {
+        "A": "Sınıf 1D, yavaş ilerleyen düşük riskli hastalığı gösterir; herhangi bir ek tedavi gerekmez.",
+        "B": "Sınıf 1D, hızlı progresyon gösteren (rapid progressor) yüksek riskli hastalığı gösterir; eGFR ≥25 mL/dk/1.73m² olduğundan bu hasta Tolvaptan tedavisi için endikasyon grubunu oluşturur.",
+        "C": "Mayo Imaging Classification yalnızca 60 yaş üzeri hastalarda kullanılabilir, bu hastada geçersizdir.",
+        "D": "Sınıf 1D hastalarında Tolvaptan kesin kontrendikedir çünkü eGFR düzeyi çok yüksektir.",
+        "E": "Mayo Imaging Classification, PROPKD skorunun yerini tamamen almış olup genetik veriye artık gerek yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Mayo MIC 1C/1D/1E = hızlı progresyon gösteren yüksek riskli grup, Tolvaptan'ın temel endikasyon grubudur. eGFR ≥25 mL/dk/1.73m² koşulunu karşılıyorsa (bu hastada 48) tedavi başlanabilir.",
+      "aciklama_detay": "Mayo Imaging Classification (MIC), hastanın yaşı, boy uzunluğu ve MR/CT ile hesaplanan Toplam Böbrek Hacmi (htTKV) kullanılarak hastaları yıllık tahmini böbrek büyüme hızlarına göre 1A'dan 1E'ye kadar sınıflara ayırır. Sınıf 1A ve 1B yavaş ilerleyen ve SDBY riski düşük hastalığı gösterirken; Sınıf 1C, 1D ve 1E hızlı progresyon gösteren (rapid progressor), yüksek riskli hastaları tanımlar ve bu grup Tolvaptan tedavisinin temel endikasyon grubunu oluşturur. Tolvaptan başlama kriterleri arasında hızlı progresyon (Mayo MIC 1C-1E) ve eGFR ≥25 mL/dk/1.73m² (sıklıkla ≤55 yaş) bulunur. Bu hastada MIC sınıf 1D (yüksek riskli grup) ve eGFR 48 mL/dk/1.73m² (eşiğin üzerinde) olduğundan, Tolvaptan tedavisi için uygun bir aday olarak değerlendirilmelidir — tabii ki hepatotoksisite riski açısından kontrendikasyonların (aktif karaciğer hastalığı vb.) dışlanması ve REMS protokolü kapsamında yakın izlem şartıyla.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sınıf 1D, tam tersine hızlı progresyon gösteren YÜKSEK riskli gruptur (1A/1B düşük risk, 1C-1E yüksek risk).",
+        "B": "DOGRU — 1D = yüksek risk/hızlı progresyon; eGFR eşiği (≥25) karşılanıyor → Tolvaptan endikasyonu.",
+        "C": "YANLIS — Mayo Imaging Classification yaşa göre ayarlanmış bir formül kullanır ve geniş bir yaş aralığında (genellikle 15-40'lı yaşlarda en güvenilir) uygulanabilir, yalnızca 60 yaş üzeri ile sınırlı değildir.",
+        "D": "YANLIS — Tam tersine, bu eGFR düzeyi (48 mL/dk) Tolvaptan başlama eşiğinin (≥25 mL/dk) üzerinde ve tedaviye uygundur; kontrendikasyon değildir.",
+        "E": "YANLIS — Mayo Imaging Classification ve PROPKD skoru birbirini TAMAMLAYAN, farklı veri türlerine (görüntüleme vs klinik+genetik) dayanan iki ayrı araçtır; biri diğerinin yerini almamıştır."
+      },
+      "etiketler": [
+        "Mayo Imaging Classification",
+        "htTKV",
+        "Tolvaptan Endikasyonu",
+        "Rapid Progressor",
+        "Risk Stratifikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Irazabal et al. J Am Soc Nephrol 2015 (Mayo Classification); Torres et al. N Engl J Med 2017 (REPRISE)"
+    },
+    {
+      "id": "s9",
+      "metin": "Tolvaptan başlanan ADPKD hastasında tedavi güvenliği izlemi planlanıyor. Hasta, ilacın en sık görülen yan etkisi olan poliüri konusunda bilgilendiriliyor ancak asıl endişe farklı bir organ sistemine yönelik.\n\nTolvaptan tedavisinde en sınırlayıcı güvenlik riski ve buna yönelik izlem protokolü hangisidir?",
+      "secenekler": {
+        "A": "En sınırlayıcı risk nefrotoksisitedir; kreatinin haftalık takip edilmelidir.",
+        "B": "En sınırlayıcı risk idiosenkrazik hepatotoksisitedir; REMS protokolü gereğince transaminaz değerleri ilk 18 ay boyunca HER AY rutin kontrol edilmelidir.",
+        "C": "En sınırlayıcı risk kemik iliği süpresyonudur; tam kan sayımı ayda bir kontrol edilmelidir.",
+        "D": "Tolvaptan'ın hiçbir ciddi organ toksisitesi bildirilmemiştir, yalnızca akuaretik semptomlar takip edilmelidir.",
+        "E": "En sınırlayıcı risk pankreatittir; amilaz/lipaz düzeyleri düzenli izlenmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tolvaptan'ın en sınırlayıcı riski idiosenkrazik hepatotoksisitedir. REMS protokolü gereği transaminazlar ilk 18 ay boyunca HER AY kontrol edilmelidir — bu, ilacın güvenli kullanımının olmazsa olmaz şartıdır.",
+      "aciklama_detay": "Tolvaptan'ın akuaretik etkilerine bağlı olarak masif poliüri, noktüri ve polidipsi en sık görülen (beklenen, mekanizmayla uyumlu) yan etkilerdir ve genellikle tolere edilebilir. Ancak ilacın kullanımındaki EN SINIRLAYICI ve potansiyel olarak ciddi risk idiosenkrazik hepatotoksisitedir — bazı hastalarda öngörülemeyen, ciddi karaciğer hasarına yol açabilir. Bu risk nedeniyle, Tolvaptan reçetelenmesi FDA'nın REMS (Risk Evaluation and Mitigation Strategy) programı kapsamında sıkı izlem gerektirir: hastaların transaminaz (ALT/AST) değerleri REMS protokolleri gereğince İLK 18 AY BOYUNCA HER AY rutin kontrol edilmelidir. Bu yoğun izlem programı, ilacın TEMPO 3:4 çalışmasında görülen ciddi karaciğer hasarı vakaları sonrası getirilmiş bir güvenlik önlemidir ve tedaviye devam edebilmenin zorunlu bir şartıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Nefrotoksisite Tolvaptan'ın tanımlanan en sınırlayıcı riski değildir; asıl endişe hepatotoksisitedir.",
+        "B": "DOGRU — İdiosenkrazik hepatotoksisite = en sınırlayıcı risk; ilk 18 ay aylık transaminaz takibi (REMS).",
+        "C": "YANLIS — Kemik iliği süpresyonu Tolvaptan'ın bilinen bir yan etkisi değildir.",
+        "D": "YANLIS — Tam tersine, hepatotoksisite ciddi ve iyi belgelenmiş bir risktir; bu nedenle özel bir REMS izlem programı zorunlu kılınmıştır.",
+        "E": "YANLIS — Pankreatit, Tolvaptan'ın tanımlanan en sınırlayıcı yan etkisi değildir; asıl odak karaciğerdir."
+      },
+      "etiketler": [
+        "Tolvaptan",
+        "Hepatotoksisite",
+        "REMS Protokolü",
+        "Transaminaz Takibi",
+        "İlaç Güvenliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Torres et al. N Engl J Med 2012 (TEMPO 3:4); FDA REMS — Tolvaptan (Jynarque) Prescribing Information"
+    },
+    {
+      "id": "s10",
+      "metin": "ADPKD ve devasa polikistik karaciğer hastalığı (PLD) olan bir hastada somatostatin analogu (lanreotid) tedavisi tartışılıyor. Hasta ve ailesi, bu tedavinin böbrek fonksiyonunu da koruyup korumayacağını soruyor.\n\nALADIN ve DIPAK 1 çalışmalarının sonuçlarına dayanarak en doğru danışmanlık hangisidir?",
+      "secenekler": {
+        "A": "Somatostatin analogları hem TKV/TLV büyümesini durdurur hem de uzun vadeli eGFR düşüşünü anlamlı şekilde iyileştirir; bu nedenle böbrek koruyucu birinci basamak tedavi olarak önerilir.",
+        "B": "Somatostatin analogları TKV ve özellikle Polikistik Karaciğer Hacmini (TLV) durdurduğunu göstermiştir ancak uzun vadeli böbrek fonksiyon (eGFR) düşüşünü iyileştirmedikleri tespit edilmiştir; bu nedenle böbrek progresyonunu durdurmak için rutin önerilmezler, ancak ağır mekanik karaciğer semptomlarında seçilmiş cerrahi ile birlikte kullanılabilirler.",
+        "C": "Somatostatin analoglarının ADPKD'de hiçbir kanıtlanmış etkisi yoktur, TKV veya TLV üzerinde herhangi bir fayda göstermemiştir.",
+        "D": "Somatostatin analogları yalnızca böbrek fonksiyonunu korur, karaciğer kist hacmi üzerinde etkisi yoktur.",
+        "E": "Somatostatin analogları Tolvaptan'ın tam bir alternatifidir ve aynı endikasyon grubunda birinci basamak olarak kullanılabilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ALADIN/DIPAK 1: somatostatin analogları TKV ve özellikle TLV (karaciğer kist hacmi) büyümesini durdurur AMA uzun vadeli eGFR düşüşünü iyileştirmez — böbrek progresyonu için rutin önerilmez; ağır PLD semptomlarında seçilmiş cerrahi ile birlikte kullanılabilir.",
+      "aciklama_detay": "Somatostatin Analogları (Oktreotid/Lanreotid), cAMP sentezini inhibe ederek etki gösterirler. Büyük klinik çalışmalar (ALADIN, DIPAK 1), bu ajanların Toplam Böbrek Hacmi (TKV) ve ÖZELLİKLE Polikistik Karaciğer Hacmi (TLV) büyümesini durdurduğunu göstermiştir — karaciğer kistleri üzerindeki etkisi böbrekten daha belirgindir. Ancak aynı çalışmalar, uzun vadeli böbrek fonksiyon (eGFR) düşüşünü İYİLEŞTİRMEDİKLERİNİ tespit etmiştir — yani hacim küçülse/büyüme yavaşlasa da bu, klinik olarak anlamlı bir böbrek fonksiyonu koruma faydasına dönüşmemiştir. Dolayısıyla böbrek progresyonunu durdurmak amacıyla RUTİN olarak önerilmezler (Tolvaptan'ın aksine, ki o hem TKV hem eGFR üzerinde kanıtlanmış fayda göstermiştir). Ancak ADPLD'si olan veya devasa karaciğer kist kütlesine bağlı ağır mekanik semptomları (nefes darlığı, erken doyma gibi) olan refrakter vakalarda, seçilmiş cerrahi yöntemlerle (kist fenestrasyonu, rezeksiyon) birlikte kullanılabilirler — bu, spesifik olarak karaciğer semptomlarını hedefleyen bir yaklaşımdır, böbrek koruyucu bir strateji değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — eGFR düşüşünü İYİLEŞTİRMEDİKLERİ açıkça gösterilmiştir; böbrek koruyucu birinci basamak tedavi değildirler.",
+        "B": "DOGRU — TKV/TLV durdurur ama eGFR faydası yok → rutin önerilmez; ağır PLD'de cerrahi ile kombine kullanılabilir.",
+        "C": "YANLIS — TKV ve özellikle TLV üzerinde kanıtlanmış bir etki GÖSTERMİŞLERDİR; tamamen etkisiz değildirler, sınırlılık eGFR faydasının olmamasıdır.",
+        "D": "YANLIS — Tam tersine, etkisi ÖZELLİKLE karaciğer kist hacmi (TLV) üzerinde daha belirgindir, yalnızca böbrekle sınırlı değildir.",
+        "E": "YANLIS — Somatostatin analogları Tolvaptan'ın tam alternatifi değildir; Tolvaptan böbrek progresyonu için kanıtlanmış birinci basamak iken somatostatin analogları bu endikasyonda rutin önerilmez, farklı bir role (özellikle karaciğer semptom yönetimi) sahiptir."
+      },
+      "etiketler": [
+        "Somatostatin Analogları",
+        "ALADIN",
+        "DIPAK 1",
+        "Polikistik Karaciğer Hacmi",
+        "Böbrek Koruyucu Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Meijer et al. JAMA 2018 (DIPAK-1); Caroli et al. Lancet 2013 (ALADIN)"
+    }
+  ]
+}
