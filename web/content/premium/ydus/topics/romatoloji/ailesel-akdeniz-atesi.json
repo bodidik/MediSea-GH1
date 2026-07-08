@@ -1,0 +1,361 @@
+{
+  "meta": {
+    "id": "ailesel-akdeniz-atesi",
+    "branch": "romatoloji",
+    "baslik": "Ailesel Akdeniz Ateşi (FMF)",
+    "altbaslik": "MEFV/pirin inflamozomu, piroptozis, klinik fenotipler, AA amiloidoz risk faktörleri, kolşisin direnci ve IL-1 inhibitör tedavisi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Ailesel Akdeniz Ateşi (FMF), dünya çapında en sık karşılaşılan monogenik otoinflamatuar hastalıktır. Ağırlıklı olarak Doğu Akdeniz havzası kökenli popülasyonlarda (Türkler, Ermeniler, Araplar, Aşkenaz olmayan Yahudiler) endemiktir; endemik bölgelerde taşıyıcılık oranı 1:3 ile 1:7 gibi oldukça yüksek seviyelere ulaşabilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Evrimsel Sağkalım Avantajı: Bu yüksek prevalansın temelinde, MEFV genindeki mutasyonların tarihsel Yersinia pestis (Veba) salgınlarına karşı sağladığı heterozigot avantajı yatmaktadır — tıpkı sickle cell taşıyıcılığının sıtmaya karşı avantaj sağlaması gibi."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Genetik Temeller",
+      "kolonlar": [
+        "Özellik",
+        "Bulgu",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Gen",
+            "MEFV — 16p13.3, 10 ekson",
+            "781 amino asitlik \"pirin\" (marenostrin/TRIM20) proteinini kodlar"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Ekson 10 Mutasyonları ★",
+            "M694V, M680I, M694I, V726A — B30.2/SPRY domainini kodlar (kaspaz-1 etkileşimi)",
+            "Klasik ve ağır FMF fenotipinden sorumlu patojenik mutasyonların büyük çoğunluğu"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "E148Q (Ekson 2)",
+            "Tartışmalı varyant (VUS)",
+            "In cis olarak M694V gibi ağır mutasyonla birlikte (kompleks allel) bulunduğunda penetransı ve klinik şiddeti artırır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kalıtım Paterni ★",
+            "Klasik olarak otozomal resesif; ancak hastaların ~%30'unda yalnızca TEK patojenik mutasyon (heterozigotluk) saptanır",
+            "M692del, H478Y, T577N gibi spesifik mutasyonlarda gerçek otozomal DOMİNANT kalıtım kanıtlanmıştır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyoloji — Pirin İnflamozomu",
+      "satirlar": [
+        {
+          "metin": "**Fizyolojik durum:** Aktif RhoA (GTPaz), PKN1/PKN2 serin-treonin kinazlarını uyarır → pirin Ser208/Ser242'den fosforile edilir → fosforile pirin inhibitör 14-3-3 proteinlerine bağlanarak İNAKTİF tutulur → inflamozom oluşumu engellenir."
+        },
+        {
+          "metin": "**Patojen tetiklemesi:** Clostridium difficile veya Burkholderia cenocepacia toksinleri RhoA'yı inhibe eder → pirin fosforilasyonu bozulur → pirin inflamozomu AKTİVE olur (doğal immün yanıt)."
+        },
+        {
+          "metin": "**FMF'de gain-of-function:** MEFV ekson 10 mutasyonları pirinin fosforilasyon kapasitesini ve 14-3-3 bağlanma afinitesini bozar → inhibisyondan kurtulan pirin, ASC adaptör proteini + pro-kaspaz-1 ile oligomerize olarak **Pirin İnflamozomu**'nu kurar → kaspaz-1 aktive olur → pro-IL-1β ve pro-IL-18'i keserek olgun IL-1β/IL-18'e dönüştürür. Eş zamanlı kaspaz-1, Gasdermin D'yi (GSDMD) aktive ederek hücre zarında por oluşturur → **piroptozis**."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kolşisin Direnci — Mikrotübül Bağımsızlığı: Patojenik pirin mutasyonları, inflamozom aktivasyonu için mikrotübüllere olan bağımlılığı ortadan kaldırır. Kolşisin etkisini mikrotübül polimerizasyonunu engelleyerek gösterdiğinden, bu durum kolşisine karşı direnç gelişiminin moleküler temelini oluşturur. Atakların kendiliğinden (1-3 gün) sonlanması ise Nötrofil Ekstraselüler Tuzaklarının (NET'ler) aktif IL-1β'yı yakalayıp hapsetmesiyle açıklanır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Fenotipler",
+      "kolonlar": [
+        "Fenotip",
+        "Tanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Fenotip 1 ★",
+            "Klasik, tekrarlayan febril serozit atakları"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Fenotip 2 ★",
+            "Tipik atak öyküsü OLMAKSIZIN, böbrek AA amiloidozuna sekonder asemptomatik proteinüri/nefrotik sendrom ile ilk başvuru"
+          ]
+        },
+        {
+          "hucreler": [
+            "Fenotip 3",
+            "Çift patojenik mutasyon taşımasına rağmen ömür boyu tamamen asemptomatik \"sessiz\" olgular"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Fenotip 1 — Atak Özellikleri",
+      "satirlar": [
+        {
+          "metin": "Ataklar 12-72 saat sürer, aniden başlar ve sekel bırakmadan spontan sonlanır. Hastaların %50'sinde ataktan 12-24 saat önce başlayan irritabilite, anksiyete, tat değişikliği veya miyalji gibi bir **prodrom (aura)** dönemi gözlenir. Klasik tetikleyiciler: soğuk, menstrüasyon, fiziksel/emosyonel stres."
+        },
+        {
+          "metin": "**Abdominal (en sık):** Steril peritonit, akut cerrahi batını taklit eder → gereksiz apendektomilere yol açabilir. **Plörit:** Tek taraflı, batıcı göğüs ağrısı. **Artiküler:** Alt ekstremitenin büyük eklemlerini (diz, ayak bileği) tutan akut steril mono/oligoartrit."
+        },
+        {
+          "metin": "**Patognomonik cilt bulgusu:** Alt ekstremitede selüliti taklit eden **erizipel benzeri eritem (ELE)**. Nadir ama önemli: egzersizle indüklenen bacak ağrısı ve kolşisine dirençli, haftalar sürebilen çok şiddetli **uzamış febril miyalji**."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Eşlik Eden Hastalıklar",
+      "kolonlar": [
+        "Hastalık",
+        "FMF'e Özgü Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Poliarteritis Nodoza (PAN) ★",
+            "FMF hastalarında daha erken başlar; perirenal hematom ve mikroskobik glomerüler tutulum daha sık"
+          ]
+        },
+        {
+          "hucreler": [
+            "IgA Vasküliti (Henoch-Schönlein)",
+            "Anlamlı derecede daha sık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ankilozan Spondilit",
+            "HLA-B27 NEGATİF kronik sakroiliit paterni"
+          ]
+        },
+        {
+          "hucreler": [
+            "Behçet Hastalığı, İnflamatuar Bağırsak Hastalığı",
+            "Anlamlı derecede daha sık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Multipl Skleroz (MS)",
+            "SSS demiyelinizan hastalık riski artmıştır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "AA Amiloidoz — En Mortal Komplikasyon ★: Ataklar sırasında ve ataklar arası dönemde bile karaciğerden masif üretilen Serum Amiloid A (SAA)'nın yıkım ürünleri böbrek, karaciğer, dalak ve GİS'e çöker. Nefrotik sendrom hızla son dönem böbrek yetmezliğine ilerler. Majör risk faktörleri: M694V homozigotluğu, erkek cinsiyet, SAA1 α/α genotipi, kolşisine uyumsuzluk, endemik coğrafyada yaşamak."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı ve Sınıflandırma Kriterleri",
+      "kolonlar": [
+        "Kriter Seti",
+        "Popülasyon",
+        "Esas"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Tel-Hashomer ★",
+            "Erişkin — altın standart",
+            "1 majör (tekrarlayan ateşli serozit atakları, AA amiloidoz, kolşisine yanıt) VEYA 2 minör kriter"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yalçınkaya-Özen",
+            "Pediyatrik",
+            "Ateş, karın ağrısı, göğüs ağrısı, artrit, aile öyküsü — 5 parametreden 2'sinin varlığı tanı koydurur"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Eurofever/PRINTO",
+            "Klinik + genetik entegre",
+            "Konfirmatör (çift) genotipte 1 klinik bulgu yeterli; tek mutasyonlu (non-konfirmatör) hastada en az 2 klinik bulgu şart"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Laboratuvar ve Biyobelirteçler",
+      "satirlar": [
+        {
+          "metin": "Ataklar sırasında nötrofilik lökositoz, yüksek sedimentasyon, CRP, fibrinojen ve SAA tipiktir. **En kritik tetkik SAA takibidir** — subklinik inflamasyonun en güçlü göstergesidir. **S100A12 (MRP6)**, yalnızca FMF ve sistemik JIA'da kriz spesifik olarak aşırı artış gösteren, duyarlı ve özgün yeni bir biyobelirteçtir."
+        },
+        {
+          "metin": "MEFV mutasyon analizi kesin tanıyı DIŞLAMAZ ancak atipik vakalarda, amiloidoz riski değerlendirmesinde ve kolşisin direncini öngörmede rutin gereklidir. Genetik testle tanı konamayan kompleks olgularda, PBMC'lerin C. difficile toksin A ile uyarılmasına dayanan **ex vivo kolşisin fonksiyonel testi** yüksek duyarlılık (%86) ve özgüllük (%100) ile dikkat çekmektedir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi — Kolşisin (Temel Tedavi)",
+      "kolonlar": [
+        "Parametre",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Doz",
+            "Çocuk: 0.5-2.0 mg/gün; Erişkin: 1-3 mg/gün"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Mekanizma",
+            "Mikrotübül polimerizasyonunu engeller → inflamozom aktivasyonunu bloke eder + lökosit kemotaksisini bozar; amiloidoz riskini %1'in altına indirir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kritik Etkileşim ★",
+            "Dar terapötik indeks; CYP3A4 ve P-glikoprotein (MDR1) ile metabolize edilir → makrolidler (klaritromisin) ve azol grubu antifungallerle eş zamanlı kullanım FATAL nöromiyopati ve kemik iliği süpresyonu yapabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "En Sık Yan Etki",
+            "Doza bağımlı diyare"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Gebelik/Laktasyon ★",
+            "MUTLAKA devam edilmeli — teratojenik DEĞİLDİR; kesilmesi ataklara bağlı inflamasyon üzerinden abortus riskini artırır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Kolşisin Direnci (crFMF) Tanımı: Maksimum tolere edilebilir doza (erişkinde genelde 3 mg/gün) çıkılmasına rağmen son 6 ayda ayda ≥1 atak geçiren VEYA ataklar arası SAA/CRP inatçı şekilde yüksek kalan hastalar (olguların ~%5-10'u). Direnç genellikle M694V homozigotlarında görülür."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İkinci Basamak — Anti-IL-1 Ajanlar",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma / Farmakokinetik",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Anakinra",
+            "Rekombinant IL-1R antagonisti (hem IL-1α hem IL-1β bloke); yarı ömür 4-6 saat, günde 1 kez SC (100 mg veya 1-2 mg/kg/gün)",
+            "Kısa yarı ömür → enfeksiyon durumunda hızlı temizlenme; aurayı hisseden hastada \"ihtiyaç halinde (on-demand)\" tek doz atağı durdurabilir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Canakinumab ★",
+            "Tam insan anti-IL-1β monoklonal antikoru; yarı ömür ~26 gün, her 4-8 haftada bir SC (150-300 mg)",
+            "FMF'te kolşisin direncinde FDA/EMA onaylı; hasta uyumu yüksek"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rilonacept",
+            "Çözünür IL-1 tuzak reseptör füzyon proteini (IL-1α + IL-1β'ya bağlanır)",
+            "FMF'te kullanım verisi daha kısıtlı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Biyolojik Başlanınca Kolşisin Kesilmez: Kolşisin direnci nedeniyle IL-1 inhibitörü başlanan hastalarda dahi, amiloidoz koruyuculuğunu garanti etmek için kolşisine tolere edilebilen optimal dozda (örn. 1.5-2 mg/gün) KESİNLİKLE DEVAM EDİLMELİDİR."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Alternatif ve Gelecek Vadeden Tedaviler",
+      "kolonlar": [
+        "Ajan",
+        "Kullanım Alanı"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Tocilizumab (anti-IL-6R) ★",
+            "Kolşisin + IL-1 inhibitörlerine dirençli, karaciğerden IL-6 uyarısıyla SAA yüksekliğine bağlı RENAL (AA) AMİLOİDOZ ve masif proteinürisi gelişmiş kompleks olgularda progresyonu durdurmada etkili"
+          ]
+        },
+        {
+          "hucreler": [
+            "Anti-TNF Ajanlar",
+            "Eşlik eden kronik destrüktif artrit veya sakroiliit varlığında DMARD'larla birlikte"
+          ]
+        },
+        {
+          "hucreler": [
+            "Tofacitinib / JAK İnhibitörleri",
+            "Dirençli olgularda IL-1β aracılı döngüler ve artmış interferon yanıtını baskılamada umut vadeden yeni veriler (araştırma aşaması)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — FMF 7 Altın Kural: (1) Ekson 10 mutasyonları (M694V/M680I/M694I/V726A) = ağır fenotip; E148Q tek başına VUS, kompleks allel olarak şiddeti artırır. (2) Pirin fosforile + 14-3-3 bağlıyken İNAKTİF; ekson 10 mutasyonu bu inhibisyonu bozar → gain-of-function inflamozom. (3) Fenotip 2 = atak öyküsü olmadan amiloidoz ile başvuru; unutulmamalı. (4) ELE = patognomonik cilt bulgusu. (5) SAA takibi = subklinik inflamasyon ve amiloidoz riskinin en kritik göstergesi. (6) Kolşisin + makrolid/azol = fatal nöromiyopati riski. (7) Kolşisin direncinde IL-1 inhibitörü eklenir AMA kolşisin kesilmez."
+    }
+  ]
+}

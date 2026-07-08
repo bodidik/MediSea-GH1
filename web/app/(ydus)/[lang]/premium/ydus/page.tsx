@@ -31,14 +31,14 @@ const FLEET_STATUS = [
     progress: 5,
     status: 'HAZIR'
   },
-  { 
-    id: 'gastroenteroloji', 
-    name: 'Gastroenteroloji', 
-    shipType: 'Fırkateyn', 
-    currentPort: 'İstanbul', 
-    lastReport: 'İstihbarat henüz toplanmadı.',
-    progress: 0,
-    status: 'İKMAL BEKLENİYOR'
+  {
+    id: 'gastroenteroloji',
+    name: 'Gastroenteroloji',
+    shipType: 'Fırkateyn',
+    currentPort: 'İstanbul',
+    lastReport: 'Karaciğer kanseri istihbaratı (HCC) tamamlandı.',
+    progress: 5,
+    status: 'HAZIR'
   },
   { 
     id: 'kardiyoloji', 
@@ -93,7 +93,7 @@ export default function YdusMainDashboard() {
   const lang = params?.lang || 'tr'; // Mevcut dili alıyoruz (tr, en vs.)
   const plan = (user?.plan ?? "free") as "free" | "member" | "premium";
   
-  const READY_BRANCHES = ['hematoloji', 'endokrinoloji', 'romatoloji', 'gogus-hastaliklari'];
+  const READY_BRANCHES = ['hematoloji', 'endokrinoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji'];
 
   const branchColorMap: Record<string, string> = {
     endokrinoloji: 'orange', // Gün Batımı Turuncusu

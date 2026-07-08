@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "id": "romatoloji",
+    "baslik": "Romatoloji",
+    "aciklama": "Otoinflamatuar hastalıklar, bağ dokusu hastalıkları ve vaskülitleri kapsayan uzmanlık sınav modülü.",
+    "renk": "#1a5c2e",
+    "emoji": "🦋"
+  },
+  "kategoriler": [
+    {
+      "id": "otoinflamatuar",
+      "baslik": "Otoinflamatuar Hastalıklar",
+      "aciklama": "Ailesel Akdeniz Ateşi ve periyodik ateş sendromları",
+      "emoji": "🔥",
+      "konular": [
+        {
+          "id": "ailesel-akdeniz-atesi",
+          "baslik": "Ailesel Akdeniz Ateşi (FMF)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "pfapa",
+          "baslik": "PFAPA Sendromu",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "bag-dokusu",
+      "baslik": "Bağ Dokusu Hastalıkları",
+      "aciklama": "Sistemik lupus eritematozus, Sjögren, sistemik skleroz",
+      "emoji": "🦋",
+      "konular": [
+        {
+          "id": "sle",
+          "baslik": "Sistemik Lupus Eritematozus (SLE)",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "vaskulitler",
+      "baslik": "Vaskülitler",
+      "aciklama": "Behçet hastalığı, poliarteritis nodoza ve ANCA ilişkili vaskülitler",
+      "emoji": "🩸",
+      "konular": [
+        {
+          "id": "behcet-hastaligi",
+          "baslik": "Behçet Hastalığı",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        }
+      ]
+    }
+  ]
+}

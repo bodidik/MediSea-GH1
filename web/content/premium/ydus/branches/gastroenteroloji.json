@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "gastroenteroloji",
+    "baslik": "Gastroenteroloji",
+    "aciklama": "Karaciğer, safra yolları, pankreas ve gastrointestinal sistem hastalıklarını kapsayan uzmanlık sınav modülü.",
+    "renk": "#4a1a7a",
+    "emoji": "🫘"
+  },
+  "kategoriler": [
+    {
+      "id": "karaciger-hastaliklari",
+      "baslik": "Karaciğer Hastalıkları",
+      "aciklama": "Siroz, hepatit ve karaciğer tümörleri",
+      "emoji": "🫘",
+      "konular": [
+        {
+          "id": "siroz",
+          "baslik": "Siroz",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        },
+        {
+          "id": "hepatosellular-karsinom",
+          "baslik": "Hepatosellüler Karsinom (HCC)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    }
+  ]
+}

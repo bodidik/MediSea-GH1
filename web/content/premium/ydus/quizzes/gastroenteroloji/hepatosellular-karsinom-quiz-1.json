@@ -1,0 +1,308 @@
+{
+  "id": "quiz-gastro-hcc-001",
+  "baslik": "Hepatosellüler Karsinom (HCC) — Soru Seti 1",
+  "branch": "gastroenteroloji",
+  "topic": "hepatosellular-karsinom",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Kırk iki yaşında erkek hasta, doğumdan beri kronik HBV taşıyıcısı olduğu bilinen, karaciğer fonksiyon testleri normal, fibrozis belirteçleri düşük ve görüntülemede siroz bulgusu OLMAYAN bir hastada rutin AFP taramasında yükseklik saptanıyor; ileri tetkiklerde HCC tanısı konuyor.\n\nBu hastada sirozun olmamasına rağmen HCC gelişmesini en iyi açıklayan mekanizma hangisidir?",
+      "secenekler": {
+        "A": "Bu klinik tablo mümkün değildir; HCC gelişimi için siroz mutlak bir ön koşuldur, tanı yeniden gözden geçirilmelidir.",
+        "B": "HBV taşıyıcılarında hastalık, siroz gelişmeden de doğrudan HCC formunda ortaya çıkabilir — bu, HBV'nin diğer HCC nedenlerinden (örn. HCV, MASLD) ayrılan kendine özgü bir özelliğidir.",
+        "C": "Bu hastada mutlaka gizli bir aflatoksin B1 maruziyeti vardır; HBV tek başına sirozsuz HCC yapamaz.",
+        "D": "Sirozsuz HCC yalnızca fibrolameller karsinom alt tipinde görülür; bu hastanın tanısı fibrolameller karsinom olmalıdır.",
+        "E": "AFP yüksekliği HBV taşıyıcılığının doğal bir bulgusudur ve HCC'yi göstermez; tanı yanlış konulmuş olmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HBV taşıyıcılarında HCC, siroz gelişmeden de doğrudan ortaya çıkabilir — HBV genomunun konak hepatosit DNA'sına entegrasyonu üzerinden doğrudan onkogenik etki gösterir. Bu, HCV/MASLD gibi diğer nedenlerden farklı, HBV'ye özgü bir özelliktir.",
+      "aciklama_detay": "HCC gelişiminde en büyük risk faktörü sirozdur ve vakaların %80'inden fazlasında altta yatan siroz mevcuttur. Ancak kronik HBV enfeksiyonu bu genel kuralın önemli bir istisnasıdır: HBV taşıyıcılarında hastalık, siroz gelişmeden de doğrudan HCC formunda ortaya çıkabilmektedir. Bunun nedeni HBV'nin viral genomunun konak hepatosit DNA'sına entegre olarak doğrudan onkogenik/mutajenik etkiler oluşturmasıdır — bu, HCV veya MASLD gibi genellikle sirotik zeminde HCC'ye yol açan diğer etiyolojilerden farklı bir özelliktir. Bu nedenle HBV taşıyıcılarında tarama kriterleri sirozdan bağımsız olarak (belirli yaş ve etnik/coğrafi risk faktörlerine göre) tanımlanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Siroz mutlak ön koşul değildir; HBV bu kuralın bilinen istisnasıdır.",
+        "B": "DOGRU — HBV, siroz olmadan doğrudan HCC'ye yol açabilen kendine özgü bir etiyolojidir.",
+        "C": "YANLIS — Aflatoksin B1 maruziyeti riski sinerjistik artırır ancak HBV'nin sirozsuz HCC yapma özelliği aflatoksinden bağımsız, kendi başına tanımlanmış bir mekanizmadır.",
+        "D": "YANLIS — Fibrolameller karsinom farklı bir demografik grupta (5-35 yaş, viral hepatit ilişkisi olmayan) görülür; bu hastanın klinik senaryosuyla örtüşmez.",
+        "E": "YANLIS — AFP yüksekliği HBV taşıyıcılığının doğal bir bulgusu değildir; HCC şüphesini artıran anlamlı bir bulgudur."
+      },
+      "etiketler": [
+        "HBV",
+        "Sirozsuz HCC",
+        "Risk Faktörleri",
+        "Viral Entegrasyon",
+        "Tarama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Llovet et al. Nat Rev Dis Primers 2021; EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s2",
+      "metin": "Sahra altı Afrika'da yaşayan, kronik HBV enfeksiyonu olan ve aynı zamanda uygunsuz koşullarda depolanmış tahıl/fıstık ürünleri tüketen bir toplulukta HCC insidansının beklenenden çok daha yüksek olduğu gözleniyor.\n\nBu durumun altında yatan sinerjistik risk mekanizması hangisidir?",
+      "secenekler": {
+        "A": "Aflatoksin B1 maruziyeti, HBV enfeksiyonundan bağımsız olarak tek başına etki gösterir; sinerjistik bir ilişki söz konusu değildir.",
+        "B": "Aflatoksin B1, gıdalarda üreyen bir mantar toksinidir ve özellikle HBV hastalarında HCC riskini sinerjistik olarak artırır — iki faktörün bir arada bulunması riski çarpımsal biçimde yükseltir.",
+        "C": "Aflatoksin B1 yalnızca HCV enfeksiyonu ile sinerjistik etki gösterir, HBV ile ilişkisi yoktur.",
+        "D": "Aflatoksin B1 maruziyeti HBV enfeksiyonuna karşı koruyucu bir etki gösterir; birlikte bulunmaları riski azaltır.",
+        "E": "Aflatoksin B1, yalnızca fibrolameller karsinom gelişiminde rol oynar, klasik HCC ile ilişkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aflatoksin B1 (gıda kaynaklı mantar toksini), özellikle HBV enfeksiyonu olan hastalarda HCC riskini sinerjistik olarak artırır — bu, endemik bölgelerde yüksek HCC insidansının önemli bir açıklamasıdır.",
+      "aciklama_detay": "Aflatoksin B1, uygun olmayan koşullarda depolanan tahıl, fıstık ve mısır gibi ürünlerde üreyen Aspergillus türü mantarların ürettiği bir mikotoksindir. Karaciğerde metabolize edildiğinde DNA'ya bağlanarak spesifik mutasyonlara (özellikle TP53 geninde karakteristik bir kodon 249 mutasyonuna) yol açar. Aflatoksin B1 maruziyeti tek başına da HCC riskini artırır, ancak kronik HBV enfeksiyonu ile birlikte bulunduğunda bu risk sinerjistik (çarpımsal, additiften daha fazla) olarak yükselir. Bu sinerjistik ilişki, Sahra altı Afrika ve Güneydoğu Asya gibi hem HBV endemisi hem de aflatoksin maruziyetinin yüksek olduğu bölgelerde gözlenen olağanüstü yüksek HCC insidansının önemli bir açıklamasıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlişki tam olarak sinerjistiktir, bağımsız/toplamsal değildir.",
+        "B": "DOGRU — Aflatoksin B1 + HBV birlikteliği riski sinerjistik olarak artırır.",
+        "C": "YANLIS — Sinerjistik ilişki özellikle HBV ile tanımlanmıştır, yalnızca HCV ile sınırlı değildir.",
+        "D": "YANLIS — Koruyucu değil, tam tersine riski artırıcı bir etkileşimdir.",
+        "E": "YANLIS — Aflatoksin B1, klasik (konvansiyonel) HCC ile ilişkilidir; fibrolameller karsinomla özel bir ilişkisi tanımlanmamıştır."
+      },
+      "etiketler": [
+        "Aflatoksin B1",
+        "HBV Sinerjisi",
+        "TP53 Mutasyonu",
+        "Endemik Bölge",
+        "Risk Faktörleri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kew MC. Liver Int 2003; McGlynn et al. Gastroenterology 2021"
+    },
+    {
+      "id": "s3",
+      "metin": "HCC tanılı bir hastanın tümör dokusunda somatik mutasyon analizi yapılıyor.\n\nHCC'de en yaygın olarak saptanan somatik mutasyon ve yaklaşık sıklığı hangisidir?",
+      "secenekler": {
+        "A": "CTNNB1 (β-katenin) mutasyonu, vakaların %90'ından fazlasında görülür ve en yaygın mutasyondur.",
+        "B": "TERT promotör mutasyonu, vakaların yaklaşık %40-65'inde görülen en yaygın somatik mutasyondur; TP53 ve CTNNB1 mutasyonları da sık görülür.",
+        "C": "TP53 mutasyonu tüm HCC vakalarının değişmez bir özelliğidir ve %100 penetranslıdır.",
+        "D": "HCC'de somatik mutasyon nadirdir; karsinogenez çoğunlukla epigenetik mekanizmalarla açıklanır, mutasyon rolü ihmal edilebilir düzeydedir.",
+        "E": "HBV DNA'sının konak genomuna entegrasyonu, tanımlanmış tek somatik genetik değişikliktir; nokta mutasyonları HCC'de görülmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TERT promotör mutasyonu (%40-65) HCC'de en yaygın somatik mutasyondur; TP53 ve CTNNB1 (β-katenin) mutasyonları da sık görülen diğer önemli genetik değişikliklerdir.",
+      "aciklama_detay": "HCC karsinogenezi genellikle kronik inflamasyon, doku nekrozu ve sonrasındaki rejenerasyon döngüsünün hücresel genetik hasar ve mutasyonları tetiklemesiyle başlar. Somatik düzeyde en yaygın mutasyon, vakaların %40-65'inde görülen TERT (telomeraz ters transkriptaz) promotör mutasyonudur — bu mutasyon telomeraz aktivitesini artırarak hücrelerin replikatif ölümsüzleşmesine katkıda bulunur ve genellikle karsinogenezin erken bir olayı olarak kabul edilir. Ayrıca TP53 (tümör baskılayıcı, hücre döngüsü/apoptoz kontrolü) ve CTNNB1/β-katenin (Wnt sinyal yolağı aktivasyonu) mutasyonları da sıklıkla görülür. Bu üç genin mutasyon profili HCC'nin moleküler sınıflandırmasında ve bazı hedefe yönelik tedavi stratejilerinde önemli rol oynar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — CTNNB1 sık görülse de TERT promotör mutasyonu kadar yaygın değildir; %90 gibi bir oran verilmemiştir.",
+        "B": "DOGRU — TERT promotör mutasyonu %40-65 ile en yaygın; TP53 ve CTNNB1 de sık görülür.",
+        "C": "YANLIS — TP53 mutasyonu sık görülse de %100 penetranslı/değişmez bir özellik değildir.",
+        "D": "YANLIS — Somatik mutasyonlar (TERT, TP53, CTNNB1) HCC patogenezinde iyi tanımlanmış ve merkezi rol oynayan değişikliklerdir.",
+        "E": "YANLIS — HBV entegrasyonu önemli bir mekanizma olsa da tek somatik değişiklik değildir; nokta mutasyonları (TERT, TP53, CTNNB1) da yaygın olarak görülür."
+      },
+      "etiketler": [
+        "TERT Promotör Mutasyonu",
+        "TP53",
+        "CTNNB1",
+        "Moleküler Patoloji",
+        "Somatik Mutasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nault et al. Gastroenterology 2013; Llovet et al. Nat Rev Dis Primers 2021"
+    },
+    {
+      "id": "s4",
+      "metin": "On dokuz yaşında kadın hasta, bilinen kronik karaciğer hastalığı veya siroz öyküsü olmaksızın, karında kitle hissi ve hafif karın ağrısı ile başvuruyor. Görüntülemede karaciğerde solucan yapılı, santral skar içeren büyük bir kitle saptanıyor; biyopside iyi diferansiye HCC hücreleri, belirgin eozinofilik sitoplazma ve fibröz bantlar görülüyor.\n\nBu klinik-patolojik tablo hangi HCC alt tipiyle en uyumludur?",
+      "secenekler": {
+        "A": "Klasik (konvansiyonel) HCC, sirozlu zeminde gelişen tipik formdur; bu yaş grubunda beklenmez.",
+        "B": "Fibrolameller karsinom; sirozu olmayan 5-35 yaş genç yetişkinlerde (erkek/kadın ayrımı gözetmeksizin) görülür ve genellikle diğer HCC alt tiplerine göre daha iyi prognozludur.",
+        "C": "Steatohepatitik HCC alt tipi; bu, yalnızca MASLD/MASH zemininde gelişir ve genç hastalarda görülmez.",
+        "D": "Makrotrabeküler masif HCC alt tipi; bu, en agresif seyirli varyanttır ve santral skar özelliği taşımaz.",
+        "E": "Bu tablo HCC ile uyumsuzdur; sirozsuz genç hastada karaciğer kitlesi mutlaka fokal nodüler hiperplazi olarak kabul edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sirozu olmayan genç (5-35 yaş) hastada santral skar + fibröz bantlarla giden bu tablo fibrolameller karsinomun karakteristik özellikleridir; genellikle diğer HCC alt tiplerine göre daha iyi prognozludur.",
+      "aciklama_detay": "Fibrolameller karsinom, klinik ve moleküler olarak klasik HCC'den belirgin şekilde ayrılan özel bir alt tiptir. Karakteristik özellikleri: sirozu OLMAYAN karaciğer zemininde, 5-35 yaş arası genç yetişkinlerde (erkek/kadın ayrımı gözetmeksizin) görülmesi, genellikle iyi diferansiye tümör hücreleri ve tümör içinde belirgin fibröz bantlar/santral skar içermesidir. Klasik viral hepatit veya siroz risk faktörleriyle ilişkisi yoktur. Genel olarak diğer HCC alt tiplerine kıyasla daha iyi prognozludur, kısmen cerrahi rezeksiyona daha uygun olmaları ve daha az sıklıkla arka planda siroz bulunması nedeniyle. Bu, sınavlarda sıkça sorgulanan, demografik profili (genç, sirozsuz) ile klasik HCC'den net biçimde ayrılan bir alt tiptir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Klasik HCC tipik olarak yaşlı, sirozlu hastalarda görülür; bu vaka profiline uymaz.",
+        "B": "DOGRU — Genç yaş + sirozsuz + santral skar/fibröz bant = fibrolameller karsinom.",
+        "C": "YANLIS — Steatohepatitik HCC alt tipi metabolik risk faktörleriyle ilişkilidir ve bu vakadaki spesifik histolojik/demografik özellikleri (santral skar, genç yaş, sirozsuzluk) taşımaz.",
+        "D": "YANLIS — Makrotrabeküler masif alt tip agresif seyirlidir ve bu vakadaki karakteristik santral skar/iyi prognoz profiliyle uyuşmaz.",
+        "E": "YANLIS — Biyopsi ile HCC hücreleri doğrulanmıştır; fokal nodüler hiperplazi bir malign tümör değildir ve bu histolojiyle uyuşmaz."
+      },
+      "etiketler": [
+        "Fibrolameller Karsinom",
+        "Genç Hasta",
+        "Sirozsuz HCC",
+        "Santral Skar",
+        "Histolojik Alt Tipler"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ang et al. Ann Surg Oncol 2013; Graham & Jain Hum Pathol 2018"
+    },
+    {
+      "id": "s5",
+      "metin": "Bilinen sirozu olan 58 yaşında erkek hasta, son 2 haftadır tekrarlayan açlık hipoglisemisi atakları nedeniyle endokrinolojiye yönlendiriliyor. Ayrıntılı tetkiklerde hemoglobin 19 g/dL (eritrositoz) saptanıyor ve karaciğerde 12 cm çaplı kitle görülüyor.\n\nBu klinik tablo hangi mekanizma ile en iyi açıklanır?",
+      "secenekler": {
+        "A": "Bu bulgular HCC ile ilgisizdir; hasta ayrı bir hematolojik ve endokrinolojik hastalık açısından araştırılmalıdır.",
+        "B": "HCC'nin yüksek metabolik aktivitesine veya ektopik hormon üretimine bağlı paraneoplastik sendromlar (hipoglisemi, eritrositoz) gelişebilir; büyük tümör boyutu bu tabloyla uyumludur.",
+        "C": "Hipoglisemi ve eritrositoz yalnızca fibrolameller karsinomda görülen spesifik bulgulardır, klasik HCC'de görülmez.",
+        "D": "Bu bulgular tümör rüptürünün erken belirtileridir; acil cerrahi gerektirir.",
+        "E": "Eritrositoz, HCC'de her zaman demir eksikliği anemisine sekonder kompanzatuar bir mekanizmayla gelişir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HCC'nin yüksek metabolik aktivitesi veya ektopik hormon üretimi (örn. IGF-2 benzeri madde → hipoglisemi; eritropoietin benzeri madde → eritrositoz) paraneoplastik sendromlara yol açabilir. Bu, büyük/ileri tümörlerde görülen tanınmış bir klinik özelliktir.",
+      "aciklama_detay": "HCC, tümörün yüksek metabolik aktivitesine veya ektopik hormon/hormon benzeri madde üretimine bağlı olarak çeşitli paraneoplastik sendromlarla prezente olabilir. Hipoglisemi, tümörün glukoz tüketiminin artması veya IGF-2 (insülin benzeri büyüme faktörü 2) veya prekürsörlerinin ektopik salgılanması ile oluşabilir. Eritrositoz (alyuvar yüksekliği), tümör hücrelerinin ektopik eritropoietin veya eritropoietin benzeri madde üretmesiyle açıklanır. Diğer paraneoplastik bulgular arasında hiperkalsemi (PTHrP benzeri madde) ve sulu ishal sayılabilir. Bu sendromlar özellikle büyük, ileri evre tümörlerde görülür ve HCC tanısını destekleyen ek klinik ipuçları olarak değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu bulgular HCC'nin bilinen paraneoplastik tezahürleridir, ayrı bir hastalık aramak gerekmez.",
+        "B": "DOGRU — Paraneoplastik sendromlar (hipoglisemi, eritrositoz) HCC'nin tanınmış klinik özellikleridir.",
+        "C": "YANLIS — Bu paraneoplastik bulgular klasik HCC'de de görülür, fibrolameller karsinomla sınırlı değildir.",
+        "D": "YANLIS — Tümör rüptürü akut şiddetli karın ağrısı, hipotansiyon ve hemoperitoneum ile prezente olur; bu vakadaki bulgularla (hipoglisemi, eritrositoz) örtüşmez.",
+        "E": "YANLIS — Bu vakada eritrositoz (hemoglobin yüksekliği) tarif edilmiştir, anemi değil; demir eksikliği anemisi ile ilgisi yoktur."
+      },
+      "etiketler": [
+        "Paraneoplastik Sendrom",
+        "Hipoglisemi",
+        "Eritrositoz",
+        "IGF-2",
+        "Klinik Bulgular"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Marrero et al. Hepatology 2018 (AASLD Guidelines); Qin S. World J Gastroenterol 2010"
+    },
+    {
+      "id": "s6",
+      "metin": "Kırk sekiz yaşında sirotik erkek hasta, tarama USG'sinde 2.5 cm karaciğer nodülü saptanması üzerine dinamik kontrastlı MRG ile değerlendiriliyor. Nodül arteriyel fazda belirgin hiperenhansman göstermekte, portal venöz fazda ise parankimden daha hızlı kontrast kaybı (washout) izlenmektedir. LI-RADS kategorisi LR-5 olarak raporlanıyor.\n\nBu hastada sonraki en doğru adım hangisidir?",
+      "secenekler": {
+        "A": "LR-5 kategorisi 'kesin HCC' anlamına gelir ve biyopsi gerektirmez; hasta doğrudan tedavi planlaması için multidisipliner konseye yönlendirilmelidir.",
+        "B": "LR-5 yalnızca 'olası HCC' anlamına gelir; kesin tanı için mutlaka perkütan biyopsi yapılmalıdır.",
+        "C": "Arteriyel hiperenhansman + washout paterni HCC dışı başka bir tümörü (örn. kolanjiokarsinom) düşündürür, biyopsi zorunludur.",
+        "D": "LI-RADS sistemi yalnızca BT için geçerlidir, MRG bulguları LI-RADS kategorisine dönüştürülemez.",
+        "E": "Bu bulgular yalnızca rejeneratif nodülle uyumludur, ileri tetkik gerekmez, 6 ay sonra kontrol yeterlidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "LI-RADS 5 (LR-5) = 'kesin HCC' anlamına gelir, biyopsi GEREKTİRMEZ. Yüksek riskli hastada (siroz) arteriyel hiperenhansman + washout paterni ile radyolojik tanı yeterlidir; sonraki adım tedavi planlaması.",
+      "aciklama_detay": "Yüksek riskli hasta gruplarında (siroz, kronik HBV vb.) doku biyopsisine gerek kalmaksızın radyolojik olarak HCC tanısı konabilmektedir. Standart yöntem dinamik çok fazlı kontrastlı BT veya MRG'dir. Klasik HCC nodülü arteriyel fazda hızlı kontrast tutar (hiperenhansman) ve portal venöz ya da geç fazda kontrastı karaciğer parankiminden daha hızlı atar (washout) — tam olarak bu vakada tarif edilen patern. LI-RADS (Liver Imaging Reporting and Data System), bu radyolojik özellikleri standardize eden bir sistemdir ve LI-RADS 5 (LR-5) kategorisi 'kesin HCC' anlamına gelir; bu kategori biyopsi GEREKTİRMEZ, doğrudan tedaviye yönlendirilebilir. Biyopsi yalnızca atipik durumlarda (LR-M = muhtemelen malign veya küçük LR-4 lezyonları) düşünülür.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — LR-5 = kesin HCC, biyopsisiz tedavi planlamasına geçilir.",
+        "B": "YANLIS — LR-5 'olası' değil 'kesin' HCC anlamına gelir; biyopsi gerekmez.",
+        "C": "YANLIS — Bu patern tam olarak HCC'nin klasik radyolojik imzasıdır, kolanjiokarsinomu düşündürmez (kolanjiokarsinom tipik olarak progresif/geç kontrastlanma gösterir, erken washout değil).",
+        "D": "YANLIS — LI-RADS hem BT hem MRG için geçerlidir ve her iki modalitede de kategorize edilebilir.",
+        "E": "YANLIS — Bu bulgular rejeneratif nodülle uyumlu değildir; rejeneratif nodüller washout göstermez, bu patern malignite lehinedir."
+      },
+      "etiketler": [
+        "LI-RADS",
+        "LR-5",
+        "Arteriyel Hiperenhansman",
+        "Washout",
+        "Biyopsisiz Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chernyak et al. Radiology 2018 (LI-RADS v2018); EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s7",
+      "metin": "Sirotik bir hastada karaciğer fonksiyonunu değerlendirmek için kullanılan skorlama sistemleri karşılaştırılıyor. Klinisyen, asit ve ensefalopati gibi subjektif/klinik değerlendirmeye dayanan parametrelerden bağımsız, yalnızca objektif laboratuvar değerlerine dayanan bir skor kullanmak istiyor.\n\nBu amaca en uygun skorlama sistemi hangisidir?",
+      "secenekler": {
+        "A": "Child-Pugh Sınıflaması; asit, ensefalopati, bilirubin, albümin ve INR'yi birlikte değerlendirir.",
+        "B": "ALBI (Albumin-Bilirubin) Skoru; yalnızca serum albümin ve bilirubin ölçümlerine dayanan, subjektif klinik parametreleri (asit, ensefalopati) elimine eden objektif bir skordur.",
+        "C": "MELD Skoru; öncelikli olarak nakil bekleme listesi önceliklendirmesi için kullanılır ve asit/ensefalopati değerlendirmesi içerir.",
+        "D": "BCLC Evreleme Sistemi; yalnızca tümör boyutu ve sayısını değerlendirir, karaciğer fonksiyonuyla ilgisi yoktur.",
+        "E": "RETREAT Skoru; karaciğer fonksiyonunu değil, yalnızca nakil sonrası tümör nüks riskini öngörür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ALBI Skoru yalnızca albümin ve bilirubin ölçümüne dayanan objektif bir skordur; Child-Pugh'un asit/ensefalopati gibi subjektif klinik değerlendirme gerektiren parametrelerini elimine eder.",
+      "aciklama_detay": "HCC evrelemesinde karaciğer fonksiyonunu değerlendirmek için birkaç farklı sistem kullanılır. Child-Pugh Sınıflaması, bilirubin ve albümin gibi laboratuvar değerlerinin yanı sıra asit ve ensefalopatinin klinik derecelendirmesini de içerir — bu subjektif parametreler değerlendiriciler arası tutarsızlığa yol açabilir. MELD Skoru esas olarak son dönem karaciğer hastalığında nakil önceliklendirmesi için kullanılır ve bilirubin, kreatinin, INR gibi laboratuvar değerlerine dayanır (asit/ensefalopati doğrudan içermez, ancak klinik pratikte Child-Pugh ile birlikte değerlendirilir). ALBI Skoru ise özel olarak Child-Pugh'un subjektif parametrelerini (asit, ensefalopati) elimine etmek amacıyla geliştirilmiş, yalnızca serum albümin ve bilirubin ölçümlerine dayanan objektif bir skordur — bu, klinisyenler arası değerlendirme farklılıklarını ortadan kaldırarak daha standardize bir karaciğer fonksiyon değerlendirmesi sağlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Child-Pugh tam olarak asit ve ensefalopati gibi subjektif parametreleri İÇERİR; sorunun aradığı özelliğin tersidir.",
+        "B": "DOGRU — ALBI yalnızca albümin+bilirubin ile objektif değerlendirme sağlar.",
+        "C": "YANLIS — MELD öncelikli olarak nakil listesi önceliklendirmesi içindir; sorudaki 'objektif, subjektif parametresiz' tanımına ALBI kadar spesifik uymaz.",
+        "D": "YANLIS — BCLC, tümör özelliklerinin yanı sıra karaciğer fonksiyonunu (genellikle Child-Pugh üzerinden) da içerir; karaciğer fonksiyonuyla ilgisiz değildir.",
+        "E": "YANLIS — RETREAT, nakil sonrası tümör NÜKS riskini öngörür, karaciğer fonksiyonunu değerlendirmez; soru ile alakasızdır."
+      },
+      "etiketler": [
+        "ALBI Skoru",
+        "Child-Pugh",
+        "Karaciğer Fonksiyonu",
+        "Objektif Skorlama",
+        "MELD"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Johnson et al. J Clin Oncol 2015; EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s8",
+      "metin": "Kırk beş yaşında Child-Pugh A sirozlu erkek hasta, karaciğer nakli bekleme listesine alınmadan önce değerlendiriliyor. Görüntülemede karaciğerde 4 cm çapında tek bir HCC nodülü saptanıyor, ekstrahepatik yayılım veya makrovasküler invazyon yok.\n\nBu hastanın nakil uygunluğu ve bekleme sürecindeki yönetimiyle ilgili en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tümör 5 cm'in altında olduğundan Milan Kriterlerini karşılar (tek tümör ≤5 cm); nakil listesine alınabilir ve bekleme sürecinde tümör büyümesini önlemek için köprüleme (bridging) tedavisi (ablasyon veya kemoembolizasyon) uygulanmalıdır.",
+        "B": "Milan Kriterleri yalnızca birden fazla tümör odağı olan hastalar için geçerlidir; tek tümörlü hastalarda boyuttan bağımsız olarak nakil doğrudan uygulanabilir.",
+        "C": "4 cm boyutundaki tek tümör Milan Kriterlerini AŞAR ve hasta nakil için kesinlikle uygun değildir.",
+        "D": "Bekleme listesinde köprüleme tedavisi önerilmez çünkü tümör büyümesi nakil sonrası nüks riskini etkilemez.",
+        "E": "Milan Kriterleri yalnızca cerrahi rezeksiyon uygunluğunu belirler, nakil kararında kullanılmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Milan Kriterleri: tek tümör ≤5 cm VEYA ≤3 tümör (her biri ≤3 cm). 4 cm'lik tek nodül bu kriteri karşılar → nakil uygun. Bekleme listesinde tümör büyümesini önlemek için köprüleme (ablasyon/kemoembolizasyon) uygulanır.",
+      "aciklama_detay": "Karaciğer nakli, rezeksiyona uygun olmayan ancak makrovasküler invazyonu ve karaciğer dışı yayılımı bulunmayan erken-orta evre HCC hastaları için potansiyel bir küratif tedavidir. Seçimde çoğunlukla Milan Kriterleri kullanılır: tek tümör ≤5 cm VEYA en fazla 3 tümör (her biri ≤3 cm), makrovasküler invazyon ve ekstrahepatik yayılım olmaması şartıyla. Bu vakada tek, 4 cm çapında nodül olduğundan (≤5 cm sınırını karşılıyor) ve ekstrahepatik yayılım/makrovasküler invazyon bulunmadığından Milan Kriterleri karşılanmaktadır ve hasta nakil listesine alınabilir. Nakil bekleme listesinde geçen sürede tümörün büyüyerek Milan Kriterlerinin dışına çıkması (ve dolayısıyla nakil hakkının kaybedilmesi) riskini önlemek amacıyla 'köprüleme' (bridging therapy) tedavisi olarak ablasyon veya kemoembolizasyon (TACE) uygulanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 4 cm tek tümör Milan Kriterlerini karşılar; nakil uygun + köprüleme tedavisi endike.",
+        "B": "YANLIS — Milan Kriterleri hem tek tümör (≤5cm) hem çoklu tümör (≤3 tümör, her biri ≤3cm) senaryolarını kapsar; yalnızca çoklu tümör için geçerli değildir.",
+        "C": "YANLIS — Tek tümör için sınır 5 cm'dir (3 cm sınırı yalnızca çoklu tümör senaryosunda geçerlidir); 4 cm'lik tek tümör kriteri karşılar.",
+        "D": "YANLIS — Köprüleme tedavisi tam olarak bekleme sırasında tümör büyümesini/Milan dışına çıkmayı önlemek için önerilir; nüks riskiyle ilişkilidir.",
+        "E": "YANLIS — Milan Kriterleri özellikle nakil uygunluğunu belirlemek için geliştirilmiş ve kullanılan bir sistemdir, rezeksiyon uygunluğu için değildir."
+      },
+      "etiketler": [
+        "Milan Kriterleri",
+        "Karaciğer Nakli",
+        "Köprüleme Tedavisi",
+        "Bridging Therapy",
+        "Nakil Uygunluğu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Mazzaferro et al. N Engl J Med 1996; EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s9",
+      "metin": "BCLC B evre HCC tanılı, çok odaklı büyük tümörleri olan bir hastada görüntülemede portal ven ana dalında tümör trombozu (PVTT, Vp3) saptanıyor. Girişimsel radyoloji ekibi loko-rejyonel tedavi seçeneklerini değerlendiriyor.\n\nBu hastada portal ven tümör trombozu varlığında hangi loko-rejyonel tedavi tercih edilmelidir ve neden?",
+      "secenekler": {
+        "A": "TACE (Transarteriyel Kemoembolizasyon); portal ven trombozu TACE için bir kontrendikasyon değildir ve ilk tercih olmalıdır.",
+        "B": "TARE (Transarteriyel Radyoembolizasyon, Yttrium-90); PVTT varlığında TACE yerine daha güvenle kullanılabilir çünkü TARE'nin embolik etkisi TACE'ye kıyasla daha düşüktür ve portal ven akımına daha az bağımlıdır.",
+        "C": "SBRT; PVTT varlığında ilk tercih edilen yöntemdir çünkü damar yoluyla girişim gerektirmez ve bu nedenle her zaman TARE'ye tercih edilir.",
+        "D": "PVTT varlığında tüm loko-rejyonel tedaviler kesin kontrendikedir; yalnızca sistemik tedaviye geçilmelidir.",
+        "E": "PVTT, karaciğer fonksiyonunu değerlendirmede kullanılan bir parametredir, tedavi seçimini etkilemez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Portal ven tümör trombozu (PVTT) varlığında TACE'nin ek iskemik/embolik etkisi karaciğer fonksiyonunu tehlikeye atabileceğinden, TARE (Yttrium-90 radyoembolizasyon) daha güvenle kullanılabilecek tercih edilen loko-rejyonel yöntemdir.",
+      "aciklama_detay": "TACE (Transarteriyel Kemoembolizasyon), kemoterapötik ilacın doğrudan tümör atardamarına verilip damarın tıkanmasına (iskemiye) yol açtığı bir tedavidir. Ancak portal ven tümör trombozu (PVTT) varlığında karaciğerin arteriyel kan akımı zaten kısmen kompanse edici bir rol üstlenmiş olabilir (portal ven akımının bozulmasına karşı); bu durumda TACE'nin ek arteriyel embolizasyonu karaciğerin geri kalan kan akımını daha da tehlikeye atarak akut karaciğer yetmezliğine yol açabilir. TARE (Transarteriyel Radyoembolizasyon), Yttrium-90 içeren mikroküreler ile damar içinden radyasyon uygulayan bir tedavidir; embolik/iskemik etkisi TACE'ye kıyasla daha azdır (temel etki mekanizması radyasyon, akut damar tıkanması değildir) ve bu nedenle PVTT mevcut olduğunda TACE yerine daha güvenle kullanılabilir. Bu, sınavlarda sıkça sorgulanan, PVTT'nin loko-rejyonel tedavi seçimini nasıl değiştirdiğine dair kritik bir ayrımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PVTT'de TACE'nin ek iskemik etkisi risklidir; TARE bu senaryoda tercih edilir.",
+        "B": "DOGRU — PVTT'de TACE yerine TARE tercih edilir çünkü embolik etkisi daha azdır ve portal akıma daha az bağımlıdır.",
+        "C": "YANLIS — SBRT, damar yoluyla erişimin mümkün OLMADIĞI durumlar için bir seçenektir; PVTT varlığında ilk tercih TARE'dir, SBRT'nin TARE'ye rutin üstünlüğü tanımlanmamıştır.",
+        "D": "YANLIS — PVTT tüm loko-rejyonel tedavileri kesin kontrendike kılmaz; TARE spesifik olarak bu senaryoda kullanılabilir bir seçenektir.",
+        "E": "YANLIS — PVTT karaciğer fonksiyon parametresi değildir, tümörün vasküler invazyon durumunu gösterir ve doğrudan tedavi seçimini etkiler."
+      },
+      "etiketler": [
+        "PVTT",
+        "TARE",
+        "TACE",
+        "Portal Ven Tümör Trombozu",
+        "Loko-Rejyonel Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Salem et al. Gastroenterology 2016; EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s10",
+      "metin": "İleri evre (BCLC C) HCC tanılı, karaciğer dışı akciğer metastazı gelişmiş, Child-Pugh A sınıfı ve ECOG performans skoru 1 olan bir hastada birinci basamak sistemik tedavi planlanıyor. Hastanın otoimmün hastalık öyküsü veya immünoterapi kontrendikasyonu yok.\n\nGüncel kılavuzlara göre bu hastada birinci basamak tedavi seçenekleri hangileridir?",
+      "secenekler": {
+        "A": "Yalnızca Sorafenib; immünoterapi ajanları HCC'de henüz araştırma aşamasındadır ve birinci basamakta kullanılmaz.",
+        "B": "Atezolizumab + Bevacizumab VEYA Tremelimumab + Durvalumab (STRIDE rejimi); günümüzde immün kontrol noktası inhibitörü kombinasyonları ileri evre HCC'de birinci basamak temel taşıdır.",
+        "C": "Doğrudan TACE uygulanmalıdır; karaciğer dışı metastaz varlığında dahi loko-rejyonel tedaviler önceliklidir.",
+        "D": "Lenvatinib, tüm ileri evre hastalarda immünoterapiye kıyasla üstün olduğu kanıtlanmış tek birinci basamak seçenektir.",
+        "E": "Bu hastada sistemik tedavi endike değildir; performans skoru ve karaciğer fonksiyonu yetersiz kabul edilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "BCLC C (karaciğer dışı metastaz, korunmuş karaciğer fonksiyonu/performans) evresinde birinci basamak standart: Atezolizumab+Bevacizumab veya Tremelimumab+Durvalumab (STRIDE) — immün kontrol noktası inhibitörü kombinasyonları temel taştır.",
+      "aciklama_detay": "Sistemik tedaviler, ileri evre hastalığı olan (BCLC C), karaciğer dışı metastaz geliştirmiş, makrovasküler portal ven invazyonu olan veya loko-rejyonel tedavilere yanıt vermeyen, ancak karaciğer fonksiyonları (Child-Pugh A/B) ve performansı belirli bir seviyede korunmuş hastalarda standart tedavidir — bu vaka tam olarak bu profile uymaktadır (Child-Pugh A, ECOG 1, akciğer metastazı). Günümüzde immün kontrol noktası inhibitörlerinin kombine formları birinci basamak temel taştır: Atezolizumab (anti-PD-L1 immünoterapi) + Bevacizumab (anti-VEGF anjiyogenez inhibitörü) veya çift immünoterapi kombinasyonu olan Tremelimumab (anti-CTLA-4) + Durvalumab (anti-PD-L1) (STRIDE rejimi). İmmünoterapi kontrendikasyonu bulunan veya tolerans gösteremeyecek hastalarda tirozin kinaz inhibitörlerinden (TKI) Lenvatinib veya Sorafenib kullanılır — ancak bu hasta immünoterapi için uygun olduğundan (kontrendikasyon yok), güncel kılavuzlara göre öncelik immünoterapi kombinasyonlarındadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İmmünoterapi kombinasyonları araştırma aşamasında değildir; ileri evre HCC'de FDA/EMA onaylı, kanıta dayalı birinci basamak standarttır.",
+        "B": "DOGRU — Atezolizumab+Bevacizumab veya STRIDE (Tremelimumab+Durvalumab) güncel birinci basamak standarttır.",
+        "C": "YANLIS — Karaciğer dışı metastaz varlığında loko-rejyonel tedaviler (TACE gibi) önceliksizdir; sistemik tedavi endikedir.",
+        "D": "YANLIS — Lenvatinib immünoterapiye üstün kanıtlanmamıştır; immünoterapi kontrendike/tolere edilemeyen hastalarda alternatif olarak kullanılır.",
+        "E": "YANLIS — Child-Pugh A ve ECOG 1 sistemik tedavi için uygun bir profildir; sistemik tedavi tam olarak bu hastalar için endikedir."
+      },
+      "etiketler": [
+        "Atezolizumab + Bevacizumab",
+        "STRIDE Rejimi",
+        "BCLC C",
+        "Birinci Basamak Sistemik Tedavi",
+        "İmmünoterapi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Finn et al. N Engl J Med 2020 (IMbrave150); Abou-Alfa et al. NEJM Evid 2022 (HIMALAYA/STRIDE)"
+    }
+  ]
+}

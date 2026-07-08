@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "id": "hepatosellular-karsinom",
+    "branch": "gastroenteroloji",
+    "baslik": "Hepatosellüler Karsinom (HCC)",
+    "altbaslik": "Risk faktörleri, TERT/TP53/CTNNB1 moleküler profili, LI-RADS tanı algoritması, BCLC evreleme, tedavi basamakları (rezeksiyon, nakil, TACE/TARE, atezolizumab+bevacizumab) ve mRECIST/LR-TR yanıt değerlendirmesi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Hepatosellüler karsinom (HCC), karaciğerin en sık görülen primer malign tümörüdür ve primer karaciğer kanserlerinin yaklaşık %75'ini oluşturur. Küresel çapta kansere bağlı ölümlerin en sık nedenleri arasında üçüncü sırada yer alır; genellikle kronik karaciğer hastalıkları zemininde gelişen agresif bir tümördür. Erkeklerde kadınlara kıyasla yaklaşık **3:1** oranında daha sık görülür."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Risk Faktörleri",
+      "kolonlar": [
+        "Kategori",
+        "Faktör",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Siroz ★",
+            "Vakaların >%80'inde altta yatan siroz mevcuttur",
+            "En büyük tekil risk faktörü, etiyolojiden bağımsız"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kronik HBV",
+            "Dünya vakalarının ~%50'si",
+            "Siroz GELİŞMEDEN de doğrudan HCC formunda ortaya çıkabilir — HBV'ye özgü bir özellik"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kronik HCV",
+            "Dünya vakalarının ~%20'si",
+            "Tipik olarak siroz zemininde gelişir"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "MASLD/MASH ★",
+            "Obezite, diyabet, metabolik sendrom ile güçlü ilişki",
+            "Batı toplumlarında hızla artan bir HCC nedeni"
+          ]
+        },
+        {
+          "hucreler": [
+            "Alkol / Tütün",
+            "Bağımsız risk faktörleri",
+            "—"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Aflatoksin B1 ★",
+            "Gıdalarda üreyen mantar toksini",
+            "Özellikle HBV hastalarında riski SİNERJİSTİK olarak artırır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Genetik Durumlar",
+            "Herediter hemokromatoz, alfa-1 antitripsin eksikliği, akut intermitan porfiri, glikojen depo hastalıkları",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Koruyucu Faktörler: HBV aşılaması, antiviral tedaviler, fiziksel aktivite, düzenli kahve tüketimi ve statin grubu ilaçların kullanımı HCC gelişiminde koruyucu olduğu bilinen faktörlerdir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Moleküler Özellikler",
+      "kolonlar": [
+        "Mutasyon",
+        "Sıklık",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "TERT Promotör ★",
+            "%40-65",
+            "En yaygın somatik mutasyon"
+          ]
+        },
+        {
+          "hucreler": [
+            "TP53",
+            "Sık",
+            "—"
+          ]
+        },
+        {
+          "hucreler": [
+            "CTNNB1 (β-katenin)",
+            "Sık",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Histolojik Alt Tipler ve İmmünohistokimya",
+      "kolonlar": [
+        "Alt Tip / Belirteç",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Steatohepatitik, şeffaf hücreli, makrotrabeküler masif, skiröz, nötrofil/lenfosit zengin",
+            "Standart HCC'nin histolojik varyantları"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Fibrolameller Karsinom ★",
+            "Sirozu OLMAYAN, 5-35 yaş genç yetişkinlerde (erkek/kadın ayrımı yok) görülür; genellikle daha iyi prognoz"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "İHK Belirteçleri",
+            "Hep Par 1, Arginaz-1, Glipikan-3 (GPC3) — genellikle pozitif boyanır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular",
+      "satirlar": [
+        {
+          "metin": "Erken evre HCC genellikle **asemptomatiktir**. İlerlemiş hastalıkta en sık bulgular karaciğer fonksiyon dekompanzasyonuna ikincildir: sarılık, yeni başlayan asit, ensefalopati, gastrointestinal kanama. İleri evre lezyonlarda sağ üst kadran ağrısı, kilo kaybı, erken doyma, kaşeksi ve ele gelen karında kitle görülebilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Nadir ama Kritik Klinik Durumlar: (1) Tümörün ANİ RÜPTÜRÜ — akut şiddetli karın ağrısı, hipotansiyon ve hemoperitoneuma yol açan ölümcül bir komplikasyondur. (2) Paraneoplastik sendromlar — tümörün yüksek metabolik aktivitesi/ektopik hormon üretimine bağlı hipoglisemi, eritrositoz, hiperkalsemi veya sulu ishal şeklinde ortaya çıkabilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tarama ve Sürveyans",
+      "kolonlar": [
+        "Grup",
+        "Kriter"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Tüm siroz hastaları",
+            "Etiyolojiden bağımsız — tarama endikasyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "HBV Taşıyıcıları",
+            "Afrika kökenli VEYA HBV endemik bölgeden gelenler: erkek >40 yaş, kadın >50 yaş"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ailede HCC Öyküsü",
+            "HBV enfekte bireylerde tarama endikasyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Diğer",
+            "İleri evre fibrozisi olan HCV hastaları, akut hepatik porfiri hastaları"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Tarama Yöntemi ★",
+            "6 ayda bir karaciğer USG + serum AFP ölçümü"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı — LI-RADS Algoritması",
+      "satirlar": [
+        {
+          "metin": "Yüksek riskli hasta gruplarında (siroz, kronik HBV vb.) doku biyopsisine gerek KALMAKSIZIN radyolojik olarak HCC tanısı konabilir. Standart yöntem: dinamik çok fazlı kontrastlı **BT** veya **MRG**. Klasik HCC nodülü: arteriyel fazda hızlı kontrast tutulumu (**hiperenhansman**) + portal venöz/geç fazda kontrastı parankimden daha hızlı atma (**washout**)."
+        },
+        {
+          "metin": "**LI-RADS (Liver Imaging Reporting and Data System):** Amerikan Radyoloji Koleji standardı. **LI-RADS 5 = kesin HCC**, biyopsi GEREKTİRMEZ. Atipik durumlarda (LR-M = muhtemelen malign, veya küçük LR-4 lezyonları) doku tanısı için biyopsi tercih edilebilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Evreleme ve Prognostik Sistemler",
+      "kolonlar": [
+        "Sistem",
+        "Amaç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "BCLC (Barcelona Clinic Liver Cancer) ★",
+            "Tümör boyutu/sayısı + performans statüsü (ECOG) + karaciğer fonksiyonu (Child-Pugh) — dünyada tedavi planlaması için en yaygın kabul gören sistem"
+          ]
+        },
+        {
+          "hucreler": [
+            "Child-Pugh Sınıflaması",
+            "Karaciğer fonksiyonunu değerlendirir"
+          ]
+        },
+        {
+          "hucreler": [
+            "MELD Skoru",
+            "Son dönem nakil bekleyen hastalarda kullanılır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ALBI Skoru ★",
+            "Yalnızca albümin + bilirubin ölçümüne dayanan OBJEKTİF skor; asit/ensefalopati gibi subjektif Child-Pugh parametrelerini elimine eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "RETREAT, MoRAL",
+            "Karaciğer nakli sonrası tümör nüksü riskini öngören prognostik puanlama araçları"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Tedavi Seçimi Multidisipliner Konsey Gerektirir: HCC tedavisi mutlaka hepatoloji, cerrahi, onkoloji ve girişimsel radyoloji uzmanlarının bulunduğu multidisipliner konsey tarafından belirlenmelidir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Küratif Tedaviler",
+      "kolonlar": [
+        "Yöntem",
+        "Endikasyon",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Cerrahi Rezeksiyon ★",
+            "Portal hipertansiyon YOK, karaciğer rezervi iyi (Child-Pugh A), tümör karaciğere sınırlı",
+            "Küratif ilk seçenek; yetersiz FLR (future liver remnant) varsa pre-op portal ven embolizasyonu (PVE) ile FLR büyütülür"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Karaciğer Nakli ★",
+            "Rezeksiyona uygun değil ama makrovasküler invazyon/ekstrahepatik yayılım YOK",
+            "Milan Kriterleri: tek tümör ≤5 cm VEYA ≤3 tümör (her biri ≤3 cm); bekleme listesinde büyümeyi önlemek için 'köprüleme' (bridging) ablasyon/kemoembolizasyon"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Lokal Ablatif Tedaviler",
+            "Cerrahi/nakle uygun değil, küçük (tercihen ≤3 cm) lokalize tümör",
+            "RFA ve MWA (termal, tam nekroz) ilk tercih; PEI anatomik olarak termal ablasyonun uygulanamadığı durumlara saklanır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Loko-Rejyonel Tedaviler (BCLC B — İnoperabl, Çok Odaklı/Büyük Tümör)",
+      "kolonlar": [
+        "Yöntem",
+        "Mekanizma",
+        "Özel Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "TACE (Transarteriyel Kemoembolizasyon) ★",
+            "Kemoterapötik ilaç doğrudan tümör atardamarına verilir + damar tıkanması (iskemi)",
+            "En yaygın loko-rejyonel tedavi; bazen termal ablasyonla kombine edilir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "TARE (Transarteriyel Radyoembolizasyon) ★",
+            "Yttrium-90 içeren mikroküreler ile intravasküler radyasyon",
+            "Portal ven tümör trombozu (PVTT) varsa TACE yerine daha güvenle kullanılır"
+          ]
+        },
+        {
+          "hucreler": [
+            "SBRT (Stereotaktik Vücut Radyoterapisi)",
+            "Yüksek doz odaklı radyasyon",
+            "Ekstrahepatik metastaz yok + tümör arterlerine TACE/TARE için damar yoluyla erişilemiyorsa tercih edilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Sistemik Tedaviler (BCLC C — İleri Evre)",
+      "kolonlar": [
+        "Basamak",
+        "Rejim",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Birinci Basamak ★",
+            "Atezolizumab (immünoterapi) + Bevacizumab (anti-anjiyojenik) VEYA Tremelimumab + Durvalumab (çift immünoterapi, STRIDE rejimi)",
+            "İmmün kontrol noktası inhibitörü kombinasyonları günümüzde temel taştır"
+          ]
+        },
+        {
+          "hucreler": [
+            "İmmünoterapi Kontrendike/Tolere Edilemiyor",
+            "Lenvatinib veya Sorafenib (TKI)",
+            "Hedefe yönelik tirozin kinaz inhibitörleri"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Tedavi Yanıtının Değerlendirilmesi: HCC tedavi başarısı tümörün basitçe küçülmesinden ziyade lezyonun NEKROZA uğrama derecesine (canlılık kaybı) bakılarak değerlendirilir. Konvansiyonel BT/MR düz boyut ölçümü, nekroza bağlı 'psödoprogresyon' nedeniyle yanıltıcı olabilir. Bu nedenle: **mRECIST** (yalnızca arteriyel fazda aktif kanlanan/canlı kısımlar ölçülür), ablatif tedavilerde **LI-RADS Tedavi Yanıtı (LR-TR)**, immünoterapi yanıtında ise atipik gecikmiş yanıt paternlerini ele alan **iRECIST** kullanılır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — HCC 7 Altın Kural: (1) Siroz en büyük risk faktörü (>%80); HBV siroz olmadan da doğrudan HCC yapabilir. (2) Aflatoksin B1 + HBV = sinerjistik risk artışı. (3) LI-RADS 5 = biyopsisiz kesin HCC tanısı (arteriyel hiperenhansman + washout). (4) BCLC = dünyada en yaygın evreleme; ALBI = objektif (yalnızca albümin+bilirubin) karaciğer fonksiyon skoru. (5) Milan kriterleri = nakil uygunluğu (tek ≤5cm veya ≤3 tümör her biri ≤3cm). (6) PVTT varlığında TACE yerine TARE tercih edilir. (7) Tedavi yanıtı boyut değil canlılık (nekroz) ile değerlendirilir — mRECIST/LR-TR/iRECIST."
+    }
+  ]
+}
