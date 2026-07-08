@@ -59,9 +59,10 @@
           "id": "behcet-hastaligi",
           "baslik": "Behçet Hastalığı",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         }
       ]
     }

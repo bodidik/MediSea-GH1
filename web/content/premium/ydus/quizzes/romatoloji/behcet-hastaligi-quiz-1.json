@@ -1,0 +1,308 @@
+{
+  "id": "quiz-roma-behcet-001",
+  "baslik": "Behçet Hastalığı — Soru Seti 1",
+  "branch": "romatoloji",
+  "topic": "behcet-hastaligi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yirmi sekiz yaşında erkek hasta, tekrarlayan oral aftlar, genital ülserler ve alt ekstremitede yüzeyel tromboflebit ile başvuruyor. Genetik testte HLA-B*51 pozitifliği saptanıyor.\n\nBH patogenezinde HLA-B*51'in rolü ve bu genle güçlü epistatik etkileşim gösteren gen hangisidir?",
+      "secenekler": {
+        "A": "HLA-B*51, BH gelişimi için bilinen en güçlü genetik risk faktörüdür ve taşıyıcılarda riski yaklaşık 5.8 kat artırır; peptit kırpılmasından sorumlu ERAP1 genindeki Hap10 gibi polimorfizmler HLA-B*51 ile güçlü bir epistatik etkileşime girer.",
+        "B": "HLA-B*51 BH ile hiçbir ilişkisi olmayan, tesadüfen saptanan bir bulgudur.",
+        "C": "HLA-B*51'in epistatik etkileşim gösterdiği gen STAT4'tür, ERAP1 ile ilişkisi yoktur.",
+        "D": "HLA-B*51 taşıyıcılığı hastalık riskini azaltan koruyucu bir faktördür.",
+        "E": "ERAP1 geni yalnızca lipid metabolizmasıyla ilgilidir, peptit işlemeyle ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "HLA-B*51, BH'nin en güçlü genetik risk faktörüdür (risk ×5.8). ERAP1 (Hap10 polimorfizmi), peptit kırpılmasındaki rolü nedeniyle HLA-B*51 ile güçlü epistatik etkileşime girer — 'MHC-I-opati' kavramının moleküler temelidir.",
+      "aciklama_detay": "BH'nin genetik yatkınlık zemininde çevresel tetikleyicilerin uyardığı otoimmün/otoinflamatuar veya 'MHC-I-opati' yelpazesinde bir hastalık olduğu kabul edilir. HLA-B*51 alleli, hastalık gelişimi için bilinen en güçlü genetik risk faktörüdür ve taşıyıcılarda riski yaklaşık 5.8 kat artırır. Ayrıca peptit kırpılmasından sorumlu olan ERAP1 genindeki Hap10 gibi polimorfizmlerin HLA-B*51 ile güçlü bir epistatik etkileşime girdiği gösterilmiştir. ERAP1, MHC sınıf I molekülleri (HLA-B*51 dahil) tarafından sunulacak peptidlerin işlenmesinde (trimming) rol oynar; bu nedenle ERAP1 varyantları HLA-B*51'in antijen sunum fonksiyonunu doğrudan etkileyerek hastalık riskini modüle eder — bu epistatik ilişki, BH'nin neden 'MHC-I-opati' spektrumunda (ankilozan spondilit, psoriazis gibi diğer HLA-I ilişkili hastalıklarla ortak bir mekanistik temel paylaşan) sınıflandırıldığını açıklar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — HLA-B*51 en güçlü risk faktörü (×5.8); ERAP1-Hap10 ile epistatik etkileşim.",
+        "B": "YANLIS — HLA-B*51, BH ile iyi tanımlanmış, en güçlü genetik ilişkiye sahip bir belirteçtir.",
+        "C": "YANLIS — Epistatik etkileşim spesifik olarak ERAP1 (Hap10) ile tanımlanmıştır; STAT4 ayrı, bağımsız bir yatkınlık genidir.",
+        "D": "YANLIS — HLA-B*51 taşıyıcılığı riski AZALTMAZ, tam tersine ARTIRIR (×5.8).",
+        "E": "YANLIS — ERAP1 tam olarak PEPTİT İŞLEME (kırpılma) fonksiyonuna sahiptir, bu MHC-I antijen sunumu için kritiktir."
+      },
+      "etiketler": [
+        "HLA-B*51",
+        "ERAP1",
+        "Epistasis",
+        "MHC-I-opati",
+        "Genetik Yatkınlık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kirino et al. Nat Genet 2013; Takeuchi et al. Nat Genet 2017"
+    },
+    {
+      "id": "s2",
+      "metin": "BH tanılı bir hastada tromboz eğilimi araştırılıyor ve alt ekstremite derin ven trombozunun histopatolojik incelemesinde pıhtının damar duvarına sıkı yapışık olduğu, belirgin endotel inflamasyonu eşliğinde gösteriliyor.\n\nBH'deki venöz trombozun patofizyolojik temeli ve klasik venöz tromboembolizmden farkı nedir?",
+      "secenekler": {
+        "A": "BH'deki tromboz klasik pıhtılaşma faktörü eksikliği/fazlalığına (koagülopati) bağlıdır, klasik DVT ile aynı mekanizmayı paylaşır.",
+        "B": "Trombozun kökeninde koagülopatiden ziyade yoğun endotel inflamasyonu (vaskülit) vardır; bu nedenle pıhtılar damar duvarına sıkı yapışıktır — bu, BH'yi klasik trombofili kaynaklı DVT'den ayıran temel patofizyolojik farktır.",
+        "C": "BH'de venöz tromboz yalnızca hareketsizliğe bağlı gelişir, vaskülitle ilgisi yoktur.",
+        "D": "Pıhtının damar duvarına gevşek bağlı olması, BH'deki trombozun ayırt edici özelliğidir.",
+        "E": "BH'de tromboz mekanizması tamamen bilinmemektedir, hiçbir patofizyolojik model önerilmemiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "BH'de tromboz, koagülopatiden değil, YOĞUN ENDOTEL İNFLAMASYONUNDAN (vaskülit) kaynaklanır — pıhtı damar duvarına SIKI YAPIŞIKTIR. Bu, 'thrombo-inflamasyon' kavramının klinik karşılığıdır ve klasik trombofilik DVT'den temel bir ayrımdır.",
+      "aciklama_detay": "Vasküler Tutulum (Anjiyo-Behçet) bölümünde belirtildiği gibi, trombozun kökeninde koagülopatiden ziyade yoğun endotel inflamasyonu (vaskülit) vardır; bu nedenle pıhtılar damar duvarına sıkı yapışıktır. Bu patofizyolojik özellik, BH'deki tromboembolizmin klasik trombofilik durumlardan (Faktör V Leiden, protein C/S eksikliği gibi) temelde farklı olduğunu gösterir — BH'de birincil sorun pıhtılaşma sisteminin kendisi değil, damar duvarının (endotelin) inflamatuar hasarıdır. Bu inflamatuar temel, İmmünolojik Disregülasyon (Thrombo-inflamasyon) bölümünde açıklanan mekanizmayla uyumludur: nötrofil hiperaktivitesi, ROS ve NET aşırı üretimi endotel disfonksiyonuna ve doğrudan vasküler tromboza yol açar. Bu ayrım klinik olarak kritik öneme sahiptir çünkü tedavi yaklaşımını belirler — BH'de tromboz tedavisi immünsüpresyon ağırlıklıdır (saf antikoagülan yeterli değildir), klasik trombofilide ise antikoagülasyon esastır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — BH'deki mekanizma İNFLAMATUAR (vaskülit) temellidir, klasik koagülopatiden farklıdır; bu ayrım tedavi stratejisini de değiştirir.",
+        "B": "DOGRU — Endotel inflamasyonu (vaskülit) → duvara sıkı yapışık pıhtı; koagülopatiden temel farkı budur.",
+        "C": "YANLIS — Mekanizma hareketsizlikle değil, doğrudan VASKÜLİTLE (endotel inflamasyonu) açıklanır.",
+        "D": "YANLIS — Tam tersine, pıhtı damar duvarına SIKI (gevşek değil) yapışıktır; bu, inflamatuar sürecin bir sonucudur.",
+        "E": "YANLIS — BH'deki tromboz mekanizması (thrombo-inflamasyon, endotel inflamasyonu, NET/ROS) iyi tanımlanmış, açık bir patofizyolojik modele sahiptir."
+      },
+      "etiketler": [
+        "Anjiyo-Behçet",
+        "Thrombo-inflamasyon",
+        "Vaskülit",
+        "Venöz Tromboz",
+        "Endotel İnflamasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Emmi et al. Nat Rev Rheumatol 2018; Ideguchi et al. Rheumatol Int 2011"
+    },
+    {
+      "id": "s3",
+      "metin": "BH şüphesiyle değerlendirilen bir hastada alt ekstremite venöz ultrasonografisi yapılıyor ve ortak femoral ven duvar kalınlığı 0.7 mm ölçülüyor.\n\nBu radyolojik bulgunun BH tanısındaki değeri nedir?",
+      "secenekler": {
+        "A": "Bu ölçüm BH tanısıyla hiçbir ilişkisi olmayan, rastgele bir bulgudur.",
+        "B": "Ultrasonografide ortak femoral ven duvar kalınlığının ≥0.5 mm ölçülmesi, BH tanısında çok spesifik bir radyolojik belirteçtir; bu hastadaki 0.7 mm ölçüm bu eşiği aşmaktadır ve BH'yi destekleyen önemli bir bulgudur.",
+        "C": "Femoral ven duvar kalınlığı yalnızca akut DVT'nin varlığını gösterir, BH'ye özgü bir bulgu değildir.",
+        "D": "Bu ölçüm yöntemi yalnızca arteriyel tutulumu değerlendirmek için kullanılır, venöz sistemle ilgisi yoktur.",
+        "E": "0.5 mm eşiği, BH dışlanması için kullanılan bir bulgudur; üzerindeki değerler BH'yi dışlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ortak femoral ven duvar kalınlığı ≥0.5 mm, BH tanısında ÇOK SPESİFİK bir USG belirtecidir. Bu hastada 0.7 mm (eşiğin üzerinde) ölçülmüştür, bu da BH'yi destekleyen önemli bir radyolojik bulgudur.",
+      "aciklama_detay": "Ultrasonografide ortak femoral ven duvar kalınlığının ≥0.5 mm ölçülmesi, BH tanısında çok spesifik bir radyolojik belirteçtir. Bu bulgu, BH'deki venöz trombozun altında yatan patofizyolojiyi (endotel inflamasyonu/vaskülit) yansıtır — venöz duvarın kendisi inflamatuar süreç nedeniyle kalınlaşmıştır, bu yalnızca akut trombüs varlığından bağımsız, kronik/tekrarlayan vaskülitik sürecin bir göstergesidir. Bu özellik, BH'deki venöz tutulumu klasik (yalnızca trombofiliye bağlı) DVT'den ayırt etmede yardımcı olabilir çünkü klasik DVT'de duvar kalınlaşması bu derecede karakteristik/spesifik değildir. Bu hastada ölçülen 0.7 mm, 0.5 mm eşiğinin üzerinde olduğundan, BH tanısını destekleyen önemli bir ek radyolojik veridir ve klinik değerlendirmeyle (mukokutanöz bulgular, aile öyküsü, diğer sistem tutulumları) birlikte yorumlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu ölçüm BH tanısında AÇIKÇA TANIMLANMIŞ, spesifik bir radyolojik belirteçtir.",
+        "B": "DOGRU — Femoral ven duvar kalınlığı ≥0.5 mm çok spesifik BH belirtecidir; 0.7 mm bu eşiği aşar.",
+        "C": "YANLIS — Bu bulgu yalnızca akut DVT ile sınırlı değildir; BH'ye özgü kronik vaskülitik duvar değişikliğini yansıtır ve spesifik olarak BH ile ilişkilendirilmiştir.",
+        "D": "YANLIS — Bu ölçüm yöntemi VENÖZ sistemi (femoral ven) değerlendirir, arteriyel tutulumla ilgili değildir.",
+        "E": "YANLIS — Tam tersine, ≥0.5 mm eşiği BH tanısını DESTEKLEYEN (dışlamayan) bir bulgudur; yüksek değerler BH lehine yorumlanır."
+      },
+      "etiketler": [
+        "Femoral Ven Duvar Kalınlığı",
+        "Ultrasonografi",
+        "Radyolojik Belirteç",
+        "Anjiyo-Behçet Tanısı",
+        "Spesifik Bulgu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Yurdakul et al. Ann Rheum Dis 1996; Ozguler et al. Rheumatology 2021"
+    },
+    {
+      "id": "s4",
+      "metin": "BH tanılı bir hastada tekrarlayan alt ekstremite yüzeyel tromboflebit atakları ve eş zamanlı olarak toraks BT'sinde pulmoner arter anevrizması (PAA) saptanıyor.\n\nBu klinik-radyolojik birliktelik hangi eponim ile adlandırılır ve klinik önemi nedir?",
+      "secenekler": {
+        "A": "Bu birliktelik 'Hughes-Stovin Sendromu' olarak adlandırılır; periferik ven trombozları ve PAA birlikteliğini tanımlar ve BH'nin en korkulan, fatal hemoptiziye yol açabilen komplikasyonlarından biridir.",
+        "B": "Bu birliktelik 'Sjögren Sendromu' olarak adlandırılır ve BH ile hiçbir ilişkisi yoktur.",
+        "C": "PAA ve ven trombozu birlikteliği rastlantısaldır, herhangi bir eponimle adlandırılmamıştır.",
+        "D": "Bu tablo 'Löfgren Sendromu' olarak bilinir ve sarkoidoza özgüdür.",
+        "E": "PAA varlığında ven trombozu görülmesi beklenmez, bu iki bulgu birbirini dışlar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Periferik ven trombozları + PAA birlikteliği 'Hughes-Stovin Sendromu' olarak adlandırılır — BH'nin en korkulan, fatal hemoptiziye yol açabilen vasküler komplikasyonlarından biridir.",
+      "aciklama_detay": "Pulmoner arter anevrizması (PAA) fatal hemoptiziye yol açabildiğinden en korkulan tutulumdur. Periferik ven trombozları ve PAA birlikteliği 'Hughes-Stovin Sendromu' olarak adlandırılır. Bu sendrom, BH'nin vasküler spektrumunun en ciddi ve yaşamı tehdit eden formlarından birini temsil eder — hem venöz (tromboz) hem arteriyel (anevrizma) tutulumun eş zamanlı bulunması, hastalığın 'değişken çaplı damar vasküliti' karakterini en dramatik şekilde gösterir. Bu birlikteliğin klinik önemi büyüktür çünkü PAA'lı hastalarda standart antikoagülan tedavi (venöz tromboz için düşünülebilecek) KONTRENDİKE olabilir — anevrizma rüptürü riskini artırarak fatal hemoptiziyi tetikleyebilir. Bu nedenle Hughes-Stovin sendromu tanındığında, tedavi yaklaşımı agresif immünsüpresyona (siklofosfamid + yüksek doz steroid) yönelmeli, antikoagülandan kaçınılmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hughes-Stovin Sendromu = periferik ven trombozu + PAA; en korkulan, fatal hemoptizi riski taşıyan BH komplikasyonu.",
+        "B": "YANLIS — Sjögren Sendromu ayrı bir otoimmün hastalıktır (kuru göz/ağız ile karakterize), bu vasküler birliktelikle ilgisi yoktur.",
+        "C": "YANLIS — Bu birliktelik tam olarak tanımlanmış, isimlendirilmiş (Hughes-Stovin) klinik bir sendromdur, rastlantısal değildir.",
+        "D": "YANLIS — Löfgren Sendromu (akut sarkoidoz: eritema nodozum + bilateral hiler LAP + artralji) tamamen farklı bir hastalık ve klinik tablodur.",
+        "E": "YANLIS — Tam tersine, bu iki bulgu (ven trombozu + PAA) BH'de BİRLİKTE görülebilir ve özel bir sendrom (Hughes-Stovin) olarak tanımlanmıştır."
+      },
+      "etiketler": [
+        "Hughes-Stovin Sendromu",
+        "Pulmoner Arter Anevrizması",
+        "Fatal Hemoptizi",
+        "Vasküler Behçet",
+        "Eponim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hughes & Stovin Br J Dis Chest 1959; Emmi et al. Nat Rev Rheumatol 2018"
+    },
+    {
+      "id": "s5",
+      "metin": "BH tanılı bir hasta, alt ekstremite derin ven trombozu nedeniyle yalnızca standart antikoagülan tedavi (varfarin) ile izleniyor; immünsüpresif tedavi başlanmamış. Hastada aynı zamanda tanınmamış, asemptomatik bir pulmoner arter anevrizması mevcut.\n\nBu tedavi yaklaşımının potansiyel tehlikesi ve doğru tedavi stratejisi nedir?",
+      "secenekler": {
+        "A": "Saf antikoagülan kullanımı tek başına rölapsları önlemez ve hastada gizli bir PAA varsa fatal rüptür ve hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır; doğru yaklaşım DVT'de kortikosteroid + azatiyoprin (veya siklofosfamid/anti-TNF) ile İMMÜNSÜPRESYONDUR, çünkü altta yatan sorun vaskülittir.",
+        "B": "Bu tedavi yaklaşımı tamamen doğrudur; BH'de venöz tromboz standart antikoagülasyonla yönetilir, immünsüpresyona gerek yoktur.",
+        "C": "PAA varlığı antikoagülan tedavinin etkinliğini artırır, bu nedenle mevcut yaklaşıma devam edilmelidir.",
+        "D": "Antikoagülan tedavi PAA rüptürünü önleyici bir etkiye sahiptir, bu nedenle güvenle kullanılabilir.",
+        "E": "BH'de DVT tedavisinde tek doğru yaklaşım yüksek doz antikoagülandır, immünsüpresif ajanların hiçbir rolü yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Saf antikoagülan BH'de rölapsları önlemez ve gizli PAA varsa rüptür/fatal hemoptizi riski taşır. Doğru yaklaşım immünsüpresyondur (kortikosteroid+azatiyoprin/siklofosfamid/anti-TNF) çünkü sorun vaskülittir, koagülopati değildir.",
+      "aciklama_detay": "Derin ven trombozlarında (DVT) klasik pıhtılaşma bozukluğundan ziyade vaskülit ön planda olduğu için tedavi immünsüpresyondur. Kortikosteroid + Azatiyoprin (veya Siklofosfamid/Anti-TNF) kullanılır. Saf antikoagülan kullanımı tek başına rölapsları önlemez ve hastada gizli bir pulmoner arter anevrizması (PAA) varsa fatal rüptür ve hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır. Bu, BH tedavisinde sıklıkla vurgulanan kritik bir güvenlik uyarısıdır: BH'de tromboz, damar duvarındaki inflamasyonun bir sonucu olduğundan, yalnızca pıhtılaşmayı hedefleyen antikoagülan tedavi altta yatan patolojiyi (vaskülit) tedavi etmez, bu nedenle yeni tromboz atakları (rölapslar) devam edebilir. Daha da tehlikelisi, BH hastalarında sıklıkla eşlik edebilen (ve bazen asemptomatik/tanınmamış) PAA varlığında, antikoagülasyon anevrizma içindeki pıhtının stabilize edici etkisini ortadan kaldırarak rüptür riskini artırabilir — bu, ölümcül hemoptiziye yol açabilecek acil bir klinik senaryodur. Bu nedenle BH'de yeni DVT tanısı konan her hastada, tedaviye başlamadan önce (özellikle antikoagülan düşünülüyorsa) gizli PAA'yı dışlamak için görüntüleme (toraks BT anjiyografi) değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Saf antikoagülan yetersiz + PAA'da tehlikeli; doğru tedavi immünsüpresyon (steroid+azatiyoprin/siklofosfamid/anti-TNF).",
+        "B": "YANLIS — Bu yaklaşım YANLIŞTIR; BH'de standart antikoagülasyon TEK BAŞINA yeterli/güvenli değildir, immünsüpresyon esastır.",
+        "C": "YANLIS — PAA varlığı antikoagülan etkinliğini artırmaz; tam tersine antikoagülan kullanımını TEHLİKELİ hale getirir (rüptür riski).",
+        "D": "YANLIS — Antikoagülan PAA rüptürünü ÖNLEMEZ; tam tersine rüptür riskini ARTIRABİLİR, bu nedenle dikkatli olunmalı/kaçınılmalıdır.",
+        "E": "YANLIS — Tam tersine, BH'de DVT tedavisinde İMMÜNSÜPRESİF ajanlar (steroid, azatiyoprin, siklofosfamid, anti-TNF) TEMEL tedavi yaklaşımıdır."
+      },
+      "etiketler": [
+        "Antikoagülan Tuzağı",
+        "PAA Rüptürü",
+        "İmmünsüpresyon",
+        "DVT Tedavisi",
+        "Fatal Hemoptizi Riski"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Behçet Recommendations); Desbois et al. Autoimmun Rev 2014"
+    },
+    {
+      "id": "s6",
+      "metin": "Nöro-Behçet (parankimal tip) tanılı bir hastada eş zamanlı olarak oküler tutulum (posterior üveit) da mevcut. Oftalmoloji ekibi, oküler tutulum için siklosporin başlamayı planlıyor.\n\nBu tedavi planının nörolojik açıdan taşıdığı risk ve doğru yaklaşım nedir?",
+      "secenekler": {
+        "A": "Siklosporin (ve muadili kalsinörin inhibitörleri) nörotoksik etkiye sahip olduğundan ve nörolojik atakları tetikleyebildiğinden Nöro-Behçet vakalarında veya riski olanlarda kesinlikle kontrendikedir; bu hastada oküler tutulum için alternatif bir ajan (örn. azatiyoprin, anti-TNF, IFN-alfa) seçilmelidir.",
+        "B": "Siklosporin, hem oküler hem nörolojik tutulumda güvenle kullanılabilecek ideal bir ajandır, bu hastada başlanmalıdır.",
+        "C": "Siklosporinin nörotoksisitesi yalnızca yüksek dozlarda görülür, standart dozda Nöro-Behçet'te güvenlidir.",
+        "D": "Nöro-Behçet tanısı, oküler tedavi seçimini hiçbir şekilde etkilemez, siklosporin serbestçe kullanılabilir.",
+        "E": "Siklosporin nörotoksisitesi yalnızca teorik bir endişe olup klinik pratikte hiç gözlenmemiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Siklosporin nörotoksiktir ve Nöro-Behçet atağını TETİKLEYEBİLİR — bu nedenle Nöro-Behçet'i olan veya risk taşıyan hastalarda KESİNLİKLE KONTRENDİKEDİR. Bu hastada oküler tutulum için alternatif ajan (azatiyoprin, anti-TNF, IFN-alfa) seçilmelidir.",
+      "aciklama_detay": "Nöro-Behçet tedavisi bölümünde açıkça belirtildiği gibi: Siklosporin (ve muadili kalsinörin inhibitörleri) nörotoksik etkiye sahip olduğundan ve nörolojik atakları tetikleyebildiğinden Nöro-Behçet vakalarında veya riski olanlarda kesinlikle kontrendikedir. Bu, klinik pratikte kritik bir güvenlik noktasıdır çünkü siklosporin aynı zamanda Oküler Tutulum tedavisinde sıklıkla kullanılan bir ajandır (Azatiyoprin veya Siklosporin, yüksek doz steroid ile birlikte). Bu hastada olduğu gibi, eğer bir hastada hem oküler hem de (bilinen veya potansiyel) nörolojik tutulum varsa, siklosporin seçimi ciddi bir hata olur — nörotoksik etkisi nedeniyle mevcut nörolojik hastalığı kötüleştirebilir veya yeni bir parankimal atağı tetikleyebilir. Bu durumda oküler tutulum için siklosporin yerine, hem oküler hem nörolojik güvenlik profiline sahip alternatif ajanlar (azatiyoprin, anti-TNF ajanlar — adalimumab/infliksimab, veya IFN-alfa) tercih edilmelidir; bu ajanlar aynı zamanda her iki organ tutulumunu (göz ve SSS) birlikte hedefleyebilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Siklosporin Nöro-Behçet'te kesin kontrendikedir (nörotoksik, atak tetikler); alternatif ajan seçilmelidir.",
+        "B": "YANLIS — Siklosporin NÖROLOJİK açıdan güvenli DEĞİLDİR; Nöro-Behçet'te kesin kontrendikedir.",
+        "C": "YANLIS — Kontrendikasyon standart dozla sınırlı değildir; genel olarak Nöro-Behçet'te (doz bağımsız) kaçınılması gereken bir ajan sınıfıdır.",
+        "D": "YANLIS — Nöro-Behçet tanısı/riski, oküler tedavi seçimini DOĞRUDAN etkiler; siklosporin bu bağlamda dışlanmalıdır.",
+        "E": "YANLIS — Siklosporin nörotoksisitesi ve Nöro-Behçet tetikleme riski klinik olarak tanınan, gerçek bir endişedir, yalnızca teorik değildir."
+      },
+      "etiketler": [
+        "Siklosporin Kontrendikasyonu",
+        "Nöro-Behçet",
+        "Nörotoksisite",
+        "Oküler-Nörolojik Tedavi Çakışması",
+        "İlaç Güvenliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kötter et al. J Neurol 2005; Hatemi et al. Ann Rheum Dis 2018 (EULAR Recommendations)"
+    },
+    {
+      "id": "s7",
+      "metin": "BH tanılı, refrakter gastrointestinal (ileoçekal) ülserasyonu olan bir hasta, standart tedaviye (5-ASA, glukokortikoid, azatiyoprin) yanıt vermiyor. Romatolog, IL-17 inhibitörü sekukinumab başlamayı düşünüyor.\n\nBu tedavi seçiminin potansiyel riski nedir?",
+      "secenekler": {
+        "A": "IL-17 inhibitörlerinin (Sekukinumab) BH tedavisinde kullanılması sekonder/paradoksal olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebildiğinden bu hastada temkinli olunmalı, alternatif ajanlar (Anti-TNF, talidomid, JAK inhibitörleri, ustekinumab) öncelikle değerlendirilmelidir.",
+        "B": "Sekukinumab, BH'nin GİS tutulumunda birinci basamak, en güvenli tedavi seçeneğidir, herhangi bir risk taşımaz.",
+        "C": "IL-17 inhibitörleri yalnızca oküler Behçet'te kontrendikedir, GİS tutulumunda tamamen güvenlidir.",
+        "D": "Sekukinumab'ın BH GİS tutulumunda hiçbir kullanım geçmişi veya bilinen etkileşimi yoktur.",
+        "E": "Paradoksal alevlenme riski yalnızca üst GİS tutulumunda görülür, ileoçekal tutulumda geçerli değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "IL-17 inhibitörleri (sekukinumab) BH'de paradoksal olarak bağırsak ülserlerini/Behçet benzeri alevlenmeleri TETİKLEYEBİLİR. Refrakter GİS tutulumunda öncelik anti-TNF, talidomid, JAK inhibitörleri veya ustekinumab olmalıdır.",
+      "aciklama_detay": "Gastrointestinal Tutulum tedavisi bölümünde açıkça belirtildiği gibi: IL-17 inhibitörlerinin (Sekukinumab) BH tedavisinde kullanılması sekonder/paradoksal olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebildiğinden temkinli olunmalıdır. Bu, biyolojik ajan seçiminde 'sınıf etkisi' varsayımının her zaman geçerli olmadığını gösteren önemli bir klinik uyarıdır — IL-17 inhibisyonu bazı otoimmün/otoinflamatuar hastalıklarda (örn. psoriazis, ankilozan spondilit) etkili olsa da, BH'nin GİS tutulumunda paradoksal olarak inflamasyonu kötüleştirebilir (bu, IL-17 inhibitörlerinin inflamatuar bağırsak hastalığında da benzer paradoksal alevlenme riski taşımasıyla paralel bir fenomendir). Bu nedenle refrakter BH-GİS tutulumunda, tedavi algoritması Anti-TNF (İnfliksimab, Adalimumab) ve talidomid ile devam etmeli; son yıllarda JAK inhibitörleri (baricitinib, tofacitinib) ve anti-IL-12/23 ajanları (ustekinumab) da başarıyla denenen alternatifler arasında yer almaktadır. Sekukinumab gibi IL-17 hedefli ajanlar bu bağlamda önceliklendirilmemeli, kullanılacaksa yakın izlemle ve dikkatle değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — IL-17 inhibitörleri paradoksal GİS alevlenmesi riski taşır; öncelik anti-TNF/talidomid/JAK inhibitörü/ustekinumab olmalıdır.",
+        "B": "YANLIS — Sekukinumab BH GİS tutulumunda birinci basamak DEĞİLDİR ve güvenlik açısından riskli olarak tanımlanmıştır.",
+        "C": "YANLIS — Paradoksal alevlenme riski özellikle GİS (bağırsak ülserleri) bağlamında tanımlanmıştır, yalnızca oküler tutulumla sınırlı değildir.",
+        "D": "YANLIS — Bu ilişki (paradoksal alevlenme) literatürde tanımlanmış, bilinen bir güvenlik endişesidir.",
+        "E": "YANLIS — Paradoksal alevlenme riski genel olarak GİS (bağırsak) ülserleri bağlamında tanımlanmıştır, tutulum bölgesine göre (üst/alt) spesifik bir ayrım belirtilmemiştir."
+      },
+      "etiketler": [
+        "IL-17 İnhibitörü",
+        "Sekukinumab",
+        "Paradoksal Alevlenme",
+        "GİS Behçet",
+        "Biyolojik Tedavi Seçimi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Fagni et al. Ann Rheum Dis 2020; Hatemi et al. Ann Rheum Dis 2018"
+    },
+    {
+      "id": "s8",
+      "metin": "Yirmi dört yaşında kadın hasta, tekrarlayan oral aftlar (yılda 4-5 kez) ve genital ülser öyküsü ile başvuruyor. Muayenede göz lezyonu, deri lezyonu saptanmıyor ve paterji testi negatif.\n\nISG 1990 kriterlerine göre bu hastada BH tanısı konulabilir mi?",
+      "secenekler": {
+        "A": "Hayır; ISG 1990 kriterlerine göre tanı için zorunlu ana kriter olan yılda ≥3 tekrarlayan oral aft mevcut olsa da, buna ek olarak genital ülser, göz lezyonu, deri lezyonu veya pozitif paterjiden EN AZ 2'sinin bulunması gerekir. Bu hastada yalnızca genital ülser (1 ek kriter) mevcuttur, bu nedenle ISG 1990 kriterleri KARŞILANMAMAKTADIR.",
+        "B": "Evet; yılda ≥3 oral aft tek başına ISG 1990 kriterlerine göre tanı için yeterlidir.",
+        "C": "Evet; genital ülser tek başına, oral aft olmaksızın dahi ISG 1990 tanısı için yeterlidir.",
+        "D": "Hayır; ISG 1990 kriterleri yalnızca erkek hastalarda uygulanabilir, kadın hastalarda geçerli değildir.",
+        "E": "Bu değerlendirme için ISG 1990 kriterleri değil, yalnızca ICBD 2014 kriterleri kullanılabilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ISG 1990: zorunlu (yılda ≥3 oral aft) + EN AZ 2 ek kriterden (genital ülser, göz, deri, paterji). Bu hastada yalnızca 1 ek kriter (genital ülser) var — 2 kriter şartı karşılanmadığından tanı KONULAMAZ.",
+      "aciklama_detay": "ISG 1990 Kriterleri: Bir yılda en az 3 kez tekrarlayan oral aft varlığı (zorunlu/ana kriter) + Genital ülser, göz lezyonu, deri lezyonu veya pozitif paterji testinden en az 2'sinin varlığı. Bu hastada zorunlu ana kriter (yılda ≥3 oral aft, burada yılda 4-5 kez ile karşılanıyor) mevcuttur. Ancak ek kriterler değerlendirildiğinde: genital ülser MEVCUT (1 kriter), göz lezyonu YOK, deri lezyonu YOK, paterji NEGATİF. Bu durumda yalnızca 1 ek kriter karşılanmaktadır, oysa ISG 1990 kriterleri EN AZ 2 ek kriterin varlığını şart koşar. Bu nedenle bu hastada ISG 1990 kriterlerine göre BH tanısı FORMEL olarak konulamaz — klinik şüphe yüksek olsa da (tekrarlayan oral+genital ülser BH'yi düşündürür), kriterler teknik olarak karşılanmamıştır. Bu durumda hasta yakın klinik izleme alınmalı, zaman içinde ek bulgu (göz, deri, paterji pozitifliği) gelişip gelişmediği takip edilmeli veya ICBD 2014 gibi daha sensitif (ama daha az spesifik) bir kriter seti ile yeniden değerlendirilebilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Zorunlu kriter var ama yalnızca 1 ek kriter (genital ülser) mevcut; 2 ek kriter şartı karşılanmadığından ISG 1990 ile tanı konulamaz.",
+        "B": "YANLIS — Yılda ≥3 oral aft TEK BAŞINA yeterli değildir; ZORUNLU kriterdir ama ek olarak en az 2 kriter daha gereklidir.",
+        "C": "YANLIS — ISG 1990'da oral aft ZORUNLU (olmazsa olmaz) ana kriterdir; genital ülser tek başına (oral aft olmaksızın) tanı için yeterli değildir.",
+        "D": "YANLIS — ISG 1990 kriterleri cinsiyetten bağımsız olarak hem erkek hem kadın hastalarda uygulanır.",
+        "E": "YANLIS — ISG 1990 kriterleri geçerliliği kanıtlanmış, halen kullanılan bir kriter setidir; bu değerlendirme için kullanılabilir (yalnızca bu vakada kriterler karşılanmamaktadır)."
+      },
+      "etiketler": [
+        "ISG 1990 Kriterleri",
+        "Tanı Kriterleri",
+        "Zorunlu Ana Kriter",
+        "Ek Kriterler",
+        "Tanısal Eşik"
+      ],
+      "zorluk": "orta",
+      "kaynak": "International Study Group for Behçet's Disease. Lancet 1990"
+    },
+    {
+      "id": "s9",
+      "metin": "BH tanılı bir hasta gebelik planlamak istiyor. Hasta halihazırda kolşisin ve metotreksat kombinasyonu kullanmaktadır.\n\nGebelik planlaması öncesi ilaç düzenlemesi konusunda en doğru danışmanlık hangisidir?",
+      "secenekler": {
+        "A": "Kolşisin ve anti-TNF'lerin gebelikte kullanımı görece güvenliyken; teratojenik etkilerinden dolayı siklofosfamid, metotreksat, talidomid ve mikofenolat mofetil mutlaka kesilmelidir. Bu hastada metotreksat kesilmeli, kolşisine ise (güvenli olduğundan) devam edilebilir.",
+        "B": "Her iki ilaç da (kolşisin ve metotreksat) gebelikte güvenle kullanılabilir, herhangi bir değişiklik gerekmez.",
+        "C": "Kolşisin gebelikte kesinlikle kontrendikedir ve derhal kesilmelidir, metotreksat ise güvenle devam ettirilebilir.",
+        "D": "BH aktivitesi gebelikte her zaman şiddetlenir, bu nedenle gebelik tamamen kontrendikedir.",
+        "E": "Metotreksatın teratojenik etkisi yalnızca yüksek dozlarda görülür, düşük doz kullanımda gebelik öncesi kesilmesine gerek yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kolşisin gebelikte güvenli (devam edilebilir), METOTREKSAT ise teratojeniktir ve mutlaka kesilmelidir. Bu hastada doğru yaklaşım metotreksatı kesip kolşisine devam etmektir.",
+      "aciklama_detay": "Kolşisin ve anti-TNF'lerin gebelikte kullanımı görece güvenliyken; teratojenik etkilerinden dolayı siklofosfamid, metotreksat, talidomid ve mikofenolat mofetil mutlaka kesilmelidir. Metotreksat, güçlü bir teratojendir (nöral tüp defektleri, kraniyofasiyal anomaliler, iskelet anomalileri gibi 'metotreksat embriyopatisi' yapabilir) ve gebelik planlanmadan önce (genellikle en az 1-3 ay, bazı kılavuzlara göre daha uzun) kesilmesi gerekir — düşük doz kullanımda dahi bu teratojenik risk ortadan kalkmaz, bu nedenle 'düşük dozda güvenlidir' varsayımı YANLIŞTIR. Kolşisin ise BH'de gebelikte devam edilebilecek, göreceli güvenli bir ajan olarak tanımlanmıştır — hastalık aktivitesini kontrol altında tutmak için gebelik boyunca sürdürülebilir. Bu nedenle gebelik planlayan bu hastada doğru yaklaşım, metotreksatı derhal kesip (gebelik öncesi yeterli bir 'wash-out' süresi tanıyarak) alternatif bir immünsüpresife (gerekirse) geçmek, kolşisine ise güvenle devam etmektir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kolşisin güvenli (devam), metotreksat teratojenik (kesilmeli).",
+        "B": "YANLIS — Metotreksat GÜVENLİ DEĞİLDİR, teratojeniktir; gebelik öncesi mutlaka kesilmelidir.",
+        "C": "YANLIS — Yönler ters verilmiştir: kolşisin GÜVENLİDİR (kesilmez), metotreksat TERATOJENİKTİR (kesilmelidir).",
+        "D": "YANLIS — BH aktivitesi gebelikte genellikle AZALMA eğilimindedir (metin: 'hastaların çoğunda azalma eğilimindedir'); gebelik BH'de mutlak kontrendikasyon değildir, ancak vasküler risk artabilir ve dikkatli planlama gerekir.",
+        "E": "YANLIS — Metotreksatın teratojenik etkisi DOZ BAĞIMSIZDIR; düşük doz kullanımda dahi gebelik öncesi kesilmesi gerekir."
+      },
+      "etiketler": [
+        "Gebelik Planlaması",
+        "Metotreksat Teratojenitesi",
+        "Kolşisin Güvenliği",
+        "İlaç Kesim Zamanlaması",
+        "BH ve Gebelik"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Recommendations); Jadaon et al. J Obstet Gynaecol 2005"
+    },
+    {
+      "id": "s10",
+      "metin": "BH tanılı bir hastanın uzun dönem prognozu değerlendiriliyor. Hasta genç yaşta (22 yaşında) tanı almış, erkek cinsiyette ve toraks BT'sinde pulmoner arter anevrizması saptanmış.\n\nBu hastanın prognozunu şekillendiren temel faktörler hangileridir?",
+      "secenekler": {
+        "A": "Hastalığın uzun dönem prognozu; erkek cinsiyet, erken başlangıç yaşı ve PAA veya parenkimal santral sinir sistemi gibi hayati organ tutulumlarının varlığı ile şekillenir — bu hasta üç kötü prognostik faktörü de (erkek cinsiyet, erken yaş, PAA) taşımaktadır.",
+        "B": "BH'de prognozu belirleyen tek faktör hastanın yaşadığı coğrafi bölgedir, klinik/demografik faktörlerin hiçbir etkisi yoktur.",
+        "C": "Kadın cinsiyet ve ileri başlangıç yaşı, BH'de kötü prognozla ilişkili temel faktörlerdir.",
+        "D": "PAA varlığının BH prognozu üzerinde hiçbir etkisi gösterilmemiştir.",
+        "E": "BH'de prognoz tamamen öngörülemez olup hiçbir klinik veya demografik faktörle ilişkilendirilememiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kötü prognoz belirleyicileri: erkek cinsiyet, erken başlangıç yaşı, PAA veya parankimal SSS tutulumu gibi hayati organ tutulumu. Bu hasta (22 yaş, erkek, PAA) üç kötü prognostik faktörü birden taşımaktadır.",
+      "aciklama_detay": "Hastalığın uzun dönem prognozu; erkek cinsiyet, erken başlangıç yaşı ve PAA veya parenkimal santral sinir sistemi gibi hayati organ tutulumlarının varlığı ile şekillenir. Bu üç faktör, BH'de kötü prognozu öngören temel demografik ve klinik belirleyicilerdir ve bu bilgi, metinde daha önce vurgulanan 'genç erkek hastalarda klinik seyir (oküler, vasküler ve nörolojik tutulumlar açısından) çok daha agresif, morbidite ve mortalite oranları belirgin şekilde daha yüksektir' ifadesiyle de tutarlıdır. Bu hastada üç kötü prognostik faktör bir arada bulunmaktadır: (1) erkek cinsiyet, (2) erken başlangıç yaşı (22 yaşında tanı, tipik başlangıç yaş aralığının [20-40] alt sınırına yakın/genç), (3) PAA (hayati organ tutulumu, Hughes-Stovin sendromu riski taşıyan, potansiyel olarak fatal bir bulgu). Bu kombinasyon, hastanın yakın ve agresif izlem/tedavi gerektiren yüksek riskli bir prognostik profile sahip olduğunu gösterir; medikal tedavilerdeki (özellikle biyolojik ajanlar) gelişmeler bu yüksek riskli hasta grubunda dahi morbidite ve mortalite oranlarında dramatik bir düşüş sağlamıştır, bu nedenle erken agresif tedavi başlanması hayati önem taşır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Erkek cinsiyet + erken yaş + PAA (hayati organ tutulumu) = üç kötü prognostik faktör, bu hastada hepsi mevcut.",
+        "B": "YANLIS — Coğrafi bölge epidemiyolojik bir faktördür ancak PROGNOZ üzerindeki temel belirleyiciler açıkça cinsiyet, yaş ve organ tutulumu olarak tanımlanmıştır.",
+        "C": "YANLIS — Yönler TERS verilmiştir: ERKEK cinsiyet ve ERKEN başlangıç yaşı kötü prognozla ilişkilidir, kadın cinsiyet/ileri yaş değil.",
+        "D": "YANLIS — PAA açıkça 'hayati organ tutulumu' olarak prognozu kötü yönde etkileyen bir faktör olarak tanımlanmıştır.",
+        "E": "YANLIS — BH prognozu tamamen öngörülemez değildir; cinsiyet, başlangıç yaşı ve organ tutulumu gibi iyi tanımlanmış prognostik faktörler mevcuttur."
+      },
+      "etiketler": [
+        "Prognostik Faktörler",
+        "Erkek Cinsiyet",
+        "Erken Başlangıç Yaşı",
+        "PAA Prognozu",
+        "Uzun Dönem Seyir"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kural-Seyahi et al. Medicine (Baltimore) 2003; Alibaz-Oner & Direskeneli Clin Exp Rheumatol 2019"
+    }
+  ]
+}
