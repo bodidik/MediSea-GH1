@@ -1,0 +1,308 @@
+{
+  "id": "quiz-nefro-hiperfosfatemi-001",
+  "baslik": "KBH — Hiperfosfatemi — Soru Seti 1",
+  "branch": "nefroloji",
+  "topic": "kbh-hiperfosfatemi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Evre 3 KBH tanılı bir hastada (eGFR 42 mL/dk) rutin taramada FGF-23 ve PTH düzeyleri belirgin yüksek saptanırken, serum fosfor düzeyi normal sınırlarda (3.8 mg/dL) ölçülüyor.\n\nBu laboratuvar profilinin en doğru yorumu hangisidir?",
+      "secenekler": {
+        "A": "Bu bulgular laboratuvar hatasını gösterir; FGF-23/PTH yüksekliği mutlaka hiperfosfatemi ile birlikte olmalıdır.",
+        "B": "Hasta adaptif evrededir: GFR azalmasına yanıt olarak FGF-23 salınımı artmış, böbrekte α-Klotho ile FGFR1c aktivasyonu üzerinden NaPi-IIa/IIc yıkımı ve fosfatürizi sağlayarak serum fosforu normal sınırda tutmaktadır; PTH da benzer şekilde fosfor atılımını artırmaktadır.",
+        "C": "Bu profil maladaptif evreyi gösterir; Klotho direnci gelişmiş ve böbreğin fosfor atma kapasitesi tükenmiştir.",
+        "D": "FGF-23 yüksekliği yalnızca ileri evre (GFR <15) KBH'de görülür, bu hastada başka bir patoloji aranmalıdır.",
+        "E": "PTH yüksekliği bu hastada yalnızca vitamin D eksikliğine bağlıdır, KBH ile ilişkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Adaptif evre: GFR azalınca FGF-23 (+ Klotho/FGFR1c üzerinden) ve PTH artarak fosfor atılımını artırır, serum fosfor normal sınırda kompanse edilir. FGF-23 en erken yükselen biyobelirteçtir.",
+      "aciklama_detay": "Erken KBH'de (adaptif evre), glomerüler filtrasyon hızı (GFR) azalmaya başladığında fosfor birikimini önlemek için osteositlerden FGF-23 salınımı artar. FGF-23, böbrekte α-Klotho proteini ile birleşerek FGFR1c reseptörünü aktive eder; bu kaskad NaPi-IIa/IIc'nin (proksimal tübül fosfat taşıyıcıları) yıkımına neden olarak fosfatüri sağlar ve eş zamanlı olarak 1α-hidroksilaz enzimini baskılayarak kalsitriol sentezini durdurur. Azalan kalsitriol ve gelişen hafif hipokalsemi PTH sekresyonunu tetikler; PTH de benzer şekilde böbrekte fosfor atılımını artırır. Bu iki hormonun (FGF-23 ve PTH) kompanzatuar artışı sayesinde, orta evre KBH'de serum fosfor düzeyi uzun süre normal sınırlarda kalabilir — FGF-23 aslında hiperfosfateminin ortaya çıkmasından çok önce yükselen, en erken biyobelirteçlerden biridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu, tam olarak beklenen ve iyi tanımlanmış bir adaptif kompanzasyon profilidir, laboratuvar hatası değildir.",
+        "B": "DOGRU — Adaptif evre: FGF-23/PTH↑ ile fosfor atılımı artırılarak serum fosfor normal tutulur.",
+        "C": "YANLIS — Maladaptif evre (Klotho direnci) tipik olarak GFR <20-30 mL/dk'da ve AŞİKAR hiperfosfatemi ile karakterizedir; bu hastada fosfor henüz normaldir.",
+        "D": "YANLIS — FGF-23 yükselmesi tam tersine ERKEN KBH'de (adaptif evrede) başlar, ileri evreye özgü değildir.",
+        "E": "YANLIS — PTH yüksekliği burada KBH'ye bağlı sekonder hiperparatiroidizmin erken bir bulgusudur, FGF-23 ile birlikte değerlendirilmelidir."
+      },
+      "etiketler": [
+        "Adaptif Evre",
+        "FGF-23",
+        "Klotho",
+        "PTH",
+        "Erken KBH"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wolf M. Kidney Int 2012; Isakova et al. Kidney Int 2011 (CKiD/CRIC)"
+    },
+    {
+      "id": "s2",
+      "metin": "Evre 5 KBH tanılı bir hastada (eGFR 12 mL/dk) FGF-23 ve PTH düzeyleri son derece yüksek olmasına rağmen serum fosfor da belirgin yüksek (7.2 mg/dL) ölçülüyor.\n\nBu klinik-biyokimyasal tabloyu açıklayan mekanizma nedir?",
+      "secenekler": {
+        "A": "Bu, adaptif evrenin devam ettiğini gösterir; FGF-23 ve PTH henüz yeterince yükselmemiştir.",
+        "B": "Maladaptif evre — Klotho direnci: KBH progresyonu ile böbrek kökenli α-Klotho ekspresyonu dramatik düşer, hedef dokularda şiddetli 'FGF-23 direnci' gelişir; GFR 20-30 mL/dk'nın altında devasa FGF-23/PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi tükenir ve aşikar hiperfosfatemi ortaya çıkar.",
+        "C": "Bu tablo yalnızca diyet fosfor alımının aşırı artmasıyla açıklanır, hormonal mekanizmaların bir katkısı yoktur.",
+        "D": "Yüksek FGF-23/PTH'ye rağmen hiperfosfatemi gelişmesi, bu hormonların artık fosfor metabolizmasında hiçbir rolü kalmadığını gösterir.",
+        "E": "Bu bulgular birincil hiperparatiroidizm ile açıklanır, KBH ile ilişkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Maladaptif evre: α-Klotho ekspresyonu düşer → FGF-23 direnci gelişir. GFR<20-30'da devasa FGF-23/PTH'ye rağmen fosfor atılamaz → aşikar hiperfosfatemi. Bu, kompanzasyon mekanizmasının çöküşüdür.",
+      "aciklama_detay": "KBH progresyonu ile birlikte böbrek kökenli α-Klotho ekspresyonu dramatik şekilde düşer. Klotho, FGF-23'ün etkili sinyal iletimi için gerekli bir ko-reseptördür; eksikliği hedef dokularda şiddetli bir 'FGF-23 direnci' yaratır — yani dolaşımda FGF-23 ne kadar yüksek olursa olsun, hedef hücreler (böbrek tübül hücreleri) buna yeterince yanıt veremez. GFR 20-30 mL/dk'nın altına indiğinde, kanda devasa boyutlara ulaşan FGF-23 ve PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi tükenir ve aşikar hiperfosfatemi gelişir. Bu, kompanzatuar mekanizmaların yetersiz kaldığı, hastalığın maladaptif evreye geçtiği kritik bir dönüm noktasıdır ve bu evrede diyet kısıtlaması ve fosfat bağlayıcı tedaviler zorunlu hale gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Adaptif evrede serum fosfor NORMAL kalır; bu hastada aşikar hiperfosfatemi mevcuttur, bu maladaptif evreyi gösterir.",
+        "B": "DOGRU — Klotho direnci → FGF-23 direnci → kompanzasyon çöküşü → aşikar hiperfosfatemi.",
+        "C": "YANLIS — Hormonal mekanizma (Klotho direnci) bu tablonun temel açıklamasıdır, diyet tek başına yeterli açıklama değildir.",
+        "D": "YANLIS — Bu hormonların rolü kalmamış değildir; aksine seviyeleri aşırı yükselmiştir ama hedef doku direnci nedeniyle etkisiz kalmaktadırlar.",
+        "E": "YANLIS — Bu tablo sekonder hiperparatiroidizmdir (KBH'ye bağlı), birincil hiperparatiroidizm değildir."
+      },
+      "etiketler": [
+        "Maladaptif Evre",
+        "Klotho Direnci",
+        "FGF-23 Direnci",
+        "İleri KBH",
+        "Aşikar Hiperfosfatemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kuro-o M. Nat Rev Nephrol 2013; Hu et al. J Am Soc Nephrol 2011"
+    },
+    {
+      "id": "s3",
+      "metin": "KBH'li bir hastada koroner arter kalsifikasyonu araştırılırken, vasküler biyopsi örneklerinde damar düz kas hücrelerinin (VSMC) osteoblast benzeri hücrelere dönüştüğü gösteriliyor.\n\nBu transdiferansiyasyon sürecinin moleküler basamakları hangisidir?",
+      "secenekler": {
+        "A": "Yüksek fosfor doğrudan VSMC nükleer membranını geçerek DNA'ya bağlanır ve osteojenik genleri aktive eder.",
+        "B": "Yüksek inorganik fosfor, Tip III sodyum-fosfat taşıyıcıları (Pit-1, Pit-2) aracılığıyla VSMC'ye girer; hücre içi fosfor artışı Runx2, Msx2 ve osterix gibi osteojenik transkripsiyon faktörlerini aktive ederek VSMC'lerin osteoblast benzeri hücrelere dönüşmesine neden olur.",
+        "C": "VSMC transdiferansiyasyonu yalnızca kalsiyum bazlı fosfat bağlayıcı kullanımına bağlı gelişir, fosforun kendisiyle ilgisi yoktur.",
+        "D": "Bu süreç FGF-23'ün VSMC üzerindeki doğrudan etkisiyle, Klotho'dan bağımsız olarak gerçekleşir.",
+        "E": "Pit-1/Pit-2 taşıyıcıları yalnızca kemik dokusunda eksprese edilir, vasküler dokuda bulunmazlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Fosfor, Pit-1/Pit-2 taşıyıcılarıyla VSMC'ye girer → hücre içi fosfor artışı Runx2/Msx2/osterix (osteojenik transkripsiyon faktörleri) aktivasyonuna yol açar → VSMC osteoblast benzeri hücreye dönüşür (medial kalsifikasyon).",
+      "aciklama_detay": "Fosfor, KBH'de tek başına hücresel gen ekspresyonunu değiştiren bir toksin gibi davranır. Vasküler kalsifikasyon (medial kalsifikasyon) sürecinde, yüksek inorganik fosfor damar düz kas hücrelerine (VSMC) Tip III sodyum-fosfat taşıyıcıları olan Pit-1 ve Pit-2 aracılığıyla girer. Bu hücre içi fosfor artışı; Runx2 (Cbfa1), Msx2 ve osterix gibi normalde osteoblast farklılaşmasını yönlendiren osteojenik transkripsiyon faktörlerini aktive eder. Sonuçta VSMC'ler kontraktil fenotiplerini kaybederek osteoblast benzeri hücrelere dönüşürler (transdiferansiyasyon) — bu hücreler kemik matriks proteinleri (osteokalsin, alkalen fosfataz) üretmeye başlar ve damar duvarında aktif, hücre aracılı bir kalsifikasyon süreci başlatır. Bu, vasküler kalsifikasyonun pasif bir çökelme değil, aktif bir hücresel programlama süreci olduğunu gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Fosfor doğrudan nükleer membranı geçip DNA'ya bağlanmaz; mekanizma Pit-1/Pit-2 taşıyıcı aracılı hücre içi girişi ve transkripsiyon faktörü aktivasyonu üzerindendir.",
+        "B": "DOGRU — Pit-1/Pit-2 girişi → Runx2/Msx2/osterix aktivasyonu → osteoblastik transdiferansiyasyon.",
+        "C": "YANLIS — Süreç doğrudan yüksek fosforun kendisiyle tetiklenir; kalsiyum bazlı bağlayıcı kullanımı riski artırabilir ama temel mekanizma fosfor girişidir.",
+        "D": "YANLIS — Bu süreç FGF-23/Klotho ekseninden bağımsız, doğrudan fosforun VSMC'ye girişi ve hücre içi etkisiyle ilişkilidir.",
+        "E": "YANLIS — Pit-1/Pit-2 vasküler düz kas hücrelerinde de eksprese edilir; bu, vasküler kalsifikasyon mekanizmasının temelidir."
+      },
+      "etiketler": [
+        "Vasküler Kalsifikasyon",
+        "Pit-1/Pit-2",
+        "Runx2",
+        "VSMC Transdiferansiyasyon",
+        "Medial Kalsifikasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Giachelli CM. J Am Soc Nephrol 2004; Shanahan et al. Circ Res 2011"
+    },
+    {
+      "id": "s4",
+      "metin": "KBH'li bir hastada dolaşımdaki kalsiyum-fosfor komplekslerinin biyolojik davranışı araştırılıyor. Sağlıklı bireylerde bu kompleksler zararsız kalırken, bu hastada makrofaj aktivasyonu ve inflamasyon (TNF-α, IL-1β artışı) ile ilişkili bulunuyor.\n\nBu farkı açıklayan mekanizma hangisidir?",
+      "secenekler": {
+        "A": "Karaciğer kaynaklı koruyucu protein Fetuin-A, normalde kalsiyum-fosfor komplekslerini bağlayarak zararsız 'primer CPP'ler halinde tutar; KBH'de Fetuin-A ve Matrix Gla Proteini (MGP) gibi inhibitörlerin azalmasıyla bu yapılar çözünmez, kristalize 'sekonder CPP'lere' dönüşerek makrofajları uyarır ve inflamasyona yol açar.",
+        "B": "Fetuin-A düzeyi KBH'de artar ve bu artış doğrudan inflamasyona yol açar.",
+        "C": "Kalsiprotein partikülleri yalnızca diyaliz hastalarında oluşur, erken evre KBH'de hiç görülmez.",
+        "D": "Sekonder CPP oluşumu, yalnızca fosfat bağlayıcı ilaç kullanımının bir yan etkisidir, endojen bir süreç değildir.",
+        "E": "Makrofaj aktivasyonu bu süreçte rol oynamaz; inflamasyon tamamen ayrı bir enfeksiyöz süreçten kaynaklanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Fetuin-A normalde Ca-P komplekslerini zararsız primer CPP halinde tutar. KBH'de Fetuin-A/MGP azalınca bunlar kristalize sekonder CPP'ye dönüşür → makrofaj aktivasyonu → TNF-α/IL-1β artışı → vasküler kalsifikasyon şiddetlenir.",
+      "aciklama_detay": "Kanda artan kalsiyum ve fosfor, normalde karaciğer kaynaklı koruyucu bir protein olan Fetuin-A tarafından bağlanarak zararsız, amorf, çözünür 'primer kalsiprotein partikülleri (CPP)' halinde tutulur — bu, kalsiyum-fosfor kristallerinin dokularda çökmesini önleyen fizyolojik bir savunma mekanizmasıdır. Ancak KBH'de Fetuin-A ve Matrix Gla Proteini (MGP) gibi kalsifikasyon inhibitörlerinin dolaşımdaki düzeyleri azalır; bu durumda primer CPP'ler zamanla çözünmez, kristalize yapıya sahip 'sekonder CPP'lere' dönüşür. Sekonder CPP'ler makrofajları güçlü şekilde uyararak masif inflamasyona (TNF-α, IL-1β salınımı) yol açar ve bu inflamatuar süreç vasküler kalsifikasyonu daha da şiddetlendirir — kalsifikasyon ve inflamasyon arasında kısır bir döngü oluşur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Fetuin-A/MGP azalması → primer CPP'nin kristalize sekonder CPP'ye dönüşümü → makrofaj aktivasyonu/inflamasyon.",
+        "B": "YANLIS — Fetuin-A düzeyi KBH'de AZALIR, artmaz; azalması koruyucu etkinin kaybına ve inflamasyona yol açar.",
+        "C": "YANLIS — CPP oluşumu erken KBH'den itibaren başlayan bir süreçtir, yalnızca diyaliz hastalarıyla sınırlı değildir.",
+        "D": "YANLIS — Sekonder CPP oluşumu endojen bir süreçtir (Fetuin-A/MGP eksikliğine bağlı), fosfat bağlayıcı ilaçların bir yan etkisi değildir.",
+        "E": "YANLIS — Makrofaj aktivasyonu tam olarak sekonder CPP'lerin tetiklediği temel inflamatuar mekanizmadır."
+      },
+      "etiketler": [
+        "Kalsiprotein Partikülleri",
+        "Fetuin-A",
+        "Matrix Gla Proteini",
+        "Sekonder CPP",
+        "Vasküler İnflamasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Smith et al. Clin J Am Soc Nephrol 2013; Pasch et al. J Am Soc Nephrol 2012"
+    },
+    {
+      "id": "s5",
+      "metin": "İleri KBH'li bir hastada PTH düzeyini agresif şekilde baskılamak amacıyla yüksek doz aktif D vitamini ve kalsiyum bazlı fosfat bağlayıcı ile tedavi ediliyor. PTH düzeyi normal referans aralığının belirgin altına düşüyor ve hastada ilerleyici vasküler kalsifikasyon gelişiyor.\n\nBu klinik tabloyu açıklayan kemik-vasküler etkileşim mekanizması hangisidir?",
+      "secenekler": {
+        "A": "Yüksek PTH baskısı doğrudan vasküler kalsifikasyonu tetikler; PTH düzeyi ne kadar düşük olursa kalsifikasyon riski o kadar azalır.",
+        "B": "Aşırı PTH baskılanması adinamik kemik hastalığına yol açar; bu durumda kemiğin kalsiyum/fosfor tamponlama kapasitesi kaybolduğundan, alınan kalsiyum ve fosfor kemiğe giremeyip doğrudan damarlara yönelerek kalsifikasyonu hızlandırır.",
+        "C": "Adinamik kemik hastalığı yalnızca diyaliz hastalarında görülür ve vasküler kalsifikasyonla hiçbir ilişkisi yoktur.",
+        "D": "Bu tablo osteitis fibrosa cystica ile açıklanır; yüksek döngülü kemik hastalığı vasküler kalsifikasyona yol açmıştır.",
+        "E": "PTH düzeyinin referans aralığın altında olması bu hastada tamamen istenen, komplikasyonsuz bir hedeftir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aşırı PTH baskılanması → adinamik kemik hastalığı → kemiğin Ca/P tamponlama kapasitesi kaybolur → alınan Ca/P kemiğe giremeyip damarlara yönelir → vasküler kalsifikasyon hızlanır.",
+      "aciklama_detay": "Renal osteodistrofi spektrumunda iki uç önemlidir: Sürekli yüksek PTH osteitis fibrosa cystica'ya (yüksek döngülü kemik hastalığı) neden olurken; aşırı kalsiyum ve D vitamini yüklemesi sonucu PTH'nin aşırı baskılanması adinamik kemik hastalığına yol açar. Adinamik kemik hastalığında kemik döngüsü (turnover) çok düşüktür — kemik, fazla kalsiyum ve fosforu 'tamponlayacak', yani kendi matriksine alacak metabolik kapasiteden yoksundur. Bu durumda diyetle veya tedaviyle alınan kalsiyum ve fosfor kemiğe giremez ve doğrudan yumuşak dokulara, özellikle damarlara yönelerek ölümcül vasküler kalsifikasyonlara sebep olur. Bu nedenle KBH-MBD yönetiminde PTH'yi 'ne çok yüksek ne çok düşük', dengeli bir aralıkta tutmak kritik bir tedavi hedefidir — aşırı baskılama da tıpkı aşırı yükseklik gibi zararlı olabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlişki bu kadar basit doğrusal değildir; PTH'nin AŞIRI düşük olması da (adinamik kemik yoluyla) kalsifikasyonu artırabilir.",
+        "B": "DOGRU — Adinamik kemik hastalığı → kemiğin tamponlama kapasitesi kaybı → Ca/P damarlara yönelir → kalsifikasyon.",
+        "C": "YANLIS — Adinamik kemik hastalığı diyaliz öncesi KBH hastalarında da görülebilir ve vasküler kalsifikasyonla doğrudan ilişkilidir.",
+        "D": "YANLIS — Bu vakada PTH düşük (baskılanmış) bulunmuştur, osteitis fibrosa cystica YÜKSEK PTH ile ilişkilidir; klinik senaryo ile uyuşmaz.",
+        "E": "YANLIS — Referans aralığın belirgin altına düşen PTH, KBH-MBD yönetiminde istenmeyen, adinamik kemik hastalığı riski taşıyan bir durumdur."
+      },
+      "etiketler": [
+        "Adinamik Kemik Hastalığı",
+        "Renal Osteodistrofi",
+        "PTH Baskılanması",
+        "Vasküler Kalsifikasyon",
+        "Kemik-Damar Ekseni"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Moe & Drüeke Kidney Int 2008 (KDIGO CKD-MBD); Sprague & Moe J Am Soc Nephrol 2015"
+    },
+    {
+      "id": "s6",
+      "metin": "KBH'li bir hasta, fosfor kısıtlaması konusunda diyet danışmanlığı alıyor. Diyetisyen, aynı miktar fosfor içeriğine sahip iki farklı besinin (işlenmiş peynir ürünü vs. haşlanmış mercimek) böbrek üzerindeki fosfor yükünün FARKLI olduğunu açıklıyor.\n\nBu farkın altında yatan mekanizma ve doğru sıralama hangisidir?",
+      "secenekler": {
+        "A": "Tüm fosfor kaynakları bağırsakta aynı oranda (%100) emilir; besin türünün emilim üzerinde hiçbir etkisi yoktur.",
+        "B": "İnorganik fosfor (işlenmiş gıdalar, koruyucu katkı maddeleri) %80-100 oranında emilirken, organik bitkisel fosfor (fitat formunda, baklagiller/kuruyemişler) insan bağırsağında fitaz enzimi bulunmadığından yalnızca %20-40 oranında emilir; organik hayvansal fosfor (et/süt) ise %40-60 emilir.",
+        "C": "Bitkisel kaynaklı fosfor (fitat) en yüksek emilim oranına (%90'ın üzerinde) sahiptir, bu nedenle KBH'de kısıtlanması gereken asıl grup budur.",
+        "D": "Hayvansal kaynaklı fosfor emilim oranı işlenmiş gıdalardaki inorganik fosfordan daha yüksektir.",
+        "E": "Emilim oranı yalnızca pişirme yöntemine bağlıdır, fosfor kaynağının kimyasal formuyla ilgisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İnorganik fosfor (işlenmiş gıda) %80-100 emilir — en tehlikeli. Organik hayvansal (et/süt) %40-60. Organik bitkisel/fitat (baklagil/kuruyemiş) yalnızca %20-40 emilir çünkü insan bağırsağında fitaz enzimi yoktur.",
+      "aciklama_detay": "Diyetteki fosforun kaynağı, KBH'de fosfor yükünü belirlemede miktarından çok daha önemli olabilir. İnorganik fosfor, işlenmiş gıdalar, kolalı içecekler ve koruyucu katkı maddelerinde bulunur ve bağırsaklardan %80-100 oranında emilir — bu, en tehlikeli kaynaktır çünkü neredeyse tamamı emilir ve genellikle gizli/etiketlenmemiştir. Organik hayvansal fosfor (et ve süt ürünlerinde) emilim oranı %40-60'tır. Organik bitkisel fosfor ise baklagiller ve kuruyemişlerde fitat formunda bulunur; insan bağırsağında fitatı parçalayacak fitaz enzimi olmadığından emilim oranı yalnızca %20-40 düzeyindedir — bu nedenle aynı miktar fosfor içeren bir besin, bitkisel kaynaklı olduğunda böbreğe çok daha az yük bindirir. Bu bilgi, bitki ağırlıklı düşük proteinli diyetlerin (PLADO) KBH'de hiperfosfatemi yönetiminde önerilmesinin bilimsel temelini oluşturur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Emilim oranları kaynağa göre belirgin farklılık gösterir (%20-40 ile %80-100 arası), tümü aynı değildir.",
+        "B": "DOGRU — İnorganik (%80-100) > hayvansal organik (%40-60) > bitkisel/fitat (%20-40) emilim sıralaması doğrudur.",
+        "C": "YANLIS — Bitkisel/fitat kaynaklı fosfor EN DÜŞÜK emilim oranına (%20-40) sahiptir, en yükseğe değil.",
+        "D": "YANLIS — İnorganik fosforun emilim oranı (%80-100), hayvansal organik fosforunkinden (%40-60) daha yüksektir.",
+        "E": "YANLIS — Emilim oranı esas olarak fosforun kimyasal formuna (inorganik vs organik vs fitat) bağlıdır, yalnızca pişirme yöntemine değil."
+      },
+      "etiketler": [
+        "Diyet Fosforu",
+        "Fitat",
+        "İnorganik Fosfor",
+        "Biyoyararlanım",
+        "PLADO Diyeti"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Moe et al. Clin J Am Soc Nephrol 2011; St-Jules et al. J Ren Nutr 2021 (PLADO)"
+    },
+    {
+      "id": "s7",
+      "metin": "KBH'li bir hasta, uzun süredir kalsiyum karbonat bazlı fosfat bağlayıcı kullanıyor. Takipte hiperkalsemi atakları ve ilerleyici koroner arter kalsifikasyon skoru artışı saptanıyor. Nefrolog tedaviyi sevelamere geçirmeyi planlıyor.\n\nSevelamer'in kalsiyum bazlı bağlayıcılara kıyasla üstünlüğünün kanıta dayalı gerekçesi ve ek (pleiotropik) etkileri nelerdir?",
+      "secenekler": {
+        "A": "Sevelamer yalnızca fosfor bağlar; kalsiyum bazlı ajanlardan tek farkı daha ucuz olmasıdır.",
+        "B": "Sevelamer kalsiyum ve metal içermeyen iyon değiştirici bir polimerdir; pozitif kalsiyum dengesi ve hiperkalsemi riski yaratmaz. Meta-analizler kalsiyum bazlı ajanlara göre mortaliteyi ve vasküler kalsifikasyon progresyonunu azalttığını göstermiştir. Ayrıca safra asitlerini bağlayarak LDL kolesterol, ürik asit ve CRP'yi düşürücü pleiotropik etkiye sahiptir.",
+        "C": "Sevelamer hidroklorür formu, karbonat formuna göre metabolik asidoz riski taşımadığından her zaman tercih edilmelidir.",
+        "D": "Sevelamer'in kalsiyum bazlı ajanlara üstünlüğü yalnızca teorik kalmıştır, hiçbir klinik çalışma ile desteklenmemiştir.",
+        "E": "Sevelamer, düşük hap yükü ve mükemmel gastrointestinal tolerabilite ile öne çıkan bir ajandır, bu onun en büyük avantajıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sevelamer kalsiyum/metal içermez, hiperkalsemi/pozitif Ca dengesi yapmaz; meta-analizler mortalite ve kalsifikasyon progresyonunda üstünlük gösterir. Ek olarak safra asidi bağlayarak LDL/ürik asit/CRP düşürücü pleiotropik etkisi vardır.",
+      "aciklama_detay": "Sevelamer (Hidroklorür ve Karbonat formları), kalsiyum ve metal içermeyen, iyon değiştirici katyonik bir polimerdir. Kalsiyum bazlı bağlayıcıların (kalsiyum asetat/karbonat) aksine, sevelamer pozitif kalsiyum dengesi yaratmaz ve hiperkalsemiye yol açmaz — bu, uzun dönemde vasküler kalsifikasyon riskini azaltan önemli bir avantajdır. Meta-analizler, sevelamerin kalsiyum bazlı ajanlara göre mortaliteyi ve vasküler kalsifikasyon progresyonunu azalttığını göstermektedir. Ayrıca sevelamer, fosforu bağlamanın yanı sıra safra asitlerini de bağlayarak LDL kolesterolü, ürik asidi ve C-reaktif proteini düşürür — bu ek (pleiotropik) etkiler, ilacın kardiyovasküler risk profilini iyileştirmesine katkıda bulunabilir. Hidroklorür formu metabolik asidoz yapabileceğinden karbonat formu tercih edilir; en büyük kısıtlılığı yüksek hap yükü ve gastrointestinal yan etkilerdir (özellikle kabızlık) — bu nedenle E seçeneği yanlıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sevelamer kalsiyum bazlı ajanlardan yalnızca fiyat açısından değil, mekanizma ve klinik sonuçlar açısından da farklıdır; ayrıca kalsiyum bazlı ajanlardan daha PAHALIDIR, daha ucuz değildir.",
+        "B": "DOGRU — Kalsiyum/metal içermez, mortalite/kalsifikasyon avantajı + pleiotropik lipid/ürik asit/CRP düşürücü etki.",
+        "C": "YANLIS — Tam tersine HİDROKLORÜR formu metabolik asidoz riski taşır, bu nedenle KARBONAT formu tercih edilir.",
+        "D": "YANLIS — Meta-analizler net biçimde mortalite ve kalsifikasyon progresyonunda sevelamer lehine sonuçlar göstermiştir; klinik kanıt mevcuttur.",
+        "E": "YANLIS — Sevelamer'in en büyük KISITLILIĞI yüksek hap yükü ve GİS yan etkileridir (kabızlık); bu onun avantajı değil dezavantajıdır."
+      },
+      "etiketler": [
+        "Sevelamer",
+        "Fosfat Bağlayıcılar",
+        "Pleiotropik Etki",
+        "Vasküler Kalsifikasyon",
+        "Mortalite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Block et al. Kidney Int 2007; Di Iorio et al. Clin J Am Soc Nephrol 2012 (INDEPENDENT study)"
+    },
+    {
+      "id": "s8",
+      "metin": "Hemodiyaliz hastası bir bireyde, fosfor kontrolü sağlamanın yanı sıra eşlik eden demir eksikliği anemisinin de yönetilmesi hedefleniyor. Nefrolog, hem fosfat bağlayıcı hem de demir replasmanı sağlayacak bir ajan seçmeyi planlıyor.\n\nBu klinik hedefe en uygun fosfat bağlayıcı sınıfı ve örnek ajan hangisidir?",
+      "secenekler": {
+        "A": "Lantan karbonat; hem fosfor bağlar hem demir depolarını doldurur.",
+        "B": "Ferrik sitrat (demir bazlı fosfat bağlayıcı); fosforu düşürürken demir depolarını (ferritin, TSAT) doldurur ve ESA (eritropoez stimüle edici ajan) ihtiyacını azaltır.",
+        "C": "Sevelamer karbonat; demir içermese de dolaylı olarak demir emilimini artırır.",
+        "D": "Kalsiyum asetat; hem fosfor hem demir eksikliğini aynı anda düzeltir.",
+        "E": "Fosfat bağlayıcı ajanların hiçbiri demir eksikliği üzerinde herhangi bir etkiye sahip değildir, bu nedenle ayrı bir demir preparatı şart koşulur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ferrik sitrat, demir bazlı bir fosfat bağlayıcıdır; fosforu düşürürken aynı zamanda demir depolarını (ferritin, TSAT) doldurur ve ESA ihtiyacını azaltır — çift fayda sağlayan bir seçenektir.",
+      "aciklama_detay": "Demir bazlı fosfat bağlayıcılar arasında Ferrik sitrat, fosforu düşürürken demir depolarını (ferritin, transferrin satürasyonu/TSAT) doldurur ve bu sayede eritropoez stimüle edici ajan (ESA) ihtiyacını azaltır — bu, hem fosfor kontrolü hem de renal anemi yönetimi gereken hastalarda çift yönlü fayda sağlayan, tedavi basitleştirici bir seçenektir. Diğer bir demir bazlı ajan olan Sukroferrik oksihidroksit (PA21) ise sistemik demir emilimi minimal olan, çiğnenebilir yapısıyla günlük hap yükünü dramatik oranda düşüren çok güçlü bir ajandır, ancak bu formun sistemik demir depolarını doldurma etkisi Ferrik sitrat kadar belirgin değildir. Her iki demir bazlı ajanın da yan etkisi ishal ve koyu renkli dışkıdır. Diğer fosfat bağlayıcı sınıfları (kalsiyum bazlı, sevelamer, lantan karbonat) demir içermez ve demir depolarını doldurma özelliği taşımaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Lantan karbonat metal (lantan) bazlıdır ama demir içermez; demir depolarını doldurma özelliği yoktur.",
+        "B": "DOGRU — Ferrik sitrat fosfor bağlar VE demir depolarını doldurur VE ESA ihtiyacını azaltır.",
+        "C": "YANLIS — Sevelamer demir içermez ve demir emilimini artırdığına dair bir mekanizma tanımlanmamıştır.",
+        "D": "YANLIS — Kalsiyum asetat kalsiyum bazlıdır, demir içermez; demir eksikliğini düzeltmez.",
+        "E": "YANLIS — Ferrik sitrat ve sukroferrik oksihidroksit gibi demir bazlı bağlayıcılar tam olarak bu çift etkiyi (fosfor + demir) sağlamak için geliştirilmiştir."
+      },
+      "etiketler": [
+        "Ferrik Sitrat",
+        "Demir Bazlı Fosfat Bağlayıcı",
+        "ESA İhtiyacı",
+        "Renal Anemi",
+        "TSAT"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Lewis et al. J Am Soc Nephrol 2015 (ferric citrate); Umanath & Lewis Am J Kidney Dis 2018"
+    },
+    {
+      "id": "s9",
+      "metin": "Hemodiyaliz hastası bir hastada, maksimum tolere edilebilir fosfat bağlayıcı dozuna rağmen serum fosfor hedefe ulaşmıyor. Aynı zamanda hasta çoklu ilaç yüküyle uyum problemi yaşıyor. Klinisyen, fosfat bağlayıcılardan tamamen farklı bir mekanizmaya sahip Tenapanor'u add-on tedavi olarak eklemeyi planlıyor.\n\nTenapanor'un etki mekanizması ve beklenen yan etki profili hangisidir?",
+      "secenekler": {
+        "A": "Tenapanor, bağırsak lümeninde fosforu doğrudan bağlayarak fekal atılımını artıran klasik bir fosfat bağlayıcıdır; yan etkisi kabızlıktır.",
+        "B": "Tenapanor, ince bağırsaktaki NHE3'ü (Sodyum/Hidrojen Değiştirici-3) bloke eder; bu inhibisyon intraselüler proton artışına ve düşen pH ile sıkı bağlantı proteini klaudinlerde konformasyonel değişikliğe yol açarak fosforun paraselüler geçişini bloke eder, ayrıca NaPi-2b'yi downregüle eder. En sık yan etkisi lümende sodyum/su tutulumuna bağlı yumuşak dışkılama/ishaldir.",
+        "C": "Tenapanor yalnızca NaPi-IIa'yı böbrek düzeyinde inhibe ederek fosfatüriyi artırır, bağırsak üzerinde etkisi yoktur.",
+        "D": "Tenapanor'un hap yükü, mevcut fosfat bağlayıcılardan daha fazladır, bu nedenle uyum problemi olan hastalarda tercih edilmemelidir.",
+        "E": "Tenapanor'un en sık yan etkisi şiddetli kabızlık olup, bu KBH hastalarında ayrıca sorun yaratır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tenapanor, ince bağırsak NHE3'ü bloke ederek paraselüler fosfor geçişini (klaudin konformasyon değişikliği ile) ve NaPi-2b'yi baskılar. Günde 2 küçük tabletle düşük hap yükü sağlar; en sık yan etkisi ishaldir (kabızlık değil).",
+      "aciklama_detay": "Tenapanor, fosfat bağlayıcılardan tamamen farklı bir mekanizmaya sahip, ince bağırsaktaki Sodyum/Hidrojen Değiştirici-3'ü (NHE3) bloke eden küçük bir moleküldür. NHE3'ün inhibisyonu, bağırsak epitel hücrelerinde intraselüler proton (H+) artışına neden olur; düşen pH, sıkı bağlantı (tight junction) proteini olan klaudinlerde konformasyonel değişiklik yaratarak fosforun paraselüler (hücreler arası) geçişini bloke eder. Aynı zamanda transselüler taşıyıcı olan NaPi-2b'yi de downregüle eder — bu çift mekanizma güçlü bir fosfor emilim azalması sağlar. Günlük sadece 2 küçük tablet (günde iki kez 5-30 mg) kullanılarak hap yükü muazzam ölçüde azaltılır ve fosfat bağlayıcılara dirençli/uyumsuz vakalarda add-on tedavi olarak etkilidir. NHE3 inhibisyonu lümende sodyum ve su tutulumuna yol açtığı için en sık görülen yan etkisi yumuşak dışkılama ve İSHALDİR (kabızlık değil) — ilginç şekilde bu yan etki, KBH'de sık görülen kabızlık problemini çözme potansiyeli de taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tenapanor klasik bir fosfor bağlayıcı DEĞİLDİR; fosforu doğrudan bağlamaz, taşıyıcı/geçirgenlik mekanizmasını değiştirir. Yan etkisi kabızlık değil ishaldir.",
+        "B": "DOGRU — NHE3 inhibisyonu → paraselüler geçiş blokajı (klaudin) + NaPi-2b downregülasyonu; yan etki ishal.",
+        "C": "YANLIS — Tenapanor böbrekte değil, ince BAĞIRSAKTA etki gösterir; NaPi-IIa böbrek taşıyıcısıdır, Tenapanor'un hedefi değildir.",
+        "D": "YANLIS — Tenapanor'un temel klinik avantajı tam tersine ÇOK DÜŞÜK hap yüküdür (günde 2 küçük tablet).",
+        "E": "YANLIS — En sık yan etki kabızlık değil, tam tersine yumuşak dışkılama/İSHALDİR; bu KBH'deki kabızlığı çözme potansiyeli taşır."
+      },
+      "etiketler": [
+        "Tenapanor",
+        "NHE3 İnhibitörü",
+        "Paraselüler Taşınma",
+        "Klaudin",
+        "NaPi-2b"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Block et al. J Am Soc Nephrol 2019 (Tenapanor); King et al. Clin J Am Soc Nephrol 2021"
+    },
+    {
+      "id": "s10",
+      "metin": "Diyaliz hastası bir bireyde fosfor uzaklaştırma stratejileri karşılaştırılıyor. Nefrolog, diyaliz seansının tek başına yeterli olmadığını, diyet ve medikal tedavinin esas olduğunu vurguluyor.\n\nBu yaklaşımın niceliksel gerekçesi nedir?",
+      "secenekler": {
+        "A": "Diyaliz (hemodiyaliz/periton diyalizi) seans başına sınırlı fosfor uzaklaştırır (haftalık ortalama yalnızca 2.1-3.6 gram); bu miktar günlük diyetle alınan fosforu (KDIGO önerisi 800-1000 mg/gün sınırlaması olsa dahi) dengelemekte yetersiz kalabilir, bu nedenle diyet kısıtlaması ve fosfat bağlayıcı/Tenapanor gibi medikal tedaviler esastır.",
+        "B": "Diyaliz, haftada uygulandığında fosforun %100'ünü uzaklaştırır; diyet ve ilaç tedavisine hiç gerek yoktur.",
+        "C": "Diyaliz fosfor uzaklaştırmada tamamen etkisizdir, yalnızca üre ve kreatinin gibi küçük moleküler ağırlıklı toksinleri temizler.",
+        "D": "Periton diyalizi hemodiyalize göre fosfor uzaklaştırmada her zaman üstündür, bu nedenle tüm hastalarda tercih edilmelidir.",
+        "E": "Fosfor uzaklaştırma miktarı diyaliz sıklığından tamamen bağımsızdır ve hiçbir zaman ölçülemez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Diyaliz seans başına sınırlı fosfor uzaklaştırır (haftalık ortalama 2.1-3.6 gram) — bu, tipik diyet fosfor alımını dengelemekte yetersiz kalabilir; bu yüzden diyet kısıtlaması ve medikal tedavi (fosfat bağlayıcı/Tenapanor) esastır.",
+      "aciklama_detay": "Hiperfosfatemi tedavisi 3 ana eksende (Diyet, Farmakoterapi, Diyaliz optimizasyonu) yürütülür. Diyaliz (hemodiyaliz veya periton diyalizi) seans başına sınırlı miktarda fosfor uzaklaştırır — haftalık ortalama yalnızca 2.1-3.6 gram civarındadır. Bu miktar, özellikle standart Batı tipi diyetle günlük alınan fosfor yükünü (KDIGO'nun önerdiği 800-1000 mg/gün sınırlamasına uyulsa bile, haftalık 5.6-7 gram) dengelemekte yapısal olarak yetersiz kalır. Bu niceliksel gerçek, neden diyaliz tek başına yeterli olmadığını ve diyet fosfor kısıtlamasının (özellikle biyoyararlanımı yüksek inorganik fosfordan kaçınmanın) ve medikal tedavinin (fosfat bağlayıcılar, Tenapanor gibi yeni ajanlar) fosfor kontrolünde neden esas olduğunu açıklar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Diyaliz haftalık yalnızca 2.1-3.6 gram fosfor uzaklaştırır; bu yetersizdir, diyet+ilaç esastır.",
+        "B": "YANLIS — Diyaliz fosforun tamamını uzaklaştırmaz; seans başına sınırlı miktarla sınırlıdır, diyet ve ilaç tedavisi vazgeçilmezdir.",
+        "C": "YANLIS — Diyaliz fosfor uzaklaştırmada tamamen etkisiz değildir, ancak yetersiz ve sınırlıdır; küçük moleküllerin yanı sıra bir miktar fosfor da uzaklaştırılır.",
+        "D": "YANLIS — Periton diyalizinin hemodiyalize karşı fosfor uzaklaştırmada her zaman üstün olduğuna dair genel bir kural yoktur; her iki yöntem de sınırlı kapasiteye sahiptir.",
+        "E": "YANLIS — Fosfor uzaklaştırma miktarı ölçülebilir ve diyaliz sıklığı/süresiyle ilişkilidir; tamamen bağımsız değildir."
+      },
+      "etiketler": [
+        "Diyaliz Fosfor Uzaklaştırma",
+        "Diyet Kısıtlaması",
+        "KDIGO",
+        "Hemodiyaliz",
+        "Fosfor Dengesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kalantar-Zadeh et al. Clin J Am Soc Nephrol 2010; KDIGO 2017 CKD-MBD Guideline Update"
+    }
+  ]
+}

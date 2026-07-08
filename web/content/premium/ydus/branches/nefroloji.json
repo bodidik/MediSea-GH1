@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "id": "nefroloji",
+    "baslik": "Nefroloji",
+    "aciklama": "Glomerülonefritler, kronik böbrek hastalığı ve elektrolit bozukluklarını kapsayan uzmanlık sınav modülü.",
+    "renk": "#1a3a6b",
+    "emoji": "🔬"
+  },
+  "kategoriler": [
+    {
+      "id": "glomerulopatiler",
+      "baslik": "Glomerüler Hastalıklar",
+      "aciklama": "Glomerülonefritler ve glomerülopatiler",
+      "emoji": "🧫",
+      "konular": [
+        {
+          "id": "iga-nefropatisi",
+          "baslik": "IgA Nefropatisi",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "membranoz-nefropati",
+          "baslik": "Membranöz Nefropati",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "lupus-nefriti",
+          "baslik": "Lupus Nefriti",
+          "rozetler": [
+            "YAKINDA"
+          ],
+          "hazir": false
+        }
+      ]
+    },
+    {
+      "id": "kbh-komplikasyonlari",
+      "baslik": "KBH Komplikasyonları",
+      "aciklama": "Mineral kemik bozukluğu, elektrolit ve metabolik komplikasyonlar",
+      "emoji": "⚙️",
+      "konular": [
+        {
+          "id": "kbh-hiperfosfatemi",
+          "baslik": "KBH — Hiperfosfatemi",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    }
+  ]
+}

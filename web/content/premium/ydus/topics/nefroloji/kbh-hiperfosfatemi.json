@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "id": "kbh-hiperfosfatemi",
+    "branch": "nefroloji",
+    "baslik": "KBH — Hiperfosfatemi",
+    "altbaslik": "FGF-23/Klotho ekseni, vasküler kalsifikasyon ve kalsiprotein partikülleri, renal osteodistrofi, fosfat bağlayıcılar ve yeni nesil NHE3 inhibitörü Tenapanor",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Kronik Böbrek Hastalığında (KBH) hiperfosfatemi; yalnızca fosforun atılamamasıyla sınırlı bir laboratuvar anormalliği değil, Mineral ve Kemik Bozukluğu (CKD-MBD), kardiyovasküler hastalık (KVH) ve mortalite artışıyla doğrudan ilişkili kompleks, sistemik bir toksisite tablosudur."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyoloji — Endokrin Regülasyon",
+      "satirlar": [
+        {
+          "metin": "Sağlıklı bireylerde fosfor homeostazı; böbrek, bağırsak ve kemik arasındaki ağ ile **FGF-23**, **PTH** ve **1,25-dihidroksivitamin D (kalsitriol)** tarafından düzenlenir. Fosforun böbrekten geri emilimi, proksimal tübülün apikal membranındaki sodyum-bağımlı fosfat eş taşıyıcıları (**NaPi-IIa** ve **NaPi-IIc**) aracılığıyla gerçekleşir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Adaptif vs Maladaptif Evre",
+      "kolonlar": [
+        "Evre",
+        "Mekanizma",
+        "Sonuç"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Adaptif Evre (Erken KBH) ★",
+            "GFR↓ → osteositlerden FGF-23 salınımı↑ → böbrekte α-Klotho ile birleşip FGFR1c'yi aktive eder → NaPi-IIa/IIc yıkımı (fosfatüri) + 1α-hidroksilaz baskısı (kalsitriol↓) → hipokalsemi → PTH↑ (fosfor atılımını da artırır)",
+            "Fosfor dengesi bir süre KORUNUR; serum fosfor normal kalabilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Maladaptif Evre — Klotho Direnci (İleri KBH) ★",
+            "Böbrek kökenli α-Klotho ekspresyonu dramatik düşer → hedef dokularda şiddetli 'FGF-23 direnci'. GFR <20-30 mL/dk'da devasa FGF-23 + PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi TÜKENİR",
+            "Aşikar hiperfosfatemi gelişir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Klinik Sınav Spotu: Erken KBH'de FGF-23 ve PTH yükselir AMA serum fosfor normal görünebilir (kompanzasyon) — bu dönemde FGF-23 zaten en erken biyobelirteçtir. GFR <20-30 mL/dk'ya düşünce Klotho direnci nedeniyle kompanzasyon çöker ve aşikar hiperfosfatemi ortaya çıkar."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Sistemik Toksisite — Vasküler Kalsifikasyon Mekanizması",
+      "kolonlar": [
+        "Basamak",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "VSMC'ye Fosfor Girişi ★",
+            "Yüksek inorganik fosfor, damar düz kas hücrelerine (VSMC) Tip III sodyum-fosfat taşıyıcıları (Pit-1, Pit-2) aracılığıyla girer"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Osteojenik Transdiferansiyasyon ★",
+            "Hücre içi fosfor artışı Runx2, Msx2 ve osterix gibi osteojenik transkripsiyon faktörlerini aktive eder → VSMC'ler osteoblast benzeri hücrelere dönüşür (medial kalsifikasyon)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Kalsiprotein Partikülleri (CPP) ve Fetuin-A: Kanda artan Ca+P, normalde karaciğer kaynaklı koruyucu protein Fetuin-A tarafından bağlanarak zararsız 'primer CPP'ler halinde tutulur. KBH'de Fetuin-A ve Matrix Gla Proteini (MGP) gibi inhibitörler azalınca, bu yapılar çözünmez, kristalize 'sekonder CPP'lere dönüşür. Sekonder CPP'ler makrofajları uyararak masif inflamasyona (TNF-α, IL-1β) yol açar ve vasküler kalsifikasyonu şiddetlendirir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kemik Hastalığı (Renal Osteodistrofi)",
+      "satirlar": [
+        {
+          "metin": "Sürekli yüksek PTH, **osteitis fibrosa cystica**'ya (yüksek döngülü kemik hastalığı) neden olurken; aşırı kalsiyum ve D vitamini yüklemesi sonucu PTH'nin baskılanması **adinamik kemik hastalığına** yol açar. Adinamik kemiğe giremeyen fosfor ve kalsiyum doğrudan damarlara yönelerek ölümcül kalsifikasyonlara sebep olur — bu nedenle PTH'yi 'aşırı baskılamak' da tehlikelidir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Diyet Fosforu — Kaynağa Göre Emilim Farkı",
+      "kolonlar": [
+        "Kaynak",
+        "Örnek",
+        "Emilim Oranı"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "İnorganik Fosfor ★",
+            "İşlenmiş gıdalar, kolalı içecekler, koruyucu katkı maddeleri",
+            "%80-100 — EN TEHLİKELİ kaynak"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Organik Hayvansal Fosfor",
+            "Et ve süt ürünleri",
+            "%40-60"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Organik Bitkisel Fosfor (Fitat) ★",
+            "Baklagiller, kuruyemişler",
+            "%20-40 — insan bağırsağında fitaz enzimi YOK"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "KDIGO günlük fosfor alımının 800-1000 mg/gün ile sınırlandırılmasını önerir — ancak kaynağı hayati önem taşır. Bitki ağırlıklı düşük proteinli diyetler (PLADO), asit yükünü, FGF-23 seviyesini ve üremik toksinleri azalttığından hiperfosfatemi yönetiminde şiddetle önerilir. Aynı miktar fosfor, işlenmiş gıdadan alındığında bitkisel kaynağa göre 2-4 kat daha fazla emilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Fosfat Bağlayıcı Ajanlar",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma / Özellik",
+        "Kısıtlılık"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kalsiyum Bazlı (Asetat/Karbonat)",
+            "Ucuz ve etkili",
+            "Hiperkalsemi riski + pozitif kalsiyum dengesi → vasküler kalsifikasyonu HIZLANDIRIR; KDIGO kullanımın sınırlandırılmasını önerir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sevelamer (Hidroklorür/Karbonat) ★",
+            "Kalsiyum/metal içermeyen iyon değiştirici katyonik polimer; safra asitlerini de bağlayarak LDL, ürik asit ve CRP'yi düşürür (pleiotropik etki). Meta-analizler: kalsiyum bazlı ajanlara göre mortalite ve vasküler kalsifikasyon progresyonunu azaltır",
+            "Hidroklorür formu metabolik asidoz yapabilir → karbonat formu tercih edilir. Yüksek hap yükü + kabızlık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Lantan Karbonat",
+            "Çiğnenebilir, metal bazlı, kalsiyum yükü yok, hap yükü düşük",
+            "GİS toleransı zayıf olabilir"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Demir Bazlı — Ferrik Sitrat",
+            "Fosforu düşürürken demir depolarını (ferritin, TSAT) doldurur ve ESA ihtiyacını azaltır",
+            "—"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Demir Bazlı — Sukroferrik Oksihidroksit (PA21) ★",
+            "Sistemik demir emilimi minimal; çiğnenebilir yapı ile hap yükünü dramatik azaltır",
+            "İshal ve koyu renkli dışkı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Yeni Nesil Tedavi — Tenapanor (İntestinal NHE3 İnhibitörü)",
+      "satirlar": [
+        {
+          "metin": "Fosfat bağlayıcılardan tamamen farklı bir mekanizmaya sahip **Tenapanor**, ince bağırsaktaki Sodyum/Hidrojen Değiştirici-3'ü (NHE3) bloke eden küçük bir moleküldür."
+        },
+        {
+          "metin": "**Mekanizma:** NHE3 inhibisyonu → bağırsak epitel hücrelerinde intraselüler proton (H+) artışı → düşen pH, sıkı bağlantı (tight junction) proteini klaudinlerde konformasyonel değişiklik yaratarak fosforun **paraselüler (hücreler arası)** geçişini bloke eder. Aynı zamanda transselüler taşıyıcı **NaPi-2b**'yi de downregüle eder — çift mekanizma."
+        },
+        {
+          "metin": "**Klinik avantaj:** Günde sadece 2 küçük tablet (günde iki kez 5-30 mg) ile hap yükünü muazzam azaltır; fosfat bağlayıcılara dirençli vakalarda add-on tedavi olarak etkilidir. **Yan etki:** NHE3 inhibisyonu lümende sodyum/su tutulumuna yol açtığından en sık yan etki yumuşak dışkılama/ishaldir — bu, KBH'de sık görülen kabızlık problemini çözme potansiyeli de taşır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — KBH Hiperfosfatemi 7 Altın Kural: (1) Erken KBH'de FGF-23/PTH↑ ile fosfor kompanse edilir; GFR <20-30'da Klotho direnci ile kompanzasyon çöker → aşikar hiperfosfatemi. (2) Vasküler kalsifikasyon = Pit-1/Pit-2 ile VSMC'ye fosfor girişi → Runx2/Msx2/osterix → osteoblastik transdiferansiyasyon. (3) Fetuin-A/MGP azalınca primer CPP → sekonder (kristalize) CPP'ye döner → inflamasyon. (4) PTH'yi aşırı baskılamak adinamik kemik hastalığı yapar — bu da fosforu damara yönlendirir. (5) İnorganik fosfor (%80-100 emilim, işlenmiş gıda) en tehlikeli kaynaktır; fitat (%20-40) en güvenlisi. (6) Sevelamer, kalsiyum bazlı ajanlara göre mortalite/kalsifikasyonda üstündür; hidroklorür formu asidoz yapar. (7) Tenapanor = paraselüler geçişi (klaudin) + NaPi-2b'yi bloke eden NHE3 inhibitörü; en sık yan etkisi ishaldir."
+    }
+  ]
+}

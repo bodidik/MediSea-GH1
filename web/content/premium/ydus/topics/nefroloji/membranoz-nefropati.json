@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "id": "membranoz-nefropati",
+    "branch": "nefroloji",
+    "baslik": "Membranöz Nefropati",
+    "altbaslik": "PLA2R epitop yayılması, sekonder MN'de hedef antijen haritası (NDNF, PCSK6, Protokaderin FAT1, CNTN1, NELL-1), maskelenmiş IgG-kappa glomerülopatisi ve rituximab direnç mekanizmaları",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Membranöz nefropati (MN); subepitelyal alanda immün kompleks birikimi, glomerüler bazal membran (GBM) kalınlaşması ve karakteristik 'spike' formasyonu ile seyreden, erişkinde nefrotik sendromun en sık primer nedenlerinden biridir. Primer MN vakalarının çoğunluğu (~%70-80) PLA2R (fosfolipaz A2 reseptörü) otoantikorları ile, küçük bir kısmı THSD7A ile ilişkilidir. Sekonder nedenler arasında enfeksiyonlar, ilaçlar, malignite ve otoimmün hastalıklar yer alır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Hedef Antijen — Etiyoloji Haritası (Sekonder ve Atipik MN)",
+      "kolonlar": [
+        "Hedef Antijen",
+        "İlişkili Durum",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PLA2R ★",
+            "Primer MN (~%70-80)",
+            "CysR domaini başlangıç epitopu; epitop yayılması prognostik önemde"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "NDNF (Nöron kökenli nörotrofik faktör) ★",
+            "Sifiliz (Treponema pallidum) ilişkili MN",
+            "Sifilize sekonder MN'nin spesifik hedef antijeni"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "PCSK6 ★",
+            "NSAİİ ilişkili MN (özellikle diklofenak)",
+            "Proprotein konvertaz subtilisin/keksin tip 6"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Protokaderin FAT1 ★",
+            "Alloimmün de novo MN: HKHN sonrası GVHH bağlamında veya böbrek nakli sonrası ABMR (antikor aracılı rejeksiyon) ile eşzamanlı",
+            "Alloimmünizasyon mekanizmaları ön planda"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Kontaktin-1 (CNTN1) ★",
+            "Kronik İnflamatuar Demiyelinizan Poliradikülonöropati (CIDP) zemininde atipik MN",
+            "GBM'de IgG4 ile birlikte birikir — nöroimmünolojik-renal çakışma"
+          ]
+        },
+        {
+          "hucreler": [
+            "NELL-1",
+            "Klasik olarak malignite ile ilişkili; ayrıca alfa-lipoik asit, tiopronin/busillamin (sülfhidril grubu ilaçlar), cıva içeren cilt beyazlatıcı kremler ve geleneksel Hint ilaçları ile de tetiklenebilir",
+            "Histopatolojik olarak segmental, tam olmayan kapiller luplarda IgG1 baskın immün birikim — tipik globalden farklı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "PLA2R Epitop Yayılması (Epitope Spreading)",
+      "satirlar": [
+        {
+          "metin": "Hastalığın başlangıcında otoimmün yanıt primer olarak PLA2R'nin N-terminal sisteinden zengin (**CysR**) domainini hedefler. Hastalık ilerledikçe bağışıklık yanıtı iç kısımlardaki **CTLD1 ve CTLD7 (C-tipi lektin domainleri)**'ne doğru genişler — buna 'epitop yayılması' denir."
+        },
+        {
+          "metin": "**Klinik önemi:** Başlangıçtan itibaren epitop yayılması sergileyen hastaların spontan remisyona girme ihtimali yok denecek kadar azdır; bu durum rituximab gibi B hücre deplesyon tedavilerine dirençte ana moleküler belirleyicilerden biridir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Epitop Yayılması — Sınav Spotu: Yalnızca CysR domainine sınırlı yanıt = daha iyi prognoz, spontan remisyon olasılığı daha yüksek. CTLD1/CTLD7'ye yayılmış yanıt = kötü prognoz + tedavi direnci öngörücüsü. Antikor epitop profili, tedavi kararında (izlem vs. erken immünsüpresyon) giderek daha fazla kullanılmaktadır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kompleman Aktivasyon Mekanizması",
+      "satirlar": [
+        {
+          "metin": "Dolaşımdaki IgG4 alt tipi otoantikorlar fizyolojik olarak klasik kompleman yolağını (C1q üzerinden) aktive etme yeteneğinden YOKSUNDUR. Ancak primer MN hastalarında IgG4 moleküllerinin Fc bölgesindeki **anormal glikozilasyon (galaktoz eksikliği)** profili, immün komplekslerin doğrudan Mannoz Bağlayıcı Lektin (MBL) ile etkileşime girmesini sağlar — bu da **Lektin yolağı** üzerinden C5b-9 (membran atak kompleksi, MAC) hasarını tetikler."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Popülasyon Genetiği — Neandertal Haplotipi: İnsan genomuna introgrese olmuş spesifik bir Neandertal haplotipinin, popülasyon genetiği düzeyinde membranöz nefropati gelişimine karşı koruyucu (protektif) bir etki sağladığı moleküler düzeyde gösterilmiştir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Maskelenmiş IgG-Kappa ile Seyreden Membranöz Benzeri Glomerülopati (Atipik Antite) ★: Işık ve elektron mikroskobisinde tipik MN gibi görünür ANCAK standart immünofloresanda YALANCI NEGATİF sonuç verir. Dokuya **pronaz sindirimi** uygulandıktan sonra subepitelyal IgG-kappa birikimlerinin 'maskesi düşer' ve pozitifleşir. Sıklıkla genç kadınlarda, otoimmün hemolitik anemi veya inflamatuar artrit ile birliktedir; immün birikimlerde **Serum Amiloid P (SAP) pozitifliği** spesifik bir biyobelirteçtir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Rituximab Direnci — Anti-Rituximab Antikorları ★: Standart B-hücre deplesyon (rituximab) tedavisine yanıtsız primer MN hastalarının **%23-43'ünde** ilacın sitotoksik etkinliğini tamamen nötralize eden dolaşan anti-rituximab antikorları saptanır — bu 'gerçek klinik direnç' oluşturur. Bu hastalarda **Obinutuzumab** (tam insanlaştırılmış anti-CD20) veya doğrudan plazma hücresini hedefleyen **Daratumumab/Felzartamab** (anti-CD38) tedavilerine geçiş fizyolojik olarak zorunlu hale gelir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Membranöz Nefropati 7 Altın Kural: (1) PLA2R (%70-80) ve THSD7A primer MN'nin başlıca antijenleridir. (2) CysR-sınırlı yanıt = iyi prognoz; CTLD1/CTLD7'ye epitop yayılması = kötü prognoz + tedavi direnci. (3) IgG4 klasik yolağı aktive edemez; anormal glikozilasyon → MBL → Lektin yolağı → C5b-9. (4) Sekonder antijen haritası: NDNF=sifiliz, PCSK6=NSAİİ/diklofenak, Protokaderin FAT1=alloimmün (HKHN-GVHH/nakil-ABMR), CNTN1=CIDP, NELL-1=malignite+sülfhidril ilaçlar/cıva. (5) Maskelenmiş IgG-kappa glomerülopatisi: IF yalancı negatif, pronaz sindirimiyle ortaya çıkar, SAP pozitif. (6) Rituximab yanıtsızlığının %23-43'ü anti-rituximab antikorlarına bağlıdır → Obinutuzumab/Daratumumab-Felzartamab'a geçiş. (7) Neandertal haplotipi popülasyon düzeyinde koruyucu genetik faktördür."
+    }
+  ]
+}

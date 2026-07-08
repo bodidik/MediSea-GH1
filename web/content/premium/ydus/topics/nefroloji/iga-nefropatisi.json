@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "id": "iga-nefropatisi",
+    "branch": "nefroloji",
+    "baslik": "IgA Nefropatisi",
+    "altbaslik": "Dört vuruş hipotezi, Oxford MEST-C sınıflaması, IIgAN-PT risk aracı, TRF-Budesonid (Nefecon), Sparsentan/Atrasentan ve APRIL/BAFF/kompleman hedefli yeni nesil tedaviler",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "IgA nefropatisi (IgAN); 1968'de Jean Berger ve Nicole Hinglais tarafından, tekrarlayan hematüri atakları olan hastaların böbrek biyopsilerinde mesangiyal IgA-IgG birikimlerinin gösterilmesiyle tanımlanmıştır. Günümüzde dünya çapında **en sık görülen primer glomerülonefrit tipidir**."
+        },
+        {
+          "metin": "Etnik/coğrafi dağılım belirgin farklılık gösterir: **Doğu Asya/Pasifik Asya** kökenlilerde en yüksek insidans (Çin'de primer glomerülonefritlerin ~%45'i), Kafkas ırkında orta sıklık, Afrika kökenlilerde nadir. Genç erişkinlerde (2.-3. dekat) sık; Kuzey Amerika/Avrupa'da erkek:kadın 2:1, Doğu Asya'da cinsiyet dağılımı eşit."
+        },
+        {
+          "metin": "Tarihsel olarak 'benign' kabul edilse de modern kohort verileri (UK RaDaR): hastaların **%30-45'i (bazı kohortlarda %80'i)** tanıdan 20-30 yıl içinde son dönem böbrek yetmezliğine (SDBY) ilerler; yaşam beklentisi ~10 yıl kısalır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Patogenez — Dört Vuruş Hipotezi (Four-Hit Hypothesis)",
+      "kolonlar": [
+        "Aşama",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Vuruş 1 — Patojenik IgA Üretimi ★",
+            "IgA1'in menteşe (hinge) bölgesindeki O-glikan zincirlerinde genetik/epigenetik/mukozal faktörlerle galaktoz eksikliği → Gd-IgA1 (galaktoz eksikliği olan IgA1); mukozal kaynaklı (GALT, NALT)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Vuruş 2 — Otoantikor Gelişimi",
+            "İmmün sistem Gd-IgA1'deki yeni epitopları yabancı antijen olarak algılar → spesifik IgG/IgA otoantikorları üretilir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Vuruş 3 — İmmün Kompleks Oluşumu",
+            "Gd-IgA1 + otoantikor → dolaşan immün kompleksler (CIC); kompleman C3 kovalent tiyoester bağlarıyla katılır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Vuruş 4 — Glomerüler Birikim ve Hasar ★",
+            "Nefrijenik kompleksler mesangiuma çöker/in situ oluşur → mesangiyal hücre aktivasyonu (proliferasyon, matriks artışı, sitokin/kemokin) + kompleman aktivasyonu → podosit kaybı, kresent, ilerleyici tübülointerstisyel fibrozis"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "BAFF/APRIL ve Genetik: TNF süperailesi üyeleri BAFF ve APRIL, enfeksiyonlarda Peyer plaklarında Gd-IgA1 üreten patojenik plazma hücrelerinin sağkalımını/sınıf değişimini uyarır. GWAS: MHC sınıf II genleri + CFHR1/CFHR3 gen delesyonu KORUYUCU + C1GALT1 polimorfizmleri (O-glikozilasyon yolağı) yatkınlık oluşturur. Kompleman: ağırlıklı Alternatif ve Lektin yolaklar aktive olur; C5b-9 (membran atak kompleksi) ve MASP-2 lezyon şiddetini artırır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Histopatoloji",
+      "satirlar": [
+        {
+          "metin": "Kesin tanı böbrek biyopsisi ile konur. İmmünofloresan/immünoperoksidazda mesangiumda baskın veya eş-baskın **granüler IgA birikimi** karakteristiktir; IgA'ya sıklıkla **C3 (>%90 vakada)** ve değişen oranda IgG/IgM eşlik eder. Işık mikroskopisinde yaygın mesangiyal proliferasyondan şiddetli kresentik GN'e kadar geniş bir spektrum görülebilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Oxford MEST-C Sınıflandırması",
+      "kolonlar": [
+        "Parametre",
+        "Tanım",
+        "Prognostik Anlamı"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "M — Mesangiyal Hiperselülarite",
+            "Glomerüllerin >yarısında mesangiyal alanda >4 hücre (M1)",
+            "Kötü sonlanım öngörücüsü"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "E — Endokapiller Proliferasyon ★",
+            "Kapiller lümende hücresel artış (E1)",
+            "İmmünsüpresif tedavisiz kötü prognoz — AKTİF, geri döndürülebilir lezyonu yansıtır"
+          ]
+        },
+        {
+          "hucreler": [
+            "S — Segmental Glomerüloskleroz",
+            "Segmental skar varlığı (S1)",
+            "Kötü prognoz"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "T — Tübülointerstisyel Fibrozis/Atrofi ★",
+            "Kortikal fibrozis: T0 <%25, T1 %26-50, T2 >%50",
+            "ESKD riskinin EN GÜÇLÜ ve bağımsız belirleyicisi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "C — Kresent ★",
+            "C1: %1-24 glomerülde, C2: ≥%25 glomerülde",
+            "C2: immünsüpresif tedavi durumundan BAĞIMSIZ güçlü kötü gidişat belirleyicisi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Ayırıcı Tanı: IgA Vasküliti (IgAV/Henoch-Schönlein Purpurası), Stafilokok ilişkili IgA dominant enfeksiyon sonrası GN, IgA birikimi ile seyreden monoklonal gamopatiler sekonder nedenler olarak dışlanmalıdır. SDBY gidişatında podositopati de önemlidir — glomerüler-podositik çapraz iletişim ağır proteinüri ve tübülointerstisyel yıkıma zemin hazırlar."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Prezentasyon",
+      "satirlar": [
+        {
+          "metin": "En klasik bulgular: persistan asemptomatik mikroskopik hematüri ve proteinüri. Üst solunum yolu veya GİS enfeksiyonu sırasında alevlenen ataklar halindeki **'sinfarenjitik' makroskopik hematüri** IgAN'nin ayırıcı tezahürüdür (IgA vasküliti/postenfeksiyöz GN'den farklı olarak enfeksiyonla EŞ ZAMANLI, gecikmeli değil)."
+        },
+        {
+          "metin": "Ağır kresentik tutulumda (>%50 kresent + açıklanamayan hızlı eGFR kaybı) veya podositopatiye sekonder masif nefrotik sendrom tablosu ile de başvurabilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "IIgAN-PT (International IgAN Prediction Tool) ve Proteinüri Tuzağı: Biyopsi anındaki eGFR, yaş, ırk, kan basıncı, proteinüri, RAS inhibitörü kullanımı ve Oxford MEST skorunu birleştirerek 5-7 yıllık böbrek yetmezliği/eGFR'de %50 düşüş riskini hesaplar. Klasik >1 g/gün 'yüksek risk' eşiğine rağmen, optimize RAS blokajına rağmen zaman ağırlıklı proteinürisi 0.44-0.88 g/gün olan hastaların dahi %30'u 10 yılda ESKD geliştirir — düşük görünen proteinüri güvence vermez. Gd-IgA1, anti-Gd-IgA1 IgG, CD89, idrar podosit/makrofaj belirteçleri umut verici ama henüz rutin standart değil."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi — Optimize Destekleyici Bakım ve Hemodinamik Modülatörler",
+      "kolonlar": [
+        "Tedavi",
+        "Mekanizma",
+        "Kanıt"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Yaşam Tarzı + RAS İnhibisyonu",
+            "KB kontrolü, tuz kısıtlaması, sigara bırakma + maksimum tolere ACEi/ARB",
+            "Tüm hastalarda temel — KDIGO kılavuz standardı"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "SGLT2 İnhibitörleri (dapagliflozin, empagliflozin) ★",
+            "Spesifik olmayan mekanizma — tübüloglomerüler geri bildirim ile glomerül içi basıncı azaltır",
+            "DAPA-CKD ve EMPA-KIDNEY: IgAN alt grubunda progresyon riski ~%71 ve anlamlı oranda azaldı"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sparsentan (DEARA) ★",
+            "Dual endotelin Tip A (ETA) + anjiyotensin II Tip 1 (AT1) reseptör antagonisti — glomerüler HT ve fibrozisi hedefler",
+            "PROTECT faz 3: irbesartana kıyasla proteinüride %40 daha fazla düşüş + eGFR kaybı korundu; hızlandırılmış onay"
+          ]
+        },
+        {
+          "hucreler": [
+            "Atrasentan",
+            "Seçici ETA antagonisti",
+            "ALIGN çalışması — benzer hedef"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Mukozal İmmünite Hedeflemesi — TRF-Budesonid (Nefecon)",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hedef",
+            "Vuruş 1'e müdahale — distal ileumdaki Peyer plaklarında patojenik B hücrelerini lokal baskılar, Gd-IgA1 düzeyini düşürür"
+          ]
+        },
+        {
+          "hucreler": [
+            "Onay Durumu",
+            "FDA onaylı İLK spesifik IgAN ajanı"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "NefIgArd Çalışması ★",
+            "9 aylık tedavi + 15 aylık ilaçsız izlemde dahi plaseboya kıyasla eGFR korunması sağlandı (+5.05 mL/dk/1.73m² fark)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Avantaj",
+            "Aktif KC metabolizması (ilk geçiş etkisi) sayesinde sistemik glukokortikoid yan etkilerinden büyük ölçüde kaçınılır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Geleneksel İmmünsüpresyon — Tartışmalı Kanıtlar",
+      "kolonlar": [
+        "Çalışma/Ajan",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "TESTING (Metilprednizolon) ★",
+            "Böbrek sağkalımını iyileştirdi AMA ciddi enfeksiyonlar (Pneumocystis jirovecii dahil) ve ölümcül yan etkiler nedeniyle çalışmaya ARA VERİLDİ; sonra düşük doz steroid + proflaksi ile devam edildi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "STOP-IgAN",
+            "İmmünsüpresyon, uzun dönemde yalnız destekleyici bakıma kıyasla eGFR korunmasında NET fayda sağlamadı; toksisite ağır bastı"
+          ]
+        },
+        {
+          "hucreler": [
+            "MMF (MAIN çalışması)",
+            "Bazı Asya kökenli denemelerde düşük doz steroid destekli protokollerde steroid-sparing fayda; Kafkas popülasyonunda rutine oturmadı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yeni Nesil Hedefe Yönelik Ajanlar",
+      "kolonlar": [
+        "Sınıf",
+        "Ajanlar",
+        "Hedef/Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "APRIL/BAFF İnhibitörleri ★",
+            "Sibeprenlimab, Zigakibart (anti-APRIL); Atacicept, Telitacicept, Povetacicept (APRIL+BAFF)",
+            "Gd-IgA1 üreten hücreler sağkalımını kaybeder; Faz 2/3'te Gd-IgA1'de %50-60 düşüş + eGFR stabilizasyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Anti-CD38 (Plazma Hücresi)",
+            "Felzartamab, Mezagitamab",
+            "Uzun ömürlü plazma hücrelerini doğrudan hedefleyip tüketir — otoantikor üretimini kaynağından durdurma"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kompleman Yolu Blokerleri ★",
+            "İptacopan (Faktör B, APPLAUSE-IgAN — onaylı), Avacopan (C5aR), Ravulizumab (terminal yol), Narsoplimab (Lektin/MASP-2)",
+            "Alternatif ve Lektin yolak inhibisyonu ile inflamasyonu baskılar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kresentik GN Varyantı — İstisna: Hızlı ilerleyen GN (RPGN) tablosu çizen IgAN sunumlarında (ağır kresentik tutulum), yeni nesil hedefe yönelik ajanlar YETERSİZ kalır — hâlâ siklofosfamid destekli agresif kortikosteroid yaklaşımına ACİL şekilde başvurulması gerekebilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — IgA Nefropatisi 7 Altın Kural: (1) Dört vuruş: Gd-IgA1 üretimi → otoantikor → immün kompleks → glomerüler birikim/hasar. (2) T skoru (tübülointerstisyel fibrozis) = ESKD'nin en güçlü bağımsız öngörücüsü; C2 (≥%25 kresent) tedaviden bağımsız kötü prognoz. (3) 'Sinfarenjitik' hematüri = enfeksiyonla EŞ ZAMANLI (postenfeksiyöz GN'den ayrım). (4) Düşük proteinüri (0.44-0.88 g/gün) bile %30 ESKD riski taşır — yanlış güven vermemeli. (5) Tüm hastalara RASi + SGLT2i ± Sparsentan/Atrasentan temel hemodinamik optimizasyon. (6) TRF-Budesonid (Nefecon) = FDA onaylı ilk spesifik IgAN ajanı, mukozal Vuruş 1'i hedefler. (7) Sistemik steroid (TESTING/STOP-IgAN) toksisite nedeniyle sorgulanır; RPGN/ağır kresentik varyantta siklofosfamid+steroid hâlâ gerekebilir."
+    }
+  ]
+}
