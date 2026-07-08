@@ -29,6 +29,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "primer-skuamoz-hucreli-karsinom",
+          "baslik": "Karaciğerin Primer Skuamöz Hücreli Karsinomu",
+          "rozetler": [
+            "YENİ",
+            "NADİR"
+          ],
+          "hazir": true
         }
       ]
     }

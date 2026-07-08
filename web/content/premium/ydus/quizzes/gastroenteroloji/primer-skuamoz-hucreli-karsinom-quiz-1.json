@@ -1,0 +1,308 @@
+{
+  "id": "quiz-gastro-psccl-001",
+  "baslik": "Karaciğerin Primer Skuamöz Hücreli Karsinomu — Soru Seti 1",
+  "branch": "gastroenteroloji",
+  "topic": "primer-skuamoz-hucreli-karsinom",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Karaciğerde 6 cm çapında kistik-solid komponentli bir kitle saptanan hastanın biyopsisinde skuamöz hücreli karsinom bulguları izleniyor. Klinisyen, bu tanıyı 'primer karaciğer skuamöz hücreli karsinomu (PSCCL)' olarak kesinleştirmeden önce zorunlu bir adımı atlamamalıdır.\n\nBu zorunlu adım nedir ve neden gereklidir?",
+      "secenekler": {
+        "A": "Hemen cerrahi rezeksiyona geçilmelidir; ek görüntülemeye gerek yoktur.",
+        "B": "Ekstrahepatik bir primer odağın (akciğer, baş-boyun, özofagus, GİS) dışlanması gerekir çünkü karaciğerde saptanan skuamöz hücreli tümörlerin büyük çoğunluğu bu bölgelerden kaynaklanan metastazlardır; PSCCL tanısı ancak detaylı klinik/radyolojik dışlama sonrası konulabilir.",
+        "C": "Yalnızca AFP düzeyinin yüksek olup olmadığına bakmak yeterlidir, başka bir dışlama gerekmez.",
+        "D": "Karaciğerde skuamöz hücreli karsinom saptanması otomatik olarak PSCCL tanısı koydurur, metastaz olasılığı düşünülmez.",
+        "E": "Yalnızca karaciğer MRG'si yeterlidir, ekstrahepatik tarama gereksizdir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Karaciğerdeki skuamöz hücreli tümörlerin çoğu metastazdır (akciğer, baş-boyun, özofagus, GİS). PSCCL, ancak ekstrahepatik primer kaynak dışlandıktan sonra konulabilecek bir dışlama tanısıdır.",
+      "aciklama_detay": "Fizyolojik şartlarda karaciğer dokusunda skuamöz epitel bulunmaz; bu nedenle karaciğerde saptanan skuamöz hücreli karsinomların büyük bir çoğunluğu, primer olarak başka bir organdan (en sık akciğer, baş-boyun, özofagus veya gastrointestinal sistem) kaynaklanıp karaciğere metastaz yapmış tümörlerdir. Primer karaciğer skuamöz hücreli karsinomu (PSCCL) olağanüstü nadir bir antitedir (tüm primer karaciğer kanserlerinin ~%0.2'si) ve tanısı ancak detaylı bir klinik ve radyolojik dışlama sonucunda konulabilir. Bu dışlama sürecinde PET-BT özellikle kritik rol oynar; ekstrahepatik primer tümör odağının ve lenf nodu/uzak metastazın araştırılmasını sağlar. Bu adım atlanırsa, aslında metastatik bir hastalığı 'primer karaciğer tümörü' olarak yanlış sınıflandırma ve buna bağlı yanlış evreleme/tedavi riski doğar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ekstrahepatik primer dışlanmadan cerrahiye geçmek, aslında metastatik hastalığı yanlışlıkla primer karaciğer tümörü olarak tedavi etme riskini doğurur.",
+        "B": "DOGRU — PSCCL bir dışlama tanısıdır; ekstrahepatik primer odak mutlaka dışlanmalıdır.",
+        "C": "YANLIS — AFP, PSCCL tanısında ayırıcı bir rol oynasa da (genellikle normaldir), ekstrahepatik primer dışlamanın yerini tutmaz.",
+        "D": "YANLIS — Tam tersine, karaciğerde saptanan skuamöz hücreli karsinom öncelikle METASTAZ olarak düşünülmeli ve dışlanmalıdır; otomatik PSCCL tanısı konulmaz.",
+        "E": "YANLIS — Karaciğer MRG'si yalnızca karaciğer lezyonunu değerlendirir; ekstrahepatik primer kaynağı dışlamak için PET-BT gibi sistemik tarama gereklidir."
+      },
+      "etiketler": [
+        "PSCCL",
+        "Dışlama Tanısı",
+        "Metastaz",
+        "PET-BT",
+        "Epidemiyoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Weinbren & Rougier Ann R Coll Surg Engl 1984 (ilk seri); Steiner & Dorman Cancer 1957"
+    },
+    {
+      "id": "s2",
+      "metin": "Kronik hepatolitiazis (intrahepatik safra yolu taşları) öyküsü olan bir hastada yıllar sonra karaciğerde kitle gelişiyor ve biyopside skuamöz hücreli karsinom saptanıyor.\n\nBu klinik seyri açıklayan kabul gören temel patogenetik mekanizma hangisidir?",
+      "secenekler": {
+        "A": "Hepatolitiazis, hepatositlerin doğrudan skuamöz hücrelere dönüşümüne yol açar; bu süreç safra kanalı epitelini hiç ilgilendirmez.",
+        "B": "Konjenital kistlerin veya safra kanallarının enfeksiyon, taş veya kronik irritasyona maruz kalması, glandüler (biliyer) epitelin sekonder skuamöz metaplaziye uğramasına yol açar; bu metaplastik doku zamanla neoplastik transformasyon göstererek skuamöz karsinoma ilerler.",
+        "C": "Bu ilişki tamamen tesadüfidir; hepatolitiazis ile PSCCL arasında literatürde herhangi bir bağlantı bildirilmemiştir.",
+        "D": "Skuamöz metaplazi yalnızca viral hepatit zemininde gelişir, taş veya kronik irritasyonla ilişkisi yoktur.",
+        "E": "Bu mekanizma yalnızca pankreas kanalında görülür, safra kanalı epitelinde skuamöz metaplazi tanımlanmamıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kronik irritasyon (taş/enfeksiyon/kist) → biliyer (glandüler) epitelde sekonder skuamöz metaplazi → zamanla neoplastik transformasyon → skuamöz karsinom. Bu, PSCCL'nin kabul gören temel patogenez modelidir.",
+      "aciklama_detay": "PSCCL'nin kesin etiyolojisi tam olarak aydınlatılamamış olmakla birlikte, malignitenin genellikle kronik inflamatuar süreçler zemininde geliştiği kabul edilir. Literatürdeki vakaların büyük bir kısmında eşlik eden patolojiler arasında benign non-parazitik karaciğer kistleri, intrahepatik safra yolu taşları (hepatolitiazis), hepatik teratomlar, siliyer hepatik foregut kistleri ve Caroli hastalığı bildirilmiştir. Kabul gören temel patogenetik mekanizma; konjenital kistlerin veya safra kanallarının enfeksiyon, taş veya kronik irritasyona maruz kalması sonucunda glandüler (biliyer) epitelin sekonder skuamöz metaplaziye uğraması ve bu metaplastik dokunun zamanla neoplastik transformasyon göstererek skuamöz karsinoma ilerlemesidir — bu, tıpkı Barrett özofagusundaki metaplazi-displazi-karsinom sekansına benzer bir kavramsal model sunar. Alternatif hipotezler arasında karaciğerdeki pluripotent kök hücrelerin malign skuamöz hücrelere dönüşümü veya adenokarsinom hücrelerinin skuamöz diferansiyasyonu da yer alır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mekanizma hepatositlerin değil, biliyer (glandüler) EPİTELİN metaplazisi üzerinden işler.",
+        "B": "DOGRU — Kronik irritasyon → biliyer epitelde skuamöz metaplazi → neoplastik transformasyon → PSCCL.",
+        "C": "YANLIS — Bu ilişki literatürde iyi tanımlanmış, kabul gören bir patogenez modelidir, tesadüfi değildir.",
+        "D": "YANLIS — Mekanizma viral hepatitle sınırlı değildir; taş, enfeksiyon ve kronik irritasyon da tetikleyici olarak tanımlanmıştır.",
+        "E": "YANLIS — Bu mekanizma spesifik olarak hepatik/biliyer sistemde (karaciğer kistleri, safra kanalları) tanımlanmıştır."
+      },
+      "etiketler": [
+        "Skuamöz Metaplazi",
+        "Hepatolitiazis",
+        "Caroli Hastalığı",
+        "Patogenez",
+        "Neoplastik Transformasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ishak & Rabin Pathol Annu 1975; Fanciullo et al. World J Gastrointest Oncol 2020"
+    },
+    {
+      "id": "s3",
+      "metin": "Karaciğerde 5 cm kistik-solid kitle saptanan bir hastada HCC ile PSCCL ayırıcı tanısı yapılıyor. Serum AFP düzeyi normal sınırlarda ölçülüyor.\n\nBu laboratuvar bulgusunun ayırıcı tanıdaki önemi nedir?",
+      "secenekler": {
+        "A": "Normal AFP, hem HCC hem PSCCL'de eşit sıklıkta görülür; ayırıcı tanı değeri yoktur.",
+        "B": "HCC'de tipik olarak yükselen AFP, PSCCL'de çoğunlukla normal sınırlardadır; bu nedenle normal AFP düzeyi, atipik görünümlü bir karaciğer kitlesinde HCC'den ziyade PSCCL gibi alternatif bir tanıyı düşündürmelidir.",
+        "C": "Normal AFP, bu kitlenin kesinlikle benign olduğunu gösterir, malignite dışlanabilir.",
+        "D": "AFP düzeyi yalnızca kolanjiyokarsinomda anlamlıdır, HCC veya PSCCL ayrımında hiçbir rolü yoktur.",
+        "E": "PSCCL'de AFP her zaman HCC'den daha yüksek düzeylere ulaşır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "AFP, HCC'de tipik olarak yükselirken PSCCL'de çoğunlukla normaldir. Atipik kistik-solid bir karaciğer kitlesinde normal AFP, PSCCL gibi alternatif tanıları akla getirmelidir.",
+      "aciklama_detay": "Laboratuvar parametrelerinde, hepatoselüler karsinomda (HCC) tipik olarak yükselen alfa-fetoprotein (AFP) seviyeleri, PSCCL'de çoğunlukla normal sınırlardadır. Bu, atipik görüntüleme bulguları (kistik-solid komponentli, iCCA veya apse benzeri) olan bir karaciğer kitlesinde ayırıcı tanıyı yönlendiren önemli bir laboratuvar ipucudur — klasik HCC beklenirken AFP'nin normal çıkması, klinisyeni PSCCL, kolanjiyokarsinom veya metastaz gibi alternatif tanılara yönlendirmelidir. Ancak AFP normalliği tek başına tanı koydurucu değildir; kesin tanı doku biyopsisi ve immünhistokimya (P40/P63/CK5-6 pozitifliği, HepPar-1/Arginaz-1/TTF-1 negatifliği) ile konur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — AFP paterni iki tümörde belirgin farklıdır (HCC'de sık yüksek, PSCCL'de çoğunlukla normal); ayırıcı tanı değeri taşır.",
+        "B": "DOGRU — Normal AFP + atipik kitle → PSCCL gibi alternatif tanılar düşünülmeli.",
+        "C": "YANLIS — Normal AFP maligniteyi dışlamaz; PSCCL kendisi maligndir ve AFP'si genellikle normaldir.",
+        "D": "YANLIS — AFP asıl olarak HCC ile ilişkilendirilen bir belirteçtir; bu soruda HCC-PSCCL ayrımında kullanılmaktadır, kolanjiyokarsinomla sınırlı değildir.",
+        "E": "YANLIS — Tam tersine, PSCCL'de AFP genellikle NORMAL kalır, HCC'de daha sık yükselir."
+      },
+      "etiketler": [
+        "AFP",
+        "HCC Ayırıcı Tanı",
+        "Tümör Belirteçleri",
+        "Laboratuvar Bulguları",
+        "PSCCL"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; Kardar et al. J Gastrointest Cancer 2015"
+    },
+    {
+      "id": "s4",
+      "metin": "Karaciğer kitlesi olan bir hastada ateş, yeni başlayan konfüzyon, lökositoz ve serum kalsiyum düzeyinde belirgin yükseklik (hiperkalsemi) saptanıyor. Kemik metastazı veya paratiroid patolojisi araştırılıyor ancak hiçbiri saptanmıyor.\n\nBu paraneoplastik tabloyu açıklayabilecek mekanizma nedir?",
+      "secenekler": {
+        "A": "Bu bulgular PSCCL ile ilişkisizdir, tamamen ayrı bir endokrin patoloji aranmalıdır.",
+        "B": "Tümörün paratiroid hormon ilişkili protein (PTHrP) ve sitokin (IL-6) salgılamasına bağlı olarak lökositoz ve hiperkalsemi tabloları ile prezente olabileceği PSCCL için rapor edilmiştir; bu, kemik metastazı veya paratiroid patolojisi olmaksızın gelişen bir paraneoplastik sendromdur.",
+        "C": "Hiperkalsemi yalnızca kemik metastazı varlığında gelişebilir, paraneoplastik mekanizma bu tabloyu açıklayamaz.",
+        "D": "Lökositoz ve hiperkalsemi, PSCCL'de yalnızca eşlik eden bakteriyel enfeksiyona bağlıdır, tümörün kendisiyle ilgisi yoktur.",
+        "E": "PTHrP salgısı yalnızca akciğer skuamöz hücreli karsinomuna özgüdür, karaciğer kökenli tümörlerde görülmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PSCCL, PTHrP ve IL-6 salgılayarak (tıpkı akciğerin skuamöz hücreli karsinomunda olduğu gibi) hümoral hiperkalsemi ve lökositoz şeklinde paraneoplastik sendromlarla prezente olabilir — kemik metastazı olmadan gelişebilir.",
+      "aciklama_detay": "PSCCL'nin, tümörün paratiroid hormon ilişkili protein (PTHrP) ve sitokin (IL-6) salgılamasına bağlı olarak lökositoz ve hiperkalsemi tabloları ile de prezente olabildiği rapor edilmiştir. Bu, 'hümoral hiperkalsemi of malignansi' olarak bilinen, kemik metastazından bağımsız bir paraneoplastik mekanizmadır — PTHrP, PTH'ye yapısal benzerliği nedeniyle kemik rezorpsiyonunu ve renal kalsiyum geri emilimini artırarak hiperkalsemiye yol açar; bu mekanizma diğer skuamöz hücreli karsinomlarda (örn. akciğerin skuamöz hücreli karsinomu) da iyi tanımlanmıştır. IL-6 ise lökositoz ve sistemik inflamatuar yanıta katkıda bulunur. Bu paraneoplastik bulgular, karaciğer kitlesi olan bir hastada saptandığında (özellikle kemik metastazı veya birincil paratiroid patolojisi dışlandığında), altta yatan tümörün skuamöz diferansiyasyon gösterebileceğine dair ek bir klinik ipucu sunabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu paraneoplastik bulgular PSCCL için özellikle rapor edilmiştir, ilişkisiz değildir.",
+        "B": "DOGRU — PTHrP + IL-6 salgısı → hümoral hiperkalsemi + lökositoz; kemik metastazından bağımsız paraneoplastik mekanizma.",
+        "C": "YANLIS — Hümoral hiperkalsemi tam olarak kemik metastazı OLMAKSIZIN, PTHrP aracılı bir mekanizmayla gelişebilir; bu iyi tanımlanmış bir paraneoplastik sendromdur.",
+        "D": "YANLIS — Bu bulgular tümörün kendisinin salgıladığı maddelere (PTHrP, IL-6) bağlıdır, zorunlu olarak eşlik eden bir enfeksiyona bağlı değildir.",
+        "E": "YANLIS — PTHrP salgısı skuamöz hücreli karsinomların genel bir özelliğidir (akciğer dahil), karaciğer kökenli PSCCL'de de tanımlanmıştır."
+      },
+      "etiketler": [
+        "Paraneoplastik Sendrom",
+        "PTHrP",
+        "Hiperkalsemi",
+        "IL-6",
+        "Hümoral Hiperkalsemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; Fragulidis et al. Am J Case Rep 2015"
+    },
+    {
+      "id": "s5",
+      "metin": "Karaciğerde atipik kistik-solid bir kitle saptanan hastada dinamik kontrastlı BT'de arteriyel fazda periferik (rim tarzı) düzensiz/hafif tutulum, portal venöz ve geç fazlarda ise uzamış (progresif) kontrastlanma izleniyor.\n\nBu görüntüleme paterni hangi tanıyı taklit eder ve bu benzerliğin klinik önemi nedir?",
+      "secenekler": {
+        "A": "Bu patern klasik HCC'ye özgüdür (arteriyel hiperenhansman + washout); PSCCL'de görülmesi beklenmez.",
+        "B": "Bu patern intrahepatik kolanjiyokarsinomu (iCCA) taklit eder — PSCCL'nin görüntüleme bulguları tanısal olmaktan ziyade atipiktir ve iCCA veya karaciğer apsesi/metastazı gibi durumlarla karışabilir; bu nedenle kesin tanı için doku biyopsisi/immünhistokimya şarttır.",
+        "C": "Bu patern yalnızca basit hepatik kistlerde görülür, malign bir süreci düşündürmez.",
+        "D": "Uzamış geç faz kontrastlanması, lezyonun kesinlikle benign hemanjiom olduğunu gösterir.",
+        "E": "Bu görüntüleme paterni PSCCL için o kadar spesifiktir ki biyopsiye gerek kalmadan tanı konulabilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Periferik arteriyel tutulum + geç faz progresif/uzamış kontrastlanma, intrahepatik kolanjiyokarsinomu (iCCA) taklit eder. PSCCL'nin görüntüleme bulguları tanısal değil, atipiktir — kesin tanı biyopsi/İHK gerektirir.",
+      "aciklama_detay": "PSCCL'nin görüntüleme bulguları tanısal olmaktan ziyade, iCCA (intrahepatik kolanjiyokarsinom) veya karaciğer apsesi/metastazı gibi durumları taklit eden atipik özellikler sergiler. BT incelemelerinde sıklıkla santral nekroz alanları veya kistik dejenerasyon içeren, sınırları belirsiz düşük dansiteli lezyonlar saptanır. Dinamik kontrastlı serilerde, arteriyel fazda periferik (rim tarzında) düzensiz veya hafif tutulum, portal venöz ve geç fazlarda ise uzamış kontrastlanma izlenebilir — bu patern, klasik HCC'nin 'arteriyel hiperenhansman + washout' paterninden farklı olarak, iCCA'nın tipik 'progresif/gecikmiş kontrastlanma' paternine BENZER. Bu görüntüleme benzerliği, PSCCL'nin sıklıkla iCCA olarak ön tanı alarak yanlış yönlendirilebileceği anlamına gelir; bu nedenle kesin tanı için doku biyopsisi ve immünhistokimyasal analiz (skuamöz belirteçler P40/P63/CK5-6 pozitifliği ile) mutlaka gereklidir — görüntüleme tek başına asla tanı koydurucu değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tarif edilen patern (periferik arteriyel + geç faz uzamış kontrastlanma) klasik HCC paterni (hiperenhansman+washout) DEĞİLDİR; bu iCCA'ya benzer bir paterndir.",
+        "B": "DOGRU — Bu patern iCCA'yı taklit eder; PSCCL görüntüleme bulguları tanısal değildir, biyopsi/İHK şarttır.",
+        "C": "YANLIS — Bu patern malign bir süreci (iCCA benzeri) düşündürür, basit benign kistle uyumlu değildir.",
+        "D": "YANLIS — Hemanjiomun klasik paterni nodüler periferik kontrastlanma ile santripetal doluşdur, tarif edilen patern bu değildir; ayrıca 'kesinlikle benign' sonucuna görüntülemeyle varılamaz.",
+        "E": "YANLIS — Tam tersine, PSCCL görüntülemesi TANISAL DEĞİLDİR ve atipiktir; kesin tanı mutlaka biyopsi/immünhistokimya gerektirir."
+      },
+      "etiketler": [
+        "Görüntüleme",
+        "iCCA Taklidi",
+        "Dinamik BT",
+        "Atipik Kontrastlanma",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Kim et al. Korean J Radiol 2016; Fanciullo et al. World J Gastrointest Oncol 2020"
+    },
+    {
+      "id": "s6",
+      "metin": "Karaciğer kitlesi biyopsisinde atipik skuamöz hücrelerin nestler halinde büyümesi, interselüler köprüleşmeler ve keratin incileri (keratin pearls) izleniyor; skuamöz diferansiyasyon histolojik olarak doğrulanıyor. PSCCL tanısını kesinleştirmek ve HCC ile metastatik akciğer/tiroid kökenli tümörleri dışlamak için immünhistokimya paneli isteniyor.\n\nBu ayırıcı tanı için beklenen İHK profili hangisidir?",
+      "secenekler": {
+        "A": "P40/P63/CK5-6 negatif, HepPar-1/Arginaz-1 pozitif, TTF-1 pozitif.",
+        "B": "P40, P63 ve CK5/6 güçlü pozitif (skuamöz köken); CK19/CK7 sıklıkla pozitif (biliyer metaplazi kökeni); HepPar-1 ve Arginaz-1 negatif (HCC'yi ekarte eder); TTF-1 negatif (akciğer/tiroid kökenli metastazı dışlar).",
+        "C": "TTF-1 pozitifliği PSCCL tanısını doğrular ve akciğer kökenini destekler.",
+        "D": "HepPar-1 ve Arginaz-1 pozitifliği PSCCL tanısı için gereklidir, bu belirteçlerin negatif olması tanıyı dışlar.",
+        "E": "PSCCL'de hiçbir immünhistokimyasal belirteç tanısal değere sahip değildir, yalnızca H&E boyaması yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PSCCL İHK profili: P40/P63/CK5-6 GÜÇLÜ POZİTİF (skuamöz köken), CK19/CK7 sıklıkla pozitif (biliyer metaplazi), HepPar-1/Arginaz-1 NEGATİF (HCC dışlanır), TTF-1 NEGATİF (akciğer/tiroid metastazı dışlanır).",
+      "aciklama_detay": "İmmünhistokimya (İHK), PSCCL tanısının doğrulanması ve ayırıcı tanı için kritik öneme sahiptir. Tümör hücreleri P40, P63 ve CK5/6 (sitokeratin 5/6) gibi skuamöz epitel kökenini gösteren belirteçlerle GÜÇLÜ POZİTİF boyanır — bu, skuamöz diferansiyasyonu moleküler düzeyde doğrular. Biliyer epitel kökenini (metaplazi zeminini) destekleyen CK19 ve CK7 pozitifliği sıklıkla saptanır — bu, tümörün safra kanalı epitelinden köken aldığı hipotezini destekler. Ayırıcı tanı açısından iki kritik negatif belirteç grubu vardır: HepPar-1 ve Arginaz-1 NEGATİFTİR — bu, hepatoselüler karsinomu (HCC) ekarte ettirir (HCC'de bu belirteçler pozitif olurdu). TTF-1 de NEGATİFTİR — bu, akciğer veya tiroid kökenli metastatik bir skuamöz/adenoskuamöz karsinomu dışlar (bu tümörlerde TTF-1 sıklıkla pozitif olabilir). Bu kapsamlı negatif ve pozitif belirteç kombinasyonu, PSCCL tanısını hem doğrular hem de en önemli ayırıcı tanıları (HCC, akciğer/tiroid metastazı) dışlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersi doğrudur: P40/P63/CK5-6 POZİTİF olmalı (skuamöz köken doğrulaması), HepPar-1/Arginaz-1/TTF-1 ise NEGATİF olmalıdır.",
+        "B": "DOGRU — Skuamöz belirteçler pozitif, biliyer belirteçler sıklıkla pozitif, HCC ve akciğer/tiroid belirteçleri negatif.",
+        "C": "YANLIS — TTF-1 pozitifliği PSCCL'yi değil, akciğer veya tiroid kökenli bir metastazı düşündürür; PSCCL'de TTF-1 NEGATİF olmalıdır.",
+        "D": "YANLIS — HepPar-1/Arginaz-1 pozitifliği HCC'yi gösterir; PSCCL tanısı için bu belirteçlerin NEGATİF olması gerekir, pozitiflik tanıyı dışlar (HCC'yi düşündürür).",
+        "E": "YANLIS — İmmünhistokimya, PSCCL tanısının doğrulanmasında ve HCC/metastaz ayırımında merkezi bir role sahiptir; yalnızca H&E yeterli değildir."
+      },
+      "etiketler": [
+        "İmmünhistokimya",
+        "P40/P63/CK5-6",
+        "HepPar-1",
+        "TTF-1",
+        "Ayırıcı Tanı İHK"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; Xu et al. Diagn Pathol 2019"
+    },
+    {
+      "id": "s7",
+      "metin": "PSCCL tanısı doğrulanan iki hasta değerlendiriliyor: Hasta A'da ekstrahepatik metastaz yok ve karaciğer rezervi cerrahiye uygun; Hasta B'de multipl bilobar tutulum ve yetersiz karaciğer rezervi nedeniyle rezeksiyon mümkün değil.\n\nBu iki hastanın tedavi yaklaşımı ve beklenen prognostik farkları hangisidir?",
+      "secenekler": {
+        "A": "Her iki hastada da prognoz aynıdır; cerrahi rezeksiyonun sağkalıma hiçbir katkısı gösterilmemiştir.",
+        "B": "Hasta A için ana tedavi seçeneği tam cerrahi rezeksiyondur (hepatektomi); rezeksiyon uygulanan hastaların palyatif tedavi alanlara kıyasla anlamlı derecede daha uzun yaşadığı bildirilmiştir (medyan sağkalım 17 aya karşılık 5 ay). Hasta B'de radyoterapi, sistemik kemoterapi (Cisplatin+5-FU), TACE veya alkol enjeksiyonu gibi palyatif/lokal seçenekler değerlendirilir.",
+        "C": "Hasta B'de de rutin olarak agresif cerrahi rezeksiyon denenmelidir, karaciğer rezervi göz ardı edilebilir.",
+        "D": "PSCCL'de standart, evrensel kabul görmüş bir tedavi protokolü mevcuttur ve her iki hastaya da aynı kemoterapi rejimi uygulanmalıdır.",
+        "E": "Hasta A'da cerrahi rezeksiyon kontrendikedir çünkü PSCCL'de cerrahinin hiçbir sağkalım faydası yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ekstrahepatik metastazı olmayan + karaciğer rezervi uygun hastalarda (Hasta A) cerrahi rezeksiyon ana tedavidir (medyan sağkalım 17 ay vs palyatifte 5 ay). İnoperabl hastalarda (Hasta B) RT/kemoterapi/TACE/alkol enjeksiyonu gibi palyatif seçenekler kullanılır.",
+      "aciklama_detay": "Hastalığın aşırı nadirliği nedeniyle kabul edilmiş standart bir tedavi protokolü bulunmamaktadır; yönetim onkoloji, cerrahi ve hepatoloji/gastroenteroloji uzmanlarının bulunduğu multidisipliner bir yaklaşım gerektirir. Ekstrahepatik metastazı olmayan ve karaciğer rezervi uygun hastalarda (Hasta A profili) ana tedavi seçeneği tam cerrahi rezeksiyondur (hepatektomi). Rezeksiyon (küratif cerrahi) uygulanan hastaların, palyatif tedavi alanlara kıyasla istatistiksel olarak anlamlı derecede daha uzun yaşadığı bildirilmiştir — medyan sağkalım 17 aya karşılık 5 ay. İnoperabl vakalarda (Hasta B profili, multipl bilobar tutulum/yetersiz rezerv) veya cerrahiye adjuvan olarak radyoterapi, sistemik kemoterapi (örn. Cisplatin ve 5-Fluorourasil kombinasyonları), Transkateter Arteriyel Kemoembolizasyon (TACE) veya alkol enjeksiyonu denenebilir. Bu, cerrahi rezeksiyonun mümkün olduğu her durumda öncelikli tercih edilmesi gerektiğini, ancak karaciğer rezervi/metastaz durumunun buna izin vermediği hastalarda alternatif lokal/sistemik seçeneklerin devreye girdiğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Cerrahi rezeksiyon, sağkalımda anlamlı ve belgelenmiş bir fayda (17 ay vs 5 ay) göstermiştir.",
+        "B": "DOGRU — Cerrahiye uygun hastada (A) rezeksiyon öncelikli, belirgin sağkalım avantajı sağlar; inoperabl hastada (B) palyatif/lokal seçenekler kullanılır.",
+        "C": "YANLIS — Yetersiz karaciğer rezervi olan hastada agresif rezeksiyon denenmesi ciddi postoperatif karaciğer yetmezliği riski taşır; karaciğer rezervi göz ardı edilemez.",
+        "D": "YANLIS — Aşırı nadirlik nedeniyle standart, evrensel kabul görmüş bir protokol YOKTUR; tedavi bireyselleştirilmiş multidisipliner değerlendirmeye dayanır.",
+        "E": "YANLIS — Tam tersine, cerrahi rezeksiyonun (uygun hastalarda) anlamlı sağkalım faydası gösterilmiştir; kontrendike değildir, tercih edilen yaklaşımdır."
+      },
+      "etiketler": [
+        "Cerrahi Rezeksiyon",
+        "Hepatektomi",
+        "Palyatif Tedavi",
+        "Sağkalım",
+        "Multidisipliner Yaklaşım"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; O'Sullivan et al. HPB Surg 1998"
+    },
+    {
+      "id": "s8",
+      "metin": "İnoperabl PSCCL tanılı bir hasta, standart kemoradyoterapiye yanıt vermiyor. Tümör dokusunun moleküler analizinde mikrosatellit instabilite-yüksek (MSI-H) profil ve yüksek tümör mutasyon yükü (TMB) saptanıyor.\n\nBu moleküler profile dayanarak önerilebilecek tedavi seçeneği ve gerekçesi nedir?",
+      "secenekler": {
+        "A": "MSI-H/yüksek TMB profili tedavi seçimini etkilemez, standart sitotoksik kemoterapiye devam edilmelidir.",
+        "B": "MSI-H veya yüksek TMB'ye sahip PSCCL vakalarında PD-1 inhibitörleri (örn. Pembrolizumab) ile umut verici yanıtlar elde edildiğine dair raporlar mevcuttur; bu durum standart kemoradyoterapiye dirençli olgularda yeni bir terapötik fırsat sunar.",
+        "C": "MSI-H profili, immünoterapiye yanıtsızlığın bir göstergesidir, bu hastada PD-1 inhibitörlerinden kaçınılmalıdır.",
+        "D": "Bu moleküler profil yalnızca kolorektal kanserde tedavi kararlarını etkiler, PSCCL gibi nadir tümörlerde herhangi bir klinik uygulaması yoktur.",
+        "E": "MSI-H/yüksek TMB saptanması durumunda hastaya mutlaka acil karaciğer nakli önerilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MSI-H veya yüksek TMB'li PSCCL'de PD-1 inhibitörleri (Pembrolizumab gibi) ile umut verici yanıtlar bildirilmiştir — kemoradyoterapiye dirençli olgularda yeni bir terapötik seçenek sunar.",
+      "aciklama_detay": "Son yıllarda, MSI-H (Mikrosatellit instabilite-yüksek) veya yüksek tümör mutasyon yüküne (TMB) sahip PSCCL vakalarında PD-1 inhibitörleri (örn. Pembrolizumab) ile umut verici yanıtlar elde edildiğine dair raporlar yayınlanmaktadır; bu durum standart kemoradyoterapiye dirençli olgularda yeni bir terapötik fırsat sunmaktadır. Bu yaklaşım, MSI-H/yüksek TMB durumunun tümör tipinden bağımsız olarak immün kontrol noktası inhibitörlerine yanıtı öngören 'tümör-agnostik' bir biyobelirteç olarak kabul edildiği güncel onkoloji paradigmasıyla uyumludur (FDA, MSI-H/dMMR tümör tipinden bağımsız pembrolizumab onayı vermiştir). PSCCL gibi son derece nadir ve standart tedavi protokolü olmayan tümörlerde, bu tür moleküler profil bazlı yaklaşımlar özellikle değerlidir çünkü geleneksel tedavilere dirençli olgularda alternatif bir seçenek sunar. Ayrıca metinde belirtildiği gibi olguların bir kısmında PD-L1 ekspresyonu da araştırılmakta olup, immün kontrol noktası inhibitörlerine yanıtı öngörebilmektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MSI-H/yüksek TMB profili, immünoterapi seçimi için önemli bir biyobelirteçtir; tedavi kararını etkilememesi beklenmez.",
+        "B": "DOGRU — MSI-H/yüksek TMB → PD-1 inhibitörü (Pembrolizumab) düşünülmeli; dirençli olgularda yeni fırsat.",
+        "C": "YANLIS — Tam tersine, MSI-H immünoterapiye İYİ YANIT öngörücüsüdür, yanıtsızlık göstergesi değildir.",
+        "D": "YANLIS — MSI-H/TMB temelli immünoterapi yaklaşımı tümör-agnostik bir kavramdır ve PSCCL dahil çeşitli nadir tümörlerde de raporlanmıştır.",
+        "E": "YANLIS — MSI-H/yüksek TMB saptanması karaciğer nakli endikasyonu oluşturmaz; bu bulgu immünoterapi seçimini yönlendiren bir moleküler biyobelirteçtir."
+      },
+      "etiketler": [
+        "MSI-H",
+        "Tümör Mutasyon Yükü",
+        "Pembrolizumab",
+        "PD-1 İnhibitörü",
+        "İmmünoterapi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Marabelle et al. J Clin Oncol 2020 (KEYNOTE-158); Fanciullo et al. World J Gastrointest Oncol 2020"
+    },
+    {
+      "id": "s9",
+      "metin": "İki farklı PSCCL hastası karşılaştırılıyor: Hasta 1'in tümörü uzun süredir mevcut olan bir non-parazitik karaciğer kisti zemininde gelişmiş; Hasta 2'nin tümörü ise kronik intrahepatik safra yolu taşına (hepatolitiazis) sekonder gelişmiş.\n\nLiteratür verilerine göre bu iki hastanın prognozu arasındaki beklenen fark nedir?",
+      "secenekler": {
+        "A": "İki grup arasında prognostik fark bildirilmemiştir, zemin patolojisi sağkalımı etkilemez.",
+        "B": "Kist zemininde gelişen tümörlerin (Hasta 1), safra yolu taşı kaynaklı olanlara (Hasta 2) göre daha kötü bir prognoza sahip olduğu düşünülmektedir.",
+        "C": "Safra yolu taşı zemininde gelişen tümörler (Hasta 2), kist zemininde gelişenlere göre her zaman daha kötü prognozludur.",
+        "D": "Zemin patolojisi yalnızca tanı anındaki görüntüleme bulgularını etkiler, sağkalımla hiçbir ilişkisi yoktur.",
+        "E": "PSCCL'de prognoz yalnızca hastanın yaşına bağlıdır, altta yatan zemin patolojisinin hiçbir etkisi yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Literatüre göre kist zemininde gelişen PSCCL tümörleri, safra yolu taşı (hepatolitiazis) kaynaklı olanlara göre daha kötü prognozludur.",
+      "aciklama_detay": "PSCCL'nin genel klinik gidişatı oldukça agresif ve prognozu son derece kötüdür; literatürdeki vakaların sağkalım süresi genel olarak 1 yılın altında (medyan 5-7.5 ay aralığında) kalmaktadır. Ancak zemin patolojisine göre alt gruplar arasında prognostik farklılık bildirilmiştir: özellikle kist zemininde gelişen tümörlerin, safra yolu taşı kaynaklı olanlara göre daha kötü bir prognoza sahip olduğu düşünülmektedir. Bu farkın altında yatan kesin mekanizma tam olarak açıklığa kavuşturulmamış olsa da, bu bilgi klinik pratikte prognostik danışmanlık ve hasta/aile bilgilendirmesi açısından önemlidir — aynı PSCCL tanısı içinde zemin patolojisinin (kist vs taş) beklenen seyri bir miktar farklılaştırabileceği akılda tutulmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Literatürde zemin patolojisine göre prognostik farklılık (kist zemini daha kötü) bildirilmiştir.",
+        "B": "DOGRU — Kist zemininde gelişen tümörler, safra taşı kaynaklılara göre daha kötü prognozludur.",
+        "C": "YANLIS — Yön ters verilmiştir; taş kaynaklı tümörler kist zemininde gelişenlere göre görece daha iyi (daha az kötü) prognozludur, tam tersi değil.",
+        "D": "YANLIS — Zemin patolojisi yalnızca görüntüleme değil, bildirilen prognostik seyri de etkileyen bir faktördür.",
+        "E": "YANLIS — Prognoz yalnızca yaşa bağlı değildir; zemin patolojisi (kist vs taş) de literatürde prognostik bir faktör olarak tanımlanmıştır."
+      },
+      "etiketler": [
+        "Prognoz",
+        "Kist Zemini",
+        "Hepatolitiazis",
+        "Sağkalım",
+        "Risk Faktörleri"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; O'Sullivan et al. HPB Surg 1998"
+    },
+    {
+      "id": "s10",
+      "metin": "PSCCL'nin genel prognozu ve sağkalım verileri değerlendiriliyor.\n\nLiteratürdeki verilere göre, cerrahi ve kombine tedavilere rağmen PSCCL hastalarının genel sağkalım profili hakkında en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "PSCCL genellikle iyi prognozludur; hastaların çoğu 5 yıldan uzun süre yaşar.",
+        "B": "Klinik gidişat oldukça agresif ve prognoz son derece kötüdür; uygulanan cerrahi ve kombine tedavilere rağmen literatürdeki vakaların sağkalım süresi genel olarak 1 yılın altında (medyan 5-7.5 ay aralığında) kalmaktadır.",
+        "C": "Sağkalım süresi HCC ile tamamen aynıdır, PSCCL'ye özgü bir prognostik farklılık yoktur.",
+        "D": "Medyan sağkalım, tedavi türünden (cerrahi vs palyatif) bağımsız olarak her zaman 10 yılın üzerindedir.",
+        "E": "PSCCL'de prognoz yalnızca tümör boyutuna bağlıdır, tedavi yaklaşımının sağkalıma hiçbir katkısı yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PSCCL'nin genel prognozu son derece kötüdür; tüm tedavilere rağmen medyan sağkalım 5-7.5 ay aralığında, genel olarak 1 yılın altındadır — agresif bir malignitedir.",
+      "aciklama_detay": "PSCCL'nin genel klinik gidişatı oldukça agresif ve prognoz son derece kötüdür. Uygulanan cerrahi ve kombine tedavilere (radyoterapi, kemoterapi, TACE, immünoterapi) rağmen literatürdeki vakaların sağkalım süresi genel olarak 1 yılın altında (medyan 5-7.5 ay aralığında) kalmaktadır. Cerrahi rezeksiyon uygulanabilen, ekstrahepatik metastazı olmayan hasta alt grubunda sağkalım göreceli olarak daha iyi olsa da (medyan 17 ay), bu bile 5 yıllık sağkalım açısından hâlâ kötü bir prognozu yansıtır. Bu bilgi, PSCCL'nin son derece agresif seyirli, nadir görülen ve tedaviye rağmen genellikle kötü sonlanan bir malignite olduğunu vurgular — bu nedenle erken tanı (mümkün olduğunda) ve rezeksiyona uygun hastaların hızlıca belirlenmesi kritik önem taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PSCCL tam tersine son derece kötü prognozludur; 5 yıl sağkalım beklenen bir seyir değildir.",
+        "B": "DOGRU — Agresif seyir, medyan sağkalım 5-7.5 ay, genel olarak 1 yılın altında.",
+        "C": "YANLIS — PSCCL, genel olarak HCC'den daha kötü/agresif bir seyir gösterir; aynı prognostik profili paylaşmaz.",
+        "D": "YANLIS — Medyan sağkalım hem cerrahi (17 ay) hem palyatif (5 ay) grupta 10 yılın ÇOK altındadır; tedavi türü sağkalımı etkiler ama her ikisi de kötü seyirlidir.",
+        "E": "YANLIS — Tedavi yaklaşımı (cerrahi vs palyatif) sağkalımda anlamlı fark yaratır (17 ay vs 5 ay); tümör boyutu tek belirleyici değildir."
+      },
+      "etiketler": [
+        "Prognoz",
+        "Sağkalım",
+        "Agresif Malignite",
+        "Medyan Sağkalım",
+        "PSCCL Özet"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; O'Sullivan et al. HPB Surg 1998"
+    }
+  ]
+}
