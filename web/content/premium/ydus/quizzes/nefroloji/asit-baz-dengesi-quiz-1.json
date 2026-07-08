@@ -1,0 +1,308 @@
+{
+  "id": "quiz-nefro-asitbaz-001",
+  "baslik": "Asit-Baz Dengesi ve Bozuklukları — Soru Seti 1",
+  "branch": "nefroloji",
+  "topic": "asit-baz-dengesi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Akut böbrek hasarı gelişen bir hastada metabolik asidoz saptanıyor. Klinisyen, böbreklerin asit-baz dengesindeki normal fonksiyonunun bozulduğunu ve bu nedenle kompanzasyonun akciğerlere kıyasla çok daha yavaş geliştiğini açıklıyor.\n\nBöbreklerin asit-baz dengesindeki normal rolü ve kompanzasyon hızı hakkında en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Böbrekler, günde yaklaşık 50-100 mEq uçucu olmayan asidi, titre edilebilir asit (fosfat) ve amonyum (NH4+) olarak atarak yeni bikarbonat üretir; bu kompanzasyon yanıtının tam olarak gelişmesi 3-5 gün sürer — akciğerlerin dakikalar içindeki yanıtından çok daha yavaştır.",
+        "B": "Böbrekler asit-baz dengesinde yalnızca pasif bir rol oynar, aktif asit atılımı veya bikarbonat üretimi yapmazlar.",
+        "C": "Böbreklerin kompanzasyon yanıtı akciğerlerden daha hızlıdır, saniyeler içinde gerçekleşir.",
+        "D": "Böbrekler günde yaklaşık 15.000 mmol asit atarak asit-baz dengesini düzenler, bu miktar akciğerlerin CO2 atılımından bağımsızdır.",
+        "E": "Böbreklerin asit atma kapasitesi yalnızca titre edilebilir asit (fosfat) ile sınırlıdır, amonyum atılımı asit-baz dengesiyle ilgisizdir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Böbrekler günde ~50-100 mEq non-volatil asidi titre edilebilir asit (fosfat) + amonyum (NH4+) olarak atıp yeni bikarbonat üretir; bu kompanzasyon 3-5 gün sürer — akciğerlerin dakikalar içindeki hızlı yanıtından çok daha yavaştır.",
+      "aciklama_detay": "Böbrekler: Metabolizma ve diyet proteinlerinin yıkımıyla her gün yaklaşık 50-100 mEq uçucu olmayan (non-volatil) asit üretilir. Böbrekler filtrelenen bikarbonatın neredeyse tamamını (çoğunluğu proksimal tübülde) geri emer. Ayrıca tüketilen bikarbonatın yerine konması için, asitleri 'titre edilebilir asit' (özellikle fosfat) ve 'amonyum (NH4+)' olarak atarak yeni bikarbonat üretirler. Böbreklerin kompanzasyon yanıtının tam olarak gelişmesi 3 ila 5 gün sürer — bu, akciğerlerin PCO2'yi dakikalar içinde ayarlayabilmesinden çok daha yavaş bir süreçtir. Bu farklı zaman ölçekleri, klinik pratikte önemlidir: akut bir metabolik bozuklukta solunumsal kompanzasyon hemen devreye girerken, kronik bir solunumsal bozuklukta (örn. KOAH) böbrek kompanzasyonunun tam etkisini göstermesi günler alır — bu nedenle 'akut' ve 'kronik' solunumsal asidoz/alkaloz ayrımı kompanzasyon derecesine göre yapılabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 50-100 mEq/gün asit atılımı (titre edilebilir asit + amonyum) ile yeni HCO3- üretimi; 3-5 günlük yavaş kompanzasyon.",
+        "B": "YANLIS — Böbrekler AKTİF olarak asit atar ve yeni bikarbonat üretir; pasif bir organ değildir.",
+        "C": "YANLIS — Tam tersine, böbrek kompanzasyonu akciğerlerden ÇOK DAHA YAVAŞTIR (3-5 gün vs dakikalar).",
+        "D": "YANLIS — Günde 15.000 mmol CO2 üretimi AKCİĞERLERİN işlediği uçucu asit miktarıdır, böbreklerin non-volatil asit atılımı (50-100 mEq) ile karıştırılmamalıdır.",
+        "E": "YANLIS — Amonyum (NH4+) atılımı, titre edilebilir asit atılımına EK olarak böbrek asit atılımının önemli bir bileşenidir, göz ardı edilemez."
+      },
+      "etiketler": [
+        "Böbrek Kompanzasyonu",
+        "Titre Edilebilir Asit",
+        "Amonyum Atılımı",
+        "Kompanzasyon Hızı",
+        "Normal Fizyoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hamm et al. N Engl J Med 2015 (Renal Acid-Base); DuBose TD. Brenner & Rector's The Kidney"
+    },
+    {
+      "id": "s2",
+      "metin": "Diyabetik ketoasidoz (DKA) tanılı bir hastada arteriyel kan gazında pH 7.15, HCO3- 8 mEq/L, PCO2 20 mmHg ölçülüyor.\n\nKış (Winter) formülüne göre bu hastada beklenen PCO2 değeri nedir ve ölçülen PCO2 bu beklentiyle uyumlu mu?",
+      "secenekler": {
+        "A": "Beklenen PCO2 = 1.5 × 8 + 8 = 20 (±2), yani 18-22 mmHg aralığı; ölçülen PCO2 (20 mmHg) bu aralığın içinde olduğundan kompanzasyon uygundur, basit bir metabolik asidoz düşünülür.",
+        "B": "Beklenen PCO2 = 40 mmHg olmalıdır çünkü kompanzasyon her zaman normal PCO2'yi hedefler.",
+        "C": "Winter formülü yalnızca solunumsal asidozda kullanılır, metabolik asidozda geçerli değildir.",
+        "D": "Beklenen PCO2 hesaplaması için HCO3- değil, yalnızca pH kullanılır.",
+        "E": "Ölçülen PCO2 (20 mmHg), beklenen değerden (Winter formülüne göre) çok düşük olduğundan bu hastada mutlaka eşlik eden bir solunumsal alkaloz vardır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Winter formülü: Beklenen PCO2 = 1.5 × [HCO3-] + 8 (±2) = 1.5×8+8 = 20 (±2), yani 18-22 mmHg. Ölçülen PCO2 (20) bu aralıkta — kompanzasyon uygun, basit metabolik asidoz.",
+      "aciklama_detay": "Kış (Winter) Formülü (Metabolik Asidoz için): Beklenen PCO2 = 1.5 × [HCO3-] + 8 (±2). Bu hastada HCO3- 8 mEq/L olduğundan: Beklenen PCO2 = 1.5 × 8 + 8 = 12 + 8 = 20 mmHg, ±2 ile aralık 18-22 mmHg'dir. Ölçülen PCO2 20 mmHg olduğundan bu, beklenen aralığın tam içindedir — bu, solunumsal kompanzasyonun uygun (adekvat) olduğunu ve başka bir birincil solunumsal bozukluğun (örn. eşlik eden solunumsal alkaloz veya asidoz) olmadığını gösterir. Bu, 'basit' (tek) bir metabolik asidoz tanısını destekler. Eğer ölçülen PCO2 bu aralığın dışında olsaydı (örn. çok daha düşük), bu ek bir solunumsal alkaloz bileşenini; çok daha yüksek olsaydı, ek bir solunumsal asidoz bileşenini (yetersiz kompanzasyon veya birincil solunumsal asidoz) düşündürürdü — yani karma asit-baz bozukluğu.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hesaplama doğru: beklenen PCO2 20±2; ölçülen 20 mmHg uyumlu, basit metabolik asidoz.",
+        "B": "YANLIS — Kompanzasyon PCO2'yi normal (40) düzeye getirmeyi hedeflemez; kısmi bir kompanzasyondur, formülle hesaplanan beklenen değere ulaşması yeterlidir.",
+        "C": "YANLIS — Winter formülü özellikle METABOLİK ASİDOZ için geliştirilmiş bir kompanzasyon formülüdür, tanımı gereği bu bağlamda kullanılır.",
+        "D": "YANLIS — Winter formülü doğrudan HCO3- değerini kullanır (1.5 × HCO3- + 8); pH formülün bir parçası değildir.",
+        "E": "YANLIS — Ölçülen PCO2 (20) beklenen aralığın (18-22) İÇİNDEDİR, dışında değildir; bu nedenle eşlik eden solunumsal alkaloz sonucu çıkarılamaz."
+      },
+      "etiketler": [
+        "Winter Formülü",
+        "Kompanzasyon Hesaplama",
+        "DKA",
+        "Basit vs Karma Bozukluk",
+        "PCO2 Beklenen Değer"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Albert et al. Ann Intern Med 1967 (Winter's formula); Berend et al. N Engl J Med 2014"
+    },
+    {
+      "id": "s3",
+      "metin": "Şiddetli ishal nedeniyle hastaneye başvuran bir hastada laboratuvar sonuçları: Na 138, Cl 112, HCO3- 14 mEq/L.\n\nBu hastanın anyon açığı (AG) hesaplaması ve bulunan metabolik asidoz tipi hangisidir?",
+      "secenekler": {
+        "A": "AG = 138 - (112+14) = 12 mEq/L (normal aralıkta); bu, normal anyon açıklı (hiperkloremik) metabolik asidoz ile uyumludur — ishalin klasik biyokimyasal profili budur çünkü kaybedilen bikarbonatın yerini klorür alır.",
+        "B": "AG = 138 - (112+14) = 12 mEq/L; bu değer yüksek anyon açıklı metabolik asidozu gösterir.",
+        "C": "AG hesaplaması için yalnızca Na ve HCO3- kullanılır, Cl formülün bir parçası değildir.",
+        "D": "Bu hastada anyon açığı hesaplanamaz çünkü ishal AG hesaplamasını geçersiz kılar.",
+        "E": "AG = 138 - (112+14) = 12 mEq/L; bu değer, güçlü asit birikimini gösterir ve GOLDMARK nedenleri araştırılmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "AG = Na - (Cl+HCO3) = 138-(112+14) = 12 mEq/L, normal aralıkta (~8-12). İshal, bikarbonat kaybının yerini klorürün aldığı normal AG (hiperkloremik) metabolik asidozun KLASİK örneğidir.",
+      "aciklama_detay": "Anyon Açığı: AG = Na - (Cl + HCO3). (Normal değeri laboratuvara göre değişmekle birlikte genelde 8-12 mEq/L'dir). Bu hastada AG = 138 - (112+14) = 138 - 126 = 12 mEq/L, normal aralığın üst sınırındadır. Normal Anyon Açıklı (Hiperkloremik) Metabolik Asidoz: Bikarbonat kaybı yaşanırken yerini klorür iyonlarının aldığı durumdur, bu yüzden anyon açığı değişmez. Ciddi ishaller (gastrointestinal bikarbonat kaybı) bu kategorinin klasik ve en sık nedenidir — bağırsak sıvısı bikarbonattan zengindir, ishalle kaybedilen bikarbonatın yerini elektronötraliteyi korumak için klorür iyonları alır (böbrek kompanzatuar olarak klor geri emilimini artırır), bu nedenle serum klor düzeyi yükselir (hiperkloremi) ve anyon açığı normal kalır. Bu vakadaki yüksek-normal klor (112) ve azalmış HCO3- (14) ile normal AG (12) profili tam olarak bu klasik ishal ile ilişkili hiperkloremik metabolik asidoz tablosunu yansıtır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — AG=12 (normal), hiperkloremik (normal AG) metabolik asidoz; ishalin klasik profili.",
+        "B": "YANLIS — 12 mEq/L değeri normal AG aralığındadır (genelde 8-12), yüksek AG'yi göstermez.",
+        "C": "YANLIS — AG formülü Na, Cl VE HCO3'ü birlikte kullanır (AG = Na - (Cl+HCO3)); Cl formülün ayrılmaz bir parçasıdır.",
+        "D": "YANLIS — AG her klinik durumda hesaplanabilir; ishal AG hesaplamasını geçersiz kılmaz, tam tersine tipik olarak normal AG sonucu verir.",
+        "E": "YANLIS — Normal AG değeri güçlü asit birikimini (yüksek AG asidozunu) göstermez; GOLDMARK araştırması yalnızca YÜKSEK AG durumunda gereklidir."
+      },
+      "etiketler": [
+        "Anyon Açığı Hesaplama",
+        "Hiperkloremik Asidoz",
+        "İshal",
+        "Normal AG",
+        "GİS Bikarbonat Kaybı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Kraut & Madias N Engl J Med 2014; Berend et al. N Engl J Med 2014"
+    },
+    {
+      "id": "s4",
+      "metin": "Septik şok ve ciddi hipoalbüminemi (serum albümin 1.5 g/dL) olan bir hastada laboratuvar sonuçları: Na 140, Cl 100, HCO3- 20 mEq/L.\n\nBu hastada ham (düzeltilmemiş) AG hesaplaması ve albümine göre düzeltilmiş AG değeri nedir; bu düzeltme neden önemlidir?",
+      "secenekler": {
+        "A": "Ham AG = 140-(100+20) = 20 mEq/L; ancak albümin düşük olduğundan (normal ~4 g/dL'den 2.5 g/dL düşük) düzeltme gerekir: her 1 g/dL albümin düşüşü için AG ~2.5 mEq/L artırılmalıdır, düzeltilmiş AG = 20 + (2.5×2.5) ≈ 26 mEq/L — bu düzeltme yapılmazsa gerçek yüksek AG asidoz derecesi hafife alınabilir.",
+        "B": "Albümin düzeyi anyon açığı hesaplamasını hiçbir şekilde etkilemez, düzeltme gereksizdir.",
+        "C": "Ham AG = 20 mEq/L zaten doğrudur; düşük albümin varlığında AG'nin gerçek değeri daha DÜŞÜK olarak yeniden hesaplanmalıdır.",
+        "D": "Albümin düzeltmesi yalnızca yüksek albümin durumlarında (hiperalbüminemi) yapılır, hipoalbüminemide gerekmez.",
+        "E": "Düzeltme faktörü her 1 g/dL albümin değişimi için AG'de 10 mEq/L'lik bir değişim öngörür."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Ham AG=20; albümin normalden (~4) 2.5 g/dL düşük olduğundan (1.5 g/dL) her 1 g/dL için +2.5 mEq/L eklenerek düzeltilmiş AG ≈26 hesaplanır. Düzeltme yapılmazsa gizli yüksek AG asidozu kaçırılabilir.",
+      "aciklama_detay": "Albumin, anyon açığının en büyük bileşenidir. Albümin düşükse hesaplanan AG değeri düzeltilmelidir (Her 1 g/dL albümin düşüşü için AG yaklaşık 2.5 mEq/L düşer) — bu ifadenin tersten okunuşu, düzeltme yaparken düşük albüminde HESAPLANAN AG'nin gerçek değerden düşük göründüğünü, bu nedenle düzeltilmiş AG'yi bulmak için ham AG'ye eklemeler yapılması gerektiğini gösterir. Normal albümin ~4 g/dL kabul edilirse, bu hastada albümin 1.5 g/dL olduğundan fark 2.5 g/dL'dir; düzeltme: 2.5 g/dL × 2.5 mEq/L/g/dL = 6.25 mEq/L eklenir, düzeltilmiş AG ≈ 20 + 6.25 ≈ 26 mEq/L. Bu düzeltme kritik öneme sahiptir çünkü hipoalbüminemik hastalarda (yoğun bakım, sepsis, malnütrisyon gibi sık görülen durumlarda) ham AG değeri yanıltıcı şekilde normal görünebilir, oysa gerçekte klinik olarak anlamlı bir yüksek AG metabolik asidozu (örn. laktik asidoz sepsis nedeniyle) mevcut olabilir — düzeltme yapılmazsa bu tanı kaçırılabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Düzeltme: her 1 g/dL albümin düşüşü için AG'ye +2.5 mEq/L eklenir; düzeltilmiş AG ≈26, gerçek yüksek AG'yi ortaya çıkarır.",
+        "B": "YANLIS — Albümin, AG'nin en büyük bileşeni olduğundan düzeyindeki değişiklikler AG hesaplamasını doğrudan etkiler; düzeltme önemlidir.",
+        "C": "YANLIS — Düşük albüminde ham AG gerçek değerden DAHA DÜŞÜK görünür (maskelenmiş yüksek AG), daha yüksek değil; düzeltme AG'yi ARTIRICI yönde yapılır.",
+        "D": "YANLIS — Düzeltme tam olarak HİPOALBÜMİNEMİ durumunda (klinik pratikte en sık karşılaşılan senaryo) gereklidir.",
+        "E": "YANLIS — Düzeltme faktörü 1 g/dL başına ~2.5 mEq/L'dir, 10 mEq/L değil."
+      },
+      "etiketler": [
+        "Albümin Düzeltmesi",
+        "Anyon Açığı",
+        "Hipoalbüminemi",
+        "Gizli Yüksek AG",
+        "Sepsis"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Figge et al. Crit Care Med 1998; Feldman et al. Clin J Am Soc Nephrol 2008"
+    },
+    {
+      "id": "s5",
+      "metin": "Kronik alkol kullanımı olan bir hastada hem laktik asidoz hem de şiddetli kusmaya bağlı ek bir bozukluk şüphesi var. Laboratuvar: Na 140, Cl 95, HCO3- 12 mEq/L, Albümin normal.\n\nDelta/Delta oranını hesaplayarak bu hastada yalnızca basit bir yüksek AG asidoz mu yoksa eşlik eden başka bir bozukluk mu olduğunu değerlendirin (Normal AG kabul: 12, Normal HCO3-: 24).",
+      "secenekler": {
+        "A": "AG = 140-(95+12) = 33; ΔAG = 33-12 = 21; ΔHCO3 = 24-12 = 12; Delta/Delta = 21/12 ≈ 1.75; bu oran >1.6 olduğundan, eşlik eden bir METABOLİK ALKALOZ (kusmaya bağlı) düşünülmelidir — beklenenden daha yüksek HCO3- kalmıştır çünkü alkaloz bileşeni HCO3-'ü kısmen 'korumaktadır'.",
+        "B": "Delta/Delta oranı 0.5 olarak hesaplanır ve bu, eşlik eden normal AG asidozu gösterir.",
+        "C": "Delta/Delta oranı yalnızca solunumsal bozukluklarda hesaplanır, metabolik asidozda kullanılmaz.",
+        "D": "Bu hastada Delta/Delta oranı tam olarak 1'dir, bu nedenle basit bir yüksek AG asidoz dışında hiçbir ek bozukluk yoktur.",
+        "E": "Delta/Delta hesaplaması için yalnızca AG değeri kullanılır, HCO3- değişimi hesaba katılmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "AG=33, ΔAG=21, ΔHCO3=12, Delta/Delta≈1.75 (>1.6) → eşlik eden metabolik alkaloz (kusma) düşünülür. Yüksek oran, HCO3-'ün beklenenden fazla 'korunduğunu' (alkaloz bileşeninin HCO3-'ü desteklediğini) gösterir.",
+      "aciklama_detay": "Yüksek Anyon Açığı varsa, Delta/Delta Oranına (ΔAG / ΔHCO3) bakılır. Bu oran, yüksek anyon açıklı bir metabolik asidozun yanında başka gizli bir bozukluk olup olmadığını gösterir. Bu hastada: AG = 140-(95+12) = 33 mEq/L (normal 12'den ΔAG = 33-12 = 21 mEq/L artmış). HCO3- 12 mEq/L (normal 24'ten ΔHCO3 = 24-12 = 12 mEq/L azalmış). Delta/Delta = ΔAG/ΔHCO3 = 21/12 ≈ 1.75. Basit bir laktik asidozda veya diyabetik ketoasidozda bu oran genellikle 1 ile 1.6 arasındadır. Oran >1.6 (veya duruma göre >2) ise eşlik eden metabolik alkaloz veya kronik solunumsal asidoz kompanzasyonu vardır (örn. diyabetik ketoasidoz + kusma). Bu hastada oran 1.75 olduğundan (>1.6), laktik asidoza (alkol kullanımına bağlı) eşlik eden bir metabolik alkaloz (kusmaya bağlı mide asidi/HCl kaybı) bileşeni düşünülmelidir — teorik olarak AG artışı kadar HCO3- düşmemiştir çünkü eşzamanlı alkaloz bileşeni HCO3-'ü 'yükseltici' yönde etkilemektedir, bu da net HCO3- düşüşünü azaltıp oranı yükseltir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hesaplama doğru: Delta/Delta ≈1.75 (>1.6) → eşlik eden metabolik alkaloz (kusma) düşünülür.",
+        "B": "YANLIS — Hesaplanan oran ~1.75'tir, 0.5 değil; ayrıca oran <1 olsaydı normal AG asidozu düşündürürdü, bu vakada oran >1.6'dır.",
+        "C": "YANLIS — Delta/Delta oranı ÖZELLİKLE yüksek AG metabolik asidozda kullanılan bir analiz aracıdır, solunumsal bozukluklarla sınırlı değildir.",
+        "D": "YANLIS — Hesaplanan oran 1 değil ~1.75'tir; bu, basit bir yüksek AG asidozdan FARKLI, eşlik eden bir bozukluğu (alkaloz) işaret eder.",
+        "E": "YANLIS — Delta/Delta hesaplaması hem ΔAG hem ΔHCO3'ü (oranın payı ve paydası olarak) birlikte kullanır, yalnızca AG değil."
+      },
+      "etiketler": [
+        "Delta/Delta Oranı",
+        "Karma Asit-Baz Bozukluğu",
+        "Laktik Asidoz",
+        "Eşlik Eden Metabolik Alkaloz",
+        "Alkol İlişkili Ketoasidoz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Rastegar A. J Am Soc Nephrol 2007; Berend et al. N Engl J Med 2014"
+    },
+    {
+      "id": "s6",
+      "metin": "Normal anyon açıklı (hiperkloremik) metabolik asidozu olan bir hastada, bu asidozun böbrek kaynaklı (RTA) mı yoksa ekstrarenal (örn. ishal) mi olduğu ayırt edilmek isteniyor. İdrar elektrolitleri: Na 40, K 20, Cl 90 mEq/L.\n\nİdrar Anyon Açığı (UAG) hesaplanarak yapılan bu ayrımın sonucu ve yorumu nedir?",
+      "secenekler": {
+        "A": "UAG = (40+20)-90 = -30 mEq/L; NEGATİF bir UAG, böbreğin amonyum atılımını uygun şekilde artırdığını (amonyum klorla birlikte atılır) gösterir — bu, ekstrarenal (örn. ishal gibi gastrointestinal) bir kayıp kaynağını düşündürür, RTA'yı düşündürmez.",
+        "B": "UAG = (40+20)-90 = -30 mEq/L; pozitif bir değer olduğundan RTA düşünülmelidir.",
+        "C": "UAG hesaplaması yalnızca yüksek anyon açıklı metabolik asidozda kullanılır, normal AG asidozda yeri yoktur.",
+        "D": "Negatif UAG değeri her zaman RTA'yı gösterir, ekstrarenal kayıplarla ilişkisi yoktur.",
+        "E": "UAG hesaplamasında yalnızca idrar Na ve Cl kullanılır, K formülün bir parçası değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "UAG = (Na+K)-Cl = (40+20)-90 = -30 (negatif). Negatif UAG, böbreğin amonyum atılımını uygun artırdığını gösterir → ekstrarenal kayıp (ishal gibi) düşünülür, RTA değil.",
+      "aciklama_detay": "Gerekirse İdrar Anyon Açığını (UAG) Hesaplayın: Normal anyon açıklı (hiperkloremik) metabolik asidozların kaynağının böbrek (RTA) mi yoksa böbrek dışı (ishal) mı olduğunu ayırt etmek için kullanılır. UAG = İdrar (Na + K - Cl). Bu hastada UAG = (40+20)-90 = 60-90 = -30 mEq/L. İshal gibi ekstrarenal kayıplarda böbrek uygun şekilde amonyum atılımını artırır (amonyum, klor ile birlikte atılır — NH4Cl olarak). İdrarda ölçülemeyen bu ek pozitif yüklü amonyum katyonu, formülde 'gizli' kalır ve elektronötraliteyi sağlamak için idrarda ölçülen Cl'nin (Na+K) toplamından daha yüksek çıkmasına neden olur — bu da UAG'nin NEGATİF çıkmasına yol açar (genelde -20 ile -50 arası). Bu, böbreğin asidoza uygun şekilde yanıt verdiğini (amonyum atılımını artırdığını) ve bu nedenle asidozun kaynağının böbrek DIŞI (ekstrarenal, örn. ishal) olduğunu gösterir. Renal Tübüler Asidoz'da (RTA) ise böbreğin amonyum atılımı yetersizdir (bu tam olarak RTA'nın patofizyolojik defektidir), bu yüzden UAG POZİTİF çıkar — böbrek uygun kompanzasyonu gösteremediği için.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — UAG=-30 (negatif) → uygun amonyum atılımı → ekstrarenal kaynak (ishal gibi) düşünülür.",
+        "B": "YANLIS — Hesaplanan değer NEGATİFTİR (-30), pozitif değil; negatif UAG RTA'yı değil ekstrarenal kaybı düşündürür.",
+        "C": "YANLIS — UAG spesifik olarak NORMAL AG (hiperkloremik) metabolik asidozda kaynak ayrımı için kullanılır, yüksek AG asidozda değil.",
+        "D": "YANLIS — Bu vakada UAG NEGATİFTİR ve ekstrarenal kaybı gösterir; RTA'da UAG POZİTİF olur, negatif değil.",
+        "E": "YANLIS — UAG formülü Na, K VE Cl'yi birlikte kullanır (UAG = Na+K-Cl); K formülün bir parçasıdır."
+      },
+      "etiketler": [
+        "İdrar Anyon Açığı",
+        "UAG",
+        "RTA Ayrımı",
+        "Ekstrarenal Kayıp",
+        "Amonyum Atılımı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Batlle et al. N Engl J Med 1988 (Urine Anion Gap); Kim et al. Nephron Physiol 2012"
+    },
+    {
+      "id": "s7",
+      "metin": "Şiddetli kusma nedeniyle hastaneye başvuran bir hastada metabolik alkaloz saptanıyor. İdrar klor düzeyi ölçülüyor ve 12 mEq/L olarak bulunuyor. Hastaya izotonik salin infüzyonu başlanıyor ve alkaloz hızla düzeliyor.\n\nBu klinik seyri açıklayan idrar klor mekanizması ve metabolik alkalozun idame nedeni nedir?",
+      "secenekler": {
+        "A": "İdrar Cl <20 mEq/L olması, bu alkalozun 'salin (sıvı) tedavisine yanıt veren' tipte olduğunu gösterir; idame nedeni hipovolemi (hacim kasılması) olup, bu durumda böbrek fazla bikarbonatı atmak yerine yeniden emer ve alkalozu sürdürür — salin verilmesi hipovolemiyi düzeltir ve böbreğin bikarbonat atma kapasitesini geri getirir.",
+        "B": "İdrar Cl <20 mEq/L, bu alkalozun hiperaldosteronizme bağlı, salin dirençli tipte olduğunu gösterir.",
+        "C": "İdrar klor düzeyi metabolik alkalozun idame mekanizmasıyla hiçbir ilişkisi olmayan, rastgele bir bulgudur.",
+        "D": "Salin infüzyonunun alkalozu düzeltmesi, hastanın aslında Bartter sendromu olduğunu doğrular.",
+        "E": "İdrar Cl <20 mEq/L değeri, bu hastada asıl sorunun birincil hiperaldosteronizm olduğunu gösterir ve salin tedavisi kontrendikedir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İdrar Cl <20 mEq/L = salin YANITLI metabolik alkaloz (kusma gibi). İdame nedeni hipovolemi/klor eksikliği — böbrek HCO3-'ü atmak yerine geri emer. Salin, hipovolemiyi düzeltip böbreğin normal HCO3- atma kapasitesini geri getirir.",
+      "aciklama_detay": "İdamesi: Normalde böbrek fazla bikarbonatı atabilir. Ancak hipovolemi (hacim kasılması), klor eksikliği ve hipokalemi varsa, böbrek bikarbonatı atmak yerine yeniden emer ve alkalozu idame ettirir. Klinik ayrım için İdrar Klor (Cl) düzeyi ölçülür; idrar Cl <20 mEq/L ise sıvı (salin) tedavisine yanıt veren (kusma vb.), >20 mEq/L ise dirençli (hiperaldosteronizm, Bartter sendromu vb.) kabul edilir. Bu hastada idrar Cl 12 mEq/L (<20 eşiği) olduğundan, bu alkaloz salin-yanıtlı kategoridedir — kusma nedeniyle gelişen hipovolemi ve klor kaybı, böbreğin kompanzatuar olarak Na ve Cl'yi (dolayısıyla suyla birlikte hacmi) yeniden emmesine, bu sırada da bikarbonatı atamamasına (proksimal tübülde Na-HCO3 birlikte reabsorbe olur) yol açar. İzotonik salin (NaCl) infüzyonu, hem hacim açığını hem de klor açığını düzelterek böbreğin normal bikarbonat atma kapasitesini geri kazanmasını sağlar — bu, alkalozun hızla düzelmesini açıklar. Hiperaldosteronizm veya Bartter sendromu gibi salin-dirençli nedenlerde ise böbrek klor/hacim kaybından değil, birincil bir tübüler/hormonal bozukluktan etkilendiğinden salin infüzyonu alkalozu düzeltmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İdrar Cl<20 = salin yanıtlı; hipovolemi/klor eksikliği idame mekanizması; salin hacim/klor açığını düzeltip alkalozu çözer.",
+        "B": "YANLIS — İdrar Cl <20 mEq/L salin YANITLI tipi gösterir, dirençli (hiperaldosteronizm) tipi değil; dirençli tipte idrar Cl >20 olurdu.",
+        "C": "YANLIS — İdrar klor, metabolik alkalozun idame mekanizmasını (hipovolemi/klor eksikliği durumu) doğrudan yansıtan, klinik olarak merkezi bir tanısal araçtır.",
+        "D": "YANLIS — Salin ile hızlı düzelme, tam tersine Bartter sendromu gibi salin-dirençli bir tabloyu DIŞLAR; Bartter'de idrar Cl yüksek olur ve salin yanıtı zayıftır.",
+        "E": "YANLIS — İdrar Cl <20 mEq/L bulgusu hiperaldosteronizmi değil, hipovolemik/salin-yanıtlı bir süreci gösterir; salin tedavisi bu vakada kontrendike değil, tam tersine etkili ve uygun tedavidir."
+      },
+      "etiketler": [
+        "İdrar Klor",
+        "Metabolik Alkaloz İdamesi",
+        "Salin Yanıtlı Alkaloz",
+        "Hipovolemi",
+        "Kusma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Galla JH. J Am Soc Nephrol 2000; Luke & Galla J Am Soc Nephrol 2012"
+    },
+    {
+      "id": "s8",
+      "metin": "Şiddetli sepsis ve laktik asidoz nedeniyle asidemik olan bir hastada (pH 7.10) serum potasyum düzeyi 6.2 mEq/L (yüksek) ölçülüyor. Hastanın böbrek fonksiyonları normal ve hiçbir eksojen potasyum alımı yok.\n\nBu hiperkaleminin asidoz ile ilişkisi nasıl açıklanır?",
+      "secenekler": {
+        "A": "Kan pH'ı düştüğünde, fazla hidrojen (H+) iyonları hücre içine girerek tamponlanır. Elektriksel nötraliteyi korumak için hücre içindeki potasyum (K+) hücre dışına çıkar. Bu durum asidoza bağlı hiperkalemiye yol açar.",
+        "B": "Asidoz ve potasyum düzeyi arasında hiçbir fizyolojik ilişki yoktur, bu hiperkalemi tesadüfen eşlik etmektedir.",
+        "C": "Asidemi sırasında K+ hücre içine girer, bu nedenle serum K+ düzeyi düşmelidir; bu hastadaki yükseklik başka bir nedene bağlı olmalıdır.",
+        "D": "H+ iyonları yalnızca hücre dışında tamponlanır, hücre içi geçiş asidoz-potasyum ilişkisinde rol oynamaz.",
+        "E": "Bu ilişki yalnızca solunumsal asidozda geçerlidir, metabolik asidozda (bu vakadaki gibi) K+ geçişi gerçekleşmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Asidemide fazla H+ hücre içine girer; elektronötralite için K+ hücre dışına çıkar → hiperkalemi. Bu, hücresel iyon değişim mekanizmasının doğrudan bir sonucudur, böbrek fonksiyonundan bağımsız olarak gerçekleşebilir.",
+      "aciklama_detay": "Asidemi ve Hiperkalemi: Kan pH'ı düştüğünde, fazla hidrojen (H+) iyonları hücre içine girerek tamponlanır (özellikle hücre içi proteinler ve fosfatlar tarafından). Elektriksel nötraliteyi korumak için hücre içindeki potasyum (K+) hücre dışına çıkar. Bu durum asidoza bağlı hiperkalemiye yol açar. Bu mekanizma, böbrek fonksiyonundan bağımsız, saf bir hücresel iyon değiş-tokuş sürecidir — H+'nın hücre içine girişi elektriksel yük dengesini bozar, bu dengeyi yeniden sağlamak için pozitif yüklü K+ iyonları hücre dışına (dolaşıma) çıkar. Bu nedenle, böbrek fonksiyonu normal olan hastalarda bile akut, şiddetli asidozda (bu vakadaki gibi laktik asidoz) hiperkalemi gelişebilir — bu, potasyumun böbrekten atılamamasından değil, hücreler arası yeniden dağılımdan (redistribution) kaynaklanır. Bu bilgi klinik olarak önemlidir çünkü altta yatan asidoz düzeltildiğinde (bu vakada sepsis/laktik asidozun tedavisiyle), K+ tekrar hücre içine girecek ve hiperkalemi kendiliğinden düzelebilecektir — bu nedenle asemptomatik, hafif-orta hiperkalemi genellikle asıl asidoz tedavi edilirken yakından izlenir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — H+ hücre içine girer → elektronötralite için K+ hücre dışına çıkar → hiperkalemi; hücresel iyon değişimi mekanizması.",
+        "B": "YANLIS — Asidoz-potasyum ilişkisi iyi tanımlanmış, doğrudan bir fizyolojik mekanizmadır (H+/K+ değişimi), tesadüfi değildir.",
+        "C": "YANLIS — Mekanizma TAM TERSİDİR: asidemide K+ hücre İÇİNE değil, hücre DIŞINA çıkar (H+ girişine karşılık); bu nedenle hiperkalemi (hipokalemi değil) beklenir.",
+        "D": "YANLIS — H+ tamponlanması HÜCRE İÇİNDE de gerçekleşir (proteinler, fosfatlar); bu hücre içi tamponlama, K+'nın hücre dışına çıkışını tetikleyen elektronötralite mekanizmasının temelidir.",
+        "E": "YANLIS — Bu ilişki hem metabolik hem solunumsal asidozda geçerlidir (asidemi genel bir durumdur), yalnızca solunumsal asidozla sınırlı değildir."
+      },
+      "etiketler": [
+        "Asidoz-Potasyum İlişkisi",
+        "Hiperkalemi",
+        "Hücresel İyon Değişimi",
+        "Elektronötralite",
+        "H+/K+ Transselüler Değişim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Aronson & Giebisch J Am Soc Nephrol 2011; Adrogué & Madias N Engl J Med 1981"
+    },
+    {
+      "id": "s9",
+      "metin": "KOAH'lı bir hastada kronik solunumsal asidoz (pH 7.34, PCO2 65 mmHg, HCO3- 34 mEq/L — kompanse) saptanıyor. Hasta akut solunum yetmezliği nedeniyle mekanik ventilasyona alınıyor ve klinisyen PCO2'yi hızla 40 mmHg'a düşürmeyi planlıyor.\n\nBu hızlı düzeltme stratejisinin potansiyel tehlikesi nedir?",
+      "secenekler": {
+        "A": "Akut solunumsal asidozlarda PCO2 hızlıca normale düşürülürse 'post-hiperkapnik alkaloz' ve ciddi hücresel komplikasyonlar gelişebileceğinden yavaş düzeltme uygulanmalıdır — bu hastada kronik kompanzasyonla yükselmiş olan HCO3-, PCO2 hızla düşürüldüğünde göreceli olarak çok yüksek kalır ve belirgin bir metabolik alkaloz (post-hiperkapnik alkaloz) ortaya çıkar.",
+        "B": "PCO2'nin hızlı düzeltilmesinin hiçbir riski yoktur, mümkün olduğunca hızlı normale getirilmelidir.",
+        "C": "Post-hiperkapnik alkaloz yalnızca teorik bir kavramdır, klinik pratikte hiçbir zaman gözlenmemiştir.",
+        "D": "Hızlı PCO2 düzeltmesinin tek riski hipokalemi olup, alkaloz veya hücresel komplikasyonla ilgisi yoktur.",
+        "E": "Bu hastada HCO3- düzeyi zaten normal olduğundan hızlı PCO2 düzeltmesinin herhangi bir alkaloz riski yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kronik solunumsal asidozda böbrek HCO3-'ü kompanzatuar olarak yükseltmiştir (34). PCO2 hızla düşürülürse bu yüksek HCO3- geride kalır ve göreceli 'post-hiperkapnik alkaloz' + hücresel komplikasyonlar gelişir — bu yüzden yavaş düzeltme esastır.",
+      "aciklama_detay": "Akut solunumsal asidozlarda PCO2 hızlıca normale düşürülürse 'post-hiperkapnik alkaloz' ve ciddi hücresel komplikasyonlar gelişebileceğinden yavaş düzeltme uygulanır. Bu hastada kronik KOAH nedeniyle böbrekler günler/haftalar içinde kompanzatuar olarak HCO3- düzeyini artırmıştır (34 mEq/L, normalin belirgin üzerinde) — bu, kronik yüksek PCO2'ye (65 mmHg) uyum sağlamak için gelişen adaptif bir yanıttır ve pH'ı 7.34 gibi neredeyse normale yakın bir düzeyde tutmaktadır (kompanse kronik solunumsal asidoz). Eğer mekanik ventilasyonla PCO2 hızla 40 mmHg'a (normal) düşürülürse, henüz böbrekler tarafından atılamamış olan yüksek HCO3- düzeyi (34) geride kalır — artık yüksek PCO2 ile 'dengelenmesi' gereken bu yüksek HCO3-, normal PCO2 ile birleştiğinde belirgin bir METABOLİK ALKALOZ (post-hiperkapnik alkaloz) ortaya çıkarır. Bu akut alkalemi, serebral vazokonstriksiyon, aritmi riski ve diğer hücresel/nörolojik komplikasyonlara yol açabilir. Bu nedenle kronik solunumsal asidozu olan hastalarda mekanik ventilasyon sırasında PCO2'nin hastanın KRONİK bazal düzeyine yakın tutularak kademeli/yavaş düşürülmesi önerilir, ani normalizasyondan kaçınılmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kompanzatuar yüksek HCO3- + hızla düşürülen PCO2 = post-hiperkapnik alkaloz + hücresel komplikasyon riski; yavaş düzeltme gerekir.",
+        "B": "YANLIS — Hızlı düzeltmenin açık ve iyi tanımlanmış bir riski (post-hiperkapnik alkaloz) vardır; 'hiçbir risk yok' ifadesi yanlıştır.",
+        "C": "YANLIS — Post-hiperkapnik alkaloz, klinik pratikte tanınan ve önlenmesi hedeflenen gerçek bir komplikasyondur, yalnızca teorik değildir.",
+        "D": "YANLIS — Risk yalnızca hipokalemiyle sınırlı değildir; asıl ve öncelikli risk metabolik ALKALOZ ve buna bağlı hücresel/nörolojik komplikasyonlardır.",
+        "E": "YANLIS — Bu hastada HCO3- düzeyi (34) NORMAL DEĞİL, kompanzatuar olarak YÜKSELMİŞTİR; bu yükseklik hızlı PCO2 düzeltmesiyle alkaloz riskinin tam kaynağıdır."
+      },
+      "etiketler": [
+        "Post-Hiperkapnik Alkaloz",
+        "Kronik Solunumsal Asidoz",
+        "Mekanik Ventilasyon",
+        "Kompanzatuar HCO3-",
+        "Yavaş Düzeltme"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Krapf & Beeler N Engl J Med 1991; Brenner MJ. Chest 2005"
+    },
+    {
+      "id": "s10",
+      "metin": "Salisilat (aspirin) intoksikasyonu olan bir hasta acil servise başvuruyor. Kan gazında hem yüksek AG metabolik asidoz hem de solunumsal alkaloz komponenti tespit ediliyor.\n\nSalisilat intoksikasyonunda bu karma asit-baz bozukluğunun mekanizması nedir?",
+      "secenekler": {
+        "A": "Salisilat, hem doğrudan solunum merkezini uyararak hiperventilasyona (solunumsal alkaloz) yol açar hem de kendisi zayıf bir asit olduğundan ve metabolik yan ürünleri nedeniyle yüksek anyon açıklı metabolik asidoza katkıda bulunur — bu, aynı anda hem birincil solunumsal alkaloz hem de birincil metabolik asidozun bir arada bulunduğu klasik bir karma bozukluk örneğidir.",
+        "B": "Salisilat intoksikasyonu yalnızca solunumsal alkaloz yapar, metabolik asidoz bileşeni salisilatla ilişkili değildir.",
+        "C": "Salisilat intoksikasyonu yalnızca metabolik asidoz yapar, solunum merkezi üzerinde hiçbir etkisi yoktur.",
+        "D": "Bu karma bozukluk salisilata özgü değildir, tüm ilaç intoksikasyonlarında aynı şekilde görülür.",
+        "E": "Salisilatın solunumsal alkaloz etkisi yalnızca çocuklarda görülür, erişkinlerde yalnızca metabolik asidoz gelişir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Salisilat hem solunum merkezini direkt uyararak solunumsal alkaloz yapar HEM DE (zayıf asit yapısı + metabolik etkileri ile) yüksek AG metabolik asidoza katkıda bulunur — bu, aynı ilacın iki farklı mekanizma ile iki ayrı birincil asit-baz bozukluğu yapmasının klasik örneğidir.",
+      "aciklama_detay": "Solunumsal Alkaloz Nedenleri arasında salisilat intoksikasyonu sayılmıştır — salisilat, medüller solunum merkezini doğrudan uyararak hiperventilasyona ve buna bağlı hipokapniye (solunumsal alkaloz) yol açar. Ayrıca Yüksek Anyon Açıklı Metabolik Asidoz nedenleri arasında da (GOLDMARK akroniminde 'A' harfi) Aspirin (Salisilat) yer almaktadır — salisilat kendisi zayıf bir asittir ve metabolizması sırasında organik asit birikimine (ayrıca hücresel oksidatif fosforilasyonu bozarak laktik asit üretimine) katkıda bulunarak yüksek AG metabolik asidoza yol açar. Bu, salisilat intoksikasyonunun neden klasik olarak karma bir asit-baz bozukluğu (eşzamanlı birincil solunumsal alkaloz + birincil yüksek AG metabolik asidoz) ile prezente olduğunu açıklar — bu iki bozukluk birbirini kompanse eden ikincil yanıtlar değil, salisilatın FARKLI mekanizmalarla tetiklediği İKİ AYRI BİRİNCİL bozukluktur. Klinik olarak, hastanın yaşına ve intoksikasyonun evresine göre bu iki bileşenden biri baskın olabilir (erişkinlerde genellikle solunumsal alkaloz erken dönemde daha belirgin, çocuklarda ve ileri/şiddetli intoksikasyonda metabolik asidoz daha belirgin olma eğilimindedir), ancak her iki mekanizma da salisilatın patofizyolojisinin bir parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Salisilat: solunum merkezi uyarımı (solunumsal alkaloz) + zayıf asit/metabolik etkiler (yüksek AG metabolik asidoz) = iki ayrı birincil bozukluk.",
+        "B": "YANLIS — Salisilat, GOLDMARK akronimindeki 'A' harfiyle (Aspirin) yüksek AG metabolik asidoz nedenleri arasında AÇIKÇA yer almaktadır.",
+        "C": "YANLIS — Salisilat, solunum merkezini doğrudan uyararak solunumsal alkaloz nedenleri arasında da AÇIKÇA sayılmıştır.",
+        "D": "YANLIS — Bu spesifik karma bozukluk paterni (solunumsal alkaloz + yüksek AG metabolik asidoz) salisilat intoksikasyonuna ÖZGÜ, klasik bir klinik tablodur, tüm ilaç intoksikasyonlarında aynı şekilde görülmez.",
+        "E": "YANLIS — Her iki bileşen de (solunumsal alkaloz ve metabolik asidoz) hem çocuklarda hem erişkinlerde görülebilir; yaşa göre baskınlık değişebilir ama biri diğerini tamamen dışlamaz."
+      },
+      "etiketler": [
+        "Salisilat İntoksikasyonu",
+        "Karma Asit-Baz Bozukluğu",
+        "Solunumsal Alkaloz",
+        "GOLDMARK",
+        "Aspirin Zehirlenmesi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Chyka et al. J Toxicol Clin Toxicol 2007; O'Malley GF. Emerg Med Clin North Am 2007"
+    }
+  ]
+}

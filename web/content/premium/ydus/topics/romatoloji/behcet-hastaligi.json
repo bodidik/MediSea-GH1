@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "id": "behcet-hastaligi",
+    "branch": "romatoloji",
+    "baslik": "Behçet Hastalığı (Sendromu)",
+    "altbaslik": "HLA-B*51/ERAP1 epistasisi, değişken çaplı damar vasküliti, Anjiyo-Behçet ve Hughes-Stovin sendromu, ISG 1990/ICBD 2014 tanı kriterleri ve organ-spesifik tedavi tuzakları",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Behçet hastalığı (BH), etiyolojisi tam aydınlatılamamış, tekrarlayan oral/genital aftlar, oküler lezyonlar, deri bulguları ve multisistemik tutulum ile karakterize, kronik ve rölapslarla seyreden bir vaskülittir. 1937'de Türk dermatolog Hulusi Behçet tarafından tanımlanmıştır. Sistemik vaskülitler içinde kapillerlerden büyük damarlara (arteriyel VE venöz) tüm çaplardaki damarları tutabilmesiyle eşsizdir — **'değişken çaplı damar vasküliti'**."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Epidemiyoloji",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Coğrafi Dağılım ★",
+            "Doğu Asya'dan Akdeniz'e uzanan 'İpek Yolu' üzerindeki ülkelerde endemik. En yüksek prevalans TÜRKİYE'de (100.000'de 80-370); Japonya, Çin, İran, Orta Doğu'da da sık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yaş/Cinsiyet",
+            "Tipik başlangıç 3. dekat (20-40 yaş). Kadın/erkek eşit etkilenir AMA genç erkeklerde seyir (oküler/vasküler/nörolojik) çok daha AGRESİF, morbidite/mortalite belirgin yüksek"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyopatogenez — Genetik ve Epigenetik",
+      "kolonlar": [
+        "Faktör",
+        "Rol"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "HLA-B*51 ★",
+            "En güçlü genetik risk faktörü; taşıyıcılarda risk ~5.8 kat artar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "ERAP1 (Hap10) ★",
+            "Peptit kırpılmasından sorumlu; HLA-B*51 ile güçlü EPİSTATİK etkileşim gösterir — 'MHC-I-opati' kavramının temeli"
+          ]
+        },
+        {
+          "hucreler": [
+            "Diğer Genler",
+            "IL-10, IL-23R, STAT4 polimorfizmleri yatkınlığa katkıda bulunur"
+          ]
+        },
+        {
+          "hucreler": [
+            "Epigenetik",
+            "DNA metilasyonu (IL-6/IL-10 promotör değişiklikleri) ve miRNA profil bozuklukları"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Çevresel Faktörler ve Mikrobiyota: Isı şok proteinleri (HSP60/65) üzerinden moleküler mimikri kritik mekanizmadır. Tükürükte Streptococcus sanguinis kolonizasyonu ve bağırsak mikrobiyotasında disbiyoz (bütirat üreten, immün toleransta rol oynayan bakterilerin azalması) hücresel immüniteyi tetikleyen majör çevresel unsurlardır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "İmmünolojik Disregülasyon (Thrombo-inflamasyon): Nötrofil hiperaktivitesi, ROS ve NET (nötrofil ekstraselüler tuzağı) aşırı üretimi endotel disfonksiyonu ve DOĞRUDAN vasküler tromboza yol açar. T hücre kompartımanında Treg baskılanması + patojenik Th1/Th17 dominant polarizasyonu vardır. Bu, BH'nin 'thrombo-inflamasyon' olarak tanımlanmasının temelidir — trombozun koagülopatiden değil, inflamasyondan kaynaklandığını gösterir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Fenotip Kümelenmesi: Bulgular rastgele değil, belirli kümeler (cluster) halinde ortaya çıkar. Akneiform lezyonlar ile ARTRİT birlikte kümelenme eğilimindeyken; yüzeyel/derin ven trombozları SEREBRAL VENÖZ SİNÜS TROMBOZU (SVST) ile birlikte kümelenir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Mukokutanöz Tutulum ve Paterji",
+      "kolonlar": [
+        "Bulgu",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Oral Aft ★",
+            "%97-100'de görülür, genellikle İLK bulgu, ağrılı, SKARSIZ iyileşir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Genital Ülser ★",
+            "%75-90 (erkekte skrotum, kadında vulva); DAHA DERİN, SKAR bırakarak iyileşir — oral aftın tam tersi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Cilt Bulguları",
+            "Eritema nodozum (septal pannikülit), papülopüstüler/akneiform döküntü, yüzeyel tromboflebit"
+          ]
+        },
+        {
+          "hucreler": [
+            "Paterji Reaksiyonu",
+            "Steril iğne batırıldıktan 24-48 saat sonra eritemli papül/püstül. Endemik bölgelerde sık; son yıllarda pozitiflik ORANINDA GENEL DÜŞÜŞ bildiriliyor"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Oküler Tutulum",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Sıklık/Şiddet",
+            "Morbiditenin en büyük nedenlerinden; ERKEKLERDE daha sık/ağır (~%70)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Tipik Form",
+            "Bilateral, ataklarla seyreden non-granülomatöz panüveit ve posterior üveit/retinal vaskülit"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Hipopiyon ★",
+            "Ön kamarada püy birikimi; yalnızca ~%10 görülür AMA BH için ÇOK SPESİFİKTİR"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Komplikasyon",
+            "Tedavisiz kalırsa maküla ödemi, optik atrofi, kalıcı körlük (fıtızis bulbi)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Vasküler Tutulum (Anjiyo-Behçet)",
+      "kolonlar": [
+        "Özellik",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Sıklık/Önem",
+            "~%40 hastada; MAJÖR MORTALİTE nedeni. Venöz yatağa afinite arteriyele göre DAHA YÜKSEK"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Venöz Tutulum ★",
+            "En sık alt ekstremite DVT + yüzeyel tromboflebit. Trombozun kökeninde KOAGÜLOPATİ değil VASKÜLİT (endotel inflamasyonu) vardır — pıhtı damar duvarına SIKI YAPIŞIKTIR"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Radyolojik Belirteç ★",
+            "USG'de ortak femoral ven duvar kalınlığı ≥0.5 mm — BH tanısında ÇOK SPESİFİK bulgu"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Arteriyel Tutulum / PAA ★",
+            "Oklüzyondan çok ANEVRİZMA/psödoanevrizma gelişir. Pulmoner Arter Anevrizması (PAA) fatal hemoptiziye yol açabilen EN KORKULAN tutulum"
+          ]
+        },
+        {
+          "hucreler": [
+            "Hughes-Stovin Sendromu",
+            "Periferik ven trombozları + PAA birlikteliği"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Nörolojik Tutulum (Nöro-Behçet)",
+      "kolonlar": [
+        "Tip",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Parankimal Tip (%80-90) ★",
+            "Beyin sapı, diensefalon, bazal ganglionları tutar; kraniyal nöropati, hemiparezi, sfinkter kusuru. PROGNOZ KÖTÜ"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Non-Parankimal Tip (%10-20)",
+            "Serebral venöz sinüs trombozuna bağlı intrakraniyal HT (papilödem, baş ağrısı). Prognoz parankimale göre GÖRECE İYİ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Gastrointestinal ve Diğer Sistem Tutulumları",
+      "satirlar": [
+        {
+          "metin": "**GİS:** Sıklıkla ileoçekal bölgeyi tutan, İBH ile karışabilen (zımbayla delinmiş/volkanik tip) ülserasyonlar. Japonya'da sık, Türkiye'de nadir."
+        },
+        {
+          "metin": "**Eklem:** Asimetrik, non-eroziv, deformite bırakmayan oligoartrit (diz, ayak bileği) sık. **Diğer:** Sensorinöral işitme kaybı (SNHL) maküler mikrovasküler ağ yoğunluğu azalmasıyla korele olabilir. Kardiyak tutulum nadir (<%5) — sağ ventrikül intrakardiyak trombüsü, miyokardit, aort yetmezliği."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı Kriterleri",
+      "kolonlar": [
+        "Kriter Seti",
+        "Yapı"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "ISG 1990 ★",
+            "Yılda ≥3 tekrarlayan oral aft (ZORUNLU ana kriter) + genital ülser/göz lezyonu/deri lezyonu/pozitif paterjiden EN AZ 2'si. Spesifite çok yüksek (~%96)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ICBD 2014",
+            "Ağırlıklandırılmış puanlama: genital aft+oral aft+oküler lezyon = 2'şer puan; deri+nörolojik+vasküler+pozitif paterji = 1'er puan. ≥4 puan tanı koydurur. Sensitivite yüksek, spesifite daha DÜŞÜK"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Hasar İndeksleri: Geri dönüşümsüz morbiditeyi ölçmek için BODI (Behçet's Syndrome Overall Damage Index) ve BDI indeksleri klinik takiplerde kümülatif hasarı objektif hale getirir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi — Mukokutanöz/Eklem ve Oküler Tutulum",
+      "kolonlar": [
+        "Tutulum",
+        "Basamaklar"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Mukokutanöz/Eklem ★",
+            "1. basamak: topikal steroid + oral/genital bakım + sistemik KOLŞİSİN. Dirençte kısa süreli düşük doz steroid. Sık nüksen/dirençli ülser profilaksisinde PDE-4 inhibitörü APREMİLAST devrim niteliğinde etkili. Dirençli kutanöz/artritte azatiyoprin, anti-TNF (infliksimab, adalimumab), IFN-alfa"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Oküler (Görmeyi Tehdit Eden) ★",
+            "Posterior üveit/panüveit: yüksek doz pulse glukokortikoid + sistemik immünsüpresif (Azatiyoprin/Siklosporin). Agresif/dirençli veya maküla ödeminde Anti-TNF (Adalimumab, İnfliksimab) + IFN-alfa ANA seçenek. Bunlara yanıtsız kistoid maküla ödeminde IL-6R antagonisti TOSİLİZUMAB başarılı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Vasküler Tutulum Tedavi Tuzağı ★: DVT'de tedavi İMMÜNSÜPRESYONDUR (kortikosteroid + azatiyoprin/siklofosfamid/anti-TNF) — klasik koagülopati değil vaskülit ön plandadır. SAF ANTİKOAGÜLAN tek başına rölapsları ÖNLEMEZ ve gizli bir PAA varsa fatal rüptür/hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır. PAA varlığında agresif siklofosfamid + yüksek doz steroid (veya anti-TNF) ile acil medikal kontrol."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Nöro-Behçet Tedavi Tuzağı ★: Akut parankimal atakta yüksek doz pulse metilprednizolon; idamede azatiyoprin/mikofenolat; ağır/ilerleyici veya beyin sapı lezyonunda Anti-TNF (infliksimab) veya siklofosfamid. **SİKLOSPORİN (ve diğer kalsinörin inhibitörleri) nörotoksik olup nörolojik atakları TETİKLEYEBİLDİĞİNDEN Nöro-Behçet'te veya risk taşıyanlarda KESİNLİKLE KONTRENDİKEDİR** — oküler Behçet'te sıkça kullanılan bu ajan, nörolojik tutulum varlığında/riskinde dikkatle kaçınılmalıdır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "GİS Tedavisi ve Paradoksal Tuzak: Temel tedavi 5-ASA + glukokortikoid + azatiyoprin. Ciddi/derin/fistülizan ülserde Anti-TNF (İnfliksimab, Adalimumab) ve talidomid. Refrakter olgularda JAK inhibitörleri (baricitinib, tofacitinib) ve anti-IL-12/23 (ustekinumab) da denenmektedir. **DİKKAT:** IL-17 inhibitörleri (Sekukinumab) BH'de PARADOKSAL olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebilir — kullanımında temkinli olunmalıdır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Gebelik Yönetimi: BH aktivitesi gebelikte genelde AZALMA eğilimindedir ancak DVT gibi vasküler komplikasyon riski ARTAR. GÜVENLİ: Kolşisin ve anti-TNF ajanlar. TERATOJENİK (mutlaka kesilmeli): siklofosfamid, metotreksat, talidomid, mikofenolat mofetil."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Behçet Hastalığı 10 Altın Kural: (1) Değişken çaplı damar vasküliti — hem arter hem ven, her boyut. (2) HLA-B*51 en güçlü genetik risk (×5.8); ERAP1-Hap10 ile epistasis. (3) Oral aft skarsız, genital ülser SKAR bırakarak iyileşir. (4) Hipopiyon yalnızca %10 ama çok spesifik. (5) Venöz tromboz vaskülittir, koagülopati değil — pıhtı duvara yapışık; femoral ven duvar kalınlığı ≥0.5mm spesifik bulgu. (6) PAA + periferik ven trombozu = Hughes-Stovin sendromu; PAA'da antikoagülan TEHLİKELİ (rüptür/hemoptizi riski). (7) Parankimal Nöro-Behçet kötü prognoz, non-parankimal (SVST) iyi prognoz. (8) Siklosporin Nöro-Behçet'te KESİNLİKLE KONTRENDİKE (nörotoksik, atak tetikler). (9) ISG 1990 = zorunlu oral aft + 2 ek kriter, yüksek spesifite; ICBD 2014 = puanlama, yüksek sensitivite. (10) Apremilast mukokutanöz, tosilizumab dirençli maküla ödemi, IL-17 inhibitörleri (sekukinumab) GİS'te paradoksal alevlenme riski taşır."
+    }
+  ]
+}

@@ -74,6 +74,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "asit-baz-elektrolit",
+      "baslik": "Asit-Baz ve Elektrolit Bozuklukları",
+      "aciklama": "Asit-baz dengesi fizyolojisi ve dört temel bozukluk",
+      "emoji": "⚗️",
+      "konular": [
+        {
+          "id": "asit-baz-dengesi",
+          "baslik": "Asit-Baz Dengesi ve Bozuklukları",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

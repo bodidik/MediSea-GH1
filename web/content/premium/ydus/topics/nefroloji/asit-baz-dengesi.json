@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "id": "asit-baz-dengesi",
+    "branch": "nefroloji",
+    "baslik": "Asit-Baz Dengesi ve Bozuklukları",
+    "altbaslik": "Henderson-Hasselbalch fizyolojisi, GOLDMARK yüksek anyon açığı nedenleri, idrar Cl/idrar anyon açığı ayrımı, Winter formülü, Delta/Delta oranı ve sistematik tanı algoritması",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Normal Asit-Baz Fizyolojisi",
+      "satirlar": [
+        {
+          "metin": "Sağlıklı bir insanda sistemik arteriyel kanın pH değeri **7.35-7.45** (H+ konsantrasyonu 40 nEq/L) arasında sıkı şekilde düzenlenir. Bu dar aralık üç ana savunma hattı ile korunur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Üç Ana Savunma Hattı",
+      "kolonlar": [
+        "Savunma Hattı",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Kimyasal Tampon Sistemleri",
+            "İlk savunma hattı. Hücre dışı sıvının en önemli tamponu: Bikarbonat (HCO3-) / Karbondioksit (CO2). Hücre içinde proteinler (özellikle hemoglobin) ve fosfatlar görev alır"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Solunum Sistemi (Akciğerler) ★",
+            "Günde ~15.000 mmol CO2 (uçucu asit) üretilir. Akciğerler solunum hızı/derinliğini değiştirerek PCO2'yi DAKİKALAR içinde ayarlar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Böbrekler ★",
+            "Günde ~50-100 mEq uçucu olmayan (non-volatil) asit üretilir. Filtrelenen bikarbonatın neredeyse tamamı (çoğunlukla proksimal tübülde) geri emilir; tüketilen bikarbonat yerine 'titre edilebilir asit' (özellikle fosfat) ve 'amonyum (NH4+)' atılarak YENİ bikarbonat üretilir. Tam kompanzasyon 3-5 GÜN sürer"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Henderson-Hasselbalch Denklemi: pH = 6.10 + log([HCO3-] / [0.03 × PCO2]) — pH temelde HCO3-/PCO2 oranına bağlıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Dört Temel Asit-Baz Bozukluğu — Özet",
+      "kolonlar": [
+        "Bozukluk",
+        "Primer Değişiklik",
+        "Kompanzasyon"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Metabolik Asidoz",
+            "HCO3- ↓, pH ↓",
+            "Hiperventilasyon (Kussmaul solunumu) → PCO2 ↓"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Metabolik Alkaloz",
+            "HCO3- ↑, pH ↑",
+            "Hipoventilasyon → PCO2 ↑"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Solunumsal Asidoz",
+            "PCO2 ↑ (hiperkapni), pH ↓",
+            "Böbrek: asit atılımı + HCO3- geri emilimi ↑"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Solunumsal Alkaloz",
+            "PCO2 ↓ (hipokapni), pH ↑",
+            "Böbrek: HCO3- geri emilimi ↓, idrarla atılır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Metabolik Asidoz — Anyon Açığına Göre Sınıflama",
+      "kolonlar": [
+        "Tip",
+        "Mekanizma / Nedenler"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yüksek Anyon Açıklı ★ (GOLDMARK)",
+            "Güçlü asit birikimi (laktik asit, ketoasit, toksin) — bikarbonat tüketilir, asit anyonu AG'yi artırır. Nedenler: Glikoller, Oksoprolin (kronik parasetamol), L-Laktat, D-Laktat, Metanol, Aspirin/Salisilat, Renal yetmezlik (üremi), Ketoasidoz (DKA/açlık/alkolik)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Normal AG (Hiperkloremik)",
+            "Bikarbonat kaybı, yerini klorür alır — AG değişmez. Nedenler: ciddi ishal (GİS HCO3- kaybı), Renal Tübüler Asidoz (RTA), üreterosigmoidostomi, izotonik salin ile agresif resüsitasyon (dilüsyon asidozu)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Metabolik Alkaloz — Oluşum ve İdame",
+      "kolonlar": [
+        "Faz",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Oluşum Nedenleri",
+            "Mide sıvısı kaybı (kusma, NG aspirasyon), diüretik (kıvrım/tiyazid), dışarıdan aşırı alkali alımı"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "İdame Mekanizması ★",
+            "Normalde böbrek fazla HCO3-'ü atar. Ancak hipovolemi + klor eksikliği + hipokalemi varsa böbrek HCO3-'ü atmak yerine GERİ EMER → alkaloz İDAME EDİLİR"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "İdrar Klor Ayrımı ★",
+            "İdrar Cl <20 mEq/L → salin YANITLI (kusma vb.). İdrar Cl >20 mEq/L → salin DİRENÇLİ (hiperaldosteronizm, Bartter sendromu vb.)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Solunumsal Bozukluklar — Nedenler",
+      "kolonlar": [
+        "Bozukluk",
+        "Nedenler"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Solunumsal Asidoz",
+            "SSS depresyonu (ilaç, anestezik, travma), nöromüsküler hastalık, şiddetli KOAH/astım krizi, hava yolu tıkanıklığı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Solunumsal Alkaloz",
+            "Hipoksi, anksiyete, ağrı, ateş, gram-negatif sepsis, salisilat intoksikasyonu, gebelik"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Asit-Baz — Potasyum İlişkisi ★: Asidemi'de fazla H+ hücre içine girer, elektronötralite için K+ hücre dışına çıkar → HİPERKALEMİ. Alkalemi'de mekanizma tersine döner: K+ hücre içine girer → HİPOKALEMİ."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Tanı Algoritması — 5 Adım",
+      "satirlar": [
+        {
+          "metin": "**Adım 1 — Primer bozukluğu belirle:** pH <7.35 = Asidemi, pH >7.45 = Alkalemi. Asidemi + HCO3-↓ = Metabolik Asidoz; Asidemi + PCO2↑ = Solunumsal Asidoz. Alkalemi + HCO3-↑ = Metabolik Alkaloz; Alkalemi + PCO2↓ = Solunumsal Alkaloz."
+        },
+        {
+          "metin": "**Adım 2 — Kompanzasyonun uygunluğunu değerlendir:** Ölçülen değer beklenenden sapıyorsa KARMA (MİKS) asit-baz bozukluğu vardır. Kış (Winter) Formülü (metabolik asidoz için): Beklenen PCO2 = 1.5 × [HCO3-] + 8 (±2)."
+        },
+        {
+          "metin": "**Adım 3 — Anyon Açığını (AG) hesapla:** AG = Na - (Cl + HCO3), normal ~8-12 mEq/L. Albümin AG'nin en büyük bileşenidir; albümin düşükse AG düzeltilmelidir (her 1 g/dL albümin düşüşü için AG ~2.5 mEq/L düşer)."
+        },
+        {
+          "metin": "**Adım 4 — Yüksek AG varsa Delta/Delta oranına bak (ΔAG/ΔHCO3):** Basit laktik asidoz/DKA'da (böbrek fonksiyonu normalse) oran genellikle 1-1.6 arasıdır. Oran <1 → eşlik eden NORMAL AG (hiperkloremik) metabolik asidoz de var (örn. laktik asidoz + ishal). Oran >1.6 (bazen >2) → eşlik eden METABOLİK ALKALOZ veya kronik solunumsal asidoz kompanzasyonu var (örn. DKA + kusma)."
+        },
+        {
+          "metin": "**Adım 5 — Gerekirse İdrar Anyon Açığını (UAG) hesapla:** UAG = İdrar (Na + K - Cl). Normal AG'li metabolik asidozda böbrek mi (RTA) yoksa ekstrarenal (ishal) mi kaynak belirlenir. Ekstrarenal kayıpta (ishal) böbrek amonyum atılımını artırır (amonyum klorla atılır) → UAG NEGATİF (genelde -20 ile -50). RTA'da amonyum atılımı yetersiz → UAG POZİTİF."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Genel Yaklaşımı",
+      "kolonlar": [
+        "Bozukluk",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Metabolik Asidoz",
+            "DKA'da insülin+sıvı; laktik asidozda perfüzyon düzeltme (şok tedavisi). pH <7.1 + hemodinamik bozulma veya AKB eşliğinde kontrollü NaHCO3. KBH'ye bağlı asidozda kemik yıkımı/progresyon/kas katabolizmasını önlemek için oral bikarbonat takviyesi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Metabolik Alkaloz",
+            "Kusma/diüretik kaynaklı (klora duyarlı) durumlarda salin (izotonik NaCl) + potasyum ile hacim ve klor açığı düzeltilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Solunumsal Bozukluklar ★",
+            "Mekanik ventilasyon, bronkodilatör veya antidot ile alveolar ventilasyon optimize edilir. Akut solunumsal asidozda PCO2 HIZLI düşürülürse 'post-hiperkapnik alkaloz' ve ciddi hücresel komplikasyon riski — YAVAŞ düzeltme uygulanır. Şiddetli böbrek yetmezliği eşlikli vakalarda akut hemodiyaliz"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Asit-Baz 8 Altın Kural: (1) Böbrek kompanzasyonu tam gelişmesi 3-5 gün sürer; akciğer kompanzasyonu dakikalar içinde. (2) Yüksek AG metabolik asidoz nedenleri = GOLDMARK. (3) Albümin düşükse AG'yi düzelt (her 1 g/dL düşüş için AG ~2.5 azalır). (4) Delta/Delta <1 = eşlik eden normal AG asidoz; >1.6 = eşlik eden metabolik alkaloz/kronik solunumsal asidoz. (5) İdrar Cl <20 = salin yanıtlı metabolik alkaloz; >20 = dirençli (hiperaldosteronizm/Bartter). (6) UAG negatif = ekstrarenal kayıp (ishal); UAG pozitif = RTA. (7) Asidemi→hiperkalemi, alkalemi→hipokalemi (H+/K+ hücre içi-dışı değiş tokuşu). (8) Akut solunumsal asidozda PCO2'yi HIZLI düşürme — post-hiperkapnik alkaloz riski."
+    }
+  ]
+}
