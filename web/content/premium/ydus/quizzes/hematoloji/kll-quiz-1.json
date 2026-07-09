@@ -1,0 +1,308 @@
+{
+  "id": "quiz-hemato-kll-001",
+  "baslik": "Kronik Lenfositik Lösemi (KLL) — Soru Seti 1",
+  "branch": "hematoloji",
+  "topic": "kll",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Altmış sekiz yaşında hasta, rutin kontrolde saptanan lenfositoz nedeniyle değerlendiriliyor. Periferik kanda klonal B lenfosit sayısı 3.2×10⁹/L olarak ölçülüyor; ancak boyunda belirgin, biyopsi ile doğrulanmış lenf nodu tutulumu mevcut ve kemik iliği tutulumu minimal.\n\nBu hastada doğru terminoloji hangisidir?",
+      "secenekler": {
+        "A": "KLL; periferik kanda herhangi bir düzeyde klonal B lenfosit varlığı yeterlidir.",
+        "B": "SLL (Küçük Lenfositik Lenfoma); hastalık yükü primer olarak lenf nodlarında olup periferik kandaki klonal B lenfosit sayısı 5×10⁹/L'nin ALTINDA (bu hastada 3.2×10⁹/L) olduğundan SLL terimi kullanılır.",
+        "C": "Bu hastada hem KLL hem SLL tanısı aynı anda, birbirinden bağımsız olarak konulmalıdır.",
+        "D": "Terminoloji seçimi tamamen keyfidir, KLL ve SLL arasında hiçbir tanımlayıcı fark yoktur.",
+        "E": "SLL tanısı için periferik kanda klonal B lenfosit bulunmaması (0 hücre) şarttır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hastalık yükü lenf nodu ağırlıklı + periferik klonal B lenfosit <5×10⁹/L = SLL terimi kullanılır. Bu hastada 3.2×10⁹/L (eşiğin altında) ve lenf nodu ağırlıklı tutulum olduğundan SLL doğru terimdir.",
+      "aciklama_detay": "KLL ve doku formu olan küçük lenfositik lenfoma (SLL), farklı klinik prezentasyonlara sahip aynı patolojik antite olarak kabul edilir. Hastalık yükü primer olarak kan ve kemik iliğinde ise KLL, asıl tutulum lenf nodlarında ise ve periferik kandaki klonal B lenfosit sayısı 5×10⁹/L'nin altında ise SLL terimi kullanılmaktadır. Bu hastada periferik kandaki klonal B lenfosit sayısı (3.2×10⁹/L) 5×10⁹/L eşiğinin altındadır VE hastalık yükü primer olarak lenf nodlarındadır (kemik iliği tutulumu minimal) — bu iki kriter birlikte SLL terminolojisini doğru kılar. Bu ayrım, aynı biyolojik hastalığın farklı klinik/anatomik prezentasyonlarını tanımlamak için kullanılır ve tedavi yaklaşımı büyük ölçüde benzer olsa da, evreleme ve bazı klinik çalışma dahil etme kriterlerinde bu terminoloji ayrımı önemlidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — KLL terimi için periferik kanda klonal B lenfosit sayısının ≥5×10⁹/L olması ve hastalık yükünün kan/kemik iliği ağırlıklı olması gerekir; bu hastada her iki kriter de KLL lehine değildir.",
+        "B": "DOGRU — Lenf nodu ağırlıklı tutulum + periferik klonal B <5×10⁹/L = SLL.",
+        "C": "YANLIS — KLL ve SLL aynı hastalığın farklı prezentasyonlarıdır; birbirinden bağımsız, eş zamanlı iki ayrı tanı olarak konulmaz, tek bir terim (bu vakada SLL) kullanılır.",
+        "D": "YANLIS — Terminoloji seçimi keyfi değildir; periferik kan klonal B lenfosit sayısı (5×10⁹/L eşiği) ve hastalık yükünün anatomik dağılımına dayanan NET kriterlere bağlıdır.",
+        "E": "YANLIS — SLL tanısı, klonal B lenfositin TAMAMEN YOK olmasını gerektirmez; yalnızca 5×10⁹/L eşiğinin ALTINDA olması yeterlidir (bu vakadaki gibi düşük düzeyde saptanabilir)."
+      },
+      "etiketler": [
+        "KLL-SLL Ayrımı",
+        "Terminoloji",
+        "5x10^9/L Eşiği",
+        "Klonal B Lenfosit",
+        "Tanı Kriterleri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hallek et al. Blood 2018 (iwCLL Guidelines); Swerdlow et al. WHO Classification 2017"
+    },
+    {
+      "id": "s2",
+      "metin": "İki KLL hastasının IGHV mutasyon analizi yapılıyor: Hasta A'da somatik hipermutasyon geçirmiş (mutated) IGHV, Hasta B'de ise mutasyona uğramamış (unmutated) IGHV saptanıyor.\n\nBu iki hastanın BCR sinyalizasyonu ve beklenen klinik seyri arasındaki fark nedir?",
+      "secenekler": {
+        "A": "Mutated IGHV'ye sahip Hasta A'nın hücreleri post-germinal merkez B hücrelerine benzer, dar antijen özgüllüğüne (anerjik) sahiptir, BCR sinyalizasyonu daha ZAYIFTIR ve klinik seyir daha İNDOLENTTİR; unmutated IGHV'ye sahip Hasta B'nin hücreleri ise pre-germinal merkez B hücresi özellikleri taşır, polireaktiftir, BCR sinyalleri SÜREKLİ ve GÜÇLÜDÜR, bu da daha AGRESİF bir klinik seyre yol açar.",
+        "B": "Mutated IGHV, unmutated IGHV'den daha agresif bir klinik seyirle ilişkilidir; BCR sinyalizasyonu mutated formda daha güçlüdür.",
+        "C": "IGHV mutasyon durumu KLL'nin klinik seyri veya BCR sinyalizasyonu ile hiçbir ilişkisi olmayan, rastgele bir laboratuvar bulgusudur.",
+        "D": "Her iki hasta grubu da (mutated ve unmutated) aynı BCR sinyal gücüne ve aynı klinik seyre sahiptir, IGHV durumu prognostik değer taşımaz.",
+        "E": "Unmutated IGHV, post-germinal merkez B hücrelerinin özelliklerini taşırken, mutated IGHV pre-germinal merkez özellikleri gösterir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Mutated IGHV = post-germinal merkez, anerjik, zayıf BCR sinyali, İNDOLENT seyir. Unmutated IGHV = pre-germinal merkez, polireaktif, güçlü/sürekli BCR sinyali, AGRESİF seyir. Bu, KLL'nin en önemli prognostik biyobelirtecidir.",
+      "aciklama_detay": "KLL hücrelerinin İmmünoglobulin ağır zincir değişken bölgesinin (IGHV) mutasyon durumu, tümörün biyolojik davranışını ve klinik progresyonunu belirleyen en önemli faktörlerden biridir. Somatik hipermutasyon geçirmiş (mutated) IGHV'ye sahip KLL hücreleri, post-germinal merkez B hücrelerine benzer, dar antijen özgüllüğüne (anerjik) sahiptir, BCR sinyalizasyonu daha zayıftır ve klinik seyir daha indolenttir. Buna karşın mutasyona uğramamış (unmutated) IGHV içeren KLL hücreleri, pre-germinal merkez B hücrelerinin özelliklerini taşır, polireaktiftir, sürekli ve güçlü BCR sinyalleri üretir, bu da klonun daha hızlı büyümesine ve daha agresif bir klinik seyir göstermesine yol açar. Bu bilgi, klinik pratikte KLL hastalarının risk stratifikasyonunda ve tedavi kararlarında (örn. hangi hastaların erken/agresif tedaviye ihtiyaç duyabileceğini öngörmede) merkezi bir rol oynar — unmutated IGHV, genellikle daha kısa tedavisiz sağkalım ve daha hızlı progresyon ile ilişkilendirilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Mutated=zayıf BCR/indolent; Unmutated=güçlü-sürekli BCR/agresif.",
+        "B": "YANLIS — Yönler ters verilmiştir; mutated IGHV DAHA İNDOLENT, unmutated IGHV DAHA AGRESİFTİR.",
+        "C": "YANLIS — IGHV mutasyon durumu, KLL'nin EN ÖNEMLİ prognostik faktörlerinden biridir, rastgele değildir.",
+        "D": "YANLIS — İki grup arasında BCR sinyal gücü ve klinik seyir açısından BELİRGİN FARK vardır; IGHV durumu güçlü prognostik değer taşır.",
+        "E": "YANLIS — Tanımlar ters verilmiştir: MUTATED IGHV post-germinal merkez, UNMUTATED IGHV pre-germinal merkez özellikleri taşır."
+      },
+      "etiketler": [
+        "IGHV Mutasyon Durumu",
+        "BCR Sinyalizasyonu",
+        "Prognoz",
+        "Mutated vs Unmutated",
+        "Germinal Merkez"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Damle et al. Blood 1999; Hamblin et al. Blood 1999"
+    },
+    {
+      "id": "s3",
+      "metin": "KLL hastasının sitogenetik analizinde 13q14 delesyonu saptanıyor. Bu bölgede kodlanan iki mikroRNA'nın (miR15 ve miR16) kaybolduğu gösteriliyor.\n\nBu genetik kayıp, hangi anti-apoptotik mekanizma üzerinden KLL hücrelerinin sağkalımına katkıda bulunur?",
+      "secenekler": {
+        "A": "13q14 delesyonunda kaybedilen miR15 ve miR16 gibi mikroRNA'ların kaybı sonucunda, anti-apoptotik bir protein olan BCL-2 geninin aşırı ekspresyonu gerçekleşir ve hücrelerin apoptoza gitmesi engellenir.",
+        "B": "miR15 ve miR16 kaybı, BCL-2 ekspresyonunu azaltarak hücrelerin apoptoza daha kolay gitmesine neden olur.",
+        "C": "13q14 delesyonu, apoptozla değil, yalnızca hücre proliferasyon hızının azalmasıyla ilişkilidir.",
+        "D": "miR15 ve miR16, normalde BCL-2 ekspresyonunu artıran mikroRNA'lardır; kayıpları BCL-2'yi azaltır.",
+        "E": "13q14 delesyonu KLL'de en nadir görülen sitogenetik anomalidir ve klinik önemi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "miR15/miR16 kaybı (13q14 del) → normalde bu mikroRNA'lar tarafından baskılanan BCL-2 geni AŞIRI EKSPRESE olur → anti-apoptotik BCL-2 artışı → hücreler apoptoza gidemez, birikir.",
+      "aciklama_detay": "KLL patogenezinde diğer kritik mekanizma, hatalı apoptozistir. Özellikle 13q14 delesyonunda kaybedilen miR15 ve miR16 gibi mikroRNA'ların kaybı sonucunda, anti-apoptotik bir protein olan BCL-2 geninin aşırı ekspresyonu gerçekleşir ve hücrelerin apoptoza gitmesi engellenir. Normal fizyolojik koşullarda miR15 ve miR16, BCL-2 mRNA'sını hedefleyerek onun translasyonunu baskılar (negatif regülasyon) — bu, hücre içi BCL-2 düzeyini kontrol altında tutan bir mekanizmadır. 13q14 delesyonu bu mikroRNA'ları kodlayan genomik bölgeyi ortadan kaldırdığında, BCL-2 üzerindeki bu baskılayıcı kontrol kaybolur ve BCL-2 seviyeleri anormal derecede yükselir. Yüksek BCL-2, mitokondriyal apoptoz yolağını (intrinsik yolak) inhibe ederek hücrelerin programlı hücre ölümünden kaçmasını sağlar — bu, KLL hücrelerinin karakteristik olarak uzun ömürlü olmasının ve zamanla birikmesinin temel moleküler mekanizmalarından biridir. Bu bilgi aynı zamanda klinik öneme sahiptir: BCL-2 inhibitörü venetoklaks, bu spesifik mekanizmayı hedef alan, KLL tedavisinde kullanılan önemli bir ajandır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — miR15/16 kaybı → BCL-2 baskısı kalkar → BCL-2 aşırı ekspresyonu → apoptoz kaçışı.",
+        "B": "YANLIS — Tam tersine, miR15/16 KAYBI BCL-2'yi AZALTMAZ, ARTIRIR (baskılayıcı etkilerinin kalkması nedeniyle).",
+        "C": "YANLIS — 13q14 delesyonu doğrudan APOPTOZ mekanizmasıyla (BCL-2 üzerinden) ilişkilidir, proliferasyon hızıyla değil.",
+        "D": "YANLIS — miR15/16 normalde BCL-2'yi AZALTAN (baskılayan) mikroRNA'lardır, artıran değil; kayıpları BCL-2'yi YÜKSELTİR.",
+        "E": "YANLIS — 13q14 delesyonu KLL'de EN SIK görülen sitogenetik anomalilerden biridir ve önemli klinik/prognostik değer taşır."
+      },
+      "etiketler": [
+        "13q14 Delesyonu",
+        "miR15/miR16",
+        "BCL-2",
+        "Apoptoz Kaçışı",
+        "Venetoklaks Rasyoneli"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Calin et al. PNAS 2002; Cimmino et al. PNAS 2005"
+    },
+    {
+      "id": "s4",
+      "metin": "KLL hastasının periferik kan yayması incelenirken teknisyen, yayma hazırlama sırasında bazı hücrelerin parçalanarak leke benzeri bir görünüm oluşturduğunu fark ediyor.\n\nBu bulgunun adı ve altında yatan hücresel özellik nedir?",
+      "secenekler": {
+        "A": "Bu hücreler 'smudge' (ezik/leke) hücreler olarak adlandırılır; KLL hücreleri mekanik strese dayanıksız (kırılgan) olduklarından, kan yayması hazırlanırken parçalanırlar — bu bulgu KLL için oldukça karakteristiktir.",
+        "B": "Bu bulgu bir laboratuvar hatasıdır ve KLL tanısıyla hiçbir ilişkisi yoktur, yayma tekrarlanmalıdır.",
+        "C": "Bu hücreler prolenfositlerdir ve bu bulgu doğrudan B-PLL tanısını koydurur.",
+        "D": "Smudge hücreler yalnızca akut lösemilerde görülür, KLL ile hiçbir ilişkisi yoktur.",
+        "E": "Bu bulgu, hücrelerin mekanik strese karşı OLAĞANDIŞI DERECEDE DAYANIKLI olduğunu gösterir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bu hücreler 'smudge' (ezik) hücrelerdir; KLL hücrelerinin mekanik strese dayanıksız (kırılgan) yapısı nedeniyle yayma hazırlığı sırasında parçalanırlar — KLL için oldukça karakteristik bir bulgudur.",
+      "aciklama_detay": "Bu hücreler mekanik strese dayanıksız (kırılgan) olduklarından, kan yayması hazırlanırken parçalanan hücrelerin oluşturduğu 'smudge' (ezik/leke) hücrelerinin varlığı KLL için oldukça karakteristiktir. KLL hücrelerinin sitoplazmik ve nükleer yapısının (kaba, sıkı kromatin yapısı, dar sitoplazma) bu hücreleri yayma hazırlama sırasında uygulanan mekanik strese (cam üzerinde yayma işlemi) karşı özellikle savunmasız kılan bir kırılganlık göstermesi, smudge hücrelerin oluşumunun altında yatan hücresel özelliktir. Bu bulgu, deneyimli bir hematoloji/patoloji uzmanı tarafından periferik yayma incelemesinde tanınan, KLL tanısını destekleyen basit ama değerli bir morfolojik ipucudur — smudge hücrelerin bolluğu, bazı çalışmalarda hastalık aktivitesi/prognozla da ilişkilendirilmiştir (daha az smudge hücre oranı bazen daha agresif seyirle ilişkilendirilebilir, ancak bu KLL tanısının birincil kriteri değildir).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Smudge hücreler, KLL hücrelerinin mekanik kırılganlığı nedeniyle oluşan, karakteristik bir bulgudur.",
+        "B": "YANLIS — Bu bulgu laboratuvar hatası değildir; KLL'nin tanınmış, karakteristik bir morfolojik özelliğidir.",
+        "C": "YANLIS — Smudge hücreler prolenfositlerden FARKLI bir hücre tipidir (parçalanmış/ezilmiş KLL hücreleri); B-PLL tanısı prolenfosit ORANINA (>%55) dayanır, smudge hücre varlığına değil.",
+        "D": "YANLIS — Smudge hücreler ÖZELLİKLE KLL ile ilişkilendirilen, karakteristik bir bulgudur, akut lösemilere özgü değildir.",
+        "E": "YANLIS — Tam tersine, bu hücreler mekanik strese DAYANIKSIZ (kırılgan) olduklarından parçalanırlar, dayanıklı olduklarını göstermez."
+      },
+      "etiketler": [
+        "Smudge Hücreler",
+        "Periferik Yayma",
+        "Hücre Kırılganlığı",
+        "Morfoloji",
+        "Karakteristik Bulgu"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Nowakowski et al. Blood 2009; Hallek et al. Blood 2018"
+    },
+    {
+      "id": "s5",
+      "metin": "KLL tanılı bir hastanın periferik kan yaymasında yapılan diferansiyel sayımda, tüm lenfoid hücrelerin %62'sinin belirgin nükleollü, iri ve geniş sitoplazmalı prolenfositlerden oluştuğu saptanıyor.\n\nBu bulgu tanısal olarak ne anlama gelir?",
+      "secenekler": {
+        "A": "Bu oran normal KLL sınırları içindedir, tanı değişmez.",
+        "B": "Prolenfositler periferik yaymada tipik olarak az sayıda (<%10) bulunur; bu oranın %55'in üzerinde olması (bu vakada %62) DIŞLAMA KRİTERİDİR ve B-hücreli prolenfositik lösemi (B-PLL) tanısına yönlendirir.",
+        "C": "Prolenfosit oranının yüksekliği, hastalığın daha indolent bir seyre girdiğini gösterir.",
+        "D": "Prolenfosit sayımı KLL tanı sürecinde hiçbir zaman değerlendirilmez, klinik önemi yoktur.",
+        "E": "Bu oran, hastanın Richter transformasyonuna (diffüz büyük B hücreli lenfomaya dönüşüm) uğradığını kesin olarak gösterir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Prolenfositler normalde <%10 bulunur. Oran >%55 olduğunda (bu vakada %62) bu, KLL tanısını dışlayan bir kriterdir ve B-hücreli prolenfositik lösemi (B-PLL) düşünülmelidir.",
+      "aciklama_detay": "Belirgin nükleollü, daha iri ve geniş sitoplazmalı hücreler olan prolenfositler periferik yaymada her zaman az sayıda bulunur (tipik olarak <%10); bu oranın %55'in üzerinde olması dışlama kriteridir ve B-hücreli prolenfositik lösemi (B-PLL) tanısına yönlendirir. Bu vakada prolenfosit oranı %62 olarak saptanmıştır — bu, %55 eşiğinin belirgin şekilde üzerindedir ve tanıyı klasik KLL'den B-PLL'ye yönlendiren önemli bir morfolojik kriterdir. B-PLL, KLL'den farklı klinik seyir (genellikle daha agresif), farklı tedavi yaklaşımı ve farklı prognoza sahip ayrı bir lenfoproliferatif hastalık kategorisidir. Bu ayrım, morfolojik değerlendirmenin (basit bir diferansiyel sayım) KLL spektrumu içindeki alt tiplerin ayrımında ne kadar kritik olduğunu gösterir — %10-55 arası prolenfosit oranı olan vakalar ise 'KLL/PL' (prolenfositoid transformasyon) olarak ara bir kategori oluşturabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — %62 prolenfosit oranı normal KLL sınırlarının (< %10, hatta %55 dışlama eşiğinin) ÇOK ÜZERİNDEDİR; tanı gözden geçirilmelidir.",
+        "B": "DOGRU — >%55 prolenfosit = dışlama kriteri, B-PLL'ye yönlendirir.",
+        "C": "YANLIS — Yüksek prolenfosit oranı tam tersine DAHA AGRESİF bir tabloyu (B-PLL) düşündürür, indolent seyri değil.",
+        "D": "YANLIS — Prolenfosit sayımı, KLL tanısının doğrulanması VE B-PLL gibi alternatif tanıların dışlanması için önemli bir morfolojik parametredir.",
+        "E": "YANLIS — Prolenfosit oranı yüksekliği B-PLL'yi düşündürür; Richter transformasyonu farklı bir histolojik dönüşümdür (genellikle diffüz büyük B hücreli lenfoma morfolojisi ile karakterizedir) ve bu vakadaki bulgularla doğrudan eşleştirilmez."
+      },
+      "etiketler": [
+        "Prolenfosit",
+        "B-PLL",
+        "Dışlama Kriteri",
+        "%55 Eşiği",
+        "Morfolojik Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Swerdlow et al. WHO Classification 2017; Hallek et al. Blood 2018"
+    },
+    {
+      "id": "s6",
+      "metin": "Lenfositoz nedeniyle değerlendirilen bir hastada akım sitometri yapılıyor. Sonuçlar: CD19+, CD20 (dim)+, CD23+, CD5+, CD200+, CD10-, FMC7-, Siklin D1-. Kappa hafif zincir kısıtlılığı gösteriliyor.\n\nBu immünofenotip hangi tanıyı destekler?",
+      "secenekler": {
+        "A": "Bu immünofenotip klasik Mantle Hücreli Lenfoma (MCL) ile uyumludur.",
+        "B": "Bu immünofenotip KLL'nin karakteristik profiliyle tam olarak uyumludur: matür B hücre belirteçleri (CD19, CD20-dim, CD23) pozitif + aberran CD5 ko-ekspresyonu + CD200 pozitifliği + CD10/FMC7/Siklin D1 negatifliği; kappa hafif zincir kısıtlılığı klonaliteyi doğrular.",
+        "C": "CD5 pozitifliği tek başına bu hastanın normal, reaktif bir lenfositoza sahip olduğunu gösterir, malignite düşünülmemelidir.",
+        "D": "Bu profil, Siklin D1 negatif olduğu için mutlaka B-PLL tanısını gösterir.",
+        "E": "CD23 pozitifliği bu immünofenotipte anlamsız bir bulgu olup tanısal değeri yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bu profil (CD19+CD20dim+CD23+CD5+CD200+, CD10-FMC7-SiklinD1-, kappa kısıtlılığı) tam olarak KLL'nin klasik immünofenotipik imzasıdır.",
+      "aciklama_detay": "KLL'nin spesifik immünofenotipinde, matür B hücre antijenleri olan CD19, CD20 ve CD23 pozitif izlenirken; bunlara aberran olarak bir pan-T hücre belirteci olan CD5 ko-ekspresyonu eşlik eder. Normal B hücrelerinden farklı olarak, CD20 ve yüzey immünoglobulinleri (sIg) 'dim' (zayıf) olarak eksprese edilir. Ayrıca CD43, CD200 ve LEF1 molekülleri genelde pozitif bulunurken; CD10, FMC7, ve Siklin D1 (Cyclin D1/CCND1) negatiftir. Bu vakadaki sonuçlar (CD19+, CD20-dim+, CD23+, CD5+, CD200+, CD10-, FMC7-, Siklin D1-) tam olarak bu klasik KLL immünofenotipik paternine uymaktadır. Ayrıca kappa hafif zincir kısıtlılığının gösterilmesi, akım sitometrisinde lenfositlerin klonal (reaktif değil, malign/neoplastik) olduğunu kanıtlayan zorunlu bir bulgudur — bu, tanının 'poliklonal reaktif lenfositoz' değil, gerçek bir klonal B hücreli lenfoproliferatif hastalık olduğunu doğrular.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MCL'de CD23 ve CD200 tipik olarak NEGATİF, Siklin D1 POZİTİFTİR; bu vakadaki profil (CD23+, CD200+, Siklin D1-) MCL ile UYUMSUZDUR, KLL ile uyumludur.",
+        "B": "DOGRU — Tüm bulgular (CD19/20dim/23/5/200 pozitif, CD10/FMC7/SiklinD1 negatif, kappa kısıtlılığı) klasik KLL immünofenotipini tanımlar.",
+        "C": "YANLIS — CD5 pozitifliği TEK BAŞINA reaktif lenfositozu göstermez; burada CD5, matür B hücre belirteçleriyle (CD19/20/23) BİRLİKTE aberran ko-ekspresyon olarak KLL'nin İMZASINI oluşturur; ayrıca klonalite (kappa kısıtlılığı) gösterilmiştir, bu maligniteyi destekler.",
+        "D": "YANLIS — Siklin D1 negatifliği B-PLL tanısını GÖSTERMEZ; B-PLL ayrımı morfolojik prolenfosit oranına (>%55) dayanır, bu vakada böyle bir bilgi verilmemiştir; Siklin D1 negatifliği asıl olarak MCL'yi DIŞLAMAK için kullanılır.",
+        "E": "YANLIS — CD23 pozitifliği, KLL'yi MCL'den ayırt etmede ÖNEMLİ tanısal değere sahiptir (MCL'de CD23 negatiftir)."
+      },
+      "etiketler": [
+        "İmmünofenotip",
+        "CD5/CD19/CD20/CD23",
+        "CD200",
+        "Klonalite",
+        "Akım Sitometri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Rawstron et al. Cytometry B Clin Cytom 2018; Hallek et al. Blood 2018"
+    },
+    {
+      "id": "s7",
+      "metin": "CD5 pozitif, küçük B hücreli lenfoproliferatif bir hastalığın KLL mi yoksa Mantle Hücreli Lenfoma (MCL) mi olduğu ayırt edilmeye çalışılıyor. Ek immünohistokimyasal ve moleküler testler isteniyor.\n\nMCL'yi KLL'den kesin olarak ayırt eden patognomonik moleküler bulgu ve bunun altında yatan sitogenetik anomali nedir?",
+      "secenekler": {
+        "A": "MCL'de patognomonik t(11;14) translokasyonuna bağlı Siklin D1 ve SOX11 pozitifliği saptanır; bu translokasyon ve protein ekspresyonu KLL'de görülmez (KLL'de Siklin D1 negatiftir).",
+        "B": "Siklin D1 pozitifliği hem KLL hem MCL'de eşit sıklıkta görülür, ayırıcı tanı değeri yoktur.",
+        "C": "SOX11 pozitifliği KLL'nin patognomonik bulgusudur, MCL ile ilişkisi yoktur.",
+        "D": "t(11;14) translokasyonu KLL'nin karakteristik sitogenetik anomalisidir.",
+        "E": "MCL ve KLL ayrımında hiçbir moleküler/sitogenetik test kullanılamaz, yalnızca klinik bulgulara dayanılır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MCL'nin patognomonik bulgusu t(11;14) translokasyonuna bağlı Siklin D1 ve SOX11 pozitifliğidir. KLL'de bu translokasyon yoktur, Siklin D1 negatiftir — bu, iki hastalığı kesin olarak ayıran moleküler imzadır.",
+      "aciklama_detay": "Mantle hücreli lenfoma (MCL) kliniği ve morfolojisi ile KLL'yi en çok taklit edebilen hastalıktır. MCL ayırıcı tanısında, MCL hücrelerinin tipik olarak parlak (bright) CD20 ve sIg ekspresyonu sergilemesi, CD23 ve CD200 negatifliği ve patognomonik t(11;14) translokasyonuna bağlı Siklin D1 ve SOX11 pozitifliği test edilir. t(11;14)(q13;q32) translokasyonu, CCND1 (Siklin D1) genini immünoglobulin ağır zincir (IGH) genine yaklaştırarak Siklin D1'in aşırı ve uygunsuz ekspresyonuna yol açar — bu, hücre döngüsü kontrolünü bozan ve MCL'nin temel onkogenik olayı olan bir moleküler anomalidir. SOX11, MCL'de sıklıkla eşlik eden, ek bir immünohistokimyasal belirteçtir. KLL'de bu translokasyon VE Siklin D1 ekspresyonu YOKTUR (metinde açıkça 'Siklin D1 negatiftir' belirtilmiştir); bu nedenle Siklin D1/SOX11 pozitifliği, morfolojik ve diğer immünofenotipik benzerliklere rağmen MCL'yi KLL'den kesin olarak ayırt eden altın standart moleküler bulgudur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — t(11;14) → Siklin D1/SOX11 pozitifliği MCL'ye özgüdür, KLL'de yoktur.",
+        "B": "YANLIS — Siklin D1 pozitifliği MCL'ye ÖZGÜDÜR, KLL'de NEGATİFTİR; bu, önemli bir ayırıcı tanı değeri taşır.",
+        "C": "YANLIS — SOX11 pozitifliği KLL'nin değil, MCL'nin (t(11;14) ile ilişkili) bir bulgusudur.",
+        "D": "YANLIS — t(11;14) translokasyonu KLL'nin değil, MCL'nin karakteristik ve patognomonik sitogenetik anomalisidir.",
+        "E": "YANLIS — Tam tersine, Siklin D1/SOX11 (moleküler) ve CD23/CD200 (immünofenotipik) testleri bu ayrımda YAYGIN VE ETKİN olarak kullanılır."
+      },
+      "etiketler": [
+        "Mantle Hücreli Lenfoma",
+        "t(11;14)",
+        "Siklin D1",
+        "SOX11",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Swerdlow et al. WHO Classification 2017; Jares et al. J Clin Invest 2012"
+    },
+    {
+      "id": "s8",
+      "metin": "KLL tanılı bir hastada tekrarlayan sinopulmoner enfeksiyonlar (pnömoni, sinüzit) gelişiyor ve immünolojik değerlendirmede belirgin düşük serum immünoglobulin düzeyleri saptanıyor.\n\nBu klinik tabloyu açıklayan mekanizma ve KLL'deki diğer önemli immünolojik komplikasyon kategorisi nedir?",
+      "secenekler": {
+        "A": "KLL, hücresel ve humoral immün fonksiyonların bozulması ile karakterizedir; hastalardaki kantitatif ve kalitatif immün yetmezliğe, özellikle hipogammaglobulinemiye bağlı olarak yaşamı tehdit edici sinopulmoner enfeksiyon riski artmıştır. Ayrıca immün disregülasyon sonucunda otoimmün hemolitik anemi (AİHA), immün trombositopeni (İTP) ve nadiren saf kırmızı hücre aplazisi (PRCA) gibi paraneoplastik otoimmün komplikasyonlar da sıkça gelişir.",
+        "B": "KLL hastalarında immünoglobulin düzeyleri her zaman normal veya yüksektir, hipogammaglobulinemi KLL ile ilişkili değildir.",
+        "C": "KLL'de yalnızca hücresel immünite bozulur, humoral immünite (antikor üretimi) tamamen normaldir.",
+        "D": "Otoimmün komplikasyonlar (AİHA, İTP) KLL hastalarında hiçbir zaman görülmez, bu bulgular başka bir hastalığı düşündürmelidir.",
+        "E": "Sinopulmoner enfeksiyon riski yalnızca KLL'nin ileri evrelerinde görülür, erken evrede hiçbir immün yetmezlik bulgusu olmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "KLL'de hem hücresel hem humoral immünite bozulur; hipogammaglobulinemi sinopulmoner enfeksiyon riskini artırır. Ayrıca immün disregülasyona bağlı AİHA, İTP, nadiren PRCA gibi paraneoplastik otoimmün komplikasyonlar sık görülür.",
+      "aciklama_detay": "KLL, hücresel ve humoral immün fonksiyonların bozulması ile karakterizedir. Hastalardaki kantitatif ve kalitatif immün yetmezliğe, özellikle hipogammaglobulinemiye bağlı olarak yaşamı tehdit edici sinopulmoner ve diğer enfeksiyon riskleri belirgin şekilde artmıştır. Bu hastada tarif edilen tekrarlayan sinopulmoner enfeksiyonlar ve düşük immünoglobulin düzeyleri, tam olarak bu mekanizmayla açıklanır — KLL hücreleri fonksiyonel olarak inkompetan oldukları için normal antikor üretim kapasitesini yerine getiremezler, bu da progresif hipogammaglobulinemiye yol açar. Ayrıca, immün disregülasyon sonucunda otoimmün hemolitik anemi (AİHA), immün trombositopeni (İTP) ve nadiren saf kırmızı hücre aplazisi (PRCA) gibi paraneoplastik otoimmün komplikasyonlar sıkça gelişir — bu, KLL'nin yalnızca immün YETERSİZLİK değil, aynı zamanda immün DİSREGÜLASYON (kontrolsüz/yanlış yönlendirilmiş immün yanıt) ile de karakterize olduğunu gösterir. Bu iki kategori (immün yetmezlik → enfeksiyon vs. immün disregülasyon → otoimmünite) KLL'nin immünolojik komplikasyon spektrumunun iki farklı ama birbiriyle ilişkili yüzünü oluşturur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hipogammaglobulinemi → enfeksiyon riski; immün disregülasyon → AİHA/İTP/PRCA gibi otoimmün komplikasyonlar.",
+        "B": "YANLIS — Hipogammaglobulinemi KLL'de İYİ TANIMLANMIŞ, SIK görülen bir bulgudur, immünoglobulin düzeyleri tipik olarak DÜŞÜKTÜR.",
+        "C": "YANLIS — KLL'de HEM hücresel HEM humoral immünite bozulur; yalnızca hücresel immünite ile sınırlı değildir.",
+        "D": "YANLIS — AİHA ve İTP, KLL'de SIKÇA görülen, iyi tanımlanmış paraneoplastik otoimmün komplikasyonlardır.",
+        "E": "YANLIS — İmmün yetmezlik bulguları KLL'nin erken evrelerinde de görülebilir, yalnızca ileri evreyle sınırlı değildir."
+      },
+      "etiketler": [
+        "Hipogammaglobulinemi",
+        "Sinopulmoner Enfeksiyon",
+        "AİHA",
+        "İTP",
+        "PRCA"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Hallek et al. Blood 2018; Forconi & Moss Blood 2015"
+    },
+    {
+      "id": "s9",
+      "metin": "Uzun süredir KLL tanılı bir hasta, yeni gelişen bir cilt lezyonu nedeniyle dermatoloji tarafından değerlendiriliyor ve biyopside malign melanom tanısı konuyor.\n\nBu klinik senaryo KLL'nin hangi bilinen komplikasyon kategorisiyle ilişkilidir?",
+      "secenekler": {
+        "A": "İmmünsüpresyonun ve KLL biyolojisinin bir diğer neticesi olarak malign melanoma ve non-melanom cilt kanserleri başta olmak üzere ikincil solid tümör riskinde bariz bir artış vardır; bu hastadaki melanom gelişimi bu bilinen komplikasyon kategorisiyle uyumludur.",
+        "B": "KLL hastalarında ikincil solid tümör riski genel popülasyondan daha düşüktür, bu bulgu tesadüfidir.",
+        "C": "Melanom gelişimi KLL ile hiçbir şekilde ilişkilendirilmemiştir, tamamen bağımsız bir hastalıktır.",
+        "D": "KLL hastalarında yalnızca hematolojik ikincil malignite (örn. AML) riski artar, solid tümör riski etkilenmez.",
+        "E": "Bu bulgu, hastanın KLL tanısının yanlış olduğunu ve aslında birincil bir cilt hastalığı olduğunu gösterir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İmmünsüpresyon + KLL biyolojisi, malign melanom ve non-melanom cilt kanserleri başta olmak üzere ikincil solid tümör riskini belirgin artırır — bu, KLL hastalarında bilinen, izlem gerektiren bir komplikasyon kategorisidir.",
+      "aciklama_detay": "İmmünsüpresyonun ve KLL biyolojisinin bir diğer neticesi olarak malign melanoma ve non-melanom cilt kanserleri başta olmak üzere ikincil solid tümör riskinde bariz bir artış vardır. Bu ilişki, KLL'nin yarattığı kronik immün yetmezlik/disregülasyon durumunun yalnızca enfeksiyon ve otoimmünite riskini değil, aynı zamanda tümör immün sürveyansının (immune surveillance) bozulması yoluyla malignite riskini de artırdığını gösterir — normal şartlarda immün sistem, malign transformasyon geçiren hücreleri tanıyıp elimine eder, ancak KLL'deki immün disfonksiyon bu koruyucu mekanizmayı zayıflatır. Bu bilgi klinik pratikte önemlidir çünkü KLL hastalarının rutin takibinde cilt muayenesi ve dermatolojik tarama, diğer solid tümör tarama programlarına ek olarak değerlendirilmelidir — bu hastalarda ikincil malignite riski, hastalığın kendisi kadar önemli bir morbidite/mortalite kaynağı olabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İkincil solid tümör riski (özellikle melanom/cilt kanseri) KLL'nin bilinen, immünsüpresyona bağlı bir komplikasyonudur.",
+        "B": "YANLIS — Tam tersine, KLL hastalarında ikincil solid tümör riski genel popülasyona göre ARTMIŞTIR, azalmamıştır.",
+        "C": "YANLIS — Melanom riski artışı, KLL'nin immünsüpresif etkisiyle AÇIKÇA ilişkilendirilmiş, tanımlanmış bir bulgudur.",
+        "D": "YANLIS — Risk artışı yalnızca hematolojik değil, SOLİD TÜMÖRLERİ (özellikle cilt kanserleri) de kapsar.",
+        "E": "YANLIS — Bu bulgu KLL tanısını YANLIŞLAMAZ; ikincil malignite gelişimi, altta yatan KLL'nin bilinen bir komplikasyonu olarak KLL tanısıyla BİRLİKTE var olabilir."
+      },
+      "etiketler": [
+        "İkincil Solid Tümör",
+        "Malign Melanom",
+        "İmmünsüpresyon",
+        "Cilt Kanseri Riski",
+        "Uzun Dönem Komplikasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Falchi et al. Cancer 2016; Hallek et al. Blood 2018"
+    },
+    {
+      "id": "s10",
+      "metin": "KLL tanılı bir hastada sitopeni nedeni araştırılıyor ve kemik iliği biyopsisi yapılıyor. Patoloji raporunda infiltrasyon paterninin diffüz olduğu belirtiliyor.\n\nKemik iliği infiltrasyon paterninin klinik/prognostik önemi nedir?",
+      "secenekler": {
+        "A": "Bone marrow (kemik iliği) biyopsisi rutin olarak tanı koymak için zorunlu olmasa da sitopenilerin (infiltrasyon vs. otoimmün) aydınlatılmasında kullanılır; infiltrasyon paterni nodüler, interstisyel veya -genellikle en kötü prognozla ilişkili olan- difüz patern şeklinde karşımıza çıkabilir. Bu hastadaki diffüz patern, prognostik açıdan diğer paternlere göre daha olumsuz kabul edilir.",
+        "B": "Kemik iliği infiltrasyon paterni KLL'de hiçbir prognostik değer taşımaz, yalnızca akademik bir sınıflandırmadır.",
+        "C": "Nodüler infiltrasyon paterni, diffüz paternden daha kötü prognozla ilişkilidir.",
+        "D": "Kemik iliği biyopsisi KLL tanısı için MUTLAKA ZORUNLU bir işlemdir, biyopsi olmadan tanı konulamaz.",
+        "E": "İnfiltrasyon paterni yalnızca AML'de değerlendirilir, KLL'de bu kavram kullanılmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kemik iliği biyopsisi rutin tanı için zorunlu değildir ama sitopeni nedenini aydınlatır. İnfiltrasyon paterni nodüler/interstisyel/diffüz olabilir; DİFFÜZ patern genellikle EN KÖTÜ prognozla ilişkilidir.",
+      "aciklama_detay": "Bone marrow (kemik iliği) biyopsisi rutin olarak tanı koymak için zorunlu olmasa da sitopenilerin (infiltrasyon vs. otoimmün) aydınlatılmasında kullanılır; infiltrasyon paterni nodüler, interstisyel veya -genellikle en kötü prognozla ilişkili olan- difüz patern şeklinde karşımıza çıkabilir. Bu bilgi klinik olarak iki açıdan önemlidir: (1) Sitopeni ayırıcı tanısı — bir KLL hastasında anemi veya trombositopeni geliştiğinde, bunun nedeni kemik iliğinin tümör hücreleriyle yoğun infiltrasyonu (yer kaplayan, normal hematopoezi baskılayan süreç) mi, yoksa otoimmün bir mekanizma (AİHA, İTP gibi, kemik iliği infiltrasyonundan bağımsız) mı olduğunu ayırt etmek tedavi kararını doğrudan etkiler — infiltrasyona bağlı sitopenide KLL'nin kendisi tedavi edilirken, otoimmün sitopenide immünsüpresif/steroid tedavisi öncelikli olabilir. (2) Prognoz — infiltrasyon paterni (nodüler/interstisyel/diffüz), hastalığın kemik iliğindeki yayılım derecesini ve dolayısıyla tümör yükünü yansıtır; diffüz patern (kemik iliğinin yaygın ve yoğun tutulumu) genellikle en kötü prognozla ilişkilendirilir çünkü bu, daha ileri/agresif hastalık yükünü gösterir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Biyopsi zorunlu değil ama sitopeni ayırıcı tanısında kullanılır; diffüz patern en kötü prognozla ilişkilidir.",
+        "B": "YANLIS — İnfiltrasyon paterni AÇIKÇA prognostik değer taşır (özellikle diffüz patern kötü prognozla ilişkilidir), yalnızca akademik değildir.",
+        "C": "YANLIS — Yön tersine çevrilmiştir; DİFFÜZ patern (nodüler değil) genellikle EN KÖTÜ prognozla ilişkilidir.",
+        "D": "YANLIS — Kemik iliği biyopsisi KLL tanısı için ZORUNLU DEĞİLDİR; tanı periferik kan akım sitometrisi ile konulabilir, biyopsi sitopeni araştırması gibi özel durumlarda kullanılır.",
+        "E": "YANLIS — İnfiltrasyon paterni kavramı (nodüler/interstisyel/diffüz) KLL'de de AÇIKÇA tanımlanmış ve kullanılan bir histopatolojik değerlendirmedir."
+      },
+      "etiketler": [
+        "Kemik İliği Biyopsisi",
+        "İnfiltrasyon Paterni",
+        "Diffüz Patern",
+        "Sitopeni Ayırıcı Tanı",
+        "Prognoz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hallek et al. Blood 2018; Rozman et al. Blood 1984"
+    }
+  ]
+}

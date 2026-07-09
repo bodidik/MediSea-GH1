@@ -1,0 +1,308 @@
+{
+  "id": "quiz-gastro-pankreas-001",
+  "baslik": "Pankreas Kanseri (PDAC) — Soru Seti 1",
+  "branch": "gastroenteroloji",
+  "topic": "pankreas-kanseri",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Elli iki yaşında hasta, önceden hiçbir diyabet öyküsü olmaksızın son 3 ayda gelişen atipik, hızlı seyirli hiperglisemi ile başvuruyor. Klinisyen, bu tablonun altta yatan bir malignitenin habercisi olabileceğinden şüpheleniyor.\n\nBu klinik senaryoda düşünülmesi gereken ilişki ve terminoloji nedir?",
+      "secenekler": {
+        "A": "Diyabet ve pankreas kanseri arasında çift yönlü bir ilişki mevcuttur; özellikle 50 yaşından sonra ortaya çıkan atipik, yeni başlangıçlı diyabet, altta yatan bir PDAC'nin habercisi olabilir ve bu durum 'Tip 3c diyabet' olarak adlandırılır.",
+        "B": "Yeni başlangıçlı diyabet ile pankreas kanseri arasında hiçbir epidemiyolojik ilişki gösterilmemiştir.",
+        "C": "Bu klinik tablo yalnızca Tip 1 diyabetin geç başlangıçlı bir formudur, pankreas kanseriyle ilgisi yoktur.",
+        "D": "Pankreas kanseri riski yalnızca UZUN SÜRELİ diyabeti olan hastalarda artar, yeni başlangıçlı diyabetin hiçbir öngörücü değeri yoktur.",
+        "E": "Tip 3c diyabet terimi, pankreas kanseri cerrahisi sonrası gelişen diyabeti tanımlar, kanser öncesi dönemle ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "50 yaş sonrası atipik yeni başlangıçlı diyabet (Tip 3c), altta yatan PDAC'nin habercisi olabilir — diyabet-pankreas kanseri arasındaki çift yönlü ilişkinin bir yüzüdür (diğer yüzü: uzun süreli DM'nin riski ~1.5-2 kat artırması).",
+      "aciklama_detay": "Diyabet ve pankreas kanseri arasında çift yönlü bir ilişki mevcuttur; özellikle 50 yaşından sonra ortaya çıkan atipik, yeni başlangıçlı diyabet, altta yatan bir PDAC'nin habercisi olabilirken (Tip 3c diyabet), uzun süredir devam eden diabetes mellitus da riski yaklaşık 1.5-2 kat artırır. Bu çift yönlü ilişki önemlidir: (1) Kronik/uzun süreli DM, pankreas kanseri için bir RİSK FAKTÖRÜDÜR (kronik hiperinsülinemi/inflamasyon aracılı); (2) Yeni başlangıçlı, atipik (hızlı seyirli, kilo kaybıyla birlikte, geleneksel Tip 2 DM risk profiline uymayan) diyabet ise pankreas kanserinin bir SONUCU/ERKEN BELİRTİSİ olabilir — tümörün paraneoplastik veya doğrudan adacık hücre fonksiyon bozukluğu yoluyla glukoz metabolizmasını bozması sonucu gelişir. Bu ikinci senaryo 'Tip 3c diyabet' (pankreatojenik diyabet) olarak sınıflandırılır ve klinisyenlerin 50 yaş üstü, atipik yeni başlangıçlı diyabetli hastalarda altta yatan pankreas kanserini akılda tutmasını gerektirir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Çift yönlü ilişki: yeni başlangıçlı atipik DM (Tip 3c) = PDAC habercisi olabilir; uzun süreli DM = risk faktörü.",
+        "B": "YANLIS — Bu ilişki iyi tanımlanmış, kanıta dayalı bir epidemiyolojik bağlantıdır.",
+        "C": "YANLIS — Bu tablo Tip 1 diyabetin geç formu değildir; pankreatik malignite ile ilişkili Tip 3c (pankreatojenik) diyabet olarak sınıflandırılır.",
+        "D": "YANLIS — Tam tersine, YENİ BAŞLANGIÇLI atipik diyabet de (uzun süreli DM'ye ek olarak) önemli bir öngörücü/haberci olabilir.",
+        "E": "YANLIS — Tip 3c diyabet terimi, pankreas hastalığına (kanser dahil) SEKONDER gelişen diyabeti tanımlar; bu, kanserin kendisinin neden olduğu bir durumdur, yalnızca cerrahi sonrasıyla sınırlı değildir."
+      },
+      "etiketler": [
+        "Tip 3c Diyabet",
+        "Yeni Başlangıçlı Diyabet",
+        "Risk Faktörleri",
+        "Paraneoplastik",
+        "Epidemiyoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pannala et al. Lancet Oncol 2009; Sah et al. Curr Opin Gastroenterol 2013"
+    },
+    {
+      "id": "s2",
+      "metin": "Pankreas kanserinin moleküler patogenezi araştırılıyor. Erken evre bir lezyonda KRAS mutasyonu saptanırken, ilerlemiş bir invaziv karsinomda ek olarak SMAD4 (DPC4) gen kaybı gösteriliyor.\n\nSMAD4 kaybının klinik/prognostik önemi nedir?",
+      "secenekler": {
+        "A": "SMAD4 delesyonu/mutasyonu, tümörün artmış uzak metastaz potansiyeli ve daha agresif bir klinik seyir göstermesiyle güçlü bir korelasyona sahiptir.",
+        "B": "SMAD4 kaybının pankreas kanseri prognozuyla hiçbir ilişkisi yoktur, rastgele bir moleküler bulgudur.",
+        "C": "SMAD4 kaybı, tümörün daha indolent ve düşük metastatik potansiyele sahip olduğunu gösterir.",
+        "D": "SMAD4, pankreas kanserinde en erken kaybolan gendir, KRAS'tan önce mutasyona uğrar.",
+        "E": "SMAD4 kaybı yalnızca kistik prekürsör lezyonlarda (IPMN/MCN) görülür, invaziv karsinomda saptanmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SMAD4 (DPC4) kaybı, PDAC'nin ilerlemiş moleküler basamağıdır ve artmış uzak metastaz potansiyeli + daha agresif klinik seyirle güçlü korelasyon gösterir — moleküler progresyon modelinin en klinik önemli bulgusudur.",
+      "aciklama_detay": "PDAC, normal duktal epitelden PanIN'e ve invaziv karsinoma uzanan ardışık bir moleküler progresyon modelini takip eder: hastalığın erken evresinde onkojenik KRAS aktivasyonu (olguların >%90'ında) ve telomer kısalması görülür. İlerleyen aşamalarda CDKN2A (p16) kaybı ile hücre döngüsü regülasyonu bozulur ve TP53 ile SMAD4 (DPC4) tümör baskılayıcı genlerinin inaktivasyonu eklenir. Özellikle SMAD4 delesyonu/mutasyonu, tümörün artmış uzak metastaz potansiyeli ve daha agresif bir klinik seyir göstermesiyle güçlü bir korelasyona sahiptir. SMAD4, TGF-β sinyal yolağının merkezi bir komponenti olup hücre büyümesi/farklılaşmasının düzenlenmesinde rol oynar; kaybı bu düzenleyici kontrolü ortadan kaldırarak tümörün invaziv ve metastatik davranışını kolaylaştırır. Bu bilgi, SMAD4 durumunun (immünohistokimyasal olarak değerlendirilebilir) bazı klinik çalışmalarda prognostik biyobelirteç olarak araştırılmasının da temelini oluşturur — SMAD4 kaybı olan tümörler genellikle daha yaygın metastatik hastalıkla ilişkilendirilirken, SMAD4 korunmuş tümörler nispeten daha lokalize kalma eğiliminde olabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — SMAD4 kaybı artmış metastaz potansiyeli + agresif seyirle güçlü korelasyon gösterir.",
+        "B": "YANLIS — SMAD4 kaybı, PDAC'de İYİ TANIMLANMIŞ, önemli prognostik değer taşıyan bir moleküler bulgudur.",
+        "C": "YANLIS — Tam tersine, SMAD4 kaybı DAHA AGRESİF ve metastatik potansiyeli YÜKSEK bir tümör davranışıyla ilişkilidir.",
+        "D": "YANLIS — Moleküler progresyon sırasına göre KRAS EN ERKEN olaydır; SMAD4 kaybı İLERLEYEN aşamalarda (TP53 ile birlikte) eklenir, KRAS'tan sonra gelir.",
+        "E": "YANLIS — SMAD4 kaybı hem kistik prekürsör lezyonların ilerlemesinde hem de İNVAZİV KARSİNOMUN kendisinde (özellikle ileri evrede) görülen bir moleküler değişikliktir."
+      },
+      "etiketler": [
+        "SMAD4",
+        "DPC4",
+        "Moleküler Progresyon",
+        "Metastaz Potansiyeli",
+        "TGF-beta Yolağı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Iacobuzio-Donahue et al. J Clin Oncol 2009; Hruban et al. Am J Surg Pathol 2004"
+    },
+    {
+      "id": "s3",
+      "metin": "Pankreas gövde ve kuyruk yerleşimli bir kitlesi olan hasta, hastalığın oldukça ileri evresinde, sırta vuran şiddetli ağrı ile tanı alıyor. Klinisyen, bu geç prezentasyonun anatomik lokalizasyonla ilişkili olduğunu açıklıyor.\n\nPankreas kanserinde tümör lokalizasyonuna göre klinik prezentasyon farkı nedir?",
+      "secenekler": {
+        "A": "Baş bölgesi tümörleri (%60-70) koledok basısına bağlı ağrısız tıkanma sarılığı ile nispeten daha erken semptom verirken; gövde ve kuyruk tümörleri (%20-25) sıklıkla ileri evrede, çölyak pleksus invazyonuna ikincil sırta vuran ağrı veya metastatik semptomlarla tanı alır.",
+        "B": "Gövde ve kuyruk tümörleri her zaman baş tümörlerinden daha erken tanı alır çünkü sarılık daha hızlı gelişir.",
+        "C": "Tümör lokalizasyonunun klinik prezentasyon üzerinde hiçbir etkisi yoktur, tüm pankreas kanserleri aynı semptomlarla başvurur.",
+        "D": "Baş bölgesi tümörleri yalnızca sırt ağrısıyla, gövde/kuyruk tümörleri ise yalnızca sarılıkla prezente olur.",
+        "E": "Pankreas kuyruğu tümörleri koledok basısı yaparak en erken sarılık semptomunu verir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Baş tümörleri (%60-70) koledok basısı ile ERKEN sarılık verir; gövde/kuyruk tümörleri (%20-25) çölyak pleksus invazyonu ile GEÇ, sırt ağrısı/metastatik semptomlarla tanı alır — bu, PDAC'de lokalizasyona bağlı prognostik farkın da temelidir.",
+      "aciklama_detay": "Klinik bulgular tümörün anatomik lokalizasyonuna göre şekillenir. Vakaların yaklaşık %60-70'i pankreas başında, %20-25'i gövde ve kuyruk kesiminde yerleşir. Baş bölgesi tümörleri koledok basısına bağlı ağrısız tıkanma sarılığı, kaşıntı, koyu renkli idrar, akolik gaita ve steatore ile nispeten daha erken semptom verirken; gövde ve kuyruk tümörleri sıklıkla ileri evrede, çölyak pleksus invazyonuna ikincil sırta vuran ağrı veya metastatik semptomlarla tanı alır. Bu anatomik farklılık, klinik pratikte önemli bir sonuca yol açar: baş tümörleri, koledok anatomik olarak yakın seyrettiğinden erken tıkanma sarılığı yaparak hastaların daha erken (potansiyel olarak daha rezektabl bir evrede) tıbbi değerlendirmeye gelmesini sağlarken; gövde/kuyruk tümörlerinde böyle bir 'erken uyarı sistemi' bulunmadığından hastalık sessizce ilerler ve genellikle çölyak pleksus invazyonu (şiddetli sırt ağrısı) veya uzak metastaz gelişene kadar fark edilmez — bu, gövde/kuyruk tümörlerinin genel olarak daha kötü prognozla ilişkilendirilmesinin klinik/anatomik bir açıklamasıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Baş: erken sarılık (koledok basısı); gövde/kuyruk: geç, sırt ağrısı (çölyak pleksus invazyonu)/metastatik semptomlar.",
+        "B": "YANLIS — Tam tersine, BAŞ tümörleri sarılık nedeniyle DAHA ERKEN tanı alır; gövde/kuyruk tümörleri geç tanı alır.",
+        "C": "YANLIS — Lokalizasyon, klinik prezentasyon zamanlaması ve semptom paterni üzerinde BELİRGİN etkiye sahiptir.",
+        "D": "YANLIS — Bu aşırı basitleştirilmiş bir eşleştirmedir; baş tümörleri PRİMER OLARAK sarılıkla, gövde/kuyruk PRİMER OLARAK sırt ağrısıyla prezente olur (kesin/mutlak ayrım değil, eğilim).",
+        "E": "YANLIS — Koledok basısı yapan ve erken sarılık veren lokalizasyon PANKREAS BAŞIDIR, kuyruk değildir (anatomik olarak kuyruk koledoktan uzaktır)."
+      },
+      "etiketler": [
+        "Klinik Prezentasyon",
+        "Tümör Lokalizasyonu",
+        "Tıkanma Sarılığı",
+        "Çölyak Pleksus İnvazyonu",
+        "Anatomik Farklılık"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Kamisawa et al. Lancet 2016; Ryan et al. N Engl J Med 2014"
+    },
+    {
+      "id": "s4",
+      "metin": "Pankreas başında kitle saptanan ve rezektabl olarak değerlendirilen bir hastada, neoadjuvan veya palyatif sistemik tedavi planlanmaksızın doğrudan küratif cerrahiye gidilmesi planlanıyor. Cerrahi ekip, doku tanısının (biyopsi) zorunlu olmadığını belirtiyor.\n\nBu yaklaşımın gerekçesi ve doku tanısının kesinlikle gerekli olduğu senaryo nedir?",
+      "secenekler": {
+        "A": "Doku tanısı, küratif cerrahi planlanan tipik prezentasyonlu ve rezektabl hastalarda mutlak zorunlu değildir ancak neoadjuvan veya palyatif sistemik tedavi planlanan her hastada kesinlikle gereklidir; bu, sistemik tedavi başlamadan önce tanının histolojik/sitolojik olarak kesinleştirilmesi gerektiği için önemlidir.",
+        "B": "Doku tanısı her pankreas kanseri şüpheli hastada, tedavi planından bağımsız olarak mutlak zorunludur.",
+        "C": "Doku tanısı hiçbir zaman gerekli değildir, tüm pankreas kitleleri görüntüleme bulgularına dayanarak tedavi edilir.",
+        "D": "Doku tanısı yalnızca metastatik hastalıkta gereklidir, lokal ileri (LAPC) hastalarda gerekmez.",
+        "E": "Doku tanısı zorunluluğu, hastanın yaşına göre değişir; genç hastalarda gerekli, yaşlı hastalarda gerekli değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Rezektabl+tipik prezentasyonlu hastada doku tanısı küratif cerrahi öncesi zorunlu değil; ancak neoadjuvan VEYA palyatif SİSTEMİK TEDAVİ planlanan HER hastada kesinlikle gereklidir — sistemik tedavi başlamadan tanı histolojik olarak kanıtlanmalıdır.",
+      "aciklama_detay": "Doku tanısı, küratif cerrahi planlanan tipik prezentasyonlu ve rezektabl hastalarda mutlak zorunlu değildir ancak neoadjuvan veya palyatif sistemik tedavi planlanan her hastada kesinlikle gereklidir. Bu ayrımın mantığı şudur: rezektabl, tipik radyolojik prezentasyonlu (klasik pankreas başı kitlesi, tıkanma sarılığı, karakteristik BT bulguları) bir hastada, cerrahi rezeksiyonun kendisi hem tanısal hem tedavi edici bir işlem olduğundan, ameliyat öncesi biyopsi almanın ek bir klinik faydası sınırlıdır (ayrıca biyopsi teorik komplikasyon riski taşır). Ancak sistemik kemoterapi (neoadjuvan veya palyatif) planlandığında, hastayı toksik ajanlara maruz bırakmadan önce tanının kesin olarak (histolojik/sitolojik) doğrulanması ETİK VE KLİNİK BİR ZORUNLULUKTUR — çünkü kemoterapi başlatmak geri dönüşü zor bir karardır ve yanlış tanı (örn. otoimmün pankreatit gibi bir taklitçi durum) hastaya gereksiz toksisite riski oluşturur. Endoskopik Ultrasonografi (EUS) rehberliğinde İİAB/İİB, karın zarına tümör ekimi riskini elimine etmesi ve yüksek duyarlılığı nedeniyle bu doku tanısı için altın standart örnekleme yöntemidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Rezektabl+tipik prezentasyonda biyopsi zorunlu değil; neoadjuvan/palyatif sistemik tedavi öncesi KESİNLİKLE gerekli.",
+        "B": "YANLIS — Tipik rezektabl hastalarda biyopsi mutlak zorunlu DEĞİLDİR; bu genel bir kural değildir.",
+        "C": "YANLIS — Doku tanısı belirli senaryolarda (sistemik tedavi öncesi) KESİNLİKLE gereklidir, tamamen gereksiz değildir.",
+        "D": "YANLIS — Doku tanısı zorunluluğu METASTATİK VEYA LAPC (her ikisi de sistemik tedavi gerektirebilir) fark etmeksizin, SİSTEMİK TEDAVİ PLANINA bağlıdır; LAPC'de de neoadjuvan/palyatif tedavi öncesi biyopsi gereklidir.",
+        "E": "YANLIS — Doku tanısı zorunluluğu yaşa göre değil, PLANLANAN TEDAVİ YAKLAŞIMINA (cerrahi vs sistemik tedavi) göre belirlenir."
+      },
+      "etiketler": [
+        "Doku Tanısı",
+        "EUS-İİAB",
+        "Neoadjuvan Tedavi Öncesi Biyopsi",
+        "Rezektabl Hastalık",
+        "Tanı Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tempero et al. NCCN Guidelines Pancreatic Adenocarcinoma 2023; Wolfgang et al. CA Cancer J Clin 2013"
+    },
+    {
+      "id": "s5",
+      "metin": "Pankreas başı kitlesi olan bir hastada BT'de tümörün Süperior Mezenterik Ven (SMV)'i 200 derece sardığı ve ven konturunu bozduğu, ancak venöz rekonstrüksiyonun teknik olarak mümkün olduğu görülüyor. Çölyak arter veya SMA ile temas yok.\n\nNCCN kriterlerine göre bu hastanın rezektabilite sınıflandırması nedir?",
+      "secenekler": {
+        "A": "Rezektabl; SMV teması cerrahi planlamayı etkilemez.",
+        "B": "Sınırda Rezektabl (Borderline Resectable, BRPC); venöz rekonstrüksiyona izin verecek şekilde SMV/PV tutulumu (tümörün veni >180 derece sarması veya ven konturunu bozması) bu kategoriye girer — bu hastadaki 200 derece sarma ve kontur bozulması, rekonstrüksiyon mümkün olduğu için BRPC'yi tanımlar.",
+        "C": "Lokal İleri (Anrezektabl, LAPC); herhangi bir SMV teması otomatik olarak anrezektabl kabul edilir.",
+        "D": "Metastatik; SMV tutulumu tanımı gereği uzak metastaz kabul edilir.",
+        "E": "Bu bulgular NCCN sınıflandırma sisteminde değerlendirilmez, yalnızca arteriyel temas dikkate alınır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SMV >180° sarma + kontur bozulması, ama rekonstrüksiyon MÜMKÜN = Sınırda Rezektabl (BRPC). Bu, Rezektabl (≤180°, yapı bozulmadan) ile Lokal İleri (rekonstrüksiyona olanak TANIMAYAN oklüzyon) arasındaki ara kategoridir.",
+      "aciklama_detay": "NCCN kriterlerine göre Sınırda Rezektabl (Borderline Resectable - BRPC): Venöz rekonstrüksiyona izin verecek şekilde SMV/PV tutulumu (tümörün veni >180 derece sarması veya ven konturunu bozması) veya SMA/Çölyak turunkus ile cerrahiye engel olmayacak sınırlı (<180 derece) temas. Bu hastada tümör SMV'yi 200 derece sarmış (>180° eşiğini aşmış) ve ven konturunu bozmuştur — bu iki bulgu da BRPC tanımını karşılar. Kritik ayırt edici nokta, bu venöz tutulumun REKONSTRÜKSİYONA İZİN VERECEK şekilde olmasıdır — yani cerrahi ekip, tümörle birlikte etkilenen ven segmentini rezeke edip damar rekonstrüksiyonu (ven grefti veya primer anastomoz) yapabilir. Eğer rekonstrüksiyon TEKNİK OLARAK MÜMKÜN OLMASAYDI (örn. tam oklüzyon + uzun segment tutulum), bu durum Lokal İleri (LAPC) kategorisine girerdi. Bu hastada çölyak arter/SMA ile temas olmaması da rezektabl/BRPC sınırında kalmasını destekler (arteriyel >180° sarılma olsaydı LAPC olurdu).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SMV'nin 200° sarılması ve kontur bozulması, saf 'Rezektabl' kategorisinin (≤180° temas, yapı bozulmadan) ötesindedir.",
+        "B": "DOGRU — >180° SMV sarma + kontur bozulması + rekonstrüksiyon mümkün = BRPC tanımı tam olarak karşılanır.",
+        "C": "YANLIS — LAPC, rekonstrüksiyona TEKNİK OLARAK OLANAK TANIMAYAN oklüzyonu gerektirir; bu hastada rekonstrüksiyon mümkün olduğundan LAPC değil BRPC'dir.",
+        "D": "YANLIS — Venöz tutulum, metastatik hastalık tanımına girmez; metastatik kategori periton/karaciğer/uzak lenf nodu yayılımını gerektirir.",
+        "E": "YANLIS — NCCN sınıflandırması hem ARTERİYEL (SMA, çölyak, OHA) hem VENÖZ (SMV, PV) tutulumu birlikte değerlendirir; bu vakada venöz bulgular sınıflandırmayı belirlemiştir."
+      },
+      "etiketler": [
+        "NCCN Rezektabilite",
+        "Sınırda Rezektabl",
+        "BRPC",
+        "SMV Tutulumu",
+        "Venöz Rekonstrüksiyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Tempero et al. NCCN Guidelines Pancreatic Adenocarcinoma 2023; Isaji et al. Pancreatology 2018"
+    },
+    {
+      "id": "s6",
+      "metin": "R0 rezeksiyon uygulanan, ECOG performans durumu 1 olan bir pankreas kanseri hastasında adjuvan tedavi planlanıyor. Hasta genetik test sonucunda germline BRCA2 mutasyonu taşıdığı öğreniliyor.\n\nBu hastada tercih edilmesi gereken adjuvan tedavi rejimi ve gerekçesi nedir?",
+      "secenekler": {
+        "A": "PRODIGE 24 çalışması ışığında mFOLFIRINOX, fit hastalarda en yüksek genel sağkalımı sunan rejimdir; ayrıca hasta BRCA2 varyantı taşıdığından platin içeren FOLFIRINOX rejimi mutlak tercih edilmelidir — bu hastada her iki gerekçe de aynı tedaviyi (platin içeren FOLFIRINOX) desteklemektedir.",
+        "B": "BRCA2 mutasyonu taşıyan hastalarda platin içeren rejimlerden kaçınılmalı, yalnızca S-1 monoterapisi kullanılmalıdır.",
+        "C": "Adjuvan tedavi, makroskobik tümör tamamen rezeke edildiği için bu hastada gereksizdir.",
+        "D": "Gemsitabin monoterapisi, BRCA2 mutasyonu taşıyan hastalarda platin içeren rejimlere kesinlikle üstündür.",
+        "E": "BRCA2 mutasyon durumu adjuvan tedavi rejim seçimini hiçbir şekilde etkilemez, tüm hastalara aynı standart rejim uygulanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "mFOLFIRINOX (PRODIGE 24'e göre fit hastada en yüksek sağkalım) zaten platin (oksaliplatin) içerir; BRCA2 mutasyonu bu platin içeren rejimin tercih nedenini PEKİŞTİRİR — hem genel adjuvan standardı hem BRCA-spesifik öneri aynı tedaviyi işaret eder.",
+      "aciklama_detay": "Makroskobik tümörü tamamen rezeke edilen ve ECOG performans durumu iyi (0-1) olan hastalarda sağkalımı belirgin ölçüde uzattığı gösterilen 6 aylık adjuvan tedavi mutlak endikedir. PRODIGE 24 çalışması ışığında mFOLFIRINOX, fit hastalarda en yüksek genel sağkalımı sunan rejimdir. Eğer hasta BRCA1/2 ya da PALB2 varyantı taşıyorsa platin içeren FOLFIRINOX rejimi mutlak tercih edilmelidir. Bu hastada iki bağımsız gerekçe aynı tedaviye işaret etmektedir: (1) ECOG 0-1 performans durumu ve R0 rezeksiyon nedeniyle genel adjuvan standardı olarak mFOLFIRINOX (PRODIGE 24 kanıtına dayanarak) uygun bir seçimdir; (2) BRCA2 mutasyon taşıyıcılığı, DNA hasar onarım mekanizmasındaki (homolog rekombinasyon) defekt nedeniyle platin bazlı ajanlara (oksaliplatin, FOLFIRINOX'un bir bileşeni) özellikle DUYARLI bir tümör biyolojisi yaratır — bu nedenle platin içeren rejimler BRCA mutasyonlu hastalarda özellikle etkilidir ve tercih edilmelidir. Bu iki gerekçenin örtüşmesi, bu hastada mFOLFIRINOX'un net bir şekilde en uygun adjuvan seçim olduğunu gösterir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PRODIGE 24 (genel fit hasta standardı) + BRCA2 platin duyarlılığı, ikisi de mFOLFIRINOX/platin içeren rejimi destekler.",
+        "B": "YANLIS — Tam tersine, BRCA2 mutasyonu PLATİN İÇEREN rejimleri (kaçınma değil) TERCİH ETME gerekçesidir; DNA onarım defekti platin duyarlılığı yaratır.",
+        "C": "YANLIS — R0 rezeksiyon sonrası dahi, mikrometastatik hastalık riski nedeniyle 6 aylık adjuvan tedavi MUTLAK ENDİKEDİR (metinde açıkça belirtilmiştir), gereksiz değildir.",
+        "D": "YANLIS — Gemsitabin monoterapisi, mFOLFIRINOX'a (PRODIGE 24'e göre) üstün değildir; fit hastalarda mFOLFIRINOX daha yüksek sağkalım sağlar.",
+        "E": "YANLIS — BRCA2 mutasyon durumu rejim seçimini AÇIKÇA etkiler; platin içeren FOLFIRINOX'un mutlak tercih edilmesi gerektiği özellikle vurgulanmıştır."
+      },
+      "etiketler": [
+        "PRODIGE 24",
+        "mFOLFIRINOX",
+        "BRCA2",
+        "Platin Duyarlılığı",
+        "Adjuvan Tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Conroy et al. N Engl J Med 2018 (PRODIGE 24); Golan et al. N Engl J Med 2019 (POLO)"
+    },
+    {
+      "id": "s7",
+      "metin": "Metastatik pankreas kanseri tanılı, germline BRCA1 mutasyonu taşıyan bir hasta, 4 aylık platin bazlı FOLFIRINOX indüksiyon kemoterapisi sonrası hastalığında progresyon olmadığı (stabil/yanıt) gösteriliyor.\n\nBu hastada idame tedavi olarak düşünülmesi gereken hedefe yönelik ajan ve destekleyici kanıt hangisidir?",
+      "secenekler": {
+        "A": "Platin bazlı sistemik indüksiyon kemoterapisine progresyon göstermeyen ve germline BRCA1/2 mutasyonu taşıyan ileri evre olgularda bir PARP inhibitörü olan Olaparib ile idame tedavisi standart hale gelmiştir (POLO Çalışması).",
+        "B": "Bu hastada idame tedavi olarak Pembrolizumab (immün kontrol noktası inhibitörü) kullanılmalıdır çünkü BRCA1 mutasyonu MSI-H durumuyla eşdeğerdir.",
+        "C": "BRCA1 mutasyonu, hedefe yönelik idame tedavi seçimi açısından hiçbir klinik öneme sahip değildir; standart gözlem yeterlidir.",
+        "D": "Sotorasib, BRCA1 mutasyonu taşıyan hastalarda idame tedavisi olarak onaylanmış bir PARP inhibitörüdür.",
+        "E": "Olaparib, yalnızca platin tedavisine PROGRESYON GÖSTEREN hastalarda başlanmalıdır, yanıt/stabil hastalıkta kontrendikedir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Platin bazlı indüksiyona progresyonsuz (stabil/yanıt) + germline BRCA1/2 mutasyonlu ileri evre hastalarda PARP inhibitörü Olaparib idame tedavisi STANDART hale gelmiştir (POLO çalışması). Bu hasta tam olarak bu profile uymaktadır.",
+      "aciklama_detay": "Platin bazlı sistemik indüksiyon kemoterapisine progresyon göstermeyen ve germline BRCA1/2 mutasyonu taşıyan ileri evre olgularda bir PARP inhibitörü olan Olaparib ile idame tedavisi standart hale gelmiştir (POLO Çalışması). Bu tedavi stratejisinin mantığı 'sentetik letalite' kavramına dayanır: BRCA1/2 mutasyonu, DNA çift sarmal kırıklarının onarımında kritik rol oynayan homolog rekombinasyon (HR) yolağını bozar; PARP inhibitörleri ise tek sarmal DNA hasarının onarımında görevli PARP enzimini inhibe eder. BRCA-mutant (HR-eksik) hücrelerde PARP inhibisyonu, tek sarmal hasarların çift sarmal hasara dönüşmesine ve onarılamayan DNA hasarı birikimine yol açarak hücre ölümüne neden olur — bu, normal (HR-yeterli) hücrelerde görülmeyen, tümöre özgü bir hassasiyettir. POLO çalışması, platin bazlı kemoterapiye en az stabil hastalık ile yanıt veren germline BRCA1/2 mutant metastatik pankreas kanseri hastalarında, Olaparib idamesinin progresyonsuz sağkalımı anlamlı şekilde uzattığını göstermiştir. Bu hasta (metastatik, germline BRCA1+, platin indüksiyonuna progresyonsuz) POLO çalışmasının hedef popülasyonuna tam olarak uymaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — POLO çalışması: platin sonrası progresyonsuz + germline BRCA1/2 → Olaparib idame standart.",
+        "B": "YANLIS — BRCA1 mutasyonu MSI-H/dMMR durumuyla EŞDEĞER DEĞİLDİR; bunlar farklı moleküler mekanizmalardır (BRCA=HR defekti, MSI-H=DNA yanlış eşleşme onarım defekti). Pembrolizumab MSI-H/dMMR tümörlerde endikedir, BRCA mutasyonunda değil.",
+        "C": "YANLIS — BRCA1 mutasyonu, tam olarak bu senaryoda (platin sonrası idame) Olaparib seçimini yönlendiren KRİTİK klinik öneme sahiptir.",
+        "D": "YANLIS — Sotorasib bir PARP inhibitörü DEĞİLDİR; KRAS G12C mutasyonuna yönelik bir KRAS inhibitörüdür, BRCA mutasyonuyla ilgisi yoktur.",
+        "E": "YANLIS — Tam tersine, Olaparib idamesi PROGRESYON GÖSTERMEYEN (stabil/yanıtlı) hastalarda endikedir; bu, POLO çalışmasının dahil etme kriteriydi."
+      },
+      "etiketler": [
+        "Olaparib",
+        "POLO Çalışması",
+        "PARP İnhibitörü",
+        "BRCA İdame Tedavisi",
+        "Sentetik Letalite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Golan et al. N Engl J Med 2019 (POLO Trial)"
+    },
+    {
+      "id": "s8",
+      "metin": "Metastatik pankreas kanseri tanılı bir hastanın tümör moleküler profilinde mikrosatellit instabilite-yüksek (MSI-H)/dMMR durumu saptanıyor. Ayrı bir hastada ise KRAS G12C somatik varyantı tespit ediliyor.\n\nBu iki farklı moleküler profile göre uygun hedefe yönelik/immünoterapi seçenekleri hangileridir?",
+      "secenekler": {
+        "A": "MSI-H/dMMR tümörlerde immün kontrol noktası inhibitörü Pembrolizumab; KRAS G12C somatik varyantı (%1-2) taşıyan dirençli tümörlerde ise Sotorasib ve Adagrasib gibi KRAS G12C inhibitörleri hızla tedavi algoritmalarına girmiş güncel akıllı ajanlardır.",
+        "B": "Her iki moleküler profil için de aynı ajan (Olaparib) kullanılır, moleküler profil ayrımı tedavi seçimini etkilemez.",
+        "C": "MSI-H/dMMR tümörlerde Sotorasib, KRAS G12C tümörlerde Pembrolizumab kullanılmalıdır.",
+        "D": "KRAS G12C, pankreas kanserinde saptanan en sık KRAS varyantıdır (%90'ın üzerinde) ve tüm hastalarda rutin olarak hedeflenir.",
+        "E": "MSI-H/dMMR ve KRAS G12C profillerinin hiçbiri için onaylı bir hedefe yönelik/immünoterapi seçeneği mevcut değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MSI-H/dMMR → Pembrolizumab (immünoterapi). KRAS G12C (%1-2 nadir varyant, çoğunluk KRAS mutasyonu G12D/G12V gibi diğer alt tiplerdir) → Sotorasib/Adagrasib (spesifik KRAS G12C inhibitörleri). Bu iki profil FARKLI mekanizma ve FARKLI ajanlarla eşleşir.",
+      "aciklama_detay": "Mikrosatellit instabilitesi-yüksek (MSI-H) / dMMR tümörlerde immün kontrol noktası inhibitörü Pembrolizumab; NTRK gen füzyonlarında Entrectinib/Larotrectinib; ve KRAS G12C somatik varyantı (%1-2) taşıyan dirençli tümörlerde Sotorasib ve Adagrasib hızla tedavi algoritmalarına girmiş güncel akıllı ajanlardır. Bu, pankreas kanserinde hassas tıp (precision medicine) yaklaşımının çok yönlü doğasını gösterir — farklı moleküler alt gruplar (MSI-H/dMMR, BRCA/PALB2, NTRK füzyonu, KRAS G12C) her biri kendine özgü, hedefe yönelik bir tedavi stratejisiyle eşleşir. MSI-H/dMMR tümörler, DNA yanlış eşleşme onarım defekti nedeniyle yüksek tümör mutasyon yükü ve dolayısıyla artmış neoantijen ekspresyonu gösterir — bu, immün sistemin tümörü tanımasını kolaylaştırdığından immün kontrol noktası inhibitörlerine (Pembrolizumab gibi) özellikle duyarlıdırlar. KRAS G12C ise KRAS'ın spesifik bir mutasyon alt tipidir (pankreas kanserindeki en sık KRAS mutasyonu G12D'dir, G12C yalnızca %1-2 gibi küçük bir alt grubu oluşturur) ve bu spesifik varyantı hedefleyen yeni nesil küçük molekül inhibitörleri (Sotorasib, Adagrasib) geliştirilmiştir — bu, uzun süre 'hedeflenemez' kabul edilen KRAS onkogenine yönelik önemli bir terapötik atılımı temsil eder.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MSI-H/dMMR→Pembrolizumab; KRAS G12C→Sotorasib/Adagrasib; her profil kendine özgü ajanla eşleşir.",
+        "B": "YANLIS — Olaparib, BRCA1/2 mutasyonuna özgü bir ajandır; MSI-H veya KRAS G12C profilleriyle eşleşen birincil tedavi değildir.",
+        "C": "YANLIS — Eşleştirmeler TERSİNE çevrilmiştir: MSI-H/dMMR→Pembrolizumab (immünoterapi), KRAS G12C→Sotorasib/Adagrasib (hedefe yönelik küçük molekül).",
+        "D": "YANLIS — KRAS G12C, pankreas kanserinde YALNIZCA %1-2 gibi NADİR bir alt grubu oluşturur; en sık KRAS mutasyonu farklı bir alt tiptir (G12D), rutin tüm hastalarda hedeflenmez.",
+        "E": "YANLIS — Her iki profil için de FDA onaylı, tedavi algoritmalarına girmiş spesifik ajanlar mevcuttur (Pembrolizumab, Sotorasib/Adagrasib)."
+      },
+      "etiketler": [
+        "MSI-H/dMMR",
+        "Pembrolizumab",
+        "KRAS G12C",
+        "Sotorasib",
+        "Hassas Tıp"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Marabelle et al. J Clin Oncol 2020 (Pembrolizumab MSI-H); Strickler et al. N Engl J Med 2023 (KRAS G12C)"
+    },
+    {
+      "id": "s9",
+      "metin": "Sırt bölgesine yayılan, opioid tedaviye rağmen kontrol altına alınamayan şiddetli nöropatik ağrısı olan, lokal ileri (anrezektabl) pankreas kanseri tanılı bir hasta değerlendiriliyor.\n\nBu hastada opiyat ihtiyacını ve komplikasyonlarını azaltabilecek girişimsel palyatif yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Sırta vuran ciddi nöropatik tümör ağrısında, tıbbi analjezi basamaklarına ilaveten EUS rehberliğinde uygulanan 'Çölyak Pleksus Nörolizi' opiyat ihtiyacını ve komplikasyonlarını anlamlı düzeyde azaltabilir.",
+        "B": "Bu hastada tek etkili yaklaşım opioid dozunun sınırsız şekilde artırılmasıdır, girişimsel bir seçenek yoktur.",
+        "C": "Çölyak Pleksus Nörolizi yalnızca akut pankreatit ağrısında kullanılır, malign pankreas ağrısında etkisizdir.",
+        "D": "Bu ağrı tipinde tek çözüm acil cerrahi rezeksiyondur, hastalığın rezektabilite durumundan bağımsız olarak ağrı cerrahiyi zorunlu kılar.",
+        "E": "EUS rehberliğinde çölyak pleksus nörolizi, yalnızca gastrik çıkış obstrüksiyonunu tedavi eden bir işlemdir, ağrı yönetimiyle ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sırta vuran nöropatik tümör ağrısında EUS rehberliğinde Çölyak Pleksus Nörolizi, tıbbi analjeziye ek olarak opiyat ihtiyacını/komplikasyonlarını anlamlı azaltabilen etkili bir girişimsel palyatif yöntemdir.",
+      "aciklama_detay": "Ağrı Yönetimi: Sırta vuran ciddi nöropatik tümör ağrısında, tıbbi analjezi basamaklarına ilaveten EUS rehberliğinde uygulanan 'Çölyak Pleksus Nörolizi' opiyat ihtiyacını ve komplikasyonlarını anlamlı düzeyde azaltabilir. Bu işlem, pankreas kanserinde sıkça görülen ve tümörün çölyak pleksusa (retroperitoneal sinir ağı) invazyonu veya bası yapmasından kaynaklanan şiddetli, opioide dirençli nöropatik ağrının yönetiminde önemli bir girişimsel seçenektir. EUS rehberliğinde, çölyak pleksus bölgesine nörolitik bir ajan (genellikle alkol) enjekte edilerek ağrı ileten sinir liflerinin kimyasal olarak tahrip edilmesi sağlanır — bu, sistemik opioid dozunu artırmadan (ve buna bağlı sedasyon, konstipasyon, solunum depresyonu gibi yan etkileri önleyerek) etkili ağrı kontrolü sunar. Bu işlem, ilerlemiş/anrezektabl pankreas kanserli hastalarda yaşam kalitesini artırmaya yönelik palyatif bakımın önemli bir bileşenidir ve tıbbi analjezi basamaklarına (WHO ağrı merdiveni) EK OLARAK, onları TAMAMLAYICI şekilde kullanılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — EUS rehberliğinde çölyak pleksus nörolizi, opiyat ihtiyacı/komplikasyonlarını azaltan etkili bir girişimsel palyatif seçenektir.",
+        "B": "YANLIS — Girişimsel bir seçenek (çölyak pleksus nörolizi) mevcuttur ve etkilidir; opioid dozunu sınırsız artırmak tek yol değildir.",
+        "C": "YANLIS — Çölyak pleksus nörolizi ÖZELLİKLE MALİGN (tümör kaynaklı) pankreas ağrısı yönetiminde kullanılan, iyi tanımlanmış bir tekniktir.",
+        "D": "YANLIS — Bu hasta LOKAL İLERİ (anrezektabl) olarak tanımlanmıştır; cerrahi rezeksiyon bu durumda uygulanabilir bir seçenek değildir, ağrı yönetimi palyatif/girişimsel yollarla sağlanır.",
+        "E": "YANLIS — Çölyak pleksus nörolizi AĞRI YÖNETİMİ için kullanılır; gastrik çıkış obstrüksiyonu ayrı bir komplikasyon olup farklı yöntemlerle (stent/bypass) yönetilir."
+      },
+      "etiketler": [
+        "Çölyak Pleksus Nörolizi",
+        "EUS Girişimsel İşlem",
+        "Nöropatik Ağrı",
+        "Palyatif Bakım",
+        "Opiyat Azaltma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wyse et al. J Clin Oncol 2011; Puli et al. Dig Dis Sci 2009"
+    },
+    {
+      "id": "s10",
+      "metin": "İleri evre pankreas kanseri tanılı bir hastada belirgin steatore, ciddi kilo kaybı ve malnütrisyon gelişiyor. Ayrıca hastada ani başlangıçlı bacak şişliği ve ağrısı saptanıyor, alt ekstremite USG'de derin ven trombozu doğrulanıyor.\n\nBu iki komplikasyonun (ekzokrin yetmezlik ve VTE) yönetimi hakkında en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Steatore ve malnütrisyon durumunda pankreatik enzim replasman tedavisi (PERT) mutlak ampirik olarak reçete edilmelidir; VTE için ise hastalığın güçlü protrombotik potansiyeli (Trousseau sendromu) nedeniyle düşük molekül ağırlıklı heparin (LMWH - Enoksaparin) güvenli ve etkili bir tedavi seçeneğidir.",
+        "B": "PERT yalnızca laboratuvar olarak kanıtlanmış ekzokrin yetmezlikte başlanmalıdır, ampirik kullanım önerilmez.",
+        "C": "Pankreas kanserinde gelişen VTE'de warfarin, LMWH'ye kesin üstünlük gösterir ve tercih edilmelidir.",
+        "D": "Pankreas kanseri hastalarında VTE riski genel popülasyondan farksızdır, bu bulgu tesadüfidir.",
+        "E": "PERT ve LMWH birlikte kullanılamaz, aralarında ciddi bir ilaç etkileşimi vardır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Steatore/malnütrisyonda PERT AMPİRİK olarak başlanmalı (laboratuvar kanıtı beklemeden). VTE'de (Trousseau sendromuna bağlı güçlü protrombotik potansiyel nedeniyle) LMWH (Enoksaparin) güvenli ve etkili tercih edilen ajandır.",
+      "aciklama_detay": "Pankreatik Ekzokrin Yetmezlik ve Kaşeksi: Steatore, ciddi kilo kaybı ve malnütrisyon durumunda pankreatik enzim replasman tedavisi (PERT) mutlak ampirik olarak reçete edilmelidir — bu, tanısal testlerin (fekal elastaz gibi) sonucunu beklemeden, klinik bulgulara dayanarak başlanması gerektiği anlamına gelir, çünkü pankreas kanseri (özellikle baş yerleşimli veya ileri evre) sıklıkla pankreatik parankim yıkımı veya kanal obstrüksiyonu yoluyla ekzokrin yetmezliğe yol açar ve gecikme malnütrisyonu derinleştirir. Venöz Tromboembolizm (VTE): Hastalık güçlü bir protrombotik potansiyele sahip olup (Trousseau sendromu) eşlik eden VTE olaylarında düşük molekül ağırlıklı heparin (LMWH - Enoksaparin) güvenli ve etkilidir. Pankreas kanseri, kanser ilişkili tromboz (cancer-associated thrombosis) riski en yüksek malignitelerden biridir; bu nedenle gelişen VTE olaylarının tedavisinde LMWH, kanser hastalarında (warfarin'e kıyasla daha öngörülebilir farmakokinetik, daha az ilaç etkileşimi ve kanser ilişkili tromboz çalışmalarında gösterilen etkinlik nedeniyle) tercih edilen antikoagülan sınıfıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PERT ampirik başlanır (steatore/malnütrisyonda); VTE'de LMWH (Enoksaparin) güvenli/etkili tercih.",
+        "B": "YANLIS — PERT tam olarak KLİNİK BULGULARA DAYANARAK (laboratuvar kanıtı beklemeden) AMPİRİK başlanmalıdır; gecikme zararlıdır.",
+        "C": "YANLIS — Kanser ilişkili trombozda (bu vakadaki gibi) LMWH genellikle TERCİH EDİLEN ajandır, warfarin'in üstünlüğü gösterilmemiştir.",
+        "D": "YANLIS — Pankreas kanseri, Trousseau sendromu ile karakterize, GÜÇLÜ protrombotik potansiyele sahip bir malignitedir; VTE riski belirgin ARTMIŞTIR, tesadüfi değildir.",
+        "E": "YANLIS — PERT (enzim replasmanı) ve LMWH (antikoagülan) arasında böyle bir ciddi etkileşim tanımlanmamıştır; bu iki tedavi farklı komplikasyonlar için birlikte, güvenle kullanılabilir."
+      },
+      "etiketler": [
+        "PERT",
+        "Pankreatik Enzim Replasmanı",
+        "VTE",
+        "Trousseau Sendromu",
+        "LMWH"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Roberts et al. Pancreatology 2017 (PERT Guidelines); Khorana et al. J Thromb Haemost 2018 (Cancer-Associated Thrombosis)"
+    }
+  ]
+}

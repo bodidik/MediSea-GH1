@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "id": "pankreas-kanseri",
+    "branch": "gastroenteroloji",
+    "baslik": "Pankreas Kanseri (PDAC)",
+    "altbaslik": "KRAS/CDKN2A/TP53/SMAD4 moleküler progresyonu, NCCN rezektabilite sınıflaması, PRODIGE-24/ESPAC-4/POLO çalışmaları, hassas tıp (BRCA-Olaparib, MSI-H-Pembrolizumab, KRAS G12C) ve palyatif bakım yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "Pankreas kanseri (PK), gastrointestinal sistemin en agresif malignitelerinden biridir. Tüm pankreas malignitelerinin **>%90'ı** pankreatik duktal adenokarsinom (PDAC) alt tipindedir. Hastaların tanı anında **%80-85'i anrezektabl** (lokal ileri veya metastatik) evrededir; 5 yıllık genel sağkalım tüm evreler için **%10-12**. 2030'a kadar kansere bağlı ölümlerde İKİNCİ SIRAYA yerleşmesi öngörülmektedir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Risk Faktörleri",
+      "kolonlar": [
+        "Kategori",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Sigara ★",
+            "En önemli modifiye edilebilir risk faktörü; riski 2 KATA kadar artırır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Diğer Çevresel",
+            "Obezite, azalmış fiziksel aktivite, yüksek kırmızı/işlenmiş et tüketimi, ağır alkol kullanımı"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Diyabet — Çift Yönlü İlişki ★",
+            "50 yaş sonrası ATİPİK, yeni başlangıçlı DM = altta yatan PDAC habercisi olabilir (Tip 3c diyabet). Uzun süreli DM ise riski ~1.5-2 kat artırır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kronik Pankreatit",
+            "Herediter ve sporadik kronik pankreatit önemli onkojenik zemin oluşturur"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Kalıtsal (Germline) Yatkınlık Sendromları — Olguların %10-15'i",
+      "kolonlar": [
+        "Sendrom",
+        "Gen"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Herediter meme/over kanseri ★",
+            "BRCA1, BRCA2, PALB2"
+          ]
+        },
+        {
+          "hucreler": [
+            "Peutz-Jeghers Sendromu",
+            "STK11"
+          ]
+        },
+        {
+          "hucreler": [
+            "FAMMM (Ailesel Atipik Multipl Mol Melanom)",
+            "CDKN2A/p16"
+          ]
+        },
+        {
+          "hucreler": [
+            "Herediter Pankreatit",
+            "PRSS1, SPINK1"
+          ]
+        },
+        {
+          "hucreler": [
+            "Lynch Sendromu",
+            "DNA yanlış eşleşme onarım genleri (MLH1, MSH2, MSH6, EPCAM)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Moleküler Patogenez ve Prekürsör Lezyonlar",
+      "satirlar": [
+        {
+          "metin": "PDAC, normal duktal epitelden düşük/yüksek dereceli pankreatik intraepitelyal neoplaziye (PanIN) ve invaziv karsinoma uzanan ARDIŞIK bir moleküler progresyon modelini takip eder. Kistik prekürsör lezyonlar (İPMN, MCN) de PDAC'ye ilerleyebilen diğer öncü lezyonlardır."
+        },
+        {
+          "metin": "**Sıralı moleküler olaylar:** Erken evrede onkojenik **KRAS** aktivasyonu (>%90 olguda) + telomer kısalması → **CDKN2A (p16)** kaybı (hücre döngüsü bozulur) → **TP53** ve **SMAD4 (DPC4)** tümör baskılayıcı gen inaktivasyonu."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "SMAD4 — Metastaz Korelasyonu ★: SMAD4 delesyonu/mutasyonu, tümörün ARTMIŞ UZAK METASTAZ potansiyeli ve daha AGRESİF klinik seyriyle güçlü korelasyon gösterir — moleküler progresyon modelinin en klinik açıdan önemli basamağı."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Prezentasyon — Lokalizasyona Göre",
+      "kolonlar": [
+        "Lokalizasyon",
+        "Sıklık",
+        "Klinik"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Baş (Erken Semptomatik) ★",
+            "%60-70",
+            "Koledok basısına bağlı ağrısız tıkanma sarılığı, kaşıntı, koyu idrar, akolik gaita, steatore — göreceli DAHA ERKEN tanı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Gövde/Kuyruk (Geç Semptomatik)",
+            "%20-25",
+            "Çölyak pleksus invazyonuna bağlı sırta vuran ağrı veya metastatik semptomlarla, İLERİ EVREDE tanı"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Trousseau Sendromu ★",
+            "—",
+            "Gezici tromboflebit — önemli bir paraneoplastik prezentasyon (güçlü protrombotik potansiyel)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı Yöntemleri",
+      "kolonlar": [
+        "Yöntem",
+        "Rol"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Pankreas Protokolü BT ★",
+            "İnce kesitli, multifazik (arteriyel + portal venöz) BT — TEMEL tanı yöntemi; lokal vasküler invazyon + uzak metastaz değerlendirmesi"
+          ]
+        },
+        {
+          "hucreler": [
+            "MRG",
+            "Belirsiz karaciğer lezyonlarında devreye girer"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "EUS-İİAB/İİB ★",
+            "ALTIN STANDART örnekleme; peritona tümör ekimi (seeding) riskini elimine eder + yüksek duyarlılık. Doku tanısı rezektabl+küratif planlı hastada zorunlu DEĞİL ama neoadjuvan/palyatif sistemik tedavi planlananda KESİNLİKLE gerekli"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "CA 19-9",
+            "En sık kullanılan tümör belirteci; TARAMA aracı DEĞİLDİR. Tedavi yanıtı/nüks takibi/prognostik stratifikasyonda değerli. >500 U/mL = kötü prognoz + olası gizli metastaz göstergesi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "NCCN Rezektabilite Sınıflaması",
+      "kolonlar": [
+        "Grup",
+        "Kriter"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "1. Rezektabl",
+            "Çölyak arter/SMA/OHA ile temas YOK. SMV/PV teması yok veya ven yapısını bozmayan ≤180° temas"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "2. Sınırda Rezektabl (BRPC) ★",
+            "Venöz rekonstrüksiyona izin verecek SMV/PV tutulumu (>180° sarma veya kontur bozulması) VEYA SMA/Çölyak turunkus ile cerrahiye engel olmayan sınırlı (<180°) temas"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "3. Lokal İleri (Anrezektabl, LAPC) ★",
+            "Rekonstrüksiyona TEKNİK OLARAK OLANAK TANIMAYAN majör venöz (SMV/PV) oklüzyon; SMA veya Çölyak turunkusun >180° sarılması"
+          ]
+        },
+        {
+          "hucreler": [
+            "4. Metastatik",
+            "Periton, karaciğer veya uzak lenf düğümü (örn. para-aortik) yayılımı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Cerrahi Tedavi",
+      "satirlar": [
+        {
+          "metin": "**Baş/unsinat proses tümörleri:** Pankreatoduodenektomi (Klasik veya Pilor Koruyucu Whipple). **Gövde/kuyruk tümörleri:** Splenektomili distal pankreatektomi (standart). **R0 rezeksiyon** (makro+mikroskobik tümörsüz sınır) prognostik açıdan EN ÖNEMLİ hedef. Rutin genişletilmiş lenfadenektomi ÖNERİLMEZ; optimal evreleme için EN AZ 15-16 lenf nodu çıkarılmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Sistemik Tedavi — Neoadjuvan ve Adjuvan",
+      "kolonlar": [
+        "Basamak",
+        "Rejim / Kanıt"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Neoadjuvan (BRPC/LAPC) ★",
+            "Preoperatif 4-6 ay mFOLFIRINOX veya Gemsitabin+Nab-paklitaksel ± ardışık RT — ALTIN STANDART. Rezektabl ama yüksek riskli olgularda da giderek benimseniyor"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Adjuvan — mFOLFIRINOX ★",
+            "R0/R1 rezeksiyon + ECOG 0-1'de 6 ay adjuvan MUTLAK endike. PRODIGE 24: mFOLFIRINOX fit hastalarda EN YÜKSEK genel sağkalım"
+          ]
+        },
+        {
+          "hucreler": [
+            "Adjuvan Alternatifleri",
+            "Gemsitabin+Kapesitabin (ESPAC-4); S-1 (JASPAC-01, özellikle Asya popülasyonu)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "BRCA1/2 veya PALB2 Varyantı",
+            "Platin içeren FOLFIRINOX rejimi MUTLAK TERCİH edilmelidir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Metastatik Hastalık ve Hassas Tıp",
+      "kolonlar": [
+        "Yaklaşım",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "1. Basamak Metastatik",
+            "mFOLFIRINOX, Gemsitabin+Nab-Paklitaksel (Abraxane), veya lipozomal irinotekan bazlı NALIRIFOX — performansı iyi hastalarda. Refrakter hastalıkta ardışık kullanım (FOLFIRINOX→Gem/Nab-P veya tersi)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Germline Test Paneli",
+            "Her hastada BRCA1, BRCA2, PALB2, ATM, MLH1, MSH2, MSH6, EPCAM test edilmesi KUVVETLE önerilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Olaparib (PARP inhibitörü) ★",
+            "Platin bazlı indüksiyona progresyonsuz + germline BRCA1/2 mutasyonlu ileri evrede İDAME tedavisi standart (POLO çalışması)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Pembrolizumab",
+            "MSI-H/dMMR tümörlerde immün kontrol noktası inhibitörü"
+          ]
+        },
+        {
+          "hucreler": [
+            "Entrectinib/Larotrectinib",
+            "NTRK gen füzyonlarında"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sotorasib / Adagrasib",
+            "KRAS G12C somatik varyantı (%1-2) taşıyan dirençli tümörlerde"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yüksek Riskli Gruplarda Tarama (Sürveyans)",
+      "kolonlar": [
+        "Konu",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Genel Popülasyon",
+            "Rutin tarama ÖNERİLMEZ (USPSTF)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hedef Kohortlar ★",
+            "Peutz-Jeghers/FAMMM/herediter pankreatit (aile öyküsü ŞARTI ARANMAKSIZIN); BRCA1/2-PALB2-ATM taşıyıcısı veya Lynch + ailede ≥1 pankreas kanserli 1./2. derece akraba; Ailesel Pankreas Kanseri (FPC) — ≥2 akraba (en az biri 1. derece) PDAC"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Yöntem/Zamanlama",
+            "Radyasyonsuz yıllık EUS ve/veya MRG/MRCP. Genellikle 50 yaşında (veya en erken yakalanan akrabadan 10 yıl önce) başlatılır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Palyatif ve Destekleyici Bakım",
+      "kolonlar": [
+        "Komplikasyon",
+        "Yönetim"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tıkanma Sarılığı",
+            "İlk planda ERCP ile Kendi Kendine Genişleyebilen Metalik Stent (SEMS) dekompresyon"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Nöropatik Ağrı ★",
+            "Tıbbi analjezi + EUS rehberliğinde 'Çölyak Pleksus Nörolizi' — opiyat ihtiyacı/komplikasyonlarını anlamlı azaltır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Gastrik Çıkış Obstrüksiyonu",
+            "Enteral metalik stent veya cerrahi/laparoskopik gastrojejunostomi bypass"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Ekzokrin Yetmezlik/Kaşeksi ★",
+            "Steatore + ciddi kilo kaybı/malnütrisyonda pankreatik enzim replasman tedavisi (PERT) MUTLAK AMPİRİK reçete edilmeli"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "VTE (Trousseau) ★",
+            "Güçlü protrombotik potansiyel; eşlik eden VTE'de LMWH (Enoksaparin) güvenli ve etkili"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Pankreas Kanseri 10 Altın Kural: (1) Tanı anında %80-85 anrezektabl; 5 yıl sağkalım %10-12. (2) Moleküler sıra: KRAS(>%90 erken)→CDKN2A→TP53/SMAD4; SMAD4 kaybı=metastaz/agresiflik göstergesi. (3) Baş tümörleri erken sarılıkla, gövde/kuyruk geç ve sırt ağrısıyla prezente olur; Trousseau sendromu paraneoplastik. (4) EUS-İİAB seeding riski taşımadığı için altın standart; CA19-9 tarama değil prognoz/takip amaçlı, >500 kötü habercidir. (5) NCCN 4 grup: rezektabl/BRPC/LAPC/metastatik — venöz temas açısı ve rekonstrüksiyon olasılığına göre ayrılır. (6) R0 rezeksiyon en önemli prognostik hedef; ≥15-16 LN çıkarılmalı. (7) BRPC/LAPC'de neoadjuvan mFOLFIRINOX/Gem-NabP altın standart; adjuvanda PRODIGE-24 ile mFOLFIRINOX en yüksek sağkalımı sağlar. (8) BRCA1/2/PALB2 varsa FOLFIRINOX (platin) tercih edilir; germline BRCA + platine progresyonsuz yanıt → Olaparib idame (POLO). (9) MSI-H→pembrolizumab, NTRK füzyonu→entrectinib/larotrectinib, KRAS G12C→sotorasib/adagrasib. (10) Tarama yalnızca yüksek riskli gruplarda (genetik sendrom/FPC), yıllık EUS/MRCP ile, radyasyonsuz yöntemlerle yapılır."
+    }
+  ]
+}

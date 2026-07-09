@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "id": "kll",
+    "branch": "hematoloji",
+    "baslik": "Kronik Lenfositik Lösemi (KLL)",
+    "altbaslik": "IGHV mutasyon durumu, BCL-2/13q14 apoptoz mekanizması, immünofenotip (CD5/CD19/CD23/CD200), smudge hücreler, prolenfosit eşiği ve MCL ayırıcı tanısı",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Kronik lenfositik lösemi (KLL), kemik iliği, kan, lenf nodları ve dalak gibi sekonder lenfoid organlarda fonksiyonel olarak inkompetan, matür görünümlü monoklonal B lenfositlerin klonal proliferasyonu ve birikimi ile karakterize, yavaş seyirli (indolent) bir lenfoproliferatif hastalıktır."
+        },
+        {
+          "metin": "KLL ve doku formu olan küçük lenfositik lenfoma (SLL), farklı klinik prezentasyonlara sahip AYNI patolojik antite olarak kabul edilir. Hastalık yükü primer olarak kan ve kemik iliğinde ise **KLL**; asıl tutulum lenf nodlarında ise ve periferik kandaki klonal B lenfosit sayısı **5×10⁹/L'nin ALTINDA** ise **SLL** terimi kullanılır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Epidemiyoloji ve Risk Faktörleri",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Sıklık ★",
+            "Batı toplumlarında ERİŞKİNDE EN SIK lösemi tipi; erişkin matür lösemi/lenfomalarının %25-35'i. Asya popülasyonlarında OLDUKÇA NADİR"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yaş/Cinsiyet",
+            "Medyan tanı yaşı 70-73; vakaların >%70'i ≥65 yaş. Erkek:kadın ~1.9-2:1"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ailesel Risk ★",
+            "1. derece akrabada KLL öyküsü riski 6-12 kat artırır; ailesel vakalarda tanı yaşı sporadik vakalara göre genellikle 10 yıl DAHA ERKEN"
+          ]
+        },
+        {
+          "hucreler": [
+            "Çevresel Faktör",
+            "Net kanıtlanmış kimyasal/çevresel risk faktörü yok; ABD Vietnam gazilerinde Agent Orange maruziyeti ile olası ilişki tanımlanmıştır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Prekürsör Evre ★",
+            "TÜM KLL olguları, öncesinde asemptomatik monoklonal B-hücreli lenfositoz (MBL) aşamasından geçerek gelişir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patobiyoloji ve Hücresel Köken",
+      "satirlar": [
+        {
+          "metin": "KLL hücreleri morfolojik olarak normal matür lenfositlere benzese de, gelişimi duraklamış, **antijenle karşılaşmış (antigen-experienced)** aktif B hücrelerinden köken alır. B-hücre reseptörünün (BCR) antijenden bağımsız (otonik) veya antijen bağımlı SÜREKLİ aktivasyonu, sağ kalım/büyüme/proliferasyon sinyallerini tetikleyerek patogenezde MERKEZİ rol oynar."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "IGHV Mutasyon Durumu — Prognostik Önemi",
+      "kolonlar": [
+        "Durum",
+        "Hücresel Köken",
+        "Klinik Seyir"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Mutated IGHV (Somatik Hipermutasyon +) ★",
+            "Post-germinal merkez B hücresi benzeri; dar antijen özgüllüğü (anerjik)",
+            "BCR sinyali ZAYIF → daha İNDOLENT seyir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Unmutated IGHV ★",
+            "Pre-germinal merkez B hücresi özellikleri; POLİREAKTİF",
+            "BCR sinyali SÜREKLİ ve GÜÇLÜ → daha hızlı klon büyümesi, daha AGRESİF seyir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Apoptoz ve Mikroçevre Bağımlılığı: 13q14 delesyonunda kaybedilen miR15 ve miR16 mikroRNA'larının kaybı → anti-apoptotik BCL-2 geninin AŞIRI EKSPRESYONU → hücreler apoptoza gidemez. Ayrıca KLL hücrelerinin sağ kalımı, lenf nodu/kemik iliğindeki tümör mikroçevresinde bulunan T hücreleri, foliküler dendritik hücreler ve 'nurse-like hücreler' (monosit kökenli makrofajlar) ile çift yönlü etkileşime ve kemokin/sitokin sinyallerine İLERİ DERECEDE BAĞIMLIDIR."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Prezentasyon",
+      "satirlar": [
+        {
+          "metin": "Hastaların ~%80'i tanı anında ASEMPTOMATİKTİR; hastalık sıklıkla rutin tam kan sayımında izole lenfositoz saptanmasıyla fark edilir. Semptomatik ilerlemede: boyun/aksilla/kasıkta ağrısız, zaman zaman büyüyüp küçülen LAP; splenomegali + erken doyma/karın ağrısı. Ek olarak açıklanamayan kilo kaybı, 2 haftadan uzun ateş, yorgunluk, gece terlemesi (B semptomları) görülebilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "İmmün Komplikasyonlar ★: Kantitatif/kalitatif immün yetmezlik (özellikle hipogammaglobulinemi) → yaşamı tehdit eden sinopulmoner/diğer enfeksiyon riski belirgin artar. İmmün disregülasyona bağlı paraneoplastik otoimmün komplikasyonlar sık: otoimmün hemolitik anemi (AİHA), immün trombositopeni (İTP), nadiren saf kırmızı hücre aplazisi (PRCA). İmmünsüpresyon + KLL biyolojisi nedeniyle malign melanom ve non-melanom cilt kanserleri başta olmak üzere İKİNCİL SOLİD TÜMÖR riski belirgin artmıştır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Morfoloji ve Tanı Kriterleri",
+      "kolonlar": [
+        "Bulgu",
+        "Detay"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Tanı Eşiği ★",
+            "Periferik kanda EN AZ 3 AY süreyle >5×10⁹/L (5000/µL) monoklonal B lenfosit varlığı ŞARTTIR"
+          ]
+        },
+        {
+          "hucreler": [
+            "Periferik Yayma",
+            "Normal boyutta ama dar sitoplazma, kaba/sıkı kromatin ('futbol topu'/snickerdoodle paterni), seçilemeyen nükleol"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Smudge (Ezik) Hücreler ★",
+            "KLL hücreleri mekanik strese dayanıksızdır (kırılgan); yayma hazırlanırken parçalanan hücreler = KLL için OLDUKÇA KARAKTERİSTİK bulgu"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Prolenfosit Oranı — B-PLL Ayrımı ★",
+            "Prolenfositler (belirgin nükleollü, iri, geniş sitoplazmalı) normalde AZ (<%10) bulunur. Oran >%55 ise DIŞLAMA KRİTERİDİR → B-hücreli prolenfositik lösemi (B-PLL) düşünülür"
+          ]
+        },
+        {
+          "hucreler": [
+            "Doku (Lenf Nodu) Bulgusu",
+            "Monomorfik lenfositik zeminde 'proliferasyon merkezleri' (psödofoliküller) — PATOGNOMONİK morfolojik özellik"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İmmünofenotip",
+      "kolonlar": [
+        "Belirteç",
+        "Sonuç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "CD19, CD20, CD23 + CD5 ★",
+            "Matür B hücre belirteçleri (CD19/20/23) POZİTİF + aberran pan-T hücre belirteci CD5 KO-EKSPRESYONU — KLL'nin imzası"
+          ]
+        },
+        {
+          "hucreler": [
+            "CD20 / Yüzey Ig (sIg)",
+            "'Dim' (ZAYIF) eksprese edilir — normal B hücrelerinden farkı"
+          ]
+        },
+        {
+          "hucreler": [
+            "CD43, CD200, LEF1",
+            "Genelde POZİTİF"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "CD10, FMC7, Siklin D1",
+            "NEGATİF"
+          ]
+        },
+        {
+          "hucreler": [
+            "Klonalite Kanıtı",
+            "Akım sitometride kappa veya lambda hafif zincir KISITLILIĞI gösterilmelidir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ayırıcı Tanı — Mantle Hücreli Lenfoma (MCL)",
+      "kolonlar": [
+        "Özellik",
+        "KLL",
+        "MCL"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "CD20 / sIg Yoğunluğu",
+            "Dim (zayıf)",
+            "Parlak (bright)"
+          ]
+        },
+        {
+          "hucreler": [
+            "CD23",
+            "Pozitif",
+            "Negatif"
+          ]
+        },
+        {
+          "hucreler": [
+            "CD200",
+            "Pozitif",
+            "Negatif"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Siklin D1 / SOX11 ★",
+            "Negatif",
+            "POZİTİF — t(11;14) translokasyonuna bağlı, patognomonik"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kemik İliği Biyopsisi",
+      "satirlar": [
+        {
+          "metin": "Rutin olarak tanı koymak için ZORUNLU değildir, ancak sitopenilerin nedenini (infiltrasyon vs otoimmün) aydınlatmada kullanılır. İnfiltrasyon paterni: nodüler, interstisyel veya — genellikle EN KÖTÜ prognozla ilişkili — **DİFÜZ** patern şeklinde olabilir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — KLL 8 Altın Kural: (1) KLL vs SLL ayrımı: kan/İK ağırlıklı + periferik klonal B ≥5×10⁹/L = KLL; lenf nodu ağırlıklı + <5×10⁹/L = SLL. (2) Tüm KLL, MBL prekürsör evresinden geçer. (3) Unmutated IGHV = güçlü/sürekli BCR sinyali = agresif; Mutated IGHV = zayıf sinyal = indolent (ters gibi görünse de doğru sıralama budur). (4) 13q14 del → miR15/16 kaybı → BCL-2 aşırı ekspresyonu → apoptoz kaçışı. (5) Smudge hücreler + 'futbol topu' kromatin karakteristik periferik yayma bulgusu. (6) Prolenfosit >%55 = B-PLL'ye kayar, dışlama kriteri. (7) İmmünofenotip: CD5+CD19+CD20(dim)+CD23+CD200+ / CD10-FMC7-SiklinD1- — MCL'den (CD23-, CD200-, SiklinD1+/SOX11+ t(11;14)) bu şekilde ayrılır. (8) AİHA/İTP/PRCA gibi otoimmün sitopeniler ve ikincil solid tümör (özellikle cilt kanseri) riski artmıştır."
+    }
+  ]
+}

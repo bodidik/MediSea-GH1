@@ -57,6 +57,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "pankreas-hastaliklari",
+      "baslik": "Pankreas Hastalıkları",
+      "aciklama": "Pankreas kanseri ve ekzokrin pankreas hastalıkları",
+      "emoji": "🥞",
+      "konular": [
+        {
+          "id": "pankreas-kanseri",
+          "baslik": "Pankreas Kanseri (PDAC)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }
