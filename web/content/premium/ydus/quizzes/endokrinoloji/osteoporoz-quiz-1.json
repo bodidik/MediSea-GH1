@@ -1,0 +1,308 @@
+{
+  "id": "quiz-endokrin-osteoporoz-001",
+  "baslik": "Osteoporoz — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "osteoporoz",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "68 yaşında postmenopozal kadın, düşük enerjili bir düşme sonrası vertebral kompresyon kırığı ile başvuruyor. DXA'da lomber omurga T-skoru -1.8 (osteopeni sınırında) olarak ölçülüyor. Klinisyen, bu hastada osteoporoz tanısını değerlendiriyor.",
+      "secenekler": {
+        "A": "Bu hastada osteoporoz tanısı KMY değerinden bağımsız olarak konulabilir; düşük enerjili travma sonucu meydana gelen frajilite kırığı (bu vakada vertebral kırık) varlığı tek başına klinik osteoporoz tanısı için yeterlidir.",
+        "B": "T-skoru -1.8 osteopeni sınırında olduğundan, bu hastada osteoporoz tanısı konulamaz; T-skoru ≤-2.5 olmadan tanı kesinleşemez.",
+        "C": "Vertebral kırık varlığı, osteoporoz tanısından bağımsız bir bulgudur ve DXA sonucunu geçersiz kılmaz.",
+        "D": "Bu hastada tanı için Z-skoru kullanılmalıdır, T-skoru değil.",
+        "E": "Frajilite kırığı yalnızca kalça kırığında osteoporoz tanısı için geçerlidir, vertebral kırıklarda geçerli değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Osteoporoz; KMY değerinden BAĞIMSIZ olarak, düşük enerjili travma sonucu meydana gelen frajilite kırığı (kalça, vertebra, proksimal humerus, distal radius) varlığında da klinik olarak teşhis edilir. Bu hastadaki vertebral kırık, T-skoru -2.5 eşiğinin altında olmasa dahi tanı koydurur.",
+      "aciklama_detay": "DSÖ kriterlerine göre osteoporoz, DXA ile ölçülen kemik mineral yoğunluğunun (KMY) genç erişkin referans popülasyon ortalamasının 2.5 standart sapma (SD) ve daha altında olması (T-skoru ≤ -2.5) olarak tanımlanır. Bununla birlikte osteoporoz; KMY değerinden bağımsız olarak, düşük enerjili bir travma sonucu meydana gelen frajilite kırığı (kalça, vertebra, proksimal humerus, distal radız) varlığında da klinik olarak teşhis edilerek tedavi gerektirir. Bu hastada T-skoru -1.8 olup DSÖ'nün KMY-bazlı eşiğinin (≤-2.5) üzerindedir (yani DXA kriterine göre osteopeni sınırındadır), ancak vertebral kompresyon kırığı düşük enerjili bir travma (basit düşme) sonucu geliştiğinden, bu tek başına klinik osteoporoz tanısı koydurmak için yeterlidir. Bu, klinik pratikte önemli bir kavramdır: KMY ölçümü kırık riskinin YALNIZCA bir bileşenidir; kemik kalitesi/mikromimarisi gibi DXA'nın tam olarak yakalayamadığı faktörler de kırık direncini etkiler. Bu nedenle, DXA T-skoru henüz osteoporoz eşiğine ulaşmamış olsa dahi, gerçekleşen bir frajilite kırığı, kemiğin klinik olarak yetersiz güçte olduğunu KANITLAR ve hasta tedavi gerektiren osteoporotik olarak sınıflandırılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Frajilite kırığı (vertebra dahil), KMY değerinden bağımsız olarak klinik osteoporoz tanısı koydurur.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'KMY değerinden BAĞIMSIZ olarak... frajilite kırığı varlığında da klinik olarak teşhis edilir' belirtilmiştir; T-skoru ≤-2.5 şart değildir.",
+        "C": "YANLIS — Vertebral kırık varlığı DXA sonucunu geçersiz kılmaz, ancak KMY'den BAĞIMSIZ bir tanı yolu sağlar; DXA sonucu ile birlikte değerlendirilir, birbirini dışlamazlar.",
+        "D": "YANLIS — Bu hasta postmenopozal (50 yaş üstü) bir kadındır; bu grupta tanı için T-SKORU kullanılır, Z-skoru premenopozal kadınlar/50 yaş altı erkekler için ayrılmıştır.",
+        "E": "YANLIS — Metinde açıkça frajilite kırığı örnekleri arasında 'kalça, vertebra, proksimal humerus, distal radius' sayılmıştır; vertebral kırıklar da geçerli bir frajilite kırığı tipidir."
+      },
+      "etiketler": [
+        "Osteoporoz Tanısı",
+        "Frajilite Kırığı",
+        "DXA",
+        "T-skoru",
+        "Vertebral Kırık"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "WHO Criteria for Osteoporosis; NOF Clinician's Guide 2022"
+    },
+    {
+      "id": "s2",
+      "metin": "32 yaşında premenopozal kadın, tekrarlayan stres kırıkları nedeniyle DXA ile değerlendiriliyor. Lomber omurga Z-skoru -2.3 olarak ölçülüyor, ancak hastanın bilinen bir sekonder osteoporoz nedeni veya frajilite kırığı öyküsü yok.",
+      "secenekler": {
+        "A": "Bu hastada osteoporoz tanısı SADECE DXA ile konulamaz; Z-skoru -2.0 ve altı olsa dahi, mutlaka frajilite kırığı öyküsü veya bilinen bir sekonder nedenin varlığının da aranması gerekir — bu hastada bu ek kriterler eksik olduğundan tanı kesin değildir, ileri araştırma gereklidir.",
+        "B": "Z-skoru -2.3 olması tek başına, ek kriterlere gerek kalmaksızın, bu premenopozal hastada kesin osteoporoz tanısı koydurur.",
+        "C": "Premenopozal kadınlarda DXA tanısı için T-skoru kullanılmalıdır, Z-skoru bu yaş grubunda kullanılmaz.",
+        "D": "Bu hastada Z-skorunun -2.0'ın altında olması klinik olarak anlamsızdır, hiçbir ek değerlendirme gerektirmez.",
+        "E": "Premenopozal kadınlarda osteoporoz tanısı hiçbir zaman konulamaz, bu yaş grubu tanı kriterleri dışındadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Premenopozal kadınlarda tanı SADECE DXA ile konulamaz; Z-skoru ≤-2.0'a EK OLARAK frajilite kırığı öyküsü veya bilinen sekonder neden aranmalıdır. Bu hastada Z-skoru düşük olsa da eşlik eden kriter (kırık öyküsü/sekonder neden) belirtilmediğinden tanı için ileri araştırma (sekonder neden taraması) gereklidir.",
+      "aciklama_detay": "Postmenopozal kadınlarda ve 50 yaş üzeri erkeklerde osteoporoz tanısı için T-skoru kullanılır. Premenopozal kadınlarda ve 50 yaş altı erkeklerde ise tanı sadece DXA ile konulamaz; yaşa göre uyarlanmış Z-skoruna (-2.0 ve altı) ek olarak mutlaka frajilite kırığı öyküsü veya bilinen bir sekonder nedenin varlığı aranmalıdır. Bu ayrımın klinik mantığı önemlidir: genç bireylerde düşük KMY, yaşlanmaya bağlı progresif kemik kaybından ziyade genellikle SEKONDER bir nedene (endokrin bozukluk, malabsorpsiyon, ilaç kullanımı, genetik durum) işaret eder, bu nedenle Z-skoru düşüklüğü TEK BAŞINA osteoporoz tanısı için yeterli kabul edilmez — altta yatan nedenin araştırılması ve/veya bir frajilite kırığının varlığının doğrulanması gerekir. Bu hastada Z-skoru -2.3 (eşiğin altında) olsa da, senaryoda açıkça belirtilen sekonder neden veya frajilite kırığı öyküsünün EKSİK olması (yalnızca 'tekrarlayan stres kırıkları' belirtilmiş, bunlar düşük enerjili frajilite kırığı tanımına tam uymayabilir), bu hastada tanının kesinleşmediğini, sekonder nedenler için ileri laboratuvar/klinik araştırma gerektiğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Premenopozal kadında tanı için Z-skoru ≤-2.0 YETMEZ; ek olarak frajilite kırığı öyküsü veya sekonder neden gereklidir, bu hastada eksik.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'tanı SADECE DXA ile konulamaz' belirtilmiştir; Z-skoru tek başına yeterli değildir, ek kriter (kırık/sekonder neden) şarttır.",
+        "C": "YANLIS — Premenopozal kadınlarda (ve 50 yaş altı erkeklerde) T-SKORU DEĞİL, yaşa göre uyarlanmış Z-SKORU kullanılır; bu, T-skorunun postmenopozal/50+ erkek grubuna özgü olmasının doğal sonucudur.",
+        "D": "YANLIS — Z-skorunun -2.0 altında olması KLİNİK OLARAK ANLAMLIDIR ve ileri değerlendirme (sekonder neden taraması, kırık öyküsü sorgulaması) gerektirir; anlamsız değildir.",
+        "E": "YANLIS — Premenopozal kadınlarda osteoporoz tanısı KONULABİLİR, ancak farklı kriterler (Z-skoru+ek bulgu) gerektirir; bu yaş grubu tanı kriterlerinin tamamen dışında değildir."
+      },
+      "etiketler": [
+        "Z-skoru",
+        "Premenopozal Osteoporoz",
+        "Genç Erişkin Tanı Kriterleri",
+        "Sekonder Osteoporoz",
+        "DXA Yorumlama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ISCD Official Positions 2023; Ferrari et al. J Clin Densitom 2019"
+    },
+    {
+      "id": "s3",
+      "metin": "62 yaşında postmenopozal kadında DXA'da femur boynu T-skoru -1.6 (osteopeni) saptanıyor. FRAX hesaplamasında 10 yıllık kalça kırığı riski %3.5, majör osteoporotik kırık riski %18 olarak bulunuyor. Klinisyen, farmakolojik tedavi kararını FRAX eşiklerine göre veriyor.",
+      "secenekler": {
+        "A": "Bu hastada 10 yıllık kalça kırığı riski (%3.5) ≥%3 eşiğini aştığından, farmakolojik tedavi endikasyonu mevcuttur — majör kırık riski (%18) %20 eşiğinin altında kalsa dahi, İKİ kriterden BİRİNİN karşılanması yeterlidir.",
+        "B": "Bu hastada tedavi endikasyonu yoktur çünkü majör osteoporotik kırık riski %20 eşiğinin altındadır ve her iki kriterin de karşılanması gerekir.",
+        "C": "FRAX skorlaması yalnızca T-skoru ≤-2.5 olan hastalarda kullanılabilir, bu osteopenik hastada uygulanamaz.",
+        "D": "Kalça kırığı riski eşiği ≥%10'dur, bu hastadaki %3.5 değeri tedavi endikasyonu oluşturmaz.",
+        "E": "FRAX sonucu, DXA T-skorundan bağımsız olarak hesaplanır ve femur boynu KMY'sini hiçbir şekilde kullanmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "FRAX eşikleri OSTEOPENİK hastalarda (T-skoru -1.0 ile -2.5 arası) tedavi kararı için kullanılır: kalça kırığı riski ≥%3 VEYA majör osteoporotik kırık riski ≥%20 — İKİSİNDEN BİRİNİN karşılanması yeterlidir. Bu hastada kalça kırığı riski (%3.5) eşiği aştığından tedavi endikedir.",
+      "aciklama_detay": "KMY'de T-skoru -1.0 ile -2.5 (osteopeni) arasında olan hastalarda, 10 yıllık kalça kırığı riskinin ≥%3 veya majör osteoporotik kırık riskinin ≥%20 olması farmakolojik tedavi endikasyonu yaratır. Bu iki eşik değeri 'VEYA' bağlacıyla bağlanmıştır, yani İKİ KRİTERDEN HERHANGİ BİRİNİN karşılanması tedavi başlatmak için yeterlidir — her ikisinin birden karşılanması ŞART DEĞİLDİR. Bu hastada: kalça kırığı riski %3.5 (≥%3 eşiğini AŞMIŞ) VE majör osteoporotik kırık riski %18 (%20 eşiğinin ALTINDA kalmış). Kalça kırığı kriterinin karşılanması TEK BAŞINA tedavi endikasyonu için yeterlidir, majör kırık kriterinin karşılanmamış olması bu kararı değiştirmez. FRAX aracı, osteopenik (henüz DSÖ'nün T≤-2.5 eşiğine ulaşmamış) hastalarda özellikle değerlidir çünkü bu grup, KMY tek başına değerlendirildiğinde tedavi kararı net olmayan, ancak diğer klinik risk faktörleri (yaş, kırık öyküsü, glukokortikoid kullanımı vb.) nedeniyle gerçek kırık riski yüksek olabilecek büyük bir popülasyonu temsil eder — FRAX bu klinik faktörleri KMY ile entegre ederek daha isabetli bir risk tahmini ve tedavi kararı sağlar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kalça kırığı riski ≥%3 (bu hastada %3.5) TEK BAŞINA tedavi endikasyonu için yeterlidir; iki kriterin ikisinin de karşılanması şart değildir.",
+        "B": "YANLIS — Eşikler 'VEYA' ile bağlıdır, 'VE' değil; kalça kırığı kriteri karşılandığından majör kırık kriterinin karşılanmamış olması tedavi kararını DEĞİŞTİRMEZ.",
+        "C": "YANLIS — FRAX, metinde açıkça OSTEOPENİK hastalarda (T-skoru -1.0 ile -2.5 arası) tedavi kararı vermek için kullanılan bir araç olarak tanımlanmıştır; T≤-2.5 olan hastalarla sınırlı değildir.",
+        "D": "YANLIS — Metinde açıkça kalça kırığı riski eşiği ≥%3 olarak belirtilmiştir, ≥%10 değil; bu hastadaki %3.5 değeri gerçekte bu (doğru) eşiği aşmaktadır.",
+        "E": "YANLIS — Metinde açıkça FRAX'ın 'hastanın klinik risk faktörleri VE FEMUR BOYNU KMY'sini entegre ederek' hesaplandığı belirtilmiştir; femur boynu KMY'si hesaplamanın bir GİRDİSİDİR, göz ardı edilmez."
+      },
+      "etiketler": [
+        "FRAX",
+        "Osteopeni",
+        "Tedavi Eşiği",
+        "Kalça Kırığı Riski",
+        "Majör Osteoporotik Kırık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kanis et al. Osteoporos Int 2008 (FRAX); NOF Clinician's Guide 2022"
+    },
+    {
+      "id": "s4",
+      "metin": "Kreatinin klirensi 25 mL/dk olan ileri evre KBH'li bir osteoporoz hastasında farmakoterapi planlanıyor. Klinisyen, bu düşük GFR düzeyinde hangi ajanın nefrotoksisite riski nedeniyle uygun olmadığını değerlendiriyor.",
+      "secenekler": {
+        "A": "Bisfosfonatlar, kreatinin klirensi <30-35 mL/dk olan KBH hastalarında nefrotoksisite riski nedeniyle rutin kullanımda kontrendikedir; bu hastada bisfosfonat yerine böbrekten elimine edilmeyen denosumab (hipokalsemi riskinin sıkı takibiyle) düşünülebilir.",
+        "B": "Bisfosfonatlar böbrek fonksiyonundan tamamen bağımsız çalışır, KBH evresinden bağımsız her hastada güvenle kullanılabilir.",
+        "C": "Denosumab, böbrekten elimine edildiği için ileri evre KBH hastalarında bisfosfonatlardan daha risklidir.",
+        "D": "Bu GFR düzeyinde (25 mL/dk) hiçbir farmakolojik ajan güvenle kullanılamaz, tüm tedaviler kontrendikedir.",
+        "E": "Kreatinin klirensi 25 mL/dk düzeyi, bisfosfonat kullanımı için herhangi bir kısıtlama oluşturmaz; kontrendikasyon eşiği <10 mL/dk'dır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bisfosfonatlar KrCl <30-35 mL/dk'da nefrotoksisite riski nedeniyle KONTRENDİKEDİR (bu hastada KrCl=25, eşiğin altında). Denosumab böbrekten elimine edilmediğinden ileri KBH'de (Evre 4-5) doz ayarlamadan kullanılabilir, ancak hipokalsemi riski sıkı takip gerektirir.",
+      "aciklama_detay": "Bisfosfonatlar: Kreatinin klirensi <30-35 mL/dk olan KBH hastalarında nefrotoksisite riski sebebiyle rutin kullanımları kontrendikedir. Bu hastada kreatinin klirensi 25 mL/dk olup bu eşiğin (30-35 mL/dk) belirgin altındadır, bu nedenle bisfosfonat kullanımı KONTRENDİKEDİR. Alternatif olarak Denosumab: Böbreklerden elimine edilmediği için ilerlemiş böbrek yetmezliği olanlarda da (Evre 4-5) doz ayarlanmaksızın kullanılabilir, ancak kalsiyum ve D vitamini replasmanı titizlikle yapılarak hipokalsemi riski engellenmelidir. Bu farkın patofizyolojik temeli önemlidir: bisfosfonatlar böbrekler yoluyla değişmeden atıldığından, düşük GFR'de ilacın kemik ve dolaşımdaki birikimi artar, bu da nefrotoksisiteyi (özellikle İV formlarda akut tübüler nekroz riskini) artırabilir. Denosumab ise bir monoklonal antikor olarak retiküloendotelyal sistem (RES) yoluyla metabolize edilir, böbrek fonksiyonundan bağımsız bir eliminasyon yoluna sahiptir — bu nedenle böbrek yetmezliğinde doz ayarlaması gerekmez. Ancak denosumabın KBH-MKB (mineral ve kemik bozuklukları) zemininde ciddi hipokalsemiye yol açma riski (özellikle sekonder hiperparatiroidizm düzeltilmemişse) nedeniyle, bu hastalarda kalsiyum/D vitamini düzeylerinin çok sıkı izlenmesi gerekir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bisfosfonat KrCl<30-35'te kontrendike (bu hastada 25<30); denosumab böbrekten bağımsız, hipokalsemi takibiyle kullanılabilir.",
+        "B": "YANLIS — Tam tersine, metinde açıkça bisfosfonatların KrCl<30-35 mL/dk'da 'nefrotoksisite riski sebebiyle rutin kullanımları KONTRENDİKEDİR' belirtilmiştir; böbrek fonksiyonundan bağımsız değildir.",
+        "C": "YANLIS — Tam tersine, denosumab metinde açıkça 'böbreklerden elimine EDİLMEDİĞİ' için ileri KBH'de doz ayarlamadan kullanılabilen bir ajan olarak tanımlanmıştır; bisfosfonatlardan daha güvenli bir renal profile sahiptir (hipokalsemi riski hariç).",
+        "D": "YANLIS — Denosumab, hipokalsemi riskinin sıkı takibiyle bu GFR düzeyinde bir SEÇENEK olarak sunulmuştur; tüm tedaviler kontrendike değildir.",
+        "E": "YANLIS — Metinde açıkça eşik <30-35 mL/dk olarak belirtilmiştir, <10 mL/dk değil; bu hastadaki 25 mL/dk zaten bu (doğru) eşiğin altındadır ve kontrendikasyon oluşturur."
+      },
+      "etiketler": [
+        "Bisfosfonat Kontrendikasyonu",
+        "Denosumab",
+        "KBH ve Osteoporoz",
+        "Nefrotoksisite",
+        "Kreatinin Klirensi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO CKD-MBD Guideline 2017; Miller PD. Curr Osteoporos Rep 2014"
+    },
+    {
+      "id": "s5",
+      "metin": "Beş yıldır denosumab (6 ayda bir 60 mg SC) kullanan bir osteoporoz hastası, kişisel tercihi nedeniyle tedaviyi bırakmak istiyor. Klinisyen, bu kararın olası riskleri ve gerekli önlemleri hasta ile tartışıyor.",
+      "secenekler": {
+        "A": "Denosumab tedavisinin bırakılmasıyla kemik döngüsü hızla aktive olur, KMY'de dramatik kayıp ve multipl 'rebound' vertebral kompresyon kırığı riski ortaya çıkar; bu nedenle denosumab kesildiğinde muhakkak bir bisfosfonat ile geçiş stratejisi (exit strategy) planlanmalıdır.",
+        "B": "Denosumab, bisfosfonatların aksine bırakıldığında hiçbir rebound etkisi göstermez, güvenle herhangi bir geçiş tedavisi olmadan kesilebilir.",
+        "C": "Denosumab kesildiğinde exit strategy olarak yalnızca kalsiyum ve D vitamini takviyesi yeterlidir, ek bir antirezorptif gerekmez.",
+        "D": "Rebound kemik kaybı yalnızca denosumab 1 yıldan kısa süre kullanıldığında görülür, 5 yıllık kullanım sonrası bu risk ortadan kalkar.",
+        "E": "Denosumab kesildiğinde exit strategy olarak bir anabolik ajan (teriparatid) başlanması, bisfosfonattan daha etkili bir korunma sağlar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Denosumab kesildiğinde kemik döngüsü HIZLA aktive olur, KMY'de dramatik kayıp ve multipl rebound vertebral kırık riski oluşur — kullanım süresinden bağımsız olarak. Kesim sırasında MUHAKKAK bir bisfosfonat exit strategy (örn. zoledronik asit infüzyonu) planlanmalıdır.",
+      "aciklama_detay": "Rebound Kemik Kaybı: Denosumab tedavisinin bırakılmasıyla birlikte kemik döngüsü hızla aktive olur, KMY'de dramatik kayıp ve multipl 'rebound' vertebral kompresyon kırığı gelişimi riski ortaya çıkar. Bu sebeple, denosumab kesildiğinde muhakkak bisfosfonat gibi güçlü bir antirezortif ajan ile geçiş stratejisi ('exit strategy' - örn. zoledronik asit infüzyonu) planlanmalıdır. Bu fenomenin mekanizması, denosumabın etki şeklinden kaynaklanır: denosumab, RANKL'yi SÜREKLİ nötralize ederek osteoklastogenezi baskılar; ancak bu etki, bisfosfonatların aksine kemik matriksine KALICI OLARAK bağlanmaz (bisfosfonatlar kemikte yıllarca kalıcı rezervuar oluşturur) — denosumabın etkisi ilaç dolaşımdan temizlendiğinde (yaklaşık 6 ay sonra) HIZLA sona erer. Bu ani 'fren boşalması', önceden baskılanmış olan çok sayıda osteoklast öncüsünün SENKRONİZE şekilde aktive olmasına yol açar, bu da normalden çok daha hızlı ve şiddetli bir kemik rezorpsiyon dalgası (rebound) yaratır. Bu risk, denosumab kullanım süresinden (1 yıl veya 5 yıl fark etmeksizin) BAĞIMSIZ olarak her kesim durumunda mevcuttur, bu nedenle exit strategy HER ZAMAN planlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Denosumab kesilince rebound kemik kaybı/vertebral kırık riski oluşur; mutlaka bisfosfonat exit strategy gereklidir.",
+        "B": "YANLIS — Tam tersine, denosumab BİSFOSFONATLARIN AKSİNE (kemikte kalıcı rezervuar oluşturmadığından) kesildiğinde ÖNEMLİ bir rebound etki gösterir; geçiş tedavisi olmadan kesilmesi risklidir.",
+        "C": "YANLIS — Exit strategy olarak metinde açıkça 'bisfosfonat GİBİ GÜÇLÜ BİR ANTİREZORPTİF AJAN' gerektiği belirtilmiştir; yalnızca kalsiyum/D vitamini yeterli değildir, rebound rezorpsiyonu durduramaz.",
+        "D": "YANLIS — Rebound riski kullanım süresinden bağımsızdır; metinde süre ile ilgili bir istisna belirtilmemiştir, 5 yıllık kullanım sonrası da risk devam eder.",
+        "E": "YANLIS — Exit strategy için önerilen ajan bir ANTİREZORPTİF (bisfosfonat)'tir, ANABOLİK bir ajan değil; anabolik ajanların güçlü antirezorptiflerden (denosumab) sonra kullanılması ayrı bir bağlamda (kemik kaybına yol açabileceği için) KAÇINILMASI gereken bir dizilim olarak tanımlanmıştır."
+      },
+      "etiketler": [
+        "Denosumab",
+        "Rebound Kemik Kaybı",
+        "Exit Strategy",
+        "RANKL İnhibisyonu",
+        "Vertebral Kırık Riski"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cummings et al. J Bone Miner Res 2018 (Denosumab Discontinuation); Tsourdi et al. J Clin Endocrinol Metab 2021"
+    },
+    {
+      "id": "s6",
+      "metin": "Çok yüksek kırık riski taşıyan (T-skoru -3.8, çoklu vertebral kırık öyküsü) bir hastada teriparatid tedavisi 24 aylık maksimum süre boyunca uygulanıyor. Tedavi sonlandırılırken klinisyen bir sonraki adımı planlıyor.",
+      "secenekler": {
+        "A": "Anabolik ajanın (teriparatid) kullanım süresi dolduğunda, kemik yapımındaki kazanımların korunabilmesi için tedavinin derhal bir antirezorptif ajan (bisfosfonat veya denosumab) ile desteklenmesi (ardışık tedavi) zorunludur.",
+        "B": "Teriparatid tedavisi sonlandırıldıktan sonra herhangi bir ek tedaviye gerek yoktur, kazanımlar kalıcıdır.",
+        "C": "Teriparatid sonrası bir başka anabolik ajan (örn. romosozumab) ile devam edilmesi, antirezorptif tedaviden daha uygun bir stratejidir.",
+        "D": "Ardışık tedavi yalnızca romosozumab sonrası gereklidir, teriparatid sonrası gerekli değildir.",
+        "E": "Teriparatid sonrası antirezorptif başlanması, kemik yapımı kazanımlarını tersine çevireceğinden önerilmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anabolik ajan (teriparatid) süresi dolduğunda, kazanımların korunması için DERHAL bir antirezorptif ajan (bisfosfonat veya denosumab) ile ardışık tedavi ZORUNLUDUR. Anabolik tedavi sonrası boşluk bırakmak, kazanılan kemik kütlesinin hızla kaybedilmesine yol açar.",
+      "aciklama_detay": "Ardışık Tedavi: Anabolik ajanların kullanım süresi dolduğunda, kemik yapımındaki kazanımların korunabilmesi için tedavinin derhal bir antirezorptif ajan (bisfosfonat veya denosumab) ile desteklenmesi ('ardışık tedavi') zorunludur. Bu stratejinin mantığı şudur: teriparatid/abaloparatid gibi anabolik ajanlar, sınırlı süreleri (18-24 ay) boyunca osteoblast aktivitesini uyararak YENİ kemik oluşumunu tetikler ve KMY'de belirgin artış sağlar. Ancak bu yeni oluşan kemik dokusu, eğer takip eden bir antirezorptif tedavi ile 'kilitlenip' korunmazsa, normal kemik remodeling süreci (osteoklastik rezorpsiyon) tarafından hızla geri kazanılabilir/kaybedilebilir — yani anabolik tedavinin sağladığı KMY kazanımları, ardışık antirezorptif tedavi olmadan zamanla erir. Bu nedenle, anabolik tedavi süresi dolduğunda 'tedavisiz bir boşluk' bırakmak yerine, hemen bir antirezorptif ajana (genellikle bisfosfonat veya denosumab) geçilerek kazanılan kemik kütlesinin stabilize edilmesi ve uzun vadeli korunması sağlanır. Bu, teriparatid/abaloparatid VE romosozumab için geçerli genel bir prensiptir (yalnızca birine özgü değildir) — tüm anabolik/çift etkili ajanların ardından antirezorptif tedaviye geçiş gereklidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Anabolik ajan sonrası derhal antirezorptif (bisfosfonat/denosumab) ile ardışık tedavi zorunludur, kazanımların korunması için.",
+        "B": "YANLIS — Tam tersine, ek tedavi olmadan kazanımlar KALICI DEĞİLDİR; ardışık antirezorptif tedavi olmadan kemik kaybı meydana gelebilir, bu nedenle ardışık tedavi 'zorunlu' olarak tanımlanmıştır.",
+        "C": "YANLIS — Ardışık tedavi için önerilen ajan tipi ANTİREZORPTİF (bisfosfonat/denosumab)'tir, bir başka ANABOLİK ajan değil; anabolik-anabolik ardışıklığı metinde tanımlanmamıştır.",
+        "D": "YANLIS — Ardışık tedavi ilkesi metinde GENEL olarak 'anabolik ajanlar' için tanımlanmıştır (teriparatid/abaloparatid VE romosozumab dahil); yalnızca romosozumaba özgü değildir.",
+        "E": "YANLIS — Tam tersine, antirezorptif tedavi kemik yapımı kazanımlarını TERSİNE ÇEVİRMEZ, KORUR/stabilize eder; bu nedenle önerilen ve zorunlu bir stratejidir, önerilmeyen bir yaklaşım değildir."
+      },
+      "etiketler": [
+        "Ardışık Tedavi",
+        "Teriparatid",
+        "Anabolik Ajan Sonrası",
+        "Antirezorptif Geçiş",
+        "Kemik Kazanımının Korunması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cosman et al. Osteoporos Int 2017 (Sequential Therapy); Camacho et al. AACE Guidelines 2020"
+    },
+    {
+      "id": "s7",
+      "metin": "Kırık riski çok yüksek olan bir hastada, önce güçlü bir antirezorptif ajan olan denosumab ile 2 yıl tedavi uygulanıyor. Ardından klinisyen tedaviyi teriparatid ile değiştirmeyi düşünüyor. Bir uzman, bu tedavi sıralamasının uygun olmayabileceğini belirtiyor.",
+      "secenekler": {
+        "A": "Anabolik ajanların, güçlü antirezorptiflerden (özellikle denosumab) sonra kullanılması kemik kaybına yol açabileceği için bu dizilimden (denosumab→teriparatid) kaçınılmalıdır; doğru sıralama anabolik ajanı önce, antirezorptifi sonra kullanmaktır.",
+        "B": "Denosumab sonrası teriparatid başlanması, güncel kılavuzlarda önerilen standart ve optimal ardışık tedavi sırasıdır.",
+        "C": "Tedavi sıralaması (anabolik önce mi antirezorptif önce mi) hiçbir klinik farklılık yaratmaz, KMY yanıtı her iki sırada da eşdeğerdir.",
+        "D": "Denosumab sonrası teriparatid geçişi, yalnızca hasta KBH'li ise sorunludur, diğer hastalarda güvenlidir.",
+        "E": "Bu dizilim yalnızca bisfosfonat sonrası teriparatid geçişinde sorunludur, denosumab sonrası teriparatid geçişinde herhangi bir sorun yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anabolik ajanların GÜÇLÜ antirezorptiflerden (özellikle denosumab) SONRA kullanılması kemik kaybına yol açabilir — bu dizilimden kaçınılmalıdır. Doğru sıra: ÖNCE anabolik, SONRA antirezorptif (ardışık tedavi ilkesi).",
+      "aciklama_detay": "Anabolik ajanların, güçlü antirezorptiflerden (özellikle denosumab) sonra kullanılması kemik kaybına yol açabileceği için bu dizilimden kaçınılmalıdır. Bu, ardışık tedavi ilkesinin (anabolik→antirezorptif) TERS YÖNDE uygulanmasının sorunlu olduğunu gösteren kritik bir klinik uyarıdır. Mekanizma şu şekilde açıklanabilir: denosumab gibi güçlü bir antirezorptif ajan, kemik döngüsünü (hem rezorpsiyon hem yapım) derinlemesine baskılar. Bu baskılanmış durumdayken teriparatid gibi bir anabolik ajan başlandığında, teriparatidin osteoblastik kemik yapımını uyarma etkinliği BEKLENENDEN AZ olabilir veya paradoksal olarak geçici bir kemik kaybı gözlemlenebilir — çünkü RANKL inhibisyonunun derin baskısı altındaki iskelet, anabolik uyarıya optimal şekilde yanıt veremeyebilir. Ayrıca, denosumab kesildiğinde zaten rebound kemik kaybı riski olduğundan (önceki bilgi), bu rebound sürecinin ortasında bir anabolik ajana geçiş yapmak, kemik kütlesindeki dalgalanmaları daha da karmaşıklaştırabilir. Bu nedenle doğru ve önerilen strateji, anabolik ajanı İLK basamak (veya antirezorptif tedaviye YANITSIZ olgularda kurtarma) olarak kullanıp, ardından antirezorptif ile pekiştirmektir — tersi değil.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Anabolik ajanın güçlü antirezorptiften (denosumab) sonra kullanılması kemik kaybına yol açabilir; doğru sıra anabolik→antirezorptiftir.",
+        "B": "YANLIS — Tam tersine, metinde açıkça bu dizilimden (denosumab→anabolik) 'KAÇINILMALIDIR' denilmiştir; standart/optimal sıralama DEĞİLDİR, önerilmeyen bir yaklaşımdır.",
+        "C": "YANLIS — Tedavi sıralaması KMY yanıtını ÖNEMLİ ÖLÇÜDE etkiler; metinde açıkça 'kemik kaybına yol açabileceği' belirtilmiştir, eşdeğer değildir.",
+        "D": "YANLIS — Bu sorunlu dizilim (denosumab sonrası anabolik) metinde GENEL bir uyarı olarak tanımlanmıştır, KBH varlığıyla sınırlandırılmamıştır; tüm hastalarda geçerli bir prensiptir.",
+        "E": "YANLIS — Metinde spesifik olarak 'güçlü antirezorptiflerden (ÖZELLİKLE DENOSUMAB) sonra' ifadesi kullanılmıştır; bu sorun denosumab sonrası geçişte özellikle vurgulanmıştır, bisfosfonatla sınırlı değildir."
+      },
+      "etiketler": [
+        "Tedavi Sıralaması",
+        "Denosumab-Teriparatid Geçişi",
+        "Ardışık Tedavi İlkesi",
+        "Anabolik-Antirezorptif Dizilim",
+        "Kemik Kaybı Riski"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Leder et al. Lancet 2015 (DATA-Switch); Cosman et al. J Clin Endocrinol Metab 2019"
+    },
+    {
+      "id": "s8",
+      "metin": "Romatoid artrit nedeniyle 4 aydır günde 10 mg prednizon kullanan 58 yaşında postmenopozal bir kadında osteoporoz profilaksisi planlanıyor. Hasta yüksek kırık riski taşıyor. Klinisyen, KMY'de henüz belirgin bir azalma olmamasına rağmen tedaviye başlıyor.",
+      "secenekler": {
+        "A": "Bu hasta, ≥3 ay süreyle günde ≥7.5 mg prednizon kullanan yüksek kırık riskli postmenopozal kadın kriterine uymaktadır; tedavinin özellikle ilk 3-6 ayında KMY'de belirgin azalma olmaksızın dahi kırık riski dramatik olarak arttığından, profilaktik oral bisfosfonat ilk basamak tedavi olarak başlanmalıdır.",
+        "B": "Bu hastada KMY henüz belirgin azalmadığından, profilaktik tedaviye gerek yoktur; tedavi yalnızca DXA'da anlamlı düşüş saptandığında başlanmalıdır.",
+        "C": "GIOP profilaksisi yalnızca ≥12 ay glukokortikoid kullanan hastalarda endikedir, 4 aylık kullanım bu eşiği karşılamaz.",
+        "D": "Günde 10 mg prednizon dozu, GIOP profilaksisi için gereken minimum eşiğin (≥15 mg/gün) altında kaldığından tedavi gerekmez.",
+        "E": "GIOP'ta ilk basamak tedavi anabolik bir ajan (teriparatid) olmalıdır, bisfosfonat değil."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bu hasta ≥3 ay + ≥7.5 mg/gün prednizon kriterini karşılıyor (4 ay, 10 mg/gün). GIOP'ta kırık riski, KMY'de belirgin azalma OLMAKSIZIN dahi (özellikle ilk 3-6 ayda) dramatik artar — bu nedenle KMY beklenmeden profilaktik oral bisfosfonat ilk basamak tedavi olarak başlanmalıdır.",
+      "aciklama_detay": "Glukokortikoidlerin Neden Olduğu Osteoporoz (GIOP): Sekonder osteoporozun en yaygın iyatrojenik nedenidir. Tedavinin özellikle ilk 3-6 ayında, KMY'de belirgin bir azalma olmaksızın dahi kırık riski dramatik olarak artar. ≥3 ay süreyle günde ≥7.5 mg prednizon (veya eşdeğeri) kullanan yüksek kırık riskli postmenopozal kadınlarda ve 50 yaş üstü erkeklerde profilaktik oral bisfosfonat (alendronat/risedronat) ilk basamak tedavidir. Bu hasta profili şu şekilde eşleşir: 4 aylık kullanım süresi ≥3 ay eşiğini karşılar; günde 10 mg prednizon dozu ≥7.5 mg/gün eşiğini aşar; hasta postmenopozal kadındır ve yüksek kırık riski taşıdığı belirtilmiştir. Bu kriterlerin TAMAMININ karşılanması, KMY sonucundan BAĞIMSIZ olarak profilaktik bisfosfonat başlanmasını gerektirir. Bu yaklaşımın altında yatan patofizyolojik gerekçe önemlidir: glukokortikoidler mezenkimal kök hücrelerin osteoblastlara farklılaşmasını engeller ve osteosit apoptozisini artırır — bu etkiler, KMY'de ölçülebilir bir düşüş oluşmadan ÖNCE bile kemik KALİTESİNİ (mikromimari, osteosit ağı bütünlüğü) bozarak kırık riskini artırabilir. Bu nedenle GIOP'ta tedavi kararı, DXA sonucunu beklemeden, klinik risk profiline (doz, süre, ek risk faktörleri) dayanarak verilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bu hasta ≥3 ay+≥7.5mg/gün kriterini karşılar; KMY beklenmeden profilaktik oral bisfosfonat ilk basamak tedavi olarak başlanmalıdır.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'KMY'DE BELİRGİN BİR AZALMA OLMAKSIZIN DAHİ kırık riski dramatik olarak artar' belirtilmiştir; tedavi DXA düşüşünü beklemeden başlanmalıdır.",
+        "C": "YANLIS — Eşik metinde açıkça '≥3 AY' olarak belirtilmiştir, ≥12 ay değil; bu hastanın 4 aylık kullanımı bu (doğru) eşiği zaten karşılamaktadır.",
+        "D": "YANLIS — Eşik doz metinde açıkça '≥7.5 mg/gün prednizon' olarak belirtilmiştir, ≥15 mg/gün değil; bu hastadaki 10 mg/gün zaten bu (doğru) eşiği aşmaktadır.",
+        "E": "YANLIS — GIOP'ta ilk basamak tedavi metinde açıkça 'profilaktik ORAL BİSFOSFONAT (alendronat/risedronat)' olarak tanımlanmıştır, anabolik ajan (teriparatid) değil; teriparatid çok yüksek risk/yanıtsız olgularda düşünülür."
+      },
+      "etiketler": [
+        "GIOP",
+        "Glukokortikoid Osteoporozu",
+        "Profilaktik Bisfosfonat",
+        "Prednizon Eşiği",
+        "≥7.5 mg/gün Kriteri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ACR 2017 GIOP Guideline; Buckley et al. Arthritis Care Res 2017"
+    },
+    {
+      "id": "s9",
+      "metin": "Miyokard enfarktüsü öyküsü olan, çok yüksek kırık riski taşıyan 70 yaşında bir kadın hasta için klinisyen, anabolik ve çift etkili ajanlar arasından uygun bir tedavi seçimi yapıyor.",
+      "secenekler": {
+        "A": "Romosozumab, bu hastada MI öyküsü nedeniyle kontrendikedir; kardiyovasküler olay (miyokard enfarktüsü veya inme) öyküsü olan hastalarda kullanılmamalıdır — teriparatid veya abaloparatid gibi alternatif bir anabolik ajan bu spesifik kontrendikasyona sahip değildir.",
+        "B": "Romosozumab, kardiyovasküler hastalığı olan hastalarda özellikle tercih edilen ve koruyucu etkisi olan bir ajandır.",
+        "C": "MI öyküsü, romosozumab dışındaki tüm osteoporoz ajanları için de mutlak bir kontrendikasyondur.",
+        "D": "Romosozumab kontrendikasyonu yalnızca aktif Mİ'ye sahip hastalarda geçerlidir, geçmiş öykü bu kontrendikasyonu oluşturmaz.",
+        "E": "Bu hastada kardiyovasküler risk, teriparatid kullanımını da romosozumab kadar kısıtlar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Romosozumab, kardiyovasküler olay (Mİ VEYA inme) ÖYKÜSÜ olan hastalarda kontrendikedir (aktif olayla sınırlı değil, geçmiş öykü de yeterli). Teriparatid/Abaloparatid bu spesifik kardiyovasküler kontrendikasyona sahip değildir, bu hastada alternatif olarak düşünülebilir.",
+      "aciklama_detay": "Romosozumab: Kemik formasyonunu inhibe eden sklerostin proteinine karşı geliştirilmiş monoklonal antikordur. Hem kemik yapımını güçlü bir şekilde uyarır hem de rezorpsiyonu inhibe eder (çift yönlü etki). Aylık subkütan uygulama ile sadece 12 ay kullanılır. Kardiyovasküler olay (miyokard enfarktüsü veya inme) ÖYKÜSÜ olan hastalarda kontrendikedir. Bu kontrendikasyon, romosozumab'ın klinik çalışmalarında (ARCH çalışması gibi) gözlenen artmış kardiyovasküler olay sinyali temelinde belirlenmiştir ve spesifik olarak romosozumab'a özgüdür — Teriparatid ve Abaloparatid (PTH/PTHrP analogları) için tanımlanan kontrendikasyonlar farklıdır (Paget hastalığı, kemik radyoterapisi öyküsü, açık epifizler, iskelet malignitesi — osteosarkom riski şüphesi nedeniyle), kardiyovasküler olay öyküsü bu ajanlar için belirtilmemiştir. Bu nedenle bu hastada (Mİ öyküsü + çok yüksek kırık riski), romosozumab UYGUN OLMAYAN bir seçimken, teriparatid veya abaloparatid (hastanın diğer kontrendikasyonları yoksa — Paget, kemik RT, açık epifiz, iskelet malignitesi) alternatif bir anabolik ajan olarak düşünülebilir. Bu, farklı anabolik/çift etkili ajanların BİRBİRİNDEN FARKLI güvenlik profillerine sahip olduğunu ve tedavi seçiminin hastanın spesifik komorbiditelerine göre bireyselleştirilmesi gerektiğini gösteren önemli bir klinik ayrımdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Romosozumab Mİ/inme öyküsünde kontrendikedir; teriparatid/abaloparatid bu spesifik kontrendikasyona sahip değildir, alternatif olabilir.",
+        "B": "YANLIS — Tam tersine, romosozumab kardiyovasküler olay öyküsü olan hastalarda KONTRENDİKEDİR; koruyucu bir etkisi tanımlanmamıştır, aksine risk teşkil eder.",
+        "C": "YANLIS — Mİ öyküsü kontrendikasyonu metinde SPESİFİK OLARAK ROMOSOZUMAB için tanımlanmıştır; teriparatid/abaloparatid için farklı kontrendikasyonlar (Paget, kemik RT, açık epifiz, iskelet malignitesi) belirtilmiştir, Mİ öyküsü bunlar arasında sayılmamıştır.",
+        "D": "YANLIS — Metinde kontrendikasyon 'kardiyovasküler olay ÖYKÜSÜ olan hastalarda' olarak tanımlanmıştır (geçmiş olay yeterlidir), yalnızca AKTİF Mİ ile sınırlandırılmamıştır.",
+        "E": "YANLIS — Teriparatid için tanımlanan kontrendikasyonlar arasında kardiyovasküler risk/Mİ öyküsü YOKTUR; bu kısıtlama yalnızca romosozumab'a özgüdür, teriparatidi aynı derecede kısıtlamaz."
+      },
+      "etiketler": [
+        "Romosozumab",
+        "Kardiyovasküler Kontrendikasyon",
+        "Teriparatid",
+        "Abaloparatid",
+        "Anabolik Ajan Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Saag et al. N Engl J Med 2017 (ARCH Trial); FDA Romosozumab Boxed Warning"
+    },
+    {
+      "id": "s10",
+      "metin": "Bisfosfonat tedavisi alan bir osteoporoz hastasında, tedavi başlangıcından 18 ay sonra yapılan DXA'da (aynı cihaz, aynı operatör) lomber omurga KMY'sinde cihazın LSC eşiğini (%5) aşan bir azalma saptanıyor. Hastanın ilaç uyumu sorgulanıyor ve tam olduğu doğrulanıyor.",
+      "secenekler": {
+        "A": "Bu bulgu 'tedavi başarısızlığı' olarak nitelendirilmelidir; hasta gastrointestinal emilim problemleri veya gözden kaçmış sekonder nedenler açısından taranmalı ve gerekiyorsa daha güçlü bir farmakolojik ajana (örn. oral bisfosfonattan İV forma veya anabolik bir ajana) geçiş yapılmalıdır.",
+        "B": "İlaç uyumu tam olduğundan, bu KMY düşüşü normal kabul edilmeli ve mevcut tedaviye herhangi bir değişiklik yapılmadan devam edilmelidir.",
+        "C": "LSC eşiğini aşan KMY kaybı, yalnızca farklı cihaz veya operatör kullanıldığında anlamlı kabul edilir; bu senaryoda (aynı cihaz/operatör) klinik önemi yoktur.",
+        "D": "Tedavi başarısızlığı yalnızca yeni bir frajilite kırığı oluştuğunda tanımlanır, KMY kaybı tek başına bu tanımı karşılamaz.",
+        "E": "Bu bulgu karşısında yapılması gereken tek şey kalsiyum ve D vitamini dozunu artırmaktır, ilaç değişikliği gerekmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İlaç uyumu tam olmasına rağmen LSC eşiğini (≥%5) aşan KMY kaybı 'tedavi başarısızlığı' olarak nitelendirilir. Sekonder nedenler/emilim sorunları taranmalı ve daha güçlü bir ajana (İV bisfosfonat veya anabolik) geçiş değerlendirilmelidir.",
+      "aciklama_detay": "Anlamlı kemik kütlesi kaybı (örn. cihazın 'en küçük anlamlı değişim' [LSC] eşiğinden fazla, genelde ≥%5) veya tedavi altında yeni ve birden fazla frajilite kırığı oluşması 'tedavi başarısızlığı' olarak nitelendirilmeli; hasta ilaç uyumu, gastrointestinal emilim problemleri veya gözden kaçmış sekonder nedenler açısından taranmalı ve gerekiyorsa daha güçlü bir farmakolojik ajana (örn. oral bisfosfonattan i.v. forma veya anabolik bir ajana) geçiş yapılmalıdır. Bu hastada iki KRİTER birden zaten karşılanmıştır: (1) DXA aynı cihaz/aynı operatör ile yapılmıştır (metodolojik olarak geçerli bir karşılaştırma), (2) KMY kaybı LSC eşiğini (%5) aşmıştır. Bu, ölçüm hatasından ziyade GERÇEK bir kemik kaybını yansıttığı anlamına gelir. İlaç uyumunun tam olduğu doğrulandığından, olası açıklamalar arasında (a) oral bisfosfonatın gastrointestinal emiliminin yetersiz olması (örn. ilacın yanlış zamanlamada alınması, eşlik eden gıda/ilaç etkileşimleri, çölyak hastalığı gibi malabsorpsiyon durumları), (b) gözden kaçmış bir sekonder osteoporoz nedeninin (örn. hiperparatiroidizm, hipertiroidizm, D vitamini eksikliği) varlığı bulunur. Bu nedenle klinisyenin yaklaşımı, önce bu faktörleri araştırmak, ardından tedavi rejimini güçlendirmektir (örn. oral bisfosfonat yerine İV zoledronik asit gibi emilim sorunundan etkilenmeyen bir forma geçiş, veya yanıtsızlık ciddi ise anabolik ajana geçiş).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — LSC eşiğini aşan KMY kaybı (tam uyuma rağmen) tedavi başarısızlığıdır; sekonder nedenler taranmalı ve daha güçlü ajana geçiş değerlendirilmelidir.",
+        "B": "YANLIS — Tam tersine, ilaç uyumu tam olsa dahi LSC eşiğini aşan kayıp 'TEDAVİ BAŞARISIZLIĞI' olarak nitelendirilmelidir; mevcut tedaviye değişiklik yapmadan devam etmek önerilmez.",
+        "C": "YANLIS — Bu senaryoda DXA zaten AYNI CİHAZ VE AYNI OPERATÖR ile yapılmıştır (ideal/geçerli koşul); bu nedenle ölçülen kayıp METODOLOJİK OLARAK GÜVENİLİRDİR ve klinik önemi vardır, göz ardı edilemez.",
+        "D": "YANLIS — Metinde açıkça 'ANLAMLI KEMİK KÜTLESİ KAYBI (LSC eşiğinden fazla) VEYA... yeni frajilite kırığı' ifadesiyle İKİ AYRI kriter (KMY kaybı VEYA kırık) tanımlanmıştır; KMY kaybı TEK BAŞINA yeterlidir, kırık şart değildir.",
+        "E": "YANLIS — Kalsiyum/D vitamini dozu artırımı, LSC eşiğini aşan anlamlı kemik kaybı karşısında YETERLİ bir yanıt değildir; metinde önerilen yaklaşım sekonder neden taraması VE daha güçlü ajana geçiştir."
+      },
+      "etiketler": [
+        "Tedavi Başarısızlığı",
+        "LSC Eşiği",
+        "DXA Takibi",
+        "İlaç Emilim Problemleri",
+        "Tedavi Eskalasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ISCD Official Positions 2023; Diez-Perez et al. Bone 2012 (Treatment Failure Definition)"
+    }
+  ]
+}

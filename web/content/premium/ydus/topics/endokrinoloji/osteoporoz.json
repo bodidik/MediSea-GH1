@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "id": "osteoporoz",
+    "branch": "endokrinoloji",
+    "baslik": "Osteoporoz — Kapsamlı Derleme ve Güncel Yaklaşımlar",
+    "altbaslik": "DXA/FRAX tanısal algoritması, antirezorptif/anabolik farmakoterapi, ilaç tatili, ardışık tedavi ve GIOP/KBH-MKB gibi spesifik klinik durumlar",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "Osteoporoz, kemik kütlesinde azalma, kemik dokusunun mikromimarisinin (trabeküler incelme, bağlantı kaybı, kortikal incelme ve gözeneklilik artışı) bozulması ve bunun sonucunda iskelet kırılganlığında ve kırık riskinde artışla karakterize sistemik, progresif bir metabolik kemik hastalığıdır. Klinik pratikte en önemli sonucu, düşük enerjili (frajilite) kırıklarıdır."
+        },
+        {
+          "metin": "DSÖ kriterlerine göre osteoporoz, DXA ile ölçülen kemik mineral yoğunluğunun (KMY) genç erişkin referans popülasyon ortalamasının **2.5 standart sapma (SD) ve daha altında olması (T-skoru ≤ -2.5)** olarak tanımlanır. Bununla birlikte osteoporoz; KMY değerinden BAĞIMSIZ olarak, düşük enerjili bir travma sonucu meydana gelen frajilite kırığı (kalça, vertebra, proksimal humerus, distal radius) varlığında da klinik olarak teşhis edilerek tedavi gerektirir."
+        },
+        {
+          "metin": "Dünya çapında 200 milyondan fazla insanı etkilemekte olup, 50 yaşındaki bir kadının yaşamı boyunca osteoporoza bağlı kırık geçirme riski **%39**, bir erkeğin ise **%13** civarındadır. Kalça kırıkları, ilk iki yıl içinde %12-20 arasında değişen yüksek mortalite oranları ile ilişkilidir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Etiyoloji ve Patofizyoloji",
+      "satirlar": [
+        {
+          "metin": "Kemik dokusu yaşam boyunca osteoklastlar tarafından rezorbe edilip osteoblastlar tarafından yeniden yapılarak (remodeling) sürekli yenilenir. Yaşlanma, östrojen/androjen eksikliği, inflamatuvar sitokinlerin artışı veya oksidatif stres gibi durumlarda bu denge OSTEOKLASTİK REZORPSİYON LEHİNE bozulur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Osteoporoz Etiyolojik Sınıflandırma",
+      "kolonlar": [
+        "Tip",
+        "Örnekler"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Primer — Tip I (İnvolusyonel)",
+            "Postmenopozal dönemde östrojen eksikliğine bağlı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Primer — Tip II (Senil)",
+            "Her iki cinsiyette yaşlanmaya sekonder"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Sekonder — Hastalıklar",
+            "Hipertiroidi, hiperparatiroidi, Cushing sendromu, hipogonadizm, malabsorbsiyon sendromları, kronik böbrek hastalığı"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Sekonder — İlaçlar ★",
+            "Glukokortikoidler, aromataz inhibitörleri, GnRH agonistleri, antiepileptikler, proton pompa inhibitörleri, kalsinörin inhibitörleri"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Değerlendirme, Kırık Riski ve Tanısal Yaklaşım",
+      "satirlar": [
+        {
+          "metin": "Hastalık genellikle bir frajilite kırığı oluşana kadar asemptomatiktir. Risk faktörleri: ileri yaş, düşük VKİ (<20 kg/m²), geçirilmiş kırık öyküsü, sigara, aşırı alkol tüketimi, ebeveynde kalça kırığı öyküsü, romatoid artrit ve sekonder nedenler."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "T-skoru vs Z-skoru: Postmenopozal kadınlarda ve 50 yaş üzeri erkeklerde osteoporoz tanısı için T-SKORU kullanılır (T≤-2.5). Premenopozal kadınlarda ve 50 yaş altı erkeklerde ise tanı SADECE DXA ile konulamaz; yaşa göre uyarlanmış Z-skoruna (-2.0 ve altı) EK OLARAK mutlaka frajilite kırığı öyküsü veya bilinen bir sekonder nedenin varlığı aranmalıdır. Taramalarda L1-L4 lomber omurga ve total kalça/femur boynu bölgeleri esas alınır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "FRAX — Farmakolojik Tedavi Eşikleri (Osteopenik Hastalarda)",
+      "kolonlar": [
+        "Parametre",
+        "Eşik Değer"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "10 Yıllık Kalça Kırığı Riski ★",
+            "≥%3"
+          ]
+        },
+        {
+          "hucreler": [
+            "10 Yıllık Majör Osteoporotik Kırık Riski",
+            "≥%20"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Laboratuvar İncelemeleri",
+      "satirlar": [
+        {
+          "metin": "Sekonder nedenleri dışlamak için serum kalsiyum, fosfor, 25(OH)D vitamini, intakt PTH, kreatinin (GFR tahmini), alkalen fosfataz, TSH ve tam kan sayımı temel testlerdir. Standardize edilmiş yöntemlerle serum **P1NP** (kemik yapımı) ve **CTX** (kemik yıkımı) gibi biyokimyasal döngü belirteçleri (BTM), tedavi uyumunu ve ilacın etkinliğini (özellikle 3-6. aylarda) izlemek amacıyla faydalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Nonfarmakolojik Yaklaşımlar",
+      "satirlar": [
+        {
+          "metin": "**Kalsiyum ve D Vitamini:** Diyet+takviye toplamı olarak postmenopozal kadınlarda ve 70 yaş üstü erkeklerde günde **1200 mg**, diğer yetişkinlerde **1000 mg** elemental kalsiyum önerilir. Optimum serum 25(OH)D seviyesi (tercihen 30-50 ng/mL) için günlük 800-2000 IU D vitamini takviyesi sağlanmalıdır."
+        },
+        {
+          "metin": "**Yaşam Tarzı:** Haftada 3-4 gün, 30-40 dakika ağırlık taşıyıcı ve kas güçlendirici egzersizler KMY'yi destekler ve düşme riskini azaltır. Sigaranın bırakılması ve alkol alımının kısıtlanması (günde <2-3 birim) önerilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Antirezorptif Ajanlar",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Bisfosfonatlar (Alendronat, Risedronat, Zoledronik Asit) ★",
+            "Kemik hidroksiapatitine yüksek afiniteyle bağlanıp osteoklast apoptozisini uyarır",
+            "Vertebral/nonvertebral/kalça kırıklarını önlemede yüksek etki; çoğu hastada birinci basamak. KrCl <30-35 mL/dk'da KONTRENDİKE (nefrotoksisite)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Denosumab",
+            "RANKL'ye karşı tam insan monoklonal antikoru; osteoklast oluşumu/fonksiyonunu bloke eder",
+            "6 ayda bir 60 mg SC. Böbrekten elimine edilmez, Evre 4-5 KBH'de doz ayarlamadan kullanılabilir (hipokalsemi riski sıkı takip gerektirir)"
+          ]
+        },
+        {
+          "hucreler": [
+            "SERM — Raloksifen",
+            "Meme dokusunda antagonist, iskelette östrojenik agonist",
+            "Meme kanseri riski yüksek postmenopozal kadınlarda vertebral kırık riskini azaltır; VTE riskini artırır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Bisfosfonat İlaç Tatili (Drug Holiday): Çene osteonekrozu ve atipik femur kırığı riskini minimize etmek için, kırık riski stabil (düşük-orta risk) hastalara ORAL kullanımda 5 yıl, İV kullanımda 3 yıl sonra 1-2 yıllık ilaç tatili verilebilir. ÇOK YÜKSEK riskli hastalarda ise oral tedavi 10 yıla, İV zoledronat 6 yıla kadar uzatılabilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Denosumab Rebound Kemik Kaybı ★: Denosumab bırakıldığında kemik döngüsü HIZLA aktive olur, KMY'de dramatik kayıp ve multipl 'rebound' vertebral kompresyon kırığı riski ortaya çıkar. Denosumab kesildiğinde MUHAKKAK bir bisfosfonat ile geçiş stratejisi ('exit strategy' — örn. zoledronik asit infüzyonu) planlanmalıdır. Bu, denosumabı diğer antirezorptiflerden ayıran KRİTİK bir güvenlik farkıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Anabolik ve Çift Etkili Ajanlar",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Teriparatid / Abaloparatid",
+            "PTH / PTHrP analogları; osteoblast aktivitesini uyararak de novo kemik yapımını tetikler",
+            "Etki süresi 18-24 ay ile sınırlı. Osteosarkom riski şüphesi nedeniyle Paget hastalığı, kemik RT öyküsü, açık epifiz, iskelet malignitelerinde KONTRENDİKE"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Romosozumab ★",
+            "Sklerostine karşı monoklonal antikor; hem kemik yapımını uyarır HEM rezorpsiyonu inhibe eder (çift yönlü etki)",
+            "Aylık SC, yalnızca 12 ay kullanılır. Kardiyovasküler olay (Mİ veya inme) öyküsünde KONTRENDİKE"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Çok Yüksek Kırık Riski Kriterleri (Anabolik Ajan Endikasyonu): T-skoru ≤-3.5, tedavi altında kırık geçirenler, çoklu vertebral kırığı olanlar, uzun süreli yüksek doz glukokortikoid kullananlar. Bu hastalarda anabolik/çift etkili ajanlar birinci basamak veya kurtarma tedavisi olarak tercih edilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Ardışık Tedavi Sıralaması: Anabolik ajan (teriparatid/abaloparatid/romosozumab) kullanım süresi dolduğunda, kazanımların korunması için tedavi DERHAL bir antirezorptif ajan (bisfosfonat veya denosumab) ile desteklenmelidir. Anabolik ajanların GÜÇLÜ antirezorptiflerden (özellikle denosumab) SONRA kullanılması kemik kaybına yol açabileceğinden bu dizilimden (denosumab→anabolik) KAÇINILMALIDIR — doğru sıra: anabolik→antirezorptif."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Glukokortikoidlerin Neden Olduğu Osteoporoz (GIOP)",
+      "satirlar": [
+        {
+          "metin": "Sekonder osteoporozun en yaygın iyatrojenik nedenidir. Glukokortikoidler mezenkimal kök hücrelerin osteoblastlara farklılaşmasını engeller ve osteosit apoptozisini artırır. Tedavinin özellikle ilk 3-6 ayında, KMY'de belirgin azalma olmaksızın dahi kırık riski dramatik olarak artar. **≥3 ay süreyle günde ≥7.5 mg prednizon** (veya eşdeğeri) kullanan yüksek kırık riskli hastalarda profilaktik oral bisfosfonat ilk basamak tedavidir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kronik Böbrek Hastalığı – Mineral ve Kemik Bozuklukları (KBH-MKB)",
+      "satirlar": [
+        {
+          "metin": "GFR düşmesiyle gelişen hiperfosfatemi, hipokalsemi, 1,25(OH)₂D eksikliği ve sekonder hiperparatiroidizm, kemik yapısında kompleks bozulmalara (osteitis fibroza sistika, osteomalazi, adinamik kemik hastalığı) yol açar. Tedavi öncesinde sekonder hiperparatiroidi ve mineral bozuklukları düzeltilmelidir. **İleri evre KBH'de bisfosfonat kullanımı KONTRENDİKEDİR**; denosumab bir seçenek olmakla birlikte hipokalsemi riskinin sıkı takibi gerekir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kanser Tedavileri ve Organ Nakli Hastaları",
+      "satirlar": [
+        {
+          "metin": "**Aromataz İnhibitörleri / Androjen Deprivasyonu:** Cinsiyet steroidlerini baskılayarak hızlı kemik kaybı ve kırık riski artışına neden olur. Osteopenik (T<-1.0 veya -1.5) olup ek risk faktörleri taşıyanlarda tedaviye bisfosfonat veya denosumab eklenmelidir."
+        },
+        {
+          "metin": "**Organ Nakli:** İmmünsüpresif ilaçlar (yüksek doz glukokortikoid, kalsinörin inhibitörleri) nedeniyle özellikle nakli takip eden ilk 6-12 ayda yoğun kemik kaybı yaşanır. KMY nakil öncesi normal olsa dahi yüksek risk söz konusuysa profilaktik bisfosfonat planlanmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Takip ve Tedavinin Değerlendirilmesi",
+      "satirlar": [
+        {
+          "metin": "KMY (DXA) değerleri genellikle tedavi başlangıcından **1-2 yıl sonra**, ideal olarak aynı cihaz ve aynı operatör ile değerlendirilmelidir. Anlamlı kemik kütlesi kaybı (LSC eşiğinden fazla, genelde ≥%5) veya tedavi altında yeni ve birden fazla frajilite kırığı 'tedavi başarısızlığı' olarak nitelendirilmeli; ilaç uyumu, GİS emilim problemleri veya gözden kaçmış sekonder nedenler taranmalı ve gerekiyorsa daha güçlü bir ajana geçiş yapılmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Osteoporoz 10 Altın Kural: (1) DSÖ tanısı: T-skoru ≤-2.5 VEYA KMY'den bağımsız frajilite kırığı. (2) Premenopozal/genç erkekte tanı: Z-skoru ≤-2.0 + frajilite kırığı/sekonder neden. (3) FRAX eşiği: kalça kırığı ≥%3 veya majör kırık ≥%20 → tedavi başla. (4) Bisfosfonat KrCl<30-35'te kontrendike; ilaç tatili oral 5 yıl/İV 3 yıl sonra (çok yüksek riskte 10/6 yıla uzat). (5) Denosumab böbrekten bağımsız kullanılabilir AMA kesilince rebound kemik kaybı riski — mutlaka bisfosfonat exit strategy. (6) Çok yüksek risk (T≤-3.5, tedavi altında kırık, çoklu vertebral kırık) → anabolik ajan. (7) Teriparatid/Abaloparatid/Romosozumab kontrendike: Paget, kemik RT, açık epifiz, iskelet malignitesi (anabolikler); KV olay öyküsü (romosozumab). (8) Ardışık tedavi: anabolik→antirezorptif SIRASI doğru, tersi (denosumab→anabolik) kemik kaybına yol açar. (9) GIOP: ≥3 ay ≥7.5mg prednizon → profilaktik bisfosfonat. (10) İleri KBH'de bisfosfonat kontrendike, denosumab hipokalsemi riskiyle dikkatli kullanılabilir."
+    }
+  ]
+}

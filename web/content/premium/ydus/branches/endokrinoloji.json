@@ -145,6 +145,15 @@
             "YAKINDA"
           ],
           "hazir": false
+        },
+        {
+          "id": "osteoporoz",
+          "baslik": "Osteoporoz — Kapsamlı Derleme ve Güncel Yaklaşımlar",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     }
