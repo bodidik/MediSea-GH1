@@ -23,6 +23,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "lipidoloji",
+      "baslik": "Lipidoloji ve Dislipidemi Yönetimi",
+      "aciklama": "Lipoprotein metabolizması, ASCVD risk stratifikasyonu ve modern lipid düşürücü farmakoterapi",
+      "emoji": "🩸",
+      "konular": [
+        {
+          "id": "klinik-lipidoloji-ascvd",
+          "baslik": "Klinik Lipidoloji ve ASCVD Risk Yönetimi",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

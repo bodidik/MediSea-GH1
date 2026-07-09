@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "id": "klinik-lipidoloji-ascvd",
+    "branch": "kardiyoloji",
+    "baslik": "Klinik Lipidoloji ve ASCVD Risk Yönetimi",
+    "altbaslik": "Lipoprotein metabolizması, ApoB/Lp(a) patofizyolojisi, PREVENT-ASCVD risk stratifikasyonu ve modern lipid düşürücü farmakoterapi spektrumu",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Klinik lipidoloji, lipoprotein metabolizması, aterosklerotik kardiyovasküler hastalık (ASCVD) patofizyolojisi ve hedefe yönelik farmakoterapilerin entegre yönetimini kapsayan kardiyometabolik tıbbın temel zeminidir. Bu modül, dislipidemilerin uzmanlık düzeyindeki biyokimyasal temellerini, güncel risk stratifikasyon yöntemlerini ve modern tedavi stratejilerini ele alır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Eksojen (İntestinal) Yolak",
+      "satirlar": [
+        {
+          "metin": "Diyetle alınan yağlar bağırsak lümeninde hidrolize edilip şilomikronlara dönüştürülerek lenfatik sisteme, oradan sistemik dolaşıma katılır. Sadece bağırsakta sentezlenen **ApoB-48**'i içeren şilomikronlar, adipoz ve kas dokusu kapillerlerindeki endotelyal **lipoprotein lipaz (LPL)** enzimi aracılığıyla hidrolize uğrayarak serbest yağ asitlerini dokulara bırakır. Bu lipolitik kaskatta **ApoC-II** zorunlu bir aktivatörken, **ApoC-III ve ANGPTL3, 4, 8** proteinleri LPL'yi inhibe eden regülatörlerdir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Endojen (Hepatik) Yolak",
+      "satirlar": [
+        {
+          "metin": "Karaciğer tarafından de-novo lipogenez (DNL) veya periferik yağ asidi akışı ile sentezlenen TG'ler, **Mikrozomal Trigliserid Transfer Proteini (MTP)** aracılığıyla tam uzunluktaki **ApoB-100** proteini etrafında paketlenerek **VLDL** olarak dolaşıma salınır. VLDL'nin LPL ve Hepatik Lipaz (HL) tarafından hidrolizi sonucunda sırasıyla **IDL** ve **LDL** partikülleri oluşur. Plazma kolesterolünün ana taşıyıcısı olan LDL, hepatositlerin yüzeyindeki **LDL reseptörleri (LDLR)** aracılığıyla endositoza uğrayarak kandan temizlenir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ters Kolesterol Transportu (RCT)",
+      "satirlar": [
+        {
+          "metin": "Periferik hücrelerdeki ve makrofajlardaki fazla kolesterolün karaciğere safra asitleri olarak atılmak üzere taşınmasını tanımlar. Hücre içi serbest kolesterol, **ABCA1 ve ABCG1** taşıyıcı proteinleri vasıtasıyla lipid fakiri ApoA-I'e efluks edilir. **LCAT** enziminin bu kolesterolü esterleştirmesiyle olgun HDL partikülleri oluşur. HDL, kolesteril esterlerini doğrudan hepatik **SR-BI** reseptörü aracılığıyla ya da **CETP** vasıtasıyla VLDL ve LDL'ye aktararak karaciğere geri döndürür."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "LPL Regülasyonu — Aktivatör vs İnhibitörler: ApoC-II, lipolitik kaskatta LPL'nin ZORUNLU AKTİVATÖRÜDÜR. ApoC-III ve ANGPTL3/4/8 proteinleri ise LPL'yi İNHİBE EDEN regülatörlerdir. Bu denge bozulduğunda (örn. ApoC-III fazlalığı veya LPL eksikliği) ağır hipertrigliseridemi tabloları gelişir — güncel ilaç geliştirme hedefleri (Olezarsen gibi ApoC-III inhibitörleri) bu regülasyonu terapötik olarak manipüle eder."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Aterosklerotik Patofizyoloji ve Hedef Partiküller",
+      "satirlar": [
+        {
+          "metin": "Aterojenez, plazmada retansiyona uğramış ApoB içeren lipoproteinlerin endotel altı alana geçmesi, burada reaktif oksijen türleri tarafından oksitlenmesi (ox-LDL) ve makrofajların çöpçü reseptörler ile bu partikülleri yutarak köpük hücrelerine (foam cells) dönüşmesiyle karakterize kronik immüno-enflamatuar bir süreçtir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Aterojenik Partiküller — Klinik Önem",
+      "kolonlar": [
+        "Partikül",
+        "Klinik Önemi"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "LDL / ApoB ★",
+            "LDL-C, ASCVD için kesin kanıtlanmış nedensel risk faktörüdür. ApoB tüm aterojenik partikül sayısını (LDL+VLDL+IDL+Lp[a]) yansıttığından, insülin direnci/metabolik sendrom zemininde küçük-yoğun LDL ve hipertrigliseridemi (<400 mg/dL) varlığında riski LDL-C veya non-HDL-C'den daha doğru öngörür."
+          ]
+        },
+        {
+          "hucreler": [
+            "TGRL ve Kalıntıları (Remnant)",
+            "Şilomikron ve VLDL kalıntıları makrofajlarda birikerek LDL gibi ateroskleroza nedensel katkı sağlar. Hafif/orta TG yüksekliği (150-499 mg/dL) belirgin ASCVD ve rezidüel risk faktörüdür."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Lipoprotein(a) [Lp(a)]",
+            "Plazminojene yapısal homolojisi nedeniyle hem aterojenik hem proinflamatuar hem antitrombolitik potansiyel taşır. Genetik olarak belirlenir, yaşam tarzından bağımsızdır."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Trigliserit Düzeyine Göre Risk Ayrımı: Aşırı yüksek TG düzeyleri (özellikle >1000 mg/dL) ASCVD'den ziyade PANKREATİT için majör bir risk teşkil eder. Kalıntıların (remnant) rol aldığı hafif/orta dereceli TG yükseklikleri (150-499 mg/dL) ise belirgin bir ASCVD ve rezidüel risk faktörüdür — bu iki TG aralığının klinik anlamı FARKLIDIR ve karıştırılmamalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Lipoprotein(a) [Lp(a)] — Detaylı",
+      "satirlar": [
+        {
+          "metin": "LDL benzeri bir partikül olan Lp(a), ApoB-100 proteini ile kovalent disülfit bağı yapmış olan Apo(a) glikoproteininden oluşur. Genetik varyantların belirlediği Apo(a) izoform uzunluğu plazma Lp(a) miktarını belirler (küçük izoformlar daha yüksek üretime ve konsantrasyona yol açar) ve kılavuzlar ömür boyu en az bir kez ölçümünü önermektedir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Lp(a) Risk Eşiği",
+      "kolonlar": [
+        "Parametre",
+        "Eşik Değer"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Lp(a) — Güçlü Risk Artırıcı Faktör ★",
+            "≥50 mg/dL (veya ≥125 nmol/L)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Güncel Risk Stratifikasyonu — PREVENT-ASCVD",
+      "satirlar": [
+        {
+          "metin": "AHA/ACC 2026 dislipidemi kılavuzları, birincil koruma için risk değerlendirmesini modernize etmiş ve eski Pooled Cohort Equations (PCE) yerine, diyabet durumu, böbrek fonksiyonları (eGFR, idrar albumin/kreatinin) ve sosyodemografik verileri entegre eden **PREVENT-ASCVD denklemlerinin** kullanımını önermiştir. PREVENT denklemleri PCE'ye göre riski daha isabetli (genellikle %40-50 daha düşük) tahmin eder. Koroner Arter Kalsiyum (CAC) skoru, primer korumada ilaç başlama veya erteleme (CAC=0 ise) konusunda güçlü bir re-klasifikasyon aracı olarak sunulmaktadır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "PREVENT-ASCVD — 10 Yıllık Risk Eşikleri (Tedavi Kararları İçin)",
+      "kolonlar": [
+        "Risk Kategorisi",
+        "10 Yıllık Risk"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Sınırda Risk",
+            "%3-5"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Orta Risk",
+            "%5-10"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yüksek Risk",
+            "≥%10"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Sekonder Koruma / Çok Yüksek Risk — Tedavi Hedefleri (Sınıf 1)",
+      "kolonlar": [
+        "Parametre",
+        "Hedef"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "LDL-C ★",
+            ">%50 düşürülmeli VE spesifik olarak <55 mg/dL (1.4 mmol/L)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Non-HDL-C",
+            "<85 mg/dL (2.2 mmol/L)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Lipid Düşürücü Farmakoterapi — Genel Yaklaşım",
+      "satirlar": [
+        {
+          "metin": "Hedeflere ulaşmada kombinasyon stratejileri, tıpkı hipertansiyon tedavisinde olduğu gibi ön plana çıkmaktadır. Statinler, kolesterol biyosentezindeki hız kısıtlayıcı basamağı kompetitif bloke ederek karaciğerde LDL reseptör ekspresyonunu artırır; anti-inflamatuar, antioksidan ve plak stabilize edici (pleiotropik) etkileriyle vasküler riski belirgin düşürür. Miyopati/rabdomiyoliz (<%0.1) ve diyabetojenik etkiler çok nadirdir ve ilacın kardiyovasküler yararının kesinlikle gerisinde kalır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "LDL Düşürücü Ajanlar — Mekanizma ve Klinik Not",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Ezetimib",
+            "Enterosit fırçamsı kenarında NPC1L1 transporterını bloke edip sterol emilimini durdurur",
+            "Monoterapide LDL'yi ~%20 düşürür; statine eklendiğinde ek %15-25 düşüş ve ASCVD olay azalması (IMPROVE-IT)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Bempedoik Asit",
+            "Hepatik ATP sitrat liyaz (ACLY) inhibisyonu — HMG-CoA'nın üst akımında etki eder",
+            "İskelet kasında aktive olmayan bir prodrug olduğundan miyotoksisite riski yoktur; statin intoleranslı yüksek riskli hastalarda güçlü ASCVD olay azaltıcı veri (CLEAR Outcomes)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "PCSK9 mAb — Evolocumab / Alirocumab ★",
+            "Ekstraselüler PCSK9'u nötralize ederek LDLR'nin lizozomal yıkımını önler, reseptör geri dönüşümünü artırır",
+            "LDL'de bazale göre ek %45-64 düşüş (FOURIER, ODYSSEY OUTCOMES)"
+          ]
+        },
+        {
+          "hucreler": [
+            "İnklisiran (siRNA-GalNAc)",
+            "Hepatosit içi PCSK9 mRNA'sını RNA-interferans ile yıkarak sentezini bloke eder",
+            "Yılda yalnızca 2 doz ile LDL'de %48-52 sürdürülebilir düşüş"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Trigliserit Düşürücü Ajanlar",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Fibratlar (Fenofibrat)",
+            "PPAR-alfa agonisti; LPL aktivitesini artırır, ApoC-III üretimini baskılar",
+            "Ağır hipertrigliseridemide ilk seçeneklerden"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "İkosapent Etil ★",
+            "Saf yüksek doz EPA preparatı",
+            "REDUCE-IT çalışmasına dayanarak statin altındaki ASCVD'li/diyabetli hipertrigliseridemik bireylerde iskemik olayları azaltmak için birinci basamakta eklenir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Olezarsen (ApoC-III ASO)",
+            "Hepatik hedefli antisens oligonükleotid; ApoC-III'ü baskılayıp LPL frenini kaldırır",
+            "VLDL kalıntılarını temizler; Ailesel Şilomikronemi Sendromu'nda onaylıdır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Lp(a) Spesifik ve HoFH Ajanları",
+      "kolonlar": [
+        "Ajan",
+        "Mekanizma",
+        "Klinik Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Pelacarsen (ASO) / Olpasiran, SLN360 (siRNA) ★",
+            "LPA gen mRNA'sını hedefleyerek Apo(a) translasyonunu/sentezini baskılar",
+            "Lp(a)'yı >%80-95 oranında dramatik biçimde düşürür — PCSK9i ile sağlanan mütevazı (%15-20) düşüşün çok üzerinde; klinik faz denemelerinde"
+          ]
+        },
+        {
+          "hucreler": [
+            "Evinacumab",
+            "ANGPTL3'ü hedefleyen monoklonal antikor",
+            "VLDL kalıntı klirensini LDL reseptöründen BAĞIMSIZ destekler; HoFH'de LDL'yi ilave %49 düşürür"
+          ]
+        },
+        {
+          "hucreler": [
+            "Lomitapid",
+            "MTP inhibitörü — lipoprotein partikülü (şilomikron/VLDL) kurulumunu engeller",
+            "Yağ emilim problemleri ve hepatosteatoz riski nedeniyle katı diyetle birlikte rezerve ajan"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Klinik Lipidoloji 10 Altın Kural: (1) Şilomikron=ApoB-48 (bağırsak), VLDL/LDL=ApoB-100 (karaciğer). (2) ApoC-II=LPL aktivatörü; ApoC-III/ANGPTL3,4,8=LPL inhibitörü. (3) ApoB, tüm aterojenik partikülleri yansıttığından hipertrigliseridemi/metabolik sendromda LDL-C'den daha doğru risk göstergesidir. (4) TG >1000 mg/dL=pankreatit riski; TG 150-499 mg/dL=ASCVD/rezidüel risk. (5) Lp(a) genetik olarak belirlenir, ≥50 mg/dL güçlü risk artırıcıdır, ömürde en az 1 kez ölçülmelidir. (6) PREVENT-ASCVD, PCE'nin yerini almıştır; CAC=0 ilaç erteleme için güçlü bir araçtır. (7) Sekonder korumada hedef: LDL-C <55 mg/dL VE >%50 düşüş. (8) Statin+Ezetimib+PCSK9i/İnklisiran kombinasyonu agresif LDL düşüşü sağlar. (9) Bempedoik asit iskelet kasında aktive olmadığından miyotoksik değildir. (10) Lp(a)-spesifik siRNA/ASO ajanları (Pelacarsen, Olpasiran) Lp(a)'yı >%80-95 düşüren oyun değiştirici moleküllerdir."
+    }
+  ]
+}

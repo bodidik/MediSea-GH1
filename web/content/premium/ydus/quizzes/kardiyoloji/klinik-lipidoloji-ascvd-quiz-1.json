@@ -1,0 +1,308 @@
+{
+  "id": "quiz-kardiyo-lipidoloji-001",
+  "baslik": "Klinik Lipidoloji ve ASCVD Risk Yönetimi — Soru Seti 1",
+  "branch": "kardiyoloji",
+  "topic": "klinik-lipidoloji-ascvd",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Ağır hipertrigliseridemisi olan bir hastada genetik analizde ApoC-III geninde aşırı ekspresyona yol açan bir varyant saptanıyor. Klinisyen, bu durumun lipoprotein lipaz (LPL) aktivitesi üzerindeki etkisini açıklıyor.",
+      "secenekler": {
+        "A": "ApoC-III, lipolitik kaskatta LPL'yi inhibe eden bir regülatördür; fazlalığı LPL aktivitesini baskılayarak trigliserit klirensini azaltır ve hipertrigliseridemiye katkıda bulunur.",
+        "B": "ApoC-III, LPL'nin zorunlu aktivatörüdür; fazlalığı LPL aktivitesini artırarak trigliserit düzeylerini düşürür.",
+        "C": "ApoC-III'ün LPL aktivitesi üzerinde hiçbir etkisi yoktur, yalnızca ApoB-48 sentezini düzenler.",
+        "D": "ApoC-III yalnızca hepatik lipazı (HL) etkiler, LPL ile ilişkisi yoktur.",
+        "E": "ApoC-III, ApoC-II ile aynı reseptöre bağlanarak onun aktivatör etkisini güçlendirir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ApoC-III, LPL'yi İNHİBE EDEN bir regülatördür (ApoC-II ise ZORUNLU AKTİVATÖRdür). ApoC-III fazlalığı LPL aktivitesini baskılayarak TG klirensini azaltır — bu, Olezarsen gibi ApoC-III'ü hedefleyen ilaçların terapötik mantığının temelidir.",
+      "aciklama_detay": "Lipolitik kaskatta LPL aktivitesi, zıt yönde etki eden apolipoproteinler tarafından hassas bir şekilde regüle edilir. ApoC-II, LPL'nin ZORUNLU AKTİVATÖRÜ olup enzimin trigliserit hidrolizini katalize etmesi için gereklidir. Buna karşılık ApoC-III ve ANGPTL3, 4, 8 proteinleri LPL'yi İNHİBE EDEN regülatörlerdir. ApoC-III'ün aşırı ekspresyonu (bu vakadaki gibi genetik varyant nedeniyle), LPL aktivitesini baskılayarak şilomikron ve VLDL trigliseritlerinin dokulara (adipoz, kas) hidrolizini azaltır, bu da plazmada trigliseritten zengin lipoprotein birikimine (hipertrigliseridemi) yol açar. Bu mekanizma anlayışı, güncel terapötik gelişmelerin de temelini oluşturur: Olezarsen gibi hepatik hedefli antisens oligonükleotidler, ApoC-III'ü baskılayarak LPL üzerindeki 'freni' kaldırır ve VLDL kalıntılarının temizlenmesini sağlar — bu mekanizma Ailesel Şilomikronemi Sendromu'nda onay almıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — ApoC-III, LPL inhibitörüdür; fazlalığı TG klirensini azaltarak hipertrigliseridemiye katkıda bulunur.",
+        "B": "YANLIS — LPL'nin zorunlu aktivatörü ApoC-III DEĞİL, ApoC-II'dir; ApoC-III tam tersine İNHİBE eder.",
+        "C": "YANLIS — ApoC-III'ün LPL aktivitesi üzerinde DOĞRUDAN ve ÖNEMLİ bir inhibitör etkisi vardır; ApoB-48 sentezini düzenleyen bir protein değildir.",
+        "D": "YANLIS — ApoC-III birincil olarak LPL'yi etkiler (ana lipolitik kaskat enzimidir); yalnızca HL ile sınırlı bir etkisi tanımlanmamıştır.",
+        "E": "YANLIS — ApoC-III ve ApoC-II ZITT etkiler gösterir (inhibitör vs aktivatör); aynı reseptöre bağlanıp güçlendirme ilişkisi tanımlanmamıştır."
+      },
+      "etiketler": [
+        "ApoC-III",
+        "LPL Regülasyonu",
+        "Lipoprotein Metabolizması",
+        "Eksojen Yolak",
+        "Hipertrigliseridemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ginsberg et al. J Lipid Res 2021; Gaudet et al. N Engl J Med 2015 (Olezarsen mekanizması)"
+    },
+    {
+      "id": "s2",
+      "metin": "İnsülin direnci ve metabolik sendromu olan, hafif hipertrigliseridemik (TG: 280 mg/dL) bir hastada LDL-C düzeyi normal sınırlarda ölçülüyor. Klinisyen, bu hastada ASCVD riskini daha doğru değerlendirmek için ek bir lipid parametresi istiyor.",
+      "secenekler": {
+        "A": "ApoB ölçümü; dolaşımdaki tüm aterojenik partiküllerin (LDL, VLDL, IDL, Lp[a]) sayısını birebir yansıttığından, özellikle küçük-yoğun LDL ve hipertrigliseridemi varlığında riski LDL-C'den daha doğru öngörür.",
+        "B": "HDL-C ölçümü tek başına yeterlidir, ApoB'nin bu senaryoda ek bir değeri yoktur.",
+        "C": "Total kolesterol/HDL oranı, ApoB'den her zaman daha üstün bir risk göstergesidir.",
+        "D": "Bu hastada LDL-C normal olduğundan ek bir lipid parametresine gerek yoktur, risk düşük kabul edilir.",
+        "E": "ApoA-I ölçümü, bu klinik senaryoda ApoB'den daha değerli bir risk göstergesidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ApoB, tüm aterojenik partikül SAYISINI yansıtır. İnsülin direnci/metabolik sendrom zemininde sayıca artmış küçük-yoğun LDL ve hipertrigliseridemi (<400 mg/dL) varlığında, LDL-C normal görünse bile ApoB yüksek çıkabilir ve gerçek riski daha doğru yansıtır.",
+      "aciklama_detay": "LDL kolesterol ASCVD için kesin olarak kanıtlanmış nedensel bir risk faktörüdür. Ancak klinik pratikte LDL-C ölçülse de, ApoB dolaşımdaki TÜM aterojenik partiküllerin (LDL, VLDL, IDL, Lp[a]) SAYISINI birebir yansıttığından, özellikle insülin direnci ve metabolik sendrom zemininde sayıca artmış küçük-yoğun (small dense) LDL varlığında ve hipertrigliseridemi tablolarında (<400 mg/dL), riski LDL-C'den veya non-HDL-C'den çok daha doğru öngörür. Bu klinik senaryonun özü şudur: metabolik sendromlu hastalarda, her bir LDL partikülü daha az kolesterol taşıyan (küçük-yoğun) ama SAYICA daha fazla olabilir — bu durumda LDL-C KONSANTRASYONU (kolesterol kütlesi) normal/hafif yüksek görünse bile, PARTİKÜL SAYISI (ApoB ile ölçülür) belirgin yüksek olabilir. Partikül sayısı, aterojenez sürecinde (her partikülün endotel altına girme olasılığı) LDL-C konsantrasyonundan daha doğrudan ilişkilidir, bu nedenle ApoB bu tip hastalarda gerçek riski daha iyi yansıtır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — ApoB, partikül sayısını yansıtır; küçük-yoğun LDL ve hipertrigliseridemi zemininde LDL-C'den daha doğru risk göstergesidir.",
+        "B": "YANLIS — HDL-C tek başına bu senaryoda (gizli artmış partikül sayısı) yeterli bilgi sağlamaz; ApoB ek değer taşır.",
+        "C": "YANLIS — ApoB, özellikle bu klinik senaryoda (metabolik sendrom, hipertrigliseridemi) total kolesterol/HDL oranından DAHA doğru kabul edilir; 'her zaman üstün' ifadesi ApoB için değil, ters yönde yanlıştır.",
+        "D": "YANLIS — Tam tersine, LDL-C normal olsa bile bu klinik profilde (metabolik sendrom+hipertrigliseridemi) gizli artmış partikül sayısı riski olabilir; ek değerlendirme (ApoB) gereklidir.",
+        "E": "YANLIS — ApoA-I, HDL partiküllerinin ana proteinidir ve ASCVD risk değerlendirmesinde ApoB kadar birincil bir rol oynamaz; metinde ApoB'nin üstünlüğü vurgulanmıştır."
+      },
+      "etiketler": [
+        "ApoB",
+        "Metabolik Sendrom",
+        "Küçük-Yoğun LDL",
+        "Risk Stratifikasyonu",
+        "Hipertrigliseridemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Sniderman et al. J Clin Lipidol 2019; Ference et al. Eur Heart J 2020 (Consensus Statement)"
+    },
+    {
+      "id": "s3",
+      "metin": "Trigliserit düzeyi 1200 mg/dL ölçülen bir hastada klinisyen, öncelikli riskin kardiyovasküler değil, farklı bir akut komplikasyon olduğunu vurguluyor. Ayrı bir hastada TG 320 mg/dL ölçülüyor ve bu düzeyin öncelikli riskinin farklı olduğu belirtiliyor.",
+      "secenekler": {
+        "A": "TG >1000 mg/dL düzeyi öncelikle PANKREATİT riski oluştururken, TG 150-499 mg/dL aralığındaki hafif/orta yükseklik (kalıntı partiküller aracılığıyla) belirgin bir ASCVD ve rezidüel risk faktörüdür.",
+        "B": "Her iki TG düzeyi de yalnızca ASCVD riski taşır, pankreatit riski TG düzeyinden bağımsızdır.",
+        "C": "TG >1000 mg/dL yalnızca ASCVD riski taşır; TG 150-499 mg/dL aralığı hiçbir klinik risk oluşturmaz.",
+        "D": "Pankreatit riski yalnızca TG 150-499 mg/dL aralığında görülür, TG >1000 mg/dL düzeyinde pankreatit riski yoktur.",
+        "E": "TG düzeyi ne olursa olsun, pankreatit ve ASCVD riski arasında bir ayrım yapılamaz, ikisi de aynı TG eşiğinde ortaya çıkar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TG >1000 mg/dL → öncelikli risk PANKREATİT. TG 150-499 mg/dL (kalıntı partiküller aracılığıyla) → öncelikli risk ASCVD/rezidüel risk. Bu iki TG aralığının klinik önceliği FARKLIDIR.",
+      "aciklama_detay": "Trigliserit düzeyine göre risk profili belirgin şekilde değişir. Aşırı yüksek TG düzeyleri (özellikle >1000 mg/dL) ASCVD'den ziyade PANKREATİT için majör bir risk teşkil eder — bu düzeydeki aşırı şilomikronemi, pankreas kapillerlerinde lipaz aracılı serbest yağ asidi salınımı yoluyla doğrudan pankreatik doku hasarına yol açabilir, bu nedenle klinik önceliğin akut pankreatit riskini azaltmaya (agresif TG düşürme, genellikle fibrat/balık yağı) yönelik olması gerekir. Buna karşılık, kalıntıların (remnant partiküller) rol aldığı hafif/orta dereceli TG yükseklikleri (150-499 mg/dL) belirgin bir ASCVD ve rezidüel risk faktörüdür — bu aralıktaki TG yüksekliği, şilomikron ve VLDL kalıntı partiküllerinin makrofajlarda birikerek LDL'ye benzer şekilde ateroskleroza doğrudan katkıda bulunmasıyla ilişkilidir. Bu ayrım klinik pratikte önemlidir çünkü tedavi önceliği ve aciliyeti bu iki senaryoda farklıdır: TG >1000 mg/dL acil pankreatit profilaksisi gerektirirken, TG 150-499 mg/dL kardiyovasküler risk azaltma stratejisinin bir parçası olarak ele alınır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — TG >1000: öncelikli risk pankreatit. TG 150-499: öncelikli risk ASCVD/rezidüel risk (kalıntı partiküller aracılığıyla).",
+        "B": "YANLIS — TG >1000 mg/dL düzeyinde öncelikli/majör risk PANKREATİT'tir, yalnızca ASCVD değildir.",
+        "C": "YANLIS — TG 150-499 mg/dL aralığı, kalıntı partiküller aracılığıyla BELİRGİN bir ASCVD/rezidüel risk faktörüdür; risksiz değildir.",
+        "D": "YANLIS — Tam tersine, pankreatit riski ÖZELLİKLE TG >1000 mg/dL düzeyinde belirgindir; 150-499 mg/dL aralığında pankreatit birincil risk değildir.",
+        "E": "YANLIS — Bu iki TG aralığı arasında AÇIK bir klinik risk ayrımı vardır (pankreatit vs ASCVD), aynı eşikte ortaya çıkmazlar."
+      },
+      "etiketler": [
+        "Trigliserit",
+        "Pankreatit Riski",
+        "ASCVD Riski",
+        "Kalıntı Partiküller",
+        "Remnant Kolesterol"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Berglund et al. J Clin Endocrinol Metab 2012 (Endocrine Society Guideline); Nordestgaard BG. Circ Res 2016"
+    },
+    {
+      "id": "s4",
+      "metin": "Ailesinde erken ASCVD öyküsü olan 45 yaşında bir hastada LDL-C ve diğer geleneksel lipid parametreleri normal sınırlarda. Klinisyen, ömür boyu en az bir kez ölçülmesi önerilen genetik olarak belirlenmiş bir lipoprotein parametresini istiyor.",
+      "secenekler": {
+        "A": "Lp(a) ölçümü; genetik varyantların belirlediği Apo(a) izoform uzunluğu plazma düzeyini belirler, yaşam tarzından bağımsızdır ve kılavuzlar ömür boyu en az bir kez ölçümünü önermektedir.",
+        "B": "HDL-C tekrar ölçümü, bu klinik senaryoda en değerli genetik belirteçtir.",
+        "C": "Lp(a) düzeyi diyet ve egzersizle önemli ölçüde değiştirilebilir, bu nedenle tekrarlayan ölçüm gereklidir.",
+        "D": "Lp(a), yalnızca diyabetik hastalarda ölçülmesi gereken bir parametredir.",
+        "E": "Bu klinik senaryoda ek bir lipoprotein ölçümüne gerek yoktur, LDL-C normal olduğundan risk düşüktür."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Lp(a), genetik varyantlarla (Apo(a) izoform uzunluğu) belirlenen, yaşam tarzından bağımsız bir lipoprotein parametresidir. Ailede erken ASCVD öyküsü olan ve geleneksel lipidleri normal olan hastalarda gizli riski açığa çıkarabilir; kılavuzlar ömür boyu en az bir kez ölçümünü önerir.",
+      "aciklama_detay": "LDL benzeri bir partikül olan Lp(a), ApoB-100 proteini ile kovalent disülfit bağı yapmış olan Apo(a) glikoproteininden oluşur. Yapısal olarak plazminojene olan homolojisi nedeniyle yalnızca aterojenik değil, aynı zamanda proinflamatuar ve antitrombolitik potansiyel de taşır. Genetik varyantların belirlediği Apo(a) izoform uzunluğu, plazma Lp(a) miktarını belirler (küçük izoformlar daha yüksek üretime ve konsantrasyona yol açar) ve kılavuzlar ömür boyu en az bir kez ölçümünü önermektedir. Bu klinik senaryo, Lp(a) ölçümünün en değerli olduğu tipik durumu tanımlar: ailede erken ASCVD öyküsü olan ancak geleneksel lipid parametreleri (LDL-C, HDL-C, TG) normal olan hastalarda, 'açıklanamayan' ailesel riskin bir kısmı genetik olarak yüksek Lp(a) düzeyleriyle açıklanabilir. Lp(a) düzeyi büyük ölçüde genetik olarak belirlendiğinden (yaşam tarzı, diyet veya standart statin tedavisinden minimal etkilenir), TEK BİR ölçüm genellikle ömür boyu risk değerlendirmesi için yeterlidir — bu, LDL-C gibi dinamik/değiştirilebilir parametrelerden önemli bir farktır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Lp(a) genetik olarak belirlenir, yaşam tarzından bağımsızdır, ömür boyu bir kez ölçüm yeterlidir ve ailesel erken ASCVD'de gizli riski açığa çıkarabilir.",
+        "B": "YANLIS — HDL-C tekrar ölçümü, bu senaryoda (ailesel erken ASCVD, normal geleneksel lipidler) gizli genetik riski açığa çıkarma potansiyeli açısından Lp(a) kadar değerli değildir.",
+        "C": "YANLIS — Tam tersine, Lp(a) düzeyi BÜYÜK ÖLÇÜDE GENETİK olarak belirlenir ve diyet/egzersizle ÖNEMLİ ÖLÇÜDE DEĞİŞTİRİLEMEZ; bu nedenle tek ölçüm genellikle yeterlidir.",
+        "D": "YANLIS — Lp(a) ölçümü diyabetle sınırlı değildir; özellikle ailesel erken ASCVD öyküsü olan TÜM hastalarda (diyabet olsun olmasın) önerilir.",
+        "E": "YANLIS — LDL-C normal olsa bile, ailesel erken ASCVD öyküsü varlığında Lp(a) gibi ek genetik risk belirteçlerinin değerlendirilmesi ÖNERİLİR; risk otomatik olarak düşük kabul edilemez."
+      },
+      "etiketler": [
+        "Lp(a)",
+        "Apo(a) İzoformu",
+        "Genetik Risk",
+        "Ailesel ASCVD",
+        "Risk Değerlendirmesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kronenberg et al. Eur Heart J 2022 (Lp(a) Consensus Statement)"
+    },
+    {
+      "id": "s5",
+      "metin": "50 yaşında, diyabetik olmayan, hipertansif bir hastada ASCVD birincil koruma amacıyla risk değerlendirmesi yapılıyor. Klinisyen, geleneksel Pooled Cohort Equations (PCE) yerine güncel AHA/ACC 2026 kılavuzlarının önerdiği bir denklem kullanıyor.",
+      "secenekler": {
+        "A": "PREVENT-ASCVD denklemleri; diyabet durumu, böbrek fonksiyonları (eGFR, idrar albumin/kreatinin) ve sosyodemografik verileri entegre eder ve PCE'ye göre riski genellikle %40-50 daha düşük ve daha isabetli tahmin eder.",
+        "B": "PCE denklemleri güncel kılavuzlarda hâlâ tek önerilen risk hesaplama yöntemidir, PREVENT-ASCVD yalnızca araştırma amaçlıdır.",
+        "C": "PREVENT-ASCVD denklemleri yalnızca diyabetik hastalarda kullanılabilir, diyabetik olmayan hastalarda PCE kullanılmaya devam edilir.",
+        "D": "PREVENT-ASCVD denklemleri böbrek fonksiyonlarını değerlendirmeye almaz, yalnızca lipid parametrelerine dayanır.",
+        "E": "PREVENT-ASCVD denklemleri PCE'ye göre riski sistematik olarak daha yüksek tahmin eder."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PREVENT-ASCVD denklemleri, diyabet/böbrek fonksiyonu/sosyodemografik verileri entegre eden, PCE'nin yerini alan güncel AHA/ACC 2026 önerisidir ve riski PCE'ye göre genellikle %40-50 DAHA DÜŞÜK ve daha isabetli tahmin eder.",
+      "aciklama_detay": "AHA/ACC 2026 dislipidemi kılavuzları, birincil koruma için risk değerlendirmesini modernize etmiş ve eski Pooled Cohort Equations (PCE) yerine, diyabet durumu, böbrek fonksiyonları (eGFR, idrar albumin/kreatinin) ve sosyodemografik verileri (zip code) de entegre eden PREVENT-ASCVD denklemlerinin kullanımını önermiştir. PREVENT denklemleri PCE'ye göre riski daha isabetli (genellikle %40-50 daha düşük) tahmin eder ve kılavuz, 10 yıllık risk eşiğini tedavi kararları için sınırda %3-5, orta riskte %5-10, yüksek riskte ise ≥%10 olarak güncellemiştir. Bu değişikliğin klinik önemi büyüktür: PCE'nin genellikle riski FAZLA tahmin ettiği (overestimation) bilinmekteydi, bu da gereksiz statin başlangıcına yol açabiliyordu. PREVENT denklemleri, böbrek fonksiyonu gibi ek kardiyometabolik parametreleri entegre ederek daha kişiselleştirilmiş ve isabetli bir risk tahmini sunar, bu da tedavi kararlarının (özellikle sınırda risk grubundaki hastalarda) daha doğru verilmesini sağlar. Koroner Arter Kalsiyum (CAC) skoru da bu bağlamda, özellikle ara risk grubundaki hastalarda ilaç başlama veya erteleme kararında güçlü bir re-klasifikasyon aracı olarak kullanılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PREVENT-ASCVD, diyabet/böbrek/sosyodemografik verileri entegre eder, PCE'ye göre riski %40-50 daha düşük ve daha isabetli tahmin eder.",
+        "B": "YANLIS — Tam tersine, PREVENT-ASCVD AHA/ACC 2026 kılavuzlarının ÖNERDİĞİ güncel yöntemdir; PCE'nin YERİNİ almıştır, araştırmayla sınırlı değildir.",
+        "C": "YANLIS — PREVENT-ASCVD denklemleri diyabetik VE diyabetik olmayan TÜM hastalarda kullanılabilir; diyabet durumu denklemin GİRDİLERİNDEN biridir, kullanım kısıtlaması değildir.",
+        "D": "YANLIS — PREVENT-ASCVD denklemleri BÖBREK FONKSİYONLARINI (eGFR, idrar albumin/kreatinin) AÇIKÇA entegre eder; bu, PCE'ye göre temel farklılıklarından biridir.",
+        "E": "YANLIS — PREVENT-ASCVD denklemleri riski PCE'ye göre sistematik olarak DAHA DÜŞÜK (genellikle %40-50 daha düşük) tahmin eder, daha yüksek değil."
+      },
+      "etiketler": [
+        "PREVENT-ASCVD",
+        "Risk Stratifikasyonu",
+        "Pooled Cohort Equations",
+        "CAC Skoru",
+        "Birincil Koruma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AHA/ACC 2026 Dislipidemi Kılavuzu; Khan et al. Circulation 2023 (PREVENT Equations)"
+    },
+    {
+      "id": "s6",
+      "metin": "Yakın zamanda akut koroner sendrom (AKS) geçiren, çoklu damar hastalığı olan bir hastada sekonder koruma amacıyla lipid hedefleri belirleniyor. Hasta yüksek yoğunluklu statin altında LDL-C 90 mg/dL düzeyinde.",
+      "secenekler": {
+        "A": "Bu hasta çok yüksek ASCVD riski taşıdığından, hedef LDL-C'nin >%50 düşürülmesinin yanında spesifik olarak <55 mg/dL (1.4 mmol/L) seviyesine ve non-HDL-C'nin <85 mg/dL (2.2 mmol/L) seviyesine çekilmesidir; mevcut LDL-C 90 mg/dL hedefin üzerindedir ve ek tedavi (ezetimib/PCSK9i) gereklidir.",
+        "B": "LDL-C 90 mg/dL bu hastada yeterli bir düzeydir, ek tedaviye gerek yoktur.",
+        "C": "Sekonder korumada hedef LDL-C her zaman <130 mg/dL'dir, bu hasta zaten hedefe ulaşmıştır.",
+        "D": "Çok yüksek riskli hastalarda LDL-C hedefi yoktur, yalnızca statin dozunun maksimize edilmesi yeterlidir.",
+        "E": "Non-HDL-C hedefi bu hasta grubunda LDL-C hedefinden daha yüksek (daha gevşek) olmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Çok yüksek riskli (yakın AKS + çoklu damar hastalığı) sekonder korumada Sınıf 1 hedef: LDL-C >%50 düşüş VE <55 mg/dL, non-HDL-C <85 mg/dL. Mevcut LDL-C 90 mg/dL bu hedefin üzerinde olduğundan ek tedavi (ezetimib/PCSK9i/inklisiran) gereklidir.",
+      "aciklama_detay": "Sekonder korumada veya çok yüksek ASCVD riski taşıyan (yakın zamanda AKS, çoklu damar hastalığı vb.) hastalarda, agresif 'ne kadar düşük, o kadar iyi' yaklaşımı benimsenerek, hedef olarak LDL-C'nin >%50 düşürülmesinin yanında spesifik olarak <55 mg/dL (1.4 mmol/L) seviyesine, non-HDL-C'nin ise <85 mg/dL (2.2 mmol/L) seviyesine çekilmesi standart Sınıf 1 öneridir. Bu hasta profili (yakın AKS + çoklu damar hastalığı) tam olarak 'çok yüksek risk' kategorisine girer ve bu nedenle en agresif LDL-C hedefi uygulanmalıdır. Mevcut LDL-C değeri (90 mg/dL), yüksek yoğunluklu statin altında olmasına rağmen <55 mg/dL hedefinin belirgin şekilde üzerindedir — bu durumda tedavi eskalasyonu (statine ek olarak ezetimib eklenmesi, yanıt yetersizse PCSK9 inhibitörü veya inklisiran eklenmesi) gerekli hale gelir. Bu, güncel kılavuzların vurguladığı kombinasyon tedavisi yaklaşımının (statin monoterapisinin çoğu çok yüksek riskli hastada tek başına yeterli olmadığı) klinik bir örneğidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Çok yüksek risk hedefleri: LDL-C >%50 düşüş VE <55 mg/dL; non-HDL-C <85 mg/dL. Mevcut LDL-C (90) hedefin üzerinde, ek tedavi gerekir.",
+        "B": "YANLIS — LDL-C 90 mg/dL, bu çok yüksek riskli hasta için <55 mg/dL hedefinin BELİRGİN ÜZERİNDEDİR; yeterli kabul edilemez.",
+        "C": "YANLIS — Sekonder koruma/çok yüksek risk hedefi <130 mg/dL DEĞİL, <55 mg/dL'dir; bu eski/daha gevşek bir hedeftir ve güncel kılavuzla uyumsuzdur.",
+        "D": "YANLIS — Çok yüksek riskli hastalarda AÇIK, SAYISAL bir LDL-C hedefi (<55 mg/dL) vardır; yalnızca statin dozu maksimizasyonu yeterli değildir, kombinasyon tedavisi gerekebilir.",
+        "E": "YANLIS — Non-HDL-C hedefi (<85 mg/dL) LDL-C hedefinden (<55 mg/dL) SAYISAL OLARAK DAHA YÜKSEK olsa da, bu 'daha gevşek' bir hedef anlamına gelmez; non-HDL-C zaten LDL-C'den ~30 mg/dL daha yüksek olacak şekilde tanımlanmıştır (VLDL-C içerdiğinden)."
+      },
+      "etiketler": [
+        "Sekonder Koruma",
+        "LDL-C Hedefi",
+        "Çok Yüksek Risk",
+        "Non-HDL-C",
+        "Kombinasyon Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AHA/ACC 2026 Dislipidemi Kılavuzu; ESC/EAS 2019 Dyslipidaemia Guidelines"
+    },
+    {
+      "id": "s7",
+      "metin": "Yüksek yoğunluklu statin ve ezetimib kombinasyonuna rağmen LDL-C hedefine ulaşamayan, çok yüksek ASCVD riskli bir hastada ek tedavi planlanıyor. Hasta, sık enjeksiyon uyumsuzluğu nedeniyle daha seyrek dozlama gerektiren bir ajan tercih ediyor.",
+      "secenekler": {
+        "A": "İnklisiran; siRNA-GalNAc konjugatı olarak hepatosit içindeki PCSK9 mRNA'sının yıkımını sağlayarak sentezini bloke eder ve yılda yalnızca iki doz ile LDL'de %48-52 sürdürülebilir düşüş sunar — bu, hastanın seyrek dozlama tercihine en uygun seçenektir.",
+        "B": "Evolocumab, aylık yalnızca bir kez uygulanan ve inklisirandan daha seyrek dozlanan bir ajandır.",
+        "C": "Ezetimib dozunun iki katına çıkarılması, bu hastada en uygun seyrek dozlama stratejisidir.",
+        "D": "Bempedoik asit, enjeksiyon gerektiren ve yılda iki doz uygulanan bir ajandır.",
+        "E": "Statin dozunun artırılması, seyrek dozlama sorununu çözen tek etkili stratejidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İnklisiran (siRNA-GalNAc), hepatosit PCSK9 mRNA'sını yıkarak sentezi bloke eder; yılda yalnızca 2 doz ile LDL'de %48-52 sürdürülebilir düşüş sağlar — PCSK9 mAb'lerin (2-4 haftada bir) aksine EN SEYREK dozlama aralığına sahip ajandır.",
+      "aciklama_detay": "RNA-interferans teknolojisi kullanan İnklisiran (siRNA-GalNAc konjugatı), PCSK9'un hepatosit içindeki katalitik mRNA yıkımını sağlayıp sentezini bloke eder ve yılda yalnızca iki doz ile LDL'de %48-52 sürdürülebilir düşüş sunar. Bu, PCSK9 hedefli tedaviler arasında dozlama sıklığı açısından önemli bir farktır: Evolocumab ve Alirocumab (tam insan monoklonal antikorları) genellikle 2 veya 4 haftada bir subkutan enjeksiyon gerektirirken, İnklisiran'ın etki mekanizması (mRNA düzeyinde sentez blokajı, protein düzeyinde nötralizasyondan farklı olarak) çok daha uzun süreli bir etki sağlar ve bu sayede yılda yalnızca 2 doz (başlangıç + 3. ay, ardından 6 ayda bir) yeterli olur. Bu özellik, ilaç uyumunun (adherence) enjeksiyon sıklığından olumsuz etkilendiği hastalarda özellikle değerlidir — sık enjeksiyon gerektiren tedavilerde uyum sorunları yaygın olduğundan, İnklisiran'ın seyrek dozlama profili bu hasta grubunda pratik bir avantaj sunar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İnklisiran, yılda yalnızca 2 doz ile LDL'de %48-52 düşüş sağlayan, en seyrek dozlanan PCSK9-hedefli ajandır.",
+        "B": "YANLIS — Evolocumab genellikle 2 veya 4 haftada bir uygulanır; bu, İnklisiran'ın yılda 2 dozluk şemasından ÇOK DAHA SIK bir dozlamadır, daha seyrek değildir.",
+        "C": "YANLIS — Ezetimib zaten kombinasyonda kullanılmaktadır ve hedefe ulaşılamamıştır; ayrıca ezetimib bir enjeksiyon/dozlama sıklığı sorunu değil, oral bir ajandır — soru enjeksiyon sıklığı sorununu ele almaktadır.",
+        "D": "YANLIS — Bempedoik asit ORAL bir ajandır (enjeksiyon gerektirmez) ve bu tanımlama (yılda 2 doz enjeksiyon) yanlıştır; bu tanımlama İnklisiran'a aittir.",
+        "E": "YANLIS — Statin dozu artırımı seyrek dozlama sorununu ÇÖZMEZ; hasta zaten yüksek yoğunluklu statin altındadır ve sorun enjeksiyon sıklığı tercihiyle ilgilidir, statin dozuyla değil."
+      },
+      "etiketler": [
+        "İnklisiran",
+        "PCSK9 İnhibisyonu",
+        "siRNA Tedavisi",
+        "Dozlama Sıklığı",
+        "LDL Düşürücü Kombinasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ray et al. N Engl J Med 2020 (ORION-10/11); FDA Inclisiran Prescribing Information"
+    },
+    {
+      "id": "s8",
+      "metin": "Statin tedavisine belirgin miyalji nedeniyle tolerans gösteremeyen, çok yüksek ASCVD riskli bir hastada alternatif bir LDL düşürücü ajan planlanıyor. Klinisyen, iskelet kasında miyotoksisite riski taşımayan bir prodrug seçiyor.",
+      "secenekler": {
+        "A": "Bempedoik Asit; çok uzun zincirli açil-CoA sentetaz-1 ile aktive olması gereken bir prodrug olup, bu enzimin iskelet kasında bulunmaması sayesinde kas miyotoksisitesi riskini bertaraf eder ve statin intoleransı olan yüksek riskli bireylerde güçlü klinik ASCVD olay azaltıcı verileri (CLEAR Outcomes) vardır.",
+        "B": "PCSK9 inhibitörleri, prodrug oldukları ve iskelet kasında aktive olmadıkları için bu hastada tercih edilmelidir.",
+        "C": "Ezetimib, çok uzun zincirli açil-CoA sentetaz-1 ile aktive olan bir prodrug olduğundan bu hastada birincil seçenektir.",
+        "D": "Bempedoik asit, iskelet kasında da aktive olduğundan statin intoleranslı hastalarda kullanılmamalıdır.",
+        "E": "Statin dozunun düşürülmesi, miyotoksisiteyi tamamen ortadan kaldıran tek etkili yöntemdir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bempedoik asit, çok uzun zincirli açil-CoA sentetaz-1 ile aktive olması gereken bir prodrug'dır; bu enzim iskelet kasında BULUNMADIĞINDAN miyotoksisite riski yoktur. CLEAR Outcomes çalışmasıyla statin intoleranslı yüksek riskli hastalarda ASCVD olay azaltıcı etkinliği kanıtlanmıştır.",
+      "aciklama_detay": "Bempedoik Asit, hepatik kolesterol sentezinde HMG-CoA'nın üst akımında yer alan adenozin trifosfat (ATP) sitrat liyazı (ACLY) inhibe eder. Çok uzun zincirli açil-CoA sentetaz-1 ile aktive olması gereken bir ön ilaç (prodrug) olup, bu enzimin iskelet kasında bulunmaması sayesinde kas miyotoksisitesi riskini bertaraf eder. Bu, bempedoik asidin statin intoleranslı hastalar için özellikle uygun olmasının moleküler temelidir: statinler tüm dokularda (karaciğer ve iskelet kası dahil) aktif haldeyken etki gösterebilir, bu da bazı hastalarda kas semptomlarına (miyalji, miyopati, nadiren rabdomiyoliz) yol açabilir. Bempedoik asit ise yalnızca karaciğerde (bu spesifik aktivasyon enziminin bulunduğu dokuda) aktif hale gelir ve iskelet kasında inaktif (prodrug formunda) kalır — bu doku-spesifik aktivasyon, ilacın kas yan etkisi profilini önemli ölçüde iyileştirir. Statin intoleransı olan yüksek riskli bireylerde güçlü klinik ASCVD olay azaltıcı verileri (CLEAR Outcomes çalışması) bulunması, bu ajanı bu klinik senaryoda kanıta dayalı, uygun bir tercih haline getirir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bempedoik asit, iskelet kasında aktive olmayan bir prodrug'dır (miyotoksisite riski yok) ve CLEAR Outcomes'ta statin intoleranslı hastalarda etkinlik kanıtlanmıştır.",
+        "B": "YANLIS — PCSK9 inhibitörleri (Evolocumab, Alirocumab) monoklonal antikorlardır, prodrug DEĞİLDİR; farklı bir mekanizma (ekstraselüler PCSK9 nötralizasyonu) ile çalışırlar.",
+        "C": "YANLIS — Ezetimib, NPC1L1 transporterını bloke eden bir ajandır; çok uzun zincirli açil-CoA sentetaz-1 ile aktive olan prodrug tanımı EZETİMİB'E DEĞİL, BEMPEDOİK ASİDE aittir.",
+        "D": "YANLIS — Tam tersine, bempedoik asit İSKELET KASINDA AKTİVE OLMADIĞI (bu enzim kasta bulunmadığı) için miyotoksisite riski TAŞIMAZ; bu onun statin intoleransında tercih edilme nedenidir.",
+        "E": "YANLIS — Statin dozunun düşürülmesi miyotoksisiteyi TAMAMEN ortadan kaldırmaz ve genellikle LDL düşürücü etkinliği de azaltır; bu hasta zaten miyalji nedeniyle tolerans gösterememektedir, alternatif bir ajan (statin dışı) gereklidir."
+      },
+      "etiketler": [
+        "Bempedoik Asit",
+        "ACLY İnhibisyonu",
+        "Statin İntoleransı",
+        "CLEAR Outcomes",
+        "Miyotoksisite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nissen et al. N Engl J Med 2023 (CLEAR Outcomes)"
+    },
+    {
+      "id": "s9",
+      "metin": "Statin tedavisi altında ASCVD öyküsü olan ve eş zamanlı Tip 2 diyabeti bulunan bir hastada trigliserit düzeyi 250 mg/dL ölçülüyor. Klinisyen, iskemik olayları azaltmak amacıyla birinci basamak eklenecek bir ajan seçiyor.",
+      "secenekler": {
+        "A": "İkosapent Etil; saf yüksek doz EPA preparatı olup, REDUCE-IT çalışmasına dayanarak statin tedavisi altındaki ASCVD'li ve diyabetli hipertrigliseridemik bireylerde iskemik olayları düşürmek için birinci basamakta eklenir.",
+        "B": "Fenofibrat, bu klinik senaryoda REDUCE-IT çalışmasının birincil kanıtladığı ajandır.",
+        "C": "Olezarsen, bu hastanın TG düzeyinde (250 mg/dL) onaylı birincil endikasyona sahiptir.",
+        "D": "Lomitapid, diyabetik hastalarda hipertrigliseridemi tedavisinde birinci basamak ajandır.",
+        "E": "İkosapent Etil yalnızca diyabeti olmayan hastalarda kullanılabilir, bu hastada kontrendikedir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İkosapent Etil (saf yüksek doz EPA), REDUCE-IT çalışmasına dayanarak statin altındaki ASCVD'li VE diyabetli hipertrigliseridemik hastalarda iskemik olayları azaltmak için birinci basamakta eklenen ajandır — bu hasta tam olarak bu profile uymaktadır.",
+      "aciklama_detay": "İkosapent Etil, saf yüksek doz EPA preparatı olup, özellikle REDUCE-IT çalışmasına dayanarak statin tedavisi altındaki ASCVD'li ve diyabetli hipertrigliseridemik bireylerde iskemik olayları düşürmek için birinci basamakta eklenir. Bu hasta profili (statin altında ASCVD öyküsü + Tip 2 diyabet + hipertrigliseridemi 150-499 mg/dL aralığında) REDUCE-IT çalışmasının hedef popülasyonuna tam olarak uymaktadır. REDUCE-IT çalışması, bu spesifik hasta grubunda ikosapent etil eklenmesinin majör kardiyovasküler olayları (kardiyovasküler ölüm, non-fatal MI, non-fatal inme, koroner revaskülarizasyon, unstabil anjina) anlamlı ölçüde azalttığını göstermiştir — bu etki, yalnızca TG düşürücü etkiden bağımsız olarak, EPA'nın anti-inflamatuar, membran stabilize edici ve antitrombotik özelliklerine de atfedilmektedir. Fenofibrat gibi diğer TG düşürücü ajanlar ağır hipertrigliseridemide (genellikle >500 mg/dL) kullanılırken, ikosapent etilin bu spesifik ASCVD-olay-azaltıcı kanıtı yalnızca kendisine aittir ve fibratlarda bu düzeyde kanıt bulunmamaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İkosapent Etil, REDUCE-IT kanıtına dayanarak statin altındaki ASCVD'li/diyabetli hipertrigliseridemik hastalarda iskemik olay azaltmak için birinci basamakta eklenir.",
+        "B": "YANLIS — REDUCE-IT çalışması Fenofibrat'ı DEĞİL, İkosapent Etil'i değerlendirmiştir; fenofibrat farklı bir endikasyon (ağır hipertrigliseridemi) için kullanılır.",
+        "C": "YANLIS — Olezarsen'in onaylı endikasyonu Ailesel Şilomikronemi Sendromu'dur, bu hastanın TG düzeyi (250 mg/dL) ve klinik profili (ASCVD+diyabet, statin altında) bu endikasyona uymaz.",
+        "D": "YANLIS — Lomitapid, Homozigot Ailesel Hiperkolesterolemi (HoFH) için rezerve bir MTP inhibitörüdür; diyabetik hipertrigliseridemi tedavisinde birinci basamak DEĞİLDİR ve hepatosteatoz riski nedeniyle kısıtlı kullanılır.",
+        "E": "YANLIS — Tam tersine, REDUCE-IT çalışmasının hedef popülasyonu diyabetli hastaları DA İÇERİR; ikosapent etil diyabetik hastalarda kontrendike değildir, tam tersine bu grup çalışmanın önemli bir alt grubudur."
+      },
+      "etiketler": [
+        "İkosapent Etil",
+        "REDUCE-IT",
+        "EPA",
+        "Trigliserit Düşürücü",
+        "Diyabetik Hipertrigliseridemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bhatt et al. N Engl J Med 2019 (REDUCE-IT)"
+    },
+    {
+      "id": "s10",
+      "metin": "Homozigot Ailesel Hiperkolesterolemi (HoFH) tanılı bir hastada, LDL reseptör aktivitesi ciddi düzeyde azalmış (defektif LDLR alleller) olduğundan statin, ezetimib ve PCSK9 inhibitörü kombinasyonuna rağmen LDL-C hedefine ulaşılamıyor. Klinisyen, LDL reseptöründen tamamen bağımsız çalışan bir ajan ekliyor.",
+      "secenekler": {
+        "A": "Evinacumab; ANGPTL3'ü hedefleyen monoklonal antikor olup, VLDL kalıntılarının LPL üzerinden klirensini LDL reseptör varlığından tamamen bağımsız şekilde destekleyerek HoFH hastalarında LDL'yi ilave %49 oranında düşürür.",
+        "B": "Evolocumab dozunun artırılması, LDL reseptöründen bağımsız çalışan tek etkili stratejidir.",
+        "C": "Lomitapid, LDL reseptörü aracılığıyla çalışan ve HoFH'de LDLR fonksiyonunu düzelten bir ajandır.",
+        "D": "Bempedoik asit, LDL reseptöründen bağımsız çalışan ve HoFH'nin birincil tedavisi olan bir ajandır.",
+        "E": "Ezetimib dozunun iki katına çıkarılması, LDLR'den bağımsız bir LDL düşürme mekanizması sağlar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Evinacumab (ANGPTL3 hedefli mAb), VLDL kalıntı klirensini LPL üzerinden, LDL RESEPTÖRÜNDEN TAMAMEN BAĞIMSIZ şekilde destekler — bu, defektif LDLR alleli olan HoFH hastalarında (statin/ezetimib/PCSK9i'nin hepsi LDLR'ye bağımlı çalışır) özellikle değerli bir mekanizmadır ve LDL'yi ilave %49 düşürür.",
+      "aciklama_detay": "Evinacumab, ANGPTL3'ü hedefleyen monoklonal antikor olup, VLDL kalıntılarının LPL üzerinden klirensini, LDL reseptör varlığından tamamen 'bağımsız' şekilde destekleyerek HoFH hastalarında LDL'yi ilave %49 oranında ciddi anlamda düşürür. Bu mekanizma, HoFH tedavisinde kritik bir klinik problemi çözer: statinler (LDLR ekspresyonunu artırarak), ezetimib (dolaylı olarak LDLR ekspresyonunu artırarak) ve PCSK9 inhibitörleri (LDLR'nin yıkımını önleyerek) hepsi nihayetinde İŞLEV GÖREN LDL RESEPTÖRÜNE bağımlı çalışır. Ancak HoFH hastalarında (özellikle 'null/null' genotipte, yani her iki LDLR alleli de tamamen fonksiyonsuz olduğunda), bu LDLR-bağımlı ajanların hiçbiri yeterli etkinlik gösteremez çünkü hedef aldıkları reseptör mekanizması zaten yoktur veya ciddi defektiftir. Evinacumab'ın ANGPTL3 inhibisyonu üzerinden çalışması, LPL aktivitesini artırarak VLDL/kalıntı partikül klirensini LDLR'den TAMAMEN FARKLI, BAĞIMSIZ bir yolla sağlar — bu nedenle LDLR fonksiyonundan bağımsız olarak etkili olabilir ve en ağır HoFH vakalarında (diğer tüm LDLR-bağımlı tedavilere dirençli) dahi LDL-C'yi düşürebilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Evinacumab, ANGPTL3 hedefli olup LPL üzerinden VLDL kalıntı klirensini LDLR'den TAMAMEN BAĞIMSIZ sağlar; HoFH'de LDL'yi ilave %49 düşürür.",
+        "B": "YANLIS — Evolocumab (PCSK9 inhibitörü) mekanizması LDL RESEPTÖRÜNE BAĞIMLIDIR (LDLR'nin yıkımını önleyerek etki eder); defektif LDLR alleli olan hastalarda etkinliği sınırlıdır, LDLR'den bağımsız değildir.",
+        "C": "YANLIS — Lomitapid, MTP inhibisyonu yoluyla lipoprotein partikülü KURULUMUNU (şilomikron/VLDL sentezini) engeller; LDLR fonksiyonunu düzeltmez, LDLR'den bağımsız farklı bir mekanizmadır ama LDLR fonksiyonel düzeltmesi tanımı yanlıştır.",
+        "D": "YANLIS — Bempedoik asit ACLY inhibisyonu yoluyla hepatik kolesterol sentezini azaltıp LDLR ekspresyonunu artırır; bu mekanizma LDLR'YE BAĞIMLIDIR, HoFH'nin birincil tedavisi de değildir.",
+        "E": "YANLIS — Ezetimib, NPC1L1 blokajı yoluyla dolaylı olarak LDLR ekspresyonunu artırarak etki eder; bu mekanizma da LDLR'YE BAĞIMLIDIR, bağımsız bir mekanizma sağlamaz."
+      },
+      "etiketler": [
+        "Evinacumab",
+        "ANGPTL3",
+        "Homozigot Ailesel Hiperkolesterolemi",
+        "LDL Reseptöründen Bağımsız Mekanizma",
+        "HoFH Tedavisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Raal et al. N Engl J Med 2020 (ELIPSE HoFH — Evinacumab)"
+    }
+  ]
+}
