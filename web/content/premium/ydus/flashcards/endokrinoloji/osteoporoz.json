@@ -1,0 +1,488 @@
+{
+  "id": "fc-endo-osteoporoz-001",
+  "accessLevel": "premium",
+  "topic": "Osteoporoz",
+  "description": "YDUS Endokrinoloji serisi: Osteoporoz tanı kriterleri, FRAX, sekonder nedenler ve tüm farmakolojik ajanları kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Osteoporozun temel tanımı nedir?",
+      "back": "Düşük kemik kütlesi ve kemik dokusunun mikromimarisinin bozulması sonucu kemik kırılganlığının artmasıyla karakterize progresif metabolik bir kemik hastalığıdır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-2",
+      "front": "Klinik uygulamada osteoporoz tanısı için standart T skoru eşiği kaçtır?",
+      "back": "Lomber omurga, femur boynu veya toplam kalça T skorunun $\\le -2,5$ bulunmasıdır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-3",
+      "front": "Frajilite kırığı (düşük enerjili travma) hangi seviyeden düşme olarak tanımlanır?",
+      "back": "Ayakta durma yüksekliğinden ya da daha alçak bir seviyeden düşme sonrasında meydana gelen kırıklardır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-4",
+      "front": "Türkiye'de 50 yaş ve üzeri bireylerde osteoporoz prevalansı kadınlarda ve erkeklerde sırasıyla yüzde kaçtır?",
+      "back": "Kadınlarda $\\%12,9$, erkeklerde ise $\\%7,5$ düzeyindedir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-5",
+      "front": "Doruk kemik kütlesine (DKK) tam olarak hangi yaş civarında erişilmektedir?",
+      "back": "$30$ yaş civarında.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-6",
+      "front": "İnvolusyonel Osteoporoz Tip I (Tip I Osteoporoz) hangi mekanizmayla oluşur?",
+      "back": "Menopoz sonrası endojen östrojen eksikliğine bağlı olarak esas olarak trabeküler kemik kaybı ile oluşur.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-7",
+      "front": "Tip II (Senil) Osteoporozun Tip I'den farkı nedir?",
+      "back": "Hem kortikal hem trabeküler kemiği etkilemesi ve her iki cinste yaşa bağlı olarak gelişmesidir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-8",
+      "front": "Sekonder osteoporoz prevalansı hangi cinsiyette daha yüksektir?",
+      "back": "Erkeklerde daha yüksektir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-9",
+      "front": "Kemik mineral yoğunluğu (KMY) ölçümünde 'altın standart' kabul edilen yöntem hangisidir?",
+      "back": "Dual X-ray Absorbsiyometri (DXA).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-10",
+      "front": "Vertebral kırıkların saptanması için fizik muayenede her yıl yapılması gereken ölçüm nedir?",
+      "back": "Boy ölçümü yapılmalıdır (Sınıf A öneri).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-11",
+      "front": "DXA ölçümlerinde T skoru hangi popülasyonlar için tanı koydurucudur?",
+      "back": "Postmenopozal kadınlar ve $50$ yaş üstü erkekler.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-12",
+      "front": "Premenopozal kadınlarda ve $50$ yaş altı erkeklerde KMY değerlendirmesinde hangi skor kullanılmalıdır?",
+      "back": "Z skoru.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-13",
+      "front": "FRAX risk skorlaması hangi yaştan itibaren kullanılabilir?",
+      "back": "$40$ yaş ve üzerindeki bireylerde kullanılabilir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-14",
+      "front": "FRAX'a göre 10 yıllık majör osteoporotik kırık riski ve kalça kırığı riski tedavi eşikleri sırasıyla kaçtır?",
+      "back": "Majör osteoporotik kırık olasılığı $\\ge \\%20$ veya kalça kırığı olasılığı $\\ge \\%3$.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-15",
+      "front": "Tedavi almayan postmenopozal kadınlarda KMY ölçüm sıklığı ne olmalıdır?",
+      "back": "$2$ yılda bir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-16",
+      "front": "Teriparatid tedavisi alan hastalarda KMY ölçüm sıklığı ne olmalıdır?",
+      "back": "$6$ ayda bir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-17",
+      "front": "FRAX hesaplamasında göz önüne alınan 'aşırı alkol alımı' kriteri nedir?",
+      "back": "Günde $\\ge 3$ ünite alkol alımı.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-18",
+      "front": "'Çok yüksek risk' kategorisi için T skoru eşiği kaçtır?",
+      "back": "T skorunun $\\le -3,0$ olması.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-19",
+      "front": "Premenopozal osteoporoz tanısı konulabilmesi için KMY düşüklüğüne ne eşlik etmelidir?",
+      "back": "Frajilite kırığı ya da sekonder bir osteoporoz nedeninin varlığı.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-20",
+      "front": "Premenopozal kadınlarda 'yaşı için beklenenden düşük kemik yoğunluğu' tanımı hangi Z skoru için yapılır?",
+      "back": "Z skoru $\\le -2,0$ olanlar için.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-21",
+      "front": "Sekonder osteoporozun en sık görülen nedeni nedir?",
+      "back": "Glukokortikoid kullanımı.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-22",
+      "front": "Postmenopozal osteoporozda vertebra ve kalça dışındaki en sık kırık bölgesi neresidir?",
+      "back": "Distal radius.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-23",
+      "front": "Postmenopozal kadınlarda hedeflenen serum $25(OH)D$ düzeyi kaç $ng/ml$ üzeridir?",
+      "back": "$20 ng/ml$ üzeri (TEMD önerisi $30 ng/ml$ olabilir ancak kaynakta $20$ vurgulanmıştır).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-24",
+      "front": "Osteoporoz tedavisinde birinci basamak olarak önerilen ilaç grupları hangileridir?",
+      "back": "Bisfosfonatlar ve Denosumab.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-25",
+      "front": "Oral bisfosfonat kullanan hastalarda 'ilaç tatili' ne zaman düşünülmelidir?",
+      "back": "$5$ yıllık oral tedavi sonrası kırık riski stabilize olmuşsa.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-26",
+      "front": "İntravenöz (IV) zoledronat tedavisinde 'ilaç tatili' kaç yıl sonra değerlendirilir?",
+      "back": "$3$ yıllık tedavi sonrası.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-27",
+      "front": "Romosozumab hangi mekanizma ile etki gösterir?",
+      "back": "Sklerostini inhibe ederek hem kemik yapımını artıran hem de yıkımını azaltan dual etki gösterir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-28",
+      "front": "Romosozumab hangi hasta grubunda kontrendikedir?",
+      "back": "Miyokard enfarktüsü (MI) veya inme anamnezi olan ya da bu hastalıklar açısından yüksek riskli kadınlarda.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-29",
+      "front": "Denosumab tedavisi kesildikten sonra neden antirezorptif bir tedaviye geçilmelidir?",
+      "back": "Tedavi kesilince ortaya çıkan hızlı kemik kaybı ve rebound vertebral kırık riskini önlemek için.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-30",
+      "front": "Erkek osteoporozunda DXA T skoru hesaplanırken hangi referans veri tabanı kullanılmalıdır?",
+      "back": "Genç kadın referans veri tabanı (Sınıf A öneri).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-31",
+      "front": "Erkeklerde vertebral veya majör kırıklara bağlı mortalite oranı kadınlara göre nasıldır?",
+      "back": "Erkeklerde mortalite oranı kadınlardan daha yüksektir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-32",
+      "front": "Glukokortikoid osteoporozunda kemik kaybı en hızlı ne zaman gerçekleşir?",
+      "back": "Tedavinin ilk yılında, özellikle ilk birkaç ayında.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-33",
+      "front": "Glukokortikoid kullanan tüm hastalara önerilen günlük kalsiyum ve D vitamini dozları nedir?",
+      "back": "$1000-1200 mg/gün$ kalsiyum ve $600-800 IU/gün$ D vitamini.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-34",
+      "front": "Glukokortikoid dozunda hangi eşik değer ve süre farmakolojik tedavi için risk faktörüdür?",
+      "back": "$\\ge 7,5 mg/gün$ prednizon eşdeğeri dozda $\\ge 3$ ay kullanım.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-35",
+      "front": "Bisfosfonatlar hangi kreatinin klirensi değerinin altında kullanılmamalıdır?",
+      "back": "$< 30-35 ml/dk$.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-36",
+      "front": "Bariyatrik cerrahi (Roux-en-Y gibi) sonrası neden oral bisfosfonatlardan kaçınılmalıdır?",
+      "back": "Anastomoz bölgesinde ülserasyon riski ve emilim belirsizliği nedeniyle.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-37",
+      "front": "Teriparatid Türkiye'deki geri ödeme koşullarına göre maksimum ne kadar süre kullanılabilir?",
+      "back": "$18-24$ ay ($76$ hafta).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-38",
+      "front": "Hangi anabolik ajan hem kemik yapımını artırır hem de kemik yıkımını baskılar?",
+      "back": "Romosozumab.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-39",
+      "front": "Hipogonadal erkeklerde kemik sağlığı için öncelikle ne yapılmalıdır?",
+      "back": "Testosteron replasman tedavisi uygulanmalıdır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-40",
+      "front": "Aralıklı (pulsatil) PTH uygulaması olan Teriparatid'in kemik üzerindeki etkisi nedir?",
+      "back": "Anaboliktir; osteoblastik kemik oluşumunu uyarır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-41",
+      "front": "Osteoporozda fizik muayenede saptanan 'mavi sklera' hangi hastalığı düşündürmelidir?",
+      "back": "Osteogenezis imperfekta.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-42",
+      "front": "Fizik muayenede testis atrofisi saptanması hangi sekonder osteoporoz nedenine işaret eder?",
+      "back": "Hipogonadizm.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-43",
+      "front": "Osteomalazi ile osteoporozu ayırt etmekte kullanılan en önemli laboratuvar bulguları nelerdir?",
+      "back": "Osteomalazide hipokalsemi, hipofosfatemi ve artmış ALP görülürken; osteoporozda bu değerler genellikle normaldir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-44",
+      "front": "Bisfosfonatların en sık görülen ciddi olmayan gastrointestinal yan etkisi nedir?",
+      "back": "Özofajit ve özofageal iritasyon.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-45",
+      "front": "IV bisfosfonat uygulaması sonrası görülebilen 'akut faz reaksiyonu' semptomları nelerdir?",
+      "back": "Ateş, miyalji ve grip benzeri semptomlar.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-46",
+      "front": "Osteoporoz tedavisinde kullanılan Raloksifen'in hangi kırık tipi üzerinde etkisi gösterilememiştir?",
+      "back": "Vertebra dışı (non-vertebral) kırıklar.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-47",
+      "front": "Raloksifen kullanımında en önemli ciddi yan etki riski nedir?",
+      "back": "Venöz tromboemboli riski.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-48",
+      "front": "Denosumab tedavisine başlanmadan önce hangi parametre mutlaka normal olmalıdır?",
+      "back": "Serum kalsiyum düzeyi (hipokalsemi riski nedeniyle).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-49",
+      "front": "Kronik Böbrek Hastalığı (KBH) evre $4-5$'te kemik gücündeki azalmanın temel nedeni nedir?",
+      "back": "Osteoporoz ve KBH-İlişkili Kemik ve Mineral Bozukluklarının (KBH-MKB) birleşimidir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-50",
+      "front": "Teriparatid kullanımının ardından KMY'deki kazanımları korumak için ne yapılmalıdır?",
+      "back": "Ardışık olarak bir antirezorptif (bisfosfonat veya denosumab) tedavi başlanmalıdır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-51",
+      "front": "Hangi ilaç grubu çene osteonekrozu (ÇON) ve atipik femur kırığı (AFK) riskini artırabilir?",
+      "back": "Bisfosfonatlar ve Denosumab.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-52",
+      "front": "Premenopozal kadınlarda östrojen etkisini bloke ederek kemik kaybına yol açtığı için önerilmeyen ilaç grubu hangisidir?",
+      "back": "Selektif Östrojen Reseptör Modülatörleri (SERM).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-53",
+      "front": "FRAX risk skorlaması hangi durumdaki hastalarda kırık riskini olduğundan az (underestimate) hesaplar?",
+      "back": "Glukokortikoid kullanan hastalarda.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-54",
+      "front": "X'e Bağlı Hipofosfatemi tedavisinde kullanılan yeni monoklonal antikor hangisidir?",
+      "back": "Burosumab.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-55",
+      "front": "Düşük kemik döngüsü, PTH direnci ve alüminyum toksisitesi ile ilişkili olan kemik hastalığı hangisidir?",
+      "back": "Adinamik kemik hastalığı.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-56",
+      "front": "Erkeklerde osteoporoz gelişimi kadınlara göre ortalama kaç yıl gecikir?",
+      "back": "Yaklaşık $10$ yıl.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-57",
+      "front": "Postmenopozal dönemde yıllık kemik kaybı oranı yaklaşık yüzde kaçtır?",
+      "back": "Yıllık $\\%1$ civarındadır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-58",
+      "front": "Osteoporozda farmakolojik tedavi altında 'iyi yanıt' kriteri nedir?",
+      "back": "KMY'nin stabil kalması veya artması ve tedavi altında yeni kırık yaşanmaması.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-59",
+      "front": "Bisfosfonat alırken kırık gelişen ciddi osteoporoz hastalarında hangi tedavi değişikliği önerilir?",
+      "back": "Anabolik bir ajana geçilmesi.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-60",
+      "front": "Osteoporozlu erkeklerin yaklaşık yüzde kaçında sekonder bir neden saptanabilir?",
+      "back": "$\\%40-60$ oranında.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-61",
+      "front": "Tip 1 Diyabet hangi osteoporoz sınıfına girer?",
+      "back": "Sekonder osteoporoz.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-62",
+      "front": "Bisfosfonatların biyoyararlanımı (oral alımda) yaklaşık yüzde kaçtır?",
+      "back": "$\\%1$'den azdır.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-63",
+      "front": "Oral bisfosfonat alımından sonra ne kadar süre dik pozisyonda kalınmalıdır?",
+      "back": "Alendronat ve Risedronat için $30$ dakika, İbandronat için $60$ dakika.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-64",
+      "front": "Geçici kalça osteoporozu sıklıkla hangi dönemde görülür?",
+      "back": "Gebeliğin son dönemi veya erken postpartum dönemde.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-65",
+      "front": "Hangi hormon eksikliği erkeklerde hem trabeküler hem kortikal kemik kaybından birincil sorumludur?",
+      "back": "Testosteron (ve onun aromatizasyonu ile oluşan östrojen).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-66",
+      "front": "Kemik döngüsünün biyokimyasal belirteçleri klinik pratikte en çok ne için kullanılır?",
+      "back": "Tedaviye uyumu ve erken dönemde tedavi yanıtını değerlendirmek için.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-67",
+      "front": "Osteoporoz taraması için önerilen başlangıç yaşları (risk faktörü yoksa) kadın ve erkekte kaçtır?",
+      "back": "Kadınlarda $65$ yaş, erkeklerde $70$ yaş.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-68",
+      "front": "Bisfosfonatların kemikteki etki süresi neden çok uzundur?",
+      "back": "Hidroksiapatit kristallerine yüksek afinite ile bağlanıp kemik matriksinde depolandıkları için.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-69",
+      "front": "İntravenöz İbandronat hangi sıklıkta uygulanır?",
+      "back": "$3$ ayda bir $3 mg$ dozunda.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-70",
+      "front": "Zoledronik asit osteoporoz tedavisinde hangi sıklıkta uygulanır?",
+      "back": "Yılda bir kez $5 mg$ IV infüzyon şeklinde.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-71",
+      "front": "Denosumab hangi sıklıkta uygulanır?",
+      "back": "$6$ ayda bir $60 mg$ subkutan enjeksiyon şeklinde.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-72",
+      "front": "Fizik muayenede 'trunkal obezite, stria ve ekimoz' saptanması hangi osteoporoz nedenini düşündürür?",
+      "back": "Cushing sendromu (Glukokortikoid fazlalığı).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-73",
+      "front": "KMY T skoru $\\le -3,5$ olan bir postmenopozal kadında hangi ajan öncelikle tercih edilebilir?",
+      "back": "Anabolik ajanlar (Teriparatid, Abaloparatid veya Romosozumab).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-74",
+      "front": "Osteoporoz tanısında 'Lomber omurga' ölçümü için hangi vertebralar değerlendirilir?",
+      "back": "$L1-L4$ arası vertebralar.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-75",
+      "front": "Hangi ilaç 'kemik iliği ödemi' ile karakterize geçici kalça osteoporozunda kullanılabilir?",
+      "back": "Bisfosfonatlar (off-label kullanım kaynakta ima edilmiştir).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-76",
+      "front": "Osteoporoz tedavisinde 'Kalsitonin' neden ilk tercihler arasında değildir?",
+      "back": "Kırık riskini azaltmadaki etkinliğinin diğer ajanlara göre zayıf olması ve uzun dönemde kanser riski şüphesi.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-77",
+      "front": "KBH evre $3$'te PTH normal ise osteoporoz tedavisi nasıl yönetilir?",
+      "back": "Genel popülasyondaki gibi yönetilir.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-78",
+      "front": "Osteoporotik kalça kırığı sonrası bir yıllık mortalite oranı erkeklerde yaklaşık yüzde kaçtır?",
+      "back": "$\\%37,5$ (kadınlarda $\\%28,2$).",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-79",
+      "front": "Premenopozal kadında hızlı kemik kaybı eşiği (yüzde/yıl) kaçtır?",
+      "back": "Yıllık $\\ge \\%3-5$ KMY kaybı.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    },
+    {
+      "id": "card-80",
+      "front": "Kadınlarda menopoz sonrası kemik kaybının en hızlı olduğu dönem hangisidir?",
+      "back": "Son adet döneminden $3-5$ yıl öncesi ile $3-5$ yıl sonrası arasındaki dönem.",
+      "tag": "Endokrinoloji / Osteoporoz"
+    }
+  ]
+}
