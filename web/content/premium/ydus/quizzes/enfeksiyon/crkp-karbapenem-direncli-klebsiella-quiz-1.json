@@ -1,0 +1,308 @@
+{
+  "id": "quiz-enfeksiyon-crkp-001",
+  "baslik": "Karbapenem Dirençli Klebsiella pneumoniae (CRKP) — Soru Seti 1",
+  "branch": "enfeksiyon",
+  "topic": "crkp-karbapenem-direncli-klebsiella",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Önceden sağlıklı, hastane dışı ortamda yaşayan 38 yaşındaki bir hasta, ani başlangıçlı karaciğer apsesi ve eş zamanlı endoftalmi ile başvuruyor. Kültürde üreyen Klebsiella pneumoniae suşunda hem karbapenem direnci hem de string testi pozitifliği saptanıyor.",
+      "secenekler": {
+        "A": "Bu klinik tablo, direnç ve hipervirülans özelliklerinin plazmitler aracılığıyla yatay gen transferiyle tek bir bakteride birleştiği CR-hvKP (Karbapenem Dirençli Hipervirülan K. pneumoniae) enfeksiyonuyla uyumludur.",
+        "B": "Bu tablo klasik CRKP (cKP) ile uyumludur; klasik suşlar da sağlıklı bireylerde karaciğer apsesi ve endoftalmi yapabilir.",
+        "C": "String testi pozitifliği, karbapenem direncinin laboratuvar göstergesidir ve hipervirülansla ilgisi yoktur.",
+        "D": "Sağlıklı bireylerde hastane dışı ortamda gelişen bu tablo, K. pneumoniae ile ilişkilendirilemez, başka bir patojen düşünülmelidir.",
+        "E": "CR-hvKP yalnızca bağışıklığı baskılanmış hastalarda görülür, önceden sağlıklı bireylerde enfeksiyon yapmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Önceden sağlıklı hastada hastane dışı karaciğer apsesi + endoftalmi + string testi pozitif + karbapenem direnci = CR-hvKP'nin klasik tanımı. Bu, direnç (klasik CRKP özelliği) ile virülans (hvKP özelliği) plazmit aracılı gen transferiyle BİRLEŞTİĞİNDE ortaya çıkan 'çifte tehdit' profilidir.",
+      "aciklama_detay": "Geleneksel olarak K. pneumoniae suşları ikiye ayrılırdı: klasik suşlar (cKP) yüksek antibiyotik direncine sahip ancak düşük virülanslıyken; hipervirülan suşlar (hvKP) sağlıklı bireylerde dahi metastatik yıkıcı apseler yapabilen ancak antibiyotiklere duyarlı bakterilerdi. Günümüzde plazmitler aracılığıyla gerçekleşen yatay gen transferi sayesinde bu iki özellik tek bir bakteride birleşerek CR-hvKP (Karbapenem Dirençli Hipervirülan K. pneumoniae) adında 'çifte tehdit' oluşturan süper böcekler ortaya çıkmıştır. Bu hastadaki klinik senaryo — önceden sağlıklı bir bireyde, hastaneye yatmadan gelişen karaciğer apsesi ve endoftalmi (CR-hvKP'nin karakteristik doku yıkıcı, metastatik tablosu) ile birlikte string testi pozitifliği (hipermukoviskozite, hvKP'nin tipik özelliği) ve karbapenem direnci (klasik CRKP'nin tanımlayıcı özelliği) bir arada bulunması — tam olarak CR-hvKP'nin klasik tanımına uymaktadır. Bu varyant, hem antibiyotik tedavisini zorlaştıran direnç mekanizmalarını hem de sağlıklı konakçıda dahi agresif doku hasarı yapabilen virülans faktörlerini taşıdığından özellikle tehlikelidir ve mortalitesi klasik CRKP'ye göre anlamlı ölçüde yüksektir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Direnç + hipervirülans birleşimi (plazmit aracılı gen transferi) = CR-hvKP'nin tam tanımı; bu klinik tablo karakteristiktir.",
+        "B": "YANLIS — Klasik CRKP (cKP) DÜŞÜK VİRÜLANSLIDIR; sağlıklı bireylerde hastane dışı karaciğer apsesi/endoftalmi yapma özelliği hvKP'ye (ve CR-hvKP'ye) özgüdür, cKP'ye değil.",
+        "C": "YANLIS — String testi pozitifliği (hipermukoviskozite) HİPERVİRÜLANSIN göstergesidir, karbapenem direncinin değil; bunlar iki ayrı, bağımsız özelliktir.",
+        "D": "YANLIS — Tam tersine, bu klinik tablo (karaciğer apsesi+endoftalmi, sağlıklı bireyde) hvKP/CR-hvKP'nin EN TİPİK prezentasyonudur, K. pneumoniae ile güçlü şekilde ilişkilidir.",
+        "E": "YANLIS — CR-hvKP'nin (ve hvKP'nin) en ayırt edici özelliği tam olarak ÖNCEDEN SAĞLIKLI, bağışıklığı baskılanmamış bireylerde de agresif enfeksiyon yapabilmesidir; bu, klasik cKP'den temel farkıdır."
+      },
+      "etiketler": [
+        "CR-hvKP",
+        "Hipervirülans",
+        "String Testi",
+        "Karaciğer Apsesi",
+        "Endoftalmi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Russo & Marr. Clin Microbiol Rev 2019; Gu et al. Lancet Infect Dis 2018 (CR-hvKP Emergence)"
+    },
+    {
+      "id": "s2",
+      "metin": "Kültürde üreyen CRKP suşunun karbapenemaz aktivitesi araştırılıyor. Enzimin çalışması için aktif bölgesinde çinko iyonuna ihtiyaç duyduğu ve aztreonam dışındaki tüm beta-laktamları inaktive ettiği gösteriliyor.",
+      "secenekler": {
+        "A": "Bu enzim Sınıf B (MBL — Metallo-beta-laktamaz, örn. NDM/VIM/IMP) grubuna aittir; çinko iyonu bağımlılığı ve aztreonama dokunamama özelliği bu sınıfın tanımlayıcı biyokimyasal özellikleridir.",
+        "B": "Bu enzim Sınıf A (KPC) grubuna aittir; KPC de çinko iyonuna bağımlı çalışır.",
+        "C": "Bu enzim Sınıf D (OXA-48) grubuna aittir; OXA-48 aztreonamı da etkisiz hale getiremeyen tek karbapenemazdır.",
+        "D": "Çinko iyonu bağımlılığı, tüm karbapenemaz sınıflarının ortak bir özelliğidir, ayırt edici değildir.",
+        "E": "Aztreonama dokunamama özelliği, karbapenemazların hiçbirinde görülmeyen, yalnızca ESBL enzimlerine özgü bir durumdur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Çinko iyonu bağımlılığı + aztreonam dışındaki TÜM beta-laktamları inaktive etme, Sınıf B (Metallo-beta-laktamaz: NDM/VIM/IMP) enzimlerinin tanımlayıcı özellikleridir. Bu, MBL enzimlerini KPC ve OXA-48'den ayıran kritik biyokimyasal işarettir.",
+      "aciklama_detay": "Sınıf B (MBL'ler - NDM, VIM, IMP), 'Metallo-beta-laktamazlar' olarak adlandırılır ve çalışmak için aktif bölgelerinde çinko iyonuna ihtiyaç duyarlar. Sadece aztreonam antibiyotiğine dokunamazlar; bunun dışındaki tüm beta-laktamları inaktive ederler. Bu iki özellik (çinko bağımlılığı ve aztreonam-spesifik direnç boşluğu) MBL enzimlerini diğer karbapenemaz sınıflarından biyokimyasal olarak ayırır: Sınıf A (KPC) ve Sınıf D (OXA-48) enzimleri SERİN-bazlı enzimlerdir (aktif bölgelerinde serin amino asidi kullanırlar), çinko iyonuna ihtiyaç duymazlar. Bu ayrım klinik açıdan da kritik öneme sahiptir çünkü MBL enzimlerinin aztreonamı hidrolize edememesi, tedavi stratejisinin temelini oluşturur: MBL üreten suşlarda, avibactam/vaborbactam gibi klasik beta-laktamaz inhibitörleri MBL'ler tarafından parçalandığından işe yaramaz, ancak aztreonam (MBL'ye dirençli olduğu için) bir beta-laktamaz inhibitörüyle (örn. avibaktam, ESBL/AmpC gibi eşlik eden diğer enzimleri bloke etmek için) kombine edilerek etkili bir tedavi rejimi oluşturulabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Çinko bağımlılığı + aztreonam istisnası, Sınıf B (MBL: NDM/VIM/IMP) enzimlerinin tanımlayıcı özellikleridir.",
+        "B": "YANLIS — KPC (Sınıf A) bir SERİN-bazlı enzimdir, çinko iyonuna bağımlı DEĞİLDİR; ayrıca KPC neredeyse TÜM beta-laktamları (aztreonam dahil) parçalayabilir.",
+        "C": "YANLIS — OXA-48 (Sınıf D) de serin-bazlı bir enzimdir, çinko bağımlı değildir; aztreonamdan bağımsız çalışma özelliği MBL'lere aittir, OXA-48'e değil.",
+        "D": "YANLIS — Çinko iyonu bağımlılığı YALNIZCA Sınıf B (MBL) enzimlerine özgüdür; Sınıf A ve D enzimleri serin-bazlıdır ve bu özelliği taşımaz — ayırt edicidir.",
+        "E": "YANLIS — Aztreonama dokunamama, spesifik olarak MBL (metallo-beta-laktamaz) enzimlerinin bir özelliğidir; ESBL enzimleriyle karıştırılmamalıdır, bu tanımlama karbapenemazlar bağlamında MBL'ye aittir."
+      },
+      "etiketler": [
+        "MBL",
+        "Metallo-beta-laktamaz",
+        "NDM/VIM/IMP",
+        "Karbapenemaz Sınıflandırması",
+        "Aztreonam"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bush & Bradford. Nat Rev Microbiol 2019 (Beta-lactamase Classification)"
+    },
+    {
+      "id": "s3",
+      "metin": "Bir YBÜ salgınında izole edilen CRKP suşunda moleküler analiz sonucunda hem KPC hem de NDM genlerinin aynı bakteride bulunduğu tespit ediliyor. Klinik ekip, bu bulgunun tedavi seçenekleri üzerindeki etkisini değerlendiriyor.",
+      "secenekler": {
+        "A": "Çift karbapenemaz üretimi (KPC+NDM), bakteriyi pan-rezistan (tüm ilaçlara dirençli) hale getirebilecek en endişe verici güncel gelişmelerden biridir ve tedavi şansını neredeyse ortadan kaldırabilir.",
+        "B": "Çift karbapenemaz üretimi klinik açıdan önemsizdir çünkü iki enzim birbirini nötralize eder ve suş aslında karbapenemlere duyarlı hale gelir.",
+        "C": "KPC ve NDM'nin aynı bakteride bulunması biyolojik olarak imkansızdır, bu bir laboratuvar hatasıdır.",
+        "D": "Çift karbapenemaz üretimi yalnızca OXA-48 ile KPC kombinasyonunda görülür, KPC+NDM kombinasyonu tanımlanmamıştır.",
+        "E": "Çift karbapenemaz üretiminin tek klinik sonucu, bakterinin virülansının azalmasıdır, direnç profilini etkilemez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Çift karbapenemaz üretimi (örn. KPC+NDM veya NDM+OXA-48), bakteriyi PAN-REZİSTAN hale getirebilen, tedavi şansını neredeyse ortadan kaldıran en endişe verici güncel direnç gelişmelerinden biridir — iki farklı enzim mekanizması aynı anda çalışarak neredeyse tüm beta-laktam gruplarına karşı koruma sağlar.",
+      "aciklama_detay": "En endişe verici güncel gelişmelerden biri, aynı CRKP hücresinin aynı anda iki farklı enzimi (örneğin KPC + NDM veya NDM + OXA-48) birden üretmesidir. Bu durum bakteriyi pan-rezistan (tüm ilaçlara dirençli) hale getirebilmekte ve tedavi şansını neredeyse ortadan kaldırmaktadır. Bu klinik açıdan kritik bir sorundur çünkü tedavi algoritmaları genellikle TEK bir karbapenemaz tipine göre tasarlanır (örn. KPC için ceftazidime-avibactam, MBL için ceftazidime-avibactam+aztreonam). Ancak KPC+NDM birlikteliğinde, KPC'ye yönelik avibactam/vaborbactam gibi inhibitörler etkili olsa dahi, NDM enzimi bu inhibitörleri PARÇALAYARAK (MBL'lerin karakteristik özelliği) tedaviyi etkisiz kılabilir — bu nedenle hem KPC'yi hem NDM'yi aynı anda kapsayan bir strateji (örn. aztreonam+avibactam kombinasyonu, MBL'nin aztreonamı hidrolize edememesinden yararlanarak) gerekebilir. Bu çift enzim varlığı, tedavi seçeneklerini son derece daraltır ve mortaliteyi belirgin şekilde artırır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Çift karbapenemaz üretimi pan-rezistansa yol açabilen, tedavi şansını neredeyse ortadan kaldıran ciddi bir klinik problemdir.",
+        "B": "YANLIS — Tam tersine, iki enzim birbirini NÖTRALİZE ETMEZ; her ikisi de bağımsız olarak farklı beta-laktam gruplarını hidrolize edebildiğinden, birlikte varlıkları direnç spektrumunu GENİŞLETİR, daraltmaz.",
+        "C": "YANLIS — KPC ve NDM genlerinin aynı bakteride (genellikle farklı plazmitler üzerinde) birlikte bulunması biyolojik olarak MÜMKÜNDÜR ve klinik pratikte giderek daha sık bildirilmektedir; laboratuvar hatası değildir.",
+        "D": "YANLIS — Metinde açıkça belirtildiği gibi hem KPC+NDM hem de NDM+OXA-48 kombinasyonları örnek olarak verilmiştir; KPC+NDM kombinasyonu tanımlanmış ve bilinen bir durumdur.",
+        "E": "YANLIS — Çift karbapenemaz üretiminin birincil ve en kritik klinik sonucu DİRENÇ PROFİLİNİN genişlemesi/pan-rezistans potansiyelidir; virülans azalması gibi bir etki tanımlanmamıştır."
+      },
+      "etiketler": [
+        "Çift Karbapenemaz",
+        "KPC",
+        "NDM",
+        "Pan-Rezistans",
+        "Tedavi Direnci"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tzouvelekis et al. Clin Microbiol Rev 2012; Nordmann & Poirel. Clin Infect Dis 2019"
+    },
+    {
+      "id": "s4",
+      "metin": "CRKP suşunun karbapenemaz üretimine ek olarak, dış membran porinlerinde (OmpK35 ve OmpK36) kayıp ve AcrAB-TolC eflüks pompası aktivitesinde artış tespit ediliyor. Bu iki bulgunun direnç fenotipine katkısı soruluyor.",
+      "secenekler": {
+        "A": "OmpK35/36 kaybı, antibiyotiğin bakteri hücresine girişini azaltırken; AcrAB-TolC eflüks pompası hücre içine sızabilen az miktardaki antibiyotiği aktif olarak dışarı atar — bu iki mekanizma karbapenemaz üretimine EK OLARAK direnç kalkanını güçlendirir.",
+        "B": "OmpK35/36 porin kaybı, antibiyotiğin hücre içine girişini artırır, bu nedenle direnci azaltıcı bir mekanizmadır.",
+        "C": "AcrAB-TolC eflüks pompası yalnızca gram-pozitif bakterilerde işlev görür, K. pneumoniae'de aktif değildir.",
+        "D": "Bu iki mekanizma yalnızca karbapenemaz üretmeyen suşlarda görülür, karbapenemaz üreten suşlarda gereksizdir.",
+        "E": "Porin kaybı ve eflüks pompası aktivitesi, yalnızca beta-laktam dışı antibiyotiklere (örn. aminoglikozitler) karşı direnç sağlar, karbapenemlerle ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "OmpK35/36 kaybı = antibiyotik girişinin AZALMASI. AcrAB-TolC eflüks pompası = hücre içine giren ilacın AKTİF OLARAK DIŞARI ATILMASI. Bu iki mekanizma, karbapenemaz üretimine EK OLARAK (sinerjistik şekilde) direnç kalkanını güçlendirir — 'giriş azaltma + çıkış artırma' stratejisi.",
+      "aciklama_detay": "Karbapenemaz üretimine ek olarak, bakteri ilacın hücre içine girmesini sağlayan dış membran porinlerini (OmpK35 ve OmpK36) yok eder veya yapısını daraltır. Hücre içine sızabilen az miktardaki antibiyotiği ise AcrAB-TolC adı verilen aktif eflüks (atım) pompaları ile hızla dışarı atarak direnç kalkanını kusursuzlaştırır. Bu, CRKP'nin direnç mekanizmasının ÇOK KATMANLI doğasını gösterir: (1) Karbapenemaz enzimleri antibiyotiği doğrudan hidrolize eder (kimyasal inaktivasyon); (2) Porin kaybı, antibiyotiğin hücre dışı zarından hücre içine giriş miktarını azaltır (fiziksel bariyer); (3) Eflüks pompaları, hücre içine giren az miktardaki antibiyotiği aktif olarak dışarı pompalar (aktif atım). Bu üç mekanizmanın birlikte çalışması, tek bir mekanizmaya kıyasla çok daha yüksek düzeyde ve daha 'kusursuz' bir direnç sağlar — bazı suşlarda karbapenemaz aktivitesi görece düşük olsa dahi, porin kaybı ve eflüks pompası aktivitesinin eklenmesiyle klinik olarak anlamlı yüksek düzeyde direnç ortaya çıkabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Porin kaybı=giriş azalması; eflüks pompası=aktif dışarı atım; ikisi birlikte karbapenemaz üretimine ek olarak direnci güçlendirir.",
+        "B": "YANLIS — Tam tersine, OmpK35/36 kaybı antibiyotiğin hücre içine girişini AZALTIR (porin, antibiyotiğin geçiş yolu olduğundan kaybı direnci ARTIRIR), azaltıcı değil artırıcı bir mekanizmadır.",
+        "C": "YANLIS — AcrAB-TolC eflüks pompa sistemi GRAM-NEGATİF bakterilerde (K. pneumoniae dahil) işlev gören, iyi tanımlanmış bir direnç mekanizmasıdır; gram-pozitiflerle sınırlı değildir.",
+        "D": "YANLIS — Bu mekanizmalar metinde açıkça 'karbapenemaz üretimine EK OLARAK' tanımlanmıştır; karbapenemaz üreten suşlarda da bu ek mekanizmalar bulunur ve direnci pekiştirir, gereksiz değildir.",
+        "E": "YANLIS — Porin kaybı ve eflüks pompaları, KARBAPENEMLER DAHİL geniş bir antibiyotik spektrumuna karşı direnç sağlar; yalnızca beta-laktam dışı ajanlarla sınırlı değildir, metinde spesifik olarak karbapenem direnci bağlamında anlatılmıştır."
+      },
+      "etiketler": [
+        "OmpK35/OmpK36",
+        "Porin Kaybı",
+        "AcrAB-TolC",
+        "Eflüks Pompası",
+        "Çok Katmanlı Direnç"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wong et al. Front Microbiol 2019; Nikaido H. Microbiol Mol Biol Rev 2003 (Efflux Pumps)"
+    },
+    {
+      "id": "s5",
+      "metin": "YBÜ'de yatan bir hastada, önceki taramalarda dışkı kültüründe CRKP kolonizasyonu saptanmış olmasına rağmen klinik enfeksiyon bulgusu yoktu. İki ay sonra aynı hasta CRKP kaynaklı kan dolaşımı enfeksiyonu (bakteriyemi) ile prezente oluyor.",
+      "secenekler": {
+        "A": "Bu klinik seyir, CRKP'nin bağırsakta 'sessiz kolonizasyon' yaparak burada diğer bakterilerle plazmit aracılı direnç genlerini takas ettiği ve YBÜ'lerdeki yıkıcı kan enfeksiyonlarının çoğunun hastanın kendi bağırsağında aylar boyunca gizlice çoğalan bu suşlardan kaynaklandığı bilgisiyle tutarlıdır.",
+        "B": "Bu klinik seyir tesadüfidir; bağırsak kolonizasyonu ile sonraki kan dolaşımı enfeksiyonu arasında bilinen bir patogenetik bağlantı yoktur.",
+        "C": "CRKP bağırsakta asla kolonize olmaz, dışkı kültüründeki pozitiflik laboratuvar kontaminasyonunu düşündürür.",
+        "D": "Bağırsak kolonizasyonu yalnızca idrar yolu enfeksiyonu riskini artırır, kan dolaşımı enfeksiyonuyla ilişkisi yoktur.",
+        "E": "Bu hastadaki bakteriyemi, bağırsak florasından değil, kesinlikle yeni bir dışarıdan bulaş kaynağından gelişmiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "CRKP patogenezinde bağırsak kritik bir role sahiptir: önce sessiz kolonizasyon yapar, burada plazmit aracılı direnç genlerini takas eder, ve aylar sonra bu rezervuardan invaziv (kan dolaşımı) enfeksiyona ilerleyebilir. YBÜ'lerdeki CRKP bakteriyemilerinin ÇOĞU bu mekanizmadan kaynaklanır.",
+      "aciklama_detay": "CRKP patogenezinde insan bağırsağı hayati bir role sahiptir. Yoğun antibiyotik kullanımı, bağırsak florasını (mikrobiyom) bozarak doğal direnci yıkar. CRKP önce hastanın bağırsaklarına yerleşerek 'sessiz kolonizasyon' yapar ve burada diğer bakterilerle direnç genleri (plazmitler) takas eder. YBÜ'lerde gelişen yıkıcı CRKP kan enfeksiyonlarının çoğu, hastanın kendi bağırsaklarında aylar boyunca gizlice çoğalan bu suşlardan kaynaklanır. Bu hastadaki klinik seyir (önce asemptomatik dışkı kolonizasyonu, iki ay sonra aynı organizma ile bakteriyemi) tam olarak bu patogenetik modele uymaktadır: bağırsak, CRKP için 'sessiz bir rezervuar' işlevi görür ve burada bakteri hem çoğalabilir hem de diğer enterik bakterilerle plazmit alışverişi yaparak direnç profilini genişletebilir. Bu bilgi, klinik pratikte önemli sonuçlar doğurur — yüksek riskli hastalarda (YBÜ, immünsüpresyon, invaziv cihaz kullanımı) rektal sürveyans kültürleriyle asemptomatik CRKP taşıyıcılığının erken saptanması, hem enfeksiyon kontrol önlemlerinin (izolasyon) uygulanması hem de riskli hastalarda ampirik tedavi seçiminin yönlendirilmesi açısından değerlidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bağırsak sessiz kolonizasyon+plazmit takası yapar; YBÜ'deki CRKP bakteriyemilerinin çoğu bu endojen rezervuardan kaynaklanır.",
+        "B": "YANLIS — Metinde açıkça belirtildiği gibi bu, TESADÜFİ değil, İYİ TANIMLANMIŞ bir patogenetik bağlantıdır (endojen bağırsak rezervuarından invaziv enfeksiyona ilerleme).",
+        "C": "YANLIS — Tam tersine, CRKP'nin bağırsakta kolonize olması İYİ BİLİNEN, hastalığın patogenezinin TEMEL bir parçasıdır; laboratuvar kontaminasyonu değildir.",
+        "D": "YANLIS — Metinde açıkça 'YBÜ'lerde gelişen yıkıcı CRKP KAN ENFEKSİYONLARININ ÇOĞU' bağırsak kolonizasyonundan kaynaklandığı belirtilmiştir; kan dolaşımı enfeksiyonuyla doğrudan ilişkilidir, yalnızca İYE ile sınırlı değildir.",
+        "E": "YANLIS — Aynı hastanın önceden kolonize olduğu bilinen suşla aynı organizma bakteriyemi yapması, ENDOJEN (bağırsak kaynaklı) bir kaynağı güçlü şekilde düşündürür; 'kesinlikle dışarıdan yeni bulaş' iddiası temelsizdir."
+      },
+      "etiketler": [
+        "Bağırsak Kolonizasyonu",
+        "Sessiz Kolonizasyon",
+        "Plazmit Transferi",
+        "Endojen Bakteriyemi",
+        "YBÜ Sürveyansı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Gorrie et al. Clin Infect Dis 2017; Martin et al. mSphere 2016 (Gut Colonization and Bacteremia)"
+    },
+    {
+      "id": "s6",
+      "metin": "Hastane enfeksiyon kontrol ekibi, CRKP'nin yalnızca klinik ortamlarda değil; hastane atıksularında, su arıtma tesislerinde ve tarım/veterinerlik uygulamaları yoluyla gıda zincirinde de tespit edildiğini fark ediyor. Bu bulgunun epidemiyolojik önemi soruluyor.",
+      "secenekler": {
+        "A": "Bu, 'Tek Sağlık' (One Health) boyutunu yansıtır; çevresel rezervuarlar (atıksu, su kaynakları, gıda zinciri, evcil hayvanlar) dirençli plazmitlerin doğada depolanmasını ve tekrar insanlara bulaşmasını sağlayan önemli bir epidemiyolojik faktördür.",
+        "B": "Çevresel rezervuarlar CRKP epidemiyolojisinde önemsizdir çünkü bulaş yalnızca hastane içi doğrudan temas yoluyla gerçekleşir.",
+        "C": "CRKP çevresel ortamlarda hayatta kalamaz, bu nedenle atıksu ve su kaynaklarındaki pozitiflik yanlış pozitif sonuçlardır.",
+        "D": "Tek Sağlık boyutu yalnızca viral patojenler için geçerlidir, bakteriyel direnç epidemiyolojisiyle ilgisi yoktur.",
+        "E": "Gıda zinciri ve evcil hayvanlardaki CRKP varlığı, insan enfeksiyonlarıyla hiçbir genetik/epidemiyolojik bağlantı göstermemiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "CRKP'nin hastane dışı ortamlarda (atıksu, su kaynakları, gıda zinciri, evcil hayvanlar) da tespit edilmesi 'Tek Sağlık' (One Health) kavramını yansıtır — bu çevresel rezervuarlar dirençli plazmitlerin doğada depolanıp insanlara geri bulaşmasını sağlayan önemli bir epidemiyolojik döngü oluşturur.",
+      "aciklama_detay": "Tek Sağlık (One Health) Boyutu: CRKP sadece hastanelerde değil, hastane atıksularında, arıtma tesislerinde, doğal su kaynaklarında ve veterinerlik/tarım uygulamaları yoluyla gıda zinciri ile evcil hayvanlarda da tespit edilmektedir. Bu çevresel rezervuarlar, dirençli plazmitlerin doğada depolanmasını ve tekrar insanlara bulaşmasını sağlamaktadır. Bu kavram, antimikrobiyal direncin (AMR) yalnızca hastane içi bir sorun olmadığını, insan sağlığı, hayvan sağlığı ve çevre sağlığının birbirine bağlı bir ekosistem oluşturduğunu vurgular. Pratik sonuçları şunlardır: (1) hastane enfeksiyon kontrolü tek başına CRKP'nin küresel yayılımını durduramaz; (2) tarım ve veterinerlik alanında antibiyotik kullanımının akılcı hale getirilmesi de direnç mücadelesinin bir parçasıdır; (3) çevresel sürveyans (atıksu izleme gibi) potansiyel olarak popülasyon düzeyinde direnç trendlerini erken saptamak için kullanılabilir. Bu çok sektörlü yaklaşım, CRKP mücadelesinin yalnızca klinik/hastane temelli değil, geniş kapsamlı bir halk sağlığı stratejisi gerektirdiğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tek Sağlık boyutu: çevresel rezervuarlar (atıksu, su, gıda zinciri, hayvanlar) dirençli plazmitlerin depolanıp insanlara geri bulaşmasını sağlar.",
+        "B": "YANLIS — Metinde açıkça belirtildiği gibi çevresel rezervuarlar (atıksu, su kaynakları, gıda zinciri) CRKP epidemiyolojisinde ÖNEMLİ bir bulaş/depolama kaynağı olarak tanımlanmıştır; yalnızca hastane içi temasla sınırlı değildir.",
+        "C": "YANLIS — Tam tersine, CRKP'nin ÇEVRESEL ORTAMLARDA (atıksu, su kaynakları) tespit edilmesi, bu ortamlarda hayatta kalabildiğini/depolanabildiğini gösteren, iyi belgelenmiş bir bulgudur; yanlış pozitif değildir.",
+        "D": "YANLIS — Tek Sağlık kavramı hem viral hem BAKTERİYEL patojenleri (özellikle antimikrobiyal direnç epidemiyolojisini) kapsayan geniş bir çerçevedir; bakteriyel direnç ile doğrudan ilgilidir.",
+        "E": "YANLIS — Metinde gıda zinciri/evcil hayvanlardaki CRKP varlığı, dirençli plazmitlerin doğada depolanıp İNSANLARA TEKRAR BULAŞMASINI sağlayan bir mekanizma olarak tanımlanmıştır; bağlantı vurgulanmıştır, reddedilmemiştir."
+      },
+      "etiketler": [
+        "One Health",
+        "Tek Sağlık",
+        "Çevresel Rezervuar",
+        "AMR Epidemiyolojisi",
+        "Gıda Zinciri"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Robinson et al. Lancet Infect Dis 2016 (One Health and AMR); WHO Global Action Plan on AMR"
+    },
+    {
+      "id": "s7",
+      "metin": "Bir YBÜ'de CRKP salgını şüphesi doğuyor. Enfeksiyon kontrol ekibi, taşıyıcı hastaları geleneksel kültür yöntemlerinden çok daha hızlı şekilde saptayıp izole etmek istiyor.",
+      "secenekler": {
+        "A": "CRISPR-Cas temelli biyosensörler ve LAMP (İzotermal Amplifikasyon) testleri, karbapenemaz genlerini termal döngü cihazlarına ihtiyaç duymadan, yatak başında 1 saatten kısa sürede yüksek doğrulukla saptayabilir ve taşıyıcı hastaların hızla izolasyonunu sağlar.",
+        "B": "Geleneksel kültür yöntemleri, moleküler tekniklere kıyasla her zaman daha hızlı sonuç verir, bu nedenle salgın kontrolünde tercih edilmelidir.",
+        "C": "MALDI-TOF MS, karbapenemaz genlerini doğrudan tespit eden ve termal döngü gerektirmeyen bir izotermal amplifikasyon yöntemidir.",
+        "D": "Tam Genom Dizileme (WGS), yatak başında 1 saatten kısa sürede sonuç veren, termal döngü cihazı gerektirmeyen bir yöntemdir.",
+        "E": "Moleküler tanı yöntemlerinin hiçbiri karbapenemaz genlerini doğrudan saptayamaz, yalnızca fenotipik direnci gösterebilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "CRISPR-Cas temelli biyosensörler ve LAMP testleri, termal döngü cihazı gerektirmeden, yatak başında 1 saatten kısa sürede karbapenemaz genlerini yüksek doğrulukla saptayabilen son teknoloji hızlı tanı yöntemleridir — salgın kontrolünde taşıyıcı izolasyonunu hızlandırır.",
+      "aciklama_detay": "Hastanelerde CRKP salgınlarını kontrol altına almak için geleneksel kültür yöntemleri genellikle yavaştır. Günümüzde, direnç klonlarını hızla tespit edebilmek için Multipleks PCR, Tam Genom Dizileme (WGS) ve MALDI-TOF MS gibi ileri moleküler teknikler kullanılmaktadır. Son teknolojiler arasında yer alan CRISPR-Cas temelli biyosensörler ve LAMP (İzotermal Amplifikasyon) testleri, karbapenemaz genlerini termal döngü cihazlarına ihtiyaç duymadan, yatak başında 1 saatten kısa sürede yüksek doğrulukla saptayabilmektedir. Bu sayede taşıyıcı hastalar hızla izole edilebilmektedir. Bu teknolojilerin klinik/epidemiyolojik önemi büyüktür: geleneksel kültür yöntemleri (identifikasyon + antibiyotik duyarlılık testi) genellikle 48-72 saat sürerken, bu gecikme salgın kontrolünde kritik bir zaman kaybına yol açar (taşıyıcı hasta izole edilmeden diğer hastalarla temas edebilir). LAMP ve CRISPR-Cas tabanlı testler, PCR'ın aksine sabit sıcaklıkta (izotermal) çalıştığından pahalı termal döngü ekipmanına ihtiyaç duymaz, bu da onları yatak başı (point-of-care) kullanıma uygun, hızlı ve pratik hale getirir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — CRISPR-Cas biyosensörleri ve LAMP, termal döngü gerektirmeden, 1 saatten kısa sürede yatak başında karbapenemaz genlerini saptayabilir.",
+        "B": "YANLIS — Tam tersine, geleneksel kültür yöntemleri metinde açıkça 'GENELLİKLE YAVAŞTIR' olarak tanımlanmıştır; moleküler teknikler daha hızlıdır ve salgın kontrolünde tercih edilir.",
+        "C": "YANLIS — MALDI-TOF MS bir kütle spektrometresi tekniğidir, bakteri identifikasyonu için kullanılır; izotermal amplifikasyon yöntemi DEĞİLDİR — bu tanım LAMP'a aittir, MALDI-TOF'a değil.",
+        "D": "YANLIS — WGS (Tam Genom Dizileme), kapsamlı ancak GÖRECELI OLARAK YAVAŞ bir yöntemdir (saatler-günler); '1 saatten kısa sürede yatak başı sonuç' tanımı CRISPR-Cas/LAMP'a aittir, WGS'ye değil.",
+        "E": "YANLIS — Metinde açıkça Multipleks PCR, WGS, CRISPR-Cas biyosensörleri ve LAMP'ın karbapenemaz GENLERİNİ doğrudan saptadığı belirtilmiştir; bu yöntemler genotipik (gen düzeyinde) tespit yapar, yalnızca fenotipik değil."
+      },
+      "etiketler": [
+        "CRISPR-Cas Biyosensör",
+        "LAMP Testi",
+        "Moleküler Tanı",
+        "Yatak Başı Test",
+        "Salgın Kontrolü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wu et al. Clin Microbiol Infect 2021 (CRISPR Diagnostics); Hardy et al. J Clin Microbiol 2020 (LAMP)"
+    },
+    {
+      "id": "s8",
+      "metin": "Kolistine dirençli olmayan, ancak KPC üreten bir CRKP suşuna bağlı ciddi bakteriyemisi olan hastada tedavi planlanıyor. Klinik ekip, kolistin monoterapisi yerine yeni nesil bir beta-laktam/beta-laktamaz inhibitör kombinasyonunu tercih ediyor.",
+      "secenekler": {
+        "A": "Polimiksinler (Kolistin) ve Tigesiklin, artan direnç ve böbrek/sinir sistemi üzerindeki şiddetli toksik yan etkileri nedeniyle artık monoterapi olarak önerilmemektedir; KPC üreten suşlarda Ceftazidime-avibactam, Meropenem-vaborbactam veya İmipenem-silastatin-relebactam ilk tercih edilecek ajanlardır.",
+        "B": "Kolistin monoterapisi, KPC üreten suşlarda güncel kılavuzlarda hâlâ birinci basamak standart tedavi olarak önerilmektedir.",
+        "C": "Meropenem-vaborbactam, KPC üreten suşlarda in-vitro aktivitesi zayıf olan ve yüksek nefrotoksisite riski taşıyan bir ajandır.",
+        "D": "Ceftazidime-avibactam, yalnızca MBL üreten suşlarda etkilidir, KPC üreten suşlarda etkisizdir.",
+        "E": "KPC üreten suşlarda tigesiklin monoterapisi, güncel kılavuzlarda en yüksek klinik kür oranına sahip birinci basamak tedavidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kolistin/tigesiklin artık MONOTERAPİ olarak önerilmiyor (toksisite+artan direnç). KPC üreten suşlarda Ceftazidime-avibactam, Meropenem-vaborbactam veya İmipenem-silastatin-relebactam ilk tercih ajanlardır; Meropenem-vaborbactam özellikle güçlü in-vitro aktivite ve düşük nefrotoksisite ile öne çıkar.",
+      "aciklama_detay": "'Eski son çare' antibiyotiklerinden olan Polimiksinler (Kolistin) ve Tigesiklin, artan direnç ve böbrek/sinir sistemi üzerindeki şiddetli toksik yan etkileri nedeniyle artık monoterapi olarak önerilmemektedir. Modern algoritmalar yeni nesil beta-laktam/beta-laktamaz inhibitörlerine (BL/BLI) dayanır: KPC Üreten Suşlarda Ceftazidime-avibactam, Meropenem-vaborbactam veya İmipenem-silastatin-relebactam ilk tercih edilecek ajanlardır. Özellikle Meropenem-vaborbactam'ın KPC klonlarına karşı çok güçlü in-vitro aktivitesi bulunmakta, klinik kür oranlarını %75'lere çıkarırken nefrotoksisite yaratmamaktadır. Bu paradigma değişikliği önemlidir: kolistin, uzun yıllar CRKP tedavisinde 'son çare' ajan olarak kullanılmıştır, ancak dar terapötik penceresi (nefrotoksisite ve nörotoksisite riski), değişken farmakokinetiği ve artan kolistin direnci (mcr genleri ve kromozomal mutasyonlar aracılığıyla) nedeniyle artık tek başına (monoterapi) tercih edilmemektedir. Yeni nesil BL/BLI kombinasyonları, hem daha yüksek etkinlik hem de daha iyi güvenlik profili sunarak KPC üreten CRKP tedavisinde standart hale gelmiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kolistin/tigesiklin artık monoterapi önerilmiyor; KPC'de Ceftazidime-avibactam/Meropenem-vaborbactam/İmipenem-silastatin-relebactam ilk tercih.",
+        "B": "YANLIS — Tam tersine, kolistin monoterapisi artan direnç ve toksisite nedeniyle ARTIK ÖNERİLMEMEKTEDİR; yerini yeni nesil BL/BLI kombinasyonları almıştır.",
+        "C": "YANLIS — Meropenem-vaborbactam'ın KPC klonlarına karşı ÇOK GÜÇLÜ in-vitro aktivitesi vardır ve metinde açıkça NEFROTOKSİSİTE YARATMADIĞI belirtilmiştir; bu ifade tam tersini iddia etmektedir.",
+        "D": "YANLIS — Ceftazidime-avibactam, KPC üreten suşlarda İLK TERCİH EDİLECEK ajanlardan biri olarak listelenmiştir; MBL'de ise TEK BAŞINA değil AZTREONAM İLE KOMBİNE edilerek kullanılır (MBL avibaktamı parçalamadığı için değil, avibaktam MBL'yi inhibe edemediği için aztreonam eklenir).",
+        "E": "YANLIS — Tigesiklin monoterapisi güncel kılavuzlarda ÖNERİLMEMEKTEDİR (toksisite ve direnç nedeniyle); en yüksek klinik kür oranı tanımı metinde Meropenem-vaborbactam için (~%75) verilmiştir, tigesiklin için değil."
+      },
+      "etiketler": [
+        "Ceftazidime-avibactam",
+        "Meropenem-vaborbactam",
+        "KPC Tedavisi",
+        "Kolistin Monoterapisi",
+        "BL/BLI Kombinasyonları"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tamma et al. Clin Infect Dis 2022 (IDSA Guidance on AMR Treatment); van Duin et al. Clin Infect Dis 2018"
+    },
+    {
+      "id": "s9",
+      "metin": "MBL (NDM) üreten CRKP suşuna bağlı ciddi enfeksiyonu olan bir hastada, standart ceftazidime-avibactam monoterapisinin etkisiz kaldığı gözleniyor. Klinik ekip, tedavi rejimini MBL'nin biyokimyasal özelliğine göre yeniden düzenliyor.",
+      "secenekler": {
+        "A": "MBL'ler avibactam ve vaborbactam gibi inhibitörleri parçaladıkları için klasik yeni nesil kombinasyonlar işe yaramaz; bu enzimleri bloke etmek için Ceftazidime-avibactam + Aztreonam kombinasyonu (veya hazır Aztreonam-avibactam) uygulanmalıdır.",
+        "B": "MBL üreten suşlarda ceftazidime-avibactam dozunun iki katına çıkarılması, tek başına yeterli bir tedavi stratejisidir.",
+        "C": "MBL üreten suşlarda aztreonam eklenmesi kontrendikedir çünkü aztreonam da MBL tarafından etkisiz hale getirilir.",
+        "D": "MBL üreten suşlarda tek etkili tedavi seçeneği kolistin monoterapisidir, başka bir kombinasyon önerilmez.",
+        "E": "Meropenem-vaborbactam, MBL üreten suşlarda ceftazidime-avibactamdan daha güçlü in-vitro aktiviteye sahiptir ve tercih edilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MBL'ler avibactam/vaborbactam gibi inhibitörleri PARÇALAR, bu yüzden klasik yeni nesil BL/BLI kombinasyonları etkisiz kalır. Çözüm: MBL'nin hidrolize edemediği aztreonamı, eşlik eden diğer beta-laktamazları (ESBL/AmpC) bloke etmek için avibactam ile kombine etmek (Ceftazidime-avibactam+Aztreonam veya Aztreonam-avibactam).",
+      "aciklama_detay": "MBL (NDM, VIM, IMP) Üreten Suşlar: MBL'ler avibactam ve vaborbactam gibi inhibitörleri parçaladıkları için klasik yeni nesil kombinasyonlar işe yaramaz. Bu enzimleri bloke etmek ve tedaviyi sağlamak için rasyonel bir çözüm olan Ceftazidime-avibactam + Aztreonam kombinasyonu (veya hazır Aztreonam-avibactam) uygulanır. Bu tedavi stratejisinin mantığı şudur: Aztreonam, monobaktam grubu bir antibiyotik olup MBL enzimleri tarafından hidrolize EDİLEMEZ (MBL'lerin substrat spektrumu dışındadır) — bu, metnin önceki bölümünde belirtilen 'MBL'ler sadece aztreonama dokunamaz' bilgisiyle doğrudan bağlantılıdır. Ancak CRKP suşları genellikle MBL'ye EK OLARAK diğer beta-laktamazları (ESBL veya AmpC gibi) da taşıyabilir, bu da aztreonamı da hidrolize edebilir. Bu nedenle aztreonam tek başına yeterli olmayabilir; avibactam eklenerek bu EŞLİK EDEN ESBL/AmpC enzimleri bloke edilir (avibactam MBL'yi inhibe edemez ama ESBL/AmpC'yi inhibe edebilir), böylece aztreonamın etkinliği korunur. Bu, iki farklı direnç mekanizmasını (MBL + ESBL/AmpC) aynı anda hedefleyen akılcı bir kombinasyon stratejisidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MBL avibactam/vaborbactamı parçalar; çözüm aztreonam (MBL'ye dirençli) + avibactam (eşlik eden ESBL/AmpC'yi bloke eder) kombinasyonudur.",
+        "B": "YANLIS — Ceftazidime-avibactam MONOTERAPİSİ (doz artırılsa dahi), MBL enzimi tarafından avibactamın parçalanması nedeniyle MBL üreten suşlarda ETKİSİZ kalır; tek başına yeterli değildir.",
+        "C": "YANLIS — Tam tersine, metinde açıkça belirtildiği gibi MBL'ler AZTREONAMA DOKUNAMAZ (aztreonamı hidrolize edemez); bu nedenle aztreonam MBL üreten suşlarda TERCİH EDİLEN, kontrendike olmayan bir ajandır.",
+        "D": "YANLIS — Metinde MBL üreten suşlar için spesifik olarak Ceftazidime-avibactam+Aztreonam (veya Aztreonam-avibactam) kombinasyonu 'rasyonel bir çözüm' olarak önerilmiştir; kolistin monoterapisiyle sınırlı değildir.",
+        "E": "YANLIS — Meropenem-vaborbactam, KPC üreten suşlar için önerilen bir ajandır; MBL üreten suşlarda vaborbactam da (avibactam gibi) MBL tarafından parçalanacağından etkisiz kalır, MBL'de tercih edilmez."
+      },
+      "etiketler": [
+        "MBL Tedavisi",
+        "Aztreonam-Avibactam",
+        "NDM",
+        "Kombinasyon Tedavisi",
+        "ESBL/AmpC Eş Zamanlı Direnç"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Falcone et al. Clin Infect Dis 2021 (Ceftazidime-avibactam plus Aztreonam for MBL); Karlowsky et al. Antimicrob Agents Chemother 2020"
+    },
+    {
+      "id": "s10",
+      "metin": "Aynı hastada hem KPC hem OXA-48 üreten pan-rezistan bir CRKP suşu tespit ediliyor; ceftazidime-avibactam ve aztreonam-avibactam kombinasyonlarına yanıt alınamıyor. Klinik ekip, bakterinin demir taşıma sistemini hedefleyen alternatif bir ajan ile bir gelecek stratejisini değerlendiriyor.",
+      "secenekler": {
+        "A": "Cefiderocol, bakterinin demir taşıma yollarını 'truva atı' gibi kullanarak hücre içine sızan ve tüm karbapenemaz sınıflarına (A, B ve D) karşı etkili olan bir kurtarma terapisi ajanıdır; bakteriyofaj terapisi ise pan-rezistan vakalarda antibiyotiklerle sinerjistik olarak kullanılabilecek umut vadeden bir gelecek stratejisidir.",
+        "B": "Cefiderocol yalnızca Sınıf A (KPC) karbapenemazlara etkilidir, Sınıf B ve D enzimlerine karşı etkisizdir.",
+        "C": "Bakteriyofaj terapisi, antibiyotiklerle birlikte kullanıldığında sinerjistik etki göstermez, yalnızca tek başına uygulanabilir.",
+        "D": "Demir taşıma sistemini hedefleyen ajanlar, yalnızca MBL üreten suşlarda etkilidir, KPC/OXA-48 kombinasyonunda işe yaramaz.",
+        "E": "Bu klinik senaryoda hiçbir tedavi seçeneği kalmamıştır, cefiderocol ve bakteriyofaj terapisi teorik kavramlar olup klinik kullanımda değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Cefiderocol (siderofor sefalosporin, demir taşıma yolunu 'truva atı' gibi kullanır) TÜM karbapenemaz sınıflarına (A, B, D) etkilidir — çift karbapenemaz üreten (KPC+OXA-48) pan-rezistan suşlarda dahi kurtarma terapisi seçeneğidir. Bakteriyofaj terapisi ise antibiyotiklerle sinerjistik kullanılabilen umut vadeden bir gelecek stratejisidir.",
+      "aciklama_detay": "Cefiderocol: Bakterinin demir taşıma yollarını truva atı gibi kullanarak hücre içine sızan bu siderofor sefalosporin, tüm karbapenemaz sınıflarına (A, B ve D) karşı etkilidir ve önemli bir 'kurtarma terapisi' ajanıdır. Alternatif ve Gelecek Stratejileri: Antibiyotiklerin yetersiz kaldığı pan-rezistan vakalarda litik fajlar kullanılarak yapılan Bakteriyofaj Terapisi, antibiyotiklerle birlikte (faj-antibiyotik sinerjisi) umut vaat etmektedir. Bu klinik senaryo (KPC+OXA-48 çift karbapenemaz üreten pan-rezistan suş, standart BL/BLI kombinasyonlarına yanıtsız) tam olarak cefiderocol'ün en değerli olduğu durumu tanımlar: cefiderocol'ün mekanizması, diğer beta-laktam/beta-laktamaz inhibitörü kombinasyonlarından TEMELDEN FARKLIDIR — hücre içine girişi sideroforlara benzer bir 'truva atı' stratejisiyle (demir taşıyıcı reseptörler aracılığıyla aktif taşınma) sağlanır, bu da onu porin kaybı gibi klasik direnç mekanizmalarından da kısmen bağımsız kılar. Ayrıca yapısal olarak tüm üç karbapenemaz sınıfına (serin-bazlı KPC/OXA-48 ve metallo-bazlı MBL) karşı stabildir, bu da onu çoklu/çift karbapenemaz üreten en zorlu vakalarda dahi bir seçenek haline getirir. Bakteriyofaj terapisi ise, antibiyotiklerin tükendiği durumlarda, faj-antibiyotik sinerjisinden yararlanarak deneysel/kurtarma amaçlı kullanılan gelişmekte olan bir stratejidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Cefiderocol tüm karbapenemaz sınıflarına (A,B,D) etkilidir; bakteriyofaj terapisi antibiyotiklerle sinerjistik kullanılabilen umut vadeden bir strateji.",
+        "B": "YANLIS — Tam tersine, metinde açıkça cefiderocol'ün TÜM karbapenemaz sınıflarına (A, B VE D) karşı etkili olduğu belirtilmiştir; yalnızca Sınıf A ile sınırlı değildir.",
+        "C": "YANLIS — Metinde açıkça 'faj-antibiyotik sinerjisi' ifadesiyle bakteriyofaj terapisinin ANTİBİYOTİKLERLE BİRLİKTE kullanıldığında sinerjistik etki gösterdiği belirtilmiştir; yalnızca tek başına uygulanmakla sınırlı değildir.",
+        "D": "YANLIS — Cefiderocol'ün etkinliği MBL ile sınırlı değildir; metinde açıkça TÜM karbapenemaz sınıfları (A, B, D — yani KPC, MBL VE OXA-48 dahil) için etkili olduğu vurgulanmıştır.",
+        "E": "YANLIS — Cefiderocol ve bakteriyofaj terapisi TEORİK KAVRAMLAR DEĞİLDİR; cefiderocol klinik kullanımda olan onaylı bir 'kurtarma terapisi' ajanıdır, bakteriyofaj terapisi de gelişmekte olan ancak klinik uygulamaları bulunan bir stratejidir."
+      },
+      "etiketler": [
+        "Cefiderocol",
+        "Siderofor Sefalosporin",
+        "Bakteriyofaj Terapisi",
+        "Kurtarma Terapisi",
+        "Pan-Rezistan CRKP"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Bassetti et al. Lancet Infect Dis 2021 (Cefiderocol); Suh et al. Antimicrob Agents Chemother 2022 (Phage-Antibiotic Synergy)"
+    }
+  ]
+}

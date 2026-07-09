@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "id": "crkp-karbapenem-direncli-klebsiella",
+    "branch": "enfeksiyon",
+    "baslik": "Karbapenem Dirençli Klebsiella pneumoniae (CRKP)",
+    "altbaslik": "CR-hvKP hipervirülan varyant, karbapenemaz sınıflandırması (KPC/MBL/OXA-48), moleküler tanı ve yeni nesil BL/BLI tedavi algoritmaları",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Karbapenem dirençli Klebsiella pneumoniae (CRKP), WHO tarafından insan sağlığına yönelik 'en yüksek öncelikli ve kritik' patojenler listesine alınmış çoklu ilaç dirençli bir bakteridir. Özellikle YBÜ'lerde, bağışıklığı baskılanmış ve kritik hastalarda %50-60'lara varan mortaliteyle seyreden sepsis, pnömoni, idrar yolu ve intra-abdominal enfeksiyonlara yol açar."
+        },
+        {
+          "metin": "Epidemiyoloji: ABD ve Avrupa'da çoğunlukla **ST258** klonu yaygınken, Çin ve diğer Asya ülkelerinde **ST11** klonu baskın olup hastane içi salgınların baş aktörüdür."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "CR-hvKP — Karbapenem Dirençli Hipervirülan Varyant (\"Kusursuz Fırtına\")",
+      "satirlar": [
+        {
+          "metin": "Geleneksel olarak K. pneumoniae suşları ikiye ayrılırdı: klasik suşlar (cKP) yüksek antibiyotik direncine sahip ancak düşük virülanslıyken; hipervirülan suşlar (hvKP) sağlıklı bireylerde dahi metastatik yıkıcı apseler yapabilen ancak antibiyotiklere duyarlı bakterilerdi. Günümüzde plazmitler aracılığıyla gerçekleşen yatay gen transferi sayesinde bu iki özellik tek bir bakteride birleşerek **CR-hvKP** adında 'çifte tehdit' oluşturan süper böcekler ortaya çıkmıştır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "CR-hvKP Virülans Faktörleri",
+      "kolonlar": [
+        "Faktör",
+        "Özellik/Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Hiperkapsül / K Serotipleri",
+            "K1 ve K2 kapsül serotipleri, fagositozdan etkili şekilde kaçışı sağlar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Hipermukoviskozite ★",
+            "String testi pozitifliği — öze dokundurulduğunda 5 mm'den uzun sümüksü iplikçik oluşması, en tipik özellik"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sideroforlar",
+            "Aerobaktin, salmokelin, yersiniabaktin — konakçı demirini çalarak bakteri çoğalmasını hızlandırır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Doku Yıkıcı Klinik Tablo ★",
+            "Sağlıklı bireylerde hastane dışı karaciğer apsesi, endoftalmi (hızla körlük yapan göz içi enfeksiyon) ve pürülan menenjit"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "CR-hvKP ile enfekte olan hastalarda ölüm riski, klasik CRKP'ye kıyasla ANLAMLI DERECEDE DAHA YÜKSEKTİR — çift tehdit (yüksek direnç + yüksek virülans) kombinasyonu, hem tedaviyi zorlaştırır hem de hastalık şiddetini artırır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Direnç Mekanizmaları — Karbapenemaz Enzimleri",
+      "satirlar": [
+        {
+          "metin": "CRKP'nin karbapenem grubu antibiyotiklere karşı direnci, genetik olarak plazmitler üzerinde taşınan ve kolayca diğer bakterilere aktarılabilen **karbapenemaz enzimleri** temelinde gelişir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Karbapenemaz Sınıflandırması (Ambler)",
+      "kolonlar": [
+        "Sınıf",
+        "Örnekler",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Sınıf A — KPC ★",
+            "KPC (Klebsiella pneumoniae Karbapenemaz)",
+            "Küresel ve ülkemizde en sık karşılaşılan karbapenemaz; penisilin, sefalosporin ve karbapenem dahil neredeyse tüm beta-laktamları parçalar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Sınıf B — MBL",
+            "NDM, VIM, IMP",
+            "Metallo-beta-laktamaz; aktif bölgede çinko iyonu gerektirir; SADECE AZTREONAM'a dokunamaz, gerisindeki tüm beta-laktamları inaktive eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sınıf D — OXA-48",
+            "OXA-48",
+            "Sefalosporinleri zayıf, karbapenemleri güçlü şekilde hidrolize eder"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Çift Karbapenemaz Üreten Suşlar: Aynı CRKP hücresinin aynı anda iki farklı enzimi (örn. KPC + NDM veya NDM + OXA-48) birden üretmesi, en endişe verici güncel gelişmelerden biridir — bu durum bakteriyi PAN-REZİSTAN (tüm ilaçlara dirençli) hale getirebilir ve tedavi şansını neredeyse ortadan kaldırır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Membran Değişiklikleri ve Eflüks Pompaları",
+      "satirlar": [
+        {
+          "metin": "Karbapenemaz üretimine ek olarak, bakteri ilacın hücre içine girmesini sağlayan dış membran porinlerini (**OmpK35 ve OmpK36**) yok eder veya daraltır. Hücre içine sızabilen az miktardaki antibiyotiği ise **AcrAB-TolC** adı verilen aktif eflüks pompaları ile hızla dışarı atarak direnç kalkanını kusursuzlaştırır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Risk Faktörleri, Bulaş Dinamikleri ve Sessiz Rezervuarlar",
+      "satirlar": [
+        {
+          "metin": "CRKP enfeksiyonu gelişme riskini artıran en önemli faktörler; yoğun bakım yatışı, ileri yaş, kardiyovasküler veya şiddetli böbrek hastalıkları, mekanik ventilatör ve idrar sondası gibi invaziv cihaz kullanımıdır. Öncesinde florokinolon, sefalosporin ve karbapenem gibi geniş spektrumlu antibiyotiklere maruz kalmak en büyük risk faktörlerinden biridir."
+        },
+        {
+          "metin": "**Bağırsak Mikrobiyotası ve Sessiz Yayılım:** Yoğun antibiyotik kullanımı bağırsak florasını bozarak doğal direnci yıkar. CRKP önce hastanın bağırsaklarına yerleşerek 'sessiz kolonizasyon' yapar ve burada diğer bakterilerle plazmitler aracılığıyla direnç genlerini takas eder. YBÜ'lerde gelişen yıkıcı CRKP kan enfeksiyonlarının çoğu, hastanın kendi bağırsaklarında aylar boyunca gizlice çoğalan bu suşlardan kaynaklanır."
+        },
+        {
+          "metin": "**Tek Sağlık (One Health) Boyutu:** CRKP yalnızca hastanelerde değil, hastane atıksularında, arıtma tesislerinde, doğal su kaynaklarında ve veterinerlik/tarım uygulamaları yoluyla gıda zinciri ile evcil hayvanlarda da tespit edilmektedir. Bu çevresel rezervuarlar, dirençli plazmitlerin doğada depolanmasını ve tekrar insanlara bulaşmasını sağlar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sürveyans ve Modern Tanı Yöntemleri",
+      "satirlar": [
+        {
+          "metin": "Geleneksel kültür yöntemleri genellikle yavaştır. Günümüzde direnç klonlarını hızla tespit etmek için **Multipleks PCR, Tam Genom Dizileme (WGS) ve MALDI-TOF MS** gibi ileri moleküler teknikler kullanılmaktadır. Son teknolojiler arasında yer alan **CRISPR-Cas temelli biyosensörler ve LAMP (İzotermal Amplifikasyon) testleri**, karbapenemaz genlerini termal döngü cihazlarına ihtiyaç duymadan, yatak başında 1 saatten kısa sürede yüksek doğrulukla saptayabilmekte ve taşıyıcı hastaların hızla izolasyonunu sağlamaktadır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Güncel Tedavi Yaklaşımları",
+      "satirlar": [
+        {
+          "metin": "CRKP tedavisi, laboratuvarda tespit edilen spesifik karbapenemazın (KPC, MBL, OXA-48 vb.) türüne ve hastanın kliniğine göre özelleştirilir. 'Eski son çare' antibiyotiklerinden Polimiksinler (Kolistin) ve Tigesiklin, artan direnç ve böbrek/sinir sistemi üzerindeki şiddetli toksik yan etkileri nedeniyle artık MONOTERAPİ olarak önerilmemektedir. Modern algoritmalar yeni nesil beta-laktam/beta-laktamaz inhibitörlerine (BL/BLI) dayanır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Karbapenemaz Tipine Göre Tedavi Algoritması",
+      "kolonlar": [
+        "Karbapenemaz Tipi",
+        "Tercih Edilen Tedavi",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "KPC (Sınıf A) ★",
+            "Ceftazidime-avibactam, Meropenem-vaborbactam veya İmipenem-silastatin-relebactam",
+            "Meropenem-vaborbactam, KPC klonlarına karşı çok güçlü in-vitro aktivite gösterir; klinik kür oranları ~%75, nefrotoksisite yaratmaz"
+          ]
+        },
+        {
+          "hucreler": [
+            "OXA-48 (Sınıf D)",
+            "Ceftazidime-avibactam",
+            "Sıklıkla başarılı sonuçlar verir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "MBL — NDM/VIM/IMP (Sınıf B) ★",
+            "Ceftazidime-avibactam + Aztreonam (veya hazır Aztreonam-avibactam)",
+            "MBL'ler avibactam/vaborbactam gibi inhibitörleri PARÇALADIĞI için klasik yeni nesil kombinasyonlar işe yaramaz; aztreonam eklenerek bu boşluk kapatılır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Cefiderocol: Bakterinin demir taşıma yollarını 'truva atı' gibi kullanarak hücre içine sızan bu siderofor sefalosporin, TÜM karbapenemaz sınıflarına (A, B ve D) karşı etkilidir ve önemli bir 'kurtarma terapisi' ajanıdır — özellikle çift karbapenemaz üreten pan-rezistan suşlarda değerlidir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Alternatif ve Gelecek Stratejileri",
+      "satirlar": [
+        {
+          "metin": "Antibiyotiklerin yetersiz kaldığı pan-rezistan vakalarda, litik fajlar kullanılarak yapılan **Bakteriyofaj Terapisi**, antibiyotiklerle birlikte (faj-antibiyotik sinerjisi) umut vaat eden bir gelecek stratejisidir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — CRKP 10 Altın Kural: (1) ABD/Avrupa'da ST258, Asya'da ST11 klonu baskındır. (2) CR-hvKP=direnç+virülans birleşimi; K1/K2 kapsül, string testi pozitif hipermukoviskozite ile tanınır. (3) CR-hvKP sağlıklı bireylerde dahi karaciğer apsesi/endoftalmi/menenjit yapabilir, mortalite klasik CRKP'den yüksektir. (4) KPC (Sınıf A)=en sık; MBL (Sınıf B, NDM/VIM/IMP)=yalnızca aztreonama dokunamaz; OXA-48 (Sınıf D)=karbapenemi güçlü hidrolize eder. (5) Çift karbapenemaz (örn. KPC+NDM) pan-rezistansa yol açabilir. (6) OmpK35/36 porin kaybı + AcrAB-TolC eflüks pompası direnci pekiştirir. (7) CRKP önce bağırsakta sessiz kolonize olur, sonra invaziv enfeksiyona ilerler. (8) Kolistin/tigesiklin artık monoterapi olarak önerilmez. (9) KPC→Meropenem-vaborbactam/Ceftazidime-avibactam; MBL→Ceftazidime-avibactam+Aztreonam; her karbapenemaz sınıfına→Cefiderocol. (10) Bakteriyofaj terapisi pan-rezistan vakalarda umut vadeden bir gelecek stratejisidir."
+    }
+  ]
+}

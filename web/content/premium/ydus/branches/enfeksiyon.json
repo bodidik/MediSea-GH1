@@ -23,6 +23,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "direncli-bakteriyel-enfeksiyonlar",
+      "baslik": "Dirençli Bakteriyel Enfeksiyonlar",
+      "aciklama": "Çoklu ilaç dirençli gram-negatif bakteriler ve modern tedavi stratejileri",
+      "emoji": "🧫",
+      "konular": [
+        {
+          "id": "crkp-karbapenem-direncli-klebsiella",
+          "baslik": "Karbapenem Dirençli Klebsiella pneumoniae (CRKP)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }
