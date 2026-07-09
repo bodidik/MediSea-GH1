@@ -1,0 +1,308 @@
+{
+  "id": "quiz-enfeksiyon-grampozitif-001",
+  "baslik": "Gram-Pozitif Bakteriyel Enfeksiyonlar — Soru Seti 1",
+  "branch": "enfeksiyon",
+  "topic": "gram-pozitif-bakteriyel-enfeksiyonlar",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "MRSA bakteriyemisi nedeniyle vankomisin ile tedavi edilen bir hastada, 72 saatlik tedaviye rağmen tekrarlanan kan kültürlerinde üreme devam ediyor (persistan bakteriyemi). Enfekte santral kateter çıkarılıyor. Klinisyen, tedavi rejimini güçlendirmeyi planlıyor.",
+      "secenekler": {
+        "A": "Odak kontrolüne (kateter çıkarılması) ek olarak, yüksek doz daptomisin (8-10 mg/kg) ile seftarolin kombinasyonuna geçilmesi güçlü bir sinerji yaratarak tedavi başarısını artırır.",
+        "B": "Persistan bakteriyemide tek yapılması gereken vankomisin dozunun iki katına çıkarılmasıdır, ajan değişikliğine gerek yoktur.",
+        "C": "Odak kontrolü, persistan bakteriyemi yönetiminde gereksiz bir adımdır; yalnızca antibiyotik değişikliği yeterlidir.",
+        "D": "Bu durumda seftarolin monoterapisine geçilmesi, kombinasyon tedavisinden daha etkilidir.",
+        "E": "Persistan bakteriyemi, MRSA enfeksiyonlarında beklenen normal bir seyirdir ve tedavi değişikliği gerektirmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "48-72 saat içinde klirens sağlanamayan persistan MRSA bakteriyemisinde, odak kontrolüne (zaten yapılmış) EK OLARAK yüksek doz daptomisin (8-10 mg/kg) + seftarolin kombinasyonu güçlü sinerji yaratarak tedavi başarısını artırır.",
+      "aciklama_detay": "MRSA bakteriyemisinin tedavisinde standart birinci basamak yaklaşım, vankomisin veya daptomisin monoterapisidir. Ancak tedavi altında 48-72 saat içinde kan kültürlerinde klirens sağlanamazsa (persistan bakteriyemi), odak kontrolünün (enfekte kateter veya protez çıkarılması, apse drenajı) yanı sıra yüksek doz daptomisin (8-10 mg/kg) ile seftarolin kombinasyonuna geçilmesi güçlü bir sinerji yaratarak tedavi başarısını artırır. Bu yaklaşımın iki bileşeni de kritiktir: (1) Odak kontrolü — enfekte yabancı cisim (kateter) çıkarılmadan, bakteri biyofilm içinde antibiyotiklerden korunmaya devam edeceğinden, en güçlü antibiyotik rejimi bile tek başına yetersiz kalabilir; (2) Kombinasyon tedavisi — daptomisin ve seftarolin arasındaki sinerji, seftarolinin hücre duvarı sentezini etkileyerek daptomisinin bakteriyel membrana bağlanmasını kolaylaştırması ve membran potansiyelini bozmasıyla açıklanır, bu da tek ajan tedavisinden daha hızlı ve etkili bakteriyel klirens sağlar. Bu hastada kateter zaten çıkarılmış olduğundan, bir sonraki adım antibiyotik rejiminin güçlendirilmesidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Odak kontrolü + yüksek doz daptomisin(8-10mg/kg)+seftarolin kombinasyonu, persistan bakteriyemide güçlü sinerji sağlar.",
+        "B": "YANLIS — Vankomisin dozunun artırılması, persistan bakteriyemi için önerilen standart yaklaşım DEĞİLDİR; metinde spesifik olarak daptomisin+seftarolin kombinasyonuna geçiş önerilmiştir.",
+        "C": "YANLIS — Tam tersine, odak kontrolü metinde açıkça vurgulanan, kombinasyon tedavisiyle BİRLİKTE uygulanması gereken temel bir adımdır; gereksiz değildir.",
+        "D": "YANLIS — Önerilen strateji seftarolin MONOTERAPİSİ değil, daptomisin İLE SEFTAROLİN KOMBİNASYONUDUR; sinerjistik etki iki ajanın birlikte kullanımından kaynaklanır.",
+        "E": "YANLIS — Persistan bakteriyemi NORMAL bir seyir DEĞİLDİR; tedavi başarısızlığını gösteren, aktif müdahale (odak kontrolü+rejim güçlendirme) gerektiren ciddi bir klinik bulgudur."
+      },
+      "etiketler": [
+        "MRSA Bakteriyemisi",
+        "Persistan Bakteriyemi",
+        "Daptomisin-Seftarolin",
+        "Odak Kontrolü",
+        "Kombinasyon Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fowler et al. Clin Infect Dis 2019; Casapao et al. Antimicrob Agents Chemother 2017 (Daptomycin-Ceftaroline Synergy)"
+    },
+    {
+      "id": "s2",
+      "metin": "Uzun süredir vankomisin tedavisi alan bir hastadan izole edilen S. aureus suşunda MİK 6 mcg/mL olarak ölçülüyor. Moleküler analizde vraR, graRS ve walRK genlerinde ardışık mutasyonlar saptanıyor, VRE kaynaklı bir gen transferi bulgusu yok.",
+      "secenekler": {
+        "A": "Bu bulgular VISA (Vankomisine Orta Duyarlı S. aureus) ile uyumludur; regülatör genlerdeki mutasyonlar hücre duvarını kalınlaştırarak d-Ala-d-Ala hedeflerinin aşırı üretilmesine ve vankomisinin dış katmanlarda 'tuzağa düşürülmesine' (trapping) yol açar.",
+        "B": "Bu bulgular VRSA ile uyumludur; MİK 6 mcg/mL, VRSA'nın tipik eşiği olan ≥16 mcg/mL'nin üzerindedir.",
+        "C": "vraR, graRS ve walRK mutasyonları, vanA gen kümesinin plazmit aracılı aktarımı ile aynı mekanizmayı temsil eder.",
+        "D": "Bu bulgular, hedefin d-Ala-d-Laktat'a dönüştüğü bir direnç mekanizmasını gösterir.",
+        "E": "MİK 6 mcg/mL değeri, tam vankomisin duyarlılığını gösterir ve herhangi bir direnç mekanizması aramaya gerek yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MİK 4-8 mcg/mL + vraR/graRS/walRK regülatör gen mutasyonları = VISA. Bu mekanizma, hücre duvarı kalınlaşması ve d-Ala-d-Ala hedef aşırı üretimi yoluyla vankomisinin 'tuzağa düşürülmesine' (trapping) dayanır — VRSA'nın plazmit/vanA aracılı mekanizmasından TAMAMEN FARKLIDIR.",
+      "aciklama_detay": "MRSA'nın vankomisine uzun süre maruz kalması sonucunda vankomisine orta duyarlı (VISA, MİK: 4-8 mcg/mL) veya heterorezistan (hVISA) formlar ortaya çıkabilir. Bu suşların temel özelliği, vraR, graRS ve walRK gibi regülatör genlerdeki ardışık mutasyonlarla hücre duvarlarını anormal derecede kalınlaştırmaları ve d-Ala-d-Ala hedeflerini aşırı üreterek vankomisini dış katmanlarda 'tuzağa düşürmeleridir' (trapping). Bu hastadaki bulgular (MİK 6 mcg/mL — 4-8 aralığında, ve tam olarak belirtilen üç regülatör gende [vraR, graRS, walRK] ardışık mutasyonlar, VRE kaynaklı gen transferi YOK) VISA tanımına TAM olarak uymaktadır. Bu mekanizma, VRSA'nın mekanizmasından kavramsal olarak temelden farklıdır: VISA'da vankomisin molekülü hala hedefine (d-Ala-d-Ala) bağlanabilir, ancak kalınlaşmış hücre duvarındaki fazladan d-Ala-d-Ala 'yalancı hedefler' vankomisini dış katmanlarda tuzağa düşürerek asıl hedefine (sitoplazmik membrana yakın peptidoglikan sentez bölgesi) ulaşmasını engeller — bu bir 'fiziksel bariyer/tuzaklama' mekanizmasıdır. VRSA ise TAMAMEN FARKLI bir mekanizma kullanır: hedefin kendisi (d-Ala-d-Ala yerine d-Ala-d-Laktat) değişir, bu nedenle vankomisin hedefine bağlanamaz bile (afinite kaybı).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MİK 4-8 + vraR/graRS/walRK mutasyonları = VISA; hücre duvarı kalınlaşması ile vankomisin trapping mekanizması.",
+        "B": "YANLIS — VRSA eşiği metinde açıkça ≥16 mcg/mL olarak belirtilmiştir; bu hastadaki 6 mcg/mL bu eşiğin ÇOK ALTINDA olup VISA aralığına (4-8) girer, VRSA değildir.",
+        "C": "YANLIS — vraR/graRS/walRK mutasyonları VISA'nın (kromozomal, regülatör gen) mekanizmasıdır; vanA gen kümesi transferi TAMAMEN FARKLI bir mekanizma (plazmit aracılı, VRSA'ya özgü) olup bu hastada saptanmamıştır.",
+        "D": "YANLIS — Hedefin d-Ala-d-Laktat'a dönüşmesi VRSA'nın mekanizmasıdır (vanA aracılı); VISA'da hedef d-Ala-d-Ala olarak KALIR, yalnızca 'tuzağa düşürülür' — hedef değişimi yoktur.",
+        "E": "YANLIS — MİK 6 mcg/mL, tam duyarlılık (genellikle ≤2 mcg/mL) DEĞİL, VISA aralığındaki (4-8 mcg/mL) AZALMIŞ duyarlılığı gösterir; direnç mekanizması araştırması gereklidir ve zaten saptanmıştır."
+      },
+      "etiketler": [
+        "VISA",
+        "vraR/graRS/walRK",
+        "Hücre Duvarı Kalınlaşması",
+        "Trapping Mekanizması",
+        "MİK Yorumlama"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Howden et al. Clin Microbiol Rev 2010 (VISA Mechanisms); Hiramatsu et al. Lancet Infect Dis 2001"
+    },
+    {
+      "id": "s3",
+      "metin": "Yoğun bakımda VRE ile kolonize olan bir hastanın yanında yatan başka bir hastadan izole edilen S. aureus suşunda MİK ≥16 mcg/mL saptanıyor. Moleküler analizde Tn1546 transpozonu üzerinden kazanılmış vanA gen kümesi tespit ediliyor.",
+      "secenekler": {
+        "A": "Bu bulgular VRSA (Vankomisine Dirençli S. aureus) ile uyumludur; enterokoklardan (VRE) plazmit aracılı vanA gen kümesinin Tn1546 transpozonu üzerinden kazanılmasıyla hücresel hedefin d-Ala-d-Laktat'a dönüşmesi sonucu gelişir.",
+        "B": "Bu bulgular VISA ile uyumludur; MİK ≥16 mcg/mL, VISA'nın tipik MİK aralığı olan 4-8 mcg/mL ile örtüşür.",
+        "C": "vanA gen kümesinin S. aureus'a transferi, yalnızca kromozomal mutasyon yoluyla gerçekleşir, plazmit veya transpozon aracılı değildir.",
+        "D": "Bu direnç mekanizması, hücre duvarı kalınlaşması ve d-Ala-d-Ala hedeflerinin aşırı üretimi ile açıklanır.",
+        "E": "vanA gen kümesi, yalnızca vankomisine direnç sağlar, teikoplanine çapraz direnç göstermez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MİK ≥16 mcg/mL + Tn1546 transpozonu üzerinden VRE'den kazanılmış vanA gen kümesi = VRSA. Hedef d-Ala-d-Laktat'a dönüşür — bu, VISA'nın kromozomal/regülatör gen mekanizmasından tamamen farklı, plazmit aracılı yatay gen transferi mekanizmasıdır.",
+      "aciklama_detay": "Vankomisine dirençli S. aureus (VRSA, MİK ≥16 mcg/mL) ise, enterokoklardan (VRE) Tn1546 transpozonu üzerinden plazmit aracılı vanA gen kümesinin kazanılmasıyla hücresel hedefin d-Ala-d-Laktat'a dönüşmesi sonucu gelişir. Bu hastadaki klinik senaryo (VRE kolonize hastanın yakınında, MİK ≥16 mcg/mL, Tn1546 üzerinden kazanılmış vanA) VRSA'nın klasik tanımına ve epidemiyolojik bağlamına (VRE ile yakın temas, yatay gen transferi fırsatı) tam olarak uymaktadır. Bu mekanizma, iki ayrı Gram-pozitif cins arasındaki (Enterococcus'tan Staphylococcus'a) NADİR ama klinik açıdan son derece önemli bir yatay gen transferi örneğidir — vanA gen kümesi, VRE'nin plazmitleri üzerinde taşınır ve konjugasyon yoluyla S. aureus'a aktarılabilir; bu transferin gerçekleşmesi için genellikle her iki organizmanın aynı anatomik bölgede (örn. aynı hastanın cildi, yara veya bağırsağı) birlikte bulunması gerekir. vanA gen kümesinin ürünü olan değiştirilmiş hedef (d-Ala-d-Laktat), vankomisinin normalde bağlandığı d-Ala-d-Ala terminaline kıyasla vankomisine 1000 kat daha düşük afinite gösterir, bu da yüksek düzeyli (MİK ≥16 mcg/mL) dirence yol açar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MİK≥16 + Tn1546 üzerinden VRE'den kazanılmış vanA gen kümesi = VRSA; hedef d-Ala-d-Laktat'a dönüşür.",
+        "B": "YANLIS — VISA'nın MİK aralığı metinde açıkça 4-8 mcg/mL olarak tanımlanmıştır; bu hastadaki ≥16 mcg/mL bu aralığın ÇOK ÜZERİNDE olup VRSA eşiğine (≥16) uymaktadır.",
+        "C": "YANLIS — Tam tersine, metinde açıkça 'Tn1546 TRANSPOZONU üzerinden PLAZMİT ARACILI vanA gen kümesinin kazanılması' belirtilmiştir; bu KROMOZOMAL mutasyon değil, yatay gen transferi (plazmit/transpozon aracılı) mekanizmasıdır.",
+        "D": "YANLIS — Hücre duvarı kalınlaşması ve d-Ala-d-Ala aşırı üretimi VISA'nın mekanizmasıdır; VRSA'da hedefin KENDİSİ (d-Ala-d-Laktat'a) DEĞİŞİR, bu farklı ve daha güçlü bir direnç mekanizmasıdır.",
+        "E": "YANLIS — Metinde açıkça vanA gen kümesinin 'hem vankomisine HEM DE teikoplanine yüksek düzeyde ÇAPRAZ DİRENÇ sağladığı' belirtilmiştir (enterokok bağlamında, aynı mekanizma VRSA'da da geçerlidir); yalnızca vankomisinle sınırlı değildir."
+      },
+      "etiketler": [
+        "VRSA",
+        "vanA Gen Kümesi",
+        "Tn1546 Transpozonu",
+        "Yatay Gen Transferi",
+        "d-Ala-d-Laktat"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chang et al. N Engl J Med 2003 (First VRSA Case); Périchon & Courvalin. Antimicrob Agents Chemother 2009"
+    },
+    {
+      "id": "s4",
+      "metin": "Enterokoklara bağlı bir enfeksiyonda izolat tiplendirilmesi yapılıyor. E. faecium suşunda vanB gen kümesi saptanırken, ayrı bir hastadan izole edilen E. gallinarum suşunda kromozomal vanC geni tespit ediliyor.",
+      "secenekler": {
+        "A": "vanB gen kümesi taşıyan suş, teikoplanin tarafından indüklenmediği için TEİKOPLANİNE DUYARLI bir fenotip sunarken; E. gallinarum'daki vanC geni, d-Ala-d-Serin üretimi yoluyla intrensek, düşük düzeyli bir vankomisin direnci sergiler.",
+        "B": "vanB gen kümesi, vanA gibi hem vankomisine hem teikoplanine yüksek düzeyde çapraz direnç sağlar.",
+        "C": "vanC geni, plazmit aracılı yatay gen transferi ile kazanılan, yüksek düzeyli bir direnç mekanizmasıdır.",
+        "D": "vanB ve vanC gen kümeleri, aynı hedef değişikliğini (d-Ala-d-Laktat) üretir ve klinik olarak eşdeğerdir.",
+        "E": "vanC geni yalnızca E. faecium suşlarında görülür, E. gallinarum ile ilişkisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "vanB, teikoplanin tarafından İNDÜKLENMEDİĞİ için teikoplanine DUYARLI fenotip sunar (vankomisine dirençli olsa da). vanC (E. gallinarum/casseliflavus'a özgü, kromozomal) d-Ala-d-Serin üretimiyle İNTRENSEK, DÜŞÜK düzeyli vankomisin direnci sağlar — bu iki mekanizma birbirinden ve vanA'dan belirgin şekilde farklıdır.",
+      "aciklama_detay": "vanA gen kümesi (hedefin d-Ala-d-Laktat yapısına dönüştürülmesi), hem vankomisine hem de teikoplanine yüksek düzeyde çapraz direnç sağlarken; vanB gen kümesi teikoplanin tarafından indüklenmediği için teikoplanine duyarlı bir fenotip sunar. E. gallinarum ve E. casseliflavus ise kromozomal vanC geni aracılığıyla d-Ala-d-Serin üreterek intrensek, düşük düzeyli bir vankomisin direnci sergilerler. Bu üç van gen kümesi (A, B, C) arasındaki ayrımlar klinik açıdan kritik öneme sahiptir: vanA en tehlikeli fenotiptir çünkü hem vankomisin hem teikoplanini etkisiz kılar (her iki glikopeptit de tedavi seçeneği dışı kalır). vanB ise SEÇİCİ bir direnç sağlar — vankomisine dirençli olsa da, teikoplanin (vanB operonunun ekspresyonunu indüklemediğinden) hala etkili bir tedavi seçeneği olarak KALABİLİR, bu da tedavi planlamasında önemli bir farklılık yaratır. vanC ise nitelik olarak tamamen farklıdır: bu, EDİNİLMİŞ (kazanılmış) bir direnç değil, belirli enterokok TÜRLERİNE (E. gallinarum, E. casseliflavus) ÖZGÜ, KROMOZOMAL, İNTRENSEK bir özelliktir — bu türler doğal olarak düşük düzeyli vankomisin direncine sahiptir, bu bir 'edinilmiş VRE' durumu değil, türün doğal karakteristiğidir ve genellikle daha az klinik endişe yaratır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — vanB=teikoplanine duyarlı (indüklenmez); vanC=E. gallinarum/casseliflavus'a özgü, kromozomal, intrensek düşük düzeyli direnç (d-Ala-d-Serin).",
+        "B": "YANLIS — Tam tersine, metinde açıkça vanB'nin 'teikoplanin tarafından İNDÜKLENMEDİĞİ İÇİN TEİKOPLANİNE DUYARLI bir fenotip sunar' belirtilmiştir; vanA'dan farklı olarak çapraz direnç sağlamaz.",
+        "C": "YANLIS — vanC, metinde açıkça 'KROMOZOMAL' ve 'İNTRENSEK' olarak tanımlanmıştır; plazmit aracılı yatay gen transferi ile kazanılmaz, ayrıca yüksek değil DÜŞÜK düzeyli bir direnç sağlar.",
+        "D": "YANLIS — vanB hedefi d-Ala-d-Laktat'tır (vanA ile aynı, ancak teikoplanin duyarlılığı farklıdır); vanC ise FARKLI bir hedef (d-Ala-d-SERİN) üretir — bu üç sistem birbirinden mekanizma olarak FARKLIDIR, eşdeğer değildir.",
+        "E": "YANLIS — Metinde açıkça vanC geninin 'E. gallinarum VE E. casseliflavus' türlerine özgü olduğu belirtilmiştir; E. faecium ile ilişkilendirilmemiştir, E. faecium'da tipik olarak vanA veya vanB görülür."
+      },
+      "etiketler": [
+        "vanB Gen Kümesi",
+        "vanC Gen Kümesi",
+        "Teikoplanin Duyarlılığı",
+        "E. gallinarum",
+        "İntrensek Direnç"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cetinkaya et al. Clin Microbiol Rev 2000 (VRE Van Gene Clusters); Arthur & Courvalin. Antimicrob Agents Chemother 1993"
+    },
+    {
+      "id": "s5",
+      "metin": "VRE endokarditi tanılı bir hastada, izolatın ampisiline de dirençli olduğu gösteriliyor. Klinisyen, tek başına daptomisine ek olarak ampisilin eklenmesini planlıyor; asistan hekim bunun mantıksız olduğunu, zaten dirençli bir ilacı eklemenin faydasız olacağını düşünüyor.",
+      "secenekler": {
+        "A": "VRE endokarditinde, bakteri beta-laktama dirençli olsa bile daptomisine bir beta-laktamın (ampisilin veya seftarolin) eklenmesi, hücre zarı dengesini daptomisinin lehine bozarak ('see-saw' etkisi) güçlü bir bakterisidal sinerji yaratır; asistanın değerlendirmesi yanlıştır.",
+        "B": "Asistan haklıdır; ampisiline dirençli bir izolatta ampisilin eklenmesinin hiçbir sinerjistik faydası yoktur ve bu yaklaşım tamamen mantıksızdır.",
+        "C": "'See-saw' etkisi yalnızca beta-laktama duyarlı VRE suşlarında geçerlidir, dirençli suşlarda bu sinerji gözlenmez.",
+        "D": "Daptomisin-beta-laktam kombinasyonu yalnızca MRSA enfeksiyonlarında geçerlidir, VRE endokarditinde uygulanmaz.",
+        "E": "Bu kombinasyonun mantığı, ampisilinin VRE üzerinde doğrudan bakterisidal etki göstermesine dayanır, sinerji ile ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "'See-saw' etkisi: bakteri beta-laktama DİRENÇLİ olsa BİLE daptomisin+beta-laktam kombinasyonu hücre zarı dengesini daptomisinin lehine bozarak güçlü sinerji yaratır. Bu, geleneksel in-vitro direnç testinin öngöremediği bir kombinasyon etkisidir — asistanın 'dirençli ilaç eklemenin faydasız olacağı' varsayımı bu spesifik mekanizma için GEÇERSİZDİR.",
+      "aciklama_detay": "VRE endokarditinde, bakteri beta-laktama dirençli olsa bile daptomisine bir beta-laktamın (ampisilin veya seftarolin) eklenmesi, hücre zarı dengesini daptomisinin lehine bozarak ('see-saw' etkisi) güçlü bir bakterisidal sinerji yaratır. Bu fenomen, klasik antimikrobiyal direnç anlayışına aykırı görünse de iyi tanımlanmış bir mekanizmaya dayanır: beta-laktam ajanlar (ampisilin dahil), PBP5-R aşırı ekspresyonu nedeniyle E. faecium'da doğrudan bakterisidal bir etki göstermeseler dahi, bakteri hücre duvarı sentezini ve zarının fizikokimyasal özelliklerini (yüzey yükü, membran akışkanlığı) değiştirirler. Bu değişiklik, daptomisinin kalsiyum-bağımlı olarak bakteriyel membrana yerleşmesini VE membran depolarizasyonu yoluyla hücre ölümüne yol açan etkisini KOLAYLAŞTIRIR — yani beta-laktam, VRE'yi doğrudan öldürmese dahi, daptomisinin öldürücü etkinliğini 'artıran' bir kolaylaştırıcı rol oynar. 'See-saw' terimi, bir ajanın (beta-laktam) direnç profilinin, diğer ajanın (daptomisin) etkinliğini artırmasını tanımlar — bu, geleneksel 'her iki ajan da duyarlı olmalı' varsayımının aksine, standart duyarlılık testlerinin öngöremeyeceği bir klinik sinerji örneğidir. Bu nedenle asistanın 'zaten dirençli bir ilacı eklemenin faydasız olacağı' varsayımı, bu SPESİFİK mekanizma bağlamında YANLIŞTIR.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 'See-saw' etkisi, beta-laktam DİRENCİNDEN BAĞIMSIZ olarak daptomisin+beta-laktam kombinasyonunda sinerji sağlar; asistanın varsayımı bu bağlamda yanlıştır.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'bakteri beta-laktama DİRENÇLİ OLSA BİLE' bu sinerjinin oluştuğu belirtilmiştir; asistanın mantığı klasik direnç kavramına dayanır ama 'see-saw' etkisi bu klasik kavramın İSTİSNASIDIR.",
+        "C": "YANLIS — Metinde açıkça 'bakteri beta-laktama dirençli OLSA BİLE' ifadesiyle bu etkinin TAM OLARAK dirençli suşlarda da geçerli olduğu vurgulanmıştır; duyarlı suşlarla sınırlı değildir.",
+        "D": "YANLIS — 'See-saw' etkisi bu metinde spesifik olarak VRE ENDOKARDİTİ bağlamında tanımlanmıştır; MRSA ile sınırlı bir kavram değildir (MRSA'da daptomisin+seftarolin kombinasyonu farklı bir bağlamda, persistan bakteriyemide anlatılmıştır, ancak VRE'de de benzer bir sinerji mekanizması işler).",
+        "E": "YANLIS — Mekanizma AMPİSİLİNİN DOĞRUDAN bakterisidal etkisine değil, hücre zarı dengesini BOZARAK DAPTOMİSİNİN etkinliğini artırmasına (sinerji) dayanır; ampisilinin kendisi VRE'yi tek başına öldürmez."
+      },
+      "etiketler": [
+        "See-Saw Etkisi",
+        "VRE Endokarditi",
+        "Daptomisin-Beta-Laktam Sinerjisi",
+        "Kombinasyon Tedavisi",
+        "Ampisilin Direnci"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Sakoulas et al. Antimicrob Agents Chemother 2012 (Daptomycin-Beta-lactam Synergy); Smith et al. Clin Infect Dis 2020"
+    },
+    {
+      "id": "s6",
+      "metin": "Linezolid tedavisi altında olan bir VRE hastasında, tekrarlayan izolatta direnç gelişimi saptanıyor. Moleküler analizde bir suşta 23S rRNA'da G2576U mutasyonu, başka bir suşta ise plazmit üzerinde cfr geni tespit ediliyor.",
+      "secenekler": {
+        "A": "Her iki mekanizma da linezolid direncine yol açar; ancak 23S rRNA G2576U kromozomal bir mutasyon iken, cfr geni plazmit aracılıdır ve ribozomal koruma/metilasyon yoluyla etki eder — plazmit aracılı direnç, yatay gen transferi potansiyeli nedeniyle epidemiyolojik olarak daha endişe vericidir.",
+        "B": "Yalnızca 23S rRNA mutasyonu linezolid direncine yol açar, cfr geni linezolid direnciyle ilgisi olmayan bir virülans faktörüdür.",
+        "C": "cfr geni, kromozomal bir mutasyon olup plazmit aracılı yatay gen transferi göstermez.",
+        "D": "23S rRNA mutasyonu, plazmit üzerinde taşınan ve kolayca diğer bakterilere aktarılabilen bir direnç mekanizmasıdır.",
+        "E": "Linezolid direnci yalnızca optrA ve poxtA genleri aracılığıyla gelişir, 23S rRNA mutasyonlarının bu direnç ile ilgisi yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Linezolid direnci: 23S rRNA G2576U (KROMOZOMAL mutasyon) VEYA cfr/optrA/poxtA (PLAZMİT aracılı genler, ribozomal koruma/metilasyon). Plazmit aracılı mekanizma, yatay gen transferi ile diğer bakterilere aktarılabildiğinden epidemiyolojik olarak daha endişe vericidir.",
+      "aciklama_detay": "Linezolide direnç ise 23S rRNA'daki kromozomal mutasyonlar (G2576U) veya cfr, optrA, poxtA gibi plazmit aracılı genlerin kazanılmasıyla (ribozomal koruma veya metilasyon yoluyla) ortaya çıkmaktadır. Bu iki mekanizma tipinin farkı önemli klinik/epidemiyolojik sonuçlar doğurur: 23S rRNA G2576U mutasyonu, ribozomun linezolid bağlanma bölgesindeki yapısal bir değişikliktir ve bakterinin KENDİ kromozomunda oluşur — bu nedenle YATAY olarak diğer bakterilere aktarılamaz, yalnızca DİKEY olarak (bölünme yoluyla) o bakteri soyunda kalıtılır. Buna karşılık cfr (kloramfenikol-florfenikol direnci), optrA ve poxtA genleri PLAZMİT üzerinde taşınır ve konjugasyon yoluyla aynı veya farklı türden bakterilere KOLAYCA AKTARILABİLİR — bu, direncin popülasyon düzeyinde çok daha hızlı yayılmasına imkan tanır ve bu nedenle epidemiyolojik açıdan daha büyük bir tehdit oluşturur. Bu genlerin etki mekanizması da farklıdır: cfr, 23S rRNA'yı metilleyerek linezolidin bağlanmasını sterik olarak engellerken (metilasyon), optrA ve poxtA ribozomu koruyucu proteinler kodlayarak ribozomu ilacın etkisinden fiziksel olarak korur (ribozomal koruma).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 23S rRNA G2576U=kromozomal; cfr=plazmit aracılı (ribozomal koruma/metilasyon); plazmit aracılı direnç yatay transfer nedeniyle daha endişe verici.",
+        "B": "YANLIS — Metinde açıkça cfr geninin 'ribozomal koruma veya metilasyon yoluyla' LİNEZOLİD DİRENCİNE yol açtığı belirtilmiştir; bir virülans faktörü değil, direkt bir direnç mekanizmasıdır.",
+        "C": "YANLIS — Tam tersine, cfr geni metinde açıkça 'PLAZMİT aracılı genler' kategorisinde (optrA, poxtA ile birlikte) sınıflandırılmıştır; kromozomal değildir, yatay gen transferi gösterir.",
+        "D": "YANLIS — Tam tersine, 23S rRNA mutasyonu metinde açıkça 'KROMOZOMAL mutasyonlar' olarak tanımlanmıştır; plazmit üzerinde taşınmaz, kolayca diğer bakterilere aktarılamaz.",
+        "E": "YANLIS — Metinde açıkça İKİ mekanizma tipi (23S rRNA kromozomal mutasyonlar VE cfr/optrA/poxtA plazmit aracılı genler) tanımlanmıştır; 23S rRNA mutasyonu da linezolid direncinin önemli bir nedenidir, göz ardı edilemez."
+      },
+      "etiketler": [
+        "Linezolid Direnci",
+        "23S rRNA G2576U",
+        "cfr Geni",
+        "Plazmit Aracılı Direnç",
+        "Ribozomal Koruma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Long & Vester. Antimicrob Agents Chemother 2012 (cfr Mechanism); Mendes et al. Clin Infect Dis 2014"
+    },
+    {
+      "id": "s7",
+      "metin": "Hafif-orta şiddetli, komplike olmayan ilk CDI atağı geçiren bir hastada tedavi seçimi yapılıyor. Klinisyen, geleneksel olarak kullanılan vankomisin yerine yeni bir ajan öneriyor ve bu tercihin uzun vadeli nüks riskini azaltacağını açıklıyor.",
+      "secenekler": {
+        "A": "İlk atakta dahi, vankomisin yerine fidaksomisin önerilmektedir; fidaksomisinin dar spektrumu, bağırsak mikrobiyomunu vankomisin veya metronidazole kıyasla çok daha az bozarak VRE kolonizasyonunu engeller ve nüks oranlarını dramatik şekilde düşürür.",
+        "B": "Fidaksomisin yalnızca tekrarlayan (relaps) CDI ataklarında kullanılır, ilk atakta endike değildir.",
+        "C": "Fidaksomisin, vankomisinden daha geniş spektrumlu olduğundan bağırsak mikrobiyomunu daha fazla bozar.",
+        "D": "Fidaksomisin kullanımı VRE kolonizasyon riskini artırır, bu nedenle dikkatli kullanılmalıdır.",
+        "E": "Hafif-orta şiddetli CDI'de ilk basamak tedavi her zaman metronidazoldür, fidaksomisin veya vankomisin değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İlk atakta DAHİ (yalnızca relapsta değil) fidaksomisin önerilir. Fidaksomisinin DAR spektrumu, bağırsak mikrobiyomunu vankomisin/metronidazole göre çok daha AZ bozar — bu da VRE kolonizasyonunu ENGELLER ve nüks oranlarını DRAMATİK şekilde düşürür.",
+      "aciklama_detay": "Hafif ve Orta Şiddetli CDI: İlk atakta dahi, vankomisin yerine makrosiklik bir antibiyotik olan fidaksomisin önerilmektedir. Fidaksomisinin en büyük avantajı, dar spektrumu sayesinde bağırsak mikrobiyomunu vankomisin veya metronidazole kıyasla çok daha az bozması, bu sayede VRE kolonizasyonunu engellemesi ve hastalığın nüks (relaps) oranlarını dramatik şekilde düşürmesidir. Bu, CDI tedavi paradigmasında önemli bir değişikliği yansıtır: geleneksel olarak vankomisin veya metronidazol ilk basamak olarak kullanılırken, güncel yaklaşımda fidaksomisin İLK ATAKTAN İTİBAREN tercih edilmektedir (yalnızca relaps/tekrarlayan ataklarla sınırlı değildir). Fidaksomisinin dar spektrumlu doğası, C. difficile'ye görece SELEKTİF etki gösterirken, bağırsağın normal komensal florasını (özellikle Bacteroides ve diğer anaerobik türleri) büyük ölçüde KORUR — bu, geniş spektrumlu vankomisin veya metronidazolün aksine, tedavinin ardından bağırsak mikrobiyomunun daha hızlı normale dönmesini sağlar. Sağlıklı/dengeli bir mikrobiyomun korunması, hem C. difficile sporlarının yeniden çimlenip çoğalmasını (relaps) önler hem de VRE gibi diğer dirençli patojenlerin fırsatçı kolonizasyonunu ENGELLER (çünkü sağlıklı mikrobiyom 'kolonizasyon direnci' sağlar).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Fidaksomisin ilk atakta dahi önerilir; dar spektrumu mikrobiyomu az bozar, VRE kolonizasyonunu engeller, nüksü dramatik azaltır.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'İLK ATAKTA DAHİ' fidaksomisinin önerildiği belirtilmiştir; yalnızca tekrarlayan ataklarla sınırlı değildir.",
+        "C": "YANLIS — Tam tersine, fidaksomisin metinde 'DAR SPEKTRUMU sayesinde bağırsak mikrobiyomunu... ÇOK DAHA AZ BOZMASI' olarak tanımlanmıştır; vankomisinden daha DAR spektrumludur, daha geniş değil.",
+        "D": "YANLIS — Tam tersine, fidaksomisin VRE kolonizasyonunu ENGELLER (metinde açıkça belirtilmiştir), artırmaz; bu onun en önemli avantajlarından biridir.",
+        "E": "YANLIS — Metinde açıkça 'vankomisin YERİNE... fidaksomisin ÖNERİLMEKTEDİR' ifadesiyle fidaksomisinin tercih edilen ajan olduğu belirtilmiştir; metronidazol hafif-orta CDI'de birinci basamak olarak tanımlanmamıştır (fulminan formda İV olarak kombinasyonda kullanılır)."
+      },
+      "etiketler": [
+        "Fidaksomisin",
+        "CDI Tedavisi",
+        "Bağırsak Mikrobiyomu",
+        "VRE Kolonizasyonu",
+        "Nüks Önleme"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Johnson et al. Clin Infect Dis 2021 (IDSA/SHEA CDI Guideline); Guery et al. Lancet Infect Dis 2018 (Fidaxomicin)"
+    },
+    {
+      "id": "s8",
+      "metin": "Toksik megakolon ve ileus tablosuyla prezente olan, fulminan CDI tanısı konan bir hastada tedavi planlanıyor. Hasta ağızdan hiçbir şey alamıyor (ileus nedeniyle GİS motilitesi durmuş durumda).",
+      "secenekler": {
+        "A": "Fulminan CDI'de fidaksomisin kullanılmaz; standart yaklaşım yüksek doz oral/nazogastrik vankomisin (günde 4×500 mg) ve İV metronidazol (günde 3×500 mg) kombinasyonudur, ve bu hastada İLEUS VARLIĞI nedeniyle bu tedaviye MUTLAKA rektal vankomisin retansiyon lavmanı da eklenmelidir.",
+        "B": "Fulminan CDI'de ilk seçenek fidaksomisin monoterapisidir çünkü bu ajan en düşük mikrobiyom bozucu etkiye sahiptir.",
+        "C": "İleus varlığında oral/nazogastrik vankomisin yeterlidir, rektal lavman gereksiz bir ek tedavidir.",
+        "D": "Fulminan CDI'de tek başına İV metronidazol yeterlidir, oral/rektal vankomisin gerekmez.",
+        "E": "Bu hastada ileus nedeniyle hiçbir antibiyotik tedavisi uygulanamaz, yalnızca cerrahi düşünülmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Fulminan CDI'de fidaksomisin KULLANILMAZ. Standart tedavi: yüksek doz oral/NG vankomisin (4×500mg/gün) + İV metronidazol (3×500mg/gün). İLEUS VARLIĞINDA (bu hastada mevcut) bu tedaviye MUTLAKA rektal vankomisin retansiyon lavmanı eklenmelidir — çünkü GİS motilitesi durduğundan oral/NG ilaç kolon lezyonuna ulaşamayabilir.",
+      "aciklama_detay": "Fulminan CDI: Şok, ileus veya toksik megakolon tablosunun eşlik ettiği hayatı tehdit edici fulminan formlarda fidaksomisin kullanılmaz. Bu durumda standart yaklaşım, gastrointestinal geçişin azalmasını kompanse etmek amacıyla yüksek doz oral/nazogastrik vankomisin (günde 4 kez 500 mg) ve intravenöz metronidazol (günde 3 kez 500 mg) kombinasyonudur. İleus varlığında bu tedaviye mutlaka rektal vankomisin retansiyon lavmanı eklenmelidir. Bu hastadaki klinik senaryo (toksik megakolon + ileus, fulminan CDI) tam olarak bu en ciddi tedavi protokolünü gerektiren profile uymaktadır. Rektal lavmanın eklenmesinin gerekçesi kritik bir fizyolojik problemi çözer: ileus, bağırsak motilitesinin durması anlamına gelir, bu nedenle oral veya nazogastrik yoldan verilen vankomisin, kolonun distal kesimlerine (asıl enfeksiyon/inflamasyon bölgesi) YETERLİ MİKTARDA ULAŞAMAYABİLİR (peristaltizmin olmaması nedeniyle ilaç proksimal GİS'te 'takılı kalabilir'). Rektal retansiyon lavmanı, vankomisini doğrudan distal kolona ulaştırarak bu 'geçiş engelini' bypass eder ve ilacın enfeksiyon bölgesindeki lokal konsantrasyonunu garanti eder. Bu üçlü yaklaşım (oral/NG vankomisin + İV metronidazol + rektal vankomisin lavmanı, ileus varsa) fulminan CDI'nin en agresif ve kapsamlı tedavi stratejisidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Fulminan CDI'de fidaksomisin kullanılmaz; oral/NG vankomisin+İV metronidazol standarttır, ileus varlığında rektal vankomisin lavmanı MUTLAKA eklenmelidir.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'fulminan formlarda FİDAKSOMİSİN KULLANILMAZ' belirtilmiştir; fulminan CDI'de fidaksomisin endike değildir, hafif-orta CDI'ye özgüdür.",
+        "C": "YANLIS — Tam tersine, metinde açıkça 'İLEUS VARLIĞINDA bu tedaviye MUTLAKA rektal vankomisin retansiyon lavmanı EKLENMELİDİR' belirtilmiştir; bu hastada ileus mevcut olduğundan rektal lavman ZORUNLUDUR, gereksiz değildir.",
+        "D": "YANLIS — Standart tedavi TEK BAŞINA metronidazol değil, oral/NG VANKOMİSİN + İV METRONİDAZOL KOMBİNASYONUDUR; ikisi birlikte gereklidir, metronidazol monoterapisi yeterli tanımlanmamıştır.",
+        "E": "YANLIS — İleus, antibiyotik tedavisinin TAMAMEN İMKANSIZ olduğu anlamına gelmez; tam tersine, tedavi yolu ADAPTE EDİLİR (NG + rektal lavman eklenerek) ve tedavi uygulanmaya devam edilir, yalnızca cerrahiye geçilmez."
+      },
+      "etiketler": [
+        "Fulminan CDI",
+        "Toksik Megakolon",
+        "Rektal Vankomisin Lavmanı",
+        "İleus Yönetimi",
+        "Kombinasyon Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Johnson et al. Clin Infect Dis 2021 (IDSA/SHEA CDI Guideline)"
+    },
+    {
+      "id": "s9",
+      "metin": "IV madde bağımlılığı öyküsü olan (PWID), evsizlik nedeniyle takibi zor bir hastada MRSA kaynaklı ABSSSI tanısı konuyor. Klinisyen, günlük IV tedavi gerektirmeyen, LAMA riskini azaltacak bir tedavi seçeneği arıyor. Hastanın hafif derecede böbrek yetmezliği de mevcut.",
+      "secenekler": {
+        "A": "Dalbavansin, acil serviste uygulanan tek dozluk şemayla (>14 gün etki) haftalar süren günlük İV tedavi ihtiyacını ortadan kaldırır; karaciğer ve böbrek fonksiyonlarından (hafif-orta yetmezlikte) minimal etkilenerek doz ayarına ihtiyaç duymaması, bu hasta için en güvenli OPAT ve erken taburculuk modelini sunar.",
+        "B": "Bu hastada tek uygun seçenek, hastaneye yatırılarak günlük İV vankomisin infüzyonuna devam etmektir.",
+        "C": "Dalbavansin, hafif böbrek yetmezliği olan hastalarda mutlaka doz ayarlaması gerektiren bir ajandır.",
+        "D": "Dalbavansin etkisi yalnızca 24-48 saat sürer, bu nedenle bu hasta için uygun bir seçenek değildir.",
+        "E": "Bu popülasyonda (PWID, evsizlik) herhangi bir OPAT stratejisi güvenlik nedeniyle kontrendikedir, tüm tedaviler hastane içinde tamamlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Dalbavansin tek doz ile >14 gün etki sağlar, günlük İV tedavi ihtiyacını ortadan kaldırır. Karaciğer/böbrek fonksiyonlarından (hafif-orta yetmezlikte) MİNİMAL etkilenerek doz ayarı gerektirmez — bu, takibi zor (PWID, evsiz) ve komorbid (hafif böbrek yetmezliği) hastalarda EN GÜVENLİ OPAT/erken taburculuk seçeneğidir.",
+      "aciklama_detay": "Uzun Etkili Lipoglikopeptitler (Dalbavansin ve Oritavansin): Bu ajanlar, yapılarına eklenen lipofilik yan zincirleri sayesinde hem bakterisidal etkinliklerini derinleştirmiş hem de terminal yarı ömürlerini olağanüstü düzeyde uzatmışlardır. Dalbavansin ve oritavansin, acil serviste uygulanan tek veya iki dozluk şemalarla (>14 gün etki), haftalar süren günlük IV tedavi ihtiyacını ortadan kaldırır. Özel Popülasyonlarda Önemi: Hastanede yatış süresinin uzaması, özellikle... psikososyal engelleri olan IV madde bağımlılarında (PWID) 'hospitalizm', LAMA (tedaviyi kendi isteğiyle reddetme) ve sekonder nozokomiyal enfeksiyon risklerini katlayarak artırır. Dalbavansinin karaciğer ve böbrek fonksiyonlarından (hafif-orta yetmezliklerde) minimal etkilenerek doz ayarına ihtiyaç duymaması, bu popülasyonlar için en güvenli OPAT (Ayaktan Parenteral Antimikrobiyal Tedavi) ve erken taburculuk modelini sunar. Bu hastanın profili (PWID, evsizlik/takip zorluğu, hafif böbrek yetmezliği) tam olarak dalbavansinin en değerli olduğu klinik senaryoyu tanımlar: geleneksel yaklaşım (haftalarca hastanede yatış veya günlük İV infüzyon için düzenli klinik ziyaretleri) bu hastada YÜKSEK LAMA riski ve nozokomiyal komplikasyon riski taşırken, dalbavansinin tek dozluk uygulaması (acil serviste veya kısa gözlem biriminde) hastanın erken taburcu edilmesini ve tedavi tamamlanma olasılığının artmasını sağlar — bu hem hasta hem sağlık sistemi için önemli bir avantajdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Dalbavansin tek doz >14 gün etki sağlar, karaciğer/böbrekten minimal etkilenir (hafif-orta yetmezlikte doz ayarı gerekmez) — bu hasta için en güvenli OPAT seçeneğidir.",
+        "B": "YANLIS — Tam tersine, metinde açıkça dalbavansin/oritavansinin GÜNLÜK İV TEDAVİ İHTİYACINI ORTADAN KALDIRDIĞI belirtilmiştir; hastaneye yatış/günlük İV vankomisin ZORUNLU değildir, alternatif mevcuttur.",
+        "C": "YANLIS — Tam tersine, metinde açıkça dalbavansinin 'böbrek fonksiyonlarından (HAFİF-ORTA yetmezliklerde) MİNİMAL etkilenerek DOZ AYARINA İHTİYAÇ DUYMAMASI' belirtilmiştir; bu hastadaki hafif böbrek yetmezliği doz ayarlaması gerektirmez.",
+        "D": "YANLIS — Metinde açıkça dalbavansin/oritavansinin etkisinin '>14 GÜN' sürdüğü belirtilmiştir; 24-48 saat değil, bu hasta için ideal (uzun süreli, takip gerektirmeyen) bir seçenektir.",
+        "E": "YANLIS — Tam tersine, metinde bu SPESİFİK popülasyonların (PWID, evsizlik gibi psikososyal engelleri olanlar) dalbavansin gibi ajanlarla erken taburculuk/OPAT modelinden EN ÇOK FAYDALANAN grup olduğu vurgulanmıştır; OPAT kontrendike değildir, tam tersine tercih edilen bir yaklaşımdır."
+      },
+      "etiketler": [
+        "Dalbavansin",
+        "OPAT",
+        "PWID",
+        "Erken Taburculuk",
+        "LAMA Riski"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wilson et al. Open Forum Infect Dis 2019 (Dalbavancin in PWID); Morrisette et al. Clin Infect Dis 2019 (Long-acting Lipoglycopeptides)"
+    },
+    {
+      "id": "s10",
+      "metin": "Ciddi MRSA pnömonisi nedeniyle vankomisin tedavisi başlanan bir hastada, farmakokinetik izlem yapılıyor. Bayesian yazılım ile hesaplanan AUC değeri 650 mg·h/L olarak bulunuyor, trough düzeyi ise 22 mg/L olarak ölçülüyor. Hastanın kreatinin düzeyinde yükselme başlıyor.",
+      "secenekler": {
+        "A": "AUC düzeyinin 600'ü aşması ve trough değerinin 15-20 mg/L eşiğinin üzerinde (22 mg/L) olması, akut böbrek hasarı (AKI) riskinin eksponansiyel olarak arttığını gösterir; hedeflenmesi gereken AUC/MIC aralığı 400-600 mg·h/L'dir ve doz azaltılması gerekir.",
+        "B": "AUC 650 mg·h/L, hedef aralığın (400-600) içinde kabul edilir ve mevcut doz değiştirilmeden devam edilmelidir.",
+        "C": "Trough düzeyi takibi, AUC/MIC yaklaşımından daha güvenilirdir ve bu hastada trough 22 mg/L'nin herhangi bir klinik önemi yoktur.",
+        "D": "Kreatinin yükselmesi, vankomisin dozlamasıyla hiçbir ilişkisi olmayan, tamamen tesadüfi bir bulgudur.",
+        "E": "AUC/MIC hedefi ciddi MRSA enfeksiyonlarında 800-1000 mg·h/L olup, bu hastadaki 650 değeri hedefin altında kalmaktadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "AUC 650 (>600 eşiği) VE trough 22 mg/L (>15-20 eşiği) — her iki bulgu da AKI riskinin EKSPONANSİYEL arttığını gösterir. Hedef AUC/MIC aralığı 400-600 mg·h/L'dir; bu hastada doz AZALTILMALIDIR, gözlenen kreatinin yükselmesi bu yüksek maruziyetle TUTARLIDIR.",
+      "aciklama_detay": "AUC/MIC Kılavuzluğu: Ciddi MRSA enfeksiyonlarında (bakteriyemi, pnömoni, endokardit vb.), böbrek toksisitesi riskini azaltmak için geleneksel vadi (trough) düzey takibi terk edilerek, farmakokinetik (Bayesian) AUC/MIC oranının 400-600 mg·h/L arasında tutulması hedeflenmektedir. AUC düzeyinin 600'ü veya trough değerinin 15-20 mg/L'yi aşması durumunda akut böbrek hasarı (AKI) riski eksponansiyel olarak artar. Bu hastada iki bağımsız gösterge de (AUC=650, hedef üst sınırı 600'ü aşmış; trough=22 mg/L, güvenlik eşiği 15-20'yi aşmış) aynı sonuca işaret etmektedir: hasta AŞIRI vankomisin maruziyeti altındadır ve bu, gözlenen kreatinin yükselmesiyle (başlayan AKI) KLİNİK OLARAK TUTARLIDIR. Bu senaryo, güncel PK/PD kılavuzluğunun (AUC/MIC bazlı Bayesian dozlama) neden geleneksel trough-bazlı dozlamadan üstün kabul edildiğini de gösterir — AUC hesaplaması, ilacın toplam maruziyetini (zaman içindeki eğri altı alanı) daha kapsamlı yansıtırken, trough yalnızca tek bir zaman noktasındaki düzeyi gösterir; ancak bu vakada her iki parametre de tutarlı şekilde toksisite sınırının aşıldığını doğrulamaktadır. Klinik yanıt, doz azaltılması (ve gerekirse doz aralığının uzatılması) olmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — AUC 650 (>600) ve trough 22 (>15-20 mg/L) AKI riskini eksponansiyel artırır; hedef AUC/MIC 400-600'dür, doz azaltılmalıdır.",
+        "B": "YANLIS — Hedef aralık 400-600 mg·h/L'dir; 650, bu aralığın ÜST SINIRINI (600) AŞMIŞTIR, hedef içinde değildir — bu değer AKI riskini artıran bir düzeydir.",
+        "C": "YANLIS — Metinde açıkça 'geleneksel vadi (trough) düzey takibi TERK EDİLEREK' AUC/MIC yaklaşımına geçildiği belirtilmiştir (AUC daha güvenilir kabul edilir); ancak trough 22 mg/L değeri de metinde belirtilen 15-20 mg/L güvenlik eşiğini aşmış olup KLİNİK ÖNEMİ vardır, göz ardı edilemez.",
+        "D": "YANLIS — Metinde açıkça yüksek AUC/trough değerlerinin AKI riskini EKSPONANSİYEL artırdığı belirtilmiştir; bu hastadaki kreatinin yükselmesi, aşırı vankomisin maruziyetiyle NEDENSEL OLARAK İLİŞKİLİ olabilecek, tesadüfi olmayan bir bulgudur.",
+        "E": "YANLIS — Metinde açıkça hedef AUC/MIC aralığı 400-600 mg·h/L olarak belirtilmiştir, 800-1000 değil; bu hastadaki 650 değeri zaten bu (doğru) hedefin ÜZERİNDEDİR, altında değildir."
+      },
+      "etiketler": [
+        "Vankomisin AUC/MIC",
+        "Bayesian Dozlama",
+        "Akut Böbrek Hasarı",
+        "Trough Düzeyi",
+        "PK/PD Optimizasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Rybak et al. Am J Health Syst Pharm 2020 (Vancomycin AUC-guided Dosing Consensus); Lodise et al. Clin Infect Dis 2020"
+    }
+  ]
+}

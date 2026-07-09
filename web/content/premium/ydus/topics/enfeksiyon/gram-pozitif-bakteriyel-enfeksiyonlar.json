@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "id": "gram-pozitif-bakteriyel-enfeksiyonlar",
+    "branch": "enfeksiyon",
+    "baslik": "Gram-Pozitif Bakteriyel Enfeksiyonlar ve Güncel Klinik Yönetim",
+    "altbaslik": "MRSA/VISA/VRSA direnç mekanizmaları, VRE ve daptomisin/linezolid direnci, C. difficile tedavi algoritması, uzun etkili lipoglikopeptitler ve vankomisin PK/PD optimizasyonu",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Gram-pozitif bakteriler, hastane ve toplum kaynaklı enfeksiyonların morbidite ve mortalitesinde başı çeken en önemli patojen grubunu oluşturmaktadır. Klinik yönetim, patojenlerin geliştirdiği moleküler direnç mekanizmaları ve antimikrobiyal ajanların farmakokinetik/farmakodinamik (PK/PD) optimizasyonu etrafında şekillenir. En sık karşılaşılan patojenler; MRSA, koagülaz negatif stafilokoklar (CoNS), vankomisine dirençli enterokoklar (VRE) ve Clostridioides difficile'dir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Staphylococcus aureus ve MRSA",
+      "satirlar": [
+        {
+          "metin": "S. aureus, ABSSSI'den bakteriyemi, endokardit ve osteomiyelit gibi derin doku enfeksiyonlarına kadar geniş bir spektrumda hastalıklara yol açar. MRSA enfeksiyonlarının temelini, beta-laktamlara afinitesi çok düşük olan **PBP2a** enziminin aşırı üretimi oluşturur."
+        },
+        {
+          "metin": "MRSA bakteriyemisinde standart birinci basamak: **vankomisin veya daptomisin monoterapisi**. Tedavi altında 48-72 saat içinde kan kültürlerinde klirens sağlanamazsa (persistan bakteriyemi), odak kontrolü (kateter/protez çıkarılması, apse drenajı) ile birlikte **yüksek doz daptomisin (8-10 mg/kg) + seftarolin** kombinasyonu güçlü bir sinerji yaratarak tedavi başarısını artırır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "VISA vs VRSA — Mekanizma Karşılaştırması",
+      "kolonlar": [
+        "Fenotip",
+        "MİK",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "VISA / hVISA",
+            "4-8 mcg/mL",
+            "vraR, graRS, walRK regülatör genlerindeki ardışık mutasyonlarla hücre duvarı kalınlaşması; d-Ala-d-Ala hedefleri aşırı üretilerek vankomisin dış katmanda 'tuzağa düşürülür' (trapping)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "VRSA ★",
+            "≥16 mcg/mL",
+            "Enterokoklardan (VRE) Tn1546 transpozonu üzerinden plazmit aracılı vanA gen kümesinin kazanılması; hedef d-Ala-d-Laktat'a dönüşür"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Koagülaz Negatif Stafilokoklar (CoNS)",
+      "satirlar": [
+        {
+          "metin": "Özellikle S. epidermidis gibi ajanlar, yabancı cisim ve protez materyaller (kateter, kalp pili, eklem protezi) üzerinde biyofilm oluşturma yetenekleri sayesinde zorlu hastane enfeksiyonlarına neden olur. İzolatların **%80'inden fazlası metisiline (ve dolayısıyla tüm beta-laktamlara) dirençlidir** ve ampirik tedavide vankomisin temel taşıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Enterokoksik Enfeksiyonlar — Beta-Laktam Direnci",
+      "satirlar": [
+        {
+          "metin": "E. faecalis izolatları genellikle ampisiline duyarlı kalsa da, hastane kökenli **E. faecium** suşları intrensek olarak düşük afiniteli **PBP5-R** aşırı ekspresyonu nedeniyle ampisiline yüksek düzeyde direnç gösterir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "VRE — van Gen Kümeleri",
+      "kolonlar": [
+        "Gen Kümesi",
+        "Hedef Değişimi",
+        "Fenotip"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "vanA ★",
+            "d-Ala-d-Laktat",
+            "Vankomisin VE teikoplanine yüksek düzeyde çapraz direnç"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "vanB",
+            "d-Ala-d-Laktat",
+            "Teikoplanin tarafından İNDÜKLENMEZ — teikoplanine DUYARLI fenotip"
+          ]
+        },
+        {
+          "hucreler": [
+            "vanC (E. gallinarum, E. casseliflavus)",
+            "d-Ala-d-Serin",
+            "Kromozomal, intrensek, DÜŞÜK düzeyli vankomisin direnci"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Daptomisin ve Linezolid Direnci",
+      "satirlar": [
+        {
+          "metin": "VRE bakteriyemisi/endokarditinde ilk seçenek **10-12 mg/kg yüksek doz daptomisin**dir. Direnç, hücresel stres yanıtını koordine eden **LiaFSR sistemi ve WalKR operonundaki** mutasyonlarla zarın yeniden yapılandırılması (remodeling) sonucu gelişir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "'See-Saw' Etkisi: VRE endokarditinde, bakteri beta-laktama dirençli olsa BİLE daptomisine bir beta-laktamın (ampisilin veya seftarolin) eklenmesi, hücre zarı dengesini daptomisinin lehine bozarak güçlü bir bakterisidal sinerji yaratır ('see-saw' etkisi). Bu, in-vitro direnç profilinin tek başına kombinasyon tedavisinin klinik etkinliğini öngöremeyeceğini gösteren önemli bir kavramdır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Linezolid Direnç Mekanizmaları: 23S rRNA'daki kromozomal mutasyonlar (G2576U) VEYA cfr, optrA, poxtA gibi PLAZMİT aracılı genlerin kazanılmasıyla (ribozomal koruma veya metilasyon yoluyla) ortaya çıkar. Plazmit aracılı direnç genleri, kromozomal mutasyonların aksine yatay gen transferiyle diğer bakterilere aktarılabildiğinden epidemiyolojik olarak daha endişe vericidir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Clostridioides difficile Enfeksiyonu (CDI)",
+      "satirlar": [
+        {
+          "metin": "C. difficile, antibiyotik kullanımına bağlı bağırsak mikrobiyomunun bozulması sonrasında aşırı çoğalan ve kolite neden olan Gram-pozitif bir anaerobdur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "CDI Şiddetine Göre Tedavi",
+      "kolonlar": [
+        "Şiddet",
+        "Tedavi"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Hafif ve Orta Şiddetli (İlk Atak Dahil) ★",
+            "Fidaksomisin — vankomisine göre bağırsak mikrobiyomunu çok daha az bozar, VRE kolonizasyonunu engeller ve nüks oranlarını dramatik şekilde düşürür"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Fulminan (Şok/İleus/Toksik Megakolon)",
+            "Yüksek doz oral/NG vankomisin (günde 4×500 mg) + İV metronidazol (günde 3×500 mg); İleus varsa MUTLAKA rektal vankomisin retansiyon lavmanı eklenir. Fidaksomisin bu formda KULLANILMAZ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "ABSSSI ve Erken Taburculuk Stratejileri",
+      "satirlar": [
+        {
+          "metin": "**Uzun Etkili Lipoglikopeptitler (Dalbavansin, Oritavansin):** Lipofilik yan zincirleri sayesinde hem bakterisidal etkinliği derinleştirmiş hem terminal yarı ömrü olağanüstü uzatmışlardır. Acil serviste tek/iki dozluk şemalarla (>14 gün etki), haftalar süren günlük İV tedavi ihtiyacını ortadan kaldırır."
+        },
+        {
+          "metin": "**Delafloksasin ve Omadasiklin:** Anyonik florokinolon (delafloksasin) ve yeni nesil tetrasiklin türevi (omadasiklin); MRSA dahil çoklu dirençli patojenlere etki eder ve İV'den oral forma (step-down) geçişe imkan tanır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Özel Popülasyonlarda OPAT: Yaşlılar (kırılganlık/malnütrisyon), böbrek/karaciğer yetmezliği olanlar, obez hastalar ve IV madde bağımlıları (PWID) 'hospitalizm', LAMA ve sekonder nozokomiyal enfeksiyon risklerini katlayarak taşır. Dalbavansinin karaciğer/böbrek fonksiyonlarından (hafif-orta yetmezlikte) MİNİMAL etkilenerek doz ayarına ihtiyaç duymaması, bu popülasyonlar için EN GÜVENLİ OPAT ve erken taburculuk modelini sunar."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Vankomisin PK/PD Optimizasyonu",
+      "satirlar": [
+        {
+          "metin": "Vankomisin gibi dar terapötik indekse sahip glikopeptitlerin kullanımında dozlamanın hassasiyeti yaşamsaldır. Ciddi MRSA enfeksiyonlarında (bakteriyemi, pnömoni, endokardit), böbrek toksisitesi riskini azaltmak için geleneksel vadi (trough) düzey takibi terk edilerek, farmakokinetik (Bayesian) **AUC/MIC oranının 400-600 mg·h/L** arasında tutulması hedeflenir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "AKI Riski ve Yükleme Dozu: AUC düzeyinin 600'ü VEYA trough değerinin 15-20 mg/L'yi aşması durumunda akut böbrek hasarı (AKI) riski EKSPONANSİYEL olarak artar. Ciddi sepsisi olan kritik hastalarda ilacın terapötik hedeflere hızlıca ulaşması için gerçek vücut ağırlığı üzerinden **20-35 mg/kg (maksimum 3000 mg)** yükleme dozu verilmesi ŞARTTIR."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Aşırı Duyarlılık ve İnfüzyon Reaksiyonları",
+      "satirlar": [
+        {
+          "metin": "Vankomisinin hızlı infüzyonu, mast hücrelerini uyararak histamin deşarjına neden olur ve 'Vankomisin İnfüzyon Reaksiyonu'na (kırmızı adam sendromu) yol açar. Tedavide infüzyon hızı yavaşlatılmalı ve anafilaktik reaksiyonlara veya DRESS sendromu gibi çok daha şiddetli immünolojik tablolara geçiş olup olmadığı çok yakından izlenmelidir. Glikopeptitlere alerjisi olanlarda dalbavansin veya oritavansin kullanımında da çapraz reaksiyon riski göz önünde bulundurulmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Gram-Pozitif Enfeksiyonlar 10 Altın Kural: (1) MRSA=PBP2a; birinci basamak vankomisin/daptomisin, persistan bakteriyemide daptomisin (8-10mg/kg)+seftarolin. (2) VISA (MİK 4-8)=hücre duvarı kalınlaşması/trapping; VRSA (MİK≥16)=VRE'den vanA transferi. (3) CoNS'un >%80'i metisilin dirençlidir, ampirik vankomisin. (4) vanA=vanko+teikoplanin dirençli; vanB=teikoplanine duyarlı; vanC=intrensek düşük düzey (E. gallinarum/casseliflavus). (5) VRE'de yüksek doz daptomisin (10-12mg/kg); direnç LiaFSR/WalKR mutasyonlarıyla. (6) VRE endokarditinde daptomisin+beta-laktam 'see-saw' sinerjisi (dirençli olsa dahi). (7) Linezolid direnci: 23S rRNA G2576U (kromozomal) veya cfr/optrA/poxtA (plazmit). (8) CDI ilk atakta dahi fidaksomisin tercih edilir; fulminan CDI'de oral vanko+İV metronidazol (±rektal lavman), fidaksomisin kullanılmaz. (9) Dalbavansin/Oritavansin tek doz >14 gün etki, özel popülasyonlarda OPAT'ın en güvenli seçeneği. (10) Vankomisin AUC/MIC 400-600 hedeflenir; AUC>600 veya trough>15-20 AKI riskini eksponansiyel artırır; yükleme dozu 20-35 mg/kg şarttır."
+    }
+  ]
+}
