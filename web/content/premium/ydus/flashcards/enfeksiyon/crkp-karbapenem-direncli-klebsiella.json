@@ -1,0 +1,488 @@
+{
+  "id": "fc-enfeksiyon-crkp-001",
+  "accessLevel": "premium",
+  "topic": "Karbapenem Dirençli Klebsiella pneumoniae (CRKP)",
+  "description": "YDUS Enfeksiyon Hastalıkları serisi: CRKP direnç mekanizmaları, CR-hvKP hipervirülan varyant, moleküler tanı ve güncel tedavi stratejilerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Hipermukoviskoz *Klebsiella pneumoniae* (hmKp) suşlarını ayırt etmek için kullanılan fenotipik test hangisidir?",
+      "back": "String testi (Uzama testi).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-2",
+      "front": "String testi pozitifliği, koloni üzerinde yapılan bir işlemde mukus ipliğinin en az kaç cm uzaması ile tanımlanır?",
+      "back": "5 mm (Bazı kaynaklarda $5$ mm, meta-analizlerde pozitiflik kriteri olarak kullanılır).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-3",
+      "front": "Meta-analiz sonuçlarına göre, hmKp suşlarının ESBL üretme prevalansı non-hmKp suşlarına göre nasıldır?",
+      "back": "Anlamlı derecede daha düşüktür (Pooled OR: $0.26$).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-4",
+      "front": "Karbapenem dirençli *K. pneumoniae* (CRKP) enfeksiyonlarında bildirilen yaklaşık mortalite oranı yüzde kaçtır?",
+      "back": "$\\%42$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-5",
+      "front": "Hipervirülan *K. pneumoniae* (hvKP) suşlarının fagositozdan korunmasını sağlayan temel yapısal özellik nedir?",
+      "back": "Kalın kapsüler polisakkarit tabakası.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-6",
+      "front": "hvKP'nin demir edinim sisteminde CRKP'ye göre daha fazla ürettiği ve hayatta kalması için kritik olan moleküller nelerdir?",
+      "back": "Sideroforlar (Örn: aerobaktin).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-7",
+      "front": "Ambler Sınıf A karbapenemazların en prototipik örneği hangisidir?",
+      "back": "$KPC$ (Klebsiella pneumoniae carbapenemase).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-8",
+      "front": "Ambler Sınıf B karbapenemazlar (Metallo-$\\beta$-laktamazlar) hangi iyonu kofaktör olarak kullanır?",
+      "back": "Çinko ($Zn^{2+}$).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-9",
+      "front": "Türkiye ve Akdeniz ülkelerinde en sık saptanan Ambler Sınıf D karbapenemaz tipi hangisidir?",
+      "back": "$OXA-48$ tipi enzimler.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-10",
+      "front": "Karbapenem direnci gelişiminde porin kaybı ile ilişkili olan iki ana dış membran proteini hangisidir?",
+      "back": "$OmpK35$ ve $OmpK36$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-11",
+      "front": "CRKP'de çoklu ilaç direncine katkıda bulunan ve en iyi çalışılmış direnç-nodülasyon-bölünme (RND) efluks sistemi hangisidir?",
+      "back": "$AcrAB-TolC$ sistemi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-12",
+      "front": "Çin'de baskın olan ve sıklıkla $KPC-2$ taşıyan karbapenem dirençli klonal grup hangisidir?",
+      "back": "$ST11$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-13",
+      "front": "Amerika Birleşik Devletleri ve Avrupa'da baskın olan CRKP sekans tipi hangisidir?",
+      "back": "$ST258$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-14",
+      "front": "Karbapenemaz üreten suşlar ile üretmeyenler arasındaki kesin ayrımı yapmak için hangi yöntemler (fenotipik/genotipik) güvenilirdir?",
+      "back": "PCR ve modifiye Hodge testi gibi definitif testler.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-15",
+      "front": "Karbapenemlerin, diğer $\\beta$-laktamlara göre $\\beta$-laktamaz hidrolizine daha dirençli olmasını sağlayan yapısal özellik nedir?",
+      "back": "Yan zincirlerinin trans pozisyonunda olması.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-16",
+      "front": "Seftazidim-avibaktam (CZA) hangi Ambler sınıflarına karşı aktiftir?",
+      "back": "Sınıf A ($KPC$), Sınıf C ve Sınıf D ($OXA-48$); Sınıf B'ye karşı aktif değildir.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-17",
+      "front": "Metallo-$\\beta$-laktamaz (Sınıf B) üreten suşların tedavisinde Seftazidim-avibaktam ile kombine edilmesi önerilen antibiyotik hangisidir?",
+      "back": "Aztreonam.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-18",
+      "front": "CRKP enfeksiyonu için en önemli risk faktörlerinden biri olan ve bağırsak mikrobiyotasını bozan faktör nedir?",
+      "back": "Geniş spektrumlu antibiyotik (özellikle karbapenem) maruziyeti.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-19",
+      "front": "hvKP enfeksiyonları için karakteristik olan ve 'metastatik yayılım' ile seyreden klinik tabloya ne ad verilir?",
+      "back": "İnvaziv karaciğer apsesi sendromu.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-20",
+      "front": "CR-hvKP (Karbapenem dirençli hipervirülan) suşlarının ortaya çıkışındaki temel genetik mekanizma nedir?",
+      "back": "Direnç ve virülans genlerini aynı anda taşıyan hibrit plazmitlerin kazanımı.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-21",
+      "front": "Kolistin direnci ile en sık ilişkilendirilen genetik değişiklik hangisidir?",
+      "back": "$mgrB$ geninin inaktivasyonu veya $mcr-1$ plazmiti.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-22",
+      "front": "Tigesiklin direnci *K. pneumoniae*'da temel olarak hangi mekanizma ile gelişir?",
+      "back": "Efluks pompalarının (Örn: $AcrAB$, $OqxAB$) aşırı ifadesi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-23",
+      "front": "Karbapenemaz üretimini saptamak için kullanılan hızlı ve kartuş tabanlı moleküler test hangisidir?",
+      "back": "Xpert Carba-R.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-24",
+      "front": "İmipenem-relebaktam kombinasyonu hangi tip mutant suşlara karşı ek etkinlik sağlar?",
+      "back": "$KPC-2$ ve $KPC-3$ mutant alttipleri.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-25",
+      "front": "hvKP tanısında kullanılan moleküler biyobelirteçlerden biri olan ve kapsül regülasyonunu sağlayan gen hangisidir?",
+      "back": "$rmpA$ (Regulator of mucoid phenotype A).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-26",
+      "front": "CRKP kolonizasyonunun tespiti için en sık önerilen tarama yöntemi nedir?",
+      "back": "Rektal sürüntü kültürü veya moleküler tarama.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-27",
+      "front": "Sideroforlardan biri olan ve demiri konak proteinlerinden ayırmada çok etkili olan hvKP belirteci hangisidir?",
+      "back": "Yersiniabaktin veya Aerobaktin ($iucA$).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-28",
+      "front": "Karbapenem dirençli suşların 'son çare' tedavilerinden biri olan ve demir taşıma sistemini (siderofor taklidi) kullanan yeni antibiyotik hangisidir?",
+      "back": "Sefiderokol.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-29",
+      "front": "Yoğun bakım ünitelerinde CRKP salgınlarını kontrol etmek için önerilen 'temas önlemleri' dışındaki en kritik strateji nedir?",
+      "back": "Aktif sürveyans kültürleri ve antibiyotik yönetim programları.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-30",
+      "front": "Ertapenem direnci gelişimi, genellikle hangi iki mekanizmanın kombinasyonu ile açıklanır?",
+      "back": "Düşük düzeyli $\\beta$-laktamaz üretimi + porin kaybı.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-31",
+      "front": "Konvasiyonel hvKP suşları genellikle hangi kapsüler serotiplere sahiptir?",
+      "back": "$K1$ ve $K2$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-32",
+      "front": "Karbapenem dirençli suşlarda mortalite riskini artıran en önemli komorbidite grupları hangileridir?",
+      "back": "Kardiyovasküler hastalıklar ve böbrek hastalıkları (özellikle diyaliz bağımlı).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-33",
+      "front": "İnvaziv prosedürlerden hangisi CRKP enfeksiyonu riskini en fazla (yaklaşık $6$ kat) artırır?",
+      "back": "Nazogastrik kateterizasyon.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-34",
+      "front": "Meta-analizlere göre $KPC$ tipi CRKP enfeksiyonu, genel mortalite riskini yaklaşık kaç kat artırır?",
+      "back": "$3.57$ kat.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-35",
+      "front": "hvKP ile cKP (klasik) suşlarını ayırmada kullanılan altın standart yöntem nedir?",
+      "back": "Fare enfeksiyon modelleri ($LD_{50}$ tayini).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-36",
+      "front": "Gelişmekte olan ülkelerde invaziv prosedürlere bağlı CRKP riski neden gelişmiş ülkelere göre daha yüksektir?",
+      "back": "Enfeksiyon kontrol önlemleri ve steril teknik uygulama farkları nedeniyle.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-37",
+      "front": "Karbapenemazlardan $NDM$ (New Delhi Metallo-$\\beta$-lactamase) ilk olarak hangi ülkede tanımlanmıştır?",
+      "back": "Hindistan.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-38",
+      "front": "Karbapenem direnci ve hipervirülansın birleştiği 'ST11-KL64' klonu hangi bölgede yaygındır?",
+      "back": "Doğu Asya (özellikle Çin).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-39",
+      "front": "Plazmit aracılı kolistin direnci geni hangisidir?",
+      "back": "$mcr-1$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-40",
+      "front": "hvKP suşlarının serum bakterisidal etkisine karşı dirençli olmasını sağlayan temel faktör nedir?",
+      "back": "Hiperkapsül üretimi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-41",
+      "front": "Meropenem-vaborbaktam kombinasyonundaki vaborbaktam hangi tip bir inhibitördür?",
+      "back": "Boronik asit türevi $\\beta$-laktamaz inhibitörü.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-42",
+      "front": "CRKP'nin neden olduğu pnömonide balgam Gram yaymasının duyarlılığı yaklaşık yüzde kaçtır?",
+      "back": "$\\%50$.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-43",
+      "front": "Klebsiella türleri Gram boyamada mikroskobik olarak nasıl görünür?",
+      "back": "Kısa, tombul, Gram-negatif basiller.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-44",
+      "front": "Karbapenem dirençli suşların tedavisinde 'kurtarma tedavisi' olarak kullanılan yeni bir tetrasiklin türevi hangisidir?",
+      "back": "Eravasiklin.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-45",
+      "front": "hvKP enfeksiyonlarında endoftalmi gelişmesi durumunda sistemik antibiyotiğe ek olarak ne yapılmalıdır?",
+      "back": "İntravitreal antibiyotik ve vitrektomi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-46",
+      "front": "Karbapenemaz üreten *K. pneumoniae* suşlarında $OXA-48$ enziminin genetik olarak taşınma yolu nedir?",
+      "back": "Yüksek oranda aktarılabilir olan $IncL$ tipi plazmitler.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-47",
+      "front": "İnsan bağırsağının CRKP için rolü nedir?",
+      "back": "Direnç genleri için rezervuar ve invaziv enfeksiyon öncesi kolonizasyon odağı.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-48",
+      "front": "Bakteriyofaj tedavisi CRKP suşlarına karşı hangi mekanizma ile çalışır?",
+      "back": "Litik fajlar bakteriyi doğrudan parçalar (klasik faj tedavisi).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-49",
+      "front": "Moleküler testlerde 'yanlış negatiflik' riskini artıran durum nedir?",
+      "back": "Testin hedeflemediği nadir karbapenemaz varyantlarının varlığı.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-50",
+      "front": "CRKP sürveyansında Whole Genome Sequencing (WGS) teknolojisinin temel avantajı nedir?",
+      "back": "Salgın incelemelerinde suşlar arasındaki genetik yakınlığı ve bulaş yollarını yüksek çözünürlükle belirlemesi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-51",
+      "front": "hvKP suşlarında bulunan $pLVPK$ benzeri büyük plazmitlerin içeriği nedir?",
+      "back": "Çok sayıda virülans geni (sideroforlar, mukoid fenotip genleri).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-52",
+      "front": "Karbapenem dirençli hipervirülan suşlar (CR-hvKP) için 'ikili tehdit' (dual-threat) terimi neden kullanılır?",
+      "back": "Hem yüksek antibiyotik direncine hem de sağlıklı bireylerde ciddi invaziv enfeksiyon yapma yeteneğine sahip oldukları için.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-53",
+      "front": "Enzim Sınıfı: Ambler Sınıf B. Antibiyotik Etkileşimi: Karbapenemleri hidrolize eder ancak _____ tarafından inhibe edilemez.",
+      "back": "Seftazidim-avibaktam veya Meropenem-vaborbaktam.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-54",
+      "front": "KPC enzimlerinin en önemli genetik stabilite mekanizması nedir?",
+      "back": "$Tn4401$ transpozonu içinde yer almaları.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-55",
+      "front": "Hastanede yatan hastalarda CRKP kolonizasyonundan enfeksiyona ilerleme riskini artıran en önemli klinik puanlama sistemi hangisidir?",
+      "back": "APACHE II skoru.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-56",
+      "front": "Karbapenem dirençli suşların tedavisinde kullanılan Seftazidim-avibaktama direnç gelişimi genellikle hangi gen mutasyonu ile ilişkilidir?",
+      "back": "$bla_{KPC}$ mutasyonları.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-57",
+      "front": "hvKP enfeksiyonlarında toplum kaynaklı gelişen en tipik organ tutulumu hangisidir?",
+      "back": "Piyejenik karaciğer apsesi.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-58",
+      "front": "Karbapenem direnci için risk faktörü: _____ maruziyeti, bağırsaktaki duyarlı suşları yok ederek dirençli suşların baskın hale gelmesine neden olur.",
+      "back": "Karbapenem veya Kinolon.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-59",
+      "front": "CR-hvKP enfeksiyonlarının epidemiyolojisinde en sık bildirilen bölge neresidir?",
+      "back": "Asya (özellikle Çin ve Tayvan).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-60",
+      "front": "Fosfomisin'in CRKP enfeksiyonlarındaki yeri nedir?",
+      "back": "Özellikle üriner sistem enfeksiyonlarında parenteral kombinasyon tedavisinin bir parçası olarak.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-61",
+      "front": "K. pneumoniae suşlarında $NDM-5$ varyantının önemi nedir?",
+      "back": "Artmış direnç ve hızlı mortalite ile ilişkilendirilmiş, gelişmekte olan bir varyanttır.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-62",
+      "front": "Karbapenemaz enzimi hidroliz aktivitesi: $KPC > OXA-48$. Doğru mu yanlış mı?",
+      "back": "Doğru ($KPC$, karbapenemleri $OXA-48$'e göre daha güçlü hidrolize eder).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-63",
+      "front": "Porin modifikasyonu: $OmpK36$ kanalındaki daralma veya mutasyon, karbapenemlerin _____ girişini engeller.",
+      "back": "Periplazmik aralığa.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-64",
+      "front": "Ambler Sınıf D enzimi olan $OXA-48$, penisilinaz aktivitesine sahip midir?",
+      "back": "Evet, güçlü penisilinaz aktivitesi gösterir ancak geniş spektrumlu sefalosporinlere karşı aktivitesi düşüktür.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-65",
+      "front": "CR-hvKP suşlarının tanısında string testi neden tek başına yeterli değildir?",
+      "back": "Düşük duyarlılık ve özgüllüğe sahip olması; her hipervirülan suş hipermukoviskoz olmayabilir.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-66",
+      "front": "hvKP'nin moleküler tanısında kullanılan ve demir taşıyıcı proteini kodlayan gen grubu hangisidir?",
+      "back": "$iutA$ (Aerobaktin reseptörü).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-67",
+      "front": "CRKP sepsis yönetiminde erken dönemde hangi tedavi yaklaşımı mortaliteyi azaltır?",
+      "back": "Erken, agresif kombinasyon tedavisi ve enfeksiyon odağının kontrolü.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-68",
+      "front": "Yenidoğan ünitelerinde CRKP salgınları için en önemli bulaş kaynağı nedir?",
+      "back": "Sağlık personelinin elleri ve kontamine tıbbi ekipmanlar.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-69",
+      "front": "Plazmit kürleme (Plasmid curing) stratejisinin amacı nedir?",
+      "back": "Bakteriden direnç veya virülans plazmitlerini uzaklaştırarak suşu duyarlı hale getirmek.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-70",
+      "front": "Karbapenem dirençli *Klebsiella* menenjiti tedavisinde BOS geçişi olan hangi ajanlar tercih edilebilir?",
+      "back": "Kolistin, tigesiklin veya seftazidim-avibaktam (uygun duyarlılıkta).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-71",
+      "front": "Ambler Sınıf B karbapenemazlar için kullanılan diğer bir isim nedir?",
+      "back": "Metallo-$\\beta$-laktamazlar (MBL).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-72",
+      "front": "Sefiderokol'ün etki mekanizması hangi iyonun taşınma sistemini taklit eder?",
+      "back": "Ferrik demir ($Fe^{3+}$).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-73",
+      "front": "hvKP enfeksiyonları sağlıklı bireylerde hangi tip enfeksiyonlara (toplum kaynaklı/hastane kaynaklı) daha çok neden olur?",
+      "back": "Toplum kaynaklı enfeksiyonlar.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-74",
+      "front": "CRKP suşlarında seftazidim direnci genelde yüzde kaçtır?",
+      "back": "$\\%99$'a yakın.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-75",
+      "front": "Klinik kararda 'in-house' PCR testlerinin avantajı nedir?",
+      "back": "Yeni çıkan direnç allellerine göre hızlıca güncellenebilmeleri.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-76",
+      "front": "Karbapenemaz üreten Enterobacterales (CRE) içinde en sık izole edilen tür hangisidir?",
+      "back": "*Klebsiella pneumoniae*.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-77",
+      "front": "CRKP risk faktörleri arasında yer alan 'corticosteroid' kullanımı riski kaç kat artırır?",
+      "back": "Yaklaşık $2.8$ kat.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-78",
+      "front": "Böbrek yetmezliği olan hastalarda karbapenem direnci riskini artıran spesifik faktör nedir?",
+      "back": "Vasküler erişim yolları ve üremiye bağlı immünsupresyon.",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-79",
+      "front": "Moleküler sürveyansta 'ST' (Sequence Type) belirleme yöntemi hangisidir?",
+      "back": "MLST (Multilocus Sequence Typing).",
+      "tag": "Enfeksiyon / CRKP"
+    },
+    {
+      "id": "card-80",
+      "front": "CRKP enfeksiyonlarında mortaliteyi artıran 'yetersiz başlangıç tedavisi' ne demektir?",
+      "back": "Etkenin dirençli olduğu bir antibiyotiğin ampirik olarak seçilmesi.",
+      "tag": "Enfeksiyon / CRKP"
+    }
+  ]
+}
