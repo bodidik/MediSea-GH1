@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "id": "akciger-kanseri",
+    "branch": "gogus-hastaliklari",
+    "baslik": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
+    "altbaslik": "KHDAK/KHAK ayrımı, LDCT tarama kriterleri, EBUS/EUS evreleme, moleküler profilleme (EGFR/ALK/KRAS G12C) ve evre-bazlı tedavi algoritmaları",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 87,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Akciğer kanseri, insidansı ve mortalite oranlarıyla dünya çapında en sık ölüme neden olan malignite olup, 2022 yılı verilerine göre küresel çapta yaklaşık 2.4-2.5 milyon yeni vaka ve 1.8 milyon ölüme yol açmıştır. Tüm akciğer kanserleri histopatolojik, moleküler ve klinik davranış farklılıkları temelinde iki ana gruba ayrılır: olguların yaklaşık **%85**'ini oluşturan **küçük hücreli dışı akciğer kanseri (KHDAK)** ve **%15**'ini oluşturan **küçük hücreli akciğer kanseri (KHAK)**."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji ve Etiyoloji",
+      "satirlar": [
+        {
+          "metin": "Hastalığın en temel etiyolojik faktörü tütün ve tütün ürünleri kullanımı olup, vakaların **%85-90**'ı sigara içiciliği ile doğrudan ilişkilidir. Gelişmiş ülkelerde erkeklerde tütün kullanımının azalmasıyla mortalite oranları düşme eğilimi gösterse de, kadınlarda ve gelişmekte olan ülkelerde insidans artışını sürdürmektedir."
+        },
+        {
+          "metin": "Sigara içmeyen bireylerde görülen akciğer kanseri (**LCINS**), farklı bir epidemiyolojik ve biyolojik antite olarak kabul edilmektedir ve özellikle Doğu Asya kökenli kadınlarda daha sık izlenmekte olup, bu grupta adenokarsinom alt tipi ve **EGFR mutasyonları** dominanttır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tütün Dışı Risk Faktörleri",
+      "kolonlar": [
+        "Kategori",
+        "Faktörler"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Çevresel/Mesleki",
+            "Pasif içicilik, radon gazı, asbest, arsenik, nikel, PM2.5 hava kirliliği"
+          ]
+        },
+        {
+          "hucreler": [
+            "Benign Akciğer Hastalıkları",
+            "KOAH ve idiyopatik pulmoner fibrozis (sigaradan bağımsız risk faktörü)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Genetik Yatkınlık",
+            "TP53 ve RB1 germline mutasyonları (ör. Li-Fraumeni sendromu)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tarama ve Erken Tanı",
+      "satirlar": [
+        {
+          "metin": "Hastalığın büyük oranda ileri evrede (Evre III-IV) teşhis edilmesi sağkalımı kısıtlayan en önemli faktördür. NLST ve NELSON gibi geniş çaplı randomize kontrollü çalışmalar, **50-80 yaş** aralığında, en az **20-30 paket/yılı** sigara öyküsü olan ve aktif içici veya son **15 yıl** içinde bırakmış bireylerde yıllık Düşük Doz Bilgisayarlı Tomografi (LDCT) taramasının, akciğer kanseri spesifik mortalitede **%20 ila %26** oranında rölatif risk azalması sağladığını kanıtlamıştır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "LDCT Tarama Kriterleri (ACR): 50-80 yaş + ≥20-30 paket-yıl sigara öyküsü + aktif içici veya bırakalı ≤15 yıl olan bireyler. Sigarayı bırakma danışmanlığı ve taramanın yarar/zararlarının (yanlış pozitiflik, radyasyon) tartışıldığı 'ortak karar verme' süreci taramanın zorunlu bileşenleridir. Kesit kalınlığı tercihen ≤1.5 mm, CTDIvol ≤3 mGy olmalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Prezentasyon ve Semptomatoloji",
+      "satirlar": [
+        {
+          "metin": "Akciğer kanseri tanısı alan hastaların yaklaşık dörtte üçü başvuru anında semptomatiktir. **Lokal/Bölgesel:** Yeni gelişen veya karakter değiştiren öksürük (%50-75), hemoptizi, obstrüktif dispne, plöretik/künt göğüs ağrısı. **Superior sulkus (Pancoast) tümörleri**, C8-T1/T2 sinir kökü invazyonu ile omuz/kol ağrısı ve stellat ganglion invazyonu ile ipsilateral **Horner sendromu** (pitozis, miyozis, anhidrozis) ile prezente olabilir. N. laryngeus recurrens tutulumu ses kısıklığına, VKS invazyonu ise fasiyal ödem/pletore ile **VKS sendromuna** yol açar."
+        },
+        {
+          "metin": "**Metastatik Semptomlar:** En sık metastaz yapılan organlar kemik, beyin, karaciğer ve adrenal bezlerdir. Baş ağrısı, fokal nörolojik defisit, kemik ağrısı ve istemsiz kilo kaybı ileri evre hastalığa işaret eder."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Paraneoplastik Sendromlar",
+      "kolonlar": [
+        "Sendrom",
+        "İlişkili Histoloji/Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Hiperkalsemi",
+            "Skuamöz hücreli karsinom — ektopik PTHrP üretimi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "SIADH ★",
+            "KHAK — ektopik ADH sekresyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Cushing Sendromu",
+            "KHAK — ektopik ACTH sekresyonu"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Lambert-Eaton Miyastenik Sendromu ★",
+            "KHAK — voltaj-kapılı kalsiyum kanallarına karşı antikorlar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı ve Klinik Evreleme (Staging) Yaklaşımları",
+      "satirlar": [
+        {
+          "metin": "Değerlendirmede ilk adım İV kontrastlı toraks ve üst batın BT'dir; primer tümörün anatomik yayılımı (T), bölgesel nodal tutulum (N) ve olası karaciğer/adrenal metastazları (M) değerlendirilir. Erken evre hastalık izlenimi veren veya cerrahi planlanan hastalarda okült metastazı dışlamak için tüm vücut **FDG-PET/BT** ve kontrastlı kraniyal **MRI** standarttır."
+        },
+        {
+          "metin": "Doku biyopsisi ve mediastinal lenf nodu (N2/N3) evrelemesinde ilk tercih **EBUS ve/veya EUS eşliğinde iğne aspirasyonudur (TBNA/FNA)**. Periferik lezyonlarda BT eşliğinde transtorasik iğne biyopsisi (TTNB) tercih edilir. T2/T3 evresine neden olan plevral invazyonu, M1a evresine neden olan malign plevral efüzyondan ayırmak için torasentez veya plevral biyopsi zorunludur."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patobiyoloji ve Moleküler Profilleme",
+      "satirlar": [
+        {
+          "metin": "**KHDAK:** Vakaların büyük çoğunluğunu adenokarsinom (TTF-1, Napsin-A pozitif; sitokeratin 7 pozitif), daha az kısmını skuamöz hücreli karsinom (p40, p63, sitokeratin 5/6 pozitif) ve büyük hücreli karsinom oluşturur. Evre IB ve ileri evre KHDAK (skuamöz dışı) tanısı alan TÜM hastalarda, **Yeni Nesil Dizileme (NGS)** tabanlı geniş gen panelleri zorunludur."
+        },
+        {
+          "metin": "**KHAK:** Yüksek proliferasyon indeksine (Ki-67) sahip, nöroendokrin belirteçler (kromogranin, sinaptofizin, CD56) eksprese eden ve **p53 ile RB1 inaktivasyonunun evrensel** olarak görüldüğü agresif seyirli nöroendokrin tümörlerdir. Hedeflenebilir spesifik mutasyonları bulunmadığından rutin NGS taraması, atipik klinik durumlar (hiç sigara içmeyenler) dışında zorunlu değildir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK'ta Standart Taranması Gereken Driver Mutasyonlar",
+      "kolonlar": [
+        "Mutasyon/Rearanjman",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "EGFR, ALK, ROS1, BRAF V600E, MET ekzon 14, RET, NTRK, KRAS G12C, HER2 ★",
+            "Tüm skuamöz dışı ileri evre KHDAK'ta NGS ile taranmalı; ayrıca tüm evrelerde PD-L1 TPS değerlendirilmelidir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK Erken Evre (I-II) Yönetimi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Cerrahi Rezektabl",
+            "VATS/RATS ile anatomik lobektomi/segmentektomi + sistematik mediastinal lenf nodu diseksiyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Cerrahiye Uygun Olmayan",
+            "Stereotaktik Beden Radyoterapisi (SBRT) — küratif alternatif"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yüksek Riskli Evre II / Bazı Evre IB (≥4cm)",
+            "Adjuvan platin bazlı kemoterapi"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Rezeke EGFR mutant (ekzon 19 del/L858R) ★",
+            "Adjuvan osimertinib"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rezeke ALK Pozitif",
+            "Adjuvan alectinib"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rezeke Evre II-IIIA (EGFR/ALK negatif)",
+            "Adjuvan atezolizumab (PD-L1≥%1) veya pembrolizumab"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK Lokal İleri Evre (III) Yönetimi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Potansiyel Rezektabl (T3N1 veya seçilmiş N2)",
+            "Neoadjuvan kemoimmünoterapi (örn. nivolumab + platin ikili) sonrası cerrahi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Anrezektabl (N3 veya bulky N2) ★",
+            "Eşzamanlı kemoradyoterapi → progresyon yoksa 1 yıl durvalumab konsolidasyon idamesi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK Metastatik Evre (IV) — Tedavi Seçimi",
+      "kolonlar": [
+        "Profil",
+        "Tedavi"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Sürücü Mutasyonu Var ★",
+            "Kemoterapi yerine mutasyona spesifik oral TKI (EGFR→osimertinib; ALK→alectinib/brigatinib/lorlatinib; ROS1→crizotinib/entrectinib; BRAF V600E→dabrafenib+trametinib; KRAS G12C→sotorasib/adagrasib). İmmünoterapi bu grupta hem etkisiz hem TKI ile toksisiteyi artırır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sürücü Yok, PD-L1 TPS ≥%50",
+            "Tek ajan immünoterapi (pembrolizumab, atezolizumab, cemiplimab)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sürücü Yok, PD-L1 TPS <%50 veya yüksek tümör yükü",
+            "Platin bazlı ikili kemoterapi + immünoterapi (pembrolizumab veya nivolumab+ipilimumab)"
+          ]
+        },
+        {
+          "hucreler": [
+            "İzole Oligometastatik",
+            "Primer tümör + oligometastazlara ablatif lokal tedavi (SBRT) progresyonsuz sağkalımı iyileştirebilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Küçük Hücreli Akciğer Kanseri (KHAK) Yönetimi",
+      "satirlar": [
+        {
+          "metin": "KHAK, tütün ürünleriyle en güçlü ilişkiye sahip, santral yerleşimli nekrotik odaklar içeren ve erken metastaz yapma eğilimi gösteren alt tiptir. Evreleme genellikle VALSG kriterleri ile 'Sınırlı Evre (LS)' ve 'Yaygın Evre (ES)' olarak yapılır; AJCC TNM evrelemesi cerrahi adaylarını (T1-2N0) seçmek için özellikle faydalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHAK Evre-Bazlı Tedavi",
+      "kolonlar": [
+        "Evre",
+        "Tedavi"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sınırlı Evre (LS) ★",
+            "Platin (sisplatin/karboplatin)+etoposid ile eşzamanlı torasik RT → progresyon yoksa 1 yıl durvalumab idamesi (ADRIATIC); yanıt verenlerde profilaktik kraniyal ışınlama (PCI)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Erken Evre I-IIA (T1-T2N0M0, <%5)",
+            "İnvaziv mediastinal evreleme negatifliği sonrası cerrahi rezeksiyon + adjuvan kemoterapi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yaygın Evre (ES) ★",
+            "Karboplatin/Sisplatin+Etoposid + Atezolizumab veya Durvalumab (IMpower133/CASPIAN) → immünoterapi idamesi. Palyatif amaç"
+          ]
+        },
+        {
+          "hucreler": [
+            "Nüks (Platin Duyarlılığına Göre)",
+            "Platin re-challenge, lurbinectedin, topotekan veya irinotekan"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Akciğer Kanseri 10 Altın Kural: (1) KHDAK %85, KHAK %15; sigara ilişkisi %85-90. (2) LCINS→Doğu Asyalı kadın+adenokarsinom+EGFR mutasyonu profili. (3) LDCT taraması 50-80 yaş+≥20-30 paket-yıl+bırakalı ≤15 yıl'da mortaliteyi %20-26 azaltır. (4) Pancoast→Horner sendromu (C8-T1 invazyonu); SIADH/Cushing/Lambert-Eaton→KHAK. (5) N2/N3 evreleme için ilk tercih EBUS/EUS-TBNA. (6) Skuamöz dışı ileri evre KHDAK'ta NGS+PD-L1 TPS zorunlu. (7) Sürücü mutasyonu varsa TKI tercih edilir, immünoterapi bu grupta etkisiz/toksik. (8) PD-L1≥%50+sürücü yok→tek ajan immünoterapi; <%50→kemo+immünoterapi. (9) Anrezektabl Evre III KHDAK→eşzamanlı KRT+1 yıl durvalumab. (10) LS-KHAK→platin-etoposid+RT+durvalumab idame+PCI; ES-KHAK→platin-etoposid+atezolizumab/durvalumab, palyatif amaçlı."
+    }
+  ]
+}

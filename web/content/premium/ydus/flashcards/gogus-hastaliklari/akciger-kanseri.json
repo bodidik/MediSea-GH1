@@ -1,0 +1,530 @@
+{
+  "id": "fc-gogus-akcigerkanseri-001",
+  "accessLevel": "premium",
+  "topic": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
+  "description": "YDUS Göğüs Hastalıkları serisi: Lung-RADS 2022, KHDAK/KHAK evreleme ve moleküler profilleme, tarama kriterleri ve tedavi algoritmalarını kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Lung-RADS 2022 sistemine göre, bir nodülün 'büyüme' (growth) göstermiş sayılması için 12 aylık bir dönemde ortalama çapında en az ne kadar artış olmalıdır?",
+      "back": "$>1.5\\,mm$.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-2",
+      "front": "Lung-RADS v2022'de, nodül boyutu ölçülürken kullanılan standart hesaplama yöntemi nedir?",
+      "back": "Uzun ve kısa eksenlerin ortalamasının alınması.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-3",
+      "front": "Küçük hücreli akciğer kanseri (KHAK) evrelemesinde kullanılan 'Limited Evre' (LS) tanımı, anatomik olarak neye karşılık gelir?",
+      "back": "Hastalığın tek bir hemitoraks ve bölgesel lenf nodları ile sınırlı olması ve tek bir radyoterapi portuna güvenli bir şekilde dahil edilebilmesi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-4",
+      "front": "Amerikan Radyoloji Koleji (ACR) kriterlerine göre, düşük doz BT (LDCT) akciğer kanseri taraması için uygun olan standart yaş aralığı nedir?",
+      "back": "$50$ - $80$ yaş.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-5",
+      "front": "Akciğer kanseri tarama kriterleri kapsamında, kişinin sigara içme geçmişi en az kaç paket-yıl olmalıdır?",
+      "back": "En az $20$ paket-yıl.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-6",
+      "front": "Lung-RADS kategorilerinden hangisi 'eksik inceleme' (incomplete) anlamına gelir ve önceki filmlerle karşılaştırma veya ek görüntüleme gerektirir?",
+      "back": "Kategori 0 (LR-0).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-7",
+      "front": "Akciğer adenokarsinomunda en sık görülen onkojenik 'driver' mutasyon hangisidir?",
+      "back": "KRAS mutasyonları (yaklaşık $\\%25$ oranında).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-8",
+      "front": "Küçük hücreli dışı akciğer kanserinde (KHDAK), EGFR mutasyonları hangi hasta popülasyonunda daha sık görülür?",
+      "back": "Hiç sigara içmemiş olanlar, kadınlar ve Doğu Asya kökenliler.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-9",
+      "front": "TNM 9. edisyona göre, 'Adenokarsinoma in situ' (AIS) tanımı için maksimum tümör boyutu ne olmalıdır?",
+      "back": "$\\%100$ lepidik patern gösteren ve boyutu $\\le 3\\,cm$ olan tümörler.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-10",
+      "front": "Ekstansif evre küçük hücreli akciğer kanserinde (ES-KHAK) birinci basamak standart tedavi rejimi nedir?",
+      "back": "Platin-etoposid kemoterapisi ile birlikte immünoterapi (atezolizumab veya durvalumab).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-11",
+      "front": "Pancoast tümörlerinde (superior sulcus tümörleri) görülen ve miyozis, ptozis ve anhidrozis ile karakterize olan klinik tabloya ne ad verilir?",
+      "back": "Horner Sendromu.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-12",
+      "front": "KHDAK hastalarında kemik metastazlarını değerlendirmede ve okült metastazları saptamada en yüksek duyarlılığa sahip görüntüleme yöntemi hangisidir?",
+      "back": "FDG-PET/BT.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-13",
+      "front": "Lung-RADS 3 (muhtemelen benign) kategorisindeki bir nodül için önerilen takip protokolü nedir?",
+      "back": "6. ayda düşük doz BT (LDCT) ile kontrol.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-14",
+      "front": "KHAK'ta Lambert-Eaton miyastenik sendromunun temel patogenezi nedir?",
+      "back": "Voltaj bağımlı kalsiyum kanallarına karşı oluşan otoantikorlar.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-15",
+      "front": "Akciğer kanserinde hiperkalsemi en sık hangi histolojik alt tip ile ilişkilidir?",
+      "back": "Skuamöz hücreli karsinom.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-16",
+      "front": "Uygunsuz ADH salınımı sendromu (SIADH) akciğer kanserinin hangi alt tipinde en yaygın paraneoplastik bulgudur?",
+      "back": "Küçük hücreli akciğer kanseri (KHAK).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-17",
+      "front": "Lung-RADS sisteminde kullanılan 'S' modifikasyonunun (örneğin 2S) anlamı nedir?",
+      "back": "Akciğer kanseri dışı, klinik olarak önemli insidental bir bulgunun varlığı.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-18",
+      "front": "TNM 9. edisyona göre, ana bronş tutulumu olan ancak karinaya uzaklığı $\\ge 2\\,cm$ olan ve visceral plevrayı invaze eden tümörün T evresi nedir?",
+      "back": "T2.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-19",
+      "front": "KHDAK'ta ALK gen rearanjmanı saptanan metastatik hastalarda tercih edilen birinci basamak tedavi sınıfı nedir?",
+      "back": "ALK tirozin kinaz inhibitörleri (TKI).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-20",
+      "front": "Lung-RADS 4B (çok şüpheli) kategorisindeki bir nodül için yıllık akciğer kanseri riski tahmini nedir?",
+      "back": "$>\\%15$.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-21",
+      "front": "Küçük hücreli akciğer kanseri tedavisinde, kemoterapi sonrası profilaktik kraniyal radyoterapi (PCI) hangi durumda düşünülür?",
+      "back": "Sistemik tedaviye tam veya iyi parsiyel yanıt veren limited evre hastalarda.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-22",
+      "front": "KHDAK'ta metastatik hastalık yönetiminde, PD-L1 ekspresyonu $\\ge \\%50$ olan ve 'driver' mutasyonu olmayan hastalar için standart yaklaşım nedir?",
+      "back": "Tek ajan immün kontrol noktası inhibitörü (pembrolizumab gibi) tedavisi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-23",
+      "front": "Akciğer kanseri evrelemesinde kullanılan N2a ve N2b ayrımı (TNM 9) neye dayanmaktadır?",
+      "back": "N2a tek bir istasyon tutulumunu, N2b ise birden fazla lenf nodu istasyonu tutulumunu ifade eder.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-24",
+      "front": "Lurbinectedin hangi durumdaki akciğer kanseri hastaları için bir tedavi seçeneğidir?",
+      "back": "Birinci basamak platin bazlı tedavi sonrası nüks eden küçük hücreli akciğer kanseri.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-25",
+      "front": "Lung-RADS 1 kategorisindeki nodül tipi nedir?",
+      "back": "Nodül içermeyen veya yağ/belirli kalsifikasyon paternleri gibi kesin selim özellikler gösteren akciğerler.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-26",
+      "front": "KHAK'ın hızlı büyüme ve erken metastaz yapma eğiliminden dolayı tanı anındaki en yaygın klinik tablosu nedir?",
+      "back": "Yaygın (ekstansif) metastatik hastalık.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-27",
+      "front": "Evre IIIA KHDAK yönetiminde cerrahi öncesi uygulanan sistemik tedaviye ne ad verilir?",
+      "back": "Neoadjuvan tedavi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-28",
+      "front": "Osimertinib, KHDAK'ta hangi spesifik mutasyonları hedefleyen üçüncü kuşak bir TKI'dır?",
+      "back": "Duyarlılaştırıcı EGFR mutasyonları ve T790M direnç mutasyonu.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-29",
+      "front": "Akciğer kanseri taramasında düşük doz BT kullanılmasının temel amacı nedir?",
+      "back": "Mortaliteyi azaltmak için kanseri semptom öncesi küratif evrede yakalamak.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-30",
+      "front": "Lung-RADS 2022'ye göre, çapı $\\ge 30\\,mm$ olan stabil bir nonsolid (buzlu cam) nodül hangi kategoride sınıflandırılır?",
+      "back": "LR-2 (Benign görünümlü).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-31",
+      "front": "KHDAK'ta ROS1 rearanjmanları saptanan hastalarda kullanılan hedefe yönelik ajanlardan biri hangisidir?",
+      "back": "Krizotinib.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-32",
+      "front": "Akciğer kanseri tanısı için periferik yerleşimli bir nodülden doku örneği alırken pnomotoraks riskini azaltan modern yöntem nedir?",
+      "back": "Navigasyonel bronkoskopi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-33",
+      "front": "KHAK'ta kemoterapiye bağlı gelişen miyelosüpresyon riskini azaltmak için kullanılan CDK 4/6 inhibitörü hangisidir?",
+      "back": "Trilasiklib.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-34",
+      "front": "TNM 9. edisyona göre, karşı hemitoraksta ayrı bir akciğer nodülü saptanması (kontralateral akciğer metastazı) hangi evredir?",
+      "back": "M1b.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-35",
+      "front": "Lung-RADS 4X kategorisinin diğer 4. kategori alt gruplarından temel farkı nedir?",
+      "back": "Radyoloğun boyuttan bağımsız olarak ek bulgular (spikülasyon, lenfadenopati vb.) nedeniyle malignite şüphesini artırarak kategoriyi yükseltmesidir.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-36",
+      "front": "Akciğer adenokarsinomunda BRAF V600E mutasyonu saptandığında kullanılan kombine hedefe yönelik tedavi nedir?",
+      "back": "Dabrafenib ve Trametinib.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-37",
+      "front": "KHDAK'ta Evre II hastalığın standart tedavi yaklaşımı nedir?",
+      "back": "Cerrahi rezeksiyon ve sonrasında adjuvan kemoterapi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-38",
+      "front": "Lung-RADS sisteminde 'atipik kistik lezyonlar' hangi sürümle birlikte raporlama kriterlerine eklenmiştir?",
+      "back": "Lung-RADS v2022.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-39",
+      "front": "KHAK hastalarında kemoterapiye dirençli veya 90 günden daha kısa sürede nüks eden durumlarda önerilen kemoterapötik ajan hangisidir?",
+      "back": "Topotekan (veya Lurbinektedin).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-40",
+      "front": "Akciğer kanserinde Pancoast tümörleri en sık hangi anatomik lokalizasyonda görülür?",
+      "back": "Akciğer apeksi (Superior sulcus).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-41",
+      "front": "Lung-RADS 2022'ye göre, bazal taramada saptanan $\\ge 6\\,mm$ ve $< 8\\,mm$ boyutundaki solid nodül hangi kategoridedir?",
+      "back": "LR-3 (Muhtemelen benign).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-42",
+      "front": "KHDAK'ta RET gen rearanjmanlarını hedefleyen spesifik ajanlardan biri hangisidir?",
+      "back": "Selperkatinib.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-43",
+      "front": "Sigara içmeyi bırakan bir bireyde akciğer kanseri taraması için uygunluk süresi nedir?",
+      "back": "Bırakma üzerinden $15$ yıldan fazla zaman geçmemiş olmalıdır.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-44",
+      "front": "Lung-RADS 4A kategorisindeki bir nodül için önerilen klinik yönetim basamağı nedir?",
+      "back": "3. ayda LDCT kontrolü veya doku tanısı/PET-BT düşünülmesi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-45",
+      "front": "Akciğer kanserinde hepatomegali, kemik hassasiyeti ve papilödem hangi durumun klinik işaretleri olabilir?",
+      "back": "Uzak organ metastazları.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-46",
+      "front": "KHDAK'ta MET ekzon 14 atlama (skipping) mutasyonları için onaylanmış tedavilerden biri hangisidir?",
+      "back": "Tepotinib (veya Kapmatinib).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-47",
+      "front": "TNM 9. edisyona göre, parietal plevra veya göğüs duvarı invazyonu gösteren bir tümörün T evresi nedir?",
+      "back": "T3.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-48",
+      "front": "Lung-RADS sistemine göre, solid nodüller için 'pozitif tarama' eşik değeri nedir?",
+      "back": "Ortalama çapın $\\ge 6\\,mm$ olması.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-49",
+      "front": "KHAK tedavisinde platin bazlı rejimlerde tercih edilen iki ana ilaç hangileridir?",
+      "back": "Sisplatin veya Karboplatin ile birlikte Etoposid.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-50",
+      "front": "Superior Vena Cava (SVC) sendromunun en sık görülen radyolojik ve klinik bulgularından ikisi nedir?",
+      "back": "Fasiyal ödem ve göğüs duvarında venöz genişlemeler.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-51",
+      "front": "Lung-RADS 2022'de, bazal taramada saptanan $\\ge 15\\,mm$ boyutundaki solid nodül hangi kategoridedir?",
+      "back": "LR-4B (Çok şüpheli).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-52",
+      "front": "Akciğer kanserinde EGFR T790M mutasyonu ne anlama gelir?",
+      "back": "Birinci ve ikinci kuşak EGFR TKI'lara karşı gelişen en yaygın direnç mekanizması.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-53",
+      "front": "TNM 9. edisyona göre, aynı lobda birden fazla nodül olması durumunda T evresi ne olur?",
+      "back": "T3.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-54",
+      "front": "Akciğer kanseri taramasında radyasyon dozunu optimize etmek için kullanılan BT parametresi nedir?",
+      "back": "Volume CT Dose Index ($CTDI_{vol} \\le 3\\,mGy$).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-55",
+      "front": "KHAK hastalarında relaps sonrası tedavi seçimi neye göre yapılır?",
+      "back": "Kemoterapisiz geçen sürenin (CTFI) uzunluğuna göre.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-56",
+      "front": "NTRK gen füzyonu pozitif KHDAK hastalarında hangi hedefe yönelik ajanlar kullanılabilir?",
+      "back": "Larotrektinib veya Entrektinib.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-57",
+      "front": "Akciğer kanserinde rekürren laringeal sinir tutulumu hangi semptoma yol açar?",
+      "back": "Ses kısıklığı (Hoarseness).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-58",
+      "front": "Lung-RADS sistemine göre, part-solid nodüllerde 'solid komponent' boyutu nodülün kategorisini nasıl etkiler?",
+      "back": "Solid komponent boyutu arttıkça (özellikle $\\ge 6\\,mm$ veya $\\ge 8\\,mm$ eşikleri) şüphe kategorisi artar.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-59",
+      "front": "KHDAK Evre III hastalarda eş zamanlı kemoradyoterapi sonrası kullanılan konsolidasyon immünoterapisi nedir?",
+      "back": "Durvalumab.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-60",
+      "front": "Akciğer adenokarsinomu ile skuamöz hücreli karsinom arasındaki en temel epidemiyolojik fark nedir?",
+      "back": "Adenokarsinom sigara içmeyenlerde daha sıktır; skuamöz tip ise sigara ile çok güçlü ilişkilidir.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-61",
+      "front": "TNM 9. edisyona göre, diyafram tutulumu gösteren tümörün T evresi nedir?",
+      "back": "T4.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-62",
+      "front": "Lung-RADS 2 (benign görünümlü) kategorisindeki bir hasta için önerilen yönetim planı nedir?",
+      "back": "12 ay sonra yıllık tarama BT.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-63",
+      "front": "Akciğer kanserinde paraneoplastik serebellar ataksi hangi antikorlarla ilişkili olabilir?",
+      "back": "Anti-Hu antikorları.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-64",
+      "front": "KHDAK'ta cerrahi rezeksiyonun mümkün olmadığı Evre I hastalarda en iyi alternatif lokal tedavi nedir?",
+      "back": "Stereotaktik Beden Radyoterapisi (SBRT).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-65",
+      "front": "Akciğer kanseri taramasında kullanılan 'ortak karar verme' (Shared Decision Making) sürecinin temel bileşenlerinden biri nedir?",
+      "back": "Taramanın yararları, zararları (yanlış pozitiflik, radyasyon) ve takip gerekliliklerinin tartışılması.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-66",
+      "front": "Lung-RADS v2022'ye göre, bazal taramada saptanan $\\ge 30\\,mm$ nonsolid nodül hangi kategoridedir?",
+      "back": "LR-3 (Muhtemelen benign).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-67",
+      "front": "KHAK'ta Evre IV hastalıkta immünoterapi eklenmesinin sağladığı temel klinik yarar nedir?",
+      "back": "Genel sağkalım (OS) artışı.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-68",
+      "front": "Akciğer kanserinde Cushing Sendromu hangi hormonun ektopik üretimi ile oluşur?",
+      "back": "ACTH (Adrenokortikotropik hormon).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-69",
+      "front": "TNM 9. edisyonda, perikard invazyonu veya mediastinal yapıların tutulumu hangi T evresini temsil eder?",
+      "back": "T4.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-70",
+      "front": "Lung-RADS 4A nodülleri için tarama popülasyonundaki tahmini prevelans nedir?",
+      "back": "Yaklaşık $\\%4$.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-71",
+      "front": "KHDAK'ta KRAS G12C mutasyonunu spesifik olarak hedefleyen ilaç hangisidir?",
+      "back": "Sotorasib (veya Adagrasib).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-72",
+      "front": "Akciğer kanseri tarama BT'lerinde kesit kalınlığı tercihen ne kadar olmalıdır?",
+      "back": "$\\le 1.5\\,mm$.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-73",
+      "front": "KHDAK'ta T1a evresi için tümör boyutu üst sınırı nedir?",
+      "back": "$1\\,cm$.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-74",
+      "front": "EBUS-TBNA (Endobronşiyal Ultrason - Transbronşiyal İğne Aspirasyonu) akciğer kanseri yönetiminde en çok hangi amaçla kullanılır?",
+      "back": "Mediastinal lenf nodu evrelemesi.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-75",
+      "front": "Lung-RADS sisteminde bir nodülün 'popcorn' (patlamış mısır) tipi kalsifikasyon içermesi onu hangi kategoriye sokar?",
+      "back": "LR-1 (Negatif).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-76",
+      "front": "KHAK'ta metastatik hastalıkta beyin MRG takibi neden rutin olarak önerilir?",
+      "back": "Hastalığın MSS'ye yayılma eğiliminin çok yüksek olması nedeniyle.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-77",
+      "front": "Akciğer adenokarsinomunda HER2 (ERBB2) mutasyonları için kullanılan yeni nesil antikor-ilaç konjugatı hangisidir?",
+      "back": "Trastuzumab derukstekan.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-78",
+      "front": "Akciğer kanserinde paraneoplastik kemik ağrısı ve çomak parmak bulgularının birlikte görüldüğü tabloya ne denir?",
+      "back": "Hipertrofik Pulmoner Osteoartropati.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-79",
+      "front": "TNM 9. edisyona göre, hiler lenf nodu tutulumu hangi N evresidir?",
+      "back": "N1.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-80",
+      "front": "Lung-RADS 2022'ye göre, perifissüral ve jukstaplevral yerleşimli, düzgün sınırlı, $< 10\\,mm$ solid nodüller hangi kategoride değerlendirilir?",
+      "back": "LR-2 (Benign görünümlü).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-81",
+      "front": "KHDAK'ta Evre IV hastalıkta sistemik tedavinin temel amacı nedir?",
+      "back": "Palyasyon (yaşam kalitesini artırmak ve sağkalımı uzatmak).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-82",
+      "front": "Akciğer kanseri taramasında sigara içenlere sunulması zorunlu olan destek hizmeti nedir?",
+      "back": "Sigarayı bırakma danışmanlığı.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-83",
+      "front": "Lung-RADS 0 durumunda, görüntü kalitesizliği dışındaki en yaygın kullanım nedeni nedir?",
+      "back": "Enfeksiyöz veya inflamatuar şüpheli yaygın bulguların varlığı.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-84",
+      "front": "KHAK'ta limited evre hastalarda eş zamanlı radyoterapinin kemoterapinin kaçıncı siklusunda başlanması önerilir?",
+      "back": "Mümkün olan en erken dönemde (genellikle 1. veya 2. siklusla birlikte).",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-85",
+      "front": "TNM 9. edisyona göre, ipsilateral mediasten veya subkarinal lenf nodu tutulumu hangi N evresidir?",
+      "back": "N2.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-86",
+      "front": "Akciğer kanserinde akciğer dışı ilk semptom olarak beyin metastazı bulguları (baş ağrısı, nöbet) görülme sıklığı nedir?",
+      "back": "Hastaların önemli bir kısmında okült metastaz olarak ilk bulgu olabilir.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    },
+    {
+      "id": "card-87",
+      "front": "Lung-RADS sistemine göre, nodülün 'spiküle' (dikenli) kenarlı olması skoru nasıl etkiler?",
+      "back": "Malignite şüphesini artırarak kategorinin yükseltilmesine (örneğin 4X'e) neden olabilir.",
+      "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
+    }
+  ]
+}

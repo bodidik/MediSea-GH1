@@ -1,0 +1,488 @@
+{
+  "id": "fc-romato-behcet-001",
+  "accessLevel": "premium",
+  "topic": "Behçet Hastalığı (Sendromu)",
+  "description": "YDUS Romatoloji serisi: Behçet hastalığının tanı kriterleri, patogenezi, organ tutulumları ve basamaklı tedavi stratejilerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Behçet hastalığı, damar çapı ve tipine göre hangi vaskülit sınıfında yer alır?",
+      "back": "Değişken damar vasküliti (Variable vessel vasculitis).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-2",
+      "front": "Behçet hastalığının epidemiyolojik olarak en sık görüldüğü tarihi bölge hangisidir?",
+      "back": "İpek Yolu (Silk Road).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-3",
+      "front": "Behçet hastalığı ile en güçlü genetik ilişki gösteren HLA alleli hangisidir?",
+      "back": "$HLA-B^*51$.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-4",
+      "front": "Behçet hastalığının tanısında kullanılan International Study Group (ISG) kriterlerine göre temel zorunlu bulgu nedir?",
+      "back": "Tekrarlayan oral aftöz ülserler.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-5",
+      "front": "ISG kriterlerine göre, tekrarlayan oral ülserlere ek olarak tanı için kaç kriter daha gereklidir?",
+      "back": "Dört kriterden (genital ülser, göz lezyonları, deri lezyonları, pozitif paterji testi) en az ikisi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-6",
+      "front": "Behçet hastalığında görülen genital ülserlerin oral ülserlerden en önemli farkı nedir?",
+      "back": "Sıklıkla skatriks (nedbe) bırakarak iyileşmeleri.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-7",
+      "front": "Behçet hastalarında steril bir iğne batırılmasından 24-48 saat sonra papül veya püstül oluşması fenomenine ne ad verilir?",
+      "back": "Paterji fenomeni.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-8",
+      "front": "Behçet hastalığının oküler tutulumunda, görme kaybı riski en yüksek olan klinik tablo hangisidir?",
+      "back": "Posterior uveit veya retinal vaskülit.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-9",
+      "front": "Behçet hastalığının patogenezinde nötrofillerde görülen karakteristik fonksiyonel bozukluk nedir?",
+      "back": "Nötrofil hiperreaktivitesi (artmış kemotaksis ve fagositoz).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-10",
+      "front": "Behçet hastalığında en sık görülen vasküler komplikasyon nedir?",
+      "back": "Venöz tromboz (özellikle alt ekstremite derin ven trombozu).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-11",
+      "front": "Behçet hastalığında mortalite oranı en yüksek olan vasküler tutulum hangisidir?",
+      "back": "Pulmoner arter anevrizması.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-12",
+      "front": "Parenkimal nöro-Behçet tutulumunda beyin MRG'de en sık etkilenen anatomik bölge neresidir?",
+      "back": "Beyin sapı (özellikle mezensefalon).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-13",
+      "front": "Behçet hastalığının gastrointestinal tutulumu en sık hangi anatomik bölgede gözlenir?",
+      "back": "Terminal ileum ve çekum.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-14",
+      "front": "Behçet hastalığında görülen artritin tipik özellikleri nelerdir?",
+      "back": "Erozif olmayan, asimetrik oligoartrit (genellikle diz ve ayak bileği).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-15",
+      "front": "2014 International Criteria for Behçet's Disease (ICBD) puanlama sisteminde tanı için eşik değer kaçtır?",
+      "back": "4 puan ve üzeri.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-16",
+      "front": "ICBD kriterlerinde oral aft, genital aft ve oküler lezyonların her biri kaçar puan değerindedir?",
+      "back": "İkişer puan.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-17",
+      "front": "Behçet hastalığında hasar değerlendirmesi için geliştirilen, 34 maddelik ve 9 organ sistemini içeren indeks hangisidir?",
+      "back": "BODI (Behçet's Syndrome Overall Damage Index).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-18",
+      "front": "BODI indeksinde bir değişikliğin 'hasar' olarak tanımlanabilmesi için en az ne kadar süre kalıcı olması gerekir?",
+      "back": "6 ay.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-19",
+      "front": "Vasculitis Damage Index (VDI) sisteminde kalıcı değişikliklerin skorlanması için gereken minimum süre nedir?",
+      "back": "3 ay.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-20",
+      "front": "Behçet hastalığının mukokutanöz lezyonlarında ilk basamak sistemik tedavi genellikle hangisidir?",
+      "back": "Kolşisin.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-21",
+      "front": "Kolşisine dirençli oral ülserlerin tedavisinde FDA onayı alan oral fosfodiesteraz-4 (PDE4) inhibitörü hangisidir?",
+      "back": "Apremilast.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-22",
+      "front": "Behçet hastalığında Hughes-Stovin Sendromu olarak bilinen klinik varyantın bileşenleri nelerdir?",
+      "back": "Pulmoner arter anevrizmaları ve periferik venöz tromboz.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-23",
+      "front": "Nöro-Behçet hastalığının parenkimal olmayan (vasküler) formunda en sık görülen klinik tablo nedir?",
+      "back": "Serebral venöz sinüs trombozu.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-24",
+      "front": "Behçet hastalığında HLA-B51 taşıyıcılığı riskini yaklaşık kaç kat artırır?",
+      "back": "Yaklaşık 5.8 kat.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-25",
+      "front": "Behçet patogenezinde rol oynadığı düşünülen, MHC sınıf I molekülleri için antijen hazırlayan enzim hangisidir?",
+      "back": "ERAP1 (Endoplasmic Reticulum AminoPeptidase 1).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-26",
+      "front": "Behçet hastalarında $T_h17$ hücrelerinden salınan ve nötrofil aktivasyonunu artıran temel sitokinler nelerdir?",
+      "back": "$IL-17$ ve $IL-22$.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-27",
+      "front": "Behçet hastalığının tedavisinde kullanılan biyolojik ajanlardan hangisi özellikle dirençli uveit ve vasküler tutulumda tercih edilir?",
+      "back": "TNF-alfa inhibitörleri (İnfliximab, Adalimumab).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-28",
+      "front": "Behçet hastalığında görülen deri lezyonlarından hangisi vaskülit göstergesi olabilir ve sıklıkla alt ekstremitelerde yerleşir?",
+      "back": "Eritema nodozum benzeri lezyonlar.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-29",
+      "front": "Tanı kriterlerinde yer alan 'Psödofollikülit' lezyonlarının steroid kullanımından bağımsız olması neden önemlidir?",
+      "back": "Steroidlerin akneiform döküntülere yol açabilmesi nedeniyle yanlış pozitifliği önlemek için.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-30",
+      "front": "Behçet hastalığında görülen vasküler inflamasyonun diğer vaskülitlerden farkı nedir?",
+      "back": "Hem arterleri hem de venleri (tüm çaplarda) etkileyebilmesi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-31",
+      "front": "Behçet hastalığında kullanılan BDI (Behçet Disease Damage Index) puanlama sisteminin BODI'den temel farkı nedir?",
+      "back": "Maddelerin ağırlıklı (weighted) olması ve 0-100 arası puanlama yapması.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-32",
+      "front": "Behçet hastalığında epididimit gelişimi hangi tanı kriterleri setinde 'minör bulgu' olarak yer alır?",
+      "back": "Japon tanı kriterleri (1988).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-33",
+      "front": "Patogenezde suçlanan ve moleküler taklit (molecular mimicry) yoluyla immün yanıtı tetiklediği düşünülen bakteri hangisidir?",
+      "back": "Streptococcus sanguinis.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-34",
+      "front": "Behçet hastalığında vasküler tutulumda antikoagülan kullanımının tartışmalı olmasının nedeni nedir?",
+      "back": "Trombozun ana nedeninin vaskülit (inflamasyon) olması ve anevrizma varlığında kanama riski.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-35",
+      "front": "Göz tutulumu olan Behçet hastalarında hipopiyon görülmesi neyi ifade eder?",
+      "back": "Anterior kamarada lökosit birikmesi (şiddetli anterior uveit).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-36",
+      "front": "Behçet hastalığında mortalite ve morbiditenin en yüksek olduğu cinsiyet ve yaş grubu hangisidir?",
+      "back": "Genç erkekler.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-37",
+      "front": "Tanısal doğruluğu artırmak için Japon kriterlerinde revize edilen dört 'majör' bulgu nelerdir?",
+      "back": "Oral ülserler, genital ülserler, oküler lezyonlar, deri lezyonları.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-38",
+      "front": "Behçet hastalığı patogenezinde rol oynayan 'MHC-I-opati' kavramı hangi hastalık grubuyla benzerliği vurgular?",
+      "back": "Sero-negatif spondiloartritler (örn. Ankilozan Spondilit).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-39",
+      "front": "Behçet hastalığında gastrointestinal ülserlerin Crohn hastalığından ayrımında kullanılan tipik endoskopik görünüm nedir?",
+      "back": "Genellikle tek, büyük ve yuvarlak/oval 'punch-out' ülserler (Crohn'da lineer ülserler ve kaldırım taşı görünümü daha sıktır).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-40",
+      "front": "Nöro-Behçet hastalığında BOS incelemesinde nadiren görülen ancak MS ayırıcı tanısında önemli olan bulgu nedir?",
+      "back": "Oligoklonal bant pozitifliği (Behçet'te nadirdir).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-41",
+      "front": "Behçet hastalığında arteriyel tutulumda en sık görülen patoloji hangisidir?",
+      "back": "Anevrizma formasyonu.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-42",
+      "front": "Oral ülserlerin iyileşme süresi tipik olarak ne kadardır?",
+      "back": "7 ile 14 gün.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-43",
+      "front": "Behçet hastalığında sigara içiminin oral ülserler üzerindeki paradoksal etkisi nedir?",
+      "back": "Sigara içmenin oral ülser alevlenmelerini azalttığı gözlenmiştir.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-44",
+      "front": "Vasküler Behçet hastalığında pulmoner arter anevrizmalarının tedavisinde kullanılan temel immünosüpresif ilaç hangisidir?",
+      "back": "Siklofosfamid (yüksek doz glukokortikoidlerle birlikte).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-45",
+      "front": "Behçet hastalığının jüvenil formunda (Ped-BD) tanı için kaç kriterin varlığı gereklidir?",
+      "back": "Altı kriterden en az üçü.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-46",
+      "front": "Behçet hastalarında tekrarlayan uveit ataklarının uzun dönemdeki en ciddi komplikasyonu nedir?",
+      "back": "Sekonder glokom ve katarakt yoluyla görme kaybı/körlük.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-47",
+      "front": "Paterji testinde kullanılan iğne ucu kalınlığı standart olarak kaçtır?",
+      "back": "20 Gauge.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-48",
+      "front": "Behçet hastalığı olan gebelerde en sık görülen vasküler komplikasyon riski nedir?",
+      "back": "Derin ven trombozu (DVT).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-49",
+      "front": "Behçet hastalığında eklem tutulumunun karakteristik bir özelliği olarak, uzun süreli semptomlara rağmen ne gelişmez?",
+      "back": "Eklem deformitesi (deforming değildir).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-50",
+      "front": "Behçet hastalığında $IFN-\\alpha$ tedavisinin özellikle etkili olduğu belirtilen tutulum hangisidir?",
+      "back": "Dirençli oküler tutulum.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-51",
+      "front": "Behçet hastalığında 'Kyrieleis plakları' gözün hangi kısmında görülür?",
+      "back": "Retinal arterler boyunca kalsifik plaklar.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-52",
+      "front": "Behçet hastalığının ayırıcı tanısında yer alan ve periyodik ateş, aftöz ülser, farenjit ve adenit ile seyreden çocukluk çağı sendromu hangisidir?",
+      "back": "PFAPA Sendromu.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-53",
+      "front": "Behçet hastalığı patogenezinde otoenflamatuar özellikleri destekleyen temel kanıt nedir?",
+      "back": "Doğuştan gelen (innate) immün sistemin ve sitokinlerin (IL-1, TNF) baskın rolü.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-54",
+      "front": "Vasküler tutulumda inferior vena kava sendromu ile en güçlü ilişkisi olan klinik tablo hangisidir?",
+      "back": "Budd-Chiari Sendromu.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-55",
+      "front": "Behçet hastalığında deri lezyonları arasında yer alan ve sivilceye benzeyen döküntülere ne ad verilir?",
+      "back": "Papülopüstüler lezyonlar (akneiform nodüller).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-56",
+      "front": "Behçet hastalığında tanı koydurucu spesifik bir laboratuvar testi var mıdır?",
+      "back": "Hayır, tanı tamamen klinik bulgulara dayanır.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-57",
+      "front": "Behçet hastalığında oküler inflamasyonun acil tedavisinde kullanılan yöntem hangisidir?",
+      "back": "Yüksek doz intravenöz metilprednizolon darbe (pulse) tedavisi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-58",
+      "front": "Behçet hastalığı olan hastalarda iş gücü kaybı ve işsizlik durumunun en güçlü belirleyicisi nedir?",
+      "back": "Organ hasarı (BODI skoru ile ölçülen).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-59",
+      "front": "Behçet hastalığında 'nötrofilik dermatoz' histopatolojik olarak hangi lezyonlarda görülür?",
+      "back": "Paterji reaksiyonu ve spontan püstüler lezyonlar.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-60",
+      "front": "Behçet hastalığının tedavisinde kullanılan IL-1 reseptör antagonisti hangisidir?",
+      "back": "Anakinra.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-61",
+      "front": "Behçet hastalığı olan erkek hastalarda hastalık seyrinin daha şiddetli olmasını tetiklediği düşünülen hormon hangisidir?",
+      "back": "Testosteron.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-62",
+      "front": "Behçet hastalığında gastrointestinal perforasyon riski nedeniyle kaçınılması gereken ilaç grubu hangisidir?",
+      "back": "NSAİİ'ler (şiddetli GİS tutulumu olanlarda).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-63",
+      "front": "ICBD kriterleri, ISG kriterlerine göre nasıl bir sensitivite/spesifite profiline sahiptir?",
+      "back": "Daha yüksek sensitivite (duyarlılık) ancak daha düşük spesifite (özgüllük) oranına sahiptir.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-64",
+      "front": "Behçet hastalığında görülen 'psödobulber palsi' ve 'demans' hangi bölgenin tutulumuna işaret eder?",
+      "back": "Beyin sapı (nöro-Behçet).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-65",
+      "front": "Behçet hastalığında damar duvarı kalınlaşmasını (özellikle venlerde) değerlendirmek için kullanılan görüntüleme yöntemi hangisidir?",
+      "back": "Doppler Ultrasonografi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-66",
+      "front": "Behçet hastalığında pulmoner arter anevrizması ile bronş arasında fistül oluşması sonucu gelişen ölümcül semptom nedir?",
+      "back": "Masif hemoptizi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-67",
+      "front": "Behçet hastalığında kullanılan $IL-6$ inhibitörü ajan hangisidir?",
+      "back": "Tocilizumab.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-68",
+      "front": "Hangi HLA alleli Behçet hastalığı riskini azaltıcı (koruyucu) etkiye sahip olabilir?",
+      "back": "$HLA-B^*49$ veya $HLA-A^*03$.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-69",
+      "front": "Behçet hastalığında remisyon sağlandıktan sonra kronik tedavi genellikle ne kadar süre devam ettirilir?",
+      "back": "Yaklaşık 1 yıl (hastanın durumuna göre değişebilir).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-70",
+      "front": "Behçet hastalığında 'Complex Aphthosis' terimi neyi ifade eder?",
+      "back": "Diğer sistemik bulgular olmadan sadece tekrarlayan oral ve genital ülserlerin varlığı.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-71",
+      "front": "Behçet hastalığı patogenezinde 'Treg' (regülatör T hücreleri) fonksiyonu nasıldır?",
+      "back": "Treg hücre fonksiyonu azalmıştır, bu da kontrolsüz inflamasyona yol açar.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-72",
+      "front": "Behçet hastalığında kullanılan biyolojik ajanların üretimini engelleyen anti-ilaç antikorlarını geciktirmek için hangi ilaç eklenebilir?",
+      "back": "Metotreksat veya Azatioprin gibi antimetabolitler.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-73",
+      "front": "Behçet hastalığında GİS tutulumu için birinci basamak tedavi seçeneği nedir?",
+      "back": "5-Aminosalisilik asit (5-ASA) / Sülfasalazin.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-74",
+      "front": "Behçet hastalığında işitme kaybı ile ilişkilendirilen vasküler inceleme yöntemi hangisidir?",
+      "back": "Optik Koherens Tomografi Anjiyografi (OCTA).",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-75",
+      "front": "Behçet hastalığının kronik progresif nörolojik formunda MRG'de karakteristik bulgu nedir?",
+      "back": "İzole beyin sapı atrofisi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-76",
+      "front": "Behçet hastalığında deri lezyonlarından 'Pyoderma Gangrenozum benzeri lezyonlar' hangi fenomenin bir parçasıdır?",
+      "back": "Paterji reaksiyonu.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-77",
+      "front": "Behçet hastalığında vasküler patolojinin temelinde yatan histolojik özellik nedir?",
+      "back": "Vaza vazorumları etkileyen nekrotizan lökositoklastik obliteratif perivaskülit.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-78",
+      "front": "Behçet hastalığında 'üveomeningeal sendromlar' hangi sistemlerin eş zamanlı tutulumunu ifade eder?",
+      "back": "Göz ve Merkezi Sinir Sistemi.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-79",
+      "front": "Behçet hastalığında hastaların yaşam kalitesini ölçmek için geliştirilen özgün ölçek hangisidir?",
+      "back": "Behçet's Syndrome Quality of Life Score.",
+      "tag": "Romatoloji / Behçet"
+    },
+    {
+      "id": "card-80",
+      "front": "Behçet hastalığında 'Magic Syndrome' hangi iki hastalığın birlikteliğini tanımlar?",
+      "back": "Behçet Hastalığı ve Relapsing Polikondrit.",
+      "tag": "Romatoloji / Behçet"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "id": "fc-nefro-asitbaz-001",
+  "accessLevel": "premium",
+  "topic": "Asit-Baz Dengesi ve Bozuklukları",
+  "description": "YDUS Nefroloji serisi: Asit-baz fizyolojisi, kompanzasyon formülleri, anyon açığı/Delta-Delta analizi ve RTA/metabolik alkaloz alt tiplerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Asit-baz fizyolojisinde $[H^+]$ konsantrasyonu, $PCO_2$ ve $[HCO_3^-]$ arasındaki ilişkiyi gösteren Henderson-Hasselbalch tabanlı basitleştirilmiş denklem nedir?",
+      "back": "$[H^+] = 24 \\times \\frac{PCO_2}{[HCO_3^-]}$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-2",
+      "front": "Normal arter kanı $pH$ değeri hangi aralıktadır?",
+      "back": "$7.35 - 7.45$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-3",
+      "front": "Stewart yaklaşımına göre asit-baz dengesini belirleyen üç bağımsız değişken hangileridir?",
+      "back": "Güçlü iyon farkı ($SID$), $PCO_2$ ve toplam zayıf asit miktarı ($A_{TOT}$)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-4",
+      "front": "Serum anyon açığı ($AG$) hesaplama formülü nedir?",
+      "back": "$AG = [Na^+] - ([Cl^-] + [HCO_3^-])$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-5",
+      "front": "Albumin seviyesi düşük olan bir hastada düzeltilmiş anyon açığı nasıl hesaplanır?",
+      "back": "$Düzeltilmiş AG = Ölçülen AG + 2.5 \\times (4 - ölçülen albumin g/dL)$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-6",
+      "front": "Metabolik asidozda beklenen respiratuar kompanzasyonu ($PCO_2$) hesaplamak için kullanılan Winter formülü nedir?",
+      "back": "$Beklenen PCO_2 = (1.5 \\times [HCO_3^-]) + 8 \\pm 2$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-7",
+      "front": "Akut respiratuar asidozda, $PCO_2$ değerindeki her $10 mmHg$ artışa karşılık $[HCO_3^-]$ değerinde beklenen artış miktarı nedir?",
+      "back": "$1 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-8",
+      "front": "Kronik respiratuar asidozda, $PCO_2$ değerindeki her $10 mmHg$ artışa karşılık $[HCO_3^-]$ değerinde beklenen artış miktarı nedir?",
+      "back": "$3.5 - 4 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-9",
+      "front": "Akut respiratuar alkalozda, $PCO_2$ değerindeki her $10 mmHg$ düşüşe karşılık $[HCO_3^-]$ değerinde beklenen azalma miktarı nedir?",
+      "back": "$2 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-10",
+      "front": "Kronik respiratuar alkalozda, $PCO_2$ değerindeki her $10 mmHg$ düşüşe karşılık $[HCO_3^-]$ değerinde beklenen azalma miktarı nedir?",
+      "back": "$4 - 5 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-11",
+      "front": "Metabolik alkalozda beklenen $PCO_2$ artışı genellikle hangi formülle tahmin edilir?",
+      "back": "$Beklenen PCO_2 = [HCO_3^-] + 10$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-12",
+      "front": "Vücutta günlük üretilen uçucu asit miktarı ($CO_2$ olarak) yaklaşık ne kadardır?",
+      "back": "$15,000 mmol$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-13",
+      "front": "Normal bir Batı diyetinde günlük üretilen uçucu olmayan (fiks) asit miktarı nedir?",
+      "back": "$50 - 100 mEq/gün$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-14",
+      "front": "Normal dışkının $pH$ karakteri nasıldır?",
+      "back": "Alkali",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-15",
+      "front": "Dışkı suyundaki sodyum ve potasyum konsantrasyonlarının toplamı genellikle hangi aralıktadır?",
+      "back": "$130 - 150 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-16",
+      "front": "Dışkıda bulunan ve emildiklerinde bikarbonata dönüşebilen 'potansiyel bikarbonat' kaynakları nelerdir?",
+      "back": "Organik asit anyonları (propiyonat, bütirat, asetat, laktat)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-17",
+      "front": "Ağır diyarenin en yaygın neden olduğu asit-baz bozukluğu hangisidir?",
+      "back": "Normal anyon açıklı (hiperkloremik) metabolik asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-18",
+      "front": "Diyare hastasında hangi faktörler artmış anyon açıklı metabolik asidoz eklenmesine neden olabilir?",
+      "back": "Hipovolemiye bağlı laktik asidoz, böbrek yetmezliği ve hiperfosfatemi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-19",
+      "front": "Kolera diyaresinde dışkıda gerçek bikarbonat konsantrasyonunun yüksek olmasının nedeni nedir?",
+      "back": "Oral alımın azlığı nedeniyle kolona karbonhidrat ulaşmaması ve bakteriyel fermantasyonun sınırlı kalması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-20",
+      "front": "İdrar anyon açığı ($UAG$) hesaplama formülü nedir?",
+      "back": "$UAG = [Na^+]_u + [K^+]_u - [Cl^-]_u$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-21",
+      "front": "Metabolik asidoza verilen uygun renal yanıt nedir?",
+      "back": "Amonyum ($NH_4^+$) sentezi ve ekskresyonunun artırılması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-22",
+      "front": "Diyareye bağlı metabolik asidozda idrar $pH$ değerinin $5.5$ üzerinde olabilmesinin nedeni nedir?",
+      "back": "Artmış $NH_3$ üretiminin hidrojen iyonlarını bağlayarak $NH_4^+$ oluşturması ve $pH$ değerini yükseltmesi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-23",
+      "front": "İdrar amonyum atılımının doğrudan ölçülemediği durumlarda hangi hesaplama dolaylı tahmin sağlar?",
+      "back": "İdrar osmolal açığı ($UOG$)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-24",
+      "front": "Tip 1 (Distal) Renal Tübüler Asidoz ($RTA$) temel patofizyolojik kusuru nedir?",
+      "back": "Distal tübülde $H^+$ sekresyonunun yapılamaması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-25",
+      "front": "Tip 1 (Distal) $RTA$ tanısında kullanılan temel idrar bulgusu nedir?",
+      "back": "Sistemik asidoza rağmen idrar $pH$ değerinin $5.5$ altına düşürülememesi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-26",
+      "front": "Tip 2 (Proksimal) $RTA$ temel patofizyolojik kusuru nedir?",
+      "back": "Proksimal tübülde $[HCO_3^-]$ geri emilim kapasitesinin azalması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-27",
+      "front": "Tip 4 $RTA$ hangi elektrolit bozukluğu ile karakterizedir?",
+      "back": "Hiperkalemi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-28",
+      "front": "Tip 4 $RTA$ neden olan temel mekanizma nedir?",
+      "back": "Aldosteron eksikliği veya direnci",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-29",
+      "front": "Metabolik alkalozun kalıcı olması (idame fazı) için böbreklerin $[HCO_3^-]$ atma yeteneğinin hangi faktörle bozulması gerekir?",
+      "back": "Hipovolemi, klor eksikliği, hipokalemi veya $GFR$ azalması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-30",
+      "front": "Vomitinge bağlı metabolik alkalozda idrar klor konsantrasyonu beklenen düzeyi nedir?",
+      "back": "$< 10 - 20 mEq/L$ (Klora yanıtlı)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-31",
+      "front": "Hangi nadir genetik hastalık klor zengini diyare ve sistemik metabolik alkaloz ile sonuçlanır?",
+      "back": "Konjenital kloridorre ($SLC26A3$ mutasyonu)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-32",
+      "front": "Laksatif kötüye kullanımı hangi asit-baz bozukluklarına yol açabilir?",
+      "back": "Metabolik asidoz, metabolik alkaloz veya normal asit-baz durumu",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-33",
+      "front": "Hipokalemi, asit-baz dengesini nasıl etkileyerek metabolik alkaloza katkıda bulunur?",
+      "back": "Hücre dışındaki $H^+$ iyonlarının hücre içine kaymasına ve idrarla $H^+$ atılımının (amonyajenez) artmasına neden olur",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-34",
+      "front": "Artmış anyon açıklı metabolik asidozun dört ana kategorisi nedir?",
+      "back": "Ketoasidoz, laktik asidoz, böbrek yetmezliği asidozu ve toksin alımı",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-35",
+      "front": "$\\Delta Anyon Açığı / \\Delta [HCO_3^-]$ oranı (Delta-Delta) hangi amaçla kullanılır?",
+      "back": "Artmış anyon açıklı metabolik asidoza eşlik eden ek bir metabolik bozukluğun (metabolik alkaloz veya normal anyon açıklı asidoz) varlığını saptamak",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-36",
+      "front": "Saf bir yüksek anyon açıklı metabolik asidozda Delta-Delta oranının yaklaşık kaç olması beklenir?",
+      "back": "$1.0$ ile $1.2$ arası",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-37",
+      "front": "Delta-Delta oranının $> 2$ olması neyi düşündürür?",
+      "back": "Eşlik eden bir metabolik alkaloz veya önceden var olan kompanze kronik respiratuar asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-38",
+      "front": "Delta-Delta oranının $< 1$ olması neyi düşündürür?",
+      "back": "Eşlik eden bir normal anyon açıklı (hiperkloremik) metabolik asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-39",
+      "front": "Salisilat zehirlenmesinde tipik olarak görülen miks asit-baz bozukluğu nedir?",
+      "back": "Metabolik asidoz ve respiratuar alkaloz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-40",
+      "front": "Akut laktik asidozda serum bikarbonat düzeyi kaçın altına düştüğünde intravenöz sodyum bikarbonat tedavisi düşünülmelidir?",
+      "back": "$pH < 7.1$ veya bikarbonat $< 5 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-41",
+      "front": "Hangi ilaç alımı metabolik alkaloz, hipokalemi ve idrar klorunun $> 20 mEq/L$ olmasıyla karakterizedir?",
+      "back": "Aktif diüretik (loop veya tiyazid) kullanımı",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-42",
+      "front": "Bartter ve Gitelman sendromları hangi asit-baz ve elektrolit tablosuyla prezante olur?",
+      "back": "Normotansif metabolik alkaloz, hipokalemi ve yüksek idrar kloru ($> 20 mEq/L$)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-43",
+      "front": "Hipertansiyon ve yüksek idrar kloru ($> 20 mEq/L$) ile seyreden metabolik alkaloz nedenleri nelerdir?",
+      "back": "Primer aldosteronizm, Cushing sendromu ve Liddle sendromu",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-44",
+      "front": "Serum anyon açığının yalancı olarak düşük çıkmasına neden olan durum nedir?",
+      "back": "Şiddetli hipoalbuminemi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-45",
+      "front": "Osmolal açık ($Osmolal Gap$) hesaplama formülü nedir?",
+      "back": "$Ölçülen Osmolalite - (2 \\times [Na^+] + \\frac{Glukoz}{18} + \\frac{BUN}{2.8})$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-46",
+      "front": "Büyük bir osmolal açık ($> 10 mOsm/kg$) hangi zehirlenmelerden şüphelendirmelidir?",
+      "back": "Metanol, etilen glikol veya izopropil alkol",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-47",
+      "front": "Kussmaul solunumu hangi asit-baz bozukluğunun klinik bir göstergesidir?",
+      "back": "Şiddetli metabolik asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-48",
+      "front": "Respiratuar asidozun en yaygın nedenlerinden biri olan ve santral solunum merkezini baskılayan durum nedir?",
+      "back": "İlaç doz aşımı (örneğin sedatifler veya opioidler)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-49",
+      "front": "Kronik böbrek hastalığında ($CKD$) metabolik asidozun temel nedeni nedir?",
+      "back": "Böbreklerin amonyum ekskresyon kapasitesinin azalması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-50",
+      "front": "Hangi asit-baz bozukluğunda iyonize kalsiyum miktarının azalmasına bağlı tetani ve paresteziler görülür?",
+      "back": "Akut respiratuar alkaloz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-51",
+      "front": "Periton diyalizinde laktat yerine hangi tampon çözeltisi tercih edilmelidir?",
+      "back": "Bikarbonat (özellikle karaciğer yetmezliği veya laktik asidozu olanlarda)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-52",
+      "front": "D-laktik asidoz hangi hasta grubunda görülür?",
+      "back": "Kısa bağırsak sendromu olan hastalarda bakteriyel aşırı çoğalma sonrası",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-53",
+      "front": "Parenteral nutrisyonda fazla miktarda amino asit verilmesi hangi asit-baz bozukluğuna yol açabilir?",
+      "back": "Hafif metabolik asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-54",
+      "front": "Hücre içi tamponlama mekanizmasında hidrojen iyonu hücre içine girerken hangi iyon hücre dışına çıkar?",
+      "back": "Potasyum ($K^+$)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-55",
+      "front": "Kontraksiyon alkalozu (Contraction Alkalosis) nedir?",
+      "back": "Bikarbonat içermeyen sıvının kaybı sonucu mevcut bikarbonatın daha küçük bir hacimde konsantre olması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-56",
+      "front": "Süt-alkali sendromunda (Kalsiyum-alkali sendromu) görülen üçlü bulgu nedir?",
+      "back": "Hiperkalsemi, metabolik alkaloz ve renal yetmezlik",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-57",
+      "front": "Asidemi tanımı için arter kan gazı $pH$ eşiği nedir?",
+      "back": "$< 7.35$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-58",
+      "front": "Alkalemi tanımı için arter kan gazı $pH$ eşiği nedir?",
+      "back": "$> 7.45$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-59",
+      "front": "Metabolik asidozda bikarbonat eşiği genellikle kaç $mEq/L$ altı olarak kabul edilir?",
+      "back": "$22 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-60",
+      "front": "Akut astım atağında genellikle hangi ilk asit-baz bozukluğu görülür?",
+      "back": "Respiratuar alkaloz (hiperventilasyona bağlı)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-61",
+      "front": "Kronik bronşiti olan bir hastada beklenen asit-baz tablosu nedir?",
+      "back": "Kompanze kronik respiratuar asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-62",
+      "front": "Alkolik ketoasidozda ($AKA$) idrar keton testi neden yalancı negatif veya zayıf pozitif çıkabilir?",
+      "back": "Testin sadece asetoasetatı ölçmesi, ancak $AKA$'da baskın olanın $\\beta$-hidroksibütirat olması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-63",
+      "front": "Tip A laktik asidoz hangi durumun sonucudur?",
+      "back": "Doku hipoperfüzyonu (şok, hipoksi)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-64",
+      "front": "Asetazolamid (Karbonik anhidraz inhibitörü) kullanımı hangi tip asit-baz bozukluğuna yol açar?",
+      "back": "Normal anyon açıklı (hiperkloremik) metabolik asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-65",
+      "front": "Siyanoz hangi asit-baz bozukluğuna klinik olarak eşlik edebilir?",
+      "back": "Respiratuar asidoz",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-66",
+      "front": "Hangi elektrolit yer değiştirmesi sistemik $pH$ artışına yanıt olarak plazma potasyumunu düşürür?",
+      "back": "Hücre dışı $K^+$ iyonlarının hücre içine girmesi ($H^+$ iyonlarının hücre dışına çıkışı ile takas)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-67",
+      "front": "Renal asit atılımının iki ana bileşeni nedir?",
+      "back": "Titrasyon asiditesi ve amonyum ekskresyonu",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-68",
+      "front": "Hangi genetik bozuklukta tiyazid diüretiği kullanımı şiddetli metabolik alkaloza yol açar?",
+      "back": "Pendred sendromu",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-69",
+      "front": "Aspirin (Salisilat) zehirlenmesinde Delta-Delta analizi neyi gösterebilir?",
+      "back": "Yüksek anyon açıklı metabolik asidoz ve respiratuar alkalozun birleşimi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-70",
+      "front": "Klora yanıtsız (Saline-unresponsive) metabolik alkalozda idrar kloru düzeyi nedir?",
+      "back": "$> 20 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-71",
+      "front": "Gastrik asit kaybına bağlı alkaloza eşlik eden idrar bulgusu (erken fazda) nedir?",
+      "back": "Alkali idrar $pH$'ı ve yüksek sodyum/potasyum atılımı (bikarbonatüriye bağlı)",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-72",
+      "front": "Kronik respiratuar asidozda böbreklerin kompanzasyon süresi yaklaşık ne kadardır?",
+      "back": "$3 - 5 gün$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-73",
+      "front": "Miks asit-baz bozukluğu şüphesini artıran en önemli laboratuvar bulgusu nedir?",
+      "back": "$pH$, $PCO_2$ ve $[HCO_3^-]$ arasındaki değişimlerin beklenen kompanzasyon sınırlarının dışında olması",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-74",
+      "front": "Karbon dioksit retansiyonu olan hastalarda kontrolsüz oksijen tedavisi neden respiratuar asidozu derinleştirebilir?",
+      "back": "Solunum dürtüsünün $CO_2$ yerine düşük $O_2$ basıncına (hipoksik drive) bağımlı hale gelmesi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-75",
+      "front": "Tip 1 Interkalate hücrelerde $H^+$ sekresyonunu sağlayan ana luminal pompa nedir?",
+      "back": "$H^+$-ATPase",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-76",
+      "front": "Tip 1 Interkalate hücrelerin basolateral membranında $[HCO_3^-]$ geri emilimini sağlayan taşıyıcı nedir?",
+      "back": "$Cl^- / HCO_3^-$ eşdeğiştiricisi",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-77",
+      "front": "Potasyum eksikliği, toplayıcı kanallarda hangi pompanın aktivitesini artırarak $K^+$ tutulumuna ve $H^+$ atılımına (alkaloz) yol açar?",
+      "back": "$H^+-K^+$-ATPase",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-78",
+      "front": "Normal serum albumin konsantrasyonu anyon açığına yaklaşık kaç $mEq/L$ negatif yük katkısı sağlar?",
+      "back": "$10 - 12 mEq/L$",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-79",
+      "front": "Diyare hastasında idrar sodyumu $< 25 mEq/L$ ise bu neyi gösterir?",
+      "back": "Hipovolemiye bağlı yetersiz distal sodyum iletimi ve dolayısıyla bozulmuş renal asit atılımı",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-80",
+      "front": "Metabolik bozukluklarda birincil değişim neydeki değişimdir?",
+      "back": "Plazma $[HCO_3^-]$ konsantrasyonu",
+      "tag": "Nefroloji / Asit-Baz"
+    },
+    {
+      "id": "card-81",
+      "front": "Respiratuar bozukluklarda birincil değişim neydeki değişimdir?",
+      "back": "$PaCO_2$ (Arteriyel parsiyel karbondioksit basıncı)",
+      "tag": "Nefroloji / Asit-Baz"
+    }
+  ]
+}

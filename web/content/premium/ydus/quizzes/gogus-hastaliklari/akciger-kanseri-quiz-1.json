@@ -1,0 +1,308 @@
+{
+  "id": "quiz-gogus-akcigerkanseri-001",
+  "baslik": "Akciğer Kanseri — Soru Seti 1",
+  "branch": "gogus-hastaliklari",
+  "topic": "akciger-kanseri",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Hiç sigara içmemiş, 52 yaşında Doğu Asya kökenli bir kadın hastada akciğer adenokarsinomu tanısı konuyor. Klinisyen, bu hasta profilinin belirli bir moleküler mutasyon açısından yüksek olasılık taşıdığını belirtiyor.",
+      "secenekler": {
+        "A": "Sigara içmeyen bireylerde görülen akciğer kanseri (LCINS), farklı bir epidemiyolojik/biyolojik antite olup özellikle Doğu Asya kökenli kadınlarda daha sık izlenir; bu grupta adenokarsinom alt tipi ve EGFR mutasyonları dominanttır.",
+        "B": "Bu hasta profilinde en olası mutasyon KRAS G12C'dir, EGFR mutasyonları bu grupta nadirdir.",
+        "C": "LCINS, sigara içen hastalarla aynı epidemiyolojik ve biyolojik özellikleri paylaşan, ayrı bir antite olarak kabul edilmeyen bir tablodur.",
+        "D": "Bu hasta profilinde skuamöz hücreli karsinom ve TP53 mutasyonu beklenir.",
+        "E": "Doğu Asya kökenli kadınlarda LCINS insidansı, diğer etnik gruplara göre daha düşüktür."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "LCINS (sigara içmeyenlerde akciğer kanseri) farklı bir epidemiyolojik/biyolojik antitedir; özellikle Doğu Asya kökenli kadınlarda sık görülür ve bu grupta adenokarsinom+EGFR mutasyonu dominanttır — bu hasta tam bu profile uyar.",
+      "aciklama_detay": "Sigara içmeyen bireylerde görülen akciğer kanseri (LCINS), farklı bir epidemiyolojik ve biyolojik antite olarak kabul edilmektedir ve özellikle Doğu Asya kökenli kadınlarda daha sık izlenmekte olup, bu grupta adenokarsinom alt tipi ve Epidermal Büyüme Faktörü Reseptörü (EGFR) mutasyonları dominanttır. Bu klinik ayrım önemlidir çünkü LCINS hastalarının tümör biyolojisi, sigara ilişkili akciğer kanserinden (genellikle KRAS, TP53 gibi sigara-ilişkili mutasyon imzaları taşıyan) belirgin şekilde farklıdır — LCINS'de tümör mutasyon yükü genellikle daha düşüktür ancak hedeflenebilir driver mutasyonlar (özellikle EGFR) çok daha sık bulunur. Bu nedenle bu hasta grubunda moleküler test (NGS) sonuçlarının tedavi seçimini (EGFR TKI gibi) doğrudan yönlendirmesi beklenir ve bu bilgi klinik şüpheyi artırarak test önceliğini belirler.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — LCINS ayrı bir antitedir; Doğu Asyalı kadın+adenokarsinom+EGFR mutasyonu klasik triaddır.",
+        "B": "YANLIS — KRAS G12C mutasyonu daha çok SİGARA İLİŞKİLİ akciğer kanserinde görülür; bu hasta profilinde EGFR mutasyonu daha olasıdır.",
+        "C": "YANLIS — Tam tersine, metinde LCINS'in 'FARKLI bir epidemiyolojik ve biyolojik antite' olduğu açıkça belirtilmiştir.",
+        "D": "YANLIS — Skuamöz hücreli karsinom ve TP53 mutasyonu daha çok SİGARA İLİŞKİLİ hastalıkla ilişkilidir; bu profilde adenokarsinom+EGFR beklenir.",
+        "E": "YANLIS — Tam tersine, LCINS Doğu Asya kökenli kadınlarda DAHA SIK izlenir, daha düşük değil."
+      },
+      "etiketler": [
+        "LCINS",
+        "EGFR Mutasyonu",
+        "Epidemiyoloji",
+        "Adenokarsinom",
+        "Sigara İçmeyen Hastalar"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Global Cancer Statistics 2022; Sun et al. Nat Rev Cancer 2007 (LCINS)"
+    },
+    {
+      "id": "s2",
+      "metin": "68 yaşında, 35 paket-yılı sigara öyküsü olan ve 8 yıl önce sigarayı bırakmış bir hasta, akciğer kanseri taraması için başvuruyor. Klinisyen, bu hastanın yıllık LDCT taraması için uygun olup olmadığını değerlendiriyor.",
+      "secenekler": {
+        "A": "Bu hasta LDCT tarama kriterlerini karşılamaktadır; ACR kriterlerine göre 50-80 yaş aralığında, en az 20-30 paket-yılı sigara öyküsü olan ve aktif içici veya son 15 yıl içinde bırakmış bireylerde yıllık LDCT taraması önerilir.",
+        "B": "Bu hasta 8 yıl önce bıraktığı için tarama kriterlerini karşılamamaktadır, bırakma süresi 5 yılı geçmemelidir.",
+        "C": "35 paket-yılı öyküsü, tarama için gereken minimum eşiğin (50 paket-yılı) altında kaldığından bu hasta uygun değildir.",
+        "D": "68 yaş, tarama için önerilen yaş aralığının (50-80) dışındadır.",
+        "E": "LDCT taraması yalnızca aktif sigara içicilerinde uygulanır, bırakmış bireylerde endike değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "LDCT tarama kriterleri: 50-80 yaş + ≥20-30 paket-yılı + aktif içici VEYA son 15 yıl içinde bırakmış. Bu hasta (68 yaş, 35 paket-yılı, 8 yıl önce bırakmış) tüm kriterleri karşılamaktadır.",
+      "aciklama_detay": "NLST ve NELSON gibi geniş çaplı randomize kontrollü çalışmalar, 50-80 yaş aralığında, en az 20-30 paket/yılı sigara öyküsü olan ve aktif içici veya son 15 yıl içinde bırakmış bireylerde yıllık Düşük Doz Bilgisayarlı Tomografi (LDCT) taramasının, akciğer kanseri spesifik mortalitede %20 ila %26 oranında rölatif risk azalması sağladığını kanıtlamıştır. Bu hasta: 68 yaş (50-80 aralığında), 35 paket-yılı (≥20-30 eşiğinin üzerinde), ve 8 yıl önce bırakmış (≤15 yıl kriterini karşılıyor) — üç kriterin tamamını sağlamaktadır, bu nedenle yıllık LDCT taraması için uygundur. Bu kriterlerin mantığı, kümülatif tütün maruziyeti ve bırakma süresinin akciğer kanseri riskini doğrudan etkilemesine dayanır — bırakma süresi uzadıkça risk azalsa da, 15 yıl eşiğine kadar risk tarama gerektirecek düzeyde yüksek kabul edilir; bu eşiğin ötesinde tarama faydası azalmaya başlar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hasta 50-80 yaş, ≥20-30 paket-yılı ve ≤15 yıl bırakma kriterlerinin tümünü karşılamaktadır.",
+        "B": "YANLIS — Bırakma süresi eşiği 5 yıl değil, 15 YIL'dır; 8 yıl bu eşiğin altındadır, hasta uygun kabul edilir.",
+        "C": "YANLIS — Minimum eşik 50 paket-yılı DEĞİL, 20-30 paket-yılıdır; 35 paket-yılı bu eşiğin üzerindedir.",
+        "D": "YANLIS — 68 yaş, 50-80 yaş aralığının TAM İÇİNDEDİR, dışında değildir.",
+        "E": "YANLIS — Tam tersine, tarama kriteri 'aktif içici VEYA son 15 yıl içinde bırakmış' bireyleri kapsar; yalnızca aktif içicilerle sınırlı değildir."
+      },
+      "etiketler": [
+        "LDCT Tarama",
+        "Paket-Yılı",
+        "Tarama Kriterleri",
+        "NLST/NELSON",
+        "Sigara Bırakma"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "National Lung Screening Trial (NLST); NELSON Trial; ACR Lung Cancer Screening Guidelines"
+    },
+    {
+      "id": "s3",
+      "metin": "Sol akciğer apeksinde kitle saptanan bir hastada sol omuz/kol ağrısı ile birlikte sol gözde pitozis, miyozis ve anhidrozis gelişiyor.",
+      "secenekler": {
+        "A": "Bu klinik tablo, superior sulkus (Pancoast) tümörünün C8-T1/T2 sinir kökü invazyonu ile omuz/kol ağrısına ve stellat ganglion invazyonu ile ipsilateral Horner sendromuna (pitozis, miyozis, anhidrozis) yol açtığı klasik prezentasyondur.",
+        "B": "Bu bulgular vena kava superior sendromunu düşündürür, fasiyal ödem ve pletore ile karakterizedir.",
+        "C": "Pitozis, miyozis ve anhidrozis triadı, rekürren laringeal sinir tutulumuna bağlı ses kısıklığının bir varyantıdır.",
+        "D": "Bu tablo yalnızca beyin metastazına bağlı fokal nörolojik defisitle açıklanabilir, primer tümör lokalizasyonuyla ilgisi yoktur.",
+        "E": "Horner sendromu yalnızca KHAK'ta görülen bir paraneoplastik sendromdur, tümör lokalizasyonundan bağımsızdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Superior sulkus (Pancoast) tümörü, C8-T1/T2 sinir kökü invazyonu ile omuz/kol ağrısı VE stellat ganglion invazyonu ile ipsilateral Horner sendromu (pitozis, miyozis, anhidrozis) ile klasik olarak prezente olur.",
+      "aciklama_detay": "Superior sulkus (Pancoast) tümörleri, 8. servikal ile 1. ve 2. torasik sinir köklerinin invazyonu ile omuz/kol ağrısı ve stellat ganglion invazyonu ile ipsilateral Horner sendromu (pitozis, miyozis, anhidrozis) tablosu ile prezente olabilir. Bu klinik tablo, tümörün akciğer apeksinde (superior sulkus) anatomik yerleşiminin doğrudan bir sonucudur — bu bölge, brakiyal pleksusun alt kökleri (C8-T1) ve sempatik zincirin bir parçası olan stellat ganglion ile yakın komşuluk gösterir. Tümör büyüdükçe bu yapıları doğrudan invaze eder: brakiyal pleksus invazyonu omuz ve kola yayılan şiddetli ağrıya (bazen ulnar sinir dağılımında), stellat ganglion invazyonu ise sempatik innervasyonun kesilmesine bağlı klasik Horner triadına (pitozis, miyozis, anhidrozis) yol açar. Bu spesifik anatomik lokalizasyon ve klinik prezentasyon kombinasyonu, Pancoast tümörünü diğer akciğer kanseri prezentasyonlarından ayıran karakteristik bir bulgudur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Pancoast tümörü: C8-T1/T2 invazyonu→omuz/kol ağrısı; stellat ganglion invazyonu→Horner sendromu (pitozis/miyozis/anhidrozis).",
+        "B": "YANLIS — VKS sendromu fasiyal ödem/pletore ile karakterizedir, pitozis/miyozis/anhidrozis triadıyla İLGİSİ YOKTUR; bu farklı bir klinik tablodur.",
+        "C": "YANLIS — Rekürren laringeal sinir tutulumu SES KISIKLIĞINA yol açar, Horner triadıyla ilgisi yoktur; bu iki farklı sinir tutulumu tablosudur.",
+        "D": "YANLIS — Bu tablo PRİMER TÜMÖRÜN LOKAL İNVAZYONUNA bağlıdır (superior sulkus lokalizasyonu), beyin metastazıyla açıklanmaz.",
+        "E": "YANLIS — Horner sendromu tümör LOKALİZASYONUNA (superior sulkus) bağlı LOKAL bir bulgudur, KHAK'a özgü bir paraneoplastik sendrom değildir ve histolojiden bağımsız gelişebilir."
+      },
+      "etiketler": [
+        "Pancoast Tümörü",
+        "Horner Sendromu",
+        "Superior Sulkus",
+        "Lokal İnvazyon",
+        "Klinik Prezentasyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Arcasoy & Jett. N Engl J Med 1997 (Pancoast Tumors)"
+    },
+    {
+      "id": "s4",
+      "metin": "Metastatik akciğer kanseri tanılı bir hastada belirgin polidipsi, poliüri olmaksızın hiponatremi ve düşük plazma osmolalitesine rağmen uygunsuz derecede konsantre idrar saptanıyor. Tümör küçük hücreli akciğer kanseri (KHAK) olarak raporlanıyor.",
+      "secenekler": {
+        "A": "Bu klinik tablo, KHAK'ta en yaygın paraneoplastik bulgulardan biri olan uygunsuz ADH salınımı sendromunu (SIADH) düşündürür; bu, KHAK hücrelerinin ektopik ADH sekresyonuna bağlıdır.",
+        "B": "Bu bulgular, skuamöz hücreli karsinomda görülen ektopik PTHrP üretimine bağlı hiperkalsemi ile açıklanır.",
+        "C": "Bu tablo Lambert-Eaton miyastenik sendromunun tipik prezentasyonudur.",
+        "D": "SIADH, yalnızca KHDAK'ta (özellikle adenokarsinom) görülen bir paraneoplastik sendromdur, KHAK ile ilişkisi yoktur.",
+        "E": "Bu bulgular Cushing sendromunun klasik laboratuvar profilini yansıtır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hiponatremi + düşük plazma osmolalitesi + uygunsuz konsantre idrar = SIADH. Küçük hücreli akciğer kanserinde ektopik ADH sekresyonuna bağlı uygunsuz ADH sendromu (SIADH) sıklıkla izlenen bir paraneoplastik sendromdur.",
+      "aciklama_detay": "Küçük hücreli akciğer kanserinde ektopik ADH sekresyonuna bağlı uygunsuz ADH sendromu (SIADH), ektopik ACTH sekresyonuna bağlı Cushing sendromu ve voltaj-kapılı kalsiyum kanallarına karşı gelişen antikorlara bağlı Lambert-Eaton miyastenik sendromu sıklıkla izlenir. Bu hastadaki laboratuvar profili (hiponatremi, düşük plazma osmolalitesi, buna rağmen uygunsuz şekilde konsantre — yani osmotik olarak beklenenden yüksek — idrar) SIADH'nin klasik tanısal triadıdır. KHAK hücrelerinin nöroendokrin kökeni, bu tümörlerin çeşitli peptid hormonları (ADH, ACTH gibi) ektopik olarak üretme ve salgılama kapasitesini açıklar — bu, KHAK'ın (adenokarsinom veya skuamöz hücreli karsinom gibi non-nöroendokrin KHDAK alt tiplerine kıyasla) paraneoplastik endokrin sendromlarla NEDEN çok daha sık ilişkilendirildiğinin patofizyolojik temelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hiponatremi+düşük osmolalite+konsantre idrar=SIADH; KHAK'ta ektopik ADH sekresyonuna bağlı sık görülen paraneoplastik sendrom.",
+        "B": "YANLIS — Hiperkalsemi/PTHrP tablosu FARKLI bir laboratuvar profiline (yüksek kalsiyum) sahiptir; bu hastada hiponatremi tanımlanmıştır, hiperkalsemi değil.",
+        "C": "YANLIS — Lambert-Eaton miyastenik sendromu KAS GÜÇSÜZLÜĞÜ ile prezente olur, hiponatremi/SIADH laboratuvar profiliyle uyumsuzdur.",
+        "D": "YANLIS — Tam tersine, metinde SIADH açıkça KÜÇÜK HÜCRELİ AKCİĞER KANSERİNDE (KHAK'ta) en yaygın paraneoplastik bulgu olarak tanımlanmıştır.",
+        "E": "YANLIS — Cushing sendromu KLASİK OLARAK hipertansiyon, hiperglisemi, hipokalemi gibi bulgularla prezente olur; bu hastadaki hiponatremi/SIADH profiliyle uyumlu değildir."
+      },
+      "etiketler": [
+        "SIADH",
+        "KHAK",
+        "Paraneoplastik Sendrom",
+        "Hiponatremi",
+        "Ektopik ADH"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Patel & Poiesz. Cancer 2018 (Paraneoplastic Syndromes in Lung Cancer)"
+    },
+    {
+      "id": "s5",
+      "metin": "Toraks BT'de büyük mediastinal lenf nodu saptanan, cerrahi rezeksiyon planlanan bir KHDAK hastasında N2/N3 evrelemesi yapılması gerekiyor. Klinisyen, doku örneklemesi için en uygun ilk yaklaşımı seçiyor.",
+      "secenekler": {
+        "A": "Mediastinal lenf nodu (N2/N3) evrelemesinde ilk tercih edilmesi gereken yöntem, Endobronşiyal Ultrasonografi (EBUS) ve/veya Endoskopik Ultrasonografi (EUS) eşliğinde iğne aspirasyonudur (TBNA/FNA).",
+        "B": "Bu hastada ilk tercih doğrudan cerrahi mediastinoskopi olmalıdır, EBUS/EUS ikinci basamak seçenektir.",
+        "C": "CT eşliğinde transtorasik iğne biyopsisi (TTNB), mediastinal lenf nodu evrelemesi için standart ilk yaklaşımdır.",
+        "D": "Mediastinal lenf nodu evrelemesi için doku örneklemesi gerekli değildir, yalnızca PET-BT görüntüleme bulguları yeterlidir.",
+        "E": "EBUS-TBNA yalnızca periferik akciğer lezyonlarının örneklenmesinde kullanılır, mediastinal lenf nodu değerlendirmesinde rolü yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Mediastinal lenf nodu (N2/N3) evrelemesinde İLK TERCİH EBUS ve/veya EUS eşliğinde iğne aspirasyonudur (TBNA/FNA) — minimal invaziv, yüksek doğruluklu bir yöntemdir. TTNB periferik lezyonlar için tercih edilir, mediastinal evreleme için değil.",
+      "aciklama_detay": "Doku biyopsisi ve mediastinal lenf nodu (N2/N3) evrelemesinde ilk tercih edilmesi gereken yöntem, Endobronşiyal Ultrasonografi (EBUS) ve/veya Endoskopik Ultrasonografi (EUS) eşliğinde iğne aspirasyonudur (TBNA/FNA). Periferik yerleşimli lezyonlarda CT eşliğinde transtorasik iğne biyopsisi (TTNB) tercih edilir. EBUS-TBNA'nın mediastinal evrelemede ilk tercih olmasının nedenleri: (1) minimal invaziv bir prosedürdür (bronkoskopi ile gerçekleştirilir, cerrahi mediastinoskopiye kıyasla daha düşük komplikasyon riski taşır); (2) gerçek zamanlı ultrasonografi rehberliğinde birden fazla lenf nodu istasyonuna (özellikle 2, 4, 7, 10, 11 numaralı istasyonlar) aynı seansta ulaşılabilir; (3) tanısal doğruluğu cerrahi mediastinoskopiye yakın düzeydedir. EBUS negatif çıkan ancak klinik şüphenin yüksek kaldığı durumlarda, cerrahi mediastinoskopi (konfirmasyon amaçlı) ikinci basamak olarak düşünülebilir, ancak ilk basamak DEĞİLDİR.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — EBUS/EUS-TBNA/FNA, mediastinal N2/N3 evrelemesinde ilk tercih edilen minimal invaziv yöntemdir.",
+        "B": "YANLIS — Tam tersine, EBUS/EUS İLK TERCİHTİR; cerrahi mediastinoskopi daha invaziv olduğundan genellikle EBUS negatif/şüpheli durumlarda ikinci basamak olarak düşünülür.",
+        "C": "YANLIS — TTNB, metinde açıkça PERİFERİK yerleşimli lezyonlar için tercih edilen bir yöntem olarak tanımlanmıştır; mediastinal lenf nodu evrelemesi için standart DEĞİLDİR.",
+        "D": "YANLIS — Doku örneklemesi (patolojik konfirmasyon) mediastinal evreleme için GEREKLİDİR; yalnızca görüntüleme (PET-BT) bulguları yeterli kabul edilmez, özellikle cerrahi karar öncesi.",
+        "E": "YANLIS — EBUS-TBNA metinde açıkça MEDİASTİNAL LENF NODU (N2/N3) evrelemesi için ilk tercih olarak tanımlanmıştır; bu, birincil kullanım alanıdır."
+      },
+      "etiketler": [
+        "EBUS-TBNA",
+        "Mediastinal Evreleme",
+        "N2/N3",
+        "Minimal İnvaziv Tanı",
+        "TTNB"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Silvestri et al. Chest 2013 (ACCP Mediastinal Staging Guideline)"
+    },
+    {
+      "id": "s6",
+      "metin": "Evre IIIA (T3N1) KHDAK tanılı bir hastada tümör konseyi, cerrahi öncesi sistemik tedavi planlıyor. Klinisyen, bu yaklaşımın güncel kanıtlarla desteklendiğini açıklıyor.",
+      "secenekler": {
+        "A": "Potansiyel olarak rezektabl (T3N1 veya seçilmiş N2) hastalarda, cerrahi öncesi (neoadjuvan) kemoimmünoterapi (örneğin nivolumab + platin-ikili) rejimleri majör patolojik yanıt oranlarını artırarak standart yaklaşıma dahil olmuştur.",
+        "B": "Bu evredeki hastalarda cerrahi öncesi sistemik tedavi hiçbir zaman uygulanmaz, doğrudan cerrahiye gidilmelidir.",
+        "C": "Neoadjuvan tedavi yalnızca anrezektabl (N3 veya bulky N2) hastalarda uygulanan standart bir yaklaşımdır.",
+        "D": "Bu hastada önerilen tek başına immünoterapi olup, kemoterapi eklenmesi kontrendikedir.",
+        "E": "Neoadjuvan tedavi kararı yalnızca EGFR/ALK pozitif hastalarda alınır, driver mutasyonu olmayanlarda uygulanmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Potansiyel rezektabl (T3N1 veya seçilmiş N2) KHDAK'ta neoadjuvan kemoimmünoterapi (nivolumab+platin-ikili) majör patolojik yanıt oranlarını artırarak standart yaklaşıma dahil olmuştur — bu hastanın (T3N1) profiline tam uyar.",
+      "aciklama_detay": "Tedavi planı multidisipliner tümör konseylerinde alınmalıdır. Potansiyel olarak rezektabl (T3N1 veya seçilmiş N2) hastalarda, son veriler ışığında cerrahi öncesi (neoadjuvan) kemoimmünoterapi (örneğin nivolumab + platin-ikili) rejimleri majör patolojik yanıt oranlarını artırarak standart yaklaşıma dahil olmuştur. Bu hasta (Evre IIIA, T3N1) tam olarak 'potansiyel rezektabl' kategorisine girmektedir. Neoadjuvan kemoimmünoterapinin mantığı şudur: (1) sistemik tedavi, mikrometastatik hastalığı erken dönemde hedefler; (2) tümör küçültülerek cerrahi rezeksiyonun tamlığı (R0 rezeksiyon) artırılabilir; (3) immünoterapinin cerrahi öncesi eklenmesi, hala mevcut olan tümör antijen yükünün immün sistemi daha güçlü aktive etmesini sağlayarak (immünolojik 'primer' etkisi) patolojik yanıt oranlarını belirgin şekilde artırır. Bu yaklaşım, önceki yıllarda yalnızca adjuvan (cerrahi sonrası) tedavinin standart olduğu dönemden önemli bir paradigma değişikliğini temsil eder.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Potansiyel rezektabl (T3N1/seçilmiş N2) hastalarda neoadjuvan kemoimmünoterapi standart yaklaşıma dahil olmuştur.",
+        "B": "YANLIS — Tam tersine, potansiyel rezektabl hastalarda neoadjuvan tedavi ARTIK STANDART bir yaklaşımdır, doğrudan cerrahi tek seçenek değildir.",
+        "C": "YANLIS — Neoadjuvan kemoimmünoterapi metinde açıkça REZEKTABL (T3N1/seçilmiş N2) hastalar için tanımlanmıştır; ANREZEKTABL hastalarda ise farklı bir yaklaşım (eşzamanlı kemoradyoterapi+durvalumab konsolidasyonu) uygulanır.",
+        "D": "YANLIS — Önerilen rejim TEK BAŞINA immünoterapi değil, KEMOİMMÜNOTERAPİ (nivolumab+platin-ikili) kombinasyonudur.",
+        "E": "YANLIS — Neoadjuvan kemoimmünoterapi kararı EGFR/ALK durumundan bağımsız olarak, rezektabilite durumuna (T3N1/seçilmiş N2) göre verilir; driver mutasyon pozitifliğiyle sınırlı bir endikasyon değildir."
+      },
+      "etiketler": [
+        "Neoadjuvan Tedavi",
+        "Evre IIIA KHDAK",
+        "Kemoimmünoterapi",
+        "Nivolumab",
+        "Rezektabilite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Forde et al. N Engl J Med 2022 (CheckMate 816)"
+    },
+    {
+      "id": "s7",
+      "metin": "Anrezektabl (bulky N2) Evre III KHDAK tanılı bir hastada eşzamanlı kemoradyoterapi tamamlanıyor. Yeniden değerlendirmede hastalıkta progresyon saptanmıyor. Klinisyen, bir sonraki adımı planlıyor.",
+      "secenekler": {
+        "A": "Anrezektabl (N3 veya bulky N2) hastalarda standart küratif yaklaşım eşzamanlı kemoradyoterapi ve progresyon göstermeyen hastalarda bunu takiben bir yıl süreyle PD-L1 inhibitörü olan durvalumab ile konsolidasyon idame tedavisidir.",
+        "B": "Progresyon olmadığından, hastada herhangi bir ek tedaviye gerek yoktur, yalnızca izlem yeterlidir.",
+        "C": "Bu hastada bir sonraki adım cerrahi rezeksiyon olmalıdır, kemoradyoterapi sonrası cerrahi standarttır.",
+        "D": "Konsolidasyon durvalumab tedavisi yalnızca progresyon gösteren hastalarda başlanır.",
+        "E": "Durvalumab konsolidasyon tedavisi süresiz olarak, hastalık progresyonuna kadar devam ettirilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anrezektabl Evre III KHDAK'ta standart: eşzamanlı kemoradyoterapi → progresyon YOKSA 1 YIL süreyle durvalumab konsolidasyon idame tedavisi. Bu hasta (progresyonsuz) tam bu profile uyar.",
+      "aciklama_detay": "Anrezektabl (N3 veya bulky N2) hastalarda standart küratif yaklaşım eşzamanlı kemoradyoterapi ve progresyon göstermeyen hastalarda bunu takiben bir yıl süreyle PD-L1 inhibitörü olan durvalumab ile konsolidasyon idame tedavisidir. Bu hasta profili (bulky N2, anrezektabl, kemoradyoterapi tamamlanmış, progresyon yok) tam olarak durvalumab konsolidasyonunun endike olduğu senaryodur. Bu yaklaşımın kanıta dayalı temeli PACIFIC çalışmasına dayanır — eşzamanlı kemoradyoterapi sonrası progresyon göstermeyen Evre III anrezektabl KHDAK hastalarında durvalumab konsolidasyonunun, plaseboya kıyasla progresyonsuz sağkalımı ve genel sağkalımı anlamlı şekilde uzattığı gösterilmiştir. Tedavi süresi SABİT olarak 1 YIL ile sınırlandırılmıştır (süresiz değildir) — bu, klinik çalışmalardaki protokol süresine dayanır ve bu sürenin ötesinde devam etmenin ek fayda sağladığına dair kanıt yoktur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Anrezektabl Evre III'te kemoradyoterapi sonrası progresyonsuz hastalarda 1 yıl durvalumab konsolidasyonu standarttır.",
+        "B": "YANLIS — Tam tersine, progresyon OLMAYAN hastalarda EK TEDAVİ (durvalumab konsolidasyonu) endikedir; yalnızca izlem yeterli değildir.",
+        "C": "YANLIS — Bu hasta ANREZEKTABL olarak tanımlanmıştır; cerrahi rezeksiyon bu grupta uygulanabilir bir seçenek değildir, kemoradyoterapi+durvalumab standarttır.",
+        "D": "YANLIS — Tam tersine, durvalumab konsolidasyonu PROGRESYON GÖSTERMEYEN hastalarda başlanır; progresyon durumunda farklı bir tedavi yaklaşımına (ileri evre tedavi algoritması) geçilir.",
+        "E": "YANLIS — Durvalumab konsolidasyon tedavisi SABİT OLARAK 1 YIL sürelidir, süresiz veya progresyona kadar devam ettirilmez."
+      },
+      "etiketler": [
+        "Durvalumab Konsolidasyonu",
+        "PACIFIC Çalışması",
+        "Anrezektabl Evre III",
+        "Eşzamanlı Kemoradyoterapi",
+        "1 Yıl İdame"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Antonia et al. N Engl J Med 2017 (PACIFIC Trial)"
+    },
+    {
+      "id": "s8",
+      "metin": "Metastatik KHDAK tanılı bir hastada NGS panelinde EGFR ekzon 19 delesyonu saptanıyor. PD-L1 TPS %70 olarak raporlanıyor. Onkolog, tek ajan pembrolizumab yerine farklı bir tedavi tercih ediyor.",
+      "secenekler": {
+        "A": "Sürücü mutasyonu olan hastalarda sistemik kemoterapi yerine ilk basamakta mutasyona spesifik oral TKI (bu hastada EGFR mutasyonu için osimertinib) başlanır; immünoterapiler bu grupta hem monoterapi olarak etkisizdir hem de TKI'lar ile artmış toksisite riski barındırır.",
+        "B": "PD-L1 TPS %70 olduğundan, EGFR mutasyonu varlığından bağımsız olarak tek ajan pembrolizumab ilk basamakta tercih edilmelidir.",
+        "C": "EGFR mutasyonu ve yüksek PD-L1 birlikte bulunduğunda, immünoterapi ve TKI kombinasyonu güvenle uygulanabilir ve tercih edilen standarttır.",
+        "D": "EGFR mutasyonu varlığında immünoterapi seçimi hiçbir fark yaratmaz, TKI ile eşdeğer etkinlik ve güvenlik profiline sahiptir.",
+        "E": "Bu hastada PD-L1 TPS değeri EGFR mutasyon durumundan daha yüksek klinik öneme sahiptir ve tedavi kararını belirlemelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "EGFR mutasyonu (sürücü mutasyon) varlığında, PD-L1 TPS düzeyinden BAĞIMSIZ olarak ilk basamak mutasyona spesifik TKI (osimertinib) tercih edilir. İmmünoterapi bu grupta hem etkisiz hem TKI ile kombine edildiğinde toksisiteyi artırır.",
+      "aciklama_detay": "Sürücü Mutasyonu Olanlar: Sistemik kemoterapi yerine ilk basamakta mutasyona spesifik oral tirozin kinaz inhibitörleri (TKI) başlanır (EGFR mutasyonu için osimertinib, amivantamab+lazertinib; ALK translokasyonları için alectinib, brigatinib, lorlatinib vb.). İmmünoterapiler bu grupta (özellikle EGFR ve ALK mutant tümörlerde) hem monoterapi olarak etkisizdir hem de TKI'lar ile artmış toksisite riski barındırır. Bu hasta EGFR ekzon 19 delesyonu (klasik duyarlılaştırıcı EGFR mutasyonu) taşımaktadır — PD-L1 TPS değeri ne kadar yüksek olursa olsun (bu hastada %70), sürücü mutasyon varlığı tedavi algoritmasında ÖNCELİKLİ belirleyicidir ve immünoterapi yerine TKI (osimertinib) tercih edilmelidir. Bu önceliklendirmenin klinik gerekçesi ikilidir: (1) EGFR/ALK mutant tümörlerde immünoterapinin monoterapi etkinliği klinik çalışmalarda düşük bulunmuştur (bu tümörler genellikle 'immünolojik olarak soğuk' bir mikroçevreye sahiptir); (2) EGFR TKI ile immünoterapinin birlikte veya ardışık kullanımı, ciddi immün aracılı toksisiteler (özellikle pnömonit, hepatotoksisite) riskini belirgin şekilde artırmıştır, bu nedenle bu kombinasyondan kaçınılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Sürücü mutasyon (EGFR) varlığında PD-L1 düzeyinden bağımsız olarak TKI tercih edilir; immünoterapi hem etkisiz hem toksisite riski taşır.",
+        "B": "YANLIS — Tam tersine, EGFR mutasyonu varlığında (PD-L1 düzeyinden BAĞIMSIZ olarak) tek ajan pembrolizumab TERCİH EDİLMEZ; bu grup TKI'ya yönlendirilir.",
+        "C": "YANLIS — Metinde açıkça immünoterapi+TKI kombinasyonunun ARTMIŞ TOKSİSİTE riski taşıdığı belirtilmiştir; güvenle uygulanabilir/tercih edilen bir standart DEĞİLDİR.",
+        "D": "YANLIS — Tam tersine, EGFR mutasyonu varlığında immünoterapi TKI'dan BELİRGİN ŞEKİLDE FARKLI (ve daha kötü) bir etkinlik/güvenlik profiline sahiptir; eşdeğer değildir.",
+        "E": "YANLIS — Bu senaryoda EGFR MUTASYON DURUMU (sürücü mutasyon varlığı), PD-L1 TPS değerinden DAHA YÜKSEK klinik önceliğe sahiptir ve tedavi kararını belirler, tersi değil."
+      },
+      "etiketler": [
+        "EGFR Mutasyonu",
+        "Osimertinib",
+        "PD-L1 TPS",
+        "Sürücü Mutasyon",
+        "İmmünoterapi-TKI Toksisitesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Lisberg et al. J Thorac Oncol 2018; Soria et al. N Engl J Med 2018 (FLAURA)"
+    },
+    {
+      "id": "s9",
+      "metin": "Sınırlı evre (LS) KHAK tanılı bir hastada eşzamanlı platin-etoposid kemoterapisi ve torasik radyoterapi tamamlanıyor. Değerlendirmede tam yanıt saptanıyor. Klinisyen, iki farklı ek tedaviyi planlıyor.",
+      "secenekler": {
+        "A": "Kemoradyoterapi sonrası progresyon göstermeyen hastalarda durvalumab idamesi progresyonsuz ve genel sağkalımı anlamlı iyileştirdiği için standart öneri haline gelmiştir; ayrıca beyin metastazı gelişme riski yüksek olduğundan, tam veya parsiyel yanıt veren hastalarda profilaktik kraniyal ışınlama (PCI) endikedir.",
+        "B": "Bu hastada yalnızca PCI uygulanır, durvalumab idamesi yalnızca yaygın evre (ES) KHAK'a özgüdür.",
+        "C": "Tam yanıt sağlandığından, bu hastada herhangi bir ek tedaviye (durvalumab veya PCI) gerek yoktur.",
+        "D": "Durvalumab idamesi bu hastada endike değildir çünkü ADRIATIC çalışması yalnızca KHDAK hastalarını kapsamıştır.",
+        "E": "PCI, yalnızca beyin metastazı radyolojik olarak zaten saptanmış hastalarda uygulanan tedavi edici bir yöntemdir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "LS-KHAK'ta kemoradyoterapi sonrası progresyonsuz hastalarda hem durvalumab idamesi (ADRIATIC) HEM DE tam/parsiyel yanıt veren hastalarda PCI endikedir — bu iki tedavi birbirini dışlamaz, birlikte uygulanır.",
+      "aciklama_detay": "Yakın tarihli ADRIATIC çalışması sonuçlarına göre, kemoradyoterapi sonrası progresyon göstermeyen hastalarda durvalumab idamesi progresyonsuz ve genel sağkalımı anlamlı iyileştirdiği için standart öneri haline gelmiştir. Beyin metastazı gelişme riski yüksek olduğundan, inisiyal tedaviye tam veya parsiyel yanıt veren hastalarda profilaktik kraniyal ışınlama (PCI) endikedir. Bu hasta (LS-KHAK, kemoradyoterapi sonrası tam yanıt) her iki tedavi için de uygun kriterleri karşılamaktadır ve bu iki yaklaşım BİRBİRİNİ DIŞLAMAZ — modern LS-KHAK tedavi algoritmasında sıralı/paralel olarak uygulanabilirler. PCI'nin gerekçesi, KHAK'ın (özellikle nöroendokrin kökeni ve yüksek proliferasyon indeksi nedeniyle) MSS'ye metastaz yapma eğiliminin çok yüksek olmasıdır — sistemik tedaviye iyi yanıt veren hastalarda dahi, henüz radyolojik olarak saptanamayan mikroskopik beyin metastazları bulunabilir, bu nedenle PCI PROFİLAKTİK (henüz metastaz saptanmamışken önleyici) olarak uygulanır, tedavi edici (zaten var olan metastazı tedavi eden) bir yöntem değildir. Durvalumab idamesi ise sistemik nüks riskini azaltmaya yöneliktir; bu iki tedavi farklı komplikasyonları (sistemik nüks vs MSS metastazı) hedefler.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Progresyonsuz LS-KHAK'ta hem durvalumab idamesi (ADRIATIC) hem PCI (yanıt veren hastalarda) endikedir; ikisi birlikte uygulanır.",
+        "B": "YANLIS — ADRIATIC çalışması SINIRLI EVRE (LS) KHAK hastalarını değerlendirmiştir; durvalumab idamesi LS-KHAK'a özgüdür, yaygın evre ile sınırlı değildir.",
+        "C": "YANLIS — Tam yanıt sağlanmış olsa dahi, hem durvalumab idamesi hem PCI ENDİKEDİR; tam yanıt, ek tedavinin gereksiz olduğu anlamına gelmez, tam tersine bu tedavilerin başlatılması için bir kriterdir (PCI için).",
+        "D": "YANLIS — ADRIATIC çalışması KÜÇÜK HÜCRELİ akciğer kanserini (KHAK, LS-KHAK) değerlendirmiştir, KHDAK'ı değil; bu ifade metnin bilgisiyle çelişmektedir.",
+        "E": "YANLIS — Tam tersine, PCI PROFİLAKTİK bir yöntemdir — HENÜZ beyin metastazı saptanmamış, ancak riski yüksek olan hastalarda ÖNLEYİCİ amaçla uygulanır, zaten var olan metastazı tedavi etmez."
+      },
+      "etiketler": [
+        "Profilaktik Kraniyal Işınlama",
+        "PCI",
+        "Durvalumab İdamesi",
+        "ADRIATIC",
+        "Sınırlı Evre KHAK"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Spigel et al. N Engl J Med 2024 (ADRIATIC Trial); Auperin et al. N Engl J Med 1999 (PCI Meta-analysis)"
+    },
+    {
+      "id": "s10",
+      "metin": "Yaygın evre (ES) KHAK tanılı bir hastada birinci basamak tedavi planlanıyor. Klinisyen, kemoterapiye ek olarak bir immünoterapi ajanı eklemeyi planlıyor ve bu kombinasyonun kanıta dayalı olduğunu belirtiyor.",
+      "secenekler": {
+        "A": "Birinci basamakta sistemik kemoterapiye (Karboplatin veya Sisplatin + Etoposid) immün kontrol noktası inhibitörlerinin (Atezolizumab veya Durvalumab) eklenmesi (IMpower133 ve CASPIAN çalışmaları) ve ardından immünoterapi ile idame devam edilmesi standart bakımdır; tedavi amacı palyatiftir.",
+        "B": "ES-KHAK'ta immünoterapi eklenmesi güncel kanıtlarla desteklenmemektedir, yalnızca platin-etoposid kemoterapisi kullanılmalıdır.",
+        "C": "Bu hastada tedavi amacı küratiftir ve hedef, hastalığı tamamen ortadan kaldırmaktır.",
+        "D": "ES-KHAK'ta birinci basamakta önerilen immünoterapi ajanı yalnızca pembrolizumabdır.",
+        "E": "Kemoterapi+immünoterapi kombinasyonu yalnızca sınırlı evre (LS) KHAK'ta uygulanır, yaygın evrede endike değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ES-KHAK'ta birinci basamak: Karboplatin/Sisplatin+Etoposid+Atezolizumab veya Durvalumab (IMpower133/CASPIAN çalışmaları), ardından immünoterapi idamesi — standart bakımdır. Tedavi amacı PALYATİFTİR (küratif değil).",
+      "aciklama_detay": "Yaygın Evre KHAK (ES-SCLC): Tedavi amacı palyatiftir. Birinci basamakta sistemik kemoterapiye (Karboplatin veya Sisplatin + Etoposid) immün kontrol noktası inhibitörlerinin (Atezolizumab veya Durvalumab) eklenmesi (IMpower133 ve CASPIAN çalışmaları) ve ardından immünoterapi ile idame devam edilmesi standart bakımdır. Bu kombinasyon rejiminin kanıta dayalı temeli iki büyük faz III çalışmaya dayanır: IMpower133 (atezolizumab+karboplatin+etoposid) ve CASPIAN (durvalumab+platin+etoposid), her ikisi de standart kemoterapiye immünoterapi eklenmesinin genel sağkalımı anlamlı şekilde uzattığını göstermiştir. Bu, ES-KHAK tedavisinde uzun yıllar boyunca yalnızca kemoterapiye dayalı olan yaklaşımı değiştiren önemli bir paradigma kaymasıdır. Ancak KRİTİK bir nokta, ES-KHAK'ın (LS-KHAK'ın aksine) YAYGIN METASTATİK bir hastalık olması nedeniyle tedavi amacının KÜRATİF DEĞİL PALYATİF olmasıdır — hedef, sağkalımı uzatmak ve yaşam kalitesini korumaktır, hastalığı tamamen ortadan kaldırmak değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — ES-KHAK birinci basamak: platin+etoposid+atezolizumab/durvalumab (IMpower133/CASPIAN), ardından immünoterapi idamesi; amaç palyatiftir.",
+        "B": "YANLIS — Tam tersine, immünoterapi eklenmesi İKİ BÜYÜK FAZ III ÇALIŞMA (IMpower133, CASPIAN) ile desteklenmiştir ve standart bakım haline gelmiştir.",
+        "C": "YANLIS — Tam tersine, metinde açıkça 'Tedavi amacı PALYATİFTİR' belirtilmiştir; ES-KHAK yaygın metastatik bir hastalık olduğundan küratif hedeflenemez.",
+        "D": "YANLIS — Standart ajanlar ATEZOLİZUMAB VEYA DURVALUMAB'dır, pembrolizumab değil; bu ES-KHAK'a özgü onaylı kombinasyonlardır.",
+        "E": "YANLIS — Kemoterapi+immünoterapi kombinasyonu (IMpower133/CASPIAN) ÖZELLİKLE YAYGIN EVRE (ES) KHAK için tanımlanmıştır; LS-KHAK'ta farklı bir yaklaşım (eşzamanlı KRT+ardışık durvalumab idamesi) uygulanır."
+      },
+      "etiketler": [
+        "Yaygın Evre KHAK",
+        "IMpower133",
+        "CASPIAN",
+        "Atezolizumab",
+        "Palyatif Tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Horn et al. N Engl J Med 2018 (IMpower133); Paz-Ares et al. Lancet 2019 (CASPIAN)"
+    }
+  ]
+}

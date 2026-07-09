@@ -1,0 +1,398 @@
+{
+  "id": "fc-hemato-itp-001",
+  "accessLevel": "premium",
+  "topic": "İmmün Trombositopeni (İTP)",
+  "description": "YDUS Hematoloji serisi: İTP tanı kriterleri, evrelemesi, patofizyolojisi ve basamaklı tedavi stratejilerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "İmmün trombositopeni (İTP) tanısı için kabul edilen izole trombosit sayısı eşiği nedir?",
+      "back": "$100 \\times 10^9/L$ altı.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-2",
+      "front": "İTP'de 'yeni tanılı' (newly diagnosed) evre ne kadarlık bir süreyi kapsar?",
+      "back": "Tanıdan itibaren ilk 3 ay.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-3",
+      "front": "İTP'de 'persistan' (kalıcı) hastalık tanımı hangi süre aralığı için kullanılır?",
+      "back": "3 ile 12 ay arası.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-4",
+      "front": "İTP'de hastalığın 'kronik' olarak sınıflandırılması için tanıdan itibaren ne kadar süre geçmelidir?",
+      "back": "12 aydan fazla.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-5",
+      "front": "Primer İTP ile sekonder İTP arasındaki temel fark nedir?",
+      "back": "Primer İTP'de altta yatan tetikleyici bir durum yokken, sekonder İTP başka bir hastalıkla ilişkilidir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-6",
+      "front": "İTP patofizyolojisinde trombosit yıkımından sorumlu temel immün mekanizma nedir?",
+      "back": "Trombosit glikoproteinlerine karşı gelişen otoantikorlar.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-7",
+      "front": "İTP'de trombositopeniye neden olan antikor aracılı yıkım dışındaki diğer ana mekanizma nedir?",
+      "back": "Megakaryosit maturasyonunun bozulması ve yetersiz trombosit üretimi.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-8",
+      "front": "İTP tanısı koyarken periferik yaymada şistosit görülmesi hangi tanıyı dışlamayı gerektirir?",
+      "back": "Trombotik trombositopenik purpura (TTP) gibi mikroanjiopatik süreçler.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-9",
+      "front": "İTP tanısı alan tüm yetişkin hastalarda rutin olarak taranması gereken iki viral enfeksiyon hangisidir?",
+      "back": "HIV ve Hepatit C Virüsü (HCV).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-10",
+      "front": "İTP tanısı konulan hastalarda kemik iliği incelemesi hangi yaş grubunda diğer tanıları dışlamak için daha kritik kabul edilir?",
+      "back": "60 yaş üstü hastalar.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-11",
+      "front": "Anti-trombosit antikor testlerinin İTP tanısındaki yeri nedir?",
+      "back": "Düşük sensitivite nedeniyle rutin tanıda önerilmez ancak pozitifliği tanıyı destekleyebilir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-12",
+      "front": "Serum trombopoietin (TPO) seviyeleri İTP ve aplastik anemi ayrımında nasıl yardımcı olur?",
+      "back": "TPO seviyeleri İTP'de normal veya hafif yüksekken, aplastik anemide belirgin şekilde yüksektir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-13",
+      "front": "İTP'de tedavi kararı verilirken trombosit sayısından ziyade hangi klinik durum önceliklidir?",
+      "back": "Kanamanın varlığı ve kanama riski.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-14",
+      "front": "Yeni tanılı yetişkin İTP hastalarında genellikle kabul edilen tedaviye başlama eşik trombosit sayısı kaçtır?",
+      "back": "$20,000$ ile $30,000/\\mu L$ altı.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-15",
+      "front": "İTP'de kullanılan ilk basamak (front-line) standart tedaviler nelerdir?",
+      "back": "Glukokortikoidler, IVIg ve anti-D immün globulin.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-16",
+      "front": "Yüksek doz deksametazon tedavisinin İTP'deki standart uygulama şeması nasıldır?",
+      "back": "4 gün boyunca günlük $40\\ mg$.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-17",
+      "front": "İTP'de IVIg tedavisinin tipik yanıt süresi nedir?",
+      "back": "1 ile 3 gün arası.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-18",
+      "front": "Spleen tirozin kinaz (Syk) inhibitörü olarak görev yapan İTP ilacı hangisidir?",
+      "back": "Fostamatinib.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-19",
+      "front": "Eltrombopag, Romiplostim ve Avatrombopag hangi mekanizma ile trombosit sayısını artırır?",
+      "back": "Trombopoietin reseptör agonisti (TPO-RA) olarak etki ederek.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-20",
+      "front": "İTP'de splenektomi kararı verilirken, tanının üzerinden genellikle ne kadar süre geçmesi beklenir?",
+      "back": "Spontan remisyon ihtimali nedeniyle en az 12 ay.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-21",
+      "front": "Rituximab İTP tedavisinde hangi hücre grubunu hedef alarak etki gösterir?",
+      "back": "CD20 pozitif B lenfositler.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-22",
+      "front": "İTP patofizyolojisinde rol oynayan ve megakaryosit maturasyonunu baskılayan T-hücre alt grubu hangisidir?",
+      "back": "$CD8^+T$ (Sitotoksik T) hücreleri.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-23",
+      "front": "İTP'de makrofajların trombositleri fagosite etmesini sağlayan reseptör hangisidir?",
+      "back": "$Fc\\gamma$ reseptörü.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-24",
+      "front": "Fetal geçişi olmadığı için gebelik sırasında refrakter İTP vakalarında kullanılabilen trombopoietin ajanı hangisidir?",
+      "back": "Rekombinant insan trombopoietini (rhTPO).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-25",
+      "front": "Yaşlı İTP hastalarında (60+ yaş) tedavi yönetiminde gençlere göre daha sık karşılaşılan riskler nelerdir?",
+      "back": "Artmış kanama, enfeksiyon ve tromboz riski.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-26",
+      "front": "Antikoagülan ilaç kullanan bir İTP hastasında güvenli kabul edilen minimum trombosit düzeyi nedir?",
+      "back": "$50 \\times 10^9/L$.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-27",
+      "front": "İTP'de gelişen kanama semptomları ile trombosit sayısı arasındaki ilişki nasıldır?",
+      "back": "Öngörülemezdir; düşük trombosit sayılarında bile kanama semptomları değişkenlik gösterebilir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-28",
+      "front": "İTP'de kullanılan yeni bir hedefli terapi olan Bruton tirozin kinaz (BTK) inhibitörlerinin temel amacı nedir?",
+      "back": "B hücre aktivasyonunu ve antikor üretimini azaltmak.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-29",
+      "front": "Neonatal Fc reseptörü (FcRn) antagonistleri İTP'de hangi mekanizma ile çalışır?",
+      "back": "Patojenik IgG otoantikorlarının yarı ömrünü kısaltıp temizlenmesini hızlandırarak.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-30",
+      "front": "Kritik İTP kanamasında acil splenektomi hangi durumda düşünülür?",
+      "back": "Kombine medikal tedavilere (Trombosit, IVIg, Steroid, TPO-RA) yanıt alınamadığında.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-31",
+      "front": "Gebelikte İTP yönetimi için epidural anestezi yapılabilecek güvenli trombosit sınırı kaçtır?",
+      "back": "$\\ge 80 \\times 10^9/L$.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-32",
+      "front": "İTP'li bir hastada kemik iliğinde retikülin lifi artışı görülmesi her zaman MDS anlamına mı gelir?",
+      "back": "Hayır; erken evre İTP'de de bazı retikülin lifi artışları görülebilir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-33",
+      "front": "Yaşlı hastalarda İTP tanısında myelodizplastik sendromu (MDS) dışlamak için kemik iliği aspirasyonu ile birlikte ne yapılması önerilir?",
+      "back": "Sitogenetik çalışma ve yeni nesil dizileme (NGS).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-34",
+      "front": "Helicobacter pylori eradikasyonu İTP hastalarında ne zaman düşünülmelidir?",
+      "back": "Dispeptik semptomları olanlarda veya prevalansın yüksek olduğu bölgelerde.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-35",
+      "front": "İTP'de trombositlerin karaciğerde yıkılmasına neden olan süreç nedir?",
+      "back": "Desializasyon (sialik asit kaybı).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-36",
+      "front": "İTP tedavisinde mikofenolat mofetil (MMF) hangi basamakta tercih edilir?",
+      "back": "Genellikle ikinci basamak veya daha sonraki tedavilerde.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-37",
+      "front": "Kortikosteroidlerin İTP tedavisindeki birincil amacı nedir?",
+      "back": "İmmün baskılama yoluyla antikor üretimini ve trombosit yıkımını azaltmak.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-38",
+      "front": "İTP'de anti-D tedavisi hangi hasta grubunda etkisizdir?",
+      "back": "Rh-negatif olan veya splenektomi yapılmış hastalarda.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-39",
+      "front": "TPO-RA tedavisi sırasında trombosit sayısının aşırı yükselmesi hangi riski artırabilir?",
+      "back": "Venöz veya arteriyel tromboembolizm.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-40",
+      "front": "İTP'de desializasyon sonrası trombositler karaciğerde hangi reseptör aracılığıyla temizlenir?",
+      "back": "Ashwell-Morell Reseptörü (AMR).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-41",
+      "front": "İTP tanısı doğrulanmış ancak tedaviye yanıtsız ve atipik seyreden hastalarda hangi testler tekrarlanmalıdır?",
+      "back": "Kemik iliği biyopsisi ve genetik testler.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-42",
+      "front": "Gebelikte vajinal doğum için hedeflenen minimum trombosit sayısı kaçtır?",
+      "back": "$\\ge 50 \\times 10^9/L$.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-43",
+      "front": "İTP'li yaşlı hastalarda kısa süreli kortikosteroid kullanımında en sık görülen yan etkiler nelerdir?",
+      "back": "Diyabet (hiperglisemi) ve psikiyatrik semptomlar.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-44",
+      "front": "İTP'de splenektomi sonrası en önemli uzun dönem risk nedir?",
+      "back": "Kapsüllü bakterilere bağlı ciddi enfeksiyonlar (OPSI).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-45",
+      "front": "Evans sendromu nedir?",
+      "back": "İTP ile birlikte otoimmün hemolitik aneminin (AIHA) eş zamanlı veya ardışık görülmesi.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-46",
+      "front": "İTP patogenezinde Th1/Th2 dengesi ne yöne kaymıştır?",
+      "back": "Th1 lehine bir artış gözlenir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-47",
+      "front": "İTP hastalarında yorgunluk (fatigue) semptomunun klinik önemi nedir?",
+      "back": "Trombosit sayısından bağımsız olarak yaşam kalitesini ciddi şekilde düşüren yaygın bir semptomdur.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-48",
+      "front": "Hangi İTP ilacı kemoterapötik bir ajan olmayıp, anti-tümör etkili bir nükleozid analoğudur ve yaşlılarda ilk seçeneklerden biri olabilir?",
+      "back": "Düşük doz desitabin.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-49",
+      "front": "İTP'de direkt antiglobulin testi (DAT) hangi durumda istenmelidir?",
+      "back": "Hemoliz bulguları varlığında (Evans Sendromu şüphesi).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-50",
+      "front": "İTP tanısı almış ve Rituximab planlanan hastalarda hangi hepatit markerları bakılmalıdır?",
+      "back": "HBsAg ve anti-HBc.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-51",
+      "front": "Fostamatinib'in en sık görülen yan etkileri nelerdir?",
+      "back": "Hipertansiyon, ishal ve karaciğer enzimlerinde yükselme.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-52",
+      "front": "İTP'de trombosit yıkımının ana anatomik bölgesi neresidir?",
+      "back": "Dalak.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-53",
+      "front": "İmmün trombositopenide Treg hücrelerinin (Regülatör T hücreleri) durumu nasıldır?",
+      "back": "Sayıca azalmış veya fonksiyonel olarak bozuktur.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-54",
+      "front": "Hangi tip trombositopeni tanısı konulduğunda, tedavi esas olarak altta yatan hastalığın (örn. SLE) tedavisine odaklanır?",
+      "back": "Sekonder İTP.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-55",
+      "front": "İTP tanısı için periferik yaymada trombosit morfolojisi genellikle nasıldır?",
+      "back": "Trombositler sayıca azdır ancak genellikle normal veya büyük (dev trombosit) boyutlardadır.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-56",
+      "front": "Yeni tanılı bir İTP hastasında Prednizon tedavisinin standart süresi nedir?",
+      "back": "1-2 hafta tam doz, ardından kademeli azaltılarak 6-8 haftada kesilmesi.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-57",
+      "front": "İTP'de kompleman sisteminin rolü nedir?",
+      "back": "Otoantikorlar komplemanı aktive ederek trombositlerin kompleman bağımlı sitotoksisite (CDC) ile yıkımını artırabilir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-58",
+      "front": "İTP hastalarında NSAİİ (örneğin ibuprofen) kullanımı neden risklidir?",
+      "back": "Trombosit fonksiyonunu bozarak kanama riskini artırdıkları için.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-59",
+      "front": "TPO reseptör agonistlerinin kemik iliği üzerindeki potansiyel uzun dönem yan etkisi nedir?",
+      "back": "Kolajen birikimi ve kemik iliği fibrozisi.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-60",
+      "front": "İTP tedavisinde kullanılan Danazol'ün etki mekanizması nedir?",
+      "back": "Fagositozu azaltan zayıf bir androjenik etkidir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-61",
+      "front": "İTP'de 'refrakter' (dirençli) hastalık neyi ifade eder?",
+      "back": "Splenektomi sonrası yanıt alınamayan veya birden fazla tedaviye yanıtsız kronik seyir.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-62",
+      "front": "Trombositopenisi olan bir hastada PT ve aPTT testlerinin normal olması neyi destekler?",
+      "back": "Trombositopeninin koagülasyon faktörü eksikliği veya DIC kaynaklı olmadığını.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-63",
+      "front": "İTP'de antikorların en sık bağlandığı trombosit yüzey reseptörü hangisidir?",
+      "back": "Glikoprotein IIb/IIIa ($GPIIb/IIIa$).",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-64",
+      "front": "IVIg tedavisinin etki süresi genellikle ne kadardır?",
+      "back": "Yanıt genellikle geçicidir, 2 ile 4 hafta sürer.",
+      "tag": "Hematoloji / İTP"
+    },
+    {
+      "id": "card-65",
+      "front": "Yaşlı hastalarda İTP tanısı konulurken ilaç öyküsü neden önemlidir?",
+      "back": "Çok sayıda ilaç kullanımı (polifarmasi) nedeniyle ilaçla indüklenen trombositopeni sık görülür.",
+      "tag": "Hematoloji / İTP"
+    }
+  ]
+}
