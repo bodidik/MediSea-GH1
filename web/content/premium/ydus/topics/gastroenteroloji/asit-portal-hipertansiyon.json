@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "id": "asit-portal-hipertansiyon",
+    "branch": "gastroenteroloji",
+    "baslik": "Asit — Patofizyoloji, Tanı ve Yönetim",
+    "altbaslik": "Periferik arteriyel vazodilatasyon hipotezi, SAAG/parasentez analizi, diüretik stratejisi, refrakter asit (LVP/TIPS/Alfapump) ve nakil endikasyonu",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Asit, peritoneal kavitede patolojik miktarda serbest sıvı birikimi olarak tanımlanır ve vakaların yaklaşık %80-85'inde siroza sekonder portal hipertansiyon zemininde gelişir. Normal fizyolojide periton boşluğunda yaklaşık 50-75 mL sıvı bulunurken, patolojik süreçlerde bu miktar litrelerce hacme ulaşabilir."
+        },
+        {
+          "metin": "Asit, dekompanse sirozun en sık görülen ve prognozu belirleyen en kritik komplikasyonudur. Kompanse sirozlu hastaların yaklaşık %50-60'ında 10 yıl içinde asit gelişimi gözlenir ve asit gelişimini takiben beklenen medyan sağkalım süresi >12 yıldan yaklaşık **2 yıla** geriler."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyolojik Mekanizmalar — Periferik Arteriyel Vazodilatasyon Hipotezi",
+      "satirlar": [
+        {
+          "metin": "İleri evre karaciğer hastalığı, hepatik mimarinin (rejeneratif nodüller ve fibrozis) bozulması sonucu intrahepatik vasküler direncin artmasına, dolayısıyla portal hipertansiyona (**>10 mmHg eşik değeri**) neden olur. Portal basınçtaki bu artış, nitrik oksit (NO), endokannabinoidler ve karbon monoksit gibi medyatörlerin üretimini tetikleyerek belirgin bir **splanknik arteriyel vazodilatasyona** yol açar."
+        },
+        {
+          "metin": "Splanknik yatağın genişlemesi, dolaşımdaki toplam kan hacmi artmış olsa dahi **efektif arteriyel kan hacminin (EAKH) azalması** (rölatif hipovolemi) ile sonuçlanır. Bu azalma baroreseptörler tarafından algılanarak vücudun kompanzasyon mekanizmalarını (RAAS aktivasyonu, sempatik sinir sistemi ve ADH salınımı) devreye sokar."
+        },
+        {
+          "metin": "Bu nörohümoral aktivasyon kaskadı, böbreklerde şiddetli bir afferent arteriyol vazokonstriksiyonu ile birlikte tübüllerden masif sodyum ve serbest su geri emilimine neden olur. Tutulan fazla sodyum ve sıvı, bozulan onkotik basıncın ve lokal portal kapiller hidrostatik basıncın etkisiyle periton boşluğuna sızarak asit sıvısını oluşturur."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Vazodilatasyon Hipotezinin Mantık Zinciri: Portal HT (>10 mmHg) → NO/endokannabinoid/CO aracılı splanknik vazodilatasyon → Efektif arteriyel kan hacmi azalması (rölatif hipovolemi, toplam kan hacmi ARTMIŞ olsa dahi) → RAAS/SNS/ADH aktivasyonu → Renal Na+/su retansiyonu → Asit. Bu zincir, sirozda asit oluşumunun neden 'gerçek hipovolemi' değil 'efektif/rölatif hipovolemi' temelli olduğunu açıklar."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Değerlendirme ve Diagnostik Sıvı Analizi",
+      "satirlar": [
+        {
+          "metin": "Asit tespit edilen veya mevcut siroz kliniğinde bozulma/dekompansasyon (ensefalopati, renal yetmezlik, ateş vb.) saptanan her hastada diagnostik parasentez ZORUNLUDUR. Sıvının biyokimyasal, hücresel ve mikrobiyolojik özellikleri, etiyolojik ayırıcı tanı ve komplikasyonların erken teşhisi için altın standarttır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Serum-Asit Albümin Gradyanı (SAAG) — Yorumlama",
+      "kolonlar": [
+        "SAAG Değeri",
+        "Anlamı ve Ayırıcı Tanı"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "SAAG ≥ 1.1 g/dL (Yüksek Gradyan) ★",
+            "%97 doğrulukla portal hipertansiyon kaynaklı (siroz, Budd-Chiari, kalp yetmezliği)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "SAAG < 1.1 g/dL (Düşük Gradyan)",
+            "Portal hipertansif DEĞİLDİR — peritoneal karsinomatoz, tüberküloz, nefrojenik, pankreatik veya şilöz asit şüphesi uyandırmalıdır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Total Protein ve Ek Biyokimyasal Parametreler",
+      "kolonlar": [
+        "Parametre",
+        "Eşik / Bulgu",
+        "Anlamı"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Total Protein ★",
+            "<2.5 g/dL",
+            "Klasik olarak sirozu destekler; düşük opsonik aktivite nedeniyle SBP riski YÜKSEKtir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Total Protein (SAAG ≥1.1 iken)",
+            "≥2.5 g/dL",
+            "Post-sinüzoidal basınç artışını yansıtır (örn. kalp yetmezliği)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Amilaz",
+            ">1000 U/L",
+            "Pankreatik asit"
+          ]
+        },
+        {
+          "hucreler": [
+            "Trigliserit",
+            ">200 mg/dL",
+            "Lenfatik kaçak kaynaklı şilöz asit"
+          ]
+        },
+        {
+          "hucreler": [
+            "Eritrosit (Hemorajik Asit)",
+            ">50.000/mm³",
+            "Travmatik parasentez veya malignite (özellikle HCC)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "PMN ≥250/mm³ = Spontan Bakteriyel Peritonit (SBP): Asit sıvısında polimorfonükleer (PMN) lökosit sayısının ≥250 hücre/mm³ olması, KÜLTÜR SONUÇLARI BEKLENMEKSİZİN tedaviye başlanmasını gerektiren SBP tanısını kesinleştirir. Bu, klinik pratikte gecikmenin mortaliteyi artırabileceği acil bir eşik değerdir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Komplike Olmayan Asit — Tedavi Algoritması",
+      "satirlar": [
+        {
+          "metin": "Orta dereceli (Evre 2) asit varlığında medikal tedavi, hastada negatif sodyum dengesini sağlamaya ve sıvı toplanmasını engellemeye odaklanır."
+        },
+        {
+          "metin": "**Diyetle Sodyum Kısıtlaması:** Medikal tedavinin köşe taşıdır. Günlük sodyum alımı kesinlikle **2 gramın (yaklaşık 88-90 mEq)** altına düşürülmelidir. Sıvı kısıtlaması ise YALNIZCA serum sodyum seviyesinin dilüsyonel olarak ≤120-125 mEq/L'ye düştüğü ciddi hiponatremi vakalarında uygulanmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Diüretik Stratejisi — Kombine Rejim",
+      "kolonlar": [
+        "Parametre",
+        "Değer"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Başlangıç Dozu (Sabah, Tek Doz) ★",
+            "Spironolakton 100 mg + Furosemid 40 mg (100:40 oranı — RAAS bloke edici MRA + loop diüretiği kombinasyonu)"
+          ]
+        },
+        {
+          "hucreler": [
+            "Titrasyon",
+            "Her 3-5 günde bir aynı oranda, maksimum 400 mg/160 mg'a kadar"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kilo Kaybı Hedefi",
+            "Ödemi olmayanlarda günlük maks. 0.5 kg; periferik ödemi olanlarda maks. 1.0 kg"
+          ]
+        },
+        {
+          "hucreler": [
+            "Spironolakton İntoleransı (Jinekomasti)",
+            "Amilorid alternatif olarak kullanılabilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Asitli Sirozda Kontrendike İlaçlar: NSAİİ'ler böbrekte koruyucu prostaglandin sentezini inhibe ederek Akut Böbrek Hasarını (AKI) tetiklediğinden TAMAMEN KONTRENDİKEDİR. ACE inhibitörleri, ARB'ler ve aminoglikozit antibiyotiklerden de renal kan akımını bozdukları için kaçınılmalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Dirençli (Refrakter) Asit Yönetimi",
+      "satirlar": [
+        {
+          "metin": "Maksimum diüretik dozuna (400 mg/160 mg) rağmen veya böbrek yetmezliği/elektrolit bozukluğu gibi nedenlerle diüretiklerin tolere edilemediği durumlarda hızla nükseden veya mobilize edilemeyen asit 'refrakter asit' olarak tanımlanır. Yönetimi yüksek derecede uzmandan beklenti gerektirir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Refrakter Asit — Tedavi Seçenekleri",
+      "kolonlar": [
+        "Yöntem",
+        "Açıklama"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Geniş Hacimli Parasentez (LVP) ★",
+            "İlk ve en çok başvurulan yöntem. Genellikle >5 L sıvı boşaltılır. PICD (Paracentesis Induced Circulatory Dysfunction) önlemek için çıkarılan HER LİTRE sıvı başına 6-8 gram İV insan albümini infüzyonu STANDART MEDİKAL ZORUNLULUKTUR"
+          ]
+        },
+        {
+          "hucreler": [
+            "TIPS (Transjuguler İntrahepatik Portosistemik Şant)",
+            "Portal ve sistemik dolaşım arasına (genellikle PTFE kaplı) stent yerleştirilerek portal basıncın mekanik düşürülmesi. Sık parasentez gerektiren dirençli asitte çok başarılı; ancak MELD/Child-Pugh skoru yüksek veya şiddetli hepatik ensefalopati öyküsü olan hastalarda KONTRENDİKEDİR"
+          ]
+        },
+        {
+          "hucreler": [
+            "Mekanik Pompalar (Alfapump / CART)",
+            "Alfapump: asit sıvısını sürekli periton boşluğundan mesaneye tahliye eden cilt altı otomatik pompa — TIPS/transplantasyona uygun olmayan hastalarda yaşam kalitesini artırır. CART: asidin ekstrakorporeal filtrasyon ile konsantre edilip tekrar infüze edilmesi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kesin Tedavi: Karaciğer Nakli",
+      "satirlar": [
+        {
+          "metin": "Dekompanse evreye geçişin (asit gelişiminin) saptanması, hastalığın radikal çözüm gerektirdiğini kanıtlar. Bu nedenle ilk asit atağı sonrasında, **MELD skorundan bağımsız olarak**, medikal kontrendikasyonu bulunmayan her hasta derhal **karaciğer transplantasyonu** açısından adaylık değerlendirmesine tabi tutulmalıdır. Transplantasyon, siroza bağlı refrakter asitin yegane ve tam küratif tedavisi konumundadır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik Özet — Asit 10 Altın Kural: (1) Asidin %80-85'i siroz/portal HT kaynaklıdır; portal HT eşiği >10 mmHg. (2) Patogenez: splanknik vazodilatasyon → EAKH azalması (rölatif hipovolemi) → RAAS/SNS/ADH aktivasyonu → renal Na/su retansiyonu. (3) SAAG ≥1.1 g/dL=portal HT kaynaklı (%97 doğruluk); <1.1=malignite/TB/pankreatik/şilöz. (4) Total protein <2.5 g/dL=SBP riski yüksek; SAAG≥1.1+protein≥2.5=post-sinüzoidal (kalp yetmezliği). (5) PMN ≥250/mm³=SBP, kültür beklenmeden tedaviye başla. (6) Na kısıtlaması <2g/gün köşe taşıdır; sıvı kısıtlaması yalnızca Na ≤120-125 mEq/L'de. (7) Diüretik: Spironolakton:Furosemid=100:40 oranında başla, max 400:160'a titre et. (8) NSAİİ, ACEi/ARB, aminoglikozit kontrendikedir. (9) LVP'de her çıkarılan litre için 6-8g İV albümin zorunludur (PICD önleme). (10) İlk asit atağı sonrası, MELD'den bağımsız, her hasta nakil değerlendirmesine alınmalıdır."
+    }
+  ]
+}

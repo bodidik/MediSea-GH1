@@ -38,6 +38,15 @@
             "NADİR"
           ],
           "hazir": true
+        },
+        {
+          "id": "asit-portal-hipertansiyon",
+          "baslik": "Asit — Patofizyoloji, Tanı ve Yönetim",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     },
