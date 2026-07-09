@@ -1,0 +1,470 @@
+{
+  "id": "fc-gastro-asit-001",
+  "accessLevel": "premium",
+  "topic": "Asit — Patofizyoloji, Tanı ve Yönetim",
+  "description": "YDUS Gastroenteroloji serisi: Sirotik asit patofizyolojisi, SAAG/SBP tanı kriterleri, refrakter asit ve diüretik/vazoaktif farmakoterapiyi kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Sirozda asit ve hacim yüklenmesi yönetiminde, diüretik doz artışı ve hacim durumunun izlenmesi için önerilen dikkatli artış aralığı kaç gündür?",
+      "back": "3-5 gün.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-2",
+      "front": "Refrakter anasarkada kontraksiyon alkalozu gelişmesi durumunda, tedaviye hangi diüretiğin eklenmesi düşünülmelidir?",
+      "back": "Asetazolamid.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-3",
+      "front": "Refrakter asit tedavisinde metolazon hangi ilaç grubuna alternatif etki mekanizmalı bir ajan olarak eklenir?",
+      "back": "Tiyazid diüretikleri.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-4",
+      "front": "Maksimum diüretik tedaviye rağmen mobilize edilemeyen veya tıbbi tedaviyle erken nüksü önlenemeyen asit nasıl tanımlanır?",
+      "back": "Refrakter asit.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-5",
+      "front": "Sodyum kısıtlaması ve diüretiklere yanıtsızlık nedeniyle asidin mobilize edilememesi, refrakter asidin hangi alt kategorisidir?",
+      "back": "Diüretik-rezistan asit.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-6",
+      "front": "Etkin diüretik doz artışını engelleyen komplikasyonların gelişmesi sonucunda asidin tedavi edilememesi durumu nedir?",
+      "back": "Diüretik-intraktabl asit.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-7",
+      "front": "FDA tarafından yetişkinlerde HRS-AKI tedavisinde böbrek fonksiyonlarını düzeltmek için tescil edilen vazokonstriktör ilaç hangisidir?",
+      "back": "Terlipressin.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-8",
+      "front": "Sirozda HRS-AKI dışındaki AKI formlarının tedavisinde kullanılması önerilmeyen ilaç grupları nelerdir?",
+      "back": "Vazoaktif ilaçlar (Terlipressin, NE, midodrin/oktreotid).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-9",
+      "front": "HRS-AKI patofizyolojisinde renal vazokonstriksiyona ve GFR düşüşüne neden olan temel hemodinamik olay nedir?",
+      "back": "Ekstrem splanknik vazodilatasyon.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-10",
+      "front": "HRS-AKI'yi diğer AKI fenotiplerinden ayırt etmede yardımcı olabileceği belirtilen idrar biyobelirteci hangisidir?",
+      "back": "Nötrofil jelatinaz ilişkili lipokalin (NGAL).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-11",
+      "front": "Sirozda asit oluşumu için gerekli olan minimum portal basınç eşiği nedir?",
+      "back": "$12$ mm Hg.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-12",
+      "front": "Portal hipertansiyonda splanknik arter vazodilatasyonuna neden olan temel medyatör molekül hangisidir?",
+      "back": "Nitrik Oksit (NO).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-13",
+      "front": "Sirozda ilerleyen vazodilatasyona yanıt olarak sodyum ve su tutulumunu tetikleyen temel nörohümoral sistem hangisidir?",
+      "back": "Renin-anjiyotensin-aldosteron sistemi (RAAS).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-14",
+      "front": "Serum-asit albümin gradyanı (SAAG) hesaplama formülü nedir?",
+      "back": "Serum albümin - Asit albümin.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-15",
+      "front": "Asit etiyolojisinin portal hipertansiyona bağlanması için SAAG değeri kaç g/dL veya üzerinde olmalıdır?",
+      "back": "$1.1$ g/dL.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-16",
+      "front": "Asit sıvısında nötrofil (PMN) sayısının hangi değerin üzerinde olması Spontan Bakteriyel Peritonit (SBP) tanısı koydurur?",
+      "back": "$250$ hücre/$mm^{3}$.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-17",
+      "front": "SBP geçiren tüm hastalarda ikincil profilaksi (sekonder profilaksi) için önerilen ilaç seçenekleri nelerdir?",
+      "back": "Siprofloksasin, norfloksasin veya trimetoprim-sulfametoksazol.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-18",
+      "front": "Gastrointestinal kanama gelişen asitli hastalarda bakteriyel enfeksiyonları önlemek için önerilen 7 günlük tedavi nedir?",
+      "back": "İntravenöz seftriakson.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-19",
+      "front": "Sirotik asit yönetiminde idrar hacmini, idrar sodyumunu ve ortalama arter basıncını artırdığı gösterilen oral alfa-1 agonist hangisidir?",
+      "back": "Midodrin.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-20",
+      "front": "Sirozda asit yönetiminde kullanımı güncel kılavuzlarca önerilmeyen 'vaptan' grubu ilaçların temel etki mekanizması nedir?",
+      "back": "Vazopressin V2 reseptör antagonistliği.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-21",
+      "front": "Sirotik asidin başlangıç farmakolojik tedavisinde önerilen iki temel ilaç sınıfı hangileridir?",
+      "back": "Aldosteron antagonistleri (spironolakton) ve loop diüretikleri (furosemid).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-22",
+      "front": "Asit yönetiminde spironolakton ve furosemid için önerilen başlangıç günlük dozları sırasıyla kaç mg'dır?",
+      "back": "$100$ mg spironolakton ve $40$ mg furosemid.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-23",
+      "front": "SBP birincil profilaksisi (primer profilaksi) için asit sıvısı toplam protein düzeyi hangi sınırın altında olmalıdır?",
+      "back": "$15$ g/L ($1.5$ g/dL).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-24",
+      "front": "SBP primer profilaksisi kriterlerinden biri olan Child-Pugh skoru ve bilirubin eşik değerleri kaçtır?",
+      "back": "Child-Pugh $\\ge 9$ ve bilirubin $\\ge 3$ mg/dL.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-25",
+      "front": "SBP primer profilaksisi için böbrek fonksiyon bozukluğu kriterleri nelerdir?",
+      "back": "Serum kreatinin $\\ge 1.2$ mg/dL, BUN $\\ge 25$ mg/dL veya Na $\\le 130$ mEq/L.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-26",
+      "front": "Sirozda hepatik ensefalopati tedavisinde kullanılan laktülozun terapötik hedefi günde kaç yumuşak dışkılamadır?",
+      "back": "2-3 kez.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-27",
+      "front": "Tekrarlayan hepatik ensefalopati ataklarını önlemek için laktüloza eklenmesi önerilen antibiyotik hangisidir?",
+      "back": "Rifaksimin.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-28",
+      "front": "Sirozda non-selektif beta blokerlerin (NSBB) asit riskini azaltmadaki temel mekanizması nedir?",
+      "back": "Splanknik vazokonstriksiyon yoluyla portal basıncı düşürmek.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-29",
+      "front": "Hem beta-1/beta-2 blokajı hem de alfa-1 blokajı yaparak intrahepatik vasküler direnci azaltan NSBB hangisidir?",
+      "back": "Karvedilol.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-30",
+      "front": "NSBB tedavisi sırasında korunması gereken minimum hedef sistolik kan basıncı değeri kaçtır?",
+      "back": "$90$ mm Hg.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-31",
+      "front": "Siroz ve asidi olan hastalarda renal prostaglandin sentezini inhibe ederek AKI riskini artıran ve kontrendike olan ilaç grubu nedir?",
+      "back": "Non-steroidal anti-inflamatuar ilaçlar (NSAİİ).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-32",
+      "front": "Pankreatik asit tanısında asit sıvısında hangi enzimin yüksekliği karakteristiktir?",
+      "back": "Amilaz.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-33",
+      "front": "Kardiyak asitte beklenen SAAG ve asit sıvısı toplam protein özellikleri nelerdir?",
+      "back": "Yüksek SAAG ($\\ge 1.1$) ve yüksek protein ($> 25$ g/L).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-34",
+      "front": "Loop diüretiklerinin uzun süreli kullanımında görülen net sodyum atılımındaki azalma fenomenine ne ad verilir?",
+      "back": "Frenleme fenomeni (Braking phenomenon).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-35",
+      "front": "Loop diüretiklerinde belirli bir dozdan sonra idrar sodyum atılımının artmaması durumuna ne denir?",
+      "back": "Tavan etkisi (Ceiling effect).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-36",
+      "front": "Spironolaktonun sirozda yarı ömrünün 126 saate kadar uzamasının nedeni nedir?",
+      "back": "Karaciğerdeki metabolik sürecin bozulması.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-37",
+      "front": "Sirozda spironolakton kullanımına bağlı jinekomasti gelişmesinin hormonal nedeni nedir?",
+      "back": "Progesteron ve androjen reseptörlerinin eş zamanlı blokajı.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-38",
+      "front": "Daha yüksek seçicilik ve daha kısa yarı ömür (2 saat) avantajına sahip olan yeni nesil non-steroidal MRA hangisidir?",
+      "back": "Finerenon.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-39",
+      "front": "SGLT2 inhibitörlerinin sirotik asit tedavisindeki potansiyel sinerjik etkisi hangi mekanizma üzerindendir?",
+      "back": "Proksimal tübülde sodyum emilimini azaltarak loop diüretiklerine sodyum ulaştırmak.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-40",
+      "front": "SGLT2 inhibitörlerinin makula densada sodyum konsantrasyonunu artırarak tetiklediği feedback mekanizması nedir?",
+      "back": "Tübüloglomerüler feedback (afferent arteriol vazokonstriksiyonu).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-41",
+      "front": "Albuminin sirozda sadece plazma genişletici değil, aynı zamanda anti-inflamatuar etki gösteren bir modülatör olduğu sistem hangisidir?",
+      "back": "RAAS (Renin-anjiyotensin-aldosteron sistemi).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-42",
+      "front": "Geniş hacimli parasentez (LVP) sonrası dolaşım disfonksiyonunu önlemek için çıkarılan her litre asit başına kaç gram albumin verilmelidir?",
+      "back": "$8$ gram.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-43",
+      "front": "Sirozda albumin infüzyonunun hyponatremiyi düzeltme mekanizması nedir?",
+      "back": "Serbest su klirensini artırmak.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-44",
+      "front": "SBP profilaksisinde norfloksasine alternatif olarak kullanılan ve dihidrofolat redüktazı inhibe eden ilaç hangisidir?",
+      "back": "Trimetoprim.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-45",
+      "front": "Rifaksiminin SBP profilaksisindeki mikrobiyolojik etki mekanizması nedir?",
+      "back": "Bakteriyel RNA polimerazın beta alt birimine bağlanarak RNA sentezini inhibe etmek.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-46",
+      "front": "Dekompanse sirozda kardiyak outputun vazodilatasyonu kompanse edememesi sonucu gelişen duruma ne ad verilir?",
+      "back": "Sirotik kardiyomiyopati / Bozulmuş kardiyak performans.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-47",
+      "front": "Sirozda non-osmotik antidiüretik hormon (ADH) salınımını tetikleyen temel uyaran nedir?",
+      "back": "Relatif hipovolemi (baroreseptör uyarısının azalması).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-48",
+      "front": "ADH'nin toplayıcı kanallarda su geçirgenliğini artırmak için apikal membrana transloke ettiği protein hangisidir?",
+      "back": "Akuaporin-2.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-49",
+      "front": "Anjiyotensin dönüştürücü enzim inhibitörlerinin (ACEİ) sirotik asitli hastalarda natriürezi azaltma nedeni nedir?",
+      "back": "Efferent arteriol dilatasyonu ile GFR'yi düşürmeleri.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-50",
+      "front": "Sirotik asitli hastalarda ACEİ kullanımının plazma renin aktivitesi üzerindeki beklenmedik etkisi nedir?",
+      "back": "Plazma renin aktivitesini artırırlar (feedback uyarımı nedeniyle).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-51",
+      "front": "İleri evre sirozda NSBB'lerin mortaliteyi artırabilen olumsuz hemodinamik etkisi nedir?",
+      "back": "Negatif inotropik etki ile kardiyak outputu daha da azaltmaları.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-52",
+      "front": "Dekompanse sirozda albuminin 'etkin' miktarının azalmasına neden olan sistemik durum nedir?",
+      "back": "Sistemik pro-oksidan ve pro-inflamatuar ortam.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-53",
+      "front": "Albuminin RAAS aktivitesini dolaylı olarak düzenlemede baskıladığı iki önemli pro-inflamatuar medyatör hangisidir?",
+      "back": "IL-6 ve VEGF.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-54",
+      "front": "Dekompanse sirozda sodyum reabsorpsiyonunun en belirgin arttığı nefron bölgesi neresidir?",
+      "back": "Proksimal tübül.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-55",
+      "front": "Klinik çalışmalarda (DAPA-HF gibi), SGLT2 inhibitörlerinin hyponatremiyi düzeltme eğilimi neyi düşündürmektedir?",
+      "back": "RAAS ve sempatik sinir sistemi aktivasyonunu dengelediklerini.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-56",
+      "front": "Sirozlu hastalarda SGLT2 inhibitörlerinin hipoglisemi riskinin düşük olmasının nedeni nedir?",
+      "back": "Etkilerinin insülin seviyesinden bağımsız ve plazma glikoz seviyesine bağımlı olması.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-57",
+      "front": "Sirozda sempatik sinir sistemi aktivasyonunun bir göstergesi olarak sistemik dolaşımda artan katekolamin hangisidir?",
+      "back": "Norepinefrin (NE).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-58",
+      "front": "İleri evre sirozda bakteriyel translokasyon sonucu salınan ve vazodilatasyonu kötüleştiren endotoksin bileşenleri nelerdir?",
+      "back": "PAMP'lar (Patojen-ilişkili moleküler paternler).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-59",
+      "front": "Sirotik asitte parasentez sıvısı analizi sırasında şilöz asit şüphesinde hangi laboratuvar testi istenmelidir?",
+      "back": "Trigliserid düzeyi.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-60",
+      "front": "Tüberküloz peritonitinde asit sıvısının tipik hücresel özelliği nedir?",
+      "back": "Yüksek lenfosit sayımı.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-61",
+      "front": "Sirotik asit sıvısında protein konsantrasyonu hangi değerin altındaysa SBP riski artmış kabul edilir?",
+      "back": "$1.5$ g/dL ($15$ g/L).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-62",
+      "front": "Sirozlu hastalarda asit sıvısı kültürü için en uygun yöntem nedir?",
+      "back": "Sıvının yatak başında kan kültürü şişelerine ekilmesi.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-63",
+      "front": "Refrakter asit tanımı için sodyum kısıtlaması günde kaç mg'ın altında olmalıdır?",
+      "back": "$2000$ mg (ya da $88$ mmol).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-64",
+      "front": "Furosemid ve spironolaktonun refrakter asit tanımı için kullanılan maksimum günlük dozları sırasıyla kaçtır?",
+      "back": "$160$ mg furosemid ve $400$ mg spironolakton.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-65",
+      "front": "Sirozda asit mobilizasyonu sırasında önerilen maksimum günlük ağırlık kaybı (ödemi olmayan hastada) ne kadardır?",
+      "back": "$0.5$ kg.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-66",
+      "front": "Portal hipertansiyon patogenezinde NO eksikliği nerede vazokonstriksiyona neden olur?",
+      "back": "İntrahepatik vasküler yatak.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-67",
+      "front": "Sirozda sempatik sinir sistemi aktivitesini baskılayan girişimsel tedavi yöntemi nedir?",
+      "back": "TIPS (Transjuguler intrahepatik portosistemik şant).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-68",
+      "front": "Laktüloz tedavisine bağlı gelişebilecek elektrolit dengesizliği ve dehidratasyon riski nedir?",
+      "back": "Hipernatremi.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-69",
+      "front": "Sirozda asit varlığında kardiak output düşüşü hangi evrede belirginleşir?",
+      "back": "Dekompanse evre.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-70",
+      "front": "Anjiyotensin II'nin vazokonstriktör etkisini kompanse etmek için sirozlu böbrekte artan koruyucu medyatör nedir?",
+      "back": "Vazodilatör prostaglandinler.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-71",
+      "front": "Sirotik asitli bir hastada diüretik tedaviye rağmen kreatinin $> 2.0$ mg/dL olursa ne yapılmalıdır?",
+      "back": "Diüretik tedavi kesilmelidir.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-72",
+      "front": "SBP birincil profilaksisinde norfloksasinin günlük standart dozu nedir?",
+      "back": "$400$ mg.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-73",
+      "front": "Kardiyak asitte SAAG yüksek olmasına rağmen asit protein düzeyi neden yüksektir?",
+      "back": "Hepatik sinüzoidal konjesyon nedeniyle proteinlerin interstisyuma sızması.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-74",
+      "front": "SGLT2 inhibitörü empagliflozinin NKCC2 üzerindeki etkisi hangi nefron segmentindedir?",
+      "back": "Henle kulpunun kalın çıkan kolu (makula densa aracılığıyla).",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-75",
+      "front": "Sirozda asit sıvısı analizi sonuçlarına göre LDH artışı hangi durumlarda görülebilir?",
+      "back": "Malignite, enfeksiyon veya pankreatik asit.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-76",
+      "front": "Sirozda kullanılan alfa-adrenerjik agonist midodrinin asit yönetimindeki temel avantajı nedir?",
+      "back": "Oral yolla aktif olması ve ayaktan tedavide kullanılabilmesi.",
+      "tag": "Gastroenteroloji / Asit"
+    },
+    {
+      "id": "card-77",
+      "front": "Sirotik asitte 'efektif arteriyel kan hacmi' azaldığında aktive olan vazokonstriktör sistemler nelerdir?",
+      "back": "RAAS, Sempatik Sinir Sistemi ve ADH salınımı.",
+      "tag": "Gastroenteroloji / Asit"
+    }
+  ]
+}

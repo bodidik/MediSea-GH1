@@ -1,0 +1,458 @@
+{
+  "id": "fc-kardiyo-lipidoloji-001",
+  "accessLevel": "premium",
+  "topic": "Klinik Lipidoloji ve ASCVD Risk Yönetimi",
+  "description": "YDUS Kardiyoloji serisi: Ailesel hiperkolesterolemi, statin ilişkili miyopatiler, PCSK9/apoC3 hedefli tedaviler ve sekonder dislipidemileri kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "HMG-CoA redüktaz inhibitörleri ile nadiren görülen otoimmün miyopati türü hangisidir?",
+      "back": "İmün aracılı nekrotizan miyopati (IMNM).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-2",
+      "front": "İmün aracılı nekrotizan miyopati (IMNM) için bildirilen yaklaşık insidans oranı nedir?",
+      "back": "$100,000$ hastada $2$ ila $3$ vaka.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-3",
+      "front": "Homozigot Ailesel Hiperkolesterolemi (HoFH) tanısı alan bir çocukta tipik plazma kolesterol eşiği nedir?",
+      "back": "$500$ mg/dL ($13.0$ mmol/L) üzeri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-4",
+      "front": "HoFH hastalarında erken çocukluk döneminde görülen karakteristik deri bulgusu nedir?",
+      "back": "Planar ve tüberöz ksantomlar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-5",
+      "front": "HoFH tedavisinde LDL reseptör aktivitesinden bağımsız olarak çalışan MTP inhibitörü ilaç hangisidir?",
+      "back": "Lomitapid.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-6",
+      "front": "HoFH hastalarında LDL-kolesterolü dramatik şekilde düşüren monoklonal ANGPTL3 antikoru hangisidir?",
+      "back": "Evinacumab.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-7",
+      "front": "PCSK9 inhibitörü olan evolocumab ve alirocumab'ın uygulandığı temel yol hangisidir?",
+      "back": "Subkutan enjeksiyon.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-8",
+      "front": "PCSK9 inhibitörlerinin LDL-kolesterol düzeyini $25$ mg/dL altına düşürmesinin yan etki profili üzerindeki etkisi nedir?",
+      "back": "Gözlemlenmiş herhangi bir advers etki yoktur.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-9",
+      "front": "Ağır hipertrigliseridemi ile ilişkili olan ve trigliserid düşürülerek önlenebilen akut komplikasyon nedir?",
+      "back": "Pankreatit.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-10",
+      "front": "Ağır hipertrigliseridemi tedavisinde (TG $> 500$ mg/dL) ilk seçenek farmakolojik terapi hangisidir?",
+      "back": "Fibratlar (Fibrik asit türevleri).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-11",
+      "front": "Diyabetik polinöropati (DPN) riskini artıran temel lipid parametresi hangisidir?",
+      "back": "Plazma trigliserid düzeyleri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-12",
+      "front": "Diyabetik polinöropati patogenezinde okside LDL hangi reseptöre bağlanarak ROS üretimini artırır?",
+      "back": "LOX-1 reseptörü.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-13",
+      "front": "FIELD çalışmasında fenofibrat kullanımı diyabetik hastalarda hangi cerrahi komplikasyon riskini azaltmıştır?",
+      "back": "Travmatik olmayan amputasyonlar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-14",
+      "front": "Semptomatik diyabetik nöropati tedavisinde antioksidan özellikleri nedeniyle kullanılan oktanoik asit türevi nedir?",
+      "back": "Lipoik asit (tiyoktik asit).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-15",
+      "front": "Statin ile ilişkili miyalji tanımı için hangi biyokimyasal parametrenin normal olması beklenir?",
+      "back": "Kreatin kinaz (CK) düzeyi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-16",
+      "front": "Statin tedavisinin rabdomiyolize yol açma riski yaklaşık ne kadardır?",
+      "back": "$\\%0.1$'den az.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-17",
+      "front": "Statin kullanımı ile ilişkili yeni diyabet tanısı alma riski yıllık yaklaşık yüzde kaçtır?",
+      "back": "Yıllık yaklaşık $\\%0.2$.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-18",
+      "front": "Heterozigot Ailesel Hiperkolesterolemi (HeFH) tanısı için yetişkinlerde LDL-kolesterol eşiği nedir?",
+      "back": "$190$ mg/dL ($5.0$ mmol/L) üzeri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-19",
+      "front": "Safra asidi bağlayıcı reçinelerin kontrendike olduğu bazal trigliserid düzeyi nedir?",
+      "back": "$400$ mg/dL üzeri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-20",
+      "front": "Nefrotik sendromda görülen lipid anormalliklerini düzeltmede ilk adım ne olmalıdır?",
+      "back": "Altta yatan böbrek hastalığının tedavisi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-21",
+      "front": "Nefrotik sendromda ACE inhibitörleri lipid düzeylerini hangi mekanizma ile düşürür?",
+      "back": "Proteinürinin azaltılması.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-22",
+      "front": "Kronik böbrek yetmezliğinde (KBY) görülen primer lipid anormalliği nedir?",
+      "back": "Hipertrigliseridemi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-23",
+      "front": "2026 Dyslipidemia kılavuzuna göre ailesel şilomikronemi sendromunda pankreatit riskini azaltmak için önerilen apoC3 inhibitörü nedir?",
+      "back": "Olezarsen.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-24",
+      "front": "LDL partikül sayısını daha doğrudan yansıtan ve rutin risk değerlendirmesinde önerilen ölçüm nedir?",
+      "back": "Apolipoprotein B (apoB).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-25",
+      "front": "Statin intoleransı olan yüksek riskli hastalarda ezetimibe ek olarak önerilen non-statin ilaç hangisidir?",
+      "back": "Bempedoik asit.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-26",
+      "front": "PCSK9 sentezini hepatik düzeyde baskılayan siRNA terapisi hangisidir?",
+      "back": "İnclisiran.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-27",
+      "front": "Statin ilişkili kas semptomları için risk faktörlerinden biri olan kontrolsüz endokrin bozukluk nedir?",
+      "back": "Hipotiroidizm.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-28",
+      "front": "Statin doz aşımı veya etkileşimi şüphesinde kreatin kinaz (CK) üst sınırın kaç katına çıkarsa statin derhal kesilmelidir?",
+      "back": "Üst sınırın $10$ katı.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-29",
+      "front": "HoFH hastalarında LDL reseptör geni üzerinde en sık görülen ($\\%90$) mutasyon tipi nedir?",
+      "back": "Biallelik mutasyonlar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-30",
+      "front": "Hipertrigliseridemide pankreatit riskini önlemek için hedeflenen trigliserid düzeyi nedir?",
+      "back": "$500$ mg/dL altı.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-31",
+      "front": "Diyabetik nöropati patogenezinde serbest yağ asitlerinin (FFA) mitokondriyal kapasite üzerindeki etkisi nedir?",
+      "back": "Mitokondriyal biyoenerjetiği bozar ve ROS artışına neden olur.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-32",
+      "front": "FIELD çalışmasında fenofibratın amputasyon riskini azaltma oranı (hazard ratio) kaçtır?",
+      "back": "$0.62$.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-33",
+      "front": "Atorvastatinin yaygın bildirilen ($\\%1-\\%10$) kas iskelet yan etkisi nedir?",
+      "back": "Artralji.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-34",
+      "front": "PCSK9 inhibitörlerinin klinik çalışmalarda KV olay riskini azaltma oranı yaklaşık yüzde kaçtır?",
+      "back": "$\\%15$ ile $\\%20$ arası.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-35",
+      "front": "HoFH tedavisinde LDL aferezi hangi LDL-kolesterol düzeyinin üzerinde düşünülmelidir?",
+      "back": "$300$ mg/dL üzeri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-36",
+      "front": "Diyabetik nöropatide kullanılan 'heksozamin yolu' hangi molekülün birikimine neden olur?",
+      "back": "UDP-N-asetil glukozamin.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-37",
+      "front": "KBY hastalarında fibrat ve statin kombinasyonundan neden kaçınılmalıdır?",
+      "back": "Artmış yan etki (özellikle kas toksisitesi) riski.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-38",
+      "front": "2026 kılavuzuna göre LDL-kolesterol düzeyi $\\ge 190$ mg/dL olan yetişkinlerde ilk adım ilaç tedavisi nedir?",
+      "back": "Maksimum tolere edilen statin tedavisi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-39",
+      "front": "Hipertrigliseridemi yönetiminde kullanılan ve deniz kaynaklı olan non-farmakolojik takviye nedir?",
+      "back": "Omega-3 yağ asitleri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-40",
+      "front": "Statine bağlı kas semptomlarının (SAMS) statinle ilişkili olma olasılığını artıran dağılım özelliği nedir?",
+      "back": "Bilateral (iki taraflı) dağılım.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-41",
+      "front": "Nefrotik sendromda hiperlipidemi çözülmezse (3-6 ay sonra) hangi LDL-C eşiğinde statin başlanmalıdır?",
+      "back": "$100$ mg/dL üzeri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-42",
+      "front": "HoFH tanısında genetik test ile doğrulanması gereken temel genlerden biri hangisidir?",
+      "back": "LDLR geni.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-43",
+      "front": "Diyabetik polinöropati tanısında küçük lif (small-fiber) tutulumunu gösteren yeni teknik nedir?",
+      "back": "Korneal konfokal mikroskopi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-44",
+      "front": "İmün aracılı nekrotizan miyopati (IMNM) için karakteristik olan klinik bulgu nedir?",
+      "back": "Simetrik ve proksimal kas güçsüzlüğü.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-45",
+      "front": "HoFH tedavisinde karaciğer nakli hangi durumlarda son çare olarak düşünülür?",
+      "back": "İlaç tedavisine dirençli, progresif hastalık varlığında.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-46",
+      "front": "Trigliserid düzeyi $150$-$499$ mg/dL olan yetişkinlerde KV risk değerlendirmesi için önerilen denklem seti nedir?",
+      "back": "PREVENT denklemleri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-47",
+      "front": "Safra asidi bağlayıcıların trigliserid düzeyleri üzerindeki yan etkisi nedir?",
+      "back": "Dolaşımdaki trigliserid seviyelerini artırabilir.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-48",
+      "front": "HoFH tanısı konan çocuklarda tedaviye ne zaman başlanmalıdır?",
+      "back": "Tanı konur konmaz, mümkün olan en erken yaşta.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-49",
+      "front": "Statine bağlı rabdomiyolizde akut böbrek yetmezliğinin temel nedeni nedir?",
+      "back": "Miyoglobinüri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-50",
+      "front": "Nörotoksik aktivite gösteren ve DPN patogenezinde rol oynayan atipik sfingolipid türü nedir?",
+      "back": "Deoksi-sfingolipidler (DOSL).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-51",
+      "front": "ApoC3 antisense oligonükleotidi olan olezarsen'in uygulama yolu nedir?",
+      "back": "Subkutan enjeksiyon.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-52",
+      "front": "Diyabetik fare modellerinde nöropati gelişimini tamamen önlediği gösterilen yağ asidi nedir?",
+      "back": "DHA (Dokosahekzaenoik asit).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-53",
+      "front": "Atorvastatin ile ilişkili tendon rüptürü raporları hangi pazarlama aşamasında bildirilmiştir?",
+      "back": "Pazarlama sonrası (postmarketing) kullanımda.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-54",
+      "front": "Yüksek riskli hastalarda statin tedavisine ezetimib eklenmesi LDL'yi ortalama yüzde kaç ek olarak düşürür?",
+      "back": "Yaklaşık $\\%20$.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-55",
+      "front": "Statinlerin diyabet riskini artırması daha çok hangi hasta grubunda görülür?",
+      "back": "Birden fazla diyabet risk faktörü olan hastalar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-56",
+      "front": "Nefrotik sendromda hiperlipidemi genellikle ne zaman geriler?",
+      "back": "Böbrek hastalığı iyileştiğinde.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-57",
+      "front": "Ailesel hiperkolesterolemi tanısında kullanılan klinik puanlama sistemlerinden biri hangisidir?",
+      "back": "Dutch Lipid Clinics Network kriterleri.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-58",
+      "front": "Bempedoik asit hangi enzim üzerinden kolesterol sentezini inhibe eder?",
+      "back": "ATP sitrat liyaz.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-59",
+      "front": "Statin ilişkili miyopatide CK düzeyi genellikle normalin kaç katı üzerindedir?",
+      "back": "$10$ katı.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-60",
+      "front": "Omega-3 yağ asitlerinin ağır hipertrigliseridemideki temel yararı nedir?",
+      "back": "Trigliserid düzeylerini düşürerek pankreatiti önlemek.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-61",
+      "front": "Diyabetik polinöropati patogenezinde sorbitol birikimine yol açan enzim nedir?",
+      "back": "Aldoz redüktaz.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-62",
+      "front": "HoFH tedavisinde 'evinacumab' eklenmesinin koroner plak hacmi üzerindeki etkisi nedir?",
+      "back": "Belirgin plak regresyonu (gerilemesi) sağlar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-63",
+      "front": "HoFH'li bir hastanın ebeveynlerinin fenotipi genellikle nedir?",
+      "back": "Obligat heterozigot (HeFH).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-64",
+      "front": "KBY hastalarında trigliserid düzeyi hangi eşiği aşarsa pankreatiti önlemek için farmakoterapi düşünülmelidir?",
+      "back": "$886$ mg/dL ($10$ mmol/L).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-65",
+      "front": "Statin intoleransı test edilirken 'dechallenge' ne anlama gelir?",
+      "back": "İlacın kesilmesiyle semptomların düzelmesi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-66",
+      "front": "LDL-kolesterol yönetimi için 'Friedewald formülü' yerine daha doğru sonuç veren hesaplama hangisidir?",
+      "back": "Martin/Hopkins hesaplaması.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-67",
+      "front": "Ailesel taramada indeks vakanın birinci derece akrabalarının taranması yöntemine ne ad verilir?",
+      "back": "Kaskad (basamaklı) tarama.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-68",
+      "front": "SAMS gelişimi için kadın cinsiyet bir risk faktörü müdür?",
+      "back": "Evet, kadın cinsiyet bir risk faktörüdür.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-69",
+      "front": "PCSK9 inhibitörlerinin MI ve inme riskini azaltmadaki etkinliği hangi KV risk grubunda en belirgindir?",
+      "back": "Çok yüksek (very high) riskli grup.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-70",
+      "front": "Nefrotik sendromlu çocuklarda siklosporin direnci ile ilişkili lipid anormalliği nedir?",
+      "back": "Hiperkolesterolemi.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-71",
+      "front": "2026 kılavuzuna göre klinik ASCVD'si olan çok yüksek riskli hastalarda hedef LDL düzeyi nedir?",
+      "back": "$55$ mg/dL altı.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-72",
+      "front": "Diyabetik nöropatide serbest yağ asitlerinin (FFA) plazma membranına etkisi nedir?",
+      "back": "Membran esnekliğini azaltarak elektriksel iletimi bozar.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-73",
+      "front": "Atorvastatinin yan etkilerinden olan boyun ağrısı hangi sıklıkla görülür?",
+      "back": "Yaygın ($\\%1-\\%10$).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-74",
+      "front": "Bileşik heterozigot (compound heterozygosity) terimi neyi ifade eder?",
+      "back": "Her bir alelde farklı mutasyonların bulunması.",
+      "tag": "Kardiyoloji / Lipidoloji"
+    },
+    {
+      "id": "card-75",
+      "front": "Ailesel şilomikronemi sendromunda trigliserid klerensini sağlayan hangi enzim eksiktir?",
+      "back": "Lipoprotein lipaz (LPL).",
+      "tag": "Kardiyoloji / Lipidoloji"
+    }
+  ]
+}

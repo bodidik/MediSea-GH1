@@ -1,0 +1,536 @@
+{
+  "id": "fc-hemato-kll-001",
+  "accessLevel": "premium",
+  "topic": "Kronik Lenfositik Lösemi (KLL)",
+  "description": "YDUS Hematoloji serisi: KLL/SLL tanı kriterleri, evreleme sistemleri, prognostik faktörler ve hedefe yönelik tedavileri kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Kronik Lenfositik Lösemi (KLL) tanısı için periferik kanda monoklonal B lenfosit sayısının alt sınırı nedir?",
+      "back": "$5000/\\mu L$ ($5 \\times 10^9/L$).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-2",
+      "front": "iwCLL 2018 kriterlerine göre, KLL tanısı konulabilmesi için lenfositozun en az ne kadar süre devam etmesi gerekir?",
+      "back": "3 ay.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-3",
+      "front": "Küçük Lenfositik Lenfoma (SLL) tanısı için periferik kanda monoklonal B lenfosit sayısı üst sınırı nedir?",
+      "back": "$< 5000/\\mu L$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-4",
+      "front": "KLL ve SLL arasındaki temel klinik fark nedir?",
+      "back": "KLL primer olarak kan ve kemik iliğini, SLL ise primer olarak lenf nodlarını tutar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-5",
+      "front": "SLL tanısını doğrulamak için hangi prosedür gereklidir?",
+      "back": "Lenf nodu biyopsisi (eksizyonel veya kor biyopsi).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-6",
+      "front": "KLL'nin tipik immünofenotipinde eksprese edilen T-hücre markeri hangisidir?",
+      "back": "CD5.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-7",
+      "front": "KLL hücrelerinde CD20 ve yüzey immünglobulini (sIg) ekspresyon yoğunluğu nasıldır?",
+      "back": "Zayıf (dim).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-8",
+      "front": "KLL hücrelerinde tipik olarak pozitif olan ve prognostik önemi olan B-hücre aktivasyon markeri hangisidir?",
+      "back": "CD23.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-9",
+      "front": "KLL ayırıcı tanısında kullanılan Mantle hücreli lenfomadan (MCL) ayırt edici olan negatif marker hangisidir?",
+      "back": "Siklin D1 ($Cyclin\\ D1$).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-10",
+      "front": "KLL'de tipik immünofenotipik marker paneli hangi antijenleri içerir?",
+      "back": "CD5, CD19, CD23, CD20 (dim) ve sIg (dim).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-11",
+      "front": "KLL tanısında kemik iliği aspirasyonu ve biyopsisi rutin olarak gerekli midir?",
+      "back": "Hayır, genellikle periferik kan akış sitometrisi tanı için yeterlidir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-12",
+      "front": "Kemik iliği biyopsisinde KLL tanısı için lenfoid infiltrasyon oranı en az ne olmalıdır?",
+      "back": "$\\%30$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-13",
+      "front": "Rai evreleme sisteminde 'Düşük Risk' (Evre 0) tanımı nedir?",
+      "back": "Sadece kan ve/veya kemik iliğinde lenfositoz.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-14",
+      "front": "Rai Evre I'de lenfositoza ek olarak hangi klinik bulgu eşlik eder?",
+      "back": "Lenfadenopati.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-15",
+      "front": "Rai Evre II'de lenfositoza eşlik eden temel bulgu nedir?",
+      "back": "Hepatomegali ve/veya splenomegali.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-16",
+      "front": "Rai Evre III (Yüksek Risk) için hemoglobin eşik değeri nedir?",
+      "back": "$< 11\\ g/dL$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-17",
+      "front": "Rai Evre IV (Yüksek Risk) tanımı için trombosit sayısı ne olmalıdır?",
+      "back": "$< 100,000/\\mu L$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-18",
+      "front": "Binet Evre A tanımı nedir?",
+      "back": "3'ten az lenfoid bölge büyüklüğü, anemi veya trombositopeni yok.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-19",
+      "front": "Binet Evre B tanımı nedir?",
+      "back": "3 veya daha fazla lenfoid bölge büyüklüğü, anemi veya trombositopeni yok.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-20",
+      "front": "Binet sisteminde hemoglobin düzeyi kaçın altında ise Evre C olarak sınıflandırılır?",
+      "back": "$10\\ g/dL$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-21",
+      "front": "Binet evrelemesinde değerlendirilen 5 lenfoid bölge hangileridir?",
+      "back": "Servikal, aksiller, inguinal lenf nodları, karaciğer ve dalak.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-22",
+      "front": "KLL'de en sık görülen sitogenetik anomali hangisidir?",
+      "back": "$del(13q)$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-23",
+      "front": "KLL'de tek başına saptandığında iyi prognozla ilişkili olan sitogenetik anomali hangisidir?",
+      "back": "$del(13q)$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-24",
+      "front": "KLL'de en olumsuz prognozla ve tedavi direncine yol açan genetik sapma hangisidir?",
+      "back": "$del(17p)$ veya $TP53$ mutasyonu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-25",
+      "front": "KLL'de IGHV mutasyon durumu prognozu nasıl etkiler?",
+      "back": "Mutasyonsuz (unmutated) IGHV kötü prognozla ilişkilidir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-26",
+      "front": "KLL'de kötü prognozla ilişkili olan yüzeyel markerlar nelerdir?",
+      "back": "CD38 pozitifliği, ZAP-70 pozitifliği ve CD49d pozitifliği.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-27",
+      "front": "KLL-IPI (Uluslararası Prognostik İndeks) puanlamasında kullanılan 5 parametre nedir?",
+      "back": "Yaş, Rai/Binet evresi, serum $\\beta_2$-mikroglobulin, IGHV mutasyon durumu ve $TP53$ durumu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-28",
+      "front": "Asemptomatik erken evre KLL'de tedaviye başlama zamanını öngören skorlama sistemi hangisidir?",
+      "back": "IPS-E (International Prognostic Score for Early-stage CLL).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-29",
+      "front": "Richter transformasyonu nedir?",
+      "back": "KLL'nin genellikle Diffüz Büyük B Hücreli Lenfoma (DLBCL) gibi agresif bir histolojiye dönüşmesidir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-30",
+      "front": "KLL'de Richter transformasyonu görülme insidansı yıllık yaklaşık kaçtır?",
+      "back": "$\\%1$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-31",
+      "front": "Richter transformasyonunu düşündüren klinik ve laboratuvar bulguları nelerdir?",
+      "back": "Hızla büyüyen nodal kitle, B semptomları ve belirgin LDH yüksekliği.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-32",
+      "front": "KLL'de 'Watch and Wait' (İzle ve Bekle) stratejisi hangi hasta grubu için standarttır?",
+      "back": "Erken evre, asemptomatik hastalar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-33",
+      "front": "iwCLL kriterlerine göre 'Aktif Hastalık' tanımı için lenfosit doubling time (LDT) sınırı nedir?",
+      "back": "6 aydan kısa.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-34",
+      "front": "iwCLL kriterlerine göre tedavi endikasyonu sayılan masif splenomegali sınırı nedir?",
+      "back": "Sol kostal marjın $\\ge 6\\ cm$ altında olması.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-35",
+      "front": "iwCLL kriterlerine göre tedavi endikasyonu sayılan masif lenfadenopati boyutu nedir?",
+      "back": "En geniş çapın $\\ge 10\\ cm$ olması.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-36",
+      "front": "KLL'de 'B semptomları' nelerdir?",
+      "back": "Açıklanamayan kilo kaybı, gece terlemeleri ve ateş.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-37",
+      "front": "KLL tedavisinde kullanılan Bruton Tirozin Kinaz (BTK) inhibitörleri nelerdir?",
+      "back": "İbrutinib, akalabrutinib ve zanubrutinib.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-38",
+      "front": "BCL-2 inhibitörü olarak KLL tedavisinde kullanılan ajan hangisidir?",
+      "back": "Venetoclax.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-39",
+      "front": "KLL tedavisinde kullanılan anti-CD20 monoklonal antikorlar hangileridir?",
+      "back": "Rituximab ve obinutuzumab.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-40",
+      "front": "Kovalent BTK inhibitörlerine direnç gelişen hastalarda etkili olan non-kovalent BTK inhibitörü hangisidir?",
+      "back": "Pirtobrutinib.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-41",
+      "front": "Venetoclax tedavisinin en önemli ve ciddi yan etkisi nedir?",
+      "back": "Tümör lizis sendromu (TLS).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-42",
+      "front": "İbrutinib kullanımında sık görülen kardiyovasküler yan etkiler nelerdir?",
+      "back": "Atriyal fibrilasyon ve hipertansiyon.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-43",
+      "front": "KLL'li hastalarda en sık mortalite ve morbidite nedeni nedir?",
+      "back": "Enfeksiyonlar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-44",
+      "front": "KLL'de görülen immün yetmezliğin temel nedenleri nelerdir?",
+      "back": "Hipogammaglobulinemi, T-hücre defektleri ve kompleman disfonksiyonu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-45",
+      "front": "KLL hastalarında tekrarlayan sinopulmoner enfeksiyonların önlenmesinde ne kullanılabilir?",
+      "back": "İntravenöz immünglobulin (IVIG) replasmanı.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-46",
+      "front": "KLL tanılı hastalarda hangi tip aşıların yapılması kontrendikedir?",
+      "back": "Canlı (atenue) aşılar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-47",
+      "front": "KLL hastalarında cilt kanseri riski nasıldır?",
+      "back": "Genel popülasyona göre artmıştır (özellikle skuamöz hücreli karsinom ve melanoma).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-48",
+      "front": "KLL'de en sık görülen otoimmün komplikasyon hangisidir?",
+      "back": "Otoimmün hemolitik anemi (AIHA).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-49",
+      "front": "KLL ile ilişkili immün trombositopeni (ITP) tedavisinde ilk basamak nedir?",
+      "back": "Kortikosteroidler (KLL tedavisi şart değildir).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-50",
+      "front": "Relaps KLL tanımı nedir?",
+      "back": "Kısmi veya tam remisyon sağlandıktan en az 6 ay sonra hastalığın progresyonu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-51",
+      "front": "Refrakter KLL tanımı nedir?",
+      "back": "Tedaviye yanıtsızlık veya tedavi bitiminden sonraki 6 ay içinde progresyon.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-52",
+      "front": "KLL'de MRD (Minimal Kalıntı Hastalık) negatifliği neyi ifade eder?",
+      "back": "$10,000$ lökosit içinde $1$'den az KLL hücresi saptanması.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-53",
+      "front": "Tümör lizis sendromu profilaksisinde Venetoclax doz şeması nasıldır?",
+      "back": "5 haftalık kademeli doz artırımı (ramp-up).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-54",
+      "front": "KLL hücreleri akış sitometrisinde CD10 ve CD103 açısından nasıldır?",
+      "back": "Negatiftir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-55",
+      "front": "KLL'de IGHV3-21 kullanımı prognozu nasıl etkiler?",
+      "back": "Kötü prognozla ilişkilidir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-56",
+      "front": "KLL hastalarında pnömokok aşılaması nasıl yapılmalıdır?",
+      "back": "PCV20 veya PCV15 takiben en az 2 ay sonra PPSV23.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-57",
+      "front": "KLL'de nadir görülen ancak lökositoza bağlı gelişebilen acil durum hangisidir?",
+      "back": "Lökostaz veya hipervizkozite sendromu (genellikle lenfosit $> 200,000/\\mu L$).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-58",
+      "front": "FCR kemoimmünoterapisi hangi hasta grubunda potansiyel kür sağlayabilir?",
+      "back": "Genç, fit ve IGHV mutasyonu olan hastalar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-59",
+      "front": "KLL'de hangi genetik anomali 'kompleks karyotip' olarak tanımlanır?",
+      "back": "Sitogenetik incelemede 3 veya daha fazla kromozomal anomali saptanması.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-60",
+      "front": "KLL'de hipogammaglobulinemiye bağlı gelişen enfeksiyonlardan en sık sorumlu patojenler nelerdir?",
+      "back": "$Streptococcus\\ pneumoniae$ ve $Haemophilus\\ influenzae$ gibi kapsüllü bakteriler.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-61",
+      "front": "KLL'li bir hastada açıklanamayan anemi varlığında hangi laboratuvar testi istenmelidir?",
+      "back": "Direkt Antiglobulin Testi (DAT/Coombs).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-62",
+      "front": "BTK inhibitörleri ile tedavi edilen hastalarda lenfosit sayısında geçici artış görülmesine ne ad verilir?",
+      "back": "Tedaviye bağlı lenfadenopati küçülmesi ile seyreden redistribüsyonel lenfositoz.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-63",
+      "front": "KLL'de allojenik kök hücre nakli hangi durumlarda düşünülmelidir?",
+      "back": "Genç, yüksek riskli (TP53 aberrasyonu) ve novel ajanlara dirençli hastalar.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-64",
+      "front": "KLL'de CAR-T hücre tedavisi hangi antijene karşı geliştirilmiştir?",
+      "back": "CD19.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-65",
+      "front": "KLL'de ikincil primer maligniteler içinde en sık görülen katı organ tümörü hangisidir?",
+      "back": "Akciğer kanseri.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-66",
+      "front": "KLL hastalarında Herpes Zoster profilaksisi hangi durumlarda endikedir?",
+      "back": "Kemoimmünoterapi (purin analogları) veya yoğun immünsüpresif tedavi alanlarda.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-67",
+      "front": "KLL'de hangi markerın yüksekliği doğrudan artmış kitle yükü ve progresyonla ilişkilidir?",
+      "back": "Serum $\\beta_2$-mikroglobulin.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-68",
+      "front": "KLL ayırıcı tanısında yer alan 'Hairy Cell Leukemia' markerları nelerdir?",
+      "back": "CD103+, CD11c+, CD25+.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-69",
+      "front": "KLL'de tedavi yanıtını değerlendirmede kemik iliği biyopsisi ne zaman zorunludur?",
+      "back": "Tam Yanıt (CR) kriterlerini doğrulamak için.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-70",
+      "front": "KLL'de progresif lenfositoz tanımı için 2 aylık süredeki artış oranı ne olmalıdır?",
+      "back": "$\\%50$ üzerinde artış.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-71",
+      "front": "KLL tedavisinde kullanılan fosfatidilinositol 3-kinaz (PI3K) inhibitörü ajan hangisidir?",
+      "back": "İdelalisib.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-72",
+      "front": "Lugano evrelemesi KLL/SLL spektrumunda hangi hastalık için kullanılır?",
+      "back": "Küçük Lenfositik Lenfoma (SLL).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-73",
+      "front": "KLL'li bir hastada ateş saptandığında yaklaşım nasıl olmalıdır?",
+      "back": "Enfeksiyon odaklı hızlı değerlendirme ve ampirik antibiyotik başlanması.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-74",
+      "front": "KLL hastalarında canlı aşı riski nedir?",
+      "back": "Aşı kaynaklı dissemine hastalık riski.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-75",
+      "front": "İbrutinib tedavisi sırasında kanama riskini artıran mekanizma nedir?",
+      "back": "Trombosit fonksiyon bozukluğu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-76",
+      "front": "KLL'de TP53 mutasyonu saptandığında hangi tedavi sınıfı tercih edilmez?",
+      "back": "Geleneksel kemoterapi/kemoimmünoterapi (direnç nedeniyle).",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-77",
+      "front": "KLL hücrelerinde tipik olarak negatif olan ve foliküler lenfomada pozitif olan marker hangisidir?",
+      "back": "CD10.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-78",
+      "front": "KLL'de kullanılan obinutuzumab hangi tip anti-CD20 antikordur?",
+      "back": "Tip II, glikomodiye monoklonal antikor.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-79",
+      "front": "KLL'de nodal bölgeler değerlendirilirken lenf nodu boyutu en az kaç olmalıdır?",
+      "back": "$1\\ cm$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-80",
+      "front": "KLL'li hastalarda yıllık hangi aşının yapılması rutin önerilir?",
+      "back": "İnfluenza aşısı.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-81",
+      "front": "KLL'de kemoterapi ajanları (klorambusil, fludarabin) artık neden rutin tercih edilmiyor?",
+      "back": "Hedefe yönelik ajanlara (BTKi, BCL2i) göre sağkalım avantajının düşük olması ve toksisite.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-82",
+      "front": "KLL'de otoimmün pansitopeni ve Richter transformasyonu ayrımı için ne yapılmalıdır?",
+      "back": "Lenf nodu veya kemik iliği biyopsisi.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-83",
+      "front": "KLL'de hangi genetik anomali varlığında antrasiklin içeren rejimler Richter transformasyonu riskini artırır?",
+      "back": "$NOTCH1$ mutasyonu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-84",
+      "front": "KLL hastalarında COVID-19 enfeksiyonu seyri nasıldır?",
+      "back": "İmmün yetmezlik nedeniyle mortalite oranı daha yüksektir.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-85",
+      "front": "KLL hastalarında sinüzit gelişiminde hangi yardımcı tedavi faydalıdır?",
+      "back": "Düzenli sinüs irrigasyonu.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-86",
+      "front": "KLL'de CD49d pozitifliği hangi hücresel fonksiyonla ilişkilidir?",
+      "back": "Hücre adhezyonu ve kemik iliği mikroçevresine tutunma.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-87",
+      "front": "KLL hastalarında nötropeni geliştiğinde en sık izole edilen gram negatif patojenler nelerdir?",
+      "back": "$Pseudomonas\\ aeruginosa$ ve $Escherichia\\ coli$.",
+      "tag": "Hematoloji / KLL"
+    },
+    {
+      "id": "card-88",
+      "front": "KLL'li hastalarda radyasyon tedavisi (RT) ne zaman düşünülür?",
+      "back": "SLL Evre I (lokalize hastalık) veya semptomatik bulky lenfadenopati palyasyonu.",
+      "tag": "Hematoloji / KLL"
+    }
+  ]
+}

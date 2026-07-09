@@ -1,0 +1,488 @@
+{
+  "id": "fc-gastro-pankreas-001",
+  "accessLevel": "premium",
+  "topic": "Pankreas Kanseri (PDAC)",
+  "description": "YDUS Gastroenteroloji serisi: Pankreas kanserinin moleküler patogenezi, kalıtsal sendromlar, tanı/evreleme ve multidisipliner tedaviyi kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Pankreas kanseri tumorigenesisinde en sık mutasyona uğrayan onkogen hangisidir?",
+      "back": "$KRAS$ onkogeni.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-2",
+      "front": "Pankreas duktal adenokarsinomlarının yaklaşık ne kadarlık bir kısmında somatik $KRAS$ mutasyonu izlenir?",
+      "back": "$\\%90$'dan fazlası.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-3",
+      "front": "$KRAS$ gen mutasyonlarının en sık görüldüğü spesifik kodon hangisidir?",
+      "back": "Kodon 12.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-4",
+      "front": "Pankreatik intraepitelyal neoplazi (PanIN) progresyon modelinde en erken (PanIN-1) saptanan genetik değişiklik hangisidir?",
+      "back": "$KRAS$ gen mutasyonu (ve telomer kısalması).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-5",
+      "front": "Pankreas kanserlerinin yaklaşık $\\%95$'inde somatik olarak inaktive edilen tümör baskılayıcı gen hangisidir?",
+      "back": "$p16/CDKN2A$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-6",
+      "front": "$p16/CDKN2A$ geninin yerleştiği kromozom hangisidir?",
+      "back": "Kromozom $9p$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-7",
+      "front": "Pankreas kanserinde $p16/CDKN2A$ geninin homozigot delesyonu sırasında sıklıkla birlikte inaktive olan komşu gen hangisidir?",
+      "back": "$MTAP$ geni.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-8",
+      "front": "Pankreas kanserlerinin $\\%75$ - $\\%85$'inde inaktive olan ve 17p kromozomunda yerleşen tümör baskılayıcı gen hangisidir?",
+      "back": "$TP53$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-9",
+      "front": "$SMAD4$ ($DPC4$) geni hangi kromozom üzerinde yerleşiktir?",
+      "back": "Kromozom $18q$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-10",
+      "front": "Pankreas kanserinde $SMAD4$ ekspresyonu kaybı klinik olarak neyin göstergesidir?",
+      "back": "Daha yüksek uzak metastaz oranı ve kötü prognoz.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-11",
+      "front": "Peutz-Jeghers Sendromu'nda (PJS) mutasyona uğrayan ve pankreas kanseri riskini dramatik şekilde artıran gen hangisidir?",
+      "back": "$STK11$ ($LKB1$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-12",
+      "front": "Herediter meme ve over kanseri sendromu (HBOC) ile ilişkili olan ve pankreas kanseri ailesel kümelenmesinin en önemli nedenlerinden biri olan gen hangisidir?",
+      "back": "$BRCA2$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-13",
+      "front": "Pankreatik duktal adenokarsinom (PDAC) tanısı alan tüm hastalara aile öyküsünden bağımsız olarak hangi testin yapılması önerilir?",
+      "back": "Germ hattı (germline) genetik testi.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-14",
+      "front": "Fаmiliаl Atipik Multipl Mol ve Mеlаnоmа (FAMMM) sendromunda pankreas kanseri risk artışından sorumlu olan gen hangisidir?",
+      "back": "$CDKN2A$ ($p16$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-15",
+      "front": "Hollanda'daki FAMMM ailelerinde tanımlanan ve pankreas kanseri riskini $\\%21$'e kadar çıkaran spesifik $p16$ mutasyonu hangisidir?",
+      "back": "p16-Leiden (19 baz çiftlik delesyon).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-16",
+      "front": "Pankreas kanseri riskini yaklaşık 15 kat artıran ve $BRCA2$ bağlayıcı proteini kodlayan gen hangisidir?",
+      "back": "$PALB2$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-17",
+      "front": "Lynch Sendromu'na (HNPCC) neden olan DNA mismatch repair (mismatch onarımı) genleri nelerdir?",
+      "back": "$MLH1$, $MSH2$ ve $MSH6$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-18",
+      "front": "Ataksi-telanjiektazi hastalarında pankreas kanseri riskini 8-9 kat artıran gen hangisidir?",
+      "back": "$ATM$ geni.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-19",
+      "front": "Pankreatik intraepitelyal neoplazi (PanIN) evrelemesinde, $SMAD4$ ve $TP53$ inaktivasyonu tipik olarak hangi evrede görülür?",
+      "back": "Yüksek dereceli PanIN (PanIN-3).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-20",
+      "front": "Pankreasın solid psödopapiller neoplazilerinin neredeyse tamamında görülen somatik mutasyon hangisidir?",
+      "back": "$CTNNB1$ ($\\beta$-katenin) gen mutasyonu.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-21",
+      "front": "Pankreasın seröz kistadenomlarında karakteristik olarak hangi gende mutasyon izlenir?",
+      "back": "$VHL$ (von Hippel-Lindau) geni.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-22",
+      "front": "İntraduktal papiller müsinöz neoplazilerde (İPMN) görülen ve kist gelişimine özgü olduğu düşünülen mutasyon hangisidir?",
+      "back": "$GNAS$ mutasyonu.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-23",
+      "front": "Pankreas kanserinde en hassas (sensitif) kabul edilen serum tümör markeri hangisidir?",
+      "back": "CA 19-9 (Karbonhidrat antijen 19-9).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-24",
+      "front": "CA 19-9 düzeyleri hangi kan grubu antijeni negatif olan bireylerde (Lewis negatif) sentezlenemez?",
+      "back": "Lewis antijeni ($a^- b^-$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-25",
+      "front": "Pankreas kanseri dışında CA 19-9 yüksekliğine neden olabilen benign durumlar nelerdir?",
+      "back": "Akut kolanjit, siroz, kolestatik hastalıklar ve safra taşları.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-26",
+      "front": "Pankreas kanseri şüphesinde tercih edilen ilk görüntüleme yöntemi hangisidir?",
+      "back": "Kontrastlı multidetektör bilgisayarlı tomografi (Pankreas protokolü BT).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-27",
+      "front": "Rezektabl pankreas kanseri tanımında arteriyel (çölyak aks, SMA, CHA) tutulum sınırı nedir?",
+      "back": "Tümör ile arteriyel damarlar arasında temas olmaması.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-28",
+      "front": "NCCN kriterlerine göre 'sınırda rezektabl' (borderline) pankreas kanseri için SMA veya çölyak aks ile temas sınırı kaç derecedir?",
+      "back": "$180^\\circ$ veya daha az ($\\le 180^\\circ$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-29",
+      "front": "Hangi venöz tutulum bulgusu tümörü direkt olarak 'lokal ileri/rezeke edilemez' kategorisine sokar?",
+      "back": "Rekonstrüksiyonun mümkün olmadığı venöz oklüzyon veya trombüs.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-30",
+      "front": "Pankreas kanserli bir hastada pannikülit (ağrılı subkütan nodüller) görülmesi öncelikle hangi histolojik alt tipi düşündürür?",
+      "back": "Asiner hücreli karsinom.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-31",
+      "front": "Pankreas başı ve boynu yerleşimli tümörler için standart cerrahi prosedür hangisidir?",
+      "back": "Pankreatoduodenektomi (Whipple prosedürü).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-32",
+      "front": "Pankreas gövde ve kuyruk yerleşimli tümörlerde cerrahi olarak ne uygulanır?",
+      "back": "Distal pankreatektomi (sıklıkla splenektomi ile birlikte).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-33",
+      "front": "Sınırda rezektabl (BRPC) pankreas kanserinde standart tedavi yaklaşımı nedir?",
+      "back": "Neoadjuvan kemoterapi (örn. FOLFIRINOX) sonrası cerrahi değerlendirme.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-34",
+      "front": "Metastatik pankreas kanserinde, germ hattı $BRCA1/2$ mutasyonu olan hastalarda idame tedavide kullanılan ajan hangisidir?",
+      "back": "Olaparib (PARP inhibitörü).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-35",
+      "front": "$BRCA$ veya $PALB2$ mutasyonu olan pankreas kanserli hastalarda hangi kemoterapi ajanı kombinasyonu özellikle etkilidir?",
+      "back": "Platin bazlı rejimler (örn. Gemsitabin + Sisplatin).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-36",
+      "front": "Pankreas kanseri teşhisinde kistik lezyonları değerlendirmek veya maligniteyi doğrulamak için BT sonrası tercih edilen invaziv yöntem hangisidir?",
+      "back": "Endoskopik ultrasonografi eşliğinde ince iğne aspirasyonu (EUS-FNA).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-37",
+      "front": "Yeni başlangıçlı diyabetes mellitus hangi yaş grubunda pankreas kanseri için bir 'alarm' bulgusu olarak kabul edilmelidir?",
+      "back": "50 yaş üstü bireyler.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-38",
+      "front": "Pankreas kanseri için en önemli değiştirilebilir risk faktörü hangisidir?",
+      "back": "Sigara kullanımı.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-39",
+      "front": "Yüksek riskli bireylerde yıllık pankreas kanseri taramasında kullanılan iki ana modalite hangisidir?",
+      "back": "EUS ve MR/MRCP.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-40",
+      "front": "Mikrosatellit instabilitesi (MSI-H) saptanan pankreas kanserlerinde hangi tedavi seçeneği ön plana çıkar?",
+      "back": "İmmün kontrol noktası inhibitörleri (örn. Pembrolizumab).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-41",
+      "front": "Pankreas kanserlerinin yaklaşık $\\%15$ - $\\%20$'si tanı anında hangi evrededir?",
+      "back": "Lokalize rezektabl evre.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-42",
+      "front": "Whipple prosedüründe 'pilor koruyucu' yaklaşım hangi amaçla tercih edilebilir?",
+      "back": "Postoperatif fonksiyonel iyileşmeyi artırmak ve hastanede kalış süresini kısaltmak.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-43",
+      "front": "Pankreas kanseri cerrahisi sonrası uygulanan adjuvan kemoterapinin standart süresi ne kadardır?",
+      "back": "6 ay.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-44",
+      "front": "Evre IV (metastatik) pankreas kanserinde performans durumu iyi olan hastalarda önerilen ilk basamak rejim hangisidir?",
+      "back": "FOLFIRINOX.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-45",
+      "front": "Pankreas başı tümörlerinde tıkanma sarılığını gidermek için neoadjuvan tedavi öncesi önerilen girişim hangisidir?",
+      "back": "Biliyer stent yerleştirilmesi veya biliyer drenaj.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-46",
+      "front": "Pankreatoblastomlar tipik olarak hangi yaş grubunda görülür ve hangi genetik değişiklikle ilişkilidir?",
+      "back": "Çocukluk çağı; maternal kromozom 11p kaybı.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-47",
+      "front": "Hangi kistik pankreas neoplazisi 'neredeyse her zaman benign' olarak kabul edilir?",
+      "back": "Seröz kistadenom.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-48",
+      "front": "Pankreas tümörlerinde desmoplastik reaksiyondan sorumlu olan ve kemoterapi iletimini engelleyen ana hücre tipi hangisidir?",
+      "back": "Pankreatik stellat hücreleri (miyofibroblastlar).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-49",
+      "front": "İntraduktal onkositik papiller neoplazilerde (İOPN) karakteristik olarak görülen genetik değişiklik hangisidir?",
+      "back": "$PRKACA$ veya $PRKACB$ genlerini içeren translokasyonlar.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-50",
+      "front": "Pankreas kanserinde en yaygın metastaz bölgeleri nerelerdir?",
+      "back": "Karaciğer, periton ve akciğer.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-51",
+      "front": "AJCC 8. Edisyon TNM evrelemesine göre $T1$ evresi tümör boyutu sınırı nedir?",
+      "back": "$2 cm$ veya daha küçük ($\\le 2 cm$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-52",
+      "front": "$T3$ tümör tanımı nasıldır?",
+      "back": "En geniş çapı $4 cm$'den büyük olan tümör.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-53",
+      "front": "Pankreas kanserinde $N2$ evresi kaç adet pozitif bölgesel lenf nodunu ifade eder?",
+      "back": "4 veya daha fazla pozitif lenf nodu.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-54",
+      "front": "Hangi tip diyabet (pankreatojenik diyabet) pankreas kanseri riskini en çok artırır?",
+      "back": "Tip 3c diyabet.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-55",
+      "front": "Pankreas kanseri taramasında ASGE kılavuzuna göre tarama başlangıç yaşı genellikle kaçtır?",
+      "back": "50 yaş (veya ailedeki en genç vakadan 10 yıl önce).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-56",
+      "front": "PJS hastalarında pankreas kanseri taramasına hangi yaşta başlanması önerilir?",
+      "back": "30-35 yaş.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-57",
+      "front": "Hangi kan grubu pankreas kanseri riskinde hafif bir artışla ilişkilendirilmiştir?",
+      "back": "A, B ve AB kan grupları (O kan grubuna kıyasla).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-58",
+      "front": "Pankreas adenokarsinomunda epitelyal-mezenkimal geçiş (EMT) ve invaziv fenotip ile ilişkili olan marker hangisidir?",
+      "back": "E-kadherin ($CDH1$) ekspresyon kaybı.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-59",
+      "front": "Tümör dokusunda 'medüller' histolojik görünüm hangi durum için ipucu olabilir?",
+      "back": "DNA mismatch onarım defekti (Lynch Sendromu ile ilişkili).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-60",
+      "front": "Pankreas kanseri mikroçevresinde T-hücre aktivitesini baskılayan ana sitokin hangisidir?",
+      "back": "$TGF-\\beta$.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-61",
+      "front": "Kistik neoplazilerde kist sıvısında hangi markerın yüksek olması müsinöz bir lezyonu düşündürür?",
+      "back": "CEA (Karsinoembriyonik antijen).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-62",
+      "front": "Pankreas gövde/kuyruk tümörlerinde SMA'nın sol tarafındaki lenf nodlarını da içeren cerrahi teknik hangisidir?",
+      "back": "Radikal anterograd modüler pankreatosplenektomi (RAMPS).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-63",
+      "front": "Pankreas rezeksiyonu sonrası patolojik incelemede 'R1' rezeksiyon neyi ifade eder?",
+      "back": "Rezeksiyon sınırına $1 mm$ mesafede tümör hücrelerinin bulunması.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-64",
+      "front": "Lokal ileri (LAPC) hastalıkta, 4-6 siklus indüksiyon kemoterapisi sonrası rezeke edilemeyen hastalarda lokal kontrol için kullanılabilen ablatif yöntem hangisidir?",
+      "back": "İrreversibl elektroporasyon (IRE).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-65",
+      "front": "Semptomatik kemik metastazı varlığında hangi radyoterapi yöntemi endikedir?",
+      "back": "Palyatif radyoterapi.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-66",
+      "front": "Pankreas kanserinde epigenetik susturma (gene silencing) en sık hangi mekanizma ile gerçekleşir?",
+      "back": "Promoter hipermetilasyonu.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-67",
+      "front": "Pankreas kanserinde Hedgehog sinyal yolunun ana rolü nedir?",
+      "back": "Tümör stroması oluşumunu desteklemek ve apoptozu düzenlemek.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-68",
+      "front": "Hangi genetik sendromda pankreas kanseri yaşam boyu riski $\\%36$ gibi çok yüksek bir orandadır?",
+      "back": "Peutz-Jeghers Sendromu.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-69",
+      "front": "Pankreas kanseri taramasında EUS'un BT'ye göre en büyük avantajı nedir?",
+      "back": "$2 cm$'den küçük küçük tümörleri saptama hassasiyetinin daha yüksek olması.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-70",
+      "front": "Pankreas kanseri tanılı hastalarda halsizlik, iştahsızlık ve belirgin kilo kaybı ile karakterize sendrom hangisidir?",
+      "back": "Kanser kaşeksisi.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-71",
+      "front": "Pankreas kanserinde cerrahi sınırların intraoperatif değerlendirilmesi için ne önerilir?",
+      "back": "Frozen section (dondurulmuş kesit) analizi.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-72",
+      "front": "Pankreasın undiferansiye pleomorfik karsinomlarında görülen 'osteoklast benzeri dev hücreler' gerçekte neyi temsil eder?",
+      "back": "Epitelyal prekürsörlerden köken alan karsinom hücreleri.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-73",
+      "front": "Pankreas kanseri metastatik hastalıkta 'Gemsitabin + nab-paklitaxel' rejimi hangi durumda tercih edilebilir?",
+      "back": "FOLFIRINOX'u tolere edemeyecek orta düzey performanslı hastalarda.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-74",
+      "front": "Pankreas rezeksiyonu sonrası takipte CA 19-9 artışı neye işaret eder?",
+      "back": "Rekürrens (nüks) veya progresyon.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-75",
+      "front": "Pankreas kanserinde radikal cerrahi sonrası en sık nüks görülen bölge neresidir?",
+      "back": "Lokal yatak (retroperitoneal alan) ve karaciğer.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-76",
+      "front": "Hangi genetik sendrom 'sentinel' (öncü) pankreas kanseri vakası olarak değerlendirilebilir?",
+      "back": "Herediter meme ve over kanseri ($BRCA$).",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-77",
+      "front": "İPMN tanısında kist sıvısı analizinde hangi spesifik mutasyon malignite riskini işaret edebilir?",
+      "back": "$TP53$ veya $SMAD4$ mutasyonları.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-78",
+      "front": "Pankreas kanserli hastalarda ağrı yönetiminde çölyak pleksus blokajı hangi evrede yapılabilir?",
+      "back": "İnatçı ağrısı olan her evredeki hastada.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-79",
+      "front": "FOLFIRINOX rejimindeki 'I' harfi hangi ilacı temsil eder?",
+      "back": "İrinotekan.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    },
+    {
+      "id": "card-80",
+      "front": "Pankreas kanseri için 'multidisipliner tümör konseyi'nde yer alması gereken temel branşlar nelerdir?",
+      "back": "Cerrah, tıbbi onkolog, radyasyon onkoloğu, radyolog, patolog ve gastroenterolog.",
+      "tag": "Gastroenteroloji / Pankreas Kanseri"
+    }
+  ]
+}
