@@ -80,6 +80,20 @@
           "hazir": false
         }
       ]
+    },
+    {
+      "id": "akciger-kanseri",
+      "baslik": "Akciğer Kanseri",
+      "aciklama": "Tarama, evreleme, moleküler profilleme ve KHDAK/KHAK tedavi algoritmaları",
+      "emoji": "🎗️",
+      "konular": [
+        {
+          "id": "akciger-kanseri",
+          "baslik": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
+        }
+      ]
     }
   ]
 }
