@@ -11,15 +11,15 @@
     "guncelleme": "2026-07"
   },
   "moduller": {
-    "flashcard": false,
+    "flashcard": true,
     "inciler": false,
-    "quiz": false,
+    "quiz": true,
     "vaka": false,
     "video": false
   },
   "istatistikler": {
-    "soru": 0,
-    "flashcard": 0,
+    "soru": 10,
+    "flashcard": 71,
     "inci": 0
   },
   "icerik": [
