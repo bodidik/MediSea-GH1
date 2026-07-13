@@ -1,0 +1,548 @@
+{
+  "id": "fc-enfeksiyon-cap-001",
+  "accessLevel": "premium",
+  "topic": "Toplum Kaynaklı Pnömoni (TKP)",
+  "description": "YDUS Enfeksiyon Hastalıkları serisi: Toplum kaynaklı pnömoni epidemiyolojisi, patogenezi, CURB-65 ve PSI risk skorlamaları, atipik patojenler, aspirasyon pnömonisi segment anatomisi ve güncel ampirik tedavi protokollerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Toplum kaynaklı pnömoni (TKP) teriminin tanımı nedir?",
+      "back": "Sağlık hizmeti ortamları dışında edinilen akciğer parankiminin akut enfeksiyonudur.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-2",
+      "front": "Hastane kaynaklı pnömoni (HKP) ile TKP arasındaki temel fark nedir?",
+      "back": "Enfeksiyonun hastaneye yatıştan $48$ saat veya daha sonra gelişmiş olmasıdır.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-3",
+      "front": "Ventilatörle ilişkili pnömoni (VİP) hangi durumda gelişir?",
+      "back": "Endotrakeal entübasyondan $48$ saat veya daha fazla süre geçtikten sonra gelişir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-4",
+      "front": "Sağlık hizmeti ile ilişkili pnömoni (SHİP) terimi güncel rehberlerde neden artık kullanılmamaktadır?",
+      "back": "Dirençli patojenler için aşırı hassas olduğu ve gereksiz geniş spektrumlu antibiyotik kullanımına yol açtığı için emekli edilmiştir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-5",
+      "front": "TKP'nin dünyadaki en yaygın bakteriyel nedeni nedir?",
+      "back": "$Streptococcus \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-6",
+      "front": "Atipik bakterilerin beta-laktam antibiyotiklere karşı gösterdiği ortak özellik nedir?",
+      "back": "Hücre duvarı yapıları nedeniyle beta-laktamlara karşı intrinsik direnç gösterirler.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-7",
+      "front": "Hangi atipik patojen klimalar, jakuziler ve soğutma kuleleri gibi su kaynaklı sistemlerde çoğalır?",
+      "back": "$Legionella \\ spp$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-8",
+      "front": "Kuşlarla temas öyküsü olan bir hastada hangi atipik pnömoni etkeni öncelikle düşünülmelidir?",
+      "back": "$Chlamydia \\ psittaci$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-9",
+      "front": "KOAH veya sigara öyküsü olan hastalarda en sık karşılaşılan bakteriyel TKP etkenleri nelerdir?",
+      "back": "$H. \\ influenzae$, $P. \\ aeruginosa$, $L. \\ species$, $S. \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-10",
+      "front": "Alkol kullanım bozukluğu olan hastalarda hangi Gram negatif basil aspirasyon pnömonisi ve kavitasyona yol açar?",
+      "back": "$Klebsiella \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-11",
+      "front": "Pnömoni patogenezinde mikroorganizmaların akciğerlere ulaşmasında en yaygın mekanizma hangisidir?",
+      "back": "Orofaringeal sekresyonların mikroaspirasyonu.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-12",
+      "front": "Aspirasyon pnömonisi tipik olarak hangi anatomik bozukluk veya mekanizma yetersizliğinde gelişir?",
+      "back": "Öksürük refleksi veya glottik kapanma gibi temizleme mekanizmalarının bozulmasıyla.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-13",
+      "front": "Ayaktaki bir hastada aspirasyon materyali yerçekimi etkisiyle en sık hangi akciğer lobuna yönlenir?",
+      "back": "Alt loblar.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-14",
+      "front": "Yatar pozisyondaki bir hastada aspirasyon enfeksiyonu hangi spesifik akciğer segmentlerinde lokalize olur?",
+      "back": "Alt lobların superior segmentleri ve üst lobların posterior segmentleri.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-15",
+      "front": "Aspirasyon pnömonisinde 'currant jelly' (frenk üzümü jölesi) balgam görünümü hangi etken için tipiktir?",
+      "back": "$Klebsiella \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-16",
+      "front": "Aspirasyon pnomonilerinde kimyasal pnömonit (Mendelson Sendromu) ile bakteriyel enfeksiyon arasındaki fark nedir?",
+      "back": "Kimyasal pnömonit steril mide asidi aspirasyonuyla oluşur ve antibiyotik tedavisi gerektirmez.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-17",
+      "front": "Sarkopeni (kas kaybı) ve yutma disfonksiyonu olan yaşlı hastalarda hangi pnömoni türünün gelişme riski yüksektir?",
+      "back": "Aspirasyon pnömonisi.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-18",
+      "front": "Tipik pnömoni tablosunun en karakteristik üç semptomu nedir?",
+      "back": "Akut başlangıçlı ateş, öksürük ve purulan balgam.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-19",
+      "front": "Fizik muayenede konsolidasyon alanında duyulan patolojik solunum sesi ve muayene bulgusu nedir?",
+      "back": "Tübüler solunum sesi (bronşiyal solunum) ve taktil fremitusta artış.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-20",
+      "front": "Plevral efüzyon veya ampiyem varlığında perküsyonda alınan ses nedir?",
+      "back": "Matite.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-21",
+      "front": "Genç erişkinlerde salgınlar yapan, baş ağrısı, boğaz ağrısı gibi ekstrapulmoner semptomlarla seyreden atipik etken hangisidir?",
+      "back": "$Mycoplasma \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-22",
+      "front": "Legionella pnömonisinde laboratuvar bulgusu olarak en sık hangi elektrolit anomalisi görülür?",
+      "back": "Hiponatremi ($Na < 135 \\ mEq/L$).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-23",
+      "front": "Hangi pnömoni skorlama sistemi sadece hastaneye yatış kararını (veya ayaktan tedavi) belirlemek için pratik bir algoritma sunar?",
+      "back": "CURB-65 skorlaması.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-24",
+      "front": "CURB-65 skorunun açılımındaki her bir harfin temsil ettiği klinik kriter nedir?",
+      "back": "Confusion (Konfüzyon), Urea ($> 19 \\ mg/dL$), Respiratory rate ($\\ge 30$), Blood pressure ($Sistolik < 90$ veya $Diyastolik \\le 60$), Age ($\\ge 65$).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-25",
+      "front": "CURB-65 skoru kaç olan hastaların hastaneye yatırılarak tedavi edilmesi önerilir?",
+      "back": "Skor $\\ge 2$ olanların.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-26",
+      "front": "Hangi daha kapsamlı skorlama sistemi 20 farklı klinik ve laboratuvar parametresini kullanarak 30 günlük mortalite riskini sınıflar?",
+      "back": "PSI (Pneumonia Severity Index).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-27",
+      "front": "PSI sınıflandırmasına göre hangi risk sınıfları ayaktan tedavi edilebilir?",
+      "back": "Sınıf I ve Sınıf II (bazı durumlarda Sınıf III).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-28",
+      "front": "Şiddetli TKP tanımı ve yoğun bakım (YBÜ) yatış ihtiyacı için kullanılan iki majör ATS/IDSA kriteri nedir?",
+      "back": "İnvaziv mekanik ventilasyon ihtiyacı ve vazopressör gerektiren septik şok varlığı.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-29",
+      "front": "TKP tanısında altın standart kabul edilen görüntüleme yöntemi hangisidir?",
+      "back": "Akciğer grafisinde (arka-ön) yeni infiltrasyon saptanması.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-30",
+      "front": "Balgam Gram boyamasının kaliteli kabul edilmesi için mikroskobik kriter nedir?",
+      "back": "Her küçük büyütme alanında ($< 10$ epitel hücresi$) ve ($> 25$ polimorfonükleer lökosit$) bulunması.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-31",
+      "front": "İdrarda antijen testi hangi iki önemli pnömoni patojenini hızlıca saptamak için kullanılır?",
+      "back": "$Streptococcus \\ pneumoniae$ ve $Legionella \\ pneumophila$ (Serogrup 1).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-32",
+      "front": "Kan kültürleri hangi TKP hasta grubundan mutlaka alınmalıdır?",
+      "back": "Yoğun bakıma yatışı gereken şiddetli TKP'li hastalardan.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-33",
+      "front": "Klinik stabilizasyon sağlanan bir TKP hastasında antibiyotik tedavisinin minimum süresi kaç gündür?",
+      "back": "En az $5$ gün (en az $48$ saat ateşsiz dönem sağlandıktan sonra kesilebilir).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-34",
+      "front": "Komorbiditesi olmayan ayaktan tedavi edilecek bir hastada ilk tercih ampirik antibiyotik hangisidir?",
+      "back": "Amoksisilin veya Doksisiklin (makrolid direnci düşük bölgelerde Makrolid).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-35",
+      "front": "Komorbiditesi (Diyabet, kalp hastalığı vb.) olan ayaktan tedavi edilecek hastalarda hangi tedavi rejimi önerilir?",
+      "back": "Kombinasyon tedavisi (Beta-laktam + Makrolid) veya solunum kinolonu monoterapisi.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-36",
+      "front": "Solunum kinolonları grubunda yer alan ve TKP'de sık kullanılan üç antibiyotik hangisidir?",
+      "back": "Levofloksasin, Moksifloksasin ve Gemifloksasin.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-37",
+      "front": "Yoğun bakım dışı servise yatırılan TKP hastalarında standart ampirik tedavi rejimi nedir?",
+      "back": "Beta-laktam (Ampisilin-sulbaktam veya Seftriakson) + Makrolid kombinasyonu.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-38",
+      "front": "Şiddetli (Yoğun bakım) TKP hastalarında önerilen standart ampirik rejim nedir?",
+      "back": "Beta-laktam + Makrolid veya Beta-laktam + Solunum kinolonu kombinasyonu.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-39",
+      "front": "Pseudomonas aeruginosa şüphesi (kronik obstrüktif akciğer hastaları, yapısal hasar) durumunda hangi beta-laktam tercih edilmelidir?",
+      "back": "Piperasilin-tazobaktam, Sefepim, İmipenem veya Meropenem.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-40",
+      "front": "MRSA şüphesi durumunda ampirik tedaviye hangi ajanlar eklenmelidir?",
+      "back": "Vankomisin veya Linezolid.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-41",
+      "front": "Aspirasyon pnömonisinde anaerobik etkinlik için ampirik tedaviye hangi ajanlar dahil edilebilir?",
+      "back": "Ampisilin-sulbaktam, Klindamisin veya beta-laktama ek olarak Metronidazol.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-42",
+      "front": "Moxifloxacin'in diğer bazı solunum kinolonlarından farkı nedir?",
+      "back": "Karaciğerden metabolize olur, idrara geçişi düşüktür; bu nedenle idrar yolu enfeksiyonlarında tercih edilmez.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-43",
+      "front": "Kortikosteroidlerin şiddetli TKP tedavisindeki rolü nedir?",
+      "back": "Klinik kılavuzlarda rutin kullanımı önerilmez ancak septik şok varlığında eklenebilir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-44",
+      "front": "Eritromisin hangi antibiyotik grubuna aittir?",
+      "back": "Makrolidler.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-45",
+      "front": "Pnömokok aşısının (PCV13 / PPSV23) erişkinlerdeki temel amacı nedir?",
+      "back": "İnvaziv pnömokok hastalıklarını (bakteremi, menenjit) ve buna bağlı ölümleri azaltmak.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-46",
+      "front": "Hangi yaş grubu ve üzeri tüm yetişkinlere rutin pnömokok aşısı önerilir?",
+      "back": "$65$ yaş ve üzeri.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-47",
+      "front": "TKP takibinde klinik yanıtın en erken göstergesi nedir?",
+      "back": "Ateşin düşmesi (genellikle $48-72$ saat içinde).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-48",
+      "front": "Radyolojik düzelme klinik düzelmeye göre nasıldır?",
+      "back": "Daha geç gerçekleşir (tam düzelme $4-12$ hafta sürebilir).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-49",
+      "front": "Tedaviye yanıtsız pnömoni tanımı ne zaman yapılır?",
+      "back": "Uygun antibiyotik tedavisine rağmen $72$ saat içinde klinik düzelme olmaması veya kötüleşme görülmesi durumunda.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-50",
+      "front": "Yanıtsız pnömonide akla gelmesi gereken pulmoner komplikasyonlar nelerdir?",
+      "back": "Ampiyem, akciğer apsesi veya obstrüksiyon (tümör vb.).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-51",
+      "front": "Hangi non-infeksiyöz durumlar pnömoniyi taklit edebilir?",
+      "back": "Pulmoner emboli, kalp yetmezliği ve sarkoidoz.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-52",
+      "front": "Grip (İnfluenza) salgınları sırasında hangi bakteriyel süperenfeksiyon en sık ve ağır seyirli olarak görülür?",
+      "back": "$Staphylococcus \\ aureus$ (özellikle MRSA) ve $Streptococcus \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-53",
+      "front": "Legionella pnömonisinde balgam Gram boyamasında ne görülür?",
+      "back": "Bol lökosit görülmesine rağmen mikrobiyal etken genellikle seçilemez (atipik boyanma).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-54",
+      "front": "Soğuk aglütinin pozitifliği hangi atipik pnömonide tanıya yardımcı bir ipucudur?",
+      "back": "$Mycoplasma \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-55",
+      "front": "Mycoplasma pneumoniae'nın hücre duvarı yapısının özelliği nedir?",
+      "back": "Hücre duvarı yoktur, bu yüzden penisilin gibi hücre duvarını hedef alan ilaçlar etkisizdir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-56",
+      "front": "Aspirasyon pnömonisinde en sık izole edilen anaerob patojen grupları nelerdir?",
+      "back": "$Bacteroides \\ species$, $Fusobacterium$ ve peptostreptokoklar.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-57",
+      "front": "Kavitasyon gösteren bir akciğer lezyonunda öncelikle hangi etkenler akla gelmelidir?",
+      "back": "$Tüberküloz$, anaerobik apseler, $S. \\ aureus$ ve mantar enfeksiyonları.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-58",
+      "front": "Ampiyem tanısı koymak için plevral sıvı analizinde hangi kriterler aranır?",
+      "back": "Plevral sıvı $pH < 7.2$, glukoz $< 40 \\ mg/dL$ veya doğrudan mikroorganizma saptanması.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-59",
+      "front": "İdrar yolu enfeksiyonu şüphesiyle siprofloksasin kullanan bir hastada gelişen pnömonide neden 'maskelenme' riski vardır?",
+      "back": "Siprofloksasin tüberküloz basilini kısmen baskılayarak tüberküloz tanısının gecikmesine neden olabilir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-60",
+      "front": "Prokalsitonin (PCT) düzeyinin pnömoni yönetimindeki temel rolü nedir?",
+      "back": "Bakteriyel enfeksiyonu viral enfeksiyondan ayırmada ve antibiyotik sonlandırma kararlarında yardımcıdır.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-61",
+      "front": "CURB-65 skoru 0 veya 1 olan bir hastada 30 günlük mortalite riski yaklaşık yüzde kaçtır?",
+      "back": "$< 3\\%$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-62",
+      "front": "CURB-65 skoru 3 veya daha yüksek olan hastaların mortalite riski nedir?",
+      "back": "Yüksek risk ($> 15\\%$ mortalite), yoğun bakım veya yakın hastane takibi gerekir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-63",
+      "front": "PSI (Pneumonia Severity Index) hesaplanmasında hangi demografik özellik skora en fazla puanı ekler?",
+      "back": "İleri yaş (yaş değeri doğrudan puan olarak eklenir).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-64",
+      "front": "Aspirasyon pnömonisinde metronidazol monoterapisi neden tercih edilmez?",
+      "back": "Metronidazol aerobik Gram pozitif koklara (örn. streptokoklar) karşı yetersiz etkindir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-65",
+      "front": "Huzurevinde kalan hastalarda gelişen pnömoni güncel kılavuzlarda hangi kategoride tedavi edilir?",
+      "back": "Toplum kaynaklı pnömoni (TKP) kriterlerine göre değerlendirilir ve tedavi edilir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-66",
+      "front": "Sıra dışı bir dış mekan su kaynağı maruziyeti sonrası ağır pnömoni ve ishal şikayetiyle başvuran hastada hangi etken düşünülmelidir?",
+      "back": "$Legionella \\ pneumophila$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-67",
+      "front": "Beta-laktam antibiyotiklerin pnömokoklara karşı direnç mekanizması nedir?",
+      "back": "Penisilin bağlayan proteinlerdeki ($PBP$) mutasyonel yapı değişiklikleri.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-68",
+      "front": "Makrolid grubu antibiyotiklerin bakterilerdeki etki mekanizması nedir?",
+      "back": "Bakteriyel ribozomun $50S$ alt birimine bağlanarak protein sentezini inhibe ederler.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-69",
+      "front": "Hangi durumda ampirik tedavide makrolid monoterapisinden kesinlikle kaçınılmalıdır?",
+      "back": "Bölgesel pnömokok makrolid direnci $\\ge 25\\%$ olan yerlerde.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-70",
+      "front": "Aspirasyon pnömonisinden korunmada en etkili non-farmakolojik önlemlerden biri nedir?",
+      "back": "Yatak başının en az $30-45$ derece dik tutulması ve beslenme sonrası pozisyon koruma.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-71",
+      "front": "Hangi kronik komorbidite pnömokok pnömonisine bağlı bakteremi riskini en fazla artırır?",
+      "back": "Aspleni (dalak yokluğu veya disfonksiyonu).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-72",
+      "front": "Lobar pnömoni görünümü radyolojik olarak en sık hangi patojenle ilişkilidir?",
+      "back": "$Streptococcus \\ pneumoniae$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-73",
+      "front": "Bronkopnömoni (yama tarzı infiltrasyonlar) hangi patojenlerde daha sık görülür?",
+      "back": "$Staphylococcus \\ aureus$ ve Gram-negatif basiller.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-74",
+      "front": "İnterstisyel infiltrasyonlar göğüs radyolojisinde öncelikle hangi etkenleri düşündürür?",
+      "back": "Atipik bakteriler ($Mycoplasma$) ve viral patojenler.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-75",
+      "front": "Tedavi süresini uzatmayı gerektiren, nekrotizan pnömoni yapan agresif patojen hangisidir?",
+      "back": "Kaviter lezyonlar oluşturan $Staphylococcus \\ aureus$ (özellikle PVL pozitif suşlar).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-76",
+      "front": "Aspirasyon pnömonisi tedavisinde 'klindamisin' tercih edildiğinde hangi yan etki açısından uyanık olunmalıdır?",
+      "back": "$Clostridioides \\ difficile$ ilişkili ishal (psödomembranöz enterokolit).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-77",
+      "front": "Aktif sigara içiciliği hangi pnömoni patojeni için spesifik bağımsız bir risk faktörüdür?",
+      "back": "$Legionella \\ pneumophila$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-78",
+      "front": "Gebelerde ağır seyreden ve mortalitesi yüksek olan viral pnömoni etkeni hangisidir?",
+      "back": "İnfluenza.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-79",
+      "front": "TKP'li bir hastada ampiyem şüphesi varsa plevral sıvı elde etmek için hangi işlem yapılmalıdır?",
+      "back": "Torasentez.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-80",
+      "front": "Pnömoni infiltrasyonlarının tamamen temizlenmesi yaşlı veya KOAH'lı hastalarda ne kadar sürebilir?",
+      "back": "$12$ haftaya kadar uzayabilir.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-81",
+      "front": "TKP tedavisinde intravenözden oral tedaviye geçiş kriterlerinden biri nedir?",
+      "back": "Hastanın oral alımının normale dönmesi ve hemodinamik stabilite.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-82",
+      "front": "Atipik pnömonide görülen 'hemofili/hemolitik anemi' tablosu hangi antikor varlığıyla ilişkilidir?",
+      "back": "$Mycoplasma$'ya karşı oluşan soğuk aglütininler ($IgM$ antikorları).",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-83",
+      "front": "İdrarda Legionella antijen testi hangi serogrup için yüksek duyarlılığa sahiptir?",
+      "back": "Sadece $Legionella \\ pneumophila$ Serogrup 1.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-84",
+      "front": "Hangi hasta özellikleri pnömoni sonrası 'gecikmiş radyolojik düzelme' için bir risk faktörüdür?",
+      "back": "İleri yaş, KOAH ve alkolizm.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-85",
+      "front": "Pnömoni tanısında BT (Bilgisayarlı Tomografi) ne zaman tercih edilmelidir?",
+      "back": "Akciğer grafisi normal olup klinik şüphe devam ettiğinde veya komplikasyon arandığında.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-86",
+      "front": "Aspirasyon pnömonisi tanısında video-fluoroskopik yutma çalışmasının yeri nedir?",
+      "back": "Orofaringeal disfajiyi ve aspirasyon riskini doğrulamak için kullanılır.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-87",
+      "front": "TKP'de yoğun bakım ünitesine yatış için gereken minör kriterlerden biri nedir?",
+      "back": "Solunum hızı $\\ge 30$ veya konfüzyon.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-88",
+      "front": "Pnömokok pnömonisinin bulaş yolu nedir?",
+      "back": "İnsandan insana aerosol inhalasyonu veya yakın temas.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-89",
+      "front": "Kistik fibrozis hastalarında en dominant akciğer patojeni hangisidir?",
+      "back": "$Pseudomonas \\ aeruginosa$.",
+      "tag": "Enfeksiyon / TKP"
+    },
+    {
+      "id": "card-90",
+      "front": "TKP'li bir hastada hiponatremi ($Na < 135 \\ mEq/L$) varlığı hangi patojeni düşündürmelidir?",
+      "back": "$Legionella \\ pneumophila$.",
+      "tag": "Enfeksiyon / TKP"
+    }
+  ]
+}

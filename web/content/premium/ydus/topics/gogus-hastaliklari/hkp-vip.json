@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "id": "hkp-vip",
+    "branch": "gogus-hastaliklari",
+    "baslik": "Hastane Kökenli Pnömoni (HKP) ve VİP",
+    "altbaslik": "Tanım, MDR patojen riski, ampirik antibiyoterapi, de-eskalasyon ve VİP korunma paketleri",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 0,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Sınıflandırma",
+      "satirlar": [
+        {
+          "metin": "Hastane kökenli pnömoniler, enfeksiyonun kazanım yerine ve mekanik ventilasyon durumuna göre sınıflandırılır. Bu sınıflandırma, çoklu ilaca dirençli (MDR) patojen riskini belirlemede kritik öneme sahiptir. **\"Sağlık Bakımı İlişkili Pnömoni (HCAP)\"** terimi; hastaları MDR patojenler açısından aşırı duyarlı kategorize edip gereksiz geniş spektrumlu antibiyotik kullanımına yol açtığı için güncel ATS/IDSA ve ERS kılavuzlarından **tamamen çıkarılmıştır**."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "HKP Sınıflandırması",
+      "kolonlar": [
+        "Tip",
+        "Tanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "HKP / HAP ★",
+            "Hastaneye yatıştan ≥48 saat sonra gelişen, yatış anında inkübasyon döneminde olmayan pnömoni"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "VİP / VAP ★",
+            "Endotrakeal entübasyondan ≥48 saat sonra gelişen HKP alt tipi; ekstübasyon sonrası ilk 48 saatte gelişen pnömonileri de kapsar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "nvHAP",
+            "Mekanik ventilasyonda olmayan ve önceki 48 saatte ekstübe edilmemiş hastalarda gelişen HKP. nvHAP nedeniyle entübasyon gerektirirse 'vHAP' adını alır — klinik sonlanımları VİP'e benzer şekilde kötüdür"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji ve Risk Faktörleri",
+      "satirlar": [
+        {
+          "metin": "HKP, morbiditesi ve mortalitesi en yüksek hastane enfeksiyonlarından biridir. Kaba mortalite oranı VİP ve nvHAP için **%15–30** arasında değişir. Mekanik ventilatördeki hastalarda pnömoni riski, non-ventile hastalara kıyasla yaklaşık **10 kat** daha yüksektir; ancak servis popülasyonu daha geniş olduğu için toplam vakaların çoğunluğunu nvHAP oluşturur."
+        },
+        {
+          "metin": "**Entübasyon** en büyük bağımsız risk faktörüdür. Diğer genel risk faktörleri: ileri yaş, kronik akciğer hastalığı, bilinç bulanıklığı, orofaringeal aspirasyon, göğüs/üst batın cerrahisi ve enteral tüple beslenme."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MDR Patojen Risk Faktörleri",
+      "kolonlar": [
+        "Risk Faktörü",
+        "Önemi"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Son 90 günde IV antibiyotik kullanımı ★",
+            "MDR gram-negatif ve MRSA için en güçlü risk faktörü"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Hastanede ≥5 gün yatış ★",
+            "Hastane florasına maruziyet artar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Septik şok",
+            "Ağır tablo → geniş spektrum zorunlu"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "ARDS varlığı",
+            "MDR gram-negatif riski artar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Renal replasman tedavisi (pnömoni öncesi)",
+            "MDR patojen riskini artırır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patogenez",
+      "satirlar": [
+        {
+          "metin": "Patojenler alt solunum yollarına temel olarak orofaringeal kanalda (daha nadiren gastrointestinal sistemde) kolonize olan floranın **mikroaspirasyonu** ile ulaşır. Endotrakeal tüp, hava yolunu koruyor gibi görünse de aslında mikroaspirasyonu kolaylaştırır; tüpün iç yüzeyinde saatler içinde oluşan **biyofilm tabakası**, VİP gelişiminde temel rezervuar işlevi görür."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Mikrobiyoloji",
+      "satirlar": [
+        {
+          "metin": "Etkenler hastanenin ve ünitenin florasına, antibiyotik politikalarına ve hasta risk faktörlerine göre değişir. Dünya genelinde en sık izole edilen ajanlar **Staphylococcus aureus** (MRSA dahil) ve **Pseudomonas aeruginosa**'dır. Bunları *Klebsiella pneumoniae*, *E. coli*, *Enterobacter* spp. ve *Acinetobacter* spp. izler. Özellikle immünosuprese hastalarda ve salgın dönemlerinde viral (influenza, RSV, SARS-CoV-2) ve fungal etkenler de göz önünde bulundurulmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Tanı ve Mikrobiyolojik Örnekleme",
+      "satirlar": [
+        {
+          "metin": "Tanı; yeni veya ilerleyici radyolojik infiltrata ek olarak ateş (>38°C), pürülan sekresyon, lökositoz/lökopeni ve oksijenasyonda bozulma (PaO2/FiO2 düşüşü) bulgularının eşlik etmesiyle konur. Tüm bu bulguların **spesifitesi düşüktür** ve ARDS gibi koşullarla karışabilir."
+        },
+        {
+          "metin": "**Akciğer ultrasonografisi (LUS):** Dinamik hava bronkogramları ve subplevral konsolidasyon VİP'i destekler; yatak başı kullanımı giderek yaygınlaşmaktadır."
+        },
+        {
+          "metin": "**Mikrobiyolojik örnekleme**, ampirik antibiyotik başlanmadan hemen önce alınmalıdır. ATS/IDSA: non-invaziv endotrakeal aspirat + yarı-kantitatif kültür yeterlidir. ERS/ESICM: direnç azaltmak amacıyla invaziv (BAL, korumalı fırça) + kantitatif kültür tercih edilir."
+        },
+        {
+          "metin": "**Prokalsitonin (PCT):** Tek başına HKP/VİP tanısını koydurgurmaz ve antibiyotik başlama kararında rutin kullanılmamalıdır. Ancak klinik iyileşen hastalarda PCT'nin pik değerden ≥%80 düşmesi veya <0,5 ng/mL'ye gelmesi, tedavi kesim kararında güçlü rehberlik sağlar."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Sınav Spotu — Aminoglikozidler: Asidik akciğer ortamında zayıf penetrasyon nedeniyle HKP/VİP'te asla monoterapi olarak kullanılmaz. Ancak şiddetli septik şok + Pseudomonas şüphesi olan vakalarda güçlü in-vitro aktiviteleri nedeniyle kombinasyon tedavisine eklenebilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ampirik Antibiyoterapi — MDR Riskine Göre",
+      "kolonlar": [
+        "Klinik Durum",
+        "Önerilen Rejim"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "MDR riski yok / Hafif-Orta Şiddet ★",
+            "Sefepim VEYA Piperasilin-Tazobaktam VEYA (Lejyoner riski varsa) Levofloksasin — monoterapi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Şiddetli (Septik şok veya vHAP) / Yüksek MDR Riski ★",
+            "Anti-MRSA ajan (Vankomisin veya Linezolid) ARTI iki farklı antipsödomonal ajan (örn. Pip-Taz veya Sefepim veya Meropenem + Levofloksasin/Siprofloksasin veya Amikasin/Tobramisin)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Beta-laktam alerjisi (anafilaksi)",
+            "Aztreonam veya kinolon veya aminoglikozid ile gram-negatif kapsam sağlanabilir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Anaerobik kapsam",
+            "Sadece masif aspirasyon, kötü dentisyon, akciğer apsesi veya ampiyem varlığında eklenir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "De-eskalasyon ve Tedavi Süresi",
+      "satirlar": [
+        {
+          "metin": "48–72 saat içinde kültür/PCR sonuçları ile klinik yanıt değerlendirilmeli, spektrum daraltılmalı (de-eskalasyon); kültürler steril ise MRSA tedavisi kesilmelidir."
+        },
+        {
+          "metin": "Kılavuzlar, komplikasyonsuz (ampiyem, akciğer apsesi veya endovasküler enfeksiyon olmayan) HKP ve VİP hastalarında, etken *P. aeruginosa* olsa bile **7 günlük kısa süreli antibiyotik tedavisini** önermektedir. Yedi günlük tedavi, 15 günlük sürelerle benzer etkinlik gösterirken antibiyotik direncini ve yan etkileri belirgin şekilde azaltmaktadır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "VİP Korunma Paketi (Prevention Bundle)",
+      "kolonlar": [
+        "Önlem",
+        "Açıklama / Güncel Kanıt"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Entübasyondan kaçın / Erken ekstübasyon ★",
+            "Non-invaziv ventilasyon veya yüksek akışlı nazal oksijen (HFNO) ile entübasyondan kaçınmak VİP riskini en çok azaltan önlemdir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Yatak başı elevasyonu 30–45° ★",
+            "Orofaringeal aspirasyonu ve mikroaspirasyon riskini azaltır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Günlük sedasyon kesintisi ★",
+            "Uyanıklık ve sekresyon klirensini artırır; erken ekstübasyona zemin hazırlar"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Düzenli ağız bakımı (diş fırçalanması)",
+            "Önerilir — ancak **Klorheksidin** ile oral dekontaminasyon mortalite faydası olmadığı ve yan etki kaygısı nedeniyle artık önerilmemektedir ★"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Subglottik sekresyon drenajı ★",
+            "≥48–72 saat entübasyon beklenen hastalarda drenaj portlu tüp kullanılmalıdır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Rutin ventilatör devresi değişimi — ÖNERİLMEZ ★",
+            "Sadece gözle görülür kirlenme veya mekanik arızada değiştir; aralıklı rutin değişim VİP riskini artırabilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Rutin mide rezidüel hacim ölçümü — ÖNERİLMEZ ★",
+            "VİP oranlarını düşürmediği kanıtlanmıştır; kalori hedeflerinden uzaklaşmaya neden olur"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Erken mobilizasyon",
+            "Fiziksel kondisyonu sürdürür; weaning sürecini hızlandırır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "HKP/VİP 7 Altın Kural: (1) HCAP terimi artık kullanılmıyor — MDR riski hastaya özel değerlendirilmeli. (2) VİP biyofilm rezervuarı → endotrakeal tüpün iç yüzeyi. (3) MDR riski yüksekse başlangıçta geniş spektrum + sonra de-eskalasyon. (4) Aminoglikozid monoterapisi yasak — akciğerde asidik ortamda penetrasyon zayıf. (5) Komplikasyonsuz HKP/VİP'te etken Pseudomonas bile olsa 7 gün yeterli. (6) Klorheksidin oral dekontaminasyonu artık önerilmiyor. (7) PCT, tedavi başlangıcında değil — güvenli kesim zamanını belirlemede kullanılır."
+    }
+  ]
+}

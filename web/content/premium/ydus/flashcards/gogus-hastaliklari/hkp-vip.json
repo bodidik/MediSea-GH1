@@ -1,0 +1,434 @@
+{
+  "id": "hkp-vip",
+  "accessLevel": "premium",
+  "topic": "Hastane Kökenli Pnömoni (HKP) ve VİP",
+  "description": "HAP/VAP tanımları, MDR patojen riski, ampirik antibiyoterapi, de-eskalasyon ve VİP korunma paketleri — 71 kart",
+  "cards": [
+    {
+      "id": "hkp-vip-001",
+      "front": "Hastane kaynaklı pnömoni (HAP) tanımı için enfeksiyonun hastaneye yatıştan en az ne kadar süre sonra gelişmesi gerekir?",
+      "back": "$\\ge 48$ saat.",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-002",
+      "front": "Ventilatör ilişkili pnömoni (VAP), endotrakeal entübasyondan en az ne kadar süre sonra gelişen pnömoni tipidir?",
+      "back": "$\\ge 48$ saat.",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-003",
+      "front": "Mekanik ventilasyon almayan veya pnömoni gelişmeden önceki 48 saat içinde ekstübe edilmemiş hastalarda gelişen HAP türü nedir?",
+      "back": "Ventilatör ilişkili olmayan hastane kaynaklı pnömoni (nvHAP).",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-004",
+      "front": "Sağlık bakımıyla ilişkili pnömoni (HCAP) terimi güncel kılavuzlarda nasıl değerlendirilmektedir?",
+      "back": "Artık bir pnömoni kategorisi olarak tanınmamakta ve emekli edilmiş (retired) bir terimdir.",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-005",
+      "front": "Hastane kaynaklı pnömoninin akciğerlere ulaşmasındaki birincil enfeksiyon yolu nedir?",
+      "back": "Orofaringeal (veya daha az oranda mide) florasının mikroaspirasyonu.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-006",
+      "front": "HAP ve VAP vakalarında en sık izole edilen iki ana patojen hangisidir?",
+      "back": "$Staphylococcus\\ aureus$ (MRSA dahil) ve $Pseudomonas\\ aeruginosa$.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-007",
+      "front": "HAP/VAP hastalarında çoklu ilaca dirençli (MDR) patojenler için risk kabul edilen hastanede yatış süresi eşiği nedir?",
+      "back": "$\\ge 5$ gün.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-008",
+      "front": "MDR patojen riski için pnömoniden önceki kaç gün içinde damar yoluyla (IV) antibiyotik kullanımı anlamlı kabul edilir?",
+      "back": "$90$ gün.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-009",
+      "front": "Üç farklı antibiyotik sınıfından en az bir ajana karşı duyarsızlık olarak tanımlanan direnç tipi nedir?",
+      "back": "Çoklu ilaca dirençli (MDR).",
+      "tag": "direnç"
+    },
+    {
+      "id": "hkp-vip-010",
+      "front": "Tedavide kullanılabilecek tüm antimikrobiyal ajanlara karşı duyarsızlık durumuna ne ad verilir?",
+      "back": "Pandirençli (PDR).",
+      "tag": "direnç"
+    },
+    {
+      "id": "hkp-vip-011",
+      "front": "VAP şüphesinde görüntülemede ne tür bir bulgu ile birlikte klinik enfeksiyon kanıtları (ateş, sekresyon, lökositoz) bulunmalıdır?",
+      "back": "Yeni veya ilerleyici akciğer infiltratı.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-012",
+      "front": "IDSA/ATS kılavuzlarına göre HAP klinik tanısı için yeni infiltrata eşlik etmesi gereken özelliklerden üçü nedir?",
+      "back": "Ateş, pürülan balgam, lökositoz veya oksijenasyonda düşüş.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-013",
+      "front": "Yeni radyografik infiltrat ile birlikte ateş, lökositoz ve pürülan sekresyonlardan en az ikisinin varlığının VAP için duyarlılığı (sensitivite) yaklaşık yüzde kaçtır?",
+      "back": "$\\%69$.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-014",
+      "front": "VAP tanısını doğrulamak veya dışlamak için mikrobiyolojik solunum yolu kültür sonuçları genellikle kaç gün sürer?",
+      "back": "$2$ ila $3$ gün.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-015",
+      "front": "HAP ve VAP'ı önlemek için önerilen ağız bakımı uygulamasında hangi ajan artık rutin olarak önerilmemektedir?",
+      "back": "Klorheksidin.",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-016",
+      "front": "Pnömoni riskini azaltmak için hastanın yatak başı açısı nasıl ayarlanmalıdır?",
+      "back": "Yatak başı yükseltilmelidir ($30$–$45$ derece).",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-017",
+      "front": "Ventilatördeki hastalarda VAP önleme stratejisi olarak sedasyon yönetimi nasıl yapılmalıdır?",
+      "back": "Sedasyon protokolleri ile sedasyon minimize edilmelidir (günlük sedasyon kesintisi).",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-018",
+      "front": "Toplam vaka sayısı olarak çoğu HAP vakası hangi hasta grubunda görülmektedir?",
+      "back": "Ventilatörde olmayan (nvHAP) hastalar.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "hkp-vip-019",
+      "front": "Pnömonide $Pseudomonas\\ aeruginosa$ şüphesini artıran yapısal akciğer anomalilerine iki örnek nedir?",
+      "back": "Kistik fibrozis veya bronşektazi.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-020",
+      "front": "Karbapenem dirençli $P. aeruginosa$ enfeksiyonları için geliştirilen tahmin modelinin en güçlü tahmincilerinden biri nedir?",
+      "back": "Önceki karbapenem veya florokinolon kullanımı.",
+      "tag": "direnç"
+    },
+    {
+      "id": "hkp-vip-021",
+      "front": "Endotrakeal tüp varlığı orofaringeal sekresyonların akciğerlere geçişini (aspirasyonu) nasıl etkiler?",
+      "back": "Aspirasyonu kolaylaştırır.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-022",
+      "front": "Gastrik pH'ı yükselten ülser profilaksisi ilaçları (PPİ) ile pnömoni oranları arasındaki ilişki hakkında son çalışmalar neyi göstermektedir?",
+      "back": "Proton pompası inhibitörleri pnömoni oranlarında artış göstermemiştir.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-023",
+      "front": "CDC verilerine göre VAP ile ilişkili patojenler arasında yaklaşık %28.8 ile ilk sırada yer alan hangisidir?",
+      "back": "$Staphylococcus\\ aureus$.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-024",
+      "front": "VAP patogenezinde anaerobik bakterilerin rolü genellikle nasıl değerlendirilir?",
+      "back": "Nispeten küçük bir rol oynadıkları düşünülür.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-025",
+      "front": "VAP ve nvHAP için kaba (crude) mortalite oranları hangi aralıkta değişmektedir?",
+      "back": "$\\%15$ ila $\\%30$.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "hkp-vip-026",
+      "front": "Amerika Birleşik Devletleri'ndeki tahminlere göre VAP başına düşen ek maliyet yaklaşık ne kadardır?",
+      "back": "$40.000$ USD.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "hkp-vip-027",
+      "front": "Prokalsitonin düzeyleri HAP/VAP yönetiminde hangi amaçla kullanılabilir?",
+      "back": "Ampirik antibiyotik tedavisinin güvenle sonlandırılacağı zamanı belirlemek (süreyi kısaltmak) için.",
+      "tag": "biyobelirtec"
+    },
+    {
+      "id": "hkp-vip-028",
+      "front": "VAP tanısı için akciğer biyopsisi ne zaman önerilir?",
+      "back": "Rutin olarak yapılmaz; yalnızca antibiyotik tedavisine rağmen ilerleyen infiltratlarda düşünülür.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-029",
+      "front": "Şüpheli nvHAP/VAP vakalarında anti-MRSA tedavisini erken sonlandırmak için hangi test kullanılabilir?",
+      "back": "Nazal MRSA sürüntü (swab) testi.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-030",
+      "front": "İlk ampirik tedaviden kaç saat sonra hastanın klinik yanıtı ve kültür sonuçları de-eskalasyon açısından değerlendirilmelidir?",
+      "back": "$48$ ila $72$ saat.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-031",
+      "front": "Multiplex PCR testlerinin konvansiyonel kültürlere göre tedavi yönetimindeki en büyük avantajı nedir?",
+      "back": "Patojenlerin ve direnç genlerinin çok daha hızlı tanımlanması.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-032",
+      "front": "Acinetobacter enfeksiyonları için ek risk faktörleri arasında hangi grup antibiyotiklerle önceki tedavi yer alır?",
+      "back": "3. kuşak sefalosporinler, florokinolonlar veya karbapenemler.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-033",
+      "front": "Ayakta duran bir hastada aspirasyonun akciğer grafisinde en sık tuttuğu bölgeler hangileridir?",
+      "back": "Alt loblar (bağımlı segmentler).",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-034",
+      "front": "Sırtüstü yatan bir hastada aspirasyon akciğerin hangi segmentlerini etkileyebilir?",
+      "back": "Alt lobların superior segmentleri ve üst lobların posterior segmentleri.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-035",
+      "front": "Mineral yağ veya petrol jeli aspirasyonu sonucu gelişen pnömoni türü nedir?",
+      "back": "Ekzojen lipoid pnömoni.",
+      "tag": "ozel"
+    },
+    {
+      "id": "hkp-vip-036",
+      "front": "Aspirasyon sonrası semptomların (dispne, öksürük, hipoksemi) başlangıç hızı nasıldır?",
+      "back": "Ani/Akut başlangıçlı.",
+      "tag": "klinik"
+    },
+    {
+      "id": "hkp-vip-037",
+      "front": "Hamile kişilerde aspirasyon riskinin en yüksek olduğu süreç ne zamandır?",
+      "back": "Doğum ve eylem (labor and birth) sırası.",
+      "tag": "ozel"
+    },
+    {
+      "id": "hkp-vip-038",
+      "front": "En az iki antibiyotik sınıfı dışındaki tüm sınıflara karşı duyarsızlık gösteren direnç tanımı nedir?",
+      "back": "Yaygın ilaca dirençli (XDR).",
+      "tag": "direnç"
+    },
+    {
+      "id": "hkp-vip-039",
+      "front": "nvHAP ve VAP florası karşılaştırıldığında, hangi grup patojen nvHAP vakalarında daha az görülür?",
+      "back": "Enterobakteri olmayan gram-negatif basiller (örn. $P.\\ aeruginosa$, Acinetobacter).",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-040",
+      "front": "Gram-negatif direnç riski için ünitedeki sefepim veya piperasilin-tazobaktam direnç oranı eşiği nedir?",
+      "back": "$>\\%10$.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-041",
+      "front": "Ünite bazlı MRSA riski için $S. aureus$ izolatlarının metisiline direnç oranı eşiği kaçtır?",
+      "back": "$>\\%20$.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-042",
+      "front": "VAP ile karışabilen, ateş ve lökositoza neden olan bir vasküler akciğer sorunu nedir?",
+      "back": "İnfarktlı pulmoner emboli.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "hkp-vip-043",
+      "front": "Akciğer grafisi normal olan ancak mikrobiyolojik solunum örneği pozitif gelen bir ventilatör hastasında hangi tanı öncelikle düşünülmelidir?",
+      "back": "Trakeobronşit.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "hkp-vip-044",
+      "front": "HAP ve VAP'ı önlemek için ventilatör serbestleştirme (liberation) protokollerinin amacı nedir?",
+      "back": "Entübasyon süresini minimize ederek maruziyeti azaltmak.",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-045",
+      "front": "Önceki antibiyotik başarısızlığı olmayan erken başlangıçlı nozokomiyal pnömoni için önerilen başlangıç ampirik tedavisi nedir?",
+      "back": "3. kuşak sefalosporin.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-046",
+      "front": "İzole edilen patojen Acinetobacter ise de-eskalasyon sırasında hangi ilaçlar düşünülmelidir?",
+      "back": "Kolistin veya sefiderokol.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-047",
+      "front": "Aspirasyon materyali hava yolunu tıkarsa ve hasta bunu öksürerek atamazsa birincil tedavi yöntemi nedir?",
+      "back": "Bronkoskopi ile temizleme (mekanik aspirasyon).",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-048",
+      "front": "Pnömoni nedeniyle eninde sonunda mekanik ventilasyon gerektiren nvHAP vakalarına ne ad verilir?",
+      "back": "Ventilatör gerektiren hastane kaynaklı pnömoni (VHAP).",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-049",
+      "front": "VAP tanısında kullanılan Klinik Pulmoner Enfeksiyon Skorlaması'nın (CPIS) değeri hakkında kılavuzlar ne demektedir?",
+      "back": "Tanı koymada rolü kısıtlıdır ve rutin kullanımı önerilmez.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-050",
+      "front": "VAP patogenezinde orofaringeal yol dışındaki ek mekanizma nedir?",
+      "back": "Kontamine solunum cihazları ve su rezervuarları ile doğrudan temas.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-051",
+      "front": "HAP için artmış mortalite risk faktörlerinden biri nedir?",
+      "back": "Septik şok veya pnömoni nedeniyle ventilatör desteği gerekmesi.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "hkp-vip-052",
+      "front": "Balgam Gram boyamasında neyin görülmesi Pseudomonas şüphesini güçlü bir şekilde artırır?",
+      "back": "Gram-negatif çomaklar (rods).",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-053",
+      "front": "Lokal MRSA insidansı yüksekse ampirik tedaviye hangi iki ajandan biri eklenmelidir?",
+      "back": "Linezolid veya vankomisin.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "hkp-vip-054",
+      "front": "Trakeostomisi olan bir hastada hangi dirençli patojenler için artmış şüphe gerekir?",
+      "back": "$Pseudomonas\\ aeruginosa$ ve dirençli gram-negatif basiller.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-055",
+      "front": "Bronkoskopi ünitelerinde dezenfeksiyon hataları sonucu hangi patojen ile 'yalancı salgınlar' (pseudo-outbreak) görülebilir?",
+      "back": "$Stenotrophomonas\\ maltophilia$.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-056",
+      "front": "HAP ve VAP vakalarının mikrobiyolojik yapısı tek bir patojenle mi sınırlıdır?",
+      "back": "Hayır, sıklıkla polimikrobiyal olabilirler.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-057",
+      "front": "HAP/VAP önleme paketi içinde yatak başı açısı kaç dereceye yükseltilmelidir?",
+      "back": "$30$ ila $45$ derece.",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-058",
+      "front": "Ventilatör devreleri (circuits) ne sıklıkla değiştirilmelidir?",
+      "back": "Sadece görünür şekilde kirlendiğinde veya arızalandığında.",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-059",
+      "front": "VAP tanımı ekstübasyondan sonraki ne kadarlık süreyi de kapsar?",
+      "back": "İlk $48$ saat.",
+      "tag": "tanim"
+    },
+    {
+      "id": "hkp-vip-060",
+      "front": "Multiplex PCR testlerinin tedavi süresi üzerindeki etkisi nedir?",
+      "back": "Tedavi kürlerini konvansiyonel yöntemlere göre yaklaşık $\\%22$ oranında kısaltabilir.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-061",
+      "front": "Sigara, kalp yetmezliği ve KOAH gibi risk faktörlerinin birleşerek pnömoni riskini katlaması kavramına ne ad verilir?",
+      "back": "Risk faktörü istifleme (Risk factor stacking).",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-062",
+      "front": "Güncel çalışmalar aspirasyon pnömonisinde hangi grup bakterilerin baskınlığını sorgulamaktadır?",
+      "back": "Anaerobik bakteriler.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-063",
+      "front": "Merkezi vasküler kateter ve enteral beslenme hangi patojen için risk faktörüdür?",
+      "back": "Acinetobacter.",
+      "tag": "risk"
+    },
+    {
+      "id": "hkp-vip-064",
+      "front": "VAP gelişimi mekanik ventilasyon süresini ortalama ne kadar uzatır?",
+      "back": "$7.6$ ila $11.5$ gün.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "hkp-vip-065",
+      "front": "HAP riskini ve hastanede kalış süresini azaltabilen fiziksel müdahale nedir?",
+      "back": "Erken mobilizasyon (Early mobility).",
+      "tag": "korunma"
+    },
+    {
+      "id": "hkp-vip-066",
+      "front": "Bilgisayarlı tomografide akciğerde yağ dansitesindeki odaklar hangi pnömoni tipini düşündürür?",
+      "back": "Lipoid pnömoni.",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-067",
+      "front": "VAP şüphesi olan bir hastada balgam kültürü negatif ancak akciğer grafisi normalse ne düşünülmelidir?",
+      "back": "Enfeksiyonun olmadığı veya başka bir odak olduğu (VAP dışlanabilir).",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-068",
+      "front": "Hangi yöntem VAP tanısında daha yüksek duyarlılığa sahiptir: Kantitatif endotrakeal aspirat mı yoksa BAL mı?",
+      "back": "Kantitatif bronkoalveoler lavaj (BAL) kültürü ($\\%75$).",
+      "tag": "tani"
+    },
+    {
+      "id": "hkp-vip-069",
+      "front": "Bakteriyel enfeksiyondan bağımsız olarak asidik mide sıvısının hava yollarında yarattığı inflamatuar reaksiyona ne denir?",
+      "back": "Kimyasal pnömonit.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "hkp-vip-070",
+      "front": "Acinetobacter enfeksiyonları en sık hastanenin hangi bölümünde görülür?",
+      "back": "Yoğun bakım üniteleri (ICU).",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "hkp-vip-071",
+      "front": "HAP'ta de-eskalasyonun (tedaviyi daraltmanın) güvenliği hakkında ne bilinmektedir?",
+      "back": "Antimikrobiyal direnç baskısını azalttığı ve güvenli olduğu görülmektedir.",
+      "tag": "tedavi"
+    }
+  ]
+}

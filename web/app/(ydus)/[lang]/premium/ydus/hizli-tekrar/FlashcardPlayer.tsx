@@ -70,8 +70,13 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
-  const [deck] = useState<Card[]>(() => shuffle(cards));
+  const [deck, setDeck] = useState<Card[]>(cards); // SSR'da orijinal sıra
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setDeck(shuffle(cards));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [flipped, setFlipped] = useState(false);
   const [bilinen, setBilinen] = useState<Set<string>>(new Set());
 

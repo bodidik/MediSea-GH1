@@ -111,6 +111,17 @@
             "YENİ",
             "SINAV SPOTU"
           ]
+        },
+        {
+          "id": "hkp-vip",
+          "baslik": "Hastane Kökenli Pnömoni (HKP) ve VİP",
+          "altbaslik": "MDR patojen riski, ampirik antibiyoterapi, de-eskalasyon ve VİP korunma paketleri",
+          "sure": "20 dk",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     }
