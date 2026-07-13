@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "id": "tkp",
+    "branch": "gogus-hastaliklari",
+    "baslik": "Toplum Kökenli Pnömoni (TKP)",
+    "altbaslik": "Tanımdan ampirik tedaviye — şiddet skorlaması, antibiyotik seçimi, kortikosteroid ve komplikasyon yönetimi",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 7,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "**Toplum kökenli pnömoni (TKP)**, hastane veya sağlık bakımı ortamları dışında kazanılan pulmoner parankimin akut enfeksiyonudur. Hastane kökenli pnömoni (HKP) hastaneye yatıştan ≥48 saat sonra, ventilatör ilişkili pnömoni (VİP) endotrakeal entübasyondan ≥48 saat sonra gelişir."
+        },
+        {
+          "metin": "Önceki yıllarda kullanılan **'Sağlık Bakımı İlişkili Pnömoni (HCAP)'** terimi güncel kılavuzlardan **çıkarılmıştır**; çünkü hastaları MDR patojenler açısından aşırı duyarlı kategorize ederek gereksiz geniş spektrumlu antibiyotik kullanımına yol açmaktaydı."
+        },
+        {
+          "metin": "İnsidans yaşla birlikte belirgin artar; ABD'de ≥65 yaş grupta yatış insidansı 100.000'de ~2000'e ulaşır. **En yüksek riskli komorbidite KOAH**'tır; bunu kalp yetmezliği, inme, diyabet ve immünosupresyon izler."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyoloji — Başlıca Patojenler",
+      "kolonlar": [
+        "Grup",
+        "Etkenler",
+        "Klinik İpucu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Tipik Bakteriler",
+            "S. pneumoniae (en sık), H. influenzae (KOAH'ta), M. catarrhalis",
+            "Pnömokok aşısı yaygınlaştıkça insidans azalmaktadır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Atipik Bakteriler",
+            "Mycoplasma pneumoniae, Chlamydia pneumoniae, Legionella pneumophila",
+            "Beta-laktamlara intrinsik dirençli. Legionella = ağır TKP + hiponatremi + salgın"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Solunum Virüsleri",
+            "İnfluenza A/B, SARS-CoV-2, RSV, Rinovirüs, Parainfluenza",
+            "Vakaların ~1/3'ünde saptanır; viral + bakteriyel koenfeksiyon mortaliteyi artırır"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Dirençli Patojenler ★",
+            "Pseudomonas aeruginosa, MRSA",
+            "Son 90 gün IV AB, yapısal akciğer hst., kolonizasyon öyküsü → risk artar. Nekrotizan/kaviteli pnömoni = MRSA düşün"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "Patogenez — Alveoler Disbiyozis: Sağlıklı alt solunum yolları steril değildir; Prevotella, Veillonella ve Streptococcus içeren bir mikrobiyoma mevcuttur. Pnömoni genellikle nazofarenks patojenlerin mikroaspirasyon → konak savunması yetersizliği + yüksek inokulum/virülans üçlüsüyle gelişir. İnfluenza epitel bariyerini bozarak 'immünolojik boş niş' yaratır → S. pneumoniae veya S. aureus sekonder süperenfeksiyonu. S. pneumoniae: kalın polisakkarit kapsül (fagositozu engeller) + pnömolizin toksini (doku hasarı)."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular",
+      "satirlar": [
+        {
+          "metin": "Klasik tablo: akut başlangıçlı **ateş, pürülan öksürük, dispne ve plöritik göğüs ağrısı**. Fizik muayenede krepitan raller ve konsolidasyon bulguları."
+        },
+        {
+          "metin": "**Yaşlı ve immünosuprese hastalarda ateş olmayabilir.** Akut fonksiyonel düşüş, düşme, mental durum değişikliği (konfüzyon/deliryum) veya açıklanamayan taşipne tek bulgu olabilir — bu grupta pnömoni akla getirilmeli."
+        },
+        {
+          "metin": "Tanı için klinik şüphe **mutlaka radyolojik olarak yeni bir infiltratın gösterilmesiyle** doğrulanmalıdır. Tüm tanısal gelişmelere rağmen hastanede yatan olguların %60'a yakınında etken saptanamamaktadır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Görüntüleme ve Mikrobiyolojik Testler",
+      "kolonlar": [
+        "Yöntem",
+        "Kullanım Durumu",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Akciğer Grafisi",
+            "İlk basamak — tüm hastalarda",
+            "Standart yaklaşım"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Akciğer USG (LUS) ★",
+            "Fokal B-çizgileri, subplevral konsolidasyon, dinamik hava bronkogramı",
+            "ATS/IDSA: Uygun uzmanlıkta grafiye alternatif olarak koşullu öneri"
+          ]
+        },
+        {
+          "hucreler": [
+            "Toraks BT",
+            "Şüpheli vaka, immünosupresyon, komplikasyon şüphesi",
+            "Yüksek çözünürlüklü BT hayat kurtarıcı olabilir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Mikrobiyolojik Test",
+            "Hafif ayaktan: Rutin önerilmez (epidemi dışında). Yatan hasta: Kan kültürü + balgam Gram/kültür. Ağır TKP: + idrar Legionella/pnömokok Ag + solunum PCR paneli",
+            "Ağır TKP'de sendromik panel zorunlu"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Prokalsitonin (PCT) ★",
+            "Tek başına tanı koydurucı değil. Seri ölçüm: <0.25 ng/mL veya pik değerden ≥%80 düşüş → AB tedavisi güvenle kesilebilir",
+            "AB süresi kısaltmada değerli rehber"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Hastalık Şiddeti Skorlaması — Triage",
+      "kolonlar": [
+        "Sistem",
+        "Parametreler",
+        "Karar Eşiği"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PSI/PORT ★ (Tercih edilen)",
+            "Yaş, ek hastalıklar, yaşamsal bulgular, lab",
+            "Sınıf I-II → Ayaktan | Sınıf III → Ayaktan/kısa gözlem | Sınıf IV-V → Yatış"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "CURB-65",
+            "Konfüzyon · Üre >20 mg/dL · Solunum ≥30 · KB sistolik <90 veya diastolik ≤60 · Yaş ≥65",
+            "0-1 → Ayaktan | 2 → Servis | ≥3 → YBÜ"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "ATS/IDSA YBÜ Kriterleri ★",
+            "Majör (1'i yeterli): Vazopresör gerektiren septik şok VEYA invaziv MV. Minör (≥3): SFH ≥30, PaO2/FiO2 ≤250, multilober infiltrat, konfüzyon, üremi, lökopeni, trombositopeni, hipotermi, hipotansiyon",
+            "1 majör VEYA ≥3 minör → KESİN YBÜ"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ampirik Antibiyoterapi — Hasta Grubuna Göre",
+      "kolonlar": [
+        "Hasta Grubu",
+        "Tercih Edilen Rejim",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Ayaktan — Komorbiditesiz",
+            "Yüksek doz Amoksisilin (1g 3×1) VEYA Doksisiklin VEYA Makrolid",
+            "Makrolid: Yerel pnömokok direnci <%25 ise"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ayaktan — Komorbiditeli",
+            "Amoks-klavulanat + Makrolid/Doksisiklin VEYA Solunum Florokinolonu (tek)",
+            "Levofloksasin veya moksifloksasin"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Servis — Ağır Olmayan TKP",
+            "Anti-pnömokoksik β-laktam (Seftriakson/Sefotaksim/Amp-sulbaktam/Ertapenem) + Makrolid VEYA Solunum Florokinolonu",
+            "Makrolid kombinasyonu immünomodülatör etki → sağkalım avantajı"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "YBÜ — Ağır TKP ★",
+            "β-laktam (Seftriakson/Sefotaksim/Amp-sulbaktam) + Makrolid VEYA β-laktam + Solunum Florokinolonu",
+            "YBÜ'de florokinolon MONOTERAPİSİ önerilmez"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Pseudomonas / MRSA Riski ★",
+            "Psödomonal: + Anti-psödomonal β-laktam (Pip-taz, Sefepim, Meropenem). MRSA: + Vankomisin VEYA Linezolid",
+            "Risk: son 90 gün IV AB, yapısal akciğer hst., kolonizasyon öyküsü"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Viral Test (+) Durumu ★",
+            "Yatan hasta veya komorbiditeli ayaktan hasta → Viral kanıt olsa dahi ampirik AB VER (koenfeksiyon riski)",
+            "Yalnızca komorbiditesiz + ayaktan + hafif viral pnömonide AB kesilmesi değerlendirilebilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Kortikosteroid — CAPE COD Kuralı: Şiddetli TKP (sCAP) tablolarında sistemik kortikosteroid (hidrokortizon sürekli infüzyon veya metilprednizolon bölünmüş doz) önerilmektedir. ANCAK İNFLUENZA PNÖMONİSİNDE STEROİD KONTRENDIKE — sekonder bakteriyel enfeksiyonlar ve mortaliteyi artırır. CAPE COD çalışması ve ATS/IDSA güncellemeleri baz alınmalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tedavi Süresi ve Taburculuk",
+      "satirlar": [
+        {
+          "metin": "Uzamış antibiyotik tedavisi direnç gelişimine ve **C. difficile enfeksiyonuna** yol açar. **Klinik stabilizasyon kriterleri:** 48-72 saatte ateşsiz + O2 saturasyonu stabil + kalp hızı ≤100, solunum hızı ≤24, sistolik KB >90 → **3-5 günlük kısa süreli tedavi yeterlidir.**"
+        },
+        {
+          "metin": "Komplike enfeksiyonlarda (apse, ampiyem, nekrotizan pnömoni, Pseudomonas) süre uzatılmalıdır. Klinik stabilizasyon sağlandığı anda **IV'den oral tedaviye geçilmeli** ve taburculuk planlanmalıdır."
+        },
+        {
+          "metin": "**Antibiyotik başlama zamanı kritik:** Klinik teşhis sonrası mümkün olan en kısa sürede, ideal olarak yatışın ilk **4 saati** içinde başlanmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Komplikasyonlar ve Hastalığın Seyri",
+      "kolonlar": [
+        "Komplikasyon",
+        "Mekanizma / Özellik",
+        "Yönetim"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kardiyovasküler (AMİ, KY, İnme, Aritmi)",
+            "Disregüle inflamasyon → miyokard hasarı. Akut dönemde sık — mortaliteyi doğrudan etkiler",
+            "Kardiyak monitorizasyon, risk faktörü yönetimi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Parapnömonik Efüzyon / Ampiyem",
+            "Plevral alana invazyon",
+            "Drenaj gerektirir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Radyolojik Gecikmiş İyileşme",
+            "İleri yaş ve yapısal akciğer hst. varlığında infiltratlar 4-12 hafta sürebilir",
+            "Rutin takip grafisi önerilmez. Malignite şüphesinde (ileri yaş, yoğun sigara) BT ile kanser taraması"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Non-rezolving (Çözülmeyen) Pnömoni ★",
+            "Beklenen sürede iyileşme yoksa: Dirençli patojen, tüberküloz, fungal, KOP (kriptojenik organize pnömoni), malignite",
+            "Toraks BT + Bronkoskopi ile ayırıcı tanı"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "TKP — 7 Altın Kural: (1) HCAP terimi artık kullanılmıyor — gereksiz geniş spektrum tetikler. (2) AB'yi ilk 4 saatte başla. (3) PSI/PORT tercih edilen triage sistemi; YBÜ için 1 majör VEYA ≥3 minör ATS/IDSA kriteri. (4) Ağır TKP'de β-laktam + makrolid kombinasyonu (immünomodülatör avantaj); YBÜ'de florokinolon monoterapisi önerilmez. (5) Viral kanıt = Yatan/komorbiditeli hastaya AB yine de ver. (6) Şiddetli TKP'de steroid ver ama influenzada KESİNLİKLE VERme. (7) PCT rehberliğiyle AB'yi 3-5 günde kes — kısa tedavi yeterli."
+    }
+  ]
+}

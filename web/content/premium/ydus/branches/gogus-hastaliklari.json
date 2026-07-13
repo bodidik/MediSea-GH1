@@ -16,19 +16,26 @@
         {
           "id": "sarkoidoz",
           "baslik": "Sarkoidoz",
-          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
           "hazir": true
         },
         {
           "id": "ipf",
           "baslik": "İdiyopatik Pulmoner Fibrozis (IPF)",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         },
         {
           "id": "hipersensitivite-pnomonisi",
           "baslik": "Hipersensitivite Pnömonisi",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
@@ -42,13 +49,17 @@
         {
           "id": "koah",
           "baslik": "KOAH",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         },
         {
           "id": "astim",
           "baslik": "Astım",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
@@ -62,7 +73,9 @@
         {
           "id": "plevral-efuzyon",
           "baslik": "Plevral Efüzyon — Tanısal Yaklaşım",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
@@ -76,22 +89,28 @@
         {
           "id": "ards",
           "baslik": "ARDS",
-          "rozetler": ["YAKINDA"],
+          "rozetler": [
+            "YAKINDA"
+          ],
           "hazir": false
         }
       ]
     },
     {
-      "id": "akciger-kanseri",
-      "baslik": "Akciğer Kanseri",
-      "aciklama": "Tarama, evreleme, moleküler profilleme ve KHDAK/KHAK tedavi algoritmaları",
-      "emoji": "🎗️",
+      "id": "enfeksiyon",
+      "baslik": "Enfeksiyon Hastalıkları",
+      "ikon": "🦠",
       "konular": [
         {
-          "id": "akciger-kanseri",
-          "baslik": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
-          "rozetler": ["YENİ", "SINAV SPOTU"],
-          "hazir": true
+          "id": "tkp",
+          "baslik": "Toplum Kökenli Pnömoni (TKP)",
+          "altbaslik": "Tanım, etiyoloji, şiddet skorlaması, ampirik tedavi ve komplikasyonlar",
+          "sure": "25 dk",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     }

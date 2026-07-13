@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "topicId": "tkp",
+    "quizId": "tkp-quiz-1",
+    "branch": "gogus-hastaliklari",
+    "baslik": "TKP Soru Bankası — Bölüm 1",
+    "toplam": 7
+  },
+  "sorular": [
+    {
+      "id": "tkp-s1",
+      "metin": "65 yaşında erkek hasta; 3 gündür öksürük, ateş ve pürülan balgam şikâyetiyle başvuruyor. Muayenede konfüzyon (+), solunum sayısı 32/dk, TA 85/55 mmHg, BUN 28 mg/dL. Akciğer grafisinde sağ alt lobda konsolidasyon saptanıyor. Bu hastanın CURB-65 skoru kaçtır ve doğru yönetim nedir?",
+      "secenekler": {
+        "A": "CURB-65: 3 — Ayaktan oral antibiyotik tedavisi",
+        "B": "CURB-65: 4 — YBÜ transferi değerlendirmesi gerekir",
+        "C": "CURB-65: 3 — Servis yatışı, IV antibiyotik",
+        "D": "CURB-65: 5 — Direkt ayaktan tedavi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Konfüzyon + Üre↑ + SFH≥30 + Hipotansiyon = 4 puan → YBÜ değerlendirmesi",
+      "aciklama_detay": "CURB-65: Konfüzyon (1) + BUN >20 mg/dL (1) + Solunum ≥30 (1) + sistolik KB <90 (1) + Yaş ≥65 (1) = toplam 5 üzerinden bu hastada 4 puan. CURB-65 ≥3 → YBÜ transferi değerlendirilmeli. Dikkat: Hipotansiyon tek başına ATS/IDSA major YBÜ kriteri için vazopresör gerektirip gerektirmediğine bakılmalı; ancak CURB-65 ≥3 yatış endikasyonunu zaten belirler.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — CURB-65 skoru 4; ayaktan tedavi ağır TKP'de kontrendike.",
+        "B": "Doğru — 4 puan, YBÜ değerlendirmesi gerektirir.",
+        "C": "Yanlış — Skor 3 değil 4; ayrıca 4 puan servis değil YBÜ kararı alınmasını gerektirir.",
+        "D": "Yanlış — Skor 5 değil 4; ayaktan tedavi hiç uygun değil."
+      },
+      "etiketler": [
+        "CURB-65",
+        "Şiddet skorlaması",
+        "YBÜ"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA TKP Kılavuzu"
+    },
+    {
+      "id": "tkp-s2",
+      "metin": "Yatılı bakım evinde kalan 72 yaşında bayan, akut konfüzyon ve düşük dereceli ateş ile getiriliyor. Muayenede ateş 37.4°C, solunum sayısı 26/dk, O2 saturasyonu %89. Ailesi 'ateşi yok, sadece davranış değişikliği var' diyor. Akciğer grafisinde sol alt lobda yeni infiltrat saptanıyor. Bu hastada pnömoni teşhisi nasıl yorumlanmalıdır?",
+      "secenekler": {
+        "A": "Düşük ateş nedeniyle pnömoni olası değil, başka neden araştırılmalı",
+        "B": "Yaşlı hastalarda ateş olmaksızın konfüzyon ve taşipne TKP'nin tek belirtisi olabilir; tanı radyolojik bulguyla doğrulanmıştır",
+        "C": "TKP tanısı için ≥38.5°C ateş şartı aranmalıdır",
+        "D": "Konfüzyon bakım evi kökenli olduğundan HCAP protokolüne göre yönetilmeli"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yaşlılarda klasik ateş yoktur; konfüzyon/taşipne tek bulgu olabilir. HCAP terimi artık kullanılmıyor.",
+      "aciklama_detay": "İleri yaş ve immünosupresyonda inflamatuar yanıt köreldığından ateş olmayabilir. Akut mental durum değişikliği, düşme veya açıklanamayan taşipne pnömoninin tek belirtisi olabilir. Bu grupta pnömoni akla getirilmeli ve radyolojik doğrulama yeterlidir. Ayrıca HCAP terimi güncel kılavuzlardan kaldırılmıştır; bakım evi kökenli olmak artık otomatik olarak geniş spektrum tetiklememektedir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Yaşlılarda ateş klasik belirtilerin en sık eksik olanıdır.",
+        "B": "Doğru — Klinik + radyolojik tanı konulmuş; yaşlıda atipik prezentasyon normaldir.",
+        "C": "Yanlış — Ateş eşiği tanım kriteri değildir.",
+        "D": "Yanlış — HCAP terimi 2019 ATS/IDSA güncellemesiyle kaldırılmıştır."
+      },
+      "etiketler": [
+        "Yaşlı hasta",
+        "Atipik prezentasyon",
+        "HCAP"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ATS/IDSA TKP Kılavuzu 2019"
+    },
+    {
+      "id": "tkp-s3",
+      "metin": "40 yaşında daha önce sağlıklı erkek hasta; seyahat sonrası 5 günlük ateş, rölatif bradikardi, konfüzyon, ishal ve öksürük ile başvuruyor. Serum sodyumu 128 mEq/L. Akciğer grafisinde diffüz bilateral infiltratlar, LDH ve SGOT yüksek. İdrar Legionella antijen testi hangi durumda negatif çıkabilir ve en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "L. pneumophila serogrup 1 dışı suşlarda negatif; Azitromisin veya Solunum Florokinolonu",
+        "B": "Tüm Legionella suşlarını yakalar; Ampisilin-sulbaktam",
+        "C": "L. pneumophila serogrup 1 dışı suşlarda negatif; Beta-laktam monoterapisi yeterli",
+        "D": "İdrar Ag testi tüm atipikleri gösterir; ek teste gerek yok"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İdrar Legionella Ag → yalnızca Lp serogrup 1. Tedavi: Makrolid veya solunum florokinolonu — beta-laktamlar etkisiz.",
+      "aciklama_detay": "İdrar Legionella antijen testi yalnızca L. pneumophila serogrup 1'i (salgın vakalarının ~%80'i) saptayabilir. Diğer Legionella türleri ve serogruplarında negatif kalır. Klinik tablo (hiponatremi + rölatif bradikardi + GİS bulgular + ekstrapulmoner tutulum) Legionella lehine güçlü kanıttır. Tedavide beta-laktamlar intrinsik dirençli olduğundan etkisizdir; azitromisin veya levofloksasin/moksifloksasin tercih edilir.",
+      "secenekAciklamalari": {
+        "A": "Doğru — Hem sınırlılık hem de tedavi seçimi doğru.",
+        "B": "Yanlış — Test sadece Lp Sg-1'i yakalar; beta-laktam etkisiz.",
+        "C": "Yanlış — Beta-laktamlar Legionella'ya karşı intrinsik dirençli.",
+        "D": "Yanlış — Diğer atipikler (Mycoplasma, Chlamydia) idrar Legionella Ag ile saptanmaz."
+      },
+      "etiketler": [
+        "Legionella",
+        "Atipik pnömoni",
+        "İdrar antijen testi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ATS/IDSA TKP Kılavuzu"
+    },
+    {
+      "id": "tkp-s4",
+      "metin": "55 yaşında KOAHlı hasta, influenza PCR (+) ile acile başvuruyor. Muayenede ateş 39°C, solunum sayısı 24/dk, O2 sat. %91 (oda havası), TA 110/70 mmHg. Akciğer grafisinde sağ alt lobda yeni infiltrat mevcut. Hastayı servise yatırıyorsunuz. Antibiyotik tedavisi hakkında ne yapmalısınız?",
+      "secenekler": {
+        "A": "Viral pnömoni olduğu için antibiyotik verme, yalnızca oseltamivir başla",
+        "B": "Yatan hasta + komorbiditeli + viral kanıt olsa bile ampirik antibiyotik ver; oseltamivir de ekle",
+        "C": "Sadece MRSA kapsamlı antibiyotik ver, standart TKP rejimi influenzada işe yaramaz",
+        "D": "Solunum florokinolonu monoterapisi yeterli"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yatan/komorbiditeli hastada viral kanıt olsa dahi AB ver — koenfeksiyon riski yüksek.",
+      "aciklama_detay": "İnfluenza epitel bariyerini bozarak sekonder bakteriyel süperenfeksiyon (S. pneumoniae, S. aureus-MRSA) riskini belirgin artırır. Güncel ATS/IDSA kılavuzu: Yatan hasta VEYA komorbiditeli ayaktan hasta grubunda influenza PCR pozitif olsa bile ampirik antibiyotik tedavisine devam edilmelidir. Yalnızca komorbiditesiz + hafif + ayaktan grupta antibiyotiği kesmek değerlendirilebilir. Bu hastada KOAH + servis yatışı → antibiyotik şart. Oseltamivir de eklenmeli.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Yatan + KOAH'lı hastada influenza pozitifliği antibiyotiği kesmek için yeterli değil.",
+        "B": "Doğru — Koenfeksiyon riski nedeniyle ampirik AB zorunlu.",
+        "C": "Yanlış — Rutin MRSA kapsamı gerekmez; standart TKP rejimi uygundur.",
+        "D": "Yanlış — YBÜ dışında florokinolon monoterapisi kabul edilebilir ama solunum florokinolonu tek başına influenzalı hastada yeterli değil; hem antiviral hem de antibiyotik gerekir."
+      },
+      "etiketler": [
+        "İnfluenza",
+        "Koenfeksiyon",
+        "Antibiyotik kararı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA TKP Kılavuzu"
+    },
+    {
+      "id": "tkp-s5",
+      "metin": "Ağır TKP tanısıyla YBÜ'ye alınan 60 yaşında diyabetik kadın hasta, influenza PCR negatif. Enfeksiyon hastalıkları konsültanı kortikosteroid başlanmasını öneriyor. Aşağıdakilerden hangisi bu öneride YANLIŞ ifade edilmiştir?",
+      "secenekler": {
+        "A": "CAPE COD çalışması kortikosteroidin sCAP'ta mortaliteyi azalttığını göstermiştir",
+        "B": "Hidrokortizon infüzyonu veya metilprednizolon bölünmüş doz uygulanabilir",
+        "C": "İnfluenza PCR negatif olduğundan kortikosteroid güvenle uygulanabilir",
+        "D": "Kortikosteroid sCAP dahil tüm TKP vakalarında rutin önerilir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kortikosteroid yalnızca şiddetli TKP'de (sCAP) önerilir — tüm TKP'de rutin değil.",
+      "aciklama_detay": "ATS/IDSA ve CAPE COD çalışması verileri: Kortikosteroid (hidrokortizon ya da metilprednizolon) yalnızca şiddetli TKP (sCAP) grubunda önerilmektedir; tüm TKP hastalarına rutin verilmez. İnfluenza pozitif TKP'de kortikosteroid KESİNLİKLE kontrendike — sekonder bakteriyel enfeksiyon ve mortalite artar. Bu hastada influenza PCR negatif ve sCAP var → kortikosteroid uygundur. Ancak 'tüm TKP'de rutin' ifadesi yanlıştır.",
+      "secenekAciklamalari": {
+        "A": "Doğru ifade — CAPE COD steroidin sCAP'ta faydasını gösterdi.",
+        "B": "Doğru ifade — İki uygulama biçimi de geçerli.",
+        "C": "Doğru ifade — İnfluenza negatifse kontrendikasyon kalkar.",
+        "D": "YANLIŞ ifade — Rutin değil, yalnızca sCAP'ta önerilir. Bu YANLIŞ olan seçenek."
+      },
+      "etiketler": [
+        "Kortikosteroid",
+        "sCAP",
+        "CAPE COD",
+        "Influenza tuzağı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "CAPE COD 2023, ATS/IDSA"
+    },
+    {
+      "id": "tkp-s6",
+      "metin": "35 yaşında IV ilaç kullanım öyküsü olan hasta; yüksek ateş, hemoptizi ve hızla kötüleşen solunum yetmezliği ile başvuruyor. Akciğer BT'sinde bilateral multiple kaviteli konsolidasyonlar izleniyor. Kan kültürleri alınıyor. Bu klinik tabloda en olası etken ve ampirik tedaviye eklenmesi gereken ajan nedir?",
+      "secenekler": {
+        "A": "Legionella pneumophila — Azitromisin eklenmeli",
+        "B": "Mycoplasma pneumoniae — Doksisiklin eklenmeli",
+        "C": "MRSA — Vankomisin veya Linezolid eklenmeli",
+        "D": "Pseudomonas aeruginosa — Kolistin eklenmeli"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Nekrotizan / kaviteli pnömoni + IV ilaç kullanımı = MRSA düşün → Vankomisin veya Linezolid.",
+      "aciklama_detay": "Kaviteli ve nekrotizan pnömoni MRSA'nın klasik presentasyonudur. Risk faktörleri: IV ilaç kullanımı, daha önce MRSA kolonizasyonu, son 90 gün içinde IV antibiyotik kullanımı. Tedaviye Vankomisin (IV) veya Linezolid eklenmesi gerekir. Linezolid akciğer dokusuna daha iyi penetrasyon sağlar. Pseudomonas da kavite yapabilir ancak bu klinik bağlamda (genç + IVDU + bilateral kavite + fulminan seyir) MRSA önceliklidir; Pseudomonas kapsam gerekiyorsa anti-psödomonal beta-laktam eklenir, kolistin rutin ilk basamak değildir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Legionella kavite yapmaz; bu tablo için karakteristik değil.",
+        "B": "Yanlış — Mycoplasma hafif-orta tablo yapar, kavite yapmaz.",
+        "C": "Doğru — MRSA, kaviteli nekrotizan pnömoninin klasik etkeni.",
+        "D": "Yanlış — Pseudomonas riski varsa eklenir; ancak IVDU'da MRSA öncelikli. Kolistin ilk basamak değil."
+      },
+      "etiketler": [
+        "MRSA",
+        "Nekrotizan pnömoni",
+        "IV ilaç kullanımı",
+        "Kaviteli pnömoni"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ATS/IDSA TKP Kılavuzu"
+    },
+    {
+      "id": "tkp-s7",
+      "metin": "TKP tanısıyla serviste yatan hasta 48. saatte klinik yanıt veriyor: Ateşsiz, solunum sayısı 18/dk, oral alım tam, TA ve O2 sat. normal. Prokalsitonin başlangıçta 2.8 ng/mL idi; kontrol değeri 0.5 ng/mL. Antibiyotik tedavisi hakkında ne yapmalısınız?",
+      "secenekler": {
+        "A": "PCT hâlâ >0.25 ng/mL olduğundan en az 10 gün daha devam et",
+        "B": "Klinik stabilizasyon + PCT ≥%80 düşüş → Oral tedaviye geç ve toplam 3-5 günde antibiyotiği kes",
+        "C": "IV tedaviye 7 gün devam et, sonra oral geç",
+        "D": "PCT rehberliği güvenilir değil; klinik bulgulara göre 14 gün tamamla"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PCT pik değerden ≥%80 düşüş (2.8→0.5 = %82↓) + klinik stabilizasyon → 3-5 günde AB kesilebilir.",
+      "aciklama_detay": "PCT 2.8'den 0.5 ng/mL'ye düşmüş = %82 azalma, bu ≥%80 eşiğini karşılıyor. Ayrıca klinik stabilizasyon kriterleri de sağlanmış (ateşsiz, normal vital bulgular, oral alım tam). ATS/IDSA: PCT <0.25 ng/mL VEYA pik değerden ≥%80 düşüş → antibiyotik güvenle kesilebilir. Kısa süreli tedavi (3-5 gün) uzun süreliye göre C. difficile riski ve direnç gelişimini azaltır. IV'den oral geçiş kriterleri de karşılanmıştır — oral tedaviye geçilip kısa sürede tamamlanabilir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — PCT mutlak değer <0.25 ng/mL VEYA ≥%80 düşüş yeterli; 10 gün uzatmak gerekmez.",
+        "B": "Doğru — Her iki PCT kriteri de sağlanmış, klinik stabil.",
+        "C": "Yanlış — Oral geçiş kriterleri çoktan karşılandı; 7 gün IV gereksiz.",
+        "D": "Yanlış — PCT seri ölçüm AB kesilmesinde validasyonu güçlü bir rehberdir."
+      },
+      "etiketler": [
+        "PCT",
+        "Antibiyotik süresi",
+        "IV→PO geçiş",
+        "Kısa tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA TKP Kılavuzu, PCT çalışmaları"
+    }
+  ]
+}
