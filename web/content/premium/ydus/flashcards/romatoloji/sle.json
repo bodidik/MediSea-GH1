@@ -1,0 +1,476 @@
+{
+  "id": "fc-romato-sle-001",
+  "accessLevel": "premium",
+  "topic": "Sistemik Lupus Eritematozus (SLE)",
+  "description": "YDUS Romatoloji serisi: SLE patogenezi, 2019 EULAR/ACR sınıflandırma kriterleri, organ tutulumları, lupus nefriti evreleme ve basamaklı tedavi stratejilerini kapsayan hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Sistemik lupus eritematozus (SLE) patogenezindeki temel immünolojik kusur nedir?",
+      "back": "Nükleer antijenlere karşı oluşan otoantikorların immün kompleksler kurarak doku hasarına yol açması.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-2",
+      "front": "SLE hastalarının yaklaşık yüzde kaçını doğurganlık çağındaki kadınlar oluşturur?",
+      "back": "$\\%85-90$.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-3",
+      "front": "SLE tanısında neredeyse $\\%100$ duyarlılığa sahip olan tarama testi hangisidir?",
+      "back": "Antinükleer antikor (ANA) testi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-4",
+      "front": "2019 EULAR/ACR SLE sınıflandırma kriterlerine göre giriş kriteri (entry criterion) nedir?",
+      "back": "HEp-2 hücrelerinde $\\ge 1:80$ titrede pozitif ANA saptanması.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-5",
+      "front": "2019 EULAR/ACR kriterlerinde tek başına 10 puan kazandırarak SLE sınıflandırması sağlayan bulgu nedir?",
+      "back": "Biyopsi ile kanıtlanmış Sınıf III veya Sınıf IV lupus nefriti.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-6",
+      "front": "SLE'ye özgüllüğü yüksek olan ancak duyarlılığı düşük ($\\%30$) olan otoantikor hangisidir?",
+      "back": "Anti-Smith (Anti-Sm) antikoru.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-7",
+      "front": "SLE hastalarında görülen ve eklem erozyonu yapmayan, ancak tendon laksitesine bağlı gelişen geri dönüşümlü deformiteye ne ad verilir?",
+      "back": "Jaccoud artropatisi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-8",
+      "front": "SLE'de anti-Ro (SS-A) antikor pozitifliği ile ilişkili olan spesifik deri döküntüsü hangisidir?",
+      "back": "Subakut kutanöz lupus eritematozus (SCLE).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-9",
+      "front": "Sistemik lupus eritematozus alevlenmeleri sırasında serum kompleman düzeylerinde (C3, C4) ne yönde bir değişim beklenir?",
+      "back": "Kompleman tüketimine bağlı olarak düzeylerde düşüş.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-10",
+      "front": "SLE tanısı alan tüm hastalarda kontraendikasyon yoksa sağkalımı artırmak ve alevlenmeleri önlemek için kullanılması gereken temel ilaç hangisidir?",
+      "back": "Hidroksiklorokin.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-11",
+      "front": "Hidroksiklorokin kullanan hastalarda yıllık olarak takip edilmesi gereken en önemli toksisite türü nedir?",
+      "back": "Retinal toksisite (retinopati).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-12",
+      "front": "Lupus nefriti indüksiyon tedavisinde kullanılan 'Euro-Lupus' siklofosfamid rejimi dozu nasıldır?",
+      "back": "2 haftada bir, toplam 6 kez, 500 mg intravenöz doz.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-13",
+      "front": "Lupus nefriti tedavisinde 12. ayda hedeflenen proteinüri düzeyi (tam klinik yanıt) nedir?",
+      "back": "$< 0.5-0.7$ g/24 saat.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-14",
+      "front": "Sık alevlenen veya standart tedaviye dirençli, böbrek dışı SLE vakalarında onaylanmış olan B-hücre aktive edici faktör (BAFF) inhibitörü monoklonal antikor hangisidir?",
+      "back": "Belimumab.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-15",
+      "front": "Tip 1 interferon reseptörünü bloke ederek orta ve şiddetli böbrek dışı SLE tedavisinde kullanılan yeni ajan hangisidir?",
+      "back": "Anifrolumab.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-16",
+      "front": "SLE'li bir gebede anti-Ro (SS-A) ve anti-La (SS-B) antikorlarının plasentadan geçmesi fetüste hangi kalıcı duruma yol açabilir?",
+      "back": "Konjenital kalp bloğu.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-17",
+      "front": "İlaçla indüklenen lupus (DIL) tablosunda en sık pozitifleşen otoantikor hangisidir?",
+      "back": "Anti-histon antikoru.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-18",
+      "front": "SLE'de tanıdan sonraki ilk birkaç yıl içinde en yaygın ölüm nedeni nedir?",
+      "back": "Fırsatçı enfeksiyonlar ve aktif hastalık (böbrek veya MSS tutulumu).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-19",
+      "front": "SLE'de tanıdan 5 yıl sonra gelişen mortalitenin en önemli ve yaygın nedeni nedir?",
+      "back": "Hızlanmış ateroskleroz ve buna bağlı kardiyovasküler hastalıklar.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-20",
+      "front": "Lupus nefritinde idame tedavisinde mikofenolat mofetile alternatif olarak, özellikle gebelik planı olanlarda tercih edilen ajan hangisidir?",
+      "back": "Azatioprin.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-21",
+      "front": "Harrison's'a göre; halsizlik, beyin sisi ve depresyon gibi semptomların ön planda olduğu, immünsüpresyona dirençli lupus alt tipi nedir?",
+      "back": "Tip 2 Lupus.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-22",
+      "front": "SLE hastalarında görülen verrukoz kapak lezyonları ile karakterize steril endokardit türüne ne ad verilir?",
+      "back": "Libman-Sacks endokarditi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-23",
+      "front": "Lupus nefritinde proteinüriyi azaltmak için tüm evrelerde (Sınıf III, IV, V) tedaviye eklenmesi önerilen antihipertansif ilaç grupları nelerdir?",
+      "back": "ACE inhibitörleri veya Anjiyotensin Reseptör Blokerleri (ARB).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-24",
+      "front": "SLE'de görülen ve zayıflık, mesane disfonksiyonu ve duyusal seviye kaybı ile karakterize acil nörolojik durum nedir?",
+      "back": "Transvers miyelit.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-25",
+      "front": "Lupus nefriti tanısında renal biyopsi endikasyonu için proteinüri eşik değeri kaçtır?",
+      "back": "$> 0.5$ g/24 saat (veya UPCR $> 500$ mg/g).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-26",
+      "front": "EULAR 2021 önerilerine göre SLE hastalarında hedeflenen ideal kan basıncı değeri nedir?",
+      "back": "$< 130/80$ mmHg.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-27",
+      "front": "Gebelik sırasında SLE alevlenmelerini önleyen ve kullanımı güvenli olan antimalaryal ilaç hangisidir?",
+      "back": "Hidroksiklorokin.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-28",
+      "front": "Siklofosfamid tedavisi alan kadın hastalarda erken over yetmezliği riskini azaltmak için hangi ajan kullanılabilir?",
+      "back": "Gonadotropin salgılatıcı hormon (GnRH) analogları.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-29",
+      "front": "Lupus nefriti Sınıf V klinik olarak ne şekilde adlandırılır?",
+      "back": "Membranöz lupus nefriti.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-30",
+      "front": "SLE hastalarında sigara kullanımı, hangi ilaç grubunun terapötik yanıtını azaltır?",
+      "back": "Antimalaryallar (örneğin hidroksiklorokin).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-31",
+      "front": "SLE'de en sık görülen pulmoner manifestasyon nedir?",
+      "back": "Plörit (plevral efüzyonla birlikte veya efüzyonsuz).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-32",
+      "front": "Lupus pannikülitinin diğer adı nedir?",
+      "back": "Lupus profundus.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-33",
+      "front": "SLE'de anti-dsDNA antikor titresi ile hangi organ tutulumu arasında güçlü bir korelasyon vardır?",
+      "back": "Böbrek tutulumu (Lupus Nefriti).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-34",
+      "front": "2019 EULAR/ACR kriterlerine göre, 'Ateş' (Fever) klinik bulgusu kaç puan değerindedir?",
+      "back": "2 puan.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-35",
+      "front": "SLE'de görülen ve soğuk maruziyeti ile parmaklarda gelişen triafazik renk değişikliği tablosu nedir?",
+      "back": "Raynaud fenomeni.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-36",
+      "front": "Hidroksiklorokin dozu retinal toksisite riskini azaltmak için günlük maksimum kaç mg/kg (ideal vücut ağırlığı) olmalıdır?",
+      "back": "$5$ mg/kg.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-37",
+      "front": "Lupus nefriti indüksiyonunda mikofenolat mofetil (MMF) için önerilen günlük hedef doz aralığı nedir?",
+      "back": "Günlük $2-3$ g.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-38",
+      "front": "SLE'li bir hastada albumin düzeyi $< 20$ g/L olan nefrotik sendrom varlığında hangi tedavi düşünülmelidir?",
+      "back": "Antikoagülan tedavi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-39",
+      "front": "SLE hastalarında lenfoma ve serviks kanseri riskindeki artış nedeniyle hangi taramaların titiz yapılması önerilir?",
+      "back": "Kanser taramaları.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-40",
+      "front": "Sınıf III ve IV lupus nefritinde kullanılan 'NIH' siklofosfamid rejimi dozu nedir?",
+      "back": "6 ay boyunca ayda bir $0.5-1$ g/$m^2$ intravenöz doz.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-41",
+      "front": "Yeni bir kalsinörin inhibitörü olan Voclosporin, hangi ilaçla kombine edilerek lupus nefriti tedavisinde onay almıştır?",
+      "back": "Mikofenolat mofetil.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-42",
+      "front": "SLE hastalarında 'beyin sisi' ve yorgunluk gibi semptomları iyileştirmede en faydalı olduğu belirtilen ilaç hangisidir?",
+      "back": "Hidroksiklorokin.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-43",
+      "front": "Lupus artritinin romatoid artritten en önemli radyolojik farkı nedir?",
+      "back": "Lupus artritinde genellikle radyolojik erozyon görülmemesi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-44",
+      "front": "SLE'li hastalarda görülen ve özellikle kalça/diz ağrısı ile seyreden, steroid kullanımıyla ilişkili morbidite nedeni nedir?",
+      "back": "Avasküler nekroz.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-45",
+      "front": "Lupus nefriti tedavisinde 'idame' (maintenance) fazı en az ne kadar sürmelidir?",
+      "back": "$36$ ay (3 yıl).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-46",
+      "front": "SLE'li bir kadın hastada gebelik için önerilen 'güvenli pencere' nedir?",
+      "back": "Hastalığın en az 6 aydır remisyonda veya inaktif olması.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-47",
+      "front": "Antifosfolipid antikorları pozitif olan SLE hastalarında hangi hormonal tedaviler kontrendikedir?",
+      "back": "Östrojen içeren kontraseptifler ve hormon replasman tedavileri.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-48",
+      "front": "Lupus nefriti tanısı alan çocuklarda tedavi prensipleri yetişkinlerden farklı mıdır?",
+      "back": "Hayır, yetişkin hastalığıyla aynı prensipler ve doz ayarlamaları takip edilir.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-49",
+      "front": "SLE hastalarında yıllık yapılması önerilen rutin aşılar nelerdir?",
+      "back": "İnfluenza ve Pnömokok aşıları.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-50",
+      "front": "Tip 1 interferon (IFN) gen imzasının yüksek olması SLE'de hangi klinik durumun bir işaretidir?",
+      "back": "Hastalık aktivitesinin yüksekliği.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-51",
+      "front": "SLE'de görülen hematolojik bozukluklardan lökopeni sınırı kaçtır?",
+      "back": "$< 4000/\\mu L$.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-52",
+      "front": "SLE'de görülen trombositopeni için 'şiddetli' (kanama riski yüksek) kabul edilen sınır nedir?",
+      "back": "$< 50.000/\\mu L$.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-53",
+      "front": "Antinükleer antikor (ANA) testi için kullanılan ve insan hücre hattı olan standart kaynak nedir?",
+      "back": "HEp-2 hücreleri.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-54",
+      "front": "SLE'de CRP (C-reaktif protein) seviyesi genellikle normaldir; CRP yüksekliği öncelikle hangi durumu düşündürmelidir?",
+      "back": "Enfeksiyon (veya bazen serozit/artrit).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-55",
+      "front": "Lupus nefritinde tedaviye yanıtın en iyi prediktörü (öngördürücüsü) nedir?",
+      "back": "12. aydaki proteinüri düzeyi.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-56",
+      "front": "SLE'de gelişen nefrotik sendromda podosit stabilizasyonu yoluyla proteinüriyi hızla azaltabilen ilaç grubu hangisidir?",
+      "back": "Kalsinörin inhibitörleri (Örn: Voclosporin).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-57",
+      "front": "SLE hastalarında malignite riskinin en yüksek olduğu kanser türü hangisidir?",
+      "back": "Lenfoma.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-58",
+      "front": "Lupus nefriti nedeniyle ESKD (son evre böbrek yetmezliği) gelişen hastalarda tercih edilen replasman tedavisi nedir?",
+      "back": "Böbrek transplantasyonu.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-59",
+      "front": "2019 EULAR/ACR kriterlerine göre, 'Malar döküntü' akut kutanöz lupus kapsamında kaç puan değerindedir?",
+      "back": "6 puan.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-60",
+      "front": "SLE hastalarında düşük doz aspirin hangi durumda birincil profilaksi olarak önerilir?",
+      "back": "Yüksek riskli antifosfolipid antikor (aPL) profili varlığında.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-61",
+      "front": "Harrison's'a göre, SLE prevalansının en yüksek olduğu etnik/ırksal grup hangisidir?",
+      "back": "Siyah kadınlar.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-62",
+      "front": "SLE'de transvers miyelit veya ağır psikoz gibi nöropsikiyatrik tablolarda ilk tercih edilen immünsüpresifler nelerdir?",
+      "back": "Yüksek doz glukokortikoidler ve siklofosfamid (veya Rituximab).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-63",
+      "front": "Otoimmün hemoliz saptanan bir SLE hastasında hangi biyolojik ajan dirençli vakalarda kullanılır?",
+      "back": "Rituximab (Anti-CD20).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-64",
+      "front": "SLE'de 'Shrinking Lung Syndrome' (Küçülen Akciğer Sendromu) temel özelliği nedir?",
+      "back": "Azalmış akciğer hacimlerine bağlı restriktif solunum bozukluğu.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-65",
+      "front": "Lupus hastalarında cilt autofloresansı (SAF) ölçümü neyin birikimini dolaylı olarak gösterir?",
+      "back": "İleri glikasyon son ürünleri (AGEs).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-66",
+      "front": "SLE'de idame glukokortikoid dozunda hedeflenen 'güvenli' maksimum doz nedir?",
+      "back": "Günlük $5$ mg Prednizon (veya eşdeğeri) veya altı.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-67",
+      "front": "SLE'de 'Rhupus' terimi neyi ifade eder?",
+      "back": "Romatoid artrit ve SLE'nin eş zamanlı görüldüğü overlap (örtüşme) sendromu.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-68",
+      "front": "SLE ile ilişkili mezenterik vaskülit hangi hastalığa benzer anevrizmalar oluşturabilir?",
+      "back": "Poliarteritis nodosa (PAN).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-69",
+      "front": "Lupus nefritli bir hastada idrar sedimentinde görülen 'aktif' bulgu nedir?",
+      "back": "Hücresel silendirler (kastlar) veya hematüri.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-70",
+      "front": "SLE'de görülen lökopenide hangi hücre grubunun kaybı daha baskındır?",
+      "back": "Lenfositler (Lenfopeni).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-71",
+      "front": "Lupus nefritinde indüksiyon sonrası idame fazına geçiş için 'kısmi yanıt' kriteri nedir?",
+      "back": "6. ayda proteinüride en az $\\%50$ azalma.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-72",
+      "front": "SLE'de görülen ve göz kuruluğu ile karakterize olan manifestasyon nedir?",
+      "back": "Keratokonjonktivitis sikka.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-73",
+      "front": "Lupus nefriti Sınıf II patolojik olarak nasıl adlandırılır?",
+      "back": "Mezanjiyal proliferatif lupus nefriti.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-74",
+      "front": "SLE'de vasküler hasara zemin hazırlayan ve aterosklerozu hızlandıran sitokin hangisidir?",
+      "back": "Tip 1 İnterferon (IFN).",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-75",
+      "front": "SLE hastalarında avasküler nekrozun en sık etkilediği kemikler hangileridir?",
+      "back": "Femur başı (kalça) ve diz.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-76",
+      "front": "İlaçla indüklenen lupus (DIL) tablosu ilacın kesilmesinden sonra ne kadar sürede geriler?",
+      "back": "Genellikle birkaç hafta içinde.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-77",
+      "front": "2019 EULAR/ACR SLE kriterlerinde 'Düşük C3 VEYA düşük C4' kaç puan değerindedir?",
+      "back": "3 puan.",
+      "tag": "Romatoloji / SLE"
+    },
+    {
+      "id": "card-78",
+      "front": "Sistemik lupus eritematozus'un on yıllık sağkalım oranı yaklaşık yüzde kaçtır?",
+      "back": "$\\%85$'in üzerinde.",
+      "tag": "Romatoloji / SLE"
+    }
+  ]
+}

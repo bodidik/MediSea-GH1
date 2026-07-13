@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import SoruSor from './SoruSor';
 
 export const revalidate = 86400;
 
@@ -360,6 +361,9 @@ export default async function KonuSayfasi({
           {/* ANA İÇERİK */}
           <div>
             <IcerikRenderer bloklar={veri.icerik} />
+
+            {/* AI ASİSTAN — konuya soru sor */}
+            <SoruSor branch={branch} topic={topic} baslik={veri.meta.baslik} />
 
             {/* ALT NAVİGASYON */}
             <div style={{

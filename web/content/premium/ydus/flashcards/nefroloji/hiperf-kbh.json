@@ -1,0 +1,427 @@
+{
+  "id": "hiperfosfatemi-kbh-mineral-kemik-bozuklugu",
+  "topic": "Hiperfosfatemi, KBH-MKB, Adinamik Kemik Hastalığı ve Klotho Süratli Tekrarı",
+  "description": "Kronik böbrek hastalığı ile ilişkili mineral ve kemik bozuklukları (KBH-MKB), adinamik kemik hastalığı histopatolojisi, Klotho-FGF23 aksı ve bitki bazlı PLADO diyet katsayıları.",
+  "cards": [
+    {
+      "id": "kbh-mkb-001",
+      "front": "Kronik böbrek hastalığı (KBH) ile ilişkili adinamik kemik hastalığının temel histolojik özelliği nedir?",
+      "back": "Düşük kemik döngüsü (turnover) ile birlikte ince osteoid dikişler ve azalmış hücresellik.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-002",
+      "front": "Adinamik kemik hastalığı, hangi hasta grubunda en yaygın görülen renal osteodistrofi (ROD) formudur?",
+      "back": "Diyabeti olan diyaliz hastalarında.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-003",
+      "front": "Adinamik kemik hastalığının tanımı için hangi metalin aşırı yüklenmesinin bulunmaması gerekir?",
+      "back": "Alüminyum.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-004",
+      "front": "KBH'de kemik frajilitesini tanımlamak için kullanılan, ROD ve yaşa bağlı osteoporoz özelliklerini kapsayan terim nedir?",
+      "back": "KBH ile ilişkili osteoporoz.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-005",
+      "front": "Adinamik kemik hastalığı gelişiminde paratiroid bezlerini aşırı baskılayan ana faktör nedir?",
+      "back": "Aktif vitamin D analogları veya kalsiyum bazlı fosfat bağlayıcıların kullanımı.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-006",
+      "front": "Adinamik kemik hastalığının osteomalaziden temel farkı nedir?",
+      "back": "Osteomalazinin aksine, osteoid oluşumunda bir artış görülmemesidir.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-007",
+      "front": "Diyaliz hastalarında adinamik kemik hastalığı için önerilen bir risk faktörü olarak kalsiyum içeren hangi ilaçlar gösterilir?",
+      "back": "Kalsiyum içeren fosfat bağlayıcılar.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-008",
+      "front": "KDIGO çalışma grubuna göre, evre 3-5 KBH hastalarında adinamik kemik hastalığı prevalansı yüzde kaçtır?",
+      "back": "18%.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-009",
+      "front": "Hangi diyaliz türü, hemodiyalize kıyasla daha yüksek adinamik kemik hastalığı prevalansı (%50) ile ilişkilendirilmiştir?",
+      "back": "Periton diyalizi.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-010",
+      "front": "Adinamik kemik hastalığının patogenezinde rol oynayan, kemik oluşumunu Wnt sinyal yolağını inhibe ederek baskılayan bir faktör nedir?",
+      "back": "Sklerostin (veya Dickkopf-1).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-011",
+      "front": "Adinamik kemik hastalığı olan hastalarda en sık bildirilen iskelet semptomu nedir?",
+      "back": "Kemik ağrısı.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-012",
+      "front": "Düşük kemik döngüsünün, kemikte mikro düzeydeki stres çatlaklarına ve frajiliteye yol açan mekanik olumsuzluğu nedir?",
+      "back": "Mikro hasarları onarma yeteneğinin kaybolması ve kemik direncindeki azalma.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-013",
+      "front": "Adinamik kemik hastalığı olan hastalarda, kalsiyum tamponlama (buffering) kapasitesinin kaybı neyi gösterir?",
+      "back": "Kemiklerin kalsiyumu tutma (uptake) kapasitesinin azaldığını.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-014",
+      "front": "Düşük kemik döngüsünün vasküler sistem üzerindeki en önemli yıkıcı veya patolojik sonucu nedir?",
+      "back": "Vasküler (damar) kalsifikasyonu hızlandırması.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-015",
+      "front": "Adinamik kemik hastalığı teşhisinde kesin ve absolut altın standart yöntem hangisidir?",
+      "back": "Kemik biyopsisi.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-016",
+      "front": "Kemik biyopsisinin yapılamadığı durumlarda adinamik kemik hastalığı şüphesini destekleyen iki serum biyobelirteci nedir?",
+      "back": "Serum paratiroid hormonu ($PTH$) ve kemik spesifik alkalen fosfataz ($BSAP$) seviyelerinin düşük olması.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-017",
+      "front": "Adinamik kemik hastalığı tedavisinde kalsiyum yükünü azaltmak için alınması gereken ilk önlem nedir?",
+      "back": "$PTH$ sekresyonunun artmasına izin vermek için aktif vitamin D ve kalsiyum içeren fosfat bağlayıcı ajanların dozunun azaltılması veya kesilmesi.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-018",
+      "front": "Adinamik kemik hastalığı olan diyaliz hastalarında kalsiyum bazlı bağlayıcılar yerine hangi alternatif fosfat bağlayıcı önerilir?",
+      "back": "Sevelamer (veya kalsiyum içermeyen lantan karbonat).",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-019",
+      "front": "Diyaliz hastalarında adinamik kemik hastalığı riskini azaltmak için diyalizatta önerilen standart kalsiyum konsantrasyonu kaç olmalıdır?",
+      "back": "1.25 mmol/L veya $2.5\ mEq/L$.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-020",
+      "front": "Adinamik kemik hastalığı olan KBH hastalarında kırık riskini artırabileceği için dikkatli kullanılması gereken antiresorptif ilaç grubu nedir?",
+      "back": "Bifosfonatlar.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-021",
+      "front": "Kemiğe yönelik anabolik bir ajan olan Teriparatid ($PTH\ 1\text{-}34$), adinamik kemik hastalığı tedavisinde hangi mekanizmayla fayda sağlar?",
+      "back": "Kemik döngüsünü ve kemik mineral yoğunluğunu artırarak.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-022",
+      "front": "Kalsimimetiklerin (örneğin sinakalset) adinamik kemik hastalığı olan hastalarda kontrendike olmasının nedeni nedir?",
+      "back": "$PTH$ salgılanmasını dolaylı olarak daha da baskılamaları ve kemik döngüsünü iyice düşürmeleri.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-023",
+      "front": "Adinamik kemik hastalığının takibinde laboratuvarda hangi iki majör parametrenin trendleri izlenir?",
+      "back": "$Base\ PTH$ ve BSAP seviyeleri.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-024",
+      "front": "Üremik bir toksin olan indoxyl sulfate'ın kemik dokusundaki osteoblast fonksiyonu üzerindeki olumsuz etkisi nedir?",
+      "back": "Düşük kemik oluşum hızı ve anabolik $PTH$ direncini tetiklemesi.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-025",
+      "front": "Yaşlanma karşıtı özellikleriyle bilinen ve KBH-MKB patofizyolojisinde kritik rol oynayan, böbreklerden salgılanan transmembran protein hangisidir?",
+      "back": "$\alpha\text{-Klotho}$ (Klotho).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-026",
+      "front": "Klotho proteininin kemik dokusundaki mineral homeostazını korumak için birlikte çalıştığı kemik kaynaklı ana hormon hangisidir?",
+      "back": "Fibroblast Büyüme Faktörü 23 ($FGF23$).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-027",
+      "front": "Klotho eksikliği olan farelerde ortaya çıkan ve KBH-MKB tablosunu taklit eden temel laboratuvar anomalisi nedir?",
+      "back": "Hiperfosfatemi (fosfat yüksekliği) ve yaygın vasküler kalsifikasyon.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-028",
+      "front": "Klotho, yaşlanmanın 12 'hallmark'ından biri olan kronik inflamasyonu hangi transkripsiyon faktörünü baskılayarak engeller?",
+      "back": "$NF\text{-}\kappa B$.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-029",
+      "front": "Klotho'nun organlardaki fibrozisi engellemek için doğrudan inhibe ettiği iki majör büyüme faktörü/sinyal yolağı hangisidir?",
+      "back": "$TGF\text{-}\beta$ ve Wnt.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-030",
+      "front": "Klotho proteini oksidatif strese karşı hücreleri korumak için hangi hücresel mekanizmayı indükler?",
+      "back": "Reaktif oksijen türleri ($ROS$) süpürücü antioksidan enzimleri (SOD, Katalaz).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-031",
+      "front": "Hücresel yaşlanma (senesans) ve telomer ksalması süreçlerinde Klotho proteininin koruyucu rolü nedir?",
+      "back": "Senesansı azaltır ve telomer yıpranmasını yavaşlatır.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-032",
+      "front": "Klotho'nun mitokondriyal fonksiyonlar üzerindeki düzenleyici etkisi nasıldır?",
+      "back": "Mitokondriyal işlevi iyileştirir ve mitofajiyi düzenler.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-033",
+      "front": "Fosfat fazlalığının (fosfatopati) damar endoteli üzerindeki doğrudan toksik etkisi nedir?",
+      "back": "Endotel hasarı ve vasküler kalsifikasyonun (medial skleroz) tetiklenmesi.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-034",
+      "front": "Klotho, yaşlanmayla ilişkili hangi kas kitlesi ve fonksiyon kaybı tablosunu hafifletir?",
+      "back": "Sarkopeni (kas atrofisi).",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-035",
+      "front": "KBH hastalarında diyetle protein kısıtlamasının renal fonksiyonları korumadaki temel patofizyolojik mekanizması nedir?",
+      "back": "Glomerüler hiperfiltrasyonu azaltması ve intraglomerüler basıncı düşürmesi.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-036",
+      "front": "PLADO diyetinin açılımı ve temel rasyoneli nedir?",
+      "back": "Bitki ağırlıklı düşük proteinli diyet ($Plant\text{-}dominant\ low\text{-}protein\ diet$). Diyet proteininin en az %50'sinin bitkisel kaynaklardan gelmesini hedefler.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-037",
+      "front": "KDOQI 2020 kılavuzuna göre, diyaliz almayan evre 3-5 KBH hastalarında önerilen günlük protein alım miktarı nedir?",
+      "back": "Günlük $0.55$ ile $0.60\ g/kg$ arası.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-038",
+      "front": "Çok düşük proteinli diyetler ($0.28\text{-}0.43\ g/kg/g\ddot{u}n$) uygulandığında malnütrisyonu önlemek için diyete ne eklenmelidir?",
+      "back": "Ketoasit veya amino asit analogları.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-039",
+      "front": "Bitkisel proteinlerin hayvansal proteinlere kıyasla renal hemodinami üzerindeki olumlu farkı nedir?",
+      "back": "Glomerüler hiperfiltrasyonu tetikleme potansiyelinin belirgin şekilde daha düşük olması.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-040",
+      "front": "Bitkilerdeki fosfatın, hayvansal gıdalardaki fosfata göre bağırsaklardan emilim (biyoyararlanım) oranı neden daha düşüktür?",
+      "back": "Bitkisel fosfatın sindirimi zor olan fitalat (fitik asit) formunda bulunması ve insanda fitaz enziminin olmaması ($<30\text{-}40\%$ emilim).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-041",
+      "front": "PLADO diyetinin metabolik asidoz üzerindeki düzeltici etkisi hangi mekanizmaya dayanır?",
+      "back": "Bitkisel gıdaların alkali üretimini artırarak endojen asit yükünü azaltması.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-042",
+      "front": "Diyet lifi alımının artması, bağırsak mikrobiyotasını değiştirerek hangi üremik toksinlerin serum seviyelerini düşürür?",
+      "back": "İndoksil sülfat ($indoxyl\ sulfate$) ve p-krezol sülfat ($p\text{-}cresyl\ sulfate$).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-043",
+      "front": "Bitki temelli diyetlerin hiperkalemi riskini artırmadığına dair öne sürülen bağırsak mekanizması nedir?",
+      "back": "Bitkisel potasyumun biyoyararlanımının düşük olması ve liflerin bağırsak motilitesini (defekasyonu) artırarak fekal potasyum atılımını provoke etmesi.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-044",
+      "front": "İşlenmiş gıdalardaki hangi gizli katkı maddeleri KBH hastalarında fosfat ve potasyum yükünü tehlikeli biçimde artırır?",
+      "back": "Potasyum katkı maddeleri ve koruyucu olarak kullanılan inorganik fosfat tuzları (%100 emilim oranı).",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-045",
+      "front": "Magnezyumun vasküler sistemdeki kalsifikasyonu engelleyici temel moleküler etkisi nedir?",
+      "back": "Damar düz kas hücrelerinde kalsiyum apatit kristallerinin çökelmesini ve osteojenik transdiferansiyasyonu aktif olarak inhibe etmesi.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-046",
+      "front": "Diyaliz hastalarında hipomagnezemi ($<1.8\ mg/dL$) varlığı hangi klinik olumsuzlukla ilişkilidir?",
+      "back": "Artmış kardiyovasküler mortalite ve tüm nedenlere bağlı ölüm riski.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-047",
+      "front": "Magnezyumun hiperfosfatemi ile ilişkili kalsifikasyonu azaltmadaki fizikokimyasal rolü nedir?",
+      "back": "Yüksek magnezyum seviyeleri, fosfat ile birleşerek çözünürlüğü yüksek amorf kalsiyum-magnezyum-fosfat kompleksleri oluşturur ve apatit çökelmesini önler.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-048",
+      "front": "KBH'de magnezyum eksikliğinin klinik olarak sık gözlenmesinin beslenme kaynaklı temel nedeni nedir?",
+      "back": "Diyetle potasyum kısıtlaması (meyve-sebze yasağı) yapılırken magnezyumdan zengin gıdaların da istem dışı olarak diyetten çıkarılması.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-049",
+      "front": "Vasküler kalsifikasyonda rol oynayan, serumda kalsiyum ve fosfatın hidroksilapatit kristallerine dönüşmesini engelleyen protein-mineral komplekslerine ne ad verilir?",
+      "back": "Kalsiprotein partikülleri ($calciprotein\ particles\ \text{-}\ CPP$).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-050",
+      "front": "Kemik döngüsünü baskılayan ve adinamik kemik hastalığı biyopsisinde yüksek saptanan osteosit kaynaklı otonom inhibitör glikoprotein hangisidir?",
+      "back": "Sklerostin.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-051",
+      "front": "Adinamik kemik hastalığında $PTH$ hedef aralığı KDIGO kılavuzlarına göre normal referans sınırının kaç katı olarak kabul edilir?",
+      "back": "Normalin üst sınırından daha yüksek, yani üst sınırın 2 ila 9 katı arası hedef alınır ($130\text{-}600\ pg/mL$).",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-052",
+      "front": "MDRD çalışmasında düşük proteinli diyet alan hastaların idrar tetkiklerinde saptanan proteinüri düşüşünün nedeni nedir?",
+      "back": "Glomerüler hiperfiltrasyonun ve intraglomerüler hemodinamik hasarın azalması.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-053",
+      "front": "Bitki bazlı diyetlerde yüksek oranda bulunan ve vasküler sertliği azaltan, endotel koruyucu element hangisidir?",
+      "back": "Magnezyum.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-054",
+      "front": "Klotho proteininin çözünür formu (hümoral / dökülen varyantı) literatürde nasıl kısaltılır?",
+      "back": "s-Klotho.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-055",
+      "front": "Klotho'nun kalsiyum ve fosfat toksisitesini hücresel düzeyde korurken engel olduğu sistemik sendromlar bütününe ne ad verilir?",
+      "back": "Fosfatopati (fosfat yükü kaynaklı hızlanmış yaşlanma sendromu).",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-056",
+      "front": "Adinamik kemik hastalığında kemik histomorfolojisinde osteoklast ve osteoblast sayıları nasıldır?",
+      "back": "Minimal veya yok denecek kadar azalmıştır; kemik yüzeyleri hücresiz görünür.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-057",
+      "front": "Osteitis fibrosa cystica'nın gelişmesini önlemek amacıyla aşırı agresif tedavi uygulandığında tetiklenen ROD formu hangisidir?",
+      "back": "KDIGO tarafından önerilen yüksek doz D vitamini veya kalsiyum yüklemesine sekonder gelişen Adinamik Kemik Hastalığı.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-058",
+      "front": "Bitkisel protein kaynağı olan ve KBH laboratuvarında lipid profilini de düzeltmeye yardımcı olan baklagil türevi nedir?",
+      "back": "Soya proteini.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-059",
+      "front": "KBH'de metabolik asidozun kemik matriksinden bağımsız olarak tetiklediği kas erimesi yolağı hangisidir?",
+      "back": "Anjiyotensin-aldosteron ve endotelin sistemleri üzerinden ubiquitin-proteasome yolağının aktivasyonu.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-060",
+      "front": "Adinamik kemik hastalığının epidemiyolojik trendi son yıllarda nasıl değişmiştir?",
+      "back": "Prevalansı artmış ve osteomalazinin yerini alarak en sık saptanan düşük döngülü ROD formu olmuştur.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-061",
+      "front": "Klotho proteini yaşlanmanın hangi hücresel organel stres yolağını doğrudan inhibe ederek apoptozu engeller?",
+      "back": "Endoplazmik retikulum ($ER$) stresi ve ilişkili UPR (unfolded protein response) yolağını.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-062",
+      "front": "Vasküler kalsifikasyon ile ilişkisi en güçlü olan ve kalsiyum tamponlama kapasitesini sıfırlayan renal osteodistrofi varyantı hangisidir?",
+      "back": "Adinamik kemik hastalığı.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-063",
+      "front": "KBH'de düşük kemik döngüsü tanısında, tetrasiklin çift etiketlemesinde iki hat arasındaki mineralizasyon süresi nasıldır?",
+      "back": "Uzar (daha uzun sürelidir) veya etiketleme odağı hiç oluşmaz.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-064",
+      "front": "Klotho eksikliği olan hipomorfik transjenik fare modelinin genetik literatürdeki adı nedir?",
+      "back": "$KL^{kl/kl}$ fare modeli.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-065",
+      "front": "KBH hastalarında diyetteki 'asit yükünü' nötralize etmek ve kemik yıkımını yavaşlatmak için kullanılan oral ajan nedir?",
+      "back": "Sodyum bikarbonat desteği.",
+      "tag": "Hedefe Yönelik Tedavi"
+    },
+    {
+      "id": "kbh-mkb-066",
+      "front": "Diyaliz hastalarında hipofosfatemiyi engellemek için kullanılan kalsiyum bazlı ajanların uzun vadedeki majör riski nedir?",
+      "back": "Hiperkalsemi riskini artırması ve adinamik kemik hastalığını indüklemesi.",
+      "tag": "Tedavi Toksisitesi"
+    },
+    {
+      "id": "kbh-mkb-067",
+      "front": "Magnezyumun boru (tübüler) hücrelerinde kalsiyum fosfat çökelmesine karşı koruyucu etkisi nedir?",
+      "back": "Fosfatın neden olduğu hücre ölümü ve tübüler hasarı aktif olarak azaltması.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-068",
+      "front": "KBH evre 2 ve 3'teki hastalarda kemik döngüsü takibinde neden $PTH$ yerine BSAP daha kararlıdır?",
+      "back": "$PTH$ seviyeleri henüz hafif yüksekliklerde veya dalgalı seyrederken, BSAP doğrudan osteoblastik matriks sentez hızını yansıtır.",
+      "tag": "Ayırıcı Tanı"
+    },
+    {
+      "id": "kbh-mkb-069",
+      "front": "Klotho'nun yaşlanmayı geciktiren gen transkripsiyonu ekspresyon oranı aşırı salgılandığında ömrü ortalama ne kadar uzatır?",
+      "back": "%20 ile %30 arası.",
+      "tag": "Moleküler Genetik"
+    },
+    {
+      "id": "kbh-mkb-070",
+      "front": "Diyaliz hastalarında düşük $PTH$ ve adinamik kemik hastalığının yol açtığı en dramatik iskelet kırığı tipi hangisidir?",
+      "back": "Kırık riski (özellikle kalça kırığı) belirgin şekilde artar.",
+      "tag": "Ayırıcı Tanı"
+    }
+  ]
+}
