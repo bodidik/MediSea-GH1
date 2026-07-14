@@ -122,6 +122,17 @@
             "YENİ",
             "SINAV SPOTU"
           ]
+        },
+        {
+          "id": "vip",
+          "baslik": "Ventilatör İlişkili Pnömoni (VİP)",
+          "altbaslik": "VAE sürveyans sistemi, kantitatif kültür eşikleri, ampirik tedavi ve korunma paketleri",
+          "sure": "20 dk",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     }

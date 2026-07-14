@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -326,9 +326,30 @@ function SoruKarti({
 
 /* ────────────────────────── ANA BİLEŞEN ────────────────────────── */
 export default function QuizEngine({ veri, lang, branch }: Props) {
+  const storageKey = `quiz-progress-${veri.id}`;
   const [soruIndex, setSoruIndex] = useState(0);
+  const [devamMesaji, setDevamMesaji] = useState(false);
 
   const sorular = veri.sorular ?? [];
+
+  useEffect(() => {
+    const kayitli = localStorage.getItem(storageKey);
+    if (kayitli) {
+      const index = parseInt(kayitli, 10);
+      if (!isNaN(index) && index > 0 && index < sorular.length) {
+        setSoruIndex(index);
+        setDevamMesaji(true);
+        setTimeout(() => setDevamMesaji(false), 3000);
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (soruIndex > 0) {
+      localStorage.setItem(storageKey, String(soruIndex));
+    }
+  }, [soruIndex, storageKey]);
 
   if (sorular.length === 0) {
     return (
@@ -341,16 +362,37 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     );
   }
 
+  function ilerle() {
+    const yeni = Math.min(soruIndex + 1, sorular.length - 1);
+    setSoruIndex(yeni);
+    if (yeni === sorular.length - 1) {
+      localStorage.removeItem(storageKey);
+    }
+  }
+
   return (
-    <SoruKarti
-      key={sorular[soruIndex].id}
-      soru={sorular[soruIndex]}
-      soruNo={soruIndex + 1}
-      toplamSoru={sorular.length}
-      onNext={() => setSoruIndex(i => Math.min(i + 1, sorular.length - 1))}
-      lang={lang}
-      branch={branch}
-      topic={veri.topic}
-    />
+    <div style={{ position: 'relative' }}>
+      {devamMesaji && (
+        <div style={{
+          position: 'fixed', top: '1rem', left: '50%', transform: 'translateX(-50%)',
+          background: '#1a3a6b', color: '#fff', borderRadius: '10px',
+          padding: '8px 18px', fontSize: '13px', fontWeight: 600,
+          boxShadow: '0 4px 16px rgba(0,0,0,.15)', zIndex: 1000,
+          animation: 'fadeIn .25s ease',
+        }}>
+          ⏎ Kaldığın yerden devam ediyorsun — {soruIndex + 1}. soru
+        </div>
+      )}
+      <SoruKarti
+        key={sorular[soruIndex].id}
+        soru={sorular[soruIndex]}
+        soruNo={soruIndex + 1}
+        toplamSoru={sorular.length}
+        onNext={ilerle}
+        lang={lang}
+        branch={branch}
+        topic={veri.topic}
+      />
+    </div>
   );
 }

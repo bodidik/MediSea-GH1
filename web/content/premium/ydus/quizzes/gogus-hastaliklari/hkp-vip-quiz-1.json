@@ -5,124 +5,224 @@
   "baslik": "HKP / VİP — Klinik Karar Soruları",
   "sorular": [
     {
-      "id": "q1",
-      "soru": "Kardiyak cerrahi sonrası 3. günde YBÜ'de mekanik ventilatöre bağlı olan bir hastada ateş (38.8°C), pürülan trakeal sekresyon ve akciğer grafisinde yeni sağ alt lob infiltratı gelişiyor. PaO₂/FiO₂ oranı 210'a düşüyor. Bu tablo hangi tanımla en doğru şekilde sınıflandırılır?",
-      "secenekler": [
-        "Toplum kökenli pnömoni (TKP)",
-        "Ventilatör ilişkili pnömoni (VİP/VAP)",
-        "Sağlık bakımı ilişkili pnömoni (HCAP)",
-        "Ventilatör gerektiren hastane kökenli pnömoni (vHAP)"
-      ],
-      "dogru": 1,
-      "aciklama": "Entübasyondan ≥48 saat sonra gelişen, yeni infiltrat + enfeksiyon bulgularının (ateş, pürülan sekresyon, oksijenasyon bozukluğu) eşlik ettiği tablo VİP/VAP tanımını karşılar. HCAP terimi güncel kılavuzlarda artık kullanılmamaktadır. vHAP ise mekanik ventilasyon gerektiren nvHAP'tır."
+      "id": "s1",
+      "metin": "Kardiyak cerrahi sonrası YBÜ'de 3. günde mekanik ventilatöre bağlı olan bir hastada ateş (38.8°C), pürülan trakeal sekresyon ve akciğer grafisinde yeni sağ alt lob infiltratı gelişiyor. PaO₂/FiO₂ oranı 210'a düşüyor.\n\nBu tablo hangi tanımla en doğru şekilde sınıflandırılır?",
+      "secenekler": {
+        "A": "Toplum kökenli pnömoni (TKP)",
+        "B": "Ventilatör ilişkili pnömoni (VİP/VAP)",
+        "C": "Sağlık bakımı ilişkili pnömoni (HCAP)",
+        "D": "Ventilatör gerektiren hastane kökenli pnömoni (vHAP)"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Entübasyondan ≥48 saat sonra gelişen yeni infiltrat + enfeksiyon bulguları (ateş, pürülan sekresyon, PaO₂/FiO₂ düşüşü) = VİP tanım kriterleri. HCAP terimi güncel kılavuzlarda kullanılmamaktadır.",
+      "aciklama_detay": "VİP tanımı için üç koşulun birlikte bulunması gerekir: (1) Endotrakeal entübasyondan ≥48 saat sonra veya ekstübasyondan sonraki ilk 48 saat içinde gelişme, (2) akciğer grafisinde yeni veya ilerleyici infiltrat ve (3) enfeksiyonu destekleyen klinik bulgulardan en az ikisi (ateş/hipotermi, pürülan sekresyon, lökositoz/lökopeni, oksijenasyon bozukluğu). Bu hastada tüm kriterler karşılanmıştır. HCAP terimi, hastaları MDR patojenler açısından aşırı duyarlı bir şekilde kategorize edip gereksiz antibiyotik kullanımına yol açtığı için ATS/IDSA ve ERS kılavuzlarından tamamen çıkarılmıştır. vHAP ise mekanik ventilasyon gerektiren nvHAP'tır; bu hastada zaten entübasyon vardı, nvHAP değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — TKP, hastane veya sağlık bakımı ortamı dışında kazanılır. Bu hasta zaten yatış sonrası 3. günde ve entübasyon altında.",
+        "B": "DOĞRU — Entübasyondan ≥48 saat sonra gelişen yeni infiltrat + ateş + pürülan sekresyon + oksijenasyon bozukluğu = VİP tanım kriterleri karşılanmış.",
+        "C": "YANLIŞ — HCAP terimi güncel ATS/IDSA ve ERS kılavuzlarından kaldırılmıştır; artık geçerli bir sınıflandırma kategorisi değildir.",
+        "D": "YANLIŞ — vHAP, mekanik ventilasyon gerektiren nvHAP'tır. Bu hastada entübasyon önceden mevcuttu; nvHAP (ventilatörsüz HAP) değil, doğrudan VİP kriterleri geçerlidir."
+      },
+      "etiketler": ["VİP tanımı", "HAP sınıflandırması", "HCAP"],
+      "zorluk": "kolay",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; ERS/ESICM/ESCMID/ALAT Guidelines 2017"
     },
     {
-      "id": "q2",
-      "soru": "Ağır sepsis tablosunda YBÜ'ye yatırılan bir hastada son 3 ay içinde ampisilin-sulbaktam + siprofloksasin kombinasyonuyla tedavi edilmiş bir pnömoni öyküsü mevcuttur. Hastanede 7. günde yeni pnömoni gelişiyor. Bu hastada ampirik antibiyotik rejimine dahil edilmesi ZORUNLU olan unsur hangisidir?",
-      "secenekler": [
-        "Tek başına 3. kuşak sefalosporin yeterlidir",
-        "Yalnızca anti-MRSA ajan (linezolid veya vankomisin)",
-        "Anti-MRSA ajan ARTI iki farklı antipsödomonal ajan kombinasyonu",
-        "Aminoglikozid monoterapisi"
-      ],
-      "dogru": 2,
-      "aciklama": "Son 90 günde IV antibiyotik kullanımı, septik şok ve ≥5 günlük hastane yatışı MDR patojen riskini birden fazla katlıyor. Bu tabloda anti-MRSA ajan (linezolid veya vankomisin) + 2 farklı sınıftan antipsödomonal ajan (örn. pip-taz veya sefepim + levofloksasin veya amikasin) zorunludur. Aminoglikozid asidik akciğer parankiminde zayıf penetrasyon nedeniyle ASLA monoterapi olarak kullanılamaz."
+      "id": "s2",
+      "metin": "Ağır sepsis tablosunda YBÜ'ye yatırılan bir hastada son 3 ay içinde IV ampisilin-sulbaktam + siprofloksasin ile tedavi edilmiş pnömoni öyküsü vardır. Hastanede 7. günde yeni pnömoni gelişiyor. Yerel antibiyogramda S. aureus izolatlarının %30'u MRSA.\n\nBu hastada ampirik antibiyotik rejimine dahil edilmesi ZORUNLU olan unsur hangisidir?",
+      "secenekler": {
+        "A": "Tek başına 3. kuşak sefalosporin monoterapisi yeterlidir",
+        "B": "Yalnızca anti-MRSA ajan (linezolid veya vankomisin)",
+        "C": "Anti-MRSA ajan ARTI farklı sınıflardan iki antipsödomonal ajan kombinasyonu",
+        "D": "Aminoglikozid monoterapisi (tobramisin veya amikasin)"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Son 90 günde IV antibiyotik + ≥5 gün yatış + septik şok + lokal MRSA >%20 = yüksek MDR riski. Bu tabloda üçlü kombinasyon (anti-MRSA + 2 farklı antipsödomonal) zorunludur. Aminoglikozid asidik akciğer ortamında monoterapi olarak kullanılamaz.",
+      "aciklama_detay": "MDR patojen risk faktörleri bu hastada üst üste yığılmıştır: (1) Son 90 günde IV antibiyotik maruziyeti — en güçlü risk faktörü, (2) hastanede ≥5 gün yatış, (3) septik şok tablosu, (4) lokal MRSA oranı >%20 eşiği (%30). Bu koşullarda ATS/IDSA kılavuzları şu üçlü rejimi zorunlu kılar: Anti-MRSA ajan (vankomisin vadi/AUC takibi ile VEYA linezolid) + Anti-psödomonal beta-laktam (piperasilin-tazobaktam, sefepim, meropenem veya imipenem) + Farklı sınıftan 2. antipsödomonal ajan (aminoglikozid — amikasin/tobramisin VEYA florokinolon — levofloksasin/siprofloksasin). Aminoglikozidler asidik akciğer parankiminde iyon tuzağına düşerek penetre olamazlar; bu nedenle VİP/HAP'ta asla monoterapi olarak kullanılmamalı, yalnızca kombinasyona eklenerek Pseudomonas kapsamı güçlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Tek başına 3. kuşak sefalosporin ne MRSA'yı ne de MDR Pseudomonas'ı kapsar. Bu hastada MDR riski yüksektir; dar spektrum yetersizdir.",
+        "B": "YANLIŞ — Yalnızca anti-MRSA ajan MDR gram-negatif (Pseudomonas, ESBL+ Klebsiella, Acinetobacter) için kapsam sağlamaz. Septik şok tablosunda gram-negatif kapsama da geniş tutulmalıdır.",
+        "C": "DOĞRU — Anti-MRSA + 2 farklı antipsödomonal ajan (beta-laktam + aminoglikozid VEYA florokinolon) zorunlu üçlü kombinasyondur. Her üç MDR risk faktörünün birden bulunduğu ağır tabloda tek şans ilk doğru tedavidir.",
+        "D": "YANLIŞ — Aminoglikozidler asidik akciğer parankiminde in-vivo aktivitesi çok düşük olan ajanlardır; monoterapi olarak kesinlikle kullanılmaz. Sadece kombinasyonda ek gram-negatif kapsam için yer alır."
+      },
+      "etiketler": ["MDR risk faktörleri", "ampirik tedavi", "aminoglikozid", "MRSA", "üçlü kombinasyon"],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Kalil AC et al. Clin Infect Dis 2016"
     },
     {
-      "id": "q3",
-      "soru": "Bir YBÜ'de VİP hızını düşürmek için kanıta dayalı bir bundle uygulanmaktadır. Aşağıdakilerden hangisi bu önlem paketinde artık yer ALMAMALIDIR?",
-      "secenekler": [
-        "Yatak başı 30–45 derece elevasyonu",
-        "Klorheksidin ile ağız içi dekontaminasyon",
-        "Günlük sedasyon kesintisi protokolü",
-        "Subglottik sekresyon drenaj portlu endotrakeal tüp kullanımı"
-      ],
-      "dogru": 1,
-      "aciklama": "Klorheksidin ile oral dekontaminasyonun mortalite üzerinde faydası gösterilememiş ve yan etki kaygıları nedeniyle güncel SHEA/IDSA kılavuzlarından çıkarılmıştır. Diş fırçalanması ile yapılan rutin ağız bakımı ise hâlâ önerilmektedir. Diğer seçenekler (elevasyon, sedasyon kesintisi, subglottik drenaj) geçerli önlemlerdir."
+      "id": "s3",
+      "metin": "Bir YBÜ'de VİP/HAP hızını düşürmek için 2022 SHEA/IDSA önerilerine dayalı bir korunma paketi (bundle) güncellenmektedir.\n\nAşağıdakilerden hangisi bu güncellenmiş önlem paketinde artık yer ALMAMALIDIR?",
+      "secenekler": {
+        "A": "Yatak başının 30–45 derece elevasyonu",
+        "B": "Klorheksidin ile ağız içi dekontaminasyon (oral antisepsi)",
+        "C": "Günlük sedasyon kesintisi (sedasyon tatili) protokolü",
+        "D": "Subglottik sekresyon drenaj portlu endotrakeal tüp kullanımı"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Klorheksidin ile oral dekontaminasyonun mortalite faydası büyük RKÇ'lerde gösterilemedi; potansiyel yan etkiler (pnömonit, ototoksisite riski) nedeniyle 2022 SHEA/IDSA kılavuzundan çıkarıldı. Diş fırçalama hâlâ önerilmektedir.",
+      "aciklama_detay": "Klorheksidin oral dekontaminasyonu yıllarca VİP bundle'larının vazgeçilmez bileşeni olmuştu. Ancak 2019 yılında yayımlanan büyük randomize Hilker ve ark. meta-analizi ve ardından gelen güncel kanıt, klorheksidinin mortalite üzerinde net faydası olmadığını gösterdi. Üstelik klorheksidinin orofarengeal flora üzerindeki seçici baskısı ve teorik olarak kimyasal pnömonit riski ek kaygı yaratmaktadır. Bu nedenle 2022 SHEA/IDSA rehberi klorheksidin oral antisepsisini önerilmeyen uygulamalar listesine aldı. Öte yandan mekanik temizlik için diş fırçalama (antiseptik içermeyen) hâlâ kuvvetle önerilmektedir. Diğer seçenekler (elevasyon, sedasyon tatili, subglottik drenaj) güncel kanıtla desteklenen önlemlerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ (bu önlem hâlâ önerilmektedir) — Yatak başı 30–45° elevasyonu orofarengeal mikroaspirasyonu ve gastroözofageal reflüyü azaltır; güncel bundle'da yer almaya devam eder.",
+        "B": "DOĞRU (artık önerilmemektedir) — Klorheksidin ile oral dekontaminasyonun mortalite faydası RKÇ'lerde gösterilemedi; 2022 SHEA/IDSA kılavuzundan çıkarıldı. Mekanik diş fırçalama ise önerilmeye devam etmektedir.",
+        "C": "YANLIŞ (bu önlem hâlâ önerilmektedir) — Günlük sedasyon kesintisi öksürük refleksini ve uyanıklığı koruyarak erken ekstübasyona zemin hazırlar; bundle'da aktif olarak yer almaktadır.",
+        "D": "YANLIŞ (bu önlem hâlâ önerilmektedir) — 48–72 saatten uzun entübasyon beklenen hastalarda subglottik drenaj portlu tüp, suprakaf sekresyonların akciğere geçişini engelleyerek VİP riskini %50 oranında azaltabilir."
+      },
+      "etiketler": ["VİP korunma paketi", "klorheksidin", "oral dekontaminasyon", "SHEA/IDSA 2022"],
+      "zorluk": "kolay",
+      "kaynak": "Klompas M et al. Infect Control Hosp Epidemiol 2022; Hilker E et al. Lancet Infect Dis 2019"
     },
     {
-      "id": "q4",
-      "soru": "Hastanede 8. günde mekanik ventilatörde olmayan bir serviste VİP tablosunda HKP gelişen hastada kültür sonuçları için beklenirken ampirik sefepim başlanıyor. 72. saatte klinik iyileşme var; kültürde metisiline duyarlı S. aureus (MSSA) üremektedir, MRSA izolasyon öyküsü yok. Nazal MRSA sürüntüsü negatif. Bu hastada en doğru yaklaşım hangisidir?",
-      "secenekler": [
-        "Tedaviyi 15 güne uzatmak",
-        "Vankomisin ekleyerek devam etmek",
-        "Sefepimi oksasiline de-eskale etmek ve 7. günde kesmek",
-        "Karbapenemlere geçmek"
-      ],
-      "dogru": 2,
-      "aciklama": "Kültürde MSSA saptanmış, klinik iyileşme var ve MRSA riski düşük (negatif nazal sürüntü, öyküsüz). Bu durumda en dar spektrumlu etkili ajana (oksasilin) de-eskale edilmeli ve komplikasyonsuz HKP'de önerilen 7 günlük süre yeterlidir. 15 gün tedavi benzer etkinlik gösterirken antibiyotik direncini ve yan etkileri artırır."
+      "id": "s4",
+      "metin": "Hastanede 8. günde mekanik ventilatörde olmayan bir serviste HAP gelişen hastada ampirik sefepim başlanıyor. 72. saatte klinik iyileşme var; kültürde metisiline duyarlı S. aureus (MSSA) üremekte, MRSA izolasyon öyküsü ve nazal MRSA sürüntüsü negatif.\n\nBu hastada en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tedaviyi 15 güne uzatmak",
+        "B": "Sefepime vankomisin ekleyerek devam etmek",
+        "C": "Sefepimi oksasiline de-eskale etmek ve 7. günde kesmek",
+        "D": "Karbapenemlere geçmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MSSA izolasyonu + MRSA riski düşük (negatif swab, öyküsüz) = en dar etkili ajana de-eskalasyon. Komplikasyonsuz HAP'ta 7 gün yeterli. Oksasilin, MSSA için vankomisinden üstün (bakteri öldürme hızı ve MİK avantajı).",
+      "aciklama_detay": "De-eskalasyon HAP/VİP yönetiminin temel ilkesidir: Kültür ve klinik yanıt netleştiğinde antibiyotik spektrumu daraltılmalıdır. Bu hastada (1) kültürde MSSA izole edildi, (2) nazal MRSA swabı negatif — MRSA şüphesini dışlamaya yardımcı güçlü negatif prediktif değer, (3) klinik iyileşme var, (4) MRSA önceki öyküsü yok. Bu koşullarda anti-MRSA kapsamı gereksizdir; sefepim yerine oksasilin (veya nafsilin) kullanımı hem daha etkili (MSSA için vankomisin yerine beta-laktamlar üstündür) hem de direnç baskısını azaltır. Tedavi süresi: ATS/IDSA kılavuzları komplikasyonsuz HAP ve VİP'te etken MSSA, Pseudomonas veya başka patojen olsun, 7 günlük kısa süreli tedaviyi önermektedir. 15 günlük tedavinin benzer mortalite ve kür sağladığı, ancak direnç gelişimi ve Clostridioides difficile riskini artırdığı kanıtlanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 15 günlük tedavi 7 gün ile benzer etkinlikte; direnç gelişimi ve C. difficile riskini gereksiz artırır. Komplikasyonsuz HAP'ta uzatılmış tedavi önerilmez.",
+        "B": "YANLIŞ — MRSA riski düşük (negatif swab, öyküsüz); anti-MRSA kapsamını devam ettirmek kılavuzlarla çelişir ve vankomisinin nefrotoksisite ile C. difficile riski taşır. De-eskalasyon gereklidir.",
+        "C": "DOĞRU — MSSA izolasyonu + MRSA riski dışlanmış → oksasiline de-eskale et (MSSA için en etkin ajan). Komplikasyonsuz HAP'ta 7 gün yeterli; 7. günde kes.",
+        "D": "YANLIŞ — MSSA, beta-laktamlara tam duyarlıdır; karbapenem kullanımı gereksiz geniş spektrumdur ve KPC/karbapenem direnci riskini artırır. Karbapenemlere tırmanma için herhangi bir klinik endikasyon yoktur."
+      },
+      "etiketler": ["de-eskalasyon", "MSSA", "HAP tedavi süresi", "oksasilin", "nazal MRSA swab"],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Chastre J et al. JAMA 2003 (8 vs 15 gün)"
     },
     {
-      "id": "q5",
-      "soru": "Trakeal aspirat kültüründe dört farklı antibiyotik sınıfına dirençli P. aeruginosa üreyen bir VAP hastasında klinikte kötüleşme devam ediyor. Kombine tedaviye rağmen yanıt alınamıyor. Bu direnç tablosu hangi kategoriye girer ve ampirik olarak hangi ajan en sık düşünülür?",
-      "secenekler": [
-        "MDR — piperasilin-tazobaktam",
-        "XDR — kolistin veya sefiderokol",
-        "PDR — meropenem",
-        "MDR — levofloksasin monoterapisi"
-      ],
-      "dogru": 1,
-      "aciklama": "En az 2 sınıf dışında tüm sınıflara direnç XDR (yaygın ilaca dirençli) tanımını karşılar. Tüm sınıflara dirençli PDR'dan farklıdır (PDR'da kullanılabilecek hiçbir ajan kalmaz). XDR P. aeruginosa'da kolistin veya yeni siderophore sefalosporin sefiderokol seçenekler arasındadır."
+      "id": "s5",
+      "metin": "Trakeal aspirat kültüründe dört farklı antibiyotik sınıfına dirençli Pseudomonas aeruginosa üreyen bir VAP hastasında kombine tedaviye rağmen klinikte kötüleşme devam ediyor.\n\nBu direnç tablosu hangi kategoriye girer ve hangi ajan öncelikle düşünülmelidir?",
+      "secenekler": {
+        "A": "MDR (Çoklu dirençli) — piperasilin-tazobaktam",
+        "B": "XDR (Yaygın dirençli) — kolistin veya sefiderokol",
+        "C": "PDR (Pandirençli) — meropenem",
+        "D": "MDR (Çoklu dirençli) — levofloksasin monoterapisi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dört antibiyotik sınıfına direnç = XDR (en az 2 sınıf dışında tüm sınıflara direnç). PDR'dan farklıdır. XDR Pseudomonas'ta kolistin veya yeni siderophore-sefalosporin sefiderokol kullanılır.",
+      "aciklama_detay": "Direnç terminolojisi sınav açısından kritik: MDR = ≥3 farklı antibiyotik sınıfına direnç; XDR = en az 2 sınıf dışında tüm sınıflara direnç (yani son silah ajanlar dışında her şeye dirençli); PDR = kullanılabilecek hiçbir antibiyotik sınıfına duyarlılık yok (teorik olarak tedavi edilemez). Bu hastada 4 sınıfa direnç = XDR tanımını karşılar. XDR Pseudomonas aeruginosa tedavisinde seçenekler: (1) Kolistin/polimiksin B — eski ajan, nefrotoksisite sorunu var ama hâlâ aktif; (2) Sefiderokol — yeni nesil siderophore-sefalosporin, Pseudomonas ve Acinetobacter dahil XDR/PDR gram-negatiflere etkili; (3) Ceftolozane/tazobaktam — MDR Pseudomonas için onaylı, karbapenem üreten suşlara sınırlı etki. Tedaviye dirençli vakalarda sistemik ajana ek inhale kolistin adjuvan olarak düşünülebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bu direnç tablosu MDR değil XDR'dir. Üstelik piperasilin-tazobaktam, birden fazla sınıfa dirençli suşlara karşı yeterli kapsam sağlayamaz.",
+        "B": "DOĞRU — 4 sınıfa direnç XDR tanımını karşılar. Kolistin ve sefiderokol XDR/PDR Pseudomonas için öncelikli kurtarma tedavisi seçenekleridir.",
+        "C": "YANLIŞ — PDR tanımı için tüm antibiyotik sınıflarına direnç gerekir. Dört sınıfa direnç XDR'yi tanımlar. Üstelik XDR Pseudomonas çoğunlukla karbapenemlere de dirençlidir; meropenem mantıklı değildir.",
+        "D": "YANLIŞ — Bu direnç tablosu MDR değil XDR'dir. Levofloksasin monoterapisi XDR Pseudomonas için yetersiz kapsam sağlar ve VİP'te monoterapi önerilmez."
+      },
+      "etiketler": ["MDR", "XDR", "PDR", "Pseudomonas aeruginosa", "kolistin", "sefiderokol"],
+      "zorluk": "zor",
+      "kaynak": "Magiorakos AP et al. Clin Microbiol Infect 2012 (direnç terminolojisi); Bassetti M et al. Intensive Care Med 2021"
     },
     {
-      "id": "q6",
-      "soru": "Serviste yatan bir hasta için ampirik HAP tedavisi başlanırken yerel antibiyograma göre ünitedeki S. aureus izolatlarının %25'inin metisiline dirençli olduğu görülüyor. Bu bilgi ampirik tedaviyi nasıl etkiler?",
-      "secenekler": [
-        "Hiçbir değişiklik gerektirmez; MRSA direnci %25 eşiğin altındadır",
-        "Anti-MRSA ajan (linezolid veya vankomisin) eklenmesi zorunludur",
-        "Yalnızca aminoglikozid eklenmesi yeterlidir",
-        "Florokinolon monoterapisine geçilir"
-      ],
-      "dogru": 1,
-      "aciklama": "Ünite bazlı MRSA oranı >%20 eşiği aştığında ampirik anti-MRSA kapsamı (linezolid veya vankomisin) zorunlu hale gelir. Bu olguda oran %25 olup eşiği geçmektedir. Aminoglikozid monoterapisi akciğerde etkisizdir; florokinolon MRSA'ya karşı güvenilir değildir."
+      "id": "s6",
+      "metin": "Serviste yatan bir hasta için ampirik HAP tedavisi başlanırken yerel antibiyograma göre ünitedeki S. aureus izolatlarının %25'inin metisiline dirençli (MRSA) olduğu görülüyor.\n\nBu bilgi ampirik tedavi kararını nasıl etkiler?",
+      "secenekler": {
+        "A": "Hiçbir değişiklik gerektirmez; MRSA direnci %20 eşiğinin altındadır",
+        "B": "Anti-MRSA ajan (linezolid veya vankomisin) eklenmesi zorunludur",
+        "C": "Yalnızca aminoglikozid eklenmesi yeterlidir",
+        "D": "Solunum florokinolonu (levofloksasin) monoterapisine geçilir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Lokal MRSA oranı >%20 → ampirik anti-MRSA kapsamı zorunlu. Bu hastada %25 ile eşik aşılmış. Linezolid veya vankomisin (AUC/MİK takibiyle) önerilir.",
+      "aciklama_detay": "ATS/IDSA kılavuzlarına göre ampirik anti-MRSA kapsamı eklenmesi gereken iki ana ünite bazlı eşik vardır: (1) Lokal S. aureus izolatlarında MRSA oranı >%20 (bu hastada %25 → eşik geçilmiş) ve (2) Lokal gram-negatifler arasında sefepim veya piperasilin-tazobaktam direnci >%10 (gram-negatif kapsamı geniş tutmak için). Ajan seçiminde: Vankomisin (AUC-rehberli dozaj, hedef AUC/MİK ≥400) veya linezolid (MRSA VİP'te bazı çalışmalarda vankomisine üstün bulunmuştur). Aminoglikozidler gram-pozitif kapsamı için uygun değildir; MRSA'ya intrinsik olarak yetersiz kalırlar. Levofloksasin ise MRSA için güvenilir ve onaylanmış bir ajan değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — %25, >%20 eşiğini aşmaktadır; bu koşulda anti-MRSA kapsamı zorunludur. Eşiğin altında olduğu iddiası hatalıdır.",
+        "B": "DOĞRU — Lokal MRSA oranı >%20 eşiği aşıldığından ampirik anti-MRSA kapsamı (linezolid veya vankomisin) eklenmesi kılavuzlarca önerilmektedir.",
+        "C": "YANLIŞ — Aminoglikozidler gram-negatif kapsam için kombinasyon tedavisinde kullanılır; MRSA dahil gram-pozitif bakterilere etkisizdir.",
+        "D": "YANLIŞ — Levofloksasin MRSA için güvenilir etkinliği olmayan bir ajandır; MRSA'ya ampirik kapsam sağlamaz. Monoterapi olarak HAP'ta önerilmez."
+      },
+      "etiketler": ["MRSA eşiği", "ampirik anti-MRSA", "lokal antibiyogram", "vankomisin", "linezolid"],
+      "zorluk": "kolay",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016 (Tablo 2)"
     },
     {
-      "id": "q7",
-      "soru": "YBÜ'de VİP tanısıyla tedavi edilen bir hastada 48 saat içinde kültür sonucu negatif dönüyor; prokalsitonin başlangıçta 12 ng/mL iken 72. saatte 2,4 ng/mL'ye düşüyor (>%80 azalma) ve klinik tablo iyileşiyor. Bu bilgiler ışığında en doğru yaklaşım hangisidir?",
-      "secenekler": [
-        "Tedaviyi 15 güne uzatmak güvenlidir",
-        "PCT normal sınırda olmadığı için tedaviye devam edilmeli",
-        "Klinik iyileşme ve PCT >%80 düşüşüne göre tedaviyi kesmek güvenlidir",
-        "Sadece kültür negatifliği tedaviyi kesmek için yeterlidir"
-      ],
-      "dogru": 2,
-      "aciklama": "PCT'nin pik değerden ≥%80 azalması veya <0,5 ng/mL'ye düşmesi, klinik iyileşme ile birleştiğinde ampirik antibiyotik tedavisinin güvenle sonlandırılabileceğini gösterir. Bu hasta PCT rehberliğiyle de-eskalasyon ve erken tedavi kesimi için uygun bir adaydır. Komplikasyonsuz VAP'ta 7 gün yeterlidir."
+      "id": "s7",
+      "metin": "YBÜ'de VİP tanısıyla tedavi edilen bir hastada 48. saatte kültür sonucu negatif geldi; prokalsitonin başlangıçta 15 ng/mL iken 72. saatte 2.7 ng/mL'ye düştü (pik değerden >%80 azalma). Klinik tablo iyileşiyor.\n\nBu bilgiler ışığında en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tedaviyi 15 güne uzatmak güvenlidir",
+        "B": "PCT normal sınıra (<0.5 ng/mL) düşmeden tedaviye devam edilmelidir",
+        "C": "Klinik iyileşme ve PCT >%80 düşüşüne dayanarak kısa sürede (7. günde) tedaviyi kesmek güvenlidir",
+        "D": "Yalnızca kültür negatifliği, tedaviyi kesmek için yeterli kanıttır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "PCT'nin pik değerden ≥%80 düşmesi veya <0.5 ng/mL olması + klinik iyileşme → antibiyotik güvenle kesilebilir. PCT'nin tedavi kesilme kararında kullanılabilir; ancak başlama kararında önerilmez.",
+      "aciklama_detay": "Prokalsitonin (PCT) HAP/VİP yönetiminde iki farklı rolde değerlendirilir: (1) Antibiyotik BAŞLAMA kararı: PCT tek başına HAP/VİP tanısı koyduramaz ve antibiyotik başlama kararı vermez — bu amaçla kullanımı önerilmez. (2) Antibiyotik KESME kararı: PCT rehberliğinin en kanıtlı olduğu alan budur. Pik PCT değerinden ≥%80 azalma VEYA mutlak değer <0.5 ng/mL (bazı protokollerde <0.25 ng/mL), klinik iyileşmeyle birleştiğinde güvenli tedavi kesimini destekler. Bu yaklaşım antibiyotik kullanım süresini ortalama 2–3 gün kısaltmakta, ancak mortalite ve relaps oranını artırmamaktadır. Önemli not: Tek başına kültür negatifliği, özellikle önceden antibiyotik başlanmış vakalarda, tedaviyi kesmek için yeterli kanıt değildir (yanlış negatiflik riski).",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 15 günlük tedavi, komplikasyonsuz VAP'ta 7 günle benzer etkinlik gösterirken antibiyotik direncini ve C. difficile riskini artırır. Uzatma için klinik endikasyon yoktur.",
+        "B": "YANLIŞ — PCT'nin <0.5 ng/mL'ye gelmesi kesinlikle beklenmek zorunda değildir. Pik değerden ≥%80 azalma yeterli güvenilir eşiktir; bu hasta (%80+ düşüş) bu kriteri karşılamaktadır.",
+        "C": "DOĞRU — PCT >%80 düşüş + klinik iyileşme + komplikasyonsuz VAP → 7 günlük kısa süreli tedavi güvenlidir. PCT'nin antibiyotik kesme kararında kullanımı en güçlü kanıta sahip alandır.",
+        "D": "YANLIŞ — Antibiyotik başlandıktan sonra alınan kültürün negatif gelmesi, gerçek enfeksiyon dışlanması anlamına gelmez. Klinik tablo ve biyobelirteçlerle bütünsel değerlendirme şarttır."
+      },
+      "etiketler": ["prokalsitonin", "PCT rehberliği", "de-eskalasyon", "antibiyotik süresi", "VAP tedavisi"],
+      "zorluk": "orta",
+      "kaynak": "Schuetz P et al. Lancet Infect Dis 2017; ATS/IDSA HAP/VAP Guidelines 2016"
     },
     {
-      "id": "q8",
-      "soru": "Mekanik ventilatörde izlenen hastanın ventilatör devresinin 72 saatte bir rutin olarak değiştirilmesini öneren ekip üyesine doğru yanıt nedir?",
-      "secenekler": [
-        "72 saatlik değişim optimum protokoldür",
-        "48 saatlik değişim daha güvenlidir",
-        "Rutin değişim VİP riskini artırabilir; sadece kirli veya arızalıysa değiştirilmelidir",
-        "Haftada bir değişim önerilmektedir"
-      ],
-      "dogru": 2,
-      "aciklama": "Ventilatör devrelerinin belirli aralıklarla rutin değiştirilmesi VİP oranlarını düşürmemekte, aksine devre manipülasyonu sırasındaki kontaminasyon riski nedeniyle VİP'i artırabilmektedir. Güncel kılavuzlar devrelerin yalnızca gözle görülür kirlenme veya mekanik arıza durumunda değiştirilmesini önermektedir."
+      "id": "s8",
+      "metin": "Bir YBÜ'de mekanik ventilatördeki hastaların ventilatör devrelerinin 72 saatte bir rutin olarak değiştirildiği öğrenilmektedir.\n\nGüncel kılavuzlar açısından bu uygulama nasıl değerlendirilmelidir?",
+      "secenekler": {
+        "A": "72 saatlik değişim optimal protokoldür; daha sık değişim daha iyi sonuçlar verir",
+        "B": "48 saatlik değişim VİP'i en fazla azaltan uygulamadır",
+        "C": "Rutin ventilatör devresi değişimi VİP riskini azaltmaz; yalnızca görünür kirlenme veya arızada değiştirilmesi önerilir",
+        "D": "Devreler her üç ayda bir değiştirilmeli, ara değişim yapılmamalıdır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Rutin ventilatör devresi değişimi VİP oranlarını düşürmez. Devre manipülasyonu sırasındaki kontaminasyon riski nedeniyle VİP'i artırabilir. Yalnızca görünür kirlenme veya mekanik arızada değiştir.",
+      "aciklama_detay": "VİP patogenezinde asıl kaynak ventilatör devresi değil, hastanın kendi orofarengeal florasıdır. Ventilatör devrelerinin rutin aralıklarla değiştirilmesinin VİP oranlarını azalttığı gösterilememiştir. Aksine, her devre değişimi sırasında gerçekleşen manipülasyon; kondensatın hastaya geri kaçması (re-entry), kontamine sekresyonların solunum yoluna itilmesi ve açık sistem oluşturma gibi mekanizmalarla VİP riskini artırabilir. Bu nedenle 2022 SHEA/IDSA ve önceki kılavuzlar, rutin aralıklı değişimi açıkça önerilmeyen uygulamalar listesine almıştır. Tek endikasyon: Devrede gözle görülür kirlenme (kan, sekresyon) veya mekanik arıza. Kondensatın ise ayrıca yönetilmesi gerekir: Hastadan uzağa doğru boşaltılmalı, kesinlikle hastaya geri dökmemeli.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 72 saatlik rutin değişimin VİP'i azalttığına dair kanıt yoktur; daha sık değişim ise VİP riskini artırabilir.",
+        "B": "YANLIŞ — 48 saatlik değişim de önerilmez. Hiçbir rutin değişim aralığının VİP'i azalttığı kanıtlanmamıştır; bu uygulama terk edilmiştir.",
+        "C": "DOĞRU — Rutin değişim değil, yalnızca görünür kirlenme veya arızada değişim önerilmektedir. Bu, hem VİP riskini azaltır hem de maliyet ve kontaminasyon riskini düşürür.",
+        "D": "YANLIŞ — Üç aylık değişim önerisi mevcut değildir. Gözlemsel kirlenme veya arıza olmadıkça herhangi bir takvim aralığı önerilmez."
+      },
+      "etiketler": ["ventilatör devresi", "korunma", "VİP bundle", "SHEA/IDSA 2022"],
+      "zorluk": "kolay",
+      "kaynak": "Klompas M et al. Infect Control Hosp Epidemiol 2022; Lorente L et al. Crit Care Med 2004"
     },
     {
-      "id": "q9",
-      "soru": "Enteral beslenen ventilatör hastalarında VAP gelişimini önlemek amacıyla her 4 saatte bir mide rezidüel hacminin ölçülmesini öneren uygulamayla ilgili güncel kanıt ne söylemektedir?",
-      "secenekler": [
-        "Rutin mide rezidüel hacim ölçümü VAP oranlarını %30 azaltır",
-        "Sadece 200 mL'yi aşan vakalarda ölçüm önerilir",
-        "Rutin ölçüm VAP oranlarını düşürmez ve kalori hedeflerinden uzaklaşmaya neden olur; önerilmez",
-        "Her 8 saatte bir ölçüm altın standarttır"
-      ],
-      "dogru": 2,
-      "aciklama": "Büyük randomize çalışmalar, rutin mide rezidüel hacim ölçümünün VAP oranlarını düşürmediğini kanıtlamıştır. Dahası, gereksiz beslenme kısıtlamalarına yol açarak kalori hedeflerinin tutturulamamasına neden olmaktadır. Bu nedenle güncel kılavuzlar asemptomatik hastalarda rutin ölçümü önermemektedir."
+      "id": "s9",
+      "metin": "Enteral beslenen ventilatör hastalarında VAP gelişimini önlemek amacıyla her 4 saatte bir mide rezidüel hacminin (MRH) ölçülerek 200 mL üzerinde çıkarsa beslenmeyi durduran bir protokol uygulanmaktadır.\n\nGüncel kanıt bu uygulama hakkında ne söylemektedir?",
+      "secenekler": {
+        "A": "Rutin MRH ölçümü VAP oranlarını %30 azaltır ve önerilmektedir",
+        "B": "Yalnızca 250 mL eşiği güvenlidir; bu eşiğin altında beslenme sürdürülmelidir",
+        "C": "Asemptomatik hastalarda rutin MRH ölçümü VAP oranlarını düşürmez; kalori hedeflerinden uzaklaştırır ve önerilmez",
+        "D": "MRH ölçümü gastrik motiliteyi değerlendirmede altın standarttır ve zorunlu uygulanmalıdır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "NUTRIREA-2 ve REGANE gibi büyük RKÇ'ler rutin MRH ölçümünün VAP oranlarını düşürmediğini, aksine gereksiz beslenme kesilmelerine ve kalori açığına neden olduğunu gösterdi. SHEA/IDSA bu uygulamayı önerilmeyenler listesine aldı.",
+      "aciklama_detay": "Gastrik rezidüel hacim (MRH) ölçümünün mantığı şuydu: Yüksek MRH → gastrik içerik birikimi → regürjitasyon ve aspirasyon riski → VAP. Ancak NUTRIREA-2 (Lancet 2018) ve REGANE dahil birden fazla büyük randomize kontrollü çalışma, rutin MRH ölçümünün VAP oranlarını anlamlı şekilde azaltmadığını kanıtladı. Buna karşın ölçüm; (1) 200 mL veya daha düşük eşiklerde dahi beslenmenin gereksiz yere durdurulmasına, (2) kalori açığı ve malnütrisyon riskine, (3) hemşire iş yükünün artmasına yol açmaktadır. Bu nedenle 2022 SHEA/IDSA kılavuzu asemptomatik hastalarda rutin MRH ölçümünü açıkça önerilmeyen uygulamalar arasında saymaktadır. Gastrik dismotilite şüphesi olan semptomatik hastalarda klinik değerlendirme tercih edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — RKÇ'ler rutin MRH ölçümünün VAP oranlarını azaltmadığını gösterdi; %30 azalma iddiası kanıtsızdır.",
+        "B": "YANLIŞ — Eşik değer tartışması güncelliğini yitirmiştir. Sorun eşiğin ne olduğu değil, rutin ölçümün VAP'ı azaltmadığının kanıtlanmış olmasıdır.",
+        "C": "DOĞRU — Rutin MRH ölçümü VAP'ı azaltmaz, kalori hedeflerinden uzaklaştırır. 2022 SHEA/IDSA kılavuzu asemptomatik hastalarda bu uygulamayı önermez.",
+        "D": "YANLIŞ — MRH ölçümünün gastrik motiliteyi değerlendirmedeki güvenilirliği de tartışmalıdır. Zorunlu uygulama olarak tanımlanması mevcut kılavuzlarla çelişmektedir."
+      },
+      "etiketler": ["mide rezidüel hacim", "enteral beslenme", "VİP korunma", "SHEA/IDSA 2022", "NUTRIREA-2"],
+      "zorluk": "orta",
+      "kaynak": "Reignier J et al. Lancet 2018 (NUTRIREA-2); Klompas M et al. Infect Control Hosp Epidemiol 2022"
     },
     {
-      "id": "q10",
-      "soru": "HAP/VAP'ta ampirik beta-laktam alerjisi (anafilaksi öyküsü) olan bir hastada gram-negatif kapsam için en uygun yaklaşım hangisidir?",
-      "secenekler": [
-        "Tüm beta-laktamlardan kaçınılmalı; karbapenem tek istisnadır",
-        "Aztreonam, kinolon veya aminoglikozid ile gram-negatif kapsam sağlanabilir",
-        "Yalnızca vankomisin yeterlidir",
-        "Linezolid tek seçenektir"
-      ],
-      "dogru": 1,
-      "aciklama": "Anafilaksi öyküsü olan hastalarda çapraz reaksiyon riski dışlandıktan sonra Aztreonam (gram-negatif etkili, beta-laktam yapısına rağmen çapraz reaktivite düşük), florokinolonlar veya aminoglikozidler gram-negatif kapsam için kullanılabilir. Vankomisin ve linezolid yalnızca gram-pozitif (özellikle MRSA) kapsam sağlar."
+      "id": "s10",
+      "metin": "HAP/VİP'ta ampirik tedavi planlanırken anafilaktik beta-laktam alerjisi bildiren bir hastada gram-negatif kapsam sağlamak gerekiyor. MRSA riski de mevcut.\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tüm beta-laktamlardan kaçınılmalı; yalnızca vankomisin yeterlidir",
+        "B": "Aztreonam + vankomisin veya linezolid kombinasyonu",
+        "C": "Levofloksasin monoterapisi tüm kapsamı sağlar",
+        "D": "Aminoglikozid monoterapisi gram-negatif kapsamı için yeterlidir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Anafilaktik penisilin alerjisinde aztreonam (monobaktam — çapraz reaksiyon yok) gram-negatif kapsam için güvenle kullanılabilir. MRSA kapsamı için vankomisin veya linezolid eklenir.",
+      "aciklama_detay": "Beta-laktam alerjisi olan hastalarda seçenek değerlendirmesi dikkatli yapılmalıdır. Anafilaksi öyküsünde penisilin ve sefalosporinlere (çapraz reaksiyon riski nedeniyle) genellikle kaçınılır; ancak karbapenemlerle çapraz reaksiyon oranı düşüktür (%1'in altı). Aztreonam (monobaktam sınıfı) penisilin ve sefalosporinlerle neredeyse hiç çapraz reaktivite göstermez; gram-negatif aerobik çomaklar için güvenle kullanılabilir, ancak gram-pozitif ve anaerob kapsamı yoktur. Bu nedenle: Gram-negatif kapsam için aztreonam + Gram-pozitif (MRSA) kapsam için vankomisin veya linezolid kombinasyonu mantıklıdır. Levofloksasin monoterapisi: Hem MRSA'ya güvenilmez hem de gram-negatif kapsamı tek başına yeterli değildir (monoterapi olarak HAP'ta önerilmez). Aminoglikozid monoterapisi: Akciğerde asidik ortamda penetrasyon yetersizliği nedeniyle kesinlikle tercih edilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Vankomisin gram-pozitif (MRSA) kapsamı sağlar; gram-negatif kapsamı yoktur. Tek başına vankomisin gram-negatif HAP için yetersizdir.",
+        "B": "DOĞRU — Aztreonam gram-negatif aerobik kapsam + vankomisin veya linezolid MRSA kapsamı. Beta-laktam alerjisinde aztreonam çapraz reaksiyon açısından güvenlidir.",
+        "C": "YANLIŞ — Levofloksasin MRSA için güvenilir değildir; monoterapi olarak MDR riskli HAP'ta önerilmez. Gram-negatif kapsamı da tek başına yetersiz kalabilir.",
+        "D": "YANLIŞ — Aminoglikozidler asidik akciğer ortamında in-vivo aktivite gösteremezler; HAP/VİP'te hiçbir zaman monoterapi olarak kullanılmamalıdır."
+      },
+      "etiketler": ["beta-laktam alerjisi", "aztreonam", "MRSA", "gram-negatif kapsam", "çapraz reaksiyon"],
+      "zorluk": "zor",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Macy E et al. Ann Allergy Asthma Immunol 2019"
     }
   ]
 }

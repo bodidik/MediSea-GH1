@@ -1,0 +1,294 @@
+{
+  "id": "vip-quiz-1",
+  "topic": "vip",
+  "branch": "gogus-hastaliklari",
+  "baslik": "VİP — Klinik Karar Soruları",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "YBÜ'de 6. günde mekanik ventilatörde olan bir hastada stabil ventilatör ayarları 2 günün ardından bozuluyor: FiO₂ 0.40'tan 0.62'ye çıkarılıyor ve bu durum 3 gün sürüyor. Ateş 38.4°C, lökositoz var. Yeni antibiyotik başlanıyor ve 5. gün trakeal aspiratta pürülan sekresyon saptanıyor.\n\nBu tablo CDC sürveyans hiyerarşisinde hangi basamağa denk gelir?",
+      "secenekler": {
+        "A": "Ventilatör ilişkili durum (VAC)",
+        "B": "Enfeksiyon ilişkili ventilatör komplikasyonu (IVAC)",
+        "C": "Olası VİP (Possible VAP)",
+        "D": "Muhtemel VİP (Probable VAP)"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "FiO₂'de ≥0.20 artış ≥2 gün = VAC. VAC + ateş + lökositoz + yeni antibiyotik ≥4 gün = IVAC. IVAC + pürülan sekresyon (mikrobiyolojik kanıt olmaksızın) = Olası VİP.",
+      "aciklama_detay": "CDC VAE hiyerarşisi üç kademeden oluşur: (1) VAC: ≥2 günlük stabil veya düşen ventilatör ayarlarının ardından PEEP'te ≥3 cmH₂O VEYA FiO₂'de ≥0.20 artışın en az 2 takvim günü sürmesi. Bu hastada FiO₂ +0.22 artış, 3 gün → VAC karşılandı. (2) IVAC: VAC + ateş anormalliği (<36°C veya >38°C) VEYA lökosit anormalliği (≤4000 veya ≥12.000/mm³) + yeni antibiyotiğin ≥4 gün sürmesi. Bu hastada ateş + lökositoz + yeni antibiyotik → IVAC karşılandı. (3) Olası VİP: IVAC + pürülan sekresyon VEYA pozitif akciğer kültürü. Bu hastada pürülan sekresyon var → Olası VİP. Muhtemel VİP ise Olası VİP kriterlerine ek olarak kantitatif kültür eşiği (BAL ≥10⁴ CFU/mL veya PSB ≥10³ CFU/mL) gerektirir. Bu hastada kültür sonucu bildirilmemiş → Muhtemel değil, Olası.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — VAC kriterleri karşılanmış olmakla birlikte, hastada ek olarak IVAC ve Olası VİP kriterleri de karşılanmıştır. En üst basamak rapor edilmelidir.",
+        "B": "YANLIŞ — IVAC kriterleri de karşılanmıştır; ancak pürülan sekresyon eklenmesiyle Olası VİP basamağına yükselilmiştir.",
+        "C": "DOĞRU — VAC + IVAC kriterleri karşılanmış + pürülan sekresyon (kantitatif kültür eşiği olmaksızın) = Olası VİP. Kültür eşiği gerektirecek bulgular yoksa Muhtemel'e çıkılamaz.",
+        "D": "YANLIŞ — Muhtemel VİP için kantitatif kültür eşiğinin (BAL ≥10⁴ veya PSB ≥10³ CFU/mL) karşılanması zorunludur. Bu hastada kültür sonucu bildirilmemiş."
+      },
+      "etiketler": ["VAE hiyerarşisi", "VAC", "IVAC", "Olası VİP", "Muhtemel VİP", "CDC sürveyans"],
+      "zorluk": "orta",
+      "kaynak": "CDC NHSN VAE Protocol 2023; Klompas M et al. Infect Control Hosp Epidemiol 2022"
+    },
+    {
+      "id": "s2",
+      "metin": "VİP şüpheli bir hastada bronkoskopik BAL yapılıyor ve kültürde 8×10³ CFU/mL Pseudomonas aeruginosa üremektedir. Akciğer grafisinde yeni infiltrat mevcut, ateş 38.6°C, pürülan sekresyon var.\n\nBu kültür sonucu nasıl yorumlanmalıdır?",
+      "secenekler": {
+        "A": "Kolonizasyon — antibiyotik başlamak için kantitatif eşik karşılanmamıştır",
+        "B": "Enfeksiyon — klinik bulgular yeterli, kültür eşiği gerekmez",
+        "C": "Kontaminasyon — bronkoskopik BAL her zaman güvenilirdir, yeniden örnekleme gerekir",
+        "D": "Kültür yöntemi yetersiz — endotrakeal aspirat tekrarlanmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bronkoskopik BAL için patojenik eşik ≥10⁴ CFU/mL'dir. 8×10³ CFU/mL bu eşiğin altında kaldığından kolonizasyon lehinedir. Ancak klinik tablo güçlüyse bütüncül değerlendirme şarttır.",
+      "aciklama_detay": "Kantitatif kültür eşikleri VİP tanısında kolonizasyonu enfeksiyondan ayırt etmek için geliştirilmiştir. ERS/ESICM tarafından desteklenen eşik değerleri şunlardır: BAL için ≥10⁴ CFU/mL (10.000), PSB (Korumalı Fırça) için ≥10³ CFU/mL, ETA (Endotrakeal Aspirat) için ≥10⁵ CFU/mL. Bu hastada 8×10³ CFU/mL, BAL eşiğinin (10.000) altındadır — teknik açıdan kolonizasyon lehinedir. Ancak önemli bir uyarı: Önceden antibiyotik kullanan hastalarda, bu değer gerçek bir enfeksiyonun 'bastırılmış' görünümü olabilir. Klinik bütünlük: yeni infiltrat + ateş + pürülan sekresyon güçlü VİP şüphesi yaratır. Bu nedenle kantitatif kültür tek başına karar verdirici olmamalı; klinik tablo, antibiyotik öyküsü ve biyobelirteçler birlikte değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — 8×10³ CFU/mL, BAL için ≥10⁴ CFU/mL kantitatif eşiğinin altındadır → teknik olarak kolonizasyon. Klinik iyileşme varsa tedavisiz izlem değerlendirilebilir; ancak güçlü klinik tabloda bütüncül karar verilmelidir.",
+        "B": "YANLIŞ — Kantitatif kültür eşiği karşılanmadan yalnızca klinik bulgulara dayanarak 'enfeksiyon' demek hatalıdır. Eşik değerleri tam da bu ayrımı yapmak için vardır.",
+        "C": "YANLIŞ — Bronkoskopik BAL güvenilir bir yöntemdir; kontaminasyon iddiası yerinde değildir. Tekrar örnekleme için endikasyon yoktur.",
+        "D": "YANLIŞ — ETA yöntemi de geçerlidir (eşik: ≥10⁵ CFU/mL); ancak kültür yöntemini değiştirmeyi zorunlu kılan bir durum yoktur. BAL kültürü yeterli ve geçerlidir."
+      },
+      "etiketler": ["kantitatif kültür", "BAL eşiği", "kolonizasyon vs enfeksiyon", "PSB", "ETA"],
+      "zorluk": "orta",
+      "kaynak": "ERS/ESICM/ESCMID/ALAT Guidelines 2017; Torres A et al. Intensive Care Med 2017"
+    },
+    {
+      "id": "s3",
+      "metin": "MDR patojen riski yüksek (son 2 ayda IV antibiyotik kullanımı, 8. gün yatış, septik şok) bir VİP hastasında ampirik tedavi planlanıyor. Lokal S. aureus izolatlarında MRSA oranı %28.\n\nDoğru ampirik rejim hangisidir?",
+      "secenekler": {
+        "A": "Sefepim monoterapisi",
+        "B": "Piperasilin-tazobaktam + amikasin (iki ilaç)",
+        "C": "Vankomisin + sefepim + levofloksasin (üç ilaç)",
+        "D": "Amikasin monoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MDR riski yüksek + septik şok + MRSA oranı >%20 = üçlü kombinasyon zorunlu: Anti-MRSA (vankomisin) + Anti-psödomonal beta-laktam (sefepim) + Farklı sınıftan 2. antipsödomonal (levofloksasin). Aminoglikozid monoterapisi asla kullanılmaz.",
+      "aciklama_detay": "ATS/IDSA kılavuzlarına göre şiddetli VİP'te (septik şok veya ARDS) veya MDR risk faktörlerinin çakıştığı durumlarda üçlü kombinasyon tedavisi zorunludur. Üç bileşen şunlardır: (1) Anti-MRSA ajan: Vankomisin (AUC/MİK rehberli, hedef AUC/MİK ≥400) veya linezolid. MRSA oranı >%20 eşiği aşıldığında (bu hastada %28) anti-MRSA kapsam şarttır. (2) Anti-psödomonal beta-laktam: Sefepim, piperasilin-tazobaktam, meropenem, imipenem veya seftazidim arasından seçim. (3) Farklı sınıftan 2. antipsödomonal ajan: Florokinolon (levofloksasin, siprofloksasin) veya aminoglikozid (amikasin, tobramisin). Aminoglikozidler: Asidik akciğer parankiminde in-vivo aktiviteleri çok düşüktür (iyon tuzağı mekanizması); bu nedenle VİP'te monoterapi olarak kullanılamazlar. Sadece kombinasyonda gram-negatif kapsamı güçlendirmek amacıyla yer alırlar. Şiddetli şok tablosunda florokinolon yerine aminoglikozid tercih edilebilir (daha hızlı bakterisidal etki).",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Sefepim monoterapisi ne MRSA'yı ne de MDR gram-negatifleri yeterince karşılar. Septik şok tablosunda dar spektrum kabul edilemez.",
+        "B": "YANLIŞ — Bu ikili rejim MRSA kapsamı içermemektedir. MRSA oranı >%20 eşiği aşılmış; anti-MRSA ajan eklenmesi zorunludur.",
+        "C": "DOĞRU — Vankomisin (anti-MRSA) + sefepim (anti-psödomonal beta-laktam) + levofloksasin (farklı sınıftan 2. antipsödomonal) = tam üçlü kombinasyon. MDR riskli septik şok tablosunda altın standart rejimdir.",
+        "D": "YANLIŞ — Aminoglikozid monoterapisi VİP'te kesinlikle kontrendikedir. Asidik akciğer ortamında in-vivo aktivitesi yetersizdir; tek başına ne MRSA'yı ne de tüm gram-negatifleri kapsar."
+      },
+      "etiketler": ["ampirik tedavi", "üçlü kombinasyon", "MDR riski", "MRSA", "aminoglikozid", "septik şok"],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016 (Tablo 2); Kalil AC et al. Clin Infect Dis 2016"
+    },
+    {
+      "id": "s4",
+      "metin": "VİP için ampirik vankomisin + sefepim başlanan hastada 36. saatte multiplex PCR sonucu geliyor: mecA geni negatif, Pseudomonas aeruginosa DNA saptanmıyor. Klinik tablo orta şiddette, kültür bekleniyor.\n\nBu durumda en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kültür sonucu çıkana kadar hiçbir değişiklik yapılmamalı",
+        "B": "PCR'ın yüksek negatif prediktif değerine dayanarak vankomisin ve geniş kapsamlı ajan ilk 48 saatte kesilebilir",
+        "C": "PCR pozitif çıkmadan antibiyotik kesilmesi hatalıdır",
+        "D": "Tüm antibiyotikler hemen kesilmeli; PCR yeterli kanıttır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Multiplex PCR'ın yüksek negatif prediktif değeri, MRSA ve Pseudomonas şüphesiyle başlanan geniş kapsamlı tedavinin ilk 24–48 saatte güvenle daraltılmasına imkan tanır. Tüm antibiyotikler değil, yalnızca şüpheyle başlanan geniş spektrumlu ajanlar kesilir.",
+      "aciklama_detay": "Multiplex PCR (sendromik panel) testleri BAL veya ETA sıvısından saatler içinde sonuç verir. En önemli avantajı yüksek negatif prediktif değeridir: mecA (MRSA direnç geni) negatif → MRSA olasılığı çok düşük → vankomisini erken kes. Pseudomonas DNA'sı saptanmıyor → Pseudomonas şüphesiyle başlanan 2. antipsödomonal ajanı kes. Bu yaklaşım MRSA ve MDR gram-negatif şüphesiyle başlanan geniş spektrumlu antibiyotiklerin konvansiyonel kültürü beklemeden (tipik 48–72 saat) çok daha erken kesilmesini sağlar. Önemli uyarılar: (1) PCR kültürün yerini almaz; kültür rutin olarak takip edilmelidir. (2) Tüm antibiyotikler kesilmez; yalnızca PCR ile dışlanabilen patojenlere yönelik kapsam daraltılır. (3) Klinik tablo kötüleşirse yeniden genişletme değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bu yaklaşım PCR'ın sağladığı hız avantajını ve negatif prediktif değerini kullanmıyor. Gereksiz geniş spektrum antibiyotiğin sürdürülmesi direnç gelişimini ve yan etkileri artırır.",
+        "B": "DOĞRU — mecA negatif → vankomisin kes; Pseudomonas DNA'sı yok → 2. antipsödomonal kes. Bu de-eskalasyon güvenlidir ve antibiyotik yönetiminin temel ilkesiyle uyumludur.",
+        "C": "YANLIŞ — PCR'ın yüksek negatif prediktif değeri klinik kararı destekler. Kültür beklenmeksizin PCR negatif + klinik iyileşme → de-eskalasyon güvenlidir.",
+        "D": "YANLIŞ — Tüm antibiyotiklerin kesilmesi aşırı bir adımdır. PCR yalnızca tespit ettiği veya dışladığı patojenler için karar verir; genel antibiyotik kapsamı kültür ve klinik tabloya göre sürdürülmelidir."
+      },
+      "etiketler": ["multiplex PCR", "de-eskalasyon", "negatif prediktif değer", "mecA", "MRSA"],
+      "zorluk": "zor",
+      "kaynak": "Rello J et al. Crit Care 2019 (BioFire FilmArray); Enne VI et al. Lancet Infect Dis 2014"
+    },
+    {
+      "id": "s5",
+      "metin": "Akciğer grafisinde yeni infiltrat olan, CPIS skoru 7 hesaplanan bir VİP şüpheli hastada bronkoskopik BAL kültüründe 500 CFU/mL üreme saptanmaktadır. Klinik iyileşme gözleniyor.\n\nBu çelişkili tabloda doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "CPIS >6 olduğundan antibiyotik başlanmalıdır; kültür eşiği önemli değildir",
+        "B": "BAL eşiğinin altındaki üreme kolonizasyon lehinedir; CPIS yalnız başına karar verdirmez — klinik bütünlük değerlendirilmeli",
+        "C": "CPIS güvenilmez bir skor olduğundan hiçbir tedavi kararında kullanılmamalıdır",
+        "D": "Hem CPIS hem kültür pozitif kabul edilerek hemen tedavi başlanır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "BAL kültürü 500 CFU/mL < ≥10⁴ CFU/mL eşiğinin altında: kolonizasyon lehine. CPIS >6 şüphe uyandırır ama tek başına yeterli değil; duyarlılık %60, özgüllük %59. Klinik iyileşme varsa izlem tercih edilebilir.",
+      "aciklama_detay": "Klinik Pulmoner Enfeksiyon Skoru (CPIS), VİP tanısında 1991'den beri kullanılan altı parametreli bir skordur: ateş, lökosit, oksijenasyon (PaO₂/FiO₂), akciğer grafisi, sekresyon miktarı/kalitesi ve trakeal kültür sonucu. Başlangıçta yüksek duyarlılık/özgüllük iddia edilmişti; ancak modern kohortlarda duyarlılık %60, özgüllük %59 gibi düşük değerlere geriledi. Bu nedenle ATS/IDSA kılavuzları CPIS'i rutin tanı aracı olarak önermemektedir. BAL kültür eşiği: ≥10⁴ CFU/mL patojenik kabul edilir; 500 CFU/mL çok altında. Bu iki bilginin birleşimi: Kültür eşiği karşılanmamış + klinik iyileşme → antibiyotik başlamak yerine yakın izlem makul bir seçenektir. Önceden antibiyotik kullanımı olsaydı kültürün bastırılmış olabileceği akılda tutulmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — CPIS >6 şüphe yaratır ama tanı koydurucusu değildir (duyarlılık %60). BAL eşiğinin altında üreme ve klinik iyileşme varlığında antibiyotik başlamak zorunlu değildir.",
+        "B": "DOĞRU — BAL < 10⁴ CFU/mL = kolonizasyon lehine. CPIS tek başına karar verdirici değil. Klinik iyileşme varsa izlem tercih edilebilir; kötüleşme olursa yeniden değerlendir.",
+        "C": "YANLIŞ — CPIS düşük duyarlılık/özgüllük nedeniyle kısıtlıdır; ancak tamamen geçersiz değildir. Klinik bağlamda destekleyici bir araç olarak kullanılabilir, rutin tanı aracı olarak önerilmez.",
+        "D": "YANLIŞ — 'Hem CPIS hem kültür pozitif' ifadesi hatalıdır: kültür eşiği karşılanmamış (negatif sayılır). Kültür pozitif olmadan bu gerekçeyle tedavi başlamak mantıklı değildir."
+      },
+      "etiketler": ["CPIS", "kantitatif kültür", "BAL eşiği", "kolonizasyon", "VİP tanısı"],
+      "zorluk": "zor",
+      "kaynak": "Pugin J et al. Am Rev Respir Dis 1991; Schurink CA et al. Intensive Care Med 2004"
+    },
+    {
+      "id": "s6",
+      "metin": "VİP nedeniyle sefepim + levofloksasin başlanan hastada 72. saatte klinik iyileşme var; PCT pik 18 ng/mL'den 3.0 ng/mL'ye düşmüş (>%83 azalma). ETA kültüründe MSSA üremesi var, MRSA öyküsü ve nazal swab negatif.\n\nTedavi planlaması açısından en doğru karar nedir?",
+      "secenekler": {
+        "A": "Komplikasyonsuz VİP'te 7 günlük kısa süreli tedavi yeterlidir; MSSA için oksasiline de-eskale et",
+        "B": "MSSA enfeksiyonu olduğundan mutlaka 15 güne uzatılmalıdır",
+        "C": "PCT normale dönmeden (<0.5 ng/mL) tedavi kesilemez",
+        "D": "Kültür sonucu alındıktan sonra 14 güne kadar uzatılmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Komplikasyonsuz VİP'te etken MSSA bile olsa 7 gün yeterli. PCT pik değerden >%80 düşüş = güvenli kesim kriteri. Oksasiline de-eskale etmek hem daha etkili (MSSA'da beta-laktam > vankomisin) hem de direnci azaltır.",
+      "aciklama_detay": "İki ayrı ilke aynı anda uygulanmaktadır: (1) De-eskalasyon: MSSA izolasyonu + negatif nazal MRSA swabı → anti-MRSA kapsama gerek yok; sefepim yerine oksasilin veya nafsilin kullan. MSSA'da beta-laktamlar, vankomisinden in-vitro ve in-vivo üstündür (daha hızlı bakterisidal etki, daha düşük MİK). (2) Tedavi süresi: ATS/IDSA kılavuzları komplikasyonsuz VİP ve HAP'ta etken ne olursa olsun (Pseudomonas dahil) 7 günlük kısa süreli tedaviyi önermektedir. Chastre ve ark. 2003 JAMA çalışması: 8 gün vs 15 gün — mortalite ve kür oranları benzer; kısa süre dirençli süperenfeksiyon riskini azalttı. PCT rehberliği: Pik değerden ≥%80 düşüş, klinik iyileşmeyle birleşince güvenli tedavi kesimini destekler. Mutlak değer <0.5 ng/mL olmasını beklemek zorunlu değildir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — 7 gün yeterli (kılavuz önerisi) + MSSA için oksasiline de-eskale et + PCT >%80 düşüş güvenli kesimi destekler.",
+        "B": "YANLIŞ — 15 günlük tedavinin 7 güne üstünlüğü kanıtlanmamıştır; direnç ve C. difficile riskini artırır.",
+        "C": "YANLIŞ — PCT'nin <0.5 ng/mL'ye gelmesi beklenmek zorunda değildir. Pik değerden ≥%80 azalma yeterli güvenilir eşiktir.",
+        "D": "YANLIŞ — 14 güne uzatmak için komplikasyon (ampiyem, apse, bakteriyemi) veya klinik kötüleşme gerekir. Bu hastada bu koşullar yoktur."
+      },
+      "etiketler": ["tedavi süresi", "de-eskalasyon", "MSSA", "oksasilin", "PCT", "7 gün VİP"],
+      "zorluk": "orta",
+      "kaynak": "Chastre J et al. JAMA 2003; ATS/IDSA HAP/VAP Guidelines 2016"
+    },
+    {
+      "id": "s7",
+      "metin": "Beyin cerrahisi sonrası YBÜ'deki entübe bir hastada VİP korunma paketi (bundle) uygulanıyor. Nöroyoğun bakım ekibi, sedasyon tatili (günlük sedasyon kesintisi) protokolünün bu hasta grubunda uygulanmaması gerektiğini söylüyor.\n\nBu görüş doğru mudur?",
+      "secenekler": {
+        "A": "Evet — Nöroşirurji hastalarında kafa içi basınç artışı riski nedeniyle sedasyon tatili kontrendike olabilir",
+        "B": "Hayır — Sedasyon tatili istisnasız tüm ventilatör hastalarında zorunlu uygulanmalıdır",
+        "C": "Sedasyon tatili yalnızca KOAH ve obstrüktif hastalıklarda endikedir",
+        "D": "Sedasyon tatili VİP açısından herhangi bir fayda sağlamaz"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kafa içi basınç artışı riski olan nöroşirurji, status epileptikus veya ağır kafa travması hastalarında sedasyon tatili kontrendike olabilir. Korunma paketi uygulamaları bireysel klinik duruma göre uyarlanmalıdır.",
+      "aciklama_detay": "Sedasyon tatilinin genel kanıtı güçlüdür: Kress ve ark. 2000 NEJM çalışması, günlük sedasyon tatilinin ICU yatış süresini ve mekanik ventilasyon günlerini azalttığını, dolayısıyla VİP riskini düşürdüğünü gösterdi. Mekanizma: Uyanık hasta öksürür → sekresyon klirensi artar; daha az sedasyon → erken ekstübasyon değerlendirilebilir. Ancak şu durumlarda sedasyon tatili kontrendike veya dikkatli uygulanmalıdır: (1) Artmış kafa içi basınç (AKB): Sedasyon tapered edildiğinde agitasyon ve Valsalva → AKB ani artışı → serebral perfüzyon baskısı düşebilir. (2) Status epileptikus: Sedasyon bilinçli tercih. (3) Ağır ARDS: Spontan solunum çabası volutrauma riskini artırabilir. (4) Aktif miyokard enfarktüsü. Bu nedenle VİP korunma paketleri, bireysel hasta durumuna göre uyarlanmalı; nöroyoğun bakım ekibinin kararı kılavuzlarla uyumludur.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Kafa içi basınç riski olan nöroşirurji hastalarında sedasyon tatili kontrendike olabilir. Nöroyoğun bakım ekibinin bu kararı klinical açıdan gerekçelidir.",
+        "B": "YANLIŞ — Sedasyon tatili genel ilke olarak önerilse de AKB riski, status epileptikus gibi özel durumlarda kontrendikedir. Evrensel zorunluluk olarak tanımlanamaz.",
+        "C": "YANLIŞ — Sedasyon tatili KOAH'la sınırlı değildir; genel yoğun bakım hastalarında (kardiyak, cerrahi, medikal) uygulanır. Kontrendikasyonları ayrıca değerlendirilmelidir.",
+        "D": "YANLIŞ — Sedasyon tatilinin VİP riskini azalttığına dair kanıt güçlüdür: Kress ve ark. çalışması mekanik ventilasyon ve ICU yatış süresini anlamlı ölçüde kısalttığını göstermiştir."
+      },
+      "etiketler": ["sedasyon tatili", "nöroşirurji", "kafa içi basınç", "VİP korunma", "kontrendikasyon"],
+      "zorluk": "zor",
+      "kaynak": "Kress JP et al. NEJM 2000; Klompas M et al. Infect Control Hosp Epidemiol 2022"
+    },
+    {
+      "id": "s8",
+      "metin": "Dört farklı antibiyotik sınıfına dirençli XDR Acinetobacter baumannii kaynaklı VİP tanısı alan bir hastada IV meropenem + IV kolistin başlanıyor. 72 saatte yanıt alınamıyor; oksijenayon bozuluyor.\n\nBu tabloda en uygun ek tedavi seçeneği hangisidir?",
+      "secenekler": {
+        "A": "İntravenöz aminoglikozid ekle (amikasin)",
+        "B": "Sistemik tedaviye ek olarak inhale kolistin başla (adjuvan)",
+        "C": "Tedaviyi 21 güne uzat, rejim değiştirme",
+        "D": "Sefepim ile değiştir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "XDR/PDR Acinetobacter'de sistemik tedaviye ek inhale (nebulize) kolistin adjuvan olarak kullanılabilir. İnhale yol lokal akciğer konsantrasyonunu artırırken sistemik toksisite riskini azaltır.",
+      "aciklama_detay": "XDR ve PDR gram-negatif bakteri enfeksiyonlarında tedavi seçenekleri son derece kısıtlıdır. Acinetobacter baumannii için mevcut seçenekler: (1) Polimiksinler (kolistin/polimiksin B): Nefrotoksik ama hâlâ aktif; IV formda serum konsantrasyonları düşük akciğerde. (2) Sefiderokol: Yeni nesil siderophore-sefalosporin; XDR/PDR Acinetobacter ve Pseudomonas için etki gösterir; Acinetobacter için FDA onaylı. (3) İnhale antibiyotikler (adjuvan): Sistemik tedaviye ek olarak inhale kolistin veya inhale aminoglikozid eklenmesi; doğrudan alt solunum yoluna yüksek konsantrasyon sağlar, sistemik toksisiteyi minimize eder. Endikasyon: Yalnızca polimiksinler veya aminoglikozidlere duyarlı XDR/PDR suşlarda, sistemik tedaviye yanıt alınamayan vakalarda. Aminoglikozid IV eklenmesi: Sistemik penetre yetmezliği nedeniyle ek fayda sınırlı; inhale yol daha mantıklı. Sefepim: XDR Acinetobacter için etki beklenmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — IV aminoglikozid, asidik akciğer ortamında in-vivo aktivitesi yetersiz olan bir ajan; sistemik ekleme ek klinik fayda sağlamayabilir. İnhale yol tercih edilir.",
+        "B": "DOĞRU — Sistemik tedaviye yanıt alınamayan XDR/PDR Acinetobacter VİP'te inhale kolistin adjuvan olarak yüksek lokal konsantrasyon sağlar; sistemik toksisiteyi artırmadan etki potansiyelini güçlendirir.",
+        "C": "YANLIŞ — Yanıtsız enfeksiyonda tedaviyi uzatmak değil, rejimi değiştirmek veya güçlendirmek gerekir. Etkin olmayan tedaviyi uzatmak yalnızca direnci artırır.",
+        "D": "YANLIŞ — Sefepim XDR Acinetobacter'e karşı aktivite göstermez; bu değişim klinik açıdan anlamsızdır."
+      },
+      "etiketler": ["XDR Acinetobacter", "inhale kolistin", "adjuvan tedavi", "sefiderokol", "polimiksin"],
+      "zorluk": "zor",
+      "kaynak": "Garnacho-Montero J et al. Crit Care 2015; Bassetti M et al. Intensive Care Med 2021"
+    },
+    {
+      "id": "s9",
+      "metin": "Bir YBÜ kalite denetiminde ventilatör devrelerinin her 72 saatte bir rutin olarak değiştirildiği görülüyor. Sorumlu hemşire bu uygulamanın enfeksiyon kontrol protokolüne uygun olduğunu söylüyor.\n\nGüncel kılavuzlar açısından bu uygulama nasıl değerlendirilmelidir?",
+      "secenekler": {
+        "A": "Doğru — 72 saatlik rutin değişim VİP'i %50 oranında azaltır",
+        "B": "Yanlış — 48 saatlik değişim VİP'i en çok azaltır; protokol güncellenmeli",
+        "C": "Yanlış — Rutin değişim VİP'i azaltmaz; devre yalnızca görünür kirlenme veya arızada değiştirilmeli",
+        "D": "Doğru — Üç ayda bir rutin değişim yeterlidir, daha sık değişim gerekmez"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Rutin ventilatör devresi değişiminin VİP'i azalttığı hiçbir RKÇ'de kanıtlanmadı. Devre manipülasyonu kontaminasyon riski yaratır. Yalnızca görünür kirlenme veya mekanik arızada değiştirilmeli; 2022 SHEA/IDSA bunu açıkça önerilmeyenler listesine almıştır.",
+      "aciklama_detay": "Ventilatör devrelerinin rutin değişimine ilişkin kanıt: Birden fazla randomize kontrollü çalışma, 48 saat, 72 saat veya 7 günlük rutin değişim aralıklarının VİP oranlarını azaltmadığını göstermiştir (Dreyfuss D et al. AJRCCM 1991; Kollef MH et al. Chest 1995). Neden zararlı olabilir: Her değişim, devrenin açılması ve yeniden bağlanması sırasında kondensatın hastaya geri kaçmasına, hava yolu sürüntüsüne ve çevre kontaminasyonuna yol açabilir. Kondensatın kendisi de önemli bir patojen taşıyıcısıdır: Biriktiğinde değişim değil, hastadan uzağa doğru dikkatli boşaltılması gerekir. 2022 SHEA/IDSA kılavuzu rutin devre değişimini 'önerilmez' kategorisinde açıkça listelemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 72 saatlik rutin değişimin VİP'i azalttığına dair kanıt yoktur; %50 azalma iddiası temelsizdir.",
+        "B": "YANLIŞ — 48 saatlik değişim de önerilmez. Hiçbir rutin aralığın VİP'i azalttığı gösterilememiştir.",
+        "C": "DOĞRU — Rutin değişim önerilmez. Görünür kirlenme veya mekanik arızada değiştir; bu yaklaşım 2022 SHEA/IDSA rehberiyle uyumludur.",
+        "D": "YANLIŞ — 'Üç ayda bir' gibi bir öneri mevcut değildir. Hiçbir takvim aralığı önerilmez; endikasyon gözlemsel (kirlenme/arıza) olmalıdır."
+      },
+      "etiketler": ["ventilatör devresi", "rutin değişim", "VİP bundle", "SHEA/IDSA 2022", "kondensatı yönetimi"],
+      "zorluk": "kolay",
+      "kaynak": "Kollef MH et al. Chest 1995; Klompas M et al. Infect Control Hosp Epidemiol 2022"
+    },
+    {
+      "id": "s10",
+      "metin": "Ventilatörde izlenen ve enteral beslenen bir hastada VİP önlemek amacıyla her 6 saatte bir mide rezidüel hacmi (MRH) ölçülüyor; 200 mL'nin üzerinde çıktığında beslenme durduruluyor.\n\nBu uygulamanın güncel kanıt açısından değerlendirmesi nedir?",
+      "secenekler": {
+        "A": "Doğru uygulama — rutin MRH ölçümü aspirasyon riskini belirler ve VİP'i azaltır",
+        "B": "Yanlış — Eşik 250 mL olmalıdır; 200 mL çok düşüktür",
+        "C": "Yanlış — Asemptomatik hastalarda rutin MRH ölçümü VİP'i azaltmaz; kalori açığına yol açar ve önerilmez",
+        "D": "Doğru — MRH ölçümü gastrik rezidü yönetiminde zorunlu bir standarttır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "NUTRIREA-2 ve REGANE çalışmaları rutin MRH ölçümünün VİP oranlarını düşürmediğini kanıtladı. Gereksiz beslenme kesintilerine ve kalori açığına neden olur. 2022 SHEA/IDSA asemptomatik hastalarda rutin ölçümü önermez.",
+      "aciklama_detay": "Gastrik rezidüel hacim (MRH) ölçümünün teorik gerekçesi şuydu: Yüksek MRH → gastrik staz → regürjitasyon → orofarengeal aspirasyon → VAP. Ancak bu mekanizma zinciri klinik kanıtlarla doğrulanamadı. Temel çalışmalar: (1) NUTRIREA-2 (Reignier J, Lancet 2018): MRH ölçümü olmadan beslenen vs ölçümle beslenen 449 hasta; VAP oranlarında fark yok, ancak MRH ölçüm grubunda daha fazla beslenme kesintisi ve kalori açığı. (2) REGANE çalışması: Benzer sonuçlar. Neden zararlı olabilir: Kalori açığı → malnütrisyon → immün sistem baskılanması → enfeksiyon riski paradoksal artar. 2022 SHEA/IDSA: Asemptomatik hastalarda rutin MRH ölçümü önerilmez. Semptomatik hastalar (aktif regürjitasyon, kusma, abdominal distansiyon) ayrı değerlendirilmeli.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — RKÇ'ler rutin MRH ölçümünün VAP'ı azaltmadığını gösterdi. Teorik gerekçe kanıtlanamamıştır.",
+        "B": "YANLIŞ — Eşik tartışması güncelliğini yitirdi; sorun eşiğin ne olduğu değil, ölçümün VAP'ı azaltmadığının kanıtlanmış olmasıdır.",
+        "C": "DOĞRU — Asemptomatik hastalarda rutin MRH ölçümü VAP'ı azaltmaz, kalori açığına yol açar. 2022 SHEA/IDSA bu uygulamayı önerilmez kategorisine almıştır.",
+        "D": "YANLIŞ — MRH ölçümü gastrik motilite için güvenilir bir standart değildir ve zorunlu uygulamalar arasında yer almaz."
+      },
+      "etiketler": ["mide rezidüel hacim", "enteral beslenme", "VİP korunma", "NUTRIREA-2", "SHEA/IDSA 2022"],
+      "zorluk": "orta",
+      "kaynak": "Reignier J et al. Lancet 2018 (NUTRIREA-2); Klompas M et al. Infect Control Hosp Epidemiol 2022"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış beş yaşında erkek hasta, çoklu travma nedeniyle 6 gündür yoğun bakım ünitesinde (YBÜ) invaziv mekanik ventilatör desteğinde takip edilmektedir. Yatışının ilk 3 gününde profilaktik/ampirik amaçlı intravenöz (IV) seftriakson aldığı öğrenilen hastanın takiplerinde ateşi 38.9°C'ye yükseliyor, endotrakeal sekresyonlarında pürülans ve miktar artışı saptanıyor. Kan basıncı 80/50 mmHg olan ve noradrenalin infüzyonu başlanan hastanın akciğer ultrasonografisinde sağ alt lobda yeni gelişen subplevral konsolidasyon ve dinamik hava bronkogramları izleniyor.\n\nBu hastanın tanısı, ampirik tedavisi ve bu klinik tablonun önlenmesi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastaya uygulanacak oral bakımda rutin klorheksidin kullanımı, VİP gelişimini önlemede mortalite avantajı sağlayan en güçlü kanıta dayalı uygulamadır.",
+        "B": "Hastanın beta-laktam alerjisi olması durumunda, ampirik tedavide anti-psödomonal etkinlik sağlamak amacıyla tek başına aminoglikozid monoterapisi tercih edilebilir.",
+        "C": "Hastada septik şok tablosu olması ve son 90 gün içinde IV antibiyotik kullanım öyküsü bulunması nedeniyle, ampirik tedavide anti-MRSA bir ajan ile birlikte iki farklı sınıftan anti-psödomonal ajan başlanmalıdır.",
+        "D": "Etken olarak solunum yolu kültüründe Pseudomonas aeruginosa izole edilmesi durumunda, nüksleri engellemek için tedavi süresi mutlak suretle 14-15 gün olarak planlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Son 90 günde IV antibiyotik öyküsü ve septik şok varlığı MDR patojen ve MRSA riskini ekstrem artırır; anti-MRSA ile birlikte iki farklı sınıftan anti-psödomonal kombinasyonu zorunludur. Klorheksidin rutin paketten çıkarılmıştır; aminoglikozidler akciğerde zayıf penetrasyonu nedeniyle tek başına kullanılamaz; komplike olmamış vakalarda 7 günlük tedavi yeterlidir.",
+      "aciklama_detay": "VİP gelişen hastada septik şok varlığı veya son 90 gün içinde IV antibiyotik kullanımı, çoklu ilaca dirençli (MDR) gram-negatif bakteri ve MRSA gelişimi açısından majör risk faktörleridir. Kritik şok tablosunda ampirik tedavinin yetersiz kalması mortaliteyi dramatik artıracağından, ATS/IDSA kılavuzları bir anti-MRSA (örn. vankomisin, linezolid) ile iki farklı sınıftan anti-psödomonal ajanın (örn. anti-psödomonal beta-laktam + florokinolon veya aminoglikozid) kombine edilmesini önerir. Klorheksidin ile oral dekontaminasyon ise net mortalite/insidans faydası göstermemesi ve potansiyel mukozal hasar/mortalite riskleri nedeniyle 2022 SHEA/IDSA rehberlerinde rutin paketten çıkarılmıştır. Aminoglikozidler asidik akciğer ortamında inaktive olmaya meyillidir ve parankim penetrasyonları zayıftır; monoterapi olarak kesinlikle kontrendikedir. Komplike olmamış Pseudomonas aeruginosa VİP vakalarında bile 7 günlük kısa süreli tedavi, 15 günlük tedaviyle benzer klinik kür ve sağkalım oranlarına sahip olup güncel kılavuzlarca önerilmektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Klorheksidin ile oral dekontaminasyon uygulaması, mortaliteyi düşürmediği gibi potansiyel yan etkiler ve mukoza hasarı nedeniyle SHEA/IDSA rehberlerinden çıkarılmıştır.",
+        "B": "YANLIŞ — Aminoglikozidler akciğer parankimine son derece zayıf penetre olur ve asidik ortamda inaktive olurlar; bu nedenle VİP tedavisinde asla monoterapi olarak tercih edilemezler.",
+        "C": "DOĞRU — Septik şok varlığı ve son 90 günde IV antibiyotik kullanımı MDR ve MRSA risk faktörüdür; ampirik olarak bir anti-MRSA + iki farklı sınıftan anti-psödomonal kombinasyonu zorunludur.",
+        "D": "YANLIŞ — Apse, ampiyem veya endovasküler komplikasyon yoksa, etken Pseudomonas aeruginosa olsa dahi 7 günlük kısa süreli antibiyotik tedavisi yeterlidir ve nüks oranlarında fark yaratmaz."
+      },
+      "etiketler": ["VİP ampirik tedavi", "MDR risk faktörleri", "klorheksidin", "aminoglikozid monoterapisi", "Pseudomonas aeruginosa", "tedavi süresi"],
+      "zorluk": "zor",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Klompas M et al. Infect Control Hosp Epidemiol 2022 (SHEA/IDSA)"
+    },
+    {
+      "id": "s12",
+      "metin": "Altmış sekiz yaşında, bilinen KOAH öyküsü olan erkek hasta, 3 gündür devam eden yüksek ateş, pürülan balgam, nefes darlığı ve konfüzyon şikayetleriyle acil servise getiriliyor. Fizik muayenede bilateral krepitan raller saptanıyor. Kan basıncı 80/50 mmHg, solunum sayısı 32/dk, SpO2 %85 (oda havasında) olarak ölçülüyor. Sıvı resüsitasyonuna yanıt alınamayan ve noradrenalin infüzyonu başlanan hasta, solunum yetmezliğinin derinleşmesi üzerine entübe edilerek Yoğun Bakım Ünitesi'ne (YBÜ) alınıyor. Laboratuvar incelemelerinde lökosit: 18.000/mm³, CRP: 240 mg/L saptanıyor. İdrar pnömokok antijeni pozitif, solunum yolu multiplex PCR testinde İnfluenza ve SARS-CoV-2 negatif olarak raporlanıyor.\n\nBu hastanın klinik yönetimi (ampirik antibiyoterapi, tedavi süresi, biyobelirteç kullanımı ve adjuvan tedaviler) ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Hastada influenza enfeksiyonu dışlandığı ve vazopresör gerektiren septik şok tablosu bulunduğu için, tedaviye adjuvan olarak sistemik kortikosteroid (örn. sürekli infüzyon veya bölünmüş dozlarda hidrokortizon) eklenmesi sağkalım avantajı sağlar.",
+        "B": "Hastanın yoğun bakım gerektiren 'Ağır Toplum Kökenli Pnömoni (sCAP)' tablosunda olması nedeniyle, ampirik antibiyoterapiye başlamak için prokalsitonin düzeyi beklenmeli; eğer prokalsitonin <0.25 ng/mL ise antibiyotik başlanmamalıdır.",
+        "C": "Hastada idrar pnömokok antijeni pozitif saptanmış olsa dahi, anti-pnömokoksik beta-laktamın yanına makrolid (örn. azitromisin) eklenmesi; NF-kB inhibisyonu gibi anti-enflamatuar ve immünomodülatör etkileriyle mortaliteyi azalttığı için tercih edilmelidir.",
+        "D": "Klinik stabilite sağlandıktan sonra antibiyotik tedavisinin ne zaman güvenle sonlandırılacağına karar vermek amacıyla seri prokalsitonin takibi (örn. pik değerden ≥%80 düşüş görülmesi) kanıta dayalı ve akılcı bir yaklaşımdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ağır Toplum Kökenli Pnömoni (sCAP) veya septik şok tablosundaki kritik hastalarda, ampirik antibiyoterapiyi başlatmak için asla prokalsitonin (PCT) sonucu beklenmemeli ve PCT düzeyi düşük olsa dahi tedavi derhal (ilk 1 saatte) başlanmalıdır. PCT, antibiyotik başlamak için değil, tedaviyi güvenle sonlandırmak (de-eskalasyon) için kullanılan bir biyobelirteçtir.",
+      "aciklama_detay": "sCAP ve septik şok gibi kritik klinik tablolarda ampirik antibiyoterapiye başlanması hayati önem taşır ve hiçbir biyobelirteç sonucu beklenerek geciktirilemez. Kılavuzlar, prokalsitonin seviyesi düşük (örn. <0.25 ng/mL) olsa dahi klinik olarak sCAP veya şok tablosunda olan her hastada ilk 1 saat içinde ampirik antibiyoterapinin başlanmasını şart koşar. Prokalsitonin, kritik hastalarda tedaviye başlamak için değil, klinik stabilizasyon sonrası tedaviyi güvenle kesmek (de-eskalasyon) için kullanılır. Güncel ERS/ESICM kılavuzları ve CAPE COD çalışması uyarınca, influenza dışı sCAP ve septik şok olgularında adjuvan hidrokortizon kullanımı 28 günlük mortaliteyi azaltır. Ağır pnömokoksik pnömonide makrolid eklenmesi, NF-kB ve AP-1 ekspresyonunu baskılayarak proinflamatuar sitokin salınımını azaltan (anti-enflamatuar/immünomodülatör) etkisiyle mortalite avantajı sağlar. Seri PCT takibi ile pik değerden ≥%80 düşüş görülmesi durumunda tedavinin kesilmesi ise SAPS ve PROGRESS çalışmalarıyla kanıtlanmış güvenli bir de-eskalasyon stratejisidir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — CAPE COD çalışması ve güncel ERS/ESICM kılavuzları, influenza dışı ağır TKP (sCAP) ve septik şok tablolarında adjuvan hidrokortizon tedavisinin mortaliteyi belirgin derecede düşürdüğünü kanıtlamıştır.",
+        "B": "YANLIŞ — Septik şok veya sCAP tablosunda olan hastalarda ampirik antibiyoterapinin başlanması için asla prokalsitonin sonucu beklenemez; PCT düşük olsa dahi gecikmeksizin derhal tedaviye başlanmalıdır.",
+        "C": "DOĞRU — Makrolidler (azitromisin vb.), NF-kB yolağını inhibe edip IL-8 gibi enflamatuar sitokinlerin salınımını baskılayarak (immünomodülatör etki) ağır pnömokoksik pnömonilerde anlamlı sağkalım avantajı sağlar.",
+        "D": "DOĞRU — Kritik hastalarda seri PCT takibi yapılarak seviyenin <0.5 ng/mL'ye gerilemesi veya pik değerden ≥%80 düşmesi durumunda tedavinin sonlandırılması, gereksiz antibiyotik maruziyetini azaltan kanıta dayalı bir yöntemdir."
+      },
+      "etiketler": ["Ağır TKP (sCAP)", "prokalsitonin", "adjuvan kortikosteroid", "makrolid immünomodülasyon", "septik şok"],
+      "zorluk": "zor",
+      "kaynak": "ERS/ESICM CAP Guidelines 2023; CAPE COD Trial (Dequin PF et al. NEJM 2023); ATS/IDSA CAP Guidelines 2019"
+    },
+    {
+      "id": "s13",
+      "metin": "Beş gündür yoğun bakım ünitesinde (YBÜ) invaziv mekanik ventilatör desteğinde takip edilen 72 yaşındaki kronik obstrüktif akciğer hastalığı (KOAH) olan erkek hastada; pürülan trakeal sekresyon artışı, ateşte yükselme (38.8°C) ve oksijenasyon ihtiyacında akut artış (PaO2/FiO2 < 200) saptanıyor. Çekilen akciğer grafisinde sağ alt lobda yeni gelişen homojen infiltrasyon izleniyor. Ventilatör ilişkili pnömoni (VİP) ön tanısı konulan hastanın tanı ve yönetim süreciyle ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "VİP tanısını kesinleştirmek ve mortaliteyi anlamlı ölçüde azaltmak için, non-invaziv endotrakeal aspirat (ETA) yerine mutlak suretle invaziv bronkoskopik BAL (kantitatif kültür) yapılmalıdır.",
+        "B": "Ampirik antibiyoterapiye başlama kararını vermek için serum prokalsitonin düzeyinin >0.5 ng/mL olması beklenmelidir; bu değerin altındaysa antibiyotik başlanmamalıdır.",
+        "C": "Alt solunum yolu örneğinden çalışılacak Multiplex PCR (sendromik panel) testi, patojenin ve direnç genlerinin hızlıca saptanmasını sağlayarak daha erken ve uygun antibiyotik başlanmasına imkan tanır; ancak hastane mortalitesini anlamlı ölçüde azalttığı gösterilememiştir.",
+        "D": "VİP gelişimini önlemek adına, profilaktik amaçla hastanın enteral beslenmesi postpilorik yerine gastrik yoldan yapılmalı ve gastrik rezidüel hacim (GRV) rutin olarak sık aralıklarla ölçülmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Alt solunum yolundan çalışılan sendromik Multiplex PCR panelleri, patojenlerin ve kritik direnç genlerinin hızlıca saptanmasını sağlayıp uygun ampirik tedavi oranını artırırken; bu testlerin hastane içi mortalite veya yoğun bakım kalış sürelerini anlamlı derecede kısalttığına dair yeterli kanıt yoktur. Bu nedenle de-eskalasyon ve antibiyotik yönetimi amacıyla şartlı önerilirler.",
+      "aciklama_detay": "Alt solunum yollarından çalışılan sendromik Multiplex PCR testleri (Örn. INHALE ve Flagship II çalışmaları), patojenleri ve direnç genlerini saatler içinde dökümante ederek uygun ampirik tedavi başlama süresini (~28 saat) ve oranını optimize eder; ancak bu moleküler yöntemlerin hastane mortalitesi veya YBÜ kalış süreleri üzerinde doğrudan ve anlamlı bir sağkalım avantajı sağladığı kanıtlanamamıştır. İnvaziv (BAL) ve non-invaziv (ETA) örnekleme yöntemleri arasında mortalite, ventilasyon süresi ve YBÜ kalış süresi açısından anlamlı bir fark gösterilememiş olup, ATS/IDSA non-invaziv ETA'yı, ERS/ESICM ise kantitatif invaziv yaklaşımı önermektedir. Dolayısıyla BAL yönteminin 'mutlak suretle' yapılması gerektiği iddiası asılsızdır. Prokalsitonin (PCT) tek başına tanı koydurmaz; şüpheli ve ağır klinik tablolarda antibiyotik başlamak için PCT sonucu asla beklenmemelidir; PCT yalnızca klinikte de-eskalasyon/tedavi kesimi amacıyla kullanılır. Enteral beslenen hastalarda ise rutin GRV ölçümü VİP oranını düşürmez ve kalori açığı oluşturur; ayrıca aspirasyon riski yüksek hastalarda gastrik değil postpilorik beslenme tercih edilmelidir. Aminoglikozidler akciğer parankimine zayıf nüfuz ettikleri ve asidik-pürülan ortamda inaktive oldukları için psödomonal şüpheli durumlarda bile asla monoterapi olarak kullanılmazlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — İnvaziv kantitatif örneklemenin (BAL) non-invaziv yarı-kantitatif yöntemlere (ETA) göre mortalite, ventilasyon süresi veya YBÜ yatış süresi üzerinde hiçbir üstünlüğü gösterilememiştir.",
+        "B": "YANLIŞ — VİP şüphesi doğduğu an gecikmeksizin ampirik antibiyotik başlanmalıdır; başlamak için PCT sonucunu beklemek veya düşük düzeylerde tedaviyi ertelemek klinik olarak hatalıdır.",
+        "C": "DOĞRU — Multiplex PCR panelleri hedeflenen uygun tedavi oranını artırır ve süreyi kısaltır; fakat bu testlerin VİP/HKP hastalarında genel hastane mortalitesini düşürdüğüne dair kanıt yoktur.",
+        "D": "YANLIŞ — Rutin GRV takibi VİP oranlarını azaltmadığı gibi kalori açığı yaratır; aspirasyon riskini azaltmak için gastrik değil, postpilorik enteral beslenme yolu tercih edilmelidir."
+      },
+      "etiketler": ["VİP tanı yönetimi", "Multiplex PCR panelleri", "bronkoskopik BAL vs ETA", "prokalsitonin", "enteral beslenme GRV"],
+      "zorluk": "zor",
+      "kaynak": "ERS/ESICM/ESCMID/ALAT Guidelines 2017; INHALE Trial (Rello J et al. Crit Care 2019); ATS/IDSA HAP/VAP Guidelines 2016"
+    }
+  ]
+}

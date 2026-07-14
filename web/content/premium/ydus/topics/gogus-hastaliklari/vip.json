@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "id": "vip",
+    "branch": "gogus-hastaliklari",
+    "baslik": "Ventilatör İlişkili Pnömoni (VİP)",
+    "altbaslik": "VAE sürveyans sistemi, patogenez, kantitatif kültür eşikleri, ampirik tedavi ve korunma paketleri",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 13,
+    "flashcard": 80,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve VAE Sürveyans Sistemi",
+      "satirlar": [
+        {
+          "metin": "Ventilatör ilişkili pnömoni (VİP), endotrakeal entübasyondan ≥48 saat sonra gelişen hastane kökenli pnömoninin spesifik bir alt tipidir. Ekstübasyon sonrası ilk 48 saat içinde gelişen pnömoniler de VİP kapsamındadır. VİP tanısının sübjektif kriterlere dayanması nedeniyle CDC, sürveyans amacıyla daha objektif **Ventilatör İlişkili Olay (VAE)** konseptini geliştirmiştir."
+        },
+        {
+          "metin": "**Önemli Not:** VAE tanımları enfeksiyon kontrol sürveyansı içindir; bireysel tedavi kararlarında temel alınmamalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "VAE Hiyerarşisi",
+      "kolonlar": [
+        "Kademe",
+        "Kriter"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "VAC — Ventilatör İlişkili Durum ★",
+            "≥2 günlük stabilite sonrasında PEEP'te ≥3 cmH₂O VEYA FiO₂'de ≥0.2 artışın en az 2 gün sürmesi"
+          ]
+        },
+        {
+          "renk": "turuncu",
+          "hucreler": [
+            "IVAC — Enfeksiyon İlişkili Komplikasyon ★",
+            "VAC + ateş anormalliği (<36°C veya >38°C) veya lökositoz/lökopeni + en az 4 gün süren yeni antibiyotik"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Olası / Muhtemel VİP ★",
+            "IVAC + pürülan sekresyon VEYA patojen üremesi (BAL ≥10⁴ CFU/mL, PSB ≥10³ CFU/mL, ETA ≥10⁵ CFU/mL)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Sınav Spotu — VAE kademelerini karıştırma: VAC sadece ventilatör ayarlarına bakar (nesnel). IVAC'ta antibiyotik başlanması şarttır (≥4 gün). Muhtemel VİP'te mikrobiyoloji eklenir. CDC NHSN verilerinde VAE protokolü VİP vakalarının yalnızca ~1/3'ünü yakalayabilmektedir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji ve Risk Faktörleri",
+      "satirlar": [
+        {
+          "metin": "VİP, mekanik ventilatördeki en yaygın ve mortalitesi yüksek enfeksiyondur (kaba mortalite **%15–30**). Mekanik ventilasyon süresiyle doğrudan ilişkilidir; her ek günde risk kümülatif olarak artar. VİP, ventilatör süresini ortalama **7.6–11.5 gün** ve hastane maliyetini hasta başına yaklaşık **40.000 USD** artırır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MDR Patojen Risk Faktörleri",
+      "kolonlar": [
+        "Risk Faktörü",
+        "Açıklama"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Son 90 günde IV antibiyotik kullanımı ★",
+            "En güçlü MDR risk faktörü"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Hastanede ≥5 gün yatış ★",
+            "Hastane florası ile temas artar"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Septik şok / ARDS",
+            "Kombinasyon tedavisi zorunlu hale gelir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Renal replasman tedavisi (VİP öncesi)",
+            "MDR gram-negatif riskini artırır"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Önceden MDR kolonizasyon öyküsü ★",
+            "Dirençli ajanla karşılaşma olasılığını en çok artıran faktör"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patogenez",
+      "satirlar": [
+        {
+          "metin": "Endotrakeal tüp glottik kapanmayı engelleyerek orofaringeal floranın alt havayollarına geçişini kolaylaştırır. Tüpün iç yüzeyinde saatler içinde oluşan **biyofilm**, antimikrobiyallere ve immün yanıta dirençlidir. Sekresyonların tüp etrafından mikroaspirasyonu ve biyofilmdeki bakterilerin ventilatör akımıyla akciğere itilmesi enfeksiyonu başlatır. Asıl kaynak **hastanın kendi florası**dır; kontamine ventilatör devrelerinden inhalasyon nadirdir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Mikrobiyoloji",
+      "satirlar": [
+        {
+          "metin": "**Gram-Negatifler:** *Pseudomonas aeruginosa* (en yüksek mortalite, en sık izole edilen GN), *Acinetobacter baumannii*, *Klebsiella pneumoniae*, *E. coli*, *Enterobacter* spp., *Stenotrophomonas maltophilia*. **Gram-Pozitifler:** *S. aureus* (CDC/NHSN verilerinde ~%28 ile birinci sıra). **Anaeroplar:** Nadirdir; apse/ampiyem/masif aspirasyon olmadıkça rutin kapsam önerilmez. **Virüs/Mantar:** İmmünosuprese veya ARDS olgularında (İnfluenza, RSV, *Aspergillus*) düşünülmelidir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanısal Yaklaşım",
+      "satirlar": [
+        {
+          "metin": "Tanı için **yeni/ilerleyici akciğer infiltratı** + aşağıdakilerin en az ikisi: ateş/hipotermi, pürülan sekresyon, lökositoz/lökopeni, oksijenasyon bozukluğu (PaO₂/FiO₂ düşüşü). Ampirik antibiyotik öncesinde alt solunum yolu örneklemesi alınmalıdır."
+        },
+        {
+          "metin": "**ATS/IDSA:** Endotrakeal aspirat (ETA) + yarı-kantitatif kültür yeterli. **ERS/ESICM:** İnvaziv (bronkoskopik BAL, mini-BAL veya PSB) + kantitatif kültür önerilir (direnç azaltma amacıyla)."
+        },
+        {
+          "metin": "**Klinik Pulmoner Enfeksiyon Skoru (CPIS):** >6 puan VİP lehine; ancak modern kohortlarda duyarlılık (%60) ve özgüllüğü (%59) düşük — rutin kullanımı önerilmez."
+        },
+        {
+          "metin": "**PCT:** Antibiyotik başlama kararı için önerilmez. Pik değerden ≥%80 düşüş veya <0,5 ng/mL düzeyi, klinik iyileşmeyle birleşince tedavi kesilmesinde güçlü rehberlik sağlar."
+        },
+        {
+          "metin": "**Multiplex PCR:** BAL/ETA'dan saatler içinde patojen ve direnç geni (mecA, KPC, NDM) saptaması; yüksek negatif prediktif değeri sayesinde MRSA/Pseudomonas için başlanan geniş spektrumlu antibiyotiğin ilk 24 saatte de-eskalasyonuna imkan tanır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Kantitatif Kültür Eşik Değerleri",
+      "kolonlar": [
+        "Örnekleme Yöntemi",
+        "Patojenik Eşik"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Endotrakeal Aspirat (ETA) ★",
+            "≥10⁵ CFU/mL"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Bronkoskopik BAL ★",
+            "≥10⁴ CFU/mL"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Korumalı Fırça (PSB) ★",
+            "≥10³ CFU/mL"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ampirik Antibiyoterapi",
+      "kolonlar": [
+        "Klinik Durum",
+        "Rejim"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "MDR / MRSA riski YOK ★",
+            "Monoterapi: Anti-psödomonal beta-laktam (Sefepim, Pip-Taz veya Karbapenem) VEYA Levofloksasin"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "MDR riski VAR / Septik şok ★",
+            "(1) Anti-MRSA: Vankomisin veya Linezolid  ARTI  (2) Anti-psödomonal beta-laktam  ARTI  (3) Farklı sınıftan 2. ajan: Amikasin/Tobramisin VEYA Levofloksasin/Siprofloksasin"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "XDR/PDR P. aeruginosa veya Acinetobacter",
+            "Sistemik tedaviye ek inhale kolistin (adjuvan). Ceftolozane/tazobaktam (MDR Pseudomonas) veya Sefiderokol/Kolistin (Acinetobacter)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Aminoglikozidler asidik akciğer parankiminde zayıf penetrasyon nedeniyle VİP'te ASLA monoterapi olarak kullanılmamalıdır. Yalnızca kombinasyon tedavisinde (MDR Pseudomonas şüphesi olan şiddetli vakalarda) yer alabilirler."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tedavi Süresi ve De-eskalasyon",
+      "satirlar": [
+        {
+          "metin": "Komplike olmayan VİP'te (ampiyem/apse yok) etken *P. aeruginosa* olsa bile kılavuzlar **7 günlük** kısa tedaviyi önermektedir. Kısa süre, 15 günlük tedaviyle benzer mortalite ve kür oranları sağlarken direnç gelişimini ve yan etkileri azaltır."
+        },
+        {
+          "metin": "**De-eskalasyon:** Nazal MRSA swabı negatif veya kültür/PCR'da MRSA saptanmazsa anti-MRSA kesilmeli; kültür sonuçlarına göre spektrum daraltılmalıdır. 48–72. saatte değerlendirme zorunludur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "VİP Korunma Paketi (2022 SHEA/IDSA)",
+      "kolonlar": [
+        "Önlem",
+        "Kanıt / Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Entübasyondan kaçın / HFNC veya NIV kullan ★",
+            "En etkili önlem; erken ekstübasyonu destekle"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sedasyon minimizasyonu + günlük sedasyon tatili ★",
+            "Öksürük refleksi ve uyanıklık korunur; erken ekstübasyona zemin hazırlar"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Yatak başı 30–45° elevasyonu ★",
+            "Mikroaspirasyonu ve gastroözofageal reflüyü azaltır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Diş fırçalama (mekanik ağız bakımı) ★",
+            "Biyofilm yükünü azaltır; önerilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Klorheksidin ile oral dekontaminasyon — ÖNERİLMEZ ★",
+            "Mortalite faydası gösterilememiş; potansiyel riskleri nedeniyle kılavuzdan çıkarıldı"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Subglottik sekresyon drenaj portlu tüp ★",
+            "≥48–72 saat entübasyon beklenen hastalarda kullanılmalı"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Rutin ventilatör devresi değişimi — ÖNERİLMEZ ★",
+            "Sadece görünür kirlenme/arızada değiştir; rutin değişim VİP riskini artırabilir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Rutin mide rezidüel hacim ölçümü — ÖNERİLMEZ ★",
+            "VAP oranlarını düşürmez; enteral kalori hedefinden uzaklaştırır"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Endotrakeal tüp kaf basıncı 20–30 cmH₂O ★",
+            "Mikroaspirasyon riskini azaltır"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "VİP 8 Altın Kural: (1) VAE ≠ VİP — sürveyans aracı, tedavi kılavuzu değil. (2) Biyofilm = tüpün iç yüzeyinde; asıl kaynak hastanın kendi florası. (3) BAL ≥10⁴, PSB ≥10³, ETA ≥10⁵ CFU/mL eşikleri. (4) PCT başlama kararı vermez ama kesmede değerli. (5) MRSA riski yüksekse üçlü rejim zorunlu; aminoglikozid monoterapisi yasak. (6) Komplike olmayan VİP'te 7 gün yeterli. (7) Klorheksidin ağız bakımı artık önerilmiyor. (8) Entübasyondan kaçınmak > tüm diğer önlemler."
+    }
+  ]
+}

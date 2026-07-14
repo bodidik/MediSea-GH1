@@ -1,0 +1,488 @@
+{
+  "id": "vip",
+  "accessLevel": "premium",
+  "topic": "Ventilatör İlişkili Pnömoni (VİP)",
+  "description": "VAE sürveyans sistemi, kantitatif kültür eşikleri, MDR patojen riski, ampirik tedavi ve korunma paketleri — 80 kart",
+  "cards": [
+    {
+      "id": "vip-001",
+      "front": "Ventilatörle ilişkili pnömoni (VAP) tanımı için endotrakeal entübasyondan sonra ne kadar süre geçmelidir?",
+      "back": "48 saat veya daha fazla.",
+      "tag": "tanim"
+    },
+    {
+      "id": "vip-002",
+      "front": "Hastane kaynaklı pnömoni (HAP) geliştikten sonra mekanik ventilasyon ihtiyacı duyan hastalar hangi terimle adlandırılır?",
+      "back": "Ventile hastane kaynaklı pnömoni (VHAP).",
+      "tag": "tanim"
+    },
+    {
+      "id": "vip-003",
+      "front": "Ventilatörle ilişkili durum (VAC) tanımı için günlük minimum PEEP değerinde ne kadarlık bir artış gereklidir?",
+      "back": "En az 2 gün boyunca $\\ge 3$ $cmH_{2}O$ artış.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-004",
+      "front": "Ventilatörle ilişkili durum (VAC) tanımı için günlük minimum FiO₂ değerinde ne kadarlık bir artış gereklidir?",
+      "back": "En az 2 gün boyunca $\\ge 0.2$ (20 puan) artış.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-005",
+      "front": "Enfeksiyonla ilişkili ventilatör komplikasyonu (IVAC) tanısı için hastada hangi lökosit değerleri aranır?",
+      "back": "$\\le 4000$ veya $\\ge 12.000$ $hücre/mm^{3}$.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-006",
+      "front": "Olası (Possible) VAP tanısı için IVAC kriterlerine ek olarak hangi mikrobiyolojik bulgu yeterlidir?",
+      "back": "Patojenik bir akciğer kültürü veya pürülan sekresyon kanıtı.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-007",
+      "front": "Muhtemel (Probable) VAP tanısı için bronkoalveoler lavaj (BAL) kültüründe aranan kantitatif eşik nedir?",
+      "back": "$\\ge 10^{4}$ $CFU/mL$.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-008",
+      "front": "Muhtemel (Probable) VAP tanısı için korumalı numune fırçası (PSB) kültüründe aranan kantitatif eşik nedir?",
+      "back": "$\\ge 10^{3}$ $CFU/mL$.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-009",
+      "front": "Ventilatörle ilişkili pnömoninin (VAP) en yaygın patogenez mekanizması nedir?",
+      "back": "Orofaringeal sekresyonların mikroaspirasyonu.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-010",
+      "front": "VAP gelişimini önlemek için endotrakeal tüp kaf basıncı hangi aralıkta tutulmalıdır?",
+      "back": "20 ile 30 $cmH_{2}O$ arası.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-011",
+      "front": "VAP önleme protokollerinde hastanın yatak başı elevasyonu kaç derece olmalıdır?",
+      "back": "30 ile 45 derece arası.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-012",
+      "front": "Klinik Pulmoner Enfeksiyon Skoruna (CPIS) göre VAP şüphesi uyandıran puan eşiği kaçtır?",
+      "back": "6 puanın üzeri.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-013",
+      "front": "CDC sürveyans kriterlerine göre IVAC tanısı için yeni antibiyotik tedavisinin en az kaç gün sürmesi gerekir?",
+      "back": "4 veya daha fazla gün.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-014",
+      "front": "VAP patogenezinde rol oynayan Pseudomonas aeruginosa için en önemli çevresel rezervuar neresidir?",
+      "back": "Lavabo ve solunum ekipmanlarındaki su.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-015",
+      "front": "VAP şüphesinde radyolojik olarak tanı koydurucu temel bulgu nedir?",
+      "back": "Yeni veya ilerleyici pulmoner infiltrat.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-016",
+      "front": "Mekanik ventilasyon devresinin rutin değişimi hakkında güncel öneri nedir?",
+      "back": "Sadece görünür şekilde kirlendiğinde veya arızalandığında değiştirilmelidir.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-017",
+      "front": "Çok ilaca dirençli (MDR) patojenler için en önemli risk faktörlerinden biri nedir?",
+      "back": "Son 90 gün içinde antibiyotik kullanımı.",
+      "tag": "risk"
+    },
+    {
+      "id": "vip-018",
+      "front": "Ventilatörle ilişkili trakeobronşit (VAT) ve VAP arasındaki temel radyolojik fark nedir?",
+      "back": "VAT vakalarında akciğer grafisinde yeni infiltrat bulunmaz.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "vip-019",
+      "front": "'Pneumonia Zero' projesinin zorunlu bileşenlerinden biri olan klorheksidin ile oral bakım güncel kılavuzlarda nasıl değerlendirilmektedir?",
+      "back": "Mortalite faydası gösterilememiş ve potansiyel riskleri nedeniyle artık rutin önerilmemektedir.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-020",
+      "front": "VAP şüphesi olan bir hastada ampirik antibiyotik tedavisine ne zaman başlanmalıdır?",
+      "back": "Alt solunum yolu örnekleri alındıktan hemen sonra.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-021",
+      "front": "Bakteriyel VAP vakalarında CDC/NHSN verilerine göre en sık izole edilen gram-pozitif patojen hangisidir?",
+      "back": "$Staphylococcus\\ aureus$ (izolatların ~%28'i).",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-022",
+      "front": "MDR Pseudomonas aeruginosa riski olan VAP hastalarında ampirik tedavide hangi yeni kombinasyon önerilir?",
+      "back": "Ceftolozane/tazobactam artı bir aminoglikozid veya kinolon.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-023",
+      "front": "VAP tanısında kullanılan Multiplex PCR testlerinin geleneksel kültürlere göre ana avantajı nedir?",
+      "back": "Patojenlerin ve direnç genlerinin çok daha hızlı tanımlanması.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-024",
+      "front": "Ventilatörle ilişkili olay (VAE) sürveyans hiyerarşisinin ilk basamağı nedir?",
+      "back": "Ventilatörle ilişkili durum (VAC).",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-025",
+      "front": "VAP tanısında proksimal (endotrakeal aspirat) örneklemin kantitatif tanı eşiği nedir?",
+      "back": "$\\ge 10^{5}$ $CFU/mL$.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-026",
+      "front": "Aspirasyon pnömonisine yatkınlık yaratan ve Glasgow Koma Skoru ile ilişkili olan risk faktörü nedir?",
+      "back": "Bilinç düzeyinin azalması (GKS < 7).",
+      "tag": "risk"
+    },
+    {
+      "id": "vip-027",
+      "front": "PDR (Pandirençli) Klebsiella pneumoniae kaynaklı VAP tedavisinde intravenöz tedaviye ek olarak ne düşünülebilir?",
+      "back": "Nebulize (inhale) antibiyotikler.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-028",
+      "front": "VAP gelişiminde mide asitliğini azaltan hangi ilaç grubunun rolü tartışmalıdır?",
+      "back": "Proton pompası inhibitörleri.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-029",
+      "front": "Ventilatör ayarlarında ani bozulma ve hipoksemi ile başvuran hastada VAP dışında hangi durum dışlanmalıdır?",
+      "back": "Pnömotoraks veya pulmoner emboli.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "vip-030",
+      "front": "Hangi hasta grubunda VAP etkeni olarak virüs ve mantarların görülme olasılığı daha yüksektir?",
+      "back": "İmmün sistemi baskılanmış hastalar.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-031",
+      "front": "VAP tanısında kullanılan hangi biyobelirteç antibiyotik süresini kısaltmada yardımcı olabilir?",
+      "back": "Prokalsitonin (PCT).",
+      "tag": "biyobelirtec"
+    },
+    {
+      "id": "vip-032",
+      "front": "Sürekli sedasyonun VAP riskini artırmasının temel nedeni nedir?",
+      "back": "Öksürük refleksini baskılaması ve aspirasyon riskini artırması.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-033",
+      "front": "Acinetobacter baumannii'nin VAP'taki virülans faktörlerinden biri nedir?",
+      "back": "Demir regüleli dış membran proteinleri.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-034",
+      "front": "Ekstübasyondan sonra ne kadar süre içinde gelişen pnömoni VAP kapsamında değerlendirilir?",
+      "back": "48 saat.",
+      "tag": "tanim"
+    },
+    {
+      "id": "vip-035",
+      "front": "Subglottik sekresyon drenajı portu olan tüplerin hangi süreden uzun ventilasyon beklenen hastalarda kullanılması önerilir?",
+      "back": "48–72 saatten fazla.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-036",
+      "front": "VAP sürveyansında kullanılan VAE kriterlerinin ana kısıtlılığı nedir?",
+      "back": "VAP vakalarının üçte birinden daha azını tespit edebilmesi.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-037",
+      "front": "İnhale nitrik oksit (NO) kullanımının enfeksiyon kontrolü açısından avantajı nedir?",
+      "back": "Filtre değişim ihtiyacını azaltarak bulaş riskini düşürmesi.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-038",
+      "front": "VAP tedavisinde ampirik olarak MRSA kapsamı eklenmesi için hastanede yatış süresi eşiği ne kabul edilir?",
+      "back": "5 gün veya daha uzun süreli yatış.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-039",
+      "front": "VAE protokolünde günlük minimum PEEP değeri 0–5 cmH₂O arası olan hastalar nasıl değerlendirilir?",
+      "back": "Bu değerler birbirine eşdeğer kabul edilir.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-040",
+      "front": "VAP gelişimini önlemek için beslenme stratejisi olarak hangisi tercih edilmelidir?",
+      "back": "Parenteral yerine enteral beslenme.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-041",
+      "front": "Klinik Pulmoner Enfeksiyon Skoru (CPIS) hesaplamasında ilk gün değerlendirilen değişken sayısı kaçtır?",
+      "back": "Beş değişken.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-042",
+      "front": "Aspirasyon pnömonisi ile ilişkili en yaygın anaerobik patojenlerden biri nedir?",
+      "back": "Peptostreptococcus.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-043",
+      "front": "KPC (Klebsiella pneumoniae karbapenemaz) üreten suşlarda hangi ajan ampirik hedefli tedavide öne çıkar?",
+      "back": "Ceftazidime/avibactam.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-044",
+      "front": "Mekanik ventilasyon sırasında gastrik rezidüel volüm takibi hakkında güncel görüş nedir?",
+      "back": "Asemptomatik hastalarda rutin takibi VAP oranlarını azaltmaz; önerilmez.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-045",
+      "front": "MDR patojen riski olmayan 'erken başlangıçlı' nozokomiyal pnömonide tercih edilen antibiyotik grubu nedir?",
+      "back": "3. kuşak sefalosporinler.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-046",
+      "front": "Metallo-β-laktamaz üreten gram-negatif bakterilerde tedaviye hangi ajan eklenebilir?",
+      "back": "Aztreonam.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-047",
+      "front": "VAP tanısı için çekilen akciğer grafisindeki 'hava bronkogramı' neyi ifade eder?",
+      "back": "Hava dolu bronşların konsolide akciğer dokusu içinde görünür hale gelmesi.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-048",
+      "front": "VAP patogenezinde mide pH'sını artıran tedavilerin olası riski nedir?",
+      "back": "Midenin bakteriyel kolonizasyonunu artırarak retrograd kontaminasyona yol açması.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-049",
+      "front": "VİP tedavisinde ampirik tedavinin başarısız olduğu durumlarda hangi nadir etkenler düşünülmelidir?",
+      "back": "Anaeroblar veya mantarlar.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-050",
+      "front": "VAP önleme paketlerinde 'sedasyon tatili' olarak bilinen uygulamanın amacı nedir?",
+      "back": "Hastanın nörolojik durumunu değerlendirmek ve ventilatör süresini kısaltmak.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-051",
+      "front": "Hangi anatomik özellik Stenotrophomonas maltophilia için bir 'psödo-salgın' kaynağı olabilir?",
+      "back": "Kontamine bronkoskoplar.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-052",
+      "front": "VAP tanısında 'pürülan sekresyon' tanımı mikroskobik olarak nasıl yapılır?",
+      "back": "Düşük güç alanında $\\ge 25$ nötrofil ve $\\le 10$ epitel hücresi görülmesi.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-053",
+      "front": "VAP hastalarında tedavi süresini belirlemede klinik yanıtın en önemli göstergesi nedir?",
+      "back": "Oksijenasyon parametrelerinde ($PaO_{2}/FiO_{2}$) iyileşme.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-054",
+      "front": "Ventilatör devrelerindeki 'kondensat' (sıvı birikimi) yönetimi neden önemlidir?",
+      "back": "Patojenlerin hastaya geri kaçmasını (re-entry) önlemek için.",
+      "tag": "patogenez"
+    },
+    {
+      "id": "vip-055",
+      "front": "MDR Acinetobacter baumannii enfeksiyonunda 'kurtarma' tedavisi olarak hangi ajanlar düşünülür?",
+      "back": "Kolistin veya sefiderokol.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-056",
+      "front": "Hangi durum VAP tanısında yanlış pozitif akciğer grafisi bulgularına neden olabilir?",
+      "back": "Konjestif kalp yetmezliği veya pulmoner ödem.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "vip-057",
+      "front": "VAP tanısı için alınan periferik kan kültürlerinin önemi nedir?",
+      "back": "Sekonder bakteriyemiyi dışlamak ve tanıyı desteklemek.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-058",
+      "front": "İmmünkompetan hastalarda VAP'a neden olan en yaygın viral etkenlerden biri nedir?",
+      "back": "İnfluenza virüsü.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-059",
+      "front": "VAE (Ventilatör İlişkili Olaylar) tanımı yapılırken 'takvim günü' kavramı neyi ifade eder?",
+      "back": "Gece yarısından gece yarısına kadar olan 24 saatlik süre.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-060",
+      "front": "VAP tedavisinde de-eskalasyon ne zaman yapılmalıdır?",
+      "back": "Kültür sonuçları netleştiğinde ve hasta klinik olarak stabilleştiğinde.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-061",
+      "front": "Aspirasyon pnömonisi olan hastalarda 'akciğer apsesi' gelişimine en sık yol açan patojen grubu hangisidir?",
+      "back": "Ağız içi anaerobları.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-062",
+      "front": "Nozokomiyal sinüzit gelişimi için en önemli risk faktörlerinden biri nedir?",
+      "back": "Nazogastrik tüp kullanımı.",
+      "tag": "risk"
+    },
+    {
+      "id": "vip-063",
+      "front": "VAP tanısında kullanılan akciğer ultrasonu bulgularından biri nedir?",
+      "back": "Dinamik hava bronkogramları.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-064",
+      "front": "VAP önlemede diş fırçalamanın rolü nedir?",
+      "back": "Biyofilm oluşumunu azaltarak orofaringeal yükü düşürmek.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-065",
+      "front": "Ventile hastane kaynaklı pnömoni (VHAP) mortalite açısından VAP ile nasıl kıyaslanır?",
+      "back": "VHAP genellikle daha yüksek mortalite ile ilişkilidir.",
+      "tag": "epidemiyoloji"
+    },
+    {
+      "id": "vip-066",
+      "front": "VAP tedavisinde inhale aminoglikozidlerin ana kullanım amacı nedir?",
+      "back": "Dirençli gram-negatif bakterilerde sistemik tedaviye adjuvan destek sağlamak.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-067",
+      "front": "Endotrakeal aspirat kültürünün VAP tanısındaki kısıtlılığı nedir?",
+      "back": "Kolonizasyonu enfeksiyondan ayırt etme yeteneğinin düşük olması.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-068",
+      "front": "VAP hastalarında 'persistan pnömoni' tanımı için tedavi altında ne kadar süre geçmelidir?",
+      "back": "72 saatlik uygun tedaviye rağmen klinik düzelme olmaması.",
+      "tag": "klinik"
+    },
+    {
+      "id": "vip-069",
+      "front": "Ventilatör devresinin görünür kirlenmesi durumunda ne yapılmalıdır?",
+      "back": "Hemen yeni bir steril devre ile değiştirilmelidir.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-070",
+      "front": "VAP riski açısından orotrakeal entübasyon ile nazotrakeal entübasyon arasındaki temel fark nedir?",
+      "back": "Nazotrakeal entübasyon sinüzit riskini artırsa da VAP hızı benzerdir.",
+      "tag": "risk"
+    },
+    {
+      "id": "vip-071",
+      "front": "VAP sürveyansında 'başlangıç periyodu' (baseline period) nasıl tanımlanır?",
+      "back": "Artıştan hemen önceki 2 takvim günü.",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-072",
+      "front": "Acinetobacter enfeksiyonlarında bakterisidal etkili olduğu araştırılan hedeflenmiş molekül nedir?",
+      "back": "Dış membran proteinlerine karşı monoklonal antikorlar.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-073",
+      "front": "VAP tanısında 'silüet işareti' ne anlama gelir?",
+      "back": "İnfiltratın komşu solid organ sınırlarını (örneğin kalp kenarı) silmesi.",
+      "tag": "tani"
+    },
+    {
+      "id": "vip-074",
+      "front": "Beslenme desteğinin VAP önlemedeki rolü nedir?",
+      "back": "Mukoza bütünlüğünü koruyarak bakteriyel translokasyonu önlemek.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-075",
+      "front": "VAP tedavisinde kullanılan antibiyotiklerin akciğer dokusuna geçişini etkileyen faktör nedir?",
+      "back": "İlacın lipofilikliği ve inflamasyon düzeyi.",
+      "tag": "tedavi"
+    },
+    {
+      "id": "vip-076",
+      "front": "Hangi VAE kategorisi antibiyotik başlanmasını şart koşar?",
+      "back": "Enfeksiyonla ilişkili ventilatör komplikasyonu (IVAC).",
+      "tag": "vae"
+    },
+    {
+      "id": "vip-077",
+      "front": "VAP tanısında 'akut solunum sıkıntısı sendromu' (ARDS) ile ayırıcı tanı neden zordur?",
+      "back": "Her iki durum da yaygın bilateral infiltratlarla seyredebilir.",
+      "tag": "ayirici"
+    },
+    {
+      "id": "vip-078",
+      "front": "VAP önlemede gümüş kaplı endotrakeal tüplerin potansiyel faydası nedir?",
+      "back": "Bakteriyel kolonizasyonu ve biyofilm gelişimini geciktirmesi.",
+      "tag": "korunma"
+    },
+    {
+      "id": "vip-079",
+      "front": "VAP vakalarında 'polimikrobiyal enfeksiyon' sıklığı nedir?",
+      "back": "Vakaların yaklaşık %40'ında birden fazla patojen görülür.",
+      "tag": "mikrobiyoloji"
+    },
+    {
+      "id": "vip-080",
+      "front": "VAP'ın ekonomik etkisi için tahmin edilen ek maliyet yaklaşık ne kadardır?",
+      "back": "Hasta başına 40.000 USD.",
+      "tag": "epidemiyoloji"
+    }
+  ]
+}
