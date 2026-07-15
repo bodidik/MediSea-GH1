@@ -1,6 +1,7 @@
 //"C:\Users\hucig\Medknowledge\web\app\layout.tsx"
 import "./globals.css";
 import { Inter, Merriweather, JetBrains_Mono } from "next/font/google";
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ["latin-ext"], variable: "--font-sans" });
 const merriweather = Merriweather({ subsets: ["latin-ext"], variable: "--font-serif" });
@@ -10,8 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={`${inter.variable} ${merriweather.variable} ${jetbrains.variable}`}>
       <body className="antialiased">
-        {/* Burada AppShell veya Header YOK! Sadece children. */}
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
