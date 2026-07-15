@@ -532,6 +532,21 @@ export default async function KonuSayfasi({
                     </div>
                   )
                 )}
+                {istatistikler.vaka !== undefined && (
+                  moduller.vaka ? (
+                    <Link href={`/${lang}/premium/ydus/vaka-coz?branch=${branch}&topic=${topic}`}
+                      className="stat-link"
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
+                      <span style={{ color: '#4a6a8a' }}>🏥 Vaka</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.vaka || '—'}</span>
+                    </Link>
+                  ) : (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 6px' }}>
+                      <span style={{ color: '#4a6a8a' }}>🏥 Vaka</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.vaka || '—'}</span>
+                    </div>
+                  )
+                )}
               </div>
             )}
 

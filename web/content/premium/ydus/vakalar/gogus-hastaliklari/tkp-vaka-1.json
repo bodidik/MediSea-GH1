@@ -1,0 +1,54 @@
+{
+  "id": "tkp",
+  "baslik": "Hastane Kökenli Pnömoni (nvHAP) Tanısı ve Biyobelirteç Yaklaşımı",
+  "zorluk": "orta",
+  "sure_dk": 5,
+  "branch": "gogus-hastaliklari",
+  "topic": "tkp",
+  "adimlar": [
+    {
+      "id": "adim-1",
+      "adim": 1,
+      "klinik_bilgi": "Altmış sekiz yaşında erkek hasta, akut iskemik inme nedeniyle 5 gündür nöroloji servisinde yatarak izlenmektedir. Hastanın bu süreçte invaziv mekanik ventilatör ihtiyacı olmamıştır. Son 24 saat içinde ateşi 38.8°C'ye (↑) yükselen ve yeni başlayan pürülan balgamlı öksürüğü olan hastanın fizik muayenesinde sağ alt zonda krepitan raller saptanıyor. SpO₂ oda havasında %88 (↓), solunum sayısı 26/dk (↑). Laboratuvar tetkiklerinde Lökosit: 16.500/mm³ (↑) olarak ölçülüyor. Yatak başı çekilen akciğer grafisinde sağ alt lobda yeni gelişen homojen konsolidasyon izleniyor.",
+      "soru": "Güncel enfeksiyon hastalıkları kılavuzlarına göre bu hastanın klinik tablosunun en olası sınıflandırması aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Toplum kökenli pnömoni (TKP)",
+        "B": "Sağlık bakımı ilişkili pnömoni (HCAP)",
+        "C": "Ventilatör ilişkili pnömoni (VİP)",
+        "D": "Non-ventilatör hastane kökenli pnömoni (nvHAP)",
+        "E": "Kimyasal pnömonit"
+      },
+      "dogru": "D",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Toplum kökenli pnömoni (TKP), hastane veya sağlık bakımı ortamları dışında kazanılan enfeksiyonları ifade eder; bu hasta 5 gündür hastanede yatmaktadır.",
+        "B": "YANLIŞ — 'Sağlık bakımı ilişkili pnömoni' (HCAP) terimi, hastaları çoklu ilaca dirençli (MDR) patojenler açısından aşırı duyarlı bir şekilde kategorize edip gereksiz geniş spektrumlu antibiyotik kullanımına yol açtığı için güncel kılavuzlardan tamamen çıkarılmıştır.",
+        "C": "YANLIŞ — Ventilatör ilişkili pnömoni (VİP), endotrakeal entübasyondan en az 48 saat sonra gelişen pnömoniler için kullanılır; bu hasta entübe değildir.",
+        "D": "DOĞRU — Non-ventilatör hastane kökenli pnömoni (nvHAP), hastaneye yatıştan en az 48 saat sonra gelişen, entübe olmayan veya pnömoni gelişmeden önceki 48 saat içinde ekstübe edilmemiş hastalarda görülen pnömoni tablosudur. Bu hastada tüm kriterler karşılanmaktadır.",
+        "E": "YANLIŞ — Kimyasal pnömonit, bakteriyel bir enfeksiyondan ziyade asidik gastrik sıvı gibi maddelerin aspirasyonu sonucu oluşan akut enflamatuar bir reaksiyondur ve genellikle aspirasyon olayından sonra saatler içinde gelişir."
+      },
+      "sonraki_bilgi": "Hastanın nvHAP tanısı klinik ve radyolojik olarak doğrulanmış, risk faktörleri göz önünde bulundurularak ampirik antibiyotik tedavisi planlanmıştır. Ancak tedavi öncesinde mikrobiyolojik örneklemeler ve biyobelirteç düzeyleri çalışılmıştır."
+    },
+    {
+      "id": "adim-2",
+      "adim": 2,
+      "klinik_bilgi": "Hastadan ampirik antibiyoterapi başlanmadan önce eş zamanlı olarak iki set kan kültürü ve derin öksürükle çıkarılan pürülan balgam örneği alınarak mikrobiyolojiye gönderiliyor. Bu esnada hastanın serum prokalsitonin düzeyi ölçülmüş ve 0.15 ng/mL olarak sonuçlanmıştır. Hasta hemodinamik olarak stabil olup septik şok bulgusu bulunmamaktadır.",
+      "soru": "Bu hastanın tanısal değerlendirmesi ve antibiyotik başlama kararı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Prokalsitonin düzeyi <0.25 ng/mL olduğu için hastada bakteriyel enfeksiyon dışlanmıştır, antibiyotik tedavisi başlanmamalıdır.",
+        "B": "Hastane kökenli pnömoni tanısı klinik kriterlerle konur; prokalsitonin düşük olsa dahi ampirik antibiyoterapi gecikmeksizin başlanmalıdır.",
+        "C": "Balgam kültürünün tanısal değeri yoktur; HKP tanısını kesinleştirmek için antibiyotik başlanmadan önce mutlaka invaziv yolla (bronkoskopik BAL) örneklem yapılmalıdır.",
+        "D": "Patojeni saptamak ve dar spektrumlu tedavi verebilmek için, antibiyotiğe başlamadan önce kültür sonuçlarının (48–72 saat) çıkması beklenmelidir.",
+        "E": "Hastane kökenli pnömoni tablosunda ampirik tedaviye karar vermek için idrarda Legionella ve pnömokok antijenlerinin pozitifleşmesi şarttır."
+      },
+      "dogru": "B",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Prokalsitonin, alt solunum yolu enfeksiyonlarında antibiyotik tedavisini sonlandırmak için faydalı olsa da, özellikle kritik veya hastanede yatan hastalarda ampirik antibiyotik tedavisini başlamak veya geciktirmek için rutin olarak kullanılmamalıdır.",
+        "B": "DOĞRU — HKP tanısı; yeni veya ilerleyici akciğer infiltratına eşlik eden ateş, pürülan balgam, lökositoz ve oksijenasyonda bozulma gibi klinik bulgularla konur ve mikrobiyolojik örnekler alındıktan hemen sonra ampirik antibiyotik tedavisine başlanmalıdır.",
+        "C": "YANLIŞ — ATS/IDSA kılavuzlarına göre invaziv örnekleme ile non-invaziv (balgam, endotrakeal aspirat) örnekleme arasında mortalite veya yoğun bakımda kalış süresi açısından hiçbir klinik fark gösterilememiştir; balgam veya non-invaziv örneklemeler tanı için yeterli ve uygundur.",
+        "D": "YANLIŞ — VİP ve HKP şüphesinde kültür sonuçlarının çıkması 2–3 günü bulur ve bu süreçte antibiyotik tedavisinin gecikmesi kabul edilemez bir yaklaşımdır.",
+        "E": "YANLIŞ — İdrar antijen testleri (S. pneumoniae ve Legionella), genellikle toplum kökenli pnömonilerde faydalıdır; MRSA veya Pseudomonas gibi hastane kökenli temel patojenlerin tanısında yer almaz."
+      },
+      "sonraki_bilgi": null
+    }
+  ]
+}

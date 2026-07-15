@@ -1,0 +1,54 @@
+{
+  "id": "vip-ampirik-ve-sure-yonetimi",
+  "baslik": "Ventilatör İlişkili Pnömoni (VİP) Ampirik Tedavi ve Süre Yönetimi",
+  "zorluk": "zor",
+  "sure_dk": 8,
+  "branch": "enfeksiyon-hastaliklari",
+  "topic": "vip",
+  "adimlar": [
+    {
+      "id": "adim-1",
+      "adim": 1,
+      "klinik_bilgi": "Altmış yedi yaşında erkek hasta, geçirilmiş kardiyak arrest sonrası başarılı resüsitasyon ile Yoğun Bakım Ünitesi'ne (YBÜ) yatırılmış ve 8 gündür invaziv mekanik ventilatör desteğinde izlenmektedir. Hastanın özgeçmişinde 2 ay önce idrar yolu enfeksiyonu nedeniyle 10 günlük intravenöz (IV) seftriakson kullanım öyküsü mevcuttur. Takiplerinde hastanın vücut sıcaklığı 39.1°C'ye (↑) yükselmiş, endotrakeal sekresyonları pürülan karakter kazanmış ve miktarı artmıştır. SpO2 %86 (↓) ve PaO2/FiO2 oranı 160 mmHg (↓) olarak hesaplanmıştır. Kan basıncı 75/45 mmHg (↓) olan ve sıvı resüsitasyonuna yanıt vermemesi üzerine noradrenalin infüzyonu başlanan hastanın laboratuvarında lökosit: 18.500/mm³ (↑) saptanmıştır. Çekilen akciğer grafisinde sağ orta ve alt lobda yeni, birleşme eğiliminde asimetrik konsolidasyonlar izlenmektedir.",
+      "soru": "Hastanın mevcut kliniği, ventilatör ilişkili pnömoni (VİP) ve septik şok ile uyumludur. Güncel ATS/IDSA kılavuzlarına göre, endotrakeal kültürler alındıktan hemen sonra bu hasta için başlanması gereken en uygun ampirik antibiyotik rejimi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Sefepim + Levofloksasin",
+        "B": "Piperasilin-Tazobaktam monoterapisi",
+        "C": "Meropenem + Vankomisin + Amikasin",
+        "D": "Seftriakson + Azitromisin",
+        "E": "Ertapenem + Linezolid"
+      },
+      "dogru": "C",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Sefepim ve Levofloksasin kombinasyonu çift anti-psödomonal etkinlik sağlar ancak bu rejimde MRSA (Metisiline dirençli Staphylococcus aureus) etkinliği yoktur. Hastada MRSA riski taşıyan faktörler (septik şok, son 90 günde IV antibiyotik kullanımı, yatış süresi >5 gün) mevcuttur ve ampirik MRSA kapsamı şarttır.",
+        "B": "YANLIŞ — Hastada çoklu ilaca dirençli (MDR) patojen risk faktörleri ve septik şok tablosu mevcuttur. Bu kritik klinik tabloda hata payı çok dardır; bu nedenle monoterapi (tek başına Piperasilin-Tazobaktam) yeterli değildir ve kombinasyon tedavisi zorunludur.",
+        "C": "DOĞRU — Kılavuzlara göre, VİP tanısı alan bir hastada 'septik şok' varlığı veya 'son 90 gün içinde IV antibiyotik kullanım öyküsü' MDR gram-negatif basiller ve MRSA açısından majör risk faktörleridir. Bu hastalarda ampirik tedavi; bir anti-MRSA ajan (Vankomisin veya Linezolid) ile birlikte iki farklı sınıftan anti-psödomonal ajan (örn. Karbapenem/Beta-laktam + Aminoglikozid veya Florokinolon) içeren üçlü bir kombinasyon olmalıdır.",
+        "D": "YANLIŞ — Seftriakson ve Azitromisin kombinasyonu, şiddetli Toplum Kökenli Pnömoni (sCAP) tablosunda standart ampirik yaklaşımdır ancak VİP etkeni olan hastane florasına (P. aeruginosa, Acinetobacter vb.) etkinlikleri yoktur.",
+        "E": "YANLIŞ — Ertapenem bir karbapenem olmasına rağmen anti-psödomonal etkinliği (diğer karbapenemlerden farklı olarak) yoktur. VİP ampirik tedavisinde yeri bulunmaz."
+      },
+      "sonraki_bilgi": "Hastaya ampirik olarak Meropenem, Vankomisin (AUC/MIC hedeflenerek) ve Amikasin başlanmıştır. Takiplerinin 3. gününde hastanın ateşi gerilemiş, noradrenalin ihtiyacı sona ermiştir. Tedavi öncesi alınan mini-BAL (bronkoalveoler lavaj) kantitatif kültüründe ≥10^4 CFU/mL Pseudomonas aeruginosa üremesi tespit edilmiştir. İzolatta Meropenem ve Sefepim duyarlı olarak raporlanmış; burun MRSA tarama PCR testi ve solunum yolu kültüründe MRSA veya başka bir gram-pozitif etken saptanmamıştır."
+    },
+    {
+      "id": "adim-2",
+      "adim": 2,
+      "klinik_bilgi": "Hastanın kültür sonuçlarına ve klinik düzelmesine istinaden de-eskalasyon (daraltma) yapılmış; Vankomisin ve Amikasin tedaviden çıkarılarak, tedaviye monoterapi olarak Sefepim ile devam edilmiştir. Tedavinin 6. gününde hasta tamamen afebril, hemodinamik olarak stabil ve oksijenasyon parametreleri belirgin olarak düzelmiş durumdadır. Trakeal sekresyonları minimaldir ve hastanın ekstübasyonu planlanmaktadır. Ancak çekilen kontrol yatak başı akciğer grafisinde sağ alt zonda izlenen infiltratların kısmen gerilemiş olsa da halen sebat ettiği görülmektedir.",
+      "soru": "VİP tanısıyla izlenen ve etken olarak P. aeruginosa izole edilen bu komplikasyonsuz hastanın klinik seyri göz önüne alındığında, antibiyotik tedavi süresinin planlanmasıyla ilgili aşağıdaki yaklaşımlardan hangisi en uygundur?",
+      "secenekler": {
+        "A": "P. aeruginosa VİP'lerinde relaps riski yüksek olduğundan tedavi standart olarak 14 güne tamamlanmalıdır.",
+        "B": "Radyolojik bulgular (infiltratlar) akciğer grafisinde tamamen silinene kadar tedavi devam etmelidir.",
+        "C": "Hasta komplike olmayan VİP tablosundadır ve iyi bir klinik yanıt vermiştir; tedavi etken P. aeruginosa olsa dahi 7 günde sonlandırılmalıdır.",
+        "D": "Başlangıçta septik şok tablosu ile başvurduğu için, P. aeruginosa monoterapi ile değil kombine tedavi ile 21 gün tedavi edilmelidir.",
+        "E": "Bakteriyemi dışlanmış olsa bile gram-negatif basillerin doku klirensi için tedavinin 10. gününde ampirik makrolid ilavesi yapılmalıdır."
+      },
+      "dogru": "C",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Geçmişte non-fermenter bakteriler (P. aeruginosa, Acinetobacter spp) için 14-21 günlük uzun tedaviler önerilmiş olsa da, güncel kanıtlar uzun süreli tedavinin relapsı veya mortaliteyi azaltmadığını, aksine direnç ve antibiyotik ilişkili komplikasyonları artırdığını göstermektedir.",
+        "B": "YANLIŞ — Pnömonide radyolojik rezolüsyon, klinik iyileşmenin her zaman çok gerisinde kalır ve haftalar sürebilir. Antibiyotik tedavisinin süresi hiçbir zaman radyolojik infiltratların silinmesine göre belirlenmez.",
+        "C": "DOĞRU — Güncel ATS/IDSA (ve Avrupa) kılavuzları, ampiyem, akciğer apsesi veya endovasküler enfeksiyon (bakteriyemi vb.) gibi spesifik komplikasyonları bulunmayan tüm VİP hastalarında, etken P. aeruginosa olsa dahi 7 günlük kısa süreli antibiyotik tedavisinin yeterli olduğunu kuvvetle önermektedir. Bu yaklaşım direnç gelişimini sınırlandırırken 14 günlük tedavilerle benzer klinik kür oranlarına sahiptir.",
+        "D": "YANLIŞ — Klinik düzelme sağlandıktan ve duyarlılıklar belli olduktan sonra in-vitro duyarlı olduğu kanıtlanmış bir beta-laktam (Sefepim vb.) ile monoterapi yeterlidir; şok tablosuyla başlamış olması, düzelen bir hastada tedavi süresinin 21 güne uzatılmasını veya kombinasyonun devamını gerektirmez.",
+        "E": "YANLIŞ — VİP yönetiminde makrolidlerin P. aeruginosa için doku klirensi veya adjuvan tedavi olarak rutin eklenmesine dair bir endikasyon yoktur; makrolidlerin rolü daha ziyade şiddetli Toplum Kökenli Pnömonilerdeki immünomodülatör etkileriyle kısıtlıdır."
+      },
+      "sonraki_bilgi": ""
+    }
+  ]
+}

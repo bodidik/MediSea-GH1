@@ -223,6 +223,28 @@
       "etiketler": ["beta-laktam alerjisi", "aztreonam", "MRSA", "gram-negatif kapsam", "çapraz reaksiyon"],
       "zorluk": "zor",
       "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Macy E et al. Ann Allergy Asthma Immunol 2019"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış iki yaşında kadın hasta, akut iskemik inme nedeniyle 10 gündür nöroloji servisinde yatarak izlenmektedir ve bu süreçte mekanik ventilatör ihtiyacı olmamıştır. Son 24 saat içinde ateşi 38.6°C'ye yükselen, pürülan sekresyonları başlayan ve oksijen satürasyonu oda havasında %95'ten %89'a düşen hastanın yatak başı akciğer grafisinde sağ alt lobda yeni bir infiltrasyon saptanmıştır. Hemodinamik olarak stabil olan ve son 90 gün içinde intravenöz antibiyotik kullanım öyküsü bulunmayan bu hastaya, hastane kökenli pnömoni (HKP / nvHAP) tanısıyla ampirik antibiyoterapi planlanmaktadır.\n\nBu hastanın klinik yönetimi ve ampirik antibiyotik tedavisiyle ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Ampirik tedaviye başlamadan önce mutlaka serum prokalsitonin düzeyi ölçülmeli ve değer <0.25 ng/mL ise viral veya non-enfeksiyöz nedenler düşünülerek antibiyotik başlanması ertelenmelidir.",
+        "B": "Hastanın son 90 gün içinde antibiyotik maruziyetinin olmaması nedeniyle, ampirik tedavide Streptococcus pneumoniae ve duyarlı gram-negatifleri hedefleyen, tek başına Seftriakson kullanımı yeterli ve uygun bir yaklaşımdır.",
+        "C": "Hastadan alınan MRSA nazal PCR (veya kültür) testinin negatif sonuçlanması durumunda, klinik olarak da iyileşme gösteren hastada, ampirik olarak başlanmış olabilecek anti-MRSA ajan güvenle kesilebilir (de-eskalasyon).",
+        "D": "Etkenin mikrobiyolojik olarak izole edilemediği ancak kliniğin ampirik tedaviye yanıt verdiği HKP olgularında, gizli kalmış dirençli patojenleri ekarte etmek adına antibiyotik tedavi süresi standart olarak en az 14 gün olarak planlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "HKP ve VİP hastalarında MRSA nazal sürüntü PCR veya kültürünün negatif sonuçlanması son derece yüksek bir negatif prediktif değere sahiptir. Klinik bulguları düzelen ve tarama testleri negatif olan hastalarda ampirik başlanan anti-MRSA ajanların (vankomisin veya linezolid) erkenden kesilmesi (de-eskalasyon) önerilir.",
+      "aciklama_detay": "Nozokomiyal pnömonilerde (HAP/VAP) MRSA nazal sürüntü PCR/kültür negatifliği, MRSA dışlama kararı için mükemmel bir negatif prediktif değer sunar. Klinik iyileşmesi olan ve taramaları negatif saptanan hastalarda ampirik anti-MRSA ajanların erkenden kesilmesi, ilaca bağlı toksisite ve direnç gelişimini engeller. HKP ve VİP riski taşıyan yatan hastalarda ampirik antibiyoterapiye başlama kararı tamamen klinik kriterlere (yeni infiltrat + ateş, pürülan balgam, oksijenasyon düşüşü vb.) dayandırılmalıdır; tedaviye başlamak veya ertelemek için prokalsitonin (PCT) sonucu beklenmemelidir. HKP ampirik rejimlerinde, hastanın MDR riski düşük olsa dahi her koşulda Pseudomonas aeruginosa ve nozokomiyal gram-negatifleri kapsayan antipsödomonal bir beta-laktam (örn. piperasilin-tazobaktam, sefepim, imipenem veya meropenem) veya levofloksasin monoterapi olarak seçilmelidir; seftriaksonun antipsödomonal etkinliği yoktur. Komplikasyonsuz HKP olgularında etken izole edilememiş olsa dahi, 48-72 saat klinik stabilizasyon sağlandıktan sonra tedaviyi 7 günde kesmek, 14 günlük uzun kürlere klinik olarak non-inferiordur. Rutin HKP yönetiminde ise nozokomiyal atipik patojen sıklığı çok düşük olduğundan rutin ampirik atipik kapsam (makrolid eklenmesi) önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — HKP veya VİP riski taşıyan yatan hastalarda ampirik tedaviye başlamak veya tedaviyi ertelemek amacıyla prokalsitonin (PCT) düzeyi beklenmemeli; karar tamamen klinik kriterlere dayandırılmalıdır.",
+        "B": "YANLIŞ — HKP ampirik tedavisinde, MDR riski düşük olsa dahi nozokomiyal gram-negatifleri ve özellikle Pseudomonas aeruginosa'yı kapsayacak ajanlar seçilmelidir; antipsödomonal etkinliği olmayan seftriakson tek başına yetersizdir.",
+        "C": "DOĞRU — MRSA nazal tarama testlerinin negatif prediktif değeri oldukça yüksektir. Tarama sonucu negatif olan ve klinikte düzelme gösteren hastalarda vankomisin veya linezolid tedavisi güvenle sonlandırılabilir.",
+        "D": "YANLIŞ — Komplikasyonsuz HKP ve VİP olgularında, klinik stabilite sağlandıktan sonra tedavinin 7 günde kesilmesi önerilmektedir; uzun kürlerin kısa süreli tedaviye klinik olarak bir üstünlüğü gösterilememiştir."
+      },
+      "etiketler": ["HAP/VAP de-eskalasyon", "MRSA nazal PCR", "antipsödomonal beta-laktam", "7 gün HAP tedavisi", "prokalsitonin kullanımı"],
+      "zorluk": "zor",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Kalil AC et al. Clin Infect Dis 2016"
     }
   ]
 }

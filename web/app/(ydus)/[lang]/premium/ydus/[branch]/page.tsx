@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import KategorilerClient from './KategorilerClient';
 
 export const revalidate = 86400;
 
@@ -44,13 +45,6 @@ function bransYukle(branch: string): BransVerisi | null {
   }
 }
 
-const ROZET_STILLERI: Record<string, { arka: string; renk: string; kenar: string }> = {
-  'POPÜLER':  { arka: '#e6f0fb', renk: '#1a3a6b', kenar: '#b8cfe8' },
-  'ZOR':      { arka: '#fff0f0', renk: '#8b1a1a', kenar: '#f5b8b8' },
-  'YENİ':     { arka: '#f0fbf5', renk: '#1a5c2e', kenar: '#a8e0b8' },
-  'YAKINDA':  { arka: '#f5f5f5', renk: '#6a6a6a', kenar: '#d0d0d0' },
-  'DEFAULT':  { arka: '#f5f9ff', renk: '#1a3a6b', kenar: '#b8cfe8' },
-};
 
 export default async function BransSayfasi({
   params,
@@ -166,91 +160,12 @@ export default async function BransSayfasi({
         </div>
 
         {/* KATEGORİLER */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          {veri.kategoriler.map((kat) => (
-            <div key={kat.id} style={{
-              border: '0.5px solid #d0e4f5',
-              borderRadius: '12px',
-              overflow: 'hidden',
-              background: '#fafcff',
-            }}>
-              {/* Kategori başlığı */}
-              <div style={{
-                padding: '0.9rem 1.25rem',
-                borderBottom: '0.5px solid #d0e4f5',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                background: '#f0f7ff',
-              }}>
-                <span style={{ fontSize: '18px' }}>{kat.emoji}</span>
-                <div>
-                  <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a3a6b' }}>{kat.baslik}</div>
-                  <div style={{ fontSize: '11px', color: '#6a8aaa' }}>{kat.aciklama}</div>
-                </div>
-              </div>
-
-              {/* Konular */}
-              <div style={{ padding: '0.5rem' }}>
-                {kat.konular.map((konu) => (
-                  <Link
-                    key={konu.id}
-                    href={konu.hazir ? `/${lang}/premium/ydus/${branch}/${konu.id}` : '#'}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      padding: '10px 12px',
-                      borderRadius: '8px',
-                      marginBottom: '4px',
-                      background: konu.hazir ? '#fff' : 'transparent',
-                      border: konu.hazir ? '0.5px solid #d0e4f5' : '0.5px solid transparent',
-                      textDecoration: 'none',
-                      opacity: konu.hazir ? 1 : 0.5,
-                      cursor: konu.hazir ? 'pointer' : 'default',
-                      pointerEvents: konu.hazir ? 'auto' : 'none',
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <span style={{
-                        width: '7px',
-                        height: '7px',
-                        borderRadius: '50%',
-                        background: konu.hazir ? veri.meta.renk : '#c0c0c0',
-                        flexShrink: 0,
-                      }} />
-                      <span style={{
-                        fontSize: '13px',
-                        fontWeight: konu.hazir ? 500 : 400,
-                        color: konu.hazir ? '#1a2a3a' : '#8a9aaa',
-                      }}>
-                        {konu.baslik}
-                      </span>
-                    </div>
-                    <div style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
-                      {konu.rozetler.map((rozet, i) => {
-                        const stil = ROZET_STILLERI[rozet] ?? ROZET_STILLERI['DEFAULT'];
-                        return (
-                          <span key={i} style={{
-                            fontSize: '10px',
-                            fontWeight: 600,
-                            padding: '2px 7px',
-                            borderRadius: '4px',
-                            background: stil.arka,
-                            color: stil.renk,
-                            border: `0.5px solid ${stil.kenar}`,
-                          }}>
-                            {rozet}
-                          </span>
-                        );
-                      })}
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+        <KategorilerClient
+          kategoriler={veri.kategoriler}
+          bransRenk={veri.meta.renk}
+          lang={lang}
+          branch={branch}
+        />
 
         {/* ALT NAVİGASYON */}
         <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '0.5px solid #d0e4f5' }}>

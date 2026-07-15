@@ -1,0 +1,54 @@
+{
+  "id": "hkp-vip-vaka-2",
+  "baslik": "Hastane Kökenli Pnömonide (HKP) Ampirik Tedavi ve Süre Yönetimi",
+  "zorluk": "orta",
+  "sure_dk": 6,
+  "branch": "enfeksiyon-hastaliklari",
+  "topic": "hkp",
+  "adimlar": [
+    {
+      "id": "adim-1",
+      "adim": 1,
+      "klinik_bilgi": "Altmış beş yaşında erkek hasta, komplike batın cerrahisi sonrası 6 gündür genel cerrahi servisinde izlenmektedir. Hastanın son 90 gün içinde hastaneye yatış veya intravenöz antibiyotik kullanım öyküsü bulunmamaktadır. Son 24 saatte ateşi 38.6°C'ye (↑) yükselen ve yeni pürülan balgam çıkışı başlayan hastanın oda havasında SpO2'si %90 (↓) ve solunum sayısı 24/dk (↑) olarak ölçülüyor. Hemodinamik olarak stabil olan (Kan basıncı: 120/75 mmHg) hastanın akciğer oskültasyonunda sağ alt zonda krepitan raller duyuluyor. Laboratuvar tetkiklerinde lökosit: 14.500/mm³ (↑) olarak saptanıyor. Yatak başı çekilen akciğer grafisinde sağ alt lobda yeni gelişen infiltrasyon izleniyor. Hastanın bulunduğu serviste metisiline dirençli Staphylococcus aureus (MRSA) veya çoklu ilaca dirençli (MDR) gram-negatif patojen prevalansı yüksek değildir (<%10).",
+      "soru": "Non-ventilatör hastane kökenli pnömoni (nvHAP) tanısı konulan ve MDR/MRSA risk faktörü bulunmayan bu hastada, güncel kılavuzlara göre en uygun ampirik antibiyotik tedavisi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Seftriakson",
+        "B": "Piperasilin-tazobaktam",
+        "C": "Levofloksasin + Vankomisin",
+        "D": "Ertapenem",
+        "E": "Amikasin"
+      },
+      "dogru": "B",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Seftriakson üçüncü kuşak bir sefalosporin olup, toplum kökenli pnömonilerde sıkça kullanılsa da antipsödomonal etkinliği yoktur. HKP ampirik tedavisinde, MDR risk faktörü olmasa dahi mutlaka Pseudomonas aeruginosa ve diğer hastane florasına yönelik gram-negatif etkinlik sağlanmalıdır.",
+        "B": "DOĞRU — Şiddetli hastalığı (şok veya solunum yetmezliği) olmayan ve MDR/MRSA risk faktörü taşımayan HKP hastalarında ampirik monoterapi yeterlidir. Seçilecek ajanın P. aeruginosa, diğer gram-negatif basiller ve metisiline duyarlı S. aureus (MSSA) etkinliği olmalıdır; Piperasilin-tazobaktam (veya Sefepim) bu profili karşılayan en ideal tercihlerin başında gelir.",
+        "C": "YANLIŞ — Hastanın MRSA risk faktörü (örn. bilinen kolonizasyon, son 90 günde IV antibiyotik kullanımı, ünitede >%20 MRSA oranı veya şok tablosu) bulunmamaktadır. Bu nedenle ampirik olarak MRSA kapsayan Vankomisin (veya Linezolid) başlanması gereksiz geniş spektrumlu tedaviye ve toksisiteye yol açar.",
+        "D": "YANLIŞ — Ertapenem bir karbapenem grubudur ancak diğer karbapenemlerin (Meropenem, İmipenem) aksine antipsödomonal etkinliği yoktur, bu nedenle HKP ampirik tedavisinde yeri yoktur.",
+        "E": "YANLIŞ — Aminoglikozidler (amikasin, tobramisin vb.) akciğer parankimine kötü penetre olduklarından ve pürülan asidik ortamda inaktive olmaya meyilli olduklarından alt solunum yolu enfeksiyonlarında asla monoterapi olarak kullanılmamalıdırlar."
+      },
+      "sonraki_bilgi": "Hastaya ampirik olarak Piperasilin-tazobaktam (4.5 gr IV, 6 saatte bir uzamış infüzyon şeklinde) başlanmıştır. Yatışının 3. gününde tedavi öncesi alınan derin trakeal balgam kültüründe Pseudomonas aeruginosa ürediği saptanmış; izolatın Piperasilin-tazobaktam, Sefepim ve Levofloksasin'e duyarlı olduğu raporlanmıştır. Tedavinin 4. gününde hastanın ateşi düşmüş, lökosit sayısı normale gerilemiş ve oksijen ihtiyacı ortadan kalkmıştır."
+    },
+    {
+      "id": "adim-2",
+      "adim": 2,
+      "klinik_bilgi": "Hedefe yönelik Piperasilin-tazobaktam monoterapisi ile klinik stabilizasyona ulaşan hastanın intravenöz tedavisinin sonlandırılarak, oral Levofloksasin ile taburculuğunun planlanması düşünülmektedir. Akciğer apsesi, ampiyem veya bakteriyemi gibi komplikasyonlar saptanmamıştır.",
+      "soru": "Hastanın etkeni ve klinik yanıtı göz önüne olduğunda, kılavuzların önerdiği en uygun toplam antibiyotik tedavi süresi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "P. aeruginosa relapsını önlemek için standart olarak 14 gün.",
+        "B": "Komplike olmayan tüm HKP/VİP olgularında, etken P. aeruginosa olsa dahi 7 gün.",
+        "C": "Akciğer grafisinde infiltratlar tamamen kaybolana kadar (genellikle 21-28 gün).",
+        "D": "Biyobelirteç bakılmaksızın 5 gün.",
+        "E": "Kan kültürleri negatif olduğu için 3 gün."
+      },
+      "dogru": "B",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Geçmişte, özellikle Pseudomonas aeruginosa ve diğer non-fermenter gram-negatif basillerin neden olduğu enfeksiyonlarda yüksek relaps kaygısı ile 14-21 günlük uzun süreli tedaviler önerilmekteydi. Ancak güncel veriler ışığında, uzun süreli tedavi ekstra klinik fayda sağlamazken, direnç gelişimine yol açmaktadır.",
+        "B": "DOĞRU — ATS/IDSA ve Avrupa kılavuzları; apse, ampiyem, nekrotizan pnömoni veya endovasküler enfeksiyon (örn. bakteriyemiye sekonder) gibi komplikasyonları olmayan HKP/VİP hastalarında, etken Pseudomonas aeruginosa veya diğer gram-negatifler olsa dahi tedavinin 7 gün ile sınırlandırılmasını kuvvetle önermektedir. Bu kısa süreli rejim, uzun süreli (10-15 gün) rejimlerle eşit klinik kür ve mortalite oranlarına sahip olup antibiyotik baskısını ve direncini azaltmaktadır.",
+        "C": "YANLIŞ — Radyolojik iyileşme, klinik iyileşmenin oldukça gerisinde kalır ve haftalar veya aylar sürebilir. Pnömonide antibiyotik tedavi süresi radyolojik rezolüsyona göre değil, klinik stabilite kriterlerine ve komplikasyon durumuna göre belirlenir.",
+        "D": "YANLIŞ — 5 günlük minimum tedavi süresi Toplum Kökenli Pnömoni (TKP) hastalarında uygulanan bir standarttır. Hastane Kökenli Pnömoni (HKP) vakalarında güncel kılavuzların konsensüsü komplikasyonsuz hastalık için 7 gündür.",
+        "E": "YANLIŞ — Kan kültürlerinin negatif olması komplikasyon olmadığını gösterse de, nozokomiyal bir pnömoni olan HKP'nin kürünün 3 gün gibi çok kısa bir sürede sağlanması yüksek nüks riski taşır."
+      },
+      "sonraki_bilgi": ""
+    }
+  ]
+}

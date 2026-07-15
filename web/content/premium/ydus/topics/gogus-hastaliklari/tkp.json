@@ -14,13 +14,14 @@
     "flashcard": true,
     "inciler": false,
     "quiz": true,
-    "vaka": false,
+    "vaka": true,
     "video": false
   },
   "istatistikler": {
     "soru": 7,
     "flashcard": 90,
-    "inci": 0
+    "inci": 0,
+    "vaka": 1
   },
   "icerik": [
     {

@@ -34,7 +34,7 @@ function vakaListele(branch: string, topic: string) {
       .map(dosya => {
         try {
           const veri = JSON.parse(fs.readFileSync(path.join(dir, dosya), 'utf-8'));
-          return { id: dosya.replace('.json', ''), ...veri };
+          return { ...veri, id: dosya.replace('.json', '') };
         } catch { return null; }
       })
       .filter(Boolean);

@@ -1,0 +1,50 @@
+{
+  "id": "hkp-vip-vaka-1",
+  "baslik": "Ağır Toplum Kaynaklı Pnömoni (sCAP) ve Adjuvan Kortikosteroid Yönetimi",
+  "zorluk": "zor",
+  "sure_dk": 5,
+  "branch": "gogus-hastaliklari",
+  "topic": "vip",
+  "adimlar": [
+    {
+      "id": "adim-1",
+      "adim": 1,
+      "klinik_bilgi": "Altmış sekiz yaşında, bilinen KOAH öyküsü olan erkek hasta, 3 gündür devam eden yüksek ateş, pürülan balgam, nefes darlığı ve konfüzyon şikayetleriyle acil servise getiriliyor. Fizik muayenede bilateral krepitan raller saptanıyor. Kan basıncı 80/50 mmHg (↓), solunum sayısı 32/dk (↑), SpO₂ oda havasında %85 (↓). Sıvı resüsitasyonuna yanıt alınamayan ve noradrenalin infüzyonu başlanan hasta, solunum yetmezliğinin derinleşmesi üzerine entübe edilerek Yoğun Bakım Ünitesi'ne (YBÜ) alınıyor. Laboratuvar incelemelerinde Lökosit: 18.000/mm³ (↑), CRP: 240 mg/L (↑) saptanıyor. İdrar pnömokok antijeni pozitif sonuçlanıyor.",
+      "soru": "Bu hastanın klinik tablosu ve ampirik antibiyoterapi planlamasıyla ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yoğun bakım gereksinimi olan bu 'Ağır Toplum Kaynaklı Pnömoni (sCAP)' olgusunda, ampirik antibiyoterapiye başlamadan önce mutlaka prokalsitonin düzeyi beklenmeli ve <0.25 ng/mL ise antibiyotik başlanmamalıdır.",
+        "B": "İdrar pnömokok antijeni pozitif saptandığı için ampirik tedavi yalnızca pnömokoka yönelik dar spektrumlu Penisilin G veya Ampisilin monoterapisi olarak planlanmalıdır.",
+        "C": "Ağır pnömokoksik pnömonilerde ampirik rejime makrolid (örn. azitromisin) eklenmesi; makrolidlerin enflamatuar sitokin salınımını baskılayan immünomodülatör etkileriyle mortaliteyi azalttığı için idrar antijeni pozitif olsa dahi önerilir.",
+        "D": "KOAH öyküsü olan ve YBÜ'ye yatırılan her toplum kaynaklı pnömoni hastasında, ampirik tedavide doğrudan dirençli Pseudomonas aeruginosa hedeflenerek ikili antipsödomonal kombinasyon tedavisi başlanması rutin bir standarttır."
+      },
+      "dogru": "C",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Septik şok veya mekanik ventilatör gereksinimi olan sCAP olgularında ampirik antibiyoterapiye başlanması geciktirilemez; prokalsitonin düzeyi düşük olsa dahi ampirik tedaviye ilk 1 saat içinde derhal başlanmalıdır.",
+        "B": "YANLIŞ — Pnömokok antijeni hızlı bir tanı aracı olsa da, ağır sCAP tablosundaki kritik hastalarda ampirik rejimin geniş spektrumlu (örn. antipnömokoksik beta-laktam + makrolid veya solunum florokinolonu) tutulması ve mikrobiyolojik dökümantasyon tamamlanana kadar spektrumun daraltılmaması gerekir.",
+        "C": "DOĞRU — Makrolidler, NF-kB yolağını baskılayıp proinflamatuar sitokin (örn. IL-8) salınımını azaltan anti-enflamatuar/immünomodülatör etkileriyle ağır pnömokoksik pnömonilerde anlamlı sağkalım avantajı sağlar. Bu nedenle kombine tedavide yer almalıdırlar.",
+        "D": "YANLIŞ — Yalnızca KOAH öyküsü olması rutin antipsödomonal kapsam gerektirmez; Pseudomonas kapsama kararı ancak lokal epidemiyoloji, hastanın son 90 günde solunum yolundan Pseudomonas izolasyon öyküsü veya yakın zamanda hastaneye yatış/IV antibiyotik kullanımı gibi spesifik risk faktörlerinin varlığında verilir."
+      },
+      "sonraki_bilgi": "Hastaya ampirik olarak Seftriakson + Azitromisin tedavisi başlanmıştır. Girişte alınan solunum yolu multiplex PCR testinde İnfluenza ve SARS-CoV-2 negatif olarak raporlanmıştır. Yoğun bakım izleminde hastanın klinik ve adjuvan yönetimi planlanmaktadır."
+    },
+    {
+      "id": "adim-2",
+      "adim": 2,
+      "klinik_bilgi": "Solunum yolu multiplex PCR panelinde viral etkenler (özellikle İnfluenza) dışlanmıştır. Hasta septik şok tablosunda noradrenalin infüzyonu altında izlenmektedir. Tedavi ekibi, klinik stabilizasyon hedefleri doğrultusunda adjuvan tedavileri ve tedavi süresini planlamaktadır.",
+      "soru": "Bu hastanın klinik takibi, tedavi süresi ve adjuvan tedavileriyle ilgili güncel kılavuzlar doğrultusundaki en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İnfluenza enfeksiyonu dışlandığı ve noradrenalin gerektiren septik şok tablosunda olduğu için, tedaviye adjuvan olarak sistemik kortikosteroid (örn. hidrokortizon) eklenmesi 28 günlük mortaliteyi azaltmada fayda sağlar.",
+        "B": "Hafif-orta şiddetli pnömonilerde klinik stabilite sonrası 3 günlük kısa tedaviler non-inferior olsa da, bu hastadaki gibi sCAP vakalarında klinik stabilite sağlansa dahi tedavi süresi istisnasız en az 14 gün olarak planlanmalıdır.",
+        "C": "Kortikosteroid tedavisi tüm viral pnömonilerde mortaliteyi azalttığı için, multiplex PCR'da İnfluenza pozitif saptansa dahi adjuvan steroid tedavisi her koşulda başlanmalıdır.",
+        "D": "Klinik stabilizasyon sağlandıktan sonra antibiyotik tedavisinin kesilme zamanını belirlemek amacıyla prokalsitonin takibi yapılması güvensiz bir yöntemdir ve tedavi süresi yalnızca gün hesabına dayanmalıdır."
+      },
+      "dogru": "A",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Güncel ERS/ESICM kılavuzları ve CAPE COD gibi yüksek kanıt düzeyli çalışmalar ışığında, influenza dışı ağır sCAP ve septik şok tablolarında adjuvan hidrokortizon kullanımı mortaliteyi belirgin şekilde azaltmaktadır.",
+        "B": "YANLIŞ — ATS/IDSA kılavuzları, sCAP hastalarında tedavi süresinin en az 5 gün olmasını önermektedir. Klinik stabilite sağlandıktan sonra komplikasyonsuz vakalarda tedaviyi 5-7 günde sonlandırmak güvenlidir; rutin olarak 14 güne uzatılması önerilmez.",
+        "C": "YANLIŞ — İnfluenza pnömonilerinde adjuvan kortikosteroid kullanımı, sekonder bakteriyel/fungal enfeksiyon riskini ve viral replikasyonu artırdığı için kaçınılması gereken bir uygulamadır.",
+        "D": "YANLIŞ — Sepsis ve YBÜ'de yatan sCAP hastalarında seri prokalsitonin takibi yapılması ve pik değerden ≥%80 düşüş görülmesi durumunda tedavinin kesilmesi, mortaliteyi artırmadan antibiyotik maruziyetini azaltan kanıta dayalı ve güvenli bir yaklaşımdır."
+      },
+      "sonraki_bilgi": ""
+    }
+  ]
+}

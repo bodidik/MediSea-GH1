@@ -1,8 +1,8 @@
 {
   "meta": {
-    "id": "hkp-vip",
+    "id": "hkp",
     "branch": "gogus-hastaliklari",
-    "baslik": "Hastane Kökenli Pnömoni (HKP) ve VİP",
+    "baslik": "Hastane Kökenli Pnömoni",
     "altbaslik": "Tanım, MDR patojen riski, ampirik antibiyoterapi, de-eskalasyon ve VİP korunma paketleri",
     "rozetler": [
       "YENİ",
@@ -20,7 +20,8 @@
   "istatistikler": {
     "soru": 10,
     "flashcard": 71,
-    "inci": 0
+    "inci": 0,
+    "vaka": 0
   },
   "icerik": [
     {

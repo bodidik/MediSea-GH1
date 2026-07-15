@@ -113,9 +113,9 @@
           ]
         },
         {
-          "id": "hkp-vip",
-          "baslik": "Hastane Kökenli Pnömoni (HKP) ve VİP",
-          "altbaslik": "MDR patojen riski, ampirik antibiyoterapi, de-eskalasyon ve VİP korunma paketleri",
+          "id": "hkp",
+          "baslik": "Hastane Kökenli Pnömoni (HKP)",
+          "altbaslik": "MDR patojen riski, ampirik antibiyoterapi ve de-eskalasyon stratejileri",
           "sure": "20 dk",
           "hazir": true,
           "rozetler": [
