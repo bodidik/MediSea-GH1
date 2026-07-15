@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import FlashcardPlayer from './FlashcardPlayer';
+import { AccessGate } from '@/lib/AccessGate';
 
 export const revalidate = 86400;
 
@@ -48,6 +49,9 @@ export default async function HizliTekrarSayfasi({
 
   const veri = flashcardYukle(branch, id);
   if (!veri) notFound();
+
+  const gate = await AccessGate({ topicId: id!, lang, branch: branch! });
+  if (gate) return gate;
 
   const backHref = `/${lang}/premium/ydus/${branch}/${id}`;
 

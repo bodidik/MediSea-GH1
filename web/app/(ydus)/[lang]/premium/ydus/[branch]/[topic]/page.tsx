@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import SoruSor from './SoruSor';
+import { checkTopicAccess } from '@/lib/access';
+import { AccessGate } from '@/lib/AccessGate';
 
 export const revalidate = 86400;
 
@@ -280,6 +282,9 @@ export default async function KonuSayfasi({
   const veri = konuYukle(branch, topic);
 
   if (!veri) notFound();
+
+  const gate = await AccessGate({ topicId: topic, lang, branch });
+  if (gate) return gate;
 
   const branchMeta = BRANCH_META[branch] ?? { label: branch, renk: DEFAULT_RENK };
   const moduller = veri.moduller ?? {};

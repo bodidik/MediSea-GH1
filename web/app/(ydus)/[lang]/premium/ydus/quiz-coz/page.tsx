@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import QuizEngine from './QuizEngine';
+import { AccessGate } from '@/lib/AccessGate';
 
 export const revalidate = 86400;
 
@@ -43,6 +44,11 @@ export default async function QuizCozPage(props: {
       </div>
     );
   }
+
+  // "sarkoidoz-quiz-1" → "sarkoidoz"
+  const topicId = id.replace(/-quiz-\d+$/, '');
+  const gate = await AccessGate({ topicId, lang, branch });
+  if (gate) return gate;
 
   const veri = quizYukle(branch, id);
 

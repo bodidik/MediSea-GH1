@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import VakaEngine from './VakaEngine';
+import { AccessGate } from '@/lib/AccessGate';
 
 export const revalidate = 86400;
 
@@ -65,6 +66,13 @@ export default async function VakaCozPage(props: {
         <h2 style={{ color: '#1a3a6b', fontSize: '18px' }}>branch parametresi eksik</h2>
       </div>
     );
+  }
+
+  // topic veya id'den topicId türet, access kontrolü yap
+  const topicId = topic ?? id?.replace(/-vaka-\d+$/, '');
+  if (topicId && isValidParam(topicId)) {
+    const gate = await AccessGate({ topicId, lang, branch });
+    if (gate) return gate;
   }
 
   /* ── VAKA SEÇİM EKRANI ── */
