@@ -60,6 +60,7 @@ const TOOLS_DATABASE = [
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Akut koroner sendrom risk stratifikasyonu" },
+      { slug: "grace", name: "GRACE 2.0 Skoru", desc: "AKS/NSTEMI hastane içi mortalite riski" },
       { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
     ]
   },
@@ -70,6 +71,7 @@ const TOOLS_DATABASE = [
       { slug: "wells-pe", name: "Wells Skoru (PE)", desc: "Pulmoner emboli klinik olasılığı" },
       { slug: "wells-dvt", name: "Wells Skoru (DVT)", desc: "Derin ven trombozu klinik olasılığı" },
       { slug: "perc", name: "PERC Kriterleri", desc: "PE düşük risk dışlama protokolü" },
+      { slug: "padua", name: "Padua Skoru", desc: "Yatan dahili hastalarda VTE profilaksi kararı" },
       { slug: "qsofa", name: "qSOFA Skoru", desc: "Hızlı sepsis yatak başı değerlendirme" },
       { slug: "sofa", name: "SOFA Skoru", desc: "Yoğun bakımda organ yetmezliği takibi" },
       { slug: "news2", name: "NEWS2 Skoru", desc: "Klinik kötüleşme erken uyarı sistemi" },
@@ -86,12 +88,20 @@ const TOOLS_DATABASE = [
     ]
   },
   {
+    category: "Nöroloji",
+    icon: "🧠",
+    items: [
+      { slug: "abcd2", name: "ABCD² Skoru", desc: "TİA sonrası 2 günlük inme riski tahmini" },
+    ]
+  },
+  {
     category: "Hepatoloji & Gastroenteroloji",
     icon: "🍺",
     items: [
       { slug: "meld-na", name: "MELD-Na Skoru", desc: "ESKH mortalite tahmini" },
       { slug: "child-pugh", name: "Child-Pugh Sınıflaması", desc: "Siroz şiddet ve prognozu" },
       { slug: "glasgow-blatchford", name: "Glasgow-Blatchford Skoru", desc: "Üst GİS kanaması — endoskopi öncesi risk" },
+      { slug: "rockall", name: "Rockall Skoru", desc: "Üst GİS kanaması — yeniden kanama ve mortalite" },
       { slug: "ranson", name: "Ranson Kriterleri", desc: "Akut pankreatit şiddet değerlendirmesi" },
     ]
   },
@@ -99,6 +109,7 @@ const TOOLS_DATABASE = [
     category: "Genel Araçlar",
     icon: "🔄",
     items: [
+      { slug: "charlson", name: "Charlson Komorbidite İndeksi", desc: "CCI — 10 yıllık mortalite tahmini" },
       { slug: "unit-converter", name: "Birim Çevirici", desc: "Sık kullanılan laboratuvar birim dönüşümleri" },
     ]
   }

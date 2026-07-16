@@ -8,7 +8,8 @@ export default auth((req) => {
 
   /* KayseriTıp özel alanı — kurumsal kontrol middleware'de kalır */
   if (pathname.includes('/kayseritip')) {
-    if (institution !== 'kayseritip') {
+    const isAdmin = user?.email === process.env.ADMIN_EMAIL;
+    if (institution !== 'kayseritip' && !isAdmin) {
       return NextResponse.redirect(new URL('/giris?gerekli=kayseritip', req.url));
     }
   }
