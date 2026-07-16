@@ -6,13 +6,19 @@ import { useRouter } from "next/navigation";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
 const TOOLS_DATABASE = [
-  { 
-    category: "Klinik Nütrisyon (Beslenme)", 
+  {
+    category: "Klinik Nütrisyon (Beslenme)",
     icon: "🍏",
     items: [
       { slug: "nrs-2002", name: "NRS-2002", desc: "Yatan hastalarda beslenme riski taraması" },
+      { slug: "must", name: "MUST", desc: "Malnutrition Universal Screening Tool — toplum & poliklinik" },
       { slug: "mna", name: "MNA® (Kısa Form)", desc: "Geriatrik popülasyon nütrisyonel değerlendirme" },
+      { slug: "sga", name: "SGA", desc: "Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi" },
       { slug: "glim", name: "GLIM Kriterleri", desc: "Küresel malnütrisyon tanı protokolü" },
+      { slug: "conut", name: "CONUT", desc: "Controlling Nutritional Status — albumin + kolesterol + lenfosit" },
+      { slug: "pni", name: "PNI", desc: "Prognostik Nütrisyon İndeksi — albumin + lenfosit" },
+      { slug: "gnri", name: "GNRI", desc: "Geriyatrik Nütrisyon Risk İndeksi — albumin + ideal ağırlık" },
+      { slug: "refeeding-risk", name: "Refeeding Sendromu Riski", desc: "NICE kriterleri — beslenme başlatmada hipofosfatemi riski" },
       { slug: "nutrition-needs", name: "Enerji & Protein Gereksinimi", desc: "Klinik duruma göre kcal/pro hesaplayıcı" },
     ]
   },
@@ -22,6 +28,7 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "egfr", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
       { slug: "kdigo-aki", name: "KDIGO AKI Evrelemesi", desc: "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)" },
+      { slug: "sodium", name: "Sodyum Yönetimi", desc: "TBW · Hiponatremi · Hipernatremi düzeltme hızı ve hacim hesabı" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
       { slug: "anion-gap", name: "Anyon Açığı", desc: "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)" },
     ]
@@ -31,6 +38,13 @@ const TOOLS_DATABASE = [
     icon: "🦴",
     items: [
       { slug: "das28", name: "DAS28 (ESR/CRP)", desc: "Romatoid artrit hastalık aktivite skoru" },
+      { slug: "cdai", name: "CDAI", desc: "Klinik Hastalık Aktivite İndeksi — RA (lab gerektirmez)" },
+      { slug: "sdai", name: "SDAI", desc: "Basitleştirilmiş Hastalık Aktivite İndeksi — RA + CRP" },
+      { slug: "haq-di", name: "HAQ-DI", desc: "Sağlık Değerlendirme Anketi — Engellilik İndeksi" },
+      { slug: "basdai", name: "BASDAI", desc: "Bath Ankilozan Spondilit Hastalık Aktivite İndeksi" },
+      { slug: "asdas", name: "ASDAS-CRP/ESR", desc: "Ankilozan Spondilit Hastalık Aktivite Skoru" },
+      { slug: "dapsa", name: "DAPSA", desc: "Psoriatik Artrit Hastalık Aktivite Skoru" },
+      { slug: "fibromiyalji", name: "Fibromiyalji 2016", desc: "ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri" },
       { slug: "sle", name: "SLE Kriterleri", desc: "Sistemik Lupus Eritematozus sınıflama kriterleri" },
       { slug: "sledai2k", name: "SLEDAI-2K", desc: "SLE hastalık aktivite indeksi" },
     ]
@@ -95,6 +109,28 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "curb65", name: "CURB-65 Skoru", desc: "Toplum kökenli pnömoni triyaj kararı" },
       { slug: "psi-port", name: "PSI/PORT Skoru", desc: "Pnömonide 30 günlük mortalite tahmini" },
+    ]
+  },
+  {
+    category: "Palyatif Bakım",
+    icon: "🕊️",
+    items: [
+      { slug: "karnofsky", name: "Karnofsky (KPS)", desc: "0–100 performans skalası — fonksiyonel kapasite ve prognoz" },
+      { slug: "pps", name: "Palliative Performance Scale", desc: "PPS v2 — palyatif bakımda 5 domain fonksiyonel durum" },
+      { slug: "ppi", name: "Palyatif Prognostik İndeks (PPI)", desc: "Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta)" },
+      { slug: "pap-score", name: "PaP Score", desc: "Palyatif Prognostik Skor — 30 günlük sağkalım (Grup A/B/C)" },
+      { slug: "esas", name: "ESAS", desc: "Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala" },
+    ]
+  },
+  {
+    category: "Endokrin Testler",
+    icon: "🔬",
+    items: [
+      { slug: "dst", name: "Deksametazon Süpresyon Testi (DST)", desc: "1 mg / 2 mg LDDST / 8 mg HDDST — Cushing tarama & lokalizasyon" },
+      { slug: "ogtt", name: "OGTT Yorumlama", desc: "T2DM/prediyabet, gestasyonel diyabet (GDM), akromegali GH süpresyonu" },
+      { slug: "acth-stim", name: "ACTH Stimülasyon Testi", desc: "250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı" },
+      { slug: "tft", name: "Tiroid Fonksiyon Testi (TFT)", desc: "TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral" },
+      { slug: "gh-test", name: "Büyüme Hormonu Testleri", desc: "GH eksikliği stimülasyon (ITT/glukagon) & akromegali OGTT süpresyonu" },
     ]
   },
   {
