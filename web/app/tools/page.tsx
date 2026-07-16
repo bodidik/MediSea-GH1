@@ -40,6 +40,11 @@ const TOOLS_DATABASE = [
     icon: "🦋",
     items: [
       { slug: "hba1c-eag", name: "HbA1c → Ortalama Glukoz", desc: "Tahmini ortalama glukoz (ADA/NGSP)" },
+      { slug: "homa-ir", name: "HOMA-IR", desc: "İnsülin direnci indeksi (açlık glukoz × insülin)" },
+      { slug: "findrisc", name: "FINDRISC", desc: "Tip 2 diyabet 10 yıllık risk taraması" },
+      { slug: "bmi", name: "BMI & İdeal Vücut Ağırlığı", desc: "Vücut kitle indeksi + Devine / Hamwi formülleri" },
+      { slug: "bmr", name: "BMR & TDEE", desc: "Bazal metabolizma hızı — Mifflin–St Jeor" },
+      { slug: "steroid-dose", name: "Steroid Eşdeğer Doz", desc: "Kortikosteroid dönüşüm tablosu" },
       { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", desc: "Hiperglisemi düzeltmesi (Katz formülü)" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
     ]
@@ -50,6 +55,11 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "bsa", name: "Vücut Yüzey Alanı (BSA)", desc: "Mosteller formülü — kemoterapi dozlama" },
       { slug: "ecog", name: "ECOG Performans Durumu", desc: "Fonksiyonel kapasite / tedavi uygunluğu" },
+      { slug: "calvert", name: "Calvert Formülü", desc: "Karboplatin AUC bazlı doz hesaplama" },
+      { slug: "mascc", name: "MASCC Risk İndeksi", desc: "Febril nötropenide komplikasyon riski" },
+      { slug: "khorana", name: "Khorana Skoru", desc: "Kemoterapi ilişkili VTE riski" },
+      { slug: "anc", name: "ANC Hesaplama", desc: "Mutlak nötrofil sayısı ve nötropeni evrelemesi" },
+      { slug: "ipi", name: "IPI Skoru", desc: "Non-Hodgkin lenfoma prognostik indeksi" },
     ]
   },
   {
