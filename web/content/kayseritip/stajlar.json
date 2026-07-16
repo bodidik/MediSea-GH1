@@ -1,0 +1,21 @@
+{
+  "stajlar": [
+    {
+      "id": "ic-hastaliklari-donem4",
+      "baslik": "İç Hastalıkları Stajı",
+      "donem": "Dönem 4",
+      "emoji": "🏥",
+      "alanlar": [
+        { "id": "genel-dahiliye",   "baslik": "Genel Dahiliye",   "emoji": "🩺" },
+        { "id": "gastroenteroloji", "baslik": "Gastroenteroloji", "emoji": "🫀" },
+        { "id": "romatoloji",       "baslik": "Romatoloji",       "emoji": "🦴" },
+        { "id": "onkoloji",         "baslik": "Onkoloji",         "emoji": "🔬" },
+        { "id": "yogun-bakim",      "baslik": "Yoğun Bakım",      "emoji": "💊" },
+        { "id": "geriatri",         "baslik": "Geriatri",         "emoji": "👴" },
+        { "id": "nefroloji",        "baslik": "Nefroloji",        "emoji": "🫘" },
+        { "id": "hematoloji",       "baslik": "Hematoloji",       "emoji": "🩸" },
+        { "id": "endokrinoloji",    "baslik": "Endokrinoloji",    "emoji": "⚗️" }
+      ]
+    }
+  ]
+}

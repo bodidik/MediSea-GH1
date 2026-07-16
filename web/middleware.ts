@@ -24,5 +24,5 @@ export default auth((req) => {
 });
 
 export const config = {
-  matcher: ['/kayseritip/:path*', '/admin/:path*'],
+  matcher: ['/kayseritip/:path*', '/admin/:path*', '/api/kayseritip/:path*'],
 };

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { auth } from "@/auth";
 import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialties";
 
 export const dynamic = "force-dynamic";
@@ -33,7 +34,11 @@ function getTopicCounts(): Record<string, number> {
   return counts;
 }
 
-export default function Home() {
+export default async function Home() {
+  const session = await auth();
+  const user = session?.user as any;
+  const ktKullanici = user?.institution === 'kayseritip' || user?.email === process.env.ADMIN_EMAIL;
+
   const topicCounts = getTopicCounts();
   const totalTopics = Object.values(topicCounts).reduce((a, b) => a + b, 0);
   const totalBranches = SPECIALTIES.length;
@@ -56,6 +61,11 @@ export default function Home() {
             <Link href="/tools" className="shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-blue-900 hover:border-blue-900 transition-all whitespace-nowrap">
               🧪 Klinik Hesaplayıcılar
             </Link>
+            {ktKullanici && (
+              <Link href="/kayseritip" className="shrink-0 rounded-full bg-indigo-900 text-white px-3 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-indigo-800 transition-all shadow-md whitespace-nowrap">
+                🎓 KayseriTıp
+              </Link>
+            )}
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-blue-950 mb-2 italic uppercase tracking-tighter leading-[0.95]">
