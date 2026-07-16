@@ -4,6 +4,7 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Onkoloji", "Böbrek", "VHL", "İmmünoterapi"],
     "parent": null,
+    "hidden": "false",
     "order": 9
   },
   "sections": [
