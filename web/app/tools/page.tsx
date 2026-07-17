@@ -29,6 +29,9 @@ const TOOLS_DATABASE = [
       { slug: "egfr", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
       { slug: "kdigo-aki", name: "KDIGO AKI Evrelemesi", desc: "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)" },
       { slug: "sodium", name: "Sodyum Yönetimi", desc: "TBW · Hiponatremi · Hipernatremi düzeltme hızı ve hacim hesabı" },
+      { slug: "abg", name: "Asit-Baz Analizi (ABG)", desc: "Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant" },
+      { slug: "ktv", name: "Kt/V — Daugirdas II", desc: "Hemodiyaliz yeterliliği · spKt/V · eKt/V · URR" },
+      { slug: "osmolal-gap", name: "Serum Osmolal Gap", desc: "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
       { slug: "anion-gap", name: "Anyon Açığı", desc: "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)" },
     ]
@@ -61,6 +64,7 @@ const TOOLS_DATABASE = [
       { slug: "steroid-dose", name: "Steroid Eşdeğer Doz", desc: "Kortikosteroid dönüşüm tablosu" },
       { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", desc: "Hiperglisemi düzeltmesi (Katz formülü)" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
+      { slug: "tirads", name: "ACR TI-RADS", desc: "Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı" },
     ]
   },
   {
@@ -100,6 +104,7 @@ const TOOLS_DATABASE = [
       { slug: "sofa", name: "SOFA Skoru", desc: "Yoğun bakımda organ yetmezliği takibi" },
       { slug: "news2", name: "NEWS2 Skoru", desc: "Klinik kötüleşme erken uyarı sistemi" },
       { slug: "gcs", name: "Glasgow Koma Skalası", desc: "Bilinç düzeyi değerlendirmesi (E+V+M)" },
+      { slug: "ciwa-ar", name: "CIWA-Ar", desc: "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme" },
       { slug: "infusion", name: "İnfüzyon Hesaplama", desc: "IV doz ve damla sayısı asistanı" },
     ]
   },
