@@ -51,6 +51,11 @@ const TOOLS_DATABASE = [
       { slug: "fibromiyalji", name: "Fibromiyalji 2016", desc: "ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri" },
       { slug: "sle", name: "SLE Kriterleri", desc: "Sistemik Lupus Eritematozus sınıflama kriterleri" },
       { slug: "sledai2k", name: "SLEDAI-2K", desc: "SLE hastalık aktivite indeksi" },
+      { slug: "rapid3", name: "RAPID3", desc: "Rutin Değerlendirme 3 Hasta Ölçütü — HAQ-DI + ağrı + global" },
+      { slug: "gout-acr", name: "Gut ACR 2015", desc: "ACR/EULAR gut hastalığı sınıflama kriterleri — MSU + domain skoru" },
+      { slug: "essdai", name: "ESSDAI", desc: "Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain" },
+      { slug: "mrss", name: "mRSS", desc: "Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge)" },
+      { slug: "behcet", name: "Behçet — ICBD 2014", desc: "Behçet hastalığı tanı kriterleri — ağırlıklı puanlama (≥ 4 puan)" },
     ]
   },
   {
@@ -108,6 +113,11 @@ const TOOLS_DATABASE = [
       { slug: "ciwa-ar", name: "CIWA-Ar", desc: "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme" },
       { slug: "4t-hit", name: "4T Skoru — HIT", desc: "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)" },
       { slug: "infusion", name: "İnfüzyon Hesaplama", desc: "IV doz ve damla sayısı asistanı" },
+      { slug: "heart", name: "HEART Skoru", desc: "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T)" },
+      { slug: "timi-ua", name: "TIMI UA/NSTEMI", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
+      { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
+      { slug: "rts", name: "RTS", desc: "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım" },
+      { slug: "canadian-ct", name: "Kanada BT Kural", desc: "Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri" },
     ]
   },
   {
@@ -116,6 +126,22 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "curb65", name: "CURB-65 Skoru", desc: "Toplum kökenli pnömoni triyaj kararı" },
       { slug: "psi-port", name: "PSI/PORT Skoru", desc: "Pnömonide 30 günlük mortalite tahmini" },
+      { slug: "cat-copd", name: "CAT Skoru", desc: "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü" },
+      { slug: "mmrc", name: "mMRC Dispne", desc: "Modifiye Medical Research Council dispne ölçeği — Grade 0–4" },
+      { slug: "act", name: "ACT", desc: "Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol" },
+      { slug: "bode", name: "BODE İndeksi", desc: "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT" },
+      { slug: "berlin-ards", name: "Berlin ARDS Kriterleri", desc: "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır" },
+    ]
+  },
+  {
+    category: "Allerji & İmmünoloji",
+    icon: "🌸",
+    items: [
+      { slug: "anaphylaxis", name: "Anafilaksi Kriterleri", desc: "NIAID/FAAN 3 kriter — epinefrin endikasyonu" },
+      { slug: "tnss", name: "TNSS", desc: "Total Nazal Semptom Skoru — 4 semptom, 0–12" },
+      { slug: "uas7", name: "UAS7", desc: "Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği" },
+      { slug: "dlqi", name: "DLQI", desc: "Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30" },
+      { slug: "scorad", name: "SCORAD", desc: "Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif" },
     ]
   },
   {
@@ -164,6 +190,39 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "charlson", name: "Charlson Komorbidite İndeksi", desc: "CCI — 10 yıllık mortalite tahmini" },
       { slug: "unit-converter", name: "Birim Çevirici", desc: "Sık kullanılan laboratuvar birim dönüşümleri" },
+    ]
+  },
+  {
+    category: "Geriatri",
+    icon: "👴",
+    items: [
+      { slug: "barthel",      name: "Barthel ADL İndeksi",     desc: "Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100)" },
+      { slug: "lawton-iadl",  name: "Lawton IADL",             desc: "Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans)" },
+      { slug: "gds-15",       name: "GDS-15",                  desc: "Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı" },
+      { slug: "frail",        name: "FRAIL Skalası",            desc: "Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan" },
+      { slug: "morse-fall",   name: "Morse Düşme Riski",        desc: "Hastanede düşme riski değerlendirme skalası — 6 madde" },
+    ]
+  },
+  {
+    category: "Yoğun Bakım Ünitesi (YBÜ)",
+    icon: "💉",
+    items: [
+      { slug: "apache2", name: "APACHE II", desc: "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini" },
+      { slug: "rass", name: "RASS", desc: "Richmond Ajitasyon–Sedasyon Skalası — −5/+4, sedasyon hedefi" },
+      { slug: "cam-icu", name: "CAM-ICU", desc: "YBÜ deliryum taraması — 4 özellik, PADIS kılavuzu önerisi" },
+      { slug: "murray", name: "Murray Skoru", desc: "Akciğer hasar skoru — ARDS şiddet değerlendirmesi, ECMO eşiği ≥ 2.5" },
+      { slug: "braden", name: "Braden Skalası", desc: "Bası yarası risk değerlendirmesi — 6 alt ölçek, 6–23 puan" },
+    ]
+  },
+  {
+    category: "Hematoloji",
+    icon: "🩸",
+    items: [
+      { slug: "ipi",      name: "IPI",              desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
+      { slug: "flipi",    name: "FLIPI",             desc: "Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF" },
+      { slug: "ipss-r",   name: "IPSS-R",            desc: "MDS Revize Prognostik Skorlama — sitogenetik + blast + CBC parametreleri" },
+      { slug: "isth-dic", name: "ISTH DIC Skoru",    desc: "Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan)" },
+      { slug: "hscore",   name: "HScore",             desc: "HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz" },
     ]
   }
 ];
