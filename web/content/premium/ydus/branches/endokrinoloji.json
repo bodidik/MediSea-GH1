@@ -26,9 +26,10 @@
           "id": "graves-hastaligi",
           "baslik": "Graves Hastalığı",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         },
         {
           "id": "hashimoto-tiroiditi",

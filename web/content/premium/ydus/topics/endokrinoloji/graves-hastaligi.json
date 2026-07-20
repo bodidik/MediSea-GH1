@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "id": "graves-hastaligi",
+    "branch": "endokrinoloji",
+    "baslik": "Graves Hastalığı ve Graves Orbitopatisi",
+    "altbaslik": "TRAb aracılı multisistemik otoimmünite — patogenez, orbitopati yönetimi, yeni nesil biyolojikler ve GREAT skoru",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-07"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 80,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Genel Bakış",
+      "satirlar": [
+        {
+          "metin": "Graves hastalığı; **tirotropin (TSH) reseptörüne karşı gelişen otoantikorların (TRAb) tiroid bezini uyarmasıyla** karakterize, hipertiroidizmin en sık nedeni olan multisistemik otoimmün bir hastalıktır. Tiroid bezi hiperplazisi (diffüz guatr), **Graves orbitopatisi (GO)**, pretibial miksödem (lokalize dermopati) ve nadiren tiroid akropakisi bu sendromun temel bileşenlerini oluşturur."
+        },
+        {
+          "metin": "YDUS düzeyinde; **immünopatogenez, orbitopatiye yaklaşım, yeni nesil biyolojik ajanlar (Teprotumumab, Tocilizumab, Rituximab) ve risk skorlamaları (GREAT skoru)** kritik öneme sahiptir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Patogenez — Genetik ve İmmün Mekanizma",
+      "kolonlar": [
+        "Bileşen",
+        "Detay",
+        "YDUS Notu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Genetik Yük ★",
+            "İkiz çalışmaları: genetik katkı ~%70",
+            "Tiroid spesifik (TSHR, Tg) + immün regülatör (HLA, CTLA4, PTPN22, CD40, FCRL3) genler"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "HLA Alelleri",
+            "DRB1*03, DQA1*05, DQB1*02 — hastalık gelişimi ve nüks riski ile ilişkili",
+            "Ayırıcı tanıda değil, patogenez sorusunda önemli"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "HCP5 geni (rs3094228) ★",
+            "Kromozom 6p21 MHC bölgesinde lncRNA geni; pediatrik/erken başlangıçlı Graves ile ilişkili",
+            "Genellikle sorulur: 'başlangıç yaşı ile doz-bağımlı ilişkili gen polimorfizmi'"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Temel Patognomonik Mekanizma",
+            "TSAb/TSI antikorları → Gs-alfa → Adenilat siklaz + PKA aktivasyonu → hormon sentezi↑, hücre proliferasyonu↑",
+            "IgG1 alt sınıfı; Th1 sitokin paterni ile üretilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Pediatrik GD (POGD)",
+            "Yetişkine göre daha şiddetli klinik tablo, ATD'ye daha düşük yanıt, %68 relaps oranı",
+            "Uzun süreli ATD tedavisi öncelikli"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Klinik Prezantasyon — Klasik ve Ekstratiroidal Bulgular",
+      "kolonlar": [
+        "Bulgu",
+        "Açıklama"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tirotoksikoz Semptomları",
+            "Çarpıntı, kilo kaybı, anksiyete, sıcağa tahammülsüzlük, tremor, terleme, taşikardi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Graves Guatrı",
+            "Diffüz büyüme; üzerinde üfürüm (bruit) veya tril duyulabilir — Hashimoto'dan ayrımda Doppler kritik"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Kemik Metabolizması ★",
+            "Osteoklastik aktivite artışı → KMY↓ (özellikle lomber+femur boynu). Postmenopozal kadınlarda ötiroidi sağlansa bile yüksek TRAb KMY kaybını sürdürür"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Nörolojik Nadir Bulgular ★",
+            "Kore (%1'den az; BOS HVA↓, dopamin döngüsü değişimi) | Basedow paraplejisi (akut bacak güçsüzlüğü + arefleksi) | Asya erkeklerinde hipokalemik tirotoksik periyodik paralizi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Myastenia Gravis Birlikteliği ★",
+            "%2–17 sıklık — genel popülasyondan çok daha sık. Oküler MG ayırıcı tanısında: pitoz + orbicularis oculi zayıflığı MG'yi, ekzoftalmi+kemozis GO'yu işaret eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "Pretibial Miksödem / Akropaki",
+            "Dermopati: 'portakal kabuğu' görünümü; şiddetli orbitopati ile birlikte. Akropaki: çomaklaşma — nadir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Kardiyak",
+            "Yaşlı hastalarda en sık komplikasyon: Atriyal fibrilasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı Algoritması — Laboratuvar ve Görüntüleme",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu / Eşik",
+        "Yorum"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "1. Adım: TSH",
+            "Baskılanmış TSH",
+            "Tüm hipertiroidilerde ilk test"
+          ]
+        },
+        {
+          "hucreler": [
+            "2. Adım: sT4 + sT3",
+            "Yüksek (overt) veya normal (subklinik)",
+            "TSH baskılandığında otomatik ölç"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "3. Adım: TRAb (3. Nesil) ★",
+            "Duyarlılık %97.7 | Özgüllük %99.5",
+            "Altın standart serolojik belirteç; etiyoloji belirsizse önce TRAb"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "sT3/sT4 Oranı ★",
+            "> 0.3 (veya T3/T4 > 20 ng/mcg)",
+            "Destrüktif tiroiditlerden Graves'i hızla ayırt eder"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ek Lab",
+            "Kolesterol↓ | ALP↑ | Lenfopeni",
+            "Destekleyici bulgular"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Doppler USG ★",
+            "'Tiroid infernosu' — pulsatil artmış vaskülarite",
+            "Hashimoto'da kanlanma AZALMIŞ; Graves'te ARTIŞ belirgin"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sintigrafi / RAIU",
+            "Diffüz artmış tutulum",
+            "Gebelik/laktasyon kontrendike; etyoloji hâlâ belirsizse kullan"
+          ]
+        },
+        {
+          "renk": "ek_bilgi",
+          "hucreler": [
+            "TBII vs TSI",
+            "TBII: kompetitif bağlanma testi — stimülan/bloke ayrımı yapamaz. TSI: biyodeneyle doğrudan uyarıcı antikoru ölçer",
+            "TSI, GO aktivitesi ile daha iyi korelasyon gösterir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Graves Orbitopatisi (GO) — Patogenez",
+      "satirlar": [
+        {
+          "metin": "GO, Graves hastalarının **%25–50**'sinde görülen en sık ekstratiroidal manifestasyondur. Orbital inflamasyon → **GAG (özellikle hyaluronan) birikimi** → adipogenez → ödem → fibrozis zinciri ile ilerler."
+        },
+        {
+          "metin": "**TSHR–IGF-1R Çapraz Konuşması (Sinyalozom):** TSHR ve IGF-1R, orbital fibroblastlarda β-arrestin 1 iskelesinde bir arada bulunur. TSHR aktivasyonu hem IGF-1R bağımlı hem de bağımsız yolakları uyararak hyaluronan sentezini ve adipogenezi **sinerjik** olarak artırır."
+        },
+        {
+          "metin": "**Orbital Fibroblast Alt Tipleri:** Thy1⁻ (preadipositler) TSHR ekspresyonu yüksek → adipositlere farklılaşır. Thy1⁺ fibroblastlar TGF-β uyarısıyla miyofibroblastlara dönüşür → fibrozis. CD34⁺ kemik iliği kökenli fibrosit hücreleri orbital infiltrasyonu başlatabilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "GO — Risk Faktörleri",
+      "kolonlar": [
+        "Faktör",
+        "Etki",
+        "Klinik Çıkarım"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Sigara ★ (en güçlü)",
+            "GO insidansı↑ | Şiddet↑ | İmmünosüpresif tedaviye yanıt↓",
+            "RAI öncesinde mutlaka bıraktır; sigara içenlerde RAI'dan kaçın"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "RAI Tedavisi",
+            "TRAb titrelerinde geçici dramatik artış → GO alevlenmesi",
+            "Risk varsa steroid profilaksisi zorunlu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yüksek TRAb Titreleri",
+            "GO aktivitesi ve şiddeti ile doğru korelasyon",
+            "Tedavi kararında ve izlemde TRAb titreleri takip edilmeli"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Koruyucu Faktör ★",
+            "Düşük kolesterol + Statin kullanımı → GO gelişimine karşı koruyucu",
+            "Mekanizma: lipid raftlarının bozulması, fibroblast aktivasyonunun inhibisyonu"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "GO — Klinik Değerlendirme: Aktivite ve Şiddet",
+      "kolonlar": [
+        "Boyut",
+        "Araç / Sınıflama",
+        "Eşik ve Anlamı"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Aktivite: CAS ★",
+            "Klinik Aktivite Skoru (7 puan ilk vizit / 10 puan izlem)",
+            "CAS ≥ 3 = Aktif hastalık → İmmünosüpresyona yanıt verecek dönem"
+          ]
+        },
+        {
+          "hucreler": [
+            "CAS Bileşenleri",
+            "Spontan orbital ağrı, göz hareketinde ağrı, göz kapağı ödemi/eritem, konjonktival kızarıklık/kemozis",
+            "İzlemde: +3 ek nokta (CAS artışı, proptoz artışı, görme keskinliği kaybı)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Şiddet: EUGOGO ★",
+            "Hafif | Orta-Ağır | Görme Yetisini Tehdit Eden (DON veya korneal ülser)",
+            "Şiddet sınıfı → tedavi algoritmasını belirler"
+          ]
+        },
+        {
+          "hucreler": [
+            "Görüntüleme",
+            "Orbital BT: kemik yapı + kas volumetri | Orbital MRG: inflamasyon/aktivite (T2 sinyal)",
+            "MRG aktif inlamasyonu, BT kalsifikasyon/kemik yeniden şekillenmesini gösterir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "GO Tedavi Algoritması (EUGOGO)",
+      "kolonlar": [
+        "Şiddet Kategorisi",
+        "Birinci Basamak",
+        "İkinci Basamak / Özel Durum"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Hafif GO",
+            "Lokal önlemler (gözyaşı damlaları, UV koruma) + Selenyum 200 µg/gün × 6 ay",
+            "Selenyum: hastalık progresyonunu engeller, QoL artırır — endemik eksikliği olan bölgelerde öncelikli"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Aktif Orta-Ağır GO ★",
+            "IV Metilprednizolon (IVMP) pulse — 12 haftada kümülatif 4.5 g (maks 8.0 g)",
+            "8 g üzeri: fatal hepatotoksisite + KVS riski. Mycophenolate mofetil + IVMP kombinasyonu daha etkin"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Steroid Dirençli / Yeni Nesil ★",
+            "Teprotumumab (FDA onaylı IGF-1R antagonisti) → CAS + egzoftalmus belirgin azalır",
+            "Tocilizumab (IL-6 blokajı) | Rituximab (B hücre deplesyonu) | Orbital radyoterapi (lenfosit deplesyonu)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Görmeyi Tehdit Eden GO (DON) — ACİL ★",
+            "Yüksek doz IVMP 1 g/gün × 3 (ardışık günler)",
+            "2 haftada yanıt yoksa: Acil orbital dekompresyon cerrahisi. Rehabilitatif cerrahi (dekompresyon → şaşılık → kapak) INAKTİF fazda (≥6 ay)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Graves Hipertiroidisinin Tedavisi",
+      "kolonlar": [
+        "Modalite",
+        "Endikasyon / Avantaj",
+        "Kontrendikasyon / Dikkat"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "ATD — MMI (Metimazol) ★",
+            "İlk tercih. Organifikasyon + eşleşme inhibisyonu. 12–18 ay sonra %50 relaps",
+            "Agranülositoz riski (boğaz ağrısı + ateş → İLACI KES + TKS). Doz ≥30 mg/gün risk daha yüksek"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "ATD — PTU ★",
+            "Gebeliğin 1. trimesteri | Tiroid fırtınası | MMI alerjisi",
+            "Fatal hepatotoksisite (sarılık + karın ağrısı → Hepatotoksisiteden şüphelenin)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Uzun Süreli MMI (>5 yıl, düşük doz) ★",
+            "GREAT skoru yüksek hastalarda; >%80 remisyon sağlar; KV profil ve QoL korunur",
+            "Kesilmede TRAb negatifleşmesi prognozu iyileştirir"
+          ]
+        },
+        {
+          "hucreler": [
+            "GREAT Skoru",
+            "Yaş + Guatr boyutu + sT4 + TRAb → nüks riskini öngörür",
+            "Düşük skor: 12–18 aylık ATD yeterli. Yüksek skor: uzun süreli veya definitive tedavi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "RAI (Radyoaktif İyot)",
+            "ATD tolere edilemiyorsa, cerrahi kontrendikeyse",
+            "Gebelik | Laktasyon | Orta-ağır/görmeyi tehdit eden GO — KONTRENDİKE. Ötiroid hale getir (TRAb alevlenmesi önlenicisi)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Cerrahi (Total Tiroidektomi)",
+            "Dev guatr (bası) | Malignite şüphesi | Şiddetli/aktif GO",
+            "Preop Lugol solüsyonu (vaskülarite azaltır). Hipokalsemi en sık metabolik komplikasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "RAI + GO Tuzağı: RAI tedavisi TRAb titrelerini dramatik artırarak GO'yu alevlendirebilir. Hafif aktif GO veya yüksek risk (sigara, yüksek TRAb) varsa RAI planlanıyorsa 1–3 aylık düşük doz oral prednizon profilaksisi mutlak uygulanmalıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Gebelikte Graves Yönetimi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım",
+        "Kritik Not"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Gestasyonel Geçici Tirotoksikoz",
+            "Destekleyici tedavi (semptomatik); ATD verilmez",
+            "hCG TSH reseptörünü zayıf uyarır; TRAb NEGATİF; hiperemezis birlikteliği sık"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "1. Trimester (Graves aktif) ★",
+            "PTU tercih et (MMI embriyopatisi riski)",
+            "Sonraki trimesterlerde embriyopati riski / karaciğer toksisitesi dengesi → PTU veya MMI"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Fetal/Neonatal Takip ★",
+            "TRAb plasentayı geçer → fetal/neonatal hipertiroidizm. Fetal kalp hızı + fetal guatr USG ile izle",
+            "Hedef: Anne sT4'ünü gebelik referansının üst sınırında tut → fetal hipotiroididen kaçın"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tiroid Fırtınası — Yönetim Basamakları",
+      "kolonlar": [
+        "Basamak",
+        "İlaç / Yöntem",
+        "Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Mortalite",
+            "%8–25",
+            "Yüksek ateş + taşikardi + AF + kalp yetersizliği + psikoz/koma + GİS disfonksiyonu"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "1. Beta-Bloker",
+            "Propranolol / Esmolol infüzyonu",
+            "Adrenerjik tonusu azaltır; T4→T3 dönüşümünü kısmen inhibe eder"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "2. ATD ★",
+            "PTU veya MMI (kılavuz PTU öneriyor; son kanıtlar klinik fark olmadığını gösteriyor)",
+            "PTU T4→T3 dönüşümünü de bloke eder — teorik avantaj"
+          ]
+        },
+        {
+          "hucreler": [
+            "3. İyot Preparatı",
+            "Lugol / Potasyum iyodür (ATD başlandıktan ≥1 saat sonra)",
+            "Tiroid hormonu salınımını bloke eder (Wolff-Chaikoff)"
+          ]
+        },
+        {
+          "hucreler": [
+            "4. Glukokortikoid",
+            "Hidrokortizon 300 mg/gün",
+            "Periferik T4→T3 dönüşümünü bloke eder; adrenal yetmezliği önler; inflamasyon baskılar"
+          ]
+        },
+        {
+          "renk": "ek_bilgi",
+          "hucreler": [
+            "Plazmaferez",
+            "Dirençli olgularda",
+            "Hızla hormon düzeylerini düşürür; kesin çözüm değil"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "İmmün Checkpoint İnhibitörü Tuzağı: İpilimumab (Anti-CTLA-4), Pembrolizumab/Nivolumab (Anti-PD-1) Graves tablosu veya daha sık olarak tiroidit (hipertiroidi → hipotiroidi) yapabilir. Bu ajanlarda TSH-R antikoru sorgulanmalı; zira Graves ile tiroidit yönetimi farklıdır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Graves 8 Altın Kural — YDUS Özeti: (1) TRAb: duyarlılık %97.7, özgüllük %99.5 — etiyoloji belirsizse önce ölç. (2) sT3/sT4 > 0.3 → Graves (destrüktif tiroidit değil). (3) Doppler: 'tiroid inferno' = Graves; azalmış kanlanma = Hashimoto. (4) PTU sadece: gebelik 1. trimester, tiroid fırtınası, MMI alerjisi. (5) RAI + aktif GO + sigara → steroid profilaksisi zorunlu. (6) GO tedavisi: Hafif → Se | Orta-Ağır → IVMP (maks 8 g) | DON → acil IVMP + dekompresyon. (7) Teprotumumab: FDA onaylı ilk biyolojik, IGF-1R antagonisti — GO'da egzoftalmusu ve CAS'ı azaltır. (8) Gebelikte TRAb plasentayı geçer → fetal hipertiroidizm; fetal kalp hızı ve guatr USG ile izle."
+    }
+  ]
+}
