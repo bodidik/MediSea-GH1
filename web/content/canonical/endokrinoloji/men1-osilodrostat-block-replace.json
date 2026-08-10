@@ -1,0 +1,39 @@
+{
+  "title": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları",
+  "meta": {
+    "updatedAt": "10 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Cushing", "Osilodrostat", "Steroidogenez", "Block-and-Replace"],
+    "parent": "men1-ektopik-cushing-sendromu",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Neden Osilodrostat?",
+      "html": "<p>MEN1'de ACTH-bağımlı Cushing sendromu (CS) yönetiminde tanısal süreç uzayabilir, görüntüleme ve invaziv testler yanıltıcı sonuçlar verebilir. Bu klinik tabloda yeni nesil güçlü 11β-hidroksilaz inhibitörü <strong>osilodrostat</strong>, hem akut dönemde hem de cerrahi öncesi stabilizasyonda kritik bir köprü işlevi görür.</p>"
+    },
+    {
+      "heading": "1. Son Derece Hızlı Biyokimyasal Remisyon",
+      "html": "<p>İdrar serbest kortizolü (UFC) normalin üst sınırının 25 katından fazla olduğu florid hiperkortizolizm tablolarında bile osilodrostat ile <strong>10 gün</strong> gibi kısa sürede biyokimyasal remisyon elde edilebilir. İlaç, adrenal kortizol sentezinin son basamağını katalize eden <strong>11β-hidroksilaz enzimini</strong> güçlü biçimde bloke ederek hızlı ve öngörülebilir hormonal kontrol sağlar.</p>"
+    },
+    {
+      "heading": "2. Block-and-Replace Protokolü",
+      "html": "<p>Tanısal belirsizliğin sürdüğü ve hiperkortizolizmin hayati risk taşıdığı akut dönemde uygulanır:</p><ul class=\"mb-4\"><li><strong>Blokaj:</strong> Yüksek doz osilodrostat (örn. 60 mg/gün) ile endojen kortizol üretimi tamamen baskılanır.</li><li><strong>Replasman:</strong> Eş zamanlı <strong>hidrokortizon replasmanı</strong> başlanarak akut adrenal yetmezlik (hipokortizolizm krizi) riski tamamen ortadan kaldırılır.</li></ul><p>Bu strateji, hastayı kortizol fazlalığından korurken güvenli bir hormonal denge sağlar.</p>"
+    },
+    {
+      "heading": "3. Hayati Komplikasyonların Hızla Düzeltilmesi",
+      "html": "<p>Derin hiperkortizolizme bağlı gelişen ve çoklu antihipertansif tedaviye yanıt vermeyen <strong>dirençli sistemik hipertansiyon</strong> ile <strong>konjestif kalp yetmezliği</strong> semptomları, osilodrostat ile kortizol normalleştikçe hızla geriler ve klinik stabilizasyon sağlanır.</p>"
+    },
+    {
+      "heading": "4. Tanı Sürecinde Güvenli Zaman Kazanımı (Bridge to Diagnosis)",
+      "html": "<p>MEN1 vakalarında ACTH kaynağını belirlemek için yapılan IPSS ve stimülasyon testleri ektopik CRH nedeniyle yanıltıcı sonuçlar verebilir. Osilodrostat ile sağlanan hızlı biyokimyasal stabilizasyon, akut hayati riskleri bertaraf ederek klinisyenlerin <strong>metodik, sakin ve güvenli bir ayırıcı tanı ve görüntüleme süreci</strong> yürütmesine olanak tanır.</p>"
+    },
+    {
+      "heading": "5. Preoperatif Metabolik Optimizasyon",
+      "html": "<p>Özellikle timik NET rezeksiyonu (timektomi) gibi majör cerrahi planlanırken, aktif Cushing tablosu enfeksiyon, tromboemboli ve yara yeri iyileşme bozukluğu açısından operasyon riskini dramatik biçimde artırır. Osilodrostat, preoperatif dönemde <strong>metabolik optimizasyon</strong> sağlayarak hastanın en güvenli şartlarda cerrahiye girmesine zemin hazırlar.</p>"
+    },
+    {
+      "heading": "Osilodrostat Kullanımının Özeti",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Kullanım Amacı</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Mekanizma / Strateji</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Klinik Kazanım</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Akut hiperkortizolizm</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">11β-hidroksilaz blokajı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">10 günde UFC normalleşmesi</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Tanı süreci köprüsü</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Block-and-replace (60 mg/gün + hidrokortizon)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Adrenal yetmezlik riski sıfır; güvenli tanı süreci</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Kardiyovasküler stabilizasyon</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Kortizol normalleşmesi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Dirençli HT ve KKY semptomlarında hızlı gerileme</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Preoperatif hazırlık</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Metabolik optimizasyon</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Enfeksiyon, tromboemboli ve yara iyileşme riskinde azalma</td></tr></tbody></table></div><p class=\"mt-3 text-sm text-slate-500 dark:text-slate-400\"><em>İzlem: Tedavi süresince hipokalemi, QT uzaması ve mineralokortikoid birikimi açısından düzenli elektrolit ve EKG takibi yapılmalıdır.</em></p>"
+    }
+  ]
+}

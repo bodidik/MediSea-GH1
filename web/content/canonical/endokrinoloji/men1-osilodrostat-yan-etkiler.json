@@ -1,0 +1,39 @@
+{
+  "title": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "Osilodrostat", "Cushing", "Hipokalemi", "QTc", "Steroidogenez", "Yan Etki"],
+    "parent": "men1-osilodrostat-block-replace",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Farmakolojik Zemin: Neden Bu Yan Etkiler?",
+      "html": "<p>Osilodrostat, kortizol sentezinin son basamağını katalize eden <strong>11β-hidroksilaz (CYP11B1)</strong> enzimini güçlü ve seçici biçimde inhibe eder; aldosteron sentaz (CYP11B2) üzerinde ise daha zayıf inhibitör etkiye sahiptir. Bu çift mekanizmalı blokaj, aşağıda açıklanan kendine özgü yan etki profilini oluşturur.</p><p class=\"mt-2 text-sm text-slate-500 dark:text-slate-400\"><em>Not: Aşağıdaki yan etki ve yönetim bilgileri uluslararası literatür verileri doğrultusunda derlenmiştir; klinik uygulamada bağımsız olarak doğrulanması önerilir.</em></p>"
+    },
+    {
+      "heading": "1. Hipokortizolizm ve Adrenal Yetmezlik",
+      "html": "<p><strong>Mekanizma:</strong> CYP11B1'in güçlü inhibisyonu ile kortizol sentezinin aniden durması ve dolaşımdaki kortizolün kritik düzeylerin altına gerilemesi.</p><p><strong>Klinik Belirtiler:</strong> Aşırı yorgunluk, bulantı, kusma, iştahsızlık, hipotansiyon, hipoglisemi.</p><p><strong>Yönetim:</strong></p><ul class=\"mb-4\"><li><strong>Doz Titrasyonu:</strong> Düşük dozlarla başlanıp (örn. günde 2×1-2 mg) kortizol düzeylerine göre yavaşça artırılabilir.</li><li><strong>Block-and-Replace:</strong> Ağır ECS olgularında yüksek doz osilodrostat (60 mg/gün) ile endojen kortizol tamamen bloke edilirken eş zamanlı <strong>hidrokortizon replasmanı</strong> başlanır. Bu yaklaşım adrenal kriz riskini neredeyse sıfıra indirerek güvenli tedavi sürdürülmesini sağlar.</li></ul>"
+    },
+    {
+      "heading": "2. Adrenal Prekürsör Birikimi ve Mineralokortikoid Fazlalığı",
+      "html": "<p><strong>Mekanizma:</strong> 11β-hidroksilaz blokajı kortizol düzeyini düşürdüğünde negatif geri bildirim ortadan kalkar; hipofizden artan ACTH salgısı, blokajın gerisinde <strong>11-deoksikortikosteron (DOC)</strong> ve 11-deoksikortizol birikimine yol açar. DOC, güçlü bir mineralokortikoid reseptör agonistidir.</p><p><strong>Klinik Belirtiler:</strong> Belirgin <strong>hipokalemi</strong>, sistemik hipertansiyon, periferik ödem.</p><p><strong>Yönetim:</strong></p><ul class=\"mb-4\"><li>Tedavi süresince serum potasyumu ve kan basıncı yakın takip edilmelidir.</li><li>Birinci basamakta <strong>mineralokortikoid reseptör antagonistleri</strong> (spironolakton veya eplerenon) eklenmesi önerilir.</li><li>Eşlik eden hipokalemi için agresif <strong>potasyum replasmanı</strong> yapılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "3. Adrenal Androjenlerin Birikimi (Hiperandrojenizm)",
+      "html": "<p><strong>Mekanizma:</strong> Kronik ACTH uyarısı, steroidogenez yolağını androjenik öncüllere (DHEA-S, androstenedion) kaydırarak androjen sentezini artırır.</p><p><strong>Klinik Belirtiler:</strong> Kadın hastalarda akne, hirsutizm, erkek tipi alopesi, menstrüel düzensizlikler.</p><p><strong>Yönetim:</strong> Osilodrostat dozunun azaltılması veya anti-androjenik ve potasyum tutucu özellikleri nedeniyle <strong>spironolakton</strong>'un tedaviye dahil edilmesi çift yönlü fayda sağlar.</p>"
+    },
+    {
+      "heading": "4. QTc Uzaması ve Ventriküler Aritmi Riski",
+      "html": "<p><strong>Mekanizma:</strong> Osilodrostat, kardiyak <strong>hERG potasyum kanalları</strong> üzerinden doğrudan repolarizasyonu geciktirerek QTc intervalini uzatabilir. İlacın yol açtığı hipokalemi ise bu riski sinerjik olarak katlayarak ölümcül aritmi zeminini hazırlar.</p><p><strong>Yönetim:</strong></p><ul class=\"mb-4\"><li>Tedavi başlangıcında ve doz artırımlarında rutin <strong>EKG takibi</strong> ile QTc izlenmelidir. QTc <strong>&gt;480 ms</strong> aşılırsa doz azaltılmalı veya ilaç kesilmelidir.</li><li>Kardiyak repolarizasyon anomalilerini önlemek için serum potasyumu <strong>4.5–5.0 mmol/L</strong> hedef aralığında tutulmalıdır. (Bu hedef potasyum aralığı, insülinoma ilişkili hipokalemik aritmi yönetiminde de aynı klinik kural olarak uygulanmaktadır.)</li><li>Sınıf IA ve Sınıf III antiaritmikler gibi QTc uzatan diğer ajanlarla eş zamanlı kullanımdan kaçınılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "5. ACTH Artışına Bağlı Tümör Progresyonu (Nelson Sendromu Benzeri Reaksiyon)",
+      "html": "<p><strong>Mekanizma:</strong> Cushing hastalığı (hipofizer ACTHoma) zemininde kortizolün baskılanmasıyla kalkan negatif geri bildirim, hipofiz tümöründe boyut artışına yol açabilir.</p><p><strong>Yönetim:</strong> Cushing hastalığı zemininde uzun dönem osilodrostat kullanan hastalarda <strong>yıllık hipofiz MRG</strong> ile tümör boyut takibi yapılmalıdır.</p><p class=\"mt-2 text-sm text-slate-600 dark:text-slate-400\"><em>Not: Ektopik ACTH üreten timik veya pankreatik NET'lerde bu geri bildirim mekanizması tümör boyutunu doğrudan etkilemez.</em></p>"
+    },
+    {
+      "heading": "Yan Etki Yönetim Özeti",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Yan Etki</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Mekanizma</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Yönetim</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Adrenal yetmezlik</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">CYP11B1 blokajı → kortizol düşüşü</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Doz titrasyonu; block-and-replace + hidrokortizon</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hipokalemi / HT / ödem</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">DOC birikimi (mineralokortikoid etkisi)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton / eplerenon; K⁺ replasmanı</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hiperandrojenizm</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">ACTH ↑ → DHEA-S / androstenedion birikimi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Doz azaltımı; spironolakton (çift etki)</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">QTc uzaması / aritmi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">hERG blokajı + hipokalemi sinerjisi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">EKG takibi; K⁺ hedef 4.5-5.0 mmol/L; QTc &gt;480 ms → doz azalt</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Tümör büyümesi (CD'de)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Kortizol ↓ → ACTH ↑ → hipofiz tümör uyarısı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Yıllık hipofiz MRG (CD olgularında)</td></tr></tbody></table></div>"
+    }
+  ]
+}
