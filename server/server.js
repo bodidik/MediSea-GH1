@@ -17,6 +17,7 @@ import topicRoutes from "./routes/topic.routes.js";
 import guidelinesRoutes from "./routes/guidelines.routes.js";
 import topicAdminRoutes from "./routes/topic.admin.routes.js"; 
 import translateRoutes from "./routes/translate.routes.js"; // 🆕 Translate ekledik
+import aiRoutes from "./routes/ai.routes.js"; // 🆕 AI asistan (kredi sınırlı)
 
 dotenv.config();
 
@@ -81,6 +82,7 @@ app.use("/api/topics", topicRoutes);
 app.use("/api/guidelines", guidelinesRoutes);
 app.use("/api/admin/topics", topicAdminRoutes);
 app.use('/api/content', contentRoutes);
+app.use("/api/ai", aiRoutes); // 🆕 AI asistan
 
 // 🆕 Translate endpoint
 app.use("/translate", translateRoutes);

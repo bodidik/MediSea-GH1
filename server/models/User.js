@@ -10,6 +10,14 @@ const userSchema = new mongoose.Schema(
     email: { type: String, index: true, unique: true, sparse: true },
 
     plan: { type: String, enum: ["free", "premium", "pro"], default: "free" },
+
+    // --- AI asistan kredi sistemi ---
+    // Misafir (üye olmayan) tarayıcılar için işaret; kota hesabı buna göre değişir.
+    guest: { type: Boolean, default: false },
+    // Kalan soru hakkı. null = henüz ilklendirilmedi (ilk istekte plana göre dolar).
+    aiCredits: { type: Number, default: null },
+    // Bu tarihe gelince bakiye plana göre yeniden dolar (üye: aylık, misafir: günlük).
+    aiCreditsResetAt: { type: Date, default: null },
   },
   { timestamps: true }
 );

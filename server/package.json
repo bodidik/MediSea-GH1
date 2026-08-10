@@ -12,6 +12,7 @@
     "add": "node scripts/quickAdd.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
