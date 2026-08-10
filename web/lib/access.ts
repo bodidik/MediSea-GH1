@@ -14,7 +14,13 @@ export async function getRequiredLevel(topicId: string): Promise<AccessLevel> {
 /** Session + topic'in gereken seviyesini karşılaştırır */
 export async function checkTopicAccess(topicId: string): Promise<AccessResult> {
   const session = await auth();
-  const required = await getRequiredLevel(topicId);
+  let required: AccessLevel;
+  try {
+    required = await getRequiredLevel(topicId);
+  } catch (err) {
+    if (process.env.NODE_ENV === 'development') return 'ok';
+    throw err;
+  }
 
   if (required === 'V') return 'ok';
 

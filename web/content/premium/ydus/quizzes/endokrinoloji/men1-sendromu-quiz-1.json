@@ -1,0 +1,98 @@
+{
+  "id": "quiz-endo-men1-001",
+  "baslik": "MEN1 Sendromu — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "men1-sendromu",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "28 yaşında, genetik olarak MEN1 patojenik varyantı saptanan kadın hasta; halsizlik, yaygın kemik ağrıları ve tekrarlayan nefrolitiyazis şikayetleriyle başvuruyor. Laboratuvar incelemelerinde:\n\nSerum kalsiyumu: 11.2 mg/dL\nSerum fosforu: 1.8 mg/dL\nintakt PTH: 340 pg/mL\nKreatinin: 0.8 mg/dL\n\nBoyun ultrasonografisinde sağ alt ve sol üst paratiroid lojlarında hipoehoik nodüller izlenirken, Tc-99m MIBI sintigrafisinde yalnızca sağ alt paratiroid bezinde belirgin aktivite tutulumu ve washout gecikmesi saptanıyor. Tarama amaçlı abdominal kontrastlı MRG'de pankreas kuyruğunda 1.2 cm çapında, kontrast tutan, düzgün sınırlı, non-fonksiyonel bir kitle saptanıyor. Hipofiz MRG'sinde ise 4 mm boyutunda mikroadenom izleniyor ve serum prolaktin düzeyi hafif yüksek (28 ng/mL, N: 2-18) bulunuyor. Hasta klinik olarak tamamen asemptomatiktir.\n\nBu hastanın klinik yönetimiyle ilgili aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Paratiroid sintigrafisinde tek bir bezde lokalizasyon sağlandığı için, cerrahi morbiditeyi ve kalıcı hipoparatiroidi riskini minimize etmek amacıyla ilk cerrahi olarak odaklanmış (selektif) paratirodektomi tercih edilmelidir.",
+        "B": "Paratirodektomi sırasında yapılacak olan eş zamanlı transservikal timektomi yalnızca profilaktik amaçlı olup (timik nöroendokrin tümör gelişimini önlemek), postoperatif primer hiperparatiroidi nüks ve persistan hastalık oranlarını etkilemez.",
+        "C": "Pankreastaki 1.2 cm çapındaki non-fonksiyonel tümör, metastaz riski taşıdığı ve MEN1 ilişkili erken ölümlerin en sık nedeni olduğu için geciktirilmeden distal pankreatektomi ile rezeke edilmelidir.",
+        "D": "Primer hiperparatiroidi için yapılacak subtotal paratirodektomi (3-3.5 bez rezeksiyonu + timektomi), sınırlı (less-than-subtotal) paratirodektomilere kıyasla daha düşük persistan ve nüks hiperparatiroidi oranları sağlasa da, kalıcı hipoparatiroidi riskini anlamlı derecede artırır.",
+        "E": "Hipofizdeki 4 mm'lik mikroadenomun ve hafif prolaktin yüksekliğinin varlığı nedeniyle, lezyonun MEN1 zeminindeki agresif seyri göz önüne alınarak birinci basamak tedavi olarak acil transsfenoidal cerrahi planlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MEN1'de PHPT multiglandüler hiperplazi nedeniyle sintigrafide tek odak görülse de diğer bezler mikroskobik düzeyde tutulmuş olabilir; odaklanmış cerrahi %68.5'e varan nüks oranıyla kabul edilemez. Subtotal paratirodektomi daha düşük persistan (RR 0.32) ve nüks (RR 0.78) oranı sağlar; ancak kalıcı hipoparatiroidi riskini artırır (RR 2.64). 1.2 cm NF-pNET için aktif izlem, hafif hiperprolaktinemi için dopamin agonisti ilk seçenektir.",
+      "aciklama_detay": "MEN1 ilişkili primer hiperparatiroidi (PHPT), sporadik formun aksine asimetrik ve asenkron multiglandüler hiperplazi ile karakterizedir. Görüntülemede tek bezin patolojik görünmesi, diğer bezlerin normal olduğu anlamına gelmez. 517 hastayı kapsayan Fransız AFCE/GTE çalışması ve 2025 English ve ark. meta-analizinde subtotal paratirodektominin (3-3.5 bezin çıkarılması) sınırlı rezeksiyona (<3 bez) kıyasla persistan hastalık riskini (RR 0.32) ve nüks riskini (RR 0.78) anlamlı azalttığı, ancak kalıcı hipoparatiroidi riskini (RR 2.64) artırdığı gösterilmiştir. Bu nedenle D şıkkı doğrudur. Transservikal timektomi (B şıkkı) ise salt profilaktik değildir; intrathymic ektopik paratiroid dokusunu temizleyerek persistan PHPT oranını %21.9'dan %3.1'e, nüks oranını %43.8'den %12.9'a düşürür. Pankreastaki 1.2 cm NF-pNET için (C şıkkı) güncel meta-analizler ≤2 cm asemptomatik lezyonlarda aktif izlem ile cerrahi arasında uzun dönem sağkalım farkı olmadığını ortaya koymuştur; pankreas cerrahisinin yüksek morbiditesi göz önüne alınarak aktif izlem standarttır. Hipofiz prolaktinomaları için (E şıkkı) dopamin agonistlerine yanıt oranları sporadik vakalarla benzerdir; semptomatik olmayan küçük adenomda acil cerrahi endikasyonu yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MEN1'de multiglandüler hiperplazi nedeniyle sintigrafide tek odak görülse de odaklanmış cerrahi %68.5 nüks oranıyla sonuçlanır ve ilk cerrahide kabul edilemez.",
+        "B": "YANLIS — Transservikal timektomi yalnızca profilaktik değildir; intrathymic ektopik paratiroid dokusunu temizleyerek persistan PHPT oranını %21.9'dan %3.1'e, nüks oranını %43.8'den %12.9'a düşürür (Toraih ve ark. 2025).",
+        "C": "YANLIS — ≤2 cm asemptomatik NF-pNET'lerde cerrahi ile aktif izlem arasında uzun dönem sağkalım farkı yoktur; pankreas cerrahisinin yüksek morbiditesi nedeniyle aktif izlem standarttır.",
+        "D": "DOGRU — Subtotal paratirodektomi persistan (RR 0.32) ve nüks (RR 0.78) riskini azaltır; ancak kalıcı hipoparatiroidi riskini artırır (RR 2.64). Bu denge D şıkkını doğru yapar.",
+        "E": "YANLIS — MEN1 ilişkili prolaktinomalar dopamin agonistlerine sporadik vakalarla benzer yanıt verir; asemptomatik 4 mm mikroadenomda acil cerrahi birinci basamak değildir, aktif izlem veya kabergolin ilk seçenektir."
+      },
+      "etiketler": [
+        "Subtotal Paratirodektomi",
+        "MEN1 Cerrahi",
+        "NF-pNET Aktif İzlem",
+        "Prolaktinoma",
+        "Transservikal Timektomi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "English et al. Surgery 2025; Toraih et al. Surgery 2025; AFCE/GTE Cohort Study; Brandi et al. J Clin Endocrinol Metab 2001"
+    },
+    {
+      "id": "s2",
+      "metin": "MEN1 tanısıyla takip edilen ve primer hiperparatiroidi nedeniyle subtotal paratirodektomi planlanan hastaların cerrahi başarısı ve uzun dönem nüks riskleri üzerine yapılan genetik çalışmalarda, belirli ekzon mutasyonlarının klinik seyre etkisi araştırılmıştır.\n\nAşağıdaki MEN1 gen mutasyon yerleşimlerinden hangisi, paratiroid cerrahisi sonrası \"nüks (rekürrens) gelişimi\" için bağımsız bir risk faktörü olarak tanımlanmıştır ve bu mutasyona sahip bireylerde sınırlı (less-than-subtotal) cerrahi yaklaşımlardan kesinlikle kaçınılması önerilmektedir?",
+      "secenekler": {
+        "A": "Ekzon 2",
+        "B": "Ekzon 4",
+        "C": "Ekzon 7",
+        "D": "Ekzon 10",
+        "E": "Ekzon 12"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Fransız AFCE/GTE kohortu ve yakın dönem çalışmalarında ekzon 10 mutasyonları, paratirodektomi sonrası nüks gelişimi için bağımsız bir risk faktörü olarak tanımlanmıştır (OR: 2.19). Bu hastalarda paratiroid hücrelerinin proliferatif kapasitesi belirgin yüksek olduğundan sınırlı cerrahiden kaçınılmalı, bilateral boyun eksplorasyonu ile en az subtotal paratirodektomi yapılmalıdır.",
+      "aciklama_detay": "Genel olarak MEN1 sendromunda katı bir genotip-fenotip korelasyonu yoktur; ancak son yıllarda yapılan geniş ölçekli klinik çalışmalarda paratiroid cerrahisi sonrası nüks ile mutasyon bölgesi arasında önemli ilişkiler saptanmıştır. Fransız AFCE/GTE kohortundan elde edilen verilere göre, MEN1 geninin ekzon 10 bölgesindeki patojenik varyantlar, paratirodektomi sonrası nüks gelişimi için bağımsız bir risk faktörüdür (Odds Ratio: 2.19). Bu hastaların paratiroid hücrelerinde proliferatif uyarı çok daha güçlü olduğundan sınırlı (<3 bez) ve odaklanmış cerrahi yaklaşımlar çok kısa sürede başarısızlıkla sonuçlanır. İlk cerrahide bilateral boyun eksplorasyonu ve en az subtotal paratirodektomi yapılması zorunludur. Literatürde ekzon 2, 9 ve 10'daki kesintili (truncating) mutasyonların pankreatik metastatik NET gelişimi ve daha erken başlangıç yaşı ile de ilişkili olabileceği bildirilmiştir; ancak nüks için bağımsız risk faktörü olarak tanımlanan spesifik ekzon 10'dur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ekzon 2 mutasyonları paratiroid cerrahisi sonrası nüks için bağımsız risk faktörü olarak tanımlanmamıştır.",
+        "B": "YANLIS — Ekzon 4 mutasyonları için nüks riski açısından spesifik bir ilişki bildirilmemiştir.",
+        "C": "YANLIS — Ekzon 7 mutasyonları için paratiroid nüksüne özgü bir bağımsız risk faktörü tanımlanmamıştır.",
+        "D": "DOGRU — Ekzon 10 mutasyonları AFCE/GTE kohortunda nüks gelişimi için bağımsız risk faktörü olarak saptanmıştır (OR: 2.19); bu hastalarda bilateral eksplorasyonla subtotal paratirodektomi zorunludur.",
+        "E": "YANLIS — Ekzon 12 mutasyonları için paratiroid cerrahisi sonrası nüks riski açısından spesifik bir korelasyon gösterilmemiştir."
+      },
+      "etiketler": [
+        "Ekzon 10 Mutasyonu",
+        "Genotip-Fenotip",
+        "Paratiroid Nüks Riski",
+        "AFCE/GTE Kohortu",
+        "MEN1 Genetik"
+      ],
+      "zorluk": "zor",
+      "kaynak": "AFCE/GTE Cohort Study; English et al. Surgery 2025; Thakker et al. J Clin Endocrinol Metab 2012"
+    },
+    {
+      "id": "s3",
+      "metin": "Multiple Endokrin Neoplazi Tip 1 (MEN1) zemininde gelişen Zollinger-Ellison Sendromu (Gastrinoma) ve primer hiperparatiroidi (PHPT) birlikteliği olan bir hastanın klinik, laboratuvar ve cerrahi yönetim prensipleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": {
+        "A": "PHPT'ye bağlı gelişen hiperkalsemi, gastrin salgılanmasını ve parietal hücrelerden asit üretimini doğrudan stimüle ederek Zollinger-Ellison Sendromu kliniğini (peptik ülserler, reflü, ishal) belirgin şekilde şiddetlendirir.",
+        "B": "Başarılı bir paratirodektomi ile kalsiyum düzeylerinin normalleştirilmesi, gastrinomalı hastalarda hem açlık hem de sekretin ile uyarılmış serum gastrin düzeylerinde ve bazal asit salgısında dramatik bir klinik iyileşme ve düşüş sağlayabilir.",
+        "C": "MEN1 ilişkili gastrinomalar, sporadik vakaların aksine sıklıkla çok odaklı (multifokal) olup pankreastan ziyade duodenum duvarında milimetrik yerleşim gösterirler.",
+        "D": "Gastroözofageal reflü ve peptik ülser semptomları nedeniyle uzun dönem kullanılan proton pompası inhibitörleri (PPİ); Kromogranin A (CgA) ve gastrin düzeylerinde sekonder artışa yol açtığı için, bu biyobelirteçlerin non-fonksiyonel pNET'lerin erken teşhisi ve takibindeki tanısal değerini önemli ölçüde sınırlar.",
+        "E": "MEN1 ilişkili gastrinomalarda tam bir biyokimyasal kür ve karaciğer metastazı riskini önlemek amacıyla, karın içi eksplorasyonda görüntülemesi negatif olan tüm hastalarda ilk cerrahi seçenek olarak proaktif total pankreatektomi uygulanmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "MEN1 ilişkili gastrinomalarda profilaktik total pankreatektomi kesinlikle kontrendikedir. Kontrolü güç labil diyabet ve ciddi pankreatik ekzokrin yetmezlik gelişir. Organ koruyucu cerrahi yaklaşımlar önceliklendirilir; eş zamanlı PHPT varsa önce paratirodektomi uygulanır.",
+      "aciklama_detay": "MEN1 ilişkili gastrinomaların ve diğer duodenopankreatik nöroendokrin tümörlerin tedavisinde profilaktik total pankreatektomi kesinlikle önerilmez ve kontrendikedir. Total pankreatektomi sonrasında kontrolü son derece güç labil (brittle) diyabet ve ciddi pankreatik ekzokrin yetmezlik (malabsorpsiyon, steatore, kilo kaybı, demir-folat-B12 eksikliği) gelişmektedir. Cerrahi kararında enükleasyon veya sınırlı rezeksiyonlar gibi organ koruyucu yaklaşımlar önceliklendirilmelidir. A şıkkı doğrudur: hiperkalsemi gastrik asit salgısını ve gastrin salınımını doğrudan artırır. B şıkkı doğrudur: paratirodektomi ile kalsiyumun normalleştirilmesi ZES semptomlarını ve gastrin düzeylerini belirgin düzeltir; bu nedenle PHPT ve gastrinom birlikteliğinde önce paratirodektomi yapılır. C şıkkı doğrudur: MEN1 gastrinomalar duodenum duvarında milimetrik multifokal yerleşimlidir. D şıkkı doğrudur: uzun dönem PPİ kullanımı antral G hücre hiperplazisiyle CgA ve gastrin düzeylerini yapay yükseltir; bu durum non-fonksiyonel tümör takibinde bu belirteçlerin tanısal değerini neredeyse ortadan kaldırmaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hiperkalsemi gastrin salgısını ve parietal hücreden asit üretimini doğrudan stimüle eder; bu nedenle ZES kliniği PHPT varlığında belirgin şiddetlenir.",
+        "B": "DOGRU — Paratirodektomi ile kalsiyumun normalleştirilmesi açlık gastrin düzeyleri, sekretin-uyarımlı gastrin ve bazal asit salgısında anlamlı düşüş sağlar; PHPT+ZES birlikteliğinde önce paratirodektomi uygulanır.",
+        "C": "DOGRU — MEN1 gastrinomalar sporadik vakalardan farklı olarak duodenum duvarında (submukoza) milimetrik ve multifokal yerleşim gösterir; bu multifokal yapı cerrahi kürtajı güçleştirir.",
+        "D": "DOGRU — Uzun dönem PPİ kullanımı antral G hücre hiperplazisine yol açarak gastrin ve CgA düzeylerini yapay yükseltir; güncel kılavuzlar bu nedenle NF-pNET takibini biyokimya yerine periyodik MRG ve Dotatate PET/CT ile yapar.",
+        "E": "YANLIS — Profilaktik total pankreatektomi MEN1'de kesinlikle kontrendikedir; labil diyabet ve ciddi ekzokrin yetmezlik gelişir. Organ koruyucu cerrahi yaklaşımlar önceliklendirilmelidir."
+      },
+      "etiketler": [
+        "Zollinger-Ellison Sendromu",
+        "PPİ ve Kromogranin A",
+        "Total Pankreatektomi",
+        "Hiperkalsemi-Gastrin Etkileşimi",
+        "GEP-NET Yönetimi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Brandi et al. J Clin Endocrinol Metab 2001; Nikou et al. Digestion 2012; Thakker et al. J Clin Endocrinol Metab 2012"
+    }
+  ]
+}

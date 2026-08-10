@@ -12,8 +12,11 @@ declare global {
 let cached = global._mongooseConn ?? null;
 
 export async function dbConnect() {
-  if (cached) return cached;
-  cached = await mongoose.connect(MONGODB_URI);
+  if (cached && mongoose.connection.readyState === 1) return cached;
+  cached = await mongoose.connect(MONGODB_URI, {
+    serverSelectionTimeoutMS: 8000,
+    socketTimeoutMS: 10000,
+  });
   global._mongooseConn = cached;
   return cached;
 }

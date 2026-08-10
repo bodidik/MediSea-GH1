@@ -1,0 +1,124 @@
+{
+  "id": "men1-sendromu-vaka-1",
+  "baslik": "MEN1 Sendromu — Multipl Endokrin Neoplazi Tanı ve Cerrahi Yönetimi",
+  "zorluk": "ileri",
+  "sure_dk": 20,
+  "branch": "endokrinoloji",
+  "topic": "men1-sendromu",
+  "adimlar": [
+    {
+      "adim": 1,
+      "klinik_bilgi": "Elli dokuz yaşında erkek hasta, 2 yıldır devam eden yorgunluk, epigastrik ağrı ve bilişsel gerileme yakınmalarıyla endokrinoloji polikliniğine başvurdu.\n\nÖzgeçmiş: Geçirilmiş nefrolitiyazis öyküsü (son 4 yılda 2 taş atağı) ve GERD tanısıyla proton pompası inhibitörü kullanmakta.\n\nFizik muayene: Vital bulgular normal sınırlarda. Genel muayenede belirgin patoloji saptanmadı.",
+      "soru": "Bu hastada yorgunluk, bilişsel gerileme ve tekrarlayan nefrolitiyazis öyküsü göz önüne alındığında, ilk tanısal adım olarak en öncelikli istenecek tetkik hangisidir?",
+      "secenekler": {
+        "A": "Serum kalsiyum ve PTH ölçümü — hiperkalsemi triyadını araştır",
+        "B": "Üst gastrointestinal sistem endoskopisi — epigastrik ağrının nedenini araştır",
+        "C": "Nöropsikiyatri konsültasyonu ve EEG — bilişsel gerilemenin primer nedeni değerlendirilmeli",
+        "D": "24 saatlik idrar kreatinin ve protein — renal nedenli ensefalopati dışlanmalı",
+        "E": "Tiroid fonksiyon testleri (TSH, sT4) — hipotiroidi bilişsel gerilemeye yol açabilir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Nefrolitiyazis + yorgunluk + bilişsel gerileme triyadı hiperkalsemiyi işaret eder; ilk adım serum kalsiyum ve PTH ölçümüdür.",
+      "aciklama_detay": "Tekrarlayan nefrolitiyazis, yorgunluk ve bilişsel gerileme — bu üç bulgu birlikte hiperkalseminin klasik 'bones, stones, groans and psychic moans' triyadını oluşturur. Hiperkalseminin en sık nedeni primer hiperparatiroidizmdir. GERD'in de hiperkalsemi ile ilişkili olabileceği düşünüldüğünde (hiperkalseminin gastrin salınımını artırması, PUD riskini yükseltmesi), ilk tanısal adım serum kalsiyum ve PTH ölçümüdür. Diğer seçenekler semptomların yalnızca birini hedefler, ancak birleşik tablonun sistemik nedenini araştırmaz.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Nefrolitiyazis + yorgunluk + bilişsel gerileme triyadı hiperkalsemi şüphesi doğurur. PTH ile birlikte ölçülen kalsiyum, PTH-bağımlı mı PTH-bağımsız mı olduğunu belirleyerek sonraki adımları yönlendirir.",
+        "B": "YANLIŞ — Epigastrik ağrı hiperkalseminin bir belirtisi olabilir (hiperkalsemi gastrin salınımını artırarak PUD riskini yükseltir). Önce sistemik nedeni dışlamak gerekir; endoskopi ileride gerekebilir ancak birinci adım değildir.",
+        "C": "YANLIŞ — Bilişsel gerileme hiperkalseminin santral sinir sistemi belirtisidir. Primer nöropsikiyatrik değerlendirme öncesinde metabolik nedenler dışlanmalıdır.",
+        "D": "YANLIŞ — Renal ensefalopati ağır böbrek yetmezliğinde görülür; bu hastada böbrek yetmezliğini düşündüren bilgi yoktur. Hiperkalsemi renal fonksiyonu olumsuz etkileyebilse de ilk adım kalsiyum ölçümüdür.",
+        "E": "YANLIŞ — Hipotiroidi bilişsel gerilemeye yol açabilir; ancak nefrolitiyazis ile birlikte gelmez. Bu tablo hiperkalsemiyi işaret etmektedir ve önce kalsiyum + PTH değerlendirilmelidir."
+      },
+      "sonraki_bilgi": "Tetkik sonuçları geldi:\n**Serum kalsiyum: 11.5 mg/dL ↑** (N: 8.5–10.2)\n**Serum fosfor: 1.2 mg/dL ↓** (N: 2.5–4.5)\n**PTH: 778 pg/mL ↑↑** (N: 15–65)\n**25-OH Vitamin D: 18 ng/mL ↓**\n**Serum kreatinin: 1.06 mg/dL** (normal)\n\nHiperkalsemi PTH-bağımlı olarak doğrulandı. FHH (Familyal Hipokalsiürik Hiperkalsemi) dışlandı."
+    },
+    {
+      "adim": 2,
+      "klinik_bilgi": "Laboratuvar sonuçları:\nSerum kalsiyum: 11.5 mg/dL ↑\nSerum fosfor: 1.2 mg/dL ↓\nPTH: 778 pg/mL ↑↑\n25-OH Vitamin D: 18 ng/mL ↓\nSerum kreatinin: 1.06 mg/dL (normal)\n\nPTH-bağımlı hiperkalsemi (Primer Hiperparatiroidizm) tanısı konuldu. FHH (Familyal Hipokalsiürik Hiperkalsemi) dışlandı.\n\nPTH değerinin bu denli belirgin yüksekliği (778 pg/mL) dikkat çekicidir.",
+      "soru": "PTH 778 pg/mL ile tipik sporadik primer hiperparatiroidizm değerlerinin çok üzerinde seyreden bu olguda, kalıtsal/sendromik bir etiyolojiyi araştırmak için öncelikle hangi değerlendirme yapılmalıdır?",
+      "secenekler": {
+        "A": "Doğrudan paratiroid ultrasonografisi ve Tc-99m sestamibi sintigrafisi — tek adenom lokalize edilmeli, cerrahi planlanmalı",
+        "B": "Aile öyküsünün detaylı sorgulanması ve eşzamanlı pankreas/hipofiz patolojilerinin araştırılması",
+        "C": "24 saatlik idrar kalsiyum/kreatinin klirens oranı ölçümü — FHH yeniden değerlendirilmeli",
+        "D": "DEXA ile kemik mineral yoğunluğu ölçümü — cerrahi endikasyonunu belirlemek için",
+        "E": "Kalsiyum mimetik (sinakalsed) başlanması — cerrahi riskli hastalarda medikal yönetim"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PTH 778 pg/mL ile olağandışı yükseklik sendromik etiyolojiyi düşündürür; aile öyküsü ve diğer endokrin organlar araştırılmalıdır.",
+      "aciklama_detay": "Sporadik primer hiperparatiroidizmde PTH genellikle referans üst sınırının 1.5–2 katını aşmaz. PTH 778 pg/mL ile bu denli belirgin yükseklik, genetik/sendromik bir nedeni (MEN1, MEN2A, HRPT2/CDC73) düşündürür. FHH daha önce dışlandığından, bu noktada aileden birden fazla kişide endokrin tümör öyküsü (özellikle pankreas, hipofiz), genç yaşta paratiroid hastalığı ve multipl gland tutulumu araştırılmalıdır. MEN1 sendromunda paratiroid tutulumu çoğunlukla multiglanduler ve bilateral olduğundan, direkt cerrahi planlama yerine önce sendromik değerlendirme yapılmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Görüntüleme lokalizasyon amaçlıdır; ancak bu kadar yüksek PTH değeriyle sendromik etiyoloji önce dışlanmalıdır. MEN1'de sestamibi sıklıkla multiglanduler tutulumu gösterir.",
+        "B": "DOĞRU — PTH 778 pg/mL düzeyi ve klinik tablo MEN1 şüphesi uyandırır. Aile öyküsü (pankreas tümörü, hipofiz adenomu) ve eşzamanlı endokrin organların araştırılması tanıyı yönlendirir.",
+        "C": "YANLIŞ — FHH zaten dışlandı; tekrar araştırmak gerekmez. PTH bu kadar yüksek olduğunda FHH olasılığı son derece düşüktür.",
+        "D": "YANLIŞ — KMY cerrahi endikasyon değerlendirmesinde kullanılır; ancak etiyoloji açıklanmadan tedavi kararı verilmemelidir.",
+        "E": "YANLIŞ — Sinakalsed semptomatik kontrol sağlayabilir; ancak bu olguda sendromik etiyoloji araştırılmadan medikal yönetim başlamak tanıyı geciktirir."
+      },
+      "sonraki_bilgi": "Aile öyküsü sorgulandığında kritik bilgiler ortaya çıktı:\n— Baba: 54 yaşında pankreas tümörü nedeniyle hayatını kaybetmiş\n— Erkek kardeş: 48 yaşında pankreas tümörü nedeniyle hayatını kaybetmiş\n\n**MEN1 şüphesi yüksek.**\n\nParatiroid USG: Bilateral hipoekojenik paratiroid nodülleri (multiglanduler tutulum)\nTc-99m Sestamibi sintigrafisi: Multipl gland tutulumunu destekler\nAbdominal BT: Pankreasta hipervasküler lezyonlar saptandı (pankreas NET şüpheli)"
+    },
+    {
+      "adim": 3,
+      "klinik_bilgi": "Aile öyküsü: Baba ve erkek kardeş, pankreas tümörü nedeniyle hayatını kaybetmiş.\n\nGörüntüleme sonuçları:\n— Paratiroid USG: Bilateral hipoekojenik paratiroid nodülleri\n— Tc-99m Sestamibi sintigrafisi: Multipl gland tutulumu\n— Abdominal BT: Pankreasta hipervasküler lezyonlar (NET şüpheli)\n\nPrimer hiperparatiroidizm (paratiroid) + aile öyküsü (pankreas tümörü) + görüntülemede pankreas lezyonları.",
+      "soru": "MEN1 sendromu klinik tanısının konulabilmesi için aşağıdaki kriterlerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Üç klasik MEN1 bileşeninin (paratiroid, pankreas NET, hipofiz adenomu) tamamının klinik olarak kanıtlanmış olması gerekir",
+        "B": "Üç klasik bileşenden en az ikisinin bir hastada bulunması VEYA bir bileşenin bulunması ve birinci derece akrabada MEN1 tanısının olması",
+        "C": "MEN1 geni mutasyonunun genetik testle saptanması zorunludur; klinik kriterlere dayanılarak tanı konulamaz",
+        "D": "Paratiroid tutulumu ile birlikte serum gastrin düzeyinin yüksek saptanması MEN1 tanısı için yeterlidir",
+        "E": "Yalnızca radyolojik olarak pankreas NET ve paratiroid nodülleri gösterilmesi tanı için yeterlidir; biyokimyasal doğrulama gerekmez"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1 tanısı: 3 bileşenden ≥2'si klinik olarak veya 1 bileşen + birinci derece akrabada MEN1.",
+      "aciklama_detay": "MEN1 tanı kriterleri: (1) Klinik MEN1: Üç klasik bileşenden (primer hiperparatiroidizm, duodenal-pankreatik NET, ön hipofiz adenomu) en az ikisinin aynı hastada bulunması. (2) Ailesel MEN1: Klinik MEN1 tanılı bir indeks olguyla birlikte birinci derece akrabada bu bileşenlerden birinin bulunması. (3) Asemptomatik/genetik MEN1: MEN1 germline mutasyonunun taşınması (klinik bileşen olmaksızın). Bu hastada primer hiperparatiroidizm + pankreas NET şüphesi + babanın/kardeşin pankreas tümörü öyküsü — klinik MEN1 tanısı için iki bileşen zaten mevcuttur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Üç bileşenin tamamının birden bulunması gerekmez; en az ikisi yeterlidir. Ayrıca ailesel öykü de tanıyı destekler.",
+        "B": "DOĞRU — Bu hastada primer HPT + pankreas NET şüphesi = klinik iki bileşen mevcuttur. Üstelik birinci derece akrabalarda pankreas tümörü öyküsü de tanıyı güçlendirmektedir.",
+        "C": "YANLIŞ — Genetik test kesin tanı sağlar ve önerilen bir bileşendir; ancak klinik kriterler de tanı koydurur. Genetik test olumsuz çıktığında (az sayıda MEN1 hastasında mutasyon saptanamaz) klinik kriterler geçerliliğini korur.",
+        "D": "YANLIŞ — Yüksek gastrin (Zollinger-Ellison sendromu, pankreas NET bileşeni) MEN1'in bir parçası olabilir; ancak yalnızca gastrin yüksekliği tek başına MEN1 tanısı için yeterli değildir.",
+        "E": "YANLIŞ — Radyolojik bulgular şüphe oluşturur; biyokimyasal ve patolojik doğrulama olmadan kesin tanı konulamaz."
+      },
+      "sonraki_bilgi": "Hipofiz değerlendirmesi için MRI istendi.\n\n**Hipofiz MRI:** 10 mm ölçülerinde makroadenom saptandı\n**Prolaktin: 32 ng/mL** — hafif yüksek (N <20 ng/mL)\n\nPankreas NET doğrulaması için:\n— **Kromogranin A (CgA): 198 ng/mL ↑** (N <100)\n— **24 saatlik idrar 5-HIAA: 14.7 mg/gün ↑** (N <10.6)\n— **⁶⁴Cu-Dotatat PET-BT:** NET tutulumunu doğruladı\n— **FNA biyopsisi:** Düşük dereceli, iyi diferansiye NET\n— **Genetik analiz:** c.445+10_445+11delinsA>G MEN1 germline mutasyonu saptandı\n\n**Kesin tanı: MEN1 Sendromu — Üç bileşenin tamamı doğrulandı.**"
+    },
+    {
+      "adim": 4,
+      "klinik_bilgi": "MEN1 Sendromu — Üç bileşen doğrulandı:\n1. Primer hiperparatiroidizm (multiglanduler)\n2. Pankreas NET (düşük dereceli, iyi diferansiye; CgA 198 ng/mL ↑, 5-HIAA 14.7 mg/gün ↑, ⁶⁴Cu-Dotatat PET pozitif, FNA: düşük dereceli iyi diferansiye NET)\n3. Hipofiz makroadenom 10 mm (prolaktin 32 ng/mL hafif ↑)\n\nGenetik: c.445+10_445+11delinsA>G MEN1 germline mutasyonu\n\nAile öyküsü: Baba ve erkek kardeş pankreas tümörü nedeniyle hayatını kaybetmiş.",
+      "soru": "MEN1 sendromunda uzun dönem mortaliteyi en çok hangi bileşen belirler?",
+      "secenekler": {
+        "A": "Primer hiperparatiroidizm — hiperkalsemi ve nefrolitiyazis komplikasyonları en ölümcül seyri oluşturur",
+        "B": "Pankreas NET — malign transformasyon ve karaciğer metastazı MEN1 mortalitesinin başlıca nedenidir",
+        "C": "Hipofiz makroadenom — kitle etkisi ve panhipopituitarizm yaşam beklentisini en çok kısaltır",
+        "D": "Prolaktinom komplikasyonları — gonadotropin baskılanması ve kemik kaybı uzun dönem mortaliteyi belirler",
+        "E": "Hiperkalsemik kriz — ani kardiyak arest riski nedeniyle en mortal bileşendir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1'de mortaliteyi esas belirleyen pankreas NET'tir — karaciğer metastazı ve malign seyir en sık ölüm nedenidir.",
+      "aciklama_detay": "MEN1 sendromunda uzun dönem prognoz büyük ölçüde pankreas ve duodenal NET'lerin seyriyle belirlenir. Pankreas NET'ler malign transformasyon kapasitesine sahiptir; karaciğer metastazı geliştiğinde 5 yıllık sağkalım belirgin şekilde düşer. Bu hastanın babasının ve erkek kardeşinin pankreas tümörü nedeniyle hayatını kaybetmiş olması da bu bileşenin prognoz üzerindeki ağırlığını somut biçimde yansıtmaktadır. Primer hiperparatiroidizm morbiditeye (böbrek taşı, osteoporoz, nörobilişsel gerileme) katkıda bulunur ancak iyi yönetildiğinde mortalite nedeni nadiren olur. Hipofiz adenomları çoğunlukla benign seyreder.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Primer hiperparatiroidizm MEN1'in en sık bileşenidir ve önemli morbiditeye yol açar; ancak cerrahi ile iyi kontrol altına alındığında mortalite nedeni nadiren olur.",
+        "B": "DOĞRU — Pankreas ve duodenal NET'ler MEN1 mortalitesinin başlıca nedenidir. Karaciğer metastazı ve malign transformasyon potansiyeli nedeniyle bu bileşen en dikkatli izlenecek ve tedavi edilecek olandır. Bu ailedeki ölümlerin nedeni de pankreas tümörüdür.",
+        "C": "YANLIŞ — MEN1'de hipofiz adenomları çoğunlukla küçük ve benign seyreder. Makroadenomlar görülebilir ancak mortalite üzerindeki etkisi pankreas NET'e kıyasla çok daha azdır.",
+        "D": "YANLIŞ — Prolaktinom gonadotropin baskılanması ve kemik yitimi yapabilir; ancak mortaliteyi doğrudan belirleyen bir bileşen değildir.",
+        "E": "YANLIŞ — Hiperkalsemik kriz akut bir tıbbi acildir; ancak MEN1'in kronik seyrinde mortaliteyi belirleyen asıl faktör pankreas NET progresyonudur."
+      },
+      "sonraki_bilgi": "Multidisipliner tümör konseyi kararı:\n\n1. **Paratiroid cerrahisi** önce planlandı — hiperkalsemi pankreas NET ve hipofiz baskısını kötüleştirebilir\n2. **Pankreas cerrahisi** ikinci basamakta planlandı\n3. **Hipofiz adenomu** — prolaktin hafif yüksek ve 10 mm makroadenom; dopamin agonisti (kabergolin) ile medikal yönetim kararı alındı\n\nCerrahi hazırlık başlatıldı."
+    },
+    {
+      "adim": 5,
+      "klinik_bilgi": "Cerrahi girişimler:\n\n**Paratiroid cerrahisi:** Total paratiroidektomi yapıldı — 3 adenom saptandı. Sol alt paratiroid bezi ön kol kasına ototoransplante edildi.\n\n**Pankreas cerrahisi:** Distal pankreatektomi + splenektomi uygulandı.\n\n**Postoperatif izlem:**\n— Serum kalsiyum: 7.8 mg/dL → normalize edildi ✓\n— PTH: 7 pg/mL → normalize edildi ✓\n\nAile üyeleri genetik danışmanlık için yönlendirildi.",
+      "soru": "Bu hastada total paratiroidektomi + ototoransplantasyon tercih edilmesinin, sınırlı (tek gland) rezeksiyona kıyasla temel gerekçesi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Total paratiroidektomi, serum kalsiyumunu daha hızlı düşürür ve akut hiperkalsemi yönetiminde bu nedenle tercih edilir",
+        "B": "MEN1'de paratiroid tutulumu tipik olarak multiglanduler olduğundan, sınırlı rezeksiyon yüksek nüks riskine neden olur; total paratiroidektomi + ototoransplantasyon nüksü minimalize eder",
+        "C": "Ototoransplantasyon, paratiroid dokusunu pankreas yakınına yerleştirerek pankreas cerrahisiyle eş zamanlı yönetimi kolaylaştırır",
+        "D": "Total paratiroidektomi, ototoransplante edilen dokunun işlev görmemesi nedeniyle postoperatif hipoparatiroidizm riskini azaltır",
+        "E": "Sınırlı paratiroidektomi MEN1'de kontrendikedir çünkü bu hastalarda paratiroid kanseri riski yüksektir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1'de paratiroid tutulumu multiglanduler olduğundan sınırlı rezeksiyon yüksek nüks riski taşır; total paratiroidektomi + ototoransplantasyon standart yaklaşımdır.",
+      "aciklama_detay": "MEN1 sendromunda primer hiperparatiroidizm, sporadik vakalardan farklı olarak tipik biçimde multiglanduler ve asimetrik seyreder (bu vakada 3 adenom saptanmıştır). Sınırlı (1–2 gland) rezeksiyon yapılırsa kalan bezlerde tümör gelişimi ile nüks oranları çok yüksektir. Bu nedenle MEN1 kılavuzları total paratiroidektomi (tüm paratiroid dokusunun çıkarılması) + ototoransplantasyon (genellikle bir bezin parçasının ön kol kasına yerleştirilmesi) yaklaşımını önermektedir. Ototoransplantasyon, kalıcı hipoparatiroidizm riskini azaltmak için uygulanır — transplante edilen doku zamanla işlevsel hale gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Total paratiroidektominin kalsiyum düşürme hızı sınırlı rezeksiyondan farklı değildir; seçimin gerekçesi nüks önleme ve multiglanduler hastalık yönetimidir.",
+        "B": "DOĞRU — MEN1'de tüm paratiroid bezleri etkilenme potansiyeline sahiptir. Bu vakada 3 adenom saptanmış olması multiglanduler yapıyı teyit etmektedir. Ototoransplantasyon ile kalıcı hipoparatiroidizm riski azaltılır.",
+        "C": "YANLIŞ — Ototoransplantasyon lokalizasyonu pankreas cerrahisiyle ilişkili değildir; ön kol tercihi teknik ve erişim kolaylığı açısından yapılır.",
+        "D": "YANLIŞ — Ototoransplante edilen doku zamanla işlevsel hale gelir ve PTH salgılar; bu nedenle hipoparatiroidizm riski azalır (artmaz). Postoperatif dönemde geçici hipokalsemi görülebilir ancak kalıcı değildir.",
+        "E": "YANLIŞ — MEN1'de paratiroid kanseri riski artmamıştır; multiglanduler benign adenom riski artmıştır. Sınırlı rezeksiyonun sakıncası kanser değil, nüks riskidir."
+      }
+    }
+  ]
+}

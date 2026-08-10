@@ -127,6 +127,32 @@
       ]
     },
     {
+      "id": "genetik-endokrin-sendromlar",
+      "baslik": "Genetik Endokrin Sendromlar",
+      "aciklama": "MEN1, MEN2, MEN4 ve diğer kalıtsal endokrin neoplazi sendromları",
+      "emoji": "🧬",
+      "konular": [
+        {
+          "id": "men-sendromlari",
+          "baslik": "MEN Sendromları — Genel Bakış (MEN1/2/4/5)",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
+          "id": "men1-sendromu",
+          "baslik": "MEN1 Sendromu — Multipl Endokrin Neoplazi Tip 1",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
+    },
+    {
       "id": "kalsiyum-kemik",
       "baslik": "Kalsiyum ve Kemik Metabolizması",
       "konular": [

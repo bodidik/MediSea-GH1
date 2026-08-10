@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "id": "men1-sendromu",
+    "branch": "endokrinoloji",
+    "baslik": "MEN1 Sendromu — Multipl Endokrin Neoplazi Tip 1",
+    "altbaslik": "Paratiroid, pankreas NET ve hipofiz adenomu triyadı; tanı kriterleri, genetik değerlendirme ve cerrahi yönetim",
+    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": true,
+    "vaka": true,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 3,
+    "flashcard": 75,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş ve Epidemiyoloji",
+      "satirlar": [
+        {
+          "metin": "Multiple Endokrin Neoplazi Tip 1 (MEN1), başta paratiroid bezleri, gastroenteropankreatik nöroendokrin sistem ve ön hipofiz olmak üzere çok sayıda endokrin ve non-endokrin dokuda tümör gelişimi ile karakterize, **otozomal dominant** geçişli nadir kalıtsal bir sendromdur. Genel popülasyondaki prevalansı yaklaşık 100.000 kişide 2 ila 20 arasında tahmin edilmektedir. MEN1 taşıyıcılarında klinik penetrans yaşla birlikte belirgin şekilde artar; 50 yaşına gelindiğinde hastaların neredeyse tamamında biyokimyasal veya klinik bulgular ortaya çıkar. Erken tanı, multidisipliner uzmanlaşmış merkezlerde yürütülen düzenli sürveyans ve hasta odaklı cerrahi yaklaşımlar, hastaların tarihsel kohortlardaki 55 yıllık yaşam beklentisini günümüzde **70 yaşın üzerine** taşımıştır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Genetik ve Moleküler Patogenez",
+      "satirlar": [
+        {
+          "metin": "MEN1 sendromu, kromozom **11q13** lokusunda yer alan ve bir tümör baskılayıcı gen olan **MEN1** genindeki inaktive edici germline mutasyonlar nedeniyle gelişir."
+        },
+        {
+          "metin": "**Menin Proteini:** MEN1 geni, 10 ekzondan oluşur ve 610 amino asitlik ubikitöz eksprese edilen nükleer iskele (scaffold) proteini olan **menin**'i kodlar. Menin; histon modifikasyonu (epigenetik regülasyon), transkripsiyonel kontrol, DNA hasar onarımı, hücre bölünmesi ve apoptozis gibi kritik hücresel süreçlerde görev alır."
+        },
+        {
+          "metin": "**Knudson'un Çift Darbe (Two-Hit) Hipotezi:** Tümör gelişimi için doğumda taşınan heterozigot germline inaktive edici mutasyona ek olarak, ilgili endokrin hücrede somatik bir mutasyon veya delesyon sonucu sağlam olan diğer allelin de kaybedilmesi (**heterozigotluk kaybı — LOH**) gerekir."
+        },
+        {
+          "metin": "**Mutasyon Spektrumu:** Bugüne kadar çerçeve kayması (frameshift), anlamsız (nonsense), yanlış anlamlı (missense) ve splicing bölgesi mutasyonları dahil olmak üzere 1300'den fazla farklı germline MEN1 mutasyonu tanımlanmıştır. Olguların yaklaşık **%10'u de novo** mutasyonlar sonucu gelişirken, %90'ı ailesel geçişlidir. **Belirgin bir genotip-fenotip korelasyonu saptanmamıştır**; aynı ailede aynı mutasyonu taşıyan bireyler arasında dahi klinik fenotip ve hastalık agresifliği dramatik değişkenlik gösterebilir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "A. Primer Hiperparatiroidi (PHPT)",
+      "satirlar": [
+        {
+          "metin": "MEN1 hastalarında **en sık ve genellikle en erken ortaya çıkan** klinik tablodur. 50 yaşına gelindiğinde hastaların %95-100'ünde biyokimyasal kanıtlar saptanır."
+        },
+        {
+          "metin": "**Patolojik Karakteristikler:** Sporadik PHPT'deki tek paratiroid adenomunun aksine, MEN1 ilişkili PHPT asimetrik ve asenkron seyreden **multiglandüler hiperplazi** ile karakterizedir. Hastalık genç yaşlarda (tipik olarak 2. ve 3. dekadda) normokalsemik veya hafif hiperkalsemik olarak başlayabilir."
+        },
+        {
+          "metin": "**Klinik Yansımalar:** Erken dönemde asemptomatik seyredebilse de, zamanla **nefrolitiyazis / nefrokalsinozis (%27-72 oranında)**, ciddi kortikal ve trabeküler kemik mineral yoğunluğu kaybı (osteoporoz, kırıklar) ve nöropsikiyatrik belirtiler (depresyon, bilişsel sislenme, yorgunluk) gelişir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "**Cerrahi Yönetim — 2025 Standart:** İlk seçenek cerrahidir. Önerilen standart operasyon: **subtotal paratirodektomi (3 veya 3.5 bezin çıkarılması) + bilateral transservikal timektomi (TCT)**. Timektomi, mediastinal ektopik paratiroid dokularını temizlemek ve gelecekte gelişebilecek ölümcül timik nöroendokrin karsinomları önlemek amacıyla mutlaka eklenmelidir. Cerrahi uygulanamayan ya da nüks etmiş asemptomatik hastalarda kalsiyum kontrolü için **cinacalcet** medikal alternatif olarak seçilebilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "**English ve ark. (2025) Meta-Analiz Kanıtları:** Subtotal paratirodektomi; sınırlı cerrahiye (<3 bez) kıyasla persistan hiperparatiroidi riskini (RR 0.32) ve nüks hiperparatiroidi riskini (RR 0.78) anlamlı düzeyde azaltır. Ancak postoperatif kalıcı hipoparatiroidi riskini artırır (RR 2.64). Sınırlı cerrahi: nüks oranı %68.5, medyan nüks süresi 4.25 yıl. Subtotal paratirodektomi: nüks oranı %45, medyan nüks süresi 7.2 yıl. (Fransız AFCE/GTE, 517 hasta)"
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "**Preoperatif Görüntüleme Güncellemesi:** Güncel kılavuzlar, preoperatif planlama ve özellikle nüks vakaların lokalizasyonu için **F-18 Fluorocholine PET/CT (FCH-PET/CT)** kullanımını önermektedir. FCH-PET/CT, ilk cerrahi öncesi patolojik bezleri %73 oranında, reoperasyon gerektiren nüks vakalarda ise %100 oranında başarıyla lokalize edebilmektedir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "B. Gastroenteropankreatik Nöroendokrin Tümörler (GEP-NET)",
+      "satirlar": [
+        {
+          "metin": "MEN1 hastalarının %30-80'inde saptanır ve **erken ölümlerin en sık nedenini** oluşturur. Tümörler pankreasta veya duodenum duvarında çok odaklı (multifokal) olarak yerleşir."
+        },
+        {
+          "metin": "**Non-fonksiyonel pNET'ler (NF-pNEN):** GEP-NET'lerin en yaygın alt tipidir. Hormonal bir sendroma yol açmadıkları için klinik olarak sessiz ilerlerler ve metastaz yapma potansiyelleri nedeniyle en ölümcül lezyonlardır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "**NF-pNET — 2025 Aktif İzlem Kanıtı:** \\(\\le\\) 2 cm boyutundaki asemptomatik NF-pNEN lezyonlarında, majör pankreas cerrahisinin yüksek morbidite riski göz önüne alınarak **aktif izlem (surveillance)** stratejisi önerilmektedir. English ve ark. (2025) meta-analizinde, \\(\\le\\) 2 cm tümörlerde cerrahi uygulanan grup ile aktif izlem grubu arasında uzun dönem sağkalım ve metastaz gelişim oranlarının benzer olduğu gösterilmiştir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Gastrinoma (Zollinger-Ellison Sendromu — ZES)",
+      "satirlar": [
+        {
+          "metin": "En sık görülen fonksiyonel neoplazidir (%30-40 penetrans). Sporadik vakaların aksine, MEN1'de gastrinomalar sıklıkla milimetrik boyutlarda ve **duodenum duvarında multifokal** yerleşimlidir. Şiddetli peptik ülserler, reflü ve sekretuar diyare ile prezante olur."
+        },
+        {
+          "metin": "**Yönetim:** Tedavinin temelini yüksek doz **proton pompası inhibitörleri (PPİ)** oluşturur; cerrahi rezeksiyonun metastazı önlemedeki rolü multifokal doğası nedeniyle net değildir. Hiperkalsemi gastrin salgısını potansiyelize ettiğinden, **paratirodektomi ile kalsiyumun normalleştirilmesi ZES semptomlarını ve gastrin seviyelerini belirgin şekilde düzeltir**."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İnsülinoma",
+      "satirlar": [
+        {
+          "metin": "%10-30 oranında görülür. Sporadik insülinomalara kıyasla daha genç yaşlarda (sıklıkla <40 yaş, hatta çocuklukta) ortaya çıkar ve pankreas genelinde multifokal olma eğilimindedir. Açlık hipoglisemisi ve nöroglikopenik semptomlarla seyreder; tedavisi cerrahi (enükleasyon veya distal pankreatektomi) rezeksiyondur."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "**Pankreatik Ekzokrin Yetmezlik ve Nutrisyonel Yönetim:** Distal/total pankreatektomi veya Whipple operasyonu geçiren hastalarda ciddi malabsorpsiyon, steatore, kilo kaybı ve nutrisyonel yetersizlikler (demir, folat, vitamin B12 eksikliği) gelişir. Bu hastalarda proaktif **pankreatik enzim replasman tedavisi (PERT)** ve bireyselleştirilmiş nutrisyonel destek hayati önem taşır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "C. Hipofiz Ön Lob Nöroendokrin Tümörleri (PitNET)",
+      "satirlar": [
+        {
+          "metin": "MEN1 hastalarının yaklaşık %30-50'sinde gelişir. Sporadik hipofiz tümörlerine kıyasla **daha invaziv, daha büyük (makroadenomlar baskındır, %85)** ve tedaviye daha dirençli olma eğilimindedirler."
+        },
+        {
+          "metin": "**Alt Tipler:** En sık görülen form **prolaktinomadır (%40-45)**; bunu non-fonksiyonel adenomlar (%35-40), GH salgılayan (akromegali) ve ACTH salgılayan (Cushing hastalığı) adenomlar takip eder. Pediatrik MEN1 olgularında Cushing hastalığı, adrenal Cushing sendromuna kıyasla belirgin şekilde daha sıktır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "**Hipofiz — Tıbbi Tedavi Başarısı (2025 Meta-Analiz):** English ve ark. (2025) meta-analizinde, MEN1 ilişkili prolaktinomaların dopamin agonistlerine (örn. kabergolin) yanıt başarısızlığı oranlarının sporadik prolaktinomalarla benzer olduğu teyit edilmiştir. İlk basamakta dopamin agonistleri güvenle kullanılabilir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Diğer Endokrin ve Non-Endokrin Manifestasyonlar",
+      "satirlar": [
+        {
+          "metin": "**Torasik NET'ler (Timik ve Bronşiyal):** Timik NET'ler oldukça agresif, metastatik potansiyeli yüksek ve ölümcüldür; neredeyse sadece **erkeklerde ve sigara içenlerde** görülür. Bronşiyal NET'ler ise daha yavaş seyirlidir."
+        },
+        {
+          "metin": "**Meme Kanseri:** Kadın MEN1 taşıyıcılarında meme kanseri riski genel popülasyona göre **2 ila 3 kat artmıştır** ve daha erken yaşta (genellikle <50 yaş) ortaya çıkar."
+        },
+        {
+          "metin": "**Adrenal Korteks Lezyonları:** %40-73 oranında, genellikle bilateral non-fonksiyonel adenomlar veya hiperplazi şeklinde saptanır; karsinom veya fonksiyonel salgı (Cushing, Conn) nadirdir."
+        },
+        {
+          "metin": "**Kutanöz Bulgular:** Çoklu yüz anjiyofibromları (%85-90), kollajenomalar (%70) ve lipomlar (%30) fizik muayenede tanısal ipucu sağlar."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "2025 Güncellenmiş Sürveyans Takvimi",
+      "kolonlar": [
+        "Organ / Tümör",
+        "Tarama Yöntemi",
+        "Başlangıç Yaşı (2025)",
+        "Tarama Sıklığı"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Genetik Test (Ailesel)",
+            "Mutasyon spesifik DNA analizi",
+            "Yaşamın ilk dekadı içinde (5-10 yaş)",
+            "Tek seferlik tanısal test"
+          ]
+        },
+        {
+          "hucreler": [
+            "Klinik Değerlendirme",
+            "Auxolojik büyüme eğrileri, puberte takibi, semptom sorgulama (hipoglisemi vb.)",
+            "5 yaşından itibaren",
+            "Yıllık"
+          ]
+        },
+        {
+          "hucreler": [
+            "Paratiroid (PHPT)",
+            "Serum total/iyonize Kalsiyum, Prolaktin, IGF-1 (rutin intakt PTH artık önerilmez)",
+            "10 yaşından itibaren",
+            "1-3 yılda bir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ön Hipofiz (PitNET) — Biyokimya",
+            "Serum Prolaktin ve IGF-1",
+            "10 yaşından itibaren",
+            "1-3 yılda bir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ön Hipofiz (PitNET) — Görüntüleme",
+            "Kontrastlı Hipofiz MRG",
+            "15 yaşından itibaren (asemptomatik çocuklarda isteğe bağlı)",
+            "Normal ise 3 yılda bir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Enteropankreatik (GEP-NET)",
+            "Pankreas ve sürrenal odaklı abdominal kontrastlı MRG (veya EUS / Dotatate PET)",
+            "10-15 yaş arası ilk bazal MRG",
+            "Normal ise 2-3 yılda bir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Torasik NET (Timik/Bronşiyal)",
+            "Toraks BT veya MRG",
+            "20-25 yaşından itibaren (CT aralıkları radyasyon dozunu azaltmak için uzatılmıştır)",
+            "3-5 yılda bir"
+          ]
+        },
+        {
+          "hucreler": [
+            "Meme Kanseri (Kadın taşıyıcılar)",
+            "Mamografi ve meme muayenesi",
+            "40 yaşından itibaren",
+            "Yıllık"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "**2025 Kılavuz Değişikliği:** Çocuklarda açlık kan şekeri, insülin, gastrin ve diğer gastrointestinal hormonların **rutin yıllık biyokimyasal taraması**, yanlış pozitiflik oranları ve klinik yararı kanıtlanmadığı için rutin taramadan çıkarılmıştır. Asemptomatik ve normal büyüyen çocuklarda hipofiz MRG isteğe bağlıdır. Bu güncellemeler, pediatrik popülasyonda aşırı tıbbileşmeyi önlemeyi hedeflemektedir."
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "id": "men-sendromlari",
+    "branch": "endokrinoloji",
+    "baslik": "Multiple Endokrin Neoplazi (MEN) Sendromları",
+    "altbaslik": "MEN1/2/4/5 karşılaştırmalı klinik tablo, genotip-fenotip ilişkisi, tarama algoritması ve multidisipliner yönetim prensipleri",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 0,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Multiple Endokrin Neoplazi (MEN) sendromları; bir bireyde yaşam boyu **senkron veya metakron** olarak iki veya daha fazla endokrin bezde hiperplazi veya tümör gelişimi ile karakterize, **otozomal dominant** geçiş gösteren nadir kalıtsal hastalıklardır."
+        },
+        {
+          "metin": "Günümüzde dört ana MEN sendromu tanımlanmıştır: **MEN Tip 1** (Wermer Sendromu), **MEN Tip 2** (Sipple Sendromu; alt tipleri MEN2A ve MEN2B), **MEN Tip 4** (CDKN1B ilişkili) ve yakın zamanda tanımlanan **MEN Tip 5** (MAX ilişkili). Bu sendromların erken ve doğru teşhisi, yaşam beklentisini uzatmak ve organ fonksiyonlarını korumak adına kritik önem taşır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 (Wermer Sendromu) — Genel Tanım ve Prevalans",
+      "satirlar": [
+        {
+          "metin": "MEN1 sendromu, ilk kez **1953 yılında Paul Wermer** tarafından tanımlanmış olup tarihsel olarak **Wermer sendromu** olarak bilinir. Genel popülasyondaki tahmini prevalansı **100.000 kişide 2-10**'dur (bazı kaynaklarda 3-20). Hastalık oldukça yüksek bir penetransa sahiptir; mutasyon taşıyıcılarının **%95'inden fazlasında** 50 yaşına kadar biyokimyasal veya klinik belirtiler ortaya çıkar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 — Moleküler Patogenez ve Genetik",
+      "satirlar": [
+        {
+          "metin": "MEN1 sendromu, **kromozom 11q13** üzerinde yer alan ve bir **tümör baskılayıcı gen** olan *MEN1* genindeki heterozigot inaktive edici germline mutasyonlar nedeniyle gelişir. MEN1 geni 10 ekzondan oluşur ve **610 amino asitlik**, ubikuitöz eksprese edilen bir nükleer protein olan **menin**'i kodlar."
+        },
+        {
+          "metin": "Menin; histon modifikasyonu, transkripsiyonel regülasyon, hücre döngüsü kontrolü, genomik stabilite ve DNA hasar onarımı gibi kritik süreçlerde görev alan çok sayıda protein partneriyle etkileşime giren bir **nükleer iskele (scaffold) proteinidir**."
+        },
+        {
+          "metin": "Tümör gelişimi, **Knudson'un 'çift darbe' (two-hit) hipotezine** uygun gerçekleşir: hastalar doğumda bir mutasyonlu germline alele sahipken, paratiroid/pankreas/hipofiz hücrelerinde gelişen somatik mutasyon ile **heterozigotluk kaybı (LOH)** oluşur ve çift allelik inaktivasyon hücreyi kontrolsüz çoğalmaya iter. Literatürde **1000'den fazla farklı germline MEN1 mutasyonu** tanımlanmıştır; yaklaşık **%70'i** frameshift ve nonsense (truncating) mutasyonlardan oluşur. Belirgin bir genotip-fenotip korelasyonu gösterilememiş; aynı aile bireyleri veya monozigot ikizler arasında dahi klinik prezentasyon dramatik olarak farklılaşabilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MEN1 Klasik Klinik Prezentasyonu — '3P Üçlüsü'",
+      "kolonlar": [
+        "Bileşen",
+        "Penetrans",
+        "Başlangıç Yaşı",
+        "Temel Özellik"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Primer Hiperparatiroidi (PHPT) ★",
+            "%95–100 (50 yaşa kadar)",
+            "20–40 yaş (sporadikten ~20 yıl erken)",
+            "MEN1'in en sık ve en erken belirtisi; mültiglandüler hiperplazi, kadın-erkek oranı eşit"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "GEP Nöroendokrin Tümörler",
+            "%30–80",
+            "30–50 yaş",
+            "Mortalite ve morbiditenin en önemli nedeni; non-fonksiyonel NET'ler çoğunlukta"
+          ]
+        },
+        {
+          "hucreler": [
+            "Hipofiz Adenomları (PitNET)",
+            "%15–50",
+            "Değişken (kadınlarda daha erken)",
+            "Sporadik adenomlara göre daha büyük, daha invaziv, sıklıkla plürihormonal"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 — Birinci 'P': Primer Hiperparatiroidi (PHPT)",
+      "satirlar": [
+        {
+          "metin": "MEN1 ilişkili PHPT'de **asimetrik ve asenkron seyreden mültiglandüler hiperplazi** evrenseldir; sporadik vakalardaki tek adenom baskınlığından belirgin şekilde ayrılır. Kadın-erkek oranı eşittir. Hastalar uzun süre asemptomatik kalabilir; ancak zamanla **hiperkalsiüri, tekrarlayan nefrolitiyazis, böbrek fonksiyon bozukluğu ve ciddi kemik kaybı** (osteopeni/osteoporoz) gelişir. Kemik mineral yoğunluğundaki azalma, sporadik PHPT'ye kıyasla çok daha agresif ve erken yaşta başlar."
+        },
+        {
+          "metin": "**ZES (Zollinger-Ellison Sendromu) eşliğinde PHPT:** Hiperkalsemi gastrin salgısını stimüle ettiğinden, paratiroidektomi ile kalsiyumun düzeltilmesi ZES kliniğini dramatik olarak rahatlatabilir — bu nedenle ZES varlığı, PHPT cerrahisi için güçlü bir endikasyon oluşturur."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "MEN1 PHPT Cerrahisi — Kılavuz Önerisi: Önerilen standart yaklaşım **subtotal paratiroidektomi** (3 veya 3,5 bezin çıkarılması) artı **servikal timektomi** (timik boynuz rezeksiyonu)'dur. Timektominin iki amacı vardır: (1) ektopik paratiroid dokusunu (~%20 olasılıkla timüste yer alır) çıkarmak, (2) ileride timik karsinoid gelişme riskini azaltmak. Postoperatif uzun dönem nüks oranı %16-30 (bazı kohortlarda reoperasyon oranı %70'e ulaşır). Nüks veya cerrahi kontrendikasyonunda **sinakalset (kalsimimetik)** kalsiyum kontrolü için tıbbi alternatiftir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 — İkinci 'P': Gastroenteropankreatik (GEP) Nöroendokrin Neoplaziler",
+      "satirlar": [
+        {
+          "metin": "MEN1 hastalarının **%30-80'inde** saptanır ve **mortalitenin en önemli nedenidir**. Non-fonksiyonel pNET'ler (NF-pNEN) tümörlerin büyük çoğunluğunu (%70-90) oluşturur; hormonal sendroma yol açmadıkları için tarama görüntülemesinde saptanana kadar sessiz kalırlar ancak metastatik potansiyelleri yüksektir. **Çapı <2 cm olan NF-pNEN'lerde** aktif izlem, majör pankreas cerrahisine kıyasla benzer sağkalım sunduğu için öncelikli seçenektir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MEN1 — GEP-NET Alt Tipleri",
+      "kolonlar": [
+        "Tümör Tipi",
+        "Penetrans",
+        "Lokalizasyon",
+        "Klinik Tablo"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Non-fonksiyonel pNET ★",
+            "%70–90",
+            "Pankreas",
+            "Hormonal sendrom yok; mortalite riski en yüksek grup — metastatik potansiyel"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Gastrinoma (ZES)",
+            "%30–40",
+            "Duodenum duvarı (≠ sporadik pankreas)",
+            "Mültipl, milimetrik; peptik ülser, GÖRH, dirençli ishal. Yüksek doz PPİ birinci basamak"
+          ]
+        },
+        {
+          "hucreler": [
+            "İnsülinoma",
+            "%10–30",
+            "Pankreas (multifokal)",
+            "Genç yaş (<40, çocuklukta bile); açlık hipoglisemisi, nöroglikopeni. Tanı: 72 saatlik açlık testi"
+          ]
+        },
+        {
+          "hucreler": [
+            "Glukagonoma",
+            "Nadir",
+            "Pankreas",
+            "Nekrolitik migratuvar eritem, diyabet, kilo kaybı"
+          ]
+        },
+        {
+          "hucreler": [
+            "VIPoma",
+            "Nadir",
+            "Pankreas",
+            "Sulu ishal, hipokalemi, aklorhidri (WDHA sendromu)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 — Üçüncü 'P': Hipofiz Adenomları (PitNET)",
+      "satirlar": [
+        {
+          "metin": "Hastaların **%15-50'sinde** saptanır; kadınlarda erkeklere göre daha sık ve daha erken yaşta görülür. MEN1 ilişkili hipofiz adenomları sporadik olanlara kıyasla **daha büyük** (makroadenomlar daha sık), **daha invaziv**, sıklıkla plürihormonal ve **tedaviye daha dirençli** seyretme eğilimindedir."
+        },
+        {
+          "metin": "En sık görülen alt tip **prolaktinomadır** (%40-45); bunu klinik olarak fonksiyon dışı adenomlar (%35-40) takip eder. Daha nadir olarak GH salgılayan (akromegali) ve ACTH salgılayan (Cushing hastalığı) adenomlar gelişir. Pediatrik MEN1 hastalarında Cushing hastalığı, adrenal Cushing'e göre çok daha sık hiperkortizolizm sebebidir. Tedavi: prolaktinomalarda **dopamin agonistleri** (kabergolin), cerrahi endikasyonu olan diğerlerinde **transsfenoidal rezeksiyon**."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN1 — Diğer Tümörler ve Bulgular",
+      "satirlar": [
+        {
+          "metin": "**Adrenal Korteks Tümörleri:** %20-73 sıklıkta, genellikle çift taraflı ve fonksiyon dışı adenomlar şeklinde; karsinom veya fonksiyonel salgı nadirdir."
+        },
+        {
+          "metin": "**Torasik Nöroendokrin Tümörler (NET):** Timik NET'ler %2-8 penetransa sahip, son derece agresif, neredeyse yalnızca **erkeklerde ve sigara içenlerde** izlenir; mortalite riski çok yüksek olduğundan boyun cerrahisi sırasında **profilaktik timektomi** önerilir. Bronşiyal NET'ler %5-35 oranında görülür, timik formlara kıyasla daha iyi huyludur."
+        },
+        {
+          "metin": "**Tip 2 Gastrik NET (ECLoma):** ZES ve hipergastrinemi zemininde mide fundusunda gelişen, genellikle iyi huylu çok odaklı tümörlerdir."
+        },
+        {
+          "metin": "**Kutanöz Lezyonlar:** Çoklu yüz **anjiyofibromları** (%85-90 vaka), **kollajenomalar** (%70) ve **lipomlar** (%17-33) saptanır; bu dermatolojik bulgular genç hastalarda henüz endokrin tümörler belirmeden tanısal ipucu sağlayabilir."
+        },
+        {
+          "metin": "**Meme Kanseri Riski:** Kadın MEN1 hastalarında meme kanseri riski yaklaşık **2-3 kat artmıştır**; hastalık daha genç yaşta prezante olma eğilimindedir. **40 yaşından itibaren** mamografi taraması önerilmektedir."
+        },
+        {
+          "metin": "**MSS Tümörleri:** Meningiyomlar ve ependimomalar normal popülasyona göre daha yüksek oranda görülebilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MEN1 Tanı Kriterleri",
+      "kolonlar": [
+        "Tanı Tipi",
+        "Kriter"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Klinik MEN1 ★",
+            "Üç ana tümörden (PHPT, GEP-NET, hipofiz adenomu) **en az ikisinin** aynı hastada bulunması"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ailesel MEN1",
+            "Birinci derece akrabada klinik MEN1 tanısı + hastada bu tümörlerden **en az birinin** bulunması"
+          ]
+        },
+        {
+          "hucreler": [
+            "Genetik MEN1",
+            "Semptomlardan bağımsız, germline **patojenik MEN1 varyantının** gösterilmesi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Genetik Test Endikasyonları (İndeks Vakalar): (1) Klasik endokrin tümörlerden ≥2'sine sahip hastalar. (2) Tek organ tutulumu olmasına rağmen sıra dışı özellikler: sporadik mültiglandüler PHPT (<30 yaş), çok odaklı veya genç yaşta (<40) pNET, <19 yaş hipofiz tümörü veya <30 yaş fonksiyonel adenom, yaştan bağımsız tüm gastrinoma ve timik NET vakaları."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MEN1 Klinik ve Biyokimyasal Tarama Takvimi (Asemptomatik Taşıyıcılar)",
+      "kolonlar": [
+        "Yaş / Sıklık",
+        "Tarama İçeriği"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "5 yaşından itibaren",
+            "Auxolojik (boy-kilo) ve pubertal gelişim takibi"
+          ]
+        },
+        {
+          "hucreler": [
+            "10 yaşından itibaren — yıllık",
+            "Serum kalsiyum, prolaktin, IGF-1"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "10-15 yaş — 2-3 yılda bir",
+            "Abdominal MRG (pankreas)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "15 yaşından itibaren — 3 yılda bir",
+            "Hipofiz MRG"
+          ]
+        },
+        {
+          "hucreler": [
+            "20-25 yaşından itibaren — 3-5 yılda bir",
+            "Toraks BT veya MRG (timik NET taraması)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "40 yaşından itibaren (kadın hastalar)",
+            "Mamografi (meme kanseri riski ~2-3 kat artmış)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN2 (Sipple Sendromu) — Genel Tanım",
+      "satirlar": [
+        {
+          "metin": "MEN2 sendromu, **kromozom 10** üzerinde yer alan *RET* protoonkogenindeki **fonksiyon kazandırıcı (gain-of-function) germline mutasyonlar** sonucu gelişir. Mutasyon kodonu ile klinik agresiflik ve tümör spektrumu arasında **çok güçlü bir genotip-fenotip ilişkisi** vardır. Her iki alt tipinde de **Medüller Tiroid Karsinomu (MTC)** neredeyse **%100 penetrans** gösteren ve hayatı tehdit eden tümördür."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MEN2A ve MEN2B Karşılaştırması",
+      "kolonlar": [
+        "Özellik",
+        "MEN2A",
+        "MEN2B"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Sıklık",
+            "%90–95",
+            "%5"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Medüller Tiroid Karsinomu (MTC) ★",
+            "Multifokal, bilateral; erken yaşta başlar",
+            "Çok agresif; **bebeklik döneminde** başlar, hızla metastaz yapar — yaşamın ilk yılında profilaktik tiroidektomi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Feokromositoma",
+            "%50; sıklıkla çift taraflı, adrenalin salgılayan",
+            "%50"
+          ]
+        },
+        {
+          "hucreler": [
+            "Primer Hiperparatiroidi (PHPT)",
+            "%20–35; hafif seyirli, tek/çift bez tutulumu",
+            "**Görülmez**"
+          ]
+        },
+        {
+          "hucreler": [
+            "Ekstra Bulgular",
+            "—",
+            "Mukozal nöromlar (dudak, dil, göz kapakları), GI gangliyonöromatozis (megakolon), Marfanoid habitus"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "MEN4 (CDKN1B İlişkili)",
+      "satirlar": [
+        {
+          "metin": "MEN4, klinik olarak MEN1'i taklit eden ancak genetik taramada MEN1 mutasyonu saptanmayan hastalarda **2006 yılında tanımlanmıştır**. **Kromozom 12p13** üzerindeki ve **p27kip1 proteinini** kodlayan *CDKN1B* geninin germline inaktive edici mutasyonlarından kaynaklanır."
+        },
+        {
+          "metin": "Klinik fenotip klasik MEN1 kliniğiyle (PHPT, hipofiz adenomları, GEP-NET) örtüşür. Ancak **MEN1'den farklı olarak:** Penetrans belirgin şekilde düşüktür; PHPT başlangıç yaşı daha geçtir; hipofiz tümörleri (özellikle GHoma ve ACTHoma) daha erken ortaya çıkabilir; paratiroid tutulumu multiglandüler hiperplazi yerine genellikle **tek veya çift bez adenomu** düzeyinde kaldığından cerrahi yönetim sporadik PHPT'ye daha yakındır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "MEN5 (MAX İlişkili): Yakın zamanda tanımlanan, son derece nadir MEN5 sendromu, germline **MAX geni** (MYC-associated factor X) mutasyonları ile ilişkilidir. Bu hastalarda feokromositoma, paragangliyoma, hipofiz adenomları (özellikle pitüiter gigantizm) ve paratiroid hiperplazisi/primer hiperparatiroidi gibi örtüşen endokrin tümör manifestasyonları bildirilmiştir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Multidisipliner Yönetim ve Prognoz: MEN sendromları çoklu organ tutulumu ve ömür boyu nüks riski nedeniyle endokrinolog, endokrin cerrahı, radyolog, nükleer tıp uzmanı, onkolog ve diyetisyenden oluşan **multidisipliner ekip** tarafından yönetilmelidir. Tarama programlarının titizlikle uygulanması, hastaların ortalama yaşam süresini tarihsel kohortlardaki **55 yıldan günümüzde 70 yılın üzerine** çıkarmıştır. Tekrarlayan ameliyatlar, hipoparatiroidi komplikasyonları ve nüks korkusu yaşam kalitesini olumsuz etkilediğinden, tedavi kararlarında **'organ koruyucu ve minimal invaziv' yaklaşımlar** ile psikososyal destek önceliklendirilmelidir."
+    }
+  ]
+}
