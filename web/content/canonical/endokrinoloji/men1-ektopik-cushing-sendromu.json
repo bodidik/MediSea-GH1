@@ -1,0 +1,39 @@
+{
+  "title": "MEN1'de Ektopik Cushing Sendromu: Diagnostik Kusursuz Fırtına",
+  "meta": {
+    "updatedAt": "10 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Cushing", "ACTH", "Ektopik", "Timik NET", "IPSS"],
+    "parent": "men1-sendromu",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Neden Bir \"Diagnostik Kusursuz Fırtına\"?",
+      "html": "<p>MEN1 hastalarında ACTH-bağımlı Cushing sendromu (CS) geliştiğinde, kortizol fazlalığının kaynağını — hipofiz kaynaklı Cushing hastalığı (CD) ile torasik veya abdominal NET kaynaklı ektopik ACTH sendromu (ECS) — ayırt etmek, klinik endokrinolojideki en karmaşık süreçlerden biridir. Literatürde bu tablo <strong>&quot;diagnostik kusursuz fırtına&quot; (perfect storm)</strong> olarak tanımlanmaktadır.</p>"
+    },
+    {
+      "heading": "1. \"İnsidentaloma\" Tuzağı ve Epidemiyolojik Gerçekler",
+      "html": "<p>MEN1 hastalarında hipofiz adenomlarının (PitNET) yaşam boyu prevalansı yaklaşık <strong>%42</strong> iken, bunların içinde ACTH salgılayan corticotroph adenomların oranı yalnızca <strong>%4.4</strong>'tür. Bu durum, genel MEN1 popülasyonunda hipofiz kaynaklı Cushing hastalığı (CD) prevalansını <strong>%1.9</strong> düzeyine indirmektedir.</p><p>Dolayısıyla, ACTH-bağımlı Cushing sendromu ile başvuran bir MEN1 hastasında hipofiz MRG'de saptanan bir mikroadenom (örn. 7×8 mm), istatistiksel olarak yüksek olasılıkla fonksiyon dışı bir <strong>insidentaloma</strong> (rastlantısal tümör) olup, hekimi yanlış teşhise sürükleyen en büyük tuzaktır.</p>"
+    },
+    {
+      "heading": "2. Ektopik Kaynakların Spektrumu ve Klinik Profil",
+      "html": "<p>MEN1 ilişkili ECS olguları, sporadik ECS olgularından belirgin demografik farklılıklar gösterir:</p><ul class=\"mb-4\"><li><strong>Timik NET Dominansı:</strong> Genel popülasyonda ECS'nin en sık nedeni bronşiyal karsinoidler iken, MEN1 hastalarında ektopik ACTH kaynağı <strong>%61 oranında timik NET</strong>, %28 oranında ise pankreatik NET'lerdir.</li><li><strong>Belirgin Erkek Hakimiyeti:</strong> MEN1-ECS olgularında <strong>%78 oranında erkek hakimiyeti</strong> saptanmıştır. Bu oran, timik kaynaklı olgularda <strong>%91'e</strong> kadar yükselmektedir.</li></ul>"
+    },
+    {
+      "heading": "3. En Kritik Teşhis Engeli: Ektopik CRH Salınımı",
+      "html": "<p>MEN1 ilişkili ECS olgularının <strong>%22'sinde</strong> (her 5 hastadan yaklaşık 1'inde) ektopik CRH (Kortikotropin Salgılatıcı Hormon) salınımı saptanmaktadır. Ektopik tümörden (timik veya pankreatik) salınan CRH, hipofizdeki normal corticotroph hücreleri kronik olarak uyararak iki kritik diagnostik çıkmaza yol açar:</p><ul class=\"mb-4\"><li><strong>Dinamik Testlerde Yalancı Pozitiflik:</strong> CRH stimülasyonu altındaki hipofiz, desmopressin (DDAVP) uyarısına veya yüksek doz deksametazon baskılama testine (HDDST) tıpkı Cushing hastalığında olduğu gibi yanıt verebilir — örneğin desmopressin testi sonrası ACTH düzeyinde <strong>%118 artış</strong> görülebildiği rapor edilmiştir.</li><li><strong>IPSS (İnferior Petrosal Sinüs Örneklemesi) Yanılgısı:</strong> Ektopik CRH uyarısı, hipofiz ile perifer arasında yalancı bir gradyan yaratarak IPSS'te santral/periferik ACTH oranının &gt;2 (stimülasyon sonrası &gt;3) çıkmasına neden olur. Literatürde bu yanılgı nedeniyle <strong>3 MEN1 hastasına gereksiz yere transsfenoidal hipofiz cerrahisi</strong> uygulanmıştır.</li></ul>"
+    },
+    {
+      "heading": "4. Biyokimyasal Heterojenite ve Sinsi İlerleyen Seyir",
+      "html": "<p>Sporadik ECS genellikle florid klinik bulgular ve aşırı yüksek idrar serbest kortizolü (UFC) ile seyreder. Genel kılavuzlar UFC &lt;3×ULN olduğunda ektopik odağı ekarte etme eğilimindedir.</p><p>Ancak <strong>MEN1-ECS olgularının %22'sinde</strong>, hastalığın başlangıcında UFC düzeyleri &lt;3×ULN sınırında saptanmıştır. MEN1 ilişkili ektopik ACTH/CRH salgılayan tümörler klinik olarak daha yavaş ve sinsi (indolent) bir biyokimyasal progresyon gösterebilmektedir. Bu nedenle <strong>hafif hiperkortizolizm, ektopik odağı dışlamak için güvenilir bir kriter değildir.</strong></p>"
+    },
+    {
+      "heading": "5. Akademik Teşhis Algoritması",
+      "html": "<ol class=\"mb-4 space-y-3\"><li><strong>Adım 1 — ACTH Bağımlılığının Kanıtlanması:</strong> 24 saatlik idrar serbest kortizolü (UFC), gece yarısı tükürük kortizolü ve 1 mg DST ile hiperkortizolizm konfirme edildikten sonra plazma ACTH düzeyinin uygunsuz şekilde normal veya yüksek olduğunun gösterilmesi.</li><li><strong>Adım 2 — Çoklu Anatomik Görüntüleme:</strong> Kontrastlı hipofiz MRG'sine ek olarak torasik ve abdominal BT/MRG rutin uygulanmalıdır. Ön mediastendeki timik kitlelere ve pankreas lezyonlarına özellikle odaklanılmalıdır.</li><li><strong>Adım 3 — Fonksiyonel Görüntüleme:</strong> <sup>68</sup>Ga-DOTATATE PET/CT ile somatostatin reseptör ekspresyonu taranmalı; karsinoid lezyonların metabolik aktivitesini değerlendirmek için <sup>18</sup>F-FDG PET/CT eklenmelidir.</li><li><strong>Adım 4 — İnvaziv Testlerin Güvenirliğinin Sorgulanması:</strong> IPSS gradyanları veya desmopressin yanıtları hipofizi işaret etse bile, hastanın görüntülemesinde şüpheli bir NET odağı varsa, bunun ektopik CRH'a bağlı <strong>yalancı bir hipofiz gradyanı</strong> olabileceği her zaman akılda tutulmalıdır.</li><li><strong>Adım 5 — Stratejik Cerrahi Önceliklendirme:</strong> Multidisipliner konseylerde, hipofiz cerrahisi öncesinde en şüpheli ve biyolojik olarak en agresif lezyonun — özellikle malign potansiyeli yüksek <strong>timik NET'lerin</strong> — rezeksiyonuna öncelik verilmelidir.</li><li><strong>Adım 6 — Preoperatif Medikal Stabilizasyon:</strong> Şiddetli hiperkortizolizm varlığında cerrahiye kadar <strong>osilodrostat</strong> (yüksek doz block-and-replace protokolü ile) güvenle kullanılabilir.</li></ol>"
+    },
+    {
+      "heading": "Özet: MEN1'de ECS Teşhisinin Kritik Hatırlatıcıları",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Tuzak / Bulgu</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Klinik Önemi</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">MRG'de mikroadenom</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN1'de büyük olasılıkla insidentaloma; CD kanıtı değil</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">HDDST baskılanması veya DDAVP yanıtı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Ektopik CRH'a bağlı yalancı pozitif olabilir</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">IPSS santral gradyan</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Ektopik CRH uyarısıyla yalancı santral pattern oluşabilir</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">UFC &lt;3×ULN</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN1-ECS'de ektopik kaynağı dışlamaz; indolent seyir mümkün</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Erkek cinsiyet + timik kitle</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">En yüksek riskli ECS profili (%91 erkek, %61 timik kaynak)</td></tr></tbody></table></div>"
+    }
+  ]
+}
