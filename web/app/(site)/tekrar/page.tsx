@@ -76,7 +76,12 @@ export default function ReviewPage() {
   // Deste bilerek donuk tutuluyor (yoksa kuyruk oturum ortasında değişirdi) ama
   // sayaçlar donuk kalırsa kullanıcı çalıştıkça düşmediklerini görüp şaşırıyor.
   const [tick, setTick] = useState(0);
+  // tick bilerek bagimlilik: icinde kullanilmiyor, yeniden HESAPLAMA TETIGI.
+  // Her nottan sonra artiyor ve depodan taze sayim aliniyor. Kural bunu
+  // bilemez, "gereksiz bagimlilik" der; kaldirilirsa sayaclar donar.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const stats = useMemo(() => (deck ? deckStats(buildDeck()) : null), [deck, tick]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const branches = useMemo(() => (deck ? branchesOf(buildDeck()) : []), [deck, tick]);
   const card = queue[idx] ?? null;
 

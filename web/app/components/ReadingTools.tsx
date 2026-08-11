@@ -10,6 +10,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import {
   containerMap,
   containerSignature,
@@ -464,18 +465,18 @@ export default function ReadingTools() {
                   Vurgularım
                 </span>
                 <div className="flex items-center gap-2">
-                  <a
+                  <Link
                     href="/tekrar"
                     className="text-[10px] font-black uppercase tracking-widest text-amber-600 hover:underline"
                   >
                     ⚡ Tekrar
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/calisma-alanim"
                     className="text-[10px] font-black uppercase tracking-widest text-blue-600 hover:underline"
                   >
                     Tümü
-                  </a>
+                  </Link>
                   <button
                     onClick={clearAll}
                     className="text-[10px] font-black uppercase tracking-widest text-rose-500 hover:underline"
@@ -521,9 +522,9 @@ export default function ReadingTools() {
             <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
               <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
               depolaması dolu — yenilediğinde kaybolurlar.{" "}
-              <a href="/calisma-alanim" className="font-bold underline">
+              <Link href="/calisma-alanim" className="font-bold underline">
                 Yer aç
-              </a>
+              </Link>
             </div>
           )}
           <button
