@@ -1,0 +1,31 @@
+{
+  "title": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Meme Kanseri", "Tarama", "Sürveyans", "GTE", "Brandi 2025"],
+    "parent": "men1-ailesel-tarama-ve-surveyans",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Epidemiyoloji: MEN1 ve Meme Kanseri",
+      "html": "<p>MEN1 sendromu klasik olarak &quot;3P&quot; neoplazileriyle tanımlanmakla birlikte, Hollanda ve Fransız GTE kohort çalışmalarından biriken veriler kadın MEN1 taşıyıcılarında <strong>meme kanseri gelişme riskinin genel popülasyona kıyasla yaklaşık 2–3 kat arttığını</strong> ortaya koymuştur. MEN1 ilişkili meme kanserleri sporadik vakalardan <strong>belirgin biçimde daha erken yaşlarda</strong> prezante olma eğilimindedir.</p>"
+    },
+    {
+      "heading": "Patofizyoloji: Menin Proteini ve Östrojen Yolakları",
+      "html": "<p>Meme kanserinin MEN1 tümör spektrumunun biyolojik olarak doğrudan bir parçası olup olmadığı tam netleşmemiştir. Ancak iki mekanizma öne çıkmaktadır:</p><ul class=\"mb-4\"><li><strong>Menin Proteinin Tümör Baskılayıcı Rolü:</strong> Menin, meme dokusunda tümör supresör işlevi görmekte; MEN11 mutasyonlarında bu işlevin kaybı meme epitelinin malign dönüşümüne zemin hazırlayabilmektedir.</li><li><strong>Östrojen Reseptör Yolakları ile Etkileşim:</strong> Menin'in östrojen reseptörü sinyalizasyonunu düzenleyen histon modifikasyon kompleksleriyle etkileşimi, bu artmış riskin arkasındaki olası moleküler mekanizmalar arasında sayılmaktadır.</li></ul>"
+    },
+    {
+      "heading": "Kılavuzlardaki Paradigma Değişimi",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Kılavuz</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Meme Taraması Önerisi</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Thakker ve ark. 2012 (Uluslararası)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Rutin meme taraması önerisi yok</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Fransız GTE (Goudet ve ark. 2024) + Marburg Protokolü</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">40 yaşından itibaren mamografi — resmi protokole ilk ekleyen kılavuzlar</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Uluslararası MEN1 Sürveyans Kılavuzu — EJE 2025</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">≥40 yaş tüm kadın MEN1 taşıyıcıları için <strong>zorunlu</strong> endikasyon olarak sürveyans şemasına dahil edildi</td></tr></tbody></table></div><p class=\"mt-3 text-sm text-slate-500 dark:text-slate-400\"><em>Not: Erken taramanın klinik gerekliliği kılavuzlarca net olarak vurgulansa da, uzun dönem genel sağkalım ve mortalite üzerindeki net etkinliği prospektif verilerle henüz tam kanıtlanmamıştır.</em></p>"
+    },
+    {
+      "heading": "Tarama Protokolü (2025 Kılavuzlarına Göre)",
+      "html": "<ol class=\"mb-4\"><li><strong>Başlangıç Yaşı:</strong> 40 yaşından itibaren başlanmalıdır.</li><li><strong>Klinik Değerlendirme:</strong> Yıllık rutin jinekolojik muayene ve klinik meme muayenesi.</li><li><strong>Görüntüleme:</strong> Her 2 yılda bir mamografi.</li><li><strong>Bireyselleştirilmiş İleri Görüntüleme:</strong> Ailede sporadik veya kalıtsal meme kanseri öyküsü (BRCA1/2, CHEK2 vb.) bulunan ya da meme dokusu dens olan kadınlarda, bireysel risk analizine göre mamografiye ek <strong>meme ultrasonografisi veya meme MRG</strong> planlanmalıdır.</li></ol>"
+    },
+    {
+      "heading": "Klinik Karar Vermede Akademik Hususlar",
+      "html": "<p><strong>Kümülatif Radyasyon Yükü:</strong> MEN1 hastaları yaşamları boyunca torasik NET veya ürolitiyazis takipleri için çok sayıda BT ve sintigrafi gibi iyonize radyasyon içeren görüntülemeye maruz kalır. Mamografi taramalarının sıklığı planlanırken bu kümülatif radyasyon yükü ve risk-yarar dengesi gözetilmelidir.</p><p class=\"mt-3\"><strong>Paylaşılan Karar Verme:</strong> Meme kanseri taramasının MEN1 hastalarındaki uzun dönem sağkalım yararını gösteren prospektif verilerin henüz sınırlı olması nedeniyle, taramanın kapsamı ve takvimi hastayla ayrıntılı biçimde tartışılarak birlikte planlanmalıdır.</p>"
+    }
+  ]
+}
