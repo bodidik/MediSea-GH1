@@ -1,10 +1,10 @@
 'use client';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function GirisPage() {
+function GirisFormu() {
   const router = useRouter();
   const params = useSearchParams();
   const [email, setEmail] = useState('');
@@ -114,5 +114,14 @@ export default function GirisPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+/* useSearchParams() prerender sırasında Suspense sınırı ister */
+export default function GirisPage() {
+  return (
+    <Suspense fallback={null}>
+      <GirisFormu />
+    </Suspense>
   );
 }
