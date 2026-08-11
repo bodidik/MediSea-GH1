@@ -1,8 +1,7 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import { auth } from "@/auth";
 import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialties";
+import { getTopicCounts } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 
 export const dynamic = "force-dynamic";
@@ -15,22 +14,6 @@ const FEATURED_TOOLS = [
   { slug: "qsofa", name: "qSOFA", icon: "🩺" },
   { slug: "curb65", name: "CURB-65", icon: "🫁" },
 ];
-
-function getTopicCounts(): Record<string, number> {
-  const counts: Record<string, number> = {};
-  try {
-    const root = path.join(process.cwd(), "content", "canonical");
-    if (!fs.existsSync(root)) return counts;
-    const branches = fs.readdirSync(root).filter((d) =>
-      fs.statSync(path.join(root, d)).isDirectory()
-    );
-    for (const b of branches) {
-      const files = fs.readdirSync(path.join(root, b)).filter((f) => f.endsWith(".json"));
-      counts[b] = files.length;
-    }
-  } catch {}
-  return counts;
-}
 
 export default async function Home() {
   const session = await auth();

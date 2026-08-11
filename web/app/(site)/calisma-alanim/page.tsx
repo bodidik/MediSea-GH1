@@ -9,6 +9,7 @@ import Link from "next/link";
 import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
+import StudyCoverage from "@/app/components/StudyCoverage";
 
 type Filter = "all" | "marks" | "notes";
 
@@ -137,6 +138,9 @@ export default function StudyWorkspace() {
             </Link>
           </div>
         )}
+
+        {/* Kapsama — hangi branşta neye hiç bakılmadığını gösterir */}
+        {entries !== null && <StudyCoverage />}
 
         {/* Yedekleme — boş durumda DA görünür: yeni cihaza geçen kullanıcı
             buraya boş ekranla düşer, geri yükleme yolu burada olmazsa
