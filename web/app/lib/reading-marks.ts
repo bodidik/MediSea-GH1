@@ -25,6 +25,10 @@ export type ReadingMark = {
   /** Seçilen metnin kendisi — içerik değişirse eşleşmez, o vurgu atlanır */
   t: string;
   st: MarkStyle;
+  /** Vurgunun hemen öncesindeki bağlam (tekrar kartlarının cloze sorusu için) */
+  b?: string;
+  /** Vurgunun hemen sonrasındaki bağlam */
+  a?: string;
 };
 
 // v2: konteyner sıra numarası yerine kimlik saklanıyor (v1 kayıtları okunmaz)
@@ -266,6 +270,31 @@ export function markIdsIn(range: Range): string[] {
   if (id) ids.add(id);
 
   return Array.from(ids);
+}
+
+/**
+ * Vurgunun çevresindeki metni döndürür — tekrar kartında "boşluk doldurma"
+ * sorusu bundan kurulur. Cümle sınırında kırpar, yoksa karakter sayısıyla.
+ */
+export function contextAround(
+  root: HTMLElement,
+  s: number,
+  e: number,
+  span = 130
+): { before: string; after: string } {
+  const full = root.textContent ?? "";
+  const rawBefore = full.slice(Math.max(0, s - span), s);
+  const rawAfter = full.slice(e, e + span);
+
+  // baştaki parçayı son cümle başlangıcından itibaren al
+  const cut = rawBefore.search(/[.!?:;]\s+[^.!?:;]*$/);
+  const before = cut >= 0 ? rawBefore.slice(cut + 1) : rawBefore;
+
+  // sondaki parçayı ilk cümle sonunda kes
+  const stop = rawAfter.search(/[.!?]\s/);
+  const after = stop >= 0 ? rawAfter.slice(0, stop + 1) : rawAfter;
+
+  return { before: before.replace(/\s+/g, " ").trim(), after: after.replace(/\s+/g, " ").trim() };
 }
 
 /** İlk <mark> elemanını ekranda görünür hale getirir. */

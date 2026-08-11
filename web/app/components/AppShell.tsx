@@ -72,6 +72,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </li>
                 <li><Link href="/tools" className="hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>
                 <li><Link href="/calisma-alanim" className="hover:text-white transition-colors">Çalışma Alanım</Link></li>
+                <li><Link href="/tekrar" className="hover:text-white transition-colors">Tekrar</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">Hakkımızda</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors">İletişim & Destek</Link></li>
               </ul>

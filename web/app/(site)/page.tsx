@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 import { auth } from "@/auth";
 import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialties";
+import StudyStatus from "@/app/components/StudyStatus";
 
 export const dynamic = "force-dynamic";
 
@@ -147,6 +148,10 @@ export default async function Home() {
 
         {/* ── SAĞ: BRANŞLAR ───────────────────────────────── */}
         <section id="branslar" className="flex-1 overflow-y-auto px-4 sm:px-6 py-5 lg:py-6 scroll-mt-16">
+
+          {/* Çalışma durumu — veri yoksa hiç görünmez */}
+          <StudyStatus />
+
 
           {/* Başlık + araç barı tek satırda */}
           <div className="flex items-center justify-between gap-3 mb-4">

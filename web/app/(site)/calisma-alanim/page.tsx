@@ -6,10 +6,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { collectAll, purge, toMarkdown, type NoteDoc, type StudyEntry } from "@/app/lib/study-index";
+import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
+import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
+import StudyBackup from "@/app/components/StudyBackup";
 
 type Filter = "all" | "marks" | "notes";
-type Stroke = NoteDoc["strokes"][number];
 
 const SWATCH: Record<string, string> = {
   y: "#FACC15",
@@ -90,12 +91,22 @@ export default function StudyWorkspace() {
           </div>
 
           {totals.sayfa > 0 && (
-            <button
-              onClick={download}
-              className="rounded-full bg-blue-950 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-blue-900 active:scale-95"
-            >
-              ↓ Markdown indir
-            </button>
+            <div className="flex flex-wrap gap-2">
+              {totals.vurgu > 0 && (
+                <Link
+                  href="/tekrar"
+                  className="rounded-full bg-yellow-400 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-blue-950 transition-all hover:bg-yellow-300 active:scale-95"
+                >
+                  ⚡ Tekrar et
+                </Link>
+              )}
+              <button
+                onClick={download}
+                className="rounded-full bg-blue-950 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-blue-900 active:scale-95"
+              >
+                ↓ Markdown indir
+              </button>
+            </div>
           )}
         </div>
 
@@ -126,6 +137,11 @@ export default function StudyWorkspace() {
             </Link>
           </div>
         )}
+
+        {/* Yedekleme — boş durumda DA görünür: yeni cihaza geçen kullanıcı
+            buraya boş ekranla düşer, geri yükleme yolu burada olmazsa
+            yedeğini hiç kullanamaz. */}
+        {entries !== null && <StudyBackup onChanged={() => setEntries(collectAll())} />}
 
         {/* İçerik */}
         {entries !== null && entries.length > 0 && (
@@ -329,38 +345,9 @@ function EntryCard({
 /* ── El çizimi önizlemesi ────────────────────────────────────────────────── */
 
 function StrokeThumb({ strokes }: { strokes: Stroke[] }) {
-  // Vuruşlar genişliğe göre normalize saklanır; küçük bir SVG'ye aynı oranla basılır
-  const W = 64;
-  const paths: string[] = [];
-  let maxY = 0.4;
-
-  for (const s of strokes) {
-    if (!s.p?.length) continue;
-    for (const p of s.p) if (p[1] > maxY) maxY = p[1];
-    paths.push(s.p.map((p, i) => `${i ? "L" : "M"}${(p[0] * W).toFixed(1)} ${(p[1] * W).toFixed(1)}`).join(" "));
-  }
-
-  const H = Math.min(W * maxY, W * 1.2);
-
   return (
-    <svg
-      viewBox={`0 0 ${W} ${H}`}
-      width={W}
-      height={44}
-      className="hidden shrink-0 rounded-lg border border-slate-200 bg-white sm:block"
-      aria-hidden
-    >
-      {paths.map((d, i) => (
-        <path
-          key={i}
-          d={d}
-          fill="none"
-          stroke={strokes[i]?.c ?? "#1E293B"}
-          strokeWidth={0.8}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      ))}
-    </svg>
+    <div className="hidden h-11 w-16 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-white sm:block">
+      <StrokePreview strokes={strokes} width={64} maxRatio={0.7} strokeScale={2.5} className="w-full" />
+    </div>
   );
 }

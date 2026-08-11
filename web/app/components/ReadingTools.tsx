@@ -14,6 +14,7 @@ import {
   containerMap,
   containerSignature,
   containers,
+  contextAround,
   keyOf,
   loadMarks,
   markAttr,
@@ -305,10 +306,12 @@ export default function ReadingTools() {
     if (!range) return;
 
     const id = newId();
+    // bağlamı boyamadan ÖNCE al — paint() metin düğümlerini böler
+    const { before, after } = contextAround(root, s, e);
     if (!paint(range, id, st)) return;
 
     setPainted((p) => new Set(p).add(id));
-    commit([...base, { id, k, s, e, t, st }]);
+    commit([...base, { id, k, s, e, t, st, b: before, a: after }]);
     close();
   };
 
@@ -453,6 +456,12 @@ export default function ReadingTools() {
                   Vurgularım
                 </span>
                 <div className="flex items-center gap-2">
+                  <a
+                    href="/tekrar"
+                    className="text-[10px] font-black uppercase tracking-widest text-amber-600 hover:underline"
+                  >
+                    ⚡ Tekrar
+                  </a>
                   <a
                     href="/calisma-alanim"
                     className="text-[10px] font-black uppercase tracking-widest text-blue-600 hover:underline"
