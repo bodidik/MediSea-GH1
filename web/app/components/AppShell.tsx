@@ -1,6 +1,7 @@
 import SiteHeader from "@/app/components/SiteHeader";
 import ReadingTools from "@/app/components/ReadingTools";
 import NotePanel from "@/app/components/NotePanel";
+import ReadingHint from "@/app/components/ReadingHint";
 import Link from "next/link";
 import React from "react";
 
@@ -19,6 +20,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       {/* Okuma araçları — yalnızca [data-readable] taşıyan sayfalarda görünür */}
       <ReadingTools />
       <NotePanel />
+      <ReadingHint />
 
       {/* --- YENİ PREMİUM FOOTER --- */}
       <footer className="bg-blue-950 text-blue-200/70 border-t-4 border-amber-500 mt-auto relative overflow-hidden">

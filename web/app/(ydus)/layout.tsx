@@ -1,6 +1,7 @@
 import { UserProvider } from "@/app/(ydus)/context/UserContext";
 import ReadingTools from "@/app/components/ReadingTools";
 import NotePanel from "@/app/components/NotePanel";
+import ReadingHint from "@/app/components/ReadingHint";
 
 export default function YdusLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function YdusLayout({ children }: { children: React.ReactNode }) 
         {/* Okuma araçları — yalnızca [data-readable] taşıyan sayfalarda görünür */}
         <ReadingTools />
         <NotePanel />
+        <ReadingHint />
 
         {/* İstersen buraya arka plana hafif bir deniz dalgası efekti ekleyebiliriz */}
       </div>
