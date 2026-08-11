@@ -1,0 +1,27 @@
+{
+  "title": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Hipokalemi", "QTc", "Ventriküler Fibrilasyon", "Osilodrostat", "hERG"],
+    "parent": "men1-osilodrostat-yan-etkiler",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Neden Potasyum 4.5–5.0 mmol/L?",
+      "html": "<p>MEN1 hastalarında potasyum homeostazisinin bozulması, farklı klinik bağlamlarda — insülinoma kaynaklı hipoglisemi atakları veya osilodrostat tedavisi sırasında gelişen mineralokortikoid fazlalığı — aynı ölümcül aritmojenik mekanizmayı tetikleyebilir. Bu nedenle serum potasyumu <strong>normal sınırların üzerinde, 4.5–5.0 mmol/L aralığında</strong> tutmak MEN1 hastalarında klinik bir kural haline gelmiştir.</p>"
+    },
+    {
+      "heading": "Klinik Kanıt: İnsülinoma Bağlamında VF",
+      "html": "<p>Literatürde, altta yatan yapısal kalp hastalığı <em>bulunmayan</em> 44 yaşında bir kadın MEN1 hastasında, insülinoma ilişkili tekrarlayan hipoglisemi atakları sırasında gelişen <strong>hafif hipokaleminin (K⁺: 3.3 mmol/L)</strong> ölümcül ventriküler fibrilasyonu (VF) tetiklediği belgelenmiştir.</p><p>Bu olgunun klinik önemi şuradan kaynaklanır: hipokalemi <em>tek başına</em>, derin olmasa dahi, yapısal kalp hastalığı olmayan bir hastada VF'ye yol açabilmiştir. Mekanizma şu adımlardan oluşur:</p><ol class=\"mb-4\"><li><strong>hERG Kanal Bozulması:</strong> Hipokalemi, kardiyak repolarizasyondan sorumlu hERG potasyum kanallarını doğrudan bozarak aksiyon potansiyeli süresini (APD) uzatır ve erken ard-depolarizasyonlara (EAD) zemin hazırlar.</li><li><strong>EKG Değişiklikleri:</strong> QTc uzaması, terminal T dalgası bulgingi ve U dalgası oluşumu.</li><li><strong>Katekolamin Fırtınası:</strong> Hipogliseminin tetiklediği epinefrin deşarjı repolarizasyon anomalilerini şiddetlendirir.</li><li><strong>K-Shift:</strong> Glukoz replasmanının hücre dışı potasyumu hücre içine kaydırması hipokalemiyi derinleştirerek torsades de pointes'i VF'ye ilerletir.</li></ol>"
+    },
+    {
+      "heading": "Osilodrostat Bağlamında Aynı Risk: Çift Mekanizma",
+      "html": "<p>Osilodrostat tedavisinde hipokalemi riski iki ayrı mekanizmayla potansiyelize olur:</p><ul class=\"mb-4\"><li><strong>DOC Birikimi (Mineralokortikoid Yolu):</strong> CYP11B1 blokajı → ACTH ↑ → 11-deoksikortikosteron (DOC) birikimi → renal K⁺ atılımı ↑ → hipokalemi.</li><li><strong>Doğrudan hERG Blokajı:</strong> Osilodrostat, kardiyak hERG potasyum kanallarını doğrudan inhibe ederek QTc intervalini uzatır.</li></ul><p>Bu iki mekanizma <strong>sinerjik</strong> biçimde birleştiğinde — DOC kaynaklı hipokalemi + osilodrostatın doğrudan QTc uzatıcı etkisi — ventriküler aritmi eşiği dramatik olarak düşer. İnsülinoma olgusunda görülen VF tablosu, bu sinerjinin klinik sonucunu somutlaştıran bir örnektir.</p>"
+    },
+    {
+      "heading": "Pratik Yönetim Kuralları",
+      "html": "<ul class=\"mb-4\"><li><strong>Hedef K⁺: 4.5–5.0 mmol/L</strong> — normal sınırın üstü değil, üst normal.</li><li>Potasyum replasmanı <strong>proaktif</strong> başlanmalı; hipokalemi gelişmesi beklenmemelidir.</li><li>Spironolakton veya eplerenon ile DOC etkisi farmakolojik olarak kırılmalıdır.</li><li>Osilodrostat başlangıcında ve her doz artırımında <strong>EKG</strong> alınmalıdır. QTc &gt;480 ms → doz azalt veya kes.</li><li>Sınıf IA ve Sınıf III antiaritmikler gibi QTc uzatan ajanlarla <strong>eş zamanlı kullanımdan kaçınılmalıdır</strong>.</li></ul>"
+    }
+  ]
+}

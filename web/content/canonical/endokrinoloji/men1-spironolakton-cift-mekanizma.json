@@ -1,0 +1,31 @@
+{
+  "title": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "Spironolakton", "Osilodrostat", "DOC", "Mineralokortikoid", "Androjen", "MEN1"],
+    "parent": "men1-osilodrostat-mineralokortikoid",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Neden Spironolakton Eklenir?",
+      "html": "<p>Osilodrostat tedavisi sırasında spironolakton eklenmesi, ilacın farmakodinamik mekanizmasından kaynaklanan iki majör yan etki grubuna karşı <strong>çift yönlü (dual) terapötik koruma</strong> sağlar: mineralokortikoid fazlalığı ve hiperandrojenizm.</p><p class=\"mt-2 text-sm text-slate-500 dark:text-slate-400\"><em>Not: Osilodrostatla spironolakton kombinasyonuna dair doğrudan vaka verisi sınırlıdır; aşağıdaki bilgiler uluslararası kılavuzlar ve farmakoloji literatüründen derlenmiştir.</em></p>"
+    },
+    {
+      "heading": "1. Mineralokortikoid Reseptör Antagonizması (MR Blokajı)",
+      "html": "<p><strong>Mekanizma Zinciri:</strong></p><ol class=\"mb-4\"><li>Osilodrostat → CYP11B1 blokajı → kortizol ↓</li><li>Kortizol ↓ → negatif geri bildirim kalkar → ACTH ↑</li><li>ACTH ↑ → enzim blokajı gerisinde <strong>11-deoksikortikosteron (DOC)</strong> birikimi</li><li>DOC → renal distal tübüllerdeki MR uyarısı → Na⁺/su tutulumu + K⁺ atılımı</li></ol><p><strong>Klinik Tablo:</strong> Dirençli hipertansiyon, periferik ödem, derin hipokalemi.</p><p><strong>Spironolaktonun Rolü:</strong> Kompetitif MR antagonisti olarak DOC'un reseptör üzerindeki uyarısını bloke eder. Sodyum ve su atılımını sağlar, kan basıncını kontrol altına alır, periferik ödemi çözer.</p>"
+    },
+    {
+      "heading": "2. Potasyum Homeostazisi ve Kardiyak Güvenlik",
+      "html": "<p>Spironolakton, potasyum tutucu bir diüretiktir. Bu özelliği MEN1 hastalarında iki sinerjik risk için kritiktir:</p><ul class=\"mb-4\"><li><strong>DOC Kaynaklı Hipokalemi:</strong> Renal K⁺ atılımını azaltarak serum K⁺ düzeyini yükseltir.</li><li><strong>Osilodrostatın hERG Blokajı:</strong> Osilodrostat kardiyak hERG kanallarını doğrudan inhibe ederek QTc intervalini uzatır. DOC kaynaklı hipokalemi bu etkiyle sinerjize olduğunda torsades de pointes ve VF riski dramatik artar.</li></ul><p>Spironolakton, MEN1 hastalarında hayati önem taşıyan <strong>K⁺ hedef aralığı 4.5–5.0 mmol/L</strong>'ye ulaşılmasını kolaylaştırarak aritmi eşiğini yükseltir.</p>"
+    },
+    {
+      "heading": "3. Androjen Reseptör Antagonizması (Hiperandrojenizm Kontrolü)",
+      "html": "<p><strong>Mekanizma:</strong> Kronik ACTH uyarısı, steroid sentez yolağını androjen öncüllerine (DHEA-S, androstenedion) kaydırır. Özellikle kadın hastalarda akne, hirsutizm ve androjenik alopesi gelişir.</p><p><strong>Spironolaktonun Rolü:</strong> Spironolakton yalnızca bir MRA değildir; aynı zamanda <strong>güçlü bir androjen reseptör antagonistidir</strong>. Periferik dokularda AR'ı bloke ederek osilodrostat kullanımına bağlı androjenik yan etkileri doğrudan tedavi eder.</p><p>Bu çift etki — MR ve AR antagonizması — spironolaktonu osilodrostat kombinasyonunda <strong>tek ilaçla iki hedefe ulaşan</strong> bir ajan haline getirir.</p>"
+    },
+    {
+      "heading": "Spironolakton vs Eplerenon: Hangisi Ne Zaman?",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Özellik</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Spironolakton</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Eplerenon</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">MR antagonizması</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">✓ Güçlü</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">✓ Seçici (daha az güçlü)</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">AR antagonizması</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">✓ Güçlü (hiperandrojenizmi tedavi eder)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">✗ Yok</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Jinekomasti riski (erkek)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">⚠️ Var</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">✓ Yok</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Tercih durumu</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Birinci tercih (özellikle kadın hastalar)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton tolere edilemediğinde</td></tr></tbody></table></div>"
+    }
+  ]
+}

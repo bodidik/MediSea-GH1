@@ -1,0 +1,35 @@
+{
+  "title": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "Osilodrostat", "DOC", "Hipokalemi", "Spironolakton", "Mineralokortikoid", "QTc"],
+    "parent": "men1-osilodrostat-yan-etkiler",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Patofizyoloji: DOC Birikiminin Mekanizması",
+      "html": "<p>CYP11B1 enziminin osilodrostat ile bloke edilmesi, kortizol sentezini durdururken negatif geri bildirim (feedback) mekanizmasıyla <strong>ACTH salgısını artırır</strong>. Enzim blokajının hemen gerisinde yer alan <strong>11-deoksikortikosteron (DOC)</strong> birikmeye başlar.</p><p>DOC, mineralokortikoid reseptörlerini (MR) doğrudan ve güçlü biçimde uyarır. Bu durum renal distal tübüllerden sodyum ve su geri emilimini artırırken potasyum ve hidrojen atılımını hızlandırarak üç sistemik sonuç doğurur:</p><ul class=\"mb-4\"><li><strong>Hipertansiyon</strong> (Na⁺ ve su retansiyonu)</li><li><strong>Periferik ödem</strong> (sıvı retansiyonu)</li><li><strong>Derin hipokalemi</strong> (K⁺ atılımı artışı)</li></ul><p class=\"text-sm text-slate-500 dark:text-slate-400\"><em>Not: Bu mekanizma genel endokrinoloji farmakolojisi bilgisi olup klinik uygulamada bağımsız olarak teyit edilmesi önerilir.</em></p>"
+    },
+    {
+      "heading": "1. Agresif Potasyum Replasmanı ve Hedef Potasyum Düzeyi",
+      "html": "<p>Osilodrostat kullanan hastalarda serum potasyumu <strong>çok yakın</strong> takip edilmelidir. Normal sınırların üzerine çıkmak (örn. &gt;3.5 mmol/L) yeterli değildir:</p><p><strong>Hedef K⁺: 4.5–5.0 mmol/L</strong></p><p>Bu hedefin gerekçesi iki katmanlıdır:</p><ul class=\"mb-4\"><li><strong>QTc Sinerjisi:</strong> Osilodrostatın hERG potasyum kanalları üzerindeki doğrudan repolarizasyonu geciktirici etkisi ile ilaca bağlı hipokalemi birleştiğinde aritmi eşiği dramatik olarak düşer. Torsades de Pointes ve ventriküler fibrilasyon (VF) riski artar.</li><li><strong>MEN1 Özelinde Önemi:</strong> Kardiyak repolarizasyon anomalilerini ve ölümcül ventriküler aritmileri kesin olarak önlemek amacıyla potasyum replasmanı <strong>proaktif ve geciktirilmeksizin</strong> başlanmalıdır.</li></ul>"
+    },
+    {
+      "heading": "2. Mineralokortikoid Reseptör Antagonistleri (MRA)",
+      "html": "<p>DOC birikiminin sistemik etkilerini kırmak için spesifik antagonistler tedaviye dahil edilmelidir:</p><ul class=\"mb-4\"><li><p><strong>Spironolakton (Birinci Tercih):</strong> Osilodrostat tedavisi sırasında biriken prekürsörler androjenik yolağı da uyararak kadın hastalarda akne ve hirsutizme yol açar. Spironolakton iki ayrı mekanizmayla çalışır:</p><ul class=\"ml-4 mt-1\"><li>MR antagonisti → hipertansiyon, hipokalemi ve ödemi düzeltir</li><li>Androjen reseptör antagonisti → akne ve hirsutizmi tedavi eder</li></ul><p class=\"mt-1\">Bu çift etkisi nedeniyle, osilodrostat ilişkili mineralokortikoid tablonun yönetiminde <strong>altın standarttır</strong>.</p></li><li><p><strong>Eplerenon (İkinci Tercih):</strong> Spironolakton tolere edilemediğinde (örneğin erkek hastalarda jinekomasti gelişmesi) veya kontrendike olduğunda kullanılır. Seçici (selektif) bir MR antagonistidir; jinekomasti riski taşımaz, androjen reseptörü üzerinde etkisi yoktur.</p></li></ul>"
+    },
+    {
+      "heading": "3. Doz Titrasyonu ile Mineralokortikoid Yükünün Azaltılması",
+      "html": "<p>Akut, hayatı tehdit eden florid Cushing tablosunda 60 mg/gün gibi yüksek doz gerekli olsa da; metabolik tablo stabilize edildikten sonra osilodrostat dozunun kademeli olarak düşürülmesi (örn. 20 mg/gün veya altına) DOC birikim oranını ve dolayısıyla <strong>mineralokortikoid yan etki yükünü belirgin şekilde hafifletir</strong>.</p>"
+    },
+    {
+      "heading": "4. Kardiyak Sürveyans Protokolü",
+      "html": "<p>Tedavi süresince potasyum takibine ek olarak:</p><ul class=\"mb-4\"><li>Periyodik <strong>EKG</strong> ile QTc intervali izlenmelidir.</li><li>QTc <strong>&gt;480 ms</strong> aşılırsa doz azaltılmalı veya ilaç kesilmelidir.</li><li>Sınıf IA ve Sınıf III antiaritmikler gibi QTc uzatan ajanlarla eş zamanlı kullanımdan kaçınılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "Mineralokortikoid Yönetim Algoritması",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sorun</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Mekanizma</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Müdahale</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hipokalemi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">DOC → MR uyarısı → K⁺ atılımı ↑</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">K⁺ replasmanı; hedef 4.5–5.0 mmol/L; spironolakton</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hipertansiyon / ödem</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">DOC → Na⁺/su retansiyonu</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton (veya eplerenon); doz titrasyonu</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hiperandrojenizm (kadın)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">ACTH ↑ → DHEA-S/androstenedion birikimi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton (MR + AR antagonizması)</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Jinekomasti (erkek)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton yan etkisi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Spironolakton → eplerenona geç</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">QTc uzaması</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">hERG blokajı + hipokalemi sinerjisi</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">EKG takibi; K⁺ hedef 4.5–5.0; QTc &gt;480 ms → doz azalt</td></tr></tbody></table></div>"
+    }
+  ]
+}

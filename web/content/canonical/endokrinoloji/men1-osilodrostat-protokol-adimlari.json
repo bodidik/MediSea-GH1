@@ -1,0 +1,35 @@
+{
+  "title": "Osilodrostat Block-and-Replace: Protokol Adımları ve Doz Şeması",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "Osilodrostat", "Block-and-Replace", "Cushing", "Tapering", "Protokol"],
+    "parent": "men1-osilodrostat-block-replace",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Protokolün Endikasyonu ve Klinik Amacı",
+      "html": "<p>MEN1 zemininde gelişen ağır ektopik Cushing sendromunda osilodrostat ile block-and-replace protokolü iki paralel amaca hizmet eder:</p><ul class=\"mb-4\"><li><strong>Hızlı Hormonal Kontrol:</strong> UFC normalin üst sınırının 25 katını aşan ve dirençli hipertansiyon / konjestif kalp yetmezliği gibi ağır komplikasyonların eşlik ettiği tablolarda <strong>acil biyokimyasal remisyon</strong> sağlamak.</li><li><strong>Tanısal Güvenlik:</strong> MEN1'de ektopik ACTH/CRH kaynağını hipofizdeki insidentalomadan ayırt etmek karmaşıktır. Osilodrostat ile sağlanan hızlı blokaj, akut hayati riskleri bertaraf ederek klinisyene <strong>güvenli ve metodik bir tanı süreci</strong> için zaman kazandırır.</li></ul>"
+    },
+    {
+      "heading": "Adım 1: Yüksek Doz Osilodrostat ile Tam Blokaj",
+      "html": "<p><strong>Başlangıç Dozu:</strong> 11β-hidroksilaz enzimini tam olarak kilitlemek amacıyla <strong>60 mg/gün</strong> ile başlanır.</p><p><strong>Biyokimyasal Yanıt:</strong> Bu yüksek başlangıç dozu, <strong>10 gün</strong> gibi kısa sürede UFC düzeylerinin normal sınırlara gerilemesini sağlar. Plazma kortizol düzeyleri <strong>&lt;5 μg/dL</strong> seviyesine inerek endojen kortizol üretiminin tam olarak bloke edildiği konfirme edilir.</p>"
+    },
+    {
+      "heading": "Adım 2: Eş Zamanlı Hidrokortizon Replasmanı",
+      "html": "<p>Adrenal steroidogenezin tam blokajı hastayı hızla akut adrenal yetmezliğe ve potansiyel adrenal krize sürükleyeceğinden, osilodrostat başlanmasıyla <strong>eş zamanlı</strong> olarak proaktif hidrokortizon replasmanı başlanır.</p><p>Bu kombine yaklaşım bir yandan dokuların aşırı kortizol maruziyetini keserken, diğer yandan hastanın fizyolojik kortizol ihtiyacını dışarıdan güvenle karşılayarak <strong>adrenal kriz riskini sıfıra indirir</strong>.</p>"
+    },
+    {
+      "heading": "Adım 3: Kademeli Doz Titrasyonu (Tapering)",
+      "html": "<p>Tanısal süreçlerin tamamlanması ve cerrahi planlamanın yapıldığı bekleme döneminde (örn. preoperatif 3 aylık süreçte), osilodrostat dozu yakın takiple <strong>60 mg/gün → 20 mg/gün</strong>'e kadar kademeli olarak azaltılır.</p><p>Doz düşürülürken hidrokortizon replasmanına kesintisiz devam edilir; bu sayede preoperatif dönemde hastanın metabolik durumu ve <strong>yara yeri iyileşme kapasitesi optimize edilir</strong>.</p>"
+    },
+    {
+      "heading": "Adım 4: Cerrahi Sonrası Yönetim ve Tedavinin Sonlandırılması",
+      "html": "<ul class=\"mb-4\"><li><strong>İlacın Kesilmesi:</strong> Primer ektopik tümörün (örn. timik NET) küratif rezeksiyonunu (total timektomi) takiben osilodrostat tedavisi <strong>aniden sonlandırılır</strong>.</li><li><strong>Aksın Toparlanma Takibi:</strong> Postoperatif erken dönemde kortizolün düşük saptanması cerrahi kürün göstergesidir. Baskılanmış hipofiz-adrenal aksın toparlanma süreci (yaklaşık 3 ay) boyunca <strong>hidrokortizon replasmanına devam edilir</strong>.</li><li><strong>Replasmanın Kesilmesi:</strong> Aksın tamamen toparlandığı <strong>ACTH stimülasyon testi</strong> ile konfirme edildikten sonra hidrokortizon güvenle kesilir.</li></ul>"
+    },
+    {
+      "heading": "Protokol Özeti",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Faz</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Osilodrostat</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Hidrokortizon</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Hedef</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Akut blokaj</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">60 mg/gün</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Eş zamanlı başla</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">UFC normalleşmesi (&lt;10 gün)</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Preoperatif stabilizasyon</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">↓ Kademeli → 20 mg/gün</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Devam</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Metabolik optimizasyon (~3 ay)</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Küratif cerrahi sonrası</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Aniden kes</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Devam (aks toparlanana dek)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Kortizol düşük → cerrahi kür kanıtı</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Aks toparlanması</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">—</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">ACTH stim. testi + → kes</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Tam endojen toparlanma (~3 ay)</td></tr></tbody></table></div>"
+    }
+  ]
+}
