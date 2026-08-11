@@ -102,10 +102,14 @@ export default function TiradsPage() {
     }
   };
 
+  /* multi/note yalnızca bazı kategorilerde tanımlı — union üzerinde güvenli erişim */
+  const isMulti = (cat: typeof CATEGORIES[number]) => "multi" in cat && !!cat.multi;
+  const catNote = (cat: typeof CATEGORIES[number]) => ("note" in cat ? cat.note : undefined);
+
   const catScore = (cat: typeof CATEGORIES[number]): number | null => {
     const ans = answers[cat.id];
     if (ans === undefined) return null;
-    if (cat.multi) {
+    if (isMulti(cat)) {
       const arr = ans as number[];
       return arr.length === 0 ? null : Math.max(...arr);
     }
@@ -119,7 +123,7 @@ export default function TiradsPage() {
   const tr = total !== null ? getTiRads(total) : null;
   const sizeCm = parseLocaleNumber(size);
   const fna = tr && sizeCm > 0 ? getFnaGuidance(tr.level, sizeCm) : null;
-  const params = { scores, size: sizeCm };
+  const params = { scores: scores.join(","), size: sizeCm };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -163,16 +167,16 @@ export default function TiradsPage() {
           <div key={cat.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
             <div className="flex items-start justify-between mb-1">
               <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest">{cat.title}</p>
-              {cat.multi && <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Çoklu seçim</span>}
+              {isMulti(cat) && <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Çoklu seçim</span>}
             </div>
-            {cat.note && <p className="text-[10px] font-bold text-slate-400 mb-3">{cat.note}</p>}
+            {catNote(cat) && <p className="text-[10px] font-bold text-slate-400 mb-3">{catNote(cat)}</p>}
             <div className="space-y-2 mt-3">
               {cat.opts.map(opt => {
-                const isSelected = cat.multi
+                const isSelected = isMulti(cat)
                   ? ((answers[cat.id] as number[] | undefined) ?? []).includes(opt.v)
                   : answers[cat.id] === opt.v;
                 return (
-                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, !!cat.multi)}
+                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
                     className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between gap-3
                       ${isSelected ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                     <span className={`text-sm font-bold leading-snug ${isSelected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</span>

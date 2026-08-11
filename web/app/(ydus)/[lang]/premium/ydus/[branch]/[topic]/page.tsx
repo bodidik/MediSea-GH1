@@ -52,6 +52,7 @@ interface KonuVerisi {
     soru?: number;
     flashcard?: number;
     inci?: number;
+    vaka?: number;
   };
   icerik: IcerikBlok[];
 }

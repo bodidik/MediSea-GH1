@@ -167,7 +167,7 @@ export default function HEARTPage() {
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              HEART skoru ≤ 3 olan hastalarda MACE riski < %2 olup güvenli erken taburculuğu destekler. Yüksek duyarlılıklı troponin assayları ile birlikte kullanımı duyarlılığı artırır. Six et al., Eur Heart J Acute Cardiovasc Care 2013.
+              HEART skoru ≤ 3 olan hastalarda MACE riski &lt; %2 olup güvenli erken taburculuğu destekler. Yüksek duyarlılıklı troponin assayları ile birlikte kullanımı duyarlılığı artırır. Six et al., Eur Heart J Acute Cardiovasc Care 2013.
             </p>
           </div>
         </div>

@@ -72,7 +72,6 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                 borderTop: 'none',
                 borderLeft: 'none',
                 borderRight: 'none',
-                borderBottom: acikMi ? '0.5px solid #d0e4f5' : 'none',
                 textAlign: 'left',
                 transition: 'background 0.15s',
               }}

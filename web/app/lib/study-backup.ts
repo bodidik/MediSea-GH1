@@ -148,7 +148,7 @@ function parseBackup(text: string): { ok: true; b: Backup } | { ok: false; hata:
 /** Hiçbir şey yazmadan, içe aktarmanın sonucunu hesaplar. */
 export function planImport(text: string): ImportPlan {
   const p = parseBackup(text);
-  if (!p.ok) {
+  if (p.ok === false) {
     return { ok: false, hata: p.hata, yeniSayfa: 0, yeniVurgu: 0, yeniNot: 0, ezilecekNot: 0, atlanacakNot: 0 };
   }
   const gelen = p.b;
@@ -200,7 +200,7 @@ export type ImportMode = "merge" | "replace";
 
 export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata?: string } {
   const p = parseBackup(text);
-  if (!p.ok) return { ok: false, hata: p.hata };
+  if (p.ok === false) return { ok: false, hata: p.hata };
   const gelen = p.b;
 
   try {

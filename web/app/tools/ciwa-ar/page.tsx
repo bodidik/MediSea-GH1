@@ -191,7 +191,7 @@ export default function CiwaArPage() {
 
         {/* Sorular */}
         {ITEMS.map(item => {
-          const max = item.max4 ? 4 : 7;
+          const max = "max4" in item && item.max4 ? 4 : 7;
           const cur = answers[item.id as ItemId];
           return (
             <div key={item.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
