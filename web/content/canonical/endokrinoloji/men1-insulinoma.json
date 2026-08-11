@@ -1,0 +1,35 @@
+{
+  "title": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "İnsülinoma", "Hipoglisemi", "Diazoksit", "Pankreatektomi", "GEP-NET", "SACI"],
+    "parent": "men1-sendromu",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "Epidemiyoloji ve Sporadik Formdan Ayıran Özellikler",
+      "html": "<p>MEN1 hastalarının <strong>%10–30'unda</strong> yaşam boyu insülinoma gelişme riski mevcuttur. Sporadik insülinomalar genellikle 40 yaş sonrası tekil (soliter) lezyonlar olarak ortaya çıkarken, MEN1 ilişkili olanlar yaşamın <strong>2.–4. dekadında</strong> (pediatrik/genç erişkin dönem dahil) belirgin biçimde daha erken yaşlarda saptanır. Çocukluk çağındaki MEN1 hastalarının yaklaşık <strong>%10'unda</strong> ilk klinik manifestasyon insülinomaya bağlı hipoglisemidir.</p><div class=\"overflow-x-auto mt-3\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Özellik</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sporadik</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">MEN1</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Başlangıç yaşı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">&gt;40 yaş</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">2.–4. dekad (pediatrik dahil)</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Multifokalite</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">&lt;%10</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">%30–86</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">20 yıllık nüks</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">~%7</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">~%21</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Preoperatif Dönemde Ölümcül Aritmi Riski",
+      "html": "<p>Kontrolsüz hipoglisemi ataklarının en sık atlanan komplikasyonu <strong>ventriküler fibrilasyon (VF) ve ani kardiyak ölümdür</strong>. Mekanizma iki basamaklıdır:</p><ol class=\"mb-4\"><li><strong>Sempatoadrenal Fırtına:</strong> Tekrarlayan hipoglisemi → bilinç dönüşü evresinde abartılı epinefrin deşarjı.</li><li><strong>Potasyum Kayması:</strong> Glukoz replasmanı hücre dışı K⁺'u hücre içine kaydırır → hERG kanal bozulması → QTc uzaması → T dalgası bulgingi, patolojik U dalgası → Torsades de Pointes → VF.</li></ol><p>Yapısal kalp hastalığı <em>olmasa dahi</em> bu tablo gelişebilir. Preoperatif dönemde serum K⁺ hedefi: <strong>4.5–5.0 mmol/L</strong> — hipokalemi (&lt;3.5 mmol/L) agresif biçimde tedavi edilmelidir.</p>"
+    },
+    {
+      "heading": "Medikal Hipoglisemi Yönetimi",
+      "html": "<p><strong>Diazoksit (Birinci Tercih):</strong> Pankreas β-hücrelerinden insülin salgılanmasını doğrudan baskılar; bölünmüş dozlarda 1200 mg/güne kadar kullanılabilir. En öngörülebilir terapötik yanıta sahip ajandır.<br><em>Kısıtlamalar:</em> Hirsutizm (kadınlarda), trombositopeni, belirgin sodyum/su retansiyonu (ödem — yüksek doz kıvrım diüretiği gerektirebilir), bulantı.</p><p class=\"mt-3\"><strong>Somatostatin Analogları — Octreotide / Lanreotide (İkinci Basamak):</strong> Diazoksit direnci veya intoleransında kullanılır. <strong>Paradoksikal hipoglisemi riski</strong> kritiktir: insülin baskılanırken eş zamanlı glukagon ve GH salınımı da inhibe edilir; bu iki yönlü blokaj bazı hastalarda hipoglisemiyi daha da derinleştirebilir. Lanreotide (120 mg SC, 4 haftada bir) formlarında 3. haftadan sonra etki zayıflayabilir; bu evreye denk gelen hipoglisemi atakları aritmi riskini artırır — doz aralıkları titizlikle izlenmelidir.</p><p class=\"mt-3\"><strong>Everolimus (Refrakter Vakalar):</strong> mTOR yolağını kilitleyerek hem hipoglisemiyi kontrol altına alır hem de tümör progresyonunu yavaşlatır.</p><p class=\"mt-3\"><strong>Diyet:</strong> Yüksek glisemik indeksli karbonhidrat, basit şeker ve yüksek yağlı işlenmiş gıdalardan kaçınılmalıdır.</p>"
+    },
+    {
+      "heading": "Lokalizasyon: Görüntüleme ve SACI",
+      "html": "<p>Biyokimyasal tanı (açlık hipoglisemisi + insülin ≥3 µIU/mL + C-peptit ≥0.2 nmol/L) konulduktan sonra aktif odağın bulunması en kritik aşamadır.</p><ul class=\"mb-4\"><li><strong>⁶⁸Ga-DOTATATE PET/CT Sınırı:</strong> Somatostatin reseptör-pozitif inaktif tümörler güçlü sinyal verirken, benign insülinomalar düşük reseptör ekspresyonu nedeniyle silik kalabilir — hekimi yanlış odağa yönlendirebilir.</li><li><strong>⁶⁸Ga-Exendin-4 PET/CT:</strong> İnsülinomalardaki aşırı GLP-1 reseptör ekspresyonunu hedef alan bu yeni nesil görüntüleme, MEN1 zeminindeki aktif odağı saptamada yüksek duyarlılık sağlar.</li><li><strong>Selektif Arteriyel Kalsiyum Stimülasyon Testi (SACI):</strong> Gastroduodenal, splenik ve superior mezenterik arterlere seçici kalsiyum glukonat enjeksiyonu + hepatik venöz insülin örneklemesi. Kalsiyum yalnızca otonom hiperfonksiyonel β hücrelerini uyardığından, aktif insülinomanın pankreatik anatomik bölgesi biyokimyasal olarak haritalandırılır. Cerrahi planlamanın altın standartlarındandır.</li></ul>"
+    },
+    {
+      "heading": "Cerrahi Strateji",
+      "html": "<p><strong>Profilaktik total pankreatektomiden kaçınılmalıdır</strong> — kontrolsüz labil diyabet ve ağır malabsorpsiyon riski nedeniyle kesinlikle önerilmez. Strateji organ koruyucu (parenchyma-sparing) olmalıdır:</p><ul class=\"mb-4\"><li><strong>Pankreas Başı — Enükleasyon:</strong> Ana kanala ve büyük damarlara komşuluk yoksa lokal enükleasyon ilk seçenektir; pankreas parankimi ve duodenal anatomi maksimum korunur.</li><li><strong>Pankreas Gövde/Kuyruk — Distal Subtotal Pankreatektomi:</strong> Gövde ve kuyrukta yerleşen aktif lezyonlarda tercih edilir; gerekirse pankreas başındaki şüpheli odakların lokal enükleasyonu eşlik edebilir.</li><li><strong>Metastatik Hastalık — Debulking:</strong> Diğer GEP-NET'lerin aksine, insülinomalarda ölümcül hipoglisemiyi ve nöroglikopenik komayı önlemek amacıyla metastatik hastalıkta dahi palyatif cerrahi debulking endikedir.</li></ul>"
+    },
+    {
+      "heading": "Postoperatif Uzun Dönem Komplikasyonlar",
+      "html": "<p><strong>1. Ekzokrin Pankreas Yetmezliği:</strong> Steatore, karın krampları, şişkinlik ve demir/B12/folat malabsorpsiyonu. Proaktif <strong>Pankreatik Enzim Replasman Tedavisi (PERT)</strong> ömür boyu uygulanmalıdır.</p><p class=\"mt-3\"><strong>2. Tip 3c Pankreatojenik Diyabet:</strong> Beta hücre rezervinin azalmasına ek olarak glukagon salınım kapasitesi de düştüğünden hastalar hipoglisemiye son derece eğilimlidir. Hedef HbA1c &lt;%7; düşük glisemik indeksli, basit şekerlerin kısıtlandığı beslenme protokolleri uygulanmalıdır.</p>"
+    }
+  ]
+}
