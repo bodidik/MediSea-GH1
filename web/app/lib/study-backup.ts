@@ -118,21 +118,25 @@ export function exportBackup(): { blob: Blob; name: string; ozet: BackupSummary 
 
 /* ── Doğrulama ─────────────────────────────────────────────────────────── */
 
-function parseBackup(text: string): { ok: true; b: Backup } | { ok: false; hata: string } {
+/**
+ * Ayrık birleşim (`{ok:true}|{ok:false}`) yerine "b null ise hata var" şekli:
+ * bu proje `strict: false` ile derleniyor ve strictNullChecks kapalıyken
+ * TypeScript boole-değişmezli ayrımı daraltmıyor — `p.hata` erişimi hata verirdi.
+ */
+function parseBackup(text: string): { b: Backup | null; hata?: string } {
   let raw: unknown;
   try {
     raw = JSON.parse(text);
   } catch {
-    return { ok: false, hata: "Dosya okunamadı — geçerli bir JSON değil." };
+    return { b: null, hata: "Dosya okunamadı — geçerli bir JSON değil." };
   }
   const b = raw as Partial<Backup>;
-  if (!b || typeof b !== "object") return { ok: false, hata: "Dosya boş ya da bozuk." };
-  if (b.app !== "medisea") return { ok: false, hata: "Bu dosya MediSea yedeği değil." };
-  if (b.v !== 1) return { ok: false, hata: `Desteklenmeyen yedek sürümü (${String(b.v)}).` };
+  if (!b || typeof b !== "object") return { b: null, hata: "Dosya boş ya da bozuk." };
+  if (b.app !== "medisea") return { b: null, hata: "Bu dosya MediSea yedeği değil." };
+  if (b.v !== 1) return { b: null, hata: `Desteklenmeyen yedek sürümü (${String(b.v)}).` };
 
   // eksik alanları tolere et — kısmi yedek de işe yarar
   return {
-    ok: true,
     b: {
       app: "medisea",
       v: 1,
@@ -148,7 +152,7 @@ function parseBackup(text: string): { ok: true; b: Backup } | { ok: false; hata:
 /** Hiçbir şey yazmadan, içe aktarmanın sonucunu hesaplar. */
 export function planImport(text: string): ImportPlan {
   const p = parseBackup(text);
-  if (!p.ok) {
+  if (!p.b) {
     return { ok: false, hata: p.hata, yeniSayfa: 0, yeniVurgu: 0, yeniNot: 0, ezilecekNot: 0, atlanacakNot: 0 };
   }
   const gelen = p.b;
@@ -200,7 +204,7 @@ export type ImportMode = "merge" | "replace";
 
 export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata?: string } {
   const p = parseBackup(text);
-  if (!p.ok) return { ok: false, hata: p.hata };
+  if (!p.b) return { ok: false, hata: p.hata };
   const gelen = p.b;
 
   try {
