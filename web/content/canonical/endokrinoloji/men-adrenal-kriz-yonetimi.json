@@ -1,0 +1,43 @@
+{
+  "title": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "Adrenal Kriz", "Addison", "Hidrokortizon", "MEN1", "MEN2", "Adrenal Yetmezlik", "Acil"],
+    "parent": "men-bilateral-adrenalektomi",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "MEN Sendromlarında Adrenal Kriz Riski",
+      "html": "<p>Bilateral adrenalektomi geçirmiş hastalarda kalıcı primer adrenal yetmezlik kaçınılmazdır. Osilodrostat gibi güçlü steroidogenez inhibitörlerinin yüksek doz kullanımı da akut hipokortizolizm riskini beraberinde getirir. Her iki durumda, enfeksiyon, cerrahi stres veya tedavi kesintisi gibi tetikleyici faktörler <strong>yaşamı tehdit eden adrenal krize</strong> (Addisonian kriz) yol açabilir.</p><p class=\"mt-2 text-sm text-slate-500 dark:text-slate-400\"><em>Not: Aşağıdaki klinik bulgular ve acil tedavi protokolü, genel endokrinoloji kılavuzları (Endocrine Society vb.) temel alınarak derlenmiştir; klinik uygulamada bağımsız olarak doğrulanması önerilir.</em></p>"
+    },
+    {
+      "heading": "Klinik Tablo: Adrenal Kriz Belirtileri",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sistem</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Bulgular</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Kardiyovasküler</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Derin hipotansiyon; sıvı ve vazopressöre dirençli hipovolemik şok</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Gastrointestinal</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Şiddetli karın ağrısı (akut batın taklidi), bulantı, inatçı kusma, diyare</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Nöropsikiyatrik</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Ağır halsizlik, letarji, konfüzyon, somnolans; komaya ilerleme</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Ateş</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Tetikleyici enfeksiyona eşlik eden yüksek ateş</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Metabolik</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Hiponatremi, hiperkalemi, hipoglisemi, hafif hiperkalsemi, metabolik asidoz</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Adım 1: Damar Yolu ve Sıvı Resüsitasyonu",
+      "html": "<p>Tanı şüphesi oluştuğu anda vakit kaybetmeden geniş bir damar yolu açılmalıdır:</p><ul class=\"mb-4\"><li><strong>%0.9 NaCl (Serum Fizyolojik):</strong> İlk 1 saatte 1–2 litre hızlı infüzyon; ilk 24 saatte toplamda 3–4 litre (hemodinamik duruma, kardiyak rezerve ve idrar çıkışına göre ayarlanarak).</li><li><strong>Eşlik Eden Hipoglisemi:</strong> Eğer hipoglisemi varsa veya şüpheleniliyorsa, infüzyon sıvısı %5–10 Dekstroz içeren izotonik solüsyonlarla desteklenmelidir.</li></ul>"
+    },
+    {
+      "heading": "Adım 2: Acil Glukokortikoid Tedavisi",
+      "html": "<p><strong>Laboratuvar sonuçları beklenmeden, klinik şüphe anında tedavi başlanmalıdır.</strong></p><ol class=\"mb-4\"><li><strong>100 mg Hidrokortizon IV bolus</strong> — hemen uygula.</li><li>Ardından: <strong>50 mg IV/IM — her 6 saatte bir</strong> (veya 200 mg/gün kesintisiz infüzyon).</li><li>Klinik ve hemodinamik stabilizasyon sonrası (genellikle 24–48 saat): doz kademeli azaltılarak <strong>oral idame dozuna</strong> (15–25 mg/gün bölünmüş dozlarda) geçilir.</li></ol>"
+    },
+    {
+      "heading": "Adım 3: Mineralokortikoid Replasmanı",
+      "html": "<p>Krizin akut fazında mineralokortikoid (fludrokortizon) eklenmesine <strong>gerek yoktur</strong>. Günde &gt;50 mg dozunda uygulanan hidrokortizonun kendisi mineralokortikoid reseptörlerini maksimum düzeyde uyarır.</p><p>Hidrokortizon dozu &lt;50 mg/güne düşürüldüğünde, <strong>primer adrenal yetmezliği</strong> olan hastalarda (adrenalektomi sonrası vb.) <strong>0.05–0.1 mg/gün fludrokortizon</strong> oral olarak tedaviye eklenir.</p>"
+    },
+    {
+      "heading": "Adım 4: Tetikleyici Faktörlerin Araştırılması ve Tedavisi",
+      "html": "<p>En sık tetikleyiciler:</p><ul class=\"mb-4\"><li>Enfeksiyonlar (gastroenterit, pnömoni, üriner enfeksiyon),</li><li>Cerrahi stres ve travma,</li><li>Hastanın replasman tedavisini aniden kesmesi.</li></ul><p>Şüpheli enfeksiyon durumunda, kültürler alındıktan hemen sonra <strong>ampirik geniş spektrumlu IV antibiyotik tedavisi</strong> vakit kaybetmeden başlanmalıdır.</p>"
+    },
+    {
+      "heading": "Adım 5: Elektrolit ve Metabolik Sürveyans",
+      "html": "<p>Serum sodyumu, potasyumu ve kan şekeri düzeyleri stabilize olana kadar yakın takip edilmelidir. Agresif sıvı ve steroid replasmanıyla <strong>hiponatremi ve hiperkalemi genellikle hızla düzelir</strong>; ek potasyum düşürücü tedaviye genellikle ihtiyaç duyulmaz.</p>"
+    },
+    {
+      "heading": "Acil Müdahale Algoritması",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Zaman</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Müdahale</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Hemen</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">IV yol aç → 100 mg hidrokortizon IV bolus → SF infüzyon başla</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">İlk 1 saat</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">1–2 litre SF; hipoglisemi varsa dekstroz ekle; kültürler al → AB başla</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">0–24 saat</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">50 mg IV/IM hidrokortizon her 6 saatte bir; toplamda 3–4 litre sıvı; elektrolit takibi</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">24–48 saat</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Klinik stabilizasyon → doz kademeli azalt → oral idameye geç</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">İdame (primer adrenal yetmezlik)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">HC &lt;50 mg/gün olduğunda fludrokortizon 0.05–0.1 mg/gün ekle</td></tr></tbody></table></div>"
+    }
+  ]
+}
