@@ -1,0 +1,35 @@
+{
+  "title": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Akromegali", "Somatotropinoma", "GHoma", "IGF-1", "Somatostatin", "Hipofiz", "PitNET"],
+    "parent": "men1-sendromu",
+    "order": 9
+  },
+  "sections": [
+    {
+      "heading": "Epidemiyoloji ve Klinik Önem",
+      "html": "<p>MEN1 hastalarının <strong>%30–46'sında</strong> yaşam boyu hipofiz tümörü gelişir. Fonksiyonel tümörler içinde prolaktinomalar <strong>%54–62.5</strong> ile en sık iken, GH salgılayan somatotropinomalar (GHoma) <strong>%8–8.8</strong> oranında görülür — daha nadir ama belirgin biçimde daha agresif bir seyir izler.</p><p class=\"mt-2\">Sporadik somatotropinomalara kıyasla MEN1 ilişkili GHoma'lar anlamlı derecede <strong>daha büyük</strong> (sıklıkla makroadenom) ve çevre dokulara (kavernöz sinüs vb.) <strong>daha fazla invazyon</strong> gösteren tümörlerdir.</p>"
+    },
+    {
+      "heading": "Kemik Sağlığı Üzerindeki Sinerjik Negatif Etki",
+      "html": "<p>MEN1'de primer hiperparatiroidi (MPHPT) kemik yıkımının birincil nedenidir. Eşlik eden aktif akromegali ise bu tabloya ek metabolik hasar katmanları ekler:</p><ul class=\"mb-4\"><li>GH/IGF-1 fazlalığına bağlı sekonder diyabet ve insülin direnci,</li><li>Olası eşzamanlı Cushing sendromu veya hipogonadizm,</li><li>Doğrudan kortikotrabecüler kemik mikromimarisinin bozulması.</li></ul><p>Bu faktörler kemik mineral yoğunluğunu ve kırık eşiğini sinerjik olarak olumsuz etkiler; DXA ve Trabeküler Kemik Skoru (TBS) takibi bu nedenle özellikle önemlidir.</p>"
+    },
+    {
+      "heading": "Prolaktinomadan Ayırım: &quot;Plurihormonal Tümör&quot; Tuzağı",
+      "html": "<p>MEN1 ilişkili hipofiz tümörlerinin <strong>%4–11'i plurihormonaldir</strong>; en sık kombinasyon PRL + GH eş zamanlı hipersekresyonudur. Bu durum kritik bir tanı tuzağı yaratır:</p><ul class=\"mb-4\"><li>Plurihormonal PRL/GH tümörleri neredeyse her zaman <strong>makroadenom</strong> karakterindedir ve daha invaziv seyreder.</li><li>Yalnızca hiperprolaktinemiye odaklanan değerlendirmede başlanan <strong>dopamin agonisti</strong> (kabergolin, bromokriptin), prolaktin düzeylerini başarıyla normalleştirse bile GH/IGF-1 düzeylerini kontrol edemez.</li></ul><p class=\"font-semibold\">Bu nedenle MEN1 sürveyansında her taramada Prolaktin ile birlikte serum IGF-1 düzeyi de rutin olarak ölçülmelidir.</p>"
+    },
+    {
+      "heading": "Tedavi: Cerrahi, SSA ve Multimodal Yaklaşım",
+      "html": "<p><strong>Birincil Seçenek — Transsfenoidal Cerrahi:</strong> Klinik aktif akromegali veya optik kiyazma basısı olan makroadenomlarda cerrahi rezeksiyon endikedir. MEN1'de postoperatif GHoma nüks oranı bazı serilerde <strong>%14.3</strong> olarak bildirilmiştir.</p><p class=\"mt-3\"><strong>Medikal Tedavi — Somatostatin Analogları (SSA):</strong> Cerrahiden fayda görmeyen veya rezidüel kitlesi bulunan hastalarda octreotide veya lanreotide birinci basamak medikal seçenektir. SSA'lar somatostatin reseptörleri aracılığıyla hem GH/IGF-1 salınımını baskılar hem de tümör boyutunda stabilizasyon veya küçülme sağlar.</p><p class=\"mt-3\"><strong>Modern Klinik Sonuçlar:</strong> Tarihsel olarak MEN1'li hipofiz hastalarında normalleşme oranlarının sporadik vakalara kıyasla düşük olduğu bildirilse de, güncel Hollanda MEN1 Grubu (DMSG) verilerinde multimodal tedavi alan somatotropinomalı hastaların <strong>%100'ünde</strong> (8/8) tam hormonal kontrol başarılmıştır.</p>"
+    },
+    {
+      "heading": "SSA Tedavisinde Nutrisyonel ve Metabolik Yönetim",
+      "html": "<p><strong>Postprandiyal Hiperglisemi:</strong> SSA'lar GH'ı baskılarken eş zamanlı pankreatik insülin salınımını da inhibe eder; ani glisemik dalgalanmalar ve postprandiyal hiperglisemi riski doğar. Yüksek şekerli ve yüksek glisemik indeksli karbonhidratlı öğünlerden kaçınılmalıdır.</p><p class=\"mt-2\"><strong>Safra Çamuru ve Steatore:</strong> SSA'ların safra asidi akışını ve bağırsak motilitesini yavaşlatması sindirim anomalilerine neden olur. Malabsorpsiyonu ve steoreyi önlemek için yüksek yağlı işlenmiş gıdalar diyetten çıkarılmalıdır.</p>"
+    },
+    {
+      "heading": "Biyokimyasal ve Radyolojik Sürveyans Protokolü",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Test</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sıklık</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Not</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Serum Prolaktin + IGF-1</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Yıllık</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">İkisi birlikte, ayrı ayrı değil</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Dinamik Hipofiz MRG (kontrastlı)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Her 3 yılda bir</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Biyokimya normal olsa dahi</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Tarama başlangıç yaşı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">10 yaş (güncel risk-adapte)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Thakker 2012'de 5 yaş; 2025 revizyonu 10 yaşa çekti</td></tr></tbody></table></div>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-001",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Osilodrostat", "DOC", "Spironolakton", "QTc", "Mineralokortikoid"],
+  "question": {
+    "text": "MEN1 zemininde ektopik Cushing sendromu nedeniyle osilodrostat 60 mg/gün başlanan bir hastada 3. günde K⁺: 2.9 mmol/L, KB: 175/105 mmHg, QTc: 468 ms saptanıyor. Tedaviye spironolakton ekleniyor.\n\nSpironolaktonun eklenmesinin birincil patofizyolojik gerekçeleri aşağıdakilerin hangisinde doğru ve eksiksiz olarak verilmiştir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "DOC birikiminin MR uyarmasıyla gelişen K⁺ atılımını engellemek ve hERG blokajıyla sinerjize olan hipokalemiyi düzeltmek" },
+    { "id": "B", "label": "Kortizolü normalleştirerek CYP11B1 üzerindeki osilodrostat blokajını kaldırmak" },
+    { "id": "C", "label": "Aldosteron salgısını doğrudan bloke ederek hipertansiyonu kontrol altına almak" },
+    { "id": "D", "label": "Osilodrostatın hERG blokajını reseptör düzeyinde antagonize etmek" },
+    { "id": "E", "label": "ACTH salgısını azaltarak DOC birikiminin önüne geçmek" }
+  ],
+  "answer": "A",
+  "explanation": {
+    "intro": "Osilodrostat CYP11B1 blokajı → ACTH ↑ → DOC birikimi zincirini ve bunun MR ile hERG üzerindeki çift tehlikesini soran bir mekanizma sorusudur.",
+    "content": "<p><strong>DOC birikimi:</strong> Osilodrostat CYP11B1'i bloke ettiğinde kortizol düşer, negatif geri bildirim kalkar, ACTH artar ve blokaj gerisinde <strong>11-deoksikortikosteron (DOC)</strong> birikir. DOC güçlü bir mineralokortikoid reseptör agonistidir; renal distal tübülden K⁺ atılımını artırır, Na⁺/su tutarak hipertansiyon + hipokalemi üçlüsünü oluşturur. Spironolakton bu etkiyi <strong>MR antagonizması</strong> ile kırar.</p><p><strong>Aritmi riski:</strong> Osilodrostat kardiyak <strong>hERG</strong> kanallarını doğrudan inhibe ederek QTc'yi uzatır. DOC kaynaklı hipokalemi bu etkiyle sinerjize olunca torsades de pointes / VF riski dramatik artar. Spironolakton K⁺ tutarak bu sinerjistik riski azaltır. MEN1 hastalarında K⁺ hedefi <strong>4.5–5.0 mmol/L</strong>'dir.</p><ul><li><strong>B:</strong> Spironolakton osilodrostat blokajını kaldırmaz.</li><li><strong>C:</strong> Osilodrostat sürecindeki temel sorun DOC'tur, aldosteron değil.</li><li><strong>D:</strong> Spironolakton hERG antagonisti değildir; K⁺ düzeltmesi aracılığıyla dolaylı koruma sağlar.</li><li><strong>E:</strong> Spironolakton ACTH'ı etkilemez.</li></ul>"
+  }
+}

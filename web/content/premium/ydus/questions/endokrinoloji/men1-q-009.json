@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-009",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Gastrinoma", "ZES", "Paratiroidektomi", "Kalsiyum-Gastrin Aksı", "Whipple"],
+  "question": {
+    "text": "MEN1 tanılı 46 yaşında erkek hastada yüksek doz PPI kullanımına karşın persistan ülser hastalığı mevcut. Açlık gastrin düzeyi 1240 pg/mL; sekretin uyarım testi pozitif; iyonize Ca²⁺ 1.48 mmol/L, PTH 198 pg/mL. Görüntülemede duodenal bölgede multifokal küçük lezyonlar izleniyor.\n\nBu hasta için en öncelikli cerrahi strateji hangisidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Whipple (pankreatikoduodenektomi) uygulanmalıdır; duodenal gastrinoma tedavisinin tek küratif seçeneğidir." },
+    { "id": "B", "label": "Önce paratiroidektomi yapılarak hiperkalsemi düzeltilmeli; gastrin düzeyleri bu işlemle dramatik düşüş gösterebilir." },
+    { "id": "C", "label": "Gastrinoma önce rezeke edilmeli; ardından paratiroid değerlendirmesi yapılmalıdır." },
+    { "id": "D", "label": "PPI dozu artırılmalı; MEN1 gastrinomalarında cerrahi biyokimyasal kür sağlayamaz." },
+    { "id": "E", "label": "Somatostatin analogu başlanarak gastrin supresyonu sağlanmalı; cerrahi ertelenmelidir." }
+  ],
+  "answer": "B",
+  "explanation": {
+    "intro": "MEN1 gastrinoma yönetiminde kalsiyum-gastrin aksını ve cerrahi öncelik sıralamasını sorgulayan ileri düzey soru.",
+    "content": "<p>MEN1 gastrinomalarında <strong>hiperkalsemi gastrin salgısını doğrudan uyarır</strong>. PTH fazlalığı → hiperkalsemi → gastrin hücreleri üzerinde sekretogog etki → serum gastrin yükselişi. Bu kalsiyum-gastrin aksı nedeniyle MEN1'de ZES tablosunun şiddetinin bir kısmı doğrudan hiperparatiroidizmden kaynaklanır.</p><p>Paratiroidektominin ardından gastrin düzeyleri belirgin biçimde düşebilir (%50–70 olguda). Bu nedenle <strong>MEN1 gastrinomalarında önce paratiroidektomi, ardından gastrinoma cerrahisinin yeniden değerlendirilmesi</strong> standart yaklaşımdır (GTE 2020, ENETS 2023).</p><ul><li><strong>A:</strong> MEN1 gastrinomalarında Whipple kontroversiyel ve tartışmalıdır; multifodal yapı ve kaçınılmaz morbidite nedeniyle çoğu merkezde tercih edilmez.</li><li><strong>C:</strong> Gastrinomayı önce rezeke etmek kalsiyum-gastrin aksını görmezden gelir; yanlıştır.</li><li><strong>D:</strong> Yüksek doz PPI asit kontrolü için değerlidir ancak cerrahi yönetimin sırasını belirlemez.</li><li><strong>E:</strong> Somatostatin analogu ZES'te asit kontrolüne katkı sunabilir ancak önce paratiroidektomi kuralını değiştirmez.</li></ul>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-004",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Meme Kanseri", "Tarama", "EJE 2025", "GTE", "Mamografi"],
+  "question": {
+    "text": "MEN1 mutasyon taşıyıcısı 42 yaşında asemptomatik kadın hasta rutin sürveyansa geliyor. Son mamografisi 3 yıl önce normal raporlanmış.\n\nGüncel 2025 uluslararası MEN1 Sürveyans Kılavuzlarına göre bu hastanın meme kanseri taraması için doğru yaklaşım hangisidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "50 yaşına kadar tarama gerekmez; genel popülasyon tarama programı yeterlidir." },
+    { "id": "B", "label": "Her yıl mamografi çekilmelidir; 2 yıllık aralık yetersizdir." },
+    { "id": "C", "label": "Mamografi yerine yalnızca meme MRG kullanılmalıdır; mamografinin kümülatif radyasyon yükü MEN1'de kontrendikasyon oluşturur." },
+    { "id": "D", "label": "Her 2 yılda bir mamografi planlanmalıdır; dens meme veya ailesel öyküde ek ultrason veya MRG eklenebilir." },
+    { "id": "E", "label": "BRCA taşıyıcılarındaki gibi profilaktik bilateral mastektomi önerilmelidir." }
+  ],
+  "answer": "D",
+  "explanation": {
+    "intro": "MEN1 kadın taşıyıcılarında meme kanseri tarama protokolünü ve güncel kılavuz değişimini sorgulayan bir sürveyans sorusu.",
+    "content": "<p>Kadın MEN1 taşıyıcılarında meme kanseri riski genel popülasyona kıyasla <strong>2–3 kat artmış</strong>tır; tümörler belirgin biçimde daha erken yaşlarda ortaya çıkar. Fransız GTE (Goudet 2024) + Marburg protokolü ve <strong>EJE 2025 MEN1 Sürveyans Kılavuzu</strong> 40 yaşından itibaren her 2 yılda bir mamografiyi zorunlu endikasyon olarak kabul etmiştir.</p><p>Dens meme veya ailesel kalıtsal meme öyküsü varlığında bireysel risk analizine göre meme ultrasonografisi veya meme MRG eklenmesi önerilir. Bu tarama programının uzun dönem mortalite üzerindeki net etkinliğini kanıtlayan prospektif veriler henüz sınırlıdır — paylaşılan karar verme esastır.</p><ul><li><strong>A:</strong> Yanlış; tarama 40 yaşından başlar.</li><li><strong>B:</strong> Kümülatif radyasyon yükü nedeniyle yıllık mamografi tercih edilmez; 2 yıllık aralık standarttır.</li><li><strong>C:</strong> Mamografi kontrendike değildir; radyasyon yükü dikkate alınır ancak protokolden çıkarılmaz.</li><li><strong>E:</strong> MEN1 riski BRCA riski ile karşılaştırılamaz; profilaktik mastektomi önerilmez.</li></ul>"
+  }
+}

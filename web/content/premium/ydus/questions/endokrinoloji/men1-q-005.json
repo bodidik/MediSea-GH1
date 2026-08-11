@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-005",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Meme Kanseri", "LOH", "Menin", "BRCA", "Two-Hit", "Epigenetik"],
+  "question": {
+    "text": "MEN1 hastasından alınan meme kanseri doku örneğinde 11q13 lokusunda heterozigotluk kaybı (LOH) saptanmış ve menin ekspresyonu tamamen ortadan kalkmıştır.\n\nMenin kaybının meme karsinogenezini nasıl tetiklediğine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Menin-MLL kompleksinin bozulması p21 ve p27 ekspresyonunu düşürerek G1/S geçişini kolaylaştırır." },
+    { "id": "B", "label": "Menin, ER-α ile fiziksel etkileşime girerek östrojen bağımlı proliferatif gen transkripsiyonunu kontrol altında tutar." },
+    { "id": "C", "label": "Menin kaybı BRCA1/2 mutasyonlarıyla aynı patogenetik yolağı aktive ederek karsinogenezi başlatır." },
+    { "id": "D", "label": "Menin eksikliği tümör supresör genlerin promoter bölgelerindeki H3K4 trimetilasyon kalıplarını bozarak bu genleri susturur." },
+    { "id": "E", "label": "İki darbeli (two-hit) mekanizma geçerlidir; germline mutasyona somatik vahşi tip allel kaybı eşlik eder." }
+  ],
+  "answer": "C",
+  "explanation": {
+    "intro": "MEN1 meme kanserinin BRCA'dan bağımsız patogenezini ve menin'in epigenetik tümör supresör rolünü sorgulayan bir mekanizma sorusu.",
+    "content": "<p>MEN1 zeminindeki meme kanseri, BRCA1/2 yolağından <strong>tamamen bağımsız</strong> bir patogenetik mekanizmaya sahiptir. Mevcut klinik verilerde MEN1 ile BRCA1/2 arasında doğrudan bir ilişki gösterilmemiştir. MEN1 ilişkili meme karsinogenezinin birincil sürücüsü menin'in tümör supresör fonksiyonunun yitirilmesidir — bu süreç BRCA'nın DNA tamir yolağından farklı, epigenetik ve transkripsiyonel bir düzlem üzerinde işler.</p><ul><li><strong>A:</strong> Doğru — menin MLL aracılığıyla p21/p27 transkripsiyonunu destekler; menin kaybında hücre döngüsü freni kalkar.</li><li><strong>B:</strong> Doğru — menin ER-α ile fiziksel etkileşime girer, proliferatif gen transkripsiyonunu baskılar.</li><li><strong>D:</strong> Doğru — menin H3K4me3'ü katalize eden MLL kompleksinin parçasıdır; kaybında tümör supresör gen promoterleri susturulur.</li><li><strong>E:</strong> Doğru — Knudson two-hit hipoteziyle uyumlu LOH, MEN1 meme kanserlerinde gösterilmiştir.</li></ul><div class='bg-blue-50 p-3 rounded mt-2 text-xs'><strong>💡 Pratik Not:</strong> Sporadik pNET tanılı hastaların ~%17'sinde germline BRCA2/CHEK2/MEN1 mutasyonları saptanabilir — bu BRCA ve MEN1'in aynı karsinogenetik yolağı paylaştığı anlamına gelmez.</div>"
+  }
+}

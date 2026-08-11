@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-010",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "NF-pNET", "2cm Eşiği", "Cerrahi", "Aktif İzlem", "Ki-67", "FDG-PET"],
+  "question": {
+    "text": "MEN1 tanılı 39 yaşında erkek hastada rutin MR'da pankreasta 1.6 cm, 0.8 cm ve 0.4 cm çaplı üç ayrı NF-pNET odağı saptanıyor. Ki-67 biopsi yapılabilecek konumdaki en büyük lezyondan alınıyor; %3 sonuçlanıyor. FDG-PET/BT negatif. Hasta asemptomatik.\n\nGüncel kanıta dayalı kılavuzlara göre yönetim hangisi olmalıdır?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "1.6 cm lezyon 2 cm eşiğine yakın olduğundan tüm üç odak için hemen pankreas rezeksiyonu planlanmalıdır." },
+    { "id": "B", "label": "Tüm lezyonlar 2 cm altında, Ki-67 ≤%5, FDG-PET negatif; aktif izlem başlanmalı, ilk 12 ayda 6 aylık aralarla MR ile izlenmelidir." },
+    { "id": "C", "label": "Pankreas rezeksiyonu kontrendikedir; tüm MEN1 NF-pNET'ler yalnızca medikal olarak tedavi edilmelidir." },
+    { "id": "D", "label": "Ki-67 %3 yüksek risklidir; 1.6 cm eşik altında olsa bile hemen cerrahi uygulanmalıdır." },
+    { "id": "E", "label": "FDG-PET negatif olduğundan NF-pNET ekarte edilmiştir; görüntüleme artefaktı olarak değerlendirilebilir." }
+  ],
+  "answer": "B",
+  "explanation": {
+    "intro": "MEN1 NF-pNET yönetiminde 2 cm eşiğini, risk sınıflamasını ve aktif izlem protokolünü sorgulayan kanıta dayalı soru.",
+    "content": "<p>NF-pNET yönetiminde <strong>2 cm eşiği</strong> üç retrospektif kohorta (DutchMEN1 Study Group, Partelli ve ark., GTE meta-analizi) dayanan en güçlü kanıt düzeyini temsil etmektedir. Tüm lezyonlar &lt;2 cm, Ki-67 ≤%10, FDG-PET negatif ve duktus obstrüksiyonu yok → hasta <strong>düşük-orta risk</strong> grubundadır; aktif izlem uygulanır.</p><p><strong>Aktif izlem protokolü:</strong></p><ul><li>Pankreas MR önce 6 ayda bir (ilk yıl)</li><li>Stabil seyirde 1–2 yıla seyrekleştir</li><li>Büyüme hızı &gt;5 mm/yıl veya &gt;%20/yıl → cerrahiye yeniden değerlendirme</li></ul><p>Cerrahi endikasyon: ≥2 cm, Ki-67 &gt;%10, FDG-PET pozitif, duktus obstrüksiyonu veya hızlı büyüme. Bu hastada hiçbiri yoktur.</p><ul><li><strong>A:</strong> Lezyonlar 2 cm altında; 1.6 cm lezyon eşiği geçmemiştir.</li><li><strong>C:</strong> Cerrahi endikasyonu oluştuğunda pankreas rezeksiyonu uygulanır; kontrendike değildir.</li><li><strong>D:</strong> Ki-67 %3, G1 tümörüdür; yüksek risk değildir (Ki-67 &gt;%10 = yüksek risk).</li><li><strong>E:</strong> FDG-PET, NF-pNET için yüksek sensitivitede değildir; negatif FDG-PET tanıyı dışlamaz.</li></ul>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-007",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Menin", "MLL", "Lösemi", "MLL-LEDGF", "Onkojen", "Menin İnhibitörü"],
+  "question": {
+    "text": "Menin-MLL inhibitörleri ile tedavi edilen MLL-r akut lösemi hastalarının bir kısmında tedaviye direnç gelişiyor ve genetik incelemede somatik MEN1 mutasyonları saptanıyor.\n\nBu direnç mekanizması menin'in lösemideki rolü açısından aşağıdakilerden hangisiyle en iyi açıklanır?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Menin germline mutasyonları lösemi hücrelerine aktarılarak onkojenik MLL kompleksini bozar ve hücreler apoptozdan korunur." },
+    { "id": "B", "label": "Somatik MEN1 mutasyonları, menin-inhibitörün bağlanma cebini bozerek inhibitörün menin-MLL köprüsünü bozmasını engeller." },
+    { "id": "C", "label": "Menin, lösemi hücrelerinde tümör supresör görevi üstlenir; MEN1 mutasyonu onkojenik MLL kompleksini zaten bozmaktadır." },
+    { "id": "D", "label": "MLL-r lösemide menin inhibisyonu diferansiasyon blokunu kaldırır; MEN1 mutasyonu aynı bloğu farklı bir mekanizmayla yeniden oluşturur." },
+    { "id": "E", "label": "Somatik MEN1 mutasyonları menin-MLL etkileşimini güçlendirir; inhibitör bu artmış afiniteyi geçemez." }
+  ],
+  "answer": "B",
+  "explanation": {
+    "intro": "Menin'in doku bağlamına göre değişen onkogen/tümör supresör ikili karakterini ve menin inhibitörü direncinin moleküler zeminini sorgulayan translasyonel onkoloji sorusu.",
+    "content": "<p>Menin, endokrin dokularda klasik <strong>tümör supresör</strong> işlev görürken hematopoietik dokularda tam tersine <strong>onkojenik</strong> bir rol üstlenir. MLL-r lösemide menin, MLL füzyon proteinini kromatin üzerine çapalar (<strong>LEDGF köprüsü</strong>) ve diferansiasyon blokunu sürdürür. Menin-MLL inhibitörleri bu köprüyü kopararak diferansiasyonu yeniden başlatmayı hedefler.</p><p>Direnç mekanizması: tedavi baskısı altında hücreler, menin proteininin <strong>inhibitör bağlanma cebini değiştiren somatik MEN1 mutasyonları</strong> kazanır. Bu mutasyonlar inhibitörün menin'e bağlanmasını engeller; menin-MLL köprüsü tekrar kurulur ve diferansiasyon bloku geri döner.</p><ul><li><strong>A:</strong> Germline mutasyonlar lösemi hücrelerine aktarılmaz; somatik edinimden söz edilmektedir.</li><li><strong>C:</strong> Lösemide menin onkogeniktir; tümör supresör değildir.</li><li><strong>D:</strong> Kısmen doğru yaklaşım ama direnç mekanizması farklı yolakla değil bağlanma bölgesindeki mutasyonla oluşur.</li><li><strong>E:</strong> Somatik MEN1 mutasyonları etkileşimi güçlendirmez; inhibitörün bağlanmasını engeller.</li></ul>"
+  }
+}

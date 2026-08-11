@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-002",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "MEN2", "Feokromositoma", "Bilateral Adrenalektomi", "Cerrahi Öncelik", "PHPT"],
+  "question": {
+    "text": "MEN2A tanılı bir hastanın aile taramasında MEN1 mutasyon taşıyıcısı olan 38 yaşındaki kız kardeşinde biyokimyasal feokromositoma saptanıyor. Hastada aynı zamanda iyonize kalsiyum 1.42 mmol/L ve PTH 148 pg/mL ile primer hiperparatiroidi mevcuttur.\n\nEş zamanlı feokromositoma ve primer hiperparatiroidide cerrahi öncelik nasıl belirlenmelidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Hiperkalsemi hayatı tehdit ettiğinden önce paratiroidektomi yapılmalı, ardından adrenalektomi planlanmalıdır." },
+    { "id": "B", "label": "Feokromositoma intraoperatif hipertansif kriz riski nedeniyle önce adrenalektomi ile tedavi edilmeli; paratiroidektomi sonraya bırakılmalıdır." },
+    { "id": "C", "label": "Her iki ameliyat eş zamanlı tek seansta yapılmalıdır; ayrı ayrı cerrahi her zaman kontrendikedir." },
+    { "id": "D", "label": "Feokromositoma asemptomatik ise paratiroidektomi önce yapılabilir." },
+    { "id": "E", "label": "Her iki patoloji de radyofrekans ablasyon ile tedavi edilmelidir; açık cerrahi kontrendikedir." }
+  ],
+  "answer": "B",
+  "explanation": {
+    "intro": "MEN sendromlarında feokromositoma ve başka endokrin tümörün birlikte bulunduğu durumlarda cerrahi sıralama kuralını soran klasik bir öncelik sorusudur.",
+    "content": "<p>Feokromositoma medikal olarak hazırlanmadan (alfa blokaj) herhangi bir anestezi veya cerrahi girişim, <strong>intraoperatif ölümcül hipertansif kriz</strong> riskini taşır. Bu kural, hipertansif tablonun MTC cerrahisi veya paratiroidektomi sırasında tetiklenmesini önlemek amacıyla tüm MEN sendromlarında geçerlidir.</p><p>Bu nedenle boyun cerrahisinden önce mutlaka adrenalektomi tamamlanmalıdır. Perioperatif alfa blokaj (fenoksibenzamin veya doksazosin) en az 7–10 gün öncesinden başlanmalı; beta blokaj yalnızca alfa blokajdan sonra eklenmelidir.</p><ul><li><strong>A:</strong> Hiperkalseminin şiddeti burada önceliği değiştirmez; anestezi riski feokromositomadan kaynaklanır.</li><li><strong>C:</strong> Feokromositoma cerrahisi her koşulda önce tamamlanmalıdır.</li><li><strong>D:</strong> Asemptomatik feokromositoma da intraoperatif kriz tetikleyebilir; sıralama değişmez.</li></ul>"
+  }
+}

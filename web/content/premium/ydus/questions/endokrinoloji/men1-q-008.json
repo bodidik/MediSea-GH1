@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-008",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "İnsülinoma", "68Ga-Exendin-4", "SACI", "Lokalizasyon", "68Ga-DOTATATE"],
+  "question": {
+    "text": "MEN1 tanılı 31 yaşında kadın hasta açlık hipoglisemisi nedeniyle araştırılıyor. Süpervize açlık testi pozitif; C-peptid ve insülin uygunsuz yüksek. Endoskopik ultrason (EUS) birden fazla pankreas lezyonu saptıyor. 68Ga-DOTATATE PET/BT pankreas gövdesinde 1.8 cm tek odak gösteriyor; diğer lezyonlar görüntülenemiyor.\n\nCerrahi öncesinde doğru fonksiyonel lokalizasyon için sonraki en uygun adım hangisidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "68Ga-DOTATATE PET/BT tek odak tanımladığından cerrahi bu odağa yönelik planlanmalıdır." },
+    { "id": "B", "label": "MEN1 insülinomalarında tek odak cerrahisi yeterlidir; multifokalitenin klinik önemi yoktur." },
+    { "id": "C", "label": "68Ga-Exendin-4 PET/BT çekilmeli; insülinomalar GLP-1 reseptörünü aşırı eksprese ettiğinden somatostatin reseptör görüntülemesi yetersiz kalabilir." },
+    { "id": "D", "label": "Portal ven örneklemesi (PVS) standart bir prosedür olup tüm MEN1 insülinoma vakalarında tercih edilmelidir." },
+    { "id": "E", "label": "Kalsiyum uyarımlı hepatik venöz insülin örneklemesi (SACI) gereksizdir; EUS yeterli lokalizasyonu sağlamıştır." }
+  ],
+  "answer": "C",
+  "explanation": {
+    "intro": "MEN1 insülinomalarında somatostatin reseptör sintigrafisinin tuzağını ve alternatif fonksiyonel görüntülemenin yerini sorgulayan ileri düzey lokalizasyon sorusu.",
+    "content": "<p>İnsülinomalar diğer pNET'lerin aksine <strong>somatostatin reseptör-2 (SSTR2) ekspresyonunu düşük</strong> düzeyde taşır. Bu nedenle 68Ga-DOTATATE PET/BT insülinomalarda <strong>yetersiz duyarlılık</strong> gösterir ve multifodal lezyonların bir kısmını görüntüleyemez — senaryodaki tek odak tuzağı tam olarak budur.</p><p><strong>68Ga-Exendin-4 PET/BT</strong>; insülinomalar GLP-1 reseptörünü (GLP-1R) aşırı eksprese ettiğinden bu hastalığa özgü fonksiyonel görüntüleme olarak üstün duyarlılık sağlar. MEN1 zeminindeki multifodal insülinomada hipoglisemiden sorumlu lezyonu saptamak için tercih edilmesi gereken görüntüleme yöntemidir.</p><p>EUS sonucu yeterli olmadığında <strong>SACI (kalsiyum uyarımlı arteriyal enjeksiyon + hepatik venöz insülin örneklemesi)</strong> de bölgesel lokalizasyon için güçlü bir alternatif seçenektir.</p><ul><li><strong>A:</strong> 68Ga-DOTATATE tek odak göstermesi, diğer lezyonların olmadığı anlamına gelmez; SSTR2 düşük ekspresyonu nedeniyle diğer insülinomalar görüntülenememiş olabilir.</li><li><strong>B:</strong> MEN1 insülinomalarında multifodalitenin saptanması cerrahi stratejiyi doğrudan değiştirir; göz ardı edilemez.</li><li><strong>D:</strong> Portal ven örneklemesi (PVS) invazivdir ve rutin protokollerde yer almaz; SACI PVS'nin daha doğru bir alternatifidir.</li><li><strong>E:</strong> EUS multifodal lezyonu saptamıştır; hangi odağın fonksiyonel sorumlu olduğu belirsizdir, SACI bu belirsizliği gidermede değerlidir.</li></ul>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-011",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Somatotropinoma", "Akromegali", "Plürihormonoal", "Prolaktin", "IGF-1", "Tarama"],
+  "question": {
+    "text": "MEN1 tarama programında 28 yaşında erkek hastada MR'da 22 mm hipofiz makroadenomu saptanıyor. Hasta el ve ayaklarda büyüme hissi tarif ediyor. GH ve IGF-1 ölçülüyor; her ikisi de yüksek.\n\nBu hastanın değerlendirmesinde atlanmaması gereken kritik endokrinolojik tuzak hangisidir?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "MEN1'de somatotropinomalar sporadik formlarla aynı klinik seyri gösterir; ek tetkik gerekmez." },
+    { "id": "B", "label": "Makroadenom nedeniyle kortizol supresyon testi yapılmalıdır; GH tümörleri sıklıkla ko-sekrete ACTH üretir." },
+    { "id": "C", "label": "Prolaktin düzeyi mutlaka ölçülmelidir; MEN1 somatotropinomalarının %4–11'i GH ile birlikte PRL ko-sekrete eden plürihormonoal tümörlerdir." },
+    { "id": "D", "label": "IGF-1 yüksek bulunduğundan prolaktin ölçümüne gerek yoktur; klinik tablo GH fazlalığını açıklamaktadır." },
+    { "id": "E", "label": "MEN1'de akromegali görülmez; bu tümör MEN1'den bağımsız sporadik bir somatotropinomalıdır." }
+  ],
+  "answer": "C",
+  "explanation": {
+    "intro": "MEN1 somatotropinomalarındaki plürihormonoal tuzağı ve ko-sekresyonun klinik önemini sorgulayan sürveyans sorusu.",
+    "content": "<p>MEN1 zemininde gelişen hipofiz adenomları sporadik adenomlardan farklı davranır: daha büyük, daha invazif ve <strong>plürihormonoal</strong> olmaya daha yatkındır. MEN1 somatotropinomalarının <strong>%4–11'i GH ile birlikte prolaktin (PRL) ko-sekrete</strong> eder (sporadik akromegalide bu oran yaklaşık %25, ancak MEN1'de ayrı adenom olarak da görülebilir).</p><p>Prolaktin ko-sekresyonunun atlanması klinik açıdan önemlidir:</p><ul><li>PRL yüksekliği hipogonadizm ve infertiliteye yol açar</li><li>Dopamin agonisti (kabergolin) tedavisi planlamasını etkiler</li><li>GH supresyonu sağlansa dahi PRL sorunu devam edebilir</li></ul><p>Bu nedenle MEN1 hipofiz adenomlarında <strong>her zaman PRL ve IGF-1 birlikte ölçülmeli</strong>; tüm hipofiz aksenlerinin değerlendirilmesi atlanmamalıdır.</p><ul><li><strong>A:</strong> MEN1 somatotropinomalarında makroadenom ve invazivlik sporadik formlardan daha sık; tek başına GH/IGF-1 ölçümü yetmez.</li><li><strong>B:</strong> ACTH ko-sekresyonu somatotropinomalarda nadirdir; kortizol supresyon testi bu tabloda öncelikli değildir.</li><li><strong>D:</strong> IGF-1 yüksekliği prolaktin ölçümünü dışlamaz; tam tersi, ko-sekresyon açısından prolaktin değerlendirilmesi zorunludur.</li><li><strong>E:</strong> Akromegali MEN1'de %8–8.8 görülür; bu hasta MEN1 tarama programındadır.</li></ul>"
+  }
+}

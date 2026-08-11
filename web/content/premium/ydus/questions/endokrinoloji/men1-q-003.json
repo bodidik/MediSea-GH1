@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-003",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Adrenal Kriz", "Hidrokortizon", "Fludrokortizon", "Bilateral Adrenalektomi"],
+  "question": {
+    "text": "MEN1 nedeniyle bilateral adrenalektomi geçirmiş 44 yaşında bir hasta gastroenterit nedeniyle acil servise başvurdu. KB: 80/50 mmHg, Na⁺: 127 mEq/L, K⁺: 5.6 mEq/L, kan şekeri: 52 mg/dL. Evde hidrokortizon ve fludrokortizon kullanmaktadır.\n\nAşağıdaki müdahalelerden hangisi hatalıdır?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "Hemen 100 mg hidrokortizon IV bolus uygulanmalıdır." },
+    { "id": "B", "label": "Laboratuvar sonuçları beklenmeden tedavi başlanmalıdır." },
+    { "id": "C", "label": "%0.9 NaCl + dekstroz içeren IV solüsyon başlanmalıdır." },
+    { "id": "D", "label": "Akut fazda fludrokortizon 0.1 mg IV bolus verilmelidir." },
+    { "id": "E", "label": "Kültürler alındıktan hemen sonra ampirik antibiyotik başlanmalıdır." }
+  ],
+  "answer": "D",
+  "explanation": {
+    "intro": "Adrenal krizin akut yönetiminde mineralokortikoid eklenmesinin doğru zamanlamasını ve gerekçesini sorgulayan bir soru.",
+    "content": "<p>Adrenal krizin akut fazında <strong>fludrokortizon eklenmesine gerek yoktur</strong>. Gerekçesi: >50 mg/gün dozundaki hidrokortizon mineralokortikoid reseptörlerini maksimum düzeyde uyarır — ek fludrokortizon gereksizdir. Ayrıca fludrokortizon'un IV formu yoktur; oral bir ajandır.</p><p>Fludrokortizon yalnızca hidrokortizon dozu &lt;50 mg/güne düşürüldüğünde ve hasta oral beslenmeye geçtiğinde 0.05–0.1 mg/gün olarak eklenir.</p><ul><li><strong>A:</strong> Doğru — acil HC IV bolus ilk adımdır.</li><li><strong>B:</strong> Doğru — klinik şüphede laboratuvar beklenmez, kriz geri dönüşümsüz seyredebilir.</li><li><strong>C:</strong> Doğru — hipoglisemi eşlik ettiğinde dekstroz içeren izotonik solüsyon tercih edilir.</li><li><strong>E:</strong> Doğru — tetikleyici enfeksiyon araştırılmalı ve ampirik antibiyotik başlanmalıdır.</li></ul>"
+  }
+}

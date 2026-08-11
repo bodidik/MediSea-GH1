@@ -1,0 +1,23 @@
+{
+  "id": "men1-q-006",
+  "accessLevel": "premium",
+  "difficulty": "Expert",
+  "status": "published",
+  "tags": ["MEN1", "Menin", "DHODH", "Sentetik Ölümcüllük", "LUMEN1", "Leflunomid", "JunD"],
+  "question": {
+    "text": "MEN1 ilişkili pankreatik NET'lerde menin eksikliğinin sentetik ölümcül (synthetic lethal) hedef olarak DHODH'u nasıl oluşturduğu araştırılıyor. Araştırmacılar menin-defisyent tümör hücrelerinin leflunomide karşı selektif duyarlılık gösterdiğini, normal hücrelerin ise bunu tolere edebildiğini gözlemliyor.\n\nBu bulgu sentetik ölümcüllük kavramı açısından aşağıdakilerden hangisiyle en iyi açıklanır?",
+    "image": null
+  },
+  "options": [
+    { "id": "A", "label": "DHODH blokajı mitokondriyal elektron transfer zincirini durdurarak tüm hücrelerde eşit apoptoz tetikler; MEN1 mutasyonu bu etkiyi artırır." },
+    { "id": "B", "label": "MEN1 kaybı hücreyi DHODH'a bağımlı metabolik bir duruma yönlendirir; DHODH blokajı bu bağımlılığı selektif olarak ölümcül hale getirir." },
+    { "id": "C", "label": "Leflunomid hem DHODH'u hem de menin proteinini eş zamanlı inhibe eden çift hedefli bir ajandır." },
+    { "id": "D", "label": "DHODH inhibisyonu yalnızca pankreas beta hücrelerinde apoptoz yaratır; diğer hücre tiplerinde etkisizdir." },
+    { "id": "E", "label": "Sentetik ölümcüllük iki sağlıklı genin birlikte inaktivasyonunu gerektirir; bu senaryo bu tanıma uymaz." }
+  ],
+  "answer": "B",
+  "explanation": {
+    "intro": "Sentetik ölümcüllük prensibini ve MEN1-DHODH eksenini sorgulayan translasyonel farmakoloji sorusu.",
+    "content": "<p><strong>Sentetik ölümcüllük:</strong> İki genden/yolaktan herhangi birinin tek başına kaybı hücreyi öldürmezken, ikisinin birlikte inaktivasyonu hücre ölümüne yol açar. MEN1 mutasyonu tek başına tümör hücresini yaşatır; DHODH blokajı normal hücrelerde tolere edilir. Ancak menin kaybı, hücreyi DHODH'a bağımlı bir metabolik duruma sürükler — bu arka planda DHODH blokajı <strong>selektif olarak</strong> menin-defisyent tümör hücrelerini apoptozise yönlendirir.</p><p>Bu prensip, Mayıs 2023'te başlatılan tek kollu <strong>LUMEN1 Faz II klinik çalışması (NCT05605587)</strong>'nın temelini oluşturmaktadır.</p><ul><li><strong>A:</strong> DHODH blokajı tüm hücrelerde eşit ölüm yaratmaz; selektivite MEN1 mutasyonundan kaynaklanır.</li><li><strong>C:</strong> Leflunomid yalnızca DHODH inhibitörüdür; menin proteinini doğrudan inhibe etmez.</li><li><strong>D:</strong> DHODH inhibisyonu pankreas beta hücrelerine özgü değildir.</li><li><strong>E:</strong> Tanım yanlıştır; sentetik ölümcüllük gen ürünlerinin veya yolakların kombinatoryel inaktivasyonunu kapsar.</li></ul>"
+  }
+}
