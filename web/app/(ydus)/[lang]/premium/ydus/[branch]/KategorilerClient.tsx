@@ -63,7 +63,6 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
               style={{
                 width: '100%',
                 padding: '0.9rem 1.25rem',
-                borderBottom: acikMi ? '0.5px solid #d0e4f5' : 'none',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '10px',

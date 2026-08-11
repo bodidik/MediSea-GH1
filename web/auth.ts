@@ -3,9 +3,16 @@ import Credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { dbConnect } from '@/lib/db';
 import User from '@/lib/models/User';
+import { authConfig } from '@/auth.config';
 
+/**
+ * Tam yapılandırma: Node runtime'a ait (route handler'lar, server component'ler).
+ * Ortak/Edge-güvenli kısım auth.config.ts'de; buraya yalnızca veritabanına
+ * ihtiyaç duyan Credentials provider'ı eklenir. middleware.ts bu dosyayı
+ * İTHAL ETMEMELİ — mongoose'u Edge bundle'ına sokar ve build kırılır.
+ */
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  session: { strategy: 'jwt' },
+  ...authConfig,
 
   providers: [
     Credentials({
@@ -34,27 +41,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.id          = (user as any).id;
-        token.plan        = (user as any).plan;
-        token.institution = (user as any).institution;
-      }
-      return token;
-    },
-    async session({ session, token }) {
-      if (session.user) {
-        (session.user as any).id          = token.id;
-        (session.user as any).plan        = token.plan;
-        (session.user as any).institution = token.institution;
-      }
-      return session;
-    },
-  },
-
-  pages: {
-    signIn: '/giris',
-  },
 });

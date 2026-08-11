@@ -147,11 +147,24 @@ export function toMarkdown(entries: StudyEntry[]): string {
 
 /* ── Yardımcılar ───────────────────────────────────────────────────────── */
 
-function branchOf(path: string): string {
+/**
+ * Yoldaki branşın HAM slug'ı ("genel-dahiliye"), güzelleştirilmemiş hâli.
+ *
+ * Anahtar olarak kullanılan yer burası: /api/branch-counts sayaçları ve
+ * SPECIALTIES kayıtları hep ham slug ile anahtarlanır. Güzelleştirilmiş
+ * ad ("Genel Dahiliye") bu anahtarların hiçbiriyle eşleşmez — bu yüzden
+ * gösterim adı (branchOf) ile slug ayrı tutulur.
+ */
+export function branchSlugOf(path: string): string {
   const seg = path.split("/").filter(Boolean);
   // /topics/<bransh>/<konu>  ·  /tr/premium/ydus/<bransh>/<konu>
   const i = seg.indexOf("topics") !== -1 ? seg.indexOf("topics") : seg.indexOf("ydus");
-  const b = i !== -1 ? seg[i + 1] : "";
+  return i !== -1 ? (seg[i + 1] ?? "") : "";
+}
+
+/** Gösterim için branş adı ("Genel Dahiliye"). */
+function branchOf(path: string): string {
+  const b = branchSlugOf(path);
   return b ? prettifySlug(b) : "";
 }
 

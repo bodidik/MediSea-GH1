@@ -1,10 +1,22 @@
 'use client';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
+/* useSearchParams() bir Suspense sınırı içinde olmalı; yoksa prerender
+   "missing-suspense-with-csr-bailout" ile kırılıyor. Form ayrı bileşene
+   alındı, sayfa yalnızca sınırı kuruyor. (?gerekli=... middleware'in
+   yönlendirmesinden geliyor, bu yüzden okuma şart.) */
 export default function GirisPage() {
+  return (
+    <Suspense fallback={null}>
+      <GirisForm />
+    </Suspense>
+  );
+}
+
+function GirisForm() {
   const router = useRouter();
   const params = useSearchParams();
   const [email, setEmail] = useState('');

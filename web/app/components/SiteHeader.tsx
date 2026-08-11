@@ -76,15 +76,18 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
-      <div className="flex h-16 items-center px-4 max-w-[1800px] mx-auto gap-3 sm:gap-6">
+      <div className="flex h-16 items-center px-4 max-w-[1800px] mx-auto gap-2 sm:gap-4">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-1 font-black text-2xl text-slate-900 tracking-tight shrink-0">
+        <Link href="/" className="flex items-center gap-1 font-black text-lg sm:text-2xl text-slate-900 tracking-tight shrink-0">
           <span className="text-blue-600 italic">Medi</span><span className="text-slate-300">Sea</span>
         </Link>
 
-        {/* BRANŞ LİNKLERİ (Sadece çok geniş ekranda) */}
-        <nav className="hidden lg:flex items-center gap-4 xl:gap-5 overflow-x-auto no-scrollbar mask-edges flex-shrink-0">
+        {/* BRANŞ LİNKLERİ (lg ve üstü)
+            min-w-0 + shrink: yer daralınca şerit içeride kayar, header'ı taşırmaz.
+            mask-edges: yalnızca kaydığı aralıkta (1024–1140) kenarları söndürür — bkz. globals.css.
+            2xl'de aralık kısılır: vitrin butonları da geldiği için arama kutusuna yer bırakır. */}
+        <nav className="hidden lg:flex items-center gap-4 2xl:gap-3 overflow-x-auto no-scrollbar mask-edges min-w-0">
           {branches.map((branch) => (
             <Link
               key={branch.slug}
@@ -96,7 +99,11 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        {/* ORTA: ARAMA KUTUSU */}
+        {/* ORTA: ARAMA KUTUSU
+            min-w-0 VERİLMEZ: input border-box olduğu için yatay padding'inin
+            altına inemez (pl-10+pr-10+border = 82px). Kutuyu zorla daraltmak
+            input'u sarmalayıcıdan taşırıp "Üye Ol" düğmesinin üstüne bindiriyor.
+            Daralmayı branş şeridi karşılar; dar telefonlarda ise padding küçülür. */}
         <div className="flex-1 max-w-xl relative ml-auto" ref={wrapperRef}>
           <div className="relative group">
             <span className="absolute left-3 top-2.5 text-slate-400 group-focus-within:text-blue-500 transition-colors">
@@ -107,7 +114,7 @@ export default function SiteHeader() {
             <input
               type="text"
               placeholder="Hastalık, semptom veya vaka ara..."
-              className="h-10 w-full rounded-full border border-slate-200 bg-slate-50 pl-10 pr-10 text-sm font-medium outline-none focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 transition-all shadow-sm"
+              className="h-10 w-full rounded-full border border-slate-200 bg-slate-50 pl-9 sm:pl-10 pr-9 sm:pr-10 text-sm font-medium outline-none focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 transition-all shadow-sm"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onFocus={() => query.length >= 2 && setIsOpen(true)}
@@ -171,8 +178,10 @@ export default function SiteHeader() {
           )}
         </div>
 
-        {/* --- VİTRİN BUTONLARI --- */}
-        <div className="hidden xl:flex items-center gap-3 shrink-0 ml-4">
+        {/* --- VİTRİN BUTONLARI ---
+            2xl (1536px) altında gizli: xl'de açılınca satır ~1560px istiyordu ve
+            1280–1550 arasında sayfayı yatay kaydırıyordu. Bu aralıkta hamburger menüde. */}
+        <div className="hidden 2xl:flex items-center gap-2 shrink-0 ml-2">
           <Link href="/tr/premium/ydus" className="bg-amber-400 hover:bg-amber-500 text-blue-950 text-xs font-black tracking-widest px-4 py-2.5 rounded-full flex items-center gap-2 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
             PREMİUM YDUS <span>⚓</span>
           </Link>
@@ -213,21 +222,21 @@ export default function SiteHeader() {
         </div>
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-2 border-l border-slate-200 pl-3 sm:pl-6">
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
           <Link href="/login" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
             Giriş
           </Link>
-          <Link href="/register" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-4 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
+          <Link href="/register" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
             <span>Üye Ol</span>
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
           </Link>
 
-          {/* HAMBURGER (branşlar / araçlar / premium - dar ekranlarda) */}
+          {/* HAMBURGER (branşlar / araçlar / premium - 2xl altında) */}
           <button
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menü"
             aria-expanded={menuOpen}
-            className="xl:hidden flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
+            className="2xl:hidden flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
           >
             {menuOpen ? (
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -245,7 +254,7 @@ export default function SiteHeader() {
 
       {/* --- MOBİL / TABLET AÇILIR MENÜ --- */}
       {menuOpen && (
-        <div className="xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="2xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="max-w-[1800px] mx-auto px-5 py-5 space-y-5">
 
             {/* Branşlar (lg ve altı - üstteki nav gizliyken) */}
@@ -267,7 +276,7 @@ export default function SiteHeader() {
 
             <div className="h-px bg-slate-100 lg:hidden"></div>
 
-            {/* Vitrin linkleri (xl altı - üstteki butonlar gizliyken) */}
+            {/* Vitrin linkleri (2xl altı - üstteki butonlar gizliyken) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <Link
                 href="/tr/premium/ydus"

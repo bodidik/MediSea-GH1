@@ -1,5 +1,11 @@
-import { auth } from '@/auth';
+import NextAuth from 'next-auth';
+import { authConfig } from '@/auth.config';
 import { NextResponse } from 'next/server';
+
+/* '@/auth' İTHAL EDİLMEZ: o dosya mongoose'u çeker, middleware Edge Runtime'da
+   çalışır ve build "node:diagnostics_channel / eval" hatasıyla kırılır.
+   JWT strategy sayesinde burada oturumu okumak için provider'a gerek yok. */
+const { auth } = NextAuth(authConfig);
 
 export default auth((req) => {
   const { pathname } = req.nextUrl;

@@ -55,7 +55,11 @@ web/.vercel/
 !.env.*.example
 
 # Runtime data
-data/
+# NOT: Buraya çıplak "data/" YAZMAYIN. Git'te çıplak kalıp her derinlikteki
+# aynı adlı klasörü tutar; web/app/tools/data/ads.ts (gerçek kaynak kod)
+# sessizce takipten düşüyordu ve temiz klonlar/CI derlenemiyordu.
+/data/
+server/scripts/data/
 tmp/
 temp/
 uploads/

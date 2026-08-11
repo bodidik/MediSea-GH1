@@ -146,6 +146,23 @@ button {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Scrollbar'ı gizlenmiş yatay şeritlerde kenarları söndürür: içeriğin devam
+   ettiğini gösteren tek ipucu bu.
+   Yalnızca şeridin GERÇEKTEN kaydığı aralıkta açılır (SiteHeader branş şeridi:
+   lg'de görünür, ~1140px'e kadar taşar). İki nedenle daraltıldı:
+   1) Şerit sığdığında ilk/son linkin kenarı sebepsizce soluk görünüyordu —
+      sönümlemenin metne değil padding'in üstüne düşmesi için padding de burada.
+   2) 1536px'te (1920@%125 — en yaygın masaüstü) satır zaten dar; kalıcı 16px
+      padding arama kutusundan çalıyordu. */
+@media (min-width: 1024px) and (max-width: 1140px) {
+  .mask-edges {
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8px, #000 calc(100% - 8px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 8px, #000 calc(100% - 8px), transparent 100%);
+  }
+}
 /* ── Okuma vurguları (ReadingTools) ──────────────────────────────────────
    Fosforlu kalem etkisi: metnin ÜSTÜNÜ kaplamak yerine alt %45'ini boyar.
    Bu sayede hem açık zeminli (site) hem koyu zeminli (premium YDUS)

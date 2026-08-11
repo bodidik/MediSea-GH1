@@ -59,6 +59,13 @@ const CATEGORIES = [
 ] as const;
 
 type CatId = typeof CATEGORIES[number]["id"];
+type Category = typeof CATEGORIES[number];
+
+/* CATEGORIES `as const` olduğu için üyeler birleşim (union) tipi oluşturur ve
+   `multi`/`note` yalnızca bazı üyelerde bulunur. `in` ile daraltmak veri
+   şeklini değiştirmeden erişimi güvenli kılar. */
+const isMulti = (cat: Category): boolean => "multi" in cat && !!cat.multi;
+const noteOf = (cat: Category): string | undefined => ("note" in cat ? cat.note : undefined);
 
 function getTiRads(pts: number): { level: string; label: string; color: string; bg: string; border: string; desc: string } {
   if (pts === 0) return { level: "TR1", label: "BENİGN", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", desc: "Biyopsi veya takip gerekmez" };
@@ -105,7 +112,7 @@ export default function TiradsPage() {
   const catScore = (cat: typeof CATEGORIES[number]): number | null => {
     const ans = answers[cat.id];
     if (ans === undefined) return null;
-    if (cat.multi) {
+    if (isMulti(cat)) {
       const arr = ans as number[];
       return arr.length === 0 ? null : Math.max(...arr);
     }
@@ -119,7 +126,10 @@ export default function TiradsPage() {
   const tr = total !== null ? getTiRads(total) : null;
   const sizeCm = parseLocaleNumber(size);
   const fna = tr && sizeCm > 0 ? getFnaGuidance(tr.level, sizeCm) : null;
-  const params = { scores, size: sizeCm };
+  // ToolShare yalnızca düz değer alır (Record<string, string|number|boolean>).
+  // scores bir dizi; join ile düzleştiriyoruz — String(dizi) zaten aynı
+  // çıktıyı üretiyordu, fark yalnızca artık kasıtlı ve tip güvenli olması.
+  const params = { scores: scores.join(","), size: sizeCm };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -163,16 +173,16 @@ export default function TiradsPage() {
           <div key={cat.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
             <div className="flex items-start justify-between mb-1">
               <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest">{cat.title}</p>
-              {cat.multi && <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Çoklu seçim</span>}
+              {isMulti(cat) && <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Çoklu seçim</span>}
             </div>
-            {cat.note && <p className="text-[10px] font-bold text-slate-400 mb-3">{cat.note}</p>}
+            {noteOf(cat) && <p className="text-[10px] font-bold text-slate-400 mb-3">{noteOf(cat)}</p>}
             <div className="space-y-2 mt-3">
               {cat.opts.map(opt => {
-                const isSelected = cat.multi
+                const isSelected = isMulti(cat)
                   ? ((answers[cat.id] as number[] | undefined) ?? []).includes(opt.v)
                   : answers[cat.id] === opt.v;
                 return (
-                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, !!cat.multi)}
+                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
                     className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between gap-3
                       ${isSelected ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                     <span className={`text-sm font-bold leading-snug ${isSelected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</span>
