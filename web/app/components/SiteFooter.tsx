@@ -1,9 +1,9 @@
-// FILE: web/app/components/SiteHeader.tsx
+// FILE: web/app/components/SiteFooter.tsx
 "use client";
 import Link from "next/link";
 import React from "react";
 
-export default function SiteHeader(){
+export default function SiteFooter(){
   return (
     <header className="border-b bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-14 flex items-center justify-between">
