@@ -128,7 +128,7 @@ export default function DLQIPage() {
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              DLQI psoriazis, atopik dermatit, ürtiker ve alopesi başta olmak üzere pek çok dermatolojik hastalıkta biyolojik tedavi endikasyonunu belirlemede kullanılır (örn. DLQI > 10). Finlay & Khan, Clin Exp Dermatol 1994.
+              DLQI psoriazis, atopik dermatit, ürtiker ve alopesi başta olmak üzere pek çok dermatolojik hastalıkta biyolojik tedavi endikasyonunu belirlemede kullanılır (örn. DLQI &gt; 10). Finlay & Khan, Clin Exp Dermatol 1994.
             </p>
           </div>
         </div>

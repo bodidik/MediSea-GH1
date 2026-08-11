@@ -126,7 +126,7 @@ export default function FLIPIPage() {
 
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
           <p className="text-[9px] font-bold text-blue-900 uppercase tracking-widest mb-2">FLIPI-2</p>
-          <p className="text-[10px] text-blue-800">2009 güncellemesi ile β2-mikroglobulin, kemik iliği tutulumu, en büyük lenf nodu çapı (> 6 cm), hemoglobin ve yaş (> 60) kriterleri kullanılır. Günümüzde obinutuzumab-kemoterapisi çağında PRIMA-PI (β2M + KİT) daha sık tercih edilmektedir.</p>
+          <p className="text-[10px] text-blue-800">2009 güncellemesi ile β2-mikroglobulin, kemik iliği tutulumu, en büyük lenf nodu çapı (&gt; 6 cm), hemoglobin ve yaş (&gt; 60) kriterleri kullanılır. Günümüzde obinutuzumab-kemoterapisi çağında PRIMA-PI (β2M + KİT) daha sık tercih edilmektedir.</p>
         </div>
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
