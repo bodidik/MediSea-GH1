@@ -8,6 +8,7 @@
 // kullanıcının notu kaybolmuş görünmez.
 
 import type { ReadingMark } from "@/app/lib/reading-marks";
+import { SPECIALTIES } from "@/app/lib/specialties";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -147,12 +148,23 @@ export function toMarkdown(entries: StudyEntry[]): string {
 
 /* ── Yardımcılar ───────────────────────────────────────────────────────── */
 
+/** Yoldaki branş slug'ı (/topics/<slug>/... ya da /../ydus/<slug>/...). */
+export function branchSlugOf(path: string): string {
+  const seg = path.split("/").filter(Boolean);
+  const i = seg.indexOf("topics") !== -1 ? seg.indexOf("topics") : seg.indexOf("ydus");
+  return i !== -1 ? (seg[i + 1] ?? "") : "";
+}
+
 function branchOf(path: string): string {
   const seg = path.split("/").filter(Boolean);
   // /topics/<bransh>/<konu>  ·  /tr/premium/ydus/<bransh>/<konu>
   const i = seg.indexOf("topics") !== -1 ? seg.indexOf("topics") : seg.indexOf("ydus");
-  const b = i !== -1 ? seg[i + 1] : "";
-  return b ? prettifySlug(b) : "";
+  const slug = i !== -1 ? seg[i + 1] : "";
+  if (!slug) return "";
+  // Doğru yazımı branş kaydından al — slug'ı büyük harfe çevirmek Türkçe
+  // karakterleri kaybettiriyordu ("gogus" → "Gogus", oysa "Göğüs Hast.").
+  const bilinen = SPECIALTIES.find((s) => s.slug === slug);
+  return bilinen ? bilinen.title : prettifySlug(slug);
 }
 
 function prettify(path: string): string {

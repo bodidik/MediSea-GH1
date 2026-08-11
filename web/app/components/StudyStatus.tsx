@@ -10,16 +10,18 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { buildDeck, deckStats, type DeckStats } from "@/app/lib/review-deck";
+import { buildDeck, deckStats, readLog, streakOf, type DeckStats } from "@/app/lib/review-deck";
 
 export default function StudyStatus() {
   const [stats, setStats] = useState<DeckStats | null>(null);
   const [notlu, setNotlu] = useState(0);
+  const [seri, setSeri] = useState(0);
 
   useEffect(() => {
     try {
       const deck = buildDeck();
       setStats(deckStats(deck));
+      setSeri(streakOf(readLog()));
       // not tutulan sayfa sayısı — deste dışı, ayrıca sayılır
       let n = 0;
       for (let i = 0; i < localStorage.length; i++) {
@@ -55,9 +57,16 @@ export default function StudyStatus() {
 
         <div className="min-w-0 flex-1">
           <div className="text-xs font-black uppercase tracking-tight text-blue-950">
-            {acil ? `${stats.vadesi} kartın tekrar zamanı geldi` : "Çalışma alanın hazır"}
+            {acil
+              ? stats.yeni === stats.vadesi
+                ? `${stats.vadesi} kart seni bekliyor`
+                : `${stats.vadesi} kartın tekrar zamanı geldi`
+              : "Çalışma alanın hazır"}
           </div>
           <div className="mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-slate-400">
+            {seri > 0 && (
+              <span className="font-bold text-amber-600">🔥 {seri} günlük seri</span>
+            )}
             {stats.toplam > 0 && <span>{stats.toplam} kart</span>}
             {stats.yeni > 0 && <span>{stats.yeni} yeni</span>}
             {stats.ogrenilen > 0 && <span>{stats.ogrenilen} öğrenilen</span>}

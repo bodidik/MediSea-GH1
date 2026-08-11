@@ -9,15 +9,23 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import StrokePreview from "@/app/components/StrokePreview";
 import {
+  branchesOf,
   buildDeck,
+  cramCards,
   deckStats,
   dueCards,
   dueLabel,
   grade as gradeCard,
+  logStudy,
   pruneStates,
+  readLog,
+  recentDays,
+  streakOf,
   type Grade,
   type ReviewCard,
 } from "@/app/lib/review-deck";
+
+type Mode = "due" | "cram";
 
 const BUTTONS: { g: Grade; label: string; hint: string; cls: string }[] = [
   { g: "again", label: "Bilemedim", hint: "10 dk", cls: "bg-rose-500 hover:bg-rose-400" },
@@ -32,28 +40,64 @@ export default function ReviewPage() {
   const [idx, setIdx] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [done, setDone] = useState(0);
+  const [branch, setBranch] = useState<string | null>(null);
+  const [mode, setMode] = useState<Mode>("due");
+  /** Oturumda zorlanılan kartlar — sonunda kaynağa dönmek için listelenir */
+  const [zorlananlar, setZorlananlar] = useState<ReviewCard[]>([]);
 
   const load = useCallback(() => {
     const d = buildDeck();
     pruneStates(d);
     setDeck(d);
-    setQueue(dueCards(d));
-    setIdx(0);
-    setRevealed(false);
-    setDone(0);
+    return d;
   }, []);
 
   useEffect(() => {
     load();
   }, [load]);
 
-  const stats = useMemo(() => (deck ? deckStats(deck) : null), [deck]);
+  /** Seçilen branş ve kipe göre kuyruğu kurar. */
+  const start = useCallback(
+    (d: ReviewCard[], b: string | null, m: Mode) => {
+      setQueue(m === "cram" ? cramCards(d, b) : dueCards(d, b));
+      setIdx(0);
+      setRevealed(false);
+      setDone(0);
+      setZorlananlar([]);
+    },
+    []
+  );
+
+  useEffect(() => {
+    if (deck) start(deck, branch, mode);
+  }, [deck, branch, mode, start]);
+
+  // Sayaçlar deste'den DEĞİL, her nottan sonra tazelenen ayrı bir sayımdan gelir.
+  // Deste bilerek donuk tutuluyor (yoksa kuyruk oturum ortasında değişirdi) ama
+  // sayaçlar donuk kalırsa kullanıcı çalıştıkça düşmediklerini görüp şaşırıyor.
+  const [tick, setTick] = useState(0);
+  const stats = useMemo(() => (deck ? deckStats(buildDeck()) : null), [deck, tick]);
+  const branches = useMemo(() => (deck ? branchesOf(buildDeck()) : []), [deck, tick]);
   const card = queue[idx] ?? null;
 
   const answer = useCallback(
     (g: Grade) => {
       if (!card) return;
-      gradeCard(card.id, g);
+      // Tazeleme kipinde takvim DEĞİŞMEZ — sınav gecesi yapılan bir tur,
+      // aylardır oturmuş aralıkları sıfırlamamalı.
+      if (mode === "due") {
+        gradeCard(card.id, g);
+        logStudy(g === "good" || g === "easy");
+        setTick((t) => t + 1); // sayaçları tazele (kuyruğa dokunmadan)
+      }
+
+      // zorlanılanı oturum özetine al (aynı kart iki kez düşmesin)
+      if (g === "again" || g === "hard") {
+        setZorlananlar((z) => (z.some((c) => c.id === card.id) ? z : [...z, card]));
+      } else {
+        setZorlananlar((z) => z.filter((c) => c.id !== card.id));
+      }
+
       setDone((n) => n + 1);
       setRevealed(false);
 
@@ -64,7 +108,7 @@ export default function ReviewPage() {
         setIdx((i) => i + 1);
       }
     },
-    [card, idx]
+    [card, idx, mode]
   );
 
   // Klavye: boşluk çevirir, 1-4 notlar
@@ -113,20 +157,40 @@ export default function ReviewPage() {
     );
   }
 
-  /* ── Bugünlük bitti ── */
+  /* ── Bu seçimde kart kalmadı ── */
   if (!card) {
+    const branslı = branch ? `${branch} branşında ` : "";
     return (
-      <Shell stats={stats}>
+      <Shell
+        stats={stats}
+        branches={branches}
+        branch={branch}
+        onBranch={setBranch}
+        mode={mode}
+        onMode={setMode}
+      >
+        {/* Oturum özeti — zorlanılan kartlar kaynağına geri götürür.
+            Döngünün kapandığı yer burası: oku → vurgula → tekrar et → oku. */}
+        {done > 0 && <SessionSummary done={done} zorlananlar={zorlananlar} />}
+
         <Empty
-          icon="✅"
-          title={done > 0 ? `${done} kart çalışıldı` : "Bugünlük hazırsın"}
+          icon={done > 0 ? "✅" : "☕"}
+          title={done > 0 ? `${done} kart çalışıldı` : `${branslı}sıra boş`}
           body={
-            stats && stats.yarin > 0
-              ? `Sıradaki ${stats.yarin} kart 24 saat içinde vadesi gelecek.`
-              : "Vadesi gelen kart kalmadı. Yeni vurgular yaptıkça deste büyür."
+            mode === "cram"
+              ? `Bu seçimde çalışılacak kart yok. Başka bir branş seç ya da yeni vurgular yap.`
+              : stats && stats.yarin > 0
+                ? `Sıradaki ${stats.yarin} kart 24 saat içinde vadesi gelecek. Beklemek istemiyorsan "Baştan sona çalış" ile takvimi bozmadan tur atabilirsin.`
+                : `Vadesi gelen ${branslı}kart yok. Yeni vurgular yaptıkça deste büyür.`
           }
           cta={{ href: "/calisma-alanim", label: "Çalışma Alanım →" }}
-          secondary={done > 0 ? { onClick: load, label: "Yeniden tara" } : undefined}
+          secondary={
+            mode === "due" && stats && stats.toplam > 0
+              ? { onClick: () => setMode("cram"), label: "Baştan sona çalış" }
+              : done > 0
+                ? { onClick: load, label: "Yeniden tara" }
+                : undefined
+          }
         />
       </Shell>
     );
@@ -136,7 +200,14 @@ export default function ReviewPage() {
   const kalan = queue.length - idx;
 
   return (
-    <Shell stats={stats}>
+    <Shell
+      stats={stats}
+      branches={branches}
+      branch={branch}
+      onBranch={setBranch}
+      mode={mode}
+      onMode={setMode}
+    >
       {/* ilerleme */}
       <div className="mb-4 flex items-center gap-3">
         <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-slate-200">
@@ -267,9 +338,19 @@ export default function ReviewPage() {
 function Shell({
   children,
   stats,
+  branches,
+  branch,
+  onBranch,
+  mode,
+  onMode,
 }: {
   children: React.ReactNode;
   stats?: ReturnType<typeof deckStats> | null;
+  branches?: ReturnType<typeof branchesOf>;
+  branch?: string | null;
+  onBranch?: (b: string | null) => void;
+  mode?: Mode;
+  onMode?: (m: Mode) => void;
 }) {
   return (
     <div className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
@@ -297,7 +378,7 @@ function Shell({
         {stats && stats.toplam > 0 && (
           <div className="mb-4 flex items-center divide-x divide-slate-200 overflow-hidden rounded-xl border border-slate-200 bg-white">
             {[
-              [stats.vadesi, "Vadesi"],
+              [stats.vadesi, "Çalışılacak"],
               [stats.yeni, "Yeni"],
               [stats.ogrenilen, "Öğrenilen"],
               [stats.toplam, "Toplam"],
@@ -312,9 +393,166 @@ function Shell({
           </div>
         )}
 
+        {/* Kip anahtarı + branş seçimi */}
+        {branches && branches.length > 0 && onMode && onBranch && (
+          <div className="mb-4 space-y-2">
+            <div className="flex gap-1 rounded-xl border border-slate-200 bg-white p-1">
+              {(
+                [
+                  ["due", "Vadesi gelenler"],
+                  ["cram", "Baştan sona çalış"],
+                ] as [Mode, string][]
+              ).map(([m, l]) => (
+                <button
+                  key={m}
+                  onClick={() => onMode(m)}
+                  className={`flex-1 rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
+                    mode === m ? "bg-blue-950 text-white" : "text-slate-400 hover:bg-slate-50"
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+
+            {/* Branş şeridi — birden fazla branş varsa anlamlı */}
+            {branches.length > 1 && (
+              <div className="flex gap-1.5 overflow-x-auto no-scrollbar">
+                <BranchChip
+                  aktif={branch === null}
+                  onClick={() => onBranch(null)}
+                  ad="Tümü"
+                  sayi={mode === "cram"
+                    ? branches.reduce((n, b) => n + b.toplam, 0)
+                    : branches.reduce((n, b) => n + b.vadesi, 0)}
+                />
+                {branches.map((b) => (
+                  <BranchChip
+                    key={b.branch}
+                    aktif={branch === b.branch}
+                    onClick={() => onBranch(b.branch)}
+                    ad={b.branch}
+                    sayi={mode === "cram" ? b.toplam : b.vadesi}
+                  />
+                ))}
+              </div>
+            )}
+
+            {mode === "cram" && (
+              <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-800">
+                <span className="font-black uppercase tracking-widest">Tazeleme</span> · Takvim
+                gözetilmez, kartlar karışık gelir. Buradaki cevapların tekrar aralıklarını
+                <strong> değiştirmez</strong> — sınav öncesi turun oturmuş programını bozmasın diye.
+              </p>
+            )}
+          </div>
+        )}
+
         {children}
       </div>
     </div>
+  );
+}
+
+/* ── Oturum özeti ────────────────────────────────────────────────────────── */
+
+function SessionSummary({ done, zorlananlar }: { done: number; zorlananlar: ReviewCard[] }) {
+  const log = readLog();
+  const seri = streakOf(log);
+  const gunler = recentDays(log, 14);
+  const enYogun = Math.max(1, ...gunler.map((g) => g.kart));
+
+  return (
+    <div className="mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+      <div className="flex flex-wrap items-center gap-3 border-b border-slate-100 px-4 py-3">
+        <span className="text-xl">{seri >= 3 ? "🔥" : "✅"}</span>
+        <div className="min-w-0 flex-1">
+          <div className="text-xs font-black uppercase tracking-tight text-blue-950">
+            {done} kart çalışıldı
+          </div>
+          {seri > 0 && (
+            <div className="mt-0.5 text-[11px] text-slate-400">
+              {seri} gündür üst üste çalışıyorsun
+            </div>
+          )}
+        </div>
+
+        {/* son 14 gün — çubuk yüksekliği o günün kart sayısı */}
+        <div className="flex h-8 shrink-0 items-end gap-[3px]" title="Son 14 gün">
+          {gunler.map((g) => (
+            <div
+              key={g.gun}
+              title={`${g.gun}: ${g.kart} kart`}
+              className={`w-1.5 rounded-sm ${g.kart ? "bg-blue-950" : "bg-slate-100"}`}
+              style={{ height: g.kart ? `${Math.max(18, (g.kart / enYogun) * 100)}%` : "12%" }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {zorlananlar.length > 0 && (
+        <div className="px-4 py-3">
+          <h3 className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">
+            Zorlandıkların — kaynağa dön
+          </h3>
+          <ul className="space-y-1.5">
+            {zorlananlar.map((c) => (
+              <li key={c.id}>
+                <Link
+                  href={c.path}
+                  className="group flex items-start gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-slate-50"
+                >
+                  <span className="mt-0.5 shrink-0 text-[10px]">
+                    {c.kind === "sketch" ? "✍" : "🖍"}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-[11px] font-black uppercase tracking-tight text-blue-950 group-hover:text-blue-600">
+                      {c.title}
+                    </span>
+                    {c.kind === "cloze" && (
+                      <span className="mt-0.5 line-clamp-2 block text-[11px] leading-snug text-slate-500">
+                        {c.answer}
+                      </span>
+                    )}
+                  </span>
+                  <span className="shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5">
+                    →
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function BranchChip({
+  aktif,
+  onClick,
+  ad,
+  sayi,
+}: {
+  aktif: boolean;
+  onClick: () => void;
+  ad: string;
+  sayi: number;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`shrink-0 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
+        aktif
+          ? "border-blue-950 bg-blue-950 text-white"
+          : sayi === 0
+            ? "border-slate-100 bg-white text-slate-300"
+            : "border-slate-200 bg-white text-slate-500 hover:border-blue-300 hover:text-blue-600"
+      }`}
+    >
+      {ad}
+      <span className={`ml-1.5 ${aktif ? "text-white/50" : "text-slate-300"}`}>{sayi}</span>
+    </button>
   );
 }
 

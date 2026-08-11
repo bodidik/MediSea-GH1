@@ -139,8 +139,9 @@ export function buildDeck(): ReviewCard[] {
 }
 
 /** Vadesi gelmiş + hiç çalışılmamış kartlar, en gecikmişten başlayarak. */
-export function dueCards(deck: ReviewCard[], now = Date.now()): ReviewCard[] {
+export function dueCards(deck: ReviewCard[], branch: string | null = null, now = Date.now()): ReviewCard[] {
   return deck
+    .filter((c) => !branch || (c.branch || "Diğer") === branch)
     .filter((c) => !c.state || c.state.due <= now)
     .sort((a, b) => {
       // önce vadesi geçmişler, sonra hiç çalışılmamışlar
@@ -148,6 +149,37 @@ export function dueCards(deck: ReviewCard[], now = Date.now()): ReviewCard[] {
       const bd = b.state?.due ?? Infinity;
       return ad - bd;
     });
+}
+
+/** Destedeki branşlar ve her birinin kart sayıları. */
+export type BranchRow = { branch: string; toplam: number; vadesi: number };
+
+export function branchesOf(deck: ReviewCard[], now = Date.now()): BranchRow[] {
+  const map = new Map<string, BranchRow>();
+  for (const c of deck) {
+    const b = c.branch || "Diğer";
+    const row = map.get(b) ?? { branch: b, toplam: 0, vadesi: 0 };
+    row.toplam++;
+    if (!c.state || c.state.due <= now) row.vadesi++;
+    map.set(b, row);
+  }
+  return [...map.values()].sort((a, b) => b.vadesi - a.vadesi || b.toplam - a.toplam);
+}
+
+/**
+ * Tazeleme kipi: takvimi yok sayar, seçilen branşın TÜM kartlarını karıştırır.
+ * Sınav öncesi bir branşı baştan sona geçmek için. Bu kipte verilen notlar
+ * takvimi DEĞİŞTİRMEZ — yoksa sınav gecesi yapılan bir tur, aylardır oturmuş
+ * tekrar aralıklarını sıfırlardı.
+ */
+export function cramCards(deck: ReviewCard[], branch: string | null): ReviewCard[] {
+  const list = deck.filter((c) => !branch || (c.branch || "Diğer") === branch);
+  const out = [...list];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
 }
 
 export type DeckStats = {
@@ -163,7 +195,11 @@ export function deckStats(deck: ReviewCard[], now = Date.now()): DeckStats {
   return {
     toplam: deck.length,
     yeni: deck.filter((c) => !c.state).length,
-    vadesi: deck.filter((c) => c.state && c.state.due <= now).length,
+    // ŞU AN ÇALIŞILABİLİR olanlar — dueCards() ile aynı ölçüt.
+    // Daha önce yalnızca takvimi geçmişleri sayıyordu; o zaman hiç çalışılmamış
+    // kartlar sayılmıyor, taze vurgusu olan kullanıcıya "yapılacak iş yok" gibi
+    // görünüyordu.
+    vadesi: deck.filter((c) => !c.state || c.state.due <= now).length,
     ogrenilen: deck.filter((c) => (c.state?.streak ?? 0) >= 2).length,
     yarin: deck.filter((c) => c.state && c.state.due > now && c.state.due <= now + gun).length,
   };
@@ -227,6 +263,77 @@ export function pruneStates(deck: ReviewCard[]) {
     }
   }
   if (changed) writeStates(states);
+}
+
+/* ── Çalışma günlüğü ───────────────────────────────────────────────────── */
+
+const LOG_KEY = "medisea:log:v1";
+
+/** Gün başına: kaç kart çalışıldı, kaçı bilindi. */
+export type DayLog = { kart: number; dogru: number };
+export type StudyLog = Record<string, DayLog>;
+
+/** Yerel tarih anahtarı (UTC değil — kullanıcının günü neredeyse orası). */
+export function dayKey(d = new Date()): string {
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+export function readLog(): StudyLog {
+  try {
+    const raw = localStorage.getItem(LOG_KEY);
+    const v = raw ? JSON.parse(raw) : null;
+    return v && typeof v === "object" ? v : {};
+  } catch {
+    return {};
+  }
+}
+
+/** Bir kart çalışıldığını günlüğe işler. */
+export function logStudy(dogru: boolean) {
+  try {
+    const log = readLog();
+    const k = dayKey();
+    const g = log[k] ?? { kart: 0, dogru: 0 };
+    g.kart++;
+    if (dogru) g.dogru++;
+    log[k] = g;
+
+    // 120 günden eskisini at — günlük sınırsız büyümesin
+    const sinir = dayKey(new Date(Date.now() - 120 * 86_400_000));
+    for (const gun of Object.keys(log)) if (gun < sinir) delete log[gun];
+
+    localStorage.setItem(LOG_KEY, JSON.stringify(log));
+  } catch {
+    // kota dolu — günlük süs, çalışmayı engellememeli
+  }
+}
+
+/**
+ * Kesintisiz çalışma günü sayısı. Bugün henüz çalışılmadıysa dünden geriye
+ * sayar (gün bitmeden seriyi kırılmış göstermek moral bozar).
+ */
+export function streakOf(log: StudyLog, now = new Date()): number {
+  let n = 0;
+  const d = new Date(now);
+  if (!log[dayKey(d)]?.kart) d.setDate(d.getDate() - 1);
+  while (log[dayKey(d)]?.kart) {
+    n++;
+    d.setDate(d.getDate() - 1);
+  }
+  return n;
+}
+
+/** Son N günün etkinliği, eskiden yeniye. */
+export function recentDays(log: StudyLog, n = 14, now = new Date()) {
+  const out: { gun: string; kart: number; dogru: number }[] = [];
+  for (let i = n - 1; i >= 0; i--) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - i);
+    const k = dayKey(d);
+    out.push({ gun: k, kart: log[k]?.kart ?? 0, dogru: log[k]?.dogru ?? 0 });
+  }
+  return out;
 }
 
 /** İnsan okunur vade metni. */
