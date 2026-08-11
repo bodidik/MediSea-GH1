@@ -1,0 +1,27 @@
+{
+  "title": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Menin", "Epigenetik", "JunD", "DHODH", "Leflunomid", "LUMEN1", "Sentetik Ölümcüllük", "Osteoporoz"],
+    "parent": "men1-sendromu",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Epigenetik İskele Proteini Olarak Menin",
+      "html": "<p>Kromozom <strong>11q13</strong> lokusundaki MEN1 geni 10 ekzon içerir ve <strong>610 amino asitlik</strong> ubikiter eksprese edilen nükleer bir iskele (scaffold) proteini olan menin'i kodlar. Menin, DNA'ya doğrudan bağlanmak yerine histon modifikasyonu ve kromatin yapısını yeniden şekillendirerek gen transkripsiyonunu epigenetik düzeyde denetler.</p><p class=\"mt-2\"><strong>MLL Sinerjisi:</strong> Menin, MLL1 ve MLL2 (Mixed-Lineage Leukemia) histon metiltransferaz kompleksleriyle fiziksel birleşerek <strong>histon H3 lizin 4 (H3K4) trimetilasyonunu</strong> katalize eder. Bu işaret, p21 ve p27 (CDKN1B) gibi hücre döngüsü inhibitörlerinin ekspresyonunu sürdürerek kontrolsüz hücre bölünmesini engeller.</p><p class=\"mt-2\"><strong>Doku-Spesifik Çift Karakter:</strong> Meninin en şaşırtıcı özelliği, rolünün dokuya göre değişmesidir. Endokrin dokularda klasik bir <strong>tümör supresör</strong> olarak işlev görürken, hematopoetik dokularda (özellikle MLL-rearranged lösemilerde) MLL-menin kompleks aktivitesi üzerinden <strong>pro-onkojenik</strong> bir sürücüye dönüşür.</p>"
+    },
+    {
+      "heading": "JunD Etkileşimi ve Klinik Risk Stratifikasyonu",
+      "html": "<p>Menin, AP-1 transkripsiyon faktörü JunD ile doğrudan etkileşerek onun proliferatif ve transformasyon aktivitesini mSin3A–HDAC ko-represör kompleksini promoter bölgelerine çağırarak baskılar.</p><p class=\"mt-2\"><strong>Mortaliteyi Belirleyen Mutasyon Alanı (Fransız GTE Kohort):</strong> JunD etkileşim alanını (<em>Loss of Interaction – LOI</em>) bozan patojenik varyantlar:</p><ul class=\"mb-4\"><li>Genel ölüm riski: <strong>Adjusted HR 1.88</strong></li><li>Timik NET ve GEP-NET kaynaklı kanser ölümü: <strong>Adjusted HR 2.34</strong></li></ul><p><strong>Yeni Varyant — c.1078del (2025):</strong> Kodon 360'ta saptanan heterozigot delesyon <strong>c.1078del (p.Ile360Serfs*8)</strong>, menin proteininin C-terminal JunD etkileşim alanını kesen bir truncation mutasyonudur. JunD represyon yeteneğinin tamamen ortadan kalkması, agresif timik karsinoid gelişimiyle doğrudan ilişkilendirilmiştir.</p>"
+    },
+    {
+      "heading": "Sentetik Ölümcüllük: DHODH İnhibisyonu ve LUMEN1 Çalışması",
+      "html": "<p>MEN1 hastalarındaki duodenopankreatik NET tedavisinde kemoterapi ve cerrahinin sınırlarını aşmak amacıyla tamamen yeni bir genetik hedef keşfedilmiştir:</p><p><strong>DHODH ve Sentetik Ölümcüllük:</strong> Translasiyonel araştırmalarda <strong>dihidroorotat dehidrogenaz (DHODH)</strong> enziminin, menin eksikliği olan tümör hücrelerinde seçici bir <em>sentetik ölümcül</em> hedef olduğu gösterilmiştir. DHODH blokajı, menin-defisyent hücreleri sağlıklı hücrelere dokunmadan apoptozise sürükler.</p><p class=\"mt-2\"><strong>Leflunomid ve LUMEN1 Faz II (NCT05605587):</strong> DHODH inhibitörü olan leflunomid'in MEN1 ilişkili tümörlerde etkinliği hücresel ve ksenograft modellerinde kanıtlanmış, ardından Mayıs 2023'te tek kollu LUMEN1 Faz II klinik çalışması başlatılmıştır. Çalışma, genetik olarak doğrulanmış MEN1 hastalarında leflunomid tedavisinin tümör ve hormonal yanıt üzerindeki klinik başarısını değerlendirmektedir.</p>"
+    },
+    {
+      "heading": "Doğrudan Kemik Etkileri: PTH-Bağımsız Osteoporoz Patogenezi",
+      "html": "<p>MEN1 ilişkili primer hiperparatiroidi sonrası yapılan DXA çalışmaları, paratiroidektomi (PTX) sonrasında kemik mineral yoğunluğunun (BMD) sporadik vakalardaki gibi tam toparlanamadığını ve hastaların genel popülasyona kıyasla <strong>kalıcı olarak daha düşük BMD</strong>'ye sahip olduğunu ortaya koymuştur.</p><p class=\"mt-2\"><strong>Men1 fl/fl Knockout Fare Modeli Bulguları:</strong></p><ul class=\"mb-4\"><li>Menin eksikliği osteoblast ve mezenkimal kök hücre soylarında <strong>osteosit-osteoklast çapraz etkileşimini (crosstalk)</strong> doğrudan bozar.</li><li>Menin kaybı, osteoblast sayılarını korurken <strong>osteoklastogenezi aşırı uyararak</strong> kemik rezorpsiyonunu artırır ve matris mineralizasyonunu bozar.</li></ul><p>Bu veriler, MEN1 hastalarındaki ağır kemik yıkımının yalnızca yüksek PTH düzeylerine bağlı olmadığını; <strong>menin eksikliğinin kemik üzerinde bağımsız ve doğrudan negatif etkileri</strong> olduğunu kanıtlamaktadır. Bu bulgu, PTX sonrası kemik takibini ve antirezorptif tedavi planlamasını klinik olarak yeniden konumlandırmaktadır.</p>"
+    }
+  ]
+}
