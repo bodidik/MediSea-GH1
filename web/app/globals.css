@@ -146,3 +146,48 @@ button {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+/* ── Okuma vurguları (ReadingTools) ──────────────────────────────────────
+   Fosforlu kalem etkisi: metnin ÜSTÜNÜ kaplamak yerine alt %45'ini boyar.
+   Bu sayede hem açık zeminli (site) hem koyu zeminli (premium YDUS)
+   sayfalarda metin okunur kalır — iki ayrı tema seti gerekmez. */
+mark.ms-hl {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: filter 0.15s ease;
+}
+mark.ms-hl:hover {
+  filter: brightness(1.15) saturate(1.2);
+}
+
+mark.ms-hl-y { background-image: linear-gradient(transparent 55%, rgba(250, 204, 21, 0.55) 55%); }
+mark.ms-hl-g { background-image: linear-gradient(transparent 55%, rgba(74, 222, 128, 0.5) 55%); }
+mark.ms-hl-b { background-image: linear-gradient(transparent 55%, rgba(96, 165, 250, 0.5) 55%); }
+mark.ms-hl-p { background-image: linear-gradient(transparent 55%, rgba(244, 114, 182, 0.5) 55%); }
+
+mark.ms-hl-bold {
+  font-weight: 800;
+  color: inherit;
+  filter: contrast(1.4);
+}
+mark.ms-hl-u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: currentColor;
+  opacity: 0.95;
+}
+
+/* Araç çubuğunun beliriş animasyonu — transform'a dokunmaz, çünkü konum
+   (üstte/altta) inline transform ile ayarlanıyor. Sadece opaklık. */
+@keyframes msPop {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  mark.ms-hl { transition: none; }
+}

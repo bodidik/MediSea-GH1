@@ -1,4 +1,6 @@
 import SiteHeader from "@/app/components/SiteHeader";
+import ReadingTools from "@/app/components/ReadingTools";
+import NotePanel from "@/app/components/NotePanel";
 import Link from "next/link";
 import React from "react";
 
@@ -13,6 +15,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <main className="flex-1 w-full flex flex-col">
         {children}
       </main>
+
+      {/* Okuma araçları — yalnızca [data-readable] taşıyan sayfalarda görünür */}
+      <ReadingTools />
+      <NotePanel />
 
       {/* --- YENİ PREMİUM FOOTER --- */}
       <footer className="bg-blue-950 text-blue-200/70 border-t-4 border-amber-500 mt-auto relative overflow-hidden">
@@ -65,6 +71,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   </Link>
                 </li>
                 <li><Link href="/tools" className="hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>
+                <li><Link href="/calisma-alanim" className="hover:text-white transition-colors">Çalışma Alanım</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">Hakkımızda</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors">İletişim & Destek</Link></li>
               </ul>

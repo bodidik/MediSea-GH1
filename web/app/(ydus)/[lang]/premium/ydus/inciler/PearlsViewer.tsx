@@ -122,7 +122,10 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                       <h3 className="text-lg font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors leading-snug">
                         {pearl.title}
                       </h3>
-                      <div 
+                      {/* data-readable: her inci kendi kimliğiyle vurgulanabilir.
+                          Arama filtresi listeyi değiştirse de vurgular inciye yapışık kalır. */}
+                      <div
+                        data-readable={`pearl:${pearl.id}`}
                         className="text-sm text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none"
                         dangerouslySetInnerHTML={{ __html: pearl.content }}
                       />

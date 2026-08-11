@@ -232,8 +232,10 @@ function SoruKarti({
               </div>
             </div>
 
-            {/* Detaylı açıklama */}
-            <div style={{ padding: '1rem 1.25rem' }}>
+            {/* Detaylı açıklama
+                data-readable: açıklama metni vurgulanabilir. Kimlik soruya bağlı —
+                sonraki soruya geçince vurgular karışmaz, o soruya ait kalır. */}
+            <div data-readable={`soru:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
               {soru.aciklama_detay && (
                 <p style={{ fontSize: '13px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
                   {soru.aciklama_detay}

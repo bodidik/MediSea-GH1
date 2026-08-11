@@ -2,7 +2,17 @@
   "title": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim",
   "meta": {
     "updatedAt": "11 Ağu 2026",
-    "tags": ["Endokrinoloji", "MEN1", "Akromegali", "Somatotropinoma", "GHoma", "IGF-1", "Somatostatin", "Hipofiz", "PitNET"],
+    "tags": [
+      "Endokrinoloji",
+      "MEN1",
+      "Akromegali",
+      "Somatotropinoma",
+      "GHoma",
+      "IGF-1",
+      "Somatostatin",
+      "Hipofiz",
+      "PitNET"
+    ],
     "parent": "men1-sendromu",
     "order": 9
   },
@@ -13,7 +23,7 @@
     },
     {
       "heading": "Kemik Sağlığı Üzerindeki Sinerjik Negatif Etki",
-      "html": "<p>MEN1'de primer hiperparatiroidi (MPHPT) kemik yıkımının birincil nedenidir. Eşlik eden aktif akromegali ise bu tabloya ek metabolik hasar katmanları ekler:</p><ul class=\"mb-4\"><li>GH/IGF-1 fazlalığına bağlı sekonder diyabet ve insülin direnci,</li><li>Olası eşzamanlı Cushing sendromu veya hipogonadizm,</li><li>Doğrudan kortikotrabecüler kemik mikromimarisinin bozulması.</li></ul><p>Bu faktörler kemik mineral yoğunluğunu ve kırık eşiğini sinerjik olarak olumsuz etkiler; DXA ve Trabeküler Kemik Skoru (TBS) takibi bu nedenle özellikle önemlidir.</p>"
+      "html": "<p>MEN1'de primer hiperparatiroidi (MPHPT) kemik yıkımının birincil nedenidir. Eşlik eden aktif akromegali ise bu tabloya ek metabolik hasar katmanları ekler:</p><ul class=\"mb-4\"><li>GH/IGF-1 fazlalığına bağlı sekonder diyabet ve insülin direnci,</li><li>Olası eşzamanlı Cushing sendromu veya hipogonadizm,</li><li>Doğrudan kortikotrabeküler kemik mikromimarisinin bozulması.</li></ul><p>Bu faktörler kemik mineral yoğunluğunu ve kırık eşiğini sinerjik olarak olumsuz etkiler; DXA ve Trabeküler Kemik Skoru (TBS) takibi bu nedenle özellikle önemlidir.</p>"
     },
     {
       "heading": "Prolaktinomadan Ayırım: &quot;Plurihormonal Tümör&quot; Tuzağı",
@@ -31,5 +41,6 @@
       "heading": "Biyokimyasal ve Radyolojik Sürveyans Protokolü",
       "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Test</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sıklık</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Not</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Serum Prolaktin + IGF-1</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Yıllık</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">İkisi birlikte, ayrı ayrı değil</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Dinamik Hipofiz MRG (kontrastlı)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Her 3 yılda bir</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Biyokimya normal olsa dahi</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Tarama başlangıç yaşı</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">10 yaş (güncel risk-adapte)</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Thakker 2012'de 5 yaş; 2025 revizyonu 10 yaşa çekti</td></tr></tbody></table></div>"
     }
-  ]
+  ],
+  "summary": ""
 }

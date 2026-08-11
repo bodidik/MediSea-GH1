@@ -133,7 +133,9 @@ export default async function TopicDetailPage({
               </div>
             )}
 
-            <div className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
+            {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
+                vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}
+            <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
                   <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>

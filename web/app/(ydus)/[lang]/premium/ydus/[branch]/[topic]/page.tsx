@@ -365,7 +365,10 @@ export default async function KonuSayfasi({
 
           {/* ANA İÇERİK */}
           <div>
-            <IcerikRenderer bloklar={veri.icerik} />
+            {/* data-readable: ReadingTools vurgulamayı bu blokla sınırlar */}
+            <div data-readable>
+              <IcerikRenderer bloklar={veri.icerik} />
+            </div>
 
             {/* AI ASİSTAN — konuya soru sor */}
             <SoruSor branch={branch} topic={topic} baslik={veri.meta.baslik} />
