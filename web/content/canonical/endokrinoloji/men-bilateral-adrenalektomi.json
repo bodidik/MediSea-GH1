@@ -1,0 +1,39 @@
+{
+  "title": "MEN Sendromlarında Bilateral Adrenalektomi: Endikasyonlar ve Postoperatif Yönetim",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "MEN2", "Adrenalektomi", "Feokromositoma", "Cushing", "Adrenal Yetmezlik"],
+    "parent": "men1-sendromu",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Giriş: Neden Bilateral Adrenalektomi?",
+      "html": "<p>MEN sendromlarında (özellikle MEN1 ve MEN2) adrenal bez tutulumu — nodüler hiperplazi, fonksiyonel veya non-fonksiyonel adenomlar, feokromositoma ve nadiren adrenokortikal karsinom — oldukça sık izlenen klinik durumlardır. Her iki adrenal bezin cerrahi olarak çıkarılmasını ifade eden <strong>bilateral adrenalektomi</strong>, hastada kalıcı sürrenal yetmezliğe yol açacağı ve ömür boyu glukokortikoid/mineralokortikoid replasman tedavisi gerektireceği için yalnızca belirli, hayati endikasyonlarda değerlendirilir.</p>"
+    },
+    {
+      "heading": "1. Dirençli Cushing Sendromunda &quot;End-Organ Ablasyonu&quot;",
+      "html": "<p>MEN1 seyrinde ACTH-bağımlı Cushing sendromu; hipofiz adenomuna (Cushing hastalığı) ya da torasik veya abdominal nöroendokrin tümörlerin (NET) ektopik ACTH/CRH salgısına bağlı olarak gelişebilir.</p><p><strong>Endikasyon:</strong> Aşağıdaki koşulların bir arada bulunduğu durumlarda bilateral adrenalektomi tercih edilir:</p><ul class=\"mb-4\"><li>Primer odak (örn. metastatik/rezeke edilemeyen timik karsinoid veya pankreatik NET) cerrahi olarak tamamen çıkarılamıyorsa,</li><li>Steroidogenez inhibitörleri dahil medikal tedaviler hiperkortizolizmi kontrol altına alamıyorsa,</li><li>Hayatı tehdit eden metabolik komplikasyonlar (dirençli hipertansiyon, konjestif kalp yetmezliği, ağır fırsatçı enfeksiyonlar, ilerleyici osteoporoz) devam ediyorsa.</li></ul><p><strong>Klinik Rolü:</strong> Bu girişim, ACTH üreten primer tümörü tedavi etmez; ancak kortizol üretiminin kaynağı olan her iki adrenal bezi ortadan kaldırarak <strong>end-organ ablasyonu</strong> işlevi görür ve hastayı hiperkortizolizmin ölümcül sistemik etkilerinden korur.</p>"
+    },
+    {
+      "heading": "2. MEN2'de Bilateral Feokromositoma Yönetimi",
+      "html": "<p>MEN2A ve MEN2B sendromlarında RET proto-onkogen mutasyonlarına bağlı feokromositomalar hastaların yaklaşık <strong>%50'sinde</strong> gelişir. Sporadik vakalardan farklı olarak sıklıkla iki taraflı (bilateral) ve çok odaklı (multifokal) olarak ortaya çıkarlar.</p><p><strong>Önceliklendirme Kuralı:</strong> MEN2 hastasında medüller tiroid kanseri (MTC) veya primer hiperparatiroidi nedeniyle cerrahi planlanıyorsa, ameliyat öncesinde mutlaka biyokimyasal feokromositoma taraması yapılmalıdır. Feokromositoma saptanırsa, intraoperatif ölümcül hipertansif krizleri önlemek amacıyla <strong>boyun cerrahisinden önce adrenalektomi gerçekleştirilmelidir</strong>.</p><p><strong>Bilateral Tutulumda Yaklaşım:</strong> Görüntüleme ve fonksiyonel testlerde her iki adrenal bezde aktif feokromositoma odakları saptanırsa, bilateral adrenalektomi endikedir. Seçilmiş vakalarda kortikal-koruyucu adrenalektomi (<em>adrenal-sparing</em>) planlanabilir; ancak yaygın ve multifokal tutulumda her iki bezin tamamen çıkarılması rasyonel seçenektir.</p>"
+    },
+    {
+      "heading": "3. Adrenokortikal Karsinom (ACC) Şüphesi veya Malignite Kriterleri",
+      "html": "<p>MEN1 hastalarında adrenal korteks lezyonlarının yaşam boyu prevalansı <strong>%20–73</strong> arasındadır; bunların büyük kısmı non-fonksiyonel benign oluşumlardır. Ancak kitlelerin hacimsel ve yapısal özellikleri cerrahi endikasyonunu doğrudan belirler.</p><p><strong>Cerrahi Endikasyon Kriterleri (tek veya bilateral):</strong></p><ul class=\"mb-4\"><li>Lezyon boyutu <strong>≥4 cm</strong>,</li><li>Hızlı büyüme dinamiği: 6–12 aylık takipte <strong>%20 veya en az 5 mm boyut artışı</strong>,</li><li>Native BT'de <strong>HU &gt;20</strong> veya kalsifikasyon, düzensiz sınır, santral nekroz gibi şüpheli radyolojik özellikler.</li></ul><p>Bu kriterler her iki adrenal bezdeki kitleler için de geçerliyse, maligniteyi ekarte etmek veya tedavi etmek amacıyla <strong>bilateral adrenalektomi</strong> uygulanması klinik bir gerekliliktir.</p>"
+    },
+    {
+      "heading": "4. Medikal Olarak Kontrol Altına Alınamayan Bilateral Fonksiyonel Adrenal Tümörler",
+      "html": "<p>Nadir olmakla birlikte, aşağıdaki durumlarda bilateral adrenalektomi cerrahi bir seçenek olarak gündeme gelir:</p><ul class=\"mb-4\"><li>Her iki adrenal bezden otonom kortizol salgısı (ACTH-bağımsız Cushing sendromu / bilateral otonom kortizol salgılayan adenomlar/hiperplazi),</li><li>Bilateral primer aldosteronizm (Conn sendromu),</li><li>Farmakolojik ajanlarla kontrol altına alınamayan hormonal aşırılık durumları.</li></ul>"
+    },
+    {
+      "heading": "Bilateral Adrenalektomi: Endikasyon Özeti",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Endikasyon</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Sendrom</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Koşul</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Dirençli ektopik CS</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN1</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Primer odak rezeke edilemeyen; medikal tedavi yetersiz; hayatı tehdit eden komplikasyonlar</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Bilateral feokromositoma</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN2A / MEN2B</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Her iki bezde aktif odak; MTC/PHPT cerrahisinden önce önceliklendirilmeli</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">ACC şüphesi / malignite</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN1</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">≥4 cm, hızlı büyüme, HU &gt;20, şüpheli radyoloji — bilateral ise bilateral rezeksiyon</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">Bilateral fonksiyonel tümör</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">MEN1</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Medikal tedaviye dirençli bilateral otonom kortizol/aldosteron salgısı</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Postoperatif Takip ve Uzun Dönem Yönetim",
+      "html": "<p>Bilateral adrenalektomi sonrasında hastada kaçınılmaz olarak <strong>primer adrenal yetmezlik</strong> gelişir. Uzun dönem yönetimin temel unsurları:</p><ul class=\"mb-4\"><li><strong>Glukokortikoid Replasmanı:</strong> Hidrokortizon veya prednizolon, ömür boyu kesintisiz kullanılmalıdır.</li><li><strong>Mineralokortikoid Replasmanı:</strong> Fludrokortizon, elektrolit homeostazisi için zorunludur.</li><li><strong>Stres Dozu Eğitimi:</strong> Hasta ve yakınları; enfeksiyon, cerrahi ve travma durumlarında dozun 2–3 katına çıkarılmasını ve acil durumlarda IM/IV hidrokortizon enjeksiyonunu bilmelidir.</li><li><strong>Adrenal Kriz Önlemi:</strong> Hasta bir <em>acil bilgi kartı</em> taşımalı; tüm sağlık çalışanları adrenal yetersizliği hakkında bilgilendirilmelidir.</li></ul><p>Bu hastalarda ilerleyen dönemde Nelson sendromu (bilateral adrenalektomi sonrası hipofiz ACTH adenomunun baskı kaybı ile büyümesi) açısından da <strong>yıllık hipofiz MRG</strong> değerlendirilmesi akılda tutulmalıdır.</p>"
+    }
+  ]
+}
