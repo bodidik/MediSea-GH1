@@ -2,7 +2,9 @@
   "title": "Riedel Tiroiditi",
   "summary": "\"Demir sertliğinde guatr\" (Struma Lignosa) kliniği; IgG4 ilişkili sistemik fibrozis süreci, histopatolojik ayırıcı tanı zorlukları ve tedavi yönetim algoritmaları.",
   "meta": {
-    "tags": ["Endokrinoloji", "Tiroid", "Tiroiditler", "IgG4-İlişkili Hastalık", "Struma Lignosa"]
+    "tags": ["Endokrinoloji", "Tiroid", "Tiroiditler", "IgG4-İlişkili Hastalık", "Struma Lignosa"],
+    "parent": "tiroid-hastaliklari-ana",
+    "order": 8
   },
   "sections": [
     {
