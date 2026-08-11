@@ -1,0 +1,27 @@
+{
+  "title": "Menin'in Çift Karakteri: Hematopoetik Dokularda Pro-Onkojenik Rol ve Lösemi",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "Menin", "MLL", "Lösemi", "Epigenetik", "Onkojen", "MLL-inhibitör"],
+    "parent": "men1-menin-molekuler-gelismeler",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Doku-Spesifik Çift Karakter: Supresörden Onkojene",
+      "html": "<p>Menin, endokrin dokularda klasik bir tümör supresör olarak çalışırken, <strong>hematopoetik dokularda</strong> tam tersi bir rol üstlenerek hücresel transformasyonu ve lösemik süreci tetikleyen <strong>pro-onkojenik</strong> bir faktöre dönüşür. Aynı proteinin dokuya göre zıt işlevler üstlenmesi, menini modern onkolojinin en ilginç çift karakterli moleküllerinden biri yapar.</p>"
+    },
+    {
+      "heading": "MLL Kompleksi ile Fiziksel Etkileşim: İskele ve Köprü Rolü",
+      "html": "<p>Menin, 610 amino asitlik bir çekirdek iskele (scaffold) proteinidir; DNA'ya doğrudan bağlanmaz, bunun yerine protein-protein etkileşimleri aracılığıyla gen transkripsiyonunu epigenetik düzeyde yönlendirir.</p><p class=\"mt-2\"><strong>Onkojenik Köprü:</strong> Hematopoetik dokularda menin, <strong>MLL (Mixed-Lineage Leukemia) histon metiltransferaz</strong> proteinleri ile <strong>LEDGF (Lens Epithelium-Derived Growth Factor)</strong> arasında fiziksel bir köprü kurarak MLL'yi kanserle ilişkili hedef genlerin promoter bölgelerine yönlendirir.</p><p class=\"mt-2\"><strong>Aynı Cep, Zıt Çıktılar:</strong> Moleküler çalışmalar, menin üzerindeki <em>aynı bağlanma cebinin</em> (binding pocket) hem tümör baskılayıcı yolaktaki JunD'ye hem de pro-onkojenik MLL kompleksine bağlandığını göstermiştir. Ancak bu iki bağlanma, gen transkripsiyonu üzerinde tamamen zıt epigenetik etkilere yol açar.</p>"
+    },
+    {
+      "heading": "Epigenetik Kontrolün Kaybı ve Lösemik Dönüşüm",
+      "html": "<p>Hematopoetik öncül hücrelerde menin, MLL aracılı histon metilasyon süreçlerini ko-regüle ederek hücre proliferasyonunu ve hayatta kalma yolaklarını yöneten kritik onkogenlerin ekspresyonunu aktif tutar. <strong>MLL yeniden düzenlemelerinde (MLL-rearranged / MLL-r)</strong> bu epigenetik aktivasyon kontrolden çıkar:</p><ul class=\"mb-4\"><li>Hematopoetik hücrelerde diferansiyasyon blokajı,</li><li>Klonal ve kontrolsüz proliferasyon,</li><li>Lösemik dönüşüm.</li></ul><p>MLL-r lösemiler; akut myeloid lösemi (AML), akut lenfoblastik lösemi (ALL) ve karma fenotipli akut lösemileri kapsar ve özellikle yenidoğan ile erken çocukluk çağı lösemilerinde ağırlıklı bir yer tutar.</p>"
+    },
+    {
+      "heading": "Terapötik Hedeflenebilirlik: Menin-MLL İnhibitörleri",
+      "html": "<p>Menin ile MLL arasındaki onkojenik iş birliği, hedefe yönelik lösemi tedavisinde önemli bir kapı açmıştır. <strong>Küçük moleküllü menin-MLL interaksiyon inhibitörleri</strong>, bu fiziksel etkileşimi doğrudan bloke ederek lösemik hücreleri apoptozise ve yeniden diferansiyasyona yönlendirir.</p><p class=\"mt-3\"><strong>Direnç Mekanizması:</strong> Klinik araştırmalar, uzun süreli kullanımda <em>MEN1 geninde somatik mutasyonlar</em> gelişebildiğini göstermiştir. Bu mutasyonlar menin proteininin üç boyutlu yapısını değiştirerek inhibitör ilacın bağlanma cebine erişimini engeller ve klinik tedavi direncine yol açar. Direnç mekanizması olarak tanımlanan bu MEN1 somatik mutasyonları, ilginin MEN1-lösemi eksenine olan akademik ilgiyi daha da artırmıştır.</p>"
+    }
+  ]
+}

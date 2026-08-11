@@ -1,0 +1,35 @@
+{
+  "title": "MEN1'de Non-Fonksiyonel pNET: Aktif İzlem mi, Cerrahi mi?",
+  "meta": {
+    "updatedAt": "11 Ağu 2026",
+    "tags": ["Endokrinoloji", "MEN1", "pNET", "Non-Fonksiyonel", "NF-pNET", "Pankreatektomi", "Aktif İzlem", "Ki-67", "GEP-NET"],
+    "parent": "men1-sendromu",
+    "order": 8
+  },
+  "sections": [
+    {
+      "heading": "Klinik Önemi: En Sık Ama En Ölümcül",
+      "html": "<p>NF-pNET'ler, MEN1 hastalarındaki tüm pankreatik lezyonların <strong>%70–80'ini</strong> oluşturur ve rutin sürveyans görüntülemelerinde insidental olarak saptanır. Asemptomatik olmalarına karşın MEN1'de erken ve prematüre mortalitenin <strong>başlıca nedenidir</strong>. Yönetimde temel gerilim şudur: metastaz riskini önlemek ile agresif cerrahinin getirdiği kalıcı morbidite (ekzokrin yetmezlik, Tip 3c labil diyabet) arasında doğru dengeyi kurmak.</p>"
+    },
+    {
+      "heading": "2 cm Eşiği: Paradigma Değişimi",
+      "html": "<p>Tarihsel olarak bazı merkezler <strong>1 cm</strong> gibi agresif bir cerrahi eşiği savunurken, güncel uluslararası konsensus (ENETS 2023, 2025 MEN1 Kılavuzları) <strong>2 cm altı NF-pNET'lerde aktif izlemi</strong> standart yaklaşım olarak kabul etmektedir.</p><p class=\"mt-2\">Bu değişimin kanıt zemini: toplam 236 MEN1 hastasını kapsayan üç büyük retrospektif kohort meta-analizi (Nell ve ark. — DutchMEN1; Partelli ve ark. — İtalya/İngiltere/Almanya; Triponez ve ark. — Fransız GTE). Bu çalışmaların hiçbirinde 2 cm altı tümörlerde aktif izlem ile cerrahi grupları arasında genel sağkalım veya metastazsız sağkalım açısından istatistiksel anlamlı fark saptanmamıştır.</p><div class=\"overflow-x-auto mt-3\"><table class=\"w-full text-sm border-collapse\"><thead><tr class=\"bg-slate-100 dark:bg-slate-700\"><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Boyut</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Risk</th><th class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 text-left\">Yaklaşım</th></tr></thead><tbody><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">&lt;1 cm</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Çok düşük</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Aktif izlem — cerrahiden kesinlikle kaçın</td></tr><tr class=\"bg-slate-50 dark:bg-slate-800\"><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">1–2 cm</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">~%3 uzak metastaz</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Gri alan — biyolojik davranışa göre bireyselleştir</td></tr><tr><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2 font-medium\">≥2 cm</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">≥%30 metastaz</td><td class=\"border border-slate-300 dark:border-slate-600 px-3 py-2\">Cerrahi rezeksiyon — kesin endikasyon</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Büyüme Hızı (Growth Kinetics): Boyuttan Daha Belirleyici",
+      "html": "<p>1–2 cm arasındaki tümörlerde, statik boyuttan çok <strong>büyüme kinetiği</strong> cerrahi kararını belirler:</p><ul class=\"mb-4\"><li><strong>Cerrahi Endikasyonu:</strong> Yılda &gt;%20 boyut artışı <em>veya</em> mutlak &gt;5 mm/yıl büyüme — tümör 2 cm'nin altında olsa dahi cerrahi planlanmalıdır.</li><li><strong>İzlem Endikasyonu:</strong> Yıllık büyüme &lt;1 mm/yıl — aktif sürveyansa güvenle devam edilebilir.</li></ul>"
+    },
+    {
+      "heading": "Yüksek Risk Kriterleri: Grade Yükselmesi ve Agresif Biyoloji",
+      "html": "<p>Aşağıdaki bulgulardan herhangi birinin varlığında, boyuttan bağımsız olarak cerrahi kaçınılmaz hale gelir:</p><ol class=\"mb-4\"><li><strong>Ki-67 &gt;%10 veya Grade 2/3:</strong> FNA veya histopatoloji ile saptanan intermediate/high-grade.</li><li><strong>Ana Kanal Obstrüksiyonu:</strong> Wirsung kanalında tümöre bağlı dilatasyon veya tıkanıklık.</li><li><strong>Metastatik Şüphe:</strong> Bölgesel lenf nodu tutulumu veya uzak metastaz bulgusu.</li><li><strong>FDG-PET Pozitifliği:</strong> ⁶⁸Ga-DOTATATE'de düşük tutulum + ¹⁸F-FDG PET/CT'de yüksek avidite — tümör de-diferansiasyonunun (grade yükselmesinin) kötü prognostik göstergesi.</li><li><strong>Fransız GTE Entegre Skoru (2024):</strong> Ki-67, büyüme hızı ve fonksiyonel görüntüleme bulgularını bir arada değerlendiren yüksek risk puanlama sistemi.</li></ol>"
+    },
+    {
+      "heading": "Aktif İzlem Protokolü",
+      "html": "<p><strong>Görüntüleme Yöntemi:</strong> Radyasyon maruziyetini minimize etmek için birincil modalite <strong>kontrastlı Pankreas MRG</strong>'dir. EUS ve ⁶⁸Ga-DOTATATE PET/CT rutin taramada kullanılmaz; yalnızca lezyon karakterizasyonu veya preoperatif planlama için endikedir.</p><p class=\"mt-3\"><strong>Takip Aralığı:</strong></p><ul class=\"mb-4\"><li>Yeni saptanan &lt;2 cm lezyon: ilk kontrol MRG <strong>6–12 ay</strong> sonra.</li><li>Stabil seyir (&lt;1 mm/yıl büyüme): de-eskalasyon ile <strong>1–2 yılda bir</strong> MRG'ye geç.</li></ul>"
+    },
+    {
+      "heading": "Erken Cerrahiden Neden Kaçınılır? Postoperatif Morbidite",
+      "html": "<p>Geniş ölçekli çalışmalarda pankreas rezeksiyonu uygulanan MEN1 hastalarının <strong>%50'sinde</strong> cerrahi komplikasyon geliştiği, bunların <strong>%25'inin</strong> Clavien-Dindo Grade III–IV (major müdahale gerektiren ağır komplikasyon/fistül) düzeyinde olduğu gösterilmiştir.</p><p class=\"mt-2\">Uzun dönemde ise agresif rezeksiyonlar (distal pankreatektomi / Whipple) ömür boyu süren <strong>ekzokrin pankreas yetmezliği</strong> ve hipoglisemiye aşırı eğilimli <strong>Tip 3c labil diyabet</strong> riskini beraberinde taşır. İndolan seyirli küçük bir tümör için hastayı bu kalıcı morbiditeye maruz bırakmak klinik olarak rasyonel değildir.</p>"
+    }
+  ]
+}
