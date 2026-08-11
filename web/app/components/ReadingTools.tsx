@@ -56,6 +56,8 @@ export default function ReadingTools() {
   const [pending, setPending] = useState<Pending | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
   const [penMode, setPenMode] = useState(false);
+  /** Son kaydetme depo dolu olduğu için başarısız oldu mu */
+  const [kayitHatasi, setKayitHatasi] = useState(false);
 
   const barRef = useRef<HTMLDivElement>(null);
   const marksRef = useRef<ReadingMark[]>([]);
@@ -67,7 +69,9 @@ export default function ReadingTools() {
   const commit = useCallback(
     (next: ReadingMark[]) => {
       setMarks(next);
-      saveMarks(pathname, next);
+      // Kaydetme başarısızsa (depo dolu) kullanıcı bunu BİLMELİ: ekranda vurgu
+      // duruyor ama yenilemede kaybolacak.
+      setKayitHatasi(!saveMarks(pathname, next));
       // Çalışma Alanım sayfası başlığı buradan okur
       if (next.length) touchIndex(pathname, pageTitle());
     },
@@ -109,7 +113,10 @@ export default function ReadingTools() {
       const shown = new Set<string>();
 
       for (const m of saved) {
-        const root = roots.get(m.k);
+        // "true" eski kayıtlardan gelir: keyOf bir dönem JSX'in değersiz
+        // data-readable için ürettiği "true" değerini kimlik sayıyordu.
+        // O kayıtlar ilk konteynere aittir.
+        const root = roots.get(m.k) ?? (m.k === "true" ? roots.get("0") : undefined);
         // Konteyner şu an sayfada değil (başka soru/inci gösteriliyor).
         // Vurgu ona ait, SİLİNMEZ — sadece boyanmaz.
         if (!root) {
@@ -278,7 +285,8 @@ export default function ReadingTools() {
       const id = pending.hit[0];
       const current = marksRef.current.find((m) => m.id === id);
       if (!current) return;
-      const root = containerMap().get(current.k);
+      const cmap = containerMap();
+      const root = cmap.get(current.k) ?? (current.k === "true" ? cmap.get("0") : undefined);
       unpaint(id);
       const range = root && rangeFrom(root, current.s, current.e);
       if (range) paint(range, id, st);
@@ -509,12 +517,25 @@ export default function ReadingTools() {
             </div>
           )}
 
+          {kayitHatasi && (
+            <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
+              <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
+              depolaması dolu — yenilediğinde kaybolurlar.{" "}
+              <a href="/calisma-alanim" className="font-bold underline">
+                Yer aç
+              </a>
+            </div>
+          )}
           <button
             onClick={() => setPanelOpen((v) => !v)}
-            className="flex items-center gap-2 rounded-full bg-blue-950 px-4 py-2.5 text-white shadow-xl shadow-blue-950/25 transition-all hover:bg-blue-900 active:scale-95"
+            className={`flex items-center gap-2 rounded-full px-4 py-2.5 text-white shadow-xl transition-all active:scale-95 ${
+              kayitHatasi
+                ? "bg-rose-600 shadow-rose-600/25 hover:bg-rose-500"
+                : "bg-blue-950 shadow-blue-950/25 hover:bg-blue-900"
+            }`}
             title="Vurgularım"
           >
-            <span className="text-sm">🖍</span>
+            <span className="text-sm">{kayitHatasi ? "⚠" : "🖍"}</span>
             <span className="text-[11px] font-black uppercase tracking-widest">{marks.length}</span>
           </button>
         </div>

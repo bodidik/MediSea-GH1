@@ -53,12 +53,17 @@ export function loadMarks(pathname: string): ReadingMark[] {
   }
 }
 
-export function saveMarks(pathname: string, marks: ReadingMark[]) {
+/**
+ * Vurguları saklar. BAŞARIYI DÖNDÜRÜR — çağıran taraf sessizce yutmamalı:
+ * depo dolduğunda kullanıcıya kaydedildi demek, kaydetmemekten beterdir.
+ */
+export function saveMarks(pathname: string, marks: ReadingMark[]): boolean {
   try {
     if (marks.length === 0) localStorage.removeItem(storageKey(pathname));
     else localStorage.setItem(storageKey(pathname), JSON.stringify(marks));
+    return true;
   } catch {
-    // kota dolu / gizli sekme — sessizce geç
+    return false; // kota dolu / gizli sekme
   }
 }
 
@@ -68,10 +73,17 @@ export function containers(): HTMLElement[] {
   return Array.from(document.querySelectorAll<HTMLElement>("[data-readable]"));
 }
 
-/** Konteynerin kimliği: öznitelik değeri, boşsa sayfadaki sırası. */
+/**
+ * Konteynerin kimliği: öznitelik değeri, yoksa sayfadaki sırası.
+ *
+ * JSX'te değersiz yazılan `data-readable` DOM'a `data-readable="true"` olarak
+ * basılır. Bunu KİMLİK saymıyoruz — aksi halde aynı sayfadaki iki değersiz
+ * konteyner de "true" olur, biri diğerini eşlemede ezerdi.
+ */
 export function keyOf(el: HTMLElement, index: number): string {
-  const v = el.getAttribute("data-readable");
-  return v && v.trim() ? v.trim() : String(index);
+  const v = el.getAttribute("data-readable")?.trim();
+  if (!v || v === "true") return String(index);
+  return v;
 }
 
 /** Sayfadaki konteynerleri kimliklerine göre eşler. */

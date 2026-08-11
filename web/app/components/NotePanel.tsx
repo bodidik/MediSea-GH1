@@ -45,6 +45,8 @@ export default function NotePanel() {
   const [erasing, setErasing] = useState(false);
   const [hasPen, setHasPen] = useState(false);
   const [dirty, setDirty] = useState(false);
+  /** Depo dolu vb. nedenle son kaydetme başarısız oldu mu */
+  const [kayitHatasi, setKayitHatasi] = useState(false);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const surfaceRef = useRef<HTMLDivElement>(null);
@@ -97,6 +99,7 @@ export default function NotePanel() {
   useEffect(() => {
     if (!dirty) return;
     const t = setTimeout(() => {
+      let ok = true;
       try {
         if (!text.trim() && strokes.length === 0) {
           localStorage.removeItem(KEY(pathname));
@@ -106,8 +109,12 @@ export default function NotePanel() {
           touchIndex(pathname, pageTitle());
         }
       } catch {
-        // kota dolu — sessizce geç, kullanıcının yazması kesilmesin
+        // Depo dolu. SESSİZCE GEÇMEK YASAK: aşağıda "Kaydedildi" yazan bir
+        // başlık var; hata yutulursa kullanıcıya notu güvendeymiş gibi
+        // görünür ve sekmeyi kapatınca kaybeder.
+        ok = false;
       }
+      setKayitHatasi(!ok);
       setDirty(false);
     }, 600);
     return () => clearTimeout(t);
@@ -399,8 +406,18 @@ export default function NotePanel() {
                 <div className="text-[11px] font-black uppercase tracking-widest text-blue-950">
                   Not Defteri
                 </div>
-                <div className="truncate text-[9px] font-bold uppercase tracking-widest text-slate-400">
-                  {dirty ? "Kaydediliyor…" : hasContent ? "Kaydedildi" : "Bu sayfa için"}
+                <div
+                  className={`truncate text-[9px] font-bold uppercase tracking-widest ${
+                    kayitHatasi ? "text-rose-600" : "text-slate-400"
+                  }`}
+                >
+                  {kayitHatasi
+                    ? "⚠ Kaydedilemedi"
+                    : dirty
+                      ? "Kaydediliyor…"
+                      : hasContent
+                        ? "Kaydedildi"
+                        : "Bu sayfa için"}
                 </div>
               </div>
               <Link
@@ -418,6 +435,39 @@ export default function NotePanel() {
                 ✕
               </button>
             </header>
+
+            {/* Kaydetme başarısız — kullanıcı notu kaybetmeden kurtarabilsin */}
+            {kayitHatasi && (
+              <div className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
+                <p className="mb-2 text-[11px] font-semibold leading-snug text-rose-700">
+                  Tarayıcı depolaması dolu olduğu için bu not kaydedilemedi. Sekmeyi
+                  kapatırsan kaybolur.
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    onClick={() => navigator.clipboard?.writeText(text).catch(() => {})}
+                    disabled={!text.trim()}
+                    className="rounded-lg bg-rose-600 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-rose-500 disabled:opacity-40"
+                  >
+                    Yazıyı kopyala
+                  </button>
+                  {strokes.length > 0 && (
+                    <button
+                      onClick={exportPng}
+                      className="rounded-lg bg-rose-600 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-rose-500"
+                    >
+                      Çizimi indir
+                    </button>
+                  )}
+                  <Link
+                    href="/calisma-alanim"
+                    className="rounded-lg border border-rose-300 bg-white px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-rose-600 transition-colors hover:bg-rose-50"
+                  >
+                    Yer aç
+                  </Link>
+                </div>
+              </div>
+            )}
 
             {/* kip seçimi */}
             <div className="flex gap-1 border-b border-slate-100 px-3 py-2">
