@@ -3,7 +3,20 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
-const ITEMS = [
+type ItemId =
+  | "nausea" | "tremor" | "sweats" | "anxiety" | "agitation"
+  | "tactile" | "auditory" | "visual" | "headache" | "orientation";
+
+type CiwaItem = {
+  readonly id: ItemId;
+  readonly label: string;
+  readonly question: string;
+  /** Yönelim maddesi 0–4 puanlanır; diğer tüm maddeler 0–7. */
+  readonly max4?: boolean;
+  readonly opts: readonly { readonly v: number; readonly l: string }[];
+};
+
+const ITEMS: readonly CiwaItem[] = [
   {
     id: "nausea",
     label: "Bulantı / Kusma",
@@ -133,8 +146,6 @@ const ITEMS = [
     ],
   },
 ] as const;
-
-type ItemId = typeof ITEMS[number]["id"];
 
 export default function CiwaArPage() {
   const [answers, setAnswers] = React.useState<Record<ItemId, number>>({} as Record<ItemId, number>);

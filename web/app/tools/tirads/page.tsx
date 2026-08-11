@@ -4,7 +4,19 @@ import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
-const CATEGORIES = [
+type CatId = "composition" | "echogenicity" | "shape" | "margin" | "foci";
+
+type TiradsCategory = {
+  readonly id: CatId;
+  readonly title: string;
+  /** Yalnızca bazı kategorilerde bulunan açıklama satırı. */
+  readonly note?: string;
+  /** Yalnızca ekojen odaklar çoklu seçilebilir; en yüksek puan alınır. */
+  readonly multi?: boolean;
+  readonly opts: readonly { readonly label: string; readonly v: number }[];
+};
+
+const CATEGORIES: readonly TiradsCategory[] = [
   {
     id: "composition",
     title: "Kompozisyon",
@@ -57,8 +69,6 @@ const CATEGORIES = [
     ],
   },
 ] as const;
-
-type CatId = typeof CATEGORIES[number]["id"];
 
 function getTiRads(pts: number): { level: string; label: string; color: string; bg: string; border: string; desc: string } {
   if (pts === 0) return { level: "TR1", label: "BENİGN", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", desc: "Biyopsi veya takip gerekmez" };
