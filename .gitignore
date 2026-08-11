@@ -56,6 +56,8 @@ web/.vercel/
 
 # Runtime data
 data/
+# ...ama bu bir kaynak dizini, çalışma zamanı verisi değil (build ona bağlı)
+!web/app/tools/data/
 tmp/
 temp/
 uploads/
