@@ -52,6 +52,9 @@ interface KonuVerisi {
     soru?: number;
     flashcard?: number;
     inci?: number;
+    /* Vaka sayacı: moduller.vaka ile birlikte kullanılır. Mevcut içerik
+       JSON'larında henüz yok, o yüzden opsiyonel — arayüz zaten
+       `!== undefined` ile koruyor. */
     vaka?: number;
   };
   icerik: IcerikBlok[];
