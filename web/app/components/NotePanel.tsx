@@ -9,6 +9,13 @@
 //  · Avuç reddi — kalem bir kez görüldüyse parmak artık çizmez, sadece kaydırır
 //  · Kalemin silgi ucu (buttons & 32) otomatik silgiye geçer
 //
+// KAYDIRMA TUVALDE ELLE YAPILIR. `touch-action` işaretçi türünü ayırt etmez;
+// kalem de dokunma sayılır. Parmak kaydırabilsin diye tuvale `pan-y` verilince
+// KALEMİN KENDİ HAREKETİ de kaydırma jesti oluyordu: tablette yazarken alttaki
+// metin kayıyor, yazı bozuluyordu. Bu yüzden tuval `touch-action: none` ile
+// bütün jestleri kendi üstüne alır, parmakla kaydırmayı aşağıdaki
+// pointer işleyicileri `scrollTop` ile kendisi uygular.
+//
 // Çizim, PNG olarak değil VURUŞ (stroke) dizisi olarak saklanır: çözünürlükten
 // bağımsız, panel genişliği değişince yeniden ölçeklenir, tek tek silinebilir.
 
@@ -21,12 +28,43 @@ import { pageTitle, touchIndex } from "@/app/lib/study-index";
 type Pt = [number, number, number];
 type Stroke = { c: string; w: number; p: Pt[] };
 type Mode = "text" | "draw";
+type Paper = "cizgili" | "kareli" | "bos";
 
 const KEY = (p: string) => `medisea:notes:v1:${p}`;
 const WIDTH_KEY = "medisea:notew";
+const PAPER_KEY = "medisea:notepaper";
 
 const INKS = ["#1E293B", "#2563EB", "#DC2626", "#16A34A"];
 const NIBS = [2, 4, 7];
+
+/** Kâğıt çizgi aralığı (px). Kareli kip aynı aralığı iki eksende kullanır. */
+const ARALIK = 28;
+const KAGIT_RENK = "#E2E8F0";
+/** Kâğıt deseni. İlk katman SAYDAM zeminlidir, yoksa ikinciyi örterdi. */
+const KAGIT: Record<Paper, string> = {
+  cizgili: `repeating-linear-gradient(transparent 0 ${ARALIK - 1}px, ${KAGIT_RENK} ${ARALIK - 1}px ${ARALIK}px)`,
+  kareli:
+    `repeating-linear-gradient(transparent 0 ${ARALIK - 1}px, ${KAGIT_RENK} ${ARALIK - 1}px ${ARALIK}px),` +
+    `repeating-linear-gradient(90deg, transparent 0 ${ARALIK - 1}px, ${KAGIT_RENK} ${ARALIK - 1}px ${ARALIK}px)`,
+  bos: "none",
+};
+const KAGITLAR: [Paper, string, string][] = [
+  ["cizgili", "≡", "Çizgili"],
+  ["kareli", "▦", "Kareli"],
+  ["bos", "▢", "Boş"],
+];
+
+/** Panel genişliği ön ayarları — tablette sürükleme tutamağı zahmetli. */
+const BOYUTLAR: [number, string, string][] = [
+  [340, "S", "Dar — konu metni açıkta kalsın"],
+  [500, "M", "Orta"],
+  [720, "L", "Geniş — uzun çizim"],
+];
+
+/** Avuç, kalem ucundan çok daha geniş bir temas alanı bildirir. */
+const avucMu = (ev: React.PointerEvent) => ev.width > 35 || ev.height > 35;
+/** Kalem kalktıktan sonra avucun tuvali kaydırmaması için ölü süre (ms). */
+const KALEM_OLU_SURE = 700;
 
 export default function NotePanel() {
   const pathname = usePathname();
@@ -35,6 +73,7 @@ export default function NotePanel() {
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<Mode>("text");
   const [width, setWidth] = useState(420);
+  const [paper, setPaper] = useState<Paper>("cizgili");
 
   const [text, setText] = useState("");
   const [strokes, setStrokes] = useState<Stroke[]>([]);
@@ -51,6 +90,10 @@ export default function NotePanel() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const surfaceRef = useRef<HTMLDivElement>(null);
   const drawing = useRef<Stroke | null>(null);
+  /** Parmakla kaydırma: son y konumu (tuval jestleri kendi üstüne aldığı için) */
+  const kaydirma = useRef<number | null>(null);
+  /** Kalemin son temas anı — avuç, kalem kalkar kalkmaz kaydırmasın diye */
+  const sonKalem = useRef(0);
   const strokesRef = useRef<Stroke[]>([]);
   const redoRef = useRef<Stroke[]>([]);
   strokesRef.current = strokes;
@@ -88,12 +131,17 @@ export default function NotePanel() {
     }
     setRedo([]);
     setDirty(false);
+  }, [pathname]);
 
+  /* ── Panel tercihleri (sayfadan bağımsız, bir kez okunur) ────────────── */
+  useEffect(() => {
     try {
       const w = Number(localStorage.getItem(WIDTH_KEY));
       if (w >= 300 && w <= 900) setWidth(w);
+      const k = localStorage.getItem(PAPER_KEY);
+      if (k === "cizgili" || k === "kareli" || k === "bos") setPaper(k);
     } catch {}
-  }, [pathname]);
+  }, []);
 
   /* ── Kaydet (gecikmeli) ──────────────────────────────────────────────── */
   useEffect(() => {
@@ -225,9 +273,23 @@ export default function NotePanel() {
   };
 
   const onDown = (ev: React.PointerEvent<HTMLCanvasElement>) => {
-    if (ev.pointerType === "pen" && !hasPen) setHasPen(true);
-    // avuç reddi: kalem görüldüyse parmak artık çizmez, sayfayı kaydırır
-    if (hasPen && ev.pointerType === "touch") return;
+    if (ev.pointerType === "pen") {
+      if (!hasPen) setHasPen(true);
+      sonKalem.current = Date.now();
+    }
+
+    // Avuç reddi: kalem görüldüyse parmak ÇİZMEZ, tuvali kaydırır. Kaydırmayı
+    // tarayıcıya bırakamayız (bkz. dosya başı: `touch-action` kalemi de kapsar),
+    // bu yüzden elle yapılır. Avucun kendisi ve kalem daha yeni kalkmışsa gelen
+    // temas kaydırmaz — yazarken sayfa oynamasın.
+    if (hasPen && ev.pointerType === "touch") {
+      if (avucMu(ev) || Date.now() - sonKalem.current < KALEM_OLU_SURE) return;
+      try {
+        canvasRef.current?.setPointerCapture(ev.pointerId);
+      } catch {}
+      kaydirma.current = ev.clientY;
+      return;
+    }
 
     ev.preventDefault();
     try {
@@ -247,7 +309,16 @@ export default function NotePanel() {
   };
 
   const onMove = (ev: React.PointerEvent<HTMLCanvasElement>) => {
-    if (hasPen && ev.pointerType === "touch") return;
+    if (ev.pointerType === "pen") sonKalem.current = Date.now();
+
+    if (hasPen && ev.pointerType === "touch") {
+      const yzey = surfaceRef.current;
+      if (kaydirma.current !== null && yzey) {
+        yzey.scrollTop -= ev.clientY - kaydirma.current;
+        kaydirma.current = ev.clientY;
+      }
+      return;
+    }
 
     if (!drawing.current) {
       if (erasing && ev.buttons) eraseAt(norm(ev));
@@ -275,6 +346,7 @@ export default function NotePanel() {
   };
 
   const onUp = () => {
+    kaydirma.current = null;
     const s = drawing.current;
     drawing.current = null;
     if (!s || !s.p.length) return;
@@ -313,6 +385,26 @@ export default function NotePanel() {
     setDirty(true);
   };
 
+  /** Kâğıt deseni CSS'te gradyan, PNG'de çizgi — indirilen dosya ekranla aynı olsun. */
+  const paintPaper = (ctx: CanvasRenderingContext2D, W: number, H: number) => {
+    if (paper === "bos") return;
+    ctx.strokeStyle = KAGIT_RENK;
+    ctx.lineWidth = 1;
+    for (let y = ARALIK - 0.5; y < H; y += ARALIK) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(W, y);
+      ctx.stroke();
+    }
+    if (paper !== "kareli") return;
+    for (let x = ARALIK - 0.5; x < W; x += ARALIK) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, H);
+      ctx.stroke();
+    }
+  };
+
   const exportPng = () => {
     const src = canvasRef.current;
     if (!src) return;
@@ -325,6 +417,7 @@ export default function NotePanel() {
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(0, 0, out.width, out.height);
     ctx.scale(scale, scale);
+    paintPaper(ctx, src.clientWidth, src.clientHeight);
     for (const s of strokes) paintStroke(ctx, s, src.clientWidth);
 
     const a = document.createElement("a");
@@ -333,9 +426,29 @@ export default function NotePanel() {
     a.click();
   };
 
-  /* ── Panel genişliği sürükleme ───────────────────────────────────────── */
+  const kagitSec = (k: Paper) => {
+    setPaper(k);
+    try {
+      localStorage.setItem(PAPER_KEY, k);
+    } catch {}
+  };
+
+  /* ── Panel genişliği ─────────────────────────────────────────────────── */
+  const boyutSec = (w: number) => {
+    setWidth(w);
+    try {
+      localStorage.setItem(WIDTH_KEY, String(w));
+    } catch {}
+  };
+
   const startResize = (ev: React.PointerEvent) => {
     ev.preventDefault();
+    const el = ev.currentTarget;
+    try {
+      // Tutamak parmakla da çekilebilmeli; yakalama olmadan işaretçi tutamaktan
+      // çıkar çıkmaz olaylar kesiliyor.
+      el.setPointerCapture(ev.pointerId);
+    } catch {}
     const startX = ev.clientX;
     const startW = width;
     const move = (e: PointerEvent) => {
@@ -343,14 +456,16 @@ export default function NotePanel() {
       setWidth(w);
     };
     const up = () => {
-      window.removeEventListener("pointermove", move);
-      window.removeEventListener("pointerup", up);
+      el.removeEventListener("pointermove", move);
+      el.removeEventListener("pointerup", up);
+      el.removeEventListener("pointercancel", up);
       try {
         localStorage.setItem(WIDTH_KEY, String(widthRef.current));
       } catch {}
     };
-    window.addEventListener("pointermove", move);
-    window.addEventListener("pointerup", up);
+    el.addEventListener("pointermove", move);
+    el.addEventListener("pointerup", up);
+    el.addEventListener("pointercancel", up);
   };
   const widthRef = useRef(width);
   widthRef.current = width;
@@ -380,11 +495,13 @@ export default function NotePanel() {
       {/* ── Panel ── */}
       {open && (
         <>
-          {/* mobilde arka planı karart */}
+          {/* Yalnız telefonda arka planı karart. Tablette KARARTMA YOK: not
+              tutmanın amacı konuya bakarak yazmak, karartma metni görünmez
+              yapıyordu. */}
           <div
             data-ms-ui
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-[56] bg-slate-950/20 backdrop-blur-[1px] lg:hidden"
+            className="fixed inset-0 z-[56] bg-slate-950/20 backdrop-blur-[1px] md:hidden"
           />
 
           <aside
@@ -392,12 +509,15 @@ export default function NotePanel() {
             style={{ width: `min(${width}px, 94vw)` }}
             className="fixed right-0 top-0 z-[57] flex h-full flex-col border-l border-slate-200 bg-white shadow-2xl"
           >
-            {/* genişlik tutamağı (yalnız masaüstü) */}
+            {/* Genişlik tutamağı. Telefonda panel zaten tam en, orada gizli. */}
             <div
               onPointerDown={startResize}
-              className="absolute left-0 top-0 hidden h-full w-1.5 cursor-col-resize bg-transparent hover:bg-blue-400/40 lg:block"
+              style={{ touchAction: "none" }}
               title="Genişliği ayarla"
-            />
+              className="group absolute left-0 top-0 z-10 hidden h-full w-4 cursor-col-resize items-center justify-center bg-transparent hover:bg-blue-400/20 md:flex lg:w-3"
+            >
+              <span className="h-10 w-1 rounded-full bg-slate-300 transition-colors group-hover:bg-blue-500" />
+            </div>
 
             {/* başlık */}
             <header className="flex items-center gap-2 border-b border-slate-100 px-3 py-2.5">
@@ -469,8 +589,8 @@ export default function NotePanel() {
               </div>
             )}
 
-            {/* kip seçimi */}
-            <div className="flex gap-1 border-b border-slate-100 px-3 py-2">
+            {/* kip seçimi + panel boyutu */}
+            <div className="flex items-center gap-1 border-b border-slate-100 px-3 py-2">
               {(
                 [
                   ["text", "✎", "Yazı"],
@@ -489,6 +609,24 @@ export default function NotePanel() {
                   {icon} {label}
                 </button>
               ))}
+              {/* Sürükleme tutamağı tablette zahmetli; hazır boyutlar tek dokunuş. */}
+              <span className="mx-1 hidden h-5 w-px bg-slate-200 md:block" />
+              <div className="hidden md:flex md:gap-0.5">
+                {BOYUTLAR.map(([w, label, title]) => (
+                  <button
+                    key={w}
+                    onClick={() => boyutSec(w)}
+                    title={title}
+                    className={`h-7 w-7 rounded-lg text-[10px] font-black transition-colors ${
+                      Math.abs(width - w) < 30
+                        ? "bg-slate-900 text-white"
+                        : "text-slate-400 hover:bg-slate-100"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* ── YAZI KİPİ ── */}
@@ -503,7 +641,7 @@ export default function NotePanel() {
                   placeholder={
                     "Bu sayfaya dair notların…\n\nVurgu araç çubuğundaki 🗒 düğmesiyle seçtiğin metni buraya alıntı olarak gönderebilirsin."
                   }
-                  className="flex-1 resize-none px-4 py-3 text-[13px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-300"
+                  className="flex-1 resize-none overscroll-contain px-4 py-3 text-[13px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-300"
                 />
                 <footer className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 py-2">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
@@ -601,10 +739,28 @@ export default function NotePanel() {
                   >
                     ↷
                   </button>
+                  <span className="mx-1 h-5 w-px bg-slate-200" />
+                  {KAGITLAR.map(([k, icon, label]) => (
+                    <button
+                      key={k}
+                      onClick={() => kagitSec(k)}
+                      title={`${label} sayfa`}
+                      className={`h-6 rounded-lg px-2 text-[11px] transition-colors ${
+                        paper === k
+                          ? "bg-slate-900 text-white"
+                          : "text-slate-500 hover:bg-slate-100"
+                      }`}
+                    >
+                      {icon}
+                    </button>
+                  ))}
                 </div>
 
                 {/* tuval */}
-                <div ref={surfaceRef} className="flex-1 overflow-y-auto bg-slate-50 p-2">
+                <div
+                  ref={surfaceRef}
+                  className="flex-1 overflow-y-auto overscroll-contain bg-slate-50 p-2"
+                >
                   <canvas
                     ref={canvasRef}
                     onPointerDown={onDown}
@@ -616,10 +772,10 @@ export default function NotePanel() {
                       width: "100%",
                       height: `${surfaceH() * 100}%`,
                       aspectRatio: `1 / ${surfaceH()}`,
-                      // kalem görüldüyse parmak kaydırsın, çizmesin (avuç reddi)
-                      touchAction: hasPen ? "pan-y" : "none",
-                      backgroundImage:
-                        "repeating-linear-gradient(#fff 0 27px, #E7EBF0 27px 28px)",
+                      // Bütün jestler tuvalin: kalem yazarken hiçbir şey kaymaz.
+                      // Parmakla kaydırmayı onDown/onMove elle uygular.
+                      touchAction: "none",
+                      backgroundImage: KAGIT[paper],
                     }}
                     className="w-full cursor-crosshair rounded-xl border border-slate-200 bg-white shadow-inner"
                   />
@@ -627,7 +783,9 @@ export default function NotePanel() {
 
                 <footer className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 py-2">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
-                    {hasPen ? "🖊 Kalem · avuç reddi açık" : `${strokes.length} çizgi`}
+                    {hasPen
+                      ? "🖊 Kalem yazar · parmak kaydırır"
+                      : `${strokes.length} çizgi`}
                   </span>
                   <div className="flex gap-1">
                     <button
