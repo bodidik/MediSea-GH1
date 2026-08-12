@@ -19,8 +19,18 @@ export default async function TopicDetailPage({
   if (!fs.existsSync(filePath)) return notFound();
 
   // 1. Ana Dosyayı Oku
-  const rawData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-  
+  // Bozuk TEK bir içerik dosyası bütün rotayı 500'e düşürmemeli. Ayrıştırma
+  // düşerse sayfa ayakta kalır: künye, alt başlıklar ve kenar çubuğu çalışmaya
+  // devam eder, içerik yerine dürüst bir hata kartı gösterilir.
+  let rawData: any = {};
+  let okumaHatasi: string | null = null;
+  try {
+    rawData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch (e) {
+    okumaHatasi = e instanceof Error ? e.message : String(e);
+    console.error(`[konu] ${slug}/${topicSlug}.json ayrıştırılamadı:`, okumaHatasi);
+  }
+
   const topicItem = {
     slug: topicSlug,
     branch: slug,
@@ -136,6 +146,21 @@ export default async function TopicDetailPage({
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
                 vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}
             <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
+              {okumaHatasi && (
+                <div className="bg-amber-50 border-2 border-amber-300 rounded-3xl p-6">
+                  <h2 className="text-base font-black text-amber-900 uppercase tracking-wide mb-2">
+                    Bu konunun içeriği okunamadı
+                  </h2>
+                  <p className="text-sm text-amber-900/80 font-medium leading-relaxed mb-3">
+                    <code className="font-mono">{slug}/{topicSlug}.json</code> dosyası geçerli
+                    bir JSON değil, bu yüzden metin gösterilemiyor. Dosya düzeltilene kadar
+                    düzenleyici de kapalı — boş bir kayıt yazıp mevcut içeriğin üzerine
+                    gitmemesi için.
+                  </p>
+                  <p className="text-[11px] font-mono text-amber-900/60 break-all">{okumaHatasi}</p>
+                </div>
+              )}
+
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
                   <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
@@ -165,7 +190,10 @@ export default async function TopicDetailPage({
               )}
             </div>
 
-            {/* İçerik Editörü (Yönetici Paneli) — okuyucu içeriğinden görsel olarak ayrıştırılmıştır */}
+            {/* İçerik Editörü (Yönetici Paneli) — okuyucu içeriğinden görsel olarak ayrıştırılmıştır.
+                Dosya ayrıştırılamadıysa GÖSTERİLMEZ: editör elindeki `item`'ı geri yazar,
+                o da boş olduğu için kaydetmek diskteki asıl içeriği silerdi. */}
+            {!okumaHatasi && (
             <div className="pt-4 mt-4 border-t-2 border-dashed border-slate-200">
               <div className="flex items-center gap-2 mb-3 px-2">
                 <span className="w-2 h-2 rounded-full bg-slate-300"></span>
@@ -177,6 +205,7 @@ export default async function TopicDetailPage({
                 <InlineTopicEditor item={topicItem} />
               </div>
             </div>
+            )}
           </div>
 
           {/* --- SAĞ KOLON: DİNAMİK SİDEBAR --- */}
