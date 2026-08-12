@@ -55,6 +55,9 @@ function computePoints(u?: CountsResponse["user"]) {
 export default function PremiumPage() {
   const [data, setData] = useState<CountsResponse | null>(null);
   const [review, setReview] = useState<ReviewStats | null>(null);
+  /** İki istek de tamamlandı mı. Bu olmadan, veri hiç gelmediğinde iskelet
+   *  sonsuza kadar dönüyor ve kullanıcı "birazdan gelecek" sanıyordu. */
+  const [yuklendi, setYuklendi] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -71,6 +74,8 @@ export default function PremiumPage() {
       } catch (e) {
         console.error("Review API Hatası:", e);
       }
+
+      setYuklendi(true);
     })();
   }, []);
 
@@ -105,11 +110,23 @@ export default function PremiumPage() {
       <div className="p-4 md:p-8 max-w-6xl mx-auto space-y-8">
         
         {/* 2. KULLANICI METRİKLERİ (ZIRHLI: data veya data.user yoksa Loading gösterir) */}
-        {!data || !data.user ? (
+        {(!data || !data.user) && !yuklendi ? (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[1, 2, 3, 4].map(i => (
               <div key={i} className="h-24 bg-slate-900 rounded-2xl animate-pulse border border-slate-800" />
             ))}
+          </div>
+        ) : !data || !data.user ? (
+          /* İstek bitti ama kullanıcı verisi gelmedi. İskeleti döndürmeye devam
+             etmek "birazdan gelecek" izlenimi veriyordu; durumu açıkça söyle. */
+          <div className="rounded-2xl border border-amber-900/40 bg-amber-950/20 p-5">
+            <div className="flex items-center gap-2 text-sm font-bold text-amber-300">
+              <AlertTriangle size={18} /> Kişisel istatistiklerin alınamadı
+            </div>
+            <p className="mt-1.5 text-[13px] leading-relaxed text-amber-200/70">
+              Çalışma sunucusuna ulaşılamadı. Tarayıcında tuttuğun vurgu, not ve
+              tekrar geçmişin bundan etkilenmez.
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -141,11 +158,11 @@ export default function PremiumPage() {
 
         {/* 3. REVIEW İSTATİSTİKLERİ */}
         <PremiumCard plan={role} title="Spaced Repetition (Aralıklı Tekrar) Radarı" min="P">
-          {!review ? (
+          {!review && !yuklendi ? (
             <div className="h-20 bg-slate-800/50 rounded-xl animate-pulse" />
-          ) : !review.ok ? (
+          ) : !review || !review.ok ? (
             <div className="p-4 bg-red-950/30 border border-red-900/50 rounded-xl text-sm font-bold text-red-400 flex items-center gap-2">
-              <AlertTriangle size={18} /> {review.error || "İstatistikler çekilirken bir hata oluştu."}
+              <AlertTriangle size={18} /> {review?.error || "Tekrar servisine ulaşılamadı."}
             </div>
           ) : (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">

@@ -24,6 +24,7 @@ export default function AddToSRButton({
 }: Props) {
   // Alert yerine modern UI geri bildirimi için durum yönetimi
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [note, setNote] = useState<string | null>(null);
 
   const ids = (
     contentIds ??
@@ -38,35 +39,54 @@ export default function AddToSRButton({
     label ??
     (contentId ? "SR'ye Ekle" : `Seçilenleri SR'ye Ekle (${ids.length})`);
 
+  // Bu düğme eskiden 800 ms bekleyip koşulsuz "Eklendi!" diyordu; hiçbir yere
+  // hiçbir şey yazmıyordu. Kullanıcıya kaydedilmemiş bir şeyi kaydedilmiş gibi
+  // göstermek, hiç kaydetmemekten beterdir — çağrı artık gerçek ve sonuç dürüst.
+  //
+  // /api/review/seed arka uca vekillik eder; arka uç ayakta değilse yanıtı
+  // { ok: true, mock: true } olur. "mock" bayrağı BAŞARI SAYILMAZ.
   async function handleClick() {
     setStatus("loading");
-    
+    setNote(null);
+
     try {
-      // ÇELİK KUBBE MANTIĞI: Gerçek API çağrısı yapılana kadar simülasyon (Mock) 
-      // İleride buraya gerçek fetch('/api/review/seed') eklenebilir.
-      await new Promise((resolve) => setTimeout(resolve, 800)); // 800ms şık bekleme efekti
-      
-      setStatus("success");
-      
-      // 2 saniye sonra butonu eski haline getir
-      setTimeout(() => setStatus("idle"), 2000);
-      
-    } catch (error) {
-      console.warn("SR'ye eklenirken hata oluştu. Çelik Kubbe devrede.");
-      // Backend çökse bile kullanıcıya başarmış hissi ver (UI kırılmasın)
-      setStatus("success");
-      setTimeout(() => setStatus("idle"), 2000);
+      const r = await fetch("/api/review/seed", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contentIds: ids, section, type }),
+      });
+      const j = await r.json().catch(() => null);
+
+      if (!r.ok || !j?.ok) {
+        setStatus("error");
+        setNote("Sunucu yanıt vermedi — kaydedilmedi.");
+      } else if (j.mock) {
+        setStatus("error");
+        setNote("Tekrar servisi bağlı değil — kaydedilmedi.");
+      } else {
+        setStatus("success");
+      }
+    } catch {
+      setStatus("error");
+      setNote("Bağlantı kurulamadı — kaydedilmedi.");
     }
+
+    setTimeout(() => {
+      setStatus("idle");
+      setNote(null);
+    }, 4000);
   }
 
   // Duruma göre değişen Premium Koyu Tema renkleri
   const getButtonStyles = () => {
     if (status === "success") return "bg-emerald-500/20 text-emerald-400 border-emerald-500/50";
+    if (status === "error") return "bg-rose-500/20 text-rose-300 border-rose-500/50";
     if (status === "loading") return "bg-slate-700 text-slate-400 border-slate-600 cursor-wait";
     return "bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-600 hover:border-slate-500";
   };
 
   return (
+    <span className="inline-flex flex-col items-start gap-1">
     <button
       type="button"
       disabled={disabled}
@@ -96,7 +116,12 @@ export default function AddToSRButton({
         </svg>
       )}
 
-      {status === "success" ? "Eklendi!" : btnLabel}
+      {status === "success" ? "Eklendi!" : status === "error" ? "Eklenemedi" : btnLabel}
     </button>
+
+    {note && (
+      <span className="text-[11px] leading-snug text-rose-300">{note}</span>
+    )}
+    </span>
   );
 }

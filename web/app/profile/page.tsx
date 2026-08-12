@@ -2,11 +2,16 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import PlanBadge, { type PlanType } from "@/components/PlanBadge";
 import RequirePlan from "@/components/RequirePlan";
 import UpgradeCard from "@/components/UpgradeCard";
 
 type CountsResponse = {
+  /** Arka uç ulaşılamazsa /api/counts uydurma sayılarla { mock: true } döner.
+   *  Bu bayrak varken kullanıcıya sayı GÖSTERİLMEZ — kendi verisi hakkında
+   *  uydurma rakam görmek, hiç görmemekten kötüdür. */
+  mock?: boolean;
   totals: {
     topics: number;
     boardQuestions: number;
@@ -59,7 +64,13 @@ export default function ProfilePage() {
     };
   }, []);
 
-  const plan = (data?.user.plan ?? "free") as PlanType;
+  // data?.user.plan idi: `data` icin isteğe bağlı zincirleme vardı ama `user`
+  // icin yoktu. /api/counts mock yanitinda `user` alani hic yok, bu yuzden
+  // sayfa TypeError ile tamamen cokuyordu.
+  const plan = (data?.user?.plan ?? "free") as PlanType;
+
+  /** Gercek kullanici verisi var mi (mock degil ve `user` alani dolu). */
+  const gercekVeri = Boolean(data && !data.mock && data.user);
   const role = toRole(plan);
 
   const updated = data?.lastUpdatedISO
@@ -99,6 +110,24 @@ export default function ProfilePage() {
             {[...Array(6)].map((_, i) => (
               <div key={i} className="h-24 bg-slate-100 rounded-2xl animate-pulse" />
             ))}
+          </div>
+        ) : !gercekVeri ? (
+          /* Arka uç bağlı değil. Sahte rakam göstermek yerine durumu söyle. */
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5">
+            <div className="text-sm font-bold text-amber-900">
+              İstatistiklerin şu an alınamıyor
+            </div>
+            <p className="mt-1 text-[13px] leading-relaxed text-amber-800">
+              Çalışma sunucusuna ulaşılamadı. Buradaki sayılar senin gerçek verin
+              olmadığı için gösterilmiyor. Tarayıcında tuttuğun vurgu, not ve
+              tekrar geçmişin bundan etkilenmez.
+            </p>
+            <Link
+              href="/calisma-alanim"
+              className="mt-3 inline-block rounded-full bg-amber-900 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white transition-colors hover:bg-amber-800"
+            >
+              Çalışma Alanım →
+            </Link>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
