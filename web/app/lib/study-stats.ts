@@ -1,6 +1,9 @@
 // Profil ve premium sayfalarının ortak veri kaynağı.
 // localStorage'dan çalışma sayaçlarını toplar, oturum varsa sunucudan günceller.
 
+import { readAll, type Backup } from "@/app/lib/study-backup";
+import { streakOf } from "@/app/lib/review-deck";
+
 export type StudyNumbers = {
   marks: number;
   notes: number;
@@ -13,54 +16,40 @@ export type StudyNumbers = {
   source: "server" | "local";
 };
 
+const BOS: StudyNumbers = {
+  marks: 0, notes: 0, strokes: 0, cards: 0, due: 0, streak: 0,
+  pages: 0, studiedAt: null, source: "local",
+};
+
+/**
+ * Yedek nesnesinden sayaçlar. Sunucuya gönderilen sayaçlar da, ekranda
+ * gösterilenler de buradan çıkar — ikisi ayrı hesaplanırsa kaçınılmaz olarak
+ * ayrışır ve kullanıcı senkron sonrası "değişen" rakamlar görür.
+ */
+export function countsOf(b: Backup, now = Date.now()): StudyNumbers {
+  // Sayfa: YOL'a göre tekil. Anahtara göre sayılırsa hem vurgulanmış hem not
+  // alınmış bir sayfa iki ayrı anahtar taşıdığı için iki kez sayılır.
+  const pages = new Set([...Object.keys(b.marks), ...Object.keys(b.notes)]);
+
+  return {
+    marks: Object.values(b.marks).reduce((n, a) => n + a.length, 0),
+    notes: Object.keys(b.notes).length,
+    strokes: Object.values(b.notes).reduce((n, d) => n + (d.strokes?.length ?? 0), 0),
+    cards: Object.keys(b.review).length,
+    due: Object.values(b.review).filter((s) => !s || (s.due ?? 0) <= now).length,
+    streak: streakOf(b.log),
+    pages: pages.size,
+    studiedAt: null,
+    source: "local",
+  };
+}
+
 export function localStats(): StudyNumbers {
-  let marks = 0;
-  let noteCount = 0;
-  let strokeCount = 0;
-  const pages = new Set<string>();
-
   try {
-    for (let i = 0; i < localStorage.length; i++) {
-      const k = localStorage.key(i);
-      if (!k) continue;
-      if (k.startsWith("medisea:marks:v2:")) {
-        const v = JSON.parse(localStorage.getItem(k)!);
-        if (Array.isArray(v)) { marks += v.length; pages.add(k); }
-      } else if (k.startsWith("medisea:notes:v1:")) {
-        const v = JSON.parse(localStorage.getItem(k)!);
-        if (v?.text?.trim() || v?.strokes?.length) {
-          noteCount++;
-          strokeCount += v.strokes?.length ?? 0;
-          pages.add(k);
-        }
-      }
-    }
-  } catch {}
-
-  let cards = 0;
-  let due = 0;
-  try {
-    const raw = localStorage.getItem("medisea:review:v1");
-    const review = raw ? JSON.parse(raw) : {};
-    cards = Object.keys(review).length;
-    const now = Date.now();
-    due = Object.values(review).filter((s: any) => !s || (s.due ?? 0) <= now).length;
-  } catch {}
-
-  let streak = 0;
-  try {
-    const raw = localStorage.getItem("medisea:log:v1");
-    const log = raw ? JSON.parse(raw) : {};
-    const dk = (d: Date) => {
-      const p = (n: number) => String(n).padStart(2, "0");
-      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
-    };
-    const d = new Date();
-    if (!log[dk(d)]?.kart) d.setDate(d.getDate() - 1);
-    while (log[dk(d)]?.kart) { streak++; d.setDate(d.getDate() - 1); }
-  } catch {}
-
-  return { marks, notes: noteCount, strokes: strokeCount, cards, due, streak, pages: pages.size, studiedAt: null, source: "local" };
+    return countsOf(readAll());
+  } catch {
+    return { ...BOS };
+  }
 }
 
 export async function fetchServerStats(yerel: StudyNumbers): Promise<StudyNumbers> {

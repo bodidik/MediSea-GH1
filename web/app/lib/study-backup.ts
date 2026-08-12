@@ -67,7 +67,14 @@ function json<T>(raw: string | null): T | null {
   }
 }
 
-function readAll(): Backup {
+/**
+ * Depodaki çalışma verisinin tamamı, tek nesne.
+ *
+ * Sayaç üreten ya da veri taşıyan HER yer buradan okur. Bir dönem senkron ve
+ * profil sayfası bu yürüyüşün kendi kopyalarını tutuyordu; kopyalar sessizce
+ * ayrıştı (`log` yalnızca birine eklendi, sayfa sayımı diğerinde çift saydı).
+ */
+export function readAll(): Backup {
   const marks: Record<string, ReadingMark[]> = {};
   const notes: Record<string, NoteDoc> = {};
 

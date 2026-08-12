@@ -8,11 +8,13 @@
 //  pull(): sunucudan çek, boş cihaza yükle (oturum açıldığında bir kez)
 
 import {
+  readAll,
   summarize,
   applyImport,
   type Backup,
   type BackupSummary,
 } from "@/app/lib/study-backup";
+import { countsOf } from "@/app/lib/study-stats";
 
 const SYNC_META_KEY = "medisea:sync:v1";
 
@@ -44,107 +46,22 @@ const PUSH_DELAY = 5_000;
 
 function buildPayload(): { body: object; bytes: number } | null {
   try {
-    // study-backup'taki readAll'ı taklit ediyoruz — dışa export'u yok ama
-    // exportBackup bize blob veriyor. Blob senkron okunamaz. Dolayısıyla
-    // readAll'ın mantığını burada da kullanmak zorundayız.
-    const MARK_PREFIX = "medisea:marks:v2:";
-    const NOTE_PREFIX = "medisea:notes:v1:";
-    const REVIEW_KEY = "medisea:review:v1";
-    const INDEX_KEY = "medisea:index:v1";
-    const LOG_KEY = "medisea:log:v1";
-
-    const marks: Record<string, unknown[]> = {};
-    const notes: Record<string, unknown> = {};
-    let markCount = 0;
-    let noteCount = 0;
-    let strokeCount = 0;
-    const pages = new Set<string>();
-
-    for (let i = 0; i < localStorage.length; i++) {
-      const k = localStorage.key(i);
-      if (!k) continue;
-      if (k.startsWith(MARK_PREFIX)) {
-        const yol = k.slice(MARK_PREFIX.length);
-        try {
-          const v = JSON.parse(localStorage.getItem(k)!);
-          if (Array.isArray(v) && v.length) {
-            marks[yol] = v;
-            markCount += v.length;
-            pages.add(yol);
-          }
-        } catch {}
-      } else if (k.startsWith(NOTE_PREFIX)) {
-        const yol = k.slice(NOTE_PREFIX.length);
-        try {
-          const v = JSON.parse(localStorage.getItem(k)!);
-          if (v && (v.text?.trim() || v.strokes?.length)) {
-            notes[yol] = v;
-            noteCount++;
-            strokeCount += v.strokes?.length ?? 0;
-            pages.add(yol);
-          }
-        } catch {}
-      }
-    }
-
-    const review = tryParse(localStorage.getItem(REVIEW_KEY)) ?? {};
-    const index = tryParse(localStorage.getItem(INDEX_KEY)) ?? {};
-    const log = tryParse(localStorage.getItem(LOG_KEY)) ?? {};
-
-    const cardCount = Object.keys(review).length;
-    const dueCount = Object.values(review as Record<string, any>).filter(
-      (s: any) => !s || (s.due ?? 0) <= Date.now()
-    ).length;
-
-    // streak hesapla
-    let streak = 0;
-    const dk = (d: Date) => {
-      const p = (n: number) => String(n).padStart(2, "0");
-      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
-    };
-    const bugün = new Date();
-    const d = new Date(bugün);
-    if (!(log as any)[dk(d)]?.kart) d.setDate(d.getDate() - 1);
-    while ((log as any)[dk(d)]?.kart) {
-      streak++;
-      d.setDate(d.getDate() - 1);
-    }
-
-    const payload: Backup = {
-      app: "medisea",
-      v: 1,
-      at: Date.now(),
-      marks: marks as any,
-      notes: notes as any,
-      review,
-      index,
-      log,
-    };
-
-    const payloadStr = JSON.stringify(payload);
+    const payload = readAll();
+    const c = countsOf(payload);
 
     return {
       body: {
-        marks: markCount,
-        notes: noteCount,
-        strokes: strokeCount,
-        cards: cardCount,
-        due: dueCount,
-        streak,
-        pages: pages.size,
+        marks: c.marks,
+        notes: c.notes,
+        strokes: c.strokes,
+        cards: c.cards,
+        due: c.due,
+        streak: c.streak,
+        pages: c.pages,
         payload,
       },
-      bytes: new Blob([payloadStr]).size,
+      bytes: new Blob([JSON.stringify(payload)]).size,
     };
-  } catch {
-    return null;
-  }
-}
-
-function tryParse(raw: string | null): any {
-  if (!raw) return null;
-  try {
-    return JSON.parse(raw);
   } catch {
     return null;
   }
