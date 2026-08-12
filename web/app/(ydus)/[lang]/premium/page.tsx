@@ -3,39 +3,70 @@
 import React, { useEffect, useMemo, useState } from "react";
 import PlanBadge, { type PlanType } from "@/app/components/PlanBadge";
 import PremiumCard from "@/app/components/PremiumCard";
-import { 
-  Activity, Flame, Target, Zap, BrainCircuit, 
-  PlaySquare, Stethoscope, Map, AlertTriangle, Layers, Crown 
+import {
+  Activity, Flame, Target, Zap, BrainCircuit,
+  PlaySquare, Stethoscope, Map, AlertTriangle, Layers, Crown
 } from 'lucide-react';
 
-type CountsResponse = {
-  totals?: {
-    topics: number;
-    boardQuestions: number;
-    cases: number;
-    videos: number;
-    notes: number;
-  };
-  user?: {
-    solved: number;
-    accuracy: number;
-    streakDays: number;
-    rankPercentile: number;
-    todaySolved: number;
-    plan?: PlanType; 
-  };
-  lastUpdatedISO?: string;
+type StudyNumbers = {
+  marks: number;
+  notes: number;
+  strokes: number;
+  cards: number;
+  due: number;
+  streak: number;
+  pages: number;
 };
 
-type ReviewStats = {
-  ok: boolean;
-  dueTotal?: number;
-  totalCards?: number;
-  reviewedToday?: number;
-  postponedToday?: number;
-  ts?: string;
-  error?: string;
-};
+function localStats(): StudyNumbers {
+  let marks = 0;
+  let noteCount = 0;
+  let strokeCount = 0;
+  const pages = new Set<string>();
+
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!k) continue;
+      if (k.startsWith("medisea:marks:v2:")) {
+        const v = JSON.parse(localStorage.getItem(k)!);
+        if (Array.isArray(v)) { marks += v.length; pages.add(k); }
+      } else if (k.startsWith("medisea:notes:v1:")) {
+        const v = JSON.parse(localStorage.getItem(k)!);
+        if (v?.text?.trim() || v?.strokes?.length) {
+          noteCount++;
+          strokeCount += v.strokes?.length ?? 0;
+          pages.add(k);
+        }
+      }
+    }
+  } catch {}
+
+  let cards = 0;
+  let due = 0;
+  try {
+    const raw = localStorage.getItem("medisea:review:v1");
+    const review = raw ? JSON.parse(raw) : {};
+    cards = Object.keys(review).length;
+    const now = Date.now();
+    due = Object.values(review).filter((s: any) => !s || (s.due ?? 0) <= now).length;
+  } catch {}
+
+  let streak = 0;
+  try {
+    const raw = localStorage.getItem("medisea:log:v1");
+    const log = raw ? JSON.parse(raw) : {};
+    const dk = (d: Date) => {
+      const p = (n: number) => String(n).padStart(2, "0");
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    };
+    const d = new Date();
+    if (!log[dk(d)]?.kart) d.setDate(d.getDate() - 1);
+    while (log[dk(d)]?.kart) { streak++; d.setDate(d.getDate() - 1); }
+  } catch {}
+
+  return { marks, notes: noteCount, strokes: strokeCount, cards, due, streak, pages: pages.size };
+}
 
 type Role = "V" | "M" | "P";
 
@@ -46,50 +77,48 @@ function toRole(plan: string | undefined): Role {
   return "V";
 }
 
-// ZIRH 1: Eğer 'u' (user) yoksa sistemi çökertme, direkt 0 puan dön.
-function computePoints(u?: CountsResponse["user"]) {
-  if (!u) return 0;
-  return (u.solved || 0) * 10 + (u.streakDays || 0) * 5 + Math.round((u.accuracy ?? 0) * 20);
-}
-
 export default function PremiumPage() {
-  const [data, setData] = useState<CountsResponse | null>(null);
-  const [review, setReview] = useState<ReviewStats | null>(null);
-  /** İki istek de tamamlandı mı. Bu olmadan, veri hiç gelmediğinde iskelet
-   *  sonsuza kadar dönüyor ve kullanıcı "birazdan gelecek" sanıyordu. */
+  const [stats, setStats] = useState<StudyNumbers | null>(null);
   const [yuklendi, setYuklendi] = useState(false);
 
   useEffect(() => {
+    const yerel = localStats();
+    setStats(yerel);
+
     (async () => {
       try {
-        const r1 = await fetch("/api/counts", { cache: "no-store" });
-        if (r1.ok) setData(await r1.json());
-      } catch (e) {
-        console.error("Counts API Hatası:", e);
-      }
-      
-      try {
-        const r2 = await fetch("/api/review/stats", { cache: "no-store" });
-        if (r2.ok) setReview(await r2.json());
-      } catch (e) {
-        console.error("Review API Hatası:", e);
-      }
-
+        const r = await fetch("/api/study");
+        if (r.ok) {
+          const j = await r.json();
+          if (j.ok && j.stat) {
+            setStats({
+              marks: j.stat.marks ?? yerel.marks,
+              notes: j.stat.notes ?? yerel.notes,
+              strokes: j.stat.strokes ?? yerel.strokes,
+              cards: j.stat.cards ?? yerel.cards,
+              due: j.stat.due ?? yerel.due,
+              streak: j.stat.streak ?? yerel.streak,
+              pages: j.stat.pages ?? yerel.pages,
+            });
+          }
+        }
+      } catch {}
       setYuklendi(true);
     })();
   }, []);
 
-  // ZIRH 2: data.user varsa hesapla, yoksa 0 dön.
-  const points = useMemo(() => (data?.user ? computePoints(data.user) : 0), [data]);
-
-  // ZIRH 3: plan ve role güvenli okuma
-  const plan = (data?.user?.plan ?? "free") as PlanType;
+  const plan: PlanType = "free";
   const role = toRole(plan);
+
+  const points = useMemo(() => {
+    if (!stats) return 0;
+    return stats.marks * 2 + stats.cards * 5 + stats.streak * 10;
+  }, [stats]);
 
   return (
     <div className="min-h-screen bg-[#0a0f1c] text-slate-100 font-sans selection:bg-blue-500/30">
-      
-      {/* 1. ÜST HEADER PANELİ */}
+
+      {/* ÜST HEADER */}
       <div className="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50 shadow-2xl">
         <div className="max-w-6xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -108,85 +137,83 @@ export default function PremiumPage() {
       </div>
 
       <div className="p-4 md:p-8 max-w-6xl mx-auto space-y-8">
-        
-        {/* 2. KULLANICI METRİKLERİ (ZIRHLI: data veya data.user yoksa Loading gösterir) */}
-        {(!data || !data.user) && !yuklendi ? (
+
+        {/* METRİKLER */}
+        {!stats && !yuklendi ? (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[1, 2, 3, 4].map(i => (
               <div key={i} className="h-24 bg-slate-900 rounded-2xl animate-pulse border border-slate-800" />
             ))}
           </div>
-        ) : !data || !data.user ? (
-          /* İstek bitti ama kullanıcı verisi gelmedi. İskeleti döndürmeye devam
-             etmek "birazdan gelecek" izlenimi veriyordu; durumu açıkça söyle. */
+        ) : !stats || (stats.marks === 0 && stats.cards === 0) ? (
           <div className="rounded-2xl border border-amber-900/40 bg-amber-950/20 p-5">
             <div className="flex items-center gap-2 text-sm font-bold text-amber-300">
-              <AlertTriangle size={18} /> Kişisel istatistiklerin alınamadı
+              <AlertTriangle size={18} /> Henüz çalışma verin yok
             </div>
             <p className="mt-1.5 text-[13px] leading-relaxed text-amber-200/70">
-              Çalışma sunucusuna ulaşılamadı. Tarayıcında tuttuğun vurgu, not ve
-              tekrar geçmişin bundan etkilenmez.
+              Bir konu sayfasını aç, metin seç ve vurgula. Notlarını yaz, çizimlerini
+              yap — buradaki sayılar senin gerçek çalışmanı yansıtacak.
             </p>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col items-center justify-center relative overflow-hidden group hover:border-blue-500/50 transition-colors">
               <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity"><Layers size={80}/></div>
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Çözülen Soru</span>
-              <span className="text-3xl font-black text-white relative z-10">{data.user.solved || 0}</span>
+              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Vurgu</span>
+              <span className="text-3xl font-black text-white relative z-10">{stats.marks}</span>
             </div>
-            
+
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col items-center justify-center relative overflow-hidden group hover:border-orange-500/50 transition-colors">
               <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 text-orange-500 transition-opacity"><Flame size={80}/></div>
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Çalışma Serisi (Streak)</span>
-              <span className="text-3xl font-black text-orange-400 relative z-10">{data.user.streakDays || 0} <span className="text-sm text-orange-500/50">Gün</span></span>
+              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Çalışma Serisi</span>
+              <span className="text-3xl font-black text-orange-400 relative z-10">{stats.streak} <span className="text-sm text-orange-500/50">Gün</span></span>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col items-center justify-center relative overflow-hidden group hover:border-emerald-500/50 transition-colors">
               <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 text-emerald-500 transition-opacity"><Target size={80}/></div>
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Doğruluk Oranı</span>
-              <span className="text-3xl font-black text-emerald-400 relative z-10">%{data.user.accuracy || 0}</span>
+              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 relative z-10">Tekrar Kartı</span>
+              <span className="text-3xl font-black text-emerald-400 relative z-10">{stats.cards}</span>
             </div>
 
             <div className="bg-gradient-to-br from-amber-500/10 to-slate-900 border border-amber-500/30 rounded-2xl p-5 shadow-[0_0_20px_rgba(245,158,11,0.1)] flex flex-col items-center justify-center relative overflow-hidden group hover:border-amber-400 transition-colors">
               <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 text-amber-500 transition-opacity"><Zap size={80}/></div>
-              <span className="text-[10px] font-black text-amber-500/70 uppercase tracking-widest mb-1 relative z-10">Premium Puan</span>
+              <span className="text-[10px] font-black text-amber-500/70 uppercase tracking-widest mb-1 relative z-10">Çalışma Puanı</span>
               <span className="text-3xl font-black text-amber-400 relative z-10">{points}</span>
             </div>
           </div>
         )}
 
-        {/* 3. REVIEW İSTATİSTİKLERİ */}
-        <PremiumCard plan={role} title="Spaced Repetition (Aralıklı Tekrar) Radarı" min="P">
-          {!review && !yuklendi ? (
+        {/* TEKRAR RADARI */}
+        <PremiumCard plan={role} title="Aralıklı Tekrar Radarı" min="P">
+          {!stats ? (
             <div className="h-20 bg-slate-800/50 rounded-xl animate-pulse" />
-          ) : !review || !review.ok ? (
-            <div className="p-4 bg-red-950/30 border border-red-900/50 rounded-xl text-sm font-bold text-red-400 flex items-center gap-2">
-              <AlertTriangle size={18} /> {review?.error || "Tekrar servisine ulaşılamadı."}
-            </div>
+          ) : stats.cards === 0 ? (
+            <p className="text-sm font-medium text-slate-400 italic mt-2">
+              Henüz tekrar kartın yok. Bir konuda metin vurgula — her vurgu otomatik olarak bir tekrar kartına dönüşür.
+            </p>
           ) : (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
               <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 flex flex-col justify-center shadow-inner">
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Vadesi Gelen (Due)</span>
-                <span className="text-2xl font-black text-rose-400">{review.dueTotal ?? 0}</span>
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Çalışılacak</span>
+                <span className="text-2xl font-black text-rose-400">{stats.due}</span>
               </div>
               <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 flex flex-col justify-center shadow-inner">
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Toplam Kart</span>
-                <span className="text-2xl font-black text-slate-300">{review.totalCards ?? 0}</span>
+                <span className="text-2xl font-black text-slate-300">{stats.cards}</span>
               </div>
               <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 flex flex-col justify-center shadow-inner">
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Bugün Çözülen</span>
-                <span className="text-2xl font-black text-emerald-400">{review.reviewedToday ?? 0}</span>
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">El Çizimi</span>
+                <span className="text-2xl font-black text-emerald-400">{stats.strokes}</span>
               </div>
               <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 flex flex-col justify-center shadow-inner">
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Ertelenen</span>
-                <span className="text-2xl font-black text-amber-400">{review.postponedToday ?? 0}</span>
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Konu Sayfası</span>
+                <span className="text-2xl font-black text-amber-400">{stats.pages}</span>
               </div>
             </div>
           )}
         </PremiumCard>
 
-        {/* 4. DİĞER PREMIUM İÇERİK KARTLARI */}
+        {/* KLİNİK OPERASYONLAR */}
         <div className="mt-8 mb-4 border-l-4 border-blue-600 pl-4">
           <h2 className="text-xl font-black text-white uppercase tracking-tight">Klinik Operasyonlar</h2>
           <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">Yapay Zeka Destekli Çalışma Modülleri</p>
@@ -199,7 +226,7 @@ export default function PremiumPage() {
               <p className="text-sm font-medium text-slate-400 italic">Haftalık zayıf alanlarına göre yapay zeka tarafından hazırlanan 20 soruluk odaklı çalışma seti.</p>
             </div>
           </PremiumCard>
-          
+
           <PremiumCard plan={role} title="Zor Soru Analizi" min="P">
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-rose-900/30 flex items-center justify-center text-rose-400 shrink-0"><Activity size={20}/></div>
