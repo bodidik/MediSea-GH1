@@ -151,7 +151,7 @@ export default function ProfilePage() {
               yap — hepsi burada görünecek.
             </p>
             <Link
-              href="/dahiliye"
+              href="/topics"
               className="mt-3 inline-block rounded-full bg-slate-800 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white transition-colors hover:bg-slate-700"
             >
               Konulara Git →
