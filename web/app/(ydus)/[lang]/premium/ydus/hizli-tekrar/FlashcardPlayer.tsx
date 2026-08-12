@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 interface Card {
   id: string;
@@ -13,7 +13,11 @@ interface Props {
   cards: Card[];
   topic: string;
   backHref: string;
+  setId: string;
 }
+
+/** Yatay hareket bu eşiği geçerse tıklama değil, kaydırma sayılır (px). */
+const KAYDIRMA_ESIGI = 55;
 
 // $...$  notasyonunu render et
 function renderMath(text: string): React.ReactNode {
@@ -69,18 +73,36 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
+export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props) {
   const [deck, setDeck] = useState<Card[]>(cards); // SSR'da orijinal sıra
   const [index, setIndex] = useState(0);
+  const [flipped, setFlipped] = useState(false);
+  const [bilinen, setBilinen] = useState<Set<string>>(new Set());
+  const yuklendi = useRef(false);
+  const baslangic = useRef<{ x: number; y: number } | null>(null);
+
+  const depoAnahtari = `medisea:kartlar:v1:${setId}`;
 
   useEffect(() => {
     setDeck(shuffle(cards));
+    try {
+      const raw = localStorage.getItem(depoAnahtari);
+      if (raw) setBilinen(new Set(JSON.parse(raw)));
+    } catch {}
+    yuklendi.current = true;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const [flipped, setFlipped] = useState(false);
-  const [bilinen, setBilinen] = useState<Set<string>>(new Set());
 
-  const card = deck[index];
+  // Bilinen kartlar kalıcı: sayfadan çıkıp dönünce baştan işaretlemek gerekmez.
+  // İlk yüklemeden ÖNCE yazılmaz, yoksa boş küme depodakini siler.
+  useEffect(() => {
+    if (!yuklendi.current) return;
+    try {
+      localStorage.setItem(depoAnahtari, JSON.stringify([...bilinen]));
+    } catch {}
+  }, [bilinen, depoAnahtari]);
+
+  const card: Card | undefined = deck[index];
   const total = deck.length;
 
   const next = useCallback(() => {
@@ -96,13 +118,14 @@ export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
   const flip = useCallback(() => setFlipped(f => !f), []);
 
   const toggleBilinen = useCallback(() => {
+    if (!card) return;
     setBilinen(prev => {
       const next = new Set(prev);
       if (next.has(card.id)) next.delete(card.id);
       else next.add(card.id);
       return next;
     });
-  }, [card.id]);
+  }, [card]);
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -114,10 +137,47 @@ export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
     return () => window.removeEventListener('keydown', handleKey);
   }, [flip, next, prev]);
 
+  if (!card) {
+    return (
+      <div style={{
+        minHeight: '80vh', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center', gap: '1rem',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+      }}>
+        <p style={{ color: '#6a8aaa', fontSize: '14px' }}>Bu sette henüz kart yok.</p>
+        <a href={backHref} style={{
+          fontSize: '12px', fontWeight: 500, color: '#1a3a6b',
+          border: '0.5px solid #b8cfe8', borderRadius: '8px', padding: '7px 14px',
+          background: '#f5f9ff', textDecoration: 'none',
+        }}>
+          ← Konuya dön
+        </a>
+      </div>
+    );
+  }
+
   const bilinenSayi = bilinen.size;
   const ilerleme = Math.round((bilinenSayi / total) * 100);
   const cardBilinen = bilinen.has(card.id);
   const tagS = tagStil(card.tag);
+
+  // Tablette kart çevirmek için düğme aramak yerine kartın kendisi kullanılır:
+  // kısa dokunuş çevirir, yatay kaydırma kart değiştirir.
+  const isaretBasla = (ev: React.PointerEvent) => {
+    baslangic.current = { x: ev.clientX, y: ev.clientY };
+  };
+  const isaretBitir = (ev: React.PointerEvent) => {
+    const b = baslangic.current;
+    baslangic.current = null;
+    if (!b) return;
+    const dx = ev.clientX - b.x;
+    if (Math.abs(dx) < KAYDIRMA_ESIGI) {
+      if (Math.abs(dx) < 10 && Math.abs(ev.clientY - b.y) < 10) flip();
+      return;
+    }
+    if (dx < 0) next();
+    else prev();
+  };
 
   return (
     <div style={{
@@ -177,8 +237,9 @@ export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
 
         {/* KART */}
         <div
-          style={{ flex: 1, perspective: '1200px', marginBottom: '1.25rem', cursor: 'pointer', minHeight: '280px' }}
-          onClick={flip}
+          style={{ flex: 1, perspective: '1200px', marginBottom: '1.25rem', cursor: 'pointer', minHeight: '280px', touchAction: 'pan-y' }}
+          onPointerDown={isaretBasla}
+          onPointerUp={isaretBitir}
         >
           <div style={{
             width: '100%',
@@ -258,6 +319,8 @@ export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ fontSize: '11px', fontWeight: 600, color: '#1a6640', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Yanıt</span>
                 <button
+                  onPointerDown={e => e.stopPropagation()}
+                  onPointerUp={e => e.stopPropagation()}
                   onClick={e => { e.stopPropagation(); toggleBilinen(); }}
                   style={{
                     fontSize: '11px',
@@ -355,7 +418,7 @@ export default function FlashcardPlayer({ cards, topic, backHref }: Props) {
           <kbd style={{ padding: '1px 5px', background: '#f0f4f8', borderRadius: '3px' }}>Space</kbd>
           {' '}çevir · {' '}
           <kbd style={{ padding: '1px 5px', background: '#f0f4f8', borderRadius: '3px' }}>→</kbd>
-          {' '}sonraki
+          {' '}sonraki · dokunmatikte kartı kaydır
         </div>
 
       </div>

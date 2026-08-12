@@ -60,6 +60,7 @@ export default async function HizliTekrarSayfasi({
       cards={veri.cards}
       topic={veri.topic}
       backHref={backHref}
+      setId={veri.id || id}
     />
   );
 }
