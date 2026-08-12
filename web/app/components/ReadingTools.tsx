@@ -522,9 +522,9 @@ export default function ReadingTools() {
             <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
               <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
               depolaması dolu — yenilediğinde kaybolurlar.{" "}
-              <a href="/calisma-alanim" className="font-bold underline">
+              <Link href="/calisma-alanim" className="font-bold underline">
                 Yer aç
-              </a>
+              </Link>
             </div>
           )}
           <button
