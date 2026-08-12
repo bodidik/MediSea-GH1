@@ -128,6 +128,11 @@ medisea:index:v1          yol → başlık        medisea:hint:…      tanıtı
 Sürüm eki şema değişince artar. `study-backup.ts` hepsini tek dosyada taşır;
 Markdown dışa aktarımı **kayıplıdır** (çizim ve takvim gitmez).
 
+`Backup` tipine yeni bir depo anahtarı eklemeyi unutmak sessiz veri kaybıdır:
+`log` bir dönem tipte yoktu, yedek de senkron da çalışma günlüğünü düşürüyordu.
+Yeni anahtar eklerken `Backup` · `readAll` · `parseBackup` · `applyImport`
+birleştirme dalı · `write` **beşini birden** güncelle.
+
 ### Kolay bozulan kararlar
 
 - **Kalem ve avuç.** Bir kez `pointerType === "pen"` görüldüyse parmak artık
@@ -143,6 +148,11 @@ Markdown dışa aktarımı **kayıplıdır** (çizim ve takvim gitmez).
 - **Kaydetme hatası yutulmaz.** Depo dolduğunda "Kaydedildi" yazmak
   kaydetmemekten beterdir; arayüz uyarır ve kurtarma yolu (kopyala / PNG
   indir) sunar.
+- **Uzlaşmadan push YOK.** Sunucudan bir kez okumadan hiçbir push gitmez.
+  `beforeunload` her gezinmede push tetikliyor; deposu boş bir cihaz aksi
+  halde pull yetişmeden sunucudaki yedeğin üzerine boş yük yazıyordu.
+- **Günlük birleştirmede TOPLAMA yok, büyük olan kazanır.** Senkron her oturum
+  açılışında aynı yedeği birleştirir; toplasaydık sayaçlar her girişte şişerdi.
 - **Yeniden boyama tetiği yoklamalı.** `MutationObserver` hızlı yoldur ama
   zamanlaması kaçabiliyor; 600 ms'lik bir yoklama garantidir (imza aynıysa
   hiçbir iş yapmaz).
