@@ -7,7 +7,7 @@
     {
       "id": "card-1",
       "front": "Lung-RADS 2022 sistemine göre, bir nodülün 'büyüme' (growth) göstermiş sayılması için 12 aylık bir dönemde ortalama çapında en az ne kadar artış olmalıdır?",
-      "back": "$>1.5\\,mm$.",
+      "back": ">1.5 mm.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -25,13 +25,13 @@
     {
       "id": "card-4",
       "front": "Amerikan Radyoloji Koleji (ACR) kriterlerine göre, düşük doz BT (LDCT) akciğer kanseri taraması için uygun olan standart yaş aralığı nedir?",
-      "back": "$50$ - $80$ yaş.",
+      "back": "50 - 80 yaş.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
       "id": "card-5",
       "front": "Akciğer kanseri tarama kriterleri kapsamında, kişinin sigara içme geçmişi en az kaç paket-yıl olmalıdır?",
-      "back": "En az $20$ paket-yıl.",
+      "back": "En az 20 paket-yıl.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -43,7 +43,7 @@
     {
       "id": "card-7",
       "front": "Akciğer adenokarsinomunda en sık görülen onkojenik 'driver' mutasyon hangisidir?",
-      "back": "KRAS mutasyonları (yaklaşık $\\%25$ oranında).",
+      "back": "KRAS mutasyonları (yaklaşık %25 oranında).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -55,7 +55,7 @@
     {
       "id": "card-9",
       "front": "TNM 9. edisyona göre, 'Adenokarsinoma in situ' (AIS) tanımı için maksimum tümör boyutu ne olmalıdır?",
-      "back": "$\\%100$ lepidik patern gösteren ve boyutu $\\le 3\\,cm$ olan tümörler.",
+      "back": "%100 lepidik patern gösteren ve boyutu ≤ 3 cm olan tümörler.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "id": "card-18",
-      "front": "TNM 9. edisyona göre, ana bronş tutulumu olan ancak karinaya uzaklığı $\\ge 2\\,cm$ olan ve visceral plevrayı invaze eden tümörün T evresi nedir?",
+      "front": "TNM 9. edisyona göre, ana bronş tutulumu olan ancak karinaya uzaklığı ≥ 2 cm olan ve visceral plevrayı invaze eden tümörün T evresi nedir?",
       "back": "T2.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -121,7 +121,7 @@
     {
       "id": "card-20",
       "front": "Lung-RADS 4B (çok şüpheli) kategorisindeki bir nodül için yıllık akciğer kanseri riski tahmini nedir?",
-      "back": "$>\\%15$.",
+      "back": ">%15.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "id": "card-22",
-      "front": "KHDAK'ta metastatik hastalık yönetiminde, PD-L1 ekspresyonu $\\ge \\%50$ olan ve 'driver' mutasyonu olmayan hastalar için standart yaklaşım nedir?",
+      "front": "KHDAK'ta metastatik hastalık yönetiminde, PD-L1 ekspresyonu ≥ %50 olan ve 'driver' mutasyonu olmayan hastalar için standart yaklaşım nedir?",
       "back": "Tek ajan immün kontrol noktası inhibitörü (pembrolizumab gibi) tedavisi.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -180,7 +180,7 @@
     },
     {
       "id": "card-30",
-      "front": "Lung-RADS 2022'ye göre, çapı $\\ge 30\\,mm$ olan stabil bir nonsolid (buzlu cam) nodül hangi kategoride sınıflandırılır?",
+      "front": "Lung-RADS 2022'ye göre, çapı ≥ 30 mm olan stabil bir nonsolid (buzlu cam) nodül hangi kategoride sınıflandırılır?",
       "back": "LR-2 (Benign görünümlü).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -246,7 +246,7 @@
     },
     {
       "id": "card-41",
-      "front": "Lung-RADS 2022'ye göre, bazal taramada saptanan $\\ge 6\\,mm$ ve $< 8\\,mm$ boyutundaki solid nodül hangi kategoridedir?",
+      "front": "Lung-RADS 2022'ye göre, bazal taramada saptanan ≥ 6 mm ve < 8 mm boyutundaki solid nodül hangi kategoridedir?",
       "back": "LR-3 (Muhtemelen benign).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -259,7 +259,7 @@
     {
       "id": "card-43",
       "front": "Sigara içmeyi bırakan bir bireyde akciğer kanseri taraması için uygunluk süresi nedir?",
-      "back": "Bırakma üzerinden $15$ yıldan fazla zaman geçmemiş olmalıdır.",
+      "back": "Bırakma üzerinden 15 yıldan fazla zaman geçmemiş olmalıdır.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -289,7 +289,7 @@
     {
       "id": "card-48",
       "front": "Lung-RADS sistemine göre, solid nodüller için 'pozitif tarama' eşik değeri nedir?",
-      "back": "Ortalama çapın $\\ge 6\\,mm$ olması.",
+      "back": "Ortalama çapın ≥ 6 mm olması.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -306,7 +306,7 @@
     },
     {
       "id": "card-51",
-      "front": "Lung-RADS 2022'de, bazal taramada saptanan $\\ge 15\\,mm$ boyutundaki solid nodül hangi kategoridedir?",
+      "front": "Lung-RADS 2022'de, bazal taramada saptanan ≥ 15 mm boyutundaki solid nodül hangi kategoridedir?",
       "back": "LR-4B (Çok şüpheli).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -325,7 +325,7 @@
     {
       "id": "card-54",
       "front": "Akciğer kanseri taramasında radyasyon dozunu optimize etmek için kullanılan BT parametresi nedir?",
-      "back": "Volume CT Dose Index ($CTDI_{vol} \\le 3\\,mGy$).",
+      "back": "Volume CT Dose Index (CTDIvol ≤ 3 mGy).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -349,7 +349,7 @@
     {
       "id": "card-58",
       "front": "Lung-RADS sistemine göre, part-solid nodüllerde 'solid komponent' boyutu nodülün kategorisini nasıl etkiler?",
-      "back": "Solid komponent boyutu arttıkça (özellikle $\\ge 6\\,mm$ veya $\\ge 8\\,mm$ eşikleri) şüphe kategorisi artar.",
+      "back": "Solid komponent boyutu arttıkça (özellikle ≥ 6 mm veya ≥ 8 mm eşikleri) şüphe kategorisi artar.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -396,7 +396,7 @@
     },
     {
       "id": "card-66",
-      "front": "Lung-RADS v2022'ye göre, bazal taramada saptanan $\\ge 30\\,mm$ nonsolid nodül hangi kategoridedir?",
+      "front": "Lung-RADS v2022'ye göre, bazal taramada saptanan ≥ 30 mm nonsolid nodül hangi kategoridedir?",
       "back": "LR-3 (Muhtemelen benign).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
@@ -421,7 +421,7 @@
     {
       "id": "card-70",
       "front": "Lung-RADS 4A nodülleri için tarama popülasyonundaki tahmini prevelans nedir?",
-      "back": "Yaklaşık $\\%4$.",
+      "back": "Yaklaşık %4.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -433,13 +433,13 @@
     {
       "id": "card-72",
       "front": "Akciğer kanseri tarama BT'lerinde kesit kalınlığı tercihen ne kadar olmalıdır?",
-      "back": "$\\le 1.5\\,mm$.",
+      "back": "≤ 1.5 mm.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
       "id": "card-73",
       "front": "KHDAK'ta T1a evresi için tümör boyutu üst sınırı nedir?",
-      "back": "$1\\,cm$.",
+      "back": "1 cm.",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },
     {
@@ -480,7 +480,7 @@
     },
     {
       "id": "card-80",
-      "front": "Lung-RADS 2022'ye göre, perifissüral ve jukstaplevral yerleşimli, düzgün sınırlı, $< 10\\,mm$ solid nodüller hangi kategoride değerlendirilir?",
+      "front": "Lung-RADS 2022'ye göre, perifissüral ve jukstaplevral yerleşimli, düzgün sınırlı, < 10 mm solid nodüller hangi kategoride değerlendirilir?",
       "back": "LR-2 (Benign görünümlü).",
       "tag": "Göğüs Hastalıkları / Akciğer Kanseri"
     },

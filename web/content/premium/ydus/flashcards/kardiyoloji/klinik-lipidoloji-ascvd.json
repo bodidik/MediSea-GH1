@@ -13,13 +13,13 @@
     {
       "id": "card-2",
       "front": "İmün aracılı nekrotizan miyopati (IMNM) için bildirilen yaklaşık insidans oranı nedir?",
-      "back": "$100,000$ hastada $2$ ila $3$ vaka.",
+      "back": "100,000 hastada 2 ila 3 vaka.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-3",
       "front": "Homozigot Ailesel Hiperkolesterolemi (HoFH) tanısı alan bir çocukta tipik plazma kolesterol eşiği nedir?",
-      "back": "$500$ mg/dL ($13.0$ mmol/L) üzeri.",
+      "back": "500 mg/dL (13.0 mmol/L) üzeri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "id": "card-8",
-      "front": "PCSK9 inhibitörlerinin LDL-kolesterol düzeyini $25$ mg/dL altına düşürmesinin yan etki profili üzerindeki etkisi nedir?",
+      "front": "PCSK9 inhibitörlerinin LDL-kolesterol düzeyini 25 mg/dL altına düşürmesinin yan etki profili üzerindeki etkisi nedir?",
       "back": "Gözlemlenmiş herhangi bir advers etki yoktur.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
@@ -60,7 +60,7 @@
     },
     {
       "id": "card-10",
-      "front": "Ağır hipertrigliseridemi tedavisinde (TG $> 500$ mg/dL) ilk seçenek farmakolojik terapi hangisidir?",
+      "front": "Ağır hipertrigliseridemi tedavisinde (TG > 500 mg/dL) ilk seçenek farmakolojik terapi hangisidir?",
       "back": "Fibratlar (Fibrik asit türevleri).",
       "tag": "Kardiyoloji / Lipidoloji"
     },
@@ -97,25 +97,25 @@
     {
       "id": "card-16",
       "front": "Statin tedavisinin rabdomiyolize yol açma riski yaklaşık ne kadardır?",
-      "back": "$\\%0.1$'den az.",
+      "back": "%0.1'den az.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-17",
       "front": "Statin kullanımı ile ilişkili yeni diyabet tanısı alma riski yıllık yaklaşık yüzde kaçtır?",
-      "back": "Yıllık yaklaşık $\\%0.2$.",
+      "back": "Yıllık yaklaşık %0.2.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-18",
       "front": "Heterozigot Ailesel Hiperkolesterolemi (HeFH) tanısı için yetişkinlerde LDL-kolesterol eşiği nedir?",
-      "back": "$190$ mg/dL ($5.0$ mmol/L) üzeri.",
+      "back": "190 mg/dL (5.0 mmol/L) üzeri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-19",
       "front": "Safra asidi bağlayıcı reçinelerin kontrendike olduğu bazal trigliserid düzeyi nedir?",
-      "back": "$400$ mg/dL üzeri.",
+      "back": "400 mg/dL üzeri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -169,19 +169,19 @@
     {
       "id": "card-28",
       "front": "Statin doz aşımı veya etkileşimi şüphesinde kreatin kinaz (CK) üst sınırın kaç katına çıkarsa statin derhal kesilmelidir?",
-      "back": "Üst sınırın $10$ katı.",
+      "back": "Üst sınırın 10 katı.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-29",
-      "front": "HoFH hastalarında LDL reseptör geni üzerinde en sık görülen ($\\%90$) mutasyon tipi nedir?",
+      "front": "HoFH hastalarında LDL reseptör geni üzerinde en sık görülen (%90) mutasyon tipi nedir?",
       "back": "Biallelik mutasyonlar.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-30",
       "front": "Hipertrigliseridemide pankreatit riskini önlemek için hedeflenen trigliserid düzeyi nedir?",
-      "back": "$500$ mg/dL altı.",
+      "back": "500 mg/dL altı.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -193,25 +193,25 @@
     {
       "id": "card-32",
       "front": "FIELD çalışmasında fenofibratın amputasyon riskini azaltma oranı (hazard ratio) kaçtır?",
-      "back": "$0.62$.",
+      "back": "0.62.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-33",
-      "front": "Atorvastatinin yaygın bildirilen ($\\%1-\\%10$) kas iskelet yan etkisi nedir?",
+      "front": "Atorvastatinin yaygın bildirilen (%1-%10) kas iskelet yan etkisi nedir?",
       "back": "Artralji.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-34",
       "front": "PCSK9 inhibitörlerinin klinik çalışmalarda KV olay riskini azaltma oranı yaklaşık yüzde kaçtır?",
-      "back": "$\\%15$ ile $\\%20$ arası.",
+      "back": "%15 ile %20 arası.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
       "id": "card-35",
       "front": "HoFH tedavisinde LDL aferezi hangi LDL-kolesterol düzeyinin üzerinde düşünülmelidir?",
-      "back": "$300$ mg/dL üzeri.",
+      "back": "300 mg/dL üzeri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -228,7 +228,7 @@
     },
     {
       "id": "card-38",
-      "front": "2026 kılavuzuna göre LDL-kolesterol düzeyi $\\ge 190$ mg/dL olan yetişkinlerde ilk adım ilaç tedavisi nedir?",
+      "front": "2026 kılavuzuna göre LDL-kolesterol düzeyi ≥ 190 mg/dL olan yetişkinlerde ilk adım ilaç tedavisi nedir?",
       "back": "Maksimum tolere edilen statin tedavisi.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
@@ -247,7 +247,7 @@
     {
       "id": "card-41",
       "front": "Nefrotik sendromda hiperlipidemi çözülmezse (3-6 ay sonra) hangi LDL-C eşiğinde statin başlanmalıdır?",
-      "back": "$100$ mg/dL üzeri.",
+      "back": "100 mg/dL üzeri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -276,7 +276,7 @@
     },
     {
       "id": "card-46",
-      "front": "Trigliserid düzeyi $150$-$499$ mg/dL olan yetişkinlerde KV risk değerlendirmesi için önerilen denklem seti nedir?",
+      "front": "Trigliserid düzeyi 150-499 mg/dL olan yetişkinlerde KV risk değerlendirmesi için önerilen denklem seti nedir?",
       "back": "PREVENT denklemleri.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
@@ -325,7 +325,7 @@
     {
       "id": "card-54",
       "front": "Yüksek riskli hastalarda statin tedavisine ezetimib eklenmesi LDL'yi ortalama yüzde kaç ek olarak düşürür?",
-      "back": "Yaklaşık $\\%20$.",
+      "back": "Yaklaşık %20.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -355,7 +355,7 @@
     {
       "id": "card-59",
       "front": "Statin ilişkili miyopatide CK düzeyi genellikle normalin kaç katı üzerindedir?",
-      "back": "$10$ katı.",
+      "back": "10 katı.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -385,7 +385,7 @@
     {
       "id": "card-64",
       "front": "KBY hastalarında trigliserid düzeyi hangi eşiği aşarsa pankreatiti önlemek için farmakoterapi düşünülmelidir?",
-      "back": "$886$ mg/dL ($10$ mmol/L).",
+      "back": "886 mg/dL (10 mmol/L).",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -427,7 +427,7 @@
     {
       "id": "card-71",
       "front": "2026 kılavuzuna göre klinik ASCVD'si olan çok yüksek riskli hastalarda hedef LDL düzeyi nedir?",
-      "back": "$55$ mg/dL altı.",
+      "back": "55 mg/dL altı.",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {
@@ -439,7 +439,7 @@
     {
       "id": "card-73",
       "front": "Atorvastatinin yan etkilerinden olan boyun ağrısı hangi sıklıkla görülür?",
-      "back": "Yaygın ($\\%1-\\%10$).",
+      "back": "Yaygın (%1-%10).",
       "tag": "Kardiyoloji / Lipidoloji"
     },
     {

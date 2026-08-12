@@ -7,13 +7,13 @@
     {
       "id": "hkp-vip-001",
       "front": "Hastane kaynaklı pnömoni (HAP) tanımı için enfeksiyonun hastaneye yatıştan en az ne kadar süre sonra gelişmesi gerekir?",
-      "back": "$\\ge 48$ saat.",
+      "back": "≥ 48 saat.",
       "tag": "tanim"
     },
     {
       "id": "hkp-vip-002",
       "front": "Ventilatör ilişkili pnömoni (VAP), endotrakeal entübasyondan en az ne kadar süre sonra gelişen pnömoni tipidir?",
-      "back": "$\\ge 48$ saat.",
+      "back": "≥ 48 saat.",
       "tag": "tanim"
     },
     {
@@ -37,19 +37,19 @@
     {
       "id": "hkp-vip-006",
       "front": "HAP ve VAP vakalarında en sık izole edilen iki ana patojen hangisidir?",
-      "back": "$Staphylococcus\\ aureus$ (MRSA dahil) ve $Pseudomonas\\ aeruginosa$.",
+      "back": "Staphylococcus aureus (MRSA dahil) ve Pseudomonas aeruginosa.",
       "tag": "mikrobiyoloji"
     },
     {
       "id": "hkp-vip-007",
       "front": "HAP/VAP hastalarında çoklu ilaca dirençli (MDR) patojenler için risk kabul edilen hastanede yatış süresi eşiği nedir?",
-      "back": "$\\ge 5$ gün.",
+      "back": "≥ 5 gün.",
       "tag": "risk"
     },
     {
       "id": "hkp-vip-008",
       "front": "MDR patojen riski için pnömoniden önceki kaç gün içinde damar yoluyla (IV) antibiyotik kullanımı anlamlı kabul edilir?",
-      "back": "$90$ gün.",
+      "back": "90 gün.",
       "tag": "risk"
     },
     {
@@ -79,13 +79,13 @@
     {
       "id": "hkp-vip-013",
       "front": "Yeni radyografik infiltrat ile birlikte ateş, lökositoz ve pürülan sekresyonlardan en az ikisinin varlığının VAP için duyarlılığı (sensitivite) yaklaşık yüzde kaçtır?",
-      "back": "$\\%69$.",
+      "back": "%69.",
       "tag": "tani"
     },
     {
       "id": "hkp-vip-014",
       "front": "VAP tanısını doğrulamak veya dışlamak için mikrobiyolojik solunum yolu kültür sonuçları genellikle kaç gün sürer?",
-      "back": "$2$ ila $3$ gün.",
+      "back": "2 ila 3 gün.",
       "tag": "tani"
     },
     {
@@ -97,7 +97,7 @@
     {
       "id": "hkp-vip-016",
       "front": "Pnömoni riskini azaltmak için hastanın yatak başı açısı nasıl ayarlanmalıdır?",
-      "back": "Yatak başı yükseltilmelidir ($30$–$45$ derece).",
+      "back": "Yatak başı yükseltilmelidir (30–45 derece).",
       "tag": "korunma"
     },
     {
@@ -114,13 +114,13 @@
     },
     {
       "id": "hkp-vip-019",
-      "front": "Pnömonide $Pseudomonas\\ aeruginosa$ şüphesini artıran yapısal akciğer anomalilerine iki örnek nedir?",
+      "front": "Pnömonide Pseudomonas aeruginosa şüphesini artıran yapısal akciğer anomalilerine iki örnek nedir?",
       "back": "Kistik fibrozis veya bronşektazi.",
       "tag": "risk"
     },
     {
       "id": "hkp-vip-020",
-      "front": "Karbapenem dirençli $P. aeruginosa$ enfeksiyonları için geliştirilen tahmin modelinin en güçlü tahmincilerinden biri nedir?",
+      "front": "Karbapenem dirençli P. aeruginosa enfeksiyonları için geliştirilen tahmin modelinin en güçlü tahmincilerinden biri nedir?",
       "back": "Önceki karbapenem veya florokinolon kullanımı.",
       "tag": "direnç"
     },
@@ -139,7 +139,7 @@
     {
       "id": "hkp-vip-023",
       "front": "CDC verilerine göre VAP ile ilişkili patojenler arasında yaklaşık %28.8 ile ilk sırada yer alan hangisidir?",
-      "back": "$Staphylococcus\\ aureus$.",
+      "back": "Staphylococcus aureus.",
       "tag": "mikrobiyoloji"
     },
     {
@@ -151,13 +151,13 @@
     {
       "id": "hkp-vip-025",
       "front": "VAP ve nvHAP için kaba (crude) mortalite oranları hangi aralıkta değişmektedir?",
-      "back": "$\\%15$ ila $\\%30$.",
+      "back": "%15 ila %30.",
       "tag": "epidemiyoloji"
     },
     {
       "id": "hkp-vip-026",
       "front": "Amerika Birleşik Devletleri'ndeki tahminlere göre VAP başına düşen ek maliyet yaklaşık ne kadardır?",
-      "back": "$40.000$ USD.",
+      "back": "40.000 USD.",
       "tag": "epidemiyoloji"
     },
     {
@@ -181,7 +181,7 @@
     {
       "id": "hkp-vip-030",
       "front": "İlk ampirik tedaviden kaç saat sonra hastanın klinik yanıtı ve kültür sonuçları de-eskalasyon açısından değerlendirilmelidir?",
-      "back": "$48$ ila $72$ saat.",
+      "back": "48 ila 72 saat.",
       "tag": "tedavi"
     },
     {
@@ -235,19 +235,19 @@
     {
       "id": "hkp-vip-039",
       "front": "nvHAP ve VAP florası karşılaştırıldığında, hangi grup patojen nvHAP vakalarında daha az görülür?",
-      "back": "Enterobakteri olmayan gram-negatif basiller (örn. $P.\\ aeruginosa$, Acinetobacter).",
+      "back": "Enterobakteri olmayan gram-negatif basiller (örn. P. aeruginosa, Acinetobacter).",
       "tag": "mikrobiyoloji"
     },
     {
       "id": "hkp-vip-040",
       "front": "Gram-negatif direnç riski için ünitedeki sefepim veya piperasilin-tazobaktam direnç oranı eşiği nedir?",
-      "back": "$>\\%10$.",
+      "back": ">%10.",
       "tag": "tedavi"
     },
     {
       "id": "hkp-vip-041",
-      "front": "Ünite bazlı MRSA riski için $S. aureus$ izolatlarının metisiline direnç oranı eşiği kaçtır?",
-      "back": "$>\\%20$.",
+      "front": "Ünite bazlı MRSA riski için S. aureus izolatlarının metisiline direnç oranı eşiği kaçtır?",
+      "back": ">%20.",
       "tag": "tedavi"
     },
     {
@@ -325,13 +325,13 @@
     {
       "id": "hkp-vip-054",
       "front": "Trakeostomisi olan bir hastada hangi dirençli patojenler için artmış şüphe gerekir?",
-      "back": "$Pseudomonas\\ aeruginosa$ ve dirençli gram-negatif basiller.",
+      "back": "Pseudomonas aeruginosa ve dirençli gram-negatif basiller.",
       "tag": "risk"
     },
     {
       "id": "hkp-vip-055",
       "front": "Bronkoskopi ünitelerinde dezenfeksiyon hataları sonucu hangi patojen ile 'yalancı salgınlar' (pseudo-outbreak) görülebilir?",
-      "back": "$Stenotrophomonas\\ maltophilia$.",
+      "back": "Stenotrophomonas maltophilia.",
       "tag": "mikrobiyoloji"
     },
     {
@@ -343,7 +343,7 @@
     {
       "id": "hkp-vip-057",
       "front": "HAP/VAP önleme paketi içinde yatak başı açısı kaç dereceye yükseltilmelidir?",
-      "back": "$30$ ila $45$ derece.",
+      "back": "30 ila 45 derece.",
       "tag": "korunma"
     },
     {
@@ -355,13 +355,13 @@
     {
       "id": "hkp-vip-059",
       "front": "VAP tanımı ekstübasyondan sonraki ne kadarlık süreyi de kapsar?",
-      "back": "İlk $48$ saat.",
+      "back": "İlk 48 saat.",
       "tag": "tanim"
     },
     {
       "id": "hkp-vip-060",
       "front": "Multiplex PCR testlerinin tedavi süresi üzerindeki etkisi nedir?",
-      "back": "Tedavi kürlerini konvansiyonel yöntemlere göre yaklaşık $\\%22$ oranında kısaltabilir.",
+      "back": "Tedavi kürlerini konvansiyonel yöntemlere göre yaklaşık %22 oranında kısaltabilir.",
       "tag": "tani"
     },
     {
@@ -385,7 +385,7 @@
     {
       "id": "hkp-vip-064",
       "front": "VAP gelişimi mekanik ventilasyon süresini ortalama ne kadar uzatır?",
-      "back": "$7.6$ ila $11.5$ gün.",
+      "back": "7.6 ila 11.5 gün.",
       "tag": "epidemiyoloji"
     },
     {
@@ -409,7 +409,7 @@
     {
       "id": "hkp-vip-068",
       "front": "Hangi yöntem VAP tanısında daha yüksek duyarlılığa sahiptir: Kantitatif endotrakeal aspirat mı yoksa BAL mı?",
-      "back": "Kantitatif bronkoalveoler lavaj (BAL) kültürü ($\\%75$).",
+      "back": "Kantitatif bronkoalveoler lavaj (BAL) kültürü (%75).",
       "tag": "tani"
     },
     {

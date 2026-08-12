@@ -9,7 +9,7 @@
   "sections": [
     {
       "heading": "1. DSÖ ve ICC Tanı Kriterleri (2022/2024 Güncel)",
-      "html": "<p>ET tanısı için 4 majör kriterin tamamı veya ilk 3 majör + 1 minör kriter gereklidir:</p><ul class=\"mb-4\"><li><strong>Majör 1:</strong> Trombosit &ge; 450 x 10^9/L (Sürekli).</li><li><strong>Majör 2:</strong> Kİ Biyopsisi: İri, olgun, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryosit proliferasyonu; granülositik/eritroid seride artış olmaması.</li><li><strong>Majör 3:</strong> Dışlama: KML, PV, PMF, MDS kriterlerinin karşılanmaması (BCR::ABL1 negatifliği şart).</li><li><strong>Majör 4:</strong> Klonallik: <em>JAK2, CALR</em> veya <em>MPL</em> sürücü mutasyonu.</li><li><strong>Minör:</strong> Sürücü mutasyon yoksa; reaktif nedenlerin dışlanması veya klonal marker (<em>ASXL1, EZH2, TET2, SF3B1</em> vb.) varlığı.</li></ul>"
+      "html": "<p>ET tanısı için 4 majör kriterin tamamı veya ilk 3 majör + 1 minör kriter gereklidir:</p><ul class=\"mb-4\"><li><strong>Majör 1:</strong> Trombosit &ge; 450 x 10⁹/L (Sürekli).</li><li><strong>Majör 2:</strong> Kİ Biyopsisi: İri, olgun, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryosit proliferasyonu; granülositik/eritroid seride artış olmaması.</li><li><strong>Majör 3:</strong> Dışlama: KML, PV, PMF, MDS kriterlerinin karşılanmaması (BCR::ABL1 negatifliği şart).</li><li><strong>Majör 4:</strong> Klonallik: <em>JAK2, CALR</em> veya <em>MPL</em> sürücü mutasyonu.</li><li><strong>Minör:</strong> Sürücü mutasyon yoksa; reaktif nedenlerin dışlanması veya klonal marker (<em>ASXL1, EZH2, TET2, SF3B1</em> vb.) varlığı.</li></ul>"
     },
     {
       "heading": "2. Morfolojik Savaş: ET vs. Prefibrotik PMF (pre-PMF)",

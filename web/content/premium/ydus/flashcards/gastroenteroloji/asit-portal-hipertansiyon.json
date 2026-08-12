@@ -67,7 +67,7 @@
     {
       "id": "card-11",
       "front": "Sirozda asit oluşumu için gerekli olan minimum portal basınç eşiği nedir?",
-      "back": "$12$ mm Hg.",
+      "back": "12 mm Hg.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -91,13 +91,13 @@
     {
       "id": "card-15",
       "front": "Asit etiyolojisinin portal hipertansiyona bağlanması için SAAG değeri kaç g/dL veya üzerinde olmalıdır?",
-      "back": "$1.1$ g/dL.",
+      "back": "1.1 g/dL.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-16",
       "front": "Asit sıvısında nötrofil (PMN) sayısının hangi değerin üzerinde olması Spontan Bakteriyel Peritonit (SBP) tanısı koydurur?",
-      "back": "$250$ hücre/$mm^{3}$.",
+      "back": "250 hücre/mm³.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -133,25 +133,25 @@
     {
       "id": "card-22",
       "front": "Asit yönetiminde spironolakton ve furosemid için önerilen başlangıç günlük dozları sırasıyla kaç mg'dır?",
-      "back": "$100$ mg spironolakton ve $40$ mg furosemid.",
+      "back": "100 mg spironolakton ve 40 mg furosemid.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-23",
       "front": "SBP birincil profilaksisi (primer profilaksi) için asit sıvısı toplam protein düzeyi hangi sınırın altında olmalıdır?",
-      "back": "$15$ g/L ($1.5$ g/dL).",
+      "back": "15 g/L (1.5 g/dL).",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-24",
       "front": "SBP primer profilaksisi kriterlerinden biri olan Child-Pugh skoru ve bilirubin eşik değerleri kaçtır?",
-      "back": "Child-Pugh $\\ge 9$ ve bilirubin $\\ge 3$ mg/dL.",
+      "back": "Child-Pugh ≥ 9 ve bilirubin ≥ 3 mg/dL.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-25",
       "front": "SBP primer profilaksisi için böbrek fonksiyon bozukluğu kriterleri nelerdir?",
-      "back": "Serum kreatinin $\\ge 1.2$ mg/dL, BUN $\\ge 25$ mg/dL veya Na $\\le 130$ mEq/L.",
+      "back": "Serum kreatinin ≥ 1.2 mg/dL, BUN ≥ 25 mg/dL veya Na ≤ 130 mEq/L.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -181,7 +181,7 @@
     {
       "id": "card-30",
       "front": "NSBB tedavisi sırasında korunması gereken minimum hedef sistolik kan basıncı değeri kaçtır?",
-      "back": "$90$ mm Hg.",
+      "back": "90 mm Hg.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -199,7 +199,7 @@
     {
       "id": "card-33",
       "front": "Kardiyak asitte beklenen SAAG ve asit sıvısı toplam protein özellikleri nelerdir?",
-      "back": "Yüksek SAAG ($\\ge 1.1$) ve yüksek protein ($> 25$ g/L).",
+      "back": "Yüksek SAAG (≥ 1.1) ve yüksek protein (> 25 g/L).",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -253,7 +253,7 @@
     {
       "id": "card-42",
       "front": "Geniş hacimli parasentez (LVP) sonrası dolaşım disfonksiyonunu önlemek için çıkarılan her litre asit başına kaç gram albumin verilmelidir?",
-      "back": "$8$ gram.",
+      "back": "8 gram.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -367,7 +367,7 @@
     {
       "id": "card-61",
       "front": "Sirotik asit sıvısında protein konsantrasyonu hangi değerin altındaysa SBP riski artmış kabul edilir?",
-      "back": "$1.5$ g/dL ($15$ g/L).",
+      "back": "1.5 g/dL (15 g/L).",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -379,19 +379,19 @@
     {
       "id": "card-63",
       "front": "Refrakter asit tanımı için sodyum kısıtlaması günde kaç mg'ın altında olmalıdır?",
-      "back": "$2000$ mg (ya da $88$ mmol).",
+      "back": "2000 mg (ya da 88 mmol).",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-64",
       "front": "Furosemid ve spironolaktonun refrakter asit tanımı için kullanılan maksimum günlük dozları sırasıyla kaçtır?",
-      "back": "$160$ mg furosemid ve $400$ mg spironolakton.",
+      "back": "160 mg furosemid ve 400 mg spironolakton.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-65",
       "front": "Sirozda asit mobilizasyonu sırasında önerilen maksimum günlük ağırlık kaybı (ödemi olmayan hastada) ne kadardır?",
-      "back": "$0.5$ kg.",
+      "back": "0.5 kg.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
@@ -426,14 +426,14 @@
     },
     {
       "id": "card-71",
-      "front": "Sirotik asitli bir hastada diüretik tedaviye rağmen kreatinin $> 2.0$ mg/dL olursa ne yapılmalıdır?",
+      "front": "Sirotik asitli bir hastada diüretik tedaviye rağmen kreatinin > 2.0 mg/dL olursa ne yapılmalıdır?",
       "back": "Diüretik tedavi kesilmelidir.",
       "tag": "Gastroenteroloji / Asit"
     },
     {
       "id": "card-72",
       "front": "SBP birincil profilaksisinde norfloksasinin günlük standart dozu nedir?",
-      "back": "$400$ mg.",
+      "back": "400 mg.",
       "tag": "Gastroenteroloji / Asit"
     },
     {

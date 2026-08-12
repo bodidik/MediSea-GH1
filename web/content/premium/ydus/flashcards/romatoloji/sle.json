@@ -13,19 +13,19 @@
     {
       "id": "card-2",
       "front": "SLE hastalarının yaklaşık yüzde kaçını doğurganlık çağındaki kadınlar oluşturur?",
-      "back": "$\\%85-90$.",
+      "back": "%85-90.",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-3",
-      "front": "SLE tanısında neredeyse $\\%100$ duyarlılığa sahip olan tarama testi hangisidir?",
+      "front": "SLE tanısında neredeyse %100 duyarlılığa sahip olan tarama testi hangisidir?",
       "back": "Antinükleer antikor (ANA) testi.",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-4",
       "front": "2019 EULAR/ACR SLE sınıflandırma kriterlerine göre giriş kriteri (entry criterion) nedir?",
-      "back": "HEp-2 hücrelerinde $\\ge 1:80$ titrede pozitif ANA saptanması.",
+      "back": "HEp-2 hücrelerinde ≥ 1:80 titrede pozitif ANA saptanması.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "card-6",
-      "front": "SLE'ye özgüllüğü yüksek olan ancak duyarlılığı düşük ($\\%30$) olan otoantikor hangisidir?",
+      "front": "SLE'ye özgüllüğü yüksek olan ancak duyarlılığı düşük (%30) olan otoantikor hangisidir?",
       "back": "Anti-Smith (Anti-Sm) antikoru.",
       "tag": "Romatoloji / SLE"
     },
@@ -79,7 +79,7 @@
     {
       "id": "card-13",
       "front": "Lupus nefriti tedavisinde 12. ayda hedeflenen proteinüri düzeyi (tam klinik yanıt) nedir?",
-      "back": "$< 0.5-0.7$ g/24 saat.",
+      "back": "< 0.5-0.7 g/24 saat.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -151,13 +151,13 @@
     {
       "id": "card-25",
       "front": "Lupus nefriti tanısında renal biyopsi endikasyonu için proteinüri eşik değeri kaçtır?",
-      "back": "$> 0.5$ g/24 saat (veya UPCR $> 500$ mg/g).",
+      "back": "> 0.5 g/24 saat (veya UPCR > 500 mg/g).",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-26",
       "front": "EULAR 2021 önerilerine göre SLE hastalarında hedeflenen ideal kan basıncı değeri nedir?",
-      "back": "$< 130/80$ mmHg.",
+      "back": "< 130/80 mmHg.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -217,18 +217,18 @@
     {
       "id": "card-36",
       "front": "Hidroksiklorokin dozu retinal toksisite riskini azaltmak için günlük maksimum kaç mg/kg (ideal vücut ağırlığı) olmalıdır?",
-      "back": "$5$ mg/kg.",
+      "back": "5 mg/kg.",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-37",
       "front": "Lupus nefriti indüksiyonunda mikofenolat mofetil (MMF) için önerilen günlük hedef doz aralığı nedir?",
-      "back": "Günlük $2-3$ g.",
+      "back": "Günlük 2-3 g.",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-38",
-      "front": "SLE'li bir hastada albumin düzeyi $< 20$ g/L olan nefrotik sendrom varlığında hangi tedavi düşünülmelidir?",
+      "front": "SLE'li bir hastada albumin düzeyi < 20 g/L olan nefrotik sendrom varlığında hangi tedavi düşünülmelidir?",
       "back": "Antikoagülan tedavi.",
       "tag": "Romatoloji / SLE"
     },
@@ -241,7 +241,7 @@
     {
       "id": "card-40",
       "front": "Sınıf III ve IV lupus nefritinde kullanılan 'NIH' siklofosfamid rejimi dozu nedir?",
-      "back": "6 ay boyunca ayda bir $0.5-1$ g/$m^2$ intravenöz doz.",
+      "back": "6 ay boyunca ayda bir 0.5-1 g/m² intravenöz doz.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -271,7 +271,7 @@
     {
       "id": "card-45",
       "front": "Lupus nefriti tedavisinde 'idame' (maintenance) fazı en az ne kadar sürmelidir?",
-      "back": "$36$ ay (3 yıl).",
+      "back": "36 ay (3 yıl).",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -307,13 +307,13 @@
     {
       "id": "card-51",
       "front": "SLE'de görülen hematolojik bozukluklardan lökopeni sınırı kaçtır?",
-      "back": "$< 4000/\\mu L$.",
+      "back": "< 4000/µL.",
       "tag": "Romatoloji / SLE"
     },
     {
       "id": "card-52",
       "front": "SLE'de görülen trombositopeni için 'şiddetli' (kanama riski yüksek) kabul edilen sınır nedir?",
-      "back": "$< 50.000/\\mu L$.",
+      "back": "< 50.000/µL.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -397,7 +397,7 @@
     {
       "id": "card-66",
       "front": "SLE'de idame glukokortikoid dozunda hedeflenen 'güvenli' maksimum doz nedir?",
-      "back": "Günlük $5$ mg Prednizon (veya eşdeğeri) veya altı.",
+      "back": "Günlük 5 mg Prednizon (veya eşdeğeri) veya altı.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -427,7 +427,7 @@
     {
       "id": "card-71",
       "front": "Lupus nefritinde indüksiyon sonrası idame fazına geçiş için 'kısmi yanıt' kriteri nedir?",
-      "back": "6. ayda proteinüride en az $\\%50$ azalma.",
+      "back": "6. ayda proteinüride en az %50 azalma.",
       "tag": "Romatoloji / SLE"
     },
     {
@@ -469,7 +469,7 @@
     {
       "id": "card-78",
       "front": "Sistemik lupus eritematozus'un on yıllık sağkalım oranı yaklaşık yüzde kaçtır?",
-      "back": "$\\%85$'in üzerinde.",
+      "back": "%85'in üzerinde.",
       "tag": "Romatoloji / SLE"
     }
   ]

@@ -19,7 +19,7 @@
     {
       "id": "card-3",
       "front": "Behçet hastalığı ile en güçlü genetik ilişki gösteren HLA alleli hangisidir?",
-      "back": "$HLA-B^*51$.",
+      "back": "HLA-B*51.",
       "tag": "Romatoloji / Behçet"
     },
     {
@@ -156,8 +156,8 @@
     },
     {
       "id": "card-26",
-      "front": "Behçet hastalarında $T_h17$ hücrelerinden salınan ve nötrofil aktivasyonunu artıran temel sitokinler nelerdir?",
-      "back": "$IL-17$ ve $IL-22$.",
+      "front": "Behçet hastalarında Th17 hücrelerinden salınan ve nötrofil aktivasyonunu artıran temel sitokinler nelerdir?",
+      "back": "IL-17 ve IL-22.",
       "tag": "Romatoloji / Behçet"
     },
     {
@@ -300,7 +300,7 @@
     },
     {
       "id": "card-50",
-      "front": "Behçet hastalığında $IFN-\\alpha$ tedavisinin özellikle etkili olduğu belirtilen tutulum hangisidir?",
+      "front": "Behçet hastalığında IFN-α tedavisinin özellikle etkili olduğu belirtilen tutulum hangisidir?",
       "back": "Dirençli oküler tutulum.",
       "tag": "Romatoloji / Behçet"
     },
@@ -402,14 +402,14 @@
     },
     {
       "id": "card-67",
-      "front": "Behçet hastalığında kullanılan $IL-6$ inhibitörü ajan hangisidir?",
+      "front": "Behçet hastalığında kullanılan IL-6 inhibitörü ajan hangisidir?",
       "back": "Tocilizumab.",
       "tag": "Romatoloji / Behçet"
     },
     {
       "id": "card-68",
       "front": "Hangi HLA alleli Behçet hastalığı riskini azaltıcı (koruyucu) etkiye sahip olabilir?",
-      "back": "$HLA-B^*49$ veya $HLA-A^*03$.",
+      "back": "HLA-B*49 veya HLA-A*03.",
       "tag": "Romatoloji / Behçet"
     },
     {

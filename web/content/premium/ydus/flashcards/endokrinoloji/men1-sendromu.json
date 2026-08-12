@@ -6,74 +6,74 @@
   "cards": [
     {
       "id": "card-1",
-      "front": "Multiple Endokrin Neoplazi Tip $1$ ($MEN1$) sendromundan sorumlu olan gen hangi kromozom üzerinde lokalizedir?",
-      "back": "$11q13$.",
+      "front": "Multiple Endokrin Neoplazi Tip 1 (MEN1) sendromundan sorumlu olan gen hangi kromozom üzerinde lokalizedir?",
+      "back": "11q13.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-2",
-      "front": "$MEN1$ geni tarafından kodlanan ve hücre proliferasyonunu regüle eden $610$ amino asitlik protein hangisidir?",
+      "front": "MEN1 geni tarafından kodlanan ve hücre proliferasyonunu regüle eden 610 amino asitlik protein hangisidir?",
       "back": "Menin.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-3",
-      "front": "$MEN1$ sendromunda tümör oluşumu genellikle hangi genetik mekanizmaya (teoriye) dayanır?",
-      "back": "Knudson'un çift vuruş ($double$-$hit$) teorisi (somatik heterozigotluk kaybı).",
+      "front": "MEN1 sendromunda tümör oluşumu genellikle hangi genetik mekanizmaya (teoriye) dayanır?",
+      "back": "Knudson'un çift vuruş (double-hit) teorisi (somatik heterozigotluk kaybı).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-4",
-      "front": "$MEN1$ sendromunun en erken ve en sık görülen klinik manifestasyonu nedir?",
-      "back": "Primer hiperparatiroidizm ($PHPT$).",
+      "front": "MEN1 sendromunun en erken ve en sık görülen klinik manifestasyonu nedir?",
+      "back": "Primer hiperparatiroidizm (PHPT).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-5",
-      "front": "$MEN1$ hastalarında primer hiperparatiroidizmin ($PHPT$) $50$ yaşına kadar olan penetransı yaklaşık yüzde kaçtır?",
-      "back": "\\% $95$ - \\% $100$.",
+      "front": "MEN1 hastalarında primer hiperparatiroidizmin (PHPT) 50 yaşına kadar olan penetransı yaklaşık yüzde kaçtır?",
+      "back": "\\% 95 - \\% 100.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-6",
-      "front": "Sporadik vakaların aksine, $MEN1$-ilişkili primer hiperparatiroidizmin temel patolojik özelliği nedir?",
+      "front": "Sporadik vakaların aksine, MEN1-ilişkili primer hiperparatiroidizmin temel patolojik özelliği nedir?",
       "back": "Mültiglandüler tutulum (hiperplazi).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-7",
-      "front": "$MEN1$ hastalarında ektopik paratiroid dokusu en sık hangi anatomik bölgede (yaklaşık \\% $20$ oranında) bulunur?",
+      "front": "MEN1 hastalarında ektopik paratiroid dokusu en sık hangi anatomik bölgede (yaklaşık \\% 20 oranında) bulunur?",
       "back": "Timüs (timik boynuzlar).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-8",
-      "front": "Primer hiperparatiroidizm tanısında, total kalsiyum ve $PTH$ normal sınırlardayken tanı için hangi biyokimyasal parametrenin ölçümü gerekebilir?",
+      "front": "Primer hiperparatiroidizm tanısında, total kalsiyum ve PTH normal sınırlardayken tanı için hangi biyokimyasal parametrenin ölçümü gerekebilir?",
       "back": "İyonize kalsiyum düzeyi.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-9",
-      "front": "$MEN1$ hastalarında asemptomatik mutasyon taşıyıcılarında yıllık kalsiyum izlemi kaç yaşında başlamalıdır?",
-      "back": "$8$ - $10$ yaş.",
+      "front": "MEN1 hastalarında asemptomatik mutasyon taşıyıcılarında yıllık kalsiyum izlemi kaç yaşında başlamalıdır?",
+      "back": "8 - 10 yaş.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-10",
-      "front": "Zollinger-Ellison Sendromu ($ZES$) varlığı $MEN1$ hastalarında hangi cerrahi prosedür için endikasyon teşkil eder?",
+      "front": "Zollinger-Ellison Sendromu (ZES) varlığı MEN1 hastalarında hangi cerrahi prosedür için endikasyon teşkil eder?",
       "back": "Paratiroidektomi (hiperkalseminin düzeltilmesi gastrin salgısını iyileştirir).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-11",
-      "front": "$MEN1$ hastalarında ilk cerrahi öncesi paratiroid dokusunu belirlemede en yüksek sensitiviteye sahip nükleer tıp görüntüleme yöntemi nedir?",
-      "back": "$^{18}F$-kolin PET/BT.",
+      "front": "MEN1 hastalarında ilk cerrahi öncesi paratiroid dokusunu belirlemede en yüksek sensitiviteye sahip nükleer tıp görüntüleme yöntemi nedir?",
+      "back": "¹⁸F-kolin PET/BT.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-12",
-      "front": "$MEN1$-ilişkili $PHPT$ için uluslararası kılavuzlarca önerilen standart ilk basamak cerrahi prosedür nedir?",
-      "back": "Subtotal paratiroidektomi ($3$ veya $3.5$ bezin çıkarılması).",
+      "front": "MEN1-ilişkili PHPT için uluslararası kılavuzlarca önerilen standart ilk basamak cerrahi prosedür nedir?",
+      "back": "Subtotal paratiroidektomi (3 veya 3.5 bezin çıkarılması).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
@@ -91,19 +91,19 @@
     {
       "id": "card-15",
       "front": "Subtotal paratiroidektomi sonrası hiperparatiroidizm nüks oranı yaklaşık yüzde kaçtır?",
-      "back": "\\% $45$.",
+      "back": "\\% 45.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-16",
       "front": "Subtotal paratiroidektomi sonrası nüks için geçen medyan süre yaklaşık ne kadardır?",
-      "back": "$7.2$ yıl.",
+      "back": "7.2 yıl.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-17",
-      "front": "Daha sınırlı rezeksiyonun ($< 3$ bez) subtotal paratiroidektomiye göre temel dezavantajı nedir?",
-      "back": "Daha yüksek ve daha erken nüks oranı (medyan $4.2$ yıl).",
+      "front": "Daha sınırlı rezeksiyonun (< 3 bez) subtotal paratiroidektomiye göre temel dezavantajı nedir?",
+      "back": "Daha yüksek ve daha erken nüks oranı (medyan 4.2 yıl).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
@@ -114,8 +114,8 @@
     },
     {
       "id": "card-19",
-      "front": "Sinakalset tedavisinin $MEN1$-ilişkili $PHPT$ hastalarındaki temel biyokimyasal etkisi nedir?",
-      "back": "Kalsiyum düzeyini normalize ederken $PTH$ düzeylerini orta derecede düşürür.",
+      "front": "Sinakalset tedavisinin MEN1-ilişkili PHPT hastalarındaki temel biyokimyasal etkisi nedir?",
+      "back": "Kalsiyum düzeyini normalize ederken PTH düzeylerini orta derecede düşürür.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
@@ -126,85 +126,85 @@
     },
     {
       "id": "card-21",
-      "front": "$MEN1$ hastalarında en yaygın görülen hipofiz adenomu tipi hangisidir?",
+      "front": "MEN1 hastalarında en yaygın görülen hipofiz adenomu tipi hangisidir?",
       "back": "Prolaktinoma (Laktotrof adenom).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-22",
-      "front": "$MEN1$ hastalarında mortalite ve morbiditenin en önemli nedeni olan tümör grubu hangisidir?",
-      "back": "Duodenopankreatik nöroendokrin tümörler ($NET$).",
+      "front": "MEN1 hastalarında mortalite ve morbiditenin en önemli nedeni olan tümör grubu hangisidir?",
+      "back": "Duodenopankreatik nöroendokrin tümörler (NET).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-23",
-      "front": "$MEN1$ hastalarında hipofiz adenomu taraması için önerilen izlem sıklığı ve yöntemi nedir?",
-      "back": "$5$ yaşından itibaren her $3$ yılda bir hipofiz $MRI$.",
+      "front": "MEN1 hastalarında hipofiz adenomu taraması için önerilen izlem sıklığı ve yöntemi nedir?",
+      "back": "5 yaşından itibaren her 3 yılda bir hipofiz MRI.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-24",
-      "front": "$MEN1$-ilişkili gastrinomaların (Zollinger-Ellison Sendromu) sporadik vakalardan temel farkı nedir?",
+      "front": "MEN1-ilişkili gastrinomaların (Zollinger-Ellison Sendromu) sporadik vakalardan temel farkı nedir?",
       "back": "Sıklıkla duodenumda mültipl ve küçük olmaları.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-25",
-      "front": "Non-fonksiyonel pankreatik nöroendokrin tümörlerin ($NF$-$PanNET$) cerrahi rezeksiyonu için genellikle kabul edilen boyut eşiği nedir?",
-      "back": "$\\ge 2$ cm.",
+      "front": "Non-fonksiyonel pankreatik nöroendokrin tümörlerin (NF-PanNET) cerrahi rezeksiyonu için genellikle kabul edilen boyut eşiği nedir?",
+      "back": "≥ 2 cm.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-26",
-      "front": "$MEN1$ hastalarında timik nöroendokrin tümörler ($NET$) için en belirgin risk faktörü nedir?",
+      "front": "MEN1 hastalarında timik nöroendokrin tümörler (NET) için en belirgin risk faktörü nedir?",
       "back": "Erkek cinsiyet.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-27",
-      "front": "$MEN1$ hastalarında insülinoma tanısı için kullanılan temel biyokimyasal kriter nedir?",
+      "front": "MEN1 hastalarında insülinoma tanısı için kullanılan temel biyokimyasal kriter nedir?",
       "back": "Hipoglisemi sırasında uygunsuz yüksek serum insülin konsantrasyonu.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-28",
-      "front": "$MEN1$ hastalarında görülen adrenal lezyonların çoğu hangi tiptedir?",
+      "front": "MEN1 hastalarında görülen adrenal lezyonların çoğu hangi tiptedir?",
       "back": "Non-fonksiyonel adenomlar.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-29",
-      "front": "Klinik $MEN1$ tanısı koymak için gerekli olan temel kriter nedir?",
-      "back": "Üç ana $MEN1$ tümöründen (paratiroid, pankreas, hipofiz) en az ikisinin varlığı.",
+      "front": "Klinik MEN1 tanısı koymak için gerekli olan temel kriter nedir?",
+      "back": "Üç ana MEN1 tümöründen (paratiroid, pankreas, hipofiz) en az ikisinin varlığı.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-30",
-      "front": "Birinci derece akrabasında $MEN1$ tanısı olan bir bireyde tanı koymak için kaç tümörün varlığı yeterlidir?",
-      "back": "$1$ tane $MEN1$-ilişkili tümörün varlığı.",
+      "front": "Birinci derece akrabasında MEN1 tanısı olan bir bireyde tanı koymak için kaç tümörün varlığı yeterlidir?",
+      "back": "1 tane MEN1-ilişkili tümörün varlığı.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-31",
-      "front": "$MEN1$ sendromunda görülen deri lezyonları nelerdir?",
+      "front": "MEN1 sendromunda görülen deri lezyonları nelerdir?",
       "back": "Anjiyofibromlar, kollajenomalar ve lipomlar.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-32",
-      "front": "$MEN1$ mutasyonu olan kadın hastalarda hangi kanser türü için risk artışı ($2$-$3$ kat) bildirilmiştir?",
+      "front": "MEN1 mutasyonu olan kadın hastalarda hangi kanser türü için risk artışı (2-3 kat) bildirilmiştir?",
       "back": "Meme kanseri.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-33",
-      "front": "$MEN1$ genindeki hangi ekzon mutasyonlarının uzak nüks riskiyle ilişkili olduğu saptanmıştır?",
-      "back": "Ekzon $10$.",
+      "front": "MEN1 genindeki hangi ekzon mutasyonlarının uzak nüks riskiyle ilişkili olduğu saptanmıştır?",
+      "back": "Ekzon 10.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-34",
-      "front": "$MEN1$ hastalarında paratiroid cerrahisi sonrası paratiroid dokusunun yerini belirtmek için cerrahlar ne kullanmalıdır?",
+      "front": "MEN1 hastalarında paratiroid cerrahisi sonrası paratiroid dokusunun yerini belirtmek için cerrahlar ne kullanmalıdır?",
       "back": "Emilemeyen dikiş veya cerrahi klips.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
@@ -216,25 +216,25 @@
     },
     {
       "id": "card-36",
-      "front": "$MEN1$ hastalarında kalsimimetiklerin hangi organ sistemi üzerindeki uzun dönem koruyucu etkisi henüz kanıtlanmamıştır?",
+      "front": "MEN1 hastalarında kalsimimetiklerin hangi organ sistemi üzerindeki uzun dönem koruyucu etkisi henüz kanıtlanmamıştır?",
       "back": "Kemik dokusu (kemik mineral dansitesi ve kırık riski).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-37",
-      "front": "$MEN1$-ilişkili $PHPT$ cerrahisinde nüksü önlemek için korunan paratiroid bezi genellikle hangisi olmalıdır?",
-      "back": "Rekürren laringeal sinirden uzak olan bir alt paratiroid ($P3$).",
+      "front": "MEN1-ilişkili PHPT cerrahisinde nüksü önlemek için korunan paratiroid bezi genellikle hangisi olmalıdır?",
+      "back": "Rekürren laringeal sinirden uzak olan bir alt paratiroid (P3).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-38",
-      "front": "$MEN1$ hastalarında timik karsinoid taraması için hangi görüntüleme yöntemi (her $1$-$2$ yılda bir) önerilir?",
-      "back": "Toraks $BT$ veya $MRI$.",
+      "front": "MEN1 hastalarında timik karsinoid taraması için hangi görüntüleme yöntemi (her 1-2 yılda bir) önerilir?",
+      "back": "Toraks BT veya MRI.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-39",
-      "front": "$MEN1$ hastalarında sürveyansın temel amacı nedir?",
+      "front": "MEN1 hastalarında sürveyansın temel amacı nedir?",
       "back": "Tümörlerin erken tespiti ile mortaliteyi azaltmak ve hormon fazlalığı komplikasyonlarını önlemek.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
@@ -246,115 +246,115 @@
     },
     {
       "id": "card-41",
-      "front": "$MEN1$ geni bir _____ genidir.",
-      "back": "Tümör baskılayıcı ($tumor\\ suppressor$).",
+      "front": "MEN1 geni bir _____ genidir.",
+      "back": "Tümör baskılayıcı (tumor suppressor).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-42",
-      "front": "Genç hastalarda ($< 30$ yaş) mültiglandüler paratiroid hastalığı saptanması durumunda _____ testi düşünülmelidir.",
-      "back": "$MEN1$ genetik.",
+      "front": "Genç hastalarda (< 30 yaş) mültiglandüler paratiroid hastalığı saptanması durumunda _____ testi düşünülmelidir.",
+      "back": "MEN1 genetik.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-43",
-      "front": "$MEN1$ hastalarında saptanan glukagonomalar genellikle hangi klinik tablo ile karakterizedir?",
+      "front": "MEN1 hastalarında saptanan glukagonomalar genellikle hangi klinik tablo ile karakterizedir?",
       "back": "Nekrolitik migratuvar eritem, diyabet ve kilo kaybı.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-44",
-      "front": "$MEN1$ genetik testi negatif olan ancak klinik olarak $MEN1$ bulguları gösteren hastalara ne ad verilir?",
-      "back": "$MEN1$ fenokopisi.",
+      "front": "MEN1 genetik testi negatif olan ancak klinik olarak MEN1 bulguları gösteren hastalara ne ad verilir?",
+      "back": "MEN1 fenokopisi.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-45",
-      "front": "$MEN1$ hastalarında paratiroid cerrahisi sonrası en sık karşılaşılan cerrahi komplikasyon hangisidir?",
+      "front": "MEN1 hastalarında paratiroid cerrahisi sonrası en sık karşılaşılan cerrahi komplikasyon hangisidir?",
       "back": "Geçici veya kalıcı hipoparatiroidizm.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-46",
-      "front": "$MEN1$ hastalarında gastrinoma taraması kaç yaşından itibaren ve hangi sıklıkla yapılmalıdır?",
-      "back": "$20$ yaşından itibaren her yıl (Açlık serum gastrini ölçümü).",
+      "front": "MEN1 hastalarında gastrinoma taraması kaç yaşından itibaren ve hangi sıklıkla yapılmalıdır?",
+      "back": "20 yaşından itibaren her yıl (Açlık serum gastrini ölçümü).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-47",
-      "front": "$MEN1$ sendromunda nadiren görülen merkezi sinir sistemi tümörleri nelerdir?",
+      "front": "MEN1 sendromunda nadiren görülen merkezi sinir sistemi tümörleri nelerdir?",
       "back": "Meningiyomlar ve ependimomalar.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-48",
-      "front": "Termal ablasyon yöntemlerinden hangisi $MEN1$ nükslerinde çalışma konusu olmuştur?",
-      "back": "Radyofrekans ablasyon ($RFA$) veya Mikrodalga ablasyon ($MWA$).",
+      "front": "Termal ablasyon yöntemlerinden hangisi MEN1 nükslerinde çalışma konusu olmuştur?",
+      "back": "Radyofrekans ablasyon (RFA) veya Mikrodalga ablasyon (MWA).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-49",
-      "front": "$MEN1$ hastalarında yaşam beklentisi genel popülasyona göre yaklaşık ne kadar kısalmıştır?",
-      "back": "$15$ yıl.",
+      "front": "MEN1 hastalarında yaşam beklentisi genel popülasyona göre yaklaşık ne kadar kısalmıştır?",
+      "back": "15 yıl.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-50",
-      "front": "Çocuk ve ergenlerde $MEN1$-ilişkili $PHPT$ cerrahisi hangi yaşa kadar tamamlanmalıdır?",
-      "back": "$25$ yaş.",
+      "front": "Çocuk ve ergenlerde MEN1-ilişkili PHPT cerrahisi hangi yaşa kadar tamamlanmalıdır?",
+      "back": "25 yaş.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-51",
       "front": "Pankreatik lezyonların taranmasında en duyarlı radyolojik yöntem hangisidir?",
-      "back": "Endoskopik ultrasonografi ($EUS$).",
+      "back": "Endoskopik ultrasonografi (EUS).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-52",
-      "front": "$MEN1$ hastalarında primer hiperparatiroidizm biyokimyasal olarak sporadik vakalara göre nasıl seyreder?",
-      "back": "Daha erken yaşta başlar ve biyokimyasal olarak daha hafif seyredebilir (normal sınırlarda $PTH$).",
+      "front": "MEN1 hastalarında primer hiperparatiroidizm biyokimyasal olarak sporadik vakalara göre nasıl seyreder?",
+      "back": "Daha erken yaşta başlar ve biyokimyasal olarak daha hafif seyredebilir (normal sınırlarda PTH).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-53",
-      "front": "Preoperatif görüntülemede paratiroid bezi saptanamayan $MEN1$ hastalarında cerrahi strateji ne olmalıdır?",
+      "front": "Preoperatif görüntülemede paratiroid bezi saptanamayan MEN1 hastalarında cerrahi strateji ne olmalıdır?",
       "back": "Bilateral boyun eksplorasyonu ve subtotal paratiroidektomi.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-54",
-      "front": "$MEN1$ hastalarında en yaygın non-pankreatik enterik tümör hangisidir?",
+      "front": "MEN1 hastalarında en yaygın non-pankreatik enterik tümör hangisidir?",
       "back": "Duodenal gastrinoma.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-55",
-      "front": "$MEN1$ hastalarında adrenal kortikal tümörlerin malignite riski nasıldır?",
+      "front": "MEN1 hastalarında adrenal kortikal tümörlerin malignite riski nasıldır?",
       "back": "Genellikle düşüktür (çoğu adenomdur), ancak karsinom riski sporadik vakalardan biraz daha fazladır.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-56",
-      "front": "Hangi biyobelirteç $MEN1$ pankreatik taramasında insülinomayı gastrinomadan ayırmak için kritiktir?",
+      "front": "Hangi biyobelirteç MEN1 pankreatik taramasında insülinomayı gastrinomadan ayırmak için kritiktir?",
       "back": "C-peptid düzeyi (hipoglisemi anında insülin ile birlikte).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-57",
-      "front": "$MEN1$ sendromunda hangi endokrin organ tutulumu 'Ps' kuralına dahil değildir ancak yaygındır?",
+      "front": "MEN1 sendromunda hangi endokrin organ tutulumu 'Ps' kuralına dahil değildir ancak yaygındır?",
       "back": "Adrenal bez.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-58",
-      "front": "Hangi nükleer tıp ajanı nöroendokrin tümörlerin evrelemesinde $^{18}F$-kolin PET'in yerini almaktadır?",
-      "back": "$^{68}Ga$-DOTATATE (veya benzeri somatostatin reseptör ligandları).",
+      "front": "Hangi nükleer tıp ajanı nöroendokrin tümörlerin evrelemesinde ¹⁸F-kolin PET'in yerini almaktadır?",
+      "back": "⁶⁸Ga-DOTATATE (veya benzeri somatostatin reseptör ligandları).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-59",
-      "front": "$MEN1$ hastalarında cerrahi zamanlaması kararı verilirken hangi sistemik etkiler göz önünde bulundurulur?",
+      "front": "MEN1 hastalarında cerrahi zamanlaması kararı verilirken hangi sistemik etkiler göz önünde bulundurulur?",
       "back": "Nefrolitiyazis (böbrek taşı) ve kemik demineralizasyonu.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
@@ -366,13 +366,13 @@
     },
     {
       "id": "card-61",
-      "front": "$MEN1$ sendromu hangi kalıtım modelini izler?",
+      "front": "MEN1 sendromu hangi kalıtım modelini izler?",
       "back": "Otozomal dominant.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-62",
-      "front": "$MEN1$ hastalarında hipofiz adenomları için cerrahi tedavi ne zaman düşünülmelidir?",
+      "front": "MEN1 hastalarında hipofiz adenomları için cerrahi tedavi ne zaman düşünülmelidir?",
       "back": "Dopamin agonistlerine dirençli prolaktinomalarda veya optik kiazma basısı yapan makroadenomlarda.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
@@ -384,37 +384,37 @@
     },
     {
       "id": "card-64",
-      "front": "$MEN1$ hastalarında pankreatik cerrahi sonrası en büyük risk nedir?",
+      "front": "MEN1 hastalarında pankreatik cerrahi sonrası en büyük risk nedir?",
       "back": "Eksokrin ve endokrin yetmezlik (Diyabet).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-65",
-      "front": "Klinik olarak $MEN1$ şüphesi olan ancak genetik testi negatif olan hastalarda hangi ileri test yöntemi mutasyon tespit oranını artırabilir?",
-      "back": "Tüm ekzom ($WES$) veya tüm genom ($WGS$) sekanslama.",
+      "front": "Klinik olarak MEN1 şüphesi olan ancak genetik testi negatif olan hastalarda hangi ileri test yöntemi mutasyon tespit oranını artırabilir?",
+      "back": "Tüm ekzom (WES) veya tüm genom (WGS) sekanslama.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-66",
-      "front": "$MEN1$ hastalarında $PHPT$ için tıbbi tedavi (Sinakalset) hangi durumlarda ilk seçenek olarak düşünülebilir?",
+      "front": "MEN1 hastalarında PHPT için tıbbi tedavi (Sinakalset) hangi durumlarda ilk seçenek olarak düşünülebilir?",
       "back": "Cerrahiyi reddeden veya çoklu operasyonlar nedeniyle cerrahi riski çok yüksek olan hastalarda.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-67",
-      "front": "$MEN1$ sendromunda paratiroid karsinomu görülme sıklığı nasıldır?",
+      "front": "MEN1 sendromunda paratiroid karsinomu görülme sıklığı nasıldır?",
       "back": "Çok nadirdir (literatürde sadece vaka sunumları mevcuttur).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-68",
-      "front": "$MEN1$ sendromunda görülen pituiter adenomların yaklaşık yüzde kaçı makroadenomdur?",
-      "back": "\\% $30$ - \\% $40$.",
+      "front": "MEN1 sendromunda görülen pituiter adenomların yaklaşık yüzde kaçı makroadenomdur?",
+      "back": "\\% 30 - \\% 40.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-69",
-      "front": "$MEN1$ hastalarında $PHPT$ nüksü için yapılan preoperatif değerlendirmede görüntüleme tetkikleri arasındaki uyum neden önemlidir?",
+      "front": "MEN1 hastalarında PHPT nüksü için yapılan preoperatif değerlendirmede görüntüleme tetkikleri arasındaki uyum neden önemlidir?",
       "back": "Minimal invaziv/tek taraflı cerrahi yaklaşımı mümkün kılmak için.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
@@ -426,32 +426,32 @@
     },
     {
       "id": "card-71",
-      "front": "$MEN1$ hastalarında paratiroid bezlerinin biyolojik davranışı genellikle asimetrik ve _____ şeklindedir.",
+      "front": "MEN1 hastalarında paratiroid bezlerinin biyolojik davranışı genellikle asimetrik ve _____ şeklindedir.",
       "back": "Asenkron.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-72",
-      "front": "Pankreatik $NET$ takibinde $MRI$ tetkikinin $BT$'ye göre tercih edilme sebebi nedir?",
+      "front": "Pankreatik NET takibinde MRI tetkikinin BT'ye göre tercih edilme sebebi nedir?",
       "back": "Radyasyon maruziyetini önlemek (yaşam boyu süren takip nedeniyle).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-73",
-      "front": "$MEN1$ mutasyonu saptanan bir çocukta büyüme parametrelerinin izlenmesi hangi patolojinin erken belirtisi olabilir?",
+      "front": "MEN1 mutasyonu saptanan bir çocukta büyüme parametrelerinin izlenmesi hangi patolojinin erken belirtisi olabilir?",
       "back": "Büyüme hormonu salgılayan pituiter adenom veya hipofiz yetmezliği.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-74",
-      "front": "$MEN1$ hastalarında insülinomalar pankreasın hangi bölgesinde yerleşir?",
+      "front": "MEN1 hastalarında insülinomalar pankreasın hangi bölgesinde yerleşir?",
       "back": "Pankreasın herhangi bir bölgesinde (baş, gövde veya kuyruk).",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     },
     {
       "id": "card-75",
-      "front": "$MEN1$ geni kromozom $11$ üzerindeki hangi spesifik bölgede lokalizedir?",
-      "back": "$11q13.1$.",
+      "front": "MEN1 geni kromozom 11 üzerindeki hangi spesifik bölgede lokalizedir?",
+      "back": "11q13.1.",
       "tag": "Endokrinoloji / MEN1 Sendromu"
     }
   ]

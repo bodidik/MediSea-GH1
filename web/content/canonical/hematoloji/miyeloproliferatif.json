@@ -14,7 +14,7 @@
 
     {
       "heading": "1. Esansiyel Trombositemi (ET): Tanı ve Ayırıcı Tanı (DSÖ 5. Edisyon)",
-      "html": "<p>ET, klonal bir kök hücre bozukluğudur. Tanı için trombosit <strong>&ge;450 x 10^9/L</strong> olmalı ve ilikte iri, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryositler izlenmelidir.</p><p><strong>Kritik Ayrım:</strong> ET ile <em>Erken/Prefibrotik Miyelofibrozis (pre-PMF)</em> ayrımı hayati önem taşır. Pre-PMF'de ilik hiperselülerdir, megakaryositler 'bulut benzeri/atipik' nükleuslara sahiptir ve progresyon riski ET'den çok daha yüksektir.</p>"
+      "html": "<p>ET, klonal bir kök hücre bozukluğudur. Tanı için trombosit <strong>&ge;450 x 10⁹/L</strong> olmalı ve ilikte iri, hiperlobüle (<em>'geyik boynuzu'</em>) megakaryositler izlenmelidir.</p><p><strong>Kritik Ayrım:</strong> ET ile <em>Erken/Prefibrotik Miyelofibrozis (pre-PMF)</em> ayrımı hayati önem taşır. Pre-PMF'de ilik hiperselülerdir, megakaryositler 'bulut benzeri/atipik' nükleuslara sahiptir ve progresyon riski ET'den çok daha yüksektir.</p>"
     },
     {
       "heading": "2. MPN Moleküler Peyzajı: Sürücü ve Yolcu Mutasyonlar",
@@ -26,7 +26,7 @@
     },
     {
       "heading": "4. Klinik Komplikasyonlar: Tromboz ve aVWS",
-      "html": "<p><strong>Tromboz Riski:</strong> JAK2 pozitifliği ve NLR &ge;5 olması venöz olayları öngörür. Splanik ven trombozu (SVT) sıklıkla okült MPN belirtisidir.</p><p><strong>aVWS (Kazanılmış von Willebrand):</strong> Trombosit >1.000 x 10^9/L olduğunda multimer tüketimi nedeniyle kanama riski artar. VWF:RCo < %30 ise <strong>aspirin kontrendikedir.</strong></p>"
+      "html": "<p><strong>Tromboz Riski:</strong> JAK2 pozitifliği ve NLR &ge;5 olması venöz olayları öngörür. Splanik ven trombozu (SVT) sıklıkla okült MPN belirtisidir.</p><p><strong>aVWS (Kazanılmış von Willebrand):</strong> Trombosit >1.000 x 10⁹/L olduğunda multimer tüketimi nedeniyle kanama riski artar. VWF:RCo < %30 ise <strong>aspirin kontrendikedir.</strong></p>"
     },
     {
       "heading": "5. Tedavi Optimizasyonu: Aspirin BID ve Yeni Ajanlar",

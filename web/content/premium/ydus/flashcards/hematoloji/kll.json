@@ -7,7 +7,7 @@
     {
       "id": "card-1",
       "front": "Kronik Lenfositik Lösemi (KLL) tanısı için periferik kanda monoklonal B lenfosit sayısının alt sınırı nedir?",
-      "back": "$5000/\\mu L$ ($5 \\times 10^9/L$).",
+      "back": "5000/µL (5 × 10⁹/L).",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -19,7 +19,7 @@
     {
       "id": "card-3",
       "front": "Küçük Lenfositik Lenfoma (SLL) tanısı için periferik kanda monoklonal B lenfosit sayısı üst sınırı nedir?",
-      "back": "$< 5000/\\mu L$.",
+      "back": "< 5000/µL.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -55,7 +55,7 @@
     {
       "id": "card-9",
       "front": "KLL ayırıcı tanısında kullanılan Mantle hücreli lenfomadan (MCL) ayırt edici olan negatif marker hangisidir?",
-      "back": "Siklin D1 ($Cyclin\\ D1$).",
+      "back": "Siklin D1 (Cyclin D1).",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -73,7 +73,7 @@
     {
       "id": "card-12",
       "front": "Kemik iliği biyopsisinde KLL tanısı için lenfoid infiltrasyon oranı en az ne olmalıdır?",
-      "back": "$\\%30$.",
+      "back": "%30.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -97,13 +97,13 @@
     {
       "id": "card-16",
       "front": "Rai Evre III (Yüksek Risk) için hemoglobin eşik değeri nedir?",
-      "back": "$< 11\\ g/dL$.",
+      "back": "< 11 g/dL.",
       "tag": "Hematoloji / KLL"
     },
     {
       "id": "card-17",
       "front": "Rai Evre IV (Yüksek Risk) tanımı için trombosit sayısı ne olmalıdır?",
-      "back": "$< 100,000/\\mu L$.",
+      "back": "< 100,000/µL.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -121,7 +121,7 @@
     {
       "id": "card-20",
       "front": "Binet sisteminde hemoglobin düzeyi kaçın altında ise Evre C olarak sınıflandırılır?",
-      "back": "$10\\ g/dL$.",
+      "back": "10 g/dL.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -133,19 +133,19 @@
     {
       "id": "card-22",
       "front": "KLL'de en sık görülen sitogenetik anomali hangisidir?",
-      "back": "$del(13q)$.",
+      "back": "del(13q).",
       "tag": "Hematoloji / KLL"
     },
     {
       "id": "card-23",
       "front": "KLL'de tek başına saptandığında iyi prognozla ilişkili olan sitogenetik anomali hangisidir?",
-      "back": "$del(13q)$.",
+      "back": "del(13q).",
       "tag": "Hematoloji / KLL"
     },
     {
       "id": "card-24",
       "front": "KLL'de en olumsuz prognozla ve tedavi direncine yol açan genetik sapma hangisidir?",
-      "back": "$del(17p)$ veya $TP53$ mutasyonu.",
+      "back": "del(17p) veya TP53 mutasyonu.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -163,7 +163,7 @@
     {
       "id": "card-27",
       "front": "KLL-IPI (Uluslararası Prognostik İndeks) puanlamasında kullanılan 5 parametre nedir?",
-      "back": "Yaş, Rai/Binet evresi, serum $\\beta_2$-mikroglobulin, IGHV mutasyon durumu ve $TP53$ durumu.",
+      "back": "Yaş, Rai/Binet evresi, serum β₂-mikroglobulin, IGHV mutasyon durumu ve TP53 durumu.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -181,7 +181,7 @@
     {
       "id": "card-30",
       "front": "KLL'de Richter transformasyonu görülme insidansı yıllık yaklaşık kaçtır?",
-      "back": "$\\%1$.",
+      "back": "%1.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -205,13 +205,13 @@
     {
       "id": "card-34",
       "front": "iwCLL kriterlerine göre tedavi endikasyonu sayılan masif splenomegali sınırı nedir?",
-      "back": "Sol kostal marjın $\\ge 6\\ cm$ altında olması.",
+      "back": "Sol kostal marjın ≥ 6 cm altında olması.",
       "tag": "Hematoloji / KLL"
     },
     {
       "id": "card-35",
       "front": "iwCLL kriterlerine göre tedavi endikasyonu sayılan masif lenfadenopati boyutu nedir?",
-      "back": "En geniş çapın $\\ge 10\\ cm$ olması.",
+      "back": "En geniş çapın ≥ 10 cm olması.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -313,7 +313,7 @@
     {
       "id": "card-52",
       "front": "KLL'de MRD (Minimal Kalıntı Hastalık) negatifliği neyi ifade eder?",
-      "back": "$10,000$ lökosit içinde $1$'den az KLL hücresi saptanması.",
+      "back": "10,000 lökosit içinde 1'den az KLL hücresi saptanması.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -343,7 +343,7 @@
     {
       "id": "card-57",
       "front": "KLL'de nadir görülen ancak lökositoza bağlı gelişebilen acil durum hangisidir?",
-      "back": "Lökostaz veya hipervizkozite sendromu (genellikle lenfosit $> 200,000/\\mu L$).",
+      "back": "Lökostaz veya hipervizkozite sendromu (genellikle lenfosit > 200,000/µL).",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -361,7 +361,7 @@
     {
       "id": "card-60",
       "front": "KLL'de hipogammaglobulinemiye bağlı gelişen enfeksiyonlardan en sık sorumlu patojenler nelerdir?",
-      "back": "$Streptococcus\\ pneumoniae$ ve $Haemophilus\\ influenzae$ gibi kapsüllü bakteriler.",
+      "back": "Streptococcus pneumoniae ve Haemophilus influenzae gibi kapsüllü bakteriler.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -403,7 +403,7 @@
     {
       "id": "card-67",
       "front": "KLL'de hangi markerın yüksekliği doğrudan artmış kitle yükü ve progresyonla ilişkilidir?",
-      "back": "Serum $\\beta_2$-mikroglobulin.",
+      "back": "Serum β₂-mikroglobulin.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -421,7 +421,7 @@
     {
       "id": "card-70",
       "front": "KLL'de progresif lenfositoz tanımı için 2 aylık süredeki artış oranı ne olmalıdır?",
-      "back": "$\\%50$ üzerinde artış.",
+      "back": "%50 üzerinde artış.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -475,7 +475,7 @@
     {
       "id": "card-79",
       "front": "KLL'de nodal bölgeler değerlendirilirken lenf nodu boyutu en az kaç olmalıdır?",
-      "back": "$1\\ cm$.",
+      "back": "1 cm.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -499,7 +499,7 @@
     {
       "id": "card-83",
       "front": "KLL'de hangi genetik anomali varlığında antrasiklin içeren rejimler Richter transformasyonu riskini artırır?",
-      "back": "$NOTCH1$ mutasyonu.",
+      "back": "NOTCH1 mutasyonu.",
       "tag": "Hematoloji / KLL"
     },
     {
@@ -523,7 +523,7 @@
     {
       "id": "card-87",
       "front": "KLL hastalarında nötropeni geliştiğinde en sık izole edilen gram negatif patojenler nelerdir?",
-      "back": "$Pseudomonas\\ aeruginosa$ ve $Escherichia\\ coli$.",
+      "back": "Pseudomonas aeruginosa ve Escherichia coli.",
       "tag": "Hematoloji / KLL"
     },
     {

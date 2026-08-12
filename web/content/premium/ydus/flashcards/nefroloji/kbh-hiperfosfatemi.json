@@ -49,12 +49,12 @@
     {
       "id": "card-8",
       "front": "KDIGO çalışma grubuna göre, evre 3-5 KBH hastalarında adinamik kemik hastalığı prevalansı yüzde kaçtır?",
-      "back": "$\\%18$.",
+      "back": "%18.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-9",
-      "front": "Hangi diyaliz türü, hemodiyalize kıyasla daha yüksek adinamik kemik hastalığı prevalansı ($\\%50$) ile ilişkilendirilmiştir?",
+      "front": "Hangi diyaliz türü, hemodiyalize kıyasla daha yüksek adinamik kemik hastalığı prevalansı (%50) ile ilişkilendirilmiştir?",
       "back": "Periton diyalizi.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
@@ -97,13 +97,13 @@
     {
       "id": "card-16",
       "front": "Kemik biyopsisinin yapılamadığı durumlarda, adinamik kemik hastalığını sınıflandırmak için kullanılan iki ana biyobelirteç nedir?",
-      "back": "Serum paratiroid hormonu ($PTH$) ve kemiğe spesifik alkalen fosfat (BSAP).",
+      "back": "Serum paratiroid hormonu (PTH) ve kemiğe spesifik alkalen fosfat (BSAP).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-17",
       "front": "Adinamik kemik hastalığı tedavisinde temel yaklaşım nedir?",
-      "back": "$PTH$ sekresyonunun artmasına izin vererek kemik döngüsünü canlandırmak.",
+      "back": "PTH sekresyonunun artmasına izin vererek kemik döngüsünü canlandırmak.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -115,7 +115,7 @@
     {
       "id": "card-19",
       "front": "Diyaliz hastalarında adinamik kemik hastalığını geri döndürmek için diyalizat kalsiyum konsantrasyonu hangi seviyeye düşürülebilir?",
-      "back": "$2\\ mEq/L$.",
+      "back": "2 mEq/L.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -126,20 +126,20 @@
     },
     {
       "id": "card-21",
-      "front": "Kemiğe yönelik anabolik bir ajan olan teriparatid ($PTH\\ 1-34$), adinamik kemik hastalığında neyi artırmayı hedefler?",
+      "front": "Kemiğe yönelik anabolik bir ajan olan teriparatid (PTH 1-34), adinamik kemik hastalığında neyi artırmayı hedefler?",
       "back": "Kemik döngüsünü ve kemik mineral yoğunluğunu.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-22",
       "front": "Kalsimimetiklerin (örneğin sinakalset) adinamik kemik hastalığına yol açma mekanizması nedir?",
-      "back": "$PTH$ salgılanmasını dolaylı olarak aşırı baskılamaları.",
+      "back": "PTH salgılanmasını dolaylı olarak aşırı baskılamaları.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-23",
       "front": "Adinamik kemik hastalığının başarılı bir şekilde tedavi edildiği, serumdaki hangi iki değerin artışıyla anlaşılır?",
-      "back": "$PTH$ ve BSAP seviyeleri.",
+      "back": "PTH ve BSAP seviyeleri.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -151,13 +151,13 @@
     {
       "id": "card-25",
       "front": "Yaşlanma karşıtı özellikleriyle bilinen ve böbreklerde yoğun olarak eksprese edilen protein hangisidir?",
-      "back": "$\\alpha$-Klotho (Klotho).",
+      "back": "α-Klotho (Klotho).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-26",
       "front": "Klotho proteininin kemik dokusunda üretilen hangi faktör için zorunlu bir koreseptör olduğu bilinmektedir?",
-      "back": "Fibroblast Büyüme Faktörü 23 ($FGF23$).",
+      "back": "Fibroblast Büyüme Faktörü 23 (FGF23).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -169,19 +169,19 @@
     {
       "id": "card-28",
       "front": "Klotho, yaşlanmanın 12 'hallmark'ından biri olan enflamasyonu hangi transkripsiyon faktörünü inhibe ederek engeller?",
-      "back": "$NF-\\kappa B$.",
+      "back": "NF-κB.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-29",
       "front": "Klotho'nun organlardaki fibrozisi azaltma mekanizması temel olarak hangi iki yolağın inhibisyonuna dayanır?",
-      "back": "$TGF-\\beta$ ve Wnt.",
+      "back": "TGF-β ve Wnt.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-30",
       "front": "Klotho proteini oksidatif stresi azaltmak için hangi radikal türlerini temizler?",
-      "back": "Reaktif oksijen türleri ($ROS$).",
+      "back": "Reaktif oksijen türleri (ROS).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -193,7 +193,7 @@
     {
       "id": "card-32",
       "front": "Klotho'nun mitokondriyal fonksiyon üzerindeki etkisi nedir?",
-      "back": "Mitokondriyal işlevi iyileştirir ve mitokondri kaynaklı $ROS$ üretimini azaltır.",
+      "back": "Mitokondriyal işlevi iyileştirir ve mitokondri kaynaklı ROS üretimini azaltır.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -217,13 +217,13 @@
     {
       "id": "card-36",
       "front": "PLADO diyetinin açılımı ve temel özelliği nedir?",
-      "back": "Bitki ağırlıklı düşük proteinli diyet; proteinin $>\\%50$'si bitkisel kaynaklıdır.",
+      "back": "Bitki ağırlıklı düşük proteinli diyet; proteinin >%50'si bitkisel kaynaklıdır.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-37",
       "front": "KDOQI 2020 kılavuzuna göre, diyaliz öncesi evre 3-5 KBH hastaları için önerilen düşük proteinli diyet (LPD) miktarı nedir?",
-      "back": "Günlük $0.55$ ile $0.60\\ g/kg$.",
+      "back": "Günlük 0.55 ile 0.60 g/kg.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -253,18 +253,18 @@
     {
       "id": "card-42",
       "front": "Diyet lifi alımının artması, bağırsak kaynaklı hangi üremik toksinin seviyesini düşürebilir?",
-      "back": "İndoksil sülfat ($indoxyl\\ sulfate$).",
+      "back": "İndoksil sülfat (indoxyl sulfate).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-43",
       "front": "Bitki temelli diyetlerin hiperkalemi riskini hayvansal gıdalara göre daha az artırmasının bir nedeni nedir?",
-      "back": "Bitkisel potasyumun biyoyararlanımının daha düşük olması ($\\%50-60$).",
+      "back": "Bitkisel potasyumun biyoyararlanımının daha düşük olması (%50-60).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-44",
-      "front": "İşlenmiş gıdalardaki hangi gizli potasyum kaynağı vücut tarafından yaklaşık $\\%100$ oranında emilir?",
+      "front": "İşlenmiş gıdalardaki hangi gizli potasyum kaynağı vücut tarafından yaklaşık %100 oranında emilir?",
       "back": "Potasyum katkı maddeleri ve koruyucular.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
@@ -295,7 +295,7 @@
     {
       "id": "card-49",
       "front": "Vasküler kalsifikasyonda rol oynayan 'CPPs' teriminin açılımı nedir?",
-      "back": "Kalsiprotein partikülleri ($calciprotein\\ particles$).",
+      "back": "Kalsiprotein partikülleri (calciprotein particles).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -306,7 +306,7 @@
     },
     {
       "id": "card-51",
-      "front": "Adinamik kemik hastalığında $PTH$ seviyeleri sağlıklı popülasyona göre ne durumdadır?",
+      "front": "Adinamik kemik hastalığında PTH seviyeleri sağlıklı popülasyona göre ne durumdadır?",
       "back": "Normalin üst sınırından daha yüksektir ancak kemik döngüsünü sürdürmek için yetersizdir.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
@@ -318,7 +318,7 @@
     },
     {
       "id": "card-53",
-      "front": "Bitki bazlı diyetlerde yüksek bulunan hangi mineral, $T_{50}$ testi ile ölçülen kalsifikasyon eğilimini iyileştirir?",
+      "front": "Bitki bazlı diyetlerde yüksek bulunan hangi mineral, T₅₀ testi ile ölçülen kalsifikasyon eğilimini iyileştirir?",
       "back": "Magnezyum.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
@@ -343,7 +343,7 @@
     {
       "id": "card-57",
       "front": "Osteitis fibrosa cystica'nın geri dönüşüne (resurgence) neden olabilecek tedavi stratejisi nedir?",
-      "back": "KDIGO tarafından önerilen yüksek $PTH$ hedeflerine (normalin 2-9 katı) yönelmek.",
+      "back": "KDIGO tarafından önerilen yüksek PTH hedeflerine (normalin 2-9 katı) yönelmek.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -367,7 +367,7 @@
     {
       "id": "card-61",
       "front": "Klotho proteini yaşlanmanın hangi 'hallmark'ı olan protein dengesi bozukluğunu (proteostasis kaybı) ameliorize eder?",
-      "back": "Endoplazmik retikulum ($ER$) stresi.",
+      "back": "Endoplazmik retikulum (ER) stresi.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -385,7 +385,7 @@
     {
       "id": "card-64",
       "front": "Klotho eksikliği olan hipomorfik farelerin genetik kodu nasıl ifade edilir?",
-      "back": "$KL^{kl/kl}$.",
+      "back": "KL(kl/kl).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
@@ -409,18 +409,18 @@
     {
       "id": "card-68",
       "front": "KBH evre 2 ve 3'teki hastalarda AKH gelişimine katkıda bulunan 'üremik toksinler' ne zaman etkili olmaya başlar?",
-      "back": "$PTH$ seviyeleri henüz hafif yükselmişken ve $PTH$ direnci başlamışken.",
+      "back": "PTH seviyeleri henüz hafif yükselmişken ve PTH direnci başlamışken.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-69",
       "front": "Klotho'nun yaşlanmayı geciktirici etkisi, yaşam süresini yaklaşık yüzde kaç oranında artırabilir?",
-      "back": "$\\%20$ ile $\\%30$ arası.",
+      "back": "%20 ile %30 arası.",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     },
     {
       "id": "card-70",
-      "front": "Diyaliz hastalarında düşük $PTH$ seviyeleri ($<195\\ pg/dL$) neyin güçlü bir öngörücüsüdür?",
+      "front": "Diyaliz hastalarında düşük PTH seviyeleri (<195 pg/dL) neyin güçlü bir öngörücüsüdür?",
       "back": "Kırık riski (özellikle kalça kırığı).",
       "tag": "Nefroloji / KBH-Hiperfosfatemi"
     }

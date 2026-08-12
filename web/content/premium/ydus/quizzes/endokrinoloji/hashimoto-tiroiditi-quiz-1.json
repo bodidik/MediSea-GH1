@@ -218,17 +218,17 @@
       "id": "s8",
       "metin": "Otuz beş yaşında Hashimoto tiroiditi tanılı kadın hasta, rutin tiroid USG'sinde 1.8 cm sağ lob nodülü saptandı. İİAB sonucu papiller tiroid karsinomu (PTC) ile uyumlu. Hastaya cerrahi planlanıyor.\n\nHT zemininde gelişen PTC olgularının, HT olmaksızın gelişen PTC olgularıyla karşılaştırıldığında genel olarak nasıl bir prognoz beklenmektedir?",
       "secenekler": {
-        "A": "HT zeminindeki PTC daha saldırgandır; BRAF^V600E mutasyonu daha sık, santral lenf nodu metastazı daha fazla ve genel sağkalım daha kötüdür.",
-        "B": "HT zeminindeki PTC daha iyi prognozludur; tümör daha küçük, santral metastaz daha nadir, BRAF^V600E mutasyon sıklığı belirgin az ve sağkalım daha olumludur. HT'nin tümör mikroçevresi koruyucu bariyer işlevi görür.",
+        "A": "HT zeminindeki PTC daha saldırgandır; BRAF V600E mutasyonu daha sık, santral lenf nodu metastazı daha fazla ve genel sağkalım daha kötüdür.",
+        "B": "HT zeminindeki PTC daha iyi prognozludur; tümör daha küçük, santral metastaz daha nadir, BRAF V600E mutasyon sıklığı belirgin az ve sağkalım daha olumludur. HT'nin tümör mikroçevresi koruyucu bariyer işlevi görür.",
         "C": "HT ile PTC birlikteliğinde prognoz değişmez; HT tümör biyolojisini etkilemez.",
         "D": "HT zemininde PTC geliştiğinde mutlaka daha agresif cerrahi yapılmalıdır; profilaktik santral boyun diseksiyonu standarttır.",
         "E": "Hashimoto tiroiditi, PTC riskini azalttığından bu İİAB sonucu artefakttır; tekrar biyopsi yapılmalıdır."
       },
       "dogru": "B",
-      "aciklama_kisa": "HT zemininde gelişen PTC: tümör küçük, santral metastaz nadir, BRAF^V600E az, prognoz iyi. HT tümör mikroçevresi (lenfosit infiltrasyonu) tümöre karşı bariyer oluşturur — 'iki keskinli kılıç' konsepti.",
-      "aciklama_detay": "Hashimoto tiroiditi ve PTC ilişkisi epidemiyolojik açıdan 'iki keskinli kılıç' olarak tanımlanır. HT kronik inflamasyon ve TSH yüksekliği yoluyla PTC gelişim riskini artırır. Ancak tümör oluştuktan sonra HT'nin immün mikroçevresi (TIL — tümör infiltre eden lenfositler) tümörün ilerlemesini frenler. HT zemininde gelişen PTC'de: boyut daha küçük, santral lenf nodu metastazı daha nadir, ekstratiroidal yayılım az, BRAF^V600E mutasyonu daha seyrek, sağkalım daha iyi. Prognoz farkı cerrahi genişliği değiştirmez — standart kılavuz önerileri uygulanır.",
+      "aciklama_kisa": "HT zemininde gelişen PTC: tümör küçük, santral metastaz nadir, BRAF V600E az, prognoz iyi. HT tümör mikroçevresi (lenfosit infiltrasyonu) tümöre karşı bariyer oluşturur — 'iki keskinli kılıç' konsepti.",
+      "aciklama_detay": "Hashimoto tiroiditi ve PTC ilişkisi epidemiyolojik açıdan 'iki keskinli kılıç' olarak tanımlanır. HT kronik inflamasyon ve TSH yüksekliği yoluyla PTC gelişim riskini artırır. Ancak tümör oluştuktan sonra HT'nin immün mikroçevresi (TIL — tümör infiltre eden lenfositler) tümörün ilerlemesini frenler. HT zemininde gelişen PTC'de: boyut daha küçük, santral lenf nodu metastazı daha nadir, ekstratiroidal yayılım az, BRAF V600E mutasyonu daha seyrek, sağkalım daha iyi. Prognoz farkı cerrahi genişliği değiştirmez — standart kılavuz önerileri uygulanır.",
       "secenekAciklamalari": {
-        "A": "YANLIS — HT zeminindeki PTC daha az agresif değil daha az agresiftir; BRAF^V600E daha az sıklıkta görülür.",
+        "A": "YANLIS — HT zeminindeki PTC daha az agresif değil daha az agresiftir; BRAF V600E daha az sıklıkta görülür.",
         "B": "DOGRU — HT tümör mikroçevresi koruyucu etkisi → daha iyi prognoz. 'İki keskinli kılıç' konsepti.",
         "C": "YANLIS — HT tümör biyolojisini anlamlı biçimde etkiler; prognoz farklıdır.",
         "D": "YANLIS — Prognoz avantajı cerrahi yaklaşımı değiştirmez; profilaktik santral diseksiyonu rutin önerilmez.",

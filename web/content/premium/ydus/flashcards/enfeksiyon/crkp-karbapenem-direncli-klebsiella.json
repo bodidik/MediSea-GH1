@@ -13,19 +13,19 @@
     {
       "id": "card-2",
       "front": "String testi pozitifliği, koloni üzerinde yapılan bir işlemde mukus ipliğinin en az kaç cm uzaması ile tanımlanır?",
-      "back": "5 mm (Bazı kaynaklarda $5$ mm, meta-analizlerde pozitiflik kriteri olarak kullanılır).",
+      "back": "5 mm (Bazı kaynaklarda 5 mm, meta-analizlerde pozitiflik kriteri olarak kullanılır).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-3",
       "front": "Meta-analiz sonuçlarına göre, hmKp suşlarının ESBL üretme prevalansı non-hmKp suşlarına göre nasıldır?",
-      "back": "Anlamlı derecede daha düşüktür (Pooled OR: $0.26$).",
+      "back": "Anlamlı derecede daha düşüktür (Pooled OR: 0.26).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-4",
       "front": "Karbapenem dirençli *K. pneumoniae* (CRKP) enfeksiyonlarında bildirilen yaklaşık mortalite oranı yüzde kaçtır?",
-      "back": "$\\%42$.",
+      "back": "%42.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -43,43 +43,43 @@
     {
       "id": "card-7",
       "front": "Ambler Sınıf A karbapenemazların en prototipik örneği hangisidir?",
-      "back": "$KPC$ (Klebsiella pneumoniae carbapenemase).",
+      "back": "KPC (Klebsiella pneumoniae carbapenemase).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-8",
-      "front": "Ambler Sınıf B karbapenemazlar (Metallo-$\\beta$-laktamazlar) hangi iyonu kofaktör olarak kullanır?",
-      "back": "Çinko ($Zn^{2+}$).",
+      "front": "Ambler Sınıf B karbapenemazlar (Metallo-β-laktamazlar) hangi iyonu kofaktör olarak kullanır?",
+      "back": "Çinko (Zn²⁺).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-9",
       "front": "Türkiye ve Akdeniz ülkelerinde en sık saptanan Ambler Sınıf D karbapenemaz tipi hangisidir?",
-      "back": "$OXA-48$ tipi enzimler.",
+      "back": "OXA-48 tipi enzimler.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-10",
       "front": "Karbapenem direnci gelişiminde porin kaybı ile ilişkili olan iki ana dış membran proteini hangisidir?",
-      "back": "$OmpK35$ ve $OmpK36$.",
+      "back": "OmpK35 ve OmpK36.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-11",
       "front": "CRKP'de çoklu ilaç direncine katkıda bulunan ve en iyi çalışılmış direnç-nodülasyon-bölünme (RND) efluks sistemi hangisidir?",
-      "back": "$AcrAB-TolC$ sistemi.",
+      "back": "AcrAB-TolC sistemi.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-12",
-      "front": "Çin'de baskın olan ve sıklıkla $KPC-2$ taşıyan karbapenem dirençli klonal grup hangisidir?",
-      "back": "$ST11$.",
+      "front": "Çin'de baskın olan ve sıklıkla KPC-2 taşıyan karbapenem dirençli klonal grup hangisidir?",
+      "back": "ST11.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-13",
       "front": "Amerika Birleşik Devletleri ve Avrupa'da baskın olan CRKP sekans tipi hangisidir?",
-      "back": "$ST258$.",
+      "back": "ST258.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -90,19 +90,19 @@
     },
     {
       "id": "card-15",
-      "front": "Karbapenemlerin, diğer $\\beta$-laktamlara göre $\\beta$-laktamaz hidrolizine daha dirençli olmasını sağlayan yapısal özellik nedir?",
+      "front": "Karbapenemlerin, diğer β-laktamlara göre β-laktamaz hidrolizine daha dirençli olmasını sağlayan yapısal özellik nedir?",
       "back": "Yan zincirlerinin trans pozisyonunda olması.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-16",
       "front": "Seftazidim-avibaktam (CZA) hangi Ambler sınıflarına karşı aktiftir?",
-      "back": "Sınıf A ($KPC$), Sınıf C ve Sınıf D ($OXA-48$); Sınıf B'ye karşı aktif değildir.",
+      "back": "Sınıf A (KPC), Sınıf C ve Sınıf D (OXA-48); Sınıf B'ye karşı aktif değildir.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-17",
-      "front": "Metallo-$\\beta$-laktamaz (Sınıf B) üreten suşların tedavisinde Seftazidim-avibaktam ile kombine edilmesi önerilen antibiyotik hangisidir?",
+      "front": "Metallo-β-laktamaz (Sınıf B) üreten suşların tedavisinde Seftazidim-avibaktam ile kombine edilmesi önerilen antibiyotik hangisidir?",
       "back": "Aztreonam.",
       "tag": "Enfeksiyon / CRKP"
     },
@@ -127,13 +127,13 @@
     {
       "id": "card-21",
       "front": "Kolistin direnci ile en sık ilişkilendirilen genetik değişiklik hangisidir?",
-      "back": "$mgrB$ geninin inaktivasyonu veya $mcr-1$ plazmiti.",
+      "back": "mgrB geninin inaktivasyonu veya mcr-1 plazmiti.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-22",
       "front": "Tigesiklin direnci *K. pneumoniae*'da temel olarak hangi mekanizma ile gelişir?",
-      "back": "Efluks pompalarının (Örn: $AcrAB$, $OqxAB$) aşırı ifadesi.",
+      "back": "Efluks pompalarının (Örn: AcrAB, OqxAB) aşırı ifadesi.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -145,13 +145,13 @@
     {
       "id": "card-24",
       "front": "İmipenem-relebaktam kombinasyonu hangi tip mutant suşlara karşı ek etkinlik sağlar?",
-      "back": "$KPC-2$ ve $KPC-3$ mutant alttipleri.",
+      "back": "KPC-2 ve KPC-3 mutant alttipleri.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-25",
       "front": "hvKP tanısında kullanılan moleküler biyobelirteçlerden biri olan ve kapsül regülasyonunu sağlayan gen hangisidir?",
-      "back": "$rmpA$ (Regulator of mucoid phenotype A).",
+      "back": "rmpA (Regulator of mucoid phenotype A).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -163,7 +163,7 @@
     {
       "id": "card-27",
       "front": "Sideroforlardan biri olan ve demiri konak proteinlerinden ayırmada çok etkili olan hvKP belirteci hangisidir?",
-      "back": "Yersiniabaktin veya Aerobaktin ($iucA$).",
+      "back": "Yersiniabaktin veya Aerobaktin (iucA).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -181,13 +181,13 @@
     {
       "id": "card-30",
       "front": "Ertapenem direnci gelişimi, genellikle hangi iki mekanizmanın kombinasyonu ile açıklanır?",
-      "back": "Düşük düzeyli $\\beta$-laktamaz üretimi + porin kaybı.",
+      "back": "Düşük düzeyli β-laktamaz üretimi + porin kaybı.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-31",
       "front": "Konvasiyonel hvKP suşları genellikle hangi kapsüler serotiplere sahiptir?",
-      "back": "$K1$ ve $K2$.",
+      "back": "K1 ve K2.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -198,20 +198,20 @@
     },
     {
       "id": "card-33",
-      "front": "İnvaziv prosedürlerden hangisi CRKP enfeksiyonu riskini en fazla (yaklaşık $6$ kat) artırır?",
+      "front": "İnvaziv prosedürlerden hangisi CRKP enfeksiyonu riskini en fazla (yaklaşık 6 kat) artırır?",
       "back": "Nazogastrik kateterizasyon.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-34",
-      "front": "Meta-analizlere göre $KPC$ tipi CRKP enfeksiyonu, genel mortalite riskini yaklaşık kaç kat artırır?",
-      "back": "$3.57$ kat.",
+      "front": "Meta-analizlere göre KPC tipi CRKP enfeksiyonu, genel mortalite riskini yaklaşık kaç kat artırır?",
+      "back": "3.57 kat.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-35",
       "front": "hvKP ile cKP (klasik) suşlarını ayırmada kullanılan altın standart yöntem nedir?",
-      "back": "Fare enfeksiyon modelleri ($LD_{50}$ tayini).",
+      "back": "Fare enfeksiyon modelleri (LD₅₀ tayini).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "id": "card-37",
-      "front": "Karbapenemazlardan $NDM$ (New Delhi Metallo-$\\beta$-lactamase) ilk olarak hangi ülkede tanımlanmıştır?",
+      "front": "Karbapenemazlardan NDM (New Delhi Metallo-β-lactamase) ilk olarak hangi ülkede tanımlanmıştır?",
       "back": "Hindistan.",
       "tag": "Enfeksiyon / CRKP"
     },
@@ -235,7 +235,7 @@
     {
       "id": "card-39",
       "front": "Plazmit aracılı kolistin direnci geni hangisidir?",
-      "back": "$mcr-1$.",
+      "back": "mcr-1.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -247,13 +247,13 @@
     {
       "id": "card-41",
       "front": "Meropenem-vaborbaktam kombinasyonundaki vaborbaktam hangi tip bir inhibitördür?",
-      "back": "Boronik asit türevi $\\beta$-laktamaz inhibitörü.",
+      "back": "Boronik asit türevi β-laktamaz inhibitörü.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-42",
       "front": "CRKP'nin neden olduğu pnömonide balgam Gram yaymasının duyarlılığı yaklaşık yüzde kaçtır?",
-      "back": "$\\%50$.",
+      "back": "%50.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -276,8 +276,8 @@
     },
     {
       "id": "card-46",
-      "front": "Karbapenemaz üreten *K. pneumoniae* suşlarında $OXA-48$ enziminin genetik olarak taşınma yolu nedir?",
-      "back": "Yüksek oranda aktarılabilir olan $IncL$ tipi plazmitler.",
+      "front": "Karbapenemaz üreten *K. pneumoniae* suşlarında OXA-48 enziminin genetik olarak taşınma yolu nedir?",
+      "back": "Yüksek oranda aktarılabilir olan IncL tipi plazmitler.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -306,7 +306,7 @@
     },
     {
       "id": "card-51",
-      "front": "hvKP suşlarında bulunan $pLVPK$ benzeri büyük plazmitlerin içeriği nedir?",
+      "front": "hvKP suşlarında bulunan pLVPK benzeri büyük plazmitlerin içeriği nedir?",
       "back": "Çok sayıda virülans geni (sideroforlar, mukoid fenotip genleri).",
       "tag": "Enfeksiyon / CRKP"
     },
@@ -325,7 +325,7 @@
     {
       "id": "card-54",
       "front": "KPC enzimlerinin en önemli genetik stabilite mekanizması nedir?",
-      "back": "$Tn4401$ transpozonu içinde yer almaları.",
+      "back": "Tn4401 transpozonu içinde yer almaları.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -337,7 +337,7 @@
     {
       "id": "card-56",
       "front": "Karbapenem dirençli suşların tedavisinde kullanılan Seftazidim-avibaktama direnç gelişimi genellikle hangi gen mutasyonu ile ilişkilidir?",
-      "back": "$bla_{KPC}$ mutasyonları.",
+      "back": "blaKPC mutasyonları.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -366,25 +366,25 @@
     },
     {
       "id": "card-61",
-      "front": "K. pneumoniae suşlarında $NDM-5$ varyantının önemi nedir?",
+      "front": "K. pneumoniae suşlarında NDM-5 varyantının önemi nedir?",
       "back": "Artmış direnç ve hızlı mortalite ile ilişkilendirilmiş, gelişmekte olan bir varyanttır.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-62",
-      "front": "Karbapenemaz enzimi hidroliz aktivitesi: $KPC > OXA-48$. Doğru mu yanlış mı?",
-      "back": "Doğru ($KPC$, karbapenemleri $OXA-48$'e göre daha güçlü hidrolize eder).",
+      "front": "Karbapenemaz enzimi hidroliz aktivitesi: KPC > OXA-48. Doğru mu yanlış mı?",
+      "back": "Doğru (KPC, karbapenemleri OXA-48'e göre daha güçlü hidrolize eder).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-63",
-      "front": "Porin modifikasyonu: $OmpK36$ kanalındaki daralma veya mutasyon, karbapenemlerin _____ girişini engeller.",
+      "front": "Porin modifikasyonu: OmpK36 kanalındaki daralma veya mutasyon, karbapenemlerin _____ girişini engeller.",
       "back": "Periplazmik aralığa.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-64",
-      "front": "Ambler Sınıf D enzimi olan $OXA-48$, penisilinaz aktivitesine sahip midir?",
+      "front": "Ambler Sınıf D enzimi olan OXA-48, penisilinaz aktivitesine sahip midir?",
       "back": "Evet, güçlü penisilinaz aktivitesi gösterir ancak geniş spektrumlu sefalosporinlere karşı aktivitesi düşüktür.",
       "tag": "Enfeksiyon / CRKP"
     },
@@ -397,7 +397,7 @@
     {
       "id": "card-66",
       "front": "hvKP'nin moleküler tanısında kullanılan ve demir taşıyıcı proteini kodlayan gen grubu hangisidir?",
-      "back": "$iutA$ (Aerobaktin reseptörü).",
+      "back": "iutA (Aerobaktin reseptörü).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -427,13 +427,13 @@
     {
       "id": "card-71",
       "front": "Ambler Sınıf B karbapenemazlar için kullanılan diğer bir isim nedir?",
-      "back": "Metallo-$\\beta$-laktamazlar (MBL).",
+      "back": "Metallo-β-laktamazlar (MBL).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
       "id": "card-72",
       "front": "Sefiderokol'ün etki mekanizması hangi iyonun taşınma sistemini taklit eder?",
-      "back": "Ferrik demir ($Fe^{3+}$).",
+      "back": "Ferrik demir (Fe³⁺).",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -445,7 +445,7 @@
     {
       "id": "card-74",
       "front": "CRKP suşlarında seftazidim direnci genelde yüzde kaçtır?",
-      "back": "$\\%99$'a yakın.",
+      "back": "%99'a yakın.",
       "tag": "Enfeksiyon / CRKP"
     },
     {
@@ -463,7 +463,7 @@
     {
       "id": "card-77",
       "front": "CRKP risk faktörleri arasında yer alan 'corticosteroid' kullanımı riski kaç kat artırır?",
-      "back": "Yaklaşık $2.8$ kat.",
+      "back": "Yaklaşık 2.8 kat.",
       "tag": "Enfeksiyon / CRKP"
     },
     {

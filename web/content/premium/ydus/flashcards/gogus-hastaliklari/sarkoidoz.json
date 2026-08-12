@@ -13,13 +13,13 @@
     {
       "id": "card-2",
       "front": "Sarkoidozun doğal seyrinde Evre I radyografik hastalık için beklenen spontan remisyon oranı aralığı nedir?",
-      "back": "$\\%60$ ile $\\%80$ arasındadır.",
+      "back": "%60 ile %80 arasındadır.",
       "tag": "Radyoloji / Scadding"
     },
     {
       "id": "card-3",
       "front": "Sarkoidozda Evre III radyografik hastalıkta spontan remisyon olasılığı nedir?",
-      "back": "$\\%30$'dan azdır.",
+      "back": "%30'dan azdır.",
       "tag": "Radyoloji / Scadding"
     },
     {
@@ -55,13 +55,13 @@
     {
       "id": "card-9",
       "front": "Kardiyak sarkoidozda aktif miyokardiyal inflamasyonun değerlendirilmesinde kullanılan en hassas nükleer tıp görüntüleme yöntemi nedir?",
-      "back": "^{18}F-fluorodeoksiglukoz pozitron emisyon tomografisi ($^{18}F-FDG\\text{ PET}$).",
+      "back": "^{18}F-fluorodeoksiglukoz pozitron emisyon tomografisi (¹⁸F-FDG PET).",
       "tag": "Kardiyak Sarkoidoz"
     },
     {
       "id": "card-10",
       "front": "Kardiyak sarkoidozda primer korunma amaçlı ICD implantasyonu için LVEF eşik değeri nedir?",
-      "back": "$\\le \\%35$.",
+      "back": "≤ %35.",
       "tag": "Kardiyak Sarkoidoz"
     },
     {
@@ -85,7 +85,7 @@
     {
       "id": "card-14",
       "front": "Bağırsak-akciğer ekseni (gut-lung axis) üzerinden sarkoidoz gelişimini tetikleyen pro-inflamatuar sitokinler nelerdir?",
-      "back": "IL-6, IL-12, IL-18 ve TNF-$\\alpha$.",
+      "back": "IL-6, IL-12, IL-18 ve TNF-α.",
       "tag": "Mikrobiyota"
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "id": "card-32",
-      "front": "Sarkoidoz granülomlarında monoklonal antikorlar ile vakaların $\\%63$'ünde gösterilen patojen nedir?",
+      "front": "Sarkoidoz granülomlarında monoklonal antikorlar ile vakaların %63'ünde gösterilen patojen nedir?",
       "back": "Propionibacterium (Cutibacterium) acnes.",
       "tag": "Patogenez / İmmünoloji"
     },
@@ -223,7 +223,7 @@
     {
       "id": "card-37",
       "front": "Sarkoidoz ilişkili hiperkalsemi veya böbrek disfonksiyonunda tercih edilen tedavi yaklaşımı nedir?",
-      "back": "Oral glukokortikoidler $\\pm$ steroid koruyucu ajanlar.",
+      "back": "Oral glukokortikoidler ± steroid koruyucu ajanlar.",
       "tag": "Kalsiyum / Böbrek"
     },
     {
@@ -234,7 +234,7 @@
     },
     {
       "id": "card-39",
-      "front": "Sarkoidoz hastalarında obesitenin (BMI $\\ge 30$) risk üzerindeki etkisi nedir?",
+      "front": "Sarkoidoz hastalarında obesitenin (BMI ≥ 30) risk üzerindeki etkisi nedir?",
       "back": "Sarkoidoz riskini yaklaşık 2.5 kat artırır.",
       "tag": "Epidemiyoloji"
     },
@@ -307,7 +307,7 @@
     {
       "id": "card-51",
       "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV_1 \\% predicted değeri kaç olmalıdır?",
-      "back": "$\\le \\%50$.",
+      "back": "≤ %50.",
       "tag": "Solunum Fonksiyonu"
     },
     {
@@ -367,7 +367,7 @@
     {
       "id": "card-61",
       "front": "Sarkoidozda akciğer fonksiyon takibinde kullanılan 6MWT'de hangi parametre respiratuar kötüleşmeyi öngörür?",
-      "back": "Düşük yürüme mesafesi ($6MWD$) ve $SpO_2$ desatürasyonu.",
+      "back": "Düşük yürüme mesafesi (6MWD) ve SpO₂ desatürasyonu.",
       "tag": "Solunum Fonksiyonu"
     },
     {
@@ -433,7 +433,7 @@
     {
       "id": "card-72",
       "front": "Sarkoidozda akciğer fonksiyonel şiddetini belirlemede FEV_1 z-skoru için 'orta derece' (moderate) sınırları nedir?",
-      "back": "$-2.5$ ile $-4.0$ arası.",
+      "back": "-2.5 ile -4.0 arası.",
       "tag": "Solunum Fonksiyonu"
     },
     {

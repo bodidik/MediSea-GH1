@@ -19,19 +19,19 @@
     {
       "id": "vip-003",
       "front": "Ventilatörle ilişkili durum (VAC) tanımı için günlük minimum PEEP değerinde ne kadarlık bir artış gereklidir?",
-      "back": "En az 2 gün boyunca $\\ge 3$ $cmH_{2}O$ artış.",
+      "back": "En az 2 gün boyunca ≥ 3 cmH₂O artış.",
       "tag": "vae"
     },
     {
       "id": "vip-004",
       "front": "Ventilatörle ilişkili durum (VAC) tanımı için günlük minimum FiO₂ değerinde ne kadarlık bir artış gereklidir?",
-      "back": "En az 2 gün boyunca $\\ge 0.2$ (20 puan) artış.",
+      "back": "En az 2 gün boyunca ≥ 0.2 (20 puan) artış.",
       "tag": "vae"
     },
     {
       "id": "vip-005",
       "front": "Enfeksiyonla ilişkili ventilatör komplikasyonu (IVAC) tanısı için hastada hangi lökosit değerleri aranır?",
-      "back": "$\\le 4000$ veya $\\ge 12.000$ $hücre/mm^{3}$.",
+      "back": "≤ 4000 veya ≥ 12.000 hücre/mm³.",
       "tag": "vae"
     },
     {
@@ -43,13 +43,13 @@
     {
       "id": "vip-007",
       "front": "Muhtemel (Probable) VAP tanısı için bronkoalveoler lavaj (BAL) kültüründe aranan kantitatif eşik nedir?",
-      "back": "$\\ge 10^{4}$ $CFU/mL$.",
+      "back": "≥ 10⁴ CFU/mL.",
       "tag": "tani"
     },
     {
       "id": "vip-008",
       "front": "Muhtemel (Probable) VAP tanısı için korumalı numune fırçası (PSB) kültüründe aranan kantitatif eşik nedir?",
-      "back": "$\\ge 10^{3}$ $CFU/mL$.",
+      "back": "≥ 10³ CFU/mL.",
       "tag": "tani"
     },
     {
@@ -61,7 +61,7 @@
     {
       "id": "vip-010",
       "front": "VAP gelişimini önlemek için endotrakeal tüp kaf basıncı hangi aralıkta tutulmalıdır?",
-      "back": "20 ile 30 $cmH_{2}O$ arası.",
+      "back": "20 ile 30 cmH₂O arası.",
       "tag": "korunma"
     },
     {
@@ -127,7 +127,7 @@
     {
       "id": "vip-021",
       "front": "Bakteriyel VAP vakalarında CDC/NHSN verilerine göre en sık izole edilen gram-pozitif patojen hangisidir?",
-      "back": "$Staphylococcus\\ aureus$ (izolatların ~%28'i).",
+      "back": "Staphylococcus aureus (izolatların ~%28'i).",
       "tag": "mikrobiyoloji"
     },
     {
@@ -151,7 +151,7 @@
     {
       "id": "vip-025",
       "front": "VAP tanısında proksimal (endotrakeal aspirat) örneklemin kantitatif tanı eşiği nedir?",
-      "back": "$\\ge 10^{5}$ $CFU/mL$.",
+      "back": "≥ 10⁵ CFU/mL.",
       "tag": "tani"
     },
     {
@@ -313,13 +313,13 @@
     {
       "id": "vip-052",
       "front": "VAP tanısında 'pürülan sekresyon' tanımı mikroskobik olarak nasıl yapılır?",
-      "back": "Düşük güç alanında $\\ge 25$ nötrofil ve $\\le 10$ epitel hücresi görülmesi.",
+      "back": "Düşük güç alanında ≥ 25 nötrofil ve ≤ 10 epitel hücresi görülmesi.",
       "tag": "tani"
     },
     {
       "id": "vip-053",
       "front": "VAP hastalarında tedavi süresini belirlemede klinik yanıtın en önemli göstergesi nedir?",
-      "back": "Oksijenasyon parametrelerinde ($PaO_{2}/FiO_{2}$) iyileşme.",
+      "back": "Oksijenasyon parametrelerinde (PaO₂/FiO₂) iyileşme.",
       "tag": "tedavi"
     },
     {

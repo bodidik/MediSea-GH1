@@ -7,73 +7,73 @@
     {
       "id": "card-1",
       "front": "Pankreas kanseri tumorigenesisinde en sık mutasyona uğrayan onkogen hangisidir?",
-      "back": "$KRAS$ onkogeni.",
+      "back": "KRAS onkogeni.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-2",
-      "front": "Pankreas duktal adenokarsinomlarının yaklaşık ne kadarlık bir kısmında somatik $KRAS$ mutasyonu izlenir?",
-      "back": "$\\%90$'dan fazlası.",
+      "front": "Pankreas duktal adenokarsinomlarının yaklaşık ne kadarlık bir kısmında somatik KRAS mutasyonu izlenir?",
+      "back": "%90'dan fazlası.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-3",
-      "front": "$KRAS$ gen mutasyonlarının en sık görüldüğü spesifik kodon hangisidir?",
+      "front": "KRAS gen mutasyonlarının en sık görüldüğü spesifik kodon hangisidir?",
       "back": "Kodon 12.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-4",
       "front": "Pankreatik intraepitelyal neoplazi (PanIN) progresyon modelinde en erken (PanIN-1) saptanan genetik değişiklik hangisidir?",
-      "back": "$KRAS$ gen mutasyonu (ve telomer kısalması).",
+      "back": "KRAS gen mutasyonu (ve telomer kısalması).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-5",
-      "front": "Pankreas kanserlerinin yaklaşık $\\%95$'inde somatik olarak inaktive edilen tümör baskılayıcı gen hangisidir?",
-      "back": "$p16/CDKN2A$.",
+      "front": "Pankreas kanserlerinin yaklaşık %95'inde somatik olarak inaktive edilen tümör baskılayıcı gen hangisidir?",
+      "back": "p16/CDKN2A.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-6",
-      "front": "$p16/CDKN2A$ geninin yerleştiği kromozom hangisidir?",
-      "back": "Kromozom $9p$.",
+      "front": "p16/CDKN2A geninin yerleştiği kromozom hangisidir?",
+      "back": "Kromozom 9p.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-7",
-      "front": "Pankreas kanserinde $p16/CDKN2A$ geninin homozigot delesyonu sırasında sıklıkla birlikte inaktive olan komşu gen hangisidir?",
-      "back": "$MTAP$ geni.",
+      "front": "Pankreas kanserinde p16/CDKN2A geninin homozigot delesyonu sırasında sıklıkla birlikte inaktive olan komşu gen hangisidir?",
+      "back": "MTAP geni.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-8",
-      "front": "Pankreas kanserlerinin $\\%75$ - $\\%85$'inde inaktive olan ve 17p kromozomunda yerleşen tümör baskılayıcı gen hangisidir?",
-      "back": "$TP53$.",
+      "front": "Pankreas kanserlerinin %75 - %85'inde inaktive olan ve 17p kromozomunda yerleşen tümör baskılayıcı gen hangisidir?",
+      "back": "TP53.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-9",
-      "front": "$SMAD4$ ($DPC4$) geni hangi kromozom üzerinde yerleşiktir?",
-      "back": "Kromozom $18q$.",
+      "front": "SMAD4 (DPC4) geni hangi kromozom üzerinde yerleşiktir?",
+      "back": "Kromozom 18q.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-10",
-      "front": "Pankreas kanserinde $SMAD4$ ekspresyonu kaybı klinik olarak neyin göstergesidir?",
+      "front": "Pankreas kanserinde SMAD4 ekspresyonu kaybı klinik olarak neyin göstergesidir?",
       "back": "Daha yüksek uzak metastaz oranı ve kötü prognoz.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-11",
       "front": "Peutz-Jeghers Sendromu'nda (PJS) mutasyona uğrayan ve pankreas kanseri riskini dramatik şekilde artıran gen hangisidir?",
-      "back": "$STK11$ ($LKB1$).",
+      "back": "STK11 (LKB1).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-12",
       "front": "Herediter meme ve over kanseri sendromu (HBOC) ile ilişkili olan ve pankreas kanseri ailesel kümelenmesinin en önemli nedenlerinden biri olan gen hangisidir?",
-      "back": "$BRCA2$.",
+      "back": "BRCA2.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -85,55 +85,55 @@
     {
       "id": "card-14",
       "front": "Fаmiliаl Atipik Multipl Mol ve Mеlаnоmа (FAMMM) sendromunda pankreas kanseri risk artışından sorumlu olan gen hangisidir?",
-      "back": "$CDKN2A$ ($p16$).",
+      "back": "CDKN2A (p16).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-15",
-      "front": "Hollanda'daki FAMMM ailelerinde tanımlanan ve pankreas kanseri riskini $\\%21$'e kadar çıkaran spesifik $p16$ mutasyonu hangisidir?",
+      "front": "Hollanda'daki FAMMM ailelerinde tanımlanan ve pankreas kanseri riskini %21'e kadar çıkaran spesifik p16 mutasyonu hangisidir?",
       "back": "p16-Leiden (19 baz çiftlik delesyon).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-16",
-      "front": "Pankreas kanseri riskini yaklaşık 15 kat artıran ve $BRCA2$ bağlayıcı proteini kodlayan gen hangisidir?",
-      "back": "$PALB2$.",
+      "front": "Pankreas kanseri riskini yaklaşık 15 kat artıran ve BRCA2 bağlayıcı proteini kodlayan gen hangisidir?",
+      "back": "PALB2.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-17",
       "front": "Lynch Sendromu'na (HNPCC) neden olan DNA mismatch repair (mismatch onarımı) genleri nelerdir?",
-      "back": "$MLH1$, $MSH2$ ve $MSH6$.",
+      "back": "MLH1, MSH2 ve MSH6.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-18",
       "front": "Ataksi-telanjiektazi hastalarında pankreas kanseri riskini 8-9 kat artıran gen hangisidir?",
-      "back": "$ATM$ geni.",
+      "back": "ATM geni.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-19",
-      "front": "Pankreatik intraepitelyal neoplazi (PanIN) evrelemesinde, $SMAD4$ ve $TP53$ inaktivasyonu tipik olarak hangi evrede görülür?",
+      "front": "Pankreatik intraepitelyal neoplazi (PanIN) evrelemesinde, SMAD4 ve TP53 inaktivasyonu tipik olarak hangi evrede görülür?",
       "back": "Yüksek dereceli PanIN (PanIN-3).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-20",
       "front": "Pankreasın solid psödopapiller neoplazilerinin neredeyse tamamında görülen somatik mutasyon hangisidir?",
-      "back": "$CTNNB1$ ($\\beta$-katenin) gen mutasyonu.",
+      "back": "CTNNB1 (β-katenin) gen mutasyonu.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-21",
       "front": "Pankreasın seröz kistadenomlarında karakteristik olarak hangi gende mutasyon izlenir?",
-      "back": "$VHL$ (von Hippel-Lindau) geni.",
+      "back": "VHL (von Hippel-Lindau) geni.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-22",
       "front": "İntraduktal papiller müsinöz neoplazilerde (İPMN) görülen ve kist gelişimine özgü olduğu düşünülen mutasyon hangisidir?",
-      "back": "$GNAS$ mutasyonu.",
+      "back": "GNAS mutasyonu.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -145,7 +145,7 @@
     {
       "id": "card-24",
       "front": "CA 19-9 düzeyleri hangi kan grubu antijeni negatif olan bireylerde (Lewis negatif) sentezlenemez?",
-      "back": "Lewis antijeni ($a^- b^-$).",
+      "back": "Lewis antijeni (a⁻ b⁻).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -169,7 +169,7 @@
     {
       "id": "card-28",
       "front": "NCCN kriterlerine göre 'sınırda rezektabl' (borderline) pankreas kanseri için SMA veya çölyak aks ile temas sınırı kaç derecedir?",
-      "back": "$180^\\circ$ veya daha az ($\\le 180^\\circ$).",
+      "back": "180° veya daha az (≤ 180°).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -204,13 +204,13 @@
     },
     {
       "id": "card-34",
-      "front": "Metastatik pankreas kanserinde, germ hattı $BRCA1/2$ mutasyonu olan hastalarda idame tedavide kullanılan ajan hangisidir?",
+      "front": "Metastatik pankreas kanserinde, germ hattı BRCA1/2 mutasyonu olan hastalarda idame tedavide kullanılan ajan hangisidir?",
       "back": "Olaparib (PARP inhibitörü).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-35",
-      "front": "$BRCA$ veya $PALB2$ mutasyonu olan pankreas kanserli hastalarda hangi kemoterapi ajanı kombinasyonu özellikle etkilidir?",
+      "front": "BRCA veya PALB2 mutasyonu olan pankreas kanserli hastalarda hangi kemoterapi ajanı kombinasyonu özellikle etkilidir?",
       "back": "Platin bazlı rejimler (örn. Gemsitabin + Sisplatin).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
@@ -246,7 +246,7 @@
     },
     {
       "id": "card-41",
-      "front": "Pankreas kanserlerinin yaklaşık $\\%15$ - $\\%20$'si tanı anında hangi evrededir?",
+      "front": "Pankreas kanserlerinin yaklaşık %15 - %20'si tanı anında hangi evrededir?",
       "back": "Lokalize rezektabl evre.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
@@ -295,7 +295,7 @@
     {
       "id": "card-49",
       "front": "İntraduktal onkositik papiller neoplazilerde (İOPN) karakteristik olarak görülen genetik değişiklik hangisidir?",
-      "back": "$PRKACA$ veya $PRKACB$ genlerini içeren translokasyonlar.",
+      "back": "PRKACA veya PRKACB genlerini içeren translokasyonlar.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -306,19 +306,19 @@
     },
     {
       "id": "card-51",
-      "front": "AJCC 8. Edisyon TNM evrelemesine göre $T1$ evresi tümör boyutu sınırı nedir?",
-      "back": "$2 cm$ veya daha küçük ($\\le 2 cm$).",
+      "front": "AJCC 8. Edisyon TNM evrelemesine göre T1 evresi tümör boyutu sınırı nedir?",
+      "back": "2 cm veya daha küçük (≤ 2 cm).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-52",
-      "front": "$T3$ tümör tanımı nasıldır?",
-      "back": "En geniş çapı $4 cm$'den büyük olan tümör.",
+      "front": "T3 tümör tanımı nasıldır?",
+      "back": "En geniş çapı 4 cm'den büyük olan tümör.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-53",
-      "front": "Pankreas kanserinde $N2$ evresi kaç adet pozitif bölgesel lenf nodunu ifade eder?",
+      "front": "Pankreas kanserinde N2 evresi kaç adet pozitif bölgesel lenf nodunu ifade eder?",
       "back": "4 veya daha fazla pozitif lenf nodu.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
@@ -349,7 +349,7 @@
     {
       "id": "card-58",
       "front": "Pankreas adenokarsinomunda epitelyal-mezenkimal geçiş (EMT) ve invaziv fenotip ile ilişkili olan marker hangisidir?",
-      "back": "E-kadherin ($CDH1$) ekspresyon kaybı.",
+      "back": "E-kadherin (CDH1) ekspresyon kaybı.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -361,7 +361,7 @@
     {
       "id": "card-60",
       "front": "Pankreas kanseri mikroçevresinde T-hücre aktivitesini baskılayan ana sitokin hangisidir?",
-      "back": "$TGF-\\beta$.",
+      "back": "TGF-β.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -379,7 +379,7 @@
     {
       "id": "card-63",
       "front": "Pankreas rezeksiyonu sonrası patolojik incelemede 'R1' rezeksiyon neyi ifade eder?",
-      "back": "Rezeksiyon sınırına $1 mm$ mesafede tümör hücrelerinin bulunması.",
+      "back": "Rezeksiyon sınırına 1 mm mesafede tümör hücrelerinin bulunması.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -408,14 +408,14 @@
     },
     {
       "id": "card-68",
-      "front": "Hangi genetik sendromda pankreas kanseri yaşam boyu riski $\\%36$ gibi çok yüksek bir orandadır?",
+      "front": "Hangi genetik sendromda pankreas kanseri yaşam boyu riski %36 gibi çok yüksek bir orandadır?",
       "back": "Peutz-Jeghers Sendromu.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-69",
       "front": "Pankreas kanseri taramasında EUS'un BT'ye göre en büyük avantajı nedir?",
-      "back": "$2 cm$'den küçük küçük tümörleri saptama hassasiyetinin daha yüksek olması.",
+      "back": "2 cm'den küçük küçük tümörleri saptama hassasiyetinin daha yüksek olması.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
@@ -457,13 +457,13 @@
     {
       "id": "card-76",
       "front": "Hangi genetik sendrom 'sentinel' (öncü) pankreas kanseri vakası olarak değerlendirilebilir?",
-      "back": "Herediter meme ve over kanseri ($BRCA$).",
+      "back": "Herediter meme ve over kanseri (BRCA).",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {
       "id": "card-77",
       "front": "İPMN tanısında kist sıvısı analizinde hangi spesifik mutasyon malignite riskini işaret edebilir?",
-      "back": "$TP53$ veya $SMAD4$ mutasyonları.",
+      "back": "TP53 veya SMAD4 mutasyonları.",
       "tag": "Gastroenteroloji / Pankreas Kanseri"
     },
     {

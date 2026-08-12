@@ -7,7 +7,7 @@
     {
       "id": "card-1",
       "front": "İmmün trombositopeni (İTP) tanısı için kabul edilen izole trombosit sayısı eşiği nedir?",
-      "back": "$100 \\times 10^9/L$ altı.",
+      "back": "100 × 10⁹/L altı.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -85,7 +85,7 @@
     {
       "id": "card-14",
       "front": "Yeni tanılı yetişkin İTP hastalarında genellikle kabul edilen tedaviye başlama eşik trombosit sayısı kaçtır?",
-      "back": "$20,000$ ile $30,000/\\mu L$ altı.",
+      "back": "20,000 ile 30,000/µL altı.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -97,7 +97,7 @@
     {
       "id": "card-16",
       "front": "Yüksek doz deksametazon tedavisinin İTP'deki standart uygulama şeması nasıldır?",
-      "back": "4 gün boyunca günlük $40\\ mg$.",
+      "back": "4 gün boyunca günlük 40 mg.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -133,13 +133,13 @@
     {
       "id": "card-22",
       "front": "İTP patofizyolojisinde rol oynayan ve megakaryosit maturasyonunu baskılayan T-hücre alt grubu hangisidir?",
-      "back": "$CD8^+T$ (Sitotoksik T) hücreleri.",
+      "back": "CD8⁺T (Sitotoksik T) hücreleri.",
       "tag": "Hematoloji / İTP"
     },
     {
       "id": "card-23",
       "front": "İTP'de makrofajların trombositleri fagosite etmesini sağlayan reseptör hangisidir?",
-      "back": "$Fc\\gamma$ reseptörü.",
+      "back": "Fcγ reseptörü.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -157,7 +157,7 @@
     {
       "id": "card-26",
       "front": "Antikoagülan ilaç kullanan bir İTP hastasında güvenli kabul edilen minimum trombosit düzeyi nedir?",
-      "back": "$50 \\times 10^9/L$.",
+      "back": "50 × 10⁹/L.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -187,7 +187,7 @@
     {
       "id": "card-31",
       "front": "Gebelikte İTP yönetimi için epidural anestezi yapılabilecek güvenli trombosit sınırı kaçtır?",
-      "back": "$\\ge 80 \\times 10^9/L$.",
+      "back": "≥ 80 × 10⁹/L.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -253,7 +253,7 @@
     {
       "id": "card-42",
       "front": "Gebelikte vajinal doğum için hedeflenen minimum trombosit sayısı kaçtır?",
-      "back": "$\\ge 50 \\times 10^9/L$.",
+      "back": "≥ 50 × 10⁹/L.",
       "tag": "Hematoloji / İTP"
     },
     {
@@ -379,7 +379,7 @@
     {
       "id": "card-63",
       "front": "İTP'de antikorların en sık bağlandığı trombosit yüzey reseptörü hangisidir?",
-      "back": "Glikoprotein IIb/IIIa ($GPIIb/IIIa$).",
+      "back": "Glikoprotein IIb/IIIa (GPIIb/IIIa).",
       "tag": "Hematoloji / İTP"
     },
     {
