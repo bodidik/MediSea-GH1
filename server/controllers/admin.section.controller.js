@@ -26,7 +26,7 @@ exports.audit = async (req, res) => {
 
     const [videos, notes] = await Promise.all(tasks);
 
-    function collect(items, type) {
+    const collect = (items, type) => {
       const rows = [];
       for (const d of items) {
         const section = d.section || "";
@@ -43,7 +43,7 @@ exports.audit = async (req, res) => {
         });
       }
       return rows;
-    }
+    };
 
     const rows = [...collect(videos, "video"), ...collect(notes, "note")];
 
@@ -110,7 +110,7 @@ exports.normalize = async (req, res) => {
 
     const changes = [];
 
-    function plan(items, modelName) {
+    const plan = (items, modelName) => {
       for (const d of items) {
         const section = d.section || "";
         const sectionCode = d.sectionCode || "";
@@ -127,7 +127,7 @@ exports.normalize = async (req, res) => {
           });
         }
       }
-    }
+    };
 
     plan(videos, "Video");
     plan(notes, "Note");

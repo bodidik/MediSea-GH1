@@ -2,7 +2,8 @@
 // Not: ESM (import/export) kullanıyoruz.
 
 import Topic from "../models/topic.js";
-import express from "express"; // CSV text parser için route açıklamasında kullanılıyor
+// express içe aktarımı kaldırıldı: bu dosyada kullanılmıyordu. CSV text
+// parser'ı route tarafında kurulur (express.text), burada değil.
 
 /* =========================================================
  * Yardımcılar
