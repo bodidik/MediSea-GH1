@@ -73,6 +73,6 @@ async function main(){
 
 main().catch(async (e)=>{
   console.error("[seedReview] ERROR:", e?.message || e);
-  try { await mongoose.disconnect(); } catch {}
+  try { await mongoose.disconnect(); } catch { /* zaten hata yolundayız, kapatma hatası yutulur */ }
   process.exit(1);
 });

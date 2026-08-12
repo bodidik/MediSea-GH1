@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { intake, unexaminedSystems, BOX_IDS } from './intake.js';
+import { intake, BOX_IDS } from './intake.js';
 import { diagnose } from './engine.js';
 import { assess } from './index.js';
 import { VIGNETTE_59M_FATIGUE, VIGNETTE_59M_FATIGUE_FULL } from './cases/vignette59mFatigue.js';
