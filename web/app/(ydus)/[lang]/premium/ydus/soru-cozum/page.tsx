@@ -1,53 +1,43 @@
 import fs from 'fs';
 import path from 'path';
+import { notFound } from 'next/navigation';
 import YdusCockpit from './YdusCockpit';
+import { AccessGate } from '@/lib/AccessGate';
 
-// KAPTANIN DİNAMİK VAKA (CASE) OKUYUCUSU (Next.js 15 Standartı)
+export const revalidate = 86400;
+
+// branch ve id doğrudan dosya yoluna giriyor. Süzgeç olmadan
+// ?branch=../../../.. ile depo dışındaki her .json okunabiliyordu.
+const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
+
+function vakaYukle(branch: string, id: string) {
+  try {
+    const dosyaYolu = path.join(
+      process.cwd(),
+      'content', 'premium', 'ydus', 'cases', branch, `${id}.json`
+    );
+    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+  } catch {
+    return null;
+  }
+}
+
 export default async function SoruCozumPage(props: {
   params: Promise<{ lang: string }>;
   searchParams: Promise<{ branch?: string; id?: string }>;
 }) {
-  
-  // 🚀 Next.js 15 kuralı: Önce Promise yapısını await ile çözüyoruz
-  const searchParams = await props.searchParams;
+  const { lang } = await props.params;
+  const { branch, id } = await props.searchParams;
 
-  // URL'den gelen emirleri yakala (Örn: ?branch=nefroloji&id=case-sle-nefrit-001)
-  const branch = searchParams?.branch;
-  const id = searchParams?.id;
+  if (!branch || !id || !isValidParam(branch) || !isValidParam(id)) notFound();
 
-  if (!branch || !id) {
-    return (
-      <div className="flex h-screen items-center justify-center bg-slate-950">
-        <div className="bg-red-900/20 text-red-400 p-8 rounded-2xl border border-red-500/30 text-center shadow-2xl">
-          <span className="text-4xl mb-4 block">⚠️</span>
-          <h2 className="text-2xl font-black tracking-widest uppercase mb-2">Rota Hatası</h2>
-          <p className="text-sm">Gidilecek branş veya vaka (case) dosyası belirtilmedi.</p>
-        </div>
-      </div>
-    );
-  }
+  // Vakaların kendi konu sayfası yok; kapı vaka kimliğiyle kuruluyor.
+  // Tanınmayan kimlik ContentAccess'te premium sayıldığı için varsayılan kapalı.
+  const gate = await AccessGate({ topicId: id, lang, branch });
+  if (gate) return gate;
 
-  try {
-    // Sınav/Vaka JSON dosyasının yolunu bulup okuyoruz
-    const filePath = path.join(process.cwd(), 'app', '(ydus)', '[lang]', 'premium', 'ydus', 'soru-cozum', 'data', branch, `${id}.json`);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
-    
-    // Veriyi kokpite teslim ediyoruz
-    return <YdusCockpit data={data} />;
-    
-  } catch (error) {
-    console.error("Quiz veri okuma hatası:", error);
-    return (
-      <div className="flex h-screen items-center justify-center bg-slate-950">
-        <div className="bg-slate-900 text-slate-400 p-8 rounded-2xl border border-slate-800 text-center shadow-2xl">
-          <span className="text-4xl mb-4 block">🌊</span>
-          <h2 className="text-2xl font-black text-white tracking-widest uppercase mb-2">Kayıt Bulunamadı</h2>
-          <p className="text-sm">
-            <span className="text-blue-400 font-mono">{branch}/{id}.json</span> seyir defterinde yok.
-          </p>
-        </div>
-      </div>
-    );
-  }
+  const veri = vakaYukle(branch, id);
+  if (!veri) notFound();
+
+  return <YdusCockpit data={veri} />;
 }
