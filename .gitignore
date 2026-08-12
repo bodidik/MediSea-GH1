@@ -4,7 +4,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json
+# package-lock.json BİLEREK yok sayılmıyor: CI her iki işte de `npm ci`
+# çalıştırıyor ve `npm ci` lockfile olmadan çalışmaz. Yok sayıldığı sürece
+# setup-node "Some specified paths were not resolved" ile kırılıyordu, temiz
+# klon ise hiç kurulum yapamıyordu. Sürüm sabitlemesi için takip edilir.
 pnpm-lock.yaml
 
 # Logs
