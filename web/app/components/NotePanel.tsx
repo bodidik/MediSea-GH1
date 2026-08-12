@@ -105,8 +105,8 @@ export default function NotePanel() {
           localStorage.removeItem(KEY(pathname));
         } else {
           localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes }));
-          // Çalışma Alanım sayfası başlığı buradan okur
           touchIndex(pathname, pageTitle());
+          window.dispatchEvent(new Event("medisea:changed"));
         }
       } catch {
         // Depo dolu. SESSİZCE GEÇMEK YASAK: aşağıda "Kaydedildi" yazan bir

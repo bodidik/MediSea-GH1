@@ -61,6 +61,7 @@ export function saveMarks(pathname: string, marks: ReadingMark[]): boolean {
   try {
     if (marks.length === 0) localStorage.removeItem(storageKey(pathname));
     else localStorage.setItem(storageKey(pathname), JSON.stringify(marks));
+    if (typeof window !== "undefined") window.dispatchEvent(new Event("medisea:changed"));
     return true;
   } catch {
     return false; // kota dolu / gizli sekme

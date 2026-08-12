@@ -248,6 +248,7 @@ export function grade(cardId: string, g: Grade, now = Date.now()): CardState {
   const next = schedule(states[cardId] ?? null, g, now);
   states[cardId] = next;
   writeStates(states);
+  if (typeof window !== "undefined") window.dispatchEvent(new Event("medisea:changed"));
   return next;
 }
 
