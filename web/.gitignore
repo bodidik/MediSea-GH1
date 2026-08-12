@@ -2,7 +2,7 @@ node_modules/
 .next/
 dist/
 *.log
-package-lock.json
+# package-lock.json yok sayılmıyor — CI `npm ci` çalıştırıyor, bkz. kök .gitignore
 
 # Dogrulama derlemesi (NEXT_DIST_DIR ile) — gecici
 .next-verify

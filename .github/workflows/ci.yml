@@ -26,7 +26,7 @@ jobs:
         - name: Setup Node.js
           uses: actions/setup-node@v4
           with:
-            node-version: 20
+            node-version: 22
             cache: 'npm'
             cache-dependency-path: web/package-lock.json
 
@@ -42,6 +42,12 @@ jobs:
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
+            # lib/db.ts içe aktarılırken fırlatıyor, bu yüzden değişken build
+            # sırasında TANIMLI olmalı. Erişilebilir bir veritabanı gerekmiyor:
+            # hiçbir sayfa prerender sırasında sorgu atmıyor, ulaşılamaz sahte
+            # bir URI ile build 166 sayfayı üretiyor. Gerçek bir secret varsa
+            # o kullanılır.
+            MONGODB_URI: ${{ secrets.MONGODB_URI || 'mongodb://127.0.0.1:27017/ci-build' }}
           run: npm run build
 
   server:
@@ -57,7 +63,7 @@ jobs:
         - name: Setup Node.js
           uses: actions/setup-node@v4
           with:
-            node-version: 20
+            node-version: 22
             cache: 'npm'
             cache-dependency-path: server/package-lock.json
 
