@@ -59,6 +59,9 @@ export default function ReadingTools() {
   const [penMode, setPenMode] = useState(false);
   /** Son kaydetme depo dolu olduğu için başarısız oldu mu */
   const [kayitHatasi, setKayitHatasi] = useState(false);
+  /** Kısa vurgu bilgisi — geçici, 3 sn sonra kaybolur */
+  const [kisaBilgi, setKisaBilgi] = useState(false);
+  const kisaTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const barRef = useRef<HTMLDivElement>(null);
   const marksRef = useRef<ReadingMark[]>([]);
@@ -321,6 +324,13 @@ export default function ReadingTools() {
 
     setPainted((p) => new Set(p).add(id));
     commit([...base, { id, k, s, e, t, st, b: before, a: after }]);
+
+    if (t.trim().length < 8) {
+      if (kisaTimer.current) clearTimeout(kisaTimer.current);
+      setKisaBilgi(true);
+      kisaTimer.current = setTimeout(() => setKisaBilgi(false), 3500);
+    }
+
     close();
   };
 
@@ -518,6 +528,12 @@ export default function ReadingTools() {
             </div>
           )}
 
+          {kisaBilgi && (
+            <div className="max-w-[240px] rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-700 shadow-lg animate-[msPop_.12s_ease-out]">
+              Bu vurgu <strong className="font-black">tekrar kartı olmayacak</strong> —
+              cümle düzeyinde (8+ karakter) vurgular kart olur.
+            </div>
+          )}
           {kayitHatasi && (
             <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
               <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı

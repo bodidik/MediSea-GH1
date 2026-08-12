@@ -221,11 +221,14 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
 
   try {
     if (mode === "replace") {
-      // önce mevcut çalışma verisini temizle
+      // Yalnızca write()'ın GERİ KOYACAĞI anahtarları sil. Kullanıcı tercihleri
+      // (notew, notepaper), tanıtım kartları (hint:*) ve senkron durumu (sync:*)
+      // yedekte YOKTUR; silinirse geri gelmezler — bu sessiz veri kaybıdır.
+      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY];
       const silinecek: string[] = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
-        if (k?.startsWith("medisea:")) silinecek.push(k);
+        if (k && VERİ_ONEKI.some((o) => k.startsWith(o))) silinecek.push(k);
       }
       silinecek.forEach((k) => localStorage.removeItem(k));
 
