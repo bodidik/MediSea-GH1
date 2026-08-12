@@ -10,13 +10,14 @@
 // çalıştırılır; kullanıcı ne olacağını görmeden hiçbir şey yazılmaz.
 
 import type { ReadingMark } from "@/app/lib/reading-marks";
-import type { CardState } from "@/app/lib/review-deck";
+import type { CardState, StudyLog } from "@/app/lib/review-deck";
 import type { NoteDoc } from "@/app/lib/study-index";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
 const REVIEW_KEY = "medisea:review:v1";
 const INDEX_KEY = "medisea:index:v1";
+const LOG_KEY = "medisea:log:v1";
 
 export type IndexRow = { title: string; at: number };
 
@@ -28,6 +29,8 @@ export type Backup = {
   notes: Record<string, NoteDoc>;
   review: Record<string, CardState>;
   index: Record<string, IndexRow>;
+  /** Çalışma günlüğü. Seri (streak) bundan hesaplanır; taşınmazsa sıfırlanır. */
+  log: StudyLog;
 };
 
 export type BackupSummary = {
@@ -88,6 +91,7 @@ function readAll(): Backup {
     notes,
     review: json<Record<string, CardState>>(localStorage.getItem(REVIEW_KEY)) ?? {},
     index: json<Record<string, IndexRow>>(localStorage.getItem(INDEX_KEY)) ?? {},
+    log: json<StudyLog>(localStorage.getItem(LOG_KEY)) ?? {},
   };
 }
 
@@ -145,6 +149,7 @@ function parseBackup(text: string): { b: Backup | null; hata?: string } {
       notes: (b.notes && typeof b.notes === "object" ? b.notes : {}) as Backup["notes"],
       review: (b.review && typeof b.review === "object" ? b.review : {}) as Backup["review"],
       index: (b.index && typeof b.index === "object" ? b.index : {}) as Backup["index"],
+      log: (b.log && typeof b.log === "object" ? b.log : {}) as Backup["log"],
     },
   };
 }
@@ -251,7 +256,18 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       if (!index[yol] || (row?.at ?? 0) > (index[yol]?.at ?? 0)) index[yol] = row;
     }
 
-    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index });
+    // günlük: gün başına BÜYÜK olan kazanır, toplanmaz. Senkron her oturum
+    // açılışında aynı yedeği birleştiriyor; toplasaydık her girişte şişerdi.
+    const log: StudyLog = { ...mevcut.log };
+    for (const [gun, g] of Object.entries(gelen.log)) {
+      const v = log[gun];
+      log[gun] = {
+        kart: Math.max(v?.kart ?? 0, g?.kart ?? 0),
+        dogru: Math.max(v?.dogru ?? 0, g?.dogru ?? 0),
+      };
+    }
+
+    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log });
     return { ok: true };
   } catch (e) {
     return { ok: false, hata: "Yazma başarısız — tarayıcı depolama alanı dolu olabilir." };
@@ -267,6 +283,7 @@ function write(b: Backup) {
   }
   if (Object.keys(b.review).length) localStorage.setItem(REVIEW_KEY, JSON.stringify(b.review));
   if (Object.keys(b.index).length) localStorage.setItem(INDEX_KEY, JSON.stringify(b.index));
+  if (Object.keys(b.log).length) localStorage.setItem(LOG_KEY, JSON.stringify(b.log));
 }
 
 /* ── Depolama ölçümü ───────────────────────────────────────────────────── */

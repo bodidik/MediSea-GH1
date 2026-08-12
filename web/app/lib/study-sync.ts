@@ -118,6 +118,7 @@ function buildPayload(): { body: object; bytes: number } | null {
       notes: notes as any,
       review,
       index,
+      log,
     };
 
     const payloadStr = JSON.stringify(payload);
@@ -151,12 +152,31 @@ function tryParse(raw: string | null): any {
 
 let authOk = false;
 
+// Sunucuyla en az bir kez uzlaşılmadan push YAPILMAZ. Deposu boş bir cihaz
+// (yeni tarayıcı, temizlenmiş depo) aksi halde ilk `beforeunload` anında
+// sunucudaki yedeğin üzerine boş bir yük yazıp her şeyi siliyordu.
+let reconciled = false;
+let bekleyenPush = false;
+
 export function setAuthReady(v: boolean) {
   authOk = v;
+  if (!v) reconciled = false;
+}
+
+function markReconciled() {
+  reconciled = true;
+  if (bekleyenPush) {
+    bekleyenPush = false;
+    schedulePush();
+  }
 }
 
 async function doPush(): Promise<boolean> {
   if (!authOk) return false;
+  if (!reconciled) {
+    bekleyenPush = true;
+    return false;
+  }
 
   const data = buildPayload();
   if (!data) return false;
@@ -212,45 +232,28 @@ export async function pull(): Promise<PullResult> {
 
     const j = await r.json();
     if (!j.ok) return { ok: false, reason: j.reason ?? "unknown" };
-    if (!j.payload) return { ok: true, loaded: false, summary: null };
 
-    const payload = j.payload as Backup;
-    if (payload.app !== "medisea" || payload.v !== 1) {
+    // Sunucuda kayıt yok — kaybedilecek bir şey yok, push serbest.
+    if (!j.payload) {
+      markReconciled();
       return { ok: true, loaded: false, summary: null };
     }
 
-    // Yerelde veri var mı?
-    let yerelVurgu = 0;
-    for (let i = 0; i < localStorage.length; i++) {
-      const k = localStorage.key(i);
-      if (k?.startsWith("medisea:marks:v2:")) yerelVurgu++;
+    const payload = j.payload as Backup;
+    if (payload.app !== "medisea" || payload.v !== 1) {
+      // Tanımadığımız şema: üzerine yazmaktansa senkronu kapalı tut.
+      return { ok: true, loaded: false, summary: null };
     }
 
-    if (yerelVurgu === 0) {
-      // Boş cihaz — sunucudakini yükle
-      const text = JSON.stringify(payload);
-      const result = applyImport(text, "merge");
-      if (!result.ok) return { ok: false, reason: result.hata ?? "import" };
-
-      const meta = readMeta();
-      meta.lastPull = Date.now();
-      writeMeta(meta);
-
-      return {
-        ok: true,
-        loaded: true,
-        summary: summarize(payload),
-      };
-    }
-
-    // Yerelde veri var — birleştir
-    const text = JSON.stringify(payload);
-    const result = applyImport(text, "merge");
+    // Boş cihaz da dolu cihaz da BİRLEŞTİRİR — birleştirme hiçbir şeyi silmez,
+    // dolayısıyla ayrı bir "boş cihaz" yoluna gerek yok.
+    const result = applyImport(JSON.stringify(payload), "merge");
     if (!result.ok) return { ok: false, reason: result.hata ?? "import" };
 
     const meta = readMeta();
     meta.lastPull = Date.now();
     writeMeta(meta);
+    markReconciled();
 
     return {
       ok: true,
