@@ -23,7 +23,18 @@ export function useStudySync() {
     }
 
     const flush = () => { pushNow(); };
+    // beforeunload masaüstünde çalışır ama tablette (iPad Safari, Android Chrome)
+    // güvenilir DEĞİLDİR: sekme kapatma, uygulama değiştirme, OS'un tarayıcıyı
+    // öldürmesi — bunlarda ateşlenmez. visibilitychange tablette güvenilirdir:
+    // sayfa arka plana düştüğünde (uygulama değiştirme, kilit ekranı) tetiklenir.
+    const onVis = () => {
+      if (document.visibilityState === "hidden") pushNow();
+    };
     window.addEventListener("beforeunload", flush);
-    return () => window.removeEventListener("beforeunload", flush);
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      window.removeEventListener("beforeunload", flush);
+      document.removeEventListener("visibilitychange", onVis);
+    };
   }, [status]);
 }

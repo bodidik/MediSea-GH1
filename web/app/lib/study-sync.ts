@@ -190,6 +190,16 @@ export function startListening() {
   if (listening || typeof window === "undefined") return;
   listening = true;
   window.addEventListener("medisea:changed", () => schedulePush());
+
+  // Sayfa arka plana düşerken bekleyen push'u hemen gönder. İki sinyal:
+  //  · visibilitychange — tablet'te uygulama değiştirme, kilit ekranı
+  //  · pagehide — bfcache'e giriş, sekme kapatma (beforeunload'dan güvenilir)
+  // İkisi de son şans: bunlardan sonra JS çalışmayabilir.
+  const urgentFlush = () => {
+    if (document.visibilityState === "hidden") pushNow();
+  };
+  document.addEventListener("visibilitychange", urgentFlush);
+  window.addEventListener("pagehide", () => pushNow());
 }
 
 /* ── Senkron durumu ────────────────────────────────────────────────────── */
