@@ -78,6 +78,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [bilinen, setBilinen] = useState<Set<string>>(new Set());
+  const [bitti, setBitti] = useState(false);
   const yuklendi = useRef(false);
   const baslangic = useRef<{ x: number; y: number } | null>(null);
 
@@ -105,10 +106,13 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
   const card: Card | undefined = deck[index];
   const total = deck.length;
 
+  // Son karttan sonra başa sarmak yerine set biter. Sonsuz döngüde çalışmanın
+  // bittiği belli olmuyor, bilinmeyenleri ayıklama fırsatı da hiç gelmiyordu.
   const next = useCallback(() => {
+    if (index + 1 >= total) { setBitti(true); return; }
     setFlipped(false);
-    setTimeout(() => setIndex(i => (i + 1) % total), 150);
-  }, [total]);
+    setTimeout(() => setIndex(i => i + 1), 150);
+  }, [index, total]);
 
   const prev = useCallback(() => {
     setFlipped(false);
@@ -137,6 +141,72 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     return () => window.removeEventListener('keydown', handleKey);
   }, [flip, next, prev]);
 
+  if (bitti) {
+    const bilinmeyenler = cards.filter(c => !bilinen.has(c.id));
+    const oran = cards.length ? Math.round((bilinen.size / cards.length) * 100) : 0;
+    const renk = oran >= 80 ? '#1a6640' : oran >= 50 ? '#7a5800' : '#a01f1f';
+    const yeniden = (liste: Card[]) => {
+      setDeck(shuffle(liste));
+      setIndex(0);
+      setFlipped(false);
+      setBitti(false);
+    };
+    return (
+      <div style={{
+        minHeight: '100vh', background: '#fff', color: '#1a2a3a',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2.5rem 1rem' }}>
+          <div style={{
+            border: '0.5px solid #b8cfe8', borderRadius: '16px',
+            background: '#f5f9ff', padding: '2rem', textAlign: 'center',
+          }}>
+            <div style={{ fontSize: '11px', color: '#6a8aaa', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              {topic} · set bitti
+            </div>
+            <div style={{ fontSize: '44px', fontWeight: 700, color: renk, margin: '0.5rem 0' }}>
+              %{oran}
+            </div>
+            <div style={{ fontSize: '13px', color: '#4a6a8a' }}>
+              {cards.length} kartın {bilinen.size} tanesini biliyorsun
+              {bilinmeyenler.length > 0 && ` · ${bilinmeyenler.length} kart kaldı`}
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '1.25rem' }}>
+            {bilinmeyenler.length > 0 && (
+              <button
+                onClick={() => yeniden(bilinmeyenler)}
+                style={{
+                  padding: '12px', borderRadius: '10px', border: '0.5px solid #1a3a6b',
+                  background: '#1a3a6b', color: '#fff', fontWeight: 600, fontSize: '13px', cursor: 'pointer',
+                }}
+              >
+                Bilmediğim {bilinmeyenler.length} kartı çalış →
+              </button>
+            )}
+            <button
+              onClick={() => yeniden(cards)}
+              style={{
+                padding: '12px', borderRadius: '10px', border: '0.5px solid #b8cfe8',
+                background: '#f5f9ff', color: '#1a3a6b', fontWeight: 600, fontSize: '13px', cursor: 'pointer',
+              }}
+            >
+              Baştan karıştır
+            </button>
+            <a href={backHref} style={{
+              padding: '12px', borderRadius: '10px', border: '0.5px solid #d0e4f5',
+              background: '#fff', color: '#6a8aaa', fontWeight: 500, fontSize: '13px',
+              textDecoration: 'none', textAlign: 'center',
+            }}>
+              ← Konuya dön
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (!card) {
     return (
       <div style={{
@@ -157,7 +227,9 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
   }
 
   const bilinenSayi = bilinen.size;
-  const ilerleme = Math.round((bilinenSayi / total) * 100);
+  // Payda deste değil, setin tamamı: bilmediklerini çalışırken deste küçülüyor
+  // ama "biliniyor" sayısı bütün seti kapsıyor, oran %100'ü aşardı.
+  const ilerleme = cards.length ? Math.round((bilinenSayi / cards.length) * 100) : 0;
   const cardBilinen = bilinen.has(card.id);
   const tagS = tagStil(card.tag);
 
