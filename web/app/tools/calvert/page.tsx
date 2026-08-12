@@ -10,7 +10,13 @@ export default function CalvertPage() {
 
   const gfrNum = parseLocaleNumber(gfr);
   const aucNum = parseLocaleNumber(auc);
-  const dose = Math.round(aucNum * (gfrNum + 25) * 10) / 10;
+  // GFR 125 mL/dak ile sınırlandırılır. Calvert formülü ölçülmüş GFR ile
+  // türetilmişti; tahmini GFR (Cockcroft-Gault, CKD-EPI) yüksek değerlerde
+  // gerçek klirensi abartıyor ve doz aşımına yol açıyordu. Sınırı koymamak
+  // sessiz bir aşırı doz demektir — arayüz zaten sınırı vaat ediyordu.
+  const gfrKullanilan = Math.min(gfrNum, 125);
+  const sinirUygulandi = gfrNum > 125;
+  const dose = Math.round(aucNum * (gfrKullanilan + 25) * 10) / 10;
 
   const params = { gfr: gfrNum, auc: aucNum };
 
@@ -50,6 +56,11 @@ export default function CalvertPage() {
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM DOZ</span>
           <div className="text-7xl font-black text-white drop-shadow-lg">{dose || "–"}</div>
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mg (mutlak doz)</span>
+          {sinirUygulandi && (
+            <div className="mt-4 rounded-full bg-amber-400 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-blue-950">
+              GFR {gfrNum} → 125 ile sınırlandırıldı
+            </div>
+          )}
         </div>
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
@@ -59,7 +70,7 @@ export default function CalvertPage() {
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              Calvert formülü: Doz (mg) = AUC × (GFR + 25). Bazı protokollerde GFR 125 mL/dak ile sınırlandırılır (aşırı dozu önlemek için). Doz hesabı, kurumun kemoterapi protokolüne göre teyit edilmelidir.
+              Calvert formülü: Doz (mg) = AUC × (GFR + 25). Bu hesap GFR&apos;yi 125 mL/dak ile sınırlar: formül ölçülmüş GFR ile türetilmiştir, tahmini GFR yüksek değerlerde klirensi abartıp doz aşımına yol açar. Doz hesabı, kurumun kemoterapi protokolüne göre teyit edilmelidir.
             </p>
           </div>
         </div>

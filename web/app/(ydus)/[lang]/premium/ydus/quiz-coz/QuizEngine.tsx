@@ -57,6 +57,8 @@ function SoruKarti({
   soruNo,
   toplamSoru,
   onNext,
+  onAnswer,
+  skor,
   lang,
   branch,
   topic,
@@ -65,12 +67,13 @@ function SoruKarti({
   soruNo: number;
   toplamSoru: number;
   onNext: () => void;
+  onAnswer: (dogru: boolean) => void;
+  skor: { dogru: number; yanlis: number };
   lang: string;
   branch: string;
   topic?: string;
 }) {
   const [secim, setSecim] = useState<string | null>(null);
-  const [aciklamaAcik, setAciklamaAcik] = useState(false);
 
   const secenekler = Object.entries(soru.secenekler);
   const cevapVerildi = secim !== null;
@@ -78,8 +81,8 @@ function SoruKarti({
   const secenek = useCallback((harf: string) => {
     if (cevapVerildi) return;
     setSecim(harf);
-    setAciklamaAcik(true);
-  }, [cevapVerildi]);
+    onAnswer(harf === soru.dogru);
+  }, [cevapVerildi, onAnswer, soru.dogru]);
 
   function secenekStil(harf: string): React.CSSProperties {
     const base: React.CSSProperties = {
@@ -145,6 +148,12 @@ function SoruKarti({
           </a>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <ZorlukBadge zorluk={soru.zorluk} />
+            {(skor.dogru > 0 || skor.yanlis > 0) && (
+              <span style={{ fontSize: '12px', fontWeight: 700, display: 'flex', gap: '6px' }}>
+                <span style={{ color: '#1a6640' }}>{skor.dogru}✓</span>
+                <span style={{ color: '#a01f1f' }}>{skor.yanlis}✗</span>
+              </span>
+            )}
             <span style={{ fontSize: '12px', color: '#8aaacc', fontWeight: 600 }}>
               {soruNo} / {toplamSoru}
             </span>
@@ -255,14 +264,14 @@ function SoruKarti({
                         <div key={harf} style={{
                           padding: '.65rem .9rem',
                           borderRadius: '7px',
-                          background: isDogru ? '#fff0f0' : '#f8fcff',
-                          border: `0.5px solid ${isDogru ? '#e08080' : '#d0e4f5'}`,
+                          background: isDogru ? '#f0fbf5' : '#f8fcff',
+                          border: `0.5px solid ${isDogru ? '#80c898' : '#d0e4f5'}`,
                           display: 'flex', gap: '8px', alignItems: 'flex-start',
                         }}>
                           <span style={{
                             fontSize: '10px', fontWeight: 700, padding: '2px 6px',
                             borderRadius: '4px', flexShrink: 0,
-                            background: isDogru ? '#a01f1f' : '#e6f0fb',
+                            background: isDogru ? '#1a6640' : '#e6f0fb',
                             color: isDogru ? '#fff' : '#1a3a6b',
                           }}>
                             {harf}
@@ -296,20 +305,13 @@ function SoruKarti({
               }}>
                 ← Konuya dön
               </a>
-              {soruNo < toplamSoru && (
-                <button onClick={onNext} style={{
-                  fontSize: '12px', fontWeight: 600, color: '#fff',
-                  border: 'none', borderRadius: '8px', padding: '7px 18px',
-                  background: '#1a3a6b', cursor: 'pointer',
-                }}>
-                  Sonraki soru →
-                </button>
-              )}
-              {soruNo === toplamSoru && (
-                <div style={{ fontSize: '12px', color: '#1a6640', fontWeight: 600, padding: '7px 0' }}>
-                  ✓ Set tamamlandı
-                </div>
-              )}
+              <button onClick={onNext} style={{
+                fontSize: '12px', fontWeight: 600, color: '#fff',
+                border: 'none', borderRadius: '8px', padding: '7px 18px',
+                background: '#1a3a6b', cursor: 'pointer',
+              }}>
+                {soruNo < toplamSoru ? 'Sonraki soru →' : 'Sonucu gör →'}
+              </button>
             </div>
           </div>
         )}
@@ -326,32 +328,139 @@ function SoruKarti({
   );
 }
 
+/* ────────────────────────── SONUÇ EKRANI ────────────────────────── */
+function SonucEkrani({
+  sorular,
+  sonuclar,
+  backHref,
+  onBastan,
+  onYanlislar,
+}: {
+  sorular: Soru[];
+  sonuclar: Record<string, boolean>;
+  backHref: string;
+  onBastan: () => void;
+  onYanlislar: () => void;
+}) {
+  const cevaplanan = sorular.filter((s) => s.id in sonuclar);
+  const dogru = cevaplanan.filter((s) => sonuclar[s.id]).length;
+  const yanlislar = cevaplanan.filter((s) => !sonuclar[s.id]);
+  const yuzde = cevaplanan.length ? Math.round((dogru / cevaplanan.length) * 100) : 0;
+  const renk = yuzde >= 80 ? '#1a6640' : yuzde >= 60 ? '#7a5800' : '#a01f1f';
+  const zemin = yuzde >= 80 ? '#f0fbf5' : yuzde >= 60 ? '#fffdf0' : '#fff0f0';
+
+  const dugme: React.CSSProperties = {
+    fontSize: '12px', fontWeight: 600, borderRadius: '8px',
+    padding: '9px 18px', cursor: 'pointer', textDecoration: 'none',
+  };
+
+  return (
+    <div style={{
+      minHeight: '100vh', background: '#fff',
+      fontFamily: 'system-ui, -apple-system, sans-serif', color: '#1a2a3a',
+    }}>
+      <div style={{ maxWidth: '760px', margin: '0 auto', padding: '2rem 1rem' }}>
+        <div style={{
+          background: zemin, border: `1.5px solid ${renk}`, borderRadius: '16px',
+          padding: '2rem 1.5rem', textAlign: 'center', marginBottom: '1.25rem',
+        }}>
+          <div style={{ fontSize: '11px', fontWeight: 700, color: renk, textTransform: 'uppercase', letterSpacing: '.12em' }}>
+            Set tamamlandı
+          </div>
+          <div style={{ fontSize: '48px', fontWeight: 800, color: renk, lineHeight: 1.1, margin: '.4rem 0' }}>
+            %{yuzde}
+          </div>
+          <div style={{ fontSize: '14px', fontWeight: 600, color: '#4a6a8a' }}>
+            {cevaplanan.length} soruda {dogru} doğru · {yanlislar.length} yanlış
+          </div>
+        </div>
+
+        {yanlislar.length > 0 && (
+          <div style={{ border: '0.5px solid #e08080', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.25rem' }}>
+            <div style={{
+              padding: '.7rem 1.1rem', background: '#fff0f0',
+              fontSize: '11px', fontWeight: 700, color: '#a01f1f',
+              textTransform: 'uppercase', letterSpacing: '.08em',
+            }}>
+              Yanlış yaptığın sorular
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              {yanlislar.map((s) => (
+                <div key={s.id} style={{
+                  padding: '.7rem 1.1rem', borderTop: '0.5px solid #f5e0e0',
+                  fontSize: '12px', lineHeight: 1.6, color: '#4a6a8a',
+                }}>
+                  {s.metin.length > 130 ? `${s.metin.slice(0, 130)}…` : s.metin}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+          {yanlislar.length > 0 && (
+            <button onClick={onYanlislar} style={{ ...dugme, background: '#a01f1f', color: '#fff', border: 'none' }}>
+              Yanlış {yanlislar.length} soruyu tekrar çöz
+            </button>
+          )}
+          <button onClick={onBastan} style={{ ...dugme, background: '#1a3a6b', color: '#fff', border: 'none' }}>
+            Baştan çöz
+          </button>
+          <a href={backHref} style={{ ...dugme, background: '#f5f9ff', color: '#1a3a6b', border: '0.5px solid #b8cfe8' }}>
+            ← Konuya dön
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /* ────────────────────────── ANA BİLEŞEN ────────────────────────── */
 export default function QuizEngine({ veri, lang, branch }: Props) {
   const storageKey = `quiz-progress-${veri.id}`;
+  const tumSorular = veri.sorular ?? [];
+
   const [soruIndex, setSoruIndex] = useState(0);
   const [devamMesaji, setDevamMesaji] = useState(false);
+  const [sonuclar, setSonuclar] = useState<Record<string, boolean>>({});
+  const [bitti, setBitti] = useState(false);
+  // Yalnızca yanlışları çözmek için daraltılmış set; null = bütün sorular.
+  const [aktifIdler, setAktifIdler] = useState<string[] | null>(null);
 
-  const sorular = veri.sorular ?? [];
+  const sorular = aktifIdler
+    ? tumSorular.filter((s) => aktifIdler.includes(s.id))
+    : tumSorular;
 
   useEffect(() => {
-    const kayitli = localStorage.getItem(storageKey);
-    if (kayitli) {
-      const index = parseInt(kayitli, 10);
-      if (!isNaN(index) && index > 0 && index < sorular.length) {
-        setSoruIndex(index);
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (!raw) return;
+      // Eski sürüm yalnızca indeksi sayı olarak tutuyordu — ikisini de kabul et.
+      const kayit = JSON.parse(raw);
+      const i = typeof kayit === 'number' ? kayit : kayit?.i;
+      const s = typeof kayit === 'object' && kayit ? kayit.s : null;
+      if (s && typeof s === 'object') setSonuclar(s);
+      if (typeof i === 'number' && i > 0 && i < tumSorular.length) {
+        setSoruIndex(i);
         setDevamMesaji(true);
         setTimeout(() => setDevamMesaji(false), 3000);
       }
-    }
+    } catch {}
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // İlerleme SET BİTİNCE silinir. Önceden son soruya geçerken siliniyordu:
+  // kullanıcı son soruyu cevaplamadan sekmeyi kapatırsa bütün tur kayboluyordu.
   useEffect(() => {
-    if (soruIndex > 0) {
-      localStorage.setItem(storageKey, String(soruIndex));
-    }
-  }, [soruIndex, storageKey]);
+    try {
+      if (bitti) {
+        localStorage.removeItem(storageKey);
+        return;
+      }
+      if (soruIndex === 0 && Object.keys(sonuclar).length === 0) return;
+      localStorage.setItem(storageKey, JSON.stringify({ i: soruIndex, s: sonuclar }));
+    } catch {}
+  }, [soruIndex, sonuclar, bitti, storageKey]);
 
   if (sorular.length === 0) {
     return (
@@ -365,12 +474,47 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
   }
 
   function ilerle() {
-    const yeni = Math.min(soruIndex + 1, sorular.length - 1);
-    setSoruIndex(yeni);
-    if (yeni === sorular.length - 1) {
-      localStorage.removeItem(storageKey);
+    if (soruIndex >= sorular.length - 1) {
+      setBitti(true);
+      return;
     }
+    setSoruIndex(soruIndex + 1);
   }
+
+  const backHref = veri.topic
+    ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
+    : `/${lang}/premium/ydus/${branch}`;
+
+  if (bitti) {
+    return (
+      <SonucEkrani
+        sorular={sorular}
+        sonuclar={sonuclar}
+        backHref={backHref}
+        onBastan={() => {
+          setAktifIdler(null);
+          setSonuclar({});
+          setSoruIndex(0);
+          setBitti(false);
+        }}
+        onYanlislar={() => {
+          const yanlisIdler = sorular
+            .filter((s) => sonuclar[s.id] === false)
+            .map((s) => s.id);
+          setAktifIdler(yanlisIdler);
+          setSonuclar({});
+          setSoruIndex(0);
+          setBitti(false);
+        }}
+      />
+    );
+  }
+
+  const aktifSoru = sorular[Math.min(soruIndex, sorular.length - 1)];
+  const skor = sorular.reduce(
+    (a, s) => (s.id in sonuclar ? (sonuclar[s.id] ? { ...a, dogru: a.dogru + 1 } : { ...a, yanlis: a.yanlis + 1 }) : a),
+    { dogru: 0, yanlis: 0 }
+  );
 
   return (
     <div style={{ position: 'relative' }}>
@@ -386,11 +530,13 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         </div>
       )}
       <SoruKarti
-        key={sorular[soruIndex].id}
-        soru={sorular[soruIndex]}
+        key={aktifSoru.id}
+        soru={aktifSoru}
         soruNo={soruIndex + 1}
         toplamSoru={sorular.length}
         onNext={ilerle}
+        onAnswer={(d) => setSonuclar((p) => ({ ...p, [aktifSoru.id]: d }))}
+        skor={skor}
         lang={lang}
         branch={branch}
         topic={veri.topic}
