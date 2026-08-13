@@ -1,0 +1,21 @@
+// Bu dosya betikle üretildi: scripts/arac-metadata.cjs
+// Elle düzenleme — başlık ve açıklama app/tools/page.tsx içindeki
+// TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "TIMI UA/NSTEMI — Kararsız angina/NSTEMI 14 günlük olay",
+  description: "TIMI UA/NSTEMI: Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/timi-ua" },
+  openGraph: {
+    type: "website",
+    title: "TIMI UA/NSTEMI — Kararsız angina/NSTEMI 14 günlük olay",
+    description: "TIMI UA/NSTEMI: Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/timi-ua",
+  },
+};
+
+export default function AracDuzen({ children }: { children: ReactNode }) {
+  return <>{children}</>;
+}
