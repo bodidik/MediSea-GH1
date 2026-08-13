@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { icerikSayilari } from "@/lib/icerik-sayaci";
 
 /**
  * Üyelik sayfası.
@@ -28,42 +29,61 @@ export const metadata: Metadata = {
   },
 };
 
-const UCRETSIZ = [
-  {
-    baslik: "Açık kütüphane",
-    metin: "13 branşta konu anlatımlarının tamamı. Kayıt olmadan, sınırsız.",
-  },
-  {
-    baslik: "Klinik hesaplayıcılar",
-    metin: "114 skor ve hesaplayıcı — eGFR'den Wells'e, hepsi serbest.",
-  },
-  {
-    baslik: "Çalışma araçları",
-    metin:
-      "Vurgulama, not defteri, tekrar destesi. Kendi işaretlemelerin cihazında durur, bir şey ödemeden çalışırsın.",
-  },
-];
+/**
+ * Sayılar elle YAZILMIYOR, sayılıyor.
+ *
+ * Bu sayfada "13 branşta" ve "114 skor" sabit yazılıydı. Aynı kalıp sitenin
+ * başka yerlerinde de vardı ve hepsinde aynı sonucu verdi: içerik büyürken
+ * sabit sayı sessizce yalana dönüşüyor (ana sayfa "6+ araç" derken 114 araç
+ * vardı). Satış sayfasında yanlış sayı, güveni doğrudan yaralar.
+ *
+ * Premium tarafa da somut sayı eklendi: önce yalnızca niteleyici cümleler
+ * vardı ("derinlemesine anlatım"). Gerçek sayı hem daha ikna edici hem daha
+ * dürüst — üstelik satış açılmadığı için kimseyi yanıltmıyor.
+ */
+function icerikKartlari(s: ReturnType<typeof icerikSayilari>) {
+  const ucretsiz = [
+    {
+      baslik: "Açık kütüphane",
+      metin: `${s.brans} branşta ${s.konu} konu anlatımı. Kayıt olmadan, sınırsız.`,
+    },
+    {
+      baslik: "Klinik hesaplayıcılar",
+      metin: `${s.arac} skor ve hesaplayıcı — eGFR'den Wells'e, hepsi serbest.`,
+    },
+    {
+      baslik: "Çalışma araçları",
+      metin:
+        "Vurgulama, not defteri, tekrar destesi. Kendi işaretlemelerin cihazında durur, bir şey ödemeden çalışırsın.",
+    },
+  ];
 
-const PREMIUM = [
-  {
-    baslik: "YDUS konu anlatımları",
-    metin: "Sınav odaklı, açık kütüphanenin üstüne kurulu derinlemesine anlatım.",
-  },
-  {
-    baslik: "Soru ve quiz setleri",
-    metin: "Açıklamalı çözümler, yanlışlarını ayıklayıp tekrar çalışma turu.",
-  },
-  {
-    baslik: "Hızlı tekrar kartları",
-    metin: "Bildiklerini işaretle, kalanları çalış. İlerlemen kayıtlı kalır.",
-  },
-  {
-    baslik: "Klinik vakalar",
-    metin: "Adım adım karar verdiren, gerçek hasta akışına yakın vaka çözümleri.",
-  },
-];
+  const premium = [
+    {
+      baslik: "YDUS konu anlatımları",
+      metin: `Sınav odaklı ${s.premiumKonu} başlık; açık kütüphanenin üstüne kurulu derinlemesine anlatım.`,
+    },
+    {
+      baslik: "Soru ve quiz setleri",
+      metin: `${s.premiumSoru} açıklamalı soru. Yanlışlarını ayıklayıp yalnızca onları tekrar çözebilirsin.`,
+    },
+    {
+      baslik: "Hızlı tekrar kartları",
+      metin: `${s.premiumKart} kart. Bildiklerini işaretle, kalanları çalış; ilerlemen kayıtlı kalır.`,
+    },
+    {
+      baslik: "Klinik vakalar",
+      metin: `${s.premiumVaka} vaka; adım adım karar verdiren, gerçek hasta akışına yakın çözümler.`,
+    },
+  ];
+
+  return { ucretsiz, premium };
+}
 
 export default function UyelikSayfasi() {
+  const sayilar = icerikSayilari();
+  const { ucretsiz: UCRETSIZ, premium: PREMIUM } = icerikKartlari(sayilar);
+
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-12 px-4 font-sans">
       <div className="max-w-4xl mx-auto space-y-10">
