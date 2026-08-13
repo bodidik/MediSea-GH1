@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { auth } from "@/auth";
 import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialties";
-import { getTopicCounts } from "@/app/lib/topic-counts";
+import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 
 export const dynamic = "force-dynamic";
@@ -23,6 +23,8 @@ export default async function Home() {
   const topicCounts = getTopicCounts();
   const totalTopics = Object.values(topicCounts).reduce((a, b) => a + b, 0);
   const totalBranches = SPECIALTIES.length;
+  // Araç sayısı elle "6+" yazılıydı; gerçekte 114. Artık sayılıyor.
+  const totalTools = getToolCount();
 
   return (
     <main className="min-h-screen bg-[#F8F9FC] font-sans text-blue-950">
@@ -103,11 +105,11 @@ export default async function Home() {
                 <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Branş</div>
               </div>
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-white leading-none">{totalTopics}+</div>
+                <div className="text-xl font-black text-white leading-none">{totalTopics}</div>
                 <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Konu</div>
               </div>
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-white leading-none">6+</div>
+                <div className="text-xl font-black text-white leading-none">{totalTools}</div>
                 <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Araç</div>
               </div>
             </div>
@@ -116,8 +118,8 @@ export default async function Home() {
             <div className="mt-5 pt-5 border-t border-white/10 grid grid-cols-3 gap-2">
               {[
                 { icon: "⚓", label: "YDUS", sub: "Soru & kart", href: "/tr/premium/ydus" },
-                { icon: "🧪", label: "Hesap.", sub: "50+ skor", href: "/tools" },
-                { icon: "📚", label: "Konular", sub: `${totalTopics}+ konu`, href: "#branslar" },
+                { icon: "🧪", label: "Hesap.", sub: `${totalTools} skor`, href: "/tools" },
+                { icon: "📚", label: "Konular", sub: `${totalTopics} konu`, href: "#branslar" },
               ].map((f) => (
                 <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
                   <span className="text-lg mb-1">{f.icon}</span>

@@ -37,6 +37,11 @@ function main() {
       const slug = dosya.replace(/\.json$/, '');
       try {
         const veri = JSON.parse(fs.readFileSync(path.join(dizin, dosya), 'utf-8'));
+        // Gizli konular dizine girmez. Dizin yalnızca paylaşım kartı başlığı
+        // için değil, /topics kartındaki konu sayısı için de kullanılıyor;
+        // gizlileri sayarsa kart "456 konu" derken sayfa "411" diyor ve iki
+        // yüzey birbirini tutmuyor.
+        if (veri?.meta?.hidden === true) continue;
         if (typeof veri?.title === 'string' && veri.title.trim()) {
           index[`${brans}/${slug}`] = veri.title.trim();
           konu++;
