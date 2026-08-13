@@ -223,10 +223,10 @@ export default function SiteHeader() {
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
         <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
-          <Link href="/login" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
+          <Link href="/giris" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
             Giriş
           </Link>
-          <Link href="/register" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
+          <Link href="/kayit" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
             <span>Üye Ol</span>
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
           </Link>
@@ -297,7 +297,7 @@ export default function SiteHeader() {
             {/* Giriş (md altı - sağdaki link gizliyken) */}
             <div className="md:hidden pt-1">
               <Link
-                href="/login"
+                href="/giris"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
               >
