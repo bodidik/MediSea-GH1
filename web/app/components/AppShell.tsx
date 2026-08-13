@@ -68,15 +68,20 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               </h4>
               <ul className="space-y-3 text-sm font-semibold">
                 <li>
-                  <Link href="/premium" className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-2">
+                  {/* /premium diye bir rota yok; premium tanıtımı dil önekiyle duruyor. */}
+                  <Link href="/tr/premium/ydus" className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-2">
                     Premium YDUS <span className="text-amber-500">★</span>
                   </Link>
                 </li>
                 <li><Link href="/tools" className="hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>
                 <li><Link href="/calisma-alanim" className="hover:text-white transition-colors">Çalışma Alanım</Link></li>
                 <li><Link href="/tekrar" className="hover:text-white transition-colors">Tekrar</Link></li>
-                <li><Link href="/about" className="hover:text-white transition-colors">Hakkımızda</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">İletişim & Destek</Link></li>
+                <li><Link href="/uyelik" className="hover:text-white transition-colors">Üyelik</Link></li>
+                {/* "Hakkımızda" ve "İletişim" bağlantıları kaldırıldı: sayfaları
+                    hiç yazılmamıştı ve ikisi de 404 veriyordu. Bu sayfalar
+                    yazarın kim olduğu ve hangi kanaldan ulaşılacağı gibi
+                    uydurulamayacak bilgi istiyor; içerik hazır olunca geri
+                    konacak. Tıbbi içerikte yazar künyesi güven için önemli. */}
               </ul>
             </div>
 
@@ -87,11 +92,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             <div>
               &copy; {new Date().getFullYear()} MediSea Eğitim Platformu. Tüm hakları saklıdır.
             </div>
-            <div className="flex gap-4 md:ml-auto">
-              <Link href="/privacy" className="hover:text-blue-300 transition-colors">Gizlilik Politikası</Link>
-              <span>•</span>
-              <Link href="/terms" className="hover:text-blue-300 transition-colors">Kullanım Koşulları</Link>
-            </div>
+            {/* Gizlilik Politikası ve Kullanım Koşulları bağlantıları geçici
+                olarak kaldırıldı; ikisinin de sayfası yoktu, 404 veriyorlardı.
+                Var olmayan bir hukuk metnine bağlantı vermek, bağlantı
+                vermemekten kötü. Ödeme alınmadan ÖNCE yazılmaları gerekiyor
+                (KVKK aydınlatma yükümlülüğü) — o zaman buraya geri konacaklar. */}
             <div className="text-blue-500/50 hidden md:block border-l border-blue-900 pl-4 ml-4">
               Sürüm 2.0.1
             </div>

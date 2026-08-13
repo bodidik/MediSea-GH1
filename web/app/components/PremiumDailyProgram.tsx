@@ -65,7 +65,7 @@ export default function PremiumDailyProgram() {
            <PlanBadge plan="free" />
            <h3 className="text-lg font-black text-white mt-4 mb-1">Günlük Program Kilitli</h3>
            <p className="text-xs text-slate-500 mb-4 font-medium">Bu özellik sadece Premium rütbesindeki kaptanlara özeldir.</p>
-           <Link href="/tr/premium/upgrade" className="inline-block px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-black rounded-xl transition-all shadow-lg shadow-blue-900/20 uppercase tracking-widest">
+           <Link href="/uyelik" className="inline-block px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-black rounded-xl transition-all shadow-lg shadow-blue-900/20 uppercase tracking-widest">
              Planı Yükselt
            </Link>
         </div>
