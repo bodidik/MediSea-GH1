@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import KategorilerClient from './KategorilerClient';
+import { listelenmeyenKategori } from '@/lib/premium-brans';
 
 export const revalidate = 86400;
 
@@ -39,10 +40,18 @@ function bransYukle(branch: string): BransVerisi | null {
       'content', 'premium', 'ydus', 'branches', `${branch}.json`
     );
     const icerik = fs.readFileSync(dosyaYolu, 'utf-8');
-    return JSON.parse(icerik) as BransVerisi;
+    const veri = JSON.parse(icerik) as BransVerisi;
+    listelenmeyenleriEkle(branch, veri);
+    return veri;
   } catch {
     return null;
   }
+}
+
+/** Listelenmemiş konuları da görünür kılar — gerekçesi lib/premium-brans.ts içinde. */
+function listelenmeyenleriEkle(branch: string, veri: BransVerisi) {
+  const ek = listelenmeyenKategori(branch, veri.kategoriler ?? []);
+  if (ek) veri.kategoriler = [...(veri.kategoriler ?? []), ek];
 }
 
 

@@ -4,6 +4,7 @@ import path from 'path';
 import YdusDashboardClient, { type BranchCard, type LockedBranch, type NewestTopic } from './YdusDashboardClient';
 import { sinavlariOku } from '@/lib/sinav.server';
 import { envanterAl } from '@/lib/premium-envanter';
+import { listelenmeyenKategori } from '@/lib/premium-brans';
 
 export const revalidate = 3600;
 
@@ -42,7 +43,13 @@ const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastalik
 function bransYukle(id: string): BransVerisi | null {
   try {
     const dosyaYolu = path.join(process.cwd(), 'content', 'premium', 'ydus', 'branches', `${id}.json`);
-    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8')) as BransVerisi;
+    const veri = JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8')) as BransVerisi;
+    // Branş sayfasıyla AYNI onarım: listede adı geçmeyen konu dosyaları da
+    // sayılsın ve çalışma planına girsin. Aksi hâlde pano ile branş sayfası
+    // farklı sayı gösterir, plan da bitmiş bir konuyu hiç önermez.
+    const ek = listelenmeyenKategori(id, veri.kategoriler ?? []);
+    if (ek) veri.kategoriler = [...(veri.kategoriler ?? []), ek];
+    return veri;
   } catch {
     return null;
   }
