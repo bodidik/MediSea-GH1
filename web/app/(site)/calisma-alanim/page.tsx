@@ -10,6 +10,7 @@ import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
 import StudyCoverage from "@/app/components/StudyCoverage";
+import SyncDurumu from "@/app/components/SyncDurumu";
 
 type Filter = "all" | "marks" | "notes";
 
@@ -85,8 +86,11 @@ export default function StudyWorkspace() {
               <h1 className="text-2xl font-black uppercase italic tracking-tighter text-blue-950 sm:text-3xl">
                 Çalışma Alanım
               </h1>
+              {/* "bu cihazda saklanır" sabit yazısı kaldırıldı: giriş yapmış
+                  kullanıcı için doğru değil, veri sunucuya da gidiyor. Gerçek
+                  durum aşağıdaki göstergede, canlı olarak. */}
               <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                Vurgularım ve notlarım · bu cihazda saklanır
+                Vurgularım ve notlarım
               </p>
             </div>
           </div>
@@ -109,6 +113,11 @@ export default function StudyWorkspace() {
               </button>
             </div>
           )}
+        </div>
+
+        {/* Verinin nerede durduğu — girişsizken uyarı, girişliyken güvence */}
+        <div className="mb-6">
+          <SyncDurumu genis />
         </div>
 
         {/* Yükleniyor */}

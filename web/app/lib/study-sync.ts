@@ -67,6 +67,41 @@ function buildPayload(): { body: object; bytes: number } | null {
   }
 }
 
+/* ── Durum yayını ───────────────────────────────────────────────────────
+ *
+ * Senkron şimdiye kadar tamamen sessiz çalışıyordu: veri gidiyordu ama
+ * kullanıcı bunu hiç görmüyordu. Görünmeyen bir güvence, güvence değildir —
+ * özellikle notlarını kaybetmekten çekinen biri için. Aşağısı yalnızca
+ * DURUM BİLDİRİR, senkron mantığına karışmaz.
+ */
+export type SyncDurum =
+  | "kapali"        // oturum yok — veri yalnızca bu cihazda
+  | "bekliyor"      // değişiklik var, gönderim sırada
+  | "gonderiliyor"
+  | "tamam"
+  | "hata";
+
+let durum: SyncDurum = "kapali";
+const dinleyiciler = new Set<(d: SyncDurum) => void>();
+
+function durumaGec(d: SyncDurum) {
+  if (durum === d) return;
+  durum = d;
+  for (const f of dinleyiciler) {
+    try { f(d); } catch {}
+  }
+}
+
+export function syncDurumu(): SyncDurum {
+  return durum;
+}
+
+/** Döndürdüğü işlev aboneliği bırakır. */
+export function syncDinle(f: (d: SyncDurum) => void): () => void {
+  dinleyiciler.add(f);
+  return () => { dinleyiciler.delete(f); };
+}
+
 let authOk = false;
 
 // Sunucuyla en az bir kez uzlaşılmadan push YAPILMAZ. Deposu boş bir cihaz
@@ -77,7 +112,10 @@ let bekleyenPush = false;
 
 export function setAuthReady(v: boolean) {
   authOk = v;
-  if (!v) reconciled = false;
+  if (!v) {
+    reconciled = false;
+    durumaGec("kapali");
+  }
 }
 
 function markReconciled() {
@@ -98,6 +136,8 @@ async function doPush(): Promise<boolean> {
   const data = buildPayload();
   if (!data) return false;
 
+  durumaGec("gonderiliyor");
+
   try {
     const r = await fetch("/api/study", {
       method: "PUT",
@@ -105,21 +145,24 @@ async function doPush(): Promise<boolean> {
       body: JSON.stringify(data.body),
     });
 
-    if (r.status === 401) { authOk = false; return false; }
-    if (!r.ok) return false;
+    if (r.status === 401) { authOk = false; durumaGec("kapali"); return false; }
+    if (!r.ok) { durumaGec("hata"); return false; }
 
     const meta = readMeta();
     meta.lastPush = Date.now();
     meta.pushBytes = data.bytes;
     writeMeta(meta);
+    durumaGec("tamam");
     return true;
   } catch {
+    durumaGec("hata");
     return false;
   }
 }
 
 export function schedulePush() {
   if (pushTimer) clearTimeout(pushTimer);
+  if (authOk) durumaGec("bekliyor");
   pushTimer = setTimeout(() => {
     pushTimer = null;
     doPush();
@@ -144,11 +187,13 @@ export async function pull(): Promise<PullResult> {
   if (!authOk) return { ok: false, reason: "auth" };
   try {
     const r = await fetch("/api/study");
-    if (r.status === 401) return { ok: false, reason: "auth" };
-    if (!r.ok) return { ok: false, reason: "server" };
+    if (r.status === 401) { durumaGec("kapali"); return { ok: false, reason: "auth" }; }
+    // Uzlaşma başarısızsa push hiç yapılmayacak. Bunu söylemezsek gösterge
+    // sonsuza kadar "Kaydediliyor…" der ve kullanıcı kaydedildiğini sanır.
+    if (!r.ok) { durumaGec("hata"); return { ok: false, reason: "server" }; }
 
     const j = await r.json();
-    if (!j.ok) return { ok: false, reason: j.reason ?? "unknown" };
+    if (!j.ok) { durumaGec("hata"); return { ok: false, reason: j.reason ?? "unknown" }; }
 
     // Sunucuda kayıt yok — kaybedilecek bir şey yok, push serbest.
     if (!j.payload) {
@@ -165,7 +210,7 @@ export async function pull(): Promise<PullResult> {
     // Boş cihaz da dolu cihaz da BİRLEŞTİRİR — birleştirme hiçbir şeyi silmez,
     // dolayısıyla ayrı bir "boş cihaz" yoluna gerek yok.
     const result = applyImport(JSON.stringify(payload), "merge");
-    if (!result.ok) return { ok: false, reason: result.hata ?? "import" };
+    if (!result.ok) { durumaGec("hata"); return { ok: false, reason: result.hata ?? "import" }; }
 
     const meta = readMeta();
     meta.lastPull = Date.now();
@@ -178,6 +223,7 @@ export async function pull(): Promise<PullResult> {
       summary: summarize(payload),
     };
   } catch {
+    durumaGec("hata");
     return { ok: false, reason: "network" };
   }
 }
