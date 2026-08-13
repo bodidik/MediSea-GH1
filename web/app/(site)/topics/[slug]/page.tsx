@@ -1,12 +1,44 @@
 // C:\Users\hucig\Medknowledge\web\app\(site)\topics\[slug]\page.tsx"
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
 import { getBranchTools } from "@/app/lib/tools";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const brans = getSpecialty(slug);
+  const dizin = path.join(process.cwd(), "content", "canonical", slug);
+
+  if (!fs.existsSync(dizin)) {
+    return { title: "Branş bulunamadı", robots: { index: false, follow: false } };
+  }
+
+  let konuSayisi = 0;
+  try {
+    konuSayisi = fs.readdirSync(dizin).filter((f) => f.endsWith(".json")).length;
+  } catch {}
+
+  const baslik = brans?.title || slug.replace(/-/g, " ");
+  const aciklama = brans?.desc
+    ? `${brans.desc}. ${konuSayisi} konu başlığıyla güncel Türkçe ${baslik.toLowerCase()} kaynağı.`
+    : `${konuSayisi} konu başlığıyla güncel Türkçe ${baslik.toLowerCase()} kaynağı.`;
+
+  return {
+    title: baslik,
+    description: aciklama,
+    alternates: { canonical: `/topics/${slug}` },
+    openGraph: { type: "website", title: baslik, description: aciklama, url: `/topics/${slug}` },
+  };
+}
 
 export default async function BranchListPage({
   params

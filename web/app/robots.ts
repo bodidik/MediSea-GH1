@@ -1,16 +1,26 @@
-﻿// FILE: web/app/robots.ts
+// FILE: web/app/robots.ts
 import type { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
-  // Canlıya alırken .env dosyandaki gerçek site adresini kullanır, yoksa localhost'a döner.
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  
+  const base = siteUrl();
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Admin, API ve SADECE ÜYELERE ÖZEL olan Premium/YDUS alanlarını Google'dan gizliyoruz
-      disallow: ["/admin", "/api", "/premium"],
+      disallow: [
+        "/admin",
+        "/api",
+        // Premium KONU sayfaları taranmasın: girişsiz ziyaretçiye "Erişim
+        // Kısıtlı" kartı döndükleri için Google'a yüzlerce içeriksiz sayfa
+        // gibi görünürler ve sitenin genel kalite sinyalini aşağı çekerler.
+        // Sondaki eğik çizgi bilinçli — tanıtım sayfasının kendisi
+        // (/tr/premium/ydus) taranabilir kalıyor, çünkü satış oradan yapılıyor.
+        "/*/premium/ydus/",
+        // Eski, dilsiz yol; bir dönem kullanılmıştı.
+        "/premium",
+      ],
     },
     sitemap: `${base}/sitemap.xml`,
   };

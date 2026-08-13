@@ -1,11 +1,70 @@
 //"C:\Users\hucig\Medknowledge\web\app\(site)\topics\[slug]\[topicSlug]\page.tsx"
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import InlineTopicEditor from "@/components/topics/InlineTopicEditor";
 
 export const dynamic = "force-dynamic";
+
+function konuOku(slug: string, topicSlug: string): any | null {
+  try {
+    const yol = path.join(process.cwd(), "content", "canonical", slug, `${topicSlug}.json`);
+    return JSON.parse(fs.readFileSync(yol, "utf-8"));
+  } catch {
+    return null;
+  }
+}
+
+/** HTML'i düz metne indirger; arama sonucunda görünecek özet buradan çıkıyor. */
+function ozetCikar(veri: any, sinir = 155): string {
+  const hazir = veri?.summary || veri?.meta?.summary;
+  const kaynak =
+    hazir ||
+    (Array.isArray(veri?.sections)
+      ? veri.sections.map((s: any) => s?.text || s?.html || "").join(" ")
+      : "");
+
+  const duz = String(kaynak)
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (duz.length <= sinir) return duz;
+  // Kelimenin ortasında kesme: son boşluktan kırp.
+  const kirpik = duz.slice(0, sinir);
+  return kirpik.slice(0, kirpik.lastIndexOf(" ")).trimEnd() + "…";
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; topicSlug: string }>;
+}): Promise<Metadata> {
+  const { slug, topicSlug } = await params;
+  const veri = konuOku(slug, topicSlug);
+
+  if (!veri) return { title: "Konu bulunamadı", robots: { index: false, follow: false } };
+
+  const baslik = veri.title || topicSlug.replace(/-/g, " ");
+  const aciklama = ozetCikar(veri);
+  const yol = `/topics/${slug}/${topicSlug}`;
+
+  return {
+    title: baslik,
+    description: aciklama || undefined,
+    keywords: Array.isArray(veri?.meta?.tags) ? veri.meta.tags : undefined,
+    alternates: { canonical: yol },
+    openGraph: {
+      type: "article",
+      title: baslik,
+      description: aciklama || undefined,
+      url: yol,
+    },
+  };
+}
 
 export default async function TopicDetailPage({ 
   params 
