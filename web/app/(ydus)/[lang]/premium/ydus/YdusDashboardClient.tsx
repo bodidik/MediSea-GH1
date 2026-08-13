@@ -11,6 +11,7 @@ import PlanBadge from "@/components/PlanBadge";
 import { useUser } from "@/app/(ydus)/context/UserContext";
 import GeriSayim from "@/app/components/GeriSayim";
 import CalismaPlani from "@/app/components/CalismaPlani";
+import SinavTakvimiUyarisi from "@/app/components/SinavTakvimiUyarisi";
 import type { Sinav } from "@/lib/sinav";
 
 export interface BranchCard {
@@ -104,6 +105,12 @@ export default function YdusDashboardClient({
       </div>
 
       <main className="max-w-6xl mx-auto px-4 py-6">
+
+        {/* Takvim boşsa geri sayım da plan da sessiz kalıyor; bu uyarı
+            özelliğin fark edilmeden ölü kalmasını engelliyor (yalnızca yönetici) */}
+        <div className="mb-4 empty:mb-0">
+          <SinavTakvimiUyarisi sinavlar={sinavlar} />
+        </div>
 
         {/* SINAVA KALAN SÜRE — takvim boşsa hiçbir şey basmaz */}
         <div className="mb-4">
