@@ -14,6 +14,20 @@ type SearchResult = {
   type: 'topic' | 'section';
 };
 
+/**
+ * Menüde gösterilen araç kategorileri — araç sayısı en yüksek altı grup.
+ * Kimlikler app/tools/page.tsx içindeki TOOLS_DATABASE slug'larıyla birebir
+ * aynı olmalı; tutmazsa bağlantı süzgeci boş açar. Tam liste "Tüm Araçlar"da.
+ */
+const ARAC_KATEGORILERI = [
+  { slug: "acil",          icon: "🚨", ad: "Acil & Kritik Bakım" },
+  { slug: "romatoloji",    icon: "🦴", ad: "Romatoloji" },
+  { slug: "nutrisyon",     icon: "🍏", ad: "Klinik Nütrisyon" },
+  { slug: "nefroloji",     icon: "🧪", ad: "Nefroloji" },
+  { slug: "endokrinoloji", icon: "🦋", ad: "Endokrinoloji" },
+  { slug: "kardiyoloji",   icon: "❤️", ad: "Kardiyoloji" },
+];
+
 export default function SiteHeader() {
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -207,18 +221,19 @@ export default function SiteHeader() {
 
             {/* Fare Üzerine Gelince Açılan Liste */}
             <div className="absolute top-full right-0 mt-2 w-56 bg-white border border-slate-100 rounded-[1.5rem] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden p-2">
-              <Link href="/tools/hesaplayicilar" className="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 rounded-xl transition-colors group/item">
-                <span className="text-lg">🧮</span>
-                <span className="text-sm font-bold text-slate-700 group-hover/item:text-blue-700">Hesaplayıcılar</span>
-              </Link>
-              <Link href="/tools/algoritmalar" className="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 rounded-xl transition-colors group/item">
-                <span className="text-lg">🗺️</span>
-                <span className="text-sm font-bold text-slate-700 group-hover/item:text-blue-700">Algoritmalar</span>
-              </Link>
-              <Link href="/tools/ilac-etkilesim" className="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 rounded-xl transition-colors group/item">
-                <span className="text-lg">💊</span>
-                <span className="text-sm font-bold text-slate-700 group-hover/item:text-blue-700">İlaç Etkileşimleri</span>
-              </Link>
+              {/* Kategoriler araç veritabanındaki gerçek gruplar. Burada bir dönem
+                  "Algoritmalar" ve "İlaç Etkileşimleri" yazıyordu; ikisinin de
+                  sayfası hiç yazılmamıştı, üç bağlantı da 404 veriyordu. */}
+              {ARAC_KATEGORILERI.map(k => (
+                <Link
+                  key={k.slug}
+                  href={`/tools?kategori=${k.slug}`}
+                  className="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 rounded-xl transition-colors group/item"
+                >
+                  <span className="text-lg">{k.icon}</span>
+                  <span className="text-sm font-bold text-slate-700 group-hover/item:text-blue-700">{k.ad}</span>
+                </Link>
+              ))}
               
               <div className="h-px bg-slate-100 my-1 mx-2"></div>
               

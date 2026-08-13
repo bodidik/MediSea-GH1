@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
 const TOOLS_DATABASE = [
   {
     category: "Klinik Nütrisyon (Beslenme)",
+    slug: "nutrisyon",
     icon: "🍏",
     items: [
       { slug: "nrs-2002", name: "NRS-2002", desc: "Yatan hastalarda beslenme riski taraması" },
@@ -24,6 +25,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Nefroloji",
+    slug: "nefroloji",
     icon: "🧪",
     items: [
       { slug: "egfr", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
@@ -39,6 +41,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Romatoloji",
+    slug: "romatoloji",
     icon: "🦴",
     items: [
       { slug: "das28", name: "DAS28 (ESR/CRP)", desc: "Romatoid artrit hastalık aktivite skoru" },
@@ -60,6 +63,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Endokrinoloji & Metabolizma",
+    slug: "endokrinoloji",
     icon: "🦋",
     items: [
       { slug: "hba1c-eag", name: "HbA1c → Ortalama Glukoz", desc: "Tahmini ortalama glukoz (ADA/NGSP)" },
@@ -75,6 +79,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Onkoloji",
+    slug: "onkoloji",
     icon: "🎗️",
     items: [
       { slug: "bsa", name: "Vücut Yüzey Alanı (BSA)", desc: "Mosteller formülü — kemoterapi dozlama" },
@@ -88,6 +93,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Kardiyoloji",
+    slug: "kardiyoloji",
     icon: "❤️",
     items: [
       { slug: "heart-score", name: "HEART Skoru", desc: "Göğüs ağrısı risk stratifikasyonu" },
@@ -100,6 +106,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Acil & Kritik Bakım",
+    slug: "acil",
     icon: "🚨",
     items: [
       { slug: "wells-pe", name: "Wells Skoru (PE)", desc: "Pulmoner emboli klinik olasılığı" },
@@ -122,6 +129,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Göğüs Hastalıkları & Enfeksiyon",
+    slug: "gogus-enfeksiyon",
     icon: "🫁",
     items: [
       { slug: "curb65", name: "CURB-65 Skoru", desc: "Toplum kökenli pnömoni triyaj kararı" },
@@ -135,6 +143,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Allerji & İmmünoloji",
+    slug: "allerji-immunoloji",
     icon: "🌸",
     items: [
       { slug: "anaphylaxis", name: "Anafilaksi Kriterleri", desc: "NIAID/FAAN 3 kriter — epinefrin endikasyonu" },
@@ -146,6 +155,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Palyatif Bakım",
+    slug: "palyatif",
     icon: "🕊️",
     items: [
       { slug: "karnofsky", name: "Karnofsky (KPS)", desc: "0–100 performans skalası — fonksiyonel kapasite ve prognoz" },
@@ -157,6 +167,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Endokrin Testler",
+    slug: "endokrin-testler",
     icon: "🔬",
     items: [
       { slug: "dst", name: "Deksametazon Süpresyon Testi (DST)", desc: "1 mg / 2 mg LDDST / 8 mg HDDST — Cushing tarama & lokalizasyon" },
@@ -168,6 +179,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Nöroloji",
+    slug: "noroloji",
     icon: "🧠",
     items: [
       { slug: "abcd2", name: "ABCD² Skoru", desc: "TİA sonrası 2 günlük inme riski tahmini" },
@@ -175,6 +187,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Hepatoloji & Gastroenteroloji",
+    slug: "hepatoloji-gastro",
     icon: "🍺",
     items: [
       { slug: "meld-na", name: "MELD-Na Skoru", desc: "ESKH mortalite tahmini" },
@@ -186,6 +199,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Genel Araçlar",
+    slug: "genel",
     icon: "🔄",
     items: [
       { slug: "charlson", name: "Charlson Komorbidite İndeksi", desc: "CCI — 10 yıllık mortalite tahmini" },
@@ -194,6 +208,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Geriatri",
+    slug: "geriatri",
     icon: "👴",
     items: [
       { slug: "barthel",      name: "Barthel ADL İndeksi",     desc: "Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100)" },
@@ -205,6 +220,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Yoğun Bakım Ünitesi (YBÜ)",
+    slug: "ybu",
     icon: "💉",
     items: [
       { slug: "apache2", name: "APACHE II", desc: "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini" },
@@ -216,6 +232,7 @@ const TOOLS_DATABASE = [
   },
   {
     category: "Hematoloji",
+    slug: "hematoloji",
     icon: "🩸",
     items: [
       { slug: "ipi",      name: "IPI",              desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
@@ -227,17 +244,37 @@ const TOOLS_DATABASE = [
   }
 ];
 
+// useSearchParams statik üretimde Suspense sınırı ister; sayfa aksi hâlde
+// derlemede düşer. Aynı kalıp /topics sayfasında da kullanılıyor.
 export default function ToolsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <ToolsIcerik />
+    </Suspense>
+  );
+}
+
+function ToolsIcerik() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredData = TOOLS_DATABASE.map(cat => ({
-    ...cat,
-    items: cat.items.filter(it => 
-      it.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      it.desc.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-  })).filter(cat => cat.items.length > 0);
+  // Menüden gelen kategori bağlantısı burada karşılanıyor: /tools?kategori=nefroloji
+  const aktifKategori = searchParams.get("kategori");
+  const kategoriGecerli = TOOLS_DATABASE.some(c => c.slug === aktifKategori);
+  const seciliKategori = kategoriGecerli ? aktifKategori : null;
+
+  const filteredData = TOOLS_DATABASE
+    .filter(cat => !seciliKategori || cat.slug === seciliKategori)
+    .map(cat => ({
+      ...cat,
+      items: cat.items.filter(it =>
+        it.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        it.desc.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    })).filter(cat => cat.items.length > 0);
+
+  const toplamArac = TOOLS_DATABASE.reduce((t, c) => t + c.items.length, 0);
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans">
@@ -288,6 +325,52 @@ export default function ToolsPage() {
             />
           </div>
         </div>
+
+        {/* KATEGORİ SÜZGECİ */}
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href="/tools"
+            className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all ${
+              !seciliKategori
+                ? "bg-blue-950 text-white border-blue-950"
+                : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
+            }`}
+          >
+            Tümü <span className="opacity-60">{toplamArac}</span>
+          </Link>
+          {TOOLS_DATABASE.map(cat => (
+            <Link
+              key={cat.slug}
+              href={`/tools?kategori=${cat.slug}`}
+              className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all flex items-center gap-1.5 ${
+                seciliKategori === cat.slug
+                  ? "bg-blue-950 text-white border-blue-950"
+                  : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
+              }`}
+            >
+              <span>{cat.icon}</span>
+              {cat.category}
+              <span className="opacity-60">{cat.items.length}</span>
+            </Link>
+          ))}
+        </div>
+
+        {/* SONUÇ YOK */}
+        {filteredData.length === 0 && (
+          <div className="text-center py-16 border-2 border-dashed border-slate-200 rounded-[2rem]">
+            <div className="text-4xl mb-3">🔍</div>
+            <p className="text-sm font-bold text-slate-500">
+              &quot;{searchTerm}&quot; için sonuç yok.
+            </p>
+            <button
+              type="button"
+              onClick={() => setSearchTerm("")}
+              className="mt-4 text-[11px] font-black uppercase tracking-widest text-blue-900 hover:underline"
+            >
+              Aramayı temizle
+            </button>
+          </div>
+        )}
 
         {/* ARAÇ KARTLARI GRİD */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
