@@ -181,9 +181,16 @@ adres geçersizdi.
 
 ```bash
 node scripts/arac-metadata.cjs   # yeni klinik araç eklendiğinde
-node scripts/baslik-index.cjs    # yeni konu eklendiğinde
+node scripts/baslik-index.cjs    # yeni konu eklendiğinde (paylaşım kartı başlığı)
+node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağları)
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
+
+`ilgili-index.cjs` akrabalığı ortak etiket SAYISINDAN değil NADİRLİĞİNDEN
+çıkarır. Klinik niteleyiciler (`akut`, `acil`, `tanı`, `tedavi`…) bilerek
+elenir: elenmeden önce "Akut Koroner Sendromlar" ile "Safra Kesesi
+Hastalıkları" ilgili çıkıyordu, çünkü ikisi de "Acil" etiketi taşıyor.
+Tek ortak etiket, o etiket gerçekten nadir değilse akrabalık saymaz.
 
 `arac-metadata.cjs`, her araç klasörüne yalnızca metadata taşıyan bir
 `layout.tsx` üretir — araç sayfaları `"use client"` olduğu için metadata
