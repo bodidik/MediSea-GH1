@@ -156,3 +156,56 @@ birleştirme dalı · `write` **beşini birden** güncelle.
 - **Yeniden boyama tetiği yoklamalı.** `MutationObserver` hızlı yoldur ama
   zamanlaması kaçabiliyor; 600 ms'lik bir yoklama garantidir (imza aynıysa
   hiçbir iş yapmaz).
+
+---
+
+## Arama görünürlüğü ve paylaşım
+
+Açık taraf huninin ağzı: içerik ücretsiz, arama motoru ve paylaşım oradan
+geliyor. Bunu taşıyan parçalar:
+
+| Dosya | Ne yapar |
+|---|---|
+| `lib/site.ts` | Sitenin kendi adresi — canonical, site haritası, paylaşım etiketleri |
+| `app/sitemap.ts` | Haritayı **dosya sisteminden** üretir (elle liste tutulmaz) |
+| `app/robots.ts` | Premium *konu* sayfalarını taramaya kapatır, tanıtımı açık bırakır |
+| `lib/jsonld.tsx` | MedicalWebPage · SoftwareApplication · BreadcrumbList şemaları |
+| `app/opengraph-image.tsx` | Site geneli paylaşım kartı |
+
+`NEXT_PUBLIC_SITE_URL` tanımlı değilse `VERCEL_PROJECT_PRODUCTION_URL`'e
+düşülür. Bu basamak eklenmeden önce canlıdaki site haritasının tamamı
+`http://localhost:3000/...` yazıyordu — yani arama motoruna gönderilen her
+adres geçersizdi.
+
+### Yeniden çalıştırılması gereken betikler
+
+```bash
+node scripts/arac-metadata.cjs   # yeni klinik araç eklendiğinde
+node scripts/baslik-index.cjs    # yeni konu eklendiğinde
+node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
+```
+
+`arac-metadata.cjs`, her araç klasörüne yalnızca metadata taşıyan bir
+`layout.tsx` üretir — araç sayfaları `"use client"` olduğu için metadata
+dışa aktaramıyorlar. Elle yazılmış bir layout görürse üzerine yazmaz.
+
+### Görsel rotalarının (opengraph-image) üç tuzağı
+
+Üçü de sessizce kırıyor: hata mesajı görünmüyor, istek bağlantısı düşüyor.
+Teşhis için ikinci bir `next dev` örneğini günlüğe alarak çalıştır.
+
+- **`params` bir Promise.** Düz nesne olarak alınırsa `slug` undefined kalır,
+  rota `try` bloğuna girmeden çöker.
+- **`fs` çalışmaz** — ne düz ne tembel içe aktarmayla. Bu yüzden konu
+  başlıkları `content/baslik-index.json` içinden okunur (statik JSON içe
+  aktarımı paketlenir, her çalışma zamanında güvenlidir).
+- **Satori, birden fazla çocuğu olan her `<div>`'de açık `display: flex`
+  ister.** `<div>· {brans}</div>` JSX'te İKİ çocuk üretir. Metinleri tek
+  şablon dizesi ver.
+
+### Sınav takvimi
+
+`content/sinav-takvimi.json` boş gelir ve boşken geri sayım hiç basılmaz.
+Tarih uydurulmaz: yanlış tarihe göre program yapan aday gerçekten zarar
+görür. ÖSYM takvimi açıklanınca dosyaya yazmak yeterli; geçmiş tarihler
+kendiliğinden elenir, en yakın gelecek sınav seçilir.
