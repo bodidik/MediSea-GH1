@@ -69,6 +69,10 @@ export default async function YdusAnaSayfa({
 
   const branches: BranchCard[] = [];
   const newest: NewestTopicRaw[] = [];
+  // Çalışma planı gerçek envanter üzerinden kuruluyor: yalnızca "hazır"
+  // işaretli konular. Hazır olmayan bir konuyu programa koymak, kullanıcıyı
+  // olmayan içeriğe göndermek olurdu.
+  const hazirKonular: { brans: string; id: string; baslik: string }[] = [];
 
   for (const id of BRANCH_IDS) {
     const veri = bransYukle(id);
@@ -84,6 +88,7 @@ export default async function YdusAnaSayfa({
         if (!konu.hazir) continue;
 
         readyTopics += 1;
+        hazirKonular.push({ brans: id, id: konu.id, baslik: konu.baslik });
         const konuVerisi = konuYukle(id, konu.id);
         const soru = konuVerisi?.istatistikler?.soru ?? 0;
         soruToplam += soru;
@@ -128,6 +133,7 @@ export default async function YdusAnaSayfa({
       newest={newest.slice(0, 6).map(({ mtimeMs, ...rest }) => rest)}
       overall={overall}
       sinavlar={sinavlariOku()}
+      hazirKonular={hazirKonular}
     />
   );
 }

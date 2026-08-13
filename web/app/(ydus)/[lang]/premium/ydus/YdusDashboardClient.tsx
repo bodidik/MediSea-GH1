@@ -10,6 +10,7 @@ import {
 import PlanBadge from "@/components/PlanBadge";
 import { useUser } from "@/app/(ydus)/context/UserContext";
 import GeriSayim from "@/app/components/GeriSayim";
+import CalismaPlani from "@/app/components/CalismaPlani";
 import type { Sinav } from "@/lib/sinav";
 
 export interface BranchCard {
@@ -59,6 +60,7 @@ export default function YdusDashboardClient({
   newest,
   overall,
   sinavlar = [],
+  hazirKonular = [],
 }: {
   lang: string;
   branches: BranchCard[];
@@ -66,6 +68,7 @@ export default function YdusDashboardClient({
   newest: NewestTopic[];
   overall: Overall;
   sinavlar?: Sinav[];
+  hazirKonular?: { brans: string; id: string; baslik: string }[];
 }) {
   const { xp, completedModules } = useUser();
   const progressPct = overall.totalTopics > 0
@@ -105,6 +108,11 @@ export default function YdusDashboardClient({
         {/* SINAVA KALAN SÜRE — takvim boşsa hiçbir şey basmaz */}
         <div className="mb-4">
           <GeriSayim sinavlar={sinavlar} />
+        </div>
+
+        {/* SINAVA ÇAKILI PROGRAM — takvim boşsa o da basmaz */}
+        <div className="mb-4">
+          <CalismaPlani lang={lang} sinavlar={sinavlar} hazirKonular={hazirKonular} />
         </div>
 
         {/* METRİK KARTLARI */}
