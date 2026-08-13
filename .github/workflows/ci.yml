@@ -39,6 +39,17 @@ jobs:
         - name: Typecheck
           run: npm run typecheck
 
+        # İçerik metinlerinin içindeki bağlantılar kodda değil VERİDE duruyor;
+        # lint, typecheck ve build üçü de bunları görmez. Bir konu yeniden
+        # adlandırıldığında bağlantı sessizce eskiyor ve okuyucu 404 buluyor.
+        # İlk denetimde 18 bağlantının 3'ü kırıktı.
+        #
+        # Yönlendirmesi olan adres kırık sayılmaz; düzeltme yolu iki tane:
+        # next.config.js redirects listesine ekle, ya da içerikten bağlantıyı
+        # kaldır.
+        - name: İçerik bağlantı denetimi
+          run: node scripts/link-denetim.cjs
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
