@@ -21,7 +21,13 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(j, { status: r.status });
   } catch(error) {
     console.warn("Backend'e ulaşılamadı. User Profile (GET) yedek motoru devrede.");
-    return NextResponse.json({ ok: true, mock: true, profile: { name: "Misafir Kaptan", email: "kaptan@mavivatan.com" } }, { status: 200 });
+    // Uydurma bir profil dönülüyordu (ad ve E-POSTA ADRESİ dahil). Kimlik
+    // bilgisi uydurmak, veri uydurmaktan daha kötü: arayüz bunu gerçek
+    // kullanıcı sanıp gösterir. Bilinmiyorsa bilinmiyor denir.
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", profile: null },
+      { status: 503 }
+    );
   }
 }
 

@@ -19,14 +19,21 @@ export async function GET(req: NextRequest) {
     const data = await r.json();
     return NextResponse.json(data, { status: 200 });
     
-  } catch (err: any) {
-    // 🚨 BACKEND KAPALIYSA: ZİNCİRİ KIRMA, SAHTE (MOCK) ERİŞİM BİLETİ DÖN!
-    console.warn("Backend'e ulaşılamadı. Protected Token yedek motoru devrede.");
-    
-    return NextResponse.json({ 
-      ok: true, 
-      token: "mock-premium-token-777", // Sahte bilet
-      mock: true
-    }, { status: 200 });
+  } catch {
+    // Arka uca ulaşılamadı.
+    //
+    // Burada SAHTE bir erişim bileti üretiliyordu ("mock-premium-token-777")
+    // ve yanıt ok:true diyordu. Yetki jetonu uydurmak, veri uydurmaktan daha
+    // tehlikeli: çağıran taraf bunu geçerli yetki sanar ve o varsayımın
+    // üstüne kod yazılır. Arka uç canlıda hiç çalışmadığı için bu "yedek"
+    // hâl kalıcı hâldi.
+    //
+    // Artık başarısızlık başarısızlık olarak dönüyor.
+    console.warn("Korumalı içerik jetonu alınamadı: arka uca ulaşılamıyor.");
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable" },
+      { status: 503 }
+    );
   }
 }

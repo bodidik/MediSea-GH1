@@ -44,17 +44,13 @@ export async function GET(_req: Request) {
     // Bu sayede Strateji Haritası (Strategy Map) boş veya kırmızı görünmek yerine sahte verilerle çalışmaya devam eder.
     console.warn("Backend'e ulaşılamadı. Sections (Branşlar) yedek motoru devrede.");
 
-    return NextResponse.json({
-      ok: true,
-      mock: true,
-      rows: [
-        { section: "Gastroenteroloji", topics: 12, boardQuestions: 50, cases: 5, videos: 3, notes: 10, total: 80 },
-        { section: "Hematoloji", topics: 8, boardQuestions: 40, cases: 3, videos: 2, notes: 5, total: 58 },
-        { section: "Kardiyoloji", topics: 15, boardQuestions: 60, cases: 8, videos: 4, notes: 12, total: 99 },
-        { section: "Nefroloji", topics: 10, boardQuestions: 45, cases: 4, videos: 2, notes: 8, total: 69 }
-      ],
-      lastUpdatedISO: new Date().toISOString(),
-      _raw: { totals: null, premium: null }
-    }, { status: 200 });
+    // Uydurma branş istatistikleri dönülüyordu (Kardiyoloji 15 konu, 60 soru…)
+    // ve yanıt ok:true diyordu. Bu sayılar hiçbir gerçeğe dayanmıyordu; onları
+    // basan bir arayüz, sitenin içeriği hakkında yanlış bilgi verirdi.
+    // Arka uç canlıda çalışmadığı için de bu hâl kalıcıydı.
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", rows: [] },
+      { status: 503 }
+    );
   }
 }

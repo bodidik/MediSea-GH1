@@ -29,16 +29,13 @@ export async function GET(req: NextRequest) {
     // 🚨 BACKEND ULAŞILAMAZSA: ÇÖKME, KULLANICIYA SAHTE BİR TEKRAR SORUSU VER!
     console.warn("Backend'e ulaşılamadı. Review Next yedek motoru devrede.");
     
-    return NextResponse.json({
-      ok: true,
-      mock: true,
-      question: {
-        id: "mock-review-q1",
-        text: "[MOCK] Bu bir aralıklı tekrar (spaced repetition) test sorusudur. Backend kapalı olduğu için sahte soru gösteriliyor. Tasarımı test etmeye devam edebilirsiniz!",
-        options: ["A) Seçenek 1", "B) Seçenek 2", "C) Doğru Cevap", "D) Seçenek 4"],
-        correctIndex: 2,
-        explanation: "Çelik Kubbe kalkanı devrede olduğu için C seçeneği doğrudur."
-      }
-    }, { status: 200 });
+    // Uydurma bir tekrar SORUSU dönülüyordu ("C seçeneği doğrudur") ve yanıt
+    // ok:true diyordu. Tıbbi bir sınav hazırlık ürününde sahte soru ve sahte
+    // doğru cevap göstermek, en kötü türden yanlış bilgi: kullanıcı onu
+    // çalışılmış sayar. Arka uç canlıda çalışmadığı için bu hâl kalıcıydı.
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", question: null },
+      { status: 503 }
+    );
   }
 }

@@ -22,6 +22,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(j, { status: r.status });
   } catch (error) {
     console.warn("Backend'e ulaşılamadı. User Update yedek motoru devrede.");
-    return NextResponse.json({ ok: true, mock: true, message: "Kullanıcı bilgileri güncellendi (Mock)" }, { status: 200 });
+    // "Güncellendi" deniyordu ama hiçbir şey güncellenmemişti. Yapılmamış bir
+    // yazmayı yapılmış göstermek, sessiz veri kaybının tarifidir: kullanıcı
+    // kaydettiğini sanar, veri hiçbir yere gitmez.
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable" },
+      { status: 503 }
+    );
   }
 }

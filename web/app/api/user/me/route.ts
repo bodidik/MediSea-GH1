@@ -17,13 +17,20 @@ export async function GET(req: NextRequest) {
     
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: SAHTE KULLANICI DÖN Kİ ARAYÜZ (NAVBAR) ÇÖKMESİN
-    console.warn("Backend'e ulaşılamadı. User Me yedek motoru devrede.");
-    return NextResponse.json({
-      ok: true,
-      mock: true,
-      user: { id: externalId, name: "Misafir Kaptan", plan: "P", role: "admin" }
-    }, { status: 200 });
+  } catch {
+    // Arka uca ulaşılamadı.
+    //
+    // Burada SAHTE bir kullanıcı dönülüyordu — üstelik plan:"P" (premium) ve
+    // role:"admin" ile. Yani kimliği doğrulanmamış herkes, kendisini premium
+    // ve yönetici ilan eden bir yanıt alıyordu. Şu an bu ucu çağıran bir
+    // arayüz yok ve gerçek yetki NextAuth oturumundan geçiyor; ama böyle bir
+    // yanıt, ileride bunu bağlayan koda hazır bir yetki açığı devreder.
+    //
+    // Kimlik ve yetki uydurulmaz. Bilinmiyorsa bilinmiyor denir.
+    console.warn("Kullanıcı bilgisi alınamadı: arka uca ulaşılamıyor.");
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", user: null },
+      { status: 503 }
+    );
   }
 }

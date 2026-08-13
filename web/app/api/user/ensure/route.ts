@@ -18,14 +18,14 @@ export async function POST(req: NextRequest) {
     
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: KULLANICIYI SİTEDEN ATMA, MOCK ONAY DÖN!
-    console.warn("Backend'e ulaşılamadı. User Ensure yedek motoru devrede.");
-    return NextResponse.json({ 
-      ok: true, 
-      mock: true, 
-      externalId, 
-      plan: "free" 
-    }, { status: 200 });
+  } catch {
+    // Uydurma bir onay dönülüyordu (ok:true, plan:"free"). Kayıt gerçekte
+    // oluşmadığı hâlde "oluştu" demek, çağıranı yanlış varsayımla ilerletir.
+    // plan:"free" görece zararsız görünse de yanıtın kendisi yalan.
+    console.warn("Kullanıcı kaydı doğrulanamadı: arka uca ulaşılamıyor.");
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable" },
+      { status: 503 }
+    );
   }
 }
