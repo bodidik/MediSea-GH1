@@ -117,9 +117,13 @@ export default async function Home() {
             {/* Alt özellik linkleri */}
             <div className="mt-5 pt-5 border-t border-white/10 grid grid-cols-3 gap-2">
               {[
+                /* Bu satır GEZİNME, sayaç değil. Sayılar hemen üstteki
+                   istatistik çubuğunda duruyor; burada tekrar edilince hem
+                   "411 konu" iki kez yazılıyor hem de aynı şeye iki ad
+                   veriliyordu: üstte "114 ARAÇ", altta "114 skor". */
                 { icon: "⚓", label: "YDUS", sub: "Soru & kart", href: "/tr/premium/ydus" },
-                { icon: "🧪", label: "Hesap.", sub: `${totalTools} skor`, href: "/tools" },
-                { icon: "📚", label: "Konular", sub: `${totalTopics} konu`, href: "#branslar" },
+                { icon: "🧪", label: "Araçlar", sub: "Skor & formül", href: "/tools" },
+                { icon: "📚", label: "Konular", sub: "Branşa göre", href: "#branslar" },
               ].map((f) => (
                 <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
                   <span className="text-lg mb-1">{f.icon}</span>

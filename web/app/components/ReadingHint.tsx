@@ -57,50 +57,43 @@ export default function ReadingHint() {
     <div
       data-ms-ui
       role="note"
-      /* bottom-24 her boyutta: sağ alttaki vurgu rozeti (🖍) belirdiğinde
-         mobilde kartın altına giriyordu. Duyarlı bir override (sm:bottom-5)
-         denendi ama geliştirme derlemesinde CSS parçalanması yüzünden
-         basamaklamada güvenilir kazanmıyor — tek değer hem sağlam hem yeterli. */
-      className={`fixed bottom-24 left-5 z-[53] w-[min(310px,calc(100vw-2.5rem))] rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl transition-all duration-200 ${
+      /**
+       * ALT ŞERİT — daha önce sol altta 310×175 px'lik bir karttı.
+       *
+       * Ölçümde şu görüldü: masaüstünde içerik sütunu neredeyse tüm genişliği
+       * kaplıyor, dolayısıyla sol altta sabitlenen kart bir içerik kutusunun
+       * TAMAMINI örtüyordu (konu sayfasında "1. Prerenal" kutusu görünmez
+       * oluyordu) ve arkada bir şey olduğuna dair hiçbir iz yoktu.
+       *
+       * Tıbbi metnin üstünü kapatmak, bir kullanım ipucunun ödeyebileceğinden
+       * pahalı. Şerit hâlinde yalnızca alt kenarı kaplıyor: öğretici değer
+       * duruyor, içerik görünür kalıyor.
+       */
+      className={`fixed inset-x-3 bottom-3 z-[53] mx-auto flex max-w-2xl items-center gap-3 rounded-xl border border-slate-200 bg-white/95 px-4 py-2.5 shadow-2xl backdrop-blur transition-all duration-200 ${
         cikis ? "translate-y-2 opacity-0" : "translate-y-0 opacity-100"
       }`}
     >
-      <div className="mb-2.5 flex items-start gap-2">
-        <span className="text-base">🖍</span>
-        <div className="flex-1">
-          <div className="text-[11px] font-black uppercase tracking-tight text-blue-950">
-            Bu sayfayı çalışabilirsin
-          </div>
-        </div>
-        <button
-          onClick={kapat}
-          aria-label="Kapat"
-          className="-mt-1 shrink-0 rounded-full px-1.5 py-0.5 text-slate-300 transition-colors hover:bg-slate-100 hover:text-slate-600"
-        >
-          ✕
-        </button>
-      </div>
+      <span className="shrink-0 text-base">🖍</span>
 
-      <ul className="mb-3 space-y-1.5">
-        {[
-          ["🖍", "Metni seç", "renkli vurgulama çubuğu çıkar"],
-          ["📝", "Sağdaki Not tutamağı", "yazı ve kalemle çizim"],
-          ["⚡", "Vurguların", "otomatik tekrar kartına dönüşür"],
-        ].map(([ikon, baslik, aciklama]) => (
-          <li key={baslik} className="flex items-start gap-2">
-            <span className="mt-px shrink-0 text-[11px]">{ikon}</span>
-            <span className="text-[11.5px] leading-snug text-slate-500">
-              <strong className="font-bold text-slate-700">{baslik}</strong> — {aciklama}
-            </span>
-          </li>
-        ))}
-      </ul>
+      <p className="min-w-0 flex-1 text-[12px] leading-snug text-slate-600">
+        <strong className="font-bold text-slate-800">Bu sayfayı çalışabilirsin:</strong>{" "}
+        metni seçince vurgulama çubuğu çıkar, sağdaki tutamaktan not alırsın;
+        vurguların tekrar kartına dönüşür.
+      </p>
 
       <button
         onClick={kapat}
-        className="w-full rounded-lg bg-blue-950 py-2 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-blue-900"
+        className="shrink-0 rounded-lg bg-blue-950 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-blue-900"
       >
         Anladım
+      </button>
+
+      <button
+        onClick={kapat}
+        aria-label="Kapat"
+        className="shrink-0 rounded-full px-1.5 text-slate-300 transition-colors hover:bg-slate-100 hover:text-slate-600"
+      >
+        ✕
       </button>
     </div>
   );
