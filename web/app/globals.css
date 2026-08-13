@@ -208,3 +208,45 @@ mark.ms-hl-u {
 @media (prefers-reduced-motion: reduce) {
   mark.ms-hl { transition: none; }
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   OKUMA ALANINDA YAZI BOYUTU TABANI
+
+   Konu içerikleri HTML olarak saklanıyor ve yazarken Tailwind sınıfları
+   gömülmüş: 456 konu dosyasının 246'sında (%54) `text-xs` ya da
+   `text-[10..13px]` geçiyor. Tailwind içerik JSON'larını da taradığı için
+   bu sınıflar gerçekten üretiliyor; ölçümde gövde paragraflarının 12px /
+   16px satır aralığına düştüğü görüldü.
+
+   Saatlerce okunan bir tıp kaynağında bu boyut kabul edilemez, üstelik
+   kullanıcı çoğunlukla tablet/telefondan çalışıyor. İçeriği 246 dosyada
+   düzeltmek yerine okuma alanına bir TABAN konuyor: metin bundan küçük
+   basılamıyor.
+
+   Kapsam bilinçli olarak yalnızca [data-readable]: uygulama arayüzündeki
+   küçük etiketler (rozet, üst bilgi, sayaç) etkilenmiyor.
+   ───────────────────────────────────────────────────────────────────── */
+[data-readable] :is(
+  .text-xs,
+  .text-\[10px\],
+  .text-\[11px\],
+  .text-\[12px\],
+  .text-\[13px\]
+) {
+  font-size: 0.875rem;   /* 14px — gövde metni için alt sınır */
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  /* Telefonda satır daha kısa; taban biraz daha yukarı çekiliyor. */
+  [data-readable] :is(
+    .text-xs,
+    .text-\[10px\],
+    .text-\[11px\],
+    .text-\[12px\],
+    .text-\[13px\]
+  ) {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.65;
+  }
+}
