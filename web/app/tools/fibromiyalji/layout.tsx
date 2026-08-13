@@ -6,12 +6,12 @@ import type { ReactNode } from "react";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Fibromiyalji 2016 — ACR 2016",
+  title: "Fibromiyalji 2016",
   description: "Fibromiyalji 2016: ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fibromiyalji" },
   openGraph: {
     type: "website",
-    title: "Fibromiyalji 2016 — ACR 2016",
+    title: "Fibromiyalji 2016",
     description: "Fibromiyalji 2016: ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/fibromiyalji",
   },

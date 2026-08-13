@@ -88,7 +88,7 @@ const TOOLS_DATABASE = [
       { slug: "mascc", name: "MASCC Risk İndeksi", desc: "Febril nötropenide komplikasyon riski" },
       { slug: "khorana", name: "Khorana Skoru", desc: "Kemoterapi ilişkili VTE riski" },
       { slug: "anc", name: "ANC Hesaplama", desc: "Mutlak nötrofil sayısı ve nötropeni evrelemesi" },
-      { slug: "ipi", name: "IPI Skoru", desc: "Non-Hodgkin lenfoma prognostik indeksi" },
+      { slug: "ipi", name: "IPI Skoru", desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
     ]
   },
   {
@@ -99,7 +99,7 @@ const TOOLS_DATABASE = [
       { slug: "heart-score", name: "HEART Skoru", desc: "Göğüs ağrısı risk stratifikasyonu" },
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
-      { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Akut koroner sendrom risk stratifikasyonu" },
+      { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
       { slug: "grace", name: "GRACE 2.0 Skoru", desc: "AKS/NSTEMI hastane içi mortalite riski" },
       { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
     ]
@@ -121,7 +121,7 @@ const TOOLS_DATABASE = [
       { slug: "4t-hit", name: "4T Skoru — HIT", desc: "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)" },
       { slug: "infusion", name: "İnfüzyon Hesaplama", desc: "IV doz ve damla sayısı asistanı" },
       { slug: "heart", name: "HEART Skoru", desc: "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T)" },
-      { slug: "timi-ua", name: "TIMI UA/NSTEMI", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
+      { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
       { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
       { slug: "rts", name: "RTS", desc: "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım" },
       { slug: "canadian-ct", name: "Kanada BT Kural", desc: "Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri" },
@@ -235,7 +235,7 @@ const TOOLS_DATABASE = [
     slug: "hematoloji",
     icon: "🩸",
     items: [
-      { slug: "ipi",      name: "IPI",              desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
+      { slug: "ipi",      name: "IPI Skoru",        desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
       { slug: "flipi",    name: "FLIPI",             desc: "Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF" },
       { slug: "ipss-r",   name: "IPSS-R",            desc: "MDS Revize Prognostik Skorlama — sitogenetik + blast + CBC parametreleri" },
       { slug: "isth-dic", name: "ISTH DIC Skoru",    desc: "Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan)" },
@@ -274,7 +274,10 @@ function ToolsIcerik() {
       )
     })).filter(cat => cat.items.length > 0);
 
-  const toplamArac = TOOLS_DATABASE.reduce((t, c) => t + c.items.length, 0);
+  // Benzersiz araç sayılır, listeleme değil: bazı araçlar birden fazla branşta
+  // görünüyor (ör. düzeltilmiş kalsiyum hem nefroloji hem endokrinde). Kayıtları
+  // toplamak "117 araç" gibi gerçekte olmayan bir sayı üretiyordu.
+  const toplamArac = new Set(TOOLS_DATABASE.flatMap(c => c.items.map(i => i.slug))).size;
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans">

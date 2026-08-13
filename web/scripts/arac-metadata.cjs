@@ -72,6 +72,9 @@ function baslikUret(name, desc) {
   // Cümle ortasında kalan bağlaç/işaret sarkıntılarını temizle.
   ek = ek.replace(/[\s,;:.·•×÷±+&/\\|_–—-]+$/u, '').trim();
 
+  // Birimi kırpılmış yalnız sayıyı at: "…NSTEMI 14" (günlük gitmiş) anlamsız.
+  ek = ek.replace(/\s+\d+([.,]\d+)?$/u, '').trim();
+
   if (ek.length < 8) return name;
   // Açılım zaten adı içeriyorsa tekrar etme (ör. "IPI" / "IPI Skoru").
   if (ek.toLocaleLowerCase('tr').includes(name.toLocaleLowerCase('tr'))) return ek;
