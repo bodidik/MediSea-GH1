@@ -1,0 +1,572 @@
+[
+ {
+  "slug": "4t-hit",
+  "name": "4T Skoru — HIT",
+  "desc": "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)"
+ },
+ {
+  "slug": "abcd2",
+  "name": "ABCD² Skoru",
+  "desc": "TİA sonrası 2 günlük inme riski tahmini"
+ },
+ {
+  "slug": "abg",
+  "name": "Asit-Baz Analizi (ABG)",
+  "desc": "Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant"
+ },
+ {
+  "slug": "act",
+  "name": "ACT",
+  "desc": "Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol"
+ },
+ {
+  "slug": "acth-stim",
+  "name": "ACTH Stimülasyon Testi",
+  "desc": "250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı"
+ },
+ {
+  "slug": "anaphylaxis",
+  "name": "Anafilaksi Kriterleri",
+  "desc": "NIAID/FAAN 3 kriter — epinefrin endikasyonu"
+ },
+ {
+  "slug": "anc",
+  "name": "ANC Hesaplama",
+  "desc": "Mutlak nötrofil sayısı ve nötropeni evrelemesi"
+ },
+ {
+  "slug": "anion-gap",
+  "name": "Anyon Açığı",
+  "desc": "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)"
+ },
+ {
+  "slug": "apache2",
+  "name": "APACHE II",
+  "desc": "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini"
+ },
+ {
+  "slug": "asdas",
+  "name": "ASDAS-CRP/ESR",
+  "desc": "Ankilozan Spondilit Hastalık Aktivite Skoru"
+ },
+ {
+  "slug": "barthel",
+  "name": "Barthel ADL İndeksi",
+  "desc": "Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100)"
+ },
+ {
+  "slug": "basdai",
+  "name": "BASDAI",
+  "desc": "Bath Ankilozan Spondilit Hastalık Aktivite İndeksi"
+ },
+ {
+  "slug": "behcet",
+  "name": "Behçet — ICBD 2014",
+  "desc": "Behçet hastalığı tanı kriterleri — ağırlıklı puanlama (≥ 4 puan)"
+ },
+ {
+  "slug": "berlin-ards",
+  "name": "Berlin ARDS Kriterleri",
+  "desc": "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır"
+ },
+ {
+  "slug": "bmi",
+  "name": "BMI & İdeal Vücut Ağırlığı",
+  "desc": "Vücut kitle indeksi + Devine / Hamwi formülleri"
+ },
+ {
+  "slug": "bmr",
+  "name": "BMR & TDEE",
+  "desc": "Bazal metabolizma hızı — Mifflin–St Jeor"
+ },
+ {
+  "slug": "bode",
+  "name": "BODE İndeksi",
+  "desc": "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT"
+ },
+ {
+  "slug": "braden",
+  "name": "Braden Skalası",
+  "desc": "Bası yarası risk değerlendirmesi — 6 alt ölçek, 6–23 puan"
+ },
+ {
+  "slug": "bsa",
+  "name": "Vücut Yüzey Alanı (BSA)",
+  "desc": "Mosteller formülü — kemoterapi dozlama"
+ },
+ {
+  "slug": "calvert",
+  "name": "Calvert Formülü",
+  "desc": "Karboplatin AUC bazlı doz hesaplama"
+ },
+ {
+  "slug": "cam-icu",
+  "name": "CAM-ICU",
+  "desc": "YBÜ deliryum taraması — 4 özellik, PADIS kılavuzu önerisi"
+ },
+ {
+  "slug": "canadian-ct",
+  "name": "Kanada BT Kural",
+  "desc": "Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri"
+ },
+ {
+  "slug": "cat-copd",
+  "name": "CAT Skoru",
+  "desc": "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü"
+ },
+ {
+  "slug": "cdai",
+  "name": "CDAI",
+  "desc": "Klinik Hastalık Aktivite İndeksi — RA (lab gerektirmez)"
+ },
+ {
+  "slug": "chads-vasc",
+  "name": "CHA₂DS₂-VASc Skoru",
+  "desc": "AF'de inme riski hesaplama"
+ },
+ {
+  "slug": "charlson",
+  "name": "Charlson Komorbidite İndeksi",
+  "desc": "CCI — 10 yıllık mortalite tahmini"
+ },
+ {
+  "slug": "child-pugh",
+  "name": "Child-Pugh Sınıflaması",
+  "desc": "Siroz şiddet ve prognozu"
+ },
+ {
+  "slug": "ciwa-ar",
+  "name": "CIWA-Ar",
+  "desc": "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme"
+ },
+ {
+  "slug": "conut",
+  "name": "CONUT",
+  "desc": "Controlling Nutritional Status — albumin + kolesterol + lenfosit"
+ },
+ {
+  "slug": "corrected-calcium",
+  "name": "Düzeltilmiş Kalsiyum",
+  "desc": "Albumin'e göre Ca+2 hesaplama"
+ },
+ {
+  "slug": "corrected-sodium",
+  "name": "Düzeltilmiş Sodyum",
+  "desc": "Hiperglisemi düzeltmesi (Katz formülü)"
+ },
+ {
+  "slug": "curb65",
+  "name": "CURB-65 Skoru",
+  "desc": "Toplum kökenli pnömoni triyaj kararı"
+ },
+ {
+  "slug": "dapsa",
+  "name": "DAPSA",
+  "desc": "Psoriatik Artrit Hastalık Aktivite Skoru"
+ },
+ {
+  "slug": "das28",
+  "name": "DAS28 (ESR/CRP)",
+  "desc": "Romatoid artrit hastalık aktivite skoru"
+ },
+ {
+  "slug": "dlqi",
+  "name": "DLQI",
+  "desc": "Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30"
+ },
+ {
+  "slug": "dst",
+  "name": "Deksametazon Süpresyon Testi (DST)",
+  "desc": "1 mg / 2 mg LDDST / 8 mg HDDST — Cushing tarama & lokalizasyon"
+ },
+ {
+  "slug": "ecog",
+  "name": "ECOG Performans Durumu",
+  "desc": "Fonksiyonel kapasite / tedavi uygunluğu"
+ },
+ {
+  "slug": "egfr",
+  "name": "eGFR (CKD-EPI 2021)",
+  "desc": "Race-free böbrek fonksiyon analizi"
+ },
+ {
+  "slug": "endocarditis",
+  "name": "Duke Kriterleri",
+  "desc": "Enfektif Endokardit tanı deşifresi"
+ },
+ {
+  "slug": "esas",
+  "name": "ESAS",
+  "desc": "Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala"
+ },
+ {
+  "slug": "essdai",
+  "name": "ESSDAI",
+  "desc": "Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain"
+ },
+ {
+  "slug": "fibromiyalji",
+  "name": "Fibromiyalji 2016",
+  "desc": "ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri"
+ },
+ {
+  "slug": "findrisc",
+  "name": "FINDRISC",
+  "desc": "Tip 2 diyabet 10 yıllık risk taraması"
+ },
+ {
+  "slug": "flipi",
+  "name": "FLIPI",
+  "desc": "Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF"
+ },
+ {
+  "slug": "frail",
+  "name": "FRAIL Skalası",
+  "desc": "Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan"
+ },
+ {
+  "slug": "gcs",
+  "name": "Glasgow Koma Skalası",
+  "desc": "Bilinç düzeyi değerlendirmesi (E+V+M)"
+ },
+ {
+  "slug": "gds-15",
+  "name": "GDS-15",
+  "desc": "Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı"
+ },
+ {
+  "slug": "gh-test",
+  "name": "Büyüme Hormonu Testleri",
+  "desc": "GH eksikliği stimülasyon (ITT/glukagon) & akromegali OGTT süpresyonu"
+ },
+ {
+  "slug": "glasgow-blatchford",
+  "name": "Glasgow-Blatchford Skoru",
+  "desc": "Üst GİS kanaması — endoskopi öncesi risk"
+ },
+ {
+  "slug": "glim",
+  "name": "GLIM Kriterleri",
+  "desc": "Küresel malnütrisyon tanı protokolü"
+ },
+ {
+  "slug": "gnri",
+  "name": "GNRI",
+  "desc": "Geriyatrik Nütrisyon Risk İndeksi — albumin + ideal ağırlık"
+ },
+ {
+  "slug": "gout-acr",
+  "name": "Gut ACR 2015",
+  "desc": "ACR/EULAR gut hastalığı sınıflama kriterleri — MSU + domain skoru"
+ },
+ {
+  "slug": "grace",
+  "name": "GRACE 2.0 Skoru",
+  "desc": "AKS/NSTEMI hastane içi mortalite riski"
+ },
+ {
+  "slug": "haq-di",
+  "name": "HAQ-DI",
+  "desc": "Sağlık Değerlendirme Anketi — Engellilik İndeksi"
+ },
+ {
+  "slug": "has-bled",
+  "name": "HAS-BLED Skoru",
+  "desc": "Antikoagülasyon kanama riski"
+ },
+ {
+  "slug": "hba1c-eag",
+  "name": "HbA1c → Ortalama Glukoz",
+  "desc": "Tahmini ortalama glukoz (ADA/NGSP)"
+ },
+ {
+  "slug": "heart",
+  "name": "HEART Skoru",
+  "desc": "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T)"
+ },
+ {
+  "slug": "heart-score",
+  "name": "HEART Skoru",
+  "desc": "Göğüs ağrısı risk stratifikasyonu"
+ },
+ {
+  "slug": "homa-ir",
+  "name": "HOMA-IR",
+  "desc": "İnsülin direnci indeksi (açlık glukoz × insülin)"
+ },
+ {
+  "slug": "hscore",
+  "name": "HScore",
+  "desc": "HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz"
+ },
+ {
+  "slug": "infusion",
+  "name": "İnfüzyon Hesaplama",
+  "desc": "IV doz ve damla sayısı asistanı"
+ },
+ {
+  "slug": "ipi",
+  "name": "IPI Skoru",
+  "desc": "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)"
+ },
+ {
+  "slug": "ipss-r",
+  "name": "IPSS-R",
+  "desc": "MDS Revize Prognostik Skorlama — sitogenetik + blast + CBC parametreleri"
+ },
+ {
+  "slug": "isth-dic",
+  "name": "ISTH DIC Skoru",
+  "desc": "Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan)"
+ },
+ {
+  "slug": "karnofsky",
+  "name": "Karnofsky (KPS)",
+  "desc": "0–100 performans skalası — fonksiyonel kapasite ve prognoz"
+ },
+ {
+  "slug": "kdigo-aki",
+  "name": "KDIGO AKI Evrelemesi",
+  "desc": "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)"
+ },
+ {
+  "slug": "khorana",
+  "name": "Khorana Skoru",
+  "desc": "Kemoterapi ilişkili VTE riski"
+ },
+ {
+  "slug": "ktv",
+  "name": "Kt/V — Daugirdas II",
+  "desc": "Hemodiyaliz yeterliliği · spKt/V · eKt/V · URR"
+ },
+ {
+  "slug": "lawton-iadl",
+  "name": "Lawton IADL",
+  "desc": "Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans)"
+ },
+ {
+  "slug": "mascc",
+  "name": "MASCC Risk İndeksi",
+  "desc": "Febril nötropenide komplikasyon riski"
+ },
+ {
+  "slug": "meld-na",
+  "name": "MELD-Na Skoru",
+  "desc": "ESKH mortalite tahmini"
+ },
+ {
+  "slug": "mmrc",
+  "name": "mMRC Dispne",
+  "desc": "Modifiye Medical Research Council dispne ölçeği — Grade 0–4"
+ },
+ {
+  "slug": "mna",
+  "name": "MNA® (Kısa Form)",
+  "desc": "Geriatrik popülasyon nütrisyonel değerlendirme"
+ },
+ {
+  "slug": "morse-fall",
+  "name": "Morse Düşme Riski",
+  "desc": "Hastanede düşme riski değerlendirme skalası — 6 madde"
+ },
+ {
+  "slug": "mrss",
+  "name": "mRSS",
+  "desc": "Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge)"
+ },
+ {
+  "slug": "murray",
+  "name": "Murray Skoru",
+  "desc": "Akciğer hasar skoru — ARDS şiddet değerlendirmesi, ECMO eşiği ≥ 2.5"
+ },
+ {
+  "slug": "must",
+  "name": "MUST",
+  "desc": "Malnutrition Universal Screening Tool — toplum & poliklinik"
+ },
+ {
+  "slug": "news2",
+  "name": "NEWS2 Skoru",
+  "desc": "Klinik kötüleşme erken uyarı sistemi"
+ },
+ {
+  "slug": "nihss",
+  "name": "NIHSS",
+  "desc": "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi"
+ },
+ {
+  "slug": "nrs-2002",
+  "name": "NRS-2002",
+  "desc": "Yatan hastalarda beslenme riski taraması"
+ },
+ {
+  "slug": "nutrition-needs",
+  "name": "Enerji & Protein Gereksinimi",
+  "desc": "Klinik duruma göre kcal/pro hesaplayıcı"
+ },
+ {
+  "slug": "ogtt",
+  "name": "OGTT Yorumlama",
+  "desc": "T2DM/prediyabet, gestasyonel diyabet (GDM), akromegali GH süpresyonu"
+ },
+ {
+  "slug": "osmolal-gap",
+  "name": "Serum Osmolal Gap",
+  "desc": "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri"
+ },
+ {
+  "slug": "padua",
+  "name": "Padua Skoru",
+  "desc": "Yatan dahili hastalarda VTE profilaksi kararı"
+ },
+ {
+  "slug": "pap-score",
+  "name": "PaP Score",
+  "desc": "Palyatif Prognostik Skor — 30 günlük sağkalım (Grup A/B/C)"
+ },
+ {
+  "slug": "perc",
+  "name": "PERC Kriterleri",
+  "desc": "PE düşük risk dışlama protokolü"
+ },
+ {
+  "slug": "pni",
+  "name": "PNI",
+  "desc": "Prognostik Nütrisyon İndeksi — albumin + lenfosit"
+ },
+ {
+  "slug": "ppi",
+  "name": "Palyatif Prognostik İndeks (PPI)",
+  "desc": "Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta)"
+ },
+ {
+  "slug": "pps",
+  "name": "Palliative Performance Scale",
+  "desc": "PPS v2 — palyatif bakımda 5 domain fonksiyonel durum"
+ },
+ {
+  "slug": "psi-port",
+  "name": "PSI/PORT Skoru",
+  "desc": "Pnömonide 30 günlük mortalite tahmini"
+ },
+ {
+  "slug": "qsofa",
+  "name": "qSOFA Skoru",
+  "desc": "Hızlı sepsis yatak başı değerlendirme"
+ },
+ {
+  "slug": "ranson",
+  "name": "Ranson Kriterleri",
+  "desc": "Akut pankreatit şiddet değerlendirmesi"
+ },
+ {
+  "slug": "rapid3",
+  "name": "RAPID3",
+  "desc": "Rutin Değerlendirme 3 Hasta Ölçütü — HAQ-DI + ağrı + global"
+ },
+ {
+  "slug": "rass",
+  "name": "RASS",
+  "desc": "Richmond Ajitasyon–Sedasyon Skalası — −5/+4, sedasyon hedefi"
+ },
+ {
+  "slug": "refeeding-risk",
+  "name": "Refeeding Sendromu Riski",
+  "desc": "NICE kriterleri — beslenme başlatmada hipofosfatemi riski"
+ },
+ {
+  "slug": "rockall",
+  "name": "Rockall Skoru",
+  "desc": "Üst GİS kanaması — yeniden kanama ve mortalite"
+ },
+ {
+  "slug": "rts",
+  "name": "RTS",
+  "desc": "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım"
+ },
+ {
+  "slug": "scorad",
+  "name": "SCORAD",
+  "desc": "Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif"
+ },
+ {
+  "slug": "sdai",
+  "name": "SDAI",
+  "desc": "Basitleştirilmiş Hastalık Aktivite İndeksi — RA + CRP"
+ },
+ {
+  "slug": "sga",
+  "name": "SGA",
+  "desc": "Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi"
+ },
+ {
+  "slug": "sle",
+  "name": "SLE Kriterleri",
+  "desc": "Sistemik Lupus Eritematozus sınıflama kriterleri"
+ },
+ {
+  "slug": "sledai2k",
+  "name": "SLEDAI-2K",
+  "desc": "SLE hastalık aktivite indeksi"
+ },
+ {
+  "slug": "sodium",
+  "name": "Sodyum Yönetimi",
+  "desc": "TBW · Hiponatremi · Hipernatremi düzeltme hızı ve hacim hesabı"
+ },
+ {
+  "slug": "sofa",
+  "name": "SOFA Skoru",
+  "desc": "Yoğun bakımda organ yetmezliği takibi"
+ },
+ {
+  "slug": "spot-urine",
+  "name": "Spot İdrar Hesaplamaları",
+  "desc": "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap"
+ },
+ {
+  "slug": "steroid-dose",
+  "name": "Steroid Eşdeğer Doz",
+  "desc": "Kortikosteroid dönüşüm tablosu"
+ },
+ {
+  "slug": "tft",
+  "name": "Tiroid Fonksiyon Testi (TFT)",
+  "desc": "TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral"
+ },
+ {
+  "slug": "timi-ua",
+  "name": "TIMI Skoru (UA/NSTEMI)",
+  "desc": "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter"
+ },
+ {
+  "slug": "tirads",
+  "name": "ACR TI-RADS",
+  "desc": "Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı"
+ },
+ {
+  "slug": "tnss",
+  "name": "TNSS",
+  "desc": "Total Nazal Semptom Skoru — 4 semptom, 0–12"
+ },
+ {
+  "slug": "uas7",
+  "name": "UAS7",
+  "desc": "Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği"
+ },
+ {
+  "slug": "unit-converter",
+  "name": "Birim Çevirici",
+  "desc": "Sık kullanılan laboratuvar birim dönüşümleri"
+ },
+ {
+  "slug": "wells-dvt",
+  "name": "Wells Skoru (DVT)",
+  "desc": "Derin ven trombozu klinik olasılığı"
+ },
+ {
+  "slug": "wells-pe",
+  "name": "Wells Skoru (PE)",
+  "desc": "Pulmoner emboli klinik olasılığı"
+ }
+]

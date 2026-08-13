@@ -1,7 +1,6 @@
-import fs from "fs";
-import path from "path";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { getToolCount } from "@/app/lib/topic-counts";
 
 /**
  * Klinik araçlar dizininin metadata'sı.
@@ -11,26 +10,12 @@ import type { ReactNode } from "react";
  * devralıyor, kendi başlığı olmuyordu. "klinik hesaplayıcı" aramaları tam da
  * bu sayfanın karşılaması gereken trafik.
  *
- * Sayı elle yazılmıyor: araç klasörleri sayılıyor, liste büyüdükçe kendisi
- * güncelleniyor.
+ * Sayı elle yazılmıyor ama app/tools klasöründen de sayılmıyor: sunucusuz
+ * ortamda kaynak app/ dizini çalışma zamanında yok. Ortak sayaç
+ * content/arac-index.json'u okuyor (bkz. getToolCount).
  */
-
-function aracSayisi(): number {
-  try {
-    const kok = path.join(process.cwd(), "app", "tools");
-    return fs
-      .readdirSync(kok, { withFileTypes: true })
-      .filter((d) => d.isDirectory())
-      .map((d) => d.name)
-      .filter((ad) => !["components", "lib", "data"].includes(ad))
-      .filter((ad) => fs.existsSync(path.join(kok, ad, "page.tsx"))).length;
-  } catch {
-    return 0;
-  }
-}
-
 export async function generateMetadata(): Promise<Metadata> {
-  const n = aracSayisi();
+  const n = getToolCount();
   const aciklama = n
     ? `${n} klinik hesaplayıcı ve skor: eGFR, Wells, CHA₂DS₂-VASc, Child-Pugh ve daha fazlası. Ücretsiz, kayıt gerekmez.`
     : "Klinik hesaplayıcılar ve skorlar. Ücretsiz, kayıt gerekmez.";

@@ -6,6 +6,7 @@
 
 import fs from "fs";
 import path from "path";
+import aracIndex from "@/content/arac-index.json";
 
 /**
  * GİZLİ KONULAR SAYILMAZ.
@@ -56,27 +57,20 @@ export function getTopicCounts(): Record<string, number> {
 }
 
 /**
- * Yayımlanmış klinik araç sayısı — app/tools altındaki gerçek sayfa sayısı.
+ * Yayımlanmış klinik araç sayısı.
  *
  * Ana sayfada bu sayı "6+" olarak elle yazılıydı; gerçekte 114 araç var.
- * Yani sitenin en büyük varlığı, olduğunun yirmide biri gibi gösteriliyordu.
- * Başka bir yerde de "50+ skor" yazıyordu — iki rakam birbirini tutmuyordu.
+ * Sitenin en büyük varlığı olduğunun yirmide biri gibi gösteriliyordu.
+ *
+ * Sayı app/tools klasöründen DEĞİL, content/arac-index.json'dan okunuyor.
+ * Klasörü çalışma zamanında saymak canlıda 0 veriyordu: sunucusuz ortamda
+ * yalnızca derleme çıktısı bulunuyor, kaynak app/ dizini yok. Derleme anında
+ * üretilen sayfalarda doğru, istek anında çalışan sayfalarda sıfır — yani
+ * sessiz ve yalnızca üretimde görünen bir hata. content/ izlenip pakete
+ * girdiği için oradan okumak her iki ortamda da çalışıyor.
+ *
+ * Dizin scripts/arac-metadata.cjs ile üretiliyor.
  */
-let aracOnbellek: number | null = null;
-
 export function getToolCount(): number {
-  if (aracOnbellek !== null) return aracOnbellek;
-
-  try {
-    const kok = path.join(process.cwd(), "app", "tools");
-    aracOnbellek = fs
-      .readdirSync(kok, { withFileTypes: true })
-      .filter((d) => d.isDirectory())
-      .map((d) => d.name)
-      .filter((ad) => !["components", "lib", "data"].includes(ad))
-      .filter((ad) => fs.existsSync(path.join(kok, ad, "page.tsx"))).length;
-    return aracOnbellek;
-  } catch {
-    return 0;
-  }
+  return Array.isArray(aracIndex) ? aracIndex.length : 0;
 }

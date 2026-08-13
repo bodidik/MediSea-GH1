@@ -165,6 +165,29 @@ function main() {
     yazilan++;
   }
 
+  // Araç listesini content/ altına da yaz.
+  //
+  // Neden: çalışma zamanında app/tools klasörü OKUNAMIYOR. Sunucusuz ortamda
+  // yalnızca derleme çıktısı bulunuyor, kaynak app/ dizini yok. Ana sayfa
+  // dinamik olduğu için araç sayısını istek anında sayıyordu ve canlıda 0
+  // çıkıyordu (yerelde 114). content/ dizini izlenip pakete girdiği için
+  // buradan okumak her iki ortamda da çalışıyor.
+  const sayfasiOlan = araclar.filter((a) =>
+    fs.existsSync(path.join(ARAC_DIZIN, a.slug, 'page.tsx'))
+  );
+  const indexYolu = path.join(KOK, 'content', 'arac-index.json');
+  fs.writeFileSync(
+    indexYolu,
+    JSON.stringify(
+      sayfasiOlan
+        .map(({ slug, name, desc }) => ({ slug, name, desc }))
+        .sort((a, b) => a.slug.localeCompare(b.slug)),
+      null,
+      1
+    ) + '\n'
+  );
+  console.log(`yazıldı: content/arac-index.json (${sayfasiOlan.length} araç)`);
+
   console.log(`araç kaydı: ${araclar.length}`);
   console.log(`yazılan layout: ${yazilan}`);
   if (atlanan) console.log(`atlanan: ${atlanan}`);
