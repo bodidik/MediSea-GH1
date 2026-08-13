@@ -15,7 +15,11 @@
  * Bağlantı dizesi web/.env.local içindeki MONGODB_URI'den okunur; parametre
  * olarak geçirilmez ki komut geçmişine sır düşmesin.
  */
-require('dotenv').config({ path: '.env.local' });
+const path = require('path');
+// Yol betiğin kendi konumuna göre çözülüyor: hangi dizinden çağrılırsa
+// çağrılsın .env.local'i bulur. Aksi halde depo kökünden çalıştırınca
+// "MONGODB_URI yok" der ve sebebi anlaşılmaz görünür.
+require('dotenv').config({ path: path.join(__dirname, '..', '.env.local') });
 const mongoose = require('mongoose');
 
 const GECERLI_PLANLAR = ['free', 'member', 'premium'];
@@ -30,7 +34,7 @@ async function main() {
 
   const uri = process.env.MONGODB_URI;
   if (!uri) {
-    console.error('MONGODB_URI bulunamadı. web/ dizininden çalıştırdığından ve .env.local dosyasının yerinde olduğundan emin ol.');
+    console.error('MONGODB_URI bulunamadı. web/.env.local dosyasının yerinde olduğundan emin ol.');
     process.exit(1);
   }
 
