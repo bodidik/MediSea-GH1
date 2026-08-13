@@ -7,7 +7,10 @@ import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
 import { getBranchTools } from "@/app/lib/tools";
 
-export const dynamic = "force-dynamic";
+// Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
+// force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
+// /api/revalidate ile anında tazelenebiliyor.
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params,

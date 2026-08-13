@@ -4,12 +4,27 @@ import path from "path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import InlineTopicEditor from "@/components/topics/InlineTopicEditor";
+import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 
-export const dynamic = "force-dynamic";
+/**
+ * force-dynamic KALDIRILDI, yerine ISR.
+ *
+ * Konu içeriği dosya sisteminden geliyor ve yalnızca dağıtımda ya da yönetici
+ * düzenlemesiyle değişiyor; her istekte yeniden üretmenin karşılığı yok.
+ * Dinamikken 411 konu sayfasının hiçbiri CDN'e girmiyordu (x-vercel-cache hep
+ * MISS). Sayfa hızı arama sıralamasına giren bir etken, üstelik açık taraf
+ * huninin girişi.
+ *
+ * Düzenleme sonrası anında tazeleme için /api/revalidate ucu zaten var
+ * (REVALIDATE_SECRET ile korunuyor); süre dolmasını beklemeye gerek yok.
+ *
+ * Sayfanın oturuma bağlı hiçbir parçası kalmadı: yönetici düzenleyicisi
+ * istemcide yetki sorup kendini gösteriyor.
+ */
+export const revalidate = 3600;
 
 function konuOku(slug: string, topicSlug: string): any | null {
   try {
@@ -278,22 +293,13 @@ export default async function TopicDetailPage({
               )}
             </div>
 
-            {/* İçerik Editörü (Yönetici Paneli) — okuyucu içeriğinden görsel olarak ayrıştırılmıştır.
-                Dosya ayrıştırılamadıysa GÖSTERİLMEZ: editör elindeki `item`'ı geri yazar,
-                o da boş olduğu için kaydetmek diskteki asıl içeriği silerdi. */}
-            {!okumaHatasi && (
-            <div className="pt-4 mt-4 border-t-2 border-dashed border-slate-200">
-              <div className="flex items-center gap-2 mb-3 px-2">
-                <span className="w-2 h-2 rounded-full bg-slate-300"></span>
-                <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.25em]">
-                  Yönetici Paneli · Bu bölüm ziyaretçilere görünmez varsayılmalıdır
-                </span>
-              </div>
-              <div className="bg-slate-50 rounded-[2.5rem] shadow-inner border border-slate-200 overflow-hidden min-h-[500px]">
-                <InlineTopicEditor item={topicItem} />
-              </div>
-            </div>
-            )}
+            {/* İçerik Editörü — YALNIZCA YÖNETİCİYE. Kapı istemcide kuruluyor
+                (bkz. YoneticiDuzenleyici): sunucuda oturuma göre farklı HTML
+                üretmek sayfayı önbelleğe alınamaz hâle getirirdi.
+                Dosya ayrıştırılamadıysa GÖSTERİLMEZ: editör elindeki `item`'ı
+                geri yazar, o da boş olduğu için kaydetmek diskteki asıl içeriği
+                silerdi. */}
+            {!okumaHatasi && <YoneticiDuzenleyici item={topicItem} />}
           </div>
 
           {/* --- SAĞ KOLON: DİNAMİK SİDEBAR --- */}
