@@ -26,6 +26,40 @@ import ilgiliIndex from "@/content/ilgili-index.json";
  */
 export const revalidate = 3600;
 
+/**
+ * Yalnızca `revalidate` vermek yetmedi: dinamik segment derlemede önceden
+ * üretilmediği sürece Vercel sayfayı CDN'e almıyor, ölçümde x-vercel-cache
+ * hep MISS kalıyordu. Görünür konular derlemede üretiliyor.
+ *
+ * Gizli konular listeye alınmıyor — sayfaları hâlâ adresle açılabilir, sadece
+ * ilk istekte üretilirler (dynamicParams varsayılanı). Aynı şekilde sonradan
+ * eklenen bir konu da derlemeyi beklemez.
+ */
+export async function generateStaticParams() {
+  const cikti: { slug: string; topicSlug: string }[] = [];
+  try {
+    const kok = path.join(process.cwd(), "content", "canonical");
+    for (const brans of fs
+      .readdirSync(kok, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name)) {
+      const dizin = path.join(kok, brans);
+      for (const dosya of fs.readdirSync(dizin).filter((f) => f.endsWith(".json"))) {
+        try {
+          const veri = JSON.parse(fs.readFileSync(path.join(dizin, dosya), "utf-8"));
+          if (veri?.meta?.hidden === true) continue;
+          cikti.push({ slug: brans, topicSlug: dosya.replace(/\.json$/, "") });
+        } catch {
+          // Bozuk dosya derlemeyi düşürmesin; o sayfa istek anında üretilir.
+        }
+      }
+    }
+  } catch {
+    // İçerik okunamazsa hiçbir sayfa önceden üretilmez, hepsi istek anında.
+  }
+  return cikti;
+}
+
 function konuOku(slug: string, topicSlug: string): any | null {
   try {
     const yol = path.join(process.cwd(), "content", "canonical", slug, `${topicSlug}.json`);

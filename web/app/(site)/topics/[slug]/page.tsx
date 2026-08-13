@@ -12,6 +12,26 @@ import { getBranchTools } from "@/app/lib/tools";
 // /api/revalidate ile anında tazelenebiliyor.
 export const revalidate = 3600;
 
+/**
+ * Yalnızca `revalidate` vermek yetmedi: dinamik segment derlemede önceden
+ * üretilmediği sürece Vercel sayfayı CDN'e almıyor, ölçümde x-vercel-cache
+ * hep MISS kalıyordu. Branşlar derlemede üretiliyor.
+ *
+ * Listede olmayan bir slug yine istek anında üretilir (dynamicParams
+ * varsayılanı), yani içerik eklemek derlemeyi beklemez.
+ */
+export async function generateStaticParams() {
+  try {
+    const kok = path.join(process.cwd(), "content", "canonical");
+    return fs
+      .readdirSync(kok, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => ({ slug: d.name }));
+  } catch {
+    return [];
+  }
+}
+
 export async function generateMetadata({
   params,
 }: {
