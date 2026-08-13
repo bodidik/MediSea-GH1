@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import YdusDashboardClient, { type BranchCard, type LockedBranch, type NewestTopic } from './YdusDashboardClient';
 import { sinavlariOku } from '@/lib/sinav.server';
+import { envanterAl } from '@/lib/premium-envanter';
 
 export const revalidate = 3600;
 
@@ -90,7 +91,10 @@ export default async function YdusAnaSayfa({
         readyTopics += 1;
         hazirKonular.push({ brans: id, id: konu.id, baslik: konu.baslik });
         const konuVerisi = konuYukle(id, konu.id);
-        const soru = konuVerisi?.istatistikler?.soru ?? 0;
+        // İlan edilen sayı değil, gerçek quiz dosyasındaki soru sayısı.
+        // İlana güvenildiğinde pano, olmayan sorular dahil bir toplam
+        // gösteriyordu (ör. aml-ana 24 ilan ediyor, gerçekte 9).
+        const soru = envanterAl(id, konu.id).soru;
         soruToplam += soru;
 
         newest.push({

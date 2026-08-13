@@ -5,6 +5,7 @@ import Link from 'next/link';
 import SoruSor from './SoruSor';
 import { checkTopicAccess } from '@/lib/access';
 import { AccessGate } from '@/lib/AccessGate';
+import { envanterAl } from '@/lib/premium-envanter';
 
 export const revalidate = 86400;
 
@@ -292,7 +293,22 @@ export default async function KonuSayfasi({
 
   const branchMeta = BRANCH_META[branch] ?? { label: branch, renk: DEFAULT_RENK };
   const moduller = veri.moduller ?? {};
-  const istatistikler = veri.istatistikler ?? {};
+
+  /**
+   * Sayılar konu dosyasının ilanından DEĞİL, gerçek içerik dosyalarından.
+   *
+   * İlana güvenildiğinde 38 hazır konunun 5'i yanlış sayı gösteriyordu ve
+   * ikisi çıkmaz sokaktı: graves-hastaligi "10 soru" deyip tıklanabilir
+   * oluyordu ama quiz dosyası hiç yoktu; kml "12 flashcard" diyordu, kart
+   * dosyası yoktu. Artık hem sayı hem bağlantı gerçeğe bakıyor.
+   */
+  const envanter = envanterAl(branch, topic);
+  const istatistikler = {
+    soru: envanter.soru,
+    flashcard: envanter.flashcard,
+    inci: envanter.inci,
+    vaka: envanter.vaka,
+  };
 
   return (
     <div style={{
@@ -499,8 +515,10 @@ export default async function KonuSayfasi({
                   İçerik
                 </div>
                 <style>{`.stat-link:hover { background: #eef4fc; }`}</style>
+                {/* Bağlantı, modül bayrağına değil DOSYANIN VARLIĞINA bakıyor:
+                    bayrak açık ama dosya yokken kullanıcı çıkmaz sokağa gidiyordu. */}
                 {istatistikler.soru !== undefined && (
-                  moduller.quiz ? (
+                  envanter.quizVar ? (
                     <Link href={`/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${topic}-quiz-1`}
                       className="stat-link"
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
@@ -515,7 +533,7 @@ export default async function KonuSayfasi({
                   )
                 )}
                 {istatistikler.flashcard !== undefined && (
-                  moduller.flashcard ? (
+                  envanter.flashcardVar ? (
                     <Link href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${topic}`}
                       className="stat-link"
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
@@ -530,7 +548,7 @@ export default async function KonuSayfasi({
                   )
                 )}
                 {istatistikler.inci !== undefined && (
-                  moduller.inciler ? (
+                  envanter.inciVar ? (
                     <Link href={`/${lang}/premium/ydus/inciler?branch=${branch}&id=${topic}`}
                       className="stat-link"
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
@@ -545,7 +563,7 @@ export default async function KonuSayfasi({
                   )
                 )}
                 {istatistikler.vaka !== undefined && (
-                  moduller.vaka ? (
+                  envanter.vakaVar ? (
                     <Link href={`/${lang}/premium/ydus/vaka-coz?branch=${branch}&topic=${topic}`}
                       className="stat-link"
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
