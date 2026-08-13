@@ -25,32 +25,23 @@ export async function GET(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
 
-  } catch (err: any) {
-    // 🚨 BACKEND ULAŞILAMAZSA: ARAMA ÇUBUĞUNU ÇÖKERTME, MOCK SONUÇ DÖN!
-    const query = req.nextUrl.searchParams.get("q") || "aranan kelime";
-    console.warn(`Backend'e ulaşılamadı. Arama Sonarı (Search: ${query}) yedek motoru devrede.`);
-    
-    return NextResponse.json({
-      ok: true,
-      mock: true,
-      query: query,
-      total: 2,
-      items: [
-        {
-          id: "mock-search-1",
-          title: `"${query}" ile ilgili Yedek Sonuç 1`,
-          slug: "mock-sonuc-1",
-          section: "Kardiyoloji",
-          snippet: "Backend kapalıyken bile arama sisteminiz çökmüyor. Çelik Kubbe devrede!"
-        },
-        {
-          id: "mock-search-2",
-          title: `"${query}" ile ilgili Yedek Sonuç 2`,
-          slug: "mock-sonuc-2",
-          section: "Genel",
-          snippet: "Arama (Search) bileşenlerinizin arayüz tasarımını (UI) test edebilirsiniz."
-        }
-      ]
-    }, { status: 200 });
+  } catch {
+    // Arka uca ulaşılamadı.
+    //
+    // Burada UYDURMA sonuç dönülüyordu ("… ile ilgili Yedek Sonuç 1") ve
+    // çağıran sayfa bunları gerçek konu sanıp basıyordu. Express arka ucu
+    // canlıda hiç çalışmadığı için bu "yedek" hâl, kalıcı hâldi: kütüphane
+    // girişinde ziyaretçiye sürekli iki sahte kayıt gösteriliyordu.
+    //
+    // Sahte veriyi gerçek gibi sunmak, dürüst bir hatadan kötüdür — hele
+    // tıbbi bir kaynakta. Artık sonuç yok ve bu açıkça söyleniyor;
+    // çağıran taraf buna göre dürüst bir mesaj gösterebilir.
+    const query = req.nextUrl.searchParams.get("q") || "";
+    console.warn(`Arama arka ucuna ulaşılamadı (q=${query}).`);
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", query, total: 0, items: [] },
+      { status: 503 }
+    );
   }
 }
