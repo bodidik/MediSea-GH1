@@ -11,6 +11,35 @@ export async function AccessGate({ topicId, lang, branch }: Props) {
   const erisim: AccessResult = await checkTopicAccess(topicId);
   if (erisim === 'ok') return null;
 
+  // Doğrulama yapılamadı: satın alma çağrısı göstermek yanıltıcı olurdu,
+  // kullanıcının yapabileceği bir şey yok. Sorunun bizde olduğunu söyleriz.
+  if (erisim === 'unavailable') {
+    return (
+      <div style={{
+        minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: '#f5f9ff', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '2rem',
+      }}>
+        <div style={{ textAlign: 'center', maxWidth: '380px' }}>
+          <div style={{ fontSize: '40px', marginBottom: '1rem' }}>🛠️</div>
+          <h2 style={{ fontSize: '18px', fontWeight: 700, color: '#1a3a6b', marginBottom: '8px' }}>
+            İçerik şu an açılamıyor
+          </h2>
+          <p style={{ fontSize: '14px', color: '#4a6a8a', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+            Üyeliğini doğrulayamadığımız için bu konuyu gösteremiyoruz. Sorun bizde —
+            biraz sonra tekrar dener misin?
+          </p>
+          <Link href={`/${lang}/premium/ydus/${branch}`} style={{
+            display: 'inline-block', padding: '10px 24px', background: '#1a3a6b',
+            color: '#fff', borderRadius: '8px', textDecoration: 'none',
+            fontSize: '14px', fontWeight: 600,
+          }}>
+            ← Branşa dön
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   const mesaj =
     erisim === 'need-login'  ? 'Bu içeriği görüntülemek için giriş yapmalısın.' :
     erisim === 'need-member' ? 'Bu içerik üye seviyesinde kilitlidir.' :
