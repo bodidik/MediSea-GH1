@@ -8,12 +8,23 @@ import React from "react";
 export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans">
-      
+
+      {/* İÇERİĞE ATLA — yalnızca klavyeyle odaklanınca görünür.
+          Masaüstü başlığında 13 odaklanabilir öge var (9 branş bağlantısı,
+          arama, giriş, kayıt, menü); klavye kullanıcısı bunları HER sayfada
+          tek tek geçmek zorundaydı. */}
+      <a
+        href="#icerik"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-blue-950 focus:px-4 focus:py-2.5 focus:text-sm focus:font-bold focus:text-white"
+      >
+        İçeriğe atla
+      </a>
+
       {/* ÜST MENÜ */}
       <SiteHeader />
-      
+
       {/* ANA İÇERİK (Sitenin ortası) */}
-      <main className="flex-1 w-full flex flex-col">
+      <main id="icerik" className="flex-1 w-full flex flex-col">
         {children}
       </main>
 
@@ -38,14 +49,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <p className="text-sm leading-relaxed max-w-sm mb-6 font-medium">
                 Tıp profesyonelleri ve asistan hekimler için güncel, kanıta dayalı ve pratik iç hastalıkları klinik rehberi. Nöbetlerde ve YDUS sürecinde en güçlü silahınız.
               </p>
-              <div className="flex gap-4">
-                <span className="w-10 h-10 rounded-full bg-blue-900 flex items-center justify-center text-white hover:bg-blue-800 hover:-translate-y-1 transition-all cursor-pointer">
-                  𝕏
-                </span>
-                <span className="w-10 h-10 rounded-full bg-blue-900 flex items-center justify-center text-white hover:bg-blue-800 hover:-translate-y-1 transition-all cursor-pointer">
-                  in
-                </span>
-              </div>
+              {/* Sosyal medya ikonları (𝕏, in) kaldırıldı: <span> olarak
+                  duruyorlardı — imleç "pointer", üzerine gelince hareket
+                  ediyorlardı, ama bağlantı da tıklama işleyicisi de yoktu.
+                  Yani tıklanabilir görünüp hiçbir şey yapmıyorlardı; klavyeyle
+                  de erişilemiyorlardı. Sahte etkileşim vaadi, hiç ikon
+                  olmamasından kötü. Hesaplar açılınca gerçek <a> olarak geri
+                  konabilirler. */}
             </div>
 
             {/* 2. Kolon: Hızlı Erişim */}
