@@ -289,7 +289,9 @@ export default function SiteHeader() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menü"
             aria-expanded={menuOpen}
-            className="2xl:hidden flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
+            /* 36×36'dan 44×44'e: mobilde ana gezinme kontrolü bu düğme ve
+               ölçümde dokunma hedefi önerilen 44px'in altındaydı. */
+            className="2xl:hidden flex items-center justify-center w-11 h-11 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
           >
             {menuOpen ? (
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

@@ -222,9 +222,11 @@ export default async function TopicDetailPage({
 
         {/* Üst Yönlendirme Çubuğu */}
         <div className="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400">
-          <Link href="/topics" className="hover:text-blue-600 transition-colors">Kütüphane</Link>
+          {/* py-1.5: kırıntı yolu bağlantıları mobilde 16px yüksekliğindeydi,
+              yani dokunma hedefi olarak WCAG asgarisinin (24px) altında. */}
+          <Link href="/topics" className="py-1.5 hover:text-blue-600 transition-colors">Kütüphane</Link>
           <span>/</span>
-          <Link href={`/topics/${slug}`} className="hover:text-blue-600 transition-colors">{bransAdi}</Link>
+          <Link href={`/topics/${slug}`} className="py-1.5 hover:text-blue-600 transition-colors">{bransAdi}</Link>
           <span>/</span>
           <span className="text-blue-900">{topicItem.title}</span>
         </div>

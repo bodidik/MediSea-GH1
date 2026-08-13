@@ -53,11 +53,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
                 Kütüphane
               </h4>
-              <ul className="space-y-3 text-sm font-semibold">
-                <li><Link href="/topics/hematoloji" className="hover:text-amber-400 transition-colors">Hematoloji</Link></li>
-                <li><Link href="/topics/romatoloji" className="hover:text-amber-400 transition-colors">Romatoloji</Link></li>
-                <li><Link href="/topics/gastroenteroloji" className="hover:text-amber-400 transition-colors">Gastroenteroloji</Link></li>
-                <li><Link href="/topics/onkoloji" className="hover:text-amber-400 transition-colors">Tıbbi Onkoloji</Link></li>
+              <ul className="space-y-1 text-sm font-semibold">
+                <li><Link href="/topics/hematoloji" className="block py-1.5 hover:text-amber-400 transition-colors">Hematoloji</Link></li>
+                <li><Link href="/topics/romatoloji" className="block py-1.5 hover:text-amber-400 transition-colors">Romatoloji</Link></li>
+                <li><Link href="/topics/gastroenteroloji" className="block py-1.5 hover:text-amber-400 transition-colors">Gastroenteroloji</Link></li>
+                <li><Link href="/topics/onkoloji" className="block py-1.5 hover:text-amber-400 transition-colors">Tıbbi Onkoloji</Link></li>
               </ul>
             </div>
 
@@ -66,17 +66,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
                 Platform
               </h4>
-              <ul className="space-y-3 text-sm font-semibold">
+              <ul className="space-y-1 text-sm font-semibold">
                 <li>
                   {/* /premium diye bir rota yok; premium tanıtımı dil önekiyle duruyor. */}
-                  <Link href="/tr/premium/ydus" className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-2">
+                  <Link href="/tr/premium/ydus" className="flex items-center gap-2 py-1.5 text-amber-400 hover:text-amber-300 transition-colors">
                     Premium YDUS <span className="text-amber-500">★</span>
                   </Link>
                 </li>
-                <li><Link href="/tools" className="hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>
-                <li><Link href="/calisma-alanim" className="hover:text-white transition-colors">Çalışma Alanım</Link></li>
-                <li><Link href="/tekrar" className="hover:text-white transition-colors">Tekrar</Link></li>
-                <li><Link href="/uyelik" className="hover:text-white transition-colors">Üyelik</Link></li>
+                <li><Link href="/tools" className="block py-1.5 hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>
+                <li><Link href="/calisma-alanim" className="block py-1.5 hover:text-white transition-colors">Çalışma Alanım</Link></li>
+                <li><Link href="/tekrar" className="block py-1.5 hover:text-white transition-colors">Tekrar</Link></li>
+                <li><Link href="/uyelik" className="block py-1.5 hover:text-white transition-colors">Üyelik</Link></li>
                 {/* "Hakkımızda" ve "İletişim" bağlantıları kaldırıldı: sayfaları
                     hiç yazılmamıştı ve ikisi de 404 veriyordu. Bu sayfalar
                     yazarın kim olduğu ve hangi kanaldan ulaşılacağı gibi
