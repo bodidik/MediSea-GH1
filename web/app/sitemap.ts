@@ -85,6 +85,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   kayitlar.push({ url: `${base}/`, lastModified: simdi, changeFrequency: "daily", priority: 1 });
   kayitlar.push({ url: `${base}/topics`, lastModified: simdi, changeFrequency: "daily", priority: 0.9 });
   kayitlar.push({ url: `${base}/tools`, lastModified: simdi, changeFrequency: "weekly", priority: 0.9 });
+  kayitlar.push({ url: `${base}/uyelik`, lastModified: simdi, changeFrequency: "monthly", priority: 0.6 });
+
+  // Bilerek DIŞARIDA: /giris ve /kayit (içerik değil, arama değeri yok),
+  // /calisma-alanim ve /tekrar (kişisel araçlar; tarayıcıya boş görünürler),
+  // /guidelines (henüz yer tutucu — aşağıda dizine kapatıldı).
 
   for (const brans of branslar()) {
     kayitlar.push({
