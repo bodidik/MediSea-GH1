@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- MediSea simgesi: lacivert kare, deniz dalgası, altın vurgu.
+       SVG seçildi ki 16px sekme simgesinden 180px dokunma simgesine kadar
+       tek dosyayla net kalsın. Öncesinde favicon.ico 404 veriyordu. -->
+  <rect width="64" height="64" rx="14" fill="#1a3a6b"/>
+  <path d="M8 40c6 0 6-6 12-6s6 6 12 6 6-6 12-6 6 6 12 6"
+        fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M8 50c6 0 6-6 12-6s6 6 12 6 6-6 12-6 6 6 12 6"
+        fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="46" cy="18" r="6" fill="#fbbf24"/>
+</svg>
