@@ -233,3 +233,83 @@ Teşhis için ikinci bir `next dev` örneğini günlüğe alarak çalıştır.
 Tarih uydurulmaz: yanlış tarihe göre program yapan aday gerçekten zarar
 görür. ÖSYM takvimi açıklanınca dosyaya yazmak yeterli; geçmiş tarihler
 kendiliğinden elenir, en yakın gelecek sınav seçilir.
+
+---
+
+## Sayılar, denetimler ve kendini onaran okumalar
+
+Bu bölüm tek bir soruyu cevaplar: **bir yüzeye sayı ya da liste koyarken
+veriyi nereden alacağım?** Yanlış cevap bu projede defalarca aynı hatayı
+üretti — elle yazılan sayı içerik büyürken sessizce yalana dönüşüyor
+(ana sayfa "6+ araç" derken 114 araç vardı, "456+ konu" derken 45'i
+gizliydi, üyelik sayfası "38 başlık" derken pano "39" diyordu).
+
+**Kural: sayı yazma, saydır.**
+
+### Sayıyı nereden alırsın
+
+| İhtiyaç | Kaynak |
+|---|---|
+| Branş/konu/araç/premium toplamları | `lib/icerik-sayaci.ts` → `icerikSayilari()` |
+| Branş başına açık konu sayısı | `app/lib/topic-counts.ts` → `getTopicCounts()` |
+| Araç sayısı | `app/lib/topic-counts.ts` → `getToolCount()` |
+| Bir premium konunun soru/kart/inci/vaka sayısı | `lib/premium-envanter.ts` → `envanterAl()` |
+| Konu başlıkları (görsel rotalarında) | `content/baslik-index.json` |
+
+Hepsi süreç ömrü boyunca bir kez hesaplanıp saklanır; içerik yalnızca
+dağıtımda değişiyor.
+
+**`app/` dizininden çalışma zamanında dosya OKUMA.** Sunucusuz ortamda
+yalnızca derleme çıktısı bulunur, kaynak `app/` yoktur. Araç sayısı bir
+dönem `app/tools` klasörü sayılarak bulunuyordu: derleme anında üretilen
+sayfalarda doğru, istek anında çalışan sayfalarda **sıfır** çıkıyordu —
+yani yalnızca üretimde görünen sessiz bir hata. `content/` izlenip pakete
+girdiği için sayımlar oradan yapılır.
+
+### Kendini onaran okumalar
+
+İçerik listeleri zamanla gerçeklikten kopuyor. Bu üç yerde liste elle
+düzeltilmiyor, okuma adımı onarıyor — içerik düzelince ek kendiliğinden
+kayboluyor:
+
+- **Açık branş sayfası**: ebeveyni bulunamayan konular "Diğer Konular"
+  altında listelenir. (46 konu, kütüphanenin %11'i, hiçbir yerden
+  görünmüyordu — aralarında "Akut Koroner Sendromlar" vardı.)
+- **Premium branş sayfası ve pano**: `lib/premium-brans.ts` →
+  `listelenmeyenKategori()`; branş dosyasında adı geçmeyen konu dosyaları
+  görünür kılınır. (Bitmiş bir premium konu — quizi ve 87 kartıyla —
+  görünmezdi.)
+- **Premium konu sayfası**: içerik sayıları ilana değil dosyaya bakar ve
+  bağlantı yalnızca dosya gerçekten varsa kurulur. (Bir konu "10 soru"
+  deyip tıklanabiliyordu ama quiz dosyası hiç yoktu.)
+
+### İçerik denetimleri
+
+Bu hata sınıfları **kodda değil veride** durur; `lint`, `typecheck` ve
+`build` üçü de göremez. İkisi de CI adımı:
+
+```bash
+node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönlendirmeleri bilir)
+node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
+```
+
+Denetim yazarken **negatif kontrol yap**: kasten bozuk bir kayıt ekleyip
+yakalandığını gör, sonra geri al. Kusur yakalayamayan bir denetim, yanlış
+güven verir.
+
+### Erişilebilirlik tabanları
+
+`app/globals.css` sonunda üç kural var, üçü de ölçümle konuldu:
+
+- **Okuma alanında yazı boyutu tabanı** — konu içeriklerinin %54'ünde
+  gömülü `text-xs`/`text-[10..13px]` sınıfları var ve gövde metnini 12px'e
+  düşürüyordu. `[data-readable]` içinde metin 14px'in (telefonda 15px)
+  altına basılamaz. Kapsam dar: arayüzdeki küçük etiketler etkilenmez.
+- **İkincil metin renkleri** — `text-slate-300/400/500` kontrastı 1.48–4.35
+  arasındaydı (eşik 4.5). Bir basamak koyulaştırıldı. Koyulaştırmadan önce
+  bu renklerin koyu zeminde kullanılmadığı ölçüldü; kullanılsaydı müdahale
+  geri teperdi.
+
+Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
+metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
+tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
