@@ -1,0 +1,10 @@
+{
+  "_aciklama": [
+    "Sınav takvimi. Geri sayım ve sınava çakılı çalışma planı buradan besleniyor.",
+    "Tarih biçimi: YYYY-AA-GG (yerel gün). Liste boşsa geri sayım hiç gösterilmez —",
+    "uydurma bir tarih göstermektense hiçbir şey göstermemek doğrudur.",
+    "Geçmiş tarihler kendiliğinden elenir; sıradaki sınav en yakın gelecek tarihtir.",
+    "ÖSYM takvimi açıklandığında buraya gerçek tarihi yaz."
+  ],
+  "sinavlar": []
+}

@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import YdusDashboardClient, { type BranchCard, type LockedBranch, type NewestTopic } from './YdusDashboardClient';
+import { sinavlariOku } from '@/lib/sinav.server';
 
 export const revalidate = 3600;
 
@@ -126,6 +127,7 @@ export default async function YdusAnaSayfa({
       lockedBranches={LOCKED_BRANCHES}
       newest={newest.slice(0, 6).map(({ mtimeMs, ...rest }) => rest)}
       overall={overall}
+      sinavlar={sinavlariOku()}
     />
   );
 }

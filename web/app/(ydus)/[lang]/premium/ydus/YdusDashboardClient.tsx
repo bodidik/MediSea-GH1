@@ -9,6 +9,8 @@ import {
 } from 'lucide-react';
 import PlanBadge from "@/components/PlanBadge";
 import { useUser } from "@/app/(ydus)/context/UserContext";
+import GeriSayim from "@/app/components/GeriSayim";
+import type { Sinav } from "@/lib/sinav";
 
 export interface BranchCard {
   id: string;
@@ -56,12 +58,14 @@ export default function YdusDashboardClient({
   lockedBranches,
   newest,
   overall,
+  sinavlar = [],
 }: {
   lang: string;
   branches: BranchCard[];
   lockedBranches: LockedBranch[];
   newest: NewestTopic[];
   overall: Overall;
+  sinavlar?: Sinav[];
 }) {
   const { xp, completedModules } = useUser();
   const progressPct = overall.totalTopics > 0
@@ -97,6 +101,11 @@ export default function YdusDashboardClient({
       </div>
 
       <main className="max-w-6xl mx-auto px-4 py-6">
+
+        {/* SINAVA KALAN SÜRE — takvim boşsa hiçbir şey basmaz */}
+        <div className="mb-4">
+          <GeriSayim sinavlar={sinavlar} />
+        </div>
 
         {/* METRİK KARTLARI */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
