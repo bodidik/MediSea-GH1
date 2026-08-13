@@ -100,6 +100,24 @@ export default async function BranchListPage({
     }
   }
 
+  // ASILI KALAN KONULAR — ebeveyni olarak yazılan konu ya hiç yok ya da gizli.
+  //
+  // Bunlar hiyerarşiden düşüyordu: ebeveyni olduğu için ana listeye girmiyor,
+  // ebeveyninin sayfası da olmadığı için hiçbir yerden bağlantı almıyorlardı.
+  // Kütüphanenin %11'i (46 konu) böyleydi ve aralarında "Akut Koroner
+  // Sendromlar" gibi temel başlıklar vardı — yalnızca doğrudan adresle ya da
+  // arama motorundan bulunabiliyorlardı.
+  //
+  // İçeriği düzeltmek yerine gezinme kendini onarıyor: ebeveyni bulunamayan
+  // konu kaybolmuyor, aşağıda listeleniyor. İçerik düzeldikçe bu bölüm
+  // kendiliğinden boşalır.
+  const slugKumesi = new Map(topicList.map((t) => [t.slug, t]));
+  const asiliKonular = topicList.filter((t) => {
+    if (t.hidden || !t.parent) return false;
+    const ebeveyn = slugKumesi.get(t.parent);
+    return !ebeveyn || ebeveyn.hidden;
+  });
+
   return (
     <div className="min-h-screen bg-white font-sans">
 
@@ -173,6 +191,41 @@ export default async function BranchListPage({
             <p className="text-slate-400 font-black uppercase tracking-widest">
               Bu branşta henüz geçerli/kayıtlı konu yok.
             </p>
+          </div>
+        )}
+
+        {/* --- DİĞER KONULAR (ebeveyni bulunamayanlar) --- */}
+        {asiliKonular.length > 0 && (
+          <div className="mt-8">
+            <div className="flex items-baseline gap-3 mb-3">
+              <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em]">
+                Diğer Konular
+              </h2>
+              <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest">
+                {asiliKonular.length} başlık
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
+              {asiliKonular.map((topic) => (
+                <Link
+                  key={topic.slug}
+                  href={`/topics/${slug}/${topic.slug}`}
+                  className={`group flex items-center gap-3 p-3 bg-white border border-slate-100 rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] ${specialty.color}`}
+                >
+                  <span className="text-[10px] font-black text-slate-300 group-hover:text-slate-400 transition-colors italic shrink-0 w-6 text-center">
+                    •
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">
+                      {topic.title}
+                    </h3>
+                  </div>
+                  <svg className={`w-4 h-4 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${specialty.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              ))}
+            </div>
           </div>
         )}
 
