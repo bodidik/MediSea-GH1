@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import InlineTopicEditor from "@/components/topics/InlineTopicEditor";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { getSpecialty } from "@/app/lib/specialties";
+import ilgiliIndex from "@/content/ilgili-index.json";
 
 export const dynamic = "force-dynamic";
 
@@ -141,6 +142,14 @@ export default async function TopicDetailPage({
   const leafChildren = childrenWithDepth.filter(c => !c.hasOwnChildren);
 
   const bransAdi = getSpecialty(slug)?.title || slug;
+
+  // İlgili konular: etiket akrabalığından önceden üretiliyor
+  // (scripts/ilgili-index.cjs). Ebeveyn ve çocuklar dizinde zaten elenmiş
+  // olduğu için burada tekrar bağlantı çıkmaz.
+  const ilgililer =
+    (ilgiliIndex as Record<string, { brans: string; slug: string; baslik: string }[]>)[
+      `${slug}/${topicSlug}`
+    ] ?? [];
 
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans">
@@ -314,6 +323,37 @@ export default async function TopicDetailPage({
                     ))}
                   </ul>
 
+                </div>
+              )}
+
+              {/* İlgili Konular — etiket akrabalığından, branş sınırı gözetmeden */}
+              {ilgililer.length > 0 && (
+                <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
+                  <h3 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                    İlgili Konular
+                  </h3>
+
+                  <ul className="space-y-4">
+                    {ilgililer.map((k) => (
+                      <li key={`${k.brans}/${k.slug}`}>
+                        <Link
+                          href={`/topics/${k.brans}/${k.slug}`}
+                          className="group flex items-start gap-3 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
+                        >
+                          <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">→</span>
+                          <span className="leading-tight">
+                            {k.baslik}
+                            {k.brans !== slug && (
+                              <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-0.5">
+                                {getSpecialty(k.brans)?.title || k.brans}
+                              </span>
+                            )}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
 
