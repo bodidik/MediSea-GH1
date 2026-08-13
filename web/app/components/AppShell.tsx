@@ -97,7 +97,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 Var olmayan bir hukuk metnine bağlantı vermek, bağlantı
                 vermemekten kötü. Ödeme alınmadan ÖNCE yazılmaları gerekiyor
                 (KVKK aydınlatma yükümlülüğü) — o zaman buraya geri konacaklar. */}
-            <div className="text-blue-500/50 hidden md:block border-l border-blue-900 pl-4 ml-4">
+            {/* Koyu zeminde blue-500 yalnızca 4.00 kontrast veriyor — opaklığı
+                artırmak yetmiyor, rengin kendisi yeterince açık değil.
+                blue-300 eşiği geçiyor. */}
+            <div className="text-blue-300 hidden md:block border-l border-blue-900 pl-4 ml-4">
               Sürüm 2.0.1
             </div>
           </div>

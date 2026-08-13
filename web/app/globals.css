@@ -250,3 +250,40 @@ mark.ms-hl-u {
     line-height: 1.65;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   İKİNCİL METİN RENKLERİ — OKUNABİLİRLİK
+
+   Ölçüm: ikincil etiketler `text-slate-400` (kontrast 2.34) ve
+   `text-slate-300` (1.48) ile basılıyordu. WCAG AA küçük metin için 4.5,
+   büyük metin için 3.0 istiyor — yani ikisi de sınıfın epey altındaydı.
+
+   Bunlar dekoratif değil BİLGİ taşıyan yazılar: branş kartlarındaki konu
+   sayıları ("116 konu"), kırıntı yolu, "4 alt başlık" sayaçları. Üstelik
+   çoğu 9-10px boyutunda. Hekimler bu siteyi nöbette, kötü aydınlatmada,
+   yorgun gözle okuyor.
+
+   Kullanımların 798'ini tek tek düzenlemek yerine renkler burada bir
+   basamak koyulaştırılıyor. Bunun güvenli olduğu ÖLÇÜLDÜ: ana sayfa,
+   branş sayfası ve üyelik sayfasında bu iki renk yalnızca açık zeminlerde
+   kullanılıyor (koyu zeminde sıfır kullanım — koyu bölümler mavi tonları
+   tercih ediyor). Dolayısıyla koyulaştırmak hiçbir yerde kontrastı
+   düşürmüyor.
+
+   Hiyerarşi korunuyor: slate-300 hâlâ slate-400'den açık, ikisi de gövde
+   metninden açık.
+   ───────────────────────────────────────────────────────────────────── */
+.text-slate-400 {
+  color: rgb(71 85 105);   /* slate-600 — kontrast ~7.5 */
+}
+.text-slate-300 {
+  color: rgb(100 116 139); /* slate-500 — kontrast ~4.4 */
+}
+
+/* slate-500 gövde altı metinlerde 4.35'te kalıyordu — eşiğin (4.5) hemen
+   altı, yani "neredeyse geçiyor". Branş açıklamaları gibi gerçek bilgi
+   taşıyan yazılar bu renkte. Aynı ölçüm burada da yapıldı: koyu zeminde
+   hiç kullanılmıyor (25 kullanımın tamamı açık zeminde). */
+.text-slate-500 {
+  color: rgb(71 85 105);   /* slate-600 */
+}
