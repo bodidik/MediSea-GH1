@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "mMRC Dispne — Modifiye Medical Research Council dispne",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "mMRC Dispne",
+          aciklama: "mMRC Dispne: Modifiye Medical Research Council dispne ölçeği — Grade 0–4. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mmrc",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "mMRC Dispne", yol: "/tools/mmrc" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

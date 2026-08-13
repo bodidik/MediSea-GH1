@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "mRSS — Modifiye Rodnan Deri Skoru",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "mRSS",
+          aciklama: "mRSS: Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mrss",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "mRSS", yol: "/tools/mrss" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

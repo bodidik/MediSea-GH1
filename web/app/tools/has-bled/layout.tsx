@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "HAS-BLED Skoru — Antikoagülasyon kanama riski",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "HAS-BLED Skoru",
+          aciklama: "HAS-BLED Skoru: Antikoagülasyon kanama riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/has-bled",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "HAS-BLED Skoru", yol: "/tools/has-bled" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

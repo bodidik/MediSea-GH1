@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Kanada BT Kural — Minör kafa travmasında BT endikasyonu",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Kanada BT Kural",
+          aciklama: "Kanada BT Kural: Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/canadian-ct",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Kanada BT Kural", yol: "/tools/canadian-ct" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

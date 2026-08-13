@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "GRACE 2.0 Skoru — AKS/NSTEMI hastane içi mortalite riski",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "GRACE 2.0 Skoru",
+          aciklama: "GRACE 2.0 Skoru: AKS/NSTEMI hastane içi mortalite riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/grace",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "GRACE 2.0 Skoru", yol: "/tools/grace" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Serum Osmolal Gap — Ölçülen − hesaplanan osmolalite",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Serum Osmolal Gap",
+          aciklama: "Serum Osmolal Gap: Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/osmolal-gap",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Serum Osmolal Gap", yol: "/tools/osmolal-gap" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "ACTH Stimülasyon Testi — 250 μg / 1 μg protokol",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "ACTH Stimülasyon Testi",
+          aciklama: "ACTH Stimülasyon Testi: 250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/acth-stim",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "ACTH Stimülasyon Testi", yol: "/tools/acth-stim" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

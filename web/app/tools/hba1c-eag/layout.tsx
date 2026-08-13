@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "HbA1c → Ortalama Glukoz — Tahmini ortalama glukoz",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "HbA1c → Ortalama Glukoz",
+          aciklama: "HbA1c → Ortalama Glukoz: Tahmini ortalama glukoz (ADA/NGSP). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/hba1c-eag",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "HbA1c → Ortalama Glukoz", yol: "/tools/hba1c-eag" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "CAM-ICU — YBÜ deliryum taraması",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "CAM-ICU",
+          aciklama: "CAM-ICU: YBÜ deliryum taraması — 4 özellik, PADIS kılavuzu önerisi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/cam-icu",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "CAM-ICU", yol: "/tools/cam-icu" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

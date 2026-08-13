@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "FINDRISC — Tip 2 diyabet 10 yıllık risk taraması",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "FINDRISC",
+          aciklama: "FINDRISC: Tip 2 diyabet 10 yıllık risk taraması. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/findrisc",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "FINDRISC", yol: "/tools/findrisc" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

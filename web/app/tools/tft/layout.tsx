@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Tiroid Fonksiyon Testi (TFT) — TSH / FT4 / FT3 patern",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Tiroid Fonksiyon Testi (TFT)",
+          aciklama: "Tiroid Fonksiyon Testi (TFT): TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/tft",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Tiroid Fonksiyon Testi (TFT)", yol: "/tools/tft" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

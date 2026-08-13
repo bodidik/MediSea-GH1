@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "MNA® (Kısa Form) — Geriatrik popülasyon nütrisyonel",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "MNA® (Kısa Form)",
+          aciklama: "MNA® (Kısa Form): Geriatrik popülasyon nütrisyonel değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mna",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "MNA® (Kısa Form)", yol: "/tools/mna" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

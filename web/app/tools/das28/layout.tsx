@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "DAS28 (ESR/CRP) — Romatoid artrit hastalık aktivite",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "DAS28 (ESR/CRP)",
+          aciklama: "DAS28 (ESR/CRP): Romatoid artrit hastalık aktivite skoru. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/das28",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "DAS28 (ESR/CRP)", yol: "/tools/das28" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

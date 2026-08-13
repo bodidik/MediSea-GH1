@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Kt/V — Daugirdas II — Hemodiyaliz yeterliliği · spKt/V",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Kt/V — Daugirdas II",
+          aciklama: "Kt/V — Daugirdas II: Hemodiyaliz yeterliliği · spKt/V · eKt/V · URR. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ktv",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Kt/V — Daugirdas II", yol: "/tools/ktv" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

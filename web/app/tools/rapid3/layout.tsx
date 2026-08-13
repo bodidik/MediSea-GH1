@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "RAPID3 — Rutin Değerlendirme 3 Hasta Ölçütü",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "RAPID3",
+          aciklama: "RAPID3: Rutin Değerlendirme 3 Hasta Ölçütü — HAQ-DI + ağrı + global. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/rapid3",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "RAPID3", yol: "/tools/rapid3" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Düzeltilmiş Kalsiyum — Albumin'e göre Ca+2 hesaplama",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Düzeltilmiş Kalsiyum",
+          aciklama: "Düzeltilmiş Kalsiyum: Albumin'e göre Ca+2 hesaplama. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/corrected-calcium",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Düzeltilmiş Kalsiyum", yol: "/tools/corrected-calcium" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

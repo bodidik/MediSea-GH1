@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Glasgow-Blatchford Skoru",
+          aciklama: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/glasgow-blatchford",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Glasgow-Blatchford Skoru", yol: "/tools/glasgow-blatchford" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

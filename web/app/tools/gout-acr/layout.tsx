@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Gut ACR 2015 — ACR/EULAR gut hastalığı sınıflama",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Gut ACR 2015",
+          aciklama: "Gut ACR 2015: ACR/EULAR gut hastalığı sınıflama kriterleri — MSU + domain skoru. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/gout-acr",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Gut ACR 2015", yol: "/tools/gout-acr" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

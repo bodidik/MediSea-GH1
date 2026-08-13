@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Charlson Komorbidite İndeksi",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Charlson Komorbidite İndeksi",
+          aciklama: "Charlson Komorbidite İndeksi: CCI — 10 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/charlson",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Charlson Komorbidite İndeksi", yol: "/tools/charlson" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Berlin ARDS Kriterleri — ARDS tanı ve şiddet sınıflaması",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Berlin ARDS Kriterleri",
+          aciklama: "Berlin ARDS Kriterleri: ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/berlin-ards",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Berlin ARDS Kriterleri", yol: "/tools/berlin-ards" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

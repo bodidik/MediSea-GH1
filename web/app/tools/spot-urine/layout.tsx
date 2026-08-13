@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Spot İdrar Hesaplamaları — PCR · ACR · FENa · FEÜre",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Spot İdrar Hesaplamaları",
+          aciklama: "Spot İdrar Hesaplamaları: PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/spot-urine",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Spot İdrar Hesaplamaları", yol: "/tools/spot-urine" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

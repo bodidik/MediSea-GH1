@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Palliative Performance Scale",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Palliative Performance Scale",
+          aciklama: "Palliative Performance Scale: PPS v2 — palyatif bakımda 5 domain fonksiyonel durum. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/pps",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Palliative Performance Scale", yol: "/tools/pps" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

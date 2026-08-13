@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "MUST — Malnutrition Universal Screening Tool",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "MUST",
+          aciklama: "MUST: Malnutrition Universal Screening Tool — toplum & poliklinik. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/must",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "MUST", yol: "/tools/must" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

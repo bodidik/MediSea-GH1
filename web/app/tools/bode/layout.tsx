@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "BODE İndeksi — KOAH 4 yıllık mortalite tahmini",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "BODE İndeksi",
+          aciklama: "BODE İndeksi: KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/bode",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "BODE İndeksi", yol: "/tools/bode" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

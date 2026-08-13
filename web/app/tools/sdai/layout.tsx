@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "SDAI — Basitleştirilmiş Hastalık Aktivite İndeksi",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "SDAI",
+          aciklama: "SDAI: Basitleştirilmiş Hastalık Aktivite İndeksi — RA + CRP. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/sdai",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "SDAI", yol: "/tools/sdai" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

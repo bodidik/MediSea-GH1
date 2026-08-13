@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "ECOG Performans Durumu — Fonksiyonel kapasite / tedavi",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "ECOG Performans Durumu",
+          aciklama: "ECOG Performans Durumu: Fonksiyonel kapasite / tedavi uygunluğu. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ecog",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "ECOG Performans Durumu", yol: "/tools/ecog" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

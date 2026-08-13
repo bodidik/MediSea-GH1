@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "CURB-65 Skoru",
+          aciklama: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/curb65",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "CURB-65 Skoru", yol: "/tools/curb65" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

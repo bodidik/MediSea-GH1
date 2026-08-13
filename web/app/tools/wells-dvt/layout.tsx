@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Wells Skoru (DVT) — Derin ven trombozu klinik olasılığı",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Wells Skoru (DVT)",
+          aciklama: "Wells Skoru (DVT): Derin ven trombozu klinik olasılığı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/wells-dvt",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Wells Skoru (DVT)", yol: "/tools/wells-dvt" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

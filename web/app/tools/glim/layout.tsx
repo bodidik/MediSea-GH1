@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "GLIM Kriterleri — Küresel malnütrisyon tanı protokolü",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "GLIM Kriterleri",
+          aciklama: "GLIM Kriterleri: Küresel malnütrisyon tanı protokolü. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/glim",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "GLIM Kriterleri", yol: "/tools/glim" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

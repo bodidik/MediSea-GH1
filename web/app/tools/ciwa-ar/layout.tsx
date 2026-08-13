@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "CIWA-Ar — Alkol yoksunluğu şiddeti",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "CIWA-Ar",
+          aciklama: "CIWA-Ar: Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ciwa-ar",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "CIWA-Ar", yol: "/tools/ciwa-ar" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

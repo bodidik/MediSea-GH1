@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Refeeding Sendromu Riski — NICE kriterleri",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "Refeeding Sendromu Riski",
+          aciklama: "Refeeding Sendromu Riski: NICE kriterleri — beslenme başlatmada hipofosfatemi riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/refeeding-risk",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "Refeeding Sendromu Riski", yol: "/tools/refeeding-risk" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }

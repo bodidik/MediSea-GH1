@@ -3,6 +3,7 @@
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "GDS-15 — Geriatrik Depresyon Ölçeği kısa form",
@@ -17,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AracDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd
+        veri={aracSemasi({
+          ad: "GDS-15",
+          aciklama: "GDS-15: Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/gds-15",
+        })}
+      />
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Klinik Araçlar", yol: "/tools" },
+          { ad: "GDS-15", yol: "/tools/gds-15" },
+        ])}
+      />
+      {children}
+    </>
+  );
 }
