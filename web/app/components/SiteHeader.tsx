@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
 
 // Arama sonucu tipi
@@ -15,7 +16,15 @@ type SearchResult = {
 
 export default function SiteHeader() {
   const router = useRouter();
-  
+  const { data: session, status } = useSession();
+  // "loading" sırasında hiçbir şey basılmıyor: giriş yapmış kullanıcıya önce
+  // "Giriş / Üye Ol" gösterip sonra adıyla değiştirmek, oturumun açık
+  // olmadığı izlenimini veren bir titreme yaratıyor.
+  const oturumHazir = status !== 'loading';
+  const girisli = status === 'authenticated';
+  const kullaniciAdi = (session?.user?.name || session?.user?.email || '').split(' ')[0];
+  const plan = (session?.user as { plan?: string } | undefined)?.plan;
+
   // Branşlar Listesi
   const branches = [
     { name: "Romatoloji", slug: "romatoloji" },
@@ -223,13 +232,42 @@ export default function SiteHeader() {
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
         <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
-          <Link href="/giris" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
-            Giriş
-          </Link>
-          <Link href="/kayit" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
-            <span>Üye Ol</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
-          </Link>
+          {oturumHazir && !girisli && (
+            <>
+              <Link href="/giris" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
+                Giriş
+              </Link>
+              <Link href="/kayit" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
+                <span>Üye Ol</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
+              </Link>
+            </>
+          )}
+
+          {oturumHazir && girisli && (
+            <>
+              <Link
+                href="/profile"
+                className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-1.5 pr-3 hover:border-blue-300 hover:bg-white transition-all max-w-[10rem] sm:max-w-none"
+              >
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-950 text-xs font-black uppercase text-white">
+                  {kullaniciAdi.charAt(0) || '?'}
+                </span>
+                <span className="truncate text-sm font-bold text-blue-950">{kullaniciAdi}</span>
+                {plan === 'premium' && (
+                  <span className="hidden sm:block rounded-full bg-amber-400 px-2 py-0.5 text-[9px] font-black uppercase tracking-widest text-blue-950">
+                    Premium
+                  </span>
+                )}
+              </Link>
+              <button
+                onClick={() => signOut({ callbackUrl: '/' })}
+                className="hidden md:block text-sm font-bold text-slate-500 hover:text-blue-700 transition-colors whitespace-nowrap"
+              >
+                Çıkış
+              </button>
+            </>
+          )}
 
           {/* HAMBURGER (branşlar / araçlar / premium - 2xl altında) */}
           <button
@@ -294,15 +332,24 @@ export default function SiteHeader() {
               </Link>
             </div>
 
-            {/* Giriş (md altı - sağdaki link gizliyken) */}
+            {/* Giriş / Çıkış (md altı - sağdaki link gizliyken) */}
             <div className="md:hidden pt-1">
-              <Link
-                href="/giris"
-                onClick={() => setMenuOpen(false)}
-                className="block text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
-              >
-                Giriş Yap
-              </Link>
+              {girisli ? (
+                <button
+                  onClick={() => { setMenuOpen(false); signOut({ callbackUrl: '/' }); }}
+                  className="block w-full text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
+                >
+                  Çıkış Yap
+                </button>
+              ) : (
+                <Link
+                  href="/giris"
+                  onClick={() => setMenuOpen(false)}
+                  className="block text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
+                >
+                  Giriş Yap
+                </Link>
+              )}
             </div>
 
           </div>
