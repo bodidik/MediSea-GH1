@@ -50,6 +50,13 @@ jobs:
         - name: İçerik bağlantı denetimi
           run: node scripts/link-denetim.cjs
 
+        # Sınav hazırlık ürününde bozuk bir soru arayüz hatası değil, YANLIŞ
+        # BİLGİdir: doğru cevabı olmayan ya da var olmayan bir şıkkı işaret
+        # eden soru, kullanıcıya konuyu yanlış öğretir. Bu da veride durduğu
+        # için diğer kapılara takılmıyor.
+        - name: Soru ve kart yapı denetimi
+          run: node scripts/soru-denetim.cjs
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}

@@ -186,6 +186,23 @@ node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağ
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
 
+### İçerik denetimleri (CI'da da çalışıyor)
+
+```bash
+node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar
+node scripts/soru-denetim.cjs    # quiz ve kart dosyalarının yapısı
+```
+
+Bu iki hata sınıfı **kodda değil veride** durduğu için `lint`, `typecheck` ve
+`build` üçünün de gözünden kaçıyor. Yeniden adlandırılan bir konu, bağlantıyı
+sessizce kırar; doğru cevabı olmayan bir soru, kullanıcıya konuyu yanlış
+öğretir. İkisi de CI adımı — kusur bulurlarsa iş düşer.
+
+`link-denetim` yönlendirmeleri biliyor: `next.config.js` içindeki bir
+`redirects` kaydı varsa o adres kırık sayılmaz. Düzeltmenin iki yolu var —
+hedef yeniden adlandırılmışsa yönlendirme ekle, hedef gerçekten yoksa
+içerikteki bağlantıyı kaldır.
+
 `ilgili-index.cjs` akrabalığı ortak etiket SAYISINDAN değil NADİRLİĞİNDEN
 çıkarır. Klinik niteleyiciler (`akut`, `acil`, `tanı`, `tedavi`…) bilerek
 elenir: elenmeden önce "Akut Koroner Sendromlar" ile "Safra Kesesi
