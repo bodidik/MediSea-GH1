@@ -1,0 +1,98 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { SPECIALTIES } from "@/app/lib/specialties";
+
+/**
+ * Özel 404.
+ *
+ * Öncesinde Next'in varsayılan ekranı çıkıyordu: İngilizce, markasız ve
+ * çıkışsız. Türkçe bir tıp kaynağında bu hem yabancı duruyor hem de
+ * ziyaretçiyi kaybediyor — gidecek yer göstermeyen bir hata sayfası, sekmeyi
+ * kapatma davetidir.
+ *
+ * Bu sayfa bir çıkış listesi sunuyor: kütüphane, araçlar ve branşlar.
+ * Arama motorundan gelen ziyaretçi yanlış adrese düşse bile sitede kalabilir.
+ *
+ * noindex: hata sayfasının dizine girmesi anlamsız.
+ */
+export const metadata: Metadata = {
+  title: "Sayfa bulunamadı",
+  robots: { index: false, follow: true },
+};
+
+export default function BulunamadiSayfasi() {
+  return (
+    <div className="min-h-screen bg-slate-50 text-blue-950 font-sans px-4 py-16">
+      <div className="max-w-3xl mx-auto">
+
+        <div className="border-l-8 border-blue-900 pl-6 py-2 mb-10">
+          <div className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em] mb-2">
+            404 · Sayfa bulunamadı
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-black uppercase italic tracking-tighter leading-none">
+            Aradığın sayfa burada değil
+          </h1>
+          <p className="text-slate-500 font-bold text-sm mt-4 max-w-xl leading-relaxed">
+            Adres değişmiş ya da sayfa hiç var olmamış olabilir. Aşağıdan
+            devam edebilirsin.
+          </p>
+        </div>
+
+        {/* Ana çıkışlar */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
+          <Link
+            href="/topics"
+            className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
+          >
+            <div className="text-2xl mb-2">📚</div>
+            <div className="text-sm font-black text-blue-950 uppercase italic">Kütüphane</div>
+            <div className="text-[11px] text-slate-500 font-medium mt-1">
+              Branşlara göre konu anlatımları
+            </div>
+          </Link>
+
+          <Link
+            href="/tools"
+            className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
+          >
+            <div className="text-2xl mb-2">🧮</div>
+            <div className="text-sm font-black text-blue-950 uppercase italic">Klinik Araçlar</div>
+            <div className="text-[11px] text-slate-500 font-medium mt-1">
+              Hesaplayıcılar ve skorlar
+            </div>
+          </Link>
+
+          <Link
+            href="/"
+            className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
+          >
+            <div className="text-2xl mb-2">⚓</div>
+            <div className="text-sm font-black text-blue-950 uppercase italic">Ana Sayfa</div>
+            <div className="text-[11px] text-slate-500 font-medium mt-1">
+              Baştan başla
+            </div>
+          </Link>
+        </div>
+
+        {/* Branşlar — doğrudan bir yere düşmek isteyen için */}
+        <div className="bg-white rounded-[2rem] border border-slate-200 p-6 sm:p-8">
+          <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em] mb-4">
+            Branşlar
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {SPECIALTIES.map((b) => (
+              <Link
+                key={b.slug}
+                href={`/topics/${b.slug}`}
+                className="px-4 py-2 rounded-full bg-slate-50 border border-slate-200 text-[11px] font-black uppercase tracking-widest text-blue-900 hover:border-blue-900/30 hover:bg-white transition-all"
+              >
+                {b.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
