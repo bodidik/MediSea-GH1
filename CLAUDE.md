@@ -407,6 +407,21 @@ varsayım üretir.*
 Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
 yanıt, veriyi gerçek sanan birini yanıltır mı?
 
+### Mobil ölçümü TEK genişlikte yapma
+
+Bu oturumdaki taşma ölçümlerinin hepsi 375px'te yapıldı ve "mobil taşma yok"
+diye raporlandı. 375 tek başına yeterli değil: 320px hâlâ yaygın (iPhone SE
+ve benzerleri) ve dar ekranda sıkışan bir düzen orada kırılır.
+
+Ölçüldü — 12 açık sayfa ve premium gövde 320px'te de temiz: sayfa
+`scrollWidth` 320, gövde düzeyinde taşma yok. Tablolar 4 kolonda 454-459px
+genişliğe çıkıyor ama 288px'lik kutularında **kayıyor, kırpılmıyor**
+(`overflowX: auto` + kolon başına en az 110px).
+
+Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak. Ölçütler:
+`documentElement.scrollWidth` viewport'a eşit olmalı; taşan bir öge varsa
+kaydırılabilir bir atası olmalı.
+
 ### Hata ve boş durumların metni de üründür
 
 Bu oturumda aynı kusur sınıfı iki ayrı yüzeyde çıktı ve ikisi de ücretli
