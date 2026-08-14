@@ -407,6 +407,34 @@ varsayım üretir.*
 Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
 yanıt, veriyi gerçek sanan birini yanıltır mı?
 
+### Yetki kontrolü tek yerde: `lib/yonetici.ts`
+
+`session?.user?.email === process.env.ADMIN_EMAIL` karşılaştırması beş ayrı
+uçta elle tekrarlanıyordu. Tekrarlanan bir güvenlik kontrolü bir yerde
+unutulduğunda sessizce açık bırakır — nitekim `/api/topics` ve
+`/api/topics/[slug]` PUT uçlarında unutulmuştu. İkisi de
+`content/canonical/<branş>/<konu>.json` dosyasına DOĞRUDAN yazıyor ve
+yetkisiz bir istek gerçek bir konuyu gerçekten değiştirebiliyordu.
+
+Yazma yapan yeni bir uç eklerken `yoneticiMi()` kullan. Yardımcı,
+`ADMIN_EMAIL` tanımlı değilse herkesi reddeder: yapılandırma eksikliği
+kapıyı açmamalı.
+
+**Güvenlik kontrolü eklerken önce KAYNAKTA olduğunu doğrula.** Bu değişiklik
+betikle yapıldığında `import` satırı girdi ama gövdedeki çağrı eşleşmedi ve
+sessizce atlandı; kusur ancak negatif kontrolde ortaya çıktı — ve o kontrol
+gerçek bir içerik dosyasını değiştirdi (`git checkout` ile geri alındı).
+Sıra şu olmalı: düzenle → `grep` ile çağrının yerinde olduğunu gör →
+derlemenin yenilendiğinden emin ol → sonra dene.
+
+### `/api/_*` uçları ULAŞILAMAZ
+
+Next'te alt çizgiyle başlayan klasörler rotaya alınmıyor; `app/api/_admin`,
+`app/api/_content`, `app/api/_plan`, `app/api/_progress`, `app/api/_questions`
+altındaki 14 route dosyası canlıda **404**. Kaynağa bakınca
+"`/api/_plan/set` yetkisiz plan değiştiriyor" sanılıyor — öyle bir uç yok.
+Yetki denetimi yaparken kaynağa değil DAVRANIŞA bak.
+
 ### `:lang` kalıbı `api`yi de yakalar
 
 `next.config.js`'teki dil yönlendirmesi `/:lang(...)/premium/:yol*`
