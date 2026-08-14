@@ -582,7 +582,13 @@ export default function NotePanel() {
                 <div className="text-[11px] font-black uppercase tracking-widest text-blue-950">
                   Not Defteri
                 </div>
+                {/* role="status": "Kaydediliyor…" → "Kaydedildi" → "⚠ Kaydedilemedi"
+                    geçişleri duyurulsun. Depo dolduğunda not KAYBOLUYOR; bunu
+                    göremeyen kullanıcının da öğrenmesi gerekiyor. Ayrıntı kutusu
+                    ayrıca canlı bölge YAPILMADI — aynı olayı iki kez duyurmak
+                    gürültü olur, bu satır zaten hatayı söylüyor. */}
                 <div
+                  role="status"
                   className={`truncate text-[9px] font-bold uppercase tracking-widest ${
                     kayitHatasi ? "text-rose-600" : "text-slate-400"
                   }`}

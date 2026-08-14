@@ -41,9 +41,20 @@ export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
   const girisli = status === "authenticated";
   const g = METIN[girisli ? durum : "kapali"];
 
+  /**
+   * role="status": durum değişimi ekran okuyucuya DUYURULMALI.
+   *
+   * Bu bileşenin varlık sebebi zaten dürüstlük — "Kaydedildi" yazıp
+   * kaydetmemek kaydetmemekten beterdir. Ama duyurulmayan bir durum
+   * göstergesi, göremeyen kullanıcı için hiç yok demek: "Kaydediliyor…"dan
+   * "Kaydedilemedi"ye geçişi fark etmiyordu.
+   *
+   * Kapsayıcı her zaman basılıyor, yalnızca içindeki metin değişiyor —
+   * canlı bölgenin değişimden ÖNCE DOM'da bulunması gerekiyor.
+   */
   if (!genis) {
     return (
-      <span className={`inline-flex items-center gap-1.5 text-[11px] font-bold ${g.renk}`}>
+      <span role="status" className={`inline-flex items-center gap-1.5 text-[11px] font-bold ${g.renk}`}>
         <span className={`w-1.5 h-1.5 rounded-full ${g.nokta}`} />
         {g.yazi}
       </span>
@@ -52,7 +63,7 @@ export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 flex flex-wrap items-center gap-x-3 gap-y-1.5">
-      <span className={`inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest ${g.renk}`}>
+      <span role="status" className={`inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest ${g.renk}`}>
         <span className={`w-2 h-2 rounded-full ${g.nokta}`} />
         {g.yazi}
       </span>

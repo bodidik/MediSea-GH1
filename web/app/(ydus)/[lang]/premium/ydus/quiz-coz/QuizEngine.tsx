@@ -214,6 +214,23 @@ function SoruKarti({
           ))}
         </div>
 
+        {/*
+          Sonucun SÖZLÜ karşılığı.
+          Görsel sonuç kartı ✅/❌ ile anlatıyor; ekran okuyucu için sessizdi —
+          cevap verildikten sonra doğru mu yanlış mı olduğu hiç duyurulmuyordu.
+          Bu bölge koşulsuz basılıyor ve boş başlıyor: canlı bölgenin içerik
+          değişmeden ÖNCE DOM'da bulunması gerekiyor, sonradan eklenen bölgenin
+          ilk mesajı kaçabiliyor. Görsel olarak gizli (sr-only), çünkü aynı
+          bilgi zaten gözle görülüyor; iki kez YAZMAK gereksiz tekrar olurdu.
+        */}
+        <div role="status" className="sr-only">
+          {cevapVerildi
+            ? dogruMu
+              ? 'Doğru cevap.'
+              : `Yanlış. Doğru cevap ${soru.dogru}.`
+            : ''}
+        </div>
+
         {/* SONUÇ + AÇIKLAMA */}
         {cevapVerildi && (
           <div style={{

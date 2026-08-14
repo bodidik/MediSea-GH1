@@ -223,9 +223,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
             onChange={dosyaSecildi}
             className="hidden"
           />
-          {durum && (
-            <span className="text-[11px] font-semibold text-emerald-600">{durum}</span>
-          )}
+          {/* Koşullu basılmıyor: canlı bölge, içerik değişmeden ÖNCE DOM'da
+              bulunmalı — sonradan eklenen bir bölgenin ilk mesajı kaçabiliyor.
+              Boşken görünmez, yer kaplamıyor. */}
+          <span role="status" className="text-[11px] font-semibold text-emerald-600">
+            {durum ?? ""}
+          </span>
         </div>
       )}
 

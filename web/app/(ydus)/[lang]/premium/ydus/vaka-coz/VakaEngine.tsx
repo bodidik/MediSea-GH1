@@ -154,6 +154,17 @@ function AdimKarti({
         ))}
       </div>
 
+      {/* Sonucun sözlü karşılığı — gerekçesi QuizEngine'dekiyle aynı:
+          ✅/❌ yalnızca gözle görülüyordu. Koşulsuz basılıyor ki canlı bölge
+          içerik değişmeden önce DOM'da bulunsun. */}
+      <div role="status" className="sr-only">
+        {cevapVerildi
+          ? dogruMu
+            ? 'Doğru cevap.'
+            : `Yanlış. Doğru cevap ${adim.dogru}.`
+          : ''}
+      </div>
+
       {/* CEVAP VERİLDİ → AÇIKLAMA */}
       {cevapVerildi && (
         <div style={{
