@@ -133,7 +133,51 @@ node web/scripts/yetim-denetim.cjs
 
 ---
 
-## 7. Küçük not: premium hesap
+## 7. Arama sonucundaki başlıklar — iki karar
+
+411 konu sayfasının Google'da nasıl göründüğünü ölçtüm. Açıklamalar iyi
+durumda (boş olan yok, 11 sayfanın taslak uyarısını açıklama diye
+göstermesi düzeltildi). Başlıklarda ise senin kararını gerektiren iki şey
+var — başlık konunun kimliği olduğu için dokunmadım.
+
+**a) 14 başlıkta "Ch NN:" kitap bölüm numarası var.**
+
+Arama sonucunda şöyle görünüyorlar:
+
+```
+Ch 84: Meme Kanseri-PH · MediSea
+Ch 328: Nütrisyonel Destek Tedavisi · MediSea
+```
+
+Numara Harrison bölüm sırası ve içeri aktarımdan kalmış görünüyor; tıbbi
+bir anlam taşımıyor ama arama sonucundaki ilk izlenimi belirliyor. Sekizi
+ayrıca `-PH` ekiyle bitiyor — ne anlama geldiğini bilmediğim için ona hiç
+dokunmadım.
+
+Tam liste: `klinik-nutrisyon` altında 5, `onkoloji` altında 9 konu.
+Başlıklardan bu öneki kaldırmamı istersen söyle; başlık 6'dan fazla yüzeyde
+okunduğu için (sayfa, paylaşım kartı, ilgili konular, kütüphane, arama,
+çalışma alanı) hepsini birlikte güncellemek gerekiyor — yarısını
+düzeltmek tutarsızlık üretir.
+
+**b) 169 başlık arama sonucunda kesiliyor.**
+
+Google başlığı ~60 karakterde kesiyor; site şablonu " · MediSea" olarak 10
+karakter ekliyor. 411 başlığın 169'u bu sınırı aşıyor, yani okuyucu
+başlığın sonunu göremiyor. En uzunu 97 karakter:
+
+```
+Ektopik ACTH Sendromu: Etiyopatogenez, Hücresel Tanı Kriterleri ve …
+```
+
+Bu, içeriğin kendi başlığı olduğu için tamamen senin alanın. Kısaltmak
+istersen ölçütü basitçe şöyle koyabilirsin: iki nokta üst üsteden sonraki
+kısım genellikle alt başlık; onu içerik gövdesine taşımak başlığı 60'ın
+altına indiriyor.
+
+---
+
+## 8. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:

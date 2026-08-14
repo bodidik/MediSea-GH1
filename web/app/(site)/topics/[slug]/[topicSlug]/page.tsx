@@ -70,12 +70,33 @@ function konuOku(slug: string, topicSlug: string): any | null {
 }
 
 /** HTML'i düz metne indirger; arama sonucunda görünecek özet buradan çıkıyor. */
+/**
+ * Arama sonucunda görünecek özeti çıkarır.
+ *
+ * Uyarı/künye bölümleri ATLANIR. Ölçüldü: 11 konu sayfası arama sonucunda
+ * birebir aynı açıklamayı gösteriyordu ve o açıklama konuyu değil, sayfanın
+ * taslak olduğunu anlatan uyarıyı içeriyordu ("⚠️ Klinik Uyarı: Bu modül…").
+ * Yani o sayfalar Google'da kendilerini tıbbi konuyla değil, taslak
+ * uyarısıyla tanıtıyordu — hem birbirinin kopyası hem de yanlış vaat.
+ *
+ * Bölümün KENDİSİNE dokunulmuyor; sayfada olduğu gibi duruyor. Yalnızca
+ * özet üretiminden çıkarılıyor.
+ */
+function uyariBolumuMu(bolum: any): boolean {
+  const baslik = String(bolum?.heading ?? bolum?.title ?? "");
+  // 🤖 ile başlayan bölümler taslak künyesi; ⚠️ olanlar klinik uyarı kartı.
+  return /^\s*(🤖|⚠️|⚠)/u.test(baslik);
+}
+
 function ozetCikar(veri: any, sinir = 155): string {
   const hazir = veri?.summary || veri?.meta?.summary;
   const kaynak =
     hazir ||
     (Array.isArray(veri?.sections)
-      ? veri.sections.map((s: any) => s?.text || s?.html || "").join(" ")
+      ? veri.sections
+          .filter((s: any) => !uyariBolumuMu(s))
+          .map((s: any) => s?.text || s?.html || "")
+          .join(" ")
       : "");
 
   const duz = String(kaynak)
