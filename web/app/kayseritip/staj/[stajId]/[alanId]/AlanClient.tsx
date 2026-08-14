@@ -95,21 +95,21 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
             <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>
               Dosya (PDF, PPTX)
             </label>
-            <input type="file" accept=".pdf,.pptx,.ppt,.doc,.docx"
+            <input type="file" aria-label="Dosya seç (PDF, PPTX)" accept=".pdf,.pptx,.ppt,.doc,.docx"
               onChange={e => setSeciliDosya(e.target.files?.[0] ?? null)}
               required style={{ fontSize: '13px', width: '100%' }} />
           </div>
 
           <div>
             <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Başlık</label>
-            <input value={baslik} onChange={e => setBaslik(e.target.value)} required
+            <input aria-label="Başlık" value={baslik} onChange={e => setBaslik(e.target.value)} required
               placeholder="ör. Kronik Böbrek Hastalığı Slaytı"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>
 
           <div>
             <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Açıklama (isteğe bağlı)</label>
-            <input value={aciklama} onChange={e => setAciklama(e.target.value)}
+            <input aria-label="Açıklama (isteğe bağlı)" value={aciklama} onChange={e => setAciklama(e.target.value)}
               placeholder="Kısa not"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>
