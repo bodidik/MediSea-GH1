@@ -553,9 +553,20 @@ ve benzerleri) ve dar ekranda sıkışan bir düzen orada kırılır.
 genişliğe çıkıyor ama 288px'lik kutularında **kayıyor, kırpılmıyor**
 (`overflowX: auto` + kolon başına en az 110px).
 
-Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak. Ölçütler:
-`documentElement.scrollWidth` viewport'a eşit olmalı; taşan bir öge varsa
-kaydırılabilir bir atası olmalı.
+Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak.
+
+**Taşma ölçütü `scrollWidth` DEĞİL, gerçek kaydırma denemesi olmalı.**
+`resize_window` ile mobil öykünmesi açılan sekmede `window.innerWidth` 400
+dönerken `documentElement.clientWidth` 375 kalıyor; `scrollWidth >
+clientWidth` ölçütü orada 25px'lik SAHTE taşma üretiyor. Doğrusu:
+`scrollTo(9999,0)` çağırıp `scrollX > 0` mı diye bakmak.
+
+Taşan ögeyi ararken üç eleme gerekiyor: `position: fixed` ögeler,
+**kırpan atası olanlar** (`getBoundingClientRect` kırpılmış ögenin de TAM
+geometrisini döndürür — footer'ın `overflow-hidden` içindeki `w-96`
+süslemesi bu yüzden "taşıyor" görünür) ve sözde-ögeler
+(`querySelectorAll` onları hiç görmez; bir sayfada 41px'lik gerçek kayma
+bu yüzden kaynaksız kaldı).
 
 ### Hata ve boş durumların metni de üründür
 
