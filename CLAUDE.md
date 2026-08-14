@@ -561,6 +561,15 @@ dönerken `documentElement.clientWidth` 375 kalıyor; `scrollWidth >
 clientWidth` ölçütü orada 25px'lik SAHTE taşma üretiyor. Doğrusu:
 `scrollTo(9999,0)` çağırıp `scrollX > 0` mı diye bakmak.
 
+**Taşan şey ögenin KUTUSU olmayabilir, İÇERİĞİ olabilir.** Konu başlığı
+36px ve tıbbi terimler uzun; H1'in kutusu 296px (sınır içinde) ama
+`scrollWidth` 353'tü — metin kutudan taşıyor ve belgeyi kaydırıyordu.
+137 konunun 26'sı bu yüzden kayıyordu ve kutu tarayan ölçüm hiçbirini
+görmedi. Ölçüte `scrollWidth > clientWidth` (öge başına) da ekle; kaynağı
+bulmanın en hızlı yolu sayfayı sağa kaydırıp `elementFromPoint` ile en sağ
+uçta ne boyandığına bakmak. Çare `break-words` (başlıklarda `hyphens-auto`
+ile birlikte).
+
 Taşan ögeyi ararken üç eleme gerekiyor: `position: fixed` ögeler,
 **kırpan atası olanlar** (`getBoundingClientRect` kırpılmış ögenin de TAM
 geometrisini döndürür — footer'ın `overflow-hidden` içindeki `w-96`
