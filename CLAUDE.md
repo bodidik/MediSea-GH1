@@ -918,3 +918,25 @@ bir commit gerçek bir kayıp. Korunma yolu:
   aynı olduğunu gör; bu turda kusuru yakalayan tam olarak bu oldu.
 - Paralel bir iş çalışırken onun dokunacağı dosyalara (iş tanımında
   yazılı) el sürme; bu ayrı ve zaten uygulanan bir kural.
+
+### Başlık ögesi kullanmak SERİF ve 24px üst boşluk getirir
+
+`globals.css` başında `h1,h2,h3` için `font-family: var(--font-serif)`,
+`margin-top: 1.5rem`, `margin-bottom: 1rem` tanımlı. Tailwind'in
+`text-sm`/`font-semibold` sınıfları bunları **EZMİYOR** — boyut ve ağırlık
+Tailwind'den, yazı tipi ve boşluk globals'tan geliyor.
+
+Sonuç ölçüldü (canlı, 7 sayfa): **65 başlık** Merriweather ile ve 24px üst
+boşlukla basılıyor, oysa kendi sınıfları `text-xs`, `text-[9px]`,
+`text-[10.5px]` diyor — bunlar arayüz etiketi, okuma başlığı değil.
+`/tools`'ta 18 başlığın 17'si, ana sayfada 17'nin 16'sı böyle. Konu
+detayında 8'in yalnızca 1'i — yani İÇERİK başlıkları bilerek serif,
+arayüz etiketleri değil.
+
+Bir arayüz etiketini `<h2>` yaparken (anlam için doğru olan budur)
+görünümü korumak istiyorsan `font-sans mt-0` ekle. Premium panosundaki
+iki bölüm başlığı bunu yapıyor; eklemeden önce ölçüldüğünde etiketler
+serif'e ve 24px boşluğa kaymıştı.
+
+Genel kuralı değiştirmek 65 başlığın görünümünü aynı anda değiştirir —
+bu bir tasarım kararı, ölçümle tek başına verilmemeli.
