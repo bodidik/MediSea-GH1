@@ -366,6 +366,19 @@ odaklanabilir olmayan bir öğeye atlandığında tarayıcı görünümü kaydı
 Doğrularken gerçek Tab/Enter tuşuna bas — `element.focus()` bu oturumda bir
 kez "odak halkası yok" diye yanlış sonuç verdirdi.
 
+### Dağıtımın indiğini İSTEMCİ tarafı bir işaretle yoklama
+
+`curl | grep` ile "yeni kod indi mi" diye bakarken, aranan şey istemci
+bileşeninde basılıyorsa sunucu HTML'inde HİÇ görünmez ve yoklama sonsuza
+kadar "inmedi" der. Bu oturumda üç kez oldu: not tutamağının `aria-label`'ı,
+`role="status"` bölgeleri, tekrar sayfasının Tailwind sınıfları. Her seferinde
+kod çoktan inmişti.
+
+Yoklamayı **sunucuda basılan** bir işaretle yap — aynı commit'teki bir
+metadata değeri, bir sunucu bileşeni sınıfı, `sitemap.xml` içeriği gibi.
+İşaret bulunamıyorsa doğrudan tarayıcıyla bak; zaten canlı doğrulamanın
+kuralı bu.
+
 ### Global klavye kısayolları odaktaki ögeyi yutmamalı
 
 `window` üzerinde keydown dinleyip `preventDefault()` çağıran her kısayol,
