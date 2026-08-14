@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 import { UserContext } from '@/app/(ydus)/context/UserContext';
 import LiteProtected from '@/components/LiteProtected';
+import { kalinIsle } from '@/app/lib/metin';
 
 const useUser = () => useContext(UserContext) as any;
 
@@ -91,7 +92,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
           {/* ZIRH: Vaka metni LiteProtected Kalkanı içine alındı */}
           <LiteProtected userId={user?.id || "Premium Üye"}>
             <div className="prose prose-sm prose-invert prose-blue max-w-none text-[15px] text-slate-200 leading-relaxed font-medium">
-              <p>{currentStage.content}</p>
+              <p>{kalinIsle(currentStage.content)}</p>
             </div>
           </LiteProtected>
         </div>
@@ -100,7 +101,12 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
         <div className="flex flex-col gap-2.5 mt-auto pt-3 border-t border-slate-800 h-full overflow-y-auto">
           <h3 className="font-bold text-white flex items-start gap-2 text-[15px] leading-snug">
             <span className="text-blue-400">❓</span>
-            {currentStage.question}
+            {/* Sarmalayıcı <span> ŞART: bu h3 bir flex kapsayıcı ve kalın
+                işlemesi metni birden çok düğüme bölüyor. Sarmalanmazsa her
+                parça AYRI flex ögesi olur — aralarına gap-2 girer ve dar
+                ekranda kelime yerine blok olarak sarar. Ölçüldü: soru kökü
+                üç öge, aralarında 8'er px. */}
+            <span>{kalinIsle(currentStage.question)}</span>
           </h3>
           
           <div className="grid gap-1.5">
@@ -133,7 +139,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                       KOYMUYOR ve düğme "AAmpirik Pulse Steroid…" diye
                       okunuyordu. Vaka ve quiz motorlarında harf bir <div>
                       olduğu için orada sorun yok. */}
-                  <span className="font-medium text-[15px]">{' '}{opt.text}</span>
+                  <span className="font-medium text-[15px]">{' '}{kalinIsle(opt.text)}</span>
                 </div>
                 
                 {showResult && opt.id === currentStage.correctAnswer && <span className="absolute right-2.5 top-2.5 text-green-500 text-base">✓</span>}
@@ -230,7 +236,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                 <h4 className="font-black text-yellow-400 text-[10px] uppercase tracking-widest">{pearlData.title}</h4>
               </div>
               <p className="text-yellow-100 text-[11px] leading-relaxed font-medium">
-                {pearlData.text}
+                {kalinIsle(pearlData.text)}
               </p>
             </div>
           )}

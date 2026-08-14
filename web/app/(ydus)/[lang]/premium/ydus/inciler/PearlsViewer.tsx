@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { kalinHtml } from '@/app/lib/metin';
 
 // --- TİP TANIMLAMALARI ---
 type Pearl = {
@@ -142,7 +143,12 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                       <div
                         data-readable={`pearl:${pearl.id}`}
                         className="text-[15px] text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none"
-                        dangerouslySetInnerHTML={{ __html: pearl.content }}
+                        // Bu alan ZATEN ham HTML basıyor; `kalinHtml` yalnızca
+                        // `**` çiftini `<strong>`'a çeviriyor, yeni bir risk
+                        // eklemiyor. React düğümü döndüren `kalinIsle`
+                        // kullanılamadı: o, mevcut sözleşmeyi bozup içerikteki
+                        // olası HTML etiketlerini düz metne çevirirdi.
+                        dangerouslySetInnerHTML={{ __html: kalinHtml(pearl.content) }}
                       />
                     </div>
                   </div>

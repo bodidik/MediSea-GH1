@@ -11,6 +11,8 @@
  * "Satır içi stil bu tabanların hiçbirine uymaz").
  */
 
+import { kalinIsle } from '@/app/lib/metin';
+
 export type MetinSatir = { yil?: string; metin: string };
 export type TabloSatir = { renk?: 'kirmizi' | 'yesil' | 'sari' | 'mavi'; hucreler: string[] };
 
@@ -83,7 +85,7 @@ function MetinBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'metin' }> }) {
               </span>
             )}
             <p style={{ fontSize: '15px', lineHeight: 1.7, margin: 0, color: '#1a2a3a' }}>
-              {satir.metin}
+              {kalinIsle(satir.metin)}
             </p>
           </div>
         ))}
@@ -150,7 +152,7 @@ function TabloBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'tablo' }> }) {
                       fontWeight: j === 0 ? 500 : 400,
                       lineHeight: 1.5,
                     }}>
-                      {hucre}
+                      {kalinIsle(hucre)}
                     </td>
                   ))}
                 </tr>
@@ -185,7 +187,7 @@ function BilgiKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu'
         {stil.etiket}
       </div>
       <p style={{ fontSize: '15px', lineHeight: 1.6, margin: 0, color: '#1a2a3a' }}>
-        {blok.metin}
+        {kalinIsle(blok.metin)}
       </p>
     </div>
   );
