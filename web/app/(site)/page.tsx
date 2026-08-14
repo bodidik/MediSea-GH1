@@ -55,7 +55,7 @@ export default async function Home() {
             {/* Badge'ler */}
             <div className="flex flex-wrap gap-2 mb-5">
               <span className="rounded-full bg-white/10 text-white/60 border border-white/15 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest">Beta</span>
-              <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-yellow-300 transition-all">
+              <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest hover:bg-yellow-300 transition-all">
                 Premium YDUS ⚓
               </Link>
               {ktKullanici && (
@@ -225,7 +225,7 @@ export default async function Home() {
                 <span className="text-[11px] font-bold text-blue-950">{tool.name}</span>
               </Link>
             ))}
-            <Link href="/tools" className="shrink-0 text-[11px] font-black text-blue-600 px-2 hover:underline uppercase tracking-tighter whitespace-nowrap">Tümü →</Link>
+            <Link href="/tools" className="shrink-0 inline-block py-1.5 text-[11px] font-black text-blue-600 px-2 hover:underline uppercase tracking-tighter whitespace-nowrap">Tümü →</Link>
           </div>
         </section>
       </div>

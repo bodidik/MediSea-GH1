@@ -27,11 +27,19 @@ import {
 
 type Mode = "due" | "cram";
 
+/**
+ * Zemin 700, vurgu 800 — ikisi de beyaz yazıyla ölçüldü.
+ *
+ * Önce zemin 500/600 ve vurgu bir kademe AÇIK'tı; beyaz yazı amber-500'de
+ * 2.15, rose-500'de 3.67, emerald-600'da 3.77 kontrast veriyordu (eşik 4.5)
+ * ve fareyle üstüne gelince daha da bozuluyordu. Şimdi 5.02–6.70, vurguda
+ * 7.09–8.72. Renk kimliği aynı kaldı, yalnızca kademe koyulaştı.
+ */
 const BUTTONS: { g: Grade; label: string; hint: string; cls: string }[] = [
-  { g: "again", label: "Bilemedim", hint: "10 dk", cls: "bg-rose-500 hover:bg-rose-400" },
-  { g: "hard", label: "Zor", hint: "kısa", cls: "bg-amber-500 hover:bg-amber-400" },
-  { g: "good", label: "Bildim", hint: "normal", cls: "bg-emerald-600 hover:bg-emerald-500" },
-  { g: "easy", label: "Kolay", hint: "uzun", cls: "bg-blue-600 hover:bg-blue-500" },
+  { g: "again", label: "Bilemedim", hint: "10 dk", cls: "bg-rose-700 hover:bg-rose-800" },
+  { g: "hard", label: "Zor", hint: "kısa", cls: "bg-amber-700 hover:bg-amber-800" },
+  { g: "good", label: "Bildim", hint: "normal", cls: "bg-emerald-700 hover:bg-emerald-800" },
+  { g: "easy", label: "Kolay", hint: "uzun", cls: "bg-blue-700 hover:bg-blue-800" },
 ];
 
 export default function ReviewPage() {
@@ -241,9 +249,11 @@ export default function ReviewPage() {
               {card.branch}
             </span>
           )}
+          {/* Çalışma döngüsünün "kaynağa dön" adımı — tıklama alanı satır
+              yüksekliği kadardı (15px), eşik 24px. */}
           <Link
             href={card.path}
-            className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-blue-600"
+            className="inline-block py-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-blue-600"
           >
             {card.title}
           </Link>
@@ -321,7 +331,11 @@ export default function ReviewPage() {
                   className={`rounded-xl py-2.5 text-[11px] font-black uppercase tracking-widest text-white transition-all active:scale-95 ${b.cls}`}
                 >
                   {b.label}
-                  <span className="ml-1 block text-[9px] font-bold opacity-60">
+                  {/* Opaklık kaldırıldı: alt etiket kartın hangi aralığa
+                      gideceğini söylüyor, yani düğmenin işlevsel bilgisi.
+                      opacity-60 onu 2.15–3.77 kontrasta düşürüyordu.
+                      Hiyerarşi artık saydamlıkla değil boyut ve ağırlıkla. */}
+                  <span className="ml-1 block text-[10px] font-medium normal-case tracking-normal">
                     {i + 1} · {b.hint}
                   </span>
                 </button>

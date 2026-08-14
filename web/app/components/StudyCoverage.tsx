@@ -136,7 +136,7 @@ export default function StudyCoverage() {
         </button>
       )}
 
-      <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
+      <p className="mt-3 text-[13px] leading-relaxed text-slate-500">
         Bir konuda vurgu ya da not varsa o konu &quot;çalışılmış&quot; sayılır. Sayılar
         planlama içindir; okuduğun ama işaretlemediğin konular burada görünmez.
       </p>

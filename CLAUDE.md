@@ -336,3 +336,25 @@ Denetimi otomatik yapmak istersen ölçüt basit: kaynakta
 hesapla. Ama pencereyi **±2 satırda** tut — daha genişi stil nesnesi
 sınırını aşıp yakındaki başlık rengini "zemin" sanıyor ve koyu zeminde
 duran beyaz yazıları kusur gibi gösteriyor.
+
+### Tarayıcıda kontrast ölçen betiğin üç tuzağı
+
+Üçü de gerçekten yanılttı; ikisi kusur uydurdu, biri gerçek kusuru gizledi.
+
+- **Yalnızca yaprak ögeye bakmak kusur GİZLER.** `e.children.length === 0`
+  ile süzersen `<button>Zor<span>2 · kısa</span></button>` gibi düğmelerde
+  ana etiket hiç ölçülmez, çünkü düğmenin bir çocuğu var. Tekrar
+  sayfasında dört derecelendirme düğmesinin üçü bu yüzden "temiz"
+  görünüyordu; gerçekte beyaz yazı amber-500'de **2.15** kontrasttaydı.
+  Doğrusu: her ögenin KENDİ doğrudan metin düğümlerini (`nodeType === 3`)
+  birleştirip onu ölç.
+- **Degrade zemin kusur UYDURUR.** `bg-gradient-*` sınıfları
+  `background-image` yazar, `backgroundColor` şeffaf kalır. Zemin ararken
+  yukarı yürüyen betik degradeyi atlayıp sayfanın beyazını zemin sanıyor;
+  koyu degrade üzerindeki beyaz yazı 1.05 kontrast gibi görünüyor.
+- **Emoji kusur UYDURUR.** Emoji kendi renginde çizilir, `color` ona
+  uygulanmaz. Metni yalnızca emojiden ibaret olan ögeleri ölçme.
+
+Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
+ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
+yüzeyden ayırt edilemez.

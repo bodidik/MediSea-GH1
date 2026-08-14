@@ -108,7 +108,7 @@ function GirisFormu() {
 
         <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '1.25rem' }}>
           Hesabın yok mu?{' '}
-          <Link href="/kayit" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none' }}>
+          <Link href="/kayit" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
             Kayıt ol
           </Link>
         </p>

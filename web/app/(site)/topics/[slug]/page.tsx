@@ -150,9 +150,9 @@ export default async function BranchListPage({
 
           {/* Breadcrumb */}
           <div className="mb-4 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            <Link href="/" className="hover:text-blue-700 transition-colors">MediSea</Link>
+            <Link href="/" className="inline-block py-1.5 hover:text-blue-700 transition-colors">MediSea</Link>
             <span>/</span>
-            <Link href="/topics" className="hover:text-blue-700 transition-colors">Kütüphane</Link>
+            <Link href="/topics" className="inline-block py-1.5 hover:text-blue-700 transition-colors">Kütüphane</Link>
             <span>/</span>
             <span className="text-blue-900">{specialty.title}</span>
           </div>
@@ -269,7 +269,7 @@ export default async function BranchListPage({
                   <span className="text-[11px] font-bold text-blue-950">{tool.name}</span>
                 </Link>
               ))}
-              <Link href="/tools" className="shrink-0 text-[11px] font-black text-blue-600 px-3 hover:underline uppercase tracking-tighter whitespace-nowrap">
+              <Link href="/tools" className="shrink-0 inline-block py-1.5 text-[11px] font-black text-blue-600 px-3 hover:underline uppercase tracking-tighter whitespace-nowrap">
                 Tümü →
               </Link>
             </div>

@@ -356,7 +356,7 @@ export default async function TopicDetailPage({
                       <li key={child.slug}>
                         <Link
                           href={`/topics/${slug}/${child.slug}`}
-                          className="group flex items-start gap-3 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
+                          className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
                         >
                           <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">↳</span>
                           <span className="leading-tight">{child.title}</span>
@@ -381,7 +381,7 @@ export default async function TopicDetailPage({
                       <li key={`${k.brans}/${k.slug}`}>
                         <Link
                           href={`/topics/${k.brans}/${k.slug}`}
-                          className="group flex items-start gap-3 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
+                          className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
                         >
                           <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">→</span>
                           <span className="leading-tight">

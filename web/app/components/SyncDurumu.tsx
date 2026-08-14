@@ -57,16 +57,22 @@ export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
         {g.yazi}
       </span>
 
+      {/* Girişsiz durum, açık taraftan ödeme hattına geçişin tek noktası.
+          Uyarı okunur boyutta (dönüştüren şey uyarının kendisi), eylem de
+          düğme görünümünde: bir dönem ikisi de 11px düz metindi ve
+          kutudaki en sessiz öge tıklanması istenen şeydi — üstelik 16.5px
+          tıklama alanıyla. */}
       {!girisli && (
         <>
-          <span className="text-[11px] text-slate-400 font-medium">
+          <span className="text-[13px] leading-snug text-slate-600 font-medium">
             Tarayıcı verini silersen notların ve vurguların gider.
           </span>
           <Link
             href="/kayit"
-            className="ml-auto text-[11px] font-black uppercase tracking-widest text-blue-900 hover:underline whitespace-nowrap"
+            className="ml-auto inline-flex items-center gap-1.5 rounded-lg bg-blue-900 px-3.5 py-2 text-[13px] font-bold text-white whitespace-nowrap transition-colors hover:bg-blue-800"
           >
-            Ücretsiz hesapla koru →
+            Ücretsiz hesapla koru
+            <span aria-hidden="true">→</span>
           </Link>
         </>
       )}

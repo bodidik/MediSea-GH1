@@ -229,7 +229,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
         </div>
       )}
 
-      <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
+      <p className="mt-3 text-[13px] leading-relaxed text-slate-500">
         Çalışma verin yalnızca bu tarayıcıda tutulur. Başka bir cihaza taşımak ya da tarayıcı
         temizliğinden korumak için yedek al — JSON yedeği çizimleri ve tekrar takvimini de taşır,
         Markdown taşımaz.

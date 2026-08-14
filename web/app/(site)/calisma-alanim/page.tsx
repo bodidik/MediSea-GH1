@@ -217,9 +217,13 @@ export default function StudyWorkspace() {
               ))}
             </div>
 
-            <p className="mt-6 text-center text-[10px] font-bold uppercase tracking-widest text-slate-300">
-              Bu veriler yalnızca bu tarayıcıda tutulur · Markdown olarak yedekleyebilirsin
-            </p>
+            {/* Buradaki "yalnızca bu tarayıcıda tutulur" satırı kaldırıldı:
+                giriş yapmış kullanıcı için YANLIŞ, veri sunucuya da gidiyor.
+                Aynı iddia yukarıdaki alt başlıktan da bu sebeple çıkarılmıştı
+                (bkz. sayfa başındaki not), bu kopya atlanmış. Verinin nerede
+                durduğunu SyncDurumu canlı olarak söylüyor, yedekleme yolunu
+                da StudyBackup anlatıyor; üçüncü ve sabit bir tekrar
+                gereksizdi. */}
           </>
         )}
       </div>
@@ -261,9 +265,11 @@ function EntryCard({
             )}
           </div>
 
+          {/* inline-block + dikey boşluk: satır yüksekliği tek başına 17px
+              kalıyordu, dokunma hedefi eşiği 24px. */}
           <Link
             href={entry.path}
-            className="text-sm font-black uppercase italic leading-tight tracking-tight text-blue-950 hover:text-blue-600"
+            className="inline-block py-1 text-sm font-black uppercase italic leading-tight tracking-tight text-blue-950 hover:text-blue-600"
           >
             {entry.title}
           </Link>
@@ -292,17 +298,19 @@ function EntryCard({
 
         {strokes.length > 0 && <StrokeThumb strokes={strokes} />}
 
-        <div className="flex shrink-0 flex-col gap-1">
+        {/* Aralık bilerek geniş: küçük ve bitişik iki düğmeden biri yıkıcı.
+            Silme onay soruyor ama yanlış tıklamayı hiç yaşatmamak daha iyi. */}
+        <div className="flex shrink-0 flex-col gap-1.5">
           <button
             onClick={() => setOpen((v) => !v)}
-            className="rounded-lg px-2 py-1 text-[10px] font-black uppercase tracking-widest text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700"
+            className="rounded-lg px-2.5 py-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-700"
           >
             {open ? "Kapat" : "Aç"}
           </button>
           <button
             onClick={() => onRemove(entry.path, entry.title)}
             title="Bu sayfadaki her şeyi sil"
-            className="rounded-lg px-2 py-1 text-[10px] font-black uppercase tracking-widest text-slate-300 transition-colors hover:bg-rose-50 hover:text-rose-500"
+            className="rounded-lg px-2.5 py-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-colors hover:bg-rose-50 hover:text-rose-600"
           >
             Sil
           </button>
@@ -323,7 +331,7 @@ function EntryCard({
                       className="mt-1.5 h-2 w-2 shrink-0 rounded-full"
                       style={{ background: SWATCH[m.st] ?? "#94A3B8" }}
                     />
-                    <span className="text-[12px] leading-snug text-slate-600">
+                    <span className="text-[14px] leading-snug text-slate-700">
                       {m.t.replace(/\s+/g, " ").trim()}
                     </span>
                   </li>
@@ -337,7 +345,7 @@ function EntryCard({
               <h3 className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">
                 Not
               </h3>
-              <pre className="whitespace-pre-wrap break-words font-sans text-[12px] leading-relaxed text-slate-600">
+              <pre className="whitespace-pre-wrap break-words font-sans text-[14px] leading-relaxed text-slate-700">
                 {noteText}
               </pre>
             </div>
