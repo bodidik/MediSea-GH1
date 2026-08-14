@@ -112,9 +112,9 @@ export default function GhTestPage() {
           <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
             <div className="flex gap-3">
               {(["sensitive", "standard"] as const).map(a => (
-                <label key={a} className={`flex-1 p-3 rounded-xl border cursor-pointer transition-all text-center
+                <label key={a} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 p-3 rounded-xl border cursor-pointer transition-all text-center
                   ${assay === a ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
-                  <input type="radio" className="hidden" checked={assay === a} onChange={() => setAssay(a)} />
+                  <input type="radio" className="sr-only" checked={assay === a} onChange={() => setAssay(a)} />
                   <div className={`text-sm font-bold ${assay === a ? 'text-white' : 'text-blue-900/80'}`}>{a === "sensitive" ? "Hassas Assay" : "Standart Assay"}</div>
                   <div className={`text-[9px] font-bold uppercase tracking-widest ${assay === a ? 'text-blue-200/70' : 'text-slate-400'}`}>{a === "sensitive" ? "Eşik: 0.4 μg/L" : "Eşik: 1.0 μg/L"}</div>
                 </label>

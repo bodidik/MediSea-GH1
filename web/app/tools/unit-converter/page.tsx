@@ -95,7 +95,7 @@ export default function UnitConverterPage() {
             <div className="space-y-4 text-center md:text-left">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">GELENEKSEL BİRİM</span>
               <div className="relative">
-                <input
+                <input aria-label="Geleneksel birim (mg/dL)"
                   type="text" inputMode="decimal"
                   value={mgdlValue}
                   onChange={(e) => setMgdlValue(e.target.value)}
@@ -116,7 +116,7 @@ export default function UnitConverterPage() {
             <div className="space-y-4 text-center md:text-left">
               <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.2em] block text-center md:text-right">SI BİRİMİ</span>
               <div className="relative">
-                <input
+                <input aria-label="SI birimi (mmol/L)"
                   type="text" inputMode="decimal"
                   value={mmolValue}
                   onChange={(e) => handleMmolChange(e.target.value)}

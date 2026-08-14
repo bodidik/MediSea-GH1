@@ -74,7 +74,7 @@ export default function Sledai2kPage() {
             {ITEMS.map((it) => (
               <label 
                 key={it.key} 
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${sel[it.key] ? 'bg-blue-900 border-blue-900 text-white shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}
                 `}
               >
@@ -88,7 +88,7 @@ export default function Sledai2kPage() {
                     {it.label}
                   </span>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${sel[it.key] ? 'text-amber-400' : 'text-slate-400'}`}>
                   +{it.pts}
                 </span>

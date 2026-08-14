@@ -60,7 +60,7 @@ export default function NRS2002Page() {
           {/* Nütrisyonel Durum */}
           <div className="space-y-3">
             <span className="text-[10px] font-black text-slate-400 uppercase">Beslenme Durumunda Bozulma</span>
-            <select 
+            <select aria-label="Beslenme Durumunda Bozulma" 
               onChange={(e) => setFinalScore(p => ({ ...p, nutrition: Number(e.target.value) }))}
               className="w-full p-4 rounded-xl bg-slate-50 border-none font-bold text-sm outline-none ring-2 ring-slate-100 focus:ring-amber-400"
             >
@@ -74,7 +74,7 @@ export default function NRS2002Page() {
           {/* Hastalık Şiddeti */}
           <div className="space-y-3">
             <span className="text-[10px] font-black text-slate-400 uppercase">Hastalık Şiddeti</span>
-            <select 
+            <select aria-label="Hastalık Şiddeti" 
               onChange={(e) => setFinalScore(p => ({ ...p, severity: Number(e.target.value) }))}
               className="w-full p-4 rounded-xl bg-slate-50 border-none font-bold text-sm outline-none ring-2 ring-slate-100 focus:ring-amber-400"
             >
@@ -88,7 +88,7 @@ export default function NRS2002Page() {
           {/* Yaş Ayarı */}
           <div className="flex items-center justify-between p-4 bg-amber-50 rounded-xl border border-amber-100">
              <span className="text-sm font-bold text-amber-900 uppercase italic">Yaş ≥ 70</span>
-             <input 
+             <input aria-label="Yaş 70 ve üzeri" 
               type="checkbox" 
               onChange={(e) => setFinalScore(p => ({ ...p, age: e.target.checked ? 1 : 0 }))}
               className="w-6 h-6"

@@ -66,7 +66,7 @@ export default function QsOFA() {
             {ITEMS.map((it) => (
               <label 
                 key={it.id} 
-                className={`flex items-center justify-between p-5 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-5 rounded-2xl border transition-all cursor-pointer group
                   ${it.val ? 'bg-blue-900 border-blue-900 text-white shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}
                 `}
               >
@@ -85,7 +85,7 @@ export default function QsOFA() {
                     </span>
                   </div>
                 </div>
-                <input type="checkbox" className="hidden" checked={it.val} onChange={() => it.set(!it.val)} />
+                <input type="checkbox" className="sr-only" checked={it.val} onChange={() => it.set(!it.val)} />
                 <span className={`text-[10px] font-black tracking-widest ${it.val ? 'text-amber-400' : 'text-slate-400'}`}>
                   +1 PUAN
                 </span>

@@ -82,7 +82,7 @@ export default function WellsPEPage() {
           <div className="grid gap-2">
             {ITEMS.map((it) => (
               <label key={it.key}
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${sel[it.key] ? "bg-blue-900 border-blue-900 text-white shadow-md" : "bg-slate-50 border-slate-100 hover:border-blue-900/30"}`}>
                 <div className="flex items-center gap-4">
                   <div className={`w-6 h-6 rounded-lg border flex items-center justify-center transition-all
@@ -94,7 +94,7 @@ export default function WellsPEPage() {
                     <span className={`text-[9px] font-bold uppercase tracking-widest ${sel[it.key] ? "text-blue-200/60" : "text-slate-400"}`}>{it.sub}</span>
                   </div>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${sel[it.key] ? "text-amber-400" : "text-slate-400"}`}>+{it.pts}</span>
               </label>
             ))}

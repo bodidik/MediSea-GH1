@@ -88,7 +88,7 @@ export default function PERCPage() {
             {ITEMS.map((it) => (
               <label 
                 key={it.key} 
-                className={`flex items-center gap-4 p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-4 p-4 rounded-2xl border transition-all cursor-pointer group
                   ${st[it.key] ? 'bg-rose-50 border-rose-200 text-rose-900 shadow-sm' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}
                 `}
               >
@@ -105,7 +105,7 @@ export default function PERCPage() {
                     {it.sub}
                   </span>
                 </div>
-                <input type="checkbox" className="hidden" checked={st[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={st[it.key]} onChange={() => toggle(it.key)} />
               </label>
             ))}
           </div>

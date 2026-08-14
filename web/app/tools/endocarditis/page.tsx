@@ -86,7 +86,7 @@ export default function EndocarditisToolPage() {
             {CRITERIA.filter(c => c.group === "major").map((c) => (
               <label 
                 key={c.key} 
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${sel[c.key] ? 'bg-blue-900 border-blue-900 text-white shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}
                 `}
               >
@@ -100,7 +100,7 @@ export default function EndocarditisToolPage() {
                     {c.label}
                   </span>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
+                <input type="checkbox" className="sr-only" checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
               </label>
             ))}
           </div>
@@ -113,7 +113,7 @@ export default function EndocarditisToolPage() {
             {CRITERIA.filter(c => c.group === "minor").map((c) => (
               <label 
                 key={c.key} 
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${sel[c.key] ? 'bg-blue-800 border-blue-800 text-white shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}
                 `}
               >
@@ -127,7 +127,7 @@ export default function EndocarditisToolPage() {
                     {c.label}
                   </span>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
+                <input type="checkbox" className="sr-only" checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
               </label>
             ))}
           </div>

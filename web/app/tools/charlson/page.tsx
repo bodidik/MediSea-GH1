@@ -38,7 +38,7 @@ const AGE_OPTS = [["<50", 0], ["50–59", 1], ["60–69", 2], ["70–79", 3], ["
 
 function CheckItem({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) {
   return (
-    <label className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
       ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
       <div className="flex items-center gap-4">
         <div className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0
@@ -50,7 +50,7 @@ function CheckItem({ label, sub, pts, checked, onChange }: { label: string; sub:
           {sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200/60' : 'text-slate-400'}`}>{sub}</span>}
         </div>
       </div>
-      <input type="checkbox" className="hidden" checked={checked} onChange={onChange} />
+      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
       <span className={`text-[10px] font-black tracking-widest shrink-0 ml-2 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
     </label>
   );
@@ -104,7 +104,7 @@ export default function CharlsonPage() {
           <Section title="Yaş" />
           <div className="flex items-center justify-between gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 mb-2">
             <span className="text-sm font-bold text-blue-900/80">Yaş Grubu</span>
-            <select value={agePts} onChange={e => setAgePts(Number(e.target.value))}
+            <select aria-label="Yaş Grubu" value={agePts} onChange={e => setAgePts(Number(e.target.value))}
               className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none text-blue-950">
               {AGE_OPTS.map(([l, v]) => <option key={v} value={v}>{l}</option>)}
             </select>

@@ -45,14 +45,14 @@ export default function CorrectedSodiumPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Ölçülen Sodyum (mEq/L)</span>
-            <input
+            <input aria-label="Ölçülen Sodyum (mEq/L)"
               type="text" inputMode="decimal" value={na} onChange={(e) => setNa(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Glukoz (mg/dL)</span>
-            <input
+            <input aria-label="Glukoz (mg/dL)"
               type="text" inputMode="decimal" value={glucose} onChange={(e) => setGlucose(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />

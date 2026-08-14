@@ -47,14 +47,14 @@ export default function CorrectedCalciumPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Ölçülen Kalsiyum (mg/dL)</span>
-            <input
+            <input aria-label="Ölçülen Kalsiyum (mg/dL)"
               type="text" inputMode="decimal" value={ca} onChange={(e) => setCa(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Albumin (g/dL)</span>
-            <input
+            <input aria-label="Albumin (g/dL)"
               type="text" inputMode="decimal" value={alb} onChange={(e) => setAlb(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />

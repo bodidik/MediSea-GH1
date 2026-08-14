@@ -56,7 +56,7 @@ export default function SteroidDosePage() {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-2 pl-1">Mevcut İlaç</span>
-              <select value={from} onChange={e => setFrom(Number(e.target.value))}
+              <select aria-label="Mevcut İlaç" value={from} onChange={e => setFrom(Number(e.target.value))}
                 className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-sm text-blue-950">
                 {STEROIDS.map((s, i) => <option key={i} value={i}>{s.name}</option>)}
               </select>

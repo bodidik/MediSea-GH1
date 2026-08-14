@@ -67,7 +67,7 @@ export default function EsasPage() {
                 <div className="flex items-center gap-3">
                   <span className="text-[9px] font-bold text-slate-400 w-12 text-right shrink-0">{s.left}</span>
                   <div className="flex-1 relative">
-                    <input type="range" min={0} max={10} step={1} value={v}
+                    <input aria-label={s.label} type="range" min={0} max={10} step={1} value={v}
                       onChange={e => set(s.key, Number(e.target.value))}
                       className="w-full h-2 rounded-full appearance-none cursor-pointer accent-blue-900"
                       style={{ background: `linear-gradient(to right, #1a1a6b ${v * 10}%, #e2e8f0 ${v * 10}%)` }}

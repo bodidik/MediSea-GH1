@@ -54,13 +54,13 @@ export default function KhoranaPage() {
             <span className="text-sm font-bold text-blue-900/80 block">Kanser Lokalizasyonu</span>
             <div className="grid gap-1.5">
               {CANCER_OPTS.map(([l, v]) => (
-                <label key={v} className={`flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+                <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
                   ${cancerSite === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
                     ${cancerSite === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {cancerSite === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="hidden" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
+                  <input type="radio" className="sr-only" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
                   <span className={`text-[12px] font-bold flex-1 ${cancerSite === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
                   <span className={`text-[10px] font-black ${cancerSite === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
                 </label>
@@ -91,7 +91,7 @@ export default function KhoranaPage() {
             </label>
           </div>
 
-          <label className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+          <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
             ${esaUse ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
             <div className="flex items-center gap-4">
               <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
@@ -100,7 +100,7 @@ export default function KhoranaPage() {
               </div>
               <span className={`text-sm font-bold ${esaUse ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>Eritropoez Stimüle Edici Ajan (ESA) Kullanımı</span>
             </div>
-            <input type="checkbox" className="hidden" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
+            <input type="checkbox" className="sr-only" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
           </label>
         </div>
 

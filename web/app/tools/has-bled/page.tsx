@@ -98,7 +98,7 @@ export default function HasBledPage() {
             {ITEMS.map((it) => (
               <label 
                 key={it.key} 
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${state[it.key] ? 'bg-blue-900 border-blue-900 text-white shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}
                 `}
               >
@@ -117,7 +117,7 @@ export default function HasBledPage() {
                     </span>
                   </div>
                 </div>
-                <input type="checkbox" className="hidden" checked={state[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={state[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${state[it.key] ? 'text-amber-400' : 'text-slate-400'}`}>
                   +1 PUAN
                 </span>

@@ -41,13 +41,13 @@ export default function PapScorePage() {
       <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
       <div className="grid gap-1.5">
         {opts.map(([l, v]) => (
-          <label key={v + l} className={`flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
             ${value === v ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
             <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
               ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
               {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
             </div>
-            <input type="radio" className="hidden" checked={value === v} onChange={() => onChange(v)} />
+            <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
             <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
             <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
           </label>
@@ -57,7 +57,7 @@ export default function PapScorePage() {
   );
 
   const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
-    <label className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
       ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
       <div className="flex items-center gap-4">
         <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
@@ -69,7 +69,7 @@ export default function PapScorePage() {
           <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200/60' : 'text-slate-400'}`}>{sub}</span>
         </div>
       </div>
-      <input type="checkbox" className="hidden" checked={checked} onChange={onChange} />
+      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
       <span className={`text-[10px] font-black shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
     </label>
   );
