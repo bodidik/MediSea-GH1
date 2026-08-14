@@ -366,6 +366,26 @@ odaklanabilir olmayan bir öğeye atlandığında tarayıcı görünümü kaydı
 Doğrularken gerçek Tab/Enter tuşuna bas — `element.focus()` bu oturumda bir
 kez "odak halkası yok" diye yanlış sonuç verdirdi.
 
+### Form alanının ADI olmak zorunda — placeholder yetmez
+
+Ölçüldü: uygulamadaki dokuz form alanının **dokuzu da adsızdı**. Giriş ve
+kayıtta `<label>`'lar görsel olarak vardı ama `htmlFor`/`id` çifti
+kurulmadığı için alana bağlı değildi; arama kutularında yalnızca
+`placeholder` vardı. Placeholder ad yerine geçmez — yazmaya başlayınca
+kaybolur ve kimi okuyucular onu ad değil ipucu sayar.
+
+Yeni bir alan eklerken: ya `<label htmlFor>` + `<input id>` çifti, ya
+`aria-label`. Hata çıkıyorsa alana `aria-invalid`, mesaj kutusuna
+`role="alert"`.
+
+**`alert` ile `status` farkı önemli:** `alert` sonradan DOM'a eklenince
+duyurulur, bu yüzden koşullu basılabilir. `status` böyle değil — bölgenin
+içerik değişmeden ÖNCE DOM'da bulunması gerekiyor, yoksa ilk mesaj kaçar.
+
+Ölçmenin doğru yolu erişilebilir adı HESAPLATMAK: `aria-label` →
+`aria-labelledby` → `label[for]` → sarmalayan `<label>`. Kaynakta `<label>`
+görmek yetmez, bağlı olup olmadığını göstermez.
+
 ### Dağıtımın indiğini İSTEMCİ tarafı bir işaretle yoklama
 
 `curl | grep` ile "yeni kod indi mi" diye bakarken, aranan şey istemci
