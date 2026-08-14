@@ -92,7 +92,7 @@ export default function EgfrPage() {
 
         {/* EVRELEME PANELİ */}
         <div className={`p-6 rounded-[2rem] border border-blue-900/5 shadow-sm text-center ${interpretation.bg}`}>
-           <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-1 text-center">KDIGO EVRELEMESİ</span>
+           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-1 text-center">KDIGO EVRELEMESİ</span>
            <p className={`text-xl font-black italic tracking-tight ${interpretation.color}`}>
              {interpretation.label}
            </p>

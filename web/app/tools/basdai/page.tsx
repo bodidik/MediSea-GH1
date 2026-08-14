@@ -79,7 +79,7 @@ export default function BasdaiPage() {
 
         {result && score !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">BASDAI = {score.toFixed(1)}</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">BASDAI = {score.toFixed(1)}</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
           </div>

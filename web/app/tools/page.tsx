@@ -307,7 +307,7 @@ function ToolsIcerik() {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span aria-hidden="true" className="text-amber-500 text-sm animate-pulse">☀️</span>
-              <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em]">MediSea Karar Destek</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em]">MediSea Karar Destek</span>
             </div>
             <h1 className="text-4xl sm:text-6xl font-black text-blue-950 uppercase italic tracking-tighter leading-none">
               Klinik <span className="text-slate-400 not-italic uppercase">Araçlar</span>
@@ -422,7 +422,7 @@ function ToolsIcerik() {
               MediSea araçları sağlık profesyonelleri için karar destek amaçlıdır. Klinik değerlendirmenin yerini alamaz. Veriler tıbbi sorumluluk içermez.
             </p>
           </div>
-          <div className="text-[9px] font-black text-blue-900/40 uppercase tracking-[0.4em]">
+          <div className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.4em]">
             © 2026 MediSea Donanması • Klinik Karar Destek Birimi
           </div>
         </div>

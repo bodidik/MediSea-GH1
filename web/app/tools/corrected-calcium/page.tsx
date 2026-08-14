@@ -83,7 +83,7 @@ export default function CorrectedCalciumPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül: Ölçülen Ca + 0.8 * (4.0 - Albumin). Hiponatremi veya asidoz/alkaloz durumlarında iyonize kalsiyum bakılması önerilir.
           </p>
         </div>

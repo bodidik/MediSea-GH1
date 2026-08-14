@@ -167,7 +167,7 @@ export default function GlasgowBlatchfordPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Skor = 0 olan hastalar genellikle güvenle ayaktan takip edilebilir (endoskopi öncesi düşük risk). ≥1 puan, hastane yatışı ve erken endoskopi ihtiyacını artırır.
           </p>
         </div>

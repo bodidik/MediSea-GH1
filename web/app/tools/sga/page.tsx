@@ -96,7 +96,7 @@ export default function SgaPage() {
 
         {SECTIONS.map(sec => (
           <div key={sec.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-5">
-            <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest">{sec.title}</p>
+            <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest">{sec.title}</p>
             {sec.questions.map(q => (
               <div key={q.id}>
                 <p className="text-sm font-bold text-blue-900 mb-2">{q.label}</p>
@@ -106,7 +106,7 @@ export default function SgaPage() {
                       className={`px-4 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                         ${answers[q.id] === o.v
                           ? o.v === "A" ? "bg-emerald-600 border-emerald-600 text-white"
-                            : o.v === "B" ? "bg-amber-500 border-amber-500 text-white"
+                            : o.v === "B" ? "bg-amber-700 border-amber-500 text-white"
                             : "bg-rose-600 border-rose-600 text-white"
                           : "bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30"}`}>
                       {o.v}: {o.l}
@@ -125,7 +125,7 @@ export default function SgaPage() {
 
         {global && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${RESULT[global].border} ${RESULT[global].bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">GLOBAL DEĞERLENDİRME</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">GLOBAL DEĞERLENDİRME</div>
             <p className={`text-xl font-black italic tracking-tight ${RESULT[global].color}`}>{RESULT[global].label}</p>
             <p className={`text-sm font-bold mt-1 ${RESULT[global].color} opacity-80`}>{RESULT[global].sub}</p>
           </div>

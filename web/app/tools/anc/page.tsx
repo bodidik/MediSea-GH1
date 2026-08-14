@@ -67,7 +67,7 @@ export default function AncPage() {
         </div>
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed shadow-sm text-center ${g.bg} ${g.border}`}>
-          <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-1">NÖTROPENİ EVRELEMESİ</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-1">NÖTROPENİ EVRELEMESİ</span>
           <p className={`text-xl font-black italic tracking-tight ${g.color}`}>{g.label}</p>
           <p className={`text-sm font-bold mt-1 ${g.color} opacity-80`}>{g.sub}</p>
         </div>

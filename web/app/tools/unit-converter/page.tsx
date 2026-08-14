@@ -101,7 +101,7 @@ export default function UnitConverterPage() {
                   onChange={(e) => setMgdlValue(e.target.value)}
                   className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-5xl font-black text-blue-900 p-4 focus:border-amber-400 outline-none transition-all text-center md:text-left rounded-t-2xl"
                 />
-                <span className="absolute right-4 bottom-4 text-xs font-black text-blue-900/30 uppercase">mg / dL</span>
+                <span className="absolute right-4 bottom-4 text-xs font-black text-blue-900/80 uppercase">mg / dL</span>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ export default function UnitConverterPage() {
 
             {/* mmol/L Tarafı */}
             <div className="space-y-4 text-center md:text-left">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.2em] block text-center md:text-right">SI BİRİMİ</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block text-center md:text-right">SI BİRİMİ</span>
               <div className="relative">
                 <input aria-label="SI birimi (mmol/L)"
                   type="text" inputMode="decimal"
@@ -122,7 +122,7 @@ export default function UnitConverterPage() {
                   onChange={(e) => handleMmolChange(e.target.value)}
                   className="w-full bg-blue-900 border-b-4 border-amber-400 text-5xl font-black text-white p-4 focus:border-white outline-none transition-all text-center md:text-right rounded-t-2xl shadow-xl"
                 />
-                <span className="absolute left-4 bottom-4 text-xs font-black text-blue-200/50 uppercase">mmol / L</span>
+                <span className="absolute left-4 bottom-4 text-xs font-black text-blue-200 uppercase">mmol / L</span>
               </div>
             </div>
 

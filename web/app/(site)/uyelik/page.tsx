@@ -90,7 +90,7 @@ export default function UyelikSayfasi() {
 
         {/* BAŞLIK */}
         <div className="border-l-8 border-blue-900 pl-6 py-2">
-          <div className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em] mb-2">
+          <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] mb-2">
             MediSea Üyelik
           </div>
           <h1 className="text-4xl sm:text-5xl font-black uppercase italic tracking-tighter leading-none">
@@ -158,14 +158,14 @@ export default function UyelikSayfasi() {
               </div>
             ))}
           </div>
-          <p className="text-[11px] text-blue-300/60 font-bold uppercase tracking-widest mt-7 pt-6 border-t border-blue-900">
+          <p className="text-[11px] text-blue-300 font-bold uppercase tracking-widest mt-7 pt-6 border-t border-blue-900">
             Premium alan, premium içeriğin tamamına sahip olur — branş branş satılmaz.
           </p>
         </section>
 
         {/* NE YAPABİLİRSİN */}
         <section className="bg-white rounded-[2rem] border border-slate-200 shadow-sm p-6 sm:p-8">
-          <h2 className="text-xs font-black uppercase tracking-[0.25em] text-blue-900/60 mb-3">
+          <h2 className="text-xs font-black uppercase tracking-[0.25em] text-blue-900/80 mb-3">
             Şimdi ne yapabilirsin
           </h2>
           <p className="text-sm text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">

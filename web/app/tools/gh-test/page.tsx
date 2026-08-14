@@ -86,7 +86,7 @@ export default function GhTestPage() {
                   className={`w-full text-left p-4 rounded-2xl border transition-all
                     ${stimIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`text-sm font-bold ${stimIdx === i ? 'text-white' : 'text-blue-950'}`}>{p.label}</div>
-                  <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${stimIdx === i ? 'text-blue-200/70' : 'text-slate-400'}`}>
+                  <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${stimIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>
                     Eşik: {stimIdx === i && i === 3 ? "10" : p.cutoff} μg/L
                   </div>
                 </button>
@@ -102,7 +102,7 @@ export default function GhTestPage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest mb-1">Not</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest mb-1">Not</p>
               <p className="text-[11px] font-bold text-blue-900">{proto.note}</p>
             </div>
           </>
@@ -116,7 +116,7 @@ export default function GhTestPage() {
                   ${assay === a ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
                   <input type="radio" className="sr-only" checked={assay === a} onChange={() => setAssay(a)} />
                   <div className={`text-sm font-bold ${assay === a ? 'text-white' : 'text-blue-900/80'}`}>{a === "sensitive" ? "Hassas Assay" : "Standart Assay"}</div>
-                  <div className={`text-[9px] font-bold uppercase tracking-widest ${assay === a ? 'text-blue-200/70' : 'text-slate-400'}`}>{a === "sensitive" ? "Eşik: 0.4 μg/L" : "Eşik: 1.0 μg/L"}</div>
+                  <div className={`text-[9px] font-bold uppercase tracking-widest ${assay === a ? 'text-blue-200' : 'text-slate-400'}`}>{a === "sensitive" ? "Eşik: 0.4 μg/L" : "Eşik: 1.0 μg/L"}</div>
                 </label>
               ))}
             </div>
@@ -131,7 +131,7 @@ export default function GhTestPage() {
 
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">YORUM</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">YORUM</div>
             <p className={`text-xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
           </div>

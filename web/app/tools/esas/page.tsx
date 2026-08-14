@@ -92,7 +92,7 @@ export default function EsasPage() {
             <span className="text-[10px] font-black text-blue-300 mt-1">/ 90</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${d.border} ${d.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">SEMPTOM YÜKÜ</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">SEMPTOM YÜKÜ</span>
             <p className={`text-2xl font-black italic tracking-tight ${d.color}`}>{d.label}</p>
             <div className="mt-3 grid grid-cols-3 gap-2">
               {SYMPTOMS.filter(s => scores[s.key] >= 4).map(s => (

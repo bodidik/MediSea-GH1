@@ -78,7 +78,7 @@ export default function BehcetPage() {
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                       ${sel[item.id] === v
-                        ? v ? "border-rose-500 bg-rose-500 text-white" : "border-emerald-600 bg-emerald-600 text-white"
+                        ? v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white"
                         : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                     {v ? `Evet (+${item.pts})` : "Hayır (0)"}
                   </button>

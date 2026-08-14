@@ -248,7 +248,7 @@ export default async function BranchListPage({
         {asiliKonular.length > 0 && (
           <div className="mt-8">
             <div className="flex items-baseline gap-3 mb-3">
-              <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em]">
+              <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em]">
                 Diğer Konular
               </h2>
               <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest">
@@ -283,7 +283,7 @@ export default async function BranchListPage({
         {branchTools.length > 0 && (
           <div className="mt-6 sm:mt-8">
             <div className="bg-slate-50/50 backdrop-blur-sm rounded-2xl p-2.5 border border-slate-200 shadow-sm flex items-center gap-2 overflow-x-auto no-scrollbar sm:flex-wrap">
-              <span className="text-[9px] font-black text-blue-900/40 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
+              <span className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
                 İlgili Hesaplayıcılar
               </span>
               {branchTools.map((tool) => (

@@ -66,7 +66,7 @@ export default function CorrectedSodiumPage() {
            <div className="text-7xl font-black text-white">{result}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mEq / L</span>
            {glucoseNum > 100 && (
-             <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-3">Ölçülen değere göre fark: +{delta} mEq/L</span>
+             <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">Ölçülen değere göre fark: +{delta} mEq/L</span>
            )}
         </div>
 
@@ -84,7 +84,7 @@ export default function CorrectedSodiumPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül (Katz): Na + 1.6 × ((Glukoz - 100) / 100). Ciddi hiperglisemide (&gt;400 mg/dL) bazı kaynaklar 2.4 katsayısını önerir — sonuç, gerçek serbest su açığını değerlendirmede bir başlangıç noktasıdır.
           </p>
         </div>

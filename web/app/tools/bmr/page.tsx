@@ -54,7 +54,7 @@ export default function BmrPage() {
               <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
                 ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
                 <input type="radio" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
-                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/70'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
+                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
               </label>
             ))}
           </div>
@@ -85,7 +85,7 @@ export default function BmrPage() {
                   <input type="radio" className="sr-only" checked={factor === opt.factor} onChange={() => setFactor(opt.factor)} />
                   <div className="flex-1">
                     <span className={`text-sm font-bold block ${factor === opt.factor ? 'text-white' : 'text-blue-900/80'}`}>{opt.label}</span>
-                    <span className={`text-[9px] font-bold uppercase tracking-widest ${factor === opt.factor ? 'text-blue-200/60' : 'text-slate-400'}`}>{opt.sub}</span>
+                    <span className={`text-[9px] font-bold uppercase tracking-widest ${factor === opt.factor ? 'text-blue-200' : 'text-slate-400'}`}>{opt.sub}</span>
                   </div>
                   <span className={`text-[10px] font-black ${factor === opt.factor ? 'text-amber-400' : 'text-slate-400'}`}>×{opt.factor}</span>
                 </label>

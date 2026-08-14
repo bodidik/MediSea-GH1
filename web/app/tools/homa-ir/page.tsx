@@ -61,7 +61,7 @@ export default function HomaIrPage() {
         </div>
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
-          <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-2">YORUM</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">YORUM</span>
           <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
           {r.sub && <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>}
         </div>

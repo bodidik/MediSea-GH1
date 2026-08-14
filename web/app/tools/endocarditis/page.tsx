@@ -96,7 +96,7 @@ export default function EndocarditisToolPage() {
                   `}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                   </div>
-                  <span className={`text-sm font-bold transition-colors ${sel[c.key] ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>
+                  <span className={`text-sm font-bold transition-colors ${sel[c.key] ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>
                     {c.label}
                   </span>
                 </div>
@@ -140,7 +140,7 @@ export default function EndocarditisToolPage() {
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 relative z-10">
             <div className="text-center sm:text-left">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-2">OTOMATİK TANI ANALİZİ</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">OTOMATİK TANI ANALİZİ</span>
               <p className={`text-xl font-black italic tracking-tight px-4 py-2 rounded-xl ${interpColor} ${interpBg}`}>
                 {interp}
               </p>

@@ -106,15 +106,15 @@ export default async function Home() {
             <div className="flex items-center divide-x divide-white/10 bg-white/5 border border-white/10 rounded-xl overflow-hidden">
               <div className="flex-1 text-center py-3">
                 <div className="text-xl font-black text-white leading-none">{totalBranches}</div>
-                <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Branş</div>
+                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Branş</div>
               </div>
               <div className="flex-1 text-center py-3">
                 <div className="text-xl font-black text-white leading-none">{totalTopics}</div>
-                <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Konu</div>
+                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Konu</div>
               </div>
               <div className="flex-1 text-center py-3">
                 <div className="text-xl font-black text-white leading-none">{totalTools}</div>
-                <div className="text-[9px] font-bold text-blue-300/60 uppercase tracking-widest mt-0.5">Araç</div>
+                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Araç</div>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default async function Home() {
                 <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
                   <span aria-hidden="true" className="text-lg mb-1">{f.icon}</span>
                   <span className="text-[10px] font-black text-white uppercase tracking-tight">{f.label}</span>
-                  <span className="text-[9px] text-blue-300/60 mt-0.5">{f.sub}</span>
+                  <span className="text-[9px] text-blue-300 mt-0.5">{f.sub}</span>
                 </Link>
               ))}
             </div>
@@ -221,7 +221,7 @@ export default async function Home() {
 
           {/* Mobil hızlı araçlar (lg'de gizli, yukarıda gösteriliyor) */}
           <div className="mt-5 lg:hidden bg-white rounded-2xl border border-slate-200 shadow-sm p-3 flex items-center gap-2 overflow-x-auto no-scrollbar">
-            <span className="text-[9px] font-black text-blue-900/40 uppercase tracking-[0.2em] pr-3 border-r border-slate-200 shrink-0">Araçlar</span>
+            <span className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.2em] pr-3 border-r border-slate-200 shrink-0">Araçlar</span>
             {FEATURED_TOOLS.map((tool) => (
               <Link key={tool.slug} href={`/tools/${tool.slug}`}
                 className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 rounded-xl border border-slate-100 hover:border-blue-300 hover:bg-blue-50 transition-all whitespace-nowrap">

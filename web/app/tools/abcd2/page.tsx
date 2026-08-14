@@ -32,8 +32,8 @@ export default function Abcd2Page() {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </div>
         <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>{label}</span>
-          {sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200/60' : 'text-slate-400'}`}>{sub}</span>}
+          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+          {sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>}
         </div>
       </div>
       <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
@@ -42,13 +42,13 @@ export default function Abcd2Page() {
   );
 
   const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
-    <div className="flex items-center justify-between gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+    <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
       <span className="text-sm font-bold text-blue-900/80 flex-1">{label}</span>
       <select aria-label={label} value={value} onChange={e => onChange(Number(e.target.value))}
-        className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none text-blue-950">
+        className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none max-w-full min-w-0 text-blue-950">
         {opts.map(([l, v]) => <option key={v} value={v}>{l}</option>)}
       </select>
-      <span className="text-[10px] font-black text-amber-500 w-10 text-right">+{value}</span>
+      <span className="text-[10px] font-black text-amber-700 w-10 text-right">+{value}</span>
     </div>
   );
 
@@ -83,7 +83,7 @@ export default function Abcd2Page() {
             <span className="text-[10px] font-black text-blue-300 mt-1">/ 7</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">RİSK</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>
             <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
             <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
           </div>

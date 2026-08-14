@@ -89,7 +89,7 @@ export default function SLEDAIPage() {
             <div className="text-6xl font-black text-white">{total}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2.5rem] p-8 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${interp.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">KLİNİK AKTİVİTE DURUMU</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK AKTİVİTE DURUMU</span>
             <p className={`text-3xl font-black italic tracking-tight ${interp.color}`}>
               {interp.label}
             </p>
@@ -117,7 +117,7 @@ export default function SLEDAIPage() {
                       `}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                       </div>
-                      <span className={`text-xs font-bold leading-tight ${sel[it.key] ? 'text-white' : 'text-blue-900/70'}`}>
+                      <span className={`text-xs font-bold leading-tight ${sel[it.key] ? 'text-white' : 'text-blue-900/80'}`}>
                         {it.label}
                       </span>
                     </div>
@@ -135,7 +135,7 @@ export default function SLEDAIPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={{ ...sel, total }} />
           </div>
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic max-w-2xl mx-auto">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic max-w-2xl mx-auto">
             ⚠️ SLEDAI-2K son 10 gündeki kalıcı, tekrarlayan veya yeni gelişen bulguları değerlendirir. Klinik aktiviteyi objektif olarak ölçmek içindir, tek başına tanı koydurmaz.
           </p>
         </div>

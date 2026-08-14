@@ -86,7 +86,7 @@ export default function OsmolalGapPage() {
 
         {/* Formül */}
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-          <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest mb-2">Hesaplanan Osmolalite Formülü</p>
+          <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest mb-2">Hesaplanan Osmolalite Formülü</p>
           <p className="text-[10px] font-bold text-blue-900 font-mono">OsmHes = 2×Na + Glukoz/18 + BUN/2.8{etohN > 0 ? ' + Etanol/4.6' : ''}</p>
           <p className="text-[10px] font-bold text-blue-900 font-mono">Osmolal Gap = OsmÖlçülen − OsmHesaplanan</p>
           {calcOsm !== null && (
@@ -103,7 +103,7 @@ export default function OsmolalGapPage() {
         {/* Gap sonucu */}
         {gap !== null && result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">OSMOLAL GAP</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">OSMOLAL GAP</div>
             <div className="flex items-baseline gap-3 mb-2">
               <span className={`text-5xl font-black ${result.color}`}>{gap.toFixed(1)}</span>
               <span className={`text-sm font-black ${result.color} opacity-60`}>mOsm/kg</span>
@@ -161,11 +161,11 @@ export default function OsmolalGapPage() {
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Yüksek Osmolal Gap Nedenleri</p>
           {CAUSES.map(c => (
             <div key={c.title}>
-              <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-2">{c.title}</p>
+              <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">{c.title}</p>
               <div className="space-y-1">
                 {c.items.map(item => (
                   <div key={item} className="flex items-start gap-2">
-                    <span className="text-blue-900/30 font-black text-xs mt-0.5">•</span>
+                    <span className="text-blue-900/80 font-black text-xs mt-0.5">•</span>
                     <span className="text-[11px] font-bold text-blue-900">{item}</span>
                   </div>
                 ))}

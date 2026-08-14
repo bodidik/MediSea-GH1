@@ -48,7 +48,7 @@ export default function RockallPage() {
               {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
             </div>
             <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
+            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
             <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
           </label>
         ))}
@@ -97,7 +97,7 @@ export default function RockallPage() {
         </div>
 
         <div className={`rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${rPost.border} ${rPost.bg}`}>
-          <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
           <p className={`text-2xl font-black italic tracking-tight ${rPost.color}`}>{rPost.label}</p>
           <p className={`text-sm font-bold mt-1 ${rPost.color} opacity-80`}>{rPost.sub}</p>
         </div>

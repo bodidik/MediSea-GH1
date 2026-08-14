@@ -61,7 +61,7 @@ export default function Hba1cEagPage() {
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TAHMİNİ ORTALAMA GLUKOZ</span>
            <div className="text-7xl font-black text-white">{eagMgdl}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mg / dL</span>
-           <span className="text-[11px] font-bold text-blue-300/80 uppercase tracking-widest mt-3">{eagMmol} mmol / L</span>
+           <span className="text-[11px] font-bold text-blue-300 uppercase tracking-widest mt-3">{eagMmol} mmol / L</span>
         </div>
 
         {/* YORUMLAMA PANELİ */}
@@ -74,7 +74,7 @@ export default function Hba1cEagPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül (ADA/NGSP): eAG (mg/dL) = 28.7 × A1c - 46.7. Hemoglobinopati, anemi, hemodiyaliz gibi eritrosit ömrünü etkileyen durumlarda HbA1c ve eAG uyumsuz olabilir.
           </p>
         </div>

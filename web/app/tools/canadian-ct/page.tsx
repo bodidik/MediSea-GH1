@@ -63,7 +63,7 @@ export default function CanadianCTPage() {
           <button key={String(v)} type="button"
             onClick={() => onChange(value === v ? null : v)}
             className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-              ${value === v ? (v ? "border-rose-500 bg-rose-500 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+              ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
             {v ? "Evet" : "Hayır"}
           </button>
         ))}

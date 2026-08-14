@@ -87,7 +87,7 @@ export default function RansonPage() {
 
         {/* GİRİŞ KRİTERLERİ */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">Girişte (Admission) — {admissionCount}/5</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">Girişte (Admission) — {admissionCount}/5</span>
           {ADMISSION.map((c) => (
             <Row key={c.key} label={c.label} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -95,7 +95,7 @@ export default function RansonPage() {
 
         {/* 48. SAAT KRİTERLERİ */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">48. Saatte — {hour48Count}/6</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">48. Saatte — {hour48Count}/6</span>
           {HOUR_48.map((c) => (
             <Row key={c.key} label={c.label} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -106,10 +106,10 @@ export default function RansonPage() {
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
             <div className="text-5xl font-black text-white">{total}</div>
-            <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-1">/ 11</span>
+            <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">/ 11</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${interpretation.bg} transition-all duration-500`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block text-center md:text-left">ŞİDDET DEĞERLENDİRMESİ</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block text-center md:text-left">ŞİDDET DEĞERLENDİRMESİ</span>
             <p className={`text-2xl font-black italic tracking-tight text-center md:text-left ${interpretation.color}`}>
               {interpretation.label}
             </p>

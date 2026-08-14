@@ -36,7 +36,7 @@ export default function PpiPage() {
               {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
             </div>
             <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
+            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
             <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
           </label>
         ))}
@@ -53,8 +53,8 @@ export default function PpiPage() {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </div>
         <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>{label}</span>
-          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200/60' : 'text-slate-400'}`}>{sub}</span>
+          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
         </div>
       </div>
       <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
@@ -92,7 +92,7 @@ export default function PpiPage() {
             <div className="text-5xl font-black text-white">{rounded}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">TAHMİNİ HAYATTA KALMA</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">TAHMİNİ HAYATTA KALMA</span>
             <p className={`text-xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
             <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
           </div>

@@ -114,11 +114,11 @@ export default function NEWS2Page() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Solunum Sayısı (dk)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Solunum Sayısı (dk)</span>
               <input type="text" inputMode="decimal" value={rr} onChange={e=>setRr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <div className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">SpO₂ (%)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">SpO₂ (%)</span>
               <div className="flex gap-2">
                 <input aria-label="SpO2 yüzdesi" type="text" inputMode="decimal" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
                 <button onClick={()=>setOnO2(!onO2)} className={`px-4 rounded-xl text-[10px] font-black transition-all border-2 ${onO2 ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-slate-400'}`}>
@@ -127,19 +127,19 @@ export default function NEWS2Page() {
               </div>
             </div>
             <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sistolik KB (mmHg)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Sistolik KB (mmHg)</span>
               <input type="text" inputMode="decimal" value={sbp} onChange={e=>setSbp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Nabız (dk)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Nabız (dk)</span>
               <input type="text" inputMode="decimal" value={hr} onChange={e=>setHr(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Sıcaklık (°C)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Sıcaklık (°C)</span>
               <input type="text" inputMode="decimal" value={temp} onChange={e=>setTemp(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
             </label>
             <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest pl-1">Bilinç (AVPU)</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Bilinç (AVPU)</span>
               <select value={avpu} onChange={e=>setAvpu(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold appearance-none">
                 <option value="A">Alert (Uyanık)</option>
                 <option value="V">Voice (Sese Tepki)</option>
@@ -157,7 +157,7 @@ export default function NEWS2Page() {
             <div className="text-6xl font-black text-white">{total}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-8 flex flex-col justify-center border-2 ${risk.border} ${risk.bg} shadow-sm transition-all duration-500`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">KLİNİK RİSK DURUMU</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK RİSK DURUMU</span>
             <p className={`text-2xl font-black italic tracking-tight ${risk.color}`}>
               {risk.label}
             </p>
@@ -167,7 +167,7 @@ export default function NEWS2Page() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6 text-center">
           <ToolShare params={params}/>
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.2em] leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.2em] leading-relaxed italic">
             ⚠️ Bu araç RCP NEWS2 kılavuzuna dayanmaktadır. 3 puanlık tekil parametre skorları veya toplam 5+ puan durumunda acil klinik değerlendirme (Medical Emergency Team) gerekebilir.
           </p>
         </div>

@@ -68,7 +68,7 @@ export default function ActhStimPage() {
               className={`w-full text-left p-4 rounded-2xl border transition-all
                 ${doseIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
               <div className={`text-sm font-bold ${doseIdx === i ? 'text-white' : 'text-blue-950'}`}>{d.label}</div>
-              <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${doseIdx === i ? 'text-blue-200/70' : 'text-slate-400'}`}>{d.desc}</div>
+              <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${doseIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>{d.desc}</div>
             </button>
           ))}
         </div>
@@ -106,7 +106,7 @@ export default function ActhStimPage() {
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">YORUM — Eşik {proto.cutoff} μg/dL</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">YORUM — Eşik {proto.cutoff} μg/dL</div>
             <p className={`text-xl font-black italic tracking-tight ${interp.color}`}>{interp.label}</p>
             <p className={`text-sm font-bold mt-1 ${interp.color} opacity-80`}>{interp.sub}</p>
           </div>

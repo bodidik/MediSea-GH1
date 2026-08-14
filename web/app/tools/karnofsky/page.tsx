@@ -54,12 +54,12 @@ export default function KarnofskyPage() {
                   ${selected === g.value ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                 <div className="flex items-center gap-4">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm shrink-0
-                    ${selected === g.value ? 'bg-amber-400 text-blue-900' : 'bg-white border border-slate-200 text-blue-900/60'}`}>
+                    ${selected === g.value ? 'bg-amber-400 text-blue-900' : 'bg-white border border-slate-200 text-blue-900/80'}`}>
                     {g.value}
                   </div>
                   <div>
                     <span className={`text-sm font-bold block ${selected === g.value ? 'text-white' : 'text-blue-950'}`}>{g.label}</span>
-                    {g.desc && <span className={`text-[10px] font-bold uppercase tracking-widest ${selected === g.value ? 'text-blue-200/70' : 'text-slate-400'}`}>{g.desc}</span>}
+                    {g.desc && <span className={`text-[10px] font-bold uppercase tracking-widest ${selected === g.value ? 'text-blue-200' : 'text-slate-400'}`}>{g.desc}</span>}
                   </div>
                 </div>
               </button>
@@ -76,7 +76,7 @@ export default function KarnofskyPage() {
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-2">BAĞIMLILIK DÜZEYI</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">BAĞIMLILIK DÜZEYI</span>
             <p className={`text-2xl font-black italic tracking-tight ${interp.color}`}>{interp.label}</p>
             {interp.sub && <p className={`text-sm font-bold mt-1 ${interp.color} opacity-80`}>{interp.sub}</p>}
           </div>

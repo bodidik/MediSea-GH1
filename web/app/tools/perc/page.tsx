@@ -98,7 +98,7 @@ export default function PERCPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                 </div>
                 <div>
-                  <span className={`text-sm font-bold block transition-colors ${st[it.key] ? 'text-rose-900' : 'text-blue-900/70 group-hover:text-blue-900'}`}>
+                  <span className={`text-sm font-bold block transition-colors ${st[it.key] ? 'text-rose-900' : 'text-blue-900/80 group-hover:text-blue-900'}`}>
                     {it.label}
                   </span>
                   <span className={`text-[9px] font-bold uppercase tracking-widest ${st[it.key] ? 'text-rose-400' : 'text-slate-400'}`}>

@@ -44,7 +44,7 @@ export default function SectionsTable({
                 <td className="py-3 pr-4">{r.cases}</td>
                 <td className="py-3 pr-4">{r.videos}</td>
                 <td className="py-3 pr-4">{r.notes}</td>
-                <td className="py-3 pr-6 font-bold text-blue-400/90">{r.total}</td>
+                <td className="py-3 pr-6 font-bold text-blue-700">{r.total}</td>
               </tr>
             </Link>
           ))}

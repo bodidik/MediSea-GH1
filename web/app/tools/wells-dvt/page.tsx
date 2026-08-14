@@ -22,16 +22,16 @@ const ITEMS: Item[] = [
 // Gösterim skalası: 0 – 9 (negatif skorlar 0'a yapışır)
 const DVT_DISPLAY_MAX = 9;
 const ZONES = [
-  { from: -Infinity, to: 1,  label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", text: "#065f46", band: "< 1 pt" },
-  { from: 1,         to: 2,  label: "ORTA",   prob: "~%17", fill: "#f59e0b", text: "#78350f", band: "1 pt" },
-  { from: 2,         to: 9,  label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", text: "#881337", band: "≥ 2 pt" },
+  { from: -Infinity, to: 1,  label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 1 pt" },
+  { from: 1,         to: 2,  label: "ORTA",   prob: "~%17", fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "1 pt" },
+  { from: 2,         to: 9,  label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "≥ 2 pt" },
 ];
 
 // Display zones mapped to 0-9 range
 const DISPLAY_ZONES = [
-  { from: 0, to: 1, label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", text: "#065f46", band: "< 1 pt" },
-  { from: 1, to: 2, label: "ORTA",   prob: "~%17", fill: "#f59e0b", text: "#78350f", band: "1 pt" },
-  { from: 2, to: 9, label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", text: "#881337", band: "≥ 2 pt" },
+  { from: 0, to: 1, label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 1 pt" },
+  { from: 1, to: 2, label: "ORTA",   prob: "~%17", fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "1 pt" },
+  { from: 2, to: 9, label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "≥ 2 pt" },
 ];
 
 const ACTIONS = [
@@ -110,9 +110,9 @@ export default function WellsDVTPage() {
                   </div>
                   <div>
                     <span className={`text-sm font-bold block transition-colors
-                      ${sel[it.key] ? it.pts > 0 ? "text-white" : "text-blue-950" : "text-blue-900/70 group-hover:text-blue-900"}`}>{it.label}</span>
+                      ${sel[it.key] ? it.pts > 0 ? "text-white" : "text-blue-950" : "text-blue-900/80 group-hover:text-blue-900"}`}>{it.label}</span>
                     <span className={`text-[9px] font-bold uppercase tracking-widest
-                      ${sel[it.key] ? it.pts > 0 ? "text-blue-200/60" : "text-slate-500" : "text-slate-400"}`}>{it.sub}</span>
+                      ${sel[it.key] ? it.pts > 0 ? "text-blue-200" : "text-slate-500" : "text-slate-400"}`}>{it.sub}</span>
                   </div>
                 </div>
                 <input type="checkbox" className="sr-only" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
@@ -242,12 +242,12 @@ export default function WellsDVTPage() {
               return (
                 <div key={z.label} className="rounded-xl p-3 text-center border transition-all"
                   style={{
-                    background: active ? z.fill : `${z.fill}18`,
+                    background: active ? z.koyu : `${z.fill}18`,
                     borderColor: active ? z.fill : `${z.fill}40`,
                   }}>
                   <p className="text-[9px] font-black uppercase tracking-widest" style={{ color: active ? "white" : z.text }}>{z.label}</p>
-                  <p className="text-[8px] font-bold" style={{ color: active ? "rgba(255,255,255,0.8)" : z.text + "99" }}>{z.band}</p>
-                  <p className="text-[9px] font-black mt-0.5" style={{ color: active ? "white" : z.fill }}>{z.prob}</p>
+                  <p className="text-[8px] font-bold" style={{ color: active ? "white" : z.text }}>{z.band}</p>
+                  <p className="text-[9px] font-black mt-0.5" style={{ color: active ? "white" : z.koyu }}>{z.prob}</p>
                 </div>
               );
             })}

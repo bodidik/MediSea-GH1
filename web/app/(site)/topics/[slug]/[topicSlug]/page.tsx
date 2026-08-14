@@ -293,7 +293,7 @@ export default async function TopicDetailPage({
                       className="group p-3 bg-slate-50 border border-slate-100 rounded-[1.75rem] hover:border-blue-900 hover:bg-white hover:shadow-xl transition-all duration-300 flex justify-between items-center"
                     >
                       <div className="flex items-center gap-4">
-                        <span className="text-xs font-black text-blue-900/20 group-hover:text-blue-900/40 transition-colors italic">
+                        <span className="text-xs font-black text-blue-900/80 group-hover:text-blue-900/80 transition-colors italic">
                           #{child.order < 99 ? child.order : "•"}
                         </span>
                         <h3 className="text-base font-black text-blue-950 uppercase italic group-hover:text-blue-700">
@@ -342,7 +342,7 @@ export default async function TopicDetailPage({
 
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
-                  <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
+                  <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
                   <div className="whitespace-pre-wrap">{topicItem.summary}</div>
                 </div>
               )}

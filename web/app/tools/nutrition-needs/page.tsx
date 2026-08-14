@@ -105,7 +105,7 @@ export default function NutritionNeedsPage() {
             <div className="text-5xl font-black text-white italic">{energyResult.toFixed(0)} <span className="text-xl not-italic text-blue-300">kcal</span></div>
           </div>
           <div className="bg-white rounded-[2.5rem] p-8 text-center border-2 border-blue-900 shadow-xl space-y-2">
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
             <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} <span className="text-xl not-italic text-blue-400">g</span></div>
           </div>
         </div>

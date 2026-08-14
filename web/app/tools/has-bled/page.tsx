@@ -109,10 +109,10 @@ export default function HasBledPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                   </div>
                   <div>
-                    <span className={`text-sm font-bold block transition-colors ${state[it.key] ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>
+                    <span className={`text-sm font-bold block transition-colors ${state[it.key] ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>
                       {it.label}
                     </span>
-                    <span className={`text-[9px] font-bold uppercase tracking-widest ${state[it.key] ? 'text-blue-200/60' : 'text-slate-400'}`}>
+                    <span className={`text-[9px] font-bold uppercase tracking-widest ${state[it.key] ? 'text-blue-200' : 'text-slate-400'}`}>
                       {it.sub}
                     </span>
                   </div>
@@ -133,7 +133,7 @@ export default function HasBledPage() {
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${statusBg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">KLİNİK DEĞERLENDİRME</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK DEĞERLENDİRME</span>
             <p className={`text-base font-black leading-relaxed italic ${statusColor}`}>
               {comment}
             </p>
