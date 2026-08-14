@@ -78,7 +78,7 @@ export default function EcogPage() {
                   <span className={`text-sm font-black block transition-colors ${selected === g.value ? 'text-white' : 'text-blue-950'}`}>
                     {g.label}
                   </span>
-                  <span className={`text-[10px] font-bold uppercase tracking-widest ${selected === g.value ? 'text-blue-200/70' : 'text-slate-400'}`}>
+                  <span className={`text-[10px] font-bold uppercase tracking-widest ${selected === g.value ? 'text-blue-200' : 'text-slate-400'}`}>
                     {g.desc}
                   </span>
                 </div>
@@ -114,7 +114,7 @@ export default function EcogPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ ECOG performans durumu, kemoterapi/klinik çalışma uygunluğu ve prognoz değerlendirmesinde kullanılan standart bir fonksiyonel kapasite ölçeğidir (Kaynak: Eastern Cooperative Oncology Group). Tedavi kararı tek başına bu skora dayandırılmamalıdır.
           </p>
         </div>

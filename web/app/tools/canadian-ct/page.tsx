@@ -63,7 +63,7 @@ export default function CanadianCTPage() {
           <button key={String(v)} type="button"
             onClick={() => onChange(value === v ? null : v)}
             className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-              ${value === v ? (v ? "border-rose-500 bg-rose-500 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+              ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
             {v ? "Evet" : "Hayır"}
           </button>
         ))}
@@ -101,7 +101,7 @@ export default function CanadianCTPage() {
         </div>
 
         <div>
-          <p className="text-[9px] font-black text-rose-600 uppercase tracking-widest mb-2 px-1">Yüksek Risk Kriterleri (herhangi biri → BT gerekli)</p>
+          <p className="text-[9px] font-black text-rose-700 uppercase tracking-widest mb-2 px-1">Yüksek Risk Kriterleri (herhangi biri → BT gerekli)</p>
           <div className="space-y-2">
             {HIGH_RISK.map(item => (
               <CriterionRow key={item.id} item={item} value={high[item.id]}
@@ -111,7 +111,7 @@ export default function CanadianCTPage() {
         </div>
 
         <div>
-          <p className="text-[9px] font-black text-amber-600 uppercase tracking-widest mb-2 px-1">Orta Risk Kriterleri (herhangi biri → BT önerilir)</p>
+          <p className="text-[9px] font-black text-amber-700 uppercase tracking-widest mb-2 px-1">Orta Risk Kriterleri (herhangi biri → BT önerilir)</p>
           <div className="space-y-2">
             {MEDIUM_RISK.map(item => (
               <CriterionRow key={item.id} item={item} value={med[item.id]}

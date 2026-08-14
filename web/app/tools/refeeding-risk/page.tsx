@@ -66,7 +66,7 @@ export default function RefeedingRiskPage() {
     checked: Set<string>; set: React.Dispatch<React.SetStateAction<Set<string>>>;
   }) => (
     <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
-      <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-4">{title}</p>
+      <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{title}</p>
       <div className="space-y-3">
         {items.map(item => (
           <label key={item.id} className="flex items-start gap-3 cursor-pointer">
@@ -107,11 +107,11 @@ export default function RefeedingRiskPage() {
 
         {risk && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${risk.border} ${risk.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">REFEEDİNG SENDROMU RİSKİ</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">REFEEDİNG SENDROMU RİSKİ</div>
             <p className={`text-2xl font-black italic tracking-tight ${risk.color}`}>{risk.label}</p>
             <p className={`text-sm font-bold mt-1 ${risk.color} opacity-80`}>{risk.sub}</p>
             <div className="mt-4 space-y-2">
-              <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/40">ÖNERİLER</p>
+              <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80">ÖNERİLER</p>
               {risk.recs.map((r, i) => (
                 <div key={i} className="flex gap-2 items-start">
                   <span className={`text-xs font-black ${risk.color} opacity-60 flex-shrink-0 mt-0.5`}>•</span>

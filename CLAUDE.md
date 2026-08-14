@@ -354,6 +354,19 @@ güven verir.
   arasındaydı (eşik 4.5). Bir basamak koyulaştırıldı. **Bu müdahale bir
   yerde geri TEPTİ ve o ders aşağıda.**
 
+**`dark:` varyantları ETKİSİZ — ve öyle kalmalı.** `tailwind.config.js`
+içinde `darkMode: "class"` var ama kök ögeye `.dark` koyan kimse yok; amaç
+koyu tema açmak değil, varyantları susturmak. Uygulamada koyu tema hiç yok
+(ölçüldü: `app/` altında `dark:` kullanan dosya sayısı sıfır), ama konu
+içeriklerinin 17'si 397 `dark:` sınıfı taşıyor. Varsayılan `media` kipinde
+bunlar işletim sistemi koyu kipteyse devreye giriyor ve baştan sona açık
+bir arayüzün içinde koyu tablo satırları üretiyordu — yazı rengi uyum
+sağlamadığı için kontrast 1.37'ye düşüyordu.
+
+**Bu kusur yalnızca koyu kipte görünüyor.** Erişilebilirlik taraması
+yaparken tarayıcıyı bir kez koyu kipe alıp tekrarla; aksi hâlde içerikteki
+`dark:` sınıfları hiç ölçülmez.
+
 **Kontrast ölçerken iki tuzak — ikisi de yaşandı:**
 
 - **Degradeyi göremeyen ölçüm.** Zemin yalnızca `backgroundColor` okunarak
@@ -417,10 +430,15 @@ tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
 
 ### Route grubu dışındaki sayfalar AppShell almaz
 
-`app/tools/*` ve `app/kayseritip/*` `(site)` grubunun DIŞINDA. AppShell'in
+`app/tools/*`, `app/kayseritip/*` ve ayrıca **`app/giris`, `app/kayit`,
+`app/profile`** `(site)` grubunun DIŞINDA. AppShell'in
 verdiği hiçbir şeyi almıyorlar: üst menü, alt bilgi, `<main id="icerik">` ve
 atlama bağlantısı. Ölçüldü — 115 araç sayfasında `main`/`nav`/`header`/
 `footer` sayısı **sıfırdı**.
+
+**Kök dizindeki `giris`/`kayit`/`profile` de aynı boşluktaydı** ve ölçümde
+üçünde de `main` sayısı sıfırdı; düzenleri artık `<main>` sarıyor. Üst menü
+ve alt bilgi bilerek verilmiyor (odaklanmış yüzeyler), landmark ise şart.
 
 Bu gruplara yeni sayfa eklerken landmark'ları kendin sağla. Araç tarafında
 çözüm iki yerde: `app/tools/layout.tsx` `<main>` sarıyor, `ToolTopNav`
@@ -451,6 +469,52 @@ Yeni bir alan eklerken: ya `<label htmlFor>` + `<input id>` çifti, ya
 **`alert` ile `status` farkı önemli:** `alert` sonradan DOM'a eklenince
 duyurulur, bu yüzden koşullu basılabilir. `status` böyle değil — bölgenin
 içerik değişmeden ÖNCE DOM'da bulunması gerekiyor, yoksa ilk mesaj kaçar.
+
+**Kaynakta `htmlFor` aramak da yanıltır — ters yönde.** Klinik araçların
+çoğu `<input>`'u `<label>` ile SARIYOR; sarmalayan etiket geçerli bir ad
+kaynağı, yani `htmlFor` yokluğu "adsız" demek değil. Grep bir dönem
+"68 araçta bağlantılı etiket yok" dedi; tarayıcıda ad hesaplatılınca
+gerçek sayı 13 araçta 21 alandı.
+
+### Gizlenen form kontrolü `hidden` ile gizlenmez
+
+Araçlarda onay kutusu/radyo görsel olarak sahte bir kutuyla çiziliyor,
+gerçek `<input>` gizleniyor. Bu bir dönem `className="hidden"` ile
+yapılıyordu — yani `display: none`. Ölçüldü: böyle bir öge odak sırasına
+girmiyor, sarmalayan `<label>` de odaklanabilir değil, dolayısıyla
+**29 araçtaki 36 kontrol klavyeyle hiç işletilemiyordu** (CURB-65'te 5,
+CHA2DS2-VASc'ta 8, Charlson'da 19). Fareyle çalıştığı için yıllarca
+görünmedi.
+
+Doğrusu `sr-only`: görünmez ama odaklanılabilir ve Space ile işaretlenir.
+Görünmeyen ögenin kendi odak halkası işe yaramadığı için halkayı
+sarmalayan etiket verir — `focus-within:ring-2 focus-within:ring-blue-700
+focus-within:ring-offset-2`. `globals.css` sonundaki `:has()` kuralı
+yalnızca yedek.
+
+### Doğrulama betiği, doğruladığı betiğin hatasını PAYLAŞMAMALI
+
+Yukarıdaki halka sınıfları bir betikle yerleştirildi: `<input>`ten yukarı
+14 satır içinde `<label>` ara. 10 dosyada mesafe 16-23 satırdı, yani
+atlandılar — ve **doğrulama betiği aynı 14 satırlık pencereyi kullandığı
+için "eksik yok" dedi.** Kusuru ancak bağımsız bir ölçüt yakaladı:
+dosyadaki `sr-only` sayısı ile halka sınıfı sayısını karşılaştırmak.
+
+Bir yerleştirmeyi kendi arama mantığıyla doğrulama; **sonucu say.**
+
+### Bu ortamda sayfaya `<style>` enjekte etmek İŞE YARAMIYOR
+
+Bir CSS kuralının uygulanıp uygulanmadığını sınamak için
+`document.head.appendChild(style)` denendi: `!important` ile bile hiçbir
+hesaplanmış değer değişmedi, temiz bir sekmede de aynı. Yani enjeksiyon
+bir doğrulama yöntemi değil ve "kuralım uygulanmıyor" sonucu ondan
+çıkarılamaz. Okunan hesaplanmış değerler ise gerçek — kural sınarken
+`el.matches(seçici)`, `getComputedStyle(el).getPropertyValue('--tw-…')`
+ve stylesheet içindeki `cssText` üçlüsüne bak.
+
+Uzun değerleri kırpma: `boxShadow` bir dönem "none" sanıldı, çünkü
+Tailwind halkası dizenin ilerisindeydi ve ilk 90 karakter şeffaf
+yer tutuculardı.
 
 Ölçmenin doğru yolu erişilebilir adı HESAPLATMAK: `aria-label` →
 `aria-labelledby` → `label[for]` → sarmalayan `<label>`. Kaynakta `<label>`
@@ -502,9 +566,29 @@ ve benzerleri) ve dar ekranda sıkışan bir düzen orada kırılır.
 genişliğe çıkıyor ama 288px'lik kutularında **kayıyor, kırpılmıyor**
 (`overflowX: auto` + kolon başına en az 110px).
 
-Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak. Ölçütler:
-`documentElement.scrollWidth` viewport'a eşit olmalı; taşan bir öge varsa
-kaydırılabilir bir atası olmalı.
+Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak.
+
+**Taşma ölçütü `scrollWidth` DEĞİL, gerçek kaydırma denemesi olmalı.**
+`resize_window` ile mobil öykünmesi açılan sekmede `window.innerWidth` 400
+dönerken `documentElement.clientWidth` 375 kalıyor; `scrollWidth >
+clientWidth` ölçütü orada 25px'lik SAHTE taşma üretiyor. Doğrusu:
+`scrollTo(9999,0)` çağırıp `scrollX > 0` mı diye bakmak.
+
+**Taşan şey ögenin KUTUSU olmayabilir, İÇERİĞİ olabilir.** Konu başlığı
+36px ve tıbbi terimler uzun; H1'in kutusu 296px (sınır içinde) ama
+`scrollWidth` 353'tü — metin kutudan taşıyor ve belgeyi kaydırıyordu.
+137 konunun 26'sı bu yüzden kayıyordu ve kutu tarayan ölçüm hiçbirini
+görmedi. Ölçüte `scrollWidth > clientWidth` (öge başına) da ekle; kaynağı
+bulmanın en hızlı yolu sayfayı sağa kaydırıp `elementFromPoint` ile en sağ
+uçta ne boyandığına bakmak. Çare `break-words` (başlıklarda `hyphens-auto`
+ile birlikte).
+
+Taşan ögeyi ararken üç eleme gerekiyor: `position: fixed` ögeler,
+**kırpan atası olanlar** (`getBoundingClientRect` kırpılmış ögenin de TAM
+geometrisini döndürür — footer'ın `overflow-hidden` içindeki `w-96`
+süslemesi bu yüzden "taşıyor" görünür) ve sözde-ögeler
+(`querySelectorAll` onları hiç görmez; bir sayfada 41px'lik gerçek kayma
+bu yüzden kaynaksız kaldı).
 
 ### Hata ve boş durumların metni de üründür
 
@@ -726,9 +810,19 @@ aralarında 8'er px. Kapsayıcı flex ise sonucu bir `<span>` içine al. Taramas
 tek satır: her `<strong>`'un ebeveyninin `display`'ine bak, `flex`/`grid`
 görürsen kusur.
 
-### Tarayıcıda kontrast ölçen betiğin üç tuzağı
+### Tarayıcıda kontrast ölçen betiğin altı tuzağı
 
-Üçü de gerçekten yanılttı; ikisi kusur uydurdu, biri gerçek kusuru gizledi.
+Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru gizledi.
+
+- **SAYDAM METİN — en pahalısı, en sinsisi.** `getComputedStyle(el).color`
+  değerinden ilk üç sayıyı okuyup rengi opak saymak, Tailwind'in
+  `text-blue-900/40` gibi sınıflarını **tamamen görünmez kılar**: DOM'a
+  `rgba(30, 58, 138, 0.4)` olarak gelir, alfa atılınca kontrast 10.36
+  hesaplanır, gerçekte 2.16'dır. Bu körlük yüzünden araç sayfalarındaki
+  200'ü aşkın yazı — her form alanının ÜSTÜNDEKİ etiket dahil — bir tur
+  boyunca "temiz" göründü.
+  Doğrusu: alfayı ayrıştır ve zemine bindir:
+  `etkin = renk*alfa + zemin*(1-alfa)`.
 
 - **Yalnızca yaprak ögeye bakmak kusur GİZLER.** `e.children.length === 0`
   ile süzersen `<button>Zor<span>2 · kısa</span></button>` gibi düğmelerde
@@ -743,7 +837,53 @@ görürsen kusur.
   koyu degrade üzerindeki beyaz yazı 1.05 kontrast gibi görünüyor.
 - **Emoji kusur UYDURUR.** Emoji kendi renginde çizilir, `color` ona
   uygulanmaz. Metni yalnızca emojiden ibaret olan ögeleri ölçme.
+- **SVG metni kusur UYDURUR.** `<text>` rengini `fill` ile alır; `color`
+  ölçmek alakasız bir değer verir ve zemini de kardeş `<rect>`'tir.
+  Wells grafiğindeki bant etiketleri bu yüzden kusurlu göründü.
+  `el.namespaceURI` SVG ise atla.
+- **Mutlak konumlu öge kusur UYDURUR.** `position: absolute` bir yazı
+  görsel olarak KARDEŞİNİN üstünde durur; ata zincirini yürüyen zemin
+  arayıcı onun altındaki koyu kutuyu göremez ve sayfanın beyazını zemin
+  sanar. Birim çevirici bu yüzden 1.42 gösteriyordu, gerçekte 7.29'du.
+
+**Çok sayfalı taramayı YEREL dev sunucuda yapma.** Next dev her rotayı ilk
+ziyarette derliyor; 114 araç sayfası için tarama 13. sayfada saatlerce
+takıldı. Aynı tarama CANLIDA birkaç dakikada bitti, çünkü orada bütün
+rotalar önceden derlenmiş. Yerel ölçüm tek sayfa ya da yeni değiştirilmiş
+birkaç sayfa için doğru araç; kütle taraması canlıda (ya da `npm start`
+ile üretim derlemesinde) yapılır — yalnız o zaman ölçtüğün şeyin son
+dağıtım olduğunu unutma.
+
+Sayfayı iframe'e yükleyip ölçerken **doğru sayfada olduğunu da doğrula**:
+`d.location.pathname` beklenen yola eşit mi, gövdede "Sayfa bulunamadı"
+var mı. Bir tur, var olmayan araç adlarıyla (elle yazılmış liste) 404
+sayfasını ölçtü ve ölçüm sonuçları bir öncekinden devraldığı için
+tekrar eden sahte kusurlar üretti. Araç listesini dosya sisteminden al.
 
 Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
 yüzeyden ayırt edilemez.
+
+### Paralel oturumlar AYNI çalışma ağacını paylaşıyor — commit'ler karışır
+
+Arka planda başlatılan işler ayrı bir worktree'de değil, bu depoda
+çalışıyor. Sonuç ölçüldü: bir oturum `git add` ile dosyasını sahneye
+koyduğu sırada başka bir oturum `git commit` çalıştırdı ve **sahnedeki
+yabancı dosya onun commit'ine girdi.** Ortaya çıkan commit'in mesajı
+kendi içeriğini anlatmıyor:
+
+`521ae13 "Premium yüzeylerde markdown kalın işareti düz metin basılıyordu"`
+aslında yalnızca premium YDUS **paylaşım kartını** (`opengraph-image.tsx`,
+76 satır) içeriyor; markdown işiyle ilgisi yok. Commit gönderildiği için
+geçmiş yeniden yazılmadı — düzeltme bu notla yapılıyor.
+
+Bu depoda commit mesajları belge yerine geçtiği için yanlış etiketlenmiş
+bir commit gerçek bir kayıp. Korunma yolu:
+
+- Sahneleme ile commit'i **tek komutta** yap: `git add <yol> && git commit`
+  yerine `git commit <yol> -m …` (yalnızca verilen yolu kaydeder, sahnede
+  ne olduğuna bakmaz).
+- Commit'ten sonra `git show --stat HEAD` ile içeriğin beklediğinle
+  aynı olduğunu gör; bu turda kusuru yakalayan tam olarak bu oldu.
+- Paralel bir iş çalışırken onun dokunacağı dosyalara (iş tanımında
+  yazılı) el sürme; bu ayrı ve zaten uygulanan bir kural.

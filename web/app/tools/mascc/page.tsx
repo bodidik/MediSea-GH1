@@ -26,7 +26,7 @@ export default function MasccPage() {
   const params = { b: burden, h: hypotension?1:"", c: copd?1:"", s: solidOrNoFungal?1:"", d: dehydration?1:"", o: outpatient?1:"", a: age60?1:"" };
 
   const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
-    <label className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
       ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
       <div className="flex items-center gap-4">
         <div className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0
@@ -34,11 +34,11 @@ export default function MasccPage() {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </div>
         <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>{label}</span>
-          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200/60' : 'text-slate-400'}`}>{sub}</span>
+          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
         </div>
       </div>
-      <input type="checkbox" className="hidden" checked={checked} onChange={onChange} />
+      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
       <span className={`text-[10px] font-black tracking-widest shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
     </label>
   );
@@ -64,14 +64,14 @@ export default function MasccPage() {
             <span className="text-sm font-bold text-blue-900/80 block">Hastalık Yükü / Semptom Şiddeti</span>
             <div className="grid gap-1.5">
               {BURDEN_OPTS.map(([l, v]) => (
-                <label key={v} className={`flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+                <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
                   ${burden === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
                     ${burden === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {burden === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="hidden" checked={burden === v} onChange={() => setBurden(v)} />
-                  <span className={`text-[12px] font-bold flex-1 ${burden === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
+                  <input type="radio" className="sr-only" checked={burden === v} onChange={() => setBurden(v)} />
+                  <span className={`text-[12px] font-bold flex-1 ${burden === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
                   <span className={`text-[10px] font-black ${burden === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
                 </label>
               ))}
@@ -94,11 +94,11 @@ export default function MasccPage() {
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed
             ${lowRisk ? 'border-emerald-200 bg-emerald-50' : 'border-rose-200 bg-rose-50'}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">RİSK</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>
             <p className={`text-2xl font-black italic tracking-tight ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
               {lowRisk ? 'DÜŞÜK RİSK' : 'YÜKSEK RİSK'}
             </p>
-            <p className={`text-sm font-bold mt-1 ${lowRisk ? 'text-emerald-600' : 'text-rose-600'} opacity-80`}>
+            <p className={`text-sm font-bold mt-1 ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
               {lowRisk ? 'Eşik: ≥21 puan · Ayaktan oral antibiyotik değerlendirilebilir' : 'Eşik: <21 puan · Hastane yatışı ve IV antibiyotik önerilir'}
             </p>
           </div>

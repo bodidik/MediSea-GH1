@@ -23,7 +23,7 @@ function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number }) {
   const r = interpret(fasting, twoHour);
   return (
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
-      <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">SONUÇ (ADA Kriterleri)</div>
+      <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ (ADA Kriterleri)</div>
       <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
       <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
@@ -32,8 +32,8 @@ function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number }) {
           { label: "2. Saat", ref: "< 140 normal · 140–199 BGT · ≥ 200 DM" },
         ].map(({ label, ref }) => (
           <div key={label} className="bg-white/60 rounded-xl p-3 border border-white">
-            <div className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest mb-0.5">{label}</div>
-            <div className="text-[10px] font-bold text-blue-900/70">{ref}</div>
+            <div className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest mb-0.5">{label}</div>
+            <div className="text-[10px] font-bold text-blue-900/80">{ref}</div>
           </div>
         ))}
       </div>
@@ -63,7 +63,7 @@ function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; 
         { name: "Carpenter-Coustan (100g OGTT — ≥2 anormal)", items: cc.map(i => ({ ...i, positive: i.val > 0 && i.val >= i.cut })), positive: ccPos },
       ].map(({ name, items, positive }) => (
         <div key={name} className={`p-5 rounded-2xl border-2 border-dashed ${positive ? 'bg-rose-50 border-rose-200' : 'bg-emerald-50 border-emerald-200'}`}>
-          <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/40 mb-2">{name}</div>
+          <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 mb-2">{name}</div>
           <p className={`text-lg font-black italic mb-3 ${positive ? 'text-rose-700' : 'text-emerald-700'}`}>
             {positive ? "GDM TANISI" : "GDM YOK"}
           </p>
@@ -85,7 +85,7 @@ function AcroResult({ nadir, assay }: { nadir: number; assay: "standard" | "sens
   const suppressed = nadir > 0 && nadir < cutoff;
   return (
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${suppressed ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
-      <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">
+      <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">
         SONUÇ — {assay === "sensitive" ? "Hassas Assay" : "Standart Assay"} eşiği: {cutoff} μg/L
       </div>
       <p className={`text-2xl font-black italic tracking-tight ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
@@ -166,12 +166,12 @@ export default function OgttPage() {
             <div className="space-y-4">
               <div className="flex gap-3">
                 {(["sensitive", "standard"] as const).map(a => (
-                  <label key={a} className={`flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
+                  <label key={a} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
                     ${assay === a ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
-                    <input type="radio" className="hidden" checked={assay === a} onChange={() => setAssay(a)} />
+                    <input type="radio" className="sr-only" checked={assay === a} onChange={() => setAssay(a)} />
                     <div className="text-center">
                       <div className={`text-sm font-bold ${assay === a ? 'text-white' : 'text-blue-900/80'}`}>{a === "sensitive" ? "Hassas Assay" : "Standart Assay"}</div>
-                      <div className={`text-[9px] font-bold uppercase tracking-widest ${assay === a ? 'text-blue-200/70' : 'text-slate-400'}`}>{a === "sensitive" ? "Eşik: 0.4 μg/L" : "Eşik: 1.0 μg/L"}</div>
+                      <div className={`text-[9px] font-bold uppercase tracking-widest ${assay === a ? 'text-blue-200' : 'text-slate-400'}`}>{a === "sensitive" ? "Eşik: 0.4 μg/L" : "Eşik: 1.0 μg/L"}</div>
                     </div>
                   </label>
                 ))}

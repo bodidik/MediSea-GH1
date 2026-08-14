@@ -86,7 +86,7 @@ export default function TftPage() {
               { label: "FT3", val: ft3N, low: 2.3, high: 4.2, unit: "pg/mL" },
             ].map(({ label, val, low, high, unit }) => {
               const status = val === 0 ? "unknown" : val < low ? "low" : val > high ? "high" : "normal";
-              const colors = { low: "bg-blue-500 text-white", high: "bg-rose-500 text-white", normal: "bg-emerald-500 text-white", unknown: "bg-slate-200 text-slate-400" };
+              const colors = { low: "bg-blue-700 text-white", high: "bg-rose-700 text-white", normal: "bg-emerald-700 text-white", unknown: "bg-slate-200 text-slate-400" };
               const icons  = { low: "↓", high: "↑", normal: "N", unknown: "–" };
               return (
                 <div key={label} className={`rounded-2xl p-4 text-center ${colors[status]}`}>
@@ -101,11 +101,11 @@ export default function TftPage() {
 
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">PATERN TANI</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PATERN TANI</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-70`}>{result.detail}</p>
             <div className="mt-3 pt-3 border-t border-current/10">
-              <span className="text-[9px] font-black uppercase tracking-widest text-blue-900/40 block mb-1">ÖRNEK NEDENLER</span>
+              <span className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 block mb-1">ÖRNEK NEDENLER</span>
               <p className={`text-[11px] font-bold ${result.color} opacity-70`}>{result.examples}</p>
             </div>
           </div>

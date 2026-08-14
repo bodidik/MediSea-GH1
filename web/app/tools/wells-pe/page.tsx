@@ -18,9 +18,9 @@ const ITEMS: Item[] = [
 
 const PE_MAX = 12.5;
 const ZONES = [
-  { from: 0, to: 2,    label: "DÜŞÜK",   prob: "~%1.3", fill: "#10b981", text: "#065f46", band: "< 2 pt" },
-  { from: 2, to: 6,    label: "ORTA",    prob: "~%16",  fill: "#f59e0b", text: "#78350f", band: "2–6 pt" },
-  { from: 6, to: 12.5, label: "YÜKSEK",  prob: "> %60", fill: "#f43f5e", text: "#881337", band: "> 6 pt" },
+  { from: 0, to: 2,    label: "DÜŞÜK",   prob: "~%1.3", fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 2 pt" },
+  { from: 2, to: 6,    label: "ORTA",    prob: "~%16",  fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "2–6 pt" },
+  { from: 6, to: 12.5, label: "YÜKSEK",  prob: "> %60", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "> 6 pt" },
 ];
 
 const ACTIONS = [
@@ -82,7 +82,7 @@ export default function WellsPEPage() {
           <div className="grid gap-2">
             {ITEMS.map((it) => (
               <label key={it.key}
-                className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                   ${sel[it.key] ? "bg-blue-900 border-blue-900 text-white shadow-md" : "bg-slate-50 border-slate-100 hover:border-blue-900/30"}`}>
                 <div className="flex items-center gap-4">
                   <div className={`w-6 h-6 rounded-lg border flex items-center justify-center transition-all
@@ -90,11 +90,11 @@ export default function WellsPEPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                   </div>
                   <div>
-                    <span className={`text-sm font-bold block transition-colors ${sel[it.key] ? "text-white" : "text-blue-900/70 group-hover:text-blue-900"}`}>{it.label}</span>
-                    <span className={`text-[9px] font-bold uppercase tracking-widest ${sel[it.key] ? "text-blue-200/60" : "text-slate-400"}`}>{it.sub}</span>
+                    <span className={`text-sm font-bold block transition-colors ${sel[it.key] ? "text-white" : "text-blue-900/80 group-hover:text-blue-900"}`}>{it.label}</span>
+                    <span className={`text-[9px] font-bold uppercase tracking-widest ${sel[it.key] ? "text-blue-200" : "text-slate-400"}`}>{it.sub}</span>
                   </div>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={!!sel[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${sel[it.key] ? "text-amber-400" : "text-slate-400"}`}>+{it.pts}</span>
               </label>
             ))}
@@ -212,12 +212,12 @@ export default function WellsPEPage() {
               return (
                 <div key={z.label} className="rounded-xl p-3 text-center border transition-all"
                   style={{
-                    background: active ? z.fill : `${z.fill}18`,
+                    background: active ? z.koyu : `${z.fill}18`,
                     borderColor: active ? z.fill : `${z.fill}40`,
                   }}>
                   <p className="text-[9px] font-black uppercase tracking-widest" style={{ color: active ? "white" : z.text }}>{z.label}</p>
-                  <p className="text-[8px] font-bold" style={{ color: active ? "rgba(255,255,255,0.8)" : z.text + "99" }}>{z.band}</p>
-                  <p className="text-[9px] font-black mt-0.5" style={{ color: active ? "white" : z.fill }}>{z.prob}</p>
+                  <p className="text-[8px] font-bold" style={{ color: active ? "white" : z.text }}>{z.band}</p>
+                  <p className="text-[9px] font-black mt-0.5" style={{ color: active ? "white" : z.koyu }}>{z.prob}</p>
                 </div>
               );
             })}

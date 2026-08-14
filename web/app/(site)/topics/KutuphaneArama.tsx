@@ -75,7 +75,7 @@ export default function KutuphaneArama({
       {aranan.length >= 2 && (
         <div className="mb-12">
           <div className="flex items-baseline gap-3 mb-4">
-            <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em]">
+            <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em]">
               Sonuçlar
             </h2>
             <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest">
@@ -124,7 +124,7 @@ export default function KutuphaneArama({
 
       {/* BRANŞLAR */}
       <div>
-        <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em] mb-4">
+        <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em] mb-4">
           Branşlar
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

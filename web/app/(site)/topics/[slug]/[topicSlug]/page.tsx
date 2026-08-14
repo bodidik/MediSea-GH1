@@ -250,7 +250,10 @@ export default async function TopicDetailPage({
       <div className="max-w-[1400px] mx-auto">
 
         {/* Üst Yönlendirme Çubuğu */}
-        <div className="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400">
+        {/* flex-wrap: kırıntı yolu sarmıyordu ve uzun konu başlıkları 375px'te
+            sayfayı yatay kaydırtıyordu (ölçüldü: scrollWidth 406, taşan öge
+            başlık span'i). Başlık artık satır atlayabiliyor. */}
+        <div className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-black uppercase tracking-widest text-slate-400">
           {/* py-1.5: kırıntı yolu bağlantıları mobilde 16px yüksekliğindeydi,
               yani dokunma hedefi olarak WCAG asgarisinin (24px) altında. */}
           <Link href="/topics" className="py-1.5 hover:text-blue-600 transition-colors">Kütüphane</Link>
@@ -266,7 +269,13 @@ export default async function TopicDetailPage({
           {/* --- SOL KOLON: İÇERİK --- */}
           <div className="lg:col-span-8 space-y-8">
             <div className="border-l-8 border-blue-900 pl-6 py-2">
-              <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3">
+              {/* break-words: başlık 36px ve tıbbi terimler uzun. Ölçüldü —
+                  H1'in KUTUSU 296px (sınır içinde) ama scrollWidth 353, yani
+                  metin kutuyu taşıyor ve SAYFAYI yatay kaydırıyordu. Öge
+                  kutularını tarayan ölçüm bunu göremez; ölçüt öge başına
+                  scrollWidth > clientWidth. 137 konudan 26'sı bu yüzden
+                  kayıyordu (7-62px, kayma başlık uzunluğuyla artıyor). */}
+              <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
                 {topicItem.title}
               </h1>
               <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
@@ -293,7 +302,7 @@ export default async function TopicDetailPage({
                       className="group p-3 bg-slate-50 border border-slate-100 rounded-[1.75rem] hover:border-blue-900 hover:bg-white hover:shadow-xl transition-all duration-300 flex justify-between items-center"
                     >
                       <div className="flex items-center gap-4">
-                        <span className="text-xs font-black text-blue-900/20 group-hover:text-blue-900/40 transition-colors italic">
+                        <span className="text-xs font-black text-blue-900/80 group-hover:text-blue-900/80 transition-colors italic">
                           #{child.order < 99 ? child.order : "•"}
                         </span>
                         <h3 className="text-base font-black text-blue-950 uppercase italic group-hover:text-blue-700">
@@ -342,7 +351,7 @@ export default async function TopicDetailPage({
 
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
-                  <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
+                  <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
                   <div className="whitespace-pre-wrap">{topicItem.summary}</div>
                 </div>
               )}

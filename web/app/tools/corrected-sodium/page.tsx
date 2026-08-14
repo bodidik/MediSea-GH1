@@ -45,14 +45,14 @@ export default function CorrectedSodiumPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Ölçülen Sodyum (mEq/L)</span>
-            <input
+            <input aria-label="Ölçülen Sodyum (mEq/L)"
               type="text" inputMode="decimal" value={na} onChange={(e) => setNa(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Glukoz (mg/dL)</span>
-            <input
+            <input aria-label="Glukoz (mg/dL)"
               type="text" inputMode="decimal" value={glucose} onChange={(e) => setGlucose(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
@@ -66,7 +66,7 @@ export default function CorrectedSodiumPage() {
            <div className="text-7xl font-black text-white">{result}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mEq / L</span>
            {glucoseNum > 100 && (
-             <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-3">Ölçülen değere göre fark: +{delta} mEq/L</span>
+             <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">Ölçülen değere göre fark: +{delta} mEq/L</span>
            )}
         </div>
 
@@ -84,7 +84,7 @@ export default function CorrectedSodiumPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül (Katz): Na + 1.6 × ((Glukoz - 100) / 100). Ciddi hiperglisemide (&gt;400 mg/dL) bazı kaynaklar 2.4 katsayısını önerir — sonuç, gerçek serbest su açığını değerlendirmede bir başlangıç noktasıdır.
           </p>
         </div>

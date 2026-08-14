@@ -107,7 +107,7 @@ export default function AnionGapPage() {
            <div className="text-7xl font-black text-white">{displayValue}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mEq / L</span>
            {agCorrected !== null && (
-             <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-3">Düzeltmesiz AG: {ag} mEq/L</span>
+             <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">Düzeltmesiz AG: {ag} mEq/L</span>
            )}
         </div>
 
@@ -121,7 +121,7 @@ export default function AnionGapPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül: Na - (Cl + HCO₃). Normal aralık laboratuvara göre değişir (yaklaşık 8-12 mEq/L). Yüksek AG metabolik asidoz ayırıcı tanısında (MUDPILES vb.) kullanılır.
           </p>
         </div>

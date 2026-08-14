@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
+/** `main` landmark'ı buradan geliyor — gerekçesi giriş düzeninde yazılı. */
 export default function KayitDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return <main>{children}</main>;
 }

@@ -43,7 +43,7 @@ export default function PaduaPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
           <div className="grid gap-2">
             {ITEMS.map(it => (
-              <label key={it.key} className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+              <label key={it.key} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
                 ${sel[it.key] ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                 <div className="flex items-center gap-4">
                   <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
@@ -51,11 +51,11 @@ export default function PaduaPage() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                   </div>
                   <div>
-                    <span className={`text-sm font-bold block ${sel[it.key] ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>{it.label}</span>
-                    {it.sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${sel[it.key] ? 'text-blue-200/60' : 'text-slate-400'}`}>{it.sub}</span>}
+                    <span className={`text-sm font-bold block ${sel[it.key] ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{it.label}</span>
+                    {it.sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${sel[it.key] ? 'text-blue-200' : 'text-slate-400'}`}>{it.sub}</span>}
                   </div>
                 </div>
-                <input type="checkbox" className="hidden" checked={!!sel[it.key]} onChange={() => setSel(p => ({...p, [it.key]: !p[it.key]}))} />
+                <input type="checkbox" className="sr-only" checked={!!sel[it.key]} onChange={() => setSel(p => ({...p, [it.key]: !p[it.key]}))} />
                 <span className={`text-[10px] font-black tracking-widest shrink-0 ${sel[it.key] ? 'text-amber-400' : 'text-slate-400'}`}>+{it.pts}</span>
               </label>
             ))}
@@ -69,11 +69,11 @@ export default function PaduaPage() {
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed transition-all
             ${highRisk ? 'border-rose-200 bg-rose-50' : 'border-emerald-200 bg-emerald-50'}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">KARAR</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KARAR</span>
             <p className={`text-2xl font-black italic tracking-tight ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {highRisk ? 'YÜKSEK RİSK — Profilaksi Önerilir' : 'DÜŞÜK RİSK — Rutin Takip'}
             </p>
-            <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-600' : 'text-emerald-600'} opacity-80`}>
+            <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {highRisk ? 'Eşik: ≥4 puan · LMWH veya fondaparinuks değerlendir' : 'Eşik: <4 puan · Erken mobilizasyon'}
             </p>
           </div>

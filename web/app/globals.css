@@ -272,10 +272,15 @@ mark.ms-hl-u {
    ───────────────────────────────────────────────────────────────────── */
 [data-readable] :is(
   .text-xs,
+  .text-\[9px\],
   .text-\[10px\],
+  .text-\[10\.5px\],
   .text-\[11px\],
+  .text-\[11\.5px\],
   .text-\[12px\],
-  .text-\[13px\]
+  .text-\[12\.5px\],
+  .text-\[13px\],
+  .text-\[13\.5px\]
 ) {
   font-size: 0.875rem;   /* 14px — gövde metni için alt sınır */
   line-height: 1.6;
@@ -374,3 +379,55 @@ mark.ms-hl-u {
    şeridi bunu `text-blue-200` ile yapıyor. Bu sınıflardan biri koyu zemine
    konursa kontrast düşer; denetim degrade zeminleri (`background-image`)
    okuyan bir ölçümle yapılmalı, yoksa tam bu durum gözden kaçar. */
+
+/* ─────────────────────────────────────────────────────────────────────
+   GÖRSEL OLARAK GİZLİ AMA KLAVYEYLE ULAŞILABİLİR KONTROLLER
+
+   Klinik araçlarda onay kutusu/radyo düğmesi görsel olarak sahte bir
+   kutuyla çiziliyor, gerçek `<input>` ise gizleniyor. Bu bir dönem
+   `className="hidden"` ile yapılıyordu — yani `display: none`. Ölçüldü:
+   böyle bir kontrol odaklanamıyor, sarmalayan `<label>` de odaklanabilir
+   değil; dolayısıyla 29 araçtaki 36 kontrol klavyeyle HİÇ işletilemiyordu.
+   Fareyle çalıştığı için gözden kaçıyordu. CURB-65'te 5, CHA2DS2-VASc'ta 8,
+   Charlson'da 19 kontrol — yani o araçlar klavye kullanıcısına kapalıydı.
+
+   Kontroller artık `sr-only`: görünmüyor ama odak sırasında ve erişim
+   ağacında duruyor, Space ile işaretlenebiliyor.
+
+   Görünmediği için kendi odak halkası işe yaramaz (1px'e kırpılmış bir
+   ögenin çevresinde çizilir). Halkayı sarmalayan etiket gösteriyor ve bu
+   ASIL olarak etiketin kendi sınıflarıyla yapılıyor:
+   `focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2`
+   — 36 kontrolün 36'sında var, gerçek Tab ile doğrulandı.
+
+   Aşağıdaki kural yedek: sarmalayan etikete o sınıflar konmadan yeni bir
+   kontrol eklenirse odak yine görünsün. */
+label:has(input.sr-only:focus-visible) {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   OKUMA ALANINDAKİ KOYU KARTLAR
+
+   Konu içeriği kendi HTML'ini taşıyor ve içinde koyu kartlar var
+   (`bg-slate-800/900/950`). Yukarıdaki ikincil renk koyulaştırması AÇIK
+   zemin varsayıyor; bu kartların içinde ters çalışıp yazıyı okunmaz
+   yapıyordu. Ölçüldü: gebelik-ve-tiroid sayfasında koyu kartların içindeki
+   dört satır 3.07 kontrasttaydı. 411 konunun 144'ünde koyu kart var.
+
+   İkinci kural şart: içerikte koyu kartın İÇİNDE açık kart geçen 4 konu
+   var. Muafiyet oralara sızarsa yazı bu kez açık zeminde okunmaz olur —
+   premium panosunda tam bu olmuştu. Daha yüksek özgüllükle koyulaştırma
+   geri getiriliyor.
+   ───────────────────────────────────────────────────────────────────── */
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) :is(.text-slate-300, .text-slate-400, .text-slate-500),
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) :is(.text-slate-300, .text-slate-400, .text-slate-500) * {
+  color: rgb(203 213 225);   /* slate-300 — koyu zeminde okunur */
+}
+
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900)
+  :is(.bg-white, .bg-slate-50, .bg-slate-100, .bg-gray-50, .bg-gray-100, .bg-amber-50, .bg-blue-50)
+  :is(.text-slate-300, .text-slate-400, .text-slate-500) {
+  color: rgb(71 85 105);     /* slate-600 — iç içe açık kartta koyulaştırma geri */
+}

@@ -48,10 +48,10 @@ export default function BmiPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-4">
           <div className="flex gap-3">
             {(["m", "f"] as const).map(v => (
-              <label key={v} className={`flex-1 flex items-center justify-center gap-2 p-3 rounded-xl border cursor-pointer transition-all
+              <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center gap-2 p-3 rounded-xl border cursor-pointer transition-all
                 ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
-                <input type="radio" className="hidden" checked={sex === v} onChange={() => setSex(v)} />
-                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/70'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
+                <input type="radio" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
+                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
               </label>
             ))}
           </div>
@@ -76,7 +76,7 @@ export default function BmiPage() {
         </div>
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${cat.border} ${cat.bg}`}>
-          <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-2">KATEGORİ</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">KATEGORİ</span>
           <p className={`text-2xl font-black italic tracking-tight ${cat.color}`}>{cat.label}</p>
         </div>
 

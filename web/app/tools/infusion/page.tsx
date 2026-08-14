@@ -83,7 +83,7 @@ export default function InfusionPage() {
                   onChange={e => setDropFactor(e.target.value)}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5 outline-none transition-all font-bold"
                 />
-                <span className="text-[9px] text-blue-900/40 font-bold uppercase tracking-tighter">Standart Makro: 20 · Mikro: 60</span>
+                <span className="text-[9px] text-blue-900/80 font-bold uppercase tracking-tighter">Standart Makro: 20 · Mikro: 60</span>
               </label>
             </div>
 
@@ -126,9 +126,9 @@ export default function InfusionPage() {
           </div>
 
           <div className="bg-slate-50 rounded-2xl p-6 border-2 border-dashed border-blue-900/10 flex flex-col items-center justify-center">
-             <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-1">POMPA AYARI</span>
+             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">POMPA AYARI</span>
              <div className="text-4xl font-black text-blue-900">{mlPerHrFromDose}</div>
-             <span className="text-[10px] font-bold text-blue-900/60 uppercase tracking-widest mt-1">mL / SAAT</span>
+             <span className="text-[10px] font-bold text-blue-900/80 uppercase tracking-widest mt-1">mL / SAAT</span>
           </div>
         </div>
 

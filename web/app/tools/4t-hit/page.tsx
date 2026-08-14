@@ -139,7 +139,7 @@ export default function HitPage() {
         {total !== null && band && colors ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${colors.border} ${colors.bg} space-y-4`}>
             <div>
-              <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">4T TOPLAM PUAN</div>
+              <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">4T TOPLAM PUAN</div>
               <div className="flex items-baseline gap-3 mb-2">
                 <span className={`text-6xl font-black ${colors.text}`}>{total}</span>
                 <span className={`text-sm font-black ${colors.text} opacity-60`}>/ 8 puan</span>
@@ -151,7 +151,7 @@ export default function HitPage() {
             </div>
 
             <div className={`p-4 rounded-2xl border ${colors.border} bg-white/60`}>
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest mb-2">ÖNERİLEN YÖNETİM</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest mb-2">ÖNERİLEN YÖNETİM</p>
               <p className={`text-sm font-bold ${colors.text} leading-relaxed`}>{band.action}</p>
             </div>
 
@@ -187,7 +187,7 @@ export default function HitPage() {
             ].map(r => (
               <div key={r.drug} className="flex items-start gap-3 py-2 border-b border-slate-50 last:border-0">
                 <span className="text-[10px] font-black text-blue-900 w-28 shrink-0">{r.drug}</span>
-                <span className="text-[10px] font-bold text-blue-900/60">{r.note}</span>
+                <span className="text-[10px] font-bold text-blue-900/80">{r.note}</span>
               </div>
             ))}
           </div>

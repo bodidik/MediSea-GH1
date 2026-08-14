@@ -52,7 +52,11 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
           flex items-center gap-2 px-6 py-2.5 rounded-xl font-black text-[10px] uppercase tracking-[0.2em] transition-all
           ${copied 
             ? 'bg-emerald-600 text-white border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]' 
-            : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-blue-500/50 shadow-lg active:scale-95'}
+            /* text-slate-200: slate-300/400/500 globals.css'te AÇIK zemin için
+               bir basamak koyulaştırılıyor; bu düğme KOYU (bg-slate-800), yani
+               kural burada ters çalışıp yazıyı 3.07'ye düşürüyordu. 111 araç
+               sayfası bu düğmeyi kullanıyor. */
+            : 'bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-blue-500/50 shadow-lg active:scale-95'}
         `}
       >
         {copied ? (

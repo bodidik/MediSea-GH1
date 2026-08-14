@@ -188,7 +188,7 @@ export default function SodiumPage() {
         {mode === "hypo" && (
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4">
-              <p className="text-[10px] font-black text-amber-800/60 uppercase tracking-widest mb-1">DİKKAT</p>
+              <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-1">DİKKAT</p>
               <p className="text-[11px] font-bold text-amber-900">Kronik hiponatremide düzeltme hızı <strong>≤8–10 mEq/L/gün</strong> (ODS riski). Akut/semptomatik vakalarda ilk 1–2 saat için daha hızlı düzeltme yapılabilir.</p>
             </div>
 
@@ -220,7 +220,7 @@ export default function SodiumPage() {
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between
                         ${infuseIdx === i ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                       <span className={`text-sm font-bold ${infuseIdx === i ? 'text-white' : 'text-blue-950'}`}>{inf.label}</span>
-                      <span className={`text-[10px] font-black uppercase tracking-widest ${infuseIdx === i ? 'text-blue-200/70' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
+                      <span className={`text-[10px] font-black uppercase tracking-widest ${infuseIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
                     </button>
                   ))}
                 </div>
@@ -232,7 +232,7 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Adrogue-Madias Formülü Sonuçları</p>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-blue-900 rounded-2xl p-4 text-center">
-                    <div className="text-[9px] font-black text-blue-200/70 uppercase tracking-widest mb-1">1 L sıvı → Na değişimi</div>
+                    <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">1 L sıvı → Na değişimi</div>
                     <div className="text-3xl font-black text-white">{adroguePerL > 0 ? '+' : ''}{adroguePerL.toFixed(2)}</div>
                     <div className="text-[9px] font-bold text-amber-400">mEq/L</div>
                   </div>
@@ -276,7 +276,7 @@ export default function SodiumPage() {
         {mode === "hyper" && (
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4">
-              <p className="text-[10px] font-black text-amber-800/60 uppercase tracking-widest mb-1">DİKKAT</p>
+              <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-1">DİKKAT</p>
               <p className="text-[11px] font-bold text-amber-900">Hipernatremide düzeltme hızı <strong>≤10 mEq/L/gün</strong> (beyin ödemi riski). Akut vakalar (&lt;24 saat) daha hızlı düzeltilebilir.</p>
             </div>
 
@@ -290,7 +290,7 @@ export default function SodiumPage() {
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between
                         ${fwFluid === INFUSATES.indexOf(inf) ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                       <span className={`text-sm font-bold ${fwFluid === INFUSATES.indexOf(inf) ? 'text-white' : 'text-blue-950'}`}>{inf.label}</span>
-                      <span className={`text-[10px] font-black uppercase tracking-widest ${fwFluid === INFUSATES.indexOf(inf) ? 'text-blue-200/70' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
+                      <span className={`text-[10px] font-black uppercase tracking-widest ${fwFluid === INFUSATES.indexOf(inf) ? 'text-blue-200' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
                     </button>
                   ))}
                 </div>
@@ -302,7 +302,7 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Serbest Su Açığı Hesabı</p>
                 <div className="grid grid-cols-3 gap-3">
                   <div className="bg-blue-900 rounded-2xl p-4 text-center">
-                    <div className="text-[9px] font-black text-blue-200/70 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
+                    <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
                     <div className="text-3xl font-black text-white">{Math.abs(fwd).toFixed(1)}</div>
                     <div className="text-[9px] font-bold text-amber-400">Litre</div>
                   </div>

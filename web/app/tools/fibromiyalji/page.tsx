@@ -107,7 +107,7 @@ export default function FibromiyaljiPage() {
                     className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                       ${sev[item.id] === s.v
                         ? s.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white'
-                          : s.v === 1 ? 'bg-amber-500 border-amber-500 text-white'
+                          : s.v === 1 ? 'bg-amber-700 border-amber-500 text-white'
                           : s.v === 2 ? 'bg-orange-500 border-orange-500 text-white'
                           : 'bg-rose-600 border-rose-600 text-white'
                         : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
@@ -153,7 +153,7 @@ export default function FibromiyaljiPage() {
 
         {Object.keys(sev).length === SS_ITEMS.length && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${diagnosed ? 'bg-rose-50 border-rose-200' : 'bg-emerald-50 border-emerald-200'}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">ACR 2016 KRİTERLERİ</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">ACR 2016 KRİTERLERİ</div>
             <p className={`text-2xl font-black italic tracking-tight ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
               {diagnosed ? "FİBROMİYALJİ TANISI KARŞILANIYOR" : "TANI KRİTERLERİ KARŞILANMIYOR"}
             </p>

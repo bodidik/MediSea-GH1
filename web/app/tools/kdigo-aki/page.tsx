@@ -80,7 +80,7 @@ export default function KdigoAkiPage() {
 
         {/* KREATİNİN KRİTERLERİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-4">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Kreatinin Kriteri</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Kreatinin Kriteri</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <label className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Bazal Kreatinin (mg/dL)</span>
@@ -108,7 +108,7 @@ export default function KdigoAkiPage() {
 
         {/* İDRAR ÇIKIŞI KRİTERİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-3">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">İdrar Çıkışı Kriteri</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">İdrar Çıkışı Kriteri</span>
           <div className="grid gap-2">
             {URINE_OPTIONS.map((o) => (
               <button
@@ -135,7 +135,7 @@ export default function KdigoAkiPage() {
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">AKI</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">KDIGO EVRESİ</span>
            <div className="text-7xl font-black text-white">{finalStage === 0 ? "–" : finalStage}</div>
-           <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-3">
+           <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">
              Kreatinin: Evre {crStage} · İdrar: Evre {urineStage} (yüksek olan geçerli)
            </span>
         </div>
@@ -150,7 +150,7 @@ export default function KdigoAkiPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ KDIGO evrelemesi kreatinin (48 saatlik veya 7 günlük pencere) VEYA idrar çıkışı kriterlerinden hangisi daha şiddetliyse ona göre yapılır. Kronik böbrek hastalığı zemininde bazal değer belirsizse yorum dikkatli yapılmalıdır.
           </p>
         </div>

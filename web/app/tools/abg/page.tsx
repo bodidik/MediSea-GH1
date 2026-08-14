@@ -276,7 +276,7 @@ export default function AbgPage() {
         {/* ── Primer Bozukluk ────────────────────────── */}
         {dl && hasCore && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${dl.border} ${dl.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">PRİMER BOZUKLUK</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PRİMER BOZUKLUK</div>
             <p className={`text-2xl font-black italic tracking-tight ${dl.color}`}>{dl.label}</p>
 
             {/* pH / PCO2 / HCO3 status chips */}
@@ -299,8 +299,8 @@ export default function AbgPage() {
         {/* ── Kompansasyon ───────────────────────────── */}
         {comp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${comp.adequate ? 'border-emerald-200 bg-emerald-50' : 'border-amber-200 bg-amber-50'}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">KOMPANSASYON KONTROLÜ</div>
-            <p className="text-[10px] font-bold text-blue-900/50 font-mono mb-2">{comp.expected}</p>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">KOMPANSASYON KONTROLÜ</div>
+            <p className="text-[10px] font-bold text-blue-900/80 font-mono mb-2">{comp.expected}</p>
             <p className={`text-lg font-black ${comp.adequate ? 'text-emerald-700' : 'text-amber-700'}`}>{comp.label}</p>
             <p className={`text-sm font-bold mt-1 ${comp.adequate ? 'text-emerald-700' : 'text-amber-700'} opacity-80`}>
               {comp.adequate
@@ -408,7 +408,7 @@ export default function AbgPage() {
               { d: "Solunum Alkalozu (Kronik)",  f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 5" },
             ].map(r => (
               <div key={r.d} className="flex items-baseline gap-3 py-1.5 border-b border-slate-50">
-                <span className="text-[10px] font-black text-blue-900/60 uppercase tracking-widest w-44 shrink-0">{r.d}</span>
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest w-44 shrink-0">{r.d}</span>
                 <span className="text-[11px] font-bold text-blue-900 font-mono">{r.f}</span>
               </div>
             ))}

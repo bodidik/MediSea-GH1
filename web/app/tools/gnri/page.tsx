@@ -47,9 +47,9 @@ export default function GnriPage() {
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
           <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
-            <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-1">Formül</p>
+            <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">Formül</p>
             <p className="text-sm font-bold text-blue-900">GNRI = 1.489 × Albumin (g/L) + 41.7 × (Mevcut Ağırlık / İdeal Ağırlık)</p>
-            <p className="text-[9px] font-bold text-blue-900/60 mt-1">İdeal ağırlık (Lorenz): Boy(cm) − 100 − (Boy − 150)/4</p>
+            <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdeal ağırlık (Lorenz): Boy(cm) − 100 − (Boy − 150)/4</p>
           </div>
 
           {[
@@ -90,7 +90,7 @@ export default function GnriPage() {
 
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">GNRI = {gnri?.toFixed(1)}</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">GNRI = {gnri?.toFixed(1)}</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
             <div className="mt-4 grid grid-cols-4 gap-2">

@@ -88,7 +88,7 @@ export default function PERCPage() {
             {ITEMS.map((it) => (
               <label 
                 key={it.key} 
-                className={`flex items-center gap-4 p-4 rounded-2xl border transition-all cursor-pointer group
+                className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-4 p-4 rounded-2xl border transition-all cursor-pointer group
                   ${st[it.key] ? 'bg-rose-50 border-rose-200 text-rose-900 shadow-sm' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}
                 `}
               >
@@ -98,14 +98,14 @@ export default function PERCPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                 </div>
                 <div>
-                  <span className={`text-sm font-bold block transition-colors ${st[it.key] ? 'text-rose-900' : 'text-blue-900/70 group-hover:text-blue-900'}`}>
+                  <span className={`text-sm font-bold block transition-colors ${st[it.key] ? 'text-rose-900' : 'text-blue-900/80 group-hover:text-blue-900'}`}>
                     {it.label}
                   </span>
                   <span className={`text-[9px] font-bold uppercase tracking-widest ${st[it.key] ? 'text-rose-400' : 'text-slate-400'}`}>
                     {it.sub}
                   </span>
                 </div>
-                <input type="checkbox" className="hidden" checked={st[it.key]} onChange={() => toggle(it.key)} />
+                <input type="checkbox" className="sr-only" checked={st[it.key]} onChange={() => toggle(it.key)} />
               </label>
             ))}
           </div>
