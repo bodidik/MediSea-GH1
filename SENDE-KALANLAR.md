@@ -102,7 +102,38 @@ aksine bozar. `endokrinoloji` adında sabit bir klasör, çalışan
 
 ---
 
-## 6. Küçük not: premium hesap
+## 6. Üç yetim içerik dosyası — 159 kayıt kimseye görünmüyor
+
+Quiz/kart dosyası var ama ait olduğu **konu dosyası yok**. Konu dosyası
+olmadan bu içeriğe arayüzden ulaşmanın hiçbir yolu yok:
+
+| Dosya | Beklenen konu | İçindeki |
+|---|---|---|
+| `quizzes/hematoloji/aml-quiz-1.json` | `topics/hematoloji/aml.json` | 10 soru |
+| `flashcards/endokrinoloji/akromegali.json` | `topics/endokrinoloji/akromegali.json` | 79 kart |
+| `flashcards/nefroloji/hiperf-kbh.json` | `topics/nefroloji/hiperf-kbh.json` | 70 kart |
+
+**Neden fark ettim:** satış sayfasının üst yazısı "362 soru" derken panonun
+kendisi "352" diyordu — aynı sayfada iki yüzey aynı sayıyı farklı söylüyordu.
+Farkın tamamı bu yetim dosyalardı. Sayaç artık yalnızca ulaşılabilir içeriği
+sayıyor, yani **sayılar düzeldi**; ama içeriğin kendisi hâlâ orada duruyor
+ve görünmüyor.
+
+İlk ikisi dikkat çekici: `aml-quiz-1` muhtemelen `aml-ana`'nın eski
+sürümü (aynı branşta `aml-ana-quiz-1.json` da var). `akromegali` ise 79
+kartlık bitmiş bir set — açık kütüphanede `akromegali-ve-gigantizm` diye bir
+konu var, premium tarafta karşılığı yok.
+
+Karar senin: ya konu dosyalarını yaz (içerik zaten hazır, tek eksik konu
+kabuğu), ya da dosyaları kaldır. Listeyi her zaman şuradan alabilirsin:
+
+```bash
+node web/scripts/yetim-denetim.cjs
+```
+
+---
+
+## 7. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:

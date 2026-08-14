@@ -29,12 +29,35 @@ export type IcerikSayilari = {
 
 let onbellek: IcerikSayilari | null = null;
 
-function jsonSay(dizin: string, alanlar: string[]): { dosya: number; kayit: number } {
+/** `<konu>-quiz-1.json` → `konu`, `<konu>.json` → `konu` */
+function konuAdi(dosya: string): string {
+  return dosya.replace(/\.json$/, "").replace(/-(quiz|vaka|kart|flashcard)-\d+$/, "");
+}
+
+/**
+ * ULAŞILABİLİR kayıtları sayar — konu dosyası olmayan içerik sayılmaz.
+ *
+ * Eskiden dizindeki her dosya sayılıyordu ve bu, satış sayfasında iki
+ * yüzeyin aynı sayıyı farklı söylemesine yol açtı: üst yazı (buradan)
+ * "362 soru", panonun kendisi (erişilebilir konuları toplayarak) "352".
+ * Farkın tamamı tek bir yetim dosyaydı — `hematoloji/aml-quiz-1.json`,
+ * karşılığında `topics/hematoloji/aml.json` yok, yani o 10 soruya hiçbir
+ * yerden ulaşılamıyor.
+ *
+ * Reklam edilen sayı, kullanıcının gerçekten açabildiği içerik olmalı.
+ * Yetim dosyaları listelemek için: `node scripts/yetim-denetim.cjs`
+ */
+function jsonSay(
+  dizin: string,
+  konuKoku: string,
+  alanlar: string[]
+): { dosya: number; kayit: number } {
   let dosya = 0;
   let kayit = 0;
   try {
     for (const brans of fs.readdirSync(dizin, { withFileTypes: true }).filter((d) => d.isDirectory())) {
       for (const f of fs.readdirSync(path.join(dizin, brans.name)).filter((f) => f.endsWith(".json"))) {
+        if (!fs.existsSync(path.join(konuKoku, brans.name, `${konuAdi(f)}.json`))) continue;
         dosya++;
         try {
           const veri = JSON.parse(fs.readFileSync(path.join(dizin, brans.name, f), "utf-8"));
@@ -112,9 +135,10 @@ export function icerikSayilari(): IcerikSayilari {
     }
   } catch {}
 
-  const soru = jsonSay(path.join(premium, "quizzes"), ["sorular", "questions"]);
-  const kart = jsonSay(path.join(premium, "flashcards"), ["cards", "kartlar"]);
-  const vaka = jsonSay(path.join(premium, "vakalar"), ["adimlar", "stages"]);
+  const konuKoku = path.join(premium, "topics");
+  const soru = jsonSay(path.join(premium, "quizzes"), konuKoku, ["sorular", "questions"]);
+  const kart = jsonSay(path.join(premium, "flashcards"), konuKoku, ["cards", "kartlar"]);
+  const vaka = jsonSay(path.join(premium, "vakalar"), konuKoku, ["adimlar", "stages"]);
 
   onbellek = {
     brans,
