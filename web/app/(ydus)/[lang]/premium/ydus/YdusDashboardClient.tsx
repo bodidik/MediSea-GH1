@@ -168,7 +168,17 @@ export default function YdusDashboardClient({
         )}
 
         {/* BRANŞLAR */}
-        <p className="text-sm font-semibold text-slate-600 mb-3">Branşlar</p>
+        {/* <h2>: bölüm etiketleri düz <p> olarak basılıyordu, yani sayfada
+            tek bir h1 vardı ve altında hiç yapı yoktu. Ekran okuyucu
+            kullanan biri bölümler arasında atlayamıyor, tüm panoyu baştan
+            sona geziyordu.
+
+            `font-sans mt-0` ŞART: globals.css h1-h3'e serif yazı tipi ve
+            1.5rem üst boşluk veriyor, Tailwind'in text-sm/font-semibold
+            sınıfları bunları ezmiyor. Ölçüldü — etiket sadece <h2> yapılınca
+            Merriweather'a ve 24px üst boşluğa geçti. Bu sınıflarla görünüm
+            <p> hâliyle birebir aynı kalıyor; değişen yalnızca anlam. */}
+        <h2 className="text-sm font-sans font-semibold text-slate-600 mt-0 mb-3">Branşlar</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
           {branches.map((b) => {
             const Icon = BRANCH_ICONS[b.id] ?? FlaskConical;
@@ -209,7 +219,7 @@ export default function YdusDashboardClient({
         {/* YENİ EKLENENLER ŞERİDİ */}
         {strip.length > 0 && (
           <>
-            <p className="text-sm font-semibold text-slate-600 mb-3">Diğer yeni eklenenler</p>
+            <h2 className="text-sm font-sans font-semibold text-slate-600 mt-0 mb-3">Diğer yeni eklenenler</h2>
             <div className="flex gap-3 overflow-x-auto pb-2 mb-8">
               {strip.map((t) => (
                 <Link
