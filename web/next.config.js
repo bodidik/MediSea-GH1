@@ -33,11 +33,36 @@ module.exports = {
   // İçeriği düzenlemek yerine yönlendirme konuyor. İki sebep: içerik
   // kullanıcının alanı, ve eski adresler arama motorunda ya da birinin
   // yer imlerinde kalmış olabilir — 301 ikisini birden kurtarır.
+  // 5) Premium yolundaki [lang] parçası HER dizeyi kabul ediyordu.
+  //
+  //    Ölçüldü: /tr, /en, /fr, /zzz, /sayfa-yok — beşi de 200 dönüp aynı
+  //    Türkçe sayfayı basıyordu. Yani sınırsız bir kopya adres alanı vardı;
+  //    arama motoru aynı içeriği sonsuz adreste görebiliyordu.
+  //
+  //    Sayfaya kendine dönen canonical eklendi, bu kopya sorununu arama
+  //    motoru tarafında zaten kapatıyor. Yönlendirme ise adresleri gerçekten
+  //    ortadan kaldırıyor: tarama bütçesi boşa gitmiyor ve dışarıdan gelen
+  //    yanlış önekli bir bağlantı 404 yerine doğru sayfaya düşüyor.
+  //
+  //    404 yerine yönlendirme seçildi çünkü [lang] segmentinde
+  //    dynamicParams'ı kapatmak premium ağacının TAMAMININ rota
+  //    davranışını değiştirirdi; yönlendirme rotalamadan önce çalışır ve
+  //    hiçbir sayfanın oluşturulma biçimine dokunmaz.
   async redirects() {
     return [
       { source: '/topics/hematoloji/hodgkin-lenfoma', destination: '/topics/hematoloji/hodgkin', permanent: true },
       { source: '/topics/hematoloji/nhl', destination: '/topics/hematoloji/nhl-genel', permanent: true },
       { source: '/topics/hematoloji/burkitt-lenfoma', destination: '/topics/hematoloji/burkitt', permanent: true },
+      //    DİKKAT: buradaki olumsuz ileri-bakış `(?!tr/)` biçiminde olmak
+      //    zorunda. İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM
+      //    yolun sonuna baktığı için koşul her zaman sağlanıyordu: /tr kendine
+      //    yönleniyor, tarayıcı 50 atlamada pes ediyordu. Yani premium
+      //    bölümünün tamamı erişilemez hale gelmişti. Yereldeki ölçüm yakaladı.
+      {
+        source: '/:lang((?!tr/)[^/]+)/premium/:yol*',
+        destination: '/tr/premium/:yol*',
+        permanent: true,
+      },
     ];
   },
 };
