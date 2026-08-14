@@ -47,7 +47,7 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
       return { border: 'border-purple-500', bg: 'bg-purple-900/10', text: 'text-purple-400', badgeBorder: 'border-purple-500/30', badgeBg: 'bg-purple-500/10' };
     }
     if (l.includes('hardcore') || l.includes('expert')) {
-      return { border: 'border-slate-500', bg: 'bg-slate-800/30', text: 'text-slate-300', badgeBorder: 'border-slate-500/30', badgeBg: 'bg-slate-700/50' };
+      return { border: 'border-slate-500', bg: 'bg-slate-800/30', text: 'text-slate-200', badgeBorder: 'border-slate-500/30', badgeBg: 'bg-slate-700/50' };
     }
     // Default (Sarı/Uyarı)
     return { border: 'border-amber-500', bg: 'bg-amber-900/10', text: 'text-amber-400', badgeBorder: 'border-amber-500/30', badgeBg: 'bg-amber-500/10' };
@@ -74,7 +74,7 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
             </div>
             <Link 
               href="/tr/premium/ydus"
-              className="px-5 py-2.5 bg-slate-950 hover:bg-slate-800 text-slate-300 rounded-xl font-bold transition-all border border-slate-800 hover:border-blue-500/30 shadow-sm flex items-center gap-2"
+              className="px-5 py-2.5 bg-slate-950 hover:bg-slate-800 text-slate-200 rounded-xl font-bold transition-all border border-slate-800 hover:border-blue-500/30 shadow-sm flex items-center gap-2"
             >
               Köprüüstüne Dön
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -83,13 +83,23 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
 
           <div className="relative z-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input 
-              type="text" 
-              placeholder="Sızdırılan notlarda ara (Örn: Acil, ATRA, Diferansiyasyon...)" 
+            <input
+              type="text"
+              aria-label="Notlarda ara"
+              placeholder="Sızdırılan notlarda ara (Örn: Acil, ATRA, Diferansiyasyon...)"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-slate-950/50 border border-slate-700/50 rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all text-slate-200 font-medium placeholder-slate-500 shadow-inner"
             />
+          </div>
+
+          {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
+              Bölge ilk render'dan itibaren DOM'da duruyor: role="status"
+              sonradan EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü duyurur. */}
+          <div role="status" aria-live="polite" className="sr-only">
+            {searchTerm
+              ? `${filteredPearls.length} not bulundu.`
+              : `${data.pearls.length} not listeleniyor.`}
           </div>
         </div>
 
@@ -112,7 +122,7 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                       <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border ${theme.badgeBorder} ${theme.badgeBg} ${theme.text} shadow-sm`}>
                         {pearl.level}
                       </span>
-                      <span className="text-[10px] font-bold text-slate-400 uppercase flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-lg">
+                      <span className="text-[10px] font-bold text-slate-200 uppercase flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-500"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>
                         {pearl.trigger}
                       </span>
@@ -139,8 +149,8 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
               <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-4">
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-500"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
               </div>
-              <h3 className="text-lg font-black text-slate-300 uppercase tracking-widest mb-1">Sonuç bulunamadı</h3>
-              <p className="text-slate-500 text-sm font-medium">Başka bir kelimeyle aramayı deneyebilirsin.</p>
+              <h3 className="text-lg font-black text-slate-200 uppercase tracking-widest mb-1">Sonuç bulunamadı</h3>
+              <p className="text-slate-200 text-sm font-medium">Başka bir kelimeyle aramayı deneyebilirsin.</p>
             </div>
           )}
         </div>

@@ -90,7 +90,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
         <div className="overflow-y-auto pr-2 custom-scrollbar shrink-0 max-h-[20vh] lg:max-h-[25vh] bg-black/30 p-2.5 rounded-lg border border-white/5 shadow-inner">
           {/* ZIRH: Vaka metni LiteProtected Kalkanı içine alındı */}
           <LiteProtected userId={user?.id || "Premium Üye"}>
-            <div className="prose prose-sm prose-invert prose-blue max-w-none text-slate-300 leading-relaxed font-medium">
+            <div className="prose prose-sm prose-invert prose-blue max-w-none text-slate-200 leading-relaxed font-medium">
               <p>{currentStage.content}</p>
             </div>
           </LiteProtected>
@@ -119,7 +119,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                         : 'bg-slate-950/50 border-slate-800 text-slate-600 opacity-50 grayscale'
                       : selectedOption === opt.id
                       ? 'bg-blue-900/40 border-blue-500 ring-1 ring-blue-500 text-white shadow-lg' // Seçili
-                      : 'bg-slate-950/50 border-slate-800 text-slate-300 hover:bg-slate-800 hover:border-blue-500/50'
+                      : 'bg-slate-950/50 border-slate-800 text-slate-200 hover:bg-slate-800 hover:border-blue-500/50'
                   }`}
               >
                 <div className="flex items-center gap-2.5">
@@ -171,15 +171,15 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                     <div className="grid grid-cols-3 gap-2">
                       <Link href={data.navigation?.nextCase?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-blue-600 rounded-lg text-center border border-slate-800 hover:border-blue-500/50 transition-all group">
                         <div className="text-base group-hover:scale-110 transition-transform">➡️</div>
-                        <div className="text-[9px] text-slate-400 group-hover:text-blue-100 mt-1 font-bold uppercase tracking-widest">Sıradaki</div>
+                        <div className="text-[9px] text-slate-200 group-hover:text-blue-100 mt-1 font-bold uppercase tracking-widest">Sıradaki</div>
                       </Link>
                       <Link href={data.navigation?.pearls?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-yellow-600 rounded-lg text-center border border-slate-800 hover:border-yellow-500/50 transition-all group">
                         <div className="text-base group-hover:scale-110 transition-transform">💎</div>
-                        <div className="text-[9px] text-slate-400 group-hover:text-yellow-100 mt-1 font-bold uppercase tracking-widest">Notlar</div>
+                        <div className="text-[9px] text-slate-200 group-hover:text-yellow-100 mt-1 font-bold uppercase tracking-widest">Notlar</div>
                       </Link>
                       <Link href={data.navigation?.exit?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-red-600 rounded-lg text-center border border-slate-800 hover:border-red-500/50 transition-all group">
                         <div className="text-base group-hover:scale-110 transition-transform">🏠</div>
-                        <div className="text-[9px] text-slate-400 group-hover:text-red-100 mt-1 font-bold uppercase tracking-widest">Çıkış</div>
+                        <div className="text-[9px] text-slate-200 group-hover:text-red-100 mt-1 font-bold uppercase tracking-widest">Çıkış</div>
                       </Link>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
           ${!showResult ? 'bg-slate-900 border-slate-700' : isCorrect ? 'bg-green-900 border-green-500 shadow-[0_0_15px_rgba(16,185,129,0.3)]' : 'bg-red-900 border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)]'}
         `}>
           <h4 className="text-[9px] font-black uppercase opacity-60 tracking-widest">Karar Analizi</h4>
-          <div className={`text-base font-black leading-tight mt-0.5 ${!showResult ? 'text-slate-300' : isCorrect ? 'text-green-300' : 'text-red-300'}`}>
+          <div className={`text-base font-black leading-tight mt-0.5 ${!showResult ? 'text-slate-200' : isCorrect ? 'text-green-300' : 'text-red-300'}`}>
             {!showResult ? 'BEKLENİYOR...' : isCorrect ? 'DOĞRU YAKLAŞIM ✓' : 'HATALI YAKLAŞIM ⚠️'}
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                 <span>🩺</span> Uzman Görüşü
               </h4>
               <div 
-                className="text-[11px] text-slate-300 space-y-1.5 prose prose-sm prose-invert prose-blue leading-relaxed font-medium"
+                className="text-[11px] text-slate-200 space-y-1.5 prose prose-sm prose-invert prose-blue leading-relaxed font-medium"
                 dangerouslySetInnerHTML={{ __html: currentStage.explanation }} 
               />
             </div>

@@ -105,11 +105,27 @@ button {
   cursor: pointer;
 }
 
-/* Markdown / MDX tipografi (prose) */
+/* Markdown / MDX tipografi (prose)
+
+   `color` BİLEREK VERİLMİYOR — renk devralınır.
+
+   Bir dönem burada `color: var(--fg)` (#111827, neredeyse siyah) vardı ve
+   bu satır Tailwind yardımcılarından SONRA geldiği için aynı öge üzerindeki
+   `text-slate-300` gibi sınıfları eziyordu. `prose-invert` de kurtaramıyor:
+   o yalnızca `--tw-prose-*` değişkenlerini çeviriyor, buradaki düz `color`
+   bildirimini görmüyor.
+
+   Sonuç ölçüldü: `prose` KOYU zeminli üç premium yüzeyde kullanılıyor
+   (inciler, premium konu görüntüleyici, soru çözüm kokpiti) ve üçünde de
+   gövde metni koyu kartın üstünde neredeyse siyah basılıyordu —
+   inciler sayfasında kontrast 1.01, yani yazı fiilen görünmezdi.
+
+   Devralma doğru davranış: `body` zaten `color: var(--fg)` veriyor, yani
+   açık yüzeylerde sonuç birebir aynı; koyu yüzeylerde ise kapsayıcının
+   kendi açık rengi geçerli oluyor. */
 .prose {
   font-family: var(--font-sans);
   line-height: 1.7;
-  color: var(--fg);
 }
 
 .prose h1, .prose h2, .prose h3 {

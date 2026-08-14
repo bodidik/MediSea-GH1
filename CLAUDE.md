@@ -372,6 +372,32 @@ Doğrusu: genel koyulaştırma **açık zemin varsayar** ve kullanımların ezic
 çoğunluğu öyledir. Koyu bir zemine yazı basıyorsan rengini **kendin ver** —
 tanıtım şeridi `text-blue-200` ile bunu yapıyor (10.34).
 
+`slate-300/400/500` **ezildiği için premium koyu yüzeylerde kullanılamaz.**
+Güvenli kademe `slate-200` ve üstü. Bu üç yüzeyde tek tek düzeltildi:
+inciler (13 kusur), soru çözüm kokpiti (6), konu sayfası tanıtım şeridi (1).
+
+**Ölçüm kapı arkasını görmüyorsa "temiz" DEMEZ.** Bu gerilemenin kapsamı
+bir kez "tek nokta" diye raporlandı, çünkü ölçüm yalnızca herkese açık
+premium sayfalardan yapılmıştı. İnciler ve kokpit erişim kapısının
+arkasında ve ikisi de kusurluydu. Premium tarama, geçici bir dev rotasıyla
+motorları doğrudan render etmeden tamamlanmış sayılmaz.
+
+### `.prose` içindeki düz `color`, Tailwind sınıflarını yener
+
+`globals.css` bir dönem `.prose { color: var(--fg) }` yazıyordu (#111827,
+neredeyse siyah). Bu bildirim `@tailwind utilities`'ten SONRA geldiği için
+aynı ögedeki `text-slate-300`'ü eziyordu; `prose-invert` de kurtaramıyor,
+çünkü o yalnızca `--tw-prose-*` DEĞİŞKENLERİNİ çeviriyor, düz bir `color`
+bildirimini görmüyor.
+
+Sonuç: `prose` kullanan üç koyu premium yüzeyde gövde metni koyu kartın
+üstüne neredeyse siyah basılıyordu — inciler sayfasında kontrast **1.01**,
+yani yazı fiilen görünmezdi. Kural artık renk vermiyor, devralıyor; `body`
+zaten `color: var(--fg)` verdiği için açık yüzeylerde sonuç birebir aynı.
+
+Tipografi kuralına renk yazacaksan önce sor: bu sınıf koyu bir yüzeyde de
+kullanılıyor mu?
+
 Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
 tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
