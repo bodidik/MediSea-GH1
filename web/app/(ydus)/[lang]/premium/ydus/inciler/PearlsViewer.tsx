@@ -139,8 +139,8 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
               <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-4">
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-500"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
               </div>
-              <h3 className="text-lg font-black text-slate-300 uppercase tracking-widest mb-1">İstihbarat Bulunamadı</h3>
-              <p className="text-slate-500 text-sm font-medium">Farklı bir anahtar kelime ile veritabanını tekrar tarayın.</p>
+              <h3 className="text-lg font-black text-slate-300 uppercase tracking-widest mb-1">Sonuç bulunamadı</h3>
+              <p className="text-slate-500 text-sm font-medium">Başka bir kelimeyle aramayı deneyebilirsin.</p>
             </div>
           )}
         </div>
