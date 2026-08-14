@@ -49,7 +49,7 @@ function KlinikMetin({ metin }: { metin: string }) {
         const kalinMi = satir.startsWith('—') || satir.includes(':') && satir.indexOf(':') < 25;
         return (
           <p key={i} style={{
-            fontSize: '13px', lineHeight: 1.7, color: '#1a2a3a',
+            fontSize: '15px', lineHeight: 1.7, color: '#1a2a3a',
             fontWeight: kalinMi ? 600 : 400, margin: 0,
           }}>
             {satir}
@@ -135,7 +135,7 @@ function AdimKarti({
         <div style={{ fontSize: '10px', fontWeight: 700, color: '#a01f1f', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '.4rem' }}>
           Soru {adimNo}
         </div>
-        <p style={{ fontSize: '13.5px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0 }}>
+        <p style={{ fontSize: '15px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0 }}>
           {adim.soru}
         </p>
       </div>
@@ -149,7 +149,7 @@ function AdimKarti({
                 ? harf === adim.dogru ? '✓' : harf === secim ? '✗' : harf
                 : harf}
             </div>
-            <span style={{ fontSize: '13px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{metin}</span>
+            <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{metin}</span>
           </button>
         ))}
       </div>
@@ -170,10 +170,10 @@ function AdimKarti({
           }}>
             <span style={{ fontSize: '1.25rem' }}>{dogruMu ? '✅' : '❌'}</span>
             <div>
-              <div style={{ fontSize: '13px', fontWeight: 700, color: dogruMu ? '#1a6640' : '#a01f1f' }}>
+              <div style={{ fontSize: '14px', fontWeight: 700, color: dogruMu ? '#1a6640' : '#a01f1f' }}>
                 {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
               </div>
-              <div style={{ fontSize: '11.5px', color: '#4a6a8a', marginTop: '1px' }}>
+              <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
                 {adim.aciklama_kisa}
               </div>
             </div>
@@ -181,7 +181,7 @@ function AdimKarti({
 
           {/* Detay */}
           <div style={{ padding: '.9rem 1.1rem' }}>
-            <p style={{ fontSize: '13px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
               {adim.aciklama_detay}
             </p>
 
@@ -207,7 +207,7 @@ function AdimKarti({
                     }}>
                       {harf}
                     </span>
-                    <span style={{ fontSize: '12px', lineHeight: 1.65, color: '#1a2a3a' }}>{metin}</span>
+                    <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>{metin}</span>
                   </div>
                 );
               })}
@@ -324,7 +324,7 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
             ← Konuya dön
           </a>
           <div style={{ textAlign: 'right', marginLeft: '12px' }}>
-            <div style={{ fontSize: '13px', fontWeight: 700, color: '#1a2a3a', lineHeight: 1.3 }}>
+            <div style={{ fontSize: '15px', fontWeight: 700, color: '#1a2a3a', lineHeight: 1.3 }}>
               {veri.baslik}
             </div>
             <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end', marginTop: '4px', flexWrap: 'wrap' }}>

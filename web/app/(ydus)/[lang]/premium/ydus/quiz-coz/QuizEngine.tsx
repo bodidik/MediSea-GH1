@@ -177,7 +177,7 @@ function SoruKarti({
           <div style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '.5rem' }}>
             Soru {soruNo}
           </div>
-          <p style={{ fontSize: '14px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500 }}>
+          <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500 }}>
             {soru.metin}
           </p>
           {soru.etiketler && soru.etiketler.length > 0 && (
@@ -207,7 +207,7 @@ function SoruKarti({
                   ? harf === soru.dogru ? '✓' : harf === secim ? '✗' : harf
                   : harf}
               </div>
-              <span style={{ fontSize: '13px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>
+              <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>
                 {metin}
               </span>
             </button>
@@ -234,7 +234,7 @@ function SoruKarti({
                   {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${soru.dogru}`}
                 </div>
                 {soru.aciklama_kisa && (
-                  <div style={{ fontSize: '12px', color: '#4a6a8a', marginTop: '2px' }}>
+                  <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '2px' }}>
                     {soru.aciklama_kisa}
                   </div>
                 )}
@@ -246,7 +246,7 @@ function SoruKarti({
                 sonraki soruya geçince vurgular karışmaz, o soruya ait kalır. */}
             <div data-readable={`soru:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
               {soru.aciklama_detay && (
-                <p style={{ fontSize: '13px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+                <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
                   {soru.aciklama_detay}
                 </p>
               )}
@@ -276,7 +276,7 @@ function SoruKarti({
                           }}>
                             {harf}
                           </span>
-                          <span style={{ fontSize: '12px', lineHeight: 1.65, color: '#1a2a3a' }}>
+                          <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>
                             {metin}
                           </span>
                         </div>
@@ -287,7 +287,7 @@ function SoruKarti({
               )}
 
               {soru.kaynak && (
-                <div style={{ marginTop: '.85rem', fontSize: '11px', color: '#4a6a8a', borderTop: '0.5px solid #e8f0f8', paddingTop: '.65rem' }}>
+                <div style={{ marginTop: '.85rem', fontSize: '12px', color: '#4a6a8a', borderTop: '0.5px solid #e8f0f8', paddingTop: '.65rem' }}>
                   Kaynak: {soru.kaynak}
                 </div>
               )}
