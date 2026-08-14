@@ -864,13 +864,19 @@ Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
 yüzeyden ayırt edilemez.
 
-### Paralel oturumlar AYNI çalışma ağacını paylaşıyor — commit'ler karışır
+### Paralel oturumlarda commit'ler karışır — mesaj içeriği anlatmayabilir
 
-Arka planda başlatılan işler ayrı bir worktree'de değil, bu depoda
-çalışıyor. Sonuç ölçüldü: bir oturum `git add` ile dosyasını sahneye
-koyduğu sırada başka bir oturum `git commit` çalıştırdı ve **sahnedeki
-yabancı dosya onun commit'ine girdi.** Ortaya çıkan commit'in mesajı
-kendi içeriğini anlatmıyor:
+Aynı depoda birden fazla oturum çalışıyor: bir kısmı `.claude/worktrees/`
+altındaki ayrı bir worktree'de, bir kısmı ana çalışma kopyasında.
+**Ayrı worktree bunu tek başına ÖNLEMİYOR** — belirleyici olan `git commit`
+komutunun hangi dizinde çalıştırıldığı, çünkü her worktree'nin sahnesi
+kendine ait.
+
+Ölçülen kusur tam olarak şu oldu: iş bir worktree'de sahnelenmişken commit
+**ana çalışma kopyasında** çalıştırıldı; oradaki ilgisiz bekleyen dosya işin
+mesajıyla kaydedildi, sahnelenmiş asıl iş ise commit edilmeden kaldı (sonra
+`ca2bbf1` olarak ayrıca kaydedildi). Ortaya çıkan commit'in mesajı kendi
+içeriğini anlatmıyor:
 
 `521ae13 "Premium yüzeylerde markdown kalın işareti düz metin basılıyordu"`
 aslında yalnızca premium YDUS **paylaşım kartını** (`opengraph-image.tsx`,
@@ -880,6 +886,9 @@ geçmiş yeniden yazılmadı — düzeltme bu notla yapılıyor.
 Bu depoda commit mesajları belge yerine geçtiği için yanlış etiketlenmiş
 bir commit gerçek bir kayıp. Korunma yolu:
 
+- **Commit'i işin BULUNDUĞU ağaçta çalıştır.** Değişiklikler bir worktree'de
+  duruyorsa commit de orada atılmalı; başka bir dizinde çalıştırılan `git
+  commit` o dizinin sahnesini kaydeder, seninkini değil.
 - Sahneleme ile commit'i **tek komutta** yap: `git add <yol> && git commit`
   yerine `git commit <yol> -m …` (yalnızca verilen yolu kaydeder, sahnede
   ne olduğuna bakmaz).
