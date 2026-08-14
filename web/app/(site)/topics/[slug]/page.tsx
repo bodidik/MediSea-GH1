@@ -6,6 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
 import { getBranchTools } from "@/app/lib/tools";
+import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
 // force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
@@ -143,6 +144,18 @@ export default async function BranchListPage({
 
   return (
     <div className="min-h-screen bg-white font-sans">
+
+      {/* Kırıntı şeması — konu ve araç sayfalarında vardı, branş sayfalarında
+          YOKTU. Sayfada görünür kırıntı zaten basılıyordu, yalnızca makine
+          okunur karşılığı eksikti; arama sonucunda çıplak adres yerine
+          "MediSea › Kütüphane › Hematoloji" yolu görünsün diye eklendi.
+          13 branş sayfası site haritasında 0.8 önceliğinde. */}
+      <JsonLd
+        veri={kirintiSemasi([
+          { ad: "Kütüphane", yol: "/topics" },
+          { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
+        ])}
+      />
 
       {/* --- BRANŞ HERO (branşın kendi renk/ikon kimliğiyle) --- */}
       <div className={`relative overflow-hidden border-b-4 border-slate-100 ${specialty.bg}`}>
