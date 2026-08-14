@@ -219,7 +219,34 @@ silmedim, ileride kullanılmak üzere bırakılmış olabilirler.
 
 ---
 
-## 9. Küçük not: premium hesap
+## 9. Ödeme hattı henüz yok — karşılıksız iki vaat kaldırıldı
+
+Projede **hiçbir ödeme sağlayıcısı entegrasyonu yok** (web ve server'da
+arandı: iyzico, stripe, paddle, paytr, checkout — sıfır sonuç). Çalışan bir
+plan yükseltme akışı da yok.
+
+Buna rağmen iki yüzey ödeme vaat ediyordu; ikisi de kaldırıldı:
+
+- **Kayıt sayfası** tam dönüşüm anında "1 ay ücretsiz, sonrasında düşük
+  aylık ücret" diyordu. Ne bir fiyat belirlenmişti, ne de tahsil edecek bir
+  akış vardı; üstelik `/uyelik` sayfası hiçbir aylık ücretten söz etmiyor,
+  yani iki yüzey birbiriyle de çelişiyordu. Yerine hesabın BUGÜN gerçekten
+  sağladığı şey yazıldı: vurgu ve notların cihazlar arasında taşınması.
+- **Profil sayfasındaki "Yükselt" düğmesi** `/api/plan/upgrade` ucuna POST
+  atıyordu; o uç yok, canlıda 404. Kullanıcı düğmeye basıp "Yükseltme
+  işlemi başarısız oldu" görüyordu. Kart kaldırılmadı ama artık olmayan bir
+  işlemi tetiklemiyor, `/uyelik` sayfasına götürüyor.
+
+**Fiyat ve koşul UYDURULMADI** — ikisi de senin kararın. Konuştuğumuz model
+(kişisel katman ödeme hattı, YDUS mevsimlik yüksek bilet) henüz koda
+girmedi.
+
+Ödeme almaya karar verdiğinde 4. maddedeki hukuk metinleri (KVKK aydınlatma,
+mesafeli satış, iade) ondan ÖNCE hazır olmalı.
+
+---
+
+## 10. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:

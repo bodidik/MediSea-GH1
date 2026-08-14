@@ -49,7 +49,20 @@ export default function KayitPage() {
         <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
           <div style={{ fontSize: '28px', marginBottom: '8px' }}>🩺</div>
           <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a3a6b', margin: 0 }}>Hesap Oluştur</h1>
-          <p style={{ fontSize: '13px', color: '#4a6a8a', marginTop: '6px' }}>1 ay ücretsiz, sonrasında düşük aylık ücret</p>
+          {/*
+            Eskiden burada "1 ay ücretsiz, sonrasında düşük aylık ücret"
+            yazıyordu — tam dönüşüm anında, hiçbir karşılığı olmayan bir
+            fiyat vaadi. Ölçüldü: projede ödeme sağlayıcısı entegrasyonu
+            YOK (web ve server'da arandı, sıfır sonuç), çalışan bir
+            yükseltme akışı yok ve /uyelik sayfası hiçbir aylık ücretten
+            söz etmiyor. Yani iki yüzey birbiriyle de çelişiyordu.
+
+            Yerine hesabın BUGÜN gerçekten sağladığı şey yazıldı. Fiyat ya
+            da koşul uydurulmadı; ikisi de henüz kararlaştırılmadı.
+          */}
+          <p style={{ fontSize: '13px', color: '#4a6a8a', marginTop: '6px' }}>
+            Vurguların ve notların hesabına kaydedilir, cihazların arasında taşınır.
+          </p>
         </div>
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
