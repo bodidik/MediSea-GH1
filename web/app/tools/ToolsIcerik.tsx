@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -255,12 +255,38 @@ const TOOLS_DATABASE = [
  * bileşeni olan /topics 98 KB ve 43 bağlantı basıyor. Yani 114 aracın hub
  * bağlantısı ilk tarama dalgasında hiç yoktu.
  */
-export default function ToolsIcerik({ kategori }: { kategori?: string }) {
+export default function ToolsIcerik() {
   const router = useRouter();
+
+  /**
+   * Kategori ne sunucudan prop olarak ne de `useSearchParams()` ile geliyor —
+   * ikisinin de bedeli ölçüldü:
+   *
+   * - `useSearchParams()` Suspense sınırı istiyor ve Next alt ağacı sunucuda
+   *   HİÇ üretmiyor; sayfa 19 KB ve sıfır bağlantıyla servis ediliyordu.
+   * - Sunucuda `searchParams` okumak rotayı dinamikleştiriyor; CDN'de her
+   *   istek MISS oluyordu (ölçüldü: üst üste üç istek, hepsi MISS; kıyas
+   *   /topics PRERENDER).
+   *
+   * Bu yol ikisini de çözüyor: sayfa statik prerender ediliyor, sunucu HTML'i
+   * SÜZÜLMEMİŞ tam listeyi (117 bağlantı) taşıyor, kategori hidrasyondan
+   * sonra uygulanıyor.
+   *
+   * Süzgeç iki yoldan geliyor ve ikisi de karşılanmalı:
+   * 1. Başka sayfadan `/tools?kategori=x` ile gelinirse bileşen sıfırdan
+   *    kurulur — adres bir kez okunur (aşağıdaki effect).
+   * 2. Sayfadaki kategori rozetine tıklanırsa bileşen kurulu kalır ve effect
+   *    tekrar çalışmaz; bu yüzden rozetler durumu KENDİ günceller.
+   */
+  const [kategori, setKategori] = useState<string | null>(null);
+
+  useEffect(() => {
+    setKategori(new URLSearchParams(window.location.search).get("kategori"));
+  }, []);
   const [searchTerm, setSearchTerm] = useState("");
 
   // Menüden gelen kategori bağlantısı burada karşılanıyor: /tools?kategori=nefroloji
-  const aktifKategori = kategori ?? null;
+  const aktifKategori = kategori;
   const kategoriGecerli = TOOLS_DATABASE.some(c => c.slug === aktifKategori);
   const seciliKategori = kategoriGecerli ? aktifKategori : null;
 
@@ -348,6 +374,7 @@ export default function ToolsIcerik({ kategori }: { kategori?: string }) {
         <div className="flex flex-wrap gap-2">
           <Link
             href="/tools"
+            onClick={() => setKategori(null)}
             className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all ${
               !seciliKategori
                 ? "bg-blue-950 text-white border-blue-950"
@@ -360,6 +387,7 @@ export default function ToolsIcerik({ kategori }: { kategori?: string }) {
             <Link
               key={cat.slug}
               href={`/tools?kategori=${cat.slug}`}
+              onClick={() => setKategori(cat.slug)}
               className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all flex items-center gap-1.5 ${
                 seciliKategori === cat.slug
                   ? "bg-blue-950 text-white border-blue-950"

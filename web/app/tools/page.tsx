@@ -1,34 +1,26 @@
 import ToolsIcerik from "./ToolsIcerik";
 
 /**
- * Araç merkezi artık SUNUCUDA render ediliyor.
+ * Araç merkezi: SUNUCUDA render edilen ve STATİK prerender edilen sayfa.
  *
- * Önceden sayfanın kendisi `"use client"` idi ve `useSearchParams()`
- * kullandığı için içeriği bir `<Suspense>` sınırına sarılmıştı. Next bu
- * durumda alt ağacı sunucuda hiç üretmiyor; sunulan HTML yalnızca
- * `fallback` oluyor. Ölçüldü (canlı sunucu HTML'i):
+ * İki kusur arasında sıkışmış bir sayfaydı, ikisi de ölçülerek kapatıldı:
  *
- *   /tools        19 KB   h1: 0   h2: 0   <a>: 0
- *   /topics       98 KB   h1: 1   h2: 1   <a>: 43   (sunucu bileşeni)
- *   /tools/bmi    28 KB   h1: 1                     (sunucu bileşeni)
+ * 1. Sayfa `"use client"` iken `useSearchParams()` bir Suspense sınırı
+ *    gerektiriyordu ve Next alt ağacı sunucuda HİÇ üretmiyordu. Sunulan
+ *    HTML yalnızca `fallback` oluyordu — 19 KB, `<h1>` 0, araç bağlantısı 0.
+ *    114 aracın hub bağlantısı ilk tarama dalgasında yoktu.
  *
- * Yani 114 aracın hub bağlantısı ilk tarama dalgasında hiç görünmüyordu.
- * Araç sayfaları site haritasında olduğu için keşfedilebiliyor, ama hub
- * bağlantısının taşıdığı bağ değeri ve konu kümelenmesi kayboluyordu —
- * "klinik hesaplayıcı" aramalarının karşılaması gereken sayfa tam da bu.
+ * 2. Çözüm olarak kategori sunucuda okununca (`searchParams`) rota
+ *    dinamikleşti (`ƒ`) ve CDN'de her istek MISS oldu — 155 KB'lık sayfa
+ *    her istekte yeniden üretiliyordu.
  *
- * Çare: kategori sorgusu SUNUCUDA okunup prop olarak veriliyor; istemci
- * bileşeninin `useSearchParams()`e ihtiyacı kalmıyor, Suspense sınırı
- * gerekmiyor ve sayfa normal şekilde sunucuda basılıyor.
+ * Şimdiki yapı ikisini birden çözüyor: burada sorgu OKUNMUYOR, yani sayfa
+ * statik kalıyor ve sunucu HTML'i süzülmemiş tam listeyi taşıyor; kategori
+ * süzgeci hidrasyondan sonra istemcide uygulanıyor (bkz. ToolsIcerik).
  *
- * `searchParams` Next 15'te bir Promise — düz nesne gibi okunursa değer
- * undefined kalır (aynı tuzak görsel rotalarında da yaşandı).
+ * Ölçüt: canlıda art arda istekte `x-vercel-cache` PRERENDER/HIT olmalı ve
+ * aynı yanıtta `<h1>` 1, `<h2>` 17, `/tools/` bağlantısı 117 kalmalı.
  */
-export default async function AraclarSayfasi({
-  searchParams,
-}: {
-  searchParams: Promise<{ kategori?: string }>;
-}) {
-  const { kategori } = await searchParams;
-  return <ToolsIcerik kategori={kategori} />;
+export default function AraclarSayfasi() {
+  return <ToolsIcerik />;
 }
