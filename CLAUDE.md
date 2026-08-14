@@ -366,6 +366,26 @@ odaklanabilir olmayan bir öğeye atlandığında tarayıcı görünümü kaydı
 Doğrularken gerçek Tab/Enter tuşuna bas — `element.focus()` bu oturumda bir
 kez "odak halkası yok" diye yanlış sonuç verdirdi.
 
+### Panel/çekmece açan her yüzey üç şeyi sağlamak zorunda
+
+Not defteri bir dönem üçünü de sağlamıyordu; ekranı kaplayan bir çekmece
+olduğu hâlde klavyeyle pratikte kullanılamıyordu.
+
+- **Açılışta odak panele girmeli**, kapanışta açan düğmeye dönmeli. Odak
+  `<body>`'de kalırsa kullanıcı panele ulaşmak için sayfayı en baştan
+  Tab'lamak zorunda. Odağı ilk denetime değil panelin KENDİSİNE ver
+  (`tabIndex={-1}`) — ekran okuyucu önce adı ve rolü duyurur.
+- **ESC kapatmalı.** Fare kullanamayan biri için tek çıkış yolu.
+- **`role="dialog"` + `aria-label`.** `aria-modal` yalnızca sayfanın geri
+  kalanı gerçekten erişilemezse verilir; not defteri masaüstünde karartma
+  yapmadığı için vermiyor.
+
+ESC eklerken **veri kaybettirmediğini ölç**: panele yazıp ESC'ye bas, sonra
+yeniden aç. Kaybettiren bir ESC, hiç olmamasından kötüdür.
+
+Vurgu çubuğu (`ReadingTools`) bu işin doğru yapılmış örneği:
+`role="toolbar"`, `aria-label`, sekiz düğmenin hepsi 32×32 ve etiketli.
+
 **Sayfa kök ögesi `<main>` OLMAMALI.** AppShell ve `(ydus)/layout.tsx` zaten
 basıyor; sayfa da basınca belgede iki `main` landmark'ı oluşuyor (geçersiz,
 ekran okuyucu hangisinin ana içerik olduğunu bilemiyor). Ana sayfa ve premium
