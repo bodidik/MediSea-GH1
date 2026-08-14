@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { yoneticiMi, yetkisizYanit } from "@/lib/yonetici";
 import fs from "fs";
 import path from "path";
 
@@ -7,6 +8,9 @@ export async function PUT(
   req: NextRequest,
   { params }: { params: Promise<{ slug: string }> }
 ) {
+  // Aynı gerekçe: içerik dosyasına doğrudan yazan uç, yetki kontrolsüzdü.
+  if (!(await yoneticiMi())) return yetkisizYanit();
+
   try {
     const { slug } = await params;
     const body = await req.json();

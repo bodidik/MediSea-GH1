@@ -1,6 +1,7 @@
 
 // FILE: web/app/api/topics/[slug]/route.ts
 import { backendBase } from "@/lib/backend";
+import { yoneticiMi, yetkisizYanit } from "@/lib/yonetici";
 import { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
@@ -94,6 +95,11 @@ export async function PUT(
   req: NextRequest,
   ctx: { params: Promise<{ slug: string }> }
 ) {
+  // Yetki kontrolü: bu uç content/canonical/<branş>/<konu>.json dosyasına
+  // DOĞRUDAN yazıyor ve hiçbir kontrolü yoktu. Ölçümle görüldü — yetkisiz
+  // bir PUT gerçek bir konuyu gerçekten değiştirdi.
+  if (!(await yoneticiMi())) return yetkisizYanit();
+
   // 🚀 Next.js 15 kuralı: Önce Promise olan params yapısını çözüyoruz
   const params = await ctx.params;
   const slug = String(params?.slug || "").trim();
