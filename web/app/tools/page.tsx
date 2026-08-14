@@ -319,13 +319,28 @@ function ToolsIcerik() {
 
           <div className="relative w-full md:w-96">
             <span aria-hidden="true" className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
-            <input 
+            <input
               type="text"
+              aria-label="Araçlarda ara"
               placeholder="Ara (Örn: GFR, Wells, Beslenme...)"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full bg-slate-50 border-2 border-slate-200 rounded-3xl pl-14 pr-6 py-5 text-sm focus:border-amber-400 focus:ring-4 focus:ring-amber-400/10 outline-none transition-all placeholder:text-slate-300 font-bold shadow-inner"
             />
+          </div>
+
+          {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
+              Bölge ilk render'dan itibaren DOM'da: role="status" sonradan
+              EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü duyurur. */}
+          {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
+              Sayı BENZERSİZ slug üzerinden: kayıtları toplamak "117 araç"
+              gibi gerçekte olmayan bir sayı üretir (aynı gerekçe toplamArac
+              hesabında da yazılı, bazı araçlar iki branşta listeleniyor). */}
+          <div role="status" aria-live="polite" className="sr-only">
+            {(() => {
+              const n = new Set(filteredData.flatMap((c) => c.items.map((i) => i.slug))).size;
+              return searchTerm ? `${n} araç bulundu.` : `${n} araç listeleniyor.`;
+            })()}
           </div>
         </div>
 
