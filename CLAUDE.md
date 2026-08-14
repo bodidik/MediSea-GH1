@@ -209,6 +209,24 @@ elenir: elenmeden önce "Akut Koroner Sendromlar" ile "Safra Kesesi
 Hastalıkları" ilgili çıkıyordu, çünkü ikisi de "Acil" etiketi taşıyor.
 Tek ortak etiket, o etiket gerçekten nadir değilse akrabalık saymaz.
 
+Bu katı kural tek başına 411 konunun 100'ünü boş bırakıyordu, çünkü etiket
+sözlüğü parçalı: **1232 farklı etiketin 889'u yalnızca tek bir konuda
+geçiyor** ve hiçbir akrabalık kuramıyor. Çözüm kuralı gevşetmek DEĞİL —
+o zaman yukarıdaki saçma eşleşmeler geri gelir. Üreteç, katı kural boş
+dönerse sırayla iki yedeğe düşer:
+
+1. **Kardeşler** — aynı ebeveynin çocukları. İçeriğin kendi hiyerarşisi,
+   uydurma değil; üstelik sayfada başka hiçbir yerde bağlı değiller
+   (ebeveyn ve çocuklar bağlı, kardeşler değil).
+2. **Branş içi son çare** — eşiği geçemeyen ama en yüksek skorlu komşular,
+   sonra branşın merkez sayfaları (kendi çocukları olan konular). Merkez
+   listesi slug'dan türetilen kararlı bir kaydırmayla döndürülür; yoksa
+   aynı branştaki yalıtılmış konuların hepsi birebir aynı bloğu alıyordu.
+
+**"Çıkmaz sokak" ölçerken üç yola birden bak:** ilgili konular, çocuklar,
+ebeveyn. Yalnızca ilgili listesine bakınca 100 sayfa çıkmaz görünüyordu;
+gerçek sayı 9'du.
+
 `arac-metadata.cjs`, her araç klasörüne yalnızca metadata taşıyan bir
 `layout.tsx` üretir — araç sayfaları `"use client"` olduğu için metadata
 dışa aktaramıyorlar. Elle yazılmış bir layout görürse üzerine yazmaz.

@@ -75,7 +75,10 @@ export default function ReadingHint() {
     >
       <span className="shrink-0 text-base">🖍</span>
 
-      <p className="min-w-0 flex-1 text-[12px] leading-snug text-slate-600">
+      {/* 13px: bu, ödeme hattı olan kişisel katmanı tanıtan TEK cümle ve
+          ömür boyu bir kez görünüyor. 12px'te telefonda 130 karakterlik bir
+          metin için fazla küçüktü. */}
+      <p className="min-w-0 flex-1 text-[13px] leading-snug text-slate-600">
         <strong className="font-bold text-slate-800">Bu sayfayı çalışabilirsin:</strong>{" "}
         metni seçince vurgulama çubuğu çıkar, sağdaki tutamaktan not alırsın;
         vurguların tekrar kartına dönüşür.
