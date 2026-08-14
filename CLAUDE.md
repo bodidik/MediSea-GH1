@@ -428,6 +428,28 @@ Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
 tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
 
+### `useSearchParams()` bir sayfayı sunucuda RENDER EDİLMEZ hâle getirir
+
+Bir istemci sayfasında `useSearchParams()` kullanmak Suspense sınırı
+gerektiriyor — bu bilinen kısım. Bilinmeyen kısmı şu: Next o alt ağacı
+sunucuda **hiç üretmiyor**, sunulan HTML yalnızca `fallback` oluyor.
+
+Ölçüldü (canlı, sunucudan gelen ham HTML): `/tools` 19 KB, `<h1>` 0,
+`<h2>` 0, araç bağlantısı **0**. Karşılaştırma: sunucu bileşeni olan
+`/topics` 98 KB ve 26 iç bağlantı. Yani 114 aracın hub bağlantısı ilk
+tarama dalgasında hiç yoktu. Çare: sorgu parametresini SUNUCUDA okuyup
+prop olarak vermek (`page.tsx` sunucu kabuk + istemci içerik).
+
+**Ama bunun bedeli var ve ölçülmeli:** sunucu bileşeni `searchParams`
+okuyunca rota dinamikleşiyor (`ƒ`) ve CDN'de her istek `MISS` oluyor.
+`/tools` şu an bu durumda; hem SSR hem önbellek isteyen doğru yapı,
+Suspense `fallback`'ine SÜZÜLMEMİŞ tam listeyi koymak (bailout'ta
+prerender edilen şey fallback'tir).
+
+Bir sayfanın gerçekten sunucuda basıldığını **ham HTML'de `<h1>` ve
+`<a>` sayarak** doğrula; tarayıcıdaki DOM hidrasyondan sonrasını gösterir
+ve bu kusuru gizler.
+
 ### Route grubu dışındaki sayfalar AppShell almaz
 
 `app/tools/*`, `app/kayseritip/*` ve ayrıca **`app/giris`, `app/kayit`,
