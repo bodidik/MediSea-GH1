@@ -823,3 +823,27 @@ tekrar eden sahte kusurlar üretti. Araç listesini dosya sisteminden al.
 Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
 yüzeyden ayırt edilemez.
+
+### Paralel oturumlar AYNI çalışma ağacını paylaşıyor — commit'ler karışır
+
+Arka planda başlatılan işler ayrı bir worktree'de değil, bu depoda
+çalışıyor. Sonuç ölçüldü: bir oturum `git add` ile dosyasını sahneye
+koyduğu sırada başka bir oturum `git commit` çalıştırdı ve **sahnedeki
+yabancı dosya onun commit'ine girdi.** Ortaya çıkan commit'in mesajı
+kendi içeriğini anlatmıyor:
+
+`521ae13 "Premium yüzeylerde markdown kalın işareti düz metin basılıyordu"`
+aslında yalnızca premium YDUS **paylaşım kartını** (`opengraph-image.tsx`,
+76 satır) içeriyor; markdown işiyle ilgisi yok. Commit gönderildiği için
+geçmiş yeniden yazılmadı — düzeltme bu notla yapılıyor.
+
+Bu depoda commit mesajları belge yerine geçtiği için yanlış etiketlenmiş
+bir commit gerçek bir kayıp. Korunma yolu:
+
+- Sahneleme ile commit'i **tek komutta** yap: `git add <yol> && git commit`
+  yerine `git commit <yol> -m …` (yalnızca verilen yolu kaydeder, sahnede
+  ne olduğuna bakmaz).
+- Commit'ten sonra `git show --stat HEAD` ile içeriğin beklediğinle
+  aynı olduğunu gör; bu turda kusuru yakalayan tam olarak bu oldu.
+- Paralel bir iş çalışırken onun dokunacağı dosyalara (iş tanımında
+  yazılı) el sürme; bu ayrı ve zaten uygulanan bir kural.
