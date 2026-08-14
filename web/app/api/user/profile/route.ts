@@ -53,6 +53,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(j, { status: r.status });
   } catch(error) {
     console.warn("Backend'e ulaşılamadı. User Profile (POST/Track) yedek motoru devrede.");
-    return NextResponse.json({ ok: true, mock: true, message: "Hedef/Track başarıyla güncellendi (Mock)" }, { status: 200 });
+    return NextResponse.json({ ok: false, reason: "backend-unavailable" }, { status: 503 });
   }
 }

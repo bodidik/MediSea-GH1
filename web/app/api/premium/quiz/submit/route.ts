@@ -24,14 +24,24 @@ export async function POST(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
     
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: SİSTEMİ ÇÖKERTME, BAŞARILI "SAHTE" KAYIT YANITI DÖN!
-    console.warn("Backend'e ulaşılamadı, Quiz Sonuç Kaydı (Submit) için yedek motor devrede.");
-    
-    return NextResponse.json({
-      ok: true,
-      message: "Sınav sonuçları mock (sahte) veritabanına kaydedildi.",
-      xpEarned: 50
-    }, { status: 200 });
+  } catch {
+    /**
+     * Arka uç yok. "KAYDEDİLDİ" DENMİYOR.
+     *
+     * Burada  dönülüyordu — kullanıcıya işinin kaydedildiği
+     * söyleniyor, oysa hiçbir yere hiçbir şey yazılmıyordu. Projenin kendi
+     * kuralı bunu yasaklıyor: kaydetme hatası yutulmaz, "Kaydedildi" yazmak
+     * kaydetmemekten beterdir.
+     *
+     * Yalan bir dönem çağıran tarafta  bayrağı kontrol edilerek
+     * savuşturuluyordu; bu, garantiyi her yeni çağıranın aynı şeyi
+     * hatırlamasına bağlar. Artık ucun kendisi dürüst.
+     */
+    console.warn("Quiz sonucu kaydedilemedi — arka uç yok.");
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable" },
+      { status: 503 }
+    );
   }
 }
