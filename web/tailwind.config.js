@@ -1,6 +1,27 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  /**
+   * darkMode: "class" — ama uygulamada `.dark` sınıfını KİMSE koymuyor.
+   * Amaç koyu tema açmak değil, `dark:` varyantlarını ETKİSİZLEŞTİRMEK.
+   *
+   * Varsayılan `media` idi: işletim sistemi koyu kipteyse `dark:` sınıfları
+   * kendiliğinden devreye giriyordu. Uygulama kodunda `dark:` kullanan
+   * DOSYA YOK (ölçüldü: 0) — yani ortada bir koyu tema hiç yok. Ama konu
+   * içeriklerinin 17'si `dark:` taşıyor (397 kullanım, çoğu
+   * `dark:border-slate-600`, `dark:bg-slate-800/700`).
+   *
+   * Sonuç ölçüldü: koyu kipteki bir kullanıcı, baştan sona AÇIK bir arayüzün
+   * içinde koyu tablo satırları görüyordu; yazı rengi uyum sağlamadığı için
+   * kontrast 1.37'ye düşüyordu. 137 konuluk canlı taramada 10 sayfada
+   * 59 öge bu durumdaydı.
+   *
+   * `class` moduna alınca varyantlar hiç eşleşmiyor, içerik açık temasıyla
+   * tutarlı basılıyor. İleride gerçek bir koyu tema yapılırsa kök ögeye
+   * `.dark` eklemek yeterli.
+   */
+  darkMode: "class",
+
   // Branch kartı dinamik renkler için (bg-${branchColor}-500 vb.)
   safelist: [
     {
