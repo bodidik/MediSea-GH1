@@ -174,6 +174,52 @@ export default function NotePanel() {
     return () => document.documentElement.style.setProperty("--ms-note-w", "0px");
   }, [open, width]);
 
+  /* ── Odak yönetimi ────────────────────────────────────────────────────
+   *
+   * Ölçüldü: panel açılınca odak <body>'ye düşüyordu. Klavye kullanan biri
+   * paneli açtıktan sonra not alanına ulaşmak için sayfayı en baştan
+   * Tab'lamak zorunda kalıyordu — panel ekranı kaplayan bir çekmece olduğu
+   * halde.
+   *
+   * Odak ilk denetime değil PANELİN KENDİSİNE veriliyor: ekran okuyucu önce
+   * "Not defteri" adını ve rolünü duyuruyor, sonraki Tab ilk denetime gidiyor.
+   * Kapanışta odak tutamağa geri dönüyor; aksi hâlde odak yine kaybolurdu.
+   */
+  const panelRef = useRef<HTMLElement | null>(null);
+  const tutamakRef = useRef<HTMLButtonElement | null>(null);
+  const acilmistiRef = useRef(false);
+
+  useEffect(() => {
+    if (open) {
+      acilmistiRef.current = true;
+      const t = setTimeout(() => panelRef.current?.focus(), 0);
+      return () => clearTimeout(t);
+    }
+    // Yalnızca gerçekten açıkken kapandıysa odağı geri ver — ilk yüklemede
+    // sayfanın odağını çalmasın.
+    if (acilmistiRef.current) {
+      acilmistiRef.current = false;
+      const t = setTimeout(() => tutamakRef.current?.focus(), 0);
+      return () => clearTimeout(t);
+    }
+  }, [open]);
+
+  /* ── ESC ile kapat ────────────────────────────────────────────────────
+   * Gerçek Escape tuşuyla ölçüldü: panel kapanmıyordu. Ekranı kaplayan bir
+   * çekmecede ESC beklenen çıkış yolu; yoksa fare kullanamayan kullanıcının
+   * tek çaresi kapatma düğmesini Tab'layarak bulmak.
+   */
+  useEffect(() => {
+    if (!open) return;
+    const dinle = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      e.preventDefault();
+      setOpen(false);
+    };
+    window.addEventListener("keydown", dinle);
+    return () => window.removeEventListener("keydown", dinle);
+  }, [open]);
+
   /* ── Vurgudan alıntı geldiğinde ─────────────────────────────────────── */
   useEffect(() => {
     const onQuote = (ev: Event) => {
@@ -480,8 +526,10 @@ export default function NotePanel() {
       {!open && (
         <button
           data-ms-ui
+          ref={tutamakRef}
           onClick={() => setOpen(true)}
           title="Not defteri"
+          aria-label="Not defterini aç"
           className="fixed right-0 top-1/2 z-[54] flex -translate-y-1/2 flex-col items-center gap-1.5 rounded-l-2xl border border-r-0 border-slate-200 bg-white/95 px-2 py-4 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:pr-3 active:scale-95"
         >
           <span className="text-base">📝</span>
@@ -504,10 +552,18 @@ export default function NotePanel() {
             className="fixed inset-0 z-[56] bg-slate-950/20 backdrop-blur-[1px] md:hidden"
           />
 
+          {/* role="dialog" + ad: panelin ne olduğu ekran okuyucuya duyurulsun.
+              aria-modal BİLEREK verilmiyor — masaüstünde karartma yok ve
+              sayfanın geri kalanı kullanılabilir durumda; modal demek yanlış
+              olurdu. tabIndex={-1} odağın panele verilebilmesi için. */}
           <aside
             data-ms-ui
+            ref={panelRef}
+            role="dialog"
+            aria-label="Not defteri"
+            tabIndex={-1}
             style={{ width: `min(${width}px, 94vw)` }}
-            className="fixed right-0 top-0 z-[57] flex h-full flex-col border-l border-slate-200 bg-white shadow-2xl"
+            className="fixed right-0 top-0 z-[57] flex h-full flex-col border-l border-slate-200 bg-white shadow-2xl outline-none"
           >
             {/* Genişlik tutamağı. Telefonda panel zaten tam en, orada gizli. */}
             <div
