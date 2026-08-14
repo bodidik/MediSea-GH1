@@ -269,7 +269,13 @@ export default async function TopicDetailPage({
           {/* --- SOL KOLON: İÇERİK --- */}
           <div className="lg:col-span-8 space-y-8">
             <div className="border-l-8 border-blue-900 pl-6 py-2">
-              <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3">
+              {/* break-words: başlık 36px ve tıbbi terimler uzun. Ölçüldü —
+                  H1'in KUTUSU 296px (sınır içinde) ama scrollWidth 353, yani
+                  metin kutuyu taşıyor ve SAYFAYI yatay kaydırıyordu. Öge
+                  kutularını tarayan ölçüm bunu göremez; ölçüt öge başına
+                  scrollWidth > clientWidth. 137 konudan 26'sı bu yüzden
+                  kayıyordu (7-62px, kayma başlık uzunluğuyla artıyor). */}
+              <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
                 {topicItem.title}
               </h1>
               <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
