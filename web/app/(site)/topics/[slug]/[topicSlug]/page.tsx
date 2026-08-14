@@ -306,18 +306,29 @@ export default async function TopicDetailPage({
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
                 vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}
             <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
+              {/* Ziyaretçiye görünen hata kartı.
+                  Eskiden site SAHİBİNE yazılmıştı: dosya yolu, "geçerli bir
+                  JSON değil", "düzenleyici de kapalı" ve ham ayrıştırıcı
+                  mesajı. Google'dan gelen bir okuyucu için hiçbiri anlamlı
+                  değil, üstelik burası açık taraf — huninin ortası.
+                  Teknik ayrıntı zaten sunucu günlüğüne yazılıyor (yukarıdaki
+                  console.error), yani buradan kaldırmak tanı gücünü
+                  azaltmıyor. */}
               {okumaHatasi && (
                 <div className="bg-amber-50 border-2 border-amber-300 rounded-3xl p-6">
                   <h2 className="text-base font-black text-amber-900 uppercase tracking-wide mb-2">
-                    Bu konunun içeriği okunamadı
+                    Bu konu şu an görüntülenemiyor
                   </h2>
-                  <p className="text-sm text-amber-900/80 font-medium leading-relaxed mb-3">
-                    <code className="font-mono">{slug}/{topicSlug}.json</code> dosyası geçerli
-                    bir JSON değil, bu yüzden metin gösterilemiyor. Dosya düzeltilene kadar
-                    düzenleyici de kapalı — boş bir kayıt yazıp mevcut içeriğin üzerine
-                    gitmemesi için.
+                  <p className="text-sm text-amber-900/80 font-medium leading-relaxed mb-4">
+                    İçerikte bir sorun var ve metni gösteremiyoruz. Sorun bize iletildi.
+                    Bu arada aynı branştaki diğer başlıklara göz atabilirsin.
                   </p>
-                  <p className="text-[11px] font-mono text-amber-900/60 break-all">{okumaHatasi}</p>
+                  <Link
+                    href={`/topics/${slug}`}
+                    className="inline-block rounded-full bg-amber-900 px-5 py-2.5 text-xs font-black uppercase tracking-widest text-white transition-colors hover:bg-amber-800"
+                  >
+                    {bransAdi} başlıklarına dön
+                  </Link>
                 </div>
               )}
 
