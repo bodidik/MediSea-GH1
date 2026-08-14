@@ -79,7 +79,8 @@ console.log(`2) ebeveyn adı sapmış    : ${sapmis.length}`);
 console.log(`3) ebeveyn hiç yok       : ${yok.length}`);
 
 if (sapmis.length) {
-  console.log(`\n— adı sapmış olanlar (dosya var, referans tutmuyor):`);
+  console.log(`\n— adı sapmış olanlar — KOD BUNLARI ZATEN ONARIYOR, elle düzeltme gerekmez:`);
+  console.log(`  (lib/slug-eslestir.ts, okuma adımında harf düzeni ve Türkçe aksan farkını yok sayar)`);
   for (const k of sapmis)
     console.log(`   ${k.brans}/${k.slug}\n       parent: "${k.parent}"  →  gerçek dosya: "${k.gercek}"`);
 }

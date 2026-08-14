@@ -8,6 +8,7 @@ import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
+import { ebeveyniCoz } from "@/lib/slug-eslestir";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -194,6 +195,13 @@ export default async function TopicDetailPage({
       };
     } catch (e) { return null; }
   }).filter(Boolean) as {slug: string, title: string, parent: string | null, hidden: boolean, order: number}[];
+
+  // Ebeveyn referansındaki yazım sapmasını onar — branş sayfasıyla AYNI
+  // onarım. İkisi farklı davranırsa bir konu branş sayfasında bir başlığın
+  // altında görünüp o başlığın kendi sayfasında görünmez; ölçümde tam olarak
+  // bu oluyordu (akromegali, "Ön-" ve "on-" farkı yüzünden).
+  const tumSluglar = new Set(allTopics.map(t => t.slug));
+  for (const t of allTopics) t.parent = ebeveyniCoz(t.parent, tumSluglar);
 
   // Doğrudan çocukları bul ve sıraya (order) göre diz
   const childTopics = allTopics

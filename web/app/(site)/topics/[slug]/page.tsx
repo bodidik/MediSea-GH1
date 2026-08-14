@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
 import { getBranchTools } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
+import { ebeveyniCoz } from "@/lib/slug-eslestir";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
 // force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
@@ -105,6 +106,19 @@ export default async function BranchListPage({
       }
     })
     .filter(Boolean) as { slug: string; title: string; order: number; parent: string | null; hidden: boolean }[];
+
+  // 2b. Ebeveyn referansındaki YAZIM sapmasını onar.
+  //
+  // Ölçüldü: bir konu ebeveynini "Ön-hipofiz-hastaliklari-giris" diye
+  // yazmış, dosya ise "on-hipofiz-hastaliklari-giris" — fark yalnızca büyük
+  // harf ve Ö. Aşağıdaki bütün karşılaştırmalar tam dize eşleşmesi yaptığı
+  // için konu hiyerarşiden düşüyor, ebeveyninin sayfasında görünmüyordu.
+  //
+  // Gerçekten var olmayan bir ebeveyn ham hâliyle kalır; yani bu onarım
+  // eksikleri GİZLEMEZ, "Diğer Konular" ve asili-denetim.cjs onları
+  // görmeye devam eder.
+  const tumSluglar = new Set(topicList.map((t) => t.slug));
+  for (const t of topicList) t.parent = ebeveyniCoz(t.parent, tumSluglar);
 
   // 3. Stabil Sıralama: Önce Order (Sayısal), sonra Alfabetik (Türkçe-Base)
   topicList.sort((a, b) => {

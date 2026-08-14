@@ -277,7 +277,7 @@ döner:
 Bunları bilerek mi gizledin (içerik hazır değil diye), yoksa unutuldu mu —
 bilmiyorum, o yüzden dokunmadım. Hazırsalar en ucuz kazanç burada.
 
-**2) Ebeveyn adı sapmış — 1 konu.** Dosya var, referans tutmuyor:
+**2) Ebeveyn adı sapmış — 1 konu. ÇÖZÜLDÜ, sende iş yok.**
 
 ```
 endokrinoloji/akromegali-ve-gigantizm
@@ -285,7 +285,15 @@ endokrinoloji/akromegali-ve-gigantizm
     gerçek dosya: "on-hipofiz-hastaliklari-giris"
 ```
 
-Büyük harf ve `Ö` farkı. Tek karakterlik bir düzeltme.
+Fark yalnızca büyük harf ve `Ö`. İçerik dosyasını düzeltmek yerine okuma
+adımı onarıyor (`lib/slug-eslestir.ts`) — bu projede aynı yaklaşım
+listelenmemiş premium konular için de kullanılıyor. Akromegali artık
+ebeveyninin sayfasında alt başlık olarak görünüyor, "Diğer Konular"
+kovasından çıktı (endokrinolojide 9 → 8).
+
+Onarım gerçek eksikleri **gizlemiyor**: var olmayan bir ebeveyn ham hâliyle
+kalıyor, kovaya düşüyor ve denetimde görünmeye devam ediyor. İstersen içerik
+dosyasını yine de düzeltebilirsin; kod tarafı buna bağlı değil.
 
 **3) Üst başlık hiç yazılmamış — 27 konu.** Bunlar için önce o başlığı
 yazman gerekiyor; hangi konunun nereye gireceği tıbbi bir sınıflandırma
