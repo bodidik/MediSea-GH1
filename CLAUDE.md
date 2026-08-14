@@ -773,6 +773,14 @@ Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru g
   arayıcı onun altındaki koyu kutuyu göremez ve sayfanın beyazını zemin
   sanar. Birim çevirici bu yüzden 1.42 gösteriyordu, gerçekte 7.29'du.
 
+**Çok sayfalı taramayı YEREL dev sunucuda yapma.** Next dev her rotayı ilk
+ziyarette derliyor; 114 araç sayfası için tarama 13. sayfada saatlerce
+takıldı. Aynı tarama CANLIDA birkaç dakikada bitti, çünkü orada bütün
+rotalar önceden derlenmiş. Yerel ölçüm tek sayfa ya da yeni değiştirilmiş
+birkaç sayfa için doğru araç; kütle taraması canlıda (ya da `npm start`
+ile üretim derlemesinde) yapılır — yalnız o zaman ölçtüğün şeyin son
+dağıtım olduğunu unutma.
+
 Sayfayı iframe'e yükleyip ölçerken **doğru sayfada olduğunu da doğrula**:
 `d.location.pathname` beklenen yola eşit mi, gövdede "Sayfa bulunamadı"
 var mı. Bir tur, var olmayan araç adlarıyla (elle yazılmış liste) 404
