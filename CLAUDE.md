@@ -291,7 +291,20 @@ Bu hata sınıfları **kodda değil veride** durur; `lint`, `typecheck` ve
 ```bash
 node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönlendirmeleri bilir)
 node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
+node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
 ```
+
+`yetim-denetim`, kendini onaran okumaların TERSİ yöndeki sorunu bulur.
+Onarım "konu dosyası var ama listede adı geçmiyor" durumunu düzeltiyor;
+bu denetim "içerik dosyası var ama konusu yok" durumunu buluyor — öyle bir
+dosyaya arayüzden ulaşmanın hiçbir yolu yok. CI kapısı değil, çünkü yetim
+dosya kod hatası değil içerik kararı.
+
+Yetim dosyalar sayıları da bozuyordu: `icerikSayilari()` bir dönem dizindeki
+her dosyayı sayıyor, pano ise yalnızca erişilebilir konuları topluyordu.
+Satış sayfasının üst yazısı "362 soru" derken sayfanın kendi panosu "352"
+diyordu. **Reklam edilen sayı, kullanıcının gerçekten açabildiği içerik
+olmalı** — sayaç artık konu dosyası olmayan içeriği saymıyor.
 
 Denetim yazarken **negatif kontrol yap**: kasten bozuk bir kayıt ekleyip
 yakalandığını gör, sonra geri al. Kusur yakalayamayan bir denetim, yanlış
