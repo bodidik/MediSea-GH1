@@ -53,13 +53,20 @@ module.exports = {
       { source: '/topics/hematoloji/hodgkin-lenfoma', destination: '/topics/hematoloji/hodgkin', permanent: true },
       { source: '/topics/hematoloji/nhl', destination: '/topics/hematoloji/nhl-genel', permanent: true },
       { source: '/topics/hematoloji/burkitt-lenfoma', destination: '/topics/hematoloji/burkitt', permanent: true },
-      //    DİKKAT: buradaki olumsuz ileri-bakış `(?!tr/)` biçiminde olmak
-      //    zorunda. İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM
-      //    yolun sonuna baktığı için koşul her zaman sağlanıyordu: /tr kendine
+      //    DİKKAT 1: olumsuz ileri-bakış `(?!tr/)` biçiminde olmak zorunda.
+      //    İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM yolun
+      //    sonuna baktığı için koşul her zaman sağlanıyordu: /tr kendine
       //    yönleniyor, tarayıcı 50 atlamada pes ediyordu. Yani premium
       //    bölümünün tamamı erişilemez hale gelmişti. Yereldeki ölçüm yakaladı.
+      //
+      //    DİKKAT 2: `api` de elenmeli. İlk sürüm elemiyordu ve `:lang`
+      //    parçası `api`yi de dil sanıyordu: /api/premium/daily-program ve
+      //    /api/premium/quiz/* istekleri /tr/premium/... HTML sayfalarına
+      //    308'leniyordu. PremiumDailyProgram ve PremiumQuizHistory
+      //    bileşenleri bu uçları çağırıyor; ikisi de erişim kapısının
+      //    arkasındaki panoda olduğu için kusur birkaç tur fark edilmedi.
       {
-        source: '/:lang((?!tr/)[^/]+)/premium/:yol*',
+        source: '/:lang((?!tr/|api/)[^/]+)/premium/:yol*',
         destination: '/tr/premium/:yol*',
         permanent: true,
       },
