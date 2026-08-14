@@ -366,6 +366,39 @@ odaklanabilir olmayan bir öğeye atlandığında tarayıcı görünümü kaydı
 Doğrularken gerçek Tab/Enter tuşuna bas — `element.focus()` bu oturumda bir
 kez "odak halkası yok" diye yanlış sonuç verdirdi.
 
+### Global klavye kısayolları odaktaki ögeyi yutmamalı
+
+`window` üzerinde keydown dinleyip `preventDefault()` çağıran her kısayol,
+hedefi kontrol etmezse odaktaki düğmenin çalışmasını iptal eder. Flashcard
+oynatıcısı bir dönem Space **ve Enter**'da bunu yapıyordu: dört düğme de
+Tab'lanabiliyor ama tetiklenemiyordu — ücretli yüzeyde tam klavye kilidi.
+
+Ortak koruma: `app/lib/klavye.ts` → `kisayolSusmali(e)`. Bilerek dar:
+yazı alanlarında her kısayol susar, Space/Enter yalnızca hedef düğme ya da
+bağlantıysa susar, rakam kısayolları (tekrar sayfasındaki 1-4) bir düğmeyi
+çalıştırmadığı için susmaz.
+
+**Bunu ölçerken tarayıcı otomasyonunun iki kısıtı var** ve ikisi de yanlış
+sonuç ürettirdi:
+
+- `computer key "space"` olayı `key: ""` olarak gidiyor — Space tuşu hiç
+  iletilmiyor. ArrowRight/Enter/Escape doğru gidiyor.
+- Enter, odaktaki düğmede **click üretmiyor**. Uygulamadan bağımsız, DOM'a
+  elle eklenen sade bir düğmede de üretmedi. Yani "Enter'a bastım hiçbir
+  şey olmadı" tek başına kusur kanıtı DEĞİL.
+
+Doğru sinyal `e.defaultPrevented`: ayrı bir dinleyici takıp
+`setTimeout(...,0)` ile kısayoldan SONRA oku. Beklenen tablo:
+
+```
+hedef BUTTON, koruma yok  -> defaultPrevented true   (bozuk)
+hedef BUTTON, koruma var  -> defaultPrevented false  (doğru)
+hedef BODY,   koruma var  -> defaultPrevented true   (kısayol hâlâ çalışıyor)
+```
+
+Üçüncü satır olmadan düzeltme doğrulanmış sayılmaz — koruma kısayolu tümden
+öldürmüş de olabilir.
+
 ### Panel/çekmece açan her yüzey üç şeyi sağlamak zorunda
 
 Not defteri bir dönem üçünü de sağlamıyordu; ekranı kaplayan bir çekmece
