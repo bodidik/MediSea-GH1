@@ -452,6 +452,52 @@ Yeni bir alan eklerken: ya `<label htmlFor>` + `<input id>` çifti, ya
 duyurulur, bu yüzden koşullu basılabilir. `status` böyle değil — bölgenin
 içerik değişmeden ÖNCE DOM'da bulunması gerekiyor, yoksa ilk mesaj kaçar.
 
+**Kaynakta `htmlFor` aramak da yanıltır — ters yönde.** Klinik araçların
+çoğu `<input>`'u `<label>` ile SARIYOR; sarmalayan etiket geçerli bir ad
+kaynağı, yani `htmlFor` yokluğu "adsız" demek değil. Grep bir dönem
+"68 araçta bağlantılı etiket yok" dedi; tarayıcıda ad hesaplatılınca
+gerçek sayı 13 araçta 21 alandı.
+
+### Gizlenen form kontrolü `hidden` ile gizlenmez
+
+Araçlarda onay kutusu/radyo görsel olarak sahte bir kutuyla çiziliyor,
+gerçek `<input>` gizleniyor. Bu bir dönem `className="hidden"` ile
+yapılıyordu — yani `display: none`. Ölçüldü: böyle bir öge odak sırasına
+girmiyor, sarmalayan `<label>` de odaklanabilir değil, dolayısıyla
+**29 araçtaki 36 kontrol klavyeyle hiç işletilemiyordu** (CURB-65'te 5,
+CHA2DS2-VASc'ta 8, Charlson'da 19). Fareyle çalıştığı için yıllarca
+görünmedi.
+
+Doğrusu `sr-only`: görünmez ama odaklanılabilir ve Space ile işaretlenir.
+Görünmeyen ögenin kendi odak halkası işe yaramadığı için halkayı
+sarmalayan etiket verir — `focus-within:ring-2 focus-within:ring-blue-700
+focus-within:ring-offset-2`. `globals.css` sonundaki `:has()` kuralı
+yalnızca yedek.
+
+### Doğrulama betiği, doğruladığı betiğin hatasını PAYLAŞMAMALI
+
+Yukarıdaki halka sınıfları bir betikle yerleştirildi: `<input>`ten yukarı
+14 satır içinde `<label>` ara. 10 dosyada mesafe 16-23 satırdı, yani
+atlandılar — ve **doğrulama betiği aynı 14 satırlık pencereyi kullandığı
+için "eksik yok" dedi.** Kusuru ancak bağımsız bir ölçüt yakaladı:
+dosyadaki `sr-only` sayısı ile halka sınıfı sayısını karşılaştırmak.
+
+Bir yerleştirmeyi kendi arama mantığıyla doğrulama; **sonucu say.**
+
+### Bu ortamda sayfaya `<style>` enjekte etmek İŞE YARAMIYOR
+
+Bir CSS kuralının uygulanıp uygulanmadığını sınamak için
+`document.head.appendChild(style)` denendi: `!important` ile bile hiçbir
+hesaplanmış değer değişmedi, temiz bir sekmede de aynı. Yani enjeksiyon
+bir doğrulama yöntemi değil ve "kuralım uygulanmıyor" sonucu ondan
+çıkarılamaz. Okunan hesaplanmış değerler ise gerçek — kural sınarken
+`el.matches(seçici)`, `getComputedStyle(el).getPropertyValue('--tw-…')`
+ve stylesheet içindeki `cssText` üçlüsüne bak.
+
+Uzun değerleri kırpma: `boxShadow` bir dönem "none" sanıldı, çünkü
+Tailwind halkası dizenin ilerisindeydi ve ilk 90 karakter şeffaf
+yer tutuculardı.
+
 Ölçmenin doğru yolu erişilebilir adı HESAPLATMAK: `aria-label` →
 `aria-labelledby` → `label[for]` → sarmalayan `<label>`. Kaynakta `<label>`
 görmek yetmez, bağlı olup olmadığını göstermez.
