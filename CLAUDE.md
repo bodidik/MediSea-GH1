@@ -407,6 +407,31 @@ varsayım üretir.*
 Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
 yanıt, veriyi gerçek sanan birini yanıltır mı?
 
+### Hata ve boş durumların metni de üründür
+
+Bu oturumda aynı kusur sınıfı iki ayrı yüzeyde çıktı ve ikisi de ücretli
+taraftaydı:
+
+- Premium konu sayfasındaki AI kutusu kullanıcıya **"Backend çalışıyor mu?"**
+  diye soruyordu.
+- İnciler sayfası hata kartında **dosya yolunu** gösteriyordu
+  (`hematoloji/aml.json`), bozuk bağlantıya düşen kullanıcıyı
+  **"🏴‍☠️ Güvenlik İhlali"** ile karşılıyordu ve hiçbir hata durumunda
+  **geri dönüş bağlantısı yoktu**.
+
+Yeni bir hata/boş durum yazarken üç ölçüt:
+
+1. **Sistem iç adı geçmesin.** Backend, API, JSON yolu, hata kodu, tablo adı
+   kullanıcının işi değil — teknik ayrıntı `console.error`'a gider.
+2. **Kullanıcıyı suçlama.** Yanlış kopyalanmış bir adres güvenlik ihlali
+   değildir.
+3. **Çıkış yolu ver.** Her hata kartında geri dönülecek bir bağlantı olsun;
+   yoksa kullanıcı çıkmazda kalır.
+
+Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
+MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
+(sızıntı, suçlama, çıkmaz).
+
 ### Yetki kontrolü tek yerde: `lib/yonetici.ts`
 
 `session?.user?.email === process.env.ADMIN_EMAIL` karşılaştırması beş ayrı
