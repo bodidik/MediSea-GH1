@@ -399,6 +399,15 @@ metadata değeri, bir sunucu bileşeni sınıfı, `sitemap.xml` içeriği gibi.
 İşaret bulunamıyorsa doğrudan tarayıcıyla bak; zaten canlı doğrulamanın
 kuralı bu.
 
+En güvenilir işaret **CSS paketi**: `/_next/static/css/<hash>.css` parmak
+izli, sunucudan geliyor ve stil değiştiyse kesin değişiyor. Sayfanın kendisi
+ISR ile önbellekteyken bile paket yeni olur.
+
+**`grep -c` EŞLEŞMEYİ DEĞİL SATIRI SAYAR.** Üretim HTML'i küçültülmüş, yani
+32 eşleşme tek satırda duruyor ve `grep -c` "1" der. Bu, dağıtım inmediği
+izlenimi verdi. Sayı istiyorsan `grep -o … | wc -l` kullan; varlık/yokluk
+yetiyorsa `-c` yeterli ama sayıya güvenme.
+
 ### Global klavye kısayolları odaktaki ögeyi yutmamalı
 
 `window` üzerinde keydown dinleyip `preventDefault()` çağıran her kısayol,
