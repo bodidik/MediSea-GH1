@@ -310,7 +310,21 @@ Bu hata sınıfları **kodda değil veride** durur; `lint`, `typecheck` ve
 node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönlendirmeleri bilir)
 node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
 node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
+node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DEĞİL)
 ```
+
+`asili-denetim`, "Diğer Konular" kovasının NEDEN dolduğunu söyler. Ölçüldü:
+görünür 411 konunun **46'sı (%11)** hiyerarşiden düşüyor ve sebepleri üç
+ayrı sınıfta — çareleri de farklı:
+
+| Sınıf | Adet | Çare |
+|---|---|---|
+| Ebeveyn var ama `hidden` | 18 | `hidden` kaldırılırsa hiyerarşi döner |
+| Ebeveyn adı sapmış (büyük harf / Türkçe karakter) | 1 | referansı düzelt |
+| Üst başlık hiç yazılmamış | 27 | başlığı yaz (tıbbi sınıflandırma kararı) |
+
+Toplamı tek sayı olarak raporlamak yanıltıcı: 18'i tek bir bayrakla
+çözülüyor, 27'si içerik yazmayı gerektiriyor.
 
 `yetim-denetim`, kendini onaran okumaların TERSİ yöndeki sorunu bulur.
 Onarım "konu dosyası var ama listede adı geçmiyor" durumunu düzeltiyor;

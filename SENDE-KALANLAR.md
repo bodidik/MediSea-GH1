@@ -246,7 +246,67 @@ mesafeli satış, iade) ondan ÖNCE hazır olmalı.
 
 ---
 
-## 10. Küçük not: premium hesap
+## 10. Kütüphanenin %11'i hiyerarşiden düşmüş — 46 konu
+
+Bir konu `meta.parent` ile üst başlığa bağlanıyor. Ebeveyn bulunamazsa konu
+ne ana listeye giriyor ne de ebeveyninin sayfasından bağlantı alıyor. Branş
+sayfası bunu onarıyor ("Diğer Konular" altında listeliyor), yani **hiçbir
+şey kaybolmuyor** — ama düzen bozuluyor. En çarpıcısı gastroenteroloji:
+34 konunun yalnızca **2'si** ana başlık, **13'ü** bu kovada.
+
+Denetimi istediğin zaman çalıştırabilirsin:
+
+```bash
+node web/scripts/asili-denetim.cjs
+```
+
+46 konu üç sınıfa ayrılıyor ve **üçünün çaresi farklı**:
+
+**1) Ebeveyn var ama gizli — 18 konu.** Üst başlık dosyası yazılmış ama
+`meta.hidden` taşıyor. `hidden` kalkarsa 18 konu tek hamlede hiyerarşiye
+döner:
+
+| Gizli üst başlık | Altına dönecek konu |
+|---|---|
+| `gastroenteroloji/ozofagus-hastaliklari` | 7 |
+| `endokrinoloji/reproduktif-endokrinoloji-ana` | 5 |
+| `gastroenteroloji/viral-hepatitler` | 3 |
+| `endokrinoloji/kalsiyum-metabolizmasi-ana` | 2 |
+| `gastroenteroloji/pankreas-hastaliklari` | 1 |
+
+Bunları bilerek mi gizledin (içerik hazır değil diye), yoksa unutuldu mu —
+bilmiyorum, o yüzden dokunmadım. Hazırsalar en ucuz kazanç burada.
+
+**2) Ebeveyn adı sapmış — 1 konu.** Dosya var, referans tutmuyor:
+
+```
+endokrinoloji/akromegali-ve-gigantizm
+    parent: "Ön-hipofiz-hastaliklari-giris"
+    gerçek dosya: "on-hipofiz-hastaliklari-giris"
+```
+
+Büyük harf ve `Ö` farkı. Tek karakterlik bir düzeltme.
+
+**3) Üst başlık hiç yazılmamış — 27 konu.** Bunlar için önce o başlığı
+yazman gerekiyor; hangi konunun nereye gireceği tıbbi bir sınıflandırma
+kararı, bu yüzden ben karar vermedim:
+
+| Yazılmamış üst başlık | Bekleyen konu |
+|---|---|
+| `kardiyoloji/kardiyoloji-genel` | 6 |
+| `hematoloji/benign-hematoloji` | 5 |
+| `klinik-nutrisyon/nutrisyon-hastaliklari` | 5 |
+| `kardiyoloji/farmakoloji-statin-miyopatisi-sams` | 3 |
+| `hematoloji/anemiler-genel-bakis` | 2 |
+| …ve 6 başlık daha, 1'er konu | 6 |
+
+Dikkat: `kardiyoloji-genel` altında bekleyenler arasında **Akut Koroner
+Sendromlar** var — kütüphanenin en temel başlıklarından biri, şu an
+"Diğer Konular" kovasında.
+
+---
+
+## 11. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:
