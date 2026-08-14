@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
+import { isoTarih } from "@/lib/jsonld";
 
 /**
  * Site haritası dosya sisteminden üretiliyor — sayfaların okuduğu kaynağın
@@ -40,8 +41,28 @@ function guvenliOku<T>(is: () => T, yedek: T): T {
   }
 }
 
-/** Dosyanın son değişiklik tarihi — meta.updatedAt serbest metin olduğu için güvenilmez. */
+/**
+ * Konunun son değişiklik tarihi.
+ *
+ * Önce `meta.updatedAt` denenir, olmazsa dosyanın `mtime`'ı. Eskiden yalnızca
+ * `mtime` kullanılıyordu ve gerekçesi "updatedAt serbest metin, güvenilmez"
+ * idi — o gerekçe artık geçerli değil: `isoTarih()` Türkçe kısa/uzun ve
+ * İngilizce kısa ay adlarının hepsini çeviriyor (ölçüldü: 456 konunun 452'si
+ * çevriliyor, 4'ünde alan hiç yok, çevrilemeyen 0).
+ *
+ * Asıl sorun `mtime`'ın CI'da ANLAMSIZ olması: derleme makinesi depoyu
+ * sıfırdan çekiyor ve bütün dosyalar checkout anını alıyor. Ölçüldü —
+ * canlı site haritasındaki 543 girdinin tamamı aynı gün ve yalnızca iki
+ * farklı dakika taşıyordu. Yani her adres "derleme anında değişti" diyordu
+ * ve konu başına tazelik sinyali tümden ölüydü.
+ */
 function sonDegisiklik(dosyaYolu: string): Date {
+  const iso = guvenliOku(() => {
+    const veri = JSON.parse(fs.readFileSync(dosyaYolu, "utf-8"));
+    return isoTarih(veri?.meta?.updatedAt);
+  }, undefined);
+
+  if (iso) return new Date(`${iso}T00:00:00Z`);
   return guvenliOku(() => fs.statSync(dosyaYolu).mtime, new Date());
 }
 
