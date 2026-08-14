@@ -45,7 +45,7 @@ export default function TopicsFilters({ q = "", sort = "title_asc" }: Props) {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Konu ara..."
+        aria-label="Konu ara" placeholder="Konu ara..."
         className="flex-1 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-blue-900"
       />
 

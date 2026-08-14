@@ -63,6 +63,7 @@ export default function KutuphaneArama({
         <span className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
         <input
           type="text"
+          aria-label="Kütüphanede konu ara"
           value={sorgu}
           onChange={(e) => setSorgu(e.target.value)}
           placeholder="Konu ara (örn: hiponatremi, anemi, tiroid)…"

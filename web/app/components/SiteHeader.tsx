@@ -134,8 +134,13 @@ export default function SiteHeader() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </span>
+            {/* aria-label: placeholder erişilebilir ad yerine geçmez —
+                yazmaya başlayınca kaybolur ve kimi okuyucular onu ad değil
+                ipucu sayar. Ölçümde uygulamadaki dokuz form alanının
+                hiçbirinin adı yoktu. */}
             <input
               type="text"
+              aria-label="Sitede ara"
               placeholder="Hastalık, semptom veya vaka ara..."
               className="h-10 w-full rounded-full border border-slate-200 bg-slate-50 pl-9 sm:pl-10 pr-9 sm:pr-10 text-sm font-medium outline-none focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 transition-all shadow-sm"
               value={query}

@@ -58,13 +58,17 @@ function GirisFormu() {
         )}
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {/* htmlFor + id: etiketler vardı ama alana BAĞLI değildi; ölçümde
+              iki alanın da erişilebilir adı yoktu. */}
           <div>
-            <label style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}>
+            <label htmlFor="giris-eposta" style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}>
               E-posta
             </label>
             <input
+              id="giris-eposta"
               type="email" value={email} onChange={e => setEmail(e.target.value)}
               required autoComplete="email"
+              aria-invalid={hata ? true : undefined}
               style={{
                 width: '100%', padding: '10px 12px', fontSize: '14px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
@@ -73,12 +77,14 @@ function GirisFormu() {
             />
           </div>
           <div>
-            <label style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}>
+            <label htmlFor="giris-sifre" style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}>
               Şifre
             </label>
             <input
+              id="giris-sifre"
               type="password" value={password} onChange={e => setPassword(e.target.value)}
               required autoComplete="current-password"
+              aria-invalid={hata ? true : undefined}
               style={{
                 width: '100%', padding: '10px 12px', fontSize: '14px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
@@ -87,8 +93,9 @@ function GirisFormu() {
             />
           </div>
 
+          {/* role="alert": "E-posta veya şifre hatalı." sessizce beliriyordu. */}
           {hata && (
-            <div style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
+            <div role="alert" style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
               {hata}
             </div>
           )}

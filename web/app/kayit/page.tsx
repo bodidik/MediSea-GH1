@@ -53,15 +53,24 @@ export default function KayitPage() {
         </div>
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {/* htmlFor + id: etiketler görsel olarak duruyordu ama alana BAĞLI
+              değildi; ölçümde üç alanın da erişilebilir adı yoktu. Ekran
+              okuyucu "düzenleme alanı" deyip geçiyordu — kayıt, ödeme
+              hattının kapısı. */}
           {(['name', 'email', 'password'] as const).map((k) => (
             <div key={k}>
-              <label style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}>
+              <label
+                htmlFor={`kayit-${k}`}
+                style={{ fontSize: '12px', fontWeight: 600, color: '#4a6a8a', display: 'block', marginBottom: '4px' }}
+              >
                 {k === 'name' ? 'Ad Soyad' : k === 'email' ? 'E-posta' : 'Şifre'}
               </label>
               <input
+                id={`kayit-${k}`}
                 type={k === 'password' ? 'password' : k === 'email' ? 'email' : 'text'}
                 value={form[k]} onChange={set(k)} required
                 autoComplete={k === 'password' ? 'new-password' : k}
+                aria-invalid={hata ? true : undefined}
                 style={{
                   width: '100%', padding: '10px 12px', fontSize: '14px',
                   border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
@@ -71,8 +80,11 @@ export default function KayitPage() {
             </div>
           ))}
 
+          {/* role="alert": hata mesajı sessizce beliriyordu. `alert` sonradan
+              DOM'a eklenince duyurulur, bu yüzden koşullu basılması sorun
+              değil (role="status"tan farkı bu). */}
           {hata && (
-            <div style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
+            <div role="alert" style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
               {hata}
             </div>
           )}
