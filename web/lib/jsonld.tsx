@@ -133,6 +133,21 @@ export function konuSemasi(opts: {
     isPartOf: { "@id": `${base}/#website` },
     publisher: { "@id": `${base}/#organization` },
     dateModified: isoTarih(opts.guncelleme),
+    /**
+     * lastReviewed — sağlık içeriğine ÖZEL tazelik sinyali.
+     *
+     * `dateModified` her sayfa türü için geçerli genel bir alan; sağlık
+     * içeriğinde arama motoru ayrıca "bu bilgi en son ne zaman gözden
+     * geçirildi" sorusunu soruyor ve MedicalWebPage bunun için ayrı bir
+     * alan tanımlıyor. Kaynağı aynı: içerikteki `meta.updatedAt`.
+     *
+     * Aynı değeri iki alana yazmak şişirme değil — biri "dosya değişti",
+     * öteki "içerik gözden geçirildi" demek. Bu projede ikisi gerçekten
+     * aynı olay: konu dosyasına dokunulduğunda içerik elden geçiyor.
+     * Ayrı bir "gözden geçirme tarihi" alanı üretilmedi; olmayan bir veriyi
+     * uydurmak yerine var olanı doğru alana da yazmak doğru olan.
+     */
+    lastReviewed: isoTarih(opts.guncelleme),
     keywords: opts.etiketler?.length ? opts.etiketler.join(", ") : undefined,
     // Hedef kitle hekim; tüketici sağlık içeriğiyle karıştırılmasın.
     audience: { "@type": "MedicalAudience", audienceType: "Physician" },
