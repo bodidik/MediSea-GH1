@@ -98,7 +98,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           </div>
 
           {/* Alt Bilgi (Copyright) */}
-          <div className="pt-8 border-t border-blue-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-blue-400/50">
+          <div className="pt-8 border-t border-blue-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-blue-400">
             <div>
               &copy; {new Date().getFullYear()} MediSea Eğitim Platformu. Tüm hakları saklıdır.
             </div>
