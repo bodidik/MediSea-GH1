@@ -138,11 +138,11 @@ export default async function KonuSayfasi({
           marginBottom: '1.5rem',
           color: '#4a6a8a',
         }}>
-          <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500 }}>
+          <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
             Ana sayfa
           </Link>
           <span>/</span>
-          <Link href={`/${lang}/premium/ydus/${branch}`} style={{ color: branchMeta.renk, textDecoration: 'none', fontWeight: 500 }}>
+          <Link href={`/${lang}/premium/ydus/${branch}`} style={{ color: branchMeta.renk, textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
             {branchMeta.label}
           </Link>
           <span>/</span>
