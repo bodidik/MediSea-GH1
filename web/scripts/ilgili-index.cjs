@@ -96,6 +96,8 @@ function main() {
   const sonuc = {};
   let bagliKonu = 0;
   let toplamBag = 0;
+  let kardesle = 0;
+  let yalitilmis = 0;
 
   for (const k of konular) {
     const skor = new Map();
@@ -134,10 +136,93 @@ function main() {
         return { brans: d.brans, slug: d.slug, baslik: d.baslik };
       });
 
-    if (secilen.length) {
-      sonuc[k.anahtar] = secilen;
+    /**
+     * YEDEK KATMAN: kardeşler.
+     *
+     * Ölçüldü — 411 görünür konunun 100'ü yukarıdaki katı kuraldan hiçbir şey
+     * alamıyordu, yani arama motorundan gelen ziyaretçi için çıkmaz sokaktı.
+     * Sebep etiket sözlüğünün parçalanmışlığı: 1232 farklı etiketin 889'u
+     * yalnızca TEK bir konuda geçiyor ve hiçbir akrabalık kuramıyor; sık
+     * geçenler ise branş adları ve "YDUS", onlar da bilerek eleniyor.
+     *
+     * Kuralı gevşetmek çözüm DEĞİL — nadirlik eşiği tam da "Akut Koroner
+     * Sendromlar ↔ Safra Kesesi" gibi saçma eşleşmeleri engellemek için var.
+     * Onun yerine ikinci bir sinyal ekleniyor: aynı ebeveynin çocukları.
+     * Kardeşlik uydurma bir yakınlık değil, içeriğin kendi hiyerarşisi; üstelik
+     * sayfada hiçbir yerde bağlı değiller (ebeveyn ve çocuklar bağlı, kardeşler
+     * değil). Yalnızca katı kural boş döndüğünde devreye giriyor, böylece
+     * gerçek akrabalığı olan konularda liste seyrelmiyor.
+     */
+    let liste = secilen;
+    if (!liste.length && k.parent) {
+      liste = konular
+        .filter(
+          (d) =>
+            d.anahtar !== k.anahtar &&
+            d.brans === k.brans &&
+            d.parent === k.parent
+        )
+        .slice(0, EN_FAZLA)
+        .map((d) => ({ brans: d.brans, slug: d.slug, baslik: d.baslik }));
+      if (liste.length) kardesle++;
+    }
+
+    /**
+     * SON ÇARE: yalıtılmış konular.
+     *
+     * Kardeş yedeğinden sonra 9 konu kalıyor: ne ilgilisi, ne ebeveyni, ne
+     * çocuğu var (7'si onkolojide). Bu sayfalarda okuyucu için yanal hiçbir
+     * yol yok — yalnızca kırıntıdan branşa çıkabiliyor.
+     *
+     * Onlara aynı branştan konular veriliyor, ama rastgele değil: önce zayıf
+     * da olsa etiket skoru olanlar (eşiği geçemeseler bile en yakın olanlar),
+     * sonra branşın MERKEZ sayfaları — yani kendi çocukları olan konular.
+     * Merkez sayfa okuyucu için doğal bir sonraki adım; alfabetik ilk konu
+     * değil.
+     */
+    if (!liste.length) {
+      const skorluAdaylar = [...skor.entries()]
+        .map(([anahtar, s]) => ({ anahtar, s }))
+        .filter((x) => konular.find((d) => d.anahtar === x.anahtar)?.brans === k.brans)
+        .sort((a, b) => b.s - a.s)
+        .map((x) => konular.find((d) => d.anahtar === x.anahtar));
+
+      const merkezler = konular.filter(
+        (d) =>
+          d.brans === k.brans &&
+          d.anahtar !== k.anahtar &&
+          konular.some((c) => c.brans === d.brans && c.parent === d.slug)
+      );
+
+      /**
+       * Merkez listesi konuya göre KAYDIRILIYOR.
+       *
+       * Kaydırmadan önce onkolojideki yalıtılmış konuların hepsi birebir aynı
+       * dört bağlantıyı alıyordu — "Meme Kanseri" ile "Prostat Kanseri"
+       * sayfalarında aynı blok. Tekrarlanan bağlantı bloğu okuyucuya monoton,
+       * arama motoruna da kalıplaşmış görünür ve iç bağlantı değerini
+       * dağıtmaz.
+       *
+       * Kaydırma slug'dan türetiliyor: rastgele değil, her üretimde aynı
+       * sonucu veriyor (dizin sürüm kontrolünde, gürültü olmamalı).
+       */
+      const kaydirma = merkezler.length
+        ? [...k.slug].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % merkezler.length
+        : 0;
+      const dondurulmusMerkez = [...merkezler.slice(kaydirma), ...merkezler.slice(0, kaydirma)];
+
+      const gorulen = new Set([k.anahtar]);
+      liste = [...skorluAdaylar, ...dondurulmusMerkez]
+        .filter((d) => d && !gorulen.has(d.anahtar) && gorulen.add(d.anahtar))
+        .slice(0, 4)
+        .map((d) => ({ brans: d.brans, slug: d.slug, baslik: d.baslik }));
+      if (liste.length) yalitilmis++;
+    }
+
+    if (liste.length) {
+      sonuc[k.anahtar] = liste;
       bagliKonu++;
-      toplamBag += secilen.length;
+      toplamBag += liste.length;
     }
   }
 
@@ -145,6 +230,9 @@ function main() {
   fs.writeFileSync(HEDEF, JSON.stringify(sirali, null, 1) + '\n');
 
   console.log(`konu: ${konular.length} | ilgilisi olan: ${bagliKonu} | toplam bağ: ${toplamBag}`);
+  console.log(`  bunlardan ${kardesle} tanesi kardeş yedeğiyle kapandı (katı kural boş döndü)`);
+  console.log(`  ${yalitilmis} tanesi yalıtılmıştı, branş içi son çareyle kapandı`);
+  console.log(`ilgilisi HİÇ olmayan: ${konular.length - bagliKonu}`);
   console.log(`ortalama: ${(toplamBag / Math.max(bagliKonu, 1)).toFixed(1)} bağ/konu`);
   console.log('yazıldı: content/ilgili-index.json');
 }
