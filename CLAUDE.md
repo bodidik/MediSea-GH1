@@ -732,9 +732,19 @@ hesapla. Ama pencereyi **±2 satırda** tut — daha genişi stil nesnesi
 sınırını aşıp yakındaki başlık rengini "zemin" sanıyor ve koyu zeminde
 duran beyaz yazıları kusur gibi gösteriyor.
 
-### Tarayıcıda kontrast ölçen betiğin üç tuzağı
+### Tarayıcıda kontrast ölçen betiğin altı tuzağı
 
-Üçü de gerçekten yanılttı; ikisi kusur uydurdu, biri gerçek kusuru gizledi.
+Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru gizledi.
+
+- **SAYDAM METİN — en pahalısı, en sinsisi.** `getComputedStyle(el).color`
+  değerinden ilk üç sayıyı okuyup rengi opak saymak, Tailwind'in
+  `text-blue-900/40` gibi sınıflarını **tamamen görünmez kılar**: DOM'a
+  `rgba(30, 58, 138, 0.4)` olarak gelir, alfa atılınca kontrast 10.36
+  hesaplanır, gerçekte 2.16'dır. Bu körlük yüzünden araç sayfalarındaki
+  200'ü aşkın yazı — her form alanının ÜSTÜNDEKİ etiket dahil — bir tur
+  boyunca "temiz" göründü.
+  Doğrusu: alfayı ayrıştır ve zemine bindir:
+  `etkin = renk*alfa + zemin*(1-alfa)`.
 
 - **Yalnızca yaprak ögeye bakmak kusur GİZLER.** `e.children.length === 0`
   ile süzersen `<button>Zor<span>2 · kısa</span></button>` gibi düğmelerde
@@ -749,6 +759,20 @@ duran beyaz yazıları kusur gibi gösteriyor.
   koyu degrade üzerindeki beyaz yazı 1.05 kontrast gibi görünüyor.
 - **Emoji kusur UYDURUR.** Emoji kendi renginde çizilir, `color` ona
   uygulanmaz. Metni yalnızca emojiden ibaret olan ögeleri ölçme.
+- **SVG metni kusur UYDURUR.** `<text>` rengini `fill` ile alır; `color`
+  ölçmek alakasız bir değer verir ve zemini de kardeş `<rect>`'tir.
+  Wells grafiğindeki bant etiketleri bu yüzden kusurlu göründü.
+  `el.namespaceURI` SVG ise atla.
+- **Mutlak konumlu öge kusur UYDURUR.** `position: absolute` bir yazı
+  görsel olarak KARDEŞİNİN üstünde durur; ata zincirini yürüyen zemin
+  arayıcı onun altındaki koyu kutuyu göremez ve sayfanın beyazını zemin
+  sanar. Birim çevirici bu yüzden 1.42 gösteriyordu, gerçekte 7.29'du.
+
+Sayfayı iframe'e yükleyip ölçerken **doğru sayfada olduğunu da doğrula**:
+`d.location.pathname` beklenen yola eşit mi, gövdede "Sayfa bulunamadı"
+var mı. Bir tur, var olmayan araç adlarıyla (elle yazılmış liste) 404
+sayfasını ölçtü ve ölçüm sonuçları bir öncekinden devraldığı için
+tekrar eden sahte kusurlar üretti. Araç listesini dosya sisteminden al.
 
 Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
