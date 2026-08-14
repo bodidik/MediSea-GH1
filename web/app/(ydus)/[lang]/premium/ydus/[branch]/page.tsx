@@ -84,40 +84,9 @@ export default async function BransSayfasi({
   const { lang, branch } = await params;
   const veri = bransYukle(branch);
 
-  if (!veri) {
-    return (
-      <div style={{
-        minHeight: '80vh',
-        background: '#fff',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'system-ui, -apple-system, sans-serif',
-        color: '#1a2a3a',
-        padding: '2rem',
-      }}>
-        <div style={{ fontSize: '48px', marginBottom: '1rem' }}>🧭</div>
-        <h1 style={{ fontSize: '22px', fontWeight: 600, color: '#1a3a6b', marginBottom: '0.5rem' }}>
-          Branş bulunamadı
-        </h1>
-        <p style={{ color: '#4a6a8a', marginBottom: '1.5rem', fontSize: '14px' }}>
-          <strong>{branch}</strong> için henüz içerik hazırlanmadı.
-        </p>
-        <Link href={`/${lang}/premium/ydus`} style={{
-          padding: '8px 20px',
-          background: '#1a3a6b',
-          color: '#fff',
-          borderRadius: '8px',
-          textDecoration: 'none',
-          fontSize: '13px',
-          fontWeight: 500,
-        }}>
-          Ana sayfaya dön
-        </Link>
-      </div>
-    );
-  }
+  // notFound(): kart doğrudan basıldığında HTTP durumu 200 kalıyordu —
+  // yumuşak 404. Görünüm not-found.tsx`ye taşındı, durum kodu düzeldi.
+  if (!veri) notFound();
 
   const toplamKonu = veri.kategoriler.reduce((acc, kat) => acc + kat.konular.length, 0);
   const hazirKonu = veri.kategoriler.reduce(

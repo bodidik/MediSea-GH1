@@ -386,6 +386,22 @@ içerik değişmeden ÖNCE DOM'da bulunması gerekiyor, yoksa ilk mesaj kaçar.
 `aria-labelledby` → `label[for]` → sarmalayan `<label>`. Kaynakta `<label>`
 görmek yetmez, bağlı olup olmadığını göstermez.
 
+### Konsol hatası ararken ölçüm yönteminin kendisi hata üretir
+
+İki tuzak, ikisine de düşüldü:
+
+- **Dinleyiciyi yükleme SONRASI takmak.** `window.addEventListener('error')`
+  sayfa yüklendikten sonra takılırsa açılıştaki hatalar zaten kaçmıştır;
+  "0 hata" sonucu yanıltıcıdır.
+- **Hızlı iframe gezinmesi hayalet hata üretir.** Ölçüm için `iframe.src`'yi
+  arka arkaya değiştirmek uçuştaki istekleri iptal ediyor
+  (`net::ERR_ABORTED`) ve NextAuth bunu `AuthError: Failed to fetch` diye
+  konsola yazıyor. Canlıda gerçek bir kusur sanıldı; **temiz bir sekmede
+  tek bir gerçek gezinmeyle** sınandığında hiç hata çıkmadı.
+
+Doğrusu: `tabs_create` ile yeni sekme aç, `navigate` ile git,
+`read_console_messages` ile oku. Aynı sekmede biriken geçmiş de yanıltır.
+
 ### Dağıtımın indiğini İSTEMCİ tarafı bir işaretle yoklama
 
 `curl | grep` ile "yeni kod indi mi" diye bakarken, aranan şey istemci
