@@ -313,3 +313,26 @@ güven verir.
 Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
 tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
+
+**Satır içi stil bu tabanların HİÇBİRİNE uymaz.** Yukarıdaki üç kural
+`globals.css` içinde ve Tailwind sınıflarına bakıyor; premium motorlar
+(`QuizEngine`, `VakaEngine`, `FlashcardPlayer`) ise renk ve boyutu
+`style={{ ... }}` ile veriyor. Satır içi stil zaten stil sayfasını yener,
+yani kural oraya hiç ulaşmıyor. Sonuç bir dönem şuydu: **ücretli yüzey,
+ücretsiz yüzeyden okunaksızdı** — şıklar 13px, kısa açıklamalar 11.5px,
+sayaç ve ipuçları 1.7–3.6 kontrastta.
+
+Satır içi stil kullanan bir yüzeye dokunuyorsan boyutu ve rengi kendin
+sağlamak zorundasın:
+
+- okunan metin (soru kökü, şık, açıklama, klinik bilgi) **15px**,
+  ikincil açıklama **14px**; rozet/sayaç/düğme yazısı serbest
+- ikincil metin rengi açık zeminde `#4a6a8a` (beyazda 5.65), gri
+  kademe gerekiyorsa `#5a6a8a`, koyu kademe `#4a5a7a`
+- yeşil vurgu `#2a7a4a`, koyu yeşil `#1a6640`
+
+Denetimi otomatik yapmak istersen ölçüt basit: kaynakta
+`color: '#...'` değerlerini komşu `background` ile eşleştirip kontrast
+hesapla. Ama pencereyi **±2 satırda** tut — daha genişi stil nesnesi
+sınırını aşıp yakındaki başlık rengini "zemin" sanıyor ve koyu zeminde
+duran beyaz yazıları kusur gibi gösteriyor.
