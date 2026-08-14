@@ -272,10 +272,15 @@ mark.ms-hl-u {
    ───────────────────────────────────────────────────────────────────── */
 [data-readable] :is(
   .text-xs,
+  .text-\[9px\],
   .text-\[10px\],
+  .text-\[10\.5px\],
   .text-\[11px\],
+  .text-\[11\.5px\],
   .text-\[12px\],
-  .text-\[13px\]
+  .text-\[12\.5px\],
+  .text-\[13px\],
+  .text-\[13\.5px\]
 ) {
   font-size: 0.875rem;   /* 14px — gövde metni için alt sınır */
   line-height: 1.6;

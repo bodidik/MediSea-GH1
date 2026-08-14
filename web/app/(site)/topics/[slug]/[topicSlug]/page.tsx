@@ -250,7 +250,10 @@ export default async function TopicDetailPage({
       <div className="max-w-[1400px] mx-auto">
 
         {/* Üst Yönlendirme Çubuğu */}
-        <div className="mb-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400">
+        {/* flex-wrap: kırıntı yolu sarmıyordu ve uzun konu başlıkları 375px'te
+            sayfayı yatay kaydırtıyordu (ölçüldü: scrollWidth 406, taşan öge
+            başlık span'i). Başlık artık satır atlayabiliyor. */}
+        <div className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-black uppercase tracking-widest text-slate-400">
           {/* py-1.5: kırıntı yolu bağlantıları mobilde 16px yüksekliğindeydi,
               yani dokunma hedefi olarak WCAG asgarisinin (24px) altında. */}
           <Link href="/topics" className="py-1.5 hover:text-blue-600 transition-colors">Kütüphane</Link>

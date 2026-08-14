@@ -176,7 +176,9 @@ export default async function BranchListPage({
         <div className="max-w-5xl mx-auto px-5 sm:px-6 py-8 sm:py-10">
 
           {/* Breadcrumb */}
-          <div className="mb-4 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+          {/* flex-wrap: konu sayfasındaki kırıntı yolu uzun başlıklarda 375px'te
+              yatay kaydırma üretiyordu; aynı kalıp burada da var, aynı çare. */}
+          <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <Link href="/" className="inline-block py-1.5 hover:text-blue-700 transition-colors">MediSea</Link>
             <span>/</span>
             <Link href="/topics" className="inline-block py-1.5 hover:text-blue-700 transition-colors">Kütüphane</Link>
