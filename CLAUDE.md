@@ -351,9 +351,26 @@ güven verir.
   düşürüyordu. `[data-readable]` içinde metin 14px'in (telefonda 15px)
   altına basılamaz. Kapsam dar: arayüzdeki küçük etiketler etkilenmez.
 - **İkincil metin renkleri** — `text-slate-300/400/500` kontrastı 1.48–4.35
-  arasındaydı (eşik 4.5). Bir basamak koyulaştırıldı. Koyulaştırmadan önce
-  bu renklerin koyu zeminde kullanılmadığı ölçüldü; kullanılsaydı müdahale
-  geri teperdi.
+  arasındaydı (eşik 4.5). Bir basamak koyulaştırıldı. **Bu müdahale bir
+  yerde geri TEPTİ ve o ders aşağıda.**
+
+**Kontrast ölçerken iki tuzak — ikisi de yaşandı:**
+
+- **Degradeyi göremeyen ölçüm.** Zemin yalnızca `backgroundColor` okunarak
+  bulunursa `bg-gradient-to-br from-blue-950` gibi koyu bir şerit *beyaz*
+  sanılır. Yukarıdaki koyulaştırma böyle konuldu: konu sayfasındaki premium
+  tanıtım şeridinde yazı 5.73'ten **1.94'e düştü**, yani kural düzelttiğinin
+  tersini yaptı. Zemin ararken `background-image` içindeki ilk `rgb(...)`
+  de okunmalı.
+- **"Koyu atanın içinde muaf tut" kuralı iç içelikte delinir.** CSS'te
+  `.bg-slate-950 .text-slate-400 { … }` mantıklı görünür ama zemin ATAdan
+  değil en yakın DOLU zeminden gelir. Premium panosu koyu yerleşimin içinde
+  **açık kartlar** taşıyor; muafiyet onlara da uydu, tek sayfada 21 yazı
+  2.56'ya düştü. Denendi, geri alındı (gerekçe `globals.css` içinde yazılı).
+
+Doğrusu: genel koyulaştırma **açık zemin varsayar** ve kullanımların ezici
+çoğunluğu öyledir. Koyu bir zemine yazı basıyorsan rengini **kendin ver** —
+tanıtım şeridi `text-blue-200` ile bunu yapıyor (10.34).
 
 Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
