@@ -98,7 +98,7 @@ export default function MasccPage() {
             <p className={`text-2xl font-black italic tracking-tight ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
               {lowRisk ? 'DÜŞÜK RİSK' : 'YÜKSEK RİSK'}
             </p>
-            <p className={`text-sm font-bold mt-1 ${lowRisk ? 'text-emerald-600' : 'text-rose-600'} opacity-80`}>
+            <p className={`text-sm font-bold mt-1 ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
               {lowRisk ? 'Eşik: ≥21 puan · Ayaktan oral antibiyotik değerlendirilebilir' : 'Eşik: <21 puan · Hastane yatışı ve IV antibiyotik önerilir'}
             </p>
           </div>

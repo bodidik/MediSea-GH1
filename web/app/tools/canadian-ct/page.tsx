@@ -101,7 +101,7 @@ export default function CanadianCTPage() {
         </div>
 
         <div>
-          <p className="text-[9px] font-black text-rose-600 uppercase tracking-widest mb-2 px-1">Yüksek Risk Kriterleri (herhangi biri → BT gerekli)</p>
+          <p className="text-[9px] font-black text-rose-700 uppercase tracking-widest mb-2 px-1">Yüksek Risk Kriterleri (herhangi biri → BT gerekli)</p>
           <div className="space-y-2">
             {HIGH_RISK.map(item => (
               <CriterionRow key={item.id} item={item} value={high[item.id]}
@@ -111,7 +111,7 @@ export default function CanadianCTPage() {
         </div>
 
         <div>
-          <p className="text-[9px] font-black text-amber-600 uppercase tracking-widest mb-2 px-1">Orta Risk Kriterleri (herhangi biri → BT önerilir)</p>
+          <p className="text-[9px] font-black text-amber-700 uppercase tracking-widest mb-2 px-1">Orta Risk Kriterleri (herhangi biri → BT önerilir)</p>
           <div className="space-y-2">
             {MEDIUM_RISK.map(item => (
               <CriterionRow key={item.id} item={item} value={med[item.id]}

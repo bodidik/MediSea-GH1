@@ -73,7 +73,7 @@ export default function PaduaPage() {
             <p className={`text-2xl font-black italic tracking-tight ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {highRisk ? 'YÜKSEK RİSK — Profilaksi Önerilir' : 'DÜŞÜK RİSK — Rutin Takip'}
             </p>
-            <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-600' : 'text-emerald-600'} opacity-80`}>
+            <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {highRisk ? 'Eşik: ≥4 puan · LMWH veya fondaparinuks değerlendir' : 'Eşik: <4 puan · Erken mobilizasyon'}
             </p>
           </div>
