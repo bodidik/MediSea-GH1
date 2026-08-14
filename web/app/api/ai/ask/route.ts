@@ -64,7 +64,17 @@ export async function POST(req: NextRequest) {
     return res;
   } catch {
     return NextResponse.json(
-      { ok: false, error: "backend_ulasilamadi", message: "AI sunucusuna ulaşılamadı. Backend çalışıyor mu?" },
+      /**
+       * Bu `message` doğrudan KULLANICIYA basılıyor (SoruSor bileşeni).
+       * Eskiden "AI sunucusuna ulaşılamadı. Backend çalışıyor mu?" yazıyordu —
+       * ücretli bir yüzeyde müşteriye, sunucunun çalışıp çalışmadığını soran
+       * bir geliştirici mesajı. Sistem iç adları kullanıcıya gösterilmez.
+       */
+      {
+        ok: false,
+        error: "backend_ulasilamadi",
+        message: "Yapay zekâ yanıtı şu an alınamıyor. Lütfen daha sonra tekrar deneyin.",
+      },
       { status: 503 }
     );
   }

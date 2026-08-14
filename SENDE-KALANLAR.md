@@ -185,25 +185,37 @@ altına indiriyor.
 Bir dönem bu uçlar **uydurma veri ve sahte başarı** dönüyordu: olmayan
 sınav geçmişi, olmayan günlük program, "sonuçlarınız kaydedildi" mesajları.
 Hepsi temizlendi; artık dürüstçe `503 { ok:false, reason:"backend-unavailable" }`
-diyorlar. Yani **arayüz yalan söylemiyor** ama şu özellikler fiilen kapalı:
+diyorlar.
 
-| Özellik | Uç |
-|---|---|
-| Site içi arama | `/api/topics/search` |
-| Konuya AI soru sorma | `/api/ai/ask` |
-| Sunucu tarafı quiz/tekrar kaydı | `/api/review/*`, `/api/premium/quiz/*` |
-| Günlük program (premium pano) | `/api/premium/daily-program` |
-| Kullanıcı profili / hedef | `/api/user/*` |
-| Korumalı içerik parçası | `/api/protected/*` |
+**Bu maddenin ilk hâli fazla genişti — düzeltildi.** Uçların hangi arayüz
+tarafından çağrıldığı tek tek ölçülünce tablo çok küçüldü:
 
-**Önemli:** kişisel katman (vurgu, not, tekrar takvimi) bunlardan HİÇBİRİNE
-bağlı değil — tamamı tarayıcıda çalışıyor ve etkilenmiyor. Açık kütüphane,
-klinik araçlar ve premium konu/quiz/kart içerikleri de dosya sisteminden
-okunuyor, onlar da çalışıyor.
+| Uç | Arayüzde çağıran | Durum |
+|---|---|---|
+| `/api/ai/ask` | premium konu sayfası, "Bu konuya soru sor" | **gerçekten kırık** |
+| `/api/review/seed` | `AddToSRButton` (yönetici paneli + ölü bileşen) | yönetici işi |
+| `/api/topics/search` | yalnızca yönetici içerik paneli | yönetici işi |
+| `/api/premium/quiz/history` | `PremiumQuizHistory` — **hiçbir yere monte değil** | ölü kod |
+| `/api/premium/daily-program` | `PremiumDailyProgram` — **hiçbir yere monte değil** | ölü kod |
+| `/api/user/*`, `/api/protected/*`, `/api/review/*` (diğer) | çağıran yok | ölü kod |
 
-Karar senin: ya `server/` bir yere dağıtılıp `BACKEND_URL` verilecek, ya da
-bu özellikler arayüzden kaldırılacak. İkisi de yapılmazsa kullanıcı çalışan
-bir düğmeye basıp "servise ulaşılamıyor" görmeye devam eder.
+**Site içi arama ÇALIŞIYOR** — ilk yazdığımda kapalı sanmıştım. Başlıktaki
+arama kutusu `/api/topics/search`'ü değil, dosya sistemini okuyan bir sunucu
+eylemini (`searchAction` → `searchContent`) kullanıyor. Canlıda "anemi"
+araması gerçek sonuç döndürüyor.
+
+Yani kullanıcının karşılaştığı **tek kırık özellik, premium konu
+sayfasındaki AI soru kutusu.** Hata metni düzeltildi (eskiden müşteriye
+"Backend çalışıyor mu?" diye soruyordu), ama kutu hâlâ çalışır görünüyor.
+
+Karar senin, üç seçenek:
+1. `server/` bir yere dağıtılıp `BACKEND_URL` verilir → kutu çalışır.
+2. Kutu premium konu sayfasından kaldırılır → kimse boşa denemez.
+3. Kutu kalır ama "yakında" olarak işaretlenir.
+
+Ayrıca **ölü kod** olarak duran bileşenler ve uçlar var (yukarıdaki tabloda
+"ölü kod" satırları). Bunları silmek istersen söyle; kendi başıma
+silmedim, ileride kullanılmak üzere bırakılmış olabilirler.
 
 ---
 
