@@ -43,16 +43,25 @@ export async function GET(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
 
-  } catch (error) {
-    // 🚨 SİSTEMLERDEN BİRİ ÇÖKERSE: PREMIUM ARAYÜZÜ KIRMA, YEDEK (MOCK) İÇERİK DÖN!
-    console.warn(`Korumalı İçerik (Chunk ID: ${id}) çekilemedi. Yedek motor devrede.`);
-    
-    return NextResponse.json({
-      ok: true,
-      id: id,
-      // Kullanıcı arayüzünde patlama olmaması için güvenli bir HTML/Metin içeriği dönüyoruz
-      content: "<div class='p-4 bg-slate-800/50 text-slate-300 rounded-xl border border-slate-700/50 text-sm'>⚠️ Korumalı sunucuya şu an ulaşılamıyor. Lütfen daha sonra tekrar deneyin (Mock İçerik).</div>",
-      mock: true
-    }, { status: 200 });
+  } catch {
+    /**
+     * Arka uca ulaşılamadı.
+     *
+     * Burada `ok: true` ve 200 dönülüyordu — içerik yerine bir uyarı metni
+     * konsa bile yanıt "başarılı" diyordu. Kardeş uç (protected/token) tam
+     * bu sebeple düzeltilmişti; yorumu şunu söylüyor: uydurulmuş bir başarı,
+     * çağıran tarafın üstüne kod yazdığı yanlış bir varsayım üretir.
+     * Token artık 503 döndüğü için buradaki ilk aşama HER ZAMAN düşüyor,
+     * yani "yedek" hâl kalıcı hâldi.
+     *
+     * Şu an bu ucu çağıran hiçbir arayüz yok (ölçüldü: 0 dosya), dolayısıyla
+     * dürüst yanıt hiçbir yüzeyi kırmıyor.
+     */
+    console.warn(`Korumalı içerik alınamadı (id: ${id}) — arka uç yok.`);
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", id, content: null },
+      { status: 503 }
+    );
   }
 }

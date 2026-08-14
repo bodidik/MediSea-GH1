@@ -25,20 +25,24 @@ export async function GET(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j);
     
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: ÇÖKME, SAHTE GRAFİK VERİSİ GÖNDER!
-    console.warn("Backend'e ulaşılamadı, Quiz Grafiği için yedek jeneratör devrede.");
-    
-    return NextResponse.json({
-      ok: true,
-      days: parseInt(days),
-      items: [
-        { id: "1", date: "10.02", total: 20, correct: 12 },
-        { id: "2", date: "11.02", total: 25, correct: 18 },
-        { id: "3", date: "12.02", total: 20, correct: 17 },
-        { id: "4", date: "13.02", total: 30, correct: 25 },
-        { id: "5", date: "14.02", total: 25, correct: 23 }
-      ]
-    });
+  } catch {
+    /**
+     * Arka uç yok. UYDURMA GEÇMİŞ DÖNÜLMÜYOR.
+     *
+     * Burada beş günlük sahte bir başarı serisi (12/20, 18/25, 17/20, 25/30,
+     * 23/25) dönülüyordu ve `ok: true` diyordu. Kullanıcı bunu KENDİ geçmişi
+     * sanıyordu — hiç çözmediği sınavların sonuçlarını. Sınava hazırlanan
+     * biri çalışmasını bu sayılara göre ayarlar; tıbbi bir sınav ürününde
+     * bu, boş grafik göstermekten çok daha zararlı.
+     *
+     * Aynı hata sınıfı bu projede daha önce yedi uçta düzeltilmişti
+     * (bkz. /api/user/me). Çağıran bileşen `!r.ok` dalını zaten karşılıyor.
+     */
+    console.warn("Quiz geçmişi alınamadı — arka uç yok.");
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", days: parseInt(days), items: [] },
+      { status: 503 }
+    );
   }
 }

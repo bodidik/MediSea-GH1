@@ -21,18 +21,20 @@ export async function GET(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j, { status: r.status });
 
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: ÇÖKME, SAHTE GÜNLÜK QUİZ VERİSİ GÖNDER!
-    console.warn("Backend'e ulaşılamadı, Günlük Quiz (Today) için yedek motor devrede.");
-    
-    return NextResponse.json({
-      ok: true,
-      locked: false,
-      setId: "mock-today-set-001",
-      items: [
-        { id: "mock-q1", topic: "Hematoloji", difficulty: "Zor" },
-        { id: "mock-q2", topic: "Kardiyoloji", difficulty: "Orta" }
-      ]
-    }, { status: 200 });
+  } catch {
+    /**
+     * Arka uç yok. UYDURMA SORU SETİ DÖNÜLMÜYOR.
+     *
+     * Burada `setId: "mock-today-set-001"` ve iki sahte soru dönülüyordu.
+     * Var olmayan bir set kimliği, onu açmaya çalışan her akışı sessizce
+     * kırar; kullanıcı da "günlük quiz" diye gerçek olmayan bir göreve
+     * bakar.
+     */
+    console.warn("Günlük quiz alınamadı — arka uç yok.");
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", locked: false, setId: null, items: [] },
+      { status: 503 }
+    );
   }
 }

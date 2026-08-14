@@ -22,20 +22,23 @@ export async function GET(req: NextRequest) {
     const j = await r.json();
     return NextResponse.json(j);
     
-  } catch (error) {
-    // 🚨 BACKEND KAPALIYSA VEYA ÇÖKTÜYSE: SİSTEMİ BOZMA, SAHTE (MOCK) VERİ GÖSTER!
-    console.warn("Backend'e ulaşılamadı, Kaptan Köşkü için yedek jeneratör (mock) devrede.");
-    
-    return NextResponse.json({
-      locked: false,
-      program: {
-        total: 3,
-        items: [
-          { section: "Hematoloji", type: "Mega Deneme", qty: 1 },
-          { section: "Kardiyoloji", type: "Flashcard", qty: 50 },
-          { section: "Gastroenteroloji", type: "Klinik İnciler", qty: 15 }
-        ]
-      }
-    });
+  } catch {
+    /**
+     * Arka uç yok. UYDURMA PROGRAM DÖNÜLMÜYOR.
+     *
+     * Burada sabit bir günlük program üretiliyordu ("Hematoloji Mega Deneme
+     * 1, Kardiyoloji Flashcard 50, Gastroenteroloji Klinik İnciler 15") ve
+     * yanıt başarılı görünüyordu. Kullanıcı bunu kendisi için hazırlanmış
+     * bir plan sanıp gününü ona göre kuruyordu; üstelik program her gün
+     * aynıydı ve içerikle hiçbir ilgisi yoktu.
+     *
+     * Çağıran bileşen (PremiumDailyProgram) `!r.ok` dalını zaten karşılıyor.
+     */
+    console.warn("Günlük program alınamadı — arka uç yok.");
+
+    return NextResponse.json(
+      { ok: false, reason: "backend-unavailable", locked: false, program: null },
+      { status: 503 }
+    );
   }
 }
