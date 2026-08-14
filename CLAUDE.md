@@ -386,6 +386,35 @@ içerik değişmeden ÖNCE DOM'da bulunması gerekiyor, yoksa ilk mesaj kaçar.
 `aria-labelledby` → `label[for]` → sarmalayan `<label>`. Kaynakta `<label>`
 görmek yetmez, bağlı olup olmadığını göstermez.
 
+### API uçları arka uç yokken UYDURMA VERİ dönmemeli
+
+Express arka ucu canlıda hiç çalışmıyor. Uçlar bunu karşılarken bir dönem
+"arayüz kırılmasın" diye sahte veri üretiyordu ve `ok: true` diyordu.
+Yedi uç bir turda düzeltildi (`/api/user/me` vb.), dört uç daha sonra
+bulundu: `premium/quiz/history`, `premium/daily-program`,
+`premium/quiz/today`, `protected/chunk`.
+
+En zararlısı geçmiş grafiğiydi: beş günlük sahte başarı serisi dönüyordu ve
+kullanıcı bunu KENDİ geçmişi sanıyordu. Sınava hazırlanan biri çalışmasını
+o sayılara göre ayarlar — boş grafik göstermek çok daha az zararlı.
+
+Kural: arka uca ulaşılamıyorsa `{ ok: false, reason: "backend-unavailable" }`
+ve **503**. Çağıran bileşenler `!r.ok` dalını zaten karşılıyor; dürüst hata
+görünümü arayüzü kırmıyor. `protected/token` içindeki yorum bunu en iyi
+özetliyor: *uydurulmuş bir başarı, çağıranın üstüne kod yazdığı yanlış bir
+varsayım üretir.*
+
+Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
+yanıt, veriyi gerçek sanan birini yanıltır mı?
+
+### `:lang` kalıbı `api`yi de yakalar
+
+`next.config.js`'teki dil yönlendirmesi `/:lang(...)/premium/:yol*`
+biçiminde. Eleme listesine `api` konmazsa `/api/premium/...` istekleri de
+`/tr/premium/...` HTML sayfalarına 308'lenir — yani API çağrıları sessizce
+sayfa döndürür. Bir kez oldu ve erişim kapısının arkasındaki panoda olduğu
+için birkaç tur fark edilmedi.
+
 ### Konsol hatası ararken ölçüm yönteminin kendisi hata üretir
 
 İki tuzak, ikisine de düşüldü:
