@@ -7,6 +7,27 @@ import { listelenmeyenKategori } from '@/lib/premium-brans';
 
 export const revalidate = 86400;
 
+/**
+ * Aynı sebep satış sayfasındaki gibi: `[lang]` için üretilecek değerler
+ * bildirilmediği sürece rota dinamik kalıyor ve `revalidate` hiç işlemiyor
+ * (canlıda ölçüldü, her istekte MISS).
+ *
+ * Branşlar dosya sisteminden sayılıyor — elle liste tutmak, yeni bir branş
+ * eklendiğinde sessizce eskir. Listede olmayan bir branş adresi hâlâ
+ * çalışır, yalnızca önceden üretilmemiş olur.
+ */
+export function generateStaticParams() {
+  try {
+    const dizin = path.join(process.cwd(), 'content', 'premium', 'ydus', 'branches');
+    return fs
+      .readdirSync(dizin)
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => ({ lang: 'tr', branch: f.replace(/\.json$/, '') }));
+  } catch {
+    return [{ lang: 'tr', branch: 'endokrinoloji' }];
+  }
+}
+
 interface Konu {
   id: string;
   baslik: string;

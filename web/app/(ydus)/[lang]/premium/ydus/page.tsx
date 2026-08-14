@@ -10,6 +10,22 @@ import { icerikSayilari } from '@/lib/icerik-sayaci';
 
 export const revalidate = 3600;
 
+/**
+ * `revalidate` TEK BAŞINA yetmiyor.
+ *
+ * Sayfa `[lang]` altında ve Next hangi dil değerlerini önceden üreteceğini
+ * bilemediği için rota dinamik kalıyordu: derleme tablosunda `ƒ`, canlıda
+ * her istekte `x-vercel-cache: MISS`. Yani satış sayfası — arama motorunun
+ * gördüğü ilk premium yüzey — hiç önbelleğe girmiyordu ve `revalidate`
+ * ölü bir ayardı.
+ *
+ * Tek dil üretiliyor: içeriğin tamamı Türkçe ve yanlış önekli adresler
+ * next.config.js'teki yönlendirmeyle zaten /tr'ye toplanıyor.
+ */
+export function generateStaticParams() {
+  return [{ lang: 'tr' }];
+}
+
 interface Konu {
   id: string;
   baslik: string;
