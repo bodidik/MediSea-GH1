@@ -686,6 +686,46 @@ hesapla. Ama pencereyi **±2 satırda** tut — daha genişi stil nesnesi
 sınırını aşıp yakındaki başlık rengini "zemin" sanıyor ve koyu zeminde
 duran beyaz yazıları kusur gibi gösteriyor.
 
+### İçerikteki `**kalın**` işaretini render eden tek yer: `app/lib/metin.tsx`
+
+Motorlar ve blok işleyicileri içerik dizgesini doğrudan JSX'e basıyordu;
+içerik yazarı `**en kritik**` yazınca kullanıcı ekranda yıldızları görüyordu.
+Kusur **beş yüzeyde birden** vardı ve tek bir motora bakan ölçüm kapsamı çok
+küçük gösteriyordu: premium konu sayfası (39 dosyanın 36'sında **257 alan**),
+inciler (13 alan), kokpit, vaka ve quiz motorları.
+
+İçerik dosyasına DOKUNULMAZ — dönüşüm render tarafında yapılır. Üç dışa
+aktarım var, seçim çağrı yerinin şekline göre:
+
+| Ne basıyorsun | Kullan |
+|---|---|
+| JSX düğümü (olağan durum) | `kalinIsle` → `<strong>` + `Fragment` döndürür |
+| `dangerouslySetInnerHTML` (yalnızca inciler) | `kalinHtml` → dizge döndürür |
+| Dizge bekleyen alan (kırpılan önizleme, `aria-label`) | `duzMetin` → işareti söker |
+
+`kalinIsle` bilerek React düğümü döndürüyor, HTML dizgesi değil: girdi içerik
+dosyasından geliyor ve HTML'e çevirmek kaçırma (escape) sorumluluğunu her
+çağrı yerine dağıtırdı. Gerçek içerikle ölçüldü — `**Çapı <2 cm olan…**`
+çıktıda `&lt;2` oluyor, etiket açmıyor.
+
+`kalinHtml` yalnızca zaten ham HTML basan çağrı yerleri için ve yakaladığı
+metinde `<` `>` kabul etmiyor (işaret bir etiketi ikiye bölmesin). Yeni bir
+yüzey yazarken bunu değil `kalinIsle`'yi kullan. Not: inciler alanı ham HTML
+basıyor ama **13 incinin hiçbirinde etiket yok** — orada `dangerouslySetInnerHTML`
+bugün karşılıksız duruyor.
+
+Kapsam bilerek dar: yalnızca `**` çifti, tek satır içinde. `*`, `_`, `#`
+dönüştürülmüyor — klinik metinde `Na*` gibi kullanımlar biçim değil. Kapanmayan
+işaret, `****` ve satır atlayan çift olduğu gibi kalır.
+
+**Sonucu doğrudan bir FLEX/GRID kapsayıcının çocuğu olarak basma.** Tek metin
+düğümü tek anonim flex ögesiyken, bölünen metin BİRDEN ÇOK öge olur;
+kapsayıcının `gap` değeri kelimelerin arasına girer ve dar ekranda satır kelime
+yerine bloklar hâlinde sarar. Kokpitin soru başlığında ölçüldü: üç öge,
+aralarında 8'er px. Kapsayıcı flex ise sonucu bir `<span>` içine al. Taraması
+tek satır: her `<strong>`'un ebeveyninin `display`'ine bak, `flex`/`grid`
+görürsen kusur.
+
 ### Tarayıcıda kontrast ölçen betiğin üç tuzağı
 
 Üçü de gerçekten yanılttı; ikisi kusur uydurdu, biri gerçek kusuru gizledi.

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
+import { kalinIsle, duzMetin } from '@/app/lib/metin';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -178,7 +179,7 @@ function SoruKarti({
             Soru {soruNo}
           </div>
           <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500 }}>
-            {soru.metin}
+            {kalinIsle(soru.metin)}
           </p>
           {soru.etiketler && soru.etiketler.length > 0 && (
             <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', marginTop: '.65rem' }}>
@@ -208,7 +209,7 @@ function SoruKarti({
                   : harf}
               </div>
               <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>
-                {metin}
+                {kalinIsle(metin)}
               </span>
             </button>
           ))}
@@ -252,7 +253,7 @@ function SoruKarti({
                 </div>
                 {soru.aciklama_kisa && (
                   <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '2px' }}>
-                    {soru.aciklama_kisa}
+                    {kalinIsle(soru.aciklama_kisa)}
                   </div>
                 )}
               </div>
@@ -264,7 +265,7 @@ function SoruKarti({
             <div data-readable={`soru:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
               {soru.aciklama_detay && (
                 <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
-                  {soru.aciklama_detay}
+                  {kalinIsle(soru.aciklama_detay)}
                 </p>
               )}
 
@@ -294,7 +295,7 @@ function SoruKarti({
                             {harf}
                           </span>
                           <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>
-                            {metin}
+                            {kalinIsle(metin)}
                           </span>
                         </div>
                       );
@@ -402,14 +403,20 @@ function SonucEkrani({
               Yanlış yaptığın sorular
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              {yanlislar.map((s) => (
-                <div key={s.id} style={{
-                  padding: '.7rem 1.1rem', borderTop: '0.5px solid #f5e0e0',
-                  fontSize: '12px', lineHeight: 1.6, color: '#4a6a8a',
-                }}>
-                  {s.metin.length > 130 ? `${s.metin.slice(0, 130)}…` : s.metin}
-                </div>
-              ))}
+              {yanlislar.map((s) => {
+                // Önizleme KIRPILIYOR: kalın işareti burada render edilmiyor,
+                // sökülüyor. Kırpma noktası bir `**` çiftinin ortasına düşerse
+                // yarım kalan işaret ekrana yıldız olarak dökülürdü.
+                const ozet = duzMetin(s.metin);
+                return (
+                  <div key={s.id} style={{
+                    padding: '.7rem 1.1rem', borderTop: '0.5px solid #f5e0e0',
+                    fontSize: '12px', lineHeight: 1.6, color: '#4a6a8a',
+                  }}>
+                    {ozet.length > 130 ? `${ozet.slice(0, 130)}…` : ozet}
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}

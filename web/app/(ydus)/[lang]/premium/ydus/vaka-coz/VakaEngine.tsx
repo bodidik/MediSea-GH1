@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { kalinIsle } from '@/app/lib/metin';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -52,7 +53,7 @@ function KlinikMetin({ metin }: { metin: string }) {
             fontSize: '15px', lineHeight: 1.7, color: '#1a2a3a',
             fontWeight: kalinMi ? 600 : 400, margin: 0,
           }}>
-            {satir}
+            {kalinIsle(satir)}
           </p>
         );
       })}
@@ -136,7 +137,7 @@ function AdimKarti({
           Soru {adimNo}
         </div>
         <p style={{ fontSize: '15px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0 }}>
-          {adim.soru}
+          {kalinIsle(adim.soru)}
         </p>
       </div>
 
@@ -149,7 +150,7 @@ function AdimKarti({
                 ? harf === adim.dogru ? '✓' : harf === secim ? '✗' : harf
                 : harf}
             </div>
-            <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{metin}</span>
+            <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{kalinIsle(metin)}</span>
           </button>
         ))}
       </div>
@@ -185,7 +186,7 @@ function AdimKarti({
                 {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
               </div>
               <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
-                {adim.aciklama_kisa}
+                {kalinIsle(adim.aciklama_kisa)}
               </div>
             </div>
           </div>
@@ -193,7 +194,7 @@ function AdimKarti({
           {/* Detay */}
           <div style={{ padding: '.9rem 1.1rem' }}>
             <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
-              {adim.aciklama_detay}
+              {kalinIsle(adim.aciklama_detay)}
             </p>
 
             {/* Seçenek açıklamaları */}
@@ -218,7 +219,7 @@ function AdimKarti({
                     }}>
                       {harf}
                     </span>
-                    <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>{metin}</span>
+                    <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>{kalinIsle(metin)}</span>
                   </div>
                 );
               })}
