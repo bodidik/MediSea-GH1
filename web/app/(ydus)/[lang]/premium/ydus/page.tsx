@@ -1,10 +1,12 @@
 // "C:\Users\hucig\Medknowledge\web\app\(ydus)\[lang]\premium\ydus\page.tsx"
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import YdusDashboardClient, { type BranchCard, type LockedBranch, type NewestTopic } from './YdusDashboardClient';
 import { sinavlariOku } from '@/lib/sinav.server';
 import { envanterAl } from '@/lib/premium-envanter';
 import { listelenmeyenKategori } from '@/lib/premium-brans';
+import { icerikSayilari } from '@/lib/icerik-sayaci';
 
 export const revalidate = 3600;
 
@@ -66,6 +68,34 @@ function konuYukle(branchId: string, topicId: string): (KonuVerisi & { mtimeMs: 
   } catch {
     return null;
   }
+}
+
+/**
+ * Bu sayfanın kendi metadata'sı OLMAK ZORUNDA.
+ *
+ * Yoksa kök düzenin `alternates: { canonical: "/" }` değerini miras alıyor ve
+ * satış sayfası arama motoruna "ben ana sayfanın kopyasıyım" diyor — canlıda
+ * tam olarak bu oluyordu. robots.ts premium konu sayfalarını kapatırken bu
+ * sayfayı bilerek taramaya açık bırakıyor ("satış oradan yapılıyor"), yani
+ * niyet ile davranış ters düşmüştü: taranabilir ama asla sıralanamaz.
+ *
+ * canonical dil değişkenine DEĞİL sabit /tr'ye bağlanıyor: içeriğin tamamı
+ * Türkçe, farklı bir dil öneki yalnızca aynı sayfanın kopyasını üretir.
+ *
+ * `openGraph` bilerek TANIMLANMIYOR — burada tanımlanırsa kökteki dosya
+ * tabanlı paylaşım görseli miras alınmayı bırakır ve sayfa görselsiz kalır
+ * (bkz. CLAUDE.md, metadata mirası tuzakları).
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const s = icerikSayilari();
+  return {
+    title: 'YDUS Hazırlık — Dahiliye',
+    description:
+      `Dahiliye YDUS hazırlığı: ${s.premiumBrans} branşta ${s.premiumKonu} hazır konu, ` +
+      `${s.premiumSoru} çözümlü soru, ${s.premiumKart} tekrar kartı ve klinik vaka ` +
+      'oturumları. Vurgula, not al, aralıklı tekrarla çalış.',
+    alternates: { canonical: '/tr/premium/ydus' },
+  };
 }
 
 export default async function YdusAnaSayfa({

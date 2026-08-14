@@ -16,7 +16,19 @@ import { siteUrl } from "@/lib/site";
  */
 
 const ICERIK_KOKU = path.join(process.cwd(), "content", "canonical");
-const ARAC_KOKU = path.join(process.cwd(), "app", "tools");
+/**
+ * Araç listesi `app/tools` KLASÖRÜNDEN değil `content/arac-index.json`'dan
+ * okunuyor. Klasör taraması bugün doğru sonuç veriyordu çünkü site haritası
+ * derleme anında üretiliyor ve kaynak ağacı o an duruyor. Ama sunucusuz
+ * ortamda kaynak `app/` yok; harita bir gün istek anında üretilmeye
+ * başlarsa (bir `revalidate`, bir dinamik çağrı yeter) 114 araç adresi
+ * sessizce düşerdi. Araç sayacı tam olarak bu şekilde bir dönem üretimde
+ * sıfır dönmüştü (bkz. CLAUDE.md).
+ *
+ * İki kaynağın aynı 114 slug'ı verdiği geçiş öncesi karşılaştırmayla
+ * doğrulandı; `content/` pakete giriyor, `app/` girmiyor.
+ */
+const ARAC_INDEKS = path.join(process.cwd(), "content", "arac-index.json");
 
 type Kayit = MetadataRoute.Sitemap[number];
 
@@ -63,18 +75,13 @@ function konular(brans: string): { slug: string; dosya: string }[] {
   );
 }
 
-/** app/tools altındaki her klasör bir araç sayfası; components/lib gibi yardımcılar hariç. */
 function araclar(): string[] {
-  return guvenliOku(
-    () =>
-      fs
-        .readdirSync(ARAC_KOKU, { withFileTypes: true })
-        .filter((d) => d.isDirectory())
-        .map((d) => d.name)
-        .filter((ad) => !["components", "lib"].includes(ad))
-        .filter((ad) => fs.existsSync(path.join(ARAC_KOKU, ad, "page.tsx"))),
-    []
-  );
+  return guvenliOku(() => {
+    const liste = JSON.parse(fs.readFileSync(ARAC_INDEKS, "utf-8"));
+    return Array.isArray(liste)
+      ? liste.map((a: { slug?: string }) => a?.slug).filter((s): s is string => Boolean(s))
+      : [];
+  }, []);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -86,6 +93,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   kayitlar.push({ url: `${base}/topics`, lastModified: simdi, changeFrequency: "daily", priority: 0.9 });
   kayitlar.push({ url: `${base}/tools`, lastModified: simdi, changeFrequency: "weekly", priority: 0.9 });
   kayitlar.push({ url: `${base}/uyelik`, lastModified: simdi, changeFrequency: "monthly", priority: 0.6 });
+
+  /**
+   * YDUS tanıtım sayfası — robots.ts bu adresi bilerek taramaya AÇIK
+   * bırakıyor ("satış oradan yapılıyor") ama haritada yoktu, yani iki dosya
+   * aynı niyeti taşıyıp farklı davranıyordu. Premium KONU sayfaları hâlâ
+   * dışarıda: girişsiz ziyaretçiye erişim kartı döndükleri için haritaya
+   * konsalar arama motoruna yüzlerce içeriksiz sayfa sunulurdu.
+   */
+  kayitlar.push({
+    url: `${base}/tr/premium/ydus`,
+    lastModified: simdi,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  });
 
   // Bilerek DIŞARIDA: /giris ve /kayit (içerik değil, arama değeri yok),
   // /calisma-alanim ve /tekrar (kişisel araçlar; tarayıcıya boş görünürler),

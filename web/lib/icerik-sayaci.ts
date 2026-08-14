@@ -19,6 +19,8 @@ export type IcerikSayilari = {
   brans: number;
   konu: number;
   arac: number;
+  /** Premium branş dosyası sayısı — açık taraftaki `brans` ile aynı şey DEĞİL. */
+  premiumBrans: number;
   premiumKonu: number;
   premiumSoru: number;
   premiumKart: number;
@@ -94,9 +96,11 @@ export function icerikSayilari(): IcerikSayilari {
    * anlatıyordu.
    */
   let premiumKonu = 0;
+  let premiumBrans = 0;
   try {
     const bdir = path.join(premium, "branches");
     for (const f of fs.readdirSync(bdir).filter((f) => f.endsWith(".json"))) {
+      premiumBrans++;
       const brans = f.replace(/\.json$/, "");
       const v = JSON.parse(fs.readFileSync(path.join(bdir, f), "utf-8"));
       const kategoriler = v?.kategoriler ?? [];
@@ -116,6 +120,7 @@ export function icerikSayilari(): IcerikSayilari {
     brans,
     konu,
     arac,
+    premiumBrans,
     premiumKonu,
     premiumSoru: soru.kayit,
     premiumKart: kart.kayit,
