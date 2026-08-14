@@ -421,6 +421,20 @@ varsayım üretir.*
 Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
 yanıt, veriyi gerçek sanan birini yanıltır mı?
 
+### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
+
+En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
+ögeler telefon genişliğinde **hiç render edilmiyor** — yani 375px'te yapılan
+bir dokunma hedefi taraması onları göremez ve "kusur yok" der.
+
+Ölçüldü: başlıktaki 10 branş bağlantısı 1280px'te 19.5px, "Giriş" bağlantısı
+768px'te 20px yüksekliğindeydi (AA eşiği 24). Bu oturumun bütün önceki
+dokunma hedefi denetimleri bunları kaçırmıştı, çünkü hepsi 320/375'te
+yapılmıştı. "Giriş" üstelik bir dönüşüm kontrolü.
+
+**Dört genişlikte ölç: 320 · 375 · 768 · 1280.** Her breakpoint farklı bir
+öge kümesi açıyor; birinde temiz çıkması ötekiler için bir şey söylemez.
+
 ### Mobil ölçümü TEK genişlikte yapma
 
 Bu oturumdaki taşma ölçümlerinin hepsi 375px'te yapıldı ve "mobil taşma yok"

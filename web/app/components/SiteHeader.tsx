@@ -111,11 +111,15 @@ export default function SiteHeader() {
             mask-edges: yalnızca kaydığı aralıkta (1024–1140) kenarları söndürür — bkz. globals.css.
             2xl'de aralık kısılır: vitrin butonları da geldiği için arama kutusuna yer bırakır. */}
         <nav className="hidden lg:flex items-center gap-4 2xl:gap-3 overflow-x-auto no-scrollbar mask-edges min-w-0">
+          {/* py-1.5: bu bağlantılar 19.5px yüksekliğindeydi, AA eşiği 24px.
+              Kusur telefon ölçümlerinde HİÇ görünmedi çünkü şerit
+              `hidden lg:flex` — 1024px altında hiç render edilmiyor.
+              Başlık h-16 (64px) olduğu için dikey boşluk düzeni bozmuyor. */}
           {branches.map((branch) => (
             <Link
               key={branch.slug}
               href={`/topics/${branch.slug}`}
-              className="text-[13px] font-bold text-slate-500 hover:text-blue-600 transition-colors whitespace-nowrap"
+              className="inline-block py-1.5 text-[13px] font-bold text-slate-500 hover:text-blue-600 transition-colors whitespace-nowrap"
             >
               {branch.name}
             </Link>
@@ -254,7 +258,10 @@ export default function SiteHeader() {
         <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
           {oturumHazir && !girisli && (
             <>
-              <Link href="/giris" className="hidden md:block text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
+              {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için
+                  telefon genişliğinde hiç render edilmiyor — bu yüzden
+                  önceki dokunma hedefi taramalarında görünmedi. */}
+              <Link href="/giris" className="hidden md:block py-1.5 text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
                 Giriş
               </Link>
               <Link href="/kayit" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
