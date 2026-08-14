@@ -1,10 +1,19 @@
 import Link from "next/link";
-import { auth } from "@/auth";
 import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialties";
 import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
+import KurumRozeti from "@/app/components/KurumRozeti";
 
-export const dynamic = "force-dynamic";
+/**
+ * ISR: ana sayfa artık istek başına üretilmiyor.
+ *
+ * Eskiden `force-dynamic`ti ve tek sebebi `auth()` çağrısıydı; o da yalnızca
+ * kuruma özel tek bir rozeti göstermek içindi. Sonuç: sitenin en çok istenen
+ * sayfası CDN'e hiç girmiyordu (canlıda arka arkaya iki istekte de MISS).
+ * Rozet KurumRozeti istemci bileşenine taşındı, sayfa herkes için aynı HTML'i
+ * üretiyor ve önbelleklenebiliyor.
+ */
+export const revalidate = 3600;
 
 const FEATURED_TOOLS = [
   { slug: "wells-pe", name: "Wells PE", icon: "🔍" },
@@ -16,10 +25,6 @@ const FEATURED_TOOLS = [
 ];
 
 export default async function Home() {
-  const session = await auth();
-  const user = session?.user as any;
-  const ktKullanici = user?.institution === 'kayseritip' || user?.email === process.env.ADMIN_EMAIL;
-
   const topicCounts = getTopicCounts();
   const totalTopics = Object.values(topicCounts).reduce((a, b) => a + b, 0);
   const totalBranches = SPECIALTIES.length;
@@ -58,11 +63,7 @@ export default async function Home() {
               <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest hover:bg-yellow-300 transition-all">
                 Premium YDUS ⚓
               </Link>
-              {ktKullanici && (
-                <Link href="/kayseritip" className="rounded-full bg-indigo-500 text-white px-2.5 py-1 text-[9px] font-black uppercase tracking-widest hover:bg-indigo-400 transition-all">
-                  🎓 KayseriTıp
-                </Link>
-              )}
+              <KurumRozeti />
             </div>
 
             {/* Başlık */}
