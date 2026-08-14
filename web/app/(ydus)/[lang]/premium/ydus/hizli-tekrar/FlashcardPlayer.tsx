@@ -269,6 +269,24 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     }}>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1.5rem 1rem', width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}>
 
+        {/* DUYURU — kartın görünen yüzü.
+            Kartın iki yüzü de DOM'da duruyor; görünmeyeni artık `inert` ile
+            erişim ağacından çıkarıyoruz (yoksa yanıt soruyla birlikte
+            okunuyordu). Bunun doğal sonucu: çevirme işlemi ekran okuyucuya
+            SESSİZ kalır. Bu bölge boşluğu kapatıyor.
+            Bölge ilk render'dan itibaren DOM'da: `role="status"` sonradan
+            eklenen düğümü duyurmaz, içeriği DEĞİŞEN düğümü duyurur. */}
+        <div
+          role="status"
+          aria-live="polite"
+          style={{
+            position: 'absolute', width: '1px', height: '1px',
+            overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap',
+          }}
+        >
+          {`Kart ${index + 1} / ${total}. ${flipped ? `Yanıt: ${card.back}` : `Soru: ${card.front}`}`}
+        </div>
+
         {/* BREADCRUMB */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
           <a href={backHref} style={{
@@ -331,7 +349,10 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
           }}>
 
             {/* ÖN YÜZ */}
-            <div style={{
+            <div
+              aria-hidden={flipped}
+              inert={flipped}
+              style={{
               position: 'absolute',
               inset: 0,
               backfaceVisibility: 'hidden',
@@ -382,7 +403,10 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
             </div>
 
             {/* ARKA YÜZ */}
-            <div style={{
+            <div
+              aria-hidden={!flipped}
+              inert={!flipped}
+              style={{
               position: 'absolute',
               inset: 0,
               backfaceVisibility: 'hidden',
