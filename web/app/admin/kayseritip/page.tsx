@@ -70,7 +70,7 @@ export default function AdminKayseriTipPage() {
               required
               style={{ fontSize: '13px', width: '100%' }}
             />
-            <div style={{ fontSize: '11px', color: '#8a9aaa', marginTop: '4px' }}>
+            <div style={{ fontSize: '11px', color: '#5a6a8a', marginTop: '4px' }}>
               💡 PDF önerilir — tarayıcıda doğrudan açılır.
             </div>
           </div>

@@ -76,7 +76,7 @@ export default function ErisimYonetimiPage() {
                   }}>
                     <div>
                       <div style={{ fontSize: '13px', fontWeight: 500, color: '#1a2a3a' }}>{t.baslik}</div>
-                      <div style={{ fontSize: '11px', color: '#8a9aaa' }}>{t.id}</div>
+                      <div style={{ fontSize: '11px', color: '#5a6a8a' }}>{t.id}</div>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       {kaydedilen[t.id] && (

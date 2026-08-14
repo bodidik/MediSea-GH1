@@ -55,7 +55,7 @@ export default function SlaytViewer({ dosyaUrl, tip, baslik }: Props) {
         <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#1a2a4a', marginBottom: '8px' }}>
           {baslik}
         </h2>
-        <p style={{ fontSize: '13px', color: '#6a7a9a', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+        <p style={{ fontSize: '13px', color: '#4a5a7a', lineHeight: 1.6, marginBottom: '1.5rem' }}>
           PPTX dosyaları tarayıcıda doğrudan açılamaz. Aşağıdaki seçeneklerden birini kullan:
         </p>
       </div>
@@ -72,7 +72,7 @@ export default function SlaytViewer({ dosyaUrl, tip, baslik }: Props) {
           <span style={{ fontSize: '22px' }}>⬇</span>
           <div>
             <div style={{ fontSize: '13px', fontWeight: 600 }}>Bilgisayara İndir</div>
-            <div style={{ fontSize: '11px', color: '#8a9aaa' }}>PowerPoint ile aç</div>
+            <div style={{ fontSize: '11px', color: '#5a6a8a' }}>PowerPoint ile aç</div>
           </div>
         </a>
 
@@ -89,7 +89,7 @@ export default function SlaytViewer({ dosyaUrl, tip, baslik }: Props) {
           <span style={{ fontSize: '22px' }}>🌐</span>
           <div>
             <div style={{ fontSize: '13px', fontWeight: 600 }}>Online Görüntüle</div>
-            <div style={{ fontSize: '11px', color: '#8a9aaa' }}>Microsoft Office Online (public URL gerekir)</div>
+            <div style={{ fontSize: '11px', color: '#5a6a8a' }}>Microsoft Office Online (public URL gerekir)</div>
           </div>
         </a>
       </div>

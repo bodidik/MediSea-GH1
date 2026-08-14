@@ -96,13 +96,13 @@ export default function KtYetkiPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
             <div>
-              <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>E-posta</label>
+              <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>E-posta</label>
               <input value={email} onChange={e => setEmail(e.target.value)} required type="email"
                 placeholder="kullanici@erciyes.edu.tr"
                 style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
             </div>
             <div>
-              <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Rol</label>
+              <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Rol</label>
               <select value={rol} onChange={e => { setRol(e.target.value); if (e.target.value !== 'ogretim_gorevlisi') setSecili([]); }}
                 style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', background: '#fff' }}>
                 <option value="ogrenci">👨‍🎓 Öğrenci</option>
@@ -115,7 +115,7 @@ export default function KtYetkiPage() {
           {/* Alan seçimi — sadece ogretim_gorevlisi */}
           {rol === 'ogretim_gorevlisi' && (
             <div>
-              <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '6px' }}>
+              <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '6px' }}>
                 Yetkili Olduğu Alanlar
               </label>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -136,7 +136,7 @@ export default function KtYetkiPage() {
           )}
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Not (isteğe bağlı)</label>
+            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Not (isteğe bağlı)</label>
             <input value={notlar} onChange={e => setNotlar(e.target.value)} placeholder="Unvan veya görev"
               style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>
@@ -167,7 +167,7 @@ export default function KtYetkiPage() {
               }}>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: '13px', fontWeight: 600, color: '#1a2a4a' }}>{y.email}</div>
-                  <div style={{ fontSize: '11px', color: '#6a7a9a', marginTop: '2px' }}>
+                  <div style={{ fontSize: '11px', color: '#4a5a7a', marginTop: '2px' }}>
                     {ROL_ETIKET[y.rol] ?? y.rol}
                     {y.notlar ? ` · ${y.notlar}` : ''}
                   </div>

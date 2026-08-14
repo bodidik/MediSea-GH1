@@ -29,7 +29,7 @@ export default async function StajPage({ params }: { params: Promise<{ stajId: s
 
       {/* Başlık */}
       <div style={{ marginBottom: '1.75rem' }}>
-        <div style={{ fontSize: '11px', fontWeight: 700, color: '#6a7a9a', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '4px' }}>
+        <div style={{ fontSize: '11px', fontWeight: 700, color: '#4a5a7a', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '4px' }}>
           {staj.donem}
         </div>
         <h1 style={{ fontSize: '22px', fontWeight: 700, color: '#1a2a4a', margin: 0 }}>

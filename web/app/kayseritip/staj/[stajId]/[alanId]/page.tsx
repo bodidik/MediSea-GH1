@@ -42,7 +42,7 @@ export default async function AlanPage({
     <div style={{ maxWidth: '760px', margin: '0 auto', padding: '2rem 1rem' }}>
 
       {/* Breadcrumb */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#8a9aaa', marginBottom: '1.25rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#5a6a8a', marginBottom: '1.25rem' }}>
         <Link href="/kayseritip" style={{ color: '#1a1a6b', textDecoration: 'none' }}>KayseriTıp</Link>
         <span>/</span>
         <Link href={`/kayseritip/staj/${stajId}`} style={{ color: '#1a1a6b', textDecoration: 'none' }}>
@@ -57,7 +57,7 @@ export default async function AlanPage({
         <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a2a4a', margin: '0 0 4px' }}>
           {meta.alan.emoji} {meta.alan.baslik}
         </h1>
-        <div style={{ fontSize: '12px', color: '#8a9aaa' }}>
+        <div style={{ fontSize: '12px', color: '#5a6a8a' }}>
           {meta.staj.donem} · {meta.staj.baslik}
         </div>
       </div>

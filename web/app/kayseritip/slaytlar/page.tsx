@@ -38,13 +38,13 @@ export default function SlaytlarPage() {
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem 1rem' }}>
       <div style={{ marginBottom: '1.5rem' }}>
         <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a2a4a', margin: '0 0 4px' }}>Ders Slaytları</h1>
-        <p style={{ fontSize: '13px', color: '#6a7a9a', margin: 0 }}>{dersler.length} dosya</p>
+        <p style={{ fontSize: '13px', color: '#4a5a7a', margin: 0 }}>{dersler.length} dosya</p>
       </div>
 
       {Object.entries(gruplar).map(([ders, liste]) => (
         <div key={ders} style={{ marginBottom: '1.5rem' }}>
           <div style={{
-            fontSize: '11px', fontWeight: 700, color: '#6a7a9a',
+            fontSize: '11px', fontWeight: 700, color: '#4a5a7a',
             textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '8px',
           }}>
             {ders}
@@ -65,7 +65,7 @@ export default function SlaytlarPage() {
                       <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a2a4a', marginBottom: '3px' }}>
                         {d.baslik}
                       </div>
-                      <div style={{ fontSize: '12px', color: '#8a9aaa' }}>
+                      <div style={{ fontSize: '12px', color: '#5a6a8a' }}>
                         {d.ogretim_uyesi}{d.tarih ? ` · ${d.tarih}` : ''}
                       </div>
                     </div>
@@ -76,7 +76,7 @@ export default function SlaytlarPage() {
                       }}>
                         {stil.etiket}
                       </span>
-                      <span style={{ color: '#b0b8d0', fontSize: '16px' }}>→</span>
+                      <span style={{ color: '#5a6a8a', fontSize: '16px' }}>→</span>
                     </div>
                   </div>
                 </Link>
@@ -87,7 +87,7 @@ export default function SlaytlarPage() {
       ))}
 
       {dersler.length === 0 && (
-        <p style={{ color: '#8a9aaa', fontSize: '14px', textAlign: 'center', marginTop: '3rem' }}>
+        <p style={{ color: '#5a6a8a', fontSize: '14px', textAlign: 'center', marginTop: '3rem' }}>
           Henüz slayt eklenmemiş.
         </p>
       )}

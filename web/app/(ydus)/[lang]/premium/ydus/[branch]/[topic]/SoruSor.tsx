@@ -87,7 +87,7 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
       />
 
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '0.6rem', gap: '10px' }}>
-        <span style={{ fontSize: '11px', color: '#8aa4c0' }}>
+        <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
           {kalan !== null ? `Kalan hakkın: ${kalan}` : 'Ctrl/⌘ + Enter ile gönder'}
         </span>
         <button

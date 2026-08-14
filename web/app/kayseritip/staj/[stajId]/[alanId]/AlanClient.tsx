@@ -92,7 +92,7 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>
+            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>
               Dosya (PDF, PPTX)
             </label>
             <input type="file" accept=".pdf,.pptx,.ppt,.doc,.docx"
@@ -101,14 +101,14 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Başlık</label>
+            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Başlık</label>
             <input value={baslik} onChange={e => setBaslik(e.target.value)} required
               placeholder="ör. Kronik Böbrek Hastalığı Slaytı"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Açıklama (isteğe bağlı)</label>
+            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Açıklama (isteğe bağlı)</label>
             <input value={aciklama} onChange={e => setAciklama(e.target.value)}
               placeholder="Kısa not"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
@@ -133,7 +133,7 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
 
       {/* Dosya listesi */}
       {dosyalar.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '3rem 0', color: '#8a9aaa', fontSize: '14px' }}>
+        <div style={{ textAlign: 'center', padding: '3rem 0', color: '#5a6a8a', fontSize: '14px' }}>
           <div style={{ fontSize: '36px', marginBottom: '8px' }}>📂</div>
           Bu alana henüz dosya yüklenmemiş.
         </div>
@@ -151,7 +151,7 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
                   <div style={{ fontSize: '26px', flexShrink: 0 }}>{TIP_EMOJI[d.tip] ?? '📎'}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '13px', fontWeight: 600, color: '#1a2a4a', marginBottom: '2px' }}>{d.baslik}</div>
-                    <div style={{ fontSize: '11px', color: '#8a9aaa' }}>
+                    <div style={{ fontSize: '11px', color: '#5a6a8a' }}>
                       {d.yukleyenAd} · {new Date(d.tarih).toLocaleDateString('tr-TR')}
                       {d.aciklama ? ` · ${d.aciklama}` : ''}
                     </div>
@@ -160,7 +160,7 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
                     background: stil.bg, color: stil.color, flexShrink: 0 }}>
                     {d.tip.toUpperCase()}
                   </span>
-                  <span style={{ color: '#b0b8d0', fontSize: '16px', flexShrink: 0 }}>↗</span>
+                  <span style={{ color: '#5a6a8a', fontSize: '16px', flexShrink: 0 }}>↗</span>
                 </div>
               </a>
             );

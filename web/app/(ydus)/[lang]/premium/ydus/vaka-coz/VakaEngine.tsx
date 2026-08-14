@@ -109,7 +109,7 @@ function AdimKarti({
     if (!cevapVerildi) return { ...base, background: '#f0f7ff', color: '#1a3a6b', border: '0.5px solid #b8cfe8' };
     if (harf === adim.dogru) return { ...base, background: '#1a6640', color: '#fff' };
     if (harf === secim)      return { ...base, background: '#a01f1f', color: '#fff' };
-    return { ...base, background: '#f0f0f0', color: '#aaa' };
+    return { ...base, background: '#f0f0f0', color: '#666' };
   }
 
   return (

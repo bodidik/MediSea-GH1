@@ -172,7 +172,7 @@ export default async function VakaCozPage(props: {
                       </div>
 
                       {/* Ok */}
-                      <div style={{ fontSize: '18px', color: '#b8cfe8', flexShrink: 0 }}>→</div>
+                      <div style={{ fontSize: '18px', color: '#4a6a8a', flexShrink: 0 }}>→</div>
                     </div>
                   </Link>
                 );

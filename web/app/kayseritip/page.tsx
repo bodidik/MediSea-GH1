@@ -37,7 +37,7 @@ export default async function KayseriTipHome() {
             }}>
               <div style={{ fontSize: '28px', marginBottom: '8px' }}>{emoji}</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: '#1a2a4a', marginBottom: '4px' }}>{baslik}</div>
-              <div style={{ fontSize: '13px', color: '#6a7a9a' }}>{aciklama}</div>
+              <div style={{ fontSize: '13px', color: '#4a5a7a' }}>{aciklama}</div>
             </div>
           </Link>
         ))}

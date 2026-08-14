@@ -123,7 +123,7 @@ function SoruKarti({
     if (harf === secim) {
       return { ...base, background: '#a01f1f', color: '#fff', border: 'none' };
     }
-    return { ...base, background: '#f0f0f0', color: '#888', border: '0.5px solid #d8d8d8' };
+    return { ...base, background: '#f0f0f0', color: '#666', border: '0.5px solid #d8d8d8' };
   }
 
   const dogruMu = secim === soru.dogru;

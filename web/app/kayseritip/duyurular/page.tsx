@@ -27,13 +27,13 @@ export default function DuyurularPage() {
         <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a2a4a', margin: '0 0 4px' }}>
           📢 Duyurular
         </h1>
-        <div style={{ fontSize: '12px', color: '#8a9aaa' }}>
+        <div style={{ fontSize: '12px', color: '#5a6a8a' }}>
           KayseriTıp — Erciyes Üniversitesi Tıp Fakültesi
         </div>
       </div>
 
       {sirali.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '4rem 0', color: '#8a9aaa', fontSize: '14px' }}>
+        <div style={{ textAlign: 'center', padding: '4rem 0', color: '#5a6a8a', fontSize: '14px' }}>
           <div style={{ fontSize: '40px', marginBottom: '10px' }}>📭</div>
           Şu an aktif duyuru bulunmuyor.
         </div>
@@ -63,7 +63,7 @@ export default function DuyurularPage() {
                 <div style={{ fontSize: '13px', color: '#2a3a5a', lineHeight: 1.6, whiteSpace: 'pre-wrap', marginBottom: '8px' }}>
                   {d.icerik}
                 </div>
-                <div style={{ fontSize: '11px', color: '#8a9aaa' }}>
+                <div style={{ fontSize: '11px', color: '#5a6a8a' }}>
                   {new Date(d.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </div>
               </div>

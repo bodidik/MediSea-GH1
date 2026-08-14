@@ -93,13 +93,13 @@ export default function AdminDuyuruPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px', alignItems: 'end' }}>
             <div>
-              <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Başlık</label>
+              <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Başlık</label>
               <input value={baslik} onChange={e => setBaslik(e.target.value)} required
                 placeholder="Duyuru başlığı"
                 style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
             </div>
             <div>
-              <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>Tür</label>
+              <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Tür</label>
               <select value={tur} onChange={e => setTur(e.target.value)}
                 style={{ padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', background: '#fff' }}>
                 <option value="bilgi">ℹ️ Bilgi</option>
@@ -110,7 +110,7 @@ export default function AdminDuyuruPage() {
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#6a7a9a', display: 'block', marginBottom: '3px' }}>İçerik</label>
+            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>İçerik</label>
             <textarea value={icerik} onChange={e => setIcerik(e.target.value)} required rows={4}
               placeholder="Duyuru metni…"
               style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'inherit' }} />
@@ -158,7 +158,7 @@ export default function AdminDuyuruPage() {
                   </div>
                   <div style={{ fontSize: '12px', color: '#4a5a7a', marginBottom: '8px', whiteSpace: 'pre-wrap' }}>{d.icerik}</div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ fontSize: '11px', color: '#9aa0b0', flex: 1 }}>
+                    <span style={{ fontSize: '11px', color: '#5a6a8a', flex: 1 }}>
                       {new Date(d.tarih).toLocaleString('tr-TR')}
                     </span>
                     <button onClick={() => sabitliToggle(d)} style={{
@@ -189,7 +189,7 @@ export default function AdminDuyuruPage() {
         )}
 
         {liste.length === 0 && (
-          <div style={{ textAlign: 'center', color: '#8a9aaa', fontSize: '14px', padding: '3rem 0' }}>
+          <div style={{ textAlign: 'center', color: '#5a6a8a', fontSize: '14px', padding: '3rem 0' }}>
             Henüz duyuru yok.
           </div>
         )}

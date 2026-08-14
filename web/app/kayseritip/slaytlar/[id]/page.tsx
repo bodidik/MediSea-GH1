@@ -47,7 +47,7 @@ export default async function SlaytDetay({ params }: { params: Promise<{ id: str
         </Link>
         <div style={{ flex: 1 }}>
           <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a2a4a' }}>{ders.baslik}</div>
-          <div style={{ fontSize: '11px', color: '#8a9aaa' }}>
+          <div style={{ fontSize: '11px', color: '#5a6a8a' }}>
             {ders.ders}{ders.ogretim_uyesi ? ` · ${ders.ogretim_uyesi}` : ''}{ders.tarih ? ` · ${ders.tarih}` : ''}
           </div>
         </div>
