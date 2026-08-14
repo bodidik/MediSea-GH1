@@ -8,6 +8,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import StrokePreview from "@/app/components/StrokePreview";
+import { kisayolSusmali } from "@/app/lib/klavye";
 import {
   branchesOf,
   buildDeck,
@@ -128,6 +129,10 @@ export default function ReviewPage() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!card) return;
+      // Odaktaki düğmeyi ezme: Space bir düğme üzerindeyken onu çalıştırmalı,
+      // kartı çevirmemeli. Rakam kısayolları (1-4) düğme çalıştırmadığı için
+      // korumaya takılmıyor, düğme odaktayken de çalışıyorlar.
+      if (kisayolSusmali(e)) return;
       if (e.code === "Space") {
         e.preventDefault();
         setRevealed((v) => !v);

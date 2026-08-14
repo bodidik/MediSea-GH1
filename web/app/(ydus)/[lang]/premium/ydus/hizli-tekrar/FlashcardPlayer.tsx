@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { kisayolSusmali } from '@/app/lib/klavye';
 
 interface Card {
   id: string;
@@ -133,6 +134,12 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
+      // Odakta bir düğme/bağlantı varken Space ve Enter ONUN işi. Bu kontrol
+      // yokken ölçüm şunu gösterdi: "Biliyorum" düğmesine Tab'layıp Enter'a
+      // basınca hiçbir şey olmuyordu — preventDefault düğmenin çalışmasını
+      // engelliyor, kısayol da kartı çeviriyordu. Ücretli yüzeydeki dört
+      // düğme de klavyeyle kullanılamaz durumdaydı.
+      if (kisayolSusmali(e)) return;
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flip(); }
       if (e.key === 'ArrowRight') next();
       if (e.key === 'ArrowLeft')  prev();
