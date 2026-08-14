@@ -177,7 +177,37 @@ altına indiriyor.
 
 ---
 
-## 8. Küçük not: premium hesap
+## 8. Express arka ucu canlıda yok — 16 uç dürüstçe reddediyor
+
+`server/` (Express + MongoDB) hiç dağıtılmamış. Vercel'de yalnızca `web/`
+çalışıyor, dolayısıyla arka uca bağlı her uç boşa çıkıyor.
+
+Bir dönem bu uçlar **uydurma veri ve sahte başarı** dönüyordu: olmayan
+sınav geçmişi, olmayan günlük program, "sonuçlarınız kaydedildi" mesajları.
+Hepsi temizlendi; artık dürüstçe `503 { ok:false, reason:"backend-unavailable" }`
+diyorlar. Yani **arayüz yalan söylemiyor** ama şu özellikler fiilen kapalı:
+
+| Özellik | Uç |
+|---|---|
+| Site içi arama | `/api/topics/search` |
+| Konuya AI soru sorma | `/api/ai/ask` |
+| Sunucu tarafı quiz/tekrar kaydı | `/api/review/*`, `/api/premium/quiz/*` |
+| Günlük program (premium pano) | `/api/premium/daily-program` |
+| Kullanıcı profili / hedef | `/api/user/*` |
+| Korumalı içerik parçası | `/api/protected/*` |
+
+**Önemli:** kişisel katman (vurgu, not, tekrar takvimi) bunlardan HİÇBİRİNE
+bağlı değil — tamamı tarayıcıda çalışıyor ve etkilenmiyor. Açık kütüphane,
+klinik araçlar ve premium konu/quiz/kart içerikleri de dosya sisteminden
+okunuyor, onlar da çalışıyor.
+
+Karar senin: ya `server/` bir yere dağıtılıp `BACKEND_URL` verilecek, ya da
+bu özellikler arayüzden kaldırılacak. İkisi de yapılmazsa kullanıcı çalışan
+bir düğmeye basıp "servise ulaşılamıyor" görmeye devam eder.
+
+---
+
+## 9. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:
