@@ -91,7 +91,10 @@ export default function YdusDashboardClient({
               <Stethoscope size={16} className="text-white" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-slate-800 leading-none">YDUS Hazırlık</p>
+              {/* h1: sayfada HİÇ başlık yoktu — ne h1 ne h2. Mevsimlik ürünün
+                  iniş sayfası, ekran okuyucuya ve arama motoruna kendini
+                  tanıtamıyordu. Görünüm birebir korundu. */}
+              <h1 className="text-sm font-semibold text-slate-800 leading-none">YDUS Hazırlık</h1>
               <p className="text-[10px] text-slate-400 mt-0.5">Premium sınav modülü</p>
             </div>
           </div>
@@ -104,7 +107,8 @@ export default function YdusDashboardClient({
         </div>
       </div>
 
-      <main className="max-w-6xl mx-auto px-4 py-6">
+      {/* div: (ydus)/layout.tsx zaten <main> basıyor. */}
+      <div className="max-w-6xl mx-auto px-4 py-6">
 
         {/* Takvim boşsa geri sayım da plan da sessiz kalıyor; bu uyarı
             özelliğin fark edilmeden ölü kalmasını engelliyor (yalnızca yönetici) */}
@@ -228,7 +232,7 @@ export default function YdusDashboardClient({
           </p>
         )}
 
-      </main>
+      </div>
     </div>
   );
 }

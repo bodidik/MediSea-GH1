@@ -31,8 +31,11 @@ export default async function Home() {
   // Araç sayısı elle "6+" yazılıydı; gerçekte 114. Artık sayılıyor.
   const totalTools = getToolCount();
 
+  // Kök öge div, main DEĞİL: AppShell zaten <main id="icerik"> basıyor.
+  // İkincisi sayfada İKİ main landmark'ı üretiyordu — geçersiz, ve ekran
+  // okuyucu hangisinin ana içerik olduğunu bilemiyor.
   return (
-    <main className="min-h-screen bg-[#F8F9FC] font-sans text-blue-950">
+    <div className="min-h-screen bg-[#F8F9FC] font-sans text-blue-950">
 
       {/* ══════════════════════════════════════════════════════
           DESKTOP: 2 sütun — sol hero, sağ branşlar
@@ -230,6 +233,6 @@ export default async function Home() {
           </div>
         </section>
       </div>
-    </main>
+    </div>
   );
 }

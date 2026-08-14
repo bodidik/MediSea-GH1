@@ -17,7 +17,29 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
   const branchSlugs = getToolBranchSlugs(toolSlug);
 
   return (
-    <div className="flex flex-wrap items-center gap-2 mb-2 text-[10px] font-black uppercase tracking-widest">
+    <>
+      {/*
+        Atlama bağlantısı ve landmark'lar burada, çünkü araç sayfaları (site)
+        grubunun DIŞINDA ve AppShell almıyorlar. Ölçüldü: 115 araç sayfasında
+        `main`, `nav`, `header`, `footer` sayısı SIFIRDI ve `#icerik` hedefi
+        yoktu — yani klavye kullanıcısı her araç sayfasında bu gezinme
+        çubuğunun 5-6 bağlantısını tek tek geçmek zorundaydı, ekran okuyucu
+        da sayfada tek bir bölge bulamıyordu.
+
+        Bağlantı ve hedef aynı bileşende duruyor: düzen dosyasına konsaydı
+        hedef gezinmenin ÖNÜNE düşer, atlama hiçbir işe yaramazdı.
+      */}
+      <a
+        href="#arac-icerik"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-blue-950 focus:px-4 focus:py-2.5 focus:text-sm focus:font-bold focus:text-white"
+      >
+        Araç içeriğine atla
+      </a>
+
+      <nav
+        aria-label="Araç sayfası gezinmesi"
+        className="flex flex-wrap items-center gap-2 mb-2 text-[10px] font-black uppercase tracking-widest"
+      >
       <button
         type="button"
         onClick={() => router.back()}
@@ -53,6 +75,12 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
           </Link>
         );
       })}
-    </div>
+      </nav>
+
+      {/* Atlama hedefi. tabIndex=-1 şart: odaklanabilir olmayan bir öğeye
+          atlandığında tarayıcı görünümü kaydırır ama ODAĞI taşımaz, sonraki
+          Tab yine gezinmenin başına döner. */}
+      <span id="arac-icerik" tabIndex={-1} />
+    </>
   );
 }

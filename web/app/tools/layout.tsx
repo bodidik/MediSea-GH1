@@ -35,6 +35,19 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+/**
+ * `main` landmark'ı buradan geliyor.
+ *
+ * Araç sayfaları (site) route grubunun dışında ve AppShell almıyorlar; ölçümde
+ * 115 sayfanın hepsinde `main` sayısı SIFIRDI. Landmark olmayan bir sayfada
+ * ekran okuyucu "içeriğe git" diyemiyor, kullanıcı baştan sona gezinmek
+ * zorunda kalıyor.
+ *
+ * Gezinme çubuğu (ToolTopNav) sayfaların içinde render edildiği için bu
+ * main'in İÇİNDE kalıyor. İdeal yerleşim değil ama landmark'ın hiç
+ * olmamasından iyi; atlama bağlantısı da zaten gezinmeyi aşacak şekilde
+ * ToolTopNav'ın kendi içinde çözüldü.
+ */
 export default function AraclarDuzen({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return <main>{children}</main>;
 }
