@@ -292,11 +292,20 @@ mark.ms-hl-u {
    yorgun gözle okuyor.
 
    Kullanımların 798'ini tek tek düzenlemek yerine renkler burada bir
-   basamak koyulaştırılıyor. Bunun güvenli olduğu ÖLÇÜLDÜ: ana sayfa,
-   branş sayfası ve üyelik sayfasında bu iki renk yalnızca açık zeminlerde
-   kullanılıyor (koyu zeminde sıfır kullanım — koyu bölümler mavi tonları
-   tercih ediyor). Dolayısıyla koyulaştırmak hiçbir yerde kontrastı
-   düşürmüyor.
+   basamak koyulaştırılıyor.
+
+   ⚠ İLK ÖLÇÜM EKSİKTİ, KURAL GERİ TEPTİ. "Koyu zeminde sıfır kullanım"
+   diye yazılmıştı; ölçüm ana sayfa, branş sayfası ve üyelik sayfasıyla
+   sınırlıydı ve o günkü ölçüm betiği degrade zeminleri tanımıyordu
+   (`background-image`e bakmıyor, yalnızca `backgroundColor` okuyordu).
+   Konu detayındaki premium tanıtım şeridi degradeyle koyu: oradaki
+   `text-slate-400` yazı 5.73'ten 1.94'e DÜŞTÜ — yani kural, düzeltmesi
+   gereken şeyin tam tersini yaptı.
+
+   Kural yerinde kalıyor (kullanımların ezici çoğunluğu açık zeminde ve
+   orada doğru çalışıyor); o tek yazı kendi rengini alarak düzeltildi.
+   CSS ile "koyu zeminde muaf tut" denemesi de yapıldı ve GERİ ALINDI —
+   nedeni aşağıda.
 
    Hiyerarşi korunuyor: slate-300 hâlâ slate-400'den açık, ikisi de gövde
    metninden açık.
@@ -315,3 +324,17 @@ mark.ms-hl-u {
 .text-slate-500 {
   color: rgb(71 85 105);   /* slate-600 */
 }
+
+/* ⚠ "Koyu ata varsa muafiyet ver" DENENDİ, GERİ ALINDI — İÇ İÇELİK DELİYOR.
+   `.bg-slate-950 .text-slate-400 { … }` gibi bir kural mantıklı görünüyor
+   ama zemin ATAdan değil, en yakın DOLU zeminden gelir. Premium panosu
+   koyu bir yerleşimin içinde AÇIK kartlar taşıyor: muafiyet o kartlara da
+   uydu ve tek sayfada 21 yazı 4.5'ten 2.56'ya düştü — kural, düzelttiğinden
+   çok bozdu (ölçüldü: /tr/premium/ydus, 1280px).
+
+   Doğru kural şu: yukarıdaki koyulaştırma açık zemin varsayar ve
+   kullanımların ezici çoğunluğu öyledir. Bir yazı KOYU bir zemine
+   basılacaksa rengini kendi vermeli — konu sayfasındaki premium tanıtım
+   şeridi bunu `text-blue-200` ile yapıyor. Bu sınıflardan biri koyu zemine
+   konursa kontrast düşer; denetim degrade zeminleri (`background-image`)
+   okuyan bir ölçümle yapılmalı, yoksa tam bu durum gözden kaçar. */

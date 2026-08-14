@@ -451,7 +451,7 @@ export default async function TopicDetailPage({
                           YDUS {slug.replace(/-/g, ' ')} 
       	           </h4>
                 
-         	          <p className="text-sm text-slate-400 font-medium mb-6 leading-relaxed">
+         	          <p className="text-sm text-blue-200 font-medium mb-6 leading-relaxed">
                 		 Bu branşla ilgili çıkmış tüm YDUS soruları ve çözümlü vaka analizleri Premium abonelere özel.
                 	      </p>
                 
