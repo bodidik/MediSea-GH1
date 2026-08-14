@@ -134,9 +134,14 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                       </h3>
                       {/* data-readable: her inci kendi kimliğiyle vurgulanabilir.
                           Arama filtresi listeyi değiştirse de vurgular inciye yapışık kalır. */}
+                      {/* Boyut BURADA veriliyor: globals.css'teki okuma tabanı
+                          `[data-readable]` ÇOCUKLARINI hedefliyor, inci metni ise
+                          düz metin olarak doğrudan bu kapsayıcıya basıldığı için
+                          (sarmalayan <p> yok) kural hiç değmiyordu ve gövde 14px'te
+                          kalıyordu. Vaka ve quiz motorları 15px basıyor. */}
                       <div
                         data-readable={`pearl:${pearl.id}`}
-                        className="text-sm text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none"
+                        className="text-[15px] text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none"
                         dangerouslySetInnerHTML={{ __html: pearl.content }}
                       />
                     </div>

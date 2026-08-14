@@ -90,7 +90,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
         <div className="overflow-y-auto pr-2 custom-scrollbar shrink-0 max-h-[20vh] lg:max-h-[25vh] bg-black/30 p-2.5 rounded-lg border border-white/5 shadow-inner">
           {/* ZIRH: Vaka metni LiteProtected Kalkanı içine alındı */}
           <LiteProtected userId={user?.id || "Premium Üye"}>
-            <div className="prose prose-sm prose-invert prose-blue max-w-none text-slate-200 leading-relaxed font-medium">
+            <div className="prose prose-sm prose-invert prose-blue max-w-none text-[15px] text-slate-200 leading-relaxed font-medium">
               <p>{currentStage.content}</p>
             </div>
           </LiteProtected>
@@ -98,7 +98,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
 
         {/* Soru ve Şıklar (Esnek Alan) */}
         <div className="flex flex-col gap-2.5 mt-auto pt-3 border-t border-slate-800 h-full overflow-y-auto">
-          <h3 className="font-bold text-white flex items-start gap-2 text-sm leading-snug">
+          <h3 className="font-bold text-white flex items-start gap-2 text-[15px] leading-snug">
             <span className="text-blue-400">❓</span>
             {currentStage.question}
           </h3>
@@ -128,7 +128,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                   `}>
                     {opt.id}
                   </span>
-                  <span className="font-medium">{opt.text}</span>
+                  <span className="font-medium text-[15px]">{opt.text}</span>
                 </div>
                 
                 {showResult && opt.id === currentStage.correctAnswer && <span className="absolute right-2.5 top-2.5 text-green-500 text-base">✓</span>}
@@ -226,7 +226,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                 <span>🩺</span> Uzman Görüşü
               </h4>
               <div 
-                className="text-[11px] text-slate-200 space-y-1.5 prose prose-sm prose-invert prose-blue leading-relaxed font-medium"
+                className="text-[14px] text-slate-200 space-y-1.5 prose prose-sm prose-invert prose-blue leading-relaxed font-medium"
                 dangerouslySetInnerHTML={{ __html: currentStage.explanation }} 
               />
             </div>
