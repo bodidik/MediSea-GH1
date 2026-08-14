@@ -415,6 +415,75 @@ Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
 tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
 
+### İçerikteki kapatılmamış etiket, rengini BÜTÜN BELGEYE taşır
+
+Bir konu sayfasında beyaz kartın üstünde açık sarı yazı ölçüldü: kontrast
+**1.44**. İlk teşhis "içerik açık rengi açık zeminde kullanmış" oldu. Yanlış
+çıktı — 456 konu dosyası tarandı, `text-(amber|yellow|lime)-(100..400)`
+sınıflarının **120 kullanımının 120'si de koyu kartın içinde**, yani hepsi
+doğru. Açık zeminde tek kullanım yok.
+
+Kaynak, rengin nerede YAZILDIĞI değil nereye TAŞINDIĞI: içerikte
+kapatılmamış bir `<strong class="text-amber-300">` var. HTML ayrıştırıcısı
+kapatılmamış biçimlendirme ögesini "etkin biçimlendirme ögeleri" listesinde
+tutar; kabı kapandığında yığından düşer ama listeden düşmez ve sonraki her
+metin düğümünden önce **sınıfıyla birlikte yeniden üretilir**. Ölçüldü: o
+sayfada 2 olan `text-amber-300` belgede **47 ögeye** çıkıyor, 36'sı okuma
+kabının tamamen dışında (ilgili konular, tanıtım şeridi, alt bilgi). Aynı
+sayfada `text-emerald-300` ve `text-sky-300` de sızıyor — kap dışına 112 öge.
+
+Çözüm `lib/icerik-html.ts` → `htmlKapat()`: enjekte edilmeden önce açık
+kalan etiketleri kapatır. Konu sayfası bunu içerik okunurken uyguluyor.
+Yeni bir yüzey `dangerouslySetInnerHTML` ile içerik basacaksa aynı
+yardımcıdan geçirsin. (Ölçüldü: premium içeriğin tamamı temiz, sızdıran
+tek dosya `endokrinoloji/ektopik-acth-sendromu.json`.)
+
+**CSS ile çözülemezdi** ve nedeni kalıcı bir ders: kaçan sınıf
+`[data-readable]` kabının DIŞINA da çıkıyor, yani okuma alanına kapsanan bir
+kural yetişemiyor; genel bir kural ise alt bilgideki koyu zeminli
+`text-amber-400`ü bozardı. Renk kuralı semptomu kovalar, sızıntı hangi renkte
+olursa olsun geri gelir.
+
+**Kapanışı SONA değil, ait olduğu yere yaz.** İlk sürüm `</strong>`u parçanın
+sonuna ekliyordu; sızıntı duruyordu ama ayrıştırıcı "yanlış yuvalanmış
+biçimlendirme" onarımını çalıştırıp `<strong>`u sonraki paragrafların içinde
+yeniden kuruyordu — iki gövde paragrafı slate-200 yerine amber basıldı. Doğrusu
+biçimlendirme ögesini bir sonraki bloğun önünde kapatmak. Tek yan etki:
+kapatılmamış etiket yüzünden KAZARA kalın basılan 7 paragraf normal ağırlığa
+döndü (renk, metin ve yapı birebir aynı; 2288 bölümün 2286'sında DOM zerre
+değişmiyor — bu karşılaştırma doğrulamanın kendisiydi).
+
+**`a` erken kapatılmaz:** HTML5'te bağlantı blok içeriği sarabiliyor
+(`<a><div>…</div></a>`), erken kapatmak kasıtlı blok bağlantılarını bölerdi.
+
+### Hidrasyon, kusuru ölçümden GİZLER
+
+Yukarıdaki sızıntının en sinsi yanı: React istemcide kabı kendi ağacıyla
+yeniden kuruyor ve sızıntıyı siliyor. Aynı sayfa hidrasyondan **önce 5
+kusurlu**, **sonra 0 kusurlu** ölçülüyor. Yani sayfayı açıp ölçen bir tarama
+"temiz" der — ama kullanıcı ilk boyamadan hidrasyon bitene kadar (yavaş
+telefonda saniyeler) kusuru görür, betik çalışmayan tüketicilerde ise kalıcıdır.
+
+Hidrasyon öncesini ölçmenin yolu: sayfayı `fetch` edip `srcdoc` ile
+`sandbox="allow-same-origin"` bir iframe'e koy — betik çalışmaz, hidrasyon
+olmaz, ama DOM ve hesaplanmış stiller okunur. Karşılaştırma için
+`allow-scripts` de ekleyip aynı ölçümü yinele.
+
+**Ölçüm ortamının renk şeması SONUCU DEĞİŞTİRİR.** Aynı 411 sayfalık tarama
+koyu şemada **127**, açık şemada **18** kusurlu sayfa buldu. Fark içerikteki
+`dark:` varyantlarından geliyor: içerik `dark:bg-slate-700` gibi zeminler
+kullanıyor, uygulamanın yazı renklerinin `dark:` karşılığı yok, sonuçta koyu
+satırın üstüne koyu yazı düşüyor (ölçüldü: 17 sayfada tablo başlıkları 1.37).
+Tarama yaparken şemayı BİLEREK seç ve raporda söyle.
+
+**Bayat CSS, düzeltmeyi "işe yaramadı" gösterir.** Yeniden derleyip taradıktan
+sonra bir düzeltme hâlâ kusurlu göründü; sebep iframe'in eski stil paketini
+önbellekten almasıydı. HTML yeni geldiği için içerik düzeltmesi işlemiş,
+CSS düzeltmesi işlememiş gibi duruyordu. Hazırlık ölçütü "bir stil sayfası
+indi" DEĞİL, **aradığın kuralın indiği** olmalı:
+`[...d.styleSheets].some(s => [...s.cssRules].some(r => r.selectorText?.includes('bg-rose-950')))`
+— ve sayfaları `fetch(yol, { cache: 'reload' })` ile çek.
+
 ### Route grubu dışındaki sayfalar AppShell almaz
 
 `app/tools/*`, `app/kayseritip/*` ve ayrıca **`app/giris`, `app/kayit`,

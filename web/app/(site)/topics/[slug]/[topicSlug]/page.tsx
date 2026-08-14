@@ -9,6 +9,7 @@ import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
+import { htmlKapat } from "@/lib/icerik-html";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -173,7 +174,10 @@ export default async function TopicDetailPage({
     sections: Array.isArray(rawData.sections)
       ? rawData.sections.map((s: any) => ({
           heading: s.heading || s.title || "Başlıksız Blok",
-          html: s.text || s.html || "",
+          // htmlKapat: içerikteki kapatılmamış etiketler enjekte edildiği kabın
+          // DIŞINA sızıyor ve sınıflarını (yani renklerini) belgenin geri
+          // kalanına taşıyor. Gerekçesi ve ölçümü lib/icerik-html.ts içinde.
+          html: htmlKapat(s.text || s.html || ""),
           visibility: s.visibility || "V"
         }))
       : []
