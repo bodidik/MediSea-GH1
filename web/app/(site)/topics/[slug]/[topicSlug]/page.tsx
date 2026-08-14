@@ -241,7 +241,12 @@ export default async function TopicDetailPage({
         })}
       />
       <JsonLd
+        /* İlk adım "MediSea" — hem görünen yolla hem branş sayfasıyla
+           aynı kök. Ölçüldü: branş sayfasının şeması Kütüphane'den,
+           görüneni MediSea'den başlıyordu; iki sayfa türü de artık
+           "MediSea / Kütüphane / …" izini paylaşıyor. */
         veri={kirintiSemasi([
+          { ad: "MediSea", yol: "/" },
           { ad: "Kütüphane", yol: "/topics" },
           { ad: bransAdi, yol: `/topics/${slug}` },
           { ad: topicItem.title, yol: `/topics/${slug}/${topicSlug}` },
@@ -256,6 +261,11 @@ export default async function TopicDetailPage({
         <div className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-black uppercase tracking-widest text-slate-400">
           {/* py-1.5: kırıntı yolu bağlantıları mobilde 16px yüksekliğindeydi,
               yani dokunma hedefi olarak WCAG asgarisinin (24px) altında. */}
+          {/* İlk adım "MediSea": branş sayfasının görünen yolu da böyle
+              başlıyor. İkisi farklıyken kırıntı yolu sayfadan sayfaya kök
+              değiştiriyordu; ayrıca şema GÖRÜNEN yolla aynı olmak zorunda. */}
+          <Link href="/" className="py-1.5 hover:text-blue-600 transition-colors">MediSea</Link>
+          <span>/</span>
           <Link href="/topics" className="py-1.5 hover:text-blue-600 transition-colors">Kütüphane</Link>
           <span>/</span>
           <Link href={`/topics/${slug}`} className="py-1.5 hover:text-blue-600 transition-colors">{bransAdi}</Link>

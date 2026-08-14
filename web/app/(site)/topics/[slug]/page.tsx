@@ -165,7 +165,13 @@ export default async function BranchListPage({
           "MediSea › Kütüphane › Hematoloji" yolu görünsün diye eklendi.
           13 branş sayfası site haritasında 0.8 önceliğinde. */}
       <JsonLd
+        /* İlk adım "MediSea": şema GÖRÜNEN kırıntı yoluyla aynı olmak
+           zorunda ve bu sayfanın görünen yolu "MediSea / Kütüphane / Branş"
+           diye başlıyordu; şema ise MediSea adımını atlıyordu. Ölçüldü —
+           şema [Kütüphane, Hematoloji], görünen [MediSea, Kütüphane,
+           Hematoloji]. Konu sayfasıyla da tutarlı: orada da aynı kök var. */
         veri={kirintiSemasi([
+          { ad: "MediSea", yol: "/" },
           { ad: "Kütüphane", yol: "/topics" },
           { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
         ])}
