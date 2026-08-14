@@ -60,7 +60,7 @@ export default function KutuphaneArama({
     <div>
       {/* ARAMA */}
       <div className="relative mb-8">
-        <span className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
+        <span aria-hidden="true" className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
         <input
           type="text"
           aria-label="Kütüphanede konu ara"
@@ -135,7 +135,7 @@ export default function KutuphaneArama({
               className="group rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-blue-900/30 hover:shadow-lg"
             >
               <div className="flex items-start justify-between gap-3">
-                <span className="text-2xl">{b.ikon}</span>
+                <span aria-hidden="true" className="text-2xl">{b.ikon}</span>
                 <span className="rounded-full bg-slate-50 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest text-slate-400">
                   {b.konuSayisi} konu
                 </span>

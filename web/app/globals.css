@@ -205,8 +205,36 @@ mark.ms-hl-u {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+/* ─────────────────────────────────────────────────────────────────────
+   HAREKET AZALTMA
+
+   Buradaki kural bir dönem YALNIZCA `mark.ms-hl` geçişini kapatıyordu —
+   yani destek fiilen kozmetikti. Ölçüm: 167 dosyada `transition-all`,
+   16 dosyada `active:scale`, ayrıca flashcard'ın 3B kart çevirmesi ve
+   quiz/vaka sonuç kartlarının `fadeIn` animasyonu var. Vestibüler
+   duyarlılığı olan bir kullanıcı bunların hepsini tam şiddetle alıyordu.
+
+   Süre sıfırlanmıyor, 0.01ms'e çekiliyor: `transitionend`/`animationend`
+   olayları yine tetiklensin. (Ölçüldü — şu an bu olayları dinleyen kod
+   YOK, ama süreyi sıfırlamak ileride sessizce kilitlenen bir akış
+   üretebilirdi.)
+
+   Durum değişimleri bozulmuyor: kart yine çevriliyor, sonuç kartı yine
+   beliriyor — sadece anında oluyorlar.
+   ───────────────────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  mark.ms-hl { transition: none; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────

@@ -278,7 +278,7 @@ export default async function BranchListPage({
                   href={`/tools/${tool.slug}`}
                   className="shrink-0 flex items-center gap-1.5 px-4 py-2 bg-white rounded-xl border border-slate-100 hover:border-yellow-400 hover:shadow-lg hover:-translate-y-0.5 transition-all group whitespace-nowrap"
                 >
-                  <span className="text-sm">{tool.icon}</span>
+                  <span aria-hidden="true" className="text-sm">{tool.icon}</span>
                   <span className="text-[11px] font-bold text-blue-950">{tool.name}</span>
                 </Link>
               ))}

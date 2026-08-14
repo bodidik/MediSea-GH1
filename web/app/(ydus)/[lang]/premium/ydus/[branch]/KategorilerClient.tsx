@@ -75,7 +75,7 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                 transition: 'background 0.15s',
               }}
             >
-              <span style={{ fontSize: '18px' }}>{kat.emoji ?? kat.ikon}</span>
+              <span aria-hidden="true" style={{ fontSize: '18px' }}>{kat.emoji ?? kat.ikon}</span>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a3a6b' }}>{kat.baslik}</div>
                 {kat.aciklama && (

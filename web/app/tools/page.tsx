@@ -306,7 +306,7 @@ function ToolsIcerik() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b-2 border-slate-100 pb-12">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-amber-500 text-sm animate-pulse">☀️</span>
+              <span aria-hidden="true" className="text-amber-500 text-sm animate-pulse">☀️</span>
               <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em]">MediSea Karar Destek</span>
             </div>
             <h1 className="text-4xl sm:text-6xl font-black text-blue-950 uppercase italic tracking-tighter leading-none">
@@ -318,7 +318,7 @@ function ToolsIcerik() {
           </div>
 
           <div className="relative w-full md:w-96">
-            <span className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
+            <span aria-hidden="true" className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
             <input 
               type="text"
               placeholder="Ara (Örn: GFR, Wells, Beslenme...)"
@@ -351,7 +351,7 @@ function ToolsIcerik() {
                   : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
               }`}
             >
-              <span>{cat.icon}</span>
+              <span aria-hidden="true">{cat.icon}</span>
               {cat.category}
               <span className="opacity-60">{cat.items.length}</span>
             </Link>
@@ -361,7 +361,7 @@ function ToolsIcerik() {
         {/* SONUÇ YOK */}
         {filteredData.length === 0 && (
           <div className="text-center py-16 border-2 border-dashed border-slate-200 rounded-[2rem]">
-            <div className="text-4xl mb-3">🔍</div>
+            <div aria-hidden="true" className="text-4xl mb-3">🔍</div>
             <p className="text-sm font-bold text-slate-500">
               &quot;{searchTerm}&quot; için sonuç yok.
             </p>
@@ -380,7 +380,7 @@ function ToolsIcerik() {
           {filteredData.map((cat, idx) => (
             <div key={idx} className="space-y-5">
               <div className="flex items-center gap-3 pl-2">
-                <div className="w-9 h-9 rounded-2xl bg-blue-900/5 flex items-center justify-center border border-blue-900/10 shadow-sm text-xl">
+                <div aria-hidden="true" className="w-9 h-9 rounded-2xl bg-blue-900/5 flex items-center justify-center border border-blue-900/10 shadow-sm text-xl">
                    {cat.icon}
                 </div>
                 <h2 className="text-xs font-black text-blue-900 uppercase tracking-[0.25em]">{cat.category}</h2>
@@ -417,7 +417,7 @@ function ToolsIcerik() {
         {/* ALT PANEL */}
         <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 shadow-inner space-y-6 mt-16 text-center">
           <div className="flex items-start gap-4 justify-center opacity-60 max-w-2xl mx-auto">
-            <span className="text-amber-500 text-xl">⚠️</span>
+            <span aria-hidden="true" className="text-amber-500 text-xl">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
               MediSea araçları sağlık profesyonelleri için karar destek amaçlıdır. Klinik değerlendirmenin yerini alamaz. Veriler tıbbi sorumluluk içermez.
             </p>

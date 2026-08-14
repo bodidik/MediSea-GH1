@@ -94,7 +94,7 @@ export default function StudyCoverage() {
                 href={`/topics/${r.slug}`}
                 className="group flex items-center gap-2.5 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-slate-50"
               >
-                <span className="w-5 shrink-0 text-center text-sm">{r.ikon}</span>
+                <span aria-hidden="true" className="w-5 shrink-0 text-center text-sm">{r.ikon}</span>
                 <span className="w-28 shrink-0 truncate text-[11px] font-black uppercase tracking-tight text-blue-950 group-hover:text-blue-600 sm:w-36">
                   {r.ad}
                 </span>

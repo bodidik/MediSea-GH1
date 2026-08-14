@@ -130,7 +130,7 @@ export default async function Home() {
                 { icon: "📚", label: "Konular", sub: "Branşa göre", href: "#branslar" },
               ].map((f) => (
                 <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
-                  <span className="text-lg mb-1">{f.icon}</span>
+                  <span aria-hidden="true" className="text-lg mb-1">{f.icon}</span>
                   <span className="text-[10px] font-black text-white uppercase tracking-tight">{f.label}</span>
                   <span className="text-[9px] text-blue-300/60 mt-0.5">{f.sub}</span>
                 </Link>
@@ -160,7 +160,7 @@ export default async function Home() {
               {FEATURED_TOOLS.slice(0, 4).map((tool) => (
                 <Link key={tool.slug} href={`/tools/${tool.slug}`}
                   className="shrink-0 flex items-center gap-1 px-2.5 py-1 bg-white rounded-lg border border-slate-100 hover:border-blue-300 hover:bg-blue-50 transition-all text-[10px] font-bold text-blue-950 whitespace-nowrap">
-                  <span className="text-xs">{tool.icon}</span>{tool.name}
+                  <span aria-hidden="true" className="text-xs">{tool.icon}</span>{tool.name}
                 </Link>
               ))}
               <Link href="/tools" className="shrink-0 text-[10px] font-black text-blue-600 px-1.5 hover:underline uppercase tracking-tighter whitespace-nowrap">
@@ -194,7 +194,7 @@ export default async function Home() {
                           className={`group flex items-center gap-2 p-2.5 bg-white rounded-xl border shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] ${item.color}`}
                           style={{ borderColor: '#e8eaf0' }}
                         >
-                          <div className={`w-8 h-8 lg:w-9 lg:h-9 rounded-xl flex items-center justify-center text-sm lg:text-base ${item.bg} shrink-0 group-hover:scale-110 transition-transform shadow-sm`}>
+                          <div aria-hidden="true" className={`w-8 h-8 lg:w-9 lg:h-9 rounded-xl flex items-center justify-center text-sm lg:text-base ${item.bg} shrink-0 group-hover:scale-110 transition-transform shadow-sm`}>
                             {item.icon}
                           </div>
                           <div className="min-w-0 flex-1">
@@ -225,7 +225,7 @@ export default async function Home() {
             {FEATURED_TOOLS.map((tool) => (
               <Link key={tool.slug} href={`/tools/${tool.slug}`}
                 className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 rounded-xl border border-slate-100 hover:border-blue-300 hover:bg-blue-50 transition-all whitespace-nowrap">
-                <span className="text-sm">{tool.icon}</span>
+                <span aria-hidden="true" className="text-sm">{tool.icon}</span>
                 <span className="text-[11px] font-bold text-blue-950">{tool.name}</span>
               </Link>
             ))}

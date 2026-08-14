@@ -235,7 +235,7 @@ export default function SiteHeader() {
                   href={`/tools?kategori=${k.slug}`}
                   className="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 rounded-xl transition-colors group/item"
                 >
-                  <span className="text-lg">{k.icon}</span>
+                  <span aria-hidden="true" className="text-lg">{k.icon}</span>
                   <span className="text-sm font-bold text-slate-700 group-hover/item:text-blue-700">{k.ad}</span>
                 </Link>
               ))}
