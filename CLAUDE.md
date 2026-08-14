@@ -354,6 +354,19 @@ güven verir.
   arasındaydı (eşik 4.5). Bir basamak koyulaştırıldı. **Bu müdahale bir
   yerde geri TEPTİ ve o ders aşağıda.**
 
+**`dark:` varyantları ETKİSİZ — ve öyle kalmalı.** `tailwind.config.js`
+içinde `darkMode: "class"` var ama kök ögeye `.dark` koyan kimse yok; amaç
+koyu tema açmak değil, varyantları susturmak. Uygulamada koyu tema hiç yok
+(ölçüldü: `app/` altında `dark:` kullanan dosya sayısı sıfır), ama konu
+içeriklerinin 17'si 397 `dark:` sınıfı taşıyor. Varsayılan `media` kipinde
+bunlar işletim sistemi koyu kipteyse devreye giriyor ve baştan sona açık
+bir arayüzün içinde koyu tablo satırları üretiyordu — yazı rengi uyum
+sağlamadığı için kontrast 1.37'ye düşüyordu.
+
+**Bu kusur yalnızca koyu kipte görünüyor.** Erişilebilirlik taraması
+yaparken tarayıcıyı bir kez koyu kipe alıp tekrarla; aksi hâlde içerikteki
+`dark:` sınıfları hiç ölçülmez.
+
 **Kontrast ölçerken iki tuzak — ikisi de yaşandı:**
 
 - **Degradeyi göremeyen ölçüm.** Zemin yalnızca `backgroundColor` okunarak
