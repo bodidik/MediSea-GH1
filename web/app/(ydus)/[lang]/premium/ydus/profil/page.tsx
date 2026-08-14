@@ -36,13 +36,13 @@ export default function ProfileDashboard() {
   const { xp, completedModules, badges } = useUser();
 
   return (
-    <div className="min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
+    <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
       <div className="max-w-5xl mx-auto">
         
         {/* Üst Navigasyon */}
         <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-            <Link href="/tr/premium/ydus" className="hover:text-blue-400 transition-colors">⚓ Mavi Vatan Lobi</Link>
+            <Link href="/tr/premium/ydus" className="inline-block py-1.5 hover:text-blue-400 transition-colors">⚓ Mavi Vatan Lobi</Link>
             <span>/</span>
             <span className="text-slate-200">Kaptan Sicil Kaydı</span>
           </div>

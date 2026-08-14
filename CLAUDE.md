@@ -373,8 +373,21 @@ Doğrusu: genel koyulaştırma **açık zemin varsayar** ve kullanımların ezic
 tanıtım şeridi `text-blue-200` ile bunu yapıyor (10.34).
 
 `slate-300/400/500` **ezildiği için premium koyu yüzeylerde kullanılamaz.**
-Güvenli kademe `slate-200` ve üstü. Bu üç yüzeyde tek tek düzeltildi:
-inciler (13 kusur), soru çözüm kokpiti (6), konu sayfası tanıtım şeridi (1).
+Gerçek kapsam ölçüldü — tek nokta değil, altı yüzey: konu sayfası tanıtım
+şeridi (1 kusur), inciler (13), soru çözüm kokpiti (6), profil (12),
+liderlik (14), premium giriş (9).
+
+Çözüm iki katmanlı, çünkü iki farklı durum var:
+
+- **Baştan sona koyu yüzeyler** kök ögelerine `koyu-yuzey` sınıfını koyar;
+  o ağaçta tonlar Tailwind'in özgün değerine döner (profil · liderlik ·
+  premium giriş · branş şablonu). Bu, geri alınan "koyu ata varsa muaf tut"
+  kuralının aksine tahmine dayanmıyor: yüzey kendini beyan ediyor ve sınıfı
+  eklerken ağaçta açık kart OLMADIĞI doğrulanıyor.
+- **İçinde açık kart taşıyan koyu yerleşimler** bu sınıfı ALMAZ. Premium
+  panosu böyle; sınıf verilseydi açık kartlardaki 21 yazı 2.56'ya düşerdi
+  (bir kez denendi, ölçüldü, geri alındı). Oradaki tek tek ögeler kendi
+  rengini verir.
 
 **Ölçüm kapı arkasını görmüyorsa "temiz" DEMEZ.** Bu gerilemenin kapsamı
 bir kez "tek nokta" diye raporlandı, çünkü ölçüm yalnızca herkese açık

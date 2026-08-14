@@ -341,6 +341,26 @@ mark.ms-hl-u {
   color: rgb(71 85 105);   /* slate-600 */
 }
 
+/* KOYU YÜZEY MUAFİYETİ — açık katılımlı.
+
+   Yukarıdaki koyulaştırma açık zemin varsayıyor. Baştan sona koyu olan bir
+   yüzey kök ögesine `koyu-yuzey` sınıfını KENDİ koyar ve o ağaçta tonlar
+   Tailwind'in özgün değerine döner.
+
+   Aşağıdaki (geri alınmış) denemeden farkı şu: orada zemin, ATAdan tahmin
+   ediliyordu ve içinde açık kart taşıyan koyu yerleşimlerde yanlış sonuç
+   veriyordu. Burada tahmin yok — yüzey kendini beyan ediyor. Sınıfı taşıyan
+   dört yüzeyin dördünde de açık zemin HİÇ yok (ölçüldü: bg-white / slate-50
+   / slate-100 sıfır kullanım). Premium panosu bu sınıfı ALMIYOR, çünkü koyu
+   yerleşiminin içinde açık kartlar taşıyor.
+
+   Bu sınıfı yeni bir yüzeye eklerken önce şunu doğrula: ağacın hiçbir
+   yerinde açık zeminli kart yok. Varsa sınıfı ekleme, o ögelere rengi
+   kendin ver. */
+.koyu-yuzey .text-slate-300 { color: rgb(203 213 225); }
+.koyu-yuzey .text-slate-400 { color: rgb(148 163 184); }
+.koyu-yuzey .text-slate-500 { color: rgb(148 163 184); }
+
 /* ⚠ "Koyu ata varsa muafiyet ver" DENENDİ, GERİ ALINDI — İÇ İÇELİK DELİYOR.
    `.bg-slate-950 .text-slate-400 { … }` gibi bir kural mantıklı görünüyor
    ama zemin ATAdan değil, en yakın DOLU zeminden gelir. Premium panosu

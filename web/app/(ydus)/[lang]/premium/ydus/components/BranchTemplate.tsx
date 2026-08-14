@@ -14,7 +14,7 @@ export default function BranchTemplate({ data }: { data: any }) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
+    <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
       <div className="max-w-5xl mx-auto">
         
         {/* Navigasyon */}

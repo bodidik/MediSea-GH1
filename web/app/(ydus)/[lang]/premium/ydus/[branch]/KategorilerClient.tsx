@@ -129,7 +129,7 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                       <span style={{
                         fontSize: '13px',
                         fontWeight: konu.hazir ? 500 : 400,
-                        color: konu.hazir ? '#1a2a3a' : '#8a9aaa',
+                        color: konu.hazir ? '#1a2a3a' : '#5a6a8a',
                       }}>
                         {konu.baslik}
                       </span>
