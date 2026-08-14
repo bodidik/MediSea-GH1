@@ -417,10 +417,15 @@ tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
 
 ### Route grubu dışındaki sayfalar AppShell almaz
 
-`app/tools/*` ve `app/kayseritip/*` `(site)` grubunun DIŞINDA. AppShell'in
+`app/tools/*`, `app/kayseritip/*` ve ayrıca **`app/giris`, `app/kayit`,
+`app/profile`** `(site)` grubunun DIŞINDA. AppShell'in
 verdiği hiçbir şeyi almıyorlar: üst menü, alt bilgi, `<main id="icerik">` ve
 atlama bağlantısı. Ölçüldü — 115 araç sayfasında `main`/`nav`/`header`/
 `footer` sayısı **sıfırdı**.
+
+**Kök dizindeki `giris`/`kayit`/`profile` de aynı boşluktaydı** ve ölçümde
+üçünde de `main` sayısı sıfırdı; düzenleri artık `<main>` sarıyor. Üst menü
+ve alt bilgi bilerek verilmiyor (odaklanmış yüzeyler), landmark ise şart.
 
 Bu gruplara yeni sayfa eklerken landmark'ları kendin sağla. Araç tarafında
 çözüm iki yerde: `app/tools/layout.tsx` `<main>` sarıyor, `ToolTopNav`
