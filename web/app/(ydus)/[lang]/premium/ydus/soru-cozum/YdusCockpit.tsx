@@ -128,7 +128,12 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                   `}>
                     {opt.id}
                   </span>
-                  <span className="font-medium text-[15px]">{opt.text}</span>
+                  {/* Baştaki boşluk bilerek: harf rozeti satır içi bir <span>,
+                      erişilebilir ad hesabı satır içi ögeler arasına boşluk
+                      KOYMUYOR ve düğme "AAmpirik Pulse Steroid…" diye
+                      okunuyordu. Vaka ve quiz motorlarında harf bir <div>
+                      olduğu için orada sorun yok. */}
+                  <span className="font-medium text-[15px]">{' '}{opt.text}</span>
                 </div>
                 
                 {showResult && opt.id === currentStage.correctAnswer && <span className="absolute right-2.5 top-2.5 text-green-500 text-base">✓</span>}
@@ -197,6 +202,17 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
         <div className={`p-3 rounded-lg shadow-2xl text-white shrink-0 transition-colors duration-300 border-b-2
           ${!showResult ? 'bg-slate-900 border-slate-700' : isCorrect ? 'bg-green-900 border-green-500 shadow-[0_0_15px_rgba(16,185,129,0.3)]' : 'bg-red-900 border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)]'}
         `}>
+          {/* Sonuç duyurusu — "DOĞRU YAKLAŞIM ✓" yalnızca GÖZLE görülüyordu;
+              vaka ve quiz motorlarında bu bölge var, kokpitte yoktu.
+              Koşulsuz basılıyor: role="status" sonradan EKLENEN düğümü
+              duyurmaz, içeriği DEĞİŞEN düğümü duyurur. */}
+          <div role="status" className="sr-only">
+            {showResult
+              ? isCorrect
+                ? 'Doğru yaklaşım.'
+                : `Hatalı yaklaşım. Doğru cevap ${currentStage.correctAnswer}.`
+              : ''}
+          </div>
           <h4 className="text-[9px] font-black uppercase opacity-60 tracking-widest">Karar Analizi</h4>
           <div className={`text-base font-black leading-tight mt-0.5 ${!showResult ? 'text-slate-200' : isCorrect ? 'text-green-300' : 'text-red-300'}`}>
             {!showResult ? 'BEKLENİYOR...' : isCorrect ? 'DOĞRU YAKLAŞIM ✓' : 'HATALI YAKLAŞIM ⚠️'}
