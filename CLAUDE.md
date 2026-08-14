@@ -345,6 +345,32 @@ Yeni yüzey eklerken: dokunma hedefi en az 24px (tercihen 44), ikincil
 metin `slate-600`'den açık olmasın, tıklanabilir görünen her şey gerçekten
 tıklanabilir olsun (sahte `cursor-pointer` taşıyan iki ikon kaldırıldı).
 
+### Route grubu dışındaki sayfalar AppShell almaz
+
+`app/tools/*` ve `app/kayseritip/*` `(site)` grubunun DIŞINDA. AppShell'in
+verdiği hiçbir şeyi almıyorlar: üst menü, alt bilgi, `<main id="icerik">` ve
+atlama bağlantısı. Ölçüldü — 115 araç sayfasında `main`/`nav`/`header`/
+`footer` sayısı **sıfırdı**.
+
+Bu gruplara yeni sayfa eklerken landmark'ları kendin sağla. Araç tarafında
+çözüm iki yerde: `app/tools/layout.tsx` `<main>` sarıyor, `ToolTopNav`
+`<nav aria-label>` basıyor ve **atlama bağlantısıyla hedefini kendi içinde**
+taşıyor.
+
+Atlama bağlantısı neden düzen dosyasında DEĞİL: gezinme çubuğu sayfaların
+içinde render ediliyor, bağlantı düzene konsaydı hedef gezinmenin önüne
+düşer ve atlama hiçbir işe yaramazdı. Hedef `<span tabIndex={-1}>` olmalı;
+odaklanabilir olmayan bir öğeye atlandığında tarayıcı görünümü kaydırır ama
+**odağı taşımaz**, sonraki Tab yine gezinmenin başına döner.
+
+Doğrularken gerçek Tab/Enter tuşuna bas — `element.focus()` bu oturumda bir
+kez "odak halkası yok" diye yanlış sonuç verdirdi.
+
+**Sayfa kök ögesi `<main>` OLMAMALI.** AppShell ve `(ydus)/layout.tsx` zaten
+basıyor; sayfa da basınca belgede iki `main` landmark'ı oluşuyor (geçersiz,
+ekran okuyucu hangisinin ana içerik olduğunu bilemiyor). Ana sayfa ve premium
+pano bir dönem böyleydi.
+
 **Satır içi stil bu tabanların HİÇBİRİNE uymaz.** Yukarıdaki üç kural
 `globals.css` içinde ve Tailwind sınıflarına bakıyor; premium motorlar
 (`QuizEngine`, `VakaEngine`, `FlashcardPlayer`) ise renk ve boyutu
