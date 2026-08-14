@@ -161,7 +161,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
             border: '0.5px solid #b8cfe8', borderRadius: '16px',
             background: '#f5f9ff', padding: '2rem', textAlign: 'center',
           }}>
-            <div style={{ fontSize: '11px', color: '#6a8aaa', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+            <div style={{ fontSize: '11px', color: '#4a6a8a', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               {topic} · set bitti
             </div>
             <div style={{ fontSize: '44px', fontWeight: 700, color: renk, margin: '0.5rem 0' }}>
@@ -196,7 +196,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
             </button>
             <a href={backHref} style={{
               padding: '12px', borderRadius: '10px', border: '0.5px solid #d0e4f5',
-              background: '#fff', color: '#6a8aaa', fontWeight: 500, fontSize: '13px',
+              background: '#fff', color: '#4a6a8a', fontWeight: 500, fontSize: '13px',
               textDecoration: 'none', textAlign: 'center',
             }}>
               ← Konuya dön
@@ -214,7 +214,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
         alignItems: 'center', justifyContent: 'center', gap: '1rem',
         fontFamily: 'system-ui, -apple-system, sans-serif',
       }}>
-        <p style={{ color: '#6a8aaa', fontSize: '14px' }}>Bu sette henüz kart yok.</p>
+        <p style={{ color: '#4a6a8a', fontSize: '14px' }}>Bu sette henüz kart yok.</p>
         <a href={backHref} style={{
           fontSize: '12px', fontWeight: 500, color: '#1a3a6b',
           border: '0.5px solid #b8cfe8', borderRadius: '8px', padding: '7px 14px',
@@ -276,14 +276,14 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
           }}>
             ← Konuya dön
           </a>
-          <span style={{ fontSize: '12px', color: '#6a8aaa' }}>
+          <span style={{ fontSize: '12px', color: '#4a6a8a' }}>
             {topic}
           </span>
         </div>
 
         {/* İLERLEME */}
         <div style={{ marginBottom: '1.25rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#6a8aaa', marginBottom: '6px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#4a6a8a', marginBottom: '6px' }}>
             <span>{index + 1} / {total}</span>
             <span style={{ color: '#1a6640' }}>{bilinenSayi} biliniyor · %{ilerleme}</span>
           </div>
@@ -349,7 +349,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
                 }}>
                   {card.tag}
                 </span>
-                <span style={{ fontSize: '11px', color: '#8aaacc' }}>Soruyu oku</span>
+                <span style={{ fontSize: '11px', color: '#4a6a8a' }}>Soruyu oku</span>
               </div>
 
               <p style={{
@@ -366,7 +366,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
               <div style={{
                 textAlign: 'center',
                 fontSize: '12px',
-                color: '#8aaacc',
+                color: '#4a6a8a',
                 borderTop: '0.5px solid #d0e4f5',
                 paddingTop: '0.75rem',
               }}>
@@ -421,7 +421,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
                 {renderMath(card.back)}
               </p>
 
-              <div style={{ textAlign: 'center', fontSize: '11px', color: '#4a8a5a' }}>
+              <div style={{ textAlign: 'center', fontSize: '11px', color: '#2a7a4a' }}>
                 {cardBilinen ? '✓ Bu kartı biliniyor olarak işaretledin' : 'Biliyorsan işaretle, devam et'}
               </div>
             </div>
@@ -484,7 +484,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
         </div>
 
         {/* KLAVYE İPUCU */}
-        <div style={{ textAlign: 'center', fontSize: '11px', color: '#aac0d8', marginTop: '0.75rem' }}>
+        <div style={{ textAlign: 'center', fontSize: '11px', color: '#4a6a8a', marginTop: '0.75rem' }}>
           <kbd style={{ padding: '1px 5px', background: '#f0f4f8', borderRadius: '3px' }}>←</kbd>
           {' '}önceki · {' '}
           <kbd style={{ padding: '1px 5px', background: '#f0f4f8', borderRadius: '3px' }}>Space</kbd>

@@ -109,7 +109,7 @@ export default async function VakaCozPage(props: {
 
           {/* Vaka kartları */}
           {vakalar.length === 0 ? (
-            <p style={{ color: '#6a8aaa', fontSize: '13px', textAlign: 'center' }}>Bu konu için henüz vaka eklenmemiş.</p>
+            <p style={{ color: '#4a6a8a', fontSize: '13px', textAlign: 'center' }}>Bu konu için henüz vaka eklenmemiş.</p>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {vakalar.map((v: any, i: number) => {
@@ -155,7 +155,7 @@ export default async function VakaCozPage(props: {
                           {v.sure_dk && (
                             <span style={{
                               fontSize: '10px', fontWeight: 500, padding: '2px 7px', borderRadius: '4px',
-                              background: '#f5f9ff', color: '#6a8aaa', border: '0.5px solid #d0e4f5',
+                              background: '#f5f9ff', color: '#4a6a8a', border: '0.5px solid #d0e4f5',
                             }}>
                               ~{v.sure_dk} dk
                             </span>
@@ -190,7 +190,7 @@ export default async function VakaCozPage(props: {
       <div style={S}>
         <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
         <h2 style={{ color: '#1a3a6b', fontSize: '18px' }}>Parametre eksik</h2>
-        <p style={{ color: '#6a8aaa', fontSize: '13px' }}>id veya topic zorunludur.</p>
+        <p style={{ color: '#4a6a8a', fontSize: '13px' }}>id veya topic zorunludur.</p>
       </div>
     );
   }
@@ -202,7 +202,7 @@ export default async function VakaCozPage(props: {
       <div style={S}>
         <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
         <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Vaka bulunamadı</h2>
-        <p style={{ color: '#6a8aaa', fontSize: '13px', marginBottom: '1.5rem' }}>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem' }}>
           <code style={{ background: '#f0f4f8', padding: '2px 6px', borderRadius: '4px' }}>
             {branch}/{id}.json
           </code>{' '}mevcut değil.

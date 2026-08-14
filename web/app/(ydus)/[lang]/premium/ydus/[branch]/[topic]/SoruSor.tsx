@@ -61,7 +61,7 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
           Bu konuya soru sor
         </h3>
       </div>
-      <p style={{ fontSize: '12px', color: '#6a8aaa', margin: '0 0 0.75rem' }}>
+      <p style={{ fontSize: '12px', color: '#4a6a8a', margin: '0 0 0.75rem' }}>
         Yapay zekâ yalnızca <strong>“{baslik}”</strong> konusunun içeriğine dayanarak yanıt verir.
       </p>
 

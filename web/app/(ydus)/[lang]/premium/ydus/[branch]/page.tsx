@@ -80,7 +80,7 @@ export default async function BransSayfasi({
         <h1 style={{ fontSize: '22px', fontWeight: 600, color: '#1a3a6b', marginBottom: '0.5rem' }}>
           Branş bulunamadı
         </h1>
-        <p style={{ color: '#6a8aaa', marginBottom: '1.5rem', fontSize: '14px' }}>
+        <p style={{ color: '#4a6a8a', marginBottom: '1.5rem', fontSize: '14px' }}>
           <strong>{branch}</strong> için henüz içerik hazırlanmadı.
         </p>
         <Link href={`/${lang}/premium/ydus`} style={{
@@ -119,7 +119,7 @@ export default async function BransSayfasi({
           gap: '6px',
           fontSize: '12px',
           marginBottom: '1.5rem',
-          color: '#6a8aaa',
+          color: '#4a6a8a',
         }}>
           <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500 }}>
             Ana sayfa
@@ -164,7 +164,7 @@ export default async function BransSayfasi({
           </div>
           <div style={{ textAlign: 'right', flexShrink: 0 }}>
             <div style={{ fontSize: '20px', fontWeight: 600, color: veri.meta.renk }}>{hazirKonu}</div>
-            <div style={{ fontSize: '11px', color: '#6a8aaa' }}>{toplamKonu} konudan</div>
+            <div style={{ fontSize: '11px', color: '#4a6a8a' }}>{toplamKonu} konudan</div>
           </div>
         </div>
 

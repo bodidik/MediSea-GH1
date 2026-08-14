@@ -45,7 +45,7 @@ export default function ErisimYonetimiPage() {
 
         <div style={{ marginBottom: '1.5rem' }}>
           <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a3a6b', margin: 0 }}>Erişim Yönetimi</h1>
-          <p style={{ fontSize: '13px', color: '#6a8aaa', marginTop: '4px' }}>
+          <p style={{ fontSize: '13px', color: '#4a6a8a', marginTop: '4px' }}>
             Her topic için erişim seviyesini belirle. Değişiklik anında geçerli olur.
           </p>
         </div>
@@ -60,11 +60,11 @@ export default function ErisimYonetimiPage() {
         </div>
 
         {yukleniyor ? (
-          <p style={{ color: '#6a8aaa', fontSize: '14px' }}>Yükleniyor…</p>
+          <p style={{ color: '#4a6a8a', fontSize: '14px' }}>Yükleniyor…</p>
         ) : (
           branches.map(branch => (
             <div key={branch} style={{ marginBottom: '1.25rem' }}>
-              <div style={{ fontSize: '11px', fontWeight: 700, color: '#6a8aaa', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '6px' }}>
+              <div style={{ fontSize: '11px', fontWeight: 700, color: '#4a6a8a', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '6px' }}>
                 {branch}
               </div>
               <div style={{ border: '0.5px solid #d0e4f5', borderRadius: '12px', overflow: 'hidden', background: '#fff' }}>

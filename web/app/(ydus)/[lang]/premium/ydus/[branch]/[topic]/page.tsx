@@ -326,7 +326,7 @@ export default async function KonuSayfasi({
           gap: '6px',
           fontSize: '12px',
           marginBottom: '1.5rem',
-          color: '#6a8aaa',
+          color: '#4a6a8a',
         }}>
           <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500 }}>
             Ana sayfa
@@ -489,7 +489,7 @@ export default async function KonuSayfasi({
                       {bilgi.etiket}
                     </span>
                     {!aktif && (
-                      <span style={{ fontSize: '10px', color: '#8aaacc' }}>Yakında</span>
+                      <span style={{ fontSize: '10px', color: '#4a6a8a' }}>Yakında</span>
                     )}
                   </Link>
                 );
@@ -582,7 +582,7 @@ export default async function KonuSayfasi({
 
             {/* GÜNCELLEME */}
             {veri.meta.guncelleme && (
-              <div style={{ fontSize: '11px', color: '#8aaacc', textAlign: 'center' }}>
+              <div style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center' }}>
                 Güncelleme: {veri.meta.guncelleme}
               </div>
             )}

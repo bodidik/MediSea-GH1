@@ -79,16 +79,16 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a3a6b' }}>{kat.baslik}</div>
                 {kat.aciklama && (
-                  <div style={{ fontSize: '11px', color: '#6a8aaa' }}>{kat.aciklama}</div>
+                  <div style={{ fontSize: '11px', color: '#4a6a8a' }}>{kat.aciklama}</div>
                 )}
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-                <span style={{ fontSize: '11px', color: '#6a8aaa' }}>
+                <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
                   {hazirSayisi}/{kat.konular.length} konu
                 </span>
                 <span style={{
                   fontSize: '14px',
-                  color: '#6a8aaa',
+                  color: '#4a6a8a',
                   transform: acikMi ? 'rotate(180deg)' : 'rotate(0deg)',
                   transition: 'transform 0.2s',
                   display: 'inline-block',

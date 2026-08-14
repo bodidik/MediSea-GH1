@@ -40,7 +40,7 @@ export default async function QuizCozPage(props: {
       <div style={S}>
         <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
         <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Parametre eksik</h2>
-        <p style={{ color: '#6a8aaa', fontSize: '13px' }}>branch ve id zorunludur.</p>
+        <p style={{ color: '#4a6a8a', fontSize: '13px' }}>branch ve id zorunludur.</p>
       </div>
     );
   }
@@ -57,7 +57,7 @@ export default async function QuizCozPage(props: {
       <div style={S}>
         <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
         <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Quiz bulunamadı</h2>
-        <p style={{ color: '#6a8aaa', fontSize: '13px', marginBottom: '1.5rem' }}>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem' }}>
           <code style={{ background: '#f0f4f8', padding: '2px 6px', borderRadius: '4px' }}>{branch}/{id}.json</code> mevcut değil.
         </p>
         <Link href={`/${lang}/premium/ydus/${branch}`} style={{

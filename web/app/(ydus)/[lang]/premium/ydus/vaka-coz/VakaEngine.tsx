@@ -281,7 +281,7 @@ function AdimKarti({
       )}
 
       {!cevapVerildi && (
-        <p style={{ fontSize: '11px', color: '#b0c8e0', textAlign: 'center', marginTop: '.4rem' }}>
+        <p style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center', marginTop: '.4rem' }}>
           Bir seçenek işaretleyin
         </p>
       )}
@@ -304,7 +304,7 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
 
   if (!adim) return (
     <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui, sans-serif' }}>
-      <p style={{ color: '#6a8aaa' }}>Vaka adımı bulunamadı.</p>
+      <p style={{ color: '#4a6a8a' }}>Vaka adımı bulunamadı.</p>
     </div>
   );
 
@@ -340,7 +340,7 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
               {veri.sure_dk && (
                 <span style={{
                   fontSize: '10px', fontWeight: 600, padding: '2px 7px', borderRadius: '4px',
-                  background: '#f5f9ff', color: '#6a8aaa', border: '0.5px solid #d0e4f5',
+                  background: '#f5f9ff', color: '#4a6a8a', border: '0.5px solid #d0e4f5',
                 }}>
                   ~{veri.sure_dk} dk
                 </span>
@@ -362,7 +362,7 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
             <span style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b' }}>
               Adım {adimIndex + 1} / {toplamAdim} — {adim.baslik}
             </span>
-            <span style={{ fontSize: '11px', color: '#8aaacc' }}>
+            <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
               {Math.round(((adimIndex + 1) / toplamAdim) * 100)}%
             </span>
           </div>

@@ -154,7 +154,7 @@ function SoruKarti({
                 <span style={{ color: '#a01f1f' }}>{skor.yanlis}✗</span>
               </span>
             )}
-            <span style={{ fontSize: '12px', color: '#8aaacc', fontWeight: 600 }}>
+            <span style={{ fontSize: '12px', color: '#4a6a8a', fontWeight: 600 }}>
               {soruNo} / {toplamSoru}
             </span>
           </div>
@@ -287,7 +287,7 @@ function SoruKarti({
               )}
 
               {soru.kaynak && (
-                <div style={{ marginTop: '.85rem', fontSize: '11px', color: '#8aaacc', borderTop: '0.5px solid #e8f0f8', paddingTop: '.65rem' }}>
+                <div style={{ marginTop: '.85rem', fontSize: '11px', color: '#4a6a8a', borderTop: '0.5px solid #e8f0f8', paddingTop: '.65rem' }}>
                   Kaynak: {soru.kaynak}
                 </div>
               )}
@@ -317,7 +317,7 @@ function SoruKarti({
         )}
 
         {!cevapVerildi && (
-          <p style={{ fontSize: '11px', color: '#b0c8e0', textAlign: 'center', marginTop: '.5rem' }}>
+          <p style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center', marginTop: '.5rem' }}>
             Bir seçenek işaretleyin
           </p>
         )}
@@ -468,7 +468,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontFamily: 'system-ui, sans-serif',
       }}>
-        <p style={{ color: '#6a8aaa' }}>Bu quizde henüz soru yok.</p>
+        <p style={{ color: '#4a6a8a' }}>Bu quizde henüz soru yok.</p>
       </div>
     );
   }
