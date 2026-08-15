@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
+import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
@@ -170,16 +171,29 @@ export default async function TopicDetailPage({
     console.error(`[konu] ${slug}/${topicSlug}.json ayrıştırılamadı:`, okumaHatasi);
   }
 
+  /**
+   * Kısaltmalar ilk kullanımda açılımıyla veriliyor (app/lib/kisaltma.ts).
+   *
+   * Küme burada kuruluyor ve ÖZETTEN başlayıp bölümlere taşınıyor, çünkü
+   * "ilk kullanım" okuma sırasına göre olmalı: sayfada özet bölümlerin
+   * ÜSTÜNDE basılıyor. Küme bölüm başına kurulsaydı aynı açılım her blokta
+   * tekrar çıkardı.
+   *
+   * Başlık (`title`) bilerek DIŞARIDA: sayfa başlığını yeniden yazmak
+   * künyeyi, sekme adını ve paylaşım kartını da değiştirirdi.
+   */
+  const gorulenKisaltmalar = new Set<string>();
+
   const topicItem = {
     slug: topicSlug,
     branch: slug,
     title: rawData.title || topicSlug.replace(/-/g, " "),
-    summary: rawData.summary || rawData.meta?.summary || "",
+    summary: kisaltmaAc(rawData.summary || rawData.meta?.summary || "", gorulenKisaltmalar),
     parent: rawData.meta?.parent || null,
     sections: Array.isArray(rawData.sections)
       ? rawData.sections.map((s: any) => ({
           heading: s.heading || s.title || "Başlıksız Blok",
-          html: s.text || s.html || "",
+          html: kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar),
           visibility: s.visibility || "V"
         }))
       : []
