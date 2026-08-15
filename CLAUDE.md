@@ -440,11 +440,22 @@ sunucuda **hiç üretmiyor**, sunulan HTML yalnızca `fallback` oluyor.
 tarama dalgasında hiç yoktu. Çare: sorgu parametresini SUNUCUDA okuyup
 prop olarak vermek (`page.tsx` sunucu kabuk + istemci içerik).
 
-**Ama bunun bedeli var ve ölçülmeli:** sunucu bileşeni `searchParams`
-okuyunca rota dinamikleşiyor (`ƒ`) ve CDN'de her istek `MISS` oluyor.
-`/tools` şu an bu durumda; hem SSR hem önbellek isteyen doğru yapı,
-Suspense `fallback`'ine SÜZÜLMEMİŞ tam listeyi koymak (bailout'ta
-prerender edilen şey fallback'tir).
+**Ama sorguyu SUNUCUDA okumanın da bedeli var:** `searchParams` okuyan bir
+sunucu bileşeni rotayı dinamikleştiriyor (`ƒ`) ve CDN'de her istek `MISS`
+oluyor. `/tools` bir tur bu durumda kaldı — üst üste üç istek MISS, kıyas
+`/topics` PRERENDER — ve 155 KB'lık sayfa her istekte yeniden üretildi.
+
+Şu anki çözüm ikisini birden sağlıyor: sayfa sorguyu HİÇ okumuyor (statik
+prerender, sunucu HTML'i süzülmemiş tam listeyi taşıyor) ve kategori
+süzgeci hidrasyondan sonra istemcide uygulanıyor. `useSearchParams()`
+BİLEREK kullanılmıyor — o, ilk kusuru geri getirir. Kategori iki yoldan
+geliyor ve ikisi de karşılanmalı: başka sayfadan gelindiğinde bileşen
+kurulur (adres bir kez `useEffect` ile okunur), sayfadaki rozete
+tıklandığında bileşen kurulu kalır ve effect tekrar çalışmaz — o yüzden
+rozetler durumu kendileri günceller.
+
+Doğrulandı (canlı): `/tools` `○` statik, üç istekte de `HIT`, aynı yanıtta
+`<h1>` 1, `<h2>` 17, araç bağlantısı 117.
 
 Bir sayfanın gerçekten sunucuda basıldığını **ham HTML'de `<h1>` ve
 `<a>` sayarak** doğrula; tarayıcıdaki DOM hidrasyondan sonrasını gösterir
