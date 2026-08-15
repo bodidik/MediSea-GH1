@@ -1,20 +1,52 @@
 // "C:\Users\hucig\Medknowledge\web\app\(ydus)\[lang]\premium\ydus\profil\page.tsx"
 'use client';
 import Link from 'next/link';
+import { useEffect, useMemo, useState } from 'react';
+import { useSession } from 'next-auth/react';
 import { useUser } from '@/app/(ydus)/context/UserContext';
+import { branchSlugOf, collectAll } from '@/app/lib/study-index';
+import { SPECIALTIES } from '@/app/lib/specialties';
+import { localStats } from '@/app/lib/study-stats';
 
-// --- SABİT KULLANICI BİLGİLERİ (ZIRH: Tailwind renkleri tam string olarak eklendi) ---
-const STATIC_USER_DATA = {
-  name: "Dr. Kaptan",
-  title: "Kıdemli Asistan",
-  streak: 12, 
-  branches: [
-    { name: "Hematoloji", colorText: "text-rose-400", colorBg: "bg-rose-500", progress: 85, icon: "🩸" },
-    { name: "Nefroloji", colorText: "text-emerald-400", colorBg: "bg-emerald-500", progress: 40, icon: "🫘" },
-    { name: "Gastroenteroloji", colorText: "text-orange-400", colorBg: "bg-orange-500", progress: 60, icon: "🩺" },
-    { name: "Endokrinoloji", colorText: "text-purple-400", colorBg: "bg-purple-500", progress: 25, icon: "🦋" },
-  ]
-};
+/**
+ * Bu sayfa bir dönem `STATIC_USER_DATA` diye bir sabitten besleniyordu:
+ * ad "Dr. Kaptan", ünvan "Kıdemli Asistan", ateş serisi 12 gün ve dört branş
+ * için %85 / %40 / %60 / %25 ilerleme. Hiçbiri ölçülmüş değildi.
+ *
+ * En zararlısı branş çubuklarıydı. Sınava hazırlanan biri "Hematolojide
+ * %85'im, Endokrinde %25" diye program yapar; sayı uydurma olduğu için
+ * program da uydurma bir zemine oturur. Üstelik listedeki branşlar
+ * kütüphaneyle bile örtüşmüyordu — en çok simülasyonu olan Göğüs
+ * Hastalıkları listede yoktu, hiç vakası olmayan Gastroenteroloji vardı.
+ *
+ * Artık dört alan da ölçülen veriden geliyor:
+ *  - ad      → oturumdaki isim; yoksa markanın hitabı ("Kaptan")
+ *  - ünvan   → gerçek XP'den türeyen rütbe (liderlik tablosuyla aynı merdiven)
+ *  - seri    → çalışma günlüğünden (`localStats().streak`)
+ *  - branşlar→ dokunulan konu / toplam konu; Çalışma Alanım'daki kapsama
+ *              bölümünün TAM AYNI kaynağı, yoksa iki yüzey ayrışırdı.
+ */
+
+/** XP'den rütbe. Eşikler liderlik tablosundaki ünvanlarla aynı merdiveni izler. */
+function rutbe(xp: number): string {
+  if (xp >= 12000) return 'Büyük Amiral';
+  if (xp >= 10000) return 'Koramiral';
+  if (xp >= 8500) return 'Tümamiral';
+  if (xp >= 7000) return 'Tuğamiral';
+  if (xp >= 6000) return 'Kıdemli Albay';
+  if (xp >= 4500) return 'Yarbay';
+  return 'Gemi Kaptanı';
+}
+
+/** Çubuk renkleri sırayla dağıtılır — branş adına sabitlenmiş renk yok. */
+const CUBUK = [
+  { text: 'text-rose-400', bg: 'bg-rose-500' },
+  { text: 'text-emerald-400', bg: 'bg-emerald-500' },
+  { text: 'text-orange-400', bg: 'bg-orange-500' },
+  { text: 'text-purple-400', bg: 'bg-purple-500' },
+];
+
+type BransSatiri = { slug: string; ad: string; ikon: string; calisilan: number; toplam: number };
 
 // --- TÜM ROZETLERİN VERİTABANI (ZIRH: Tam string renk sınıfları eklendi) ---
 const ALL_BADGES = {
@@ -34,6 +66,55 @@ const ALL_BADGES = {
 
 export default function ProfileDashboard() {
   const { xp, completedModules, badges } = useUser();
+  const { data: session } = useSession();
+
+  // Depo yalnızca tarayıcıda okunur; sunucu render'ında sıfır kalır ve
+  // hidrasyondan sonra gerçek değere geçer.
+  const [seri, setSeri] = useState(0);
+  const [calisilan, setCalisilan] = useState<Record<string, number>>({});
+  const [toplamlar, setToplamlar] = useState<Record<string, number> | null>(null);
+
+  useEffect(() => {
+    setSeri(localStats().streak);
+
+    // Hangi branşta kaç AYRI konuya dokunulmuş — Çalışma Alanım'daki
+    // kapsama bölümüyle birebir aynı hesap.
+    const kume: Record<string, Set<string>> = {};
+    for (const e of collectAll()) {
+      const slug = branchSlugOf(e.path);
+      if (!slug) continue;
+      (kume[slug] ??= new Set()).add(e.path);
+    }
+    const sayim: Record<string, number> = {};
+    for (const [k, v] of Object.entries(kume)) sayim[k] = v.size;
+    setCalisilan(sayim);
+
+    let iptal = false;
+    fetch('/api/branch-counts')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!iptal && d?.counts) setToplamlar(d.counts);
+      })
+      // Sayımlar alınamazsa bölüm hiç gösterilmez; yanlış sayı göstermekten iyidir.
+      .catch(() => {});
+    return () => {
+      iptal = true;
+    };
+  }, []);
+
+  const branslar = useMemo<BransSatiri[]>(() => {
+    if (!toplamlar) return [];
+    return SPECIALTIES.map((s) => ({
+      slug: s.slug,
+      ad: s.title,
+      ikon: s.icon,
+      calisilan: calisilan[s.slug] ?? 0,
+      toplam: toplamlar[s.slug] ?? 0,
+    }))
+      .filter((r) => r.toplam > 0 && r.calisilan > 0)
+      .sort((a, b) => b.calisilan - a.calisilan)
+      .slice(0, 4);
+  }, [toplamlar, calisilan]);
 
   return (
     <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
@@ -71,8 +152,10 @@ export default function ProfileDashboard() {
           </div>
           
           <div className="text-center sm:text-left flex-1 relative z-10">
-            <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">{STATIC_USER_DATA.name}</h1>
-            <p className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-6">{STATIC_USER_DATA.title}</p>
+            <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">
+              {session?.user?.name?.trim() || 'Kaptan'}
+            </h1>
+            <p className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-6">{rutbe(xp)}</p>
             
             <div className="flex flex-wrap justify-center sm:justify-start gap-4">
               <div className="bg-black/40 px-4 py-3 rounded-2xl border border-white/5">
@@ -81,7 +164,7 @@ export default function ProfileDashboard() {
               </div>
               <div className="bg-black/40 px-4 py-3 rounded-2xl border border-white/5">
                 <span className="block text-slate-400 text-[10px] font-bold uppercase mb-1">Ateş Serisi</span>
-                <span className="text-2xl font-black text-orange-500">{STATIC_USER_DATA.streak} <span className="text-sm text-slate-500">GÜN 🔥</span></span>
+                <span className="text-2xl font-black text-orange-500">{seri} <span className="text-sm text-slate-500">GÜN 🔥</span></span>
               </div>
               <div className="bg-black/40 px-4 py-3 rounded-2xl border border-white/5">
                 <span className="block text-slate-400 text-[10px] font-bold uppercase mb-1">Bitirilen Modül</span>
@@ -100,25 +183,58 @@ export default function ProfileDashboard() {
             <h2 className="text-xl font-black text-white mb-6 flex items-center gap-2">
               <span className="text-2xl">📈</span> Branş Hakimiyeti
             </h2>
-            <div className="flex flex-col gap-6">
-              {STATIC_USER_DATA.branches.map((branch, idx) => (
-                <div key={idx}>
-                  <div className="flex justify-between items-end mb-2">
-                    <div className="flex items-center gap-2 font-bold text-slate-300">
-                      <span>{branch.icon}</span> {branch.name}
+            {branslar.length === 0 ? (
+              <div className="text-center py-6">
+                <span className="text-4xl block mb-3 opacity-50">🧭</span>
+                <p className="text-slate-400 text-sm font-medium mb-4">
+                  Henüz hiçbir konuda işaretin yok. Bir konuyu okuyup vurgulamaya
+                  başladığında hakimiyetin burada birikmeye başlar.
+                </p>
+                <Link
+                  href="/topics"
+                  className="inline-block rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-blue-500"
+                >
+                  Kütüphaneye git
+                </Link>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-6">
+                {branslar.map((b, idx) => {
+                  const oran = Math.round((b.calisilan / b.toplam) * 100);
+                  const renk = CUBUK[idx % CUBUK.length];
+                  return (
+                    <div key={b.slug}>
+                      <div className="flex justify-between items-end mb-2 gap-3">
+                        <div className="flex items-center gap-2 font-bold text-slate-300">
+                          <span aria-hidden="true">{b.ikon}</span> {b.ad}
+                        </div>
+                        {/* Sayı da yazılıyor: yalnız yüzde görmek "%17" ile
+                            "2/12"yi ayırt ettirmiyor, oysa plan yaparken
+                            fark eden şey ikincisi. */}
+                        <span className={`text-sm font-black shrink-0 ${renk.text}`}>
+                          {b.calisilan}/{b.toplam}
+                          <span className="text-slate-400 font-bold"> konu</span>
+                        </span>
+                      </div>
+                      <div className="w-full bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-700">
+                        <div
+                          className={`${renk.bg} h-full rounded-full transition-all duration-1000 ease-out`}
+                          style={{ width: `${Math.max(oran, 2)}%` }}
+                        ></div>
+                      </div>
                     </div>
-                    {/* ZIRH: Dinamik tailwind sorunu çözüldü */}
-                    <span className={`text-sm font-black ${branch.colorText}`}>%{branch.progress}</span>
-                  </div>
-                  <div className="w-full bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-700">
-                    <div 
-                      className={`${branch.colorBg} h-full rounded-full transition-all duration-1000 ease-out`}
-                      style={{ width: `${branch.progress}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  );
+                })}
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  İşaret bıraktığın konuların branş içindeki payı. Dokunmadığın
+                  branşların tamamını{' '}
+                  <Link href="/calisma-alanim" className="font-bold text-blue-400 hover:text-blue-300">
+                    Çalışma Alanım
+                  </Link>{' '}
+                  sayfasındaki kapsama bölümünde görebilirsin.
+                </p>
+              </div>
+            )}
           </div>
 
           {/* 3. ROZETLER VE BAŞARILAR */}
