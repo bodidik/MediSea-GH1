@@ -50,7 +50,18 @@ export default function LeadershipBoard() {
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4 uppercase tracking-tighter italic relative z-10">
             Donanma <span className="text-blue-500">Liderlik Tablosu</span>
           </h1>
-          <p className="text-slate-400 font-medium relative z-10">Mavi Vatan'ın en seçkin hekimleri. Simülasyonları çöz, XP kazan, amiralliğe yüksel.</p>
+          {/* Metin GERÇEĞİ söylüyor: listedeki isimler (Barbaros, Piri, Turgut…)
+              MOCK_LEADERS sabitinden geliyor, gerçek kullanıcı değil. Önceki
+              cümle "Mavi Vatan'ın en seçkin hekimleri" diyordu — yani kurgu
+              rakipleri gerçek hekim gibi sunuyordu ve kullanıcı kendini
+              onlarla kıyaslıyordu. Sınava hazırlanan biri için bu, uydurma
+              bir sosyal kıyas; projenin sahte veri göstermeme kuralı
+              arayüzde de geçerli. Sıralamanın kendisi (sahte rakipler
+              kalsın mı) ayrı bir ürün kararı ve verilmedi. */}
+          <p className="text-slate-400 font-medium relative z-10">
+            Örnek sıralama — aşağıdaki isimler tanıtım amaçlı, gerçek kullanıcı değil.
+            Simülasyonları çöz, XP kazan, amiralliğe yüksel.
+          </p>
         </div>
 
         {/* LİDERLİK LİSTESİ */}
