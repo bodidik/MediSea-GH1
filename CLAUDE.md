@@ -965,6 +965,39 @@ aralarında 8'er px. Kapsayıcı flex ise sonucu bir `<span>` içine al. Taramas
 tek satır: her `<strong>`'un ebeveyninin `display`'ine bak, `flex`/`grid`
 görürsen kusur.
 
+### Kısaltmalar ilk kullanımda açılır — sözlük ELLE seçilir
+
+`app/lib/kisaltma.ts`. İçerik dosyasına dokunulmaz; dönüşüm render
+tarafında, `metin.tsx` ile aynı karar.
+
+**Otomatik açılım denenmemeli.** Ölçüldü: 456 konuda ham tarama 2298
+"kısaltma gibi görünen" dizi buluyor — ürün adı (`YDUS`, 171 konu), Roma
+rakamı (`II`, `III`), büyük harfle yazılmış Türkçe kelimeler (`VEYA`) ve
+desenin kestiği gen adları (`TP53` → `TP5`). Sözlükte olmayan hiçbir şey
+açılmaz; "bilinen" kısaltmalar (EKG, LDL-c) listeye hiç girmez, ayrı bir
+atlama listesi gerekmez.
+
+Sözlüğe girdi eklerken ölçüt: **açılımı tartışmasız mı?** Bağlama göre
+değişenler (`CD`, `PD`, `CR`, `OS`), kurum adları (`KDIGO`, `ECOG`) ve
+ilaç/gen adları (`PCSK9`, `DDAVP`, `JAK2`) dışarıda — yanlış açılım
+kullanıcıya konuyu yanlış öğretir ve bu bir içerik kararıdır.
+
+Üç şey kolay kaçar:
+
+- **İlk kullanım SAYFA başına.** Küme özetten başlayıp bölümlere taşınır;
+  özet sayfada bölümlerin üstünde basılıyor. Küme yalnız bölümlerde
+  kurulduğunda açılım gövdenin ortasında kalıyordu (ölçüldü).
+- **Etiketlerin içine girilmez.** İçerik `dangerouslySetInnerHTML` ile
+  basıldığı için `<a href="...BT...">` ya da `title="BT"` içinde yapılan
+  değişiklik biçimi bozar. Metin `<...>` parçalarına bölünüp yalnızca
+  etiket dışı kısımlar işlenir.
+- **Uzun anahtar önce denenir.** `SGLT2` varken `SGLT` eşleşirse açılım
+  yanlış olur. Ayrıca kelime sınırı `\b` ile kurulamaz — JS'in `\b`'si
+  ASCII'ye göre çalışır ve `GİS` gibi anahtarlarda yanlış eşleşir.
+
+Başlık (`title`) bilerek dışarıda: yeniden yazmak künyeyi, sekme adını ve
+paylaşım kartını da değiştirirdi.
+
 ### Tarayıcıda kontrast ölçen betiğin altı tuzağı
 
 Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru gizledi.
