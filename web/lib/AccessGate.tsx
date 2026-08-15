@@ -73,8 +73,26 @@ export async function AccessGate({ topicId, lang, branch }: Props) {
         }}>
           {buton}
         </Link>
-        <div style={{ marginTop: '12px' }}>
-          <Link href={`/${lang}/premium/ydus/${branch}`} style={{ fontSize: '12px', color: '#6a8aaa', textDecoration: 'none' }}>
+        {/*
+          Ölçüldü (yerel dev): bu bağlantı 59x16 pikseldi ve kontrastı 3.41'di
+          (#6a8aaa, zemin #f5f9ff) — dokunma hedefi AA eşiğinin (24px) altında,
+          renk de 12px yazı için 4.5 eşiğinin altında. Kapı ekranı her abone
+          OLMAYAN ziyaretçinin gördüğü yüzey ve buradaki tek çıkış yolu bu
+          bağlantı.
+
+          Yüzey baştan sona satır içi stil kullandığı için globals.css'teki
+          taban kuralları buraya hiç ulaşmıyor; boyutu ve rengi burada
+          vermek zorunlu. Renk, aynı ekranda zaten kullanılan ve ölçülen
+          #4a6a8a (5.34).
+        */}
+        <div style={{ marginTop: '4px' }}>
+          <Link
+            href={`/${lang}/premium/ydus/${branch}`}
+            style={{
+              display: 'inline-block', padding: '8px 12px',
+              fontSize: '13px', color: '#4a6a8a', textDecoration: 'none',
+            }}
+          >
             ← Geri dön
           </Link>
         </div>
