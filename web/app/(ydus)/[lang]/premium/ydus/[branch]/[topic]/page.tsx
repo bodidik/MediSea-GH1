@@ -7,6 +7,7 @@ import { checkTopicAccess } from '@/lib/access';
 import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { type IcerikBlok } from './IcerikBloklari';
+import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
 
 export const revalidate = 86400;
 
@@ -197,7 +198,13 @@ export default async function KonuSayfasi({
           <div>
             {/* data-readable: ReadingTools vurgulamayı bu blokla sınırlar */}
             <div data-readable>
-              <IcerikRenderer bloklar={veri.icerik} />
+              {/*
+                Kısaltmalar ilk kullanımda açılımıyla veriliyor — açık taraftaki
+                konu sayfasıyla aynı sözlük ve aynı kural (app/lib/kisaltma.ts).
+                Küme burada kuruluyor, yani "ilk kullanım" bu konu sayfasının
+                tamamı için geçerli.
+              */}
+              <IcerikRenderer bloklar={kisaltmaAcBloklar(veri.icerik, new Set<string>())} />
             </div>
 
             {/* AI ASİSTAN — konuya soru sor */}

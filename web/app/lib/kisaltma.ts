@@ -54,6 +54,48 @@ export const KISALTMALAR: Record<string, string> = {
   YBÜ: "yoğun bakım ünitesi",
 };
 
+/**
+ * Premium konu gövdesindeki blokları işler (aynı küme, aynı "ilk kullanım" kuralı).
+ *
+ * Kapsam bilerek DAR — yalnızca düzyazı:
+ *  - metin bloklarının satırları
+ *  - bilgi kutularının gövdesi
+ *
+ * DIŞARIDA bırakılanlar ve nedeni:
+ *  - **başlıklar**: açık tarafta da bölüm başlıkları işlenmiyor; başlık bir
+ *    etikettir, cümle değil.
+ *  - **tablolar** (kolon adları ve hücreler): hücreler dar ve bu depoda
+ *    tablolar zaten 320px'te kolon başına en az 110px ile ancak sığıyor
+ *    (bkz. CLAUDE.md). "KBH" yerine "kronik böbrek hastalığı (KBH)" basmak
+ *    hücreyi üç katına çıkarır ve taşma üretir.
+ *
+ * Quiz ve flashcard içeriği bu yoldan HİÇ geçmez — orası ölçme yüzeyi ve
+ * kısaltmayı açmak cevabın parçasını peşinen verir.
+ */
+export function kisaltmaAcBloklar<T>(bloklar: T[], gorulen: Set<string>): T[] {
+  if (!Array.isArray(bloklar)) return bloklar;
+
+  return bloklar.map((b) => {
+    const blok = b as Record<string, unknown>;
+    if (!blok || typeof blok !== "object") return b;
+
+    if (blok.tip === "metin" && Array.isArray(blok.satirlar)) {
+      return {
+        ...blok,
+        satirlar: blok.satirlar.map((s: Record<string, unknown>) =>
+          typeof s?.metin === "string" ? { ...s, metin: kisaltmaAc(s.metin, gorulen) } : s
+        ),
+      } as T;
+    }
+
+    if (blok.tip === "bilgi_kutusu" && typeof blok.metin === "string") {
+      return { ...blok, metin: kisaltmaAc(blok.metin, gorulen) } as T;
+    }
+
+    return b;
+  });
+}
+
 /** Türkçe harfler dahil "kelime karakteri" — JS'in \b sınırı ASCII'ye göre çalışır. */
 const HARF = "A-Za-zÇĞİıÖŞÜçğöşü0-9";
 
