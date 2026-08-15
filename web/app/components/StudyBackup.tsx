@@ -38,7 +38,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
     a.download = name;
     a.click();
     URL.revokeObjectURL(url);
-    setDurum(`${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi yedeklendi`);
+    // Kart işareti yalnızca varsa yazılır: hiç flashcard çalışmamış kullanıcıya
+    // "0 kart işareti" demek bilgi değil gürültü.
+    const kartlar = ozet.kartIsareti ? ` · ${ozet.kartIsareti} kart işareti` : "";
+    setDurum(
+      `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar} yedeklendi`
+    );
   };
 
   const dosyaSecildi = async (e: React.ChangeEvent<HTMLInputElement>) => {

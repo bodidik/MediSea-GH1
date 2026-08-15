@@ -18,6 +18,8 @@ const NOTE_PREFIX = "medisea:notes:v1:";
 const REVIEW_KEY = "medisea:review:v1";
 const INDEX_KEY = "medisea:index:v1";
 const LOG_KEY = "medisea:log:v1";
+/** FlashcardPlayer'ın yazdığı anahtar: `medisea:kartlar:v1:<setId>` → kart id dizisi */
+const KART_PREFIX = "medisea:kartlar:v1:";
 
 export type IndexRow = { title: string; at: number };
 
@@ -31,6 +33,18 @@ export type Backup = {
   index: Record<string, IndexRow>;
   /** Çalışma günlüğü. Seri (streak) bundan hesaplanır; taşınmazsa sıfırlanır. */
   log: StudyLog;
+  /**
+   * Flashcard setlerinde "biliyorum" işaretleri: set kimliği → kart kimlikleri.
+   *
+   * Yedekte YOKTU. 79 kartlık bir seti eleye eleye bitiren kullanıcı, cihaz
+   * değiştirdiğinde ya da yedekten döndüğünde hepsini baştan işaretlemek
+   * zorunda kalıyordu — üstelik dışa aktarım "tamamı taşındı" izlenimi
+   * veriyordu. Eksik alan sessiz veri kaybıdır; `log` da bir dönem aynı
+   * şekilde düşüyordu (bkz. CLAUDE.md).
+   *
+   * Eski yedeklerde bu alan bulunmaz; `parseBackup` onu boş nesneye çevirir.
+   */
+  kartlar: Record<string, string[]>;
 };
 
 export type BackupSummary = {
@@ -39,6 +53,8 @@ export type BackupSummary = {
   not: number;
   cizgi: number;
   tekrarDurumu: number;
+  /** Flashcard setlerinde "biliyorum" işaretli kart sayısı */
+  kartIsareti: number;
   tarih: number;
 };
 
@@ -77,6 +93,7 @@ function json<T>(raw: string | null): T | null {
 export function readAll(): Backup {
   const marks: Record<string, ReadingMark[]> = {};
   const notes: Record<string, NoteDoc> = {};
+  const kartlar: Record<string, string[]> = {};
 
   for (let i = 0; i < localStorage.length; i++) {
     const k = localStorage.key(i);
@@ -84,6 +101,12 @@ export function readAll(): Backup {
     if (k.startsWith(MARK_PREFIX)) {
       const v = json<ReadingMark[]>(localStorage.getItem(k));
       if (Array.isArray(v) && v.length) marks[k.slice(MARK_PREFIX.length)] = v;
+    } else if (k.startsWith(KART_PREFIX)) {
+      const v = json<string[]>(localStorage.getItem(k));
+      // Boş dizi taşınmaz: hiç işaretlenmemiş set, veri değil gürültüdür.
+      if (Array.isArray(v) && v.length) {
+        kartlar[k.slice(KART_PREFIX.length)] = v.filter((x) => typeof x === "string");
+      }
     } else if (k.startsWith(NOTE_PREFIX)) {
       const v = json<NoteDoc>(localStorage.getItem(k));
       if (v && (v.text?.trim() || v.strokes?.length)) notes[k.slice(NOTE_PREFIX.length)] = v;
@@ -99,6 +122,7 @@ export function readAll(): Backup {
     review: json<Record<string, CardState>>(localStorage.getItem(REVIEW_KEY)) ?? {},
     index: json<Record<string, IndexRow>>(localStorage.getItem(INDEX_KEY)) ?? {},
     log: json<StudyLog>(localStorage.getItem(LOG_KEY)) ?? {},
+    kartlar,
   };
 }
 
@@ -110,6 +134,7 @@ export function summarize(b: Backup): BackupSummary {
     not: Object.values(b.notes).filter((n) => n.text?.trim()).length,
     cizgi: Object.values(b.notes).reduce((n, d) => n + (d.strokes?.length ?? 0), 0),
     tekrarDurumu: Object.keys(b.review).length,
+    kartIsareti: Object.values(b.kartlar).reduce((n, a) => n + a.length, 0),
     tarih: b.at,
   };
 }
@@ -157,6 +182,9 @@ function parseBackup(text: string): { b: Backup | null; hata?: string } {
       review: (b.review && typeof b.review === "object" ? b.review : {}) as Backup["review"],
       index: (b.index && typeof b.index === "object" ? b.index : {}) as Backup["index"],
       log: (b.log && typeof b.log === "object" ? b.log : {}) as Backup["log"],
+      // Bu alan eklenmeden önce alınmış yedeklerde YOK — boş nesneye düşmeli,
+      // yoksa eski bir yedeği geri yüklemek içe aktarmayı tümden düşürürdü.
+      kartlar: (b.kartlar && typeof b.kartlar === "object" ? b.kartlar : {}) as Backup["kartlar"],
     },
   };
 }
@@ -224,7 +252,7 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       // Yalnızca write()'ın GERİ KOYACAĞI anahtarları sil. Kullanıcı tercihleri
       // (notew, notepaper), tanıtım kartları (hint:*) ve senkron durumu (sync:*)
       // yedekte YOKTUR; silinirse geri gelmezler — bu sessiz veri kaybıdır.
-      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY];
+      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX];
       const silinecek: string[] = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
@@ -277,7 +305,16 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       };
     }
 
-    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log });
+    // kartlar: BİRLEŞİM. "Biliyorum" tek yönlü bir bilgi — iki cihazda farklı
+    // kartlar işaretlenmişse ikisi de doğrudur, biri ötekini eleyemez. Notlarda
+    // olduğu gibi "yeni olan kazanır" deseydik, telefonda işaretlenen kartlar
+    // tabletten gelen yedekle silinirdi.
+    const kartlar: Record<string, string[]> = { ...mevcut.kartlar };
+    for (const [set, liste] of Object.entries(gelen.kartlar)) {
+      kartlar[set] = [...new Set([...(kartlar[set] ?? []), ...liste])];
+    }
+
+    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar });
     return { ok: true };
   } catch (e) {
     return { ok: false, hata: "Yazma başarısız — tarayıcı depolama alanı dolu olabilir." };
@@ -294,6 +331,9 @@ function write(b: Backup) {
   if (Object.keys(b.review).length) localStorage.setItem(REVIEW_KEY, JSON.stringify(b.review));
   if (Object.keys(b.index).length) localStorage.setItem(INDEX_KEY, JSON.stringify(b.index));
   if (Object.keys(b.log).length) localStorage.setItem(LOG_KEY, JSON.stringify(b.log));
+  for (const [set, liste] of Object.entries(b.kartlar)) {
+    if (liste.length) localStorage.setItem(KART_PREFIX + set, JSON.stringify(liste));
+  }
 }
 
 /* ── Depolama ölçümü ───────────────────────────────────────────────────── */
