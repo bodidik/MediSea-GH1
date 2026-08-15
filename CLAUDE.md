@@ -154,6 +154,50 @@ tetikliyor, yani içe aktarma yolu uçtan uca sınanabiliyor. Sınanacak dört
 durum: dışa aktarımda sayı, birleşimde çiftlenmeme, **alanı olmayan eski
 yedek**, "üzerine yaz"da eski anahtarların gerçekten silinmesi.
 
+### Depoya yazan etki, yükleme bitmeden yazarsa veriyi SİLER
+
+Kalıp şu: bir etki depodan okuyup duruma koyuyor, ikinci bir etki durumu
+depoya yazıyor. Kurulum anında durum HENÜZ BOŞ olduğu için ikinci etki
+depodakinin üstüne boş değeri yazıyor. StrictMode etkileri iki kez
+çalıştırdığından zarar kalıcı oluyor: ilk turda boş yazılıyor, ikinci
+turda okuma o boşluğu geri okuyor.
+
+Ölçüldü — `UserProvider` bunu yapıyordu ve **premium ilerlemenin tamamı
+her sayfa açılışında siliniyordu**: depoya `{xp:12500, modül:2, rozet:1}`
+konup sayfa yenilenince ilk örnekte `xp=0` çıkıyor ve öyle kalıyordu.
+
+**`useRef` bayrağı YETMEZ — denendi, ölçüldü, depo yine sıfırlandı.**
+Bayrağı okuma etkisinin İÇİNDE `true` yaparsan, aynı commit'te hemen
+ardından çalışan kaydetme etkisi bayrağı `true` görür ama durum hâlâ
+boştur. Bayrak `useState` olmalı: o zaman kaydetme etkisi ancak yüklenen
+değerlerin uygulandığı commit'te çalışır.
+
+Bu sınıf tarandı; korumanın üç geçerli biçimi var ve hepsi kullanımda:
+
+| Yer | Koruma |
+|---|---|
+| `UserContext` | `hazir` **durumu** (ref yetmedi) |
+| `QuizEngine` | değer üzerinden: indeks 0 ve sonuç yoksa yazma |
+| `NotePanel` | `dirty` bayrağı — kullanıcı düzenlemediyse yazma |
+| `ReadingHint` | yalnızca kapatma anında yazıyor |
+| `study-sync` | `doPush` `reconciled` olmadan göndermiyor |
+| `FlashcardPlayer` | `useRef` — ölçüldü, işaretler korunuyor |
+
+FlashcardPlayer'ın ref'le sorun çıkarmaması, ref'in genel olarak güvenli
+olduğu anlamına GELMEZ; `UserContext`'te aynı şekil ölçülebilir veri kaybı
+verdi. Yeni bir yüzeyde durum bayrağını tercih et.
+
+**Bozuk kayıtta "hiç yazma" da çözüm değil:** o zaman bozuk kaydı olan
+kullanıcı bir daha hiçbir ilerlemesini kaydedemez. `JSON.parse` korumasız
+olduğu için tek bozuk karakter etkiyi düşürüyor, ardından boş durum
+kalıcılaşıyordu. Doğrusu ham dizeyi yedek anahtara taşıyıp (örn.
+`ydus_premium_user_bozuk`) normale devam etmek.
+
+Doğrulaması ölçümle yapılır ve **iki negatif kontrol şart**: (1) kaydetme
+hâlâ çalışıyor mu — kayda fazladan bir alan koy, yeniden yazılınca
+silinmeli; (2) bileşen gerçekten kuruldu mu — kurulmayan bir bileşen
+hiçbir şey yazmaz ve ölçüm yanlışlıkla "temiz" der.
+
 ### Kolay bozulan kararlar
 
 - **Kalem ve avuç.** Bir kez `pointerType === "pen"` görüldüyse parmak artık
