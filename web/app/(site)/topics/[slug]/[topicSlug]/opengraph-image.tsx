@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { SITE_ADI } from "@/lib/site";
 import { getSpecialty } from "@/app/lib/specialties";
 import basliklar from "@/content/baslik-index.json";
+import { slugCoz } from "@/lib/slug";
 
 /**
  * Konu sayfası paylaşım görseli — kartta konunun kendi başlığı görünür.
@@ -43,7 +44,11 @@ export default async function Image({
   // undefined kalır ve rota TypeError ile çöker.
   params: Promise<{ slug: string; topicSlug: string }>;
 }) {
-  const { slug, topicSlug } = await params;
+  const { slug: hamSlug, topicSlug: hamKonu } = await params;
+  // Parametre yüzde-kodlu geliyor; çözülmezse başlık dizinindeki
+  // "<branş>/<konu>" anahtarı tutmaz ve kart slug'ı yazıyla basar.
+  const slug = slugCoz(hamSlug);
+  const topicSlug = slugCoz(hamKonu);
 
   const dizin = basliklar as Record<string, string>;
   const baslik = kirp(dizin[`${slug}/${topicSlug}`] || topicSlug.replace(/-/g, " "), 88);

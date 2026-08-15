@@ -4,6 +4,7 @@ import path from "path";
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
 import { isoTarih } from "@/lib/jsonld";
+import { yolKodla } from "@/lib/slug";
 
 /**
  * Site haritası dosya sisteminden üretiliyor — sayfaların okuduğu kaynağın
@@ -143,7 +144,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const { slug, dosya } of konular(brans)) {
       kayitlar.push({
-        url: `${base}/topics/${brans}/${slug}`,
+        // Adres KODLANIR. Ham hâlinde basılınca `<loc>` içine boşluk giriyordu
+        // ("…/topics/nefroloji/FGF-23 vs PTH") — bu geçersiz bir adres ve
+        // arama motoru o girdiyi hata olarak işaretler.
+        url: `${base}/topics/${yolKodla(brans)}/${yolKodla(slug)}`,
         lastModified: sonDegisiklik(dosya),
         changeFrequency: "monthly",
         priority: 0.7,

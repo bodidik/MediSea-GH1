@@ -6,6 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
+import { slugCoz } from "@/lib/slug";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
@@ -117,7 +118,10 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string; topicSlug: string }>;
 }): Promise<Metadata> {
-  const { slug, topicSlug } = await params;
+  // Parametre yüzde-kodlu geliyor; dosya adına çevrilmeden okunamaz (lib/slug.ts).
+  const { slug: hamSlug, topicSlug: hamKonu } = await params;
+  const slug = slugCoz(hamSlug);
+  const topicSlug = slugCoz(hamKonu);
   const veri = konuOku(slug, topicSlug);
 
   if (!veri) return { title: "Konu bulunamadı", robots: { index: false, follow: false } };
@@ -145,7 +149,9 @@ export default async function TopicDetailPage({
 }: { 
   params: Promise<{ slug: string; topicSlug: string }> 
 }) {
-  const { slug, topicSlug } = await params;
+  const { slug: hamSlug, topicSlug: hamKonu } = await params;
+  const slug = slugCoz(hamSlug);
+  const topicSlug = slugCoz(hamKonu);
   const branchDir = path.join(process.cwd(), "content", "canonical", slug);
   const filePath = path.join(branchDir, `${topicSlug}.json`);
 

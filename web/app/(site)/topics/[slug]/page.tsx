@@ -8,6 +8,7 @@ import { getSpecialty } from "@/app/lib/specialties";
 import { getBranchTools } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
+import { slugCoz } from "@/lib/slug";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
 // force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
@@ -39,7 +40,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug: hamSlug } = await params;
+  const slug = slugCoz(hamSlug);
   const brans = getSpecialty(slug);
   const dizin = path.join(process.cwd(), "content", "canonical", slug);
 
@@ -70,7 +72,8 @@ export default async function BranchListPage({
 }: {
   params: Promise<{ slug: string }>
 }) {
-  const { slug } = await params;
+  const { slug: hamSlug } = await params;
+  const slug = slugCoz(hamSlug);
   const branchDir = path.join(process.cwd(), "content", "canonical", slug);
 
   if (!fs.existsSync(branchDir)) return notFound();
