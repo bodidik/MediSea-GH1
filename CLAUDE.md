@@ -273,11 +273,33 @@ etmiyor ama Türkçe karakter ya da boşluk taşıyan bir slug'da
 `content/canonical/<branş>/<slug>.json` araması ham dizeyle yapılınca dosya
 bulunamıyor ve sayfa `notFound()`'a düşüyor.
 
-Ölçüldü: dosyası duran **beş konu** hiç açılamıyordu (`men1-menin-lösemi-onkojen`,
-`ascit-sıvısı`, `gebelikte-immün-ITP-yonetimi`, `FGF-23 vs PTH`,
-`pankreas-kanseri-neden-ilaç-vs`) ve beşi de site haritasında ilan
-ediliyordu. Kusur yalnızca ASCII dışı adda görünüyor — büyük harfli ve
-parantezli sekiz slug sorunsuz çalıştığı için uzun süre fark edilmedi.
+Ölçüldü: beş konu (`men1-menin-lösemi-onkojen`, `ascit-sıvısı`,
+`gebelikte-immün-ITP-yonetimi`, `FGF-23 vs PTH`,
+`pankreas-kanseri-neden-ilaç-vs`) `next dev` altında 404 veriyordu. Kusur
+yalnızca ASCII dışı adda görünüyor — büyük harfli ve parantezli sekiz slug
+sorunsuz çalıştığı için uzun süre fark edilmedi.
+
+**KAPSAM DÜZELTMESİ — `34622f1` commit mesajı bu konuda yanlış.** Orada
+"beş konu hiç açılamıyordu, beşi de arama motoruna ilan ediliyordu"
+yazıyor; doğrusu şu:
+
+| Yüzey | Etkilendi mi | Neden |
+|---|---|---|
+| `next dev` konu sayfası | EVET, 404 | istek anında render, parametre kodlu |
+| Canlı konu sayfası | HAYIR | `● SSG` — derleme anında üretiliyor, orada parametre HAM geliyor (607/607 sayfa hatasız üretilmiş) |
+| Paylaşım kartı rotası | EVET | `ƒ` dinamik, istek anında çalışıyor; başlık dizini anahtarı tutmuyor ve kart slug'ı yazıyla basıyordu |
+| Site haritası | EVET | `<loc>` içine ham boşluk basıyordu, geçersiz adres |
+
+Yani düzeltme doğru ve gerekliydi ama **konu sayfaları canlıda hiç kırık
+değildi**. Hata ölçümde değil, ölçümün kapsamının genellenmesindeydi:
+`next dev` üzerinde alınan bir sonuç üretim davranışına taşındı. Statik
+üretilen bir rotada dev ile canlı FARKLI kod yolları çalışır; biri için
+alınan sonuç öteki için kanıt değildir.
+
+Ayrıca: ölçüm sırasında düzeltme çoktan dağıtılmıştı, bu yüzden "canlıda
+önce nasıldı" doğrudan gözlenemedi. Bir kusurun kapsamını canlıda
+doğrulayacaksan **dağıtımdan ÖNCE ölç**; sonrasında elinde yalnızca
+mekanizma kalır.
 
 Çare `lib/slug.ts`: `slugCoz()` her `await params`'tan sonra, `yolKodla()`
 site haritasında. `<loc>` içine ham boşluk basmak geçersiz adres üretir.
