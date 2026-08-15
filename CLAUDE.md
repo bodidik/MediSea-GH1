@@ -998,6 +998,19 @@ kullanıcıya konuyu yanlış öğretir ve bu bir içerik kararıdır.
 Başlık (`title`) bilerek dışarıda: yeniden yazmak künyeyi, sekme adını ve
 paylaşım kartını da değiştirirdi.
 
+**ÖLÇME yüzeylerine uygulanmaz.** Ölçüldü: quiz (952 geçiş), flashcard
+(255) ve vaka (111) dosyalarında bol kısaltma var ama üçü de sınav
+içeriği — vaka adımlarının alanları `soru`, `secenekler`, `dogru`,
+`aciklama_*`. "SIADH'de ne beklenir?" sorusundaki kısaltmayı açmak
+cevabın parçasını peşinen verir; YDUS sorusu kısaltmayı bilerek çıplak
+kullanır. Kapsam bu yüzden yalnızca okuma yüzeyleri: açık konu sayfası ve
+premium konu gövdesi.
+
+Tablolar da dışarıda — hücreler dar ve tablolar 320px'te kolon başına en
+az 110px ile ancak sığıyor; bir kısaltmayı üç katına çıkarmak taşma üretir.
+
+İnciler yüzeyi kapsam dışı bırakıldı: toplam 4 geçiş var, yani kazanç yok.
+
 ### Tarayıcıda kontrast ölçen betiğin altı tuzağı
 
 Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru gizledi.
