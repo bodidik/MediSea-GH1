@@ -266,6 +266,41 @@ Teşhis için ikinci bir `next dev` örneğini günlüğe alarak çalıştır.
   ister.** `<div>· {brans}</div>` JSX'te İKİ çocuk üretir. Metinleri tek
   şablon dizesi ver.
 
+### Rota parametresi YÜZDE-KODLU gelir
+
+Next 15'te dinamik segment sayfaya kodlu ulaşıyor. ASCII slug'larda fark
+etmiyor ama Türkçe karakter ya da boşluk taşıyan bir slug'da
+`content/canonical/<branş>/<slug>.json` araması ham dizeyle yapılınca dosya
+bulunamıyor ve sayfa `notFound()`'a düşüyor.
+
+Ölçüldü: dosyası duran **beş konu** hiç açılamıyordu (`men1-menin-lösemi-onkojen`,
+`ascit-sıvısı`, `gebelikte-immün-ITP-yonetimi`, `FGF-23 vs PTH`,
+`pankreas-kanseri-neden-ilaç-vs`) ve beşi de site haritasında ilan
+ediliyordu. Kusur yalnızca ASCII dışı adda görünüyor — büyük harfli ve
+parantezli sekiz slug sorunsuz çalıştığı için uzun süre fark edilmedi.
+
+Çare `lib/slug.ts`: `slugCoz()` her `await params`'tan sonra, `yolKodla()`
+site haritasında. `<loc>` içine ham boşluk basmak geçersiz adres üretir.
+
+**Slug'ları yeniden adlandırmak çare DEĞİL:** adlandırma içerik kararı ve
+adres değiştirmek yönlendirme borcu doğurur; kusur rotanın kendisindeydi.
+
+Teşhis yöntemi de not: sebep tahmin edilmedi, **geçici bir tanı rotası**
+(`app/tani-gecici/[a]/page.tsx`) parametreyi ham hâliyle, kod noktalarıyla
+ve `existsSync` sonucuyla bastı. Bitince rota silinir — `.next/types`
+altındaki artığı da silmek gerekiyor, yoksa `tsc` olmayan bir modülü arar.
+
+### Arka plan komutunun bildirimdeki çıkış kodu SON komutundur
+
+`npm run build > log 2>&1; echo $?; grep ...` biçiminde zincirlenen bir
+komutta bildirim `grep`'in kodunu raporluyor. Bir tur "exit code 0" görülüp
+derleme geçti sanıldı; günlükte `Failed to compile` yazıyordu. Kapıyı
+sınayacaksan komutu **tek başına** çalıştır, çıkış kodu onun olsun.
+
+O turdaki düşüş üstelik koddan değildi: `next/font` Google Fonts'a
+ulaşamıyordu (geçici DNS kesintisi). Derleme ağ ister; kapı düştüğünde
+önce `dns.lookup('fonts.gstatic.com')` ile bak, sonra kodu suçla.
+
 ### Sınav takvimi
 
 `content/sinav-takvimi.json` boş gelir ve boşken geri sayım hiç basılmaz.
