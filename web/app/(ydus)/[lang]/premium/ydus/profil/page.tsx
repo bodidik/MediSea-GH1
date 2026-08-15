@@ -7,6 +7,7 @@ import { useUser } from '@/app/(ydus)/context/UserContext';
 import { branchSlugOf, collectAll } from '@/app/lib/study-index';
 import { SPECIALTIES } from '@/app/lib/specialties';
 import { localStats } from '@/app/lib/study-stats';
+import { rutbe } from '@/app/lib/rutbe';
 
 /**
  * Bu sayfa bir dönem `STATIC_USER_DATA` diye bir sabitten besleniyordu:
@@ -26,17 +27,6 @@ import { localStats } from '@/app/lib/study-stats';
  *  - branşlar→ dokunulan konu / toplam konu; Çalışma Alanım'daki kapsama
  *              bölümünün TAM AYNI kaynağı, yoksa iki yüzey ayrışırdı.
  */
-
-/** XP'den rütbe. Eşikler liderlik tablosundaki ünvanlarla aynı merdiveni izler. */
-function rutbe(xp: number): string {
-  if (xp >= 12000) return 'Büyük Amiral';
-  if (xp >= 10000) return 'Koramiral';
-  if (xp >= 8500) return 'Tümamiral';
-  if (xp >= 7000) return 'Tuğamiral';
-  if (xp >= 6000) return 'Kıdemli Albay';
-  if (xp >= 4500) return 'Yarbay';
-  return 'Gemi Kaptanı';
-}
 
 /** Çubuk renkleri sırayla dağıtılır — branş adına sabitlenmiş renk yok. */
 const CUBUK = [

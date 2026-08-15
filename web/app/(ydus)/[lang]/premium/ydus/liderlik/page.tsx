@@ -2,7 +2,9 @@
 'use client';
 import Link from 'next/link';
 import { useUser } from '@/app/(ydus)/context/UserContext';
+import { useSession } from 'next-auth/react';
 import { useMemo } from 'react';
+import { rutbe } from '@/app/lib/rutbe';
 
 // --- MOCK VERİTABANI (ZIRH: Statik veriler render dışında tutuldu) ---
 const MOCK_LEADERS = [
@@ -16,14 +18,24 @@ const MOCK_LEADERS = [
 
 export default function LeadershipBoard() {
   const { xp } = useUser();
+  const { data: session } = useSession();
+
+  // Kullanıcının adı ve rütbesi UYDURULMAZ: ad oturumdan gelir, rütbe gerçek
+  // XP'den türer. Rütbe bir dönem 'Gemi Kaptanı' diye sabitti; profil aynı
+  // kullanıcıya XP'sine göre "Büyük Amiral" derken burası "Gemi Kaptanı"
+  // diyordu — aynı şeyi gösteren iki yüzey ayrışıyordu (bkz. app/lib/rutbe.ts).
+  // Oturumdaki ad varsa "Ad (sen)", yoksa yalnızca "Sen" — ikisini birleştirmek
+  // "Sen (sen)" gibi bir etiket üretiyordu.
+  const oturumAdi = session?.user?.name?.trim();
+  const benimAdim = oturumAdi ? `${oturumAdi} (sen)` : 'Sen';
 
   // ZIRH: Sıralama işlemini useMemo ile optimize ettik (Performans zırhı)
   const allUsers = useMemo(() => {
     return [
       ...MOCK_LEADERS,
-      { id: 'me', name: 'Dr. Kaptan (Sen)', title: 'Gemi Kaptanı', xp: xp, avatar: '👨‍⚕️', isMe: true }
+      { id: 'me', name: benimAdim, title: rutbe(xp), xp: xp, avatar: '👨‍⚕️', isMe: true }
     ].sort((a, b) => b.xp - a.xp);
-  }, [xp]);
+  }, [xp, benimAdim]);
 
   return (
     <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
@@ -107,7 +119,11 @@ export default function LeadershipBoard() {
                       <h3 className={`font-black text-lg truncate ${(user as any).isMe ? 'text-blue-400' : 'text-white'}`}>
                         {user.name}
                       </h3>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest truncate">
+                      {/* Bu eleman BOŞ basılıyordu: her satırın ünvanı veride
+                          duruyor ama ekrana hiç çıkmıyordu, yerinde yalnızca
+                          boş bir paragraf kalıyordu. */}
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest truncate">
+                        {user.title}
                       </p>
                     </div>
                   </div>
