@@ -129,9 +129,30 @@ Sürüm eki şema değişince artar. `study-backup.ts` hepsini tek dosyada taş�
 Markdown dışa aktarımı **kayıplıdır** (çizim ve takvim gitmez).
 
 `Backup` tipine yeni bir depo anahtarı eklemeyi unutmak sessiz veri kaybıdır:
-`log` bir dönem tipte yoktu, yedek de senkron da çalışma günlüğünü düşürüyordu.
-Yeni anahtar eklerken `Backup` · `readAll` · `parseBackup` · `applyImport`
-birleştirme dalı · `write` **beşini birden** güncelle.
+`log` bir dönem tipte yoktu, `medisea:kartlar:v1:*` (flashcard "biliyorum"
+işaretleri) de öyleydi — yedek de senkron da onları düşürüyordu.
+
+Yeni anahtar eklerken **ALTI yeri birden** güncelle: `Backup` tipi ·
+`readAll` · `parseBackup` (eski yedeklerde alan YOKTUR, boş nesneye düşmeli;
+yoksa eski bir yedeği geri yüklemek içe aktarmayı tümden düşürür) ·
+`applyImport` birleştirme dalı · `applyImport` **"üzerine yaz" silme listesi**
+(`VERİ_ONEKI`) · `write`.
+
+Altıncısı en kolay kaçandır ve sessizdir: silme listesine girmeyen anahtar,
+"üzerine yaz" kipinde silinmez, üstüne yenisi yazılır — yani kip adının
+söylediği şeyi yapmaz, eski kayıtlar hayalet gibi kalır.
+
+**Birleştirme kuralı alanın anlamına göre seçilir.** Notlarda "yeni olan
+kazanır" doğru, kart işaretlerinde YANLIŞ: "biliyorum" tek yönlü bir bilgi,
+iki cihazda farklı kartlar işaretlenmişse ikisi de doğrudur. Orada birleşim
+(`new Set`) gerekiyor; "yeni kazanır" deseydik telefonda işaretlenenler
+tabletten gelen yedekle silinirdi.
+
+Doğrulaması tarayıcıda ve gerçek dosya girdisiyle yapılır: `DataTransfer`
+ile `File` kurup `input[type=file]`'a atamak React'in `onChange`'ini
+tetikliyor, yani içe aktarma yolu uçtan uca sınanabiliyor. Sınanacak dört
+durum: dışa aktarımda sayı, birleşimde çiftlenmeme, **alanı olmayan eski
+yedek**, "üzerine yaz"da eski anahtarların gerçekten silinmesi.
 
 ### Kolay bozulan kararlar
 
