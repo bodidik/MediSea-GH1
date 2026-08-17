@@ -64,7 +64,7 @@ export default function BarthelPage() {
 
         <div className="flex items-center justify-between px-1">
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}/{ITEMS.length} madde tamamlandı</span>
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1 justify-end">
             {ITEMS.map(i => (
               <div key={i.id} className={`w-5 h-2 rounded-full transition-all ${sel[i.id] !== null ? "bg-blue-900" : "bg-slate-200"}`} />
             ))}

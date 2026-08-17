@@ -53,7 +53,7 @@ export default function CdaiPage() {
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
               <div className="flex gap-3 items-center">
                 <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-                  className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+                  className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
                 <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest w-16 text-right">max {max}</span>
               </div>
             </label>
