@@ -10,12 +10,12 @@
   "moduller": {
     "flashcard": false,
     "inciler": false,
-    "quiz": false,
+    "quiz": true,
     "vaka": true,
     "video": false
   },
   "istatistikler": {
-    "soru": 0,
+    "soru": 1,
     "flashcard": 0,
     "inci": 0
   },
