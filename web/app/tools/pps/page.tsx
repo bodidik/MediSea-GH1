@@ -57,7 +57,7 @@ export default function PpsPage() {
                   ${selected === g.pps ? 'bg-amber-400 text-blue-900' : 'bg-white border border-slate-200 text-blue-900/80'}`}>
                   {g.pps}
                 </div>
-                <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5">
+                <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5 break-words">
                   {[
                     { label: "Mobilizasyon", val: g.ambulation },
                     { label: "Aktivite", val: g.activity },
