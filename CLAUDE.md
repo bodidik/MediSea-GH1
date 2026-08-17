@@ -738,6 +738,13 @@ genişliğe çıkıyor ama 288px'lik kutularında **kayıyor, kırpılmıyor**
 
 Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak.
 
+**İKİ ölçüt birden gerekiyor; hangisinin tek başına yeteceği sayfaya göre
+değişiyor.** Premium branş sayfasında kaydırma denemesi SAHTE TEMİZ verdi:
+negatif kontrolde 900px'lik bir öge eklendiğinde bile belge yatay kaymadı,
+çünkü bir ata kırpıyor. Oradaki gerçek kusur (kart kutusu 283px, içeriği
+299px) yalnızca öge başına `scrollWidth` ile göründü. Tersi de doğru —
+aşağıdaki tuzak `scrollWidth`in tek başına sahte kusur ürettiğini anlatıyor.
+
 **Taşma ölçütü `scrollWidth` DEĞİL, gerçek kaydırma denemesi olmalı.**
 `resize_window` ile mobil öykünmesi açılan sekmede `window.innerWidth` 400
 dönerken `documentElement.clientWidth` 375 kalıyor; `scrollWidth >
