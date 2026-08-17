@@ -89,7 +89,35 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     setDeck(shuffle(cards));
     try {
       const raw = localStorage.getItem(depoAnahtari);
-      if (raw) setBilinen(new Set(JSON.parse(raw)));
+      if (raw) {
+        /**
+         * Depodaki kimlikler MEVCUT sete karşı süzülür.
+         *
+         * Süzülmediğinde sayaç şişiyordu. Ölçüldü (5 kartlık set, depoda 12
+         * kimlik): ekranda "12 biliniyor · %240" yazıyordu — sayı toplam
+         * kart sayısını, yüzde de %100'ü aşıyordu.
+         *
+         * Bu bozuk veri senaryosu DEĞİL, normal içerik düzenlemesiyle
+         * oluşuyor: yazar setten kart çıkarınca o kartların işaretleri
+         * depoda kalıyor ve sonsuza kadar sayılmaya devam ediyor.
+         *
+         * Süzme ayrıca bozuk kaydı da etkisiz kılıyor: `JSON.parse` bir
+         * DİZE döndürürse `new Set("abc")` üç harflik küme üretiyordu;
+         * harfler hiçbir kart kimliğiyle eşleşmediği için artık eleniyorlar.
+         *
+         * Süzülmüş küme kaydetme etkisi tarafından geri yazıldığı için
+         * depo kendi kendini temizliyor.
+         */
+        const gecerliIdler = new Set(cards.map((c) => c.id));
+        const yuklenen: unknown = JSON.parse(raw);
+        setBilinen(
+          new Set(
+            (Array.isArray(yuklenen) ? yuklenen : []).filter(
+              (id): id is string => typeof id === "string" && gecerliIdler.has(id)
+            )
+          )
+        );
+      }
     } catch {}
     yuklendi.current = true;
   // eslint-disable-next-line react-hooks/exhaustive-deps
