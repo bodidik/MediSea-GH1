@@ -80,9 +80,26 @@ function writeStates(s: Record<string, CardState>) {
 
 /* ── Deste ─────────────────────────────────────────────────────────────── */
 
-/** Vurgusu yeterince uzun olanlar karta dönüşür; tek kelimelik vurgu soru olmaz. */
+/**
+ * Vurgusu yeterince uzun olanlar karta dönüşür; tek kelimelik vurgu soru olmaz.
+ *
+ * `m.t` tipte ZORUNLU ama burada yine de savunmacı okunuyor. Sebebi ölçüldü:
+ * alanı eksik TEK bir kayıt `m.t.trim()` üzerinde patlıyor ve bütün tekrar
+ * sayfası "Tekrar sayfası yüklenemedi" hata kartına düşüyordu — kullanıcının
+ * aylarca biriktirdiği bütün kartlar tek bozuk kayıt yüzünden erişilemez
+ * hale geliyordu.
+ *
+ * Bu, depodaki yerleşik ilkeye aykırıydı: konu sayfasında "bozuk TEK bir
+ * içerik dosyası bütün rotayı 500'e düşürmemeli" diye yazılı. Aynı mantık
+ * burada da geçerli, üstelik risk daha yüksek — vurgular yedekten ya da
+ * başka bir cihazdan geri yüklenebiliyor.
+ *
+ * `b` ve `a` alanları zaten `?? ""` ile korunuyordu; eksik olan yalnızca
+ * `t` idi. Bozuk kayıt artık "kullanılamaz" sayılıp atlanıyor, ötekiler
+ * çalışmaya devam ediyor.
+ */
 function usable(m: ReadingMark): boolean {
-  const t = m.t.trim();
+  const t = typeof m?.t === "string" ? m.t.trim() : "";
   return t.length >= 8 && t.length <= 400;
 }
 
