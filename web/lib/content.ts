@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { aramaNormalize } from '@/app/lib/arama';
 
 // 👇 TİP TANIMLAMALARI
 export type CanonicalDoc = {
@@ -125,7 +126,15 @@ export type SearchResult = {
 };
 
 export async function searchContent(query: string): Promise<SearchResult[]> {
-  const cleanQuery = query.toLowerCase().trim();
+  /**
+   * Türkçe-duyarlı normalleştirme (app/lib/arama.ts).
+   *
+   * Eskiden `toLowerCase()` kullanılıyordu ve Türkçe klavyeden gelen "İ"
+   * harfini bozuyordu: "İdrar" -> "i̇drar" (birleşen noktalı) -> "idrar"
+   * ile eşleşmiyordu. Shift+i tuşu doğrudan "İ" ürettiği için bu kenar
+   * durum değil, varsayılan durumdu.
+   */
+  const cleanQuery = aramaNormalize(query);
   if (cleanQuery.length < 2) return [];
 
   const results: SearchResult[] = [];
@@ -141,7 +150,7 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
     const sectionPath = path.join(rootDir, section);
     
     // 1. Bölüm Adında Arama
-    if (section.includes(cleanQuery)) {
+    if (aramaNormalize(section).includes(cleanQuery)) {
       results.push({
         title: section.charAt(0).toUpperCase() + section.slice(1) + " (Bölüm)",
         section: section,
@@ -158,8 +167,10 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
         const content = fs.readFileSync(path.join(sectionPath, file), 'utf8');
         const json = JSON.parse(content);
         
-        const titleMatch = json.title?.toLowerCase().includes(cleanQuery);
-        const tagMatch = json.meta?.tags?.some((t: string) => t.toLowerCase().includes(cleanQuery));
+        const titleMatch = aramaNormalize(json.title || '').includes(cleanQuery);
+        const tagMatch = json.meta?.tags?.some((t: string) =>
+          aramaNormalize(t).includes(cleanQuery)
+        );
 
         if (titleMatch || tagMatch) {
           results.push({

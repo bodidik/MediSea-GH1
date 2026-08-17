@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { aramaEslesir } from "@/app/lib/arama";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
 const TOOLS_DATABASE = [
@@ -294,9 +295,20 @@ export default function ToolsIcerik() {
     .filter(cat => !seciliKategori || cat.slug === seciliKategori)
     .map(cat => ({
       ...cat,
+      /**
+       * Türkçe-duyarlı eşleşme (app/lib/arama.ts): `toLowerCase()` Türkçe
+       * klavyeden gelen "İ" harfini bozuyordu ve 290 kelime bulunamaz
+       * haldeydi. Aksan katlaması sayesinde "gogus" da "Göğüs"ü buluyor.
+       *
+       * KATEGORİ ADI da aranıyor: araçların çoğu kısaltmayla adlandırılmış
+       * (NYHA, CHA2DS2-VASc, GRACE…), bu yüzden "nefroloji" ya da "nütrisyon"
+       * arayan kullanıcı hiçbir sonuç göremiyordu. Kategori zaten
+       * yapılandırılmış veri; tıbbi bir karar gerektirmeden aranabilir.
+       */
       items: cat.items.filter(it =>
-        it.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        it.desc.toLowerCase().includes(searchTerm.toLowerCase())
+        aramaEslesir(it.name, searchTerm) ||
+        aramaEslesir(it.desc, searchTerm) ||
+        aramaEslesir(cat.category, searchTerm)
       )
     })).filter(cat => cat.items.length > 0);
 

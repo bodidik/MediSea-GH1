@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { kalinHtml } from '@/app/lib/metin';
+import { aramaEslesir } from '@/app/lib/arama';
 
 // --- TİP TANIMLAMALARI ---
 type Pearl = {
@@ -26,12 +27,15 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
   // Bu sayede kullanıcı her harf yazdığında tüm listeyi baştan hesaplamak yerine,
   // sadece arama terimi değiştiğinde filtreleme yapar. Telefon işlemcilerini yormaz.
   const filteredPearls = useMemo(() => {
-    const term = searchTerm.toLowerCase();
-    return data.pearls.filter(pearl => 
-      pearl.title.toLowerCase().includes(term) ||
-      pearl.content.toLowerCase().includes(term) ||
-      pearl.trigger.toLowerCase().includes(term) ||
-      pearl.level.toLowerCase().includes(term)
+    // Türkçe-duyarlı eşleşme (app/lib/arama.ts). `toLowerCase()` Türkçe
+    // klavyeden gelen "İ" harfini bozuyordu: "İnsülin" araması hiçbir sonuç
+    // vermiyordu. Boş arama tüm listeyi döndürmeli, o yüzden erken çıkış var.
+    if (!searchTerm.trim()) return data.pearls;
+    return data.pearls.filter(pearl =>
+      aramaEslesir(pearl.title, searchTerm) ||
+      aramaEslesir(pearl.content, searchTerm) ||
+      aramaEslesir(pearl.trigger, searchTerm) ||
+      aramaEslesir(pearl.level, searchTerm)
     );
   }, [searchTerm, data.pearls]);
 
