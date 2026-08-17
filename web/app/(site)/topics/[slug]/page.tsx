@@ -218,6 +218,21 @@ export default async function BranchListPage({
       {/* --- KONU GRID (kompakt, ana sayfayla aynı kart dili) --- */}
       <div className="max-w-5xl mx-auto px-5 sm:px-6 py-6 sm:py-8">
         {mainTopics.length > 0 ? (
+          <>
+            {/*
+              Görünmez bölüm başlığı — yalnızca başlık hiyerarşisi için.
+
+              Ölçüldü: sayfa H1'den doğrudan kart başlıklarının H3'üne
+              atlıyordu. Aşağıdaki "Diğer Konular" bölümü H2 → H3 diye
+              doğru kurulmuş; ana liste ise başlıksız olduğu için ekran
+              okuyucuda köksüz kalıyordu.
+
+              Görünür başlık EKLENMEDİ: tasarımda H1'in hemen altında kart
+              ızgarası var ve araya metin koymak düzeni değiştirirdi.
+              `sr-only` bu depoda zaten kullanılan kalıp (atlama bağlantısı,
+              durum bölgeleri).
+            */}
+            <h2 className="sr-only">{specialty.title} konuları</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
             {mainTopics.map((topic) => {
               const subCount = childCounts[topic.slug] || 0;
@@ -247,6 +262,7 @@ export default async function BranchListPage({
               );
             })}
           </div>
+          </>
         ) : (
           <div className="p-16 text-center border-2 border-dashed border-slate-100 rounded-[2.5rem]">
             <p className="text-slate-400 font-black uppercase tracking-widest">
