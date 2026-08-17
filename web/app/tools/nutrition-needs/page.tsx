@@ -86,14 +86,14 @@ export default function NutritionNeedsPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase">Enerji (kcal/kg)</span>
                 <span className="text-sm font-black text-blue-900">{stressFactor}</span>
               </div>
-              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} onChange={(e)=>setStressFactor(Number(e.target.value))} className="w-full accent-blue-900" />
+              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} onChange={(e)=>setStressFactor(Number(e.target.value))} className="w-full h-6 accent-blue-900" />
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-[10px] font-black text-slate-400 uppercase">Protein (g/kg)</span>
                 <span className="text-sm font-black text-blue-900">{proteinFactor}</span>
               </div>
-              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>setProteinFactor(Number(e.target.value))} className="w-full accent-amber-500" />
+              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>setProteinFactor(Number(e.target.value))} className="w-full h-6 accent-amber-500" />
             </div>
           </div>
         </div>
