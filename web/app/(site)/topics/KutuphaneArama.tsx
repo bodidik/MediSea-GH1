@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { aramaNormalize } from "@/app/lib/arama";
 
 /**
  * Kütüphane girişi: branş kartları + anlık arama.
@@ -24,17 +25,19 @@ export type BransKarti = {
   konuSayisi: number;
 };
 
-/** Türkçe arama için katlama: "İ/ı" ayrımı yüzünden düz toLowerCase yetmiyor. */
-function katla(s: string): string {
-  return s
-    .toLocaleLowerCase("tr")
-    .replace(/ı/g, "i")
-    .replace(/ş/g, "s")
-    .replace(/ğ/g, "g")
-    .replace(/ü/g, "u")
-    .replace(/ö/g, "o")
-    .replace(/ç/g, "c");
-}
+/**
+ * Türkçe katlama artık ORTAK yardımcıdan geliyor (app/lib/arama.ts).
+ *
+ * Buradaki yerel `katla()` doğru çalışıyordu ama aynı işi yapan ikinci bir
+ * uygulamaydı: araç sayfası, site geneli arama ve inciler ortak yardımcıyı
+ * kullanıyor. Tekrarlanan mantık er geç ayrışır — bu depoda aynı sınıf kusur
+ * yetki kontrolünde yaşandı (bkz. lib/yonetici.ts).
+ *
+ * Davranış farkı YOK: ikisi de mevcut içeriğin tamamında birebir aynı sonucu
+ * veriyor (ölçüldü). Ortak sürüm ayrıca Türkçe olmayan aksanları da katlıyor,
+ * yani ileride "Ménière" ya da "Sjögren" gibi bir başlık eklenirse "meniere"
+ * yazan kullanıcı da bulabilecek.
+ */
 
 export default function KutuphaneArama({
   konular,
@@ -45,11 +48,11 @@ export default function KutuphaneArama({
 }) {
   const [sorgu, setSorgu] = useState("");
 
-  const aranan = katla(sorgu.trim());
+  const aranan = aramaNormalize(sorgu);
   const sonuclar = useMemo(() => {
     if (aranan.length < 2) return [];
     return konular
-      .filter((k) => katla(k.baslik).includes(aranan))
+      .filter((k) => aramaNormalize(k.baslik).includes(aranan))
       .sort((a, b) => a.baslik.localeCompare(b.baslik, "tr"))
       .slice(0, 60);
   }, [aranan, konular]);
