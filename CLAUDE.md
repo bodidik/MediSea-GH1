@@ -367,6 +367,21 @@ O turdaki düşüş üstelik koddan değildi: `next/font` Google Fonts'a
 ulaşamıyordu (geçici DNS kesintisi). Derleme ağ ister; kapı düştüğünde
 önce `dns.lookup('fonts.gstatic.com')` ile bak, sonra kodu suçla.
 
+**Bu tek seferlik bir aksilik değil.** Tek bir oturumda ÜÇ derleme bu
+yüzden düştü (`Merriweather`, `JetBrains Mono`, `Inter` — üçü de
+`app/layout.tsx`'ten). `next/font/google` yazı tiplerini DERLEME ANINDA
+indiriyor; ağ yoksa ya da yavaşsa kapı kodla ilgisi olmayan bir sebeple
+düşüyor ve düşüşün mesajı `layout.tsx`'i işaret ettiği için kod hatası
+gibi görünüyor.
+
+Teşhis sırası: `git diff --stat -- web/app/layout.tsx` (senin diff'inde
+yoksa suçlu o değil) → `dns.lookup` → ağ dönmüşse yeniden dene. Üç turda
+da yeniden deneme yetti.
+
+Kalıcı çare `next/font/local` ile yazı tiplerini depoya almak olurdu ama
+bu tipografiyi bütün siteye yayılan bir tasarım kararı; ölçülmüş bir kusur
+değil, öngörülen bir risk olduğu için tek başına yapılmadı.
+
 ### Sınav takvimi
 
 `content/sinav-takvimi.json` boş gelir ve boşken geri sayım hiç basılmaz.
