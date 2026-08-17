@@ -164,7 +164,7 @@ export default function TiradsPage() {
               const s = scores[i];
               return (
                 <div key={cat.id} className={`rounded-xl p-2 text-center transition-all ${s !== null ? 'bg-blue-900' : 'bg-slate-100'}`}>
-                  <div className={`text-[8px] font-black uppercase tracking-widest mb-1 leading-tight ${s !== null ? 'text-blue-200' : 'text-slate-400'}`}>{cat.title}</div>
+                  <div className={`text-[8px] font-black uppercase tracking-widest mb-1 leading-tight break-words ${s !== null ? 'text-blue-200' : 'text-slate-400'}`}>{cat.title}</div>
                   <div className={`text-xl font-black ${s !== null ? 'text-white' : 'text-slate-300'}`}>{s !== null ? s : '–'}</div>
                 </div>
               );
@@ -236,7 +236,7 @@ export default function TiradsPage() {
                 { l: "TR4", r: "4–6 pt", c: "bg-orange-100 text-orange-700" },
                 { l: "TR5", r: "≥7 pt", c: "bg-rose-100 text-rose-700" },
               ].map(x => (
-                <div key={x.l} className={`rounded-xl p-2 text-center text-[8px] font-black uppercase tracking-widest ${x.c} ${tr.level === x.l ? 'ring-2 ring-current' : ''}`}>
+                <div key={x.l} className={`rounded-xl p-2 text-center text-[8px] font-black uppercase tracking-widest break-words ${x.c} ${tr.level === x.l ? 'ring-2 ring-current' : ''}`}>
                   <div>{x.l}</div>
                   <div className="font-bold normal-case tracking-normal mt-0.5">{x.r}</div>
                 </div>

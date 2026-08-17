@@ -120,7 +120,14 @@ export default function NEWS2Page() {
             <div className="flex flex-col gap-1.5">
               <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">SpO₂ (%)</span>
               <div className="flex gap-2">
-                <input aria-label="SpO2 yüzdesi" type="text" inputMode="decimal" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
+                {/*
+                  min-w-0: flex ögesi varsayılan olarak `min-width: auto`
+                  taşır ve içeriğinden dar olmayı reddeder. Ölçüldü (320px):
+                  bu satır yüzünden "EK O₂" düğmesi 360'a taşıyor, yani
+                  sayfa yatay kayıyordu. `flex-1` tek başına küçültmeye
+                  yetmiyor.
+                */}
+                <input aria-label="SpO2 yüzdesi" type="text" inputMode="decimal" value={spo2} onChange={e=>setSpo2(e.target.value)} className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold" />
                 <button onClick={()=>setOnO2(!onO2)} className={`px-4 rounded-xl text-[10px] font-black transition-all border-2 ${onO2 ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-slate-400'}`}>
                   EK O₂
                 </button>
