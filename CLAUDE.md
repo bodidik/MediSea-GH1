@@ -733,6 +733,18 @@ bir dokunma hedefi taraması onları göremez ve "kusur yok" der.
 dokunma hedefi denetimleri bunları kaçırmıştı, çünkü hepsi 320/375'te
 yapılmıştı. "Giriş" üstelik bir dönüşüm kontrolü.
 
+**Dokunma hedefi tararken `sr-only` ögeleri ELE.** İki taramada birden
+sahte kusur ürettiler: gizlenmiş `<input>`'lar (onay kutusu/radyo) ve
+atlama bağlantısı 1×1 ölçülüyor. İkisi de tasarım gereği: girdinin gerçek
+hedefi onu SARAN `<label>`, atlama bağlantısı ise odakta açılıyor
+(`.focus\:not-sr-only:focus { position: static; width: auto; … }`).
+Ölçüt: `input[type=checkbox|radio]` için `el.closest('label')`'ı ölç;
+`sr-only` sınıfı taşıyan bağlantıları hiç sayma. Doğrulaması `element
+.focus()` ile YAPILMAZ (arka plandaki iframe'de `:focus` boyanmıyor) —
+stil sayfasındaki kuralı `cssText` ile ara.
+
+Ölçüldü: 8 araçta 21 "kusur"un 18'i bu iki sınıftandı.
+
 **Dört genişlikte ölç: 320 · 375 · 768 · 1280.** Her breakpoint farklı bir
 öge kümesi açıyor; birinde temiz çıkması ötekiler için bir şey söylemez.
 
