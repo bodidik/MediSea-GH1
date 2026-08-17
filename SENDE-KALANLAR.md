@@ -314,7 +314,55 @@ Sendromlar** var — kütüphanenin en temel başlıklarından biri, şu an
 
 ---
 
-## 11. Küçük not: premium hesap
+## 12. Feokromositoma konusu dolduruldu ama hâlâ gizli
+
+`web/content/canonical/endokrinoloji/feokromositoma-ve-paraganglioma.json`
+verdiğin akademik rehberle dolduruldu (8 bölüm, genetik küme tablosu,
+preoperatif hazırlık akış şeması). İçeriğe dokunmadım, yalnızca HTML
+kalıbına çevirdim.
+
+**`hidden: true` olarak bıraktım** — hem bu konu hem ebeveyni
+(`adrenal-medulla-hastaliklari`) gizli, yani bu dal senin bilinçli bir
+kararınla henüz yayına kapalı görünüyor. Hazırsa açman tek satır:
+
+```json
+"hidden": false
+```
+
+hem bu dosyada hem `adrenal-medulla-hastaliklari.json`'da. Açarsan branş
+sayfasında görünür olur ve site haritasına girer.
+
+---
+
+## 13. Kısaltma açılımı sözlüğü — genişletmen gereken tek yer
+
+Konu sayfalarında kısaltmaları ilk kullanımda açılımıyla verme mekanizması
+kuruldu (`web/app/lib/kisaltma.ts`), hem açık konu sayfası hem premium
+konu gövdesi için. İçerik dosyalarına dokunulmadı; sözlük render tarafında.
+
+**28 girdiyle başladı ve bilerek eksik.** Yalnızca açılımı tartışmasız
+olanlar kondu (BT, KBH, TSH, PTH, GFR, SGLT2…). Bilerek dışarıda
+bıraktıklarım — açılımı belirsiz olsaydı yanlış öğretirdi:
+
+- bağlama göre değişenler: `CD`, `PD`, `CR`, `OS`, `AI`
+- kurum adları: `KDIGO`, `ECOG`
+- ilaç/gen adları: `PCSK9`, `DDAVP`, `JAK2`
+
+Genişletmek için `kisaltma.ts` içindeki `KISALTMALAR` nesnesine satır
+eklemen yeterli, başka hiçbir yer değişmiyor:
+
+```ts
+XYZ: "açılımı",
+```
+
+**Kapsam bilerek dar:** quiz, flashcard ve vaka dosyalarına hiç
+uygulanmıyor — onlar ölçme içeriği, kısaltmayı açmak sınav sorusunun
+cevabını peşinen verir. Tablolara da uygulanmıyor, dar hücrede taşma
+üretiyor.
+
+---
+
+## 14. Küçük not: premium hesap
 
 Veritabanında tek kullanıcı var (`denav38@gmail.com`) ve inşaat için
 premium yapıldı. Geri almak istersen:
