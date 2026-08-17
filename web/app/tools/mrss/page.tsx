@@ -89,8 +89,8 @@ export default function MRSSPage() {
         <div className="space-y-2">
           {REGIONS.map(region => (
             <div key={region.id} className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm">
-              <div className="flex items-center gap-3">
-                <p className="text-[11px] font-black text-blue-900 w-40 shrink-0">{region.label}</p>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                <p className="text-[11px] font-black text-blue-900 w-full sm:w-40 sm:shrink-0">{region.label}</p>
                 <div className="flex gap-1 flex-1">
                   {OPTS.map(opt => (
                     <button key={opt.pts} type="button"

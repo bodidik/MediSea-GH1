@@ -75,7 +75,7 @@ export default function OsmolalGapPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Parametreler</p>
           <Input label="Ölçülen Osmolalite" value={measured} set={setMeasured} ph="ör. 320" unit="mOsm/kg" note="Laboratuvar (frezpunkt) değeri" />
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Input label="Na⁺" value={na}      set={setNa}      ph="ör. 138" unit="mEq/L" />
             <Input label="Glukoz" value={glucose} set={setGlucose} ph="ör. 100" unit="mg/dL" />
             <Input label="BUN"    value={bun}     set={setBun}     ph="ör. 18"  unit="mg/dL" />
