@@ -136,12 +136,12 @@
       "baslik": "PPGL Moleküler Küme Karşılaştırması",
       "kolonlar": ["Özellik", "Küme 1 (SDH/VHL)", "Küme 2 (RET/NF1/MAX)", "Küme 3"],
       "satirlar": [
-        ["Yolak", "Yalancı hipoksi (HIF↑)", "Kinaz sinyali (mTOR/MAPK)", "Wnt sinyali"],
-        ["Temel genler", "SDHB, SDHD, VHL", "RET, NF1, MAX, HRAS", "CSDE1, UBTF::MAML3"],
-        ["Biyokimyasal fenotip", "Noradrenerjik/dopaminerjik", "Adrenerjik (epinefrin↑)", "Değişken"],
-        ["Sık yerleşim", "Ekstraadrenal/baş-boyun", "Sürrenal (bilateral sık)", "Değişken"],
-        ["Metastaz riski", "Yüksek (SDHB: %35-75)", "Düşük (<%5-10)", "Yüksek"],
-        ["Herediter", "Sıklıkla herediter", "MEN2/NF1 ile ilişkili", "Genellikle sporadik"]
+        {"hucreler": ["Yolak", "Yalancı hipoksi (HIF↑)", "Kinaz sinyali (mTOR/MAPK)", "Wnt sinyali"]},
+        {"hucreler": ["Temel genler", "SDHB, SDHD, VHL", "RET, NF1, MAX, HRAS", "CSDE1, UBTF::MAML3"]},
+        {"hucreler": ["Biyokimyasal fenotip", "Noradrenerjik/dopaminerjik", "Adrenerjik (epinefrin↑)", "Değişken"]},
+        {"hucreler": ["Sık yerleşim", "Ekstraadrenal/baş-boyun", "Sürrenal (bilateral sık)", "Değişken"]},
+        {"hucreler": ["Metastaz riski", "Yüksek (SDHB: %35-75)", "Düşük (<%5-10)", "Yüksek"]},
+        {"hucreler": ["Herediter", "Sıklıkla herediter", "MEN2/NF1 ile ilişkili", "Genellikle sporadik"]}
       ]
     },
     {
