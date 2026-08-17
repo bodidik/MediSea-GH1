@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "id": "feokromositoma",
+    "branch": "endokrinoloji",
+    "baslik": "Feokromositoma ve Paraganglioma",
+    "altbaslik": "Adrenal medulla ve ekstra-adrenal kromafinlerden kaynaklanan katekolamin salgılayan tümörler; tanı, genetik değerlendirme ve cerrahi yönetim",
+    "rozetler": ["YAKINDA"],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": true,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 0,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Bu konunun klinik anlatımı hazırlanıyor. Klinik vaka bölümü aktif — konu anlatımı yakında eklenecek."
+    }
+  ]
+}
