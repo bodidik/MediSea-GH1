@@ -20,7 +20,7 @@ function risk(s: number) {
 function SelectRow({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
-      <span className="text-sm font-bold text-blue-900/80 min-w-0 flex-1">{label}</span>
+      <span className="text-sm font-bold text-blue-900/80 min-w-0 basis-full sm:basis-auto sm:flex-1">{label}</span>
       <select aria-label={label} value={value} onChange={e => onChange(Number(e.target.value))}
         className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none max-w-full min-w-0 focus:border-blue-900/40 text-blue-950 shrink-0">
         {opts.map(([lbl, pts]) => <option key={pts} value={pts}>{lbl}</option>)}
