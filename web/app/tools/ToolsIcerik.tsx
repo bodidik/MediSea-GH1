@@ -368,12 +368,16 @@ export default function ToolsIcerik() {
           </div>
 
           {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
-              Bölge ilk render'dan itibaren DOM'da: role="status" sonradan
-              EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü duyurur. */}
-          {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
-              Sayı BENZERSİZ slug üzerinden: kayıtları toplamak "117 araç"
-              gibi gerçekte olmayan bir sayı üretir (aynı gerekçe toplamArac
-              hesabında da yazılı, bazı araçlar iki branşta listeleniyor). */}
+              İki ayrı karar burada:
+
+              1) Bölge ilk render'dan itibaren DOM'da duruyor. `role="status"`
+                 sonradan EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü
+                 duyurur; koşullu basılsaydı ilk mesaj kaçardı.
+
+              2) Sayı BENZERSİZ slug üzerinden. Kayıtları toplamak "117 araç"
+                 gibi gerçekte olmayan bir sayı üretir, çünkü bazı araçlar
+                 iki branşta birden listeleniyor (aynı gerekçe toplamArac
+                 hesabında da yazılı). */}
           <div role="status" aria-live="polite" className="sr-only">
             {(() => {
               const n = new Set(filteredData.flatMap((c) => c.items.map((i) => i.slug))).size;
