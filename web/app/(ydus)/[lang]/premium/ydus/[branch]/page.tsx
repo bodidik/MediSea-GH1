@@ -129,6 +129,14 @@ export default async function BransSayfasi({
           display: 'flex',
           alignItems: 'center',
           gap: '1rem',
+          /**
+           * Ölçüldü (320px): bu satır sarmadığı için kutu 283px'e sığarken
+           * içerik 299px'e çıkıyordu — üç çocuk (ikon · başlık+açıklama ·
+           * konu sayacı) 16px'lik boşluklarla yan yana dizilince taşıyor.
+           * Kutu sınır içinde kaldığı için taşma yalnızca `scrollWidth`
+           * ölçütüyle görünüyor; belge kaydırması vermiyor.
+           */
+          flexWrap: 'wrap',
         }}>
           <div style={{
             width: '52px',
