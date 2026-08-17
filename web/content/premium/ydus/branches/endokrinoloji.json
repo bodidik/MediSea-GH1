@@ -78,9 +78,10 @@
           "id": "feokromositoma",
           "baslik": "Feokromositoma ve Paraganglioma",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         }
       ]
     },

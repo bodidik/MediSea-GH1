@@ -4,7 +4,7 @@
     "branch": "endokrinoloji",
     "baslik": "Feokromositoma ve Paraganglioma",
     "altbaslik": "Adrenal medulla ve ekstra-adrenal kromafinlerden kaynaklanan katekolamin salgılayan tümörler; tanı, genetik değerlendirme ve cerrahi yönetim",
-    "rozetler": ["YAKINDA"],
+    "rozetler": ["YENİ", "SINAV SPOTU"],
     "guncelleme": "2026-08"
   },
   "moduller": {
@@ -21,9 +21,175 @@
   },
   "icerik": [
     {
+      "tip": "metin",
+      "baslik": "Tanım ve Terminoloji",
+      "satirlar": [
+        "Feokromositomalar (PCC), böbrek üstü bezinin (sürrenal gland) medullasında yer alan kromafin hücrelerinden köken alan nöroendokrin tümörlerdir. Sempatik veya parasempatik ekstraadrenal otonomik gangliyon zincirlerinden köken alan benzer tümörler ise paragangliyoma (PGL) olarak adlandırılır.",
+        "Klinik ve biyokimyasal prezantasyonlarının benzerliği nedeniyle, her iki tümör grubu literatürde sıklıkla feokromositoma ve paragangliyoma (PPGL) ortak şemsiye terimiyle ifade edilmektedir.",
+        "2022 WHO sınıflaması, sürrenal medulla içindeki kromafin kaynaklı tümörleri feokromositoma, ekstraadrenal sempatik ve parasempatik olanları ise paragangliyoma olarak kesin hatlarla ayırmıştır. Sürrenal yerleşimli olup boyutu 1 cm'den küçük olan lezyonlar mikrofeokromositoma olarak sınıflandırılır."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji",
+      "satirlar": [
+        "PPGL'ler genel hipertansif popülasyonun yaklaşık %0.1 ila %0.6'sında saptanan nadir antitelerdir; genel popülasyonda yıllık insidansı milyonda 2-8 vaka civarındadır.",
+        "Günümüzde PPGL vakalarının yaklaşık %60'ı, başka klinik nedenlerle çekilen abdominal görüntülemeler esnasında tesadüfen saptanan sürrenal insidentalomalardır. Sürrenal insidentalomaların değerlendirilmesinde feokromositoma prevalansı %3 ila %7 arasında değişmektedir.",
+        "Kadın ve erkeklerde benzer sıklıkta görülen bu tümörler en çok hayatın dördüncü ve beşinci dekadlarında teşhis edilir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Katekolamin Biyosentez Yolağı",
+      "satirlar": [
+        "Kromafin hücrelerinde sentez zinciri L-tirozinden başlar. Tirozin hidroksilaz (TH), tirozini L-DOPA'ya dönüştüren hız kısıtlayıcı (rate-limiting) adımdır.",
+        "DOPA, sitoplazmada dopamin'e; dopamin ise veziküllere alınarak dopamin beta-hidroksilaz (DBH) aracılığıyla norepinefrin'e dönüştürülür.",
+        "Sürrenal medullada norepinefrin sitoplazmaya geri sızar ve feniletanolamin N-metiltransferaz (PNMT) enzimi aracılığıyla epinefrin'e (adrenalin) dönüştürülür. PNMT enziminin sentezi ve aktivasyonu, sürrenal portal sistem yoluyla medullaya ulaşan yüksek konsantrasyondaki glukokortikoidlere (kortizol) doğrudan bağımlıdır.",
+        "Bu nedenle epinefrin salgılayan tümörler neredeyse tamamen sürrenal medulla (feokromositoma) yerleşimlidir. Ekstraadrenal paragangliyomalar lokal ortamda yüksek glukokortikoid konsantrasyonundan ve dolayısıyla PNMT'den yoksun oldukları için epinefrin sentezleyemezler; noradrenerjik (norepinefrin) veya dopaminerjik (dopamin) fenotip gösterirler. Normal insan sürrenal medullasından salgılanan katekolaminlerin yaklaşık %80'i epinefrindir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Metabolizma ve Patofizyoloji",
+      "satirlar": [
+        "Katekolaminler kromafin hücrelerindeki granüllerde depolanır. Tümöral hücrelerde katekolaminlerin serbest metanefrinlere dönüşümü (epinefrinden metanefrin, norepinefrinden normetanefrin) intratümöral olarak gerçekleşir.",
+        "Salgılanan norepinefrin alfa-1, alfa-2 ve beta-1 adreseptörleri üzerinden güçlü vazokonstriksiyon ve kardiyak debi artışı yaparken; epinefrin beta-1 ve beta-2 reseptörleri aracılığıyla vazodilatasyon, kardiyak debi artışı ve glikoz metabolizması uyarımı (glukonojenez/glikojenoliz) sağlar.",
+        "Tümörden epizodik deşarjlar, bozulmuş baroreseptör duyarlılığı ve kronik intravasküler volüm kaybı kan basıncındaki aşırı oynamaların temel nedenidir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular: Hipertansiyon ve Klasik Triad",
+      "satirlar": [
+        "PPGL'ler çok sayıda farklı sistemik hastalığı taklit edebilen klinik tablolara yol açtığı için tıp literatüründe sıklıkla 'harika taklitçi' (the great mimic) olarak adlandırılır. Ataklar (paroksizmler) genellikle ani başlar ve ortalama 15-20 dakika sürer.",
+        "Hipertansiyon, hastaların %90-95'inde izlenen en önemli klinik bulgudur. Olguların yaklaşık %50'sinde sustained (kalıcı) hipertansiyon, %45'inde paroksismal (epizodik) hipertansiyon görülürken, %5-15 hasta tamamen normotansif seyredebilir.",
+        "Epizodik başağrısı (%80-90), çarpıntı (%70) ve aşırı terleme (%60-70) klasik triad olarak bilinir; ancak bu üç semptomun bir arada bulunma oranı yalnızca %20'dir.",
+        "Ataklar esnasında göğüste sıkışma, ölüm korkusu (anksiyete), titreme (tremor), yüzde solukluk (pallor), ellerde/ayaklarda soğukluk ve atağın sonunda aşırı sıcaklık hissiyle birlikte terleme izlenir.",
+        "Paroksizmler; postüral değişiklikler, anestezi indüksiyonu, abdominal palpasyon, defekasyon, egzersiz, kolonoskopi veya beta-blokörler, metoklopramid, TCA'lar, anestezikler ve kortikosteroidler gibi ilaçlar ile tetiklenebilir."
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "baslik": "Geroula Klinik Karar Skoru",
+      "metin": "Klinik şüpheyi objektifleştirmek için geliştirilmiş puanlama sistemi: Solukluk (+1), çarpıntı (+1), nabız ≥85 bpm (+1), tremor (+1), mide bulantısı (+1), BMI <25 kg/m² (+1), BMI >30 kg/m² (−1). Skor ≥3 olması, PPGL bulunma olasılığını 5.8 ila 7.5 kat artırır. Epinefrin salgılayan Küme 2 tümörleri yüksek skorlar ve paroksizmlerle gelirken, Küme 1 (noradrenerjik) tümörler genellikle düşük semptom skorlarına rağmen kalıcı hipertansiyonla prezante olur."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sistemik Komplikasyonlar ve Atipik Tablolar",
+      "satirlar": [
+        "Kardiyovasküler: Kronik katekolamin maruziyeti sol ventrikül hipertrofisine, koroner spazma, ölümcül aritmilere ve Takotsubo (stres) kardiyomiyopatisine yol açabilir. Alfa-blokaj yapılmadan başlanan beta-blokörler, akut kardiyak yetmezlik ve akciğer ödemini tetikleyebilir. Plazma normetanefrin yüksekliği baskın hastalarda ateroskleroz gelişimi hızlanırken, metanefrin yüksekliği olanlarda kardiyomiyopati ve ritim bozuklukları ön plandadır.",
+        "Ortostatik Hipotansiyon: Kronik vazokonstriksiyon kaynaklı intravasküler hacim daralması ve adrenerjik reseptörlerin desensitizasyonu nedeniyle yaygındır. Yalnızca epinefrin salgılayan nadir tümörlerde paradoksikal epizodik hipotansiyon veya hızlı dalgalanan kan basıncı eğrisi görülebilir.",
+        "Metabolik Değişiklikler: Alfa-adrenerjik reseptör uyarımı insülin salınımını inhibe ederek glukoz tolerans bozukluğuna ve açlık hiperglisemisine zemin hazırlar; bu metabolik tablo cerrahi kür sonrasında tamamen geri döner.",
+        "Ektopik Hormon Sendromları: Ektopik ACTH/CRH (Cushing sendromu), PTHrP (hiperkalsemi), VIP (sekretuar diyare) veya GHRH (akromegali) salınımı eşlik edebilir.",
+        "İdrar torbası paragangliyomalarında micturition (işeme) ile tetiklenen hipertansif paroksizmler ve ağrısız hematüri patognomoniktir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Biyokimyasal Tanı: İlk Basamak Tarama Testleri",
+      "satirlar": [
+        "Klinik şüphe, dirençli hipertansiyon, açıklanamayan tansiyon değişkenliği veya lipid-fakir (>10 HU) sürrenal insidentaloma saptanan hastalarda biyokimyasal tarama yapılmalıdır. Görüntüleme çalışmalarına geçilmeden önce biyokimyasal kanıtlama yapılmalıdır.",
+        "Plazma Serbest Metanefrinleri: En duyarlı testtir (sensitivite %96-100, spesifisite %85-89). Negatif prediktif değeri %99'un üzerindedir; bu nedenle tümörü dışlamada mükemmeldir.",
+        "24 Saatlik İdrarda Fraksiyone Metanefrinler ve Katekolaminler: Benzer yüksek duyarlılığa ve daha yüksek özgüllüğe (%98) sahiptir. Düşük riskli hastalarda (düşük pre-test olasılığı olan) ilk tercih olarak önerilir. İdrar toplama doğruluğunu teyit etmek için kreatinin klirensi mutlaka ölçülmelidir. Analizlerde en güvenilir yöntem ilaç metabolitlerinden en az etkilenen LC-MS/MS'tir."
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "baslik": "Preanalitik Koşullar ve Yalancı Pozitifliği Önleme",
+      "metin": "Plazma örnekleri, hasta en az 20-30 dakika boyunca sessiz ve loş bir odada sırtüstü (supine) yatarak dinlendikten sonra kalıcı damar yolu (branül) aracılığıyla alınmalıdır. Supine branül alımında feokromositomayı dışlamak için eşikler: metanefrin <0.3 nmol/L ve normetanefrin <0.66 nmol/L. Test öncesi 12 saat boyunca kafein, alkol, tütün ve egzersiz kısıtlanmalıdır. Normetanefrin normalin 2 katının altında saptandığında TCA, levodopa, sempatomimetikler ve antipsikotikler gibi interferans yapan ilaçlar sorgulanarak en az 2 hafta önce kesilmeli ve test tekrarlanmalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Borderline Yüksekliklerin Ayrımı",
+      "satirlar": [
+        "Normetanefrin düzeyleri normalin 2 katının altında saptandığında öncelikle interferans yapan ilaçlar kesilmeli ve test tekrarlanmalıdır.",
+        "Klonidin Baskılama Testi: Oral klonidin alımından sonra plazma normetanefrin düzeyinde %40'tan az baskılanma izlenmesi PPGL lehinedir.",
+        "Dopamin salgılayan baş-boyun paragangliyomalarını veya SDHx taşıyıcılarını atlamamak adına plazma 3-metoksitiramin (3MT) veya idrar dopamin düzeyleri de ölçüme dahil edilmelidir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Anatomik ve Fonksiyonel Görüntüleme",
+      "satirlar": [
+        "Bilgisayarlı Tomografi (BT): Yüksek uzamsal çözünürlüğü nedeniyle toraks, abdomen ve pelvis görüntülemesinde ilk tercihtir (duyarlılık >%90). Feokromositomalar kontrastsız BT'de her zaman 10 HU veya daha yüksek dansiteye sahiptir; intrastoplazmik lipid içermediklerinden unenhanced dansitenin <10 HU olması feokromositomayı güvenle dışlar. Kontrastlı çekimlerde yoğun, heterojen kontrast tutulumu ve washout fazında gecikme görülür. Preoperatif alfa-blokaj yapılmamış hastalarda bile düşük ozmolariteli kontrast maddelerle BT çekimi güvenlidir.",
+        "MRG: Gebelerde, çocuklarda, kontrast alerjisi olanlarda veya kafa tabanı/boyun paragangliyomalarında tercih edilir. Feokromositomalar T2 ağırlıklı sekanslarda tipik olarak 'lightbulb' (parlak ampul) hiperintensitesi gösterirler.",
+        "68Ga-DOTATATE PET/CT: Somatostatin reseptör tip 2'yi (SST2) hedefleyen bu görüntüleme; özellikle SDHx mutasyonları, baş-boyun paragangliyomaları ve metastatik hastalık saptanmasında en hassas fonksiyonel modalitedir (%93 saptama oranı). Anatomik kitle boyutu >5 cm, ekstraadrenal paragangliyoma şüphesi, multifokal veya metastatik olgularda endikedir.",
+        "18F-FDG PET/CT: Dediferansiye, hızlı seyirli ve özellikle SDHB-ilişkili metastatik tümörlerin metastaz odağı taramasında yüksek duyarlılığa sahiptir.",
+        "123I-MIBG Sintigrafisi / SPECT-CT: Norepinefrin transporter (NET) aracılı hücre içine alınan MIBG, adrenerjik fenotipte spesifiktir; ancak duyarlılığı DOTATATE PET/CT'ye göre belirgin ölçüde düşüktür."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Moleküler Sınıflandırma ve Genetik Sendromlar",
+      "satirlar": [
+        "PPGL'ler insan tümörleri arasında en yüksek herediter geçiş oranına sahip neoplazilerdir; hastaların yaklaşık %30-40'ında germline mutasyon mevcuttur. Saptanan mutasyonlar patofizyolojilerine göre 3 ana moleküler kümede (cluster) sınıflandırılır.",
+        "Küme 1 — Yalancı Hipoksi Yolağı: Süksinat veya fumarat birikimi (1A) ya da hipoksi sinyal elemanlarının doğrudan stabilizasyonu (1B) prolil hidroksilazları bloke ederek HIF-1a/HIF-2a stabilizasyonuna ve yoğun neovaskülarizasyona yol açar. Alt Grup 1A (Krebs Döngüsü): SDHA, SDHB, SDHC, SDHD, SDHAF2, FH, MDH2, IDH1. Alt Grup 1B (VHL/HIF Sinyali): VHL, EPAS1 (HIF2A), EGLN1/2. Bu grupta PNMT ekspresyonu olmadığı için tümörler noradrenerjik (bazen dopaminerjik) fenotiptedir ve sıklıkla ekstraadrenal paragangliyoma yerleşimlidirler. Metastaz riski çok yüksektir; özellikle SDHB mutasyonunda %35-75 arasındadır.",
+        "Küme 1'de Maternal Imprinting: SDHD ve SDHAF2 mutasyonları annesel damgalamaya tabidir; hastalık yalnızca babadan kalıtıldığında ortaya çıkar, anneden kalıtıldığında sessiz kalır. SDHD sıklıkla kafa tabanı ve boyunda çok odaklı parasempatik paragangliyomalara yol açar.",
+        "Küme 2 — Kinaz Sinyali Yolağı: Hücre büyümesi, proliferasyonu ve sağkalım yolaklarının (mTOR, MAP kinaz) aktivasyonudur. Temel genler: RET (MEN2), NF1, TMEM127, MAX, HRAS. PNMT eksprese edildiği için tümörler adrenerjik fenotiptedir (epinefrin ve metanefrin yüksekliği). Sıklıkla sürrenal yerleşimli feokromositoma olarak izlenirler; RET ve MAX mutasyonlarında bilateral sık görülür. Epizodik paroksizmler ve yüksek semptom skorları ile karakterizedirler; metastatik risk düşüktür (<%5-10).",
+        "Küme 3 — Wnt Sinyali: Temel genler CSDE1 ve UBTF::MAML3 füzyonları. Genellikle sporadik, agresif seyirli, nüks ve metastaz riski yüksek tümörlerdir."
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "PPGL Moleküler Küme Karşılaştırması",
+      "kolonlar": ["Özellik", "Küme 1 (SDH/VHL)", "Küme 2 (RET/NF1/MAX)", "Küme 3"],
+      "satirlar": [
+        ["Yolak", "Yalancı hipoksi (HIF↑)", "Kinaz sinyali (mTOR/MAPK)", "Wnt sinyali"],
+        ["Temel genler", "SDHB, SDHD, VHL", "RET, NF1, MAX, HRAS", "CSDE1, UBTF::MAML3"],
+        ["Biyokimyasal fenotip", "Noradrenerjik/dopaminerjik", "Adrenerjik (epinefrin↑)", "Değişken"],
+        ["Sık yerleşim", "Ekstraadrenal/baş-boyun", "Sürrenal (bilateral sık)", "Değişken"],
+        ["Metastaz riski", "Yüksek (SDHB: %35-75)", "Düşük (<%5-10)", "Yüksek"],
+        ["Herediter", "Sıklıkla herediter", "MEN2/NF1 ile ilişkili", "Genellikle sporadik"]
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Preoperatif Medikal Hazırlık: Adım Adım Protokol",
+      "satirlar": [
+        "Feokromositoma cerrahisi öncesinde hemodinamik stabilizasyonu sağlamak ve intraoperatif katekolamin fırtınasını önlemek amacıyla tüm hastalara (asemptomatik/normotansif olsalar dahi) en az 7 ila 14 gün boyunca kombine adrenerjik blokaj tedavisi uygulanmalıdır.",
+        "Adım 1 — Alfa-Adrenerjik Blokaj (İlk Tercih: Doxazosin): Her zaman ilk başlanması gereken ilaç grubudur. Genişleyen damar yatağını doldurmak ve kan basıncını kontrol altına almak için kullanılır. Doxazosin gece yatarken 1 mg olarak başlanır; kan basıncı takibine göre her 2-3 günde bir 1-2 mg artırılarak günde iki kez 3-10 mg (maksimum 16 mg/gün) düzeyine titre edilir. Fenoksibenzamin alternatif olarak 10 mg günde bir veya iki kez başlanıp günde 20-100 mg'a kadar arttırılabilir; ancak yüksek maliyeti, şiddetli nazal tıkanıklık ve ameliyat sonrası uzamış ağır hipotansiyon riski kullanımı kısıtlar.",
+        "Adım 2 — Agresif Hacim Replasmanı ve Sodyum Yüklemesi: Alfa-blokajın başlanmasını takiben (2-3. günde) vazodilatasyon sonucu gelişecek ortostazı önlemek ve kronik hacim açığını kapatmak amacıyla diyette tuz alımı günde ≥5000 mg düzeyine çıkarılmalı ve bol sıvı tüketimi sağlanmalıdır. Kalp veya böbrek yetmezliği olanlarda bu yükleme kontrendikedir. Ameliyattan önceki 12-24 saatte 2 Litre %0.9 Serum Fizyolojik infüzyonu uygulanır.",
+        "Adım 4 — Ek ve Alternatif Tedaviler: Kalsiyum kanal blokörleri (nicardipine SR 30 mg günde iki kez veya amlodipine 2.5-5 mg/gün) alfa-blokaja rağmen tansiyon kontrolü sağlanamayan hastalarda eklenir ya da alfa-blokörü tolere edemeyenlerde monoterapi olarak kullanılabilir. Metyrosine (alfa-metil-para-tirozin), tirozin hidroksilazı inhibe ederek katekolamin sentezini azaltır; genellikle metastatik PPGL rezeksiyonları gibi zor cerrahilerden önce tedaviye eklenir; en önemli yan etkisi şiddetli hipersomnolans ve ekstrapiramidal semptomlardır."
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Bu konunun klinik anlatımı hazırlanıyor. Klinik vaka bölümü aktif — konu anlatımı yakında eklenecek."
+      "baslik": "Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!",
+      "metin": "Beta-blokörler ASLA alfa-blokaj tam olarak sağlanmadan başlanmamalıdır. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, serbest katekolaminler uyarılmamış alfa reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri tetikler. Alfa-blokajdan en az 2-3 gün sonra, refleks taşikardiyi ve aritmiyi kontrol etmek amacıyla tedaviye eklenir: Metoprolol 12.5 mg günde iki kez veya Propranolol 10 mg 6 saatte bir. Kalp hızı hedefi supinede 60-80 bpm, ayakta 70-100 bpm."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Cerrahi Yaklaşım ve Anestezi Yönetimi",
+      "satirlar": [
+        "Tümör boyutu <6 cm olan ve invazyon şüphesi taşımayan durumlarda altın standart laparoskopik adrenalektomidir. Özellikle posterior retroperitoneoskopik yaklaşım, peritoneal boşluğa girmemesi ve çok daha hızlı iyileşme sağlaması nedeniyle en çok tercih edilen yöntemdir. İnvaziv ve >6 cm tümörlerde açık cerrahi endikedir.",
+        "Korteks Koruyucu (Cortical-Sparing) Adrenalektomi: Bilateral sürrenal feokromositoma riski yüksek herediter sendromlarda (MEN2, VHL), hastayı ömür boyu glukokortikoid ve mineralokortikoid replasmandan kurtarmak amacıyla sağlıklı sürrenal korteks dokusunu koruyan parsiyel adrenalektomi yapılması önerilir.",
+        "Anestezi İlaç Yönetimi: Histamin salınımına ve sempatik uyarılmaya yol açarak katekolamin salınımını tetikleyebilecek fentanil, ketamin, morfin, atropin, halotan ve desfluran gibi ajanlardan kaçınılmalıdır. Anestezi indüksiyonu propofol, etomidat ve sentetik opioidlerle güvenle gerçekleştirilebilir.",
+        "İntraoperatif Kriz Yönetimi: Tümör manipülasyonu esnasında tansiyon fırlamaları kısa etkili vazodilatörlerle yönetilir: Sodyum Nitroprussid (0.5-5 mcg/kg/dk infüzyon), kısa etkili non-selektif alfa bloker Phentolamine (1 mg test dozu, ardından 2-5 mg IV boluslar) veya Nicardipine (5 mg/saat infüzyon). Eş zamanlı magnezyum sülfat infüzyonunun intraoperatif hemodinamik instabiliteyi azalttığı gösterilmiştir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Postoperatif Kritik Komplikasyonlar (İlk 24-48 Saat)",
+      "satirlar": [
+        "Dirençli Hipotansiyon: Tümör çıkarıldıktan sonra katekolamin vazokonstriksiyonunun ortadan kalkmasıyla gelişir. Öncelikli tedavi hızlı sıvı resüsitasyonudur; dirençli vakalarda geçici vazopressörler kullanılabilir. Bilateral cerrahi yapılanlarda akut sürrenal yetmezlik ekarte edilmeli ve steroid başlanmalıdır.",
+        "Rebound Hipoglisemi: Katekolaminlerin insülin salgısı üzerindeki kronik baskılayıcı etkisinin aniden kalkmasıyla oluşan rebound hiperinsülinemiye bağlıdır. Cerrahi sonrası hastaların %4 ila %43'ünde hipoglisemi gelişebilir.",
+        "Kalıcı Hipertansiyon: Cerrahi sonrası bir kısmında kan basıncı hemen normale dönmeyebilir. Bu durum baroreseptörlerin yeniden ayarlanmasına, damar duvarındaki yapısal değişikliklere veya esansiyel hipertansiyona bağlı olabileceği gibi rezidüel tümör varlığı açısından da uyarıcı olmalıdır."
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Rebound Hipoglisemi Takibi",
+      "metin": "Ameliyat sonrası ilk 24-48 saat boyunca yakın kan şekeri takibi yapılmalı ve IV idame sıvılarında mutlaka %5 Dekstroz bulundurulmalıdır. Hastaların %4-43'ünde hipoglisemi gelişebilir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "baslik": "Uzun Dönem Takip Protokolü",
+      "metin": "Ameliyattan 2-6 hafta sonra plazma veya idrar metanefrin düzeyleri ölçülerek cerrahi başarısı teyit edilmelidir. Benign tümörlerde dahi nüks ve metastaz riski ilk cerrahiden onlarca yıl sonra ortaya çıkabileceğinden, tüm hastalara yıllık biyokimyasal tarama ile en az 10 yıl, ideal olarak ömür boyu izlem önerilmektedir."
     }
   ]
 }
