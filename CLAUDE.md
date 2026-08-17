@@ -682,6 +682,17 @@ bir doğrulama yöntemi değil ve "kuralım uygulanmıyor" sonucu ondan
 `el.matches(seçici)`, `getComputedStyle(el).getPropertyValue('--tw-…')`
 ve stylesheet içindeki `cssText` üçlüsüne bak.
 
+**Ekrana basmak için kırptığın değeri ölçüme GERİ VERME.** Bu oturumda iki
+kez oldu: bir kez `slice(0,50)` doğru bir canonical adresi yanlış gösterdi,
+bir kez `head -c 600` ile kırpılmış bir slug listesi kopyalanıp taramaya
+girdi ve var olmayan bir adres ("…-psikoz", doğrusu "…-psikozu") 404
+verince sayfa kusurlu sanıldı. Kırpma yalnızca GÖSTERİM içindir; ölçüme
+giren değer tam hâliyle dosyadan ya da değişkenden alınmalı.
+
+Bunu yakalayan şey taramaya konan iki koruma oldu: `d.location.pathname`
+beklenen yola eşit mi ve gövdede "Sayfa bulunamadı" var mı. İkisi olmasa
+tarama "12/12 temiz" derdi ve biri geçersiz ölçümdü.
+
 Uzun değerleri kırpma: `boxShadow` bir dönem "none" sanıldı, çünkü
 Tailwind halkası dizenin ilerisindeydi ve ilk 90 karakter şeffaf
 yer tutuculardı.
