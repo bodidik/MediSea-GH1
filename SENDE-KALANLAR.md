@@ -217,6 +217,44 @@ Ayrıca **ölü kod** olarak duran bileşenler ve uçlar var (yukarıdaki tablod
 "ölü kod" satırları). Bunları silmek istersen söyle; kendi başıma
 silmedim, ileride kullanılmak üzere bırakılmış olabilirler.
 
+### Hiçbir yerden çağrılmayan bileşenler — ölçülmüş tam liste
+
+66 bileşen dosyası tarandı, **20'si hiçbir yerden çağrılmıyor** (~72 KB).
+Dinamik yükleme (`dynamic(() => import(...))`) tek yerde kullanılıyor ve
+o bileşen bu listede değil, yani yanlış pozitif riski yok:
+
+| Dosya | Boyut |
+|---|---|
+| `app/(ydus)/[lang]/premium/ydus/_endokrinoloji/hipofiz/akromegali/tedavi/akromegali-tedavi.tsx` | 12.9 KB |
+| `components/AdminBar.tsx` | 7.2 KB |
+| `app/components/PremiumQuizHistory.tsx` | 6.6 KB |
+| `app/components/GuidelinesFilters.tsx` | 4.7 KB |
+| `app/tools/components/AdBanner.tsx` | 4.2 KB |
+| `components/ChildLinks.tsx` | 3.9 KB |
+| `app/components/StrategyMap.tsx` | 3.7 KB |
+| `app/components/SectionsFilters.tsx` | 3.6 KB |
+| `app/components/SectionDetailFilters.tsx` | 3.1 KB |
+| `components/UpgradeCTA.tsx` | 2.9 KB |
+| `components/TableOfContents.tsx` | 2.6 KB |
+| `app/components/StudyQuickActions.tsx` | 2.6 KB |
+| `app/components/SectionsTable.tsx` | 2.4 KB |
+| `app/components/HeaderClient.tsx` | 2.0 KB |
+| `app/components/QuestionRun.tsx` | 1.4 KB |
+| `app/components/LangSwitch.tsx` | 1.4 KB |
+| `components/SecurePlayer.tsx` | 1.4 KB |
+| `app/components/NavCard.tsx` | 1.3 KB |
+| `app/components/PremiumQuizToday.tsx` | 1.0 KB |
+| `components/topics/RelatedAside.tsx` | 0.9 KB |
+
+Bir kısmı isminden belli ki ileriye dönük bırakılmış (`UpgradeCTA`,
+`SecurePlayer`, `LangSwitch`, `AdBanner`) — ödeme hattı, video koruma,
+çoklu dil ve reklam kararları verilince kullanılabilirler. Silme kararı
+bu yüzden sende.
+
+**Ölçümün sınırı:** tarama `export default function/class` kalıbını
+arıyor; ok fonksiyonuyla dışa aktarılan bir bileşen varsa listede
+görünmez. Yani liste eksik olabilir, ama içindekiler doğrulandı.
+
 ---
 
 ## 9. Ödeme hattı henüz yok — karşılıksız iki vaat kaldırıldı
