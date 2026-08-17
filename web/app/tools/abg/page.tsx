@@ -225,7 +225,7 @@ export default function AbgPage() {
         {/* ── ABG Girişi ─────────────────────────────── */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Arteriyel Kan Gazı</p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Input label="pH" value={ph} set={setPh} ph="7.35–7.45" unit="" />
             <Input label="PaCO₂" value={pco2} set={setPco2} ph="35–45" unit="mmHg" />
             <Input label="HCO₃⁻" value={hco3} set={setHco3} ph="22–26" unit="mEq/L" />
@@ -313,7 +313,7 @@ export default function AbgPage() {
         {/* ── Anyon Açığı ───────────────────────────── */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Anyon Açığı & Delta-Delta</p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Input label="Na⁺" value={na} set={setNa} ph="ör. 138" unit="mEq/L" />
             <Input label="Cl⁻" value={cl} set={setCl} ph="ör. 102" unit="mEq/L" />
             <Input label="Albumin (opsiyonel)" value={alb} set={setAlb} ph="ör. 4.0" unit="g/dL" />
@@ -407,8 +407,8 @@ export default function AbgPage() {
               { d: "Solunum Alkalozu (Akut)",    f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 2" },
               { d: "Solunum Alkalozu (Kronik)",  f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 5" },
             ].map(r => (
-              <div key={r.d} className="flex items-baseline gap-3 py-1.5 border-b border-slate-50">
-                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest w-44 shrink-0">{r.d}</span>
+              <div key={r.d} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5 border-b border-slate-50">
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest w-full sm:w-44 sm:shrink-0">{r.d}</span>
                 <span className="text-[11px] font-bold text-blue-900 font-mono">{r.f}</span>
               </div>
             ))}
