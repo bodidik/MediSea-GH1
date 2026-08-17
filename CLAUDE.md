@@ -1100,6 +1100,16 @@ birkaç sayfa için doğru araç; kütle taraması canlıda (ya da `npm start`
 ile üretim derlemesinde) yapılır — yalnız o zaman ölçtüğün şeyin son
 dağıtım olduğunu unutma.
 
+**Ekran dışı iframe'de `innerText` içeriğin ÇOĞUNU düşürür.** Ölçüldü
+(`left:-9999px` konumlu çerçevede, kardiyoloji branş sayfası):
+`body.innerText` 1201 karakter, `body.textContent` 94478. `innerText`
+yalnızca tarayıcının boyanmış saydığı metni verir. Bu yüzden "Diğer
+Konular bölümü yok" diye yanlış bir sonuç alındı — bölüm oradaydı.
+
+Metin varlığı sınarken `textContent` kullan ya da doğrudan DOM'u sorgula
+(`querySelectorAll('h2')`). Geometri ölçümleri (`getBoundingClientRect`,
+`scrollWidth`) bu sorundan ETKİLENMEZ; yalnızca metin okumaları etkilenir.
+
 Sayfayı iframe'e yükleyip ölçerken **doğru sayfada olduğunu da doğrula**:
 `d.location.pathname` beklenen yola eşit mi, gövdede "Sayfa bulunamadı"
 var mı. Bir tur, var olmayan araç adlarıyla (elle yazılmış liste) 404
