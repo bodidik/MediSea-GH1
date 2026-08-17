@@ -419,6 +419,7 @@ export default function ReadingTools() {
 
           <button
             onClick={() => apply("bold")}
+            aria-label="Kalınlaştır"
             title="Kalınlaştır"
             className={`${size} rounded-full text-white text-[13px] font-black transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -426,6 +427,7 @@ export default function ReadingTools() {
           </button>
           <button
             onClick={() => apply("u")}
+            aria-label="Altını çiz"
             title="Altını çiz"
             className={`${size} rounded-full text-white text-[13px] font-bold underline decoration-2 underline-offset-2 transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -436,6 +438,7 @@ export default function ReadingTools() {
 
           <button
             onClick={toNote}
+            aria-label="Not defterine gönder"
             title="Not defterine gönder"
             className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -443,6 +446,7 @@ export default function ReadingTools() {
           </button>
           <button
             onClick={copy}
+            aria-label="Kopyala"
             title="Kopyala"
             className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-white/15 active:scale-95`}
           >
