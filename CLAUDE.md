@@ -1120,6 +1120,49 @@ Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
 yüzeyden ayırt edilemez.
 
+### Ardışık ölçüm BAYAT sonuç verir — her senaryoyu izole et
+
+Aynı sayfada birden çok senaryoyu arka arkaya çalıştırıp her birinden
+sonra ekranı okumak, bir öncekinin metnini okumaya yol açıyor. Bu oturumda
+**üç kez** yanlış sonuç ürettirdi:
+
+- Üç bozuk yedek dosyası arka arkaya verildi; üçü de aynı hata mesajını
+  gösterdi ve "mesajlar ayırt edilmiyor" sanıldı. Tek tek denenince her
+  birinin DOĞRU ve FARKLI mesaj verdiği görüldü.
+- İki ok tuşu arka arkaya tetiklendi; "sol ok çalışmıyor" sanıldı. İzole
+  ölçümde çalıştığı çıktı (aradaki `setTimeout`'lar yarışıyordu).
+- Kategori sayıları toplu döngüde ölçülürken panel zaman aşımına uğradı.
+
+Şüphe işareti: **beklenen fark çıkmıyorsa** ölçüme güvenme. İki farklı
+girdinin aynı sonucu vermesi çoğu zaman uygulamanın değil, ölçümün
+raporudur. Her senaryo için sayfayı yeniden yükle.
+
+### Bozuk veri tohumlamak gerçek kusur buluyor
+
+Düzgün veriyle test etmek yetmiyor. Bu oturumda kasten bozuk kayıt
+tohumlamak ÜÇ kusur buldu ve üçü de yedekten geri yükleme yoluyla gerçek
+kullanıcıya ulaşabilirdi:
+
+| Bulunan | Etki |
+|---|---|
+| `usable()` içinde korumasız `m.t.trim()` | TEK bozuk vurgu bütün tekrar sayfasını düşürüyordu |
+| `strokes` alanında dize | "10 çizgi" uydurma sayısı (dizenin karakter sayısı) |
+| Flashcard kimlikleri süzülmüyor | Setten kart çıkınca sayaç "%240" gösterebiliyor |
+
+Sonuncusu bozuk veriyle bile ilgili değildi — **normal içerik
+düzenlemesiyle** oluşuyordu, ama bozuk veri ararken ortaya çıktı.
+
+Test şekli: gerçek alan adlarını kasten yanlış yaz, `null`/sayı/dize koy,
+diziye dize ver. Sonra iki şeyi birden ölç — sayfa ayakta mı VE sağlam
+kayıtlar hâlâ çalışıyor mu. İkincisi olmadan düzeltme "hepsini eledi" de
+olabilir.
+
+**Ama kalıbı görmek yetmez, her yüzeyi ayrı ölç.** Aynı oturumda "burada
+da aynı kusur olmalı" sezgisi üç kez yanlış çıktı: QuizEngine sayımları
+mevcut soru listesinden yapıyor, tekrar istatistikleri mevcut kartlardan
+hesaplanıyor, yetim tekrar durumlarını `pruneStates()` zaten temizliyor
+(ölçüldü). Neredeyse gereksiz bir düzeltme yapılacaktı.
+
 ### Paralel oturumlarda commit'ler karışır — mesaj içeriği anlatmayabilir
 
 Aynı depoda birden fazla oturum çalışıyor: bir kısmı `.claude/worktrees/`
