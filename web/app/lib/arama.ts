@@ -46,7 +46,29 @@ export function aramaNormalize(metin: string): string {
     .trim();
 }
 
-/** `aranan`, `icerik` içinde geçiyor mu? İkisi de aynı kuralla normalleştirilir. */
+/**
+ * `aranan`, `icerik` içinde geçiyor mu? İkisi de aynı kuralla normalleştirilir.
+ *
+ * ⚠ BOŞ SORGU `false` DÖNER — bunu doğrudan `.filter()` içinde kullanma.
+ *
+ * Sözleşme "eşleşme var mı?" sorusunu cevaplıyor ve boş bir sorgunun hiçbir
+ * şeyle eşleşmemesi doğru cevap: `String.includes("")` her zaman `true`'dur,
+ * yani vurgulama gibi bir çağrı yerinde boş kutu SAYFADAKİ HER ŞEYİ
+ * işaretlerdi.
+ *
+ * Ama süzgeçlerde soru farklı — "listede kalsın mı?" — ve orada boş kutunun
+ * cevabı her zaman evet. Süzen her çağrı yeri boş sorguyu KENDİSİ karşılamalı:
+ *
+ *     if (!sorgu.trim()) return hepsi;      // ya da
+ *     const bos = !sorgu.trim();
+ *     ... bos ? hepsi : hepsi.filter(x => aramaEslesir(x.ad, sorgu))
+ *
+ * Ölçüldü: `/tools` bu korumayı bir tur boyunca taşımadı ve arama kutusu
+ * boşken 114 aracın hepsi elendi — sayfa "0 araç listeleniyor" diyordu ve
+ * hub'daki 117 bağlantı hem kullanıcıdan hem arama motorundan kayboldu.
+ * Kusur sessizdi: kategori sayaçları ayrı veriden geldiği için "114" yazmaya
+ * devam ediyordu, yani sayfa dolu görünüyordu.
+ */
 export function aramaEslesir(icerik: string, aranan: string): boolean {
   const a = aramaNormalize(aranan);
   if (!a) return false;

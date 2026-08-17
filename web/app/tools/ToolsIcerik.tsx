@@ -291,6 +291,21 @@ export default function ToolsIcerik() {
   const kategoriGecerli = TOOLS_DATABASE.some(c => c.slug === aktifKategori);
   const seciliKategori = kategoriGecerli ? aktifKategori : null;
 
+  /**
+   * BOŞ ARAMA HER ŞEYİ GEÇİRİR — bu satır silinirse sayfa tamamen boşalır.
+   *
+   * `aramaEslesir` boş sorguda bilerek `false` döner ("eşleşme var mı?"
+   * sorusunun doğru cevabı budur; vurgulama gibi çağrı yerlerinde boş
+   * sorgunun her şeyi işaretlemesi kusur olurdu). Ama burada soru
+   * "eşleşme var mı" değil, "listede kalsın mı" — ve arama kutusu boşken
+   * cevap HER ZAMAN evet.
+   *
+   * Ölçüldü: bu koruma unutulduğunda kutu boşken 114 aracın hepsi elendi,
+   * sayfa "0 araç listeleniyor" dedi ve hub'daki 117 araç bağlantısının
+   * tamamı kayboldu — yani arama motoru için de sayfa boştu.
+   */
+  const aramaBos = !searchTerm.trim();
+
   const filteredData = TOOLS_DATABASE
     .filter(cat => !seciliKategori || cat.slug === seciliKategori)
     .map(cat => ({
@@ -305,7 +320,7 @@ export default function ToolsIcerik() {
        * arayan kullanıcı hiçbir sonuç göremiyordu. Kategori zaten
        * yapılandırılmış veri; tıbbi bir karar gerektirmeden aranabilir.
        */
-      items: cat.items.filter(it =>
+      items: aramaBos ? cat.items : cat.items.filter(it =>
         aramaEslesir(it.name, searchTerm) ||
         aramaEslesir(it.desc, searchTerm) ||
         aramaEslesir(cat.category, searchTerm)
