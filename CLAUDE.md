@@ -672,6 +672,39 @@ dosyadaki `sr-only` sayısı ile halka sınıfı sayısını karşılaştırmak.
 
 Bir yerleştirmeyi kendi arama mantığıyla doğrulama; **sonucu say.**
 
+### Düzeltmeyi doğrularken VARSAYILAN durumu da ölç
+
+Bir yüzeyi düzeltip doğrulaman, doğrulamayı **düzelttiğin senaryoda**
+yapmaya çekiyor. Ama kullanıcıların ezici çoğunluğu o senaryoyu hiç
+görmüyor; gördükleri şey varsayılan durum — boş kutu, sıfır sonuç, seçim
+yapılmamış süzgeç, ilk açılış.
+
+Ölçüldü ve pahalıya mal oldu: arama Türkçe karakterlerde bozuktu,
+`aramaEslesir` yazıldı, dört yüzeye uygulandı ve **arama yaparak**
+doğrulandı — "gogus" artık "Göğüs"ü buluyor. Doğru. Ama yardımcı boş
+sorguda bilerek `false` dönüyor (`String.includes("")` her zaman true
+olduğu için, vurgulama yapan bir çağrı yerinde boş kutu her şeyi
+işaretlerdi) ve `/tools` bunu karşılamamıştı: **arama kutusu boşken 114
+aracın hepsi eleniyordu.** Sayfa aylarca değil, bir tur boyunca tamamen
+boştu; statik önceden üretildiği için boş liste sunucu HTML'ine de
+yazıldı, yani 117 hub bağlantısı arama motorundan da kayboldu.
+
+İki şey bu kusuru gizledi:
+
+- **Komşu sayı ayrı veriden besleniyordu.** Kategori rozetleri "TÜMÜ 114"
+  yazmaya devam etti, çünkü sayaç `TOOLS_DATABASE`'ten geliyor, süzülmüş
+  listeden değil. Sayfa dolu görünüyordu; ayıran tek işaret küçük punto
+  "0 araç listeleniyor" satırıydı.
+- **Sözleşme mantıklıydı.** "Eşleşme var mı?" sorusunun boş sorgu için
+  doğru cevabı `false`. Kusur yardımcıda değil, sorunun süzgeçte
+  **farklı** olmasındaydı: orada soru "listede kalsın mı?" ve cevap her
+  zaman evet. Böyle bir yardımcı yazarken sözleşmeyi dosyanın içine
+  yüksek sesle yaz; kalan üç çağrı yeri korumayı almıştı, unutulan tek
+  yerin bedeli bütün sayfa oldu.
+
+Ölçüt: bir yüzeye dokunduysan onu **girdisiz** de aç. Arama kutusu boş,
+süzgeç seçilmemiş, liste henüz filtrelenmemiş hâlde ne görünüyor?
+
 ### Bu ortamda sayfaya `<style>` enjekte etmek İŞE YARAMIYOR
 
 Bir CSS kuralının uygulanıp uygulanmadığını sınamak için
