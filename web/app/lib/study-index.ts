@@ -78,6 +78,30 @@ function parseJson<T>(raw: string | null): T | null {
 }
 
 /** Depodaki tüm not ve vurguları tek listede, en yeni önce döndürür. */
+/**
+ * Depodan okunan notu güvenli şekle sokar.
+ *
+ * `strokes` bir DİZİ olmak zorunda ama depo bunu garanti etmiyor: yedekten
+ * geri yükleme (`applyImport`) elle düzenlenmiş ya da başka sürümden gelen
+ * bir JSON'u kabul edebiliyor ve `parseBackup` yalnızca sığ doğrulama yapıyor.
+ *
+ * Ölçüldü: `strokes` alanına "dizi-degil" gibi bir DİZE düştüğünde
+ * `strokes.length` o dizenin KARAKTER sayısını veriyor ve Çalışma Alanım
+ * sayfası hiç çizim olmayan bir not için "10 çizgi" yazıyordu. Çökme yok
+ * ama uydurma bir sayı var — bu depoda "sayı yazma, saydır" kuralı bunu
+ * açıkça yasaklıyor.
+ *
+ * `text` de aynı sebeple dizeye zorlanıyor; `null` gelirse `.trim()` patlardı.
+ */
+function notuDuzelt(note: NoteDoc | null): NoteDoc | null {
+  if (!note || typeof note !== "object") return null;
+  return {
+    ...note,
+    text: typeof note.text === "string" ? note.text : "",
+    strokes: Array.isArray(note.strokes) ? note.strokes : [],
+  };
+}
+
 export function collectAll(): StudyEntry[] {
   const idx = readIndex();
   const paths = new Set<string>();
@@ -92,7 +116,7 @@ export function collectAll(): StudyEntry[] {
   const out: StudyEntry[] = [];
   for (const path of paths) {
     const marks = parseJson<ReadingMark[]>(localStorage.getItem(MARK_PREFIX + path)) ?? [];
-    const note = parseJson<NoteDoc>(localStorage.getItem(NOTE_PREFIX + path));
+    const note = notuDuzelt(parseJson<NoteDoc>(localStorage.getItem(NOTE_PREFIX + path)));
 
     const hasNote = Boolean(note && (note.text?.trim() || note.strokes?.length));
     if (!marks.length && !hasNote) continue;

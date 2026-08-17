@@ -108,8 +108,22 @@ export function readAll(): Backup {
         kartlar[k.slice(KART_PREFIX.length)] = v.filter((x) => typeof x === "string");
       }
     } else if (k.startsWith(NOTE_PREFIX)) {
-      const v = json<NoteDoc>(localStorage.getItem(k));
-      if (v && (v.text?.trim() || v.strokes?.length)) notes[k.slice(NOTE_PREFIX.length)] = v;
+      /**
+       * Not güvenli şekle sokulur: `strokes` DİZİ, `text` DİZE olmak zorunda.
+       * Depo bunu garanti etmiyor — yedekten geri yükleme elle düzenlenmiş
+       * bir JSON kabul edebiliyor ve `parseBackup` yalnızca sığ doğruluyor.
+       * Ölçüldü: `strokes` yerine bir dize düştüğünde `.length` karakter
+       * sayısını veriyor ve "10 çizgi" gibi UYDURMA bir sayı üretiyordu.
+       */
+      const ham = json<NoteDoc>(localStorage.getItem(k));
+      const v = ham && typeof ham === "object"
+        ? {
+            ...ham,
+            text: typeof ham.text === "string" ? ham.text : "",
+            strokes: Array.isArray(ham.strokes) ? ham.strokes : [],
+          }
+        : null;
+      if (v && (v.text.trim() || v.strokes.length)) notes[k.slice(NOTE_PREFIX.length)] = v;
     }
   }
 
