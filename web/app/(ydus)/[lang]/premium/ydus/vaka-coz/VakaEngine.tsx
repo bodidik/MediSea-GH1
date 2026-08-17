@@ -141,10 +141,24 @@ function AdimKarti({
         </p>
       </div>
 
-      {/* SEÇENEKLER */}
+      {/*
+        SEÇENEKLER
+
+        `aria-disabled`: cevaptan sonra şıklar işlevsiz kalıyor (`secenek` erken
+        dönüyor) ama düğme olmayı sürdürüyorlardı — klavyeyle üstüne gelip
+        Enter'a basan biri hiçbir şey olmadığını görüyor, nedenini
+        öğrenemiyordu. QuizEngine'deki ile aynı çare: `disabled` DEĞİL
+        `aria-disabled`, çünkü şıklar cevaptan sonra da OKUNABİLİR kalmalı
+        (hangisinin doğru olduğu ve açıklaması orada).
+      */}
       <div style={{ marginBottom: '.75rem' }}>
         {Object.entries(adim.secenekler).map(([harf, metin]) => (
-          <button key={harf} onClick={() => secenek(harf)} style={secenekStil(harf)}>
+          <button
+            key={harf}
+            onClick={() => secenek(harf)}
+            aria-disabled={cevapVerildi || undefined}
+            style={secenekStil(harf)}
+          >
             <div style={harfDairesi(harf)}>
               {cevapVerildi
                 ? harf === adim.dogru ? '✓' : harf === secim ? '✗' : harf

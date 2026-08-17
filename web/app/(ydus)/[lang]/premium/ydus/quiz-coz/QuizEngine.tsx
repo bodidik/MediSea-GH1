@@ -201,6 +201,20 @@ function SoruKarti({
             <button
               key={harf}
               onClick={() => secenek(harf)}
+              /**
+               * Cevap verildikten sonra şıklar İŞLEVSİZ ama düğme olmayı
+               * sürdürüyordu. Ölçüldü: cevaptan sonra başka bir şıkka
+               * tıklamak hiçbir şeyi değiştirmiyor (ekran ve durum bölgesi
+               * aynı kalıyor). Klavyeyle gezen biri üstüne gelip Enter'a
+               * basıyor, hiçbir şey olmuyor ve nedenini öğrenemiyordu.
+               *
+               * `disabled` DEĞİL `aria-disabled` kullanılıyor: `disabled`
+               * ögeyi sekme sırasından tümden çıkarır, oysa cevaptan sonra
+               * şıklar okunmaya devam etmeli — hangisinin doğru olduğu (✓/✗)
+               * ve açıklaması orada. Ekran okuyucu böyle hem metni okuyabilir
+               * hem de "kullanılamıyor" bilgisini alır.
+               */
+              aria-disabled={cevapVerildi || undefined}
               style={secenekStil(harf)}
             >
               <div style={harfDairesi(harf)}>
