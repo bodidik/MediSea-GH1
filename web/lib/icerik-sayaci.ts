@@ -136,9 +136,25 @@ export function icerikSayilari(): IcerikSayilari {
   } catch {}
 
   const konuKoku = path.join(premium, "topics");
-  const soru = jsonSay(path.join(premium, "quizzes"), konuKoku, ["sorular", "questions"]);
-  const kart = jsonSay(path.join(premium, "flashcards"), konuKoku, ["cards", "kartlar"]);
-  const vaka = jsonSay(path.join(premium, "vakalar"), konuKoku, ["adimlar", "stages"]);
+  /**
+   * ALAN ADLARI MOTORLARLA AYNI OLMALI — `lib/premium-envanter.ts`teki
+   * notun kardeşi.
+   *
+   * Burası bir dönem her tür için iki ad sayıyordu (`questions`, `kartlar`,
+   * `stages`) ama hiçbir motor onları okumuyor: QuizEngine `sorular`,
+   * hizli-tekrar `veri.cards`, VakaEngine `adimlar`. Reklam edilen sayının
+   * ölçütü zaten "kullanıcının gerçekten açabildiği içerik" (yukarıdaki
+   * yetim notu) ve okunamayan şema da açılamıyor — motor ya boş ekran
+   * basar ya çöker.
+   *
+   * Ölçüldü: daraltma bugün hiçbir sayıyı değiştirmiyor (soru 353,
+   * kart 1492, vaka 35 — ikisinde de aynı). Yani bu, davranışı koruyan
+   * bir hizalama; ileride ayrık şemalı bir dosya eklenirse satış sayfası
+   * onu saymayacak.
+   */
+  const soru = jsonSay(path.join(premium, "quizzes"), konuKoku, ["sorular"]);
+  const kart = jsonSay(path.join(premium, "flashcards"), konuKoku, ["cards"]);
+  const vaka = jsonSay(path.join(premium, "vakalar"), konuKoku, ["adimlar"]);
 
   onbellek = {
     brans,
