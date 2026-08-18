@@ -726,6 +726,30 @@ Bir sayfanın gerçekten sunucuda basıldığını **ham HTML'de `<h1>` ve
 `<a>` sayarak** doğrula; tarayıcıdaki DOM hidrasyondan sonrasını gösterir
 ve bu kusuru gizler.
 
+### `metadata` MİRAS ALINIR — `page.tsx`e bakan ölçüm yanılır
+
+Bir turda aynı ölçütle iki kez yanlış sonuç alındı; ikisi de kusur UYDURDU.
+
+- **Yalnızca `page.tsx`e bakmak.** `/calisma-alanim`, `/tekrar` ve
+  `/guidelines` "metadata yok" çıktı; üçünün de kardeş `layout.tsx`inde
+  metadata VAR (`Çalışma Alanım`, `Tekrar`, `Rehberler ve Kılavuzlar`).
+  İstemci bileşenleri metadata dışa aktaramadığı için bu depoda çözüm
+  zaten layout — araç sayfalarında `arac-metadata.cjs` aynı şeyi üretiyor.
+- **Yalnızca KARDEŞ layout'a bakmak.** Düzeltilmiş ölçüm "28 rotada
+  metadata yok" dedi. Yine yanlış: metadata her ATA layout'tan miras
+  alınıyor, yani kök `app/layout.tsx` hepsini besliyor. Bu rotalar kırık
+  değil; olsa olsa "kendine ait başlığı yok".
+
+Ölçüt şu olmalı: rota kökten aşağı yürünerek ilk metadata tanımı aranır.
+"Kendi metadata'sı yok" ile "metadata'sı yok" AYNI ŞEY DEĞİL ve ikincisi
+bu depoda hiç görülmedi.
+
+Bunu ararken ayrıca doğrulandı: `/kayseritip/*` sayfaları `robots.ts`te
+kapalı değil ama `app/kayseritip/layout.tsx` kapı kuruyor —
+`institution !== 'kayseritip'` olan herkes (tarayıcılar dahil) `/giris`e
+yönlendiriliyor. Site haritasında da yoklar. Yani taranabilir görünmeleri
+bir sızıntı değil.
+
 ### Route grubu dışındaki sayfalar AppShell almaz
 
 `app/tools/*`, `app/kayseritip/*` ve ayrıca **`app/giris`, `app/kayit`,
