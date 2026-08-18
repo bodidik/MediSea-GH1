@@ -1054,6 +1054,34 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### QuizEngine çalışma akışı ölçüldü — sınıf temiz
+
+Motorların hata kartları, kontrastı ve klavye erişimi ayrı ayrı ölçülmüştü
+ama ASIL İŞİ hiç sınanmamıştı. Geçici bir dev rotasıyla (kapıyı atlayıp
+`QuizEngine`'i gerçek quiz dosyasıyla render eden bir sayfa) uçtan uca
+sürüldü: 10 soru, 7'si bilerek doğru 3'ü bilerek yanlış cevaplandı.
+
+| ölçüt | sonuç |
+|---|---|
+| puanlama | kayıt verilen cevaplarla BİREBİR: 7 true / 3 false |
+| ilerleme kaydı | yazılıyor, `{i, s:{s1..s10}}` biçiminde |
+| sonuç ekranı | "%70 · 10 soruda 7 doğru · 3 yanlış" — doğru |
+| kurtarma yolu | yanlış soruları tekrar çözme + baştan çözme sunuluyor |
+
+**Üç ölçüm tuzağı — üçüne de düşüldü:**
+
+- **İlerleme anahtarı dosya adından DEĞİL** quizin kendi `id` alanından
+  türüyor: `quiz-progress-quiz-endo-cushing-001`. Dosya adıyla arayan ilk
+  ölçüm `null` gördü ve "ilerleme kaydedilmiyor" sanıldı.
+- **Cevap verdikten sonra şıklar `disabled` DEĞİL** ama motor mantıksal
+  olarak koruyor — başka şıkka tıklamak kaydı değiştirmiyor. `disabled`
+  yokluğuna bakıp kusur raporlama; davranışı ölç.
+- **Son sorunun düğmesi "Sonuç*u* gör".** `/Sonuç/` deseni tutmuyor
+  (ç ≠ c). Yine desen tahmini yerine ekrandaki gerçek metni oku.
+
+Geçici rota silinirken `.next/types` altındaki artık da silinmeli; yoksa
+`tsc` olmayan bir modülü aramaya devam eder.
+
 ### Yetki kontrolü tek yerde: `lib/yonetici.ts`
 
 `session?.user?.email === process.env.ADMIN_EMAIL` karşılaştırması beş ayrı
