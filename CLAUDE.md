@@ -517,6 +517,29 @@ kayboluyor:
   bağlantı yalnızca dosya gerçekten varsa kurulur. (Bir konu "10 soru"
   deyip tıklanabiliyordu ama quiz dosyası hiç yoktu.)
 
+**İLAN mı GERÇEK mi — premium yüzeyler tarandı, sınıf kapalı.** Kalıp şu:
+içerik dosyasının varlığı yerine konu/branş dosyasındaki BAYRAĞA bakmak.
+Dört yüzey ayrı ayrı ölçüldü:
+
+| yüzey | kaynak | sonuç |
+|---|---|---|
+| konu sayfası — istatistikler | `envanterAl` | dürüst |
+| konu sayfası — **Modüller kartları** | `veri.moduller` ilanı | **KUSURLUYDU**, 69 ilanın 6'sının hedefi yoktu |
+| branş sayfası — `hazir` bayrağı | branş dosyası | dürüst (39 ilan, 39 dosya) |
+| pano ve `icerikSayilari` | `envanterAl` + yetim elemesi | dürüst |
+
+Modül kartları düzeltildi. Dikkat çekici olan şu: aynı DOSYADAKİ yorum
+"artık hem sayı hem bağlantı gerçeğe bakıyor" diyordu ve yalnızca sayı
+için doğruydu. **Bir kusuru düzeltirken aynı sayfadaki öteki blokların da
+aynı kaynağa bağlandığını doğrula** — yorum, kapsamı olduğundan geniş
+anlatabiliyor.
+
+Listelenmeyen konu onarımı (`listelenmeyenKategori`) üç yerde de çağrılıyor
+(branş sayfası, pano, sayaç) ve ölçüldü: 40 konu dosyasının listelenmeyen
+1'i "Diğer Konular" altında tıklanabilir çıkıyor. Ters yönde 17 kayıt
+listede olup dosyası yok, ama hepsi `hazir: false` — soluk ve tıklanamaz,
+yani çıkmaz sokak değil.
+
 ### İçerik denetimleri
 
 Bu hata sınıfları **kodda değil veride** durur; `lint`, `typecheck` ve
