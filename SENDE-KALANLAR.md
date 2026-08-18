@@ -491,3 +491,38 @@ artık "Girdiğin değerler bağlantıyla taşınmaz" diyor).
 Klinik değerlerin adres çubuğuna yazılması ayrıca gizlilik açısından da
 düşünülmeli: adresler tarayıcı geçmişine, sunucu günlüklerine ve
 paylaşıldığı yere (WhatsApp, e-posta) düz metin olarak giriyor.
+
+---
+
+## 17. Vaka motorunda bitiş ekranı yok (tasarım kararı)
+
+Üç premium motorun çalışma akışı geçici bir dev rotasıyla uçtan uca
+ölçüldü. İkisi tam, birinde bir eksik var.
+
+| motor | akış | bitiş ekranı | ilerleme kaydı |
+|---|---|---|---|
+| QuizEngine | ✓ | ✓ "%70 · 7 doğru · 3 yanlış" + yanlışları tekrar çöz | ✓ |
+| FlashcardPlayer | ✓ | — (sayaç sürekli görünüyor) | ✓ işaretler korunuyor |
+| **VakaEngine** | ✓ | **YOK** | yok |
+
+Vakada son adım cevaplandıktan sonra kullanıcı yalnızca o adımın
+açıklamasını ve "← Konuya dön" bağlantısını görüyor. Kaç adımı doğru
+bildiğini söyleyen bir kapanış yok.
+
+Quiz motorunda bu ekran var ve iyi çalışıyor; vakada olmaması bir
+tutarsızlık. Ama yeni bir ekran eklemek tasarım kararı olduğu için
+yapılmadı — senin çağrın:
+
+1. **Quiz'deki gibi bir kapanış ekle** — "2 adımda 1 doğru" + yanlış
+   adımları tekrar gözden geçirme bağlantısı.
+2. **Olduğu gibi bırak** — vakalar kısa (11 dosyada toplam 35 adım,
+   ortalama ~3) ve amaç puanlamak değil klinik akıl yürütmeyi göstermek
+   olabilir.
+
+İlerleme kaydı da yok: kullanıcı vakanın ortasında ayrılırsa yerini
+kaybediyor. Kısa vakalarda savunulabilir, ama kapanış ekranı eklenirse
+bununla birlikte düşünülmeli.
+
+Not: vaka motorunun geri bildirimi quiz'den DAHA iyi — kullanıcının yanlış
+seçimini ✗, doğru cevabı ✓ ile birlikte işaretliyor. Quiz yalnızca doğruyu
+işaretliyor.
