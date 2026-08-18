@@ -19,7 +19,20 @@ const path = require('path');
 
 const KOK = path.join(__dirname, '..');
 const ARAC_DIZIN = path.join(KOK, 'app', 'tools');
-const KAYNAK = path.join(ARAC_DIZIN, 'page.tsx');
+
+/**
+ * KAYNAK `page.tsx` DEĞİL `ToolsIcerik.tsx`.
+ *
+ * `TOOLS_DATABASE` bir dönem `page.tsx` içindeydi. `/tools` sunucu kabuk +
+ * istemci içerik olarak bölününce (statik prerender için) veri
+ * `ToolsIcerik.tsx`'e taşındı, ama bu betik eski yolu okumaya devam etti.
+ *
+ * Sonuç ÖLÇÜLDÜ ve sessizdi: betik hiç araç bulamıyor, "0 araç" deyip
+ * `content/arac-index.json` dosyasının 114 kaydını BOŞ DİZİYLE eziyordu.
+ * Üstelik bu betik belgede "yeni araç eklendiğinde çalıştır" diye yazılı —
+ * yani bakım komutunun kendisi veri siliyordu.
+ */
+const KAYNAK = path.join(ARAC_DIZIN, 'ToolsIcerik.tsx');
 
 /**
  * Başlık uzunluğu sınırı. Şablon " · MediSea" ekliyor; arama sonucunda ~60-65
@@ -176,6 +189,29 @@ function main() {
     fs.existsSync(path.join(ARAC_DIZIN, a.slug, 'page.tsx'))
   );
   const indexYolu = path.join(KOK, 'content', 'arac-index.json');
+
+  /**
+   * SIFIR ARAÇTA YAZMA — bu koruma olmadan betik veri siliyordu.
+   *
+   * Ayrıştırma bir varsayıma dayanıyor (kaynak dosyanın yeri ve
+   * `TOOLS_DATABASE` biçimi). Varsayım bozulduğunda betik hata vermiyor,
+   * boş bir liste üretiyor ve onu diske yazıyordu. Ölçüldü: 114 kayıtlık
+   * indeks tek çalıştırmada `[]` oldu.
+   *
+   * Boş sonuç bu depoda ASLA meşru değil: araç sayfaları dosya sisteminde
+   * duruyor, yani sıfır bulmak "araç yok" demek değil "ayrıştırma bozuldu"
+   * demek. Sessizce yazmak yerine yüksek sesle düşüyoruz.
+   */
+  if (sayfasiOlan.length === 0) {
+    console.error(
+      `HATA: ayrıştırma 0 araç buldu — ${path.relative(KOK, KAYNAK)} okunamadı ` +
+        `ya da TOOLS_DATABASE biçimi değişti.\n` +
+        `content/arac-index.json DEĞİŞTİRİLMEDİ (mevcut kayıtlar korundu).`
+    );
+    process.exitCode = 1;
+    return;
+  }
+
   fs.writeFileSync(
     indexYolu,
     JSON.stringify(
