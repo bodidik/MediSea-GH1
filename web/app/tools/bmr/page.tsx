@@ -96,9 +96,18 @@ export default function BmrPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-blue-900/80 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400/60">
-            <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">BMR (Dinlenim)</span>
+            {/*
+              Bu kartın zemini SAYDAM (`bg-blue-900/80`), yani beyazın üstünde
+              açılıyor ve komşu karttaki opak `bg-blue-900`den daha açık.
+              Ölçüldü: aynı `text-blue-200` solda 4.24, sağda eşiği geçiyor.
+
+              Zemin değil YAZI açıldı, çünkü saydamlık bilinçli bir vurgu
+              farkı — kenarlık (`amber-400/60`) ve gölge de komşusundan
+              zayıf. BMR ikincil, TDEE birincil.
+            */}
+            <span className="text-[9px] font-black text-blue-100 uppercase tracking-widest mb-1">BMR (Dinlenim)</span>
             <div className="text-4xl font-black text-white">{bmr || "–"}</div>
-            <span className="text-[10px] font-bold text-amber-300 mt-1">kcal / gün</span>
+            <span className="text-[10px] font-bold text-amber-200 mt-1">kcal / gün</span>
           </div>
           <div className="bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">TDEE (Toplam Gereksinim)</span>

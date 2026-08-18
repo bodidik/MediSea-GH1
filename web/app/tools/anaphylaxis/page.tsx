@@ -75,7 +75,10 @@ export default function AnaphylaxisPage() {
               <ul className="space-y-1 mb-4">
                 {cr.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-[10px] text-slate-600">
-                    <span className="text-amber-500 shrink-0 mt-0.5">·</span>{item}
+                    {/* Madde imi süsleme: ekran okuyucu her maddenin önüne
+                        "orta nokta" ekliyordu ve kontrast kuralı da bilgi
+                        taşımayan bir işarete uygulanıyordu (2.15). */}
+                    <span className="text-amber-500 shrink-0 mt-0.5" aria-hidden="true">·</span>{item}
                   </li>
                 ))}
               </ul>
