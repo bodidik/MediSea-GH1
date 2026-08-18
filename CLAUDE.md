@@ -1101,9 +1101,26 @@ az 110px ile ancak sığıyor; bir kısaltmayı üç katına çıkarmak taşma �
 
 İnciler yüzeyi kapsam dışı bırakıldı: toplam 4 geçiş var, yani kazanç yok.
 
-### Tarayıcıda kontrast ölçen betiğin altı tuzağı
+### Tarayıcıda kontrast ölçen betiğin yedi tuzağı
 
-Altısı da gerçekten yanılttı; üçü kusur uydurdu, üçü gerçek kusuru gizledi.
+Yedisi de gerçekten yanılttı; dördü kusur uydurdu, üçü gerçek kusuru gizledi.
+
+- **Düz 4.5 eşiği BÜYÜK METİNDE kusur uydurur.** WCAG eşiği metin boyutuna
+  göre değişiyor: ≥24px (ya da ≥18.66px + kalın) için 3.0, ötekiler için
+  4.5. Sabit 4.5 kullanan bir tarama künyedeki 30px'lik "Medi"yi 4.0 ile
+  "kusurlu" gösteriyordu — oysa o boyutta eşik 3.0 ve yazı geçiyor.
+  Ölçüt `fontSize` ve `fontWeight` okumadan doğru olamaz.
+
+  Aynı yerde bir kusur da ATLANMIŞTI: `<h2>` içindeki 24px'lik süsleme
+  "#" işareti 1.42'ydi ve büyük-metin eşiğiyle bile kalıyordu. Yani
+  eşiği düzeltmek kusuru gizlemedi, yalnızca uydurmayı eledi.
+
+  Süsleme gliflerinde çare RENK DEĞİL `aria-hidden="true"`: işaret bilgi
+  taşımıyorsa erişilebilirlik ağacından çıkarılmalı — hem kontrast
+  kapsamından düşer hem de ekran okuyucudaki gürültü kalkar (her bölüm
+  başlığının önünde "kare", her bağlantının önünde "sağ ok" okunuyordu).
+  Gizledikten sonra **erişilebilir adı HESAPLAYARAK** doğrula: gizleme
+  yanlış ögeye konursa bağlantı adsız kalır.
 
 - **SAYDAM METİN — en pahalısı, en sinsisi.** `getComputedStyle(el).color`
   değerinden ilk üç sayıyı okuyup rengi opak saymak, Tailwind'in
