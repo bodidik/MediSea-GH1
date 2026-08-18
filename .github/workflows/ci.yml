@@ -57,6 +57,19 @@ jobs:
         - name: Soru ve kart yapı denetimi
           run: node scripts/soru-denetim.cjs
 
+        # Araç indeksi (content/arac-index.json) ELLE üretiliyor ve üreteç
+        # CI'da çalışmıyor. Biri araç ekleyip betiği çalıştırmayı unutursa
+        # indeks sessizce bayatlıyor. Bedeli görünür: ana sayfadaki araç
+        # sayısı bu dosyadan geliyor, çünkü çalışma zamanında app/tools
+        # okunamıyor (sunucusuz ortamda kaynak dizin yok).
+        #
+        # Bu adım HİÇBİR ŞEY YAZMAZ; indeksi bellekte yeniden hesaplayıp
+        # karşılaştırır, fark varsa hangi aracın eksik/fazla/değişmiş
+        # olduğunu yazar ve düşer. Düşerse çare tek satır:
+        #   node scripts/arac-metadata.cjs
+        - name: Araç indeksi senkron mu
+          run: node scripts/arac-metadata.cjs --kontrol
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
