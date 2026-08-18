@@ -15,7 +15,33 @@ export default function AncPage() {
 
   const anc = Math.round(wbcNum * 1000 * ((segsNum + bandsNum) / 100));
 
+  /**
+   * GEÇERSİZ GİRDİDE EVRELEME GÖSTERME — ölçülmüş ve klinik olarak riskliydi.
+   *
+   * `parseLocaleNumber` ayrıştıramadığı her şeyi 0'a çeviriyor; ANC 0 da
+   * merdivenin son basamağına düşüyordu:
+   *
+   *   WBC "abc" → "EVRE 4 — ÇOK CİDDİ · Acil izolasyon ve ampirik antibiyotik"
+   *   WBC 0     → aynı
+   *   WBC -5    → ANC 500 + "EVRE 2 — ORTA"  (negatifler çarpılınca pozitif)
+   *
+   * Yani çöp girdi ACİL İZOLASYON ve ampirik antibiyotik öneriyordu.
+   *
+   * Sınırlar makullük sınırı: lökosit 0.1-500 ×10³/µL (lösemide 200'ü
+   * aşabiliyor, üst sınır bilerek geniş), yüzdeler 0-100 ve toplamları
+   * 100'ü aşamaz. Amaç tanı koymak değil, saçma girdiden evre üretmemek.
+   */
+  const yuzdeToplam = segsNum + bandsNum;
+  const girdiGecerli =
+    Number.isFinite(wbcNum) && wbcNum > 0 && wbcNum <= 500 &&
+    Number.isFinite(segsNum) && segsNum >= 0 && segsNum <= 100 &&
+    Number.isFinite(bandsNum) && bandsNum >= 0 && bandsNum <= 100 &&
+    yuzdeToplam > 0 && yuzdeToplam <= 100;
+
   const getGrade = () => {
+    if (!girdiGecerli)
+      return { label: "Değerleri girin", sub: "Lökosit ve yüzdeleri girince evre hesaplanır",
+               color: "text-slate-600", bg: "bg-slate-50", border: "border-slate-200" };
     if (anc >= 1500) return { label: "NORMAL", sub: "Nötropeni yok", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     if (anc >= 1000) return { label: "EVRE 1 — HAFİF", sub: "ANC 1000–1499/mm³", color: "text-lime-700", bg: "bg-lime-50", border: "border-lime-200" };
     if (anc >= 500)  return { label: "EVRE 2 — ORTA", sub: "ANC 500–999/mm³", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
@@ -62,7 +88,7 @@ export default function AncPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
           <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">ANC</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">MUTLAK NÖTROFİL SAYISI</span>
-          <div className="text-7xl font-black text-white drop-shadow-lg">{anc}</div>
+          <div className="text-7xl font-black text-white drop-shadow-lg">{girdiGecerli ? anc : "–"}</div>
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">hücre / mm³</span>
         </div>
 
