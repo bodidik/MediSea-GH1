@@ -544,27 +544,32 @@ işaretliyor.
 
 ---
 
-## 18. Yetim 13 klinik inci — denetim artık görüyor
+## 18. Yetim 13 klinik inci — İKİ FARKLI sebep, iki farklı çare
 
-`content/premium/ydus/pearls/` altındaki **iki dosyanın ikisi de yetim**:
-konu dosyaları yok, yani 13 incinin tamamına arayüzden ulaşılamıyor.
+**DÜZELTME: bu madde bir tur yanlış teşhis taşıdı.** Önce "iki incinin de
+konu dosyası yok, yazılmalı" yazıyordu. Ölçüldü — doğru değil: birinde konu
+dosyası VAR, yalnızca adı tutmuyor. Sebep ayrıldı, çünkü çareleri de ayrı.
 
 ```
-pearls/hematoloji/aml.json           → topics/hematoloji/aml.json YOK          (10 inci)
-pearls/nefroloji/lupus-nefriti.json  → topics/nefroloji/lupus-nefriti.json YOK ( 3 inci)
+pearls/hematoloji/aml.json           → topics/hematoloji/aml-ana.json VAR   (10 inci)
+                                       çare: dosyayı aml-ana.json diye yeniden adlandır
+pearls/nefroloji/lupus-nefriti.json  → lupus konusu GERÇEKTEN yok           ( 3 inci)
+                                       çare: konuyu yazmak (tıbbi içerik kararı)
 ```
 
-Bu, listedeki 15. maddedeki (`questions/`) durumdan FARKLI: orada dizini
-hiçbir kod okumuyordu, burada kod okuyor ama konu dosyası olmadığı için
-sayfaya giden bağlantı hiç kurulmuyor. Çare de farklı — konu dosyasını
-yazmak yeterli.
+Fark on dakikalık işle haftalık işi ayırıyor. `envanterAl`
+`pearls/<branş>/<konu>.json` bekliyor; konu `aml-ana`, dosya `aml`. Tek
+yeniden adlandırma 10 inciyi görünür kılıyor ve **çarpışma yok** —
+`aml-ana.json` diye bir inci dosyası bulunmuyor.
 
-Not: `hematoloji/aml` zaten listede yetim olarak duruyordu (quiz ve kart
-dosyaları da öksüz). Yani o konu için **quiz + kart + inci** üçü birden
-yazılmış ama konu dosyası hiç açılmamış.
+İnciler yüzeyinde bugün erişilebilir içerik SIFIR: iki dosyanın ikisi de
+yetim olduğu için sayfa hiç dolu görünmüyor.
 
-Denetim bunu bir süre GÖRMÜYORDU: `pearls` türü listede yoktu, yalnızca
-quizzes/flashcards/vakalar denetleniyordu. Eklendi:
+`hematoloji/aml-ana` konusunun kendisi canlı ve dolu — quiz, kart, dört
+vaka ve video dosyası var. Eksik olan tek şey incilerin adı.
+
+Denetim bunu bir süre GÖRMÜYORDU: `pearls` türü listede yoktu. Eklendi ve
+artık ad sapmasını eksik konudan ayırıyor:
 
 ```bash
 node web/scripts/yetim-denetim.cjs
@@ -663,7 +668,7 @@ için bırakmak mı. Silinirse yazma yapan uç sayısı 19'dan 13'e düşer.
 
 ---
 
-## 21. Bir quiz dosyası tamamen farklı şemada
+## 21. Bir quiz dosyası tamamen farklı şemada — ve ARTIK GEREKSİZ olabilir
 
 Premium içeriğin şema envanteri çıkarıldı (40 konu, 9 branş, 39 quiz, 21 kart,
 11 vaka, 2 inci). Neredeyse hepsi tutarlı; **bir quiz dosyası** İngilizce ve
@@ -677,35 +682,89 @@ tamamen ayrı bir şema kullanıyor:
 | Doğru cevap | `dogru` | `correctAnswer` |
 | Açıklama | `aciklama_kisa` / `aciklama_detay` | `explanation` (HTML) |
 
-**Bugün görünmüyor** çünkü bu dosya zaten yetim (konu dosyası
-`topics/hematoloji/aml.json` yok — denetim raporluyor, 18. maddeyle aynı
-konu). Konu dosyası yazıldığı an görünür olurdu.
+**DÜZELTME: bu madde de yanlış bir varsayımla yazılmıştı.** Önce "konu
+dosyası `topics/hematoloji/aml.json` yok, yazılırsa görünür olur" diyordu.
+Ölçüldü — konu VAR (`aml-ana`) ve **kendi kanonik quizi de var**:
 
-**Görünür olsaydı ne olurdu — ölçüldü.** Motor yalnızca `sorular` okuyor,
-yani **boş quiz** basardı. Ama `lib/premium-envanter.ts` ikisini de sayıyor
-(`["sorular","questions"]`), yani konu sayfası **"10 soru"** derken quiz
-boş açılırdı.
+```
+quizzes/hematoloji/aml-ana-quiz-1.json   TR şema,  9 soru   ← konunun quizi, ÇALIŞIYOR
+quizzes/hematoloji/aml-quiz-1.json       EN şema, 10 soru   ← yetim, adı sapmış
+```
 
-**Denedim, ölçtüm, GERİ ALDIM.** Motoru `questions` alanını da okuyacak
-şekilde değiştirdim; sonuç DAHA KÖTÜ oldu: soru içi alanlar da farklı
-olduğu için motor 10 soruyu okuyup şekilleri tutmayınca **çöktü** (HTTP
-500). Boş quiz, çöken quizden iyidir — değişiklik geri alındı ve iki
-şemanın da 200 döndüğü doğrulandı.
+Yani bu dosya eksik bir bağlantı değil, **aynı konunun ikinci quizi**.
+Kanonik şemaya çevirmek tek başına yetmez: `aml-ana-quiz-1.json` adı zaten
+dolu, yani yeniden adlandırma çalışan quizin üstüne yazar.
+
+**Motorun bu şemayla davranışı ölçüldü** (bu kısım hâlâ geçerli): motor
+yalnızca `sorular` okuyor, yani boş quiz basardı; ama
+`lib/premium-envanter.ts` ikisini de sayıyor, yani konu sayfası "10 soru"
+derken quiz boş açılırdı. Motoru `questions` okuyacak şekilde değiştirmeyi
+denedim — soru içi alanlar da farklı olduğu için **çöktü** (HTTP 500).
+Geri alındı; boş quiz, çöken quizden iyidir.
 
 **Karar senin, üç yol:**
 
-1. **Dosyayı kanonik şemaya çevir** — 10 soru, alan eşlemesi mekanik
-   (`text`→`metin`, `correctAnswer`→`dogru`, şık dizisi→nesne,
-   `explanation`→`aciklama_detay`). Sonra `topics/hematoloji/aml.json`
-   yazılırsa quiz de çalışır.
-2. **Sil** — içerik başka yerde tekrarlanıyorsa.
-3. **Bırak** — ama o zaman konu dosyası YAZILMAMALI, yoksa "10 soru" deyip
-   boş açılan bir quiz olur.
+1. **Sil** — konunun zaten çalışan bir quizi var; bu dosya karşılıksız duruyor.
+2. **İkinci quiz olarak kur** — `aml-ana-quiz-2.json` diye adlandır VE kanonik
+   şemaya çevir (`text`→`metin`, `correctAnswer`→`dogru`, şık dizisi→nesne).
+   Motorun ikinci quizi listeleyip listelemediği ayrıca ölçülmeli:
+   `envanterAl` yalnızca `-quiz-1` arıyor.
+3. **Bırak** — bugün zararı yok, ama denetim her çalıştığında raporlanır.
 
-Aynı konu için quiz + kart + inci üçü de yazılmış (bkz. 18. madde), yani
-1. seçenek muhtemelen doğru olan.
+İlk iki seçenek de içerik kararı: 10 İngilizce sorunun 9 Türkçe soruyla
+örtüşüp örtüşmediğine bakman gerekiyor.
+
+---
 
 Not: `tkp-quiz-1.json` ve `feokromositoma-vaka-1.json` da üst alanlarını
 `meta` içinde tutuyor ama ana diziyi (`sorular`/`adimlar`) doğru adla
-taşıdıkları için ÇALIŞIYORLAR — ikisi de bu oturumda render edilerek
-doğrulandı.
+taşıdıkları için ÇALIŞIYORLAR — ikisi de render edilerek doğrulandı.
+
+---
+
+## 22. Aynı konuya iki kart dosyası — 60 kart ulaşılamıyor
+
+Yetim denetimi ad sapmasını ayırt etmeye başlayınca çıktı. Nefrolojide
+**aynı konu için iki kart dosyası** var ve ikisi de 70 kart taşıyor:
+
+```
+flashcards/nefroloji/kbh-hiperfosfatemi.json   70 kart   ← konunun dosyası, ÇALIŞIYOR
+flashcards/nefroloji/hiperf-kbh.json           70 kart   ← yetim, adı ters yazılmış
+```
+
+**İçerikleri aynı DEĞİL — ölçüldü, iki ayrı yöntemle:** ilk 10 kart birebir
+aynı, kalan 60'ı tamamen farklı. Yani ortak bir kökten türeyip ayrı ayrı
+yazılmışlar. Konu için toplam 130 ayrı kart yazılmış, kullanıcı 70'ini
+görüyor.
+
+Bu yüzden **yeniden adlandırma yapma**: `hiperf-kbh.json` → 
+`kbh-hiperfosfatemi.json` çalışan 70 kartın üstüne yazar. Denetim de bunu
+uyarı olarak basıyor.
+
+Karar senin: iki dosyayı birleştirip 130 kartlık tek set mi olsun, yoksa
+60 kart gerçekten eskimiş bir taslak mı? Kartların tıbbi doğruluğu ve
+tekrarı içerik kararı.
+
+**Ayrıca konusu gerçekten olmayan bir kart dosyası daha var:**
+
+```
+flashcards/endokrinoloji/akromegali.json   79 kart   → akromegali konusu YOK
+```
+
+Endokrinolojide 12 konu var ama akromegali aralarında değil. 79 kart
+yazılmış, ulaşılamıyor. Çare konu dosyasını yazmak — tıbbi içerik kararı.
+
+Üç sınıfın toplamı bugün şu:
+
+| sınıf | dosya | çare |
+|---|---|---|
+| ad sapması, çarpışma YOK | 1 (10 inci) | yeniden adlandır |
+| ad sapması, çarpışma VAR | 2 (10 soru + 70 kart) | birleştirme kararı |
+| konu gerçekten yok | 2 (79 kart + 3 inci) | konu yaz |
+| dizini kimse okumuyor | 12 dosya | okuyucu ya da şema dönüşümü (15. madde) |
+
+Güncel durumu her zaman betikten al:
+
+```bash
+node web/scripts/yetim-denetim.cjs
+```

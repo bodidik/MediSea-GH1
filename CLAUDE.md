@@ -458,6 +458,20 @@ kendiliğinden elenir, en yakın gelecek sınav seçilir.
 
 ## Sayılar, denetimler ve kendini onaran okumalar
 
+**Bu bölümdeki sayılar ÖLÇÜM ANINA aittir.** İçerik değiştikçe kayarlar;
+güncel değeri betikten al, belgeden değil:
+
+```bash
+node scripts/asili-denetim.cjs             # görünür / asılı konu
+node scripts/yetim-denetim.cjs             # yetim içerik dosyası
+node scripts/arac-metadata.cjs --kontrol   # araç indeksi senkron mu
+```
+
+Örnek: "görünür 411 konu" bir dönem doğruydu; `onkoloji/bobrek-kanseri`
+dosyasındaki `"hidden": "true"` DİZESİ boolean'a çevrilince o konu gizli
+sayılmaya başladı ve sayı 410'a düştü. Belgedeki sayıyı ölçüt sanma —
+belge NEDENİ anlatır, güncel değeri betik verir.
+
 Bu bölüm tek bir soruyu cevaplar: **bir yüzeye sayı ya da liste koyarken
 veriyi nereden alacağım?** Yanlış cevap bu projede defalarca aynı hatayı
 üretti — elle yazılan sayı içerik büyürken sessizce yalana dönüşüyor
@@ -516,7 +530,7 @@ node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DE�
 ```
 
 `asili-denetim`, "Diğer Konular" kovasının NEDEN dolduğunu söyler. Ölçüldü:
-görünür 411 konunun **46'sı (%11)** hiyerarşiden düşüyor ve sebepleri üç
+görünür 410 konunun **46'sı (%11)** hiyerarşiden düşüyor ve sebepleri üç
 ayrı sınıfta — çareleri de farklı:
 
 | Sınıf | Adet | Çare |

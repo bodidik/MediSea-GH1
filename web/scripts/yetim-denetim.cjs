@@ -62,11 +62,59 @@ function tur(ad) {
         // Bozuk dosyayı soru-denetim.cjs zaten yakalıyor.
       }
       const konuVar = fs.existsSync(path.join(KOK, "topics", brans.name, `${konu}.json`));
-      const kayit = { yol: `${brans.name}/${dosya}`, konu: `${brans.name}/${konu}`, adet };
+      const kayit = { yol: `${brans.name}/${dosya}`, konu: `${brans.name}/${konu}`, adet, brans: brans.name, ad: konu, dosya };
       (konuVar ? saglam : yetim).push(kayit);
     }
   }
   return { yetim, saglam };
+}
+
+/* ── AD SAPMASI: konu VAR ama adı tutmuyor ────────────────────────────────
+ *
+ * "Konu dosyası yok" teşhisi tek başına yanıltıcı çıktı. Ölçüldü: beş
+ * yetimin ÜÇÜNDE konu dosyası duruyor, yalnızca adı sapmış:
+ *
+ *   pearls/hematoloji/aml.json        → topics/hematoloji/aml-ana.json VAR
+ *   quizzes/hematoloji/aml-quiz-1.json→ topics/hematoloji/aml-ana.json VAR
+ *   flashcards/nefroloji/hiperf-kbh   → topics/nefroloji/kbh-hiperfosfatemi VAR
+ *
+ * Fark önemli: eksik konu TIBBİ İÇERİK yazmayı gerektiriyor, ad sapması
+ * ise dosyayı yeniden adlandırmayı. İkisini "yetim" diye tek torbaya
+ * koymak, on dakikalık işi haftalık iş gibi gösteriyordu.
+ *
+ * Eşleştirme ölçütü BULANIK BENZERLİK DEĞİL. Denendi ve tehlikeli çıktı:
+ * difflib benzeri bir ölçü `aml`yi 0.67 ile **`kml`**ye eşledi — akut ve
+ * kronik lösemi, bambaşka hastalıklar. Klinik içerikte "birbirine benzeyen
+ * ad" bir kanıt değil.
+ *
+ * Ölçüt yerine bu depodaki gerçek adlandırma kalıbı kullanılıyor: adlar
+ * tirelerle parçalanır ve KISA olanın her parçası, uzun olanın bir
+ * parçasının BAŞLANGICI olmalı.
+ *   aml          ⊂ aml-ana              ✓  (aml = aml)
+ *   hiperf-kbh   ⊂ kbh-hiperfosfatemi   ✓  (kbh = kbh, hiperf ⊂ hiperfosfatemi)
+ *   aml          ⊄ kml                  ✗  (aml, kml'nin başlangıcı değil)
+ */
+function parcala(ad) {
+  return ad.split("-").filter((x) => x.length >= 2);
+}
+
+/** Kısa adın her parçası, uzun adın bir parçasının başlangıcı mı? */
+function adSapmasi(konu, aday) {
+  if (konu === aday) return false;
+  const [a, b] = parcala(konu).length <= parcala(aday).length
+    ? [parcala(konu), parcala(aday)]
+    : [parcala(aday), parcala(konu)];
+  if (!a.length) return false;
+  return a.every((x) => b.some((y) => y.startsWith(x) || x.startsWith(y)));
+}
+
+function yakinKonu(brans, konu) {
+  const dizin = path.join(KOK, "topics", brans);
+  let adaylar = [];
+  try {
+    adaylar = fs.readdirSync(dizin).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
+  } catch { return null; }
+  return adaylar.find((a) => adSapmasi(konu, a)) ?? null;
 }
 
 const TURLER = [
@@ -77,6 +125,7 @@ const TURLER = [
 ];
 
 let toplamYetim = 0;
+let sapmaSayisi = 0;
 const satirlar = [];
 
 for (const [ad, birim] of TURLER) {
@@ -89,7 +138,27 @@ for (const [ad, birim] of TURLER) {
   );
   for (const y of yetim) {
     toplamYetim++;
-    satirlar.push(`    ${y.yol}  →  konu dosyası yok: topics/${y.konu}.json  (${y.adet} ${birim})`);
+    const yakin = yakinKonu(y.brans, y.ad);
+    if (!yakin) {
+      satirlar.push(`    ${y.yol}  →  konu dosyası YOK: topics/${y.konu}.json  (${y.adet} ${birim})`);
+      continue;
+    }
+    /* Hedef konunun bu TÜRDE dosyası zaten varsa yeniden adlandırma üzerine
+     * yazar — o zaman iş "ad düzelt" değil "iki dosyayı birleştir"dir ve
+     * hangi kaydın kalacağı bir içerik kararıdır. Ölçüldü: nefroloji kart
+     * dosyalarının ikisi de 70 kart taşıyor, ilk 10'u aynı, kalan 60'ı
+     * tamamen farklı — yani körlemesine yeniden adlandırma 60 kart siler. */
+    const hedefDosya = y.dosya.replace(y.ad, yakin);
+    const carpisma = fs.existsSync(path.join(KOK, ad, y.brans, hedefDosya));
+    sapmaSayisi++;
+    satirlar.push(
+      `    ${y.yol}  →  AD SAPMASI: topics/${y.brans}/${yakin}.json VAR  (${y.adet} ${birim})`
+    );
+    satirlar.push(
+      carpisma
+        ? `        ⚠ ${hedefDosya} ZATEN VAR — yeniden adlandırma üzerine yazar, birleştirme kararı gerekiyor`
+        : `        çare: ${y.dosya} → ${hedefDosya}`
+    );
   }
 }
 
@@ -157,9 +226,21 @@ if (toplamYetim === 0 && !okunmayan.length) {
 } else {
   const parcalar = [];
   if (toplamYetim) {
-    parcalar.push(
-      `${toplamYetim} yetim dosya (konusu yok) — ya konu dosyası eklenmeli ya da dosya kaldırılmalı.`
-    );
+    /* Çareleri farklı olduğu için iki sayı AYRI veriliyor. Tek sayıda
+     * toplamak, dosya adı düzeltmekle tıbbi konu yazmayı aynı iş gibi
+     * gösteriyordu. */
+    const eksik = toplamYetim - sapmaSayisi;
+    if (sapmaSayisi) {
+      parcalar.push(
+        `${sapmaSayisi} dosyada AD SAPMASI — konu dosyası var, adı tutmuyor. ` +
+          `Çarpışma yoksa yeniden adlandırma yeter; varsa hangi kaydın kalacağı içerik kararı.`
+      );
+    }
+    if (eksik) {
+      parcalar.push(
+        `${eksik} dosyanın konusu GERÇEKTEN yok — ya konu dosyası yazılmalı ya da dosya kaldırılmalı.`
+      );
+    }
   }
   if (okunmayan.length) {
     parcalar.push(
