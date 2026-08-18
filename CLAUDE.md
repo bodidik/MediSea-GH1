@@ -198,6 +198,28 @@ hâlâ çalışıyor mu — kayda fazladan bir alan koy, yeniden yazılınca
 silinmeli; (2) bileşen gerçekten kuruldu mu — kurulmayan bir bileşen
 hiçbir şey yazmaz ve ölçüm yanlışlıkla "temiz" der.
 
+**CANLIDA ÖLÇÜLDÜ — sınıf kapalı.** Depoya `{xp:12500, modül:2, rozet:1}`
+konup premium panosu yeniden yüklendi:
+
+| ölçüt | sonuç |
+|---|---|
+| değer hayatta kaldı mı | **evet**, 12500 |
+| negatif kontrol 1 — kaydetme çalışıyor mu | kayda konan fazladan alan **silindi** (yani yazma oldu) |
+| negatif kontrol 2 — bileşen kuruldu mu | ekranda "Puanınız 12500" **görünüyor** |
+
+Bozuk kayıt yolu da ölçüldü: `{"xp":12500,"completedModules":[bozuk`
+tohumlandı → sayfa ayakta kaldı, ham dize `ydus_premium_user_bozuk`
+anahtarına taşındı, ana kayıt geçerli boş duruma döndü ve kaydetme devam
+etti. Belgede yazan davranışın birebir aynısı.
+
+**`medisea:review:v1`in boşalmasına ALDANMA.** `/tekrar` sayfasını
+ziyaret edince tohumlanan takvim `{}` oluyor — ilk bakışta veri kaybı
+gibi. Değil: `pruneStates()` karşılığı olan vurgusu bulunmayan yetim kartı
+temizliyor. Ayırt edici ölçüm şu: **aynı tohumla başka bir sayfaya git.**
+Ölçüldü — `/topics/endokrinoloji`de takvim 71 baytıyla duruyor, yani
+silinme yalnızca `/tekrar`da ve kasıtlı. `medisea:log:v1` ve
+`medisea:index:v1` her iki durumda da korunuyor.
+
 ### Kolay bozulan kararlar
 
 - **Kalem ve avuç.** Bir kez `pointerType === "pen"` görüldüyse parmak artık
