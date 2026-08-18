@@ -500,13 +500,40 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     } catch {}
   }, [soruIndex, sonuclar, bitti, storageKey]);
 
+  const backHref = veri.topic
+    ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
+    : `/${lang}/premium/ydus/${branch}`;
+
+  /**
+   * BOŞ DURUM ÇIKIŞ YOLU İSTER — bir dönem yalnızca tek bir cümleydi.
+   *
+   * Bu depodaki kural belli: her hata/boş durumda geri dönülecek bir
+   * bağlantı olmalı, yoksa kullanıcı çıkmazda kalıyor (aynı sayfanın
+   * "Quiz bulunamadı" kartı bunu zaten yapıyordu; boş dal atlanmıştı).
+   *
+   * İki yoldan buraya düşülüyor: quiz dosyası okunabilir ama `sorular`
+   * boş/başka şemada, ya da "yalnızca yanlışları çöz" kipinde saklanan
+   * kimlikler artık hiçbir soruyla eşleşmiyor (içerik düzenlenince olur).
+   */
   if (sorular.length === 0) {
     return (
       <div style={{
-        minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontFamily: 'system-ui, sans-serif',
+        minHeight: '80vh', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center', gap: '1rem',
+        fontFamily: 'system-ui, sans-serif', padding: '1rem', textAlign: 'center',
       }}>
-        <p style={{ color: '#4a6a8a' }}>Bu quizde henüz soru yok.</p>
+        <div style={{ fontSize: '2.5rem' }} aria-hidden="true">📝</div>
+        <p style={{ color: '#4a6a8a', fontSize: '15px', margin: 0, maxWidth: '28rem' }}>
+          {tumSorular.length > 0
+            ? 'Tekrar çözülecek soru kalmadı. İşaretlediğin sorular quizden çıkarılmış olabilir.'
+            : 'Bu quizde henüz soru yok.'}
+        </p>
+        <a href={backHref} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← Konuya dön
+        </a>
       </div>
     );
   }
@@ -518,10 +545,6 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     }
     setSoruIndex(soruIndex + 1);
   }
-
-  const backHref = veri.topic
-    ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
-    : `/${lang}/premium/ydus/${branch}`;
 
   if (bitti) {
     return (
