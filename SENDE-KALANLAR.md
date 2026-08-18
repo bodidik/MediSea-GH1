@@ -825,3 +825,38 @@ taşınmayacaklara karar verip sayfaları silmek. Ölçüm şöyle alınır:
 ```bash
 node web/scripts/yetim-denetim.cjs   # yetim içerik dosyaları
 ```
+
+---
+
+## 24. Video modülünün sayfası hiç yok — içerik yazılmış, rota yazılmamış
+
+Premium konu sayfasındaki "Modüller" listesi `video` modülünü de basıyor ve
+bağlantısı `/{lang}/premium/ydus/{branş}/{konu}/video` adresine gidiyor.
+**Depoda böyle bir rota yok** — ölçüldü, `app/(ydus)` altında hiçbir
+`video/page.tsx` bulunmuyor. Yani ilan eden her konu 404'e tıklanabilir
+bağlantı basıyordu.
+
+Bu turda modül kartları envantere bağlandı ve `video` kalıcı olarak
+kapatıldı, yani bugün kimse 404'e düşmüyor. Ama içerik duruyor:
+
+```
+videos/hematoloji/aml-videos.json     videos/romatoloji/fmf-videos.json
+videos/hematoloji/kml-videos.json     videos/romatoloji/fmf.json
+                                      toplam 6 video kaydı
+```
+
+Modülü ilan eden iki konu var: `hematoloji/aml-ana` ve `hematoloji/kml`.
+Romatoloji dosyaları ise hiçbir konuda ilan edilmemiş (`fmf` konusu JSON'da
+yok — bkz. 23. madde, FMF göç etmemiş konulardan).
+
+**Karar senin, iki yol:**
+
+1. **Video sayfasını yaz** — rota kurulunca konu sayfasındaki
+   `MODUL_VAR.video = false` satırı envanter kontrolüne çevrilir (dosyanın
+   içinde nerede olduğu yorumda yazılı).
+2. **Vazgeç** — o zaman iki konu dosyasındaki `"video": true` ilanı ve dört
+   içerik dosyası kaldırılabilir.
+
+Ara durum bugünkü hâl: modül kartı görünür ama soluk ve tıklanmaz, yani
+kullanıcıya "burada bir şey olacak" diyor. Uzun süre böyle kalacaksa
+2. yol daha dürüst.

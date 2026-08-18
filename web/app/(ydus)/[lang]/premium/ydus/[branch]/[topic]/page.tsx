@@ -121,6 +121,32 @@ export default async function KonuSayfasi({
     vaka: envanter.vaka,
   };
 
+  /**
+   * MODÜL KARTLARI DA GERÇEĞE BAKAR — yukarıdaki not bir dönem yalnızca
+   * istatistikler için doğruydu.
+   *
+   * Sayılar envantere çevrildi ama aşağıdaki "Modüller" listesi konu
+   * dosyasının İLANINDA (`veri.moduller`) kaldı. Yani aynı sayfada iki blok
+   * iki ayrı gerçeğe bakıyordu: sayı "—" derken modül kartı tıklanabilir
+   * duruyordu.
+   *
+   * Ölçüldü: 40 konuda 69 aktif ilan var, **6'sının hedefi yok** —
+   * graves-hastaligi/quiz (yorumda "düzeltildi" yazan tam olarak bu),
+   * kml/flashcard, aml-ana ve kml'de inciler + video.
+   *
+   * `video` her zaman kapalı: `MODUL_HREF.video` `/…/<konu>/video` adresine
+   * gidiyor ama depoda böyle bir rota YOK, yani ilan eden her konu 404'e
+   * bağlanıyordu. İçerik dosyaları (`content/premium/ydus/videos/`) duruyor;
+   * sayfa yazılırsa buradaki `false` kaldırılır (bkz. SENDE-KALANLAR).
+   */
+  const MODUL_VAR: Record<string, boolean> = {
+    quiz: envanter.quizVar,
+    flashcard: envanter.flashcardVar,
+    inciler: envanter.inciVar,
+    vaka: envanter.vakaVar,
+    video: false,
+  };
+
   return (
     <div style={{
       minHeight: '100vh',
@@ -266,9 +292,11 @@ export default async function KonuSayfasi({
               }}>
                 Modüller
               </div>
-              {(Object.entries(moduller) as [string, boolean][]).map(([key, aktif]) => {
+              {(Object.entries(moduller) as [string, boolean][]).map(([key, ilan]) => {
                 const bilgi = MODUL_BILGI[key as keyof typeof MODUL_BILGI];
                 if (!bilgi) return null;
+                // İlan YETMEZ: hedef içerik gerçekten var mı?
+                const aktif = ilan && (MODUL_VAR[key] ?? false);
                 const href = MODUL_HREF[key]?.(lang, branch, topic) ?? '#';
                 return (
                   <Link
