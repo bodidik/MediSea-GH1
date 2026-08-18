@@ -36,11 +36,21 @@ export default async function QuizCozPage(props: {
   };
 
   if (!branch || !id || !isValidParam(branch) || !isValidParam(id)) {
+    // Teknik ayrıntı sunucu günlüğüne; kullanıcı arayüzünde parametre adı geçmez.
+    console.error('[quiz-coz] geçersiz parametre:', { branch, id });
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
-        <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Parametre eksik</h2>
-        <p style={{ color: '#4a6a8a', fontSize: '13px' }}>branch ve id zorunludur.</p>
+        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu quiz açılamadı</h1>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Adres eksik görünüyor. Quizlere konu sayfalarından ulaşabilirsin.
+        </p>
+        <Link href={`/${lang}/premium/ydus`} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← YDUS panosuna dön
+        </Link>
       </div>
     );
   }
@@ -53,12 +63,14 @@ export default async function QuizCozPage(props: {
   const veri = quizYukle(branch, id);
 
   if (!veri) {
+    // Hangi dosyanın eksik olduğu bakım için gerekli ama kullanıcının işi değil.
+    console.error('[quiz-coz] quiz dosyası okunamadı:', `${branch}/${id}.json`);
     return (
       <div style={S}>
         <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
-        <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Quiz bulunamadı</h2>
-        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem' }}>
-          <code style={{ background: '#f0f4f8', padding: '2px 6px', borderRadius: '4px' }}>{branch}/{id}.json</code> mevcut değil.
+        <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Quiz bulunamadı</h1>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Bu quiz kaldırılmış ya da adresi değişmiş olabilir.
         </p>
         <Link href={`/${lang}/premium/ydus/${branch}`} style={{
           padding: '8px 18px', background: '#1a3a6b', color: '#fff',

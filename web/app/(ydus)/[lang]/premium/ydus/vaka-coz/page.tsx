@@ -60,10 +60,21 @@ export default async function VakaCozPage(props: {
   };
 
   if (!branch || !isValidParam(branch)) {
+    // Teknik ayrıntı sunucu günlüğüne; kullanıcı arayüzünde parametre adı geçmez.
+    console.error('[vaka-coz] geçersiz branş parametresi:', branch);
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
-        <h2 style={{ color: '#1a3a6b', fontSize: '18px' }}>branch parametresi eksik</h2>
+        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu vaka açılamadı</h1>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Adres eksik görünüyor. Vakalara konu sayfalarından ulaşabilirsin.
+        </p>
+        <Link href={`/${lang}/premium/ydus`} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← YDUS panosuna dön
+        </Link>
       </div>
     );
   }
@@ -186,11 +197,20 @@ export default async function VakaCozPage(props: {
 
   /* ── DOĞRUDAN VAKA ── */
   if (!id || !isValidParam(id)) {
+    console.error('[vaka-coz] geçersiz vaka parametresi:', { id, topic });
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚠️</div>
-        <h2 style={{ color: '#1a3a6b', fontSize: '18px' }}>Parametre eksik</h2>
-        <p style={{ color: '#4a6a8a', fontSize: '13px' }}>id veya topic zorunludur.</p>
+        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu vaka açılamadı</h1>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Adres eksik görünüyor. Branş sayfasından vakalara ulaşabilirsin.
+        </p>
+        <Link href={`/${lang}/premium/ydus/${branch}`} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← Branşa dön
+        </Link>
       </div>
     );
   }
@@ -198,14 +218,14 @@ export default async function VakaCozPage(props: {
   const veri = vakaYukle(branch, id);
 
   if (!veri) {
+    // Hangi dosyanın eksik olduğu bakım için gerekli ama kullanıcının işi değil.
+    console.error('[vaka-coz] vaka dosyası okunamadı:', `${branch}/${id}.json`);
     return (
       <div style={S}>
         <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
-        <h2 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Vaka bulunamadı</h2>
-        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem' }}>
-          <code style={{ background: '#f0f4f8', padding: '2px 6px', borderRadius: '4px' }}>
-            {branch}/{id}.json
-          </code>{' '}mevcut değil.
+        <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Vaka bulunamadı</h1>
+        <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
+          Bu vaka kaldırılmış ya da adresi değişmiş olabilir.
         </p>
         <Link href={`/${lang}/premium/ydus/${branch}`} style={{
           padding: '8px 18px', background: '#1a3a6b', color: '#fff',
