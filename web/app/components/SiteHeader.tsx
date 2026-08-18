@@ -229,7 +229,22 @@ export default function SiteHeader() {
             </Link>
 
             {/* Fare Üzerine Gelince Açılan Liste */}
-            <div className="absolute top-full right-0 mt-2 w-56 bg-white border border-slate-100 rounded-[1.5rem] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden p-2">
+            {/*
+              `group-focus-within:` varyantları FAREYE EŞİTLİK için: menü bir
+              dönem yalnızca `group-hover:` ile açılıyordu ve klavyeyle hiç
+              açılamıyordu.
+
+              Ölçüldü (1600px, yani kapsayıcının gerçekten çizildiği genişlik):
+              menü `visibility: hidden` kaldığı için yedi kategori bağlantısı
+              odak sırasına HİÇ girmiyordu — `focus()` çağrılsa bile
+              `activeElement` olmuyorlardı. Tuzak ya da görünmez odak hedefi
+              yoktu; içerik klavyeyle basitçe erişilemezdi.
+
+              Not: aynı kategoriler `/tools` sayfasında da listeli, yani içerik
+              kaybı değil kısayol kaybıydı. `group-focus-within` bu dosyada
+              zaten kullanılan kalıp (arama ikonu).
+            */}
+            <div className="absolute top-full right-0 mt-2 w-56 bg-white border border-slate-100 rounded-[1.5rem] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50 overflow-hidden p-2">
               {/* Kategoriler araç veritabanındaki gerçek gruplar. Burada bir dönem
                   "Algoritmalar" ve "İlaç Etkileşimleri" yazıyordu; ikisinin de
                   sayfası hiç yazılmamıştı, üç bağlantı da 404 veriyordu. */}
