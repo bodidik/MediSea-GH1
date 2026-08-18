@@ -86,6 +86,79 @@ async function yonlendirilenler() {
   }
 }
 
+/* ── İKİNCİ SINIF: kendi ALANINDA duran adres ────────────────────────────
+ *
+ * Yukarıdaki tarama `href="/..."` deseni arıyor, yani içerik metninin
+ * içine gömülü HTML bağlantılarını. İçerik dosyalarında bir de adresin
+ * KENDİ ALANI olarak durduğu yerler var (`navigation.pearls.url`,
+ * `items.url`) ve desen onları hiç görmüyordu.
+ *
+ * Ölçüldü: dokuz böyle adres var, **sekizi kırık** — vaka kokpitinin
+ * "sonraki vaka" ve "inciler" bağlantıları var olmayan rotalara gidiyor
+ * (`/premium/ydus/cases/…` ve `/premium/ydus/pearls/…`; gerçek rotalar
+ * `soru-cozum` ve `inciler`), altı video adresi ise hiç kurulmamış bir
+ * `/premium/video/izle` rotasına.
+ *
+ * Bu bölüm ŞİMDİLİK CI'yı DÜŞÜRMÜYOR. Sebebi borcun kaynağı: video
+ * rotasının yazılıp yazılmayacağı bir ürün kararı (SENDE-KALANLAR 24) ve
+ * kırık adresleri "düzeltmek" için gidilecek bir hedef yok. Karar verilip
+ * içerik temizlenince aşağıdaki `UYARI_MODU` false yapılır ve sınıf
+ * gerçek bir kapıya dönüşür.
+ */
+const UYARI_MODU = true;
+
+/** JSON ağacındaki her dizge değerini (yol, değer) olarak dolaşır. */
+function* dizgeler(o, yol = []) {
+  if (o && typeof o === 'object') {
+    for (const [k, v] of Object.entries(o)) {
+      yield* dizgeler(v, Array.isArray(o) ? yol : yol.concat(k));
+    }
+  } else if (typeof o === 'string') {
+    yield [yol.join('.'), o];
+  }
+}
+
+/**
+ * Bir adres gerçek bir rotaya düşüyor mu?
+ *
+ * İlk yazımı `null` (= "bilinmeyen biçim, karar verme") dönüyordu ve bu
+ * denetimi işe yaramaz etti: sekiz kırık adresin yedisi bilinmeyen biçimdi,
+ * yani tarama "1 kırık" dedi. Kusur bulamayan bir tarama, temiz bir
+ * yüzeyden ayırt edilemez.
+ *
+ * Şimdi `/premium/` altındaki HER adres karara zorlanıyor: rota listesi
+ * dosya sisteminden değil elle tutuluyor ama kapalı — listede olmayan
+ * biçim kırıktır. Premium dışı bilinmeyen biçimlerde hâlâ `null` dönüyor,
+ * çünkü orada rota uzayı geniş (araçlar, açık site) ve yanlış alarm
+ * denetimi gürültüye boğar.
+ */
+const PREMIUM_MODUL = [
+  'quiz-coz', 'hizli-tekrar', 'vaka-coz', 'inciler',
+  'soru-cozum', 'profil', 'liderlik',
+];
+
+function rotaVar(yol, premiumKonular, konular, araclar) {
+  const temiz = yol.replace(/[#?].*$/, '').replace(/\/$/, '');
+
+  const prem = temiz.match(/^\/[a-z]{2}\/premium(?:\/(.*))?$/);
+  if (prem) {
+    const par = (prem[1] || '').split('/').filter(Boolean);
+    if (!par.length) return true;                    // /tr/premium
+    if (par[0] !== 'ydus') return false;             // /tr/premium/video/izle gibi
+    if (par.length === 1) return true;               // /tr/premium/ydus
+    if (PREMIUM_MODUL.includes(par[1])) return par.length === 2;
+    if (par.length === 2) return true;               // /tr/premium/ydus/<brans>
+    if (par.length === 3) return premiumKonular.has(`${par[1]}/${par[2]}`);
+    return false;                                    // dörtten fazla segment: rota yok
+  }
+
+  const k = temiz.match(/^\/topics\/([^/]+)\/([^/]+)/);
+  if (k) return konular.has(`${k[1]}/${k[2]}`);
+  const a = temiz.match(/^\/tools\/([^/]+)/);
+  if (a) return araclar.has(a[1]);
+  return null;
+}
+
 async function main() {
   const yonlendirme = await yonlendirilenler();
   const konular = kumeCikar(CANONICAL);
@@ -145,7 +218,39 @@ async function main() {
     }
   }
 
+  // Kendi alanında duran adresler (href= deseninin görmediği sınıf).
+  const alanKirik = [];
+  let alanToplam = 0;
+  for (const alan of alanlar) {
+    for (const dosya of jsonDosyalari(alan.kok)) {
+      const kaynak = path.relative(path.join(KOK, 'content'), dosya).split(path.sep).join('/');
+      const ham = fs.readFileSync(dosya, 'utf-8');
+      let veri;
+      try { veri = JSON.parse(ham); } catch { continue; }
+      for (const [anahtar, deger] of dizgeler(veri)) {
+        if (!deger.startsWith('/') || deger.startsWith('//') || deger.includes(' ')) continue;
+        // href= içinde geçenler yukarıda zaten denetlendi.
+        if (ham.includes(`href="${deger}`) || ham.includes(`href=\\"${deger}`)) continue;
+        alanToplam++;
+        if (rotaVar(deger, premiumKonular, konular, araclar) === false) {
+          alanKirik.push({ kaynak, anahtar, hedef: deger });
+        }
+      }
+    }
+  }
+
   console.log(`içerikteki iç bağlantı: ${toplam}${yonlendirilmis ? ` (${yonlendirilmis}'i yönlendirmeyle çalışıyor)` : ''}`);
+  console.log(`kendi alanında duran adres: ${alanToplam}${alanKirik.length ? ` (${alanKirik.length}'i kırık)` : ''}`);
+  if (alanKirik.length) {
+    console.log('');
+    console.log(UYARI_MODU
+      ? 'UYARI — alan adresleri (CI kapısı DEĞİL, bkz. UYARI_MODU notu):'
+      : 'KIRIK alan adresleri:');
+    for (const k of alanKirik) {
+      console.log(`  ${k.kaynak.padEnd(46)} ${k.anahtar.padEnd(24)} -> ${k.hedef}`);
+    }
+    if (!UYARI_MODU) process.exitCode = 1;
+  }
   if (!kirik.length) {
     console.log('kırık bağlantı yok.');
     return;

@@ -860,3 +860,52 @@ yok — bkz. 23. madde, FMF göç etmemiş konulardan).
 Ara durum bugünkü hâl: modül kartı görünür ama soluk ve tıklanmaz, yani
 kullanıcıya "burada bir şey olacak" diyor. Uzun süre böyle kalacaksa
 2. yol daha dürüst.
+
+---
+
+## 25. Vaka kokpitine giden bağlantı yok, navigasyonu da kırık
+
+`/premium/ydus/soru-cozum` rotası çalışıyor ve tek vaka dosyasını
+(`cases/nefroloji/case-sle-nefrit-001.json`, 2 adım) doğru şemayla okuyor —
+motor `stages` ve `correctAnswer` bekliyor, dosya ikisini de taşıyor.
+
+**Ama kokpite giden canlı bağlantı YOK.** Kaynakta `soru-cozum` geçen tek
+yer bir yorum satırı; gerçek bağlantılar rotaya alınmayan `_` klasörlerinde
+kalmış (bkz. 23. madde). Yani sayfa yalnızca adresi elle yazan birine
+açılıyor.
+
+Vaka dosyasının kendi navigasyonu da var olmayan rotalara gidiyor:
+
+```
+navigation.nextCase  /tr/premium/ydus/cases/nefroloji/case-002   -> rota yok, case-002 de yok
+navigation.pearls    /tr/premium/ydus/pearls/lupus               -> rota /inciler, /pearls değil
+navigation.exit      /tr/premium/ydus/nefroloji                  -> ÇALIŞIYOR
+```
+
+`pearls` hedefi düzeltilse bile bugün boş açılır: nefroloji incileri yetim
+(bkz. 18. madde).
+
+**Karar senin, iki yol:**
+
+1. **Kokpiti yaşat** — konu sayfasına ya da branş sayfasına bağlantı ekle,
+   navigasyon adreslerini gerçek rotalara çevir
+   (`/tr/premium/ydus/soru-cozum?branch=…&id=…` ve
+   `/tr/premium/ydus/inciler?branch=…&id=…`).
+2. **Kapat** — tek vaka dosyası varken ayrı bir motor sürdürmek pahalı;
+   `vaka-coz` zaten 11 vaka dosyasıyla çalışıyor ve bağlantılı.
+
+Bu adresler artık denetimde görünüyor:
+
+```bash
+node web/scripts/link-denetim.cjs
+```
+
+Denetim `href="…"` deseninin göremediği bir sınıfı yeni öğrendi: adresin
+kendi ALANINDA durduğu yerler (`navigation.*.url`, `items.url`). Dokuz
+böyle adres var, **sekizi kırık** — ikisi yukarıdaki kokpit, altısı ise
+video adresleri (bkz. 24. madde; `/premium/video/izle` rotası hiç yok).
+
+Bu bölüm bilerek **CI kapısı DEĞİL**: kırık adreslerin çoğu senin vereceğin
+ürün kararına bağlı ve gidilecek doğru hedef henüz yok. Karar verilip içerik
+temizlenince betikteki `UYARI_MODU` `false` yapılır ve sınıf gerçek bir
+kapıya dönüşür.
