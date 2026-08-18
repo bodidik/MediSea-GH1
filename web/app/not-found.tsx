@@ -26,7 +26,15 @@ export default function BulunamadiSayfasi() {
       <div className="max-w-3xl mx-auto">
 
         <div className="border-l-8 border-blue-900 pl-6 py-2 mb-10">
-          <div className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em] mb-2">
+          {/*
+            Opaklık /50 DEĞİL /80: saydam metin, alfayı zemine bindirmeyen bir
+            ölçümde opak sanılır. Ölçüldü — /50 bu künyeyi beyaz zeminde 2.67
+            kontrasta düşürüyordu (eşik 4.5), /80 ise 5.92 veriyor.
+
+            /80 sitenin kendi değeri: kaynakta 188 kullanım /80, yalnızca bu
+            sayfadaki iki satır /50 kalmıştı.
+          */}
+          <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] mb-2">
             404 · Sayfa bulunamadı
           </div>
           <h1 className="text-3xl sm:text-4xl font-black uppercase italic tracking-tighter leading-none">
@@ -76,7 +84,7 @@ export default function BulunamadiSayfasi() {
 
         {/* Branşlar — doğrudan bir yere düşmek isteyen için */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 sm:p-8">
-          <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em] mb-4">
+          <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em] mb-4">
             Branşlar
           </h2>
           <div className="flex flex-wrap gap-2">
