@@ -518,10 +518,24 @@ export default function ReadingTools() {
                     >
                       {m.t}
                     </button>
+                    {/*
+                      İki koruma da klavye için, ikisi de ölçümle kondu.
+
+                      `focus:opacity-100` — `opacity-0` ögeyi odak sırasından
+                      ÇIKARMIYOR (`visibility:hidden`in aksine). Yani düğme
+                      görünmezken odaklanabiliyordu: klavyeyle gezen kullanıcı
+                      göremediği bir SİLME düğmesinin üstünde duruyordu.
+
+                      `aria-label` — erişilebilir ad `title`dan değil İÇERİKTEN
+                      geliyordu, çünkü hesaplama sırası içeriği title'ın önüne
+                      koyuyor ve içerik boş değil. Yani düğmenin adı "✕"di.
+                      `title` fare ipucu olarak kalıyor.
+                    */}
                     <button
                       onClick={() => removeOne(m.id)}
+                      aria-label="Vurguyu kaldır"
                       title="Kaldır"
-                      className="shrink-0 text-slate-300 opacity-0 transition-opacity hover:text-rose-500 group-hover:opacity-100"
+                      className="shrink-0 text-slate-300 opacity-0 transition-opacity hover:text-rose-500 group-hover:opacity-100 focus:opacity-100"
                     >
                       ✕
                     </button>
