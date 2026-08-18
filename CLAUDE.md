@@ -1164,9 +1164,28 @@ az 110px ile ancak sığıyor; bir kısaltmayı üç katına çıkarmak taşma �
 
 İnciler yüzeyi kapsam dışı bırakıldı: toplam 4 geçiş var, yani kazanç yok.
 
-### Tarayıcıda kontrast ölçen betiğin yedi tuzağı
+### Tarayıcıda kontrast ölçen betiğin sekiz tuzağı
 
-Yedisi de gerçekten yanılttı; dördü kusur uydurdu, üçü gerçek kusuru gizledi.
+Sekizi de gerçekten yanılttı; beşi kusur uydurdu, üçü gerçek kusuru gizledi.
+
+- **SAYDAM ZEMİN — metnin alfasını çözmek YETMEZ.** İlk maddedeki alfa
+  bindirmesini yalnızca YAZI rengine uygulamak, zemin de saydamsa yeni bir
+  hata üretiyor: zincirde `alpha > 0` olan ilk zemin opak sanılıyor.
+
+  Ölçüldü (canlı ana sayfa): rozet metni `rgba(255,255,255,0.6)`, kendi
+  zemini `rgba(255,255,255,0.1)`, onun altındaki gerçek opak zemin ise
+  `rgb(23,37,84)`. Saydam zemin opak beyaz sayılınca beyaz yazı beyaz
+  zeminde çıkıyor ve kontrast **1.00** hesaplanıyor — altı sahte kusur.
+  Doğru hesapla gerçek değer ~5.0, yani sorun yok.
+
+  Doğrusu: yukarı yürürken saydam zeminleri BİRİKTİR, ilk opak zeminde dur
+  ve katmanları alttan üste doğru bindir. Sonra yazıyı bu bileşke zemine
+  bindir.
+
+  **Ters yönde de vurur:** açık saydam bir katman koyu zeminin üstündeyse,
+  koyu yazılarda kontrast olduğundan YÜKSEK hesaplanır ve gerçek kusur
+  gizlenir. Bu yüzden düzeltmeden sonra daha önce "temiz" denen yüzeyler
+  yeniden ölçülmeli — ölçüldü, bu depoda gizlenmiş kusur çıkmadı.
 
 - **Düz 4.5 eşiği BÜYÜK METİNDE kusur uydurur.** WCAG eşiği metin boyutuna
   göre değişiyor: ≥24px (ya da ≥18.66px + kalın) için 3.0, ötekiler için
