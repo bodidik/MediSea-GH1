@@ -504,6 +504,20 @@ sağlamadığı için kontrast 1.37'ye düşüyordu.
 yaparken tarayıcıyı bir kez koyu kipe alıp tekrarla; aksi hâlde içerikteki
 `dark:` sınıfları hiç ölçülmez.
 
+**SINIF ÖLÇÜMLE KAPATILDI — yeniden aramaya gerek yok.** Tarayıcı koyu
+kipe alınıp (`matchMedia('(prefers-color-scheme: dark)')` ile etkin olduğu
+doğrulanarak) `dark:` sınıfı en yoğun üç konu sayfası tarandı: 209 + 137 +
+124 = **470 yazı, sıfır kontrast kusuru.** Kök ögede `.dark` yok, yani
+`darkMode: "class"` varyantları gerçekten susturuyor.
+
+Kök şema beyanı da sınandı ve burada **ölçüm yöntemi bir kez yanılttı**:
+`getComputedStyle(document.documentElement).colorScheme` `"normal"`
+döndürüyor ve bu "beyan yok" gibi görünüyor — oysa `<meta name=
+"color-scheme">` CSS ÖZELLİĞİNİ ayarlamaz, yalnızca kullanılan şemayı
+belirler. Doğru sonda tarayıcının kendi çizdiği yüzeyi denemek: koyu kipte
+sıfırdan bir `<select>` oluşturup zeminini okumak. Ölçüldü — beyaz zemin,
+koyu yazı, yani beyan çalışıyor.
+
 **Kontrast ölçerken iki tuzak — ikisi de yaşandı:**
 
 - **Degradeyi göremeyen ölçüm.** Zemin yalnızca `backgroundColor` okunarak
