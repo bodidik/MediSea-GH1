@@ -21,7 +21,22 @@ export function parseLocaleNumber(input: string | number | undefined | null): nu
  * 1. eGFR (CKD-EPI 2021) Hesaplayıcı - Race-Free Standartı
  */
 export function egfrCkdEpi2021(scr: number, age: number, sex: Sex): number {
-  if (!scr || !age) return 0;
+  /**
+   * NEGATİF KREATİNİN `NaN` ÜRETİYORDU — ve ekrana düz "NaN" basılıyordu.
+   *
+   * Sebep aşağıdaki `** alpha`: `alpha` kesirli (-0.302) ve JavaScript'te
+   * negatif tabanın kesirli üssü NaN. Ölçüldü: scr = -5 → NaN, scr = -0.1 → NaN.
+   *
+   * Bu dosyadaki 15 fonksiyondan yalnızca bu, kullanıcı girdisini kesirli
+   * üsse alıyor; yani sınıf tek araçla sınırlı.
+   *
+   * Sıfır/negatif/sonsuz girdi zaten hesaplanamaz — sözleşmeye uyup 0
+   * dönüyoruz. 0'ın kullanıcıya SAYI olarak gösterilmemesi çağıranın işi
+   * (bkz. app/tools/egfr/page.tsx): "0 mL/dk" makul görünen kritik bir
+   * değer ve çöp girdiden üretilmemeli.
+   */
+  if (!Number.isFinite(scr) || !Number.isFinite(age)) return 0;
+  if (scr <= 0 || age <= 0) return 0;
   
   const isFemale = sex === "female";
   const kappa = isFemale ? 0.7 : 0.9;
