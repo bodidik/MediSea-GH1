@@ -1480,6 +1480,21 @@ birkaç sayfa için doğru araç; kütle taraması canlıda (ya da `npm start`
 ile üretim derlemesinde) yapılır — yalnız o zaman ölçtüğün şeyin son
 dağıtım olduğunu unutma.
 
+**`innerText` CSS `text-transform` UYGULAR — `textContent` uygulamaz.**
+Bu depo `uppercase` sınıfını bolca kullanıyor, yani metin varlığı sınayan
+her ölçüm etkileniyor. Ölçüldü: hata sınırının başlığı kaynakta
+"Bu sayfa açılamadı", `textContent` aynısını veriyor ama `innerText`
+**"BU SAYFA AÇILAMADI"** döndürüyor — arama `false` çıkıyor ve sınır
+çalışmıyor sanılıyor. Metin ararken `textContent` kullan, ya da iki tarafı
+da aynı kurala indir.
+
+**Hata sınırları `curl` ile GÖRÜNMEZ.** `error.tsx` ve `global-error.tsx`
+istemci bileşeni; sunucu 500 verirken yalnızca kabuk gönderiyor. Ham
+HTML'de sınırın metni YOK, tarayıcıda VAR. Bir hata ekranını doğrulayacaksan
+tarayıcıyla bak — ve **dev kipinde değil**: `next dev` kendi hata katmanını
+basıp sınırı tümden gizliyor. Ölçüm üretim derlemesiyle yapılır (geçici
+rota `force-dynamic` olmalı, yoksa prerender derlemeyi düşürür).
+
 **Ekran dışı iframe'de `innerText` içeriğin ÇOĞUNU düşürür.** Ölçüldü
 (`left:-9999px` konumlu çerçevede, kardiyoloji branş sayfası):
 `body.innerText` 1201 karakter, `body.textContent` 94478. `innerText`
