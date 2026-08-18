@@ -100,7 +100,13 @@ export default function YdusDashboardClient({
           </div>
           <div className="flex items-center gap-3">
             <PlanBadge plan={plan} />
-            <Link href={`/${lang}/premium/ydus/profil`} className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center hover:bg-slate-200 transition-colors text-sm">
+            {/*
+              `aria-label`: bağlantının tek içeriği emoji olduğu için
+              erişilebilir adı "👨‍⚕️" idi — ekran okuyucu bunu "sağlık
+              çalışanı erkek" diye okuyor, yani denetimin ne yaptığını
+              söylemiyor. Ad hesabında `aria-label` içeriği yener.
+            */}
+            <Link aria-label="Profilim" href={`/${lang}/premium/ydus/profil`} className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center hover:bg-slate-200 transition-colors text-sm">
               👨‍⚕️
             </Link>
           </div>
