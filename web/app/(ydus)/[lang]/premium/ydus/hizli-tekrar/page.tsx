@@ -50,6 +50,17 @@ export default async function HizliTekrarSayfasi({
   const veri = flashcardYukle(branch, id);
   if (!veri) notFound();
 
+  /**
+   * Kart dizisi OKUNABİLİR olmalı — yoksa oynatıcı çöker, boş kalmaz.
+   *
+   * `FlashcardPlayer` prop'u `Card[]` sanıyor ve `cards.map` / `shuffle`
+   * çağırıyor; `undefined` gelirse istemci bileşeni hata veriyor. Bugün
+   * 21 kart dosyasının hepsi `cards` taşıyor, yani bu dal tetiklenmiyor —
+   * ama şema ayrışması bu depoda ölçülmüş bir olay (bkz. premium-envanter
+   * içindeki not) ve çökme, çıkmaz sokaktan beterdir.
+   */
+  if (!Array.isArray(veri.cards) || veri.cards.length === 0) notFound();
+
   const gate = await AccessGate({ topicId: id!, lang, branch: branch! });
   if (gate) return gate;
 

@@ -114,6 +114,17 @@ export default async function PearlsPage({
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileContents);
     
+    /**
+     * Dizi OKUNABİLİR mi — `PearlsViewer` yalnızca `data.pearls` okuyor ve
+     * `data.pearls.filter` çağırıyor. Alan başka adla yazılmışsa (ya da hiç
+     * yoksa) çökme İSTEMCİDE olur, yani aşağıdaki `catch` onu göremez.
+     * Burada kontrol edip aynı hata kartına düşürüyoruz: kullanıcı çıkış
+     * yolu olan bir sayfa görüyor, boş ekran değil.
+     */
+    if (!Array.isArray(data?.pearls) || data.pearls.length === 0) {
+      throw new Error(`pearls dizisi okunamadı: ${branch}/${id}`);
+    }
+
     // 5. Veriyi o mükemmel PearlsViewer arayüzüne iletiyoruz
     return <PearlsViewer data={data} />;
   } catch (error) {
