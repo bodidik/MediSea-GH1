@@ -792,6 +792,19 @@ bir dokunma hedefi taraması onları göremez ve "kusur yok" der.
 dokunma hedefi denetimleri bunları kaçırmıştı, çünkü hepsi 320/375'te
 yapılmıştı. "Giriş" üstelik bir dönüşüm kontrolü.
 
+**AYNI TUZAK TERS YÖNDE DE VURUYOR — kusur UYDURUR.** Yukarıdaki hâli
+"göremezsin"; öteki hâli "gizlenmiş olduğu için kusur sanırsın". Ölçüldü:
+odaklanılabilir-ama-görünmez taraması 1280px'te üç sayfada 17/9/10 kusur
+raporladı; hepsi sahteydi, çünkü kapsayıcı `hidden 2xl:flex` taşıyor ve
+1536px altında `display: none` — o ögeler zaten odak sırasında değil.
+
+Ölçüt: bir öge "görünmez" çıktığında önce **hangi genişlikte çizildiğini**
+bul ve ölçümü ORADA tekrarla. `display: none` bir kusur değil, o
+breakpoint'te ögenin var olmadığının kendisidir. Gerçek kusur ancak
+ögenin çizildiği genişlikte görünür — bu turda 1600px'te bakılınca menü
+kapsayıcısı `flex` oldu ve asıl sorun (klavyeyle hiç açılmaması) o zaman
+ortaya çıktı.
+
 **Dokunma hedefi tararken `sr-only` ögeleri ELE.** İki taramada birden
 sahte kusur ürettiler: gizlenmiş `<input>`'lar (onay kutusu/radyo) ve
 atlama bağlantısı 1×1 ölçülüyor. İkisi de tasarım gereği: girdinin gerçek
