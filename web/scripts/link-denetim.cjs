@@ -159,6 +159,90 @@ function rotaVar(yol, premiumKonular, konular, araclar) {
   return null;
 }
 
+/* ── ÜÇÜNCÜ SINIF: KAYNAKTA düz yazılmış adres ───────────────────────────
+ *
+ * İlk iki sınıf içerik dosyalarına bakıyor. Ama uygulamanın kendisinde de
+ * elle yazılmış adresler var — ana sayfadaki öne çıkan araç listesi, branş
+ * kartları, reklam şeritleri. Bunlar içerik dosyası olmadığı için hiçbir
+ * denetimin kapsamında değildi.
+ *
+ * Bu, bu depoda tekrar eden bir sınıf: elle tutulan liste, içerik değişince
+ * sessizce eskiyor. Ölçüldü — kaynakta 466 düz adres var ve ÜÇÜ kırık,
+ * üçü de `app/tools/data/ads.ts` içinde:
+ *
+ *   /topics/acil-tip   böyle bir branş yok (13 branş sayıldı)
+ *   /kitap             rota yok
+ *   /premium           dilsiz rota yok; premium /[lang]/premium altında
+ *
+ * ŞİMDİLİK UYARI, kapı değil: üçü de `AdBanner` içinde ve o bileşen
+ * hiçbir yerden çağrılmıyor (ölü kod listesinde kayıtlı). Ölü kod
+ * temizlenince `KAYNAK_UYARI` false yapılıp gerçek bir kapıya dönüşür —
+ * o an bu sınıf ana sayfayı kıran bir yeniden adlandırmayı yakalar.
+ *
+ * Şablon dizeler (`/topics/${slug}`) bilerek kapsam dışı: hedef çalışma
+ * zamanında belli oluyor ve zaten veriden geliyor.
+ */
+const KAYNAK_UYARI = true;
+const KAYNAK_DIZINLERI = ['app', 'lib', 'components'];
+
+function* kaynakDosyalari(kokDizin) {
+  let girisler;
+  try { girisler = fs.readdirSync(kokDizin, { withFileTypes: true }); } catch { return; }
+  for (const g of girisler) {
+    if (g.name.startsWith('_') || g.name === 'node_modules') continue;
+    const tam = path.join(kokDizin, g.name);
+    if (g.isDirectory()) yield* kaynakDosyalari(tam);
+    else if (/\.tsx?$/.test(g.name)) yield tam;
+  }
+}
+
+/**
+ * Uygulamadaki STATİK rota yolları — `app/` altındaki page.tsx dosyalarından.
+ *
+ * Buna neden gerek var: `rotaVar` bilinmeyen biçimlerde `null` dönüyordu ve
+ * bu, taramayı iki kez yanılttı. `/kitap` ve dilsiz `/premium` "bilinmeyen"
+ * sayılıp atlanıyordu, oysa ikisinin de rotası YOK. Kusur bulamayan tarama,
+ * temiz yüzeyden ayırt edilemez.
+ *
+ * Route grupları `(site)` / `(ydus)` yola girmez; `_` ile başlayan klasörler
+ * zaten rotaya alınmıyor (Next kuralı) ve burada da elenmeli.
+ */
+function rotaYollari() {
+  const yollar = new Set();
+  const gez = (dizin, parca) => {
+    let girisler;
+    try { girisler = fs.readdirSync(dizin, { withFileTypes: true }); } catch { return; }
+    if (girisler.some((g) => g.isFile() && g.name === 'page.tsx')) {
+      yollar.add('/' + parca.join('/'));
+    }
+    for (const g of girisler) {
+      if (!g.isDirectory() || g.name.startsWith('_') || g.name === 'api') continue;
+      const grup = /^\(.*\)$/.test(g.name);
+      gez(path.join(dizin, g.name), grup ? parca : parca.concat(g.name));
+    }
+  };
+  gez(path.join(KOK, 'app'), []);
+  return yollar;
+}
+
+/** Yol, statik ya da dinamik bir rotaya oturuyor mu? */
+function rotayaOturuyor(yol, yollar) {
+  const hedef = yol.replace(/[#?].*$/, '').replace(/\/$/, '') || '/';
+  if (yollar.has(hedef)) return true;
+  const h = hedef.split('/').filter(Boolean);
+  for (const r of yollar) {
+    const parcalar = r.split('/').filter(Boolean);
+    if (parcalar.some((x) => x.startsWith('[...'))) {
+      const sabit = parcalar.filter((x) => !x.startsWith('['));
+      if (sabit.every((x, i) => h[i] === x)) return true;
+      continue;
+    }
+    if (parcalar.length !== h.length) continue;
+    if (parcalar.every((x, i) => (x.startsWith('[') && x.endsWith(']')) || x === h[i])) return true;
+  }
+  return false;
+}
+
 async function main() {
   const yonlendirme = await yonlendirilenler();
   const konular = kumeCikar(CANONICAL);
@@ -239,8 +323,58 @@ async function main() {
     }
   }
 
+  const yollar = rotaYollari();
+  const branslar = new Set(
+    [...konular].map((k) => k.split('/')[0])
+  );
+
+  // Kaynakta düz yazılmış adresler.
+  const kaynakKirik = [];
+  let kaynakToplam = 0;
+  /* Desen bilerek DAR: yalnızca `href="/..."` ve `href: "/..."` biçimleri.
+   * Her `"/..."` dizesini taramak dosya yolu, regex ve sınıf adı gibi
+   * URL olmayan değerleri de yakalar ve sahte kusur üretir. */
+  const DUZ = /href[:=]\s*"(\/[a-z0-9\-\/]*)"/g;
+  for (const kokAd of KAYNAK_DIZINLERI) {
+    for (const dosya of kaynakDosyalari(path.join(KOK, kokAd))) {
+      const metin = fs.readFileSync(dosya, 'utf-8');
+      let m;
+      while ((m = DUZ.exec(metin))) {
+        const yol = m[1];
+        kaynakToplam++;
+        if (yonlendirme.has(yol)) continue;
+        /* Katmanlı karar: içerik gerektiren yollar içerikten, ötekiler
+         * rota tablosundan doğrulanır. Hiçbir dal "bilmiyorum" demiyor. */
+        let gecerli;
+        const brans = yol.match(/^\/topics\/([^/]+)$/);
+        if (brans) gecerli = branslar.has(brans[1]);
+        else {
+          const r = rotaVar(yol, premiumKonular, konular, araclar);
+          gecerli = r === null ? rotayaOturuyor(yol, yollar) : r;
+        }
+        if (gecerli === false) {
+          kaynakKirik.push({
+            kaynak: path.relative(KOK, dosya).split(path.sep).join('/'),
+            hedef: yol,
+          });
+        }
+      }
+    }
+  }
+
   console.log(`içerikteki iç bağlantı: ${toplam}${yonlendirilmis ? ` (${yonlendirilmis}'i yönlendirmeyle çalışıyor)` : ''}`);
   console.log(`kendi alanında duran adres: ${alanToplam}${alanKirik.length ? ` (${alanKirik.length}'i kırık)` : ''}`);
+  console.log(`kaynakta düz yazılmış adres: ${kaynakToplam}${kaynakKirik.length ? ` (${kaynakKirik.length}'i kırık)` : ''}`);
+  if (kaynakKirik.length) {
+    console.log('');
+    console.log(KAYNAK_UYARI
+      ? 'UYARI — kaynak adresleri (CI kapısı DEĞİL, bkz. KAYNAK_UYARI notu):'
+      : 'KIRIK kaynak adresleri:');
+    for (const k of kaynakKirik) {
+      console.log(`  ${k.kaynak.padEnd(46)} -> ${k.hedef}`);
+    }
+    if (!KAYNAK_UYARI) process.exitCode = 1;
+  }
   if (alanKirik.length) {
     console.log('');
     console.log(UYARI_MODU

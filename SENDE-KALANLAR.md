@@ -947,3 +947,31 @@ sayıyor ve **CI'yı düşürmüyor**:
 ```bash
 node web/scripts/soru-denetim.cjs
 ```
+
+---
+
+## 25. Admin panelinde "/admin" bağlantısı 404 — ve düzeltmesi 19. maddeye bağlı
+
+İki canlı admin sayfası ana panele dönmek için `/admin` adresine bağlanıyor:
+
+```
+app/admin/content/topics/page.tsx:408   <Link href="/admin">
+app/admin/studio/topics/page.tsx:246    <Link href="/admin">
+```
+
+Ama `app/admin/page.tsx` YOK. Admin altında on rota var (`content`,
+`studio`, `erisim`, `import`, `kayseritip`, `kt-yetki`, `sections/audit`…)
+ve hiçbiri kök değil. Yani panelde "geri dön" bağlantısı çıkmaza gidiyor.
+
+**Bilerek düzeltmedim, çünkü doğal çözüm güvenlik kararına dokunuyor.**
+Bağlantıların istediği şey bir admin ana sayfası ve onu yazmak bütün admin
+araçlarını tek yerde listelemek demek. 19. madde duruyor: admin paneli şu
+an HER kayıtlı kullanıcıya açık. Yetki kapısı daraltılmadan bir dizin
+sayfası eklemek yüzeyi genişletir.
+
+Sırası şu olmalı: önce 19. maddedeki yetki kararı, sonra ya `app/admin/
+page.tsx` yaz ya da iki bağlantıyı var olan bir sayfaya çevir
+(`/admin/content` en yakın aday).
+
+Bu sınıf artık kendiliğinden görünür: `node web/scripts/link-denetim.cjs`
+kaynaktaki düz adresleri de tarıyor ve kırıkları listeliyor.
