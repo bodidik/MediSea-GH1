@@ -619,3 +619,44 @@ if (!yonetici) return NextResponse.redirect(new URL('/giris', req.url));
 
 Not: `ADMIN_EMAIL` tanımlı değilse bu kural herkesi reddeder — bu bilinçli
 (`lib/yonetici.ts`: "yapılandırma eksikliği kapıyı açmamalı").
+
+---
+
+## 20. Web tarafında 10 ölü API ucu
+
+API yüzeyinin tam envanteri çıkarıldı: **48 route dosyası**, 16'sı `_`
+önekli olduğu için Next tarafından rotaya alınmıyor, **32'si ulaşılabilir**.
+
+Ulaşılabilir 32 ucun **10'unu web uygulaması hiç çağırmıyor** (~40 KB):
+
+```
+/api/premium/quiz/submit    /api/user/ensure
+/api/premium/quiz/today     /api/user/me
+/api/protected/chunk        /api/user/profile
+/api/protected/token        /api/user/update
+/api/review/answer          /api/sections
+```
+
+Onu da Express arka ucuna vekillik eden geçiş uçları. Arka uçta karşılıkları
+VAR (ör. `server/routes/user.js` içinde `GET /api/user/me` tanımlı), yani
+bir istemci için yazılmışlar ama web tarafında çağıran kalmamış.
+
+Doğrulama: her biri doğrudan grep ile teyit edildi (0 atıf) ve negatif
+kontrol yapıldı — çağrıldığı kesin olan üç uç (`premium/daily-program`,
+`premium/quiz/history`, `topics/search`) 1'er atıf gösterdi.
+
+**Not:** CLAUDE.md'de "arka uç yokken uydurma veri dönmemeli" düzeltmesi
+yapılan yedi uçtan biri `/api/user/me`. O düzeltme doğruydu ama ulaşılamayan
+kodda kaldı.
+
+**Karar senin:** silmek mi, yoksa ileride bir istemci (mobil?) çağıracağı
+için bırakmak mı. Silinirse yazma yapan uç sayısı 19'dan 13'e düşer.
+
+**Yazma uçlarının yetki durumu — ölçüldü, açık kalan yok:**
+
+| Sınıf | Adet | Durum |
+|---|---|---|
+| Yerel yetki kontrollü (`yoneticiMi`/`auth()`) | 8 | ✓ |
+| Arka uç vekili (yetki arka uçta) | 9 | ✓ |
+| Gizli anahtarla korumalı (`revalidate`) | 1 | ✓ |
+| Tasarım gereği açık (`auth/register`) | 1 | ✓ |

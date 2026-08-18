@@ -1480,6 +1480,13 @@ mevcut soru listesinden yapıyor, tekrar istatistikleri mevcut kartlardan
 hesaplanıyor, yetim tekrar durumlarını `pruneStates()` zaten temizliyor
 (ölçüldü). Neredeyse gereksiz bir düzeltme yapılacaktı.
 
+**`.claude/worktrees/` grep sonuçlarını ŞİŞİRİR.** Paralel oturumlar depo
+kopyalarını orada tutuyor, yani `grep -rn` deponun kökünden çalıştırıldığında
+aynı satır 2-3 kez sayılıyor. Ölçüldü: `/api/user/me` için 12 eşleşme çıktı,
+dosyalara bakınca 4'ü gerçek 8'i worktree kopyasıydı. Sayıya dayanan bir
+ölçüm yapıyorsan yolu daralt (`web/app`, `web/lib`) ya da
+`grep -v ".claude/worktrees"` ekle.
+
 ### Paralel oturumlarda commit'ler karışır — mesaj içeriği anlatmayabilir
 
 Aynı depoda birden fazla oturum çalışıyor: bir kısmı `.claude/worktrees/`
