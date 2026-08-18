@@ -396,7 +396,14 @@ export default async function TopicDetailPage({
                         </span>
                       )}
                       <h2 className="text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3">
-                        <span className="text-blue-200">#</span>{section.heading}
+                        {/*
+                          Süsleme: ekran okuyucu bunu "kare" diye okuyup her
+                          bölüm başlığının önüne gürültü koyuyordu. `aria-hidden`
+                          hem o gürültüyü kaldırıyor hem de kontrast kuralının
+                          kapsamından çıkarıyor (ölçüldü: 1.42 — ama işaret
+                          bilgi taşımadığı için doğru çare renk değil, gizlemek).
+                        */}
+                        <span className="text-blue-200" aria-hidden="true">#</span>{section.heading}
                       </h2>
                       <div 
                         className="text-slate-600 leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:mb-2 [&>strong]:text-blue-950 [&>strong]:font-black"
@@ -437,7 +444,8 @@ export default async function TopicDetailPage({
                           href={`/topics/${slug}/${child.slug}`}
                           className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
                         >
-                          <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">↳</span>
+                          {/* Süsleme oku — bağlantının adı yanındaki başlık. */}
+                          <span className="text-blue-300 group-hover:text-blue-500 mt-0.5" aria-hidden="true">↳</span>
                           <span className="leading-tight">{child.title}</span>
                         </Link>
                       </li>
@@ -462,7 +470,8 @@ export default async function TopicDetailPage({
                           href={`/topics/${k.brans}/${k.slug}`}
                           className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
                         >
-                          <span className="text-blue-300 group-hover:text-blue-500 mt-0.5">→</span>
+                          {/* Süsleme oku — bağlantının adı yanındaki başlık. */}
+                          <span className="text-blue-300 group-hover:text-blue-500 mt-0.5" aria-hidden="true">→</span>
                           <span className="leading-tight">
                             {k.baslik}
                             {k.brans !== slug && (
