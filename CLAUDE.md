@@ -1124,6 +1124,22 @@ altındaki 14 route dosyası canlıda **404**. Kaynağa bakınca
 "`/api/_plan/set` yetkisiz plan değiştiriyor" sanılıyor — öyle bir uç yok.
 Yetki denetimi yaparken kaynağa değil DAVRANIŞA bak.
 
+**Aynı kural SAYFALARDA da geçerli ve orada daha pahalı.** `app/(ydus)/…/
+premium/ydus/` altında beş klasör alt çizgiyle başlıyor (`_endokrinoloji`,
+`_gastroenteroloji`, `_hematoloji`, `_nefroloji`, `_romatoloji`) ve
+içlerindeki **28 sayfa (4550 satır) canlıda yok.** Bilerek kapatılmışlar
+(`0dd58a5`, elle yazılan sayfalardan dinamik şablona geçiş) ama göç yarım
+kalmış: 16 yaprak konu sayfasının yalnızca 5'i JSON'a taşınmış.
+
+Bunun ölçüme etkisi şu: "bu konunun içeriği yok" sonucu YANLIŞ olabilir —
+içerik ölü bir sayfada duruyordur. Yetim bir içerik dosyası görünce
+`_<branş>/` altına da bak. Akromegali tam olarak böyleydi: 79 yetim kart
+"konu yazılmalı" gibi görünüyordu, oysa 546 satırlık konu metni ölü
+sayfada hazırdı.
+
+Ölü sayfaları silmek de çare değil — göç edilmemiş klinik metnin tek
+kopyası orada.
+
 ### `:lang` kalıbı `api`yi de yakalar
 
 `next.config.js`'teki dil yönlendirmesi `/:lang(...)/premium/:yol*`

@@ -752,7 +752,11 @@ flashcards/endokrinoloji/akromegali.json   79 kart   → akromegali konusu YOK
 ```
 
 Endokrinolojide 12 konu var ama akromegali aralarında değil. 79 kart
-yazılmış, ulaşılamıyor. Çare konu dosyasını yazmak — tıbbi içerik kararı.
+yazılmış, ulaşılamıyor.
+
+**Çare sanıldığından ucuz — bkz. 23. madde:** akromegali konu metni sıfırdan
+yazılacak değil, 546 satırlık ölü bir sayfada zaten duruyor
+(`_endokrinoloji/hipofiz/akromegali/page.tsx`). Yapılacak iş taşımak.
 
 Üç sınıfın toplamı bugün şu:
 
@@ -767,4 +771,57 @@ Güncel durumu her zaman betikten al:
 
 ```bash
 node web/scripts/yetim-denetim.cjs
+```
+
+---
+
+## 23. Yarım kalan göç: 11 konu yalnızca ölü sayfalarda duruyor
+
+22. maddedeki "konusu gerçekten yok" teşhisi eksikti. Konular yok değil —
+**devre dışı bırakılmış eski sayfalarda** duruyorlar.
+
+`app/(ydus)/[lang]/premium/ydus/` altında alt çizgiyle başlayan beş klasör
+var (`_endokrinoloji`, `_gastroenteroloji`, `_hematoloji`, `_nefroloji`,
+`_romatoloji`). Next alt çizgili klasörleri **rotaya almıyor**, yani bu
+28 sayfa dosyası (4550 satır) canlıda yok. Bilerek yapılmış: `0dd58a5`
+"YDUS: eski hardcode sayfalar silindi, dinamik template aktif". Ama
+silinmemişler, yalnızca kapatılmışlar — ve göç yarım kalmış.
+
+16 yaprak konu sayfasından **5'i** JSON'a geçmiş, **11'i** geçmemiş:
+
+| branş | konu | satır | JSON'da |
+|---|---|---|---|
+| endokrinoloji | **akromegali** | 546 | yok |
+| endokrinoloji | sessiz-tiroidit | 278 | yok |
+| endokrinoloji | riedel-tiroiditi | 264 | yok |
+| endokrinoloji | subakut-tiroidit | 258 | yok |
+| endokrinoloji | tiroid-nodulleri | 245 | yok |
+| endokrinoloji | kronik-tiroidit | 224 | yok |
+| romatoloji | FMF | 277 | yok |
+| endokrinoloji | simulasyon · gastro vaka-kokpiti · hematoloji all · nefroloji lupus-nefriti | 47–54 | taslak |
+
+Geçmiş olanlar: `graves-hastaligi`, `kll`, `kml`, `sle` ve `aml` (JSON'da
+`aml-ana` adıyla — 18. maddedeki ad sapması buradan geliyor).
+
+**En güçlü örnek akromegali.** 546 satır klinik anlatım (tanı, IGF-1,
+somatostatin analogları, tedavi bölümleriyle) ölü sayfada duruyor VE
+`flashcards/endokrinoloji/akromegali.json` içinde 79 kart yetim bekliyor.
+Yani 22. maddede "konu dosyası yazılmalı — tıbbi içerik kararı" dedim;
+doğrusu şu: **metin zaten yazılmış, JSON şemasına taşınması gerekiyor.**
+Bu hâlâ senin kararın ama sıfırdan yazmak değil, taşımak.
+
+**`lupus-nefriti` farklı — konu sayfası DEĞİL.** 53 satırlık dosya
+`SimulatorEngine` ile kurulmuş bir vaka kokpiti (`LUPUS_CASE_DATA`).
+Yani 18. maddedeki 3 yetim inci için hâlâ konu metni yazılması gerekiyor;
+oradaki teşhis doğruydu.
+
+**Ölü sayfaları SİLME.** Göç edilmemiş klinik içeriğin tek kopyası orada;
+silmek 2100 satır tıbbi metni yok eder. Bedelleri yalnızca `tsc` ve
+`lint`in onları da denetlemesi — çalışma zamanında hiçbir maliyeti yok.
+
+Karar senin: her konuyu tek tek JSON'a taşımak (içerik işi), ya da
+taşınmayacaklara karar verip sayfaları silmek. Ölçüm şöyle alınır:
+
+```bash
+node web/scripts/yetim-denetim.cjs   # yetim içerik dosyaları
 ```
