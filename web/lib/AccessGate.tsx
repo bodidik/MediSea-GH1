@@ -7,6 +7,19 @@ interface Props {
   branch: string;
 }
 
+/**
+ * BAŞLIK h1 — kapı kartı sayfanın TEK içeriği.
+ *
+ * Ölçüldü (canlı): kapıya takılan her premium sayfada `h1` SIFIRDI; kart
+ * `h2` kullanıyordu. Giriş yapmamış bir ziyaretçi için sayfanın adı yok
+ * demek — ve bu kart bütün premium yüzeylerde çıkıyor (konu sayfası, quiz,
+ * vaka, inciler, kokpit).
+ *
+ * `marginTop: 0` ve `fontFamily: 'inherit'` SATIR İÇİ veriliyor: globals.css
+ * `h1..h3`e serif yazı tipi ve 24px üst boşluk veriyor ve Tailwind sınıfları
+ * bunu ezmiyor. Bu dosya zaten satır içi stil kullanıyor, satır içi stil de
+ * stil sayfasını yener — görünüm h2 hâliyle birebir aynı kalıyor.
+ */
 export async function AccessGate({ topicId, lang, branch }: Props) {
   const erisim: AccessResult = await checkTopicAccess(topicId);
   if (erisim === 'ok') return null;
@@ -21,9 +34,9 @@ export async function AccessGate({ topicId, lang, branch }: Props) {
       }}>
         <div style={{ textAlign: 'center', maxWidth: '380px' }}>
           <div style={{ fontSize: '40px', marginBottom: '1rem' }}>🛠️</div>
-          <h2 style={{ fontSize: '18px', fontWeight: 700, color: '#1a3a6b', marginBottom: '8px' }}>
+          <h1 style={{ fontSize: '18px', fontWeight: 700, color: '#1a3a6b', marginTop: 0, marginBottom: '8px', fontFamily: 'inherit' }}>
             İçerik şu an açılamıyor
-          </h2>
+          </h1>
           <p style={{ fontSize: '14px', color: '#4a6a8a', lineHeight: 1.6, marginBottom: '1.5rem' }}>
             Üyeliğini doğrulayamadığımız için bu konuyu gösteremiyoruz. Sorun bizde —
             biraz sonra tekrar dener misin?
@@ -60,9 +73,9 @@ export async function AccessGate({ topicId, lang, branch }: Props) {
     }}>
       <div style={{ textAlign: 'center', maxWidth: '380px' }}>
         <div style={{ fontSize: '40px', marginBottom: '1rem' }}>🔒</div>
-        <h2 style={{ fontSize: '18px', fontWeight: 700, color: '#1a3a6b', marginBottom: '8px' }}>
+        <h1 style={{ fontSize: '18px', fontWeight: 700, color: '#1a3a6b', marginTop: 0, marginBottom: '8px', fontFamily: 'inherit' }}>
           Erişim Kısıtlı
-        </h2>
+        </h1>
         <p style={{ fontSize: '14px', color: '#4a6a8a', lineHeight: 1.6, marginBottom: '1.5rem' }}>
           {mesaj}
         </p>
