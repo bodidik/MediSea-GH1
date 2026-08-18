@@ -94,11 +94,77 @@ for (const [ad, birim] of TURLER) {
 
 console.log(satirlar.join("\n"));
 
-if (toplamYetim === 0) {
+/* ── İKİNCİ SINIF: hiçbir kodun OKUMADIĞI dizin ──────────────────────────
+ *
+ * Yukarıdaki denetim "dosya var, konusu yok" durumunu buluyor. Bundan daha
+ * sessiz bir hâl daha var: dizinin KENDİSİNİ hiçbir kod okumuyor. O zaman
+ * dosyaların konusu olsa bile hiçbir yerden ulaşılamazlar.
+ *
+ * Ölçüldü: `content/premium/ydus/questions/` altında 12 dosya var (11 MEN1
+ * sorusu + 1 nefroloji) ve depoda tek bir okuyucu yok. Biçim de farklı —
+ * dosya başına TEK soru ve alan adları İngilizce (`question`, `options`,
+ * `answer`), oysa `quizzes/` tek dosyada dizi tutuyor ve alanlar Türkçe
+ * (`metin`, `secenekler`, `dogru`). Yani şema ayrışması.
+ *
+ * Liste ELLE tutuluyor çünkü "okunuyor mu" sorusunun cevabı grep'le güvenilir
+ * biçimde alınamıyor: `"questions"` kaynakta bir ALAN adı olarak da geçiyor
+ * ve dizin okumasıyla karışıyor. Nitekim ilk ölçümde `cases/` de yetim
+ * sanıldı; oysa soru çözüm kokpiti onu okuyor (soru-cozum/page.tsx).
+ * Yeni bir dizin eklerken burayı da güncelle.
+ */
+const OKUNAN_DIZINLER = new Set([
+  "topics",     // premium konu sayfaları
+  "branches",   // branş listeleri
+  "quizzes",    // premium-envanter + quiz-coz
+  "flashcards", // premium-envanter + hizli-tekrar
+  "pearls",     // premium-envanter + inciler
+  "vakalar",    // premium-envanter + vaka-coz
+  "cases",      // soru-cozum kokpiti
+  "videos",
+  "kaynaklar",
+]);
+
+const okunmayan = [];
+for (const e of fs.readdirSync(KOK, { withFileTypes: true })) {
+  if (!e.isDirectory() || OKUNAN_DIZINLER.has(e.name)) continue;
+  let adet = 0;
+  const gez = (p) => {
+    for (const x of fs.readdirSync(p, { withFileTypes: true })) {
+      const q = path.join(p, x.name);
+      if (x.isDirectory()) gez(q);
+      else if (x.name.endsWith(".json")) adet++;
+    }
+  };
+  try { gez(path.join(KOK, e.name)); } catch {}
+  if (adet) okunmayan.push({ ad: e.name, adet });
+}
+
+if (okunmayan.length) {
+  console.log("\nHİÇBİR KODUN OKUMADIĞI DİZİN:");
+  for (const d of okunmayan) {
+    console.log(`    ${d.ad}/  →  ${d.adet} dosya, hiçbir yerden ulaşılamıyor`);
+  }
+}
+
+/* İki sınıf ayrı ayrı raporlanıyor: çareleri farklı. Yetim dosyaya KONU
+ * yazmak yetiyor; okunmayan dizin ise ya bir okuyucu ya da şema dönüşümü
+ * istiyor. Tek sayıda toplamak hangi işin gerektiğini gizlerdi. */
+const okunmayanDosya = okunmayan.reduce((a, b) => a + b.adet, 0);
+
+if (toplamYetim === 0 && !okunmayan.length) {
   console.log("\nyetim dosya yok — her içerik dosyasının bir konusu var.");
 } else {
-  console.log(
-    `\n${toplamYetim} yetim dosya. Bunlara arayüzden ulaşılamıyor; ` +
-      `ya konu dosyası eklenmeli ya da dosya kaldırılmalı.`
-  );
+  const parcalar = [];
+  if (toplamYetim) {
+    parcalar.push(
+      `${toplamYetim} yetim dosya (konusu yok) — ya konu dosyası eklenmeli ya da dosya kaldırılmalı.`
+    );
+  }
+  if (okunmayan.length) {
+    parcalar.push(
+      `${okunmayanDosya} dosya okunmayan dizinde — bunlara konu dosyası eklemek YETMEZ, ` +
+        `dizini okuyan bir kod ya da şema dönüşümü gerekiyor.`
+    );
+  }
+  console.log("\n" + parcalar.join("\n"));
 }

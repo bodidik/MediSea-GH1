@@ -411,3 +411,43 @@ node web/scripts/plan-ver.cjs denav38@gmail.com free
 
 Plan oturum açarken JWT'ye yazılıyor; değiştirdikten sonra çıkış/giriş
 gerekiyor.
+
+---
+
+## 15. Hiçbir kodun okumadığı 12 premium soru
+
+`content/premium/ydus/questions/` altında **12 dosya** var (11'i MEN1
+soruları, 1'i nefroloji) ve depoda bu dizini okuyan tek bir satır yok.
+Yazılmış, ~29 KB emek harcanmış premium içerik arayüzden ulaşılamıyor.
+
+Bu, listedeki öteki yetim dosyalardan FARKLI bir durum: onlarda konu
+dosyası eksik, burada dizinin kendisi okunmuyor. Yani konu dosyası yazmak
+çözmez.
+
+Sebep şema ayrışması:
+
+| | `questions/` (okunmayan) | `quizzes/` (okunan) |
+|---|---|---|
+| Yapı | dosya başına TEK soru | tek dosyada dizi |
+| Alanlar | `question`, `options`, `answer`, `explanation` | `metin`, `secenekler`, `dogru`, `aciklama_kisa` |
+| Ek alanlar | `accessLevel`, `difficulty`, `status`, `tags` | `zorluk`, `etiketler`, `kaynak` |
+
+Üç seçenek var, üçü de senin kararın:
+
+1. **Dönüştür** — 12 soruyu `quizzes/<branş>/men1-quiz-1.json` biçimine
+   taşı. Kazanç: 12 soru kullanılabilir hâle gelir. Alan eşlemesi
+   mekanik ama `secenekAciklamalari` gibi karşılığı olmayan alanlar
+   boş kalır.
+2. **Sil** — içerik başka yerde tekrarlanıyorsa.
+3. **Bırak** — ileride bu şemayı okuyacak bir yüzey planlıyorsan.
+
+Denetim artık bunu raporluyor:
+
+```bash
+node web/scripts/yetim-denetim.cjs
+```
+
+Not: ilk ölçümde `cases/` dizini de yetim sanılmıştı; oysa soru çözüm
+kokpiti onu okuyor. Kodda `"questions"` bir ALAN adı olarak da geçtiği
+için grep yanıltıyor — denetimdeki okunan-dizin listesi bu yüzden elle
+tutuluyor ve yeni dizin eklerken güncellenmeli.
