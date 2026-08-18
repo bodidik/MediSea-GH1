@@ -1354,6 +1354,26 @@ aralarında 8'er px. Kapsayıcı flex ise sonucu bir `<span>` içine al. Taramas
 tek satır: her `<strong>`'un ebeveyninin `display`'ine bak, `flex`/`grid`
 görürsen kusur.
 
+### Başlık düzeyleri render tarafında oturtulur — `app/lib/baslik.ts`
+
+Konu sayfası bölüm başlıklarını `<h2>` basıyor ama içerik HTML'i neredeyse
+tamamen `<h4>` kullanıyor (410 görünür konuda 1771 `h4`, 1 `h3`, 33 `h5`).
+Araya h3 girmediği için **240 konuda (görünürlerin %59'u) 907 düzey
+atlaması** vardı; ekran okuyucuda başlık düzeyiyle gezinen kullanıcı için
+belge taslağı kırılıyordu.
+
+Çare `metin.tsx` ve `kisaltma.ts` ile aynı karar: **içerik dosyasına
+dokunulmaz, dönüşüm render tarafında.**
+
+Kural sabit eşleme DEĞİL. Önce `h4→h3, h5→h4` denendi: 907 atlamayı 16'ya
+düşürdü ama sıfırlamadı, çünkü bazı bölümler h3 ile h5'i birlikte
+kullanıyor, bazıları yalnızca h5 taşıyor. Doğrusu bölüm İÇİNDE kullanılan
+seviyeleri artan sırada 3, 4, 5… diye yeniden numaralamak — bölümün kendi
+iç hiyerarşisi korunuyor, taslak da bozulmuyor. Bu kuralla atlama SIFIR.
+
+Kapsam yalnızca AÇIK taraf: premium konu dosyalarında HTML başlığı hiç yok
+ve premium konu sayfası `dangerouslySetInnerHTML` kullanmıyor (ölçüldü).
+
 ### Kısaltmalar ilk kullanımda açılır — sözlük ELLE seçilir
 
 `app/lib/kisaltma.ts`. İçerik dosyasına dokunulmaz; dönüşüm render

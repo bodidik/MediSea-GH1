@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
+import { basliklariDuzenle } from "@/app/lib/baslik";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
@@ -193,7 +194,12 @@ export default async function TopicDetailPage({
     sections: Array.isArray(rawData.sections)
       ? rawData.sections.map((s: any) => ({
           heading: s.heading || s.title || "Başlıksız Blok",
-          html: kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar),
+          // basliklariDuzenle: icerik HTML'i h4 ile basliyor ama bolum
+          // basligi h2 -- araya h3 girmedigi icin 240 konuda 907 duzey
+          // atlamasi olusuyordu (bkz. app/lib/baslik.ts).
+          html: basliklariDuzenle(
+            kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar)
+          ),
           visibility: s.visibility || "V"
         }))
       : []
