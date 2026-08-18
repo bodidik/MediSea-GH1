@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
+import { getTopicCounts } from "@/app/lib/topic-counts";
 import { getBranchTools } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
@@ -49,10 +50,21 @@ export async function generateMetadata({
     return { title: "Branş bulunamadı", robots: { index: false, follow: false } };
   }
 
-  let konuSayisi = 0;
-  try {
-    konuSayisi = fs.readdirSync(dizin).filter((f) => f.endsWith(".json")).length;
-  } catch {}
+  /**
+   * SAYIYI SAYDIR, DOSYA SAYMA — `getTopicCounts()` gizli konuları eler.
+   *
+   * Burada dizindeki her `.json` sayılıyordu ve `meta.hidden` işaretliler de
+   * toplama giriyordu. Ölçüldü (canlı, meta açıklamalar): endokrinoloji
+   * **132** diyordu ama sayfada 116 konu var; nefroloji 52/47; romatoloji
+   * 19/11. Hematoloji ve kardiyoloji tesadüfen tutuyordu — o iki branşta
+   * gizli konu yok.
+   *
+   * Bu sayı arama sonucu parçacığında görünüyor: ziyaretçiye 132 vaat edip
+   * 116 göstermek, `topic-counts.ts` içinde ana sayfa için zaten yazılmış
+   * olan kuralın aynısını ihlal ediyordu. O düzeltme bu çağrı yerine
+   * uygulanmamıştı.
+   */
+  const konuSayisi = getTopicCounts()[slug] ?? 0;
 
   const baslik = brans?.title || slug.replace(/-/g, " ");
   const aciklama = brans?.desc
