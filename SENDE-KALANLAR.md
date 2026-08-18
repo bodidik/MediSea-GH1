@@ -569,3 +569,53 @@ quizzes/flashcards/vakalar denetleniyordu. Eklendi:
 ```bash
 node web/scripts/yetim-denetim.cjs
 ```
+
+---
+
+## 19. Admin paneli her kayıtlı kullanıcıya açık (güvenlik kararı)
+
+`middleware.ts` `/admin/*` için yalnızca **oturum var mı** diye bakıyor:
+
+```ts
+if (pathname.startsWith('/admin')) {
+  if (!user) return NextResponse.redirect(new URL('/giris', req.url));
+}
+```
+
+Yani giriş yapmış **herhangi bir kullanıcı** admin arayüzünü açabiliyor.
+Karşılaştırma için aynı dosyadaki KayseriTıp dalı hem kurumu hem
+`ADMIN_EMAIL`i kontrol ediyor.
+
+**Gerçek risk dar ama sıfır değil.** Yazma uçları `yoneticiMi()` ile
+korunuyor (ölçüldü: `/api/topics`, `/api/admin/*` hepsinde var), yani
+yetkisiz kullanıcı veri DEĞİŞTİREMİYOR. Görebildiği şey panelin yapısı ve
+okuma uçlarından dönen veri. Bugün pratikte etki yok çünkü veritabanında
+tek kullanıcı var — ama ikinci kullanıcı kaydolduğu an var.
+
+**Düzeltmeyi denedim, ÖLÇTÜM ve GERİ ALDIM.** Sebebi somut:
+
+```
+ADMIN_EMAIL          = hucigo11@gmail.com
+kayıtlı tek kullanıcı = denav38@gmail.com
+```
+
+Sıkılaştırma, şu an panele girebilen tek hesabı **tamamen kilitlerdi**.
+(Panel zaten yazma yapamıyordu — `yoneticiMi()` aynı karşılaştırmayı
+yapıyor — ama açıp bakabiliyordu.)
+
+**Karar senin. İki yol var:**
+
+1. **Hesabı hizala** — `hucigo11@gmail.com` ile kaydol, sonra middleware'i
+   sıkılaştır. Bu, `lib/yonetici.ts`in kuralıyla tam uyumlu olur.
+2. **ADMIN_EMAIL'i değiştir** — `.env.local` (ve Vercel ortamı) içinde
+   `denav38@gmail.com` yap, sonra sıkılaştır.
+
+Sıkılaştırma tek satır; KayseriTıp dalının kalıbı:
+
+```ts
+const yonetici = Boolean(user?.email && user.email === process.env.ADMIN_EMAIL);
+if (!yonetici) return NextResponse.redirect(new URL('/giris', req.url));
+```
+
+Not: `ADMIN_EMAIL` tanımlı değilse bu kural herkesi reddeder — bu bilinçli
+(`lib/yonetici.ts`: "yapılandırma eksikliği kapıyı açmamalı").
