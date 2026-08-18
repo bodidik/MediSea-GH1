@@ -688,6 +688,30 @@ sarmalayan etiket verir — `focus-within:ring-2 focus-within:ring-blue-700
 focus-within:ring-offset-2`. `globals.css` sonundaki `:has()` kuralı
 yalnızca yedek.
 
+**`opacity-0` ile `invisible` klavye açısından ZIT davranır — ve ikisi de
+"görünmez" görünür.** Aynı turda iki yerde çıktılar, biri kusurdu biri
+değildi:
+
+| Gizleme | Odak sırasında | Sonuç |
+|---|---|---|
+| `invisible` (`visibility: hidden`) | YOK | öge erişilemez — kusur "ulaşılamıyor" |
+| `hidden` (`display: none`) | YOK | öge o breakpoint'te yok — kusur DEĞİL |
+| `opacity-0` | **VAR** | görünmez ama odaklanılabilir — en kötüsü |
+
+Üçüncüsü en kötüsü, çünkü kullanıcı göremediği bir denetimin üstünde
+duruyor. Ölçüldü: vurgu panelindeki kaldırma düğmesi `opacity-0
+group-hover:opacity-100` taşıyordu, yani klavyeyle gezen kullanıcı
+**göremediği bir SİLME düğmesine** odaklanıyordu. Çare `focus:opacity-100`.
+
+Hover ile içerik açan bir yüzey yazarken kuralı baştan kur: `group-hover:`
+yazdıysan `group-focus-within:` de yaz. Kaynakta taranabilir — görünürlüğü
+açan hover varyantı taşıyıp focus karşılığı olmayan className'leri ara.
+
+**İkonlu düğmede `title` erişilebilir ad OLMAZ.** Hesaplama sırası
+içeriği `title`ın önüne koyuyor; içerik boş değilse `title` hiç devreye
+girmiyor. `<button title="Kaldır">✕</button>` ögesinin adı **"✕"**dir.
+`aria-label` ver; `title` fare ipucu olarak kalabilir.
+
 ### Doğrulama betiği, doğruladığı betiğin hatasını PAYLAŞMAMALI
 
 Yukarıdaki halka sınıfları bir betikle yerleştirildi: `<input>`ten yukarı
