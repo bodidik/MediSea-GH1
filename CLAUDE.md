@@ -246,10 +246,29 @@ adres geçersizdi.
 
 ```bash
 node scripts/arac-metadata.cjs   # yeni klinik araç eklendiğinde
+node scripts/arac-metadata.cjs --kontrol   # yazmadan: indeks bayat mı?
 node scripts/baslik-index.cjs    # yeni konu eklendiğinde (paylaşım kartı başlığı)
 node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağları)
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
+
+**Bu betikler CI'da ÇALIŞMIYOR — elle çalıştırılıyor.** Yani biri araç ya
+da konu ekleyip betiği unutursa indeks sessizce bayatlıyor. Bedeli görünür:
+araç sayısı `content/arac-index.json`'dan geliyor (çalışma zamanında
+`app/tools` okunamıyor, sunucusuz ortamda kaynak dizin yok), yani bayat
+indeks canlıda YANLIŞ SAYI demek.
+
+`--kontrol` bunun için var: hiçbir şey yazmadan indeksi yeniden hesaplayıp
+karşılaştırır, fark varsa hangi aracın eksik/fazla/değişmiş olduğunu
+yazar ve çıkış kodu 1 döner. CI adımı yapmaya hazır.
+
+**`arac-metadata.cjs` bir kez veri SİLDİ — o yüzden artık boş sonuçta
+yazmıyor.** `TOOLS_DATABASE` `page.tsx`'ten `ToolsIcerik.tsx`'e taşınınca
+(sunucu kabuk + istemci içerik bölünmesi) betik eski yolu okumaya devam
+etti, hiç araç bulamadı ve 114 kayıtlık indeksi `[]` ile ezdi — hatasız,
+çıkış kodu 0. Ders genel: **ayrıştırmaya dayanan bir üreteç, boş sonucu
+asla meşru saymamalı.** Kaynak dosyalar yerinde duruyorsa sıfır bulmak
+"veri yok" değil "ayrıştırma bozuldu" demektir.
 
 ### İçerik denetimleri (CI'da da çalışıyor)
 
