@@ -660,3 +660,52 @@ için bırakmak mı. Silinirse yazma yapan uç sayısı 19'dan 13'e düşer.
 | Arka uç vekili (yetki arka uçta) | 9 | ✓ |
 | Gizli anahtarla korumalı (`revalidate`) | 1 | ✓ |
 | Tasarım gereği açık (`auth/register`) | 1 | ✓ |
+
+---
+
+## 21. Bir quiz dosyası tamamen farklı şemada
+
+Premium içeriğin şema envanteri çıkarıldı (40 konu, 9 branş, 39 quiz, 21 kart,
+11 vaka, 2 inci). Neredeyse hepsi tutarlı; **bir quiz dosyası** İngilizce ve
+tamamen ayrı bir şema kullanıyor:
+
+| | 38 dosya (kanonik) | `hematoloji/aml-quiz-1.json` |
+|---|---|---|
+| Dizi | `sorular` | `questions` |
+| Soru metni | `metin` | `text` |
+| Şıklar | nesne: `{A:…, B:…}` | dizi: `[{id,text}]` |
+| Doğru cevap | `dogru` | `correctAnswer` |
+| Açıklama | `aciklama_kisa` / `aciklama_detay` | `explanation` (HTML) |
+
+**Bugün görünmüyor** çünkü bu dosya zaten yetim (konu dosyası
+`topics/hematoloji/aml.json` yok — denetim raporluyor, 18. maddeyle aynı
+konu). Konu dosyası yazıldığı an görünür olurdu.
+
+**Görünür olsaydı ne olurdu — ölçüldü.** Motor yalnızca `sorular` okuyor,
+yani **boş quiz** basardı. Ama `lib/premium-envanter.ts` ikisini de sayıyor
+(`["sorular","questions"]`), yani konu sayfası **"10 soru"** derken quiz
+boş açılırdı.
+
+**Denedim, ölçtüm, GERİ ALDIM.** Motoru `questions` alanını da okuyacak
+şekilde değiştirdim; sonuç DAHA KÖTÜ oldu: soru içi alanlar da farklı
+olduğu için motor 10 soruyu okuyup şekilleri tutmayınca **çöktü** (HTTP
+500). Boş quiz, çöken quizden iyidir — değişiklik geri alındı ve iki
+şemanın da 200 döndüğü doğrulandı.
+
+**Karar senin, üç yol:**
+
+1. **Dosyayı kanonik şemaya çevir** — 10 soru, alan eşlemesi mekanik
+   (`text`→`metin`, `correctAnswer`→`dogru`, şık dizisi→nesne,
+   `explanation`→`aciklama_detay`). Sonra `topics/hematoloji/aml.json`
+   yazılırsa quiz de çalışır.
+2. **Sil** — içerik başka yerde tekrarlanıyorsa.
+3. **Bırak** — ama o zaman konu dosyası YAZILMAMALI, yoksa "10 soru" deyip
+   boş açılan bir quiz olur.
+
+Aynı konu için quiz + kart + inci üçü de yazılmış (bkz. 18. madde), yani
+1. seçenek muhtemelen doğru olan.
+
+Not: `tkp-quiz-1.json` ve `feokromositoma-vaka-1.json` da üst alanlarını
+`meta` içinde tutuyor ama ana diziyi (`sorular`/`adimlar`) doğru adla
+taşıdıkları için ÇALIŞIYORLAR — ikisi de bu oturumda render edilerek
+doğrulandı.
