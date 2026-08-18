@@ -41,8 +41,35 @@ for (const b of fs.readdirSync(KOK, { withFileTypes: true }).filter((d) => d.isD
       slug: f.replace(/\.json$/, ""),
       parent: v?.meta?.parent || null,
       hidden: v?.meta?.hidden === true,
+      hiddenHam: v?.meta?.hidden,
     });
   }
+}
+
+/* ── ŞEMA KONTROLÜ: `hidden` BOOLEAN olmalı ────────────────────────────
+ *
+ * Ölçüldü: bir konu dosyasında `"hidden": "true"` yazıyordu — DİZE. Bayrağı
+ * okuyan dokuz yerin bir kısmı katı (`=== true`), bir kısmı gevşek
+ * (`|| false`) karşılaştırıyor, yani dize değer yüzeyden yüzeye FARKLI
+ * davranıyordu:
+ *
+ *   branş sayfası → listelenmiyor  (gevşek: gizli sayıldı)
+ *   site haritası → DAHİL          (katı: görünür sayıldı)
+ *   konu sayfası  → açılıyor
+ *
+ * Yani taslak bir sayfa arama motoruna ilan edilirken kullanıcı ona
+ * gezinerek ulaşamıyordu. Tek karakterlik bir yazım hatası, iki yüzeyi
+ * ters yönde etkiliyor.
+ */
+const semaKusuru = hepsi.filter((k) => k.hiddenHam !== undefined && typeof k.hiddenHam !== "boolean");
+if (semaKusuru.length) {
+  console.log("");
+  console.log("ŞEMA KUSURU — `meta.hidden` boolean değil:");
+  for (const k of semaKusuru) {
+    console.log(`    ${k.brans}/${k.slug}  →  ${JSON.stringify(k.hiddenHam)} (${typeof k.hiddenHam})`);
+  }
+  console.log("    Bu değer bazı yüzeylerde gizli, bazılarında görünür sayılır.");
+  process.exitCode = 1;
 }
 
 const gorunur = hepsi.filter((k) => !k.hidden);
