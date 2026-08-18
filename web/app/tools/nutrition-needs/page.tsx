@@ -106,7 +106,10 @@ export default function NutritionNeedsPage() {
           </div>
           <div className="bg-white rounded-[2.5rem] p-8 text-center border-2 border-blue-900 shadow-xl space-y-2">
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
-            <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} <span className="text-xl not-italic text-blue-400">g</span></div>
+            <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} {/* blue-400 beyaz zeminde 2.54'tü (kalın 20px, eşik 3.0). Birim yazısı
+    sayıdan daha soluk olsun diye açık seçilmiş; bir kademe koyultmak
+    o niyeti bozmadan eşiği geçiriyor. */}
+<span className="text-xl not-italic text-blue-600">g</span></div>
           </div>
         </div>
 

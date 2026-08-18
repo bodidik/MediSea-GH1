@@ -85,9 +85,35 @@ export default function RockallPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-blue-900/80 rounded-[2rem] p-5 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400/60">
-            <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Pre-Endoskopi</span>
+            {/*
+              Bu kartın zemini SAYDAM (`bg-blue-900/80`), komşusundaki opak
+              `bg-blue-900`den daha açık. Ölçüldü: aynı `text-blue-200` burada
+              4.24, komşusunda eşiği geçiyor. Yazı bir kademe açıldı; zemin
+              değişmedi çünkü saydamlık bilinçli vurgu farkı (kenarlık ve
+              gölge de zayıf: pre ikincil, post birincil).
+            */}
+            <span className="text-[9px] font-black text-blue-100 uppercase tracking-widest mb-1">Pre-Endoskopi</span>
             <div className="text-4xl font-black text-white">{preEndo}</div>
-            <span className={`text-[10px] font-black mt-1 ${rPre.color.replace('text-', 'text-').replace('700', '300')}`}>{rPre.label}</span>
+            {/*
+              Sınıf adı DİZE DEĞİŞTİRMEYLE üretiliyordu
+              (`rPre.color.replace('700','300')`) — iki sorun birden:
+
+              · Ölçüldü: `emerald-300` bu saydam zeminde 3.95 (eşik 4.5).
+              · Tailwind üretilen sınıfı KAYNAKTA GÖREMİYOR. Çalışmasının tek
+                sebebi `text-emerald-300`/`amber-300`/`rose-300`'ün başka
+                dosyalarda düz geçmesiydi; `safelist` yalnızca `bg-` ve
+                `border-` desenlerini kapsıyor. Nitekim `text-orange-300`
+                hiçbir dosyada yok — bugün üretilmiyor çünkü turuncu yalnızca
+                POST skorlarında var, ama kalıp o kadar kırılgan.
+
+              Açık eşleme hem kontrastı düzeltiyor hem sınıfları görünür
+              kılıyor.
+            */}
+            <span className={`text-[10px] font-black mt-1 ${
+              rPre.color === 'text-emerald-700' ? 'text-emerald-200'
+              : rPre.color === 'text-amber-700' ? 'text-amber-200'
+              : 'text-rose-200'
+            }`}>{rPre.label}</span>
           </div>
           <div className="bg-blue-900 rounded-[2rem] p-5 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Post-Endoskopi</span>
