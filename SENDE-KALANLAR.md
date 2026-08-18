@@ -451,3 +451,43 @@ Not: ilk ölçümde `cases/` dizini de yetim sanılmıştı; oysa soru çözüm
 kokpiti onu okuyor. Kodda `"questions"` bir ALAN adı olarak da geçtiği
 için grep yanıltıyor — denetimdeki okunan-dizin listesi bu yüzden elle
 tutuluyor ve yeni dizin eklerken güncellenmeli.
+
+---
+
+## 16. Paylaşım bağlantısı değerleri taşımıyor (özellik kararı)
+
+Araç sayfalarındaki paylaş düğmesi bir dönem hesaplanan değerleri adrese
+yazıyordu (`?scr=2.5&age=70&sex=female`). **Ölçüldü: 111 araçta bu düğme
+var ve parametreleri geri okuyan araç sıfır** — ne sayfa, ne düzen, ne
+metadata, ne paylaşım kartı.
+
+Sonuç yalnızca çalışmayan bir özellik değil, yanıltıcıydı. Canlıda
+ölçülen hâli:
+
+```
+/tools/egfr?scr=2.5&age=70&sex=female
+  → sayfa varsayılan 1.0 / 45 / erkek ile açılıyor
+  → 94.6 (G1 — Normal) gösteriyor
+  → oysa paylaşılan değerler ≈21, yani G4
+```
+
+Meslektaşına "hastamın eGFR'si" diye bu bağlantıyı gönderen biri, karşı
+tarafa hastanın durumunun **tersini** göstermiş oluyordu. Bağlantı
+değerleri taşıdığı için güvenilir görünüyordu.
+
+Şimdilik bağlantı **değer taşımıyor** ve düğme metni de buna göre
+düzeltildi ("BULGULARI PAYLAŞ" → "ARACI PAYLAŞ"; kopyalandı bildirimi
+artık "Girdiğin değerler bağlantıyla taşınmaz" diyor).
+
+**Karar senin:** değerlerin gerçekten taşınmasını istiyor musun?
+
+- İstiyorsan: her aracın kendi durumunu adresten okuması gerekiyor
+  (`useState` başlangıç değerini sorgu dizesinden almak). 111 araç, her
+  birinin durumu farklı — mekanik ama uzun bir iş. `ToolShare`'in `params`
+  imzası bu yüzden BIRAKILDI, çağrı yerleri hâlâ değerleri geçiriyor.
+- İstemiyorsan: `params` prop'u ve 111 çağrı yerindeki `params={...}`
+  temizlenebilir.
+
+Klinik değerlerin adres çubuğuna yazılması ayrıca gizlilik açısından da
+düşünülmeli: adresler tarayıcı geçmişine, sunucu günlüklerine ve
+paylaşıldığı yere (WhatsApp, e-posta) düz metin olarak giriyor.
