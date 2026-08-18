@@ -799,8 +799,20 @@ hedefi onu SARAN `<label>`, atlama bağlantısı ise odakta açılıyor
 (`.focus\:not-sr-only:focus { position: static; width: auto; … }`).
 Ölçüt: `input[type=checkbox|radio]` için `el.closest('label')`'ı ölç;
 `sr-only` sınıfı taşıyan bağlantıları hiç sayma. Doğrulaması `element
-.focus()` ile YAPILMAZ (arka plandaki iframe'de `:focus` boyanmıyor) —
-stil sayfasındaki kuralı `cssText` ile ara.
+.focus()` ile YAPILMAZ — stil sayfasındaki kuralı `cssText` ile ara.
+
+**Sebebi iframe DEĞİL, bütün panel.** Bu bir dönem "arka plandaki
+iframe'de `:focus` boyanmıyor" diye yazılmıştı; ölçüldü, ÖN PLANDAKİ
+sekmede de aynı: `document.hasFocus()` **false** dönüyor, çünkü tarayıcı
+panelinin işletim sistemi odağı yok. Öge `document.activeElement` olsa
+bile `el.matches(':focus')` false, dolayısıyla `:focus` altındaki hiçbir
+hesaplanmış değer değişmiyor. Iframe'den çıkmak çare değil.
+
+Odak halkası eklediysen zincirin ÖLÇÜLEBİLİR halkalarını kapat: (1) sınıf
+gerçekten ögenin `className`'inde mi, (2) Tailwind kuralı üretmiş mi
+(`.focus\:ring-2:focus` diye stil sayfasında ara), (3) halka rengi
+değişkeni çözülüyor mu. Boyanmayı gösteremezsin; raporda da gösterdiğini
+söyleme.
 
 Ölçüldü: 8 araçta 21 "kusur"un 18'i bu iki sınıftandı.
 
