@@ -545,6 +545,18 @@ premium sayfalardan yapılmıştı. İnciler ve kokpit erişim kapısının
 arkasında ve ikisi de kusurluydu. Premium tarama, geçici bir dev rotasıyla
 motorları doğrudan render etmeden tamamlanmış sayılmaz.
 
+**"Yüzey tarandı" demek, o yüzeydeki her bileşen ölçüldü demek DEĞİL.**
+İnciler yukarıda taranıp 13 kusuru düzeltildi — ama tarama sayfanın ana
+bileşenini (`PearlsViewer`) render edip ölçmüştü. Aynı dosyadaki `HataKarti`
+ise ancak parametre bozuksa çizilen AYRI bir koyu karttı ve hiç ölçülmedi;
+açıklama cümlesi **2.36** kontrastta kaldı. Kusur gözle de saklandı, çünkü
+kartın başlığı (17.85) ve düğmesi (5.17) okunuyordu — yalnızca ne olduğunu
+anlatan cümle kayıptı.
+
+Ölçüt: bir sayfayı tararken **hangi dalın çizildiğini** sor. Koşullu
+render edilen kartlar (hata, boş durum, yükleniyor) normal akışta hiç
+görünmez; onları görmek için parametreyi kasten bozmak gerekir.
+
 ### `.prose` içindeki düz `color`, Tailwind sınıflarını yener
 
 `globals.css` bir dönem `.prose { color: var(--fg) }` yazıyordu (#111827,
