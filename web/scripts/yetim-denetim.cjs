@@ -33,7 +33,7 @@ function konuAdi(dosya) {
 }
 
 function kayitSay(veri) {
-  for (const alan of ["sorular", "questions", "cards", "kartlar", "adimlar", "stages"]) {
+  for (const alan of ["sorular", "questions", "cards", "kartlar", "adimlar", "stages", "pearls", "inciler"]) {
     if (Array.isArray(veri?.[alan])) return veri[alan].length;
   }
   return 0;
@@ -73,6 +73,7 @@ const TURLER = [
   ["quizzes", "soru"],
   ["flashcards", "kart"],
   ["vakalar", "adım"],
+  ["pearls", "inci"],
 ];
 
 let toplamYetim = 0;

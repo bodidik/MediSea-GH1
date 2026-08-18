@@ -526,3 +526,31 @@ bununla birlikte düşünülmeli.
 Not: vaka motorunun geri bildirimi quiz'den DAHA iyi — kullanıcının yanlış
 seçimini ✗, doğru cevabı ✓ ile birlikte işaretliyor. Quiz yalnızca doğruyu
 işaretliyor.
+
+---
+
+## 18. Yetim 13 klinik inci — denetim artık görüyor
+
+`content/premium/ydus/pearls/` altındaki **iki dosyanın ikisi de yetim**:
+konu dosyaları yok, yani 13 incinin tamamına arayüzden ulaşılamıyor.
+
+```
+pearls/hematoloji/aml.json           → topics/hematoloji/aml.json YOK          (10 inci)
+pearls/nefroloji/lupus-nefriti.json  → topics/nefroloji/lupus-nefriti.json YOK ( 3 inci)
+```
+
+Bu, listedeki 15. maddedeki (`questions/`) durumdan FARKLI: orada dizini
+hiçbir kod okumuyordu, burada kod okuyor ama konu dosyası olmadığı için
+sayfaya giden bağlantı hiç kurulmuyor. Çare de farklı — konu dosyasını
+yazmak yeterli.
+
+Not: `hematoloji/aml` zaten listede yetim olarak duruyordu (quiz ve kart
+dosyaları da öksüz). Yani o konu için **quiz + kart + inci** üçü birden
+yazılmış ama konu dosyası hiç açılmamış.
+
+Denetim bunu bir süre GÖRMÜYORDU: `pearls` türü listede yoktu, yalnızca
+quizzes/flashcards/vakalar denetleniyordu. Eklendi:
+
+```bash
+node web/scripts/yetim-denetim.cjs
+```
