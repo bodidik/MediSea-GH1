@@ -5,6 +5,7 @@
 // Veri tarayıcıda (localStorage) durduğu için sayfa istemci tarafında çalışır.
 
 import { useEffect, useMemo, useState } from "react";
+import { aramaEslesir } from "@/app/lib/arama";
 import Link from "next/link";
 import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
@@ -46,13 +47,34 @@ export default function StudyWorkspace() {
     let list = entries ?? [];
     if (filter === "marks") list = list.filter((e) => e.marks.length > 0);
     if (filter === "notes") list = list.filter((e) => e.note);
-    const needle = q.trim().toLocaleLowerCase("tr");
-    if (needle) {
+    /**
+     * Arama AKSAN KATLAR — `toLocaleLowerCase("tr")` tek başına yetmiyor.
+     *
+     * Ölçüldü: altı gerçekçi sorgunun DÖRDÜ kaçıyordu, çünkü küçük harfe
+     * çevirmek `ö`yü `o` yapmıyor. Kullanıcı kendi notunu arıyor ve
+     * bulamıyordu:
+     *
+     *   "gogus"  → "Göğüs Hastalıkları"    bulunamıyordu
+     *   "bobrek" → "Böbrek Yetmezliği"     bulunamıyordu
+     *   "sok"    → "Şok ve Sıvı Tedavisi"  bulunamıyordu
+     *   "colyak" → "Çölyak Hastalığı"      bulunamıyordu
+     *
+     * `aramaEslesir` iki tarafı da aynı kuralla normalleştiriyor (küçük
+     * harf + `ı→i` + NFD ile birleşik işaretleri sökme), yani Türkçe
+     * karakter yazmayan klavyede de çalışıyor.
+     *
+     * BOŞ SORGU TUZAĞI: `aramaEslesir` boş sorguda bilerek `false` döner —
+     * doğrudan `.filter()` içine konursa listeyi tümden boşaltır (`/tools`
+     * bir tur böyle boş kaldı). Buradaki `if (aranan)` koruması o yüzden
+     * ŞART ve kaldırılmamalı.
+     */
+    const aranan = q.trim();
+    if (aranan) {
       list = list.filter(
         (e) =>
-          e.title.toLocaleLowerCase("tr").includes(needle) ||
-          e.marks.some((m) => m.t.toLocaleLowerCase("tr").includes(needle)) ||
-          (e.note?.text ?? "").toLocaleLowerCase("tr").includes(needle)
+          aramaEslesir(e.title, aranan) ||
+          e.marks.some((m) => aramaEslesir(m.t, aranan)) ||
+          aramaEslesir(e.note?.text ?? "", aranan)
       );
     }
     return list;
