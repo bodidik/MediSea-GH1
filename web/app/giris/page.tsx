@@ -69,6 +69,7 @@ function GirisFormu() {
               type="email" value={email} onChange={e => setEmail(e.target.value)}
               required autoComplete="email"
               aria-invalid={hata ? true : undefined}
+              aria-describedby={hata ? 'giris-hata' : undefined}
               style={{
                 width: '100%', padding: '10px 12px', fontSize: '14px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
@@ -85,6 +86,7 @@ function GirisFormu() {
               type="password" value={password} onChange={e => setPassword(e.target.value)}
               required autoComplete="current-password"
               aria-invalid={hata ? true : undefined}
+              aria-describedby={hata ? 'giris-hata' : undefined}
               style={{
                 width: '100%', padding: '10px 12px', fontSize: '14px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
@@ -93,9 +95,15 @@ function GirisFormu() {
             />
           </div>
 
-          {/* role="alert": "E-posta veya şifre hatalı." sessizce beliriyordu. */}
+          {/* role="alert": "E-posta veya şifre hatalı." sessizce beliriyordu.
+ *
+              aria-describedby ile alanlara BAĞLANDI: `aria-invalid` alanın
+              bozuk olduğunu söylüyor ama nedenini söylemiyor. Alert bir kez
+              duyuruluyor; kullanıcı alana geri dönerse yalnızca "geçersiz"
+              duyuyordu. Bağ hata YOKKEN verilmiyor — olmayan bir kimliğe
+              işaret etmek sessiz kusurdur. */}
           {hata && (
-            <div role="alert" style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
+            <div id="giris-hata" role="alert" style={{ fontSize: '13px', color: '#a01f1f', background: '#fff0f0', padding: '8px 12px', borderRadius: '8px' }}>
               {hata}
             </div>
           )}
