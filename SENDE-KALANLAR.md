@@ -255,6 +255,21 @@ bu yüzden sende.
 arıyor; ok fonksiyonuyla dışa aktarılan bir bileşen varsa listede
 görünmez. Yani liste eksik olabilir, ama içindekiler doğrulandı.
 
+
+**Ek ölçüm — `lib/` dizinleri de tarandı.** Yukarıdaki 20 dosyalık liste
+yalnızca BİLEŞENLERİ kapsıyordu (`app/components/*`); modüller taranmamıştı.
+36 modül tarandı, **üçü hiçbir yerden içe aktarılmıyor** (~2.8 KB):
+
+| Dosya | Boyut | Not |
+|---|---|---|
+| `lib/content.shared.ts` | 2.1 KB | — |
+| `lib/planSync.ts` | 0.3 KB | — |
+| `lib/topicChildren.ts` | 0.4 KB | `getChildLinks` her zaman BOŞ dizi dönüyor; gövde `entries`i hiç doldurmuyor |
+
+Üçü de doğrudan grep ile teyit edildi (0 atıf) ve tarama negatif kontrolden
+geçti: kullanıldığı kesin olan modüller (`slug`, `arama`, `kisaltma`)
+listede çıkmadı.
+
 ---
 
 ## 9. Ödeme hattı henüz yok — karşılıksız iki vaat kaldırıldı
