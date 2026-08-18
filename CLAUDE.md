@@ -824,6 +824,53 @@ varsayım üretir.*
 Yeni bir uç yazarken ya da bir `catch` bloğu eklerken önce şunu sor: bu
 yanıt, veriyi gerçek sanan birini yanıltır mı?
 
+### Hesaplayıcı ÇÖP GİRDİDEN klinik etiket üretmemeli
+
+Aynı ilkenin en pahalı hâli. `parseLocaleNumber` ayrıştıramadığı her şeyi
+**0'a** çeviriyor — 42 aracın paylaştığı davranış. Sonuç sayı değil, sayının
+yanındaki **sınıflama etiketi**:
+
+```
+eGFR:  kreatinin "abc" → 0   + "G5: Böbrek Yetmezliği"
+ANC:   lökosit  "abc"  → 0   + "EVRE 4 — ÇOK CİDDİ · Acil izolasyon ve
+                               ampirik antibiyotik"
+```
+
+**"0" NaN'dan DAHA tehlikeli.** NaN açıkça bozuk; 0 ise makul görünen
+kritik bir değer ve yanına en ağır evre geliyor.
+
+`parseLocaleNumber`'ın sözleşmesine DOKUNULMADI — 42 aracı birden
+değiştirmek riskli. Bunun yerine araç, sayıyı basmadan önce girdinin
+**makul** olduğunu kendisi doğruluyor (klinik sınır değil makullük sınırı:
+kreatinin 0.1-30, lökosit 0.1-500, yüzde toplamı ≤100). Geçersizse sayı
+yerine `–`, etiket yerine "Değerleri girin".
+
+**Riskli olan alt küme: merdiven yönü.** Kalıbı (serbest sayısal girdi +
+sınıflama merdiveni + `parseLocaleNumber`) 19 araç taşıyor ama tehlike
+yalnızca **DÜŞÜK = KÖTÜ** olanlarda: orada 0 son basamağa düşüyor. Yüksek
+= kötü olanlarda (SOFA, NEWS2, Glasgow-Blatchford, KDIGO-AKI…) 0 en hafif
+kategoriye düşüyor ve zaten meşru bir skor.
+
+**SINIF ÖLÇÜMLE KAPATILDI** — yedi araç tek tek, gerçek girdiyle:
+
+| araç | durum |
+|---|---|
+| egfr, anc | KUSURLUYDU → düzeltildi |
+| bmi, gnri, pni, conut, homa-ir | zaten korumalı (`–` gösteriyor) |
+
+Kalan 12 araçta merdiven en hafif koşulla başlıyor (`if (score <= X)
+return REMİSYON/NORMAL/İNAKTİF`), yani 0 ilk dala düşüyor.
+
+Doğrulamanın en önemli adımı **negatif kontrol**: gerçekten ağır bir vaka
+hâlâ ağır etiketi almalı. ANC'de lökosit 0.5 / %10 nötrofil → ANC 50 +
+"EVRE 4" + acil uyarısı çıkıyor. Bu ölçülmeden düzeltme "alarmı susturmuş"
+olabilir.
+
+**Etiket ararken DESEN TAHMİN ETME.** ANC bir tur "temiz" raporlandı,
+çünkü süzgeç `nötropeni|NORMAL|risk|ağır|hafif|orta` arıyordu ve
+"EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
+dizesini oku, sonra ölç.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
