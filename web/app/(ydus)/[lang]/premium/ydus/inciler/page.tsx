@@ -18,17 +18,30 @@ const isValidParam = (param: string) => /^[a-zA-Z0-9-]+$/.test(param);
  *
  * Teknik ayrıntı kullanıcıya değil `console.error`'a gider.
  */
-function HataKarti({ baslik, aciklama }: { baslik: string; aciklama: string }) {
+/**
+ * `koyu-yuzey`: bu kart baştan sona koyu ve ağacında AÇIK kart yok, yani
+ * `globals.css`'teki genel koyulaştırma burada tersine çalışıyor.
+ *
+ * Ölçüldü — sınıf eklenmeden önce açıklama cümlesi `slate-600`'e düşüp
+ * `bg-slate-900` üstüne basılıyordu: kontrast **2.36** (eşik 4.5). Yani
+ * hata kartının kullanıcıya ne olduğunu anlatan TEK cümlesi okunmuyordu;
+ * başlık ve düğme okunduğu için kusur gözle fark edilmiyordu.
+ *
+ * Muafiyet burada tahmine dayanmıyor: yüzey kendini beyan ediyor ve ağaçta
+ * yalnızca `slate-950`, `slate-900`, `blue-600` var.
+ */
+function HataKarti({ baslik, aciklama, lang }: { baslik: string; aciklama: string; lang: string }) {
   return (
-    <div className="flex h-screen items-center justify-center bg-slate-950 p-6">
+    <div className="koyu-yuzey flex h-screen items-center justify-center bg-slate-950 p-6">
       <div className="max-w-sm rounded-2xl border border-slate-800 bg-slate-900 p-8 text-center shadow-2xl">
         <span className="mb-4 block text-4xl" aria-hidden="true">🌊</span>
         <h1 className="mb-2 text-xl font-black uppercase tracking-widest text-white">
           {baslik}
         </h1>
         <p className="mb-6 text-sm leading-relaxed text-slate-400">{aciklama}</p>
+        {/* Adres dili sabitlenmişti: /en/... altındaki bir hata kullanıcıyı /tr/'ye atıyordu. */}
         <Link
-          href="/tr/premium/ydus"
+          href={`/${lang}/premium/ydus`}
           className="inline-block rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-blue-500"
         >
           YDUS ana sayfasına dön
@@ -55,6 +68,7 @@ export default async function PearlsPage({
   if (!branch || !id) {
     return (
       <HataKarti
+        lang={lang}
         baslik="İnciler açılamadı"
         aciklama="Bağlantıda hangi konunun incilerinin gösterileceği belirtilmemiş. Konuya dönüp yeniden deneyebilirsin."
       />
@@ -65,6 +79,7 @@ export default async function PearlsPage({
   if (!isValidParam(branch) || !isValidParam(id)) {
     return (
       <HataKarti
+        lang={lang}
         baslik="Bağlantı geçerli değil"
         aciklama="Adresteki bilgiler tanınmadı. Bağlantı bozulmuş ya da eksik kopyalanmış olabilir."
       />
@@ -105,6 +120,7 @@ export default async function PearlsPage({
     console.error("İnciler veri okuma hatası:", error);
     return (
       <HataKarti
+        lang={lang}
         baslik="Bu konunun incileri yok"
         aciklama="Bu başlık için henüz klinik inci hazırlanmamış. Diğer konularda hazır olanları görebilirsin."
       />
