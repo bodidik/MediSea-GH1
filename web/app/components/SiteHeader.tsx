@@ -270,7 +270,21 @@ export default function SiteHeader() {
         </div>
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
+        {/*
+          320px'te boşluklar KISILDI (yalnızca taban değerler; `sm:` ve üstü
+          değişmedi).
+
+          Ölçüldü: bu grup `shrink-0`, yani hiç daralmıyor ve 305px'lik
+          belgede sağ kenarı 312'ye taşıyordu — SİTENİN HER SAYFASI 320px'te
+          6.86px yatay kayıyordu. 320px hâlâ yaygın (iPhone SE ve benzerleri)
+          ve bu depoda mobil ölçümün tek genişlikte yapılmaması kuralı zaten
+          yazılı.
+
+          Kaynak elle tahmin edilmedi: `scrollTo(9999,0)` ile gerçek kayma
+          ölçüldü, sonra belge genişliğini aşan kutular sıralandı ve en sağı
+          boyayan öge `elementFromPoint` ile doğrulandı.
+        */}
+        <div className="flex items-center gap-1.5 sm:gap-4 shrink-0 ml-0 sm:ml-2 border-l border-slate-200 pl-1.5 sm:pl-6">
           {oturumHazir && !girisli && (
             <>
               {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için
