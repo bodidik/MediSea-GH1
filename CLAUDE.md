@@ -154,6 +154,30 @@ tetikliyor, yani içe aktarma yolu uçtan uca sınanabiliyor. Sınanacak dört
 durum: dışa aktarımda sayı, birleşimde çiftlenmeme, **alanı olmayan eski
 yedek**, "üzerine yaz"da eski anahtarların gerçekten silinmesi.
 
+**DÖRDÜ DE CANLIDA ÖLÇÜLDÜ — sınıf kapalı.** Altı depo anahtarı tohumlanıp
+gerçek arayüzle sınandı:
+
+| durum | sonuç |
+|---|---|
+| dışa aktarım | altı alan da var, sayılar tutuyor (1 yolda 2 vurgu, 1 not, 1 tekrar, 1 gün, 1 kart seti) |
+| eski yedek (`kartlar` alanı YOK) | ayrıştırıldı, plan gösterildi, beş alan geri yüklendi — düşmedi |
+| "üzerine yaz" | yedekte OLMAYAN üç anahtar (iki yol + bir `kartlar` seti) gerçekten SİLİNDİ |
+| aynı yedeği iki kez birleştir | vurgu 2 → 2, çiftlenme yok; günlük `kart: max(5,5)=5`, şişme yok |
+
+Dışa aktarımı okumanın yolu: indirmeyi yakalayamazsın ama
+`URL.createObjectURL`'ü sarmalayıp Blob'u alabilirsin.
+
+**İki ölçüm tuzağı — ikisine de düşüldü:**
+
+- **İçe aktarma İKİ adımlı.** Dosyayı `input`'a atmak yalnızca KURU PROVA
+  başlatıyor; depo değişmiyor. "Onayla ve birleştir" / "Onayla ve üzerine
+  yaz" düğmesine basılmadan ölçmek "hiçbir şey olmadı" sonucu verir ve
+  içe aktarma bozuk sanılır.
+- **Tohumu GERÇEK şemayla kur.** Günlüğe uydurma bir `sure` alanı konuldu;
+  birleştirme onu (doğru biçimde) attı ve `DayLog = {kart, dogru}`
+  şemasına normalleştirdi. Bir an "veri kaybı" sanıldı — kusur kodda
+  değil tohumdaydı.
+
 ### Depoya yazan etki, yükleme bitmeden yazarsa veriyi SİLER
 
 Kalıp şu: bir etki depodan okuyup duruma koyuyor, ikinci bir etki durumu
