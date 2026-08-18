@@ -1245,6 +1245,20 @@ Genel kural: bir tarama "0 kusur" dediğinde **kasten bozuk bir kayıt
 ekleyip yakalandığını gör.** Kusur bulamayan tarama, düzeltilmiş bir
 yüzeyden ayırt edilemez.
 
+**Her taramaya ÖLÇÜLEN SAYIYI da bastır — "0 kusur" ile "0 öge" aynı
+görünür.** Yerel dev sunucuda bir rota ilk ziyaretinde derleniyor ve
+iframe zaman aşımına uğrayıp BOŞ kalabiliyor. O zaman tarama hiçbir öge
+görmüyor ve raporu `kusurSayisi: 0` oluyor — yani sayfa taranmış ve temiz
+çıkmış gibi.
+
+Bir turda iki sayfada birden oldu (`/uyelik` ve `/tr/premium/ydus/liderlik`
+"temiz" göründü, oysa hiç yüklenmemişlerdi) ve yalnızca ölçülen denetim
+sayısı raporlandığı için fark edildi: `denetim: 0`. İkinci koruma
+`d.location.pathname` — boş iframe'de `"blank"` dönüyor.
+
+Yani her tarama üç şeyi birden raporlamalı: kusur sayısı, **ölçülen öge
+sayısı** ve gerçekten hangi yolda olunduğu.
+
 ### Ardışık ölçüm BAYAT sonuç verir — her senaryoyu izole et
 
 Aynı sayfada birden çok senaryoyu arka arkaya çalıştırıp her birinden
