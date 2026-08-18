@@ -869,6 +869,25 @@ genişliğe çıkıyor ama 288px'lik kutularında **kayıyor, kırpılmıyor**
 
 Yeni bir yüzey ölçerken **320 ve 375** ikisine birden bak.
 
+**O "temiz" sonuç EKSİKTİ — sonradan her sayfada 6.86px kayma bulundu.**
+Yukarıdaki ölçüm sayfa gövdesine bakıyordu; kusur ise BAŞLIK çubuğundaydı
+ve AppShell'den geldiği için siteye yayılmıştı. Sağ grup (`Giriş`/`Üye Ol`
++ menü düğmesi) `shrink-0` taşıyor, yani hiç daralmıyor ve 305px'lik
+belgede sağ kenarı 312'ye çıkıyordu. Taban boşluklar kısılarak düzeltildi
+(`sm:` ve üstü değişmedi).
+
+**SINIF ÖLÇÜMLE KAPATILDI.** Düzeltmeden sonra 320px'te bütün düzen
+aileleri tarandı — AppShell (`/`, `/topics`, konu, `/uyelik`,
+`/calisma-alanim`, `/tekrar`), araç düzeni (`app/tools/*`), premium
+düzeni (`(ydus)`), ve grup dışı `giris`/`kayit`/`profile`. Onu yerelde,
+altısı canlıda: **hepsinde kayma 0.** Yeni bir DÜZEN eklenmedikçe bu
+ölçütü yeniden taramaya gerek yok.
+
+Ölçüm üç filtreyi birden istiyor, yoksa sahte kusur üretir: `sr-only`
+ögeler, **kırpan atası olanlar** (`overflow-x-auto` şeridin içindeki
+bağlantılar taşıyor görünür) ve `position: absolute` süslemeler. Üçü de
+bir turda ayrı ayrı yanılttı.
+
 **İKİ ölçüt birden gerekiyor; hangisinin tek başına yeteceği sayfaya göre
 değişiyor.** Premium branş sayfasında kaydırma denemesi SAHTE TEMİZ verdi:
 negatif kontrolde 900px'lik bir öge eklendiğinde bile belge yatay kaymadı,
