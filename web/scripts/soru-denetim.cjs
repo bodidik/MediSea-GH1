@@ -232,6 +232,40 @@ function main() {
   console.log(`kart dosyası: ${k.dosyaSayisi} | kart: ${k.kartSayisi}`);
   console.log(`vaka dosyası: ${v.dosyaSayisi} | adım: ${v.adimSayisi}`);
 
+  /* ── UYARI SINIFI: açıklaması olmayan vaka adımı ────────────────────────
+   *
+   * Yapısal kusur DEĞİL — dosya geçerli, motor çalışıyor, kimse çökmüyor.
+   * Ama ölçüldü: 35 vaka adımının 12'si `aciklama_kisa` ve `aciklama_detay`
+   * taşımıyor, yani cevaptan sonra çıkan sonuç kutusu başlıklı ve gövdesiz
+   * kalıyordu. Motor artık boş kutuyu hiç basmıyor; buradaki liste eksiğin
+   * KENDİSİNİ görünür tutuyor.
+   *
+   * CI kapısı değil: açıklama yazmak içerik işi ve içerik kullanıcının
+   * sorumluluğunda. Kapı yapılsaydı iş, eksik metin yüzünden düşerdi.
+   */
+  const eksikAciklama = [];
+  for (const dosya of dosyalar(VAKA)) {
+    let veri;
+    try { veri = JSON.parse(fs.readFileSync(dosya, 'utf-8')); } catch { continue; }
+    const adimlar = Array.isArray(veri?.adimlar) ? veri.adimlar : [];
+    const eksik = adimlar.filter((a) => !a?.aciklama_kisa && !a?.aciklama_detay).length;
+    if (eksik) {
+      eksikAciklama.push({
+        dosya: kisaAd(dosya),
+        eksik,
+        toplam: adimlar.length,
+      });
+    }
+  }
+  if (eksikAciklama.length) {
+    const t = eksikAciklama.reduce((a, b) => a + b.eksik, 0);
+    console.log('');
+    console.log(`UYARI — açıklaması olmayan vaka adımı: ${t} (CI kapısı DEĞİL, içerik eksiği)`);
+    for (const x of eksikAciklama) {
+      console.log(`  ${x.dosya.padEnd(50)} ${x.eksik}/${x.toplam} adım`);
+    }
+  }
+
   if (!kusurlar.length) {
     console.log('yapısal kusur yok.');
     return;

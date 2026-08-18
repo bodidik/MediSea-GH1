@@ -11,8 +11,21 @@ interface Adim {
   soru: string;
   secenekler: Record<string, string>;
   dogru: string;
-  aciklama_kisa: string;
-  aciklama_detay: string;
+  /**
+   * İSTEĞE BAĞLI — tip bir dönem zorunlu diyordu ve YALANDI.
+   *
+   * Ölçüldü: 11 vaka dosyasının 5'i (gogus-hastaliklari/sarkoidoz, tkp,
+   * vip-1..3 — 35 adımın 12'si) bu iki alanı hiç taşımıyor; yerine
+   * yalnızca `secenekAciklamalari` var. JSON `any` olarak okunduğu için
+   * TypeScript bunu göremiyordu.
+   *
+   * Sonuç çökme değildi (`kalinIsle` boş girdiyi karşılıyor) ama sonuç
+   * kutusu BAŞLIKLI ve GÖVDESİ BOŞ basılıyordu: boş `<p>` kendi
+   * `marginBottom`ını koruduğu için ücretli yüzeyde açıklamasız bir
+   * boşluk kalıyordu.
+   */
+  aciklama_kisa?: string;
+  aciklama_detay?: string;
   secenekAciklamalari: Record<string, string>;
   sonraki_bilgi?: string;
 }
@@ -199,17 +212,21 @@ function AdimKarti({
               <div style={{ fontSize: '14px', fontWeight: 700, color: dogruMu ? '#1a6640' : '#a01f1f' }}>
                 {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
               </div>
-              <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
-                {kalinIsle(adim.aciklama_kisa)}
-              </div>
+              {adim.aciklama_kisa && (
+                <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
+                  {kalinIsle(adim.aciklama_kisa)}
+                </div>
+              )}
             </div>
           </div>
 
           {/* Detay */}
           <div style={{ padding: '.9rem 1.1rem' }}>
-            <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
-              {kalinIsle(adim.aciklama_detay)}
-            </p>
+            {adim.aciklama_detay && (
+              <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+                {kalinIsle(adim.aciklama_detay)}
+              </p>
+            )}
 
             {/* Seçenek açıklamaları */}
             <div>

@@ -909,3 +909,41 @@ Bu bölüm bilerek **CI kapısı DEĞİL**: kırık adreslerin çoğu senin vere
 ürün kararına bağlı ve gidilecek doğru hedef henüz yok. Karar verilip içerik
 temizlenince betikteki `UYARI_MODU` `false` yapılır ve sınıf gerçek bir
 kapıya dönüşür.
+
+---
+
+## 26. Beş vaka dosyasında adım açıklaması yok — 35 adımın 12'si
+
+Vaka motoru cevaptan sonra üç şey basıyor: kısa açıklama
+(`aciklama_kisa`), detay (`aciklama_detay`) ve seçenek açıklamaları
+(`secenekAciklamalari`). Ölçüldü — beş dosya ilk ikisini hiç taşımıyor:
+
+```
+gogus-hastaliklari/sarkoidoz-vaka-1.json   4/4 adım
+gogus-hastaliklari/tkp-vaka-1.json         2/2 adım
+gogus-hastaliklari/vip-vaka-1.json         2/2 adım
+gogus-hastaliklari/vip-vaka-2.json         2/2 adım
+gogus-hastaliklari/vip-vaka-3.json         2/2 adım
+```
+
+Altı dosya (endokrinoloji ve hematoloji) ikisini de taşıyor, yani şema
+ayrışması değil eksik içerik.
+
+**Kod tarafı bu turda düzeltildi:** motor artık boş açıklamayı hiç basmıyor.
+Önceden sonuç kutusu başlıklı ve gövdesiz çiziliyordu (boş `<p>` kendi
+`marginBottom`unu koruduğu için ücretli yüzeyde açıklamasız bir boşluk
+kalıyordu). Tip de düzeltildi: iki alan `string` diye ZORUNLU ilan
+edilmişti ama JSON `any` okunduğu için TypeScript yalanı göremiyordu.
+
+**Kullanıcı bugün açıklamasız kalmıyor** — seçenek açıklamaları
+(`secenekAciklamalari`) beş dosyada da dolu ve motor onları basıyor. Yani
+bu bir çıkmaz değil, eksik derinlik: öteki altı vakada cevabın NEDEN doğru
+olduğunu anlatan iki paragraf var, bu beşinde yok.
+
+Karar senin: beş dosyaya açıklama yazmak (tıbbi içerik), ya da seçenek
+açıklamalarını yeterli sayıp olduğu gibi bırakmak. Denetim artık eksiği
+sayıyor ve **CI'yı düşürmüyor**:
+
+```bash
+node web/scripts/soru-denetim.cjs
+```
