@@ -88,7 +88,7 @@ export default function ContentStudio() {
                     newSecs[idx].heading = e.target.value;
                     setContent({...content, sections: newSecs});
                   }}
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-slate-200 font-bold mb-4 outline-none"
+                  className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-slate-200 font-bold mb-4 outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-1"
                 />
                 
                 <label className="block text-[10px] font-black text-slate-500 uppercase mb-2 tracking-widest">Bölüm İçeriği (HTML)</label>

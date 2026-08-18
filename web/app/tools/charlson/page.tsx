@@ -105,7 +105,7 @@ export default function CharlsonPage() {
           <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100 mb-2">
             <span className="text-sm font-bold text-blue-900/80">Yaş Grubu</span>
             <select aria-label="Yaş Grubu" value={agePts} onChange={e => setAgePts(Number(e.target.value))}
-              className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none max-w-full min-w-0 text-blue-950">
+              className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-1 max-w-full min-w-0 text-blue-950">
               {AGE_OPTS.map(([l, v]) => <option key={v} value={v}>{l}</option>)}
             </select>
             <span className="text-[10px] font-black text-amber-700 w-10 text-right">+{agePts}</span>
