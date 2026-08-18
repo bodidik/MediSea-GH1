@@ -975,3 +975,51 @@ page.tsx` yaz ya da iki bağlantıyı var olan bir sayfaya çevir
 
 Bu sınıf artık kendiliğinden görünür: `node web/scripts/link-denetim.cjs`
 kaynaktaki düz adresleri de tarıyor ve kırıkları listeliyor.
+
+---
+
+## 26. Notlar quizler arasında SIZIYOR — vurgular sızmıyor
+
+`NotePanel` notu `medisea:notes:v1:<pathname>` anahtarıyla saklıyor ve
+`usePathname()` **sorgu dizesini içermiyor**. Sorgu ile içerik değişen
+sayfalarda bu, farklı içeriklerin aynı notu paylaşması demek. Ölçüldü:
+
+```
+medisea:notes:v1:/tr/premium/ydus/quiz-coz
+    ← branch=endokrinoloji&id=cushing-sendromu-quiz-1
+    ← branch=hematoloji&id=itp-quiz-1            (ve kalan 37 quiz)
+
+medisea:notes:v1:/tr/premium/ydus/inciler
+    ← branch=hematoloji&id=aml
+    ← branch=nefroloji&id=lupus-nefriti
+```
+
+Yani Cushing quizini çözerken aldığın not, ITP quizinde de karşına çıkıyor.
+
+**Kapsam dar ve ölçüldü:** not paneli yalnızca `[data-readable]` taşıyan
+sayfalarda açılıyor. `hizli-tekrar`, `vaka-coz` ve `soru-cozum` bu
+niteliği taşımıyor, yani oralarda not alınamıyor ve çarpışma da yok.
+Geriye **quiz-coz (39 dosya)** ve **inciler (2 dosya)** kalıyor. Açık konu
+sayfalarında yol zaten konuya özel, sorun yok.
+
+**Vurgular neden etkilenmiyor:** onlar da yolla anahtarlanıyor ama her
+vurgu konteyner kimliği taşıyor (`soru:<id>`, `pearl:<id>`). Konteyneri
+bulunmayan vurgu silinmiyor, sadece boyanmıyor — belgede yazan davranış.
+Notlarda böyle bir kimlik yok, metin doğrudan yola bağlı.
+
+**Neden tek başıma değiştirmedim:** depo anahtarı şeması bu depodaki en
+riskli değişiklik sınıfı (yeni anahtar ekleme kuralı ALTI yeri birden
+güncellemeyi gerektiriyor) ve elimde gerçek kullanıcı verisi yok.
+
+Karar verirsen dokunulacak yerler ölçüldü, üç tane:
+
+1. `NotePanel.tsx:33` — `KEY` yolun yanına sorguyu da alır.
+2. `NotePanel.tsx:156` — `touchIndex(pathname, …)` AYNI dizeyi almalı,
+   yoksa Çalışma Alanım'da başlık çözülmez ve `prettify(path)` ham yol basar.
+3. Geçiş: eski anahtardaki notlar SİLİNMEZ. `study-index` bütün
+   `medisea:notes:v1:*` anahtarlarını taradığı için eski kayıt Çalışma
+   Alanım'da listelenmeye devam eder — yalnızca quiz panelinde görünmez
+   olur. Yani veri kaybı değil, görünürlük değişimi.
+
+`study-backup`, `study-sync` ve `StudyStatus` anahtarı önekle taradıkları
+için biçim değişikliğinden etkilenmiyor (ölçüldü).
