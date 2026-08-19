@@ -254,17 +254,34 @@ function main() {
       process.exitCode = 1;
       return;
     }
-    const beklenen = JSON.stringify(sirali, null, 1) + String.fromCharCode(10);
-    if (mevcut === beklenen) {
-      console.log(`ilgili-index.json senkron (${bagliKonu} konu, ${toplamBag} bağ).`);
+    /* Karşılaştırma SIRADAN BAĞIMSIZ olmalı — bayt bayt karşılaştırma
+     * CI'yı haksız yere düşürürdü.
+     *
+     * Anahtarlar `localeCompare` ile sıralanıyor ve o, çalışma zamanının
+     * yerel ayarına bağlı. Ölçüldü: bu makinede varsayılan yerel `tr-TR` ve
+     * orada "ışık" < "ilac"; `en` yerelinde ise "ışık" > "izole". Yani
+     * dosya Windows'ta (tr-TR) üretilip CI'da (Linux, başka yerel) bayt
+     * bayt karşılaştırılsaydı, hiçbir şey değişmediği hâlde "BAYAT" derdi.
+     *
+     * Bu yüzden yalnızca İÇERİK karşılaştırılıyor: hangi konu var, hangi
+     * bağları taşıyor. Anahtar sırası bir bilgi taşımıyor. */
+    let eski;
+    try {
+      eski = JSON.parse(mevcut);
+    } catch {
+      console.error('ilgili-index.json ayrıştırılamadı — üretmek için: node scripts/ilgili-index.cjs');
+      process.exitCode = 1;
       return;
     }
-    const eski = JSON.parse(mevcut);
     const eksik  = Object.keys(sirali).filter((k) => !(k in eski));
     const fazla  = Object.keys(eski).filter((k) => !(k in sirali));
     const farkli = Object.keys(sirali).filter(
       (k) => k in eski && JSON.stringify(eski[k]) !== JSON.stringify(sirali[k])
     );
+    if (!eksik.length && !fazla.length && !farkli.length) {
+      console.log(`ilgili-index.json senkron (${bagliKonu} konu, ${toplamBag} bağ).`);
+      return;
+    }
     console.log(`ilgili-index.json BAYAT — indekste ${Object.keys(eski).length} konu, olması gereken ${Object.keys(sirali).length}`);
     for (const k of eksik.slice(0, 20))  console.log(`  eksik   : ${k}`);
     for (const k of fazla.slice(0, 20))  console.log(`  fazla   : ${k}`);
