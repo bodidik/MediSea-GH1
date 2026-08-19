@@ -56,6 +56,25 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
     setDurum(null);
   };
 
+  /**
+   * İçe aktarma bitince ODAK DURUM MESAJINA gitsin.
+   *
+   * Ölçüldü: "Onayla ve üzerine yaz" tıklandıktan sonra düğme DOM'dan
+   * kalkıyor ve odak `<body>`ye düşüyor. Uygulamanın EN YIKICI eylemi bu —
+   * bütün çalışma verisi değişiyor — ve klavyeyle gezen kullanıcı hem
+   * yerini kaybediyor hem de sonucu görmek için sayfayı yeniden taramak
+   * zorunda kalıyor.
+   *
+   * Odak, ne olduğunu söyleyen cümlenin kendisine gidiyor. `role="status"`
+   * zaten duyuruyor; odak da oraya gidince ekran okuyucu KULLANMAYAN
+   * klavye kullanıcısı da mesajı görüyor.
+   */
+  const durumRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (durum) durumRef.current?.focus();
+  }, [durum]);
+
   const onayla = () => {
     if (!text) return;
     const r = applyImport(text, mode);
@@ -231,7 +250,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
           {/* Koşullu basılmıyor: canlı bölge, içerik değişmeden ÖNCE DOM'da
               bulunmalı — sonradan eklenen bir bölgenin ilk mesajı kaçabiliyor.
               Boşken görünmez, yer kaplamıyor. */}
-          <span role="status" className="text-[11px] font-semibold text-emerald-600">
+          <span
+            ref={durumRef}
+            tabIndex={-1}
+            role="status"
+            className="text-[11px] font-semibold text-emerald-600 outline-none"
+          >
             {durum ?? ""}
           </span>
         </div>
