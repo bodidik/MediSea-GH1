@@ -1115,6 +1115,31 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Klavye kısayolları ölçüldü — altı satırın altısı da doğru
+
+Belgedeki üç satırlık `defaultPrevented` tablosu genişletilerek `/tekrar`
+üzerinde sürüldü. Koruma hem düğmeyi kurtarıyor hem kısayolu öldürmüyor:
+
+| hedef | tuş | `defaultPrevented` | anlamı |
+|---|---|---|---|
+| BODY, kart gizli | Space | **true** | kısayol çalışıyor (kartı çeviriyor) |
+| BODY, kart açık | rakam | **true** | kısayol çalışıyor (derecelendiriyor) |
+| BUTTON odakta | Space | **false** | düğme yutulmuyor |
+| BUTTON odakta | Enter | **false** | düğme yutulmuyor |
+| BUTTON odakta | rakam | **true** | rakam yine çalışıyor — bilinçli tasarım |
+| yazı alanı | rakam | **false** | yazmak yutulmuyor |
+
+Beşinci satır koddaki yorumun iddiası ("rakam kısayolları düğme
+çalıştırmadığı için korumaya takılmıyor") ve ölçümle doğrulandı: düğme
+odaktayken `4` tuşu kartı Kolay olarak derecelendirdi (`interval: 3,
+ease: 2.65` — takvim ölçümüyle birebir).
+
+**ÖLÇÜM TUZAĞI — rakam kısayolu KART AÇILMADAN çalışmaz.** İşleyici
+`if (!revealed) return` ile erken dönüyor. Kart gizliyken gönderilen rakam
+`defaultPrevented: false` veriyor ve bu "koruma kısayolu öldürmüş" gibi
+görünüyor. Görünmüyor: ölçüm yanlış durumda yapılmış oluyor. Rakamı
+sınamadan önce kartı GÖSTER.
+
 ### Not defteri ölçüldü — üç panel kuralının üçü de tutuyor
 
 Belgede panel/çekmece açan yüzeyler için üç kural yazılı. Üçü de sürülerek
