@@ -366,7 +366,42 @@ export default function ReadingTools() {
     setPanelOpen(false);
   };
 
+  /**
+   * Vurgu kaldırıldıktan sonra ODAK KAYBOLMASIN.
+   *
+   * Ölçüldü: listedeki ortadaki vurgu kaldırıldığında `document
+   * .activeElement` `<body>` oluyordu — düğme DOM'dan kalkınca odak kök
+   * ögeye düşüyor ve klavyeyle gezen kullanıcı panelde yerini kaybediyor.
+   * Çalışma Alanım'daki "Sil" düğmesinde ölçülen kusurun aynısı.
+   *
+   * Odak taşıma ETKİDE yapılıyor, kaldırma anında değil: `requestAnimation
+   * Frame` React'in commit'inden önce gelebiliyor ve o anda eski düğme hâlâ
+   * DOM'da (Çalışma Alanım'da bu ölçüldü ve ilk düzeltme böyle düşmüştü).
+   */
+  const listeRef = useRef<HTMLUListElement>(null);
+  const panelDugmeRef = useRef<HTMLButtonElement>(null);
+  const [odakBekliyor, setOdakBekliyor] = useState(false);
+
+  useEffect(() => {
+    if (!odakBekliyor) return;
+    setOdakBekliyor(false);
+    const kalan = listeRef.current?.querySelectorAll<HTMLButtonElement>("[data-kaldir]");
+    if (kalan && kalan.length) kalan[0].focus();
+    /* SON vurgu kaldırıldığında odak yine `<body>`ye düşüyor ve bu BİLEREK
+       böyle bırakıldı — ölçüldü: son vurgu gidince ReadingTools'un tamamı
+       unmount oluyor, panel açma düğmesi bile DOM'da kalmıyor. Yani
+       bileşenin içinde odaklanacak hiçbir hedef yok.
+
+       Sayfadaki başka bir ögeye (örneğin `<h1>`) odaklanmak mümkün ama bu,
+       kullanıcının nereye düşeceğine dair bir TASARIM kararı ve bileşenin
+       yetkisi dışında. Aşağıdaki çağrı unmount durumunda sessizce
+       hiçbir şey yapmıyor; asıl işi, panel açıkken kalan vurgu olmadığı
+       ara durumda yapıyor. */
+    else panelDugmeRef.current?.focus();
+  }, [marks, odakBekliyor]);
+
   const removeOne = (id: string) => {
+    setOdakBekliyor(true);
     unpaint(id);
     setPainted((p) => {
       const next = new Set(p);
@@ -499,7 +534,7 @@ export default function ReadingTools() {
                   </button>
                 </div>
               </div>
-              <ul className="divide-y divide-slate-50">
+              <ul ref={listeRef} className="divide-y divide-slate-50">
                 {marks.map((m) => {
                   const görünür = painted.has(m.id);
                   return (
@@ -533,7 +568,12 @@ export default function ReadingTools() {
                     */}
                     <button
                       onClick={() => removeOne(m.id)}
-                      aria-label="Vurguyu kaldır"
+                      data-kaldir
+                      /* Ad ayırt edici olmalı: panelde üç vurgu varken üç
+                         düğmenin de adı "Vurguyu kaldır"dı ve düğmeler
+                         arasında gezen kullanıcı hangisini sildiğini
+                         bilemiyordu. */
+                      aria-label={`Vurguyu kaldır: ${m.t.slice(0, 40)}`}
                       title="Kaldır"
                       className="shrink-0 text-slate-300 opacity-0 transition-opacity hover:text-rose-500 group-hover:opacity-100 focus:opacity-100"
                     >
@@ -575,6 +615,7 @@ export default function ReadingTools() {
             </div>
           )}
           <button
+            ref={panelDugmeRef}
             onClick={() => setPanelOpen((v) => !v)}
             className={`flex items-center gap-2 rounded-full px-4 py-2.5 text-white shadow-xl transition-all active:scale-95 ${
               kayitHatasi
