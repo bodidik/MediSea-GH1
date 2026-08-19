@@ -1115,6 +1115,36 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Not defteri ölçüldü — üç panel kuralının üçü de tutuyor
+
+Belgede panel/çekmece açan yüzeyler için üç kural yazılı. Üçü de sürülerek
+doğrulandı:
+
+| kural | ölçüm |
+|---|---|
+| açılışta odak panele girsin | odak `ASIDE [Not defteri]` — panelin KENDİSİNE gidiyor, ilk denetime değil |
+| ESC kapatsın | kapanıyor ve odak açan düğmeye (`Not defterini aç`) dönüyor |
+| `role="dialog"` + `aria-label` | ikisi de var; `aria-modal` YOK — karartma yapmadığı için doğru karar |
+
+**ESC veri kaybettirmiyor** — belgenin özellikle ölçülmesini istediği şey:
+panele 59 karakter yazıldı, ESC'ye basıldı, depoda kayıt duruyor; panel
+yeniden açıldığında metin birebir geri geliyor.
+
+Çalışma Alanım entegrasyonu da çalışıyor: kart branşı, tarihi, konu
+başlığını, "✎ 59 karakter not" özetini, Aç/Sil düğmelerini ve kaynağa
+dönen bağlantıyı taşıyor. Not gövdesi kartta gösterilmiyor (uzun not
+listeyi şişirirdi), "Aç" ile okunuyor.
+
+**TÜRKÇE BÜYÜK HARF, `innerText` tuzağının ikinci katmanı.** `innerText`
+CSS `text-transform`u uygular — bu zaten yazılıydı. Yeni olan şu: Türkçede
+`i` büyük harfe `İ` olarak çevriliyor ve JavaScript'in VARSAYILAN büyük/
+küçük harf katlaması `i` ile `İ`yi eş saymıyor. Yani `/Akut Miyeloid
+Lösemi/i` deseni, ekranda `AKUT MİYELOİD LÖSEMİ` yazan bir başlığı
+BULAMIYOR. Ölçümde "başlık görünmüyor" sanıldı; başlık oradaydı.
+
+Çare: karşılaştırmadan önce iki tarafı da `toLocaleLowerCase("tr")` ile
+indirgemek (ve `ı`→`i` eşlemek), ya da `textContent` kullanmak.
+
 ### Çalışma döngüsü uçtan uca sürüldü — dördü de çalışıyor
 
 Belgedeki döngü **oku → vurgula → tekrar et → kaynağa dön**. Parçaları ayrı
