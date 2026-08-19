@@ -113,6 +113,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
             {currentStage.options.map((opt) => (
               <button
                 key={opt.id}
+                aria-pressed={selectedOption === opt.id}
                 onClick={() => !showResult && setSelectedOption(opt.id)}
                 disabled={showResult}
                 className={`group relative w-full text-left p-2.5 rounded border transition-all duration-150

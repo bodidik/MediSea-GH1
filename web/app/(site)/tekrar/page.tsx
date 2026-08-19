@@ -429,6 +429,7 @@ function Shell({
               ).map(([m, l]) => (
                 <button
                   key={m}
+                  aria-pressed={mode === m}
                   onClick={() => onMode(m)}
                   className={`flex-1 rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                     mode === m ? "bg-blue-950 text-white" : "text-slate-400 hover:bg-slate-50"
@@ -565,6 +566,7 @@ function BranchChip({
 }) {
   return (
     <button
+      aria-pressed={aktif}
       onClick={onClick}
       className={`shrink-0 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
         aktif

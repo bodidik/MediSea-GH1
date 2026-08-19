@@ -247,6 +247,7 @@ export default function StudyWorkspace() {
                 ).map(([f, label]) => (
                   <button
                     key={f}
+                    aria-pressed={filter === f}
                     onClick={() => setFilter(f)}
                     className={`rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                       filter === f ? "bg-blue-950 text-white" : "text-slate-400 hover:bg-slate-100"

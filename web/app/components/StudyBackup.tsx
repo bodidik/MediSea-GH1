@@ -166,6 +166,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
                 ).map(([m, l]) => (
                   <button
                     key={m}
+                    aria-pressed={mode === m}
                     onClick={() => setMode(m)}
                     className={`flex-1 rounded-md px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                       mode === m

@@ -30,6 +30,7 @@ export default function LangSwitch() {
     <div className="flex items-center gap-2 text-xs">
       <button
         type="button"
+        aria-current={lang === "tr" ? "true" : undefined}
         onClick={() => go("tr")}
         className={`px-2 py-1 rounded ${
           lang === "tr" ? "border font-semibold" : "border-transparent"
@@ -40,6 +41,7 @@ export default function LangSwitch() {
 
       <button
         type="button"
+        aria-current={lang === "en" ? "true" : undefined}
         onClick={() => go("en")}
         className={`px-2 py-1 rounded ${
           lang === "en" ? "border font-semibold" : "border-transparent"
