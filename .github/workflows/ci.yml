@@ -92,6 +92,24 @@ jobs:
         - name: İlgili Konular indeksi senkron mu
           run: node scripts/ilgili-index.cjs --kontrol
 
+        # Arayüz kaynağındaki, ÜÇ KAPIDAN DA GEÇEN kusurlar: bozuk kodlama
+        # (UTF-8 metnin CP1252 okunmuş hâli), alt niteliği olmayan görsel,
+        # rel verilmeden açılan yeni sekme, <form> içinde varsayılan submit
+        # olan düğme ve iç içe tıklanabilir öge.
+        #
+        # Hepsi geçerli TypeScript ve geçerli JSX olduğu için lint, typecheck
+        # ve build üçü de göremiyor; kusur yalnızca ekranda ya da ekran
+        # okuyucuda görünüyor. Üç yönetim sayfası bir dönem başlıklarını
+        # "BÃ¶lÃ¼m" diye basıyordu ve dördü de yeşildi.
+        #
+        # Denetim kendini sınayabiliyor: --negatif bilerek bozuk bir dosya
+        # bırakıp yakalandığını gösterir.
+        - name: Arayüz denetimi
+          run: node scripts/arayuz-denetim.cjs
+
+        - name: Arayüz denetimi kendini sınıyor mu
+          run: node scripts/arayuz-denetim.cjs --negatif
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
