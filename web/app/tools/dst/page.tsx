@@ -76,7 +76,7 @@ export default function DstPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Protokol</p>
           {PROTOCOLS.map((p, i) => (
-            <button key={p.id} type="button" onClick={() => { setProtoIdx(i); setValue(""); setBase(""); }}
+            <button aria-pressed={protoIdx === i} key={p.id} type="button" onClick={() => { setProtoIdx(i); setValue(""); setBase(""); }}
               className={`w-full text-left p-4 rounded-2xl border transition-all
                 ${protoIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
               <div className={`text-sm font-bold ${protoIdx === i ? 'text-white' : 'text-blue-950'}`}>{p.label}</div>

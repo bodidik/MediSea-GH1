@@ -91,6 +91,7 @@ const BOZUK_IZ = [0xc3, 0xc4, 0xc5].map((c) => String.fromCharCode(c));
 
 function denetle() {
   const kusur = [];
+  const rapor = [];   // kapı DEĞİL — insan kararı isteyen adaylar
   const dengesiz = [];
   const dosyalar = tsxDosyalari(KOK);
   let olculenEtiket = 0;
@@ -126,6 +127,26 @@ function denetle() {
       }
     }
 
+    // 6) seçili olduğunu yalnızca RENKLE anlatan denetim (RAPOR, kapı DEĞİL)
+    //
+    // Ölçüt: onClick taşıyan bir <button>/<Link>, className'inde bir üçlü ile
+    // biçim değiştiriyor ama hiçbir durum özniteliği yok. Ekran okuyucu
+    // kullanıcısı hangi şıkkı işaretlediğini göremez.
+    //
+    // Neden kapı DEĞİL: className'deki ilk üçlü her zaman seçim koşulu
+    // olmuyor. Ölçüldü — kaydet düğmesinin `status === 'saving'` biçimi,
+    // zaten `disabled` olan bir düğmenin görünürlük koşulu ve yalnızca renk
+    // veren bir onay düğmesi üçü de bu ölçüte takılıyor ve üçü de kusur
+    // değil. Aday üretir; kararı insan verir.
+    for (const ad of ['button', 'Link']) {
+      for (const t of etiketler(s, ad)) {
+        if (!/onClick\s*=/.test(t.etiket)) continue;
+        if (/aria-pressed|aria-current|aria-checked|aria-expanded|role\s*=\s*["'](radio|tab|switch)/.test(t.etiket)) continue;
+        if (!/className=\{`[^`]*\$\{[\s\S]{2,120}?\?[^?]/.test(t.etiket)) continue;
+        rapor.push({ tur: 'secim-durumu-yok', yol, satir: satirNo(t.idx), not: t.etiket.replace(/\s+/g, ' ').slice(0, 70) });
+      }
+    }
+
     // 4 + 5) yığın gerektiren denetimler
     if (!/<form\b/.test(s) && !/<button\b/.test(s)) continue;
     const olay = [];
@@ -158,13 +179,13 @@ function denetle() {
     if (yigin.length) dengesiz.push({ yol, kalan: yigin.join(',') });
   }
 
-  return { kusur, dengesiz, dosyaSayisi: dosyalar.length, olculenEtiket };
+  return { kusur, rapor, dengesiz, dosyaSayisi: dosyalar.length, olculenEtiket };
 }
 
 /* ── rapor ───────────────────────────────────────────────────────────── */
 
 function yaz(sonuc) {
-  const { kusur, dengesiz, dosyaSayisi, olculenEtiket } = sonuc;
+  const { kusur, rapor, dengesiz, dosyaSayisi, olculenEtiket } = sonuc;
   const gruplu = {};
   for (const k of kusur) (gruplu[k.tur] = gruplu[k.tur] || []).push(k);
 
@@ -181,6 +202,13 @@ function yaz(sonuc) {
     console.log(`\nUYARI — yığını dengesiz kalan dosya: ${dengesiz.length}`);
     console.log('  Bu dosyalarda iç içelik ölçümü GÜVENİLMEZ; "kusur yok" sonucuna dayanma.');
     for (const d of dengesiz) console.log(`  ${d.yol}  kalan: ${d.kalan}`);
+  }
+
+  if (rapor.length) {
+    console.log(`\nRAPOR (kapı değil) — seçili olduğunu yalnızca renkle anlatan denetim: ${rapor.length}`);
+    console.log('  Her biri kusur DEĞİL: className\'deki ilk üçlü bir biçim koşulu da olabilir.');
+    for (const r of rapor.slice(0, 20)) console.log(`  ${r.yol}:${r.satir}  ${r.not}`);
+    if (rapor.length > 20) console.log(`  … +${rapor.length - 20}`);
   }
 
   if (!kusur.length && !dengesiz.length) console.log('\nkusur yok.');

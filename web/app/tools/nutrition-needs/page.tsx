@@ -67,7 +67,7 @@ export default function NutritionNeedsPage() {
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Klinik Durum (Şablonlar)</span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {stressLevels.map((lvl) => (
-                <button
+                <button aria-pressed={stressFactor === lvl.kcal}
                   key={lvl.label}
                   onClick={() => { setStressFactor(lvl.kcal); setProteinFactor(lvl.pro); }}
                   className={`p-4 rounded-xl border-2 text-left transition-all ${stressFactor === lvl.kcal ? 'border-blue-900 bg-blue-50 text-blue-900' : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'}`}

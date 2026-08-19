@@ -117,7 +117,7 @@ export default function HitPage() {
               {crit.options.map(opt => {
                 const selected = selections[crit.id] === opt.pts;
                 return (
-                  <button key={opt.pts} type="button" onClick={() => select(crit.id, opt.pts)}
+                  <button aria-pressed={selected} key={opt.pts} type="button" onClick={() => select(crit.id, opt.pts)}
                     className={`w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-4
                       ${selected ? 'border-blue-900 bg-blue-900 shadow-md' : 'border-slate-100 bg-slate-50 hover:border-blue-200'}`}>
                     <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg font-black shrink-0 transition-all

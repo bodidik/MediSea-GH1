@@ -69,7 +69,7 @@ export default function RTSPage() {
       <p className="font-black text-blue-900 uppercase italic text-sm mb-3">{label}</p>
       <div className="space-y-1.5">
         {opts.map(opt => (
-          <button key={opt.coded} type="button"
+          <button aria-pressed={value === opt.coded} key={opt.coded} type="button"
             onClick={() => onChange(value === opt.coded ? -1 : opt.coded)}
             className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
               ${value === opt.coded ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

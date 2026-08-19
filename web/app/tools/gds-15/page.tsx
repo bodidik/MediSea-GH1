@@ -86,7 +86,7 @@ export default function GDS15Page() {
                   const active = sel[item.id] === opt;
                   const scores = active && opt === item.scored;
                   return (
-                    <button key={opt} type="button" onClick={() => toggle(item.id, opt)}
+                    <button aria-pressed={active} key={opt} type="button" onClick={() => toggle(item.id, opt)}
                       className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                         ${active ? scores ? "border-rose-500 bg-rose-700 text-white" : "border-blue-900 bg-blue-900 text-white"
                                  : "border-slate-200 bg-white text-slate-500 hover:border-blue-200"}`}>

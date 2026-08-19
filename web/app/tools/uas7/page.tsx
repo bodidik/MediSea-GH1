@@ -100,7 +100,7 @@ export default function UAS7Page() {
                       <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kabarıklık (Pomf)</p>
                       <div className="space-y-1">
                         {WHEAL_OPTS.map(opt => (
-                          <button key={opt.pts} type="button"
+                          <button aria-pressed={wheal[i] === opt.pts} key={opt.pts} type="button"
                             onClick={() => { const a = [...wheal]; a[i] = opt.pts; setWheal(a); }}
                             className={`w-full text-left flex items-center gap-2 px-3 py-2 rounded-xl border text-[10px] font-bold transition-all
                               ${wheal[i] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
@@ -115,7 +115,7 @@ export default function UAS7Page() {
                       <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kaşıntı Şiddeti</p>
                       <div className="space-y-1">
                         {ITCH_OPTS.map(opt => (
-                          <button key={opt.pts} type="button"
+                          <button aria-pressed={itch[i] === opt.pts} key={opt.pts} type="button"
                             onClick={() => { const a = [...itch]; a[i] = opt.pts; setItch(a); }}
                             className={`w-full text-left flex items-center gap-2 px-3 py-2 rounded-xl border text-[10px] font-bold transition-all
                               ${itch[i] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

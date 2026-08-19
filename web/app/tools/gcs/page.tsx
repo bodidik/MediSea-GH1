@@ -47,7 +47,7 @@ function OptionRow({
       <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">{title}</span>
       <div className="grid gap-2">
         {options.map((o) => (
-          <button
+          <button aria-pressed={selected === o.value}
             key={o.value}
             type="button"
             onClick={() => onSelect(o.value)}

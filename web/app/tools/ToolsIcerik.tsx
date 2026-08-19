@@ -405,6 +405,7 @@ export default function ToolsIcerik() {
         <div className="flex flex-wrap gap-2">
           <Link
             href="/tools"
+            aria-current={!seciliKategori ? "true" : undefined}
             onClick={() => setKategori(null)}
             className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all ${
               !seciliKategori
@@ -418,6 +419,7 @@ export default function ToolsIcerik() {
             <Link
               key={cat.slug}
               href={`/tools?kategori=${cat.slug}`}
+              aria-current={seciliKategori === cat.slug ? "true" : undefined}
               onClick={() => setKategori(cat.slug)}
               className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all flex items-center gap-1.5 ${
                 seciliKategori === cat.slug

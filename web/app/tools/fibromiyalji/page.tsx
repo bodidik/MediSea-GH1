@@ -83,7 +83,7 @@ export default function FibromiyaljiPage() {
           <p className="text-[10px] font-bold text-slate-400 mb-4">Son 1 haftada ağrı hissetttiğiniz bölgeleri seçin</p>
           <div className="flex flex-wrap gap-2">
             {WPI_AREAS.map(area => (
-              <button key={area} type="button" onClick={() => toggleWpi(area)}
+              <button aria-pressed={wpi.has(area)} key={area} type="button" onClick={() => toggleWpi(area)}
                 className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-wide transition-all
                   ${wpi.has(area) ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
                 {area}
@@ -122,7 +122,7 @@ export default function FibromiyaljiPage() {
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Genel Bedensel Semptomlar (son 6 ay)</p>
             <div className="flex flex-wrap gap-2">
               {SS_EXTRA.map(s => (
-                <button key={s} type="button" onClick={() => toggleExtra(s)}
+                <button aria-pressed={extra.has(s)} key={s} type="button" onClick={() => toggleExtra(s)}
                   className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-wide transition-all
                     ${extra.has(s) ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
                   {s}
