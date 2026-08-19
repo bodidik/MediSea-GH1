@@ -1115,6 +1115,35 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Tazeleme kipinin yalıtımı ölçüldü — takvime dokunmuyor
+
+"Baştan sona çalış" kipinin takvimi ve günlüğü DEĞİŞTİRMEMESİ bir kural
+olarak yazılıydı ama hiç sürülmemişti. Sürüldü.
+
+Oturmuş bir program tohumlandı (üç kart: 30/60/15 gün aralık, ease
+2.8/3.0/2.6, streak 4/6/3) ve tazeleme kipinde üçü de cevaplandı:
+
+| ölçüt | sonuç |
+|---|---|
+| `medisea:review:v1` | **bayt bayt aynı** — due, ease, interval, seen, streak hiçbiri oynamadı |
+| `medisea:log:v1` | değişmedi, yeni gün eklenmedi |
+
+**NEGATİF KONTROL şart, çünkü derecelendirme her yerde etkisiz olsaydı bu
+test de geçerdi.** Bir kartın vadesi geçmişe çekilip NORMAL kipte aynı
+derece verildi:
+
+| | önce | sonra |
+|---|---|---|
+| interval | 30 | **84** |
+| streak | 4 | **5** |
+| ease | 2.8 | 2.8 (Bildim'de değişmez) |
+| günlük | 2 gün | **3 gün** — yenisi eklendi, eskiler korundu |
+
+SM-2 matematiği de doğrulanabilir: 30 × 2.8 = 84, tam.
+
+İki ölçüm birlikte kuralın gerçek olduğunu gösteriyor: tazeleme kipi ölü
+bir kod yolu değil, bilerek yalıtılmış bir kip.
+
 ### Klavye kısayolları ölçüldü — altı satırın altısı da doğru
 
 Belgedeki üç satırlık `defaultPrevented` tablosu genişletilerek `/tekrar`
