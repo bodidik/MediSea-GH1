@@ -109,7 +109,7 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
       </div>
 
       {hata && (
-        <div style={{
+        <div role="alert" style={{
           marginTop: '0.9rem',
           border: '0.5px solid #f0c0c0',
           background: '#fff5f5',

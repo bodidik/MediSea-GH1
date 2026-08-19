@@ -618,9 +618,14 @@ export default function NotePanel() {
               </button>
             </header>
 
-            {/* Kaydetme başarısız — kullanıcı notu kaybetmeden kurtarabilsin */}
+            {/* Kaydetme başarısız — kullanıcı notu kaybetmeden kurtarabilsin.
+
+                role="alert": bu kutu kullanıcı YAZDIKTAN SONRA, kaydetme
+                düşünce DOM'a giriyor. Duyurulmazsa ekran okuyucu kullanıcısı
+                notunun kaybolacağını hiç öğrenmiyor — ReadingTools'taki
+                vurgu uyarısında ölçülen kusurun birebir kardeşi. */}
             {kayitHatasi && (
-              <div className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
+              <div role="alert" className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
                 <p className="mb-2 text-[11px] font-semibold leading-snug text-rose-700">
                   Tarayıcı depolaması dolu olduğu için bu not kaydedilemedi. Sekmeyi
                   kapatırsan kaybolur.
