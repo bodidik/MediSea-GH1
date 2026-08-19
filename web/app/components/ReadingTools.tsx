@@ -490,6 +490,11 @@ export default function ReadingTools() {
           {(editing || (pending?.hit.length ?? 0) > 0) && (
             <button
               onClick={clearHit}
+              /* Adı "✕"di — ölçüldü. Bu düğme yalnızca DÜZENLEME kipinde
+                 çıkıyor (var olan bir vurguya tıklanınca), o yüzden seçim
+                 çubuğunun ilk taramasında görünmemişti. `title` ad olmuyor:
+                 içerik boş değil. */
+              aria-label="Vurguyu kaldır"
               title="Vurguyu kaldır"
               className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-rose-500/30 active:scale-95`}
             >
