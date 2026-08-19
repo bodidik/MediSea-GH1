@@ -548,9 +548,18 @@ Bu hata sınıfları **kodda değil veride** durur; `lint`, `typecheck` ve
 ```bash
 node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönlendirmeleri bilir)
 node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
+node scripts/arayuz-denetim.cjs   # arayüz kaynağı: bozuk kodlama, alt, rel, form, iç içe tıklama
+node scripts/arayuz-denetim.cjs --negatif   # denetim hâlâ kusur yakalıyor mu
 node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
 node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DEĞİL)
 ```
+
+`arayuz-denetim` bu üçlüden farklı bir yeri tarıyor: içeriği değil ARAYÜZ
+KAYNAĞINI. Aradığı beş sınıf da geçerli TypeScript ve geçerli JSX, yani üç
+kapıdan da geçiyor; kusur yalnızca ekranda görünüyor. Kendini sınayabiliyor
+(`--negatif`) ve o da ayrı bir CI adımı — yakalamayı bırakan bir denetim
+sessizce yeşil kalmasın. Raporunda ölçülen etiket sayısı da var, çünkü
+"0 kusur" ile "0 öge" ekranda aynı görünür.
 
 `asili-denetim`, "Diğer Konular" kovasının NEDEN dolduğunu söyler. Ölçüldü:
 görünür 410 konunun **46'sı (%11)** hiyerarşiden düşüyor ve sebepleri üç
