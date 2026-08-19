@@ -1023,3 +1023,46 @@ Karar verirsen dokunulacak yerler ölçüldü, üç tane:
 
 `study-backup`, `study-sync` ve `StudyStatus` anahtarı önekle taradıkları
 için biçim değişikliğinden etkilenmiyor (ölçüldü).
+
+---
+
+## 26. Seçim düğmeleri durumlarını bildirmiyor — 60 araçta
+
+Klinik hesaplayıcılarda seçenekler `<button>` ile yapılıyor ve seçili olan
+YALNIZCA RENKLE anlatılıyor. Ölçüldü: kendi düğmesi olan 61 aracın
+**60'ında** `aria-pressed`, `aria-checked` ya da `role="radio"` yok. Ekran
+okuyucu kullanıcısı hangi seçeneği işaretlediğini bilemiyor — klinik ağırlık
+skorlarında bu, girdiyi gözden geçirememek demek.
+
+**`apache2` doğrulanmış örnek olarak düzeltildi** (86 seçim düğmesi) ve
+düzeltme beklenmedik bir şey ortaya çıkardı — bkz. aşağısı. Kalan araçlar
+duruyor.
+
+**Neden hepsini betikle düzeltmedim:** koşul biçimi tek düze değil. 68
+seçim düğmesi üç ayrı şekilde yazılmış:
+
+```
+=== var           31   örnek: abg  -> respAcidType === t
+opt. içeriyor     22   örnek: act  -> sel[item.id] === opt.pts
+düz ifade         15   örnek: 4t-hit -> selected
+```
+
+Körlemesine bir dönüşüm klinik dosyalarda yanlış koşula `aria-pressed`
+bağlayabilir. Doğrusu araç araç bakmak; kalıp `apache2`de görülebilir.
+
+### Düzeltmenin ortaya çıkardığı GERÇEK kusur
+
+`aria-pressed` eklenince APACHE II'de **iki düğme birden** seçili çıktı.
+Sebep: seçim, seçeneğin kimliğiyle değil **PUANIYLA** saklanıyordu
+(`Record<string, number>`) ve APACHE II skorları simetrik — ateşte
+"38.5–38.9" ve "34–35.9" ikisi de 1 puan. Kullanıcı birini seçince öteki de
+mavi yanıyordu.
+
+Skor doğruydu (puan aynı), ama girdisini gözden geçiren biri aynı
+parametrede iki çelişkili seçim görüyordu. Kimlikle saklamaya çevrildi;
+ölçüldü: 14 grubun her birinde tek seçim, ekrandaki skor 40 ve elle
+hesaplanan toplam da 40.
+
+**Aynı kusur öteki araçlarda da olabilir**: `=== opt.pts` ile karşılaştıran
+her araçta, iki seçenek aynı puanı taşıyorsa ikisi birden seçili görünür.
+Aramanın yolu: aynı grupta yinelenen puan değeri var mı.
