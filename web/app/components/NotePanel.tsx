@@ -612,6 +612,9 @@ export default function NotePanel() {
               <button
                 onClick={() => setOpen(false)}
                 className="rounded-full px-2 py-1 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700"
+                /* Adı "✕"di — ölçüldü. `title` ad OLMUYOR: hesaplama sırası
+                   içeriği önce alıyor ve içerik boş değil. */
+                aria-label="Not defterini kapat"
                 title="Kapat"
               >
                 ✕
@@ -667,6 +670,10 @@ export default function NotePanel() {
                 <button
                   key={m}
                   onClick={() => setMode(m)}
+                  /* Kip seçici: hangisinin ETKİN olduğu yalnızca renkle
+                     anlatılıyordu. `aria-pressed` doğru öznitelik --
+                     `aria-expanded` DEĞİL, çünkü bir şey açıp kapatmıyor. */
+                  aria-pressed={mode === m}
                   className={`flex-1 rounded-lg px-3 py-1.5 text-[11px] font-black uppercase tracking-widest transition-all ${
                     mode === m
                       ? "bg-blue-950 text-white shadow-sm"
@@ -683,6 +690,12 @@ export default function NotePanel() {
                   <button
                     key={w}
                     onClick={() => boyutSec(w)}
+                    /* Adları "S" / "M" / "L" idi; anlam `title`da kalıyordu
+                       ve `title` ad olmuyor (içerik dolu). `aria-pressed`
+                       de eklendi: hangi genişliğin ETKİN olduğu yalnızca
+                       renkle anlatılıyordu. */
+                    aria-label={`Panel genişliği: ${title}`}
+                    aria-pressed={Math.abs(width - w) < 30}
                     title={title}
                     className={`h-7 w-7 rounded-lg text-[10px] font-black transition-colors ${
                       Math.abs(width - w) < 30

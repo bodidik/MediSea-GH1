@@ -617,6 +617,19 @@ export default function ReadingTools() {
           <button
             ref={panelDugmeRef}
             onClick={() => setPanelOpen((v) => !v)}
+            /*
+              ADI "🖍1"DI — ölçüldü. `title="Vurgularım"` ad OLMUYOR, çünkü
+              hesaplama sırası İÇERİĞİ title'ın önüne koyuyor ve içerik boş
+              değil (emoji + sayaç). Ekran okuyucu düğmeyi "kalem bir" diye
+              okuyordu. `title` fare ipucu olarak kalıyor.
+
+              `aria-expanded`: bu düğme bir paneli açıp kapatıyor ve
+              ETİKETİ DURUMLA DEĞİŞMİYOR (hep "🖍<sayı>"). Etiketi değişen
+              düğmelerde (örn. "Aç"/"Kapat") durum zaten adda; burada
+              değil, o yüzden ayrıca bildirilmesi gerekiyor.
+            */
+            aria-label={`Vurgularım (${marks.length})`}
+            aria-expanded={panelOpen}
             className={`flex items-center gap-2 rounded-full px-4 py-2.5 text-white shadow-xl transition-all active:scale-95 ${
               kayitHatasi
                 ? "bg-rose-600 shadow-rose-600/25 hover:bg-rose-500"
