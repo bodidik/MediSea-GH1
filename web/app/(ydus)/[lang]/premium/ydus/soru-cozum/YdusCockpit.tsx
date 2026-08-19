@@ -142,8 +142,12 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                   <span className="font-medium text-[15px]">{' '}{kalinIsle(opt.text)}</span>
                 </div>
                 
-                {showResult && opt.id === currentStage.correctAnswer && <span className="absolute right-2.5 top-2.5 text-green-500 text-base">✓</span>}
-                {showResult && opt.id === selectedOption && opt.id !== currentStage.correctAnswer && <span className="absolute right-2.5 top-2.5 text-red-500 text-base">✖</span>}
+                {/* Glifler SÜSLEME: doğru/yanlış bilgisi hem harfte hem de
+                    role="status" bölgesinde ("Hatalı yaklaşım. Doğru cevap B.")
+                    zaten var. aria-hidden olmadan ada "✓"/"✖" ekleniyordu —
+                    ekran okuyucu bunu sembol adıyla okuyor, bilgi katmıyor. */}
+                {showResult && opt.id === currentStage.correctAnswer && <span aria-hidden="true" className="absolute right-2.5 top-2.5 text-green-500 text-base">✓</span>}
+                {showResult && opt.id === selectedOption && opt.id !== currentStage.correctAnswer && <span aria-hidden="true" className="absolute right-2.5 top-2.5 text-red-500 text-base">✖</span>}
               </button>
             ))}
           </div>

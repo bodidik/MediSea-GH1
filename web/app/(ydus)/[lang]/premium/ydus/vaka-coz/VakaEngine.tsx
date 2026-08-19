@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { kalinIsle } from '@/app/lib/metin';
+import { kalinIsle, duzMetin } from '@/app/lib/metin';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -170,6 +170,23 @@ function AdimKarti({
             key={harf}
             onClick={() => secenek(harf)}
             aria-disabled={cevapVerildi || undefined}
+            /*
+             * ADDA HARF KORUNUR — QuizEngine'de ölçülen kusurun birebir
+             * kardeşi. Cevaptan sonra harf dairesi ✓/✗ ile değişiyor ve harf
+             * erişilebilir addan düşüyordu; geri bildirim ise "Doğru cevap D."
+             * diyor, yani okuyan kullanıcıya artık hiçbir düğmenin
+             * duyurmadığı bir harf gösteriliyordu.
+             */
+            aria-label={
+              `${harf}: ${duzMetin(metin)}` +
+              (!cevapVerildi
+                ? ''
+                : harf === adim.dogru
+                  ? ' — doğru cevap'
+                  : harf === secim
+                    ? ' — senin seçimin, yanlış'
+                    : '')
+            }
             style={secenekStil(harf)}
           >
             <div style={harfDairesi(harf)}>
