@@ -1182,6 +1182,10 @@ sürüldü: 10 soru, 7'si bilerek doğru 3'ü bilerek yanlış cevaplandı.
 - **Cevap verdikten sonra şıklar `disabled` DEĞİL** ama motor mantıksal
   olarak koruyor — başka şıkka tıklamak kaydı değiştirmiyor. `disabled`
   yokluğuna bakıp kusur raporlama; davranışı ölç.
+
+  Aynı koruma **VakaEngine'de de var** — ayrıca ölçüldü: yanlış cevaptan
+  sonra başka şıkka tıklamak kaydı değiştirmiyor, ekran aynı kalıyor
+  (`✗` seçilende, `✓` doğruda). İki motor bu konuda tutarlı.
 - **Son sorunun düğmesi "Sonuç*u* gör".** `/Sonuç/` deseni tutmuyor
   (ç ≠ c). Yine desen tahmini yerine ekrandaki gerçek metni oku.
 
