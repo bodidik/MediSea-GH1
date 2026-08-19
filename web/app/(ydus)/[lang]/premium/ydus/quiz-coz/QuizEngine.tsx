@@ -215,6 +215,27 @@ function SoruKarti({
                * hem de "kullanılamıyor" bilgisini alır.
                */
               aria-disabled={cevapVerildi || undefined}
+              /*
+               * ADDA HARF KORUNUR — cevaptan sonra harf dairesi ✓/✗ ile
+               * DEĞİŞİYOR ve harf erişilebilir addan tümden düşüyordu.
+               * Ölçüldü: cevaptan sonra düğmenin adı "✗Cushing Hastalığı…"
+               * oluyor. Geri bildirim ise "Doğru cevap D." diyor — yani
+               * ekran okuyucu kullanıcısına artık hiçbir düğmenin
+               * duyurmadığı bir harf gösteriliyor.
+               *
+               * Glif görselde kalıyor (bakan için en hızlı işaret) ama ada
+               * girmiyor; durum yazıyla veriliyor.
+               */
+              aria-label={
+                `${harf}: ${duzMetin(metin)}` +
+                (!cevapVerildi
+                  ? ''
+                  : harf === soru.dogru
+                    ? ' — doğru cevap'
+                    : harf === secim
+                      ? ' — senin seçimin, yanlış'
+                      : '')
+              }
               style={secenekStil(harf)}
             >
               <div style={harfDairesi(harf)}>
