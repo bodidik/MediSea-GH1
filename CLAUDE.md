@@ -1043,6 +1043,29 @@ değil" kontrolünü koy**: hepsi sabit `true` basan bozuk bir yerleştirme,
 yalnızca tıklama sonrası bakan bir ölçümde temiz görünür.
 
 
+### Toplu süpürmede DOSYA düzeyinde eleme, aynı dosyadaki boşluğu gizler
+
+"Bu dosyada zaten `aria-pressed` var, atla" biçimindeki eleme hızlıdır ve
+yanlıştır: bir dosyada bir grup düzeltilmiş, ötekiler açık olabilir.
+Ölçüldü — `gout-acr` alan şıklarını almıştı, giriş ölçütü düğmeleri (iki
+ayrı grup) süpürmenin dışında kaldı. Eleme **öge düzeyinde** yapılmalı:
+her düğmeye tek tek bak, dosyaya değil.
+
+Bu, belgedeki "bir kusuru düzeltirken aynı sayfadaki öteki blokların da
+aynı kaynağa bağlandığını doğrula" kuralının tarama tarafındaki hâli.
+Süpürme bittikten sonra ölçütü **elemesiz** bir kez daha çalıştır; kalan
+sayı sıfır değilse boşluk oradadır.
+
+İkinci ders: `className`'deki ilk üçlüyü seçim koşulu saymak araçlarda
+çalışıyor ama genel ağaçta üç kez YANLIŞ çıktı — kaydet düğmesinin
+`status === 'saving'` biçimi, zaten `disabled` olan bir düğmenin
+görünürlük koşulu ve yalnızca RENK veren bir onay düğmesi. Kestirme,
+aday üretmek için iyi; uygulamadan önce elle gözden geçir.
+
+Üçüncüsü: geçiş (`aria-pressed`) ile gezinme (`aria-current`) ayrı.
+`LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
+"şu an bulunulan" doğru olanı.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
