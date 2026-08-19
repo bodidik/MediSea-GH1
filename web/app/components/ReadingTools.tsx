@@ -552,8 +552,21 @@ export default function ReadingTools() {
               cümle düzeyinde (8+ karakter) vurgular kart olur.
             </div>
           )}
+          {/*
+            role="alert": vurgu kaydedilemediğinde bu kutu KOŞULLU olarak
+            DOM'a giriyor ve `alert` tam bu duruma göre çalışıyor — sonradan
+            eklendiğinde duyuruluyor (`status` böyle değil, bölgenin önceden
+            var olması gerekir).
+
+            Ölçüldü: depo doldurulup gerçek bir vurgu denendi. Kayıt
+            oluşmuyor, ekranda uyarı çıkıyor ve kurtarma bağlantısı var —
+            ama kutuda `role` ve `aria-live` YOKTU, yani ekran okuyucu
+            kullanıcısı çalışmasının kaybolacağını HİÇ duymuyordu. Sessiz
+            başarısızlığın en kötü hâli: görsel kullanıcı uyarılıyor, öteki
+            uyarılmıyor.
+          */}
           {kayitHatasi && (
-            <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
+            <div role="alert" className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
               <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
               depolaması dolu — yenilediğinde kaybolurlar.{" "}
               <Link href="/calisma-alanim" className="font-bold underline">
