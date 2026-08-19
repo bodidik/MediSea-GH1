@@ -1457,6 +1457,46 @@ hedef BODY,   koruma var  -> defaultPrevented true   (kısayol hâlâ çalışı
 Üçüncü satır olmadan düzeltme doğrulanmış sayılmaz — koruma kısayolu tümden
 öldürmüş de olabilir.
 
+### Erişilebilir ad: ölçülen beş kusur biçimi
+
+`title` bir dönem "ad var" sanılıyordu. Değil — hesaplama sırası içeriği
+`title`ın ÖNÜNE koyuyor ve içerik boş değilse `title` hiç devreye girmiyor.
+Beş ayrı biçimde ölçüldü:
+
+| biçim | örnek | adı neydi |
+|---|---|---|
+| glif içerik + `title` | `<button title="Kaldır">✕</button>` | **"✕"** |
+| emoji + sayaç | vurgu paneli düğmesi | **"🖍1"** |
+| aynı `title`, çok düğme | dört renk düğmesi | dördü de **"Renk"** |
+| tek harf içerik | panel genişliği S · M · L | **"S"** |
+| glif HARFİN YERİNE geçiyor | quiz/vaka şıkları, cevaptan sonra | harf addan DÜŞÜYOR |
+
+Sonuncusu en sinsisi: geri bildirim "Doğru cevap D." diyor ama D düğmesi
+artık harfini duyurmuyor, çünkü daire `✓` ile değişmiş. Görsel kullanıcı
+için sorun yok, okuyan için bağ kopuyor.
+
+**Çare iki türlü, hangisi mümkünse:**
+- Glif AYRI bir ögedeyse `aria-hidden="true"` yeter (kokpit böyle).
+- Glif içeriği DOĞRUDAN değiştiriyorsa `aria-label` ile adı baştan kur
+  (quiz ve vaka böyle) — harfi koru, durumu YAZIYLA ekle:
+  `"D: … — doğru cevap"`, `"A: … — senin seçimin, yanlış"`. Dokunulmayan
+  şıkka ek koyma, gürültü olur.
+
+**Kaynakta ad aramak GÜVENİLMEZ.** Bir tarama `<button>` içeriğini
+düzleştirip 22 aday buldu; çoğu sahteydi, çünkü `{...}` JSX ifadeleri
+silinince etiketi değişkenden gelen düğmeler "içeriği boş" görünüyor.
+Tarayıcıda hesaplatmak tek güvenilir yol.
+
+**`textContent` `aria-hidden`'ı DİKKATE ALMAZ.** `aria-hidden` eklendikten
+sonra `textContent` hâlâ glifi gösteriyor ve "düzeltme çalışmadı" sanılıyor.
+Doğru ölçüm: ögeyi klonla, `[aria-hidden="true"]` alt ağaçlarını çıkar,
+sonra metni oku.
+
+**Koşullu denetimler ilk taramada GÖRÜNMEZ.** Seçim çubuğunun dokuzuncu
+düğmesi (vurgu kaldır) yalnızca VAR OLAN bir vurguya tıklanınca çıkıyor;
+taze seçimde yok. O durumu kurmak için `mark.click()` yetmedi,
+`pointerdown → mousedown → pointerup → mouseup → click` dizisi gerekti.
+
 ### Bir ögeyi SİLEN her denetim odağı bir yere BIRAKMALI
 
 Üç ayrı yüzeyde aynı kusur ölçüldü: silinen düğme DOM'dan kalkınca odak
