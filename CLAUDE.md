@@ -978,6 +978,41 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Seçim durumunu PUANLA saklama — aynı puanlı şıklar tek düğme olur
+
+Hesaplayıcıların ortak kalıbı: `useState<number|null>` ve
+`aria-pressed={secim === opt.pts}`. Şıkların puanları benzersizken
+çalışıyor, aynı puanı taşıyan iki şık olduğu anda bozuluyor — ikisi de
+aynı değere eşit olduğu için **birlikte** yanıp birlikte sönüyorlar.
+
+Çoklu seçimde bu bir SKOR kusuruna dönüşüyor. Ölçüldü (`gout-acr`,
+"Atak Karakteristikleri", üç bulgunun üçü de +1): birinciyi seçince dizi
+`[1]`, ikinciye basınca `prev.includes(1)` doğru olduğu için ilkini
+KALDIRIYOR. Yani üçünden yalnızca biri işaretlenebiliyordu ve ACR/EULAR
+ölçütünde 0-3 puan vermesi gereken alan 0 ya da 1'de kalıyordu — 8 puanlık
+sınıflama eşiğini doğrudan etkiliyor.
+
+Tek seçimde skor doğru çıkıyor ama arayüz yalan söylüyor: `apache2`
+kronik sağlıkta iki ayrı klinik kategori de 2 puan, ikisi birden
+vurgulanıyordu. Skoru doğru olduğu için ölçüm "temiz" der; kusuru gören
+şey `aria-pressed` eklemek oldu.
+
+Çare: seçimi **kimlikle** sakla — şık nesnesi (`{pts,label}`) ya da şık
+sırası. `key={opt.pts}` de aynı sebeple çakışır, o da kimliğe çevrilmeli.
+
+Tarama ölçütü iki koşulu birden ister: dosyada puanla karşılaştırma
+(`=== opt.pts`, `includes(opt.pts)`) VE aynı dizi içinde tekrar eden
+puan. Tek başına ilki 114 aracın çoğunu işaretler, ikincisi zararsız
+dizileri de getirir. 114 araç tarandı; ikisini birden taşıyan yalnızca
+`apache2` ve `gout-acr` çıktı (`ipss-r` geniş taramada yanlış
+pozitifti — puanları benzersiz).
+
+Doğrularken negatif kontrol şart: **tek seçimli gruplar hâlâ dışlayıcı
+mı** ve **eksi puanlı şık** doğru hesaplanıyor mu? İndekse geçiş
+`vals[0] ?? 0` gibi ifadeleri sessizce bozabilir — 0 indeksi geçerli bir
+seçimdir, `??` ona düşmez ama `||` düşerdi.
+
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
