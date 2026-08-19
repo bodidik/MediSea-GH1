@@ -83,6 +83,15 @@ jobs:
         - name: Başlık indeksi senkron mu
           run: node scripts/baslik-index.cjs --kontrol
 
+        # İlgili Konular indeksi (content/ilgili-index.json) üçüncü elle
+        # üretilen dosya. Bayatlarsa konu sayfasındaki "İlgili Konular"
+        # bloğu yeniden adlandırılmış ya da kaldırılmış bir hedefe bağlanır.
+        #
+        # Bunu link-denetim GÖRMÜYOR: o yalnızca content/canonical ve
+        # content/premium ağaçlarını geziyor, bu dosya content kökünde.
+        - name: İlgili Konular indeksi senkron mu
+          run: node scripts/ilgili-index.cjs --kontrol
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
