@@ -2,7 +2,6 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 const BMI_OPTS = [
   { v: 0, label: "> 20 kg/m²", sub: "Normal/Obez" },

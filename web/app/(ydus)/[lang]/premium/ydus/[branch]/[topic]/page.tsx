@@ -3,7 +3,6 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import SoruSor from './SoruSor';
-import { checkTopicAccess } from '@/lib/access';
 import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { type IcerikBlok } from './IcerikBloklari';

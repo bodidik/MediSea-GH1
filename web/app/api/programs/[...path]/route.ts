@@ -1,5 +1,4 @@
 // FILE: web/app/api/programs/[...path]/route.ts
-import { backendBase } from "@/lib/backend";
 import type { NextRequest } from "next/server";
 
 const BACKEND =

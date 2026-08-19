@@ -2,7 +2,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useUser } from '@/app/(ydus)/context/UserContext';
 
 // --- TİP TANIMLAMALARI (Hematopoez.json yapısına uyumlu) ---
 type Section = { heading?: string; text: string };
