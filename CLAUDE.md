@@ -1066,6 +1066,33 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Bozuk kodlama (mojibake) kaynakta sessizce duruyor
+
+Metin UTF-8 yazılıp CP1252 diye okunduğunda `ş` → `ÅŸ`, `ü` → `Ã¼` olur ve
+öyle KAYDEDİLİR. Derleme geçer, lint geçer, tip denetimi geçer — kusur
+yalnızca ekranda görünür. Ölçüldü: 1108 dosyanın 6'sında 129 satır;
+üç yönetim sayfası başlıklarını, tablo sütunlarını ve düğmelerini bozuk
+basıyordu.
+
+Taraması ucuz: satırda `Ã`, `Ä` ya da `Å` geçiyor mu. Türkçe metinde bu üç
+karakter tek başına neredeyse hiç kullanılmaz, yani yanlış pozitif düşük.
+
+**Onarımı dosya bütününde YAPMA.** Önce hiçbir satırda doğru Türkçe ile
+bozuk metnin bir arada olmadığını ölç; aynı satırda ikisi varsa toptan
+çevirme doğru karakterleri bozar. Dönüşüm CP1252 ters haritasıyla yapılır
+(0x80-0x9F aralığı Latin-1'den FARKLI — `â€™` dizisi tam olarak bunun
+işareti) ve çevrilemeyen bir karakter görülürse o satıra dokunulmaz.
+
+Bu turda yan bulgu: `app/lib/i18n.ts`'in ilk satırı dosyanın kendi mutlak
+yolunu taşıyan kazara yapışmış bir dizeydi ve BOM ile birlikte
+`"use client"` yönergesinin ÖNÜNDE duruyordu. Bir dosyanın ilk baytlarına
+bakmak (BOM `ef bb bf`) beklenmedik şeyler gösteriyor.
+
+Doğrulaması: yüzey kapının arkasındaysa tarayıcı yönlendirir; o zaman ölçüm
+**derleme çıktısında** yapılır — üretilen HTML doğru metni içeriyor mu ve
+çıktının tamamında bozuk dizelerden biri kalmış mı. Aynı taramayla
+geliştirici yolunun paketlere sızıp sızmadığına da bakılabilir.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
