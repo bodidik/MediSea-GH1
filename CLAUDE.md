@@ -1457,6 +1457,37 @@ hedef BODY,   koruma var  -> defaultPrevented true   (kısayol hâlâ çalışı
 Üçüncü satır olmadan düzeltme doğrulanmış sayılmaz — koruma kısayolu tümden
 öldürmüş de olabilir.
 
+### Bir ögeyi SİLEN her denetim odağı bir yere BIRAKMALI
+
+Üç ayrı yüzeyde aynı kusur ölçüldü: silinen düğme DOM'dan kalkınca odak
+`<body>`ye düşüyor ve klavyeyle gezen kullanıcı yerini tamamen kaybediyor.
+
+| yüzey | eylem | yeni hedef |
+|---|---|---|
+| Çalışma Alanım | kayıt sil | kalan ilk "Sil" düğmesi; kayıt bitmişse listenin sarmalayıcısı |
+| Vurgu paneli | vurgu kaldır | kalan ilk kaldırma düğmesi |
+| Yedekten yükle | üzerine yaz | `role="status"` durum mesajının kendisi |
+
+**`requestAnimationFrame` ile odaklama ÇALIŞMIYOR — ölçüldü.** Kare
+React'in commit'inden önce gelebiliyor; o anda eski düğme hâlâ DOM'da,
+yenisi henüz yok. Doğrusu bir bayrağı DURUMA koyup listeyi besleyen
+duruma bağlı bir etkide odaklamak.
+
+**Ref'i listeye koyma, HER İKİ DALDA duran sarmalayıcıya koy.** Son kayıt
+silindiğinde liste tümden kalkıp boş durum geliyor ve liste ref'i `null`
+oluyor — ölçüldü, odak yine `<body>`ye düştü.
+
+**Bileşenin tamamı unmount oluyorsa yapılacak bir şey yok.** Vurgu
+panelinde son vurgu kaldırıldığında `ReadingTools` tümden kalkıyor, panel
+açma düğmesi bile kalmıyor. Sayfadaki başka bir ögeye atlamak bir TASARIM
+kararı; bileşenin yetkisi dışında ve öyle bırakıldı.
+
+**Aynı listede tekrarlanan denetimin ADI ayırt edici olmalı.** Üç kayıtta
+üç düğmenin de adı "Sil"di; düğmeler arasında gezen kullanıcı hangisini
+sildiğini bilemiyordu. `title` ad OLMAZ (içerik doluyken hesaba girmiyor).
+Çare `aria-label` içine ögenin kimliğini koymak: "Akut Miyeloid Lösemi
+(AML) sayfasındaki her şeyi sil", "Vurguyu kaldır: <ilk 40 karakter>".
+
 ### Panel/çekmece açan her yüzey üç şeyi sağlamak zorunda
 
 Not defteri bir dönem üçünü de sağlamıyordu; ekranı kaplayan bir çekmece
