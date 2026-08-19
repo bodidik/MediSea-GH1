@@ -1482,6 +1482,18 @@ için sorun yok, okuyan için bağ kopuyor.
   `"D: … — doğru cevap"`, `"A: … — senin seçimin, yanlış"`. Dokunulmayan
   şıkka ek koyma, gürültü olur.
 
+**Örneklem TEMSİLİ mi — önce SAY, sonra seç.** Araç sayfalarında ad
+taraması üç araçla başladı, üçünde de yalnızca iki düğme çıktı ("Geri",
+"ARACI PAYLAŞ") ve "bütün araçlar aynı kabuğu kullanıyor, biri hepsidir"
+sonucuna varılacaktı. Kaynakta sayınca tersi göründü: **114 aracın 61'inin
+kendi düğmesi var**, `sodium`da 5, `apache2`de 88. Örneklem tesadüfen
+düğmesiz üçünü seçmişti.
+
+Düğmesi en çok olan dört araç ölçüldü — 134 düğme, **sıfır sorunlu ad**.
+Şıklar görünür metin taşıyor (skor değeri, vücut bölgesi, evet/hayır), yani
+sınıf araç sayfalarında yok. Ama bu sonuç, örneklem doğru seçildiği için
+güvenilir; ilk üçle kalınsaydı aynı sonuç YANLIŞ gerekçeye dayanacaktı.
+
 **Kaynakta ad aramak GÜVENİLMEZ.** Bir tarama `<button>` içeriğini
 düzleştirip 22 aday buldu; çoğu sahteydi, çünkü `{...}` JSX ifadeleri
 silinince etiketi değişkenden gelen düğmeler "içeriği boş" görünüyor.
