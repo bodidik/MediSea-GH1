@@ -1115,6 +1115,30 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Çalışma döngüsü uçtan uca sürüldü — dördü de çalışıyor
+
+Belgedeki döngü **oku → vurgula → tekrar et → kaynağa dön**. Parçaları ayrı
+ayrı ölçülmüştü ama zincir hiç baştan sona sürülmemişti. Sürüldü:
+
+| adım | ölçüm |
+|---|---|
+| vurgula | seçim araç çubuğunu açıyor, sekiz düğmenin sekizi de etiketli |
+| kaydet | `medisea:marks:v2:<yol>` yazılıyor: ofset 45–85 (seçilen 40 karakter), stil `y`, metin; başlık dizini de güncelleniyor |
+| yeniden boya | sayfa yenilendikten sonra `<mark>` geri geliyor ve metni kayıttakiyle BİREBİR aynı |
+| tekrar | `/tekrar`ta boşluklu kart oluyor, "Göster" ile vurgulanan metin çıkıyor, dört derecelendirme düğmesi çalışıyor |
+| kaynağa dön | kartın içinde `/topics/<branş>/<konu>` bağlantısı var, konu başlığıyla etiketli |
+
+**Ölçüm tuzağı — degrade yine yanılttı.** Vurgunun `backgroundColor`ı
+`rgba(0,0,0,0)` çıkıyor ve ilk bakışta "vurgu görünmüyor" sanılıyor.
+Gerçekte boyama `background-image: linear-gradient(transparent 55%,
+rgba(250,204,21,0.55) 55%)` ile yapılıyor — fosforlu kalem etkisi, yalnızca
+alt %45 sarı. Kontrast bölümündeki "degradeyi göremeyen ölçüm" uyarısı
+burada da geçerli: `mark` ögesini `backgroundColor` ile yoklama.
+
+Seçimi programla kurmanın yolu: `document.createRange()` + `setStart/setEnd`
+bir METİN düğümünde, sonra `getSelection().addRange()` ve
+`selectionchange` olayını elle tetikle.
+
 ### Flashcard oynatıcısı ölçüldü — sınıf temiz
 
 Kapının arkasında olduğu için geçici bir tanı rotasıyla (`force-dynamic`,
