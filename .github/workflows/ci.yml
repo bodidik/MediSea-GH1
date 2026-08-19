@@ -70,6 +70,19 @@ jobs:
         - name: Araç indeksi senkron mu
           run: node scripts/arac-metadata.cjs --kontrol
 
+        # Başlık indeksi (content/baslik-index.json) da ELLE üretiliyor ve
+        # üreteci CI'da çalışmıyordu — araç indeksiyle birebir aynı boşluk.
+        # Bayatlarsa paylaşım kartı başlığı slug'dan türetilir: "Akut Böbrek
+        # Hasarı" yerine "akut-bobrek-hasari" basılır. Sayfa bozulmaz ama
+        # paylaşılan her bağlantı daha kötü görünür.
+        #
+        # Bu adım HİÇBİR ŞEY YAZMAZ; indeksi bellekte yeniden hesaplayıp
+        # karşılaştırır ve eksik/fazla/değişmiş başlıkları tek tek yazar.
+        # Düşerse çare tek satır:
+        #   node scripts/baslik-index.cjs
+        - name: Başlık indeksi senkron mu
+          run: node scripts/baslik-index.cjs --kontrol
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
