@@ -1013,6 +1013,36 @@ mı** ve **eksi puanlı şık** doğru hesaplanıyor mu? İndekse geçiş
 seçimdir, `??` ona düşmez ama `||` düşerdi.
 
 
+### `<button …>` etiketini regex'le almak SIFIR sonuç verir
+
+`/<button[sS]*?>/` etiketi `=>` okundaki `>` işaretinde kapatıyor —
+`onClick={() => setX()}` taşıyan her düğme yarıda kesiliyor ve içindeki
+`className`/`aria-*` hiç görünmüyor. Bu tarama iki kez üst üste **sıfır
+aday** döndürdü ve ilk bakışta "kusur yok" gibi okundu; gerçekte 61 düğme
+kusurluydu.
+
+Doğrusu süslü parantez derinliği izleyip `>` işaretini yalnızca derinlik
+0'da ve önündeki karakter `=` DEĞİLKEN kapanış saymak. Genel ders şu:
+**sıfır sonuç bir bulgu değil, ölçütün sınanması gereken bir durumdur.**
+CLAUDE.md'deki "boş sonucu meşru sayma" kuralının tarama tarafındaki hâli.
+
+Toplu bir `aria-*` yerleştirmesini doğrulamanın iki ucuz yolu var, ikisi
+de bu turda gerçek koruma sağladı:
+
+- **Koşul gerçekten seçim koşulu mu?** `className`'deki ilk üçlü alınıyor
+  ama bu bir biçim üçlüsü de olabilir. Koşuldaki tanımlayıcılardan birinin
+  `onClick` içinde de geçmesini ara. Sekiz araç işaret aldı; sekizi de
+  yerel takma ad kullanıyordu (`const active = sel[item.id] === opt.pts`)
+  ve doğruydu — yani denetim yanlış pozitif verdi ama hiçbirini kaçırmadı.
+- **`tsc` bedava bir kapı.** `aria-pressed` boolean istiyor; sayısal ya da
+  truthy bir koşula bağlanan her düğme tip denetiminde düşer.
+
+Tarayıcı doğrulaması kalıp başına bir kez yeter (tek seçim · çoklu seçim ·
+varsayılanı olan mod düğmesi), ama **ölçüme "başlangıçta hiçbiri basılı
+değil" kontrolünü koy**: hepsi sabit `true` basan bozuk bir yerleştirme,
+yalnızca tıklama sonrası bakan bir ölçümde temiz görünür.
+
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan

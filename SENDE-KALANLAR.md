@@ -1026,7 +1026,14 @@ için biçim değişikliğinden etkilenmiyor (ölçüldü).
 
 ---
 
-## 26. Seçim düğmeleri durumlarını bildirmiyor — 60 araçta
+## 26. Seçim düğmeleri durumlarını bildirmiyordu — 49 araçta · KAPANDI
+
+> **KAPANDI (f720db1).** 49 araca 60 `aria-pressed` eklendi; `uas7` seçim
+> değil açılır panel olduğu için `aria-expanded` aldı. Aşağıdaki "neden
+> betikle düzeltmedim" gerekçesi iki denetimle karşılandı: koşulun onClick
+> ile ortak tanımlayıcı taşıması (sekiz araç işaret aldı, sekizi de yerel
+> takma adlıydı ve doğruydu) ve `tsc` — `aria-pressed` boolean istiyor.
+> Tarayıcıda üç kalıp da sürüldü. Kayıt olarak duruyor.
 
 Klinik hesaplayıcılarda seçenekler `<button>` ile yapılıyor ve seçili olan
 YALNIZCA RENKLE anlatılıyor. Ölçüldü: kendi düğmesi olan 61 aracın
