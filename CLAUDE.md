@@ -1115,6 +1115,29 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Tekrar takvimi ölçüldü — sınıf temiz
+
+`/tekrar` motorunun kart üretimi ve kontrastı ayrı ayrı ölçülmüştü ama
+ZAMANLAMA hiç sürülmemişti. Üç vurgu gerçek konu metninden kesilip
+tohumlandı, sayfa açıldı ve üç kart üç ayrı dereceyle cevaplandı. Takvim
+matematiği düğmelerin vaadiyle BİREBİR tutuyor:
+
+| derece | aralık | ölçülen vade farkı | ease | streak |
+|---|---|---|---|---|
+| Bildim | 1 gün | tam 86.400.000 ms | 2.5 (değişmedi) | 1 |
+| Kolay | 3 gün | tam 259.200.000 ms | 2.5 → 2.65 | 1 |
+| Bilemedim | — | tam 600.000 ms (10 dk) | 2.5 → 2.30 | 0 |
+
+Günlük de doğru: `kart` 1→2→3 sayarken `dogru` 1→2→2'de kaldı, yani
+başarısız kart doğru sayılmıyor.
+
+**Ölçüm tuzağı:** düğmeye tıklayıp AYNI karede DOM okumak eski durumu
+verir — React henüz yeniden çizmemiş oluyor. Her tıklamadan sonra ~600 ms
+beklemek gerekiyor. İlk denemede "tıklama işe yaramadı" sanıldı.
+
+Tohum bitince `medisea:*` anahtarlarının hepsi silinmeli; ölçüm verisi
+kullanıcının deposunda kalmamalı.
+
 ### QuizEngine çalışma akışı ölçüldü — sınıf temiz
 
 Motorların hata kartları, kontrastı ve klavye erişimi ayrı ayrı ölçülmüştü
