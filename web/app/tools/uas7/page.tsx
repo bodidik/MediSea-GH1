@@ -79,7 +79,8 @@ export default function UAS7Page() {
             const dayScore = done ? (wheal[i]! + itch[i]!) : null;
             return (
               <div key={i} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-                <button type="button" onClick={() => setExpanded(expanded === i ? -1 : i)}
+                <button type="button" aria-expanded={expanded === i}
+                  onClick={() => setExpanded(expanded === i ? -1 : i)}
                   className="w-full flex items-center justify-between p-4 text-left">
                   <div className="flex items-center gap-3">
                     <div className={`w-8 h-8 rounded-xl flex items-center justify-center text-[10px] font-black

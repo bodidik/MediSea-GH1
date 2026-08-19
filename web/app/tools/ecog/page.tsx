@@ -64,7 +64,7 @@ export default function EcogPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
           <div className="grid gap-2">
             {GRADES.map((g) => (
-              <button
+              <button aria-pressed={selected === g.value}
                 key={g.value}
                 type="button"
                 onClick={() => setSelected(g.value)}

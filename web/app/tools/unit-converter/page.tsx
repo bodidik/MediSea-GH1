@@ -73,7 +73,7 @@ export default function UnitConverterPage() {
         {/* BİRİM SEÇİMİ (NAVİGASYON) */}
         <div className="flex flex-wrap gap-3">
           {UNITS.map((u) => (
-            <button
+            <button aria-pressed={selectedUnit === u.key}
               key={u.key}
               onClick={() => setSelectedUnit(u.key)}
               className={`px-6 py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all border-2

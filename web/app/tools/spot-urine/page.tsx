@@ -190,7 +190,7 @@ export default function SpotUrinePage() {
         {/* Sekmeler */}
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {TABS.map(t => (
-            <button key={t.id} type="button" onClick={() => setTab(t.id)}
+            <button aria-pressed={tab === t.id} key={t.id} type="button" onClick={() => setTab(t.id)}
               className={`p-3 rounded-2xl border transition-all text-center
                 ${tab === t.id ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}`}>
               <div className="text-xl mb-1">{t.icon}</div>

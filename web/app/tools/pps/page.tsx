@@ -50,7 +50,7 @@ export default function PpsPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
           <div className="grid gap-2">
             {PPS_TABLE.map(g => (
-              <button key={g.pps} type="button" onClick={() => setSelected(g.pps)}
+              <button aria-pressed={selected === g.pps} key={g.pps} type="button" onClick={() => setSelected(g.pps)}
                 className={`text-left flex items-center gap-4 p-3 rounded-2xl border transition-all
                   ${selected === g.pps ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm shrink-0

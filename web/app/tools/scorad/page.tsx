@@ -87,7 +87,7 @@ export default function SCORADPage() {
           <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Atopik dermatit lezyonlarının vücut yüzeyine oranı (kural-9 veya genel tahmini)</p>
           <div className="space-y-1.5">
             {AREA_OPTS.map(opt => (
-              <button key={opt.pts} type="button"
+              <button aria-pressed={area === opt.pts} key={opt.pts} type="button"
                 onClick={() => setArea(a => a === opt.pts ? null : opt.pts)}
                 className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
                   ${area === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
@@ -109,7 +109,7 @@ export default function SCORADPage() {
                 <p className="text-[10px] font-black text-blue-900 mb-1">{item.label} <span className="text-slate-400 font-bold normal-case">— {item.detail}</span></p>
                 <div className="flex gap-1.5">
                   {INT_OPTS.map(opt => (
-                    <button key={opt.pts} type="button"
+                    <button aria-pressed={intSel[item.id] === opt.pts} key={opt.pts} type="button"
                       onClick={() => setIntSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                       className={`flex-1 py-2 rounded-xl border-2 text-[9px] font-black transition-all
                         ${intSel[item.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
@@ -135,7 +135,7 @@ export default function SCORADPage() {
               <p className="text-[10px] font-black text-blue-900 mb-2">{label}</p>
               <div className="flex gap-1 flex-wrap">
                 {Array.from({ length: 11 }, (_, v) => (
-                  <button key={v} type="button" onClick={() => set(s => s === v ? null : v)}
+                  <button aria-pressed={val === v} key={v} type="button" onClick={() => set(s => s === v ? null : v)}
                     className={`w-8 h-8 rounded-xl border-2 text-[10px] font-black transition-all
                       ${val === v ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-300"}`}>
                     {v}

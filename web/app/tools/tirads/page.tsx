@@ -186,7 +186,7 @@ export default function TiradsPage() {
                   ? ((answers[cat.id] as number[] | undefined) ?? []).includes(opt.v)
                   : answers[cat.id] === opt.v;
                 return (
-                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
+                  <button aria-pressed={isSelected} key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
                     className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between gap-3
                       ${isSelected ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                     <span className={`text-sm font-bold leading-snug ${isSelected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</span>

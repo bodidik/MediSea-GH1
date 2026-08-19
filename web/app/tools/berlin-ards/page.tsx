@@ -30,7 +30,7 @@ export default function BerlinARDSPage() {
   const BoolBtn = ({ val, cur, set, yes, no }: { val: boolean; cur: boolean | null; set: (v: boolean | null) => void; yes: string; no: string }) => (
     <div className="flex gap-2">
       {([true, false] as const).map(v => (
-        <button key={String(v)} type="button" onClick={() => set(cur === v ? null : v)}
+        <button aria-pressed={cur === v} key={String(v)} type="button" onClick={() => set(cur === v ? null : v)}
           className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
             ${cur === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
           {v ? yes : no}
@@ -84,7 +84,7 @@ export default function BerlinARDSPage() {
                 { v: "mod",     label: "101–200 mmHg",           sub: "Orta ARDS" },
                 { v: "severe",  label: "≤ 100 mmHg",            sub: "Ağır ARDS" },
               ].map(opt => (
-                <button key={opt.v} type="button"
+                <button aria-pressed={pf === opt.v} key={opt.v} type="button"
                   onClick={() => setPF(p => p === opt.v ? null : opt.v)}
                   className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
                     ${pf === opt.v ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

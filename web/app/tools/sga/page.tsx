@@ -102,7 +102,7 @@ export default function SgaPage() {
                 <p className="text-sm font-bold text-blue-900 mb-2">{q.label}</p>
                 <div className="flex gap-2 flex-wrap">
                   {q.opts.map(o => (
-                    <button key={o.v} type="button" onClick={() => setAns(q.id, o.v as SGARating)}
+                    <button aria-pressed={answers[q.id] === o.v} key={o.v} type="button" onClick={() => setAns(q.id, o.v as SGARating)}
                       className={`px-4 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                         ${answers[q.id] === o.v
                           ? o.v === "A" ? "bg-emerald-600 border-emerald-600 text-white"

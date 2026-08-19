@@ -111,7 +111,7 @@ export default function KdigoAkiPage() {
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">İdrar Çıkışı Kriteri</span>
           <div className="grid gap-2">
             {URINE_OPTIONS.map((o) => (
-              <button
+              <button aria-pressed={urineStage === o.value}
                 key={o.value}
                 type="button"
                 onClick={() => setUrineStage(o.value)}

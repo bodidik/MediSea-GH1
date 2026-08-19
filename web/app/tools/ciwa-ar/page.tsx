@@ -219,7 +219,7 @@ export default function CiwaArPage() {
                 {item.opts.map(opt => {
                   const sel = cur === opt.v;
                   return (
-                    <button key={opt.v} type="button" onClick={() => setAns(item.id as ItemId, opt.v)}
+                    <button aria-pressed={sel} key={opt.v} type="button" onClick={() => setAns(item.id as ItemId, opt.v)}
                       className={`w-full text-left p-3 rounded-2xl border transition-all flex items-center gap-3
                         ${sel
                           ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600'

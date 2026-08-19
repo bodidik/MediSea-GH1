@@ -74,7 +74,7 @@ export default function BehcetPage() {
               <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
               <div className="flex gap-2">
                 {([true, false] as const).map(v => (
-                  <button key={String(v)} type="button"
+                  <button aria-pressed={sel[item.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                       ${sel[item.id] === v

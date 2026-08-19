@@ -38,7 +38,7 @@ export default function MustPage() {
   const Radio = ({ opts, val, set }: { opts: { v: number; label: string; sub?: string }[]; val: number | null; set: (i: number) => void }) => (
     <div className="space-y-2">
       {opts.map((o, i) => (
-        <button key={i} type="button" onClick={() => set(i)}
+        <button aria-pressed={val === i} key={i} type="button" onClick={() => set(i)}
           className={`w-full text-left p-4 rounded-2xl border transition-all
             ${val === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
           <div className={`text-sm font-bold ${val === i ? 'text-white' : 'text-blue-950'}`}>{o.label}</div>

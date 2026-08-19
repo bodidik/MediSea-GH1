@@ -138,7 +138,7 @@ export default function OgttPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Klinik Bağlam</p>
           {CONTEXTS.map(c => (
-            <button key={c.id} type="button" onClick={() => setCtx(c.id)}
+            <button aria-pressed={ctx === c.id} key={c.id} type="button" onClick={() => setCtx(c.id)}
               className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center gap-3
                 ${ctx === c.id ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
               <span className="text-xl">{c.icon}</span>

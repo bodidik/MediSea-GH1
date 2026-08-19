@@ -49,7 +49,7 @@ export default function KarnofskyPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
           <div className="grid gap-2">
             {GRADES.map(g => (
-              <button key={g.value} type="button" onClick={() => setSelected(g.value)}
+              <button aria-pressed={selected === g.value} key={g.value} type="button" onClick={() => setSelected(g.value)}
                 className={`text-left flex items-center justify-between gap-4 p-4 rounded-2xl border transition-all
                   ${selected === g.value ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                 <div className="flex items-center gap-4">

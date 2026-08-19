@@ -103,7 +103,7 @@ export default function ChildPughPage() {
               <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">{c.title}</span>
               <div className="grid gap-2">
                 {c.options.map((o) => (
-                  <button
+                  <button aria-pressed={sel[c.key] === o.value}
                     key={o.value}
                     type="button"
                     onClick={() => setSel((v) => ({ ...v, [c.key]: o.value }))}

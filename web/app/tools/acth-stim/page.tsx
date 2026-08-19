@@ -64,7 +64,7 @@ export default function ActhStimPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Protokol</p>
           {DOSE_OPTS.map((d, i) => (
-            <button key={d.id} type="button" onClick={() => setDoseIdx(i)}
+            <button aria-pressed={doseIdx === i} key={d.id} type="button" onClick={() => setDoseIdx(i)}
               className={`w-full text-left p-4 rounded-2xl border transition-all
                 ${doseIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
               <div className={`text-sm font-bold ${doseIdx === i ? 'text-white' : 'text-blue-950'}`}>{d.label}</div>

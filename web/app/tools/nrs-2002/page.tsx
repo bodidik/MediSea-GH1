@@ -42,7 +42,7 @@ export default function NRS2002Page() {
               { id: 'intake', label: 'Geçen hafta alımında azalma var mı?' },
               { id: 'severeIll', label: 'Hasta ağır derecede hasta mı? (YBÜ vb.)' }
             ].map(q => (
-              <button 
+              <button aria-pressed={initialRisk[q.id]} 
                 key={q.id}
                 onClick={() => setInitialRisk(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
                 className={`p-4 rounded-xl border text-left text-sm font-bold transition-all ${initialRisk[q.id] ? 'bg-blue-900 text-white' : 'bg-slate-50 text-slate-600'}`}

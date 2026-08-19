@@ -70,7 +70,7 @@ export default function HaqDiPage() {
                       <p className="text-sm font-bold text-blue-900 mb-2">{item}</p>
                       <div className="flex gap-2 flex-wrap">
                         {SCORE_OPTS.map(opt => (
-                          <button key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
+                          <button aria-pressed={val === opt.v} key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
                             className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                               ${val === opt.v
                                 ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white' :

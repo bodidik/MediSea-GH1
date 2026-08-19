@@ -84,7 +84,7 @@ export default function AnaphylaxisPage() {
               </ul>
               <div className="flex gap-2">
                 {([true, false] as const).map(v => (
-                  <button key={String(v)} type="button"
+                  <button aria-pressed={sel[cr.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [cr.id]: s[cr.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                       ${sel[cr.id] === v

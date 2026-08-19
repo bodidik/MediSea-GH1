@@ -249,7 +249,7 @@ export default function AbgPage() {
             <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Solunum Asidozu — Kompansasyon Tipi</p>
             <div className="flex gap-3">
               {(["acute", "chronic"] as const).map(t => (
-                <button key={t} type="button" onClick={() => setRespAcidType(t)}
+                <button aria-pressed={respAcidType === t} key={t} type="button" onClick={() => setRespAcidType(t)}
                   className={`flex-1 py-2.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                     ${respAcidType === t ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900'}`}>
                   {t === "acute" ? "Akut (×1 mEq/10mmHg)" : "Kronik (×3.5 mEq/10mmHg)"}
@@ -263,7 +263,7 @@ export default function AbgPage() {
             <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Solunum Alkalozu — Kompansasyon Tipi</p>
             <div className="flex gap-3">
               {(["acute", "chronic"] as const).map(t => (
-                <button key={t} type="button" onClick={() => setRespAlkType(t)}
+                <button aria-pressed={respAlkType === t} key={t} type="button" onClick={() => setRespAlkType(t)}
                   className={`flex-1 py-2.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                     ${respAlkType === t ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900'}`}>
                   {t === "acute" ? "Akut (×2 mEq/10mmHg)" : "Kronik (×5 mEq/10mmHg)"}

@@ -156,7 +156,7 @@ export default function HScorePage() {
                 {item.options.map(opt => {
                   const active = sel[item.id] === opt.pts;
                   return (
-                    <button key={opt.pts} type="button"
+                    <button aria-pressed={active} key={opt.pts} type="button"
                       onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                       className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-black transition-all
                         ${active ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

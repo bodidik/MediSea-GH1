@@ -93,7 +93,7 @@ export default function MRSSPage() {
                 <p className="text-[11px] font-black text-blue-900 w-full sm:w-40 sm:shrink-0">{region.label}</p>
                 <div className="flex gap-1 flex-1">
                   {OPTS.map(opt => (
-                    <button key={opt.pts} type="button"
+                    <button aria-pressed={sel[region.id] === opt.pts} key={opt.pts} type="button"
                       onClick={() => setSel(s => ({ ...s, [region.id]: s[region.id] === opt.pts ? null : opt.pts }))}
                       className={`flex-1 py-2 rounded-lg border-2 text-[9px] font-black transition-all
                         ${sel[region.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>

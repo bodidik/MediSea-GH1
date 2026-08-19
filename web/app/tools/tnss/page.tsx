@@ -73,7 +73,7 @@ export default function TNSSPage() {
               <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
               <div className="flex gap-2">
                 {OPTIONS.map(opt => (
-                  <button key={opt.pts} type="button"
+                  <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                     className={`flex-1 flex flex-col items-center py-2 rounded-xl border-2 text-[9px] font-black transition-all
                       ${sel[item.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>

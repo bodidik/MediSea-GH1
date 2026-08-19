@@ -157,7 +157,7 @@ export default function LawtonIadlPage() {
               <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
               <div className="space-y-1.5">
                 {item.options.map((opt, oi) => (
-                    <button key={oi} type="button"
+                    <button aria-pressed={(sel[item.id] as number | null) === oi} key={oi} type="button"
                       onClick={() => setSel(s => ({ ...s, [item.id]: oi }))}
                       className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
                         ${(sel[item.id] as number | null) === oi

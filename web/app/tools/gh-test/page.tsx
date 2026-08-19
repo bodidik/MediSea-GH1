@@ -68,7 +68,7 @@ export default function GhTestPage() {
         {/* Mod seçimi */}
         <div className="grid grid-cols-2 gap-3">
           {MODE_OPTS.map(m => (
-            <button key={m.id} type="button" onClick={() => setMode(m.id)}
+            <button aria-pressed={mode === m.id} key={m.id} type="button" onClick={() => setMode(m.id)}
               className={`p-4 rounded-2xl border transition-all text-center
                 ${mode === m.id ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}`}>
               <div className="text-2xl mb-1">{m.icon}</div>
@@ -82,7 +82,7 @@ export default function GhTestPage() {
             <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Stimülasyon Protokolü</p>
               {STIM_PROTOCOLS.map((p, i) => (
-                <button key={p.id} type="button" onClick={() => setStimIdx(i)}
+                <button aria-pressed={stimIdx === i} key={p.id} type="button" onClick={() => setStimIdx(i)}
                   className={`w-full text-left p-4 rounded-2xl border transition-all
                     ${stimIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`text-sm font-bold ${stimIdx === i ? 'text-white' : 'text-blue-950'}`}>{p.label}</div>

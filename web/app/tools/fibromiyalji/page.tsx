@@ -103,7 +103,7 @@ export default function FibromiyaljiPage() {
               <p className="text-sm font-bold text-blue-900 mb-2">{item.label}</p>
               <div className="flex gap-2 flex-wrap">
                 {SEVERITY.map(s => (
-                  <button key={s.v} type="button" onClick={() => setSevVal(item.id, s.v)}
+                  <button aria-pressed={sev[item.id] === s.v} key={s.v} type="button" onClick={() => setSevVal(item.id, s.v)}
                     className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                       ${sev[item.id] === s.v
                         ? s.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white'
