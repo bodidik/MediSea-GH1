@@ -1115,6 +1115,40 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Vurgu ayıklama kuralının İKİ dalı da sürüldü
+
+Kural yazılıydı: konteyneri kaybolan vurgu SİLİNMEZ, yalnızca boyanmaz;
+silme yalnızca konteyner VAR ama metin tutmuyorsa olur. İkisi de ölçüldü.
+
+| durum | beklenen | ölçülen |
+|---|---|---|
+| konteyner yok (`c: "soru:olmayan-…"`) | kalır | **kaldı** |
+| ofset çözülüyor, metin tutuyor | kalır, boyanır | **kaldı, boyandı** |
+| ofset çözülüyor, metin TUTMUYOR | silinir | **silindi** |
+
+Negatif kontrol ölçümün içinde: son iki satır AYNI ofseti taşıyor, biri
+kaldı biri silindi — yani ayıklama seçici, toptan silme değil.
+
+Kaynak da aynısını söylüyor (`ReadingTools.tsx`): konteyner yoksa
+`alive.push(m)`; `if (!range || range.toString() !== m.t) continue;` ile
+düşer; `if (alive.length !== saved.length) saveMarks(...)` ile süzülen
+liste yazılır.
+
+**ÜÇ ÖLÇÜM TUZAĞI — üçüne de düşüldü:**
+
+- **Tohumlanan vurgu boyanmaz, çünkü ofsetler BAŞKA koordinat sisteminde.**
+  `kap.textContent` üzerinden hesaplanan ofset, boyayıcının kullandığı
+  sayımla aynı değil. Ölçüldü: arayüzle yapılan bir seçim metin düğümünde
+  5–45 iken depoya 45–85 yazılıyor. Tohumla sınama yapacaksan vurguyu
+  ARAYÜZLE oluştur, sonra alanlarını değiştir.
+- **`localStorage.removeItem` bileşen kuruluyken KALICI DEĞİL.** Bileşen
+  bellekteki listeyi geri yazıyor; silme ancak sayfa yenilendikten (ya da
+  başka sayfaya geçildikten) sonra kesinleşiyor.
+- **DOM'u elle değiştirmek içerik değişikliğini taklit etmiyor.** Metin
+  düğümünü değiştirmek çoğu zaman `<mark>`ın KENDİ içeriğini değiştiriyor.
+  Silme dalını tetiklemenin sadık yolu: gerçek bir vurgunun yalnızca `t`
+  alanını bozmak — ofset çözülür, metin tutmaz, kural işler.
+
 ### Tazeleme kipinin yalıtımı ölçüldü — takvime dokunmuyor
 
 "Baştan sona çalış" kipinin takvimi ve günlüğü DEĞİŞTİRMEMESİ bir kural
