@@ -1115,6 +1115,28 @@ Marka sesine dokunma: "Radar", ⚓, "Sakin Deniz" gibi denizci metaforlar
 MediSea temasının parçası. Düzeltilecek şey ton değil, ölçülebilir kusur
 (sızıntı, suçlama, çıkmaz).
 
+### Flashcard oynatıcısı ölçüldü — sınıf temiz
+
+Kapının arkasında olduğu için geçici bir tanı rotasıyla (`force-dynamic`,
+gerçek kart dosyasından 4 kart) sürüldü.
+
+| ölçüt | sonuç |
+|---|---|
+| işaretleme kalıcı mı | evet, `medisea:kartlar:v1:<setId>` yazılıyor |
+| sayaç | 1 → 2 → 3, yüzde %25 · %50 · %75 (n/4 ile birebir) |
+
+**Asıl sınama, belgede geçen "%240" kusuru:** setten ÇIKARILMIŞ kart
+kimlikleri depoda kalırsa yüzde 100'ü aşıyordu. 3 meşru işaretin yanına
+6 hayalet kimlik tohumlandı — koruma olmasa ekran %225 derdi.
+
+Ölçüldü: ekran **%75** gösterdi VE depo temizlendi (9 kimlik → 3, hayalet
+kimlik 0). Yani düzeltme yalnızca gösterimi kırpmıyor, süzülen listeyi
+geri yazıyor. Negatif kontrol aynı ölçümün içinde: meşru 3 işaret hayatta
+kaldı, yani koruma hepsini silmiyor.
+
+Bu kusur bozuk veriyle DEĞİL, normal içerik düzenlemesiyle oluşuyor —
+setten bir kart çıkarmak yetiyor.
+
 ### Tekrar takvimi ölçüldü — sınıf temiz
 
 `/tekrar` motorunun kart üretimi ve kontrastı ayrı ayrı ölçülmüştü ama
