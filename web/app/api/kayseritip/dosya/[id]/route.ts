@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { yoneticiEpostasiMi } from "@/lib/yonetici";
 import { auth } from '@/auth';
 import fs from 'fs';
 import path from 'path';
@@ -11,7 +12,7 @@ export async function GET(
   const session = await auth();
   const institution = (session?.user as any)?.institution;
   const plan = (session?.user as any)?.plan;
-  const isAdmin = session?.user?.email === process.env.ADMIN_EMAIL;
+  const isAdmin = yoneticiEpostasiMi(session?.user?.email);
 
   if (institution !== 'kayseritip' && !isAdmin) {
     return new NextResponse('Yetkisiz', { status: 403 });

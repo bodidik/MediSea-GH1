@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { yoneticiEpostasiMi } from "@/lib/yonetici";
 import { auth } from '@/auth';
 import fs from 'fs';
 import path from 'path';
 
 function isAdmin(session: any) {
-  return session?.user?.email === process.env.ADMIN_EMAIL;
+  return yoneticiEpostasiMi(session?.user?.email);
 }
 
 const SLAYT_JSON = path.join(process.cwd(), 'content', 'kayseritip', 'slaytlar.json');

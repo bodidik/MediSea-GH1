@@ -36,3 +36,22 @@ export function yetkisizYanit() {
     { status: 401 }
   );
 }
+
+/**
+ * Aynı kuralın SENKRON hâli: elinde zaten bir e-posta varken kullanılır
+ * (düzen dosyaları, oturumu kendisi okuyan uçlar).
+ *
+ * Neden ayrı bir yardımcı gerekti: yedi yer kontrolü elle tekrarlıyordu ve
+ * hiçbirinde `ADMIN_EMAIL` VAR MI kontrolü yoktu:
+ *
+ *     session?.user?.email === process.env.ADMIN_EMAIL
+ *
+ * Değişken tanımsızsa bu ifade `undefined === undefined` olur, yani OTURUMSUZ
+ * bir istek yönetici sayılır. Ölçüldü — canlıda değişken tanımlı olduğu için
+ * açık şu an aktif DEĞİL (dört uç da 403 dönüyor); risk gizil ve bir
+ * yapılandırma kazasıyla açılır.
+ */
+export function yoneticiEpostasiMi(eposta?: string | null): boolean {
+  const admin = process.env.ADMIN_EMAIL;
+  return Boolean(eposta && admin && eposta === admin);
+}

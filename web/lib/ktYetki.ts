@@ -1,4 +1,5 @@
 import { auth } from '@/auth';
+import { yoneticiEpostasiMi } from "@/lib/yonetici";
 import { dbConnect } from '@/lib/db';
 import KtYetki, { KtRol } from '@/lib/models/KtYetki';
 
@@ -15,7 +16,7 @@ export async function ktKullaniciAl(): Promise<KtKullanici | null> {
 
   if (!user?.email) return null;
 
-  const isAdmin = user.email === process.env.ADMIN_EMAIL;
+  const isAdmin = yoneticiEpostasiMi(user.email);
   if (isAdmin) {
     return { email: user.email, rol: 'kt_admin', alanlar: [] };
   }

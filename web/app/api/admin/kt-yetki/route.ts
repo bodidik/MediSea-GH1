@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { yoneticiEpostasiMi } from "@/lib/yonetici";
 import { auth } from '@/auth';
 import { dbConnect } from '@/lib/db';
 import KtYetki from '@/lib/models/KtYetki';
 
 function isAdmin(session: any) {
-  return session?.user?.email === process.env.ADMIN_EMAIL;
+  return yoneticiEpostasiMi(session?.user?.email);
 }
 
 export async function GET() {

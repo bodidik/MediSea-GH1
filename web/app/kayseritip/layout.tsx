@@ -1,11 +1,12 @@
 import { auth } from '@/auth';
+import { yoneticiEpostasiMi } from "@/lib/yonetici";
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 
 export default async function KayseriTipLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
   const user = session?.user as any;
-  const isAdmin = user?.email === process.env.ADMIN_EMAIL;
+  const isAdmin = yoneticiEpostasiMi(user?.email);
 
   if (user?.institution !== 'kayseritip' && !isAdmin) {
     redirect('/giris?gerekli=kayseritip');
