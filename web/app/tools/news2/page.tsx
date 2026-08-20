@@ -83,6 +83,26 @@ export default function NEWS2Page() {
 
   const total = sc_rr + sc_sp + sc_temp + sc_sbp + sc_hr + sc_avpu;
 
+  /**
+   * MAKULLÜK KAPISI — kusur en ağır yönde çalışıyordu.
+   *
+   * NEWS2'de DÜŞÜK değerler puan getiriyor (düşük SpO2, düşük tansiyon,
+   * düşük ateş), yani `parseLocaleNumber`ın 0'a çevirdiği boş alanlar
+   * neredeyse tam puan alıyor. Ölçüldü (canlı): form BOMBOŞKEN araç
+   * **NEWS2 15** basıp altına **"YÜKSEK (Acil Müdahale)"** yazıyordu —
+   * oysa 7 ve üzeri zaten acil ekip çağırma eşiği. Uydurma bir sayı değil,
+   * uydurma bir ACİL ÇAĞRI.
+   *
+   * Sınırlar klinik eşik değil makullük sınırı: bu aralıkların dışındaki
+   * bir vital ölçülmüş olamaz.
+   */
+  const makul =
+    rrNum >= 4 && rrNum <= 80 &&
+    spo2Num >= 40 && spo2Num <= 100 &&
+    sbpNum >= 40 && sbpNum <= 300 &&
+    hrNum >= 20 && hrNum <= 250 &&
+    tempNum >= 25 && tempNum <= 45;
+
   let risk = { label: "Düşük", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
   if (total >= 7) risk = { label: "YÜKSEK (Acil Müdahale)", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   else if (total >= 5 || [sc_rr, sc_sp, sc_temp, sc_sbp, sc_hr, sc_avpu].some(v => v === 3))
@@ -161,12 +181,12 @@ export default function NEWS2Page() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-8 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
-            <div className="text-6xl font-black text-white">{total}</div>
+            <div className="text-6xl font-black text-white">{makul ? total : "–"}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-8 flex flex-col justify-center border-2 ${risk.border} ${risk.bg} shadow-sm transition-all duration-500`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK RİSK DURUMU</span>
             <p className={`text-2xl font-black italic tracking-tight ${risk.color}`}>
-              {risk.label}
+              {makul ? risk.label : "Vitalleri girin"}
             </p>
           </div>
         </div>

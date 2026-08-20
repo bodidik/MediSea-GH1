@@ -64,6 +64,22 @@ export default function GlasgowBlatchfordPage() {
     );
   }, [bunNum, hgbNum, sex, sbpNum, tachycardia, melena, syncope, hepatic, cardiac]);
 
+  /**
+   * MAKULLÜK KAPISI — bu araçta kusur en ağır yönde çalışıyordu.
+   *
+   * Skor DÜŞÜK değerlerle artıyor (düşük hemoglobin, düşük tansiyon), yani
+   * `parseLocaleNumber`ın 0'a çevirdiği boş alanlar en yüksek puanı alıyor.
+   * Ölçüldü (canlı): form BOMBOŞKEN araç **GBS 9** basıp altına
+   * **"Yüksek Risk — Hastane Yatışı / Erken Endoskopi Gerekebilir"**
+   * yazıyordu. Uydurma bir sayı değil, uydurma bir YATIŞ KARARI.
+   *
+   * Sınırlar klinik eşik değil makullük sınırı.
+   */
+  const makul =
+    bunNum >= 1 && bunNum <= 300 &&
+    hgbNum >= 1 && hgbNum <= 25 &&
+    sbpNum >= 30 && sbpNum <= 300;
+
   const interpretation =
     score === 0
       ? { label: "Düşük Risk — Ayaktan Takip Değerlendirilebilir", color: "text-emerald-700", bg: "bg-emerald-50" }
@@ -153,14 +169,14 @@ export default function GlasgowBlatchfordPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">GBS</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">GLASGOW-BLATCHFORD SKORU</span>
-           <div className="text-7xl font-black text-white">{score}</div>
+           <div className="text-7xl font-black text-white">{makul ? score : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">/ 23</span>
         </div>
 
         {/* YORUMLAMA PANELİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {interpretation.label}
+             {makul ? interpretation.label : "Değerleri girin — üre, hemoglobin ve sistolik basınç"}
            </div>
         </div>
 
