@@ -138,7 +138,14 @@ async function doPush(): Promise<boolean> {
   }
 
   const data = buildPayload();
-  if (!data) return false;
+  if (!data) {
+    // Depoda bozuk bir kayıt var (readAll fırlattı). Sessizce dönmek en kötü
+    // seçenek: schedulePush göstergeyi ZATEN "Kaydediliyor…" yapmış oluyor ve
+    // burada susarsak orada sonsuza kadar öyle kalıyor — kullanıcı
+    // kaydedildiğini sanıyor. Ölçüldü, dosyanın kendi kuralının ihlaliydi.
+    durumaGec("hata");
+    return false;
+  }
 
   durumaGec("gonderiliyor");
 
