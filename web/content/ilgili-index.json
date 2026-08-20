@@ -1031,6 +1031,11 @@
    "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı"
   },
   {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kombinasyon-stratejileri",
    "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
@@ -1090,6 +1095,11 @@
   }
  ],
  "endokrinoloji/men1-spironolakton-cift-mekanizma": [
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
   {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kombinasyon-stratejileri",
@@ -5518,6 +5528,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "respiratuvar-asidoz",
    "baslik": "Respiratuvar Asidoz"
   }
@@ -6033,6 +6048,18 @@
    "baslik": "İleri Okuma: IgA Nefropatisi -Tedavi"
   }
  ],
+ "nefroloji/metabolik-alkaloz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-osilodrostat-mineralokortikoid",
+   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-spironolakton-cift-mekanizma",
+   "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma"
+  }
+ ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
   {
    "brans": "nefroloji",
@@ -6183,6 +6210,11 @@
    "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
   }
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [
