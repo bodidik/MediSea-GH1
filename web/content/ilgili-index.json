@@ -5528,28 +5528,25 @@
  "nefroloji/asit-baz-fizyopatoloji": [
   {
    "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  }
+ ],
+ "nefroloji/asit-baz-kompanzasyon-ilkeleri": [
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-fizyopatoloji",
+   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   },
   {
    "brans": "nefroloji",
-   "slug": "metabolik-alkaloz",
-   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "metabolik-asidoz",
    "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-alkaloz",
-   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-asidoz",
-   "baslik": "Respiratuvar Asidoz"
   }
  ],
  "nefroloji/bobrek-fosfor-homeostazi-fizyoloji": [
@@ -5574,6 +5571,11 @@
    "brans": "nefroloji",
    "slug": "metabolik-asidoz",
    "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
   },
   {
    "brans": "endokrinoloji",
@@ -6090,6 +6092,11 @@
    "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
   }
  ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
@@ -6249,6 +6256,11 @@
    "brans": "nefroloji",
    "slug": "asit-baz-fizyopatoloji",
    "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
   },
   {
    "brans": "nefroloji",
