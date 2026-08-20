@@ -1321,3 +1321,48 @@ depodaki kural da değiştirdiğimi ölçmek. İki seçenek var:
 Ölçüm notu: bu davranış KAYNAK OKUNARAK bulundu, canlıda sürülmedi (giriş
 gerekiyor). Sürülmesi için premium verilmiş bir hesapla giriş yapıp planı
 değiştirmek ve sayfayı yenilemek yeterli.
+
+---
+
+## 31. MELD-Na formülü normal değerlerde EKSİ skor veriyor (klinik karar)
+
+Makullük kapısı eklenirken yapılan negatif kontrol bunu ortaya çıkardı.
+Normal laboratuvar değerleriyle araç **eksi** skor gösteriyor:
+
+| girdi | aracın gösterdiği |
+|---|---|
+| Cr 1 · TB 1 · INR 1 · Na 137 | **−3** |
+| varsayılan açılış (1 · 1 · 1 · 135) | **1** |
+| Cr 3 · TB 10 · INR 2.5 · Na 125 | 19 |
+
+MELD-Na negatif olamaz; yayımlanmış ölçekte taban 6, tavan 40.
+
+Kodda duran (`app/tools/meld-na/page.tsx`):
+
+```
+meld   = 0.957·ln(Cr) + 0.378·ln(TB) + 1.12·ln(INR) + 0.643
+meldNa = meld + 1.59·(135 − Na)
+```
+
+İki nokta gözden geçirilmeli:
+
+1. **×10 çarpanı yok.** Yayımlanmış MELD, logaritmik toplamı 10 ile çarpıp
+   yuvarlıyor. Çarpan olmadan normal değerlerde toplam 0.643 çıkıyor — yani
+   bütün skor bandı ~10 kat küçük.
+2. **Sodyum düzeltmesinin sabitleri.** Burada `1.59·(135 − Na)` var;
+   yaygın kullanılan UNOS biçimi `1.32·(137 − Na) − 0.033·MELD·(137 − Na)`
+   şeklinde ve MELD ile etkileşim terimi taşıyor. Referans noktası da 135
+   değil 137.
+
+**Neden ben değiştirmedim:** bu klinik bir içerik kararı, kod düzeni değil.
+Hangi yayının hangi sürümünün alınacağı (orijinal Kamath MELD, MELD-Na 2016,
+MELD 3.0) senin kararın; sessizce bir sürüm seçip sabitleri değiştirmek,
+yanlış yönde hata yapma riskini bana yükler. Nakil listesi eşiği konuşulan
+bir skorda bunu yapmam doğru olmaz.
+
+Düzeltilirken birlikte bakılacaklar: skorun 6–40 aralığına kıskaçlanması ve
+sayfadaki mortalite ifadesinin seçilen sürümle uyumu.
+
+**Yapılan kısım:** çöp girdide skor basma kusuru düzeltildi (`71c3688`) —
+boş, negatif, harf ve sıfır girdide artık "–" ve "Değerleri girin" çıkıyor.
+Yani formül sorunu, girdiden bağımsız olarak DURUYOR.
