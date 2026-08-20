@@ -38,20 +38,10 @@ export function yetkisizYanit() {
 }
 
 /**
- * Aynı kuralın SENKRON hâli: elinde zaten bir e-posta varken kullanılır
- * (düzen dosyaları, oturumu kendisi okuyan uçlar).
- *
- * Neden ayrı bir yardımcı gerekti: yedi yer kontrolü elle tekrarlıyordu ve
- * hiçbirinde `ADMIN_EMAIL` VAR MI kontrolü yoktu:
- *
- *     session?.user?.email === process.env.ADMIN_EMAIL
- *
- * Değişken tanımsızsa bu ifade `undefined === undefined` olur, yani OTURUMSUZ
- * bir istek yönetici sayılır. Ölçüldü — canlıda değişken tanımlı olduğu için
- * açık şu an aktif DEĞİL (dört uç da 403 dönüyor); risk gizil ve bir
- * yapılandırma kazasıyla açılır.
+ * Aynı kuralın SENKRON hâli, elinde zaten e-posta varken kullanılır.
+ * Tanımı `lib/yonetici-eposta.ts` içinde: middleware edge'de çalıştığı ve
+ * bu dosya `@/auth` (mongoose/bcrypt) taşıdığı için kural saf bir modülde
+ * durmak zorunda. Buradan yeniden dışa aktarılıyor ki çağrı yerleri
+ * değişmesin.
  */
-export function yoneticiEpostasiMi(eposta?: string | null): boolean {
-  const admin = process.env.ADMIN_EMAIL;
-  return Boolean(eposta && admin && eposta === admin);
-}
+export { yoneticiEpostasiMi } from "./yonetici-eposta";

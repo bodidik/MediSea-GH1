@@ -1,4 +1,5 @@
 import NextAuth from 'next-auth';
+import { yoneticiEpostasiMi } from '@/lib/yonetici-eposta';
 import { NextResponse } from 'next/server';
 import { authConfig } from '@/auth.config';
 
@@ -12,7 +13,10 @@ export default auth((req) => {
 
   /* KayseriTıp özel alanı — kurumsal kontrol middleware'de kalır */
   if (pathname.includes('/kayseritip')) {
-    const isAdmin = user?.email === process.env.ADMIN_EMAIL;
+    // Ham karşılaştırma ADMIN_EMAIL tanımsızken `undefined === undefined`
+    // olur ve OTURUMSUZ isteği yönetici sayardı — hem de en geniş kapıda,
+    // bütün /kayseritip alanında. Kural artık tek yerden geliyor.
+    const isAdmin = yoneticiEpostasiMi(user?.email);
     if (institution !== 'kayseritip' && !isAdmin) {
       return NextResponse.redirect(new URL('/giris?gerekli=kayseritip', req.url));
     }
