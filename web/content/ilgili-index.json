@@ -4741,6 +4741,11 @@
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
   {
    "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   },
@@ -4753,11 +4758,6 @@
    "brans": "kardiyoloji",
    "slug": "pcsk9-inhibitorleri",
    "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "direncli-hipertansiyon-yeni-nesil",
-   "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler"
   }
  ],
  "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
@@ -4868,8 +4868,8 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
   }
  ],
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
@@ -4904,6 +4904,16 @@
  "kardiyoloji/hipertansiyon-ve-aciller": [
   {
    "brans": "kardiyoloji",
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   },
@@ -4911,16 +4921,6 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-tedavi-ana",
    "baslik": "Klinik Lipidoloji tedavi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "pcsk9-inhibitorleri",
-   "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-direncli-hipertansiyon",
-   "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA"
   }
  ],
  "kardiyoloji/infektif-endokardit": [
@@ -4928,6 +4928,28 @@
    "brans": "kardiyoloji",
    "slug": "kapak-hastaliklari",
    "baslik": "Kapak Hastalıkları (Aort Darlığı ve Mitral Yetersizlik)"
+  }
+ ],
+ "kardiyoloji/kalp-yetersizligi-arni-neprilisin-fizyolojisi": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
+   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "hipertansiyon-ve-aciller",
+   "baslik": "Esansiyel Hipertansiyon"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-tedavisi",
+   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetmezligi",
+   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
   }
  ],
  "kardiyoloji/kalp-yetersizligi-arni-tedavisi": [
