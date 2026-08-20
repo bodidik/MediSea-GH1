@@ -1076,11 +1076,45 @@ Aramanın yolu: aynı grupta yinelenen puan değeri var mı.
 
 ---
 
-## 27. Yirmi bileşen hiçbir yerden çağrılmıyor — 1711 satır ölü arayüz
+## 27. Ulaşılamayan arayüz kodu — 76 dosya, 8160 satır
 
 Dışa aktarılmış ama hiçbir dosyadan içe aktarılmayan yirmi bileşen var.
 Uygulamada dinamik içe aktarma (`next/dynamic`) hiç kullanılmıyor, yani
 "belki çalışma zamanında yükleniyordur" ihtimali yok.
+
+> **ÖLÇÜM DÜZELTİLDİ (20 Ağustos 2026).** İlk sayım "içe aktarılmış mı"
+> diye soruyordu; doğru soru **"gerçek bir rotadan ulaşılabiliyor mu"**.
+> Alt çizgili klasördeki bir sayfa rotaya alınmıyor, dolayısıyla ONUN içe
+> aktardığı her şey de ulaşılmaz. Geçişli ölçüm (331 rota kökünden
+> başlayıp içe aktarma zinciri izlenerek):
+>
+> | | dosya | satır |
+> |---|---|---|
+> | toplam kaynak | 483 | |
+> | ulaşılan | 407 | |
+> | **ulaşılmaz** | **76** | **8160** |
+> | ↳ alt çizgili klasörde (bilinen ölü göç) | 46 | 5604 |
+> | ↳ **diğerleri** | **30** | **2556** |
+>
+> Aşağıdaki tablo bu 30'un bir alt kümesi. İlk sayımın kaçırdıkları:
+> `app/lib/i18n.ts` (321 satır — TR sözlüğün tamamı), `tools/data/ads.ts`
+> (196), `soru-cozum/SimulatorEngine.tsx` (184), premium
+> `components/BranchTemplate.tsx` (128), `PremiumVideoRecommendations.tsx`
+> (76), `lib/content.shared.ts`, `lib/topicChildren.ts`, `lib/planSync.ts`,
+> `app/config/nav.ts`, `(ydus)/config/fleet.ts`, `ProtectedContent.tsx`.
+>
+> **Yan bulgu:** `app/api/programs/routes.ts` — dosya adı `route.ts` DEĞİL
+> `routes.ts`, yani Next bunu uca çevirmiyor. Kullanıcıya bedeli yok, çünkü
+> `/api/programs`'ı yalnızca `app/_programs/page.tsx` çağırıyor ve o sayfa
+> da zaten ulaşılmaz. Aynı ölü kümenin parçası.
+>
+> **Ölçümün kendisi bir kez yanıldı:** `tsconfig.json`'da `@/components/*`
+> iki hedefe birden eşleniyor (`app/components/*` ve `components/*`).
+> Yalnızca `@/*` kuralını uygulayan ilk çözücü bu içe aktarımları
+> göremiyordu ve `AddToSRButton`, `LiteProtected`, `UpgradeCard` yanlışlıkla
+> ölü sayılmıştı. Takma ad çözerken `paths` eşlemesini gerçekten oku.
+> Olumlu kontrol: `ReadingTools`, `AddToSRButton`, `ToolsIcerik` düzeltmeden
+> sonra listede yok.
 
 | satır | dosya |
 |---|---|
