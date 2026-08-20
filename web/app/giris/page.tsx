@@ -4,19 +4,35 @@ import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-function GirisFormu() {
-  const router = useRouter();
-  const params = useSearchParams();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [hata, setHata] = useState('');
-  const [yukleniyor, setYukleniyor] = useState(false);
-
-  const gerekli = params.get('gerekli');
+/* Sorguya bağlı TEK parça bu. Ayrı bir bileşen, çünkü `useSearchParams()`
+   kullanan alt ağacı Next sunucuda HİÇ üretmiyor — yalnızca fallback
+   gönderiyor. Bütün sayfa tek bir Suspense'in içindeyken sunucudan gelen
+   HTML boştu: giriş formunun tamamı ve `<h1>` yoktu (ölçüldü: canlıda
+   /giris'te 0 başlık, kardeşi /kayit'ta 1). Sınır artık yalnızca bu uyarıyı
+   sarıyor; form ve başlık sunucuda basılıyor. */
+function GirisUyarisi() {
+  const gerekli = useSearchParams().get('gerekli');
   const uyari =
     gerekli === 'premium'   ? 'Bu alana erişmek için Premium üyelik gereklidir.' :
     gerekli === 'kayseritip'? 'Bu alan yalnızca KayseriTıp üyelerine açıktır.' :
     null;
+  if (!uyari) return null;
+  return (
+    <div style={{
+      background: '#fff8e6', border: '0.5px solid #f0d080', borderRadius: '8px',
+      padding: '10px 14px', fontSize: '13px', color: '#7a4a00', marginBottom: '1rem',
+    }}>
+      ⚠️ {uyari}
+    </div>
+  );
+}
+
+function GirisFormu() {
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [hata, setHata] = useState('');
+  const [yukleniyor, setYukleniyor] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -48,14 +64,9 @@ function GirisFormu() {
           <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a3a6b', margin: 0 }}>MediSea'ya Giriş</h1>
         </div>
 
-        {uyari && (
-          <div style={{
-            background: '#fff8e6', border: '0.5px solid #f0d080', borderRadius: '8px',
-            padding: '10px 14px', fontSize: '13px', color: '#7a4a00', marginBottom: '1rem',
-          }}>
-            ⚠️ {uyari}
-          </div>
-        )}
+        <Suspense fallback={null}>
+          <GirisUyarisi />
+        </Suspense>
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {/* htmlFor + id: etiketler vardı ama alana BAĞLI değildi; ölçümde
@@ -132,11 +143,6 @@ function GirisFormu() {
   );
 }
 
-/* useSearchParams() prerender sırasında Suspense sınırı ister */
 export default function GirisPage() {
-  return (
-    <Suspense fallback={null}>
-      <GirisFormu />
-    </Suspense>
-  );
+  return <GirisFormu />;
 }
