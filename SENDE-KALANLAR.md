@@ -1200,3 +1200,45 @@ Yan not — aynı sayfa yapısal ölçümde de tek istisna: `if (!content) retur
 olduğu için sunucudan giden HTML'de hiçbir başlık yok (`h1=0`). 568 sayfa
 içinde h1'i olmayan tek sayfa bu. Üçüncü seçenek seçilse bile kabuğun
 (başlık + düzen) içerik beklerken basılması bunu da çözer.
+
+---
+
+## 29. İKİ konu dosyası TAMAMEN BAŞKA bir konuyu anlatıyor
+
+Üretim derlemesinde `<title>` tekrarı arandığında iki dosya çıktı. Bakınca
+sorun başlıkta değil, dosyanın tamamındaydı:
+
+| dosya (adres) | ekranda ne yazıyor |
+|---|---|
+| `endokrinoloji/hiperkalsemi-ve-hiperparatiroidi.json` | **Asit-Baz Denge Bozuklukları** — dört bölümün dördü de asit-baz |
+| `hematoloji/akut-lenfoblastik-losemi-all.json` | **Miyelodisplastik Sendromlar (MDS)** — bölümler MDS sınıflandırması, WHO 2022 |
+
+Yani `/topics/endokrinoloji/hiperkalsemi-ve-hiperparatiroidi` adresini açan
+biri hiperkalsemi değil asit-baz okuyor; ALL okumak isteyen MDS okuyor.
+Tıp eğitim platformunda bu, konuyu yanlış öğretmenin en doğrudan hâli.
+
+**İçeriğe dokunmadım** — hangi metnin nereye ait olduğu ve doğru içeriğin ne
+olacağı senin kararın. İki yol var: ya dosyaların içeriği doğrusuyla
+değiştirilir, ya da yanlış adı taşıyan dosyalar kaldırılıp adresleri
+yönlendirmeye bağlanır (`next.config.js`'te `redirects`; `link-denetim`
+yönlendirmeleri biliyor).
+
+Not: `akut-lenfoblastik-losemi-all.json` ilk bölümü **🤖 AI İçerik Uyarısı**
+başlığını taşıyor, yani zaten taslak olarak işaretlenmiş.
+
+### Aynı taramanın çıkardığı iki ÇİFT konu (ayrı karar)
+
+| çift | durum |
+|---|---|
+| `hematoloji/demir-eksikligi.json` · `hematoloji/demir-eksikligi-anemisi.json` | ikisi de görünür, ikisi de 6 bölüm, başlık aynı — kullanıcı aynı konuyu iki adreste görüyor |
+| `endokrinoloji/lipid-ezetimibe.json` · `kardiyoloji/lipid-ezetimibe.json` | aynı konu iki branşta; bilinçli olabilir (ezetimib hem lipid hem kardiyoloji) |
+
+İkincisi meşru olabilir, birincisi büyük olasılıkla artık. Arama motoru
+açısından da önemli: aynı başlık iki adreste, ikisi de site haritasında.
+
+### Bu sınıf artık ölçülebiliyor
+
+`node scripts/konu-denetim.cjs` — konu künyesini denetler: başlıksız konu,
+bölümsüz konu, aynı başlığı taşıyan konular, aynı açıklamayı taşıyan konular.
+**CI kapısı DEĞİL**, çünkü aynı başlık bazen meşru bir içerik kararı
+(`yetim-denetim` ve `asili-denetim` gibi). Şu an 4 kayıt raporluyor.
