@@ -68,14 +68,27 @@ export default function RefeedingRiskPage() {
     <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
       <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{title}</p>
       <div className="space-y-3">
+        {/* Gerçek <input> ŞART: onay kutusu bir dönem yalnızca <div> ile
+            çiziliyordu, yani kontrol ne odak sırasına giriyor ne de adı
+            oluyordu — fareyle çalıştığı için görünmüyordu. sr-only girdi
+            görünmez ama odaklanılabilir ve Space ile işaretlenir; odak
+            halkasını görünmeyen ögenin kendisi veremediği için sarmalayan
+            etiket veriyor. (Aynı çare 29 araçta 36 kontrol için uygulanmıştı;
+            bu araç o süpürmenin dışında kalmış.) */}
         {items.map(item => (
-          <label key={item.id} className="flex items-start gap-3 cursor-pointer">
-            <div onClick={() => toggle(checked, set, item.id)}
+          <label key={item.id} className="flex items-start gap-3 cursor-pointer rounded-lg focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2">
+            <input
+              type="checkbox"
+              className="sr-only"
+              checked={checked.has(item.id)}
+              onChange={() => toggle(checked, set, item.id)}
+            />
+            <div aria-hidden="true"
               className={`mt-0.5 w-5 h-5 rounded-md border-2 flex items-center justify-center flex-shrink-0 transition-all
                 ${checked.has(item.id) ? 'bg-blue-900 border-blue-900' : 'border-slate-300 bg-white hover:border-blue-900/40'}`}>
               {checked.has(item.id) && <svg viewBox="0 0 10 8" className="w-3 h-3 fill-white"><path d="M1 4l3 3 5-6"/></svg>}
             </div>
-            <span className="text-sm font-bold text-blue-900 leading-snug" onClick={() => toggle(checked, set, item.id)}>{item.label}</span>
+            <span className="text-sm font-bold text-blue-900 leading-snug">{item.label}</span>
           </label>
         ))}
       </div>
