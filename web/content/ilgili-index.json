@@ -491,11 +491,6 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "basit-asit-baz-bozukluklari",
-   "baslik": "Basit Asit-Baz Bozuklukları: Dört Temel Tablo ve Kompanzasyon Haritası"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   },
@@ -5480,23 +5475,23 @@
  "nefroloji/akut-bobrek-hasari": [
   {
    "brans": "nefroloji",
+   "slug": "kbh-mkb-kapsamli-inceleme",
+   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "polikistik-bobrek-hastaligi-pkd",
    "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "renovaskuler-hastaliklar",
-   "baslik": "Trombotik ve Renovasküler Hastalıklar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "tubulointerstisiyel-hastaliklar",
-   "baslik": "Tübüler ve İnterstisiyel Hastalıklar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "aldosteron-mekanizmalari",
-   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/akut-interstisiyel-nefrit-ain": [
@@ -5520,11 +5515,6 @@
    "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-alkaloz",
-   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "otiroid-hasta-sendromu-ntis",
    "baslik": "Ötiroid Hasta Sendromu"
@@ -5538,25 +5528,28 @@
  "nefroloji/asit-baz-fizyopatoloji": [
   {
    "brans": "nefroloji",
-   "slug": "basit-asit-baz-bozukluklari",
-   "baslik": "Basit Asit-Baz Bozuklukları: Dört Temel Tablo ve Kompanzasyon Haritası"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "delta-anyon-acigi-delta-delta-orani",
-   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
-  }
- ],
- "nefroloji/basit-asit-baz-bozukluklari": [
-  {
-   "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-asidoz",
+   "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-asidoz",
+   "baslik": "Respiratuvar Asidoz"
   }
  ],
  "nefroloji/bobrek-fosfor-homeostazi-fizyoloji": [
@@ -5581,11 +5574,6 @@
    "brans": "nefroloji",
    "slug": "metabolik-asidoz",
    "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "basit-asit-baz-bozukluklari",
-   "baslik": "Basit Asit-Baz Bozuklukları: Dört Temel Tablo ve Kompanzasyon Haritası"
   },
   {
    "brans": "endokrinoloji",
@@ -5674,13 +5662,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
   }
  ],
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
@@ -6240,8 +6228,8 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-mkb-kapsamli-inceleme",
-   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+   "slug": "farmakoloji-finerenon",
+   "baslik": "Yeni Nesil ns-MRA Finerenon"
   }
  ],
  "nefroloji/respiratuvar-alkaloz": [
@@ -6252,16 +6240,21 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "asit-baz-denge-bozukluklari",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   }
  ],
  "nefroloji/respiratuvar-asidoz": [
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-fizyopatoloji",
+   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
   {
    "brans": "nefroloji",
    "slug": "metabolik-alkaloz",
@@ -6330,23 +6323,23 @@
  "nefroloji/tubulointerstisiyel-hastaliklar": [
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+   "slug": "asit-baz-denge-bozukluklari",
+   "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+   "slug": "diuretikler",
+   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
   },
   {
    "brans": "nefroloji",
-   "slug": "renovaskuler-hastaliklar",
-   "baslik": "Trombotik ve Renovasküler Hastalıklar"
+   "slug": "farmakoloji-finerenon",
+   "baslik": "Yeni Nesil ns-MRA Finerenon"
   },
   {
    "brans": "nefroloji",
-   "slug": "aldosteron-mekanizmalari",
-   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
+   "slug": "glomeruler-hastaliklar",
+   "baslik": "Glomerüler Hastalıklar"
   }
  ],
  "nefroloji/zona-glomeruloza-steroid": [

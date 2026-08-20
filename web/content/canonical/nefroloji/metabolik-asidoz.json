@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "20 Ağu 2026",
     "tags": ["Asit-Baz Dengesi", "Metabolik Asidoz", "Anyon Açığı", "GOLDMARK", "Renal Tübüler Asidoz", "İdrar Anyon Açığı", "Winters Formülü", "YDUS"],
-    "parent": "basit-asit-baz-bozukluklari",
-    "order": 1
+    "parent": "asit-baz-denge-bozukluklari",
+    "order": 2
   },
   "sections": [
     {
