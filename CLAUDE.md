@@ -463,6 +463,7 @@ güncel değeri betikten al, belgeden değil:
 
 ```bash
 node scripts/asili-denetim.cjs             # görünür / asılı konu
+node scripts/konu-denetim.cjs    # konu künyesi: çift başlık, çift açıklama, boş gövde (CI kapısı DEĞİL)
 node scripts/yetim-denetim.cjs             # yetim içerik dosyası
 node scripts/arac-metadata.cjs --kontrol   # araç indeksi senkron mu
 ```
@@ -560,6 +561,17 @@ kapıdan da geçiyor; kusur yalnızca ekranda görünüyor. Kendini sınayabiliy
 (`--negatif`) ve o da ayrı bir CI adımı — yakalamayı bırakan bir denetim
 sessizce yeşil kalmasın. Raporunda ölçülen etiket sayısı da var, çünkü
 "0 kusur" ile "0 öge" ekranda aynı görünür.
+
+`konu-denetim` konunun KENDİ KİMLİĞİNE bakıyor. Gerçek bir kusurdan doğdu:
+üretim çıktısında `<title>` tekrarı arandığında iki dosyada sadece başlık
+değil BÜTÜN İÇERİK yanlış çıktı — `hiperkalsemi-ve-hiperparatiroidi.json`
+baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` baştan sona MDS
+anlatıyor. Üç kapı da göremez, çünkü kusur kodda değil veride ve dosya
+geçerli JSON.
+
+Çift başlık her zaman kusur değil (aynı konu iki branşta durabilir), o yüzden
+kapı değil rapor. Ama "iki dosya aynı başlığı taşıyor" sinyali bu depoda dört
+kayıttan ikisinde gerçek bir içerik kazası çıkardı — sinyal ucuz ve verimli.
 
 `asili-denetim`, "Diğer Konular" kovasının NEDEN dolduğunu söyler. Ölçüldü:
 görünür 410 konunun **46'sı (%11)** hiyerarşiden düşüyor ve sebepleri üç
