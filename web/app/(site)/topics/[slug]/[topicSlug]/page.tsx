@@ -345,8 +345,11 @@ export default async function TopicDetailPage({
                           {child.title}
                         </h3>
                       </div>
-                      <div className="text-blue-900 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                      {/* Hover ile beliren her şeyin focus karşılığı olmalı: yoksa klavyeyle
+                          gezen kullanıcı kartın tıklanabilir olduğunu gösteren tek işareti
+                          hiç görmüyor. Ok süsleme olduğu için aria-hidden. */}
+                      <div className="text-blue-900 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity">
+                        <svg aria-hidden="true" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                       </div>
