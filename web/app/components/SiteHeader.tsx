@@ -56,6 +56,11 @@ export default function SiteHeader() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  /* Arama BAŞARISIZ olduğunda "Sonuç bulunamadı" demek, kullanıcıya
+     içeriğin var olmadığını ÖĞRETİR. Ayrıca hata dalı results'ı
+     temizlemediği için önceki sorgunun sonuçları yeni sorgunun altında
+     kalıyordu. İkisi de ölçüldü. */
+  const [aramaHatasi, setAramaHatasi] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -67,14 +72,19 @@ export default function SiteHeader() {
         try {
           const data = await searchAction(query);
           setResults(data);
+          setAramaHatasi(false);
         } catch (error) {
+          // Teknik ayrıntı konsola; kullanıcıya BAYAT sonuç gösterilmez.
           console.error("Arama hatası", error);
+          setResults([]);
+          setAramaHatasi(true);
         } finally {
           setLoading(false);
           setIsOpen(true);
         }
       } else {
         setResults([]);
+        setAramaHatasi(false);
         setIsOpen(false);
       }
     }, 300);
@@ -200,9 +210,20 @@ export default function SiteHeader() {
               ) : (
                 !loading && (
                    <div className="p-8 text-center text-slate-500">
-                      <div className="text-4xl mb-2">🤔</div>
-                      <p className="text-sm font-medium">Sonuç bulunamadı.</p>
-                      <p className="text-xs text-slate-400 mt-1">Farklı bir kelime deneyin.</p>
+                      <div className="text-4xl mb-2" aria-hidden="true">{aramaHatasi ? "📡" : "🤔"}</div>
+                      {aramaHatasi ? (
+                        <>
+                          <p className="text-sm font-medium">Arama şu an yapılamıyor.</p>
+                          <p className="text-xs text-slate-400 mt-1">
+                            Bu, aradığın konunun olmadığı anlamına gelmez — birazdan tekrar dene.
+                          </p>
+                        </>
+                      ) : (
+                        <>
+                          <p className="text-sm font-medium">Sonuç bulunamadı.</p>
+                          <p className="text-xs text-slate-400 mt-1">Farklı bir kelime deneyin.</p>
+                        </>
+                      )}
                    </div>
                 )
               )}
