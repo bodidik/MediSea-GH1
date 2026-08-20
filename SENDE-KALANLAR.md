@@ -1103,6 +1103,31 @@ Uygulamada dinamik içe aktarma (`next/dynamic`) hiç kullanılmıyor, yani
 > (76), `lib/content.shared.ts`, `lib/topicChildren.ts`, `lib/planSync.ts`,
 > `app/config/nav.ts`, `(ydus)/config/fleet.ts`, `ProtectedContent.tsx`.
 >
+> **İKİNCİ DÜZELTME (20 Ağustos 2026, aynı gün).** Ölçüm yine dardı: hem
+> geçişli tarama hem ondan önceki sığ sayım yalnızca `app/` ve `lib/`
+> altını geziyordu. Web KÖKÜNDE `components/` diye **ikinci bir bileşen
+> klasörü** var (`app/components/` ile karıştırılması kolay) ve altısının
+> **altısı da** hiçbir yerden içe aktarılmıyor:
+>
+> | satır | dosya |
+> |---|---|
+> | 197 | `components/AdminBar.tsx` |
+> | 130 | `components/ChildLinks.tsx` |
+> | 80 | `components/TableOfContents.tsx` |
+> | 72 | `components/UpgradeCTA.tsx` |
+> | 61 | `components/SecurePlayer.tsx` |
+> | 38 | `components/TopicSidebar.tsx` |
+>
+> Toplam **578 satır** daha. Alt çizgili klasörler dışındaki sayı böylece
+> **30 dosya / 2556 satır** değil **36 dosya / 3134 satır**.
+>
+> `ChildLinks` bir tur "canlı" göründü, çünkü `lib/topicChildren.ts` içinde
+> `getChildLinks` adlı bir FONKSİYON var — ad benzerliği, içe aktarım değil.
+>
+> **Yan bulgu:** `components/TopicSidebar.tsx` hover ile beliren bir ok
+> taşıyor ve focus karşılığı yok — konu sayfasında düzeltilen kusurun aynısı.
+> Dosya ulaşılamaz olduğu için DÜZELTİLMEDİ; bağlanırsa bu da düzeltilmeli.
+
 > **Yan bulgu:** `app/api/programs/routes.ts` — dosya adı `route.ts` DEĞİL
 > `routes.ts`, yani Next bunu uca çevirmiyor. Kullanıcıya bedeli yok, çünkü
 > `/api/programs`'ı yalnızca `app/_programs/page.tsx` çağırıyor ve o sayfa

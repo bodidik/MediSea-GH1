@@ -30,7 +30,23 @@
 const fs = require('fs');
 const path = require('path');
 
-const KOK = path.join(__dirname, '..', 'app');
+/**
+ * KAPSAM: yalnızca `app/` DEĞİL.
+ *
+ * Denetim bir dönem sadece `app/` altını geziyordu ve bu gerçek bir kusuru
+ * kaçırdı: `middleware.ts` web KÖKÜNDE duruyor ve içindeki korumasız yetki
+ * karşılaştırması (bütün /kayseritip alanının kapısı) taramaya hiç girmedi.
+ * Kök dizinde ayrıca `components/` diye İKİNCİ bir bileşen klasörü var —
+ * `app/components/` ile karıştırılması kolay.
+ *
+ * Kapsamı daraltmak, "0 kusur" ile "hiç bakmadım"ı aynı görüntüye sokuyor.
+ */
+const KOKLER = ['app', 'lib', 'components', 'hooks']
+  .map((d) => path.join(__dirname, '..', d))
+  .filter((d) => fs.existsSync(d));
+const TEKIL = ['middleware.ts', 'auth.ts', 'auth.config.ts']
+  .map((f) => path.join(__dirname, '..', f))
+  .filter((f) => fs.existsSync(f));
 
 /* ── yardımcılar ─────────────────────────────────────────────────────── */
 
@@ -71,15 +87,19 @@ function etiketler(s, ad) {
   return out;
 }
 
-function tsxDosyalari(kok) {
-  const out = [];
-  (function yuru(d) {
-    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
-      const p = path.join(d, e.name);
-      if (e.isDirectory()) { if (!/node_modules|\.next/.test(p)) yuru(p); continue; }
-      if (/\.tsx$/.test(e.name)) out.push(p);
-    }
-  })(kok);
+function tsxDosyalari() {
+  const out = [...TEKIL];
+  for (const kok of KOKLER) {
+    (function yuru(d) {
+      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+        const p = path.join(d, e.name);
+        if (e.isDirectory()) { if (!/node_modules|\.next/.test(p)) yuru(p); continue; }
+        // .ts de taranıyor: bozuk kodlama ve etiket denetimleri yalnızca
+        // .tsx'e özgü değil (middleware.ts örneği).
+        if (/\.tsx?$/.test(e.name)) out.push(p);
+      }
+    })(kok);
+  }
   return out;
 }
 
@@ -93,7 +113,7 @@ function denetle() {
   const kusur = [];
   const rapor = [];   // kapı DEĞİL — insan kararı isteyen adaylar
   const dengesiz = [];
-  const dosyalar = tsxDosyalari(KOK);
+  const dosyalar = tsxDosyalari();
   let olculenEtiket = 0;
 
   for (const p of dosyalar) {
@@ -219,7 +239,7 @@ function yaz(sonuc) {
 // Kusur bulamayan bir denetim, düzeltilmiş bir yüzeyden ayırt edilemez.
 // --negatif, bilerek bozuk bir dosya bırakıp yakalandığını gösterir.
 function negatifKontrol() {
-  const tohum = path.join(KOK, 'components', '_arayuz-denetim-tohum.tsx');
+  const tohum = path.join(__dirname, '..', 'app', 'components', '_arayuz-denetim-tohum.tsx');
   const icerik = [
     'export function Tohum() {',
     '  return (',
