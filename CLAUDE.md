@@ -1137,9 +1137,24 @@ Kaynakta bir kusur bulmak, o kusurun kullanıcıya ulaştığını göstermez.
 yapıldı — `LangSwitch` ile `SectionDetailFilters`. Kod doğru, kapılar geçti,
 kullanıcıya ulaşan hiçbir şey değişmedi.
 
-Kontrol tek satır: dosya adı başka bir dosyadan içe aktarılıyor mu?
-`next/dynamic` bu depoda HİÇ kullanılmıyor, yani "çalışma zamanında
+**Ama "içe aktarılmış mı" YANLIŞ SORU.** Doğrusu **"gerçek bir rotadan
+ulaşılabiliyor mu"**: alt çizgili klasördeki bir sayfa rotaya alınmıyor,
+dolayısıyla ONUN içe aktardığı her şey de kullanıcıya ulaşmıyor. Ölçüldü —
+`PremiumVideoRecommendations` "içe aktarılmış" görünüyordu ama onu yalnızca
+`_hematoloji` ve `_romatoloji` sayfaları çağırıyor.
+
+Doğru ölçüm geçişli: rota dosyalarından (alt çizgili klasörde OLMAYAN
+`page`/`layout`/`route`…) başla, içe aktarma zincirini izle, kalanı ulaşılmaz
+say. Bu ölçütle 483 kaynak dosyanın 76'sı (8160 satır) ulaşılmıyor; 46'sı
+alt çizgili klasörlerde, 30'u (2556 satır) dışarıda. Sığ sayım 20 dosya
+demişti. `next/dynamic` bu depoda HİÇ kullanılmıyor, yani "çalışma zamanında
 yükleniyordur" ihtimali yok.
+
+**Takma ad çözerken `tsconfig.json`'daki `paths` eşlemesini GERÇEKTEN oku.**
+`@/components/*` burada İKİ hedefe birden eşleniyor (`app/components/*` ve
+`components/*`). Yalnızca `@/*` kuralını uygulayan bir çözücü bu içe
+aktarımları göremiyor ve `AddToSRButton` gibi canlı dosyaları ölü sayıyor.
+Ölçüme olumlu kontrol koy: bilinen canlı bir dosya listede ÇIKMAMALI.
 
 **Ad araması tek başına yanıltır — üç yanlış pozitif ölçüldü:**
 
