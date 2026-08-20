@@ -38,6 +38,24 @@ export default function MeldNaPage() {
   const tbAdj = Math.max(1, tbNum);
   const inrAdj = Math.max(1, inrNum);
 
+  /**
+   * MAKULLÜK KAPISI — kıskaçlar çöp girdiyi meşru bir skora çeviriyordu.
+   *
+   * `parseLocaleNumber` ayrıştıramadığı her şeyi 0'a çeviriyor; ardından
+   * `Math.max(1, …)` ve sodyum kıskacı o sıfırı formülün tabanına
+   * oturtuyor. Ölçüldü: alanlar BOŞALTILDIĞINDA, negatif değer ya da harf
+   * girildiğinde araç çizgi değil **MELD-Na 17** basıyordu — nakil
+   * listesi konuşulan aralıkta, somut bir sayı.
+   *
+   * Sınırlar klinik eşik değil MAKULLÜK sınırı: bu aralıkların dışındaki
+   * bir değer laboratuvardan gelmiş olamaz.
+   */
+  const makul =
+    tbNum  >= 0.1 && tbNum  <= 60 &&
+    inrNum >= 0.5 && inrNum <= 25 &&
+    naNum  >= 90  && naNum  <= 190 &&
+    (onDialysis || (crNum >= 0.1 && crNum <= 25));
+
   const meld = 0.957 * Math.log(crAdj) + 0.378 * Math.log(tbAdj) + 1.12 * Math.log(inrAdj) + 0.643;
   const meldNa = meld + 1.59 * (135 - naAdj);
   const score = round(meldNa, 0);
@@ -131,9 +149,11 @@ export default function MeldNaPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">⚕️</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HESAPLANAN MELD-Na SKORU</span>
-           <div className="text-7xl font-black text-white drop-shadow-lg">{score}</div>
+           <div className="text-7xl font-black text-white drop-shadow-lg">{makul ? score : "–"}</div>
            <div className="mt-4 text-xs font-bold text-amber-400 uppercase tracking-widest italic max-w-xs">
-             Skor yükseldikçe 90 günlük mortalite riski artış gösterir.
+             {makul
+               ? "Skor yükseldikçe 90 günlük mortalite riski artış gösterir."
+               : "Değerleri girin — bilirubin, INR, kreatinin ve sodyum."}
            </div>
         </div>
 
