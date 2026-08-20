@@ -1267,3 +1267,57 @@ açısından da önemli: aynı başlık iki adreste, ikisi de site haritasında.
 bölümsüz konu, aynı başlığı taşıyan konular, aynı açıklamayı taşıyan konular.
 **CI kapısı DEĞİL**, çünkü aynı başlık bazen meşru bir içerik kararı
 (`yetim-denetim` ve `asili-denetim` gibi). Şu an 4 kayıt raporluyor.
+
+---
+
+## 30. Premium verilen kullanıcı 30 gün boyunca göremeyebilir
+
+Oturum `jwt` stratejisiyle çalışıyor ve `plan` ile `institution` jetona
+**yalnızca girişte** basılıyor:
+
+```ts
+// auth.config.ts
+async jwt({ token, user }) {
+  if (user) {                      // ← sadece login anında dolu
+    token.plan        = (user as any).plan;
+    token.institution = (user as any).institution;
+  }
+  return token;
+}
+```
+
+Erişim kontrolü de veritabanına değil OTURUMA bakıyor
+(`lib/access.ts` → `const plan = (session.user as any).plan ?? 'free'`).
+
+Planlar `node scripts/plan-ver.cjs <eposta> premium` ile doğrudan
+veritabanında değişiyor. Yani:
+
+| olay | kullanıcının gördüğü |
+|---|---|
+| plan `premium` yapıldı | hâlâ "Premium üyelik gerekli" — oturumundaki jeton `free` diyor |
+| plan geri alındı | erişim DEVAM ediyor — jeton hâlâ `premium` diyor |
+
+Ne kadar sürüyor: `maxAge` verilmemiş, yani NextAuth varsayılanı **30 gün**.
+Kullanıcı çıkış yapıp yeniden girerse hemen düzeliyor.
+
+**Neden ben düzeltmedim:** çare auth yolunu değiştirmeyi gerektiriyor ve o
+yolu doğrulayamıyorum — giriş kimliği bende yok, Mongo'ya erişimim yok.
+Doğrulanmamış bir değişiklik burada giriş akışının tamamını kırabilir; bu
+depodaki kural da değiştirdiğimi ölçmek. İki seçenek var:
+
+1. **Jetonu süreli tazele.** `auth.ts` içindeki (Node tarafı, mongoose
+   erişimi var) `jwt` geri çağrısında, jeton N dakikadan eskiyse kullanıcıyı
+   veritabanından yeniden oku. Maliyeti N dakikada bir sorgu.
+   **Şart:** okuma başarısız olursa jetonu OLDUĞU GİBİ bırak — Mongo
+   erişilemezken oturumu düşürmek, belgede kayıtlı "yapılandırma eksikliği
+   kapıyı açmamalı / kırmamalı" kuralının ihlali olur.
+   Dikkat: `auth.config.ts` EDGE'de yükleniyor, oraya mongoose konamaz;
+   tazeleme yalnızca `auth.ts` tarafında yapılabilir.
+
+2. **Elle tazeleme yolu ver.** Plan değiştikten sonra kullanıcıya "çıkış yap
+   ve tekrar gir" demek yerine, oturumu yenileyen bir düğme
+   (`unstable_update`) ya da plan değişince oturumu geçersiz kılan bir alan.
+
+Ölçüm notu: bu davranış KAYNAK OKUNARAK bulundu, canlıda sürülmedi (giriş
+gerekiyor). Sürülmesi için premium verilmiş bir hesapla giriş yapıp planı
+değiştirmek ve sayfayı yenilemek yeterli.
