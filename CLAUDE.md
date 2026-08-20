@@ -258,7 +258,22 @@ silinme yalnızca `/tekrar`da ve kasıtlı. `medisea:log:v1` ve
   gösteriliyordur). Silme yalnızca konteyner VAR ama metin tutmuyorsa olur.
 - **Kaydetme hatası yutulmaz.** Depo dolduğunda "Kaydedildi" yazmak
   kaydetmemekten beterdir; arayüz uyarır ve kurtarma yolu (kopyala / PNG
-  indir) sunar.
+  indir) sunar. **ÖLÇÜLDÜ — sınıf kapalı** (bir dönem "doğrulanamadı" diye
+  açık bırakılmıştı):
+
+  | ölçüt | sonuç |
+  |---|---|
+  | %75 eşiği | 3.82 MB tohumlandı (oran 0.76) → uyarı çıktı, çubuk kırmızıya döndü |
+  | uyarı metni kontrastı | 4.70 · kullanım yazısı 4.76 (ikisi de eşiğin üstünde) |
+  | yazma başarısız olunca | `role="alert"` beliriyor: *"Tarayıcı depolaması dolu olduğu için bu not kaydedilemedi. Sekmeyi kapatırsan kaybolur."* + "Yazıyı kopyala" / "Yer aç" |
+  | sayfa ayakta mı, metin duruyor mu | ikisi de evet |
+
+  **Kotayı GERÇEKTEN doldurmaya çalışma — bu ortamda mümkün değil.** 15.27 MB
+  yazıldı ve `setItem` hâlâ başarılı döndü; tarayıcı panelinin kotası 5 MB
+  varsayımının çok üstünde. Hata dalını sürmenin çalışan yolu
+  `Storage.prototype.setItem`'ı yalnızca ilgili anahtar öneki için fırlatacak
+  şekilde sarmalamak, ölçüm bitince geri almak. Bu, kodun hata dalını sınar —
+  "depo gerçekten doldu" demek DEĞİLDİR ve raporda öyle yazılmalı.
 - **Uzlaşmadan push YOK.** Sunucudan bir kez okumadan hiçbir push gitmez.
   `beforeunload` her gezinmede push tetikliyor; deposu boş bir cihaz aksi
   halde pull yetişmeden sunucudaki yedeğin üzerine boş yük yazıyordu.
