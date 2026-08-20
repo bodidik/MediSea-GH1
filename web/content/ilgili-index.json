@@ -490,6 +490,11 @@
    "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "otiroid-hasta-sendromu-ntis",
    "baslik": "Ötiroid Hasta Sendromu"
@@ -498,16 +503,6 @@
    "brans": "onkoloji",
    "slug": "tls-elektrolit-diyaliz-yonetimi",
    "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-fizyopatoloji",
-   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-asidoz",
-   "baslik": "Respiratuvar Asidoz"
   }
  ],
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
@@ -5517,9 +5512,9 @@
  ],
  "nefroloji/asit-baz-fizyopatoloji": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   },
   {
    "brans": "nefroloji",
@@ -5542,6 +5537,13 @@
    "brans": "nefroloji",
    "slug": "kbh-mkb-kapsamli-inceleme",
    "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+  }
+ ],
+ "nefroloji/delta-anyon-acigi-delta-delta-orani": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperkalsemi-ve-hiperparatiroidi",
+   "baslik": "Asit-Baz Denge Bozuklukları"
   }
  ],
  "nefroloji/diuretikler": [
@@ -6173,14 +6175,14 @@
  ],
  "nefroloji/respiratuvar-asidoz": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
-  {
    "brans": "nefroloji",
    "slug": "asit-baz-fizyopatoloji",
    "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   }
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [
