@@ -1963,6 +1963,13 @@
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
   }
  ],
+ "enfeksiyon/bruselloz-hepatobiliyer-tutulum": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  }
+ ],
  "enfeksiyon/c-difficile-vankomisin-fidaksomisin": [
   {
    "brans": "enfeksiyon",
@@ -2474,6 +2481,11 @@
  "enfeksiyon/invazive-mantar-enfeksiyon": [
   {
    "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "candidozyma-auris-klinik",
    "baslik": "Candidozyma auris: Klinik Prezentasyon ve YDUS İpuçları"
   },
@@ -2486,11 +2498,6 @@
    "brans": "enfeksiyon",
    "slug": "cr-hvkp-endoftalmi-komplikasyonu",
    "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "cr-hvkp-hipervirulan-varyant",
-   "baslik": "CR-hvKP: Hipervirülan Varyant ve Kusursuz Fırtına"
   }
  ],
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
@@ -2986,6 +2993,11 @@
   }
  ],
  "gastroenteroloji/karaciger-hastaliklari": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
