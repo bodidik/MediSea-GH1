@@ -415,21 +415,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-ods-ve-relowering",
    "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
   }
  ],
  "endokrinoloji/he-vs-miksodem-psikozu": [
@@ -1404,18 +1389,13 @@
  "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
   {
    "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
+   "slug": "dopamin-agonistleri-kalp-kapak",
+   "baslik": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+   "brans": "endokrinoloji",
+   "slug": "ektopik-prolaktin-salgisi",
+   "baslik": "Ektopik Prolaktin Salgısı"
   }
  ],
  "endokrinoloji/riedel-tiroiditi": [
@@ -2600,21 +2580,33 @@
    "baslik": "Anemiler"
   }
  ],
+ "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "prokalsitonin-yukselme-paterni",
+   "baslik": "Prokalsitonin (PCT) Sentez ve Salınım Dinamikleri"
+  }
+ ],
  "enfeksiyon/prokalsitonin-genel": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
+   "brans": "enfeksiyon",
+   "slug": "mantar-enfeksiyon-ana-sayfa",
+   "baslik": "Mantar Enfeksiyonları"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-derleme",
+   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+   "brans": "enfeksiyon",
+   "slug": "vanco-bobrek",
+   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
  ],
  "enfeksiyon/prokalsitonin-yukselme-paterni": [
@@ -4826,16 +4818,6 @@
    "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
   }
  ],
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
