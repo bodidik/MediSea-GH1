@@ -19,6 +19,20 @@ export default function KhoranaPage() {
   const wbcNum = parseLocaleNumber(wbc);
   const bmiNum = parseLocaleNumber(bmi);
 
+  /**
+   * MAKULLÜK KAPISI — aynı "düşük = kötü" ailesi.
+   *
+   * Hemoglobin < 10 puan getiriyor, yani boş alan sıfıra çevrilince puan
+   * kazanıyor. Ölçüldü (canlı): form BOMBOŞKEN skor **1** çıkıyordu —
+   * Khorana'da 0 düşük, 1-2 orta risk demek, yani veri yokken hasta orta
+   * riske yerleştiriliyordu ve sayfa profilaksi kararından söz ediyor.
+   */
+  const makul =
+    plt >= 1 && plt <= 2000 &&
+    hgbNum >= 1 && hgbNum <= 25 &&
+    wbcNum >= 0.1 && wbcNum <= 200 &&
+    bmiNum >= 8 && bmiNum <= 90;
+
   const score = cancerSite
     + (plt >= 350 ? 1 : 0)
     + ((hgbNum < 10 || esaUse) ? 1 : 0)
@@ -107,7 +121,7 @@ export default function KhoranaPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">KHORANA</span>
-            <div className="text-5xl font-black text-white">{score}</div>
+            <div className="text-5xl font-black text-white">{makul ? score : "–"}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>

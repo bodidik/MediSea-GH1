@@ -37,6 +37,35 @@ export default function SOFAPage() {
   const crNum = parseLocaleNumber(cr);
   const urineNum = parseLocaleNumber(urine);
 
+  /**
+   * MAKULLÜK KAPISI — SOFA da "düşük = kötü" ailesinden.
+   *
+   * Belgedeki eski not SOFA'yı "yüksek = kötü, 0 en hafif dala düşer" diye
+   * güvenli sayıyordu; ÖLÇÜM bunu çürüttü. Bileşenlerin çoğu DÜŞÜK değere
+   * puan veriyor (PaO2/FiO2, trombosit, ortalama arter basıncı, GCS), yani
+   * boş alanlar sıfıra çevrilince neredeyse tam puan alıyor. Canlıda form
+   * BOMBOŞKEN skor **15** çıkıyordu — %80'in üzerinde mortaliteye karşılık
+   * gelen bir değer.
+   *
+   * İDRAR ÇIKIŞI özel: 0 mL meşru bir ölçüm (anüri) ve en ağır dalı hak
+   * ediyor. O yüzden idrar sayıya göre değil, alanın BOŞ olup olmadığına
+   * göre denetleniyor. Vazopressör dozu da 0 olabilir (ilaç almıyor).
+   */
+  const sayiMakul = (ham: string, alt: number, ust: number) => {
+    if (ham.trim() === "") return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+
+  const makul =
+    sayiMakul(pf, 20, 700) &&
+    sayiMakul(plt, 1, 2000) &&
+    sayiMakul(bili, 0.1, 60) &&
+    sayiMakul(map, 20, 200) &&
+    sayiMakul(gcs, 3, 15) &&
+    sayiMakul(cr, 0.1, 25) &&
+    sayiMakul(urine, 0, 10000);
+
   // --- SKORLAMA MANTIKLARI (SENTEZ) ---
   const scoreResp = () => {
     if (pfNum >= 400) return 0;
@@ -212,7 +241,7 @@ export default function SOFAPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">SOFA</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2 text-center">TOPLAM ORGAN YETMEZLİĞİ SKORU</span>
-           <div className="text-7xl font-black text-white drop-shadow-lg">{total}</div>
+           <div className="text-7xl font-black text-white drop-shadow-lg">{makul ? total : "–"}</div>
            <p className="mt-4 text-[10px] font-bold text-amber-400 uppercase tracking-widest text-center italic">
              Skor arttıkça hastane içi mortalite riski artar. (0-2: %10, &gt;11: %95)
            </p>
