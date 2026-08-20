@@ -1963,11 +1963,104 @@
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
   }
  ],
+ "enfeksiyon/bruselloz": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve YDUS İpuçları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-tedavi-direnc-yeni-nesil",
+   "baslik": "Candidozyma auris: Tedavi Yönetimi, İlaç Direnci ve Yeni Nesil Antifungaller"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "cr-hvkp-endoftalmi-komplikasyonu",
+   "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
+  }
+ ],
+ "enfeksiyon/bruselloz-hematolojik-komplikasyonlar": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
  "enfeksiyon/bruselloz-hepatobiliyer-tutulum": [
   {
    "brans": "gastroenteroloji",
    "slug": "karaciger-hastaliklari",
    "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
+ "enfeksiyon/bruselloz-intrasellular-patobiyoloji": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
+ "enfeksiyon/bruselloz-tedavi-algoritmasi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
   }
  ],
  "enfeksiyon/c-difficile-vankomisin-fidaksomisin": [
@@ -2222,6 +2315,11 @@
  "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
   {
    "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
   },
@@ -2229,11 +2327,6 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/dalbavansin-VISA-VRSA": [
@@ -2481,23 +2574,23 @@
  "enfeksiyon/invazive-mantar-enfeksiyon": [
   {
    "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "bruselloz-hepatobiliyer-tutulum",
    "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-klinik",
-   "baslik": "Candidozyma auris: Klinik Prezentasyon ve YDUS İpuçları"
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-tedavi-direnc-yeni-nesil",
-   "baslik": "Candidozyma auris: Tedavi Yönetimi, İlaç Direnci ve Yeni Nesil Antifungaller"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "cr-hvkp-endoftalmi-komplikasyonu",
-   "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
   }
  ],
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
@@ -3383,6 +3476,11 @@
   }
  ],
  "hematoloji/aplastik-anemi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
   {
    "brans": "hematoloji",
    "slug": "trombositopeni-itp",
