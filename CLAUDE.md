@@ -1129,6 +1129,32 @@ giriş kurulamıyor" sanıldı. Gövde okununca credentials sağlayıcısı orad
 Bu, belgedeki "ekrana basmak için kırptığın değeri ölçüme geri verme"
 kuralının sayı tarafındaki hâli.
 
+### Bir bileşeni düzeltmeden önce BAĞLI olduğunu doğrula
+
+Kaynakta bir kusur bulmak, o kusurun kullanıcıya ulaştığını göstermez.
+Ölçüldü: `app/` altında dışa aktarılıp hiçbir yerden içe aktarılmayan
+**yirmi bileşen** var (1711 satır) ve iki arayüz düzeltmesi tam da onlara
+yapıldı — `LangSwitch` ile `SectionDetailFilters`. Kod doğru, kapılar geçti,
+kullanıcıya ulaşan hiçbir şey değişmedi.
+
+Kontrol tek satır: dosya adı başka bir dosyadan içe aktarılıyor mu?
+`next/dynamic` bu depoda HİÇ kullanılmıyor, yani "çalışma zamanında
+yükleniyordur" ihtimali yok.
+
+**Ad araması tek başına yanıltır — üç yanlış pozitif ölçüldü:**
+
+- ad yalnızca bir YORUM içinde geçiyordu
+  (`// … QuestionView … çatışmaması için`, `{/* CanonicalViewer simülasyonu */}`)
+- `Lock` bizim `components/Lock.tsx` değil, `lucide-react` ikonuydu
+
+Doğrusu içe aktarma satırını aramak, sonra bulduğunu yorum olup olmadığına
+bakarak sınamak. İki yöntem farklı sonuç verirse dar olanı değil, DOĞRUyu ara.
+
+Ölü bileşenlerin bir kısmı artık değil **bağlanmamış özellik**: üçünün
+canlıda çalışan API ucu var (`daily-program`, `quiz/history`, `quiz/today`)
+ve o uçlar "uydurma veri dönme" düzeltmesinden geçmiş. Silmek mi bağlamak mı
+sorusu ürün kararı — SENDE-KALANLAR 27. madde.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
