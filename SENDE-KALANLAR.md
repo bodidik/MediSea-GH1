@@ -1073,3 +1073,61 @@ hesaplanan toplam da 40.
 **Aynı kusur öteki araçlarda da olabilir**: `=== opt.pts` ile karşılaştıran
 her araçta, iki seçenek aynı puanı taşıyorsa ikisi birden seçili görünür.
 Aramanın yolu: aynı grupta yinelenen puan değeri var mı.
+
+---
+
+## 27. Yirmi bileşen hiçbir yerden çağrılmıyor — 1711 satır ölü arayüz
+
+Dışa aktarılmış ama hiçbir dosyadan içe aktarılmayan yirmi bileşen var.
+Uygulamada dinamik içe aktarma (`next/dynamic`) hiç kullanılmıyor, yani
+"belki çalışma zamanında yükleniyordur" ihtimali yok.
+
+| satır | dosya |
+|---|---|
+| 227 | `_endokrinoloji/…/akromegali/tedavi/akromegali-tedavi.tsx` |
+| 150 | `components/QuestionView.tsx` |
+| 146 | `components/PremiumQuizHistory.tsx` |
+| 142 | `components/PremiumDailyProgram.tsx` |
+| 137 | `components/GuidelinesFilters.tsx` |
+| 94 | `tools/components/AdBanner.tsx` |
+| 86 | `(ydus)/components/CanonicalViewer.tsx` |
+| 79 | `components/HeaderClient.tsx` |
+| 77 | `components/SectionsFilters.tsx` |
+| 77 | `components/StudyQuickActions.tsx` |
+| 76 | `components/StrategyMap.tsx` |
+| 75 | `(site)/topics/_components/TopicsFilters.tsx` |
+| 73 | `components/SectionDetailFilters.tsx` |
+| 62 | `components/SectionsTable.tsx` |
+| 55 | `components/LangSwitch.tsx` |
+| 47 | `components/NavCard.tsx` |
+| 47 | `components/PremiumGate.tsx` |
+| 26 | `components/QuestionRun.tsx` |
+| 20 | `components/PremiumQuizToday.tsx` |
+| 15 | `components/Lock.tsx` |
+
+**Neden karar SENDE:** bunların bir kısmı silinecek artık, bir kısmı ise
+BAĞLANMAMIŞ ÖZELLİK olabilir — ikisini ayıran şey ürün kararı, ölçüm değil.
+Özellikle üçü dikkat istiyor, çünkü canlıda çalışan API uçları var ve o uçlar
+"uydurma veri dönme" düzeltmesinden geçmiş:
+
+- `PremiumDailyProgram` → `/api/premium/daily-program`
+- `PremiumQuizHistory` → `/api/premium/quiz/history`
+- `PremiumQuizToday` → `/api/premium/quiz/today`
+
+Yani premium panosunda günlük program ve quiz geçmişi YOK, ama sunucu tarafı
+onları besleyecek durumda. Soru "silelim mi" değil, **"bağlayalım mı"**.
+
+`AdBanner` de aynı durumda: reklam veritabanı (`tools/data/ads.ts`, 114 aracı
+etiketleyen kayıtlarla) duruyor ama banner hiçbir araç sayfasında basılmıyor.
+
+**Ölçüm notu — iki bağımsız yöntem kullanıldı.** Önce içe aktarma deseni
+arandı, sonra dosya adının kaynakta hiç geçmediği düz metin aramasıyla
+sınandı. İkincisi beş dosyayı "canlı" gösterdi ama üçünde ad yalnızca bir
+YORUM içinde geçiyordu (`// … QuestionView … çatışmaması için`,
+`{/* CanonicalViewer simülasyonu */}`), birinde de `Lock` bizim bileşen değil
+lucide-react ikonuydu. Ad araması tek başına yanıltır.
+
+**Bu maddenin bir bedeli zaten ödendi:** iki arayüz düzeltmesi (LangSwitch'e
+`aria-current`, SectionDetailFilters'a `aria-pressed`) bu dosyalara yapıldı ve
+kullanıcıya ulaşmıyor. Zararsızlar ve bileşenler bağlanırsa hazır olacaklar,
+o yüzden geri alınmadı — ama "düzelttim" demek yanlış olurdu.
