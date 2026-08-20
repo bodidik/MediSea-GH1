@@ -6,6 +6,18 @@ import path from 'path';
 import { randomUUID } from 'crypto';
 
 const SLAYT_JSON = path.join(process.cwd(), 'content', 'kayseritip', 'slaytlar.json');
+
+/**
+ * Dosyanın HİÇ OLMAMASI meşru bir ilk çalıştırmadır; VAR olup okunamaması
+ * "bilmiyoruz" demektir ve bilmezken üzerine yazılmaz.
+ */
+function slaytIndeksiniOku(): { dersler?: unknown[]; dosyalar?: unknown[] } | null {
+  if (!fs.existsSync(SLAYT_JSON)) return { dersler: [], dosyalar: [] };
+  try {
+    const j = JSON.parse(fs.readFileSync(SLAYT_JSON, 'utf-8'));
+    return j && typeof j === 'object' ? j : null;
+  } catch { return null; }
+}
 const DOSYA_DIR  = path.join(process.cwd(), 'public', 'kayseritip', 'dosyalar');
 
 export async function POST(req: NextRequest) {
@@ -40,6 +52,24 @@ export async function POST(req: NextRequest) {
   const guvenliAd = `${randomUUID().slice(0, 8)}-${path.basename(file.name).replace(/[^a-zA-Z0-9._-]/g, '_')}`;
   const hedef = path.join(DOSYA_DIR, guvenliAd);
 
+  /**
+   * İndeks dosyayı DİSKE YAZMADAN ÖNCE okunuyor. Sıra bir dönem tersti ve
+   * iki kusur üretiyordu:
+   *
+   *   - İndeks okunamazsa istek 500 veriyor AMA yüklenen dosya diskte
+   *     kalıyordu: arayüzden görünmeyen, kimsenin silmediği öksüz dosya.
+   *     Kullanıcı da yüklemenin başarısız olduğunu sanıyordu.
+   *   - Okuma korumasızdı; SLAYT_JSON henüz yoksa (ilk yükleme) readFileSync
+   *     fırlatıyor ve yükleme HİÇ çalışmıyordu.
+   */
+  const mevcut = slaytIndeksiniOku();
+  if (!mevcut) {
+    return NextResponse.json(
+      { error: 'Slayt dizini okunamadı; dosya yüklenmedi.' },
+      { status: 500 }
+    );
+  }
+
   if (!fs.existsSync(DOSYA_DIR)) fs.mkdirSync(DOSYA_DIR, { recursive: true });
   fs.writeFileSync(hedef, Buffer.from(await file.arrayBuffer()));
 
@@ -58,7 +88,6 @@ export async function POST(req: NextRequest) {
     tip,
   };
 
-  const mevcut = JSON.parse(fs.readFileSync(SLAYT_JSON, 'utf-8'));
   mevcut.dosyalar = [yeniDosya, ...(mevcut.dosyalar ?? [])];
   fs.writeFileSync(SLAYT_JSON, JSON.stringify(mevcut, null, 2), 'utf-8');
 

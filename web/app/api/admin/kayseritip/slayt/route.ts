@@ -9,6 +9,20 @@ function isAdmin(session: any) {
 }
 
 const SLAYT_JSON = path.join(process.cwd(), 'content', 'kayseritip', 'slaytlar.json');
+
+/**
+ * Korumasız okuma iki şeyi birden bozuyordu: dosya henüz yoksa POST hiç
+ * çalışmıyor, bozuksa istek ham 500 ile düşüyordu. Dosyanın HİÇ OLMAMASI
+ * meşru ilk çalıştırma; VAR olup okunamaması "bilmiyoruz" — o durumda
+ * üzerine yazılmaz.
+ */
+function slaytIndeksiniOku(): { dersler: any[]; dosyalar?: any[] } | null {
+  if (!fs.existsSync(SLAYT_JSON)) return { dersler: [], dosyalar: [] };
+  try {
+    const j = JSON.parse(fs.readFileSync(SLAYT_JSON, 'utf-8'));
+    return Array.isArray(j?.dersler) ? j : null;
+  } catch { return null; }
+}
 const DOSYA_DIR  = path.join(process.cwd(), 'public', 'kayseritip', 'dosyalar');
 
 /** Yeni slayt metaverisi ekle */
@@ -21,7 +35,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'id, baslik, dosya ve tip zorunludur.' }, { status: 400 });
   }
 
-  const mevcut = JSON.parse(fs.readFileSync(SLAYT_JSON, 'utf-8'));
+  const mevcut = slaytIndeksiniOku();
+  if (!mevcut) {
+    return NextResponse.json(
+      { error: 'Slayt dizini okunamadı; üzerine yazılmadı.' },
+      { status: 500 }
+    );
+  }
   if (mevcut.dersler.find((d: any) => d.id === id)) {
     return NextResponse.json({ error: 'Bu id zaten var.' }, { status: 409 });
   }
