@@ -733,6 +733,21 @@ Doğrulandı (canlı): `/tools` `○` statik, üç istekte de `HIT`, aynı yanı
 
 Bir sayfanın gerçekten sunucuda basıldığını **ham HTML'de `<h1>` ve
 `<a>` sayarak** doğrula; tarayıcıdaki DOM hidrasyondan sonrasını gösterir
+
+**Sınırı SAYFANIN TAMAMINA koymak aynı kusurun ikinci hâli.** Ölçüldü:
+`/giris` bütünüyle tek bir `<Suspense fallback={null}>` içindeydi, çünkü
+`?gerekli=` parametresini okuyordu. Sunucudan gelen giriş sayfası bomboştu —
+form yok, alanlar yok, `<h1>` yok (kardeşi `/kayit` sunucuda 1 başlık
+basıyordu, ayırt edici ölçüm bu oldu). JavaScript yavaş ya da düşmüşse
+kullanıcı dönüşümün en kritik yüzeyinde beyaz sayfa görüyor.
+
+Kural: sınır **parametreye bağlı en küçük parçayı** sarsın. `/giris`te bu
+yalnızca bir uyarı kutusuydu; ayrı bileşene alındı ve sayfanın geri kalanı
+sunucuda basılır oldu (h1 1, form 1, input 2).
+
+Bunu yakalamanın ucuz yolu: her sayfanın SUNUCU HTML'inde `<h1>` say.
+Sıfır çıkan sayfa ya başlıksız ya da sunucuda hiç üretilmiyor demektir.
+
 ve bu kusuru gizler.
 
 ### `metadata` MİRAS ALINIR — `page.tsx`e bakan ölçüm yanılır
