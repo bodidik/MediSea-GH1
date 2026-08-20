@@ -72,6 +72,54 @@ function tekrarlar(alan) {
   return [...m.entries()].filter(([, l]) => l.length > 1).sort((a, b) => b[1].length - a[1].length);
 }
 
+/**
+ * Etiket dengesi. Konu gövdeleri `dangerouslySetInnerHTML` ile basılıyor,
+ * yani kapanmamış bir `<div>` teorik olarak sayfanın kalanını yutabilir.
+ *
+ * ÖLÇÜLDÜ — bugün görünür bedeli YOK: tarayıcı eksik etiketleri kendi
+ * kapatıyor ve her bölüm kendi kutusunda olduğu için hasar yayılmıyor
+ * (`ektopik-acth-sendromu` canlıda beş bölümüyle sorunsuz basılıyor,
+ * yatay taşma da yok). Yine de listeleniyor: bozuk işaretleme, gövdeyi
+ * ayrıştıran render adımlarını (kısaltma açılımı, başlık düzeyi
+ * normalleştirmesi) ileride yanıltabilir ve bir gün gerçek bir kırılma
+ * olduğunda kaynağı burada aranır.
+ */
+const BOS_ETIKET = new Set(['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+  'link', 'meta', 'param', 'source', 'track', 'wbr']);
+// <p>, <li>, <td>… HTML'de kapanmadan da geçerli — zorlanmıyor.
+const GEVSEK = new Set(['p', 'li', 'td', 'th', 'tr', 'option', 'dt', 'dd', 'thead', 'tbody', 'tfoot']);
+
+function etiketDengesi(html) {
+  const yigin = [];
+  const sorun = [];
+  const re = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(\/?)>/g;
+  let m;
+  while ((m = re.exec(html))) {
+    const ad = m[2].toLowerCase();
+    if (BOS_ETIKET.has(ad) || GEVSEK.has(ad) || m[3] === '/') continue;
+    if (m[1] !== '/') { yigin.push(ad); continue; }
+    const k = yigin.lastIndexOf(ad);
+    if (k < 0) sorun.push(`fazladan </${ad}>`);
+    else if (k !== yigin.length - 1) { sorun.push(`</${ad}> kapanırken açık: ${yigin.slice(k + 1).join(',')}`); yigin.length = k; }
+    else yigin.pop();
+  }
+  if (yigin.length) sorun.push(`kapanmamış: ${yigin.join(',')}`);
+  return sorun;
+}
+
+const dengesiz = [];
+for (const k of hepsi) {
+  const p = path.join(KOK, k.brans, k.slug + '.json');
+  let j;
+  try { j = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (err) { continue; }
+  (j.sections || []).forEach((s, i) => {
+    const govde = (s && (s.html || s.text)) || '';
+    if (!/<[a-zA-Z]/.test(govde)) return;
+    const sorun = etiketDengesi(govde);
+    if (sorun.length) dengesiz.push({ yol: `${k.yol} [sections[${i}]]`, sorun: sorun.join(' · ') });
+  });
+}
+
 const basliksiz = gorunur.filter((k) => !k.baslik);
 const bosGovde = gorunur.filter((k) => k.bolum === 0);
 const ciftBaslik = tekrarlar('baslik');
@@ -93,6 +141,9 @@ bas('AYNI başlığı taşıyan konular', ciftBaslik,
 bas('AYNI açıklamayı taşıyan konular', ciftAciklama,
   ([v, l]) => `"${v.slice(0, 50)}…"\n      ${l.map((k) => k.yol).join('\n      ')}`);
 
-const toplam = basliksiz.length + bosGovde.length + ciftBaslik.length + ciftAciklama.length;
+bas('etiket dengesi bozuk bölüm (bugün görünür bedeli yok)', dengesiz,
+  (d) => `${d.yol}\n      ${d.sorun}`);
+
+const toplam = basliksiz.length + bosGovde.length + ciftBaslik.length + ciftAciklama.length + dengesiz.length;
 if (!toplam) console.log('\nkünye kusuru yok.');
 else console.log(`\n${toplam} kayıt insan kararı bekliyor (bu betik CI kapısı DEĞİL).`);
