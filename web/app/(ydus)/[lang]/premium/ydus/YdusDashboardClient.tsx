@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import {
   Stethoscope, ChevronRight, Lock, PlayCircle, Award,
-  FlaskConical, Droplet, Bone, Wind, Pill, HeartPulse, Microscope, Bug, Filter,
+  FlaskConical, Droplet, Bone, Wind, Pill, HeartPulse, Microscope, Bug, Filter, BookOpen,
 } from 'lucide-react';
 import PlanBadge from "@/components/PlanBadge";
 import { useUser } from "@/app/(ydus)/context/UserContext";
@@ -52,6 +52,7 @@ const BRANCH_ICONS: Record<string, React.ElementType> = {
   kardiyoloji: HeartPulse,
   onkoloji: Microscope,
   enfeksiyon: Bug,
+  'kaynak-sorulari': BookOpen,
 };
 
 export default function YdusDashboardClient({

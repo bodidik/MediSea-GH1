@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "id": "harrison-22-secme-sorular",
+    "branch": "kaynak-sorulari",
+    "baslik": "Harrison 22. Baskı — Seçme Sorular",
+    "altbaslik": "Harrison's Principles of Internal Medicine, 22nd Edition metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular",
+    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 2,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Bu Bölüm Hakkında",
+      "satirlar": [
+        "Bu bölümde, Harrison's Principles of Internal Medicine 22. Baskı metnine doğrudan dayanan, board/YDUS tipi vaka-soru formatında sorular yer almaktadır.",
+        "Her soru; klinik vaka kökü, beş seçenekli soru gövdesi, doğru cevabın detaylı klinik muhakemesi ve her bir çeldiricinin ayrı ayrı analizini içerir. Kaynak kitaptaki ilgili bölüm ve konu başlığı her soruda ayrıca belirtilir.",
+        "Sorular branş bazlı konu anlatımlarından bağımsız olarak, doğrudan kaynak metinden seçilip Türkçeleştirilmiş ve klinik vaka formatına uyarlanmıştır."
+      ]
+    }
+  ]
+}

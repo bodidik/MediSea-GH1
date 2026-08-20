@@ -21,6 +21,7 @@ const BRANCH_META: Record<string, { label: string; renk: string }> = {
   onkoloji:         { label: 'Onkoloji',           renk: '#5a1a6b' },
   kardiyoloji:      { label: 'Kardiyoloji',        renk: '#1a4a6b' },
   enfeksiyon:       { label: 'Enfeksiyon',         renk: '#1a5a3a' },
+  'kaynak-sorulari': { label: 'Kaynak Soruları',   renk: '#5a3a1a' },
 };
 
 const DEFAULT_RENK = '#1a3a6b';
