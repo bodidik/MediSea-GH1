@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "20 Ağu 2026",
     "tags": ["Asit-Baz Dengesi", "Metabolik Alkaloz", "İdrar Klorürü", "Hipokalemi", "Bartter Sendromu", "Gitelman Sendromu", "Mineralokortikoid", "YDUS"],
-    "parent": "asit-baz-denge-bozukluklari",
-    "order": 3
+    "parent": "basit-asit-baz-bozukluklari",
+    "order": 2
   },
   "sections": [
     {
