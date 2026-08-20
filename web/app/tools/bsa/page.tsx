@@ -18,6 +18,14 @@ export default function BsaPage() {
 
   const result = useMemo(() => bsaMosteller(heightNum, weightNum), [heightNum, weightNum]);
 
+  /**
+   * MAKULLÜK KAPISI. Ölçüldü (canlı): boş ve harf girdide **BSA 0**,
+   * negatif girdide **BSA 0.08 m²** basılıyordu — sayfa kendini
+   * "kemoterapi dozlama" için tanıtırken. Sınırlar klinik değil
+   * makullük sınırı.
+   */
+  const makul = heightNum >= 30 && heightNum <= 260 && weightNum >= 1 && weightNum <= 400;
+
   const shareParams = { h: heightNum, w: weightNum };
 
   return (
@@ -62,7 +70,7 @@ export default function BsaPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">BSA</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">VÜCUT YÜZEY ALANI</span>
-           <div className="text-7xl font-black text-white">{result}</div>
+           <div className="text-7xl font-black text-white">{makul ? result : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">m²</span>
         </div>
 

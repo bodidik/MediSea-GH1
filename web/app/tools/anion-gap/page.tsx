@@ -28,6 +28,23 @@ export default function AnionGapPage() {
     [ag, albuminNum]
   );
 
+  /**
+   * MAKULLÜK KAPISI — çöp girdiden klinik sınıflama üretilmemeli.
+   *
+   * `parseLocaleNumber` ayrıştıramadığını 0'a çeviriyor. Ölçüldü (canlı):
+   * alanlar boşaltıldığında ya da harf girildiğinde araç **AG 0** basıp
+   * altına **"Düşük Anyon Açığı"** yazıyordu — paraproteinemi ya da
+   * laboratuvar hatası düşündüren bir sınıflama, hiçbir veri yokken.
+   *
+   * Albümin İSTEĞE BAĞLI: girilmemişse düzeltme yapılmıyor, o yüzden
+   * boş olması makullüğü bozmuyor; ama girilmişse makul olmalı.
+   */
+  const makul =
+    naNum >= 90 && naNum <= 190 &&
+    clNum >= 50 && clNum <= 150 &&
+    hco3Num >= 2 && hco3Num <= 60 &&
+    (albumin.trim() === "" || (albuminNum >= 0.5 && albuminNum <= 8));
+
   const displayValue = agCorrected ?? ag;
   const interpretation =
     displayValue > 12
@@ -104,7 +121,7 @@ export default function AnionGapPage() {
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">
              {agCorrected !== null ? "DÜZELTİLMİŞ ANYON AÇIĞI" : "ANYON AÇIĞI"}
            </span>
-           <div className="text-7xl font-black text-white">{displayValue}</div>
+           <div className="text-7xl font-black text-white">{makul ? displayValue : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mEq / L</span>
            {agCorrected !== null && (
              <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">Düzeltmesiz AG: {ag} mEq/L</span>
@@ -114,7 +131,7 @@ export default function AnionGapPage() {
         {/* YORUMLAMA PANELİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {interpretation.label}
+             {makul ? interpretation.label : "Değerleri girin"}
            </div>
         </div>
 
