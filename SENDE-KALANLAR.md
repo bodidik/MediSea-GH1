@@ -1165,3 +1165,38 @@ lucide-react ikonuydu. Ad araması tek başına yanıltır.
 `aria-current`, SectionDetailFilters'a `aria-pressed`) bu dosyalara yapıldı ve
 kullanıcıya ulaşmıyor. Zararsızlar ve bileşenler bağlanırsa hazır olacaklar,
 o yüzden geri alınmadı — ama "düzelttim" demek yanlış olurdu.
+
+---
+
+## 28. `/admin/studio` bir SİMÜLASYON — "kaydedildi" diyor ama hiçbir şey kaydetmiyor
+
+Sayfa açılışta içeriği sunucudan almıyor; `useEffect` içinde elle yazılmış bir
+konu kuruyor ("Hematopoez ve Kanın Biyolojisi") ve kaynaktaki yorum bunu açıkça
+söylüyor: *"Şimdilik sistemin nasıl görüneceğini simüle ediyoruz."*
+
+Sorun kaydetmede: `handleSave` hiçbir uca istek atmıyor, yalnızca
+
+```
+setTimeout(() => setStatus('success'), 1000);
+```
+
+çalıştırıyor ve ekrana **"DEĞİŞİKLİKLER KAYDEDİLDİ ✓"** basıyor. Yani yönetici
+bir düzenleme yapıp kaydettiğini sanabilir; hiçbir dosya değişmez.
+
+Bu, depoda zaten yazılı olan kuralın aynısı — `protected/token` yorumundaki
+cümle: *uydurulmuş bir başarı, çağıranın üstüne kod yazdığı yanlış bir varsayım
+üretir.* API uçlarında bu sınıf kapatıldı (yedi uç + dört uç), ama bu sayfa
+taramaların dışında kalmıştı çünkü kusur uçta değil arayüzde.
+
+**Neden karar SENDE:** üç yol da savunulabilir ve seçim ürün kararı —
+
+1. **Bağla.** `/admin/content/topics` gerçek bir düzenleyici ve konu dosyasına
+   yazıyor; stüdyo onun üzerine kurulabilir.
+2. **Kaldır.** İşlevi `/admin/content/topics` zaten karşılıyorsa sayfa artık.
+3. **Simülasyon kalsın ama SÖYLESİN.** Ekranda görünür bir "önizleme —
+   kaydetmez" etiketi yanlış anlamayı bitirir; en ucuz seçenek bu.
+
+Yan not — aynı sayfa yapısal ölçümde de tek istisna: `if (!content) return null`
+olduğu için sunucudan giden HTML'de hiçbir başlık yok (`h1=0`). 568 sayfa
+içinde h1'i olmayan tek sayfa bu. Üçüncü seçenek seçilse bile kabuğun
+(başlık + düzen) içerik beklerken basılması bunu da çözer.
