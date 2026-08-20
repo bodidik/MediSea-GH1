@@ -85,14 +85,14 @@ export default function PsiPortPage() {
 
   const Row = ({ label, pts, checked, onChange }: { label: string; pts: number; checked: boolean; onChange: () => void }) => (
     <label
-      className={`flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
+      className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
         ${checked ? "bg-blue-900 border-blue-900 text-white shadow-md" : "bg-slate-50 border-slate-100 hover:border-blue-900/30 text-blue-950"}
       `}
     >
       <span className="text-xs font-bold">{label}</span>
       <div className="flex items-center gap-3">
         <span className={`text-[10px] font-black ${checked ? "text-amber-400" : "text-slate-400"}`}>+{pts}</span>
-        <input type="checkbox" className="hidden" checked={checked} onChange={onChange} />
+        <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
         <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all ${checked ? "bg-amber-400 border-amber-400 text-blue-900" : "bg-white border-slate-200 text-transparent"}`}>
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
         </div>
@@ -143,7 +143,7 @@ export default function PsiPortPage() {
 
         {/* KOMORBİDİTE */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">Komorbidite Öyküsü</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">Komorbidite Öyküsü</span>
           {COMORBID.map((c) => (
             <Row key={c.key} label={c.label} pts={c.pts} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -151,7 +151,7 @@ export default function PsiPortPage() {
 
         {/* FİZİK MUAYENE */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">Fizik Muayene Bulguları</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">Fizik Muayene Bulguları</span>
           {EXAM.map((c) => (
             <Row key={c.key} label={c.label} pts={c.pts} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -159,7 +159,7 @@ export default function PsiPortPage() {
 
         {/* LABORATUVAR & GÖRÜNTÜLEME */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">Laboratuvar & Görüntüleme</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">Laboratuvar & Görüntüleme</span>
           {LABS.map((c) => (
             <Row key={c.key} label={c.label} pts={c.pts} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -171,7 +171,7 @@ export default function PsiPortPage() {
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM PUAN</span>
           <div className="text-7xl font-black text-white">{qualifiesClassI ? "–" : totalScore}</div>
           {qualifiesClassI && (
-            <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-3 max-w-xs">
+            <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3 max-w-xs">
               Adım 1 kriterleri karşılanmadı — puanlamaya gerek yok, doğrudan Sınıf I
             </span>
           )}
@@ -193,7 +193,7 @@ export default function PsiPortPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ PSI/PORT, Fine ve ark. (1997) algoritmasına göre iki adımlıdır: Adım 1'de 50 yaş altı, komorbiditesi ve vital bulgu bozukluğu olmayan hastalar puanlama yapılmadan Sınıf I kabul edilir. 2019 ATS/IDSA kılavuzu, dispozisyon kararında CURB-65 yerine PSI kullanılmasını önerir; klinik yargının yerini tutmaz.
           </p>
         </div>

@@ -167,7 +167,7 @@ export default function CiwaArPage() {
     const r = v / max;
     if (r === 0) return "";
     if (r <= 0.3) return "bg-sky-600 text-white border-sky-600";
-    if (r <= 0.6) return "bg-amber-500 text-white border-amber-500";
+    if (r <= 0.6) return "bg-amber-700 text-white border-amber-500";
     return "bg-rose-600 text-white border-rose-600";
   };
 
@@ -219,7 +219,7 @@ export default function CiwaArPage() {
                 {item.opts.map(opt => {
                   const sel = cur === opt.v;
                   return (
-                    <button key={opt.v} type="button" onClick={() => setAns(item.id as ItemId, opt.v)}
+                    <button aria-pressed={sel} key={opt.v} type="button" onClick={() => setAns(item.id as ItemId, opt.v)}
                       className={`w-full text-left p-3 rounded-2xl border transition-all flex items-center gap-3
                         ${sel
                           ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600'
@@ -240,7 +240,7 @@ export default function CiwaArPage() {
         {/* Sonuç */}
         {result && total !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">CIWA-Ar = {total} / 67</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">CIWA-Ar = {total} / 67</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
 
@@ -259,7 +259,7 @@ export default function CiwaArPage() {
 
             {total >= 8 && (
               <div className="mt-4 pt-4 border-t border-current/10 space-y-2">
-                <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/40">PROTOKOL NOTLARI</p>
+                <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80">PROTOKOL NOTLARI</p>
                 {total >= 15 && (
                   <p className={`text-[11px] font-bold ${result.color} opacity-80`}>• Diyazepam veya lorazepam ile yükleme dozunu değerlendirin. IV erişim, vital takibi, nöbet önlemi.</p>
                 )}

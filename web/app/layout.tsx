@@ -1,6 +1,6 @@
 //"C:\Users\hucig\Medknowledge\web\app\layout.tsx"
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Merriweather, JetBrains_Mono } from "next/font/google";
 import { Providers } from './providers';
 import { siteUrl, SITE_ADI, SITE_ACIKLAMA } from "@/lib/site";
@@ -14,6 +14,24 @@ import { JsonLd, organizasyonSemasi, siteSemasi } from "@/lib/jsonld";
  * metadataBase şart — göreli canonical ve og:image adreslerini mutlak hâle
  * getiren şey bu; olmadan Next uyarı verip adresleri eksik basıyor.
  */
+/**
+ * Sitenin renk şeması AÇIK — ve bunu beyan etmek gerekiyor.
+ *
+ * Beyan yokken kök ögede `color-scheme: normal` kalıyor; bu durumda
+ * tarayıcının KENDİ çizdiği yüzeyler (kaydırma çubuğu, `select` açılır
+ * listesi, otomatik doldurma vurgusu, tarih seçici) işletim sistemi koyu
+ * kipteyse koyu çiziliyor. Uygulamanın koyu teması YOK — ölçüldü, `app/`
+ * altında `dark:` kullanan dosya sayısı sıfır ve `tailwind.config.js`
+ * bilerek `darkMode: "class"` ile varyantları susturuyor.
+ *
+ * Yani beyan olmadan kullanıcı, baştan sona açık bir arayüzün içinde koyu
+ * bir açılır liste görüyordu. Aynı tutarsızlığın içerik tarafındaki hâli
+ * konu tablolarını okunmaz yapmıştı.
+ */
+export const viewport: Viewport = {
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {

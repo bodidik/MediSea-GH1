@@ -100,10 +100,10 @@ export default function ChildPughPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6">
           {CATEGORIES.map((c) => (
             <div key={c.key} className="space-y-2">
-              <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">{c.title}</span>
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">{c.title}</span>
               <div className="grid gap-2">
                 {c.options.map((o) => (
-                  <button
+                  <button aria-pressed={sel[c.key] === o.value}
                     key={o.value}
                     type="button"
                     onClick={() => setSel((v) => ({ ...v, [c.key]: o.value }))}
@@ -129,10 +129,10 @@ export default function ChildPughPage() {
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
             <div className="text-5xl font-black text-white">{total}</div>
-            <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-1">/ 15</span>
+            <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">/ 15</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${cls.border} ${cls.bg} transition-all duration-500`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block text-center md:text-left">SINIFLAMA</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block text-center md:text-left">SINIFLAMA</span>
             <p className={`text-2xl font-black italic tracking-tight text-center md:text-left ${cls.color}`}>
               {cls.label}
             </p>

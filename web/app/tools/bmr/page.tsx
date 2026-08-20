@@ -51,10 +51,10 @@ export default function BmrPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-4">
           <div className="flex gap-3">
             {(["m", "f"] as const).map(v => (
-              <label key={v} className={`flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
+              <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
                 ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
-                <input type="radio" className="hidden" checked={sex === v} onChange={() => setSex(v)} />
-                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/70'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
+                <input type="radio" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
+                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
               </label>
             ))}
           </div>
@@ -76,16 +76,16 @@ export default function BmrPage() {
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-2 pl-1">Aktivite Düzeyi</span>
             <div className="grid gap-1.5">
               {ACTIVITY_OPTS.map(opt => (
-                <label key={opt.factor} className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all
+                <label key={opt.factor} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all
                   ${factor === opt.factor ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
                     ${factor === opt.factor ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {factor === opt.factor && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="hidden" checked={factor === opt.factor} onChange={() => setFactor(opt.factor)} />
+                  <input type="radio" className="sr-only" checked={factor === opt.factor} onChange={() => setFactor(opt.factor)} />
                   <div className="flex-1">
                     <span className={`text-sm font-bold block ${factor === opt.factor ? 'text-white' : 'text-blue-900/80'}`}>{opt.label}</span>
-                    <span className={`text-[9px] font-bold uppercase tracking-widest ${factor === opt.factor ? 'text-blue-200/60' : 'text-slate-400'}`}>{opt.sub}</span>
+                    <span className={`text-[9px] font-bold uppercase tracking-widest ${factor === opt.factor ? 'text-blue-200' : 'text-slate-400'}`}>{opt.sub}</span>
                   </div>
                   <span className={`text-[10px] font-black ${factor === opt.factor ? 'text-amber-400' : 'text-slate-400'}`}>×{opt.factor}</span>
                 </label>
@@ -96,9 +96,18 @@ export default function BmrPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-blue-900/80 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400/60">
-            <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">BMR (Dinlenim)</span>
+            {/*
+              Bu kartın zemini SAYDAM (`bg-blue-900/80`), yani beyazın üstünde
+              açılıyor ve komşu karttaki opak `bg-blue-900`den daha açık.
+              Ölçüldü: aynı `text-blue-200` solda 4.24, sağda eşiği geçiyor.
+
+              Zemin değil YAZI açıldı, çünkü saydamlık bilinçli bir vurgu
+              farkı — kenarlık (`amber-400/60`) ve gölge de komşusundan
+              zayıf. BMR ikincil, TDEE birincil.
+            */}
+            <span className="text-[9px] font-black text-blue-100 uppercase tracking-widest mb-1">BMR (Dinlenim)</span>
             <div className="text-4xl font-black text-white">{bmr || "–"}</div>
-            <span className="text-[10px] font-bold text-amber-300 mt-1">kcal / gün</span>
+            <span className="text-[10px] font-bold text-amber-200 mt-1">kcal / gün</span>
           </div>
           <div className="bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">TDEE (Toplam Gereksinim)</span>

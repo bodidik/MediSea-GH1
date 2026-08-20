@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
+import { kalinIsle, duzMetin } from '@/app/lib/metin';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -178,7 +179,7 @@ function SoruKarti({
             Soru {soruNo}
           </div>
           <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500 }}>
-            {soru.metin}
+            {kalinIsle(soru.metin)}
           </p>
           {soru.etiketler && soru.etiketler.length > 0 && (
             <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', marginTop: '.65rem' }}>
@@ -200,6 +201,41 @@ function SoruKarti({
             <button
               key={harf}
               onClick={() => secenek(harf)}
+              /**
+               * Cevap verildikten sonra şıklar İŞLEVSİZ ama düğme olmayı
+               * sürdürüyordu. Ölçüldü: cevaptan sonra başka bir şıkka
+               * tıklamak hiçbir şeyi değiştirmiyor (ekran ve durum bölgesi
+               * aynı kalıyor). Klavyeyle gezen biri üstüne gelip Enter'a
+               * basıyor, hiçbir şey olmuyor ve nedenini öğrenemiyordu.
+               *
+               * `disabled` DEĞİL `aria-disabled` kullanılıyor: `disabled`
+               * ögeyi sekme sırasından tümden çıkarır, oysa cevaptan sonra
+               * şıklar okunmaya devam etmeli — hangisinin doğru olduğu (✓/✗)
+               * ve açıklaması orada. Ekran okuyucu böyle hem metni okuyabilir
+               * hem de "kullanılamıyor" bilgisini alır.
+               */
+              aria-disabled={cevapVerildi || undefined}
+              /*
+               * ADDA HARF KORUNUR — cevaptan sonra harf dairesi ✓/✗ ile
+               * DEĞİŞİYOR ve harf erişilebilir addan tümden düşüyordu.
+               * Ölçüldü: cevaptan sonra düğmenin adı "✗Cushing Hastalığı…"
+               * oluyor. Geri bildirim ise "Doğru cevap D." diyor — yani
+               * ekran okuyucu kullanıcısına artık hiçbir düğmenin
+               * duyurmadığı bir harf gösteriliyor.
+               *
+               * Glif görselde kalıyor (bakan için en hızlı işaret) ama ada
+               * girmiyor; durum yazıyla veriliyor.
+               */
+              aria-label={
+                `${harf}: ${duzMetin(metin)}` +
+                (!cevapVerildi
+                  ? ''
+                  : harf === soru.dogru
+                    ? ' — doğru cevap'
+                    : harf === secim
+                      ? ' — senin seçimin, yanlış'
+                      : '')
+              }
               style={secenekStil(harf)}
             >
               <div style={harfDairesi(harf)}>
@@ -208,7 +244,7 @@ function SoruKarti({
                   : harf}
               </div>
               <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>
-                {metin}
+                {kalinIsle(metin)}
               </span>
             </button>
           ))}
@@ -252,7 +288,7 @@ function SoruKarti({
                 </div>
                 {soru.aciklama_kisa && (
                   <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '2px' }}>
-                    {soru.aciklama_kisa}
+                    {kalinIsle(soru.aciklama_kisa)}
                   </div>
                 )}
               </div>
@@ -264,7 +300,7 @@ function SoruKarti({
             <div data-readable={`soru:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
               {soru.aciklama_detay && (
                 <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
-                  {soru.aciklama_detay}
+                  {kalinIsle(soru.aciklama_detay)}
                 </p>
               )}
 
@@ -294,7 +330,7 @@ function SoruKarti({
                             {harf}
                           </span>
                           <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>
-                            {metin}
+                            {kalinIsle(metin)}
                           </span>
                         </div>
                       );
@@ -402,14 +438,20 @@ function SonucEkrani({
               Yanlış yaptığın sorular
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              {yanlislar.map((s) => (
-                <div key={s.id} style={{
-                  padding: '.7rem 1.1rem', borderTop: '0.5px solid #f5e0e0',
-                  fontSize: '12px', lineHeight: 1.6, color: '#4a6a8a',
-                }}>
-                  {s.metin.length > 130 ? `${s.metin.slice(0, 130)}…` : s.metin}
-                </div>
-              ))}
+              {yanlislar.map((s) => {
+                // Önizleme KIRPILIYOR: kalın işareti burada render edilmiyor,
+                // sökülüyor. Kırpma noktası bir `**` çiftinin ortasına düşerse
+                // yarım kalan işaret ekrana yıldız olarak dökülürdü.
+                const ozet = duzMetin(s.metin);
+                return (
+                  <div key={s.id} style={{
+                    padding: '.7rem 1.1rem', borderTop: '0.5px solid #f5e0e0',
+                    fontSize: '12px', lineHeight: 1.6, color: '#4a6a8a',
+                  }}>
+                    {ozet.length > 130 ? `${ozet.slice(0, 130)}…` : ozet}
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
@@ -479,13 +521,40 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     } catch {}
   }, [soruIndex, sonuclar, bitti, storageKey]);
 
+  const backHref = veri.topic
+    ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
+    : `/${lang}/premium/ydus/${branch}`;
+
+  /**
+   * BOŞ DURUM ÇIKIŞ YOLU İSTER — bir dönem yalnızca tek bir cümleydi.
+   *
+   * Bu depodaki kural belli: her hata/boş durumda geri dönülecek bir
+   * bağlantı olmalı, yoksa kullanıcı çıkmazda kalıyor (aynı sayfanın
+   * "Quiz bulunamadı" kartı bunu zaten yapıyordu; boş dal atlanmıştı).
+   *
+   * İki yoldan buraya düşülüyor: quiz dosyası okunabilir ama `sorular`
+   * boş/başka şemada, ya da "yalnızca yanlışları çöz" kipinde saklanan
+   * kimlikler artık hiçbir soruyla eşleşmiyor (içerik düzenlenince olur).
+   */
   if (sorular.length === 0) {
     return (
       <div style={{
-        minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontFamily: 'system-ui, sans-serif',
+        minHeight: '80vh', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center', gap: '1rem',
+        fontFamily: 'system-ui, sans-serif', padding: '1rem', textAlign: 'center',
       }}>
-        <p style={{ color: '#4a6a8a' }}>Bu quizde henüz soru yok.</p>
+        <div style={{ fontSize: '2.5rem' }} aria-hidden="true">📝</div>
+        <p style={{ color: '#4a6a8a', fontSize: '15px', margin: 0, maxWidth: '28rem' }}>
+          {tumSorular.length > 0
+            ? 'Tekrar çözülecek soru kalmadı. İşaretlediğin sorular quizden çıkarılmış olabilir.'
+            : 'Bu quizde henüz soru yok.'}
+        </p>
+        <a href={backHref} style={{
+          padding: '8px 18px', background: '#1a3a6b', color: '#fff',
+          borderRadius: '8px', textDecoration: 'none', fontSize: '13px', fontWeight: 500,
+        }}>
+          ← Konuya dön
+        </a>
       </div>
     );
   }
@@ -497,10 +566,6 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     }
     setSoruIndex(soruIndex + 1);
   }
-
-  const backHref = veri.topic
-    ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
-    : `/${lang}/premium/ydus/${branch}`;
 
   if (bitti) {
     return (

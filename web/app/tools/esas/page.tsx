@@ -67,10 +67,11 @@ export default function EsasPage() {
                 <div className="flex items-center gap-3">
                   <span className="text-[9px] font-bold text-slate-400 w-12 text-right shrink-0">{s.left}</span>
                   <div className="flex-1 relative">
-                    <input type="range" min={0} max={10} step={1} value={v}
+                    <input aria-label={s.label} type="range" min={0} max={10} step={1} value={v}
                       onChange={e => set(s.key, Number(e.target.value))}
-                      className="w-full h-2 rounded-full appearance-none cursor-pointer accent-blue-900"
-                      style={{ background: `linear-gradient(to right, #1a1a6b ${v * 10}%, #e2e8f0 ${v * 10}%)` }}
+                      className="w-full h-6 py-2 bg-clip-content rounded-full appearance-none cursor-pointer accent-blue-900"
+                      style={{ background: `linear-gradient(to right, #1a1a6b ${v * 10}%, #e2e8f0 ${v * 10}%)`,
+                        backgroundClip: 'content-box' }}
                     />
                     <div className="flex justify-between mt-1">
                       {[0,1,2,3,4,5,6,7,8,9,10].map(n => (
@@ -92,7 +93,7 @@ export default function EsasPage() {
             <span className="text-[10px] font-black text-blue-300 mt-1">/ 90</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${d.border} ${d.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">SEMPTOM YÜKÜ</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">SEMPTOM YÜKÜ</span>
             <p className={`text-2xl font-black italic tracking-tight ${d.color}`}>{d.label}</p>
             <div className="mt-3 grid grid-cols-3 gap-2">
               {SYMPTOMS.filter(s => scores[s.key] >= 4).map(s => (

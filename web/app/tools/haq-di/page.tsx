@@ -60,7 +60,7 @@ export default function HaqDiPage() {
         <div className="space-y-4">
           {CATEGORIES.map(cat => (
             <div key={cat.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
-              <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-4">{cat.label}</p>
+              <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{cat.label}</p>
               <div className="space-y-4">
                 {cat.items.map((item, i) => {
                   const key = `${cat.id}_${i}`;
@@ -70,11 +70,11 @@ export default function HaqDiPage() {
                       <p className="text-sm font-bold text-blue-900 mb-2">{item}</p>
                       <div className="flex gap-2 flex-wrap">
                         {SCORE_OPTS.map(opt => (
-                          <button key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
+                          <button aria-pressed={val === opt.v} key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
                             className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                               ${val === opt.v
                                 ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white' :
-                                  opt.v === 1 ? 'bg-amber-500 border-amber-500 text-white' :
+                                  opt.v === 1 ? 'bg-amber-700 border-amber-500 text-white' :
                                   opt.v === 2 ? 'bg-orange-500 border-orange-500 text-white' :
                                   'bg-rose-600 border-rose-600 text-white'
                                 : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
@@ -101,7 +101,7 @@ export default function HaqDiPage() {
 
         {result && total !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">ENGELLİLİK DÜZEYİ (HAQ-DI: {total.toFixed(2)})</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">ENGELLİLİK DÜZEYİ (HAQ-DI: {total.toFixed(2)})</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <div className="mt-4 grid grid-cols-4 gap-2">
               {[

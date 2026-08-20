@@ -115,7 +115,7 @@ export default function SodiumPage() {
         {/* Mod seçimi */}
         <div className="grid grid-cols-3 gap-2">
           {MODES.map(m => (
-            <button key={m.id} type="button" onClick={() => setMode(m.id)}
+            <button aria-pressed={mode === m.id} key={m.id} type="button" onClick={() => setMode(m.id)}
               className={`p-3 rounded-2xl border transition-all text-center
                 ${mode === m.id ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}`}>
               <div className="text-xl mb-1">{m.icon}</div>
@@ -129,7 +129,7 @@ export default function SodiumPage() {
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hasta Bilgileri</p>
           <div className="flex gap-3">
             {[{ v: "male", l: "Erkek" }, { v: "female", l: "Kadın" }].map(s => (
-              <button key={s.v} type="button" onClick={() => setSex(s.v)}
+              <button aria-pressed={sex === s.v} key={s.v} type="button" onClick={() => setSex(s.v)}
                 className={`flex-1 py-3 rounded-xl border text-sm font-bold transition-all
                   ${sex === s.v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900 hover:border-blue-900/30'}`}>
                 {s.l}
@@ -188,7 +188,7 @@ export default function SodiumPage() {
         {mode === "hypo" && (
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4">
-              <p className="text-[10px] font-black text-amber-800/60 uppercase tracking-widest mb-1">DİKKAT</p>
+              <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-1">DİKKAT</p>
               <p className="text-[11px] font-bold text-amber-900">Kronik hiponatremide düzeltme hızı <strong>≤8–10 mEq/L/gün</strong> (ODS riski). Akut/semptomatik vakalarda ilk 1–2 saat için daha hızlı düzeltme yapılabilir.</p>
             </div>
 
@@ -203,7 +203,7 @@ export default function SodiumPage() {
                     { v: "chronic" as const, l: "Kronik (≤8 mEq/L/gün)" },
                     { v: "acute" as const, l: "Akut / semptomatik (≤12 mEq/gün)" },
                   ].map(o => (
-                    <button key={o.v} type="button" onClick={() => setRateMode(o.v)}
+                    <button aria-pressed={rateMode === o.v} key={o.v} type="button" onClick={() => setRateMode(o.v)}
                       className={`flex-1 py-3 px-3 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                         ${rateMode === o.v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900 hover:border-blue-900/30'}`}>
                       {o.l}
@@ -216,11 +216,11 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Kullanılacak Sıvı</p>
                 <div className="space-y-2">
                   {INFUSATES.map((inf, i) => (
-                    <button key={inf.label} type="button" onClick={() => setInfuseIdx(i)}
+                    <button aria-pressed={infuseIdx === i} key={inf.label} type="button" onClick={() => setInfuseIdx(i)}
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between
                         ${infuseIdx === i ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                       <span className={`text-sm font-bold ${infuseIdx === i ? 'text-white' : 'text-blue-950'}`}>{inf.label}</span>
-                      <span className={`text-[10px] font-black uppercase tracking-widest ${infuseIdx === i ? 'text-blue-200/70' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
+                      <span className={`text-[10px] font-black uppercase tracking-widest ${infuseIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
                     </button>
                   ))}
                 </div>
@@ -232,7 +232,7 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Adrogue-Madias Formülü Sonuçları</p>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-blue-900 rounded-2xl p-4 text-center">
-                    <div className="text-[9px] font-black text-blue-200/70 uppercase tracking-widest mb-1">1 L sıvı → Na değişimi</div>
+                    <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">1 L sıvı → Na değişimi</div>
                     <div className="text-3xl font-black text-white">{adroguePerL > 0 ? '+' : ''}{adroguePerL.toFixed(2)}</div>
                     <div className="text-[9px] font-bold text-amber-400">mEq/L</div>
                   </div>
@@ -276,7 +276,7 @@ export default function SodiumPage() {
         {mode === "hyper" && (
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4">
-              <p className="text-[10px] font-black text-amber-800/60 uppercase tracking-widest mb-1">DİKKAT</p>
+              <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-1">DİKKAT</p>
               <p className="text-[11px] font-bold text-amber-900">Hipernatremide düzeltme hızı <strong>≤10 mEq/L/gün</strong> (beyin ödemi riski). Akut vakalar (&lt;24 saat) daha hızlı düzeltilebilir.</p>
             </div>
 
@@ -286,11 +286,11 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Serbest Su Kaynağı</p>
                 <div className="space-y-2">
                   {INFUSATES.filter(inf => inf.na < 154).map((inf, i) => (
-                    <button key={inf.label} type="button" onClick={() => setFwFluid(INFUSATES.indexOf(inf))}
+                    <button aria-pressed={fwFluid === INFUSATES.indexOf(inf)} key={inf.label} type="button" onClick={() => setFwFluid(INFUSATES.indexOf(inf))}
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between
                         ${fwFluid === INFUSATES.indexOf(inf) ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                       <span className={`text-sm font-bold ${fwFluid === INFUSATES.indexOf(inf) ? 'text-white' : 'text-blue-950'}`}>{inf.label}</span>
-                      <span className={`text-[10px] font-black uppercase tracking-widest ${fwFluid === INFUSATES.indexOf(inf) ? 'text-blue-200/70' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
+                      <span className={`text-[10px] font-black uppercase tracking-widest ${fwFluid === INFUSATES.indexOf(inf) ? 'text-blue-200' : 'text-slate-400'}`}>{inf.na} mEq/L</span>
                     </button>
                   ))}
                 </div>
@@ -302,7 +302,7 @@ export default function SodiumPage() {
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Serbest Su Açığı Hesabı</p>
                 <div className="grid grid-cols-3 gap-3">
                   <div className="bg-blue-900 rounded-2xl p-4 text-center">
-                    <div className="text-[9px] font-black text-blue-200/70 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
+                    <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
                     <div className="text-3xl font-black text-white">{Math.abs(fwd).toFixed(1)}</div>
                     <div className="text-[9px] font-bold text-amber-400">Litre</div>
                   </div>

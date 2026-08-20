@@ -106,8 +106,8 @@ export default function GLIMPage() {
         {/* TANILAR VE ŞİDDET SONUCU */}
         <div className={`rounded-[2.5rem] p-8 border-4 transition-all duration-500 ${isDiagnosed ? 'bg-blue-900 border-amber-400 shadow-2xl' : 'bg-slate-200 border-slate-300'}`}>
           <div className="text-center space-y-2">
-            <span className="text-[10px] font-black text-amber-400 uppercase tracking-[0.4em]">GLIM TANISAL SONUÇ</span>
-            <h2 className={`text-3xl font-black italic uppercase ${isDiagnosed ? 'text-white' : 'text-slate-400'}`}>
+            <span className={`text-[10px] font-black uppercase tracking-[0.4em] ${isDiagnosed ? "text-amber-400" : "text-amber-800"}`}>GLIM TANISAL SONUÇ</span>
+            <h2 className={`text-3xl font-black italic uppercase break-words hyphens-auto ${isDiagnosed ? 'text-white' : 'text-slate-400'}`}>
               {isDiagnosed ? "Malnütrisyon Tanısı Kondu" : "Tanı Kriterleri Karşılanmadı"}
             </h2>
             {isDiagnosed && (

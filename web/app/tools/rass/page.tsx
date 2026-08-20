@@ -59,7 +59,7 @@ export default function RASSPage() {
             const col = COLOR_MAP[lvl.color];
             const isSelected = selected === lvl.score;
             return (
-              <button key={lvl.score} type="button"
+              <button aria-pressed={isSelected} key={lvl.score} type="button"
                 onClick={() => setSelected(s => s === lvl.score ? null : lvl.score)}
                 className={`w-full text-left flex items-center gap-4 p-3 rounded-2xl border-2 transition-all
                   ${isSelected ? `${col.border} ${col.bg}` : "border-slate-200 bg-white hover:border-blue-200"}`}>

@@ -60,9 +60,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
             {/* 2. Kolon: Hızlı Erişim */}
             <div className="md:col-span-3">
-              <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
+              <h2 className="font-sans mt-0 text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
                 Kütüphane
-              </h4>
+              </h2>
               <ul className="space-y-1 text-sm font-semibold">
                 <li><Link href="/topics/hematoloji" className="block py-1.5 hover:text-amber-400 transition-colors">Hematoloji</Link></li>
                 <li><Link href="/topics/romatoloji" className="block py-1.5 hover:text-amber-400 transition-colors">Romatoloji</Link></li>
@@ -73,9 +73,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
             {/* 3. Kolon: Kurumsal & Araçlar */}
             <div className="md:col-span-4">
-              <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
+              <h2 className="font-sans mt-0 text-white font-black uppercase tracking-widest text-xs mb-6 border-b border-blue-800/50 pb-3">
                 Platform
-              </h4>
+              </h2>
               <ul className="space-y-1 text-sm font-semibold">
                 <li>
                   {/* /premium diye bir rota yok; premium tanıtımı dil önekiyle duruyor. */}
@@ -98,7 +98,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           </div>
 
           {/* Alt Bilgi (Copyright) */}
-          <div className="pt-8 border-t border-blue-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-blue-400/50">
+          <div className="pt-8 border-t border-blue-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-blue-400">
             <div>
               &copy; {new Date().getFullYear()} MediSea Eğitim Platformu. Tüm hakları saklıdır.
             </div>

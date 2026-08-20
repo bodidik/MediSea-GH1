@@ -75,17 +75,20 @@ export default function AnaphylaxisPage() {
               <ul className="space-y-1 mb-4">
                 {cr.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-[10px] text-slate-600">
-                    <span className="text-amber-500 shrink-0 mt-0.5">·</span>{item}
+                    {/* Madde imi süsleme: ekran okuyucu her maddenin önüne
+                        "orta nokta" ekliyordu ve kontrast kuralı da bilgi
+                        taşımayan bir işarete uygulanıyordu (2.15). */}
+                    <span className="text-amber-500 shrink-0 mt-0.5" aria-hidden="true">·</span>{item}
                   </li>
                 ))}
               </ul>
               <div className="flex gap-2">
                 {([true, false] as const).map(v => (
-                  <button key={String(v)} type="button"
+                  <button aria-pressed={sel[cr.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [cr.id]: s[cr.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                       ${sel[cr.id] === v
-                        ? v ? "border-rose-500 bg-rose-500 text-white" : "border-emerald-600 bg-emerald-600 text-white"
+                        ? v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white"
                         : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                     {v ? "Kriter Karşılandı" : "Karşılanmadı"}
                   </button>

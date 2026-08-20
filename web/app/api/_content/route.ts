@@ -5,7 +5,7 @@ import { NextRequest } from "next/server";
 export async function GET(req: NextRequest){
 const backend = backendBase();
   const url = new URL("/api/admin/content", backend);
-  // Query aynen geÃ§ir
+  // Query aynen geçir
   req.nextUrl.searchParams.forEach((v, k) => url.searchParams.set(k, v));
 
   const r = await fetch(url.toString(), { cache: "no-store" });

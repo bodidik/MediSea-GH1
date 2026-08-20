@@ -32,6 +32,7 @@ export default function SectionDetailFilters({ items, onChange }: { items: Item[
             return (
               <button 
                 key={t} 
+                aria-pressed={isActive}
                 onClick={()=>toggle(t)} 
                 className={`px-4 py-1.5 rounded-full border text-sm font-medium transition-all duration-300 ${
                   isActive 

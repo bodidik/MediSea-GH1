@@ -41,14 +41,14 @@ export default function RockallPage() {
       <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
       <div className="grid gap-1.5">
         {opts.map(([l, v]) => (
-          <label key={v} className={`flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
             ${value === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
             <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
               ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
               {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
             </div>
-            <input type="radio" className="hidden" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
+            <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
+            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
             <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
           </label>
         ))}
@@ -85,9 +85,35 @@ export default function RockallPage() {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-blue-900/80 rounded-[2rem] p-5 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400/60">
-            <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Pre-Endoskopi</span>
+            {/*
+              Bu kartın zemini SAYDAM (`bg-blue-900/80`), komşusundaki opak
+              `bg-blue-900`den daha açık. Ölçüldü: aynı `text-blue-200` burada
+              4.24, komşusunda eşiği geçiyor. Yazı bir kademe açıldı; zemin
+              değişmedi çünkü saydamlık bilinçli vurgu farkı (kenarlık ve
+              gölge de zayıf: pre ikincil, post birincil).
+            */}
+            <span className="text-[9px] font-black text-blue-100 uppercase tracking-widest mb-1">Pre-Endoskopi</span>
             <div className="text-4xl font-black text-white">{preEndo}</div>
-            <span className={`text-[10px] font-black mt-1 ${rPre.color.replace('text-', 'text-').replace('700', '300')}`}>{rPre.label}</span>
+            {/*
+              Sınıf adı DİZE DEĞİŞTİRMEYLE üretiliyordu
+              (`rPre.color.replace('700','300')`) — iki sorun birden:
+
+              · Ölçüldü: `emerald-300` bu saydam zeminde 3.95 (eşik 4.5).
+              · Tailwind üretilen sınıfı KAYNAKTA GÖREMİYOR. Çalışmasının tek
+                sebebi `text-emerald-300`/`amber-300`/`rose-300`'ün başka
+                dosyalarda düz geçmesiydi; `safelist` yalnızca `bg-` ve
+                `border-` desenlerini kapsıyor. Nitekim `text-orange-300`
+                hiçbir dosyada yok — bugün üretilmiyor çünkü turuncu yalnızca
+                POST skorlarında var, ama kalıp o kadar kırılgan.
+
+              Açık eşleme hem kontrastı düzeltiyor hem sınıfları görünür
+              kılıyor.
+            */}
+            <span className={`text-[10px] font-black mt-1 ${
+              rPre.color === 'text-emerald-700' ? 'text-emerald-200'
+              : rPre.color === 'text-amber-700' ? 'text-amber-200'
+              : 'text-rose-200'
+            }`}>{rPre.label}</span>
           </div>
           <div className="bg-blue-900 rounded-[2rem] p-5 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Post-Endoskopi</span>
@@ -97,7 +123,7 @@ export default function RockallPage() {
         </div>
 
         <div className={`rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${rPost.border} ${rPost.bg}`}>
-          <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
           <p className={`text-2xl font-black italic tracking-tight ${rPost.color}`}>{rPost.label}</p>
           <p className={`text-sm font-bold mt-1 ${rPost.color} opacity-80`}>{rPost.sub}</p>
         </div>

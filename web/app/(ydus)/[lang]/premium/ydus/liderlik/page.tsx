@@ -2,7 +2,9 @@
 'use client';
 import Link from 'next/link';
 import { useUser } from '@/app/(ydus)/context/UserContext';
+import { useSession } from 'next-auth/react';
 import { useMemo } from 'react';
+import { rutbe } from '@/app/lib/rutbe';
 
 // --- MOCK VERİTABANI (ZIRH: Statik veriler render dışında tutuldu) ---
 const MOCK_LEADERS = [
@@ -16,23 +18,33 @@ const MOCK_LEADERS = [
 
 export default function LeadershipBoard() {
   const { xp } = useUser();
+  const { data: session } = useSession();
+
+  // Kullanıcının adı ve rütbesi UYDURULMAZ: ad oturumdan gelir, rütbe gerçek
+  // XP'den türer. Rütbe bir dönem 'Gemi Kaptanı' diye sabitti; profil aynı
+  // kullanıcıya XP'sine göre "Büyük Amiral" derken burası "Gemi Kaptanı"
+  // diyordu — aynı şeyi gösteren iki yüzey ayrışıyordu (bkz. app/lib/rutbe.ts).
+  // Oturumdaki ad varsa "Ad (sen)", yoksa yalnızca "Sen" — ikisini birleştirmek
+  // "Sen (sen)" gibi bir etiket üretiyordu.
+  const oturumAdi = session?.user?.name?.trim();
+  const benimAdim = oturumAdi ? `${oturumAdi} (sen)` : 'Sen';
 
   // ZIRH: Sıralama işlemini useMemo ile optimize ettik (Performans zırhı)
   const allUsers = useMemo(() => {
     return [
       ...MOCK_LEADERS,
-      { id: 'me', name: 'Dr. Kaptan (Sen)', title: 'Gemi Kaptanı', xp: xp, avatar: '👨‍⚕️', isMe: true }
+      { id: 'me', name: benimAdim, title: rutbe(xp), xp: xp, avatar: '👨‍⚕️', isMe: true }
     ].sort((a, b) => b.xp - a.xp);
-  }, [xp]);
+  }, [xp, benimAdim]);
 
   return (
-    <div className="min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
+    <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-6 font-sans text-slate-100">
       <div className="max-w-4xl mx-auto">
         
         {/* Üst Navigasyon */}
         <div className="mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-blue-900/30 pb-6">
           <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-            <Link href="/tr/premium/ydus" className="hover:text-blue-400 transition-colors">⚓ Mavi Vatan Lobi</Link>
+            <Link href="/tr/premium/ydus" className="inline-block py-1.5 hover:text-blue-400 transition-colors">⚓ Mavi Vatan Lobi</Link>
             <span>/</span>
             <span className="text-slate-200">Amirallik Divanı</span>
           </div>
@@ -50,7 +62,18 @@ export default function LeadershipBoard() {
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4 uppercase tracking-tighter italic relative z-10">
             Donanma <span className="text-blue-500">Liderlik Tablosu</span>
           </h1>
-          <p className="text-slate-400 font-medium relative z-10">Mavi Vatan'ın en seçkin hekimleri. Simülasyonları çöz, XP kazan, amiralliğe yüksel.</p>
+          {/* Metin GERÇEĞİ söylüyor: listedeki isimler (Barbaros, Piri, Turgut…)
+              MOCK_LEADERS sabitinden geliyor, gerçek kullanıcı değil. Önceki
+              cümle "Mavi Vatan'ın en seçkin hekimleri" diyordu — yani kurgu
+              rakipleri gerçek hekim gibi sunuyordu ve kullanıcı kendini
+              onlarla kıyaslıyordu. Sınava hazırlanan biri için bu, uydurma
+              bir sosyal kıyas; projenin sahte veri göstermeme kuralı
+              arayüzde de geçerli. Sıralamanın kendisi (sahte rakipler
+              kalsın mı) ayrı bir ürün kararı ve verilmedi. */}
+          <p className="text-slate-400 font-medium relative z-10">
+            Örnek sıralama — aşağıdaki isimler tanıtım amaçlı, gerçek kullanıcı değil.
+            Simülasyonları çöz, XP kazan, amiralliğe yüksel.
+          </p>
         </div>
 
         {/* LİDERLİK LİSTESİ */}
@@ -96,7 +119,11 @@ export default function LeadershipBoard() {
                       <h3 className={`font-black text-lg truncate ${(user as any).isMe ? 'text-blue-400' : 'text-white'}`}>
                         {user.name}
                       </h3>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest truncate">
+                      {/* Bu eleman BOŞ basılıyordu: her satırın ünvanı veride
+                          duruyor ama ekrana hiç çıkmıyordu, yerinde yalnızca
+                          boş bir paragraf kalıyordu. */}
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest truncate">
+                        {user.title}
                       </p>
                     </div>
                   </div>
@@ -104,7 +131,7 @@ export default function LeadershipBoard() {
                   {/* XP Puanı */}
                   <div className="text-right shrink-0">
                     <div className={`font-black text-2xl tracking-tighter ${(user as any).isMe ? 'text-blue-400' : 'text-slate-300'}`}>
-                      {user.xp.toLocaleString()}
+                      {user.xp.toLocaleString("tr-TR")}
                     </div>
                     <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
                       Seyir Mili

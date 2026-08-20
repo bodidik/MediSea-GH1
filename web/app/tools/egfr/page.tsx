@@ -22,15 +22,41 @@ export default function EgfrPage() {
   // lib içindeki o meşhur race-free formülü çağırıyoruz
   const result = useMemo(() => egfrCkdEpi2021(scrNum, ageNum, sex), [scrNum, ageNum, sex]);
 
+  /**
+   * GEÇERSİZ GİRDİDE SAYI GÖSTERME — ölçülmüş ve klinik olarak riskliydi.
+   *
+   * `parseLocaleNumber` ayrıştıramadığı her şeyi 0'a çeviriyor (42 aracın
+   * paylaştığı davranış). Sonuç şuydu:
+   *
+   *   kreatinin "abc"  → ekranda 0    + "G5: Böbrek Yetmezliği"
+   *   kreatinin -5     → ekranda NaN  + "G5: Böbrek Yetmezliği"
+   *   kreatinin 0      → ekranda 0    + "G5: Böbrek Yetmezliği"
+   *   kreatinin 99999  → ekranda 0    + "G5: Böbrek Yetmezliği"
+   *
+   * Yani çöp girdi, SON DÖNEM BÖBREK YETMEZLİĞİ evrelemesi üretiyordu ve
+   * hiçbirinde uyarı yoktu. "0 mL/dk" NaN'dan daha tehlikeli: NaN açıkça
+   * bozuk, 0 ise makul görünen kritik bir değer.
+   *
+   * Aralık sınırları klinik değil MAKULLÜK sınırı: kreatinin 0.1-30 mg/dL
+   * dışında bir değer laboratuvardan gelmez, yaş 1-120 dışına çıkmaz.
+   * Amaç tanı koymak değil, saçma girdiden sayı üretmemek.
+   */
+  const girdiGecerli =
+    Number.isFinite(scrNum) && scrNum >= 0.1 && scrNum <= 30 &&
+    Number.isFinite(ageNum) && ageNum >= 1 && ageNum <= 120 &&
+    Number.isFinite(result) && result > 0;
+
   // Evreleme ve Klinik Yorumlama
   const interpretation = useMemo(() => {
+    if (!girdiGecerli)
+      return { label: "Değerleri girin", color: "text-slate-600", bg: "bg-slate-50" };
     if (result >= 90) return { label: "G1: Normal veya Yüksek", color: "text-emerald-700", bg: "bg-emerald-50" };
     if (result >= 60) return { label: "G2: Hafif Azalmış", color: "text-emerald-600", bg: "bg-emerald-50" };
     if (result >= 45) return { label: "G3a: Hafif-Orta Azalmış", color: "text-amber-700", bg: "bg-amber-50" };
     if (result >= 30) return { label: "G3b: Orta-İleri Azalmış", color: "text-orange-700", bg: "bg-orange-50" };
     if (result >= 15) return { label: "G4: İleri Derece Azalmış", color: "text-rose-700", bg: "bg-rose-50" };
     return { label: "G5: Böbrek Yetmezliği", color: "text-rose-900", bg: "bg-rose-100" };
-  }, [result]);
+  }, [result, girdiGecerli]);
 
   const shareParams = { scr: scrNum, age: ageNum, sex };
 
@@ -86,13 +112,13 @@ export default function EgfrPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">2021</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HESAPLANAN eGFR</span>
-           <div className="text-7xl font-black text-white drop-shadow-lg">{result}</div>
+           <div className="text-7xl font-black text-white drop-shadow-lg">{girdiGecerli ? result : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mL / dak / 1.73 m²</span>
         </div>
 
         {/* EVRELEME PANELİ */}
         <div className={`p-6 rounded-[2rem] border border-blue-900/5 shadow-sm text-center ${interpretation.bg}`}>
-           <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-1 text-center">KDIGO EVRELEMESİ</span>
+           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-1 text-center">KDIGO EVRELEMESİ</span>
            <p className={`text-xl font-black italic tracking-tight ${interpretation.color}`}>
              {interpretation.label}
            </p>

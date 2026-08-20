@@ -23,16 +23,16 @@ export default function AdminImportPage() {
 
   const exampleCSV = tab === "videos"
     ? `title,url,section,sectionCode,tags,thumbnail,references,durationSec,preview,source,language,isPublic
-Hipertansiyon Tedavisi,https://youtu.be/xxxx,Nephrology,NEPH,"htn;bp",https://img/1.jpg,"guideline;doi:10.1/...",600,"KÄ±sa aÃ§Ä±klama",YouTube,tr,true`
+Hipertansiyon Tedavisi,https://youtu.be/xxxx,Nephrology,NEPH,"htn;bp",https://img/1.jpg,"guideline;doi:10.1/...",600,"Kısa açıklama",YouTube,tr,true`
     : `title,content,section,sectionCode,tags,thumbnail,references,preview,language,authorRef,isPublic
-ACE inhibitÃ¶rleri,"Markdown **notu**",Nephrology,NEPH,"acei;htn",https://img/2.jpg,"uptodate;doi:10.2/...",KÄ±sa Ã¶zet,tr,dr-xyz,true`;
+ACE inhibitörleri,"Markdown **notu**",Nephrology,NEPH,"acei;htn",https://img/2.jpg,"uptodate;doi:10.2/...",Kısa özet,tr,dr-xyz,true`;
 
   const exampleJSON = tab === "videos"
     ? `[
   { "title":"Hipertansiyon", "url":"https://youtu.be/xxxx", "section":"Nefroloji", "sectionCode":"", "tags":"htn;bp", "thumbnail":"", "references":"", "durationSec":600, "preview":"", "source":"YouTube", "language":"tr", "isPublic":true }
 ]`
     : `[
-  { "title":"ACE inhibitÃ¶rleri", "content":"Markdown **notu**", "section":"Kardiyoloji", "sectionCode":"", "tags":"acei;htn", "thumbnail":"", "references":"", "preview":"", "language":"tr", "authorRef":"", "isPublic":true }
+  { "title":"ACE inhibitörleri", "content":"Markdown **notu**", "section":"Kardiyoloji", "sectionCode":"", "tags":"acei;htn", "thumbnail":"", "references":"", "preview":"", "language":"tr", "authorRef":"", "isPublic":true }
 ]`;
 
   function safeJSON(v: string) {
@@ -64,7 +64,7 @@ ACE inhibitÃ¶rleri,"Markdown **notu**",Nephrology,NEPH,"acei;htn",https://img/
     }
   }
 
-  // --- HatalÄ± satÄ±rlardan CSV Ã¼ret ---
+  // --- Hatalı satırlardan CSV üret ---
   function toCSV(rows: any[], headers: string[]) {
     const esc = (s: any) => {
       const str = s == null ? "" : String(s);
@@ -109,7 +109,7 @@ ACE inhibitÃ¶rleri,"Markdown **notu**",Nephrology,NEPH,"acei;htn",https://img/
 
       <div className="rounded-2xl border p-4 grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
         <div className="flex items-center gap-2">
-          <label className="text-sm">TÃ¼r:</label>
+          <label className="text-sm">Tür:</label>
           <select value={tab} onChange={e=>setTab(e.target.value as any)} className="px-2 py-2 rounded border">
             <option value="videos">Videos</option>
             <option value="notes">Notes</option>
@@ -124,43 +124,43 @@ ACE inhibitÃ¶rleri,"Markdown **notu**",Nephrology,NEPH,"acei;htn",https://img/
         </div>
         <label className="flex items-center gap-2">
           <input type="checkbox" checked={useMapping} onChange={e=>setUseMapping(e.target.checked)} />
-          <span className="text-sm">TRâ†’EN bÃ¶lÃ¼m eÅŸlemesi</span>
+          <span className="text-sm">TR→EN bölüm eşlemesi</span>
         </label>
         <div className="flex items-center gap-2 md:col-span-3">
           <label className="text-sm">externalId (ops):</label>
-          <input value={externalId} onChange={e=>setExternalId(e.target.value)} placeholder="mk_xxx (boÅŸ = seed)" className="px-3 py-2 rounded border flex-1" />
+          <input value={externalId} onChange={e=>setExternalId(e.target.value)} placeholder="mk_xxx (boş = seed)" className="px-3 py-2 rounded border flex-1" />
         </div>
         <div className="text-xs text-muted-foreground md:col-span-3">
-          CSV baÅŸlÄ±klarÄ± â€” <b>Videos</b>: <code>title,url,section,sectionCode,tags,thumbnail,references,durationSec,preview,source,language,isPublic</code><br/>
-          CSV baÅŸlÄ±klarÄ± â€” <b>Notes</b>:  <code>title,content,section,sectionCode,tags,thumbnail,references,preview,language,authorRef,isPublic</code>
+          CSV başlıkları — <b>Videos</b>: <code>title,url,section,sectionCode,tags,thumbnail,references,durationSec,preview,source,language,isPublic</code><br/>
+          CSV başlıkları — <b>Notes</b>:  <code>title,content,section,sectionCode,tags,thumbnail,references,preview,language,authorRef,isPublic</code>
         </div>
       </div>
 
       <div className="rounded-2xl border p-4 space-y-3">
         <div className="flex gap-2 text-sm">
-          <button onClick={()=>setData(exampleCSV)} className="px-3 py-1 rounded border">CSV Ã¶rneÄŸi</button>
-          <button onClick={()=>setData(exampleJSON)} className="px-3 py-1 rounded border">JSON Ã¶rneÄŸi</button>
+          <button onClick={()=>setData(exampleCSV)} className="px-3 py-1 rounded border">CSV örneği</button>
+          <button onClick={()=>setData(exampleJSON)} className="px-3 py-1 rounded border">JSON örneği</button>
         </div>
         <textarea
           value={data}
           onChange={e=>setData(e.target.value)}
           className="w-full h-60 border rounded p-2 font-mono text-xs"
-          placeholder={format === "csv" ? "CSV verisini buraya yapÄ±ÅŸtÄ±r" : "JSON array verisini buraya yapÄ±ÅŸtÄ±r"}
+          placeholder={format === "csv" ? "CSV verisini buraya yapıştır" : "JSON array verisini buraya yapıştır"}
         />
         <button onClick={submit} disabled={loading} className="px-4 py-2 rounded-lg border">
-          {loading ? "Ä°Ã§e aktarÄ±lÄ±yorâ€¦" : "Ä°Ã§e aktar"}
+          {loading ? "İçe aktarılıyor…" : "İçe aktar"}
         </button>
       </div>
 
       <div className="rounded-2xl border p-4">
-        <div className="font-semibold mb-2">SonuÃ§</div>
+        <div className="font-semibold mb-2">Sonuç</div>
         {resJson && (
           <div className="flex flex-wrap items-center gap-3 text-sm mb-3">
             <span className="rounded border px-2 py-1">Toplam: <b>{total}</b></span>
-            <span className="rounded border px-2 py-1">BaÅŸarÄ±lÄ±: <b>{imported}</b></span>
-            <span className="rounded border px-2 py-1">HatalÄ±: <b className={failed ? "text-red-600" : ""}>{failed}</b></span>
+            <span className="rounded border px-2 py-1">Başarılı: <b>{imported}</b></span>
+            <span className="rounded border px-2 py-1">Hatalı: <b className={failed ? "text-red-600" : ""}>{failed}</b></span>
             {failed > 0 && (
-              <button onClick={downloadErrorsCSV} className="px-3 py-1 rounded border">HatalarÄ± CSV indir</button>
+              <button onClick={downloadErrorsCSV} className="px-3 py-1 rounded border">Hataları CSV indir</button>
             )}
           </div>
         )}

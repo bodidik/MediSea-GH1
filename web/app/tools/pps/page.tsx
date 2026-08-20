@@ -50,14 +50,14 @@ export default function PpsPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
           <div className="grid gap-2">
             {PPS_TABLE.map(g => (
-              <button key={g.pps} type="button" onClick={() => setSelected(g.pps)}
+              <button aria-pressed={selected === g.pps} key={g.pps} type="button" onClick={() => setSelected(g.pps)}
                 className={`text-left flex items-center gap-4 p-3 rounded-2xl border transition-all
                   ${selected === g.pps ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm shrink-0
-                  ${selected === g.pps ? 'bg-amber-400 text-blue-900' : 'bg-white border border-slate-200 text-blue-900/60'}`}>
+                  ${selected === g.pps ? 'bg-amber-400 text-blue-900' : 'bg-white border border-slate-200 text-blue-900/80'}`}>
                   {g.pps}
                 </div>
-                <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5">
+                <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5 break-words">
                   {[
                     { label: "Mobilizasyon", val: g.ambulation },
                     { label: "Aktivite", val: g.activity },
@@ -84,7 +84,7 @@ export default function PpsPage() {
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest block mb-2">PROGNOZ</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">PROGNOZ</span>
             <p className={`text-2xl font-black italic tracking-tight ${interp.color}`}>{interp.label}</p>
             {interp.sub && <p className={`text-sm font-bold mt-1 ${interp.color} opacity-80`}>{interp.sub}</p>}
           </div>

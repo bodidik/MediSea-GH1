@@ -44,14 +44,14 @@ export default function BsaPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Boy (cm)</span>
-            <input
+            <input aria-label="Boy (cm)"
               type="text" inputMode="decimal" value={height} onChange={(e) => setHeight(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
           </div>
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">Kilo (kg)</span>
-            <input
+            <input aria-label="Kilo (kg)"
               type="text" inputMode="decimal" value={weight} onChange={(e) => setWeight(e.target.value)}
               className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
             />
@@ -76,7 +76,7 @@ export default function BsaPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ Formül (Mosteller): √((boy_cm × kilo_kg) / 3600). Kemoterapi ve bazı ilaç dozlamalarında kullanılır; ekstrem kilo/boy değerlerinde (morbid obezite, kaşeksi) klinik protokolünüzü kontrol edin.
           </p>
         </div>

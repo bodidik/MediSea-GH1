@@ -10,10 +10,25 @@
  * paketlendiği için her çalışma zamanında güvenle okunuyor.
  *
  * Kullanım (web/ dizininden):
- *   node scripts/baslik-index.cjs
+ *   node scripts/baslik-index.cjs             # üretir ve yazar
+ *   node scripts/baslik-index.cjs --kontrol   # yazmadan: indeks bayat mı?
  *
  * Yeni konu eklendiğinde çalıştır. Çalıştırılmazsa kart, slug'dan türeyen
  * başlıkla basılır — bozulmaz, sadece daha az güzel görünür.
+ *
+ * `--kontrol` NEDEN VAR: bu betik CI'da çalışmıyor, yani biri konu ekleyip
+ * çalıştırmayı unutursa indeks sessizce bayatlıyor. Aynı boşluk araç
+ * indeksinde de vardı ve orada daha pahalıya patladı — üreteç kaynak yolu
+ * değişince hiç araç bulamadı ve 114 kayıtlık indeksi `[]` ile EZDİ,
+ * hatasız, çıkış kodu 0. Ders genel: ayrıştırmaya dayanan bir üreteç boş
+ * sonucu asla meşru saymamalı.
+ *
+ * Buradaki iki koruma o dersten geliyor:
+ *   1. Sıfır başlık bulunursa YAZMAZ (kaynak dizin yerinde duruyorsa sıfır
+ *      "içerik yok" değil "okuma bozuldu" demektir).
+ *   2. `--kontrol` hiçbir şey yazmadan indeksi yeniden hesaplayıp
+ *      karşılaştırır, fark varsa neyin eksik/fazla/değişmiş olduğunu yazar
+ *      ve çıkış kodu 1 döner. CI adımı olmaya hazır.
  */
 const fs = require('fs');
 const path = require('path');
@@ -53,6 +68,42 @@ function main() {
   }
 
   const sirali = Object.fromEntries(Object.entries(index).sort(([a], [b]) => a.localeCompare(b)));
+
+  // Boş sonuca ASLA yazma — bkz. üstteki not.
+  if (konu === 0) {
+    console.error('HATA: hiç başlık bulunamadı. İçerik dizini yerinde mi?');
+    console.error('Mevcut indeks korundu; boş sonuç meşru sayılmıyor.');
+    process.exitCode = 1;
+    return;
+  }
+
+  if (process.argv.includes('--kontrol')) {
+    let mevcut = null;
+    try {
+      mevcut = JSON.parse(fs.readFileSync(HEDEF, 'utf-8'));
+    } catch {
+      console.error('baslik-index.json okunamadı — üretmek için: node scripts/baslik-index.cjs');
+      process.exitCode = 1;
+      return;
+    }
+    const eksik  = Object.keys(sirali).filter((k) => !(k in mevcut));
+    const fazla  = Object.keys(mevcut).filter((k) => !(k in sirali));
+    const farkli = Object.keys(sirali).filter((k) => k in mevcut && mevcut[k] !== sirali[k]);
+
+    if (!eksik.length && !fazla.length && !farkli.length) {
+      console.log(`baslik-index.json senkron (${konu} başlık).`);
+      return;
+    }
+    console.log(`baslik-index.json BAYAT — indekste ${Object.keys(mevcut).length}, olması gereken ${konu}`);
+    for (const k of eksik)  console.log(`  eksik   : ${k}`);
+    for (const k of fazla)  console.log(`  fazla   : ${k}`);
+    for (const k of farkli) console.log(`  değişmiş: ${k}`);
+    console.log('');
+    console.log('Çare: node scripts/baslik-index.cjs');
+    process.exitCode = 1;
+    return;
+  }
+
   fs.writeFileSync(HEDEF, JSON.stringify(sirali, null, 1) + '\n');
 
   console.log(`branş: ${branslar.length} | başlık: ${konu}`);

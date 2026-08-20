@@ -95,18 +95,24 @@ export default function GoutACRPage() {
   );
 
   const domainTotal = DOMAIN_ITEMS.reduce((s, item) => {
-    const vals = sel[item.id];
-    if (item.single) return s + (vals[0] ?? 0);
-    return s + vals.reduce((a, v) => a + v, 0);
+    const secili = sel[item.id];
+    const puan = (i: number) => item.options[i]?.pts ?? 0;
+    if (item.single) return s + (secili.length ? puan(secili[0]) : 0);
+    return s + secili.reduce((a, i) => a + puan(i), 0);
   }, 0);
 
   const allDone = entry !== null && msu !== null && DOMAIN_ITEMS.every(i => sel[i.id].length > 0 || i.options.some(o => o.pts === 0));
 
-  const toggle = (itemId: string, pts: number, single: boolean) => {
+  // Seçim PUANLA değil ŞIK SIRASIYLA saklanır. Aynı puanı taşıyan şıklar
+  // (atak karakteristiklerinde üç bulgunun üçü de +1) puanla ayırt
+  // edilemiyordu: biri seçilince üçü birden yanıyor, ikincisine basılınca
+  // `includes(1)` doğru olduğu için üçü birden sönüyordu. Yani üçünden
+  // yalnızca biri işaretlenebiliyor ve alan skoru 3 yerine 1'de kalıyordu.
+  const toggle = (itemId: string, i: number, single: boolean) => {
     setSel(s => {
       const prev = s[itemId];
-      if (single) return { ...s, [itemId]: prev[0] === pts ? [] : [pts] };
-      return { ...s, [itemId]: prev.includes(pts) ? prev.filter(v => v !== pts) : [...prev, pts] };
+      if (single) return { ...s, [itemId]: prev[0] === i ? [] : [i] };
+      return { ...s, [itemId]: prev.includes(i) ? prev.filter(v => v !== i) : [...prev, i] };
     });
   };
 
@@ -136,9 +142,10 @@ export default function GoutACRPage() {
           <p className="text-[10px] text-slate-600 mb-3">Periferik eklem veya bursada ≥ 1 atak epizodu var mı?</p>
           <div className="flex gap-2">
             {([true, false] as const).map(v => (
-              <button key={String(v)} type="button" onClick={() => setEntry(e => e === v ? null : v)}
+              <button key={String(v)} type="button" aria-pressed={entry === v}
+                onClick={() => setEntry(e => e === v ? null : v)}
                 className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-                  ${entry === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-500 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+                  ${entry === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                 {v ? "Evet" : "Hayır"}
               </button>
             ))}
@@ -151,7 +158,8 @@ export default function GoutACRPage() {
             <p className="text-[10px] text-slate-600 mb-3">Sinoviyal sıvı veya tofüs aspiratında MSU kristali görüldü mü?</p>
             <div className="flex gap-2">
               {([true, false] as const).map(v => (
-                <button key={String(v)} type="button" onClick={() => setMsu(m => m === v ? null : v)}
+                <button key={String(v)} type="button" aria-pressed={msu === v}
+                  onClick={() => setMsu(m => m === v ? null : v)}
                   className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                     ${msu === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-blue-900 bg-blue-900 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                   {v ? "Evet — MSU Pozitif" : "Hayır / Yapılmadı"}
@@ -168,10 +176,11 @@ export default function GoutACRPage() {
                 <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
                 <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
                 <div className="space-y-1.5">
-                  {item.options.map(opt => {
-                    const active = item.single ? sel[item.id][0] === opt.pts : sel[item.id].includes(opt.pts);
+                  {item.options.map((opt, i) => {
+                    const active = item.single ? sel[item.id][0] === i : sel[item.id].includes(i);
                     return (
-                      <button key={opt.pts} type="button" onClick={() => toggle(item.id, opt.pts, item.single)}
+                      <button key={i} type="button" onClick={() => toggle(item.id, i, item.single)}
+                        aria-pressed={active}
                         className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
                           ${active ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                         <span className={`w-7 h-5 rounded-md flex items-center justify-center text-[9px] font-black shrink-0

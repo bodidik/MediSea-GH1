@@ -25,6 +25,7 @@ const path = require('path');
 const KOK = path.join(__dirname, '..');
 const QUIZ = path.join(KOK, 'content', 'premium', 'ydus', 'quizzes');
 const KART = path.join(KOK, 'content', 'premium', 'ydus', 'flashcards');
+const VAKA = path.join(KOK, 'content', 'premium', 'ydus', 'vakalar');
 
 function* dosyalar(kokDizin) {
   let girisler;
@@ -160,13 +161,110 @@ function kartDenetle(kusurlar) {
   return { dosyaSayisi, kartSayisi };
 }
 
+
+/**
+ * VAKA ADIMLARI da soru taşıyor — bir dönem HİÇ denetlenmiyordu.
+ *
+ * Adımların alanları quiz sorularıyla aynı şekilde: `soru`/`metin`,
+ * `secenekler`, `dogru`. Yani geçersiz bir doğru cevap indeksi burada
+ * da yazılabilir ve denetim onu göremezdi. Ölçüldü: eklendiğinde 35 adım
+ * tarandı, o an kusur yoktu — boşluk gerçekti ama arkasında kusur
+ * birikmemişti. Denetimin değeri bundan sonrası için.
+ */
+function vakaDenetle(kusurlar) {
+  let adimSayisi = 0;
+  let dosyaSayisi = 0;
+
+  for (const dosya of dosyalar(VAKA)) {
+    dosyaSayisi++;
+    const ad = kisaAd(dosya);
+    let veri;
+    try {
+      veri = JSON.parse(fs.readFileSync(dosya, 'utf-8'));
+    } catch (e) {
+      kusurlar.push({ dosya: ad, kusur: 'JSON ayrıştırılamıyor: ' + e.message });
+      continue;
+    }
+
+    const adimlar = veri?.adimlar ?? veri?.steps;
+    if (!Array.isArray(adimlar) || adimlar.length === 0) {
+      kusurlar.push({ dosya: ad, kusur: 'adım listesi yok ya da boş' });
+      continue;
+    }
+
+    adimlar.forEach((a, i) => {
+      adimSayisi++;
+      const yer = `adım #${i + 1}`;
+
+      const metin = a?.soru ?? a?.metin ?? a?.text;
+      if (!metin || String(metin).trim().length < 5) {
+        kusurlar.push({ dosya: ad, kusur: `${yer}: soru metni yok ya da çok kısa` });
+      }
+
+      const siklar = sikKimlikleri(a?.secenekler ?? a?.options);
+      if (siklar.length < 2) {
+        kusurlar.push({ dosya: ad, kusur: `${yer}: şık sayısı ${siklar.length} (en az 2 olmalı)` });
+        return;
+      }
+
+      const dogru = a?.dogru ?? a?.correct ?? a?.correctAnswer;
+      if (dogru === undefined || dogru === null || String(dogru).trim() === '') {
+        kusurlar.push({ dosya: ad, kusur: `${yer}: doğru cevap belirtilmemiş` });
+      } else if (!siklar.includes(String(dogru).trim())) {
+        kusurlar.push({
+          dosya: ad,
+          kusur: `${yer}: doğru cevap "${dogru}" şıklar arasında yok (${siklar.join(',')})`,
+        });
+      }
+    });
+  }
+
+  return { dosyaSayisi, adimSayisi };
+}
+
 function main() {
   const kusurlar = [];
   const q = quizDenetle(kusurlar);
   const k = kartDenetle(kusurlar);
+  const v = vakaDenetle(kusurlar);
 
   console.log(`quiz dosyası: ${q.dosyaSayisi} | soru: ${q.soruSayisi}`);
   console.log(`kart dosyası: ${k.dosyaSayisi} | kart: ${k.kartSayisi}`);
+  console.log(`vaka dosyası: ${v.dosyaSayisi} | adım: ${v.adimSayisi}`);
+
+  /* ── UYARI SINIFI: açıklaması olmayan vaka adımı ────────────────────────
+   *
+   * Yapısal kusur DEĞİL — dosya geçerli, motor çalışıyor, kimse çökmüyor.
+   * Ama ölçüldü: 35 vaka adımının 12'si `aciklama_kisa` ve `aciklama_detay`
+   * taşımıyor, yani cevaptan sonra çıkan sonuç kutusu başlıklı ve gövdesiz
+   * kalıyordu. Motor artık boş kutuyu hiç basmıyor; buradaki liste eksiğin
+   * KENDİSİNİ görünür tutuyor.
+   *
+   * CI kapısı değil: açıklama yazmak içerik işi ve içerik kullanıcının
+   * sorumluluğunda. Kapı yapılsaydı iş, eksik metin yüzünden düşerdi.
+   */
+  const eksikAciklama = [];
+  for (const dosya of dosyalar(VAKA)) {
+    let veri;
+    try { veri = JSON.parse(fs.readFileSync(dosya, 'utf-8')); } catch { continue; }
+    const adimlar = Array.isArray(veri?.adimlar) ? veri.adimlar : [];
+    const eksik = adimlar.filter((a) => !a?.aciklama_kisa && !a?.aciklama_detay).length;
+    if (eksik) {
+      eksikAciklama.push({
+        dosya: kisaAd(dosya),
+        eksik,
+        toplam: adimlar.length,
+      });
+    }
+  }
+  if (eksikAciklama.length) {
+    const t = eksikAciklama.reduce((a, b) => a + b.eksik, 0);
+    console.log('');
+    console.log(`UYARI — açıklaması olmayan vaka adımı: ${t} (CI kapısı DEĞİL, içerik eksiği)`);
+    for (const x of eksikAciklama) {
+      console.log(`  ${x.dosya.padEnd(50)} ${x.eksik}/${x.toplam} adım`);
+    }
+  }
 
   if (!kusurlar.length) {
     console.log('yapısal kusur yok.');

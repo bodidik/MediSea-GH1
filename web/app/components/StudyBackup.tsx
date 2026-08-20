@@ -38,7 +38,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
     a.download = name;
     a.click();
     URL.revokeObjectURL(url);
-    setDurum(`${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi yedeklendi`);
+    // Kart işareti yalnızca varsa yazılır: hiç flashcard çalışmamış kullanıcıya
+    // "0 kart işareti" demek bilgi değil gürültü.
+    const kartlar = ozet.kartIsareti ? ` · ${ozet.kartIsareti} kart işareti` : "";
+    setDurum(
+      `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar} yedeklendi`
+    );
   };
 
   const dosyaSecildi = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -50,6 +55,25 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
     setPlan(planImport(icerik));
     setDurum(null);
   };
+
+  /**
+   * İçe aktarma bitince ODAK DURUM MESAJINA gitsin.
+   *
+   * Ölçüldü: "Onayla ve üzerine yaz" tıklandıktan sonra düğme DOM'dan
+   * kalkıyor ve odak `<body>`ye düşüyor. Uygulamanın EN YIKICI eylemi bu —
+   * bütün çalışma verisi değişiyor — ve klavyeyle gezen kullanıcı hem
+   * yerini kaybediyor hem de sonucu görmek için sayfayı yeniden taramak
+   * zorunda kalıyor.
+   *
+   * Odak, ne olduğunu söyleyen cümlenin kendisine gidiyor. `role="status"`
+   * zaten duyuruyor; odak da oraya gidince ekran okuyucu KULLANMAYAN
+   * klavye kullanıcısı da mesajı görüyor.
+   */
+  const durumRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (durum) durumRef.current?.focus();
+  }, [durum]);
 
   const onayla = () => {
     if (!text) return;
@@ -142,6 +166,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
                 ).map(([m, l]) => (
                   <button
                     key={m}
+                    aria-pressed={mode === m}
                     onClick={() => setMode(m)}
                     className={`flex-1 rounded-md px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                       mode === m
@@ -226,7 +251,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
           {/* Koşullu basılmıyor: canlı bölge, içerik değişmeden ÖNCE DOM'da
               bulunmalı — sonradan eklenen bir bölgenin ilk mesajı kaçabiliyor.
               Boşken görünmez, yer kaplamıyor. */}
-          <span role="status" className="text-[11px] font-semibold text-emerald-600">
+          <span
+            ref={durumRef}
+            tabIndex={-1}
+            role="status"
+            className="text-[11px] font-semibold text-emerald-600 outline-none"
+          >
             {durum ?? ""}
           </span>
         </div>

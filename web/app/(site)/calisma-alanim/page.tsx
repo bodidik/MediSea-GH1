@@ -4,7 +4,8 @@
 // Tüm sayfalardaki vurgu ve notların tek listesi.
 // Veri tarayıcıda (localStorage) durduğu için sayfa istemci tarafında çalışır.
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { aramaEslesir } from "@/app/lib/arama";
 import Link from "next/link";
 import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
@@ -46,13 +47,34 @@ export default function StudyWorkspace() {
     let list = entries ?? [];
     if (filter === "marks") list = list.filter((e) => e.marks.length > 0);
     if (filter === "notes") list = list.filter((e) => e.note);
-    const needle = q.trim().toLocaleLowerCase("tr");
-    if (needle) {
+    /**
+     * Arama AKSAN KATLAR — `toLocaleLowerCase("tr")` tek başına yetmiyor.
+     *
+     * Ölçüldü: altı gerçekçi sorgunun DÖRDÜ kaçıyordu, çünkü küçük harfe
+     * çevirmek `ö`yü `o` yapmıyor. Kullanıcı kendi notunu arıyor ve
+     * bulamıyordu:
+     *
+     *   "gogus"  → "Göğüs Hastalıkları"    bulunamıyordu
+     *   "bobrek" → "Böbrek Yetmezliği"     bulunamıyordu
+     *   "sok"    → "Şok ve Sıvı Tedavisi"  bulunamıyordu
+     *   "colyak" → "Çölyak Hastalığı"      bulunamıyordu
+     *
+     * `aramaEslesir` iki tarafı da aynı kuralla normalleştiriyor (küçük
+     * harf + `ı→i` + NFD ile birleşik işaretleri sökme), yani Türkçe
+     * karakter yazmayan klavyede de çalışıyor.
+     *
+     * BOŞ SORGU TUZAĞI: `aramaEslesir` boş sorguda bilerek `false` döner —
+     * doğrudan `.filter()` içine konursa listeyi tümden boşaltır (`/tools`
+     * bir tur böyle boş kaldı). Buradaki `if (aranan)` koruması o yüzden
+     * ŞART ve kaldırılmamalı.
+     */
+    const aranan = q.trim();
+    if (aranan) {
       list = list.filter(
         (e) =>
-          e.title.toLocaleLowerCase("tr").includes(needle) ||
-          e.marks.some((m) => m.t.toLocaleLowerCase("tr").includes(needle)) ||
-          (e.note?.text ?? "").toLocaleLowerCase("tr").includes(needle)
+          aramaEslesir(e.title, aranan) ||
+          e.marks.some((m) => aramaEslesir(m.t, aranan)) ||
+          aramaEslesir(e.note?.text ?? "", aranan)
       );
     }
     return list;
@@ -68,15 +90,53 @@ export default function StudyWorkspace() {
     URL.revokeObjectURL(url);
   };
 
+  /**
+   * Silinen kartın odağı KAYBOLMASIN.
+   *
+   * Ölçüldü: ortadaki kayıt silindiğinde `document.activeElement` `<body>`
+   * oluyordu — düğme DOM'dan kalkınca odak kök ögeye düşüyor. Klavyeyle
+   * gezen kullanıcı yerini tamamen kaybediyor ve listeye dönmek için
+   * sayfayı en baştan Tab'lamak zorunda kalıyor. Aynı kural not defteri
+   * için zaten yazılıydı (kapanışta odak açan düğmeye döner).
+   *
+   * Odak listedeki bir sonraki "Sil" düğmesine gidiyor; kayıt kalmadıysa
+   * listenin kendisine (`tabIndex={-1}`), çünkü orada artık düğme yok.
+   */
+  const listeRef = useRef<HTMLDivElement>(null);
+  const [odakBekliyor, setOdakBekliyor] = useState(false);
+
+  /**
+   * Odak taşıma ETKİDE yapılır, silme anında DEĞİL.
+   *
+   * İlk deneme `requestAnimationFrame` ile yapıldı ve ÖLÇÜMDE ÇALIŞMADI:
+   * odak yine `<body>`ye düşüyordu. Sebep, kare React'in commit'inden önce
+   * gelebiliyor — o anda eski düğme hâlâ DOM'da, yenisi henüz yok.
+   * Bayrağı duruma koyup `entries` değiştikten SONRA çalışan bir etkide
+   * odaklamak sırayı garantiliyor.
+   *
+   * Ref LİSTEDE değil, listeyi de boş durumu da kapsayan dış sarmalayıcıda:
+   * son kayıt silindiğinde liste tümden kalkıyor ve ref `null` oluyordu —
+   * ölçüldü, odak yine `<body>`ye düşüyordu. Dış sarmalayıcı her iki dalda
+   * da duruyor.
+   */
+  useEffect(() => {
+    if (!odakBekliyor) return;
+    setOdakBekliyor(false);
+    const kalan = listeRef.current?.querySelectorAll<HTMLButtonElement>("[data-sil]");
+    if (kalan && kalan.length) kalan[0].focus();
+    else listeRef.current?.focus();
+  }, [entries, odakBekliyor]);
+
   const remove = (path: string, title: string) => {
     if (!confirm(`"${title}" sayfasındaki tüm vurgu ve notlar silinsin mi?`)) return;
     purge(path);
     setEntries(collectAll());
+    setOdakBekliyor(true);
   };
 
   return (
     <div className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
-      <div className="mx-auto max-w-5xl">
+      <div ref={listeRef} tabIndex={-1} className="mx-auto max-w-5xl outline-none">
 
         {/* Başlık */}
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
@@ -187,6 +247,7 @@ export default function StudyWorkspace() {
                 ).map(([f, label]) => (
                   <button
                     key={f}
+                    aria-pressed={filter === f}
                     onClick={() => setFilter(f)}
                     className={`rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                       filter === f ? "bg-blue-950 text-white" : "text-slate-400 hover:bg-slate-100"
@@ -309,6 +370,12 @@ function EntryCard({
           </button>
           <button
             onClick={() => onRemove(entry.path, entry.title)}
+            data-sil
+            /* Üç kayıtta üç düğmenin de adı yalnızca "Sil"di. Düğmeler
+               arasında gezen ekran okuyucu kullanıcısı hangisini sildiğini
+               bilemiyordu. `title` ad olmuyor: içerik boş değilse hesaplama
+               sırası onu hiç kullanmıyor. */
+            aria-label={`${entry.title} sayfasındaki her şeyi sil`}
             title="Bu sayfadaki her şeyi sil"
             className="rounded-lg px-2.5 py-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-colors hover:bg-rose-50 hover:text-rose-600"
           >

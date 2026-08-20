@@ -229,7 +229,22 @@ export default function SiteHeader() {
             </Link>
 
             {/* Fare Üzerine Gelince Açılan Liste */}
-            <div className="absolute top-full right-0 mt-2 w-56 bg-white border border-slate-100 rounded-[1.5rem] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden p-2">
+            {/*
+              `group-focus-within:` varyantları FAREYE EŞİTLİK için: menü bir
+              dönem yalnızca `group-hover:` ile açılıyordu ve klavyeyle hiç
+              açılamıyordu.
+
+              Ölçüldü (1600px, yani kapsayıcının gerçekten çizildiği genişlik):
+              menü `visibility: hidden` kaldığı için yedi kategori bağlantısı
+              odak sırasına HİÇ girmiyordu — `focus()` çağrılsa bile
+              `activeElement` olmuyorlardı. Tuzak ya da görünmez odak hedefi
+              yoktu; içerik klavyeyle basitçe erişilemezdi.
+
+              Not: aynı kategoriler `/tools` sayfasında da listeli, yani içerik
+              kaybı değil kısayol kaybıydı. `group-focus-within` bu dosyada
+              zaten kullanılan kalıp (arama ikonu).
+            */}
+            <div className="absolute top-full right-0 mt-2 w-56 bg-white border border-slate-100 rounded-[1.5rem] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50 overflow-hidden p-2">
               {/* Kategoriler araç veritabanındaki gerçek gruplar. Burada bir dönem
                   "Algoritmalar" ve "İlaç Etkileşimleri" yazıyordu; ikisinin de
                   sayfası hiç yazılmamıştı, üç bağlantı da 404 veriyordu. */}
@@ -255,7 +270,21 @@ export default function SiteHeader() {
         </div>
 
         {/* SAĞ: GİRİŞ / ÜYE OL */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0 ml-1 sm:ml-2 border-l border-slate-200 pl-2 sm:pl-6">
+        {/*
+          320px'te boşluklar KISILDI (yalnızca taban değerler; `sm:` ve üstü
+          değişmedi).
+
+          Ölçüldü: bu grup `shrink-0`, yani hiç daralmıyor ve 305px'lik
+          belgede sağ kenarı 312'ye taşıyordu — SİTENİN HER SAYFASI 320px'te
+          6.86px yatay kayıyordu. 320px hâlâ yaygın (iPhone SE ve benzerleri)
+          ve bu depoda mobil ölçümün tek genişlikte yapılmaması kuralı zaten
+          yazılı.
+
+          Kaynak elle tahmin edilmedi: `scrollTo(9999,0)` ile gerçek kayma
+          ölçüldü, sonra belge genişliğini aşan kutular sıralandı ve en sağı
+          boyayan öge `elementFromPoint` ile doğrulandı.
+        */}
+        <div className="flex items-center gap-1.5 sm:gap-4 shrink-0 ml-0 sm:ml-2 border-l border-slate-200 pl-1.5 sm:pl-6">
           {oturumHazir && !girisli && (
             <>
               {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için

@@ -51,13 +51,13 @@ export default function RansonPage() {
 
   const Row = ({ label, checked, onChange }: { label: string; checked: boolean; onChange: () => void }) => (
     <label
-      className={`flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
+      className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
         ${checked ? 'bg-blue-900 border-blue-900 text-white shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30 text-blue-950'}
       `}
     >
       <span className="text-xs font-bold">{label}</span>
       <div className="flex items-center gap-3">
-        <input type="checkbox" className="hidden" checked={checked} onChange={onChange} />
+        <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
         <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </div>
@@ -87,7 +87,7 @@ export default function RansonPage() {
 
         {/* GİRİŞ KRİTERLERİ */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">Girişte (Admission) — {admissionCount}/5</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">Girişte (Admission) — {admissionCount}/5</span>
           {ADMISSION.map((c) => (
             <Row key={c.key} label={c.label} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -95,7 +95,7 @@ export default function RansonPage() {
 
         {/* 48. SAAT KRİTERLERİ */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1 block mb-2">48. Saatte — {hour48Count}/6</span>
+          <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1 block mb-2">48. Saatte — {hour48Count}/6</span>
           {HOUR_48.map((c) => (
             <Row key={c.key} label={c.label} checked={!!sel[c.key]} onChange={() => toggle(c.key)} />
           ))}
@@ -106,10 +106,10 @@ export default function RansonPage() {
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
             <div className="text-5xl font-black text-white">{total}</div>
-            <span className="text-[9px] font-bold text-blue-300/70 uppercase tracking-widest mt-1">/ 11</span>
+            <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">/ 11</span>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${interpretation.bg} transition-all duration-500`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block text-center md:text-left">ŞİDDET DEĞERLENDİRMESİ</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block text-center md:text-left">ŞİDDET DEĞERLENDİRMESİ</span>
             <p className={`text-2xl font-black italic tracking-tight text-center md:text-left ${interpretation.color}`}>
               {interpretation.label}
             </p>

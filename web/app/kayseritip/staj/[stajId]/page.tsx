@@ -51,7 +51,7 @@ export default async function StajPage({ params }: { params: Promise<{ stajId: s
               }}>
                 <div style={{ fontSize: '30px' }}>{alan.emoji}</div>
                 <div style={{ fontSize: '14px', fontWeight: 600, color: '#1a2a4a' }}>{alan.baslik}</div>
-                <div style={{ fontSize: '12px', color: sayisi > 0 ? '#1a5c2e' : '#8a9aaa', marginTop: 'auto' }}>
+                <div style={{ fontSize: '12px', color: sayisi > 0 ? '#1a5c2e' : '#5a6a8a', marginTop: 'auto' }}>
                   {sayisi > 0 ? `${sayisi} dosya` : 'Henüz dosya yok'}
                 </div>
               </div>

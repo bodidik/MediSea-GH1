@@ -41,7 +41,7 @@ export default function PniPage() {
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
           <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
-            <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-1">Formül</p>
+            <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">Formül</p>
             <p className="text-sm font-bold text-blue-900">PNI = 10 × Albumin (g/dL) + 0.005 × Lenfosit (/μL)</p>
           </div>
           {[
@@ -66,7 +66,7 @@ export default function PniPage() {
 
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">PNI = {pni?.toFixed(1)}</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PNI = {pni?.toFixed(1)}</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
             <div className="mt-4 grid grid-cols-4 gap-2">

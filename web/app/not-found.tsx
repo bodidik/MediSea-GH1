@@ -14,6 +14,20 @@ import { SPECIALTIES } from "@/app/lib/specialties";
  * Arama motorundan gelen ziyaretçi yanlış adrese düşse bile sitede kalabilir.
  *
  * noindex: hata sayfasının dizine girmesi anlamsız.
+ *
+ * KÖK ÖGE `<main>` — bu sayfa AppShell ALMIYOR. Ölçüldü (canlı 404):
+ * `main`, `nav`, `header`, `footer` sayısı DÖRDÜ DE SIFIRDI. Sebebi
+ * belgede yazan sınıfın aynısı: AppShell yalnızca `(site)/layout.tsx`te
+ * kurulu, `app/not-found.tsx` ise kökte ve eşleşmeyen adreslerde kök
+ * düzenle birlikte çiziliyor.
+ *
+ * `<main>` kök DÜZENE konulamaz: o zaman AppShell'in kendi `<main
+ * id="icerik">`i ile çakışır ve `(site)` sayfalarında İKİ main landmark'ı
+ * oluşur (geçersiz; ekran okuyucu hangisinin ana içerik olduğunu bilemez).
+ * Bu yüzden landmark burada, tıpkı `app/giris/layout.tsx`teki gibi.
+ *
+ * Üst menü ve alt bilgi bilerek verilmiyor: 404 odaklanmış bir yüzey ve
+ * çıkış listesini kendi içinde taşıyor.
  */
 export const metadata: Metadata = {
   title: "Sayfa bulunamadı",
@@ -22,11 +36,19 @@ export const metadata: Metadata = {
 
 export default function BulunamadiSayfasi() {
   return (
-    <div className="min-h-screen bg-slate-50 text-blue-950 font-sans px-4 py-16">
+    <main className="min-h-screen bg-slate-50 text-blue-950 font-sans px-4 py-16">
       <div className="max-w-3xl mx-auto">
 
         <div className="border-l-8 border-blue-900 pl-6 py-2 mb-10">
-          <div className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.3em] mb-2">
+          {/*
+            Opaklık /50 DEĞİL /80: saydam metin, alfayı zemine bindirmeyen bir
+            ölçümde opak sanılır. Ölçüldü — /50 bu künyeyi beyaz zeminde 2.67
+            kontrasta düşürüyordu (eşik 4.5), /80 ise 5.92 veriyor.
+
+            /80 sitenin kendi değeri: kaynakta 188 kullanım /80, yalnızca bu
+            sayfadaki iki satır /50 kalmıştı.
+          */}
+          <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] mb-2">
             404 · Sayfa bulunamadı
           </div>
           <h1 className="text-3xl sm:text-4xl font-black uppercase italic tracking-tighter leading-none">
@@ -76,7 +98,7 @@ export default function BulunamadiSayfasi() {
 
         {/* Branşlar — doğrudan bir yere düşmek isteyen için */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 sm:p-8">
-          <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em] mb-4">
+          <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em] mb-4">
             Branşlar
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -93,6 +115,6 @@ export default function BulunamadiSayfasi() {
         </div>
 
       </div>
-    </div>
+    </main>
   );
 }

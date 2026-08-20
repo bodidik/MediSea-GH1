@@ -366,7 +366,42 @@ export default function ReadingTools() {
     setPanelOpen(false);
   };
 
+  /**
+   * Vurgu kaldırıldıktan sonra ODAK KAYBOLMASIN.
+   *
+   * Ölçüldü: listedeki ortadaki vurgu kaldırıldığında `document
+   * .activeElement` `<body>` oluyordu — düğme DOM'dan kalkınca odak kök
+   * ögeye düşüyor ve klavyeyle gezen kullanıcı panelde yerini kaybediyor.
+   * Çalışma Alanım'daki "Sil" düğmesinde ölçülen kusurun aynısı.
+   *
+   * Odak taşıma ETKİDE yapılıyor, kaldırma anında değil: `requestAnimation
+   * Frame` React'in commit'inden önce gelebiliyor ve o anda eski düğme hâlâ
+   * DOM'da (Çalışma Alanım'da bu ölçüldü ve ilk düzeltme böyle düşmüştü).
+   */
+  const listeRef = useRef<HTMLUListElement>(null);
+  const panelDugmeRef = useRef<HTMLButtonElement>(null);
+  const [odakBekliyor, setOdakBekliyor] = useState(false);
+
+  useEffect(() => {
+    if (!odakBekliyor) return;
+    setOdakBekliyor(false);
+    const kalan = listeRef.current?.querySelectorAll<HTMLButtonElement>("[data-kaldir]");
+    if (kalan && kalan.length) kalan[0].focus();
+    /* SON vurgu kaldırıldığında odak yine `<body>`ye düşüyor ve bu BİLEREK
+       böyle bırakıldı — ölçüldü: son vurgu gidince ReadingTools'un tamamı
+       unmount oluyor, panel açma düğmesi bile DOM'da kalmıyor. Yani
+       bileşenin içinde odaklanacak hiçbir hedef yok.
+
+       Sayfadaki başka bir ögeye (örneğin `<h1>`) odaklanmak mümkün ama bu,
+       kullanıcının nereye düşeceğine dair bir TASARIM kararı ve bileşenin
+       yetkisi dışında. Aşağıdaki çağrı unmount durumunda sessizce
+       hiçbir şey yapmıyor; asıl işi, panel açıkken kalan vurgu olmadığı
+       ara durumda yapıyor. */
+    else panelDugmeRef.current?.focus();
+  }, [marks, odakBekliyor]);
+
   const removeOne = (id: string) => {
+    setOdakBekliyor(true);
     unpaint(id);
     setPainted((p) => {
       const next = new Set(p);
@@ -419,6 +454,7 @@ export default function ReadingTools() {
 
           <button
             onClick={() => apply("bold")}
+            aria-label="Kalınlaştır"
             title="Kalınlaştır"
             className={`${size} rounded-full text-white text-[13px] font-black transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -426,6 +462,7 @@ export default function ReadingTools() {
           </button>
           <button
             onClick={() => apply("u")}
+            aria-label="Altını çiz"
             title="Altını çiz"
             className={`${size} rounded-full text-white text-[13px] font-bold underline decoration-2 underline-offset-2 transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -436,6 +473,7 @@ export default function ReadingTools() {
 
           <button
             onClick={toNote}
+            aria-label="Not defterine gönder"
             title="Not defterine gönder"
             className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -443,6 +481,7 @@ export default function ReadingTools() {
           </button>
           <button
             onClick={copy}
+            aria-label="Kopyala"
             title="Kopyala"
             className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-white/15 active:scale-95`}
           >
@@ -451,6 +490,11 @@ export default function ReadingTools() {
           {(editing || (pending?.hit.length ?? 0) > 0) && (
             <button
               onClick={clearHit}
+              /* Adı "✕"di — ölçüldü. Bu düğme yalnızca DÜZENLEME kipinde
+                 çıkıyor (var olan bir vurguya tıklanınca), o yüzden seçim
+                 çubuğunun ilk taramasında görünmemişti. `title` ad olmuyor:
+                 içerik boş değil. */
+              aria-label="Vurguyu kaldır"
               title="Vurguyu kaldır"
               className={`${size} rounded-full text-white/80 text-xs transition-colors hover:bg-rose-500/30 active:scale-95`}
             >
@@ -495,7 +539,7 @@ export default function ReadingTools() {
                   </button>
                 </div>
               </div>
-              <ul className="divide-y divide-slate-50">
+              <ul ref={listeRef} className="divide-y divide-slate-50">
                 {marks.map((m) => {
                   const görünür = painted.has(m.id);
                   return (
@@ -514,10 +558,29 @@ export default function ReadingTools() {
                     >
                       {m.t}
                     </button>
+                    {/*
+                      İki koruma da klavye için, ikisi de ölçümle kondu.
+
+                      `focus:opacity-100` — `opacity-0` ögeyi odak sırasından
+                      ÇIKARMIYOR (`visibility:hidden`in aksine). Yani düğme
+                      görünmezken odaklanabiliyordu: klavyeyle gezen kullanıcı
+                      göremediği bir SİLME düğmesinin üstünde duruyordu.
+
+                      `aria-label` — erişilebilir ad `title`dan değil İÇERİKTEN
+                      geliyordu, çünkü hesaplama sırası içeriği title'ın önüne
+                      koyuyor ve içerik boş değil. Yani düğmenin adı "✕"di.
+                      `title` fare ipucu olarak kalıyor.
+                    */}
                     <button
                       onClick={() => removeOne(m.id)}
+                      data-kaldir
+                      /* Ad ayırt edici olmalı: panelde üç vurgu varken üç
+                         düğmenin de adı "Vurguyu kaldır"dı ve düğmeler
+                         arasında gezen kullanıcı hangisini sildiğini
+                         bilemiyordu. */
+                      aria-label={`Vurguyu kaldır: ${m.t.slice(0, 40)}`}
                       title="Kaldır"
-                      className="shrink-0 text-slate-300 opacity-0 transition-opacity hover:text-rose-500 group-hover:opacity-100"
+                      className="shrink-0 text-slate-300 opacity-0 transition-opacity hover:text-rose-500 group-hover:opacity-100 focus:opacity-100"
                     >
                       ✕
                     </button>
@@ -534,8 +597,21 @@ export default function ReadingTools() {
               cümle düzeyinde (8+ karakter) vurgular kart olur.
             </div>
           )}
+          {/*
+            role="alert": vurgu kaydedilemediğinde bu kutu KOŞULLU olarak
+            DOM'a giriyor ve `alert` tam bu duruma göre çalışıyor — sonradan
+            eklendiğinde duyuruluyor (`status` böyle değil, bölgenin önceden
+            var olması gerekir).
+
+            Ölçüldü: depo doldurulup gerçek bir vurgu denendi. Kayıt
+            oluşmuyor, ekranda uyarı çıkıyor ve kurtarma bağlantısı var —
+            ama kutuda `role` ve `aria-live` YOKTU, yani ekran okuyucu
+            kullanıcısı çalışmasının kaybolacağını HİÇ duymuyordu. Sessiz
+            başarısızlığın en kötü hâli: görsel kullanıcı uyarılıyor, öteki
+            uyarılmıyor.
+          */}
           {kayitHatasi && (
-            <div className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
+            <div role="alert" className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
               <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
               depolaması dolu — yenilediğinde kaybolurlar.{" "}
               <Link href="/calisma-alanim" className="font-bold underline">
@@ -544,7 +620,21 @@ export default function ReadingTools() {
             </div>
           )}
           <button
+            ref={panelDugmeRef}
             onClick={() => setPanelOpen((v) => !v)}
+            /*
+              ADI "🖍1"DI — ölçüldü. `title="Vurgularım"` ad OLMUYOR, çünkü
+              hesaplama sırası İÇERİĞİ title'ın önüne koyuyor ve içerik boş
+              değil (emoji + sayaç). Ekran okuyucu düğmeyi "kalem bir" diye
+              okuyordu. `title` fare ipucu olarak kalıyor.
+
+              `aria-expanded`: bu düğme bir paneli açıp kapatıyor ve
+              ETİKETİ DURUMLA DEĞİŞMİYOR (hep "🖍<sayı>"). Etiketi değişen
+              düğmelerde (örn. "Aç"/"Kapat") durum zaten adda; burada
+              değil, o yüzden ayrıca bildirilmesi gerekiyor.
+            */
+            aria-label={`Vurgularım (${marks.length})`}
+            aria-expanded={panelOpen}
             className={`flex items-center gap-2 rounded-full px-4 py-2.5 text-white shadow-xl transition-all active:scale-95 ${
               kayitHatasi
                 ? "bg-rose-600 shadow-rose-600/25 hover:bg-rose-500"

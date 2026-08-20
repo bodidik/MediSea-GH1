@@ -6157,18 +6157,6 @@
    "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
   }
  ],
- "onkoloji/bobrek-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-genel-prensipler",
-   "baslik": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-rna-asilar",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
-  }
- ],
  "onkoloji/febril-notropeni-cisne-indexi": [
   {
    "brans": "onkoloji",
@@ -6222,11 +6210,6 @@
    "brans": "onkoloji",
    "slug": "khdak-tani-algoritma-evreleme",
    "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "bobrek-kanseri",
-   "baslik": "Ch 90: Renal Hücreli Karsinom (RCC)-PH"
   },
   {
    "brans": "onkoloji",
@@ -6419,11 +6402,6 @@
   }
  ],
  "onkoloji/pankreas-kanseri-rna-asilar": [
-  {
-   "brans": "onkoloji",
-   "slug": "bobrek-kanseri",
-   "baslik": "Ch 90: Renal Hücreli Karsinom (RCC)-PH"
-  },
   {
    "brans": "onkoloji",
    "slug": "kanser-genel-prensipler",

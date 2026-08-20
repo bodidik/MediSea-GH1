@@ -133,7 +133,7 @@ export default function PremiumDailyProgram() {
       {data.lastUpdatedISO && (
         <div className="mt-6 pt-4 border-t border-slate-800/50 flex justify-center">
           <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest">
-            Son Güncelleme: {new Date(data.lastUpdatedISO).toLocaleTimeString()}
+            Son Güncelleme: {new Date(data.lastUpdatedISO).toLocaleTimeString("tr-TR")}
           </span>
         </div>
       )}

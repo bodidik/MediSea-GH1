@@ -5,9 +5,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
+import { getTopicCounts } from "@/app/lib/topic-counts";
 import { getBranchTools } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
+import { slugCoz } from "@/lib/slug";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
 // force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
@@ -39,7 +41,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug: hamSlug } = await params;
+  const slug = slugCoz(hamSlug);
   const brans = getSpecialty(slug);
   const dizin = path.join(process.cwd(), "content", "canonical", slug);
 
@@ -47,10 +50,21 @@ export async function generateMetadata({
     return { title: "Branş bulunamadı", robots: { index: false, follow: false } };
   }
 
-  let konuSayisi = 0;
-  try {
-    konuSayisi = fs.readdirSync(dizin).filter((f) => f.endsWith(".json")).length;
-  } catch {}
+  /**
+   * SAYIYI SAYDIR, DOSYA SAYMA — `getTopicCounts()` gizli konuları eler.
+   *
+   * Burada dizindeki her `.json` sayılıyordu ve `meta.hidden` işaretliler de
+   * toplama giriyordu. Ölçüldü (canlı, meta açıklamalar): endokrinoloji
+   * **132** diyordu ama sayfada 116 konu var; nefroloji 52/47; romatoloji
+   * 19/11. Hematoloji ve kardiyoloji tesadüfen tutuyordu — o iki branşta
+   * gizli konu yok.
+   *
+   * Bu sayı arama sonucu parçacığında görünüyor: ziyaretçiye 132 vaat edip
+   * 116 göstermek, `topic-counts.ts` içinde ana sayfa için zaten yazılmış
+   * olan kuralın aynısını ihlal ediyordu. O düzeltme bu çağrı yerine
+   * uygulanmamıştı.
+   */
+  const konuSayisi = getTopicCounts()[slug] ?? 0;
 
   const baslik = brans?.title || slug.replace(/-/g, " ");
   const aciklama = brans?.desc
@@ -70,7 +84,8 @@ export default async function BranchListPage({
 }: {
   params: Promise<{ slug: string }>
 }) {
-  const { slug } = await params;
+  const { slug: hamSlug } = await params;
+  const slug = slugCoz(hamSlug);
   const branchDir = path.join(process.cwd(), "content", "canonical", slug);
 
   if (!fs.existsSync(branchDir)) return notFound();
@@ -165,7 +180,13 @@ export default async function BranchListPage({
           "MediSea › Kütüphane › Hematoloji" yolu görünsün diye eklendi.
           13 branş sayfası site haritasında 0.8 önceliğinde. */}
       <JsonLd
+        /* İlk adım "MediSea": şema GÖRÜNEN kırıntı yoluyla aynı olmak
+           zorunda ve bu sayfanın görünen yolu "MediSea / Kütüphane / Branş"
+           diye başlıyordu; şema ise MediSea adımını atlıyordu. Ölçüldü —
+           şema [Kütüphane, Hematoloji], görünen [MediSea, Kütüphane,
+           Hematoloji]. Konu sayfasıyla da tutarlı: orada da aynı kök var. */
         veri={kirintiSemasi([
+          { ad: "MediSea", yol: "/" },
           { ad: "Kütüphane", yol: "/topics" },
           { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
         ])}
@@ -176,7 +197,9 @@ export default async function BranchListPage({
         <div className="max-w-5xl mx-auto px-5 sm:px-6 py-8 sm:py-10">
 
           {/* Breadcrumb */}
-          <div className="mb-4 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+          {/* flex-wrap: konu sayfasındaki kırıntı yolu uzun başlıklarda 375px'te
+              yatay kaydırma üretiyordu; aynı kalıp burada da var, aynı çare. */}
+          <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <Link href="/" className="inline-block py-1.5 hover:text-blue-700 transition-colors">MediSea</Link>
             <span>/</span>
             <Link href="/topics" className="inline-block py-1.5 hover:text-blue-700 transition-colors">Kütüphane</Link>
@@ -207,6 +230,21 @@ export default async function BranchListPage({
       {/* --- KONU GRID (kompakt, ana sayfayla aynı kart dili) --- */}
       <div className="max-w-5xl mx-auto px-5 sm:px-6 py-6 sm:py-8">
         {mainTopics.length > 0 ? (
+          <>
+            {/*
+              Görünmez bölüm başlığı — yalnızca başlık hiyerarşisi için.
+
+              Ölçüldü: sayfa H1'den doğrudan kart başlıklarının H3'üne
+              atlıyordu. Aşağıdaki "Diğer Konular" bölümü H2 → H3 diye
+              doğru kurulmuş; ana liste ise başlıksız olduğu için ekran
+              okuyucuda köksüz kalıyordu.
+
+              Görünür başlık EKLENMEDİ: tasarımda H1'in hemen altında kart
+              ızgarası var ve araya metin koymak düzeni değiştirirdi.
+              `sr-only` bu depoda zaten kullanılan kalıp (atlama bağlantısı,
+              durum bölgeleri).
+            */}
+            <h2 className="sr-only">{specialty.title} konuları</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
             {mainTopics.map((topic) => {
               const subCount = childCounts[topic.slug] || 0;
@@ -236,6 +274,7 @@ export default async function BranchListPage({
               );
             })}
           </div>
+          </>
         ) : (
           <div className="p-16 text-center border-2 border-dashed border-slate-100 rounded-[2.5rem]">
             <p className="text-slate-400 font-black uppercase tracking-widest">
@@ -248,7 +287,7 @@ export default async function BranchListPage({
         {asiliKonular.length > 0 && (
           <div className="mt-8">
             <div className="flex items-baseline gap-3 mb-3">
-              <h2 className="text-[10px] font-black text-blue-900/50 uppercase tracking-[0.25em]">
+              <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em]">
                 Diğer Konular
               </h2>
               <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest">
@@ -283,7 +322,7 @@ export default async function BranchListPage({
         {branchTools.length > 0 && (
           <div className="mt-6 sm:mt-8">
             <div className="bg-slate-50/50 backdrop-blur-sm rounded-2xl p-2.5 border border-slate-200 shadow-sm flex items-center gap-2 overflow-x-auto no-scrollbar sm:flex-wrap">
-              <span className="text-[9px] font-black text-blue-900/40 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
+              <span className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
                 İlgili Hesaplayıcılar
               </span>
               {branchTools.map((tool) => (

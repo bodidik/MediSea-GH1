@@ -1,5 +1,4 @@
 // FILE: web/app/api/programs/[...path]/route.ts
-import { backendBase } from "@/lib/backend";
 import type { NextRequest } from "next/server";
 
 const BACKEND =
@@ -58,23 +57,24 @@ async function proxy(req: NextRequest, method: string, path: string) {
     return new Response(buf, { status: res.status, headers: outHeaders });
 
   } catch (error) {
-    // 🚨 BACKEND KAPALIYSA: ÇÖKME, JOKER GÜVENLİK YANITI DÖN!
-    console.warn(`Backend'e ulaşılamadı. Joker Proxy (${method} /api/programs/${path}) yedek motoru devrede.`);
-    
-    // Front-end'in JSON parse (Unexpected end of JSON) hatasına düşmemesi için 
-    // her duruma uyan, boş ama geçerli bir JSON objesi dönüyoruz.
+    /**
+     * Arka uca ulaşılamadı — DÜRÜST HATA DÖNÜLÜR.
+     *
+     * Burada `status: 200` ve `items: []` dönülüyordu; gerekçesi de yorumda
+     * yazılıydı: "frontend bileşenleri kırmızı ekran vermesin". Ama 200,
+     * çağırana "istek başarılı" demek: `res.ok` true çıkıyor ve boş dizi
+     * "kayıt yok" gibi okunuyor. Kullanıcı "program bulunamadı" görüyor,
+     * oysa sunucuya hiç ulaşılamamış. Projede aynı kusur on bir uçta
+     * düzeltildi; bu, tarama sırasında bulunan sonuncusuydu.
+     *
+     * 503 + `ok: false` ile çağıran gerçeği görüyor. Gövde yine geçerli
+     * JSON, yani "Unexpected end of JSON" riski yok — asıl korkulan oydu.
+     */
+    console.warn(`Backend'e ulaşılamadı: ${method} /api/programs/${path}`, error);
+
     return new Response(
-      JSON.stringify({
-        success: false,
-        mock: true,
-        message: "Backend sunucusuna ulaşılamadı. Yedek (mock) koruma kalkanı devrede.",
-        data: null,
-        items: [] // Eğer frontend bir dizi (.map) bekliyorsa patlamaması için
-      }),
-      { 
-        status: 200, // 200 dönüyoruz ki frontend bileşenleri kırmızı ekran (Error) vermesin
-        headers: { "Content-Type": "application/json" } 
-      }
+      JSON.stringify({ ok: false, reason: "backend-unavailable" }),
+      { status: 503, headers: { "Content-Type": "application/json" } }
     );
   }
 }

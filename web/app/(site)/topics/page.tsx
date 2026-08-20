@@ -90,7 +90,7 @@ export default function KutuphaneSayfasi() {
         <div className="mb-8 border-b-4 border-blue-900/10 pb-8">
           <div className="mb-3 flex items-center gap-3">
             <span className="h-3 w-3 rounded-full bg-blue-900" />
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-900/40">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-900/80">
               MediSea Kütüphane
             </span>
           </div>

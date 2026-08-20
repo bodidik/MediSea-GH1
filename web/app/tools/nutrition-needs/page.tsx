@@ -52,7 +52,7 @@ export default function NutritionNeedsPage() {
           {/* Ağırlık Girişi */}
           <div className="space-y-3">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Vücut Ağırlığı (kg)</span>
-            <input
+            <input aria-label="Vücut Ağırlığı (kg)"
               type="text" inputMode="decimal"
               placeholder="Örn: 70"
               value={weight}
@@ -67,7 +67,7 @@ export default function NutritionNeedsPage() {
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Klinik Durum (Şablonlar)</span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {stressLevels.map((lvl) => (
-                <button
+                <button aria-pressed={stressFactor === lvl.kcal}
                   key={lvl.label}
                   onClick={() => { setStressFactor(lvl.kcal); setProteinFactor(lvl.pro); }}
                   className={`p-4 rounded-xl border-2 text-left transition-all ${stressFactor === lvl.kcal ? 'border-blue-900 bg-blue-50 text-blue-900' : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'}`}
@@ -86,14 +86,14 @@ export default function NutritionNeedsPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase">Enerji (kcal/kg)</span>
                 <span className="text-sm font-black text-blue-900">{stressFactor}</span>
               </div>
-              <input type="range" min="15" max="40" value={stressFactor} onChange={(e)=>setStressFactor(Number(e.target.value))} className="w-full accent-blue-900" />
+              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} onChange={(e)=>setStressFactor(Number(e.target.value))} className="w-full h-6 accent-blue-900" />
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-[10px] font-black text-slate-400 uppercase">Protein (g/kg)</span>
                 <span className="text-sm font-black text-blue-900">{proteinFactor}</span>
               </div>
-              <input type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>setProteinFactor(Number(e.target.value))} className="w-full accent-amber-500" />
+              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>setProteinFactor(Number(e.target.value))} className="w-full h-6 accent-amber-500" />
             </div>
           </div>
         </div>
@@ -105,8 +105,11 @@ export default function NutritionNeedsPage() {
             <div className="text-5xl font-black text-white italic">{energyResult.toFixed(0)} <span className="text-xl not-italic text-blue-300">kcal</span></div>
           </div>
           <div className="bg-white rounded-[2.5rem] p-8 text-center border-2 border-blue-900 shadow-xl space-y-2">
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
-            <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} <span className="text-xl not-italic text-blue-400">g</span></div>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
+            <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} {/* blue-400 beyaz zeminde 2.54'tü (kalın 20px, eşik 3.0). Birim yazısı
+    sayıdan daha soluk olsun diye açık seçilmiş; bir kademe koyultmak
+    o niyeti bozmadan eşiği geçiriyor. */}
+<span className="text-xl not-italic text-blue-600">g</span></div>
           </div>
         </div>
 

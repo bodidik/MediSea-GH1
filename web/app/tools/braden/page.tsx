@@ -135,7 +135,7 @@ export default function BradenPage() {
               <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{scale.detail}</p>
               <div className="space-y-1.5">
                 {scale.opts.map(opt => (
-                  <button key={opt.pts} type="button"
+                  <button aria-pressed={sel[scale.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [scale.id]: s[scale.id] === opt.pts ? null : opt.pts }))}
                     className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
                       ${sel[scale.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

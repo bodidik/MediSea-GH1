@@ -8,7 +8,7 @@ type ContentItem = {
   id: string;
   title: string;
   type: string;     // "topic" | "board" | "case" | "video" | "note"
-  section: string;  // Ã¶r. "Nephrology"
+  section: string;  // ör. "Nephrology"
   createdAt: string;
 };
 
@@ -17,7 +17,7 @@ export default function AdminContentPage() {
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState<string | null>(null);
 
-  // SeÃ§imler
+  // Seçimler
   const [selected, setSelected] = useState<Record<string, boolean>>({});
   const allSelected = useMemo(
     () => items.length > 0 && items.every((x) => selected[x.id]),
@@ -30,8 +30,8 @@ export default function AdminContentPage() {
 
   // Basit arama/filtre
   const [q, setQ] = useState("");
-  const [type, setType] = useState<string>("");     // boÅŸ = hepsi
-  const [section, setSection] = useState<string>(""); // boÅŸ = hepsi
+  const [type, setType] = useState<string>("");     // boş = hepsi
+  const [section, setSection] = useState<string>(""); // boş = hepsi
 
   const filtered = useMemo(() => {
     const s = q.trim().toLowerCase();
@@ -47,9 +47,9 @@ export default function AdminContentPage() {
     const ac = new AbortController();
     (async () => {
       try {
-        // Kendi admin endpointâ€™in: proxy /api/admin/content (JSON dizi dÃ¶ndÃ¼rÃ¼yor)
+        // Kendi admin endpoint’in: proxy /api/admin/content (JSON dizi döndürüyor)
         const r = await fetch("/api/admin/content", { signal: ac.signal, cache: "no-store" });
-        if (!r.ok) throw new Error("Liste alÄ±namadÄ±");
+        if (!r.ok) throw new Error("Liste alınamadı");
         const j = (await r.json()) as ContentItem[];
         setItems(j);
       } catch (e: any) {
@@ -67,11 +67,11 @@ export default function AdminContentPage() {
 
   function toggleAll() {
     if (allSelected) {
-      // Hepsini kaldÄ±r
+      // Hepsini kaldır
       const next: Record<string, boolean> = {};
       setSelected(next);
     } else {
-      // Filtrelenen hepsini seÃ§
+      // Filtrelenen hepsini seç
       const next: Record<string, boolean> = {};
       for (const x of filtered) next[x.id] = true;
       setSelected(next);
@@ -81,14 +81,14 @@ export default function AdminContentPage() {
   return (
     <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6">
       <div className="flex items-center justify-between gap-3">
-        <h1 className="text-2xl md:text-3xl font-bold">Admin Â· Ä°Ã§erik Listesi</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">Admin · İçerik Listesi</h1>
 
-        {/* SeÃ§ilenleri toplu SR'ye ekle */}
+        {/* Seçilenleri toplu SR'ye ekle */}
         <AddToSRButton
           contentIds={selectedIds}
           section={section || undefined}
           type={type || undefined}
-          label={`SeÃ§ilenleri SRâ€™ye ekle (${selectedIds.length})`}
+          label={`Seçilenleri SR’ye ekle (${selectedIds.length})`}
           className="px-3 py-2 rounded-lg border text-sm"
         />
       </div>
@@ -98,7 +98,7 @@ export default function AdminContentPage() {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Ara (baÅŸlÄ±k/ID)â€¦"
+          placeholder="Ara (başlık/ID)…"
           className="px-3 py-2 rounded-lg border text-sm"
         />
         <select
@@ -106,7 +106,7 @@ export default function AdminContentPage() {
           onChange={(e) => setType(e.target.value)}
           className="px-3 py-2 rounded-lg border text-sm"
         >
-          <option value="">TÃ¼r: Hepsi</option>
+          <option value="">Tür: Hepsi</option>
           <option value="topic">topic</option>
           <option value="board">board</option>
           <option value="case">case</option>
@@ -116,7 +116,7 @@ export default function AdminContentPage() {
         <input
           value={section}
           onChange={(e) => setSection(e.target.value)}
-          placeholder="BÃ¶lÃ¼m (Ã¶rn: Nephrology)"
+          placeholder="Bölüm (örn: Nephrology)"
           className="px-3 py-2 rounded-lg border text-sm"
         />
         <button
@@ -125,7 +125,7 @@ export default function AdminContentPage() {
           }}
           className="px-3 py-2 rounded-lg border text-sm"
         >
-          SÄ±fÄ±rla
+          Sıfırla
         </button>
       </div>
 
@@ -142,9 +142,9 @@ export default function AdminContentPage() {
                   <input type="checkbox" checked={allSelected} onChange={toggleAll} />
                 </th>
                 <th className="text-left px-3 py-2">ID</th>
-                <th className="text-left px-3 py-2">BaÅŸlÄ±k</th>
-                <th className="text-left px-3 py-2">TÃ¼r</th>
-                <th className="text-left px-3 py-2">BÃ¶lÃ¼m</th>
+                <th className="text-left px-3 py-2">Başlık</th>
+                <th className="text-left px-3 py-2">Tür</th>
+                <th className="text-left px-3 py-2">Bölüm</th>
                 <th className="text-left px-3 py-2">Tarih</th>
                 <th className="text-left px-3 py-2">SR</th>
 		<th className="text-left px-3 py-2">Edit</th>

@@ -57,6 +57,59 @@ jobs:
         - name: Soru ve kart yapı denetimi
           run: node scripts/soru-denetim.cjs
 
+        # Araç indeksi (content/arac-index.json) ELLE üretiliyor ve üreteç
+        # CI'da çalışmıyor. Biri araç ekleyip betiği çalıştırmayı unutursa
+        # indeks sessizce bayatlıyor. Bedeli görünür: ana sayfadaki araç
+        # sayısı bu dosyadan geliyor, çünkü çalışma zamanında app/tools
+        # okunamıyor (sunucusuz ortamda kaynak dizin yok).
+        #
+        # Bu adım HİÇBİR ŞEY YAZMAZ; indeksi bellekte yeniden hesaplayıp
+        # karşılaştırır, fark varsa hangi aracın eksik/fazla/değişmiş
+        # olduğunu yazar ve düşer. Düşerse çare tek satır:
+        #   node scripts/arac-metadata.cjs
+        - name: Araç indeksi senkron mu
+          run: node scripts/arac-metadata.cjs --kontrol
+
+        # Başlık indeksi (content/baslik-index.json) da ELLE üretiliyor ve
+        # üreteci CI'da çalışmıyordu — araç indeksiyle birebir aynı boşluk.
+        # Bayatlarsa paylaşım kartı başlığı slug'dan türetilir: "Akut Böbrek
+        # Hasarı" yerine "akut-bobrek-hasari" basılır. Sayfa bozulmaz ama
+        # paylaşılan her bağlantı daha kötü görünür.
+        #
+        # Bu adım HİÇBİR ŞEY YAZMAZ; indeksi bellekte yeniden hesaplayıp
+        # karşılaştırır ve eksik/fazla/değişmiş başlıkları tek tek yazar.
+        # Düşerse çare tek satır:
+        #   node scripts/baslik-index.cjs
+        - name: Başlık indeksi senkron mu
+          run: node scripts/baslik-index.cjs --kontrol
+
+        # İlgili Konular indeksi (content/ilgili-index.json) üçüncü elle
+        # üretilen dosya. Bayatlarsa konu sayfasındaki "İlgili Konular"
+        # bloğu yeniden adlandırılmış ya da kaldırılmış bir hedefe bağlanır.
+        #
+        # Bunu link-denetim GÖRMÜYOR: o yalnızca content/canonical ve
+        # content/premium ağaçlarını geziyor, bu dosya content kökünde.
+        - name: İlgili Konular indeksi senkron mu
+          run: node scripts/ilgili-index.cjs --kontrol
+
+        # Arayüz kaynağındaki, ÜÇ KAPIDAN DA GEÇEN kusurlar: bozuk kodlama
+        # (UTF-8 metnin CP1252 okunmuş hâli), alt niteliği olmayan görsel,
+        # rel verilmeden açılan yeni sekme, <form> içinde varsayılan submit
+        # olan düğme ve iç içe tıklanabilir öge.
+        #
+        # Hepsi geçerli TypeScript ve geçerli JSX olduğu için lint, typecheck
+        # ve build üçü de göremiyor; kusur yalnızca ekranda ya da ekran
+        # okuyucuda görünüyor. Üç yönetim sayfası bir dönem başlıklarını
+        # "BÃ¶lÃ¼m" diye basıyordu ve dördü de yeşildi.
+        #
+        # Denetim kendini sınayabiliyor: --negatif bilerek bozuk bir dosya
+        # bırakıp yakalandığını gösterir.
+        - name: Arayüz denetimi
+          run: node scripts/arayuz-denetim.cjs
+
+        - name: Arayüz denetimi kendini sınıyor mu
+          run: node scripts/arayuz-denetim.cjs --negatif
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}

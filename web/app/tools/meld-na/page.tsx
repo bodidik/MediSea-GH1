@@ -70,7 +70,7 @@ export default function MeldNaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Kreatinin (mg/dL)</span>
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Kreatinin (mg/dL)</span>
                 <input
                   type="text" inputMode="decimal" value={cr}
                   onChange={e => setCr(e.target.value)}
@@ -78,7 +78,7 @@ export default function MeldNaPage() {
                 />
               </label>
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Total Bilirubin (mg/dL)</span>
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Total Bilirubin (mg/dL)</span>
                 <input
                   type="text" inputMode="decimal" value={tb}
                   onChange={e => setTb(e.target.value)}
@@ -88,7 +88,7 @@ export default function MeldNaPage() {
             </div>
             <div className="space-y-4">
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">INR</span>
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">INR</span>
                 <input
                   type="text" inputMode="decimal" value={inr}
                   onChange={e => setInr(e.target.value)}
@@ -96,7 +96,7 @@ export default function MeldNaPage() {
                 />
               </label>
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">Sodyum (mEq/L)</span>
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">Sodyum (mEq/L)</span>
                 <input
                   type="text" inputMode="decimal" value={na}
                   onChange={e => setNa(e.target.value)}

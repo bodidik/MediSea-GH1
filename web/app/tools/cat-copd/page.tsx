@@ -76,7 +76,7 @@ export default function CatCopdPage() {
               </div>
               <div className="flex gap-1 justify-center">
                 {[0, 1, 2, 3, 4, 5].map(v => (
-                  <button key={v} type="button"
+                  <button aria-pressed={sel[item.id] === v} key={v} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === v ? null : v }))}
                     className={`w-9 h-9 rounded-xl border-2 text-[11px] font-black transition-all
                       ${sel[item.id] === v ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-300"}`}>

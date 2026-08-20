@@ -164,7 +164,7 @@ export default function TiradsPage() {
               const s = scores[i];
               return (
                 <div key={cat.id} className={`rounded-xl p-2 text-center transition-all ${s !== null ? 'bg-blue-900' : 'bg-slate-100'}`}>
-                  <div className={`text-[8px] font-black uppercase tracking-widest mb-1 leading-tight ${s !== null ? 'text-blue-200/70' : 'text-slate-400'}`}>{cat.title}</div>
+                  <div className={`text-[8px] font-black uppercase tracking-widest mb-1 leading-tight break-words ${s !== null ? 'text-blue-200' : 'text-slate-400'}`}>{cat.title}</div>
                   <div className={`text-xl font-black ${s !== null ? 'text-white' : 'text-slate-300'}`}>{s !== null ? s : '–'}</div>
                 </div>
               );
@@ -176,7 +176,7 @@ export default function TiradsPage() {
         {CATEGORIES.map((cat) => (
           <div key={cat.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
             <div className="flex items-start justify-between mb-1">
-              <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest">{cat.title}</p>
+              <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest">{cat.title}</p>
               {isMulti(cat) && <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Çoklu seçim</span>}
             </div>
             {catNote(cat) && <p className="text-[10px] font-bold text-slate-400 mb-3">{catNote(cat)}</p>}
@@ -186,7 +186,7 @@ export default function TiradsPage() {
                   ? ((answers[cat.id] as number[] | undefined) ?? []).includes(opt.v)
                   : answers[cat.id] === opt.v;
                 return (
-                  <button key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
+                  <button aria-pressed={isSelected} key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
                     className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between gap-3
                       ${isSelected ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                     <span className={`text-sm font-bold leading-snug ${isSelected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</span>
@@ -236,7 +236,7 @@ export default function TiradsPage() {
                 { l: "TR4", r: "4–6 pt", c: "bg-orange-100 text-orange-700" },
                 { l: "TR5", r: "≥7 pt", c: "bg-rose-100 text-rose-700" },
               ].map(x => (
-                <div key={x.l} className={`rounded-xl p-2 text-center text-[8px] font-black uppercase tracking-widest ${x.c} ${tr.level === x.l ? 'ring-2 ring-current' : ''}`}>
+                <div key={x.l} className={`rounded-xl p-2 text-center text-[8px] font-black uppercase tracking-widest break-words ${x.c} ${tr.level === x.l ? 'ring-2 ring-current' : ''}`}>
                   <div>{x.l}</div>
                   <div className="font-bold normal-case tracking-normal mt-0.5">{x.r}</div>
                 </div>
@@ -249,7 +249,7 @@ export default function TiradsPage() {
                 ${fna.action === "fna" ? 'bg-rose-100 border-rose-200' :
                   fna.action === "follow" ? 'bg-amber-100 border-amber-200' :
                   'bg-emerald-100 border-emerald-200'}`}>
-                <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/40 mb-2">İİAB / TAKİP KARARI</p>
+                <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 mb-2">İİAB / TAKİP KARARI</p>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="text-[10px] font-black text-rose-700 uppercase tracking-widest w-16">İİAB:</span>
@@ -262,7 +262,7 @@ export default function TiradsPage() {
                   <div className="pt-1">
                     <span className={`inline-block px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest
                       ${fna.action === "fna" ? 'bg-rose-600 text-white' :
-                        fna.action === "follow" ? 'bg-amber-500 text-white' :
+                        fna.action === "follow" ? 'bg-amber-700 text-white' :
                         'bg-emerald-600 text-white'}`}>
                       {fna.action === "fna" ? "→ İİAB ÖNERİLİR" :
                        fna.action === "follow" ? "→ TAKİP ÖNERİLİR" :
@@ -272,7 +272,7 @@ export default function TiradsPage() {
                 </div>
               </div>
             ) : tr.level !== "TR1" && tr.level !== "TR2" ? (
-              <p className="text-[11px] font-bold text-blue-900/50 italic">Nodül boyutunu girerek İİAB/takip önerisi görün.</p>
+              <p className="text-[11px] font-bold text-blue-900/80 italic">Nodül boyutunu girerek İİAB/takip önerisi görün.</p>
             ) : (
               <p className="text-[11px] font-bold text-emerald-700">{tr.desc}</p>
             )}

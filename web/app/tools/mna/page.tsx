@@ -104,7 +104,7 @@ export default function MNAPage() {
               <h3 className="text-sm font-bold text-blue-950 leading-snug">{q.label}</h3>
               <div className="grid grid-cols-1 gap-2">
                 {q.options.map((opt, i) => (
-                  <button
+                  <button aria-pressed={answers[q.id] === opt.val}
                     key={i}
                     onClick={() => setAnswers(prev => ({ ...prev, [q.id]: opt.val }))}
                     className={`text-left p-4 rounded-xl text-xs font-bold transition-all border-2 ${

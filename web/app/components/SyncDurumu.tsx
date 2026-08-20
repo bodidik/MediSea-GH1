@@ -89,7 +89,7 @@ export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
       )}
 
       {girisli && durum === "hata" && (
-        <span className="text-[11px] text-red-700/80 font-medium">
+        <span className="text-[11px] text-red-700 font-medium">
           Bağlantı kurulamadı — çalışman bu cihazda duruyor, bağlantı gelince tekrar denenecek.
         </span>
       )}

@@ -45,7 +45,7 @@ export default function SinavTakvimiUyarisi({ sinavlar }: { sinavlar: Sinav[] })
         Sınav tarihi girilmemiş — geri sayım ve çalışma planı bu yüzden
         görünmüyor.
       </p>
-      <p className="mt-1 text-[12px] text-amber-900/70">
+      <p className="mt-1 text-[12px] text-amber-900">
         ÖSYM takvimi açıklandığında{" "}
         <code className="rounded bg-amber-100 px-1.5 py-0.5 font-mono text-[11px]">
           content/sinav-takvimi.json

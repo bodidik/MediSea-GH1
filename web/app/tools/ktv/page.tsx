@@ -92,10 +92,10 @@ export default function KtvPage() {
 
         {/* Formül gösterimi */}
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-          <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest mb-2">Daugirdas II Formülleri</p>
+          <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest mb-2">Daugirdas II Formülleri</p>
           <p className="text-[10px] font-bold text-blue-900 font-mono">spKt/V = −ln(R − 0.008×t) + (4 − 3.5×R) × UF/W</p>
           <p className="text-[10px] font-bold text-blue-900 font-mono">eKt/V = spKt/V − (0.6×spKt/V / t) + 0.03</p>
-          <p className="text-[9px] font-bold text-blue-900/50 mt-1">R = BUN(post)/BUN(pre) · t = seans süresi (saat) · UF (L) · W = post ağırlık (kg)</p>
+          <p className="text-[9px] font-bold text-blue-900/80 mt-1">R = BUN(post)/BUN(pre) · t = seans süresi (saat) · UF (L) · W = post ağırlık (kg)</p>
           {R !== null && (
             <p className="text-[10px] font-black text-blue-900 mt-2">R = {R.toFixed(3)} · t = {tHours.toFixed(2)} saat</p>
           )}
@@ -120,7 +120,7 @@ export default function KtvPage() {
 
         {hasAll && spKtV !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${spOk && eOk && urrOk ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">SONUÇ</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ</div>
             <p className={`text-xl font-black italic tracking-tight ${spOk && eOk && urrOk ? 'text-emerald-700' : 'text-rose-700'}`}>
               {spOk && eOk && urrOk ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
             </p>

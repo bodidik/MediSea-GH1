@@ -464,6 +464,7 @@ async function appendAndSave() {
               return (
                 <button
                   key={x.slug}
+                  aria-pressed={active}
                   onClick={() => loadBySlug(x.slug)}
                   className={`w-full text-left px-3 py-2 border-b hover:bg-neutral-50 ${active ? "bg-neutral-50" : ""}`}
                 >

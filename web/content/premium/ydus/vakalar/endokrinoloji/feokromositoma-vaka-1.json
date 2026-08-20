@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "id": "feokromositoma-vaka-1",
+    "baslik": "Rastlantısal Sol Adrenal Kitle — Kompozit Adrenal Tümör",
+    "branch": "endokrinoloji",
+    "topic": "feokromositoma",
+    "guncelleme": "2026-08"
+  },
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "Hormonal ve Radyolojik Değerlendirme",
+      "klinik_bilgi": "Kırk iki yaşında kadın hasta, fıtık onarımı cerrahisi sonrası çekilen kontrastlı abdominal BT'de sol adrenal bezde rastlantısal saptanan kitle nedeniyle endokrinoloji polikliniğine refere ediliyor. Özgeçmişinde depresyon dışında özellik yok; tip 2 DM, hipertansiyon veya malignite öyküsü yok. Son 5 aydır: gece terlemeleri (gecede birkaç kez), yaklaşık 9 kg kilo alımı, halsizlik, depresif semptomlarda kötüleşme ile anksiyete ve hiperventilasyon atakları (spells).\n\nFizik muayene: KB 127/85 mmHg, VKİ 31 kg/m², nabız 82/dk. Hafif supraklaviküler yağ yastıkçıkları ve abdominal obezite mevcut; pletora, belirgin stria, cilt incelmesi veya proksimal miyopati yok.\n\nAdrenal BT: Sol adrenal bezde 3.4 × 2.3 cm heterojen kitle. İki komponent: −8 HU (lipid zengini) ve 22 HU (lipid fakiri).\n\n1-mg Gecelik DST: Kortizol 5.9 µg/dL (anormal, baskılanma yetersiz). Bazal ACTH: <5 pg/mL (belirgin baskılanmış). DHEA-S: 27 µg/dL (baskılanmış). 24 saatlik idrar metanefrin: 71 µg/24s (normal; <400). 24 saatlik idrar normetanefrin: 200 µg/24s (normal; <900).",
+      "soru": "Bu hastada saptanan baskılanmış ACTH ve DHEA-S seviyeleri ile birlikte 1-mg DST sonrasında kortizolün baskılanamaması tablosuna yol açan primer patoloji ve sol adrenal kitledeki iki farklı HU değerine sahip heterojen yapı göz önüne alındığında, cerrahi rezeksiyon sonrası saptanması beklenen en olası histopatolojik tanı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Tek taraflı primer makronodüler adrenal hiperplazi",
+        "B": "Otonom kortizol salgılayan adrenokortikal karsinom",
+        "C": "Bilateral feokromositoma ve sekonder Cushing hastalığı",
+        "D": "Kompozit adrenal tümör (Eş zamanlı feokromositoma ve adrenokortikal adenom)",
+        "E": "Myelolipom zemininde gelişmiş non-fonksiyonel adrenal adenom"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "1-mg DST'de kortizol 5.9 µg/dL ile baskılanamaması ve ACTH <5 pg/mL, DHEA-S 27 µg/dL baskılanmasıyla birlikte ACTH-bağımsız otonom kortizol salgısı doğrulanmaktadır. Kitlede −8 HU (lipid zengini) ve 22 HU (lipid fakiri) iki ayrı komponent, biyokimyasal olarak sessiz feokromositoma ile adrenokortikal adenom içeren kompozit tümörü işaret eder.",
+      "aciklama_detay": "Hastada otonom kortizol salgılanması mevcuttur. 1-mg DST sonrasında kortizolün 5.9 µg/dL (normalde <1.8 µg/dL olmalıdır) olarak saptanması, buna karşılık ACTH (<5 pg/mL) ve DHEA-S (27 µg/dL) seviyelerinin belirgin şekilde baskılanması, ACTH-bağımsız hafif Cushing sendromu (otonom kortizol salgısı) tablosunu doğrulamaktadır. Radyolojik olarak adrenal kitlede saptanan iki farklı komponent (lipid zengini alan −8 HU ve lipid fakiri alan 22 HU), kitle içinde iki farklı hücre popülasyonu olabileceğine işaret eder. Bu radyolojik heterojenite ve otonom kortizol üretimi, sol adrenal bezde hem adrenokortikal adenom hem de feokromositoma içeren bir kompozit adrenal tümörü gösterir. Hastada feokromositoma varlığına işaret eden anksiyete, hiperventilasyon atakları ve gece terlemeleri gibi semptomlar bulunmasına rağmen 24 saatlik idrar metanefrin ve normetanefrin seviyelerinin tamamen normal olması, bu tümörün biyokimyasal olarak sessiz (biochemically silent) bir feokromositoma komponentine sahip olduğunu kanıtlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Primer makronodüler adrenal hiperplazi genellikle bilateral tutulum gösterir; BT'de iki farklı HU değerine sahip keskin sınırlı ayrı komponentler yerine multinodüler bez büyümesi izlenir.",
+        "B": "YANLIS — Adrenokortikal karsinomlar genellikle çok daha büyük, düzensiz sınırlı, nekrotik alanlar içeren ve yüksek HU değerlerine sahip agresif kitlelerdir; ayrıca androjen salgısı yapabilecekleri için DHEA-S seviyesini baskılamak yerine genellikle yükseltirler.",
+        "C": "YANLIS — Cushing hastalığı hipofizer ACTH salgısına bağlıdır; bu durumda ACTH baskılanmaz, normal veya yüksek saptanır. Hastanın ACTH düzeyi <5 pg/mL ile belirgin baskılanmıştır.",
+        "D": "DOGRU — Kitlede −8 HU ve 22 HU şeklinde iki farklı komponent, ACTH-bağımsız otonom kortizol salgısı ve biyokimyasal olarak sessiz katekolamin tablosunun birlikteliği; eş zamanlı adrenokortikal adenom ve feokromositoma içeren kompozit adrenal tümörü işaret eder.",
+        "E": "YANLIS — Adrenal myelolipomlar çok daha düşük HU değerlerine (genellikle −20 ila −100 HU) sahiptir. Ayrıca otonom kortizol salgısı ile ACTH/DHEA-S baskılanması tablosunu tek başına açıklayamazlar."
+      },
+      "sonraki_bilgi": "Laparoskopik sol adrenalektomi planlandı. Preoperatif hazırlık ve postoperatif yönetim değerlendiriliyor."
+    },
+    {
+      "adim": 2,
+      "baslik": "Preoperatif Hazırlık ve Postoperatif Yönetim",
+      "klinik_bilgi": "Bu hastaya laparoskopik sol adrenalektomi yapılması planlanmaktadır.",
+      "soru": "Operasyon öncesi hazırlık, histopatolojik doğrulamadan sonraki takip süreci ve bu vaka özelindeki klinik yönetim stratejileri ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+      "secenekler": {
+        "A": "Katekolamin fazlalığına yönelik tarama (idrar metanefrinleri) negatif olduğundan, operasyon öncesinde preoperatif alfa-blokaj (örn. fenoksibenzamin) tedavisi verilmesi zorunlu değildir.",
+        "B": "Otonom kortizol salgılayan adenomun cerrahi rezeksiyonu sonrası kontralateral adrenal bez baskılanmış olacağından, postoperatif dönemde hastaya glukokortikoid replasman tedavisi başlanmalıdır.",
+        "C": "Histopatolojide feokromositoma tanısının netleştirilmesini takiben, hastada biyokimyasal olarak sessiz bir lezyon olsa dahi germline (germ hattı) mutasyon testi yapılması önerilmelidir.",
+        "D": "Hastanın cerrahi sonrası adrenal yetmezlikten tamamen iyileşmesi (kontralateral aksın toparlanması) 1 yıldan uzun sürebilir.",
+        "E": "Kitlenin her iki komponenti de kortizol salgıladığı için postoperatif dönemde mineralokortikoid (fludrokortizon) replasmanı mutlaka glukokortikoid tedavisine eklenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Tek taraflı adrenalektomide kontralateral adrenal bezin glomerüloza tabakası renin-anjiyotensin sistemi kontrolünde aldosteron üretimine devam eder; rutin mineralokortikoid replasmanına gerek yoktur. Ayrıca kitlenin her iki komponenti kortizol salgılamamaktadır: kortizol adenom komponentinden, katekolaminler medulladaki feokromositoma komponentinden kaynaklanır.",
+      "aciklama_detay": "Tek taraflı adrenalektomilerde, kontralateral adrenal bez sağlamsa mineralokortikoid (aldosteron) eksikliği beklenmez; çünkü diğer adrenal bezin glomerüloza tabakası renin-anjiyotensin sistemi kontrolünde aldosteron üretmeye devam eder. Bu nedenle hastaya yalnızca glukokortikoid replasman tedavisi (örn. hidrokortizon) uygulanmalıdır; rutin mineralokortikoid replasmanına (fludrokortizon) gerek yoktur. Ayrıca kitlenin her iki komponenti de kortizol salgılamamaktadır; kortizol salgısı adrenal korteksteki adenom komponentine aittir, medulladaki feokromositoma komponenti ise katekolamin üreten nöroendokrin bir tümördür. Diğer şıklar doğrudur: (A) 24 saatlik idrar metanefrinleri normal olduğundan preoperatif alfa-blokaj zorunlu değildir. (B) Otonom kortizol salgısı HHA aksını baskıladığından postoperatif glukokortikoid replasmanı gereklidir. (C) Feokromositoma tanısı alan tüm hastalarda biyokimyasal olarak sessiz olsa dahi MEN2, NF1, VHL, SDHx gibi kalıtsal sendromların tespiti için germline genetik değerlendirme önerilmelidir. (D) HHA aksının toparlanması uzun sürebilir; bu vakada iyileşme 14 ay sürmüştür.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 24 saatlik idrar metanefrin ve normetanefrin normal olduğundan (biyokimyasal olarak sessiz feokromositoma) preoperatif alfa-blokaj zorunlu değildir.",
+        "B": "DOGRU — Sol adrenal korteksteki otonom kortizol salgısı HHA aksını baskılamış olduğundan, sol adrenalektomi sonrası kontralateral bez hemen devreye giremez; postoperatif glukokortikoid replasmanı gereklidir.",
+        "C": "DOGRU — Feokromositoma tanısı alan tüm hastalarda (biyokimyasal olarak sessiz veya kompozit tümör parçası olsa dahi) MEN2, NF1, VHL, SDHx mutasyonlarının tespiti için germline genetik değerlendirme önerilmelidir.",
+        "D": "DOGRU — Kontralateral HHA aksının toparlanması uzun sürebilir; bu vakada 14 aylık bir iyileşme süreci bildirilmiştir.",
+        "E": "YANLIS — Tek taraflı adrenalektomide kontralateral adrenal bezin glomerüloza tabakası aldosteron üretmeye devam eder; rutin mineralokortikoid replasmanı gerekmez. Ayrıca feokromositoma komponenti kortizol değil katekolamin salgılar."
+      }
+    }
+  ]
+}

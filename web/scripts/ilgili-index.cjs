@@ -13,7 +13,8 @@
  * Ağırlık 1/adet; çok geçen etiketler kendiliğinden sönümleniyor.
  *
  * Kullanım (web/ dizininden):
- *   node scripts/ilgili-index.cjs
+ *   node scripts/ilgili-index.cjs             # üretir ve yazar
+ *   node scripts/ilgili-index.cjs --kontrol   # yazmadan: indeks bayat mı?
  */
 const fs = require('fs');
 const path = require('path');
@@ -227,6 +228,70 @@ function main() {
   }
 
   const sirali = Object.fromEntries(Object.entries(sonuc).sort(([a], [b]) => a.localeCompare(b)));
+
+  /* Boş sonuca ASLA yazma ve --kontrol: araç ve başlık indekslerindeki
+   * korumanın aynısı. Bu betik de CI'da çalışmıyor, yani konu yeniden
+   * adlandırılıp betik unutulursa 'İlgili Konular' silinmiş bir hedefe
+   * bağlanır. link-denetim bu dosyayı GÖRMÜYOR: o yalnızca
+   * content/canonical ve content/premium ağaçlarını geziyor, bu dosya ise
+   * content kökünde duruyor.
+   *
+   * Üreteç belirlenimci -- yeniden üretim birebir aynı baytı veriyor
+   * (ölçüldü), yani karşılaştırma güvenilir. */
+  if (bagliKonu === 0) {
+    console.error('HATA: hiç bağ kurulamadı. İçerik dizini yerinde mi?');
+    console.error('Mevcut indeks korundu; boş sonuç meşru sayılmıyor.');
+    process.exitCode = 1;
+    return;
+  }
+
+  if (process.argv.includes('--kontrol')) {
+    let mevcut = null;
+    try {
+      mevcut = fs.readFileSync(HEDEF, 'utf-8');
+    } catch {
+      console.error('ilgili-index.json okunamadı — üretmek için: node scripts/ilgili-index.cjs');
+      process.exitCode = 1;
+      return;
+    }
+    /* Karşılaştırma SIRADAN BAĞIMSIZ olmalı — bayt bayt karşılaştırma
+     * CI'yı haksız yere düşürürdü.
+     *
+     * Anahtarlar `localeCompare` ile sıralanıyor ve o, çalışma zamanının
+     * yerel ayarına bağlı. Ölçüldü: bu makinede varsayılan yerel `tr-TR` ve
+     * orada "ışık" < "ilac"; `en` yerelinde ise "ışık" > "izole". Yani
+     * dosya Windows'ta (tr-TR) üretilip CI'da (Linux, başka yerel) bayt
+     * bayt karşılaştırılsaydı, hiçbir şey değişmediği hâlde "BAYAT" derdi.
+     *
+     * Bu yüzden yalnızca İÇERİK karşılaştırılıyor: hangi konu var, hangi
+     * bağları taşıyor. Anahtar sırası bir bilgi taşımıyor. */
+    let eski;
+    try {
+      eski = JSON.parse(mevcut);
+    } catch {
+      console.error('ilgili-index.json ayrıştırılamadı — üretmek için: node scripts/ilgili-index.cjs');
+      process.exitCode = 1;
+      return;
+    }
+    const eksik  = Object.keys(sirali).filter((k) => !(k in eski));
+    const fazla  = Object.keys(eski).filter((k) => !(k in sirali));
+    const farkli = Object.keys(sirali).filter(
+      (k) => k in eski && JSON.stringify(eski[k]) !== JSON.stringify(sirali[k])
+    );
+    if (!eksik.length && !fazla.length && !farkli.length) {
+      console.log(`ilgili-index.json senkron (${bagliKonu} konu, ${toplamBag} bağ).`);
+      return;
+    }
+    console.log(`ilgili-index.json BAYAT — indekste ${Object.keys(eski).length} konu, olması gereken ${Object.keys(sirali).length}`);
+    for (const k of eksik.slice(0, 20))  console.log(`  eksik   : ${k}`);
+    for (const k of fazla.slice(0, 20))  console.log(`  fazla   : ${k}`);
+    for (const k of farkli.slice(0, 20)) console.log(`  değişmiş: ${k}`);
+    console.log('');
+    console.log('Çare: node scripts/ilgili-index.cjs');
+    process.exitCode = 1;
+    return;
+  }
+
   fs.writeFileSync(HEDEF, JSON.stringify(sirali, null, 1) + '\n');
 
   console.log(`konu: ${konular.length} | ilgilisi olan: ${bagliKonu} | toplam bağ: ${toplamBag}`);

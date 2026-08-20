@@ -85,7 +85,7 @@ export default function DLQIPage() {
               </p>
               <div className="flex gap-1.5">
                 {OPTIONS.map(opt => (
-                  <button key={opt.pts} type="button"
+                  <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                     className={`flex-1 py-2 rounded-xl border-2 text-[9px] font-black uppercase tracking-widest transition-all
                       ${sel[item.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-white text-slate-500 hover:border-blue-200"}`}>

@@ -63,6 +63,56 @@ export function kirintiSemasi(adimlar: KirintiAdim[]) {
   };
 }
 
+/**
+ * İçerikteki okunabilir tarihi ISO 8601'e çevirir.
+ *
+ * schema.org `dateModified` ISO bekliyor; içerik ise insan için yazılmış
+ * ("14 Mar 2026"). Ölçüldü — canlıda bütün konu sayfaları `dateModified`
+ * alanını Türkçe metin olarak basıyordu, yani tazelik sinyali geçersizdi.
+ *
+ * İÇERİĞE DOKUNULMUYOR: 451 konu "14 Mar 2026", biri "26 Mart 2026"
+ * biçiminde ve bu gösterim için doğru. Çeviri yalnızca şema katmanında.
+ *
+ * Ay adları içerikte üç biçimde geçiyor (ölçüldü): Türkçe kısa (Mar, Nis,
+ * Ağu, Şub), Türkçe uzun (Mart) ve İngilizce kısa (Jun 20 kez, Jul 8 kez).
+ * Üçü de karşılanıyor.
+ *
+ * Ayrıştırılamayan bir değer için alan HİÇ BASILMAZ — geçersiz bir tarih
+ * basmaktansa sinyali vermemek doğru; uydurma bir tarih arama motoruna
+ * yanlış tazelik bildirir.
+ */
+const AY_NO: Record<string, number> = {
+  oca: 1, ocak: 1, jan: 1, ocak_: 1,
+  sub: 2, şub: 2, subat: 2, şubat: 2, feb: 2,
+  mar: 3, mart: 3,
+  nis: 4, nisan: 4, apr: 4,
+  may: 5, mayis: 5, mayıs: 5,
+  haz: 6, haziran: 6, jun: 6,
+  tem: 7, temmuz: 7, jul: 7,
+  agu: 8, ağu: 8, agustos: 8, ağustos: 8, aug: 8,
+  eyl: 9, eylul: 9, eylül: 9, sep: 9,
+  eki: 10, ekim: 10, oct: 10,
+  kas: 11, kasim: 11, kasım: 11, nov: 11,
+  ara: 12, aralik: 12, aralık: 12, dec: 12,
+};
+
+export function isoTarih(ham?: string): string | undefined {
+  if (!ham) return undefined;
+  const s = String(ham).trim();
+  if (/^\d{4}-\d{2}-\d{2}/.test(s)) return s.slice(0, 10);
+
+  const m = s.match(/^(\d{1,2})\s+(\S+)\s+(\d{4})$/);
+  if (!m) return undefined;
+
+  const ay = AY_NO[m[2].toLocaleLowerCase("tr")];
+  if (!ay) return undefined;
+
+  const gun = Number(m[1]);
+  if (gun < 1 || gun > 31) return undefined;
+
+  return `${m[3]}-${String(ay).padStart(2, "0")}-${String(gun).padStart(2, "0")}`;
+}
+
 export function konuSemasi(opts: {
   baslik: string;
   aciklama: string;
@@ -82,7 +132,22 @@ export function konuSemasi(opts: {
     inLanguage: "tr-TR",
     isPartOf: { "@id": `${base}/#website` },
     publisher: { "@id": `${base}/#organization` },
-    dateModified: opts.guncelleme || undefined,
+    dateModified: isoTarih(opts.guncelleme),
+    /**
+     * lastReviewed — sağlık içeriğine ÖZEL tazelik sinyali.
+     *
+     * `dateModified` her sayfa türü için geçerli genel bir alan; sağlık
+     * içeriğinde arama motoru ayrıca "bu bilgi en son ne zaman gözden
+     * geçirildi" sorusunu soruyor ve MedicalWebPage bunun için ayrı bir
+     * alan tanımlıyor. Kaynağı aynı: içerikteki `meta.updatedAt`.
+     *
+     * Aynı değeri iki alana yazmak şişirme değil — biri "dosya değişti",
+     * öteki "içerik gözden geçirildi" demek. Bu projede ikisi gerçekten
+     * aynı olay: konu dosyasına dokunulduğunda içerik elden geçiyor.
+     * Ayrı bir "gözden geçirme tarihi" alanı üretilmedi; olmayan bir veriyi
+     * uydurmak yerine var olanı doğru alana da yazmak doğru olan.
+     */
+    lastReviewed: isoTarih(opts.guncelleme),
     keywords: opts.etiketler?.length ? opts.etiketler.join(", ") : undefined,
     // Hedef kitle hekim; tüketici sağlık içeriğiyle karıştırılmasın.
     audience: { "@type": "MedicalAudience", audienceType: "Physician" },

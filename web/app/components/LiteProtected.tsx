@@ -23,8 +23,22 @@ export default function LiteProtected({
     };
   }, []);
 
-  // Temizlenmiş filigran (watermark) metni
-  const mark = `MedKnowledge • ${userId || "guest"} • ${new Date().toLocaleDateString()}`;
+  /**
+   * Filigran metni — YEREL ve SAAT DİLİMİ açıkça veriliyor.
+   *
+   * `toLocaleDateString()` argümansız çağrıldığında çalışma ortamının
+   * yerelini kullanıyor. Bu satır ilk render'da basıldığı için sunucuda
+   * (Vercel, Linux) ve tarayıcıda (kullanıcının yereli) FARKLI dize
+   * üretebiliyordu — React hidrasyon uyuşmazlığı. Yerelde görünmüyor,
+   * çünkü burada iki taraf da tr-TR.
+   *
+   * Saat dilimi de sabitlendi: aksi hâlde sunucu UTC, kullanıcı UTC+3
+   * olduğunda gece yarısı civarında tarih bir gün kayabiliyor.
+   */
+  const mark = `MedKnowledge • ${userId || "guest"} • ${new Date().toLocaleDateString(
+    "tr-TR",
+    { timeZone: "Europe/Istanbul" }
+  )}`;
 
   return (
     <div className="relative select-none overflow-hidden rounded-xl">

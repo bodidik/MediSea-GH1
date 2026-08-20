@@ -45,7 +45,7 @@ export default function MMRCPage() {
 
         <div className="space-y-2">
           {GRADES.map(g => (
-            <button key={g.grade} type="button" onClick={() => setSel(s => s === g.grade ? null : g.grade)}
+            <button aria-pressed={sel === g.grade} key={g.grade} type="button" onClick={() => setSel(s => s === g.grade ? null : g.grade)}
               className={`w-full text-left flex items-center gap-4 p-4 rounded-2xl border-2 transition-all
                 ${sel === g.grade ? "border-blue-900 bg-blue-900 text-white shadow-md" : "border-slate-200 bg-white text-blue-950 hover:border-blue-300"}`}>
               <div className={`w-10 h-10 rounded-xl shrink-0 flex items-center justify-center font-black text-lg border-2

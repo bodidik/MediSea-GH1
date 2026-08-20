@@ -66,7 +66,7 @@ export default function Das28Page() {
 
         {/* MOD SEÇİMİ */}
         <div className="flex gap-2">
-          <button
+          <button aria-pressed={mode === "esr"}
             type="button"
             onClick={() => setMode("esr")}
             className={`flex-1 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest border transition-all ${
@@ -75,7 +75,7 @@ export default function Das28Page() {
           >
             DAS28-ESR
           </button>
-          <button
+          <button aria-pressed={mode === "crp"}
             type="button"
             onClick={() => setMode("crp")}
             className={`flex-1 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest border transition-all ${
@@ -142,7 +142,7 @@ export default function Das28Page() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ DAS28, 28 eklemli hassas/şiş eklem sayısı, akut faz reaktanı (ESR/CRP) ve hastanın genel değerlendirmesini birleştirir. Tedaviye yanıt takibinde (T2T stratejisi) seri ölçüm önerilir.
           </p>
         </div>

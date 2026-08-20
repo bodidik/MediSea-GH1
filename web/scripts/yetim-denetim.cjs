@@ -33,7 +33,7 @@ function konuAdi(dosya) {
 }
 
 function kayitSay(veri) {
-  for (const alan of ["sorular", "questions", "cards", "kartlar", "adimlar", "stages"]) {
+  for (const alan of ["sorular", "questions", "cards", "kartlar", "adimlar", "stages", "pearls", "inciler"]) {
     if (Array.isArray(veri?.[alan])) return veri[alan].length;
   }
   return 0;
@@ -62,20 +62,70 @@ function tur(ad) {
         // Bozuk dosyayı soru-denetim.cjs zaten yakalıyor.
       }
       const konuVar = fs.existsSync(path.join(KOK, "topics", brans.name, `${konu}.json`));
-      const kayit = { yol: `${brans.name}/${dosya}`, konu: `${brans.name}/${konu}`, adet };
+      const kayit = { yol: `${brans.name}/${dosya}`, konu: `${brans.name}/${konu}`, adet, brans: brans.name, ad: konu, dosya };
       (konuVar ? saglam : yetim).push(kayit);
     }
   }
   return { yetim, saglam };
 }
 
+/* ── AD SAPMASI: konu VAR ama adı tutmuyor ────────────────────────────────
+ *
+ * "Konu dosyası yok" teşhisi tek başına yanıltıcı çıktı. Ölçüldü: beş
+ * yetimin ÜÇÜNDE konu dosyası duruyor, yalnızca adı sapmış:
+ *
+ *   pearls/hematoloji/aml.json        → topics/hematoloji/aml-ana.json VAR
+ *   quizzes/hematoloji/aml-quiz-1.json→ topics/hematoloji/aml-ana.json VAR
+ *   flashcards/nefroloji/hiperf-kbh   → topics/nefroloji/kbh-hiperfosfatemi VAR
+ *
+ * Fark önemli: eksik konu TIBBİ İÇERİK yazmayı gerektiriyor, ad sapması
+ * ise dosyayı yeniden adlandırmayı. İkisini "yetim" diye tek torbaya
+ * koymak, on dakikalık işi haftalık iş gibi gösteriyordu.
+ *
+ * Eşleştirme ölçütü BULANIK BENZERLİK DEĞİL. Denendi ve tehlikeli çıktı:
+ * difflib benzeri bir ölçü `aml`yi 0.67 ile **`kml`**ye eşledi — akut ve
+ * kronik lösemi, bambaşka hastalıklar. Klinik içerikte "birbirine benzeyen
+ * ad" bir kanıt değil.
+ *
+ * Ölçüt yerine bu depodaki gerçek adlandırma kalıbı kullanılıyor: adlar
+ * tirelerle parçalanır ve KISA olanın her parçası, uzun olanın bir
+ * parçasının BAŞLANGICI olmalı.
+ *   aml          ⊂ aml-ana              ✓  (aml = aml)
+ *   hiperf-kbh   ⊂ kbh-hiperfosfatemi   ✓  (kbh = kbh, hiperf ⊂ hiperfosfatemi)
+ *   aml          ⊄ kml                  ✗  (aml, kml'nin başlangıcı değil)
+ */
+function parcala(ad) {
+  return ad.split("-").filter((x) => x.length >= 2);
+}
+
+/** Kısa adın her parçası, uzun adın bir parçasının başlangıcı mı? */
+function adSapmasi(konu, aday) {
+  if (konu === aday) return false;
+  const [a, b] = parcala(konu).length <= parcala(aday).length
+    ? [parcala(konu), parcala(aday)]
+    : [parcala(aday), parcala(konu)];
+  if (!a.length) return false;
+  return a.every((x) => b.some((y) => y.startsWith(x) || x.startsWith(y)));
+}
+
+function yakinKonu(brans, konu) {
+  const dizin = path.join(KOK, "topics", brans);
+  let adaylar = [];
+  try {
+    adaylar = fs.readdirSync(dizin).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
+  } catch { return null; }
+  return adaylar.find((a) => adSapmasi(konu, a)) ?? null;
+}
+
 const TURLER = [
   ["quizzes", "soru"],
   ["flashcards", "kart"],
   ["vakalar", "adım"],
+  ["pearls", "inci"],
 ];
 
 let toplamYetim = 0;
+let sapmaSayisi = 0;
 const satirlar = [];
 
 for (const [ad, birim] of TURLER) {
@@ -88,17 +138,115 @@ for (const [ad, birim] of TURLER) {
   );
   for (const y of yetim) {
     toplamYetim++;
-    satirlar.push(`    ${y.yol}  →  konu dosyası yok: topics/${y.konu}.json  (${y.adet} ${birim})`);
+    const yakin = yakinKonu(y.brans, y.ad);
+    if (!yakin) {
+      satirlar.push(`    ${y.yol}  →  konu dosyası YOK: topics/${y.konu}.json  (${y.adet} ${birim})`);
+      continue;
+    }
+    /* Hedef konunun bu TÜRDE dosyası zaten varsa yeniden adlandırma üzerine
+     * yazar — o zaman iş "ad düzelt" değil "iki dosyayı birleştir"dir ve
+     * hangi kaydın kalacağı bir içerik kararıdır. Ölçüldü: nefroloji kart
+     * dosyalarının ikisi de 70 kart taşıyor, ilk 10'u aynı, kalan 60'ı
+     * tamamen farklı — yani körlemesine yeniden adlandırma 60 kart siler. */
+    const hedefDosya = y.dosya.replace(y.ad, yakin);
+    const carpisma = fs.existsSync(path.join(KOK, ad, y.brans, hedefDosya));
+    sapmaSayisi++;
+    satirlar.push(
+      `    ${y.yol}  →  AD SAPMASI: topics/${y.brans}/${yakin}.json VAR  (${y.adet} ${birim})`
+    );
+    satirlar.push(
+      carpisma
+        ? `        ⚠ ${hedefDosya} ZATEN VAR — yeniden adlandırma üzerine yazar, birleştirme kararı gerekiyor`
+        : `        çare: ${y.dosya} → ${hedefDosya}`
+    );
   }
 }
 
 console.log(satirlar.join("\n"));
 
-if (toplamYetim === 0) {
+/* ── İKİNCİ SINIF: hiçbir kodun OKUMADIĞI dizin ──────────────────────────
+ *
+ * Yukarıdaki denetim "dosya var, konusu yok" durumunu buluyor. Bundan daha
+ * sessiz bir hâl daha var: dizinin KENDİSİNİ hiçbir kod okumuyor. O zaman
+ * dosyaların konusu olsa bile hiçbir yerden ulaşılamazlar.
+ *
+ * Ölçüldü: `content/premium/ydus/questions/` altında 12 dosya var (11 MEN1
+ * sorusu + 1 nefroloji) ve depoda tek bir okuyucu yok. Biçim de farklı —
+ * dosya başına TEK soru ve alan adları İngilizce (`question`, `options`,
+ * `answer`), oysa `quizzes/` tek dosyada dizi tutuyor ve alanlar Türkçe
+ * (`metin`, `secenekler`, `dogru`). Yani şema ayrışması.
+ *
+ * Liste ELLE tutuluyor çünkü "okunuyor mu" sorusunun cevabı grep'le güvenilir
+ * biçimde alınamıyor: `"questions"` kaynakta bir ALAN adı olarak da geçiyor
+ * ve dizin okumasıyla karışıyor. Nitekim ilk ölçümde `cases/` de yetim
+ * sanıldı; oysa soru çözüm kokpiti onu okuyor (soru-cozum/page.tsx).
+ * Yeni bir dizin eklerken burayı da güncelle.
+ */
+const OKUNAN_DIZINLER = new Set([
+  "topics",     // premium konu sayfaları
+  "branches",   // branş listeleri
+  "quizzes",    // premium-envanter + quiz-coz
+  "flashcards", // premium-envanter + hizli-tekrar
+  "pearls",     // premium-envanter + inciler
+  "vakalar",    // premium-envanter + vaka-coz
+  "cases",      // soru-cozum kokpiti
+  "videos",
+  "kaynaklar",
+]);
+
+const okunmayan = [];
+for (const e of fs.readdirSync(KOK, { withFileTypes: true })) {
+  if (!e.isDirectory() || OKUNAN_DIZINLER.has(e.name)) continue;
+  let adet = 0;
+  const gez = (p) => {
+    for (const x of fs.readdirSync(p, { withFileTypes: true })) {
+      const q = path.join(p, x.name);
+      if (x.isDirectory()) gez(q);
+      else if (x.name.endsWith(".json")) adet++;
+    }
+  };
+  try { gez(path.join(KOK, e.name)); } catch {}
+  if (adet) okunmayan.push({ ad: e.name, adet });
+}
+
+if (okunmayan.length) {
+  console.log("\nHİÇBİR KODUN OKUMADIĞI DİZİN:");
+  for (const d of okunmayan) {
+    console.log(`    ${d.ad}/  →  ${d.adet} dosya, hiçbir yerden ulaşılamıyor`);
+  }
+}
+
+/* İki sınıf ayrı ayrı raporlanıyor: çareleri farklı. Yetim dosyaya KONU
+ * yazmak yetiyor; okunmayan dizin ise ya bir okuyucu ya da şema dönüşümü
+ * istiyor. Tek sayıda toplamak hangi işin gerektiğini gizlerdi. */
+const okunmayanDosya = okunmayan.reduce((a, b) => a + b.adet, 0);
+
+if (toplamYetim === 0 && !okunmayan.length) {
   console.log("\nyetim dosya yok — her içerik dosyasının bir konusu var.");
 } else {
-  console.log(
-    `\n${toplamYetim} yetim dosya. Bunlara arayüzden ulaşılamıyor; ` +
-      `ya konu dosyası eklenmeli ya da dosya kaldırılmalı.`
-  );
+  const parcalar = [];
+  if (toplamYetim) {
+    /* Çareleri farklı olduğu için iki sayı AYRI veriliyor. Tek sayıda
+     * toplamak, dosya adı düzeltmekle tıbbi konu yazmayı aynı iş gibi
+     * gösteriyordu. */
+    const eksik = toplamYetim - sapmaSayisi;
+    if (sapmaSayisi) {
+      parcalar.push(
+        `${sapmaSayisi} dosyada AD SAPMASI — konu dosyası var, adı tutmuyor. ` +
+          `Çarpışma yoksa yeniden adlandırma yeter; varsa hangi kaydın kalacağı içerik kararı.`
+      );
+    }
+    if (eksik) {
+      parcalar.push(
+        `${eksik} dosyanın konusu GERÇEKTEN yok — ya konu dosyası yazılmalı ya da dosya kaldırılmalı.`
+      );
+    }
+  }
+  if (okunmayan.length) {
+    parcalar.push(
+      `${okunmayanDosya} dosya okunmayan dizinde — bunlara konu dosyası eklemek YETMEZ, ` +
+        `dizini okuyan bir kod ya da şema dönüşümü gerekiyor.`
+    );
+  }
+  console.log("\n" + parcalar.join("\n"));
 }

@@ -64,7 +64,7 @@ export default function BarthelPage() {
 
         <div className="flex items-center justify-between px-1">
           <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}/{ITEMS.length} madde tamamlandı</span>
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1 justify-end">
             {ITEMS.map(i => (
               <div key={i.id} className={`w-5 h-2 rounded-full transition-all ${sel[i.id] !== null ? "bg-blue-900" : "bg-slate-200"}`} />
             ))}
@@ -79,7 +79,7 @@ export default function BarthelPage() {
                 {item.options.map(opt => {
                   const active = sel[item.id] === opt.pts;
                   return (
-                    <button key={opt.pts} type="button"
+                    <button aria-pressed={active} key={opt.pts} type="button"
                       onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                       className={`flex items-center gap-2 px-3 py-2 rounded-xl border-2 text-[10px] font-black transition-all
                         ${active ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>

@@ -108,10 +108,10 @@ export default function CAMICUPage() {
               <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{feat.detail}</p>
               <div className="flex gap-2">
                 {([true, false] as const).map(v => (
-                  <button key={String(v)} type="button"
+                  <button aria-pressed={sel[feat.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [feat.id]: s[feat.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-                      ${sel[feat.id] === v ? (v ? "border-rose-500 bg-rose-500 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+                      ${sel[feat.id] === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                     {v ? "Mevcut" : "Yok"}
                   </button>
                 ))}

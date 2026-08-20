@@ -1,4 +1,12 @@
 "use client";
+
+/*
+ * aria-pressed: seçili seçenek yalnızca RENKLE belliydi. Ölçüldü — bu
+ * sayfada 86 seçim düğmesi var ve hiçbirinde aria-pressed/aria-checked/
+ * radiogroup yoktu, yani ekran okuyucu kullanıcısı hangi APACHE II
+ * seçeneğini işaretlediğini bilemiyordu. Aynı boşluk 60 araçta daha var
+ * (bkz. SENDE-KALANLAR); burası doğrulanmış örnek.
+ */
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
@@ -139,17 +147,33 @@ const COLOR: Record<string, { bg: string; border: string; text: string; badge: s
 };
 
 export default function APACHE2Page() {
-  const [sel, setSel] = React.useState<Record<string, number | null>>(
+  /**
+   * Seçim PUANLA değil KİMLİKLE saklanır.
+   *
+   * Ölçüldü: eskiden `Record<string, number|null>` idi, yani parametre
+   * başına yalnızca PUAN tutuluyordu ve vurgulama `sel[param.id] ===
+   * opt.pts` ile yapılıyordu. APACHE II skorları SİMETRİK — ateşte
+   * "38.5–38.9" ve "34–35.9" ikisi de 1 puan. Kullanıcı birini seçince
+   * ÖTEKİ DE seçili görünüyordu (ikisinde de `bg-blue-900`).
+   *
+   * Skor doğruydu (puan aynı), ama girdisini gözden geçiren kullanıcı
+   * aynı parametrede iki çelişkili seçim görüyordu. `label` parametre
+   * içinde benzersiz olduğu için kimlik olarak o kullanılıyor.
+   */
+  const [sel, setSel] = React.useState<Record<string, { pts: number; label: string } | null>>(
     Object.fromEntries(PHYSIO.map(p => [p.id, null]))
   );
   const [age, setAge] = React.useState<number | null>(null);
-  const [chronic, setChronic] = React.useState<number | null>(null);
+  // Kronik sağlık: iki ayrı klinik kategori de 2 puan taşıyor, yani seçim
+  // puanla ayırt edilemiyor — ikisi birden vurgulanıyordu. Puan yerine
+  // şıkkın kendisi saklanır (fizyolojik parametrelerdeki çözümün aynısı).
+  const [chronic, setChronic] = React.useState<{ pts: number; label: string } | null>(null);
 
   const physioAnswered = Object.values(sel).filter(v => v !== null).length;
   const complete = physioAnswered === PHYSIO.length && age !== null && chronic !== null;
 
   const total = complete
-    ? Object.values(sel).reduce<number>((s, v) => s + (v ?? 0), 0) + (age ?? 0) + (chronic ?? 0)
+    ? Object.values(sel).reduce<number>((s, v) => s + (v?.pts ?? 0), 0) + (age ?? 0) + (chronic?.pts ?? 0)
     : null;
 
   const band = total !== null ? getBand(total) : null;
@@ -187,11 +211,12 @@ export default function APACHE2Page() {
               <div className="flex flex-wrap gap-1">
                 {param.opts.map(opt => (
                   <button key={`${opt.pts}-${opt.label}`} type="button"
-                    onClick={() => setSel(s => ({ ...s, [param.id]: s[param.id] === opt.pts ? null : opt.pts }))}
+                    aria-pressed={sel[param.id]?.label === opt.label}
+                    onClick={() => setSel(s => ({ ...s, [param.id]: s[param.id]?.label === opt.label ? null : { pts: opt.pts, label: opt.label } }))}
                     className={`flex items-center gap-1.5 px-2 py-1.5 rounded-lg border-2 text-[9px] font-bold transition-all
-                      ${sel[param.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
+                      ${sel[param.id]?.label === opt.label ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                     <span className={`w-4 h-4 rounded-md flex items-center justify-center text-[8px] font-black shrink-0
-                      ${sel[param.id] === opt.pts ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
+                      ${sel[param.id]?.label === opt.label ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
                     {opt.label}
                   </button>
                 ))}
@@ -205,6 +230,7 @@ export default function APACHE2Page() {
           <div className="flex flex-wrap gap-1.5">
             {AGE_OPTS.map(opt => (
               <button key={opt.pts} type="button"
+                aria-pressed={age === opt.pts}
                 onClick={() => setAge(age === opt.pts ? null : opt.pts)}
                 className={`flex items-center gap-1.5 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
                   ${age === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
@@ -220,12 +246,13 @@ export default function APACHE2Page() {
           <p className="font-black text-blue-900 uppercase italic text-sm mb-3">Kronik Hastalık Puanı</p>
           <div className="space-y-1.5">
             {CHRONIC_OPTS.map(opt => (
-              <button key={opt.pts + opt.label} type="button"
-                onClick={() => setChronic(chronic === opt.pts && chronic + opt.label === chronic + opt.label ? null : opt.pts)}
+              <button key={opt.label} type="button"
+                aria-pressed={chronic?.label === opt.label}
+                onClick={() => setChronic(chronic?.label === opt.label ? null : opt)}
                 className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
-                  ${chronic === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
+                  ${chronic?.label === opt.label ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                 <span className={`w-5 h-5 rounded-lg flex items-center justify-center text-[9px] font-black shrink-0
-                  ${chronic === opt.pts ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
+                  ${chronic?.label === opt.label ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
                 {opt.label}
               </button>
             ))}
@@ -253,7 +280,9 @@ export default function APACHE2Page() {
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
-            <ToolShare params={{ ...sel as Record<string, number>, age: age ?? 0, chronic: chronic ?? 0 }} />
+            <ToolShare params={{
+              ...Object.fromEntries(Object.entries(sel).map(([k, v]) => [k, v?.pts ?? 0])),
+              age: age ?? 0, chronic: chronic?.pts ?? 0 }} />
           </div>
           <div className="flex items-start gap-3 opacity-60">
             <span className="text-amber-500 text-lg">⚠️</span>

@@ -225,7 +225,7 @@ export default function AbgPage() {
         {/* ── ABG Girişi ─────────────────────────────── */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Arteriyel Kan Gazı</p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Input label="pH" value={ph} set={setPh} ph="7.35–7.45" unit="" />
             <Input label="PaCO₂" value={pco2} set={setPco2} ph="35–45" unit="mmHg" />
             <Input label="HCO₃⁻" value={hco3} set={setHco3} ph="22–26" unit="mEq/L" />
@@ -249,7 +249,7 @@ export default function AbgPage() {
             <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Solunum Asidozu — Kompansasyon Tipi</p>
             <div className="flex gap-3">
               {(["acute", "chronic"] as const).map(t => (
-                <button key={t} type="button" onClick={() => setRespAcidType(t)}
+                <button aria-pressed={respAcidType === t} key={t} type="button" onClick={() => setRespAcidType(t)}
                   className={`flex-1 py-2.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                     ${respAcidType === t ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900'}`}>
                   {t === "acute" ? "Akut (×1 mEq/10mmHg)" : "Kronik (×3.5 mEq/10mmHg)"}
@@ -263,7 +263,7 @@ export default function AbgPage() {
             <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Solunum Alkalozu — Kompansasyon Tipi</p>
             <div className="flex gap-3">
               {(["acute", "chronic"] as const).map(t => (
-                <button key={t} type="button" onClick={() => setRespAlkType(t)}
+                <button aria-pressed={respAlkType === t} key={t} type="button" onClick={() => setRespAlkType(t)}
                   className={`flex-1 py-2.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                     ${respAlkType === t ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 text-blue-900'}`}>
                   {t === "acute" ? "Akut (×2 mEq/10mmHg)" : "Kronik (×5 mEq/10mmHg)"}
@@ -276,7 +276,7 @@ export default function AbgPage() {
         {/* ── Primer Bozukluk ────────────────────────── */}
         {dl && hasCore && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${dl.border} ${dl.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">PRİMER BOZUKLUK</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PRİMER BOZUKLUK</div>
             <p className={`text-2xl font-black italic tracking-tight ${dl.color}`}>{dl.label}</p>
 
             {/* pH / PCO2 / HCO3 status chips */}
@@ -299,8 +299,8 @@ export default function AbgPage() {
         {/* ── Kompansasyon ───────────────────────────── */}
         {comp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${comp.adequate ? 'border-emerald-200 bg-emerald-50' : 'border-amber-200 bg-amber-50'}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">KOMPANSASYON KONTROLÜ</div>
-            <p className="text-[10px] font-bold text-blue-900/50 font-mono mb-2">{comp.expected}</p>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">KOMPANSASYON KONTROLÜ</div>
+            <p className="text-[10px] font-bold text-blue-900/80 font-mono mb-2">{comp.expected}</p>
             <p className={`text-lg font-black ${comp.adequate ? 'text-emerald-700' : 'text-amber-700'}`}>{comp.label}</p>
             <p className={`text-sm font-bold mt-1 ${comp.adequate ? 'text-emerald-700' : 'text-amber-700'} opacity-80`}>
               {comp.adequate
@@ -313,7 +313,7 @@ export default function AbgPage() {
         {/* ── Anyon Açığı ───────────────────────────── */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Anyon Açığı & Delta-Delta</p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Input label="Na⁺" value={na} set={setNa} ph="ör. 138" unit="mEq/L" />
             <Input label="Cl⁻" value={cl} set={setCl} ph="ör. 102" unit="mEq/L" />
             <Input label="Albumin (opsiyonel)" value={alb} set={setAlb} ph="ör. 4.0" unit="g/dL" />
@@ -407,8 +407,8 @@ export default function AbgPage() {
               { d: "Solunum Alkalozu (Akut)",    f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 2" },
               { d: "Solunum Alkalozu (Kronik)",  f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 5" },
             ].map(r => (
-              <div key={r.d} className="flex items-baseline gap-3 py-1.5 border-b border-slate-50">
-                <span className="text-[10px] font-black text-blue-900/60 uppercase tracking-widest w-44 shrink-0">{r.d}</span>
+              <div key={r.d} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5 border-b border-slate-50">
+                <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest w-full sm:w-44 sm:shrink-0">{r.d}</span>
                 <span className="text-[11px] font-bold text-blue-900 font-mono">{r.f}</span>
               </div>
             ))}

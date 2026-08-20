@@ -66,9 +66,27 @@ function diziUzunlugu(dosya: string, alanlar: string[]): number | null {
 export function envanterAl(branch: string, topic: string): Envanter {
   const kok = KOK();
 
-  const soru = diziUzunlugu(path.join(kok, "quizzes", branch, `${topic}-quiz-1.json`), ["sorular", "questions"]);
-  const kart = diziUzunlugu(path.join(kok, "flashcards", branch, `${topic}.json`), ["cards", "kartlar"]);
-  const inci = diziUzunlugu(path.join(kok, "pearls", branch, `${topic}.json`), ["pearls", "inciler"]);
+  /**
+   * YALNIZCA MOTORUN OKUYABİLDİĞİ ALAN SAYILIR.
+   *
+   * Bu liste bir dönem her tür için iki ad kabul ediyordu
+   * (`sorular|questions`, `cards|kartlar`, `pearls|inciler`) ama motorların
+   * hiçbiri ikinci adı okumuyor — ölçüldü: QuizEngine `sorular`,
+   * hizli-tekrar `veri.cards`, PearlsViewer `data.pearls`.
+   *
+   * Sonuç sessiz değil, AĞIR olurdu: sayaç "N kart" der, konu sayfası
+   * bağlantıyı kurar, motor `cards.map` çağırınca `undefined` üzerinde
+   * ÇÖKERDİ (inciler tarafında `data.pearls.filter` aynı). Quiz tarafında
+   * bu tam olarak yaşandı — `hematoloji/aml-quiz-1.json` `questions`
+   * kullanıyor ve envanter onu 10 soru diye sayıyordu.
+   *
+   * Motoru ikinci şemayı okuyacak şekilde genişletmek DENENDİ ve geri
+   * alındı: soru içi alanlar da farklı olduğu için HTTP 500 verdi. Doğru
+   * yön bu: okunamayan dosya 0 sayılır, bağlantı hiç kurulmaz.
+   */
+  const soru = diziUzunlugu(path.join(kok, "quizzes", branch, `${topic}-quiz-1.json`), ["sorular"]);
+  const kart = diziUzunlugu(path.join(kok, "flashcards", branch, `${topic}.json`), ["cards"]);
+  const inci = diziUzunlugu(path.join(kok, "pearls", branch, `${topic}.json`), ["pearls"]);
 
   const vaka = vakaSayisi(kok, branch, topic);
 

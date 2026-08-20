@@ -53,7 +53,7 @@ export default function CdaiPage() {
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
               <div className="flex gap-3 items-center">
                 <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-                  className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+                  className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
                 <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest w-16 text-right">max {max}</span>
               </div>
             </label>
@@ -69,7 +69,7 @@ export default function CdaiPage() {
 
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">AKTİVİTE SINIFI</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">AKTİVİTE SINIFI</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color} opacity-70`}>{result.sub}</p>
             <div className="mt-4 grid grid-cols-4 gap-2">

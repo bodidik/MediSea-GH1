@@ -44,10 +44,10 @@ function OptionRow({
 }) {
   return (
     <div className="space-y-2">
-      <span className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest pl-1">{title}</span>
+      <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">{title}</span>
       <div className="grid gap-2">
         {options.map((o) => (
-          <button
+          <button aria-pressed={selected === o.value}
             key={o.value}
             type="button"
             onClick={() => onSelect(o.value)}
@@ -128,7 +128,7 @@ export default function GcsPage() {
         {/* PAYLAŞIM VE UYARI */}
         <div className="bg-slate-900/5 p-6 rounded-[2rem] border border-slate-200 space-y-4">
           <ToolShare params={shareParams} />
-          <p className="text-[9px] text-blue-900/60 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
+          <p className="text-[9px] text-blue-900/80 font-bold uppercase tracking-[0.15em] text-center leading-relaxed italic">
             ⚠️ GKS ≤8 genellikle havayolu koruması (entübasyon) için bir eşik olarak kabul edilir. Sedasyon, entübasyon veya göz/motor engelleri varlığında skor sınırlı yorumlanmalıdır.
           </p>
         </div>

@@ -34,7 +34,7 @@ const ResultRow = ({ label, value, unit, normal, interpretation, ok }: {
   <div className={`rounded-2xl p-4 border ${ok === true ? 'bg-emerald-50 border-emerald-200' : ok === false ? 'bg-rose-50 border-rose-200' : 'bg-slate-50 border-slate-200'}`}>
     <div className="flex items-start justify-between gap-2">
       <div>
-        <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/50 mb-1">{label}</div>
+        <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 mb-1">{label}</div>
         {value !== null ? (
           <div className={`text-2xl font-black ${ok === true ? 'text-emerald-700' : ok === false ? 'text-rose-700' : 'text-blue-900'}`}>
             {value} <span className="text-sm font-bold opacity-60">{unit}</span>
@@ -190,7 +190,7 @@ export default function SpotUrinePage() {
         {/* Sekmeler */}
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {TABS.map(t => (
-            <button key={t.id} type="button" onClick={() => setTab(t.id)}
+            <button aria-pressed={tab === t.id} key={t.id} type="button" onClick={() => setTab(t.id)}
               className={`p-3 rounded-2xl border transition-all text-center
                 ${tab === t.id ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-white border-slate-200 hover:border-blue-900/30'}`}>
               <div className="text-xl mb-1">{t.icon}</div>
@@ -211,7 +211,7 @@ export default function SpotUrinePage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest">Formüller</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest">Formüller</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">PCR (mg/g) = İdrar protein (mg/dL) × 1000 / İdrar kreatinin (mg/dL)</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">ACR (mg/g) = İdrar albumin (mg/dL) × 1000 / İdrar kreatinin (mg/dL)</p>
             </div>
@@ -270,7 +270,7 @@ export default function SpotUrinePage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest">Formüller</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest">Formüller</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">FENa (%) = (UNa × PCr) / (PNa × UCr) × 100</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">FEÜre (%) = (UÜre × PCr) / (PÜre × UCr) × 100</p>
             </div>
@@ -297,7 +297,7 @@ export default function SpotUrinePage() {
                 ].map(r => (
                   <div key={r.l} className="flex items-start gap-3">
                     <span className={`text-[10px] font-black ${r.c} w-24 shrink-0`}>{r.l}</span>
-                    <span className="text-[10px] font-bold text-blue-900/70">{r.d}</span>
+                    <span className="text-[10px] font-bold text-blue-900/80">{r.d}</span>
                   </div>
                 ))}
               </div>
@@ -319,14 +319,14 @@ export default function SpotUrinePage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest">Formül</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest">Formül</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">TTKG = (UK / PK) × (POsm / UOsm)</p>
-              <p className="text-[9px] font-bold text-blue-900/50 mt-1">İdrar osmolalitesi plazma osmolalitesinden yüksek olmalı (tubüler konsantrasyon gereksinimi)</p>
+              <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdrar osmolalitesi plazma osmolalitesinden yüksek olmalı (tubüler konsantrasyon gereksinimi)</p>
             </div>
 
             {ttkg !== null && (
               <div className={`p-6 rounded-[2rem] border-2 border-dashed ${ttkg >= 5 && pkN > 5 ? 'bg-sky-50 border-sky-200' : 'bg-rose-50 border-rose-200'}`}>
-                <div className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2">TTKG</div>
+                <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">TTKG</div>
                 <p className={`text-4xl font-black ${ttkg >= 5 ? 'text-sky-700' : 'text-rose-700'}`}>{ttkg.toFixed(1)}</p>
                 {pkN > 0 && (
                   <p className={`text-sm font-bold mt-2 ${ttkg >= 5 && pkN > 5 ? 'text-sky-700' : 'text-rose-700'} opacity-80`}>
@@ -350,11 +350,11 @@ export default function SpotUrinePage() {
                   ]},
                 ].map(sec => (
                   <div key={sec.title}>
-                    <p className="text-[8px] font-black text-blue-900/40 uppercase tracking-widest mb-1">{sec.title}</p>
+                    <p className="text-[8px] font-black text-blue-900/80 uppercase tracking-widest mb-1">{sec.title}</p>
                     {sec.rows.map(r => (
                       <div key={r.v} className="flex items-start gap-3 py-1">
                         <span className={`text-[10px] font-black w-14 shrink-0 ${r.c}`}>TTKG {r.v}</span>
-                        <span className="text-[10px] font-bold text-blue-900/70">{r.d}</span>
+                        <span className="text-[10px] font-bold text-blue-900/80">{r.d}</span>
                       </div>
                     ))}
                   </div>
@@ -385,7 +385,7 @@ export default function SpotUrinePage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 space-y-1">
-              <p className="text-[9px] font-black text-blue-900/50 uppercase tracking-widest">Formüller</p>
+              <p className="text-[9px] font-black text-blue-900/80 uppercase tracking-widest">Formüller</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">UAG = UNa + UK − UCl</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">UOsm{"{hes}"} = 2×(UNa + UK) + UÜre/2.8 + UGlukoz/18</p>
               <p className="text-[10px] font-bold text-blue-900 font-mono">İdrar Osm Gap = UOsm{"{ölç}"} − UOsm{"{hes}"} ≈ 2 × [NH₄⁺]</p>
@@ -419,7 +419,7 @@ export default function SpotUrinePage() {
                       <div className="text-[8px] font-black text-rose-600 uppercase tracking-widest">UAG: {r.uag}</div>
                       <div className="text-[8px] font-black text-sky-600 uppercase tracking-widest">UOG: {r.uog}</div>
                     </div>
-                    <span className="text-[10px] font-bold text-blue-900/70">{r.d}</span>
+                    <span className="text-[10px] font-bold text-blue-900/80">{r.d}</span>
                   </div>
                 ))}
               </div>

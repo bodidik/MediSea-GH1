@@ -161,7 +161,7 @@ export default function SOFAPage() {
               {pressor !== "none" && (
                 <label className="flex flex-col gap-1 col-span-2">
                   <span className="text-[9px] font-bold text-slate-400 uppercase pl-1">Doz (µg/kg/dk)</span>
-                  <input type="text" inputMode="decimal" value={dose} onChange={e=>setDose(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold border-amber-400 outline-none" />
+                  <input type="text" inputMode="decimal" value={dose} onChange={e=>setDose(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-sm font-bold border-amber-400 outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-1" />
                 </label>
               )}
             </div>

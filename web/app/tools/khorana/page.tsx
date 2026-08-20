@@ -54,14 +54,14 @@ export default function KhoranaPage() {
             <span className="text-sm font-bold text-blue-900/80 block">Kanser Lokalizasyonu</span>
             <div className="grid gap-1.5">
               {CANCER_OPTS.map(([l, v]) => (
-                <label key={v} className={`flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+                <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
                   ${cancerSite === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
                     ${cancerSite === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {cancerSite === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="hidden" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
-                  <span className={`text-[12px] font-bold flex-1 ${cancerSite === v ? 'text-white' : 'text-blue-900/70'}`}>{l}</span>
+                  <input type="radio" className="sr-only" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
+                  <span className={`text-[12px] font-bold flex-1 ${cancerSite === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
                   <span className={`text-[10px] font-black ${cancerSite === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
                 </label>
               ))}
@@ -91,16 +91,16 @@ export default function KhoranaPage() {
             </label>
           </div>
 
-          <label className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+          <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
             ${esaUse ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
             <div className="flex items-center gap-4">
               <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
                 ${esaUse ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
               </div>
-              <span className={`text-sm font-bold ${esaUse ? 'text-white' : 'text-blue-900/70 group-hover:text-blue-900'}`}>Eritropoez Stimüle Edici Ajan (ESA) Kullanımı</span>
+              <span className={`text-sm font-bold ${esaUse ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>Eritropoez Stimüle Edici Ajan (ESA) Kullanımı</span>
             </div>
-            <input type="checkbox" className="hidden" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
+            <input type="checkbox" className="sr-only" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
           </label>
         </div>
 
@@ -110,7 +110,7 @@ export default function KhoranaPage() {
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/40 uppercase tracking-widest mb-2 block">RİSK</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>
             <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
             <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
           </div>

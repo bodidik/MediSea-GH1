@@ -92,7 +92,7 @@ export default function RAPID3Page() {
               </p>
               <div className="flex gap-1.5">
                 {FUNC_OPTS.map(opt => (
-                  <button key={opt.pts} type="button"
+                  <button aria-pressed={func[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setFunc(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
                     className={`flex-1 py-1.5 rounded-lg border-2 text-[8px] font-black uppercase tracking-widest transition-all
                       ${func[item.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-white text-slate-500 hover:border-blue-200"}`}>
@@ -108,7 +108,7 @@ export default function RAPID3Page() {
           <p className="font-black text-blue-900 uppercase italic text-sm mb-4">Ağrı (Son 1 Hafta) — 0 = Ağrı Yok · 10 = En Kötü Ağrı</p>
           <div className="flex gap-1 flex-wrap">
             {Array.from({ length: 11 }, (_, v) => (
-              <button key={v} type="button" onClick={() => setPain(p => p === v ? null : v)}
+              <button aria-pressed={pain === v} key={v} type="button" onClick={() => setPain(p => p === v ? null : v)}
                 className={`w-9 h-9 rounded-xl border-2 text-[11px] font-black transition-all
                   ${pain === v ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-300"}`}>{v}</button>
             ))}
@@ -119,7 +119,7 @@ export default function RAPID3Page() {
           <p className="font-black text-blue-900 uppercase italic text-sm mb-4">Global Değerlendirme (Son 1 Hafta) — 0 = Çok İyi · 10 = Çok Kötü</p>
           <div className="flex gap-1 flex-wrap">
             {Array.from({ length: 11 }, (_, v) => (
-              <button key={v} type="button" onClick={() => setGlobal(g => g === v ? null : v)}
+              <button aria-pressed={global === v} key={v} type="button" onClick={() => setGlobal(g => g === v ? null : v)}
                 className={`w-9 h-9 rounded-xl border-2 text-[11px] font-black transition-all
                   ${global === v ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-300"}`}>{v}</button>
             ))}

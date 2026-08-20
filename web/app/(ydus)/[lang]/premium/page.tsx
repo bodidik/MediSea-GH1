@@ -49,7 +49,7 @@ export default function PremiumPage() {
   }, [stats]);
 
   return (
-    <div className="min-h-screen bg-[#0a0f1c] text-slate-100 font-sans selection:bg-blue-500/30">
+    <div className="koyu-yuzey min-h-screen bg-[#0a0f1c] text-slate-100 font-sans selection:bg-blue-500/30">
 
       {/* ÜST HEADER */}
       <div className="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50 shadow-2xl">

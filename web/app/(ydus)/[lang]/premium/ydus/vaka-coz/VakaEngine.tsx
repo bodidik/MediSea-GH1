@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { kalinIsle, duzMetin } from '@/app/lib/metin';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -10,8 +11,21 @@ interface Adim {
   soru: string;
   secenekler: Record<string, string>;
   dogru: string;
-  aciklama_kisa: string;
-  aciklama_detay: string;
+  /**
+   * İSTEĞE BAĞLI — tip bir dönem zorunlu diyordu ve YALANDI.
+   *
+   * Ölçüldü: 11 vaka dosyasının 5'i (gogus-hastaliklari/sarkoidoz, tkp,
+   * vip-1..3 — 35 adımın 12'si) bu iki alanı hiç taşımıyor; yerine
+   * yalnızca `secenekAciklamalari` var. JSON `any` olarak okunduğu için
+   * TypeScript bunu göremiyordu.
+   *
+   * Sonuç çökme değildi (`kalinIsle` boş girdiyi karşılıyor) ama sonuç
+   * kutusu BAŞLIKLI ve GÖVDESİ BOŞ basılıyordu: boş `<p>` kendi
+   * `marginBottom`ını koruduğu için ücretli yüzeyde açıklamasız bir
+   * boşluk kalıyordu.
+   */
+  aciklama_kisa?: string;
+  aciklama_detay?: string;
   secenekAciklamalari: Record<string, string>;
   sonraki_bilgi?: string;
 }
@@ -52,7 +66,7 @@ function KlinikMetin({ metin }: { metin: string }) {
             fontSize: '15px', lineHeight: 1.7, color: '#1a2a3a',
             fontWeight: kalinMi ? 600 : 400, margin: 0,
           }}>
-            {satir}
+            {kalinIsle(satir)}
           </p>
         );
       })}
@@ -136,20 +150,51 @@ function AdimKarti({
           Soru {adimNo}
         </div>
         <p style={{ fontSize: '15px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0 }}>
-          {adim.soru}
+          {kalinIsle(adim.soru)}
         </p>
       </div>
 
-      {/* SEÇENEKLER */}
+      {/*
+        SEÇENEKLER
+
+        `aria-disabled`: cevaptan sonra şıklar işlevsiz kalıyor (`secenek` erken
+        dönüyor) ama düğme olmayı sürdürüyorlardı — klavyeyle üstüne gelip
+        Enter'a basan biri hiçbir şey olmadığını görüyor, nedenini
+        öğrenemiyordu. QuizEngine'deki ile aynı çare: `disabled` DEĞİL
+        `aria-disabled`, çünkü şıklar cevaptan sonra da OKUNABİLİR kalmalı
+        (hangisinin doğru olduğu ve açıklaması orada).
+      */}
       <div style={{ marginBottom: '.75rem' }}>
         {Object.entries(adim.secenekler).map(([harf, metin]) => (
-          <button key={harf} onClick={() => secenek(harf)} style={secenekStil(harf)}>
+          <button
+            key={harf}
+            onClick={() => secenek(harf)}
+            aria-disabled={cevapVerildi || undefined}
+            /*
+             * ADDA HARF KORUNUR — QuizEngine'de ölçülen kusurun birebir
+             * kardeşi. Cevaptan sonra harf dairesi ✓/✗ ile değişiyor ve harf
+             * erişilebilir addan düşüyordu; geri bildirim ise "Doğru cevap D."
+             * diyor, yani okuyan kullanıcıya artık hiçbir düğmenin
+             * duyurmadığı bir harf gösteriliyordu.
+             */
+            aria-label={
+              `${harf}: ${duzMetin(metin)}` +
+              (!cevapVerildi
+                ? ''
+                : harf === adim.dogru
+                  ? ' — doğru cevap'
+                  : harf === secim
+                    ? ' — senin seçimin, yanlış'
+                    : '')
+            }
+            style={secenekStil(harf)}
+          >
             <div style={harfDairesi(harf)}>
               {cevapVerildi
                 ? harf === adim.dogru ? '✓' : harf === secim ? '✗' : harf
                 : harf}
             </div>
-            <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{metin}</span>
+            <span style={{ fontSize: '15px', lineHeight: 1.65, color: '#1a2a3a', flex: 1 }}>{kalinIsle(metin)}</span>
           </button>
         ))}
       </div>
@@ -184,17 +229,21 @@ function AdimKarti({
               <div style={{ fontSize: '14px', fontWeight: 700, color: dogruMu ? '#1a6640' : '#a01f1f' }}>
                 {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
               </div>
-              <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
-                {adim.aciklama_kisa}
-              </div>
+              {adim.aciklama_kisa && (
+                <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
+                  {kalinIsle(adim.aciklama_kisa)}
+                </div>
+              )}
             </div>
           </div>
 
           {/* Detay */}
           <div style={{ padding: '.9rem 1.1rem' }}>
-            <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
-              {adim.aciklama_detay}
-            </p>
+            {adim.aciklama_detay && (
+              <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+                {kalinIsle(adim.aciklama_detay)}
+              </p>
+            )}
 
             {/* Seçenek açıklamaları */}
             <div>
@@ -218,7 +267,7 @@ function AdimKarti({
                     }}>
                       {harf}
                     </span>
-                    <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>{metin}</span>
+                    <span style={{ fontSize: '14px', lineHeight: 1.65, color: '#1a2a3a' }}>{kalinIsle(metin)}</span>
                   </div>
                 );
               })}

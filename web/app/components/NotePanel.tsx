@@ -35,6 +35,19 @@ const WIDTH_KEY = "medisea:notew";
 const PAPER_KEY = "medisea:notepaper";
 
 const INKS = ["#1E293B", "#2563EB", "#DC2626", "#16A34A"];
+
+/**
+ * Renklerin ADI — dördünün de `title`ı "Renk"ti ve erişilebilir adları
+ * birbirinden ayrılmıyordu. Ölçüldü: ekran okuyucu dört düğmeyi de "Renk"
+ * diye okuyor, kullanıcı hangisini seçtiğini bilemiyordu. Renk tek başına
+ * bilgi taşıyamaz; adı yazıyla verilmeli.
+ */
+const INK_ADI: Record<string, string> = {
+  "#1E293B": "koyu gri",
+  "#2563EB": "mavi",
+  "#DC2626": "kırmızı",
+  "#16A34A": "yeşil",
+};
 const NIBS = [2, 4, 7];
 
 /** Kâğıt çizgi aralığı (px). Kareli kip aynı aralığı iki eksende kullanır. */
@@ -612,15 +625,23 @@ export default function NotePanel() {
               <button
                 onClick={() => setOpen(false)}
                 className="rounded-full px-2 py-1 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700"
+                /* Adı "✕"di — ölçüldü. `title` ad OLMUYOR: hesaplama sırası
+                   içeriği önce alıyor ve içerik boş değil. */
+                aria-label="Not defterini kapat"
                 title="Kapat"
               >
                 ✕
               </button>
             </header>
 
-            {/* Kaydetme başarısız — kullanıcı notu kaybetmeden kurtarabilsin */}
+            {/* Kaydetme başarısız — kullanıcı notu kaybetmeden kurtarabilsin.
+
+                role="alert": bu kutu kullanıcı YAZDIKTAN SONRA, kaydetme
+                düşünce DOM'a giriyor. Duyurulmazsa ekran okuyucu kullanıcısı
+                notunun kaybolacağını hiç öğrenmiyor — ReadingTools'taki
+                vurgu uyarısında ölçülen kusurun birebir kardeşi. */}
             {kayitHatasi && (
-              <div className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
+              <div role="alert" className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
                 <p className="mb-2 text-[11px] font-semibold leading-snug text-rose-700">
                   Tarayıcı depolaması dolu olduğu için bu not kaydedilemedi. Sekmeyi
                   kapatırsan kaybolur.
@@ -662,6 +683,10 @@ export default function NotePanel() {
                 <button
                   key={m}
                   onClick={() => setMode(m)}
+                  /* Kip seçici: hangisinin ETKİN olduğu yalnızca renkle
+                     anlatılıyordu. `aria-pressed` doğru öznitelik --
+                     `aria-expanded` DEĞİL, çünkü bir şey açıp kapatmıyor. */
+                  aria-pressed={mode === m}
                   className={`flex-1 rounded-lg px-3 py-1.5 text-[11px] font-black uppercase tracking-widest transition-all ${
                     mode === m
                       ? "bg-blue-950 text-white shadow-sm"
@@ -678,6 +703,12 @@ export default function NotePanel() {
                   <button
                     key={w}
                     onClick={() => boyutSec(w)}
+                    /* Adları "S" / "M" / "L" idi; anlam `title`da kalıyordu
+                       ve `title` ad olmuyor (içerik dolu). `aria-pressed`
+                       de eklendi: hangi genişliğin ETKİN olduğu yalnızca
+                       renkle anlatılıyordu. */
+                    aria-label={`Panel genişliği: ${title}`}
+                    aria-pressed={Math.abs(width - w) < 30}
                     title={title}
                     className={`h-7 w-7 rounded-lg text-[10px] font-black transition-colors ${
                       Math.abs(width - w) < 30
@@ -745,6 +776,8 @@ export default function NotePanel() {
                         setInk(c);
                         setErasing(false);
                       }}
+                      aria-label={`Kalem rengi: ${INK_ADI[c] ?? c}`}
+                      aria-pressed={ink === c && !erasing}
                       title="Renk"
                       className={`h-6 w-6 rounded-full ring-2 transition-transform hover:scale-110 ${
                         ink === c && !erasing ? "ring-blue-400" : "ring-transparent"
@@ -760,6 +793,8 @@ export default function NotePanel() {
                         setNib(n);
                         setErasing(false);
                       }}
+                      aria-label={`Uç kalınlığı: ${n}`}
+                      aria-pressed={nib === n && !erasing}
                       title={`Uç ${n}`}
                       className={`flex h-6 w-6 items-center justify-center rounded-lg transition-colors ${
                         nib === n && !erasing ? "bg-slate-900" : "hover:bg-slate-100"
@@ -778,6 +813,8 @@ export default function NotePanel() {
                   <span className="mx-1 h-5 w-px bg-slate-200" />
                   <button
                     onClick={() => setErasing((v) => !v)}
+                    aria-label="Silgi"
+                    aria-pressed={erasing}
                     title="Silgi"
                     className={`h-6 rounded-lg px-2 text-[11px] transition-colors ${
                       erasing ? "bg-rose-500 text-white" : "hover:bg-slate-100"
@@ -788,6 +825,7 @@ export default function NotePanel() {
                   <button
                     onClick={undo}
                     disabled={!strokes.length}
+                    aria-label="Geri al"
                     title="Geri al"
                     className="h-6 rounded-lg px-2 text-[11px] transition-colors hover:bg-slate-100 disabled:opacity-25"
                   >
@@ -796,6 +834,7 @@ export default function NotePanel() {
                   <button
                     onClick={redoOne}
                     disabled={!redo.length}
+                    aria-label="İleri al"
                     title="İleri al"
                     className="h-6 rounded-lg px-2 text-[11px] transition-colors hover:bg-slate-100 disabled:opacity-25"
                   >
@@ -806,6 +845,8 @@ export default function NotePanel() {
                     <button
                       key={k}
                       onClick={() => kagitSec(k)}
+                      aria-label={`${label} sayfa`}
+                      aria-pressed={paper === k}
                       title={`${label} sayfa`}
                       className={`h-6 rounded-lg px-2 text-[11px] transition-colors ${
                         paper === k

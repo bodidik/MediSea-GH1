@@ -19,7 +19,20 @@ const path = require('path');
 
 const KOK = path.join(__dirname, '..');
 const ARAC_DIZIN = path.join(KOK, 'app', 'tools');
-const KAYNAK = path.join(ARAC_DIZIN, 'page.tsx');
+
+/**
+ * KAYNAK `page.tsx` DEĞİL `ToolsIcerik.tsx`.
+ *
+ * `TOOLS_DATABASE` bir dönem `page.tsx` içindeydi. `/tools` sunucu kabuk +
+ * istemci içerik olarak bölününce (statik prerender için) veri
+ * `ToolsIcerik.tsx`'e taşındı, ama bu betik eski yolu okumaya devam etti.
+ *
+ * Sonuç ÖLÇÜLDÜ ve sessizdi: betik hiç araç bulamıyor, "0 araç" deyip
+ * `content/arac-index.json` dosyasının 114 kaydını BOŞ DİZİYLE eziyordu.
+ * Üstelik bu betik belgede "yeni araç eklendiğinde çalıştır" diye yazılı —
+ * yani bakım komutunun kendisi veri siliyordu.
+ */
+const KAYNAK = path.join(ARAC_DIZIN, 'ToolsIcerik.tsx');
 
 /**
  * Başlık uzunluğu sınırı. Şablon " · MediSea" ekliyor; arama sonucunda ~60-65
@@ -135,9 +148,70 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
 `;
 }
 
+/**
+ * `--kontrol`: HİÇBİR ŞEY YAZMADAN indeksin senkron olup olmadığını söyler.
+ *
+ * Neden gerekli: bu betik CI'da çalışmıyor, elle çalıştırılıyor. Biri araç
+ * ekleyip betiği unutursa `content/arac-index.json` bayatlıyor ve kimse
+ * görmüyor. Sonuç sessiz: ana sayfadaki araç sayısı bu indeksten geliyor
+ * (çalışma zamanında `app/tools` okunamıyor, sunucusuz ortamda kaynak
+ * dizin yok), yani yanlış sayı canlıda görünüyor.
+ *
+ * Kontrol kipinin yazmaması bilinçli — CI'da bir betiğin depoyu
+ * değiştirmesi istenmez. Fark varsa çıkış kodu 1.
+ */
+function kontrolEt(sayfasiOlan) {
+  const indexYolu = path.join(KOK, 'content', 'arac-index.json');
+  let mevcut = null;
+  try {
+    mevcut = JSON.parse(fs.readFileSync(indexYolu, 'utf8'));
+  } catch {
+    console.error('HATA: content/arac-index.json okunamadı ya da bozuk.');
+    process.exitCode = 1;
+    return;
+  }
+  const beklenen = sayfasiOlan
+    .map(({ slug, name, desc }) => ({ slug, name, desc }))
+    .sort((a, b) => a.slug.localeCompare(b.slug));
+
+  const m = new Map(mevcut.map((x) => [x.slug, x]));
+  const b = new Map(beklenen.map((x) => [x.slug, x]));
+  const eksik = [...b.keys()].filter((s) => !m.has(s));
+  const fazla = [...m.keys()].filter((s) => !b.has(s));
+  const degisen = [...b.keys()].filter(
+    (s) => m.has(s) && JSON.stringify(m.get(s)) !== JSON.stringify(b.get(s))
+  );
+
+  if (!eksik.length && !fazla.length && !degisen.length) {
+    console.log(`arac-index.json senkron (${beklenen.length} araç).`);
+    return;
+  }
+  console.error('arac-index.json BAYAT — `node scripts/arac-metadata.cjs` çalıştır.');
+  if (eksik.length) console.error(`  indekste yok  : ${eksik.join(', ')}`);
+  if (fazla.length) console.error(`  fazladan var  : ${fazla.join(', ')}`);
+  if (degisen.length) console.error(`  ad/açıklama değişmiş: ${degisen.join(', ')}`);
+  process.exitCode = 1;
+}
+
 function main() {
   const zorla = process.argv.includes('--force');
+  const kontrol = process.argv.includes('--kontrol');
   const araclar = araclariOku();
+
+  if (kontrol) {
+    if (araclar.length === 0) {
+      console.error(
+        `HATA: ayrıştırma 0 araç buldu — ${path.relative(KOK, KAYNAK)} okunamadı ` +
+          `ya da TOOLS_DATABASE biçimi değişti.`
+      );
+      process.exitCode = 1;
+      return;
+    }
+    kontrolEt(
+      araclar.filter((a) => fs.existsSync(path.join(ARAC_DIZIN, a.slug, 'page.tsx')))
+    );
+    return;
+  }
 
   let yazilan = 0;
   let atlanan = 0;
@@ -176,6 +250,29 @@ function main() {
     fs.existsSync(path.join(ARAC_DIZIN, a.slug, 'page.tsx'))
   );
   const indexYolu = path.join(KOK, 'content', 'arac-index.json');
+
+  /**
+   * SIFIR ARAÇTA YAZMA — bu koruma olmadan betik veri siliyordu.
+   *
+   * Ayrıştırma bir varsayıma dayanıyor (kaynak dosyanın yeri ve
+   * `TOOLS_DATABASE` biçimi). Varsayım bozulduğunda betik hata vermiyor,
+   * boş bir liste üretiyor ve onu diske yazıyordu. Ölçüldü: 114 kayıtlık
+   * indeks tek çalıştırmada `[]` oldu.
+   *
+   * Boş sonuç bu depoda ASLA meşru değil: araç sayfaları dosya sisteminde
+   * duruyor, yani sıfır bulmak "araç yok" demek değil "ayrıştırma bozuldu"
+   * demek. Sessizce yazmak yerine yüksek sesle düşüyoruz.
+   */
+  if (sayfasiOlan.length === 0) {
+    console.error(
+      `HATA: ayrıştırma 0 araç buldu — ${path.relative(KOK, KAYNAK)} okunamadı ` +
+        `ya da TOOLS_DATABASE biçimi değişti.\n` +
+        `content/arac-index.json DEĞİŞTİRİLMEDİ (mevcut kayıtlar korundu).`
+    );
+    process.exitCode = 1;
+    return;
+  }
+
   fs.writeFileSync(
     indexYolu,
     JSON.stringify(

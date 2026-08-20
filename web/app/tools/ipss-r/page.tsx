@@ -58,7 +58,7 @@ function Selector({ label, detail, options, value, onChange }: {
       <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{detail}</p>
       <div className="space-y-1.5">
         {options.map((opt, oi) => (
-          <button key={oi} type="button" onClick={() => onChange(opt.pts)}
+          <button aria-pressed={value === opt.pts} key={oi} type="button" onClick={() => onChange(opt.pts)}
             className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
               ${value === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
             <span className={`w-8 h-5 rounded-md flex items-center justify-center text-[9px] font-black shrink-0

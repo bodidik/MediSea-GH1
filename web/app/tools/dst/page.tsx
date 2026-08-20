@@ -76,18 +76,18 @@ export default function DstPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Protokol</p>
           {PROTOCOLS.map((p, i) => (
-            <button key={p.id} type="button" onClick={() => { setProtoIdx(i); setValue(""); setBase(""); }}
+            <button aria-pressed={protoIdx === i} key={p.id} type="button" onClick={() => { setProtoIdx(i); setValue(""); setBase(""); }}
               className={`w-full text-left p-4 rounded-2xl border transition-all
                 ${protoIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
               <div className={`text-sm font-bold ${protoIdx === i ? 'text-white' : 'text-blue-950'}`}>{p.label}</div>
-              <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${protoIdx === i ? 'text-blue-200/70' : 'text-slate-400'}`}>{p.desc}</div>
+              <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${protoIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>{p.desc}</div>
             </button>
           ))}
         </div>
 
         {/* Protokol detayı */}
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
-          <p className="text-[10px] font-black text-blue-900/50 uppercase tracking-widest mb-1">Protokol</p>
+          <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">Protokol</p>
           <p className="text-sm font-bold text-blue-900">{proto.protocol}</p>
         </div>
 
