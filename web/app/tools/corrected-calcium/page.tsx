@@ -21,6 +21,20 @@ export default function CorrectedCalciumPage() {
   // lib içindeki formülü kullanıyoruz
   const result = useMemo(() => correctedCalciumMgdl(caNum, albNum), [caNum, albNum]);
 
+  /**
+   * MAKULLÜK KAPISI — çöp girdiden klinik etiket üretilmemeli.
+   *
+   * `parseLocaleNumber` ayrıştıramadığını 0'a çeviriyor. Ölçüldü (canlı):
+   * alanlar boşaltıldığında ya da harf girildiğinde araç **Ca 0** basıp
+   * altına **"Hipokalsemi"** yazıyordu; negatif değerde Ca 2.2 + aynı
+   * etiket. Ca 0 mg/dL yaşamla bağdaşmaz — sayı da etiket de uydurma.
+   *
+   * Sınırlar klinik eşik değil MAKULLÜK sınırı: bu aralıkların dışındaki
+   * bir değer laboratuvardan gelmiş olamaz.
+   */
+  const makul = caNum >= 1 && caNum <= 25 && albNum >= 0.5 && albNum <= 8;
+
+
   const shareParams = { ca: caNum, alb: albNum };
 
   return (
@@ -65,7 +79,7 @@ export default function CorrectedCalciumPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black">Ca</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HESAPLANAN DÜZELTİLMİŞ DEĞER</span>
-           <div className="text-7xl font-black text-white">{result}</div>
+           <div className="text-7xl font-black text-white">{makul ? result : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mg / dL</span>
         </div>
 
@@ -76,7 +90,7 @@ export default function CorrectedCalciumPage() {
              result < 8.5 ? 'bg-amber-50 text-amber-700' : 
              'bg-emerald-50 text-emerald-700'
            }`}>
-             {result > 10.5 ? "Hiperkalsemi" : result < 8.5 ? "Hipokalsemi" : "Normal Sınırlar"}
+             {!makul ? "Değerleri girin" : result > 10.5 ? "Hiperkalsemi" : result < 8.5 ? "Hipokalsemi" : "Normal Sınırlar"}
            </div>
         </div>
 
