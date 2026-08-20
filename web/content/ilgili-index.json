@@ -495,6 +495,11 @@
    "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
   },
   {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "otiroid-hasta-sendromu-ntis",
    "baslik": "Ötiroid Hasta Sendromu"
@@ -5533,6 +5538,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "respiratuvar-asidoz",
    "baslik": "Respiratuvar Asidoz"
   }
@@ -5559,6 +5569,11 @@
    "brans": "endokrinoloji",
    "slug": "hiperkalsemi-ve-hiperparatiroidi",
    "baslik": "Asit-Baz Denge Bozuklukları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
   }
  ],
  "nefroloji/diuretikler": [
@@ -6200,6 +6215,18 @@
    "baslik": "Yeni Nesil ns-MRA Finerenon"
   }
  ],
+ "nefroloji/respiratuvar-alkaloz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperkalsemi-ve-hiperparatiroidi",
+   "baslik": "Asit-Baz Denge Bozuklukları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  }
+ ],
  "nefroloji/respiratuvar-asidoz": [
   {
    "brans": "nefroloji",
@@ -6215,6 +6242,11 @@
    "brans": "nefroloji",
    "slug": "metabolik-alkaloz",
    "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
   }
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [
