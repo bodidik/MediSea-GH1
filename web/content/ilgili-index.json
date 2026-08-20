@@ -1592,21 +1592,6 @@
    "brans": "endokrinoloji",
    "slug": "sglt2-hasta-gunler-kurali-sick-day",
    "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-tedavisi",
-   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-hipotansiyon",
-   "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetmezligi",
-   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
@@ -2566,6 +2551,11 @@
    "brans": "enfeksiyon",
    "slug": "tigesiklin-uyarilar-yan-etkiler",
    "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
   },
   {
    "brans": "endokrinoloji",
@@ -4930,57 +4920,79 @@
    "baslik": "Kapak Hastalıkları (Aort Darlığı ve Mitral Yetersizlik)"
   }
  ],
+ "kardiyoloji/kalp-yetersizligi-arni-etkilesimler": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-neprilisin-fizyolojisi",
+   "baslik": "Neprilisin İnhibisyonu Fizyolojisi: Moleküler Mekanizmalar, Sistemik Etkiler ve Klinik İlişkiler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-ilac-etkilesimleri",
+   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  }
+ ],
  "kardiyoloji/kalp-yetersizligi-arni-neprilisin-fizyolojisi": [
   {
    "brans": "kardiyoloji",
-   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
-   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "hipertansiyon-ve-aciller",
-   "baslik": "Esansiyel Hipertansiyon"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-tedavisi",
-   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetmezligi",
-   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
   }
  ],
  "kardiyoloji/kalp-yetersizligi-arni-tedavisi": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   },
   {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-hipotansiyon",
    "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kardiyak-amiloidoz",
+   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
   }
  ],
  "kardiyoloji/kalp-yetersizligi-hipotansiyon": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   },
   {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-arni-tedavisi",
    "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kardiyak-amiloidoz",
+   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
   }
  ],
  "kardiyoloji/kalp-yetmezligi": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-statin-miyopatisi-sams",
+   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "pcsk9-inhibitorleri",
+   "baslik": "PCSK9 İnhibisyonu"
   }
  ],
  "kardiyoloji/kapak-hastaliklari": [
