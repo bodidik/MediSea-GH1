@@ -1212,6 +1212,27 @@ canlıda çalışan API ucu var (`daily-program`, `quiz/history`, `quiz/today`)
 ve o uçlar "uydurma veri dönme" düzeltmesinden geçmiş. Silmek mi bağlamak mı
 sorusu ürün kararı — SENDE-KALANLAR 27. madde.
 
+### Süsleme emojisi: 416 öge ölçüldü, TOPLU süpürme yapılmadı
+
+Kural yazılı: bilgi taşımayan glif `aria-hidden="true"` almalı — hem ekran
+okuyucudaki gürültüyü kaldırır hem kontrast kapsamından düşer. Uygulaması
+şimdiye kadar tek tek yapıldı (bölüm başlığındaki `#`, kart okları).
+
+Kapsam ölçüldü: 401 tsx dosyasında metni YALNIZCA emojiden ibaret 431 öge
+var, **416'sında `aria-hidden` yok**. En yoğun yerler kokpit (7), premium
+ölü sayfalar, klinik araçlar.
+
+**Toplu süpürme BİLEREK yapılmadı.** Sebep, bu depoda üç kez ölçülmüş olan
+kestirme riski: "metni emoji olan her öge süslemedir" varsayımı yanlış
+olabilir — emojinin TEK anlam taşıyıcı olduğu yerler (durum rozeti, boş
+durum ikonu) gizlenirse bilgi kaybolur. 416 yerin hepsini tek tek
+doğrulayamadan uygulamak, "aday üretmek" ile "karar vermek" arasındaki
+sınırı geçmek olurdu.
+
+Yapılacaksa ölçütü daralt: yanında ZATEN metin olan glifler güvenli
+adaydır (`<span>🏆</span><span>Puan</span>` gibi), tek başına duranlar
+insan kararı ister.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
