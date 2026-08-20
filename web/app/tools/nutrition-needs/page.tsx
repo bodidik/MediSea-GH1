@@ -118,7 +118,7 @@ export default function NutritionNeedsPage() {
           <ToolShare params={{ w: weightNum, kcal: stressFactor, pro: proteinFactor }} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-80">
             <div className="space-y-2">
-              <h4 className="text-[10px] font-black text-blue-900 uppercase">Klinik İnciler 💡</h4>
+              <h2 className="text-[10px] font-black text-blue-900 uppercase font-sans mt-0">Klinik İnciler 💡</h2>
               <ul className="text-[9px] text-slate-500 font-bold space-y-1 uppercase leading-tight">
                 <li>• Refeeding sendromu riski varsa 10-15 kcal/kg ile başla.</li>
                 <li>• Böbrek yetmezliği (Diyaliz dışı) ise proteini kısıtla (0.6-0.8 g/kg).</li>

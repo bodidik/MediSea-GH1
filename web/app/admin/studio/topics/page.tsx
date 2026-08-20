@@ -240,7 +240,7 @@ export default function AdminTopicsStudioSingle() {
   }
 
   return (
-    <main className="mx-auto max-w-6xl p-6 space-y-4">
+    <div className="mx-auto max-w-6xl p-6 space-y-4">
       <header className="space-y-1">
         <div className="text-sm opacity-70">
           <Link className="underline" href="/admin">
@@ -553,6 +553,6 @@ export default function AdminTopicsStudioSingle() {
           </>
         )}
       </section>
-    </main>
+    </div>
   );
 }

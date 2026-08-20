@@ -401,7 +401,7 @@ async function appendAndSave() {
   }, [item?.slug, item?.section, section]);
 
   return (
-    <main className="mx-auto max-w-7xl p-6 space-y-4">
+    <div className="mx-auto max-w-7xl p-6 space-y-4">
       <header className="flex items-center justify-between gap-3">
         <div className="space-y-1">
           <div className="text-sm opacity-70">
@@ -641,6 +641,6 @@ async function appendAndSave() {
           )}
         </section>
       </div>
-    </main>
+    </div>
   );
 }

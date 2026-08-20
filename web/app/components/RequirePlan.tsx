@@ -23,7 +23,7 @@ export default function RequirePlan({
         </div>
         
         <div>
-          <h4 className="text-sm font-bold text-slate-200 mb-0.5">Özel İçerik</h4>
+          <h3 className="text-sm font-bold text-slate-200 mb-0.5 font-sans mt-0">Özel İçerik</h3>
           <p className="text-xs text-slate-400 font-medium">
             Bu içeriği görüntülemek için daha yüksek bir üyelik planı gerekiyor.
           </p>

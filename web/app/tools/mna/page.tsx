@@ -101,7 +101,7 @@ export default function MNAPage() {
         <div className="space-y-4">
           {QUESTIONS.map((q) => (
             <div key={q.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
-              <h3 className="text-sm font-bold text-blue-950 leading-snug">{q.label}</h3>
+              <h2 className="text-sm font-bold text-blue-950 leading-snug">{q.label}</h2>
               <div className="grid grid-cols-1 gap-2">
                 {q.options.map((opt, i) => (
                   <button aria-pressed={answers[q.id] === opt.val}
