@@ -79,7 +79,11 @@ export type SyncDurum =
   | "bekliyor"      // değişiklik var, gönderim sırada
   | "gonderiliyor"
   | "tamam"
-  | "hata";
+  | "hata"
+  // Sunucudaki yedek tanımadığımız bir şemada. "hata"dan AYRI, çünkü o
+  // "bağlantı gelince tekrar denenecek" diyor; bu durum kendiliğinden
+  // düzelmiyor ve kullanıcının bilmesi gereken şey farklı.
+  | "surum";
 
 let durum: SyncDurum = "kapali";
 const dinleyiciler = new Set<(d: SyncDurum) => void>();
@@ -204,7 +208,13 @@ export async function pull(): Promise<PullResult> {
     const payload = j.payload as Backup;
     if (payload.app !== "medisea" || payload.v !== 1) {
       // Tanımadığımız şema: üzerine yazmaktansa senkronu kapalı tut.
-      return { ok: true, loaded: false, summary: null };
+      //
+      // AMA bunu SÖYLEMEK zorunda: uzlaşma olmadan `doPush` hiçbir şey
+      // göndermiyor, dolayısıyla sessiz kalmak cihazı kalıcı olarak
+      // kaydetmez hâle getirip kullanıcıya bunu hiç duyurmamak demekti.
+      // Fonksiyonun başındaki kuralın ta kendisi.
+      durumaGec("surum");
+      return { ok: false, reason: "surum" };
     }
 
     // Boş cihaz da dolu cihaz da BİRLEŞTİRİR — birleştirme hiçbir şeyi silmez,

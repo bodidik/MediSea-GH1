@@ -24,6 +24,7 @@ const METIN: Record<SyncDurum, { yazi: string; renk: string; nokta: string }> = 
   gonderiliyor: { yazi: "Kaydediliyor…",       renk: "text-slate-500",  nokta: "bg-amber-400" },
   tamam:        { yazi: "Cihazlarına kaydedildi", renk: "text-emerald-700", nokta: "bg-emerald-500" },
   hata:         { yazi: "Kaydedilemedi",       renk: "text-red-700",    nokta: "bg-red-500" },
+  surum:        { yazi: "Sürüm uyuşmuyor",     renk: "text-amber-700",  nokta: "bg-amber-500" },
 };
 
 export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
@@ -91,6 +92,13 @@ export default function SyncDurumu({ genis = false }: { genis?: boolean }) {
       {girisli && durum === "hata" && (
         <span className="text-[11px] text-red-700 font-medium">
           Bağlantı kurulamadı — çalışman bu cihazda duruyor, bağlantı gelince tekrar denenecek.
+        </span>
+      )}
+
+      {girisli && durum === "surum" && (
+        <span className="text-[11px] text-amber-700 font-medium">
+          Bu cihazdaki sürüm sunucudaki kaydı okuyamıyor — çalışman burada güvende
+          ama cihazlar arasında eşitlenmiyor. Uygulamayı güncelle.
         </span>
       )}
 
