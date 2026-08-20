@@ -1,7 +1,7 @@
 {
   "meta": {
     "id": "harrison-22-secme-sorular",
-    "branch": "kaynak-sorulari",
+    "branch": "romatoloji",
     "baslik": "Harrison 22. Baskı — Seçme Sorular",
     "altbaslik": "Harrison's Principles of Internal Medicine, 22nd Edition metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular",
     "rozetler": ["YENİ", "SINAV SPOTU"],
@@ -15,7 +15,7 @@
     "video": false
   },
   "istatistikler": {
-    "soru": 2,
+    "soru": 6,
     "flashcard": 0,
     "inci": 0
   },
