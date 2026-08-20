@@ -83,10 +83,13 @@ bulurlarsa iş düşer.
 
 ## Sayfayı görmek istersen
 
+Sayfa zaten AÇIK: **http://localhost:3200** (ben başlattım, ana alandaki
+3000 numaralı sunucuya dokunmuyor). Elle başlatmak gerekirse:
+
 Ana alanda 3000 portu zaten çalışıyor olabilir; burada başka port kullan:
 
 ```bash
-cd web && npx next dev -p 3100
+cd web && npx next dev -p 3200
 ```
 
 ---
