@@ -1102,6 +1102,33 @@ Doğrulaması: yüzey kapının arkasındaysa tarayıcı yönlendirir; o zaman �
 çıktının tamamında bozuk dizelerden biri kalmış mı. Aynı taramayla
 geliştirici yolunun paketlere sızıp sızmadığına da bakılabilir.
 
+### Canlı davranış taraması — 20 Ağustos 2026, dokuz ölçüt temiz
+
+Kaynak taramasının göremediği şeyler canlıda ölçüldü. Hepsi TEMİZ çıktı;
+yeniden taramaya gerek yok, ilgili kod değişmedikçe:
+
+| ölçüt | sonuç |
+|---|---|
+| ana sayfa + `/topics` iç bağlantıları | 60 bağlantı, kırık yok, konsol temiz |
+| `sitemap.xml` biçimi | 542 adres, boşluk/localhost yok, çift kayıt yok |
+| site haritası adresleri açılıyor mu | eşit aralıklı 80 örnek, hepsi 200 |
+| harita bileşimi | 424 konu + 115 araç + kök + `/tr` + `/uyelik`; hub'daki 114 aracın 114'ü de haritada |
+| sayı tutarlılığı (4 yüzey) | 410 konu · 114 araç · 13 branş her yerde aynı; branş kırılımlarının toplamı da 410 |
+| `/tools` kategori süzgeci — üç yol | adresle geliş 6, rozete tıklama 117→9, süzülmüşken başka rozet →6 |
+| `/tools` varsayılan durum | "Tümü" 117'ye dönüyor; **boş arama kutusunda 117 araç duruyor** (belgedeki gerileme tekrarlamıyor) |
+| Türkçe arama | "gogus" → 9 sonuç, yani "Göğüs" bulunuyor |
+| `/api/user/me` | **503** — uydurma veri yerine dürüst hata, düzeltme canlıda |
+
+`/guidelines` site haritasında YOK ve bu doğru: sayfa dürüst bir boş durum
+("henüz hazır değil" + çıkış bağlantısı). Boş bir sayfayı arama motoruna
+ilan etmek zarar olurdu.
+
+**Ölçüm tuzağı — yuvarlanmış değer kusur kanıtı değil.** `/api/auth/providers`
+gövdesi `Math.round(232/1024)` ile "0 KB" göründü ve bir an "sağlayıcı yok,
+giriş kurulamıyor" sanıldı. Gövde okununca credentials sağlayıcısı oradaydı.
+Bu, belgedeki "ekrana basmak için kırptığın değeri ölçüme geri verme"
+kuralının sayı tarafındaki hâli.
+
 ### Duyarlı gizlenen ögeler dar ölçümde GÖRÜNMEZ
 
 En sinsi kapsam boşluğu bu. `hidden md:block` ve `hidden lg:flex` taşıyan
