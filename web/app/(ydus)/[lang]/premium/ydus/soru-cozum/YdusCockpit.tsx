@@ -70,7 +70,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
 
   return (
     // ANA KAPLAYICI: Mavi Vatan Karanlığı + ZIRH (Mobil Esneklik min-h eklendi)
-    <div className="flex flex-col lg:flex-row min-h-[calc(100vh-50px)] lg:h-[calc(100vh-50px)] gap-2 p-2 bg-slate-950 overflow-hidden text-xs text-slate-100">
+    <div className="koyu-yuzey flex flex-col lg:flex-row min-h-[calc(100vh-50px)] lg:h-[calc(100vh-50px)] gap-2 p-2 bg-slate-950 overflow-hidden text-xs text-slate-100">
       
       {/* --- SOL PANEL (Vaka & Sorular) --- */}
       <div className="flex-[2] flex flex-col gap-2 bg-slate-900 p-3 rounded-lg shadow-2xl border border-blue-900/20 overflow-hidden">
@@ -224,7 +224,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                 : `Hatalı yaklaşım. Doğru cevap ${currentStage.correctAnswer}.`
               : ''}
           </div>
-          <h4 className="text-[9px] font-black uppercase opacity-60 tracking-widest">Karar Analizi</h4>
+          <h4 className="text-[9px] font-black uppercase text-slate-400 tracking-widest">Karar Analizi</h4>
           <div className={`text-base font-black leading-tight mt-0.5 ${!showResult ? 'text-slate-200' : isCorrect ? 'text-green-300' : 'text-red-300'}`}>
             {!showResult ? 'BEKLENİYOR...' : isCorrect ? 'DOĞRU YAKLAŞIM ✓' : 'HATALI YAKLAŞIM ⚠️'}
           </div>

@@ -1427,6 +1427,55 @@ gerçekten ögenin `className`'inde mi, (2) Tailwind kuralı üretmiş mi
 değişkeni çözülüyor mu. Boyanmayı gösteremezsin; raporda da gösterdiğini
 söyleme.
 
+**GEÇİŞLİ (`transition-*`) BİR ÖZELLİĞİN HESAPLANMIŞ DEĞERİ BU ORTAMDA
+GÜVENİLMEZ.** Tarayıcı paneli gizliyken (`document.visibilityState === "hidden"`)
+CSS geçişleri İLERLEMİYOR; hesaplanan değer geçişin BAŞLANGIÇ noktasında takılı
+kalıyor.
+
+Ölçüldü ve az kalsın olmayan bir kusur "düzeltilecekti": soru çözüm kokpitindeki
+"Kararı Onayla" düğmesi `disabled:opacity-30 … transition-all` taşıyor. Şık
+seçildikten sonra `disabled === false`, `matches(':disabled') === false`, satır
+içi stil YOK, stil sayfasında 0.3 veren kural YOK — ama `getComputedStyle`
+hâlâ `0.3` diyordu, yani kontrast 1.71 hesaplanıyordu.
+
+Ayırt eden ölçüm iki adım:
+
+1. **Aynı sınıf listesiyle taze bir öge oluştur ve onu oku.** Kopya `1`
+   veriyorsa fark sınıfta değil, ögenin DURUMUNDADIR.
+2. **Geçişi kapat ve yeniden oku**: `el.style.transition = 'none'`, reflow
+   zorla (`el.offsetHeight`), sonra oku. `1` çıkıyorsa takılı geçiştir,
+   üründe kusur yoktur.
+
+Bu, belgede zaten yazılı olan `document.hasFocus() === false` tuzağının geçiş
+tarafındaki hâli: panelin işletim sistemi odağı yok, üstelik sayfa gizli
+sayıldığı için animasyon/geçiş zamanlayıcıları da çalışmıyor.
+
+### Genel koyulaştırma kuralı KOYU yüzeyde tersini yapıyor — çare `koyu-yuzey`
+
+`globals.css` içindeki `.text-slate-300 { color: rgb(100 116 139) }` kuralı
+AÇIK zemin varsayıyor (gerekçesi orada yazılı). Koyu bir yüzeyde aynı kural
+yazıyı zemine yaklaştırıyor.
+
+Soru çözüm kokpitinde ölçüldü: şık harf rozetleri (`text-slate-500`, 10px)
+neredeyse siyah zeminde **2.60**, "Karar Analizi" başlığı (`opacity-60`) 3.75.
+Belge kokpitin altı kontrast kusurunun düzeltildiğini yazıyor ama o tarama
+opacity'yi göremeyen ölçütle yapılmıştı ve bu ikisi kaçmıştı.
+
+**Sınıf adı üzerinden tahmin etme.** `text-slate-500` yerine `text-slate-300`
+yazmak işe yaramadı: ezme kuralı yüzünden o da `rgb(100 116 139)` olarak
+basıldı ve 4.15'te kaldı (hâlâ eşiğin altı). Ekranda gerçekte hangi rengin
+basıldığını ÖLÇ.
+
+Doğru çare, yüzeyin kendini beyan etmesi: kök ögeye `koyu-yuzey` sınıfı.
+Kokpit ölçütü karşılıyor — ağacında `bg-white`/`slate-50`/`slate-100`
+kullanımı SIFIR (ölçüldü). Sınıf eklendikten sonra özgün tonlar geri
+konabildi ve boş durumdaki 5 kusurun 5'i de kapandı.
+
+Yeni bir koyu premium yüzey eklerken sıra şu: (1) ağaçta açık kart var mı
+diye SAY, (2) yoksa `koyu-yuzey` ver, (3) varsa sınıfı VERME ve renkleri
+öge öge kendin belirle.
+
+
 Ölçüldü: 8 araçta 21 "kusur"un 18'i bu iki sınıftandı.
 
 **Dört genişlikte ölç: 320 · 375 · 768 · 1280.** Her breakpoint farklı bir
