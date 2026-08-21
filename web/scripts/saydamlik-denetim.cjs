@@ -24,6 +24,21 @@
  */
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+
+/**
+ * NEGATIF KONTROL DOSYASI `app/` ALTINA YAZILMAZ.
+ *
+ * Yazildiginda calisan `next dev` onu derlemeye aliyor; betik dosyayi
+ * silince webpack bayat basvuruyla kaliyor ve BUTUN SITE 500 veriyor.
+ * Olculdu: gecici bir tani rotasi acilmaya calisilirken sunucu
+ * 'ENOENT: zz-renk-cifti-negatif-kontrol.tsx' diye dustu ve bir an
+ * hata yonetici bilesenlerinde sanildi.
+ *
+ * Cozum: tohum dosyasi isletim sisteminin gecici dizinine yaziliyor ve
+ * tarama kapsamina yalnizca --negatif kipinde ekleniyor.
+ */
+const NEGATIF_DIZIN = fs.mkdtempSync(path.join(os.tmpdir(), 'medisea-denetim-'));
 
 const KAPI = process.argv.includes('--kapi');
 /**
@@ -86,7 +101,7 @@ if (process.argv.includes('--negatif')) {
      klasörleri eleyen kural) test dosyasını da eliyordu ve negatif kontrol
      "denetim körleşmiş" diyordu. Denetim çalışıyordu; testi kendi süzgecine
      takılmıştı. */
-  const gecici = path.join('app', 'zz-saydamlik-negatif-kontrol.tsx');
+  const gecici = path.join(NEGATIF_DIZIN, 'zz-saydamlik-negatif-kontrol.tsx');
   fs.writeFileSync(
     gecici,
     'export default function X() {\n' +
@@ -94,8 +109,9 @@ if (process.argv.includes('--negatif')) {
       '}\n',
     'utf8',
   );
-  const { bulgu } = tara(KOKLER);
+  const { bulgu } = tara([...KOKLER, NEGATIF_DIZIN]);
   fs.unlinkSync(gecici);
+  fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
   const yakalandi = bulgu.some((b) => b.dosya.includes('zz-saydamlik-negatif-kontrol'));
   console.log(yakalandi ? 'negatif kontrol GEÇTİ — denetim kusuru yakalıyor.' : 'negatif kontrol DÜŞTÜ — denetim körleşmiş!');
   process.exit(yakalandi ? 0 : 1);

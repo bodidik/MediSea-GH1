@@ -35,6 +35,21 @@
  */
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+
+/**
+ * NEGATIF KONTROL DOSYASI `app/` ALTINA YAZILMAZ.
+ *
+ * Yazildiginda calisan `next dev` onu derlemeye aliyor; betik dosyayi
+ * silince webpack bayat basvuruyla kaliyor ve BUTUN SITE 500 veriyor.
+ * Olculdu: gecici bir tani rotasi acilmaya calisilirken sunucu
+ * 'ENOENT: zz-renk-cifti-negatif-kontrol.tsx' diye dustu ve bir an
+ * hata yonetici bilesenlerinde sanildi.
+ *
+ * Cozum: tohum dosyasi isletim sisteminin gecici dizinine yaziliyor ve
+ * tarama kapsamina yalnizca --negatif kipinde ekleniyor.
+ */
+const NEGATIF_DIZIN = fs.mkdtempSync(path.join(os.tmpdir(), 'medisea-denetim-'));
 
 /** Ölçülen değerler: küçük metin eşiği 4.5, büyük metin (>=24px) eşiği 3.0. */
 const BEYAZ_ZEMIN = {
@@ -86,7 +101,7 @@ let negatifDosya = null;
 if (NEGATIF) {
   // Dosya adı `_` ile BAŞLAMAMALI: betiğin kendi `_` süzgeci testi de eler
   // (saydamlik-denetim'de tam olarak bu oldu).
-  negatifDosya = path.join('app', 'zz-renk-cifti-negatif-kontrol.tsx');
+  negatifDosya = path.join(NEGATIF_DIZIN, 'zz-renk-cifti-negatif-kontrol.tsx');
   const satirlar = [
     'export default function X() {',
     '  return <div className="bg-amber-50"><p className="text-[10px] text-amber-500">kasten kusurlu</p></div>;',
@@ -97,7 +112,7 @@ if (NEGATIF) {
 
 const bulgu = [];
 let dosyaSayisi = 0, className = 0;
-for (const kok of KOKLER) {
+for (const kok of (NEGATIF ? [...KOKLER, NEGATIF_DIZIN] : KOKLER)) {
   if (!fs.existsSync(kok)) continue;
   for (const p of dosyalar(kok)) {
     if (p.split(path.sep).some((x) => x.startsWith('_'))) continue;
@@ -138,6 +153,7 @@ for (const kok of KOKLER) {
 
 if (NEGATIF) {
   fs.unlinkSync(negatifDosya);
+  fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
   const yakalandi = bulgu.some((b) => b.dosya.includes('zz-renk-cifti-negatif-kontrol'));
   console.log(yakalandi ? 'negatif kontrol GEÇTİ — denetim kusuru yakalıyor.' : 'negatif kontrol DÜŞTÜ — denetim körleşmiş!');
   process.exit(yakalandi ? 0 : 1);
