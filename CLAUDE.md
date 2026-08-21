@@ -574,6 +574,8 @@ node scripts/renk-cifti-denetim.cjs  # ölçülmüş kara listeden renk çifti (
 node scripts/renk-cifti-denetim.cjs --negatif
 node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
 node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DEĞİL)
+node scripts/esik-etiket-denetim.cjs   # etiket kendi eşiğiyle çelişiyor mu (CI kapısı DEĞİL)
+node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
 `arayuz-denetim` bu üçlüden farklı bir yeri tarıyor: içeriği değil ARAYÜZ
@@ -1363,6 +1365,44 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 Üçüncüsü: geçiş (`aria-pressed`) ile gezinme (`aria-current`) ayrı.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
+
+### Etiket ile eşik AYRI alanlarda durursa çelişir ve çelişki SESSİZDİR
+
+Sınıflama basamağını "eşiğin altındaysa" biçiminde bir sayı dizisiyle yazmak
+kolay ama iki ayrı gerçeklik üretiyor: bir yanda karşılaştırılan SAYI, öte
+yanda kullanıcıya gösterilen ETİKET. İkisi ayrışınca hiçbir kapı görmez —
+kod geçerli, tipler doğru, derleme temiz.
+
+Ölçüldü (`antikoagulan-geri-dondurme`, gönderilmeden önce):
+
+```
+{ esik: 2, uKg: 25, etiket: "INR < 4" }     // eşik 4 olmalıydı
+```
+
+INR 3 olan hasta 25 yerine **35 Ü/kg PCC** alıyordu — %40 fazla, yani
+gereksiz tromboz riski. Ekran da kendisiyle çelişiyordu: girdisi 3 iken
+"INR 4-6" yazıyordu.
+
+**Çare eşiği düzeltmek DEĞİL, eşik dizisini kaldırmak.** Basamak sınırı açık
+koşulla yazılınca (`uygun: (i) => i < 4`) çelişecek ikinci bir gerçeklik
+kalmıyor. Bu aynı zamanda sınır değerini de düzeltti: INR tam 6 eski
+kurguda ">6" bandına düşüyordu.
+
+**Sınır değerlerini ölç: eşiğin altı, tam kendisi, tam üstü.** Kusur ortada
+bir değerle (INR 3 ve 5 aynı dozu veriyordu) göründü; yalnızca tipik bir
+vaka denenseydi görünmezdi.
+
+`esik-etiket-denetim.cjs` bu şeklin geri gelmesini engelliyor. **Ölçütü
+daraltmak zorunda kaldım ve o da ayrı bir ders:** "sınır iddia eden her dize"
+ölçütü 816 etiketin 279'unu işaretledi — SVG yol verisi (`M19 9l-7 7-7-7`),
+HTML parçası, regex karakter sınıfı, Tailwind şablon dizesi, salt gösterim
+amaçlı referans aralıkları. **279 aday gözden geçirilemez; o denetim karar
+değil gürültü üretiyordu.** Ölçüt kusurun gerçek şekline (aynı nesnede sayısal
+eşik + sınır iddia eden etiket) indirilince taranan alan 4'e düştü.
+
+Negatif kontrolüne **pozitif kontrol de gömülü**: tohumda biri bozuk biri
+doğru iki kayıt var; denetim doğru kaydı da işaretlerse ölçüt fazla geniş
+demektir ve kontrol düşer.
 
 ### Bozuk kodlama (mojibake) kaynakta sessizce duruyor
 
