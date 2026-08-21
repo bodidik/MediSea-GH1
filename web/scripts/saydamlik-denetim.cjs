@@ -25,7 +25,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const KOKLER = ['app', 'components'];
+const KAPI = process.argv.includes('--kapi');
+/**
+ * --kapi: KAPSAM yalnızca `app/tools` ve bulgu varsa çıkış 1.
+ *
+ * Neden dar: araç tarafı ölçümle SIFIRA indirildi (her bulgu tarayıcıda tek tek
+ * doğrulandı). Yönetici ve genel alan HENÜZ ÖLÇÜLMEDİ — oraları kapı yapmak,
+ * ölçülmemiş bir iddiayı CI'a yazmak olurdu. Onlar rapor olarak kalıyor.
+ */
+const KOKLER = KAPI ? ['app/tools'] : ['app', 'components'];
 
 /** Metin ögesi işareti: yazı rengi ya da yazı boyutu sınıfı taşıyor. */
 const METIN_ISARETI = /\btext-(?:\[|xs|sm|base|lg|xl|\dxl|slate|blue|white|black|rose|amber|emerald|red|green|orange|sky|indigo|purple|yellow|gray|zinc|neutral|stone)/;
@@ -118,6 +126,7 @@ console.log('');
 console.log('Çare: opacity-* yerine renk alfası kullan (ör. text-white/80).');
 console.log('Renk alfası getComputedStyle(el).color içinde görünür; opacity görünmez.');
 console.log('');
+if (KAPI) { console.log(''); console.log('KAPI KİPİ: app/tools bulgusu var, CI düşüyor.'); process.exit(1); }
 console.log('Bu betik CI KAPISI DEĞİL: saydamlık kimi yerde meşru bir tasarım aracı');
 console.log('(süsleme katmanı, ölçüsü bilerek düşürülmüş ikincil bilgi). Karar insana ait.');
 process.exit(0);

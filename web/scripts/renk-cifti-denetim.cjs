@@ -23,6 +23,15 @@
  *      doğrulanmalı.
  *   3. Zemin gerçekte bir ATA tarafından veriliyor olabilir; className'de
  *      görünen çift her zaman ekrandaki çift değil.
+ *
+ * KAPSAM SINIRI — BİLEREK: ölçüt renk ile zemini AYNI ÖGEDE arıyor. Zemin
+ * bir üst kapsayıcıdan geliyorsa bu tarama görmez; onu ancak tarayıcı ölçümü
+ * bulur. Sınır bilerek dar tutuldu, çünkü ata zincirini kaynaktan tahmin
+ * etmek yanlış pozitif üretiyor (yukarıdaki 3. madde).
+ *
+ * Kapının negatif kontrolü yapılırken bu sınır UNUTULDU: ilk tohum dosyada
+ * rengi ve zemini AYRI satırlara koymuştu, kapı ateşlemedi ve bir an
+ * 'kapı bozuk' sanıldı. Kusur kapıda değil tohumdaydı.
  */
 const fs = require('fs');
 const path = require('path');
@@ -54,7 +63,15 @@ function buyukMetin(ic) {
   return false;
 }
 
-const KOKLER = ['app', 'components'];
+const KAPI = process.argv.includes('--kapi');
+/**
+ * --kapi: KAPSAM yalnızca `app/tools` ve bulgu varsa çıkış 1.
+ *
+ * Neden dar: araç tarafı ölçümle SIFIRA indirildi (her bulgu tarayıcıda tek tek
+ * doğrulandı). Yönetici ve genel alan HENÜZ ÖLÇÜLMEDİ — oraları kapı yapmak,
+ * ölçülmemiş bir iddiayı CI'a yazmak olurdu. Onlar rapor olarak kalıyor.
+ */
+const KOKLER = KAPI ? ['app/tools'] : ['app', 'components'];
 function* dosyalar(kok) {
   for (const g of fs.readdirSync(kok, { withFileTypes: true })) {
     const p = path.join(kok, g.name);
@@ -129,6 +146,10 @@ if (NEGATIF) {
 console.log(`renk çifti taraması — ${dosyaSayisi} tsx, ${className} className satırı`);
 console.log(`ölçülmüş kara listeden eşleşen: ${bulgu.length}`);
 console.log('');
+if (KAPI && !bulgu.length) {
+  console.log('KAPI KİPİ (app/tools): bulgu yok.');
+  process.exit(0);
+}
 const alan = d => d.includes('/admin/') ? 'yönetici' : d.includes('/tools/') ? 'araç' : 'genel';
 const grup = { araç: [], genel: [], yönetici: [] };
 for (const b of bulgu) grup[alan(b.dosya)].push(b);
@@ -143,3 +164,9 @@ console.log('değiştirilmiş olabilir; her aday tarayıcıda doğrulanmalı.');
 
 console.log('');
 console.log('Bu betik CI KAPISI DEĞİL — aday üretir, karar tarayıcı ölçümüyle verilir.');
+
+if (KAPI) {
+  console.log('');
+  console.log('KAPI KİPİ: app/tools bulgusu var, CI düşüyor.');
+  process.exit(1);
+}

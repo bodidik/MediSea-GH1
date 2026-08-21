@@ -120,6 +120,22 @@ jobs:
         - name: İç bileşen denetimi kendini sınıyor mu
           run: node scripts/ic-bilesen-denetim.cjs --negatif
 
+        # Kontrast: ARAÇ tarafı ölçümle sıfıra indirildi (her bulgu tarayıcıda
+        # tek tek doğrulandı), bu adımlar geri gelmesini engelliyor. Kapsam
+        # bilerek `app/tools` — yönetici ve genel alan HENÜZ ÖLÇÜLMEDİ ve
+        # ölçülmemiş bir iddia CI'a yazılmaz; onlar rapor kipinde kalıyor.
+        - name: Saydamlık denetimi (araçlar)
+          run: node scripts/saydamlik-denetim.cjs --kapi
+
+        - name: Saydamlık denetimi kendini sınıyor mu
+          run: node scripts/saydamlik-denetim.cjs --negatif
+
+        - name: Renk çifti denetimi (araçlar)
+          run: node scripts/renk-cifti-denetim.cjs --kapi
+
+        - name: Renk çifti denetimi kendini sınıyor mu
+          run: node scripts/renk-cifti-denetim.cjs --negatif
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}
