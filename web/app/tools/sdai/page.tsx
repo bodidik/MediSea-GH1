@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function SdaiPage() {
   const [tjc, setTjc] = React.useState("");
@@ -26,7 +26,10 @@ export default function SdaiPage() {
    *
    * Doğru ölçüt "değer sıfırdan büyük mü" değil, "alan DOLDURULDU mu".
    */
-  const dolu = (x: string) => x.trim() !== "" && Number.isFinite(parseLocaleNumber(x));
+  /* `Number.isFinite(parseLocaleNumber(x))` ÇÖP GİRDİYİ GEÇİRİYORDU: fonksiyon
+     "abc" için 0 döndürüyor ve 0 sonludur. Ölçüldü — alanlara harf yazmak
+     "0 · REMİSYON" bastırıyordu. Kapı artık ham dizeye bakıyor. */
+  const dolu = (x: string) => sayiGirildiMi(x);
   const hasResult = dolu(tjc) && dolu(sjc) && dolu(pga) && dolu(ega) && dolu(crp);
 
   const getResult = () => {

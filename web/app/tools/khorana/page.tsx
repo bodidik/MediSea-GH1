@@ -123,10 +123,23 @@ export default function KhoranaPage() {
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">KHORANA</span>
             <div className="text-5xl font-black text-white">{makul ? score : "–"}</div>
           </div>
-          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>
-            <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-            <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
+          {/* `makul` bir dönem YALNIZCA yukarıdaki SAYIYI kapılıyordu; risk etiketi
+              koşulsuz basılıyordu. Ölçüldü: alanlara "abc" yazınca skor "–" ama
+              etiket "ORTA RİSK" çıkıyordu. Bir kusuru düzeltirken aynı sayfadaki
+              öteki bloğun da aynı kaynağa bağlandığı doğrulanmalı. */}
+          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${makul ? `${r.border} ${r.bg}` : "border-slate-200 bg-slate-50"}`}>
+            <span className="text-[10px] font-black text-slate-700 uppercase tracking-widest mb-2 block">RİSK</span>
+            {makul ? (
+              <>
+                <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
+                <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
+              </>
+            ) : (
+              <p className="text-sm font-bold text-slate-700" role="status">
+                Trombosit, hemoglobin, lökosit ve VKİ değerlerini girin — eksik ya da
+                geçersiz alan varken risk sınıflaması basılmaz.
+              </p>
+            )}
           </div>
         </div>
 

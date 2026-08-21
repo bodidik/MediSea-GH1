@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const QUESTIONS = [
   { id: "q1", label: "Genel yorgunluk/halsizlik düzeyi", sub: "Son hafta" },
@@ -23,7 +23,11 @@ export default function BasdaiPage() {
   const q4 = n("q4"); const q5 = n("q5"); const q6 = n("q6");
   const answered = [q1,q2,q3,q4,q5,q6].filter(v => v > 0 || vals[["q1","q2","q3","q4","q5","q6"].find((_, i) => [q1,q2,q3,q4,q5,q6][i] === v) ?? ""] === "0").length;
 
-  const allFilled = Object.keys(vals).length === 6;
+  /* Eski kapı yalnızca ANAHTAR sayıyordu: altı alana "abc" yazmak da altı
+     anahtar üretiyor ve kapı açılıyordu. Ölçüldü — çöp girdi
+     "0.0 · DÜŞÜK / İNAKTİF" bastırıyordu. Artık altısının da SAYI
+     olması aranıyor; "0" girilmiş alan meşru sayılıyor. */
+  const allFilled = ["q1", "q2", "q3", "q4", "q5", "q6"].every((id) => sayiGirildiMi(vals[id]));
   const morning = (q5 + q6) / 2;
   const score = allFilled ? (q1 + q2 + q3 + q4 + morning) / 5 : null;
 

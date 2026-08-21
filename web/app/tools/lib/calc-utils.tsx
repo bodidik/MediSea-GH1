@@ -18,6 +18,26 @@ export function parseLocaleNumber(input: string | number | undefined | null): nu
 }
 
 /**
+ * 0b. Alan GERÇEKTEN sayı ile dolduruldu mu?
+ *
+ * `parseLocaleNumber` çözemediği her şeye 0 döndürüyor (sözleşmesi bu ve 42
+ * araç ona dayandığı için DEĞİŞTİRİLMEDİ). Bunun sonucu şu: bir kapı
+ * `Number.isFinite(parseLocaleNumber(x))` yazarsa ÇÖP GİRDİYİ DE GEÇİRİR,
+ * çünkü 0 sonludur. Ölçüldü — cdai, sdai ve dapsa tam olarak bu kapıya
+ * sahipti ve alanlara "abc" yazmak "0 · REMİSYON" bastırıyordu.
+ *
+ * Bu yardımcı HAM DİZEYE bakıyor: boş alan ile "0" girilmiş alan farklıdır
+ * (meşru sıfır), "abc" ise hiç sayı değildir.
+ */
+export function sayiGirildiMi(ham: string | number | undefined | null): boolean {
+  if (typeof ham === "number") return Number.isFinite(ham);
+  if (typeof ham !== "string") return false;
+  const t = ham.replace(",", ".").trim();
+  if (t === "") return false;
+  return /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(t);
+}
+
+/**
  * 1. eGFR (CKD-EPI 2021) Hesaplayıcı - Race-Free Standartı
  */
 export function egfrCkdEpi2021(scr: number, age: number, sex: Sex): number {
