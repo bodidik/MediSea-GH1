@@ -1450,6 +1450,30 @@ Bu, belgede zaten yazılı olan `document.hasFocus() === false` tuzağının ge�
 tarafındaki hâli: panelin işletim sistemi odağı yok, üstelik sayfa gizli
 sayıldığı için animasyon/geçiş zamanlayıcıları da çalışmıyor.
 
+**DURUM DEĞİŞİKLİĞİ ÖLÇERKEN GEÇİŞLERİ ETKİLEŞİMDEN ÖNCE KAPAT.** Tek bir
+ögede `transition:none` yapmak yetmiyor: bir yüzeyde tıklamadan sonra ölçüm
+yapıyorsan, geçişi OLAN ögeler eski değerinde donuyor, geçişi OLMAYANLAR anında
+değişiyor ve ortaya gerçekte hiç oluşmayan KARMA bir durum çıkıyor.
+
+Ölçüldü (`wells-pe`, ölçüt satırı seçildikten sonra): etiketin zemini
+`transition-all` yüzünden slate-50'de donmuş, başlık `transition-colors`
+yüzünden blue-900/80'de donmuş, ama geçişi olmayan alt yazılar anında
+blue-200'e geçmiş. Sonuç: açık zemin üzerinde açık mavi yazı, kontrast 1.36 —
+ve başlık için 1.00, yani "seçilen ölçütün başlığı görünmez oluyor" gibi
+görünen bir bulgu. İkisi de SAHTEYDİ; kaynakta seçili hâl `text-white` veriyor.
+
+Doğru yöntem, etkileşimden ÖNCE bütün ağaçta geçişi kapatmak:
+
+```js
+for (const el of d.querySelectorAll('*')) { el.style.transition = 'none'; el.style.animation = 'none'; }
+d.body.offsetHeight;                       // reflow zorla
+// ... simdi tikla ve olc; yeni oge eklendiyse kapatmayi TEKRARLA
+```
+
+Aynı sayfada aynı ölçüm, geçişler önceden kapatılınca 13 kusurdan 4'e düştü
+ve kalanlar bambaşka bir sınıftı. Geçiş açıkken alınan durum ölçümü
+kullanılamaz.
+
 ### Genel koyulaştırma kuralı KOYU yüzeyde tersini yapıyor — çare `koyu-yuzey`
 
 `globals.css` içindeki `.text-slate-300 { color: rgb(100 116 139) }` kuralı
