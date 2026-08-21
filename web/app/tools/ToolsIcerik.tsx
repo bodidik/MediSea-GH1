@@ -141,6 +141,7 @@ const TOOLS_DATABASE = [
       { slug: "vazoaktif-infuzyon", name: "Vazoaktif İnfüzyon", desc: "Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim, torba karışımı düzenlenebilir" },
       { slug: "sedasyon-infuzyon", name: "Sedasyon & Analjezi İnfüzyonu", desc: "Yedi ilaç — doz tabanı ilaca göre değişir; remifentanil tek dakika tabanlı olan" },
       { slug: "heparin-nomogram", name: "Heparin Nomogramı", desc: "Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor" },
+      { slug: "antikoagulan-geri-dondurme", name: "Antikoagülan Geri Döndürme", desc: "Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan" },
       { slug: "tromboliz-doz", name: "Tromboliz Dozu (rt-PA)", desc: "İnmede kiloya göre + 90 mg tavan, masif emboli de 100 mg sabit — aynı ilaç, farklı rejim" },
       { slug: "status-epileptikus", name: "Status Epileptikus", desc: "Yükleme dozları ve HIZ sınırları — fenitoin 50 mg/dk aşılırsa hipotansiyon ve aritmi" },
       { slug: "dka-infuzyon", name: "DKA Kurulumu", desc: "Diyabetik ketoasidozda sıvı, insülin ve potasyum sıralaması — potasyum düşükse insülini bekletir" },

@@ -40,6 +40,11 @@
   "desc": "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)"
  },
  {
+  "slug": "antikoagulan-geri-dondurme",
+  "name": "Antikoagülan Geri Döndürme",
+  "desc": "Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan"
+ },
+ {
   "slug": "apache2",
   "name": "APACHE II",
   "desc": "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini"
