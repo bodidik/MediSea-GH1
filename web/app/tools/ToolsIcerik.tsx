@@ -434,7 +434,14 @@ export default function ToolsIcerik() {
                 : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
             }`}
           >
-            Tümü <span className="opacity-60">{toplamArac}</span>
+            Tümü{" "}
+            <span
+              className={`px-1.5 rounded-full font-bold tabular-nums ${
+                !seciliKategori ? "bg-white/15" : "bg-blue-900/10"
+              }`}
+            >
+              {toplamArac}
+            </span>
           </Link>
           {TOOLS_DATABASE.map(cat => (
             <Link
@@ -450,7 +457,13 @@ export default function ToolsIcerik() {
             >
               <span aria-hidden="true">{cat.icon}</span>
               {cat.category}
-              <span className="opacity-60">{cat.items.length}</span>
+              <span
+                className={`px-1.5 rounded-full font-bold tabular-nums ${
+                  seciliKategori === cat.slug ? "bg-white/15" : "bg-blue-900/10"
+                }`}
+              >
+                {cat.items.length}
+              </span>
             </Link>
           ))}
         </div>
@@ -513,7 +526,7 @@ export default function ToolsIcerik() {
 
         {/* ALT PANEL */}
         <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 shadow-inner space-y-6 mt-16 text-center">
-          <div className="flex items-start gap-4 justify-center opacity-60 max-w-2xl mx-auto">
+          <div className="flex items-start gap-4 justify-center max-w-2xl mx-auto">
             <span aria-hidden="true" className="text-amber-500 text-xl">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
               MediSea araçları sağlık profesyonelleri için karar destek amaçlıdır. Klinik değerlendirmenin yerini alamaz. Veriler tıbbi sorumluluk içermez.

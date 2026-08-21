@@ -129,7 +129,7 @@ export default function EgfrPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={shareParams} />
           </div>
-          <div className="flex items-start gap-3 opacity-70">
+          <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg">ℹ️</span>
             <p className="text-[9px] text-blue-950 font-bold uppercase tracking-[0.12em] leading-relaxed italic">
               Bu hesaplayıcı, KDIGO tarafından önerilen ve ırk katsayısını dışlayan en güncel CKD-EPI 2021 formülünü kullanır. Klinik kararlarda albüminüri ve hastanın bireysel durumu mutlaka göz önünde bulundurulmalıdır.

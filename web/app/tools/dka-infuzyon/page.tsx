@@ -252,7 +252,11 @@ export default function DkaInfuzyonSayfasi() {
                   </p>
                 ) : null}
 
-                <div className={`mt-3 space-y-2 ${insulinBaslanabilir ? "" : "opacity-60"}`}>
+                <div
+                  className={`mt-3 space-y-2 ${
+                    insulinBaslanabilir ? "" : "border-l-2 border-dashed border-blue-400 pl-3"
+                  }`}
+                >
                   {bolusVer && (
                     <p className="text-[12px] text-blue-100">
                       Bolus: <strong className="text-white text-lg">{bolusU} Ü</strong>
@@ -300,7 +304,7 @@ export default function DkaInfuzyonSayfasi() {
           <div className="flex justify-center border-b border-t border-slate-100 py-4">
             <ToolShare params={{}} />
           </div>
-          <div className="flex items-start gap-3 opacity-70">
+          <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-600 leading-relaxed">
               Hesaplanan değerleri kurumunuzun DKA protokolüyle karşılaştırın.

@@ -273,7 +273,7 @@ export default function APACHE2Page() {
             </div>
           </div>
         ) : (
-          <div className="bg-white border border-slate-200 rounded-[2rem] p-6 text-center opacity-40">
+          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm parametreleri tamamlayın ({physioAnswered + (age !== null ? 1 : 0) + (chronic !== null ? 1 : 0)}/14)</p>
           </div>
         )}

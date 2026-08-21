@@ -126,7 +126,7 @@ export default function NutritionNeedsPage() {
         {/* REÇETE NOTLARI */}
         <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm space-y-6">
           <ToolShare params={{ w: weightNum, kcal: stressFactor, pro: proteinFactor }} />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-80">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <h2 className="text-[10px] font-black text-blue-900 uppercase font-sans mt-0">Klinik İnciler 💡</h2>
               <ul className="text-[9px] text-slate-500 font-bold space-y-1 uppercase leading-tight">

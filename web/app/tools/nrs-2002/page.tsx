@@ -237,7 +237,11 @@ export default function NRS2002Page() {
           <>
             {/* AŞAMA 2 */}
             <div
-              className={`bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6 ${anaTaramaGerekli ? "" : "opacity-60"}`}
+              className={`rounded-[2rem] border p-6 shadow-sm space-y-6 ${
+                anaTaramaGerekli
+                  ? "bg-white border-slate-200"
+                  : "bg-slate-50 border-dashed border-slate-300"
+              }`}
             >
               <div className="border-b pb-2">
                 <h2 className="text-xs font-black text-blue-900 uppercase tracking-widest">

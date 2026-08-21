@@ -124,8 +124,8 @@ export default function GLIMPage() {
         {/* ALT NOTLAR */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-4">
           <ToolShare params={{...phenotype, ...etiology}} />
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
+          <div className="flex items-start gap-3">
+            <span aria-hidden="true" className="text-amber-500 text-lg">⚠️</span>
             <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic text-center">
               GLIM tanısı için en az 1 fenotipik ve en az 1 etiyolojik kriterin varlığı şarttır. Tanı konulduktan sonra şiddet derecesi fenotipik kriterlere göre belirlenir.
             </p>

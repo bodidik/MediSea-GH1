@@ -113,7 +113,7 @@ export default function MNAPage() {
                       : "border-slate-50 bg-slate-50/50 text-slate-500 hover:border-slate-200"
                     }`}
                   >
-                    {opt.txt} <span className="float-right opacity-50">({opt.val} Puan)</span>
+                    {opt.txt} <span className="float-right">({opt.val} Puan)</span>
                   </button>
                 ))}
               </div>

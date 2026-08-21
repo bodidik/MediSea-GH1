@@ -125,7 +125,7 @@ export default function MRSSPage() {
             </div>
           </div>
         ) : (
-          <div className="bg-white border border-slate-200 rounded-[2rem] p-6 text-center opacity-40">
+          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 17 bölgeyi değerlendirin</p>
           </div>
         )}

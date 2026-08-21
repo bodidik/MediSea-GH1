@@ -225,7 +225,7 @@ export default function PotasyumReplasmanSayfasi() {
           <div className="flex justify-center border-b border-t border-slate-100 py-4">
             <ToolShare params={{}} />
           </div>
-          <div className="flex items-start gap-3 opacity-70">
+          <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-600 leading-relaxed">
               Buradaki sınırlar yaygın kabul görmüş değerlerdir; kendi

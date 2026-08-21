@@ -60,6 +60,23 @@ const KAPI = process.argv.includes('--kapi');
  */
 const KOKLER = KAPI ? ['app/tools'] : ['app', 'components'];
 
+/**
+ * KÖRLÜK ÖLÇÜLDÜ VE KAPATILDI — eski ölçüt AYNI SATIRDA `text-*` arıyordu.
+ *
+ * Bu, saydamlığı KAPSAYICIYA konan her kusuru görmüyordu: renk atadan
+ * devralınıyor ve o satırda `text-*` bulunmuyor. Ölçüldü, bedeli büyüktü:
+ *   34 araçta boş durum kartı  -> 1.93 kontrast (taban 7.58)
+ *   /tools kategori sayaçları  -> 2.82 kontrast (taban 7.24)
+ *   /tools ve glim klinik uyarısı -> 3.40
+ * Boş durum kartı üstelik aracı açan HERKESİN ilk gördüğü ekran ve
+ * "ne yapmalısın" yazısını taşıyor. Denetim bunların hiçbirini görmüyordu
+ * ve "metin ögesinde saydamlık yok" diyordu.
+ *
+ * Yeni ölçüt: className içindeki STATİK `opacity-40..80` her yerde aday.
+ * Koşullu olanlar (`${pasif ? "opacity-50" : ""}`) durum kaynaklıdır —
+ * ölçüldü, beşi de gerçekten `disabled` taşıyan alanları soluklaştırıyor.
+ */
+
 /** Metin ögesi işareti: yazı rengi ya da yazı boyutu sınıfı taşıyor. */
 const METIN_ISARETI = /\btext-(?:\[|xs|sm|base|lg|xl|\dxl|slate|blue|white|black|rose|amber|emerald|red|green|orange|sky|indigo|purple|yellow|gray|zinc|neutral|stone)/;
 const SAYDAMLIK = /(?:^|[\s`'"{])opacity-(40|50|60|70|80)\b/;
@@ -94,7 +111,14 @@ function tara(kokler) {
         className++;
         if (!SAYDAMLIK.test(s)) return;
         if (VARYANT.test(s)) return;
-        if (!METIN_ISARETI.test(s)) return;
+        // KOŞULLU saydamlık durum kaynaklı (pasif/devre dışı) -> meşru.
+        // Dikkat: bunlar template literal DEĞİL, JSX ifadesi:
+        //   className={pasif ? "opacity-50" : ""}
+        // İlk denemede `${...}` arandı ve hiçbiri elenmedi. Ölçüt, saydamlık
+        // sınıfının bir üçlü işlecin İÇİNDE geçmesi.
+        if (/\?[^:]*opacity-(?:40|50|60|70|80)/.test(s)) return;
+        // METIN_ISARETI ARTIK ŞART DEĞİL: kapsayıcıya konan saydamlık da
+        // içindeki metni soluklaştırıyor (yukarıdaki körlük notu).
         // Susleme: ogenin icerigi yalnizca emoji/glif ise kontrast konusu degil
         const icerik = (s.match(/>([^<>{}]*)</) || [])[1] || '';
         if (icerik.trim() && !/[a-zA-ZÀ-ɏİığş]/.test(icerik)) return;
