@@ -98,6 +98,19 @@ function AcroResult({ nadir, assay }: { nadir: number; assay: "standard" | "sens
   );
 }
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const Input = ({ label, value, set, placeholder }: { label: string; value: string; set: (v: string) => void; placeholder: string }) => (
+  <label className="flex flex-col gap-2">
+    <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
+    <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={placeholder}
+      className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+  </label>
+);
+
 export default function OgttPage() {
   const [ctx, setCtx]           = React.useState<Ctx>("dm");
   const [fasting, setFasting]   = React.useState("");
@@ -111,13 +124,6 @@ export default function OgttPage() {
   const h2 = parseLocaleNumber(twoH);
   const h3 = parseLocaleNumber(threeH);
 
-  const Input = ({ label, value, set, placeholder }: { label: string; value: string; set: (v: string) => void; placeholder: string }) => (
-    <label className="flex flex-col gap-2">
-      <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-      <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={placeholder}
-        className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

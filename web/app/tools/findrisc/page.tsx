@@ -13,6 +13,31 @@ const BPMED_OPTS  = [["Hipertansiyon ilacı kullanmıyor", 0], ["Hipertansiyon i
 const GLUHI_OPTS  = [["Yüksek kan şekeri saptanmadı", 0], ["Yüksek kan şekeri saptandı", 5]] as const;
 const FAMHX_OPTS  = [["Aile öyküsü yok", 0], ["2. derece akrabada diyabet", 3], ["1. derece akrabada diyabet", 5]] as const;
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
+  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+    <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
+    <div className="grid gap-1.5">
+      {opts.map(([l, v]) => (
+        <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          ${value === v && l === opts.find(o => o[1] === value)?.[0] ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
+          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
+            ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
+            {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
+          </div>
+          <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
+          <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
+          <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
+        </label>
+      ))}
+    </div>
+  </div>
+);
+
 export default function FindriscPage() {
   const [sex, setSex]       = React.useState<"m" | "f">("m");
   const [age, setAge]       = React.useState(0);
@@ -37,25 +62,6 @@ export default function FindriscPage() {
   const waistOpts = sex === "m" ? WAIST_M : WAIST_F;
   const params = { sex, age, bmi, waist, act, veg, bp, glu, fam };
 
-  const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
-    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-      <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
-      <div className="grid gap-1.5">
-        {opts.map(([l, v]) => (
-          <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
-            ${value === v && l === opts.find(o => o[1] === value)?.[0] ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
-            <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
-              ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
-              {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
-            </div>
-            <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
-            <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
-          </label>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

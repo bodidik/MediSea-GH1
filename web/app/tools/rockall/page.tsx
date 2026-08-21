@@ -9,6 +9,31 @@ const COMOR_OPTS    = [["Komorbidite yok", 0], ["KKY, KAH veya herhangi major ko
 const ENDO_OPTS     = [["Lezyon yok / Mallory-Weiss yırtığı", 0], ["Peptik ülser, erozyon veya özofajit", 1], ["Malignite, kanayan damar veya pıhtı", 2]] as const;
 const STIGMATA_OPTS = [["Aktif kanama bulgusu yok / koyu nokta", 0], ["ÜGİS'de kan, adhezan pıhtı veya fışkıran damar", 2]] as const;
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
+  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+    <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
+    <div className="grid gap-1.5">
+      {opts.map(([l, v]) => (
+        <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          ${value === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
+          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
+            ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
+            {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
+          </div>
+          <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
+          <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
+          <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
+        </label>
+      ))}
+    </div>
+  </div>
+);
+
 export default function RockallPage() {
   const [age, setAge]       = React.useState(0);
   const [shock, setShock]   = React.useState(0);
@@ -36,25 +61,6 @@ export default function RockallPage() {
   const rPost = getPostRisk(postEndo);
   const params = { age, shock, comor, endo, stig };
 
-  const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
-    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-      <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
-      <div className="grid gap-1.5">
-        {opts.map(([l, v]) => (
-          <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
-            ${value === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
-            <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
-              ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
-              {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
-            </div>
-            <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
-            <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
-          </label>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

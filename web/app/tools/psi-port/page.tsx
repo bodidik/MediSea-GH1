@@ -45,6 +45,28 @@ const LABS: { key: string; label: string; pts: number }[] = [
 // Adım 1'i belirleyen kriterler (huzurevi hariç — o sadece Adım 2 puanına dahildir)
 const STEP1_GATE_KEYS = ["neoplasm", "liver", "chf", "cvd", "renal", "alteredMental", "rr30", "sbp90", "temp", "pulse125"];
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const Row = ({ label, pts, checked, onChange }: { label: string; pts: number; checked: boolean; onChange: () => void }) => (
+  <label
+    className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
+      ${checked ? "bg-blue-900 border-blue-900 text-white shadow-md" : "bg-slate-50 border-slate-100 hover:border-blue-900/30 text-blue-950"}
+    `}
+  >
+    <span className="text-xs font-bold">{label}</span>
+    <div className="flex items-center gap-3">
+      <span className={`text-[10px] font-black ${checked ? "text-amber-400" : "text-slate-400"}`}>+{pts}</span>
+      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
+      <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all ${checked ? "bg-amber-400 border-amber-400 text-blue-900" : "bg-white border-slate-200 text-transparent"}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+      </div>
+    </div>
+  </label>
+);
+
 export default function PsiPortPage() {
   const [age, setAge] = useState<string>("65");
   const [sex, setSex] = useState<Sex>("male");
@@ -83,22 +105,6 @@ export default function PsiPortPage() {
     ...Object.fromEntries(allCriteria.map((c) => [c.key, sel[c.key] ? 1 : 0])),
   };
 
-  const Row = ({ label, pts, checked, onChange }: { label: string; pts: number; checked: boolean; onChange: () => void }) => (
-    <label
-      className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer
-        ${checked ? "bg-blue-900 border-blue-900 text-white shadow-md" : "bg-slate-50 border-slate-100 hover:border-blue-900/30 text-blue-950"}
-      `}
-    >
-      <span className="text-xs font-bold">{label}</span>
-      <div className="flex items-center gap-3">
-        <span className={`text-[10px] font-black ${checked ? "text-amber-400" : "text-slate-400"}`}>+{pts}</span>
-        <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
-        <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all ${checked ? "bg-amber-400 border-amber-400 text-blue-900" : "bg-white border-slate-200 text-transparent"}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
-        </div>
-      </div>
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

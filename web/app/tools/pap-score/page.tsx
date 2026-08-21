@@ -17,6 +17,49 @@ const KPS_OPTS = [["KPS ≥ 30", 0], ["KPS 10–20", 2.5]] as const;
 const WBC_OPTS = [["Normal (≤8.500/mm³)", 0], ["Yüksek (8.500–11.000)", 0.5], ["Çok Yüksek (> 11.000)", 1.5]] as const;
 const LYM_OPTS = [["Normal (%20–40)", 0], ["Düşük (%12–19.9)", 1], ["Çok Düşük (< %12)", 2.5]] as const;
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
+  <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
+    <div className="flex items-center gap-4">
+      <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
+        ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <div>
+        <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+        <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
+      </div>
+    </div>
+    <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
+    <span className={`text-[10px] font-black shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
+  </label>
+);
+
+const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
+  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+    <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
+    <div className="grid gap-1.5">
+      {opts.map(([l, v]) => (
+        <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          ${value === v ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
+          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
+            ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
+            {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
+          </div>
+          <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
+          <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
+          <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
+        </label>
+      ))}
+    </div>
+  </div>
+);
+
 export default function PapScorePage() {
   const [cps,     setCps]     = React.useState(0);
   const [kps,     setKps]     = React.useState(0);
@@ -36,43 +79,6 @@ export default function PapScorePage() {
   const r = getGroup();
   const params = { cps, kps, an: anorexia?1:"", dy: dyspnea?1:"", wbc, lym };
 
-  const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
-    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-      <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
-      <div className="grid gap-1.5">
-        {opts.map(([l, v]) => (
-          <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
-            ${value === v ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
-            <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
-              ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
-              {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
-            </div>
-            <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-            <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
-            <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
-          </label>
-        ))}
-      </div>
-    </div>
-  );
-
-  const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
-    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
-      ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-      <div className="flex items-center gap-4">
-        <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
-          ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </div>
-        <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
-          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
-        </div>
-      </div>
-      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
-      <span className={`text-[10px] font-black shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

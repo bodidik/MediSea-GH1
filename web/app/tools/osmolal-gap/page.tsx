@@ -9,6 +9,23 @@ const CAUSES = [
   { gap: "> 10", title: "Diğer nedenler", items: ["Mannitol infüzyonu", "Sorbitol", "Ağır hipertrigliseridemi", "Ağır hiperproteinemi (paraproteinemi)"] },
 ];
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const Input = ({ label, value, set, ph, unit, note }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string; note?: string }) => (
+  <label className="flex flex-col gap-1.5">
+    <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
+    <div className="relative">
+      <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
+        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-20" />
+      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
+    </div>
+    {note && <span className="text-[9px] font-bold text-slate-400 pl-1">{note}</span>}
+  </label>
+);
+
 export default function OsmolalGapPage() {
   const [measured, setMeasured] = React.useState("");
   const [na,       setNa]       = React.useState("");
@@ -44,17 +61,6 @@ export default function OsmolalGapPage() {
   const ethyleneGlyc = gap !== null && gap > 0 ? gap * 6.2  : null;  // MW 62
   const isopropanol  = gap !== null && gap > 0 ? gap * 6.0  : null;  // MW 60
 
-  const Input = ({ label, value, set, ph, unit, note }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string; note?: string }) => (
-    <label className="flex flex-col gap-1.5">
-      <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-      <div className="relative">
-        <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-20" />
-        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
-      </div>
-      {note && <span className="text-[9px] font-bold text-slate-400 pl-1">{note}</span>}
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

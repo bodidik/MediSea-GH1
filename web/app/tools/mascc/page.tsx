@@ -5,6 +5,29 @@ import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 const BURDEN_OPTS = [["Semptom yok / hafif semptom", 5], ["Orta düzey semptom", 3], ["Ciddi semptom / eksitus hali", 0]] as const;
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
+  <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
+    <div className="flex items-center gap-4">
+      <div className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0
+        ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <div>
+        <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+        <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
+      </div>
+    </div>
+    <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
+    <span className={`text-[10px] font-black tracking-widest shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
+  </label>
+);
+
 export default function MasccPage() {
   const [burden, setBurden] = React.useState(5);
   const [hypotension, setHypotension] = React.useState(false); // yok → +5
@@ -25,23 +48,6 @@ export default function MasccPage() {
   const lowRisk = score >= 21;
   const params = { b: burden, h: hypotension?1:"", c: copd?1:"", s: solidOrNoFungal?1:"", d: dehydration?1:"", o: outpatient?1:"", a: age60?1:"" };
 
-  const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
-    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
-      ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-      <div className="flex items-center gap-4">
-        <div className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0
-          ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </div>
-        <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
-          <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
-        </div>
-      </div>
-      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
-      <span className={`text-[10px] font-black tracking-widest shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

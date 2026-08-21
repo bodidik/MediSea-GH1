@@ -6,6 +6,29 @@ import ToolTopNav from "@/app/tools/components/ToolTopNav";
 const DUR_OPTS = [["< 10 dakika", 0], ["10–59 dakika", 1], ["≥ 60 dakika", 2]] as const;
 const CLN_OPTS = [["Diğer semptomlar", 0], ["Konuşma bozukluğu (motor güç normal)", 1], ["Tek taraflı motor zayıflık", 2]] as const;
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const CheckRow = ({ label, sub, checked, onChange }: { label: string; sub: string; checked: boolean; onChange: () => void }) => (
+  <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
+    ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
+    <div className="flex items-center gap-4">
+      <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
+        ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <div>
+        <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
+        {sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>}
+      </div>
+    </div>
+    <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
+    <span className={`text-[10px] font-black tracking-widest ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+1</span>
+  </label>
+);
+
 export default function Abcd2Page() {
   const [age, setAge]       = React.useState(false);   // ≥60 → +1
   const [bp, setBp]         = React.useState(false);   // ≥140/90 → +1
@@ -23,23 +46,6 @@ export default function Abcd2Page() {
   const r = getRisk();
   const params = { a: age?1:"", b: bp?1:"", c: cln, d: dur, dm: dm?1:"" };
 
-  const CheckRow = ({ label, sub, checked, onChange }: { label: string; sub: string; checked: boolean; onChange: () => void }) => (
-    <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
-      ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-      <div className="flex items-center gap-4">
-        <div className={`w-6 h-6 rounded-lg border flex items-center justify-center
-          ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </div>
-        <div>
-          <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
-          {sub && <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>}
-        </div>
-      </div>
-      <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
-      <span className={`text-[10px] font-black tracking-widest ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+1</span>
-    </label>
-  );
 
   const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">

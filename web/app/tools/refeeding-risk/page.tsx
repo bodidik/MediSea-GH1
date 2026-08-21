@@ -24,14 +24,54 @@ const SPECIAL = [
   { id: "post_surgery", label: "GİS ameliyatı ve yetersiz nütrisyon" },
 ];
 
+/** Saf yardimci: durum kapatmiyor, hepsini parametre aliyor. */
+const toggle = (set: Set<string>, setter: React.Dispatch<React.SetStateAction<Set<string>>>, id: string) => {
+  setter(prev => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
+};
+
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const CheckGroup = ({ title, items, checked, set }: {
+  title: string; items: { id: string; label: string }[];
+  checked: Set<string>; set: React.Dispatch<React.SetStateAction<Set<string>>>;
+}) => (
+  <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
+    <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{title}</p>
+    <div className="space-y-3">
+      {/* Gerçek <input> ŞART: onay kutusu bir dönem yalnızca <div> ile
+          çiziliyordu, yani kontrol ne odak sırasına giriyor ne de adı
+          oluyordu — fareyle çalıştığı için görünmüyordu. sr-only girdi
+          görünmez ama odaklanılabilir ve Space ile işaretlenir; odak
+          halkasını görünmeyen ögenin kendisi veremediği için sarmalayan
+          etiket veriyor. (Aynı çare 29 araçta 36 kontrol için uygulanmıştı;
+          bu araç o süpürmenin dışında kalmış.) */}
+      {items.map(item => (
+        <label key={item.id} className="flex items-start gap-3 cursor-pointer rounded-lg focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2">
+          <input
+            type="checkbox"
+            className="sr-only"
+            checked={checked.has(item.id)}
+            onChange={() => toggle(checked, set, item.id)}
+          />
+          <div aria-hidden="true"
+            className={`mt-0.5 w-5 h-5 rounded-md border-2 flex items-center justify-center flex-shrink-0 transition-all
+              ${checked.has(item.id) ? 'bg-blue-900 border-blue-900' : 'border-slate-300 bg-white hover:border-blue-900/40'}`}>
+            {checked.has(item.id) && <svg viewBox="0 0 10 8" className="w-3 h-3 fill-white"><path d="M1 4l3 3 5-6"/></svg>}
+          </div>
+          <span className="text-sm font-bold text-blue-900 leading-snug">{item.label}</span>
+        </label>
+      ))}
+    </div>
+  </div>
+);
+
 export default function RefeedingRiskPage() {
   const [high, setHigh]     = React.useState<Set<string>>(new Set());
   const [mod, setMod]       = React.useState<Set<string>>(new Set());
   const [spec, setSpec]     = React.useState<Set<string>>(new Set());
-
-  const toggle = (set: Set<string>, setter: React.Dispatch<React.SetStateAction<Set<string>>>, id: string) => {
-    setter(prev => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
-  };
 
   const highCount = high.size;
   const modCount  = mod.size;
@@ -61,39 +101,6 @@ export default function RefeedingRiskPage() {
   const risk = getRisk();
   const params = { high: highCount, mod: modCount, spec: specCount };
 
-  const CheckGroup = ({ title, items, checked, set }: {
-    title: string; items: { id: string; label: string }[];
-    checked: Set<string>; set: React.Dispatch<React.SetStateAction<Set<string>>>;
-  }) => (
-    <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
-      <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{title}</p>
-      <div className="space-y-3">
-        {/* Gerçek <input> ŞART: onay kutusu bir dönem yalnızca <div> ile
-            çiziliyordu, yani kontrol ne odak sırasına giriyor ne de adı
-            oluyordu — fareyle çalıştığı için görünmüyordu. sr-only girdi
-            görünmez ama odaklanılabilir ve Space ile işaretlenir; odak
-            halkasını görünmeyen ögenin kendisi veremediği için sarmalayan
-            etiket veriyor. (Aynı çare 29 araçta 36 kontrol için uygulanmıştı;
-            bu araç o süpürmenin dışında kalmış.) */}
-        {items.map(item => (
-          <label key={item.id} className="flex items-start gap-3 cursor-pointer rounded-lg focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2">
-            <input
-              type="checkbox"
-              className="sr-only"
-              checked={checked.has(item.id)}
-              onChange={() => toggle(checked, set, item.id)}
-            />
-            <div aria-hidden="true"
-              className={`mt-0.5 w-5 h-5 rounded-md border-2 flex items-center justify-center flex-shrink-0 transition-all
-                ${checked.has(item.id) ? 'bg-blue-900 border-blue-900' : 'border-slate-300 bg-white hover:border-blue-900/40'}`}>
-              {checked.has(item.id) && <svg viewBox="0 0 10 8" className="w-3 h-3 fill-white"><path d="M1 4l3 3 5-6"/></svg>}
-            </div>
-            <span className="text-sm font-bold text-blue-900 leading-snug">{item.label}</span>
-          </label>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

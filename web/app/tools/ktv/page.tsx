@@ -4,6 +4,22 @@ import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const Input = ({ label, value, set, ph, unit }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string }) => (
+  <label className="flex flex-col gap-1.5">
+    <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
+    <div className="relative">
+      <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
+        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-12" />
+      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
+    </div>
+  </label>
+);
+
 export default function KtvPage() {
   const [preBun,  setPreBun]  = React.useState("");
   const [postBun, setPostBun] = React.useState("");
@@ -38,16 +54,6 @@ export default function KtvPage() {
   const eOk   = eKtV  !== null && eKtV  >= 1.0;
   const urrOk = urr   !== null && urr   >= 65;
 
-  const Input = ({ label, value, set, ph, unit }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string }) => (
-    <label className="flex flex-col gap-1.5">
-      <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-      <div className="relative">
-        <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-12" />
-        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
-      </div>
-    </label>
-  );
 
   const ResultCard = ({ label, value, target, unit, ok }: { label: string; value: number | null; target: string; unit: string; ok: boolean | null }) => (
     <div className={`rounded-2xl p-4 text-center border ${
