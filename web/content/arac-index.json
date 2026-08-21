@@ -305,6 +305,11 @@
   "desc": "Göğüs ağrısı risk stratifikasyonu"
  },
  {
+  "slug": "heparin-nomogram",
+  "name": "Heparin Nomogramı",
+  "desc": "Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor"
+ },
+ {
   "slug": "homa-ir",
   "name": "HOMA-IR",
   "desc": "İnsülin direnci indeksi (açlık glukoz × insülin)"
