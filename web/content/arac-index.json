@@ -70,6 +70,11 @@
   "desc": "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır"
  },
  {
+  "slug": "bikarbonat-infuzyon",
+  "name": "Bikarbonat Açığı",
+  "desc": "NaHCO₃ açık hesabı — ampul karşılığı ve izotonik infüzyon hacmi, dağılım katsayısı seçilebilir"
+ },
+ {
   "slug": "bmi",
   "name": "BMI & İdeal Vücut Ağırlığı",
   "desc": "Vücut kitle indeksi + Devine / Hamwi formülleri"
@@ -218,6 +223,11 @@
   "slug": "flipi",
   "name": "FLIPI",
   "desc": "Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF"
+ },
+ {
+  "slug": "fomepizol",
+  "name": "Fomepizol Dozu",
+  "desc": "Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil"
  },
  {
   "slug": "frail",
