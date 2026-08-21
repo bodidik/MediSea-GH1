@@ -580,6 +580,11 @@
   "desc": "Sık kullanılan laboratuvar birim dönüşümleri"
  },
  {
+  "slug": "vazoaktif-infuzyon",
+  "name": "Vazoaktif İnfüzyon",
+  "desc": "Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim, torba karışımı düzenlenebilir"
+ },
+ {
   "slug": "wells-dvt",
   "name": "Wells Skoru (DVT)",
   "desc": "Derin ven trombozu klinik olasılığı"
