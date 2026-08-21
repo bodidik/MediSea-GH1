@@ -17,6 +17,16 @@ export default function NutritionNeedsPage() {
   const [proteinFactor, setProteinFactor] = useState<number>(1.2); // g/kg default
 
   const weightNum = parseLocaleNumber(weight);
+  /**
+   * MAKULLÜK KAPISI. Ölçüldü (canlı): boş, harf ve sıfır girdide araç
+   * **0 kcal / 0.0 g**, negatif girdide **-125 kcal / -6.0 g** basıyordu.
+   * Bu bir beslenme REÇETESİ; eksi kalori ya da sıfır protein hedefi
+   * uydurulmuş bir öneridir.
+   *
+   * Sınır klinik eşik değil makullük sınırı.
+   */
+  const makul = weight.trim() !== "" && weightNum >= 1 && weightNum <= 400;
+
   const energyResult = weightNum * stressFactor;
   const proteinResult = weightNum * proteinFactor;
 
@@ -102,11 +112,11 @@ export default function NutritionNeedsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-blue-950 rounded-[2.5rem] p-8 text-center border-t-4 border-amber-400 shadow-2xl space-y-2">
             <span className="text-[10px] font-black text-blue-300 uppercase tracking-[0.3em]">Günlük Enerji Hedefi</span>
-            <div className="text-5xl font-black text-white italic">{energyResult.toFixed(0)} <span className="text-xl not-italic text-blue-300">kcal</span></div>
+            <div className="text-5xl font-black text-white italic">{makul ? energyResult.toFixed(0) : "–"} <span className="text-xl not-italic text-blue-300">kcal</span></div>
           </div>
           <div className="bg-white rounded-[2.5rem] p-8 text-center border-2 border-blue-900 shadow-xl space-y-2">
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em]">Günlük Protein Hedefi</span>
-            <div className="text-5xl font-black text-blue-900 italic">{proteinResult.toFixed(1)} {/* blue-400 beyaz zeminde 2.54'tü (kalın 20px, eşik 3.0). Birim yazısı
+            <div className="text-5xl font-black text-blue-900 italic">{makul ? proteinResult.toFixed(1) : "–"} {/* blue-400 beyaz zeminde 2.54'tü (kalın 20px, eşik 3.0). Birim yazısı
     sayıdan daha soluk olsun diye açık seçilmiş; bir kademe koyultmak
     o niyeti bozmadan eşiği geçiriyor. */}
 <span className="text-xl not-italic text-blue-600">g</span></div>
