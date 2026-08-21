@@ -18,6 +18,16 @@
  * Renk alfası `color` içinde rgba olarak görünür, yani standart ölçüm onu
  * görür. Aynı görsel etki, ölçülebilir hâli.
  *
+ * YÖNETİCİ ALANI ÖLÇÜLDÜ VE GEÇTİ (kapı yapılmamasının sebebi bu değil,
+ * kapsam ölçümünün eksik olması). Üç yönetim sayfası geçici bir tanı
+ * rotasında render edilip ölçüldü: 26 öge, 14'ü saydamlık taşıyor, 0 kusur.
+ * Sebep basit — orada taban renk DEVRALINIYOR ve neredeyse siyah; 0.7
+ * saydamlıkta bile beyaz üstünde ~6.6 çıkıyor. Araç tarafında kusurlu
+ * olmasının sebebi taban rengin `text-blue-900` olmasıydı.
+ *
+ * Yani bu raporun yönetici satırları KUSUR DEĞİL, aday. Yeniden kovalamadan
+ * önce bunu oku.
+ *
  * KAPSAM BİLEREK DAR: yalnızca METİN ögeleri. Süsleme katmanları, degrade
  * bulanıklıkları ve durum varyantları (hover:/focus:/disabled:/group-*)
  * elenir — onlarda saydamlık meşru bir araç.

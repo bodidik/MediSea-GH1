@@ -967,6 +967,51 @@ yazıldı, yani 117 hub bağlantısı arama motorundan da kayboldu.
 Ölçüt: bir yüzeye dokunduysan onu **girdisiz** de aç. Arama kutusu boş,
 süzgeç seçilmemiş, liste henüz filtrelenmemiş hâlde ne görünüyor?
 
+### Ölçüm aracının `app/` altına dosya yazması dev sunucusunu ÖLDÜRÜR
+
+Denetim betiklerinin `--negatif` kipi tohum dosyasını bir dönem `app/` altına
+yazıp siliyordu. Çalışan `next dev` o dosyayı derlemeye alıyor; silinince
+postcss'in bağımlılık listesi bayat kalıyor ve **sitenin tamamı 500 veriyor**
+(ana sayfa dahil, tek bir rota değil).
+
+Kusur şöyle göründü: geçici bir tanı rotası 500 döndü ve ilk yorum "render
+edilen bileşen bozuk" oldu. Hata metni okununca sebep başkaydı —
+`Module build failed (postcss-loader) ENOENT: app/zz-…tsx`. **Hata mesajını
+okumadan bileşeni suçlama.**
+
+Çare: tohum dosyası `fs.mkdtempSync(os.tmpdir())` ile geçici dizine yazılır ve
+tarama kapsamına yalnızca `--negatif` kipinde eklenir. Kapsam eklemesi
+unutulursa denetim sessizce "körleşmiş" der — o yüzden taşıdıktan sonra
+negatif kontrolü yeniden çalıştır.
+
+**Bozulan sunucuyu kurtarmanın çalışan tek yolu `globals.css`in İÇERİĞİNİ
+değiştirmek.** Denenip işe yaramayanlar: `tailwind.config.js`/`postcss.config.js`
+zaman damgası, `.next/cache` silme, dosyayı geri koyma (hata modül derleme
+önbelleğinde donmuş oluyor). Düşen modül CSS olduğu için onun içeriği
+değişince sıfırdan derleniyor; tetikleyici sonra geri alınır.
+
+### Kapı arkasındaki sayfayı ölçmenin ikinci basamağı: `fetch` koşumu
+
+Geçici dev rotası tek başına yetmeyebilir. Yönetim sayfaları `/admin/:path*`
+middleware eşlemesiyle kapalı — rota `/admin` dışına konunca kapı aşılıyor,
+ama sayfa bu kez VERİ bekliyor ve ölçülmek istenen dal hiç çizilmiyor
+(`/api/topics/search` 503, `/api/topics` 405).
+
+Çözüm, bileşen kurulmadan ÖNCE `window.fetch`i sarmalayan küçük bir istemci
+koşumu: yalnızca ilgili uçlara kanıtlanmış biçimde veri döndürür, ötekileri
+gerçek `fetch`e devreder ve `useEffect` dönüşünde eski hâline bırakır.
+Bileşenin kendisine, stillerine ve render mantığına DOKUNULMAZ — ölçülen şey
+gerçek arayüz.
+
+Bununla ölçüldü: üç yönetim sayfası, 26 öge, 14'ü saydamlık taşıyor, **0
+kontrast kusuru**. Saydamlık denetiminin yönetici satırları kusur değil aday;
+orada taban renk devralınıyor ve neredeyse siyah, 0.7 saydamlıkta bile beyaz
+üstünde ~6.6 çıkıyor. Araç tarafında kusurlu olmasının sebebi taban rengin
+`text-blue-900` olmasıydı.
+
+Koşumla ölçerken negatif kontrolü AYNI SAYFAYA koy: kasten kusurlu bir öge
+eklenip yakalandığı görülmeli (ölçüldü, 3.46 yakalandı).
+
 ### Bu ortamda sayfaya `<style>` enjekte etmek İŞE YARAMIYOR
 
 Bir CSS kuralının uygulanıp uygulanmadığını sınamak için
