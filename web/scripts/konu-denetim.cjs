@@ -141,7 +141,19 @@ bas('AYNI başlığı taşıyan konular', ciftBaslik,
 bas('AYNI açıklamayı taşıyan konular', ciftAciklama,
   ([v, l]) => `"${v.slice(0, 50)}…"\n      ${l.map((k) => k.yol).join('\n      ')}`);
 
-bas('etiket dengesi bozuk bölüm (bugün görünür bedeli yok)', dengesiz,
+/**
+ * Bu satır bir dönem "bugün görünür bedeli yok" diyordu. YANLIŞTI ve ölçümle
+ * çürütüldü: ektopik-acth-sendromu.json'da kapanmamış etiketler yüzünden tek
+ * bir <strong> 1740 karakteri sarıyor, bir <h3> 1287 karakterlik gövdeyi
+ * başlık olarak bastırıyordu. Betik ekranı GÖRMÜYOR, yalnızca yığını sayıyor;
+ * görünür bedeli olup olmadığını iddia edemez.
+ *
+ * Ölçme yolu: sayfayı aç, [data-readable] içindeki strong/em/h* ögelerinden
+ * textContent uzunluğu birkaç yüz karakteri aşan var mı diye bak. Sağlam bir
+ * sayfada en uzun satır içi etiket onlarca karakterdir (bu dosyada onarımdan
+ * sonra 1740 -> 76 oldu).
+ */
+bas('etiket dengesi bozuk bölüm (görünür bedeli AYRICA ölçülmeli)', dengesiz,
   (d) => `${d.yol}\n      ${d.sorun}`);
 
 const toplam = basliksiz.length + bosGovde.length + ciftBaslik.length + ciftAciklama.length + dengesiz.length;
