@@ -110,6 +110,16 @@ jobs:
         - name: Arayüz denetimi kendini sınıyor mu
           run: node scripts/arayuz-denetim.cjs --negatif
 
+        # Render'ın İÇİNDE tanımlanan bileşen her render'da yeni kimlik alır;
+        # React kontrolü söküp yeniden takar ve ODAK KAYBOLUR. Kullanıcı bunu
+        # iki kez bildirdi ("170 yazmak için kutuya üç kez tıklamak gerekiyor").
+        # 19 araçta elle düzeltildi — bu adım geri gelmesini engelliyor.
+        - name: İç bileşen denetimi
+          run: node scripts/ic-bilesen-denetim.cjs
+
+        - name: İç bileşen denetimi kendini sınıyor mu
+          run: node scripts/ic-bilesen-denetim.cjs --negatif
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}

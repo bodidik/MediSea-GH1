@@ -566,6 +566,8 @@ node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönle
 node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
 node scripts/arayuz-denetim.cjs   # arayüz kaynağı: bozuk kodlama, alt, rel, form, iç içe tıklama
 node scripts/arayuz-denetim.cjs --negatif   # denetim hâlâ kusur yakalıyor mu
+node scripts/ic-bilesen-denetim.cjs  # render İÇİNDE tanımlı etkileşimli bileşen (CI KAPISI)
+node scripts/ic-bilesen-denetim.cjs --negatif
 node scripts/saydamlik-denetim.cjs   # metin ögesinde opacity-* (CI kapısı DEĞİL)
 node scripts/saydamlik-denetim.cjs --negatif
 node scripts/renk-cifti-denetim.cjs  # ölçülmüş kara listeden renk çifti (CI kapısı DEĞİL)
@@ -1121,6 +1123,25 @@ Doğrulaması **önce/sonra çifti** olmalı: `osmolal-gap` aynı ölçümle
 düzeltmeden önce `contains: false`, sonra `true` verdi. Aynı araç, aynı
 yöntem, aynı oturum — tarama "0 aday" dediğinde bu çift olmadan "0 kusur" ile
 "0 öge" ayırt edilemez.
+
+**BU SINIFIN ARTIK CI KAPISI VAR: `ic-bilesen-denetim.cjs`.** Elle 19 araçta
+düzeltmek yetmedi — yeni yazılan bir araçta (status-epileptikus) aynı kusur
+tekrar üretildi, üstelik sınıfı süpüren kişi tarafından. Denetim `app` ve
+`components` altındaki bütün tsx'leri tarıyor, dört kontrolü birden arıyor
+(`<input>`, `<select>`, `<textarea>`, `<button>`) ve bulursa CI düşüyor.
+
+Ölçütün geçmişteki kusuru dosyanın içine yazıldı: ilk süpürme yalnızca
+`<input>` arıyordu ve `<select>`/`<button>` taşıyan beş bileşen KENDİ ölçütü
+tarafından elendi.
+
+Denetim GEÇMİŞTEKİ GERÇEK KUSURLARLA sınandı — negatif kontrolün en güçlü
+biçimi bu: düzeltme öncesi sürümler git'ten alınıp `app/` altına konuldu ve
+üçü de yakalandı (`osmolal-gap` Input, `berlin-ards` BoolBtn, `abg` Input).
+Dosyalar silinince tarama sıfıra döndü.
+
+Bir tuzak: `abg` ilk denemede yakalanmadı, çünkü seçtiğim commit onun ZATEN
+düzeltilmiş hâliydi. Tarihsel bir sürümle sınama yaparken commit'in gerçekten
+düzeltmeden ÖNCE olduğunu doğrula.
 
 ### Saf mantığı modüle ayır — tarayıcısız sürülebilir hâle gelir
 
