@@ -6,13 +6,13 @@ import type { ReactNode } from "react";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Asit-Baz Analizi (ABG) — Primer bozukluk · kompansasyon",
-  description: "Asit-Baz Analizi (ABG): Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant. Ücretsiz klinik hesaplayıcı — MediSea.",
+  title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",
+  description: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı · delta-delta. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/abg" },
   openGraph: {
     type: "website",
-    title: "Asit-Baz Analizi (ABG) — Primer bozukluk · kompansasyon",
-    description: "Asit-Baz Analizi (ABG): Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant. Ücretsiz klinik hesaplayıcı — MediSea.",
+    title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",
+    description: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı · delta-delta. Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/abg",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Asit-Baz Analizi (ABG)",
-          aciklama: "Asit-Baz Analizi (ABG): Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı · delta-delta. Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/abg",
         })}
       />

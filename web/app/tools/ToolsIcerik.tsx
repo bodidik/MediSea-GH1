@@ -32,7 +32,7 @@ const TOOLS_DATABASE = [
       { slug: "egfr", name: "eGFR (CKD-EPI 2021)", desc: "Race-free böbrek fonksiyon analizi" },
       { slug: "kdigo-aki", name: "KDIGO AKI Evrelemesi", desc: "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)" },
       { slug: "sodium", name: "Sodyum Yönetimi", desc: "TBW · Hiponatremi · Hipernatremi düzeltme hızı ve hacim hesabı" },
-      { slug: "abg", name: "Asit-Baz Analizi (ABG)", desc: "Primer bozukluk · kompansasyon formülleri · AG · delta-delta · A-a gradyant" },
+      { slug: "abg", name: "Asit-Baz Analizi (ABG)", desc: "Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı · delta-delta" },
       { slug: "ktv", name: "Kt/V — Daugirdas II", desc: "Hemodiyaliz yeterliliği · spKt/V · eKt/V · URR" },
       { slug: "osmolal-gap", name: "Serum Osmolal Gap", desc: "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri" },
       { slug: "spot-urine", name: "Spot İdrar Hesaplamaları", desc: "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap" },
