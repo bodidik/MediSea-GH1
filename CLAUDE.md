@@ -1052,6 +1052,80 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Sunum bileşenini render'ın İÇİNDE tanımlamak odağı ÖLDÜRÜR
+
+Sayfa bileşeninin içinde tanımlanan bir bileşen (`const Input = (…) => …`)
+her render'da **yeni bir bileşen kimliği** alır. React eskisini söküp yenisini
+takar; `<input>` DOM'dan çıktığı için odak `<body>`ye düşer ve kullanıcı **her
+tuş vuruşundan sonra** kutuya yeniden tıklamak zorunda kalır.
+
+Kullanıcı bunu iki kez bildirdi ("170 yazmak için kutuya üç kez tıklamak
+gerekiyor"). Fareyle kullanan biri fark etmiyor, çünkü zaten tıklıyor.
+
+Ölçmenin doğru sinyali odak DEĞİL, **ögenin DOM'da kalıp kalmadığı**:
+
+```js
+el.focus(); setter.call(el, "1");
+el.dispatchEvent(new Event("input", { bubbles: true }));
+// bozuk: document.body.contains(el) === false, activeElement === BODY
+```
+
+`document.hasFocus()` bu ortamda false döndüğü için odak tabanlı ölçüm tek
+başına güvenilmez; `contains` her koşulda çalışır.
+
+Süpürme 13 araçta 15 bileşen buldu (`abg`, `osmolal-gap`, `ktv`, `ranson`…).
+Çare bileşeni **modül düzeyine** taşımak.
+
+**Kapanış tespiti için ayrı tarayıcı YAZMA — `tsc` bedava ve kesin.** Taşınan
+bileşen dış kapsamdaki bir değişkene bakıyorsa tip denetimi "Cannot find name"
+ile düşer. 13 taşımanın 12'si temiz geçti, `refeeding-risk` düştü ve gerçekten
+`toggle`a kapanıyordu. Kapanış tarayıcısı yazmaya kalkıldığında iki tur
+yanlış sonuç verdi (bir kez parametre listesinin sonunda durup "hiçbir şey
+yok" dedi, bir kez tip anotasyonundaki `=>` işaretine takıldı) — üstelik ilk
+raporu "hepsi güvenli" idi ve yanlıştı.
+
+Doğrulaması **önce/sonra çifti** olmalı: `osmolal-gap` aynı ölçümle
+düzeltmeden önce `contains: false`, sonra `true` verdi. Aynı araç, aynı
+yöntem, aynı oturum — tarama "0 aday" dediğinde bu çift olmadan "0 kusur" ile
+"0 öge" ayırt edilemez.
+
+### Saf mantığı modüle ayır — tarayıcısız sürülebilir hâle gelir
+
+`node --experimental-strip-types` bu depoda çalışıyor (Node 22). Bir hesap
+mantığı sayfanın içinde durduğu sürece yalnızca tarayıcıda sınanabiliyor;
+ayrı bir `.ts` modülüne alındığında onlarca vaka saniyeler içinde sürülüyor.
+
+Asit-baz motorunda ölçüldü: mantık sayfanın içindeyken **üç kusur** uzun süre
+görülmedi (pH normalken mikst bozukluğu gizlemek, yüksek anyon açığını yok
+saymak, delta oranı eksi çıkınca ters sonuç vermek). Modüle alınıp 15 vakalık
+tablo yazılınca üçü de ilk turda göründü.
+
+İki nokta:
+
+- **Modül saf olmalı** — `import` etmediği sürece Next/React kurulumuna
+  ihtiyaç duymaz. Tip anotasyonu ve `as const` silinebilir, `enum` ve
+  `namespace` DEĞİL.
+- **Beklenti tutmadığında önce beklentiyi sına.** Bir vaka düştüğünde
+  motorun haklı olduğu çıktı: Winter 21–25 diyorken PaCO₂ 26 gerçekten
+  aralık dışıydı. Kusur kodda değil, benim seçtiğim sayılardaydı — ama
+  o düşüş gerçek bir tasarım sorusunu açtı (1 birimlik sapmayı kesin bir
+  ikinci tanı gibi sunmak) ve "sınırda" ayrımı oradan doğdu.
+
+### Ekranda duran ama hiçbir şeyi değiştirmeyen denetim
+
+Asit-baz motorunun ilk yazımında pH-normal dalı, kullanıcının akut/kronik
+seçimini **yok sayıp** "kronik" varsayıyordu. Düğme görünüyor, basılıyor,
+hiçbir sayı değişmiyordu.
+
+Bu, "ilan mı gerçek mi" sınıfının denetim tarafındaki hâli: bir kontrolü
+ekrana koymak, onu bağladığın anlamına gelmiyor. Ölçütü şöyle kur — **kontrolü
+değiştir ve çıktının GERÇEKTEN değiştiğini gör.** Aynı sayılarla (7.36 · 60 ·
+33) "kronik" tam kompanze basit bozukluk, "akut" mikst bozukluk veriyor;
+testte bu iki satır yan yana duruyor.
+
+Bir seçim çıktıyı belirliyorsa bunu ekranda da söyle: hangi seçimin sonucu
+değiştirdiğini bilmeyen kullanıcı, varsayılanla gelen cevabı kesin sanır.
+
 ### Seçim durumunu PUANLA saklama — aynı puanlı şıklar tek düğme olur
 
 Hesaplayıcıların ortak kalıbı: `useState<number|null>` ve
