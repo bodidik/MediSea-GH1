@@ -535,6 +535,11 @@
   "desc": "Basitleştirilmiş Hastalık Aktivite İndeksi — RA + CRP"
  },
  {
+  "slug": "sedasyon-infuzyon",
+  "name": "Sedasyon & Analjezi İnfüzyonu",
+  "desc": "Yedi ilaç — doz tabanı ilaca göre değişir; remifentanil tek dakika tabanlı olan"
+ },
+ {
   "slug": "sga",
   "name": "SGA",
   "desc": "Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi"
