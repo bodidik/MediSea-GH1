@@ -68,13 +68,13 @@
     },
     {
       "id": "harrison-22",
-      "baslik": "Harrison İç Hastalıkları — 22. Baskı",
-      "aciklama": "Harrison's Principles of Internal Medicine, 22nd Edition kaynaklı seçme sorular",
+      "baslik": "Ders Kitaplarından Hazırlanmış Sorular",
+      "aciklama": "Uluslararası referans ders kitaplarından doğrudan kaynaklanan, board tipi seçme sorular",
       "emoji": "📖",
       "konular": [
         {
           "id": "harrison-22-secme-sorular",
-          "baslik": "Harrison 22. Baskı — Seçme Sorular",
+          "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Set 1",
           "rozetler": [
             "YENİ",
             "SINAV SPOTU"
