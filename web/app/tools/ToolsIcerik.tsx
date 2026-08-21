@@ -97,7 +97,6 @@ const TOOLS_DATABASE = [
     slug: "kardiyoloji",
     icon: "❤️",
     items: [
-      { slug: "heart-score", name: "HEART Skoru", desc: "Göğüs ağrısı risk stratifikasyonu" },
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
@@ -131,7 +130,7 @@ const TOOLS_DATABASE = [
       { slug: "bikarbonat-infuzyon", name: "Bikarbonat Açığı", desc: "NaHCO₃ açık hesabı — ampul karşılığı ve izotonik infüzyon hacmi, dağılım katsayısı seçilebilir" },
       { slug: "fomepizol", name: "Fomepizol Dozu", desc: "Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil" },
       { slug: "nac-infuzyon", name: "NAC İnfüzyonu", desc: "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat" },
-      { slug: "heart", name: "HEART Skoru", desc: "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T)" },
+      { slug: "heart", name: "HEART Skoru", desc: "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz" },
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
       { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
       { slug: "rts", name: "RTS", desc: "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım" },

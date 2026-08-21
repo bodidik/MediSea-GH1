@@ -53,6 +53,14 @@ module.exports = {
       { source: '/topics/hematoloji/hodgkin-lenfoma', destination: '/topics/hematoloji/hodgkin', permanent: true },
       { source: '/topics/hematoloji/nhl', destination: '/topics/hematoloji/nhl-genel', permanent: true },
       { source: '/topics/hematoloji/burkitt-lenfoma', destination: '/topics/hematoloji/burkitt', permanent: true },
+      // AYNI SKOR İKİ AYRI ARAÇ OLARAK DURUYORDU: /tools/heart-score (Kardiyoloji)
+      // ve /tools/heart (Acil), ikisinin de adı "HEART Skoru". Ayrı uygulama
+      // oldukları için AYNI hastada farklı davranıyorlardı — ölçüldü:
+      // heart-score hiç dokunulmamış formda "0 · Düşük Risk (<2% MACE)" yani
+      // bir TABURCU kararı basıyordu; heart ise kapılı (null varsayılan,
+      // beş kriter de yanıtlanmadan sonuç yok, "0/5 kriter" göstergesi var).
+      // Kapılı olan tutuldu, öteki buraya yönlendirildi: adres kırılmıyor.
+      { source: '/tools/heart-score', destination: '/tools/heart', permanent: true },
       //    DİKKAT 1: olumsuz ileri-bakış `(?!tr/)` biçiminde olmak zorunda.
       //    İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM yolun
       //    sonuna baktığı için koşul her zaman sağlanıyordu: /tr kendine

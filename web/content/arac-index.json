@@ -302,12 +302,7 @@
  {
   "slug": "heart",
   "name": "HEART Skoru",
-  "desc": "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T)"
- },
- {
-  "slug": "heart-score",
-  "name": "HEART Skoru",
-  "desc": "Göğüs ağrısı risk stratifikasyonu"
+  "desc": "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz"
  },
  {
   "slug": "heparin-nomogram",

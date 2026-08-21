@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",
-  description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T). Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/heart" },
   openGraph: {
     type: "website",
     title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",
-    description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T). Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/heart",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "HEART Skoru",
-          aciklama: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriter (H-E-A-R-T). Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/heart",
         })}
       />
