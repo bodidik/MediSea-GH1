@@ -46,7 +46,7 @@ export default function ReviewError({
           Tarayıcıdaki tekrar verileri bozulmuş olabilir. Yedek aldıysan endişelenme
           — temizleyip geri yükleyebilirsin.
         </p>
-        <p className="mx-auto mb-6 max-w-md rounded-lg bg-rose-50 px-3 py-2 font-mono text-[11px] text-rose-600">
+        <p className="mx-auto mb-6 max-w-md rounded-lg bg-rose-50 px-3 py-2 font-mono text-[11px] text-rose-700">
           {error.message}
         </p>
         <div className="flex flex-wrap justify-center gap-2">
