@@ -102,9 +102,9 @@ export default function RASSPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={{ rass: selected ?? 0 }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               RASS, PAD kılavuzu (2013) tarafından önerilen standart ajitasyon–sedasyon skalasıdır. CAM-ICU ile kombine kullanım deliryum takibini optimize eder. Sessler et al., AJRCCM 2002.
             </p>
           </div>

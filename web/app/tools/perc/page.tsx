@@ -115,7 +115,7 @@ export default function PERCPage() {
         <div className={`rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 transition-all duration-500 relative overflow-hidden text-center
           ${allNegative ? 'bg-blue-900 border-amber-400' : 'bg-white border-rose-500 border-2'}
         `}>
-           <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">
+           <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">
              {allNegative ? 'OK' : '!'}
            </div>
            
@@ -145,9 +145,9 @@ export default function PERCPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               PERC kuralı yalnızca Pulmoner Emboli olasılığı klinisyen tarafından "Düşük" (&lt; %15) olarak değerlendirilen hastalarda geçerlidir. Yüksek riskli hastalarda kriterlere bakılmaksızın tetkik planlanmalıdır.
             </p>
           </div>

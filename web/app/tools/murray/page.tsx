@@ -164,9 +164,9 @@ export default function MurrayPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={sel as Record<string, number>} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Murray skoru = (Xray + PaO2/FiO2 + PEEP + Kompliyan) / kullanılan parametre sayısı. Ventilatöre bağlı olmayan hastalarda PEEP ve kompliyan hesaplanamaz. Murray et al., Am Rev Respir Dis 1988.
             </p>
           </div>

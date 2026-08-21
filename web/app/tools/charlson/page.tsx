@@ -137,7 +137,7 @@ export default function CharlsonPage() {
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1 block">RİSK</span>
             <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-            <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>Tahmini 10 yıllık sağkalım ≈ %{mortality10yr}</p>
+            <p className={`text-sm font-bold mt-1 ${r.color}`}>Tahmini 10 yıllık sağkalım ≈ %{mortality10yr}</p>
           </div>
         </div>
 
@@ -145,9 +145,9 @@ export default function CharlsonPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               CCI operatif/cerrahi risk, kemoterapi uygunluğu ve klinik araştırma katmanlaması için kullanılır. Birden fazla diyabet maddesi seçilirse yalnızca yüksek puanlı olanı sayılır.
             </p>
           </div>

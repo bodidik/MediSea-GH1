@@ -123,9 +123,9 @@ export default function Curb65Page() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Bu araç akademik referans amaçlıdır. Tedavi kararı verilirken klinik tablo, ek hastalıklar ve yerel pnömoni rehberleri esas alınmalıdır.
             </p>
           </div>

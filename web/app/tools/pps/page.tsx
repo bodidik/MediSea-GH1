@@ -76,7 +76,7 @@ export default function PpsPage() {
         </div>
 
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-6xl font-black italic">PPS</div>
+          <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-6xl font-black italic">PPS</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">PPS SKORU</span>
           <div className="text-7xl font-black text-white">{selected ?? "–"}</div>
           {row && <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">{row.consciousness}</span>}
@@ -86,15 +86,15 @@ export default function PpsPage() {
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">PROGNOZ</span>
             <p className={`text-2xl font-black italic tracking-tight ${interp.color}`}>{interp.label}</p>
-            {interp.sub && <p className={`text-sm font-bold mt-1 ${interp.color} opacity-80`}>{interp.sub}</p>}
+            {interp.sub && <p className={`text-sm font-bold mt-1 ${interp.color}`}>{interp.sub}</p>}
           </div>
         )}
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               PPS Karnofsky'nin palyatif bakıma uyarlanmış versiyonudur. PPS ≤30 olan hastalar için hospis başvurusu değerlendirilmelidir. Sol-sağ sütunlar "en kötü durum" esas alınarak doldurulur.
             </p>
           </div>

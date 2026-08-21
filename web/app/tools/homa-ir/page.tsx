@@ -54,7 +54,7 @@ export default function HomaIrPage() {
         </div>
 
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
-          <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-6xl font-black italic">HOMA</div>
+          <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-6xl font-black italic">HOMA</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HOMA-IR</span>
           <div className="text-7xl font-black text-white drop-shadow-lg">{homa || "–"}</div>
           <span className="text-[9px] font-bold text-amber-400 uppercase tracking-widest mt-2">Glukoz × İnsülin ÷ 405</span>
@@ -63,14 +63,14 @@ export default function HomaIrPage() {
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">YORUM</span>
           <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-          {r.sub && <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>}
+          {r.sub && <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>}
         </div>
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               HOMA-IR eşik değeri laboratuvara ve popülasyona göre değişir (yaygın eşik: 2.0–2.5). İnsülin ölçümü için standartize assay gereklidir. Tek başına tanı koydurucudeğildir.
             </p>
           </div>

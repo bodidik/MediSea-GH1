@@ -118,9 +118,9 @@ export default function BmrPage() {
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Mifflin–St Jeor formülü ortalama popülasyonda en doğru tahminleri verir. Obez bireylerde ve ağır hastalık durumlarında ölçülmüş enerji gereksinimi (indirekt kalorimetri) tercih edilmelidir.
             </p>
           </div>

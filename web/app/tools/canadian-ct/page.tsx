@@ -154,9 +154,9 @@ export default function CanadianCTPage() {
               ...Object.fromEntries(MEDIUM_RISK.map(i => [i.id, med[i.id] ? 1 : 0])),
             }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               %100 duyarlılık ile nöroşirürji gerektiren lezyonu ve klinik önemi olan beyin hasarını tespit eder. Stiell et al., Lancet 2001.
             </p>
           </div>

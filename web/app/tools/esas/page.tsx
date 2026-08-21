@@ -107,9 +107,9 @@ export default function EsasPage() {
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               ESAS hastanın semptom yükünü kendi bildirimine dayanarak değerlendirir. Skor ≥4 olan her semptom klinik müdahale gerektirebilir. Seri ölçümlerle semptom takibi en değerli kullanım biçimidir.
             </p>
           </div>

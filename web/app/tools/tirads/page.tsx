@@ -223,7 +223,7 @@ export default function TiradsPage() {
               </div>
               <div>
                 <p className={`text-xl font-black italic tracking-tight ${tr.color}`}>{tr.label}</p>
-                <p className={`text-sm font-bold ${tr.color} opacity-70`}>{total} puan</p>
+                <p className={`text-sm font-bold ${tr.color}`}>{total} puan</p>
               </div>
             </div>
 
@@ -314,9 +314,9 @@ export default function TiradsPage() {
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               ACR TI-RADS 2017 kılavuzuna dayanmaktadır. Spongiform nodüller ve tamamen kistik nodüller benign kabul edilir. Klinik risk faktörleri (boyun ışınlaması, aile öyküsü, şüpheli LAP) değerlendirmeyi etkiler.
             </p>
           </div>

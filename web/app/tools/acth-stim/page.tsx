@@ -108,15 +108,15 @@ export default function ActhStimPage() {
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">YORUM — Eşik {proto.cutoff} μg/dL</div>
             <p className={`text-xl font-black italic tracking-tight ${interp.color}`}>{interp.label}</p>
-            <p className={`text-sm font-bold mt-1 ${interp.color} opacity-80`}>{interp.sub}</p>
+            <p className={`text-sm font-bold mt-1 ${interp.color}`}>{interp.sub}</p>
           </div>
         )}
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               {proto.note} Sabah (08:00–10:00) yapılması önerilir. Pik kortizol ≥18–20 μg/dL yeterli yanıtı gösterir. Bazı kılavuzlar 18, bazıları 20 μg/dL eşiğini kullanır.
             </p>
           </div>

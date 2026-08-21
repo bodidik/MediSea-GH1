@@ -284,9 +284,9 @@ export default function APACHE2Page() {
               ...Object.fromEntries(Object.entries(sel).map(([k, v]) => [k, v?.pts ?? 0])),
               age: age ?? 0, chronic: chronic?.pts ?? 0 }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               APACHE II mortalite tahmininde kalibrasyon zayıflayabilir. İlk 24 saatte alınan en kötü değerler kullanılır. Knaus et al., Crit Care Med 1985.
             </p>
           </div>

@@ -120,9 +120,9 @@ export default function HaqDiPage() {
         )}
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Her kategoriden en yüksek soru skoru alınır; 8 kategorinin ortalaması HAQ-DI'yı verir (0–3). Yardımcı cihaz veya başka bir kişinin yardımı kullanılıyorsa ilgili soru skoru en az 2 olarak değerlendirilir.
             </p>
           </div>

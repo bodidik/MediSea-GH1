@@ -168,9 +168,9 @@ export default function ISTHDICPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={sel as Record<string, number>} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               ISTH skoru "açık DIC" tanısına yönelik bir araçtır; pre-DIC (non-overt DIC) için ayrı algoritmalar önerilmektedir. Taylor et al., J Thromb Haemost 2001.
             </p>
           </div>

@@ -143,9 +143,9 @@ export default function KtvPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={{ pre, post, t, uf: ufL, wt }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               KDOQI kılavuzu: 3×/hafta HHD için spKt/V ≥ 1.2 (eKt/V ≥ 1.0) hedeflenir. Post-BUN örneği kan pompası durdurulduktan 15–30 sn sonra alınmalıdır. Geri sirkülasyon eKt/V'yi etkiler.
             </p>
           </div>

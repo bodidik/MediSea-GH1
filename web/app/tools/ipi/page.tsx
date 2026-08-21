@@ -72,7 +72,7 @@ export default function IpiPage() {
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">PROGNOSTİK KATEGORİ</span>
             <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-            <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
+            <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
           </div>
         </div>
 
@@ -80,9 +80,9 @@ export default function IpiPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               IPI, diffüz büyük B hücreli lenfoma başta olmak üzere agresif Non-Hodgkin lenfomalarda prognozu öngörmek için kullanılır. Genç hastalarda aa-IPI (age-adjusted) tercih edilebilir.
             </p>
           </div>

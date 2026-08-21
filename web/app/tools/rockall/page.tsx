@@ -131,16 +131,16 @@ export default function RockallPage() {
         <div className={`rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${rPost.border} ${rPost.bg}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
           <p className={`text-2xl font-black italic tracking-tight ${rPost.color}`}>{rPost.label}</p>
-          <p className={`text-sm font-bold mt-1 ${rPost.color} opacity-80`}>{rPost.sub}</p>
+          <p className={`text-sm font-bold mt-1 ${rPost.color}`}>{rPost.sub}</p>
         </div>
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Rockall skoru ÜGİS kanamasında yeniden kanama ve mortaliteyi tahmin eder. Glasgow-Blatchford skoru endoskopi gerekliliği için, Rockall ise prognoz için kullanılır.
             </p>
           </div>

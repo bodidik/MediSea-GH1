@@ -52,7 +52,7 @@ export default function CalvertPage() {
         </div>
 
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
-          <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">AUC</div>
+          <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">AUC</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM DOZ</span>
           <div className="text-7xl font-black text-white drop-shadow-lg">{dose || "–"}</div>
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mg (mutlak doz)</span>
@@ -67,9 +67,9 @@ export default function CalvertPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Calvert formülü: Doz (mg) = AUC × (GFR + 25). Bu hesap GFR&apos;yi 125 mL/dak ile sınırlar: formül ölçülmüş GFR ile türetilmiştir, tahmini GFR yüksek değerlerde klirensi abartıp doz aşımına yol açar. Doz hesabı, kurumun kemoterapi protokolüne göre teyit edilmelidir.
             </p>
           </div>

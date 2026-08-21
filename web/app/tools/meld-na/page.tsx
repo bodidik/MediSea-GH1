@@ -147,7 +147,7 @@ export default function MeldNaPage() {
 
         {/* SONUÇ PANELİ: LACİVERT & ALTIN */}
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
-           <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">⚕️</div>
+           <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-8xl font-black italic">⚕️</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HESAPLANAN MELD-Na SKORU</span>
            <div className="text-7xl font-black text-white drop-shadow-lg">{makul ? score : "–"}</div>
            <div className="mt-4 text-xs font-bold text-amber-400 uppercase tracking-widest italic max-w-xs">
@@ -162,9 +162,9 @@ export default function MeldNaPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={params} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Bu hesaplama eğitim ve referans amaçlıdır. Laboratuvar birimlerinizi, yerel protokolleri ve UNOS kriterlerini mutlaka doğrulayın.
             </p>
           </div>

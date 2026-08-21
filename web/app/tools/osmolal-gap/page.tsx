@@ -115,7 +115,7 @@ export default function OsmolalGapPage() {
               <span className={`text-sm font-black ${result.color} opacity-60`}>mOsm/kg</span>
             </div>
             <p className={`text-xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
-            <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
+            <p className={`text-sm font-bold mt-1 ${result.color}`}>{result.sub}</p>
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {[
@@ -184,9 +184,9 @@ export default function OsmolalGapPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={{ measured: measN, na: naN, glucose: glucN, bun: bunN, etoh: etohN }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Normal osmolal gap, toksik alkol zehirlenmesini dışlamaz — geç evrelerde gap kapanmış olabilir (metabolize olmuş). Klinik şüphe varsa spesifik madde düzeyleri ölçülmeli, fomepizol/etanol tedavisi ve diyaliz kararı geciktirilmemelidir.
             </p>
           </div>

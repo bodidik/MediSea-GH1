@@ -222,9 +222,9 @@ export default function ESSDIAPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={sel as Record<string, number>} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               ESSDAI yalnızca ekstraglandüler aktiviteyi ölçer; kserostomi ve kseroftalmi semptomarını ESSPRI değerlendirir. ESSDAI ≥ 5 klinik çalışmalara dahil etme kriteri olarak kabul edilir. Seror et al., Ann Rheum Dis 2010.
             </p>
           </div>

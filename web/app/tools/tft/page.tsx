@@ -103,19 +103,19 @@ export default function TftPage() {
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PATERN TANI</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
-            <p className={`text-sm font-bold mt-1 ${result.color} opacity-70`}>{result.detail}</p>
+            <p className={`text-sm font-bold mt-1 ${result.color}`}>{result.detail}</p>
             <div className="mt-3 pt-3 border-t border-current/10">
               <span className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 block mb-1">ÖRNEK NEDENLER</span>
-              <p className={`text-[11px] font-bold ${result.color} opacity-70`}>{result.examples}</p>
+              <p className={`text-[11px] font-bold ${result.color}`}>{result.examples}</p>
             </div>
           </div>
         )}
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Referans aralıkları laboratuvara göre farklılık gösterebilir. Gebelik, biyotin takviyesi, heterofil antikorlar yanlış sonuçlara yol açabilir. FT3 rutin taramada gerekmez; öncelikle TSH, ardından FT4 değerlendirilir.
             </p>
           </div>

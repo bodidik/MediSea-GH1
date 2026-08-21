@@ -129,13 +129,13 @@ export default function RefeedingRiskPage() {
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${risk.border} ${risk.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">REFEEDİNG SENDROMU RİSKİ</div>
             <p className={`text-2xl font-black italic tracking-tight ${risk.color}`}>{risk.label}</p>
-            <p className={`text-sm font-bold mt-1 ${risk.color} opacity-80`}>{risk.sub}</p>
+            <p className={`text-sm font-bold mt-1 ${risk.color}`}>{risk.sub}</p>
             <div className="mt-4 space-y-2">
               <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80">ÖNERİLER</p>
               {risk.recs.map((r, i) => (
                 <div key={i} className="flex gap-2 items-start">
                   <span className={`text-xs font-black ${risk.color} opacity-60 flex-shrink-0 mt-0.5`}>•</span>
-                  <p className={`text-[11px] font-bold ${risk.color} opacity-80 leading-snug`}>{r}</p>
+                  <p className={`text-[11px] font-bold ${risk.color} leading-snug`}>{r}</p>
                 </div>
               ))}
             </div>
@@ -151,9 +151,9 @@ export default function RefeedingRiskPage() {
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4"><ToolShare params={params} /></div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Refeeding sendromu, yetersiz beslenen hastalarda nütrisyon desteği başlatılırken gelişen ve hipofosfatemi, hipokalemi, hipomagnezemi, tiamin eksikliği ile karakterize tehlikeli bir metabolik komplikasyondur.
             </p>
           </div>

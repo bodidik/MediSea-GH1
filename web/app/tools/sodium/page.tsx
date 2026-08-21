@@ -162,15 +162,21 @@ export default function SodiumPage() {
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Sıvı Bölmeleri (Watson Formülü)</p>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { label: "Total Vücut Suyu (TBW)", val: tbw, pct: 60, desc: "Toplam vücut sıvısı", color: "bg-blue-900 text-white" },
-                { label: "Hücre içi sıvı (ICF)", val: icf!, pct: 40, desc: "TBW × 0.67", color: "bg-blue-700 text-white" },
-                { label: "Hücre dışı sıvı (ECF)", val: ecf!, pct: 20, desc: "TBW × 0.33", color: "bg-sky-600 text-white" },
-                { label: "Plazma hacmi", val: plasma!, pct: 5, desc: "ECF × 0.25", color: "bg-sky-400 text-white" },
-              ].map(({ label, val, pct, desc, color }) => (
-                <div key={label} className={`rounded-2xl p-4 ${color}`}>
-                  <div className="text-[9px] font-black uppercase tracking-widest opacity-80 mb-1">{label}</div>
+                /* Bölmeler açıldıkça zemin AÇILIYOR — hiyerarşiyi taşıyan şey bu.
+                   Ama beyaz yazı açık zeminde okunmuyordu; ölçüldü: sky-600
+                   üzerinde 4.10, sky-400 üzerinde 2.14 (24px "2.2 L" değeri
+                   dahil). Hiyerarşi korundu, açık iki kart KOYU yazıya geçti.
+                   Alt satırlardaki opacity-* de kaldırıldı: saydamlık kontrastı
+                   ölçüme girmeden düşürüyordu, renk artık açıkça veriliyor. */
+                { label: "Total Vücut Suyu (TBW)", val: tbw, pct: 60, desc: "Toplam vücut sıvısı", color: "bg-blue-900", ana: "text-white", ikincil: "text-blue-200" },
+                { label: "Hücre içi sıvı (ICF)", val: icf!, pct: 40, desc: "TBW × 0.67", color: "bg-blue-700", ana: "text-white", ikincil: "text-blue-100" },
+                { label: "Hücre dışı sıvı (ECF)", val: ecf!, pct: 20, desc: "TBW × 0.33", color: "bg-sky-500", ana: "text-blue-950", ikincil: "text-blue-950" },
+                { label: "Plazma hacmi", val: plasma!, pct: 5, desc: "ECF × 0.25", color: "bg-sky-200", ana: "text-blue-950", ikincil: "text-blue-900" },
+              ].map(({ label, val, pct, desc, color, ana, ikincil }) => (
+                <div key={label} className={`rounded-2xl p-4 ${color} ${ana}`}>
+                  <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${ikincil}`}>{label}</div>
                   <div className="text-2xl font-black">{val.toFixed(1)} L</div>
-                  <div className="text-[9px] font-bold opacity-70 mt-1">~{pct}% BW · {desc}</div>
+                  <div className={`text-[9px] font-bold mt-1 ${ikincil}`}>~{pct}% BW · {desc}</div>
                 </div>
               ))}
             </div>
@@ -358,9 +364,9 @@ export default function SodiumPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={{ mode, sex, age: ageN, height: heightN, weight: weightN, na: naN }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Bu hesaplamalar tahmin niteliğindedir. Klinik tablo, idrar Na/osmolalitesi, altta yatan neden ve komorbiditelere göre tedavi planı bireyselleştirilmelidir. Hedef Na aşımına karşı sık seri ölçüm zorunludur.
             </p>
           </div>

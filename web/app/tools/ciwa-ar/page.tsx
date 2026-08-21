@@ -242,7 +242,7 @@ export default function CiwaArPage() {
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">CIWA-Ar = {total} / 67</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
-            <p className={`text-sm font-bold mt-1 ${result.color} opacity-80`}>{result.sub}</p>
+            <p className={`text-sm font-bold mt-1 ${result.color}`}>{result.sub}</p>
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {[
@@ -261,12 +261,12 @@ export default function CiwaArPage() {
               <div className="mt-4 pt-4 border-t border-current/10 space-y-2">
                 <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80">PROTOKOL NOTLARI</p>
                 {total >= 15 && (
-                  <p className={`text-[11px] font-bold ${result.color} opacity-80`}>• Diyazepam veya lorazepam ile yükleme dozunu değerlendirin. IV erişim, vital takibi, nöbet önlemi.</p>
+                  <p className={`text-[11px] font-bold ${result.color}`}>• Diyazepam veya lorazepam ile yükleme dozunu değerlendirin. IV erişim, vital takibi, nöbet önlemi.</p>
                 )}
                 {total >= 8 && total < 15 && (
-                  <p className={`text-[11px] font-bold ${result.color} opacity-80`}>• Semptom tetikli (PRN) benzodiyazepin protokolü başlatın. 1–2 saatte bir CIWA-Ar tekrarlayın.</p>
+                  <p className={`text-[11px] font-bold ${result.color}`}>• Semptom tetikli (PRN) benzodiyazepin protokolü başlatın. 1–2 saatte bir CIWA-Ar tekrarlayın.</p>
                 )}
-                <p className={`text-[11px] font-bold ${result.color} opacity-80`}>• Thiamin 100 mg IV/IM, elektrolit replasmanı (Mg, K, PO4), hidratasyon.</p>
+                <p className={`text-[11px] font-bold ${result.color}`}>• Thiamin 100 mg IV/IM, elektrolit replasmanı (Mg, K, PO4), hidratasyon.</p>
               </div>
             )}
           </div>
@@ -276,9 +276,9 @@ export default function CiwaArPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={answers} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               CIWA-Ar klinik gözleme dayalıdır; hasta bildiriminden ziyade doğrudan değerlendirme esastır. Ağır yoksunlukta (≥15) ve komorbidite varlığında yoğun bakım/monitörizasyon gerekebilir.
             </p>
           </div>

@@ -156,9 +156,9 @@ export default function BODEPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={sel as Record<string, number>} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               BODE indeksi yalnızca FEV₁ kullanımına kıyasla KOAH mortalitesini daha iyi öngörür. Akciğer transplantasyonu ve pulmoner rehabilitasyon kararlarında referans alınır. Celli et al., NEJM 2004.
             </p>
           </div>

@@ -204,9 +204,9 @@ export default function LawtonIadlPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={Object.fromEntries(ITEMS.map(i => [i.id, i.options[sel[i.id] as number]?.pts ?? 0]))} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Lawton IADL bağımsız yaşam becerilerini değerlendirir; bakım planlaması ve geriatrik değerlendirmede Barthel ile birlikte kullanılır. Kültürel ve cinsiyet faktörlerini hesaba katarak yorumlanmalıdır. Lawton & Brody, 1969.
             </p>
           </div>

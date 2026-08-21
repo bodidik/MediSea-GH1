@@ -135,7 +135,7 @@ export default function EndocarditisToolPage() {
 
         {/* ANALİZ SONUCU: AKADEMİK PANEL */}
         <div className={`rounded-[2rem] border border-blue-900/10 p-8 shadow-sm relative overflow-hidden bg-white`}>
-          <div className="absolute top-0 right-0 p-4 opacity-10">
+          <div aria-hidden="true" className="absolute top-0 right-0 p-4 opacity-10">
             <span className="text-8xl">🩺</span>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 relative z-10">
@@ -163,9 +163,9 @@ export default function EndocarditisToolPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={shareParams} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               Bu araç Duke Kriterleri baz alınarak hazırlanmış bir eğitim şablonudur. Kesin tanı için klinik, laboratuvar ve görüntüleme bulguları hekim tarafından bütüncül değerlendirilmelidir.
             </p>
           </div>

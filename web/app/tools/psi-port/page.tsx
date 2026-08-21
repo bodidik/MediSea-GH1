@@ -173,7 +173,7 @@ export default function PsiPortPage() {
 
         {/* SONUÇ PANELİ */}
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
-          <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">PSI</div>
+          <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">PSI</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM PUAN</span>
           <div className="text-7xl font-black text-white">{qualifiesClassI ? "–" : totalScore}</div>
           {qualifiesClassI && (

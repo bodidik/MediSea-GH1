@@ -168,9 +168,9 @@ export default function IPSSRPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={shareParams} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               IPSS-R tanı anında kullanılır; tedavi sırasında değişen parametreler yeniden skorlanmalıdır. Düşük/Orta hastalar için destek tedavisi, Yüksek/Çok Yüksek için allojenik KİT değerlendirilir. Greenberg et al., Blood 2012.
             </p>
           </div>

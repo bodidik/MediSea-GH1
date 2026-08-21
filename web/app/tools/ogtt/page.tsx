@@ -25,7 +25,7 @@ function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number }) {
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
       <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ (ADA Kriterleri)</div>
       <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-      <p className={`text-sm font-bold mt-1 ${r.color} opacity-80`}>{r.sub}</p>
+      <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
         {[
           { label: "Açlık", ref: "< 100 normal · 100–125 BAG · ≥ 126 DM" },
@@ -196,9 +196,9 @@ export default function OgttPage() {
           <div className="flex justify-center border-b border-slate-100 pb-4">
             <ToolShare params={{ ctx, f, h1, h2, h3, assay }} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
               T2DM: Semptom yoksa tanı için 2 ayrı ölçüm gereklidir. GDM: Kurumsal protokol ve hafta tercihini dikkate alın. Akromegali: IGF-1 ile birlikte değerlendirilmelidir.
             </p>
           </div>
