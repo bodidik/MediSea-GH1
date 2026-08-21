@@ -47,6 +47,16 @@ type Analit = {
   ust: number;
   /** katsayının kaynağı; ekranda gösteriliyor */
   not: string;
+  /**
+   * mEq/L ile mmol/L ilişkisi — yalnızca iyonlarda anlamlı.
+   *
+   * Türk laboratuvarları sodyum ve potasyumu çoğu zaman mEq/L ile
+   * raporluyor; tek değerlikli iyonlarda mEq/L SAYICA mmol/L'ye eşittir,
+   * iki değerliklilerde (kalsiyum, magnezyum) mEq/L mmol/L'nin İKİ
+   * KATIDIR. Bu, klinikte sık yapılan bir karıştırma; çevirici zaten
+   * birim gösterdiği için doğru yer burası.
+   */
+  esdegerlik?: string;
 };
 
 /** Ondalık gürültüsünü temizler: 5.550000000000001 → 5.55 */
@@ -58,10 +68,10 @@ function carpanlaAnalit(
   key: string, ad: string, ikon: string,
   gelenekselBirim: string, siBirim: string,
   k: number, alt: number, ust: number, not: string,
-  basamakSI = 2, basamakGel = 2,
+  basamakSI = 2, basamakGel = 2, esdegerlik?: string,
 ): Analit {
   return {
-    key, ad, ikon, gelenekselBirim, siBirim, alt, ust, not,
+    key, ad, ikon, gelenekselBirim, siBirim, alt, ust, not, esdegerlik,
     ileri: (x) => yuvarla(x * k, basamakSI),
     geri: (y) => yuvarla(y / k, basamakGel),
   };
@@ -79,11 +89,33 @@ const ANALITLER: Analit[] = [
   carpanlaAnalit("kreatinin", "Kreatinin", "🧬", "mg/dL", "µmol/L",
     88.4, 0.1, 25, "mg/dL × 88.4", 1, 2),
   carpanlaAnalit("kalsiyum", "Kalsiyum", "🥛", "mg/dL", "mmol/L",
-    1 / 4.008, 1, 25, "mg/dL ÷ 4.008"),
+    1 / 4.008, 1, 25, "mg/dL ÷ 4.008", 2, 2,
+    "İki değerlikli: mEq/L = mmol/L × 2"),
+  // ── Elektrolitler ───────────────────────────────────────────────────
+  // Katsayılar iyonun atom/molekül ağırlığından gelir:
+  //   mmol/L = (mg/dL × 10) ÷ ağırlık
+  // Na 22.99 · K 39.10 · Cl 35.45 · HCO₃ 61.02
+  carpanlaAnalit("sodyum", "Sodyum", "🧂", "mg/dL", "mmol/L",
+    10 / 22.99, 50, 900, "mg/dL × 10 ÷ 22.99", 1, 1,
+    "Tek değerlikli: mEq/L = mmol/L (aynı sayı)"),
+  carpanlaAnalit("potasyum", "Potasyum", "🍌", "mg/dL", "mmol/L",
+    10 / 39.10, 2, 120, "mg/dL × 10 ÷ 39.10", 2, 2,
+    "Tek değerlikli: mEq/L = mmol/L (aynı sayı)"),
+  carpanlaAnalit("klor", "Klor", "🌊", "mg/dL", "mmol/L",
+    10 / 35.45, 50, 900, "mg/dL × 10 ÷ 35.45", 1, 1,
+    "Tek değerlikli: mEq/L = mmol/L (aynı sayı)"),
+  carpanlaAnalit("bikarbonat", "Bikarbonat (HCO₃)", "🫧", "mg/dL", "mmol/L",
+    10 / 61.02, 5, 400, "mg/dL × 10 ÷ 61.02", 1, 1,
+    "Tek değerlikli: mEq/L = mmol/L (aynı sayı)"),
+  carpanlaAnalit("laktat", "Laktat", "🏃", "mg/dL", "mmol/L",
+    1 / 9.01, 1, 300, "mg/dL ÷ 9.01", 2, 2),
+  carpanlaAnalit("amonyak", "Amonyak", "☁️", "µg/dL", "µmol/L",
+    0.5872, 5, 2000, "µg/dL × 0.5872", 1, 1),
   carpanlaAnalit("fosfor", "Fosfor", "🦴", "mg/dL", "mmol/L",
     1 / 3.097, 0.3, 20, "mg/dL ÷ 3.10"),
   carpanlaAnalit("magnezyum", "Magnezyum", "⚡", "mg/dL", "mmol/L",
-    1 / 2.431, 0.2, 15, "mg/dL ÷ 2.43"),
+    1 / 2.431, 0.2, 15, "mg/dL ÷ 2.43", 2, 2,
+    "İki değerlikli: mEq/L = mmol/L × 2"),
   carpanlaAnalit("kolesterol", "Kolesterol (T/LDL/HDL)", "🫀", "mg/dL", "mmol/L",
     1 / 38.67, 5, 900, "mg/dL ÷ 38.67"),
   carpanlaAnalit("trigliserid", "Trigliserid", "🧈", "mg/dL", "mmol/L",
@@ -261,6 +293,13 @@ export default function BirimCeviriciSayfasi() {
               ? `${analit.ad}: ${analit.not}`
               : `Değer girin — ${analit.ad} için beklenen aralık ${analit.alt}–${analit.ust} ${analit.gelenekselBirim}.`}
           </p>
+
+          {/* mEq/L uyarısı yalnızca iyonlarda basılıyor; ötekilerde anlamsız. */}
+          {analit.esdegerlik && (
+            <p className="mt-2 text-[11px] font-bold text-blue-900/70">
+              {analit.esdegerlik}
+            </p>
+          )}
         </div>
 
         {/* ALT BİLGİ */}
