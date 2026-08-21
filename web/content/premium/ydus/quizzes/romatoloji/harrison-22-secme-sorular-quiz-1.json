@@ -507,6 +507,30 @@
       "etiketler": ["TRAPS", "TNFR1", "TNFRSF1A", "periyodik ates sendromu", "migratuvar miyalji", "amiloidoz", "kolşisine dirençli", "canakinumab"],
       "zorluk": "zor",
       "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s22",
+      "metin": "Romatoloji polikliniğinde kıdemli uzman, kas-iskelet sistemi ağrıları ile başvuran hastaların tanısal algoritmalarını ve fizik muayene manevralarını asistan hekimlerle tartışmaktadır. Eğitim viziti sırasında; omuz sıkışma sendromu, karpal tünel sendromu, diz eklemi menisküs yırtıkları ve eklem aspirasyonu (artrosentez) sonrasında elde edilen sinoviyal sıvı analizlerinin klinik anlamı ve doğruluğu ele alınmaktadır. Harrison's Principles of Internal Medicine kılavuzuna göre, bu klinik vizitte tartışılan fiziksel muayene manevraları ve laboratuvar parametreleri ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Diz osteoartriti (OA) veya mekanik travma sonrası gelişen eklem efüzyonlarında sinoviyal sıvının viskozitesi belirgin şekilde azalmıştır; enjektörden damlatıldığında uzama özelliği (string sign) tamamen kaybolmuştur.",
+        "B": "Diz eklemindeki menisküs yırtıklarının değerlendirilmesinde kullanılan McMurray testinde; diz 90° fleksiyona getirildikten sonra alt ekstremiteye dışa rotasyon (outward rotation) yaptırılarak bacağın ekstansiyona alınması sırasında ağrılı klik duyulması lateral menisküs yırtığını güçlü şekilde destekler.",
+        "C": "Omuz ağrısı olan bir hastada subakromiyal sıkışmayı (impingement) değerlendirmek için yapılan Neer testinde, muayene eden hekim skapulayı sabitleyip kolun rotasyonunu engelleyerek kolu zorlu fleksiyona getirir; 180° forward fleksiyon tamamlanmadan önce ağrı gelişmesi testin pozitif olduğunu gösterir.",
+        "D": "Karpal tünel sendromu şüphesi olan bir hastada Durkan kompresyon testi ve Tinel belirtisinin duyarlılık (sensitivite) ve özgüllüğünün (spesifisite) son derece yüksek olması sebebiyle, klinik muayene tanı için yeterli kabul edilir ve doğrulamada sinir ileti hızı (EMG) çalışmalarına başvurulması önerilmez.",
+        "E": "Akut monoartrit şüphesiyle yapılan eklem aspirasyonunda, sinoviyal sıvıda inflamatuar-noninflamatuar ayrımını netleştirmek amacıyla hücre sayımına ek olarak glukoz, protein, laktat dehidrogenaz (LDH) ve laktik asit düzeylerinin ölçülmesi rutin olarak önerilmektedir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Neer testinde hekim skapulayı sabitleyip kolun rotasyonunu engelleyerek kolu zorlu fleksiyona getirir; 180° forward fleksiyon tamamlanmadan önce ağrı gelişmesi subakromiyal sıkışma için pozitif bulgudur.",
+      "aciklama_detay": "Neer Sıkışma (Impingement) Testi: Omuz ağrısının en sık nedenlerinden biri olan supraspinatus tendiniti ve rotator manşet patolojilerini değerlendirmede kullanılır. Harrison kaynaklarında belirtildiği üzere; Neer testi, muayene eden kişinin hastanın kolunu skapulayı sabitleyerek ve kolun rotasyonunu engelleyerek zorlu fleksiyona (forced flexion) getirmesiyle gerçekleştirilir. Kol tam yukarı kaldırılmadan (180° forward fleksiyon tamamlanmadan önce) ağrı gelişmesi, subakromiyal alanda sıkışmayı gösteren pozitif bir bulgudur.\n\nKlinik İnciler: (1) Gereksiz Testlerden Kaçınma: Eklem sıvısında glukoz, protein, LDH, laktat ve otoantikor bakılması değersizdir. Enflamasyon ayrımı sadece WBC (>2000/µL inflamatuar), PMN yüzdesi ve viskozite ile yapılır. (2) Birlikte Görülme Kuralı: Kristal artritleri (gut, yalancı gut) ile septik artrit aynı eklemde eş zamanlı olarak görülebilir; kristal saptanması enfeksiyonu tamamen ekarte ettirmez. (3) Aktif vs. Pasif Hareket: Periartiküler (nonartiküler) hastalıklarda (tendinit vb.) aktif hareket kısıtlı ve ağrılıyken, pasif hareket normal sınırlardadır. Gerçek eklem içi (artiküler) hastalıklarda ise hem aktif hem de pasif eklem hareket açıklığı belirgin derecede kısıtlanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Osteoartrit (OA) veya travmaya bağlı gelişen noninflamatuar efüzyonlarda sinoviyal sıvının viskozitesi normal kalır. Sıvı enjektörden damlatıldığında arkasında uzun bir kuyruk bırakarak uzama özelliği gösterir (string sign pozitiftir). İnflamatuar sıvılarda ise hyaluronat miktarı ve viskozite azaldığı için bu uzama özelliği kaybolur.",
+        "B": "YANLIS — McMurray testinde torksiyon (rotasyon) yönü ile etkilenen menisküs ilişkisi ters verilmiştir. Bacağın içe rotasyonu (inward rotation) sırasında ağrılı klik duyulması lateral menisküs yırtığına işaret ederken; dışa rotasyon (outward rotation) sırasında ağrılı klik duyulması medial menisküs yırtığını destekler.",
+        "C": "DOGRU — Neer testinde skapula sabitlenip kolun rotasyonu engellenerek kol zorlu fleksiyona getirilir; 180° forward fleksiyon tamamlanmadan önce ağrı gelişmesi subakromiyal sıkışmayı gösteren pozitif bir bulgudur.",
+        "D": "YANLIS — Karpal tünel sendromu tanısında kullanılan Durkan kompresyon testi ve Tinel belirtisinin duyarlılığı düşük, özgüllüğü ise orta düzeydedir. Bu klinik kısıtlılık nedeniyle şüpheli olgularda tanıyı kesinleştirmek amacıyla sinir ileti hızı (EMG) testlerinin yapılması sıklıkla gereklidir.",
+        "E": "YANLIS — Sinoviyal sıvı analizinde glukoz, protein, laktat dehidrogenaz (LDH), laktik asit veya otoantikor ölçümlerinin tanısal bir değeri yoktur ve rutin olarak çalışılmaları önerilmez. Sıvı analizinde inflamatuar ayrımı için asıl değerli parametreler; makroskobik görünüm, viskozite (stringing) ve beyaz küre (WBC) hücre sayımıdır."
+      },
+      "etiketler": ["Neer testi", "McMurray testi", "sinoviyal sıvı analizi", "string sign", "Durkan testi", "Tinel belirtisi", "fizik muayene", "artrosentez"],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
     }
   ]
 }
