@@ -17,6 +17,33 @@ const MEDIUM_RISK = [
   { id: "dangerous", label: "Tehlikeli mekanizma",           detail: "Yaya–araç çarpması, yolcunun araçtan fırlaması, > 90 cm veya > 5 basamak düşme" },
 ];
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur; React kontrolu DOM'dan sokup yeniden takar
+ * ve odak <body>'ye duser. Olculdu: secim dugmesine tiklandiktan sonra
+ * document.body.contains(dugme) === false, activeElement === BODY. Klavyeyle
+ * gezen kullanici her secimden sonra yerini kaybediyordu.
+ */
+const CriterionRow = ({ item, value, onChange }: {
+  item: { id: string; label: string; detail: string };
+  value: boolean | null; onChange: (v: boolean | null) => void;
+}) => (
+  <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm">
+    <p className="font-black text-blue-900 text-sm mb-0.5">{item.label}</p>
+    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">{item.detail}</p>
+    <div className="flex gap-2">
+      {([true, false] as const).map(v => (
+        <button aria-pressed={value === v} key={String(v)} type="button"
+          onClick={() => onChange(value === v ? null : v)}
+          className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
+            ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+          {v ? "Evet" : "Hayır"}
+        </button>
+      ))}
+    </div>
+  </div>
+);
+
 export default function CanadianCTPage() {
   const [high, setHigh] = React.useState<Record<string, boolean | null>>(
     Object.fromEntries(HIGH_RISK.map(i => [i.id, null]))
@@ -51,25 +78,6 @@ export default function CanadianCTPage() {
   const r = result ? RESULT_MAP[result] : null;
   const c = r ? COLOR[r.color] : null;
 
-  const CriterionRow = ({ item, value, onChange }: {
-    item: { id: string; label: string; detail: string };
-    value: boolean | null; onChange: (v: boolean | null) => void;
-  }) => (
-    <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm">
-      <p className="font-black text-blue-900 text-sm mb-0.5">{item.label}</p>
-      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">{item.detail}</p>
-      <div className="flex gap-2">
-        {([true, false] as const).map(v => (
-          <button aria-pressed={value === v} key={String(v)} type="button"
-            onClick={() => onChange(value === v ? null : v)}
-            className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-              ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
-            {v ? "Evet" : "Hayır"}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

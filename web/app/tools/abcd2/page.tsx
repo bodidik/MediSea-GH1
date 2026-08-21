@@ -8,8 +8,10 @@ const CLN_OPTS = [["Diğer semptomlar", 0], ["Konuşma bozukluğu (motor güç n
 
 /**
  * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
- * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
- * kullanici her tus vurusunda odagi kaybeder.
+ * yeni bir bilesen kimligi olusur; React kontrolu DOM'dan sokup yeniden takar
+ * ve odak <body>'ye duser. Olculdu: secim dugmesine tiklandiktan sonra
+ * document.body.contains(dugme) === false, activeElement === BODY. Klavyeyle
+ * gezen kullanici her secimden sonra yerini kaybediyordu.
  */
 const CheckRow = ({ label, sub, checked, onChange }: { label: string; sub: string; checked: boolean; onChange: () => void }) => (
   <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
@@ -29,6 +31,33 @@ const CheckRow = ({ label, sub, checked, onChange }: { label: string; sub: strin
   </label>
 );
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
+ * kullanici her tus vurusunda odagi kaybeder.
+ */
+const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
+  <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+    <span className="text-sm font-bold text-blue-900/80 flex-1">{label}</span>
+    {/*
+      `outline-none` TEK BAŞINA odağı görünmez yapıyor: Tailwind'in bu sınıfı
+      saydam bir çerçeve bırakıyor (`outline: 2px solid transparent`) ve
+      <select>'te metin imleci olmadığı için geriye hiçbir işaret kalmıyor.
+
+      Ölçüldü: öge odaktayken (`document.activeElement`) hesaplanan stil odak
+      öncesiyle BİREBİR aynıydı ve stil sayfasında select için `:focus`
+      kuralı yoktu — yani klavyeyle gezen kullanıcı nerede olduğunu
+      göremiyordu. Halka sınıfları deponun onay kutularında kullandığı
+      kalıbın aynısı.
+    */}
+    <select aria-label={label} value={value} onChange={e => onChange(Number(e.target.value))}
+      className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-1 max-w-full min-w-0 text-blue-950">
+      {opts.map(([l, v]) => <option key={v} value={v}>{l}</option>)}
+    </select>
+    <span className="text-[10px] font-black text-amber-700 w-10 text-right">+{value}</span>
+  </div>
+);
+
 export default function Abcd2Page() {
   const [age, setAge]       = React.useState(false);   // ≥60 → +1
   const [bp, setBp]         = React.useState(false);   // ≥140/90 → +1
@@ -46,28 +75,6 @@ export default function Abcd2Page() {
   const r = getRisk();
   const params = { a: age?1:"", b: bp?1:"", c: cln, d: dur, dm: dm?1:"" };
 
-
-  const SelectRow = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
-    <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
-      <span className="text-sm font-bold text-blue-900/80 flex-1">{label}</span>
-      {/*
-        `outline-none` TEK BAŞINA odağı görünmez yapıyor: Tailwind'in bu sınıfı
-        saydam bir çerçeve bırakıyor (`outline: 2px solid transparent`) ve
-        <select>'te metin imleci olmadığı için geriye hiçbir işaret kalmıyor.
-
-        Ölçüldü: öge odaktayken (`document.activeElement`) hesaplanan stil odak
-        öncesiyle BİREBİR aynıydı ve stil sayfasında select için `:focus`
-        kuralı yoktu — yani klavyeyle gezen kullanıcı nerede olduğunu
-        göremiyordu. Halka sınıfları deponun onay kutularında kullandığı
-        kalıbın aynısı.
-      */}
-      <select aria-label={label} value={value} onChange={e => onChange(Number(e.target.value))}
-        className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-1 max-w-full min-w-0 text-blue-950">
-        {opts.map(([l, v]) => <option key={v} value={v}>{l}</option>)}
-      </select>
-      <span className="text-[10px] font-black text-amber-700 w-10 text-right">+{value}</span>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

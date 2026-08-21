@@ -3,6 +3,25 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur; React kontrolu DOM'dan sokup yeniden takar
+ * ve odak <body>'ye duser. Olculdu: secim dugmesine tiklandiktan sonra
+ * document.body.contains(dugme) === false, activeElement === BODY. Klavyeyle
+ * gezen kullanici her secimden sonra yerini kaybediyordu.
+ */
+const BoolBtn = ({ val, cur, set, yes, no }: { val: boolean; cur: boolean | null; set: (v: boolean | null) => void; yes: string; no: string }) => (
+  <div className="flex gap-2">
+    {([true, false] as const).map(v => (
+      <button aria-pressed={cur === v} key={String(v)} type="button" onClick={() => set(cur === v ? null : v)}
+        className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
+          ${cur === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+        {v ? yes : no}
+      </button>
+    ))}
+  </div>
+);
+
 export default function BerlinARDSPage() {
   const [onset, setOnset]   = React.useState<boolean | null>(null);
   const [xray,  setXray]    = React.useState<boolean | null>(null);
@@ -27,17 +46,6 @@ export default function BerlinARDSPage() {
   };
   const c = severity ? COLOR[severity.color] : null;
 
-  const BoolBtn = ({ val, cur, set, yes, no }: { val: boolean; cur: boolean | null; set: (v: boolean | null) => void; yes: string; no: string }) => (
-    <div className="flex gap-2">
-      {([true, false] as const).map(v => (
-        <button aria-pressed={cur === v} key={String(v)} type="button" onClick={() => set(cur === v ? null : v)}
-          className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-            ${cur === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
-          {v ? yes : no}
-        </button>
-      ))}
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

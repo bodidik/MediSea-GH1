@@ -51,6 +51,34 @@ const COLOR: Record<string, { bg: string; border: string; text: string; badge: s
   rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
 };
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur; React kontrolu DOM'dan sokup yeniden takar
+ * ve odak <body>'ye duser. Olculdu: secim dugmesine tiklandiktan sonra
+ * document.body.contains(dugme) === false, activeElement === BODY. Klavyeyle
+ * gezen kullanici her secimden sonra yerini kaybediyordu.
+ */
+const Selector = ({ label, opts, value, onChange }: {
+  label: string; opts: { label: string; coded: number }[];
+  value: number | null; onChange: (v: number) => void;
+}) => (
+  <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
+    <p className="font-black text-blue-900 uppercase italic text-sm mb-3">{label}</p>
+    <div className="space-y-1.5">
+      {opts.map(opt => (
+        <button aria-pressed={value === opt.coded} key={opt.coded} type="button"
+          onClick={() => onChange(value === opt.coded ? -1 : opt.coded)}
+          className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
+            ${value === opt.coded ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
+          <span className={`w-5 h-5 rounded-lg flex items-center justify-center text-[9px] font-black shrink-0
+            ${value === opt.coded ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.coded}</span>
+          {opt.label}
+        </button>
+      ))}
+    </div>
+  </div>
+);
+
 export default function RTSPage() {
   const [gcs, setGcs] = React.useState<number | null>(null);
   const [sbp, setSbp] = React.useState<number | null>(null);
@@ -61,26 +89,6 @@ export default function RTSPage() {
   const band = rts !== null ? getBand(rts) : null;
   const c = band ? COLOR[band.color] : null;
 
-  const Selector = ({ label, opts, value, onChange }: {
-    label: string; opts: { label: string; coded: number }[];
-    value: number | null; onChange: (v: number) => void;
-  }) => (
-    <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-      <p className="font-black text-blue-900 uppercase italic text-sm mb-3">{label}</p>
-      <div className="space-y-1.5">
-        {opts.map(opt => (
-          <button aria-pressed={value === opt.coded} key={opt.coded} type="button"
-            onClick={() => onChange(value === opt.coded ? -1 : opt.coded)}
-            className={`w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl border-2 text-[10px] font-bold transition-all
-              ${value === opt.coded ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
-            <span className={`w-5 h-5 rounded-lg flex items-center justify-center text-[9px] font-black shrink-0
-              ${value === opt.coded ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.coded}</span>
-            {opt.label}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">

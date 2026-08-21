@@ -18,6 +18,26 @@ const ACUTE_OPTS = [
   { v: 2, label: "Var — 5+ gün beslenemiyor / besinmez hasta" },
 ];
 
+/**
+ * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
+ * yeni bir bilesen kimligi olusur; React kontrolu DOM'dan sokup yeniden takar
+ * ve odak <body>'ye duser. Olculdu: secim dugmesine tiklandiktan sonra
+ * document.body.contains(dugme) === false, activeElement === BODY. Klavyeyle
+ * gezen kullanici her secimden sonra yerini kaybediyordu.
+ */
+const Radio = ({ opts, val, set }: { opts: { v: number; label: string; sub?: string }[]; val: number | null; set: (i: number) => void }) => (
+  <div className="space-y-2">
+    {opts.map((o, i) => (
+      <button aria-pressed={val === i} key={i} type="button" onClick={() => set(i)}
+        className={`w-full text-left p-4 rounded-2xl border transition-all
+          ${val === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
+        <div className={`text-sm font-bold ${val === i ? 'text-white' : 'text-blue-950'}`}>{o.label}</div>
+        {o.sub && <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${val === i ? 'text-blue-200' : 'text-slate-400'}`}>{o.sub} — +{o.v} puan</div>}
+      </button>
+    ))}
+  </div>
+);
+
 export default function MustPage() {
   const [bmiIdx, setBmiIdx]   = React.useState<number | null>(null);
   const [lossIdx, setLossIdx] = React.useState<number | null>(null);
@@ -35,18 +55,6 @@ export default function MustPage() {
   const result = score !== null ? getResult(score) : null;
   const params = { bmi: bmiIdx, loss: lossIdx, acute };
 
-  const Radio = ({ opts, val, set }: { opts: { v: number; label: string; sub?: string }[]; val: number | null; set: (i: number) => void }) => (
-    <div className="space-y-2">
-      {opts.map((o, i) => (
-        <button aria-pressed={val === i} key={i} type="button" onClick={() => set(i)}
-          className={`w-full text-left p-4 rounded-2xl border transition-all
-            ${val === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-          <div className={`text-sm font-bold ${val === i ? 'text-white' : 'text-blue-950'}`}>{o.label}</div>
-          {o.sub && <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${val === i ? 'text-blue-200' : 'text-slate-400'}`}>{o.sub} — +{o.v} puan</div>}
-        </button>
-      ))}
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
