@@ -15,7 +15,17 @@ export default function CdaiPage() {
   const p = parseLocaleNumber(pga);
   const e = parseLocaleNumber(ega);
   const score = t + s + p + e;
-  const hasResult = t > 0 || s > 0 || p > 0 || e > 0;
+  /**
+   * MEŞRU SIFIR — eski koşul `t > 0 || s > 0 || …` idi ve iki işi birden
+   * yapmaya çalışıyordu: boş formu bastırmak VE sonucu göstermek.
+   * Boş formu doğru bastırıyordu ama ölçüldü ki bütün alanlara 0 girildiğinde
+   * de susuyordu — oysa hassas eklem 0, şiş eklem 0 ve global değerlendirme 0
+   * REMİSYONUN TANIMI; klinisyenin en çok belgelemek istediği durum tam da o.
+   *
+   * Doğru ölçüt "değer sıfırdan büyük mü" değil, "alan DOLDURULDU mu".
+   */
+  const dolu = (x: string) => x.trim() !== "" && Number.isFinite(parseLocaleNumber(x));
+  const hasResult = dolu(tjc) && dolu(sjc) && dolu(pga) && dolu(ega);
 
   const getResult = () => {
     if (score <= 2.8) return { label: "REMİSYON", sub: "CDAI ≤ 2.8", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
