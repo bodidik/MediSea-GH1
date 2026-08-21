@@ -23,6 +23,31 @@ export default function Das28Page() {
   const markerNum = parseLocaleNumber(marker);
   const ghNum = Math.min(100, Math.max(0, parseLocaleNumber(gh)));
 
+  /**
+   * MAKULLÜK KAPISI — burada kusur TERS yönde çalışıyordu.
+   *
+   * Ölçüldü (canlı): form BOMBOŞKEN araç **DAS28 0** basıp altına
+   * **"Remisyon"** yazıyordu. Veri yokken hastayı remisyonda ilan etmek,
+   * yüksek skor uydurmanın aynadaki hâli: bu kez risk tedaviyi
+   * gereksiz yere hafifletmek. DAS28'in matematiksel tabanı da ~0.96,
+   * yani 0 zaten imkânsız bir değer.
+   *
+   * MEŞRU SIFIR: hassas/şiş eklem sayısı 0 ve hasta global değerlendirmesi
+   * 0 GERÇEK ölçümlerdir (remisyonun tanımı). O yüzden bu alanlar sayıya
+   * değil, BOŞ olup olmadıklarına göre denetleniyor.
+   */
+  const doluVeAralikta = (ham: string, alt: number, ust: number) => {
+    if (ham.trim() === "") return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+
+  const makul =
+    doluVeAralikta(tjc, 0, 28) &&
+    doluVeAralikta(sjc, 0, 28) &&
+    doluVeAralikta(gh, 0, 100) &&
+    doluVeAralikta(marker, mode === "esr" ? 1 : 0.1, mode === "esr" ? 200 : 500);
+
   const score = useMemo(() => {
     return mode === "esr"
       ? das28Esr(tjcNum, sjcNum, markerNum, ghNum)
@@ -126,13 +151,13 @@ export default function Das28Page() {
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">
              DAS28-{mode.toUpperCase()}
            </span>
-           <div className="text-7xl font-black text-white">{score}</div>
+           <div className="text-7xl font-black text-white">{makul ? score : "–"}</div>
         </div>
 
         {/* YORUMLAMA PANELİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {interpretation.label}
+             {makul ? interpretation.label : "Değerleri girin"}
            </div>
            <p className="text-[9px] text-slate-400 font-bold uppercase tracking-widest text-center mt-3">
              Remisyon ≤{thresholds.remission} · Düşük ≤{thresholds.low} · Orta ≤{thresholds.moderate} · Yüksek &gt;{thresholds.moderate}

@@ -1004,10 +1004,33 @@ kreatinin 0.1-30, lökosit 0.1-500, yüzde toplamı ≤100). Geçersizse sayı
 yerine `–`, etiket yerine "Değerleri girin".
 
 **Riskli olan alt küme: merdiven yönü.** Kalıbı (serbest sayısal girdi +
-sınıflama merdiveni + `parseLocaleNumber`) 19 araç taşıyor ama tehlike
-yalnızca **DÜŞÜK = KÖTÜ** olanlarda: orada 0 son basamağa düşüyor. Yüksek
-= kötü olanlarda (SOFA, NEWS2, Glasgow-Blatchford, KDIGO-AKI…) 0 en hafif
-kategoriye düşüyor ve zaten meşru bir skor.
+sınıflama merdiveni + `parseLocaleNumber`) 19 araç taşıyor ve tehlike
+**DÜŞÜK = KÖTÜ** olan yerlerde: orada 0 son basamağa düşüyor.
+
+> **DÜZELTME — bu paragraf bir dönem SOFA, NEWS2 ve Glasgow-Blatchford'u
+> "yüksek = kötü, dolayısıyla güvenli" diye sayıyordu. YANLIŞTI ve ölçümle
+> çürütüldü.** Bir skorun TOPLAMI yüksekken kötü olması, BİLEŞENLERİNİN de
+> öyle olduğu anlamına gelmiyor: NEWS2 düşük SpO2'ye, düşük tansiyona ve
+> düşük ateşe puan veriyor; SOFA düşük PaO2/FiO2, düşük trombosit, düşük
+> ortalama arter basıncı ve düşük GKS'ye; Glasgow-Blatchford düşük
+> hemoglobin ve düşük tansiyona. Boş bırakılan her alan 0'a çevrilip EN
+> YÜKSEK puanı alıyordu:
+>
+> | araç | BOŞ formda ne basıyordu |
+> |---|---|
+> | `news2` | **15 · "YÜKSEK (Acil Müdahale)"** — eşik zaten 7 |
+> | `sofa` | **15** — %80 üzeri mortaliteye karşılık gelir |
+> | `glasgow-blatchford` | **9 · "Hastane Yatışı / Erken Endoskopi"** |
+>
+> Ölçüt "toplamın yönü" DEĞİL, **her bileşenin yönü** olmalı. Ters yön de
+> kusur: `das28` boş formda 0 basıp **"Remisyon"** diyordu — bu kez risk
+> tedaviyi gereksiz hafifletmek.
+
+**MEŞRU SIFIRI AYIRMAK ŞART.** Kapıyı sayıya bakarak kurmak yetmiyor,
+çünkü bazı alanlarda 0 gerçek bir ölçüm: SOFA'da idrar 0 mL anüridir ve en
+ağır dalı hak eder; DAS28'te eklem sayısı 0 remisyonun tanımıdır; vazopressör
+dozu 0, ilaç almayan hastadır. `parseLocaleNumber("")` de 0 döndürdüğü için
+bu alanlar **ham dizenin boş olup olmadığına** göre denetlenmeli.
 
 **SINIF ÖLÇÜMLE KAPATILDI** — yedi araç tek tek, gerçek girdiyle:
 
