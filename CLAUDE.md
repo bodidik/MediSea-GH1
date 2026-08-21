@@ -1126,6 +1126,57 @@ testte bu iki satır yan yana duruyor.
 Bir seçim çıktıyı belirliyorsa bunu ekranda da söyle: hangi seçimin sonucu
 değiştirdiğini bilmeyen kullanıcı, varsayılanla gelen cevabı kesin sanır.
 
+**Bu sınıfın TARAMA ÖLÇÜTÜ var ve ucuz:** bir `useState` değişkeni yalnızca
+`className`, `aria-pressed`, `aria-current` ya da `aria-selected` içinde
+geçiyorsa, o kontrol kendi vurgusundan başka hiçbir şeyi değiştirmiyordur.
+Nitelik değerlerini süslü parantez dengesiyle metinden çıkar, sonra değişken
+adı hâlâ geçiyor mu diye bak.
+
+124 araç · 387 durum tarandı, 2 aday çıktı: biri gerçek (`nrs-2002`, aşağıda),
+biri yanlış pozitif (`unit-converter`'ın takas düğmesi — etkisi zaten
+görünümün kendisi). Yanlış pozitif beklenen bir şey: yalnızca görünümü yöneten
+durum meşrudur (sekme, aç/kapa, sıralama). Ölçüt ADAY üretir, karar değil.
+
+`nrs-2002` bu sınıfın en pahalı hâliydi, çünkü ölü denetim aynı zamanda bir
+KAPIYDI. NRS-2002 iki aşamalıdır ve aşama 1 bir süzgeçtir: dört sorunun
+dördüne de "hayır" denen hastada ana tarama YAPILMAZ. Araçta o dört soru
+skora hiç girmiyordu — yani araç, klinik algoritmanın yarısını atlıyordu.
+
+**Ölü denetimin yanında çoğu zaman ikinci bir kusur durur: BOŞ FORMDAN
+KLİNİK ETİKET.** Aynı araçta hiç dokunulmamış sayfa "SKOR 0 · RİSK DÜŞÜK"
+basıyordu. İkisi aynı kökten geliyor — kontrolün cevaplanıp cevaplanmadığı
+hiç sorulmuyor.
+
+**`<select>`te `value` yoksa "dokunulmadı" ile ilk seçenek AYNI şeydir.**
+Eski kodda seçim kutularının `value`su yoktu ve ilk seçenek "Normal (0 Puan)"
+görünüyordu; kullanıcı hiçbir şey seçmeden araç "normal" cevabını almış
+sayıyordu. Boş bir `<option value="">` şart, ve seçim `null` iken sınıflama
+basılmamalı.
+
+### Şişen vurgu etiketi — dengesi bozuk olmayan sürümü
+
+Kapanmamış etiket sınıfını `konu-denetim` yakalıyor. Ama **aynı görünür sonuç
+denge bozulmadan da oluşur**: yazar `<strong>`'u koca bir paragrafın tamamına
+sararsa etiket düzgün kapanır, denetim temiz der, ekranda yarım sayfa kalın
+basılır. Vurgunun işi bir şeyi öne çıkarmak; her şey kalınsa hiçbir şey kalın
+değildir.
+
+Ölçüt: her `strong/em/b/i/h1-h6` etiketinin sardığı düz metnin uzunluğu.
+Sağlam bir sayfada en uzun satır içi etiket onlarca karakterdir. 456 dosyadaki
+10134 etiket tarandı — eşiği (250) aşan tek etiket var ve o bilinçli bir
+italik uyarı notu. Sınıf temiz.
+
+**Bu ölçüm KAYNAKTA yapılabilir ve tarayıcı gerektirmez** — ki 410 konu
+sayfasını yerel dev sunucuda gezmenin tuzağı belgede zaten yazılı. Kaynak
+düzeyindeki sayı DOM'la doğrulandı: `ektopik-acth-sendromu`da kaynakta
+ölçülen en uzun etiket 1740, tarayıcıda ölçülen de 1740; onarımdan sonra
+ikisi de 76.
+
+Negatif kontrolü git'ten al: ölçütü düzeltme ÖNCESİ sürüme uygula ve kusuru
+gerçekten bulduğunu gör. "0 kusur" ile "0 öge" ayrımı için taramanın ölçtüğü
+öge sayısını da bastır.
+
+
 ### Seçim durumunu PUANLA saklama — aynı puanlı şıklar tek düğme olur
 
 Hesaplayıcıların ortak kalıbı: `useState<number|null>` ve
