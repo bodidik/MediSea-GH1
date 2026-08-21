@@ -42,7 +42,7 @@ export default function PremiumDailyProgram() {
       <span className="text-xl">⚠️</span>
       <div>
         <p className="font-bold">Radar Bağlantısı Kesildi</p>
-        <p className="text-[10px] opacity-70 uppercase tracking-widest">{err}</p>
+        <p className="text-[10px] uppercase tracking-widest">{err}</p>
       </div>
     </div>
   );

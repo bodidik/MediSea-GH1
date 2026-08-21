@@ -75,7 +75,7 @@ export default function CanonicalViewer({ data, branch, id }: { data: CanonicalD
               ✍️
             </div>
             <div className="text-left">
-              <p className="text-[10px] uppercase tracking-widest opacity-70 leading-none mb-1">Hızlı Müdahale</p>
+              <p className="text-[10px] uppercase tracking-widest leading-none mb-1">Hızlı Müdahale</p>
               <p className="text-xs font-black">STUDIO'DA DÜZELT</p>
             </div>
           </Link>

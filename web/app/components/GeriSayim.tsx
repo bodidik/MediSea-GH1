@@ -83,7 +83,7 @@ export default function GeriSayim({ sinavlar }: { sinavlar: Sinav[] }) {
     <div className={`rounded-2xl bg-gradient-to-br ${m.zemin} p-5 text-white shadow-lg`}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.25em] opacity-60">
+          <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/80">
             {veri.sinav.ad}
           </p>
           <div className="mt-1 flex items-baseline gap-2">
@@ -92,25 +92,25 @@ export default function GeriSayim({ sinavlar }: { sinavlar: Sinav[] }) {
             ) : (
               <>
                 <span className="text-4xl font-black tracking-tight tabular-nums">{veri.kalan}</span>
-                <span className="text-sm font-bold opacity-80">gün kaldı</span>
+                <span className="text-sm font-bold text-white/90">gün kaldı</span>
               </>
             )}
           </div>
-          <p className="mt-1 text-[11px] font-medium opacity-60">{tarihYazi}</p>
+          <p className="mt-1 text-[11px] font-medium text-white/80">{tarihYazi}</p>
         </div>
 
         <div className="max-w-xs">
           <span className="inline-block rounded-full bg-white/15 px-3 py-1 text-[10px] font-black uppercase tracking-widest">
             {m.etiket}
           </span>
-          <p className={`mt-2 text-[12px] font-medium leading-relaxed ${m.renk} opacity-90`}>
+          <p className={`mt-2 text-[12px] font-medium leading-relaxed ${m.renk}`}>
             {m.oneri}
           </p>
         </div>
       </div>
 
       {veri.sinav.not && (
-        <p className="mt-4 border-t border-white/10 pt-3 text-[11px] font-medium opacity-60">
+        <p className="mt-4 border-t border-white/10 pt-3 text-[11px] font-medium text-white/80">
           {veri.sinav.not}
         </p>
       )}
