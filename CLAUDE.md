@@ -566,6 +566,10 @@ node scripts/link-denetim.cjs    # içerikteki kırık iç bağlantılar (yönle
 node scripts/soru-denetim.cjs    # quiz/kart yapısı: doğru cevap geçerli mi, şık var mı
 node scripts/arayuz-denetim.cjs   # arayüz kaynağı: bozuk kodlama, alt, rel, form, iç içe tıklama
 node scripts/arayuz-denetim.cjs --negatif   # denetim hâlâ kusur yakalıyor mu
+node scripts/saydamlik-denetim.cjs   # metin ögesinde opacity-* (CI kapısı DEĞİL)
+node scripts/saydamlik-denetim.cjs --negatif
+node scripts/renk-cifti-denetim.cjs  # ölçülmüş kara listeden renk çifti (CI kapısı DEĞİL)
+node scripts/renk-cifti-denetim.cjs --negatif
 node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
 node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DEĞİL)
 ```
@@ -576,6 +580,35 @@ kapıdan da geçiyor; kusur yalnızca ekranda görünüyor. Kendini sınayabiliy
 (`--negatif`) ve o da ayrı bir CI adımı — yakalamayı bırakan bir denetim
 sessizce yeşil kalmasın. Raporunda ölçülen etiket sayısı da var, çünkü
 "0 kusur" ile "0 öge" ekranda aynı görünür.
+
+`saydamlik-denetim` ve `renk-cifti-denetim` KONTRAST tarafını tarıyor ve
+ikisi de rapor, kapı değil — saydamlık da renk seçimi de kimi yerde meşru bir
+tasarım aracı.
+
+- **`saydamlik-denetim`**: metin ögesinde `opacity-40..80`. Sebebi şu:
+  CSS `opacity` rengi soldurur ama `getComputedStyle(el).color` değerine
+  YANSIMAZ, yani saydam yazı bütün kontrast ölçümlerinde olduğundan koyu
+  görünür. Bedeli ölçüldü — 92 araçta klinik uyarı 3.46, 28 araçta sonuç
+  açıklaması 3.59, sınav geri sayımı amber evresinde 4.34.
+  Çare saydamlığı artırmak DEĞİL, ölçülebilir hâle getirmek:
+  `opacity-60` yerine `text-white/80`. Renk alfası `color` içinde rgba olarak
+  görünür.
+- **`renk-cifti-denetim`**: saydamlık taşımayan kontrast kusurları. Kara
+  liste TAHMİN DEĞİL — gerçek bir sayfada, uygulamanın kendi CSS'i altında
+  126 renk çifti çizilip ÖLÇÜLDÜ (`globals.css` ezmeleri dahil). Sınıf adından
+  hesaplanamaz, çünkü `.text-slate-300` gibi tonlar eziliyor.
+
+Renk çifti taramasının **üç yanlış pozitif kaynağı** var ve üçü de yaşandı:
+`hover:bg-blue-500` TABAN renk değil (varyantlı sınıfın tamamı atılmalı —
+yalnızca öneki silmek `bg-blue-500`i bırakıyor ve 27 adayın çoğu bu yüzden
+sahteydi); Tailwind kullanılmayan sınıfı üretmiyor, o çiftlerde zemin hiç
+uygulanmıyor ve beyaz beyazda 1.00 çıkıyor; zemin gerçekte bir ATAdan
+geliyor olabilir. Bu yüzden ölçüt ADAY üretir, kararı tarayıcı ölçümü verir.
+
+**İki denetimin negatif kontrol dosyası `zz-` ile başlıyor, `_` ile DEĞİL.**
+`saydamlik-denetim`de test dosyası `__…` adıyla yazılmıştı ve betiğin kendi
+"`_` klasörlerini ele" süzgeci onu da eledi: denetim çalışıyordu ama kendi
+testini göremiyordu ve "körleşmiş" raporu verdi.
 
 `konu-denetim` konunun KENDİ KİMLİĞİNE bakıyor. Gerçek bir kusurdan doğdu:
 üretim çıktısında `<title>` tekrarı arandığında iki dosyada sadece başlık
