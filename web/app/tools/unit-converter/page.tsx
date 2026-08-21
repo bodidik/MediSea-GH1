@@ -146,6 +146,15 @@ export default function BirimCeviriciSayfasi() {
   const [gelenekselHam, setGelenekselHam] = useState<string>("100");
   /** Hangi kutuya yazıldıysa o kaynaktır; öteki ondan türetilir. */
   const [kaynak, setKaynak] = useState<"geleneksel" | "si">("geleneksel");
+  /**
+   * Ortadaki çift yönlü ok bir dönem SÜSLEMEYDİ: tıklanabilir görünüyor ama
+   * hiçbir şey yapmıyordu. Kullanıcı bildirdi. Artık panelleri yer
+   * değiştiriyor — SI ile düşünen biri SI kutusunu sola alabiliyor.
+   *
+   * DEĞERLERİ değil YERLERİ takas ediyor: değer takası yanlış sayı üretirdi
+   * (140 mmol/L'yi mg/dL kutusuna koymak gibi).
+   */
+  const [ters, setTers] = useState(false);
   const [siHam, setSiHam] = useState<string>("");
 
   const analit = ANALITLER.find((a) => a.key === secili) ?? ANALITLER[0];
@@ -231,7 +240,7 @@ export default function BirimCeviriciSayfasi() {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-center relative z-10">
 
             {/* Geleneksel taraf */}
-            <div className="space-y-3">
+            <div className={`space-y-3 ${ters ? "order-3" : "order-1"}`}>
               <label
                 htmlFor="birim-geleneksel"
                 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block"
@@ -253,15 +262,20 @@ export default function BirimCeviriciSayfasi() {
               </div>
             </div>
 
-            {/* Yön oku — süsleme */}
-            <div className="hidden md:flex items-center justify-center">
-              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg">
+            {/* Yön oku — panelleri yer değiştirir */}
+            <div className="flex items-center justify-center order-2">
+              <button
+                type="button"
+                onClick={() => setTers((t) => !t)}
+                aria-label="Birimlerin yerini değiştir"
+                title="Birimlerin yerini değiştir"
+                className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M8 7h12M8 7l4-4M8 7l4 4M16 17H4m12 0-4-4m4 4-4 4" /></svg>
-              </div>
+              </button>
             </div>
 
             {/* SI taraf */}
-            <div className="space-y-3">
+            <div className={`space-y-3 ${ters ? "order-1" : "order-3"}`}>
               <label
                 htmlFor="birim-si"
                 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block md:text-right"

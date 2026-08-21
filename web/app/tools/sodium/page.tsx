@@ -27,6 +27,28 @@ function calcTBW(sex: string, age: number, height: number, weight: number) {
   return -2.097 + 0.1069 * height + 0.2466 * weight;
 }
 
+/**
+ * ODAK KAYBI — bu bileşen bir dönem SodiumPage'in İÇİNDE tanımlıydı.
+ *
+ * React her render'da yeni bir bileşen KİMLİĞİ görüyor: eski <input>u
+ * söküp yenisini takıyor, odak da onunla gidiyor. Kullanıcı bildirdi:
+ * boy alanına 170 yazmak için kutuya ÜÇ KEZ tıklamak gerekiyordu — her
+ * rakamdan sonra kutu odağı kaybediyordu.
+ *
+ * Çare bileşeni modül düzeyine almak: kimliği artık sabit, React aynı
+ * ögeyi güncelliyor.
+ */
+const InputField = ({ label, value, set, ph, unit }: { label: string; value: string; set: (v: string) => void; ph: string; unit?: string }) => (
+  <label className="flex flex-col gap-2">
+    <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
+    <div className="relative">
+      <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
+        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+      {unit && <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400">{unit}</span>}
+    </div>
+  </label>
+);
+
 export default function SodiumPage() {
   const [mode, setMode] = React.useState<Mode>("tbw");
 
@@ -85,16 +107,6 @@ export default function SodiumPage() {
   const hyperHours = hyperDelta ? Math.abs(hyperDelta) / hyperMaxRate * 24 : null;
   const hyperMlPerHour = fwd && hyperHours ? (Math.abs(fwd) * 1000) / hyperHours : null;
 
-  const InputField = ({ label, value, set, ph, unit }: { label: string; value: string; set: (v: string) => void; ph: string; unit?: string }) => (
-    <label className="flex flex-col gap-2">
-      <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-      <div className="relative">
-        <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
-        {unit && <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400">{unit}</span>}
-      </div>
-    </label>
-  );
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
