@@ -39,9 +39,9 @@ export default function ConutPage() {
 
   const getResult = (s: number) => {
     if (s <= 1)  return { label: "NORMAL", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
-    if (s <= 4)  return { label: "HAFİF MALNÜTRISYON", color: "text-sky-700", bg: "bg-sky-50", border: "border-sky-200" };
-    if (s <= 8)  return { label: "ORTA MALNÜTRISYON", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
-    return { label: "AĞIR MALNÜTRISYON", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
+    if (s <= 4)  return { label: "HAFİF MALNÜTRİSYON", color: "text-sky-700", bg: "bg-sky-50", border: "border-sky-200" };
+    if (s <= 8)  return { label: "ORTA MALNÜTRİSYON", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
+    return { label: "AĞIR MALNÜTRİSYON", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
   const result = total !== null ? getResult(total) : null;
   const params = { alb: albN, lymp: lympN, chol: cholN };

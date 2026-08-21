@@ -16,7 +16,7 @@ export default function PniPage() {
   const pni = hasResult ? 10 * albN + 0.005 * lympN : null;
 
   const getResult = (s: number) => {
-    if (s >= 45)   return { label: "İYİ NÜTRISYON DURUMU", sub: "PNI ≥ 45 — Düşük morbidite ve mortalite riski", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
+    if (s >= 45)   return { label: "İYİ NÜTRİSYON DURUMU", sub: "PNI ≥ 45 — Düşük morbidite ve mortalite riski", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     if (s >= 40)   return { label: "HAFIF RİSK", sub: "PNI 40–44.9 — Orta derece risk", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
     if (s >= 35)   return { label: "ORTA RİSK", sub: "PNI 35–39.9 — Artmış komplikasyon riski", color: "text-orange-700", bg: "bg-orange-50", border: "border-orange-200" };
     return { label: "YÜKSEK RİSK", sub: "PNI < 35 — Ciddi malnütrisyon; yüksek mortalite riski", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };

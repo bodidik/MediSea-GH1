@@ -14,6 +14,17 @@ export default function Hba1cEagPage() {
 
   const a1cNum = parseLocaleNumber(a1c);
 
+  /**
+   * MAKULLÜK KAPISI. Ölçüldü (canlı): boş, harf ve sıfır girdide araç
+   * **eAG 0** basıp altına **"Normal Aralık"** yazıyordu — kullanıcıya
+   * ortalama kan şekerinin sıfır ve normal olduğunu söylemek. Negatif
+   * girdide ise **eAG −190**, yine "Normal Aralık".
+   *
+   * Sınır klinik eşik değil makullük sınırı: HbA1c ölçümü %2'nin altına
+   * inmez, %20'nin üstüne çıkmaz.
+   */
+  const makul = a1c.trim() !== "" && a1cNum >= 2 && a1cNum <= 20;
+
   const eagMgdl = useMemo(() => hba1cToEagMgdl(a1cNum), [a1cNum]);
   const eagMmol = useMemo(() => mgdlToMmol(eagMgdl), [eagMgdl]);
 
@@ -59,15 +70,15 @@ export default function Hba1cEagPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">eAG</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TAHMİNİ ORTALAMA GLUKOZ</span>
-           <div className="text-7xl font-black text-white">{eagMgdl}</div>
+           <div className="text-7xl font-black text-white">{makul ? eagMgdl : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mg / dL</span>
-           <span className="text-[11px] font-bold text-blue-300 uppercase tracking-widest mt-3">{eagMmol} mmol / L</span>
+           <span className="text-[11px] font-bold text-blue-300 uppercase tracking-widest mt-3">{makul ? eagMmol : "–"} mmol / L</span>
         </div>
 
         {/* YORUMLAMA PANELİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {interpretation.label}
+             {makul ? interpretation.label : "HbA1c değerini girin"}
            </div>
         </div>
 

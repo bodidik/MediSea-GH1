@@ -75,8 +75,8 @@ export default function SgaPage() {
 
   const RESULT = {
     A: { label: "SGA-A: İYİ BESLENMİŞ", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", sub: "Malnütrisyon yok; rutin izlem yeterli" },
-    B: { label: "SGA-B: HAFİF / ORTA MALNÜTRISYON", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", sub: "Hafif-orta malnütrisyon şüphesi; nütrisyon desteği planla" },
-    C: { label: "SGA-C: AĞIR MALNÜTRISYON", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200", sub: "Ağır malnütrisyon; acil nütrisyon müdahalesi gerekli" },
+    B: { label: "SGA-B: HAFİF / ORTA MALNÜTRİSYON", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", sub: "Hafif-orta malnütrisyon şüphesi; nütrisyon desteği planla" },
+    C: { label: "SGA-C: AĞIR MALNÜTRİSYON", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200", sub: "Ağır malnütrisyon; acil nütrisyon müdahalesi gerekli" },
   };
 
   return (
