@@ -16,20 +16,38 @@ export default function InfusionPage() {
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
   // sayıya çevirme sadece hesaplama anında yapılır.
   // 1) mL/saat ↔ gtt/dk
-  const [rateMlHr, setRateMlHr] = React.useState<string>("0");
+  const [rateMlHr, setRateMlHr] = React.useState<string>("");
   const [dropFactor, setDropFactor] = React.useState<string>("20");
   const rateMlHrNum = parseLocaleNumber(rateMlHr);
   const dropFactorNum = parseLocaleNumber(dropFactor);
+  /**
+   * KAPI — hiç veri girilmemiş formda sayı basılmıyor.
+   *
+   * Alanlar bir dönem "0" ile başlıyordu ve ekran dokunulmadan
+   * "HESAPLANAN AKIŞ 0 DAMLA/DAKİKA" ile "POMPA AYARI 0 mL/SAAT" basıyordu.
+   * Kimsenin girmediği bir pompa ayarı gösterilmiş oluyordu; serideki öteki
+   * 13 araç boş başlayıp "girin" diyor, bu araç tek istisnaydı.
+   *
+   * parseLocaleNumber çözemediğini de 0 döndürdüğü için kapı HAM DİZEYE
+   * bakıyor: boş olan alan 0 SAYILMAZ.
+   */
+  const hizGirildi = rateMlHr.trim() !== "" && rateMlHrNum > 0 && rateMlHrNum <= 2000;
+  const setFaktoruGecerli = dropFactor.trim() !== "" && dropFactorNum > 0 && dropFactorNum <= 200;
+  const gttHazir = hizGirildi && setFaktoruGecerli;
   const gttPerMin = React.useMemo(() => round((rateMlHrNum * dropFactorNum) / 60, 1), [rateMlHrNum, dropFactorNum]);
 
   // 2) Doz (mg/kg/dk) ↔ mL/saat
   const [weightKg, setWeightKg] = React.useState<string>("70");
-  const [doseMgKgMin, setDoseMgKgMin] = React.useState<string>("0");
+  const [doseMgKgMin, setDoseMgKgMin] = React.useState<string>("");
   const [concentrationMgMl, setConcentrationMgMl] = React.useState<string>("1");
   const weightKgNum = parseLocaleNumber(weightKg);
   const doseMgKgMinNum = parseLocaleNumber(doseMgKgMin);
   const concentrationMgMlNum = parseLocaleNumber(concentrationMgMl);
 
+  const dozGirildi = doseMgKgMin.trim() !== "" && doseMgKgMinNum > 0 && doseMgKgMinNum <= 1000;
+  const kiloGecerli = weightKg.trim() !== "" && weightKgNum >= 1 && weightKgNum <= 300;
+  const derisimGecerli = concentrationMgMl.trim() !== "" && concentrationMgMlNum > 0 && concentrationMgMlNum <= 1000;
+  const dozHazir = dozGirildi && kiloGecerli && derisimGecerli;
   const mlPerHrFromDose = React.useMemo(() => {
     const mgPerMin = doseMgKgMinNum * weightKgNum;
     const mgPerHr = mgPerMin * 60;
@@ -89,8 +107,10 @@ export default function InfusionPage() {
 
             <div className="bg-blue-900 rounded-3xl p-6 flex flex-col items-center justify-center shadow-xl border-b-4 border-amber-400">
                <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-2">HESAPLANAN AKIŞ</span>
-               <div className="text-4xl font-black text-white">{gttPerMin}</div>
-               <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-1">DAMLA / DAKİKA</span>
+               <div className="text-4xl font-black text-white">{gttHazir ? gttPerMin : "–"}</div>
+               <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-1">
+                 {gttHazir ? "DAMLA / DAKİKA" : "Hızı girin"}
+               </span>
             </div>
           </div>
         </div>
@@ -127,8 +147,10 @@ export default function InfusionPage() {
 
           <div className="bg-slate-50 rounded-2xl p-6 border-2 border-dashed border-blue-900/10 flex flex-col items-center justify-center">
              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">POMPA AYARI</span>
-             <div className="text-4xl font-black text-blue-900">{mlPerHrFromDose}</div>
-             <span className="text-[10px] font-bold text-blue-900/80 uppercase tracking-widest mt-1">mL / SAAT</span>
+             <div className="text-4xl font-black text-blue-900">{dozHazir ? mlPerHrFromDose : "–"}</div>
+             <span className="text-[10px] font-bold text-slate-700 uppercase tracking-widest mt-1">
+               {dozHazir ? "mL / SAAT" : "Hedef dozu girin"}
+             </span>
           </div>
         </div>
 
