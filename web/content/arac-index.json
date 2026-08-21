@@ -455,6 +455,11 @@
   "desc": "Prognostik Nütrisyon İndeksi — albumin + lenfosit"
  },
  {
+  "slug": "potasyum-replasman",
+  "name": "Potasyum Replasmanı",
+  "desc": "IV potasyumda hız, derişim ve süre sınırları — periferik ve santral yol ayrı"
+ },
+ {
   "slug": "ppi",
   "name": "Palyatif Prognostik İndeks (PPI)",
   "desc": "Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta)"
