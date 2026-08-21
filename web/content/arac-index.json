@@ -590,6 +590,11 @@
   "desc": "Total Nazal Semptom Skoru — 4 semptom, 0–12"
  },
  {
+  "slug": "tromboliz-doz",
+  "name": "Tromboliz Dozu (rt-PA)",
+  "desc": "İnmede kiloya göre + 90 mg tavan, masif emboli de 100 mg sabit — aynı ilaç, farklı rejim"
+ },
+ {
   "slug": "uas7",
   "name": "UAS7",
   "desc": "Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği"
