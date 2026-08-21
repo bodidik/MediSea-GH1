@@ -3,51 +3,128 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
-const BURDEN_OPTS = [["Semptom yok / hafif semptom", 5], ["Orta düzey semptom", 3], ["Ciddi semptom / eksitus hali", 0]] as const;
+/**
+ * MASCC Risk İndeksi — febril nötropenide komplikasyon riski.
+ *
+ * ─────────────────────────────────────────────────────────────────────────
+ * BURADA PUANLAMA TERSTİ VE CANLIDA ÖLÇÜLDÜ.
+ *
+ * Eski kodda etiketler OLUMLU yazılıydı ("Hipotansiyon Yok · +5") ama hesap
+ * değişken ADINA uyuyordu: `hypotension ? 0 : 5`. Yani kullanıcı doğru olanı
+ * yapıp "Hipotansiyon Yok" kutusunu işaretlediğinde puan EKLENMİYOR,
+ * çıkarılıyordu. Altı kutunun DÖRDÜ kendi etiketinin tersine puanlıyordu.
+ *
+ * Ölçüm (canlı, gerçek tıklamalarla):
+ *   dokunulmamış        19
+ *   + "Hipotansiyon Yok" 14   (+5 olmalıydı)
+ *   + "KOAH Yok"         10   (+4 olmalıydı)
+ *   + "Dehidratasyon Yok" 11  (+3 olmalıydı)
+ *   + "Yaş < 60"         12   (+2 olmalıydı)
+ * Bütün olumlu özellikleri taşıyan hasta 12 alıp "YÜKSEK RİSK" çıkıyordu;
+ * gerçek MASCC'si 26, yani mümkün olan en düşük risk.
+ *
+ * ÇARE, İŞARETİ DÜZELTMEK DEĞİL BELİRSİZLİĞİ KALDIRMAK: her öge artık bir
+ * SORU ve cevap açıkça Evet/Hayır. "Evet" olumlu özelliğin VAR olduğunu
+ * söyler ve puanı ekler. Değişken adı ile etiketin ters düşebileceği bir yer
+ * kalmıyor.
+ *
+ * İKİNCİ KUSUR — BOŞ FORMDAN KLİNİK ETİKET. Hiç dokunulmamış sayfa
+ * "19 · YÜKSEK RİSK" basıyordu. Yedi ögenin yedisi de yanıtlanmadan artık
+ * sınıflama basılmıyor.
+ * ─────────────────────────────────────────────────────────────────────────
+ */
+
+type Cevap = "evet" | "hayir" | null;
+
+/** Sorular OLUMLU özelliği sorar; "Evet" puanı EKLER. Toplam en çok 26. */
+const OGELER = [
+  { id: "hipotansiyon", soru: "Hipotansiyon yok mu?", alt: "Sistolik kan basıncı > 90 mmHg", puan: 5 },
+  { id: "koah", soru: "Aktif KOAH yok mu?", alt: "Kronik obstrüktif akciğer hastalığı", puan: 4 },
+  { id: "solid", soru: "Solid tümör mü, ya da önceden fungal enfeksiyon yok mu?", alt: "Hematolojik malignitede geçirilmiş fungal enfeksiyon yoksa da geçerli", puan: 4 },
+  { id: "dehidratasyon", soru: "IV sıvı gerektiren dehidratasyon yok mu?", alt: "", puan: 3 },
+  { id: "ayaktan", soru: "Ateş başladığında hasta ayaktan mıydı?", alt: "Hastane dışında", puan: 3 },
+  { id: "yas", soru: "Hasta 60 yaşından küçük mü?", alt: "", puan: 2 },
+] as const;
+
+type OgeId = (typeof OGELER)[number]["id"];
+
+const YUK = [
+  { p: 5, label: "Semptom yok ya da hafif semptom" },
+  { p: 3, label: "Orta düzey semptom" },
+  { p: 0, label: "Ciddi semptom / genel durum kötü" },
+];
+
+const ESIK = 21;
+const ENCOK = 26;
 
 /**
- * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
- * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
- * kullanici her tus vurusunda odagi kaybeder.
+ * MODÜL DÜZEYİNDE — sayfa içinde tanımlanan bileşen her render'da yeni kimlik
+ * alır ve React kontrolü söküp yeniden takar.
  */
-const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: string; pts: number; checked: boolean; onChange: () => void }) => (
-  <label className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer group
-    ${checked ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-    <div className="flex items-center gap-4">
-      <div className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0
-        ${checked ? 'bg-amber-400 border-amber-400 text-blue-900' : 'bg-white border-slate-200 text-transparent'}`}>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+function EvetHayirSatiri({
+  id,
+  soru,
+  alt,
+  puan,
+  deger,
+  ayarla,
+}: {
+  id: string;
+  soru: string;
+  alt: string;
+  puan: number;
+  deger: Cevap;
+  ayarla: (v: Cevap) => void;
+}) {
+  return (
+    <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center gap-3">
+      <div className="flex-1">
+        <span id={`${id}-etiket`} className="text-sm font-bold text-blue-900 block">
+          {soru}
+        </span>
+        {alt && <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{alt}</span>}
       </div>
-      <div>
-        <span className={`text-sm font-bold block ${checked ? 'text-white' : 'text-blue-900/80 group-hover:text-blue-900'}`}>{label}</span>
-        <span className={`text-[9px] font-bold uppercase tracking-widest ${checked ? 'text-blue-200' : 'text-slate-400'}`}>{sub}</span>
+      <span className="text-[10px] font-black tracking-widest text-slate-500 shrink-0">
+        Evet ise +{puan}
+      </span>
+      <div className="flex gap-2 shrink-0" role="group" aria-labelledby={`${id}-etiket`}>
+        {(["evet", "hayir"] as const).map((v) => (
+          <button
+            key={v}
+            type="button"
+            aria-pressed={deger === v}
+            onClick={() => ayarla(deger === v ? null : v)}
+            className={`px-5 py-2.5 rounded-xl border-2 text-[11px] font-black uppercase tracking-widest transition-all
+              ${
+                deger === v
+                  ? v === "evet"
+                    ? "bg-blue-900 border-blue-900 text-white"
+                    : "bg-slate-700 border-slate-700 text-white"
+                  : "bg-white border-slate-200 text-slate-600 hover:border-blue-900/30"
+              }`}
+          >
+            {v === "evet" ? "Evet" : "Hayır"}
+          </button>
+        ))}
       </div>
     </div>
-    <input type="checkbox" className="sr-only" checked={checked} onChange={onChange} />
-    <span className={`text-[10px] font-black tracking-widest shrink-0 ${checked ? 'text-amber-400' : 'text-slate-400'}`}>+{pts}</span>
-  </label>
-);
+  );
+}
 
 export default function MasccPage() {
-  const [burden, setBurden] = React.useState(5);
-  const [hypotension, setHypotension] = React.useState(false); // yok → +5
-  const [copd, setCopd] = React.useState(false);               // yok → +4
-  const [solidOrNoFungal, setSolidOrNoFungal] = React.useState(false); // solid tümör veya önceden fungal enf. yok → +4
-  const [dehydration, setDehydration] = React.useState(false); // yok → +3
-  const [outpatient, setOutpatient] = React.useState(false);   // ateş başladığında ayaktan → +3
-  const [age60, setAge60] = React.useState(false);             // <60 yaş → +2
+  const [yuk, setYuk] = React.useState<number | null>(null);
+  const [cevaplar, setCevaplar] = React.useState<Record<OgeId, Cevap>>(
+    Object.fromEntries(OGELER.map((o) => [o.id, null])) as Record<OgeId, Cevap>,
+  );
 
-  const score = burden
-    + (hypotension ? 0 : 5)
-    + (copd ? 0 : 4)
-    + (solidOrNoFungal ? 4 : 0)
-    + (dehydration ? 0 : 3)
-    + (outpatient ? 3 : 0)
-    + (age60 ? 0 : 2);
+  const yanitlanan = (yuk === null ? 0 : 1) + OGELER.filter((o) => cevaplar[o.id] !== null).length;
+  const toplamOge = OGELER.length + 1;
+  const tamam = yanitlanan === toplamOge;
 
-  const lowRisk = score >= 21;
-  const params = { b: burden, h: hypotension?1:"", c: copd?1:"", s: solidOrNoFungal?1:"", d: dehydration?1:"", o: outpatient?1:"", a: age60?1:"" };
-
+  const skor = tamam
+    ? yuk! + OGELER.reduce((t, o) => t + (cevaplar[o.id] === "evet" ? o.puan : 0), 0)
+    : null;
+  const dusukRisk = skor !== null && skor >= ESIK;
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -55,69 +132,130 @@ export default function MasccPage() {
         <ToolTopNav toolSlug="mascc" />
 
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
-          <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">🎗️</div>
+          <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">
+            <span aria-hidden="true">🎗️</span>
+          </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 text-xs">☀️</span>
-              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">MASCC Risk İndeksi</h1>
+              <span className="text-amber-500 text-xs" aria-hidden="true">
+                ☀️
+              </span>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">
+                MASCC Risk İndeksi
+              </h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Febril Nötropenide Komplikasyon Riski</p>
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest leading-none mt-1">
+              Febril nötropenide komplikasyon riski · yüksek puan = düşük risk
+            </p>
           </div>
         </div>
 
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start gap-3">
+          <span className="text-amber-600 text-lg" aria-hidden="true">
+            ⚠️
+          </span>
+          <p className="text-[12px] leading-relaxed text-amber-900">
+            <strong>Bu indekste yüksek puan İYİdir.</strong> Her soru olumlu bir
+            özelliği sorar; &ldquo;Evet&rdquo; puanı ekler. Toplam {ENCOK} üzerinden
+            hesaplanır ve {ESIK} puan ve üzeri düşük riskli grubu tanımlar.
+          </p>
+        </div>
+
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-            <span className="text-sm font-bold text-blue-900/80 block">Hastalık Yükü / Semptom Şiddeti</span>
+          <div className="flex items-baseline justify-between border-b border-slate-100 pb-2">
+            <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
+              Değerlendirme
+            </span>
+            <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
+              {yanitlanan}/{toplamOge} yanıtlandı
+            </span>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+            <span className="text-sm font-bold text-blue-900 block">Hastalık yükü / semptom şiddeti</span>
             <div className="grid gap-1.5">
-              {BURDEN_OPTS.map(([l, v]) => (
-                <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
-                  ${burden === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
-                  <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
-                    ${burden === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
-                    {burden === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
-                  </div>
-                  <input type="radio" className="sr-only" checked={burden === v} onChange={() => setBurden(v)} />
-                  <span className={`text-[12px] font-bold flex-1 ${burden === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
-                  <span className={`text-[10px] font-black ${burden === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
-                </label>
+              {YUK.map((o) => (
+                <button
+                  key={o.p}
+                  type="button"
+                  aria-pressed={yuk === o.p}
+                  onClick={() => setYuk(yuk === o.p ? null : o.p)}
+                  className={`flex items-center gap-3 p-3 rounded-xl border-2 transition-all text-left
+                    ${yuk === o.p ? "bg-blue-900 border-blue-900" : "bg-white border-slate-200 hover:border-blue-900/30"}`}
+                >
+                  <span className={`text-[12px] font-bold flex-1 ${yuk === o.p ? "text-white" : "text-blue-900"}`}>
+                    {o.label}
+                  </span>
+                  <span className={`text-[10px] font-black ${yuk === o.p ? "text-amber-400" : "text-slate-500"}`}>
+                    +{o.p}
+                  </span>
+                </button>
               ))}
             </div>
           </div>
 
-          <CheckRow label="Hipotansiyon Yok" sub="SKB > 90 mmHg" pts={5} checked={hypotension} onChange={() => setHypotension(v => !v)} />
-          <CheckRow label="KOAH Yok" sub="Aktif kronik obstrüktif akciğer hastalığı yok" pts={4} checked={copd} onChange={() => setCopd(v => !v)} />
-          <CheckRow label="Solid Tümör veya Önceden Fungal Enf. Yok" sub="Hematolojik maligniteye bağlı geçmiş fungal enfeksiyon yok" pts={4} checked={solidOrNoFungal} onChange={() => setSolidOrNoFungal(v => !v)} />
-          <CheckRow label="Dehidratasyon Yok" sub="IV sıvı gerektirmiyor" pts={3} checked={dehydration} onChange={() => setDehydration(v => !v)} />
-          <CheckRow label="Ateş Başlangıcında Ayaktan Hasta" sub="Hastane dışında" pts={3} checked={outpatient} onChange={() => setOutpatient(v => !v)} />
-          <CheckRow label="Yaş < 60" sub="" pts={2} checked={age60} onChange={() => setAge60(v => !v)} />
+          {OGELER.map((o) => (
+            <EvetHayirSatiri
+              key={o.id}
+              id={`mascc-${o.id}`}
+              soru={o.soru}
+              alt={o.alt}
+              puan={o.puan}
+              deger={cevaplar[o.id]}
+              ayarla={(v) => setCevaplar((p) => ({ ...p, [o.id]: v }))}
+            />
+          ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">MASCC</span>
-            <div className="text-5xl font-black text-white">{score}</div>
-            <span className="text-[10px] font-black text-blue-300 mt-1">/ 26</span>
+        {tamam ? (
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
+              <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">MASCC</span>
+              <div className="text-5xl font-black text-white">{skor}</div>
+              <span className="text-[10px] font-black text-blue-300 mt-1">/ {ENCOK}</span>
+            </div>
+            <div
+              className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed
+                ${dusukRisk ? "border-emerald-300 bg-emerald-50" : "border-rose-300 bg-rose-50"}`}
+            >
+              <span className="text-[10px] font-black text-slate-700 uppercase tracking-widest mb-2 block">
+                Risk
+              </span>
+              <p
+                className={`text-2xl font-black italic tracking-tight ${dusukRisk ? "text-emerald-800" : "text-rose-800"}`}
+              >
+                {dusukRisk ? "Düşük risk" : "Yüksek risk"}
+              </p>
+              <p className={`text-sm font-bold mt-1 ${dusukRisk ? "text-emerald-800" : "text-rose-800"}`}>
+                {dusukRisk
+                  ? `Eşik: ≥${ESIK} puan · ayaktan oral antibiyotik değerlendirilebilir`
+                  : `Eşik: <${ESIK} puan · hastane yatışı ve IV antibiyotik önerilir`}
+              </p>
+            </div>
           </div>
-          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed
-            ${lowRisk ? 'border-emerald-200 bg-emerald-50' : 'border-rose-200 bg-rose-50'}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK</span>
-            <p className={`text-2xl font-black italic tracking-tight ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
-              {lowRisk ? 'DÜŞÜK RİSK' : 'YÜKSEK RİSK'}
-            </p>
-            <p className={`text-sm font-bold mt-1 ${lowRisk ? 'text-emerald-700' : 'text-rose-700'}`}>
-              {lowRisk ? 'Eşik: ≥21 puan · Ayaktan oral antibiyotik değerlendirilebilir' : 'Eşik: <21 puan · Hastane yatışı ve IV antibiyotik önerilir'}
+        ) : (
+          <div className="bg-white rounded-[2rem] border-2 border-dashed border-slate-200 p-8 text-center">
+            <p className="text-sm font-bold text-slate-600" role="status">
+              {toplamOge - yanitlanan} öge yanıtlanmadı. Yanıtlanmayan bir öge
+              &ldquo;hayır&rdquo; anlamına GELMEZ; hepsi yanıtlanmadan risk sınıflaması
+              basılmaz.
             </p>
           </div>
-        </div>
+        )}
 
-        <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
+        <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-5">
           <div className="flex justify-center border-b border-slate-100 pb-4">
-            <ToolShare params={params} />
+            <ToolShare params={{}} />
           </div>
-          <div className="flex items-start gap-3 opacity-60">
-            <span className="text-amber-500 text-lg">⚠️</span>
-            <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
-              MASCC indeksi febril nötropenik hastalarda düşük riskli grubu (ayaktan tedavi adayı) belirlemek için kullanılır. Nihai karar kurumsal protokol ve klinik değerlendirmeyle birlikte verilmelidir.
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">
+              ⚠️
+            </span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
+              MASCC indeksi febril nötropenik hastalarda <strong>düşük riskli grubu</strong>{" "}
+              (ayaktan tedavi adayı) belirlemek için kullanılır; yüksek riski derecelendirmez.
+              Nihai karar kurumsal protokol ve klinik değerlendirmeyle birlikte verilir.
+              İndeks, nötropeni süresi ve derinliği gibi bazı önemli etkenleri içermez.
             </p>
           </div>
         </div>
