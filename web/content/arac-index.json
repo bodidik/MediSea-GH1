@@ -365,6 +365,11 @@
   "desc": "Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans)"
  },
  {
+  "slug": "magnezyum-infuzyon",
+  "name": "Magnezyum İnfüzyonu",
+  "desc": "Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt"
+ },
+ {
   "slug": "mascc",
   "name": "MASCC Risk İndeksi",
   "desc": "Febril nötropenide komplikasyon riski"
