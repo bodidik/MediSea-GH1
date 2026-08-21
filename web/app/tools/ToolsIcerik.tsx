@@ -121,6 +121,7 @@ const TOOLS_DATABASE = [
       { slug: "ciwa-ar", name: "CIWA-Ar", desc: "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme" },
       { slug: "4t-hit", name: "4T Skoru — HIT", desc: "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)" },
       { slug: "infusion", name: "İnfüzyon Hesaplama", desc: "IV doz ve damla sayısı asistanı" },
+      { slug: "fosfat-replasman", name: "Fosfat Replasmanı", desc: "Zorunlu potasyum/sodyum yükü — süreyi çoğu zaman fosfat değil potasyum sınırlıyor" },
       { slug: "kalsiyum-infuzyon", name: "Kalsiyum İnfüzyonu", desc: "Glukonat/klorür dönüşümü — aynı ampul üç kat farklı elementer kalsiyum taşır" },
       { slug: "magnezyum-infuzyon", name: "Magnezyum İnfüzyonu", desc: "Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt" },
       { slug: "heparin-nomogram", name: "Heparin Nomogramı", desc: "Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor" },

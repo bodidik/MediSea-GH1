@@ -235,6 +235,11 @@
   "desc": "Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil"
  },
  {
+  "slug": "fosfat-replasman",
+  "name": "Fosfat Replasmanı",
+  "desc": "Zorunlu potasyum/sodyum yükü — süreyi çoğu zaman fosfat değil potasyum sınırlıyor"
+ },
+ {
   "slug": "frail",
   "name": "FRAIL Skalası",
   "desc": "Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan"
