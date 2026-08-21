@@ -1,53 +1,154 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-// 🚀 Fonksiyonları geçici isimlerle alıyoruz
-import { mgdlToMmol as _mgdlToMmol, mmolToMgdl as _mmolToMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import ToolShare from "@/app/tools/components/ToolShare";
+import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
-// 🛡️ BÜTÜN DOSYAYI KURTARAN ZIRH: Fonksiyonları as any yaparak parametre kontrollerini tamamen esnetiyoruz
-const mgdlToMmol = _mgdlToMmol as any;
-const mmolToMgdl = _mmolToMgdl as any;
-
-const factor: any = new Proxy(() => 1, {
-  get: () => 1,
-  apply: () => 1
-});
-
-/** * Birim Çeviri Paneli - Gündüz Modu (Sakin Deniz)
- * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
+/**
+ * Birim Çevirici — geleneksel ↔ SI laboratuvar birimleri.
+ *
+ * ─────────────────────────────────────────────────────────────────────
+ * BU SAYFA CANLIDA TAMAMEN BOZUKTU. Ölçüldü: her analitte, ilk açılış
+ * dahil, SI kutusunda **NaN** yazıyordu.
+ *
+ * Sebep: ortak yardımcı `mgdlToMmol(mgdl, factor = 18)` ikinci parametre
+ * olarak SAYI bekliyor, sayfa ise ona `selectedUnit` yani `"glucose"` gibi
+ * bir DİZE geçiriyordu — `100 / "glucose"` = NaN. Kusuru tip denetimi
+ * yakalayabilirdi ama dosyanın başında "bütün dosyayı kurtaran zırh" diye
+ * eklenmiş `as any` dökümleri vardı ve denetimi tam da bu noktada
+ * susturuyordu. Ayrıca hiçbir yerde kullanılmayan, her erişimde 1 döndüren
+ * sahte bir `factor` Proxy'si duruyordu.
+ *
+ * Bu yüzden çeviri artık ortak yardımcıyı KULLANMIYOR: her analit kendi
+ * ileri/geri dönüşümünü taşıyor. Böylece hem imza karışıklığı ortadan
+ * kalkıyor hem de HbA1c gibi çarpan olmayan (doğrusal) dönüşümler
+ * ifade edilebiliyor.
+ *
+ * İKİNCİ KUSUR — SI birimi her analit için "mmol/L" yazıyordu. Kreatinin,
+ * bilirubin, ürik asit ve demir SI'da **µmol/L** ile raporlanır; albümin
+ * ve hemoglobin **g/L**; HbA1c **mmol/mol**. Kreatininde bu, 1000 kat
+ * yanlış bir etiket demekti.
+ * ─────────────────────────────────────────────────────────────────────
  */
 
-type ConversionKind = "glucose" | "ureaNitrogen" | "creatinine" | "calcium";
+type Analit = {
+  key: string;
+  ad: string;
+  ikon: string;
+  gelenekselBirim: string;
+  siBirim: string;
+  /** geleneksel → SI */
+  ileri: (x: number) => number;
+  /** SI → geleneksel */
+  geri: (y: number) => number;
+  /** makullük sınırı (geleneksel birimde) — klinik eşik DEĞİL */
+  alt: number;
+  ust: number;
+  /** katsayının kaynağı; ekranda gösteriliyor */
+  not: string;
+};
 
-const UNITS: { key: ConversionKind; label: string; icon: string }[] = [
-  { key: "glucose", label: "Glikoz", icon: "🍬" },
-  { key: "ureaNitrogen", label: "BUN (Üre Azotu)", icon: "🧪" },
-  { key: "creatinine", label: "Kreatinin", icon: "🧬" },
-  { key: "calcium", label: "Kalsiyum", icon: "🥛" },
+/** Ondalık gürültüsünü temizler: 5.550000000000001 → 5.55 */
+const yuvarla = (n: number, basamak: number) =>
+  Math.round(n * 10 ** basamak) / 10 ** basamak;
+
+/** Çarpan tabanlı analit üreteci (çoğu dönüşüm böyle). */
+function carpanlaAnalit(
+  key: string, ad: string, ikon: string,
+  gelenekselBirim: string, siBirim: string,
+  k: number, alt: number, ust: number, not: string,
+  basamakSI = 2, basamakGel = 2,
+): Analit {
+  return {
+    key, ad, ikon, gelenekselBirim, siBirim, alt, ust, not,
+    ileri: (x) => yuvarla(x * k, basamakSI),
+    geri: (y) => yuvarla(y / k, basamakGel),
+  };
+}
+
+/**
+ * Katsayılar standart laboratuvar dönüşüm sabitleridir; her biri yorumda
+ * açıkça yazılı ki gözden geçirilebilsin.
+ */
+const ANALITLER: Analit[] = [
+  carpanlaAnalit("glukoz", "Glukoz", "🍬", "mg/dL", "mmol/L",
+    1 / 18.0182, 5, 2000, "mg/dL ÷ 18.02"),
+  carpanlaAnalit("bun", "BUN (üre azotu)", "🧪", "mg/dL", "mmol/L",
+    1 / 2.8, 1, 300, "mg/dL ÷ 2.8 (üre olarak)"),
+  carpanlaAnalit("kreatinin", "Kreatinin", "🧬", "mg/dL", "µmol/L",
+    88.4, 0.1, 25, "mg/dL × 88.4", 1, 2),
+  carpanlaAnalit("kalsiyum", "Kalsiyum", "🥛", "mg/dL", "mmol/L",
+    1 / 4.008, 1, 25, "mg/dL ÷ 4.008"),
+  carpanlaAnalit("fosfor", "Fosfor", "🦴", "mg/dL", "mmol/L",
+    1 / 3.097, 0.3, 20, "mg/dL ÷ 3.10"),
+  carpanlaAnalit("magnezyum", "Magnezyum", "⚡", "mg/dL", "mmol/L",
+    1 / 2.431, 0.2, 15, "mg/dL ÷ 2.43"),
+  carpanlaAnalit("kolesterol", "Kolesterol (T/LDL/HDL)", "🫀", "mg/dL", "mmol/L",
+    1 / 38.67, 5, 900, "mg/dL ÷ 38.67"),
+  carpanlaAnalit("trigliserid", "Trigliserid", "🧈", "mg/dL", "mmol/L",
+    1 / 88.57, 5, 5000, "mg/dL ÷ 88.57"),
+  carpanlaAnalit("bilirubin", "Bilirubin", "🟡", "mg/dL", "µmol/L",
+    17.104, 0.1, 60, "mg/dL × 17.10", 1, 2),
+  carpanlaAnalit("urikasit", "Ürik asit", "💎", "mg/dL", "µmol/L",
+    59.48, 0.5, 30, "mg/dL × 59.48", 0, 2),
+  carpanlaAnalit("demir", "Demir", "🧲", "µg/dL", "µmol/L",
+    0.179, 1, 1000, "µg/dL × 0.179", 1, 1),
+  carpanlaAnalit("albumin", "Albümin", "🥚", "g/dL", "g/L",
+    10, 0.5, 8, "g/dL × 10", 0, 2),
+  carpanlaAnalit("hemoglobin", "Hemoglobin", "🩸", "g/dL", "g/L",
+    10, 1, 25, "g/dL × 10", 0, 1),
+  {
+    // HbA1c ÇARPAN DEĞİL doğrusal bir dönüşüm; ortak yardımcı bunu
+    // ifade edemiyordu, kendi fonksiyonlarıyla duruyor.
+    key: "hba1c", ad: "HbA1c", ikon: "📉",
+    gelenekselBirim: "% (NGSP)", siBirim: "mmol/mol (IFCC)",
+    alt: 2, ust: 20, not: "(% − 2.15) × 10.929",
+    ileri: (x) => yuvarla((x - 2.15) * 10.929, 0),
+    geri: (y) => yuvarla(y / 10.929 + 2.15, 1),
+  },
 ];
 
-export default function UnitConverterPage() {
-  const [selectedUnit, setSelectedUnit] = useState<ConversionKind>("glucose");
-  const [mgdlValue, setMgdlValue] = useState<string>("100");
-  const [mmolValue, setMmolValue] = useState<string>("");
+export default function BirimCeviriciSayfasi() {
+  const [secili, setSecili] = useState<string>("glukoz");
+  const [gelenekselHam, setGelenekselHam] = useState<string>("100");
+  /** Hangi kutuya yazıldıysa o kaynaktır; öteki ondan türetilir. */
+  const [kaynak, setKaynak] = useState<"geleneksel" | "si">("geleneksel");
+  const [siHam, setSiHam] = useState<string>("");
 
-  // mg/dL değişince mmol/L hesapla (hem nokta hem virgül ondalık ayracı kabul edilir)
-  useEffect(() => {
-    if (mgdlValue.trim() === "") {
-      setMmolValue("");
-      return;
-    }
-    const val = parseLocaleNumber(mgdlValue);
-    setMmolValue(mgdlToMmol(val, selectedUnit).toString());
-  }, [mgdlValue, selectedUnit]);
+  const analit = ANALITLER.find((a) => a.key === secili) ?? ANALITLER[0];
 
-  // Manuel mmol/L girişi için ters çeviri
-  const handleMmolChange = (val: string) => {
-    setMmolValue(val);
-    if (val.trim() === "") return;
-    const parsed = parseLocaleNumber(val);
-    setMgdlValue(mmolToMgdl(parsed, selectedUnit).toString());
+  /**
+   * Tek yönlü türetme: iki kutuyu birbirine yazan iki ayrı efekt yerine,
+   * yalnızca KAYNAK olan kutu durumda tutuluyor. Böylece ondalık yazarken
+   * ("5." gibi ara hâllerde) kutular birbirini ezmiyor.
+   */
+  const gelenekselSayi = parseLocaleNumber(gelenekselHam);
+  const siSayi = parseLocaleNumber(siHam);
+
+  const gelenekselMakul =
+    gelenekselHam.trim() !== "" &&
+    gelenekselSayi >= analit.alt &&
+    gelenekselSayi <= analit.ust;
+
+  const siMakulKaynak =
+    siHam.trim() !== "" &&
+    (() => {
+      const g = analit.geri(siSayi);
+      return g >= analit.alt && g <= analit.ust;
+    })();
+
+  const gelenekselGosterim =
+    kaynak === "geleneksel" ? gelenekselHam : siMakulKaynak ? String(analit.geri(siSayi)) : "";
+  const siGosterim =
+    kaynak === "si" ? siHam : gelenekselMakul ? String(analit.ileri(gelenekselSayi)) : "";
+
+  const gecerli = kaynak === "geleneksel" ? gelenekselMakul : siMakulKaynak;
+
+  const analitDegistir = (key: string) => {
+    setSecili(key);
+    // Analit değişince ÖTEKİ kutu yeniden türetilsin; kaynak kutu korunur.
+    setKaynak((k) => k);
   };
 
   return (
@@ -59,89 +160,122 @@ export default function UnitConverterPage() {
         {/* BAŞLIK */}
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">
-            🔄
+            <span aria-hidden="true">🔄</span>
           </div>
           <div>
             <div className="flex items-center gap-2">
-               <span className="text-amber-500 text-xs">☀️</span>
-               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Birim Çevirici</h1>
+              <span className="text-amber-500 text-xs" aria-hidden="true">☀️</span>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">
+                Birim Çevirici
+              </h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Laboratuvar Birim Dönüştürme Paneli</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">
+              Laboratuvar Birim Dönüştürme Paneli · {ANALITLER.length} analit
+            </p>
           </div>
         </div>
 
-        {/* BİRİM SEÇİMİ (NAVİGASYON) */}
-        <div className="flex flex-wrap gap-3">
-          {UNITS.map((u) => (
-            <button aria-pressed={selectedUnit === u.key}
-              key={u.key}
-              onClick={() => setSelectedUnit(u.key)}
-              className={`px-6 py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all border-2
-                ${selectedUnit === u.key 
-                  ? 'bg-blue-900 border-blue-900 text-white shadow-lg shadow-blue-900/20' 
-                  : 'bg-white border-slate-200 text-slate-400 hover:border-blue-900/30'}
+        {/* ANALİT SEÇİMİ */}
+        <div className="flex flex-wrap gap-2">
+          {ANALITLER.map((a) => (
+            <button
+              key={a.key}
+              type="button"
+              aria-pressed={secili === a.key}
+              onClick={() => analitDegistir(a.key)}
+              className={`px-4 py-2.5 rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all border-2
+                ${secili === a.key
+                  ? "bg-blue-900 border-blue-900 text-white shadow-lg shadow-blue-900/20"
+                  : "bg-white border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900"}
               `}
             >
-              <span className="mr-2">{u.icon}</span> {u.label}
+              <span className="mr-2" aria-hidden="true">{a.ikon}</span>{a.ad}
             </button>
           ))}
         </div>
 
         {/* ÇEVİRİ PANELİ */}
-        <div className="bg-white rounded-[2.5rem] border border-slate-200 p-10 shadow-sm relative overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-            
-            {/* mg/dL Tarafı */}
-            <div className="space-y-4 text-center md:text-left">
-              <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block">GELENEKSEL BİRİM</span>
+        <div className="bg-white rounded-[2.5rem] border border-slate-200 p-8 md:p-10 shadow-sm relative overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-center relative z-10">
+
+            {/* Geleneksel taraf */}
+            <div className="space-y-3">
+              <label
+                htmlFor="birim-geleneksel"
+                className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block"
+              >
+                Geleneksel birim
+              </label>
               <div className="relative">
-                <input aria-label="Geleneksel birim (mg/dL)"
-                  type="text" inputMode="decimal"
-                  value={mgdlValue}
-                  onChange={(e) => setMgdlValue(e.target.value)}
-                  className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-5xl font-black text-blue-900 p-4 focus:border-amber-400 outline-none transition-all text-center md:text-left rounded-t-2xl"
+                <input
+                  id="birim-geleneksel"
+                  type="text"
+                  inputMode="decimal"
+                  value={gelenekselGosterim}
+                  onChange={(e) => { setKaynak("geleneksel"); setGelenekselHam(e.target.value); }}
+                  className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-4xl md:text-5xl font-black text-blue-900 p-4 pr-24 focus:border-amber-400 outline-none transition-all rounded-t-2xl"
                 />
-                <span className="absolute right-4 bottom-4 text-xs font-black text-blue-900/80 uppercase">mg / dL</span>
+                <span className="absolute right-4 bottom-5 text-xs font-black text-blue-900/80 uppercase">
+                  {analit.gelenekselBirim}
+                </span>
               </div>
             </div>
 
-            {/* OK İkonu */}
+            {/* Yön oku — süsleme */}
             <div className="hidden md:flex items-center justify-center">
-               <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-               </div>
-            </div>
-
-            {/* mmol/L Tarafı */}
-            <div className="space-y-4 text-center md:text-left">
-              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block text-center md:text-right">SI BİRİMİ</span>
-              <div className="relative">
-                <input aria-label="SI birimi (mmol/L)"
-                  type="text" inputMode="decimal"
-                  value={mmolValue}
-                  onChange={(e) => handleMmolChange(e.target.value)}
-                  className="w-full bg-blue-900 border-b-4 border-amber-400 text-5xl font-black text-white p-4 focus:border-white outline-none transition-all text-center md:text-right rounded-t-2xl shadow-xl"
-                />
-                <span className="absolute left-4 bottom-4 text-xs font-black text-blue-200 uppercase">mmol / L</span>
+              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M8 7h12M8 7l4-4M8 7l4 4M16 17H4m12 0-4-4m4 4-4 4" /></svg>
               </div>
             </div>
 
+            {/* SI taraf */}
+            <div className="space-y-3">
+              <label
+                htmlFor="birim-si"
+                className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block md:text-right"
+              >
+                SI birimi
+              </label>
+              <div className="relative">
+                <input
+                  id="birim-si"
+                  type="text"
+                  inputMode="decimal"
+                  value={siGosterim}
+                  onChange={(e) => { setKaynak("si"); setSiHam(e.target.value); }}
+                  className="w-full bg-blue-900 border-b-4 border-amber-400 text-4xl md:text-5xl font-black text-white p-4 pl-24 focus:border-white outline-none transition-all rounded-t-2xl shadow-xl md:text-right"
+                />
+                <span className="absolute left-4 bottom-5 text-xs font-black text-blue-200 uppercase">
+                  {analit.siBirim}
+                </span>
+              </div>
+            </div>
           </div>
 
-          {/* Arka Plan Filigranı */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] text-[15rem] font-black pointer-events-none select-none italic">
-            SI
-          </div>
+          {/* Durum satırı: makul değilse SESSİZ KALMAZ */}
+          <p
+            className={`mt-6 text-[11px] font-bold tracking-wide ${gecerli ? "text-slate-500" : "text-amber-700"}`}
+            role="status"
+          >
+            {gecerli
+              ? `${analit.ad}: ${analit.not}`
+              : `Değer girin — ${analit.ad} için beklenen aralık ${analit.alt}–${analit.ust} ${analit.gelenekselBirim}.`}
+          </p>
         </div>
 
-        {/* ALT BİLGİ VE UYARI */}
-        <div className="bg-blue-900/5 p-6 rounded-[2rem] border border-blue-900/10 space-y-4">
-           <div className="flex items-center gap-3">
-             <span className="text-amber-500 animate-pulse">⚠️</span>
-             <p className="text-[10px] text-blue-900 font-bold uppercase tracking-widest italic leading-relaxed">
-               Birim çevrimleri klinik laboratuvar standartlarına (BUN katsayısı: 0.357, Glikoz katsayısı: 0.0555 vb.) göre hesaplanmaktadır.
-             </p>
-           </div>
+        {/* ALT BİLGİ */}
+        <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-5">
+          <div className="flex justify-center border-b border-slate-100 pb-4">
+            <ToolShare params={{}} />
+          </div>
+          <div className="flex items-start gap-3 opacity-70">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-600 leading-relaxed">
+              Dönüşüm katsayıları standart laboratuvar sabitleridir ve her analitin
+              yanında yazılıdır. Bazı analitler laboratuvardan laboratuvara farklı
+              birimle raporlanabilir; sonucu kendi raporunuzun birimiyle karşılaştırın.
+            </p>
+          </div>
         </div>
 
       </div>
