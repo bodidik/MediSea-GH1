@@ -175,6 +175,11 @@
   "desc": "Romatoid artrit hastalık aktivite skoru"
  },
  {
+  "slug": "dka-infuzyon",
+  "name": "DKA Kurulumu",
+  "desc": "Diyabetik ketoasidozda sıvı, insülin ve potasyum sıralaması — potasyum düşükse insülini bekletir"
+ },
+ {
   "slug": "dlqi",
   "name": "DLQI",
   "desc": "Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30"
