@@ -570,6 +570,11 @@
   "desc": "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap"
  },
  {
+  "slug": "status-epileptikus",
+  "name": "Status Epileptikus",
+  "desc": "Yükleme dozları ve HIZ sınırları — fenitoin 50 mg/dk aşılırsa hipotansiyon ve aritmi"
+ },
+ {
   "slug": "steroid-dose",
   "name": "Steroid Eşdeğer Doz",
   "desc": "Kortikosteroid dönüşüm tablosu"
