@@ -100,7 +100,7 @@ export default function SLEDAIPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {GROUP_ORDER.map((g) => (
             <div key={g} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
-              <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-[0.3em] ml-2 opacity-60 border-l-4 border-amber-400 pl-3">
+              <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-[0.3em] ml-2 border-l-4 border-amber-400 pl-3">
                 {g}
               </h2>
               <div className="space-y-2">

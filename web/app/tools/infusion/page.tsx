@@ -135,7 +135,7 @@ export default function InfusionPage() {
         {/* ALT PANEL: UYARI VE GÜVENLİK */}
         <div className="bg-blue-900/5 p-6 rounded-[2rem] border border-blue-900/10 flex items-start gap-4">
           <span className="text-amber-500 text-xl animate-pulse">⚠️</span>
-          <p className="text-[10px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic opacity-80">
+          <p className="text-[10px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
             Bu hesaplama eğitim ve referans amaçlıdır. Klinik uygulamada ilaç protokollerindeki spesifik hedef dozlar, dilüsyon oranları ve pompa kalibrasyonları mutlaka çift kontrol edilmelidir.
           </p>
         </div>

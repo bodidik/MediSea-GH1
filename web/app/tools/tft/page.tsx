@@ -90,9 +90,9 @@ export default function TftPage() {
               const icons  = { low: "↓", high: "↑", normal: "N", unknown: "–" };
               return (
                 <div key={label} className={`rounded-2xl p-4 text-center ${colors[status]}`}>
-                  <div className="text-[9px] font-black uppercase tracking-widest opacity-80 mb-1">{label}</div>
+                  <div className="text-[9px] font-black uppercase tracking-widest mb-1">{label}</div>
                   <div className="text-2xl font-black">{icons[status]}</div>
-                  <div className="text-[10px] font-bold mt-1 opacity-80">{val > 0 ? `${val} ${unit}` : "—"}</div>
+                  <div className="text-[10px] font-bold mt-1">{val > 0 ? `${val} ${unit}` : "—"}</div>
                 </div>
               );
             })}

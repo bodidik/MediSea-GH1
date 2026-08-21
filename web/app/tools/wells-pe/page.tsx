@@ -113,7 +113,7 @@ export default function WellsPEPage() {
             <div className="min-w-0">
               <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-0.5">RİSK KATEGORİSİ</p>
               <p className="text-2xl font-black italic tracking-tight" style={{ color: activeZone.text }}>
-                {activeZone.label} RİSK <span className="text-sm font-bold opacity-60">{activeZone.prob}</span>
+                {activeZone.label} RİSK <span className="text-sm font-bold">{activeZone.prob}</span>
               </p>
               <p className="text-[10px] font-bold text-slate-500 mt-1">{activeAction.action}</p>
             </div>
@@ -198,7 +198,7 @@ export default function WellsPEPage() {
                     <div className="w-28 h-2 bg-slate-100 rounded-full overflow-hidden shrink-0">
                       <div className="h-full rounded-full bg-blue-900 transition-all" style={{ width: `${barPct}%` }} />
                     </div>
-                    <span className="text-[10px] font-black text-amber-600 w-6 text-right shrink-0">+{it.pts}</span>
+                    <span className="text-[10px] font-black text-amber-700 w-6 text-right shrink-0">+{it.pts}</span>
                   </div>
                 );
               })}

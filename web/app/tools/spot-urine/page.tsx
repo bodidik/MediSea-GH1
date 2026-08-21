@@ -37,12 +37,12 @@ const ResultRow = ({ label, value, unit, normal, interpretation, ok }: {
         <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 mb-1">{label}</div>
         {value !== null ? (
           <div className={`text-2xl font-black ${ok === true ? 'text-emerald-700' : ok === false ? 'text-rose-700' : 'text-blue-900'}`}>
-            {value} <span className="text-sm font-bold opacity-60">{unit}</span>
+            {value} <span className="text-sm font-bold">{unit}</span>
           </div>
         ) : (
           <div className="text-xl font-black text-slate-300">—</div>
         )}
-        {value !== null && <p className={`text-[10px] font-bold mt-1 ${ok === true ? 'text-emerald-600' : ok === false ? 'text-rose-600' : 'text-slate-500'}`}>{interpretation}</p>}
+        {value !== null && <p className={`text-[10px] font-bold mt-1 ${ok === true ? 'text-emerald-600' : ok === false ? 'text-rose-700' : 'text-slate-500'}`}>{interpretation}</p>}
       </div>
       <div className="text-right shrink-0">
         <div className="text-[9px] font-bold text-slate-400 leading-tight">Normal</div>
@@ -329,7 +329,7 @@ export default function SpotUrinePage() {
                 <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">TTKG</div>
                 <p className={`text-4xl font-black ${ttkg >= 5 ? 'text-sky-700' : 'text-rose-700'}`}>{ttkg.toFixed(1)}</p>
                 {pkN > 0 && (
-                  <p className={`text-sm font-bold mt-2 ${ttkg >= 5 && pkN > 5 ? 'text-sky-700' : 'text-rose-700'} opacity-80`}>
+                  <p className={`text-sm font-bold mt-2 ${ttkg >= 5 && pkN > 5 ? 'text-sky-700' : 'text-rose-700'}`}>
                     {getTTKGInterp(ttkg, pkN).txt}
                   </p>
                 )}

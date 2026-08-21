@@ -106,7 +106,7 @@ export default function FibromiyaljiPage() {
                   <button aria-pressed={sev[item.id] === s.v} key={s.v} type="button" onClick={() => setSevVal(item.id, s.v)}
                     className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                       ${sev[item.id] === s.v
-                        ? s.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white'
+                        ? s.v === 0 ? 'bg-emerald-700 border-emerald-700 text-white'
                           : s.v === 1 ? 'bg-amber-700 border-amber-500 text-white'
                           : s.v === 2 ? 'bg-orange-500 border-orange-500 text-white'
                           : 'bg-rose-600 border-rose-600 text-white'
@@ -157,7 +157,7 @@ export default function FibromiyaljiPage() {
             <p className={`text-2xl font-black italic tracking-tight ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
               {diagnosed ? "FİBROMİYALJİ TANISI KARŞILANIYOR" : "TANI KRİTERLERİ KARŞILANMIYOR"}
             </p>
-            <p className={`text-sm font-bold mt-1 opacity-80 ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
+            <p className={`text-sm font-bold mt-1 ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
               {diagnosed
                 ? "WPI ≥ 7 + SS ≥ 5, veya WPI 4–6 + SS ≥ 9, veya WPI ≤ 3 + SS ≥ 11 — semptomlar ≥ 3 ay sürüyor olmalı"
                 : "Mevcut değerlere göre fibromiyalji tanı eşiği karşılanmıyor"}

@@ -112,7 +112,7 @@ export default function OsmolalGapPage() {
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">OSMOLAL GAP</div>
             <div className="flex items-baseline gap-3 mb-2">
               <span className={`text-5xl font-black ${result.color}`}>{gap.toFixed(1)}</span>
-              <span className={`text-sm font-black ${result.color} opacity-60`}>mOsm/kg</span>
+              <span className={`text-sm font-black ${result.color}`}>mOsm/kg</span>
             </div>
             <p className={`text-xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color}`}>{result.sub}</p>

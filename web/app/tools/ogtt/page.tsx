@@ -91,7 +91,7 @@ function AcroResult({ nadir, assay }: { nadir: number; assay: "standard" | "sens
       <p className={`text-2xl font-black italic tracking-tight ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
         {nadir === 0 ? "–" : suppressed ? "GH SÜPRESİYONU YETERLI" : "GH SÜPRESİYONU YETERSİZ"}
       </p>
-      <p className={`text-sm font-bold mt-1 ${suppressed ? 'text-emerald-700' : 'text-rose-700'} opacity-80`}>
+      <p className={`text-sm font-bold mt-1 ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
         {nadir === 0 ? "" : suppressed ? "Akromegali dışlanır" : "Akromegali ile uyumlu — IGF-1 ve görüntüleme gerekli"}
       </p>
     </div>

@@ -125,7 +125,7 @@ export default function DstPage() {
             <p className={`text-xl font-black italic tracking-tight ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
               {suppressed ? "✓ SÜPRESİYON YETERLİ" : "✗ SÜPRESİYON YETERSİZ"}
             </p>
-            <p className={`text-sm font-bold mt-2 leading-relaxed ${suppressed ? 'text-emerald-700' : 'text-rose-700'} opacity-80`}>
+            <p className={`text-sm font-bold mt-2 leading-relaxed ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
               {suppressed ? proto.low : proto.high}
             </p>
           </div>

@@ -81,7 +81,7 @@ export default function EndocarditisToolPage() {
 
         {/* MAJÖR KRİTERLER: MAVİ VURGU */}
         <div className="space-y-3">
-          <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-[0.3em] ml-2 opacity-70">MAJÖR KRİTERLER</h2>
+          <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-[0.3em] ml-2">MAJÖR KRİTERLER</h2>
           <div className="grid gap-2">
             {CRITERIA.filter(c => c.group === "major").map((c) => (
               <label 

@@ -126,7 +126,7 @@ export default function HitPage() {
                     </div>
                     <div className="min-w-0">
                       <p className={`font-black text-sm leading-tight ${selected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</p>
-                      <p className={`text-[9px] font-bold mt-0.5 leading-snug ${selected ? 'text-white/60' : 'text-slate-400'}`}>{opt.desc}</p>
+                      <p className={`text-[9px] font-bold mt-0.5 leading-snug ${selected ? 'text-white/80' : 'text-slate-400'}`}>{opt.desc}</p>
                     </div>
                   </button>
                 );
@@ -142,7 +142,7 @@ export default function HitPage() {
               <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">4T TOPLAM PUAN</div>
               <div className="flex items-baseline gap-3 mb-2">
                 <span className={`text-6xl font-black ${colors.text}`}>{total}</span>
-                <span className={`text-sm font-black ${colors.text} opacity-60`}>/ 8 puan</span>
+                <span className={`text-sm font-black ${colors.text}`}>/ 8 puan</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className={`text-xs font-black px-3 py-1 rounded-full ${colors.badge}`}>{band.label}</span>
@@ -163,7 +163,7 @@ export default function HitPage() {
                   <div key={b.label} className={`rounded-xl p-2 text-center border ${active ? bc.badge + ' border-transparent' : bc.bg + ' ' + bc.border}`}>
                     <div className={`text-[9px] font-black uppercase tracking-widest leading-tight ${active ? 'text-white' : bc.text}`}>{b.label.split(' ')[0]}</div>
                     <div className={`text-[10px] font-bold ${active ? 'text-white/80' : 'text-slate-500'}`}>{b.min}–{b.max} pt</div>
-                    <div className={`text-[9px] font-black ${active ? 'text-white/60' : 'text-slate-400'}`}>{b.prob}</div>
+                    <div className={`text-[9px] font-black ${active ? 'text-white/80' : 'text-slate-400'}`}>{b.prob}</div>
                   </div>
                 );
               })}

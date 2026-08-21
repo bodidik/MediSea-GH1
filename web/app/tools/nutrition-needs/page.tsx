@@ -83,7 +83,7 @@ export default function NutritionNeedsPage() {
                   className={`p-4 rounded-xl border-2 text-left transition-all ${stressFactor === lvl.kcal ? 'border-blue-900 bg-blue-50 text-blue-900' : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'}`}
                 >
                   <div className="text-[10px] font-black uppercase mb-1">{lvl.label}</div>
-                  <div className="text-xs font-bold opacity-70">{lvl.kcal} kcal/kg | {lvl.pro} g/kg</div>
+                  <div className="text-xs font-bold">{lvl.kcal} kcal/kg | {lvl.pro} g/kg</div>
                 </button>
               ))}
             </div>

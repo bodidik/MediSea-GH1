@@ -143,7 +143,7 @@ export default function BradenPage() {
                       ${sel[scale.id] === opt.pts ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
                     <div>
                       <span className="font-black">{opt.label}</span>
-                      <span className="text-[8px] ml-1 opacity-70">— {opt.desc}</span>
+                      <span className="text-[8px] ml-1">— {opt.desc}</span>
                     </div>
                   </button>
                 ))}

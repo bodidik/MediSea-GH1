@@ -134,7 +134,7 @@ export default function RefeedingRiskPage() {
               <p className="text-[9px] font-black uppercase tracking-widest text-blue-900/80">ÖNERİLER</p>
               {risk.recs.map((r, i) => (
                 <div key={i} className="flex gap-2 items-start">
-                  <span className={`text-xs font-black ${risk.color} opacity-60 flex-shrink-0 mt-0.5`}>•</span>
+                  <span className={`text-xs font-black ${risk.color} flex-shrink-0 mt-0.5`}>•</span>
                   <p className={`text-[11px] font-bold ${risk.color} leading-snug`}>{r}</p>
                 </div>
               ))}
@@ -145,7 +145,7 @@ export default function RefeedingRiskPage() {
         {!risk && (high.size > 0 || mod.size > 0 || spec.size > 0) && (
           <div className="p-6 rounded-[2rem] border-2 border-dashed border-emerald-200 bg-emerald-50">
             <p className="text-xl font-black italic tracking-tight text-emerald-700">DÜŞÜK RİSK</p>
-            <p className="text-sm font-bold mt-1 text-emerald-700 opacity-80">Normal nütrisyon protokolü uygulanabilir. Rutin elektrolit takibi yeterli.</p>
+            <p className="text-sm font-bold mt-1 text-emerald-700">Normal nütrisyon protokolü uygulanabilir. Rutin elektrolit takibi yeterli.</p>
           </div>
         )}
 
