@@ -385,6 +385,11 @@
   "desc": "Malnutrition Universal Screening Tool — toplum & poliklinik"
  },
  {
+  "slug": "nac-infuzyon",
+  "name": "NAC İnfüzyonu",
+  "desc": "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat"
+ },
+ {
   "slug": "news2",
   "name": "NEWS2 Skoru",
   "desc": "Klinik kötüleşme erken uyarı sistemi"
