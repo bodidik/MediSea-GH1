@@ -1366,6 +1366,46 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Saydamlık KAPSAYICIYA konunca kaynak taraması onu göremez
+
+`saydamlik-denetim` bir dönem aynı satırda `text-*` sınıfı arıyordu ve
+"metin ögesinde saydamlık yok" diyordu. Yanlıştı: saydamlık kapsayıcıya
+konduğunda renk ATADAN devralınıyor, o satırda `text-*` bulunmuyor ve bulgu
+sessizce düşüyordu.
+
+Körlük, denetimin temiz dediği bir dosyada gözle `opacity-60` görülünce
+ortaya çıktı. **Bir denetim "temiz" diyorsa, temiz olduğunu iddia ettiği
+dosyada ölçütünü elle bir kez sına.**
+
+Bedeli ölçüldü (tarayıcıda, geçişler kapatılarak):
+
+| yer | kontrast | taban |
+|---|---|---|
+| 34 araçta boş durum kartı | **1.93** | 7.58 |
+| `/tools` kategori sayaçları (18) | 2.82 | 7.24 |
+| `/tools` ve `glim` klinik uyarısı | 3.40 | 9.90 |
+
+En ağırı boş durum kartı, çünkü o kart aracı açan HERKESİN gördüğü ilk ekran
+ve içindeki tek yazı "ne yapmalısın"ı anlatıyor. Sayfadaki en okunması
+gereken cümle, en okunmaz şeydi.
+
+**Çare saydamlığı azaltmak değil, işareti BAŞKA KANALA taşımak.** Kesikli
+çerçeve, çip zemini, yazı ağırlığı — hepsi "ikincil" der ve kontrasta hiç
+dokunmaz. Renk alfası (`text-white/80`) ölçülebilir olduğu için kabul,
+ama gereksizse hiç kullanma.
+
+Ölçüt artık statik `opacity-40..80`u her yerde aday sayıyor; koşullu olanlar
+(`className={pasif ? "opacity-50" : ""}`) durum kaynaklı sayılıp eleniyor —
+beşi tek tek doğrulandı, hepsi gerçekten `disabled` alanları soluklaştırıyor.
+
+**Eleme ölçütü ilk denemede tutmadı:** `${…}` arandı, oysa bunlar template
+literal DEĞİL JSX ifadesi. Hiçbiri elenmedi ve bir an "koşullular da kusur"
+sanıldı. Ters üçlü (`? "" : "opacity-60"`) ayrıca kaçıyordu.
+
+**"Uygulanmıyor" durumunu soluklaştırmadan önce NEYİN soluklaştığına bak.**
+İki yerde soluklaşan şey tam da bilgi taşıyan parçaydı: `nrs-2002`'de "önce
+aşama 1'i tamamlayın" cümlesi, `dka-infuzyon`'da insülin DOZU.
+
 ### Etiket ile eşik AYRI alanlarda durursa çelişir ve çelişki SESSİZDİR
 
 Sınıflama basamağını "eşiğin altındaysa" biçiminde bir sayı dizisiyle yazmak
