@@ -122,8 +122,17 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                       ? opt.id === currentStage.correctAnswer
                         ? 'bg-green-900/30 border-green-500 text-green-300 ring-1 ring-green-500 shadow-[0_0_15px_rgba(16,185,129,0.2)]' // Doğru
                         : opt.id === selectedOption
-                        ? 'bg-red-900/30 border-red-500 text-red-300 ring-1 ring-red-500 opacity-70' // Yanlış
-                        : 'bg-slate-950/50 border-slate-800 text-slate-600 opacity-50 grayscale'
+                        ? 'bg-red-900/30 border-red-500 text-red-300 ring-1 ring-red-500' // Yanlış — `opacity-70` KALDIRILDI: harf rozetini 5.17'den 3.34'e düşürüyordu; kırmızı çerçeve, halka ve zemin zaten yeterli işaret
+                        /* SAYDAMLIK + GRAYSCALE KALDIRILDI — ölçümle. Cevaptan sonra
+                           dokunulmayan şıklar `text-slate-600 opacity-50 grayscale`
+                           taşıyordu: şık metni 1.48, harf rozeti 2.69 kontrasta
+                           düşüyordu. Taban renk zaten yetersizdi — koyu zeminde
+                           (rgb 9,15,33) `text-slate-600` saydamlık OLMADAN da 2.52.
+                           Ölçülen karşılık: `text-slate-400` 7.46.
+                           Bu bir ÖĞRENME yüzeyi; cevaptan sonra çeldiricileri okumak
+                           işin kendisi. Ayrım doğru/yanlış şıkların renkli çerçevesi
+                           ve halkasıyla zaten kuruluyor. */
+                        : 'bg-slate-950/50 border-slate-800 text-slate-400'
                       : selectedOption === opt.id
                       ? 'bg-blue-900/40 border-blue-500 ring-1 ring-blue-500 text-white shadow-lg' // Seçili
                       : 'bg-slate-950/50 border-slate-800 text-slate-200 hover:bg-slate-800 hover:border-blue-500/50'
@@ -131,7 +140,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
               >
                 <div className="flex items-center gap-2.5">
                   <span className={`flex items-center justify-center w-5 h-5 rounded text-[10px] font-black transition-colors border
-                    ${selectedOption === opt.id ? 'bg-blue-600 text-white border-blue-500 shadow-md' : 'bg-black/30 text-slate-500 border-white/5 group-hover:bg-black/50 group-hover:text-blue-400'}
+                    ${selectedOption === opt.id ? 'bg-blue-600 text-white border-blue-500 shadow-md' : 'bg-black/30 text-slate-300 border-white/5 group-hover:bg-black/50 group-hover:text-blue-400'}
                   `}>
                     {opt.id}
                   </span>
@@ -224,7 +233,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                 : `Hatalı yaklaşım. Doğru cevap ${currentStage.correctAnswer}.`
               : ''}
           </div>
-          <h4 className="text-[9px] font-black uppercase text-slate-400 tracking-widest">Karar Analizi</h4>
+          <h4 className="text-[9px] font-black uppercase text-slate-300 tracking-widest">Karar Analizi</h4>
           <div className={`text-base font-black leading-tight mt-0.5 ${!showResult ? 'text-slate-200' : isCorrect ? 'text-green-300' : 'text-red-300'}`}>
             {!showResult ? 'BEKLENİYOR...' : isCorrect ? 'DOĞRU YAKLAŞIM ✓' : 'HATALI YAKLAŞIM ⚠️'}
           </div>
@@ -261,7 +270,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
           
           {/* Placeholder */}
           {showResult && !currentStage.explanation && (
-            <div className="text-center text-slate-600 text-xs mt-6 italic bg-slate-900 p-4 rounded-xl border border-slate-800 border-dashed">
+            <div className="text-center text-slate-400 text-xs mt-6 italic bg-slate-900 p-4 rounded-xl border border-slate-800 border-dashed">
               Sonraki aşamaya geçebilirsiniz kaptan...
             </div>
           )}

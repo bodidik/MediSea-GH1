@@ -1366,6 +1366,62 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Kokpit ve branş sayfası: aynı sınıf, üçüncü ve dördüncü kez
+
+Premium ölçümünün ikinci turunda kalan iki motor (FlashcardPlayer, YdusCockpit)
+ve branş sayfaları sürüldü. Flashcard iki yüzünde de temiz. Ötekiler değil:
+
+| yer | ölçülen | sebep |
+|---|---|---|
+| kokpit — çeldirici şık metni | **1.48** | `text-slate-600 opacity-50 grayscale` |
+| kokpit — seçilen yanlış şıkkın harfi | 3.34 | kapsayıcıda `opacity-70` |
+| kokpit — "Sonraki aşamaya geçebilirsiniz" | 2.36 | `text-slate-600` koyu zeminde |
+| branş — hazır olmayan konu adı | 1.89 | satır içi `opacity: 0.45` |
+| branş — YAKINDA rozeti | 1.85 | aynı |
+
+**Taban renk de yetersizdi, yalnızca saydamlık değil.** Koyu zeminde
+(`rgb(9,15,33)`) ölçüldü: `text-slate-600` saydamlık OLMADAN da **2.52**;
+`text-slate-400` 7.46. Saydamlığı kaldırmak tek başına yetmezdi.
+
+**"CEVAPLANMIŞ DURUM" SANDIĞIM ÖLÇÜM YANLIŞ DURUMDAYDI.** İlk turda kokpit
+"cevaplı: 0 kusur" çıktı; onay tıklaması işlememişti. Sıralama doğrulanınca
+(şık seç → Onayla → `sonucGorunuyor` kontrol et) 7 kusur göründü. **Bir durumu
+ölçtüğünü sanmak için o durumun GERÇEKTEN oluştuğunu ayrıca doğrula.**
+
+**Devre dışı denetim eşikten muaf.** Kokpitin boş hâlinde "Kararı Onayla"
+1.71 çıkıyor; ölçüldü — `disabled: true`, opaklık 0.3. Şık seçilince
+`disabled: false` ve opaklık 1. Kusur değil. (Belgede yazılı donmuş-geçiş
+şüphesi de böylece kapandı: geçişler önceden kapatılınca değer doğru okunuyor.)
+
+### İKİ YÖNTEM ÇELİŞİRSE ATA SAYDAMLIĞINA BAK
+
+Kokpitteki "A" rozeti için tarama 3.34, doğrudan ölçüm 5.17 dedi. Doğrudan
+ölçüm ata zincirindeki `opacity`yi hesaba katmıyordu; buton `opacity: 0.7`
+taşıyordu. **Tarama haklıydı.** Bir ögenin kendi rengi ve zemini doğru
+görünüyorsa ama tarama düşük diyorsa, önce etkin alfayı ölç.
+
+### Ölü koda düzeltme yaptım — BAĞLI olduğunu doğrulamadan
+
+Branş sayfasındaki kusuru `BranchTemplate.tsx`te düzelttim. O bileşen yalnızca
+`_endokrinoloji`, `_hematoloji` gibi **alt çizgili klasörlerden** çağrılıyor,
+yani rotaya alınmıyor ve kullanıcıya ulaşmıyor. Gerçek bileşen
+`[branch]/KategorilerClient.tsx` ve satır içi stil kullanıyor.
+
+Belgede zaten yazılı olan kural ("bir bileşeni düzeltmeden önce BAĞLI
+olduğunu doğrula") bu turda kuralın yazarı tarafından çiğnendi. Ayırt eden
+şey ölçüm oldu: düzeltmeden sonra sayfa **hâlâ 1.89** gösteriyordu.
+Düzeltmeyi doğrulamadan commit etseydim ölü kod değişmiş, kusur durmuş olurdu.
+
+### `saydamlik-denetim` çok satırlı `className`i göremiyor
+
+Ölçüt satır bazlı ve aynı satırda `className` arıyor. Çok satırlı şablon
+dizelerinde `className={` ile `opacity-40` farklı satırlarda kalıyor ve bulgu
+düşüyor. Kapsam ölçüldü: bu şekilde görünmeyen **3 satır** var — biri yorum
+metni (yanlış pozitif), ikisi gerçek kusurdu (`BranchTemplate`, `YdusCockpit`).
+
+Denetimin göremediği üçüncü biçim bu; öteki ikisi kapsayıcıya konan saydamlık
+(kapatıldı) ve **satır içi stil** (kapatılamaz — className taramıyor).
+
 ### Premium motorlar ölçüldü: cevaptan SONRA çeldiriciler 2.67–3.05'e düşüyordu
 
 Premium yüzeylerin kontrastı bir dönem ölçülmüştü ama saydamlığı göremeyen

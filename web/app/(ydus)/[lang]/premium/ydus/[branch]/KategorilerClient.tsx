@@ -115,7 +115,11 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                       background: konu.hazir ? '#fff' : 'transparent',
                       border: konu.hazir ? '0.5px solid #d0e4f5' : '0.5px solid transparent',
                       textDecoration: 'none',
-                      opacity: konu.hazir ? 1 : 0.45,
+                      /* SAYDAMLIK KALDIRILDI — ölçümle. `opacity: 0.45` hazır
+                         olmayan konunun ADINI 1.89, YAKINDA rozetini 1.85
+                         kontrasta düşürüyordu; satırın tüm bilgi içeriği
+                         okunmaz oluyordu. "Hazır değil" işareti zaten üç
+                         kanalda: gri nokta, daha ince yazı ve YAKINDA rozeti. */
                       cursor: konu.hazir ? 'pointer' : 'default',
                       pointerEvents: konu.hazir ? 'auto' : 'none',
                     }}
