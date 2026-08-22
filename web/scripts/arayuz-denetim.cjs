@@ -294,6 +294,26 @@ function negatifKontrol() {
     '  );',
     '}',
     '',
+    '// POZİTİF KONTROL — aşağıdakilerin HİÇBİRİ işaretlenmemeli.',
+    '// Ölçüt fazla genişse rapor kullanılamaz hâle gelir. Özellikle mojibake:',
+    '// doğru yazılmış Türkçe (ş ğ ı İ Ö Ü Ç) kusur SAYILMAMALI.',
+    '// NOT: bu yorum bozuk izin KENDİSİNİ içeremez — denetim yorumları da',
+    '// tarıyor ve ölçütü anlatan satır kusur sayılıyordu (pozitif kontrol',
+    '// ilk çalıştırmada tam olarak bunu yakaladı).',
+    'export function Temiz() {',
+    '  const dogruTurkce = "Bölüm başlığı · Şişli · ığdır · ÇÖĞÜŞİ";',
+    '  return (',
+    '    <form>',
+    '      <span>{dogruTurkce}</span>',
+    '      <button type="button" onClick={() => {}}>Formda type var</button>',
+    '      <img src="/z.png" alt="Açıklama" />',
+    '      <a href="https://ornek" target="_blank" rel="noopener noreferrer">Dış</a>',
+    '      <a href="/y">Yalın bağlantı</a>',
+    '      <button type="submit">Kardeş düğme</button>',
+    '    </form>',
+    '  );',
+    '}',
+    '',
   ].join('\n');
 
   fs.writeFileSync(tohum, icerik);
@@ -311,11 +331,39 @@ function negatifKontrol() {
 
   console.log('negatif kontrol — tohum dosyası eklendi, tarandı, silindi');
   for (const b of beklenen) console.log(`  ${bulunan.has(b) ? 'YAKALANDI' : 'KAÇIRILDI '}  ${b}`);
-  if (eksik.length) {
-    console.log(`\nDENETİM BOZUK: ${eksik.length} sınıf yakalanmadı.`);
+
+  /*
+   * POZİTİF KONTROL — tohumdaki `Temiz()` bölümünden bulgu ÇIKMAMALI.
+   *
+   * Ölçüt fazla genişse burada düşer. Bu oturumda iki ayrı denetimde ölçüt
+   * fazla geniş çıktı (renk çiftinde 8 sahte bulgu, eşik-etikette 279 aday)
+   * ve ikisini de yalnızca pozitif kontrol yakalayabilirdi.
+   *
+   * Özellikle önemli olan mojibake: ölçüt `Ã/Ä/Å` izini arıyor ve DOĞRU
+   * yazılmış Türkçeyi (ş ğ ı İ Ö Ü Ç) kusur saymamalı. Tohumdaki temiz
+   * satır tam olarak bunu sınıyor.
+   */
+  const tohumBulgu = sonuc.kusur.filter((k) => k.yol.includes('zz-arayuz-denetim-tohum'));
+  /*
+   * Beklenen sayı SINIF LİSTESİNDEN türetiliyor, elle yazılmıyor: tohumun
+   * kusurlu bölümü her sınıftan BİR bulgu üretiyor. Elle "3" yazıldığında
+   * gerçek sayı 4'tü ve pozitif kontrol kendi aritmetiği yüzünden düştü —
+   * ölçüt değil SAYAÇ yanlıştı. Yeni sınıf eklenince liste kendiliğinden
+   * güncelleniyor.
+   */
+  const sahte = Math.max(0, tohumBulgu.length - beklenen.length);
+  console.log('');
+  console.log(`  pozitif kontrol — temiz biçimlerden sahte bulgu: ${sahte}`);
+  if (sahte > 0) {
+    for (const k of tohumBulgu) console.log(`      ${k.tur}  ${k.not}`);
+  }
+
+  if (eksik.length || sahte > 0) {
+    if (eksik.length) console.log(`\nDENETİM BOZUK: ${eksik.length} sınıf yakalanmadı.`);
+    if (sahte > 0) console.log(`\nÖLÇÜT FAZLA GENİŞ: temiz biçimlerden ${sahte} sahte bulgu.`);
     process.exit(1);
   }
-  console.log('\ndenetim çalışıyor.');
+  console.log('\nnegatif + pozitif kontrol geçti — beş sınıf yakalanıyor, temiz biçimler işaretlenmiyor.');
 }
 
 /* ── giriş ───────────────────────────────────────────────────────────── */

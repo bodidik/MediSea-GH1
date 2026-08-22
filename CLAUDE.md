@@ -1376,15 +1376,31 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 |---|---|---|---|---|
 | `saydamlik-denetim` | 4 biçim | ✓ | 4 dosya | `cd` |
 | `renk-cifti-denetim` | 3 biçim | ✓ 4 temiz | 10 kusur | `cd` |
-| `ic-bilesen-denetim` | ✓ | — | **7 kusur** | `cd` |
+| `ic-bilesen-denetim` | ✓ | ✓ 3 temiz | **7 kusur** | `cd` |
 | `esik-etiket-denetim` | ✓ | ✓ (tohumda) | **YOK** | `cd` |
 | `olu-denetim` | ✓ | ✓ | nrs-2002 | `--kok` |
-| `arayuz-denetim` | 5 sınıf | — | 129 satır | `--kok` |
+| `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
 (`{ esik: 2, etiket: "INR < 4" }`) geliştirme sırasında, aracın İLK
 commit'inden önce düzeltildi. Depoda o hâli hiç bulunmuyor — doğrulandı.
 Tek dayanağı tohumlu kontrol; tohum kusurun birebir şeklini taşıyor.
+
+**Altı denetimin altısında da pozitif kontrol var artık.** Eklerken ikisi
+ilk çalıştırmada düştü ve ikisi de GERÇEK kusur gösterdi — ölçütte değil,
+kontrolün kendisinde:
+
+- **Tohumdaki yorum, ölçütün aradığı izi taşıyordu.** `arayuz-denetim`in
+  mojibake ölçütünü anlatan yorum satırı `Ã/Ä/Å` karakterlerini birebir
+  içeriyordu ve denetim yorumları da bilerek tarıyor. Ölçütü anlatan metin,
+  ölçütün kendisini tetikliyordu.
+- **Beklenen sayı ELLE yazılmıştı.** Kusurlu bölümün ürettiği bulgu sayısı
+  "3" varsayıldı, gerçek sayı 4'tü ve pozitif kontrol kendi aritmetiği
+  yüzünden düştü. Sayı artık sınıf listesinden türetiliyor; yeni sınıf
+  eklenince kendiliğinden güncelleniyor.
+
+İkisi de "pozitif kontrol işe yarıyor mu" sorusunun cevabı: ilk
+çalıştırmasında iki kusur buldu.
 
 **Pozitif kontrol, negatiften daha az açık ama aynı ölçüde gerekli.** Bu
 oturumda ölçüt iki kez FAZLA GENİŞ çıktı (renk çiftinde satır düzeyi

@@ -103,19 +103,46 @@ function tara(kokler) {
 if (process.argv.includes('--negatif')) {
   // Dosya adı `_` ile BAŞLAMAMALI: betiğin kendi `_` süzgeci testi de eler.
   const gecici = path.join(NEGATIF_DIZIN, 'zz-ic-bilesen-negatif-kontrol.tsx');
+  /*
+   * TOHUM İKİ YÖNÜ BİRDEN SINIYOR.
+   *
+   * NEGATİF: `Kutu` render'ın içinde ve `<input>` taşıyor -> YAKALANMALI.
+   *
+   * POZİTİF: aşağıdaki üçü İŞARETLENMEMELİ. Ölçüt fazla genişse rapor
+   * kullanılamaz hâle gelir; bu oturumda iki ayrı denetimde tam olarak bu
+   * oldu (renk çiftinde 8 sahte bulgu, eşik-etikette 279 aday) ve ikisini de
+   * yalnızca pozitif kontrol yakalayabilirdi.
+   *   Etiket   — iç bileşen ama ETKİLEŞİMLİ öge taşımıyor (kusur değil)
+   *   Yardimci — modül düzeyinde, `<input>` taşısa da render'ın içinde DEĞİL
+   *   hesapla  — küçük harfli, bileşen değil
+   */
   const satirlar = [
     'export default function X() {',
     '  const Kutu = ({ v }: { v: string }) => <input value={v} readOnly />;',
-    '  return <div><Kutu v="a" /></div>;',
+    '  const Etiket = ({ t }: { t: string }) => <span>{t}</span>;',
+    '  const hesapla = (a: number) => a * 2;',
+    '  return <div><Kutu v="a" /><Etiket t="b" />{hesapla(1)}</div>;',
+    '}',
+    '',
+    'function Yardimci({ v }: { v: string }) {',
+    '  return <input value={v} readOnly />;',
     '}',
   ];
   fs.writeFileSync(gecici, satirlar.join('\n') + '\n', 'utf8');
   const { bulgu } = tara([...KOKLER, NEGATIF_DIZIN]);
   fs.unlinkSync(gecici);
   fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
-  const yakalandi = bulgu.some((b) => b.dosya.includes('zz-ic-bilesen-negatif-kontrol'));
-  console.log(yakalandi ? 'negatif kontrol GEÇTİ — denetim kusuru yakalıyor.' : 'negatif kontrol DÜŞTÜ — denetim körleşmiş!');
-  process.exit(yakalandi ? 0 : 1);
+  const tohum = bulgu.filter((b) => b.dosya.includes('zz-ic-bilesen-negatif-kontrol'));
+  const icler = tohum.map((b) => b.ic);
+  const negatif = icler.includes('Kutu');
+  const sahte = ['Etiket', 'Yardimci', 'hesapla'].filter((x) => icler.includes(x));
+  if (!negatif || sahte.length) {
+    if (!negatif) console.log('negatif kontrol DÜŞTÜ — render içindeki `Kutu` yakalanmadı, denetim körleşmiş!');
+    if (sahte.length) console.log(`pozitif kontrol DÜŞTÜ — sahte bulgu: ${sahte.join(', ')}`);
+    process.exit(1);
+  }
+  console.log('negatif + pozitif kontrol GEÇTİ — iç bileşen yakalanıyor, üç temiz biçim işaretlenmiyor.');
+  process.exit(0);
 }
 
 const { bulgu, dosyaSayisi, disBilesen } = tara(KOKLER);
