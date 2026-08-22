@@ -817,7 +817,7 @@ export default function NotePanel() {
                     aria-pressed={erasing}
                     title="Silgi"
                     className={`h-6 rounded-lg px-2 text-[11px] transition-colors ${
-                      erasing ? "bg-rose-500 text-white" : "hover:bg-slate-100"
+                      erasing ? "bg-rose-700 text-white" : "hover:bg-slate-100"
                     }`}
                   >
                     ⌫

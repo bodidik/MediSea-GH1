@@ -171,7 +171,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
                     className={`flex-1 rounded-md px-3 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all ${
                       mode === m
                         ? m === "replace"
-                          ? "bg-rose-500 text-white"
+                          ? "bg-rose-700 text-white"
                           : "bg-blue-950 text-white"
                         : "text-slate-400 hover:bg-slate-50"
                     }`}

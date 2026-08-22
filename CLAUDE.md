@@ -1368,6 +1368,36 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Düzeltilen denetimin üçüncü bulgusu: veriyi SİLEN kipin etiketi 3.67'ydi
+
+Geçen turda ulaşılabilir ama ölçülmemiş bırakılan üç aday ölçüldü.
+
+**`StudyBackup` "Üzerine yaz" — 3.67, gerçek kusur.** Beyaz yazı rose-500
+üstünde. Bu, yedekten yüklemede **veriyi silen** kipin etiketi; okunaklı
+olmaması diğerlerinden daha çok önemli. rose-700'e alındı → **6.29**
+(yerinde ölçüldü).
+
+Dalı çizdirmek iki basamak istedi ve ikisi de belgede zaten yazılı:
+
+- **Dosya girdisi ZATEN DOM'da**, `sr-only` ve etikete sarılı. "Yedekten
+  yükle"ye tıklamaya gerek yok; tıklamak durumu bozup girdiyi kaybettirdi.
+- **Tohum GERÇEK şemayla kurulmalı.** İlk denemede `{v, ts, marks…}` verildi
+  ve `parseBackup` reddetti; kuru prova hiç çizilmedi. Doğru şema
+  `{app:"medisea", v, at, marks, notes, review, index, log, kartlar}`.
+
+Ölçüm bitince **"Vazgeç"** ile çıkıldı; `medisea:*` sayımı 0 — depoya hiçbir
+şey yazılmadı.
+
+**`NotePanel` silgi düğmesi — aynı çift, YERİNDE ölçülemedi.** Kalem kipinin
+arkasında ve o kipe geçilemedi. Düzeltme, aynı çiftin `StudyBackup`ta yerinde
+doğrulanmış değerine dayanıyor (3.67 → 6.29). Raporda böyle yazıyor.
+
+**Kalan üç aday ölçülmedi ve "temiz" DENMİYOR:** `AdBanner`,
+`SimulatorEngine`, `TopicSidebar` — üçü de sıfır içe aktaran, yani ölü kod.
+Premium `liderlik` satırı (`text-amber-500` üzerine `bg-amber-500/10`) koyu
+yüzeyde ve denetimin `-50` zemin varsayımı orada geçmiyor; büyük olasılıkla
+yanlış pozitif ama ölçülmedi.
+
 ### `renk-cifti-denetim` TAMAMEN KÖRDÜ — bu oturumdaki ~71 kusurun hiçbirini görmemişti
 
 Denetimlerin tohumlu negatif kontrolü geçmesi, gerçek kusuru yakaladıkları
