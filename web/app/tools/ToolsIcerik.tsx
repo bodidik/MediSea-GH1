@@ -133,6 +133,7 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "nac-infuzyon", name: "NAC İnfüzyonu", desc: "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat" },
       { slug: "digoksin-toksisitesi", name: "Digoksin Toksisitesi", desc: "Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz" },
+      { slug: "lipid-emulsiyon", name: "Lipid Emülsiyon (LAST)", desc: "Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor" },
       { slug: "naloksan-infuzyon", name: "Naloksan İnfüzyonu", desc: "Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre değişir" },
       { slug: "fomepizol", name: "Fomepizol Dozu", desc: "Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil" },
       { slug: "hiperkalemi-tedavi", name: "Hiperkalemi Tedavisi", desc: "Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar" },

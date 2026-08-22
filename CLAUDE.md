@@ -1368,6 +1368,17 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Makullük tavanı ARACA ÖZGÜDÜR — genel bir sayı yanlış olur
+
+`naloksan-infuzyon`a "250 mL/saat üstünü basma" koruması konuldu, çünkü orada
+o hızın üstü torba içeriğinin yanlış girildiğini gösteriyor. `lipid-emulsiyon`
+ise 70 kg için **1050 mL/saat** basıyor ve bu DOĞRU: LAST idamesi
+0.25 mL/kg/dk, yani saatte 15 mL/kg.
+
+Aynı korumayı ortak bir yardımcıya taşımak cazip ama yanlış olurdu — lipid
+aracında meşru bir hızı bastırırdı. Makullük sınırı klinik bağlamdan gelir,
+birimden değil.
+
 ### Varsayılan değerden klinik etiket: 27 araç tarandı, sınıf temiz
 
 `naloksan-infuzyon`da varsayılan değerin fiziksel olarak saçma bir sayı

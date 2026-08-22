@@ -385,6 +385,11 @@
   "desc": "Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans)"
  },
  {
+  "slug": "lipid-emulsiyon",
+  "name": "Lipid Emülsiyon (LAST)",
+  "desc": "Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor"
+ },
+ {
   "slug": "magnezyum-infuzyon",
   "name": "Magnezyum İnfüzyonu",
   "desc": "Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt"
