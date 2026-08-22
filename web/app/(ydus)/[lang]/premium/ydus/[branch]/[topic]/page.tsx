@@ -311,7 +311,13 @@ export default async function KonuSayfasi({
                       background: aktif ? '#fff' : '#f5f7fa',
                       marginBottom: '6px',
                       textDecoration: 'none',
-                      opacity: aktif ? 1 : 0.55,
+                      /* SAYDAMLIK KALDIRILDI — ölçümle. `opacity: 0.55` etkin
+                         olmayan modül satırında adı 3.44, "Yakında" rozetini
+                         2.24 kontrasta düşürüyordu; satırın bilgi taşıyan iki
+                         parçası da okunmaz oluyordu.
+                         "Etkin değil" işareti zaten üç kanalda: soluk zemin
+                         (#f5f7fa), "Yakında" rozeti ve tıklanamazlık
+                         (pointerEvents: none). Saydamlık bir şey eklemiyordu. */
                       cursor: aktif ? 'pointer' : 'default',
                       pointerEvents: aktif ? 'auto' : 'none',
                     }}

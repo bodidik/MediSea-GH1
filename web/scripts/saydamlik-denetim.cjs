@@ -83,6 +83,50 @@ const SAYDAMLIK = /(?:^|[\s`'"{])opacity-(40|50|60|70|80)\b/;
 /** Durum varyantları: saydamlık orada meşru (devre dışı, üzerine gelme, odak). */
 const VARYANT = /(?:hover|focus|active|disabled|group-hover|group-focus|peer-\w+|aria-\w+)[:-]opacity-/;
 
+/**
+ * DÖRDÜNCÜ KÖRLÜK — SATIR İÇİ STİL. Ölçüt yalnızca Tailwind sınıfı arıyordu ve
+ * `style={{ opacity: 0.45 }}` biçimini HİÇ görmüyordu. Bu sınıf üç ayrı yerde
+ * gerçek kusur üretti ve üçü de ancak tarayıcıda bulundu:
+ *   QuizEngine         opacity 0.5   -> şık metni 3.05, harf rozeti 2.02
+ *   VakaEngine         opacity 0.45  -> şık metni 2.67, harf rozeti 1.86
+ *   KategorilerClient  opacity 0.45  -> konu adı 1.89, YAKINDA rozeti 1.85
+ * Premium motorlar renk ve boyutu satır içi stille veriyor (belgede yazılı),
+ * yani bu biçim orada KURAL, istisna değil.
+ *
+ * Eşik 0.9: üstü görsel olarak fark edilmiyor, altı kontrastı ölçülebilir
+ * biçimde düşürüyor. `opacity: 1` ve `opacity: 0` (tümden gizleme) kapsam dışı.
+ */
+/*
+ * DEĞER ÜÇLÜ İŞLEÇLE DE VERİLEBİLİR ve ilk ölçüt bunu kaçırdı:
+ *   opacity: konu.hazir ? 1 : 0.45
+ * Sayı iki nokta üstüstenin hemen ardında değil. Tarihsel kontrolde ortaya
+ * çıktı — bu tam da branş sayfasındaki gerçek kusurun biçimiydi (konu adı
+ * 1.89 kontrast). O yüzden ölçüt değerin TAMAMINI alıp içindeki bütün
+ * ondalıkları sınıyor.
+ *
+ * Koşullu satır içi saydamlık BİLEREK elenmiyor: className tarafında koşullu
+ * olanlar ölçülüp meşru çıkmıştı (gerçekten `disabled` alanlar), ama satır içi
+ * tarafta koşullu olan tek örnek GERÇEK kusurdu. Kanıt aksini söylüyor.
+ */
+const SATIR_ICI_ALAN = /\bopacity\s*:\s*([^,;}\n]+)/;
+/** Değer içindeki en düşük ondalık (0 ve 1 kapsam dışı: gizleme / tam opak). */
+function enDusukSaydamlik(deger) {
+  const sayilar = (deger.match(/\d*\.\d+/g) || []).map(Number).filter((n) => n > 0 && n < 0.9);
+  return sayilar.length ? Math.min(...sayilar) : null;
+}
+
+/**
+ * ÜÇÜNCÜ KÖRLÜK — ÇOK SATIRLI className. Ölçüt satır bazlıydı ve aynı satırda
+ * `className` arıyordu; çok satırlı şablon dizelerinde `className={` ile
+ * `opacity-40` ayrı satırlara düşüyor ve bulgu sessizce kayboluyordu.
+ * Ölçüldü: bu şekilde görünmeyen 3 satır vardı, ikisi gerçek kusurdu
+ * (`BranchTemplate`, `YdusCockpit`).
+ *
+ * Çare: geriye doğru KISA bir pencerede `className` ara. Pencere dar tutuluyor —
+ * geniş pencere alakasız satırları className bağlamı sanar.
+ */
+const GERI_PENCERE = 8;
+
 function* dosyalar(kok) {
   for (const g of fs.readdirSync(kok, { withFileTypes: true })) {
     const p = path.join(kok, g.name);
@@ -106,8 +150,49 @@ function tara(kokler) {
       if (p.split(path.sep).some((x) => x.startsWith('_'))) continue;
       dosyaSayisi++;
       const satirlar = fs.readFileSync(p, 'utf8').split('\n');
+      /** Bu satır bir className ifadesinin İÇİNDE mi? (çok satırlı şablon dizesi) */
+      const classNameBaglami = (i) => {
+        for (let j = i; j >= Math.max(0, i - GERI_PENCERE); j--) {
+          if (satirlar[j].includes('className')) return true;
+        }
+        return false;
+      };
+      /*
+       * BLOK YORUM DURUMU SATIR SATIR İZLENİYOR. Satır başındaki `//`, `*`,
+       * `/*` işaretine bakmak YETMEDİ: bu depoda yorumlar saydamlık kusurlarını
+       * ANLATIYOR ve gövde satırları düz metinle başlıyor —
+       *   opacity-60 onu 2.15-3.77 kontrasta düşürüyordu.
+       * Bu satırlar kod sanılıp iki yanlış pozitif üretti. Ölçüm kendi
+       * belgesini kusur sayarsa rapor okunmaz hâle gelir.
+       */
+      let blokYorumda = false;
+      const yorumMu = (x) => {
+        const baslar = x.includes('/*');
+        const biter = x.includes('*/');
+        if (blokYorumda) {
+          if (biter) blokYorumda = false;
+          return true;
+        }
+        if (baslar && !biter) {
+          blokYorumda = true;
+          return true;
+        }
+        return /^\s*(\/\/|\*|\/\*)/.test(x) || baslar;
+      };
       satirlar.forEach((s, i) => {
-        if (!s.includes('className')) return;
+        if (yorumMu(s)) return; // belge metni saydamlığı ANLATIR, uygulamaz
+
+        // ── satır içi stil dalı ──
+        const si = s.match(SATIR_ICI_ALAN);
+        if (si) {
+          className++;
+          if (enDusukSaydamlik(si[1]) !== null) {
+            bulgu.push({ dosya: p.replace(/\\/g, '/'), satir: i + 1, kod: s.trim().slice(0, 96) });
+          }
+          return;
+        }
+
+        if (!classNameBaglami(i)) return;
         className++;
         if (!SAYDAMLIK.test(s)) return;
         if (VARYANT.test(s)) return;
@@ -136,19 +221,53 @@ if (process.argv.includes('--negatif')) {
      "denetim körleşmiş" diyordu. Denetim çalışıyordu; testi kendi süzgecine
      takılmıştı. */
   const gecici = path.join(NEGATIF_DIZIN, 'zz-saydamlik-negatif-kontrol.tsx');
+  /* Tohum DÖRT biçimi birden taşıyor: tek satırlık className, ÇOK SATIRLI
+     className, SATIR İÇİ stil ve ÜÇLÜ İŞLEÇLİ satır içi. Dördü de
+     yakalanmazsa kontrol düşer — kapatılan körlüklerin geri gelmediğini bu
+     garanti ediyor.
+
+     Ayrıca TARİHSEL KONTROL yapıldı ve en güçlü kanıt o: düzeltme ÖNCESİ
+     dört dosya (QuizEngine, VakaEngine, YdusCockpit, KategorilerClient)
+     git'ten alınıp denetime sürüldü — dördü de yakalandı. İlk denemede
+     KategorilerClient KAÇMIŞTI (üçlü işleçli değer) ve ölçüt onun için
+     genişletildi. */
   fs.writeFileSync(
     gecici,
     'export default function X() {\n' +
-      '  return <p className="text-[11px] text-blue-900 opacity-60">kasten kusurlu</p>;\n' +
+      '  return (\n' +
+      '    <div>\n' +
+      '      <p className="text-[11px] text-blue-900 opacity-60">tek satir</p>\n' +
+      '      <p\n' +
+      '        className={`text-[11px] text-blue-900\n' +
+      '          opacity-40`}\n' +
+      '      >cok satir</p>\n' +
+      '      <p style={{ fontSize: 11, opacity: 0.45 }}>satir ici</p>\n' +
+      '      <p style={{ fontSize: 11, opacity: hazir ? 1 : 0.35 }}>ucluyle</p>\n' +
+      '    </div>\n' +
+      '  );\n' +
       '}\n',
     'utf8',
   );
   const { bulgu } = tara([...KOKLER, NEGATIF_DIZIN]);
   fs.unlinkSync(gecici);
   fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
-  const yakalandi = bulgu.some((b) => b.dosya.includes('zz-saydamlik-negatif-kontrol'));
-  console.log(yakalandi ? 'negatif kontrol GEÇTİ — denetim kusuru yakalıyor.' : 'negatif kontrol DÜŞTÜ — denetim körleşmiş!');
-  process.exit(yakalandi ? 0 : 1);
+  const tohum = bulgu.filter((b) => b.dosya.includes('zz-saydamlik-negatif-kontrol'));
+  const kod = tohum.map((b) => b.kod).join(' | ');
+  const bicimler = {
+    'tek satır className': /opacity-60/.test(kod),
+    'çok satırlı className': /opacity-40/.test(kod),
+    'satır içi stil': /opacity:\s*0\.45/.test(kod),
+    'üçlü işleçli satır içi': /opacity:.*0\.35/.test(kod),
+  };
+  const eksik = Object.entries(bicimler)
+    .filter(([, v]) => !v)
+    .map(([k]) => k);
+  if (eksik.length) {
+    console.log(`negatif kontrol DÜŞTÜ — yakalanmayan biçim: ${eksik.join(', ')}`);
+    process.exit(1);
+  }
+  console.log('negatif kontrol GEÇTİ — dört biçim de yakalanıyor (tek satır · çok satır · satır içi · üçlü işleçli).');
+  process.exit(0);
 }
 
 const { bulgu, dosyaSayisi, className } = tara(KOKLER);

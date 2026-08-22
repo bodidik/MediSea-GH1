@@ -1366,6 +1366,57 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### `saydamlik-denetim` genişletildi: satır içi stil ve çok satırlı className
+
+Denetimin üç körlüğü vardı ve üçü de ölçülmüştü ama kapatılmamıştı. Kapatıldı:
+
+| biçim | önce | şimdi |
+|---|---|---|
+| tek satırlık `className` | görüyordu | görüyor |
+| ÇOK SATIRLI `className` | **görmüyordu** | 8 satırlık geri pencere |
+| satır içi `style={{ opacity: 0.45 }}` | **görmüyordu** | görüyor |
+| satır içi ÜÇLÜ İŞLEÇ `opacity: a ? 1 : 0.45` | **görmüyordu** | görüyor |
+
+**En güçlü kanıt tarihsel kontrol oldu.** Düzeltme ÖNCESİ dört dosya git'ten
+alınıp denetime sürüldü: `QuizEngine`, `VakaEngine`, `YdusCockpit`,
+`KategorilerClient`. İlk denemede **üçü yakalandı, biri kaçtı** — ve kaçan
+tam olarak üçlü işleçli olandı (`opacity: konu.hazir ? 1 : 0.45`), yani
+ölçüt kusurun gerçek biçimini bilmiyordu. Genişletildi, dördü de yakalandı.
+
+**Negatif kontrol tohumu dört biçimi birden taşıyor** ve biri eksik kalırsa
+kontrol düşüyor — nitekim bir denemede tohum satırı eklenmemiş ama kontrolü
+eklenmişti; kontrol doğru davranıp düştü.
+
+**POZİTİF KONTROL de eklendi ve gerekliydi:** `opacity: 1`, `opacity: 0.95`
+ve `disabled:opacity-50` taşıyan temiz bir tohum SIFIR bulgu vermeli. Ölçüt
+fazla genişse bunu yakalar.
+
+**Yorum satırları ayrı bir sorun çıkardı.** Bu depoda yorumlar saydamlık
+kusurlarını ANLATIYOR ve gövde satırları düz metinle başlıyor
+(`opacity-60 onu 2.15-3.77 kontrasta düşürüyordu.`). Satır başındaki `//`
+ve `*` işaretine bakmak yetmedi; blok yorum durumu satır satır izleniyor.
+Ölçüm kendi belgesini kusur sayarsa rapor okunmaz hâle gelir.
+
+### Genişletilen denetim hemen işini yaptı: premium konu sayfası
+
+Yeni ölçüt, hiç ölçülmemiş bir yüzeyde aday üretti: premium konu sayfasındaki
+**Modüller** listesi (`opacity: aktif ? 1 : 0.55`). Ölçüldü — 175 öge,
+**9 kusur**: modül adları 3.44, "Yakında" rozetleri 2.24.
+
+Satırın bilgi taşıyan iki parçası da okunmaz oluyordu. "Etkin değil" işareti
+zaten üç kanalda var (soluk zemin, "Yakında" rozeti, `pointerEvents: none`).
+Saydamlık kaldırıldı → 9 → 0.
+
+**Kapıyı ölçüm için geçici olarak açmak gerekti** (konu sayfası `AccessGate`
+arkasında ve serbest erişimli konu yok). Kapı açıldı, ölçüldü, GERİ KONDU —
+ve geri konduğu ayrıca doğrulandı: sayfa yeniden "Erişim Kısıtlı" basıyor.
+Kendi temizliğini de negatif kontrolle sına.
+
+**Devre dışı denetim eşikten muaf, ikinci kez:** aynı sayfada "Sor" düğmesi
+boş girdide 2.05 çıkıyor; `disabled` olduğu ölçüldü. Kokpitteki "Kararı
+Onayla" ile aynı durum. Tarayıcı ölçümüne `el.closest('button').disabled`
+kontrolü koymak bu sahte bulguyu eliyor.
+
 ### Kokpit ve branş sayfası: aynı sınıf, üçüncü ve dördüncü kez
 
 Premium ölçümünün ikinci turunda kalan iki motor (FlashcardPlayer, YdusCockpit)
