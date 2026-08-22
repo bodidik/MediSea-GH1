@@ -113,6 +113,21 @@ if (NEGATIF) {
     '  const a = true ? "bg-emerald-600 text-white" : "";        // üçlü işleç dalı',
     '  return <p className="text-[10px] text-amber-500 bg-amber-50">kasten kusurlu</p>;',
     '}',
+    '',
+    '/* POZİTİF KONTROL — aşağıdakilerin HİÇBİRİ işaretlenmemeli.',
+    '   Ölçüt fazla genişse bunlar yakalanır ve rapor kullanılamaz hâle gelir;',
+    '   bu oturumda tam olarak öyle oldu: satır düzeyi eşleştirme, aynı satırdaki',
+    '   BAĞIMSIZ dizeleri birbirine karıştırıp sekiz sahte bulgu üretti. */',
+    'export function Temiz() {',
+    '  const Q = { badge: "bg-blue-900 text-white", dot: "bg-blue-400" };  // AYRI dizeler',
+    '  const h = "hover:bg-amber-500 text-white";                          // varyant, taban DEĞİL',
+    '  return (',
+    '    <div>',
+    '      <p className="text-[10px] text-amber-700 bg-amber-50">gecen ton</p>',
+    '      <span className="bg-emerald-700 text-white">gecen cift</span>',
+    '    </div>',
+    '  );',
+    '}',
   ];
   fs.writeFileSync(negatifDosya, satirlar.join('\n') + '\n', 'utf8');
 }
@@ -214,9 +229,30 @@ for (const kok of (NEGATIF ? [...KOKLER, NEGATIF_DIZIN] : KOKLER)) {
 if (NEGATIF) {
   fs.unlinkSync(negatifDosya);
   fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
-  const yakalandi = bulgu.some((b) => b.dosya.includes('zz-renk-cifti-negatif-kontrol'));
-  console.log(yakalandi ? 'negatif kontrol GEÇTİ — denetim kusuru yakalıyor.' : 'negatif kontrol DÜŞTÜ — denetim körleşmiş!');
-  process.exit(yakalandi ? 0 : 1);
+  const tohumBulgu = bulgu.filter((b) => b.dosya.includes('zz-renk-cifti-negatif-kontrol'));
+  const kod = tohumBulgu.map((b) => b.kod).join(' | ');
+  /* NEGATİF: üç kusurlu biçim yakalanmalı. */
+  const kusurlu = {
+    'palet nesnesi (amber-600)': /bg-amber-600 text-white/.test(kod),
+    'üçlü işleç (emerald-600)': /bg-emerald-600 text-white/.test(kod),
+    'className (amber-500/amber-50)': /text-amber-500/.test(kod),
+  };
+  /* POZİTİF: bunlar İŞARETLENMEMELİ. Ölçüt fazla genişse burada düşer. */
+  const temiz = {
+    'ayrı dizeler (blue-900 + dot blue-400)': !/bg-blue-900|blue-400/.test(kod),
+    'varyant öneki (hover:bg-amber-500)': !/hover:/.test(kod),
+    'geçen ton (amber-700)': !/text-amber-700/.test(kod),
+    'geçen çift (emerald-700)': !/bg-emerald-700/.test(kod),
+  };
+  const eksik = Object.entries(kusurlu).filter(([, v]) => !v).map(([k]) => k);
+  const sahte = Object.entries(temiz).filter(([, v]) => !v).map(([k]) => k);
+  if (eksik.length || sahte.length) {
+    if (eksik.length) console.log(`negatif kontrol DÜŞTÜ — yakalanmayan: ${eksik.join(', ')}`);
+    if (sahte.length) console.log(`pozitif kontrol DÜŞTÜ — sahte bulgu: ${sahte.join(', ')}`);
+    process.exit(1);
+  }
+  console.log('negatif + pozitif kontrol GEÇTİ — üç kusurlu biçim yakalanıyor, dört temiz biçim işaretlenmiyor.');
+  process.exit(0);
 }
 
 console.log(`renk çifti taraması — ${dosyaSayisi} tsx, ${className} className satırı`);

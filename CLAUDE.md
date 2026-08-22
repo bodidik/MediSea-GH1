@@ -1368,6 +1368,35 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Denetimlerin doğrulama durumu — tablo, yeniden türetilmesin diye
+
+Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yerde:
+
+| denetim | negatif | pozitif | tarihsel | yönlendirilebilir |
+|---|---|---|---|---|
+| `saydamlik-denetim` | 4 biçim | ✓ | 4 dosya | `cd` |
+| `renk-cifti-denetim` | 3 biçim | ✓ 4 temiz | 10 kusur | `cd` |
+| `ic-bilesen-denetim` | ✓ | — | **7 kusur** | `cd` |
+| `esik-etiket-denetim` | ✓ | ✓ (tohumda) | **YOK** | `cd` |
+| `olu-denetim` | ✓ | ✓ | nrs-2002 | `--kok` |
+| `arayuz-denetim` | 5 sınıf | — | 129 satır | `--kok` |
+
+**`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
+(`{ esik: 2, etiket: "INR < 4" }`) geliştirme sırasında, aracın İLK
+commit'inden önce düzeltildi. Depoda o hâli hiç bulunmuyor — doğrulandı.
+Tek dayanağı tohumlu kontrol; tohum kusurun birebir şeklini taşıyor.
+
+**Pozitif kontrol, negatiften daha az açık ama aynı ölçüde gerekli.** Bu
+oturumda ölçüt iki kez FAZLA GENİŞ çıktı (renk çiftinde satır düzeyi
+eşleştirme 8 sahte bulgu, eşik-etikette geniş ölçüt 279 aday). Negatif
+kontrol ikisini de görmez; yalnızca pozitif kontrol görür.
+
+**Kapı ÖLÜ KOD yüzünden düşebilir.** Genişletilen renk çifti denetimi
+`AdBanner`da gerçek bir kusurlu çift buldu (3.19) ve `--kapi` düştü. O dosya
+sıfır içe aktaranı olan ölü kod, yani kullanıcı görmüyor. Çift yine de
+düzeltildi — kapının anlamlı kalması için, kullanıcıya ulaşan bir düzeltme
+olarak DEĞİL. Ayrımı raporda koru.
+
 ### `arayuz-denetim` SINANAMIYORDU — kör olduğu için değil, ölçülemediği için
 
 Denetimlerin gerçek geçmiş kusurlarla sınanması sırasında bu betik direndi:

@@ -10,7 +10,7 @@ const ACCENT_CLASSES: Record<string, { border: string; badge: string; cta: strin
   indigo: { border: "border-indigo-200", badge: "bg-indigo-900 text-white",        cta: "bg-indigo-900 text-white hover:bg-indigo-800",     dot: "bg-indigo-400" },
   rose:   { border: "border-rose-200",   badge: "bg-rose-700 text-white",          cta: "bg-rose-700 text-white hover:bg-rose-600",         dot: "bg-rose-400" },
   red:    { border: "border-red-200",    badge: "bg-red-700 text-white",           cta: "bg-red-700 text-white hover:bg-red-600",           dot: "bg-red-400" },
-  amber:  { border: "border-amber-200",  badge: "bg-amber-600 text-white",         cta: "bg-amber-600 text-white hover:bg-amber-500",       dot: "bg-amber-400" },
+  amber:  { border: "border-amber-200",  badge: "bg-amber-700 text-white",         cta: "bg-amber-700 text-white hover:bg-amber-500",       dot: "bg-amber-400" },
   sky:    { border: "border-sky-200",    badge: "bg-sky-700 text-white",           cta: "bg-sky-700 text-white hover:bg-sky-600",           dot: "bg-sky-400" },
   purple: { border: "border-purple-200", badge: "bg-purple-700 text-white",        cta: "bg-purple-700 text-white hover:bg-purple-600",     dot: "bg-purple-400" },
   green:  { border: "border-green-200",  badge: "bg-green-700 text-white",         cta: "bg-green-700 text-white hover:bg-green-600",       dot: "bg-green-400" },
