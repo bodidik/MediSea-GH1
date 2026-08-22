@@ -577,6 +577,8 @@ node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DE�
 node scripts/esik-etiket-denetim.cjs   # etiket kendi eşiğiyle çelişiyor mu (CI kapısı DEĞİL)
 node scripts/olu-denetim.cjs   # ekranda duran ama hiçbir şeyi değiştirmeyen kontrol (CI kapısı DEĞİL)
 node scripts/olu-denetim.cjs --negatif
+node scripts/bolme-denetim.cjs   # kullanıcı sayısına bölerken payda 0 olabilir mi (CI kapısı DEĞİL)
+node scripts/bolme-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1458,6 +1460,48 @@ Aynı korumayı ortak bir yardımcıya taşımak cazip ama yanlış olurdu — l
 aracında meşru bir hızı bastırırdı. Makullük sınırı klinik bağlamdan gelir,
 birimden değil.
 
+### Paydaya 0 yazmak: 131 araç · 18 bölme noktası tarandı, sınıf temiz
+
+`sayiGirildiMi` HAM DİZEYE bakıyor, yani kullanıcı bir paydaya `"0"` yazarsa
+kapı GEÇİYOR ve bölme korumasız kalıyor — sonuç `Infinity`. Boş alan zaten
+`parseLocaleNumber("")` ile 0 dönüyor ama orada kapı tutuyor; asıl açık
+kullanıcının bilerek 0 yazması.
+
+Ölçüldü: kullanıcı sayısına bölen 18 nokta var (kalsiyum · magnezyum ·
+naloksan · sedasyon · vazoaktif · heparin infüzyonları) ve **altısında da
+kapı `> 0` istiyor**, yani sınıf temiz.
+
+**Ama bu "0" ilk turda GÜVENİLMEZDİ ve iki ayrı sebepten:**
+
+- **Dosya düzeyinde eleme.** İlk ölçüt "bu dosyada `x > 0` geçiyor mu" diye
+  bakıyordu; belgede zaten yazılı olan tuzak (aynı dosyadaki İKİNCİ bölme
+  gizlenir). Eleme bölme NOKTASI düzeyine indirildi — kapı, bölmeyi açan
+  ifadede aranıyor.
+- **`</p>` kapanış etiketi bölme sanıldı.** `cdai`, `dapsa`, `sdai`, `ktv`,
+  `ogtt` araçlarında `parseLocaleNumber` değişkeninin adı tek harfli
+  (`p`, `t`, `h1`) ve ölçüt 17 sahte bulgu verdi. Bölme işaretinin önündeki
+  karakter `<` olamaz.
+
+İkisi de yalnızca POZİTİF kontrolle görünür; negatif kontrol ikisini de
+geçerdi. Ölçüt tohumlu iki yönlü kontrolle sınandı, o yüzden sıfır sonuç
+artık bir bulgu.
+
+### Heredoc BACKSLASH SİLİYOR — regex taşıyan betiği Write ile yaz
+
+Bu ortamda `cat > x.cjs <<'EOF'` (tırnaklı sınırlayıcıyla bile) kaçış
+karakterlerini düşürüyor. Sonuç sessiz: `'/\\s*'` yazılan dize dosyaya
+`'/\s*'` olarak iniyor, JS onu `'/s*'` diye okuyor ve **regex artık
+bambaşka bir şey arıyor.**
+
+Ölçüldü: bölme denetiminin negatif kontrolü bu yüzden düştü ve bir an
+"ölçüt kör" sanıldı — kusur ölçütte değil, betiği YAZAN kanaldaydı.
+Aynı kanal daha önce de birkaç kez sonuç bozdu.
+
+Kural: içinde `\s`, `\b`, `\w`, `\d` geçen bir betiği heredoc ile yazma.
+Write/Edit kullan, ya da kaçış istemeyen karşılıklarını yaz
+(`[ ]*`, `[A-Za-z0-9_]`). Yazdıktan sonra `grep -n RegExp` ile dosyaya
+gerçekten ne indiğini GÖR — bu, kusuru yakalayan tek adım oldu.
+
 ### Varsayılan değerden klinik etiket: 27 araç tarandı, sınıf temiz
 
 `naloksan-infuzyon`da varsayılan değerin fiziksel olarak saçma bir sayı
@@ -1508,6 +1552,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `ic-bilesen-denetim` | ✓ | ✓ 3 temiz | **7 kusur** | `cd` |
 | `esik-etiket-denetim` | ✓ | ✓ (tohumda) | **YOK** | `cd` |
 | `olu-denetim` | ✓ | ✓ | nrs-2002 | `--kok` |
+| `bolme-denetim` | ✓ | ✓ 4 temiz | YOK — sınıfın kusuru hiç oluşmamış | `--kok` |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
@@ -1598,11 +1643,17 @@ Dalı çizdirmek iki basamak istedi ve ikisi de belgede zaten yazılı:
 arkasında ve o kipe geçilemedi. Düzeltme, aynı çiftin `StudyBackup`ta yerinde
 doğrulanmış değerine dayanıyor (3.67 → 6.29). Raporda böyle yazıyor.
 
-**Kalan üç aday ölçülmedi ve "temiz" DENMİYOR:** `AdBanner`,
-`SimulatorEngine`, `TopicSidebar` — üçü de sıfır içe aktaran, yani ölü kod.
-Premium `liderlik` satırı (`text-amber-500` üzerine `bg-amber-500/10`) koyu
-yüzeyde ve denetimin `-50` zemin varsayımı orada geçmiyor; büyük olasılıkla
-yanlış pozitif ama ölçülmedi.
+**Kalan üç aday SONRADAN karara bağlandı — sınıf kapalı.** `AdBanner`,
+`SimulatorEngine`, `TopicSidebar` ulaşılmaz. Dikkat: `SimulatorEngine`
+*içe aktarılmış* görünüyor (3 sayfa), ama üçü de alt çizgili klasörde
+(`_endokrinoloji`, `_gastroenteroloji`, `_nefroloji`) ve rotaya alınmıyor —
+ölçüt "içe aktarılmış mı" DEĞİL, "rotadan ulaşılabiliyor mu".
+
+Premium `liderlik` satırı (`text-amber-500` üzerine `bg-amber-500/10`)
+**ÖLÇÜLDÜ: 7.14, yani yanlış pozitif.** Denetimin `-50` açık zemin varsayımı
+orada geçmiyor; yüzey koyu ve gerçek bileşke zemin `rgb(38,37,39)`. Aynı
+sayfaya konan, zemine uyarlanmış tohum 1.72 ile yakalandı — yani "temiz"
+sonucu kör bir ölçütten gelmiyor. Verdiktler denetimin başına yazıldı.
 
 ### `renk-cifti-denetim` TAMAMEN KÖRDÜ — bu oturumdaki ~71 kusurun hiçbirini görmemişti
 
@@ -1660,9 +1711,10 @@ geçiyor, güncel depoda 8 aday kaldı.
 ortamda çalışmadığı için dal hiç çizilmiyor. Düzeltme, çiftin daha önce
 tarayıcıda ölçülmüş değerine (3.77) dayanıyor; raporda öyle yazıyor.
 
-**Kalan 6 adayın 3'ü ölü kod** (`AdBanner`, `SimulatorEngine`, `TopicSidebar`
-— sıfır içe aktaran), 3'ü ulaşılabilir ama henüz ölçülmedi (`NotePanel`,
-`StudyBackup`, premium `liderlik`). "Temiz" DENMİYOR.
+**Kalan 6 adayın hepsi karara bağlandı.** Üçü ulaşılmaz (`AdBanner`,
+`SimulatorEngine`, `TopicSidebar`), üçü ölçüldü: `NotePanel` ve `StudyBackup`
+düzeltildi (3.67 → 6.29), premium `liderlik` **7.14 ile yanlış pozitif**.
+Verdiktler `renk-cifti-denetim.cjs` başında duruyor — yeniden kovalanmasın.
 
 ### Türkçe büyük harf katlama, ölçüm tarafında da vurdu
 

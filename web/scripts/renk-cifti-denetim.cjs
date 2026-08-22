@@ -32,6 +32,31 @@
  * Kapının negatif kontrolü yapılırken bu sınır UNUTULDU: ilk tohum dosyada
  * rengi ve zemini AYRI satırlara koymuştu, kapı ateşlemedi ve bir an
  * 'kapı bozuk' sanıldı. Kusur kapıda değil tohumdaydı.
+ *
+ * ── KALAN 3 ADAYIN VERDİKTİ — YENİDEN KOVALAMAYIN ────────────────────
+ *
+ * Aşağıdakiler her çalıştırmada rapora düşüyor ve üçü de KUSUR DEĞİL.
+ * Kaynak taraması bunları kendi başına eleyemez: ulaşılabilirlik ve
+ * gerçek bileşke zemin kaynakta DEĞİL, o yüzden denetim kapı değil rapor.
+ *
+ *   premium/ydus/liderlik:90  (text-amber-500 / bg-amber-500/10)
+ *     ÖLÇÜLDÜ, YANLIŞ POZİTİF: kontrast 7.14 (eşik 4.5). Denetimin `-50`
+ *     açık zemin varsayımı burada geçmiyor — yüzey koyu ve gerçek bileşke
+ *     zemin rgb(38,37,39). Ölçüm olgun ölçütle yapıldı (alfa bindirmesi,
+ *     ata opacity çarpımı, degrade, geçişler kapalı) ve AYNI SAYFAYA konan
+ *     zemine uyarlanmış tohum 1.72 ile yakalandı, yani ölçüt kör değildi.
+ *
+ *   soru-cozum/SimulatorEngine.tsx:133  (beyaz / emerald-600 = 3.77)
+ *     ULAŞILMAZ. Dikkat: bu dosya İÇE AKTARILMIŞ görünüyor (3 sayfa), ama
+ *     üçü de `_endokrinoloji` / `_gastroenteroloji` / `_nefroloji` altında,
+ *     yani alt çizgili klasörde ve rotaya alınmıyor. Ölçüt "içe aktarılmış
+ *     mı" DEĞİL, "rotadan ulaşılabiliyor mu" olmalı.
+ *
+ *   components/TopicSidebar.tsx:32  (red-500 / red-50 = 3.44)
+ *     ULAŞILMAZ — sıfır içe aktaran.
+ *
+ * Bu üçü değişirse verdikt de düşer: dosya rotaya bağlanırsa ya da
+ * liderlik yüzeyi açık zemine taşınırsa yeniden ÖLÇÜLMELİ.
  */
 const fs = require('fs');
 const path = require('path');
