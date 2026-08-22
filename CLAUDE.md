@@ -581,6 +581,8 @@ node scripts/bolme-denetim.cjs   # kullanıcı sayısına bölerken payda 0 olab
 node scripts/bolme-denetim.cjs --kontrol
 node scripts/payda-denetim.cjs   # ilan edilen tavan, şıklardan hesaplanana eşit mi (CI kapısı DEĞİL)
 node scripts/payda-denetim.cjs --kontrol
+node scripts/bant-denetim.cjs   # cetveldeki sınır, koddaki merdivene uyuyor mu (CI kapısı DEĞİL)
+node scripts/bant-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1158,6 +1160,57 @@ dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
 yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
+
+### Rengi metinden BAĞIMSIZ hesaplamak — sayı "iyi", yorumu "kötü" diyordu
+
+`spot-urine`daki TTKG kartı üç kusuru birden taşıyordu ve kökü tek: yorum
+fonksiyonu bir `ok` alanı DÖNDÜRÜYOR ama **hiç kullanılmıyordu**; renkler
+ondan bağımsız, `ttkg >= 5 && pkN > 5` ile hesaplanıyordu.
+
+Üç durum ölçüldü, İKİSİ yanlış boyanıyordu:
+
+| hasta | TTKG | yorum | büyük sayının rengi |
+|---|---|---|---|
+| hipokalemik K 3.0 | 8.0 | renal K kaybı — **anormal** | **mavi (güven verici)** ✗ |
+| normokalemik K 4.0 | 6.0 | yoruma girmiyor | zemin ve metin **alarm kırmızısı** ✗ |
+| hiperkalemik K 6.0 | 1.0 | hipoaldosteronizm — anormal | kırmızı ✓ (rastlantıyla) |
+
+Birincisi tehlikeli yön: gözün ilk gittiği büyük sayı güven verici renkte,
+hemen altındaki cümle "renal K kaybı" diyor. İkincisi ise **her normokalemik
+hastaya** kırmızı kart gösteriyordu — alarm yorgunluğu üreten sahte uyarı.
+
+Üçüncü çelişki etiketlerdeydi: hipokalemide TTKG 5 için ekran "TTKG **< 3**"
+basıyordu, yani gösterdiği sayıyla çelişiyordu.
+
+**Çare rengi TEK KAYNAĞA bağlamak.** `ok` üç durumlu yapıldı
+(`false` anormal · `true` beklenen yanıt · `null` yorum yok) ve zemin, sayı,
+metin üçü de ondan besleniyor. Artık sayı ile yorum ayrışamaz.
+
+**Bir gösterim değeri, onu anlatan metinden AYRI hesaplanıyorsa ikisi
+er geç ayrışır.** Aynı kalıbın başka biçimleri belgede kayıtlı: ilan edilen
+sayı ile dosyadaki gerçek (premium modüller), eşik dizisi ile etiket
+(`antikoagulan-geri-dondurme`), payda ile ulaşılabilir tavan (`rapid3`).
+
+`scripts/bant-denetim.cjs` bu sınıfın ölçülebilir yarısını tarıyor: ekranda
+basılan sınır ile koddaki merdivenin KAPSAYICILIĞI çelişiyor mu
+(`kod <= 3` ↔ `cetvel < 3`). Tam o değerde bant ayrışır.
+
+**Ölçüt İKİ KEZ daraltıldı, ikisi de sahte bulgu üretiyordu:**
+
+- **"Cetvelde olup merdivende olmayan sayı"** ölçütü 28 aracın 23'ünü
+  işaretledi; fazla çıkanların hepsi ölçeğin UÇ DEĞERLERİYDİ (braden 6–23,
+  dlqi 30, heart 0–10). Cetvelde uç göstermek doğru.
+- **Varlık kodları.** JSX metninde düz `<` yazılamaz, cetveller `&lt;`
+  kullanıyor; çözülmeden ölçüt aradığı biçimi göremiyordu.
+
+**Tohum GERÇEK ŞEKLİ taşımalı — bu tur bir kez daha yaşandı.** İlk tohum
+cetveli fonksiyon gövdesine koymuştu; metin çıkarıcının `{…}` süzgeci
+gövdenin tamamını yutuyor ve negatif kontrol "ölçüt kör" diyordu. Kusur
+ölçütte değil TOHUMDAYDI; gerçek araçlarda cetvel modül düzeyinde bir satır
+dizisinde duruyor.
+
+**En güçlü doğrulama sentetik tohum değil, GERÇEK KUSURUN önce/sonra
+çiftiydi:** düzeltme öncesi `spot-urine` yakalanıyor, sonrası yakalanmıyor.
 
 ### Payda denetimi KAYNAKTAN yapıldı — 11 araç doğrulandı, sınıf KAPANMADI
 
@@ -1855,6 +1908,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `olu-denetim` | ✓ | ✓ | nrs-2002 | `--kok` |
 | `bolme-denetim` | ✓ | ✓ 4 temiz | YOK — sınıfın kusuru hiç oluşmamış | `--kok` |
 | `payda-denetim` | ✓ | ✓ 2 biçim | **DÜŞTÜ — kapsam sınırı yazılı** | konumsal arg |
+| `bant-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine önce/sonra) | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur

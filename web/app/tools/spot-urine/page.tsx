@@ -135,16 +135,35 @@ export default function SpotUrinePage() {
   const ttkg = ukN > 0 && pkN > 0 && uosmN > 0 && posmN > 0
     ? (ukN / pkN) * (posmN / uosmN) : null;
 
-  const getTTKGInterp = (v: number, seK: number) => {
-    if (seK > 5) { // hyperkalemia
+  /**
+   * `ok` ALANI VARDI AMA HİÇ KULLANILMIYORDU — renkler ondan bağımsız
+   * hesaplanıyordu (`ttkg >= 5 && pkN > 5`) ve üç durumun İKİSİ yanlış
+   * boyanıyordu. Ölçüldü:
+   *
+   *   hipokalemik (K 3.0), TTKG 8 = renal K kaybı (ANORMAL)
+   *     -> büyük sayı MAVİ (güven verici), altındaki metin kırmızı.
+   *        Gözün ilk gittiği sayı, yorumuyla çelişiyordu.
+   *   normokalemik (K 4.0), TTKG 6 = yoruma girmeyen durum
+   *     -> nötr cümle ("TTKG = 6.0") ALARM KIRMIZISINDA; yani her
+   *        normokalemik hasta kırmızı kart görüyordu.
+   *   hiperkalemik (K 6.0), TTKG 1 = anormal -> doğruydu (rastlantıyla).
+   *
+   * `ok` artık ÜÇ durumlu ve bütün renkler ondan geliyor:
+   *   false = anormal · true = beklenen yanıt · null = yorum yok
+   *
+   * ETİKETLER DE DALIN KENDİSİNİ ANLATIYOR. Eskiden hipokalemide TTKG 5
+   * için "TTKG < 3" basılıyordu — ekrandaki 5.0 ile doğrudan çelişki.
+   */
+  const getTTKGInterp = (v: number, seK: number): { txt: string; ok: boolean | null } => {
+    if (seK > 5) { // hiperkalemi
       if (v < 5)  return { txt: "Hiperkalemi → TTKG < 5: Hipoaldosteronizm veya transmembran kayma", ok: false };
-      return { txt: "Hiperkalemi → TTKG > 5: Artmış K alımına uygun yanıt veya periferik etki", ok: null };
+      return { txt: "Hiperkalemi → TTKG ≥ 5: Artmış K alımına uygun yanıt veya periferik etki", ok: true };
     }
-    if (seK < 3.5) { // hypokalemia
+    if (seK < 3.5) { // hipokalemi
       if (v > 7)  return { txt: "Hipokalemi → TTKG > 7: Renal K kaybı (hiperaldosteronizm, diüretik)", ok: false };
-      return { txt: "Hipokalemi → TTKG < 3: Ekstrarenal K kaybı (diyare, kusma)", ok: null };
+      return { txt: "Hipokalemi → TTKG ≤ 7: Ekstrarenal K kaybı ile uyumlu (diyare, kusma)", ok: true };
     }
-    return { txt: `TTKG = ${v.toFixed(1)}`, ok: null };
+    return { txt: `TTKG = ${v.toFixed(1)} — serum K normal aralıkta, TTKG yorumu bu aralıkta tanısal değil`, ok: null };
   };
 
   // ── UAG / UOG
@@ -324,17 +343,27 @@ export default function SpotUrinePage() {
               <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdrar osmolalitesi plazma osmolalitesinden yüksek olmalı (tubüler konsantrasyon gereksinimi)</p>
             </div>
 
-            {ttkg !== null && (
-              <div className={`p-6 rounded-[2rem] border-2 border-dashed ${ttkg >= 5 && pkN > 5 ? 'bg-sky-50 border-sky-200' : 'bg-rose-50 border-rose-200'}`}>
-                <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">TTKG</div>
-                <p className={`text-4xl font-black ${ttkg >= 5 ? 'text-sky-700' : 'text-rose-700'}`}>{ttkg.toFixed(1)}</p>
-                {pkN > 0 && (
-                  <p className={`text-sm font-bold mt-2 ${ttkg >= 5 && pkN > 5 ? 'text-sky-700' : 'text-rose-700'}`}>
-                    {getTTKGInterp(ttkg, pkN).txt}
-                  </p>
-                )}
-              </div>
-            )}
+            {ttkg !== null && (() => {
+              /* Renk TEK KAYNAKTAN: yorumun kendi verdiği karar. Üç renk üç
+                 duruma birebir karşılık geliyor; sayı ile metin ayrışamaz. */
+              const yorum = pkN > 0 ? getTTKGInterp(ttkg, pkN) : null;
+              const durum = yorum ? yorum.ok : null;
+              const kart = durum === false ? 'bg-rose-50 border-rose-200'
+                : durum === true ? 'bg-sky-50 border-sky-200'
+                : 'bg-slate-50 border-slate-200';
+              const yazi = durum === false ? 'text-rose-700'
+                : durum === true ? 'text-sky-700'
+                : 'text-slate-600';
+              return (
+                <div className={`p-6 rounded-[2rem] border-2 border-dashed ${kart}`}>
+                  <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">TTKG</div>
+                  <p className={`text-4xl font-black ${yazi}`}>{ttkg.toFixed(1)}</p>
+                  {yorum && (
+                    <p className={`text-sm font-bold mt-2 ${yazi}`}>{yorum.txt}</p>
+                  )}
+                </div>
+              );
+            })()}
 
             <div className="bg-white rounded-2xl border border-slate-200 p-4">
               <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">TTKG Yorumlama Kılavuzu</p>
