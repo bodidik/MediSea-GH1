@@ -1172,7 +1172,7 @@ için sayı UYDURMUYOR**:
 |---|---|---|
 | ilan = hesap | **11** | güçlü kanıt temiz |
 | sapan | 1 | `findrisc`, verdikti betikte (alternatif gruplar fazla sayılıyor) |
-| ayrıştırılamadı | 23 | **iş listesi, temiz listesi DEĞİL** |
+| ayrıştırılamadı | 23 | sonraki turda **hepsi elle karara bağlandı** — aşağıda |
 
 Doğrulanan 11: `4t-hit` 8/8 · `abcd2` 7/7 · `act` 25/25 · `bode` 10/10 ·
 `braden` 23/23 · `child-pugh` 15/15 · `flipi` 5/5 · `heart` 10/10 ·
@@ -1209,6 +1209,31 @@ ayrı kovaya koyuyor. Ama raporu "sınıf kapandı" diye okunamaz.
 Üçü de "sapan" olarak raporlanıyordu, yani ölçüt düzeltilmeseydi üç sahte
 kusur kovalanacaktı. **Bir tarama ilk çalıştırmada aday üretiyorsa, önce
 ölçütü sına.**
+
+#### Kalan 23 araç ELLE karara bağlandı — payda sınıfı KAPANDI
+
+Denetimin ayrıştıramadığı 23 araç kaynak okunarak tek tek doğrulandı;
+**hiçbirinde uyuşmazlık yok.** Verdiktler `payda-denetim.cjs` başında da
+duruyor, o kova bir daha bekleyen iş sanılmasın.
+
+| şekil | araçlar |
+|---|---|
+| N madde × şık tavanı | `cat-copd` 8×5=40 · `ciwa-ar` 7×9+4=67 · `dlqi` 10×3=30 · `gds-15` 15 · `mrss` 17×3=51 · `tnss` 4×3=12 · `uas7` 7×6=42 · `esas` 9×10=90 |
+| bileşen toplamı | `conut` 6+3+2=11 · `glasgow-blatchford` 6+6+3+1+1+2+2+2=23 · `frail` 5 · `ipi` 5 · `timi-ua` 7 · `fibromiyalji` WPI 19 · `karnofsky` 100 · `gcs` 15 |
+| alt sayaç (toplam payda değil) | `ranson` — "/5" ve "/6" ayrı sayaçlar, diziler 5 ve 6 öge |
+| payda ilanı SAHTE (formül parçası) | `basdai` `(S5+S6)/2` · `gnri` `(Boy−150)/4` · `haq-di` · `spot-urine` `UÜre/2.8` |
+
+Böylece payda ilan eden **35 aracın 35'i** karara bağlandı: 11'i denetimle,
+23'ü elle, 1'i (`findrisc`) elle + verdikt. Yeni kusur çıkmadı — bu seride
+bulunan iki kusur (`rapid3`, `scorad`) sınıfın tamamıymış.
+
+**ÖLÇÜT BU TURDA DA BİR SAHTE ADAY ÜRETTİ ve şekli öğretici:** `ranson`
+dizilerini 6 ve 7 öge saydım, etiketler "/5" ve "/6" diyordu ve bir an
+"hepsi işaretlenirse 6/5 yazacak" sanıldı. Sayım TİP ANOTASYONU satırındaki
+`{ key: CriterionKey; label: string }[]` ifadesini de öge saymıştı.
+**Bir diziyi `grep -c` ile saymak, tip anotasyonu aynı anahtarı taşıyorsa
+bir fazla sayar** — diziyi aç ve öğelerini gör.
+
 
 ### Genel bir "aracı uçlara sür" tarayıcısı YAZILDI ve REDDEDİLDİ
 

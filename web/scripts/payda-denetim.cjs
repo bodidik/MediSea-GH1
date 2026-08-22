@@ -26,6 +26,28 @@
  * tamamı için DEĞİL. "Ayrıştırılamadı" kovası bir iş listesidir, temiz
  * listesi değil.
  *
+ * ── "AYRIŞTIRILAMADI" KOVASININ 23 ARACI ELLE KARARA BAĞLANDI ───────
+ *
+ * O kova BEKLEYEN İŞ DEĞİL; hepsi kaynak okunarak doğrulandı ve tavanları
+ * ilan ettikleriyle uyuşuyor. Yeniden kovalamayın:
+ *
+ *   N madde × şık tavanı:
+ *     cat-copd 8×5=40 · ciwa-ar (7×9 + 4)=67 · dlqi 10×3=30 · gds-15 15×1=15
+ *     mrss 17×3=51 · tnss 4×3=12 · uas7 7×(3+3)=42 · esas 9×10=90
+ *   bileşen toplamı:
+ *     conut 6+3+2=11 · glasgow-blatchford 6+6+3+1+1+2+2+2=23
+ *     frail 5×1=5 · ipi 5×1=5 · timi-ua 7×1=7 · fibromiyalji WPI 19 bölge
+ *     karnofsky 0–100 tek grup · gcs 4+5+6=15
+ *   ayrı alt sayaçlar (toplam payda DEĞİL):
+ *     ranson — "{admissionCount}/5" ve "{hour48Count}/6"; diziler gerçekten
+ *     5 ve 6 öge taşıyor. Tarama bir ara 6 ve 7 saymıştı: TİP ANOTASYONU
+ *     satırındaki `{ key: CriterionKey; … }` da sayılmıştı. Off-by-one ölçüm
+ *     hatasıydı, araçta kusur yok.
+ *   payda İLANI SAHTE (formül parçası, sınama gerektirmez):
+ *     basdai `(S5+S6)/2` · gnri `(Boy − 150)/4` · haq-di · spot-urine
+ *     `UÜre/2.8 + UGlukoz/18`
+ *   bu seride düzeltilenler: rapid3 (0–30) · scorad (0–103)
+ *
  * ── AÇIK ADAYIN VERDİKTİ — YENİDEN KOVALAMAYIN ──────────────────────
  *
  *   findrisc  hesap 30 · ilan 26  ->  KUSUR DEĞİL, ölçüt fazla sayıyor.
