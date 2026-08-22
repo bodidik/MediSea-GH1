@@ -575,6 +575,8 @@ node scripts/renk-cifti-denetim.cjs --negatif
 node scripts/yetim-denetim.cjs   # konu dosyası olmayan quiz/kart/vaka (CI kapısı DEĞİL)
 node scripts/asili-denetim.cjs   # ebeveyni bulunamayan konular (CI kapısı DEĞİL)
 node scripts/esik-etiket-denetim.cjs   # etiket kendi eşiğiyle çelişiyor mu (CI kapısı DEĞİL)
+node scripts/olu-denetim.cjs   # ekranda duran ama hiçbir şeyi değiştirmeyen kontrol (CI kapısı DEĞİL)
+node scripts/olu-denetim.cjs --negatif
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1365,6 +1367,44 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 Üçüncüsü: geçiş (`aria-pressed`) ile gezinme (`aria-current`) ayrı.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
+
+### Ölü denetim taraması BETİĞE alındı — ölçüt kaydedilmediği için yeniden yazıldı ve BOZUK çıktı
+
+"Ekranda duran ama hiçbir şeyi değiştirmeyen kontrol" ölçütü daha önce bir kez
+sürülmüş (124 araç · 387 durum) ama **betiğe alınmamıştı**. Bu tur yeniden
+yazmak gerekti ve ilk hâli sessizce bozuktu: `setX(...)` çağrıları elenmiyordu,
+`onClick={() => setOlu(!olu)}` değişkenin kendisini içerdiği için her durum
+"kullanılıyor" görünüyordu ve tarama **hiçbir şey bulmuyordu** — üstelik
+"0 aday" temiz gibi okunuyordu.
+
+**Tarihsel kontrol düştüğünde önce ÖLÇÜTÜ sına, commit seçimini değil.**
+İlk tepkim "yanlış commit seçtim" oldu; sentetik tohum ölçütün bozuk olduğunu
+gösterdi. Düzeltilince `nrs-2002`nin düzeltme öncesi iki sürümü de 1 aday
+verdi — o araçta aşama 1 soruları skora hiç girmiyordu.
+
+Betiğin İKİ yönlü kontrolü var ve ikisi de şart: tohumdaki `olu` yakalanmalı,
+`canli` (skora giren durum) YAKALANMAMALI. Ölçüt bir kez ters yönde bozulduğu
+için tek yönlü kontrol yetmiyor.
+
+**Kapsam araçların dışına genişletildi** — eski sürüm yalnızca `app/tools`
+tarıyordu. Şimdi `app` + `components`: **400 tsx · 651 durum · 4 aday.**
+
+Dört adayın dördü de karara bağlandı, **gerçek kusur yok**:
+
+| aday | verdikt |
+|---|---|
+| `unit-converter` `ters` | MEŞRU — çevirme çift yönlü, takas hem `order`ı hem gerçek konumu değiştiriyor |
+| `ReadingHint` `cikis` | MEŞRU — "Anladım" sonrası öge DOM'dan gerçekten çıkıyor |
+| `LangSwitch` `lang` | ölü kod — sıfır içe aktaran |
+| `TableOfContents` `activeId` | ölü kod — sıfır içe aktaran |
+
+`ReadingHint` özellikle ölçüldü çünkü `cikis` yalnızca `opacity-0` sınıfı
+veriyor: eğer bileşen sökülmeseydi "görünmez ama odaklanılabilir" tuzağı
+olurdu. Ölçüm `contains: false` dedi — sökülüyor.
+
+**Ölçüm izini temizle: "Anladım" tıklaması `medisea:hint:reading:v1` yazıyor.**
+Bu, kullanıcının dev origin'inde ipucunun KALICI olarak kapanması demek.
+Ölçümden sonra silindi; `medisea:*` sayımı 0.
 
 ### Saydamlık raporundaki 8 "genel" adayın 8'i de karara bağlandı — kusur yok
 
