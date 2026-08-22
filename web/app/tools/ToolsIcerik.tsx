@@ -133,6 +133,7 @@ const TOOLS_DATABASE = [
     items: [
       { slug: "nac-infuzyon", name: "NAC İnfüzyonu", desc: "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat" },
       { slug: "fomepizol", name: "Fomepizol Dozu", desc: "Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil" },
+      { slug: "hiperkalemi-tedavi", name: "Hiperkalemi Tedavisi", desc: "Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar" },
       { slug: "potasyum-replasman", name: "Potasyum Replasmanı", desc: "IV potasyumda hız, derişim ve süre sınırları — periferik ve santral yol ayrı" },
       { slug: "magnezyum-infuzyon", name: "Magnezyum İnfüzyonu", desc: "Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt" },
       { slug: "kalsiyum-infuzyon", name: "Kalsiyum İnfüzyonu", desc: "Glukonat/klorür dönüşümü — aynı ampul üç kat farklı elementer kalsiyum taşır" },

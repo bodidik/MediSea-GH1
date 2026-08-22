@@ -315,6 +315,11 @@
   "desc": "Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor"
  },
  {
+  "slug": "hiperkalemi-tedavi",
+  "name": "Hiperkalemi Tedavisi",
+  "desc": "Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar"
+ },
+ {
   "slug": "homa-ir",
   "name": "HOMA-IR",
   "desc": "İnsülin direnci indeksi (açlık glukoz × insülin)"
