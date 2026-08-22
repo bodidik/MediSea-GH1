@@ -583,6 +583,8 @@ node scripts/payda-denetim.cjs   # ilan edilen tavan, şıklardan hesaplanana e�
 node scripts/payda-denetim.cjs --kontrol
 node scripts/bant-denetim.cjs   # cetveldeki sınır, koddaki merdivene uyuyor mu (CI kapısı DEĞİL)
 node scripts/bant-denetim.cjs --kontrol
+node scripts/karar-denetim.cjs   # renk, kararı veren alandan mı geliyor (CI kapısı DEĞİL)
+node scripts/karar-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1160,6 +1162,49 @@ dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
 yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
+
+### "Okunmayan alan" YANLIŞ ölçüttü — kusur, alanın TEK YERDE atlanmasıydı
+
+`spot-urine` kusurunu genelleştirmek için önce şu ölçüt yazıldı: **dönüş
+nesnesinde hiç okunmayan alan.** Tarihsel kontrolde DÜŞTÜ ve sebebi
+öğreticiydi: `ok` aslında okunuyordu — paylaşılan `ResultRow` bileşeni altı
+satırı ondan boyuyor. Kusur "alan hiç okunmuyor" değil, **"her yerde
+okunuyor ama TEK bir kart atlayıp kararı yeniden hesaplıyor"**dı.
+
+Doğru ölçüt iki koşulun KESİŞİMİ ve `scripts/karar-denetim.cjs` bunu tarıyor:
+
+1. dosyada bir KARAR ALANI döndürülüyor (`ok:` gibi),
+2. bir `className` ifadesi kararı HAM SAYI karşılaştırmasından üretiyor.
+
+İkincisi tek başına meşru — karar alanı yoksa atlanacak bir şey de yok.
+Şüphe, aynı dosyada iki gerçekliğin bir arada olmasından doğuyor.
+
+Doğrulama: negatif + iki pozitif kontrol, ve **gerçek kusurla tarihsel
+kontrol** — düzeltme öncesi `spot-urine`da tam olarak kusurlu üç satırı
+(328/330/332) yakalıyor, güncel depoda 0 veriyor.
+
+### Aynı sınıfın TERSİ: hesaplanmış sunum kararı ekrana hiç ulaşmıyor
+
+`spot-urine`da ekran kararı YENİDEN hesaplıyordu. `esas`ta ise kararı HİÇ
+kullanmıyordu: `colorForScore` bir `bar` rengi üretiyor ve o alan hiçbir
+yerde okunmuyordu.
+
+Ölçüldü — semptom şiddeti 0, 1 ve 9 için kaydırıcının dolu kısmı **aynı
+lacivert** (`rgb(26,26,107)`), oysa yanındaki sayı ve tik etiketi şiddete
+göre yeşil/kırmızı oluyordu. Üç görsel kanalın ikisi şiddeti kodluyor,
+üçüncüsü kodlamıyordu — üstelik o kanalın rengini üreten kod dosyada zaten
+duruyordu.
+
+Kaydırıcı dolgusu satır içi degrade olduğu için sınıf değil hex gerekiyordu;
+`bar` → `cizgi` yapıldı ve tek kaynak oldu. Ölçüldü: 2 → yeşil, 5 → amber,
+9 → kırmızı, ve **negatif kontrol olarak çubuk ile sayının rengi her satırda
+aynı aileyi gösteriyor** (üç kanal birbirini doğruluyor).
+
+`asdas` de aynı sınıfta ve DÜZELTİLMEDİ: bant nesnesi `sub` (aralık etiketi),
+`bg` ve `border` döndürüyor, üçü de okunmuyor — kart yalnızca `color` ve
+`label` kullanıyor. Kusur değil eksik affordans; kardeş araçlar (`rapid3`,
+`scorad`) bant cetvelini ve renkli kartı gösteriyor. Ölçüldü, not edildi,
+değiştirilmedi.
 
 ### Rengi metinden BAĞIMSIZ hesaplamak — sayı "iyi", yorumu "kötü" diyordu
 
@@ -1909,6 +1954,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `bolme-denetim` | ✓ | ✓ 4 temiz | YOK — sınıfın kusuru hiç oluşmamış | `--kok` |
 | `payda-denetim` | ✓ | ✓ 2 biçim | **DÜŞTÜ — kapsam sınırı yazılı** | konumsal arg |
 | `bant-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine önce/sonra) | konumsal arg |
+| `karar-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine, 3 satır) | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur

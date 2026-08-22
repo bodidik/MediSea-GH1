@@ -15,10 +15,25 @@ const SYMPTOMS = [
   { key: "dyspnea",    label: "Nefes Darlığı",   left: "Yok",      right: "En kötü" },
 ];
 
+/**
+ * `bar` ALANI HESAPLANIYOR AMA HİÇ KULLANILMIYORDU.
+ *
+ * Ölçüldü: şiddet 0, 1 ve 9 için kaydırıcının dolu kısmı AYNI lacivertti
+ * (`rgb(26,26,107)`), oysa yanındaki sayı ve tik etiketi şiddete göre
+ * yeşil/kırmızı oluyordu. Yani üç görsel kanalın ikisi şiddeti kodluyor,
+ * üçüncüsü kodlamıyordu — üstelik o kanalın rengini üreten kod zaten burada
+ * duruyordu.
+ *
+ * Sınıfın adı: hesaplanmış bir sunum kararının ekrana hiç ulaşmaması.
+ * (`spot-urine`daki kusurun tersi; orada ekran kararı YENİDEN hesaplıyordu.)
+ *
+ * Kaydırıcı dolgusu satır içi degrade olduğu için sınıf değil HEX gerekiyor;
+ * `bar` bu yüzden `cizgi`ye çevrildi ve tek kaynak oldu.
+ */
 function colorForScore(v: number) {
-  if (v <= 3) return { bar: "bg-emerald-500", text: "text-emerald-700" };
-  if (v <= 6) return { bar: "bg-amber-500",   text: "text-amber-700" };
-  return            { bar: "bg-rose-500",     text: "text-rose-700" };
+  if (v <= 3) return { cizgi: "#059669", text: "text-emerald-700" };
+  if (v <= 6) return { cizgi: "#d97706", text: "text-amber-700" };
+  return            { cizgi: "#e11d48", text: "text-rose-700" };
 }
 
 export default function EsasPage() {
@@ -70,7 +85,7 @@ export default function EsasPage() {
                     <input aria-label={s.label} type="range" min={0} max={10} step={1} value={v}
                       onChange={e => set(s.key, Number(e.target.value))}
                       className="w-full h-6 py-2 bg-clip-content rounded-full appearance-none cursor-pointer accent-blue-900"
-                      style={{ background: `linear-gradient(to right, #1a1a6b ${v * 10}%, #e2e8f0 ${v * 10}%)`,
+                      style={{ background: `linear-gradient(to right, ${c.cizgi} ${v * 10}%, #e2e8f0 ${v * 10}%)`,
                         backgroundClip: 'content-box' }}
                     />
                     <div className="flex justify-between mt-1">
