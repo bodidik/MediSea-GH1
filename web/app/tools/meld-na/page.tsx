@@ -23,7 +23,24 @@ export default function MeldNaPage() {
   const [na, setNa] = React.useState<string>(s?.get("na") || "135");
 
   const [onDialysis, setOnDialysis] = React.useState<boolean>(s?.get("dial") === "1");
-  const [capCreat4, setCapCreat4] = React.useState<boolean>(s?.get("cap") === "1");
+  /**
+   * KREATİNİN TAVANI SEÇENEK DEĞİL, FORMÜLÜN PARÇASI.
+   *
+   * Burası bir dönem `capCreat4` adlı, VARSAYILAN OLARAK KAPALI bir onay
+   * kutusuydu. Yani araç normalde kreatinini kırpmıyordu ve Cr 8 girilince
+   * MELD-Na **34** basıyordu; doğrusu (tavan 4.0 ile) **28**. Nakil
+   * önceliğinin konuşulduğu bir skorda 6 puanlık sapma.
+   *
+   * UNOS tanımında Cr 4.0 mg/dL'de kırpılır ve bunun kapatılabilir bir hâli
+   * yoktur — kapatılabilir bir kutu yalnızca YANLIŞ skor üretebiliyordu.
+   * Kutu kaldırıldı, kırpma koşulsuz; kullanıcıya kutu yerine ne olduğunu
+   * söyleyen bir satır gösteriliyor.
+   *
+   * Bu kusur BİR BAŞKA KUSUR TARAFINDAN GİZLENİYORDU: eski formülde `× 10`
+   * eksik olduğu için Cr 4 (2.686) ile Cr 8 (3.349) İKİSİ DE 3'e yuvarlanıyor
+   * ve tavan çalışıyormuş gibi görünüyordu. Ölçek düzelince fark açığa çıktı.
+   */
+  const CR_TAVAN = 4.0;
 
   const crNum = parseLocaleNumber(cr);
   const tbNum = parseLocaleNumber(tb);
@@ -31,8 +48,8 @@ export default function MeldNaPage() {
   const naNum = parseLocaleNumber(na);
 
   const naAdj = clamp(naNum, 125, 137);
-  let crUsed = onDialysis ? 4.0 : crNum;
-  if (capCreat4) crUsed = Math.min(crUsed, 4.0);
+  const crUsed = Math.min(onDialysis ? CR_TAVAN : crNum, CR_TAVAN);
+  const crKirpildi = !onDialysis && crNum > CR_TAVAN;
 
   const crAdj = Math.max(1, crUsed);
   const tbAdj = Math.max(1, tbNum);
@@ -56,11 +73,45 @@ export default function MeldNaPage() {
     naNum  >= 90  && naNum  <= 190 &&
     (onDialysis || (crNum >= 0.1 && crNum <= 25));
 
-  const meld = 0.957 * Math.log(crAdj) + 0.378 * Math.log(tbAdj) + 1.12 * Math.log(inrAdj) + 0.643;
-  const meldNa = meld + 1.59 * (135 - naAdj);
-  const score = round(meldNa, 0);
+  /**
+   * FORMÜL MELEZDİ VE EKSİ SKOR BASIYORDU — ölçüldü, düzeltildi.
+   *
+   * Eski hâli:
+   *   meld   = 0.957·ln(Cr) + 0.378·ln(bili) + 1.12·ln(INR) + 0.643
+   *   meldNa = meld + 1.59 · (135 − Na)
+   *
+   * İki ayrı kusur üst üste biniyordu:
+   *
+   * 1. KARACİĞER TERİMİNDE `× 10` YOK. UNOS formülü parantezin tamamını 10
+   *    ile çarpar. Katsayılar doğruydu ama sonuç bir kat küçük çıkıyordu:
+   *    Cr 4 · bili 2 · INR 1.5 · Na 135 için ekran **3** diyordu, doğrusu 27.
+   *
+   * 2. İKİ TERİM FARKLI ÖLÇEKTEYDİ. Sodyum katsayısı (1.59) TAM ölçekli
+   *    MELD için yayımlanmış; onda birlik bir MELD'e eklenince skoru sodyum
+   *    tek başına yönetiyordu. Üstelik kıskaç 2016 varyantından (125–137)
+   *    alınmış ama referans 2008'in `135 − Na`'sı olduğu için terim EKSİYE
+   *    düşebiliyordu.
+   *
+   * Bedeli ölçüldü: Cr 1 · bili 1 · INR 1 · Na 137 → ekranda **−3**.
+   * MELD 6–40 aralığındadır; eksi bir MELD mümkün değil.
+   *
+   * Dosyanın başlığı zaten "MELD-Na (2016)" diyor; uygulama o ilana
+   * hizalandı (etiket ile aritmetiğin çelişmemesi kuralı).
+   *
+   *   MELD(i) = 10 × [0.957·ln(Cr) + 0.378·ln(bili) + 1.120·ln(INR) + 0.643]
+   *   MELD(i) > 11 ise:
+   *     MELD-Na = MELD(i) + 1.32·(137 − Na) − 0.033 · MELD(i) · (137 − Na)
+   *   Sonuç 6–40 aralığına oturtulur.
+   */
+  const meldI = round(10 * (0.957 * Math.log(crAdj) + 0.378 * Math.log(tbAdj) + 1.12 * Math.log(inrAdj) + 0.643), 1);
+  const meldNa = meldI > 11
+    ? meldI + 1.32 * (137 - naAdj) - 0.033 * meldI * (137 - naAdj)
+    : meldI;
+  const score = clamp(round(meldNa, 0), 6, 40);
 
-  const params = { cr: crNum, tb: tbNum, inr: inrNum, na: naNum, dial: onDialysis ? 1 : "", cap: capCreat4 ? 1 : "" };
+  /* `cap` parametresi kalktı: tavan artık kapatılamıyor, yani taşınacak bir
+     durum yok. Eski bir `?cap=1` bağlantısı zararsız — okunmuyor. */
+  const params = { cr: crNum, tb: tbNum, inr: inrNum, na: naNum, dial: onDialysis ? 1 : "" };
 
   return (
     // SAKİN DENİZ: bg-slate-50 | text-blue-950
@@ -134,14 +185,18 @@ export default function MeldNaPage() {
               />
               <span className="text-xs font-bold text-slate-600 group-hover:text-blue-900 transition-colors">Diyalizde (Cr=4 kabul)</span>
             </label>
-            <label className="flex items-center gap-3 cursor-pointer group p-3 rounded-xl hover:bg-slate-50 transition-colors">
-              <input 
-                type="checkbox" checked={capCreat4} 
-                onChange={() => setCapCreat4(v => !v)} 
-                className="w-5 h-5 rounded border-slate-300 text-blue-900 focus:ring-blue-900"
-              />
-              <span className="text-xs font-bold text-slate-600 group-hover:text-blue-900 transition-colors">Kreatinin tavanı: 4.0 mg/dL</span>
-            </label>
+            {/* Kutu DEĞİL bilgi satırı: tavan formülün parçası, kapatılamaz. */}
+            <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <span className="text-slate-400 text-sm" aria-hidden="true">🔒</span>
+              <span className="text-xs font-bold text-slate-600">
+                Kreatinin tavanı: {CR_TAVAN.toFixed(1)} mg/dL{" "}
+                {crKirpildi && (
+                  <em className="not-italic text-blue-900">
+                    — girilen {crNum.toFixed(1)}, formülde {CR_TAVAN.toFixed(1)} kullanıldı
+                  </em>
+                )}
+              </span>
+            </div>
           </div>
         </div>
 

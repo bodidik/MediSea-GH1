@@ -1138,6 +1138,67 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Bir kusur İKİNCİSİNİ GİZLEYEBİLİR — ölçek hatası tavan hatasını örtüyordu
+
+`meld-na` aracında iki kusur üst üste binmişti ve ikincisi ancak birincisi
+düzeltilince görünür oldu.
+
+**1. Karaciğer teriminde `× 10` yoktu.** UNOS formülü parantezin tamamını
+10 ile çarpar; katsayılar doğruydu ama çarpan düşmüştü:
+
+```
+meld   = 0.957·ln(Cr) + 0.378·ln(bili) + 1.12·ln(INR) + 0.643   // × 10 YOK
+meldNa = meld + 1.59 · (135 − Na)                                // TAM ölçek
+```
+
+İki terim farklı ölçekteydi: onda birlik bir MELD'e tam ölçekli bir sodyum
+düzeltmesi ekleniyordu, yani skoru sodyum tek başına yönetiyordu. Üstelik
+kıskaç 2016 varyantından (125–137) alınmış ama referans 2008'in `135 − Na`
+ifadesi olduğu için terim EKSİYE düşebiliyordu.
+
+Bedeli ölçüldü:
+
+| girdi | ekranda | doğrusu |
+|---|---|---|
+| Cr 1 · bili 1 · INR 1 · Na 137 | **−3** | 6 |
+| Cr 4 · bili 2 · INR 1.5 · Na 135 | **3** | 28 |
+
+**Eksi bir MELD mümkün değildir** (aralık 6–40) — dış bir kaynağa bakmadan,
+yalnızca ekrana bakarak verilebilecek bir karar.
+
+**2. Kreatinin tavanı KAPATILABİLİRDİ ve varsayılan KAPALIYDI.** UNOS
+tanımında Cr 4.0'da kırpılır ve bunun kapatılabilir hâli yoktur; araçta ise
+"Kreatinin tavanı: 4.0 mg/dL" diye varsayılan olarak İŞARETSİZ bir onay
+kutusuydu. Cr 8 girilince skor 34 çıkıyordu, doğrusu 28 — nakil önceliğinin
+konuşulduğu bir skorda 6 puan.
+
+**İkinci kusur birinci yüzünden GÖRÜNMÜYORDU.** Eski ÷10 ölçeğinde Cr 4
+(2.686) ile Cr 8 (3.349) **ikisi de 3'e yuvarlanıyordu**; tavanı sınayan
+ölçüm "aynı sayı çıktı, demek ki kırpıyor" diyordu. Ölçek düzelince
+28 ve 34 ayrıştı ve tavanın hiç uygulanmadığı ortaya çıktı.
+
+Ders: **bir düzeltmeden sonra AYNI aracı yeniden tara.** Ölçek, yuvarlama
+ve kıskaç hataları birbirinin belirtisini yutuyor; ilk kusur giderilmeden
+alınan "temiz" sonuçlar yeniden ölçülmeli.
+
+**Kapatılabilir bir kutu yalnızca yanlış skor üretebiliyorsa, kutu olmamalı.**
+Tavan koşulsuz uygulanıyor; kutu yerine ne olduğunu SÖYLEYEN bir satır var
+("girilen 8.0, formülde 4.0 kullanıldı"). Bu, kutudan daha bilgilendirici:
+kullanıcı kırpmanın olduğunu ve neyin kırpıldığını görüyor.
+
+**Negatif kontrol beş ayaklıydı** — düzeltme özelliği öldürmemeli:
+
+| ölçüt | sonuç |
+|---|---|
+| sodyum hâlâ etkili mi (Na 125) | 32 (135'te 28) |
+| kreatinin tavanı çalışıyor mu (Cr 8) | 28, Cr 4 ile aynı |
+| diyaliz kutusu Cr'yi 4 yapıyor mu | Cr 1 + diyaliz → 28 (Cr 4 ile aynı) |
+| boş form | **–**, belgede kayıtlı "17" gerilemesi geri gelmemiş |
+| bilgi satırı yalnızca kırpıldığında mı çıkıyor | Cr 8'de çıkıyor, Cr 2'de çıkmıyor |
+
+**Beklenen değerler tarayıcıdan BAĞIMSIZ olarak da hesaplandı** (Node ile,
+aynı formül elle yazılıp): 6 · 28 · 28 · 32. İki yöntem birebir tuttu.
+
 ### `Math.abs` anlamsız bir eksiyi MAKUL BİR TALİMATA çevirir
 
 Bir hesabın sonucu eksi çıkıyorsa bu çoğu zaman "yön yanlış" demektir:
@@ -1566,6 +1627,10 @@ sayısal varsayılan var. Hepsi ölçüldü.
 > `news2`, `meld-na` — üstelik ilk ikisi belgede "boş formda maksimum skor"
 > kusuru kayıtlı olanlar. Sonradan ölçüldü, üçü de temiz: SOFA 0, NEWS2 0
 > (risk "Düşük", doğru), MELD-Na 1; hiçbiri yanlış bir iddia basmıyor.
+> **O "1" ARTIK 6.** Aracın formülü sonradan düzeltildi (`× 10` eksikti);
+> varsayılanlarla (Cr 1 · bili 1 · INR 1 · Na 135) skor MELD tabanı olan 6
+> çıkıyor. Sayı değişti ama karar aynı: ekrandaki değerlerle tutarlı,
+> uydurma bir iddia değil.
 > Düzeltilmiş ölçütün pozitif kontrolü: `sofa` yakalanmalı.
 
 **Hiçbiri dokunulmamış varsayılandan klinik SINIFLAMA basmıyor.** İki aday
