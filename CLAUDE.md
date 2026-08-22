@@ -1138,6 +1138,57 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Yayımlanmış formülde ÖLÇEK ÇARPANI düşer ve hiçbir kapı görmez
+
+`meld-na`daki eksik `× 10` tek seferlik bir kaza değilmiş. Aynı sınıf iki
+araçta daha bulundu; üçünde de kusur **normalizasyon adımının atlanması**.
+Kod geçerli, tipler doğru, derleme temiz — sayı yanlış.
+
+**Bu sınıfı bulmanın ucuz yolu: aracın KENDİ İLAN ETTİĞİ aralığı, ulaşılabilir
+uçlarla karşılaştır.** Ekranda payda yazıyorsa (`/ 30`, `/ ~103`) ya da
+başlıkta aralık geçiyorsa, en yüksek seçimlerle sürülüp o sayıya gerçekten
+çıkılıp çıkılmadığına bakılır. Depoda aralık ilan eden **üç araç** vardı ve
+**ikisi kusurluydu**:
+
+| araç | ilan | ulaşılabilir | sebep |
+|---|---|---|---|
+| `rapid3` | 0–30 | **0–50** | işlev toplamı (0–30) 3'e BÖLÜNMÜYORDU |
+| `scorad` | 0–103 | **0–85** | subjektif bileşen (0–20) 10'a BÖLÜNÜYORDU |
+| `das28` | — | — | temiz (iki formül de doğru, eşikler yayımlanmış) |
+
+**İki kusur ters yönde ve ikisi de tehlikeli.**
+
+`rapid3` skoru ŞİŞİRİYORDU: on maddenin hepsine "çok güçlük" (2 puan),
+ağrı 0, global 0 verilen hastada ekran **"20 / 30 · YÜKSEK AKTİVİTE —
+tedavi değişikliği değerlendir"** diyordu; doğrusu 20/3 = **6.7 · ORTA**.
+Bir bant yukarı.
+
+`scorad` skoru BASTIRIYORDU: kaşıntı ve uyku kaybı 0'dan 10'a çıkarıldığında
+skor yalnızca **47 → 49** oynuyordu; doğrusu **47 → 67**, yani ORTA'dan
+AĞIR'a geçiş. Hastanın kendi bildirdiği yarı neredeyse hiç sayılmıyordu ve
+sistemik/biyolojik tedavi değerlendirmesine geçilmiyordu.
+
+**Üçünde de YORUM kusuru gizleyen taraftaydı.** `rapid3`in üst yorumu "3
+etkinlik sorusu" diyordu (madde sayısı 10) ve normalizasyondan söz edip onu
+yapmıyordu; `scorad`ın üst yorumu formülü doğrudan yanlış yazıyordu
+(`+ C/10`). Yorum kodun ne YAPMASI gerektiğini değil, ne YAPTIĞINI
+anlatmalı — yanlış yorum, okuyanı ölçmekten alıkoyuyor.
+
+**Ekran ikisinde de kendisiyle çelişiyordu**: `rapid3` "20 / 30" basarken
+tavanı 50, `scorad` "/ ~103" basarken tavanı 85'ti. GKS'deki "297 / 15"
+şeklinin aynısı — payda ile ulaşılabilir tavanı karşılaştırmak, dış bir
+kaynağa hiç bakmadan karar verdiriyor.
+
+**Negatif kontrol: uçlar VE komşu bileşenler.** Bir ölçek düzeltmesi
+yalnızca "artık doğru sayıyı basıyor mu" ile sınanmaz; öteki bileşenlerin
+hâlâ skora girdiği de ölçülmeli.
+
+| ölçüt | rapid3 | scorad |
+|---|---|---|
+| tavan ilan edilen sayıya eşit mi | 30 / 30 | 103 / ~103 |
+| taban | 0 · REMİSYON | 0 · HAFİF |
+| öteki bileşenler hâlâ etkili mi | ağrı 10 → 10, +global 7 → 17 | alan ve yoğunluk uçlarda çalışıyor |
+
 ### Bir kusur İKİNCİSİNİ GİZLEYEBİLİR — ölçek hatası tavan hatasını örtüyordu
 
 `meld-na` aracında iki kusur üst üste binmişti ve ikincisi ancak birincisi

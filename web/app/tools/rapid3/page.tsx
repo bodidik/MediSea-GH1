@@ -3,8 +3,14 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
-// RAPID3 = HAQ-II (13 soru yerine 3 HAQ sorusu) × 10/3 + Ağrı VAS/10 + Global VAS/10 → 0-30
-// Basitleştirilmiş versiyon: 3 etkinlik sorusu (0-3 her biri) + ağrı (0-10) + global (0-10)
+// RAPID3 — üç bileşenin her biri 0–10, toplam 0–30:
+//   İŞLEV  : 10 madde × (0–3) = 0–30, sonra 3'e BÖLÜNÜR -> 0–10
+//   AĞRI   : VAS 0–10
+//   GLOBAL : VAS 0–10
+//
+// Bu yorum bir dönem "3 etkinlik sorusu" diyordu; madde sayısı 10 ve bölme
+// kodda hiç yapılmıyordu (bkz. aşağıdaki `fn`). Yorum, anlattığı kodu
+// yanlış anlattığı için kusuru gizleyen tarafta duruyordu.
 
 const FUNCTION_ITEMS = [
   { id: "f1", q: "Giyinme (düğmeleme, fermuar gibi) dahil kendinize bakabilir misiniz?" },
@@ -50,9 +56,34 @@ export default function RAPID3Page() {
   const allDone = funcAnswered === 10 && pain !== null && global !== null;
 
   const funcSum = funcAnswered === 10 ? Object.values(func).reduce<number>((s, v) => s + (v ?? 0), 0) : null;
-  // RAPID3 = funcSum (0-30) + pain (0-10) + global (0-10) = 0-30 (pain ve global 0-10 normalize edilir)
-  const total = allDone && funcSum !== null
-    ? parseFloat((funcSum + pain! + global!).toFixed(1))
+
+  /**
+   * İŞLEV TOPLAMI 3'E BÖLÜNMELİ — bölme bir dönem YOKTU ve skor bir bant
+   * yukarı kayıyordu.
+   *
+   * RAPID3'ün üç bileşeni de 0–10 ölçeğindedir ve toplam 0–30'dur. İşlev
+   * bileşeni 10 maddenin (her biri 0–3) toplamı olarak 0–30 çıkar, sonra
+   * **3'e bölünüp** 0–10'a indirilir. Eski kod bölmeyi atlayıp ham toplamı
+   * doğrudan ekliyordu:
+   *
+   *   total = funcSum(0–30) + ağrı(0–10) + global(0–10)   ->  0–50
+   *
+   * Yani skor 0–50 ölçeğinde üretilip 0–30 bantlarıyla (≤3 · ≤6 · ≤12)
+   * sınıflanıyordu. Ölçüldü — 10 sorunun hepsine "Çok güçlük" (2 puan),
+   * ağrı 0, global 0 verilen hastada ekran:
+   *
+   *   "RAPID3  20 / 30  ·  YÜKSEK AKTİVİTE — tedavi değişikliği değerlendir"
+   *
+   * Doğrusu 20/3 = 6.7, yani ORTA AKTİVİTE. Araç bir bant abartıyor ve
+   * tedavi değişikliği öneriyordu. Ekran kendisiyle de çelişiyordu: payda
+   * 30 yazıyor ama ulaşılabilir tavan 50'ydi (GKS'deki "297 / 15" şekli).
+   *
+   * Dosyanın KENDİ üst yorumu zaten normalizasyondan söz ediyordu; kod onu
+   * yapmıyordu. İlan ile aritmetiğin çelişmemesi kuralı.
+   */
+  const fn = funcSum !== null ? funcSum / 3 : null;
+  const total = allDone && fn !== null
+    ? parseFloat((fn + pain! + global!).toFixed(1))
     : null;
 
   const band = total !== null ? getBand(total) : null;

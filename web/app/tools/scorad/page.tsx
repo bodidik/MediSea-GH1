@@ -3,10 +3,15 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
-// SCORAD = A/5 + 7B/2 + C/10
-// A: vücut yüzey alanı tutulum % (0-100)
-// B: yoğunluk skorları toplamı (6 kriter × 0-3 = 0-18)
+// SCORAD = A/5 + 7B/2 + C
+// A: vücut yüzey alanı tutulum % (0-100)      -> A/5   = 0-20
+// B: yoğunluk skorları toplamı (6 × 0-3 = 18) -> 7B/2  = 0-63
 // C: subjektif semptomlar (kaşıntı 0-10 + uyku bozukluğu 0-10 = 0-20)
+//                                             -> C DOĞRUDAN eklenir = 0-20
+// Toplam tavanı: 20 + 63 + 20 = 103.
+//
+// Bu satır bir dönem "C/10" yazıyordu ve kod da öyle hesaplıyordu; ayrıntısı
+// aşağıda, `total` tanımında.
 
 const INTENSITY_ITEMS = [
   { id: "erythema",      label: "Eritem",          detail: "Kızarıklık derecesi" },
@@ -58,8 +63,27 @@ export default function SCORADPage() {
 
   const B = intAnswered === 6 ? Object.values(intSel).reduce<number>((s, v) => s + (v ?? 0), 0) : null;
   const C = pruritus !== null && sleep !== null ? pruritus + sleep : null;
+  /**
+   * SUBJEKTİF BİLEŞEN 10'A BÖLÜNÜYORDU — hastanın kendi bildirdiği yarı
+   * neredeyse hiç sayılmıyordu.
+   *
+   * Yayımlanmış formülde C (kaşıntı + uyku kaybı, 0–20) skora DOĞRUDAN
+   * eklenir. Eski kod `C / 10` yazıyordu, yani 0–20'lik katkı 0–2'ye
+   * iniyordu. Ölçüldü — alan %25, altı yoğunluk maddesi 2 puan:
+   *
+   *   kaşıntı 0 · uyku 0   -> 47   (ORTA)
+   *   kaşıntı 10 · uyku 10 -> 49   (ORTA)      doğrusu 67 (AĞIR)
+   *
+   * Yani en ağır kaşıntı ve uykusuzluk skoru yalnızca 2 puan oynatıyordu ve
+   * hasta "AĞIR" yerine "ORTA" sınıflanıp sistemik/biyolojik tedavi
+   * değerlendirmesine geçilmiyordu.
+   *
+   * Ekran kendisiyle de çelişiyordu: payda "/ ~103" yazıyor ama C/10 ile
+   * ulaşılabilir tavan 20 + 63 + 2 = 85'ti; ilan edilen sayıya hiç
+   * çıkılamıyordu.
+   */
   const total = allDone && B !== null && C !== null
-    ? Math.round((area! / 5) + (7 * B / 2) + (C / 10))
+    ? Math.round((area! / 5) + (7 * B / 2) + C)
     : null;
 
   const band = total !== null ? getBand(total) : null;
