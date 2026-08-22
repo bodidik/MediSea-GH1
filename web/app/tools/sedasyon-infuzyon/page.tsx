@@ -221,9 +221,23 @@ export default function SedasyonInfuzyonSayfasi() {
     ? dozNum * ilac.mikrogramCarpani * (ilac.kiloyaGore ? kiloNum : 1) * (ilac.zaman === "dakika" ? 60 : 1)
     : 0;
   const derisimMikrogramMl = makul ? (torbaMgNum * 1000) / torbaMlNum : 0;
-  const mlSaat = makul && derisimMikrogramMl > 0 ? yuvarla(mikrogramSaat / derisimMikrogramMl, 1) : 0;
+  /**
+   * TORBA ÖMRÜ HAM HIZDAN HESAPLANIR — yuvarlanmış hızdan DEĞİL.
+   *
+   * Eski kod ömrü ekrana basılan (1 basamağa yuvarlanmış) hızdan
+   * türetiyordu ve yuvarlama ikinci bir değere taşınıyordu. Ölçüldü
+   * (midazolam 1.5 mg/saat · torba 1000 mg / 100 mL):
+   *   ham hız 0.15 mL/saat -> ekranda 0.2 (doğru yuvarlama)
+   *   ömür    100 / 0.2 = 500 saat        doğrusu 100 / 0.15 = 667 saat
+   * Hata %25 ve hız küçüldükçe büyüyor: 1 mL/saat altında 1 basamak
+   * yuvarlama kaba kalıyor (0.15 -> 0.2 tek başına %33).
+   *
+   * Gösterim yuvarlanır, HESAP yuvarlanmaz.
+   */
+  const mlSaatHam = makul && derisimMikrogramMl > 0 ? mikrogramSaat / derisimMikrogramMl : 0;
+  const mlSaat = yuvarla(mlSaatHam, 1);
   const mgSaat = makul ? yuvarla(mikrogramSaat / 1000, 2) : 0;
-  const torbaSaat = makul && mlSaat > 0 ? yuvarla(torbaMlNum / mlSaat, 1) : 0;
+  const torbaSaat = makul && mlSaatHam > 0 ? yuvarla(torbaMlNum / mlSaatHam, 1) : 0;
 
   const aralikDisi = makul && (dozNum < ilac.olagan[0] || dozNum > ilac.olagan[1]);
 

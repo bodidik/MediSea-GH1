@@ -587,6 +587,8 @@ node scripts/karar-denetim.cjs   # renk, kararı veren alandan mı geliyor (CI k
 node scripts/karar-denetim.cjs --kontrol
 node scripts/kapi-kapsam-denetim.cjs   # hesaptaki her değer kapıdan geçiyor mu (CI kapısı DEĞİL)
 node scripts/kapi-kapsam-denetim.cjs --kontrol
+node scripts/yuvarlama-denetim.cjs   # yuvarlanmış değer ikinci hesaba giriyor mu (CI kapısı DEĞİL)
+node scripts/yuvarlama-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1164,6 +1166,63 @@ dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
 yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
+
+### GÖSTERİM yuvarlanır, HESAP yuvarlanmaz
+
+`sedasyon-infuzyon`da pompa hızı ekrana 1 basamağa yuvarlanarak basılıyordu —
+doğru. Ama **torba ömrü o yuvarlanmış hızdan** hesaplanıyor ve yuvarlama
+ikinci bir değere taşınıyordu.
+
+Ölçüldü (midazolam 1.5 mg/saat · torba 1000 mg / 100 mL):
+
+| | ham | ekranda |
+|---|---|---|
+| pompa hızı | 0.15 mL/saat | 0.2 (doğru yuvarlama) |
+| torba ömrü | 100 / 0.15 = **666.7 saat** | **500 saat** (100 / 0.2) |
+
+%25 hata, ve **hız küçüldükçe büyüyor**: 1 mL/saat altında tek basamak kaba
+kalıyor (0.15 → 0.2 tek başına %33). Düşük hızlar bu araçta olağan —
+deksmedetomidin ve derişik torbalar oradan çalışıyor.
+
+Çare tek satır: ham hız ayrı tutulur, gösterim onu yuvarlar, ikinci hesap
+HAM değeri kullanır.
+
+**Negatif kontrol, yuvarlamanın ISIRMADIĞI durumları da ölçmeli** — yoksa
+"düzelttim" derken başka bir şeyi bozmuş olabilirsin. Ölçüldü: midazolam
+5 mg/saat → 5 mL/saat · 20 saat (değişmedi), propofol 70 kg × 1.5 mg/kg/saat
+→ 10.5 mL/saat · 105 mg/saat · 9.5 saat (kiloya göre yol sağlam).
+
+`scripts/yuvarlama-denetim.cjs` sınıfı tarıyor: 131 araç, 85 yuvarlanmış
+değer, **13 aday**. İkisi karara bağlandı (`sedasyon` düzeltildi,
+`potasyum-replasman` ölçüldü ve basamağı yeterince ince: 55 mEq için
+1375/5.5 = 250 tam çıkıyor), **11'i henüz ölçülmedi ve "kusur" DENMİYOR.**
+
+### Birim TABANI ilaç bazında değişiyor — vazoaktif ve sedasyon doğru ayırıyor
+
+Bu serideki en pahalı hata biçimi birim tabanını karıştırmak olurdu:
+nitrogliserin mcg/**dakika** (kilodan bağımsız), noradrenalin
+mcg/**kg**/dakika, remifentanil mcg/kg/**dakika**, midazolam mg/**saat**.
+Karıştırılırsa hata 60 kat ya da 70 kat olur.
+
+Ölçüldü ve ikisi de doğru ayırıyor:
+
+| araç | senaryo | ekranda | elle |
+|---|---|---|---|
+| `vazoaktif` | noradrenalin 70 kg · 0.1 mcg/kg/dk · 4 mg/250 mL | 26.3 mL/sa | 26.25 |
+| `vazoaktif` | nitrogliserin 20 mcg/dk · 50 mg/250 mL | 6 mL/sa | 6 |
+| `vazoaktif` | aynı nitrogliserin, **kilo 70 → 140** | **6 (değişmedi)** | kilodan bağımsız |
+| `sedasyon` | propofol 70 kg · 1.5 mg/kg/sa | 10.5 mL/sa | 10.5 |
+| `sedasyon` | midazolam 5 mg/sa | 5 mL/sa | 5 |
+
+Üçüncü satır ayırt edici olan: kiloyu iki katına çıkarıp hızın DEĞİŞMEDİĞİNİ
+görmek, "birim etiketinde mcg/dk yazıyor" demekten farklı bir kanıt.
+
+**Ölçüm tuzağı — `closest('label')` erişilebilir adı EKSİK raporlar.**
+Vazoaktif alanlarının adsız olduğu sanıldı; gerçekte adlar `label[for]` ile
+bağlı ("Hasta ağırlığı", "Doz", "İlaç miktarı", "Toplam hacim"). Belgedeki
+"kaynakta `htmlFor` aramak yanıltır" uyarısının ayna hâli: saran etiket
+aramak da tek başına yanıltıyor. Adı HESAPLAT — aria-label → aria-labelledby
+→ label[for] → saran label sırasıyla.
 
 ### İnfüzyon serisi BAĞIMSIZ YENİDEN HESAPLA sürüldü — yedi araç, kusur yok
 
@@ -2059,6 +2118,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `bant-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine önce/sonra) | konumsal arg |
 | `karar-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine, 3 satır) | konumsal arg |
 | `kapi-kapsam-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine uOsmCalc) | konumsal arg |
+| `yuvarlama-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (sedasyon-infuzyon:224) | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
