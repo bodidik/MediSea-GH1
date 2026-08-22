@@ -1366,6 +1366,44 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Saydamlık raporundaki 8 "genel" adayın 8'i de karara bağlandı — kusur yok
+
+Genişletilmiş denetim araç tarafında 0, genel tarafta 8 aday bırakmıştı.
+Sekizi tek tek ölçüldü ve **hiçbiri kusur değil**. Verdiktler betiğin başına
+yazıldı; liste yeniden kovalanmasın diye:
+
+| aday | verdikt |
+|---|---|
+| `QuestionView.tsx` | ölü kod — sıfır içe aktaran |
+| `BranchTemplate.tsx` | ölü kod — yalnızca `_` klasörler çağırıyor |
+| `giris` · `kayit` · `AlanClient` | `disabled={yukleniyor}` — devre dışı, muaf |
+| `tekrar/page.tsx` "boşluk" | ölçüldü: **4.75**, eşiği geçiyor |
+| `ReadingTools.tsx` | METİN TAŞIMIYOR — 10×10 renk noktası |
+| `InlineTopicEditor.tsx` | yalnızca yöneticiye render ediliyor |
+
+**Kaynak taraması bunların hiçbirini kendi başına eleyemez.** Ulaşılabilirlik,
+devre dışılık, gerçek kontrast ve "bu ögede metin var mı" sorularının cevabı
+kaynakta DEĞİL. Denetimin kapı değil rapor olmasının sebebi tam olarak bu.
+
+**Ulaşılabilirliği ÖNCE ölç.** Sekiz adayın ikisi ölü koddu; geçen tur aynı
+tuzağa düşüp ölü koda düzeltme yapmıştım. Bu tur ilk adım ulaşılabilirlik
+oldu ve iş listesini dörtte bir azalttı.
+
+### Gezinme JS bağlamını SIFIRLAR — temizlik durumu `window`'da tutulamaz
+
+Ölçüm için `localStorage`a tohum konurken önceki durum `window.__yedek`e
+kaydedildi; sonra `/tekrar`a gezinildi ve temizlik çalıştırıldı — **hiçbir şey
+silinmedi**, çünkü gezinme yeni bir JS bağlamı yaratıyor ve `window` üzerindeki
+her şey kayboluyor.
+
+Temizlik ya tek bir bağlamda yapılmalı ya da durum `localStorage`ın kendisinden
+okunmalı (anahtar önekiyle). Bu turda ikinci yol kullanıldı.
+
+Bu arada iki tur önceki flashcard ölçümünden kalan bir anahtar da bulundu
+(`medisea:kartlar:v1:fc-endo-akromegali-001`) — yani o turda temizlik
+eksik kalmış. **Ölçüm bittiğinde `medisea:*` anahtarlarını SAY, sıfır olduğunu
+gör.**
+
 ### `saydamlik-denetim` genişletildi: satır içi stil ve çok satırlı className
 
 Denetimin üç körlüğü vardı ve üçü de ölçülmüştü ama kapatılmamıştı. Kapatıldı:

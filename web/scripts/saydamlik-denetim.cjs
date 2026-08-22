@@ -28,6 +28,24 @@
  * Yani bu raporun yönetici satırları KUSUR DEĞİL, aday. Yeniden kovalamadan
  * önce bunu oku.
  *
+ * ─────────────────────────────────────────────────────────────────────────
+ * "GENEL" SATIRLARI DA TEK TEK KARARA BAĞLANDI — HİÇBİRİ KUSUR DEĞİL.
+ * Bu liste kovalanmasın diye yazıldı; kod değişirse yeniden ölçülmeli.
+ *
+ *   QuestionView.tsx:89        ÖLÜ KOD — sıfır içe aktaran, rotaya ulaşmıyor
+ *   BranchTemplate.tsx:93      ÖLÜ KOD — yalnızca `_` önekli klasörler çağırıyor
+ *   giris/page.tsx:127         `disabled={yukleniyor}` — devre dışı, WCAG muaf
+ *   kayit/page.tsx:117         aynı kalıp
+ *   AlanClient.tsx:128         aynı kalıp
+ *   tekrar/page.tsx:328        ÖLÇÜLDÜ: beyaz %50 alfa, blue-950 üstünde 4.75 — GEÇİYOR
+ *   ReadingTools.tsx:549       METİN TAŞIMIYOR — 10x10 renk noktası, kontrast konusu değil
+ *   InlineTopicEditor.tsx:548  yalnızca yöneticiye render ediliyor (yukarıdaki verdikt)
+ *
+ * Kaynak taraması bunların hiçbirini kendi başına eleyemez: ulaşılabilirlik,
+ * devre dışılık, gerçek kontrast ve "metin var mı" sorularının cevabı kaynakta
+ * DEĞİL. Denetim ADAY üretir; kararı ölçüm verir. Bu yüzden kapı değil rapor.
+ * ─────────────────────────────────────────────────────────────────────────
+ *
  * KAPSAM BİLEREK DAR: yalnızca METİN ögeleri. Süsleme katmanları, degrade
  * bulanıklıkları ve durum varyantları (hover:/focus:/disabled:/group-*)
  * elenir — onlarda saydamlık meşru bir araç.
