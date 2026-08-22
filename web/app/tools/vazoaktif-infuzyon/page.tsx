@@ -103,7 +103,7 @@ function SayiAlani({
   ayarla: (v: string) => void; ipucu?: string; pasif?: boolean;
 }) {
   return (
-    <div className={pasif ? "opacity-40" : ""}>
+    <div>
       <label
         htmlFor={id}
         className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-2"
@@ -119,7 +119,7 @@ function SayiAlani({
           disabled={pasif}
           onChange={(e) => ayarla(e.target.value)}
           placeholder={ipucu}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 pr-20 text-xl font-black text-blue-900 focus:border-blue-900 outline-none disabled:cursor-not-allowed"
+          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 pr-20 text-xl font-black text-blue-900 focus:border-blue-900 outline-none disabled:cursor-not-allowed disabled:bg-slate-100 disabled:border-dashed disabled:text-slate-500"
         />
         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400">
           {birim}
@@ -237,7 +237,7 @@ export default function VazoaktifInfuzyonSayfasi() {
           </div>
 
           {!kiloGerekli && (
-            <p className="text-[11px] font-bold text-blue-900/70">
+            <p className="text-[11px] font-bold text-blue-900/85">
               {ilac.ad} kilodan bağımsız dozlanır — ağırlık hesaba katılmıyor.
             </p>
           )}

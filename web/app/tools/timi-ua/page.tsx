@@ -102,7 +102,7 @@ export default function TIMIUA() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400 text-center">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">SKOR</span>
-            <div className="text-5xl font-black text-white">{score} <span className="text-xl opacity-40">/ 7</span></div>
+            <div className="text-5xl font-black text-white">{score} <span className="text-xl text-blue-300">/ 7</span></div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 ${risk.border} ${risk.bg} transition-all duration-500`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block text-center md:text-left">RİSK KATEGORİSİ</span>

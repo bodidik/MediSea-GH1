@@ -1366,6 +1366,55 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### 127 aracın tamamı olgun ölçütle tarandı — sınıf kapalı
+
+Kontrast taraması bir dönem kör ölçütlerle yapılmıştı (saydamlık, degrade,
+yalnızca yaprak öge). Olgun ölçüt üretim derlemesi üzerinde bütün araçlara
+sürüldü: **127 sayfa · 5655 öge · negatif kontrol 127/127.**
+
+Ölçüt: alfa bindirmesi, degrade zemin, ATA ZİNCİRİNDEKİ opacity çarpımı,
+boyuta göre eşik (24px / 18.66px kalın için 3.0), geçişler etkileşimden önce
+kapatılı, `aria-hidden` / `sr-only` / SVG / yalnızca-emoji elenmiş, her
+sayfaya kasten kusurlu bir öge konup yakalandığı görülmüş.
+
+Sonuç 5 bulgu: 1'i yanlış pozitif, 4'ü gerçek ve düzeltildi.
+
+**Kütle taraması ÜRETİM DERLEMESİNDE yapılır.** `next dev` her rotayı ilk
+ziyarette derliyor; iframe taraması zaman aşımına uğruyor. `NEXT_DIST_DIR=
+.next-verify npm run build` + `next start -p 3100` ile çalışan dev sunucusuna
+dokunmadan taranabiliyor — ve ölçülen şey dağıtılacak çıktının kendisi.
+
+### Mutlak konumlu ögenin zemini: ögeyi GİZLE, altına bak
+
+Belge bir dönem "`position: absolute` ögeleri ATLA, kusur uydururlar"
+diyordu. Atlamak kusuru GİZLER; ölçülebilir bir yolu var:
+
+```js
+const e0 = el.style.visibility; el.style.visibility = 'hidden';
+const alt = d.elementFromPoint(r.left + r.width/2, r.top + r.height/2);
+el.style.visibility = e0;            // altındaki gerçek boyalı öge
+```
+
+Birim çeviricide sürüldü: ata zinciri **1.42** diyor (belgedeki kayıtlı
+değer), gerçek zemin bir KARDEŞ `<input class="bg-blue-900">` ve doğru
+kontrast **7.29**. Aynı sayı iki ayrı oturumda çıktığı için yanlış pozitifin
+kaynağı da kesinleşti.
+
+### `location.pathname` gövde DOLMADAN doğru değeri verir
+
+İframe taramasında "doğru sayfadayım" kontrolü olarak yol karşılaştırmak
+yetmiyor: gezinme commit olur olmaz `pathname` güncelleniyor, gövde henüz
+boş olabiliyor. Ölçüt İÇERİĞE bağlanmalı — `<h1>` var mı, metni bekleneni
+tutuyor mu.
+
+**Ama aynı sayının çıkması tek başına kusur kanıtı DEĞİL.** Üç farklı araç
+sayfası da "34 öge" dedi ve bu ölçüm hatası sanıldı; sıkı yöntemle (1100 ms
++ `<h1>` kontrolü) yeniden ölçülünce **on iki sayfanın on ikisinde de sayı
+birebir aynı çıktı** — yani ilk tarama doğruydu ve 34'ler gerçek bir
+rastlantıydı (süzgeçler her sayfadan farklı sayıda öge eliyor, sonuç aynı
+sayıya iniyor). Şüpheyi ikinci yöntemle çözmenin karşılığı bu: bazen ölçüm
+haklı çıkar.
+
 ### Saydamlık KAPSAYICIYA konunca kaynak taraması onu göremez
 
 `saydamlik-denetim` bir dönem aynı satırda `text-*` sınıfı arıyordu ve
