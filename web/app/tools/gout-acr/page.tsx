@@ -126,7 +126,7 @@ export default function GoutACRPage() {
         <ToolTopNav toolSlug="gout-acr" />
 
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
-          <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">💎</div>
+          <div aria-hidden="true" className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">💎</div>
           <div>
             <div className="flex items-center gap-2">
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>

@@ -161,7 +161,7 @@ export default function TrombolizDozSayfasi() {
         <ToolTopNav toolSlug="tromboliz-doz" />
 
         <div className="flex items-center gap-4 border-b-2 border-blue-900/10 pb-6">
-          <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">
+          <div aria-hidden="true" className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">
             <span aria-hidden="true">🧠</span>
           </div>
           <div>

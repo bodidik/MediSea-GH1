@@ -2354,9 +2354,12 @@ uydu, başka biçim SIFIR çıktı — yani insan kararı gerektiren hiçbir gli
 kümede yoktu. Kalıp zaten depoda vardı (son turlarda yazılan araçlarda
 `aria-hidden` konmuş); süpürme yeni bir karar almıyor, eskiyi hizalıyor.
 
-**Kalan glif SÜPÜRÜLMEDİ ve "temiz" DENMİYOR:** her araçta bir de ikon rozeti
-var (`🧪` `💉` `🦋` `🍏`) ve `aria-hidden` taşımıyor. Ayrı bir şekil, ayrı
-doğrulama ister.
+**Kalan glif de SONRAKİ TURDA süpürüldü.** Araç ikonu rozeti (`🧪` `💉`
+`🦋` `🍏`) 131 aracın 131'inde **birebir aynı sınıf dizesini** taşıyor ve
+hiçbirinde `aria-hidden` yoktu. İki koşul birden ölçüldükten sonra kapatıldı:
+rozetin içeriği etiketler soyulunca YALNIZCA glif kalıyor mu, ve hemen
+ardından adı taşıyan `<h1>` geliyor mu. 131/131 ikisini de sağladı,
+kapsam dışı SIFIR.
 
 **Ölçüt büyük/küçük harfe duyarlıydı ve bir kusur UYDURDU.** İlk tarama
 `egfr`i "klinik uyarısı yok" diye işaretledi; uyarı oradaydı ve "**K**linik
@@ -2369,6 +2372,58 @@ başlığın ve uyarı metninin erişilebilirlik ağacında HÂLÂ olduğunu öl
 `<h1>` metni hem uyarı cümlesi duruyor, yani gizleme yanlış ögeye konmadı.
 
 Süpürme bitince ölçüt **elemesiz** bir kez daha çalıştırıldı: 124/124.
+
+### Toplu süpürmede ölçüt İKİ ŞEKLİ birden karşılamalı
+
+Araç ikonu rozeti süpürülürken ölçüt önce **98/131** dedi ve 33 araç
+"kapsam dışı, insan kararı" diye raporlandı. Sebep kusur değil ölçüttü:
+rozetin iki yazım şekli var —
+
+```
+<div className="w-14 h-14 …">🧪</div>            98 araç: glif doğrudan
+<div className="w-14 h-14 …"><span>💉</span></div> 33 araç: iç span
+```
+
+İkinci şekilde ham içerik `"<span aria-hidden=…"` diye okunuyor ve
+"yalnızca glif" sınamasından düşüyor. Etiketler soyulup GERİYE KALAN METNE
+bakılınca 131/131 oldu.
+
+**33 aracı "insan kararı" diye bırakmak, ölçütün kendi körlüğünü kusur gibi
+raporlamak olurdu.** Kapsam dışı bir liste çıktığında ilk soru "bunlar
+gerçekten farklı mı" değil, **"ölçütüm bu şekli tanıyor mu"** olmalı.
+
+**Güvenli süsleme aday ölçütü İKİ koşullu ve ikisi de şart:**
+
+1. Öge etiketler soyulunca YALNIZCA glif bırakıyor (metin taşımıyor).
+2. Anlamı yanındaki öge taşıyor — burada hemen ardından gelen `<h1>`.
+
+Biri tutmuyorsa glif TEK anlam taşıyıcı olabilir ve gizlemek bilgi kaybıdır.
+
+**Ayrıca içerikleri EKRANA BASIP gözle doğrula.** 131 rozetin ayrık
+içerikleri listelendi: 25 farklı glif, metin sıfır. Regex'in "yalnızca
+glif" kararını bağımsız bir yöntemle sınamanın en ucuz yolu bu.
+
+**Süpürmenin negatif kontrolü ÜÇ ayaklı:**
+
+| ne ölçülür | neden |
+|---|---|
+| erişilebilirlik ağacında glif kaldı mı | süpürme işini yaptı mı |
+| `<h1>` metni ağaçta HÂLÂ var mı | gizleme yanlış ögeye kondu mu |
+| rozet ekranda HÂLÂ çiziliyor mu | `aria-hidden` yerine görsel gizleme yapılmadı mı |
+
+Üçüncüsü kolay atlanır: `aria-hidden` görünümü değiştirmez, ama yanlışlıkla
+`hidden` yazılsaydı ikon kaybolurdu ve ilk iki ölçüm bunu göremezdi.
+Ölçüldü — beş araçta ağaçta 0 glif, başlıklar yerinde, rozet görünür.
+
+**Araç DIŞINDA 56 öge (28 dosya) gizlenmemiş durumda ve SÜPÜRÜLMEDİ.**
+Boyutlandırıldı: **48'i güvenli aday** (yanında zaten metin var), **8'i tek
+başına** duruyor ve insan kararı ister (`🚧` `📊` `✅` `🏆` `💎` `📝` `↗`).
+Bu bir KARAR değil, sonraki turun iş listesi.
+
+En yoğunları kokpit (7), premium profil (5), `SimulatorEngine` (4). Bunlar
+tek bir şekle uymuyor; durum rozetinde ya da boş durum ikonunda glif TEK
+gösterge olabilir. Araç hub'ı ayrıca ölçüldü ve temiz: iki ikon basım
+yerinin ikisinde de `aria-hidden` var, adı `<h2>` taşıyor.
 
 ### Tek bir iframe'i birden çok adres için yeniden kullanma
 
