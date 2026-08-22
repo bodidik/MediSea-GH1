@@ -1368,6 +1368,37 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Varsayılan değerden klinik etiket: 27 araç tarandı, sınıf temiz
+
+`naloksan-infuzyon`da varsayılan değerin fiziksel olarak saçma bir sayı
+üretmesi (500 mL/saat) yeni bir sınıf açtı: **boş olmayan varsayılanı olan
+araçlar açılır açılmaz bir sonuç basıyor.** Kaynakta sayıldı — 27 araçta
+sayısal varsayılan var. Hepsi ölçüldü.
+
+**Hiçbiri dokunulmamış varsayılandan klinik SINIFLAMA basmıyor.** İki aday
+çıktı, ikisi de yanlış pozitifti:
+
+- `kdigo-aki` — evre göstergesi varsayılanla **"–"**; eşleşen "normal"
+  seçili idrar çıkışı seçeneğinin etiketiydi, hasta sınıflaması değil.
+- `magnezyum-infuzyon` — "normal" endikasyon cümlesinde geçiyor
+  (*"düzey normal olsa bile ver"*).
+
+İnfüzyon araçlarının varsayılan HIZI da ayrıca arandı: dokuzunda da
+dokunulmamış hâlde hiç mL/saat basılmıyor (kilo/doz alanı boş, dürüst uyarı
+çıkıyor). Pozitif kontrol: bolus girilince ölçüt "50 mL/saat"i buluyor — yani
+boşluk gerçek, ölçüt kör değil.
+
+### Ölçüm tarafında iki tuzak — ikisi de sahte bulgu üretti
+
+- **Türkçe kelime sınırı.** `ağır` deseni **AĞIR**LIK içinde, `orta` deseni
+  "**Orta** Aktif"te eşleşti; iki sahte bulgunun ikisi de buydu. JS'in ``'si
+  ASCII'ye göre çalışıyor. Sınır elle kuruldu: eşleşmenin önündeki ve
+  ardındaki karakter HARF olmamalı.
+- **`body.textContent` JSON-LD içeriyor.** Sayfa gövdesinden metin okurken
+  `<script type="application/ld+json">` blokları da geliyor ve ölçüm alakasız
+  bir yere bakıyor. Panel metnini okurken `script`/`style` alt ağaçları
+  klonda silinmeli.
+
 ### Denetimlerin doğrulama durumu — tablo, yeniden türetilmesin diye
 
 Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yerde:
