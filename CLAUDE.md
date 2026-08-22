@@ -1136,6 +1136,51 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Girdi kanalı BİR TANE DEĞİL — adres parametresi de bir kanal
+
+Yukarıdaki makullük kapıları klavye girdisini karşılıyor. Ama 11 araç
+durumunu **adres parametresinden** de tohumluyor (`s?.get("e")`), yani ikinci
+bir girdi kanalı var ve o kanal ayrı ölçülmedikçe görünmüyor.
+
+Ölçüldü — on bir aracın **onu temiz**, sebepleri farklı:
+
+| kalıp | araç | neden temiz |
+|---|---|---|
+| bool (`=== "1"`, `readBool`) | chads-vasc · curb65 · has-bled · perc · qsofa · timi-ua | `"1"` dışındaki her şey `false` |
+| serbest sayısal | sofa · news2 · meld-na | değer klavyeyle AYNI duruma düşüyor, makullük kapısı orada — çöp parametrede `–` basıyor |
+| aralık dışı seçim | ecog | `?ecog=9` hiçbir şık seçmiyor, etiket basılmıyor |
+
+**Kusurlu olan tek araç, hiç klavye girdisi OLMAYANIYDI.** `gcs` değerleri
+düğmeyle alıyor; serbest girdi olmadığı için ona hiç kapı konmamıştı ve
+`Number(s?.get("e")) || 4` her sayıyı kabul ediyordu:
+
+```
+/tools/gcs?e=99&v=99&m=99  ->  297 · "E99 + V99 + M99 / 15" · Hafif
+/tools/gcs?e=-99&v=1&m=1   ->  -97 · "Ağır (Entübasyon Eşiği ≤8)"
+```
+
+İkincisi tehlikeli yön: uydurma bir adres, tavanı 15 olan bir skorda en ağır
+etiketi ve entübasyon eşiğini basıyordu. Üstelik ekran kendisiyle çelişiyordu
+(`297 / 15`) — eşik–etiket sınıfının aynı şekli.
+
+Ders: **serbest girdinin YOKLUĞU aracı güvenli GÖSTERİR, güvenli YAPMAZ.**
+Düğmeyle çalışan bir araç "zaten geçersiz değer giremezsin" diye taranmadan
+geçiliyor; adres o varsayımı deliyor.
+
+Çare aralığı elle yazmak DEĞİL, geçerli kümeyi **düğmeleri çizen aynı
+diziden** almak (`secenekler.some(o => o.value === n)`) — yoksa şıklar
+değiştiğinde sınır listesi sessizce çelişir.
+
+Negatif kontrol şart: geçerli parametre hâlâ geri yüklenmeli. Ölçüldü —
+`?e=2&v=3&m=4` → 9 · "Orta" · üç düğme basılı; düzeltme özelliği öldürmedi.
+
+`ToolShare` bugün sorguyu siliyor (`url.search = ""`), yani paylaşılan
+bağlantı değer taşımıyor. Ama oradaki yorum bir dönem "parametreleri geri
+okuyan araç SIFIR" diyordu ve bu YANLIŞTI — 11 araç okuyor. Yorum düzeltildi:
+parametre yazmak yeniden açılırsa sonuç tutarsız olur (11 araçta değerler
+geri gelir, ~100 araçta adres değer taşıdığı hâlde varsayılan gösterilir).
+
+
 ### Sunum bileşenini render'ın İÇİNDE tanımlamak odağı ÖLDÜRÜR
 
 Sayfa bileşeninin içinde tanımlanan bir bileşen (`const Input = (…) => …`)

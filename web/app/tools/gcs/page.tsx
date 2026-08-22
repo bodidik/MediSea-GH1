@@ -34,6 +34,27 @@ const MOTOR: Option[] = [
   { value: 1, label: "Yanıt yok" },
 ];
 
+/**
+ * Adres parametresi ŞIK KÜMESİNDEN doğrulanır.
+ *
+ * Bu araçta serbest sayısal girdi YOK — değerler düğmeyle seçiliyor, o yüzden
+ * hiç makullük kapısı konmamıştı. Ama adres denetimsiz İKİNCİ bir kanaldı:
+ * eski kod parametreyi `Number(...) || varsayilan` ile alıyor, aralık
+ * sınamıyordu. Ölçüldü:
+ *   /tools/gcs?e=99&v=99&m=99 -> "297 · E99 + V99 + M99 / 15 · Hafif"
+ *   /tools/gcs?e=-99&v=1&m=1  -> "-97 · Ağır (Entübasyon Eşiği ≤8)"
+ * İkincisi tehlikeli yön: uydurma bir adres, tavanı 15 olan bir skorda en ağır
+ * etiketi ve entübasyon eşiğini basıyordu.
+ *
+ * Geçerli küme, düğmeleri çizen AYNI diziden alınıyor; elle yazılmış bir sınır
+ * listesi olsaydı şıklar değiştiğinde sessizce çelişirdi.
+ */
+function secenekten(ham: string | null | undefined, secenekler: Option[], varsayilan: number): number {
+  if (!ham) return varsayilan;
+  const n = Number(ham);
+  return secenekler.some((o) => o.value === n) ? n : varsayilan;
+}
+
 function OptionRow({
   title, options, selected, onSelect,
 }: {
@@ -68,9 +89,9 @@ function OptionRow({
 
 export default function GcsPage() {
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const [eye, setEye] = React.useState<number>(Number(s?.get("e")) || 4);
-  const [verbal, setVerbal] = React.useState<number>(Number(s?.get("v")) || 5);
-  const [motor, setMotor] = React.useState<number>(Number(s?.get("m")) || 6);
+  const [eye, setEye] = React.useState<number>(secenekten(s?.get("e"), EYE, 4));
+  const [verbal, setVerbal] = React.useState<number>(secenekten(s?.get("v"), VERBAL, 5));
+  const [motor, setMotor] = React.useState<number>(secenekten(s?.get("m"), MOTOR, 6));
 
   const total = eye + verbal + motor;
 

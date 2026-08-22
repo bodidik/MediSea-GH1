@@ -8,12 +8,18 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
   const [copied, setCopied] = React.useState(false);
 
   /**
-   * PAYLAŞILAN ADRES DEĞER TAŞIMAZ — çünkü hiçbir araç onları geri okumuyor.
+   * PAYLAŞILAN ADRES DEĞER TAŞIMAZ — ve bu bilerek.
    *
    * Burası bir dönem hesaplanan değerleri sorgu dizesine yazıyordu
-   * (`?scr=2.5&age=70&sex=female`). Ölçüldü: 111 araçta paylaş düğmesi var
-   * ve parametreleri geri okuyan araç SIFIR — ne sayfa, ne düzen, ne
-   * metadata, ne paylaşım kartı.
+   * (`?scr=2.5&age=70&sex=female`). 111 araçta paylaş düğmesi var.
+   * DÜZELTME — burası bir dönem "parametreleri geri okuyan araç SIFIR"
+   * diyordu. YANLIŞTI; yeniden ölçüldü: ON BİR araç adres parametresi okuyor
+   * (chads-vasc · curb65 · ecog · gcs · has-bled · meld-na · news2 · perc ·
+   * qsofa · sofa · timi-ua), geri kalan ~100 araç okumuyor.
+   *
+   * Yani parametre yazmak yeniden açılsaydı sonuç TUTARSIZ olurdu: on bir
+   * araçta değerler geri gelir, ötekilerde adres değer taşıdığı hâlde sayfa
+   * varsayılanlarını gösterirdi. Yanıltıcı olan tam da bu ikinci küme.
    *
    * Sonuç yalnızca "çalışmayan özellik" değil, YANILTICI: canlıda
    * `/tools/egfr?scr=2.5&age=70&sex=female` açıldığında sayfa varsayılan
@@ -27,6 +33,15 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
    * kendisi girer. Değerlerin geri yüklenmesi gerçek bir özellik ve her
    * aracın kendi durumunu adresten okumasını gerektiriyor (bkz.
    * SENDE-KALANLAR.md).
+   *
+   * ADRESTEN OKUYAN ARAÇ, GİRDİYİ ŞIK KÜMESİYLE SINAMAK ZORUNDA.
+   * Ölçüldü: on bir aracın onu temiz — bool okuyanlar `"1"` dışını reddediyor,
+   * serbest sayısal olanlar klavyeyle AYNI makullük kapısından geçiyor
+   * (sofa/news2/meld-na çöp parametreyle `–` basıyor, ecog hiçbir şık seçmiyor).
+   * Kusurlu olan tek araç, hiç klavye girdisi OLMAYANIYDI: `gcs` düğmeyle
+   * çalıştığı için ona hiç kapı konmamıştı ve `?e=-99&v=1&m=1` skoru -97
+   * yapıp "Ağır (Entübasyon Eşiği ≤8)" basıyordu. Serbest girdinin yokluğu,
+   * aracı güvenli GÖSTERİYOR ama güvenli YAPMIYOR.
    *
    * `params` imzada BIRAKILDI: 111 çağrı yeri onu geçiriyor ve özellik
    * yazıldığında yeniden gerekecek. Şu an bilerek kullanılmıyor.
