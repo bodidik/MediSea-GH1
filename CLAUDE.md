@@ -1165,6 +1165,53 @@ yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyor
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
 
+### İnfüzyon serisi BAĞIMSIZ YENİDEN HESAPLA sürüldü — yedi araç, kusur yok
+
+Kaynak taramaları sınıf sınıf ilerliyor; ama son turlarda bulunan gerçek
+kusurların hepsi (meld-na · rapid3 · scorad · sodium) aynı yöntemle çıktı:
+**aracı sür, sonucu ELDE yeniden hesapla, iki sayıyı karşılaştır.** Bu tur o
+yöntem infüzyon serisine sürüldü.
+
+| araç | girdi | ekranda | elle hesap |
+|---|---|---|---|
+| `heparin-nomogram` | AKS · 100 kg | yükleme **4000 Ü** · idame **1000 Ü/sa** | 60×100=6000 ve 12×100=1200 → tavanlar uygulandı |
+| `nac-infuzyon` | 70 kg | 10500 · 3500 · 7000 mg | 150/50/100 × 70 · hızlar 200 · 125 · 62.5 mL/sa |
+| `nac-infuzyon` | 150 kg | yükleme **16500 mg** | 150×**110** (dozlama kilosu tavanı) |
+| `fosfat-replasman` | ağır · KPhos · periferik · 70 kg | 44.8 mmol · 65.7 mEq · 6.6 saat | 70×0.64; 44.8/3 mL × 4.4 mEq; /10 mEq/sa |
+| `potasyum-replasman` | 60 mEq periferik | 1500 mL · 6 saat · 250 mL/sa | 60/40 L; 60/10 sa |
+| `potasyum-replasman` | 60 mEq santral | 600 mL · 3 saat · 200 mL/sa | 60/100 L; 60/20 sa |
+| `fomepizol` | 80 kg | 1200 · 800 · 1200 mg | 15/10/15 mg/kg |
+| `dka-infuzyon` | 70 kg | 1050–1400 mL · 7 Ü · 7 Ü/sa | 15–20 mL/kg; 0.1 Ü/kg |
+
+`heparin-nomogram` ayrıca örnek davranıyor: tavanı uygulamakla kalmıyor,
+**neyin kırpıldığını söylüyor** ("kiloya göre 6000 Ü çıkıyordu; nomogram
+tavanı olan 4000 Ü uygulandı"). Sessizce kırpmak, kullanıcının kendi
+hesabıyla ekranı karşılaştırdığında güvensizlik üretir.
+
+**BEKLENTİ TUTMADIĞINDA ÖNCE BEKLENTİYİ SINA — bu turda yine işledi.**
+`dka-infuzyon` ilk saat sıvısını 15–20 mL/kg veriyor, benim beklentim
+10–20'ydi. Sabitlere bakıldı: `ILK_SAAT_ML_KG = { alt: 15, ust: 20 }` ve araç
+bolussuz insülin varyantını da (0.14 Ü/kg/sa) taşıyor. Gevşek olan benim
+beklentimdi.
+
+**`potasyum-replasman`da yol seçimi ÖLÜ DENETİM DEĞİL:** periferik→santral
+geçişi üç sayıyı birden değiştiriyor (1500→600 mL, 6→3 saat, 250→200 mL/sa).
+Bir kontrolün çıktıyı gerçekten değiştirdiğini görmek, onu ekrana koymuş
+olmaktan ayrı bir ölçüm.
+
+### Ölçüm tuzağı: `<script>` etiketleri de "ekrandaki metin"e karışıyor
+
+Sayfadaki bütün ögelerden metin toplayan bir ölçüm, React'in akış çalışma
+zamanı kodunu da topluyor. `fosfat-replasman` ölçümünde sonuç sayılarının
+arasında **`$RC("B:0","S:0")`** çıktı ve bir an sayfaya sızmış bir hesap
+tablosu formülü sanıldı; gerçekte `$RB=[];$RV=function(a){...}` ile başlayan
+bir `<script>` düğümüydü.
+
+Belgede zaten yazılı olan "`body.textContent` JSON-LD içeriyor" tuzağının
+aynısı, farklı yükle. Ölçümden `script` ve `style` alt ağaçlarını çıkar —
+yalnızca `textContent` okurken değil, **öge öge gezerken de**
+(`e.closest('script')` ile ele).
+
 ### Kapı BAZI değerleri sınıyor, hepsini değil — boş kalan alan sessizce 0
 
 Kalıp: `const x = <kapı> ? <ifade> : null`. İfadede geçen bir değer kapıda
