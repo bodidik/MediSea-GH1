@@ -18,7 +18,7 @@ import Link from "next/link";
  */
 export default function UpgradeCard() {
   return (
-    <div className="rounded-2xl border border-amber-500/30 bg-gradient-to-r from-slate-900 to-slate-800 p-5 flex items-center justify-between gap-4 shadow-[0_0_20px_rgba(245,158,11,0.1)] relative overflow-hidden group transition-all hover:border-amber-500/50">
+    <div className="koyu-yuzey rounded-2xl border border-amber-500/30 bg-gradient-to-r from-slate-900 to-slate-800 p-5 flex items-center justify-between gap-4 shadow-[0_0_20px_rgba(245,158,11,0.1)] relative overflow-hidden group transition-all hover:border-amber-500/50">
 
       {/* Premium Parıltı Efekti */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-amber-500/10 blur-3xl rounded-full pointer-events-none group-hover:bg-amber-500/20 transition-all duration-500" aria-hidden="true"></div>

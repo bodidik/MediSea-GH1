@@ -431,3 +431,71 @@ label:has(input.sr-only:focus-visible) {
   :is(.text-slate-300, .text-slate-400, .text-slate-500) {
   color: rgb(71 85 105);     /* slate-600 — iç içe açık kartta koyulaştırma geri */
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   OKUMA ALANINDA VURGU RENKLERİ — Tailwind'in `-600` kademesi beyazda
+   eşiği geçmiyor.
+
+   Uygulamanın kendi CSS'i altında ÖLÇÜLDÜ (sınıf adından hesaplanamaz,
+   tonlar eziliyor olabilir); beyaz zeminde:
+
+     text-emerald-600  3.77      text-emerald-700  5.48
+     text-green-600    3.30      text-green-700    5.02
+     text-amber-600    3.19      text-amber-700    5.02
+     text-rose-600     4.70 *    text-rose-700     6.29
+     text-red-600      4.83  gecer    text-blue-600  5.17  gecer
+     text-indigo-600   6.29  gecer
+
+   * rose-600 BEYAZDA geçiyor ama renkli bir kutunun içinde 4.41 ölçüldü
+     (akut-kalp-yetersizligi, "Soğuk/Islak"). Ölçülen kusur olduğu için
+     dahil; geçen tonlara DOKUNULMUYOR.
+
+   Kapsam bilerek `[data-readable]` ile sınırlı: burası okuma gövdesi ve
+   zemini açık. Genel bir koyulaştırma bu depoda bir kez KOYU zeminde ters
+   tepmişti (yukarıdaki not). Bu tonların koyu blokla birlikte kullanımı
+   sayıldı: içerikte SIFIR — koyu bloklar `-400` kademesini kullanıyor.
+   ───────────────────────────────────────────────────────────────────── */
+[data-readable] .text-emerald-600 { color: rgb(4 120 87); }    /* emerald-700 */
+[data-readable] .text-green-600   { color: rgb(21 128 61); }   /* green-700 */
+[data-readable] .text-amber-600   { color: rgb(180 83 9); }    /* amber-700 */
+[data-readable] .text-rose-600    { color: rgb(190 18 60); }   /* rose-700 */
+
+/* ─────────────────────────────────────────────────────────────────────
+   OKUMA ALANINDA VURGU RENKLERİ — ölçülen üç ton eşiğin altındaydı.
+
+   İçerik yazarları klinik metinde renk vurgusu kullanıyor. Tailwind'in
+   `-600` kademesi beyaz zeminde her tonda geçmiyor; UYGULAMANIN KENDİ
+   CSS'i altında tek tek ölçüldü (sınıf adından hesaplanamaz):
+
+     text-emerald-600  3.77      text-red-600     4.83  (geçiyor)
+     text-amber-600    3.19      text-blue-600    5.17  (geçiyor)
+     text-green-600    3.30      text-indigo-600  6.29  (geçiyor)
+     text-rose-600     4.70 beyazda GEÇİYOR ama renkli kutuda 4.41
+
+   Rose bu yüzden listede: kusur beyaz zeminde değil, içeriğin kendi
+   renkli kutusunun içinde ölçüldü (akut-kalp-yetersizligi).
+
+   İÇERİK DOSYASINA DOKUNULMUYOR — dönüşüm render tarafında, `metin.tsx`
+   ve `kisaltma.ts` ile aynı karar. Kapsam `[data-readable]`: arayüzdeki
+   aynı sınıflar etkilenmez.
+
+   Koyu kart muafiyeti yukarıdaki slate kuralıyla aynı gerekçeyle var.
+   Ölçüldü: bu üç ton içerikte koyu zeminli blokla HİÇ birlikte geçmiyor
+   (koyu bloklar `-400` kademesini kullanıyor), yani kural bugün oraya
+   düşmüyor — ama içerik değişince düşebilir ve genel koyulaştırmanın
+   koyu zeminde ters teptiği bu depoda bir kez ölçüldü.
+   ───────────────────────────────────────────────────────────────────── */
+[data-readable] .text-emerald-600 { color: rgb(4 120 87); }    /* 3.77 -> 5.48 */
+[data-readable] .text-green-600   { color: rgb(21 128 61); }   /* 3.30 -> 5.02 */
+[data-readable] .text-amber-600   { color: rgb(180 83 9); }    /* 3.19 -> 5.02 */
+[data-readable] .text-rose-600    { color: rgb(190 18 60); }   /* 4.41 -> 6.29 */
+
+/* Koyu kartta koyulaştırma ters teper: ÖZGÜN Tailwind değeri açıkça geri
+   yazılıyor. `revert-layer` KULLANILMAZ — Tailwind burada cascade layer
+   kullanmadığı için o bildirim tarayıcı varsayılanına düşer ve yazıyı
+   siyaha çevirirdi. Yukarıdaki slate kuralı da aynı sebeple değeri
+   açıkça yazıyor. */
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-emerald-600 { color: rgb(5 150 105); }
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-green-600   { color: rgb(22 163 74); }
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-amber-600   { color: rgb(217 119 6); }
+[data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-rose-600    { color: rgb(225 29 72); }

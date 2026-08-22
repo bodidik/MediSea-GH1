@@ -1366,6 +1366,66 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Açık site 65 sayfada tarandı — 5 kusur, ikisi ayrı sınıf
+
+Aynı olgun ölçüt açık tarafa sürüldü: ana sayfa, `/topics`, 13 branş,
+30 konu örneği, `/uyelik`, `/calisma-alanim`, `/tekrar`, `/giris`,
+`/kayit`, `/profile`, `/guidelines`. **65 sayfa · 5440 öge · negatif
+kontrol 65/65 · 5 kusur.**
+
+Kusurlar iki ayrı sınıftan geldi ve çareleri de farklı:
+
+**1. Yarı saydam koyu kart, AÇIK sayfada orta griye biniyor.**
+`RequirePlan` kartı `bg-slate-800/50` taşıyordu; `/profile` zemini beyaz
+olduğu için bileşke `rgb(143,148,157)` çıkıyor ve üstündeki `text-slate-200`
+**2.48**'de kalıyordu. Zemini sayfaya bağlı olan bir kart, kontrastı da
+sayfaya bağlı yapar. Çare: zemini OPAK yap (`bg-slate-800`) ve yüzeyi
+`koyu-yuzey` ile beyan et.
+
+**2. `koyu-yuzey` belgede yazdığı yerde YOKTU.** Belge profilin bu sınıfı
+taşıdığını söylüyordu; ölçüldü, sayfada hiç `koyu-yuzey` yoktu ve
+`UpgradeCard`'ın koyu degrade şeridinde `text-slate-400` **2.36**'daydı —
+genel koyulaştırmanın açık zemin varsaydığı klasik geri tepme. İki bileşen
+de artık sınıfı beyan ediyor; ön koşul (ağaçta açık kart yok) tahmin
+edilmedi, SAYILDI: ikisinde de sıfır.
+
+**Belgede "şu sayfa şu sınıfı taşıyor" yazması, taşıdığı anlamına gelmez.**
+Bileşen taşınmış, yeniden yazılmış ya da hiç eklenmemiş olabilir; sınıfın
+varlığını sayfada ölç.
+
+### İçerikteki vurgu renkleri: ölçülen üç ton eşiğin altındaydı
+
+Konu metinlerinde klinik vurgu için renk kullanılıyor ve Tailwind'in `-600`
+kademesi her tonda geçmiyor. Uygulamanın kendi CSS'i altında tek tek ölçüldü:
+
+| ton | beyazda | durum |
+|---|---|---|
+| `text-amber-600` | 3.19 | düşüyor |
+| `text-green-600` | 3.30 | düşüyor |
+| `text-emerald-600` | 3.77 | düşüyor |
+| `text-rose-600` | 4.70 | beyazda GEÇİYOR |
+| `text-red-600` | 4.83 | geçiyor |
+| `text-blue-600` | 5.17 | geçiyor |
+
+**Rose yine de listede ve sebebi ölçüm kapsamıyla ilgili:** beyaz zeminde
+geçiyor ama içeriğin kendi renkli kutusunun içinde **4.41** ölçüldü. Bir
+tonu "beyazda geçiyor" diye temiz saymak, içeriğin tonlu kutular kullandığı
+bir depoda yetmiyor.
+
+Çare `metin.tsx` ve `kisaltma.ts` ile aynı karar: **içerik dosyasına
+dokunulmaz, dönüşüm render tarafında.** Kural `[data-readable]` ile
+sınırlı, yani arayüzdeki aynı sınıflar etkilenmiyor.
+
+Doğrulaması üç negatif kontrolle yapıldı: (1) okuma alanı İÇİNDE dört ton
+gerçekten değişti, (2) DIŞINDA değişmedi, (3) hedeflenmeyen `red`/`blue`
+iki tarafta da birebir aynı kaldı. Koyu kart muafiyeti de sınandı —
+`.bg-slate-900` içinde özgün ton geri geliyor.
+
+**`revert-layer` bu depoda KULLANILAMAZ.** Muafiyeti onunla yazmak ilk
+akla gelen yol ama Tailwind burada cascade layer kullanmıyor; bildirim
+tarayıcı varsayılanına düşer ve yazıyı siyaha çevirir. Özgün değer açıkça
+yazılır (dosyadaki slate kuralı da bunu yapıyor).
+
 ### 127 aracın tamamı olgun ölçütle tarandı — sınıf kapalı
 
 Kontrast taraması bir dönem kör ölçütlerle yapılmıştı (saydamlık, degrade,

@@ -12,8 +12,13 @@ export default function RequirePlan({
   const ok = (min === "V") || (min === "M" && (plan === "M" || plan === "P")) || (min === "P" && plan === "P");
   
   if (!ok) {
+    // ZEMİN OPAK OLMAK ZORUNDA. Bu kart bir dönem `bg-slate-800/50` idi ve
+    // sayfanın zeminine göre değişiyordu: /profile beyaz olduğu için orta
+    // griye biniyor, üstündeki açık yazı 2.48 kontrastta kalıyordu (ölçüldü).
+    // `koyu-yuzey` ayrıca globals.css'teki genel koyulaştırmayı bu ağaçta
+    // geri alıyor — ağaçta açık kart YOK, doğrulandı.
     return (
-      <div className="flex items-center gap-4 p-4 my-2 rounded-xl border border-blue-900/50 bg-slate-800/50 shadow-inner backdrop-blur-sm transition-all duration-300 hover:bg-slate-800">
+      <div className="koyu-yuzey flex items-center gap-4 p-4 my-2 rounded-xl border border-blue-900/50 bg-slate-800 shadow-inner transition-all duration-300 hover:bg-slate-700">
         
         {/* VIP / Premium Yıldız İkonu */}
         <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/10 border border-blue-500/20">
