@@ -1368,6 +1368,76 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### `renk-cifti-denetim` TAMAMEN KÖRDÜ — bu oturumdaki ~71 kusurun hiçbirini görmemişti
+
+Denetimlerin tohumlu negatif kontrolü geçmesi, gerçek kusuru yakaladıkları
+anlamına GELMİYOR. Ölçüldü: `renk-cifti-denetim` bu oturumda düzeltilen
+kontrast kusurlarının **hiçbirini** hiç yakalamamıştı.
+
+Tarihsel kontrol şöyle yapıldı: `b02c978~1`den altı araç alındı, beşinde
+kara listedeki kusurlu çift (`bg-amber-600 text-white` gibi) gözle
+görülüyordu — denetim **"0 eşleşme"** dedi.
+
+**Sebep: aynı satırda `className=` şartı.** Gerçek kodda kusurlu çift
+`className` ile aynı satırda DEĞİL:
+
+```
+badge: "bg-amber-600 text-white"     // palet nesnesi
+? 'bg-emerald-600 text-white'         // üçlü işleç dalı
+className={`...                       // çok satırlı şablon
+  bg-slate-400 text-white`}
+```
+
+`saydamlik-denetim`de iki tur önce kapatılan körlüğün BİREBİR aynısı. Şart
+kaldırıldı; artık sinyal çiftin kendisi.
+
+**Ama satır düzeyi eşleştirme de fazla kaba çıktı.** Bir satır birden çok
+BAĞIMSIZ sınıf dizesi taşıyabiliyor:
+
+```
+badge: "bg-blue-900 text-white",  ...  dot: "bg-blue-400"
+```
+
+Denetim `dot`un zeminini `badge`in yazısıyla eşleştirip `blue-400 = 2.54`
+diye sahte bulgu üretti — oysa nokta hiç metin taşımıyor. **Sekiz sahte
+bulgunun kaynağı buydu.** Eşleştirme AYNI DİZE düzeyine indirildi; Tailwind
+sınıfları zaten orada gruplanıyor.
+
+**Tohumun kendisi de yanlıştı.** Dize düzeyine geçince negatif kontrol düştü:
+eski tohum zemini ve yazıyı AYRI ögelere koyuyordu (ebeveyn/çocuk), oysa
+denetimin belgelenmiş kapsamı "aynı ögede". Satır düzeyi eşleştirme onu
+kabaca kabul ediyordu. Kusur denetimde değil TOHUMDAYDI — tohum artık üç
+gerçek biçimi (palet nesnesi · üçlü işleç · className) taşıyor.
+
+Doğrulama: tarihsel kontrol **10 gerçek kusur** yakalıyor, negatif kontrol
+geçiyor, güncel depoda 8 aday kaldı.
+
+### Denetim düzeltildiği anda iki gerçek kusur buldu
+
+| yer | ölçülen | çare |
+|---|---|---|
+| `fibromiyalji` seçili "Orta" | **2.80** (beyaz / orange-500) | orange-700 → 5.18 |
+| `ToolShare` "kopyalandı" | 3.77 (beyaz / emerald-600) | emerald-700 |
+
+`fibromiyalji` tarayıcıda dört seçili dalın dördü de çizdirilerek ölçüldü.
+`ToolShare`in "kopyalandı" dalı **yerinde ölçülemedi** — pano yazma bu
+ortamda çalışmadığı için dal hiç çizilmiyor. Düzeltme, çiftin daha önce
+tarayıcıda ölçülmüş değerine (3.77) dayanıyor; raporda öyle yazıyor.
+
+**Kalan 6 adayın 3'ü ölü kod** (`AdBanner`, `SimulatorEngine`, `TopicSidebar`
+— sıfır içe aktaran), 3'ü ulaşılabilir ama henüz ölçülmedi (`NotePanel`,
+`StudyBackup`, premium `liderlik`). "Temiz" DENMİYOR.
+
+### Türkçe büyük harf katlama, ölçüm tarafında da vurdu
+
+`/paylaş/i` deseni "ARACI PAYLAŞ" düğmesini BULAMADI: JS'in `i` bayrağı
+`Ş`↔`ş` katlamasını ASCII dışı harflerde yapmıyor. Sonra `toLocaleLowerCase("tr")`
+kullanıldı ama arama dizesi `paylas` yazılmıştı — `ş` `s`'ye çevrilmediği için
+yine tutmadı. İki denemede de "düğme yok" sanıldı; düğme oradaydı.
+
+Ölçümde Türkçe metin ararken ya `textContent.includes("PAYLAŞ")` gibi birebir
+eşleştir, ya iki tarafı da aynı kurala indir — yarım indirgeme en kötüsü.
+
 ### Ölü denetim taraması BETİĞE alındı — ölçüt kaydedilmediği için yeniden yazıldı ve BOZUK çıktı
 
 "Ekranda duran ama hiçbir şeyi değiştirmeyen kontrol" ölçütü daha önce bir kez

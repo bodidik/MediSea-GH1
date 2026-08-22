@@ -102,9 +102,16 @@ if (NEGATIF) {
   // Dosya adı `_` ile BAŞLAMAMALI: betiğin kendi `_` süzgeci testi de eler
   // (saydamlik-denetim'de tam olarak bu oldu).
   negatifDosya = path.join(NEGATIF_DIZIN, 'zz-renk-cifti-negatif-kontrol.tsx');
+  /* Tohum ÜÇ biçimi birden taşıyor ve üçü de AYNI DİZE içinde çift kuruyor —
+     denetimin belgelenmiş kapsamı bu. Eski tohum zemini ve yazıyı AYRI
+     ögelere koyuyordu (ebeveyn/çocuk); satır düzeyi eşleştirme onu kabaca
+     kabul ediyordu, dize düzeyine geçilince haklı olarak reddetti. Kusur
+     denetimde değil TOHUMDAYDI — aynı hata bir kez daha yapılmasın. */
   const satirlar = [
     'export default function X() {',
-    '  return <div className="bg-amber-50"><p className="text-[10px] text-amber-500">kasten kusurlu</p></div>;',
+    '  const P = { badge: "bg-amber-600 text-white" };            // palet nesnesi',
+    '  const a = true ? "bg-emerald-600 text-white" : "";        // üçlü işleç dalı',
+    '  return <p className="text-[10px] text-amber-500 bg-amber-50">kasten kusurlu</p>;',
     '}',
   ];
   fs.writeFileSync(negatifDosya, satirlar.join('\n') + '\n', 'utf8');
@@ -118,9 +125,39 @@ for (const kok of (NEGATIF ? [...KOKLER, NEGATIF_DIZIN] : KOKLER)) {
     if (p.split(path.sep).some((x) => x.startsWith('_'))) continue;
     dosyaSayisi++;
     const satirlar = fs.readFileSync(p, 'utf8').split('\n');
+    /*
+     * BLOK YORUM İZLENİYOR — bu depoda yorumlar renk kusurlarını ANLATIYOR
+     * ve gövde satırları düz metinle başlıyor. Ölçüm kendi belgesini kusur
+     * sayarsa rapor okunmaz hâle gelir.
+     */
+    let blokYorumda = false;
+    const yorumMu = (x) => {
+      const baslar = x.includes('/*');
+      const biter = x.includes('*/');
+      if (blokYorumda) { if (biter) blokYorumda = false; return true; }
+      if (baslar && !biter) { blokYorumda = true; return true; }
+      return /^\s*(\/\/|\*|\/\*)/.test(x) || baslar;
+    };
     satirlar.forEach((s, i) => {
-      const m = s.match(/className=(?:"([^"]*)"|\{`([^`]*)`\})/g);
-      if (!m) return;
+      if (yorumMu(s)) return;
+      /*
+       * `className=` ŞARTI KALDIRILDI — DENETİM BU YÜZDEN TAMAMEN KÖRDÜ.
+       *
+       * Ölçüldü: bu oturumda düzeltilen ~71 kontrast kusurunun HİÇBİRİNİ
+       * yakalamamıştı. Sebep, gerçek kodda kusurlu çiftin `className=` ile
+       * aynı satırda OLMAMASI:
+       *   badge: "bg-amber-600 text-white"      <- palet nesnesi
+       *   ? 'bg-emerald-600 text-white'          <- üçlü işleç dalı
+       *   className={`...                        <- çok satırlı şablon
+       *     bg-slate-400 text-white`}
+       * Tarihsel kontrolde altı dosyanın beşinde kusurlu çift vardı ve
+       * denetim "0 eşleşme" diyordu.
+       *
+       * Sinyal zaten çiftin KENDİSİ: aynı satırda `bg-<ton>` ve `text-white`.
+       * Nerede geçtiğinin önemi yok. `saydamlik-denetim`de kapatılan
+       * körlüğün birebir aynısıydı.
+       */
+      if (!/\b(?:bg|text)-[a-z]+-\d{2,3}\b/.test(s) && !/text-white\b/.test(s)) return;
       className++;
       const buyuk = buyukMetin(s);
       // A) beyaz yazi + orta tonlu renkli zemin
@@ -128,9 +165,32 @@ for (const kok of (NEGATIF ? [...KOKLER, NEGATIF_DIZIN] : KOKLER)) {
       // elenmiyordu ve 27 adayin neredeyse hepsi bu yuzden sahteydi.
       // Varyantli sinifin TAMAMI atilir; yalnizca onegi silmek `bg-blue-500`i
       // birakiyordu ve 27 adayin cogu bu yuzden sahte cikmisti.
-      const varyantsiz = s.split(/[^A-Za-z0-9:_/\[\].-]+/).filter(t => !t.includes(':')).join(' ');
-      const tabanZemin = (sinif) => varyantsiz.includes('bg-' + sinif);
-      const tabanYazi = (sinif) => varyantsiz.includes('text-' + sinif);
+      /*
+       * EŞLEŞTİRME SATIR DEĞİL AYNI DİZE DÜZEYİNDE.
+       *
+       * Satır düzeyi çok kaba: bir satır birden çok BAĞIMSIZ sınıf dizesi
+       * taşıyabiliyor ve denetim onları birbirine karıştırıyordu. Ölçüldü —
+       *   badge: "bg-blue-900 text-white",  ...  dot: "bg-blue-400"
+       * satırında `dot`un zemini `badge`in yazısıyla eşleştirildi ve
+       * `beyaz/blue-400 = 2.54` diye SAHTE bulgu üretildi. Oysa nokta hiç
+       * metin taşımıyor, rozet de blue-900 üstünde beyaz (yüksek kontrast).
+       * Sekiz sahte bulgunun kaynağı buydu; aynı satırdaki GERÇEK kusur
+       * (`bg-amber-600 text-white`) ise doğruydu.
+       *
+       * Tailwind sınıfları zaten dize düzeyinde gruplanıyor; ölçüt de öyle.
+       */
+      const parcalar = [
+        ...[...s.matchAll(/"([^"]*)"/g)].map((x) => x[1]),
+        ...[...s.matchAll(/'([^']*)'/g)].map((x) => x[1]),
+        ...[...s.matchAll(/`([^`]*)`/g)].map((x) => x[1]),
+      ];
+      // Tırnaksız (çok satırlı şablonun gövdesi) satırlar da değerlendirilir
+      if (!parcalar.length) parcalar.push(s);
+      const temizle = (t) => t.split(/[^A-Za-z0-9:_/\[\].-]+/).filter((x) => !x.includes(':')).join(' ');
+      const kumeler = parcalar.map(temizle);
+      const tabanZemin = (sinif) => kumeler.some((k) => k.includes('bg-' + sinif) && /text-white\b/.test(k));
+      const tabanYazi = (sinif) =>
+        kumeler.some((k) => k.includes('text-' + sinif) && k.includes('bg-' + sinif.split('-')[0] + '-50'));
       for (const [zemin, oran] of Object.entries(BEYAZ_ZEMIN)) {
         if (!tabanZemin(zemin)) continue;
         if (!/text-white\b/.test(s)) continue;
@@ -141,8 +201,8 @@ for (const kok of (NEGATIF ? [...KOKLER, NEGATIF_DIZIN] : KOKLER)) {
       // B) renkli yazi + ayni rengin -50 zemini
       for (const [yazi, oran] of Object.entries(RENKLI_YAZI)) {
         const ton = yazi.split('-')[0];
-        if (!tabanYazi(yazi)) continue;
-        if (!tabanZemin(ton + '-50')) continue;
+        if (!tabanYazi(yazi)) continue;   // `-50` zemin kontrolü tabanYazi'nin İÇİNDE (aynı dize)
+        void ton;
         const esik = buyuk ? 3.0 : 4.5;
         if (oran >= esik) continue;
         bulgu.push({ dosya: p.replace(/\\/g,'/'), satir: i+1, tip: yazi + '/' + ton + '-50', oran, esik, kod: s.trim().slice(0,80) });
