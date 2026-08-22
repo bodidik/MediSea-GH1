@@ -101,7 +101,7 @@ export default function PERCPage() {
                   <span className={`text-sm font-bold block transition-colors ${st[it.key] ? 'text-rose-900' : 'text-blue-900/80 group-hover:text-blue-900'}`}>
                     {it.label}
                   </span>
-                  <span className={`text-[9px] font-bold uppercase tracking-widest ${st[it.key] ? 'text-rose-400' : 'text-slate-400'}`}>
+                  <span className={`text-[9px] font-bold uppercase tracking-widest ${st[it.key] ? 'text-rose-700' : 'text-slate-500'}`}>
                     {it.sub}
                   </span>
                 </div>
@@ -119,7 +119,7 @@ export default function PERCPage() {
              {allNegative ? 'OK' : '!'}
            </div>
            
-           <span className={`text-[10px] font-black uppercase tracking-[0.4em] mb-2 ${allNegative ? 'text-blue-200' : 'text-rose-500'}`}>
+           <span className={`text-[10px] font-black uppercase tracking-[0.4em] mb-2 ${allNegative ? 'text-blue-200' : 'text-rose-700'}`}>
              PROTOKOL SONUCU
            </span>
 

@@ -118,7 +118,7 @@ export default function RockallPage() {
             <span className={`text-[10px] font-black mt-1 ${
               rPre.color === 'text-emerald-700' ? 'text-emerald-200'
               : rPre.color === 'text-amber-700' ? 'text-amber-200'
-              : 'text-rose-200'
+              : 'text-rose-100'
             }`}>{rPre.label}</span>
           </div>
           <div className="bg-blue-900 rounded-[2rem] p-5 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

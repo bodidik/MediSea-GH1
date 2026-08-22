@@ -1366,6 +1366,43 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Sürücü ONAY KUTUSUNU tanımıyordu — 24 araç ölçüm dışı kalmıştı
+
+Sonuç durumu taraması ilk turda 128 aracın 104'ünü sürebildi; 24'ü "sürülemedi"
+diye raporlandı. Sebep ölçüldü: o araçlar `sr-only` ile gizlenmiş
+**onay kutusu** kullanıyor (Wells, PERC, PADUA, HAS-BLED, CHA2DS2-VASc,
+qSOFA, Ranson, Rockall…) ve sürücü yalnızca metin alanı, `<select>` ve
+`aria-pressed` düğmesi tanıyordu.
+
+Sürücüye onay kutusu, radyo ve **kaydırıcı** (`input[type=range]`) eklendi.
+Sonuç: 24'ün 22'si sürüldü ve **12 yeni kusur** çıktı — hepsi yalnızca
+işaretlenmiş durumda görünen renkler:
+
+| araç | ölçülen | sebep |
+|---|---|---|
+| `perc` | 2.45 (9 yazı) | `text-rose-400` üzerine `bg-rose-50` |
+| `perc` | 3.67 | `text-rose-500` üzerine beyaz panel |
+| `wells-dvt` | 3.67 | `text-rose-500` üzerine beyaz |
+| `rockall` | 4.27 | `text-rose-200` üzerine koyu bileşke |
+
+**Sürücünün "son seçeneği tıkla" kestirmesi bir aracı ÇIKMAZA sokabiliyor.**
+`gout-acr` bir giriş ölçütüyle kapılı: sürücü "Hayır"a bastığı için hiçbir
+şey açılmıyordu ve araç "sürülemedi" görünüyordu. "Evet" tıklanınca gövde
+17745 → 19048 karaktere çıktı. Yedek kural: sürüş metni HİÇ değiştirmediyse
+ilk seçeneği dene.
+
+**Sabit sürüş değeri mevcut değere eşit olabiliyor.** `hba1c-eag`'de sürücü
+`7` yazıyordu ve alanda zaten o vardı; metin değişmediği için "sürülemedi"
+sanıldı. `8.5` ile eAG 197 mg/dL çıktı. İkinci yedek: değer değiştirmeyi
+farklı bir sayıyla tekrar dene.
+
+İki yedekle birlikte **128 aracın 128'i sürülebiliyor** ve tarama 0 kusur,
+negatif kontrol 128/128 veriyor.
+
+**Ayırt edici METİN UZUNLUĞU değil METNİN KENDİSİ olmalı.** İlk sürümde
+"araç cevap verdi mi" ölçütü `textContent.length` karşılaştırıyordu; iki
+farklı sonuç aynı uzunlukta olabiliyor ve araç sürülmemiş sayılıyordu.
+
 ### "127 araç temiz" YALNIZCA BOŞ FORM İÇİNDİ — sonuç durumunda 71 kusur vardı
 
 Kütle taraması her aracı **varsayılan durumda** ölçüyordu. Ama araçların

@@ -229,7 +229,7 @@ export default function WellsDVTPage() {
                   <div className="w-28 h-2 bg-rose-100 rounded-full overflow-hidden shrink-0">
                     <div className="h-full rounded-full bg-rose-400" style={{ width: "22%" }} />
                   </div>
-                  <span className="text-[10px] font-black text-rose-500 w-6 text-right shrink-0">{it.pts}</span>
+                  <span className="text-[10px] font-black text-rose-700 w-6 text-right shrink-0">{it.pts}</span>
                 </div>
               ))}
             </div>
