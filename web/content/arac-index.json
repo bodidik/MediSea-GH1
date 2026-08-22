@@ -180,6 +180,11 @@
   "desc": "Romatoid artrit hastalık aktivite skoru"
  },
  {
+  "slug": "digoksin-toksisitesi",
+  "name": "Digoksin Toksisitesi",
+  "desc": "Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz"
+ },
+ {
   "slug": "dka-infuzyon",
   "name": "DKA Kurulumu",
   "desc": "Diyabetik ketoasidozda sıvı, insülin ve potasyum sıralaması — potasyum düşükse insülini bekletir"
