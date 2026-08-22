@@ -146,7 +146,7 @@ function SayiAlani({
   pasif?: boolean;
 }) {
   return (
-    <div className={pasif ? "opacity-50" : ""}>
+    <div>
       <label
         htmlFor={id}
         className="text-[10px] font-black text-slate-600 uppercase tracking-widest block mb-2"

@@ -1366,6 +1366,56 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### "127 araç temiz" YALNIZCA BOŞ FORM İÇİNDİ — sonuç durumunda 71 kusur vardı
+
+Kütle taraması her aracı **varsayılan durumda** ölçüyordu. Ama araçların
+tamamı sonucu ancak girdi verilince çiziyor; yani kullanıcının asıl okuduğu
+panel — skor bandı, seçili şık, sonuç çipi — hiç ölçülmemişti. "0 kusur"
+raporu doğruydu ama kapsamı sanıldığından çok dardı.
+
+Aracı SÜREN bir tarama yazıldı: her metin alanına makul bir sayı, her
+`<select>`e son seçenek, her `aria-pressed` grubunda bir tıklama. Sonuç:
+
+  128 araç · negatif kontrol 128/128 · **71 kusur, 16 araçta**
+
+Hepsi seçili/sonuç durumunda ortaya çıkan çiftlerdi. Ölçülen değerler
+(uygulamanın kendi CSS'i altında, sınıf adından hesaplanmadı):
+
+| çift | kontrast |
+|---|---|
+| `bg-amber-500` + `text-white` | **2.15** |
+| `bg-slate-400` + `text-white` | 2.56 |
+| `bg-amber-600` + `text-white` | 3.19 |
+| `bg-orange-600` + `text-white` | 3.56 |
+| `bg-emerald-600` + `text-white` | 3.77 |
+| `text-sky-600` / beyaz | 4.10 |
+
+Geçen `-700` karşılıkları: emerald 5.48 · amber 5.02 · sky 5.93 · rose 6.29.
+
+**Sürücünün kendi kapsam sınırı var ve raporda YAZILI:** 128 aracın 104'ü
+sürülebildi, 24'ü sürülemedi (farklı denetim yapıları). Onların sonuç
+panelleri hâlâ ölçülmemiş durumda — "temiz" DENMİYOR.
+
+**Grupta TEK seçenek tıklamak yetmiyor.** Bir seçim grubunun her şıkkı
+farklı bir renk üretiyorsa, tek tıklama yalnızca birini çizer. `ciwa-ar`'da
+dört ayrı seçili renk var; sürücü sonuncuyu tıkladığı için `bg-sky-600` hiç
+görünmedi. Her şıkkı sırayla deneyen ikinci bir tur iki kusur daha buldu
+(`bg-sky-600` çip 4.10, `bg-orange-500` şık 2.80).
+
+**O turda ölçüm de bir kez yanıldı:** seçenek düğmesi olmayan bir araçta
+(`ktv`) döngü hiç çalışmadı ve `olculen: 0` ile "temiz" göründü. Tur sayısı
+`Math.max(1, …)` yapılınca gerçekten ölçüldü. Yine aynı kural: **0 kusur ile
+0 öge ekranda aynı görünür.**
+
+**Var olmayan bir Tailwind sınıfı ÖNCEDEN ölçülemez.** `bg-orange-700`
+denendiğinde zemin `rgb(0,0,0)` ve kontrast 21 çıktı — Tailwind kullanılmayan
+sınıfı üretmiyor. Sınıfı kaynağa yazıp yeniden derledikten sonra ölçmek
+gerekiyor; ölçüm sırası "uygula → derle → ölç" olmalı.
+
+**Aday üretmek ile karar vermek yine ayrıldı:** `text-amber-500` kaynakta 245
+kez geçiyor ama tarama yalnızca BİRİNDE kusur buldu — ötekiler koyu zeminde.
+Toptan değiştirmek gerileme üretirdi; yalnızca ölçülen nokta düzeltildi.
+
 ### Açık site 65 sayfada tarandı — 5 kusur, ikisi ayrı sınıf
 
 Aynı olgun ölçüt açık tarafa sürüldü: ana sayfa, `/topics`, 13 branş,

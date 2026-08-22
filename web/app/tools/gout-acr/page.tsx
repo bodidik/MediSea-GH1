@@ -145,7 +145,7 @@ export default function GoutACRPage() {
               <button key={String(v)} type="button" aria-pressed={entry === v}
                 onClick={() => setEntry(e => e === v ? null : v)}
                 className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-                  ${entry === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+                  ${entry === v ? (v ? "border-emerald-600 bg-emerald-700 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                 {v ? "Evet" : "Hayır"}
               </button>
             ))}
@@ -161,7 +161,7 @@ export default function GoutACRPage() {
                 <button key={String(v)} type="button" aria-pressed={msu === v}
                   onClick={() => setMsu(m => m === v ? null : v)}
                   className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-                    ${msu === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-blue-900 bg-blue-900 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+                    ${msu === v ? (v ? "border-emerald-600 bg-emerald-700 text-white" : "border-blue-900 bg-blue-900 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                   {v ? "Evet — MSU Pozitif" : "Hayır / Yapılmadı"}
                 </button>
               ))}
@@ -184,7 +184,7 @@ export default function GoutACRPage() {
                         className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
                           ${active ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                         <span className={`w-7 h-5 rounded-md flex items-center justify-center text-[9px] font-black shrink-0
-                          ${active ? opt.pts > 0 ? "bg-amber-400 text-blue-900" : "bg-slate-400 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
+                          ${active ? opt.pts > 0 ? "bg-amber-400 text-blue-900" : "bg-slate-600 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
                           {opt.pts > 0 ? `+${opt.pts}` : opt.pts}
                         </span>
                         {opt.label}

@@ -59,7 +59,7 @@ export default function KtvPage() {
     <div className={`rounded-2xl p-4 text-center border ${
       value === null ? 'bg-slate-50 border-slate-200' :
       ok ? 'bg-emerald-900 border-emerald-900' : 'bg-rose-900 border-rose-900'}`}>
-      <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${value === null ? 'text-slate-400' : 'text-white/60'}`}>{label}</div>
+      <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${value === null ? 'text-slate-400' : 'text-white/85'}`}>{label}</div>
       <div className={`text-3xl font-black ${value === null ? 'text-slate-300' : 'text-white'}`}>
         {value !== null ? value.toFixed(2) : '—'}
       </div>
@@ -114,7 +114,7 @@ export default function KtvPage() {
           <div className={`rounded-2xl p-4 text-center border ${
             urr === null ? 'bg-slate-50 border-slate-200' :
             urrOk ? 'bg-emerald-900 border-emerald-900' : 'bg-rose-900 border-rose-900'}`}>
-            <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${urr === null ? 'text-slate-400' : 'text-white/60'}`}>URR</div>
+            <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${urr === null ? 'text-slate-400' : 'text-white/85'}`}>URR</div>
             <div className={`text-3xl font-black ${urr === null ? 'text-slate-300' : 'text-white'}`}>
               {urr !== null ? `${urr.toFixed(0)}%` : '—'}
             </div>
@@ -131,7 +131,7 @@ export default function KtvPage() {
               {spOk && eOk && urrOk ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
             </p>
             {!(spOk && eOk && urrOk) && (
-              <div className="mt-3 space-y-1 text-[11px] font-bold text-rose-700/80">
+              <div className="mt-3 space-y-1 text-[11px] font-bold text-rose-700">
                 {!spOk  && <p>• spKt/V {spKtV.toFixed(2)} &lt; 1.2 — seans süresini veya kan akımını artırın</p>}
                 {!urrOk && urr !== null && <p>• URR %{urr.toFixed(0)} &lt; 65 — BUN azalması yetersiz</p>}
               </div>

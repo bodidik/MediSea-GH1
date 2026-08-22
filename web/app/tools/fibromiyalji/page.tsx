@@ -109,7 +109,7 @@ export default function FibromiyaljiPage() {
                         ? s.v === 0 ? 'bg-emerald-700 border-emerald-700 text-white'
                           : s.v === 1 ? 'bg-amber-700 border-amber-500 text-white'
                           : s.v === 2 ? 'bg-orange-500 border-orange-500 text-white'
-                          : 'bg-rose-600 border-rose-600 text-white'
+                          : 'bg-rose-700 border-rose-700 text-white'
                         : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
                     {s.label}
                   </button>

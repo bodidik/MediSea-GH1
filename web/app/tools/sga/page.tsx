@@ -105,9 +105,9 @@ export default function SgaPage() {
                     <button aria-pressed={answers[q.id] === o.v} key={o.v} type="button" onClick={() => setAns(q.id, o.v as SGARating)}
                       className={`px-4 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                         ${answers[q.id] === o.v
-                          ? o.v === "A" ? "bg-emerald-600 border-emerald-600 text-white"
+                          ? o.v === "A" ? "bg-emerald-700 border-emerald-700 text-white"
                             : o.v === "B" ? "bg-amber-700 border-amber-500 text-white"
-                            : "bg-rose-600 border-rose-600 text-white"
+                            : "bg-rose-700 border-rose-700 text-white"
                           : "bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30"}`}>
                       {o.v}: {o.l}
                     </button>

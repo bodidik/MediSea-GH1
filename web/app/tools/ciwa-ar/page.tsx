@@ -166,7 +166,7 @@ export default function CiwaArPage() {
   const scoreColor = (v: number, max: number) => {
     const r = v / max;
     if (r === 0) return "";
-    if (r <= 0.3) return "bg-sky-600 text-white border-sky-600";
+    if (r <= 0.3) return "bg-sky-700 text-white border-sky-700";
     if (r <= 0.6) return "bg-amber-700 text-white border-amber-500";
     return "bg-rose-600 text-white border-rose-600";
   };
@@ -222,12 +222,12 @@ export default function CiwaArPage() {
                     <button aria-pressed={sel} key={opt.v} type="button" onClick={() => setAns(item.id as ItemId, opt.v)}
                       className={`w-full text-left p-3 rounded-2xl border transition-all flex items-center gap-3
                         ${sel
-                          ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600'
-                            : opt.v <= 2 ? 'bg-sky-600 border-sky-600'
-                            : opt.v <= 4 ? 'bg-amber-500 border-amber-500'
-                            : 'bg-rose-600 border-rose-600'
+                          ? opt.v === 0 ? 'bg-emerald-700 border-emerald-700'
+                            : opt.v <= 2 ? 'bg-sky-700 border-sky-700'
+                            : opt.v <= 4 ? 'bg-amber-700 border-amber-700'
+                            : 'bg-rose-700 border-rose-700'
                           : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
-                      <span className={`text-[10px] font-black shrink-0 w-6 text-center ${sel ? 'text-white/80' : 'text-slate-400'}`}>{opt.v}</span>
+                      <span className={`text-[10px] font-black shrink-0 w-6 text-center ${sel ? 'text-white' : 'text-slate-400'}`}>{opt.v}</span>
                       <span className={`text-sm font-bold leading-snug ${sel ? 'text-white' : 'text-blue-950'}`}>{opt.l}</span>
                     </button>
                   );

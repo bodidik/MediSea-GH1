@@ -93,7 +93,7 @@ export default function PERCPage() {
                 `}
               >
                 <div className={`w-6 h-6 rounded-lg border flex items-center justify-center transition-all
-                  ${st[it.key] ? 'bg-rose-600 border-rose-600 text-white shadow-[0_0_8px_rgba(225,29,72,0.4)]' : 'bg-white border-slate-200 text-transparent'}
+                  ${st[it.key] ? 'bg-rose-700 border-rose-700 text-white shadow-[0_0_8px_rgba(225,29,72,0.4)]' : 'bg-white border-slate-200 text-transparent'}
                 `}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
                 </div>

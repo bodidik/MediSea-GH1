@@ -92,7 +92,7 @@ export default function CAMICUPage() {
               const key = `f${i+1}`;
               return (
                 <span key={l} className={`w-7 h-7 rounded-lg flex items-center justify-center text-[9px] font-black
-                  ${sel[key] === true ? "bg-rose-600 text-white" : sel[key] === false ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-400"}`}>{l}</span>
+                  ${sel[key] === true ? "bg-rose-600 text-white" : sel[key] === false ? "bg-emerald-700 text-white" : "bg-slate-200 text-slate-400"}`}>{l}</span>
               );
             })}
           </div>
@@ -111,7 +111,7 @@ export default function CAMICUPage() {
                   <button aria-pressed={sel[feat.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [feat.id]: s[feat.id] === v ? null : v }))}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-                      ${sel[feat.id] === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+                      ${sel[feat.id] === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                     {v ? "Mevcut" : "Yok"}
                   </button>
                 ))}

@@ -116,7 +116,7 @@ export default function LawtonIadlPage() {
   const band = total !== null ? getBand(total) : null;
   const COLOR = {
     emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
-    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-600 text-white" },
+    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
     rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
   };
   const c = band ? COLOR[band.color as keyof typeof COLOR] : null;
@@ -165,7 +165,7 @@ export default function LawtonIadlPage() {
                           : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                       <span className={`w-5 h-5 rounded-lg flex items-center justify-center text-[9px] font-black shrink-0
                         ${(sel[item.id] as number | null) === oi
-                          ? opt.pts === 1 ? "bg-amber-400 text-blue-900" : "bg-slate-400 text-white"
+                          ? opt.pts === 1 ? "bg-amber-400 text-blue-900" : "bg-slate-600 text-white"
                           : "bg-white border border-slate-200 text-slate-400"}`}>
                         {opt.pts}
                       </span>

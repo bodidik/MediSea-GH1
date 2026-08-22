@@ -64,7 +64,7 @@ const getBand = (v: number) =>
 const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
   emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
   sky:     { bg: "bg-sky-50",     border: "border-sky-200",     text: "text-sky-700",     badge: "bg-sky-700 text-white" },
-  orange:  { bg: "bg-orange-50",  border: "border-orange-200",  text: "text-orange-700",  badge: "bg-orange-600 text-white" },
+  orange:  { bg: "bg-orange-50",  border: "border-orange-200",  text: "text-orange-700",  badge: "bg-orange-700 text-white" },
   rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
 };
 
@@ -137,7 +137,7 @@ export default function MurrayPage() {
               <div>
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>{band.label}</span>
                 <p className={`text-sm font-bold mt-1 ${c.text}`}>{band.sub}</p>
-                {total >= 2.5 && <p className="text-[9px] font-bold text-rose-600 mt-1">Murray ≥ 2.5 ECMO başvurusu için eşik değerdir (CESAR, EOLIA)</p>}
+                {total >= 2.5 && <p className="text-[9px] font-bold text-rose-700 mt-1">Murray ≥ 2.5 ECMO başvurusu için eşik değerdir (CESAR, EOLIA)</p>}
               </div>
             </div>
             <div className="grid grid-cols-4 gap-1 text-center text-[8px]">

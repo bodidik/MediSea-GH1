@@ -349,7 +349,7 @@ export default function SodiumPage() {
                         <div className="text-2xl font-black text-blue-900">{adrogueHyper.toFixed(2)} mEq/L</div>
                       </div>
                       <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
-                        <div className="text-[9px] font-black text-amber-700/60 uppercase tracking-widest mb-1">Max süre (10 mEq/gün)</div>
+                        <div className="text-[9px] font-black text-amber-700 uppercase tracking-widest mb-1">Max süre (10 mEq/gün)</div>
                         <div className="text-2xl font-black text-amber-800">{hyperHours?.toFixed(0)} saat</div>
                       </div>
                     </div>

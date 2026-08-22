@@ -61,7 +61,7 @@ export default function ISTHDICPage() {
   const c = isDIC
     ? { bg: "bg-rose-50",    border: "border-rose-300",    text: "text-rose-700",    badge: "bg-rose-700 text-white" }
     : isNonOvert
-    ? { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-600 text-white" }
+    ? { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" }
     : null;
 
   return (

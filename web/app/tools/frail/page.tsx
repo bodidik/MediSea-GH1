@@ -62,7 +62,7 @@ export default function FrailPage() {
   const band = total !== null ? getBand(total) : null;
   const COLOR = {
     emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
-    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-600 text-white" },
+    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
     rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
   };
   const c = band ? COLOR[band.color as keyof typeof COLOR] : null;
@@ -86,7 +86,7 @@ export default function FrailPage() {
         <div className="flex gap-2 justify-center">
           {ITEMS.map(i => (
             <div key={i.id} className={`w-10 h-10 rounded-xl flex items-center justify-center text-sm font-black transition-all
-              ${sel[i.id] === true ? "bg-rose-600 text-white" : sel[i.id] === false ? "bg-emerald-600 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
+              ${sel[i.id] === true ? "bg-rose-600 text-white" : sel[i.id] === false ? "bg-emerald-700 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
               {i.letter}
             </div>
           ))}
@@ -110,7 +110,7 @@ export default function FrailPage() {
                   <button aria-pressed={sel[item.id] === val} key={String(val)} type="button" onClick={() => toggle(item.id, val)}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
                       ${sel[item.id] === val
-                        ? val ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white"
+                        ? val ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-700 text-white"
                         : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
                     {val ? "Evet (+1)" : "Hayır (0)"}
                   </button>

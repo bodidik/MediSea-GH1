@@ -18,8 +18,8 @@ const LEVELS: { score: number; label: string; detail: string; color: string }[] 
 
 const COLOR_MAP: Record<string, { bg: string; border: string; badge: string; text: string }> = {
   rose:   { bg: "bg-rose-50",   border: "border-rose-300",   badge: "bg-rose-700 text-white",   text: "text-rose-700" },
-  orange: { bg: "bg-orange-50", border: "border-orange-200", badge: "bg-orange-600 text-white", text: "text-orange-700" },
-  amber:  { bg: "bg-amber-50",  border: "border-amber-200",  badge: "bg-amber-600 text-white",  text: "text-amber-700" },
+  orange: { bg: "bg-orange-50", border: "border-orange-200", badge: "bg-orange-700 text-white", text: "text-orange-700" },
+  amber:  { bg: "bg-amber-50",  border: "border-amber-200",  badge: "bg-amber-700 text-white",  text: "text-amber-700" },
   emerald:{ bg: "bg-emerald-50",border: "border-emerald-200",badge: "bg-emerald-700 text-white",text: "text-emerald-700" },
   sky:    { bg: "bg-sky-50",    border: "border-sky-200",    badge: "bg-sky-700 text-white",    text: "text-sky-700" },
   blue:   { bg: "bg-blue-50",   border: "border-blue-200",   badge: "bg-blue-700 text-white",   text: "text-blue-700" },

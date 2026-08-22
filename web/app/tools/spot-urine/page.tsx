@@ -417,7 +417,7 @@ export default function SpotUrinePage() {
                   <div key={i} className="flex items-start gap-3 py-1.5 border-b border-slate-50 last:border-0">
                     <div className="w-32 shrink-0">
                       <div className="text-[8px] font-black text-rose-600 uppercase tracking-widest">UAG: {r.uag}</div>
-                      <div className="text-[8px] font-black text-sky-600 uppercase tracking-widest">UOG: {r.uog}</div>
+                      <div className="text-[8px] font-black text-sky-700 uppercase tracking-widest">UOG: {r.uog}</div>
                     </div>
                     <span className="text-[10px] font-bold text-blue-900/80">{r.d}</span>
                   </div>

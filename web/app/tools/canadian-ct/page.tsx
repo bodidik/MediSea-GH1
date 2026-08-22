@@ -36,7 +36,7 @@ const CriterionRow = ({ item, value, onChange }: {
         <button aria-pressed={value === v} key={String(v)} type="button"
           onClick={() => onChange(value === v ? null : v)}
           className={`flex-1 py-2 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-            ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-600 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+            ${value === v ? (v ? "border-rose-500 bg-rose-700 text-white" : "border-emerald-600 bg-emerald-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
           {v ? "Evet" : "Hayır"}
         </button>
       ))}
@@ -71,7 +71,7 @@ export default function CanadianCTPage() {
 
   const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
     emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
-    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-600 text-white" },
+    amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
     rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
   };
 

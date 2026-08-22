@@ -119,7 +119,7 @@ const getBand = (v: number) =>
 const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
   emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
   sky:     { bg: "bg-sky-50",     border: "border-sky-200",     text: "text-sky-700",     badge: "bg-sky-700 text-white" },
-  amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-600 text-white" },
+  amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
   rose:    { bg: "bg-rose-50",    border: "border-rose-200",    text: "text-rose-700",    badge: "bg-rose-700 text-white" },
 };
 
@@ -175,7 +175,7 @@ export default function ESSDIAPage() {
                     className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
                       ${sel[domain.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                     <span className={`w-6 h-5 rounded-md flex items-center justify-center text-[9px] font-black shrink-0
-                      ${sel[domain.id] === opt.pts ? opt.pts > 0 ? "bg-amber-400 text-blue-900" : "bg-slate-400 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
+                      ${sel[domain.id] === opt.pts ? opt.pts > 0 ? "bg-amber-400 text-blue-900" : "bg-slate-600 text-white" : "bg-white border border-slate-200 text-slate-400"}`}>
                       {opt.pts}
                     </span>
                     {opt.label}

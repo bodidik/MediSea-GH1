@@ -73,10 +73,10 @@ export default function HaqDiPage() {
                           <button aria-pressed={val === opt.v} key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
                             className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
                               ${val === opt.v
-                                ? opt.v === 0 ? 'bg-emerald-600 border-emerald-600 text-white' :
+                                ? opt.v === 0 ? 'bg-emerald-700 border-emerald-700 text-white' :
                                   opt.v === 1 ? 'bg-amber-700 border-amber-500 text-white' :
-                                  opt.v === 2 ? 'bg-orange-500 border-orange-500 text-white' :
-                                  'bg-rose-600 border-rose-600 text-white'
+                                  opt.v === 2 ? 'bg-orange-700 border-orange-700 text-white' :
+                                  'bg-rose-700 border-rose-700 text-white'
                                 : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-900/30'}`}>
                             {opt.label}
                           </button>

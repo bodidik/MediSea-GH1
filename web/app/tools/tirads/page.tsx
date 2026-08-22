@@ -256,14 +256,14 @@ export default function TiradsPage() {
                     <span className="text-sm font-bold text-blue-900">{fna.fna}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-black text-amber-700 uppercase tracking-widest w-16">Takip:</span>
+                    <span className="text-[10px] font-black text-amber-800 uppercase tracking-widest w-16">Takip:</span>
                     <span className="text-sm font-bold text-blue-900">{fna.follow}</span>
                   </div>
                   <div className="pt-1">
                     <span className={`inline-block px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest
                       ${fna.action === "fna" ? 'bg-rose-600 text-white' :
                         fna.action === "follow" ? 'bg-amber-700 text-white' :
-                        'bg-emerald-600 text-white'}`}>
+                        'bg-emerald-700 text-white'}`}>
                       {fna.action === "fna" ? "→ İİAB ÖNERİLİR" :
                        fna.action === "follow" ? "→ TAKİP ÖNERİLİR" :
                        "→ BU BOYUTTA MÜDAHALE GEREKMİYOR"}

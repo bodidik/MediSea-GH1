@@ -15,7 +15,7 @@ const BoolBtn = ({ val, cur, set, yes, no }: { val: boolean; cur: boolean | null
     {([true, false] as const).map(v => (
       <button aria-pressed={cur === v} key={String(v)} type="button" onClick={() => set(cur === v ? null : v)}
         className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all
-          ${cur === v ? (v ? "border-emerald-600 bg-emerald-600 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
+          ${cur === v ? (v ? "border-emerald-600 bg-emerald-700 text-white" : "border-rose-500 bg-rose-700 text-white") : "border-slate-200 bg-slate-50 text-slate-500 hover:border-blue-200"}`}>
         {v ? yes : no}
       </button>
     ))}
@@ -40,8 +40,8 @@ export default function BerlinARDSPage() {
 
   const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
     slate:  { bg: "bg-slate-50",   border: "border-slate-200",  text: "text-slate-700",  badge: "bg-slate-600 text-white" },
-    amber:  { bg: "bg-amber-50",   border: "border-amber-200",  text: "text-amber-700",  badge: "bg-amber-600 text-white" },
-    orange: { bg: "bg-orange-50",  border: "border-orange-200", text: "text-orange-700", badge: "bg-orange-600 text-white" },
+    amber:  { bg: "bg-amber-50",   border: "border-amber-200",  text: "text-amber-700",  badge: "bg-amber-700 text-white" },
+    orange: { bg: "bg-orange-50",  border: "border-orange-200", text: "text-orange-700", badge: "bg-orange-700 text-white" },
     rose:   { bg: "bg-rose-50",    border: "border-rose-200",   text: "text-rose-700",   badge: "bg-rose-700 text-white" },
   };
   const c = severity ? COLOR[severity.color] : null;
