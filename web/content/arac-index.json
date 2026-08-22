@@ -435,6 +435,11 @@
   "desc": "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat"
  },
  {
+  "slug": "naloksan-infuzyon",
+  "name": "Naloksan İnfüzyonu",
+  "desc": "Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre değişir"
+ },
+ {
   "slug": "news2",
   "name": "NEWS2 Skoru",
   "desc": "Klinik kötüleşme erken uyarı sistemi"
