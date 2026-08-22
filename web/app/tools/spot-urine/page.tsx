@@ -175,8 +175,28 @@ export default function SpotUrinePage() {
   const uureabN = parseLocaleNumber(uureab);
 
   const uag = una2N > 0 && uk2N > 0 && uclN > 0 ? una2N + uk2N - uclN : null;
-  const uOsmCalc = una2N > 0 && uk2N > 0
+  /**
+   * İDRAR ÜRESİ BOŞKEN 0 SAYILAMAZ — açığı şişirip yorumu TERSİNE çeviriyordu.
+   *
+   * Hesaplanan idrar osmolalitesinin büyük bir parçası üreden gelir (tipik
+   * 100–500 mg/dL, yani 36–180 mOsm/kg). Alan boş bırakıldığında
+   * `parseLocaleNumber("")` 0 döndürüyor, hesaplanan osmolalite o kadar
+   * DÜŞÜK çıkıyor ve `ölçülen − hesaplanan` açığı aynı miktarda ŞİŞİYOR.
+   *
+   * Ölçüldü (Na 40 · K 30 · Cl 80 · ölçülen osm 350):
+   *   üre BOŞ      -> açık 210 -> "artmış NH₄⁺ atılımı" (uygun yanıt)
+   *   üre 400 mg/dL -> açık  67 -> "NH₄⁺ atılımı yetersiz" (distal RTA)
+   * Eşik 150; yani tek bir boş alan yorumu TAM TERSİNE çeviriyordu.
+   *
+   * GLUKOZ AYRI: idrarda glukoz bulunmaması normaldir (alanın kendi örneği
+   * "ör. 0"), o yüzden boş glukoz 0 sayılabilir. Ayrım DEĞERE değil, alanın
+   * fizyolojik olarak sıfır OLABİLİRLİĞİNE göre yapılıyor.
+   */
+  const ureGirildi = uureab.trim() !== "";
+  const uOsmCalc = una2N > 0 && uk2N > 0 && ureGirildi
     ? 2 * (una2N + uk2N) + uureabN / 2.8 + uglucN / 18 : null;
+  /** Açık hesaplanamıyorsa SEBEBİNİ söyle; sessiz boşluk kullanıcıyı yanıltır. */
+  const uogUreEksik = una2N > 0 && uk2N > 0 && uosm2N > 0 && !ureGirildi;
   const uog = uosm2N > 0 && uOsmCalc !== null ? uosm2N - uOsmCalc : null;
 
   const getUAGInterp = (v: number) => {
@@ -432,6 +452,17 @@ export default function SpotUrinePage() {
               );})()}
               {uOsmCalc !== null && (
                 <p className="text-[9px] font-bold text-slate-400 pl-2">Hesaplanan idrar osm: {uOsmCalc.toFixed(0)} mOsm/kg</p>
+              )}
+              {/* Sessiz boşluk yanıltır: açığın neden hesaplanmadığını söyle. */}
+              {uogUreEksik && (
+                <div className="flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+                  <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+                  <p className="text-[11px] text-amber-900 leading-relaxed">
+                    <strong>Osmolal açık için idrar üresi gerekiyor.</strong> Üre hesaplanan
+                    osmolalitenin büyük bir parçasıdır; boş bırakılırsa açık yapay olarak
+                    yüksek çıkar ve NH₄⁺ atılımı olduğundan iyi görünür.
+                  </p>
+                </div>
               )}
             </div>
 

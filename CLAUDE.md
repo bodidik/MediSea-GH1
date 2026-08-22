@@ -585,6 +585,8 @@ node scripts/bant-denetim.cjs   # cetveldeki sınır, koddaki merdivene uyuyor m
 node scripts/bant-denetim.cjs --kontrol
 node scripts/karar-denetim.cjs   # renk, kararı veren alandan mı geliyor (CI kapısı DEĞİL)
 node scripts/karar-denetim.cjs --kontrol
+node scripts/kapi-kapsam-denetim.cjs   # hesaptaki her değer kapıdan geçiyor mu (CI kapısı DEĞİL)
+node scripts/kapi-kapsam-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1162,6 +1164,60 @@ dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
 yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
+
+### Kapı BAZI değerleri sınıyor, hepsini değil — boş kalan alan sessizce 0
+
+Kalıp: `const x = <kapı> ? <ifade> : null`. İfadede geçen bir değer kapıda
+YOKSA, o alan boş bırakıldığında `parseLocaleNumber("")` 0 döndürür ve hesap
+sessizce eksik veriyle yapılır. Üç kapı da göremez.
+
+`spot-urine`da ölçüldü — idrar osmolal açığı:
+
+```
+const uOsmCalc = una2N > 0 && uk2N > 0        // ÜRE kapıda YOK
+  ? 2*(una2N+uk2N) + uureabN/2.8 + uglucN/18 : null;
+```
+
+İdrar üresi tipik 100–500 mg/dL ve hesaplanan osmolaliteye 36–180 mOsm/kg
+katıyor. Boş bırakılınca hesaplanan osmolalite o kadar düşük, **açık o kadar
+yüksek** çıkıyor. Aynı hastada (Na 40 · K 30 · Cl 80 · ölçülen osm 350):
+
+| idrar üresi | açık | yorum |
+|---|---|---|
+| **boş** | 210 | "artmış NH₄⁺ atılımı" — uygun asidoz yanıtı |
+| 400 mg/dL | 67 | "NH₄⁺ atılımı yetersiz" — distal RTA |
+
+Eşik 150; yani **tek bir boş alan klinik yorumu tam tersine çeviriyordu.**
+
+**AYRIM DEĞERE DEĞİL, ALANIN SIFIR OLABİLİRLİĞİNE BAKAR.** Aynı ifadedeki
+idrar glukozu boş bırakılabilir — idrarda glukoz bulunmaması normaldir ve
+alanın kendi örneği zaten "ör. 0". Üre için 0 fizyolojik olarak imkânsız.
+Kapı bu yüzden ham dizeye bakıyor (`uureab.trim() !== ""`), sayıya değil.
+
+**Hesaplanamıyorsa SEBEBİNİ söyle.** Sessizce boş bırakmak, kullanıcının
+değeri girdiğini sanmasına yol açar; açık yerine ne eksik olduğunu anlatan
+bir uyarı çıkıyor.
+
+`scripts/kapi-kapsam-denetim.cjs` sınıfı tarıyor: 131 araç, 112 kapılı
+ifade, **4 aday**.
+
+**ÖLÇÜT BİR KEZ DARALTILDI: kapı DOLAYLI olabiliyor.** İlk sürüm adları
+harfi harfine karşılaştırıyor ve **34 aday** veriyordu; çoğu sahteydi, çünkü
+kapı adlandırılmış bir bool:
+
+```
+const heparinTamam = sayiGirildiMi(heparin) && heparinNum > 0;
+const protaminHam  = heparinTamam ? heparinNum * 1 : null;   // sahte aday
+```
+
+`heparinTamam` metinde `heparinNum` içermez ama ONU sınar. Kapıdaki her
+tanımlayıcının tanımı bir düzey açılınca 34 → 4 oldu.
+
+**Kalan dördün ÜÇÜ de ölçümle temiz çıktı — ve sebebi ölçütün sınırını
+gösteriyor: koruma çoğu zaman İFADEDE değil GÖSTERİMDE.** `bmi` ağırlık
+boşken "–" basıyor, `kdigo-aki` güncel kreatinin boşken "–", `sodium`daki
+blok zaten `naN > 0` koşulunun içinde. Denetimin değeri kusur listesi vermek
+değil, elle bakılacak dört satırı 112 ifadeden ayırmak.
 
 ### "Okunmayan alan" YANLIŞ ölçüttü — kusur, alanın TEK YERDE atlanmasıydı
 
@@ -1955,6 +2011,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `payda-denetim` | ✓ | ✓ 2 biçim | **DÜŞTÜ — kapsam sınırı yazılı** | konumsal arg |
 | `bant-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine önce/sonra) | konumsal arg |
 | `karar-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine, 3 satır) | konumsal arg |
+| `kapi-kapsam-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine uOsmCalc) | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
