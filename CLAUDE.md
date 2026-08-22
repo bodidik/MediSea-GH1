@@ -579,6 +579,8 @@ node scripts/olu-denetim.cjs   # ekranda duran ama hiçbir şeyi değiştirmeyen
 node scripts/olu-denetim.cjs --negatif
 node scripts/bolme-denetim.cjs   # kullanıcı sayısına bölerken payda 0 olabilir mi (CI kapısı DEĞİL)
 node scripts/bolme-denetim.cjs --kontrol
+node scripts/payda-denetim.cjs   # ilan edilen tavan, şıklardan hesaplanana eşit mi (CI kapısı DEĞİL)
+node scripts/payda-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1156,6 +1158,57 @@ dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
 yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
 Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
 beklentiyi sına, kodu değil.**
+
+### Payda denetimi KAYNAKTAN yapıldı — 11 araç doğrulandı, sınıf KAPANMADI
+
+Geçen turda 34 aracın 3'ünün ölçüldüğü ortaya çıkmıştı. Kalanı tarayıcı
+sürücüsüyle taramak reddedilmişti; bu tur **kaynaktan** ölçüldü — azami puan
+şıkların statik özelliği, tarayıcı gerekmiyor.
+
+`scripts/payda-denetim.cjs` üç kova raporluyor ve **ayrıştıramadığı araç
+için sayı UYDURMUYOR**:
+
+| kova | sayı | anlamı |
+|---|---|---|
+| ilan = hesap | **11** | güçlü kanıt temiz |
+| sapan | 1 | `findrisc`, verdikti betikte (alternatif gruplar fazla sayılıyor) |
+| ayrıştırılamadı | 23 | **iş listesi, temiz listesi DEĞİL** |
+
+Doğrulanan 11: `4t-hit` 8/8 · `abcd2` 7/7 · `act` 25/25 · `bode` 10/10 ·
+`braden` 23/23 · `child-pugh` 15/15 · `flipi` 5/5 · `heart` 10/10 ·
+`isth-dic` 8/8 · `lawton-iadl` 8/8 · `nihss` 42/42 (15 grup).
+
+**İKİ BAĞIMSIZ YÖNTEM UYUŞTU.** `braden` (23) ve `4t-hit` (8) geçen tur
+tarayıcıda ELLE sürülmüştü; kaynak taraması aynı sayıları üretti. Bir
+ölçütün ilk kez güvenilir sayıldığı an bu olmalı.
+
+**TARİHSEL KONTROL DÜŞTÜ — ve sonuç betiğin başına yazıldı.** Düzeltme
+öncesi `rapid3` ve `scorad` sürüldüğünde denetim ikisini de
+"ayrıştırılamadı" diyor: yani **doğduğu iki kusuru yakalayamazdı.**
+
+Sebep yapısal, ölçüt kusuru değil: ölçüt her grubun KENDİ şık dizisi
+olduğunu varsayıyor. O iki araçta tek dizi (`FUNC_OPTS`, yoğunluk şıkları)
+N madde boyunca yeniden kullanılıyor; grup sayısı dizide değil madde
+listesinde duruyor.
+
+Denetim yine de tutuldu, çünkü **yanlış "temiz" üretmiyor** — bilmediğini
+ayrı kovaya koyuyor. Ama raporu "sınıf kapandı" diye okunamaz.
+
+**Ölçüt bu turda ÜÇ KEZ düzeltildi ve üçü de sahte bulgu üretiyordu:**
+
+- **En dıştaki diziyi grup saymak.** `const ITEMS = [{…, options:[…]}, …]`
+  yapısında tek grup görülüyor; `braden` 6 grup yerine 1, tavanı 23 yerine
+  **4** çıkıyordu. Grup, şıkları DOĞRUDAN taşıyan dizidir.
+- **Anahtar adına bağlanmak.** `braden` yalnızca `options:` yerine `opts:`
+  yazdığı için ayrıştırma dışında kalmıştı. (Aynı hata kapsam sayımında da
+  oldu: `{ label: …, pts: N }` biçiminde `pts` ilk anahtar olmadığı için
+  "8 araç pts kullanıyor" denmişti; gerçek sayı **44**.)
+- **Bool bileşenleri saymamak.** `abcd2` skoru `(age?1:0)+(bp?1:0)+cln+dur+
+  (dm?1:0)`; ölçüt yalnızca iki şık dizisini görüp 4 diyordu, ilan 7.
+
+Üçü de "sapan" olarak raporlanıyordu, yani ölçüt düzeltilmeseydi üç sahte
+kusur kovalanacaktı. **Bir tarama ilk çalıştırmada aday üretiyorsa, önce
+ölçütü sına.**
 
 ### Genel bir "aracı uçlara sür" tarayıcısı YAZILDI ve REDDEDİLDİ
 
@@ -1776,6 +1829,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `esik-etiket-denetim` | ✓ | ✓ (tohumda) | **YOK** | `cd` |
 | `olu-denetim` | ✓ | ✓ | nrs-2002 | `--kok` |
 | `bolme-denetim` | ✓ | ✓ 4 temiz | YOK — sınıfın kusuru hiç oluşmamış | `--kok` |
+| `payda-denetim` | ✓ | ✓ 2 biçim | **DÜŞTÜ — kapsam sınırı yazılı** | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
