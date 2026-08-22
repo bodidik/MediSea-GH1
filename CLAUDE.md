@@ -1138,6 +1138,57 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### `Math.abs` anlamsız bir eksiyi MAKUL BİR TALİMATA çevirir
+
+Bir hesabın sonucu eksi çıkıyorsa bu çoğu zaman "yön yanlış" demektir:
+istenen düzeltme ile seçilen aracın etkisi ters. `Math.abs` o işareti
+silince geriye tamamen makul görünen bir sayı kalıyor — ve o sayı klinik
+bir TALİMAT olarak basılıyor.
+
+`sodium` aracında iki dal birden ölçüldü, ikisi de yanlış yönde sayı
+basıyordu:
+
+| girdi | ekranda | gerçekte |
+|---|---|---|
+| Na **130**, hedef 140 | "Serbest Su Açığı **2.8 L** · 115 mL/saat" | açık değil, su **FAZLASI** var (−2.8 L) |
+| Na **120** → 130, sıvı **D5W** | "Gerekli Hacim **3.3 L** · 110 mL/saat" | D5W sodyumu **düşürür**, hedef yükseltmek |
+
+İkincisi daha tehlikeli: sodyumu 120 olan hastaya, sodyumu yükseltmek için,
+litre başına −3.04 mEq/L etki eden bir sıvıdan 3.3 litre verme talimatı.
+
+**Ekran İKİSİNDE DE kendisiyle çelişiyordu** ve çelişkiyi kimse söylemiyordu:
+aynı panelde "Hedef Delta **+10** mEq/L" ile "1 L sıvı → **−3.04** mEq/L"
+yan yana duruyordu. Eşik–etiket sınıfının aritmetik tarafındaki hâli.
+
+**Çare işareti göstermek DEĞİL, sayıyı hiç basmamak.** Eksi bir hacim
+gösterseydin kullanıcı yine bir sayı okurdu. Yön uyuşmuyorsa hacim ve hız
+hesaplanmaz; yerine ne olduğunu ve ne yapılacağını söyleyen bir kart çıkar.
+Aynı çözüm serinin başka bir aracında zaten vardı — `bikarbonat-infuzyon`
+`hedefDusuk` ile tam bunu yapıyor. **Yeni bir kusur bulunca serideki komşu
+araçlara bak: çözüm çoktan yazılmış olabilir.**
+
+Koruma İKİ katmanlı konuldu: gösterim yön bayrağına bağlandı VE `Math.abs`
+hesaptan kaldırıldı. Yalnızca gösterimi kapatmak, ileride bir gerileme
+kusuru sessizce diriltebilirdi.
+
+**Kapsam ölçüldü ve dar: 131 aracın yalnızca `sodium`'unda `Math.abs` var.**
+Çıkarmayla açık hesaplayan tek öteki araç `bikarbonat-infuzyon` ve onun
+kapısı zaten vardı; `potasyum-replasman`, `fosfat-replasman`,
+`kalsiyum-infuzyon`, `magnezyum-infuzyon` hedef kavramı taşımıyor (doz
+tabanlı), yani yön sorunu oluşamıyor.
+
+**Negatif kontrol iki senaryoda birden yapıldı ve şart:** düzeltme,
+MEŞRU vakayı bastırmamalı.
+
+| senaryo | sonuç |
+|---|---|
+| Na 160 → hedef 140 (gerçek hipernatremi) | açık **5.5 L**, hız 115 mL/saat, süre 48 saat |
+| Na 120 → 130, **%3 NaCl** (doğru sıvı) | hacim **1.0 L**, hız 34 mL/saat |
+
+Aritmetiği de ayrıca doğrulandı: 38.5 × (160/140 − 1) = 5.5 ve 10 / 9.94 =
+1.0. Bir kapı koyduktan sonra "hâlâ çalışıyor mu" sorusunun cevabı
+"panel çıkıyor" değil, **"basılan sayı doğru mu"** olmalı.
+
 ### Girdi kanalı BİR TANE DEĞİL — adres parametresi de bir kanal
 
 Yukarıdaki makullük kapıları klavye girdisini karşılıyor. Ama 11 araç

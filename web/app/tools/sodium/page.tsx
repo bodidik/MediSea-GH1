@@ -94,8 +94,11 @@ export default function SodiumPage() {
   const hoursNeeded = deltaNeeded && litersNeeded
     ? Math.abs(deltaNeeded) / maxRate * 24
     : null;
-  const mlPerHour = litersNeeded && hoursNeeded
-    ? (Math.abs(litersNeeded) * 1000) / hoursNeeded
+  /* Hız yalnızca hacim POZİTİFKEN hesaplanır. Gösterim zaten yön denetimine
+   * bağlı (aşağıdaki `sividYonTers`); burası ikinci katman — `Math.abs`
+   * kaldırıldığı için eksi bir hacim sessizce hıza dönüşemez. */
+  const mlPerHour = litersNeeded && litersNeeded > 0 && hoursNeeded
+    ? (litersNeeded * 1000) / hoursNeeded
     : null;
 
   // Free water deficit (hypernatremia)
@@ -105,7 +108,31 @@ export default function SodiumPage() {
   const hyperMaxRate = 10; // mEq/L/day
   const hyperDelta = naN > 0 && hyperTargetN > 0 ? naN - hyperTargetN : null;
   const hyperHours = hyperDelta ? Math.abs(hyperDelta) / hyperMaxRate * 24 : null;
-  const hyperMlPerHour = fwd && hyperHours ? (Math.abs(fwd) * 1000) / hyperHours : null;
+  const hyperMlPerHour = fwd && fwd > 0 && hyperHours ? (fwd * 1000) / hyperHours : null;
+
+  /**
+   * YÖN DENETİMİ — `Math.abs` anlamsız bir eksiyi makul bir TALİMATA çeviriyordu.
+   *
+   * İki dal da ölçüldü ve ikisi de yanlış yönde sayı basıyordu:
+   *
+   *   Serbest su açığı — Na 130, hedef 140 (hasta hipernatremik DEĞİL):
+   *     fwd = TBW × (130/140 − 1) = −2.8 L, yani su FAZLASI var.
+   *     Ekran `Math.abs` ile "Serbest Su Açığı 2.8 Litre · 115 mL/saat" diyordu:
+   *     sodyumu 130 olan hastaya serbest su verme talimatı.
+   *
+   *   Adrogué hacmi — Na 120, hedef 130, sıvı D5W:
+   *     hedef +10 mEq/L ama D5W litre başına −3.04 mEq/L yapıyor, yani seçilen
+   *     sıvı sodyumu TERS yöne götürüyor. litersNeeded = −3.3 L.
+   *     Ekran "Gerekli Hacim 3.3 Litre · 110 mL/saat" diyordu.
+   *
+   * İkisinde de ekran kendisiyle çelişiyordu (yanında "+10 mEq/L gerekli" ile
+   * "1 L → −3.04 mEq/L" yan yana duruyordu) ama çelişkiyi kimse söylemiyordu.
+   *
+   * Kural: yön uyuşmuyorsa SAYI BASILMAZ. Aynı çözüm serinin başka bir aracında
+   * zaten var (`bikarbonat-infuzyon` → `hedefDusuk`).
+   */
+  const suFazlasi = fwd !== null && fwd <= 0;
+  const sividYonTers = litersNeeded !== null && litersNeeded < 0;
 
 
   return (
@@ -261,7 +288,23 @@ export default function SodiumPage() {
                   </div>
                 </div>
 
-                {deltaNeeded !== null && litersNeeded !== null && mlPerHour !== null && (
+                {/* Seçilen sıvı sodyumu TERS yöne götürüyorsa hacim/hız basılmaz. */}
+                {sividYonTers && deltaNeeded !== null && (
+                  <div className="border-t border-slate-100 pt-3">
+                    <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start gap-3">
+                      <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+                      <p className="text-[11px] text-amber-900 leading-relaxed">
+                        <strong>Seçilen sıvı sodyumu ters yöne götürüyor.</strong> Hedef{" "}
+                        {deltaNeeded > 0 ? "yükseltmek" : "düşürmek"} ({deltaNeeded > 0 ? "+" : ""}
+                        {deltaNeeded.toFixed(0)} mEq/L) ama bu sıvı litre başına{" "}
+                        {adroguePerL?.toFixed(2)} mEq/L etki yapıyor. Hacim ve hız bu yüzden
+                        hesaplanmadı — hedef sodyumu ya da kullanılacak sıvıyı gözden geçirin.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {!sividYonTers && deltaNeeded !== null && litersNeeded !== null && mlPerHour !== null && (
                   <div className="border-t border-slate-100 pt-3 space-y-3">
                     <div className="grid grid-cols-3 gap-3">
                       <div className="bg-slate-50 rounded-2xl p-4 text-center">
@@ -271,7 +314,7 @@ export default function SodiumPage() {
                       </div>
                       <div className="bg-slate-50 rounded-2xl p-4 text-center">
                         <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Gerekli Hacim</div>
-                        <div className="text-2xl font-black text-blue-900">{Math.abs(litersNeeded).toFixed(1)}</div>
+                        <div className="text-2xl font-black text-blue-900">{litersNeeded.toFixed(1)}</div>
                         <div className="text-[9px] font-bold text-slate-400">Litre</div>
                       </div>
                       <div className="bg-emerald-900 rounded-2xl p-4 text-center">
@@ -318,12 +361,30 @@ export default function SodiumPage() {
             {fwd !== null && tbw && naN > 0 && hyperTargetN > 0 && (
               <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Serbest Su Açığı Hesabı</p>
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="bg-blue-900 rounded-2xl p-4 text-center">
-                    <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
-                    <div className="text-3xl font-black text-white">{Math.abs(fwd).toFixed(1)}</div>
-                    <div className="text-[9px] font-bold text-amber-400">Litre</div>
+
+                {/* Hasta hedefin ALTINDAysa açık değil FAZLA vardır; sayı basılmaz. */}
+                {suFazlasi && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start gap-3">
+                    <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+                    <p className="text-[11px] text-amber-900 leading-relaxed">
+                      <strong>Serbest su açığı yok.</strong>{" "}
+                      {naN < hyperTargetN
+                        ? `Girilen sodyum (${naN.toFixed(0)} mEq/L) hedefin (${hyperTargetN.toFixed(0)} mEq/L) altında, yani bu hastada serbest su fazlası var.`
+                        : `Girilen sodyum hedefe eşit (${naN.toFixed(0)} mEq/L), yani düzeltilecek bir açık yok.`}{" "}
+                      Açık ve infüzyon hızı bu yüzden hesaplanmadı — hipernatremi düzeltmesi için
+                      sodyumun hedefin üstünde olması gerekir.
+                    </p>
                   </div>
+                )}
+
+                <div className={`grid gap-3 ${suFazlasi ? 'grid-cols-1' : 'grid-cols-3'}`}>
+                  {!suFazlasi && (
+                    <div className="bg-blue-900 rounded-2xl p-4 text-center">
+                      <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Serbest Su Açığı</div>
+                      <div className="text-3xl font-black text-white">{fwd.toFixed(1)}</div>
+                      <div className="text-[9px] font-bold text-amber-400">Litre</div>
+                    </div>
+                  )}
                   <div className="bg-slate-100 rounded-2xl p-4 text-center">
                     <div className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">TBW</div>
                     <div className="text-3xl font-black text-blue-900">{tbw.toFixed(1)}</div>
@@ -343,15 +404,18 @@ export default function SodiumPage() {
                   const selInfNa = INFUSATES[fwFluid].na;
                   const adrogueHyper = tbw ? (selInfNa - naN) / (tbw + 1) : null;
                   return adrogueHyper !== null ? (
-                    <div className="grid grid-cols-2 gap-3 pt-2 border-t border-slate-100">
+                    <div className={`grid gap-3 pt-2 border-t border-slate-100 ${suFazlasi ? 'grid-cols-1' : 'grid-cols-2'}`}>
                       <div className="bg-slate-50 rounded-2xl p-4 text-center">
                         <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">1L sıvı → Na değişimi</div>
                         <div className="text-2xl font-black text-blue-900">{adrogueHyper.toFixed(2)} mEq/L</div>
                       </div>
-                      <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
-                        <div className="text-[9px] font-black text-amber-700 uppercase tracking-widest mb-1">Max süre (10 mEq/gün)</div>
-                        <div className="text-2xl font-black text-amber-800">{hyperHours?.toFixed(0)} saat</div>
-                      </div>
+                      {/* Düzeltme yapılmayacaksa düzeltme SÜRESİ de basılmaz. */}
+                      {!suFazlasi && (
+                        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
+                          <div className="text-[9px] font-black text-amber-700 uppercase tracking-widest mb-1">Max süre (10 mEq/gün)</div>
+                          <div className="text-2xl font-black text-amber-800">{hyperHours?.toFixed(0)} saat</div>
+                        </div>
+                      )}
                     </div>
                   ) : null;
                 })()}
