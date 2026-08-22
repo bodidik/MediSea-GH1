@@ -41,11 +41,26 @@ const path = require('path');
  *
  * Kapsamı daraltmak, "0 kusur" ile "hiç bakmadım"ı aynı görüntüye sokuyor.
  */
+/*
+ * `--kok <dizin>` — TARİHSEL KONTROL İÇİN ŞART.
+ *
+ * Kökler bir dönem yalnızca `__dirname/..` üzerinden çözülüyordu; betik
+ * başka bir ağaca YÖNLENDİRİLEMİYORDU. Sonuç: git'ten alınan düzeltme öncesi
+ * sürümlerle sınamak imkânsızdı ve "tarihsel kontrol" sanılan çalıştırma
+ * aslında GERÇEK DEPOYU yeniden tarıyordu — 529 dosya, aynı çıktı.
+ *
+ * Öteki denetimler `cd` ile yönlendirilebiliyordu; bu unutulmuştu. Kör bir
+ * denetimi kör olduğu için değil, SINANAMADIĞI için fark edememek daha kötü.
+ */
+const KOK_ARG = (() => {
+  const i = process.argv.indexOf('--kok');
+  return i !== -1 && process.argv[i + 1] ? path.resolve(process.argv[i + 1]) : path.join(__dirname, '..');
+})();
 const KOKLER = ['app', 'lib', 'components', 'hooks']
-  .map((d) => path.join(__dirname, '..', d))
+  .map((d) => path.join(KOK_ARG, d))
   .filter((d) => fs.existsSync(d));
 const TEKIL = ['middleware.ts', 'auth.ts', 'auth.config.ts']
-  .map((f) => path.join(__dirname, '..', f))
+  .map((f) => path.join(KOK_ARG, f))
   .filter((f) => fs.existsSync(f));
 
 /* ── yardımcılar ─────────────────────────────────────────────────────── */
@@ -87,8 +102,27 @@ function etiketler(s, ad) {
   return out;
 }
 
+/*
+ * NEGATİF KONTROL DİZİNİ — tohum `app/` ALTINA YAZILMAZ.
+ *
+ * Bu betik uzun süre tohumu `app/components/` altına yazıp siliyordu. Çalışan
+ * `next dev` o dosyayı derlemeye alıyor; silinince postcss'in bağımlılık
+ * listesi bayat kalıyor ve SİTENİN TAMAMI 500 veriyor (ana sayfa dahil).
+ * Ölçüldü, bir turu bütünüyle harcadı ve hata bir an "yönetici bileşenleri
+ * bozuk" sanıldı. Öteki üç denetim geçici dizine taşınmıştı; bu unutulmuş.
+ *
+ * Kapsam eklemesi YALNIZCA --negatif kipinde yapılır; unutulursa denetim
+ * sessizce "körleşmiş" der.
+ */
+let NEGATIF_DIZIN = null;
+
 function tsxDosyalari() {
   const out = [...TEKIL];
+  if (NEGATIF_DIZIN && fs.existsSync(NEGATIF_DIZIN)) {
+    for (const f of fs.readdirSync(NEGATIF_DIZIN)) {
+      if (f.endsWith('.tsx')) out.push(path.join(NEGATIF_DIZIN, f));
+    }
+  }
   for (const kok of KOKLER) {
     (function yuru(d) {
       for (const e of fs.readdirSync(d, { withFileTypes: true })) {
@@ -117,7 +151,7 @@ function denetle() {
   let olculenEtiket = 0;
 
   for (const p of dosyalar) {
-    const yol = path.relative(path.join(__dirname, '..'), p).split(path.sep).join('/');
+    const yol = path.relative(KOK_ARG, p).split(path.sep).join('/');
     const ham = fs.readFileSync(p, 'utf8');
     const s = yorumSil(ham);
     const satirNo = (i) => s.slice(0, i).split('\n').length;
@@ -239,11 +273,19 @@ function yaz(sonuc) {
 // Kusur bulamayan bir denetim, düzeltilmiş bir yüzeyden ayırt edilemez.
 // --negatif, bilerek bozuk bir dosya bırakıp yakalandığını gösterir.
 function negatifKontrol() {
-  const tohum = path.join(__dirname, '..', 'app', 'components', '_arayuz-denetim-tohum.tsx');
+  const os = require('os');
+  NEGATIF_DIZIN = fs.mkdtempSync(path.join(os.tmpdir(), 'medisea-arayuz-'));
+  // Dosya adı `_` ile BAŞLAMAMALI: `_` süzgeci olan denetimlerde testin kendisi
+  // eleniyor ve kontrol "körleşmiş" diyor (saydamlik-denetim'de tam bu oldu).
+  const tohum = path.join(NEGATIF_DIZIN, 'zz-arayuz-denetim-tohum.tsx');
   const icerik = [
     'export function Tohum() {',
+    '  // BOZUK KODLAMA sinifi da tohumda: en cok bulgu ureten sinif oydu',
+    '  // (6 dosyada 129 satir) ve negatif kontrolu YOKTU.',
+    '  const bozuk = "BÃ¶lÃ¼m baÅŸlÄ±ÄŸÄ±";',
     '  return (',
     '    <form>',
+    '      <span>{bozuk}</span>',
     '      <button onClick={() => {}}>Gönder</button>',
     '      <a href="/x"><button type="button">İç</button></a>',
     '      <img src="/y.png" />',
@@ -259,11 +301,12 @@ function negatifKontrol() {
   try {
     sonuc = denetle();
   } finally {
-    fs.unlinkSync(tohum);
+    fs.rmSync(NEGATIF_DIZIN, { recursive: true, force: true });
+    NEGATIF_DIZIN = null;
   }
 
-  const bulunan = new Set(sonuc.kusur.filter((k) => k.yol.includes('_arayuz-denetim-tohum')).map((k) => k.tur));
-  const beklenen = ['formda-typesiz-buton', 'ic-ice-tiklanabilir', 'altsiz-gorsel', 'relsiz-blank'];
+  const bulunan = new Set(sonuc.kusur.filter((k) => k.yol.includes('zz-arayuz-denetim-tohum')).map((k) => k.tur));
+  const beklenen = ['bozuk-kodlama', 'formda-typesiz-buton', 'ic-ice-tiklanabilir', 'altsiz-gorsel', 'relsiz-blank'];
   const eksik = beklenen.filter((b) => !bulunan.has(b));
 
   console.log('negatif kontrol — tohum dosyası eklendi, tarandı, silindi');

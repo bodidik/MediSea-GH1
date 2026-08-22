@@ -1368,6 +1368,38 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### `arayuz-denetim` SINANAMIYORDU — kör olduğu için değil, ölçülemediği için
+
+Denetimlerin gerçek geçmiş kusurlarla sınanması sırasında bu betik direndi:
+`--kok` yokmuş, kökleri yalnızca `__dirname/..` üzerinden çözüyormuş. Yani
+başka bir ağaca yönlendirilemiyor; git'ten alınan düzeltme öncesi sürümlerle
+sınamak İMKÂNSIZDI.
+
+Daha kötüsü, sınadığımı sandığım çalıştırma sessizce **gerçek depoyu**
+tarıyordu: geçici dizine altı dosya konup çalıştırıldığında rapor "529 tsx"
+diyordu. Sayıyı okumasam "tarihsel kontrol geçti" diye yazacaktım.
+
+**Kör bir denetimi kör olduğu için değil, SINANAMADIĞI için fark edememek
+daha kötü.** `--kok` eklendi; artık öteki denetimler gibi yönlendirilebiliyor.
+
+Tarihsel kontrol sonra kesin geçti: `5bd197f~1` sürümlerinde **129 bozuk
+satır** buluyor — belgede kayıtlı sayıyla birebir aynı.
+
+### Aynı betikte iki kusur daha: tohum `app/` altına yazıyordu
+
+- **Tohum `app/components/` altına yazılıyordu.** Belgede yazılı ve bir turu
+  bütünüyle harcayan tuzak: çalışan `next dev` dosyayı derlemeye alıyor,
+  silinince SİTENİN TAMAMI 500 veriyor. Öteki üç denetim `os.tmpdir()`e
+  taşınmıştı; bu unutulmuş. Taşındı, `app/` altına hiçbir şey yazılmıyor.
+- **`bozuk-kodlama` sınıfının negatif kontrolü YOKTU.** Tohum dört sınıfı
+  sınıyordu; en çok bulgu üreten sınıf (6 dosyada 129 satır) listede değildi.
+  Eklendi — beş sınıfın beşi de yakalanıyor.
+
+**Denetim yazarken sorulacak üçüncü soru:** "kusur buluyor mu" ve "yanlış
+pozitif üretiyor mu" yetmiyor; **"başka bir ağaca yönlendirilebiliyor mu"**
+da sorulmalı. Yönlendirilemeyen bir denetim tarihsel olarak sınanamaz, yani
+körleştiğinde kimse fark etmez.
+
 ### Düzeltilen denetimin üçüncü bulgusu: veriyi SİLEN kipin etiketi 3.67'ydi
 
 Geçen turda ulaşılabilir ama ölçülmemiş bırakılan üç aday ölçüldü.
