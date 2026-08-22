@@ -17,9 +17,38 @@
  *   potasyum-replasman:89/90 — ÖLÇÜLDÜ, kusur değil. Süre 1 basamağa,
  *     hacim 1 mL'ye yuvarlanıyor; 55 mEq için 1375/5.5 = 250 mL/saat tam
  *     çıkıyor. Basamak yeterince ince.
- *   Kalan 11 aday HENÜZ ÖLÇÜLMEDİ ve "kusur" DENMİYOR: bikarbonat-infuzyon,
- *     bmr, fomepizol, fosfat-replasman (2), kalsiyum-infuzyon,
- *     magnezyum-infuzyon (2), tromboliz-doz (3).
+ *   Kalan adayların HEPSİ karara bağlandı — kusur yok. Ayrıntı aşağıda.
+ *
+ * ── AYIRT EDİCİ KURAL: BASAMAK, DEĞERİN BÜYÜKLÜĞÜNE GÖRE ─────────────
+ *
+ * Taşma tek başına kusur değil. Belirleyici olan, yuvarlama basamağının
+ * değerin BÜYÜKLÜĞÜNE oranı:
+ *
+ *   sedasyon  0.15 -> 0.2   (1 basamak, değer 1'in ALTINDA)  -> %33  KUSUR
+ *   kalsiyum  43.75 -> 44   (tam sayı, değer ~44)            -> %0.6 değil
+ *
+ * Yani şüphe, yuvarlanan değerin basamağa YAKIN ya da ondan küçük
+ * olabildiği yerlerde. Bu kaynaktan hesaplanamaz; ölçüt aday üretir.
+ *
+ * ── ADAYLARIN VERDİKTİ — YENİDEN KOVALAMAYIN ────────────────────────
+ *
+ *   kalsiyum-infuzyon:253 — ÖLÇÜLDÜ. 62.5 kg × 0.7 = 43.75 -> 44 mg/sa,
+ *     hız 43 mL/sa; tam değerle 42.8 olurdu, fark %0.5. Üstelik TUTARLI:
+ *     araç 44 mg/sa vermeni söylüyor, pompa da onu vermeli.
+ *   tromboliz-doz:151/153/154 — taşma BURADA GEREKLİ. bolus ve kalan,
+ *     ekranda yazan toplamdan türetilmezse parçalar bütünü tutmaz
+ *     (9 + 81 = 90). Toplamdan türetmek iç tutarlılığı garanti ediyor.
+ *   bikarbonat-infuzyon:95 · magnezyum-infuzyon:359/360 — hastaya verilen
+ *     şey YUVARLANMIŞ dozdur (tam mEq, 0.01 g); ampul sayısı ve mEq
+ *     karşılığı ondan türemeli. Taşma doğru yönde.
+ *   fosfat-replasman:218/220 — 0.1 mmol / 0.1 mEq basamağı, değerler
+ *     onlarca birim; hata ~%0.1.
+ *   bmr:26 — 1 kcal basamağı, değer ~1600; hata <%0.06.
+ *   potasyum-replasman:89/90 — süre 1 basamak, hacim 1 mL; 55 mEq için
+ *     1375/5.5 = 250 tam çıkıyor.
+ *
+ * fomepizol bir dönem listedeydi ve SAHTEYDİ: eşleşme JSDoc satırının `*`
+ * önekinden geliyordu (çarpma sanıldı). Yorumlar artık eleniyor.
  */
 const fs = require('fs');
 const path = require('path');
@@ -71,7 +100,16 @@ for (const d of fs.readdirSync(KOK, { withFileTypes: true })) {
   const f = path.join(KOK, d.name, 'page.tsx');
   if (!fs.existsSync(f)) continue;
   arac++;
-  const s = fs.readFileSync(f, 'utf8').replace(/\r\n/g, '\n');
+  /**
+   * YORUMLAR ELENİR. Bu depoda JSDoc satırları `*` ile başlıyor ve ölçüt onu
+   * ÇARPMA sanıyordu: `fomepizol`da " * doz" dizisi "bir şey × doz" gibi
+   * okundu ve sahte aday üretti. Yorumlar ayrıca kusurları ANLATIYOR, yani
+   * ölçütün kendi belgesini yakalaması da olası.
+   */
+  const s = fs.readFileSync(f, 'utf8')
+    .replace(/\r\n/g, '\n')
+    .replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '))
+    .replace(/(^|[^:])\/\/[^\n]*/g, (m, p1) => p1 + ' '.repeat(Math.max(0, m.length - p1.length)));
   /* `const X = ... yuvarla(...)` ya da `Math.round(...)` ile tanımlananlar */
   const adlar = [...s.matchAll(/const\s+(\w+)\s*=\s*[^;]*(?:yuvarla|Math\.round)\(/g)].map((m) => m[1]);
   for (const ad of adlar) {

@@ -1195,7 +1195,39 @@ HAM değeri kullanır.
 `scripts/yuvarlama-denetim.cjs` sınıfı tarıyor: 131 araç, 85 yuvarlanmış
 değer, **13 aday**. İkisi karara bağlandı (`sedasyon` düzeltildi,
 `potasyum-replasman` ölçüldü ve basamağı yeterince ince: 55 mEq için
-1375/5.5 = 250 tam çıkıyor), **11'i henüz ölçülmedi ve "kusur" DENMİYOR.**
+1375/5.5 = 250 tam çıkıyor), kalanı sonraki turda kapatıldı.
+
+#### Kalan adaylar karara bağlandı — sınıfın tek gerçek kusuru `sedasyon`du
+
+**Ayırt edici kural: basamak, DEĞERİN BÜYÜKLÜĞÜNE göre.** Taşma tek başına
+kusur değil; belirleyici olan yuvarlama basamağının değere oranı.
+
+| araç | yuvarlama | değer | hata |
+|---|---|---|---|
+| `sedasyon-infuzyon` | 0.15 → 0.2 | **1'in altında** | **%33 → KUSUR** |
+| `kalsiyum-infuzyon` | 43.75 → 44 | ~44 | %0.5 → değil |
+
+Yani şüphe, yuvarlanan değerin basamağa yakın ya da ondan küçük
+olabildiği yerlerde. Bu kaynaktan hesaplanamaz — ölçüt aday üretir.
+
+`kalsiyum-infuzyon` ÖLÇÜLDÜ (62.5 kg × 0.7 = 43.75 → 44 mg/sa, hız 43 mL/sa;
+tam değerle 42.8). Fark %0.5 ve üstelik **tutarlı**: araç 44 mg/sa vermeni
+söylüyor, pompa da onu vermeli.
+
+**Bazı yerlerde taşma GEREKLİ.** `tromboliz-doz`da bolus ve kalan, ekranda
+yazan toplamdan türetilmezse parçalar bütünü tutmaz (9 + 81 = 90). Aynı
+şekilde `bikarbonat-infuzyon` ve `magnezyum-infuzyon`da hastaya verilen şey
+yuvarlanmış dozdur; ampul sayısı ondan türemeli. Taşmayı toptan "kusur"
+saymak bu üçünü bozardı.
+
+Kalanlar basamak yeterince ince olduğu için temiz: `fosfat-replasman` ~%0.1,
+`bmr` <%0.06, `potasyum-replasman` tam çıkıyor.
+
+**`fomepizol` bir dönem listedeydi ve SAHTEYDİ:** eşleşme JSDoc satırının
+`*` önekinden geliyordu — ölçüt onu çarpma sandı. Yorumlar artık eleniyor;
+bu depoda yorumlar kusurları ANLATTIĞI için ölçütün kendi belgesini
+yakalaması da olasıydı.
+
 
 ### Birim TABANI ilaç bazında değişiyor — vazoaktif ve sedasyon doğru ayırıyor
 
