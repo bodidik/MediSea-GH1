@@ -123,7 +123,7 @@ export default function NEWS2Page() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-               <span className="text-amber-500 text-xs">☀️</span>
+               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">NEWS2</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-1">Ulusal Erken Uyarı Skoru (Royal College of Physicians)</p>

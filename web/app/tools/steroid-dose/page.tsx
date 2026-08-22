@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import ToolShare from "@/app/tools/components/ToolShare";
 
 type Steroid = {
   name: string;
@@ -45,7 +46,7 @@ export default function SteroidDosePage() {
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">🦋</div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 text-xs">☀️</span>
+              <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Steroid Eşdeğer Doz</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Kortikosteroid Dönüşüm Tablosu</p>
@@ -95,7 +96,12 @@ export default function SteroidDosePage() {
           ))}
         </div>
 
-        <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
+        <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
+          {/* Paylaş düğmesi 131 aracın 129'unda vardı; burada ve infusion'da
+              unutulmuştu — araç kabuğu her araçta aynı olmalı. */}
+          <div className="flex justify-center border-b border-slate-100 pb-4">
+            <ToolShare params={{ from, dose }} />
+          </div>
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">

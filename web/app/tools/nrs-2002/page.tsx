@@ -326,6 +326,16 @@ export default function NRS2002Page() {
             seçili gelmez ve eksik alan varken sınıflama basılmaz. Skor ≥ 3 ise
             beslenme planı başlatılır; risk saptanmazsa haftalık tarama tekrarlanır.
           </p>
+          {/* Klinik uyarı satırı 131 aracın 130'unda vardı, yalnızca burada
+              eksikti. Metin kabuğun ortak metni; araca özgü klinik iddia
+              eklenmedi. */}
+          <div className="flex items-start gap-3">
+            <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
+            <p className="text-[11px] text-slate-700 leading-relaxed">
+              Bu tarama eğitim ve referans amaçlıdır; sonucu hastanın klinik seyri ve
+              yerel beslenme protokolleriyle birlikte değerlendirin.
+            </p>
+          </div>
         </div>
       </div>
     </div>

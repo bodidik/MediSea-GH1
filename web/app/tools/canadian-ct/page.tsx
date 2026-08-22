@@ -88,7 +88,7 @@ export default function CanadianCTPage() {
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">🩻</div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 text-xs">☀️</span>
+              <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Kanada BT Kural</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Minör Kafa Travmasında BT Endikasyonu · GCS 13–15</p>

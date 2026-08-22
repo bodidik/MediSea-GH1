@@ -2333,7 +2333,66 @@ canlıda çalışan API ucu var (`daily-program`, `quiz/history`, `quiz/today`)
 ve o uçlar "uydurma veri dönme" düzeltmesinden geçmiş. Silmek mi bağlamak mı
 sorusu ürün kararı — SENDE-KALANLAR 27. madde.
 
-### Süsleme emojisi: 416 öge ölçüldü, TOPLU süpürme yapılmadı
+### Araç kabuğu tutarlılığı: üç parça, 131 araçta ölçüldü
+
+Her araç sayfası aynı kabuğu taşımalı. Üç parça ayrı ayrı sayıldı ve üçünde de
+boşluk çıktı — hiçbiri kod hatası değil, hiçbirini üç kapı göremez:
+
+| parça | önce | eksik olan |
+|---|---|---|
+| `ToolShare` paylaş düğmesi | 129/131 | `infusion` · `steroid-dose` |
+| klinik uyarı satırı | 130/131 | `nrs-2002` |
+| `☀️` süsleme glifinde `aria-hidden` | 15/124 | **109 araç** |
+
+İlk ikisi unutulmuş tek tek; üçüncüsü sistematik. `☀️` her araçta `<h1>`in
+hemen önünde duruyor, yani anlamı başlık taşıyor ve glif ekran okuyucuda saf
+gürültü: 109 araç sayfasında başlıktan önce "güneş emojisi" okunuyordu.
+
+**Süpürme yalnızca KATI ŞEKLE uygulandı:** glif span'ının ardından gelen ilk
+boş olmayan satır `<h1` ile başlıyorsa süslemedir. 109 adayın 109'u bu şekle
+uydu, başka biçim SIFIR çıktı — yani insan kararı gerektiren hiçbir glif
+kümede yoktu. Kalıp zaten depoda vardı (son turlarda yazılan araçlarda
+`aria-hidden` konmuş); süpürme yeni bir karar almıyor, eskiyi hizalıyor.
+
+**Kalan glif SÜPÜRÜLMEDİ ve "temiz" DENMİYOR:** her araçta bir de ikon rozeti
+var (`🧪` `💉` `🦋` `🍏`) ve `aria-hidden` taşımıyor. Ayrı bir şekil, ayrı
+doğrulama ister.
+
+**Ölçüt büyük/küçük harfe duyarlıydı ve bir kusur UYDURDU.** İlk tarama
+`egfr`i "klinik uyarısı yok" diye işaretledi; uyarı oradaydı ve "**K**linik
+kararlarda" diye başlıyordu. Türkçe metinde desen yazarken `-i` bayrağını
+unutmak, belgedeki "desen tahmin etme, gerçek dizeyi oku" kuralının ucuz hâli.
+
+**Negatif kontrol toplu süpürmede ŞART ve şekli belli:** gizledikten sonra
+başlığın ve uyarı metninin erişilebilirlik ağacında HÂLÂ olduğunu ölç.
+Ölçüldü — dört araçta da `aria-hidden` alt ağaçları silindikten sonra hem
+`<h1>` metni hem uyarı cümlesi duruyor, yani gizleme yanlış ögeye konmadı.
+
+Süpürme bitince ölçüt **elemesiz** bir kez daha çalıştırıldı: 124/124.
+
+### Tek bir iframe'i birden çok adres için yeniden kullanma
+
+`f.src = yol` atayıp beklemek yetmiyor: eski belge yüklenme boyunca yerinde
+kalıyor ve "yüklendi mi" ölçütü (`h1` var mı, öge sayısı > 50) ESKİ sayfa
+tarafından anında karşılanıyor. Sonuç: döngüdeki her adres bir öncekinin
+sayfasını ölçüyor.
+
+Ölçüldü — dört farklı araç sayfası için de aynı `h1` döndü
+(`eGFR (CKD-EPI 2021)`). İşaret, belgede zaten yazılı olanın aynısı:
+**beklenen fark çıkmıyorsa ölçüme güvenme.**
+
+Çare iki katmanlı: her ölçüme TAZE bir iframe kur ve bekleme koşuluna
+`d.location.pathname === yol` kimlik kontrolünü ekle. Yalnızca içerik
+kontrolü (h1 var mı) yetmez; yalnızca pathname de yetmez (gövde dolmadan
+güncelleniyor) — ikisi birden gerekiyor.
+
+### Süsleme emojisi: 416 öge ölçüldü — 109'u sonradan süpürüldü
+
+> **GÜNCELLEME.** Aşağıdaki karar (toplu süpürme yapma) hâlâ geçerli, ama
+> ölçüt daraltılabilen bir alt küme için sürüldü: araç sayfalarındaki `☀️`
+> glifi `<h1>`in HEMEN önünde duruyor, yani şekli tartışmasız süsleme.
+> 109 araçta kapatıldı; ayrıntısı bir üstteki bölümde. Kalan kümede karar
+> hâlâ insanın: araç ikonu rozeti, durum rozetleri, boş durum ikonları.
 
 Kural yazılı: bilgi taşımayan glif `aria-hidden="true"` almalı — hem ekran
 okuyucudaki gürültüyü kaldırır hem kontrast kapsamından düşer. Uygulaması

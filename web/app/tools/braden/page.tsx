@@ -108,7 +108,7 @@ export default function BradenPage() {
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">🛏️</div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 text-xs">☀️</span>
+              <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Braden Skalası</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Bası Yarası Risk Değerlendirmesi · 6 Alt Ölçek · 6–23</p>

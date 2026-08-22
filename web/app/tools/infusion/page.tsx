@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import ToolShare from "@/app/tools/components/ToolShare";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * İnfüzyon Hesapları Gündüz Modu (Sakin Deniz) Versiyonu
@@ -69,7 +70,7 @@ export default function InfusionPage() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-               <span className="text-amber-500 text-xs">☀️</span>
+               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">İNFÜZYON HESAPLARI</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Hız ve Dozaj Hesaplama Asistanı</p>
@@ -154,9 +155,15 @@ export default function InfusionPage() {
           </div>
         </div>
 
+        {/* Paylaş düğmesi 131 aracın 129'unda vardı; bu araçta ve
+            steroid-dose'da unutulmuştu — araç kabuğu her araçta aynı olmalı. */}
+        <div className="flex justify-center">
+          <ToolShare params={{ rate: rateMlHr, drop: dropFactor, kg: weightKg, doz: doseMgKgMin, kons: concentrationMgMl }} />
+        </div>
+
         {/* ALT PANEL: UYARI VE GÜVENLİK */}
         <div className="bg-blue-900/5 p-6 rounded-[2rem] border border-blue-900/10 flex items-start gap-4">
-          <span className="text-amber-500 text-xl animate-pulse">⚠️</span>
+          <span aria-hidden="true" className="text-amber-500 text-xl animate-pulse">⚠️</span>
           <p className="text-[10px] text-blue-900 font-bold uppercase tracking-[0.15em] leading-relaxed italic">
             Bu hesaplama eğitim ve referans amaçlıdır. Klinik uygulamada ilaç protokollerindeki spesifik hedef dozlar, dilüsyon oranları ve pompa kalibrasyonları mutlaka çift kontrol edilmelidir.
           </p>

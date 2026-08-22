@@ -119,7 +119,7 @@ export default function PsiPortPage() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 text-xs">☀️</span>
+              <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">PSI / PORT Skoru</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Toplum Kökenli Pnömoni — 30 Günlük Mortalite Tahmini</p>

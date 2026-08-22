@@ -73,7 +73,7 @@ export default function EgfrPage() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-               <span className="text-amber-500 text-xs">☀️</span>
+               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">eGFR (CKD-EPI 2021)</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Irk Faktörü İçermeyen eGFR Analizi</p>
@@ -130,7 +130,7 @@ export default function EgfrPage() {
             <ToolShare params={shareParams} />
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-amber-500 text-lg">ℹ️</span>
+            <span aria-hidden="true" className="text-amber-500 text-lg">ℹ️</span>
             <p className="text-[9px] text-blue-950 font-bold uppercase tracking-[0.12em] leading-relaxed italic">
               Bu hesaplayıcı, KDIGO tarafından önerilen ve ırk katsayısını dışlayan en güncel CKD-EPI 2021 formülünü kullanır. Klinik kararlarda albüminüri ve hastanın bireysel durumu mutlaka göz önünde bulundurulmalıdır.
             </p>

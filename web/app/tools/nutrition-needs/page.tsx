@@ -49,7 +49,7 @@ export default function NutritionNeedsPage() {
           <div className="w-14 h-14 bg-white shadow-sm border border-slate-200 rounded-2xl flex items-center justify-center text-3xl">⚖️</div>
           <div>
             <div className="flex items-center gap-2">
-               <span className="text-amber-500 text-xs">☀️</span>
+               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Nütrisyonel Reçete</h1>
             </div>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-1">Enerji ve Protein Gereksinimi</p>
@@ -136,7 +136,7 @@ export default function NutritionNeedsPage() {
               </ul>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-amber-500 text-lg">⚠️</span>
+              <span aria-hidden="true" className="text-amber-500 text-lg">⚠️</span>
               <p className="text-[9px] text-blue-900 font-bold uppercase tracking-[0.1em] leading-relaxed italic">
                 Bu hesaplama ESPEN genel önerilerini yansıtır. Hastanın klinik gidişatına, organ fonksiyonlarına ve laboratuvar parametrelerine göre bireyselleştirilmelidir.
               </p>
