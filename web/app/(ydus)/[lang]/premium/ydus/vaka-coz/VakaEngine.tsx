@@ -111,7 +111,20 @@ function AdimKarti({
     if (!cevapVerildi) return base;
     if (harf === adim.dogru) return { ...base, background: '#f0fbf5', borderColor: '#80c898', borderWidth: '1.5px' };
     if (harf === secim)    return { ...base, background: '#fff0f0', borderColor: '#e08080', borderWidth: '1.5px' };
-    return { ...base, opacity: .45, borderColor: '#e8f0f8' };
+    /* SAYDAMLIK KALDIRILDI — ölçümle. Cevaptan sonra dokunulmayan şıklara
+       `opacity` konuyordu ve altındaki metni eziyordu: şık metni 3.05, harf
+       rozeti 2.02 kontrasta düşüyordu (VakaEngine'de 2.67 ve 1.86). Renkler
+       zaten iyiydi; kusuru kapsayıcı saydamlığı üretiyordu.
+
+       Bu bir ÖĞRENME yüzeyi: cevaptan sonra çeldiricileri okumak işin ta
+       kendisi. Ayrım zaten başka kanallarda var — doğru şık yeşil, seçilen
+       yanlış şık kırmızı zeminli ve ikisi de ✓/✗ rozeti taşıyor. Dokunulmayan
+       şık düz beyaz kalıyor; saydamlık ayırt ediciliğe hiçbir şey eklemiyordu.
+
+       Not: `saydamlik-denetim.cjs` bunu GÖREMEZ — className değil satır içi
+       stil. Satır içi stil kullanan yüzeylerde renk ve saydamlık elle
+       ölçülmeli. */
+    return { ...base, background: '#fbfcfe', borderColor: '#e8f0f8' };
   }
 
   function harfDairesi(harf: string): React.CSSProperties {

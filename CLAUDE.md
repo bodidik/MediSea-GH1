@@ -1366,6 +1366,61 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Premium motorlar ölçüldü: cevaptan SONRA çeldiriciler 2.67–3.05'e düşüyordu
+
+Premium yüzeylerin kontrastı bir dönem ölçülmüştü ama saydamlığı göremeyen
+ölçütle. Olgun ölçüt (alfa bindirmesi, ata opacity çarpımı, degrade, mutlak
+konum, geçişler kapalı, sayfa başına negatif kontrol) ilk kez sürüldü.
+
+**Kapı içerik düzeyinde, rota düzeyinde DEĞİL.** `/tr/premium/ydus/*` sayfaları
+200 dönüyor ve pano, liderlik, profil tam render ediliyor; motorlar ise
+`AccessGate` ile korunuyor ve doğru parametreyle bile **"Erişim Kısıtlı"**
+basıyor. Parametresiz istekte üçü de hata kartı gösteriyor — yani motor değil
+hata kartı ölçülmüş oluyor. Geçici bir rota motorları gerçek içerikle
+render etti (bitince silindi, kalıntı 0).
+
+Bulgu — hepsi CEVAP VERİLDİKTEN SONRA görünüyor:
+
+| yüzey | öge | ölçülen |
+|---|---|---|
+| QuizEngine | şık metni | **3.05** |
+| QuizEngine | harf rozeti | 2.02 |
+| VakaEngine | şık metni | 2.67 |
+| VakaEngine | harf rozeti | 1.86 |
+
+Sebep: dokunulmayan şıklara **satır içi** `opacity: 0.5` / `0.45` konuyordu.
+Renkler zaten iyiydi (metin 14.24) — kusuru kapsayıcı saydamlığı üretiyordu.
+
+**`saydamlik-denetim.cjs` bunu GÖREMEZ**: className değil satır içi stil.
+Satır içi stil kullanan yüzeylerde renk ve saydamlık elle ölçülmeli.
+
+Karar tarafı da önemli: bu bir ÖĞRENME yüzeyi ve cevaptan sonra çeldiricileri
+okumak işin ta kendisi. Ayrım zaten başka kanallarda var (doğru şık yeşil,
+seçilen yanlış kırmızı, ikisinde de ✓/✗ rozeti); saydamlık ayırt ediciliğe
+hiçbir şey eklemiyordu. Kaldırıldıktan sonra ölçüldü: **3 ayrı zemin/çerçeve
+çifti + 2 rozet duruyor**, yani tasarım düzleşmedi.
+
+### "Gizle, altına bak" kuralının EKSİK yarısı: ögenin KENDİ zemini
+
+Mutlak konumlu ögede gerçek zemini bulmak için ögeyi gizleyip altına bakmak
+doğru — ama **ögenin kendi opak zemini varsa altına BAKILMAZ.** Ölçüldü:
+profil sayfasındaki `LEVEL 1` rozeti `bg-yellow-500` taşıyor ve koyu bir
+kartın üstünde duruyor; altına bakan ölçüm rozetin kendi sarısını atlayıp
+koyu kartı zemin sandı ve **9.31 olan kontrastı 1.00** gösterdi.
+
+**1.00 değeri neredeyse her zaman ölçüm artefaktıdır** — aynı rengin kendisiyle
+karşılaştırılması. Gördüğünde ikinci yöntemle sına.
+
+### Negatif kontrol tohumu ZEMİNE UYARLANMALI
+
+Sabit renkli bir tohum (`#a8c4e0`) açık yüzeyde kusur sayılıyor ama KOYU
+yüzeyde geçiyor. Premium taramasında bu oldu: yedi sayfanın yedisinde de
+negatif kontrol ateşlemedi (`0/7`) ve "0 kusur" sonucu ölçütün kör olmasından
+mı geldiği anlaşılamadı.
+
+Çare: tohumu gerçek bir metin ögesinin yanına koy ve rengini **o ögenin
+zeminine yakın** seç (`v + (v < 128 ? +26 : -26)`). Uyarlandıktan sonra 7/7.
+
 ### Sürücü ONAY KUTUSUNU tanımıyordu — 24 araç ölçüm dışı kalmıştı
 
 Sonuç durumu taraması ilk turda 128 aracın 104'ünü sürebildi; 24'ü "sürülemedi"
