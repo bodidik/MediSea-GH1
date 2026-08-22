@@ -1138,6 +1138,54 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### Ondalık katsayı taşıyan araçların hepsi sürüldü — sınıf temiz
+
+Ölçek hatası sınıfının kalan yüzeyi: yayımlanmış bir regresyon/denklemi
+aktaran araçlar. Ölçüt basit — kaynakta ondalık katsayıyla çarpım ara
+(`0.957 * x`), Tailwind opaklıklarını (`bg-x/10`) ele. **Onbir araç** çıktı
+ve hepsi tek tek yayımlanmış formülle karşılaştırıldı:
+
+`asdas` (CRP ve ESR varyantları) · `bmr` (Mifflin-St Jeor) · `charlson`
+(10 yıllık sağkalım üsteli) · `gnri` · `hba1c-eag` · `ktv` · `meld-na`
+(düzeltildi) · `pni` (Onodera) · `rts` (RTS + TRISS lojistiği) · `sodium`
+(düzeltildi) · `unit-converter` (HbA1c NGSP↔IFCC ana denklemi).
+
+**İKİ KEZ "kusur buldum" sandım, ikisinde de BENİM BEKLENTİM yanlıştı.**
+`rts`teki `0.7705` bir RTS katsayısı değil, TRISS lojistiğinin `b1`i ve
+dosyada öyle etiketli; `asdas`ın ESR satırındaki `0.069`/`0.079` da
+yayımlanmış ASDAS-ESR katsayıları (ben yuvarlanmış varyantı hatırlıyordum).
+Belgedeki kural bu turda iki kez işledi: **beklenti tutmadığında önce
+beklentiyi sına, kodu değil.**
+
+### Genel bir "aracı uçlara sür" tarayıcısı YAZILDI ve REDDEDİLDİ
+
+Payda ilan eden 34 aracı süpürmek için tek bir sürücü denendi. Çalışmadı ve
+**kullanılmadan atıldı** — çünkü "0 kusur" ile "0 ölçüm"ü ayırt edemiyordu.
+
+İki ayrı körlük ölçüldü:
+
+- **Düğmenin başındaki sayıyı puan sanmak.** Etiket de sayıyla başlıyorsa
+  yanlış okur: `4t-hit`te `"1" + "5–10. günle uyumlu…"` birleşip **15**
+  olarak ayrıştırıldı ve grup tavanları `[2,1,15,2,1,2,1,0]` çıktı.
+- **Ölçüm penceresi.** Aynı sürücü `4t-hit` için `0` bildirdi; o araç ELLE
+  sürüldüğünde **8 / 8** basıyor. Yani sürücünün raporu kusur uydururdu.
+
+Üçüncü sınır: araçlar tek bir denetim türü kullanmıyor. `findrisc`te
+`aria-pressed` düğme SIFIR — 23 radyo var, üstelik `name` ve sayısal
+`value` taşımıyorlar. Tek sürücüyle 34 aracı sürmek mümkün değil.
+
+**Pozitif kontrol olmasaydı bu sürücünün raporu yayımlanırdı.** Bilinen
+cevaplı iki araçla sınandı: `braden` geçti (6→23), `4t-hit` DÜŞTÜ. Yeni bir
+sürücü yazan, önce cevabını bildiği bir araçta sınasın.
+
+**Elle doğrulanan üç araç temiz:**
+
+| araç | ulaşılabilir | ilan | not |
+|---|---|---|---|
+| `braden` | 6–23 | 6–23 | 6 grup, tavanlar [4,4,4,4,4,3] |
+| `4t-hit` | 0–8 | / 8 puan | 4 grup × 3 şık |
+| `findrisc` | 0–26 | / 26 | 4+3+4+2+1+2+5+5, bantlar yayımlanmış |
+
 ### Yayımlanmış formülde ÖLÇEK ÇARPANI düşer ve hiçbir kapı görmez
 
 `meld-na`daki eksik `× 10` tek seferlik bir kaza değilmiş. Aynı sınıf iki
@@ -1155,6 +1203,14 @@ başlıkta aralık geçiyorsa, en yüksek seçimlerle sürülüp o sayıya gerç
 | `rapid3` | 0–30 | **0–50** | işlev toplamı (0–30) 3'e BÖLÜNMÜYORDU |
 | `scorad` | 0–103 | **0–85** | subjektif bileşen (0–20) 10'a BÖLÜNÜYORDU |
 | `das28` | — | — | temiz (iki formül de doğru, eşikler yayımlanmış) |
+
+> **KAPSAM DÜZELTMESİ — o "üç araç" YANLIŞTI.** Ölçüt yalnızca `(0–N)` ve
+> `N puan arası` biçimlerini arıyordu. Payda ilanının en yaygın biçimi
+> `/ N puan` ise hiç görülmüyordu: yeniden sayıldı, **34 araç** paydasını
+> ilan ediyor. Yani "sınıf kapandı" derken 34'ün 3'ü ölçülmüştü.
+>
+> Bulunan iki kusur gerçek ve düzeltmeleri geçerli; yanlış olan KAPSAM
+> iddiasıydı. Kalan 31 araç ölçülmedi ve "temiz" DENMİYOR.
 
 **İki kusur ters yönde ve ikisi de tehlikeli.**
 
