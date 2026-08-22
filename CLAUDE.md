@@ -1368,6 +1368,40 @@ aday üretmek için iyi; uygulamadan önce elle gözden geçir.
 `LangSwitch` düğmeleri `router.push` ile gidiyor — orada "basılı" değil
 "şu an bulunulan" doğru olanı.
 
+### Dakika/saat birim tuzağı: 8 araç tarandı, sınıf temiz
+
+`lipid-emulsiyon`daki 60 katlık birim tuzağı sweeplendi: dakika başına hız
+basan 8 araç var, beşi saatlik karşılığı da veriyor. Kalan üçü ölçüldü ve
+üçü de kusur DEĞİL:
+
+| araç | neden kusur değil |
+|---|---|
+| `egfr` | `mL/dk` bir ÖLÇÜM birimi (mL/min/1.73m²), pompa hızı değil |
+| `sofa` | `µg/kg/dk` bir GİRDİ etiketi — çalışan pompadan okunan doz |
+| `status-epileptikus` | hem hız sınırını hem hastaya özgü EN KISA SÜREYİ veriyor (1400 mg → 28 dk) |
+
+Üçüncüsü aslında en iyi çözüm: süre vermek birim dönüşümü gerektirmiyor.
+
+### `` boşluksuz birleşen metinde ÇALIŞMAZ
+
+React'te komşu ögelerin metni boşluksuz birleşiyor: ekranda "En az süre  28 dk"
+görünen şey `textContent`te **"En az süre28 dk"** oluyor. `28` deseni
+tutmuyor, çünkü '2'den önceki karakter harf.
+
+Ölçüldü: `status-epileptikus` "28 dk"yı basıyordu ama tarama "hiç geçmiyor"
+dedi ve bir an araç kusurlu sanıldı. Metin ararken ya `` kullanma, ya da
+`textContent` yerine öge öge oku.
+
+### Girdi SIRASINI varsayma, ETİKETİNİ oku
+
+`news2` varsayılanlarında 120 ve 80 görünce "nabız 120, tansiyon 80" diye
+okundu ve skorun 0 olması aritmetik hata sanıldı. Etiketler okununca tersi
+çıktı: **120 sistolik KB, 80 nabız** — ikisi de normal ve skor 0 doğru.
+
+Negatif kontrol aynı ölçümde: KB 40 yapılınca toplam 3'e çıkıyor, yani skor
+canlı. Bir sayının hangi alana ait olduğunu sıradan çıkarmak, bu depoda
+üçüncü kez yanlış sonuç verdi.
+
 ### Makullük tavanı ARACA ÖZGÜDÜR — genel bir sayı yanlış olur
 
 `naloksan-infuzyon`a "250 mL/saat üstünü basma" koruması konuldu, çünkü orada
@@ -1385,6 +1419,14 @@ birimden değil.
 üretmesi (500 mL/saat) yeni bir sınıf açtı: **boş olmayan varsayılanı olan
 araçlar açılır açılmaz bir sonuç basıyor.** Kaynakta sayıldı — 27 araçta
 sayısal varsayılan var. Hepsi ölçüldü.
+
+> **KAPSAM DÜZELTMESİ — o "27" EKSİKTİ.** Ölçüt `useState("400")` biçimini
+> arıyordu; `useState<string>(s?.get("pf") || "400")` (URL parametresi yedekli)
+> biçimini HİÇ görmüyordu. Üç araç bu yüzden hiç ölçülmemişti: `sofa`,
+> `news2`, `meld-na` — üstelik ilk ikisi belgede "boş formda maksimum skor"
+> kusuru kayıtlı olanlar. Sonradan ölçüldü, üçü de temiz: SOFA 0, NEWS2 0
+> (risk "Düşük", doğru), MELD-Na 1; hiçbiri yanlış bir iddia basmıyor.
+> Düzeltilmiş ölçütün pozitif kontrolü: `sofa` yakalanmalı.
 
 **Hiçbiri dokunulmamış varsayılandan klinik SINIFLAMA basmıyor.** İki aday
 çıktı, ikisi de yanlış pozitifti:
