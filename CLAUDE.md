@@ -4087,6 +4087,87 @@ metnin sarmalayıcının sonlandırıcısını içermediğini kontrol et.** Çar
 basit — yorum metnini ayrı bir dosyaya yaz, betik onu okusun.
 
 
+### Premium giriş sayfası: plan SABİT yazılıydı, sayfa da çıkmazdı
+
+Kullanıcı bildirdi (premium girişi geliştirilmeli). `/tr/premium` ölçüldü ve
+iki ağır kusur çıktı — biri gözle hiç görünmüyordu.
+
+**1. Plan sabit yazılıydı; ödeme yapan üye premium göremiyordu.**
+
+```
+const plan: PlanType = "free";   // useSession var ama yalnızca status alınıyor
+```
+
+`auth.config.ts` planı token'a ve oturuma YAZIYOR, yani değer orada duruyordu
+ama okunmuyordu. Premium üye de bu sayfada "Free" rozeti ve yedi kilitli kart
+görüyordu. **Aynı sabit `/profile`ta da vardı** (`useState<PlanType>("free")`).
+
+Okuma tek yere alındı: `app/lib/plan.ts`. İki yerde ayrı yazılsaydı yine
+ayrışırdı. Tanınmayan plan değeri en dar role düşüyor — bilinmeyen bir plana
+yüksek rozet vermek, olmayan bir erişimi VAAT ETMEK olurdu.
+
+**2. Sayfanın TAMAMINDA sıfır bağlantı, sıfır düğme.** `(ydus)` grubu
+AppShell almadığı için header/nav landmark'ı da yok. Yedi kilitli kart aynı
+cümleyi yedi kez tekrarlıyor, hiçbiri tıklanabilir değil ve üyelik almanın
+yolu hiçbir yerde yazmıyordu. Tek çıkış tarayıcının geri tuşuydu.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| görünür bağlantı | **0** | **10** |
+| tekrarlanan kilit cümlesi | 7 | 0 |
+| özdeş `<h3>` "Özel İçerik" | 7 | 0 |
+| kilitli kart | ölü bilgi kutusu | `/uyelik` bağlantısı, ayırt edilebilir adla |
+| birincil eylem | yok | "Planları gör" (211×44) |
+| çıkış yolu | yok | başlıkta siteye dönüş + "Ücretsiz kütüphane" |
+
+Kilitli kartın adı konusuyla birlikte veriliyor ("Aralıklı Tekrar Radarı:
+üyelikle açılır — planları gör"); yedi kart aksi hâlde ekran okuyucuda
+birbirinin aynı okunurdu.
+
+**Rozet sözlüğü ŞEMAYLA HİZALANDI.** `lib/models/User.ts` şeması
+`free | member | premium` üretiyor; rozet listesi ise `free | premium | pro`
+idi. İki yönde birden ayrışıyordu: `member` planlı kullanıcının rozeti YOKTU
+(ve "Free" görünüyordu), `pro` ise veritabanının hiç ürettiği bir değer
+değildi. Ölçüt: **rozet listesi şemayı kapsamalı.**
+
+**Modül SAYISI bilerek yazılmadı** ("yedi modül" denmiyor) — kart eklenince
+metin bayatlardı. Belgedeki "sayı yazma, saydır" kuralının metin tarafı.
+
+**BELİRLEYİCİ NEGATİF KONTROL — geçici dev rotası, veritabanına YAZMADAN.**
+Gerçek bir premium hesapla giriş yapmak yazma gerektirirdi. Bunun yerine
+`SessionProvider`a sahte premium oturum verilip sayfa render edildi:
+
+| ölçüt | ücretsiz | premium |
+|---|---|---|
+| kilit şeridi | var | **YOK** |
+| kilitli kart | 7 | **0** |
+| `/uyelik` bağlantısı | 9 | **0** (ödeme yapmışa satış gösterilmiyor) |
+| modül içerikleri | gizli | **üçü de görünüyor** |
+
+Rota silindi; `/zz-olcum-premium` 404, ana sayfa ve `/tr/premium` 200,
+derleme hatası izi yok (geçici rota silmenin dev sunucusunu öldürme riski
+belgede kayıtlı — bu turda oluşmadı, ayrıca doğrulandı).
+
+**KOŞUM DENENDİ VE TUTMADI — sebebi belgede zaten yazılı.** Önce `window.fetch`
+sarmalanıp `/api/auth/session` sahte premium döndürülmek istendi. İşe
+yaramadı: iframe `about:blank`ten `/tr/premium`e GEZİNİNCE JS bağlamı
+sıfırlanıyor ve `window` üzerindeki sarmalayıcı kayboluyor. Oturum gibi
+SAYFA KURULURKEN okunan bir şeyi koşumla değiştirmek istiyorsan gezinme
+sonrası enjeksiyon çalışmaz; geçici rota gerekiyor.
+
+**KENDİ EKLEDİĞİM KUSURU ÖLÇÜM YAKALADI.** Geri bağlantısına önce
+`hidden sm:inline-block` verilmişti. Ücretsiz kullanıcıda kilit şeridi çıkış
+veriyor, ama PREMIUM kullanıcıda şerit de yok — o kombinasyonda sayfa mobilde
+YİNE sıfır bağlantıya düşerdi. Yani düzelttiğim kusuru, düzeltirken bir alt
+kümede geri getirmiştim. Ders: bir çıkış yolu eklerken **onu gizleyen her
+koşulu** ve o koşulun ötekilerle KESİŞİMİNİ ölç.
+
+Ölçüldü — 320 / 375 / 1280 üçünde de geri bağlantısı görünür (adı
+`aria-label` ile korunuyor, dar ekranda yalnızca ok çiziliyor), yatay taşma
+yok, 10 görünür bağlantı. Kontrast 34 ögede ölçüldü (degrade zemin
+`background-image`den okunarak) — **kusur 0**.
+
+
 ### Oturum yüzeyi sürüldü — biri gerçek kusur, kalanı sağlam
 
 Kullanıcının bildirdiği çıkış kusuru, hiç sürülmemiş bir yüzeyde çıkmıştı.
