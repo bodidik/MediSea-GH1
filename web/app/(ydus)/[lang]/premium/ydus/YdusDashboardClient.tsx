@@ -7,7 +7,9 @@ import {
   Stethoscope, ChevronRight, Lock, PlayCircle, Award,
   FlaskConical, Droplet, Bone, Wind, Pill, HeartPulse, Microscope, Bug, Filter,
 } from 'lucide-react';
+import { useSession } from "next-auth/react";
 import PlanBadge from "@/components/PlanBadge";
+import { planCoz } from "@/app/lib/plan";
 import { useUser } from "@/app/(ydus)/context/UserContext";
 import GeriSayim from "@/app/components/GeriSayim";
 import CalismaPlani from "@/app/components/CalismaPlani";
@@ -75,8 +77,29 @@ export default function YdusDashboardClient({
   const progressPct = overall.totalTopics > 0
     ? Math.round((overall.readyTopics / overall.totalTopics) * 100)
     : 0;
-  // Bu rota zaten premium erişim gerektirdiğinden (bkz. plan.guard.js) rozet sabit gösterilir
-  const plan = "premium" as const;
+  /**
+   * ROZET OTURUMDAN OKUNUYOR — bir dönem sabit "premium" yazıyordu.
+   *
+   * Eski yorum şunu diyordu: "Bu rota zaten premium erişim gerektirdiğinden
+   * (bkz. plan.guard.js) rozet sabit gösterilir." İKİ İDDİA DA YANLIŞTI:
+   *   - `plan.guard.js` diye bir dosya YOK (depoda arandı, bulunamadı).
+   *   - `middleware.ts` yalnızca `/kayseritip/*`, `/admin/*` ve
+   *     `/api/kayseritip/*` eşliyor; bu rota kapılı DEĞİL.
+   *
+   * Ölçüldü: HİÇ giriş yapmamış bir ziyaretçi bu sayfada kendi hesabında
+   * "Premium" rozeti görüyordu (sayfa 200, erişim kısıtı yok, 16 bağlantı).
+   * Sahip OLUNMAYAN bir erişimi vaat etmek, eksik göstermekten daha ağır:
+   * kullanıcı ödediğini sanıp ödemiyor ya da hakkı olmayan bir şeyi bekliyor.
+   *
+   * Aynı sınıfın TERS yönü `/tr/premium` ve `/profile` sayfalarındaydı: orada
+   * plan sabit "free" yazılıydı ve ödeme yapmış üye "Free" görüyordu. İkisi de
+   * aynı kökten — oturumda duran değeri okumak yerine sabit yazmak.
+   *
+   * Genel ders: bir sabitin yanındaki GEREKÇEYİ de doğrula. Yorum bir kapıya
+   * atıf yapıyordu ve o kapı hiç var olmamıştı.
+   */
+  const { data: session } = useSession();
+  const plan = planCoz(session?.user);
   const featured = newest[0];
   const strip = newest.slice(featured ? 1 : 0);
 
