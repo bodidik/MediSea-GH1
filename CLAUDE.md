@@ -589,6 +589,8 @@ node scripts/kapi-kapsam-denetim.cjs   # hesaptaki her değer kapıdan geçiyor 
 node scripts/kapi-kapsam-denetim.cjs --kontrol
 node scripts/yuvarlama-denetim.cjs   # yuvarlanmış değer ikinci hesaba giriyor mu (CI kapısı DEĞİL)
 node scripts/yuvarlama-denetim.cjs --kontrol
+node scripts/eksik-alan-denetim.cjs   # tablo alanı çoğunlukta dolu, birkaçında boş mu (CI kapısı DEĞİL)
+node scripts/eksik-alan-denetim.cjs --kontrol
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1255,6 +1257,38 @@ bağlı ("Hasta ağırlığı", "Doz", "İlaç miktarı", "Toplam hacim"). Belge
 "kaynakta `htmlFor` aramak yanıltır" uyarısının ayna hâli: saran etiket
 aramak da tek başına yanıltıyor. Adı HESAPLAT — aria-label → aria-labelledby
 → label[for] → saran label sırasıyla.
+
+### Eksik alan ölçütü betiğe alındı — ve ilk çalıştırmada KENDİ yorumuma takıldı
+
+"Bir tablo alanı kayıtların çoğunda doluysa, boş kalanları say" ölçütü
+`scripts/eksik-alan-denetim.cjs` olarak yazıldı: 131 araç, 105 kayıt dizisi.
+
+**İlk çalıştırma `status-epileptikus`ta `tavanMg`i "eksik" gösterdi — oysa
+bir tur önce eklenmişti.** Sebep ölçütün körlüğüydü: alanın hemen üstüne
+konan `/* … */` bloğu anahtarı önceki virgülden ayırıyor ve `,\s*anahtar:`
+deseni tutmuyor. Yani denetim, kusuru ANLATAN yorumu okuyup kusur sanıyordu.
+
+Yuvarlama denetiminde de aynı tuzağa düşülmüştü (JSDoc `*` öneki çarpma
+sanılmıştı). **Bu depoda yorumlar kusurları anlatıyor; kaynak tarayan her
+ölçüt yorumları ELEMEK zorunda.** Elendikten sonra iki kayıt da listeden
+düştü — düzeltmenin doğrulaması da bu oldu.
+
+**Kalan iki aday KOD KUSURU DEĞİL, içerik eksiği.** Render tarafı ikisinde
+de doğru (`{end.uyari && …}`, `{ilac.not && …}`) — alan yoksa hiçbir şey
+basılmıyor, boş kap ya da bozuk düzen yok:
+
+| araç | alan | eksik olan |
+|---|---|---|
+| `magnezyum-infuzyon` | `uyari` (3/4) | "astım" endikasyonu |
+| `vazoaktif-infuzyon` | `not` (5/8) | adrenalin · dopamin · dobutamin |
+
+İkincisi dikkat çekici: noradrenalin kartı **"Tercihen santral yoldan.
+Ekstravazasyon doku nekrozu yapar."** diyor; aynı tehlike adrenalin ve
+dopamin için de geçerli ama o kartlar sessiz. Kullanıcı noradrenalinden
+adrenaline geçtiğinde uyarıyı kaybediyor.
+
+Metni YAZMADIM: klinik uyarı içeriktir ve içerik kullanıcının sorumluluğu.
+Ölçüldü, yerleri ve gerekçesi yazıldı, bekleyen içerik işi olarak duruyor.
 
 ### Tavan alanı VAR ama iki kayıtta BOŞ — aracın kendi içinde tutarsızlık
 
@@ -2198,6 +2232,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `karar-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine, 3 satır) | konumsal arg |
 | `kapi-kapsam-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine uOsmCalc) | konumsal arg |
 | `yuvarlama-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (sedasyon-infuzyon:224) | konumsal arg |
+| `eksik-alan-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (status-epileptikus tavanMg) | konumsal arg |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur
