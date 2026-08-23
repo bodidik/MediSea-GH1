@@ -4027,6 +4027,66 @@ duruyordu. Bir yüzeyin "çalışmadığı" sonucuna varmadan önce, ölçütün
 yüzeyin GERÇEK şeklini tanıdığını doğrula.
 
 
+### Mobil menü de ESC ile kapanmıyordu — ve ESC'nin KATMANLANMASI ölçüldü
+
+Arama penceresindeki ESC boşluğu kapatıldıktan sonra aynı ölçüt mobil menüye
+uygulandı. Aynı boşluk oradaydı.
+
+**Önce sağlam olanlar ölçüldü** (geçmiş bir kusur düzeltilmiş):
+
+| ölçüt | sonuç |
+|---|---|
+| düğmenin adı | "Menü" |
+| `aria-expanded` | açılınca false → true |
+| dokunma hedefi | **44×44** (tercih edilen boyut) |
+| açılıyor mu | görünür bağlantı 2 → 14 |
+| düğmeyle kapanıyor mu | evet, 14 → 2 |
+
+**Kusur: ESC hiç işlenmiyordu** — `defaultPrevented false`, menü açık
+kalıyordu. Kapanışta odak da açan düğmeye dönmüyordu.
+
+**KAPSAM ÖLÇÜLDÜ, VARSAYILMADI.** Panel kuralı üç şey ister (odak panele
+girsin · ESC kapatsın · rol+ad). Ama bu menü MODAL DEĞİL ve ölçüm bunu
+gösterdi: panel 210px yüksekliğinde ve sayfayı ÖRTMÜYOR
+(`yükseklik > innerHeight × 0.7` yanlış), Tab sırası da doğal — düğme
+indeks 4, ilk menü bağlantısı indeks 5, yani bitişik. Bu yüzden odak TUZAĞI,
+`aria-modal` ve açılışta odak taşıma YAPILMADI; gereksiz olurdu. Eklenen
+şey ESC + kapanışta odağın düğmeye dönmesi + `aria-controls`/panel `id`.
+
+Kural: panel kuralını uygularken önce **panelin modal olup olmadığını ölç.**
+Örten bir çekmece ile satır içi bir açılır menü aynı şeyi gerektirmiyor.
+
+**ESC'NİN KATMANLANMASI — bu turun asıl ölçümü.** Artık İKİ yüzey ESC
+kullanıyor (arama penceresi ve menü). Menü işleyicisi bilerek
+`e.defaultPrevented` kontrol ediyor: zaten karşılanmış bir ESC ikinci kez
+tüketilmiyor. Ölçüldü (1280px — ikisi de görünür):
+
+| adım | arama | menü |
+|---|---|---|
+| başlangıç | açık | açık |
+| **1. ESC** | **kapandı** | açık KALDI |
+| **2. ESC** | — | **kapandı** |
+
+Yani ESC her seferinde TEK yüzey kapatıyor. Bu kontrol olmasaydı tek tuşla
+ikisi birden kapanır ve kullanıcı menüyü kaybederdi. **Aynı tuşu ikinci bir
+yüzeye bağlarken bu ölçümü yap** — tek yüzeyle sınamak yeterli değil.
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| menü KAPALIYKEN ESC yutuluyor mu | HAYIR (`false`) |
+| düğme hâlâ açıyor mu | evet |
+| kapanışta odak nereye gitti | açan düğmeye ("Menü") |
+
+**Betik yazarken iki kez aynı aileye takıldım.** Geçen tur JSDoc içindeki
+`**5 lb**/inç` dizisi `*/` üretip blok yorumu erken kapatmıştı; bu tur
+yorum metnindeki ters tırnak, betiğin şablon dizesini erken kapattı.
+İkisi de aynı ders: **yorum metnini bir sarmalayıcı dize içinden yazarken,
+metnin sarmalayıcının sonlandırıcısını içermediğini kontrol et.** Çare
+basit — yorum metnini ayrı bir dosyaya yaz, betik onu okusun.
+
+
 ### Oturum yüzeyi sürüldü — biri gerçek kusur, kalanı sağlam
 
 Kullanıcının bildirdiği çıkış kusuru, hiç sürülmemiş bir yüzeyde çıkmıştı.
