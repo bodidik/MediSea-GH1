@@ -13,8 +13,33 @@ export default function BmiPage() {
   const w = parseLocaleNumber(weight);
 
   const bmi    = h > 0 ? Math.round((w / (h / 100) ** 2) * 10) / 10 : 0;
-  const devine = h > 0 ? Math.round(((sex === "m" ? 50 : 45.5) + 2.3 * ((h - (sex === "m" ? 152.4 : 152.4)) / 2.54)) * 10) / 10 : 0;
-  const hamwi  = h > 0 ? Math.round(((sex === "m" ? 48 : 45.5) + 2.7 * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
+  /**
+   * İDEAL AĞIRLIK — iki formül, ikisi de cinsiyete bağlı.
+   *
+   * Devine (1974): erkek 50 kg, kadın 45.5 kg + İKİSİNDE DE inç başına 2.3 kg.
+   * Hamwi  (1964): erkek 106 lb + 6 lb/inç (≈48 + 2.7), kadın 100 lb +
+   *                5 lb/inç (≈45.5 + 2.2).
+   *
+   * Hamwi satırında bir dönem TABAN dallanıyor ama ARTIŞ dallanmıyordu:
+   * `(sex === "m" ? 48 : 45.5) + 2.7 * …` — yani kadına erkek katsayısı
+   * uygulanıyordu. Dal vardı ama yarımdı.
+   *
+   * Ölçüldü (kilo 70):
+   *   erkek 170 cm  Devine 65.9  Hamwi 66.7   (doğru)
+   *   kadın 170 cm  Devine 61.4  Hamwi 64.2 → doğrusu 60.7
+   *   kadın 180 cm  Devine 70.5  Hamwi 74.8 → doğrusu 69.4
+   *
+   * Ekran kendi içinde çelişiyordu ve ayırt edici işaret buydu: erkekte
+   * Hamwi Devine'in 0.8 kg ÜSTÜNDE, kadında 2.8 kg üstünde çıkıyordu —
+   * oysa doğrusu 0.7 kg ALTINDA. İki formülün sırası cinsiyete göre ters
+   * dönemez; dış bir kaynağa bakmadan görülebilen bir tutarsızlıktı.
+   *
+   * Sapma boyla büyüyor (170 cm'de 3.5 kg, 180 cm'de 5.4 kg) ve aracın
+   * kendi uyarısı ideal ağırlığın "ilaç dozlaması ve solunum parametreleri"
+   * için kullanıldığını söylüyor.
+   */
+  const devine = h > 0 ? Math.round(((sex === "m" ? 50 : 45.5) + 2.3 * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
+  const hamwi  = h > 0 ? Math.round(((sex === "m" ? 48 : 45.5) + (sex === "m" ? 2.7 : 2.2) * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
   const ibw    = Math.max(devine, 0);
 
   const getBmiCat = () => {
