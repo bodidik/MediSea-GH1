@@ -1151,6 +1151,79 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### KARDEŞ ARAÇLA KARŞILAŞTIR — `gnri` cinsiyet dalını atlıyordu
+
+Bu turun kusurunu bulan şey ne bir denetim betiği ne de kaynak okumaktı:
+**aynı işi yapan öteki aracı açmak.**
+
+GNRI ideal ağırlığı Lorentz formülünden alır ve bölen cinsiyete bağlıdır
+(erkek `/4`, kadın `/2.5`). `gnri` koşulsuz `/4` yazıyordu ve araçta
+**cinsiyet alanı hiç yoktu** — yani varsayım ekranda görünmüyordu bile.
+Araç formülü ekrana basıyor, yani aritmetiği dürüst yazıyor ama bunun
+erkek varyantı olduğunu söylemiyordu.
+
+Ölçüldü (165 cm · 55 kg · albumin 3.6 g/dL):
+
+| varyant | ideal ağırlık | GNRI | bant |
+|---|---|---|---|
+| erkek (koddaki) | 61.3 kg | **91.0** | ORTA RİSK |
+| kadın (doğrusu) | 59.0 kg | **92.5** | DÜŞÜK RİSK |
+
+Eşik 92; tek bir eksik alan bandı kaydırıyordu. Üstelik GNRI **geriyatrik**
+bir indeks ve o yaş grubunda kadınlar çoğunlukta — sapma hedef nüfusun
+büyük kısmını vuruyordu.
+
+**Ayırt edici soru şuydu: "aynı hesabı yapan başka araç var mı?"** `bmi` de
+ideal ağırlık hesaplıyor (Devine ve Hamwi, ikisi de cinsiyete bağlı) ve
+onda seçici VAR. Yani depo kalıbı zaten biliyordu; `gnri` istisnaydı.
+İki aracı yan yana koymak, hangisinin eksik olduğunu dış bir kaynağa hiç
+bakmadan söyledi.
+
+Bu, belgedeki "yeni bir kusur bulunca serideki komşu araçlara bak: çözüm
+çoktan yazılmış olabilir" kuralının TERSİ yönü: komşuda çözüm varsa,
+komşuda OLUP burada olmayan şey de bir kusur adayıdır.
+
+Çare seçiciyi eklemek ve **varsayımı görünür kılmak**: ekrandaki formül
+satırı artık varyantı adıyla yazıyor ("Lorentz, kadın: … /2,5"). Denetim
+`bmi` ile birebir aynı (sr-only radyo + saran etikette `focus-within`
+halkası + grup adı), yani klavye kuralı da korunuyor.
+
+Negatif kontrol: **erkek yolu düzeltme öncesiyle aynı sayıyı veriyor**
+(91.0). Bir dal eklerken var olan dalın değişmediğini ölçmek şart.
+
+### Paylaşılan `calc-utils` kütüphanesi ölçüldü — dokuz formül temiz
+
+Araçların bir kısmı hesabı `app/tools/lib/calc-utils.tsx`e devrediyor.
+Oradaki bir kusur birden çok aracı birden vururdu, o yüzden ayrıca sürüldü:
+eGFR CKD-EPI 2021, düzeltilmiş kalsiyum, anyon açığı, albumin düzeltmeli
+anyon açığı, Katz sodyum, HbA1c→eAG, Mosteller BSA, DAS28-ESR ve DAS28-CRP —
+**dokuzu da yayımlanmış hâliyle birebir.**
+
+Dört dışa aktarım ÖLÜ: `mmolToMgdl`, `calculateSofaScore`, `checkPercCriteria`,
+`calculateWellsDvt` — sıfır içe aktaran. (`calculateSofaScore`ın kendi yorumu
+zaten "placeholder" diyor.) Ölü kod, kullanıcıya ulaşan bir kusur değil.
+
+**Ekranda formül basan 19 araç sayıldı** ve ekrandaki metin kodun yaptığıyla
+karşılaştırıldı. Sürülenler ve elle hesapla tutanlar:
+
+| araç | girdi | ekranda | elle |
+|---|---|---|---|
+| `calvert` | AUC 5 · GFR 150 | **750** + "GFR 150 → 125 ile sınırlandırıldı" | 5×(125+25) |
+| `calvert` | AUC 5 · GFR 100 | **625**, bildirim YOK | 5×(100+25) |
+| `bsa` | 170 cm · 70 kg | 1.82 | √(11900/3600) |
+| `ktv` | 60/20 · 240 dk · 2 L · 70 kg | spKt/V 1.28 · eKt/V 1.12 · URR %67 | Daugirdas II |
+| `osmolal-gap` | 300 · 140 · 90 · 14 | 10.0 | 300 − (280+5+5) |
+| `pni` | alb 3.0 · lenfosit 1200 | 36.0 | 10×3 + 0.005×1200 |
+
+`ktv` ayrıca bir birim tuzağını doğru çözüyor: alan **dakika** istiyor ama
+Daugirdas II **saat** ile türetilmiş. Çevrim yapılmasaydı `R − 0.008×240`
+eksiye düşer ve `ln` tanımsız olurdu — yani ekrandaki 1.28, çevrimin
+yapıldığının kanıtı.
+
+`das28`in belgede kayıtlı "boş formda 0 basıp **Remisyon** diyordu" kusuru
+da bu turda kontrol edildi: kapanmış, artık `–` ve "Değerleri girin" basıyor.
+
+
 ### Ondalık katsayı taşıyan araçların hepsi sürüldü — sınıf temiz
 
 Ölçek hatası sınıfının kalan yüzeyi: yayımlanmış bir regresyon/denklemi
