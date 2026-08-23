@@ -101,6 +101,7 @@ export default function SiteHeader() {
   const [aramaHatasi, setAramaHatasi] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const menuButonRef = useRef<HTMLButtonElement>(null);
 
   /**
    * ARAMA DURUMU — ekran okuyucuya duyurulan metin.
@@ -153,6 +154,36 @@ export default function SiteHeader() {
     setIsOpen(false);
     setQuery("");
   }, []);
+
+  /**
+   * MOBİL MENÜ — ESC ile kapanır ve odak AÇAN DÜĞMEYE döner.
+   *
+   * Ölçüldü: menü açılıyordu (aria-expanded false→true, görünür bağlantı
+   * 2→14) ve düğmeyle kapanıyordu, ama ESC hiç işlenmiyordu
+   * (defaultPrevented false, menü açık kalıyordu). Belgedeki "panel açan
+   * her yüzey ESC ile kapanmalı, kapanışta odak açan düğmeye dönmeli"
+   * kuralı bu yüzeye uygulanmamıştı.
+   *
+   * Menü MODAL DEĞİL — ölçüldü: 210px yüksekliğinde, sayfayı örtmüyor ve
+   * Tab sırası doğal (düğme 4, ilk menü bağlantısı 5). Bu yüzden odak
+   * TUZAĞI ya da açılışta odak taşıma YAPILMIYOR; gereksiz olurdu.
+   *
+   * defaultPrevented kontrolü bilerek konuldu: arama penceresi de ESC
+   * kullanıyor ve kutunun kendi işleyicisi önce çalışıyor. Zaten
+   * karşılanmış bir ESC ikinci kez tüketilmiyor — yoksa tek tuşla iki
+   * yüzey birden kapanırdı.
+   */
+  useEffect(() => {
+    if (!menuOpen) return;
+    function onEsc(e: KeyboardEvent) {
+      if (e.key !== "Escape" || e.defaultPrevented) return;
+      e.preventDefault();
+      setMenuOpen(false);
+      menuButonRef.current?.focus();
+    }
+    document.addEventListener("keydown", onEsc);
+    return () => document.removeEventListener("keydown", onEsc);
+  }, [menuOpen]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -424,9 +455,11 @@ export default function SiteHeader() {
 
           {/* HAMBURGER (branşlar / araçlar / premium - 2xl altında) */}
           <button
+            ref={menuButonRef}
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menü"
             aria-expanded={menuOpen}
+            aria-controls="ana-menu"
             /* 36×36'dan 44×44'e: mobilde ana gezinme kontrolü bu düğme ve
                ölçümde dokunma hedefi önerilen 44px'in altındaydı. */
             className="2xl:hidden flex items-center justify-center w-11 h-11 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"
@@ -447,7 +480,7 @@ export default function SiteHeader() {
 
       {/* --- MOBİL / TABLET AÇILIR MENÜ --- */}
       {menuOpen && (
-        <div className="2xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
+        <div id="ana-menu" className="2xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="max-w-[1800px] mx-auto px-5 py-5 space-y-5">
 
             {/* Branşlar (lg ve altı - üstteki nav gizliyken) */}
