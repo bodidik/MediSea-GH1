@@ -3970,6 +3970,73 @@ sürüldü: 10 soru, 7'si bilerek doğru 3'ü bilerek yanlış cevaplandı.
 Geçici rota silinirken `.next/types` altındaki artık da silinmeli; yoksa
 `tsc` olmayan bir modülü aramaya devam eder.
 
+### `-H 0.0.0.0` NextAuth'un TABAN ADRESİNE sızıyor — çıkış 0.0.0.0'a gidiyordu
+
+Kullanıcı bildirdi: üyelikten çıkınca tarayıcı **"Bu siteye ulaşılamıyor ·
+ERR_ADDRESS_INVALID"** veriyor ve adres çubuğunda `http://0.0.0.0:3000/`
+yazıyor.
+
+Sebep: `package.json` dev/start betikleri `next dev -H 0.0.0.0` ile bağlanıyor.
+NextAuth taban adresini oradan çıkarıyor ve `signOut({ callbackUrl: "/" })`
+göreli adresi o tabana göre çözüyor. **`0.0.0.0` bir DİNLEME adresi** ("tüm
+arayüzler"), gidilecek bir adres değil.
+
+| ölçüm | değer |
+|---|---|
+| yerelde `/api/auth/providers` | `http://0.0.0.0:3000/api/auth/…` |
+| tarayıcının bulunduğu yer | `http://localhost:3000` |
+| **CANLIDA** aynı uç | `https://medi-sea-gh-1.vercel.app/…` — DOĞRU |
+
+Yani kusur yalnızca geliştirme ortamında; kullanıcılara ulaşmıyordu. Giriş de
+çalışıyordu, çünkü `signIn` çağrıları `redirect: false` kullanıyor ve tabana
+hiç dokunmuyor — bildirimdeki "sadece çıkışta oluyor" gözlemi bununla birebir
+uyuşuyor.
+
+**ÖLÇÜM YÖNTEMİ — oturum açmadan hedefi okumanın yolu.** Çıkış ucu normalde
+302 veriyor ve tarayıcı 0.0.0.0'a gidemediği için `fetch` "Failed to fetch"
+ile düşüyor; gövde okunamıyor. Auth.js v5 istemcisinin kullandığı
+`X-Auth-Return-Redirect: 1` başlığı gönderilirse uç **302 yerine JSON**
+döndürüyor ve NextAuth'un hesapladığı hedef doğrudan okunabiliyor.
+
+**İLK ÇÖZÜM FİKRİ YANLIŞTI ve bunu ancak KÜTÜPHANENİN KAYNAĞI gösterdi.**
+`callbackUrl` olarak tam adres vermek (`window.location.origin + "/"`) de
+kurtarmıyor. `@auth/core`'un varsayılan `redirect` geri çağrısı
+(`node_modules/@auth/core/lib/init.js`) mutlak adresi TABANLA karşılaştırıyor
+ve origin tutmazsa TABANA düşüyor:
+
+```js
+if (url.startsWith("/"))                  return `${baseUrl}${url}`;
+else if (new URL(url).origin === baseUrl) return url;
+return baseUrl;                           // ← 0.0.0.0'a döner
+```
+
+Ölçüldü — iki girdi de aynı kapıya çıkıyor:
+
+| gönderilen `callbackUrl` | NextAuth'un döndürdüğü hedef |
+|---|---|
+| `/` (eski kod) | `http://0.0.0.0:3000/` |
+| `http://localhost:3000/` (ilk fikir) | `http://0.0.0.0:3000` — reddedildi |
+
+**Genel kural: bir kütüphane senin yerine hedef HESAPLIYOR ve o hesap
+yanlışsa, ona daha iyi bir GİRDİ vermeye çalışma — hesabı elinden al.**
+Çare `redirect: false` ile oturumu kapatıp yönlendirmeyi tarayıcıya bırakmak;
+göreli `/` adresini tarayıcı BULUNULAN sayfaya göre çözer. Bu, üç durumda
+birden doğru olan tek yol: localhost, LAN IP'si (telefondan bakarken) ve
+üretim alan adı.
+
+Denenmeyen iki yol ve gerekçeleri: `NEXTAUTH_URL`i sabitlemek LAN erişimini
+bozar (telefondan açılan sayfa localhost'a yönlenir), `-H 0.0.0.0`ı kaldırmak
+telefondan denemeyi tümden kapatır — tablet/telefon bu projede gerçek bir
+kullanım yüzeyi.
+
+**Doğrulamanın SINIRI raporda yazılı.** Gerçek çıkış akışı uçtan uca
+sürülemedi: oturum açmak yerel Express arka ucunu gerektiriyor ve o çalışmıyor,
+üretim veritabanına da yazılmıyor. Ölçülen şey belirleyici parça olan HEDEF
+HESABI — eskisi `0.0.0.0`, yenisi `http://localhost:3000/` (`/tools/bmi`den
+`location.href = "/"` çağrısıyla ölçüldü). Yeni bir çıkış düğmesi eklerken
+`signOut`u doğrudan çağırma, `SiteHeader`daki `cikisYap`ı kullan.
+
+
 ### Yetki kontrolü tek yerde: `lib/yonetici.ts`
 
 `session?.user?.email === process.env.ADMIN_EMAIL` karşılaştırması beş ayrı
