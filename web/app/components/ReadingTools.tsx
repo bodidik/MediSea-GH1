@@ -380,6 +380,45 @@ export default function ReadingTools() {
    */
   const listeRef = useRef<HTMLUListElement>(null);
   const panelDugmeRef = useRef<HTMLButtonElement>(null);
+  /**
+   * ESC — önce paneli, sonra seçim araç çubuğunu kapatır.
+   *
+   * Ölçüldü: vurgu paneli açılıyordu (aria-expanded doğru güncelleniyor) ve
+   * rozet düğmesiyle kapanıyordu, ama ESC hiç işlenmiyordu
+   * (defaultPrevented false, panel açık kalıyordu). Seçim araç çubuğunun ise
+   * kapatma düğmesi HİÇ YOK — klavyeyle gezen kullanıcı onu ancak seçimi
+   * değiştirerek kaybedebiliyordu.
+   *
+   * Bu, aynı oturumda üçüncü kez çıkan boşluk: arama penceresi ve mobil
+   * menüde de ESC yoktu. Belgedeki kural (panel açan her yüzey ESC ile
+   * kapanmalı, kapanışta odak açan düğmeye dönmeli) bu yüzeylere hiç
+   * uygulanmamıştı.
+   *
+   * SIRA ÖNEMLİ: panel açıkken ESC yalnızca PANELİ kapatır, araç çubuğuna
+   * dokunmaz. Tek tuşla iki yüzeyi birden kapatmak kullanıcıyı şaşırtır.
+   *
+   * defaultPrevented kontrolü, başlıktaki iki ESC işleyicisiyle (arama
+   * penceresi ve mobil menü) katmanlanmak için. Zaten karşılanmış bir ESC
+   * ikinci kez tüketilmiyor.
+   */
+  useEffect(() => {
+    if (!panelOpen && !anchor && !pending) return;
+    function onEsc(e: KeyboardEvent) {
+      if (e.key !== "Escape" || e.defaultPrevented) return;
+      if (panelOpen) {
+        e.preventDefault();
+        setPanelOpen(false);
+        panelDugmeRef.current?.focus();
+        return;
+      }
+      e.preventDefault();
+      setPending(null);
+      setAnchor(null);
+    }
+    document.addEventListener("keydown", onEsc);
+    return () => document.removeEventListener("keydown", onEsc);
+  }, [panelOpen, anchor, pending]);
+
   const [odakBekliyor, setOdakBekliyor] = useState(false);
 
   useEffect(() => {
