@@ -8,21 +8,14 @@ import {
   PlaySquare, Stethoscope, Map, AlertTriangle, Layers, Crown
 } from 'lucide-react';
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import { type StudyNumbers, localStats, fetchServerStats } from "@/app/lib/study-stats";
-
-type Role = "V" | "M" | "P";
-
-function toRole(plan: string | undefined): Role {
-  const p = (plan ?? "").toLowerCase();
-  if (p === "premium" || p === "p" || p === "pro") return "P";
-  if (p === "member" || p === "m") return "M";
-  return "V";
-}
+import { planCoz, planRolu } from "@/app/lib/plan";
 
 export default function PremiumPage() {
   const [stats, setStats] = useState<StudyNumbers | null>(null);
   const [yuklendi, setYuklendi] = useState(false);
-  const { status } = useSession();
+  const { data: session, status } = useSession();
 
   useEffect(() => {
     if (status === "loading") return;
@@ -40,8 +33,21 @@ export default function PremiumPage() {
     return () => { alive = false; };
   }, [status]);
 
-  const plan: PlanType = "free";
-  const role = toRole(plan);
+  /**
+   * PLAN OTURUMDAN OKUNUYOR — bir dönem burada `const plan = "free"` yazıyordu.
+   *
+   * `useSession()` çağrılıyordu ama yalnızca `status` alınıyordu; kullanıcının
+   * gerçek planı (`session.user.plan`, auth.config.ts token'a yazıyor) hiç
+   * okunmuyordu. Sonuç ölçüldü: ödeme yapmış bir premium üye de bu sayfada
+   * "Free" rozeti ve YEDİ kilitli kart görüyordu — premium'un giriş sayfası,
+   * premium üyeye premium'u göstermiyordu.
+   *
+   * Okuma tek yerde (`app/lib/plan.ts`); `/profile` de aynı sabiti taşıyordu
+   * ve aynı yardımcıya bağlandı.
+   */
+  const plan: PlanType = planCoz(session?.user);
+  const role = planRolu(session?.user);
+  const kilitli = role !== "P";
 
   const points = useMemo(() => {
     if (!stats) return 0;
@@ -65,11 +71,84 @@ export default function PremiumPage() {
               <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Ana Komuta Merkezi</p>
             </div>
           </div>
-          <PlanBadge plan={plan} />
+          {/* ÇIKIŞ YOLU. `(ydus)` grubu AppShell ALMIYOR — ölçüldü: bu sayfada
+              header/nav landmark sayısı 0 ve DOM'un tamamında sıfır bağlantı
+              vardı. Site gezinmesi olmayan bir sayfada içerik de tıklanamazsa
+              kullanıcının tek çıkışı tarayıcının geri tuşu oluyor. */}
+          <div className="flex items-center gap-3 sm:gap-4">
+            {/* HER GENİŞLİKTE görünür. Bir denemede `hidden sm:inline-block`
+                yazılmıştı ve ölçüm yakaladı: mobilde bağlantı kayboluyordu.
+                Ücretsiz kullanıcıda kilit şeridi çıkış veriyor ama PREMIUM
+                kullanıcıda şerit de yok — o kombinasyonda sayfa mobilde yine
+                sıfır bağlantıya düşüyordu. Dar ekranda yalnızca ok görünür;
+                ad `aria-label` ile korunuyor. */}
+            <Link
+              href="/"
+              aria-label="MediSea ana sayfasına dön"
+              className="rounded-full border border-slate-700 px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-slate-300 transition-colors hover:border-slate-500 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 sm:px-3"
+            >
+              <span aria-hidden="true">←</span>
+              <span aria-hidden="true" className="hidden sm:inline"> MediSea</span>
+            </Link>
+            <PlanBadge plan={plan} />
+          </div>
         </div>
       </div>
 
       <div className="p-4 md:p-8 max-w-6xl mx-auto space-y-8">
+
+        {/*
+          KİLİT ŞERİDİ — sayfanın BİRİNCİL EYLEMİ.
+
+          Ölçüldü (ücretsiz kullanıcı, /tr/premium): DOM'un tamamında sıfır
+          bağlantı, sıfır düğme. Yedi kilitli kart aynı cümleyi yedi kez
+          tekrarlıyor, hiçbiri tıklanabilir değil ve üyelik almanın yolu
+          hiçbir yerde yazmıyordu. Premium'a GİRİŞ sayfası dönüşümün tam
+          ortasında duruyor ve tıklanacak hiçbir şey sunmuyordu.
+
+          Modül SAYISI bilerek yazılmadı ("yedi modül" demiyor): belgedeki
+          "sayı yazma, saydır" kuralı. Kart eklenince metin bayatlardı.
+        */}
+        {kilitli && (
+          <section
+            aria-labelledby="premium-kilit-baslik"
+            className="overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-500/10 via-slate-900 to-slate-900 p-6 sm:p-7"
+          >
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="max-w-xl">
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-amber-400">
+                  {role === "M" ? "Üyelik yükseltme" : "Premium erişim"}
+                </p>
+                <h2
+                  id="premium-kilit-baslik"
+                  className="mt-0 font-sans text-xl font-black tracking-tight text-white"
+                >
+                  Aşağıdaki modüller üyelikle açılır
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                  Aralıklı tekrar radarı, sınav simülatörü, vaka kokpiti ve konu
+                  haritası dahil tüm çalışma modülleri premium planla kullanıma
+                  açılır. Konu anlatımları ve klinik hesaplayıcılar ücretsiz kalır.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2 sm:shrink-0">
+                <Link
+                  href="/uyelik"
+                  className="rounded-full bg-amber-400 px-6 py-3 text-center text-sm font-black uppercase tracking-widest text-amber-950 shadow-lg transition-all hover:bg-amber-300 hover:shadow-amber-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                >
+                  Planları gör
+                </Link>
+                <Link
+                  href="/topics"
+                  className="rounded-full border border-slate-700 px-6 py-2.5 text-center text-xs font-bold uppercase tracking-widest text-slate-300 transition-colors hover:border-slate-500 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                >
+                  Ücretsiz kütüphane
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* METRİKLER */}
         {!stats && !yuklendi ? (

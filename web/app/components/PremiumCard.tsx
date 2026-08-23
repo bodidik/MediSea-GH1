@@ -26,7 +26,10 @@ export default function PremiumCard({
         </h2>
       </div>
       
-      <RequirePlan min={min} plan={plan}>
+      {/* `baslik`: kilitli kartın erişilebilir adını ayırt etmek için. Bu
+          sayfada yedi kilitli kart var; başlık geçilmezse hepsi ekran
+          okuyucuda birbirinin aynı ("Planları gör") okunurdu. */}
+      <RequirePlan min={min} plan={plan} baslik={title}>
         <div className="text-slate-300">
           {children}
         </div>

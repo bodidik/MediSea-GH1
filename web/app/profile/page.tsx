@@ -7,6 +7,7 @@ import PlanBadge, { type PlanType } from "@/components/PlanBadge";
 import RequirePlan from "@/components/RequirePlan";
 import UpgradeCard from "@/components/UpgradeCard";
 import { type StudyNumbers, localStats, fetchServerStats } from "@/app/lib/study-stats";
+import { planCoz } from "@/app/lib/plan";
 
 type Role = "V" | "M" | "P";
 
@@ -19,9 +20,12 @@ function toRole(plan: string | undefined): Role {
 
 export default function ProfilePage() {
   const [stats, setStats] = useState<StudyNumbers | null>(null);
-  const [plan] = useState<PlanType>("free");
+  /* Plan OTURUMDAN okunuyor. Bir dönem burada sabit "free" vardı ve ödeme
+     yapmış bir üye KENDİ PROFİLİNDE "Free" rozeti görüyordu. Okuma tek yerde
+     (app/lib/plan.ts); aynı sabit /tr/premium sayfasında da duruyordu. */
   const [loading, setLoading] = useState(true);
-  const { status } = useSession();
+  const { data: session, status } = useSession();
+  const plan: PlanType = planCoz(session?.user);
 
   useEffect(() => {
     if (status === "loading") return;

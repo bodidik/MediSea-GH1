@@ -2,7 +2,19 @@
 "use client";
 import React from "react";
 
-export type PlanType = "free" | "premium" | "pro";
+/**
+ * Rozet sözlüğü VERİTABANIYLA HİZALI olmak zorunda.
+ *
+ * Bir dönem burada `free | premium | pro` yazıyordu, oysa `lib/models/User.ts`
+ * şemasının izin verdiği değerler `free | member | premium`. İki sözlük iki
+ * yönde birden ayrışıyordu: `member` planlı bir kullanıcının rozeti YOKTU
+ * (ve "Free" görünüyordu), `pro` ise veritabanının hiç üretmediği bir rozetti.
+ *
+ * Bu depoda "aynı kavramın iki ayrı gerçekliği" defalarca gerçek kusur
+ * üretti. `member` eklendi; `pro` gelecekteki bir kademe olarak duruyor ama
+ * artık ölçüt açık: rozet listesi şemayı KAPSAMALI.
+ */
+export type PlanType = "free" | "member" | "premium" | "pro";
 interface BadgeConfig { title: string; color: string; description: string; }
 
 /**
@@ -25,6 +37,11 @@ export const PLAN_BADGES: Record<PlanType, BadgeConfig> = {
     title: "Free",
     color: "bg-slate-200 text-slate-800 border border-slate-300",
     description: "Temel özellikler, sınırlı erişim"
+  },
+  member: {
+    title: "Üye",
+    color: "bg-emerald-100 text-emerald-900 border border-emerald-300",
+    description: "Üye içeriklerine erişim"
   },
   premium: {
     title: "Premium",
