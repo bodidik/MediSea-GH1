@@ -4277,6 +4277,51 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### İLANI SEN YAZDIYSAN DA ÖLÇ — eklediğim düğme hedefte karşılıksız kaldı
+
+Premium giriş sayfasına dönüşüm eylemi eklendikten sonra oradan `/uyelik`e
+sekiz yeni bağlantı açıldı. Sonraki tur o bağlantıların VARIŞ NOKTASI ölçüldü
+— kendi değişikliğinin sonucunu doğrulamak da işin parçası.
+
+`/uyelik` sayfasının ilk başlığı: **"Premium henüz satışta değil"**. Sayfa
+fiyatın neden olmadığını açıkça söylüyor:
+
+> Sınav materyali hâlâ yazılıyor ve hazır olmadan para almak istemiyoruz.
+> Bu sayfada bu yüzden fiyat göremezsin — satış açıldığında burada olacak.
+
+Oysa eklenen birincil eylem **"Planları gör"** diyordu ve yedi kilitli kart
+da "üyelikle açılır — planları gör" vaat ediyordu. Yani bir FİYAT LİSTESİ
+vaat ediliyor, hedef onu karşılamıyordu.
+
+**Bu, bu depoda tur tur avlanan "ilan ile gerçek ayrışıyor" sınıfının ta
+kendisi — ve bu kez ilanı BEN yazmıştım.** Sınıfı kovalarken kendi
+etiketinde üretmek en kolay hata; çünkü kendi eklediğin metni "zaten doğru"
+sayıp ölçmüyorsun.
+
+Çare, etiketi sayfanın BUGÜN anlattığı şeye bağlamak: `/uyelik` ücretsiz ve
+premium ayrımını, kapsam sayılarını (41 başlık · 378 soru · 1492 kart)
+anlatıyor. **"Neler dahil?"** bunu birebir karşılıyor ve satış açıldığında da
+yanlışlaşmıyor — yani ileride ikinci bir ayrışma üretmiyor. Şeridin gövde
+metni de hizalandı ("Premium henüz satışta değil — … satış açıldığında burada
+duyurulur").
+
+| ölçüt | sonuç |
+|---|---|
+| görünür bağlantı | 10 → 10 (gerileme yok) |
+| fiyat vaat eden etiket | **0** (Planları gör / fiyat / satın al) |
+| iki sayfa aynı şeyi söylüyor mu | evet, ikisinde de "henüz satışta değil" |
+| kilitli kart adları | `<konu>: üyelikle açılır — neler dahil?` (ayırt edilebilirlik korundu) |
+
+**Ölçüt: bir CTA eklerken hedefi aç ve oku.** Etiketin vaat ettiği şey
+hedefte var mı? Bu depoda ilan–gerçek ayrışması defalarca kusur üretti;
+yeni yazılan ilan da aynı ölçüte tabidir.
+
+**Yan not — derleme süresi tek başına kanıt değil.** Bu turda derleme
+8.3 saniyede bitti (öncekiler 47–89 s) ve bir an "gerçekten derledi mi"
+şüphesi doğdu. İkinci yöntem: günlükte `Generating static pages (623/623)`
+ve rota tablosu var mı diye bak. Vardı — hızın sebebi sıcak önbellekti.
+
+
 ### Premium giriş sayfası: plan SABİT yazılıydı, sayfa da çıkmazdı
 
 Kullanıcı bildirdi (premium girişi geliştirilmeli). `/tr/premium` ölçüldü ve
