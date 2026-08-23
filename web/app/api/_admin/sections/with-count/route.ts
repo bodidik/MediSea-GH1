@@ -1,4 +1,4 @@
-// FILE: web/app/api/admin/sections/with-count/route.ts
+// FILE: web/app/api/_admin/sections/with-count/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { NextRequest, NextResponse } from "next/server";
 import { backendBase } from "@/lib/backend";
 

@@ -1,4 +1,4 @@
-// FILE: web/app/api/admin/content/route.ts
+// FILE: web/app/api/_content/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { backendBase } from "@/lib/backend";
 import { NextRequest } from "next/server";
 

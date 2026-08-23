@@ -1,4 +1,4 @@
-// C:\Users\hucig\Medknowledge\web\app\api\questions\random\route.ts
+// FILE: web/app/api/_questions/random/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { NextRequest, NextResponse } from "next/server";
 import { backendBase } from "@/lib/backend";
 

@@ -1,4 +1,4 @@
-// C:\Users\hucig\Medknowledge\web\app\api\progress\tick\route.ts
+// FILE: web/app/api/_progress/tick/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { NextRequest, NextResponse } from "next/server";
 import { backendBase } from "@/lib/backend";
 

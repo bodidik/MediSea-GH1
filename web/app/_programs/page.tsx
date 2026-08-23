@@ -1,4 +1,4 @@
-// FILE: web/app/programs/page.tsx
+// FILE: web/app/_programs/page.tsx   — alt çizgili klasör: ROTAYA ALINMIYOR
 "use client";
 
 import React, { useEffect, useState } from "react";

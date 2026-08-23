@@ -1,4 +1,4 @@
-// C:\Users\hucig\Medknowledge\web\app\api\questions\route.ts
+// FILE: web/app/api/_questions/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { NextRequest, NextResponse } from "next/server";
 import { backendBase } from "@/lib/backend";
 import { cookies } from "next/headers";

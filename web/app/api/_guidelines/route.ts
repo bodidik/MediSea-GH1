@@ -1,4 +1,4 @@
-// C:\Users\hucig\Medknowledge\web\app\api\guidelines\route.ts
+// FILE: web/app/api/_guidelines/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { NextResponse } from "next/server";
 import { backendBase } from "@/lib/backend";
 

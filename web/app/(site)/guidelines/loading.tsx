@@ -1,4 +1,4 @@
-// FILE: web/app/guidelines/[slug]/loading.tsx
+// FILE: web/app/(site)/guidelines/loading.tsx
 export default function LoadingGuidelineDetail() {
   return (
     <div className="p-6 md:p-10 max-w-6xl mx-auto animate-pulse space-y-4">

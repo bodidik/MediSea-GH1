@@ -1,4 +1,4 @@
-// "C:\Users\hucig\Medknowledge\web\app\(ydus)\[lang]\premium\ydus\endokrinoloji\page.tsx"
+// FILE: web/app/(ydus)/[lang]/premium/ydus/_endokrinoloji/page.tsx   — alt çizgili klasör: ROTAYA ALINMIYOR
 'use client';
 
 import { useState } from 'react';

@@ -1,4 +1,4 @@
-// C:\Users\hucig\Medknowledge\web\app\api\admin\sections\[section]\route.ts
+// FILE: web/app/api/_admin/sections/[section]/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { backendBase } from "@/lib/backend";
 import { NextRequest, NextResponse } from "next/server";
 

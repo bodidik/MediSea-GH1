@@ -1,4 +1,4 @@
-// FILE: web/app/review/page.tsx
+// FILE: web/app/_review/page.tsx   — alt çizgili klasör: ROTAYA ALINMIYOR
 "use client";
 
 import React from "react";

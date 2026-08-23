@@ -1,4 +1,4 @@
-// "C:\Users\hucig\Medknowledge\web\app\(ydus)\[lang]\premium\ydus\endokrinoloji\tiroid\tiroid-nodulleri\page.tsx"
+// FILE: web/app/(ydus)/[lang]/premium/ydus/_endokrinoloji/tiroid/tiroid-nodulleri/page.tsx   — alt çizgili klasör: ROTAYA ALINMIYOR
 'use client';
 
 import React from 'react';

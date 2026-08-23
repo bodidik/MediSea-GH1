@@ -1,4 +1,4 @@
-// FILE: web/app/api/plan/upgrade/route.ts
+// FILE: web/app/api/_plan/upgrade/route.ts   — alt çizgili klasör: ROTAYA ALINMIYOR
 import { backendBase } from "@/lib/backend";
 import { NextRequest, NextResponse } from "next/server";
 
