@@ -73,6 +73,12 @@ const AJANLAR: Ajan[] = [
     ad: "Fenitoin",
     basamak: "ikinci",
     mgKg: 20,
+    /* Tavan bir dönem YOKTU ve 150 kg hastada ekran 3000 mg yazıyordu —
+       standart üst sınırın iki katı. Dozların geldiği aynı kaynak (AES 2016)
+       fenitoin ve fosfenitoin için doz başına 1500 mg / 1500 mg FE sınırı
+       veriyor; levetirasetam 4500 ve valproat 3000 zaten oradan gelmişti.
+       Yedi ajanın beşinde tavan vardı, bu ikisi dışarıda kalmıştı. */
+    tavanMg: 1500,
     maxMgDk: 50,
     birim: "mg",
     not: "HIZ SINIRI 50 mg/dakika; yaşlıda ve kalp hastasında 20-25 mg/dakikaya indirilir. Dekstroz içeren sıvılarla ÇÖKELİR — yalnızca serum fizyolojikle verilir. Ekstravazasyonu ciddi doku hasarı (mor eldiven sendromu) yapar. İnfüzyon boyunca EKG ve kan basıncı izlenir.",
@@ -82,6 +88,7 @@ const AJANLAR: Ajan[] = [
     ad: "Fosfenitoin",
     basamak: "ikinci",
     mgKg: 20,
+    tavanMg: 1500, // mg FE — fenitoinle aynı üst sınır
     maxMgDk: 150,
     birim: "mg FE",
     not: "Doz FENİTOİN EŞDEĞERİ (mg FE) olarak yazılır — 'mg' yazmak karışıklık kaynağıdır. Hız sınırı fenitoinin üç katı olduğu için yükleme çok daha kısa sürer; dekstrozla da geçimlidir. Kaşıntı ve parestezi hıza bağlı ve geçicidir.",

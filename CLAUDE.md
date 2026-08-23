@@ -1256,6 +1256,53 @@ bağlı ("Hasta ağırlığı", "Doz", "İlaç miktarı", "Toplam hacim"). Belge
 aramak da tek başına yanıltıyor. Adı HESAPLAT — aria-label → aria-labelledby
 → label[for] → saran label sırasıyla.
 
+### Tavan alanı VAR ama iki kayıtta BOŞ — aracın kendi içinde tutarsızlık
+
+Yeniden hesapla süpürmesi `status-epileptikus`ta gerçek bir eksik buldu.
+Araç yedi ajanın **beşine** doz tavanı koyuyor (`tavanMg`) ve tavan
+uyguladığında bunu SÖYLÜYOR — "150 kg × 60 = 9000 mg çıkıyor; tavan 4500 mg
+olduğu için doz oraya indirildi". Dosyanın kendi başlığı da bunu bir tasarım
+kararı olarak yazıyor.
+
+Alan boş kalan iki ajan, tam da tavanı standart olan ikisiydi:
+
+| ajan | 150 kg'da ekranda | olması gereken |
+|---|---|---|
+| fenitoin | **3000 mg** | 1500 mg |
+| fosfenitoin | **3000 mg FE** | 1500 mg FE |
+
+Sayı dışarıdan gelmedi: dozların zaten aktarıldığı aynı kaynak (AES 2016)
+fenitoin ve fosfenitoin için doz başına 1500 mg / 1500 mg FE veriyor —
+levetirasetam 4500 ve valproat 3000 de oradan gelmişti. Yani düzeltme yeni
+bir klinik iddia değil, **aracın kendi ölçüsüne hizalanma.**
+
+**Ölçüt: bir tablo alanı KAYITLARIN ÇOĞUNDA doluysa, boş kalanları say.**
+`tavanMg` 7 kaydın 5'inde doluydu; eksik ikisi göz taramasıyla değil bu
+oranla bulundu.
+
+Doğrulama, tavanın ISIRDIĞI ve ISIRMADIĞI iki kiloyla birden yapıldı:
+
+| ölçüt | 150 kg | 70 kg (negatif kontrol) |
+|---|---|---|
+| fenitoin dozu | 1500 mg · 30 dk (1500/50) | 1400 mg · 28 dk — değişmedi |
+| fosfenitoin | 1500 mg FE · 150 mg FE/dk | 1400 mg FE · 140 mg FE/dk |
+| "tavan uygulandı" bildirimi | 6 ajanda çıkıyor | **yalnızca 2** (lorazepam, midazolam) |
+
+Son satır ayırt edici olan: 70 kg'da fenitoin 1400 < 1500 olduğu için
+bildirim ÇIKMAMALI ve çıkmıyor. Bildirimin varlığını değil, **doğru kartta
+olup olmadığını** ölç.
+
+**Ölçüm tuzağı — "kiloya göre" metni bildirim sanıldı.** Kırpma bildirimini
+gövde metninde aramak yanılttı: lakosamid açıklaması da "kiloya göre DEĞİL
+sabit dozlanır" diyor ve her kiloda görünüyor. Bildirimler `role="status"`
+taşıyor; ölçüm oradan yapılınca sayı ve içerik netleşti.
+
+**Digoksin de üç kipiyle sürüldü, temiz:** düzey (4 ng/mL · 70 kg → 2.80 →
+3 flakon), alınan miktar (5 mg → (5×0.8)/0.5 = 8 flakon), ampirik (akut
+10–20, kronik 3–6 — aç/kapa çıktıyı gerçekten değiştiriyor). Ayrıca sabit
+kalan "20 flakon" kartı kusur değil: "Kardiyak arrest — durum ne olursa
+olsun" diyor, yani bilerek değişmiyor.
+
 ### İnfüzyon serisi BAĞIMSIZ YENİDEN HESAPLA sürüldü — yedi araç, kusur yok
 
 Kaynak taramaları sınıf sınıf ilerliyor; ama son turlarda bulunan gerçek
