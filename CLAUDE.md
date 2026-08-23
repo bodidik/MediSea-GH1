@@ -1335,6 +1335,42 @@ adrenaline geçtiğinde uyarıyı kaybediyor.
 Metni YAZMADIM: klinik uyarı içeriktir ve içerik kullanıcının sorumluluğu.
 Ölçüldü, yerleri ve gerekçesi yazıldı, bekleyen içerik işi olarak duruyor.
 
+### Kendi yazdığın aracı da BAĞIMSIZ hesapla — "ben yazdım" doğrulama değil
+
+Seride yeniden hesapla sürmediğim dört araç kalmıştı ve dördü de bu oturumda
+benim yazdıklarımdı. İkisi sürüldü, kusur çıkmadı — ama ölçüm yapılmadan
+"temiz" denemezdi.
+
+**`antikoagulan-geri-dondurme` — beş ajan, hepsi elle hesapla birebir:**
+
+| ajan | girdi | ekranda | elle |
+|---|---|---|---|
+| protamin | 3000 Ü · <30 dk | 30 mg | 1 mg/100 Ü |
+| protamin | 3000 Ü · 30–60 dk | 15 mg | 0.5 mg/100 Ü |
+| protamin | 3000 Ü · 60–120 dk | 11.3 mg | 0.375 mg/100 Ü = 11.25 |
+| protamin | 8000 Ü · <30 dk | **50 mg** | ham 80 → tavan 50, bildirimli |
+| 4F-PCC | 70 kg · INR 3 / 4 / 6 / 6.1 | 1750 / 2450 / 2450 / 3500 Ü | 25 / 35 / 35 / 50 Ü/kg |
+| 4F-PCC | 120 kg · INR 7 | **5000 Ü** | ham 6000 → tavan 5000 |
+| K vitamini · idarucizumab | — | 10 mg · 5 g | sabit doz |
+
+PCC satırı ayrıca **düzeltilmiş bir kusurun tarihsel kontrolü**: eşik dizisi
+yerine açık koşul konduktan sonra INR 3 artık 25 Ü/kg alıyor ve iki sınırın
+ikisinde de (tam 4 ve tam 6) değer doğru tarafa düşüyor. Sınır değerini
+**altı, tam kendisi, üstü** diye üç noktadan ölçmek bu turda yine işledi.
+
+**`hiperkalemi-tedavi` — iki denetim de ÖLÜ DEĞİL, ikisi de kararı değiştiriyor:**
+
+| denetim | kapalı | açık |
+|---|---|---|
+| EKG değişikliği | "Potasyum 6.5 — **AĞIR**" | "**HAYATİ TEHDİT EDEN** — EKG aciliyeti K değerinden bağımsız belirler" |
+| Anürik / diyaliz | "Furosemid 40 mg IV — idrar çıkışı olan hastada" | "Potasyum bağlayıcı (oral)" |
+
+İkincisi klinik olarak da doğru ayrım: anürik hastada kıvrım diüretiği
+işe yaramaz. K merdiveni de canlı (5.2 NORMAL SINIRDA · 5.5 HAFİF · 6.5 AĞIR).
+
+**Kalan iki araç (`lipid-emulsiyon`, `naloksan-infuzyon`) bu turda
+sürülmedi ve "temiz" DENMİYOR.**
+
 ### Tavan alanı VAR ama iki kayıtta BOŞ — aracın kendi içinde tutarsızlık
 
 Yeniden hesapla süpürmesi `status-epileptikus`ta gerçek bir eksik buldu.
