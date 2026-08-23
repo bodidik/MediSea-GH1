@@ -1335,6 +1335,40 @@ adrenaline geçtiğinde uyarıyı kaybediyor.
 Metni YAZMADIM: klinik uyarı içeriktir ve içerik kullanıcının sorumluluğu.
 Ölçüldü, yerleri ve gerekçesi yazıldı, bekleyen içerik işi olarak duruyor.
 
+### En çok kullanılan dört formül aracı sürüldü — hepsi temiz
+
+İnfüzyon serisi kapandıktan sonra aynı yöntem (sür → elde yeniden hesapla)
+günlük kullanımı en yoğun formül araçlarına uygulandı:
+
+| araç | girdi | ekranda | elle |
+|---|---|---|---|
+| `corrected-calcium` | Ca 7.0 · alb 2.0 | 8.6 | 7.0 + 0.8×(4−2) |
+| `corrected-sodium` | Na 130 · glukoz 600 | 138 | 130 + 1.6×5 (Katz) |
+| `anion-gap` | Na 140 · Cl 100 · HCO₃ 24 · alb 2.0 | 21 | 16 + 2.5×(4−2) |
+| `egfr` | erkek 60y · Scr 1.0 | 86.2 | CKD-EPI 2021 |
+| `egfr` | **kadın** 60y · Scr 1.0 | 64.5 | κ 0.7 · α −0.241 · ×1.012 |
+
+`egfr`in kadın dalı özellikle ölçüldü: 2021 formülünde κ, α ve 1.012
+çarpanının üçü birden değişiyor, yani aktarma hatasının en olası yeri orası.
+İkisi de doğru çıktı.
+
+`corrected-sodium` ayrıca **ilan–hesap uyumu** açısından örnek: ekranda
+"Katz Formülü" ve `Na + 1.6 × ((Glukoz − 100) / 100)` yazıyor, hesap birebir
+onu yapıyor, gösterilen fark (+8) da tutuyor.
+
+Beş değerin hepsi ayrıca **Node ile bağımsız olarak** hesaplandı; iki yöntem
+birebir uyuştu.
+
+**ERİŞİLEBİLİR AD ARAMASI ÜÇÜNCÜ KEZ YANILTTI — ve bu kez ters yönde.**
+Belgede iki kayıt vardı: kaynakta `htmlFor` aramak yanıltır (saran etiketi
+göremez) ve `closest('label')` yanıltır (`label[for]`u göremez). Bu turda
+üçüncüsü yaşandı: `anion-gap`in dört alanı "AD YOK" raporlandı, oysa adlar
+SARAN etiketteydi — kısayol ölçütüm o mekanizmayı atlamıştı.
+
+Kural artık istisnasız: adı **tam zincirle HESAPLAT** —
+`aria-label` → `aria-labelledby` → `label[for]` → saran `<label>`.
+Tek mekanizmaya bakan her ölçüm bir yönde ya da öbüründe yanılıyor.
+
 ### ACİL / İNFÜZYON SERİSİ KAPANDI — 18 aracın 18'i bağımsız hesapla sürüldü
 
 Sürmekte olan iş tamamlandı. Her araç tarayıcıda gerçek girdiyle sürüldü ve
