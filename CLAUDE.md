@@ -1191,6 +1191,62 @@ halkası + grup adı), yani klavye kuralı da korunuyor.
 Negatif kontrol: **erkek yolu düzeltme öncesiyle aynı sayıyı veriyor**
 (91.0). Bir dal eklerken var olan dalın değişmediğini ölçmek şart.
 
+### DAL VAR AMA YARIM — `bmi` Hamwi'de tabanı dallandırıp katsayıyı unutmuştu
+
+`gnri` turunda açılan "cinsiyet dalı" sınıfı taranınca ikinci ve daha sinsi
+bir biçimi çıktı. `gnri`de dal HİÇ YOKTU; `bmi`de dal VARDI ama yarımdı:
+
+```
+Devine (1974)  erkek 50 · kadın 45.5   + İKİSİNDE DE inç başına 2.3     ✓ doğru
+Hamwi  (1964)  erkek 48 · kadın 45.5   + 2.7 * ((h - 152.4) / 2.54)     ✗ katsayı tek
+```
+
+Yayımlanmış Hamwi erkekte 106 lb + 6 lb/inç (≈48 + 2.7), kadında 100 lb +
+5 lb/inç (≈45.5 + **2.2**). Kod tabanı dallandırmış, artışı dallandırmamıştı —
+yani yazan kişi formülün cinsiyete bağlı olduğunu BİLİYORDU, yarısını atlamıştı.
+
+**Kusuru ekranın kendi içindeki çelişki gösterdi, dış bir kaynak değil:**
+
+| girdi (kilo 70) | Devine | Hamwi — ekranda | Hamwi — doğrusu |
+|---|---|---|---|
+| erkek 170 cm | 65.9 | 66.7 | 66.7 ✓ |
+| kadın 170 cm | 61.4 | **64.2** | **60.7** |
+| kadın 180 cm | 70.5 | **74.8** | **69.4** |
+
+Erkekte Hamwi, Devine'in 0.8 kg ÜSTÜNDE; kadında 2.8 kg üstünde çıkıyordu —
+oysa doğrusu 0.7 kg ALTINDA. **İki formülün birbirine göre sırası cinsiyete
+göre ters dönemez.** Yayımlanmış katsayıyı hiç bilmeyen biri bile bu
+tutarsızlığı görebilirdi.
+
+Sapma boyla büyüyor (170 cm'de 3.5 kg, 180 cm'de 5.4 kg) ve aracın kendi
+uyarısı ideal ağırlığın "ilaç dozlaması ve solunum parametreleri" için
+kullanıldığını söylüyor — ARDS'de 6 mL/kg ideal ağırlıkla soluk hacmi
+hesaplayan biri için 5 kg, soluk başına ~30 mL demek.
+
+**Negatif kontrol iki ayaklı ve ikincisi sınır değerinde:**
+
+| ölçüt | sonuç |
+|---|---|
+| erkek 170 (dokunulmayan dal) | Devine 65.9 · Hamwi 66.7 — düzeltme öncesiyle birebir |
+| kadın tam **152.4 cm** (5 feet) | ikisi de 45.5 — inç terimi SIFIR |
+
+İkincisi ayırt edici: tam 152.4 cm'de artış terimi düşüyor, geriye yalnızca
+taban kalıyor. Böylece "tabanı bozdum mu" ile "katsayıyı düzelttim mi"
+soruları AYRI AYRI cevaplanıyor. Bir formülün iki parçası varsa, birini
+sıfırlayan girdi ötekini yalıtır.
+
+Devine dört ölçümde de değişmedi; oradaki `(h - (sex === "m" ? 152.4 : 152.4))`
+no-op üçlüsü de sadeleştirildi (Devine ikisinde de 5 feet tabanını kullanır).
+
+**Sınıfın kalanı tarandı ve temiz.** Cinsiyet alanı olan 9 araç: `bmi` ·
+`bmr` · `chads-vasc` · `egfr` · `findrisc` · `glasgow-blatchford` · `gnri` ·
+`lawton-iadl` · `psi-port`. `bmr`in Mifflin-St Jeor dalı doğru (erkek +5,
+kadın −161). Ters yönde 11 aday (cinsiyete bağlı kavram geçip alanı olmayan)
+elle bakıldı: FLIPI Hb<12, IPSS-R, Khorana Hb<10, HScore, Ranson hematokrit —
+hepsi yayımlanmış hâlinde SABİT eşik, yani kusur değil. Metabolik sendrom
+aracı (bel çevresi ve HDL eşikleri cinsiyete bağlıdır) depoda YOK.
+
+
 ### Paylaşılan `calc-utils` kütüphanesi ölçüldü — dokuz formül temiz
 
 Araçların bir kısmı hesabı `app/tools/lib/calc-utils.tsx`e devrediyor.
