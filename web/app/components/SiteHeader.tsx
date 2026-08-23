@@ -102,6 +102,25 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
+  /**
+   * ARAMA DURUMU — ekran okuyucuya duyurulan metin.
+   *
+   * Ölçüldü: sonuçlar belirdiğinde sayfada HİÇ canlı bölge yoktu
+   * (role=status / aria-live sayısı 0), yani klavye ve ekran okuyucuyla
+   * gezen kullanıcı için arama sessizce çalışıyordu — kutuya yazıyor,
+   * hiçbir şey duyulmuyor.
+   *
+   * Bölge aşağıda KOŞULSUZ render ediliyor. Belgedeki kural: `status`,
+   * `alert`ten farklı olarak içerik değişmeden ÖNCE DOM'da bulunmak
+   * zorunda; sonradan eklenirse ilk mesaj kaçar.
+   */
+  const aramaDurumu =
+    query.length < 2   ? "" :
+    loading            ? "Aranıyor…" :
+    aramaHatasi        ? "Arama şu an yapılamıyor." :
+    results.length > 0 ? `${results.length} sonuç bulundu.` :
+                         "Sonuç bulunamadı.";
+
   // Arama Motoru Mantığı
   useEffect(() => {
     const delayDebounceFn = setTimeout(async () => {
@@ -198,6 +217,16 @@ export default function SiteHeader() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onFocus={() => query.length >= 2 && setIsOpen(true)}
+              /* ESC açılır sonuç penceresini kapatır. Belgedeki kural: panel
+                 açan her yüzey ESC ile kapanmalı. Ölçüldü — bu pencerede
+                 Escape hiç işlenmiyordu (defaultPrevented false, pencere açık
+                 kalıyordu); dışarı tıklamak tek kapatma yoluydu, yani fare
+                 kullanamayan biri pencereyi kapatamıyordu.
+                 Sorgu KORUNUYOR: ESC veri kaybettirmemeli (not defterinde de
+                 aynı kural). Temizlemek için yanındaki düğme var. */
+              onKeyDown={(e) => {
+                if (e.key === "Escape" && isOpen) { e.preventDefault(); setIsOpen(false); }
+              }}
             />
             
             {loading && (
@@ -207,16 +236,25 @@ export default function SiteHeader() {
             )}
 
             {!loading && query.length > 0 && (
-              <button 
+              /* Ölçüldü: bu düğmenin erişilebilir adı YOKTU (yalnızca SVG
+                 taşıyor, metin yok) ve dokunma hedefi 20x20 idi — belgedeki
+                 24px alt sınırın altında. İkon aria-hidden, ad aria-label ile
+                 veriliyor; kutu w-6 h-6 ile 24px'e çıkarıldı (ikon aynı boyutta
+                 kaldı, konum input'un pr-9 boşluğunun içinde). */
+              <button
+                type="button"
+                aria-label="Aramayı temizle"
                 onClick={() => { setQuery(""); setIsOpen(false); }}
-                className="absolute right-3 top-2.5 text-slate-400 hover:text-slate-600"
+                className="absolute right-2.5 top-2 w-6 h-6 flex items-center justify-center rounded-full text-slate-400 hover:text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-700"
               >
-                <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <svg aria-hidden="true" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                 </svg>
               </button>
             )}
           </div>
+
+          <div role="status" aria-live="polite" className="sr-only">{aramaDurumu}</div>
 
           {/* SONUÇ PENCERESİ */}
           {isOpen && (
