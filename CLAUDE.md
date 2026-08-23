@@ -1335,6 +1335,38 @@ adrenaline geçtiğinde uyarıyı kaybediyor.
 Metni YAZMADIM: klinik uyarı içeriktir ve içerik kullanıcının sorumluluğu.
 Ölçüldü, yerleri ve gerekçesi yazıldı, bekleyen içerik işi olarak duruyor.
 
+### Denetimlerin `app/tools` kapsamı ÖLÇÜLDÜ — dışarısı temiz, kapsam da doğru
+
+Altı denetim (`bant` · `karar` · `kapı-kapsam` · `yuvarlama` · `eksik-alan` ·
+`payda`) varsayılan olarak yalnızca `app/tools`u ve TEK DÜZEY tarıyor.
+Premium ve açık site kodu bu ölçütlerle hiç görülmemişti — bu bir kapsam
+boşluğu mu, yoksa doğru bir sınır mı?
+
+**Betikleri düzenlemeden ölçmenin ucuz yolu: DÜZ AYNA.** `app/tools` dışındaki
+her `.tsx`, tmpdir'de `<ayna>/<düz-ad>/page.tsx` olarak kopyalanır ve mevcut
+denetimler oraya yönlendirilir. Kod değişmeden kapsam sınanmış olur.
+(Ayna `app/` altına YAZILMAZ — orada dosya oluşturup silmek çalışan dev
+sunucusunu öldürüyor, belgede kayıtlı.)
+
+**İlk ayna EKSİKTİ ve ölçüm bunu gösterdi.** Yalnızca `page.tsx` kopyalandı;
+denetimler "0 kapılı ifade" dedi, oysa grep 12 dosya saymıştı. Sebep:
+premium/site mantığı `page.tsx`te değil BİLEŞENLERDE (`QuizEngine.tsx` gibi).
+Ayna bütün `.tsx`leri taşıyınca 39 sayfa 125 dosyaya çıktı.
+
+125 dosyada bulunan **tek aday ölü kod**: `PremiumQuizHistory.tsx` — sıfır
+içe aktaran. Kalıbı da zaten zararsız (yüzdeler tek tek yuvarlanıp
+ortalanıyor; yüzde ortalamasında olağan gösterim).
+
+**İki denetim zaten yapısal olarak araca özgü:** `kapi-kapsam` girdisini
+`parseLocaleNumber` değişkenlerinden alıyor, `payda` "/ N puan" ilanından —
+ikisi de yalnızca hesaplayıcılarda bulunuyor. Onların `app/tools` sınırı
+eksiklik değil TANIM.
+
+Sonuç: kapsam bilerek dar tutulabilir. Bu denetimlerin aradığı sınıflar
+(bant merdiveni, karar rengi, yuvarlama taşması, eksik tablo alanı) klinik
+HESAP şekilleri; premium ve site sayfaları sunum yapıyor. Dışarısı ölçüldü,
+temiz çıktı ve yeniden ölçmeye gerek yok — o taraf değişmedikçe.
+
 ### En çok kullanılan dört formül aracı sürüldü — hepsi temiz
 
 İnfüzyon serisi kapandıktan sonra aynı yöntem (sür → elde yeniden hesapla)
