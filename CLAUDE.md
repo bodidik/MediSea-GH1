@@ -3129,6 +3129,34 @@ Doğrulaması: yüzey kapının arkasındaysa tarayıcı yönlendirir; o zaman �
 çıktının tamamında bozuk dizelerden biri kalmış mı. Aynı taramayla
 geliştirici yolunun paketlere sızıp sızmadığına da bakılabilir.
 
+### Düzeltmeler CANLIDA doğrulandı — 23 Ağustos 2026
+
+Bu oturumda sekiz civarı gerçek klinik kusur düzeltildi. Hiç sorulmamış soru
+şuydu: **kullanıcıya ulaştı mı?** Dağıtım kırıksa düzeltmelerin hiçbiri
+kimseye ulaşmamış olurdu. Üç ayrı commit'ten üç düzeltme canlıda ölçüldü:
+
+| araç | canlıda ölçülen | düzeltme öncesi |
+|---|---|---|
+| `meld-na` | varsayılan **6** · Cr4·b2·INR1.5 → **28** · kutu sayısı 1 | 1 ve 3, iki onay kutusu |
+| `status-epileptikus` | 150 kg → fenitoin **1500 mg**, fosfenitoin **1500 mg FE**, "tavan uygulandı" bildirimli | 3000 / 3000 |
+| `spot-urine` | üre boşken osmolal açık **basılmıyor**, uyarı çıkıyor | açık 210, yorum tersine dönüyordu |
+
+`status-epileptikus` bilerek seçildi: en SON kod commit'i oydu, yani canlıysa
+öncekiler de canlı. Yine de tek commit'e dayanmamak için iki ayrı düzeltme
+daha ölçüldü.
+
+**Sayılar da güncel** — dört araç eklendikten (127 → 131) sonra üç yüzey
+birbirini tutuyor:
+
+| yüzey | araç | konu | branş |
+|---|---|---|---|
+| ana sayfa | 131 | 410 | 13 |
+| `/tools` | "131 araç listeleniyor" · 134 bağlantı · 18 `h2` | — | — |
+| `/uyelik` | — | 410 | 13 |
+
+"Sayı yazma, saydır" mimarisi araç eklendikten sonra da tutuyor; elle
+güncellenen tek bir sayı yok.
+
 ### Canlı davranış taraması — 20 Ağustos 2026, dokuz ölçüt temiz
 
 Kaynak taramasının göremediği şeyler canlıda ölçüldü. Hepsi TEMİZ çıktı;
