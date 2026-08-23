@@ -4087,6 +4087,73 @@ metnin sarmalayıcının sonlandırıcısını içermediğini kontrol et.** Çar
 basit — yorum metnini ayrı bir dosyaya yaz, betik onu okusun.
 
 
+### SABİT PLAN SINIFI KAPANDI — ve tersi daha ağırdı: ücretsiz kullanıcıya "Premium"
+
+`/tr/premium` ve `/profile`ta bulunan "plan sabit yazılı" kusuru ölçüt hâline
+getirilip süpürüldü. Sınıfın **ters yönü** YDUS panosunda çıktı ve daha ağırdı.
+
+`YdusDashboardClient` şunu yazıyordu:
+
+```js
+// Bu rota zaten premium erişim gerektirdiğinden (bkz. plan.guard.js) rozet sabit gösterilir
+const plan = "premium" as const;
+```
+
+**Gerekçenin İKİ İDDİASI DA YANLIŞTI ve ikisi de ölçüldü:**
+
+| iddia | gerçek |
+|---|---|
+| `plan.guard.js` var | dosya YOK (depoda arandı) |
+| rota premium erişim gerektiriyor | `middleware.ts` yalnızca `/kayseritip/*`, `/admin/*`, `/api/kayseritip/*` eşliyor |
+
+Sonuç ölçüldü: **hiç giriş yapmamış bir ziyaretçi** `/tr/premium/ydus`ta
+kendi hesabında **"Premium" rozeti** görüyordu (sayfa 200, erişim kısıtı yok,
+16 görünür bağlantı).
+
+**Bu yön daha ağır.** Geçen turki kusur premium üyeye "Free" diyordu — eksik
+gösteriyordu. Bu, sahip OLUNMAYAN bir erişimi VAAT ediyor. Depodaki
+*"uydurulmuş bir başarı, çağıranın üstüne kod yazdığı yanlış bir varsayım
+üretir"* kuralının rozet tarafı.
+
+**GENEL DERS: bir sabitin yanındaki GEREKÇEYİ de doğrula.** Yorum bir kapıya
+atıf yapıyordu ve o kapı hiç var olmamıştı. Yorum, sabitin kendisinden daha
+inandırıcı göründüğü için kimse sabiti sorgulamamıştı.
+
+**Ölçüt betiğe alınmadı ama TARANDI:** yorumlarda `bkz. <dosya>` biçiminde
+atıf yapılan yedi dosyadan altısı var, tek eksik `plan.guard.js` idi. Yani
+sınıf tek örnekli ve kapandı. Bu tarama ucuz ve tekrarlanabilir:
+
+```
+grep -rhoE "(bkz\.|see) [A-Za-z0-9_./-]+\.(js|ts|tsx|cjs|json)" --include=*.tsx --include=*.ts
+```
+
+**Sınıfın tamamı karara bağlandı:**
+
+| yer | durum |
+|---|---|
+| `/tr/premium` | sabit `"free"` → oturumdan (önceki tur) |
+| `/profile` | sabit `"free"` → oturumdan (önceki tur) |
+| `/tr/premium/ydus` | sabit `"premium"` → oturumdan (bu tur) |
+| `PremiumDailyProgram` | sabit `"free"` ama ÖLÜ KOD (sıfır içe aktaran) ve "kilitli" dalında bağlamsal olarak doğru |
+| `SinavTakvimiUyarisi` · `SyncDurumu` · `YoneticiDuzenleyici` | yalnızca `status` alıyor — meşru, kullanıcı verisi gerekmiyor |
+
+**Doğrulama, iki yönlü:**
+
+| oturum | rozet önce | rozet sonra |
+|---|---|---|
+| yok (anonim) | **Premium** | **Free** (kontrast 11.87) |
+| premium | Premium | **Premium** (değişmedi) |
+
+Premium yönü geçici dev rotasıyla ölçüldü. **Rota kurarken bir tuzak çıktı:**
+`YdusDashboardClient` yalnızca `SessionProvider` değil `UserProvider` da
+istiyor (`useUser` çağırıyor) — eksikken sayfa 500 verdi. Bir bileşeni kendi
+yerleşiminin DIŞINDA render edeceksen, ihtiyaç duyduğu bütün sağlayıcıları
+say; 500'ün sebebi bileşen değil eksik bağlamdır.
+
+Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
+derleme hatası izi yok.
+
+
 ### Premium giriş sayfası: plan SABİT yazılıydı, sayfa da çıkmazdı
 
 Kullanıcı bildirdi (premium girişi geliştirilmeli). `/tr/premium` ölçüldü ve
