@@ -3310,6 +3310,59 @@ Doğrulaması: yüzey kapının arkasındaysa tarayıcı yönlendirir; o zaman �
 çıktının tamamında bozuk dizelerden biri kalmış mı. Aynı taramayla
 geliştirici yolunun paketlere sızıp sızmadığına da bakılabilir.
 
+### Oturumun düzeltmeleri CANLIDA doğrulandı — hepsi kullanıcıya ulaşmış
+
+Bu oturumda çok sayıda düzeltme gönderildi. Hiç sorulmamış soru yine aynıydı:
+**kullanıcıya ulaştı mı?** Tarayıcıyla canlıda ölçüldü (curl değil).
+
+**Premium giriş sayfası** — kullanıcının kendi bildirdiği yüzey:
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| görünür bağlantı | **0** | **10** |
+| `/uyelik` bağlantısı | 0 | 8 |
+| "Planları gör" birincil eylemi | yok | var |
+| başlıkta siteye dönüş | yok | var |
+| tekrarlanan kilit cümlesi | 7 | **0** |
+| özdeş "Özel İçerik" başlığı | 7 | **0** |
+| kilitli kart, ayırt edilebilir adla | 0 | **7** |
+
+**Rozet dürüstlüğü** — `/tr/premium/ydus`, oturum YOK: rozet **"Free"**
+(önce "Premium" diyordu, yani sahip olunmayan erişimi vaat ediyordu).
+
+**Klinik araçlar:**
+
+| araç | canlıda | önce |
+|---|---|---|
+| `bmi` Hamwi, kadın 170 cm | **60.7 kg** | 64.2 kg |
+| `bmi` Devine, kadın 170 cm | 61.4 kg (değişmedi) | 61.4 kg |
+| `gnri` | cinsiyet seçici + "Lorentz, erkek: … /4" satırı | seçici YOKTU |
+
+`bmi`de sıra da düzeldi: kadında artık Hamwi < Devine (önce tersiydi).
+
+**Başlık araması:**
+
+| ölçüt | canlıda |
+|---|---|
+| canlı bölge yazmadan ÖNCE DOM'da | evet (1) |
+| duyuru | "10 sonuç bulundu." |
+| ESC pencereyi kapatıyor | `defaultPrevented true`, kapandı |
+| sorgu korunuyor | "diyabet" — veri kaybı yok |
+| temizleme düğmesi adı | "Aramayı temizle" |
+
+**Mobil menü (375px):** ESC kapatıyor (`aria-expanded` true→false, görünür
+bağlantı 14→2), **odak açan düğmeye dönüyor**, `aria-controls="ana-menu"`,
+ve negatif kontrol geçiyor — menü kapalıyken ESC yutulmuyor.
+
+**Sayılar hâlâ tutuyor:** `/tools` "131 araç listeleniyor" · 134 araç
+bağlantısı · 18 `h2`. "Sayı yazma, saydır" mimarisi bozulmamış.
+
+Kapsam notu: `kayit` sayfasındaki otomatik giriş düzeltmesi canlıda
+SÜRÜLMEDİ — dalı çizdirmek gerçek bir kayıt (veritabanına yazma) gerektirir.
+Yerelde `fetch` koşumuyla ölçülmüştü; canlı doğrulaması yapılmadı ve
+"doğrulandı" DENMİYOR.
+
+
 ### Düzeltmeler CANLIDA doğrulandı — 23 Ağustos 2026
 
 Bu oturumda sekiz civarı gerçek klinik kusur düzeltildi. Hiç sorulmamış soru
