@@ -3970,6 +3970,82 @@ sürüldü: 10 soru, 7'si bilerek doğru 3'ü bilerek yanlış cevaplandı.
 Geçici rota silinirken `.next/types` altındaki artık da silinmeli; yoksa
 `tsc` olmayan bir modülü aramaya devam eder.
 
+### Oturum yüzeyi sürüldü — biri gerçek kusur, kalanı sağlam
+
+Kullanıcının bildirdiği çıkış kusuru, hiç sürülmemiş bir yüzeyde çıkmıştı.
+O yüzden bütün oturum akışı ölçüldü. Giriş doğrudan MongoDB'ye gidiyor
+(`auth.ts` → `User.findOne`), Express arka ucuna DEĞİL — yani başarısız
+giriş yolu güvenle sürülebiliyor (okuma, yazma yok).
+
+**`/giris` sağlam.** Ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| alan adları | "E-posta", "Şifre" — ikisi de bağlı |
+| yanlış giriş | `role="alert"` · "E-posta veya şifre hatalı." |
+| `aria-invalid` | iki alanda da var |
+| sistem içi ad sızıyor mu | hayır; "kullanıcı yok" ile "parola yanlış" AYIRT EDİLMİYOR (doğru) |
+| yükleme durumu | 0 ms'de `disabled` + "Giriş yapılıyor…" + opaklık 0.7 |
+| çift gönderim | engelleniyor, sonrasında sıfırlanıyor |
+
+**Ölçüm tuzağı — ilk koşumda 5 saniye sürdü ve yavaşlık sanıldı.** İkinci
+koşumda 250 ms. Fark MongoDB'nin SOĞUK bağlantısı; kod kusuru değil. Ama
+soğuk bağlantı gerçek kullanıcının günün ilk girişinde olağan, yani yükleme
+durumunun varlığı tam da orada önemli — ve ölçüldü, ekrana ulaşıyor.
+
+**`/kayit`ta GERÇEK KUSUR: otomatik girişin sonucu atılıyordu.**
+
+```js
+await signIn('credentials', { … });   // dönen değer ATILIYOR
+router.push('/');
+```
+
+Kayıt BAŞARILI olup otomatik giriş başarısız olursa kullanıcı ana sayfaya
+OTURUMSUZ düşüyordu — az önce formu doldurmuşken. Asıl zarar ikinci adımda:
+kaydın olmadığını sanıp yeniden deniyor ve bu kez **"Bu e-posta adresi zaten
+kayıtlı."** ile karşılaşıyor. Çıkmaz sokak, üstelik hesabı gerçekten var.
+
+Bu, belgedeki *"uydurulmuş bir başarı, çağıranın üstüne kod yazdığı yanlış
+bir varsayım üretir"* kuralının ARAYÜZ tarafındaki hâli.
+
+**DOĞRULAMA — veritabanına yazmadan dalı çizdirmenin yolu.** Gerçek kayıt
+yazma demek. Bunun yerine belgede kayıtlı `fetch` koşumu kullanıldı: iframe
+içinde yalnızca `/api/auth/register` sahte 201 döndürüyor, `signIn` GERÇEK
+uca gidip kullanıcı olmadığı için gerçekten başarısız oluyor. Yani senaryo
+(kayıt oldu + giriş olmadı) yazma olmadan kuruldu.
+
+| ölçüt | sonuç |
+|---|---|
+| kayıt ucu koşumla çağrıldı | evet — veritabanına hiç gidilmedi |
+| `signIn` gerçek uca gitti ve düştü | evet |
+| kullanıcı `/`'a oturumsuz düşüyor mu | **hayır**, `/kayit`ta kalıyor |
+| mesaj | "Hesabın oluşturuldu ama otomatik giriş yapılamadı…" |
+| çıkış yolu | "Giriş yap" → `/giris` |
+| düğme yeniden etkin mi | evet, kilitli kalmıyor |
+
+**Negatif kontrol ayrı ölçümde:** kaydın KENDİSİ başarısız olduğunda (kısa
+parola) çıkan mesaj "Şifre en az 6 karakter olmalıdır." — yani yeni dal
+yersiz ateşlemiyor. O ölçüm de yazma yapmıyor: uzunluk denetimi uç noktada
+veritabanı erişiminden ÖNCE.
+
+**Kayıt ucunun hata metinleri temiz** (sistem içi ad, yığın izi, tablo adı
+yok): "Tüm alanlar zorunludur." · "Şifre en az 6 karakter olmalıdır." ·
+"Bu e-posta adresi zaten kayıtlı." · "Sunucu hatası."
+
+**Başarı sonrası yönlendirme `signOut` kusurundan ETKİLENMİYOR.** İki sayfa
+da `router.push('/')` kullanıyor — Next istemci yönlendiricisi origin'i
+tarayıcıdan alıyor, NextAuth'un çıkardığı tabana bakmıyor. Yani `0.0.0.0`
+kusuru gerçekten `signOut`'a özgüydü.
+
+**DEĞİŞTİRİLMEYEN, NOT EDİLEN:** `?gerekli=` bir SEBEP bayrağı
+(`premium` / `kayseritip`), hedef taşımıyor. Korumalı bir sayfadan `/giris`e
+yönlendirilen kullanıcı, giriş yaptıktan sonra gitmek istediği yere değil
+`/`'a düşüyor — yönlendiren üç yer de (`middleware.ts`, `kayseritip/layout`,
+`AccessGate`) istenen yolu BİLİYOR ve atıyor. Bu bir dönüşüm sürtünmesi ama
+ölçülmüş bir kusur değil; üstelik hedefi geri okumak açık yönlendirme
+(open redirect) doğrulaması gerektirir. Ürün kararı olarak bırakıldı.
+
+
 ### `-H 0.0.0.0` NextAuth'un TABAN ADRESİNE sızıyor — çıkış 0.0.0.0'a gidiyordu
 
 Kullanıcı bildirdi: üyelikten çıkınca tarayıcı **"Bu siteye ulaşılamıyor ·
