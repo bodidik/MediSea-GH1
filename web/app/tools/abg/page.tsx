@@ -15,6 +15,7 @@ import {
   HCO3_UST,
   AG_UST,
   type Bulgu,
+  KOMPANZASYON_CETVELI,
 } from "@/app/tools/lib/asit-baz";
 
 /**
@@ -449,19 +450,15 @@ export default function AbgPage() {
             Kullanılan kompanzasyon formülleri
           </p>
           <div className="space-y-2">
-            {[
-              { d: "Metabolik asidoz", f: "PaCO₂ = 1.5 × HCO₃⁻ + 8 ± 2  (Winter)" },
-              { d: "Metabolik alkaloz", f: "PaCO₂ = 0.7 × HCO₃⁻ + 21 ± 5" },
-              { d: "Solunum asidozu (akut)", f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 1" },
-              { d: "Solunum asidozu (kronik)", f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 3.5" },
-              { d: "Solunum alkalozu (akut)", f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 2" },
-              { d: "Solunum alkalozu (kronik)", f: "ΔHCO₃⁻ = ΔPaCO₂/10 × 5" },
-            ].map((r) => (
-              <div key={r.d} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5 border-b border-slate-100">
+            {/* Cetvel motorun sabitlerinden TÜRER — elle yazılmış bir kopya
+                değil. Bir dönem burada aynı sayılar ikinci kez yazılıydı ve
+                motor değişse cetvel sessizce bayatlardı. */}
+            {KOMPANZASYON_CETVELI.map((r) => (
+              <div key={r.durum} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5 border-b border-slate-100">
                 <span className="text-[10px] font-black text-blue-900 uppercase tracking-widest w-full sm:w-48 sm:shrink-0">
-                  {r.d}
+                  {r.durum}
                 </span>
-                <span className="text-[11px] font-bold text-blue-900 font-mono">{r.f}</span>
+                <span className="text-[11px] font-bold text-blue-900 font-mono">{r.formul}</span>
               </div>
             ))}
           </div>

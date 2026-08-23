@@ -128,6 +128,41 @@ export function makulMu(ph: number, pco2: number, hco3: number) {
   );
 }
 
+/**
+ * KOMPANZASYON SABİTLERİ — TEK KAYNAK.
+ *
+ * Bu sayılar bir dönem ÜÇ yerde ayrı ayrı yazılıydı: hesabın içinde
+ * (`0.7 * hco3 + 21`), hemen ALTINDAKİ formül dizesinde
+ * ("PaCO₂ = 0.7 × HCO₃⁻ + 21 ± 5") ve `abg` sayfasındaki referans
+ * cetvelinde. Üçü de elle güncellenmek zorundaydı.
+ *
+ * Ölçüldüğünde üçü de uyuşuyordu — yani bu bir kusur DÜZELTMESİ değil,
+ * ayrışma İMKÂNININ kaldırılması. Bu depoda "aynı değer iki yerde ayrı
+ * tutuluyorsa er geç ayrışır" kalıbı defalarca gerçek kusur üretti:
+ * premium modül ilanı, eşik–etiket çifti, payda–tavan, spot-urine'de
+ * rengin karardan bağımsız hesaplanması. Çare her seferinde aynıydı:
+ * tek kaynağa bağla.
+ */
+export const KOMPANZASYON_SABIT = {
+  metabolikAsidoz:  { egim: 1.5, sabit: 8,  bant: 2, ek: "  (Winter)" },
+  metabolikAlkaloz: { egim: 0.7, sabit: 21, bant: 5, ek: "" },
+  solunumAsidozu:   { akut: { carpan: 1, bant: 2 }, kronik: { carpan: 3.5, bant: 3 } },
+  solunumAlkalozu:  { akut: { carpan: 2, bant: 2 }, kronik: { carpan: 5,   bant: 2 } },
+} as const;
+
+const metabolikFormul = (s: { egim: number; sabit: number; bant: number; ek: string }) =>
+  `PaCO₂ = ${s.egim} × HCO₃⁻ + ${s.sabit} ± ${s.bant}${s.ek}`;
+
+/** `abg` sayfasındaki referans cetveli — motorun kullandığı sayılardan türer. */
+export const KOMPANZASYON_CETVELI: ReadonlyArray<{ durum: string; formul: string }> = [
+  { durum: "Metabolik asidoz",  formul: metabolikFormul(KOMPANZASYON_SABIT.metabolikAsidoz) },
+  { durum: "Metabolik alkaloz", formul: metabolikFormul(KOMPANZASYON_SABIT.metabolikAlkaloz) },
+  { durum: "Solunum asidozu (akut)",    formul: `ΔHCO₃⁻ = ΔPaCO₂/10 × ${KOMPANZASYON_SABIT.solunumAsidozu.akut.carpan}` },
+  { durum: "Solunum asidozu (kronik)",  formul: `ΔHCO₃⁻ = ΔPaCO₂/10 × ${KOMPANZASYON_SABIT.solunumAsidozu.kronik.carpan}` },
+  { durum: "Solunum alkalozu (akut)",   formul: `ΔHCO₃⁻ = ΔPaCO₂/10 × ${KOMPANZASYON_SABIT.solunumAlkalozu.akut.carpan}` },
+  { durum: "Solunum alkalozu (kronik)", formul: `ΔHCO₃⁻ = ΔPaCO₂/10 × ${KOMPANZASYON_SABIT.solunumAlkalozu.kronik.carpan}` },
+];
+
 function kompanzasyonHesapla(
   tip: BozuklukTip,
   sure: "akut" | "kronik",
@@ -135,11 +170,12 @@ function kompanzasyonHesapla(
   hco3: number,
 ): Kompanzasyon | null {
   if (tip === "metabolik-alkaloz") {
-    const b = 0.7 * hco3 + 21;
-    const alt = yuvarla(b - 5);
-    const ust = yuvarla(b + 5);
+    const s = KOMPANZASYON_SABIT.metabolikAlkaloz;
+    const b = s.egim * hco3 + s.sabit;
+    const alt = yuvarla(b - s.bant);
+    const ust = yuvarla(b + s.bant);
     return {
-      formul: "PaCO₂ = 0.7 × HCO₃⁻ + 21 ± 5",
+      formul: metabolikFormul(s),
       beklenenAlt: alt,
       beklenenUst: ust,
       olculen: pco2,
@@ -152,11 +188,12 @@ function kompanzasyonHesapla(
     };
   }
   if (tip.startsWith("metabolik-asidoz")) {
-    const b = 1.5 * hco3 + 8;
-    const alt = yuvarla(b - 2);
-    const ust = yuvarla(b + 2);
+    const s = KOMPANZASYON_SABIT.metabolikAsidoz;
+    const b = s.egim * hco3 + s.sabit;
+    const alt = yuvarla(b - s.bant);
+    const ust = yuvarla(b + s.bant);
     return {
-      formul: "PaCO₂ = 1.5 × HCO₃⁻ + 8 ± 2  (Winter)",
+      formul: metabolikFormul(s),
       beklenenAlt: alt,
       beklenenUst: ust,
       olculen: pco2,
@@ -169,13 +206,12 @@ function kompanzasyonHesapla(
     };
   }
   if (tip === "solunum-asidozu") {
-    const carpan = sure === "kronik" ? 3.5 : 1;
-    const pay = sure === "kronik" ? 3 : 2;
-    const b = 24 + ((pco2 - 40) / 10) * carpan;
-    const alt = yuvarla(b - pay);
-    const ust = yuvarla(b + pay);
+    const s = KOMPANZASYON_SABIT.solunumAsidozu[sure];
+    const b = 24 + ((pco2 - 40) / 10) * s.carpan;
+    const alt = yuvarla(b - s.bant);
+    const ust = yuvarla(b + s.bant);
     return {
-      formul: `HCO₃⁻ = 24 + (ΔPaCO₂/10) × ${carpan}  (${sure})`,
+      formul: `HCO₃⁻ = 24 + (ΔPaCO₂/10) × ${s.carpan}  (${sure})`,
       beklenenAlt: alt,
       beklenenUst: ust,
       olculen: hco3,
@@ -188,12 +224,12 @@ function kompanzasyonHesapla(
     };
   }
   if (tip === "solunum-alkalozu") {
-    const carpan = sure === "kronik" ? 5 : 2;
-    const b = 24 - ((40 - pco2) / 10) * carpan;
-    const alt = yuvarla(b - 2);
-    const ust = yuvarla(b + 2);
+    const s = KOMPANZASYON_SABIT.solunumAlkalozu[sure];
+    const b = 24 - ((40 - pco2) / 10) * s.carpan;
+    const alt = yuvarla(b - s.bant);
+    const ust = yuvarla(b + s.bant);
     return {
-      formul: `HCO₃⁻ = 24 − (ΔPaCO₂/10) × ${carpan}  (${sure})`,
+      formul: `HCO₃⁻ = 24 − (ΔPaCO₂/10) × ${s.carpan}  (${sure})`,
       beklenenAlt: alt,
       beklenenUst: ust,
       olculen: hco3,
