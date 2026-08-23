@@ -8,13 +8,29 @@ export default function GnriPage() {
   const [alb, setAlb]       = React.useState("");
   const [weight, setWeight] = React.useState("");
   const [height, setHeight] = React.useState("");
+  const [sex, setSex]       = React.useState<"m" | "f">("m");
 
   const albN    = parseLocaleNumber(alb);
   const weightN = parseLocaleNumber(weight);
   const heightN = parseLocaleNumber(height);
 
-  // Ideal body weight (Lorenz formula — used in GNRI)
-  const ibw = heightN > 0 ? (heightN - 100) - (heightN - 150) / 4 : null;
+  /**
+   * İdeal ağırlık — Lorentz formülü, GNRI'nin (Bouillanne 2005) kullandığı hâli.
+   *
+   * BÖLEN CİNSİYETE BAĞLI: erkekte 4, kadında 2.5. Bir dönem burada koşulsuz
+   * 4 yazıyordu, yani HER hastaya erkek varyantı uygulanıyordu — üstelik
+   * araçta cinsiyet alanı hiç yoktu, yani varsayım ekranda görünmüyordu.
+   *
+   * Ölçüldü (165 cm · 55 kg · albumin 3.6 g/dL bir kadın):
+   *   erkek varyantı → ideal 61.3 kg → GNRI 91.0 → "ORTA RİSK"
+   *   kadın varyantı → ideal 59.0 kg → GNRI 92.5 → "DÜŞÜK RİSK"
+   * Tek bir bant kayıyor. GNRI geriyatrik bir indeks ve o yaş grubunda
+   * kadınlar çoğunlukta, yani sapma hedef nüfusun büyük kısmını vuruyordu.
+   *
+   * Kardeş araç `bmi` bu kalıbı zaten doğru kuruyor (Devine ve Hamwi de
+   * cinsiyete bağlı, orada seçici var); `gnri` istisnaydı.
+   */
+  const ibw = heightN > 0 ? (heightN - 100) - (heightN - 150) / (sex === "m" ? 4 : 2.5) : null;
   const wRatio = ibw !== null && ibw > 0 && weightN > 0 ? Math.min(weightN / ibw, 1) : null;
 
   // GNRI = 1.489 × Albumin (g/L) + 41.7 × (Weight / IBW)
@@ -28,7 +44,7 @@ export default function GnriPage() {
     return { label: "YÜKSEK RİSK", sub: "GNRI < 82", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
   const result = gnri !== null ? getResult(gnri) : null;
-  const params = { alb: albN, weight: weightN, height: heightN };
+  const params = { alb: albN, weight: weightN, height: heightN, sex };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -46,10 +62,20 @@ export default function GnriPage() {
         </div>
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
+          <div className="flex gap-3">
+            {(["m", "f"] as const).map(v => (
+              <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center gap-2 p-3 rounded-xl border cursor-pointer transition-all
+                ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
+                <input type="radio" name="gnri-cinsiyet" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
+                <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
+              </label>
+            ))}
+          </div>
+
           <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4">
             <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-1">Formül</p>
             <p className="text-sm font-bold text-blue-900">GNRI = 1.489 × Albumin (g/L) + 41.7 × (Mevcut Ağırlık / İdeal Ağırlık)</p>
-            <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdeal ağırlık (Lorenz): Boy(cm) − 100 − (Boy − 150)/4</p>
+            <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdeal ağırlık (Lorentz, {sex === "m" ? "erkek" : "kadın"}): Boy(cm) − 100 − (Boy − 150)/{sex === "m" ? "4" : "2,5"}</p>
           </div>
 
           {[
