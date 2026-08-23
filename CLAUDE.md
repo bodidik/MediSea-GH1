@@ -1335,6 +1335,42 @@ adrenaline geçtiğinde uyarıyı kaybediyor.
 Metni YAZMADIM: klinik uyarı içeriktir ve içerik kullanıcının sorumluluğu.
 Ölçüldü, yerleri ve gerekçesi yazıldı, bekleyen içerik işi olarak duruyor.
 
+### ACİL / İNFÜZYON SERİSİ KAPANDI — 18 aracın 18'i bağımsız hesapla sürüldü
+
+Sürmekte olan iş tamamlandı. Her araç tarayıcıda gerçek girdiyle sürüldü ve
+her sayı ELDE yeniden hesaplanıp karşılaştırıldı. Kaynak okumak sayılmadı;
+"ben yazdım" hiç sayılmadı.
+
+| araç | doğrulanan |
+|---|---|
+| `heparin-nomogram` | AKS tavanları 4000 Ü / 1000 Ü/sa, kırpma bildirimli |
+| `nac-infuzyon` | üç torba + 110 kg dozlama tavanı |
+| `fosfat-replasman` | 44.8 mmol · 65.7 mEq · 6.6 saat |
+| `potasyum-replasman` | periferik 1500/6/250 · santral 600/3/200 |
+| `fomepizol` | 15/10/15 mg/kg |
+| `dka-infuzyon` | 15–20 mL/kg · 0.1 Ü/kg (bolussuz varyant dahil) |
+| `tromboliz-doz` | 90 mg tavanı, bolus+kalan toplamı tutuyor |
+| `vazoaktif-infuzyon` | mcg/kg/dk ve mcg/dk ayrımı; kilo iki katına çıkınca nitrogliserin DEĞİŞMİYOR |
+| `sedasyon-infuzyon` | yedi ilacın birim tabanı — **kusur bulundu ve düzeltildi** (torba ömrü yuvarlanmış hızdan) |
+| `bikarbonat-infuzyon` | 175 mEq · yarım 88 · ampul 17.5 · izotonik 1167 mL |
+| `magnezyum-infuzyon` | 2 g → 16.2 mEq · 300 mL/sa; 4 g → 32.5 mEq · 42 mL/sa |
+| `kalsiyum-infuzyon` | 43.75 → 44 mg/sa · 43 mL/sa (yuvarlama %0.5, tutarlı) |
+| `digoksin-toksisitesi` | üç kip: düzey, alınan miktar, ampirik (akut/kronik canlı) |
+| `status-epileptikus` | yedi ajan — **kusur bulundu ve düzeltildi** (fenitoin/fosfenitoin tavanı boştu) |
+| `antikoagulan-geri-dondurme` | protamin zaman oranları, PCC sınırları, iki tavan |
+| `hiperkalemi-tedavi` | EKG ve anürik denetimleri kararı gerçekten değiştiriyor |
+| `lipid-emulsiyon` | 105 mL · 17.5 mL/dk = 1050 mL/sa · 840 mL tavan · 42 dk |
+| `naloksan-infuzyon` | 2/3 oranı; 250 mL/sa makullük tavanı hızı bastırıyor, saatlik dozu bırakıyor |
+
+**Seride iki kusur çıktı, ikisi de aritmetikti** — biri yuvarlamanın ikinci
+hesaba taşması, biri eksik doz tavanı. Hiçbiri lint/typecheck/build ile
+görülemezdi; ikisi de yalnızca **ekrandaki sayıyı elle hesaplananla
+karşılaştırınca** ortaya çıktı.
+
+**Yöntemin özeti:** aracı sür, her sayıyı elde yeniden hesapla, sonra
+tavanın ISIRDIĞI ve ISIRMADIĞI iki girdiyle birden ölç. İkinci ölçüm
+olmadan "düzeltme özelliği öldürdü mü" sorusu cevapsız kalıyor.
+
 ### Kendi yazdığın aracı da BAĞIMSIZ hesapla — "ben yazdım" doğrulama değil
 
 Seride yeniden hesapla sürmediğim dört araç kalmıştı ve dördü de bu oturumda
