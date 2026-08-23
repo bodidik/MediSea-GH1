@@ -4087,6 +4087,76 @@ metnin sarmalayıcının sonlandırıcısını içermediğini kontrol et.** Çar
 basit — yorum metnini ayrı bir dosyaya yaz, betik onu okusun.
 
 
+### 26 dosya kendi yolunu YANLIŞ yazıyordu — 24'ü "canlı görünen" ölü rota
+
+Yorumdaki atıfın gerçek olup olmadığı ölçütü (bkz. `plan.guard.js` turu)
+genelleştirildi. Önce geniş tarama: 7373 yorum satırı, 158 benzersiz dosya
+atfı. Sonra daha keskin bir ölçüt — **dosyanın İLK satırında kendi yolunu
+yazan 101 dosya** var ve 26'sında yazılan yol gerçeği tutmuyordu.
+
+**24'ü tek bir kalıp: alt çizgi.** Bu dosyalar bilerek rotadan çıkarılmış
+(`admin` → `_admin`, `content` → `_content`, `plan` → `_plan`,
+`endokrinoloji` → `_endokrinoloji`) ama başlıkları hâlâ ESKİ, CANLI GÖRÜNEN
+yolu yazıyordu.
+
+**Bu kozmetik değil.** Belge tam bu yüzden yapılmış bir yanlış okumayı
+kaydediyor: *"Kaynağa bakınca `/api/_plan/set` yetkisiz plan değiştiriyor
+sanılıyor — öyle bir uç yok."* Bayat başlık o yanlış okumanın MEKANİZMASI:
+dosyayı açan kişi başlıkta `/api/admin/...` görüp ucun canlı olduğunu sanıyor.
+
+Başlıklar gerçek yolu yazıyor; alt çizgili olanlar ayrıca **"ROTAYA
+ALINMIYOR"** notu taşıyor. Doğrulama: sapan 26 → **0**, 101 dosyanın 101'i
+tutuyor. Değişim yalnızca yorum satırında — 26 dosyanın her birinde TAM BİR
+satır (`git diff --numstat` ile doğrulandı).
+
+**ÖLÇÜT İLK ÇALIŞTIRMADA SAHTE ADAY ÜRETTİ.** 45 aday çıktı ve yarısında
+"gerçek" ile "yazılan" BİREBİR AYNI görünüyordu. Sebep: Windows yollu
+başlıklarda (`// C:\Users\...`) desen satır sonundaki `\r` karakterini de
+yakalıyordu. Kırpılınca 26'ya düştü. "Bir tarama ilk çalıştırmada aday
+üretiyorsa önce ölçütü sına" kuralının bu turdaki hâli.
+
+**AYRI BULGU — `app/api/programs/routes.ts` adı ÇOĞUL.** Next.js rota
+dosyasının `route.ts` olmasını ister; bu ad kaydedilmiyor ve içindeki `GET`
+hiç çalışmıyor. Kaynakla değil DAVRANIŞLA doğrulandı:
+
+| adres | sonuç |
+|---|---|
+| `/api/programs` | **404** (bu dosya) |
+| `/api/programs/deneme` | 503 (`[...path]/route.ts`, dürüst hata) |
+| `/_programs` | 404 (tek çağıran, o da alt çizgili) |
+
+Ölü uç + ölü çağıran, yani kullanıcıya ulaşan kusur YOK.
+
+**ADI BİLEREK DÜZELTİLMEDİ.** `route.ts` yapmak bugün VAR OLMAYAN bir ucu
+canlıya açardı — bu bir kusur düzeltmesi değil, istenmeyen bir yüzey eklemek
+olurdu. Bunun yerine dosyaya neden kaydedilmediği ve ölçülen davranış yazıldı.
+**Ölü kodu "düzeltmek" bazen onu diriltmektir; ölçüt "kod doğru mu" değil,
+"bu değişiklik kullanıcıya ne yapar" olmalı.**
+
+### Oturum içi gerileme kontrolü — sekiz arayüz dosyası, denetimler temiz
+
+Bu oturumda sekiz arayüz dosyası değişti (SiteHeader ×3, ReadingTools,
+RequirePlan, PremiumCard, PlanBadge, premium girişi, profil, YDUS panosu).
+Deponun kendi denetimleri KENDİ İŞ ÜZERİNDE sürüldü:
+
+| denetim | sonuç |
+|---|---|
+| `arayuz-denetim` | kusur yok |
+| `ic-bilesen-denetim` (CI kapısı) | 404 tsx, 659 bileşen — temiz |
+| `olu-denetim` | aynı 4 karara bağlanmış aday, yeni yok |
+| `saydamlik-denetim` · `renk-cifti-denetim` | yeni aday yok |
+
+Üç eski verdikt belgeye güvenmek yerine YENİDEN ölçüldü ve üçü de doğru
+çıktı: `checkTopicAccess` gerçek oturumu/planı okuyor (dürüst); liderlik
+tablosundaki sahte isimler ilan edilmiş (**ilan görünür, 16px, kontrast 7.87
+ve sahte isimlerden ÖNCE** — y 203 ↔ 376); `SimulatorEngine` hâlâ yalnızca
+alt çizgili klasörlerden çağrılıyor (dosya `soru-cozum/` altında DURUYOR ama
+`soru-cozum/page.tsx` onu içe aktarmıyor).
+
+Sahte veri sınıfı da tarandı: `MOCK_`/`DEMO_` taşıyan tek dosya liderlik ve
+orada iki ayrı ilan cümlesi var. Sınıf tek örnekli ve dürüst.
+
+
 ### SABİT PLAN SINIFI KAPANDI — ve tersi daha ağırdı: ücretsiz kullanıcıya "Premium"
 
 `/tr/premium` ve `/profile`ta bulunan "plan sabit yazılı" kusuru ölçüt hâline
