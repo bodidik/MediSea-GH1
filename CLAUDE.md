@@ -1151,6 +1151,58 @@ olabilir.
 "EVRE 4 — ÇOK CİDDİ" hiçbirine uymuyordu. Kaynaktaki gerçek etiket
 dizesini oku, sonra ölç.
 
+### İKİ GERÇEKLİK henüz AYRIŞMADAN tekleştirildi — asit-baz kompanzasyon sabitleri
+
+Bu depodaki en tekrar eden kusur sınıfı "aynı değer iki yerde ayrı tutuluyor"
+(premium modül ilanı · eşik–etiket çifti · payda–tavan · spot-urine'de rengin
+karardan bağımsız hesaplanması). Hepsinde çare aynıydı: **tek kaynağa bağla.**
+
+`abg`de aynı şekil ÜÇ katmanlıydı ve henüz ayrışmamıştı:
+
+| katman | nerede |
+|---|---|
+| aritmetik | `const b = 0.7 * hco3 + 21` |
+| formül dizesi | HEMEN ALTINDA: `"PaCO₂ = 0.7 × HCO₃⁻ + 21 ± 5"` |
+| referans cetveli | `abg/page.tsx`te elle yazılmış altı satır |
+
+Üçü de elle güncellenmek zorundaydı. **Ölçüldüğünde üçü de uyuşuyordu** —
+yani bu bir kusur düzeltmesi DEĞİL, ayrışma imkânının kaldırılması. Sayılar
+`KOMPANZASYON_SABIT` altında toplandı; cetvel (`KOMPANZASYON_CETVELI`) artık
+o sabitlerden TÜRÜYOR ve sayfa onu içe aktarıyor.
+
+**Davranış değişmediği ÖLÇÜLDÜ ve negatif kontrol iki yöntemli:**
+
+- **Ekran:** referans cetvelinin altı satırı, değişiklikten önce alınan
+  yakalamayla **birebir aynı** (dize karşılaştırması, fark 0).
+- **Motor:** saf modül olduğu için `node --experimental-strip-types` ile
+  doğrudan sürüldü; altı dalın altısı da elle hesapla birebir — asimetrik
+  bantlar dahil (metabolik alkaloz ±5, kronik solunum asidozu ±3).
+
+| dal | motor | elle |
+|---|---|---|
+| metabolik asidoz (Winter) | 21–25 | 1.5×10+8 = 23 ± 2 |
+| metabolik alkaloz | 42.6–52.6 | 0.7×38+21 = 47.6 ± 5 |
+| solunum asidozu akut ×1 | 24–28 | 24 + (20/10)×1 ± 2 |
+| solunum asidozu kronik ×3.5 | 28–34 | 24 + (20/10)×3.5 ± 3 |
+| solunum alkalozu akut ×2 | 19.6–23.6 | 24 − (12/10)×2 ± 2 |
+| solunum alkalozu kronik ×5 | 16–20 | 24 − (12/10)×5 ± 2 |
+
+**Tekleştirmenin GERÇEKTEN olduğu ayrıca sayıldı** — "davranış aynı" tek
+başına yeterli kanıt değil, çünkü hiçbir şey yapmamak da aynı sonucu verir:
+sayfada elle yazılmış kompanzasyon formülü **0**, motorda her sabit **tek
+satırda**. Bir tekleştirmeyi doğrularken çıktının aynı kaldığını değil,
+KOPYANIN kaybolduğunu ölç.
+
+### Çevirim katsayıları ve `abg` ekran–motor uyumu ölçüldü — temiz
+
+`unit-converter`ın 20 analitinin 20'si molekül ağırlığından türetilenle
+birebir: kreatinin 88.4 = 10000/113.12 · bilirubin 17.104 = 10000/584.66 ·
+ürik asit 59.48 = 10000/168.11 · amonyak 0.5872 = 10/17.031 · demir
+0.179 = 10/55.845 · kolesterol 1/38.67 · trigliserid 1/88.57 · HbA1c
+NGSP↔IFCC ana denklemi. Gidiş-dönüş yapısal olarak tutarlı, çünkü her
+analit tek bir `k`dan hem `ileri` hem `geri` üretiyor.
+
+
 ### KARDEŞ ARAÇLA KARŞILAŞTIR — `gnri` cinsiyet dalını atlıyordu
 
 Bu turun kusurunu bulan şey ne bir denetim betiği ne de kaynak okumaktı:
