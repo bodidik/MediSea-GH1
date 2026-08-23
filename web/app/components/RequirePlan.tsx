@@ -46,7 +46,14 @@ export default function RequirePlan({
     return (
       <Link
         href="/uyelik"
-        aria-label={baslik ? `${baslik}: üyelikle açılır — planları gör` : "Üyelikle açılır — planları gör"}
+        /* Etiket "planları gör" DEĞİL — ölçüldü: /uyelik sayfasının ilk
+           başlığı "Premium henüz satışta değil" ve fiyat bilinçli olarak yok.
+           "Planları gör" bir fiyat listesi vaat ediyordu; hedef onu
+           karşılamıyordu. "Neler dahil" sayfanın bugün GERÇEKTEN anlattığı
+           şey (ücretsiz/premium ayrımı, kapsam sayıları) ve satış açılınca
+           da yanlışlaşmıyor. Avlanan "ilan ≠ gerçek" sınıfını kendi
+           etiketinde üretme. */
+        aria-label={baslik ? `${baslik}: üyelikle açılır — neler dahil?` : "Üyelikle açılır — neler dahil?"}
         className="koyu-yuzey group my-2 flex items-center gap-3 rounded-xl border border-blue-900/50 bg-slate-800 p-4 shadow-inner transition-colors hover:bg-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
       >
         <span
@@ -60,7 +67,7 @@ export default function RequirePlan({
 
         <span className="min-w-0">
           <span className="block text-sm font-bold text-slate-200">Üyelikle açılır</span>
-          <span className="block text-xs font-medium text-slate-400">Planları gör</span>
+          <span className="block text-xs font-medium text-slate-400">Neler dahil?</span>
         </span>
 
         <span

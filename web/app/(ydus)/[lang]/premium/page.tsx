@@ -127,8 +127,9 @@ export default function PremiumPage() {
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-slate-300">
                   Aralıklı tekrar radarı, sınav simülatörü, vaka kokpiti ve konu
-                  haritası dahil tüm çalışma modülleri premium planla kullanıma
-                  açılır. Konu anlatımları ve klinik hesaplayıcılar ücretsiz kalır.
+                  haritası dahil çalışma modülleri Premium üyelere ait. Premium
+                  henüz satışta değil — konu anlatımları ve klinik
+                  hesaplayıcılar ücretsiz, satış açıldığında burada duyurulur.
                 </p>
               </div>
 
@@ -137,7 +138,11 @@ export default function PremiumPage() {
                   href="/uyelik"
                   className="rounded-full bg-amber-400 px-6 py-3 text-center text-sm font-black uppercase tracking-widest text-amber-950 shadow-lg transition-all hover:bg-amber-300 hover:shadow-amber-500/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
                 >
-                  Planları gör
+                  {/* "Planları gör" DEĞİL — /uyelik "Premium henüz satışta
+                      değil" diyor ve fiyat bilinçli olarak yok (ölçüldü).
+                      Fiyat listesi vaat eden bir etiket hedefte
+                      karşılıksız kalıyordu. */}
+                  Neler dahil?
                 </Link>
                 <Link
                   href="/topics"
