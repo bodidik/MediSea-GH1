@@ -591,6 +591,7 @@ node scripts/yuvarlama-denetim.cjs   # yuvarlanmış değer ikinci hesaba giriyo
 node scripts/yuvarlama-denetim.cjs --kontrol
 node scripts/eksik-alan-denetim.cjs   # tablo alanı çoğunlukta dolu, birkaçında boş mu (CI kapısı DEĞİL)
 node scripts/eksik-alan-denetim.cjs --kontrol
+node scripts/yorum-korlugu-denetim.cjs   # denetimler YORUMU kusur sanıyor mu (meta denetim)
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
 
@@ -1257,6 +1258,50 @@ bağlı ("Hasta ağırlığı", "Doz", "İlaç miktarı", "Toplam hacim"). Belge
 "kaynakta `htmlFor` aramak yanıltır" uyarısının ayna hâli: saran etiket
 aramak da tek başına yanıltıyor. Adı HESAPLAT — aria-label → aria-labelledby
 → label[for] → saran label sırasıyla.
+
+### Yorum körlüğü ÜÇ KEZ tekrarladı — artık meta denetimi var
+
+Bu depoda yorumlar geçmiş kusurları BİREBİR alıntılıyor. Kaynak tarayan bir
+ölçüt yorumları elemezse iki yönde birden bozuluyor ve üçü de yaşandı:
+
+| denetim | ne oldu |
+|---|---|
+| `yuvarlama-denetim` | JSDoc satırının `*` önekini ÇARPMA sandı, `fomepizol`u kusurlu gösterdi |
+| `eksik-alan-denetim` | nesne içindeki yorum anahtarı virgülden ayırdı, EKLENMİŞ alanı "eksik" raporladı |
+| `olu-denetim` | yalnızca yorumda geçen `useState` satırını ölü durum saydı |
+
+Üçüncüsü tek tek fark edilmedi, **bir meta denetimle ölçüldü**:
+`scripts/yorum-korlugu-denetim.cjs` hedef şekilleri SADECE yorum içinde
+taşıyan bir tohum kurup 13 denetimi o ağaca yönlendiriyor. Tohumu bildiren
+denetim kördür. `olu-denetim` düzeltilmeden önce bu testte DÜŞÜYORDU —
+yani test sentetik değil, gerçek bir kusur yakalamış hâli.
+
+Çare her seferinde aynı: yorumları SİLME, **boşlukla doldur** — satır
+numaraları korunsun, rapor doğru satırı göstersin.
+
+**İkinci bulgu: `ic-bilesen-denetim` yönlendirilemiyordu.** Bu bir CI KAPISI
+ve kök alamadığı için ne tarihsel sürümle ne tohumla sınanabiliyordu; meta
+test onu "sınanamadı" diye atlamak zorunda kaldı. Belgede aynı eksik
+`arayuz-denetim` için zaten kayıtlıydı ("kör olduğu için değil, SINANAMADIĞI
+için fark edememek daha kötü"). `--kok` eklendi.
+
+**Üçüncü bulgu — meta testin KENDİ tohumu eksikti.** Denetimler aynı ağaç
+düzenini beklemiyor:
+
+```
+araç şekli : <kök>/<araç>/page.tsx      payda · bant · karar · yuvarlama…
+depo şekli : <kök>/app/**.tsx           arayuz · saydamlik · renk-cifti…
+```
+
+Tek şekil yazıldığında `arayuz-denetim` tohumda SIFIR öge ölçtü ve "temiz"
+göründü. Kusur denetimde değil tohumdaydı — ama **"0 kusur" ile "0 ölçüm"
+ayrımı testin içine konmasa fark edilmezdi.** Meta test artık her denetimin
+raporundaki sayıya bakıyor; sıfırsa "temiz" demiyor, "SINANAMADI" diyor.
+
+**Bayatlama koruması:** `scripts/` altında listede olmayan bir
+`*-denetim.cjs` varsa uyarıyor. İlk çalıştırmada sekiz denetimi işaretledi;
+üçü gerçekten eksikti ve listeye alındı, beşi içerik (JSON) taradığı için
+gerekçesiyle kapsam dışına yazıldı.
 
 ### Eksik alan ölçütü betiğe alındı — ve ilk çalıştırmada KENDİ yorumuma takıldı
 
@@ -2233,6 +2278,7 @@ Altı denetimin üçünde bu oturumda kör/bozuk ölçüt bulundu. Durum tek yer
 | `kapi-kapsam-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (spot-urine uOsmCalc) | konumsal arg |
 | `yuvarlama-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (sedasyon-infuzyon:224) | konumsal arg |
 | `eksik-alan-denetim` | ✓ | ✓ 2 biçim | ✓ **gerçek kusurla** (status-epileptikus tavanMg) | konumsal arg |
+| `yorum-korlugu-denetim` | — | — | ✓ **gerçek kusurla** (olu-denetim düzeltmeden önce düşüyordu) | 13 denetimi sürer |
 | `arayuz-denetim` | 5 sınıf | ✓ sayıyla | 129 satır | `--kok` |
 
 **`esik-etiket-denetim`in tarihsel vakası YOK ve olamaz:** doğduğu kusur

@@ -102,7 +102,18 @@ const kokListesi = KOKLER.filter((k) => fs.existsSync(k));
 for (const kok of kokListesi)
 for (const p of dosyalar(kok)) {
   dosyaSayisi++;
-  const s = fs.readFileSync(p, 'utf8');
+  /**
+   * YORUMLAR ELENİR. Ölçüldü: yalnızca yorum içinde geçen
+   * `const [olu, setOlu] = React.useState(false);` satırı KUSUR sayılıyordu.
+   * Bu depoda yorumlar geçmiş kusurları birebir alıntılıyor, yani ölçüt kendi
+   * belgesini yakalayabiliyor. Aynı tuzak yuvarlama ve eksik-alan
+   * denetimlerinde de yaşandı.
+   *
+   * Satır numaraları korunsun diye yorumlar SİLİNMİYOR, boşlukla dolduruluyor.
+   */
+  const s = fs.readFileSync(p, 'utf8')
+    .replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '))
+    .replace(/(^|[^:])\/\/[^\n]*/g, (m, p1) => p1 + ' '.repeat(Math.max(0, m.length - p1.length)));
   // useState ile tanımlanan durum değişkenleri
   const durumlar = [...s.matchAll(/const\s*\[\s*(\w+)\s*,\s*set\w+\s*\]\s*=\s*(?:React\.)?useState/g)].map((m) => m[1]);
   durumSayisi += durumlar.length;

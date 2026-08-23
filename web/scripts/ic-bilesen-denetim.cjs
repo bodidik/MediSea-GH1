@@ -39,7 +39,19 @@ const os = require('os');
  */
 const NEGATIF_DIZIN = fs.mkdtempSync(path.join(os.tmpdir(), 'medisea-denetim-'));
 
-const KOKLER = ['app', 'components'];
+/**
+ * `--kok <dizin>` — BAŞKA BİR AĞACA YÖNLENDİRİLEBİLİR OLMAK ŞART.
+ *
+ * Bu bir CI KAPISI ve uzun süre yönlendirilemiyordu, yani tarihsel sürümlerle
+ * ya da tohumla SINANAMIYORDU. Belgede aynı eksik `arayuz-denetim` için
+ * kayıtlı: "kör bir denetimi kör olduğu için değil, SINANAMADIĞI için fark
+ * edememek daha kötü." Ölçüldü — yorum körlüğü testi bu betiği "sınanamadı"
+ * diye atlamak zorunda kalmıştı.
+ */
+const kokArg = process.argv.indexOf('--kok');
+const KOKLER = kokArg > 0 && process.argv[kokArg + 1]
+  ? [process.argv[kokArg + 1]]
+  : ['app', 'components'];
 const ETKILESIMLI = ['<input', '<select', '<textarea', '<button'];
 
 /** Bileşen gövdesinden sonra gelen ilk ~1800 karakter, iç içe tanımı yakalamaya yeter. */
