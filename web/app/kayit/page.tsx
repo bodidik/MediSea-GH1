@@ -31,8 +31,31 @@ export default function KayitPage() {
       return;
     }
 
-    // Kayıt başarılı → otomatik giriş
-    await signIn('credentials', { email: form.email, password: form.password, redirect: false });
+    /**
+     * OTOMATİK GİRİŞİN SONUCU ARTIK KONTROL EDİLİYOR.
+     *
+     * Bir dönem `await signIn(...)` çağrılıp dönen değer ATILIYORDU ve her
+     * durumda `/`'a gidiliyordu. Kayıt BAŞARILI olup otomatik giriş
+     * başarısız olursa (ağ kesintisi, çerezin yazılamaması) kullanıcı ana
+     * sayfaya OTURUMSUZ düşüyordu — az önce kayıt formunu doldurmuşken.
+     *
+     * Asıl zarar ikinci adımda: kullanıcı kaydın olmadığını sanıp yeniden
+     * deniyor ve bu kez "Bu e-posta adresi zaten kayıtlı." ile karşılaşıyor.
+     * Çıkmaz sokak — üstelik hesabı gerçekten VAR.
+     *
+     * Bu, depodaki "uydurulmuş bir başarı, çağıranın üstüne kod yazdığı
+     * yanlış bir varsayım üretir" kuralının arayüz tarafındaki hâli:
+     * sessizce başarı varsaymak yerine ne olduğunu ve ne yapılacağını söyle.
+     * Sayfanın altındaki "Giriş yap" bağlantısı çıkış yolunu zaten veriyor.
+     */
+    const giris = await signIn('credentials', {
+      email: form.email, password: form.password, redirect: false,
+    });
+    if (giris?.error) {
+      setHata('Hesabın oluşturuldu ama otomatik giriş yapılamadı. Aşağıdaki "Giriş yap" bağlantısından e-posta ve şifrenle giriş yapabilirsin.');
+      setYukleniyor(false);
+      return;
+    }
     router.push('/');
     router.refresh();
   }
