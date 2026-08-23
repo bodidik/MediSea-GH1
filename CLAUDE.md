@@ -3970,6 +3970,63 @@ sürüldü: 10 soru, 7'si bilerek doğru 3'ü bilerek yanlış cevaplandı.
 Geçici rota silinirken `.next/types` altındaki artık da silinmeli; yoksa
 `tsc` olmayan bir modülü aramaya devam eder.
 
+### Başlık araması sürüldü — üç kusur, üçü de klavye/okuyucu tarafında
+
+Arama kutusu HER sayfada duruyor ama hiç uçtan uca sürülmemişti. Sürüldü;
+işlevsel taraf sağlam çıktı, erişilebilirlik tarafında üç kusur bulundu.
+
+**Sağlam çıkanlar:**
+
+| ölçüt | sonuç |
+|---|---|
+| kutunun adı | "Sitede ara" (`aria-label`) |
+| sonuç geliyor mu | evet, ~1.2 s'de (300 ms geciktirme + sunucu eylemi) |
+| Türkçe normalizasyon | "göğüs" ve "gogus" AYNI 8 sonucu veriyor |
+| Tab sırası | kutu → temizle → ilk sonuç (bitişik, doğru) |
+| hata dalı | bayat sonuç göstermiyor, dürüst metin basıyor |
+
+**Kusur 1 — ESC açılır pencereyi kapatmıyordu.** Ölçüldü:
+`defaultPrevented false`, pencere açık kalıyordu. Tek kapatma yolu DIŞARI
+TIKLAMAKTI, yani fare kullanamayan biri pencereyi hiç kapatamıyordu.
+Belgedeki "panel açan her yüzey ESC ile kapanmalı" kuralı, arama açılır
+penceresine hiç uygulanmamıştı.
+
+**Kusur 2 — hiç canlı bölge yoktu.** `role=status` / `aria-live` sayısı **0**.
+Sonuçlar sessizce beliriyordu: ekran okuyucuyla gezen kullanıcı kutuya
+yazıyor, hiçbir şey duyulmuyordu. Bölge artık KOŞULSUZ render ediliyor —
+belgedeki kural gereği `status`, `alert`ten farklı olarak içerik değişmeden
+ÖNCE DOM'da bulunmak zorunda; sonradan eklenirse ilk mesaj kaçar.
+
+**Kusur 3 — temizleme düğmesi adsızdı ve hedefi küçüktü.** Adı TAM ZİNCİRLE
+hesaplatıldı (aria-label → aria-labelledby → label[for] → saran label →
+içerik) ve sonuç **"AD YOK"**: düğme yalnızca SVG taşıyor. Üstelik dokunma
+hedefi **20×20**, belgedeki 24px alt sınırın altında.
+
+**Doğrulama — üç düzeltme ve DÖRT negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| canlı bölge YAZMADAN ÖNCE DOM'da mı | evet (1) |
+| duyuru metni | "10 sonuç bulundu." — gerçek sonuç sayısıyla tutuyor |
+| ESC pencereyi kapatıyor mu | açık → kapalı, `defaultPrevented true` |
+| düğme: ad · SVG · boyut | "Aramayı temizle" · `aria-hidden` · **24×24** |
+| **negatif 1** — ESC sorguyu siliyor mu | HAYIR, "diyabet" duruyor |
+| **negatif 2** — temizleme hâlâ çalışıyor mu | evet, değer boşaldı |
+| **negatif 3** — pencere KAPALIYKEN ESC yutuluyor mu | HAYIR (`false`) |
+| **negatif 4** — eşik altı tek harfte ESC | HAYIR (`false`), duyuru da sessiz |
+
+Son iki satır belgedeki "koruma kısayolu öldürmüş de olabilir" kuralının
+karşılığı: `onKeyDown` yalnızca `isOpen` iken `preventDefault` çağırıyor,
+yani Escape başka amaçlar için serbest kalıyor.
+
+**Ölçüm tuzağı — ilk koşum "arama çalışmıyor" dedi ve YANLIŞTI.** Sonuçları
+`a[href^="/topics/"]` diye aradım; saydığım 40 bağlantı sayfanın kendi
+gezinme bağlantılarıydı ve açılır pencereyi hiç görmedim. Doğru ölçüm
+kutunun SARMALAYICISINDAN metin okumak oldu — orada sonuçlar 1.2 s'de
+duruyordu. Bir yüzeyin "çalışmadığı" sonucuna varmadan önce, ölçütün o
+yüzeyin GERÇEK şeklini tanıdığını doğrula.
+
+
 ### Oturum yüzeyi sürüldü — biri gerçek kusur, kalanı sağlam
 
 Kullanıcının bildirdiği çıkış kusuru, hiç sürülmemiş bir yüzeyde çıkmıştı.
