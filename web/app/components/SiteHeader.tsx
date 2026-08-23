@@ -28,6 +28,44 @@ const ARAC_KATEGORILERI = [
   { slug: "kardiyoloji",   icon: "❤️", ad: "Kardiyoloji" },
 ];
 
+/**
+ * ÇIKIŞTAN SONRAKİ YÖNLENDİRMEYİ NEXTAUTH'A BIRAKMIYORUZ — sebebi ölçüldü.
+ *
+ * `signOut({ callbackUrl: "/" })` göreli adresi NextAuth'un ÇIKARDIĞI taban
+ * adrese göre çözüyor. Dev sunucusu `next dev -H 0.0.0.0` ile bağlandığı için
+ * o taban `http://0.0.0.0:3000` oluyordu ve çıkış yapan kullanıcı tarayıcının
+ * ERR_ADDRESS_INVALID ekranına düşüyordu. `0.0.0.0` bir DİNLEME adresi,
+ * gidilecek adres değil.
+ *
+ * Ölçüldü: yerelde `/api/auth/providers` `http://0.0.0.0:3000/…` döndürüyor,
+ * tarayıcı ise `http://localhost:3000`de. CANLIDA taban doğru
+ * (`https://medi-sea-gh-1.vercel.app`) — yani kusur yalnızca geliştirme
+ * ortamında görünüyordu, kullanıcılara ulaşmıyordu.
+ *
+ * İLK ÇÖZÜM FİKRİ YANLIŞTI ve bunu ancak kütüphanenin kaynağı gösterdi:
+ * `callbackUrl: window.location.origin + "/"` de kurtarmazdı. @auth/core'un
+ * varsayılan `redirect` geri çağrısı (node_modules/@auth/core/lib/init.js)
+ * mutlak adresi TABANLA karşılaştırıyor ve origin tutmuyorsa TABANA düşüyor:
+ *
+ *     if (url.startsWith("/"))                  return `${baseUrl}${url}`;
+ *     else if (new URL(url).origin === baseUrl) return url;
+ *     return baseUrl;                           // ← 0.0.0.0'a döner
+ *
+ * Yani ne göreli ne de farklı host taşıyan mutlak adres işe yarardı.
+ *
+ * Çare: `redirect: false` ile oturumu kapat, yönlendirmeyi tarayıcıya bırak.
+ * Göreli `/` adresini tarayıcı BULUNULAN sayfaya göre çözer — localhost,
+ * LAN IP'si (telefondan bakarken) ve üretim alan adında da doğru olan tek
+ * yol bu. `NEXTAUTH_URL`i sabitlemek LAN erişimini bozardı, `-H 0.0.0.0`ı
+ * kaldırmak telefondan denemeyi.
+ *
+ * Yeni bir çıkış düğmesi eklersen `signOut`u DOĞRUDAN çağırma, bunu kullan.
+ */
+async function cikisYap() {
+  await signOut({ redirect: false });
+  window.location.href = "/";
+}
+
 export default function SiteHeader() {
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -338,7 +376,7 @@ export default function SiteHeader() {
                 )}
               </Link>
               <button
-                onClick={() => signOut({ callbackUrl: '/' })}
+                onClick={() => cikisYap()}
                 className="hidden md:block text-sm font-bold text-slate-500 hover:text-blue-700 transition-colors whitespace-nowrap"
               >
                 Çıkış
@@ -415,7 +453,7 @@ export default function SiteHeader() {
             <div className="md:hidden pt-1">
               {girisli ? (
                 <button
-                  onClick={() => { setMenuOpen(false); signOut({ callbackUrl: '/' }); }}
+                  onClick={() => { setMenuOpen(false); cikisYap(); }}
                   className="block w-full text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
                 >
                   Çıkış Yap
