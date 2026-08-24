@@ -87,8 +87,23 @@ export default function SpotUrinePage() {
   const ucrN   = parseLocaleNumber(ucr);
   const ualbN  = parseLocaleNumber(ualb);
 
-  const pcRatio = uprotN > 0 && ucrN > 0 ? (uprotN * 1000 / ucrN) : null;
-  const acRatio = ualbN > 0 && ucrN > 0 ? (ualbN * 1000 / ucrN) : null;
+  /**
+   * PAY MEŞRU SIFIR ALABİLİR, PAYDA ALAMAZ — ikisi ayrı denetlenir.
+   *
+   * Eski kapı ikisini de `> 0` istiyordu. Ama idrar proteini 0 "proteinüri
+   * YOK" demek, yani aracın kendi cetvelindeki "Normal proteinüri" bandının
+   * tanımı. Ölçüldü — protein 0 girildiğinde hiçbir sonuç basılmıyordu, yani
+   * araç normal idrarı yorumlayamıyordu. Aynısı albüminüri için de geçerli.
+   *
+   * KREATİNİN AYRI: bölen olduğu için 0 olamaz (`Infinity` üretirdi) ve
+   * fizyolojik olarak da idrar kreatinini sıfır değildir. Orada `> 0` kalıyor.
+   *
+   * Boş alan ile yazılmış "0" ancak HAM DİZEDEN ayrılır; `sayiGirildiMi`
+   * ikisini ayırıyor ve albümin alanının OPSİYONEL kalmasını da sağlıyor
+   * (boşsa `false` döndüğü için ACR satırı hiç çizilmiyor).
+   */
+  const pcRatio = sayiGirildiMi(uprot) && uprotN >= 0 && ucrN > 0 ? (uprotN * 1000 / ucrN) : null;
+  const acRatio = sayiGirildiMi(ualb)  && ualbN  >= 0 && ucrN > 0 ? (ualbN  * 1000 / ucrN) : null;
 
   const getPCRInterp = (v: number) => {
     if (v < 150)   return { txt: "Normal proteinüri", ok: true };

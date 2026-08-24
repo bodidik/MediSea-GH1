@@ -6357,3 +6357,63 @@ ve gerekçe kaynağa yazıldı; klinik kaynak kararı kullanıcınındır.
 kapısı aynı sözdizimini taşıyor (`x >= N`), o yüzden 177 adayın çoğu sahte.
 Betiğe alınmadı — bu sınıfta ölçüt aday bile üretemiyor, kararı alanın klinik
 anlamı veriyor.
+
+### Ayna sınıfın kalan üç adayı sürüldü — üçü de kusurluydu, biri BAŞKA bir kusur açtı
+
+`asdas` turundan kalan üç aday (`gh-test`, `dst`, `spot-urine` protein) ölçüldü.
+**Üçü de kusurluydu ve hepsinde elenen şey testin NORMAL sonucuydu:**
+
+| araç | meşru sıfır | ne anlama geliyor | önce |
+|---|---|---|---|
+| `gh-test` stimülasyon | pik GH 0 | GH yanıtı hiç yok — testin en ağır bulgusu | sonuç yok |
+| `gh-test` süpresyon | nadir GH 0 | tam baskılanma — akromegali dışlanır | sonuç yok |
+| `dst` (üç protokol) | kortizol 0 | tam baskılanma — Cushing dışlanır | sonuç yok |
+| `spot-urine` | idrar proteini 0 | proteinüri YOK — "Normal proteinüri" bandının tanımı | sonuç yok |
+| `spot-urine` | idrar albümini 0 | albüminüri yok — "Normal (A1)" | sonuç yok |
+
+`gh-test`in yorumu bu sınıfın en açık ifadesiydi: *"`!peakN` boşu ve sıfırı
+DOĞRU eliyor"*. Düzeltilmesi gereken varsayım tam olarak buydu — negatifi
+elemek doğru, sıfırı elemek değil.
+
+**PAY ile PAYDA ayrı denetlenir.** `spot-urine`da protein/albümin PAY ve meşru
+sıfır alabiliyor; kreatinin PAYDA ve 0 olamaz (`Infinity` üretirdi). İkisini
+tek kapıya bağlamak, pay tarafındaki meşru sıfırı da eliyordu.
+
+### `dst` HDDST'de MERDİVEN YÖNÜ TERSTİ — ekran kendisiyle çelişiyordu
+
+Meşru sıfır düzeltmesi HDDST kipini sürmeyi gerektirdi ve orada çok daha ağır
+iki kusur çıktı. Belgedeki *"bir kusur ikincisini gizleyebilir"* kuralının bu
+turdaki hâli — hem de art arda ikinci kez.
+
+`suppressed = effectiveVal < proto.cutoff` iki protokolde doğru: orada ölçülen
+şey KORTİZOL ve düşük kortizol = baskılanma. HDDST'de ölçülen şey kortizol
+değil **YÜZDE SÜPRESYON** ve yön tersine dönüyor: yüksek yüzde = baskılanma.
+Tek karşılaştırma üç protokole birden uygulanınca HDDST'nin HER sonucu ters
+çıkıyordu:
+
+| bazal / son | araç hesaplıyor | araç yazıyor |
+|---|---|---|
+| 28 / 5 | **%82.1** | "✗ SÜPRESİYON YETERSİZ · **< %50** — Ektopik ACTH" |
+| 28 / 20 | **%28.6** | "✓ SÜPRESİYON YETERLİ · **≥ %50** — Hipofiz kaynağı" |
+
+**Ekran AYNI KARTTA hem "%82.1" hem "< %50" yazıyordu** — dış bir kaynağa hiç
+bakmadan, yalnızca kendi çıktısına bakarak verilebilecek bir karar. GKS'deki
+"297 / 15" ve MELD'deki eksi skorla aynı şekil.
+
+Bedeli klinik olarak ağır: bu test Cushing HASTALIĞI (hipofiz cerrahisi) ile
+EKTOPİK ACTH (çoğunlukla akciğer tümörü) arasında karar veriyor ve araç her
+vakada tersini söylüyordu.
+
+**İkinci kusur — TABAN DEĞERSİZ HÜKÜM.** Bazal kortizol girilmediğinde
+`effectiveVal` ham kortizol olarak kalıyor ama yine %50 eşiğiyle
+karşılaştırılıyordu: "son kortizol 5" girildiğinde araç "≥ %50 süpresyon —
+Hipofiz kaynağı" diyordu. Yüzde olmayan bir sayıyı yüzde sanmak. HDDST artık
+bazal değer geçerli değilse hiç sonuç basmıyor.
+
+**Doğrulama 11 vakalı ve sınır değeri dahil:** %0 → ektopik, **tam %50 →
+hipofiz** (`>=`), %82 → hipofiz, %100 → hipofiz; taban yoksa sonuç yok; çöp
+reddediliyor; tarama kipinde dokunulmayan değerler birebir aynı.
+
+**Ders: bir eşiği birden çok protokole/kipe paylaştırıyorsan, KARŞILAŞTIRMANIN
+YÖNÜNÜ de kipe bağla.** Ölçülen büyüklük değiştiğinde (kortizol → yüzde) eşik
+sayısı taşınabilir ama yön taşınamaz.

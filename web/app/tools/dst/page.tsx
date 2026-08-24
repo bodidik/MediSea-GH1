@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const PROTOCOLS = [
   {
@@ -49,12 +49,63 @@ export default function DstPage() {
   const val   = parseLocaleNumber(value);
   const bVal  = parseLocaleNumber(base);
 
-  const effectiveVal = proto.id === "hddst" && bVal > 0 && val > 0
+  /**
+   * MEŞRU SIFIR ELENİYORDU — ve elenen, testin en net NORMAL sonucuydu.
+   *
+   * Kapı `val > 0` diyordu. Oysa deksametazon sonrası kortizol 0, TAM
+   * baskılanma demek: Cushing sendromunun dışlandığı en güçlü bulgu.
+   * Ölçüldü — 1.0 için "✓ SÜPRESİYON YETERLİ" basılırken 0 için hiçbir şey
+   * basılmıyordu.
+   *
+   * HDDST kipinde daha da belirgin: orada `val` baskılanma SONRASI değer ve
+   * 0 olması %100 baskılanma, yani hipofizer kaynağın (Cushing hastalığı)
+   * en net göstergesi. Bugün o vaka hiç hesaplanmıyordu.
+   *
+   * TABAN DEĞER (`bVal`) AYRI: bölen olduğu için `> 0` kalmak zorunda ve
+   * zaten 0 bazal kortizol fizyolojik olarak beklenmiyor.
+   *
+   * Boş alan ile yazılmış "0" ancak HAM DİZEDEN ayrılır; `sayiGirildiMi`
+   * "abc"yi ve boşu eler, "0"ı geçirir. Üst sınır makullük sınırı.
+   */
+  const valGirildi = sayiGirildiMi(value) && val >= 0 && val <= 200;
+
+  const effectiveVal = proto.id === "hddst" && sayiGirildiMi(base) && bVal > 0 && valGirildi
     ? Math.round(((bVal - val) / bVal) * 1000) / 10
     : val;
 
-  const hasResult = val > 0;
-  const suppressed = hasResult && effectiveVal < proto.cutoff;
+  /**
+   * ⚠ MERDİVEN YÖNÜ HDDST'DE TERSTİ — ve ekran kendisiyle çelişiyordu.
+   *
+   * `suppressed = effectiveVal < proto.cutoff` iki protokolde DOĞRU: orada
+   * ölçülen şey KORTİZOL ve düşük kortizol = baskılanma.
+   *
+   * HDDST'de ölçülen şey kortizol değil YÜZDE SÜPRESYON ve yön TERSİNE
+   * dönüyor: yüksek yüzde = baskılanma. Tek karşılaştırma üç protokole birden
+   * uygulanınca HDDST'nin her sonucu ters çıkıyordu. Tarayıcıda ölçüldü:
+   *
+   *   bazal 28 · son 5   ->  %82.1 hesaplanıyor, ekranda "< %50 süpresyon —
+   *                          Ektopik ACTH veya adrenal tümör"
+   *   bazal 28 · son 20  ->  %28.6 hesaplanıyor, ekranda "≥ %50 süpresyon —
+   *                          Hipofiz kaynağı (Cushing hastalığı)"
+   *
+   * Ekran AYNI KARTTA hem "%82.1" hem "< %50" yazıyordu; dış bir kaynağa
+   * bakmadan, yalnızca kendi çıktısına bakarak görülebilecek bir çelişki.
+   * Bedeli klinik olarak ağır: bu test Cushing HASTALIĞI (hipofiz cerrahisi)
+   * ile EKTOPİK ACTH (çoğunlukla akciğer tümörü) arasında karar veriyor.
+   *
+   * İKİNCİ KUSUR — TABAN DEĞERSİZ HÜKÜM. Bazal kortizol girilmediğinde
+   * `effectiveVal` ham kortizol olarak kalıyor ama yine %50 eşiğiyle
+   * karşılaştırılıyordu: "son kortizol 5" girildiğinde araç "≥ %50 süpresyon
+   * — Hipofiz kaynağı" diyordu. Yüzde olmayan bir sayıyı yüzde sanmak.
+   * HDDST artık bazal değer geçerli değilse hiç sonuç basmıyor.
+   */
+  const bazalGerekli = proto.id === "hddst";
+  const bazalGirildi = sayiGirildiMi(base) && bVal > 0 && bVal <= 200;
+
+  const hasResult = valGirildi && (!bazalGerekli || bazalGirildi);
+  const suppressed = hasResult && (bazalGerekli
+    ? effectiveVal >= proto.cutoff      // yüzde süpresyon: YÜKSEK = baskılanmış
+    : effectiveVal < proto.cutoff);     // kortizol: DÜŞÜK = baskılanmış
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -107,7 +158,7 @@ export default function DstPage() {
             <input type="text" inputMode="decimal" value={value} onChange={e => setValue(e.target.value)} placeholder="ör. 1.2"
               className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
           </label>
-          {proto.id === "hddst" && bVal > 0 && val > 0 && (
+          {proto.id === "hddst" && bazalGirildi && valGirildi && (
             <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hesaplanan süpresyon: </span>
               <span className="font-black text-blue-900">%{effectiveVal}</span>

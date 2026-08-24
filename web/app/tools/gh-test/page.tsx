@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const MODE_OPTS = [
   { id: "deficiency", label: "GH Eksikliği — Stimülasyon Testi", icon: "📉" },
@@ -34,18 +34,35 @@ export default function GhTestPage() {
   const supCutoff = assay === "sensitive" ? 0.4 : 1.0;
 
   const getDefResult = () => {
-    // `!peakN` boşu ve sıfırı doğru eliyor ama NEGATİFİ elemiyor: ölçüldü,
-    // −5 girildiğinde araç "YETERSİZ GH YANITI" veriyordu. GH ölçümü negatif
-    // olamaz; üst sınır da makullük sınırı (klinik eşik değil).
-    if (!(peakN > 0 && peakN <= 200)) return null;
+    /**
+     * Negatifi elemek DOĞRU (ölçüldü: −5 girildiğinde araç "YETERSİZ GH
+     * YANITI" veriyordu; GH ölçümü negatif olamaz). Üst sınır makullük
+     * sınırı, klinik eşik değil.
+     *
+     * SIFIRI ELEMEK YANLIŞTI — eski yorum "boşu ve sıfırı DOĞRU eliyor"
+     * diyordu ve düzeltilmesi gereken varsayım buydu. Pik GH 0, GH yanıtının
+     * hiç olmaması demek: bu testin üretebileceği EN AĞIR bulgu. Ölçüldü —
+     * 1.5 için "YETERSİZ GH YANITI" basılırken 0 için hiçbir şey basılmıyordu.
+     *
+     * Boş alan ile yazılmış "0" ancak HAM DİZEDEN ayrılır; `parseLocaleNumber`
+     * ikisini de 0 yapıyor. `sayiGirildiMi` "abc"yi ve boşu eler, "0"ı geçirir.
+     */
+    if (!(sayiGirildiMi(peak) && peakN >= 0 && peakN <= 200)) return null;
     const cutoff = stimIdx === 3 ? 10 : proto.cutoff;
     if (peakN >= cutoff) return { label: "YETERLİ GH YANITI", sub: `Pik GH ≥ ${cutoff} μg/L — GH eksikliği dışlanır`, color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     return { label: "YETERSİZ GH YANITI", sub: `Pik GH < ${cutoff} μg/L — GH eksikliği ile uyumlu`, color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
 
   const getExcessResult = () => {
-    // Aynı gerekçe: negatif nadir GH değeri "süpresyon yetersiz" verdirirdi.
-    if (!(nadirN > 0 && nadirN <= 200)) return null;
+    /**
+     * Aynı gerekçe: negatif nadir GH değeri "süpresyon yetersiz" verdirirdi.
+     *
+     * Sıfır burada DAHA da meşru: nadir GH 0, glukoz sonrası TAM baskılanma
+     * demek — yani testin ARADIĞI normal sonuç, akromegalinin dışlanması.
+     * Ölçüldü: 0.3 için "GH SÜPRESİYONU YETERLİ" basılırken 0 için hiçbir şey
+     * basılmıyordu, yani araç en net normal sonucu yorumlayamıyordu.
+     */
+    if (!(sayiGirildiMi(nadir) && nadirN >= 0 && nadirN <= 200)) return null;
     if (nadirN < supCutoff) return { label: "GH SÜPRESİYONU YETERLİ", sub: `Nadir GH < ${supCutoff} μg/L — Akromegali dışlanır`, color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     return { label: "GH SÜPRESİYONU YETERSİZ", sub: `Nadir GH ≥ ${supCutoff} μg/L — Akromegali ile uyumlu`, color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
