@@ -4295,6 +4295,41 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Yönlendirmeler canlıda sürüldü — dört kayıtlı kusurun dördü de kapalı
+
+`next.config.js` içindeki `redirects()` hiç ölçülmemişti. Yapılandırmanın
+kendi yorumları iki geçmiş kusuru anlatıyor (`(?!tr$)` yüzünden sonsuz döngü,
+`api`nin dil sanılması) ve bir de iki yeniden adlandırma taşıyor. Dördü de
+canlıda sürüldü.
+
+| istenen | indiği | durum |
+|---|---|---|
+| `/en/premium/ydus` | `/tr/premium/ydus` | 200 — dil normalleşiyor |
+| `/de/premium/ydus/liderlik` | `/tr/premium/ydus/liderlik` | 200 — **alt yol korunuyor** |
+| `/topics/hematoloji/hodgkin-lenfoma` | `…/hodgkin` | 200 — yeniden adlandırma |
+| `/tools/heart-score` | `/tools/heart` | 200 — yeniden adlandırma |
+
+**İki NEGATİF kontrol, ikisi de kayıtlı kusurun tam vakası:**
+
+| ölçüt | sonuç |
+|---|---|
+| `/tr/premium/…` kendine yönleniyor mu | **HAYIR** — yerinde kalıyor, sonsuz döngü yok |
+| `/api/premium/…` HTML'e 308'leniyor mu | **HAYIR** — yerinde kalıyor, `503 application/json` |
+
+İkincisi ayrıca dürüst hata kuralının da doğrulaması: uç, arka uca
+ulaşamadığında uydurma veri değil `503` dönüyor.
+
+**Dilsiz `/premium/ydus` 404 ve bu TASARIM GEREĞİ** — kural bir dil segmenti
+şart koşuyor (`/:lang(...)/premium/:yol*`), `robots.txt` de `/premium`i
+yasaklıyor. Belgede `ads.ts` içindeki `/premium` bağlantısı zaten "ölü kodda
+kırık" diye kayıtlı. Kusur değil.
+
+`heart-score → heart` yönlendirmesinin gerekçesi yapılandırmada yazılı ve
+kayda değer: aynı skor İKİ ayrı araç olarak duruyordu ve `heart-score`
+dokunulmamış formda "0 · Düşük Risk" yani bir TABURCU kararı basıyordu.
+Kapılı olan tutulmuş, öteki yönlendirilmiş — adres kırılmadan.
+
+
 ### 404 yüzeyi ölçüldü — soft 404 yok, ama konu 404'ü sunucuda BOŞ gidiyor
 
 Dışarıdan gelen kırık bağlantıların, yazım hatalarının, eski yer imlerinin
