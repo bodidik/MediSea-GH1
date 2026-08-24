@@ -6828,3 +6828,53 @@ Yani NEWS2'de hem alt hem üst sınır yerinde; sınıf o araç için kapalı.
 Bu ölçütün kapsamı DAR ve bu yazılı: yalnızca etiketinde `(%)` geçen alanları
 görüyor. Yüzde olduğu etiketten anlaşılmayan alanlar (örneğin bir oran ya da
 kesir) bu taramaya girmiyor.
+
+### ÜST SINIR TURU KAPANDI — `bmi` ve `bmr`, ikisi de boy/kilo alan son adaylar
+
+Tarama listesindeki son iki araç sürüldü ve ikisi de kusurluydu.
+
+**`bmi` — üretilen sayı BAŞKA BİR HESABIN GİRDİSİ.** Aracın kendi uyarısı
+ideal ağırlığın "ilaç dozlaması ve solunum parametreleri" için kullanıldığını
+söylüyor:
+
+| girdi | ekranda (önce) |
+|---|---|
+| boy **1700** (fazladan sıfır) | ideal ağırlık **1451.4 kg** · Hamwi 1693.1 |
+| boy **17** (eksik sıfır) | **BMI 2422.1 · "OBEZİTE SINIF …"** |
+
+İlki, ARDS'de 6 mL/kg ile soluk hacmi hesaplayan biri için soluk başına
+~8.7 LİTRE demek.
+
+**Çöp kiloda ideal ağırlığın DURMASI korundu** — Devine ve Hamwi yalnızca boya
+bağlı. SOFA'daki "her değer kendi girdisine bağlı" dersi; kilo `"abc"` iken
+BMI `–` ama ideal ağırlık 65.9/66.7 basılıyor ve doğrusu bu.
+
+**`bmr` — yaş alanı EKSİ KALORİ üretiyordu.** Mifflin–St Jeor'da yaş terimi
+çıkarılıyor (`−5 × yaş`), yani büyük bir yaş sonucu eksiye götürüyor:
+
+| girdi (175 cm · 75 kg) | ekranda (önce) |
+|---|---|
+| yaş **999** | **BMR −3146 kcal/gün · TDEE −4876 kcal/gün** |
+| boy 1750 | BMR 11518 · TDEE 17853 |
+| kilo 750 | BMR 8424 · TDEE 13057 |
+
+Eksi kalori gereksinimi fiziksel olarak imkânsız — `ktv`deki eksi Kt/V ve
+MELD'deki eksi skorla aynı sınıf, üstelik bir beslenme aracında sayı bir
+plana girdi olabiliyor.
+
+Sınırlar iki araçta da aynı aile: yaş 1–120 · boy 50–250 cm · kilo 1–400 kg.
+
+Doğrulama 15 vaka, sınır değerleri ve elle hesap dahil:
+
+| araç | negatif kontrol | elle |
+|---|---|---|
+| `bmi` | 170/70 → 24.2 NORMAL, 65.9/66.7 (değişmedi) | Devine erkek 180 cm = 50 + 2.3×(27.6/2.54) = **75.0** ✓ |
+| `bmr` | 35/175/75 → 1674 / 2595 (değişmedi) | 80 y · 160 cm · 60 kg = 600+1000−400+5 = **1205**, ×1.55 = **1868** ✓ |
+
+Sınır: `bmi`de boy 250 geçiyor 251 düşüyor; `bmr`de yaş 120 geçiyor 121 düşüyor.
+
+**BÖYLECE ÜST SINIR SINIFININ TARAMA LİSTESİ BİTTİ.** 48 adaydan karara
+bağlananlar: `sodium` · `kdigo-aki` · `ogtt` · `osmolal-gap` · `ktv` · `gnri` ·
+`pni` · `bmi` · `bmr` DÜZELTİLDİ; `tirads` · `conut` · `homa-ir` · `news2` ·
+`hba1c-eag` · `spot-urine` ölçüldü ve TEMİZ çıktı. Kalanlar (`sofa`, `anc`,
+`das28`, `spot-urine`) bu oturumun önceki turlarında zaten kapatılmıştı.

@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const ACTIVITY_OPTS = [
   { label: "Hareketsiz", sub: "Masa başı iş, egzersiz yok", factor: 1.2 },
@@ -23,7 +23,33 @@ export default function BmrPage() {
   const h = parseLocaleNumber(height);
   const w = parseLocaleNumber(weight);
 
-  const bmr = h > 0 && w > 0 && a > 0
+  /**
+   * ÜST SINIR EKSİKTİ — ve yaş alanı EKSİ KALORİ üretiyordu.
+   *
+   * Kapı yalnızca `> 0` diyordu; çöp girdiyi doğru eliyordu (ölçüldü, "–"
+   * basıyor) ama fizyolojik olarak imkânsız YÜKSEK değerleri geçiriyordu.
+   * Mifflin–St Jeor'da yaş terimi ÇIKARILIYOR (−5 × yaş), yani büyük bir yaş
+   * sonucu eksiye götürüyor. Ölçüldü (175 cm · 75 kg):
+   *
+   *   yaş 999   ->  BMR -3146 kcal/gün · TDEE -4876 kcal/gün
+   *   boy 1750  ->  BMR 11518 · TDEE 17853
+   *   kilo 750  ->  BMR  8424 · TDEE 13057
+   *
+   * Eksi kalori gereksinimi fiziksel olarak imkânsız — belgedeki "eksi bir
+   * MELD mümkün değildir" ve `ktv`deki eksi Kt/V ile aynı sınıf. Bu bir
+   * beslenme aracı olduğu için sayı bir plana girdi olabiliyor.
+   *
+   * Sınırlar makullük sınırı: yaş 1–120 · boy 50–250 cm · kilo 1–400 kg
+   * (deponun öteki araçlarıyla aynı aile).
+   */
+  const makul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const girdiMakul = makul(age, 1, 120) && makul(height, 50, 250) && makul(weight, 1, 400);
+
+  const bmr = girdiMakul
     ? Math.round(sex === "m"
         ? 10 * w + 6.25 * h - 5 * a + 5
         : 10 * w + 6.25 * h - 5 * a - 161)
