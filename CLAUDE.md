@@ -4295,6 +4295,54 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Premium branş listeleri ölçüldü — ve "kusur" baştan sona ÖLÇÜM ARTEFAKTIYDI
+
+Branş listeleri ile gerçek konu dosyaları karşılaştırıldı. Belgede kayıtlı
+tasarım aynen ayakta, sayılar yalnızca büyümüş:
+
+| ölçüt | değer |
+|---|---|
+| branş dosyası | 9 |
+| konu dosyası | 41 (belgede 40 yazıyordu) |
+| listede ilan | 57, `hazir:true` olan 40 |
+| listede VAR, dosya YOK | **17 — ve 17'sinin de `hazir:false`** |
+| dosya VAR, listede YOK | 1 (`gogus-hastaliklari/akciger-kanseri`) |
+
+17'sinin `hazir:false` olması kritik: soluk ve tıklanamaz basılıyorlar, yani
+çıkmaz sokak değiller. Tek listelenmeyen dosya ise `listelenmeyenKategori()`
+ile "Diğer Konular" altında görünür kılınıyor.
+
+**ÜÇ ADIMDA YANLIŞ "KUSUR" ÜRETTİM — üçü de ölçüm tarafındaydı:**
+
+1. **Canlı DOM'da bağlantı saydım: 1 çıktı, `akciger-kanseri` yok.** Kusur
+   sandım.
+2. **Yerelde aynı ölçüm "var" dedi.** "Yerelde çalışıyor, canlıda çalışmıyor"
+   diye belgedeki *sunucusuz dosya okuma* sınıfına yazacaktım.
+3. **Sunucu HTML'inde arattım — yine yok.** Çünkü aramadan önce `<script>`
+   bloklarını SİLİYORDUM.
+
+Gerçek şu: `akciger-kanseri` canlıda **RSC yükünün içinde** duruyor
+(`"hazir":true`, rozetler `["YENİ","SINAV SPOTU"]`) ve bölüm **katlanmış bir
+akordeon** olarak basılıyor — başlıkta "1 / 1 konu ▾" yazıyor. Bağlantı ancak
+açılınca DOM'a giriyor. Tıklandı: bağlantı **1 → 2**, href doğru, başlık
+doğru.
+
+**İKİ KURAL:**
+
+- **`<script>` blokları RSC YÜKÜNÜ taşıyor.** Belgede "JSON-LD gürültüsünü
+  ele" diye kayıtlı olan strip, aynı hamlede sunucudan gelen veri yükünü de
+  siliyor. "Sunucu HTML'inde yok" demek, "sayfada yok" demek DEĞİL. Sunucuda
+  basılıp basılmadığını ölçerken `<script>`i eleme; JSON-LD'yi ayıklamak
+  istiyorsan yalnızca `type="application/ld+json"` olanları at.
+- **Katlanmış akordeonun ögeleri açılana kadar DOM'da yok.** Bağlantı saymak
+  sıfır verir. Bu, belgedeki "koşullu render edilen kartlar normal akışta
+  görünmez" kuralının kardeşi: **saymadan önce aç.**
+
+Yerel–canlı farkı da bir yanılgıydı: yerelde `body.textContent` okunuyordu ve
+o, katlanmış bölümün metnini de kapsıyordu. **İki ortamı karşılaştırırken
+AYNI ölçütü kullan** — farklı ölçüt, olmayan bir fark üretir.
+
+
 ### Soru AÇIKLAMALARI ölçüldü — sınav içeriğinin öğretme değeri sağlam
 
 `soru-denetim` yapıyı denetliyor (doğru cevap geçerli mi, en az iki şık var mı,
