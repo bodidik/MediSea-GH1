@@ -4295,6 +4295,60 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Premium içerik ölçüldü — iskelet konu YOK, ama modül ilanları bayat
+
+İskelet konu ölçütü satılan tarafa uygulandı. **Premium içerik açık taraftan
+belirgin biçimde daha sağlam:**
+
+| | açık taraf | premium |
+|---|---|---|
+| konu sayısı | 410 | 41 |
+| ortanca gövde | 3016 krk | **7020 krk** |
+| %5'lik dilim | 405 | **4653** |
+| iskelet yaprak | 10 | **0** |
+
+En kısa premium konu (`harrison-22-secme-sorular`, 524 krk) kusur DEĞİL:
+`quiz: true` ve 25 soru ilan ediyor, yani değeri gövdesinde değil quizinde.
+İkinci en kısa (`kml`, 1953 krk) dokuz içerik bloğu taşıyor.
+
+**MODÜL İLANI — belgede kayıtlı düzeltme AYAKTA, veri ise bayat.**
+
+Doküman "69 ilanın 6'sının hedefi yoktu" kusurunu ve çaresini kaydediyor.
+Bugün ölçüldü: **70 ilan, 4'ünün hedefi yok.**
+
+| ilan | durum |
+|---|---|
+| `endokrinoloji/graves-hastaligi` quiz | hiçbir adla quiz dosyası YOK |
+| `hematoloji/kml` flashcard | YOK |
+| `hematoloji/kml` inciler | YOK |
+| `hematoloji/aml-ana` inciler | dosya `pearls/hematoloji/aml.json` — ad sapması, SENDE-KALANLAR 18'de kayıtlı |
+
+**Ama hiçbiri kullanıcıya ulaşmıyor.** Konu sayfası bayrağa değil DOSYAYA
+bakıyor ve satırın kendi yorumu bunu söylüyor:
+
+```
+// İlan YETMEZ: hedef içerik gerçekten var mı?
+const aktif = ilan && (MODUL_VAR[key] ?? false);
+```
+
+`MODUL_VAR` dosya tabanlı envanterden (`envanterAl`) geliyor. Yani düzeltme
+render katmanında ve ayakta; VERİDEKİ bayrak bayat kalabiliyor.
+
+**TUZAK, adı konuyor:** biri ileride "zaten `moduller` bayrağı var, envanteri
+okumaya gerek yok" diye sadeleştirirse **dört ölü kart** birden görünür hâle
+gelir. Bayrak bir NİYET beyanı, envanter GERÇEK.
+
+`video` ayrıca KOŞULSUZ kapalı (`video: false`) — video rotası yok
+(SENDE-KALANLAR 24) ve dosyalar dursa bile kart etkinleşmiyor. Savunma
+doğru kurulmuş.
+
+**Ölçüt bir kez sahte aday üretti:** dosya eşleştirmem `<id>*` arıyordu, oysa
+video dosyaları `<kısa-id>-videos.json` biçiminde (`aml-videos.json`,
+konu `aml-ana`). `aml-ana` video "hedefi yok" göründü; gerçekte dosya var.
+Adlandırma sözleşmesi dizinden dizine değişiyor — eşleştirme ölçütü bunu
+bilmeden sayı üretmemeli.
+
+
 ### 410 konu sayfasının HEPSİ tarandı — 10 iskelet konu çıktı
 
 Örneklemle değil, tamamıyla ölçüldü (canlıda, sitemap'ten alınan 410 adres):
