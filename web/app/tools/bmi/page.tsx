@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function BmiPage() {
   const [height, setHeight] = React.useState("170");
@@ -12,7 +12,36 @@ export default function BmiPage() {
   const h = parseLocaleNumber(height);
   const w = parseLocaleNumber(weight);
 
-  const bmi    = h > 0 ? Math.round((w / (h / 100) ** 2) * 10) / 10 : 0;
+  /**
+   * ÜST SINIR EKSİKTİ — ve bedeli bu araçta doğrudan DOZLAMA.
+   *
+   * Kapı yalnızca `h > 0` diyordu. Aracın kendi uyarısı ideal ağırlığın
+   * "ilaç dozlaması ve solunum parametreleri" için kullanıldığını söylüyor,
+   * yani buradan çıkan sayı bir hesabın girdisi oluyor. Ölçüldü:
+   *
+   *   boy 1700 cm (fazladan sıfır)  ->  İdeal ağırlık 1451.4 kg · Hamwi 1693.1
+   *   boy 17 cm   (eksik sıfır)     ->  BMI 2422.1 · "OBEZİTE SINIF ..."
+   *
+   * İlki ARDS'de 6 mL/kg ile soluk hacmi hesaplayan biri için soluk başına
+   * ~8.7 LİTRE demek. İkisi de tek karakterlik yazım hatası.
+   *
+   * ÇÖP KİLODA İDEAL AĞIRLIĞIN DURMASI DOĞRU ve öyle bırakıldı: Devine ve
+   * Hamwi yalnızca BOYA bağlı, kiloya değil (SOFA'daki "her değer kendi
+   * girdisine bağlı" dersi). Ölçüldü — kilo "abc" iken BMI "–" ama ideal
+   * ağırlık 65.9/66.7 basılıyor, ki doğrusu bu.
+   *
+   * Sınırlar makullük sınırı: boy 50–250 cm · kilo 1–400 kg (deponun öteki
+   * araçlarıyla aynı aile). `sayiGirildiMi` ayrıca çöp girdiyi eliyor.
+   */
+  const makul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const boyOk  = makul(height, 50, 250);
+  const kiloOk = makul(weight, 1, 400);
+
+  const bmi    = boyOk && kiloOk ? Math.round((w / (h / 100) ** 2) * 10) / 10 : 0;
   /**
    * İDEAL AĞIRLIK — iki formül, ikisi de cinsiyete bağlı.
    *
@@ -38,8 +67,8 @@ export default function BmiPage() {
    * kendi uyarısı ideal ağırlığın "ilaç dozlaması ve solunum parametreleri"
    * için kullanıldığını söylüyor.
    */
-  const devine = h > 0 ? Math.round(((sex === "m" ? 50 : 45.5) + 2.3 * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
-  const hamwi  = h > 0 ? Math.round(((sex === "m" ? 48 : 45.5) + (sex === "m" ? 2.7 : 2.2) * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
+  const devine = boyOk ? Math.round(((sex === "m" ? 50 : 45.5) + 2.3 * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
+  const hamwi  = boyOk ? Math.round(((sex === "m" ? 48 : 45.5) + (sex === "m" ? 2.7 : 2.2) * ((h - 152.4) / 2.54)) * 10) / 10 : 0;
   const ibw    = Math.max(devine, 0);
 
   const getBmiCat = () => {
