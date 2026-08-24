@@ -4295,6 +4295,41 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Önbellek davranışı ölçüldü — takılı MISS yok, tek istisna doğru sebeple
+
+Belge bir kez `/tools`un her istekte MISS kaldığını ve 155 kB'lık sayfanın
+her seferinde yeniden üretildiğini kaydediyor. Sınıf hiç toplu ölçülmemişti.
+Sekiz temsili rota, üçer istekle:
+
+| rota | tur | süre (ms) |
+|---|---|---|
+| `/` · `/topics` · `/tools` · branş · konu · araç · `/uyelik` · premium pano | **PRERENDER → HIT → HIT** | 431–1157 → ~100–265 |
+
+**Sekizinin sekizi de sağlıklı; `/tools` artık en hızlılardan** (450 → 112 →
+108). Kayıtlı kusur kapalı.
+
+Dinamik (`ƒ`) rotalar ayrıca ölçüldü:
+
+| rota | tur | değerlendirme |
+|---|---|---|
+| paylaşım kartı | MISS → **HIT → HIT** | ilk üretimden sonra önbellekte |
+| site haritası | PRERENDER → HIT → HIT | statik |
+| `/api/user/me` | MISS → MISS → MISS | **doğru** — API yanıtı önbelleğe alınmamalı |
+| premium konu sayfası | **MISS → MISS → MISS** | 3065 → 472 → 367 ms |
+
+**Premium konu sayfasının hep MISS olması KUSUR DEĞİL ve sebebi kayda değer:**
+sayfa `checkTopicAccess()` üzerinden `auth()` çağırıyor, yani OTURUM ÇEREZİNİ
+okuyor. Çerez okuyan bir yanıt kenarda paylaşılamaz.
+
+**TUZAĞIN ADI KONUYOR:** biri ileride "bu sayfa hep MISS, önbelleğe alalım"
+diye bir `revalidate`/`s-maxage` eklerse, bir kullanıcının erişim durumu
+başka bir kullanıcıya servis edilir — premium içerik ücretsiz hesaba, ya da
+tersi. **Hep MISS olan her rota bir performans kusuru değildir; önce yanıtın
+KULLANICIYA ÖZEL olup olmadığına bak.**
+
+Sıcak süre 367–472 ms; kapı arkasındaki bir sayfa için kabul edilebilir.
+
+
 ### Yönlendirmeler canlıda sürüldü — dört kayıtlı kusurun dördü de kapalı
 
 `next.config.js` içindeki `redirects()` hiç ölçülmemişti. Yapılandırmanın
