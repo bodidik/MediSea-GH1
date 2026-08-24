@@ -6557,3 +6557,53 @@ okunamıyor olması ötekileri susturmamalı. Üç yalıtım kontrolü ölçüld
 Sınır 0.1–30 mg/dL, deponun öteki araçlarıyla aynı aile (`egfr` 0.1–30,
 `sofa` 0.1–25). Doğrulama 12 vaka: gerçek AKI Evre 3 kalıyor, sınır tam 0.1
 geçiyor, 35 düşüyor.
+
+### ELİNDE OLMAYAN DEĞER HAKKINDA İDDİA — `ogtt` "2.saat < 140" diyordu
+
+Üst sınır sınıfının üçüncü turu ve yeni bir biçim: araç, HİÇ OKUMADIĞI bir
+değer hakkında sayısal iddia basıyor.
+
+`DmResult` "girilmedi" durumunu düşünmüş (`h2 === 0 ? -1` ile kategoriden
+dışlıyor) ama NORMAL etiketinin ALT METNİ koşulsuzdu:
+
+| girdi | ekranda (önce) |
+|---|---|
+| açlık 95 · 2. saat **"abc"** | **"NORMAL · Açlık < 100 mg/dL · 2.saat < 140 mg/dL"** |
+| açlık 9999 · 2. saat 9999 | "DİYABET MELLİTUS" |
+
+Gerçek 2. saat 210 (diyabet) olsaydı, tek yazım hatası "NORMAL" verecekti —
+ve alt metin okuyucuya o değerin ölçüldüğünü söylüyordu.
+
+`twoHour` artık `number | null`; `null` ayrı bir anlam taşıyor ve alt metin
+"2. saat değeri girilmedi" diyor. **Kural: bir etiketin alt metni, YALNIZCA
+gerçekten okunan değerler hakkında konuşmalı.**
+
+Makullük sınırı da yoktu: glukoz 20–1500 mg/dL kondu (hiperozmolar tabloda
+1000 aşılabiliyor; 20 altı yaşamla bağdaşmıyor).
+
+**AYNI DOSYADA İKİNCİ KUSUR — kardeş araç kuralı yine işledi.** Akromegali
+kipi `gh-test`teki meşru-sıfır kusurunun BİREBİR aynısını taşıyordu:
+`nadir > 0` kapısı, glukoz sonrası tam baskılanmayı (nadir GH 0 = akromegali
+dışlanır) reddediyordu. Ölçüldü: 0.2 için "GH SÜPRESİYONU YETERLİ" basılırken
+0 için hiçbir şey basılmıyordu.
+
+Bu, belgedeki *"bir kusuru düzeltirken aynı sayfadaki öteki blokların da aynı
+kaynağa bağlandığını doğrula"* kuralının araç-arası hâli: `gh-test` düzeltildi
+ama AYNI TESTİ ikinci kez uygulayan `ogtt`nin akromegali kipi atlanmıştı.
+
+Doğrulama 18 vaka üç kipte: DM'de BGT/BAG ayrımı ve DM tanısı değişmedi,
+sınır 1500 geçiyor 1501 düşüyor; akromegalide 0 artık "Akromegali dışlanır",
+çöp/boş/500 "–"; GDM'de tanı ve çip gösterimi korunuyor (çöp alan "–").
+
+**ÖLÇÜM TUZAĞI — sayfa yenilendikten sonraki İLK yineleme yanılttı.**
+`95/140` ilk turda "SONUÇ YOK" göründü ve bir an gerileme sanıldı; yalıtılıp
+tekrarlanınca "PREDİYABET · BGT" çıktı. React ilk ölçümde henüz yerleşmemişti.
+Belgedeki "ardışık ölçüm bayat sonuç verir" kuralının yeniden-yükleme hâli:
+**şüpheli tek satırı yalıtıp tekrarla.**
+
+**HEREDOC ÜÇÜNCÜ KEZ İŞ BOZDU.** Bu turda `cat > dosya <<'EOF'` komutu üç
+dakika takılıp hiçbir şey yazmadan düştü (belge değişmedi, commit atılmadı).
+Belgede zaten kayıtlı olan "heredoc backslash siliyor" tuzağının ikinci
+biçimi: bu ortamda heredoc yalnızca içeriği bozmuyor, kimi zaman hiç
+tamamlanmıyor. **Çok satırlı dosya yazarken Write kullan**, `cat`/`python -`
+gibi stdin bekleyen kanalları değil.

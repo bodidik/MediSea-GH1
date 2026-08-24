@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const CONTEXTS = [
   { id: "dm", label: "T2DM / Prediyabet Taraması", icon: "🩸" },
@@ -11,12 +11,26 @@ const CONTEXTS = [
 ] as const;
 type Ctx = typeof CONTEXTS[number]["id"];
 
-function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number }) {
-  const interpret = (fg: number, h2: number) => {
+/**
+ * `twoHour` artık `number | null` — `null` = 2. saat DEĞERLENDİRİLEMEDİ.
+ *
+ * Eskiden 0 iki anlama birden geliyordu: "girilmedi" ve "çöp yazıldı".
+ * `h2 === 0 ? -1` ile kategori doğru dışlanıyordu ama NORMAL etiketinin ALT
+ * METNİ koşulsuz "2.saat < 140 mg/dL" diyordu — yani araç, elinde OLMAYAN
+ * bir değer hakkında iddia basıyordu. Ölçüldü:
+ *
+ *   açlık 95 · 2. saat "abc"  ->  "NORMAL · Açlık < 100 mg/dL · 2.saat < 140"
+ *
+ * Gerçek 2. saat 210 (diyabet) olsaydı, tek yazım hatası "NORMAL" verecekti.
+ */
+function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number | null }) {
+  const interpret = (fg: number, h2: number | null) => {
     const fgCat = fg < 100 ? 0 : fg < 126 ? 1 : 2;
-    const h2Cat = h2 === 0 ? -1 : h2 < 140 ? 0 : h2 < 200 ? 1 : 2;
+    const h2Cat = h2 === null ? -1 : h2 < 140 ? 0 : h2 < 200 ? 1 : 2;
     const cat = Math.max(fgCat, h2Cat === -1 ? 0 : h2Cat);
-    if (cat === 0) return { label: "NORMAL", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", sub: "Açlık < 100 mg/dL · 2.saat < 140 mg/dL" };
+    if (cat === 0) return { label: "NORMAL", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",
+      /* Yalnızca GERÇEKTEN okunan değer hakkında iddia basılıyor. */
+      sub: h2 === null ? "Açlık < 100 mg/dL — 2. saat değeri girilmedi" : "Açlık < 100 mg/dL · 2.saat < 140 mg/dL" };
     if (cat === 1) return { label: "PREDİYABET", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", sub: fg >= 100 && fg < 126 ? "Bozulmuş Açlık Glukozu (BAG)" : "Bozulmuş Glukoz Toleransı (BGT)" };
     return { label: "DİYABET MELLİTUS", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200", sub: "Tanı doğrulama gerekli (semptom yoksa)" };
   };
@@ -80,19 +94,28 @@ function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; 
   );
 }
 
-function AcroResult({ nadir, assay }: { nadir: number; assay: "standard" | "sensitive" }) {
+/**
+ * MEŞRU SIFIR — kardeş araç `gh-test` ile BİREBİR aynı kusur.
+ *
+ * Kapı `nadir > 0` diyordu. Oysa glukoz sonrası nadir GH 0, TAM baskılanma
+ * demek: testin ARADIĞI normal sonuç, akromegalinin dışlanması. Ölçüldü —
+ * 0.2 için "GH SÜPRESİYONU YETERLİ" basılırken 0 için hiçbir şey basılmıyordu.
+ *
+ * `null` = değerlendirilemedi (boş ya da çöp), 0 = gerçekten ölçülmüş sıfır.
+ */
+function AcroResult({ nadir, assay }: { nadir: number | null; assay: "standard" | "sensitive" }) {
   const cutoff = assay === "sensitive" ? 0.4 : 1.0;
-  const suppressed = nadir > 0 && nadir < cutoff;
+  const suppressed = nadir !== null && nadir < cutoff;
   return (
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${suppressed ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
       <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">
         SONUÇ — {assay === "sensitive" ? "Hassas Assay" : "Standart Assay"} eşiği: {cutoff} μg/L
       </div>
       <p className={`text-2xl font-black italic tracking-tight ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
-        {nadir === 0 ? "–" : suppressed ? "GH SÜPRESİYONU YETERLI" : "GH SÜPRESİYONU YETERSİZ"}
+        {nadir === null ? "–" : suppressed ? "GH SÜPRESİYONU YETERLI" : "GH SÜPRESİYONU YETERSİZ"}
       </p>
       <p className={`text-sm font-bold mt-1 ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
-        {nadir === 0 ? "" : suppressed ? "Akromegali dışlanır" : "Akromegali ile uyumlu — IGF-1 ve görüntüleme gerekli"}
+        {nadir === null ? "" : suppressed ? "Akromegali dışlanır" : "Akromegali ile uyumlu — IGF-1 ve görüntüleme gerekli"}
       </p>
     </div>
   );
@@ -123,6 +146,37 @@ export default function OgttPage() {
   const h1 = parseLocaleNumber(oneH);
   const h2 = parseLocaleNumber(twoH);
   const h3 = parseLocaleNumber(threeH);
+
+  /**
+   * MAKULLÜK KAPISI — çöp girdi de saçma yüksek girdi de klinik TANI
+   * üretiyordu ve ikisi de kapısızdı. Ölçüldü:
+   *
+   *   açlık 95 · 2. saat "abc"   ->  "NORMAL"  (elinde olmayan değer için
+   *                                   "2.saat < 140 mg/dL" iddiası)
+   *   açlık 9999 · 2. saat 9999  ->  "DİYABET MELLİTUS"
+   *
+   * `parseLocaleNumber("abc")` 0 döndürüyor, yani ayrım DEĞERE bakılarak
+   * yapılamaz; `sayiGirildiMi` ham dizeye bakıyor.
+   *
+   * Sınırlar klinik eşik DEĞİL, makullük sınırı: yaşamla bağdaşan glukoz
+   * kabaca 20–1500 mg/dL (hiperozmolar tabloda 1000'i aşabiliyor). GH ise
+   * 0 alabilir — orada meşru sıfır KORUNUYOR, üst sınır makullük.
+   */
+  const glukozMakul = (ham: string) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= 20 && n <= 1500;
+  };
+  const ghMakul = (ham: string) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= 0 && n <= 200;
+  };
+
+  const fGecerli  = glukozMakul(fasting);
+  const h1Gecerli = glukozMakul(oneH);
+  const h2Gecerli = glukozMakul(twoH);
+  const h3Gecerli = glukozMakul(threeH);
 
 
   return (
@@ -188,9 +242,9 @@ export default function OgttPage() {
           )}
         </div>
 
-        {ctx === "dm" && f > 0 && <DmResult fasting={f} twoHour={h2} />}
-        {ctx === "gdm" && (f > 0 || h1 > 0 || h2 > 0) && <GdmResult fasting={f} oneHour={h1} twoHour={h2} threeHour={h3} />}
-        {ctx === "acro" && <AcroResult nadir={h2} assay={assay} />}
+        {ctx === "dm" && fGecerli && <DmResult fasting={f} twoHour={h2Gecerli ? h2 : null} />}
+        {ctx === "gdm" && (fGecerli || h1Gecerli || h2Gecerli) && <GdmResult fasting={fGecerli ? f : 0} oneHour={h1Gecerli ? h1 : 0} twoHour={h2Gecerli ? h2 : 0} threeHour={h3Gecerli ? h3 : 0} />}
+        {ctx === "acro" && <AcroResult nadir={ghMakul(twoH) ? h2 : null} assay={assay} />}
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">
           <div className="flex justify-center border-b border-slate-100 pb-4">
