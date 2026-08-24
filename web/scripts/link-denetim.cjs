@@ -181,6 +181,33 @@ function rotaVar(yol, premiumKonular, konular, araclar) {
  *
  * Şablon dizeler (`/topics/${slug}`) bilerek kapsam dışı: hedef çalışma
  * zamanında belli oluyor ve zaten veriden geliyor.
+ *
+ * ─────────────────────────────────────────────────────────────────────
+ * VERDİKTLER — 27 uyarının 27'si de ÖLÜ KODDA. Ölçüldü; yeniden
+ * kovalanmasın diye buraya yazıldı. Ulaşılabilirlik "içe aktarılmış mı"
+ * ile DEĞİL, "rotadan ulaşılıyor mu" ile ölçüldü.
+ *
+ *   app/config/nav.ts        12 kırık (/sections/*)  → sıfır içe aktaran
+ *   app/components/HeaderClient.tsx   1 (/sections)  → sıfır içe aktaran
+ *   app/tools/data/ads.ts     3 (/premium, /kitap,
+ *                                /topics/acil-tip)   → yalnızca AdBanner
+ *                                                      çağırıyor, o da ölü
+ *   app/admin/**              2 (/admin)             → rotada, ama
+ *                                                      middleware kapısı
+ *                                                      arkasında ve
+ *                                                      app/admin/page.tsx YOK
+ *   content premium videos    6 (/tr/premium/video/  → JSON'ları yalnızca
+ *                                izle)                 _hematoloji ve
+ *                                                      _romatoloji okuyor
+ *   content premium cases     2 (cases/, pearls/)    → aynı, rotasız
+ *
+ * Davranışla doğrulandı: /sections/nefroloji 404, /tr/premium/video/izle
+ * 404, /admin ise /giris'e yönleniyor (middleware).
+ *
+ * `app/config/nav.ts` DİKKAT ÇEKİCİ: 12 bağlantısı `/sections/<branş>`
+ * diyor, oysa sitenin gerçek yolu `/topics/<branş>`. Dosya canlıya
+ * bağlanırsa on iki kırık bağlantı birden açılır — bağlamadan önce
+ * yolları düzelt.
  */
 const KAYNAK_UYARI = true;
 const KAYNAK_DIZINLERI = ['app', 'lib', 'components'];
@@ -386,7 +413,23 @@ async function main() {
     if (!UYARI_MODU) process.exitCode = 1;
   }
   if (!kirik.length) {
-    console.log('kırık bağlantı yok.');
+    /* KAPANIŞ SATIRI UYARILARI DA SAYAR.
+     *
+     * Bir dönem burada yalnızca "kırık bağlantı yok." yazıyordu ve bu, uyarı
+     * sınıfında 27 kırık adres dururken basılıyordu. Ölçüldü: raporun
+     * KUYRUĞUNA bakan biri (ki tail ile bakmak olağan) "temiz" sonucuna
+     * varıyor; kırıkları görmek için başa dönmek gerekiyordu. Bu oturumda
+     * tam olarak bu yanılma yaşandı.
+     *
+     * Deponun kendi kuralı: "0 kusur ile 0 öge ekranda aynı görünür" —
+     * bir tarama neyi ölçtüğünü ve neyi kapı SAYMADIĞINI aynı yerde
+     * söylemeli. CI davranışı değişmiyor; yalnızca rapor dürüstleşiyor. */
+    const uyariSayisi = kaynakKirik.length + alanKirik.length;
+    if (uyariSayisi) {
+      console.log(`CI kapısı: kırık bağlantı yok — ama UYARI sınıfında ${uyariSayisi} kırık adres var (ayrıntı yukarıda).`);
+    } else {
+      console.log('kırık bağlantı yok.');
+    }
     return;
   }
 
