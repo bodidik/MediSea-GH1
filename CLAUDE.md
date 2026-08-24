@@ -6796,3 +6796,35 @@ belirliyor; belirleyen şey **o sayının bir HÜKÜM üretip üretmediği.**
 
 Doğrulama 5 vaka, sınır değerleri dahil: `%82.1` değişmedi, `%0` yüzde olarak
 KALDI (sıfır meşru bir süpresyon yüzdesi), tam `%50` hipofiz tarafında.
+
+### YÜZDE ALANI sınıfı tarandı — dört araç, hepsi temiz
+
+Üst sınır turunun devamı olarak ayrı bir ölçüt denendi: **etiketi yüzde olan
+alan 100'ü aşabiliyor mu?** `anc`de toplamın 100'ü aşamaması zaten
+denetleniyordu; ötekiler bilinmiyordu.
+
+Depoda `(%)` etiketli alan taşıyan **dört araç** var ve dördü de temiz:
+
+| araç | yüzde alanı | durum |
+|---|---|---|
+| `anc` | segment % · band % | `yuzdeToplam <= 100` + `sayiGirildiMi` (bu oturumda düzeltildi) |
+| `hba1c-eag` | HbA1c % | 2–20 sınırı |
+| `news2` | SpO₂ % | **beş vitalin hepsi sınırlı** |
+| `spot-urine` | FENa % · FEÜre % | ÇIKTI, girdi değil |
+
+**`news2` tam korumalı çıktı ve ölçüldü** — belgede yalnızca "boş formda 15
+basıyordu" kusuru kayıtlıydı, üst sınır tarafı hiç sınanmamıştı:
+
+| girdi | ekranda |
+|---|---|
+| normal vitaller | toplam 0 · "Düşük" |
+| 28 / 88 / 85 / 130 / 39 (ağır hasta) | toplam **12** · "YÜKSEK" |
+| SpO₂ **150** (imkânsız yüzde) | **–** · "Vitalleri girin" |
+| SpO₂ **−5** · SpO₂ **"abc"** | – · "Vitalleri girin" |
+| solunum 9999 · KB 9999 · ateş 999 | – · "Vitalleri girin" |
+
+Yani NEWS2'de hem alt hem üst sınır yerinde; sınıf o araç için kapalı.
+
+Bu ölçütün kapsamı DAR ve bu yazılı: yalnızca etiketinde `(%)` geçen alanları
+görüyor. Yüzde olduğu etiketten anlaşılmayan alanlar (örneğin bir oran ya da
+kesir) bu taramaya girmiyor.
