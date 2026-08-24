@@ -152,6 +152,28 @@ bas('AYNI açıklamayı taşıyan konular', ciftAciklama,
  * textContent uzunluğu birkaç yüz karakteri aşan var mı diye bak. Sağlam bir
  * sayfada en uzun satır içi etiket onlarca karakterdir (bu dosyada onarımdan
  * sonra 1740 -> 76 oldu).
+ *
+ * ─────────────────────────────────────────────────────────────────────
+ * İKİ ARIZA BİRBİRİNDEN AYRI — ve bedelleri de ayrı. Yukarıdaki çürütme
+ * KAPANMAMIŞ AÇILIŞ etiketiyleydi: açılan `<strong>` kapanmayınca sonraki
+ * gövdeyi YUTUYOR (1740 karakter). Bugünkü üç kayıt başka şekilde:
+ *
+ *   fazladan </em> · fazladan </strong>   → eşleşmeyen KAPANIŞ
+ *   </em> kapanırken açık: strong          → bozuk YUVALAMA
+ *
+ * HTML ayrıştırıcısı eşleşmeyen kapanışı atar, bozuk yuvalamayı da kendi
+ * düzeltir; yutulacak bir şey olmaz. Ölçüldü (bu notun tarif ettiği
+ * yöntemle, üç sayfa da canlı render edilerek):
+ *
+ *   men1-gastrinoma-zes     en uzun em 13 · strong 52   eşik aşan 0
+ *   anemiler                en uzun em 118 · strong 89  eşik aşan 0
+ *   miyeloproliferatif      en uzun em 42 · strong 40   eşik aşan 0
+ *                           (1 iç içe vurgu — yuvalamanın izi, zararsız)
+ *
+ * Yani BU ÜÇ KAYDIN görünür bedeli sıfır ve içerik dosyalarına dokunmayı
+ * gerektirmiyor. Genelleme YAPILMIYOR: kapanmamış açılış etiketi hâlâ
+ * gerçek hasar veriyor ve liste o yüzden basılmaya devam ediyor. Yeni bir
+ * kayıt çıktığında hangi arıza olduğuna bak, sonra ölç.
  */
 bas('etiket dengesi bozuk bölüm (görünür bedeli AYRICA ölçülmeli)', dengesiz,
   (d) => `${d.yol}\n      ${d.sorun}`);
