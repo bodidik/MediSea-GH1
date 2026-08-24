@@ -4295,6 +4295,57 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### 410 konu sayfasının HEPSİ tarandı — 10 iskelet konu çıktı
+
+Örneklemle değil, tamamıyla ölçüldü (canlıda, sitemap'ten alınan 410 adres):
+**hepsi 200, hepsinde tam bir `<h1>`.** Yani hiçbir konu sayfası kırık değil.
+
+Ama gövde uzunluğu ölçülünce beş sayfa aykırı çıktı; içerik bölgesi
+(`[data-readable]`) ayrı ölçülünce sebep netleşti:
+
+| konu | okunabilir içerik | bölüm |
+|---|---|---|
+| `hematoloji/talasemiler-ana` | **40 krk** | 1 |
+| `hematoloji/yapim-azligi-anemiler` | 70 | 1 |
+| `hematoloji/hematopoez` | 87 | 1 |
+| `hematoloji/hemofili-a` | 94 | 1 |
+| `endokrinoloji/addison` (sağlıklı kıyas) | **5025** | 7 |
+
+"Talasemiler" sayfasının okunabilir içeriğinin TAMAMI şu cümle:
+*"Hemoglobin elektroforezi ile tanı konur."*
+
+**DENETİMDE BOŞLUK VARDI.** `konu-denetim` "hiç bölümü olmayan konu" sayıyordu;
+tek bölümü olan ama gövdesi 29 karakter olan bir konu oradan TEMİZ geçiyordu.
+Denetim artık gövde uzunluğunu da ölçüyor.
+
+**Eşik VERİDEN seçildi, uydurulmadı:** 410 görünür konunun ortanca gövdesi
+**3016** karakter, %5'lik dilim **405**. 300 karakter bu dilimin de altında,
+yani yalnızca tartışmasız aykırıları işaretliyor.
+
+**HUB İLE YAPRAK AYRILDI** — "sınıfın adı arızanın şekli değildir" dersinin
+uygulaması. Çocuğu olan konu bir gezinme sayfasıdır, kısa olması BEKLENİR:
+
+| kova | adet | anlamı |
+|---|---|---|
+| iskelet YAPRAK | **10** | gerçek içerik boşluğu (9'u hematoloji, 1'i onkoloji) |
+| kısa HUB | 7 | beklenen — ayrı listeleniyor, toplama girmiyor |
+
+**ÖLÇÜT İKİ KEZ DÜZELTİLDİ ve ikisi de öğretici:**
+
+- **Gövde İKİ ayrı anahtarda:** `text` ve `html`. İlk denemede yalnızca `html`
+  arandı ve `addison` **0 karakter** çıktı — oysa canlıda 5025 basıyor. Bir
+  şemanın tek biçimli olduğunu varsayma; anahtarları SAY.
+- **Çocuk sayarken ebeveyn referansı normalleştirilmeli** (`Ön-hipofiz` ↔
+  `on-hipofiz`). Uygulamada `slug-eslestir.ts` bunu zaten yapıyor; ölçüm de
+  yapmazsa sapan referanslı konu "çocuğu yok" sanılır.
+
+**İki yöntem uyuştu:** betiğin çıktısı, ayrıca yazılan bağımsız bir ölçümle
+birebir aynı (10 yaprak, 7 hub, aynı uzunluklar).
+
+CI kapısı DEĞİL: içerik yazmak kullanıcının işi, bu liste yalnızca nerede
+eksik olduğunu ölçüyor. Sınıf `SENDE-KALANLAR`da kayıtlı DEĞİLDİ.
+
+
 ### Derleme UYARI veriyor ve turlardır okunmamış — ölçüldü, zararsız
 
 Turlardır derleme kapısı `✓ Compiled successfully` satırına bakılarak
