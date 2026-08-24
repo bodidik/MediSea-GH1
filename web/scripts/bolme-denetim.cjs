@@ -27,6 +27,49 @@ const os = require('os');
 const kokArg = process.argv.indexOf('--kok');
 const KOK = kokArg > 0 ? process.argv[kokArg + 1] : 'app/tools';
 
+/**
+ * Yorumları ve JSX METİN DÜĞÜMLERİNİ boşlukla doldurur (SİLMEZ — satır
+ * numaraları korunsun, rapor doğru satırı göstersin).
+ *
+ * İKİ AYRI KÖRLÜK, ikisi de sahte bulgu üretti:
+ *
+ *  1. YORUM — bu depoda yorumlar geçmiş kusurları BİREBİR alıntılıyor.
+ *     Elenmezse denetim kendi belgesini kusur sanıyor.
+ *
+ *  2. JSX METNİ — araçlar formülü EKRANA basıyor ve formülde bölme işareti
+ *     var. Ölçüldü: `ktv:103` aday olarak raporlandı, oysa satır kod değil:
+ *
+ *       <p className="… font-mono">eKt/V = spKt/V − (0.6×spKt/V / t) + 0.03</p>
+ *
+ *     `</p>` kapanış etiketi zaten eleniyordu (bkz. aşağıdaki not) ama metnin
+ *     İÇİNDEKİ bölme eleniyor değildi.
+ *
+ * JSX metni ölçütü DAR tutuldu: yalnızca bir AÇILIŞ ETİKETİNİN hemen ardından
+ * gelen, süslü parantez taşımayan metin. Genel bir `>…<` süzgeci olsaydı
+ * `if (x > 0 && y / z < 5)` gibi gerçek kodu da yutar ve GERÇEK kusuru
+ * gizlerdi — yani ölçütü gevşetmek burada tehlikeli.
+ */
+function govdeAyikla(kaynak) {
+  /* 1) Yorumlar */
+  let cikti = '';
+  let blok = false;
+  for (const satir of kaynak.split('\n')) {
+    let y = '';
+    for (let i = 0; i < satir.length; i++) {
+      if (blok) {
+        if (satir[i] === '*' && satir[i + 1] === '/') { blok = false; y += '  '; i++; }
+        else y += ' ';
+      } else if (satir[i] === '/' && satir[i + 1] === '*') { blok = true; y += '  '; i++; }
+      else if (satir[i] === '/' && satir[i + 1] === '/') { y += ' '.repeat(satir.length - i); break; }
+      else y += satir[i];
+    }
+    cikti += y + '\n';
+  }
+  /* 2) JSX metin düğümleri — açılış etiketi + süslü parantezsiz metin */
+  return cikti.replace(/(<[a-zA-Z][^<>]*>)([^<>{}]*)(?=<)/g,
+    (t, etiket, metin) => etiket + ' '.repeat(metin.length));
+}
+
 function tara(kok) {
   const bulgu = [];
   let dosya = 0;
@@ -36,7 +79,7 @@ function tara(kok) {
     const p = path.join(kok, d.name, 'page.tsx');
     if (!fs.existsSync(p)) continue;
     dosya++;
-    const s = fs.readFileSync(p, 'utf8').replace(/\r\n/g, '\n');
+    const s = govdeAyikla(fs.readFileSync(p, 'utf8').replace(/\r\n/g, '\n'));
     const adlar = [...s.matchAll(/const\s+(\w+)\s*=\s*parseLocaleNumber\(/g)].map((m) => m[1]);
     if (!adlar.length) continue;
     const satirlar = s.split('\n');
@@ -99,15 +142,45 @@ if (process.argv.includes('--kontrol')) {
     'const p = parseLocaleNumber(protein);',
     'return <div><p className="x">Değer</p></div>;',
   ]);
+  /* JSX METİN DÜĞÜMÜ: araçlar formülü ekrana basıyor ve formülde bölme var.
+     Gerçek taramada `ktv:103` bu yüzden aday çıkmıştı. */
+  yaz('zz-temiz-e', [
+    'const t = parseLocaleNumber(sure);',
+    'return <p className="font-mono">eKt/V = spKt/V − (0.6×spKt/V / t) + 0.03</p>;',
+  ]);
+  /* YORUM: bu depoda yorumlar geçmiş kusurları birebir alıntılıyor. */
+  yaz('zz-temiz-f', [
+    'const hacim = parseLocaleNumber(h);',
+    '/* Eski kusur: const oran = doz / hacim; korumasızdı. */',
+    'const oran = hacim > 0 ? 10 / hacim : null;',
+  ]);
+
+  /* NEGATİF-2: JSX İFADESİ içindeki korumasız bölme YAKALANMALI.
+   * Bu, yukarıdaki iki temiz biçimin ayna kontrolü: metni ve yorumu eleyen
+   * süzgeç GERÇEK kodu da yerse denetim körleşir ve kimse fark etmez. */
+  yaz('zz-bozuk-jsx', [
+    'const kilo = parseLocaleNumber(k);',
+    'return <div className="x">Doz <b>{500 / kilo}</b> mg</div>;',
+  ]);
+  /* NEGATİF-3: karşılaştırma işaretleri arasındaki korumasız bölme.
+   * Genel bir `>…<` süzgeci bunu yutardı — ölçütün dar tutulma sebebi. */
+  yaz('zz-bozuk-kars', [
+    'const z = parseLocaleNumber(a);',
+    'const sonuc = y / z < 5 ? "az" : "cok";',
+  ]);
+
   const { bulgu } = tara(t);
   fs.rmSync(t, { recursive: true, force: true });
   const adlar = bulgu.map((b) => b.arac);
-  const negatif = adlar.includes('zz-bozuk');
-  const sahte = ['zz-temiz-a', 'zz-temiz-b', 'zz-temiz-c', 'zz-temiz-d'].filter((x) => adlar.includes(x));
-  if (!negatif) console.log('negatif kontrol DÜŞTÜ — korumasız bölme yakalanmadı, ölçüt KÖR.');
+  const BOZUK = ['zz-bozuk', 'zz-bozuk-jsx', 'zz-bozuk-kars'];
+  const TEMIZ = ['zz-temiz-a', 'zz-temiz-b', 'zz-temiz-c', 'zz-temiz-d', 'zz-temiz-e', 'zz-temiz-f'];
+  const kacan = BOZUK.filter((x) => !adlar.includes(x));
+  const sahte = TEMIZ.filter((x) => adlar.includes(x));
+  if (kacan.length) console.log('negatif kontrol DÜŞTÜ — yakalanmayan korumasız bölme: ' + kacan.join(', '));
   if (sahte.length) console.log('pozitif kontrol DÜŞTÜ — sahte bulgu: ' + sahte.join(', '));
-  if (!negatif || sahte.length) process.exit(1);
-  console.log('negatif + pozitif kontrol GEÇTİ — korumasız bölme yakalanıyor, üç temiz biçim işaretlenmiyor.');
+  if (kacan.length || sahte.length) process.exit(1);
+  console.log('negatif + pozitif kontrol GEÇTİ — ' + BOZUK.length +
+    ' korumasız biçim yakalanıyor, ' + TEMIZ.length + ' temiz biçim işaretlenmiyor.');
   process.exit(0);
 }
 

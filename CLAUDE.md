@@ -6241,3 +6241,52 @@ alana "0" yazıp sonuç basılıyor mu diye bakarak.
 Bir denetim yazarken sorulacak DÖRDÜNCÜ soru da buradan çıktı: kusur buluyor
 mu · yanlış pozitif üretiyor mu · yönlendirilebiliyor mu · **ve ölçütün
 göremediği ayna hâli var mı?**
+
+### Ekrana basılan FORMÜL, kaynak tarayan ölçütte kod sanıldı
+
+Rapor denetimleri topluca sürüldü ve `bolme-denetim` bir aday verdi:
+`ktv:103`. Belge bu sınıfı "temiz" diye kaydediyordu, yani ya belge bayattı
+ya ölçüt. Bakıldı — ölçüttü, ve aday SAHTEYDİ:
+
+```
+<p className="… font-mono">eKt/V = spKt/V − (0.6×spKt/V / t) + 0.03</p>
+```
+
+Satır kod değil, aracın EKRANA BASTIĞI formül. Denetim `</p>` kapanış
+etiketini zaten eliyordu (belgede kayıtlı, 17 sahte bulgu üretmişti) ama
+metnin İÇİNDEKİ bölmeyi elemiyordu.
+
+Bu sınıf bu depoda beklenen bir şey: **araçlar aritmetiğini dürüst olsun diye
+ekrana yazıyor**, yani formül metni her yerde. Kaynak tarayan bir ölçüt için
+yorumlar kadar tehlikeli bir gürültü kaynağı.
+
+**Çare DAR tutuldu ve dar tutulma sebebi ölçüldü.** Genel bir `>…<` süzgeci
+yazmak kolay ama `if (x > 0 && y / z < 5)` gibi GERÇEK kodu da yutar ve
+kusuru gizler — yani ölçütü gevşetmek burada körleştiriyor. Süzgeç yalnızca
+bir AÇILIŞ ETİKETİNİN hemen ardından gelen, süslü parantez taşımayan metni
+boşaltıyor.
+
+**Doğrulama iki yönlü ve dokuz tohumlu** (hepsi denetimin `--kontrol` kipine
+gömüldü, bir daha elde kurulmasın):
+
+| tohum | beklenen | sonuç |
+|---|---|---|
+| korumasız bölme | yakalanmalı | ✓ |
+| **JSX İFADESİ içinde korumasız bölme** `{500 / kilo}` | yakalanmalı | ✓ |
+| **karşılaştırma arasında korumasız bölme** `y / z < 5` | yakalanmalı | ✓ |
+| JSX metni (ktv formülü) | işaretlenmemeli | ✓ |
+| yorumda geçen bölme | işaretlenmemeli | ✓ |
+| dört eski temiz biçim | işaretlenmemeli | ✓ |
+
+İkinci ve üçüncü satır ayırt edici olan: metni ve yorumu eleyen süzgeç gerçek
+kodu da yerse denetim körleşir ve kimse fark etmez. **Bir süzgeç eklerken
+elediği şeyin AYNA kontrolünü de koy** — "şunu artık görmüyor" ile "şunu da
+görmüyor" arasındaki fark yalnızca böyle ölçülüyor.
+
+Sonuç: 18 → 17 bölme noktası, aday 0. Ölçülen sayı da düştüğü için "aday
+kayboldu" ile "tarama körleşti" ayrımı raporun kendisinden okunabiliyor.
+
+**Sınıfın kapsamı ölçüldü, varsayılmadı.** Aynı formül metnini taşıyan tohum
+operatör tarayan öteki dört denetime de sürüldü — `yuvarlama`, `kapi-kapsam`,
+`karar`, `bant`: **dördü de 0 aday**. Körlük yalnızca `bolme`ye özgüymüş,
+çünkü formül metninde geçen tek operatör bölme işareti.
