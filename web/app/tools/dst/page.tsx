@@ -161,7 +161,25 @@ export default function DstPage() {
           {proto.id === "hddst" && bazalGirildi && valGirildi && (
             <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-sm">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hesaplanan süpresyon: </span>
-              <span className="font-black text-blue-900">%{effectiveVal}</span>
+              {/*
+                EKSİ YÜZDE SÜPRESYON ANLAMSIZ BİR NİCELİK. Son kortizol bazalı
+                aşarsa (bVal < val) formül eksi veriyor ve ekran "%-42.9",
+                uçta "%-500" basıyordu. Ölçüldü — HÜKÜM DOĞRUYDU (kortizol
+                yükselmişse süpresyon yoktur, ektopik/adrenal doğru cevap),
+                kusur yalnızca gösterimdeydi.
+
+                `ktv`deki eksi Kt/V'den farkı bu ve ayrım önemli: orada hüküm
+                İMKÂNSIZ BİR DEĞERDEN üretiliyordu, burada hüküm doğru ve
+                yalnızca sayı okunamaz. O yüzden hesap değişmiyor — yalnızca
+                eksi değerin adı konuyor.
+              */}
+              {effectiveVal < 0 ? (
+                <span className="font-black text-blue-900">
+                  yok — kortizol yükseldi (paradoksal artış)
+                </span>
+              ) : (
+                <span className="font-black text-blue-900">%{effectiveVal}</span>
+              )}
             </div>
           )}
         </div>

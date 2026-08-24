@@ -6778,3 +6778,21 @@ doğru ifade "süpresyon yok" ya da "paradoksal artış".
 `ktv`den farkı bu: orada hüküm imkânsız bir değerden ÜRETİLİYORDU, burada
 hüküm doğru ve yalnızca sayı anlamsız. O yüzden ölçüldü, not edildi,
 DEĞİŞTİRİLMEDİ — sonraki turda gösterim düzeltmesi olarak ele alınabilir.
+
+### Açık bulgu kapatıldı: `dst`de eksi yüzde süpresyon adlandırıldı
+
+Bir önceki turda ölçülüp "karar bekliyor" diye bırakılan bulgu kapatıldı.
+HDDST'de son kortizol bazalı aşarsa ekran `%-42.9`, uçta `%-500` basıyordu.
+
+**Kapsam DAR tutuldu ve ölçütü `ktv` ile karşılaştırma verdi:**
+
+| araç | eksi değer neye yol açıyordu | çare |
+|---|---|---|
+| `ktv` | hüküm İMKÂNSIZ BİR DEĞERDEN üretiliyordu (eksi Kt/V ile "YETERSİZ DİYALİZ") | hesap durduruldu, sebep yazıldı |
+| `dst` | hüküm DOĞRU (kortizol yükselmişse süpresyon yok = ektopik), yalnızca sayı okunamaz | hesap değişmedi, eksi değerin ADI konuldu |
+
+Yani "eksi sayı ekranda" tek başına ne kusurun varlığını ne de büyüklüğünü
+belirliyor; belirleyen şey **o sayının bir HÜKÜM üretip üretmediği.**
+
+Doğrulama 5 vaka, sınır değerleri dahil: `%82.1` değişmedi, `%0` yüzde olarak
+KALDI (sıfır meşru bir süpresyon yüzdesi), tam `%50` hipofiz tarafında.
