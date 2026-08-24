@@ -31,6 +31,16 @@ const path = require('path');
 
 const KOK = path.join(__dirname, '..', 'content', 'canonical');
 
+/* Ebeveyn referansı büyük harf ve Türkçe aksan bakımından sapabiliyor
+   (`Ön-hipofiz-…` ↔ `on-hipofiz-…`); uygulamada `lib/slug-eslestir.ts` bunu
+   okuma adımında çözüyor. Çocuk sayarken aynı normalleştirme gerekiyor,
+   yoksa sapan referanslı konu "çocuğu yok" sanılır. */
+function normSlug(s) {
+  return String(s || '').toLowerCase()
+    .replace(/ı/g, 'i').replace(/ö/g, 'o').replace(/ü/g, 'u')
+    .replace(/ş/g, 's').replace(/ç/g, 'c').replace(/ğ/g, 'g');
+}
+
 function konular() {
   const out = [];
   for (const brans of fs.readdirSync(KOK, { withFileTypes: true })) {
@@ -52,6 +62,23 @@ function konular() {
         aciklama: ((j.meta && j.meta.description) || j.description || '').trim(),
         gizli,
         bolum: Array.isArray(j.sections) ? j.sections.length : 0,
+        ebeveyn: normSlug((j.meta && j.meta.parent) || ''),
+        /* İÇERİK UZUNLUĞU — bölüm SAYISI yetmiyor.
+         *
+         * `bolum === 0` denetimi bir konuyu ancak HİÇ bölümü yoksa yakalıyor.
+         * Ölçüldü: tek bölümü olan ama gövdesi 29 karakter olan konular var
+         * ("Talasemiler" sayfasının tamamı: "Hemoglobin elektroforezi ile tanı
+         * konur."). O konu bu denetimden temiz geçiyordu.
+         *
+         * Gövde İKİ ayrı anahtarda olabiliyor — `text` ve `html`. Yalnızca
+         * birine bakan bir ölçüm yanılır: ilk denemede `html` arandı ve
+         * `addison` 0 karakter çıktı, oysa canlıda 5025 karakter basıyor.
+         * Bu yüzden `heading` dışındaki BÜTÜN dize alanları toplanıyor. */
+        icerikUzunlugu: (Array.isArray(j.sections) ? j.sections : [])
+          .flatMap((s) => Object.entries(s || {})
+            .filter(([k, v]) => k !== 'heading' && typeof v === 'string')
+            .map(([, v]) => v.replace(/<[^>]+>/g, ' ')))
+          .join(' ').replace(/\s+/g, ' ').trim().length,
       });
     }
   }
@@ -120,6 +147,41 @@ for (const k of hepsi) {
   });
 }
 
+/**
+ * İSKELET KONU — bölümü VAR ama gövdesi neredeyse boş.
+ *
+ * `hiç bölümü olmayan konu` denetimi bunları göremiyordu: tek bölümü olan ama
+ * gövdesi 29 karakter olan bir konu oradan temiz geçiyor. Ölçüldü, gerçek:
+ * `hematoloji/talasemiler-ana` sayfasının okunabilir içeriğinin TAMAMI
+ * "Hemoglobin elektroforezi ile tanı konur." cümlesi.
+ *
+ * EŞİK VERİDEN SEÇİLDİ, uydurulmadı: 410 görünür konunun ortanca gövdesi
+ * 3016 karakter, %5'lik dilim 405. 300 karakter bu dilimin de altında, yani
+ * yalnızca tartışmasız aykırıları işaretliyor.
+ *
+ * HUB İLE YAPRAK AYRILIYOR — sınıfın adı arızanın şekli değil. Çocuğu olan
+ * bir konu gezinme sayfasıdır ve kısa olması BEKLENİR; kısa olan bir yaprak
+ * ise gerçek içerik boşluğudur. Ölçüldü: 300 karakter altındaki 17 konunun
+ * 7'si hub, 10'u yaprak.
+ *
+ * Bu bir CI kapısı DEĞİL ve olmamalı: içerik yazmak kullanıcının işi, bu
+ * liste yalnızca nerede eksik olduğunu ÖLÇÜYOR.
+ */
+const ISKELET_ESIK = 300;
+const cocukSayisi = {};
+for (const k of hepsi) {
+  if (k.ebeveyn) {
+    const anahtar = `${k.brans}/${k.ebeveyn}`;
+    cocukSayisi[anahtar] = (cocukSayisi[anahtar] || 0) + 1;
+  }
+}
+const iskelet = gorunur
+  .filter((k) => k.bolum > 0 && k.icerikUzunlugu < ISKELET_ESIK)
+  .map((k) => ({ ...k, cocuk: cocukSayisi[`${k.brans}/${normSlug(k.slug)}`] || 0 }))
+  .sort((a, b) => a.icerikUzunlugu - b.icerikUzunlugu);
+const iskeletYaprak = iskelet.filter((k) => k.cocuk === 0);
+const iskeletHub = iskelet.filter((k) => k.cocuk > 0);
+
 const basliksiz = gorunur.filter((k) => !k.baslik);
 const bosGovde = gorunur.filter((k) => k.bolum === 0);
 const ciftBaslik = tekrarlar('baslik');
@@ -178,6 +240,16 @@ bas('AYNI açıklamayı taşıyan konular', ciftAciklama,
 bas('etiket dengesi bozuk bölüm (görünür bedeli AYRICA ölçülmeli)', dengesiz,
   (d) => `${d.yol}\n      ${d.sorun}`);
 
-const toplam = basliksiz.length + bosGovde.length + ciftBaslik.length + ciftAciklama.length + dengesiz.length;
+bas(`İSKELET yaprak konu (<${ISKELET_ESIK} krk gövde, çocuğu YOK — içerik boşluğu)`, iskeletYaprak,
+  (k) => `${String(k.icerikUzunlugu).padStart(4)} krk · ${k.brans}/${k.slug}`);
+
+/* Hub'lar AYRI listeleniyor ve kusur SAYILMIYOR: çocuğu olan konu bir
+   gezinme sayfasıdır, kısa gövdesi beklenen davranış. Aynı eşiğe düşen iki
+   şeyi tek listede toplamak, gerçek boşluğu gürültüye boğardı. */
+bas(`kısa HUB konu (beklenen — gezinme sayfası, kusur değil)`, iskeletHub,
+  (k) => `${String(k.icerikUzunlugu).padStart(4)} krk · ${k.cocuk} çocuk · ${k.brans}/${k.slug}`);
+
+const toplam = basliksiz.length + bosGovde.length + ciftBaslik.length + ciftAciklama.length
+  + dengesiz.length + iskeletYaprak.length;
 if (!toplam) console.log('\nkünye kusuru yok.');
 else console.log(`\n${toplam} kayıt insan kararı bekliyor (bu betik CI kapısı DEĞİL).`);
