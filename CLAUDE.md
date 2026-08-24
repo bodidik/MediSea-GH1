@@ -4295,6 +4295,44 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Satış sayfasındaki HER SAYI bağımsız olarak doğrulandı
+
+"Sayı yazma, saydır" mimarisi belgede yazılı ama sayıların DOĞRU olduğu hiç
+uçtan uca sınanmamıştı. `/uyelik` sayfasının ilan ettiği altı sayının altısı
+da dosya sisteminden bağımsız olarak ölçüldü ve **altısı da tuttu**:
+
+| ilan | ölçülen | nasıl |
+|---|---|---|
+| 13 branş · 410 konu | ✓ | dosya sistemi + site haritası (559 adres) |
+| 41 başlık | ✓ | premium `topics/` altında 41 dosya |
+| **378 soru** | ✓ | 388 toplam − 10 yetim |
+| **1492 kart** | ✓ | 1641 toplam − 149 yetim |
+| 11 vaka | ✓ | `vakalar/` altında 11 dosya |
+
+İki çıkarma ayrıca anlamlı: sayaç yetim içeriği SAYMIYOR. Belgede kayıtlı
+kusur tam bunun tersiydi — satış sayfası "362 soru" derken pano "352"
+diyordu. Bugün iki bağımsız yol aynı sayıya varıyor.
+
+### Ücretli içeriğin kalite taraması TAMAMLANDI — dört türün dördü de sağlam
+
+İskelet konu ölçütü bütün içerik türlerine sürüldü:
+
+| tür | adet | ortanca gövde | en kısa | iskelet |
+|---|---|---|---|---|
+| premium konu | 41 | 7020 krk | 524 (soru derlemesi) | **0** |
+| soru açıklaması | 388 | 1051 krk | 267 | **0** |
+| flashcard | 1641 | 163 krk | 74 | **0** |
+| vaka adımı | 35 | 2883 krk | 2169 | **0** |
+
+Kıyas: AÇIK taraftaki 410 konunun ortancası 3016 ve 10'u iskelet. Yani
+ücretli içerik hem daha uzun hem boşluksuz.
+
+**`cases/` ile `vakalar/` AYRI iki özellik, kopya değil** — ölçüldü:
+`cases/` yalnızca soru çözüm kokpitinden (`soru-cozum/page.tsx`),
+`vakalar/` yalnızca vaka çözmeden (`vaka-coz/page.tsx`) okunuyor. Şemaları
+da farklı (`stages` ↔ `adimlar`). `cases/` bugün tek dosya taşıyor.
+
+
 ### Arama görünürlüğü uçtan uca ölçüldü — robots · canonical · JSON-LD · harita
 
 Belge açık tarafı "huninin ağzı" diye tanımlıyor ama bu yüzeyin parçaları hiç
