@@ -4295,6 +4295,50 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Konsol ve ağ taraması — hata yok, ama her sayfa oturumu İKİ KEZ soruyor
+
+Çalışma zamanı hataları sistematik hiç taranmamıştı. Belgedeki doğru yöntemle
+(taze sekme, gerçek gezinme, `read_console_messages`) üç yüzey tarandı:
+konu sayfası · araç sayfası · premium pano. **Konsol hatası: 0. Başarısız
+istek: 0** (ağ günlüğündeki 40 isteğin 40'ı da 200).
+
+**Yan düzeltme — kendi iddiamı çürüttüm.** Güvenlik başlıkları turunda "CSP
+yazarken dikkat: `next/font` Google'dan çekiyor" demiştim. Ağ günlüğü aksini
+gösteriyor: yazı tipleri `/_next/static/media/*.woff2` yani KENDİ
+origin'imizden geliyor. Google Fonts yalnızca DERLEME anında iniyor. Bir CSP
+yazılacaksa font için üçüncü taraf izni GEREKMİYOR.
+
+**Ölçülen tek aykırılık: `/api/auth/session` her sayfa yüklemesinde İKİ KEZ
+çağrılıyor.**
+
+| ölçüt | değer |
+|---|---|
+| istek sayısı | 2 (her sayfada — araç sayfasında da, premium panoda da) |
+| süreler | 279 ms · 1694 ms |
+| 1. istek biter | 1142 ms |
+| 2. istek başlar | **1143 ms** |
+
+Aradaki 1 ms belirleyici: bu **paralel bir çift değil, ARDIŞIK** bir zincir —
+birincisi biter bitmez ikincisi tetikleniyor.
+
+**Uygulama kodunda sebep YOK:** tek `SessionProvider` var (`app/providers.tsx`),
+kök düzende bir kez kuruluyor, iç içe değil; `useStudySync` yalnızca `status`
+okuyor, kendi isteği yok. Yani ikinci çağrı NextAuth'un kendi
+`SessionProvider` davranışından geliyor.
+
+**KUSUR DEĞİL, MALİYET:** ikisi de aynı cevabı döndürüyor, doğruluk sorunu
+yok. Bedeli her görüntülemede iki sunucusuz çağrı ve oturuma bağlı arayüzün
+~1.7 s gecikmesi. `refetchOnWindowFocus`/`refetchInterval` kısmak çağrıyı
+yarıya indirir ama başka yerde giriş yapan kullanıcının bunu geç görmesi
+pahasına — ödünleşme, tek başına yapılmadı.
+
+**ÖLÇÜM TUZAĞI, yine aynı aile:** ilk okuma "4 çağrı" dedi ve bir an iki kat
+kötü sanıldı. Ağ günlüğü aynı sekmedeki İKİ gezinmeyi birden kapsıyordu
+(listede hem `tools/egfr` hem `premium/ydus` parçaları vardı). Taze sekmede
+tek gezinmeyle ölçülünce sayı 2 çıktı. Belgedeki "aynı sekmede biriken geçmiş
+yanıltır" kuralı — bu kez ağ günlüğünde.
+
+
 ### İki kayıtlı sınıf 15 yüzeyde birden kapatıldı — sunucu render'ı ve landmark
 
 Belgede iki sınıf ayrı ayrı düzeltilmiş ama hiç TOPLU doğrulanmamıştı:
