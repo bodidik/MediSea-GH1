@@ -4295,6 +4295,48 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Arama görünürlüğü uçtan uca ölçüldü — robots · canonical · JSON-LD · harita
+
+Belge açık tarafı "huninin ağzı" diye tanımlıyor ama bu yüzeyin parçaları hiç
+birlikte ölçülmemişti. Ölçüldü, hepsi temiz.
+
+| ölçüt | sonuç |
+|---|---|
+| `robots.txt` | mutlak site haritası adresi · `Disallow: /admin, /api, /*/premium/ydus/, /premium` |
+| canonical | dört sayfa tipinde de MUTLAK ve üretim alan adında (`localhost` felaketi kapalı) |
+| JSON-LD | geçerli JSON · ana sayfa `Organization+WebSite`, araç `+SoftwareApplication+BreadcrumbList`, konu `+MedicalWebPage+BreadcrumbList` |
+| harita ↔ robots ÇELİŞKİSİ | **0** — 559 adresin hiçbiri yasaklı kalıba düşmüyor |
+
+**Haritada olmayan altı sayfanın altısı da KARAR, unutma değil** — ve karar
+üretecin kendi içinde yazılı:
+
+```
+// Bilerek DIŞARIDA: /giris ve /kayit (içerik değil, arama değeri yok),
+// /calisma-alanim ve /tekrar (kişisel araçlar; tarayıcıya boş görünürler),
+// /guidelines (henüz yer tutucu — aşağıda dizine kapatıldı).
+```
+
+**O yorumun tek SINANABİLİR iddiası doğrulandı ve fazlası çıktı.** İddia
+"/guidelines dizine kapatıldı"ydı; ölçüm dördünü birden gösterdi:
+
+| sayfa | robots meta |
+|---|---|
+| `/guidelines` · `/tekrar` · `/calisma-alanim` · `/giris` | **`noindex, follow`** |
+| `/topics/endokrinoloji/addison` (kıyas) | `index, follow` |
+
+Yani harita dışında bırakma ile `noindex` **aynı şeyi söylüyor**. Bu, bu
+depoda avlanan "iki gerçeklik ayrışır" sınıfının TERSİ: iki mekanizma da aynı
+niyeti taşıyor ve ikisi de ölçüldü.
+
+Üreteçte ayrıca kayıtlı bir geçmiş ayrışma var ve bugün kapalı: `/tr/premium/
+ydus` tanıtım sayfası `robots.ts`te taramaya AÇIK bırakılmışken haritada
+YOKTU — "iki dosya aynı niyeti taşıyıp farklı davranıyordu". Artık haritada.
+
+**Not:** `/tekrar` ve `/calisma-alanim` gövdeleri 720–723 karakter, yani
+tarayıcıya gerçekten boş görünüyorlar (veri kullanıcının deposunda).
+Gerekçe ölçümle de doğru.
+
+
 ### Paylaşım kartları canlıda ölçüldü — üç kırılma biçiminin üçü de kapalı
 
 Belgede paylaşım kartlarının üç sessiz kırılma biçimi kayıtlı (`params` bir
