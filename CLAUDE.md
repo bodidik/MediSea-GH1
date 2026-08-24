@@ -4295,6 +4295,58 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### 404 yüzeyi ölçüldü — soft 404 yok, ama konu 404'ü sunucuda BOŞ gidiyor
+
+Dışarıdan gelen kırık bağlantıların, yazım hatalarının, eski yer imlerinin
+hepsi buraya düşüyor ve bu yüzey hiç ölçülmemişti.
+
+**Sağlam çıkanlar:** dört 404 yolunun dördü de doğru HTTP **404** ve
+**`noindex`** dönüyor — soft 404 (200 ile hata içeriği) YOK. Konu 404'ü
+hidrasyondan sonra tam çiziliyor: `h1` 1, `main` 1 (çift landmark yok),
+**38 görünür bağlantı**, dürüst metin ("Bu konu kütüphanede yok"), sistem
+içi ad sızmıyor.
+
+**Ama iki sınıf arasında gerçek bir fark var:**
+
+| yol | sunucu HTML'i |
+|---|---|
+| `/rastgele` · `/tools/olmayan-arac` | **h1 1**, gövde 7877 bayt — tam basılıyor |
+| `/topics/…` 404'leri | **h1 0**, gövde **38 bayt** |
+
+Canlıda taze bir slug'la (`x-vercel-cache: MISS`) dönen yanıtın `<body>`
+içeriği tam olarak şu:
+
+```html
+<div hidden=""><!--$--><!--/$--></div>
+```
+
+Not-found metni yalnızca `<script>` içindeki RSC yükünde. Yerelde de aynı.
+
+**`not-found.tsx`in kendi yorumu bunun çözüldüğünü iddia ediyordu**
+("bölüm düzeyinde bir not-found … sunucuda üretiliyor"). Dosya BAŞLIĞI ve
+METNİ gerçekten düzeltti — `<title>` "Konu bulunamadı" olduğu için segmentin
+seçildiği kesin — ama GÖVDENİN sunucuda basılmasını sağlamadı. Yorum ölçülen
+gerçekle değiştirildi.
+
+**Sebep bir ÖDÜNLEŞME, o yüzden dokunulmadı:** iki rota da
+`generateStaticParams` taşıyor ama `dynamicParams` VARSAYILANDA (`true`) ve
+bu bilerek seçilmiş — sonradan eklenen konu yeniden derleme olmadan çalışsın
+diye. Listede olmayan slug istek anında render ediliyor, `notFound()` o
+akışın içinden fırlatılıyor ve gövde RSC yüküyle taşınıyor.
+`dynamicParams = false` boş gövdeyi kapatırdı ama o davranışı kırardı.
+
+Bedeli DAR ve raporda öyle yazıyor: sayfa `noindex` olduğu için arama motoru
+etkilenmiyor; etkilenen, JavaScript'i yavaş ya da kapalı olan kullanıcı.
+
+**İKİ ÖLÇÜM TUZAĞINA DÜŞÜLDÜ, ikisi de belgede zaten yazılı:**
+
+- **Dev kipinde hata ekranı ölçüldü.** İlk yerel ölçüm Next'in kendi hata
+  katmanını gösterdi (`NEXT_HTTP_ERROR_FALLBACK` şablonu, Windows yollu
+  yığın izi). Kural belgede kayıtlı: hata ekranını dev kipinde ölçme.
+- **İlk canlı ölçüm `x-vercel-cache: HIT` idi.** Eski bir dağıtımdan gelmiş
+  olabilirdi; rastgele taze slug'larla `MISS` alınıp sonuç doğrulandı.
+
+
 ### Satış sayfasındaki HER SAYI bağımsız olarak doğrulandı
 
 "Sayı yazma, saydır" mimarisi belgede yazılı ama sayıların DOĞRU olduğu hiç
