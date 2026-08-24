@@ -6515,3 +6515,45 @@ işaretlemedi, çünkü dosyada `naN < hyperTargetN` karşılaştırması geçiy
 ölçüt onu "üst sınır" saydı. Yani `<` görmek, MAKULLÜK sınırı olduğu anlamına
 gelmiyor — sınır sabit bir sayıyla karşılaştırılmalı. Kaçak elle bakarken
 görüldü; ölçüt aday üretir, kapsam iddiası üretmez.
+
+### "AKI KRİTERİ YOK" bir İDDİA — `kdigo-aki` onu "değerlendiremedim" ile karıştırıyordu
+
+Üst sınır sınıfının ikinci turu. `sodium`da tehlike saçma girdinin TALİMAT
+üretmesiydi; burada tehlike ters yönde ve daha sinsi: **saçma girdi GÜVEN
+VEREN bir sonuç üretiyor.**
+
+`creatinineStage` çöp girdide `if (!baseline || !current) return 0` ile sıfır
+döndürüyordu ve 0 bu araçta "AKI kriteri yok" demek. Ölçüldü:
+
+| girdi | ekranda (önce) |
+|---|---|
+| bazal 0.8 · güncel **"abc"** | Oran 0 · **"Evre 0 · AKI Kriteri Yok"** |
+| bazal **999** · güncel 2.5 | Oran 0 · **"AKI Kriteri Yok"** |
+| bazal **0.001** · güncel 2.5 | Oran 2500 · Evre 3 |
+| güncel **999** | Oran 1248.75 · Evre 3 |
+
+İlk satır en tehlikelisi: kreatinini 2.5 olan hastada güncel değere düşen bir
+yazım hatası AKI'yi gizliyor ve ekran hiçbir şey söylemiyor.
+
+**AYRIM: "AKI Kriteri Yok" bir İDDİADIR** — değerlendirdik ve bulmadık demek.
+Kreatinin okunamıyorsa doğru cevap bu değil, "Değerlendirilemedi". Araç
+ikisini tek bir 0 değerinde topluyordu; `crStage` artık `number | null`.
+
+**NE KUSUR DEĞİL — ve bu ayrım ölçümün yarısı:** bazal 12 · güncel 2.5
+(oran 0.21) makul bir okuma. 12 gerçekçi bir bazal kreatinin (kronik böbrek
+hastası) ve oranın 1'in altında olması iyileşme demek. Yani en olası yazım
+hatası olan "1.2 yerine 12" makullük sınırıyla YAKALANAMAZ ve araç orada
+zaten doğru davranıyor. Bunu kusur diye raporlamak yanlış olurdu.
+
+**KDIGO'nun "ölçütlerden yüksek olan geçerli" kuralı korundu** — kreatinin
+okunamıyor olması ötekileri susturmamalı. Üç yalıtım kontrolü ölçüldü:
+
+| durum | sonuç |
+|---|---|
+| çöp kreatinin + idrar Evre 2 | **Evre 2** (kreatinin "–", idrar tek başına evreliyor) |
+| çöp kreatinin + RRT | **Evre 3** |
+| kreatinin Evre 0 + idrar Evre 3 | **Evre 3** |
+
+Sınır 0.1–30 mg/dL, deponun öteki araçlarıyla aynı aile (`egfr` 0.1–30,
+`sofa` 0.1–25). Doğrulama 12 vaka: gerçek AKI Evre 3 kalıyor, sınır tam 0.1
+geçiyor, 35 düşüyor.

@@ -3,7 +3,7 @@
 import React, { useMemo, useState } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /** * KDIGO AKI Evrelemesi Gündüz Modu (Sakin Deniz)
  * Akut Böbrek Hasarı — Kreatinin VEYA İdrar Çıkışı kriterlerinden en yüksek evre geçerlidir
@@ -37,16 +37,58 @@ export default function KdigoAkiPage() {
   const baselineNum = parseLocaleNumber(baseline);
   const currentNum = parseLocaleNumber(current);
 
-  const crStage = useMemo(
-    () => creatinineStage(baselineNum, currentNum, acuteRise, onRRT),
-    [baselineNum, currentNum, acuteRise, onRRT]
+  /**
+   * ÇÖP VE SAÇMA GİRDİ "AKI YOK" DİYORDU — ve bu, güven veren yön.
+   *
+   * `creatinineStage` çöp girdide `if (!baseline || !current) return 0` ile
+   * SIFIR döndürüyordu; 0 burada "AKI kriteri yok" demek. Ölçüldü:
+   *
+   *   bazal 0.8 · güncel "abc"  ->  Oran 0 · "Evre 0"   (kreatinin 2.5 olan
+   *                                  hastada yazım hatası AKI'yi gizliyor)
+   *   bazal 999 · güncel 2.5    ->  Oran 0 · "Evre 0"
+   *   bazal 0.001 · güncel 2.5  ->  Oran 2500 · "Evre 3"
+   *   güncel 999                ->  Oran 1248.75 · "Evre 3"
+   *
+   * AYRIM ÖNEMLİ: "AKI Kriteri Yok" bir İDDİADIR — değerlendirdik ve
+   * bulmadık demek. Kreatinin okunamıyorsa doğru cevap bu değil,
+   * "değerlendirilemedi". Araç ikisini karıştırıyordu.
+   *
+   * NE KUSUR DEĞİL: bazal 12 · güncel 2.5 (oran 0.21) makul bir okuma —
+   * 12 gerçekçi bir bazal (kronik böbrek hastası) ve oran 1'in altında
+   * olması iyileşme demek. Tipik "1.2 yerine 12" yazım hatası makullük
+   * sınırıyla YAKALANAMAZ ve araç orada doğru davranıyor.
+   *
+   * Sınır 0.1–30 mg/dL: deponun öteki araçlarıyla aynı aile (`egfr` 0.1–30,
+   * `sofa` 0.1–25). Klinik eşik değil, makullük sınırı.
+   */
+  const krMakul = (ham: string) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= 0.1 && n <= 30;
+  };
+  const krGecerli = krMakul(baseline) && krMakul(current);
+
+  /**
+   * `null` = kreatinin ölçütü DEĞERLENDİRİLEMEDİ (0 ile aynı şey değil).
+   * RRT tek başına Evre 3 demek, o yüzden kreatininden bağımsız.
+   */
+  const crStage = useMemo<number | null>(
+    () => (onRRT ? 3 : krGecerli ? creatinineStage(baselineNum, currentNum, acuteRise, onRRT) : null),
+    [baselineNum, currentNum, acuteRise, onRRT, krGecerli]
   );
 
-  const finalStage = Math.max(crStage, urineStage);
-  const ratio = baselineNum > 0 ? Math.round((currentNum / baselineNum) * 100) / 100 : 0;
+  /* İdrar ölçütü tek başına evreleyebilir (KDIGO buna izin veriyor), yani
+     kreatinin okunamıyor olsa bile idrar bir evre veriyorsa sonuç geçerli. */
+  const degerlendirilebilir = crStage !== null || urineStage > 0;
+  const finalStage = Math.max(crStage ?? 0, urineStage);
+  const ratio = krGecerli ? Math.round((currentNum / baselineNum) * 100) / 100 : null;
 
   const stageMeta =
-    finalStage === 3
+    !degerlendirilebilir
+      /* "AKI Kriteri Yok" bir İDDİA; kreatinin okunamadığında onu basmak
+         yanlış güven verir. Burada sebep söyleniyor. */
+      ? { label: "Değerlendirilemedi", color: "text-slate-600", bg: "bg-slate-50" }
+      : finalStage === 3
       ? { label: "Evre 3", color: "text-rose-700", bg: "bg-rose-50" }
       : finalStage === 2
       ? { label: "Evre 2", color: "text-amber-700", bg: "bg-amber-50" }
@@ -93,7 +135,7 @@ export default function KdigoAkiPage() {
                 className="bg-slate-50 border border-slate-100 rounded-2xl px-4 py-3 focus:border-blue-900 outline-none font-black text-lg transition-all" />
             </label>
           </div>
-          {baselineNum > 0 && (
+          {ratio !== null && (
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Oran (güncel / bazal): {ratio}×</p>
           )}
           <label className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer">
@@ -134,9 +176,9 @@ export default function KdigoAkiPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">AKI</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">KDIGO EVRESİ</span>
-           <div className="text-7xl font-black text-white">{finalStage === 0 ? "–" : finalStage}</div>
+           <div className="text-7xl font-black text-white">{!degerlendirilebilir || finalStage === 0 ? "–" : finalStage}</div>
            <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">
-             Kreatinin: Evre {crStage} · İdrar: Evre {urineStage} (yüksek olan geçerli)
+             Kreatinin: Evre {crStage ?? "–"} · İdrar: Evre {urineStage} (yüksek olan geçerli)
            </span>
         </div>
 
