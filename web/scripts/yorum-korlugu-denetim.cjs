@@ -44,6 +44,7 @@ const DENETIMLER = [
   { ad: 'arayuz-denetim', kok: (t) => ['--kok', t] },
   { ad: 'renk-cifti-denetim', kok: (t) => ['--kok', t] },
   { ad: 'saydamlik-denetim', kok: (t) => ['--kok', t] },
+  { ad: 'cop-kapi-denetim', kok: (t) => ['--kok', t] },
 ];
 
 /**
@@ -75,7 +76,24 @@ const TOHUM = [
   ' * Ölü denetim: const [olu, setOlu] = React.useState(false);',
   ' * Bant cetveli: kod `v <= 3` iken cetvel "< 3" diyordu.',
   ' * İç bileşen: const Kutu = () => <input readOnly />;',
+  ' * Çöp kapı: const gecerli = ham.trim() !== "" && sayi >= 0 && sayi <= 100;',
+  ' * Saydamlık: <p className="opacity-60 text-slate-500">uyarı</p> 3.46 veriyordu.',
+  ' * Renk çifti: <span className="bg-amber-500 text-white">2.15</span>',
   ' */',
+  '',
+  /**
+   * GERÇEK (yorum olmayan) `parseLocaleNumber` kullanımı ŞART.
+   *
+   * `cop-kapi-denetim` yalnızca bu çağrıyı içeren dosyaları ölçüyor. Tohumda
+   * yokken denetim dosyayı hiç açmıyor, raporunda "parseLocaleNumber kullanan:
+   * 0" yazıyordu — ama meta testin ölçüm kontrolü çıktıdaki HERHANGİ bir
+   * sayıya baktığı için ("taranan tsx: 2") SAHTE BİR "temiz" veriyordu.
+   *
+   * Yani belgedeki "0 kusur ile 0 ölçüm aynı görünür" tuzağı, tam da onu
+   * yakalamak için yazılmış testin İÇİNDE tekrarladı. Aşağıdaki satır kapısız
+   * ve bölmesiz, yani başka hiçbir denetime aday üretmiyor.
+   */
+  'const SAYI = parseLocaleNumber("1");',
   '',
   'const TEMIZ = [',
   '  { slug: "a", ad: "A", pts: 1 },',
@@ -85,7 +103,7 @@ const TOHUM = [
   '];',
   '',
   'export default function ZzYorum() {',
-  '  return <div>{TEMIZ.length} kayıt</div>;',
+  '  return <div>{TEMIZ.length} kayıt · {SAYI}</div>;',
   '}',
 ].join('\n');
 
@@ -105,21 +123,43 @@ fs.writeFileSync(path.join(T, 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
 fs.mkdirSync(path.join(T, 'app', 'zz-yorum'), { recursive: true });
 fs.writeFileSync(path.join(T, 'app', 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
 
+/**
+ * BOŞ AĞAÇ — ölçüm kontrolünün dayanağı.
+ *
+ * Aynı klasör şekli, TOHUM DOSYASI YOK. Bir denetimin raporu tohum varken ve
+ * yokken BİREBİR aynıysa, o denetim tohumu hiç ölçmemiştir.
+ */
+const B = fs.mkdtempSync(path.join(os.tmpdir(), 'yorumkor-bos-'));
+fs.mkdirSync(path.join(B, 'zz-yorum'));
+fs.mkdirSync(path.join(B, 'app', 'zz-yorum'), { recursive: true });
+
+const sur = (yol, kok) => {
+  try { return execFileSync('node', [yol, ...kok], { encoding: 'utf8' }); }
+  catch (e) { return (e.stdout || '') + (e.stderr || ''); }
+};
+
 const sonuc = [];
 for (const d of DENETIMLER) {
   const yol = path.join(KOK, d.ad + '.cjs');
   if (!fs.existsSync(yol)) { sonuc.push({ ad: d.ad, kor: false, durum: 'betik yok' }); continue; }
-  let cikti = '';
-  try { cikti = execFileSync('node', [yol, ...d.kok(T)], { encoding: 'utf8' }); }
-  catch (e) { cikti = (e.stdout || '') + (e.stderr || ''); }
+  const cikti = sur(yol, d.kok(T));
   const kor = /zz-yorum/.test(cikti);
   /**
    * "0 KUSUR" İLE "0 ÖLÇÜM" AYNI GÖRÜNÜR — bu depoda defalarca yaşanmış tuzak.
-   * Denetim tohuma gerçekten BAKTI mı diye rapor satırındaki sayıyı sınıyoruz;
-   * hepsi taradıkları öge sayısını basıyor. Sıfır ise "temiz" demek geçersiz.
+   *
+   * ÖNCEKİ ÖLÇÜT YETERSİZDİ ve tam da bu testin içinde sahte bir "temiz"
+   * üretti: çıktıda HERHANGİ bir sayı > 0 ise "ölçtü" sayılıyordu.
+   * `cop-kapi-denetim` yalnızca `parseLocaleNumber` içeren dosyaları açıyor;
+   * tohumda o çağrı yokken denetim dosyayı HİÇ görmüyordu ama raporundaki
+   * "taranan tsx: 2" satırı ölçütü tatmin ediyordu.
+   *
+   * Doğru ölçüt KARŞILAŞTIRMALI: aynı denetim BOŞ bir ağaçta da sürülür.
+   * İki rapor birebir aynıysa tohum ölçülmemiştir. Bu ölçüt denetimin hangi
+   * sayıyı bastığını bilmek zorunda değil, yani yeni denetimlerde de çalışır.
    */
-  const sayilar = (cikti.match(/\b\d+\b/g) || []).map(Number);
-  const olctu = sayilar.some((n) => n > 0);
+  const bosCikti = sur(yol, d.kok(B));
+  const norm = (s) => s.split(T).join('<KOK>').split(B).join('<KOK>');
+  const olctu = norm(cikti) !== norm(bosCikti);
   sonuc.push({
     ad: d.ad,
     kor,
@@ -128,6 +168,7 @@ for (const d of DENETIMLER) {
   });
 }
 fs.rmSync(T, { recursive: true, force: true });
+fs.rmSync(B, { recursive: true, force: true });
 
 /* Bayatlama koruması */
 const bilinen = new Set(DENETIMLER.map((d) => d.ad + '.cjs'));

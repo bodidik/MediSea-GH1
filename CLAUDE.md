@@ -6164,3 +6164,80 @@ Aynı turda ölçüt bir kez de yanlış yeri yakaladı: `spot-urine`da "Osmolal
 araması sonuç kartını değil SEKME ETİKETİNİ buldu (`indexOf` ilk eşleşmeyi
 verir). Sayfada aynı kelime birden çok yerde geçiyorsa çapayı benzersiz bir
 dizeye at — burada `"İdrar Osmolal Gap (UOG ≈ 2×[NH₄⁺])"` oldu.
+
+### Meta testin ölçüm kontrolü ZAYIFTI — üç denetim "sınandı" görünüp hiç sınanmıyordu
+
+`cop-kapi-denetim` yazılıp `yorum-korlugu-denetim`in listesine eklendi. Meta
+test "temiz" dedi. **Sahteydi** — ve bunu fark ettiren şey, tuzağın kendisinin
+belgede kayıtlı olması oldu.
+
+Meta testin ölçüm kontrolü şuydu: *çıktıda herhangi bir sayı > 0 ise denetim
+tohumu ölçmüştür.* Yeni denetim yalnızca `parseLocaleNumber` içeren dosyaları
+açıyor; tohumda o çağrı YOKTU, yani dosya hiç okunmadı. Ama rapor
+`taranan tsx: 2` bastığı için ölçüt tatmin oldu.
+
+Yani **"0 kusur ile 0 ölçüm aynı görünür" tuzağı, tam da onu yakalamak için
+yazılmış testin İÇİNDE tekrarladı.**
+
+**Doğru ölçüt KARŞILAŞTIRMALI: aynı denetimi BOŞ bir ağaçta da sür.** İki
+rapor birebir aynıysa tohum ölçülmemiştir. Bu ölçüt denetimin hangi sayıyı
+bastığını bilmek zorunda değil, yani ileride eklenecek denetimlerde de çalışır.
+
+**Yeni ölçüt ilk çalıştırmada ÜÇ denetimi düşürdü** ve sebep beklenenden
+ağırdı: `esik-etiket-denetim`, `renk-cifti-denetim` ve `saydamlik-denetim`
+**`--kok` bayrağını hiç desteklemiyordu.** Bayrağı sessizce yok sayıp her
+seferinde GERÇEK DEPOYU tarıyorlardı; tohumda `zz-yorum` bulunmadığı için de
+"temiz" çıkıyorlardı.
+
+| denetim | boş ağaca yönlendirildiğinde (önce) |
+|---|---|
+| `esik-etiket` | "461 dosya" — gerçek depo |
+| `renk-cifti` | "404 tsx" — gerçek depo |
+| `saydamlik` | "404 tsx" — gerçek depo |
+| `arayuz` (kıyas) | "0 tsx" — doğru |
+
+Belgedeki tablo bu üçünü "`cd` ile yönlendirilebilir" diye kaydediyordu ve bu
+DOĞRUYDU (kökleri `['app','components']`, cwd'ye göre çözülüyor) — ama meta
+test onlara `--kok` veriyordu. İki farklı yönlendirme mekanizması, deponun
+kendi "iki gerçeklik" sınıfının denetim tarafındaki hâli.
+
+Üçüne de `--kok` eklendi. Doğrulama iki yönlü: boş ağaçta artık **0** ölçüyorlar,
+bayrak verilmediğinde sayılar birebir eskisi (461 · 404 · 404), ve üçünün de
+kendi `--negatif` kontrolü geçiyor.
+
+**Tohumun kendisi de eksikti** ve iki yerde:
+
+- `parseLocaleNumber` hiç geçmiyordu → yeni denetim dosyayı açmıyordu.
+  Tohuma kapısız, bölmesiz bir `const SAYI = parseLocaleNumber("1")` konuldu
+  (başka hiçbir denetime aday üretmiyor).
+- `renk-cifti` ve `saydamlik`in aradığı şekiller yorumda YOKTU, yani o iki
+  denetim ölçülüyor ama körlükleri sınanmıyordu. Eklendi:
+  `opacity-60 text-slate-500` ve `bg-amber-500 text-white`.
+
+**Eklenen şekillerin GERÇEK olduğu ayrıca kanıtlandı** — bir tohum şeklinin
+yakalanmaması, ölçütün temiz olmasından değil şeklin yanlış yazılmasından da
+olabilir. Aynı iki şekil KOD olarak ayrı bir tohuma konuldu: `saydamlik` 1
+bulgu, `renk-cifti` `beyaz/amber-500 = 2.15` bastı. Yani kodda yakalanıyor,
+yorumda yakalanmıyor — iki yönlü kanıt.
+
+### `cop-kapi-denetim` — dört kontrolü de olan yeni denetim
+
+Sınıf tek turda dört gerçek kusur verdiği için kalıcı denetim yazıldı.
+
+| kontrol | sonuç |
+|---|---|
+| negatif (kusurlu tohum) | yakalanıyor (2 kapı) |
+| pozitif (temiz tohum: alt sınır > 0 · `sayiGirildiMi`) | işaretlenmiyor |
+| tarihsel (düzeltme öncesi, `3896b6d`) | **üç gerçek kusur**: das28:40 · sofa:55 · spot-urine:195 |
+| yönlendirilebilir | `--kok` |
+
+**`anc` tarihsel kontrolde YAKALANMIYOR ve bu eksik değil, TANIM.** Onun kusuru
+sınıfın ayna hâliydi: kapı `yuzdeToplam > 0` diyerek çöpü doğru eliyor ama
+meşru sıfırı (agranülositoz) da eliyordu. "Çöp geçiyor" yönü kaynaktan
+görülebilir; "meşru sıfır engelleniyor" yönü GÖRÜLEMEZ, çünkü hangi alanda
+0'ın fizyolojik olduğu klinik bilgi. O yön ancak aracı sürerek bulunur —
+alana "0" yazıp sonuç basılıyor mu diye bakarak.
+
+Bir denetim yazarken sorulacak DÖRDÜNCÜ soru da buradan çıktı: kusur buluyor
+mu · yanlış pozitif üretiyor mu · yönlendirilebiliyor mu · **ve ölçütün
+göremediği ayna hâli var mı?**

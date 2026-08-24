@@ -111,7 +111,21 @@ const KAPI = process.argv.includes('--kapi');
  * doğrulandı). Yönetici ve genel alan HENÜZ ÖLÇÜLMEDİ — oraları kapı yapmak,
  * ölçülmemiş bir iddiayı CI'a yazmak olurdu. Onlar rapor olarak kalıyor.
  */
-const KOKLER = KAPI ? ['app/tools'] : ['app', 'components'];
+/**
+ * `--kok <dizin>` ile başka bir ağaca YÖNLENDİRİLEBİLİR.
+ *
+ * Neden eklendi: bu denetim bir dönem kökleri yalnızca cwd üzerinden
+ * çözüyordu ve `--kok` bayrağını SESSİZCE YOK SAYIYORDU. Meta test
+ * (`yorum-korlugu-denetim`) onu tohuma yönlendirdiğini sanarken aslında
+ * GERÇEK DEPOYU taratıyor, tohumda zz-yorum bulunmadığı için de "temiz"
+ * diyordu. Yani denetim aylarca sınanmamış hâlde "sınandı" görünüyordu.
+ *
+ * Yakalayan ölçüt: aynı denetimi BOŞ bir ağaçta da sür; rapor birebir
+ * aynıysa tohum hiç ölçülmemiştir.
+ */
+const KOK_ARG = (() => { const i = process.argv.indexOf("--kok"); return i >= 0 ? process.argv[i + 1] : null; })();
+const kokCoz = (k) => (KOK_ARG ? path.join(KOK_ARG, k) : k);
+const KOKLER = (KAPI ? ['app/tools'] : ['app', 'components']).map(kokCoz);
 function* dosyalar(kok) {
   for (const g of fs.readdirSync(kok, { withFileTypes: true })) {
     const p = path.join(kok, g.name);
