@@ -6290,3 +6290,70 @@ kayboldu" ile "tarama körleşti" ayrımı raporun kendisinden okunabiliyor.
 operatör tarayan öteki dört denetime de sürüldü — `yuvarlama`, `kapi-kapsam`,
 `karar`, `bant`: **dördü de 0 aday**. Körlük yalnızca `bolme`ye özgüymüş,
 çünkü formül metninde geçen tek operatör bölme işareti.
+
+### AYNA SINIF SÜRÜLDÜ — `asdas` skorlanamayan tek hastayı REMİSYONDAKİ hasta yapıyordu
+
+Geçen turda "kaynaktan bulunamaz" diye not edilen sınıf (meşru sıfırı ELEYEN
+kapı) kaynaktan ADAY üretilerek, kararı ALAN ETİKETİNE bakarak sürüldü.
+
+Ölçüt: `xNum > 0` / `>= 1` biçiminde kapı + alanın ekrandaki etiketi. 59 araçta
+177 eşleşme çıktı ama ölçüt gürültülü — puanlama merdivenlerini de kapı sanıyor
+(`urineNum >= 500` gibi). Etiketler okununca fizyolojik olarak 0 alabilen
+alanlar ayrıldı: ASDAS'ta NRS/CRP/ESR, GH supresyonunda nadir GH, deksametazon
+sonrası kortizol, idrar proteini.
+
+**`asdas` KUSURLUYDU ve uç vaka değil.** Kapı beş alanın beşini birden `> 0`
+istiyordu; beşi de meşru sıfır alabiliyor ve formüller sıfırı zaten doğru
+işliyor (`ln(0+1) = 0`, `√0 = 0`):
+
+| girdi | ekranda (önce) |
+|---|---|
+| sabah tutukluluğu 0 (çok yaygın) | **"Eksik veri"** |
+| periferik eklem 0 (saf aksiyel tutulum) | **"Eksik veri"** |
+| CRP 0 · ESR 0 (0–2 mm/sa NORMALDİR) | **"Eksik veri"** |
+| hepsi 0 — tam remisyon | **"Eksik veri"** |
+
+Yani araç, cetvelinde "İNAKTİF HASTALIK" bandı taşıyor ama o bandı üretecek
+girdiyi reddediyordu: **skorlanamayan tek hasta, iyi olan hastaydı.**
+
+Çare `sayiGirildiMi` + makullük sınırı (NRS 0–10 · CRP 0–500 · ESR 0–200).
+Negatif kontrol: dokunulmayan vaka birebir aynı (2.53 / 2.42), düzelen vakalar
+elle hesapla tutuyor (0.121×5 + 0.110×5 + 0.073×3 + 0.579×ln6 = 2.41).
+
+### Düzeltme İKİNCİ bir şeyi açığa çıkardı — `- 0.211` sabiti (KARAR BEKLİYOR)
+
+Belgede kayıtlı kural: *"bir kusur ikincisini gizleyebilir; bir düzeltmeden
+sonra AYNI aracı yeniden tara."* Tam remisyon vakası ilk kez ulaşılabilir olunca:
+
+```
+bütün alanlar 0  ->  ASDAS-CRP 0.00   ·   ASDAS-ESR -0.21
+```
+
+ASDAS eksi olamaz ve CRP sürümünde karşılık gelen bir sabit YOK.
+
+**Asıl kanıt iç çelişki:** araç iki varyanta da AYNI eşikleri uyguluyor
+(1.3 / 2.1 / 3.5), yani ikisi aynı ölçekte olmak zorunda. Dört vaka ölçüldü,
+**üçünde bant ayrışıyor**:
+
+| girdi [pain,dur,pat,bk,CRP,ESR] | ASDAS-CRP | ASDAS-ESR |
+|---|---|---|
+| [3,3,3,3,5,10] | 2.12 YÜKSEK | 1.76 ORTA |
+| [3,3,4,3,5,12] | 2.23 YÜKSEK | 1.91 ORTA |
+| [4,3,4,3,5,12] | 2.35 YÜKSEK | 2.03 ORTA |
+
+Sabit kaldırılsaydı son iki satırda ikisi de YÜKSEK olurdu (2.12 · 2.24).
+Ayrıca 0.211'lik kayma, ASAS'ın tedavi hedefi olan "inaktif hastalık"
+sınırını (1.3) fiilen **1.51**'e taşıyor.
+
+**DEĞİŞTİRİLMEDİ.** Bu, yayımlanmış bir formülün terimini KALDIRMAK olurdu ve
+sabitin kaynağı depoda hiçbir yerde yazılı değil (yorum yok, ekranda formül
+basılmıyor, tek commit'i toplu bir taşıma). Belgedeki iki kural burada ters
+yönde çekiyor: eksi skor tartışmasız yanlış, ama "beklenti tutmadığında önce
+beklentiyi sına" da geçerli — ve bu araçta beklentim bir kez zaten yanlış
+çıkmıştı (`0.069`/`0.079` yayımlanmış katsayılar sanılmıştı). Ölçüm, kapsam
+ve gerekçe kaynağa yazıldı; klinik kaynak kararı kullanıcınındır.
+
+**Aday üreten ölçütün SINIRI da not:** puanlama merdiveni ile geçerlilik
+kapısı aynı sözdizimini taşıyor (`x >= N`), o yüzden 177 adayın çoğu sahte.
+Betiğe alınmadı — bu sınıfta ölçüt aday bile üretemiyor, kararı alanın klinik
+anlamı veriyor.

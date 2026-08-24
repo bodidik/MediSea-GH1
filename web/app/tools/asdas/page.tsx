@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function AsdasPage() {
   const [bk, setBk]     = React.useState("");
@@ -19,10 +19,78 @@ export default function AsdasPage() {
   const crpN   = parseLocaleNumber(crp);
   const esrN   = parseLocaleNumber(esr);
 
-  const crpScore  = crpN > 0 && painN > 0 && durN > 0 && bkN > 0 && patN > 0
+  /**
+   * MEŞRU SIFIR ELENİYORDU — ve elenen tam da REMİSYONDAKİ HASTAYDI.
+   *
+   * Kapı beş alanın beşini birden `> 0` istiyordu. Oysa beşi de meşru olarak
+   * sıfır olabiliyor ve formüller sıfırı zaten doğru işliyor
+   * (`ln(0+1) = 0`, `√0 = 0`):
+   *
+   *   dört klinik alan  0–10 NRS ölçeği; 0 = "semptom yok", remisyonun tanımı
+   *   CRP               laboratuvarlar 0 raporlayabiliyor
+   *   ESR               0–2 mm/saat NORMAL bir değerdir
+   *
+   * Tarayıcıda ölçüldü ve UÇ VAKA DEĞİL — hastaların büyük kısmını vuruyor:
+   *
+   *   sabah tutukluluğu 0   -> "Eksik veri"   (çok yaygın)
+   *   periferik eklem 0     -> "Eksik veri"   (saf aksiyel tutulumda olağan)
+   *   hepsi 0 + CRP 0       -> "Eksik veri"   (tam remisyon)
+   *
+   * Yani araç, cetvelinde "İNAKTİF HASTALIK" bandı olmasına rağmen o bandı
+   * üretecek girdiyi reddediyordu — skorlanamayan tek hasta, iyi olan hastaydı.
+   *
+   * Ayrım DEĞERE bakılarak yapılamaz (çöp girdi de 0 üretir); HAM DİZEYE
+   * bakılır. `sayiGirildiMi` boş alanı ve "abc"yi eler, yazılmış "0"ı geçirir.
+   * Yanına makullük sınırı konuyor: NRS 0–10, CRP 0–500 mg/L, ESR 0–200 mm/saat.
+   */
+  const alanMakul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+
+  const klinikMakul =
+    alanMakul(pain, 0, 10) &&
+    alanMakul(dur, 0, 10) &&
+    alanMakul(bk, 0, 10) &&
+    alanMakul(pat, 0, 10);
+
+  const crpScore  = klinikMakul && alanMakul(crp, 0, 500)
     ? 0.121 * painN + 0.058 * durN + 0.110 * patN + 0.073 * bkN + 0.579 * Math.log(crpN + 1)
     : null;
-  const esrScore  = esrN > 0 && painN > 0 && durN > 0 && bkN > 0 && patN > 0
+  /**
+   * ⚠ AÇIK SORU — `- 0.211` SABİTİ. Ölçüldü, DEĞİŞTİRİLMEDİ, karar bekliyor.
+   *
+   * Yukarıdaki meşru-sıfır düzeltmesi tam remisyon vakasını ilk kez
+   * ulaşılabilir yaptı ve o vaka ikinci bir şeyi açığa çıkardı:
+   *
+   *     bütün alanlar 0  ->  ASDAS-CRP 0.00   ·   ASDAS-ESR -0.21
+   *
+   * ASDAS eksi olamaz; üstelik CRP sürümünde karşılık gelen bir sabit YOK.
+   * Aynı indeksin iki varyantından birinde kesişim terimi olması asimetrik.
+   *
+   * ASIL KANIT İÇ ÇELİŞKİ: araç iki varyanta da AYNI eşikleri uyguluyor
+   * (1.3 / 2.1 / 3.5), yani ikisi aynı ölçekte olmak zorunda. Ölçüldü —
+   * dört vakanın üçünde bant AYRIŞIYOR:
+   *
+   *   girdi [pain,dur,pat,bk,CRP,ESR]      ASDAS-CRP        ASDAS-ESR
+   *   [3,3,3,3,5,10]                       2.12 YÜKSEK      1.76 ORTA
+   *   [3,3,4,3,5,12]                       2.23 YÜKSEK      1.91 ORTA
+   *   [4,3,4,3,5,12]                       2.35 YÜKSEK      2.03 ORTA
+   *
+   * Sabit kaldırılsaydı son iki satırda ikisi de YÜKSEK olurdu (2.12 · 2.24).
+   * Ayrıca 0.211'lik kayma, ASAS'ın tedavi hedefi olan "inaktif hastalık"
+   * sınırını (1.3) fiilen 1.51'e taşıyor.
+   *
+   * NEDEN KENDİM DEĞİŞTİRMEDİM: bu, yayımlanmış bir formülün terimini
+   * KALDIRMAK olurdu ve sabitin kaynağı depoda hiçbir yerde yazılı değil
+   * (yorum yok, ekranda formül basılmıyor, tek commit'i toplu bir taşıma).
+   * Belgede kayıtlı kural burada iki yönlü işliyor: eksi skor tartışmasız
+   * yanlış, ama "beklenti tutmadığında önce beklentiyi sına" da geçerli ve
+   * bu araçta beklentim bir kez zaten yanlış çıkmıştı (0.069/0.079).
+   * Klinik kaynak kararı kullanıcınındır.
+   */
+  const esrScore  = klinikMakul && alanMakul(esr, 0, 200)
     ? 0.113 * painN + 0.293 * Math.sqrt(esrN) + 0.086 * durN + 0.069 * patN + 0.079 * bkN - 0.211
     : null;
 
