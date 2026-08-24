@@ -4295,6 +4295,47 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### İki kayıtlı sınıf 15 yüzeyde birden kapatıldı — sunucu render'ı ve landmark
+
+Belgede iki sınıf ayrı ayrı düzeltilmiş ama hiç TOPLU doğrulanmamıştı:
+Suspense sınırının sunucu HTML'ini boşaltması, ve çift `<main>` landmark'ı.
+Aynı ölçütle 15 ana yüzey birden tarandı.
+
+**1) Sunucu render'ı — zayıf sayfa SIFIR.** Ölçüt belgede yazılı: sunucu
+HTML'inde `<h1>` ve bağlantı say. (JSON-LD dışındaki `<script>`ler elendi;
+RSC yükü "sunucuda basılmış" SAYILMAZ.)
+
+| yüzey | h1 | bağlantı | gövde |
+|---|---|---|---|
+| `/tools` | 1 | **161** | 11724 krk |
+| `/topics/endokrinoloji/addison` | 1 | 46 | 8264 krk |
+| `/topics` · `/` · branş | 1 | 49–66 | 2130–2761 krk |
+| `/giris` · `/kayit` · `/profile` | 1 | 8–9 | 661–735 krk |
+| `/uyelik` · `/guidelines` · `/calisma-alanim` · `/tekrar` · premium ×2 | 1 | 14–39 | 1292–2692 krk |
+
+**On beşinin on beşi de** tam bir `<h1>` ve gerçek gövde taşıyor. İki kayıtlı
+gerileme ayakta: `/tools` sunucuda 161 bağlantı basıyor (bir dönem arama
+kutusu boşken 114 aracın hepsi eleniyordu) ve `/giris` boş değil (bir dönem
+sayfanın tamamı tek bir Suspense içindeydi).
+
+**2) Landmark — çift ya da eksik SIFIR.**
+
+| ölçüt | sonuç |
+|---|---|
+| çift `<main>` | **0** |
+| `<main>` olmayan | **0** |
+| çift `<h1>` | **0** |
+
+`(site)` grubu DIŞINDAKİ sayfalar (`/tools`, `/giris`, `/kayit`, `/profile`,
+premium ×2) header ve footer ALMIYOR — belgede bilinçli karar olarak yazılı
+(odaklanmış yüzeyler) — ama hepsinde `<main>` var. Yani "kök dizindeki
+giris/kayit/profile de aynı boşluktaydı" düzeltmesi de ayakta.
+
+**Kalan tek boşluk, geçen turda ölçülüp yazılan konu-404'ü:** orada sunucu
+gövdesi 38 bayt ve `<h1>` 0. Sebebi `dynamicParams` ödünleşmesi, karar
+bekliyor.
+
+
 ### ⚠ TÜRKÇE BİNLİK AYIRICI SESSİZCE YANLIŞ DOZ ÜRETİYOR — karar bekliyor
 
 **Bu, ölçülmüş ve kullanıcıya ulaşan bir kusur. Hiçbir yerde kayıtlı değil.**
