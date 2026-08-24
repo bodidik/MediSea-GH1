@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const CAUSES = [
   { gap: "> 10", title: "Toksik alkoller", items: ["Metanol (kör edici, yüksek AG asidozu)", "Etilen glikol (böbrek yetmezliği, oksalat kristalleri)", "İzopropanol (asetonemi, asidoz yok)", "Propilen glikol (IV ilaçlarda taşıyıcı)"] },
@@ -39,15 +39,51 @@ export default function OsmolalGapPage() {
   const bunN    = parseLocaleNumber(bun);
   const etohN   = parseLocaleNumber(etoh);
 
-  const hasCalc = naN > 0 && glucN >= 0 && bunN >= 0;
+  /**
+   * GLUKOZ VE BUN ZORUNLU — eksik olunca AÇIK ŞİŞİYOR ve alarm üretiyordu.
+   *
+   * Eski kapı `glucN >= 0 && bunN >= 0` diyordu; çöp girdi de boş alan da
+   * `parseLocaleNumber` ile 0'a düşüyor ve ikisi de bu koşulu GEÇİYOR.
+   * Sonuç: hesaplanan osmolalite olduğundan düşük çıkıyor, fark ölçülenden
+   * çıkarıldığı için açık ŞİŞİYOR — yani yön TOKSİK ALKOL ALARMINA doğru.
+   *
+   * Ölçüldü, aynı DKA hastası (ölçülen 320 · Na 130 · glukoz 900 · BUN 20):
+   *
+   *   glukoz 900 (doğru)   ->  hesap 317.1 · açık  2.9 · "NORMAL"
+   *   glukoz "abc"         ->  hesap 267.1 · açık 52.9 · "YÜKSEK — Toksik alkol"
+   *   glukoz BOŞ           ->  hesap 267.1 · açık 52.9 · "YÜKSEK — Toksik alkol"
+   *
+   * Tek yazım hatası — ya da değeri elde yokken alanı boş bırakmak —
+   * hiperglisemik bir hastada metanol/etilen glikol şüphesi üretiyor.
+   * Boş alanın da aynı sonucu vermesi kritik: formül glukozu ve BUN'u
+   * ZORUNLU ister, yalnızca etanol opsiyoneldir.
+   *
+   * Sınırlar makullük sınırı, klinik eşik değil. Glukozun alt sınırı OGTT'den
+   * daha geniş (10 yerine 20 değil): bu araç zehirlenme/yoğun bakım
+   * hastasında kullanılıyor ve ağır hipoglisemi gerçek bir olasılık.
+   */
+  const makul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const measGecerli = makul(measured, 200, 500);
+  const naGecerli   = makul(na, 90, 200);
+  const glucGecerli = makul(glucose, 10, 1500);
+  const bunGecerli  = makul(bun, 1, 300);
+  /* Etanol OPSİYONEL: boşsa hesaba hiç girmez, doluysa makul olmalı. */
+  const etohBos     = etoh.trim() === "";
+  const etohGecerli = etohBos || makul(etoh, 0, 1000);
+
+  const hasCalc = naGecerli && glucGecerli && bunGecerli && etohGecerli;
 
   // Calculated osmolality = 2×Na + Glucose/18 + BUN/2.8
   const calcOsm   = hasCalc ? 2 * naN + glucN / 18 + bunN / 2.8 : null;
   // Ethanol contribution = ethanol(mg/dL) / 4.6
-  const etohContrib = etohN > 0 ? etohN / 4.6 : null;
+  const etohContrib = !etohBos && etohGecerli ? etohN / 4.6 : null;
   const calcOsmFull = calcOsm !== null && etohContrib !== null ? calcOsm + etohContrib : calcOsm;
 
-  const gap = measN > 0 && calcOsmFull !== null ? measN - calcOsmFull : null;
+  const gap = measGecerli && calcOsmFull !== null ? measN - calcOsmFull : null;
 
   const getResult = (g: number) => {
     if (g <= 10)  return { label: "NORMAL OSMOLAL GAP", sub: "≤ 10 mOsm/kg — Toksik alkol olasılığı düşük", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };

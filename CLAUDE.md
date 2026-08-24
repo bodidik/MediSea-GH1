@@ -6607,3 +6607,55 @@ Belgede zaten kayıtlı olan "heredoc backslash siliyor" tuzağının ikinci
 biçimi: bu ortamda heredoc yalnızca içeriği bozmuyor, kimi zaman hiç
 tamamlanmıyor. **Çok satırlı dosya yazarken Write kullan**, `cat`/`python -`
 gibi stdin bekleyen kanalları değil.
+
+### EKSİK ALAN AÇIĞI ŞİŞİRİYORDU — `osmolal-gap` DKA hastasına toksik alkol alarmı veriyordu
+
+Üst sınır turunun dördüncüsü ve en pahalısı. Kapı `glucN >= 0 && bunN >= 0`
+diyordu; hem çöp girdi hem BOŞ alan `parseLocaleNumber` ile 0'a düşüyor ve
+ikisi de bu koşulu GEÇİYOR. Bedeli tek yönlü: hesaplanan osmolalite olduğundan
+düşük çıkıyor, ölçülenden çıkarıldığı için **açık şişiyor** — yani yön
+TOKSİK ALKOL ALARMINA doğru.
+
+Ölçüldü, **aynı DKA hastası** (ölçülen 320 · Na 130 · glukoz 900 · BUN 20):
+
+| glukoz alanı | hesaplanan | açık | ekranda |
+|---|---|---|---|
+| **900** (doğru) | 317.1 | **2.9** | NORMAL |
+| **"abc"** | 267.1 | **52.9** | **YÜKSEK — Toksik alkol** |
+| **boş** | 267.1 | **52.9** | **YÜKSEK — Toksik alkol** |
+
+Boş alanın da aynı sonucu vermesi kritik ve en olası senaryo: değeri elde
+olmayan hekim alanı boş bırakıyor, araç sessizce 0 sayıyor. Formül glukozu ve
+BUN'u ZORUNLU ister; opsiyonel olan yalnızca etanoldür.
+
+Pratik sonucu hafif değil: hiperglisemik bir hastada metanol/etilen glikol
+şüphesi fomepizol ve diyaliz sorgusu demek.
+
+**Etanol OPSİYONEL kaldı ve üç durumu ayrı ayrı ölçüldü:** boş → hesaba
+girmiyor (açık 50); 92 mg/dL → 92/4.6 = 20 katkı, açık 50 → 30 (elde
+doğrulandı: 290+20=310, 340−310=30); **0 → meşru sıfır, ölçülmüş ve yok
+demek**, açık 50 kalıyor. Çöp etanol ise sonucu bastırıyor.
+
+Sınırlar: ölçülen osm 200–500 · Na 90–200 · glukoz **10**–1500 · BUN 1–300 ·
+etanol 0–1000. Glukozun alt sınırı `ogtt`den daha geniş (10, 20 değil) ve
+sebebi yazılı: bu araç zehirlenme/yoğun bakım hastasında kullanılıyor, ağır
+hipoglisemi gerçek bir olasılık. **Aynı analit için farklı sınır, bağlam
+farkıyla gerekçelendirilmeli** — yoksa kendisi bir tutarsızlık olur.
+
+**EN ÖNEMLİ NEGATİF KONTROL: gerçek yüksek açık korunuyor.** 340/140/90/14 →
+açık 50.0 · "YÜKSEK OSMOLAL GAP" değişmedi. Bir kapı koyduktan sonra
+sorulacak soru "panel çıkıyor mu" değil, **"alarm hâlâ çalışıyor mu"**.
+
+### `tirads` ölçüldü — TEMİZ, ve sebebi kayda değer
+
+Aynı turda `tirads` de sürüldü (çapı kapısız görünüyordu). Kusur YOK:
+çöp/boş/0 çapta karar paneli tümden kayboluyor, 0.3 cm doğru şekilde "bu
+boyutta müdahale gerekmez" diyor. Saçma büyük çap (200, 9999) "İİAB önerilir"
+veriyor ama eşiklerin hepsi `≥` olduğu için sonuç meşru büyük bir nodülle
+AYNI — yani saçma girdi kararı zararlı yönde değiştirmiyor. Sınır koymak
+kozmetik olurdu.
+
+Ayrıca tasarım kararı olarak not: araç beş ACR kategorisinin HEPSİ seçilene
+kadar toplamı ve kararı hiç basmıyor. Dördü seçiliyken yalnızca kategori
+puanları görünüyor. Bu, "eksik veriyle hüküm verme" ilkesinin doğru
+uygulanmış hâli.
