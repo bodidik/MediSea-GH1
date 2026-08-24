@@ -4295,6 +4295,48 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### "Kod bunu zaten onarıyor" iddiası CANLIDA sınandı — doğru çıktı
+
+`asili-denetim` ebeveyn adı sapmış tek kaydı raporlarken **"KOD BUNLARI ZATEN
+ONARIYOR, elle düzeltme gerekmez"** diyor. Belgedeki kural gereği bu iddiaya
+güvenilmedi, ölçüldü — ve doğru çıktı.
+
+Vaka: `endokrinoloji/akromegali-ve-gigantizm` dosyasının ebeveyni
+`"Ön-hipofiz-hastaliklari-giris"` yazılmış; gerçek dosya
+`on-hipofiz-hastaliklari-giris`. Fark hem büyük harf hem Türkçe aksan.
+
+Canlıda ölçüldü: konu ebeveyn sayfasında **görünüyor** ve `ebeveyniCoz`
+(`lib/slug-eslestir.ts`) bütün konuların ebeveynine uygulanıyor — kodun kendi
+yorumu zaten akromegaliyi örnek veriyor.
+
+**ÖLÇÜM İKİ KEZ YANLIŞ YERE BAKTI ve ikisi de öğretici:**
+
+- **Branş sayfasında arandı, orada yok.** Branş sayfası yalnızca ÜST DÜZEY
+  konuları listeliyor (endokrinolojide 18 bağlantı) artı yetimler için
+  "Diğer Konular". Akromegalinin ebeveyni çözüldüğü için yetim değil, yani
+  orada bulunmaması DOĞRU. Hiyerarşi ebeveynin kendi sayfasında açılıyor.
+- **"Alt Başlıklar"da beklendi, "İleri Okuma"da bulundu** ve bir an kusur
+  sanıldı. Üç bölümün anlamı farklı:
+
+| bölüm | ne listeler |
+|---|---|
+| Alt Başlıklar | kendi çocuğu OLAN çocuklar (hub) |
+| İleri Okuma | kılcal çocuklar — kendi çocuğu olmayan yapraklar |
+| İlgili Konular | etiket akrabalığı, branş sınırı gözetmeden |
+
+Sayıldı: `hiperprolaktinemi-ve-prolaktinoma` **3 çocuk** taşıyor (hub →
+Alt Başlıklar), `akromegali-ve-gigantizm` **0** (yaprak → İleri Okuma).
+Yani yerleşim tasarım gereği; sapma değil.
+
+**Ders: bir yüzeyde "yanlış yerde" görünen şeyi kusur ilan etmeden önce, o
+bölümlerin NE LİSTELEDİĞİNİ kaynaktan oku.** Bölüm adı ("Alt Başlıklar")
+kapsamı anlatmıyordu; kod anlatıyordu.
+
+`asili-denetim`in kalan 45 kaydı içerik kararı: 18'i `hidden` bayrağı,
+27'si hiç yazılmamış üst başlık (tıbbi sınıflandırma). İkisi de kullanıcının
+sorumluluğunda.
+
+
 ### AYNI SINIF, İKİ AYRI ARIZA — bedelini arızanın şekli belirliyor
 
 `konu-denetim` "etiket dengesi bozuk bölüm (görünür bedeli AYRICA ölçülmeli):
