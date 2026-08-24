@@ -4295,6 +4295,47 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Soru AÇIKLAMALARI ölçüldü — sınav içeriğinin öğretme değeri sağlam
+
+`soru-denetim` yapıyı denetliyor (doğru cevap geçerli mi, en az iki şık var mı,
+mükerrer kimlik). Denetlemediği şey açıklamanın GÖVDESİ — oysa sınav
+hazırlığında öğrenme değeri tam olarak orada.
+
+Ölçüldü: **388 soru, ortanca açıklama 1051 karakter**, %5'lik dilim 591, en
+kısası **267**. Boş ya da göstermelik açıklama **sıfır**. Ücretli içeriğin bu
+tarafı düzgün yazılmış.
+
+`soru-denetim`e açıklama uzunluğu denetimi EKLENMEDİ: sınıf bu depoda hiç
+oluşmamış ve belgedeki kural açık — öngörülen risk için denetim yazmak, ölçülen
+kusur için yazmakla aynı şey değil.
+
+**İKİ ŞEMA BİR ARADA ve tek dosyayla sınırlı.** Soru nesnelerinde iki ayrı alan
+kümesi görüldü:
+
+```
+Türkçe    : metin · secenekler · dogru · aciklama_kisa · aciklama_detay
+İngilizce : text  · options    · correctAnswer · explanation
+```
+
+İngilizce şemayı kullanan tek dosya `hematoloji/aml-quiz-1.json` — ve o zaten
+`yetim-denetim`in YETİM olarak işaretlediği dosya (konu `aml-ana`, dosya
+`aml-quiz-1`), SENDE-KALANLAR 6'da kayıtlı. Yani şema sapması kullanıcıya
+ulaşmıyor.
+
+**İki bağımsız ölçüm birbirini doğruladı:** toplam 388 soru = 378 erişilebilir
++ 10 yetim, ve yetim olan tam da İngilizce şemalı dosya. Sayılar başka bir
+yoldan da tutuyor: `/uyelik` sayfası 378 soru ilan ediyor.
+
+**ÖLÇÜT ÜÇÜNCÜ KEZ ŞEMAYA TAKILDI.** İlk koşumda `s.aciklama` arandı ve
+**388 sorunun 388'i "0 karakter"** çıktı — bir an "hiçbir soruda açıklama yok"
+sanıldı. Gerçek alanlar `aciklama_kisa` ve `aciklama_detay`.
+
+Bu oturumda aynı hata üç kez tekrarladı: premium konu gövdesi (`text` ↔ `html`),
+konu bölümü (aynısı), şimdi soru açıklaması. **Kural: bir alanın adını
+varsayma — önce nesnenin anahtarlarını BASTIR, sonra ölç.** Ölçüm betiğine
+`Object.keys` toplayan bir satır koymak bu üç turu da kurtarırdı.
+
+
 ### Premium içerik ölçüldü — iskelet konu YOK, ama modül ilanları bayat
 
 İskelet konu ölçütü satılan tarafa uygulandı. **Premium içerik açık taraftan
