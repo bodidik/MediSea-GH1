@@ -3321,7 +3321,7 @@ Bu oturumda çok sayıda düzeltme gönderildi. Hiç sorulmamış soru yine ayn�
 |---|---|---|
 | görünür bağlantı | **0** | **10** |
 | `/uyelik` bağlantısı | 0 | 8 |
-| "Planları gör" birincil eylemi | yok | var |
+| birincil eylem | yok | var — **"Neler dahil?"** |
 | başlıkta siteye dönüş | yok | var |
 | tekrarlanan kilit cümlesi | 7 | **0** |
 | özdeş "Özel İçerik" başlığı | 7 | **0** |
@@ -3361,6 +3361,24 @@ Kapsam notu: `kayit` sayfasındaki otomatik giriş düzeltmesi canlıda
 SÜRÜLMEDİ — dalı çizdirmek gerçek bir kayıt (veritabanına yazma) gerektirir.
 Yerelde `fetch` koşumuyla ölçülmüştü; canlı doğrulaması yapılmadı ve
 "doğrulandı" DENMİYOR.
+
+**İKİNCİ TUR — sonraki commit'ler de canlıda ölçüldü.** Yukarıdaki tablo bir
+dönem `"Planları gör" birincil eylemi` diyordu ve etiket sonradan
+`"Neler dahil?"` olarak değiştirildiği için **belge canlıyı yanlış
+anlatıyordu**. Satır düzeltildi.
+
+Bu, avlanan sınıfın belge tarafındaki hâli: bir düzeltmeyi belgeye yazdıktan
+sonra AYNI yüzeyi tekrar değiştirirsen, belge sessizce bayatlıyor. Ölçüt
+basit — canlıyı ölçerken belgedeki iddiayı da yanına koy ve ikisinin aynı
+şeyi söylediğini gör.
+
+İkinci turda canlıda yeniden ölçülenler (hepsi tutuyor): premium giriş 10
+görünür bağlantı · etiket "Neler dahil?" · eski "Planları gör" metni **yok** ·
+tekrarlanan kilit cümlesi 0 · özdeş "Özel İçerik" 0 · rozet "Free"; YDUS
+panosu rozeti "Free" (kontrast 11.87); arama canlı bölgesi yazmadan önce
+DOM'da, ESC kapatıyor ve sorgu korunuyor, temizleme düğmesi 24×24 ve adlı;
+mobil menü ESC ile kapanıyor, odak düğmeye dönüyor, `aria-controls` yerinde,
+menü kapalıyken ESC yutulmuyor.
 
 
 ### Düzeltmeler CANLIDA doğrulandı — 23 Ağustos 2026
