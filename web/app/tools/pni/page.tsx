@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function PniPage() {
   const [alb, setAlb]   = React.useState("");
@@ -10,7 +10,39 @@ export default function PniPage() {
 
   const albN  = parseLocaleNumber(alb);
   const lympN = parseLocaleNumber(lymp);
-  const hasResult = albN > 0 && lympN > 0;
+  /**
+   * ÜST SINIR EKSİKTİ — saçma girdi GÜVEN VEREN sonuç üretiyordu.
+   *
+   * Kapı yalnızca `> 0` diyordu; çöp ve boş girdiyi doğru eliyor (ölçüldü,
+   * sonuç basılmıyor) ama fizyolojik olarak imkânsız YÜKSEK değerleri
+   * geçiriyordu. Ölçüldü:
+   *
+   *   albümin 99 g/dL     ->  PNI 996.0 · "İYİ NÜTRİSYON DURUMU"
+   *   lenfosit 99999/μL   ->  PNI 530.0 · "İYİ NÜTRİSYON DURUMU"
+   *
+   * Yön güven verici olduğu için tehlikeli: malnütrisyon taramasında
+   * yanlış "iyi durumda" cevabı, taramanın kendisini boşa çıkarır.
+   *
+   * Sınırlar makullük sınırı, klinik eşik değil: albümin 1–7 g/dL
+   * (fizyolojik aralık ~1.5–5.5), lenfosit 10–100000/μL.
+   *
+   * LENFOSİT ÜST SINIRI BİLEREK GENİŞ ve bu bir BEKLENTİ DÜZELTMESİ: ilk
+   * ölçümde 99999/μL girdisinin reddedilmesi beklenmişti, reddedilmedi ve
+   * PNI 530.0 · "İYİ NÜTRİSYON DURUMU" çıktı. Yanlış olan beklentiydi —
+   * lösemik lenfositozda 100.000/μL gerçek bir değer ve aritmetik doğru.
+   *
+   * Yani 530 bir GİRDİ kusuru değil, formülün kendi sınırı: PNI cerrahi ve
+   * onkoloji kohortlarında doğrulanmış, bandları 45'te tavanlanan bir indeks
+   * ve o sayımlarda uygulanabilir değil. Sayıyı daraltmak, gerçek bir hastanın
+   * gerçek değerini reddetmek olurdu. Ölçüldü, karara bağlandı, sınır
+   * gevşek bırakıldı; klinik uygulanabilirlik kararı içerik sahibinindir.
+   */
+  const makul = (ham: string, altS: number, ustS: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= altS && n <= ustS;
+  };
+  const hasResult = makul(alb, 1, 7) && makul(lymp, 10, 100000);
 
   // PNI = 10 × Albumin (g/dL) + 0.005 × Lenfosit (/μL)
   const pni = hasResult ? 10 * albN + 0.005 * lympN : null;

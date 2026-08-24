@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function GnriPage() {
   const [alb, setAlb]       = React.useState("");
@@ -30,12 +30,42 @@ export default function GnriPage() {
    * Kardeş araç `bmi` bu kalıbı zaten doğru kuruyor (Devine ve Hamwi de
    * cinsiyete bağlı, orada seçici var); `gnri` istisnaydı.
    */
-  const ibw = heightN > 0 ? (heightN - 100) - (heightN - 150) / (sex === "m" ? 4 : 2.5) : null;
-  const wRatio = ibw !== null && ibw > 0 && weightN > 0 ? Math.min(weightN / ibw, 1) : null;
+  /**
+   * ÜST SINIR EKSİKTİ — ve en tehlikelisi BOY alanıydı.
+   *
+   * Kapı yalnızca `> 0` diyordu. Çöp ve boş girdi doğru eleniyordu (ölçüldü),
+   * ama fizyolojik olarak imkânsız YÜKSEK değerler geçiyordu. Ölçüldü
+   * (albümin 3.6 g/dL · kilo 55 kg · boy 165 cm → GNRI 91.0 ORTA RİSK):
+   *
+   *   boy 1700 cm      ->  GNRI 55.5  · "YÜKSEK RİSK"     ← GERÇEKÇİ GÖRÜNÜYOR
+   *   albümin 99 g/dL  ->  GNRI 1511.6 · "RİSK YOK"
+   *
+   * Boy vakası ayırt edici: fazladan bir sıfır (170 yerine 1700) tipik bir
+   * yazım hatası ve sonuç 55.5 — gerçek bir ağır malnütrisyon GNRI'sinden
+   * ayırt edilemez. Kullanıcı hatayı SONUÇTAN göremiyor.
+   *
+   * KİLO ZATEN KORUMALIYDI ve sebebi kayda değer: `Math.min(weightN/ibw, 1)`
+   * oranı 1'de tavanlıyor, yani 700 kg ile 70 kg AYNI sonucu (95.3) veriyor.
+   * Yani saçma kilo kararı değiştirmiyor — tavan burada kazara bir koruma.
+   *
+   * Sınırlar makullük sınırı: albümin 1–7 g/dL · kilo 20–300 kg ·
+   * boy 50–250 cm (deponun öteki araçlarıyla aynı aile).
+   */
+  const makul = (ham: string, altS: number, ustS: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= altS && n <= ustS;
+  };
+  const albOk    = makul(alb, 1, 7);
+  const kiloOk   = makul(weight, 20, 300);
+  const boyOk    = makul(height, 50, 250);
+
+  const ibw = boyOk ? (heightN - 100) - (heightN - 150) / (sex === "m" ? 4 : 2.5) : null;
+  const wRatio = ibw !== null && ibw > 0 && kiloOk ? Math.min(weightN / ibw, 1) : null;
 
   // GNRI = 1.489 × Albumin (g/L) + 41.7 × (Weight / IBW)
   // Note: albumin must be in g/L (×10 from g/dL)
-  const gnri = albN > 0 && wRatio !== null ? 1.489 * (albN * 10) + 41.7 * wRatio : null;
+  const gnri = albOk && wRatio !== null ? 1.489 * (albN * 10) + 41.7 * wRatio : null;
 
   const getResult = (s: number) => {
     if (s > 98)    return { label: "RİSK YOK", sub: "GNRI > 98", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };

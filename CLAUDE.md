@@ -6716,3 +6716,65 @@ güven YOK. Tek aykırılık saçma girdide (9999/9999) **246864.2** gibi bir sa
 basması; yön alarma doğru, sayı gözle tartışmasız saçma ve araç talimat
 üretmiyor. Sınır eklemek kozmetik olurdu — ölçüldü, karara bağlandı,
 DEĞİŞTİRİLMEDİ.
+
+### BELGENİN "KORUMALI" DEDİĞİ ÜÇ ARAÇ SINANDI — ikisinde üst sınır eksikti
+
+Belge `conut`, `gnri` ve `pni` için "zaten korumalı (`–` gösteriyor)" diyordu.
+İddia doğrulandı ve YARIM çıktı: üçü de çöp/boş girdiyi doğru eliyor, ama
+`gnri` ile `pni`de ÜST sınır yoktu.
+
+**`gnri` — en tehlikelisi BOY alanı.** Ölçüldü (albümin 3.6 · kilo 55 ·
+boy 165 → GNRI 91.0 "ORTA RİSK"):
+
+| değişen alan | sonuç |
+|---|---|
+| boy **1700 cm** | GNRI **55.5 · "YÜKSEK RİSK"** ← gerçekçi görünüyor |
+| albümin **99 g/dL** | GNRI 1511.6 · "RİSK YOK" |
+| kilo **700 kg** | GNRI 95.3 — **kusur DEĞİL** |
+
+Boy vakası ayırt edici: fazladan bir sıfır (170 → 1700) tipik bir yazım
+hatası ve 55.5 gerçek bir ağır malnütrisyon GNRI'sinden ayırt edilemiyor.
+Kullanıcı hatayı sonuçtan göremiyor.
+
+**Kilonun zaten korumalı olması kazara:** `Math.min(weightN/ibw, 1)` oranı
+1'de tavanlıyor, yani 700 kg ile 70 kg AYNI sonucu veriyor. Saçma kilo kararı
+değiştirmiyor. `tirads`taki durumun aynısı — **bir tavan bazen bilmeden bir
+makullük koruması işlevi görüyor.**
+
+**`pni` — saçma albümin güven veren cevap veriyordu:** 99 g/dL → PNI 996.0 ·
+"İYİ NÜTRİSYON DURUMU". Malnütrisyon taramasında yanlış "iyi durumda" cevabı
+taramanın kendisini boşa çıkarır.
+
+Sınırlar: albümin 1–7 g/dL · kilo 20–300 · boy 50–250 cm.
+Doğrulama 14 vaka, sınır değerleri dahil (boy tam 250 geçiyor, 251 düşüyor;
+albümin tam 7 geçiyor, 7.1 düşüyor); olağan vakalar birebir aynı.
+
+**BEKLENTİ DÜZELTMESİ — `pni`de lenfosit sınırı.** İlk ölçümde 99999/μL
+girdisinin reddedilmesi beklendi; reddedilmedi ve PNI 530.0 çıktı. Yanlış
+olan BEKLENTİYDİ: lösemik lenfositozda 100.000/μL gerçek bir değer ve
+aritmetik doğru. Yani 530 bir GİRDİ kusuru değil, **formülün kendi sınırı** —
+PNI cerrahi/onkoloji kohortlarında doğrulanmış ve bandları 45'te tavanlanan
+bir indeks, o sayımlarda uygulanabilir değil. Sınırı daraltmak gerçek bir
+hastanın gerçek değerini reddetmek olurdu; gevşek bırakıldı ve gerekçesi
+kaynağa yazıldı.
+
+**`conut` TEMİZ.** Çöp/boş "–" veriyor; saçma albümin (9999) skoru
+değiştirmiyor çünkü ≥3.5 zaten 0 puan — `tirads` ile aynı zararsız durum.
+
+### AÇIK BULGU — `dst` HDDST'de EKSİ YÜZDE SÜPRESYON (karar bekliyor)
+
+`ktv`nin açtığı "girdiler arası zorunlu sıralama" sınıfı `dst`ye sürüldü.
+HDDST'de son kortizol bazalı aşarsa yüzde süpresyon EKSİ çıkıyor:
+
+| bazal / son | ekranda |
+|---|---|
+| 28 / 40 | **"%-42.9"** · "✗ SÜPRESİYON YETERSİZ — Ektopik ACTH" |
+| 10 / 60 | **"%-500"** · aynı |
+
+**HÜKÜM DOĞRU** — kortizol yükselmişse süpresyon yoktur ve ektopik/adrenal
+doğru cevaptır. Kusur yalnızca GÖSTERİMDE: "yüzde süpresyon" eksi olamaz;
+doğru ifade "süpresyon yok" ya da "paradoksal artış".
+
+`ktv`den farkı bu: orada hüküm imkânsız bir değerden ÜRETİLİYORDU, burada
+hüküm doğru ve yalnızca sayı anlamsız. O yüzden ölçüldü, not edildi,
+DEĞİŞTİRİLMEDİ — sonraki turda gösterim düzeltmesi olarak ele alınabilir.
