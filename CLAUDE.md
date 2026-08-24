@@ -4277,6 +4277,52 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### AYNI SINIF, İKİ AYRI ARIZA — bedelini arızanın şekli belirliyor
+
+`konu-denetim` "etiket dengesi bozuk bölüm (görünür bedeli AYRICA ölçülmeli):
+3" diyordu, yani kendi açık sorusunu taşıyordu. Bu tur kapatıldı — ve
+kapatırken az kalsın belgede ÇÜRÜTÜLMÜŞ bir iddia tekrar edilecekti.
+
+Betikte kayıtlı çürütme şuydu: bir dönem "bugün görünür bedeli yok" yazıyordu,
+YANLIŞTI — `ektopik-acth-sendromu.json`da kapanmamış etiketler yüzünden tek
+bir `<strong>` **1740 karakteri** sarıyordu. Aynı iddiayı yapmak üzereyken
+notu okumak durdurdu.
+
+**Ama iki arıza aynı şey değil:**
+
+| arıza | mekanizma | bedel |
+|---|---|---|
+| kapanmamış AÇILIŞ (`<strong>` açık kalıyor) | sonraki gövdeyi YUTAR | 1740 karakter, gerçek hasar |
+| fazladan KAPANIŞ (`</em>` karşılıksız) | ayrıştırıcı ATAR | yok |
+| bozuk YUVALAMA (`</em>` açıkken `strong`) | ayrıştırıcı kendi düzeltir | yok |
+
+Bugünkü üç kayıt ikinci ve üçüncü şekilde. Üç sayfa da canlı render edilip
+betiğin KENDİ tarif ettiği yöntemle ölçüldü:
+
+| sayfa | en uzun `em` | en uzun `strong` | eşik (250) aşan |
+|---|---|---|---|
+| `men1-gastrinoma-zes` | 13 | 52 | 0 |
+| `anemiler` | 118 | 89 | 0 |
+| `miyeloproliferatif` | 42 | 40 | 0 (1 iç içe vurgu, zararsız) |
+
+**Sonuç: bu üç kaydın görünür bedeli sıfır** ve içerik dosyalarına dokunmayı
+gerektirmiyor. **Genelleme YAPILMADI** — kapanmamış açılış hâlâ hasar
+veriyor, liste o yüzden basılmaya devam ediyor.
+
+**Aktarılabilir kural: bir sınıfı "zararsız" ilan etmeden önce, elindeki
+kaydın o sınıfın HANGİ arızası olduğunu ayır.** "Etiket dengesi bozuk" tek
+bir etiket altında üç farklı mekanizma topluyordu ve yalnızca biri zarar
+veriyor. Sınıfın adı, arızanın şekli değildir.
+
+**Yan bulgu — denetimin bildirdiği 4 çift başlığın dördü de SENDE-KALANLAR'da
+kayıtlı**, yani kullanıcının takip ettiği iş; dokunulmadı. İkisi belgede
+kayıtlı gerçek içerik kazaları ve hâlâ duruyorlar: `hiperkalsemi-ve-
+hiperparatiroidi.json` beş bölümüyle baştan sona asit-baz, `akut-lenfoblastik-
+losemi-all.json` baştan sona MDS anlatıyor. Bir denetim raporundaki kaydın
+"açık" görünmesi, senin işin olduğu anlamına gelmiyor — önce takip
+listesinde mi diye bak.
+
+
 ### Raporun KUYRUĞU "temiz" derken gövdesi 27 kusur sayıyordu
 
 Elle çalıştırılan denetimler sağlık kontrolü olarak sürüldü. `link-denetim`in
