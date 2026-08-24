@@ -4277,6 +4277,57 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Raporun KUYRUĞU "temiz" derken gövdesi 27 kusur sayıyordu
+
+Elle çalıştırılan denetimler sağlık kontrolü olarak sürüldü. `link-denetim`in
+son satırı **"kırık bağlantı yok."** diyor; bu oturumda ona bakılıp "temiz"
+sonucuna varıldı. Başa dönülünce özet satırları başka şey söylüyordu:
+
+```
+kendi alanında duran adres: 9 (8'i kırık)
+kaynakta düz yazılmış adres: 123 (19'u kırık)
+```
+
+**27 kırık adres varken rapor kuyrukta "kırık yok" basıyordu.** Sebep: o satır
+yalnızca CI KAPISI olan sınıf için yazılmıştı ve uyarı sınıfındaki kırıkları
+saymıyordu. Raporu `tail` ile okumak olağan olduğu için yanıltıcıydı.
+
+Deponun kendi kuralının yeni bir yüzü: *"0 kusur ile 0 öge ekranda aynı
+görünür"* — bir tarama neyi ölçtüğünü ve **neyi KAPI SAYMADIĞINI** aynı yerde
+söylemeli. Kapanış satırı artık şunu diyor:
+
+> CI kapısı: kırık bağlantı yok — ama UYARI sınıfında 27 kırık adres var.
+
+CI davranışı DEĞİŞMEDİ: çıkış kodu 0, sayılar birebir aynı. Değişen yalnızca
+kapanış satırı.
+
+**27 UYARININ 27'Sİ DE ÖLÜ KODDA** — ölçüldü ve betiğin başına yazıldı,
+yeniden kovalanmasın diye. Ulaşılabilirlik "içe aktarılmış mı" ile DEĞİL,
+"rotadan ulaşılıyor mu" ile ölçüldü:
+
+| kaynak | kırık | neden ulaşılmıyor |
+|---|---|---|
+| `app/config/nav.ts` | 12 (`/sections/*`) | sıfır içe aktaran |
+| `HeaderClient.tsx` | 1 | sıfır içe aktaran |
+| `app/tools/data/ads.ts` | 3 | yalnızca `AdBanner` çağırıyor, o da ölü |
+| `app/admin/**` | 2 (`/admin`) | rotada ama `app/admin/page.tsx` YOK; middleware `/giris`e yönlendiriyor |
+| premium video/vaka JSON | 8 | yalnızca `_hematoloji`, `_romatoloji` okuyor |
+
+**Davranışla doğrulandı, kaynakla değil:** `/sections/nefroloji` 404,
+`/tr/premium/video/izle` 404, `/admin` → `/giris`.
+
+**`grep` ile ulaşılabilirlik ölçerken bir tuzak daha:** `nav` adını aramak
+30 dosya döndürdü — çünkü HTML `<nav>` etiketi her yerde geçiyor. İçe aktarma
+satırını aramak (`from ".../config/nav"`) gerçek sayıyı verdi: **sıfır**.
+Belgedeki "ad araması tek başına yanıltır" kuralının bu turdaki hâli.
+
+**Not edilen borç:** `nav.ts` on iki bağlantısını `/sections/<branş>` diye
+yazıyor, oysa sitenin gerçek yolu `/topics/<branş>`. Dosya canlıya bağlanırsa
+on iki kırık bağlantı BİRDEN açılır — bağlamadan önce yollar düzeltilmeli.
+
+Video rotasına DOKUNULMADI: SENDE-KALANLAR 24'te duran bir ürün kararı.
+
+
 ### İLANI SEN YAZDIYSAN DA ÖLÇ — eklediğim düğme hedefte karşılıksız kaldı
 
 Premium giriş sayfasına dönüşüm eylemi eklendikten sonra oradan `/uyelik`e
