@@ -4295,6 +4295,39 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Laboratuvar girdilerinde BİRİM ilanı — dokuz araç ölçüldü, temiz
+
+Taranmamış bir güvenlik sınıfı: birimi ekranda yazmayan laboratuvar alanı.
+Kreatinin mg/dL mi µmol/L mi — karıştırılırsa sapma **88 kat**. Aynı belirsizlik
+glukoz (×18), kalsiyum (×4), bilirubin (×17) için de var; `unit-converter`
+zaten bu yüzden duruyor.
+
+Ölçüm tarayıcıda, ad HESAPLATILARAK yapıldı (kaynak grep'lenmedi — belgedeki
+kural). Dokuz araç, 21 sayısal alan:
+
+| araç | alan | birimsiz |
+|---|---|---|
+| `egfr` · `kdigo-aki` · `meld-na` | kreatinin, bilirubin, sodyum | 0 |
+| `homa-ir` · `ogtt` | glukoz, insülin | 0 |
+| `corrected-calcium` · `anion-gap` · `conut` · `glasgow-blatchford` | kalsiyum, albümin, BUN | 0 |
+
+`meld-na`daki **INR** birimsiz ama bu doğru: INR bir orandır, birimi yoktur.
+Ölçüte "oransal" muafiyeti konuldu, yoksa gerçek olmayan bir kusur sayardı.
+
+**ÖLÇÜT İKİ KEZ ÇÖPE ÇIKTI ve ikisi de belgede kayıtlı tuzakların tekrarı:**
+
+- **Kaynakta `label: "…"` aramak.** O kalıp bu depoda puanlama ŞIKLARINDA da
+  kullanılıyor; tarama "Yok", "DÜŞÜK RİSK", "REMİSYON" gibi sonuç etiketlerini
+  girdi adı sandı ve 25 araçlık sahte liste üretti. Ad kaynaktan okunmaz,
+  tarayıcıda hesaplatılır.
+- **Türkçe kelime sınırı, üçüncü kez.** `üre` deseni **"süre"** içinde
+  eşleşiyor; "üre alan araçlar" listesi bu yüzden neredeyse bütün infüzyon
+  araçlarını kapsadı. `bun` da başka kelimelerin içinden geliyordu.
+
+Kapsam notu: dokuz araç, belirsiz birimli analiti olan en yüksek riskli
+kümeden seçildi. 131 aracın tamamı taranmadı; "hepsi temiz" DENMİYOR.
+
+
 ### "Kod bunu zaten onarıyor" iddiası CANLIDA sınandı — doğru çıktı
 
 `asili-denetim` ebeveyn adı sapmış tek kaydı raporlarken **"KOD BUNLARI ZATEN
