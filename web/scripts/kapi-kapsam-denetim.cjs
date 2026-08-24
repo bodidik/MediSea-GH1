@@ -13,6 +13,17 @@
  *   üre 400 mg/dL -> açık  67 -> "NH₄⁺ atılımı yetersiz" (distal RTA)
  * Eşik 150; tek bir boş alan klinik yorumu TAM TERSİNE çeviriyordu.
  *
+ * ── AÇIK İKİ ADAYIN VERDİKTİ — YENİDEN KOVALAMAYIN ──────────────────
+ *
+ *   spot-urine:225  uglucN  ->  KUSUR DEĞİL. İdrarda glukoz bulunmaması
+ *     normaldir ve alanın kendi örneği "ör. 0"; meşru sıfır bilerek kapı
+ *     dışında. (Aynı ifadedeki ÜRE kapıya alındı — o 0 olamaz.)
+ *
+ *   sodium:442  naN  ->  KUSUR DEĞİL, ölçütün YAPISAL sınırı. İfade
+ *     `naMakul && hiperHedefMakul` ile kapılı bir JSX panelinin İÇİNDE;
+ *     denetim yalnızca yerel `tbw ?` üçlüsünü görüyor, saran koşulu değil.
+ *     Ölçümle doğrulandı: Na 9999 girildiğinde panel hiç çizilmiyor.
+ *
  * KAPI DEĞİL RAPOR. Kapsam dışı kalmak her zaman kusur değildir:
  *
  *  1. Bazı alanlarda 0 FİZYOLOJİK OLARAK MEŞRUDUR (idrar glukozu gibi —
@@ -71,12 +82,44 @@ function tara(kok) {
        * `heparinTamam` metinde `heparinNum` içermez ama ONU sınar. Kapı
        * ifadesindeki her tanımlayıcının kendi tanımı BİR DÜZEY açılıyor.
        */
+      /**
+       * BİR DÜZEY YETMİYOR — ölçüldü ve 19 sahte aday üretti.
+       *
+       * Kapılar zincirlenebiliyor ve bu depoda sık:
+       *   const preOk    = makul(preBun, 2, 300);
+       *   const yonDogru = preOk && post < pre;
+       *   const hasAll   = yonDogru && tOk && ufOk && wtOk;
+       *   const R        = hasAll ? post / pre : null;
+       * Tek düzey açılınca `hasAll` yalnızca `yonDogru`ya varıyor ve `pre`
+       * hiçbir zaman görünmüyordu.
+       *
+       * İkinci körlük: makullük yardımcısı HAM DİZE adını alıyor
+       * (`makul(preBun, …)`), sayı adını (`pre`) değil. Eşleme
+       * `const pre = parseLocaleNumber(preBun)` satırından kurulup ham ad da
+       * kapı metnine ekleniyor.
+       *
+       * Derinlik SINIRLI (4 tur): sınırsız izleme "her bool kapıdır" demeye
+       * varır ve denetimi körleştirir.
+       */
+      const hamAdi = {};
+      for (const mm of s.matchAll(/const\s+([A-Za-z_$][\w$]*)\s*=\s*parseLocaleNumber\(\s*([A-Za-z_$][\w$]*)/g)) {
+        hamAdi[mm[1]] = mm[2];
+      }
       let kapiGenis = kapi;
-      for (const ad2 of new Set(kapi.match(/\b[A-Za-z_$][\w$]*\b/g) || [])) {
-        const tanim = s.match(new RegExp('const\\s+' + ad2 + '\\s*=\\s*([^;]{1,300});'));
-        if (tanim) kapiGenis += ' ' + tanim[1];
+      const acilan = new Set();
+      for (let tur = 0; tur < 4; tur++) {
+        let eklendi = false;
+        for (const ad2 of new Set(kapiGenis.match(/\b[A-Za-z_$][\w$]*\b/g) || [])) {
+          if (acilan.has(ad2)) continue;
+          acilan.add(ad2);
+          const tanim = s.match(new RegExp('const\\s+' + ad2 + '\\s*=\\s*([\\s\\S]{1,800}?);'));
+          if (tanim) { kapiGenis += ' ' + tanim[1]; eklendi = true; }
+        }
+        if (!eklendi) break;
       }
       const kapida = new Set((kapiGenis.match(/\b[A-Za-z_$][\w$]*\b/g) || []));
+      /* Ham dize adı kapıda geçiyorsa, karşılığı olan SAYI da kapıdadır. */
+      for (const [sayiAd, ham] of Object.entries(hamAdi)) if (kapida.has(ham)) kapida.add(sayiAd);
       const disarida = kullanilan.filter((x) => !kapida.has(x));
       if (disarida.length) {
         const satir = s.slice(0, m.index).split('\n').length;

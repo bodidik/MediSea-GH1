@@ -70,6 +70,101 @@ function govdeAyikla(kaynak) {
     (t, etiket, metin) => etiket + ' '.repeat(metin.length));
 }
 
+/**
+ * KAPI DOLAYLI OLABİLİR — adlandırılmış bir bool'un ARKASINDA.
+ *
+ * Ölçüt bir dönem yalnızca `x > 0` gibi DOĞRUDAN karşılaştırmaları ve adında
+ * "makul"/"tamam" geçen bool'ları tanıyordu. Bu depoda kapılar sıklıkla
+ * adlandırılıyor ve adlandırma serbest:
+ *
+ *   const yonDogru = preOk && postOk && post < pre;
+ *   const hasAll   = yonDogru && tOk && ufOk && wtOk;
+ *   const R        = hasAll ? post / pre : null;      <- korumalı ama görünmez
+ *
+ * Ölçüldü: bu oturumda `ktv` ve `kdigo-aki`ye kapı eklendikten SONRA denetim
+ * 0'dan 4'e çıktı ve dördü de sahteydi. Kusur koddaydı değil ÖLÇÜTTEYDİ —
+ * kodu denetime uydurmak (değişkenleri "…Makul" diye yeniden adlandırmak)
+ * yanlış yön olurdu.
+ *
+ * Çare `kapi-kapsam-denetim`de zaten uygulanmış olan yöntem: kapıdaki her
+ * TANIMLAYICININ tanımı BİR DÜZEY açılır ve orada sınır aranır. Bir düzeyle
+ * sınırlı tutuluyor; sınırsız izleme, "her bool kapıdır" demeye varır ve
+ * denetimi körleştirir.
+ */
+/**
+ * Her kapı bool'unun HANGİ SAYIYI kapıladığını çıkarır.
+ *
+ * DEĞİŞKENE BAĞLI OLMAK ŞART. İlk sürüm yalnızca "bu ad bir kapı mı" diye
+ * bakıyordu ve belgede kayıtlı tuzağı GERİ GETİRDİ: pencerede herhangi bir
+ * kapı bool'u bulunması, BAŞKA bir değişkenin kapısız bölmesini de gizliyordu.
+ * Tohumla ölçüldü —
+ *
+ *   const kiloMakul = sayiGirildiMi(k) && kilo >= 1 && kilo <= 400;
+ *   const doz  = kiloMakul ? 500 / kilo : null;   // korumalı
+ *   const oran = 250 / hacim;                     // KORUMASIZ ama gizleniyordu
+ *
+ * Artık `kiloMakul` yalnızca `kilo`yu kapılıyor sayılıyor.
+ */
+function kapiHaritasi(kaynak) {
+  /* sayı adı <-> ham dize adı eşlemesi */
+  const hamAdi = {};
+  for (const m of kaynak.matchAll(/const\s+([A-Za-z_$][\w$]*)\s*=\s*parseLocaleNumber\(\s*([A-Za-z_$][\w$]*)/g)) {
+    hamAdi[m[1]] = m[2];
+  }
+
+  /* YAKALAMA SINIRI SESSİZ BİR KÖRLÜK KAYNAĞI. İlk sürüm 260 karakterle
+     sınırlıydı ve `kalsiyum-infuzyon`daki 6 satırlık `infMakul` tanımı (~270
+     karakter) HİÇ eşleşmiyordu — yani kapı haritada yoktu ve korumalı bir
+     bölme aday olarak raporlanıyordu. Sınır tanımın gerçek uzunluğuna göre
+     seçilmeli; 800 bu depodaki en uzun kapı tanımının rahat üstünde. */
+  const tanim = {};
+  for (const m of kaynak.matchAll(/const\s+([A-Za-z_$][\w$]*)\s*=([\s\S]{0,800}?);/g)) {
+    tanim[m[1]] = m[2];
+  }
+
+  /** ad -> kapıladığı sayı adları kümesi */
+  const harita = {};
+  const iceriyor = (govde, sayiAd) => {
+    const isimler = new Set(govde.match(/[A-Za-z_$][\w$]*/g) || []);
+    return isimler.has(sayiAd) || (hamAdi[sayiAd] && isimler.has(hamAdi[sayiAd]));
+  };
+
+  /* TABAN: tanımı bir makullük denetimi ya da ALT SINIR taşıyanlar.
+     Üst sınır (`x <= N`) tek başına sayılmıyor — bölmeyi sıfırdan korumaz. */
+  for (const [ad, govde] of Object.entries(tanim)) {
+    const denetimVar = /sayiGirildiMi\s*\(|[A-Za-z]*[Mm]akul\s*\(/.test(govde)
+      || /[A-Za-z_$][\w$]*\s*(>=?)\s*[0-9]/.test(govde);
+    if (!denetimVar) continue;
+    harita[ad] = new Set(Object.keys(hamAdi).filter((s) => iceriyor(govde, s)));
+  }
+
+  /* SABİT NOKTA: bir kapıya DAYANAN tanım, onun kapıladıklarını devralır. */
+  for (let tur = 0; tur < 6; tur++) {
+    let degisti = false;
+    for (const [ad, govde] of Object.entries(tanim)) {
+      const isimler = new Set(govde.match(/[A-Za-z_$][\w$]*/g) || []);
+      const devir = new Set(harita[ad] || []);
+      const onceki = devir.size;
+      for (const x of isimler) if (harita[x]) for (const s of harita[x]) devir.add(s);
+      if (devir.size > onceki) { harita[ad] = devir; degisti = true; }
+    }
+    if (!degisti) break;
+  }
+  return harita;
+}
+
+/**
+ * KAPI DOLAYLI OLABİLİR — adlandırılmış bir bool'un ARKASINDA.
+ *
+ * Pencerede geçen adlardan biri dosyanın kapı kümesindeyse bölme korumalıdır.
+ */
+function dolayliKapi(harita, pencere, ad) {
+  const isimler = new Set(pencere.match(/[A-Za-z_$][\w$]*/g) || []);
+  /* Pencerede geçen bir kapı bool'u TAM OLARAK bu sayıyı kapılıyorsa korumalı. */
+  for (const x of isimler) if (x !== ad && harita[x] && harita[x].has(ad)) return true;
+  return false;
+}
+
 function tara(kok) {
   const bulgu = [];
   let dosya = 0;
@@ -80,6 +175,7 @@ function tara(kok) {
     if (!fs.existsSync(p)) continue;
     dosya++;
     const s = govdeAyikla(fs.readFileSync(p, 'utf8').replace(/\r\n/g, '\n'));
+    const kapiKumesi = kapiHaritasi(s);
     const adlar = [...s.matchAll(/const\s+(\w+)\s*=\s*parseLocaleNumber\(/g)].map((m) => m[1]);
     if (!adlar.length) continue;
     const satirlar = s.split('\n');
@@ -93,15 +189,23 @@ function tara(kok) {
         /* Kapı, bölmenin BULUNDUĞU ifadede aranır: aynı satır ya da onu açan
          * koşul (üstteki 6 satır — `const x = makul ? ... : 0` üçlüsü). */
         const pencere = satirlar.slice(Math.max(0, i - 6), i + 1).join('\n');
-        const kapi = new RegExp(
+        /* HEPSİ BU SAYIYA BAĞLI. Ölçüt bir dönem pencerede adında "makul" ya da
+           "tamam" GEÇEN herhangi bir bool'u kapı sayıyordu; o kural BAŞKA bir
+           değişkenin kapısız bölmesini de aklıyordu. Tohumla ölçüldü:
+
+             const kiloMakul = sayiGirildiMi(k) && kilo >= 1;
+             const oran = 250 / hacim;   // korumasız ama "kiloMakul" yüzünden aklanıyordu
+
+           Adlandırılmış kapılar artık `kapiHaritasi` ile DEĞİŞKENE BAĞLI
+           çözülüyor, o yüzden ada bakan gevşek alternatifler kaldırıldı. */
+        const dogrudanKapi = new RegExp(
           ad + '\\s*>\\s*0|' +
           ad + '\\s*>=\\s*[1-9]|' +
           ad + '\\s*!==\\s*0|' +
-          ad + '\\s*&&|' +
-          '\\w*[Mm]akul\\b|' +
-          '\\w*[Tt]amam\\b'
+          ad + '\\s*&&'
         );
-        if (kapi.test(pencere)) continue;
+        if (dogrudanKapi.test(pencere)) continue;
+        if (dolayliKapi(kapiKumesi, pencere, ad)) continue;
         bulgu.push({ arac: d.name, degisken: ad, satir: i + 1, kod: satirlar[i].trim().slice(0, 90) });
       }
     }
@@ -168,12 +272,35 @@ if (process.argv.includes('--kontrol')) {
     'const z = parseLocaleNumber(a);',
     'const sonuc = y / z < 5 ? "az" : "cok";',
   ]);
+  /* NEGATİF-4: AYNI DOSYADA İKİNCİ BÖLME. Belgede kayıtlı tuzak — bir dosyada
+   * kapılı bir bölme varken kapısız ikincisi gizlenmemeli. Bu tam olarak
+   * yaşandı: adlandırılmış kapılar tanınmaya başlayınca ölçüt "pencerede kapı
+   * bool'u var mı" diye baktı ve BAŞKA bir değişkenin bölmesini de akladı.
+   * Kapı artık DEĞİŞKENE bağlı çözülüyor; bu tohum onu koruyor. */
+  yaz('zz-bozuk-ikinci', [
+    'const kilo = parseLocaleNumber(k);',
+    'const hacim = parseLocaleNumber(h);',
+    'const kiloMakul = sayiGirildiMi(k) && kilo >= 1 && kilo <= 400;',
+    'const doz = kiloMakul ? 500 / kilo : null;',
+    'const oran = 250 / hacim;',
+  ]);
+  /* POZİTİF: ADLANDIRILMIŞ ve ZİNCİRLİ kapı — ölçüt onu tanımalı.
+   * `ktv`nin gerçek şekli: hasAll -> yonDogru -> preOk -> makul(...). */
+  yaz('zz-temiz-g', [
+    'const pre = parseLocaleNumber(preBun);',
+    'const post = parseLocaleNumber(postBun);',
+    'const makul = (ham, alt, ust) => sayiGirildiMi(ham) && parseLocaleNumber(ham) >= alt;',
+    'const preOk = makul(preBun, 2, 300);',
+    'const yonDogru = preOk && post < pre;',
+    'const hasAll = yonDogru && true;',
+    'const R = hasAll ? post / pre : null;',
+  ]);
 
   const { bulgu } = tara(t);
   fs.rmSync(t, { recursive: true, force: true });
   const adlar = bulgu.map((b) => b.arac);
-  const BOZUK = ['zz-bozuk', 'zz-bozuk-jsx', 'zz-bozuk-kars'];
-  const TEMIZ = ['zz-temiz-a', 'zz-temiz-b', 'zz-temiz-c', 'zz-temiz-d', 'zz-temiz-e', 'zz-temiz-f'];
+  const BOZUK = ['zz-bozuk', 'zz-bozuk-jsx', 'zz-bozuk-kars', 'zz-bozuk-ikinci'];
+  const TEMIZ = ['zz-temiz-a', 'zz-temiz-b', 'zz-temiz-c', 'zz-temiz-d', 'zz-temiz-e', 'zz-temiz-f', 'zz-temiz-g'];
   const kacan = BOZUK.filter((x) => !adlar.includes(x));
   const sahte = TEMIZ.filter((x) => adlar.includes(x));
   if (kacan.length) console.log('negatif kontrol DÜŞTÜ — yakalanmayan korumasız bölme: ' + kacan.join(', '));

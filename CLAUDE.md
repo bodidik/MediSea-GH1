@@ -6878,3 +6878,69 @@ bağlananlar: `sodium` · `kdigo-aki` · `ogtt` · `osmolal-gap` · `ktv` · `gn
 `pni` · `bmi` · `bmr` DÜZELTİLDİ; `tirads` · `conut` · `homa-ir` · `news2` ·
 `hba1c-eag` · `spot-urine` ölçüldü ve TEMİZ çıktı. Kalanlar (`sofa`, `anc`,
 `das28`, `spot-urine`) bu oturumun önceki turlarında zaten kapatılmıştı.
+
+### KENDİ İŞİMİ DENETİMLERLE SINADIM — iki denetim körleşmişti
+
+Bu oturumda ~15 araç dosyasına kapı eklendi. Kapanış hamlesi olarak deponun
+kendi rapor denetimleri kendi iş üzerinde sürüldü ve **ikisi belgedeki taban
+değerlerin ÜSTÜNE çıkmıştı**:
+
+| denetim | belgedeki taban | bu tur | sebep |
+|---|---|---|---|
+| `bolme-denetim` | 0 | **4** | hepsi SAHTE |
+| `kapi-kapsam-denetim` | 4 | **19** | hepsi SAHTE |
+
+Sebep aynı: eklenen kapılar **adlandırılmış bool** ve adlandırma serbest.
+Denetimlerin kapı sözlüğü ise dar — biri yalnızca `…Makul`/`…Tamam` adlarını
+tanıyor, öteki adları TEK DÜZEY çözüyordu:
+
+```
+const preOk    = makul(preBun, 2, 300);
+const yonDogru = preOk && post < pre;
+const hasAll   = yonDogru && tOk && ufOk && wtOk;
+const R        = hasAll ? post / pre : null;   // korumalı ama görünmüyor
+```
+
+**Kodu denetime uydurmak (değişkenleri "…Makul" diye yeniden adlandırmak)
+yanlış yön olurdu.** Denetimler düzeltildi.
+
+**DÜZELTİRKEN BELGEDE KAYITLI TUZAĞI GERİ GETİRDİM — tohum yakaladı.**
+İlk çözüm "pencerede bir kapı bool'u var mı" diye bakıyordu ve bu, AYNI
+DOSYADAKİ BAŞKA bir değişkenin kapısız bölmesini de aklıyordu:
+
+```
+const kiloMakul = sayiGirildiMi(k) && kilo >= 1 && kilo <= 400;
+const doz  = kiloMakul ? 500 / kilo : null;   // korumalı
+const oran = 250 / hacim;                     // KORUMASIZ — gizleniyordu
+```
+
+Kapı artık DEĞİŞKENE bağlı çözülüyor: her kapı bool'u için "hangi sayıları
+kapılıyor" kümesi çıkarılıyor, sabit noktaya kadar devrediliyor, ve bölme
+ancak o kümede kendi paydası varsa aklanıyor. Ham dize ↔ sayı adı eşlemesi
+de kuruluyor (`makul(preBun, …)` çağrısı `pre`yi kapılıyor sayılıyor).
+
+**Aynı turda ölçütün ÜÇ ayrı sınırı yakalandı ve üçü de sessizdi:**
+
+| sınır | bedeli |
+|---|---|
+| adları `\w*[Mm]akul\b` ile tanımak | başka değişkenin bölmesini akladı |
+| tanım yakalamada 260 karakter tavanı | `kalsiyum-infuzyon`daki 6 satırlık `infMakul` HİÇ eşleşmedi |
+| gevşek `\w*[Oo]k\b` deseni | Türkçe **"cok"** kelimesini kapı adı sandı |
+
+Üçüncüsü kendi kontrolümü düşürdü ve düzeltmeyi o sağladı — pozitif kontrolün
+neden gerektiğinin ders niteliğinde örneği.
+
+**Doğrulama üç yönlü ve tohumlar kalıcı:** `bolme-denetim --kontrol` artık
+**4 kusurlu + 7 temiz** biçim taşıyor (aynı-dosya-ikinci-bölme ve zincirli
+kapı tohumları eklendi); `kapi-kapsam-denetim --kontrol` geçiyor; meta test
+14 denetimin 14'ünde temiz; depoda `bolme` **0**, `kapi-kapsam` **2** ve o iki
+adayın verdikti betiğin başına yazıldı:
+
+- `spot-urine:225 uglucN` — meşru sıfır, bilerek kapı dışında.
+- `sodium:442 naN` — ölçütün YAPISAL sınırı: ifade `naMakul && hiperHedefMakul`
+  ile kapılı bir JSX panelinin içinde; denetim saran koşulu göremiyor.
+  Ölçümle doğrulandı — Na 9999'da panel hiç çizilmiyor.
+
+**Aktarılabilir kural: bir depoya kapı eklerken o deponun KAPI DENETİMLERİNİ
+de sür.** Kapılar denetimlerin tanıdığı biçimden saparsa denetim sessizce
+körleşir ve "aday" sayısı artışı kusur değil, ölçüt bayatlaması olur.
