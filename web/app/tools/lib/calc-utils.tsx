@@ -9,11 +9,74 @@ export type Sex = "male" | "female";
  * olarak tutulur; type="number" KULLANILMAZ çünkü tarayıcılar "8," veya "8." gibi
  * geçici/yarım girdilerde e.target.value'yu boş string'e çevirip alanı siliyor.
  */
+/**
+ * BİNLİK AYIRICI — ölçülmüş bir kusurdan doğdu.
+ *
+ * Türkçede nokta BİNLİK, virgül ONDALIK ayırıcıdır. Eski sürüm yalnızca
+ * virgülü tanıyordu ve `parseFloat` gerisini yanlış okuyordu. Canlıda
+ * ölçüldü, en ağır vaka `antikoagulan-geri-dondurme`:
+ *
+ *     5000  Ü heparin  ->  50 mg protamin     doğru
+ *     5.000 Ü heparin  ->  0.1 mg protamin    500 KAT DÜŞÜK
+ *
+ * Aktif kanamada verilen bir geri döndürme ajanında, uyarı olmadan.
+ *
+ * VAKALAR EŞİT DEĞİL; yalnızca BELİRSİZ OLMAYANLAR düzeltildi:
+ *
+ *   "1 200"     boşluk gruplama      -> 1200     (hiçbir dil boşluğu ondalık saymaz)
+ *   "1.200,5"   nokta grup + virgül  -> 1200.5   (Türkçe, tek okuma var)
+ *   "1.2345"    dört+ hane           -> 1.2345   (zaten doğruydu, korunuyor)
+ *
+ * "1.200" (nokta + TAM 3 hane, başka işaret yok) BİLEREK DOKUNULMADI:
+ * TR'de 1200, EN'de 1.2 demek ve sessizce tahmin etmek yeni bir yanlış
+ * sayı sınıfı açardı. Bugünkü davranışı (1.2) aynen sürüyor.
+ *
+ * Çoklu nokta ("1.200.000") da belirsiz DEĞİL ama listede yoktu; bugünkü
+ * davranışı korunuyor, karar bekliyor.
+ *
+ * Sözleşmenin geri kalanı DEĞİŞMEDİ: çözülemeyen her şey 0 döndürür (42 araç
+ * buna dayanıyor) ve boş/`0` ayrımı `sayiGirildiMi` ile yapılır.
+ */
+/**
+ * Ham girdiyi TEK bir kurala göre "JS'in okuyabileceği" biçime getirir.
+ *
+ * Neden ayrı fonksiyon: bu normalizasyon İKİ yerde birden gerekiyor —
+ * `parseLocaleNumber` (sayıya çevirir) ve `sayiGirildiMi` (alan sayı ile mi
+ * dolduruldu). İkisi kendi ölçütünü taşırsa AYRIŞIYORLAR ve ayrışma sessiz.
+ *
+ * ÖLÇÜLDÜ: binlik ayırıcı düzeltmesi yalnızca `parseLocaleNumber`a konduğunda
+ * `antikoagulan-geri-dondurme` "3 000" girdisini HİÇ hesaplamıyordu —
+ * ayrıştırıcı 3000 okuyor, kapı ham dizeye kendi katı regex'ini uygulayıp
+ * reddediyordu. Aynı girdi, kapısı olmayan `pni`de 36.0 üretiyordu: tek
+ * uygulamada aynı girdi için İKİ davranış.
+ *
+ * Karakter sınıfı sadeleşti: eski sürüm `[.\s ]` içinde ayrıca görünmez bir
+ * NBSP taşıyordu; JS'de `\s` zaten U+00A0'yı kapsar, yani davranış aynı
+ * (26 vakalık matris NBSP girdileriyle birlikte doğruladı).
+ */
+function sayiNormalize(ham: string): string {
+  /* A) TEK virgül varsa: virgül ondalık, nokta ve boşluk GRUP ayırıcıdır.
+        Birden çok virgül bozuk girdidir — tahmin edilmez, C'ye düşer. */
+  if ((ham.match(/,/g) || []).length === 1) {
+    const [tam, kesir] = ham.split(",");
+    return `${tam.replace(/[.\s]/g, "")}.${kesir}`;
+  }
+
+  /* B) Virgül yok ama RAKAM GRUPLARI boşlukla ayrılmış: boşluk yalnızca grup
+        olabilir. Kalıp katı tutuldu ki "1 abc" gibi girdiler buraya düşmesin. */
+  if (/^[+-]?\d{1,3}(?:\s\d{3})+(?:\.\d+)?$/.test(ham)) {
+    return ham.replace(/\s/g, "");
+  }
+
+  /* C) Geri kalan her şey: ESKİ DAVRANIŞ birebir korunuyor. */
+  return ham.replace(",", ".");
+}
+
 export function parseLocaleNumber(input: string | number | undefined | null): number {
   if (typeof input === "number") return isNaN(input) ? 0 : input;
   if (!input) return 0;
-  const normalized = String(input).replace(",", ".").trim();
-  const n = parseFloat(normalized);
+
+  const n = parseFloat(sayiNormalize(String(input).trim()));
   return isNaN(n) ? 0 : n;
 }
 
@@ -32,7 +95,9 @@ export function parseLocaleNumber(input: string | number | undefined | null): nu
 export function sayiGirildiMi(ham: string | number | undefined | null): boolean {
   if (typeof ham === "number") return Number.isFinite(ham);
   if (typeof ham !== "string") return false;
-  const t = ham.replace(",", ".").trim();
+  /* Kapı, ayrıştırıcıyla AYNI normalizasyonu kullanır; ayrı ölçüt taşırsa
+     ayrışır (yukarıdaki `sayiNormalize` yorumunda ölçülmüş vaka var). */
+  const t = sayiNormalize(ham.trim());
   if (t === "") return false;
   return /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(t);
 }

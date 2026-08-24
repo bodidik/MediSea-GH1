@@ -6013,3 +6013,69 @@ serif'e ve 24px boşluğa kaymıştı.
 
 Genel kuralı değiştirmek 65 başlığın görünümünü aynı anda değiştirir —
 bu bir tasarım kararı, ölçümle tek başına verilmemeli.
+
+### Binlik ayırıcı: AYRIŞTIRICIYI düzeltmek YETMEDİ, kapı da aynı ölçüde bakmalıydı
+
+`parseLocaleNumber` yalnızca virgülü ondalık sayıyordu. Türkçede nokta BİNLİK
+ayırıcıdır ve `parseFloat` gerisini yanlış okuyordu. Canlıda ölçülen en ağır
+vaka `antikoagulan-geri-dondurme`:
+
+```
+5000  Ü heparin  ->  50 mg protamin     doğru
+5.000 Ü heparin  ->  0.1 mg protamin    500 KAT DÜŞÜK
+```
+
+Aktif kanamada verilen bir geri döndürme ajanında, uyarı olmadan.
+
+**VAKALAR EŞİT DEĞİL — yalnızca BELİRSİZ OLMAYANLAR düzeltildi.** Bu bir
+tasarım kararı, kapsam kısıtı değil:
+
+| girdi | okuma | karar |
+|---|---|---|
+| `1 200` | hiçbir dil boşluğu ondalık saymaz | **1200** — düzeltildi |
+| `1.200,5` | Türkçede tek okuma var | **1200.5** — düzeltildi |
+| `1.2345` | 3'ten fazla hane, grup olamaz | 1.2345 — zaten doğruydu |
+| `1.200` | TR'de 1200, EN'de 1.2 | **DOKUNULMADI** — sessiz tahmin yeni bir yanlış sayı sınıfı açardı |
+
+**ASIL DERS İKİNCİ ADIMDA:** düzeltme yalnızca `parseLocaleNumber`a konunca
+ölçüm `antikoagulan-geri-dondurme`de **hiçbir sonuç basılmadığını** gösterdi.
+Sebep, deponun tekrar eden "iki gerçeklik" sınıfıydı — aynı değer İKİ ayrı
+ölçütle yargılanıyordu:
+
+```
+parseLocaleNumber("3 000")  ->  3000     (düzeltildi)
+sayiGirildiMi("3 000")      ->  false    (ham dizeye KENDİ katı regex'i)
+```
+
+Sonuç, tek uygulamada aynı girdi için iki davranış: kapısı olmayan `pni`
+36.0 hesaplıyor, kapısı olan `antikoagulan` "değer girin" diyor. Çare
+normalizasyonu `sayiNormalize`a alıp ikisini de oradan beslemek.
+
+**Ayrıştırıcıyı gevşetirken kapıyı da AYNI ölçüde gevşetmezsen, düzeltme
+kullanıcıya HİÇ ulaşmaz** — üstelik sessizce, çünkü boş sonuç kusur gibi
+görünmüyor. Ölçüt: bir girdi yardımcısını değiştirdiğinde, o girdinin
+geçtiği KAPILARI da say (`sayiGirildiMi` 10 araçta).
+
+**Doğrulama üç katmanlı ve üçü de gerekliydi:**
+
+- **27 vakalık matris, İKİ fonksiyon birden** — sayı ve kapı ayrı ayrı.
+  Kapıyı ölçmeseydim ayrışma hiç görünmezdi.
+- **Eski sürüm YAN YANA sürüldü** (`git show HEAD:… > eski.ts`) ve sapan
+  vakalar listelendi: tam olarak onaylanan 5 vaka sapıyor, kalan 22'si iki
+  fonksiyonda da birebir aynı. "Davranış değişmedi" iddiası böyle ölçülür —
+  beklenen sonucu yazmak yetmez, ESKİSİYLE farkı bastır.
+- **Tarayıcıda iki araç** (`pni` 36.0 · `antikoagulan` 30 mg), her biri
+  belirsiz vaka ve çöp girdi negatif kontrolüyle.
+
+**`node --experimental-strip-types` `.tsx` SÜREMİYOR** (`ERR_UNKNOWN_FILE_EXTENSION`).
+Çare dosyayı `.ts` uzantısıyla **birebir kopyalamak** — yeniden yazılmış bir
+kopyayı değil gerçek kaynağın baytlarını sürmüş olursun. Dosyada JSX varsa
+bu yol kapalıdır.
+
+**Görünmez NBSP dize eşleştirmesini kırar.** Eski karakter sınıfı `[.\s ]`
+görünüşlüydü ama içinde gerçek bir U+00A0 taşıyordu; Edit'in `old_string`i
+hiç tutmadı ve hata "başka yerde" gibi göründü. İki ders: (1) eşleşmeyen bir
+düzenlemede baytlara bak (`od -c | grep '302 240'`), (2) satır aralığıyla
+çalışan bir yama betiği görünmez karakterden etkilenmez. Sınıf sadeleştirildi
+çünkü JS'de `\s` zaten U+00A0'yı kapsıyor — ve bu iddia matrise NBSP'li bir
+vaka konarak ölçüldü, varsayılmadı.
