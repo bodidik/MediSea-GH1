@@ -6471,3 +6471,47 @@ değeri (24) pik olarak alınıyor, ikisi birden çöpse sonuç basılmıyor.
 
 Bu araçta yön sorunu YOK: iki protokol de aynı eşiği (18 μg/dL) ve aynı birimi
 taşıyor, yani yukarıdaki ölçüt onu haklı olarak işaretlemiyor.
+
+### ÜST SINIR EKSİK — çöp girdi sınıfının öteki ucu, `sodium`da ölçüldü
+
+Belge alt sınırı ve çöp girdiyi kapatmıştı; hiç sistematik taranmayan uç
+**saçma yüksek** değerdi. Girdi SAYIDIR, kapıdan geçer, ve araç fizyolojik
+olarak imkânsız bir hastadan klinik TALİMAT üretir.
+
+Ölçüt: `parseLocaleNumber` değişkeninin kapısında alt sınır VAR ama üst sınır
+YOK. 59 araçta 184 değişken tarandı, **48 aday**. Riskli alt küme, çıktısı
+sayı değil TALİMAT olanlar — `sodium` 28 doz/hız işaretiyle listenin başında
+(infüzyon hacmi ve mL/saat basıyor).
+
+Tarayıcıda ölçüldü (45 y · 170 cm · 70 kg · Na 120):
+
+| girdi | ekranda |
+|---|---|
+| hedef Na **500** | Gerekli Hacim **39.6 L** · Δhedef +380 |
+| hedef Na **9999** | **1029.5 L** |
+| kilo **700 kg** | TBW 251.8 L · **214 mL/saat** |
+| boy **1700 cm** | TBW 204.3 L · **174 mL/saat** |
+
+Dikkat çekici olan: **YÖN kapısı zaten vardı** (hedef mevcuttan düşükse hacim
+basılmıyor — belgede kayıtlı `Math.abs` düzeltmesi). Yani eksik olan alt sınır
+ya da yön değil, yalnızca ÜST sınırdı.
+
+Sınırlar klinik eşik DEĞİL, makullük sınırı: yaş 1–120 · boy 50–250 cm ·
+kilo 1–400 kg · serum Na 90–200 · **hedef Na 100–170** (bir HEDEF sodyum
+hiçbir koşulda bu aralığın dışına konmaz).
+
+**Kapılama SOFA dersini izliyor: her değer KENDİ girdisine bağlı.** Saçma
+hedefte Δ/hacim/hız düşüyor ama hedefe bağlı OLMAYAN iki değer (TBW ve litre
+başına Na değişimi) ekranda duruyor. Paneli toptan gizlemek, hesaplanabilir
+olanı da saklardı.
+
+Doğrulama 9 + 5 vaka, sınır değerleri dahil: olağan vaka birebir aynı
+(Δ+10 · 1.0 L · 35 mL/saat), hedef tam **170 geçiyor**, **171 düşüyor**,
+çöp Na reddediliyor, hipernatremi kipinde saçma hedef (5 ve 999) ve saçma
+mevcut Na panel bastırmıyor, yön kapısı korunuyor.
+
+**ÖLÇÜTÜN BİR KAÇAĞI VAR ve yazılı:** `naN` aslında kapısızdı ama tarama onu
+işaretlemedi, çünkü dosyada `naN < hyperTargetN` karşılaştırması geçiyor ve
+ölçüt onu "üst sınır" saydı. Yani `<` görmek, MAKULLÜK sınırı olduğu anlamına
+gelmiyor — sınır sabit bir sayıyla karşılaştırılmalı. Kaçak elle bakarken
+görüldü; ölçüt aday üretir, kapsam iddiası üretmez.

@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const MODES = [
   { id: "tbw",  label: "TBW & Sıvı Bölmeleri", icon: "💧" },
@@ -75,19 +75,56 @@ export default function SodiumPage() {
   const targetN = parseLocaleNumber(targetNa);
   const hyperTargetN = parseLocaleNumber(hyperTarget);
 
-  const tbw = calcTBW(sex, ageN, heightN, weightN);
+  /**
+   * ÜST SINIR EKSİKTİ — saçma yüksek girdi KLİNİK TALİMAT üretiyordu.
+   *
+   * Kapılar yalnızca `> 0` diyordu. Belgede kayıtlı "çöp girdi" sınıfının
+   * öteki ucu: değer sayı OLDUĞU hâlde fizyolojik olarak imkânsız.
+   * Bu araç bir infüzyon HACMİ ve mL/saat HIZI bastığı için bedeli somut.
+   * Tarayıcıda ölçüldü (45 y · 170 cm · 70 kg · Na 120):
+   *
+   *   hedef Na 500      ->  "39.6 L"    · Δhedef +380
+   *   hedef Na 9999     ->  "1029.5 L"
+   *   kilo 700 kg       ->  TBW 251.8 L · 214 mL/saat
+   *   boy 1700 cm       ->  TBW 204.3 L · 174 mL/saat
+   *
+   * YÖN kapısı zaten vardı (hedef mevcuttan düşükse hacim basılmıyor) —
+   * yani eksik olan alt sınır değil ÜST sınırdı.
+   *
+   * Sınırlar KLİNİK EŞİK DEĞİL, makullük sınırı: amaç tanı koymak değil,
+   * imkânsız girdiden talimat üretmemek. Sodyumun yaşanabilir aralığı
+   * kabaca 90–200; bir HEDEF sodyum ise hiçbir koşulda 100–170 dışına
+   * konmaz. Boy/kilo sınırları deponun öteki araçlarıyla aynı aileden.
+   *
+   * `sayiGirildiMi` ayrıca çöp girdiyi eliyor — `parseLocaleNumber("abc")`
+   * 0 döndürdüğü için değere bakan bir kapı onu geçirirdi.
+   */
+  const makul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+
+  const yasMakul        = makul(age, 1, 120);
+  const boyMakul        = makul(height, 50, 250);
+  const kiloMakul       = makul(weight, 1, 400);
+  const naMakul         = makul(na, 90, 200);
+  const hedefMakul      = makul(targetNa, 100, 170);
+  const hiperHedefMakul = makul(hyperTarget, 100, 170);
+
+  const tbw = yasMakul && boyMakul && kiloMakul ? calcTBW(sex, ageN, heightN, weightN) : null;
   const icf  = tbw ? tbw * 0.67 : null;
   const ecf  = tbw ? tbw * 0.33 : null;
   const plasma = ecf ? ecf * 0.25 : null;
 
   // Adrogue-Madias
   const infusateNa = INFUSATES[infuseIdx].na;
-  const adroguePerL = tbw && naN > 0
+  const adroguePerL = tbw && naMakul
     ? (infusateNa - naN) / (tbw + 1)
     : null;
 
   const maxRate = rateMode === "chronic" ? 8 : 12; // mEq/L/day (conservative: 8 for chronic)
-  const deltaNeeded = naN > 0 && targetN > 0 ? targetN - naN : null;
+  const deltaNeeded = naMakul && hedefMakul ? targetN - naN : null;
   const litersNeeded = adroguePerL && adroguePerL !== 0 && deltaNeeded
     ? deltaNeeded / adroguePerL
     : null;
@@ -102,11 +139,11 @@ export default function SodiumPage() {
     : null;
 
   // Free water deficit (hypernatremia)
-  const fwd = tbw && naN > 0 && hyperTargetN > 0
+  const fwd = tbw && naMakul && hiperHedefMakul
     ? tbw * (naN / hyperTargetN - 1)
     : null;
   const hyperMaxRate = 10; // mEq/L/day
-  const hyperDelta = naN > 0 && hyperTargetN > 0 ? naN - hyperTargetN : null;
+  const hyperDelta = naMakul && hiperHedefMakul ? naN - hyperTargetN : null;
   const hyperHours = hyperDelta ? Math.abs(hyperDelta) / hyperMaxRate * 24 : null;
   const hyperMlPerHour = fwd && fwd > 0 && hyperHours ? (fwd * 1000) / hyperHours : null;
 
@@ -207,7 +244,7 @@ export default function SodiumPage() {
                 </div>
               ))}
             </div>
-            {naN > 0 && (
+            {naMakul && (
               <div className="border-t border-slate-100 pt-4">
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Osmolalite Tahmini</p>
                 <div className="grid grid-cols-2 gap-3">
@@ -272,7 +309,7 @@ export default function SodiumPage() {
               </div>
             </div>
 
-            {adroguePerL !== null && tbw && naN > 0 && (
+            {adroguePerL !== null && tbw && naMakul && (
               <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Adrogue-Madias Formülü Sonuçları</p>
                 <div className="grid grid-cols-2 gap-3">
@@ -358,7 +395,7 @@ export default function SodiumPage() {
               </div>
             </div>
 
-            {fwd !== null && tbw && naN > 0 && hyperTargetN > 0 && (
+            {fwd !== null && tbw && naMakul && hiperHedefMakul && (
               <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
                 <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Serbest Su Açığı Hesabı</p>
 
