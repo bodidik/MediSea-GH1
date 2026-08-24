@@ -14,9 +14,39 @@ import { SPECIALTIES } from "@/app/lib/specialties";
  * oturmadığı için kök 404'ü doğrudan alıyor ve sunucuda tam basılıyor
  * (h1 1, 16 bağlantı).
  *
- * Bölüm düzeyinde bir not-found, o segmentin sınırında çözülüyor ve
- * sunucuda üretiliyor. Yan faydası: metin artık genel "sayfa yok" değil,
- * kütüphaneye özel — kullanıcı doğrudan branş listesine dönebiliyor.
+ * Bölüm düzeyinde bir not-found, o segmentin sınırında çözülüyor. Yan
+ * faydası: metin artık genel "sayfa yok" değil, kütüphaneye özel —
+ * kullanıcı doğrudan branş listesine dönebiliyor.
+ *
+ * ─────────────────────────────────────────────────────────────────────
+ * DÜZELTME — bu yorum bir dönem "ve SUNUCUDA ÜRETİLİYOR" diyordu. ÖLÇÜLDÜ,
+ * ÜRETİMDE ÖYLE DEĞİL. Canlıda taze bir slug istendiğinde (`x-vercel-cache:
+ * MISS`) dönen 404 yanıtının `<body>` içeriği **38 bayt**:
+ *
+ *     <div hidden=""><!--$--><!--/$--></div>
+ *
+ * `<h1>` sayısı 0; not-found metni yalnızca `<script>` içindeki RSC
+ * yükünde duruyor ve hidrasyondan sonra basılıyor. Kıyas, aynı ölçümle:
+ * kök 404 (`/rastgele`) sunucuda 7877 bayt ve `<h1>` 1 basıyor.
+ *
+ * Yani bu dosya BAŞLIĞI ve METNİ düzeltti (sayfa artık kütüphaneye özel;
+ * `<title>` "Konu bulunamadı" olduğu için segmentin seçildiği kesin), ama
+ * GÖVDENİN SUNUCUDA BASILMASINI sağlamadı.
+ *
+ * SEBEP, ve neden burada çözülmüyor: iki rota da `generateStaticParams`
+ * taşıyor ama `dynamicParams` VARSAYILANDA (true) — bu bilerek seçilmiş,
+ * sonradan eklenen bir konu yeniden derleme olmadan çalışsın diye
+ * (bkz. o dosyaların kendi yorumları). Listede olmayan slug istek anında
+ * render ediliyor ve `notFound()` o akışın içinden fırlatıldığı için
+ * gövde RSC yüküyle taşınıyor. `dynamicParams = false` boş gövdeyi
+ * kapatırdı ama "yeniden derlemesiz yeni konu" davranışını kırardı —
+ * bu bir mimari ödünleşme, tek başına yapılmadı.
+ *
+ * Bedeli DAR: sayfa `noindex` olduğu için arama motoru etkilenmiyor;
+ * etkilenen, JavaScript'i yavaş ya da kapalı olan kullanıcı — kırık bir
+ * konu bağlantısına düştüğünde hidrasyona kadar boş sayfa görüyor.
+ * Kırık konu bağlantısı (yeniden adlandırma, eski yer imi, dış bağlantı)
+ * bu sitede en olası 404 kaynağı olduğu için not ediliyor.
  *
  * Kök öge <main> DEĞİL: AppShell zaten bir <main> basıyor ve ikisi birden
  * olduğunda belgede iki landmark oluşuyor (ölçüldü: main sayısı 2).
