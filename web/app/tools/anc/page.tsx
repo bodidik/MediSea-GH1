@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function AncPage() {
   const [wbc, setWbc] = React.useState("4.0");
@@ -31,12 +31,31 @@ export default function AncPage() {
    * aşabiliyor, üst sınır bilerek geniş), yüzdeler 0-100 ve toplamları
    * 100'ü aşamaz. Amaç tanı koymak değil, saçma girdiden evre üretmemek.
    */
+  /**
+   * MEŞRU SIFIR, ÇÖP GİRDİDEN AYRILMALI — ve burada ayrılmıyordu.
+   *
+   * Kapı bir dönem `yuzdeToplam > 0` diyordu. Amaç doğruydu: iki yüzde alanı
+   * da çöp olduğunda `parseLocaleNumber` ikisini de 0'a çeviriyor ve toplam
+   * 0 çıkıyor. Ama AYNI ifade AGRANÜLOSİTOZU da engelliyordu — segment %0 ve
+   * band %0 gerçek bir bulgudur, ANC 0 demektir ve bu aracın bildirmesi
+   * gereken EN AĞIR durumdur.
+   *
+   * Tarayıcıda ölçüldü (lökosit 5):
+   *
+   *   %0 + %2  ->  ANC 100 · "EVRE 3 — CİDDİ"        hesaplanıyordu
+   *   %0 + %0  ->  "–" · "Değerleri girin"           HESAPLANMIYORDU
+   *
+   * Yani araç, kendi merdiveninin son basamağını üretebileceği tek girdiyi
+   * reddediyordu. Ayrım DEĞERE bakılarak yapılamaz (çöp de 0, agranülositoz
+   * da 0); HAM DİZEYE bakılır — `sayiGirildiMi` boş alanı ve "abc"yi eler,
+   * yazılmış bir "0"ı geçirir.
+   */
   const yuzdeToplam = segsNum + bandsNum;
   const girdiGecerli =
-    Number.isFinite(wbcNum) && wbcNum > 0 && wbcNum <= 500 &&
-    Number.isFinite(segsNum) && segsNum >= 0 && segsNum <= 100 &&
-    Number.isFinite(bandsNum) && bandsNum >= 0 && bandsNum <= 100 &&
-    yuzdeToplam > 0 && yuzdeToplam <= 100;
+    sayiGirildiMi(wbc) && wbcNum > 0 && wbcNum <= 500 &&
+    sayiGirildiMi(segs) && segsNum >= 0 && segsNum <= 100 &&
+    sayiGirildiMi(bands) && bandsNum >= 0 && bandsNum <= 100 &&
+    yuzdeToplam <= 100;
 
   const getGrade = () => {
     if (!girdiGecerli)

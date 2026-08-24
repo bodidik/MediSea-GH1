@@ -3,7 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /** * SOFA (Sequential Organ Failure Assessment) Gündüz Modu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -48,23 +48,51 @@ export default function SOFAPage() {
    * gelen bir değer.
    *
    * İDRAR ÇIKIŞI özel: 0 mL meşru bir ölçüm (anüri) ve en ağır dalı hak
-   * ediyor. O yüzden idrar sayıya göre değil, alanın BOŞ olup olmadığına
-   * göre denetleniyor. Vazopressör dozu da 0 olabilir (ilaç almıyor).
+   * ediyor. O yüzden alt sınırı 0; sayının kendisine bakarak elenemez.
+   * Vazopressör dozu da 0 olabilir (ilaç almıyor).
+   *
+   * AMA "BOŞ MU" DENETİMİ TEK BAŞINA YETMİYOR — ölçüldü, çöp girdi geçiyordu:
+   *
+   *     idrar 1000   ->  RENAL +0 · toplam 0
+   *     idrar 0      ->  RENAL +3 · toplam 3    (meşru anüri, doğru)
+   *     idrar "abc"  ->  RENAL +3 · toplam 3    KUSUR
+   *
+   * "abc" boş değil, `parseLocaleNumber` onu 0'a çeviriyor ve alt sınır 0
+   * olduğu için kapı geçiriyor. Yani idrar hanesine düşen bir yazım hatası
+   * hastayı ANÜRİK ilan ediyor ve toplam SOFA'yı gerçek bir sayı gibi basıyor.
+   *
+   * Doğru ayrım HAM DİZENİN SAYI OLUP OLMADIĞI: `sayiGirildiMi` "abc"yi ve
+   * boş alanı eler, yazılmış bir "0"ı geçirir — anüri korunur.
    */
   const sayiMakul = (ham: string, alt: number, ust: number) => {
-    if (ham.trim() === "") return false;
+    if (!sayiGirildiMi(ham)) return false;
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };
 
-  const makul =
-    sayiMakul(pf, 20, 700) &&
-    sayiMakul(plt, 1, 2000) &&
-    sayiMakul(bili, 0.1, 60) &&
-    sayiMakul(map, 20, 200) &&
-    sayiMakul(gcs, 3, 15) &&
-    sayiMakul(cr, 0.1, 25) &&
-    sayiMakul(urine, 0, 10000);
+  /**
+   * GEÇERLİLİK ORGAN BAŞINA TUTULUYOR — rozetler de bir İDDİA.
+   *
+   * Ölçüldü: idrar alanı BOŞKEN toplam "–" basılıyordu ama yanındaki
+   * "3. RENAL +3" rozeti duruyordu. Yani araç aynı ekranda hem "hesaplayamam"
+   * hem "renal skor 3" diyordu; rozet, kapının varlığından habersizdi.
+   *
+   * Küresel `makul`e bağlamak da yanlış olurdu: PaO2/FiO2 alanına düşen bir
+   * yazım hatası, geçerli kreatinin ve idrardan hesaplanan RENAL rozetini de
+   * silerdi. Her rozet KENDİ alanlarına bakıyor.
+   */
+  const gecerli = {
+    resp: sayiMakul(pf, 20, 700),
+    coag: sayiMakul(plt, 1, 2000),
+    liv: sayiMakul(bili, 0.1, 60),
+    /* Vazopressör dozu yalnızca bir ajan seçiliyse okunuyor; "yok" dalında
+       doz alanı hesaba hiç girmiyor, o yüzden geçerliliği de aranmıyor. */
+    car: sayiMakul(map, 20, 200) && (pressor === "none" || sayiMakul(dose, 0, 100)),
+    cns: sayiMakul(gcs, 3, 15),
+    ren: sayiMakul(cr, 0.1, 25) && sayiMakul(urine, 0, 10000),
+  };
+
+  const makul = Object.values(gecerli).every(Boolean);
 
   // --- SKORLAMA MANTIKLARI (SENTEZ) ---
   const scoreResp = () => {
@@ -152,7 +180,7 @@ export default function SOFAPage() {
           <section className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
             <div className="flex justify-between items-center border-b border-slate-50 pb-2">
                <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-widest">1. SOLUNUM (P/F)</h2>
-               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">+{scores.resp}</span>
+               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">{gecerli.resp ? "+" + scores.resp : "–"}</span>
             </div>
             <div className="space-y-3">
               <label className="flex flex-col gap-1">
@@ -170,7 +198,7 @@ export default function SOFAPage() {
           <section className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
             <div className="flex justify-between items-center border-b border-slate-50 pb-2">
                <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-widest">2. KARDİYOVASKÜLER</h2>
-               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">+{scores.car}</span>
+               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">{gecerli.car ? "+" + scores.car : "–"}</span>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
@@ -200,7 +228,7 @@ export default function SOFAPage() {
           <section className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
             <div className="flex justify-between items-center border-b border-slate-50 pb-2">
                <h2 className="text-[10px] font-black text-blue-900 uppercase tracking-widest">3. RENAL</h2>
-               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">+{scores.ren}</span>
+               <span className="bg-blue-900 text-white text-[10px] px-3 py-1 rounded-full font-black">{gecerli.ren ? "+" + scores.ren : "–"}</span>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">

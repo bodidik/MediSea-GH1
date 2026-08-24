@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { das28Esr, das28Crp, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { das28Esr, das28Crp, parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /** * DAS28 Gündüz Modu (Sakin Deniz)
  * Romatoid Artrit Hastalık Aktivite Skoru — ESR veya CRP bazlı
@@ -33,11 +33,22 @@ export default function Das28Page() {
    * yani 0 zaten imkânsız bir değer.
    *
    * MEŞRU SIFIR: hassas/şiş eklem sayısı 0 ve hasta global değerlendirmesi
-   * 0 GERÇEK ölçümlerdir (remisyonun tanımı). O yüzden bu alanlar sayıya
-   * değil, BOŞ olup olmadıklarına göre denetleniyor.
+   * 0 GERÇEK ölçümlerdir (remisyonun tanımı). O yüzden bu alanlar yalnızca
+   * sayıya bakılarak denetlenemez.
+   *
+   * AMA "BOŞ MU" DENETİMİ DE YETMİYOR — ölçüldü, çöp girdi geçiyordu:
+   *
+   *     tjc "abc"  ->  DAS28 2.38 · "Remisyon"
+   *
+   * Çünkü "abc" boş değil, `parseLocaleNumber` onu 0'a çeviriyor ve 0 zaten
+   * [0, 28] aralığında. Yani kapı, elemek için konduğu şeyi geçiriyordu ve
+   * yine aynı tehlikeli yöne düşüyordu: yazım hatası yapan hekime remisyon.
+   *
+   * Doğru ayrım HAM DİZENİN SAYI OLUP OLMADIĞI: `sayiGirildiMi` "abc"yi ve
+   * boş alanı eler, yazılmış bir "0"ı geçirir — meşru sıfır korunur.
    */
   const doluVeAralikta = (ham: string, alt: number, ust: number) => {
-    if (ham.trim() === "") return false;
+    if (!sayiGirildiMi(ham)) return false;
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };

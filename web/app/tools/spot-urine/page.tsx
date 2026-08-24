@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const TABS = [
   { id: "protein",  label: "Protein & Albumin",   icon: "🧬" },
@@ -191,8 +191,22 @@ export default function SpotUrinePage() {
    * GLUKOZ AYRI: idrarda glukoz bulunmaması normaldir (alanın kendi örneği
    * "ör. 0"), o yüzden boş glukoz 0 sayılabilir. Ayrım DEĞERE değil, alanın
    * fizyolojik olarak sıfır OLABİLİRLİĞİNE göre yapılıyor.
+   *
+   * KAPI "BOŞ MU" DİYE SORUYORDU VE YETMİYORDU — ölçüldü, kusur AYNEN geri
+   * geliyordu, bu kez çöp girdi üzerinden:
+   *
+   *   üre "400"  -> açık  67 -> "NH₄⁺ atılımı yetersiz"
+   *   üre ""     -> hesaplanmıyor, uyarı çıkıyor            (düzeltme çalışıyor)
+   *   üre "abc"  -> açık 210 -> "artmış NH₄⁺ atılımı"       KUSUR — TERSİ
+   *
+   * "abc" boş değil, yani kapı geçiriyor; `parseLocaleNumber` onu 0'a
+   * çeviriyor ve üre terimi hesaba hiç girmiyor. Sonuç, kapının önlemek için
+   * konduğu şeyin birebir aynısı: eşik 150'nin iki yanına düşen ters yorum.
+   *
+   * `sayiGirildiMi` ham dizenin SAYI olup olmadığına bakıyor; boş alanı da
+   * "abc"yi de eler.
    */
-  const ureGirildi = uureab.trim() !== "";
+  const ureGirildi = sayiGirildiMi(uureab);
   const uOsmCalc = una2N > 0 && uk2N > 0 && ureGirildi
     ? 2 * (una2N + uk2N) + uureabN / 2.8 + uglucN / 18 : null;
   /** Açık hesaplanamıyorsa SEBEBİNİ söyle; sessiz boşluk kullanıcıyı yanıltır. */

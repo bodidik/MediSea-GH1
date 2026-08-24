@@ -6079,3 +6079,88 @@ düzenlemede baytlara bak (`od -c | grep '302 240'`), (2) satır aralığıyla
 çalışan bir yama betiği görünmez karakterden etkilenmez. Sınıf sadeleştirildi
 çünkü JS'de `\s` zaten U+00A0'yı kapsıyor — ve bu iddia matrise NBSP'li bir
 vaka konarak ölçüldü, varsayılmadı.
+
+### "BOŞ MU" DENETİMİ ÇÖPÜ ELEMEZ — meşru sıfırı korumaya çalışan kapıların ortak kusuru
+
+Belgede zaten yazılı iki kural var ve ikisi de doğru:
+
+1. Çöp girdiden klinik etiket üretme (`parseLocaleNumber` her şeyi 0'a çevirir).
+2. Meşru sıfırı ayır — SOFA'da idrar 0 anüridir, DAS28'te eklem 0 remisyondur.
+
+İkisini birden sağlamanın yolu olarak dört araçta aynı kalıp yazılmış:
+**"alan BOŞ değilse geçerlidir"**. Kalıp 1. kuralı DELİYOR ve bu ölçüldü:
+
+| araç | çöp girdi | ekranda |
+|---|---|---|
+| `sofa` | idrar `"abc"` | RENAL **+3** · toplam **3** — hasta ANÜRİK ilan ediliyor |
+| `das28` | hassas eklem `"abc"` | **2.38 · "Remisyon"** — tedaviyi hafifleten yön |
+| `spot-urine` | idrar üresi `"abc"` | osmolal açık **210** · "artmış NH₄⁺" — **doğrusunun TERSİ** (67 · "yetersiz") |
+| `anc` | segment `%0` + band `%0` | **hesaplamıyordu** — ters yön: MEŞRU agranülositozu reddediyordu |
+
+Sebep tek: `"abc"` boş DEĞİLDİR, `parseLocaleNumber` onu 0'a çevirir ve alt
+sınır 0'a izin verdiği için kapı geçirir. Yani kapı, elemek için konduğu şeyi
+geçiriyor — üstelik her seferinde kendi yorumunda "meşru sıfırı koruyorum"
+diye yazarken.
+
+**Doğru ölçüt ÜÇ DURUMLU ve `sayiGirildiMi` tam bunu veriyor:**
+
+```
+""     -> false   girilmemiş
+"abc"  -> false   sayı değil
+"0"    -> true    girilmiş ve sıfır  ← korunması gereken durum
+```
+
+`ham.trim() !== ""` yalnızca ilkini ayırıyor; ikincisini üçüncüsüyle
+karıştırıyor. Dördüncü araç (`anc`) aynı sorunun ayna hâliydi: orada kapı
+`yuzdeToplam > 0` diyerek çöpü eliyordu ama agranülositozu da eliyordu.
+
+**Tarama ölçütü ve SINIRI.** `parseLocaleNumber` kullanan 59 aracın 21'inde
+"boş mu" denetimi var, ama çoğu güvenli: alt sınır `>= 1` ya da `> 0` ise çöpün
+ürettiği 0 zaten aralıktan düşüyor. Şüpheli alt küme **alt sınırı 0'a izin
+verenler**. Kalan beş aday tek tek karara bağlandı:
+
+| aday | verdikt |
+|---|---|
+| `sofa` · `das28` · `spot-urine` | KUSURLU → `sayiGirildiMi` |
+| `fosfat-replasman` | temiz — sınırlar 20 ve >0 |
+| `unit-converter` | temiz — 21 analitin hepsinde alt sınır ≥ 0.1 |
+| `abg` | temiz — ayrı `SINIRLAR` makullük kapısı çöpü yakalıyor |
+
+`unit-converter` ve `abg` KAYNAKTAN sayılarak değil TARAYICIDA sürülerek
+kapatıldı: alt sınırları çeken regex `0.1`in başındaki sıfırı yakalayıp sahte
+aday üretti. Davranışa bakmak, sınır tablosunu ayrıştırmaya çalışmaktan hem
+ucuz hem kesin.
+
+### Rozet de bir İDDİA — SOFA'da toplam "–" derken organ rozeti "+3" diyordu
+
+Aynı turda ikinci bir ayrışma çıktı: idrar alanı BOŞKEN toplam SOFA `–`
+basıyor ama yanındaki "3. RENAL **+3**" rozeti duruyordu. Araç aynı ekranda
+hem "hesaplayamam" hem "renal skor 3" diyordu.
+
+Çare rozetleri küresel `makul`e bağlamak DEĞİL — o zaman PaO₂/FiO₂ alanına
+düşen bir yazım hatası, geçerli kreatinin ve idrardan hesaplanan RENAL
+rozetini de silerdi. Geçerlilik **organ başına** tutuluyor (`gecerli.resp`,
+`gecerli.ren`…) ve her rozet kendi alanlarına bakıyor.
+
+Yalıtım ölçüldü: PF'ye `"abc"` yazıldığında SOLUNUM `–` oluyor, RENAL `+0`
+kalıyor, toplam `–`. Kardiyovasküler dalda doz alanı yalnızca bir vazopressör
+seçiliyse hesaba giriyor, o yüzden geçerliliği de yalnızca o dalda aranıyor.
+
+**Genel kural: ekranda duran her sayı bir iddiadır ve kapının varlığından
+haberdar olmalı.** Toplamı kapılayıp parçaları kapılamamak, kullanıcıya
+kendisiyle çelişen bir ekran gösteriyor.
+
+### Ölçüm penceresini DAR tutmak sahte "AYRIŞTIRILAMADI" üretir
+
+Bu turda üç kez oldu ve üçünde de bir an aracın bozulduğu sanıldı. Sonuç
+bölgesini `(.{0,58}?)` gibi sabit bir pencereyle yakalayan ölçüt, etiket +
+açıklama 69 karakter olunca eşleşmiyor ve rapor "AYRIŞTIRILAMADI" diyor.
+
+Belgedeki "desen tahmin etme, gerçek dizeyi oku" kuralının pencere tarafı:
+önce ham metni bastır, uzunluğu GÖR, sonra deseni yaz. `.*?` ile sınırsız
+tembel eşleşme kullanmak sabit bir tavan yazmaktan daha güvenli.
+
+Aynı turda ölçüt bir kez de yanlış yeri yakaladı: `spot-urine`da "Osmolal"
+araması sonuç kartını değil SEKME ETİKETİNİ buldu (`indexOf` ilk eşleşmeyi
+verir). Sayfada aynı kelime birden çok yerde geçiyorsa çapayı benzersiz bir
+dizeye at — burada `"İdrar Osmolal Gap (UOG ≈ 2×[NH₄⁺])"` oldu.
