@@ -4295,6 +4295,47 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Güvenlik başlıkları ve çerez bayrakları ölçüldü — ikisi yerinde, beşi yok
+
+Hiç bakılmamış bir yüzey. Oturum tutan bir sağlık uygulamasında ölçülebilir.
+
+**Yerinde olan ikisi, en çok önem taşıyanlar:**
+
+| ölçüt | sonuç |
+|---|---|
+| oturum çerezi JS'ten okunabiliyor mu | **HAYIR** — `document.cookie`da `authjs`/`next-auth` yok, yani `httpOnly` ayakta |
+| HSTS | **var** — `max-age=63072000; includeSubDomains; preload` |
+
+**Yok olanlar:** `content-security-policy` · `x-frame-options` ·
+`x-content-type-options` · `referrer-policy` · `permissions-policy`.
+`next.config.js`te `headers()` bloğu hiç yok.
+
+**HİÇBİRİ ÖLÇÜLMÜŞ BİR KUSUR DEĞİL** — kırılan bir şey yok. Bu bir güvenlik
+duruşu kararı ve tek başına alınmadı. Gerekçeler:
+
+- **`x-frame-options` / `frame-ancestors`** somut tehdidi olan tek başlık:
+  giriş formu ve hesap eylemleri taşıyan bir site iframe'e gömülebiliyor
+  (clickjacking). **Kanıtı bu oturumun kendisi:** bütün ölçümler siteyi
+  iframe'e alarak yapıldı ve hiçbiri engellenmedi.
+  **AMA ÖDÜNLEŞME BURADA:** bu başlık eklenirse deponun KENDİ ölçüm yöntemi
+  kırılır — belgedeki taramaların çoğu iframe'e dayanıyor. Ekleneceğinde
+  ölçüm yolu da birlikte düşünülmeli (aynı origin için `SAMEORIGIN` yeterli
+  olabilir).
+- **`content-security-policy`** en değerlisi ama körlemesine eklenirse
+  uygulamayı kırar: premium motorlar satır içi stil kullanıyor, `next/font`
+  Google'dan çekiyor, JSON-LD satır içi script. Ölçülmeden yazılmamalı.
+- **`x-content-type-options: nosniff`** ucuz ve standart; risk düşük.
+- **`referrer-policy`**: pratik etkisi DÜŞÜK çıktı. Kaynakta üçüncü taraf
+  adres taraması yapıldı ve **canlı tek gömme** KayseriTıp slayt
+  görüntüleyicisi (`view.officeapps.live.com`), o da kurum kapısı arkasında.
+  `via.placeholder.com` alt çizgili klasörde (ölü), `youtu.be` yönetim
+  sayfasında. Üstelik modern tarayıcı varsayılanı
+  (`strict-origin-when-cross-origin`) bu vakayı zaten karşılıyor.
+
+Yani sıralama net: önce çerçeveleme kararı (ölçüm yöntemiyle birlikte),
+sonra `nosniff`, en sonda ölçülerek yazılmış bir CSP.
+
+
 ### Önbellek davranışı ölçüldü — takılı MISS yok, tek istisna doğru sebeple
 
 Belge bir kez `/tools`un her istekte MISS kaldığını ve 155 kB'lık sayfanın
