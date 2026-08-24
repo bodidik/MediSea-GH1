@@ -77,6 +77,16 @@ export default function OsmolalGapPage() {
 
   const hasCalc = naGecerli && glucGecerli && bunGecerli && etohGecerli;
 
+  /* Hangi alan eksik/makul değil — sebebi ADIYLA söylemek için. */
+  const eksikAlanlar = [
+    !naGecerli && "Na⁺",
+    !glucGecerli && "glukoz",
+    !bunGecerli && "BUN",
+    !etohGecerli && "etanol",
+  ].filter(Boolean) as string[];
+  /* Tamamen boş formda susulur; kullanıcı bir şey girdiyse sebep basılır. */
+  const girdiVar = [measured, na, glucose, bun, etoh].some((x) => x.trim() !== "");
+
   // Calculated osmolality = 2×Na + Glucose/18 + BUN/2.8
   const calcOsm   = hasCalc ? 2 * naN + glucN / 18 + bunN / 2.8 : null;
   // Ethanol contribution = ethanol(mg/dL) / 4.6
@@ -137,8 +147,24 @@ export default function OsmolalGapPage() {
                 Hesaplanan: {calcOsm.toFixed(1)} mOsm/kg
                 {etohContrib !== null && ` + Etanol ${etohContrib.toFixed(1)} = ${calcOsmFull?.toFixed(1)}`}
               </p>
-              {measN > 0 && <p className="text-[10px] font-black text-blue-900">Ölçülen: {measN} mOsm/kg</p>}
+              {measGecerli && <p className="text-[10px] font-black text-blue-900">Ölçülen: {measN} mOsm/kg</p>}
             </div>
+          )}
+          {/*
+            SESSİZ BOŞLUK YERİNE SEBEP — kendi düzeltmemin açtığı boşluk.
+            Glukoz ve BUN zorunlu yapıldıktan sonra, o alanlar eksikken panel
+            hiç çizilmiyordu: kullanıcı üç alanı doldurup HİÇBİR ŞEY görmüyor
+            ve hangi alanın beklendiğini bilmiyordu.
+
+            Aynı dosyada bu kalıbın örneği zaten vardı (`uogUreEksik`), yani
+            burada yeni bir karar değil, var olan standarda hizalanma var.
+            Ölçüt "kullanıcı bir şey girmiş mi": tamamen boş formda sessiz.
+          */}
+          {!hasCalc && girdiVar && (
+            <p className="mt-2 pt-2 border-t border-blue-200/50 text-[10px] font-bold text-blue-900/80">
+              Hesaplanamıyor — {eksikAlanlar.join(", ")} makul bir değer bekliyor.
+              Formül üçünü de zorunlu ister; yalnızca etanol opsiyoneldir.
+            </p>
           )}
         </div>
 
