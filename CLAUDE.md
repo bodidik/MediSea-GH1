@@ -4295,6 +4295,69 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Derleme UYARI veriyor ve turlardır okunmamış — ölçüldü, zararsız
+
+Turlardır derleme kapısı `✓ Compiled successfully` satırına bakılarak
+geçiliyordu. Günlüğün başında başka bir satır duruyor:
+
+```
+⚠ Compiled with warnings in 1087ms
+```
+
+Bu, `link-denetim` bulgusunun aynısı: **rapor bir şey söylüyor, kimse
+gövdesini okumuyor.** Okundu — iki uyarı bloğu var ve ikisi de aynı kaynaktan:
+
+```
+./node_modules/jose/dist/webapi/lib/deflate.js
+A Node.js API is used (CompressionStream) which is not supported in the Edge Runtime.
+  ← @auth/core/jwt.js ← @auth/core/lib/init.js
+```
+
+Üçüncü taraf: `jose`, NextAuth'un bağımlılığı. `middleware.ts` Edge
+Runtime'da çalıştığı için uyarı oradan geliyor.
+
+**ZARARSIZ OLDUĞU VARSAYILMADI, DAVRANIŞLA ÖLÇÜLDÜ.** `CompressionStream`
+yalnızca SIKIŞTIRILMIŞ JWE için gerekiyor ve NextAuth onu kullanmıyor; yol
+hiç çalışmıyor. Middleware'in eşlediği üç desenin üçü de canlıda sürüldü:
+
+| yol | indiği yer |
+|---|---|
+| `/kayseritip` · `/kayseritip/slaytlar` | `/giris?gerekli=kayseritip` |
+| `/api/kayseritip/deneme` | `/giris?gerekli=kayseritip` |
+| `/admin/content/topics` | `/giris` |
+| **negatif kontrol** — `/topics` | yönlendirilmiyor |
+
+Yani kapı çalışıyor, uyarı gerçek bir kırılmaya karşılık gelmiyor. Yine de
+günlükte durmaya devam ediyor; bağımlılık güncellenince kaybolabilir.
+
+**Kayda değer ayrım:** `/admin/*` `/giris`e SEBEP PARAMETRESİZ gidiyor,
+`/kayseritip/*` ise `?gerekli=kayseritip` ile. Yani yönetim alanına giden
+ziyaretçi neden yönlendirildiğini görmüyor. Bu bir tutarsızlık gibi duruyor
+ama bilinçli de olabilir: `/admin` diye bir alanın VARLIĞINI ve yetki
+gerektirdiğini söylemek gereksiz bilgi verir. Ölçüldü, not edildi,
+DEĞİŞTİRİLMEDİ.
+
+### Paket boyutları ölçüldü — aykırı rota yok
+
+Hiç bakılmamış bir ölçüt: ilk yük (First Load JS). Telefon verisiyle çalışan
+bir asistan için gerçek bir maliyet.
+
+215 rota tarandı. Paylaşılan taban **102 kB**; en ağır rota
+`/calisma-alanim` **123 kB**, yani tabanın yalnızca 21 kB üstünde. Aralık
+103–123 kB arasında sıkışık — **aykırı rota yok**.
+
+| rota | ilk yük |
+|---|---|
+| `/calisma-alanim` | 123 kB |
+| `/[lang]/premium` | 121 kB |
+| `/[lang]/premium/ydus/profil` | 119 kB |
+| `/profile` | 118 kB |
+| `/tools/abg` | 117 kB |
+
+Kıyas için Next.js'in kendi yönergesi 130 kB üstünü incelemeye değer sayar;
+en ağır rota bunun altında. Bu taraf bugün bir iş listesi üretmiyor.
+
+
 ### Laboratuvar girdilerinde BİRİM ilanı — dokuz araç ölçüldü, temiz
 
 Taranmamış bir güvenlik sınıfı: birimi ekranda yazmayan laboratuvar alanı.
