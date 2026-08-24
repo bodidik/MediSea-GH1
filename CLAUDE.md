@@ -4295,6 +4295,52 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### Paylaşım kartları canlıda ölçüldü — üç kırılma biçiminin üçü de kapalı
+
+Belgede paylaşım kartlarının üç sessiz kırılma biçimi kayıtlı (`params` bir
+Promise, `fs` çalışmıyor, Satori açık `flex` istiyor) ve kart bozulduğunda hata
+GÖRÜNMÜYOR. Hiç ölçülmemişti; ölçüldü.
+
+| kart | sonuç |
+|---|---|
+| site geneli `/opengraph-image` | 200 · image/png · 125 kB |
+| branş kartı | 200 · image/png · 117 kB |
+| konu kartı | 200 · image/png · 127 kB |
+
+**BAŞLIK DİZİNİ TAM VE TAZE.** Kart başlığı `content/baslik-index.json`'dan
+geliyor; anahtar tutmazsa kart slug'ı yazıyla basıyor (belgede kayıtlı kusur).
+
+| ölçüt | sonuç |
+|---|---|
+| dizin kaydı | 410 — görünür konu sayısıyla birebir |
+| dizinde olmayan görünür konu | **0** |
+| dizinde olan gizli konu | **0** |
+| dizinde olup dosyası olmayan | **0** |
+
+Eksik görünen 46 kaydın 46'sı GİZLİ konu, yani beklenen davranış.
+
+**Bayat mı diye üreteç çalıştırıldı: `baslik-index.cjs` birebir aynı içeriği
+yazdı (git farkı yok).** Betik CI'da çalışmıyor ama bugün taze.
+
+**Belgede adı geçen beş zor slug'ın hepsi dizinde** ve ikisi uçtan uca
+sürüldü — sayfa 200, `og:title` GERÇEK başlık (slug değil), kart 200 PNG:
+
+| slug | og:title |
+|---|---|
+| `nefroloji/FGF-23 vs PTH` (BOŞLUK taşıyor) | "FGF-23 ve PTH Arasındaki Moleküler Çapraz Konuşma" |
+| `gastroenteroloji/ascit-sıvısı` (Türkçe karakter) | "Sirotik Asit Patofizyolojisi…" |
+
+**ÖLÇÜM TUZAĞI — kart adresini TAHMİN ETME.** İlk koşum `/…/opengraph-image`
+adresini denedi ve **404** aldı; bir an "konu kartları kırık" sanıldı. Next
+metadata rotalarına HASH ekliyor: gerçek adres
+`/…/opengraph-image-8mlh9?f77e9a1e81bc4ad2`. Doğru yol sayfanın kendi
+`<meta property="og:image">` etiketini okumak — ilan edilen adresi çek,
+uydurma.
+
+Bu, belgedeki "desen tahmin etme, gerçek dizeyi oku" kuralının adres
+tarafındaki hâli.
+
+
 ### Premium branş listeleri ölçüldü — ve "kusur" baştan sona ÖLÇÜM ARTEFAKTIYDI
 
 Branş listeleri ile gerçek konu dosyaları karşılaştırıldı. Belgede kayıtlı
