@@ -4295,6 +4295,59 @@ Rota silindi: `/zz-olcum-ydus` 404, ana sayfa ve iki premium sayfası 200,
 derleme hatası izi yok.
 
 
+### ⚠ TÜRKÇE BİNLİK AYIRICI SESSİZCE YANLIŞ DOZ ÜRETİYOR — karar bekliyor
+
+**Bu, ölçülmüş ve kullanıcıya ulaşan bir kusur. Hiçbir yerde kayıtlı değil.**
+
+Türkçede **nokta binlik, virgül ondalık** ayırıcıdır. `parseLocaleNumber`
+ise yalnızca virgülü ondalık sayıyor:
+
+```js
+const normalized = String(input).replace(",", ".").trim();
+const n = parseFloat(normalized);
+```
+
+`parseFloat("1.200")` → **1.2** · `parseFloat("1 200")` → **1**
+(ayrıca `replace(",", ".")` yalnızca İLK virgülü değiştiriyor).
+
+**Canlıda ölçüldü — en ağır vaka:**
+
+| araç | girilen | ekranda |
+|---|---|---|
+| `antikoagulan-geri-dondurme` | `5000` Ü heparin | **50 mg protamin** ✓ |
+| aynı araç | `5.000` Ü heparin | **0.1 mg protamin** ✗ |
+
+**500 kat düşük doz** — aktif kanamada verilen bir geri döndürme ajanında,
+hiçbir uyarı olmadan, kendinden emin bir sayıyla. `pni`de de ölçüldü:
+lenfosit `1200` → PNI 36.0, `1.200` → **30.0**.
+
+**KAPSAM:** dört haneli örnek değer taşıyan, yani kullanıcının binlik
+ayırıcı yazmasının OLASI olduğu beş araç var — ikisi infüzyon:
+`antikoagulan-geri-dondurme` (ör. 5000) · `conut` (1800) ·
+`kalsiyum-infuzyon` (1000) · `pni` (1500) · `sedasyon-infuzyon` (1000).
+
+**DEĞİŞTİRİLMEDİ — sebebi ve analizi:** `parseLocaleNumber` 42 klinik
+hesaplayıcının paylaştığı sözleşme; belgede zaten "42 aracı birden
+değiştirmek riskli" diye kayıtlı. Ama vakalar EŞİT DEĞİL ve ayrım karar için
+gerekli:
+
+| girdi | durum | bugün | doğrusu |
+|---|---|---|---|
+| `1 200` (boşluk gruplama) | **BELİRSİZ DEĞİL** — hiçbir dil boşluğu ondalık saymaz | 1 | 1200 |
+| `1.200,5` (nokta grup + virgül ondalık) | **BELİRSİZ DEĞİL** — Türkçe | 1.2 | 1200.5 |
+| `1.2345` (4+ hane) | **BELİRSİZ DEĞİL** — hiçbir dil 4'lü grup kullanmaz | 1.2345 | 1.2345 ✓ |
+| `1.200` (nokta + tam 3 hane, başka işaret yok) | **GERÇEKTEN BELİRSİZ** — TR'de 1200, EN'de 1.2 | 1.2 | ? |
+
+İlk üçü düzeltilebilir ve yeni bir yanlış sayı sınıfı ÜRETMEZ. Dördüncüsü
+bir güvenlik kararı: sessizce tahmin etmek mi, yoksa sayıyı hiç basmamak mı?
+İkincisi de bedava değil — belgede "0 NaN'dan DAHA tehlikeli" diye kayıtlı,
+yani 0'a düşürmek başka bir kusur sınıfı açabilir ve araç araç doğrulama
+ister.
+
+**Bu yüzden tek turda tek başına değiştirilmedi.** Ölçüm, kapsam ve vaka
+ayrımı burada; kararı içerik/güvenlik sahibi versin.
+
+
 ### Güvenlik başlıkları ve çerez bayrakları ölçüldü — ikisi yerinde, beşi yok
 
 Hiç bakılmamış bir yüzey. Oturum tutan bir sağlık uygulamasında ölçülebilir.
