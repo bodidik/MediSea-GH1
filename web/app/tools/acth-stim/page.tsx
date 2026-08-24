@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const DOSE_OPTS = [
   { id: "standard", label: "Standart Doz", desc: "250 μg ACTH (cosyntropin) IV/IM", cutoff: 18, note: "Klasik protokol. Primer ve uzun süreli sekonder adrenal yetmezliği saptamada güvenilir." },
@@ -19,19 +19,47 @@ export default function ActhStimPage() {
   const b  = parseLocaleNumber(baseline);
   const p30 = parseLocaleNumber(peak30);
   const p60 = parseLocaleNumber(peak60);
-  const peak = Math.max(p30, p60);
-  const hasResult = peak > 0 || b > 0;
+  /**
+   * MEŞRU SIFIR ELENİYORDU — kardeş araç `gh-test` ile aynı kusur.
+   *
+   * Kapı `peak === 0` dalını açıkça dışlıyordu. Oysa pik kortizol 0, ACTH'ye
+   * HİÇ yanıt olmaması demek: bu testin üretebileceği EN AĞIR bulgu (ağır
+   * primer adrenal yetmezlik). Tarayıcıda ölçüldü — pik 14 için "YETERSİZ
+   * ADRENAL YANIT" basılırken, bazal 2 + pik 0 olan hastada hiçbir şey
+   * basılmıyordu.
+   *
+   * Bazal değer için de aynısı geçerliydi: `delta` hesabı `b > 0` istiyordu,
+   * yani bazali sıfır olan hastada artış farkı hiç gösterilmiyordu.
+   *
+   * ÇÖP GİRDİDEN AYIRMA: `parseLocaleNumber("abc")` de 0 döndürüyor, yani
+   * ayrım DEĞERE bakılarak yapılamaz. `sayiGirildiMi` ham dizeye bakıyor —
+   * boş alanı ve "abc"yi eler, yazılmış "0"ı geçirir.
+   *
+   * `Math.max` da yalnızca GEÇERLİ girilmiş değerler üzerinden alınıyor;
+   * aksi hâlde bir alana yazılan çöp 0'a çevrilip ötekiyle yarışıyordu.
+   */
+  const SINIR = (n: number) => n >= 0 && n <= 200;   // makullük sınırı (μg/dL)
+  const p30Girildi = sayiGirildiMi(peak30) && SINIR(p30);
+  const p60Girildi = sayiGirildiMi(peak60) && SINIR(p60);
+  const bGirildi   = sayiGirildiMi(baseline) && SINIR(b);
+
+  const pikDegerler = [p30Girildi ? p30 : null, p60Girildi ? p60 : null]
+    .filter((x): x is number => x !== null);
+  const pikGirildi = pikDegerler.length > 0;
+  const peak = pikGirildi ? Math.max(...pikDegerler) : 0;
+
+  const hasResult = pikGirildi;
   const adequate  = peak >= proto.cutoff;
-  const delta = peak > 0 && b > 0 ? Math.round((peak - b) * 10) / 10 : null;
+  const delta = pikGirildi && bGirildi ? Math.round((peak - b) * 10) / 10 : null;
 
   const getInterp = () => {
-    if (!hasResult || peak === 0) return null;
+    if (!hasResult) return null;
     if (adequate) return {
       label: "YETERLİ ADRENAL YANIT",
       sub: `Pik kortizol ≥ ${proto.cutoff} μg/dL — Primer adrenal yetmezlik dışlanır`,
       color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",
     };
-    if (b >= proto.cutoff) return {
+    if (bGirildi && b >= proto.cutoff) return {
       label: "BAZAL YETERLİ — PİK DÜŞÜK",
       sub: "Kronik adrenal yetmezlik dışlanır, ancak akut stres kapasitesi değerlendirilmelidir",
       color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200",
@@ -88,7 +116,7 @@ export default function ActhStimPage() {
               </label>
             ))}
           </div>
-          {peak > 0 && (
+          {pikGirildi && (
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="bg-blue-900 rounded-2xl p-4 text-center">
                 <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">PİK KORTİZOL</div>

@@ -6417,3 +6417,57 @@ reddediliyor; tarama kipinde dokunulmayan değerler birebir aynı.
 **Ders: bir eşiği birden çok protokole/kipe paylaştırıyorsan, KARŞILAŞTIRMANIN
 YÖNÜNÜ de kipe bağla.** Ölçülen büyüklük değiştiğinde (kortizol → yüzde) eşik
 sayısı taşınabilir ama yön taşınamaz.
+
+### `dst` kusuru bir ÖLÇÜT doğurdu: aynı dizide FARKLI BİRİM + TEK yön
+
+HDDST'de yönün ters olmasının kaynaktan görülebilir bir imzası var: kip
+dizisindeki nesneler **farklı birim** ilan ediyor ama eşik karşılaştırması
+tek. `dst`de iki protokol `"μg/dL"`, biri `"% süpresyon"` diyordu.
+
+Ölçüt tarihsel kontrolle sınandı ve birebir çalışıyor:
+
+| ağaç | sonuç |
+|---|---|
+| düzeltme ÖNCESİ `dst` (`3805707`) | birimler `"μg/dL"` · `"% süpresyon"`, yön `<` — **TEK YÖN: ŞÜPHELİ** |
+| güncel depo | aynı araç, yön `>=` ve `<` — işaretlenmiyor |
+
+**BETİĞE ALINMADI ve sebebi kapsam dürüstlüğü:** ölçüt yalnızca `cutoff`/`esik`
+alanı taşıyan araçları görebiliyor ve depoda bunlardan **5 tane** var
+(`acth-stim`, `dst`, `fosfat-replasman`, `gh-test`, `homa-ir`). 131 aracın
+5'ini tarayan bir denetimi "sınıf kapalı" gibi raporlamak, belgede tekrar
+tekrar avlanan yanlış güven biçiminin ta kendisi olurdu. Ölçüt burada yazılı;
+yeni bir çok-kipli araç eklenirse elle sürülebilir:
+
+```
+aynı nesne dizisinde eşik alanı VAR + birim alanı VAR + birimler FARKLI
+  ve eşiği kullanan karşılaştırmada TEK yön varsa  ->  aday
+```
+
+### `acth-stim` — kardeş araç kuralı yine işledi
+
+`gh-test` düzeltilirken sorulan soru ("aynı işi yapan başka araç var mı")
+`acth-stim`i getirdi: aynı aileden bir endokrin stimülasyon testi. Aynı kusur
+oradaydı ve kapı bu kez AÇIKÇA yazılmıştı:
+
+```
+if (!hasResult || peak === 0) return null;
+```
+
+Pik kortizol 0, ACTH'ye hiç yanıt olmaması demek — testin üretebileceği en
+ağır bulgu. Ölçüldü: pik 14 için "YETERSİZ ADRENAL YANIT" basılırken bazal 2 +
+pik 0 olan hastada hiçbir şey basılmıyordu.
+
+İki yerde daha aynı şekil vardı ve ikisi de düzeltildi:
+
+- `delta` hesabı `b > 0` istiyordu → bazali sıfır olan hastada artış farkı
+  hiç gösterilmiyordu.
+- Pik/Δ kartı `{peak > 0 && …}` ile kapılıydı → meşru sıfırda yorum çıkıp
+  kart çıkmayacaktı (düzeltmenin kendi içinde açacağı tutarsızlık).
+
+**`Math.max` da yalnızca GEÇERLİ girilmiş değerler üzerinden alınıyor.** Eskiden
+bir alana yazılan çöp 0'a çevrilip ötekiyle yarışıyordu; artık geçersiz alan
+yarışa hiç girmiyor. Ölçüldü: 30. dakikaya "abc" yazıldığında 60. dakikanın
+değeri (24) pik olarak alınıyor, ikisi birden çöpse sonuç basılmıyor.
+
+Bu araçta yön sorunu YOK: iki protokol de aynı eşiği (18 μg/dL) ve aynı birimi
+taşıyor, yani yukarıdaki ölçüt onu haklı olarak işaretlemiyor.
