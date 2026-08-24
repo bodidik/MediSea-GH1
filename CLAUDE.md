@@ -6659,3 +6659,60 @@ Ayrıca tasarım kararı olarak not: araç beş ACR kategorisinin HEPSİ seçile
 kadar toplamı ve kararı hiç basmıyor. Dördü seçiliyken yalnızca kategori
 puanları görünüyor. Bu, "eksik veriyle hüküm verme" ilkesinin doğru
 uygulanmış hâli.
+
+### YÖN DENETİMİ EKSİKTİ — `ktv` post > pre girildiğinde EKSİ Kt/V basıyordu
+
+Üst sınır turunun beşincisi. Burada eksik olan yalnızca sınır değil, girdiler
+arası MANTIKSAL İLİŞKİ: diyaliz üreyi DÜŞÜRÜR, yani post-diyaliz BUN pre'den
+yüksek olamaz. İki alanın yer değiştirmesi çok olası bir veri girişi hatası ve
+araç onu sessizce hesaplıyordu.
+
+Ölçüldü (pre 20 · post 60 — alanlar ters):
+
+```
+spKt/V -1.27   ·   eKt/V -1.05   ·   URR -200%   ·   "YETERSİZ DİYALİZ"
+```
+
+Eksi Kt/V ve eksi URR fiziksel olarak imkânsız. Ekran kendi saçmalığını
+gösteriyordu ama yine de bir HÜKÜM basıyordu — belgedeki "eksi bir MELD
+mümkün değildir" sınıfının aynısı.
+
+**İKİNCİ KUSUR — hesaplanamayan değer "YETERSİZ" oluyordu.** Hüküm
+`spOk && eOk && urrOk ? "SAĞLANDI" : "YETERSİZ DİYALİZ"` biçimindeydi; herhangi
+bir indeks `null` olduğunda üçlü işleç doğrudan olumsuz dala düşüyordu.
+Ölçüldü: 9999 dakika girildiğinde `R − 0.008×t` eksiye düşüyor, `ln` tanımsız
+oluyor, Kt/V "—" çıkıyor ve araç yine "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN
+GEÇİRİLMELİ" diyordu. `kdigo-aki`deki "AKI Kriteri Yok" ile birebir aynı
+sınıf: **değerlendirememek ile olumsuz değerlendirmek AYNI ŞEY DEĞİL.**
+
+**ÜÇÜNCÜ KUSUR — "DEĞERLENDİRİLEMEDİ" dalı ÖLÜ KODDU.** Düzeltmeyi yazdıktan
+sonra ölçüm onu hiç göstermedi: panel `{hasAll && spKtV !== null && (…)}` ile
+sarılıydı, yani geçersiz değerlerde hiç çizilmiyordu. Kullanıcı beş alanı da
+doldurup HİÇBİR ŞEY görmüyordu — sessiz boşluk.
+
+Ölçüt "kullanıcı sonuç bekliyor mu" olarak değiştirildi: beş alan da doluysa
+panel çiziliyor ve hesaplanamıyorsa NEDENİ yazıyor. İki neden ayrı ayrı
+üretiliyor ve ölçümle ayırt edildi:
+
+| girdi | ekranda |
+|---|---|
+| pre 20 · post 60 | "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — İki alan yer değiştirmiş olabilir." |
+| süre 9999 | "Bir değer makul aralığın dışında: BUN 2–300 · seans 30–600 dk · UF 0–10 L · ağırlık 20–300 kg." |
+
+Boş formda panel hâlâ hiç çıkmıyor (belgedeki "girdisiz de aç" kuralı).
+
+**URR kendi geçerliliğine bağlandı** — SOFA'daki organ başına geçerlilik
+dersi: URR yalnızca pre/post'a bağlı, süre bozuksa bile gösterilebilir.
+Ölçüldü: saçma sürede spKt/V "—" ama URR 67 duruyor.
+
+Negatif kontrol iki gerçek seansla: 60/20/240/2/70 → spKt/V 1.28 · URR 67 ·
+"SAĞLANDI" (değişmedi) ve 85/22/240/2.5/70 → 1.59 · 74 (elle doğrulandı:
+R = 0.2588, −ln(0.2268) + 3.0941×0.035714 = 1.484 + 0.111 = 1.59).
+
+### `homa-ir` ölçüldü — TEMİZ, verdikt yazıldı
+
+Aynı turda `homa-ir` de sürüldü. Çöp ve boş girdide "–" basıyor, yani yanlış
+güven YOK. Tek aykırılık saçma girdide (9999/9999) **246864.2** gibi bir sayı
+basması; yön alarma doğru, sayı gözle tartışmasız saçma ve araç talimat
+üretmiyor. Sınır eklemek kozmetik olurdu — ölçüldü, karara bağlandı,
+DEĞİŞTİRİLMEDİ.

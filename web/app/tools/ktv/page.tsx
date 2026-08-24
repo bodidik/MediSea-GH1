@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /**
  * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
@@ -33,7 +33,41 @@ export default function KtvPage() {
   const ufL  = parseLocaleNumber(uf);
   const wt   = parseLocaleNumber(postWt);
 
-  const hasAll = pre > 0 && post > 0 && t > 0 && ufL >= 0 && wt > 0;
+  /**
+   * İKİ KUSUR: yön denetimi yoktu ve makullük sınırı yoktu.
+   *
+   * 1) POST < PRE ŞART. Diyaliz üreyi DÜŞÜRÜR; post-diyaliz BUN pre'den
+   *    yüksek olamaz. İki alanın yer değiştirmesi çok olası bir veri girişi
+   *    hatası ve araç onu sessizce hesaplıyordu. Ölçüldü (pre 20 · post 60):
+   *
+   *      spKt/V -1.27 · eKt/V -1.05 · URR -200%
+   *
+   *    Eksi Kt/V ve eksi URR fiziksel olarak imkânsız; ekran kendi
+   *    saçmalığını gösteriyor ama yine de "YETERSİZ DİYALİZ" hükmü basıyordu.
+   *    Belgedeki "eksi bir MELD mümkün değildir" sınıfının aynısı.
+   *
+   * 2) Makullük sınırı: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L ·
+   *    ağırlık 20–300 kg. Ölçüldü — 9999 dakika girildiğinde `R − 0.008×t`
+   *    eksiye düşüyor, `ln` tanımsız oluyor ve Kt/V "—" çıkıyordu.
+   *
+   * `sayiGirildiMi` ayrıca çöp girdiyi eliyor; boş alan zaten eleniyordu.
+   */
+  const makul = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+
+  const preOk  = makul(preBun, 2, 300);
+  const postOk = makul(postBun, 2, 300);
+  const tOk    = makul(time, 30, 600);
+  const ufOk   = makul(uf, 0, 10);
+  const wtOk   = makul(postWt, 20, 300);
+  /* Yön: diyaliz üreyi düşürür. Eşitlik de kabul edilmiyor — hiç temizlik
+     olmaması ölçüm hatasına işaret eder ve `ln(0)` tanımsızdır. */
+  const yonDogru = preOk && postOk && post < pre;
+
+  const hasAll = yonDogru && tOk && ufOk && wtOk;
   const tHours = t / 60;
 
   // Daugirdas II (Single Pool)
@@ -47,12 +81,31 @@ export default function KtvPage() {
     ? spKtV - (0.6 * spKtV / tHours) + 0.03
     : null;
 
-  // URR
-  const urr = R !== null ? (1 - R) * 100 : null;
+  /* URR yalnızca pre/post'a bağlı — süre, UF ve ağırlıktan bağımsız.
+     O yüzden kendi geçerliliğine bakıyor (bkz. SOFA'daki organ başına
+     geçerlilik dersi): süre alanı bozuksa URR yine de gösterilebilir. */
+  const urr = yonDogru ? (1 - post / pre) * 100 : null;
 
   const spOk  = spKtV !== null && spKtV >= 1.2;
   const eOk   = eKtV  !== null && eKtV  >= 1.0;
   const urrOk = urr   !== null && urr   >= 65;
+
+  /**
+   * "YETERSİZ DİYALİZ" bir İDDİA — hesaplanamayan değer onu üretmemeli.
+   *
+   * Eski hüküm `spOk && eOk && urrOk ? "SAĞLANDI" : "YETERSİZ"` idi; herhangi
+   * bir indeks `null` olduğunda üçlü işleç doğrudan "YETERSİZ DİYALİZ —
+   * PROTOKOL GÖZDEN GEÇİRİLMELİ" dalına düşüyordu. Ölçüldü: 9999 dakika
+   * girildiğinde Kt/V "—" çıkıyor ama araç yine de yetersizlik ilan ediyordu.
+   * `kdigo-aki`deki "AKI Kriteri Yok" ile aynı sınıf: değerlendirememek ile
+   * olumsuz değerlendirmek AYNI ŞEY DEĞİL.
+   */
+  const degerlendirilebilir = spKtV !== null && eKtV !== null && urr !== null;
+  const yeterli = degerlendirilebilir && spOk && eOk && urrOk;
+
+  /* Sonuç panelinin çizilme ölçütü: kullanıcı beş alanı da doldurmuş, yani
+     bir cevap BEKLİYOR. Boş formda panel hiç görünmüyor. */
+  const tumAlanlarDolu = [preBun, postBun, time, uf, postWt].every((x) => x.trim() !== "");
 
 
   const ResultCard = ({ label, value, target, unit, ok }: { label: string; value: number | null; target: string; unit: string; ok: boolean | null }) => (
@@ -124,13 +177,30 @@ export default function KtvPage() {
           </div>
         </div>
 
-        {hasAll && spKtV !== null && (
-          <div className={`p-6 rounded-[2rem] border-2 border-dashed ${spOk && eOk && urrOk ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
+        {/*
+          SESSİZ BOŞLUK YERİNE SEBEP. Panel bir dönem `hasAll && spKtV !== null`
+          ile sarılıydı; değerler geçersiz olduğunda hiç çizilmiyordu ve
+          kullanıcı BEŞ ALANI DA DOLDURMUŞ olmasına rağmen hiçbir şey
+          görmüyordu — "DEĞERLENDİRİLEMEDİ" dalı da fiilen ölü koddu.
+
+          Şimdi ölçüt "kullanıcı sonuç bekliyor mu": beş alan da doluysa panel
+          çiziliyor ve hesaplanamıyorsa NEDENİ yazıyor. Boş formda hâlâ hiçbir
+          şey basılmıyor (bkz. belgedeki "girdisiz de aç" kuralı).
+        */}
+        {tumAlanlarDolu && (
+          <div className={`p-6 rounded-[2rem] border-2 border-dashed ${!degerlendirilebilir ? 'bg-slate-50 border-slate-200' : yeterli ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ</div>
-            <p className={`text-xl font-black italic tracking-tight ${spOk && eOk && urrOk ? 'text-emerald-700' : 'text-rose-700'}`}>
-              {spOk && eOk && urrOk ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
+            <p className={`text-xl font-black italic tracking-tight ${!degerlendirilebilir ? 'text-slate-600' : yeterli ? 'text-emerald-700' : 'text-rose-700'}`}>
+              {!degerlendirilebilir ? "DEĞERLENDİRİLEMEDİ — değerleri kontrol edin" : yeterli ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
             </p>
-            {!(spOk && eOk && urrOk) && (
+            {!degerlendirilebilir && (
+              <p className="mt-2 text-[11px] font-bold text-slate-600">
+                {preOk && postOk && post >= pre
+                  ? "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — diyaliz üreyi azaltır. İki alan yer değiştirmiş olabilir."
+                  : "Bir değer makul aralığın dışında: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L · ağırlık 20–300 kg."}
+              </p>
+            )}
+            {degerlendirilebilir && !yeterli && (
               <div className="mt-3 space-y-1 text-[11px] font-bold text-rose-700">
                 {!spOk  && <p>• spKt/V {spKtV.toFixed(2)} &lt; 1.2 — seans süresini veya kan akımını artırın</p>}
                 {!urrOk && urr !== null && <p>• URR %{urr.toFixed(0)} &lt; 65 — BUN azalması yetersiz</p>}
