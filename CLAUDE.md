@@ -9415,3 +9415,60 @@ alınarak hazırlanmış bir eğitim şablonudur."*
 **Böylece belgede hiç geçmeyen altı aracın altısı da karara bağlandı:**
 `anaphylaxis` · `canadian-ct` · `cam-icu` düzeltildi; `mmrc` · `pps` `null`
 başlıyor (kapı doğru); `endocarditis` ölçüldü ve gerekçeyle bırakıldı.
+
+### Kapsam boşluğunun ARİTMETİK tarafı — dört araç yayımlanmış tanımıyla karşılaştırıldı
+
+Geçen tur belgede hiç geçmeyen altı aracın **kapıları** ölçülmüştü; aritmetiği
+hiç sürülmemişti. Bu tur o eksik kapatıldı.
+
+**`endocarditis` (modifiye Duke) — altı sınır vakası, altısı da birebir:**
+
+| girdi | ekranda | yayımlanmış |
+|---|---|---|
+| 2 majör | KESİN | Definite (2 majör) ✓ |
+| 1 majör + 3 minör | KESİN | Definite ✓ |
+| 5 minör | KESİN | Definite ✓ |
+| 1 majör + 2 minör | OLASI | Possible (1 majör + 1 minör) ✓ |
+| 3 minör | OLASI | Possible ✓ |
+| 2 minör | ZAYIF (Rejected) | Rejected ✓ |
+
+Ölçüt sayıları da doğru: **2 majör · 5 minör.**
+
+**`mmrc`** — beş derece (0–4) ve açıklamaları yayımlanmış mMRC ile birebir
+(0: yalnızca ağır egzersiz · 1: hızlı yürüme/hafif yokuş · 2: yaşıtlarından
+yavaş, düz zeminde ~15 dk · 3: ~100 m sonra durma · 4: evden çıkamama).
+
+**`pps`** — 11 seviye (100 → 0, %10 adımlarla) ve beş standart boyut
+(mobilizasyon · aktivite · öz bakım · alım · bilinç). Bantlar ≥70 BAĞIMSIZ ·
+≥40 BAĞIMLI · ≥10 TERMINAL · 0 EXITUS.
+
+#### `endocarditis`te ÖLÜ ALAN — ve bu kez enstrümanda OLMAYAN bir kavramı ilan ediyordu
+
+Ölçüt tarandığında `weight` alanı göründü (majörde 3, minörde 1) ve onu okuyan
+tek yer bulundu:
+
+```
+const score = CRITERIA.reduce((sum, c) => sum + (sel[c.key] ? c.weight : 0), 0);
+```
+
+**`score` HİÇBİR YERDE okunmuyordu** — yani `weight` yalnızca ölü bir değeri
+besliyordu. `steroid-dose`un `gluco` alanıyla aynı sınıf, ama burada bir
+katman daha kötü: **modifiye Duke'ta ağırlıklı skor YOKTUR.** Tanı yalnızca
+majör/minör SAYIMIYLA konur. Alan, enstrümanda bulunmayan bir kavramı varmış
+gibi gösteriyordu — bir sonraki okuyucu "demek ki ağırlıklı bir Duke skoru
+var" diye düşünebilir.
+
+İkisi de kaldırıldı. **Doğrulama iki yönlü** (belgedeki kural: çıktının aynı
+kaldığını değil, KOPYANIN kaybolduğunu ölç):
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `weight` taşıyan kayıt | 7 | **0** |
+| `score` hesabı | 1 | **0** |
+| kaynakta kalan `weight` geçişi | 8 | **1** (yalnızca gerekçe yorumu) |
+| altı sınır vakasının çıktısı | — | **altısı da birebir aynı** |
+
+**Aktarılabilir kural, `steroid-dose` dersinin bir adım ötesi:** ölü bir alan
+yalnızca yanıltıcı değil, bazen **enstrümanın kendisinde bulunmayan bir
+kavramı** kaynağa yazıyor. Bir hesaplayıcıda ağırlık/katsayı alanı görürsen,
+yayımlanmış tanımda o kavramın gerçekten var olup olmadığını da sor.

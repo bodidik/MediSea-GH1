@@ -8,19 +8,27 @@ import ToolTopNav from "@/app/tools/components/ToolTopNav";
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
  */
 
-type Criterion = { key: string; label: string; weight: number; group: "major" | "minor" };
+/**
+ * `weight` alani KALDIRILDI (majorde 3, minorde 1 idi) ve onu okuyan tek yer
+ * olan `score` de oyle: `const score = CRITERIA.reduce(...)` hesaplaniyor ama
+ * HICBIR YERDE okunmuyordu. steroid-dose'un `gluco` alaniyla ayni sinif --
+ * ama burada daha yaniltici, cunku MODIFIYE DUKE'TA AGIRLIKLI SKOR YOKTUR:
+ * tani yalnizca majör/minör SAYIMIYLA konur. Alan, enstrumanda bulunmayan bir
+ * kavrami varmis gibi gosteriyordu.
+ */
+type Criterion = { key: string; label: string; group: "major" | "minor" };
 
 const CRITERIA: Criterion[] = [
   // Major Kriterler
-  { key: "blood_culture", label: "Tipik mikrobiyoloji ile kan kültürü pozitifliği", weight: 3, group: "major" },
-  { key: "echo_find", label: "Eko: Vejetasyon, abses veya yeni valvüler regürjitasyon", weight: 3, group: "major" },
+  { key: "blood_culture", label: "Tipik mikrobiyoloji ile kan kültürü pozitifliği", group: "major" },
+  { key: "echo_find", label: "Eko: Vejetasyon, abses veya yeni valvüler regürjitasyon", group: "major" },
 
   // Minor Kriterler
-  { key: "predispose", label: "Predispozisyon (kalp hastalığı veya IV ilaç kullanımı)", weight: 1, group: "minor" },
-  { key: "fever", label: "Ateş ≥ 38.0°C", weight: 1, group: "minor" },
-  { key: "vascular", label: "Vasküler bulgular (emboli, Janeway, konjonktival kanama)", weight: 1, group: "minor" },
-  { key: "immunologic", label: "İmmünolojik bulgular (GN, Osler, RF, Roth lekeleri)", weight: 1, group: "minor" },
-  { key: "micro_minor", label: "Majör kriter dışı mikrobiyolojik kanıtlar", weight: 1, group: "minor" },
+  { key: "predispose", label: "Predispozisyon (kalp hastalığı veya IV ilaç kullanımı)", group: "minor" },
+  { key: "fever", label: "Ateş ≥ 38.0°C", group: "minor" },
+  { key: "vascular", label: "Vasküler bulgular (emboli, Janeway, konjonktival kanama)", group: "minor" },
+  { key: "immunologic", label: "İmmünolojik bulgular (GN, Osler, RF, Roth lekeleri)", group: "minor" },
+  { key: "micro_minor", label: "Majör kriter dışı mikrobiyolojik kanıtlar", group: "minor" },
 ];
 
 export default function EndocarditisToolPage() {
@@ -32,7 +40,6 @@ export default function EndocarditisToolPage() {
 
   const majorCount = CRITERIA.filter((c) => c.group === "major" && sel[c.key]).length;
   const minorCount = CRITERIA.filter((c) => c.group === "minor" && sel[c.key]).length;
-  const score = CRITERIA.reduce((sum, c) => sum + (sel[c.key] ? c.weight : 0), 0);
 
   // Tanı Yorumlama Algoritması - Gündüz Modu Renkleri
   let interp = "—";
