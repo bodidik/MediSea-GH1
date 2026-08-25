@@ -10052,3 +10052,51 @@ deliyor.
 (regex 44 karakterde kesiyordu) ve bir an kusur sanıldı. Belgedeki *"ekrana
 basmak için kırptığın değeri ölçüme GERİ VERME"* kuralının ilan tarafındaki
 hâli — kırpılmış bir ilan, ilanın kendisi değildir.
+
+### Konsol/hidrasyon gerileme kontrolü — koşullu render'ı en çok değişen beş araç temiz
+
+Bu oturumda koşullu render mantığı yoğun biçimde değişti: `glim`in beş
+seçicisi denetimliye çevrildi, `berlin-ards` ve `gout-acr`ın hüküm kapıları
+yeniden yazıldı, üç araca erken hüküm dalı eklendi. Bu tür değişiklikler
+**hidrasyon uyuşmazlığı** üretebilir ve o yalnızca KONSOLDA görünür — hiç
+bakılmamıştı.
+
+Beşi de canlıda tarandı: `glim` · `berlin-ards` · `gout-acr` · `cam-icu` ·
+`abg`. **Sıfır hata, sıfır uyarı.**
+
+**Ölçüt kör değil — pozitif kontrol konuldu.** Üç kez üst üste "log yok"
+almak, okuyucunun çalışmadığı anlamına da gelebilirdi; `console.error` +
+`console.warn` tohumu atıldı ve **ikisi de yakalandı**.
+
+**Sayfa yalnızca AÇILIŞTA değil, ETKİLEŞİMLİ dallarında da sürüldü** — hata
+çoğu zaman ilk render'da değil durum geçişinde çıkar:
+
+| araç | sürülen geçişler |
+|---|---|
+| `cam-icu` | F1 Yok → **DELİRYUM NEGATİF** · F1 Mevcut → hüküm yok · +F2 → hüküm yok · +F3 → **POZİTİF** |
+| `abg` | çekirdek dolu → yorum · Na⁺ bozuk → **amber uyarı, yorum SAĞ** · pH bozuk → **kırmızı uyarı, yorum düştü** |
+
+İkisi de düzeltmelerin canlıda çalıştığını ayrıca doğruluyor.
+
+**Ölçüm notu — sayfanın kendi CETVELİ dedektörü kirletti, iki turda ikinci
+kez.** `abg`de "yorum var mı" ölçütüm `/Metabolik asidoz|Solunum/i` idi ve
+çekirdek bozukken bile `true` döndü. Sebep kusur değil: sayfa **kompanzasyon
+referans cetvelini** basıyor ve o cetvelin satırları tam da bu kelimeler
+("Metabolik asidoz", "Metabolik alkaloz", "Solunum asidozu (akut)").
+
+Ayırt edici okuma `role="alert"` kutularının METNİNİ almak oldu:
+
+> kırmızı: *"Şu değer(ler) beklenen aralığın çok dışında: **pH**. Yorum
+> yapılmadı — yazım hatası olabilir."*
+> amber: *"…: **Na⁺**. Bu alan(lar) hesaba KATILMADI…"*
+
+Her uyarı kendi alanını ADIYLA söylüyor ve ikisi aynı anda çizilebiliyor.
+
+Bu depoda araçlar kendi kurallarını, formüllerini ve cetvellerini EKRANDA
+anlatıyor; **gövde metninde anahtar kelime arayan her dedektör yapısal olarak
+kirli.** Güvenilir sinyaller: `role` taşıyan kutuların metni, öge sayısı,
+`aria-pressed` sayısı.
+
+**Ölçüm notu 2 — konsol günlüğü SEKME başına, sayfa başına değil.** Tohum
+mesajları gezinmelerden sonra da listede kaldı. Yani "yeni mesaj yok" doğru
+okuma; sayfa başına atıf gerekiyorsa her sayfa için TAZE sekme açılmalı.
