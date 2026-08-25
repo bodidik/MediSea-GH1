@@ -10254,3 +10254,60 @@ oysa doğru sayı 410. Sebep: ben `j.hidden`e baktım, üreteç ise
 **`v?.meta?.hidden === true`**'ya bakıyor. Bir görünürlük ölçütünü yeniden
 yazma — **üretecin kendi ölçütünü OKU**, yoksa 46 konuluk bir sapma sessizce
 rapora giriyor.
+
+### Branş gezinmesi uçtan uca ölçüldü — ve ilk raporum 13 SAHTE kusur üretecekti
+
+Üç ölçüt sırayla sürüldü; üçü de temiz, ama üçüncüsü önce yanlış okundu.
+
+**1) Bütün branşlar hub'dan bağlı.** `/topics` sayfasında **13 branşın 13'ü**
+de bağlantılı — küçük olanlar dâhil (`journal-club` 5 konu, `genel-dahiliye`
+2 konu). Yani hiçbir branş yalnızca aramadan ulaşılabilir değil.
+
+**2) Branş kırılımları toplamı TAM 410** — ve bu üç bağımsız yoldan aynı:
+
+| kaynak | sayı |
+|---|---|
+| dosya sistemi (`meta.hidden !== true`) | 410 |
+| `ilgili-index.cjs` raporu | 410 |
+| canlı `/topics` kartlarının toplamı | **410** |
+
+Kırılım: endokrinoloji 116 · hematoloji 79 · nefroloji 47 · kardiyoloji 35 ·
+enfeksiyon 35 · gastroenteroloji 34 · onkoloji 29 · romatoloji 11 ·
+klinik-nütrisyon 9 · journal-club 5 · palyatif 5 · göğüs 3 · genel-dahiliye 2.
+
+**3) Branş SAYFASI kaç konu listeliyor — burada neredeyse 13 sahte kusur
+raporlanacaktı.**
+
+İlk ölçüm sunucu HTML'indeki konu bağlantılarını kart sayısıyla karşılaştırdı
+ve **13 branşın 13'ünde "sapma"** buldu (endokrinoloji 18 ≠ 116, romatoloji
+1 ≠ 11). Durduran şey sayının kendisi oldu: **18**, belgede kayıtlı sayının
+birebir aynısı — *"branş sayfası yalnızca ÜST DÜZEY konuları listeliyor
+(endokrinolojide 18 bağlantı) artı yetimler için 'Diğer Konular'."*
+
+Doğru ölçüt uygulanınca **13/13 TAM UYUYOR**:
+
+| branş | üst düzey | yetim | toplam | sayfada |
+|---|---|---|---|---|
+| endokrinoloji | 10 | 8 | 18 | **18** |
+| gastroenteroloji | 2 | 13 | 15 | **15** |
+| hematoloji | 7 | 8 | 15 | **15** |
+| kardiyoloji | 3 | 9 | 12 | **12** |
+| nefroloji | 9 | 2 | 11 | **11** |
+| klinik-nütrisyon | 1 | 5 | 6 | **6** |
+| öteki 7 branş | — | 0 | = üst düzey | uyuyor |
+
+Sapma: **0**. Toplam yetim 45 (belgede `asili-denetim` 46 diyor; içerik
+değiştiği için ölçüm anına ait bir fark).
+
+Yani sayfa sayısı ne eksik ne fazla: **üst düzey + "Diğer Konular"**. Kendini
+onaran okuma tam olarak ilan edildiği gibi çalışıyor.
+
+**AYNI HATA ÜÇÜNCÜ KEZ: sayı doğruydu, SEBEBİ uydurmuştum.** Daha önce
+`/tools`ta "133 = 130 + 3 gezinme" (gerçek sebep çapraz listeleme) ve
+"ToolShare 130/130" (grep içe aktarmayı sayıyordu). Şimdi "branş sayfası 116
+konu listelemeli" — hiçbiri ölçülmüş değildi, üçü de varsayımdı.
+
+**Kural sertleşiyor: bir sayıyı karşılaştırmadan önce, karşılaştırdığın iki
+şeyin AYNI ŞEYİ saydığını kanıtla.** Bu depoda kart sayacı "branştaki tüm
+konular"ı, sayfa bağlantısı ise "hiyerarşinin üst düzeyi + yetimler"i sayıyor;
+ikisi farklı büyüklük ve ikisi de doğru.
