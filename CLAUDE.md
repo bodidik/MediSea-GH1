@@ -8541,3 +8541,63 @@ Hub "Behçet — ICBD 2014" diyor; iddia ölçüldü:
 Yayımlanmış ICBD 2014 ile birebir. (Sayfa `<h1>`i yalnızca "Behçet Hastalığı"
 diyor ve ölçüt setinin adını taşımıyor — kusur değil, ama hub'daki kimlik
 sayfada görünmüyor.)
+
+### DOĞRULAMA TURU — bu oturumun kendi işi dört ölçütten geçirildi
+
+Kod değişikliği yok. Bu oturumda ~35 dosyaya dokunuldu, bir araç kaldırıldı ve
+iki yeni denetim eklendi; hepsi ölçüldü.
+
+**1. Sayı mimarisi araç kaldırıldıktan sonra da tutuyor.** Araç sayısı bu
+oturumda 131 → 130 oldu (`sledai2k` yönlendirildi). Üç yüzey karşılaştırıldı:
+
+| yüzey | araç | branş | konu | başlık | kart |
+|---|---|---|---|---|---|
+| ana sayfa | **130** | 13 | 410 | — | — |
+| `/tools` | **130** (133 bağlantı = 130 + 3 gezinme) | — | — | — | — |
+| `/uyelik` | — | 13 | 410 | 41 | 1492 |
+
+Elle güncellenen tek sayı yok; "sayı yazma, saydır" mimarisi araç silmeyi
+sorunsuz taşıdı.
+
+**2. Bu oturumda EKLENEN iki denetim klavye kalıbına uyuyor.** `apache2`nin
+ABY kutusu ve `haq-di`nin yardımcı araç kutusu ölçüldü:
+
+| ölçüt | apache2 | haq-di |
+|---|---|---|
+| gizleme biçimi | `sr-only` (`display:none` DEĞİL) | `sr-only` |
+| odak sırasında | evet | evet |
+| saran etikette `focus-within:ring` | var | var |
+| tıklama durumu değiştiriyor | evet | evet |
+| **erişilebilir ad** | "Akut böbrek yetmezliği var — kreatinin puanı ikiye katlanır" | "Bu etkinlik için yardımcı cihaz ya da başka bir kişinin yardımı kullanılıyor" |
+
+Son satır ayrı ölçüldü: ham `textContent` başta "✓" gösteriyor (belgedeki
+"`textContent` `aria-hidden`'ı dikkate almaz" tuzağı), ama `aria-hidden` alt
+ağaçları çıkarılınca ad temiz kalıyor.
+
+**3. Değişen beş sayfa 320px'te temiz — ve ölçüt kör değil.** `apache2` ·
+`haq-di` · `gout-acr` · `tirads` · `nutrition-needs`: belge kayması **0**,
+taşan öge **0**. Ölçüt üç süzgeci birden taşıyor (kırpan atası olanlar,
+`position:fixed`, `sr-only`).
+
+Pozitif kontrol aynı sayfada yapıldı: 900px'lik bir tohum eklenince taşan öge
+0 → **1** ve belge **595px** kayıyor; tohum kalkınca yeniden 0. Yani "0 taşma"
+sonucu ölçümün körlüğünden gelmiyor.
+
+**4. Hub açıklaması ile sayfa alt başlığı — 4 aday, dördü de SAHTE.** Ölçüt
+"ortak 4+ harfli kelime yok" idi; kısaltma ile açık yazım hiç kelime
+paylaşmıyor:
+
+| araç | hub | sayfa |
+|---|---|---|
+| `meld-na` | "**ESKH** mortalite tahmini" | "**Son Evre Karaciğer Hastalığı** Analizi" |
+| `chads-vasc` | "**AF**'de inme riski" | "**Atriyal Fibrilasyon** İnme Risk Analizi" |
+| `ipi` | "agresif **NHL / DLBCL**" | "**Non-Hodgkin Lenfoma**" |
+| `ogtt` | "T2DM/prediyabet, **GDM**" | "Oral Glukoz Tolerans Testi" |
+
+Kelime örtüşmesi, kısaltmaların bol olduğu bir alanda anlam örtüşmesinin
+zayıf bir vekili. `sledai2k`teki gerçek sapma KATEGORİ farkıydı ("sınıflama
+kriteri" ↔ "aktivite indeksi"), kelime farkı değil.
+
+**5. İçerik denetimleri tabanında:** `soru-denetim` yapısal kusur yok (CI
+kapısı temiz); `konu` 17 · `yetim` 17 · `asili` kayıtları içerik kararı ve
+kullanıcının işi — sapma yok.
