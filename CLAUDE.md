@@ -9352,3 +9352,66 @@ yalnızca kalan yanıtlar sonucu değiştiremiyorsa geçerli.
 **Kalan dört araç:** `mmrc` ve `pps` `null` başlıyor, hüküm kapısı doğru.
 `cam-icu` (F1 ∧ F2 ∧ (F3 ∨ F4)) ve `endocarditis` (Duke, onay kutusu) aynı
 şekli KAYNAKTA taşıyor ama **tarayıcıda ölçülmediler — "temiz" DENMİYOR.**
+
+### Erken hüküm sınıfı kapandı — `cam-icu` düzeltildi, `endocarditis` ölçüldü ve DEĞİŞTİRİLMEDİ
+
+Geçen tur "kaynakta şekli taşıyor ama ÖLÇÜLMEDİ" diye bırakılan iki araç
+tarayıcıda sürüldü.
+
+**`cam-icu` KUSURLUYDU — ve bu, kuralın "negatif" tarafındaki örneği.**
+CAM-ICU bir KONJONKSİYON: Deliryum = F1 ∧ F2 ∧ (F3 ∨ F4). Yani Özellik 1
+yoksa sonuç kesindir ve enstrümanın kendi algoritması **orada durur**.
+
+| ölçüldü (önce) | ekranda |
+|---|---|
+| F1 "Yok" (1/4) | **hiçbir hüküm YOK** |
+| dördü de yanıtlı | "DELİRYUM NEGATİF" |
+
+Yani araç, cevabı zaten belli olan hastada üç soru daha soruyordu.
+
+**Bu örnek kuralın ifadesini kesinleştiriyor.** `anaphylaxis` ve
+`canadian-ct`te erken verilen POZİTİF hükümdü; burada NEGATİF. Ölçüt
+"pozitif erken, negatif geç" DEĞİL:
+
+> Kalan yanıtların hiçbiri sonucu değiştiremiyorsa hüküm o an verilir.
+
+**Doğrulama — dört yol, ikisi negatif kontrol:**
+
+| girdi | hüküm |
+|---|---|
+| F1 "Yok" (1/4) | **DELİRYUM NEGATİF** — anında |
+| F1 "Mevcut" (1/4) | hüküm YOK · "Özellik 2 · 3 · 4" |
+| F1+F2 "Mevcut" (2/4) | hüküm YOK · "Özellik 3 · 4" |
+| +F3 "Mevcut" (3/4) | **DELİRYUM POZİTİF** — F4 beklenmeden |
+| **negatif** — F3 ve F4 "Yok" (4/4) | **DELİRYUM NEGATİF** — dışlama iki özelliği de istiyor |
+
+İkinci ve üçüncü satır ayırt edici: erken hüküm "elindekiyle karar ver"
+demek değil.
+
+#### `endocarditis` — ölçüldü, kusur SAYILMADI, gerekçesi yazılı
+
+Dokunulmamış form şunu basıyor:
+
+```
+ZAYIF BULGULAR (Rejected/Unlikely)     MAJÖR 0     MİNÖR 0
+```
+
+Şekil `glim`e benziyor (negatif iddia, dokunulmamış form) ama **girdi deyimi
+farklı ve bu belirleyici:** Duke ölçütleri ONAY KUTUSU ve onay kutusu
+deyiminde "yanıtlanmadı" diye bir durum YOKTUR — işaretlenmemiş kutu gerçek
+bir cevaptır. Deponun kendi verdikti bu yönde: `has-bled` · `wells-dvt` ·
+`wells-pe` · `padua` · `chads-vasc` hep "işaretsiz = ölçüt yok" sayılıyor.
+
+Ayrıca ekran girdileri GÖSTERİYOR (MAJÖR 0 · MİNÖR 0), yani `child-pugh` /
+`gcs` / `psi-port` kovasındaki gibi beyan edilmiş bir varsayım.
+
+`glim`de düzeltme mümkündü çünkü `<select>`e boş bir seçenek EKLENEBİLİYORDU;
+burada aynı şeyi yapmak, gerçekten sıfır ölçütü olan hastanın "Rejected"
+kaydını almasını imkânsız kılardı. **Ölçüldü, not edildi, DEĞİŞTİRİLMEDİ.**
+
+Aracın kendi uyarısı da kapsamı doğru çiziyor: *"Bu araç Duke Kriterleri baz
+alınarak hazırlanmış bir eğitim şablonudur."*
+
+**Böylece belgede hiç geçmeyen altı aracın altısı da karara bağlandı:**
+`anaphylaxis` · `canadian-ct` · `cam-icu` düzeltildi; `mmrc` · `pps` `null`
+başlıyor (kapı doğru); `endocarditis` ölçüldü ve gerekçeyle bırakıldı.

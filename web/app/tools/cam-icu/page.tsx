@@ -39,16 +39,31 @@ export default function CAMICUPage() {
   const answered = Object.values(sel).filter(v => v !== null).length;
   const f1 = sel.f1, f2 = sel.f2, f3 = sel.f3, f4 = sel.f4;
 
-  const complete = f1 !== null && f2 !== null && f3 !== null && f4 !== null;
-
-  // RASS -4 veya -5 ise değerlendirilemez — burada basit olarak CAM-ICU mantığı
-  // Deliryum = F1 VE F2 VE (F3 VEYA F4)
+  /**
+   * Deliryum = F1 VE F2 VE (F3 VEYA F4)
+   *
+   * HUKUM, YANITLANMAMIS GIRDI ONU DEGISTIREMEZ HALE GELDIGI AN verilir.
+   * Bir donem kosul `complete` (dordu de yanitli) idi ve OLCULDU: F1 "Yok"
+   * isaretlendiginde (1/4) ekran HICBIR hukum basmiyordu -- oysa CAM-ICU'nun
+   * kendi algoritmasi Ozellik 1 yoksa ORADA DURUR; kalan uc soruyu sormak
+   * enstrumanin kendi akisina aykiri.
+   *
+   * Bu sinifta negatif hukum da ERKEN belirlenebiliyor, cunku bagintı bir
+   * KONJONKSIYON: F1 ya da F2 yoksa sonuc kesin. anaphylaxis/canadian-ct'de
+   * erken olan pozitif taraftaydi; olcut "pozitif/negatif" degil, "kalan
+   * yanitlar sonucu degistirebilir mi".
+   */
   let result: "delirium" | "no_delirium" | "not_evaluable" | null = null;
-  if (complete) {
-    if (!f1 || !f2) result = "no_delirium";
-    else if (f3 || f4) result = "delirium";
-    else result = "no_delirium";
-  }
+  if (f1 === false || f2 === false)          result = "no_delirium";   // konjonksiyon dustu
+  else if (f1 && f2 && (f3 || f4))           result = "delirium";      // F3/F4'ten biri yeter
+  else if (f1 && f2 && f3 === false && f4 === false) result = "no_delirium";
+
+  const eksikOzellikler = [
+    f1 === null && "Özellik 1",
+    f2 === null && "Özellik 2",
+    f3 === null && "Özellik 3",
+    f4 === null && "Özellik 4",
+  ].filter(Boolean) as string[];
 
   const RESULT_MAP = {
     delirium:      { label: "DELİRYUM POZİTİF", color: "rose",   sub: "CAM-ICU kriterleri karşılandı — yönetim protokolü başlatın" },
@@ -141,8 +156,8 @@ export default function CAMICUPage() {
             </div>
           </div>
         ) : (
-          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 4 özelliği değerlendirin</p>
+          <div role="alert" className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hüküm için yanıtlanmalı: {eksikOzellikler.join(" · ")}</p>
           </div>
         )}
 
