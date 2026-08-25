@@ -329,9 +329,19 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
           }}>
             ← Konuya dön
           </a>
-          <span style={{ fontSize: '12px', color: '#4a6a8a' }}>
+          {/**
+           * Konu adı zaten EKRANDAYDI ama düz bir `span`di: sayfada `h1` ve
+           * `h2` sayısı ÖLÇÜLDÜ ve ikisi de **0**du. Ücretli çalışma
+           * yüzeyinde belgeyi adlandıran hiçbir başlık yoktu.
+           *
+           * Görünüm DEĞİŞMİYOR: `globals.css` h1'e serif yazı tipi ve 24px
+           * üst/alt boşluk veriyor (belgede kayıtlı tuzak), satır içi stil
+           * ikisini de açıkça geri alıyor. Yeni bir metin eklenmedi —
+           * var olan ad anlamlandırıldı.
+           */}
+          <h1 style={{ fontFamily: 'inherit', fontSize: '12px', fontWeight: 400, color: '#4a6a8a', margin: 0 }}>
             {topic}
-          </span>
+          </h1>
         </div>
 
         {/* İLERLEME */}

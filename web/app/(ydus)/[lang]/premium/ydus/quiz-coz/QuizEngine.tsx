@@ -613,6 +613,43 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
 
   return (
     <div style={{ position: 'relative' }}>
+      {/**
+       * SORU SETİNİN ADI — hem başlıksızlığı hem ATILAN BİR ALANI kapatıyor.
+       *
+       * ÖLÇÜLDÜ: bu sayfa render edildiğinde `h1` sayısı **0**, `h2` sayısı
+       * **0** idi. Ücretli çalışma yüzeyinde belgeyi adlandıran hiçbir başlık
+       * yoktu; ekran okuyucuyla gelen kullanıcının yönelecek bir çapası
+       * bulunmuyordu.
+       *
+       * Üstelik ad ELDE VARDI: `QuizVeri.baslik` tipte tanımlı, veri dosyasında
+       * dolu ("Feokromositoma ve Paragangliyoma — YDUS Soru Seti 1") ve bileşene
+       * prop olarak geliyordu — ama HİÇBİR YERDE render edilmiyordu. Aynı
+       * turda premium bilgi kutularında bulunan "veri ilan ediyor, render yok
+       * sayıyor" kusurunun ikinci örneği.
+       *
+       * `globals.css` h1'e serif yazı tipi ve 24px üst boşluk veriyor; satır içi
+       * stil onları açıkça geri alıyor (belgede kayıtlı tuzak).
+       *
+       * RENK: bu yüzeyin zemini KOYU (`rgb(2,6,23)`) — kardeş motor
+       * `hizli-tekrar` ise AÇIK zeminde. İlk denemede ikisine de aynı ton
+       * (`#4a6a8a`) verildi ve ölçüm ayırdı: flashcard'da 5.65, burada
+       * **3.57** (eşik 4.5). Belgedeki kural: "koyu bir zemine yazı
+       * basıyorsan rengini KENDİN ver" — `#94a3b8` ile 7.87.
+       */}
+      <h1 style={{
+        fontFamily: 'inherit',
+        fontSize: '13px',
+        fontWeight: 600,
+        color: '#94a3b8',
+        margin: 0,
+        padding: '1.25rem 1rem 0',
+        maxWidth: '760px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        lineHeight: 1.4,
+      }}>
+        {veri.baslik}
+      </h1>
       {devamMesaji && (
         <div style={{
           position: 'fixed', top: '1rem', left: '50%', transform: 'translateX(-50%)',

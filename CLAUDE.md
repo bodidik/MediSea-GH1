@@ -12389,3 +12389,66 @@ alanına dokunmuyor — ama kurgu buna güvenmiyor.
 
 **Kapı geri kondu ve doğrulandı:** sayfa yeniden "Erişim Kısıtlı" basıyor,
 kaynakta geçici ölçüm izi 0.
+
+### ÜCRETLİ ÇALIŞMA MOTORLARINDA HİÇ BAŞLIK YOKTU — ve quiz setinin adı da atılıyordu
+
+Premium konu sayfasının 320px kusuru "kapı arkasındaki yüzey ölçülmemiş"
+sınıfını açtı. Aynı körlük **beş motor** için de geçerliydi: `quiz-coz` ·
+`hizli-tekrar` · `inciler` · `vaka-coz` · `soru-cozum`. Beşinin kapısı da
+geçici olarak açılıp ölçüldü.
+
+**Taşma tarafı TEMİZ çıktı** (320px): dördünde de kayma **0**, taşan öge
+**0**. Motorlar `maxWidth` + `width:100%` kullanıyor, sert ızgara yok
+(`px` taşıyan `gridTemplateColumns` premium ağacında yalnızca konu
+sayfasındaydı).
+
+**"0 taşma" körlükten gelmiyor** — pozitif kontrol: 900px'lik bir tohum
+eklenince kayma 0 → **595**, belge genişliği 900. İçerik de gerçek (quiz'de
+dört şık "SDHB/SDHD/RET/VHL", flashcard'da "Biliyorum · Yanıtı gör").
+
+#### Asıl bulgu: `h1` ve `h2` sayısı SIFIR
+
+| yüzey | h1 | h2 |
+|---|---|---|
+| `quiz-coz` (gerçek motor hâli) | **0** | **0** |
+| `hizli-tekrar` (gerçek motor hâli) | **0** | **0** |
+| `/tr/premium/ydus` (kıyas) | 1 | 2 |
+
+Ücretli çalışma yüzeyinde belgeyi adlandıran hiçbir başlık yoktu; ekran
+okuyucuyla gelen kullanıcının yönelecek bir çapası bulunmuyordu.
+
+**Ve quiz'de ad ELDE VARDI:** `QuizVeri.baslik` tipte tanımlı, veri
+dosyasında dolu ("Feokromositoma ve Paragangliyoma — YDUS Soru Seti 1"),
+bileşene prop olarak geliyor — **hiçbir yerde render edilmiyordu.** Aynı
+turda premium bilgi kutularında bulunan *"veri ilan ediyor, render yok
+sayıyor"* kusurunun **ikinci örneği**.
+
+`hizli-tekrar`da ad zaten ekrandaydı ama düz bir `span`di; yeni metin
+eklenmedi, var olan ad anlamlandırıldı.
+
+#### KOYU ve AÇIK yüzey aynı turda — tek renk ikisine birden uymuyor
+
+İlk denemede iki motora da aynı ton verildi (`#4a6a8a`). Ölçüm ayırdı:
+
+| motor | zemin | `#4a6a8a` ile |
+|---|---|---|
+| `hizli-tekrar` | açık | **5.65** ✓ |
+| `quiz-coz` | **`rgb(2,6,23)` koyu** | **3.57** ✗ |
+
+Belgedeki kural burada bir kez daha işledi: *"koyu bir zemine yazı
+basıyorsan rengini KENDİN ver."* Koyu yüzeyde `#94a3b8` → **7.87**.
+
+Ayırt eden ölçüm ata zincirinin arka planını okumak oldu; iki kardeş motorun
+YÜZEY RENGİ farklı ve bunu ancak ikisini birden ölçmek gösteriyor.
+
+**Doğrulama:** iki motorda da `h1` tam **1**, yazı tipi Inter/system-ui
+(serif değil — `globals.css`'in h1 tuzağı satır içi geri alındı), üst boşluk
+**0px**, 320 ve 1100px'te kayma 0, düğmeler yerinde (5 ve 4).
+
+**Beş kapı geri kondu ve doğrulandı:** kaynakta geçici iz **0**, kapı çağrısı
+**5/5**, ve dört rota canlıda yeniden "Erişim Kısıtlı" basıyor.
+
+**Ölçüm notu:** `inciler` ve `vaka-coz` verdiğim parametrelerle BOŞ DURUM
+gösterdi ("Bu konunun incileri yok", "Bir vaka seçin") — yani onların gerçek
+motor hâli ölçülmedi ve "başlık var" DENMİYOR. Boş durumda ikisinde de `h1`
+1 çıkıyor, ama o başlık boş durumun başlığı.
