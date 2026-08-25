@@ -9984,3 +9984,71 @@ metnine takıldı ve açılışta bile `true` döndü. Ayırt edici sinyal **ög
 sayısı** oldu (147 → 124 → 157). Metin arayan bir dedektör yazarken sayfanın
 kendi açıklama metninin aynı kelimeleri taşıyıp taşımadığını önce kontrol et —
 bu depoda araçlar kendi kurallarını ekranda anlatıyor, yani bu tuzak yapısal.
+
+### KAYNAK İLANI sınıfı süpürüldü — 37 araç, ve `fibromiyalji`de AÇIK BULGU
+
+`grace` "2.0" düzeltmesi aslında bir sınıfın tek örneğiydi: **araç kaynağını
+ADIYLA ilan ediyor** (yazar-yıl, kılavuz adı, formül adı) ve o ilan uygulamayla
+tutmayabilir. Sınıf hiç süpürülmemişti.
+
+Ekran metinlerinden ilan çıkarıldı: **37 araç** kaynağını adlandırıyor
+(Knaus 1985 · Stiell 2001 · Fardet 2014 · Daugirdas II · Mifflin–St Jeor ·
+CKD-EPI 2021 · ACR/EULAR 2015 · NIAID/FAAN 2006 · ICBD 2014 …). Çoğu belgede
+zaten yayımlanmış hâliyle karşılaştırılmıştı; doğrulanmamış dördü bu turda
+kontrol edildi:
+
+| araç | ilan | sonuç |
+|---|---|---|
+| `spot-urine` | ACR formülü | **doğru** — `albumin × 1000 / kreatinin` (ilk çıkarımım kırpılmıştı) |
+| `rass` | Sessler 2002 | **doğru** — +4…−5, tam 10 seviye |
+| `act` | Nathan 2004 | **doğru** — 5 soru × 1–5, tavan 25 (payda denetiminde de kayıtlı) |
+| `fibromiyalji` | ACR 2016 | **AÇIK BULGU — aşağıda** |
+
+#### ⚠ AÇIK BULGU — `fibromiyalji`de ÜÇÜNCÜ bir tanı dalı var
+
+ACR 2016 fibromiyalji ölçütü **iki** daldan oluşur:
+
+```
+WPI ≥ 7  ve  SSS ≥ 5        veya        WPI 4–6  ve  SSS ≥ 9
+```
+
+Araçta **üç** dal var; üçüncüsü yayımlanmış ölçütte YOK:
+
+```
+(wpiScore >= 0 && wpiScore <= 3 && ssScore >= 11)
+```
+
+**Ölçüldü (canlıda) ve tekrarlanabilir:**
+
+| girdi | ekranda |
+|---|---|
+| **WPI 0/19** · SS 11/12 | **"FİBROMİYALJİ TANISI KARŞILANIYOR"** |
+
+On dokuz bölgenin **hiçbirinde** ağrısı olmayan hasta, adı *yaygın ağrı
+indeksi* olan bir ölçütle fibromiyalji tanısı alıyor. Yön **aşırı tanı**.
+
+**İç çelişki YOK — ve ayrım tam burada.** Ekran metni de üç dalı yazıyor
+("WPI ≥ 7 + SS ≥ 5, veya WPI 4–6 + SS ≥ 9, veya **WPI ≤ 3 + SS ≥ 11**"), yani
+kod ile etiket birbiriyle uyumlu; uyuşmazlık DIŞ kaynakla.
+
+| uyuşmazlık türü | örnek | benim eylemim |
+|---|---|---|
+| **İÇ** — etiket X diyor, kod X'i yapmıyor | `apache2` (ABY ×2) · `haq-di` (yardımcı araç) · `murray` (kullanılan parametre) | **düzelttim** — araç kendi ölçüsüne hizalandı |
+| **DIŞ** — kod ve etiket uyumlu, yayımlanmış kaynakla değil | `grace` (2.0 → 1.0) · `sledai2k` (eksik sürüm) | **iddiayı** değiştirdim / yönlendirdim |
+| **DIŞ + klinik eşik değişimi** | `asdas` (−0.211) · `essdai` (kutanöz düzey) · `gh-test` (BMI eşikleri) | **ölçtüm, bıraktım** |
+
+`fibromiyalji` üçüncü satırda: dalı kaldırmak bir TANI EŞİĞİNİ değiştirmek
+olur. **DEĞİŞTİRİLMEDİ.** İki dürüst çare var ve seçim içerik sahibinin:
+
+1. Üçüncü dalı kaldır (araç ilan ettiği ACR 2016'ya hizalanır), ya da
+2. Dalı koru ama "ACR 2016" ilanını nitele (yerel varyant olduğunu söyle).
+
+**Ek bağlam — ACR 2016'nın İKİNCİ ölçütü hiç uygulanmıyor:** "beş bölgenin en
+az dördünde yaygın ağrı" koşulu araçta yok. WPI 0 olan hastada o koşul zaten
+tanım gereği karşılanmıyor, yani üçüncü dal iki ayrı gereksinimi birden
+deliyor.
+
+**Yöntem notu:** ilk çıkarımım `spot-urine`ın ACR formülünü eksik gösterdi
+(regex 44 karakterde kesiyordu) ve bir an kusur sanıldı. Belgedeki *"ekrana
+basmak için kırptığın değeri ölçüme GERİ VERME"* kuralının ilan tarafındaki
+hâli — kırpılmış bir ilan, ilanın kendisi değildir.
