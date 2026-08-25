@@ -11589,3 +11589,48 @@ taramadan önce **örneklem sayısını sor**; sıfırsa tarama da sonuç da yok
 okuyucu sütun ilişkisini `<thead><th>`den zaten kuruyor, `scope` gerekmiyor.
 `<caption>` 52'sinde de yok ama tablolar gövde metninin içinde ve kendi
 başlıkları var. Kusur sayılmadı.
+
+### Site haritası düzeltmesi canlıda + oturum sonu gerileme kontrolü
+
+`lastmod` düzeltmesi dağıtıldı ve canlıda ölçüldü:
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| adres | 558 | **558** |
+| `lastmod` taşıyan | 558 | **420** |
+| **derleme damgası taşıyan** | **152** | **0** |
+| araç adresi / `lastmod` taşıyan | 131 / 131 | 131 / **0** |
+| branş adresi / benzersiz tarih | 13 / **1** | 13 / **13** |
+
+**Bu oturumda ~20 commit gönderildi** (arama motoru, araç gezinmesi, menü
+listesi, metadata, site haritası, iki denetim nöbetçisi). "Sayı yazma,
+saydır" mimarisi bozuldu mu diye dört yüzey birden okundu:
+
+| yüzey | araç | konu | branş | başlık | soru | kart |
+|---|---|---|---|---|---|---|
+| ana sayfa | **130** | **410** | **13** | — | — | — |
+| `/tools` | 130 (sayaç + benzersiz bağ), 18 `h2` | — | — | — | — | — |
+| `/uyelik` | — | 410 | 13 | **41** | **378** | **1492** |
+| `/topics` | — | 410 (13 kartın toplamı) | 13 | — | — | — |
+
+Sapma yok; elle güncellenen tek sayı da yok.
+
+`/uyelik` ayrıca çıkmaz değil: "Şimdi ne yapabilirsin" bölümü, `/kayit` ve
+ücretsiz yüzeylere bağlar taşıyor (23 iç bağlantı, 2133 karakter görünür
+metin).
+
+#### Aynı turda ÜÇ sahte bulgu — üçü de benim ölçümümdendi
+
+Bu tur ölçüt hatalarının ürünü suçlamaya ne kadar yakın olduğunu iyi
+gösteriyor:
+
+| gördüğüm | gerçek |
+|---|---|
+| `/uyelik` h1'i "ücretsiz,neyin" — boşluk eksik | etiketleri `""` ile sildim; sayfada `<br>` var, boşluk yerinde |
+| `/uyelik`te soru sayısı **yok** | var (**378**); desenim "çözümlü soru" arıyordu, sayfada "**açıklamalı** soru" yazıyor |
+| kategori sayımı "ilan tutmuyor" (önceki tur) | ayrıştırıcı 18 kategoriden 1'ini görmüştü |
+
+Üçünde de ilk okuma bir kusur işaret ediyordu. Ölçüt düzeltilince üçü de
+kayboldu. **Bir bulgu raporlamadan önce sor: bunu ürün mü yapıyor, ölçütüm
+mü?** Ucuz sınama: aynı şeyi ikinci bir yöntemle oku (etiket sökmek yerine
+ham HTML'de ara, desen yerine bağlamı bastır).
