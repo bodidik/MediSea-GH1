@@ -46,7 +46,6 @@ export default function BerlinARDSPage() {
   const [origin, setOrigin] = React.useState<boolean | null>(null);
   const [pf,    setPF]      = React.useState<string | null>(null);
 
-  const allAnswered = onset !== null && xray !== null && origin !== null && pf !== null;
   const meetsCriteria = onset && xray && origin;
 
   /**
@@ -56,9 +55,31 @@ export default function BerlinARDSPage() {
    * ≈ %45" basiyordu. Berlin tanimi oksijenasyon esigini ZORUNLU kriter
    * sayar; secilen sikkin kendi metni de bunu soyluyordu.
    */
-  const severity = !allAnswered ? null
-    : (!meetsCriteria || pf === "no_ards") ? ARDS_DEGIL
-    : (SIDDET.find(x => x.pf === pf) ?? ARDS_DEGIL);
+  /**
+   * HUKUM, YANITLANMAMIS GIRDI ONU DEGISTIREMEZ HALE GELDIGI AN verilir.
+   *
+   * Berlin tanimindaki DORT olcut de ZORUNLU, yani herhangi birine "hayir"
+   * denmesi ARDS'i tek basina disliyor. Kapi bir donem `allAnswered` idi ve
+   * OLCULDU: yalnizca "> 300 mmHg" secilmisken (1/4) ekran HICBIR hukum
+   * basmiyordu -- oysa o secim tek basina belirleyici.
+   *
+   * anaphylaxis / canadian-ct / cam-icu ile ayni sinif; burada erken
+   * belirlenen taraf DISLAMA (konjonksiyon dustugu icin).
+   */
+  const dislandi =
+    onset === false || xray === false || origin === false || pf === "no_ards";
+  const kriterlerTam = onset === true && xray === true && origin === true;
+
+  const severity = dislandi ? ARDS_DEGIL
+    : (kriterlerTam && pf !== null) ? (SIDDET.find(x => x.pf === pf) ?? ARDS_DEGIL)
+    : null;
+
+  const eksikAlanlar = [
+    onset === null && "başlangıç zamanı",
+    xray === null && "akciğer grafisi",
+    origin === null && "ödem kaynağı",
+    pf === null && "oksijenasyon (PaO₂/FiO₂)",
+  ].filter(Boolean) as string[];
 
   const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
     slate:  { bg: "bg-slate-50",   border: "border-slate-200",  text: "text-slate-700",  badge: "bg-slate-600 text-white" },
@@ -128,7 +149,7 @@ export default function BerlinARDSPage() {
           </div>
         </div>
 
-        {allAnswered && severity && c ? (
+        {severity && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">
               <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0 text-center px-1">
@@ -163,8 +184,12 @@ export default function BerlinARDSPage() {
             )}
           </div>
         ) : (
-          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 4 kriteri yanıtlayın</p>
+          <div role="alert" className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hüküm verilemiyor</p>
+            <p className="text-[11px] font-bold text-slate-600 mt-1">
+              Dört ölçüt de zorunlu: herhangi birine &quot;hayır&quot; demek ARDS&apos;yi tek başına dışlar.
+              Yanıtlanmayan: {eksikAlanlar.join(" · ")}
+            </p>
           </div>
         )}
 

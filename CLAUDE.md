@@ -9829,3 +9829,60 @@ göre değişiyor"* yazılı. Bu turda taze bir örnek çıktı:
 Yani bu araç sayfalarında kaydırma ölçütü tek başına kullanılsaydı, gerçek bir
 900px'lik taşma bile "temiz" raporlanırdı. **Pozitif kontrolü her koşuma koy;
 hangi ölçütün o sayfada işe yaradığını ancak o gösteriyor.**
+
+### Erken hüküm sınıfı DEPO GENELİNE sürüldü — ve kendi düzeltmemin yarım kalan yarısını buldu
+
+Sınıf üç araçta düzeltilmişti (`anaphylaxis` · `canadian-ct` · `cam-icu`) ama
+**hiç depo geneline sürülmemişti**: ikisini "belgede hiç geçmeyen araçlar"
+listesinden, birini `<select>` taramasından bulmuştum. Oysa daha önceki bir
+tarama **tamlık kapısı olan 27 aracı** saymıştı ve o liste hiç incelenmedi.
+
+**Ölçüt bir kez fazla kaba çıktı ve okunamaz bir liste verdi:** "kapısı var VE
+`&&`/`some`/`every` geçiyor" ölçütü 27 aracın 20'sini işaretledi. `&&` her
+dosyada geçiyor.
+
+**Ayırt edici soru ŞU: hüküm TOPLAMDAN mı, MANTIKSAL KURALDAN mı geliyor?**
+
+| şekil | erken hüküm | örnek |
+|---|---|---|
+| toplamsal skor | **imkânsız** — her madde toplama giriyor, son yanıt gelmeden toplam bilinmez | `braden` · `nihss` · `dlqi` · `cat-copd` · `mrss` · `tnss` · `bode` · `4t-hit` |
+| mantıksal kural | **mümkün** | `berlin-ards` · `anaphylaxis` · `canadian-ct` · `cam-icu` |
+
+Bu ayrım listeyi 20'den 1'e indirdi.
+
+#### `berlin-ards` — içeriğini düzeltmiştim, KAPISINA dokunmamıştım
+
+Önceki turda `pf === "no_ards"` dalını eklemiştim (P/F > 300 ARDS'i dışlar).
+Ama kapı `allAnswered` olarak KALMIŞTI. Ölçüldü (canlıda):
+
+| girdi | ekranda (önce) |
+|---|---|
+| yalnızca "> 300 mmHg" seçili (1/4) | **hiçbir hüküm YOK** |
+
+Oysa o seçim tek başına belirleyici. Berlin tanımındaki **dört ölçüt de
+zorunlu**, yani herhangi birine "hayır" demek ARDS'i tek başına dışlıyor.
+
+**Asimetri kuralın neden basit olmadığını gösteriyor:** bir "EVET" yanıtı
+hükmü ASLA belirlemiyor (dördü de gerekli), tek bir "HAYIR" ise anında
+belirliyor. Araç artık ikisini de doğru yapıyor.
+
+**Doğrulama — yedi ölçüm, dördü negatif kontrol:**
+
+| girdi | hüküm |
+|---|---|
+| yalnızca "> 300 mmHg" (1/4) | **ARDS DEĞİL** — anında |
+| başlangıç "Hayır" (1/4) | **ARDS DEĞİL** — anında |
+| dokunulmamış | "Hüküm verilemiyor" + dört alan da listeleniyor |
+| **negatif** — başlangıç "Evet" (1/4) | hüküm **YOK**, eksik: grafi · kaynak · oksijenasyon |
+| **negatif** — 2/4 "Evet" | hüküm **YOK**, eksik: kaynak · oksijenasyon |
+| **negatif** — üç kriter "Evet", P/F YOK (3/4) | hüküm **YOK**, eksik: oksijenasyon |
+| **negatif** — 4/4 · P/F 201–300 | **HAFİF ARDS** · P/F ≤100 → **AĞIR ARDS %45** (değişmedi) |
+
+Son dört satır belirleyici: erken hüküm kuralı ŞİDDET tarafını gevşetmedi.
+
+**Ölçüm tuzağı — ardışık koşumda P/F seçili KALDI.** İlk negatif kontrol
+koşumunda "üç kriter evet, P/F yok" diye etiketlediğim ölçüm `basili: 4`
+gösterdi: önceki koşumdan "> 300 mmHg" duruyordu ve sonuç "ARDS DEĞİL" çıktı.
+Taze sayfada tekrarlandı. Belgedeki "ardışık ölçüm bayat sonuç verir"
+kuralının bu turdaki hâli — **etiketin doğru olduğunu, basılı düğme SAYISINI
+okuyarak sına.**
