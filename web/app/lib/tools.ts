@@ -2,6 +2,14 @@
 // Tek kaynak: hem branş sayfası (app/(site)/topics/[slug]/page.tsx) hem de
 // ileride başka yerler BURADAN okur — slug'lar gerçek app/tools/<slug> klasörleriyle
 // birebir eşleşmelidir (kırık link üretmemek için).
+//
+// BU SÖZLEŞME BİR KEZ ÇİĞNENDİ ve elle fark edilmedi: "heart-score" burada
+// kaldı, oysa o araç `heart` ile birleştirilip klasörü SİLİNMİŞTİ. Kardiyoloji
+// branş sayfası ölü bir slug'a bağlanıyordu ve yalnızca next.config.js'teki
+// 308 yönlendirmesi sayesinde çalışıyordu — yönlendirme kaldırılsaydı kırık
+// bağlantı olurdu. Bu yüzden `arac-metadata.cjs --kontrol` (CI kapısı) artık
+// buradaki her slug'ın gerçek bir `app/tools/<slug>/page.tsx` taşıdığını da
+// doğruluyor.
 
 export type ToolRef = { slug: string; name: string; icon: string };
 
@@ -33,7 +41,7 @@ export const TOOLS: Record<string, ToolRef> = {
   "bsa": { slug: "bsa", name: "Vücut Yüzey Alanı", icon: "📐" },
   "ecog": { slug: "ecog", name: "ECOG Performans", icon: "🎗️" },
   "gcs": { slug: "gcs", name: "Glasgow Koma Skalası", icon: "🧠" },
-  "heart-score": { slug: "heart-score", name: "HEART Skoru", icon: "💔" },
+  "heart": { slug: "heart", name: "HEART Skoru", icon: "💔" },
   "child-pugh": { slug: "child-pugh", name: "Child-Pugh", icon: "🍺" },
   "das28": { slug: "das28", name: "DAS28", icon: "🦴" },
   "glasgow-blatchford": { slug: "glasgow-blatchford", name: "Glasgow-Blatchford", icon: "🩸" },
@@ -44,7 +52,7 @@ export const TOOLS: Record<string, ToolRef> = {
 
 // branş slug -> ilgili hesaplayıcı slug'ları (öncelik sırasına göre)
 export const BRANCH_TOOLS: Record<string, string[]> = {
-  "kardiyoloji": ["heart-score", "chads-vasc", "has-bled", "timi-ua"],
+  "kardiyoloji": ["heart", "chads-vasc", "has-bled", "timi-ua"],
   "nefroloji": ["egfr", "kdigo-aki", "corrected-calcium", "anion-gap", "unit-converter"],
   "endokrinoloji": ["corrected-calcium", "hba1c-eag", "corrected-sodium", "anion-gap", "egfr", "unit-converter"],
   "gastroenteroloji": ["meld-na", "child-pugh", "glasgow-blatchford", "ranson"],

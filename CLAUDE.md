@@ -11225,3 +11225,82 @@ sürüldü:
 Yanlış duyuru YOK. Ölçüt artık "hangi durum önce geldi" diye soruyor, mutlak
 zamana bakmıyor — çünkü tarayıcı paneli gizliyken zamanlayıcılar kısılıyor ve
 aynı olay 8 ms yerine 592 ms'de görünüyor.
+
+### ÜÇÜNCÜ BİR KAYNAK VARDI VE BAYATLAMIŞTI — `app/lib/tools.ts`
+
+Konu tarafından araçlara yol var mı diye bakılırken bulundu. Branş sayfaları
+"İlgili Hesaplayıcılar" şeridini `app/lib/tools.ts` içindeki elle tutulan
+`TOOLS` + `BRANCH_TOOLS` eşlemesinden besliyor. Dosyanın kendi başlığı şunu
+şart koşuyordu:
+
+> *"slug'lar gerçek `app/tools/<slug>` klasörleriyle birebir eşleşmelidir
+> (kırık link üretmemek için)"*
+
+**Sözleşme çiğnenmişti ve bunu doğrulayan hiçbir şey yoktu.** Ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| `TOOLS` anahtarı | 34 |
+| `arac-index.json`'da OLMAYAN | **`heart-score`** |
+| `app/tools/` altında KLASÖRÜ olmayan | **`heart-score`** |
+
+`heart-score` daha önce `heart` ile birleştirilip klasörü silinmişti
+(gerekçe `next.config.js`te yazılı: kapısız kopya, dokunulmamış formda
+"0 · Düşük Risk" yani bir TABURCU kararı basıyordu). Eşleme eski slug'da
+kaldı, yani **kardiyoloji branş sayfası ölü bir slug'a bağlanıyordu ve
+yalnızca 308 yönlendirmesi sayesinde çalışıyordu** — yönlendirme kaldırılsa
+kırık bağlantı olurdu.
+
+`arac-metadata --kontrol` bunu göremezdi: o yalnızca `TOOLS_DATABASE` ile
+indeksi karşılaştırıyor, `tools.ts` ÜÇÜNCÜ bir yer.
+
+Düzeltildi ve üretilmiş çıktıda doğrulandı: kardiyoloji branş sayfası artık
+`/tools/heart`e bağlanıyor, `heart-score` geçişi **0**.
+
+#### Nöbetçi eklendi — ve İLK HÂLİ KÖRDÜ, sebebi yeni bir tuzak biçimi
+
+`arac-metadata.cjs --kontrol` (CI kapısı) artık `tools.ts`teki her slug'ın
+gerçek bir `app/tools/<slug>/page.tsx` taşıdığını da doğruluyor.
+
+İlk yazımı "temiz" dedi — **iki pozitif kontrol de düştü.** Sebep, deponun en
+çok tekrar eden tuzağının (yorum körlüğü) daha önce görülmemiş bir biçimiydi:
+
+```
+// Klinik hesaplayıcıların (app/tools/*) branşlara göre eşlemesi.
+                                     ^^ SAHTE blok yorum acilisi
+```
+
+Blok yorumu ÖNCE ayıklayan bir ölçüt, bu `/*` işaretinden sonraki ilk blok
+kapanışına kadar her şeyi siliyor. Ölçüldü: **5044 karakterlik dosya 358
+karaktere indi**, regex 0 eşleşme buldu ve nöbetçi sessizce kör kaldı.
+
+Çare sıra: **önce SATIR yorumu, sonra BLOK yorumu** — o zaman `(app/tools/*)`
+blok ayıklama çalışmadan önce zaten boşaltılmış oluyor. Yorumlar silinmiyor,
+boşlukla dolduruluyor (satır sonları korunuyor).
+
+**Doğrulama dört ayaklı:**
+
+| kontrol | sonuç |
+|---|---|
+| pozitif 1 — `TOOLS`ta ölü slug | **yakalandı** (`TOOLS -> "heart-score"`) |
+| pozitif 2 — yalnızca `BRANCH_TOOLS`ta ölü slug | **yakalandı** (`BRANCH_TOOLS.romatoloji -> "olmayan-arac"`) |
+| negatif — temiz depo | geçiyor |
+| **çıkış kodu** | tohumluda **1**, temizde **0** — kapı gerçekten düşüyor |
+
+Son satır ayrı ölçüldü, çünkü çıktıyı `head`e boruladığında kod `head`in
+kodudur (belgede kayıtlı tuzak) ve ilk ölçüm "cikis=0" gösteriyordu.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN iki şey
+
+**1. Konu sayfalarında araç bağı YOK.** Branş sayfaları branşa özgü araçları
+gösteriyor (nefroloji 12, kardiyoloji 11 araç bağı) ama konu detay sayfaları
+tam **7** taşıyor ve yedisi de başlıktan gelen genel bağlar. Yani "Akut Böbrek
+Hasarı" okuyan kişiye `egfr` ya da `kdigo-aki` gösterilmiyor. `getBranchTools`
+yardımcısı hazır ve konu sayfası branşını biliyor — teknik engel yok. Ama
+her konu sayfasına branşın 2–7 aracını basmak gürültü de olabilir; bu bir
+tasarım kararı, ölçüldü ve bırakıldı.
+
+**2. 130 aracın 97'si hiçbir branşa eşli değil.** `BRANCH_TOOLS` 12 branşta
+toplam 33 araç sayıyor. Bu bir kusur değil — eşleme bilerek küratörlü
+("öncelik sırasına göre" diyor) ve `journal-club` için bilerek boş. Ama
+şeritte görünmeyen 97 araca yalnızca hub ve arama üzerinden ulaşılıyor.

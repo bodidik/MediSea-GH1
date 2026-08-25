@@ -182,8 +182,60 @@ function kontrolEt(sayfasiOlan) {
     (s) => m.has(s) && JSON.stringify(m.get(s)) !== JSON.stringify(b.get(s))
   );
 
+  /* İKİNCİ KAYNAK: app/lib/tools.ts.
+   *
+   * Orada elle tutulan bir eşleme var (TOOLS + BRANCH_TOOLS) ve branş
+   * sayfalarındaki "İlgili Hesaplayıcılar" şeridi ondan besleniyor. Dosyanın
+   * kendi başlığı slug'ların gerçek klasörlerle eşleşmesini şart koşuyor ama
+   * bunu doğrulayan hiçbir şey yoktu. ÖLÇÜLDÜ: `heart-score` orada kalmıştı,
+   * oysa araç `heart` ile birleştirilip klasörü silinmişti — kardiyoloji branş
+   * sayfası ölü bir slug'a bağlanıyor ve yalnızca 308 yönlendirmesi sayesinde
+   * çalışıyordu.
+   *
+   * `arac-index` karşılaştırması bunu GÖREMEZ: o yalnızca TOOLS_DATABASE ile
+   * indeksi karşılaştırıyor, tools.ts ÜÇÜNCÜ bir yer. */
+  const sluglar = new Set(sayfasiOlan.map((t) => t.slug));
+  const olu = [];
+  try {
+    const ts = fs.readFileSync(path.join(KOK, 'app', 'lib', 'tools.ts'), 'utf8');
+    /* SIRA ÖNEMLİ: önce SATIR yorumu, sonra BLOK yorumu.
+     *
+     * Ters sırada yapıldığında ÖLÇÜLDÜ: dosyanın ilk satırındaki
+     * "// ... (app/tools/<yıldız>) ..." metni SAHTE bir blok yorum açıyor ve
+     * sonraki blok kapanışına kadar her şeyi yiyor — 5044 karakterlik dosya
+     * 358'e indi, regex 0 eşleşme buldu ve nöbetçi SESSİZCE kör kaldı.
+     * Kusuru yalnızca pozitif kontrol gösterdi.
+     *
+     * Yorumlar SİLİNMİYOR, boşlukla dolduruluyor; satır sonları korunuyor. */
+    const bosalt = (m) => m.replace(/[^\n]/g, ' ');
+    const govde = ts
+      .replace(/\/\/[^\n]*/g, bosalt)
+      .replace(/\/\*[\s\S]*?\*\//g, bosalt);
+    for (const m of govde.matchAll(/"([a-z0-9-]+)"\s*:\s*\{\s*slug:\s*"([a-z0-9-]+)"/g)) {
+      if (!sluglar.has(m[2])) olu.push('TOOLS -> "' + m[2] + '"');
+    }
+    const mb = govde.match(/BRANCH_TOOLS[^=]*=\s*\{([\s\S]*?)\n\};/);
+    if (mb) {
+      for (const satir of mb[1].matchAll(/"([a-z0-9-]+)"\s*:\s*\[([^\]]*)\]/g)) {
+        for (const s2 of satir[2].matchAll(/"([a-z0-9-]+)"/g)) {
+          if (!sluglar.has(s2[1])) olu.push('BRANCH_TOOLS.' + satir[1] + ' -> "' + s2[1] + '"');
+        }
+      }
+    }
+  } catch {
+    console.error('UYARI: app/lib/tools.ts okunamadı, slug nöbetçisi çalışmadı.');
+  }
+
+  if (olu.length) {
+    console.error('app/lib/tools.ts ÖLÜ SLUG taşıyor — sayfası olmayan araca bağlanıyor:');
+    for (const o of [...new Set(olu)]) console.error('  ' + o);
+    console.error("Çare: slug'ı gerçek klasör adıyla değiştir (ya da kaydı kaldır).");
+    process.exitCode = 1;
+    return;
+  }
+
   if (!eksik.length && !fazla.length && !degisen.length) {
-    console.log(`arac-index.json senkron (${beklenen.length} araç).`);
+    console.log(`arac-index.json senkron (${beklenen.length} araç) · tools.ts slug'ları geçerli.`);
     return;
   }
   console.error('arac-index.json BAYAT — `node scripts/arac-metadata.cjs` çalıştır.');
