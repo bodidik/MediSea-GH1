@@ -6988,3 +6988,78 @@ Doğrulama 43 vaka, sekiz araçta; her araçta hem "tam vaka → sessiz" hem
 **Aktarılabilir kural: bir kapı eklerken ekranın o kapı devredeyken NE
 GÖSTERDİĞİNİ de ölç.** Kapı doğru çalışsa bile, kullanıcıya "neden" demiyorsa
 iş yarım kalmış olur.
+
+### DENETİM BAŞLIĞINA YAZILAN VERDİKT DE YANLIŞ OLABİLİR — `abg` iki kusur taşıyordu
+
+`cop-kapi-denetim` iki aday bırakmıştı ve ikisinin de verdikti betiğin başında
+"TEMİZ" diye yazılıydı. Belgedeki kural gereği ikisi de YENİDEN ölçüldü —
+biri gerçekten temizdi, öteki **iki ayrı kusur** taşıyordu.
+
+Yazılı verdikt şuydu: *"abg TEMİZ — ayrı `SINIRLAR` makullük kapısı çöpü
+yakalıyor."* İddia DOKUZ alanın SEKİZİ için doğruydu. `SINIRLAR.yas` `[0,120]`
+olduğu için yaş alanında `parseLocaleNumber("abc") = 0` kapıyı GEÇİYORDU.
+
+**Ders: bir verdikt "araçta ayrı bir kapı var" diye yazılırsa, o kapının
+BÜTÜN alanları kapsadığı ayrıca SAYILMALI.** Verdikt, denetimin kendisi kadar
+yetkili görünüyor ve kimse ikinci kez bakmıyor. (`unit-converter` verdikti bu
+kez doğru çıktı: 20 analitin 20'sinde alt sınır ≥ 0.1, en düşüğü kreatinin ve
+bilirubin 0.1 — çöpün ürettiği 0 hepsinde aralıktan düşüyor.)
+
+**KUSUR 1 — çöp yaş, NORMAL bir A-a gradyanını "yüksek" yapıyordu.**
+Beklenen A-a `yaş/4 + 4`; yaş 0'a düşünce 18 yerine 4 oluyor. Ölçüldü
+(pH 7.40 · PaCO₂ 40 · HCO₃⁻ 24 · PaO₂ 85 · FiO₂ 0.21):
+
+| yaş alanı | ekranda |
+|---|---|
+| `55` | A-a **15** · "yaşa göre beklenen aralıkta (≈18)" |
+| `abc` | A-a **15** · "**↑ yaşa göre beklenenin (≈4) üstünde**" |
+| boş | A-a 15 · "yaş girilmedi — beklenen değer hesaplanamıyor" |
+
+Aynı hastada aynı sayı, tek harf yüzünden ters damga: yükselmiş A-a gradyanı
+şant / V-Q uyumsuzluğu / PE düşündürür, yani yanlış pozitifin bedeli bir
+tetkik zinciri. Boş alanın zaten dürüst davranması ayırt edici oldu — kusur
+"hesaplanamıyor" dalında değil, çöpün sessizce 0 olmasındaydı.
+
+**KUSUR 2 — YARDIMCI alandaki yazım hatası BİRİNCİL yorumu susturuyordu.**
+`hatali` dizisi dokuz alanı birden topluyor ve yorum `hatali.length === 0`
+şartına bağlıydı. Oysa yaş, PaO₂ ve FiO₂ asit-baz yorumuna HİÇ girmiyor;
+Na⁺/Cl⁻/albümin yalnızca anyon açığını besliyor. Aracın kendi cümlesiyle
+ölçüldü (pH 7.25 · PaCO₂ 25 · HCO₃⁻ 11 — açık metabolik asidoz):
+
+| eklenen tek hata | sonuç |
+|---|---|
+| yaş 999 | **"Yorum yapılmadı"** — asidoz kayboldu |
+| Na⁺ `abc` | **"Yorum yapılmadı"** |
+| FiO₂ 5 | **"Yorum yapılmadı"** |
+
+Belgedeki "her değer KENDİ girdisine bağlı" kuralının (SOFA turu) asit-baz
+tarafı. Sınıfın burada yeni olan yanı: kural yalnızca SAYILARA değil
+**AÇIKLAMAYA** da uygulanmalı. İki ayrı uyarı kutusu var artık —
+
+- **çekirdek** (pH · PaCO₂ · HCO₃⁻) bozuksa: kırmızı, "Yorum yapılmadı";
+- **yardımcı** bozuksa: amber, "Bu alan(lar) hesaba KATILMADI — asit-baz
+  yorumu pH, PaCO₂ ve HCO₃⁻ üzerinden yapılmaya devam ediyor".
+
+**"boş" ile "bozuk" AYRI TUTULMAK ZORUNDA.** İkisini tek `null`a indirmek
+kolay ama yazım hatasını sessizce yutar: kullanıcı bir şey YAZMIŞ, araç
+görmezden geliyor. `oku()` üç durum döndürüyor (`bos` · `bozuk` · `gecerli`);
+boş alan sessizce atlanıyor, bozuk alan ADIYLA söyleniyor. A-a satırı da bu
+ayrımı taşıyor: "yaş girilmedi" ile "yaş makul değil (0–120)" farklı cümleler.
+
+**Negatif kontroller — yalıtımı İKİ YÖNDE birden ölç.** "Yorum artık çıkıyor"
+tek başına yetmez; bozuk alanın beslediği şeyin GERÇEKTEN düştüğü de
+görülmeli, yoksa kapıyı kaldırmış olursun:
+
+| ölçüt | sonuç |
+|---|---|
+| Na⁺ `abc` → birincil yorum | **duruyor** ("Metabolik asidoz · HCO₃⁻ 11") |
+| Na⁺ `abc` → anyon açığı | **düştü** — "Na⁺ ve Cl⁻ girilmeden hesaplanamaz" (0'dan AG uydurmuyor) |
+| Na⁺ `abc` → etiket | "Yüksek anyon açıklı metabolik asidoz" → **"Metabolik asidoz"** |
+| FiO₂ 5 → yorum + AG | ikisi de duruyor; **oksijenasyon düştü** (A-a "—") |
+| pH `abc` (çekirdek) | yorum kartı **YOK**, kırmızı "Yorum yapılmadı" — değişmedi |
+| yaş boş | "yaş girilmedi" — eski metin korundu, yeni dal yersiz ateşlemiyor |
+| bomboş form | uyarı 0, yorum kartı yok |
+| tam temiz vaka | Solunum asidozu + Metabolik alkaloz (sınırda) · AG 11 · A-a 5 (≈22) · P/F 333 |
+
+Son satır elle doğrulandı: A-a = 0.21×713 − 60/0.8 − 70 = **4.73**, beklenen
+70/4+4 = **21.5**, P/F = 70/0.21 = **333**.

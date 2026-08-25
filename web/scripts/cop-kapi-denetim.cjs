@@ -37,12 +37,24 @@
  *   sofa · das28 · spot-urine   KUSURLUYDU  -> sayiGirildiMi (düzeltildi)
  *   anc                          KUSURLUYDU  -> sayiGirildiMi (ayna hâli)
  *   fosfat-replasman             TEMİZ — sınırlar 20 ve > 0
- *   unit-converter               TEMİZ — 21 analitin hepsinde alt sınır ≥ 0.1
- *   abg                          TEMİZ — ayrı SINIRLAR makullük kapısı var
+ *   unit-converter               TEMİZ — 20 analitin hepsinde alt sınır ≥ 0.1
+ *                                (en düşüğü kreatinin/bilirubin 0.1, en yükseği
+ *                                sodyum/klor 50; hba1c 2) — çöpün ürettiği 0
+ *                                hepsinde aralıktan düşüyor
+ *   abg                          KUSURLUYDU -> düzeltildi (aşağıya bak)
  *
- * Son ikisi KAYNAKTAN değil TARAYICIDA sürülerek kapatıldı: sınırları çeken
- * regex "0.1"in başındaki sıfırı yakalayıp sahte aday üretmişti. Kaynak
- * ayrıştırmak yerine davranışa bakmak hem ucuz hem kesin.
+ * ⚠ BURAYA YAZILAN BİR VERDİKT DE YANLIŞ OLABİLİR — `abg` örneği.
+ *
+ * Bu başlık bir dönem "abg TEMİZ — ayrı SINIRLAR makullük kapısı çöpü
+ * yakalıyor" diyordu. İddia DOKUZ alanın SEKİZİ için doğruydu; `SINIRLAR.yas`
+ * [0,120] olduğu için yaş alanında çöp 0'a düşüp kapıyı GEÇİYORDU. Tarayıcıda
+ * ölçüldü: yaş "abc" yazıldığında beklenen A-a gradyanı 18 yerine 4 çıkıyor ve
+ * NORMAL bir gradyan "yüksek" damgası alıyordu (şant/PE düşündüren yanlış
+ * pozitif).
+ *
+ * Ders: bir verdikt "araçta ayrı bir kapı var" diye yazılırsa, o kapının
+ * BÜTÜN alanları kapsadığı ayrıca sayılmalı. Verdikt, denetimin kendisi kadar
+ * yetkili görünüyor ve kimse ikinci kez bakmıyor.
  *
  * CI KAPISI DEĞİL, RAPOR: bir alanın 0 alıp alamayacağı klinik bir karar.
  *

@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 import {
   yorumla,
   araliktaMi,
@@ -93,38 +93,88 @@ export default function AbgPage() {
   const [yas, setYas] = React.useState("");
   const [sure, setSure] = React.useState<"akut" | "kronik">("akut");
 
-  const sayi = (ham: string) => (ham.trim() === "" ? null : parseLocaleNumber(ham));
+  /**
+   * ÜÇ DURUMLU OKUMA — boş · bozuk · geçerli.
+   *
+   * İki kusur birden ölçüldü ve ikisi de bu ayrımın YOKLUĞUNDAN geliyordu.
+   *
+   * 1) ÇÖP GİRDİ SESSİZCE 0 OLUYORDU. `parseLocaleNumber("abc")` 0 döndürür.
+   *    Alt sınırı 0'ın üstünde olan alanlarda bu zaten aralık dışına düşüyor,
+   *    ama YAŞ sınırı [0,120] olduğu için GEÇİYORDU. Tarayıcıda ölçüldü
+   *    (pH 7.40 · PaCO₂ 40 · HCO₃⁻ 24 · PaO₂ 85 · FiO₂ 0.21):
+   *
+   *      yaş "55"   ->  A-a 15 · "yaşa göre beklenen aralıkta (≈18)"
+   *      yaş "abc"  ->  A-a 15 · "↑ beklenenin (≈4) üstünde"  ← YANLIŞ ALARM
+   *
+   *    Yaş 0'a düşünce beklenen A-a 4 oluyor ve NORMAL bir gradyan yüksek
+   *    görünüyor: şant / V-Q uyumsuzluğu / PE düşündüren bir yanlış pozitif.
+   *
+   * 2) YARDIMCI ALANDAKİ HATA BİRİNCİL YORUMU SUSTURUYORDU. Yaş, PaO₂ ve
+   *    FiO₂ asit-baz yorumuna hiç girmiyor; Na⁺/Cl⁻/albümin yalnızca anyon
+   *    açığını besliyor. Yine de birine yazılan hata "Yorum yapılmadı"
+   *    diyordu — aracın KENDİ cümlesiyle ölçüldü:
+   *
+   *      pH 7.25 · PaCO₂ 25 · HCO₃⁻ 11 + yaş 999  ->  yorum YOK
+   *      aynı çekirdek + Na⁺ "abc"                ->  yorum YOK
+   *      aynı çekirdek + FiO₂ 5                   ->  yorum YOK
+   *
+   *    Belgedeki "her değer KENDİ girdisine bağlı" kuralı (SOFA turu).
+   *    Artık yalnızca ÇEKİRDEK (pH · PaCO₂ · HCO₃⁻) yorumu durduruyor;
+   *    bozuk bir yardımcı alan GİRİLMEMİŞ sayılıyor ve ADIYLA söyleniyor.
+   *
+   * "bozuk" ile "boş" ayrı tutulmak zorunda: boş alan sessizce atlanır,
+   * bozuk alan söylenir. İkisi tek `null`a indirilseydi yazım hatası
+   * sessizce yutulurdu.
+   */
+  type Okuma = { durum: "bos" | "bozuk" | "gecerli"; deger: number | null };
+  const oku = (ham: string, sinir: readonly [number, number]): Okuma => {
+    if (ham.trim() === "") return { durum: "bos", deger: null };
+    if (!sayiGirildiMi(ham)) return { durum: "bozuk", deger: null };
+    const n = parseLocaleNumber(ham);
+    return araliktaMi(n, sinir)
+      ? { durum: "gecerli", deger: n }
+      : { durum: "bozuk", deger: null };
+  };
 
-  const phN = sayi(ph);
-  const pco2N = sayi(pco2);
-  const hco3N = sayi(hco3);
-  const pao2N = sayi(pao2);
-  const fio2N = sayi(fio2);
-  const naN = sayi(na);
-  const clN = sayi(cl);
-  const albN = sayi(alb);
-  const yasN = sayi(yas);
+  const oPh = oku(ph, SINIRLAR.ph);
+  const oPco2 = oku(pco2, SINIRLAR.pco2);
+  const oHco3 = oku(hco3, SINIRLAR.hco3);
+  const oPao2 = oku(pao2, SINIRLAR.pao2);
+  const oFio2 = oku(fio2, SINIRLAR.fio2);
+  const oNa = oku(na, SINIRLAR.na);
+  const oCl = oku(cl, SINIRLAR.cl);
+  const oAlb = oku(alb, SINIRLAR.albumin);
+  const oYas = oku(yas, SINIRLAR.yas);
+
+  const phN = oPh.deger;
+  const pco2N = oPco2.deger;
+  const hco3N = oHco3.deger;
+  const pao2N = oPao2.deger;
+  const fio2N = oFio2.deger;
+  const naN = oNa.deger;
+  const clN = oCl.deger;
+  const albN = oAlb.deger;
+  const yasN = oYas.deger;
 
   const cekirdekVar = phN !== null && pco2N !== null && hco3N !== null;
 
-  /**
-   * Makul olmayan girdiyi ADIYLA söyle. parseLocaleNumber çözemediği her şeyi
-   * 0 döndürüyor; sessizce 0 ile hesaplamak, bu depoda ölçülmüş en pahalı
-   * kusur sınıfı (boş formdan ağır klinik etiket üretmek).
-   */
-  const hatali: string[] = [];
-  if (phN !== null && !araliktaMi(phN, SINIRLAR.ph)) hatali.push("pH");
-  if (pco2N !== null && !araliktaMi(pco2N, SINIRLAR.pco2)) hatali.push("PaCO₂");
-  if (hco3N !== null && !araliktaMi(hco3N, SINIRLAR.hco3)) hatali.push("HCO₃⁻");
-  if (naN !== null && !araliktaMi(naN, SINIRLAR.na)) hatali.push("Na⁺");
-  if (clN !== null && !araliktaMi(clN, SINIRLAR.cl)) hatali.push("Cl⁻");
-  if (albN !== null && !araliktaMi(albN, SINIRLAR.albumin)) hatali.push("Albümin");
-  if (pao2N !== null && !araliktaMi(pao2N, SINIRLAR.pao2)) hatali.push("PaO₂");
-  if (fio2N !== null && !araliktaMi(fio2N, SINIRLAR.fio2)) hatali.push("FiO₂");
-  if (yasN !== null && !araliktaMi(yasN, SINIRLAR.yas)) hatali.push("Yaş");
+  const bozukAd = (o: Okuma, ad: string) => (o.durum === "bozuk" ? ad : null);
+  const cekirdekHatali = [
+    bozukAd(oPh, "pH"),
+    bozukAd(oPco2, "PaCO₂"),
+    bozukAd(oHco3, "HCO₃⁻"),
+  ].filter((x): x is string => x !== null);
+  const yardimciHatali = [
+    bozukAd(oNa, "Na⁺"),
+    bozukAd(oCl, "Cl⁻"),
+    bozukAd(oAlb, "Albümin"),
+    bozukAd(oPao2, "PaO₂"),
+    bozukAd(oFio2, "FiO₂"),
+    bozukAd(oYas, "Yaş"),
+  ].filter((x): x is string => x !== null);
 
   const y =
-    cekirdekVar && hatali.length === 0
+    cekirdekVar
       ? yorumla({
           ph: phN!,
           pco2: pco2N!,
@@ -139,17 +189,11 @@ export default function AbgPage() {
   const solunumVar = y?.bulgular.some((b) => b.tip.startsWith("solunum")) ?? false;
 
   /* ── Oksijenasyon ─────────────────────────────────────────────────── */
-  const oksGecerli =
-    pao2N !== null &&
-    fio2N !== null &&
-    pco2N !== null &&
-    araliktaMi(pao2N, SINIRLAR.pao2) &&
-    araliktaMi(fio2N, SINIRLAR.fio2) &&
-    araliktaMi(pco2N, SINIRLAR.pco2);
+  /* `oku` zaten aralığı sınadı: null olmayan her değer geçerli. */
+  const oksGecerli = pao2N !== null && fio2N !== null && pco2N !== null;
   const paO2Alveol = oksGecerli ? fio2N! * 713 - pco2N! / 0.8 : null;
   const aaFark = paO2Alveol !== null ? paO2Alveol - pao2N! : null;
-  const yasGecerli = yasN !== null && araliktaMi(yasN, SINIRLAR.yas);
-  const aaNormal = yasGecerli ? yasN! / 4 + 4 : null;
+  const aaNormal = yasN !== null ? yasN / 4 + 4 : null;
   const pf = oksGecerli ? Math.round(pao2N! / fio2N!) : null;
 
   return (
@@ -218,11 +262,23 @@ export default function AbgPage() {
           </div>
         </div>
 
-        {hatali.length > 0 && (
+        {cekirdekHatali.length > 0 && (
           <div className="bg-rose-50 border-2 border-rose-300 rounded-2xl p-4" role="alert">
             <p className="text-[12px] leading-relaxed text-rose-900">
               <strong>Şu değer(ler) beklenen aralığın çok dışında:</strong>{" "}
-              {hatali.join(", ")}. Yorum yapılmadı — yazım hatası olabilir.
+              {cekirdekHatali.join(", ")}. Yorum yapılmadı — yazım hatası olabilir.
+            </p>
+          </div>
+        )}
+
+        {/* Yardımcı alan bozuksa yorum DURMAZ; o alan hesaba katılmaz ve söylenir. */}
+        {yardimciHatali.length > 0 && (
+          <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-4" role="alert">
+            <p className="text-[12px] leading-relaxed text-amber-900">
+              <strong>Şu değer(ler) beklenen aralığın çok dışında:</strong>{" "}
+              {yardimciHatali.join(", ")}. Bu alan(lar) hesaba KATILMADI — yazım
+              hatası olabilir. Asit-baz yorumu pH, PaCO₂ ve HCO₃⁻ üzerinden
+              yapılmaya devam ediyor.
             </p>
           </div>
         )}
@@ -415,7 +471,9 @@ export default function AbgPage() {
                     ? aaFark > aaNormal
                       ? `↑ yaşa göre beklenenin (≈${aaNormal.toFixed(0)}) üstünde`
                       : `yaşa göre beklenen aralıkta (≈${aaNormal.toFixed(0)})`
-                    : "yaş girilmedi — beklenen değer hesaplanamıyor"}
+                    : oYas.durum === "bozuk"
+                      ? `yaş makul değil (${SINIRLAR.yas[0]}–${SINIRLAR.yas[1]}) — beklenen değer hesaplanamıyor`
+                      : "yaş girilmedi — beklenen değer hesaplanamıyor"}
                 </div>
               </div>
               {pf !== null && (
