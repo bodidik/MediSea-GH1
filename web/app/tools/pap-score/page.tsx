@@ -40,20 +40,42 @@ const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: 
   </label>
 );
 
-const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
+/**
+ * SEÇİM PUANLA DEĞİL KİMLİKLE (İNDEKSLE) SAKLANIYOR.
+ *
+ * Eski hâli `value: number` idi ve vurgulama `value === v` ile yapılıyordu;
+ * yani seçimin kimliği PUANIN KENDİSİYDİ. Puanlar benzersizken çalışıyor,
+ * aynı puanı taşıyan iki şık olduğu anda bozuluyor.
+ *
+ * CPS'te tam olarak bu var ve yayımlanmış PaP'ta da öyle:
+ *   "9–10 hafta" -> 2.5      "7–8 hafta" -> 2.5
+ *
+ * Tarayıcıda ölçüldü — "9–10 hafta"ya tıklandığında CPS grubunda İKİ radyo
+ * birden `checked` oluyordu ("9–10" ve "7–8"), ikisi de mavi vurgulanıyordu.
+ * SKOR doğruydu (ikisi de 2.5), o yüzden sayıya bakan bir ölçüm "temiz" der;
+ * kusur yalnızca arayüzde ve erişilebilirlik ağacında görünüyor: kullanıcı
+ * hangi şıkkı seçtiğini göremiyor, ekran okuyucu tek bir grupta iki seçili
+ * radyo bildiriyor.
+ *
+ * `apache2` bu sınıftan geçmişti ve çaresi aynı: seçimi KİMLİKLE sakla.
+ * Orada `{pts,label}` nesnesi tutuldu; burada indeks yetiyor çünkü
+ * seçenekler sabit bir dizide duruyor. `key` de indekse bağlandı —
+ * `key={v + l}` çalışıyordu ama aynı kırılganlığın başka bir biçimi.
+ */
+const RadioGroup = ({ label, opts, idx, onChange }: { label: string; opts: readonly (readonly [string, number])[]; idx: number; onChange: (i: number) => void }) => (
   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
     <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
     <div className="grid gap-1.5">
-      {opts.map(([l, v]) => (
-        <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
-          ${value === v ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
+      {opts.map(([l, v], i) => (
+        <label key={i} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
+          ${idx === i ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
           <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0
-            ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
-            {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
+            ${idx === i ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
+            {idx === i && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
           </div>
-          <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
-          <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
-          <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
+          <input type="radio" className="sr-only" checked={idx === i} onChange={() => onChange(i)} />
+          <span className={`text-[12px] font-bold flex-1 ${idx === i ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
+          <span className={`text-[10px] font-black ${idx === i ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
         </label>
       ))}
     </div>
@@ -61,12 +83,18 @@ const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: rea
 );
 
 export default function PapScorePage() {
-  const [cps,     setCps]     = React.useState(0);
-  const [kps,     setKps]     = React.useState(0);
+  /* Durum INDEKS tutuyor; puan seçenek dizisinden okunuyor (bkz. RadioGroup). */
+  const [cpsIdx, setCpsIdx] = React.useState(0);
+  const [kpsIdx, setKpsIdx] = React.useState(0);
   const [anorexia,setAnorexia]= React.useState(false);
   const [dyspnea, setDyspnea] = React.useState(false);
-  const [wbc,     setWbc]     = React.useState(0);
-  const [lym,     setLym]     = React.useState(0);
+  const [wbcIdx, setWbcIdx] = React.useState(0);
+  const [lymIdx, setLymIdx] = React.useState(0);
+
+  const cps = CPS_OPTS[cpsIdx][1];
+  const kps = KPS_OPTS[kpsIdx][1];
+  const wbc = WBC_OPTS[wbcIdx][1];
+  const lym = LYM_OPTS[lymIdx][1];
 
   const score = cps + kps + (anorexia ? 1.5 : 0) + (dyspnea ? 1 : 0) + wbc + lym;
   const rounded = Math.round(score * 10) / 10;
@@ -97,12 +125,12 @@ export default function PapScorePage() {
         </div>
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
-          <RadioGroup label="Klinisyen Sağkalım Tahmini (CPS)" opts={CPS_OPTS} value={cps} onChange={setCps} />
-          <RadioGroup label="Karnofsky Performans Skoru" opts={KPS_OPTS} value={kps} onChange={setKps} />
+          <RadioGroup label="Klinisyen Sağkalım Tahmini (CPS)" opts={CPS_OPTS} idx={cpsIdx} onChange={setCpsIdx} />
+          <RadioGroup label="Karnofsky Performans Skoru" opts={KPS_OPTS} idx={kpsIdx} onChange={setKpsIdx} />
           <CheckRow label="Anoreksi" sub="İştahsızlık mevcut" pts={1.5} checked={anorexia} onChange={() => setAnorexia(v => !v)} />
           <CheckRow label="İstirahat Dispnesi" sub="Dinlenirken nefes darlığı" pts={1} checked={dyspnea} onChange={() => setDyspnea(v => !v)} />
-          <RadioGroup label="Lökosit Sayısı" opts={WBC_OPTS} value={wbc} onChange={setWbc} />
-          <RadioGroup label="Lenfosit Yüzdesi" opts={LYM_OPTS} value={lym} onChange={setLym} />
+          <RadioGroup label="Lökosit Sayısı" opts={WBC_OPTS} idx={wbcIdx} onChange={setWbcIdx} />
+          <RadioGroup label="Lenfosit Yüzdesi" opts={LYM_OPTS} idx={lymIdx} onChange={setLymIdx} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

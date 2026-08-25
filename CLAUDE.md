@@ -7283,3 +7283,85 @@ elenirken meşru değerler de gidiyor mu? (5+3+3+3+3 değil, 1+3+3+3+3 = 13.)
 bilirubin <2/2–3/>3 · albümin >3,5/2,8–3,5/<2,8 · INR <1,7/1,7–2,2/>2,2 ·
 asit ve ensefalopati üçer basamak; sınıf sınırları A 5–6 · B 7–9 · C 10–15
 (kodda `>= 10` ve `>= 7`) ve sağkalım oranları %100/%80/%45.
+
+### "AYNI PUANLI ŞIKLAR TEK DÜĞME OLUR" SINIFI GERİ GELDİ — `pap-score`
+
+Belgede kayıtlı sınıf: seçim durumu PUANLA saklanırsa (`value === opt.pts`),
+aynı puanı taşıyan iki şık birlikte yanıp birlikte söner. O tur "114 araç
+tarandı; yalnızca `apache2` ve `gout-acr`" diye kapatılmıştı. Depoda bugün
+131 araç var ve ölçüt yeniden sürülünce `pap-score` çıktı.
+
+**Kusur yayımlanmış tanımın kendisinden geliyor.** PaP'ta CPS basamakları:
+
+```
+"9–10 hafta" -> 2.5        "7–8 hafta" -> 2.5
+```
+
+İki farklı klinik seçenek, aynı puan. `RadioGroup` `value === v` ile
+vurguladığı için ikisi birden seçili oluyordu.
+
+Tarayıcıda ölçüldü — "9–10 hafta"ya tıklandığında CPS grubunda **iki radyo
+birden `checked`**, ikisi de mavi. **SKOR DOĞRUYDU** (ikisi de 2.5), yani
+sayıya bakan bir ölçüm "temiz" der; kusur yalnızca arayüzde ve erişilebilirlik
+ağacında: kullanıcı hangi şıkkı seçtiğini göremiyor, ekran okuyucu tek grupta
+iki seçili radyo bildiriyor.
+
+Çare `apache2` ile aynı: seçimi **kimlikle** sakla. Orada `{pts,label}`
+nesnesi tutulmuştu; burada indeks yetiyor. `key={v + l}` de indekse bağlandı —
+çalışıyordu ama aynı kırılganlığın başka biçimi.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| "9–10 hafta" seçili | CPS grubunda **2** radyo | **1** |
+| "7–8 hafta" seçili | CPS grubunda **2** radyo | **1** |
+| **negatif** — tavan (hepsi en ağır) | — | **17,5 · Grup C · "< %30"** |
+| **negatif** — CPS 4,5 + KPS 2,5 | — | **7 · Grup B · "~%30–70"** |
+
+Tavan satırı ayrıca payda denetimi: 8,5 + 2,5 + 1,5 + 1 + 1,5 + 2,5 = **17,5**,
+yayımlanmış PaP azamisiyle birebir. Bantlar da doğru (A ≤5,5 · B ≤11 · C >11)
+ve şık puanları yayımlanmış hâliyle karşılaştırıldı — CPS yedi basamak, KPS
+0/2,5, anoreksi 1,5, dispne 1, lökosit 0/0,5/1,5, lenfosit 0/1/2,5.
+
+**Ölçüt bir kez daha yanlış pozitif üretti ve şekli öğretici:** `apache2` on
+bir grupta tekrar eden puan taşıyor (fizyolojik merdivenler simetrik — hem
+çok yüksek hem çok düşük 4 puan) ve tarama onu işaretledi. Ama `apache2`
+ARTIK kimlikle karşılaştırıyor (`sel[param.id]?.label === opt.label`). Yani
+tekrar eden puanın KENDİSİ kusur değil; kusur **tekrar eden puan + puanla
+karşılaştırma** ikilisi. İki koşul birden aranmalı ve ikincisi seçim
+mekanizmasına bakarak doğrulanmalı.
+
+### Kapalı bir sayımı yeniden yapmak — bu turda ikinci kez iş çıkardı
+
+`child-pugh` turunda "11 adres okuyan araç" sayımı 15 çıkmıştı. Aynı yöntem
+"sayısal varsayılanı olan 27 (+3) araç" iddiasına uygulandı:
+
+| biçim | araç |
+|---|---|
+| `useState("140")` düz metin | 27 |
+| `useState<string>(s?.get("pf") \|\| "400")` | 3 |
+| **`useState(24)` — SAYI tipli** | **17** |
+
+Metin tarafı tutuyor (27 + 3 = 30, belgedeki düzeltilmiş sayı doğru). Ama
+**sayı tipli varsayılan hiç sayılmamıştı.** Onaltısı indeks/sekme seçicisi
+(zararsız), biri (`pap-score`) yukarıdaki kusuru taşıyordu.
+
+Bu tarama ayrıca bir soru açıyor ve cevabı KUSUR DEĞİL: `pap-score`, `ppi`,
+`rockall`, `findrisc` gibi seçici tabanlı araçlar dokunulmamış formda bir
+prognoz basıyor (`pap-score` "Grup A · 30 günlük sağkalım > %70",
+`ppi` "≥ 6 HAFTA"). Ölçüldü — bu araçlarda her grubun varsayılan seçeneği
+EKRANDA GÖRÜNÜR biçimde işaretli (radyo dolu). Yani `nrs-2002`deki
+"`<select>`te `value` yoksa dokunulmadı ile ilk seçenek aynı şeydir" durumu
+DEĞİL: burada seçim beyan ediliyor. Ayrım ölçülebilir ve ölçüldü —
+`input:checked` sayısı grup sayısına eşit.
+
+### `curb65` ve `bode` yayımlanmış hâliyle karşılaştırıldı — temiz
+
+Aynı turda sürekli değişkenli iki skor daha okundu:
+
+- **CURB-65**: konfüzyon · üre > 7 mmol/L (**> 19 mg/dL BUN** — araç İKİ
+  birimi birden yazıyor, belgedeki birim ilanı kuralının örnek uygulaması) ·
+  SS ≥ 30 · SKB < 90 / DKB ≤ 60 · yaş ≥ 65; bantlar 0–1 ayaktan, 2 kısa
+  yatış, ≥3 yatış/YBÜ. Hepsi yayımlanmış hâliyle birebir.
+- **BODE**: VKİ >21/≤21 · FEV₁ ≥65/50–64/36–49/≤35 · mMRC 0–1/2/3/4 ·
+  6DYT ≥350/250–349/150–249/<150 · çeyrekler 0–2/3–4/5–6/7–10 ve dört
+  yıllık sağkalım %80/%67/%57/%18. Birebir.
