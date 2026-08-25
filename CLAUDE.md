@@ -9271,3 +9271,84 @@ kullanıcı kararı bekleyen `− 0.211` sabiti. **Dokunulmadı.**
 **Böylece sınıfın dört aracı da karara bağlandı:** `pni` · `gnri` (önceki tur)
 ve `asdas` · `ktv` (bu tur) düzeltildi; `haq-di` · `murray` yapısal olarak
 güvenli. Sınıf KAPALI.
+
+### DOĞRULAMA ÇABASININ KENDİ KAPSAMI ÖLÇÜLDÜ — 6 araç belgede hiç geçmiyordu
+
+Yeni bir ölçüt üretmek yerine, yapılan işin kapsamı sayıldı: **130 aracın
+kaç tanesi bu belgede adı geçiyor?**
+
+```
+toplam 130 · belgede GEÇEN 124 · HİÇ GEÇMEYEN 6
+```
+
+Altısı: `anaphylaxis` · `cam-icu` · `canadian-ct` · `endocarditis` · `mmrc` ·
+`pps` — yani turlarca süren doğrulama hiç onlara uğramamış. Kapsamı ölçmek,
+yeni bir ölçüt yazmaktan ucuz ve bu turda **iki gerçek kusur** çıkardı.
+
+### HÜKÜM, YANITLANMAMIŞ GİRDİ ONU DEĞİŞTİREMEZ HALE GELDİĞİ AN VERİLİR
+
+`glim` turunda konan "erken hüküm" kuralının genel biçimi bu. İki araç kuralı
+çiğniyordu ve **ikisi de kendi ekranında yazan kuralı uygulamıyordu.**
+
+**`anaphylaxis`** — NIAID/FAAN (Sampson 2006, aracın kendi kaynağı) anafilaksiyi
+"üç kriterden HERHANGİ BİRİ" ile tanımlar. Kod ise `allAnswered` istiyordu.
+
+| ölçüldü (önce) | ekranda |
+|---|---|
+| 1. kriter "Kriter Karşılandı" | **"Tüm 3 kriteri değerlendirin"** — tanı YOK, epinefrin talimatı YOK |
+| üçü de yanıtlı | "ANAFİLAKSİ TANILANDIRILDI" + epinefrin |
+
+Bedeli sayfanın kendi uyarısında yazılı: *"Epinefrin geciktirilmesi en önemli
+ölüm nedenidir."*
+
+**`canadian-ct`** — bölüm başlığı "Yüksek Risk Kriterleri (**herhangi** biri…)"
+diyor, kod `totalAnswered === total` istiyordu.
+
+| ölçüldü (önce) | ekranda |
+|---|---|
+| bir yüksek riskli ölçüt "Evet" (1/7) | **hiçbir hüküm YOK** |
+
+Bu, `haq-di` · `murray` · `apache2` ile aynı sınıf: **ilan edilip
+uygulanmayan kural** — üçüncü ve dördüncü örnek.
+
+#### Kuralın kesin ifadesi
+
+"Pozitif erken verilir, negatif tamlık ister" YETERSİZ bir ifade. `cam-icu`
+gibi bir KONJONKSİYONDA negatif de erken belirlenir (F1 "hayır" ise deliryum
+yok, F2/F3/F4 bakılmadan). Doğru ölçüt:
+
+> **Kalan yanıtların hiçbiri sonucu değiştiremiyorsa hüküm o an verilir.**
+
+Uygulaması araç başına farklı:
+
+| araç | erken verilebilen | tamlık isteyen |
+|---|---|---|
+| `anaphylaxis` | herhangi bir kriter true → TANI | dışlama (üçü de false) |
+| `canadian-ct` | herhangi bir yüksek risk true → **HIGH** · yüksekler bitti + orta true → **MEDIUM** | NONE (yedisi de false) |
+| `glim` | ≥1 fenotipik ve ≥1 etiyolojik → TANI | "karşılanmadı" |
+
+**Doğrulama — `canadian-ct`, dördü de ölçüldü:**
+
+| girdi | sonuç |
+|---|---|
+| 1 yüksek risk "Evet" (1/7) | **BT GEREKLİ (Yüksek Risk)** — anında |
+| 3 yüksek risk "Hayır" (3/7) | bekliyor · "Hüküm için **4 kriter daha**" |
+| 5 yüksek risk "Hayır" (5/7) | **hâlâ bekliyor** — doğru, orta riskli bir bulgu hükmü değiştirebilir |
+| +1 orta risk "Evet" (6/7) | **BT GEREKLİ (Orta Risk)** — 7.'yi beklemeden |
+| **negatif** — yedisi de "Hayır" | **BT GEREKMİYOR** — dışlama korunmuş |
+
+Üçüncü satır ayırt edici: erken hüküm kuralı "elindekiyle karar ver" DEĞİL;
+yalnızca kalan yanıtlar sonucu değiştiremiyorsa geçerli.
+
+**Doğrulama — `anaphylaxis`:**
+
+| girdi | sonuç |
+|---|---|
+| yalnızca 1. kriter "Karşılandı" | **ANAFİLAKSİ TANILANDIRILDI** + epinefrin — anında |
+| dokunulmamış | "Anafilaksi dışlanamadı · Yanıtlanmayan: Kriter 1 · 2 · 3" (`role="alert"`) |
+| 1 ve 2 "Karşılanmadı" | eksik liste "Kriter 3"e iniyor |
+| **negatif** — üçü de "Karşılanmadı" | "Mevcut bulgular anafilaksi tanı kriterlerini karşılamıyor" |
+
+**Kalan dört araç:** `mmrc` ve `pps` `null` başlıyor, hüküm kapısı doğru.
+`cam-icu` (F1 ∧ F2 ∧ (F3 ∨ F4)) ve `endocarditis` (Duke, onay kutusu) aynı
+şekli KAYNAKTA taşıyor ama **tarayıcıda ölçülmediler — "temiz" DENMİYOR.**

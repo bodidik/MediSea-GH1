@@ -41,8 +41,25 @@ const CRITERIA = [
 
 export default function AnaphylaxisPage() {
   const [sel, setSel] = React.useState<Record<string, boolean | null>>({ c1: null, c2: null, c3: null });
-  const allAnswered = Object.values(sel).every(v => v !== null);
+
+  /**
+   * NIAID/FAAN (Sampson 2006 — bu aracin kendi kaynagi) anafilaksiyi
+   * "UC KRITERDEN HERHANGI BIRI" ile tanimlar. Bir donem hukum
+   * `allAnswered` kapisinin arkasindaydi ve OLCULDU: birinci kriter
+   * "Karsilandi" isaretlendiginde ekran hala "Tum 3 kriteri degerlendirin"
+   * diyor, ne tani ne epinefrin talimati gorunuyordu.
+   *
+   * Sayfanin kendi uyarisi bunun bedelini yaziyor: "Epinefrin geciktirilmesi
+   * en onemli olum nedenidir." glim turundaki erken hukum kuralinin aynisi --
+   * TANI KONDUYSA oteki alanlar bos olsa bile hukum verilebilir; DISLAMA ise
+   * ucunun de yanitlanmasini gerektirir.
+   */
   const isAnaphylaxis = Object.values(sel).some(v => v === true);
+  const kesinYok = Object.values(sel).every(v => v === false);
+  const hukum: "var" | "yok" | null = isAnaphylaxis ? "var" : kesinYok ? "yok" : null;
+  const eksikKriterler = Object.entries(sel)
+    .filter(([, v]) => v === null)
+    .map(([k]) => k.replace("c", "Kriter "));
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -98,8 +115,8 @@ export default function AnaphylaxisPage() {
           ))}
         </div>
 
-        {allAnswered ? (
-          isAnaphylaxis ? (
+        {hukum !== null ? (
+          hukum === "var" ? (
             <div className="p-6 rounded-[2rem] border-2 border-dashed border-rose-400 bg-rose-50 space-y-3">
               <div className="flex items-center gap-4">
                 <div className="w-20 h-20 rounded-2xl bg-rose-600 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
@@ -131,8 +148,12 @@ export default function AnaphylaxisPage() {
             </div>
           )
         ) : (
-          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 3 kriteri değerlendirin</p>
+          <div role="alert" className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Anafilaksi dışlanamadı</p>
+            <p className="text-[11px] font-bold text-slate-600 mt-1">
+              Tanı için tek bir kriterin karşılanması yeter; dışlamak için üçü de yanıtlanmalı.
+              Yanıtlanmayan: {eksikKriterler.join(" · ")}
+            </p>
           </div>
         )}
 

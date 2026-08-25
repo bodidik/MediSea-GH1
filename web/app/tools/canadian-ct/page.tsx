@@ -60,8 +60,31 @@ export default function CanadianCTPage() {
   const anyHigh = HIGH_RISK.some(i => high[i.id] === true);
   const anyMed  = MEDIUM_RISK.some(i => med[i.id] === true);
 
-  const complete = totalAnswered === total;
-  const result = !complete ? null : anyHigh ? "HIGH" : anyMed ? "MEDIUM" : "NONE";
+  /**
+   * HUKUM, YANITLANMAMIS GIRDI ONU DEGISTIREMEZ HALE GELDIGI ANDA verilir.
+   *
+   * Bir donem kosul `totalAnswered === total` idi ve OLCULDU: tek bir yuksek
+   * riskli olcut "Evet" isaretlendiginde (1/7) ekran HICBIR hukum basmiyordu.
+   * Oysa sayfanin kendi bolum basligi "Yuksek Risk Kriterleri (HERHANGI biri
+   * ...)" diyor -- arac ilan ettigi kurali uygulamiyordu (haq-di / murray /
+   * apache2 ile ayni sinif) ve kafa travmasi triyajinda goruntuleme kararini
+   * geciktiriyordu.
+   *
+   * Kural uc durumlu:
+   *   HIGH   -> herhangi bir yuksek riskli olcut true; geri kalan hicbir yanit
+   *             bunu degistiremez, hemen basilir.
+   *   MEDIUM -> yuksek risklilerin HEPSI yanitli ve hicbiri true degil, ama
+   *             bir orta riskli true.
+   *   NONE   -> hepsi yanitli ve hicbiri true.
+   */
+  const highTumu = highAnswered === HIGH_RISK.length;
+  const medTumu  = medAnswered === MEDIUM_RISK.length;
+  const result =
+      anyHigh                          ? "HIGH"
+    : highTumu && anyMed               ? "MEDIUM"
+    : highTumu && medTumu              ? "NONE"
+    : null;
+  const eksikSayisi = total - totalAnswered;
 
   const RESULT_MAP = {
     HIGH:   { label: "BT GEREKLİ (Yüksek Risk)", color: "rose",    sub: "Nöroşirürji gerektiren bulgu açısından yüksek risk — hemen BT çekilmeli" },
@@ -142,8 +165,8 @@ export default function CanadianCTPage() {
             </div>
           </div>
         ) : (
-          <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm kriterleri yanıtlayın</p>
+          <div role="alert" className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hüküm için {eksikSayisi} kriter daha yanıtlanmalı — tek bir yüksek riskli bulgu BT'yi zaten gerektirir</p>
           </div>
         )}
 
