@@ -8,6 +8,7 @@ import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { type IcerikBlok } from './IcerikBloklari';
 import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
 
@@ -95,8 +96,7 @@ const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) =
  * sayfa kendini ana sayfanın kopyası ilan ediyor. OLCULDU (canlida): premium
  * konu sayfalarinin hepsi hem genel site basligini hem canonical "/" tasiyordu.
  *
- * Baslik `<h1>` ile AYNI kaynaktan (`veri.meta`) turuyor. `openGraph` bilerek
- * TANIMLANMIYOR (kokteki dosya tabanli paylasim gorseli miras kalsin).
+ * Baslik `<h1>` ile AYNI kaynaktan (`veri.meta`) turuyor. `openGraph` `rotaMeta` üzerinden geliyor — başlık ve açıklamanın ikinci bir kopyası tutulmuyor. Bir dönem "görsel mirası bozulur" diye hiç yazılmıyordu; ölçüm çürüttü (`images` verilmedikçe miras sürüyor) ve o inancın bedeli paylaşım kartının ana sayfayı göstermesiydi.
  */
 export async function generateMetadata({
   params,
@@ -106,11 +106,11 @@ export async function generateMetadata({
   const { branch, topic } = await params;
   const veri = konuYukle(branch, topic);
   if (!veri) return {};
-  return {
-    title: `${veri.meta.baslik} — YDUS`,
-    description: veri.meta.altbaslik || `${veri.meta.baslik} — YDUS premium konu anlatımı, sorular ve tekrar kartları.`,
-    alternates: { canonical: `/tr/premium/ydus/${branch}/${topic}` },
-  };
+  return rotaMeta({
+    baslik: `${veri.meta.baslik} — YDUS`,
+    aciklama: veri.meta.altbaslik || `${veri.meta.baslik} — YDUS premium konu anlatımı, sorular ve tekrar kartları.`,
+    yol: `/tr/premium/ydus/${branch}/${topic}`,
+  });
 }
 
 export default async function KonuSayfasi({

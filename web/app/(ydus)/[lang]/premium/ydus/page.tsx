@@ -7,6 +7,7 @@ import { sinavlariOku } from '@/lib/sinav.server';
 import { envanterAl } from '@/lib/premium-envanter';
 import { listelenmeyenKategori } from '@/lib/premium-brans';
 import { icerikSayilari } from '@/lib/icerik-sayaci';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 3600;
 
@@ -98,19 +99,18 @@ function konuYukle(branchId: string, topicId: string): (KonuVerisi & { mtimeMs: 
  * canonical dil değişkenine DEĞİL sabit /tr'ye bağlanıyor: içeriğin tamamı
  * Türkçe, farklı bir dil öneki yalnızca aynı sayfanın kopyasını üretir.
  *
- * `openGraph` bilerek TANIMLANMIYOR — burada tanımlanırsa kökteki dosya
- * tabanlı paylaşım görseli miras alınmayı bırakır ve sayfa görselsiz kalır
- * (bkz. CLAUDE.md, metadata mirası tuzakları).
+ * `openGraph` `rotaMeta` üzerinden geliyor — başlık ve açıklamanın ikinci bir kopyası tutulmuyor. Bir dönem "görsel mirası bozulur" diye hiç yazılmıyordu; ölçüm çürüttü (`images` verilmedikçe miras sürüyor) ve o inancın bedeli paylaşım kartının ana sayfayı göstermesiydi.
  */
 export async function generateMetadata(): Promise<Metadata> {
   const s = icerikSayilari();
   return {
-    title: 'YDUS Hazırlık — Dahiliye',
-    description:
-      `Dahiliye YDUS hazırlığı: ${s.premiumBrans} branşta ${s.premiumKonu} hazır konu, ` +
+    ...rotaMeta({
+      baslik: 'YDUS Hazırlık — Dahiliye',
+      aciklama: `Dahiliye YDUS hazırlığı: ${s.premiumBrans} branşta ${s.premiumKonu} hazır konu, ` +
       `${s.premiumSoru} çözümlü soru, ${s.premiumKart} tekrar kartı ve klinik vaka ` +
       'oturumları. Vurgula, not al, aralıklı tekrarla çalış.',
-    alternates: { canonical: '/tr/premium/ydus' },
+      yol: '/tr/premium/ydus',
+    }),
   };
 }
 

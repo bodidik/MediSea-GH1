@@ -4,6 +4,7 @@ import path from 'path';
 import Link from 'next/link';
 import VakaEngine from './VakaEngine';
 import { AccessGate } from '@/lib/AccessGate';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
 
@@ -49,13 +50,18 @@ function vakaListele(branch: string, topic: string) {
  * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
  * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
  * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
- * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
- * görseli miras kalsın.
+ * `openGraph` artık `rotaMeta` üzerinden geliyor. Bir dönem burada bilerek
+ * TANIMLANMIYORDU ("kökteki dosya tabanlı paylaşım görseli miras kalsın")
+ * ve o inanç ÖLÇÜMLE ÇÜRÜTÜLDÜ: `images` verilmedikçe görsel mirası
+ * sürüyor (`/tools/bmi` ikisini birden yapıyor). İnancın bedeli, sekme
+ * başlığı düzelmişken PAYLAŞIM KARTININ hâlâ ana sayfayı göstermesiydi.
  */
 export const metadata: Metadata = {
-  title: "Vaka Çöz — YDUS",
-  description: "Adım adım klinik vaka oturumları; her adımda karar ve gerekçe.",
-  alternates: { canonical: "/tr/premium/ydus/vaka-coz" },
+  ...rotaMeta({
+    baslik: "Vaka Çöz — YDUS",
+    aciklama: "Adım adım klinik vaka oturumları; her adımda karar ve gerekçe.",
+    yol: "/tr/premium/ydus/vaka-coz",
+  }),
 };
 
 export default async function VakaCozPage(props: {

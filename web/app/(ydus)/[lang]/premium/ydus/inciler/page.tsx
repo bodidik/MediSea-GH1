@@ -4,6 +4,7 @@ import path from 'path';
 import Link from 'next/link';
 import PearlsViewer from './PearlsViewer';
 import { AccessGate } from '@/lib/AccessGate';
+import { rotaMeta } from "@/lib/site";
 
 // Güvenlik: Sadece harf, rakam ve tire (-) işaretine izin veren kalkan
 const isValidParam = (param: string) => /^[a-zA-Z0-9-]+$/.test(param);
@@ -56,9 +57,11 @@ function HataKarti({ baslik, aciklama, lang }: { baslik: string; aciklama: strin
 /** Kendi metadata'si: yoksa kok duzenin canonical "/" degeri miras aliniyor
  *  (bkz. kardes brans sayfasi). Kullanici verisi ICERMEZ. */
 export const metadata: Metadata = {
-  title: "İnciler — YDUS",
-  description: "Branş branş klinik inciler; kısa, sınav odaklı notlar.",
-  alternates: { canonical: "/tr/premium/ydus/inciler" },
+  ...rotaMeta({
+    baslik: "İnciler — YDUS",
+    aciklama: "Branş branş klinik inciler; kısa, sınav odaklı notlar.",
+    yol: "/tr/premium/ydus/inciler",
+  }),
 };
 
 export default async function PearlsPage({

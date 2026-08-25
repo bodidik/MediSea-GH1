@@ -10536,3 +10536,114 @@ istiyor) — bu değişiklikten önce de öyleydi.
 
 **Sonuç:** premium ağacındaki **11 rotanın 11'inde** kendi başlığı ve kendi
 canonical'ı var; hiçbiri artık kendini ana sayfanın kopyası ilan etmiyor.
+
+### PAYLAŞIM KARTI, SEKME BAŞLIĞINDAN AYRI BİR YÜZEY — 620 sayfa ana sayfayı ilan ediyordu
+
+Bir önceki tur premium rotalarının `<title>` ve `canonical` değerlerini
+düzeltip **"hiçbiri artık kendini ana sayfanın kopyası ilan etmiyor"** dedi.
+İDDİA YANLIŞTI ve ölçümle çürütüldü: sekme başlığı düzelmişti,
+**paylaşım kartı düzelmemişti.**
+
+| yüzey | premium konu sayfasında (önce) |
+|---|---|
+| `<title>` | "Sistemik Lupus Eritematozus (SLE) — YDUS · MediSea" ✓ |
+| `canonical` | kendi adresi ✓ |
+| **`og:title`** | **"MediSea — Dahiliye için Türkçe klinik kaynak"** |
+| **`og:url`** | **`/`** |
+
+Yani öğrenci arkadaşına bağlantı attığında kart hâlâ ana sayfayı anlatıyordu.
+Deponun kendi kuralı ("bir düzeltmeyi yaptığın yüzey, o iddianın geçtiği tek
+yüzey olmayabilir") kuralı yazan tur tarafından çiğnendi.
+
+#### Daha geniş bulgu: `twitter:*` SİTENİN TAMAMINDA sabit yazılıydı
+
+Kök layout `twitter: { card, title, description }` tanımlıyordu ve **hiçbir
+alt layout `twitter` tanımlamıyor** (sayıldı: 1 dosya). Miras olduğu gibi
+indiği için sitenin her sayfası X'e ana sayfanın başlığını ve açıklamasını
+gönderiyordu — konu sayfaları, araçlar, `/uyelik` dahil.
+
+Ölçüldü (canlı): `og:title` "Addison Hastalığı…" iken `twitter:title`
+"MediSea — Dahiliye için Türkçe klinik kaynak".
+
+#### ÇÖZÜM ÜÇ TURDA BULUNDU — ve ilk iki turun ikisi de kusur ÜRETTİ
+
+**1. tur — sayfa başına `openGraph` yaz.** 11 premium rotası `rotaMeta`
+yardımcısına bağlandı, altı `noindex` rotaya da eklendi. Başlıklar düzeldi.
+**Negatif kontrol kusuru yakaladı: 12 sayfada `og:image` KAYBOLDU** (premium
+branş sayfalarının dokuzu + `/tekrar` + `/calisma-alanim` + `/guidelines`).
+Kart görselsiz kalıyordu.
+
+Yani silinen yorumun iddiası (*"openGraph tanımlanırsa dosya tabanlı görsel
+mirası kesilir"*) **DOĞRUYDU**; ben onu "çürüttüm" sanmıştım. Çürütme sandığım
+ölçüm `/tools/bmi`ye bakıyordu ve orada görsel korunuyor — çünkü görsel dosyası
+ARA bir segmentte (`app/tools/`) ve o segment de kendi `openGraph`'ını
+tanımlıyor. Tek bir örnekten kural çıkarmak, örneğin neden istisna olduğunu
+sormadan yapıldığında yanlış kural üretiyor.
+
+**2. tur — kökün `openGraph.title`'ını kaldır.** Ayırt edici ölçüm, kendi
+`openGraph`'ı **HİÇ OLMAYAN** bir sayfaya bakmak oldu (`/admin/*`):
+
+| ölçüt | sonuç |
+|---|---|
+| `og:title` | sayfanın KENDİ başlığı ("Yönetim · MediSea") |
+| `og:description` | sayfanın KENDİ açıklaması |
+| `og:image` | **yerinde** |
+| `og:url` | türemiyor (yok) |
+
+Yani Next `og:title`/`description` değerlerini `title`/`description`'dan
+TÜRETİYOR. Sayfa başına yazmak hem gereksiz hem zararlı.
+
+**3. tur — uygulanan çözüm:**
+
+| yer | ne yapıldı |
+|---|---|
+| kök `openGraph` | `title`/`description`/`url` KALDIRILDI, `type`/`siteName`/`locale` kaldı |
+| kök `twitter` | `title`/`description` KALDIRILDI, `card` kaldı |
+| `rotaMeta` | yalnızca `title` + `description` + `canonical` üretiyor, `openGraph` ÜRETMİYOR |
+| altı `noindex` rota | kendi canonical'ı + kendi açıklaması |
+| `not-found.tsx` | `canonical: null` (bir 404'ün canonical'ı OLAMAZ) |
+
+#### `noindex` + BAŞKA sayfayı gösteren canonical — ayrı bir çelişki
+
+Kendi canonical'ı olmayan 24 rota sayıldı; altısı herkese açık
+(`/giris` `/kayit` `/profile` `/tekrar` `/calisma-alanim` `/guidelines`).
+Altısı da `noindex` taşıyor VE kökten `canonical: "/"` miras alıyordu.
+
+Bu bilinen bir çelişki sinyali: **noindex, canonical hedefine taşınabilir** —
+ve buradaki hedef sitenin ANA SAYFASIYDI. Aynı şekil 404'te daha geniş:
+`not-found` tek bir adreste değil **her kırık adreste** çiziliyor, yani
+kendini gösteren bir canonical yazılamaz; doğru olan hiç yazmamak.
+
+#### Doğrulama — üretilmiş çıktının TAMAMI, altı ölçüt
+
+584 HTML (admin ve kayseritip dahil) tarandı:
+
+| ölçüt | sonuç |
+|---|---|
+| `og:title` ana sayfa kimliği taşıyan | **0** (önce 620'ye yakın) |
+| `twitter:title` ana sayfa kimliği taşıyan | **0** |
+| **`og:image` kayıp** | **0** ← 1. turdaki gerileme kapandı |
+| `twitter:card` eksik | 0 |
+| başlık kuyruğu (`· MediSea`) eksik | 0 |
+| canonical kendi yolunu göstermeyen | 10, hepsi `/admin/*` (robots'ta yasaklı, kapı arkasında) |
+
+**Negatif kontrol — dokunulmayan yüzeyler birebir aynı:** ana sayfa
+(`index, follow`, kendi başlığı), `/tools/bmi`, `/uyelik`, `/topics`,
+`/topics/…/addison` — beşinde de canonical, başlık ve görsel değişmedi.
+
+#### Aktarılabilir üç kural
+
+1. **Sekme başlığı ile paylaşım kartı AYRI yüzeylerdir.** Birini ölçüp
+   ötekini "düzeldi" saymak bu turda bir tam tur kaybettirdi.
+2. **Bir inancı tek örnekle çürütme.** `/tools/bmi` görselini koruyordu ama
+   İSTİSNAYDI; kuralı bulmak için istisnanın NEDEN istisna olduğunu sormak
+   gerekti.
+3. **Bir alanın miras davranışını ölçmenin doğru yeri, o alanı HİÇ
+   TANIMLAMAYAN sayfadır.** `/admin/*` bu turda kuralı tek başına verdi.
+
+#### Yüzde-kodlu canonical SAPMA DEĞİL
+
+Tarama beş konuyu "canonical sapıyor" diye işaretledi
+(`men1-menin-lösemi-onkojen`, `ascit-sıvısı`, `FGF-23 vs PTH`…). Sahteydi:
+`yolKodla()` adresi doğru biçimde yüzde-kodluyor, ölçüt ham dosya adıyla
+karşılaştırıyordu. Karşılaştırmaya `urllib.parse.quote` konunca 5 → 0.

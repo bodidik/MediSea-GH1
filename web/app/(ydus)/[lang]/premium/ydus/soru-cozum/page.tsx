@@ -4,6 +4,7 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import YdusCockpit from './YdusCockpit';
 import { AccessGate } from '@/lib/AccessGate';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
 
@@ -27,13 +28,18 @@ function vakaYukle(branch: string, id: string) {
  * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
  * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
  * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
- * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
- * görseli miras kalsın.
+ * `openGraph` artık `rotaMeta` üzerinden geliyor. Bir dönem burada bilerek
+ * TANIMLANMIYORDU ("kökteki dosya tabanlı paylaşım görseli miras kalsın")
+ * ve o inanç ÖLÇÜMLE ÇÜRÜTÜLDÜ: `images` verilmedikçe görsel mirası
+ * sürüyor (`/tools/bmi` ikisini birden yapıyor). İnancın bedeli, sekme
+ * başlığı düzelmişken PAYLAŞIM KARTININ hâlâ ana sayfayı göstermesiydi.
  */
 export const metadata: Metadata = {
-  title: "Soru Çözüm Kokpiti — YDUS",
-  description: "Soru çözüm kokpiti: şık analizi ve karar gerekçeleri.",
-  alternates: { canonical: "/tr/premium/ydus/soru-cozum" },
+  ...rotaMeta({
+    baslik: "Soru Çözüm Kokpiti — YDUS",
+    aciklama: "Soru çözüm kokpiti: şık analizi ve karar gerekçeleri.",
+    yol: "/tr/premium/ydus/soru-cozum",
+  }),
 };
 
 export default async function SoruCozumPage(props: {

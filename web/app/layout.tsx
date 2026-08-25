@@ -46,14 +46,15 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_ADI,
     locale: "tr_TR",
-    title: `${SITE_ADI} — Dahiliye için Türkçe klinik kaynak`,
-    description: SITE_ACIKLAMA,
-    url: "/",
   },
   twitter: {
+    // Yalnızca kart BİÇİMİ. Başlık ve açıklama BİLEREK yok: `twitter` alt
+    // sayfalara olduğu gibi miras kalıyor ve hiçbir alt layout onu ezmiyor.
+    // Burada sabit yazıldığında sitenin bütün sayfaları X'e ANA SAYFANIN
+    // başlığını ve açıklamasını gönderiyordu (ölçüldü: 620 sayfa). Twitter
+    // kart sözleşmesi twitter:title/description yoksa og:* değerlerine
+    // düşüyor, yani sayfa başına doğru değer kendiliğinden geliyor.
     card: "summary_large_image",
-    title: `${SITE_ADI} — Dahiliye için Türkçe klinik kaynak`,
-    description: SITE_ACIKLAMA,
   },
   robots: { index: true, follow: true },
 };

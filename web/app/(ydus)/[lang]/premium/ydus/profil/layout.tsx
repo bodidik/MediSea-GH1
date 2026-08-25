@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { rotaMeta } from "@/lib/site";
 
 /**
  * Sayfa `"use client"` olduğu için metadata'yı DIŞA AKTARAMIYOR — bir
@@ -12,9 +13,11 @@ import type { ReactNode } from "react";
  * sayfalara yayılırdı.
  */
 export const metadata: Metadata = {
-  title: "Profil — YDUS",
-  description: "YDUS hazırlık ilerlemen: puan, rütbe ve rozetler.",
-  alternates: { canonical: "/tr/premium/ydus/profil" },
+  ...rotaMeta({
+    baslik: "Profil — YDUS",
+    aciklama: "YDUS hazırlık ilerlemen: puan, rütbe ve rozetler.",
+    yol: "/tr/premium/ydus/profil",
+  }),
 };
 
 export default function Duzen({ children }: { children: ReactNode }) {

@@ -26,3 +26,45 @@ export const SITE_ADI = 'MediSea';
 export const SITE_ACIKLAMA =
   'Dahiliye asistanları ve uzmanları için Türkçe klinik kaynak: güncel konu anlatımları, ' +
   'klinik hesaplayıcılar ve YDUS hazırlık materyali.';
+
+/**
+ * Bir rotanın başlığını, açıklamasını ve KENDİ canonical'ını tek yerden verir.
+ *
+ * Sözleşme: her rota kendi kimliğini beyan eder. Beyan etmeyen rota kökün
+ * `alternates: { canonical: "/" }` değerini miras alıyor ve arama motoruna
+ * "ben ana sayfanın kopyasıyım" diyor — bu depoda defalarca ölçülmüş bir kusur.
+ *
+ * ⚠ `openGraph` BURADA ÜRETİLMEZ ve hiçbir sayfada elle yazılmamalı. Sebebi
+ * ölçüldü ve iki yönlü:
+ *
+ * 1. Next, `openGraph.title`/`description` verilmediğinde bunları sayfanın
+ *    KENDİ `title`/`description` değerinden TÜRETİYOR. Yani sayfa başına
+ *    yazmak gereksiz.
+ * 2. Bir alt sayfada `openGraph` tanımlamak, ATA segmentteki dosya tabanlı
+ *    `opengraph-image` mirasını KESİYOR — ölçüldü: 12 sayfa (premium branş
+ *    sayfaları, /tekrar, /calisma-alanim, /guidelines) paylaşım görselini
+ *    tamamen kaybetti. Kart görselsiz kalıyor.
+ *
+ * Bu ikisi bir turda ters yönde yanılttı: önce "openGraph yazmak görseli
+ * bozmaz" sanıldı (çünkü `/tools/bmi` hem yazıyor hem görselini koruyor —
+ * orada görsel dosyası ARA segmentte ve o segment de openGraph tanımlıyor),
+ * sonra ölçüm 12 sayfada görselin gittiğini gösterdi. Ayırt edici ölçüm,
+ * kendi openGraph'ı HİÇ OLMAYAN bir sayfaya bakmak oldu (`/admin/*`):
+ * og:title kendi başlığı, görsel yerinde.
+ */
+export function rotaMeta(opts: {
+  baslik: string;
+  aciklama: string;
+  yol: string;
+}): {
+  title: string;
+  description: string;
+  alternates: { canonical: string };
+} {
+  const { baslik, aciklama, yol } = opts;
+  return {
+    title: baslik,
+    description: aciklama,
+    alternates: { canonical: yol },
+  };
+}

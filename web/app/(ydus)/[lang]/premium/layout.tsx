@@ -18,8 +18,12 @@ import type { Metadata } from "next";
  * kalıplarını yasaklıyor, yani `/tr/premium` TARANABİLİR ve canonical'ı bir
  * dönem ana sayfayı gösteriyordu — "ben ana sayfanın kopyasıyım".
  *
- * `openGraph` bilerek TANIMLANMIYOR (kökteki dosya tabanlı paylaşım görseli
- * miras kalsın).
+ * `openGraph` BURADA TANIMLI ve olması gerekiyor. Bir dönem "kökteki dosya
+ * tabanlı paylaşım görseli miras kalsın" diye bilerek yazılmamıştı; o inanç
+ * ÖLÇÜMLE ÇÜRÜTÜLDÜ — `images` verilmediği sürece görsel mirası bozulmuyor
+ * (`/tools/bmi` hem openGraph tanımlıyor hem kendi kartını alıyor). İnancın
+ * bedeli şuydu: sekme başlığı düzelmiş ama PAYLAŞIM KARTI hâlâ ana sayfanın
+ * başlığını ve adresini gösteriyordu — yani asıl paylaşılan yüzey yanlıştı.
  */
 export const metadata: Metadata = {
   /**

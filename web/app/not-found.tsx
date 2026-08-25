@@ -31,7 +31,26 @@ import { SPECIALTIES } from "@/app/lib/specialties";
  */
 export const metadata: Metadata = {
   title: "Sayfa bulunamadı",
+  description:
+    "Aradığın sayfa MediSea'de yok. Kütüphaneden ya da klinik araçlardan devam edebilirsin.",
   robots: { index: false, follow: true },
+
+  /**
+   * canonical ve og:url BİLEREK KALDIRILIYOR (`null` Next'te miras alınan
+   * alanı siler).
+   *
+   * Bu sayfa TEK bir adreste değil, sitedeki HER kırık adreste çiziliyor —
+   * yani kendini gösteren bir canonical yazılamaz. Kaldırılmazsa kökün
+   * `canonical: "/"` değeri miras alınıyordu ve her kırık bağlantı
+   * "ben ana sayfanın kopyasıyım" diyordu; üstelik sayfa aynı anda
+   * `noindex` taşıyor, yani noindex sinyali ANA SAYFAYA işaret eden bir
+   * canonical'la eşleşiyordu.
+   *
+   * `og:title` ayrıca YAZILMIYOR: Next onu sayfanın kendi `title`ından
+   * türetiyor (ölçüldü). Elle yazmak dosya tabanlı paylaşım görselinin
+   * mirasını keserdi.
+   */
+  alternates: { canonical: null },
 };
 
 export default function BulunamadiSayfasi() {

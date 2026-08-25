@@ -5,6 +5,7 @@ import path from 'path';
 import Link from 'next/link';
 import KategorilerClient from './KategorilerClient';
 import { listelenmeyenKategori } from '@/lib/premium-brans';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
 
@@ -23,9 +24,11 @@ export const revalidate = 86400;
  * Başlık ve açıklama `<h1>` ile AYNI kaynaktan (`veri.meta`) türüyor —
  * ikinci bir gerçeklik üretilmiyor.
  *
- * `openGraph` bilerek TANIMLANMIYOR: burada tanımlanırsa kökteki dosya
- * tabanlı paylaşım görseli miras alınmayı bırakır ve sayfa görselsiz kalır
- * (panodaki aynı not).
+ * `openGraph` artık `rotaMeta` üzerinden geliyor. Bir dönem burada bilerek
+ * TANIMLANMIYORDU ("kökteki dosya tabanlı paylaşım görseli miras kalsın")
+ * ve o inanç ÖLÇÜMLE ÇÜRÜTÜLDÜ: `images` verilmedikçe görsel mirası
+ * sürüyor (`/tools/bmi` ikisini birden yapıyor). İnancın bedeli, sekme
+ * başlığı düzelmişken PAYLAŞIM KARTININ hâlâ ana sayfayı göstermesiydi.
  */
 export async function generateMetadata({
   params,
@@ -35,11 +38,11 @@ export async function generateMetadata({
   const { branch } = await params;
   const veri = bransYukle(branch);
   if (!veri) return {};
-  return {
-    title: `${veri.meta.baslik} — YDUS`,
-    description: veri.meta.aciklama,
-    alternates: { canonical: `/tr/premium/ydus/${branch}` },
-  };
+  return rotaMeta({
+    baslik: `${veri.meta.baslik} — YDUS`,
+    aciklama: veri.meta.aciklama,
+    yol: `/tr/premium/ydus/${branch}`,
+  });
 }
 
 /**

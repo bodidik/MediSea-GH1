@@ -4,6 +4,7 @@ import path from 'path';
 import Link from 'next/link';
 import QuizEngine from './QuizEngine';
 import { AccessGate } from '@/lib/AccessGate';
+import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
 
@@ -25,13 +26,18 @@ function quizYukle(branch: string, id: string) {
  * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
  * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
  * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
- * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
- * görseli miras kalsın.
+ * `openGraph` artık `rotaMeta` üzerinden geliyor. Bir dönem burada bilerek
+ * TANIMLANMIYORDU ("kökteki dosya tabanlı paylaşım görseli miras kalsın")
+ * ve o inanç ÖLÇÜMLE ÇÜRÜTÜLDÜ: `images` verilmedikçe görsel mirası
+ * sürüyor (`/tools/bmi` ikisini birden yapıyor). İnancın bedeli, sekme
+ * başlığı düzelmişken PAYLAŞIM KARTININ hâlâ ana sayfayı göstermesiydi.
  */
 export const metadata: Metadata = {
-  title: "Soru Çöz — YDUS",
-  description: "YDUS soru setlerini çöz; her soruda çözüm ve açıklama.",
-  alternates: { canonical: "/tr/premium/ydus/quiz-coz" },
+  ...rotaMeta({
+    baslik: "Soru Çöz — YDUS",
+    aciklama: "YDUS soru setlerini çöz; her soruda çözüm ve açıklama.",
+    yol: "/tr/premium/ydus/quiz-coz",
+  }),
 };
 
 export default async function QuizCozPage(props: {

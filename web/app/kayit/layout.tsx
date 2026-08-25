@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { rotaMeta } from "@/lib/site";
 
 /**
  * Kayıt formu. Arama sonucunda çıkmasının bir değeri yok.
@@ -11,8 +12,28 @@ import type { ReactNode } from "react";
  * sayfaların dizine girmesi hem tarama bütçesini harcar hem de siteye
  * "ince içerik" olarak yazılır.
  */
+/**
+ * canonical KENDİNİ göstermek zorunda.
+ *
+ * ÖLÇÜLDÜ (canlıda): kendi canonical'ı olmayan bu sayfa kökün
+ * `alternates: { canonical: "/" }` değerini miras alıyordu ve aynı anda
+ * `noindex` taşıyordu. "noindex + BAŞKA bir sayfayı gösteren canonical"
+ * bilinen bir çelişki sinyalidir: noindex, canonical hedefine taşınabilir —
+ * burada hedef sitenin ANA SAYFASIYDI. Kendini gösteren canonical ile
+ * noindex yalnızca bu sayfaya bakar.
+ *
+ * `openGraph` da BU SAYFAYA ait olmak zorunda. ÖLÇÜLDÜ: tanımlanmadığında
+ * kökün `openGraph.title` değeri miras alınıyor ve sayfa hem `og:title` hem
+ * `twitter:title` olarak ANA SAYFANIN başlığını gönderiyordu — yani
+ * paylaşılan bağlantının kartı yanlış sayfayı anlatıyordu.
+ */
 export const metadata: Metadata = {
-  title: "Kayıt",
+  ...rotaMeta({
+    baslik: "Kayıt",
+    aciklama:
+      "Ücretsiz MediSea hesabı oluştur; açık kütüphane ve çalışma araçları hemen kullanılabilir.",
+    yol: "/kayit",
+  }),
   robots: { index: false, follow: true },
 };
 
