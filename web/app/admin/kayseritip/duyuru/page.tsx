@@ -29,7 +29,9 @@ export default function AdminDuyuruPage() {
 
   async function yukle() {
     const r = await fetch('/api/admin/kayseritip/duyuru');
-    if (r.ok) { const d = await r.json(); setListe(d.duyurular ?? []); }
+    /* Yönlendirme HTML'i de 200 döner; `.catch` olmadan burada fırlar. */
+    const d = r.ok ? await r.json().catch(() => null) : null;
+    setListe(d?.duyurular ?? []);
   }
 
   async function kaydet(e: React.FormEvent) {
@@ -45,8 +47,8 @@ export default function AdminDuyuruPage() {
       setBaslik(''); setIcerik(''); setTur('bilgi'); setSabitli(false);
       yukle();
     } else {
-      const d = await res.json();
-      setMesaj(d.error ?? 'Hata');
+      const d = await res.json().catch(() => null);
+      setMesaj(d?.error ?? 'Kaydedilemedi. Oturumun düşmüş olabilir; sayfayı yenile.');
     }
   }
 

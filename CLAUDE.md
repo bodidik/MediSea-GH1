@@ -11634,3 +11634,68 @@ gösteriyor:
 kayboldu. **Bir bulgu raporlamadan önce sor: bunu ürün mü yapıyor, ölçütüm
 mü?** Ucuz sınama: aynı şeyi ikinci bir yöntemle oku (etiket sökmek yerine
 ham HTML'de ara, desen yerine bağlamı bastır).
+
+### KAYIT FORMU SONSUZA DEK KİLİTLENİYORDU — `res.json()` fırlıyor, sıfırlama satırı hiç çalışmıyor
+
+Kurum kapısı (`/kayseritip`) incelenirken bulundu. Middleware `/api/kayseritip/:path*`
+yolunu da eşliyor, yani oturum düşerse bir **POST isteği bile** `/giris`e
+yönlendiriliyor ve istemciye **200 + HTML** dönüyor. Çağıran kod bunu
+karşılamıyordu:
+
+```js
+const res  = await fetch('/api/...', { method: 'POST', body: fd });
+const data = await res.json();   // HTML gelirse BURADA fırlar
+setYukleniyor(false);            // ...buraya hiç ulaşılmaz
+```
+
+`try/catch` de olmadığı için sonuç: **düğme sonsuza dek "yükleniyor"da kalıyor
+ve kullanıcıya hiçbir şey söylenmiyor.**
+
+**En değerli örnek kurumsal alan değil, HERKESE AÇIK KAYIT FORMUYDU.**
+`/kayit` aynı şekli taşıyordu ve `/api/auth/register` middleware'e hiç
+girmiyor — ama bir 500 HTML hata sayfası aynı sonucu veriyor.
+
+ÖLÇÜLDÜ (yerel üretim derlemesi, `fetch` koşumuyla uca HTML 500 döndürülerek —
+**veritabanına gidilmedi**):
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| düğme metni | **"Kayıt yapılıyor…"** | "Kayıt Ol" |
+| `disabled` | **true — sonsuza dek** | false |
+| kullanıcıya mesaj | **HİÇ YOK** | "Sunucudan beklenen yanıt gelmedi; hesabın oluşturulmamış olabilir…" |
+
+**İki negatif kontrol, düzeltmenin normal yolu yutmadığını gösteriyor:**
+
+| senaryo | sonuç |
+|---|---|
+| JSON 400 (bilinen hata) | **"Bu e-posta adresi zaten kayıtlı."** — özgün mesaj korundu |
+| ağ hatası (`fetch` fırlatıyor) | "Bağlantı kurulamadı; hesabın oluşturulmadı. Tekrar dene." |
+
+#### Sınıf tarandı: 8 çağrı yerinin 5'i korumasızdı, 3'ü ZATEN doğruydu
+
+Ölçüt: `await x.json()` çağrısı ne `.catch(...)` ne de saran bir `try` taşıyor.
+
+| dosya | şiddet |
+|---|---|
+| `kayit/page.tsx` | **donmuş düğme** (herkese açık) |
+| `kayseritip/…/AlanClient.tsx` | **donmuş düğme** (dosya yükleme) |
+| `admin/kayseritip/page.tsx` (×2) | **donmuş düğme** |
+| `admin/kt-yetki/page.tsx` (×2) | sessiz boş liste + mesajsız hata |
+| `admin/kayseritip/duyuru/page.tsx` (×2) | sessiz boş liste + mesajsız hata |
+
+**Depo bu dersi zaten biliyordu ve üç yerde uyguluyordu:** `SoruSor.tsx`
+(`try/catch`), `admin/content/page.tsx` ve `admin/import/page.tsx`
+(`try/catch/finally` + `setLoading(false)` finally'de), ayrıca
+`admin/content/topics/*` doğrudan `.catch(() => null)` kullanıyor. Yani doğru
+kalıp dosyanın komşusundaydı; eksik olan tutarlılıktı.
+
+Tarama sonrası: **korumasız çağrı 0** (ölçüt pozitif kontrolle sınandı —
+tohum desen yakalanıyor).
+
+#### Aktarılabilir kural
+
+**Bir `fetch` kapılı bir yola gidiyorsa yanıtın JSON olduğunu VARSAYMA.**
+Bu depoda kapı iki biçimde HTML döndürüyor: middleware yönlendirmesi (200) ve
+sunucu hata sayfası (500). İkisi de `res.json()`u fırlatır; fırlatma
+`setYükleniyor(false)`dan ÖNCEyse arayüz kilitlenir ve kullanıcı hiçbir şey
+görmez — **sessiz kilit, yanlış mesajdan beterdir.**

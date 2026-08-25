@@ -18,12 +18,53 @@ export default function KayitPage() {
     setHata('');
     setYukleniyor(true);
 
-    const res = await fetch('/api/auth/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    });
-    const data = await res.json();
+    /**
+     * YANIT JSON OLMAYABİLİR VE ESKİ KOD BUNU KARŞILAMIYORDU.
+     *
+     * Satır dizisi şöyleydi:
+     *
+     *     const data = await res.json();   // JSON değilse FIRLATIR
+     *     if (!res.ok) { ...; setYukleniyor(false); return; }
+     *
+     * `try/catch` olmadığı için uç bir HTML hata sayfası döndürdüğünde
+     * (500, ağ katmanı, bir yönlendirme) `setYukleniyor(false)` HİÇ
+     * çalışmıyordu.
+     *
+     * ÖLÇÜLDÜ (yerel üretim derlemesi, `fetch` koşumuyla uca HTML 500
+     * döndürülerek — veritabanına gidilmedi):
+     *
+     *     düğme metni  : "Kayıt yapılıyor…"
+     *     disabled     : true   -> SONSUZA DEK kilitli
+     *     kullanıcıya mesaj : HİÇ YOK
+     *
+     * Yani sitenin herkese açık dönüşüm yüzeyi, arka uçtaki bir hatada
+     * sessizce donuyordu. Depodaki kural: "Kaydetme hatası yutulmaz" ve
+     * "hata durumunun metni de üründür".
+     *
+     * Sıfırlama `finally`ye alındı; `.catch(() => null)` ile JSON olmayan
+     * yanıt da dürüst bir mesaja çevriliyor. Aynı kalıp `admin/content` ve
+     * `admin/import` sayfalarında zaten böyleydi.
+     */
+    let res: Response;
+    let data: { error?: string } | null;
+    try {
+      res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      data = await res.json().catch(() => null);
+    } catch {
+      setHata('Bağlantı kurulamadı; hesabın oluşturulmadı. Tekrar dene.');
+      setYukleniyor(false);
+      return;
+    }
+
+    if (!data) {
+      setHata('Sunucudan beklenen yanıt gelmedi; hesabın oluşturulmamış olabilir. Birazdan tekrar dene.');
+      setYukleniyor(false);
+      return;
+    }
 
     if (!res.ok) {
       setHata(data.error ?? 'Kayıt başarısız.');

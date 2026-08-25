@@ -18,9 +18,18 @@ export default function AdminKayseriTipPage() {
     // 1. Dosya yükle
     const fd = new FormData();
     fd.append('file', dosya);
+    /* Yanıt JSON olmayabilir: /admin/* middleware ile kapılı ve oturum
+       düşerse istek /giris'e YÖNLENDİRİLİP buraya HTML geliyor. Eski kodda
+       `res.json()` orada fırlıyor, `setYukleniyor(false)` hiç çalışmıyor ve
+       düğme sonsuza dek "Yükleniyor…" kalıyordu — aynı kusur /kayit
+       sayfasında ÖLÇÜLDÜ (düğme disabled, kullanıcıya mesaj yok). */
     const upRes = await fetch('/api/admin/kayseritip/slayt', { method: 'PUT', body: fd });
-    const upData = await upRes.json();
-    if (!upRes.ok) { setMesaj(upData.error); setYukleniyor(false); return; }
+    const upData = await upRes.json().catch(() => null);
+    if (!upRes.ok || !upData) {
+      setMesaj(upData?.error ?? 'Dosya yüklenemedi. Oturumun düşmüş olabilir; sayfayı yenile.');
+      setYukleniyor(false);
+      return;
+    }
 
     // 2. Metadata kaydet
     const tip = dosya.name.endsWith('.pdf') ? 'pdf' : 'pptx';
@@ -29,9 +38,12 @@ export default function AdminKayseriTipPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, dosya: upData.dosya, tip }),
     });
-    const metaData = await metaRes.json();
+    const metaData = await metaRes.json().catch(() => null);
     setYukleniyor(false);
-    setMesaj(metaRes.ok ? '✓ Slayt eklendi.' : metaData.error);
+    setMesaj(
+      metaRes.ok && metaData ? '✓ Slayt eklendi.'
+        : (metaData?.error ?? 'Slayt kaydedilemedi. Oturumun düşmüş olabilir; sayfayı yenile.')
+    );
     if (metaRes.ok) {
       setForm({ id: '', baslik: '', ders: '', ogretim_uyesi: '', tarih: '', aciklama: '' });
       setDosya(null);

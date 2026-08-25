@@ -45,8 +45,10 @@ export default function KtYetkiPage() {
 
   async function yukle() {
     const r = await fetch('/api/admin/kt-yetki');
-    const d = await r.json();
-    setListe(d.liste ?? []);
+    /* Yönlendirme HTML'i de 200 döner; `.catch` olmadan burada fırlıyordu ve
+       liste sessizce boş kalıyordu. */
+    const d = await r.json().catch(() => null);
+    setListe(d?.liste ?? []);
   }
 
   function alanToggle(alan: string) {
@@ -66,8 +68,8 @@ export default function KtYetkiPage() {
       setEmail(''); setRol('ogrenci'); setSecili([]); setNotlar('');
       yukle();
     } else {
-      const d = await res.json();
-      setMesaj(d.error ?? 'Hata');
+      const d = await res.json().catch(() => null);
+      setMesaj(d?.error ?? 'Kaydedilemedi. Oturumun düşmüş olabilir; sayfayı yenile.');
     }
   }
 

@@ -49,17 +49,47 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
     fd.append('baslik', baslik);
     fd.append('aciklama', aciklama);
 
-    const res = await fetch('/api/kayseritip/yukle', { method: 'POST', body: fd });
-    const data = await res.json();
-    setYukleniyor(false);
+    /**
+     * YANIT JSON OLMAYABİLİR — ve eski kod bunu karşılamıyordu.
+     *
+     * `middleware.ts` matcher'ı `/api/kayseritip/:path*` yolunu da eşliyor:
+     * oturum düşerse ya da kurum bilgisi kaybolursa POST isteği
+     * `/giris?gerekli=kayseritip` adresine YÖNLENDİRİLİYOR ve buraya
+     * 200 + HTML geliyor. Eski kodda satır dizisi şöyleydi:
+     *
+     *     const data = await res.json();   // HTML'de FIRLATIR
+     *     setYukleniyor(false);            // buraya hiç ulaşılmıyor
+     *
+     * `try/catch` de olmadığı için sonuç şuydu: düğme sonsuza dek
+     * "Yükleniyor…" durumunda kalıyor, hiçbir mesaj çıkmıyor ve kullanıcı
+     * dosyanın yüklenip yüklenmediğini bilmiyor. Aynı dosyada aynı hata
+     * ikinci kez oluşmasın diye sıfırlama `finally`ye alındı — deponun
+     * öteki çağrı yerleri (`admin/content`, `admin/import`) zaten böyle.
+     */
+    try {
+      const res = await fetch('/api/kayseritip/yukle', { method: 'POST', body: fd });
+      const data = await res.json().catch(() => null);
 
-    if (res.ok) {
-      setDosyalar(prev => [data.dosya, ...prev]);
-      setMesaj('✓ Dosya yüklendi.');
-      setBaslik(''); setAciklama(''); setSeciliDosya(null);
-      setTimeout(() => { setMesaj(''); setYuklemePaneli(false); }, 2000);
-    } else {
-      setMesaj(data.error ?? 'Yükleme başarısız.');
+      if (res.ok && data?.dosya) {
+        setDosyalar(prev => [data.dosya, ...prev]);
+        setMesaj('✓ Dosya yüklendi.');
+        setBaslik(''); setAciklama(''); setSeciliDosya(null);
+        setTimeout(() => { setMesaj(''); setYuklemePaneli(false); }, 2000);
+      } else if (!data) {
+        // JSON gelmedi: neredeyse her zaman giriş sayfasına yönlendirilmişizdir.
+        setMesaj(
+          res.redirected || res.url.includes('/giris')
+            ? 'Oturumun sona ermiş görünüyor. Sayfayı yenileyip yeniden giriş yap, dosya yüklenmedi.'
+            : 'Sunucudan beklenen yanıt gelmedi; dosya yüklenmedi. Tekrar dene.'
+        );
+      } else {
+        setMesaj(data.error ?? 'Yükleme başarısız.');
+      }
+    } catch {
+      // Ağ hatası. Sessiz kalmak, yüklendi sanmaktan beterdir.
+      setMesaj('Bağlantı kurulamadı; dosya yüklenmedi. Tekrar dene.');
+    } finally {
+      setYukleniyor(false);
     }
   }
 
