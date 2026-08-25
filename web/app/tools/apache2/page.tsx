@@ -169,11 +169,34 @@ export default function APACHE2Page() {
   // şıkkın kendisi saklanır (fizyolojik parametrelerdeki çözümün aynısı).
   const [chronic, setChronic] = React.useState<{ pts: number; label: string } | null>(null);
 
+  /**
+   * KURAL ETİKETTE YAZIYORDU AMA UYGULANAMIYORDU.
+   *
+   * Kreatinin satırının etiketi zaten şunu söylüyor: *"Kreatinin (Akut böbrek
+   * yetmezliği varsa ×2)"* — yayımlanmış APACHE II'de bu gerçek bir kuraldır.
+   * Ama araçta uygulayacak hiçbir denetim yoktu: şıklar 0/2/3/4 ve 8'e çıkan
+   * bir yol bulunmuyordu.
+   *
+   * Bedeli tavandan okunabiliyor: ulaşılabilir azami **67** çıkıyordu, oysa
+   * yayımlanmış APACHE II azamisi **71** (akut fizyoloji 60 + yaş 6 + kronik
+   * sağlık 5). Eksik olan tam 4 puan ve tek kaynağı bu ikiye katlama.
+   *
+   * `haq-di` ve `murray` ile aynı sınıf, üçüncü kez: METİN DOĞRU, HESAP EKSİK.
+   * Çare de aynı — kuralı uygulayacak girdi eklendi; yeni bir klinik iddia
+   * yazılmadı, etiketin zaten söylediği şey yapılabilir hâle getirildi.
+   *
+   * Mortalite bantları beşer puan adımladığı için 4 puan bir bant kaydırabilir.
+   */
+  const [aby, setAby] = React.useState(false);
+
   const physioAnswered = Object.values(sel).filter(v => v !== null).length;
   const complete = physioAnswered === PHYSIO.length && age !== null && chronic !== null;
 
+  const krPuan = sel.cr?.pts ?? 0;
+  const abyEk = aby ? krPuan : 0;   /* ikiye katlama = bir kez daha ekle */
+
   const total = complete
-    ? Object.values(sel).reduce<number>((s, v) => s + (v?.pts ?? 0), 0) + (age ?? 0) + (chronic?.pts ?? 0)
+    ? Object.values(sel).reduce<number>((s, v) => s + (v?.pts ?? 0), 0) + abyEk + (age ?? 0) + (chronic?.pts ?? 0)
     : null;
 
   const band = total !== null ? getBand(total) : null;
@@ -221,6 +244,25 @@ export default function APACHE2Page() {
                   </button>
                 ))}
               </div>
+
+              {param.id === "cr" && (
+                <label className="focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 mt-2 flex items-center gap-2 p-2 rounded-lg border border-slate-200 bg-slate-50 cursor-pointer">
+                  <input type="checkbox" className="sr-only" checked={aby} onChange={() => setAby(v => !v)} />
+                  <span
+                    aria-hidden="true"
+                    className={`w-4 h-4 rounded-md border flex items-center justify-center shrink-0 text-[9px] font-black
+                      ${aby ? "bg-blue-900 border-blue-900 text-white" : "bg-white border-slate-300 text-transparent"}`}
+                  >
+                    ✓
+                  </span>
+                  <span className="text-[10px] font-bold text-blue-900/80">
+                    Akut böbrek yetmezliği var — kreatinin puanı ikiye katlanır
+                    {aby && krPuan > 0 && (
+                      <span className="ml-1 font-black text-blue-900">({krPuan} → {krPuan * 2})</span>
+                    )}
+                  </span>
+                </label>
+              )}
             </div>
           ))}
         </div>

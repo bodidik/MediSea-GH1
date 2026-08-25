@@ -8298,3 +8298,65 @@ bir yol bulunmuyor. `haq-di` ve `murray` ile aynı sınıf, üçüncü kez:
 
 APACHE II mortalite bantları beşer puan adımlıyor, yani 4 puan bir bant
 kaydırabilir. Ölçüldü ve not edildi; düzeltme sonraki tura.
+
+### İLAN EDİLİP UYGULANMAYAN KURAL, ÜÇÜNCÜ KEZ — `apache2` kreatinin ikiye katlaması
+
+`haq-di` (yardımcı araç) ve `murray` (kullanılan parametre sayısı) derken
+üçüncüsü. Aracın kreatinin satırının ETİKETİ kuralı zaten söylüyordu:
+
+> "Kreatinin (**Akut böbrek yetmezliği varsa ×2**)"
+
+Yayımlanmış APACHE II'de bu gerçek bir kuraldır. Ama araçta uygulayacak
+hiçbir denetim yoktu: şıklar 0/2/3/4 ve 8'e çıkan bir yol bulunmuyordu.
+Etiket kullanıcıya "×2" diyor, kullanıcı yapamıyor.
+
+**Kusur TAVAN HESABIYLA bulundu** — geçen turun yöntemi:
+
+```
+11 fizyolojik değişken × 4  = 44
+GKS                          = 12
+yaş                          =  6
+kronik sağlık                =  5
+                        toplam 67        ← araçta ulaşılabilen
+akut böbrek yetmezliğinde kreatinin ×2 → +4
+                        toplam 71        ← yayımlanmış APACHE II azamisi
+```
+
+Eksik olan tam 4 puan ve tek kaynağı bu ikiye katlama.
+
+Çare `haq-di`/`murray` ile aynı: kuralı uygulayacak girdi eklendi. **Yeni bir
+klinik iddia yazılmadı** — etiketin zaten söylediği şey yapılabilir hâle
+getirildi. Varsayım da görünür: kutu işaretlenince satırda **"(4 → 8)"**
+beliriyor (`gnri`de konan "varsayımı görünür kıl" kuralı).
+
+**Doğrulama, biri negatif kontrol:**
+
+| durum | APACHE II | not |
+|---|---|---|
+| kreatinin 4 puan, ABY **yok** | **40** | — |
+| kreatinin 4 puan, ABY **var** | **44** | fark tam **+4**, satırda "(4 → 8)" |
+| **negatif** — kreatinin **0** puan, ABY var | **36** | ABY yokken de 36 — sıfırı ikiye katlamak sıfırdır |
+| **negatif** — aynı, ABY yok | **36** | değişmedi |
+
+Üçüncü satır belirleyici: kutu koşulsuz +4 eklemiyor, kreatinin puanını
+ikiye katlıyor. Satır içi "(x → y)" ipucu da yalnızca puan sıfırdan büyükken
+çıkıyor.
+
+Mortalite bantları beşer puan adımladığı için (≤4 %4 · ≤9 %8 · ≤14 %15 …)
+4 puan bir bant kaydırabilir.
+
+**Ölçüm tuzağı — "her grupta ilk şıkkı tıkla" iki kez yanlış sonuç verdi.**
+Sürücü önce her grubun ilk şıkkını seçip sonra kreatinini ayrıca ayarlıyordu;
+kreatinin grubunun ilk şıkkı ZATEN hedef şıktı, yani ikinci tıklama onu
+KAPATIYOR ve araç "13/14 parametre" diyordu. Sonuç paneli hiç çizilmiyordu ve
+bir an düzeltme bozuk sanıldı.
+
+İkinci tuzak aynı ailede: "en yüksek puanlı şıkkı seç" sürücüsü düğme
+metninin başındaki sayıyı okuyor ve bazı gruplarda yanlış şıkkı seçiyordu
+(tavan 54 çıktı, beklenen 67). **Tavan iddiası bu yüzden tarayıcıyla değil
+KAYNAKTAN hesaplandı** ve raporda öyle yazıyor — sürücünün yanlış seçtiği bir
+ölçümü "ölçüldü" diye sunmak, belgedeki "0 kusur ile 0 ölçüm aynı görünür"
+kuralının bu turdaki hâli olurdu.
+
+Ayırt edici ölçüm zaten tavan değil, **aynı hastada kutunun açılıp
+kapanması** (40 ↔ 44): payda sabit, tek değişen kural.
