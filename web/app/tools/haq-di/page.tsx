@@ -23,12 +23,39 @@ const SCORE_OPTS = [
 
 export default function HaqDiPage() {
   const [scores, setScores] = React.useState<Record<string, number>>({});
+  /**
+   * YARDIMCI ARAÇ KURALI İLAN EDİLİYORDU AMA UYGULANMIYORDU.
+   *
+   * Sayfanın altındaki açıklama şunu diyor (ve DEĞİŞTİRİLMEDİ, çünkü
+   * yayımlanmış HAQ-DI'nin kuralı budur):
+   *
+   *   "Yardımcı cihaz veya başka bir kişinin yardımı kullanılıyorsa ilgili
+   *    soru skoru EN AZ 2 olarak değerlendirilir."
+   *
+   * Ama araçta bunu kaydedecek HİÇBİR girdi yoktu — sekiz kategori yalnızca
+   * 0–3 güçlük düzeyiyle puanlanıyordu. Cümle "değerlendirilir" dediği için
+   * kullanıcı bunu aracın yaptığını sanıyor; oysa kullanıcı kendi kafasında
+   * yükseltmedikçe kural hiç işlemiyordu.
+   *
+   * Belgede tur tur avlanan "ilan mı gerçek mi" sınıfının ta kendisi.
+   * Çare `gnri`deki cinsiyet seçicisiyle aynı yönde: formülün ihtiyaç
+   * duyduğu girdi EKLENDİ ve varsayım görünür kılındı.
+   *
+   * Kural KATEGORİ düzeyinde uygulanıyor, çünkü HAQ-DI'de yardımcı araç
+   * sorusu kategori başına sorulur ve o kategorinin skorunu taban 2'ye
+   * çeker.
+   */
+  const [yardim, setYardim] = React.useState<Record<string, boolean>>({});
 
   const setScore = (key: string, val: number) => setScores(prev => ({ ...prev, [key]: val }));
+  const toggleYardim = (id: string) => setYardim(prev => ({ ...prev, [id]: !prev[id] }));
 
   const catScores = CATEGORIES.map(cat => {
     const vals = cat.items.map((_, i) => scores[`${cat.id}_${i}`] ?? -1).filter(v => v >= 0);
-    return vals.length > 0 ? Math.max(...vals) : -1;
+    if (vals.length === 0) return -1;
+    const ham = Math.max(...vals);
+    /* Yardımcı araç / başka kişi yardımı varsa kategori skoru en az 2. */
+    return yardim[cat.id] ? Math.max(ham, 2) : ham;
   });
 
   const answered = catScores.filter(s => s >= 0);
@@ -86,6 +113,28 @@ export default function HaqDiPage() {
                   );
                 })}
               </div>
+
+              <label className="focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 mt-4 flex items-center gap-3 p-3 rounded-2xl border border-slate-200 bg-slate-50 cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="sr-only"
+                  checked={!!yardim[cat.id]}
+                  onChange={() => toggleYardim(cat.id)}
+                />
+                <span
+                  aria-hidden="true"
+                  className={`w-5 h-5 rounded-md border flex items-center justify-center shrink-0 text-[11px] font-black
+                    ${yardim[cat.id] ? "bg-blue-900 border-blue-900 text-white" : "bg-white border-slate-300 text-transparent"}`}
+                >
+                  ✓
+                </span>
+                <span className="text-[11px] font-bold text-blue-900/80">
+                  Bu etkinlik için yardımcı cihaz ya da başka bir kişinin yardımı kullanılıyor
+                  <span className="block text-[9px] font-black text-slate-400 uppercase tracking-widest mt-0.5">
+                    işaretlenirse bu kategorinin skoru en az 2 sayılır
+                  </span>
+                </span>
+              </label>
             </div>
           ))}
         </div>

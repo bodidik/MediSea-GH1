@@ -7735,3 +7735,64 @@ ikinci duyuru üretirdi. **Aynı sınıfın iki yapısı var; hangisinde olduğu
 
 Yan bulgu: `bmr`in yaş alanı hiç birim taşımıyordu — kardeşleri "Boy (cm)" ve
 "Ağırlık (kg)" derken "Yaş" diyordu. "Yaş (yıl)" oldu.
+
+### ARAÇ KENDİ KURALINI İLAN EDİP UYGULAMIYORDU — `haq-di` yardımcı araç kuralı
+
+Sayfanın altındaki açıklama şunu diyordu (ve DOĞRU, yayımlanmış HAQ-DI'nin
+kuralı budur):
+
+> "Yardımcı cihaz veya başka bir kişinin yardımı kullanılıyorsa ilgili soru
+> skoru **en az 2** olarak değerlendirilir."
+
+Ama araçta bunu kaydedecek **hiçbir girdi yoktu** — sekiz kategori yalnızca
+0–3 güçlük düzeyiyle puanlanıyordu. Cümle *"değerlendirilir"* dediği için
+kullanıcı bunu aracın yaptığını sanıyor; oysa kendi kafasında yükseltmedikçe
+kural hiç işlemiyordu.
+
+Bu, depoda tur tur avlanan **"ilan mı gerçek mi"** sınıfının en saf hâli:
+metin doğru, hesap eksik. `sledai2k`de eksik olan TANIMLAYICILARdı, burada
+eksik olan bir KURAL.
+
+Çare `gnri`deki cinsiyet seçicisiyle aynı yönde — formülün ihtiyaç duyduğu
+girdi EKLENDİ ve varsayım görünür kılındı: her kategoriye bir onay kutusu,
+işaretlenirse `Math.max(kategoriSkoru, 2)`.
+
+**Doğrulama beş vaka, ikisi negatif:**
+
+| girdi | HAQ-DI | not |
+|---|---|---|
+| sekiz kategori "Güçlük yok", yardım yok | **0,00** · MİNİMAL | taban |
+| aynı + **1** yardım | **0,25** (2/8) | o kategori 0 → 2 |
+| aynı + **4** yardım | **1,00** (8/8) · ORTA | bant değişiyor |
+| **negatif** — hepsi "Yapamıyor" (3) + **8** yardım | **3,00** | `Math.max(3,2)` — skor DÜŞMÜYOR |
+| **negatif** — hepsi "Yapamıyor", yardım yok | **3,00** | aynı |
+
+Dördüncü satır belirleyici: kural bir TABAN, tavan değil. `Math.min` yazılsaydı
+en ağır hastanın skoru 2'ye çekilirdi ve ölçüm bunu yakalar.
+
+Onay kutusu deponun klavye kalıbını izliyor (`sr-only` girdi + saran etikette
+`focus-within` halkası), yani belgedeki "gizlenen form kontrolü `hidden` ile
+gizlenmez" kuralına uygun.
+
+### `basdai` ölçeğinin on katını basıyordu — üst sınır süpürmesinin kaçırdığı biçim
+
+Aracın kendi şeridi *"Her soru için 0–10 NRS"* diyor. Tarayıcıda ölçüldü:
+altı alana da 100 yazıldığında ekran **"BASDAI = 100.0"** basıyordu.
+
+**Kapalı sanılan üst sınır süpürmesi bunu neden kaçırdı:** o ölçüt
+*"alt sınırı var, üst sınırı YOK"* biçimini arıyordu (`x >= 1 && ...` gibi).
+`basdai`nin kapısında hiç sayısal karşılaştırma yoktu — yalnızca
+`sayiGirildiMi`. Yani **İKİSİ DE yoktu** ve ölçüt aday üretemedi.
+
+Aktarılabilir kural: bir sınıfı "alt sınır var ama üst yok" diye tararken,
+**hiç sınırı olmayan** kümeyi de ayrıca say. Ölçüt kusurun bir biçimine
+göre yazılınca öteki biçimi görmez.
+
+Sınır üç noktadan ölçüldü: **tam 10 geçiyor** (10,0), **10,1 düşüyor**,
+altı alan 6 iken sonuç 6,0 ile değişmedi. Düşen durumda sessiz kalmıyor —
+"Altı sorunun altısı da 0–10 arası bir sayı bekliyor. Sıfır geçerlidir."
+
+**Formülün kendisi doğruydu ve ayrıca doğrulandı:** BASDAI =
+(S1+S2+S3+S4+(S5+S6)/2)/5. Altı soruya da 6 verildiğinde sabah tutukluluğu
+ortalaması 6,0 ve skor 6,0 — yani ne 6'ya bölme ne de S5/S6 ortalamasını
+atlama hatası var (bu indekste en sık iki hata biçimi).

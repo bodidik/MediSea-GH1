@@ -27,7 +27,25 @@ export default function BasdaiPage() {
      anahtar üretiyor ve kapı açılıyordu. Ölçüldü — çöp girdi
      "0.0 · DÜŞÜK / İNAKTİF" bastırıyordu. Artık altısının da SAYI
      olması aranıyor; "0" girilmiş alan meşru sayılıyor. */
-  const allFilled = ["q1", "q2", "q3", "q4", "q5", "q6"].every((id) => sayiGirildiMi(vals[id]));
+  /**
+   * ÜST SINIR EKSİKTİ — ölçek 0–10 ama araç her sayıyı kabul ediyordu.
+   *
+   * Aracın KENDİ alt başlığı "Her soru için 0–10 NRS" diyor. Tarayıcıda
+   * ölçüldü: altı alana da 100 yazıldığında ekran **"BASDAI = 100.0"**
+   * basıyordu — kendi ilan ettiği ölçeğin on katı. GKS'deki "297 / 15" ve
+   * CHA₂DS₂-VASc'taki "TOPLAM 10" ile aynı şekil.
+   *
+   * `sayiGirildiMi` çöpü zaten eliyordu; eksik olan yalnızca aralıktı.
+   * Bu araç, kapalı sanılan üst sınır süpürmesinin dışında kalmıştı çünkü
+   * kapısında hiç sayısal karşılaştırma yoktu — ölçüt "alt sınırı var, üst
+   * sınırı yok" arıyordu, burada İKİSİ DE yoktu.
+   */
+  const nrsGecerli = (id: string) => {
+    if (!sayiGirildiMi(vals[id])) return false;
+    const v = parseLocaleNumber(vals[id]);
+    return v >= 0 && v <= 10;
+  };
+  const allFilled = ["q1", "q2", "q3", "q4", "q5", "q6"].every(nrsGecerli);
   const morning = (q5 + q6) / 2;
   const score = allFilled ? (q1 + q2 + q3 + q4 + morning) / 5 : null;
 
@@ -36,6 +54,11 @@ export default function BasdaiPage() {
     return { label: "AKTİF HASTALIK", sub: "BASDAI ≥ 4 — Biyolojik tedavi için eşik değer", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
   const result = score !== null ? getResult(score) : null;
+
+  /* SESSİZ BOŞLUK YERİNE SEBEP. Aralık dışı bir sayı yazan kullanıcı, kapı
+     yüzünden hiçbir şey görmüyordu ve neyin beklendiğini bilemiyordu. */
+  const yazilanVar = ["q1", "q2", "q3", "q4", "q5", "q6"].some((id) => (vals[id] ?? "").trim() !== "");
+  const sebepGoster = yazilanVar && score === null;
   const params = { q1, q2, q3, q4, q5, q6 };
 
   return (
@@ -80,6 +103,15 @@ export default function BasdaiPage() {
             </div>
           )}
         </div>
+
+        {sebepGoster && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+            <p className="text-[11px] font-bold text-slate-600">
+              Altı sorunun altısı da 0–10 arası bir sayı bekliyor. Sıfır geçerlidir.
+            </p>
+          </div>
+        )}
 
         {result && score !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
