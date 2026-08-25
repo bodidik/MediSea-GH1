@@ -8228,3 +8228,73 @@ yeniden ifade edilmiş. `hscore`da eksik şıkkın adı tartışmasızdı
 
 Ekranda tavan ilanı YOK, yani `hscore`daki gibi bir ilan–gerçek çelişkisi de
 yok. Ölçüm, kapsam ve gerekçe burada; klinik ifade kararı içerik sahibinin.
+
+### ULAŞILABİLİR TAVANI HER SKOR ARACI İÇİN HESAPLA — `payda-denetim`in göremediği yer
+
+Son turların dört bulgusu (`hscore` 327↔337 · `sledai2k` 61↔105 ·
+`chads-vasc` 10↔9 · `essdai` 120↔123) aynı yöntemden çıktı: **şık
+tablolarından ulaşılabilir tavanı hesapla, yayımlanmış azamiyle karşılaştır.**
+
+`payda-denetim` bunu yalnızca tavanını EKRANDA ilan eden araçlar için yapıyor
+(35 araç). İlan etmeyenler hiç karşılaştırılmamıştı — `essdai` ve `sledai2k`
+tam o boşlukta duruyordu. Bu tur 31 skor aracının tavanı hesaplandı.
+
+**Ölçüt dört sahte aday üretti ve dördü de öğretici:**
+
+| araç | ölçütün dediği | gerçek |
+|---|---|---|
+| `chads-vasc` | 10 | 9 — bu oturumda konan DIŞLAMA kuralını ölçüt bilmiyor |
+| `wells-pe` | 11 | 12,5 — tam sayı regex'i 1,5'leri 1'e yuvarlıyor |
+| `mrss` · `rapid3` · `uas7` · `scorad` | 3 / 3 / 3 / 100 | tek şık dizisi N madde boyunca YENİDEN KULLANILIYOR; tavan dizide değil madde listesinde |
+| `psi-port` | 285 | PSI'nin sabit tavanı yok (yaş doğrudan puan) |
+
+Yani ölçüt aday üretir, kararı yayımlanmış tanımı okumak verir.
+
+**İki gerçek sapma çıktı.**
+
+#### `gout-acr` — yayımlanmış ölçütte İKİ görüntüleme alanı var, araç birini seçtiriyordu
+
+ACR/EULAR 2015'te görüntüleme **iki bağımsız alandır** ve her biri 4 puan:
+ürat birikimi kanıtı (USG çift kontur VEYA DECT) ve gut ile ilişkili eklem
+hasarı (radyografide erozyon). İkisi aynı hastada birlikte bulunabilir ve
+ölçüt onları ayrı puanlar.
+
+Araçta ikisi TEK dışlayıcı grupta duruyordu (`single: true`), yani her ikisi
+de olan hasta **8 yerine 4** alıyordu. Ölçeğin eşiği **≥ 8** olduğu için bu,
+sınıflandırmayı doğrudan çeviriyor.
+
+Ölçüldü (giriş ölçütü Evet · MSU yapılmadı · 1. MTP +2):
+
+| görüntüleme | toplam | karar |
+|---|---|---|
+| USG **ve** X-Ray | **10 / ≥8** | **"GUT ARTRİT — Kriterleri Karşılıyor"** |
+| **negatif** — yalnızca USG | **6 / ≥8** | "Kriter Karşılanmadı · 2 puan daha gerekiyor" |
+
+İkinci satır belirleyici: ayırma skorları genel olarak şişirmiyor, yalnızca
+İKİSİ birden olan hastanın ikisini de saymasına izin veriyor. Düzeltme
+öncesi birinci satırdaki hasta da 6 alıyor ve gut sınıflandırması ALMIYORDU.
+
+Ayırma YAPISAL: iki bulgunun etiketleri ve puanları zaten araçtaydı, yeni bir
+klinik iddia yazılmadı.
+
+**Kalan 1 puanlık fark BİLEREK bırakıldı ve açık bulgu:** düzeltmeden sonra
+tavan 24, yayımlanmış azami 23. Fark `time_course` alanından geliyor —
+araç "tipik atak özelliklerinden **1 / 2 / 3** tanesi" diye puanlıyor (1/2/3),
+oysa yayımlanmış ölçütte eksen farklı: iki ya da daha fazla tipik özellik
+taşımak bir atağı "tipik" YAPAR, puan ise **tek tipik atak = 1, tekrarlayan
+tipik ataklar = 2**. Yani araç "özellik sayısını" puanlıyor, ölçüt "atak
+sayısını". Düzeltmek etiketleri yeniden yazmayı gerektiriyor — içerik kararı.
+
+#### `apache2` — kural ETİKETTE yazıyor ama uygulanamıyor (AÇIK BULGU)
+
+Ulaşılabilir tavan **67**, yayımlanmış APACHE II azamisi **71**. Fark tek
+yerden: kreatinin akut böbrek yetmezliğinde **iki katına çıkar** (0–8), araçta
+0–4'te kalıyor.
+
+Aracın kendi etiketi kuralı SÖYLÜYOR: *"Kreatinin (Akut böbrek yetmezliği
+varsa ×2)"* — ama uygulayacak bir denetim yok; şıklar 0/2/3/4 ve 8'e çıkan
+bir yol bulunmuyor. `haq-di` ve `murray` ile aynı sınıf, üçüncü kez:
+**metin doğru, hesap eksik.**
+
+APACHE II mortalite bantları beşer puan adımlıyor, yani 4 puan bir bant
+kaydırabilir. Ölçüldü ve not edildi; düzeltme sonraki tura.

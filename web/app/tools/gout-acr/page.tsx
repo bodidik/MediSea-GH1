@@ -75,12 +75,38 @@ const DOMAIN_ITEMS = [
     single: true,
   },
   {
-    id: "imaging",
-    label: "Görüntüleme",
-    detail: "Semptomatik eklem/bursa veya 1. MTP / ayak bileği ultrason/dual-enerji BT",
+    /**
+     * YAYIMLANMIŞ ÖLÇÜTTE İKİ AYRI GÖRÜNTÜLEME ALANI VAR — araç birini
+     * seçtiriyordu.
+     *
+     * ACR/EULAR 2015'te görüntüleme İKİ BAĞIMSIZ alandır ve her biri 4 puan:
+     *   · ürat birikimi kanıtı (USG çift kontur VEYA DECT)
+     *   · gut ile ilişkili eklem hasarı (radyografide erozyon)
+     * İkisi aynı hastada birlikte bulunabilir; ölçüt onları ayrı puanlar.
+     *
+     * Araçta ikisi TEK bir dışlayıcı grupta duruyordu (`single: true`), yani
+     * hem çift kontur hem erozyonu olan hasta 8 yerine 4 alıyordu. Ölçek
+     * eşiği ≥ 8 olduğu için bu, tanı sınırının tam üstündeki bir hastayı
+     * altına düşürebilir.
+     *
+     * Ayırma YAPISAL: iki bulgunun etiketleri ve puanları ZATEN araçta vardı,
+     * yeni bir klinik iddia yazılmadı.
+     */
+    id: "imaging_urate",
+    label: "Görüntüleme — ürat birikimi",
+    detail: "Semptomatik eklem/bursa ultrasonunda çift kontur VEYA dual-enerji BT'de ürat birikimi",
     options: [
-      { label: "Görüntüleme yok", pts: 0 },
+      { label: "Yok veya görüntüleme yapılmadı", pts: 0 },
       { label: "USG: çift kontur bulgusu VEYA DECT: ürat birikimi", pts: 4 },
+    ],
+    single: true,
+  },
+  {
+    id: "imaging_erosion",
+    label: "Görüntüleme — gut ile ilişkili hasar",
+    detail: "El veya ayak radyografisinde en az bir erozyon",
+    options: [
+      { label: "Yok veya görüntüleme yapılmadı", pts: 0 },
       { label: "X-Ray: gut ile ilişkili erozyon", pts: 4 },
     ],
     single: true,
