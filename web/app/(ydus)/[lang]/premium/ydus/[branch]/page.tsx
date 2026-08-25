@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
@@ -6,6 +7,40 @@ import KategorilerClient from './KategorilerClient';
 import { listelenmeyenKategori } from '@/lib/premium-brans';
 
 export const revalidate = 86400;
+
+/**
+ * Bu sayfanın kendi metadata'sı OLMAK ZORUNDA — panonun (`../page.tsx`)
+ * gerekçesiyle birebir aynı sebep, orada düzeltilmiş ama BURADA kalmıştı.
+ *
+ * OLCULDU (canlıda): dokuz premium branş sayfasının dokuzu da kök düzenin
+ * `alternates: { canonical: "/" }` değerini miras alıyordu, yani her biri
+ * arama motoruna "ben ana sayfanın kopyasıyım" diyordu. Aynı ölçümde
+ * `<title>` de kökün genel başlığıydı ("MediSea — Dahiliye için Türkçe
+ * klinik kaynak"), oysa her sayfanın `<h1>`i ayrı (Endokrinoloji · Tıbbi
+ * Onkoloji · Göğüs Hastalıkları…): sekme, yer imi ve paylaşım başlığı
+ * ayırt edilemiyordu.
+ *
+ * Başlık ve açıklama `<h1>` ile AYNI kaynaktan (`veri.meta`) türüyor —
+ * ikinci bir gerçeklik üretilmiyor.
+ *
+ * `openGraph` bilerek TANIMLANMIYOR: burada tanımlanırsa kökteki dosya
+ * tabanlı paylaşım görseli miras alınmayı bırakır ve sayfa görselsiz kalır
+ * (panodaki aynı not).
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; branch: string }>;
+}): Promise<Metadata> {
+  const { branch } = await params;
+  const veri = bransYukle(branch);
+  if (!veri) return {};
+  return {
+    title: `${veri.meta.baslik} — YDUS`,
+    description: veri.meta.aciklama,
+    alternates: { canonical: `/tr/premium/ydus/${branch}` },
+  };
+}
 
 /**
  * Aynı sebep satış sayfasındaki gibi: `[lang]` için üretilecek değerler

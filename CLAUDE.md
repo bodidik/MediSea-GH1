@@ -10351,3 +10351,70 @@ istemcide çiziliyor: sunucudan gelen gövde 1453 karakter ve içinde ne 41 ne
 Bu, belgedeki *"sunucu HTML'inde `<h1>` say"* kuralının sınırı: o ölçüt
 sayfanın SUNUCUDA basılıp basılmadığını sorar, İÇERİĞİN TAMAMINI değil.
 **İki yüzeyin sayısını karşılaştırırken ikisini de AYNI katmanda oku.**
+
+### Premium branş sayfaları kendini ANA SAYFANIN KOPYASI ilan ediyordu
+
+Panonun (`ydus/page.tsx`) metadata bloğunda uzun bir gerekçe duruyor: *"Bu
+sayfanın kendi metadata'sı OLMAK ZORUNDA. Yoksa kök düzenin
+`alternates: { canonical: "/" }` değerini miras alıyor ve … arama motoruna
+'ben ana sayfanın kopyasıyım' diyor — canlıda tam olarak bu oluyordu."*
+
+Kusur **panoda düzeltilmiş, kardeş rotalarda kalmıştı.** Canlıda ölçüldü:
+
+| yol | `<title>` | canonical |
+|---|---|---|
+| `/tr/premium/ydus` (pano) | YDUS Hazırlık — Dahiliye · MediSea | kendi adresi ✓ |
+| `…/endokrinoloji` · `…/hematoloji` … (9 branş) | **sitenin genel başlığı** | **ana sayfa** ✗ |
+| `/tools/glim` (kıyas) | GLIM Kriterleri — … | kendi adresi ✓ |
+
+İki ayrı bedel vardı:
+
+1. **Canonical** — dokuz branş sayfası da kendini ana sayfanın kopyası ilan
+   ediyordu (belgede kayıtlı sınıfın birebir tekrarı).
+2. **Başlık** — her sayfanın `<h1>`i AYRI (Endokrinoloji · Tıbbi Onkoloji ·
+   Göğüs Hastalıkları…) ama sekme, yer imi ve paylaşım başlığı ayırt
+   edilemiyordu. Ücretli yüzeyde üç sekme açan kullanıcı üçünü de aynı
+   görüyordu.
+
+**Çare panonun kendi kalıbı** — sayfa sunucu bileşeni olduğu için layout
+gerekmedi, `generateMetadata` doğrudan eklendi ve başlık/açıklama `<h1>` ile
+**AYNI kaynaktan** (`veri.meta`) türüyor, yani ikinci bir gerçeklik yok.
+`openGraph` bilerek TANIMLANMADI — panodaki not: burada tanımlanırsa kökteki
+dosya tabanlı paylaşım görseli miras alınmayı bırakır.
+
+**Doğrulama, biri negatif kontrol:**
+
+| yol | başlık | canonical | og:image |
+|---|---|---|---|
+| `/endokrinoloji` | **Endokrinoloji — YDUS · MediSea** | kendi adresi | **var** |
+| `/onkoloji` | **Tıbbi Onkoloji — YDUS · MediSea** | kendi adresi | var |
+| `/gogus-hastaliklari` | **Göğüs Hastalıkları — YDUS · MediSea** | kendi adresi | var |
+| `/hematoloji` · `/nefroloji` | kendi adları | kendi adresi | var |
+| **negatif** — `/tr/premium/ydus` (pano) | **değişmedi** | değişmedi | var |
+| olmayan branş | 404 · genel başlık | — | — |
+
+`og:image`in durması kritik: panodaki uyarı gereği `openGraph` tanımlanmadı ve
+kök görsel mirası korundu.
+
+#### AÇIK MADDE — beş rota daha aynı durumda, ve layout ÇARESİ GÜVENLİ DEĞİL
+
+Kırpmadan ölçüldü: `/tr/premium` · `/tr/premium/ydus/profil` ·
+`…/liderlik` · `…/inciler` · premium KONU sayfaları — beşi de sitenin genel
+başlığını ve `canonical: "/"`yi taşıyor.
+
+En değerlisi **`/tr/premium`**: `robots.ts` yalnızca `/premium` ve
+`/*/premium/ydus/` kalıplarını yasaklıyor, yani `/tr/premium` **taranabilir**
+ve kendini ana sayfanın kopyası ilan ediyor.
+
+**Ama kolay çare BOZAR.** Sayfa `"use client"` olduğu için metadata layout'a
+konmalı; oradaki tek layout (`[lang]/premium/layout.tsx`) `ydus/` altının
+TAMAMINI da sarıyor. Oraya `canonical: "/tr/premium"` koymak, kendi
+canonical'ı olmayan bütün ydus alt sayfalarına o iddiayı yayardı — bir yanlış
+canonical'ı başka bir yanlışla değiştirmek. **Ölçüldü, gerekçesi yazıldı,
+DEĞİŞTİRİLMEDİ.**
+
+**Ölçüm tuzağı — KENDİ KIRPMAM iki kez sahte "eksik" üretti.** `h.slice(0, 8000)`
+ve `slice(0, 12000)` ile okuyunca beş rota "title yok, canonical yok" çıktı.
+Sebep: bu sayfalarda `<title>` **13621.** karakterde. Dilim kaldırılınca hepsi
+göründü. Belgedeki *"ekrana basmak için kırptığın değeri ölçüme GERİ VERME"*
+kuralının HTML tarafı — ve bu tur onsuz beş sahte kusur raporlanacaktı.
