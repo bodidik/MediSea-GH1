@@ -377,6 +377,17 @@ export default function ToolsIcerik() {
           >
             🏠 Ana Sayfa
           </Link>
+          {/* KÜTÜPHANEYE BAĞ. Ölçüldü (canlı): `/tools` sayfasında `<header>`
+              YOK (AppShell almıyor), genel arama kutusu YOK ve `/topics`e
+              SIFIR bağlantı vardı — sayfadaki tek araç-dışı bağlantı `/` idi.
+              Yani 130 hesaplayıcının giriş noktasından 410 konuluk
+              kütüphaneye tek yol ana sayfadan geçmekti. */}
+          <Link
+            href="/topics"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"
+          >
+            📚 Kütüphane
+          </Link>
         </div>
 
         {/* BAŞLIK PANELİ */}
@@ -478,13 +489,26 @@ export default function ToolsIcerik() {
             <p className="text-sm font-bold text-slate-500">
               &quot;{searchTerm}&quot; için sonuç yok.
             </p>
-            <button
-              type="button"
-              onClick={() => setSearchTerm("")}
-              className="mt-4 text-[11px] font-black uppercase tracking-widest text-blue-900 hover:underline"
-            >
-              Aramayı temizle
-            </button>
+            {/* İki çıkış: aynı yüzeyde kalmak ya da KÜTÜPHANEYE geçmek.
+                Bu kutu yalnızca "Aramayı temizle" sunuyordu; oysa burada
+                aranan terimlerin çoğu (hastalık, semptom) araç değil KONU.
+                Aynı sınıf site başlığındaki aramada da vardı ve orada da
+                çıkış yolu eklendi. */}
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+              <button
+                type="button"
+                onClick={() => setSearchTerm("")}
+                className="rounded-full bg-slate-100 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-blue-900 hover:bg-slate-200 transition-colors"
+              >
+                Aramayı temizle
+              </button>
+              <Link
+                href="/topics"
+                className="rounded-full bg-blue-50 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-blue-800 hover:bg-blue-100 transition-colors"
+              >
+                Kütüphaneye bak
+              </Link>
+            </div>
           </div>
         )}
 

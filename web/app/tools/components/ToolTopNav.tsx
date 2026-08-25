@@ -63,6 +63,17 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         📂 Tüm Araçlar
       </Link>
 
+      {/* KÜTÜPHANE HER ARAÇ SAYFASINDA. Branş bağları yalnızca aracın bir
+          branşa eşlendiği durumda çıkıyor; ölçüldü (canlı): `/tools/bmi`
+          sayfasının araç-dışı TEK bağlantısı `/` idi, yani hiçbir branşa
+          eşlenmemiş araçlarda kütüphaneye yol yoktu. */}
+      <Link
+        href="/topics"
+        className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
+      >
+        📚 Kütüphane
+      </Link>
+
       {branchSlugs.map((slug) => {
         const specialty = getSpecialty(slug);
         return (

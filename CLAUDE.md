@@ -11079,3 +11079,83 @@ yalnızca okumayı kaldırıyor.
 > **Not edilen, DEĞİŞTİRİLMEYEN:** sonuç sırası bugün dosya sistemi sırasına
 > dayanıyor (alaka düzeyine değil). Bunu değiştirmek bir ürün kararı —
 > alfabetik mi, alaka düzeyi mi? Ölçüldü, yazıldı, dokunulmadı.
+
+### ARAÇ AĞACI BİR ADAYDI — 130 hesaplayıcının hub'ından kütüphaneye SIFIR yol
+
+Başlıktaki aramaya araçları eklerken kardeş yüzeye bakıldı: `/tools` hub'ının
+KENDİ arama kutusu. O sağlam çıktı — alan adlı ("Araçlarda ara"), canlı bölge
+sayıyı duyuruyor, açıklamada da arıyor ("trombozu" → 1 sonuç), sıfır durumda
+"Aramayı temizle" var ve boş sorguda 130 araç geri geliyor (belgede kayıtlı
+gerileme tekrar etmiyor).
+
+Ama sayfada **tek bir input** olduğu fark edildi ve asıl bulgu oradan çıktı.
+`app/tools/*` `(site)` grubunun DIŞINDA, yani AppShell almıyor. Ölçüldü
+(canlı, sunucu HTML'i):
+
+| yüzey | `<header>` | genel arama | `/topics` bağı | araç-dışı TEK bağlantı |
+|---|---|---|---|---|
+| `/tools` (hub) | **yok** | **yok** | **0** | `/` |
+| `/tools/bmi` | yok | yok | **0** | `/` |
+| `/tools/egfr` | yok | yok | 2 (branş) | `/`, iki branş |
+
+Yani 130 hesaplayıcının giriş noktasına arama motorundan düşen bir kullanıcı
+için **410 konuluk kütüphaneye tek yol ana sayfadan geçiyordu.** `/tools`ta
+"Addison" arayan kişi `"Addison" için sonuç yok` + "Aramayı temizle" görüyor;
+oysa o içerik sitede VAR, yalnızca başka yüzeyde. Bu, aynı turda başlık
+aramasında düzeltilen sınıfın ta kendisi — **arama, sahip olduğumuz şeyin
+olmadığını öğretiyor.**
+
+Branş bağları da her araçta yok: `getToolBranchSlugs` yalnızca bir branşa
+eşlenmiş araçlarda bağ üretiyor, `bmi` gibi eşlenmemiş araçlarda hiç çıkmıyor.
+
+**Üç yere bağ kondu:** hub üst gezinmesi (📚 Kütüphane), hub sıfır durumu
+("Kütüphaneye bak", "Aramayı temizle"nin yanına) ve `ToolTopNav` — sonuncusu
+tek bileşenden 130 araç sayfasına birden yayılıyor.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `/tools` araç-dışı bağlantı | `/` | `/`, **`/topics`** |
+| `/tools/bmi` araç-dışı bağlantı | `/` | `/`, **`/topics`** |
+| `/tools/egfr` | `/` + 2 branş | `/` + **`/topics`** + 2 branş |
+| hub sıfır durumu | yalnızca "Aramayı temizle" | + **"Kütüphaneye bak"** |
+
+**Negatif kontroller:** hub açılışta 130 araç listeliyor, boş sorgu 130'u geri
+getiriyor (kayıtlı gerileme geri gelmedi), "wells" 2 sonuç, hub'daki 130 araç
+bağı sayısı değişmedi. 320 px'te gezinme satırı `flex-wrap: wrap` ve yeni çip
+ikinci satıra iniyor (24→145, pencere 320).
+
+#### Ölçüm notu: taşma pozitif kontrolü BU SAYFADA kör
+
+320 px doğrulamasında 900 px'lik bir tohum eklendi ve **ne kaydırma denemesi
+ne de öge düzeyi `scrollWidth` onu yakaladı** — yani her iki ölçüt de bu
+sayfada tohumu göremiyor. (`html`/`body`/`main` üzerinde `overflow-x: hidden`
+bulunamadı, sebep açıklanamadı.) Bu yüzden doğrulama taşma taramasıyla değil
+**doğrudan geometriyle** yapıldı: satırın `flexWrap` değeri ve çipin
+koordinatları okundu.
+
+Belgedeki kural ("İKİ ölçüt birden gerekiyor; hangisinin tek başına yeteceği
+sayfaya göre değişir") burada bir adım öteye taşınıyor: **ikisi birden kör
+olabilir.** Pozitif kontrol düştüğünde sonucu "temiz" diye raporlamak yerine
+ölçütü değiştir.
+
+#### Başlık aramasının canlı doğrulaması — ikisi indi, biri bekliyor
+
+| düzeltme | canlıda |
+|---|---|
+| araçlar aramada | **"Wells" → `/tools/wells-dvt`, `/tools/wells-pe`** |
+| panel yükseklik sınırı | **448 px**, belge 6934 → **1676 px** |
+| sıfır sonuçta çıkış | **`/topics` ve `/tools`** |
+| yanlış "bulunamadı" duyurusu | **HENÜZ İNMEDİ** (f295ef6 kuyrukta) |
+
+**Kendi ölçütüm burada yanıldı ve düzeltildi.** Duyuru kontrolü "yanlış
+'bulunamadı' `ms < 300` içinde mi" diye bakıyordu; yerelde 8 ms olan bu olay
+canlıda **592 ms**'de çıktı (panel gizliyken zamanlayıcılar kısılıyor) ve
+ölçüt "YOK" dedi. Dizi okununca gerçek görüldü:
+`Sonuç bulunamadı. (592) → Aranıyor… (1578) → 5 sonuç bulundu. (1826)`.
+**Doğru ölçüt mutlak zaman değil SIRA:** yanlış duyuru "Aranıyor…"dan ÖNCE mi
+geliyor? Bir ortamda ayarlanan eşik, başka ortamda sessizce yanlış verdikt
+üretiyor.
+
+Arama sunucu eyleminin canlı süresi de kaydedildi (araçlar VAR, önbellek YOK):
+ilk sorgu **996 ms**, sonrakiler 369 / 507 / 436 ms — ortanca **507 ms**.
+Önbellek indiğinde bu sayı yeniden ölçülecek.
