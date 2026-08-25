@@ -8160,3 +8160,71 @@ metinlerde hesap kuralı bildiren kalıplar (`en az N olarak değerlendirilir` �
 | `cat-copd` · `essdai` · `gcs` · `status-epileptikus` | yorum/klinik notu, hesap kuralı değil |
 
 Ölçütün değeri: 12 metni okumak ucuz, ve sınıf iki kez gerçek kusur verdi.
+
+### "SEÇİM PUANLA SAKLANIYOR" SINIFI KAPANDI — 591 dosya, ad ve yer serbest
+
+Ölçütün üçüncü kuşağı (alan adı serbest + karşılaştırma bir düzey dolaylı
+olabilir) bütün depoya sürüldü: **591 dosya, 9 aday, gerçek kusur YOK.**
+
+| aday | verdikt |
+|---|---|
+| `apache2` (8 kez) | karşılaştırma `sel[param.id]?.label === opt.label` — ETİKETLE |
+| `ciwa-ar` | tekrar GRUPLAR ARASINDA; her grup KENDİ İÇİNDE benzersiz (0/1/4/7 ve 0–7), karşılaştırma da grup başına |
+
+`ciwa-ar` ayrıca sayıldı: 5 grup × 4 şık (0,1,4,7) + 4 grup × 8 şık (0–7) +
+1 grup × 5 şık (0–4) → azami **5×7 + 4×7 + 4 = 67**, yayımlanmış CIWA-Ar
+azamisiyle birebir.
+
+### Çift React anahtarı — tarandı, kusur yok, ve ölçüt yine yanlış eşleştirdi
+
+Kardeş sınıf: aynı puan `key` olarak da kullanılıyorsa React kardeşler
+arasında çift anahtar görür (yanlış düğümün yeniden kullanılması, yanlış
+düğmenin basılı görünmesi). Belgede risk kayıtlıydı.
+
+Tarama 7 aday verdi, hepsi `apache2` ve **hepsi sahte**. Gerçek kullanım:
+
+```
+satır 213  key={`${opt.pts}-${opt.label}`}   ← çakışan grup, BİLEŞİK anahtar
+satır 232  key={opt.pts}                     ← yaş grubu, değerler benzersiz
+satır 249  key={opt.label}                   ← kronik
+```
+
+Ölçüt `key={x.pts}`i (232) tekrar eden fizyoloji dizileriyle (213'ün verisi)
+eşleştirmişti — **diziler arası yanlış eşleştirme.** Tarayıcı konsolunda da
+çift anahtar uyarısı yok (`next dev`, React uyarıları açık).
+
+Aktarılabilir kural: bir `key` ifadesini bir diziyle eşleştirirken, o
+anahtarın GERÇEKTEN o diziyi render eden döngüde olduğunu doğrula; aynı
+dosyada birden çok dizi ve birden çok döngü olabilir.
+
+### AÇIK BULGU — `essdai` kutanöz alanının 3. düzeyi yok (karar bekliyor)
+
+Ağırlıklı skorlar yayımlanmış tanımla karşılaştırıldı. 12 alanın 12'sinde
+`puan = ağırlık × düzey` birebir tutuyor, bantlar da doğru (<5 aktivite yok ·
+5–13 düşük · 14–27 orta · ≥28 yüksek). Ama **ulaşılabilir tavan 120**, oysa
+yayımlanmış ESSDAI azamisi **123**.
+
+Fark tek bir yerden geliyor:
+
+| alan | ağırlık | araçtaki en yüksek düzey | yayımlanmış |
+|---|---|---|---|
+| Kutanöz | 3 | **2** (6 puan) | **3** (9 puan) |
+
+Yayımlanmış ESSDAI'de kutanöz alan üç aktivite düzeyi taşır (düşük: eritema
+multiforme · orta: sınırlı kutanöz vaskülit / ayak-bilek sınırlı purpura ·
+**yüksek: yaygın kutanöz vaskülit, yaygın purpura ya da vaskülite bağlı
+ülser**). Araçta yüksek düzey yok; en ağır kutanöz tutulum "orta" olarak
+puanlanıyor ve hasta **3 puan eksik** alıyor.
+
+Bedeli bant sınırlarına yakın vakalarda görünür: 11–13 aralığındaki bir hasta
+3 puanla ORTA banda (≥14) geçerdi.
+
+**DEĞİŞTİRİLMEDİ ve sebebi kapsam:** eksik düzeyin VARLIĞI ve AĞIRLIĞI
+mekanik olarak belli, ama Türkçe klinik tanımını yazmak içerik kararı —
+üstelik araçtaki mevcut 1. ve 2. düzey etiketleri de yayımlanmış
+tanımlayıcılardan sapıyor (BSA yüzdesiyle yazılmışlar), yani alan zaten
+yeniden ifade edilmiş. `hscore`da eksik şıkkın adı tartışmasızdı
+("3 seri (pansitopeni)"); burada değil.
+
+Ekranda tavan ilanı YOK, yani `hscore`daki gibi bir ilan–gerçek çelişkisi de
+yok. Ölçüm, kapsam ve gerekçe burada; klinik ifade kararı içerik sahibinin.
