@@ -9203,3 +9203,71 @@ basamağından KABA ya da eşitse ve skor sürekli girdiden geliyorsa aday.**
 2 ondalık basıp 1 ondalık eşik kullanan araçlar (`asdas` 1,3/2,1/3,5 ·
 `haq-di` 0,5/1,5/2,5 · `murray` 2,5 · `ktv` 1,0/1,2) aynı şekli taşıyor ama
 pencereleri on kat dar (0,005) ve **ÖLÇÜLMEDİLER — "temiz" DENMİYOR.**
+
+### SINIF KAPANDI — açık bırakılan dört aracın ikisi kusurluydu, ikisi YAPISAL OLARAK güvenli
+
+Geçen tur dört araç "aynı şekli taşıyor ama ÖLÇÜLMEDİ, temiz DENMİYOR" diye
+bırakılmıştı. Kapatıldı — ve ayrım ölçütü **girdi kümesinin sürekli mi kesikli
+mi** olduğu çıktı.
+
+**Kesikli olan ikisi çelişki ÜRETEMEZ — akıl yürütmeyle değil SAYARAK
+kanıtlandı:**
+
+| araç | değer kümesi | ulaşılabilir değer | çelişki |
+|---|---|---|---|
+| `haq-di` | `toplam/8`, toplam tam sayı 0–24 | 25 | **YOK** |
+| `murray` | `toplam/n`, n ∈ {2,3,4} | 25 | **YOK** |
+
+Kümeler tek tek üretilip her değerin `toFixed(2)` gösterimi eşiklerle
+karşılaştırıldı. Aynı betiğe kıyas olarak `pni`nin gerçek vakası (44,995 →
+"45.0", eşik 45) verildi ve **yakalandı** — yani "çelişki YOK" sonucu kör bir
+ölçütten gelmiyor.
+
+**Sürekli olan ikisi KUSURLUYDU ve sınır girdileri hesapla bulundu:**
+
+| araç | girdi | ham | ekranda | hüküm |
+|---|---|---|---|---|
+| `asdas` | dört NRS de 0 · **CRP 8,40** | 1,29737 | **"1.30"** | **İNAKTİF HASTALIK** (cetvel: "İnaktif < 1.3") |
+| `ktv` | pre 50 · post 17 · 180 dk · UF 1,1 L · 70 kg | 1,19617 | **"1.20"** | **YETERSİZ DİYALİZ** (eşik ≥ 1.2) |
+
+`ktv` bu serinin en pahalısı: ekran yeterlilik eşiğine **eşit** bir sayı
+gösterirken "PROTOKOL GÖZDEN GEÇİRİLMELİ" diyordu.
+
+#### `ktv`de iki kural ÇARPIŞIYOR ve ikisi de korunmalı
+
+`pni`/`gnri`de çare tekti: bir kez yuvarla. `ktv`de öyle değil — `eKtV`
+`spKtV`den TÜRÜYOR, yani `spKtV`yi yuvarlayıp `eKtV`ye vermek belgedeki
+**"GÖSTERİM yuvarlanır, HESAP yuvarlanmaz"** kuralını çiğnerdi (`sedasyon-
+infuzyon` turunda ölçülmüş, %25 hata).
+
+Çözüm ikisini birden sağlıyor: ham değerler zincirde korunuyor, ekrana basılan
+VE eşikle karşılaştırılan değerler ayrıca bir kez yuvarlanıyor
+(`spGos` · `eGos` · `urrGos`). Yani:
+
+```
+eKtV  <- HAM spKtV        (hesap zinciri, yuvarlanmaz)
+ekran <- spGos            (gosterim)
+esik  <- spGos            (bant)      -> ekran ile esik ayrisamaz
+```
+
+**Aktarılabilir kural: "tek sayı" ile "hesap yuvarlanmaz" çelişmez — ayrım
+değerin NEREYE gittiğidir.** Bir sonraki hesaba giden değer ham kalır;
+kullanıcıya GÖSTERİLEN ve EŞİKLE karşılaştırılan değer aynı yuvarlanmış sayı
+olmalıdır.
+
+**Doğrulama — negatif kontroller belgede KAYITLI değerlerle:**
+
+| ölçüt | sonuç |
+|---|---|
+| `ktv` sınır | spKt/V "1.20" · eKt/V "0.99" · URR 66% — hüküm hâlâ YETERSİZ ama **gerekçe artık eKt/V**; "spKt/V 1.20 < 1.2" satırı **kayboldu** |
+| `ktv` belgedeki vaka 60/20/240/2/70 | **1.28 · 1.12 · 67% · SAĞLANDI** — birebir |
+| `ktv` belgedeki vaka 85/22/240/2.5/70 | **1.59 · 74%** — birebir |
+| `asdas` sınır | **"1.30" · ORTA AKTİVİTE** — cetvelin "Orta 1.3–2.1" satırıyla tutarlı |
+| `asdas` 5/5/5/3 · CRP 5 | **2.70** — elle hesapla birebir (0,121×5 + 0,058×5 + 0,110×5 + 0,073×3 + 0,579×ln6 = 2,7014) |
+
+`asdas`ın ESR varyantı sıfır girdide hâlâ **−0,21** basıyor — belgede kayıtlı,
+kullanıcı kararı bekleyen `− 0.211` sabiti. **Dokunulmadı.**
+
+**Böylece sınıfın dört aracı da karara bağlandı:** `pni` · `gnri` (önceki tur)
+ve `asdas` · `ktv` (bu tur) düzeltildi; `haq-di` · `murray` yapısal olarak
+güvenli. Sınıf KAPALI.

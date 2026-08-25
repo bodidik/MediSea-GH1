@@ -86,9 +86,25 @@ export default function KtvPage() {
      geçerlilik dersi): süre alanı bozuksa URR yine de gösterilebilir. */
   const urr = yonDogru ? (1 - post / pre) * 100 : null;
 
-  const spOk  = spKtV !== null && spKtV >= 1.2;
-  const eOk   = eKtV  !== null && eKtV  >= 1.0;
-  const urrOk = urr   !== null && urr   >= 65;
+  /**
+   * TEK SAYI -- ama HESAP yuvarlanmaz, yalnizca GOSTERIM ve ESIK.
+   *
+   * `eKtV` `spKtV`den turuyor, yani spKtV'yi yuvarlayip eKtV'ye vermek
+   * belgedeki "yuvarlanmis deger ikinci hesaba girmesin" kuralini cignerdi.
+   * O yuzden ham degerler korunuyor; ekrana basilan ve ESIKLE karsilastirilan
+   * degerler ayrica bir kez yuvarlaniyor.
+   *
+   * OLCULDU: pre 50 · post 17 · 180 dk · UF 1.1 L · 70 kg -> ham 1.19617 ->
+   * ekranda "1.20" ama hukum "YETERSIZ DIYALIZ" (esik >= 1.2). Ekran, kendi
+   * esigine esit bir sayi gosterirken yetersizlik ilan ediyordu.
+   */
+  const spGos  = spKtV !== null ? Math.round(spKtV * 100) / 100 : null;
+  const eGos   = eKtV  !== null ? Math.round(eKtV  * 100) / 100 : null;
+  const urrGos = urr   !== null ? Math.round(urr) : null;
+
+  const spOk  = spGos  !== null && spGos  >= 1.2;
+  const eOk   = eGos   !== null && eGos   >= 1.0;
+  const urrOk = urrGos !== null && urrGos >= 65;
 
   /**
    * "YETERSİZ DİYALİZ" bir İDDİA — hesaplanamayan değer onu üretmemeli.
@@ -162,14 +178,14 @@ export default function KtvPage() {
 
         {/* Sonuçlar */}
         <div className="grid grid-cols-3 gap-3">
-          <ResultCard label="spKt/V" value={spKtV} target="≥ 1.2" unit="" ok={spKtV !== null ? spKtV >= 1.2 : null} />
-          <ResultCard label="eKt/V"  value={eKtV}  target="≥ 1.0" unit="" ok={eKtV  !== null ? eKtV  >= 1.0 : null} />
+          <ResultCard label="spKt/V" value={spGos} target="≥ 1.2" unit="" ok={spGos !== null ? spGos >= 1.2 : null} />
+          <ResultCard label="eKt/V"  value={eGos}  target="≥ 1.0" unit="" ok={eGos  !== null ? eGos  >= 1.0 : null} />
           <div className={`rounded-2xl p-4 text-center border ${
             urr === null ? 'bg-slate-50 border-slate-200' :
             urrOk ? 'bg-emerald-900 border-emerald-900' : 'bg-rose-900 border-rose-900'}`}>
             <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${urr === null ? 'text-slate-400' : 'text-white/85'}`}>URR</div>
             <div className={`text-3xl font-black ${urr === null ? 'text-slate-300' : 'text-white'}`}>
-              {urr !== null ? `${urr.toFixed(0)}%` : '—'}
+              {urrGos !== null ? `${urrGos}%` : '—'}
             </div>
             <div className={`text-[9px] font-bold mt-1 ${urr === null ? 'text-slate-400' : urrOk ? 'text-emerald-300' : 'text-rose-300'}`}>
               {urr !== null ? (urrOk ? "✓ Hedef ≥ 65%" : "✗ Hedef ≥ 65%") : "Hedef: ≥ 65%"}
@@ -202,7 +218,7 @@ export default function KtvPage() {
             )}
             {degerlendirilebilir && !yeterli && (
               <div className="mt-3 space-y-1 text-[11px] font-bold text-rose-700">
-                {!spOk  && <p>• spKt/V {spKtV.toFixed(2)} &lt; 1.2 — seans süresini veya kan akımını artırın</p>}
+                {!spOk  && <p>• spKt/V {spGos!.toFixed(2)} &lt; 1.2 — seans süresini veya kan akımını artırın</p>}
                 {!urrOk && urr !== null && <p>• URR %{urr.toFixed(0)} &lt; 65 — BUN azalması yetersiz</p>}
               </div>
             )}

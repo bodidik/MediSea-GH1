@@ -55,8 +55,16 @@ export default function AsdasPage() {
     alanMakul(bk, 0, 10) &&
     alanMakul(pat, 0, 10);
 
+  /**
+   * TEK SAYI: ekranda basilan deger ile bantlanan deger AYNI olmali.
+   * Bir donem bant HAM degerden besleniyordu ve gosterim `toFixed(2)` ile
+   * sinir gecirtiyordu -- OLCULDU: dort NRS de 0, CRP 8.40 -> ham 1.29737 ->
+   * ekranda "1.30" ama bant "< 1.3" (INAKTIF HASTALIK). Ekran kendi cetvelinin
+   * disinda bir sayi gosteriyordu. Depo kalibi: meld-na / rapid3 / scorad,
+   * hepsi BIR KEZ yuvarlayip hem basiyor hem bantliyor.
+   */
   const crpScore  = klinikMakul && alanMakul(crp, 0, 500)
-    ? 0.121 * painN + 0.058 * durN + 0.110 * patN + 0.073 * bkN + 0.579 * Math.log(crpN + 1)
+    ? Math.round((0.121 * painN + 0.058 * durN + 0.110 * patN + 0.073 * bkN + 0.579 * Math.log(crpN + 1)) * 100) / 100
     : null;
   /**
    * ⚠ AÇIK SORU — `- 0.211` SABİTİ. Ölçüldü, DEĞİŞTİRİLMEDİ, karar bekliyor.
@@ -91,7 +99,7 @@ export default function AsdasPage() {
    * Klinik kaynak kararı kullanıcınındır.
    */
   const esrScore  = klinikMakul && alanMakul(esr, 0, 200)
-    ? 0.113 * painN + 0.293 * Math.sqrt(esrN) + 0.086 * durN + 0.069 * patN + 0.079 * bkN - 0.211
+    ? Math.round((0.113 * painN + 0.293 * Math.sqrt(esrN) + 0.086 * durN + 0.069 * patN + 0.079 * bkN - 0.211) * 100) / 100
     : null;
 
   const getResult = (s: number) => {
