@@ -7216,3 +7216,70 @@ girmiyordur. Sentetik tohumla iki yönlü sınandı (`< 4` + `> 4` yakalanıyor,
 **Ölçütün sınırı yazılmalı: ad tabanlı ve KAPSAM KÖRÜ.** Farklı kapsamlardaki
 aynı adlı değişkenleri tek sayıyor, bu yüzden "kapsam tarandı" iddiası
 üretemez — yalnızca elle bakılacak satırı 693'ten 3'e indiriyor.
+
+### KAPSAM DÜZELTMESİ — adres parametresi okuyan araç 11 değil **15**, ve kaçan dörtten biri KUSURLUYDU
+
+Belgede "11 araç durumunu adres parametresinden tohumluyor" yazıyordu ve
+o tur sonunda "on bir aracın onu temiz" denmişti. Sayım yeniden yapıldı:
+
+```
+grep -l "URLSearchParams(window.location.search)" app/tools/*/page.tsx   ->  15
+```
+
+Kaçan dört araç: `child-pugh` · `sledai2k` · `wells-dvt` · `wells-pe`.
+Üçü temiz (`=== "1"` bool kalıbı — "1" dışındaki her şey `false`), biri
+KUSURLUYDU.
+
+**Neden kaçtılar: parametre adı SABİT DEĞİL, DİZİDEN geliyor.**
+
+```
+gcs        : Number(s?.get("e")) || 4                     ← eski tarama bunu görüyordu
+child-pugh : CATEGORIES.forEach(c => … s?.get(c.key) …)   ← görmüyordu
+```
+
+Ölçüt `s?.get("<harfi harfine ad>")` arıyordu; dinamik anahtar okuyan dört
+araç hiç ölçülmedi. **Bir kanalı taradığını söylerken, o kanalın DİNAMİK
+biçimini de tanıdığını doğrula** — belgedeki "desen tahmin etme" kuralının
+sayım tarafındaki hâli.
+
+#### `child-pugh` — uydurma bir adres, Child C hastaya "%100 sağkalım" diyordu
+
+Satır `Number(s?.get(c.key)) || 1` idi; HER sayıyı kabul ediyordu. Bu araçta
+serbest sayısal alan yok (değerler düğmeyle seçiliyor), o yüzden "zaten
+geçersiz değer giremezsin" varsayılıp hiç kapı konmamıştı — `gcs` turunda
+yazılan dersin birebir tekrarı: **serbest girdinin YOKLUĞU aracı güvenli
+GÖSTERİR, güvenli YAPMAZ.**
+
+Canlıda ölçüldü:
+
+| adres | ekranda |
+|---|---|
+| `?hepsi=99` | **TOPLAM 495 / 15** · Class C |
+| `?bilirubin=-99` + kalanı 3 | **TOPLAM −87 / 15** · **Class A · "1 Yıllık Sağkalım ≈ %100"** |
+| `?hepsi=2.5` | **TOPLAM 12.5 / 15** · Class C |
+
+İkincisi tehlikeli yön ve gerekçesi aritmetikte duruyor: albümin 3 + INR 3 +
+asit 3 + ensefalopati 3 = 12 puan, yani hasta TEK BAŞINA Class C. Tek bir
+uydurma bilirubin değeri onu Class A'ya ve %100 bir yıllık sağkalıma
+taşıyordu. Ekran ayrıca kendisiyle çelişiyordu — payda 15 iken 495 ve −87
+basıyor; GKS'deki "297 / 15" ve MELD'deki eksi skorla aynı şekil.
+
+**Geçerli küme ELLE YAZILMADI**, düğmeleri çizen aynı `options` dizisinden
+alınıyor (`c.options.some(o => o.value === n)`) — `gcs`teki çarenin aynısı.
+Şıklar değişirse sınır listesi sessizce çelişmesin diye.
+
+**Doğrulama, üçü de aynı ölçümde:**
+
+| ölçüt | sonuç |
+|---|---|
+| `?hepsi=99` | **5 / 15 · Class A** — hepsi tabana düşüyor, 5 gerçek asgari |
+| `?bilirubin=-99` + dört geçerli `3` | **13 / 15 · Class C** — çöp atıldı, GEÇERLİ dördü korundu |
+| **negatif kontrol** — tamamen geçerli adres | `3,2,1,2,1` → **9 / 15 · Class B**, beş düğmenin beşi de basılı |
+
+İkinci satır tek başına iki soruyu birden cevaplıyor: çöp eleniyor mu, ve
+elenirken meşru değerler de gidiyor mu? (5+3+3+3+3 değil, 1+3+3+3+3 = 13.)
+
+**Puanlamanın kendisi ayrıca yayımlanmış hâliyle karşılaştırıldı ve temiz:**
+bilirubin <2/2–3/>3 · albümin >3,5/2,8–3,5/<2,8 · INR <1,7/1,7–2,2/>2,2 ·
+asit ve ensefalopati üçer basamak; sınıf sınırları A 5–6 · B 7–9 · C 10–15
+(kodda `>= 10` ve `>= 7`) ve sağkalım oranları %100/%80/%45.

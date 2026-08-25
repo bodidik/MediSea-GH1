@@ -62,7 +62,32 @@ const CATEGORIES: Category[] = [
 export default function ChildPughPage() {
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
   const initial: Record<string, number> = {};
-  CATEGORIES.forEach((c) => { initial[c.key] = Number(s?.get(c.key)) || 1; });
+  /**
+   * ADRES PARAMETRESİ İKİNCİ BİR GİRDİ KANALI — `gcs`teki kusurun aynısı.
+   *
+   * Eski satır `Number(s?.get(c.key)) || 1` idi ve HER sayıyı kabul ediyordu.
+   * Bu araçta serbest sayısal alan yok (değerler düğmeyle seçiliyor), o
+   * yüzden "zaten geçersiz değer giremezsin" varsayılıp hiç kapı konmamıştı.
+   * Adres o varsayımı deliyor. Ölçüldü (canlı):
+   *
+   *   ?bilirubin=99&albumin=99&inr=99&ascites=99&encephalopathy=99
+   *      -> TOPLAM 495 / 15 · Class C
+   *   ?bilirubin=-99&albumin=3&inr=3&ascites=3&encephalopathy=3
+   *      -> TOPLAM -87 / 15 · Class A · "1 Yıllık Sağkalım ≈ %100"
+   *   ?hepsi 2.5  -> TOPLAM 12.5 / 15 · Class C
+   *
+   * İkincisi tehlikeli yön: dört kategori en ağır düzeydeyken (tek başına
+   * 12 puan, yani Class C) tek bir uydurma bilirubin değeri hastayı
+   * Class A'ya ve %100 sağkalıma taşıyordu. Ekran ayrıca kendisiyle
+   * çelişiyordu — payda 15 iken 495 ve -87 basıyor.
+   *
+   * Geçerli küme ELLE YAZILMIYOR: düğmeleri çizen aynı `options` dizisinden
+   * geliyor. Şıklar değişirse sınır listesi sessizce çelişmesin diye.
+   */
+  CATEGORIES.forEach((c) => {
+    const n = Number(s?.get(c.key));
+    initial[c.key] = c.options.some((o) => o.value === n) ? n : 1;
+  });
 
   const [sel, setSel] = React.useState<Record<string, number>>(initial);
   const total = Object.values(sel).reduce((a, b) => a + b, 0);
