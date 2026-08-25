@@ -10647,3 +10647,102 @@ Tarama beş konuyu "canonical sapıyor" diye işaretledi
 (`men1-menin-lösemi-onkojen`, `ascit-sıvısı`, `FGF-23 vs PTH`…). Sahteydi:
 `yolKodla()` adresi doğru biçimde yüzde-kodluyor, ölçüt ham dosya adıyla
 karşılaştırıyordu. Karşılaştırmaya `urllib.parse.quote` konunca 5 → 0.
+
+### CI 97 KOŞUMDUR KIRMIZI — ve ben her turda "dört kapı geçti" diyordum
+
+Bu oturumda her tur `lint` · `typecheck` · `build` çalıştırılıp "kapılar
+geçti" raporlandı. **CI'a hiç bakılmadı.** Bakıldığında:
+
+```
+son 100 koşum: 97 başarısız, 0 başarılı
+en eski koşum: 24 Ağustos 05:03  ->  kapı 1,5 GÜNDÜR kırmızı
+```
+
+Sebep basit ve keskin: **CI üç adım değil, ON BEŞ adım çalıştırıyor.**
+`npm ci` · lint · typecheck · `link-denetim` · `soru-denetim` · üç indeks
+`--kontrol`ü · `arayuz` · `ic-bilesen` · `saydamlik` · `renk-cifti`
+(negatifleriyle) · en sonda `build`. Düşen adım **`ilgili-index --kontrol`**
+ve o build'den ÖNCE geliyor — yani CI'da derleme hiç çalışmamış.
+
+Deponun kendi kuralının ("kapı arkasını görmeyen ölçüm 'temiz' DEMEZ")
+kapının kendisine uygulanmış hâli: bir kapının bir bölümünü ölçüp
+"kapı geçti" demek, kapıyı ölçmek DEĞİL.
+
+**Ölçüt: kapı senin çalıştırdığın komut değil, CI'ın çalıştırdığı komuttur.**
+`.github/workflows/ci.yml` içindeki adımları say; eksik çalıştırdığın her
+adım, sana yeşil görünen bir kırmızıdır.
+
+#### Kusur: üreteç PLATFORMA BAĞLI çıktı üretiyordu
+
+Yerelde 13 denetimin 13'ü de geçiyordu; CI'da aynı commit'te
+`ilgili-index --kontrol` "BAYAT — 7 konu değişmiş" diyordu. Aynı dosya, aynı
+commit, farklı sonuç.
+
+Sebep `konulariTopla()` içindeki iki `readdirSync`: sıraları **işletim
+sistemine bağlı** (Windows alfabetik, Linux dizin sırası). Skor eşitliğinde
+sıralama bu listeden geldiği için iki platform FARKLI indeks üretiyordu.
+
+**Hipotez tahminle değil deneyle sınandı:** `fs.readdirSync` sarmalanıp sırası
+TERSİNE çevrildi ve üreteç `--kontrol` kipinde sürüldü. Sonuç, neredeyse her
+konunun listesinin değiştiğini gösterdi — yani bağımlılık marjinal değil,
+yapısal.
+
+Dört nokta belirlenimci yapıldı:
+
+| yer | önce | sonra |
+|---|---|---|
+| branş dizini okuma | `readdirSync(...)` | `.sort()` |
+| konu dosyası okuma | `readdirSync(...)` | `.sort()` |
+| skor sıralaması (katı kural) | `b[1] - a[1]` | `… \|\| anahtar karşılaştırması` |
+| skor sıralaması (son çare) | `b.s - a.s` | `… \|\| anahtar karşılaştırması` |
+| anahtar sırası | `localeCompare` | kod noktası |
+
+`localeCompare` bilerek KULLANILMADI: o çalışma zamanının yerel ayarına
+bağlı ve düzeltilmek istenen sınıfın ta kendisi. Betiğin kendi yorumu bunu
+anahtar sırası için zaten biliyordu (`--kontrol` anahtar sırasını yok
+sayıyor) — ama DEĞER dizilerinin sırası için bilmiyordu ve kapıyı düşüren
+tam olarak o oldu.
+
+**Negatif kontrol, düzeltmenin kendisini sınayan biçimde kuruldu:** aynı ters
+`readdirSync` deneyi ve ayrıca KARIŞIK (sözde rastgele) sıra denendi.
+
+| ölçüm | sonuç |
+|---|---|
+| normal | senkron (408 konu, 1196 bağ) |
+| **readdir TERSİNE** | **senkron** |
+| **readdir KARIŞIK** | **senkron** |
+
+**Pozitif kontrol:** bir konunun bağ listesi elle ters çevrildi (aynı küme,
+farklı sıra) → denetim "değişmiş: endokrinoloji/addison" dedi. Yani sıraya
+duyarlılık korunuyor, yalnızca kaynağı belirlenimci oldu.
+
+#### Değişimin kapsamı ölçüldü — "aynı sayı" yetmez, KÜME karşılaştırıldı
+
+Yeniden üretilen indeks 680 satır oynadı. Bunun içerik kaybı olmadığı
+ayrıca kanıtlandı:
+
+| ölçüt | sonuç |
+|---|---|
+| anahtar sayısı | 408 → 408, küme aynı |
+| bağ **kümesi** aynı kalan konu | **400** (bunların 29'unda yalnızca sıra değişti) |
+| bağ kümesi değişen | 8 — eşitlik tam `slice(0, EN_FAZLA)` kesme noktasında |
+| **toplam bağ** | **1196 → 1196** |
+
+Sekiz konuda bir bağ diğeriyle yer değiştirdi; ikisi de skor olarak EŞİT
+adaydı, yani seçim eskiden dosya sistemine bırakılmıştı. Artık anahtar
+sırası karar veriyor.
+
+#### Kardeş üreteç de aynı sınıftaydı ama DÜŞEMEZDİ
+
+`baslik-index.cjs` de sırasız `readdirSync` kullanıyor. Ölçüldü: ters
+sırayla üretilen dosya **bayt bayt aynı** çıkıyor, çünkü anahtarlar
+yazılmadan önce sıralanıyor ve değerler dizi değil dize. Yani o betik
+readdir sırasından etkilenmiyor ve `--kontrol`ü içerik karşılaştırdığı için
+CI'ı asla düşürmez.
+
+Yine de anahtar sıralaması `localeCompare` idi — yerel ayara bağlı. Ölçüldü:
+410 anahtarın **95'i** kod noktası sırasına göre yer değiştiriyor. Bugün bir
+kusur üretmiyor ama `ilgili-index`e "dosya da platformdan bağımsız olmalı"
+diye yazıp burada yazmamak iki dosyayı ilkede çeliştirirdi. Kod noktasına
+çevrildi; içerik değişmediği ölçüldü (410 anahtar, küme aynı, **değeri
+değişen 0**, yalnızca 95 konum yer değiştirdi, git farkı 12 satır).

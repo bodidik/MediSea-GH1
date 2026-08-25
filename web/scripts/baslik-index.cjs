@@ -67,7 +67,17 @@ function main() {
     }
   }
 
-  const sirali = Object.fromEntries(Object.entries(index).sort(([a], [b]) => a.localeCompare(b)));
+  /* Anahtar sırası KOD NOKTASINA göre — `localeCompare` DEĞİL.
+   * `localeCompare` çalışma zamanının yerel ayarına bağlı, yani aynı
+   * içerikten Windows (tr-TR) ile Linux FARKLI bayt üretiyor. Bu dosyanın
+   * `--kontrol`ü içerik karşılaştırdığı için CI bundan düşmez; bedeli
+   * sessiz: iki makinede üretilen indeks arasında sürekli sahte git farkı
+   * (ölçüldü: 410 anahtarın 95'i yer değiştiriyor).
+   * Kardeş üreteç `ilgili-index.cjs` aynı sebeple kod noktasına çevrildi —
+   * orada bedel daha ağırdı ve CI'yı 1,5 gün kırmızı tuttu. */
+  const sirali = Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+  );
 
   // Boş sonuca ASLA yazma — bkz. üstteki not.
   if (konu === 0) {

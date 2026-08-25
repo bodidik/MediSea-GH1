@@ -349,6 +349,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hashimoto-ensefaliti",
+   "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
    "baslik": "Hipotiroidizm"
   },
@@ -356,11 +361,6 @@
    "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "tiroid-yaslanmasi-fizyolojisi",
-   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   },
   {
    "brans": "endokrinoloji",
@@ -386,18 +386,18 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "siadh-ods-derin-analiz",
-   "baslik": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "siadh-ods-ve-relowering",
-   "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipotiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-ods-derin-analiz",
+   "baslik": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi"
   }
  ],
  "endokrinoloji/hashimoto-ensefalopati-alfa-enolaz-otoantikor": [
@@ -408,6 +408,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "prolaktinoma-yeni-biyobelirtecler",
+   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "siadh-ods-derin-analiz",
    "baslik": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi"
   },
@@ -415,11 +420,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-ods-ve-relowering",
    "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
   },
   {
    "brans": "enfeksiyon",
@@ -478,9 +478,9 @@
    "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
   },
   {
-   "brans": "nefroloji",
-   "slug": "bobrek-fosfor-homeostazi-fizyoloji",
-   "baslik": "Böbrekte Fosfor Homeostazı ve Transport Fizyolojisi"
+   "brans": "endokrinoloji",
+   "slug": "kbh-adinamizm-vaskuler-kalsifikasyon",
+   "baslik": "Adinamik Kemik Hastalığı: Vasküler Kalsifikasyon ve Kısır Döngü"
   },
   {
    "brans": "nefroloji",
@@ -488,9 +488,9 @@
    "baslik": "FGF-23 ve PTH Arasındaki Moleküler Çapraz Konuşma (Crosstalk)"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "kbh-adinamizm-vaskuler-kalsifikasyon",
-   "baslik": "Adinamik Kemik Hastalığı: Vasküler Kalsifikasyon ve Kısır Döngü"
+   "brans": "nefroloji",
+   "slug": "bobrek-fosfor-homeostazi-fizyoloji",
+   "baslik": "Böbrekte Fosfor Homeostazı ve Transport Fizyolojisi"
   },
   {
    "brans": "nefroloji",
@@ -510,11 +510,6 @@
    "baslik": "Ötiroid Hasta Sendromu"
   },
   {
-   "brans": "onkoloji",
-   "slug": "tls-elektrolit-diyaliz-yonetimi",
-   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
-  },
-  {
    "brans": "nefroloji",
    "slug": "asit-baz-fizyopatoloji",
    "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
@@ -523,6 +518,11 @@
    "brans": "nefroloji",
    "slug": "respiratuvar-asidoz",
    "baslik": "Respiratuvar Asidoz"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tls-elektrolit-diyaliz-yonetimi",
+   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
   }
  ],
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
@@ -792,13 +792,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-tuberkuloz",
-   "baslik": "Adrenal Tüberküloz (Tuberculous Adrenalitis)"
+   "slug": "adrenal-kriz",
+   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-kriz",
-   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
+   "slug": "adrenal-tuberkuloz",
+   "baslik": "Adrenal Tüberküloz (Tuberculous Adrenalitis)"
   },
   {
    "brans": "endokrinoloji",
@@ -1139,11 +1139,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "adrenal-kriz",
    "baslik": "Akut Adrenal Kriz (Addison Krizi)"
   },
@@ -1151,6 +1146,11 @@
    "brans": "endokrinoloji",
    "slug": "men-adrenal-kriz-yonetimi",
    "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
+   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   }
  ],
  "endokrinoloji/miksodem-psikozu": [
@@ -1165,14 +1165,14 @@
    "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim"
   },
   {
-   "brans": "klinik-nutrisyon",
-   "slug": "yeme-bozukluklari",
-   "baslik": "Ch 330: Yeme Bozuklukları"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "hashimoto-ensefaliti",
    "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "yeme-bozukluklari",
+   "baslik": "Ch 330: Yeme Bozuklukları"
   }
  ],
  "endokrinoloji/mutsuz-hipotiroidi-kombine-tedavi": [
@@ -1204,6 +1204,33 @@
    "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
   }
  ],
+ "endokrinoloji/osteoporoz-TEMDtedavi-ozet": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "kbh-osteoporoz-ckd-mbd",
+   "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "kbh-pth-analoglari-teriparatid-abaloparatid",
+   "baslik": "ABD Tedavisinde Teriparatid ve Abaloparatid (PTH Analogları)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-tedavi-kilavuz-karsilastirma",
+   "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-organ-nakli-kaynakli",
+   "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-postransplant-bifosfonat",
+   "baslik": "Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
+  }
+ ],
  "endokrinoloji/osteoporoz-ana-sayfa": [
   {
    "brans": "endokrinoloji",
@@ -1228,16 +1255,6 @@
  ],
  "endokrinoloji/osteoporoz-kalsinorin-inh-alternatifleri": [
   {
-   "brans": "enfeksiyon",
-   "slug": "prokalsitonin-yukselme-paterni",
-   "baslik": "Prokalsitonin (PCT) Sentez ve Salınım Dinamikleri"
-  },
-  {
-   "brans": "gogus",
-   "slug": "sarkoidoz-ana",
-   "baslik": "Sarkoidoz"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "osteoporoz-organ-nakli-kaynakli",
    "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri"
@@ -1246,6 +1263,16 @@
    "brans": "endokrinoloji",
    "slug": "osteoporoz-postransplant-bifosfonat",
    "baslik": "Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "prokalsitonin-yukselme-paterni",
+   "baslik": "Prokalsitonin (PCT) Sentez ve Salınım Dinamikleri"
+  },
+  {
+   "brans": "gogus",
+   "slug": "sarkoidoz-ana",
+   "baslik": "Sarkoidoz"
   }
  ],
  "endokrinoloji/osteoporoz-organ-nakli-kaynakli": [
@@ -1284,6 +1311,11 @@
    "baslik": "Nöro-Behçet: Siklosporin Kontrendikasyonu ve Tedavi Algoritması"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-postransplant-bifosfonat",
+   "baslik": "Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "prokalsitonin-yukselme-paterni",
    "baslik": "Prokalsitonin (PCT) Sentez ve Salınım Dinamikleri"
@@ -1292,11 +1324,6 @@
    "brans": "gogus",
    "slug": "sarkoidoz-ana",
    "baslik": "Sarkoidoz"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "osteoporoz-postransplant-bifosfonat",
-   "baslik": "Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
   }
  ],
  "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma": [
@@ -1316,33 +1343,6 @@
    "brans": "endokrinoloji",
    "slug": "osteoporoz-tedavi-kilavuz-karsilastirma",
    "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri"
-  }
- ],
- "endokrinoloji/osteoporoz-TEMDtedavi-ozet": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "kbh-osteoporoz-ckd-mbd",
-   "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "kbh-pth-analoglari-teriparatid-abaloparatid",
-   "baslik": "ABD Tedavisinde Teriparatid ve Abaloparatid (PTH Analogları)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "osteoporoz-tedavi-kilavuz-karsilastirma",
-   "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "osteoporoz-organ-nakli-kaynakli",
-   "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "osteoporoz-postransplant-bifosfonat",
-   "baslik": "Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
   }
  ],
  "endokrinoloji/otiroid-hasta-sendromu-ntis": [
@@ -1458,11 +1458,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "subklinik-tiroid-hastaliklari",
-   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "men-adrenal-kriz-yonetimi",
    "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
   },
@@ -1470,6 +1465,11 @@
    "brans": "endokrinoloji",
    "slug": "men-bilateral-adrenalektomi",
    "baslik": "MEN Sendromlarında Bilateral Adrenalektomi: Endikasyonlar ve Postoperatif Yönetim"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   },
   {
    "brans": "endokrinoloji",
@@ -1510,8 +1510,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men-adrenal-kriz-yonetimi",
-   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
+   "slug": "gebelikte-hipotiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
   }
  ],
  "endokrinoloji/sclc-paraneoplastik-siadh": [
@@ -1753,16 +1753,6 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-tedavi",
-   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "iga-nefropatisi-berger",
    "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)"
   },
@@ -1775,6 +1765,16 @@
    "brans": "nefroloji",
    "slug": "membranoz-nefropati-tedavi-yonetimi",
    "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-tedavi",
+   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
   }
  ],
  "endokrinoloji/siadh-tani-algoritmasi": [
@@ -1869,14 +1869,14 @@
    "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   },
   {
-   "brans": "hematoloji",
-   "slug": "aml-geriatrik-degerlendirme",
-   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml-geriatrik-degerlendirme",
+   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
   },
   {
    "brans": "endokrinoloji",
@@ -1886,14 +1886,14 @@
  ],
  "endokrinoloji/tirzepatid-genel-profil": [
   {
-   "brans": "klinik-nutrisyon",
-   "slug": "obezite",
-   "baslik": "Ch 329: Obezite ve Metabolik Sendrom"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "diabetes-mellitus-ana",
    "baslik": "Diabetes Mellitus"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "obezite",
+   "baslik": "Ch 329: Obezite ve Metabolik Sendrom"
   }
  ],
  "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
@@ -2151,6 +2151,33 @@
    "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
   }
  ],
+ "enfeksiyon/dalbavansin-VISA-VRSA": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-daptomisin-mprf",
+   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vanco-bobrek",
+   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+  }
+ ],
  "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik": [
   {
    "brans": "enfeksiyon",
@@ -2208,11 +2235,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-biyofilm",
    "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
   },
@@ -2225,6 +2247,11 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-sinerji",
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
@@ -2242,33 +2269,6 @@
    "brans": "enfeksiyon",
    "slug": "glikopeptit-antibiyotikler",
    "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
-  }
- ],
- "enfeksiyon/dalbavansin-VISA-VRSA": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-mprf",
-   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "vanco-bobrek",
-   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-master-rehber",
-   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
  ],
  "enfeksiyon/fidaksomisin-ileri-duzey": [
@@ -2367,11 +2367,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-beta-laktam-sinerji",
-   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
@@ -2379,6 +2374,11 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-derleme",
    "baslik": "Dalbavansin"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-beta-laktam-sinerji",
+   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   }
  ],
  "enfeksiyon/fosfomisin-daptomisin-sinerji": [
@@ -2632,11 +2632,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "dalbavansin-derleme",
    "baslik": "Dalbavansin"
   },
@@ -2649,6 +2644,11 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-sinerji",
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
   }
  ],
  "gastroenteroloji/akut-pankreatit": [
@@ -3073,13 +3073,13 @@
  "gastroenteroloji/ozofagus-motilite-bozukluklari": [
   {
    "brans": "gastroenteroloji",
-   "slug": "sistemik-ozofagus-tutulumu",
-   "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
+   "slug": "ozofagus-hastaliklarina-yaklasim",
+   "baslik": "Özofagus Hastalıklarına Yaklaşım ve Tanı"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "ozofagus-hastaliklarina-yaklasim",
-   "baslik": "Özofagus Hastalıklarına Yaklaşım ve Tanı"
+   "slug": "sistemik-ozofagus-tutulumu",
+   "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
  "gastroenteroloji/ozofagus-travmalari-ve-yaniklar": [
@@ -3260,6 +3260,70 @@
    "brans": "gogus",
    "slug": "sarkoidoz-ayirici-tani",
    "baslik": "Sarkoidoz Ayırıcı Tanı"
+  }
+ ],
+ "hematoloji/FL-t1(4-18)": [
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-t14-18-negatif",
+   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "POD24-FL-tedavi",
+   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "pod24-bispesifik-antikorlar",
+   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-crebbp-mutasyonlari",
+   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "m7-flipi-ngs-paneli",
+   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+  }
+ ],
+ "hematoloji/POD24-FL-tedavi": [
+  {
+   "brans": "hematoloji",
+   "slug": "pod24-bispesifik-antikorlar",
+   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "pod24-tazemetostat-ezh2",
+   "baslik": "Tazemetostat'ın EZH2 Mutasyonlu POD24 Hastalarındaki Etkinliği"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "FL-t1(4-18)",
+   "baslik": "t(14;18) Translokasyonunun Rolü"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-t14-18-negatif",
+   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-crebbp-mutasyonlari",
+   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
   }
  ],
  "hematoloji/akut-lenfoblastik-losemi-all": [
@@ -3565,40 +3629,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "kmt2d-crebbp-mutasyonlari",
-   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
-  }
- ],
- "hematoloji/FL-t1(4-18)": [
-  {
-   "brans": "hematoloji",
-   "slug": "kmt2d-t14-18-negatif",
-   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "POD24-FL-tedavi",
    "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kmt2d-crebbp-mutasyonlari",
-   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "m7-flipi-ngs-paneli",
-   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   }
  ],
  "hematoloji/folat-eksikligi": [
@@ -3874,6 +3906,11 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "POD24-FL-tedavi",
+   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "ezh2-yabanil-tip-tedavi",
    "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   },
@@ -3881,11 +3918,6 @@
    "brans": "hematoloji",
    "slug": "pod24-bispesifik-antikorlar",
    "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "POD24-FL-tedavi",
-   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
   }
  ],
  "hematoloji/kmt2d-t14-18-negatif": [
@@ -3901,13 +3933,13 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
+   "slug": "POD24-FL-tedavi",
+   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
   },
   {
    "brans": "hematoloji",
-   "slug": "POD24-FL-tedavi",
-   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
+   "slug": "pod24-bispesifik-antikorlar",
+   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
   },
   {
    "brans": "hematoloji",
@@ -4038,13 +4070,13 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+   "slug": "POD24-FL-tedavi",
+   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
   },
   {
    "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   }
  ],
  "hematoloji/makrositer-anemiler": [
@@ -4295,44 +4327,7 @@
    "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
   }
  ],
- "hematoloji/POD24-FL-tedavi": [
-  {
-   "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pod24-tazemetostat-ezh2",
-   "baslik": "Tazemetostat'ın EZH2 Mutasyonlu POD24 Hastalarındaki Etkinliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "FL-t1(4-18)",
-   "baslik": "t(14;18) Translokasyonunun Rolü"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kmt2d-t14-18-negatif",
-   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kmt2d-crebbp-mutasyonlari",
-   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
-  }
- ],
  "hematoloji/pod24-tazemetostat-ezh2": [
-  {
-   "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
   {
    "brans": "hematoloji",
    "slug": "POD24-FL-tedavi",
@@ -4340,13 +4335,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+   "slug": "pod24-bispesifik-antikorlar",
+   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
   },
   {
    "brans": "hematoloji",
    "slug": "FL-t1(4-18)",
    "baslik": "t(14;18) Translokasyonunun Rolü"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   },
   {
    "brans": "hematoloji",
@@ -4503,18 +4503,13 @@
  "hematoloji/trombositopeni-itp": [
   {
    "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "aplastik-anemi",
    "baslik": "Aplastik Anemi"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombositopeniler",
-   "baslik": "İmmün Trombositopeni (İTP)"
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
   },
   {
    "brans": "hematoloji",
@@ -4525,6 +4520,11 @@
    "brans": "hematoloji",
    "slug": "itp-tedavi",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombositopeniler",
+   "baslik": "İmmün Trombositopeni (İTP)"
   }
  ],
  "hematoloji/trombositopeniler": [
@@ -4605,6 +4605,18 @@
    "baslik": "Talasemiler"
   }
  ],
+ "journal-club/Kalp-yetm-ODI": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-kbh-ve-yasli",
+   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
+   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+  }
+ ],
  "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
   {
    "brans": "journal-club",
@@ -4629,11 +4641,6 @@
    "baslik": "İleri Okuma: IgA Nefropatisi -Tedavi"
   },
   {
-   "brans": "nefroloji",
-   "slug": "iga-nefropatisi-mest-c-iskdc",
-   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
-  },
-  {
    "brans": "journal-club",
    "slug": "flaura2-osimertinib-kemoterapi-nejm",
    "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi"
@@ -4642,18 +4649,11 @@
    "brans": "journal-club",
    "slug": "sac-tmt-optitrop-lung04-nejm",
    "baslik": "NEJM: EGFR-Mutant KHDAK'de Yeni Standart Adayı Sacituzumab Tirumotecan"
-  }
- ],
- "journal-club/Kalp-yetm-ODI": [
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kbh-ve-yasli",
-   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
   },
   {
    "brans": "nefroloji",
-   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
-   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+   "slug": "iga-nefropatisi-mest-c-iskdc",
+   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
   }
  ],
  "journal-club/sac-tmt-optitrop-lung04-nejm": [
@@ -4785,13 +4785,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
+   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
   },
   {
    "brans": "nefroloji",
-   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
-   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
   }
  ],
  "kardiyoloji/aprocitentan-kombinasyon-stratejileri": [
@@ -4846,8 +4846,8 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipid-ezetimibe-sakinca",
-   "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi"
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
   }
  ],
  "kardiyoloji/direncli-hipertansiyon-yeni-nesil": [
@@ -4963,14 +4963,14 @@
  ],
  "kardiyoloji/kapak-hastaliklari": [
   {
-   "brans": "kardiyoloji",
-   "slug": "infektif-endokardit",
-   "baslik": "İnfektif Endokardit"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "dopamin-agonistleri-kalp-kapak",
    "baslik": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "infektif-endokardit",
+   "baslik": "İnfektif Endokardit"
   }
  ],
  "kardiyoloji/kardiyak-amiloidoz": [
@@ -5241,13 +5241,13 @@
   },
   {
    "brans": "klinik-nutrisyon",
-   "slug": "peg-enteral-beslenme-refeeding",
-   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
+   "slug": "klinik-nutrisyon-ana-unite",
+   "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
   },
   {
    "brans": "klinik-nutrisyon",
-   "slug": "klinik-nutrisyon-ana-unite",
-   "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
+   "slug": "peg-enteral-beslenme-refeeding",
+   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
   }
  ],
  "klinik-nutrisyon/espen-enteral-beslenme-intoleransi": [
@@ -5336,6 +5336,33 @@
    "baslik": "Miksödem Psikozu (Asher Çılgınlığı) Klinik ve Patofizyolojik Kılavuzu"
   }
  ],
+ "nefroloji/FGF-23 vs PTH": [
+  {
+   "brans": "nefroloji",
+   "slug": "kbh-mkb-kapsamli-inceleme",
+   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "bobrek-fosfor-homeostazi-fizyoloji",
+   "baslik": "Böbrekte Fosfor Homeostazı ve Transport Fizyolojisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipokalsemi-ve-hipoparatiroidi",
+   "baslik": "Hipokalsemi ve Hipoparatiroidi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "kalsiyum-homeostazi-fizyoloji",
+   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperfosfatemi-CKD",
+   "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
+  }
+ ],
  "nefroloji/akut-bobrek-hasari": [
   {
    "brans": "nefroloji",
@@ -5421,6 +5448,11 @@
  "nefroloji/diuretikler": [
   {
    "brans": "nefroloji",
+   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
+   "baslik": "Finerenon ve Kalp Yetmezliği"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
    "baslik": "Mineralokortikoid Reseptör Regülasyonu"
   },
@@ -5433,11 +5465,6 @@
    "brans": "nefroloji",
    "slug": "renal-arter-stenozu-ras",
    "baslik": "Renal Arter Stenozu (RAS) ve Renovasküler Hipertansiyon"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "renovaskuler-hastaliklar",
-   "baslik": "Trombotik ve Renovasküler Hastalıklar"
   }
  ],
  "nefroloji/diyaliz-tedavisi": [
@@ -5523,33 +5550,6 @@
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kombinasyon-stratejileri",
    "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
-  }
- ],
- "nefroloji/FGF-23 vs PTH": [
-  {
-   "brans": "nefroloji",
-   "slug": "kbh-mkb-kapsamli-inceleme",
-   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "bobrek-fosfor-homeostazi-fizyoloji",
-   "baslik": "Böbrekte Fosfor Homeostazı ve Transport Fizyolojisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipokalsemi-ve-hipoparatiroidi",
-   "baslik": "Hipokalsemi ve Hipoparatiroidi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperfosfatemi-CKD",
-   "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -5673,14 +5673,14 @@
    "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan"
   },
   {
-   "brans": "nefroloji",
-   "slug": "iga-nefropatisi-mest-c-iskdc",
-   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "siadh-sendromu",
    "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-mest-c-iskdc",
+   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
   },
   {
    "brans": "nefroloji",
@@ -5724,6 +5724,11 @@
    "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "sevelamer-derleme",
+   "baslik": "Sevelamer: KBH-Hiperfosfatemi"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-direncsiz-kbh-kullanimi",
    "baslik": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı"
@@ -5732,11 +5737,6 @@
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kbh-ve-yasli",
    "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sevelamer-derleme",
-   "baslik": "Sevelamer: KBH-Hiperfosfatemi"
   },
   {
    "brans": "endokrinoloji",
@@ -5815,16 +5815,6 @@
  "nefroloji/membranoz-nefropati-klinik": [
   {
    "brans": "nefroloji",
-   "slug": "membranoz-nefropati-patofizyolojisi",
-   "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-tedavi-yonetimi",
-   "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "fokal-segmental-glomeruloskleroz-fsgs",
    "baslik": "Fokal Segmental Glomeruloskleroz (FSGS)"
   },
@@ -5832,6 +5822,16 @@
    "brans": "nefroloji",
    "slug": "glomeruler-hastaliklar",
    "baslik": "Glomerüler Hastalıklar"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-patofizyolojisi",
+   "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-tedavi-yonetimi",
+   "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
   },
   {
    "brans": "nefroloji",
@@ -5880,16 +5880,6 @@
  ],
  "nefroloji/membranoz-nefropati-tedavi-yonetimi": [
   {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-klinik",
-   "baslik": "Membranöz Nefropati: Klinik Başvuru ve Komplikasyonlar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-patofizyolojisi",
-   "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "siadh-sendromu",
    "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
@@ -5903,6 +5893,16 @@
    "brans": "nefroloji",
    "slug": "iga-nefropatisi-guncel-tedavi",
    "baslik": "İleri Okuma: IgA Nefropatisi -Tedavi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-klinik",
+   "baslik": "Membranöz Nefropati: Klinik Başvuru ve Komplikasyonlar"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-patofizyolojisi",
+   "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
   }
  ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
@@ -6241,14 +6241,14 @@
  ],
  "onkoloji/khdak-tani-algoritma-evreleme": [
   {
-   "brans": "onkoloji",
-   "slug": "kanser-genel-prensipler",
-   "baslik": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH"
-  },
-  {
    "brans": "hematoloji",
    "slug": "m7-flipi-ngs-paneli",
    "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-genel-prensipler",
+   "baslik": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH"
   }
  ],
  "onkoloji/kolorektal-kanser": [

@@ -57,9 +57,18 @@ function normalize(s) {
 
 function konulariTopla() {
   const konular = [];
-  for (const brans of fs.readdirSync(ICERIK, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)) {
+  /* `readdirSync` SIRASI PLATFORMA BAĞLI ve bu üretecin çıktısını
+   * değiştiriyordu: Windows alfabetik döndürüyor, Linux dizin sırasını.
+   * Skor eşitliklerinde sıra bu listeden geldiği için CI (Linux) ile
+   * geliştirme makinesi (Windows) FARKLI dosya üretiyordu — yerelde
+   * `--kontrol` geçerken CI 7 konuda "BAYAT" diyordu ve kapı 1,5 gündür
+   * kırmızıydı. Kod noktası sırası (`.sort()`) her platformda aynı;
+   * `localeCompare` DEĞİL — o yerel ayara bağlı. */
+  const bransListesi = fs.readdirSync(ICERIK, { withFileTypes: true })
+    .filter((d) => d.isDirectory()).map((d) => d.name).sort();
+  for (const brans of bransListesi) {
     const dizin = path.join(ICERIK, brans);
-    for (const dosya of fs.readdirSync(dizin).filter((f) => f.endsWith('.json'))) {
+    for (const dosya of fs.readdirSync(dizin).filter((f) => f.endsWith('.json')).sort()) {
       try {
         const v = JSON.parse(fs.readFileSync(path.join(dizin, dosya), 'utf-8'));
         if (v?.meta?.hidden === true) continue;
@@ -130,7 +139,9 @@ function main() {
         if (ortak >= 2) return true;
         return (enNadirOrtak.get(anahtar) ?? Infinity) <= NADIR_ESIGI;
       })
-      .sort((a, b) => b[1] - a[1])
+      // Eşit skorda anahtar sırası karar versin: yoksa sıra dosya
+      // sisteminden gelir ve platforma göre değişir (bkz. üstteki not).
+      .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
       .slice(0, EN_FAZLA)
       .map(([anahtar]) => {
         const d = konular.find((x) => x.anahtar === anahtar);
@@ -185,7 +196,7 @@ function main() {
       const skorluAdaylar = [...skor.entries()]
         .map(([anahtar, s]) => ({ anahtar, s }))
         .filter((x) => konular.find((d) => d.anahtar === x.anahtar)?.brans === k.brans)
-        .sort((a, b) => b.s - a.s)
+        .sort((a, b) => b.s - a.s || (a.anahtar < b.anahtar ? -1 : a.anahtar > b.anahtar ? 1 : 0))
         .map((x) => konular.find((d) => d.anahtar === x.anahtar));
 
       const merkezler = konular.filter(
@@ -227,7 +238,14 @@ function main() {
     }
   }
 
-  const sirali = Object.fromEntries(Object.entries(sonuc).sort(([a], [b]) => a.localeCompare(b)));
+  /* Anahtar sırası KOD NOKTASINA göre. Eskiden `localeCompare` kullanılıyordu
+   * ve o yerel ayara bağlı: aynı içerikten Windows (tr-TR) ile Linux farklı
+   * BAYT üretiyordu. `--kontrol` anahtar sırasını zaten yok sayıyor, ama
+   * dosyanın kendisi de platformdan bağımsız olmalı — yoksa iki makinede
+   * üretilen indeks arasında sürekli sahte git farkı çıkar. */
+  const sirali = Object.fromEntries(
+    Object.entries(sonuc).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+  );
 
   /* Boş sonuca ASLA yazma ve --kontrol: araç ve başlık indekslerindeki
    * korumanın aynısı. Bu betik de CI'da çalışmıyor, yani konu yeniden
