@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
-import { basliklariDuzenle } from "@/app/lib/baslik";
+import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
@@ -205,6 +205,39 @@ export default async function TopicDetailPage({
       : []
   };
 
+  /**
+   * SAYFA İÇİ GEZİNME — uzun konularda.
+   *
+   * ÖLÇÜLDÜ (canlı, 390px genişlik, en uzun konu): belge yüksekliği
+   * 26 803px = **31.8 ekran**, 15 `h2` + 17 `h3`, sayfa içi çapa **SIFIR** ve
+   * başlıkların hiçbirinde `id` YOK. "Tedavi" bölümünü arayan okuyucu 30 ekran
+   * kaydırmak zorundaydı; bir bölüme bağlantı vermek ya da yer imi koymak
+   * imkânsızdı. (`TableOfContents.tsx` depoda duruyor ama ölü kod — sıfır içe
+   * aktaran, belgede kayıtlı.)
+   *
+   * Kimlikler HER konuda basılıyor: nitelik eklemek `textContent`i
+   * DEĞİŞTİRMEZ, yani bedava ve derin bağlantıyı her yerde açıyor.
+   *
+   * İÇİNDEKİLER ise eşiğe bağlı. Eşik veriden seçildi, uydurulmadı:
+   *
+   *   >=4 bölüm         366 konu   -- çoğunluk, kısa konuda gürültü olur
+   *   >=6000 karakter    50 konu   -- ~7+ ekran, kaydırma gerçekten acıtıyor
+   *   ikisi birden       50 konu   (%12)
+   *
+   * ⚠ İÇİNDEKİLER `[data-readable]` KONTEYNERİNİN DIŞINDA duruyor ve bu
+   * ZORUNLU: vurgular konteyner metnindeki KARAKTER OFSETİYLE saklanıyor.
+   * İçeri konsaydı ondan sonraki bütün ofsetler kayardı ve deponun kuralı
+   * gereği "ofset çözülüyor ama metin tutmuyor" olan vurgular SİLİNİR —
+   * yani kullanıcıların kayıtlı vurguları sessizce yok olurdu.
+   */
+  const bolumKimligi = bolumKimlikleri(topicItem.sections.map((s) => s.heading));
+  const govdeUzunlugu = topicItem.sections
+    .map((s) => s.html.replace(/<[^>]*>/g, " "))
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim().length;
+  const icindekilerGoster = topicItem.sections.length >= 4 && govdeUzunlugu >= 6000;
+
   // 2. OTOMATİK AĞAÇ YAPISI (Çocuklar ve Torunlar)
   const allFiles = fs.readdirSync(branchDir).filter(f => f.endsWith(".json"));
   
@@ -359,6 +392,39 @@ export default async function TopicDetailPage({
               </div>
             )}
 
+            {/* İÇİNDEKİLER — `[data-readable]` KONTEYNERİNİN DIŞINDA.
+                Gerekçesi yukarıda `icindekilerGoster` başlığında: içeri
+                konsaydı vurguların karakter ofsetleri kayar ve kayıtlı
+                vurgular silinirdi. */}
+            {icindekilerGoster && (
+              <nav
+                aria-labelledby="icindekiler-basligi"
+                className="mb-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
+              >
+                <h2
+                  id="icindekiler-basligi"
+                  className="font-sans mt-0 text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
+                >
+                  Bu sayfada
+                </h2>
+                <ol className="grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
+                  {topicItem.sections.map((section: any, idx: number) => (
+                    <li key={idx} className="flex gap-2 text-sm leading-snug">
+                      <span aria-hidden="true" className="text-blue-300 font-black tabular-nums">
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
+                      <a
+                        href={`#${bolumKimligi[idx]}`}
+                        className="text-blue-800 hover:text-blue-950 hover:underline py-0.5"
+                      >
+                        {section.heading}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
+
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
                 vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}
             <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
@@ -404,7 +470,10 @@ export default async function TopicDetailPage({
                           {section.visibility === 'M' ? 'Sadece Hekim' : 'Taslak'}
                         </span>
                       )}
-                      <h2 className="text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3">
+                      <h2
+                        id={bolumKimligi[idx]}
+                        className="scroll-mt-24 text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
+                      >
                         {/*
                           Süsleme: ekran okuyucu bunu "kare" diye okuyup her
                           bölüm başlığının önüne gürültü koyuyordu. `aria-hidden`

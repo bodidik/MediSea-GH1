@@ -50,3 +50,54 @@ export function basliklariDuzenle(html: string): string {
     (tam, kapanis: string, n: string) => `<${kapanis}h${harita.get(Number(n)) ?? n}`
   );
 }
+
+/**
+ * Bölüm başlığından kararlı bir `id` üretir — sayfa içi bağlantı için.
+ *
+ * ÖLÇÜLDÜ (canlı, 390px): en uzun konu sayfası `26 803px` yükseklikte, yani
+ * **31.8 ekran**. Sayfada 15 `h2` ve 17 `h3` var ama sayfa içi çapa SIFIR ve
+ * başlıkların hiçbirinde `id` YOK — atlama bağlantısının `#icerik`i dışında.
+ * Yani "tedavi" bölümünü arayan okuyucu 30 ekran kaydırmak zorunda ve bir
+ * bölüme bağlantı vermek (ya da yer imi koymak) imkânsız.
+ *
+ * Türkçe katlama ELLE kuruluyor: `toLowerCase()` `I`yı `i` yapar ama `İ`yi
+ * noktalı bırakır ve `ı`/`i` ayrımı bu depoda daha önce üç kez yanlış sonuç
+ * verdi (bkz. CLAUDE.md — `/paylaş/i`, `Remisyon.toUpperCase()`).
+ *
+ * `bolum-` ÖNEKİ bilerek var: id'ler sayfadaki mevcut kimliklerle (`icerik`,
+ * `ana-menu`) çakışamasın ve bir bölüm "içerik" adını taşısa bile atlama
+ * bağlantısının hedefini çalmasın.
+ */
+const TR_HARF: Record<string, string> = {
+  ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u",
+  Ç: "c", Ğ: "g", İ: "i", I: "i", Ö: "o", Ş: "s", Ü: "u",
+  â: "a", î: "i", û: "u", Â: "a", Î: "i", Û: "u",
+};
+
+export function basligaId(baslik: string): string {
+  const govde = [...String(baslik)]
+    .map((h) => TR_HARF[h] ?? h)
+    .join("")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return "bolum-" + (govde || "bolum");
+}
+
+/**
+ * Bir bölüm listesi için ÇAKIŞMASIZ id dizisi.
+ *
+ * Aynı başlık iki kez geçebiliyor (ör. iki bölümde de "Tedavi"). Çakışan
+ * id ilk hedefe götürür ve ikinci bölüme ULAŞILAMAZ — sessiz bir kusur,
+ * çünkü bağlantı yine de "çalışıyor" görünür. İkinciden itibaren sıra eki
+ * konuyor.
+ */
+export function bolumKimlikleri(basliklar: string[]): string[] {
+  const sayac = new Map<string, number>();
+  return basliklar.map((b) => {
+    const temel = basligaId(b);
+    const n = (sayac.get(temel) ?? 0) + 1;
+    sayac.set(temel, n);
+    return n === 1 ? temel : `${temel}-${n}`;
+  });
+}

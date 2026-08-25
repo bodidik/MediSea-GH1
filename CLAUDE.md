@@ -12122,3 +12122,99 @@ liste onu bir daha sessizce körleştirmesin.
 **Aktarılabilir kural: bir listeyi türetmeye geçirirken, o listeyi izleyen
 NÖBETÇİLERİ de say.** Kaldırdığın şey bir kusur kaynağı olabilir ama aynı
 zamanda bir denetimin ÖLÇÜM YÜZEYİdir; yüzey kaybolunca denetim susar, düşmez.
+
+### 31.8 EKRANLIK KONU SAYFASINDA SAYFA İÇİ GEZİNME YOKTU
+
+Konu uzunluğunun KISA ucu ölçülmüştü (10 iskelet konu); uzun uç hiç
+ölçülmemişti. Ölçüldü — 410 görünür konu:
+
+| ölçüt | değer |
+|---|---|
+| ortanca gövde | 3 002 krk |
+| %90 · %95 dilim | 636 · 405 |
+| **en uzun** | **23 206 krk** (`enfeksiyon/invazive-mantar-enfeksiyon`) |
+| 12 000+ karakter | 15 konu, ortalama 14 alt başlık |
+
+En uzun konu **canlıda 390px genişlikte** sürüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| belge yüksekliği | **26 803 px = 31.8 ekran** |
+| `h2` + `h3` | 15 + 17 = 32 başlık |
+| sayfa içi çapa | **0** (yalnızca atlama bağlantısının `#icerik`i) |
+| `id` taşıyan başlık | **0** |
+| `<details>` akordeon | 0 |
+
+Yani "tedavi" bölümünü arayan okuyucu 30 ekran kaydırmak zorundaydı ve bir
+bölüme bağlantı vermek ya da yer imi koymak **imkânsızdı**.
+(`TableOfContents.tsx` depoda duruyor ama ölü kod — sıfır içe aktaran.)
+
+**İki ayrı çare, iki ayrı kapsam:**
+
+- **Bölüm kimlikleri HER konuda** basılıyor (`app/lib/baslik.ts` →
+  `bolumKimlikleri`). Nitelik eklemek `textContent`i DEĞİŞTİRMEZ, yani
+  bedava ve derin bağlantıyı 410 sayfada birden açıyor. Üretilen çıktıda
+  **2 057 bölüm kimliği**, kırık sayfa içi çapa **0**.
+- **İçindekiler EŞİĞE bağlı.** Eşik veriden seçildi, uydurulmadı:
+
+  | ölçüt | konu |
+  |---|---|
+  | ≥4 bölüm | 366 — çoğunluk, kısa konuda gürültü olurdu |
+  | ≥6000 karakter | 50 — ~7+ ekran, kaydırma gerçekten acıtıyor |
+  | **ikisi birden** | **50 (%12)** |
+
+  Üretilen 423 konu HTML'inde **52 sayfa** TOC aldı (kısaltma açılımı birkaç
+  konuyu eşiğin üstüne taşıyor).
+
+#### ⚠ İÇİNDEKİLER `[data-readable]` KONTEYNERİNİN DIŞINDA — ve bu ZORUNLU
+
+Vurgular konteyner metnindeki **karakter ofsetiyle** saklanıyor. TOC içeri
+konsaydı ondan sonraki bütün ofsetler kayardı ve deponun kendi kuralı gereği
+("ofset çözülüyor ama metin tutmuyor" → SİLİNİR) **kullanıcıların kayıtlı
+vurguları sessizce yok olurdu.**
+
+Bu yüzden belirleyici negatif kontrol vurgu değil **karakter sayısı**:
+
+| ölçüm | değer |
+|---|---|
+| okuma alanı, değişiklikten ÖNCE (canlı) | **23 986** |
+| okuma alanı, değişiklikten SONRA (yerel) | **23 986** |
+
+Birebir aynı, yani ofsetler kaymadı. Bir okuma yüzeyine DOM eklerken
+sorulacak soru "görünüm bozuldu mu" değil, **"konteynerin metni değişti mi"**.
+
+#### Doğrulama — dört sınır vakası ve dördü de eşiğin iki yanından
+
+| konu | bölüm · karakter | TOC |
+|---|---|---|
+| `endokrinoloji/adrenal-bez-hastaliklari` | 1 · 203 | **yok** (ama 1 bölüm kimliği var) |
+| **`endokrinoloji/addison`** | **7 · 4 888** | **yok** — bölüm sayısı TEK BAŞINA tetiklemiyor |
+| `enfeksiyon/vankomisin-master-rehber` | 5 · 6 007 | **var** |
+| `romatoloji/behcet-vaskuler-tutulum` | 6 · tekrarlı başlık | **var**, 6 benzersiz id |
+
+İkinci satır ayırt edici: eşik uzunluğa bağlı, bölüm sayısına değil.
+
+**ÇİFTLENEN BAŞLIK sessiz bir kusur olurdu:** aynı başlık iki bölümde
+geçiyorsa (depoda bir konu böyle) çakışan id ilk hedefe götürür ve ikinci
+bölüme ULAŞILAMAZ — bağlantı yine de "çalışıyor" görünür. İkinciden itibaren
+sıra eki konuyor (`…-2`); ölçüldü, 6 bölüm 6 benzersiz id.
+
+#### Ölçülen davranış ve erişilebilirlik
+
+| ölçüt | sonuç |
+|---|---|
+| çapa tıklaması | 0 → 6 939 kaydırdı, doğru bölüme gitti |
+| başlık yapışkan çubuğun altında mı | evet — başlık 96px, çubuk alt sınırı 65px (`scroll-mt-24`) |
+| landmark · liste | `<nav aria-labelledby>` · `<ol>` |
+| bağ kontrastı | **8.72** (eşik 4.5) |
+| dokunma hedefi | 43px (masaüstü) · 62px (mobil) |
+| **320px yatay kayma** | **0** |
+| TOC başlığı yazı tipi / üst boşluk | Inter · 0px — belgedeki "`<h2>` serif ve 24px getirir" tuzağı `font-sans mt-0` ile karşılandı |
+
+Türkçe katlama başlık→id dönüşümünde ELLE kuruldu; `toLowerCase()` `İ`yi
+noktalı bırakıyor ve `ı`/`i` ayrımı bu depoda daha önce üç kez yanlış sonuç
+verdi. Ölçüldü: `Işık Mikroskobu` → `bolum-isik-mikroskobu`,
+`TEDAVİ` → `bolum-tedavi`, `İzlem` → `bolum-izlem`.
+
+`bolum-` öneki bilerek var: bir bölüm "içerik" adını taşısa bile atlama
+bağlantısının hedefini (`#icerik`) çalamasın.
