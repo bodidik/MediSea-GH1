@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
@@ -34,6 +35,15 @@ function flashcardYukle(branch: string, id: string): FlashcardVeri | null {
     return null;
   }
 }
+
+
+/** Kendi metadata'si: yoksa kok duzenin canonical "/" degeri miras aliniyor
+ *  (bkz. kardes brans sayfasi). Kullanici verisi ICERMEZ. */
+export const metadata: Metadata = {
+  title: "Hızlı Tekrar — YDUS",
+  description: "Kısa aralıklarla sınav odaklı hızlı tekrar oturumu.",
+  alternates: { canonical: "/tr/premium/ydus/hizli-tekrar" },
+};
 
 export default async function HizliTekrarSayfasi({
   params,

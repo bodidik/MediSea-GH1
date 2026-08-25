@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
@@ -50,6 +51,15 @@ function HataKarti({ baslik, aciklama, lang }: { baslik: string; aciklama: strin
     </div>
   );
 }
+
+
+/** Kendi metadata'si: yoksa kok duzenin canonical "/" degeri miras aliniyor
+ *  (bkz. kardes brans sayfasi). Kullanici verisi ICERMEZ. */
+export const metadata: Metadata = {
+  title: "İnciler — YDUS",
+  description: "Branş branş klinik inciler; kısa, sınav odaklı notlar.",
+  alternates: { canonical: "/tr/premium/ydus/inciler" },
+};
 
 export default async function PearlsPage({
   params,

@@ -10418,3 +10418,64 @@ ve `slice(0, 12000)` ile okuyunca beş rota "title yok, canonical yok" çıktı.
 Sebep: bu sayfalarda `<title>` **13621.** karakterde. Dilim kaldırılınca hepsi
 göründü. Belgedeki *"ekrana basmak için kırptığın değeri ölçüme GERİ VERME"*
 kuralının HTML tarafı — ve bu tur onsuz beş sahte kusur raporlanacaktı.
+
+### Premium konu sayfaları da kendi başlığını aldı — ve DÖRT KAPININ GÖREMEDİĞİ bir kusur sınıfı çıktı
+
+Geçen turun açık maddesi kapatıldı: kalan premium rotalarının **beşi de sunucu
+bileşeni sanılmıştı**, ikisi değildi.
+
+**Düzeltilenler** (kendi `generateMetadata`/`metadata`'sı, canonical kendi
+adresi, `openGraph` bilerek yok):
+
+| rota | başlık |
+|---|---|
+| `[branch]/[topic]` (~41 konu) | `veri.meta.baslik` — `<h1>` ile AYNI kaynak |
+| `inciler` | **İnciler — YDUS · MediSea** |
+| `hizli-tekrar` | Hızlı Tekrar — YDUS |
+
+Ölçüldü: `…/romatoloji/sle` → **"Sistemik Lupus Eritematozus (SLE) — YDUS ·
+MediSea"**, `…/nefroloji/iga-nefropatisi` → **"IgA Nefropatisi — YDUS ·
+MediSea"**; ikisinde de canonical kendi adresi ve **og:image duruyor**.
+Negatif kontrol: pano değişmedi.
+
+#### `metadata` bir İSTEMCİ bileşeninden dışa aktarılınca üç kapı da SUSUYOR
+
+`profil` ve `liderlik`e de metadata eklendi ve **üç kapı da geçti** — lint
+temiz, typecheck temiz, derleme temiz. Ama sayfalar açılınca:
+
+```
+/tr/premium/ydus/profil     500
+/tr/premium/ydus/liderlik   500
+/tr/premium/ydus/inciler    500   ← saglam olan da kardesinden SICRADI
+```
+
+Sebep: ikisi de `'use client'` ve bir istemci bileşeni `metadata` dışa
+aktaramaz. **Bu, `lint`/`typecheck`/`build` üçünün de göremediği bir sınıf** —
+belgedeki "kusur kodda değil veride" ailesinin çalışma zamanı akrabası. Tek
+gösteren şey sayfayı AÇMAK oldu.
+
+**Kendi kontrolüm neden kaçırdı: `head -1`.** Bu depoda dosyalar mutlak yol
+yorumuyla başlıyor, `'use client'` İKİNCİ satırda:
+
+```
+// "C:\Users\...\profil\page.tsx"
+'use client';
+```
+
+Bir yönerge ararken ilk satıra bakmak yetmez — **ilk birkaç satırı** tara.
+
+Üçüncü ders: **bozuk bir rota kardeşini de düşürdü.** `inciler` doğru
+yazılmıştı ama aynı ölçümde 500 verdi; sıçrama olduğu ancak bozuk ikisi geri
+alındıktan sonra görüldü. Bir toplu değişiklikte 500 alırsan, önce **hangi
+dosyanın** bozuk olduğunu ayrıştır — hepsini suçlama.
+
+İkisi temiz hâline döndürüldü (kalan tek fark bir boş satırdı, o da geri alındı).
+
+#### AÇIK MADDE — üç istemci rotası hâlâ genel başlıkta
+
+`profil` · `liderlik` · `/tr/premium` istemci bileşeni; metadata ancak bir
+`layout.tsx` ile verilebilir. Geçen turda yazılan çekince aynen geçerli:
+`[lang]/premium/layout.tsx` `ydus/` altının TAMAMINI sarıyor, oraya canonical
+koymak yanlış iddiayı bütün alt sayfalara yayardı. Her rotaya AYRI `layout.tsx`
+açmak doğru çare ama üç yeni dosya demek — ölçüldü, gerekçesi yazıldı,
+bu turda YAPILMADI.

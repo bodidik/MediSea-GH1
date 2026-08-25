@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
@@ -88,6 +89,30 @@ const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) =
 };
 
 // --- ANA SAYFA ---
+/**
+ * Kendi metadata'sı OLMAK ZORUNDA — kardeş branş sayfasıyla aynı gerekçe:
+ * yoksa kök düzenin `alternates: { canonical: "/" }` değeri miras alınıyor ve
+ * sayfa kendini ana sayfanın kopyası ilan ediyor. OLCULDU (canlida): premium
+ * konu sayfalarinin hepsi hem genel site basligini hem canonical "/" tasiyordu.
+ *
+ * Baslik `<h1>` ile AYNI kaynaktan (`veri.meta`) turuyor. `openGraph` bilerek
+ * TANIMLANMIYOR (kokteki dosya tabanli paylasim gorseli miras kalsin).
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; branch: string; topic: string }>;
+}): Promise<Metadata> {
+  const { branch, topic } = await params;
+  const veri = konuYukle(branch, topic);
+  if (!veri) return {};
+  return {
+    title: `${veri.meta.baslik} — YDUS`,
+    description: veri.meta.altbaslik || `${veri.meta.baslik} — YDUS premium konu anlatımı, sorular ve tekrar kartları.`,
+    alternates: { canonical: `/tr/premium/ydus/${branch}/${topic}` },
+  };
+}
+
 export default async function KonuSayfasi({
   params,
 }: {
