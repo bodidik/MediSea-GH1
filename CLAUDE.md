@@ -9472,3 +9472,91 @@ kaldığını değil, KOPYANIN kaybolduğunu ölç):
 yalnızca yanıltıcı değil, bazen **enstrümanın kendisinde bulunmayan bir
 kavramı** kaynağa yazıyor. Bir hesaplayıcıda ağırlık/katsayı alanı görürsen,
 yayımlanmış tanımda o kavramın gerçekten var olup olmadığını da sor.
+
+### `noUnusedLocals` ÜÇ ARAÇTA PAYLAŞ DÜĞMESİNİN OLMADIĞINI GÖSTERDİ — ve benim "130/130" iddiamı çürüttü
+
+`endocarditis`in ölü `score`'u yeni bir ölçüt önerdi: **hesaplanıp hiç okunmayan
+YEREL DEĞİŞKEN.** Önceki taramalar nesne ALANLARINA bakıyordu; yerel
+değişkenler için deponun kendi derleyicisinde hazır bir bayrak var.
+
+Durum ölçüldü: `tsconfig.json`da `noUnusedLocals` **tanımsız**, `strict: false`,
+ve `.eslintrc.js`teki `no-unused-vars` yorum satırında — gerekçesi orada yazılı
+(59 bulgu, "kapı değil ayrı bir temizlik işi"). `noUnusedLocals` ondan DAHA DAR:
+yalnızca kullanılmayan yerel/ithal, tip imzası parametresi ya da `catch`
+değişkeni sahte pozitifi yok.
+
+```
+npx tsc -p tsconfig.json --noEmit --noUnusedLocals   ->  48 bulgu
+```
+
+Kırılımı belirleyici: **34'ü alt çizgili (rotaya alınmayan) premium
+sayfalarda kullanılmayan ikon içe aktarması** — kullanıcıya ulaşmıyor.
+Geriye **14 ulaşılabilir bulgu** kaldı ve içlerinden biri gerçek bir kusurdu.
+
+#### Üç araçta PAYLAŞ DÜĞMESİ YOKTU
+
+`fibromiyalji` · `haq-di` · `sga` `ToolShare`'i **içe aktarıyor ama hiç
+render etmiyordu.** Canlıda doğrulandı:
+
+| araç | paylaş düğmesi (canlı) |
+|---|---|
+| `fibromiyalji` · `haq-di` · `sga` | **YOK** |
+| `conut` · `basdai` · `gh-test` · `gout-acr` · `egfr` · `bmi` (kıyas) | var |
+
+**Bu aynı zamanda belgedeki bir iddianın çürütülmesi.** Araç kabuğu turunda
+"`ToolShare` 130/130" yazılmıştı; o ölçüm kaynakta `ToolShare` dizesini
+arıyordu ve **İÇE AKTARMA satırını sayıyordu.** Deponun kendi kuralının
+("ad araması tek başına yanıltır — içe aktarma satırını ara, sonra gerçekten
+kullanıldığını doğrula") kabuk tarafındaki hâli; kural yazılıydı, ölçüm
+uymamıştı.
+
+Üçüne de kardeş kalıptaki yerinde (`⚠️` uyarı kutusunun üstünde, ayırıcı
+çizgiyle) eklendi. `params` **bilerek geçilmedi**: imzada isteğe bağlı, sorgu
+zaten `ToolShare` tarafından siliniyor, ve `Set`/`Record` durumlarını uydurma
+bir biçimde serileştirmek `glim` turunda kaçınılan şeyin aynısı olurdu.
+
+Doğrulama: üçünde de düğme çıkıyor, **klinik uyarı yerinde duruyor** (negatif
+kontrol — blok kaydırılmadı), `<h1>` hâlâ 1, ve `noUnusedLocals` artık
+`ToolShare` için **0** bulgu veriyor.
+
+#### Kalan ulaşılabilir bulgular karara bağlandı
+
+| yer | değişken | verdikt |
+|---|---|---|
+| `gout-acr` | `isGout` · `isExcluded` · `allDone` | **zararsız ölü kod** — MSU pozitif dalı ayrı render ediliyor (`msu === true ? … : showDomains ? …`), hüküm `domainTotal >= 8`ten doğru üretiliyor |
+| `basdai` · `conut` | `answered` · `hasResult` | eski kapıların kalıntısı; davranış ölçülmüş ve doğru |
+| `SiteHeader` · `topicChildren` · kayseritip rotası | `router` · `toTitle` · `plan` | ölü yerel |
+
+**Kapı olarak AÇILMADI:** `noUnusedLocals` bugün derlemeyi 48 bulguyla
+düşürürdü ve 34'ü ölü koddaki ikon içe aktarması. Ölçüt burada yazılı; bir
+temizlik turunda açılabilir.
+
+### ⚠ AÇIK SORU — `gh-test`te BMI'ye bağlı eşik ilan ediliyor, uygulanmıyor
+
+Aynı taramada `gh-test`in `ageIdx`/`ageCutoff` değişkenleri ölü çıktı ve
+bakınca daha derin bir şey göründü:
+
+```
+const AGE_OPTS = [["≤ 25 yaş", 11.5], ["26–50 yaş", 8], ["> 50 yaş", 4]]
+const ageCutoff = AGE_OPTS[ageIdx][1];        // HİÇ OKUNMUYOR
+const [ageIdx, setAgeIdx] = useState(1);      // setAgeIdx HİÇ ÇAĞRILMIYOR
+```
+
+**11,5 / 8 / 4 sayıları yaşa değil BMI'ye ait** — GHRH+arginin testinin
+BMI'ye göre katmanlanmış klasik eşikleri. Aracın kendi protokol notu da bunu
+yazıyor: *"GHRH+Arginin daha güçlü stimülandır; pik eşiği **BMI'ye göre
+değişir** (cutoff ~4–11 μg/L)."*
+
+Hesap ise arginin protokolünde sabit **3 μg/L** kullanıyor. Yani BMI < 25 olan
+bir hastada pik GH 5 μg/L → araç **"YETERLİ GH YANITI — GH eksikliği
+dışlanır"** diyor; BMI katmanlı eşikle (11,5) yetersiz sayılırdı. Yön güven
+verici tarafta: tanı ATLANIR.
+
+`haq-di` · `murray` · `apache2` · `anaphylaxis` · `canadian-ct` ile aynı sınıf
+(**ilan edilip uygulanmayan kural**), beşinci–altıncı örnek.
+
+**DEĞİŞTİRİLMEDİ.** `gnri`nin cinsiyet seçicisinde olduğu gibi girdi eklemek
+gerekir (BMI), ama hangi eşik kümesinin hangi protokole ait olduğu klinik bir
+kaynak kararı: dizi "yaş" diye ADLANDIRILMIŞ, değerler BMI'ye ait ve `arginine`
+ile `GHRH+arginine` farklı testler. Ölçüm, kapsam ve gerekçe burada; kararı
+içerik sahibi versin.
