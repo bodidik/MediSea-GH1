@@ -11406,3 +11406,62 @@ erişilemez YAPMIYOR — odak kabı sürüklüyor.
 
 Kardiyoloji branş sayfası artık `/tools/heart`e doğrudan bağlanıyor;
 `heart-score` geçişi **0**. Yönlendirme sıçraması kalktı.
+
+### ÜCRETLİ İÇERİK SIZMIYOR — ve bunu söyleyebilmek için önce ÖLÇÜTÜN çalıştığı kanıtlandı
+
+Bu, ürünün en pahalı sorusu ve hiç sistematik ölçülmemişti: anonim bir
+ziyaretçi premium içeriği ham HTML'den okuyabiliyor mu? Deponun kendi kuralı
+gereği görünür metne bakmak YETMEZ — **`<script>` blokları RSC yükünü taşıyor**
+ve içerik render edilmese bile yükte olabilir.
+
+**Yöntem: içerik DOSYASINDAN cümle al, CANLI ham HTML'de ara.**
+
+İlk denemede pozitif kontrolüm DÜŞTÜ ve sebebi öğreticiydi: kontrol cümlesini
+etiketleri sökülmüş metinden almıştım, o da boşlukları birleştirdiği için ham
+HTML'de birebir bulunmuyordu. **Kontrol, ölçülen şeyle AYNI yordamla
+kurulmalı.** Düzeltilince:
+
+| ölçüt | sonuç |
+|---|---|
+| **pozitif kontrol** — açık konunun içerik dosyasından 3 cümle | **3/3 ham HTML'de BULUNDU** (yöntem çalışıyor) |
+| premium konu (SLE) — içerik dosyasından 3 cümle | **0/3** |
+| premium branş sayfası — hematoloji gövdesinden 4 cümle | **0/4** |
+
+Bayt karşılaştırması da aynı yönde: açık konu 86717, premium konu 28117.
+
+**Altı ücretli yüzeyin altısı da kapılı** (anonim, canlı):
+
+| yüzey | sonuç |
+|---|---|
+| premium konu · `quiz-coz` · `inciler` · `hizli-tekrar` · `vaka-coz` · `soru-cozum` | **🔒 Erişim Kısıtlı** |
+| doğrudan içerik yolları (`/content/premium/…json` vb., 4 biçim) | **404** |
+| premium API'ler (`quiz/today`, `daily-program`, `protected/chunk`, `user/me`) | **503 · `backend-unavailable`** |
+
+**Premium BRANŞ sayfası bilerek açık ve sızıntı değil:** 36917 bayt ama
+görünür metin yalnızca **548 karakter** — branş başlığı, tanıtım cümlesi ve
+kategori adları. Konu gövdelerinden alınan dört cümlenin dördü de yok. Yani
+katalog açık, içerik kapalı; satış yüzeyi olarak doğru davranış.
+
+**Parametresiz ücretli yüzeyler dürüst hata veriyor:** `inciler` ve `quiz-coz`
+"açılamadı" kartı + YDUS panosuna dönüş bağlantısı basıyor (sistem içi ad
+sızmıyor, çıkmaz yok). Parametre verilince kapı devreye giriyor.
+
+> **Ölçüm notu — parametre adını TAHMİN ETME.** `inciler?brans=…&konu=…` ile
+> yapılan ilk deneme "açılamadı" döndürdü ve bir an "kapı yok" sanıldı;
+> gerçek adlar `branch` ve `id` (kaynaktan okundu) ve o adlarla sayfa
+> kapılı çıktı. Yanlış parametreyle alınan "kapı görünmüyor" sonucu,
+> kapının yokluğu DEĞİL ölçümün yanlış kapıyı çalmasıdır.
+
+### Kendi metadata değişikliklerim JSON-LD'yi bozmadı
+
+Bu oturumda canonical ve başlıklar geniş biçimde değiştirildi; şema
+adresleriyle çelişme riski vardı. Ölçüldü — üç sayfa tipinde de
+**canonical ile şema URL'i birebir aynı**, kırıntılar tam ve doğru,
+`localhost` adresi 0, ayrıştırılamayan blok 0.
+
+Tek fark kayda geçti ve DEĞİŞTİRİLMEDİ: araç kırıntısı `[Klinik Araçlar, X]`
+diye başlıyor, konu/branş kırıntısı `[MediSea, Kütüphane, …]` ile. Konu
+tarafındaki kök daha önce bilinçli eklenmiş (yorumu duruyor), araç tarafı o
+turun dışında kalmış. Araç sayfalarında GÖRÜNÜR kırıntı olmadığı için ortada
+şema–ekran çelişkisi yok; 130 dosyalık üretilmiş diff'i kozmetik bir fark
+için açmaya değmez. Ölçüldü, yazıldı, bırakıldı.
