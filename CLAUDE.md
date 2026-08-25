@@ -12508,3 +12508,33 @@ Alan adı taraması yaparken karakter sınıfına `_` koy — yoksa
 yerinde, canlıda "Erişim Kısıtlı"). `vaka-coz` yedekten KOPYALANMADI: aynı
 dosyada okuyucu düzeltmesi de vardı ve kopyalamak onu silerdi — kapı satırı
 tek tek geri yazıldı.
+
+### PREMIUM MOTOR SÜPÜRMESİ TAMAMLANDI — beşinin beşi de ölçüldü
+
+`soru-cozum` (kokpit) süpürmenin dışında kalmıştı; kapatıldı. Beş gated
+motorun tamamı artık GERÇEK verisiyle render edilip ölçülmüş durumda:
+
+| motor | 320px kayma | başlık — ölçüm öncesi | sonra |
+|---|---|---|---|
+| `quiz-coz` | 0 | `h1` 0 · `h2` 0 | `h1` 1 (set adı, veriden — hiç basılmıyordu) |
+| `hizli-tekrar` | 0 | `h1` 0 · `h2` 0 | `h1` 1 (ad ekrandaydı, `span`di) |
+| `vaka-coz` | 0 | `h1` 0 · `h2` 0 | `h1` 1 + şema düzleştirmesi |
+| **`soru-cozum`** | 0 | **`h1` 0 · `h2` 1** | **`h1` 1 · `h2` 0** |
+| `inciler` | 0 | `h1` 1 | zaten temizdi |
+
+**Kokpit sınıfın daha HAFİF biçimiydi ve ayrımı kaydetmeye değer:** ötekilerde
+başlık ögesi HİÇ yoktu; burada başlık VARDI ama düzeyi yanlıştı — belge en üst
+başlığı olmadan doğrudan `h2`den başlıyordu. Dönüşümden sonra sayfada başka
+`h2` kalmadığı için atlanan düzey de oluşmuyor.
+
+Ölçüm: `h1` 1 · `h2` 0 · kontrast **17.85** · yazı tipi Inter (serif değil) ·
+üst boşluk 0px · 320 ve 1100px'te kayma 0 · düğme 5 · öge sayısı 160
+(değişmedi).
+
+**Beş kapının beşi de yerinde** (geçici iz 0, kapı çağrısı 5/5) ve kokpit
+canlıda yeniden "Erişim Kısıtlı" basıyor.
+
+**Aktarılabilir kural:** bir sınıfı süpürürken listeyi ROTA DOSYALARINDAN
+çıkar, elde tuttuğun örnekten değil. Bu süpürme dört rotayla başladı; beşinci
+yalnızca `AccessGate` kullanan dosyaları saydığımda göründü — ve o beşinci,
+sınıfın en kolay kaçan biçimini taşıyordu.

@@ -78,9 +78,24 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
         {/* Başlık */}
         <div className="flex justify-between items-center border-b border-slate-800 pb-1.5 shrink-0">
           <div>
-            <h2 className="text-base font-black text-white leading-tight uppercase italic tracking-tighter">
+            {/**
+             * `h2` idi ve sayfada `h1` YOKTU: ölçüldü, gerçek vaka verisiyle
+             * render edildiğinde `h1` sayısı **0**, `h2` sayısı 1. Yani belge
+             * en üst başlığı olmadan doğrudan ikinci düzeyden başlıyordu —
+             * kardeş motorlarda (`quiz-coz`, `hizli-tekrar`, `vaka-coz`)
+             * bulunan boşluğun daha hafif biçimi: burada başlık VARDI, düzeyi
+             * yanlıştı.
+             *
+             * `data.title` bu sayfanın belge başlığı, yani doğru düzey `h1`.
+             * Görünüm değişmiyor: boyut ve ağırlık Tailwind sınıflarından
+             * geliyor, `font-sans mt-0` ile `globals.css`in h1'e verdiği serif
+             * ve 24px üst boşluk geri alınıyor (belgede kayıtlı tuzak).
+             * Dönüşümden sonra sayfada başka `h2` kalmıyor, yani atlanan
+             * düzey de oluşmuyor.
+             */}
+            <h1 className="font-sans mt-0 text-base font-black text-white leading-tight uppercase italic tracking-tighter">
               {data.title}
-            </h2>
+            </h1>
           </div>
           <span className="bg-blue-600 text-white text-[10px] font-black px-2.5 py-1 rounded border border-blue-500/30 uppercase tracking-widest">
             ADIM {currentStage.step}/{data.stages.length}
