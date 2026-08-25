@@ -12052,3 +12052,19 @@ branşın kendi kategorisi **iki kez**, ötekiler birer kez geçiyor. Çapa
 "Tümü" metnine bağlanınca her branş kendi kategorisini gösterdi. Belgedeki
 "aynı kelime birden çok yerde geçiyorsa çapayı benzersiz bir dizeye at"
 kuralı — bu kez `head -1` biçiminde.
+
+#### Düzeltme CANLIDA doğrulandı
+
+| yüzey | canlıda ölçülen | düzeltme öncesi |
+|---|---|---|
+| `/topics/hematoloji` | **ipi · flipi · ipss-r · isth-dic · hscore** · Tümü → `?kategori=hematoloji` | wells-dvt · has-bled · glasgow-blatchford |
+| `/topics/palyatif` | **karnofsky · pps · ppi · pap-score · esas** | ecog |
+| `/topics/romatoloji` | 8 araç + **"Tümü (14)"** | das28 · sle |
+| `/topics/nefroloji` | 8 araç + "Tümü (9)" | 5 araç |
+| **negatif** — `/topics/journal-club` | şerit **0**, sayfa sağlam (`h1` 1) | aynı |
+| ters bağlantı — `/tools/karnofsky` | **→ palyatif** | branş bağlantısı **YOKTU** |
+| ters bağlantı — `/tools/ipi` · `/tools/curb65` | → hematoloji + onkoloji · → enfeksiyon + göğüs | ipi'nin yoktu |
+| bağlantının hedefi — `?kategori=hematoloji` | tek bölüm, **5 araç**, "5 araç listeleniyor." | — |
+
+Son satır ayrı bir ölçüm ve gerekliydi: bir bağlantıyı süzülmüş adrese
+çevirmek, o adresin BEKLENEN içeriği gösterdiğini kanıtlamaz.
