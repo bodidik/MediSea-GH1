@@ -17,16 +17,31 @@ type SearchResult = {
 
 /**
  * Menüde gösterilen araç kategorileri — araç sayısı en yüksek altı grup.
- * Kimlikler app/tools/page.tsx içindeki TOOLS_DATABASE slug'larıyla birebir
+ * Kimlikler ToolsIcerik.tsx içindeki TOOLS_DATABASE slug'larıyla birebir
  * aynı olmalı; tutmazsa bağlantı süzgeci boş açar. Tam liste "Tüm Araçlar"da.
+ *
+ * ⚠ BU LİSTE BİR KEZ İLANIYLA ÇELİŞTİ. Yukarıdaki cümle "en yüksek altı grup"
+ * diyor ama liste elle tutuluyor ve içerik büyüdükçe kayıyor. ÖLÇÜLDÜ (canlı,
+ * /tools kategori rozetlerinden okunarak):
+ *
+ *   infuzyon 19 · acil 15 · romatoloji 14 · nutrisyon 10 · nefroloji 9 ·
+ *   endokrinoloji 9 · onkoloji 7 · gogus-enfeksiyon 7 · kardiyoloji 5 · …
+ *
+ * Yani EN BÜYÜK kategori (19 infüzyon hesaplayıcısı) menüde HİÇ YOKTU, buna
+ * karşılık 5 araçlı kardiyoloji vardı. Liste ilanına hizalandı.
+ *
+ * Sayılar ölçüm anına ait; güncel değeri BETİKTEN değil EKRANDAN al —
+ * /tools sayfasındaki kategori rozetleri sayıyı zaten basıyor. Menü altı
+ * yerine başka bir ölçütle küratörlenecekse ÜSTTEKİ CÜMLE de değişmeli;
+ * iki gerçeklik bırakma.
  */
 const ARAC_KATEGORILERI = [
+  { slug: "infuzyon",      icon: "💉", ad: "İlaç İnfüzyonu & Doz" },
   { slug: "acil",          icon: "🚨", ad: "Acil & Kritik Bakım" },
   { slug: "romatoloji",    icon: "🦴", ad: "Romatoloji" },
   { slug: "nutrisyon",     icon: "🍏", ad: "Klinik Nütrisyon" },
   { slug: "nefroloji",     icon: "🧪", ad: "Nefroloji" },
   { slug: "endokrinoloji", icon: "🦋", ad: "Endokrinoloji" },
-  { slug: "kardiyoloji",   icon: "❤️", ad: "Kardiyoloji" },
 ];
 
 /**

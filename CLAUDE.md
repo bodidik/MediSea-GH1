@@ -11304,3 +11304,66 @@ tasarım kararı, ölçüldü ve bırakıldı.
 toplam 33 araç sayıyor. Bu bir kusur değil — eşleme bilerek küratörlü
 ("öncelik sırasına göre" diyor) ve `journal-club` için bilerek boş. Ama
 şeritte görünmeyen 97 araca yalnızca hub ve arama üzerinden ulaşılıyor.
+
+### EN BÜYÜK ARAÇ KATEGORİSİ MENÜDE HİÇ YOKTU — ilan "en yüksek altı" diyordu
+
+`app/lib/tools.ts` bayatlaması bulunduktan sonra doğal soru: depoda başka
+elle tutulan liste var mı ve onlar da kaydı mı? İkisi sayıldı.
+
+**`SPECIALTIES` temiz:** 13 branş kaydı ↔ 13 içerik dizini, **iki yönde de
+sapma 0**.
+
+**Menüdeki araç kategorileri DEĞİL.** `SiteHeader` içindeki
+`ARAC_KATEGORILERI` listesinin hemen üstünde şu yazıyordu:
+
+> *"Menüde gösterilen araç kategorileri — araç sayısı **en yüksek altı grup**."*
+
+Ölçüldü (canlı `/tools` kategori rozetlerinden — sayıyı zaten ekrana basıyorlar):
+
+```
+infuzyon 19 · acil 15 · romatoloji 14 · nutrisyon 10 · nefroloji 9 ·
+endokrinoloji 9 · onkoloji 7 · gogus-enfeksiyon 7 · kardiyoloji 5 · …
+                                                    (18 kategori, 133 listeleme)
+```
+
+| | liste |
+|---|---|
+| menüdeki altı | acil · romatoloji · nutrisyon · nefroloji · endokrinoloji · **kardiyoloji (5)** |
+| gerçek en üst altı | **infuzyon (19)** · acil · romatoloji · nutrisyon · nefroloji · endokrinoloji |
+
+Yani **en büyük kategori — 19 infüzyon hesaplayıcısı — sitenin ana menüsünde
+hiç yoktu**, yerine 5 araçlı kardiyoloji duruyordu. Bu küme klinik olarak da
+ağır (doz ve hız hesapları; belgede "ACİL / İNFÜZYON SERİSİ" olarak 18 aracı
+tek tek bağımsız hesapla sürülmüş).
+
+Liste kendi ilanına hizalandı. Yorum artık ölçüm anındaki sayıları ve şunu
+taşıyor: **menü başka bir ölçütle küratörlenecekse ÜSTTEKİ CÜMLE de
+değişmeli** — iki gerçeklik bırakma.
+
+**Doğrulama, üçü negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| `?kategori=infuzyon` | **19 araç** · "19 araç listeleniyor." · tek `h2` |
+| **negatif** — öteki beş menü bağı | beşi de 200 |
+| **negatif** — `/tools` varsayılan | 130 benzersiz araç bağı (değişmedi) |
+| **negatif** — menüde `kategori=kardiyoloji` | **0** (çıktı) |
+
+İlk satır önemli: yeni bir süzgeç bağı eklerken asıl risk **boş liste açmak**
+(belgede kayıtlı gerileme). Bağ eklenip sayı ölçülmeden bırakılsaydı bu
+görülmezdi.
+
+#### Ölçüm notu: ayrıştırma İKİ KEZ üst üste yanlış sonuç verdi
+
+Kategori sayılarını `TOOLS_DATABASE`i ayrıştırarak çıkarmaya çalıştım.
+İlk ölçüt yanlış alan adını aradı (`kategori:` — gerçek ad `category:`) ve
+**0 eşleşme** buldu; rapor "İLAN TUTUYOR MU: HAYIR" dedi — oysa bu sonuç
+ölçümün kendisinden geliyordu, veriden değil. İkinci ölçüt süslü parantez
+sayarken `[` ve `{` işaretlerini karıştırdı ve **18 kategoriden yalnızca 1'ini**
+gördü.
+
+Doğru sonuç ancak ayrıştırmayı bırakıp **ekrandaki gerçek sayıları** okuyunca
+çıktı: `/tools` kategori rozetleri sayıyı zaten basıyor. Bu depodaki kural
+burada bir kez daha işledi — **davranışı ölç, kaynağı ayrıştırma.** Ayrıştırma
+bu oturumda dört kez sahte sonuç üretti (yuvarlama denetimi, eksik alan
+denetimi, `heart-score` nöbetçisi, bu tur iki kez).
