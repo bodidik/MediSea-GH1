@@ -8934,3 +8934,71 @@ kırpması değişmemiş, `chads-vasc`ta 65–74 tek başına hâlâ 1 puan veri
 `berlin-ards`ın üç ARDS bandı düzeltme öncesiyle birebir aynı mortaliteyi
 basıyor. Bir düzeltmenin canlıda "çalıştığını" göstermek, ESKİ davranışın
 korunduğunu göstermeden yarım kalır.
+
+### DENETİMSİZ `<select>` SINIFI SÜPÜRÜLDÜ — tek örneği `glim`di ve klinik bir TANI basıyordu
+
+Belge bu tuzağı tek araçta (`nrs-2002`) kaydediyordu ama hiç depo geneline
+sürülmemişti: **`<select>`te `value` yoksa "dokunulmadı" ile "ilk seçenek
+seçildi" AYNI şeydir.**
+
+Ölçüt `<select>` açılış etiketini **süslü parantez dengesiyle** kesiyor —
+belgede kayıtlı `=>` tuzağı yüzünden düz regex `>` işaretinde erken kapanıyor
+ve `onChange={(e)=>…}` taşıyan her seçici yarıda kesiliyordu.
+
+423 tsx · **36 `<select>`** · `value`/`defaultValue` taşımayan **5** — beşi de
+tek araçta: `glim` (GLIM malnütrisyon tanı ölçütü).
+
+**Dokunulmamış form ÖLÇÜLDÜ:**
+
+```
+GLIM TANISAL SONUÇ
+Tanı Kriterleri Karşılanmadı
+```
+
+Beş açılır liste "Yok / Anlamsız", "Normal", "Normal", "Yok", "Yok" gösteriyor
+— hiçbiri kullanıcının seçimi değil. Bu bir İDDİA: *değerlendirdik ve
+bulmadık*. `kdigo-aki`nin "AKI Kriteri Yok" ve `das28`in boş formda
+"Remisyon" kusurlarıyla aynı sınıf ve **aynı tehlikeli yön — güven veren
+cevap.** Malnütrisyon taramasında yanlış "tanı yok" cevabı, taramanın kendi
+amacını boşa çıkarıyor.
+
+**Çare üç katmanlı ve GLIM'in kendi kuralına uyuyor:**
+
+1. Seçiciler denetimli (`value={… ?? ""}`), durum `null` başlıyor, her birinin
+   başında boş bir `<option value="">Seçiniz…</option>`.
+2. Hüküm üç durumlu: **kondu · karşılanmadı · değerlendirilemedi**.
+3. Ayrım şu — "karşılanmadı" ancak BİLİNİYORSA söylenir:
+
+```
+kesinYok = (fenotipin ÜÇÜ de yanıtlı && hiçbiri pozitif değil)
+        || (etiyolojinin İKİSİ de yanıtlı && hiçbiri pozitif değil)
+```
+
+**Tanı KONDU ise öteki alanlar boş olsa bile hüküm verilebilir** — GLIM
+"en az 1 fenotipik + en az 1 etiyolojik" istiyor, hepsini değil. Bunu
+"tüm alanlar dolsun" diye kapatmak, aracın kendi kuralını bozardı.
+
+Başlık işaretleri de üç durumlu oldu (`✅` / `❌` / `—`); eskiden yanıtlanmamış
+grup da `❌` yani "yok" görünüyordu.
+
+**Doğrulama beş vaka, ikisi negatif kontrol:**
+
+| girdi | hüküm | şiddet |
+|---|---|---|
+| dokunulmamış form | **Değerlendirilemedi** + eksik alan listesi | — |
+| fenotipin ÜÇÜ de "0" | **Tanı Kriterleri Karşılanmadı** | — |
+| kilo kaybı Evre 2 + inflamasyon Var, **üç alan BOŞ** | **Malnütrisyon Tanısı Kondu** | **EVRE 2 (ŞİDDETLİ)** |
+| aynı, kilo kaybı Evre 1 | Kondu | **EVRE 1 (ORTA)** |
+| **negatif** — etiyoloji geri alındı | **Değerlendirilemedi** | — |
+
+Üçüncü satır belirleyici: üç seçicinin gerçekten boş olduğu ayrıca sayıldı
+(`bosSecici: 3`), yani erken hüküm ölçüldü — varsayılmadı. Beşinci satır
+tersini gösteriyor: etiyolojik kriter olmadan ne tanı konabilir ne dışlanabilir.
+
+`ToolShare` parametreleri de yanıtlanmamış alanı artık GÖNDERMİYOR — boş bir
+alanı `0` diye paylaşmak, düzeltilen iddianın adres tarafındaki hâli olurdu.
+
+**Kalan 31 `<select>` `value` taşıyor**, yani sınıf tek örnekliymiş. Ama
+ölçütün sınırı yazılı: denetimli olup da durumu GERÇEK bir cevapla başlayan
+bir seçici aynı sorunu taşırdı — o eksen "sayısal varsayılan" taramasında
+ayrıca kapatılmıştı (30 araç, tek kusur `pap-score`).
