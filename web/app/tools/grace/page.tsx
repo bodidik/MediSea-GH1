@@ -11,8 +11,30 @@ const KILLIP_OPTS = [["I — Belirti yok",0],["II — Bazal raller / S3",20],["I
 
 type Sel = { age: number; hr: number; sbp: number; cr: number; killip: number; arrest: boolean; st: boolean; enzymes: boolean };
 
+/**
+ * BANT SINIRI BİR PUAN KAYMIŞTI — tam 108 yanlış tarafa düşüyordu.
+ *
+ * Yayımlanmış GRACE hastane içi mortalite bantları:
+ *   DÜŞÜK  ≤ 108   (<%1)      ORTA  109–140  (%1–3)      YÜKSEK  > 140  (>%3)
+ *
+ * Kod `s < 108` diyordu, yani 108 ORTA banda düşüyordu. Tarayıcıda ölçüldü
+ * (yaş 60–69 = 58 · nabız 70–89 = 9 · SKB 120–139 = 34 · kreatinin
+ * 0,80–1,19 = 7 · Killip I = 0 → tam 108):
+ *
+ *   önce:  "GRACE 108 · ORTA RİSK · %1–3 hastane içi mortalite"
+ *   sonra: "GRACE 108 · DÜŞÜK RİSK · <%1 hastane içi mortalite"
+ *
+ * Tek puanlık bir kayma ama tam sınırda duruyor ve bandın adı taburculuk /
+ * gözlem kararını besliyor. Belgedeki kural: sınır değerini ALTI, TAM
+ * KENDİSİ ve ÜSTÜ diye üç noktadan ölç.
+ *
+ * `bant-denetim` bunu göremezdi: bu araç ekranda düşük/orta cetveli
+ * BASMIYOR (yalnızca ">140 → erken invazif" notu var), yani karşılaştırılacak
+ * ikinci bir gerçeklik yok. Kaynaktaki merdiven ile YAYIMLANMIŞ tanımın
+ * karşılaştırılması ayrı bir iş.
+ */
 function risk(s: number) {
-  if (s < 108) return { label: "DÜŞÜK RİSK", sub: "<%1 hastane içi mortalite", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
+  if (s <= 108) return { label: "DÜŞÜK RİSK", sub: "<%1 hastane içi mortalite", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
   if (s <= 140) return { label: "ORTA RİSK", sub: "%1–3 hastane içi mortalite", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
   return { label: "YÜKSEK RİSK", sub: ">%3 hastane içi mortalite", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
 }
@@ -65,9 +87,9 @@ export default function GracePage() {
           <div>
             <div className="flex items-center gap-2">
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
-              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">GRACE 2.0</h1>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">GRACE</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">AKS / NSTEMI Hastane İçi Mortalite Riski</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">AKS / NSTEMI Hastane İçi Mortalite — Toplamsal Puan (1.0)</p>
           </div>
         </div>
 

@@ -7365,3 +7365,68 @@ Aynı turda sürekli değişkenli iki skor daha okundu:
 - **BODE**: VKİ >21/≤21 · FEV₁ ≥65/50–64/36–49/≤35 · mMRC 0–1/2/3/4 ·
   6DYT ≥350/250–349/150–249/<150 · çeyrekler 0–2/3–4/5–6/7–10 ve dört
   yıllık sağkalım %80/%67/%57/%18. Birebir.
+
+### KODDAKİ MERDİVEN ile YAYIMLANMIŞ TANIM — `bant-denetim`in göremediği taraf
+
+`bant-denetim` ekranda basılan cetvel ile koddaki merdiveni karşılaştırıyor ve
+27 araçta 0 çelişki buluyor. Ama cetveli EKRANDA BASMAYAN bir araçta
+karşılaştırılacak ikinci gerçeklik yok — orada merdivenin doğruluğu ancak
+YAYIMLANMIŞ tanımla karşılaştırılarak anlaşılır. Bu ayrı bir iş ve `grace`de
+bir kusur çıkardı.
+
+**`grace` — bant sınırı bir puan kaymıştı.** Yayımlanmış GRACE hastane içi
+mortalite bantları: **DÜŞÜK ≤ 108** (<%1) · ORTA 109–140 (%1–3) · YÜKSEK > 140
+(>%3). Kod `s < 108` diyordu, yani tam 108 ORTA banda düşüyordu.
+
+Tarayıcıda ölçüldü (yaş 60–69 = 58 · nabız 70–89 = 9 · SKB 120–139 = 34 ·
+kreatinin 0,80–1,19 = 7 · Killip I = 0 → tam 108):
+
+| | ekranda |
+|---|---|
+| önce | "GRACE **108** · **ORTA RİSK** · %1–3 hastane içi mortalite" |
+| sonra | "GRACE **108** · **DÜŞÜK RİSK** · <%1 hastane içi mortalite" |
+
+Tek puanlık kayma ama tam sınırda ve bandın adı taburculuk/gözlem kararını
+besliyor.
+
+**Sınır BEŞ noktadan ölçüldü** ve yalnızca 108 oynadı — üst sınır dokunulmadı:
+
+| skor | ekranda | not |
+|---|---|---|
+| 102 | DÜŞÜK | değişmedi |
+| **108** | **DÜŞÜK** | **düzeldi** |
+| 114 | ORTA | değişmedi |
+| **140** | ORTA | üst sınır dahil, değişmedi |
+| 143 | YÜKSEK | değişmedi |
+
+**Puan tablosunun tamamı ayrıca yayımlanmış hâliyle karşılaştırıldı ve
+temiz:** yaş 0/8/25/41/58/75/91/100 · nabız 0/3/9/15/24/38/46 · SKB
+58/53/43/34/24/10/0 (ters yönlü) · kreatinin 1/4/7/10/13/21/28 · Killip
+0/20/39/59 · arrest 39 · ST 28 · enzim 14.
+
+**İLAN DÜZELTMESİ — başlık "GRACE 2.0" diyordu, uygulanan 1.0.** Toplamsal
+puan sistemi (0–258 arası, yukarıdaki nomogram puanları ve ≤108/109–140/>140
+bantları) GRACE **1.0**'dır. GRACE 2.0 toplamsal değildir; sürekli
+değişkenlerden doğrudan mortalite yüzdesi üretir ve 0–258 arası bir toplam
+yoktur. Başlık "GRACE", alt başlık "Toplamsal Puan (1.0)" oldu — araç ne
+hesapladığını doğru söylüyor.
+
+### Bu turda ölçülüp TEMİZ çıkanlar — yeniden ölçmeye gerek yok
+
+| araç | ölçülen |
+|---|---|
+| `curb65` | beş ölçüt yayımlanmış hâliyle birebir; üre eşiği İKİ birimle birden yazılı (> 7 mmol/L · > 19 mg/dL BUN) — birim ilanı kuralının örnek uygulaması; bantlar 0–1 / 2 / ≥3 |
+| `bode` | VKİ · FEV₁ · mMRC · 6DYT basamakları ve çeyrekler (0–2/3–4/5–6/7–10), dört yıllık sağkalım %80/%67/%57/%18 — birebir |
+| `infusion` | **doğrulanmış 18'lik infüzyon serisinde YOKTU.** İki hesabı da elle sürüldü: 125 mL/sa × 20 gtt/mL ÷ 60 = **41,7 damla/dk**; 70 kg × 0,05 mg/kg/dk × 60 ÷ 1 mg/mL = **210 mL/sa**; 70 kg × 0,1 ÷ 20 mg/mL = **21**; kilo iki katına çıkınca **42** (kiloya bağımlılık kanıtı). ×60 çevrimi yerinde, beş alanın beşinde de alt VE üst sınır var, iki bölüm birbirinden bağımsız hesaplanıyor |
+
+Ayrıca kapalı sayımlar yeniden doğrulandı: `Math.abs` yalnızca `sodium`da (1),
+`calc-utils`te ölü dışa aktarım tam olarak belgedeki dört (`mmolToMgdl`,
+`calculateSofaScore`, `checkPercCriteria`, `calculateWellsDvt`).
+
+**Bir sayım tuzağı: "/dk basan araç" 13 çıktı, belgede 8 yazıyor — ve belge
+DOĞRU.** Fark ölçütte: `/dk` deseni `curb65`, `qsofa`, `sofa`, `psi-port`,
+`grace`, `perc`, `glasgow-blatchford` gibi araçlarda **solunum sayısı
+etiketini** (`solunum/dk`) yakalıyor; bunlar hız çıktısı değil girdi etiketi.
+Gerçek "dakika başına hız basan" küme belgedeki sekiz. Sayım düzeltmesi
+yaparken ölçütün GENİŞLEMİŞ olabileceğini de hesaba kat — bu turda önceki iki
+sayım düzeltmesi (11→15, 27→+17) gerçek boşluktu, bu üçüncüsü sahteydi.
