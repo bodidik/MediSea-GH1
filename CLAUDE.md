@@ -12538,3 +12538,39 @@ canlıda yeniden "Erişim Kısıtlı" basıyor.
 çıkar, elde tuttuğun örnekten değil. Bu süpürme dört rotayla başladı; beşinci
 yalnızca `AccessGate` kullanan dosyaları saydığımda göründü — ve o beşinci,
 sınıfın en kolay kaçan biçimini taşıyordu.
+
+### İÇİNDEKİLER DEĞİŞİKLİĞİ VURGU DÖNGÜSÜYLE SINANDI — uçtan uca temiz
+
+Karakter sayısı ölçümü (23 986 → 23 986) ofsetlerin kaymadığını gösteriyordu
+ama **gerçek bir vurgu hiç kurulmamıştı.** İçindekiler taşıyan bir sayfada
+döngünün tamamı sürüldü: seç → vurgula → yeniden yükle → yeniden boya.
+
+| adım | ölçüm |
+|---|---|
+| seçim | okuma alanındaki metin düğümünde 10–50 karakter |
+| araç çubuğu | 250 ms'de beliriyor, sekiz düğme adlı (Sarı · Yeşil · Mavi · Pembe · Kalınlaştır · Altını çiz · Not defterine gönder · Kopyala) |
+| kayıt | `medisea:marks:v2:<yol>` · ofset **77–117** · stil `y` |
+| **yeniden yüklemeden sonra kayıt** | **hayatta** (1 kayıt) — yani ofset çözüldü VE metin tuttu |
+| **boyanan metin = kayıttaki metin** | **BİREBİR** |
+| okuma alanı | **23 986** — değişmedi |
+| içindekiler konteyner dışında | evet |
+
+Dördüncü satır belirleyici: deponun kuralı gereği "ofset çözülüyor ama metin
+tutmuyor" olan vurgu SİLİNİR. Kaydın yeniden yüklemeden sağ çıkması,
+içindekiler bloğunun okuma alanının metnine hiç dokunmadığının davranışsal
+kanıtı — sayı ölçümünden daha güçlü.
+
+Boyama `linear-gradient(transparent 55%, rgba(250,204,21,…))` ile yapılıyor;
+belgede kayıtlı "vurguyu `backgroundColor` ile yoklama" tuzağı burada da
+geçerli.
+
+**Ölçüm notu — ilk deneme "araç çubuğu yok" dedi ve YANLIŞTI.** Seçim
+kurulup `selectionchange` gönderildikten sonra 700 ms beklendi ve çubuk
+bulunamadı; aynı adımlar 250 ms'lik aralıklarla YOKLANARAK tekrarlandığında
+çubuk ilk yoklamada çıktı. Tek bir bekleme süresine dayanan ölçüm bu ortamda
+güvenilmez (panel gizliyken zamanlayıcılar kısılıyor) — **beklemek yerine
+yokla.**
+
+**Ölçüm izi temizlendi:** `medisea:*` anahtarları silindi ve **0** olduğu
+sayıldı. Silinenler arasında belgede "önceki turdan kalmış" diye kayıtlı
+`medisea:kartlar:v1:fc-endo-akromegali-001` de vardı — o kalıntı da kapandı.
