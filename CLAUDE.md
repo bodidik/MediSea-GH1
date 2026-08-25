@@ -9056,8 +9056,13 @@ dizisi + sınıflama etiketi) **35 araç** ölçtü: 23'ünde kapı var, **12 ad
 | kova | araçlar | gerekçe |
 |---|---|---|
 | saf onay kutusu | `has-bled` · `padua` · `wells-dvt` · `wells-pe` | işaretsiz = ölçüt YOK; belgede zaten doğrulanmış |
-| `null` başlıyor | `ecog` · `karnofsky` · `must` · `mna` | yanıt gelmeden hüküm basılmıyor |
+| `null` başlıyor | `ecog` · `karnofsky` · `must` | yanıt gelmeden hüküm basılmıyor |
 | varsayılan GÖRÜNÜR | `child-pugh` · `gcs` · `psi-port` · `kdigo-aki` | ölçüldü — aşağıda |
+
+> **DÜZELTME.** Bu tablonun ikinci satırında bir dönem `mna` da vardı ve
+> **YANLIŞTI** — tek tek ölçülmeden gruba yazılmıştı. Araç sürülünce
+> dokunulmamış formda "0 · Malnütrisyon (Kötü Beslenme)" bastığı görüldü.
+> Ayrıntısı ve düzeltmesi belgenin sonundaki bölümde.
 
 #### Ayırt edici soru: varsayım EKRANDA görünüyor mu, ve hüküm NEGATİF bir iddia mı?
 
@@ -11822,3 +11827,82 @@ seçiciyle bütün `animation`/`transition` sürelerini 0.01 ms'e çekiyor
 (sıfıra DEĞİL — `transitionend` olayları tetiklensin diye). Kapsam gerçekten
 geniş: depoda `transition-*` 719, `animate-*` 40, `duration-*` 64 kullanım
 var ve hiçbiri `motion-reduce:` varyantına ihtiyaç duymuyor. Sınıf kapalı.
+
+### BOŞ FORMDAN HÜKÜM — belgede EN AZ geçen araçlar tarandı, `mna` aşırı tanı basıyordu
+
+Kapsam ölçümü ("130 aracın 6'sı belgede hiç geçmiyor") bir tur önce iş
+çıkarmıştı. Aynı ölçüt gevşetildi: **belgede en az geçen 19 araç**, bu kez
+"dokunulmamış formdan klinik hüküm" ekseninde sürüldü.
+
+#### `mna` — sıfır, "iyi"ye değil EN KÖTÜ etikete düşüyordu
+
+Dokunulmamış sayfa, basılı düğme SIFIRKEN şunu basıyordu:
+
+```
+SKOR  0        Malnütrisyon (Kötü Beslenme)
+```
+
+Sebep `getResult(score)`ın koşulsuz çağrılması: cevapsız madde toplama 0
+katıyor, 0 da en ağır banda düşüyor (`s >= 12` normal · `s >= 8` risk ·
+kalanı malnütrisyon).
+
+**Yön bu araçta ters ve tam da bu yüzden ayrıca dikkat çekici.** Belgede
+kayıtlı kardeş kusurlar (`nrs-2002` "SKOR 0 · RİSK DÜŞÜK", `das28`
+"Remisyon", `glim` "Kriterleri Karşılanmadı", `kdigo-aki` "AKI Kriteri Yok")
+hep **güven veren** yönde yanılıyordu. `mna` tersini yapıyor: boş form
+**AŞIRI TANI** üretiyor, hastayı malnütre ilan ediyordu.
+
+Çare `must` kardeşiyle aynı hizaya çekmek — hüküm ancak altı maddenin
+altısı da yanıtlanınca veriliyor. **Sayı da basılmıyor**: "0" tek başına da
+bir iddiadır ve en ağır bandın değeridir.
+
+| girdi | önce | sonra |
+|---|---|---|
+| dokunulmamış | **0 · "Malnütrisyon (Kötü Beslenme)"** | **– · "6 soru daha yanıtlanmalı"** |
+| 1/6 yanıtlı | 2 · "Malnütrisyon" | – · "5 soru daha yanıtlanmalı" |
+| **negatif** — 6/6 yanıtlı | 14 · "Normal Beslenme Durumu" | **14 · "Normal Beslenme Durumu"** |
+
+Puanlama ayrıca elle doğrulandı: 2+3+2+2+2+3 = **14**, ve bantlar
+yayımlanmış MNA-SF ile birebir (≥12 normal · 8–11 risk · ≤7 malnütrisyon,
+tavan 14).
+
+#### BELGENİN KENDİ VERDİKTİ ÇÜRÜTÜLDÜ
+
+CLAUDE.md `mna`yı *"`null` başlıyor — yanıt gelmeden hüküm basılmıyor"*
+kovasına yazmıştı. **Aracı sürmek bunu çürüttü.** Kardeşleri (`ecog` ·
+`karnofsky` · `must`) gerçekten öyle davranıyor; `mna` istisnaydı ve verdikt
+tek tek ölçülmeden gruba yazılmıştı.
+
+Bu, belgede zaten kayıtlı olan *"belgede 'şu sayfa şu sınıfı taşıyor'
+yazması, taşıdığı anlamına gelmez"* kuralının araç tarafındaki hâli — ve bu
+turda kuralı yazan belge tarafından çiğnenmişti.
+
+#### DETEKTÖRÜM ÜÇ AYRI WIDGET TİPİNİ GÖREMEDİ — üç sahte aday
+
+Ölçütüm "seçili kontrol sayısı 0 + varsayılanı olan alan yok + ekranda bant
+var" idi. Üç araçta ateşledi ve **üçü de yanlış pozitif** çıktı; her biri
+FARKLI bir kontrol tipi yüzünden:
+
+| araç | detektörün göremediği | gerçek durum |
+|---|---|---|
+| `charlson` | `<select>`in görünür ilk seçeneği | yaş `"<50"` (0 puan) **görünür biçimde seçili** |
+| `khorana` | **radyo** düğmeleri | kanser lokalizasyonu "Diğer (+0)" görünür seçili; ayrıca 4 alanda görünür normal varsayılan (300 · 12 · 8 · 24) |
+| `esas` | **kaydırıcı** (`input[type=range]`) | 9 kaydırıcının 9'u da 0'da, her birinin yanında görünür cetvel ve renkli değer |
+
+Üçü de belgede kayıtlı **"beyan edilmiş varsayım"** kovasında (`news2` ·
+`psi-port` · `child-pugh` · `gcs` · `pap-score` ile aynı): hüküm, ekranda
+GÖRÜNEN değerlerin aritmetiği. `mna` ise hiçbir şey göstermeden hüküm
+basıyordu — ayrım tam burada.
+
+**Aktarılabilir kural: "seçili" sinyali tek bir mekanizmada aranmaz.**
+`aria-pressed` · `input:checked` · `<select>`in seçili `<option>`u ·
+`input[type=range]`in konumu — dördü ayrı ayrı okunmalı. Bu, belgedeki
+"erişilebilir adı TAM ZİNCİRLE hesaplat" kuralının seçim tarafındaki hâli:
+tek mekanizmaya bakan ölçüm bir yönde ya da öbüründe yanılıyor.
+
+Yanlış pozitiflerin bedeli de ölçülebilir: üçü de "düzeltilseydi" gerçekten
+seçili olan varsayılanlar silinecek, çalışan üç araç bozulacaktı.
+
+Bu turda temiz çıkanlar (yeniden sürmeye gerek yok): `must` · `ecog` ·
+`karnofsky` · `dapsa` · `isth-dic` · `barthel` · `behcet` — dokunulmamış
+hâlde hiçbiri hüküm basmıyor.

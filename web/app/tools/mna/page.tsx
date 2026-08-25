@@ -71,13 +71,39 @@ export default function MNAPage() {
 
   const score = Object.values(answers).reduce((a, b) => a + b, 0);
 
+  /**
+   * HÜKÜM ANCAK ALTI MADDENİN ALTISI DA YANITLANINCA VERİLİR.
+   *
+   * ÖLÇÜLDÜ (canlıda, dokunulmamış sayfa): basılı düğme SIFIRKEN ekranda
+   * 48px'lik bir "0" ve yanında **"Malnütrisyon (Kötü Beslenme)"** yazıyordu.
+   * Yani hiçbir soruya cevap vermemiş bir kullanıcı, hastayı malnütre ilan
+   * eden bir kart görüyordu.
+   *
+   * Sebep `getResult(score)`ın koşulsuz çağrılması: cevapsız madde toplama
+   * 0 katıyor, 0 da en ağır banda düşüyor. Depoda aynı şekil `nrs-2002`
+   * ("SKOR 0 · RİSK DÜŞÜK") ve `das28` ("Remisyon") için zaten kayıtlı;
+   * kardeş araç `must` ise dokunulmamış hâlde HİÇBİR hüküm basmıyor.
+   *
+   * Buradaki yön ters ve o yüzden ayrıca dikkat çekici: sıfır, "iyi" değil
+   * "en kötü" etikete düşüyor — yani boş form AŞIRI TANI üretiyordu.
+   */
+  const yanitlanan = Object.keys(answers).length;
+  const tamam = yanitlanan === QUESTIONS.length;
+
   const getResult = (s: number) => {
     if (s >= 12) return { label: "Normal Beslenme Durumu", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     if (s >= 8) return { label: "Malnütrisyon Riski", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" };
     return { label: "Malnütrisyon (Kötü Beslenme)", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
 
-  const result = getResult(score);
+  const result = tamam
+    ? getResult(score)
+    : {
+        label: `${QUESTIONS.length - yanitlanan} soru daha yanıtlanmalı`,
+        color: "text-slate-600",
+        bg: "bg-slate-50",
+        border: "border-slate-200",
+      };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -125,7 +151,9 @@ export default function MNAPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-950 rounded-[2rem] p-6 text-center border-t-4 border-amber-400 shadow-xl">
             <span className="text-[10px] font-black text-blue-300 uppercase tracking-widest block mb-1">SKOR</span>
-            <div className="text-5xl font-black text-white">{score}</div>
+            {/* Eksik yanıt varken sayı da basılmıyor: "0" tek başına da bir
+                iddiadır ve en ağır bandın değeridir. */}
+            <div className="text-5xl font-black text-white">{tamam ? score : "–"}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex items-center justify-center border-2 border-dashed ${result.border} ${result.bg} ${result.color} transition-all duration-500`}>
             <p className="text-xl font-black uppercase italic text-center leading-tight">
