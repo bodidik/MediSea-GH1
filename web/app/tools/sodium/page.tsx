@@ -112,6 +112,36 @@ export default function SodiumPage() {
   const hedefMakul      = makul(targetNa, 100, 170);
   const hiperHedefMakul = makul(hyperTarget, 100, 170);
 
+  /**
+   * SESSİZ BOŞLUK YERİNE SEBEP — makullük kapılarının açtığı boşluk.
+   *
+   * Kapılar konduktan sonra saçma ya da eksik bir girdide panel HİÇ
+   * çizilmiyordu: kullanıcı alanları doldurup hiçbir şey görmüyor ve hangi
+   * alanın beklendiğini bilmiyordu. Belgedeki kural: "hesaplanamıyorsa
+   * SEBEBİNİ söyle; sessiz boşluk kullanıcıyı yanıltır."
+   *
+   * Eksik alan ADIYLA ve aralığıyla söyleniyor. Tamamen boş formda susuluyor
+   * (belgedeki "girdisiz de aç" kuralı) — sebep ancak kullanıcı bir şey
+   * girdiyse basılıyor.
+   */
+  const temelEksik = [
+    !yasMakul && "yaş (1–120)",
+    !boyMakul && "boy (50–250 cm)",
+    !kiloMakul && "ağırlık (1–400 kg)",
+  ].filter(Boolean) as string[];
+  /* VARSAYILANI OLAN ALAN SAYILMAZ. `hyperTarget` "140" ile açılıyor, yani
+     listeye konsaydı `girdiVar` HER ZAMAN doğru olurdu ve bomboş formda bile
+     sebep basılırdı. Ölçüldü — tam olarak bu oldu. Yalnızca kullanıcının
+     doldurması gereken alanlar sayılıyor. */
+  const girdiVar = [age, height, weight, na, targetNa].some((x) => x.trim() !== "");
+
+  /* Kip başına eksik listesi: her kip yalnızca KENDİ kullandığı alanları ister. */
+  const eksikListesi = (hedefAdi: string | null, hedefTamam: boolean) => [
+    ...temelEksik,
+    !naMakul && "serum Na⁺ (90–200 mEq/L)",
+    hedefAdi && !hedefTamam && `${hedefAdi} (100–170 mEq/L)`,
+  ].filter(Boolean) as string[];
+
   const tbw = yasMakul && boyMakul && kiloMakul ? calcTBW(sex, ageN, heightN, weightN) : null;
   const icf  = tbw ? tbw * 0.67 : null;
   const ecf  = tbw ? tbw * 0.33 : null;
@@ -219,6 +249,22 @@ export default function SodiumPage() {
           </div>
           <InputField label="Serum Na⁺" value={na} set={setNa} ph="ör. 120" unit="mEq/L" />
         </div>
+
+        {/* Sessiz boşluk yerine sebep — üç kip için ortak. */}
+        {girdiVar && (() => {
+          const eksik =
+            mode === "tbw"   ? temelEksik
+          : mode === "hypo"  ? eksikListesi("hedef Na⁺", hedefMakul)
+          :                    eksikListesi("hedef Na⁺", hiperHedefMakul);
+          return eksik.length ? (
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+              <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+              <p className="text-[11px] font-bold text-slate-600">
+                Şu alan{eksik.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksik.join(" · ")}
+              </p>
+            </div>
+          ) : null;
+        })()}
 
         {/* TBW modu */}
         {mode === "tbw" && tbw && (
