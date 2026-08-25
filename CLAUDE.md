@@ -10157,3 +10157,57 @@ o kayıtları da yutuyor, yani sorun kuramsal — ama ölçüt burada yazılı.
 **Ölçüm izi temizlendi:** başlangıçta `medisea:` anahtarı **0**'dı, ölçüm
 sonunda da **0** (tüm `localStorage` boş). Tohumlanan altı anahtarın altısı da
 silindi.
+
+### "ALTI YER" değişmezi sınandı — altısı da senkron
+
+Belgede yüksek riskli bir kural var: `study-backup.ts`e yeni bir depo anahtarı
+eklerken **altı yeri birden** güncellemek gerekiyor, ve altıncısı (üzerine-yaz
+silme listesi) "en kolay kaçan ve sessiz" olan. Kural yazılıydı ama bugünkü
+durum hiç ÖLÇÜLMEMİŞTİ.
+
+Altı depo ailesi var (`marks` · `notes` · `review` · `index` · `log` ·
+`kartlar`) ve altı yerin **altısı da altısını taşıyor**:
+
+| yer | durum |
+|---|---|
+| `Backup` tipi | 6 veri alanı (+ `app` · `v` · `at` meta) |
+| `readAll` | 6 |
+| `parseBackup` | 6 |
+| `applyImport` birleştirme | 6 |
+| **`VERİ_ONEKI` silme listesi** | 6 — `[MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX]` |
+| `write` | 6 |
+
+Değişmez sağlam.
+
+#### Ölçüm tuzağı — TANIMLAYICIDA Türkçe karakter, ve tam o değişmezi koruyan yerde
+
+Taramam altı yerin BEŞİNİ buldu, altıncısını bulamadı. Sebep kusur değil,
+ölçütün kendisiydi: sabitin adı **`VERİ_ONEKI`** ve içindeki **İ** Türkçe
+noktalı büyük I. ASCII desenim (`VERI_ONEKI`) hiç tutmadı ve rapor "silme
+listesi bulunamadı" dedi — yani **doğrulanamayan bir yer, kusurlu bir yer gibi
+göründü.**
+
+Belgede Türkçe karakter tuzağı defalarca kayıtlı ama hep **kullanıcıya görünen
+METİN** için (`ağır` → "AĞIRLIK", `paylaş` → `/paylaş/i`, `Remisyon`.toUpperCase()).
+Bu yeni: tuzak **KAYNAK KODUNUN kendisinde** de var.
+
+**Kapsam ölçüldü ve DAR — sayılabilir:** dizeler, şablon dizeleri, yorumlar ve
+JSX metin düğümleri boşaltıldıktan sonra, 522 dosyada Türkçe karakter taşıyan
+**yalnızca 4 tanımlayıcı bildirimi** var:
+
+| tanımlayıcı | dosya |
+|---|---|
+| `VERİ_ONEKI` | `app/lib/study-backup.ts` |
+| `branslı` | `app/(site)/tekrar/page.tsx` |
+| `görünür` | `app/components/ReadingTools.tsx` |
+| `mı` | `app/kayit/page.tsx` |
+
+Yani tehlike gerçek ama sınırlı: ASCII-only bir tarama tam olarak bu dördünü
+kaçırabilir. **İronisi kayda değer — o dördünden biri, belgenin "en kolay
+kaçan" dediği değişmezi koruyan sabitin ta kendisi.**
+
+**Ölçüt de iki kez daraltıldı:** ilk sürüm 2619 "tanımlayıcı" buldu ve liste
+okunamazdı — çünkü JSX METİN DÜĞÜMLERİNİ (tırnaksız Türkçe kelimeler: "için",
+"göre", "yüksek") tanımlayıcı sanıyordu. Dizeleri boşaltmak yetmiyor; JSX'te
+metin tırnaksız duruyor. `>…<` arası boşaltılıp yalnızca BİLDİRİM konumları
+(`const`/`let`/`function` ardı) sayılınca 2619 → **4** oldu.
