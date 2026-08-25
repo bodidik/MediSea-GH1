@@ -10100,3 +10100,60 @@ kirli.** Güvenilir sinyaller: `role` taşıyan kutuların metni, öge sayısı,
 **Ölçüm notu 2 — konsol günlüğü SEKME başına, sayfa başına değil.** Tohum
 mesajları gezinmelerden sonra da listede kaldı. Yani "yeni mesaj yok" doğru
 okuma; sayfa başına atıf gerekiyorsa her sayfa için TAZE sekme açılmalı.
+
+### Araçlar depoya HİÇ yazmıyor — ve çalışma yüzeyleri bozuk depoya dayanıklı
+
+İki eksen birlikte ölçüldü; ikisi de temiz çıktı ve ikisinin de NEDENİ yapısal.
+
+**1) Araçlar arası durum sızıntısı OLUŞAMIYOR.** `localStorage` kullanan
+12 dosya var ve **araç sayfalarında SIFIR**. Yani "bir araç ötekinin
+anahtarına yazar" sınıfı bu depoda tanım gereği yok.
+
+Birden çok dosyada geçen üç anahtar ifadesi de yanlış pozitif: `INDEX_KEY` ve
+`LOG_KEY` çalışma kütüphanesinin kendi paylaşılan SABİTLERİ (doğru kalıp,
+çakışma değil), `k` ise iki hata sınırındaki döngü değişkeni.
+
+**2) Bozuk depo TOHUMLANDI — iki çalışma yüzeyi de ayakta kaldı.**
+
+Altı anahtar, beş ayrı depo ailesi, hepsi geçersiz JSON:
+
+```
+medisea:index:v1                              "{bozuk"
+medisea:marks:v2:/topics/endokrinoloji/addison "[[[bozuk"
+medisea:review:v1                              "not-json-at-all"
+medisea:log:v1                                 "{yine-bozuk"
+medisea:kartlar:v1:fc-test                     "}{"
+medisea:notes:v1:/zz-tohum-bozuk               "{bozuk-json"
+```
+
+| yüzey | sonuç |
+|---|---|
+| `/calisma-alanim` | **normal açıldı** — 255 öge, üç düğme de yerinde (branş filtresi · yedek al · yedekten yükle), hata sınırı YOK |
+| `/tekrar` | **normal açıldı** — 194 öge, başlıklar yerinde, hata sınırı YOK |
+
+Yani belgede kayıtlı sertleştirmeler (`usable()` içindeki korumasız
+`m.t.trim()`, `JSON.parse` korumaları, `pruneStates`) gerçekten iş görüyor:
+**tek bir bozuk kayıt artık sayfayı düşürmüyor.**
+
+#### Hata sınırının KURTARMA yolu incelendi — tasarımı doğru, ama ULAŞILMADI
+
+`calisma-alanim/error.tsx` bir "bozuk veriyi temizle" düğmesi taşıyor ve
+tasarımı üç doğru karar veriyor:
+
+1. `confirm()` ile onay alıyor ve yedeği hatırlatıyor,
+2. yalnızca `medisea:` önekini tarıyor,
+3. **yalnızca `JSON.parse`'ı DÜŞEN kaydı siliyor** — geçerli veri korunuyor.
+
+Ama bu turda **tetiklenemedi**: okuma yolları o kadar dayanıklı ki altı bozuk
+kayıt bile hata sınırını açtırmadı. Yani kurtarma yolu bugün bir SON ÇARE ve
+ölçülemedi — **"çalışıyor" DENMİYOR**, yalnızca tasarımı okundu.
+
+Kayda değer bir gözlem: temizlik ölçütü PARSE hatasına bakıyor. Belgede kayıtlı
+bozuk-veri kusurlarının bir kısmı ise **geçerli JSON, yanlış ŞEKİL** idi
+(`strokes` alanında dize, kart kimliği hayaleti). Öyle bir kayıt hata sınırını
+açtırırsa "temizle" düğmesi onu SİLMEZ ve döngü kırılmaz. Bugün okuma yolları
+o kayıtları da yutuyor, yani sorun kuramsal — ama ölçüt burada yazılı.
+
+**Ölçüm izi temizlendi:** başlangıçta `medisea:` anahtarı **0**'dı, ölçüm
+sonunda da **0** (tüm `localStorage` boş). Tohumlanan altı anahtarın altısı da
+silindi.
