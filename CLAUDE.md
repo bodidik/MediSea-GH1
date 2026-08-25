@@ -11532,3 +11532,60 @@ OLAN bir kusurun görünür hâliydi.
 Branş satırı ayrıca bir kazanç: eskiden hepsi aynı damgayı taşıyordu, şimdi
 her branş kendi en yeni konusunun tarihini veriyor (endokrinoloji 2026-08-11,
 gastroenteroloji 2026-06-23, …) — yani sinyal hem dürüst hem ayırt edici.
+
+### "BOZUK BİR İÇERİK DOSYASI NE KIRAR?" — deneyle ölçüldü, sistem katmanlı savunuyor
+
+Bozuk veri tohumlamak bu depoda daha önce üç kusur bulmuştu (hep tarayıcı
+deposunda). İçerik tarafında hiç denenmemişti. Gerçek bir konu dosyası
+(`endokrinoloji/riedel-tiroiditi.json`) yarıdan kesilip geçersiz JSON hâline
+getirildi ve bütün zincir ölçüldü.
+
+| katman | sonuç |
+|---|---|
+| `npm run build` | **geçti** — 622 → 621 sayfa, bozuk konu düştü, çökme yok |
+| bozuk konunun adresi | **200** ama içerik "Konu bulunamadı", `<h1>` slug'dan türetilmiş |
+| o sayfanın robots'u | **`noindex, nofollow`** — arama motoruna sunulmuyor |
+| branş sayfası | 200, 18 bağ (değişmedi) — tek dosya listeyi düşürmüyor |
+| ana sayfa · `/tools` · site haritası | 200 |
+| **CI** | **KIRMIZI** — `baslik-index --kontrol` ve `ilgili-index --kontrol` düşüyor |
+
+Son satır belirleyici: **bozuk içerik dağıtıma çıkamaz.** İki indeks kapısı,
+bozuk konu indekslerden düştüğü için "bayat" diyor ve iş düşüyor. Yani
+savunma üç katmanlı — derleme ayakta kalıyor, sayfa dürüst davranıyor, kapı
+gönderimi engelliyor.
+
+**Kusur SAYILMAYAN iki kalıntı, gerekçesiyle:** bozuk konu site haritasında
+kalıyor (558 adres, kayıt duruyor) ve branş sayfasından hâlâ bağlı. İkisi de
+`guvenliOku(..., true)` davranışından geliyor — ayrıştırılamayan dosya
+"gizli değil" sayılıyor. Ters çevirmek (hata → dışarıda bırak) daha dürüst
+görünüyor ama geçici bir okuma hatasında konuları sessizce haritadan
+düşürürdü. Üstelik durum zaten CI tarafından engellendiği için üretimde
+oluşamıyor. Ölçüldü, gerekçesi yazıldı, DEĞİŞTİRİLMEDİ.
+
+### İçerikte görsel YOK — bütün bir hata sınıfı boş çıktı
+
+Alt metin, boyut (CLS), tembel yükleme… hepsi ölçülmeden önce sınıfın var
+olup olmadığı soruldu:
+
+| aranan | içerikte | premium konularda |
+|---|---|---|
+| `<img>` | **0** | **0** |
+| `<svg>` · `<video>` · `<audio>` · `<iframe>` | 0 | — |
+| `<table>` | 52 | — |
+
+Yani görsel erişilebilirliği bu depoda ölçülecek bir yüzey DEĞİL. Bir sınıfı
+taramadan önce **örneklem sayısını sor**; sıfırsa tarama da sonuç da yok.
+
+### İçerikteki 52 tablo yapısal olarak sağlam
+
+| ölçüt | sonuç |
+|---|---|
+| `<th>` taşımayan tablo | **0** |
+| `<thead>` taşımayan | **0** |
+| **karmaşık** tablo (çok satırlı başlık, `tbody`de `th`, `colspan/rowspan`) | **1** / 52 |
+| sütun dağılımı | 2 sütun 9 · 3 sütun 32 · 4 sütun 10 · 5 sütun 1 |
+
+51 tablo tek başlık satırlı ve satır başlığı taşımıyor; o yapıda ekran
+okuyucu sütun ilişkisini `<thead><th>`den zaten kuruyor, `scope` gerekmiyor.
+`<caption>` 52'sinde de yok ama tablolar gövde metninin içinde ve kendi
+başlıkları var. Kusur sayılmadı.
