@@ -11159,3 +11159,69 @@ geliyor? Bir ortamda ayarlanan eşik, başka ortamda sessizce yanlış verdikt
 Arama sunucu eyleminin canlı süresi de kaydedildi (araçlar VAR, önbellek YOK):
 ilk sorgu **996 ms**, sonrakiler 369 / 507 / 436 ms — ortanca **507 ms**.
 Önbellek indiğinde bu sayı yeniden ölçülecek.
+
+### ⚠ DÜZELTME — "önbelleğin kazancı sunucusuz ortamdan gelecek" TAHMİNİM DOĞRULANMADI
+
+Arama indeksi önbelleğe alınırken şu yazılmıştı: *"Yerelde dosyalar işletim
+sistemi önbelleğinden geldiği için kazanç ~10 ms; sunucusuz ortamda dosya
+okuma çok daha pahalı ve fark oradan gelecek."* İkinci yarısı bir TAHMİNDİ ve
+dağıtımdan sonra ölçüldü — **tutmadı.**
+
+Sunucu eyleminin canlı süresi (istek süresi, `performance` kaynak zamanlaması):
+
+| durum | ölçümler (ms) | ortanca |
+|---|---|---|
+| önbelleksiz | 996 · 369 · 507 · 436 | ~471 |
+| **önbellekli** | 778 · 424 · 352 · 415 · 258 · 473 · 284 | **~415** |
+
+Örneklemler ağır biçimde örtüşüyor. En düşük önbellekli değer (258 ms)
+önbelleksiz hiçbir ölçümün altına inmiyor ama bu tek başına kanıt değil;
+**ölçülebilir bir iyileşme YOK.** Sebep aritmetikte duruyor: aynı iş yerelde
+22–34 ms sürüyor, canlıda 250–500 ms. Aradaki fark dosya okuma değil, ağ
+gidiş-dönüşü ve platform ek yükü — yani kaldırdığım iş zaten toplamın küçük
+bir parçasıydı.
+
+**Değişiklik geri ALINMADI ve gerekçesi değişti:** artık bir başarım
+düzeltmesi değil, deponun kendi kuralına (sayaçlar süreç başına bir kez
+hesaplanır) uyum. Sorgu başına 456 dosya okumayı ve binlerce etiketi yeniden
+normalleştirmeyi kaldırmak kendi başına doğru; ama **kullanıcının gördüğü
+gecikmeyi ölçülebilir biçimde iyileştirmiyor ve öyle raporlanmamalı.**
+
+Aktarılabilir kural: **bir düzeltmenin gerekçesini ölçmeden yazma.** "Şurada
+daha pahalıdır, fark oradan gelir" cümlesi makul göründüğü için doğrulanmadan
+belgeye girdi; ölçüm onu çürüttü. Bu depoda tahminler tekrar tekrar yanlış
+çıktı (866 ms sunucu · openGraph görsel mirası · `/tools` 133 bağlantı) —
+tahmin ile ölçüm aynı cümlede durmamalı.
+
+### Bu oturumda eklenen ögelerin kontrastı ölçüldü — 0 kusur, ölçüt kör değil
+
+Arama sonuçlarına araç satırı, sıfır duruma çıkış çipleri ve araç ağacına
+kütüphane bağı eklendi. Hepsi tarayıcıda, uygulamanın kendi CSS'i altında
+ölçüldü (alfa bindirmesi + degrade zemin + ata opaklığı + boyuta göre eşik):
+
+| öge | kontrast | eşik |
+|---|---|---|
+| sıfır durum çipi "Kütüphane" | 8.01 | 4.5 |
+| sıfır durum çipi "Klinik hesaplayıcılar" | 7.29 | 4.5 |
+| araç sonucu başlığı | 14.63 | 4.5 |
+| araç sonucu açıklaması | 7.58 | 4.5 |
+
+**"0 kusur" körlükten gelmiyor — iki yönlü kontrol yapıldı:** aynı ölçüte
+bilerek kusurlu bir tohum verildi (`#b8c6d9` beyaz üstünde) ve **1.73 ile
+yakalandı**; temiz bir tohum (`#111827`) **17.74** ile işaretlenmedi. Yani
+ölçüt ne kör ne fazla geniş.
+
+### Yanlış duyuru düzeltmesi canlıda — ve DOĞRU ölçütle
+
+Geçen turda kendi ölçütüm ("yanlış 'bulunamadı' `ms < 300` içinde mi") canlıda
+yanlış verdikt vermişti. Ölçüt SIRAYA çevrildi ve düzeltme inince yeniden
+sürüldü:
+
+| | duyuru dizisi |
+|---|---|
+| önce (canlı) | **Sonuç bulunamadı. (592)** → Aranıyor… (1578) → 5 sonuç bulundu. (1826) |
+| sonra (canlı) | **Aranıyor… (9)** → 5 sonuç bulundu. (1904) |
+
+Yanlış duyuru YOK. Ölçüt artık "hangi durum önce geldi" diye soruyor, mutlak
+zamana bakmıyor — çünkü tarayıcı paneli gizliyken zamanlayıcılar kısılıyor ve
+aynı olay 8 ms yerine 592 ms'de görünüyor.
