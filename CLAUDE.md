@@ -10311,3 +10311,43 @@ konu listelemeli" — hiçbiri ölçülmüş değildi, üçü de varsayımdı.
 şeyin AYNI ŞEYİ saydığını kanıtla.** Bu depoda kart sayacı "branştaki tüm
 konular"ı, sayfa bağlantısı ise "hiyerarşinin üst düzeyi + yetimler"i sayıyor;
 ikisi farklı büyüklük ve ikisi de doğru.
+
+### Satış sayfası ↔ premium panosu — belgedeki 362↔352 kusuru KAPALI kalmış
+
+Belgede kayıtlı gerçek bir kusur var: *"Satış sayfasının üst yazısı '362 soru'
+derken sayfanın kendi panosu '352' diyordu."* Düzeltilmişti ama **bugünkü
+durum hiç ölçülmemişti.**
+
+İki yüzey karşılaştırıldı ve **birebir aynı**:
+
+| büyüklük | `/uyelik` | premium panosu |
+|---|---|---|
+| başlık / hazır konu | **41** | **41** (41/58) |
+| soru | **378** | **378** |
+
+Panonun üst bilgisi: *"Genel ilerleme %71 · Hazır konu **41/58** · Toplam soru
+**378**"* — ve %71 = 41/58 aritmetiği de tutuyor.
+
+**Kırılımlar da toplamı tutuyor** — panonun kendi 9 branş kartı:
+
+| ölçüt | kırılım toplamı | üst bilgi |
+|---|---|---|
+| hazır konu | **41** | 41 |
+| toplam konu | **58** | 58 |
+| soru | **378** | 378 |
+
+Branş başına soru: 86 · 29 · 55 · 48 · 50 · 50 · 20 · 10 · 30 = **378**.
+
+**DÖRT bağımsız yol aynı sayıyı veriyor:** dosya sistemi (388 toplam − 10 yetim
+= 378, önceki turda ölçüldü) · `/uyelik` metni · pano üst bilgisi · panonun
+branş kırılımı. Araç sayısı da tutuyor: `/uyelik` "130 skor", hub 130.
+
+**Ölçüm notu — sunucu HTML'i bu karşılaştırma için YETMEZ.** Pano çoğunlukla
+istemcide çiziliyor: sunucudan gelen gövde 1453 karakter ve içinde ne 41 ne
+378 var; ilk ölçümüm oradan "konu 16, soru 10" gibi MODÜL düzeyi sayılar
+çıkardı ve iki yüzey uyuşmuyor gibi göründü. Sayfa istemcide okununca gerçek
+üst bilgi çıktı.
+
+Bu, belgedeki *"sunucu HTML'inde `<h1>` say"* kuralının sınırı: o ölçüt
+sayfanın SUNUCUDA basılıp basılmadığını sorar, İÇERİĞİN TAMAMINI değil.
+**İki yüzeyin sayısını karşılaştırırken ikisini de AYNI katmanda oku.**
