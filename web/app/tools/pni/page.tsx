@@ -3,6 +3,7 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { SINIRLAR } from "../lib/asit-baz";
 
 export default function PniPage() {
   const [alb, setAlb]   = React.useState("");
@@ -23,7 +24,7 @@ export default function PniPage() {
    * Yön güven verici olduğu için tehlikeli: malnütrisyon taramasında
    * yanlış "iyi durumda" cevabı, taramanın kendisini boşa çıkarır.
    *
-   * Sınırlar makullük sınırı, klinik eşik değil: albümin 1–7 g/dL
+   * Sınırlar makullük sınırı, klinik eşik değil: albümin SINIRLAR.albumin
    * (fizyolojik aralık ~1.5–5.5), lenfosit 10–100000/μL.
    *
    * LENFOSİT ÜST SINIRI BİLEREK GENİŞ ve bu bir BEKLENTİ DÜZELTMESİ: ilk
@@ -42,12 +43,22 @@ export default function PniPage() {
     const n = parseLocaleNumber(ham);
     return n >= altS && n <= ustS;
   };
-  const hasResult = makul(alb, 1, 7) && makul(lymp, 10, 100000);
+  /**
+   * Albümin sınırı TEK KAYNAKTAN (`SINIRLAR.albumin` = 0,5–7 g/dL).
+   *
+   * Bir dönem burada 1–7 yazılıydı ve OLCULDU: albümin 0,9 g/dL girildiğinde
+   * araç "Hesaplanamıyor" diyordu. Oysa ağır hipoalbüminemi tam da bu indeksin
+   * TANIMLAMAK için var olduğu hasta — yani araç en yüksek riskli hastayı
+   * skorlamayı reddediyordu. Depoda aynı analitin sınırı üç ayrı yerde farklı
+   * yazılmıştı (0,5–8 · 1–7 · 0,5–7); `anion-gap` ↔ `abg` turunda olduğu gibi
+   * kanonik olan `SINIRLAR`a bağlandı. Mesaj metni de sabitten TÜRÜYOR.
+   */
+  const hasResult = makul(alb, ...SINIRLAR.albumin) && makul(lymp, 10, 100000);
 
   /* SESSİZ BOŞLUK YERİNE SEBEP. Araç boş açılıyor, o yüzden sebep ancak
      kullanıcı bir şey girdiyse basılıyor — bomboş formda susuluyor. */
   const eksikAlan = [
-    !makul(alb, 1, 7) && "albümin (1–7 g/dL)",
+    !makul(alb, ...SINIRLAR.albumin) && `albümin (${SINIRLAR.albumin[0]}–${SINIRLAR.albumin[1]} g/dL)`,
     !makul(lymp, 10, 100000) && "lenfosit (10–100000 /μL)",
   ].filter(Boolean) as string[];
   const girdiVar = [alb, lymp].some((x) => x.trim() !== "");

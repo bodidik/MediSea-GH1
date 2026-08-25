@@ -9677,3 +9677,80 @@ yazılıyor ve sonraki tur o sebebe güveniyor.
 `yorum-korlugu-denetim` sürüldü: **14 denetimin 14'ü temiz**, yorum körü
 denetim yok ve **bayat denetim uyarısı yok** — yani bu oturumda eklenen
 `cop-kapi-denetim` listeye alınmış durumda.
+
+### AYNI ANALİT, FARKLI SINIR — sınıf süpürüldü ve `gnri`/`pni` en ağır hastayı skorlamayı REDDEDİYORDU
+
+`anion-gap` ↔ `abg` turunda tek bir çift için düzeltilen sınıf (**aynı
+büyüklüğün makullük sınırı araçtan araca ayrışıyor**) hiç depo geneline
+sürülmemişti. Sürüldü: `alanMakul(x, lo, hi)` / `araliktaMi` / `x >= lo && x <= hi`
+biçimleri analit adına göre gruplandı.
+
+**Beş analitte ayrışma çıktı:**
+
+| analit | ayrışma | verdikt |
+|---|---|---|
+| **albümin** | `corrected-calcium` 0,5–8 · `gnri`/`pni` **1–7** | **KUSUR — düzeltildi** |
+| kilo | 10 araç 1–400 · 8 araç 20–300 | açık madde (aşağıda) |
+| sodyum | `corrected-sodium`/`meld-na` 90–190 · `osmolal-gap`/`sodium` 90–200 | gerçek hastayı reddetmiyor |
+| glukoz | `corrected-sodium` 20–2000 · `osmolal-gap` 10–1500 | `osmolal-gap`in 10'u belgede gerekçeli |
+| boy | `bsa` **30–260** · beşi 50–250 | **meşru** — BSA çocukta da hesaplanır, 30 cm prematüre bir yenidoğandır |
+
+#### Albümin: indeksin TANIMLAMAK için var olduğu hasta skorlanmıyordu
+
+Ölçüldü, iki araçta da aynı:
+
+| girdi | önce | sonra |
+|---|---|---|
+| albümin **0,9** g/dL · lenfosit 800 (`pni`) | **"Hesaplanamıyor"** | **PNI 13,0 · YÜKSEK RİSK** |
+| albümin **0,9** (`gnri`, 55 kg · 165 cm) | **"Hesaplanamıyor"** | **GNRI 50,8 · YÜKSEK RİSK** |
+
+**Yön belirleyici:** GNRI ve PNI malnütrisyon indeksleri; ağır hipoalbüminemi
+tam da onların yakalamak için var olduğu hasta. Araç en yüksek riskli hastayı
+sessizce skorlamayı reddediyordu — `glim`/`kdigo-aki` sınıfının tersi yönde
+bir hâli: yanlış cevap değil, CEVAP YOK.
+
+Çare kanonik kaynağa bağlamak: `app/tools/lib/asit-baz.ts` → `SINIRLAR.albumin`
+= **[0,5, 7]** (`as const`, o yüzden `makul(alb, ...SINIRLAR.albumin)` tip
+denetiminden geçiyor). **Mesaj metni de sabitten TÜRÜYOR** — bir daha
+ayrışamaz:
+
+```
+!albOk && `albümin (${SINIRLAR.albumin[0]}–${SINIRLAR.albumin[1]} g/dL)`
+```
+
+**Doğrulama — sınır üç noktadan, negatif kontroller belgede KAYITLI değerlerle:**
+
+| ölçüt | sonuç |
+|---|---|
+| `pni` albümin 0,5 (tam sınır) | **9,0 · YÜKSEK RİSK** — elle 10×0,5 + 0,005×800 |
+| `pni` albümin 0,4 | reddediliyor · mesaj **"albümin (0.5–7 g/dL)"** |
+| `pni` belgedeki vaka 3,0/1200 | **36,0** — birebir |
+| `gnri` albümin 0,5 | 44,9 · YÜKSEK RİSK |
+| `gnri` belgedeki erkek 165/55/3,6 | **91,0 · ORTA RİSK** — birebir |
+| `gnri` belgedeki kadın | **92,5 · DÜŞÜK RİSK**, varyant satırı "kadın" — birebir |
+
+**Ölçüm tuzağı — kendi etiketime aldandım.** `gnri` koşumunda "kadın" diye
+etiketlediğim ölçüm aslında VARSAYILAN erkek dalıydı (cinsiyet tıklaması
+ölçümden SONRA geliyordu) ve 91,0 çıktı. Belgedeki kadın değeri 92,5 olduğu
+için bir an gerileme sanıldı. Ayrı bir koşumda radyo gerçekten seçilip
+ölçülünce 92,5 ve "Lorentz, **kadın**" satırı çıktı. **Bir varyantı ölçtüğünü
+sanmak için o varyantın GERÇEKTEN seçili olduğunu ayrıca oku** — belgedeki
+"cevaplanmış durum sandığım ölçüm yanlış durumdaydı" kuralının tekrarı.
+
+#### AÇIK MADDE — kilo sınırı iki gruba ayrışmış (18 araç)
+
+| aralık | araçlar |
+|---|---|
+| **1–400 kg** | `bikarbonat-infuzyon` · `bmi` · `bmr` · `bsa` · `dka-infuzyon` · `fomepizol` · `heparin-nomogram` · `nac-infuzyon` · `nutrition-needs` · `sodium` · `vazoaktif-infuzyon` |
+| **20–300 kg** | `antikoagulan-geri-dondurme` · `fosfat-replasman` · `gnri` · `kalsiyum-infuzyon` · `sedasyon-infuzyon` · `status-epileptikus` · `tromboliz-doz` |
+
+İkisi de tek başına makul, ama **aynı sınıftan araçlar iki farklı kovada**
+(`kalsiyum-infuzyon` 20–300 iken `bikarbonat-infuzyon` 1–400). Ayrım klinik
+bir gerekçeden değil, sınırların farklı turlarda konmuş olmasından geliyor.
+
+**DEĞİŞTİRİLMEDİ** çünkü karar klinik kapsamla ilgili: 20 kg alt sınırı
+çocuğu reddeder ve `status-epileptikus` çocukta da kullanılan bir protokol
+taşıyor; 1 kg alt sınırı ise yenidoğanı kabul eder. Platform dahiliye
+(erişkin) için yazılmış, yani ikisi de savunulabilir — ama **ikisinin bir
+arada olması savunulamaz.** Ölçüm ve liste burada; kapsam kararı içerik
+sahibinin.

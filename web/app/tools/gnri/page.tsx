@@ -3,6 +3,7 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { SINIRLAR } from "../lib/asit-baz";
 
 export default function GnriPage() {
   const [alb, setAlb]       = React.useState("");
@@ -48,7 +49,7 @@ export default function GnriPage() {
    * oranı 1'de tavanlıyor, yani 700 kg ile 70 kg AYNI sonucu (95.3) veriyor.
    * Yani saçma kilo kararı değiştirmiyor — tavan burada kazara bir koruma.
    *
-   * Sınırlar makullük sınırı: albümin 1–7 g/dL · kilo 20–300 kg ·
+   * Sınırlar makullük sınırı: albümin SINIRLAR.albumin · kilo 20–300 kg ·
    * boy 50–250 cm (deponun öteki araçlarıyla aynı aile).
    */
   const makul = (ham: string, altS: number, ustS: number) => {
@@ -56,7 +57,17 @@ export default function GnriPage() {
     const n = parseLocaleNumber(ham);
     return n >= altS && n <= ustS;
   };
-  const albOk    = makul(alb, 1, 7);
+  /**
+   * Albümin sınırı TEK KAYNAKTAN (`SINIRLAR.albumin` = 0,5–7 g/dL).
+   *
+   * Bir dönem burada 1–7 yazılıydı ve OLCULDU: albümin 0,9 g/dL girildiğinde
+   * araç "Hesaplanamıyor" diyordu. Oysa ağır hipoalbüminemi tam da bu indeksin
+   * TANIMLAMAK için var olduğu hasta — yani araç en yüksek riskli hastayı
+   * skorlamayı reddediyordu. Depoda aynı analitin sınırı üç ayrı yerde farklı
+   * yazılmıştı (0,5–8 · 1–7 · 0,5–7); `anion-gap` ↔ `abg` turunda olduğu gibi
+   * kanonik olan `SINIRLAR`a bağlandı. Mesaj metni de sabitten TÜRÜYOR.
+   */
+  const albOk    = makul(alb, ...SINIRLAR.albumin);
   const kiloOk   = makul(weight, 20, 300);
   const boyOk    = makul(height, 50, 250);
 
@@ -68,7 +79,7 @@ export default function GnriPage() {
    * şey girdiyse basılıyor — bomboş formda susuluyor.
    */
   const eksikAlan = [
-    !albOk && "albümin (1–7 g/dL)",
+    !albOk && `albümin (${SINIRLAR.albumin[0]}–${SINIRLAR.albumin[1]} g/dL)`,
     !kiloOk && "ağırlık (20–300 kg)",
     !boyOk && "boy (50–250 cm)",
   ].filter(Boolean) as string[];
