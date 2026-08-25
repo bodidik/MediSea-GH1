@@ -12218,3 +12218,78 @@ verdi. Ölçüldü: `Işık Mikroskobu` → `bolum-isik-mikroskobu`,
 
 `bolum-` öneki bilerek var: bir bölüm "içerik" adını taşısa bile atlama
 bağlantısının hedefini (`#icerik`) çalamasın.
+
+### ÜCRETLİ İÇERİKTE ALTI BAŞLIK EKRANA HİÇ BASILMIYORDU
+
+Premium konu uzunluğu ölçülürken çıktı. `IcerikBloklari.tsx`'teki tip tanımı
+şuydu:
+
+```ts
+| { tip: 'bilgi_kutusu'; tur: 'ek_bilgi' | 'uyari' | 'pratik'; metin: string }
+```
+
+`baslik` alanı TİPTE YOK — ve render da onu görmüyordu. Ama VERİ onu
+taşıyor.
+
+Ölçüldü: 41 premium konuda **174 bilgi kutusu**, **6'sı `baslik` taşıyor** ve
+**altısı da ekrana hiç basılmıyordu.** Kutu yalnızca türünün genel etiketini
+("Uyarı", "Ek bilgi", "Pratik not") gösterip doğrudan gövdeye giriyordu.
+
+**KAYIP GERÇEK Mİ diye ayrıca ölçüldü** — başlık gövde metninde
+tekrarlanıyorsa kayıp yoktur. Altısı da tekrarlanmıyor:
+
+| tür | ekrana ulaşmayan başlık |
+|---|---|
+| uyarı | **"Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!"** |
+| uyarı | **"Rebound Hipoglisemi: Hayatı Tehdit Eden Komplikasyon"** |
+| uyarı | "Feokromositoma Krizi: Tanı ve Acil Yönetim" |
+| ek bilgi | "Geroula Pre-test Klinik Skorlaması" |
+| pratik | "Preanalitik Hayati Kurallar: Yalancı Pozitifliği Önleme" |
+| pratik | "Uzun Dönem Takip Protokolü" |
+
+Yani okuyucu kutunun NE HAKKINDA olduğunu göremiyor, doğrudan
+"PPGL klinik şüphesini standardize etmek amacıyla…" diye başlayan bir gövdeye
+düşüyordu. Altısı da aynı sayfada (`endokrinoloji/feokromositoma`) ve klinik
+olarak en sivri satırlar arasında.
+
+Bu, deponun **"ilan ile gerçek ayrışıyor"** sınıfının içerik tarafındaki hâli:
+veri bir alan beyan ediyor, render onu yok sayıyor ve **hiçbir kapı görmüyor**
+— üstelik tip tanımı alanı hiç bilmediği için `tsc` de sessiz kalıyordu.
+Tip, kusuru yakalamak yerine GİZLEYEN taraftaydı.
+
+#### İLK RENK SEÇİMİM KONTRAST KUSURU ÜRETİYORDU — ölçüm yakaladı
+
+Başlığa kutunun sol kenar tonu (`solKenar`) verilmişti; hesaplanınca:
+
+| tür | `solKenar` | `etiketRenk` |
+|---|---|---|
+| ek bilgi | 10.45 | 10.45 |
+| **uyarı** | **2.63** ✗ | **6.38** ✓ |
+| pratik | 6.57 | 6.57 |
+
+`solKenar` bir ÇİZGİ rengi, `etiketRenk` ise metin için seçilmiş. Bir kusuru
+düzeltirken renk seçerken **o rengin ne için tasarlandığına** bak; kutuda
+"uyumlu görünen" ton okunabilir ton olmayabilir.
+
+Canlı ölçüm (geçici dev rotası, gerçek veriyle) tahminle birebir tuttu:
+altı başlık 15px, kontrast **10.45 · 6.38 · 6.57 · 6.38 · 6.38 · 6.57**.
+
+**Negatif kontrol:** başlığı OLMAYAN kutular boş başlık almamalı. Yedi
+başlıksız kutu taşıyan bir konu render edildi — **`<h3>` sayısı 0**, boş
+başlık 0, tür etiketleri ve gövde yerinde. Değişiklik tamamen ekleyici.
+
+Geçici rota silindi ve doğrulandı: `/zz-olcum-kutu` 404, ana sayfa ve
+`/topics` 200, `tsc` temiz.
+
+#### Yan ölçüm: premium konular AÇIK TARAFTAN belirgin daha uzun
+
+| | açık taraf | premium |
+|---|---|---|
+| konu | 410 | 41 |
+| ortanca gövde | 3 002 krk | **6 676 krk** |
+| en uzun | 23 206 | 14 504 |
+| ≥4 başlık **ve** ≥6000 krk | 50 konu (**%12**) | **25 konu (%61)** |
+
+Yani açık tarafta içindekiler eklenmesini gerektiren durum premium tarafta
+beş kat yaygın. Premium konu sayfasında da sayfa içi çapa ve başlık `id`si
+YOK — ölçüldü, sonraki turun işi olarak duruyor.

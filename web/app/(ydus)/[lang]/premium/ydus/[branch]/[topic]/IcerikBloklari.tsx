@@ -19,7 +19,24 @@ export type TabloSatir = { renk?: 'kirmizi' | 'yesil' | 'sari' | 'mavi'; hucrele
 export type IcerikBlok =
   | { tip: 'metin'; baslik?: string; satirlar: MetinSatir[] }
   | { tip: 'tablo'; baslik?: string; kolonlar: string[]; satirlar: TabloSatir[] }
-  | { tip: 'bilgi_kutusu'; tur: 'ek_bilgi' | 'uyari' | 'pratik'; metin: string };
+  /**
+   * `baslik` TİPTE YOKTU ve render de onu görmüyordu — veri onu taşıdığı hâlde.
+   *
+   * ÖLÇÜLDÜ: 41 premium konuda 174 bilgi kutusu var, 6'sı `baslik` taşıyor ve
+   * ALTISI DA EKRANA HİÇ BASILMIYORDU. Kutu yalnızca türünün genel etiketini
+   * ("Uyarı", "Ek bilgi", "Pratik") gösterip doğrudan gövdeye giriyordu.
+   *
+   * Kayıp gerçek: altı başlığın hiçbiri gövde metninde tekrarlanmıyor
+   * (tek tek ölçüldü). Kaybolanlar arasında
+   * "Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!" ve
+   * "Rebound Hipoglisemi: Hayatı Tehdit Eden Komplikasyon" gibi klinik olarak
+   * en sivri satırlar vardı; okuyucu kutunun NE HAKKINDA olduğunu göremiyordu.
+   *
+   * Bu, deponun "ilan ile gerçek ayrışıyor" sınıfının içerik tarafındaki hâli:
+   * veri bir alan beyan ediyor, render onu yok sayıyor ve hiçbir kapı görmüyor
+   * — üstelik tip tanımı alanı hiç bilmediği için `tsc` de sessiz kalıyordu.
+   */
+  | { tip: 'bilgi_kutusu'; tur: 'ek_bilgi' | 'uyari' | 'pratik'; baslik?: string; metin: string };
 
 const KUTU_STILLLERI = {
   ek_bilgi: {
@@ -186,6 +203,24 @@ function BilgiKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu'
       }}>
         {stil.etiket}
       </div>
+      {/* Kutunun KENDİ başlığı — tür etiketi ("Uyarı") onun yerine geçmez:
+          biri kutunun cinsini, öteki konusunu söylüyor.
+          Renk `etiketRenk`ten geliyor, `solKenar`dan DEĞİL. İlk denemede sol
+          kenar tonu kullanılmıştı ve ölçüm yakaladı: uyarı kutusunda
+          #c8960a / #fffdf0 = 2.63 — eşiğin (4.5) altında. `solKenar` bir
+          ÇİZGİ rengi, `etiketRenk` ise metin için seçilmiş.
+          Ölçüldü: ek bilgi 10.45 · uyarı 6.38 · pratik 6.57. */}
+      {blok.baslik && (
+        <h3 style={{
+          fontSize: '15px',
+          fontWeight: 700,
+          lineHeight: 1.35,
+          color: stil.etiketRenk,
+          margin: '0 0 5px',
+        }}>
+          {blok.baslik}
+        </h3>
+      )}
       <p style={{ fontSize: '15px', lineHeight: 1.6, margin: 0, color: '#1a2a3a' }}>
         {kalinIsle(blok.metin)}
       </p>
