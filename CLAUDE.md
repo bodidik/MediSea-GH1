@@ -9560,3 +9560,69 @@ gerekir (BMI), ama hangi eşik kümesinin hangi protokole ait olduğu klinik bir
 kaynak kararı: dizi "yaş" diye ADLANDIRILMIŞ, değerler BMI'ye ait ve `arginine`
 ile `GHRH+arginine` farklı testler. Ölçüm, kapsam ve gerekçe burada; kararı
 içerik sahibi versin.
+
+### Kabuk tutarlılığı bu kez RENDER'DAN sayıldı — 130/130, dördü de
+
+Geçen turun asıl dersi ölçüm tarafındaydı: "`ToolShare` 130/130" iddiası
+grep'in İÇE AKTARMA satırını saymasından geliyordu ve **yanlıştı**. Aynı hata
+öteki kabuk parçalarında da olabilirdi; dördü de yeniden, bu kez sunucudan
+gelen HTML üzerinden sayıldı.
+
+| kabuk parçası | sonuç |
+|---|---|
+| `ARACI PAYLAŞ` düğmesi | **130/130** |
+| klinik uyarı satırı | **130/130** |
+| `☀️` glifinde `aria-hidden` | **130/130** |
+| araç ikonu rozetinde `aria-hidden` | **130/130** |
+
+**"0 kusur ile 0 ölçüm" ayrımı raporun içine kondu:** son blok ölçtüğü öge
+sayısını da bastı (31 glif · 31 rozet), yani boş bir eşleşmeden gelen sahte
+temizlik değil.
+
+**Ölçütün kör olmadığı ÖNCE/SONRA çiftiyle kanıtlandı** — sentetik tohumla
+değil, gerçek kusurla: aynı ölçüt bir tur önce `fibromiyalji` · `haq-di` ·
+`sga`yı yakalamıştı, düzeltme canlıya inince üçü de listeden düştü.
+
+**Aktarılabilir kural: bir KABUK parçasının varlığını kaynakta arama, RENDER
+EDİLMİŞ çıktıda ara.** İçe aktarma, yorum ve ölü dal kaynakta aynı dizeyi
+taşıyor; ekranda taşımıyor.
+
+### Oturum içi gerileme kontrolü — 12 denetim, taban değerinde
+
+Bu oturumda ~15 araç dosyası değişti. Deponun kendi denetimleri kendi iş
+üzerinde sürüldü:
+
+| denetim | sonuç |
+|---|---|
+| `ic-bilesen` (CI kapısı) | **temiz** — 402 tsx · 661 bileşen |
+| `arayuz` | kusur yok |
+| `bolme` | 130 araç · 18 bölme noktası · **0** |
+| `bant` | 130 araç · 27'si hem cetvel hem merdiven · **0 çelişki** |
+| `karar` | 0 — tarihsel kontrol (`spot-urine` 328/330/332) hâlâ yakalıyor |
+| `esik-etiket` | 459 dosya · **0 çelişki** |
+| `kapi-kapsam` · `cop-kapi` · `eksik-alan` · `yuvarlama` · `payda` | belgede kayıtlı verdiktler, yeni aday yok |
+
+#### Kendi düzeltmem `olu-denetim`e YENİ bir aday soktu — ve yanlış pozitif
+
+`olu-denetim` dört aday veriyor; üçü belgede kayıtlı (`ReadingHint cikis` ·
+`unit-converter ters` meşru, `TableOfContents activeId` ölü kod). Dördüncüsü
+YENİ: **`nutrition-needs → secilenSablon`** — "seçim puanla saklanıyor"
+turunda indekse çevirdiğim değişken.
+
+Kaynağa bakıldı: yalnızca `aria-pressed` ve `className` içinde geçiyor, yani
+ölçütün tanımı gereği aday. Ama gerçek değerleri aynı `onClick` ayrıca
+kuruyor:
+
+```
+onClick={() => { setSecilenSablon(i); setStressFactor(lvl.kcal); setProteinFactor(lvl.pro); }}
+```
+
+Yani `secilenSablon` SALT GÖRÜNÜM durumu (hangi şablonun basılı göründüğü) ve
+`unit-converter`ın `ters`i ile aynı kovada — belgedeki kural: *"yalnızca
+görünümü yöneten durum meşrudur."* Kontrolün çıktıyı gerçekten değiştirdiği
+ayrıca ÖLÇÜLMÜŞTÜ (70 kg · Ağır Sepsis → 2450 kcal · 105,0 g; Obezite →
+1400 kcal · 140,0 g).
+
+**Not edilmesinin sebebi: aday listesi büyüdüğünde sonraki tur bunu kovalar.**
+Bir denetimin aday sayısı artınca ilk soru "yeni kusur mu" değil, **"bu turda
+o dosyaya ben mi dokundum"** olmalı.
