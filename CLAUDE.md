@@ -7796,3 +7796,71 @@ altı alan 6 iken sonuç 6,0 ile değişmedi. Düşen durumda sessiz kalmıyor �
 (S1+S2+S3+S4+(S5+S6)/2)/5. Altı soruya da 6 verildiğinde sabah tutukluluğu
 ortalaması 6,0 ve skor 6,0 — yani ne 6'ya bölme ne de S5/S6 ortalamasını
 atlama hatası var (bu indekste en sık iki hata biçimi).
+
+### "HİÇ SINIRI OLMAYAN" KÜME TARANDI — `calvert`de kemoterapi dozu on kata çıkabiliyordu
+
+`basdai` turunda çıkan kural hemen sürüldü: *bir sınıfı "alt sınır var ama üst
+yok" diye tararken, HİÇ SINIRI OLMAYAN kümeyi de ayrıca say.*
+
+Ölçüt: serbest sayısal girdisi olan araçlarda, `parseLocaleNumber` ile okunan
+her değişken için ya doğrudan bir sabit karşılaştırması ya da bir sınır
+yardımcısına (`makul` · `araliktaMi` · `alanMakul` · `glukozMakul`…) argüman
+olarak geçiş aranıyor. İkisi de yoksa aday.
+
+**Ölçüt iki kez daraltıldı ve ikisi de sahte aday üretiyordu:** ilk sürüm
+yalnızca doğrudan karşılaştırmayı gördüğü için `abg`, `sodium`, `anion-gap`
+gibi yardımcıyla kapılanmış araçların tamamını işaretledi (26 araç). Yardımcı
+çağrısı da sayılınca 17'ye düştü; kalanların çoğu da HAM DİZEYİ kapılayan
+biçimdi (`alanMakul(ham, alt, ust)`), yani sayısal değişkende sınır
+görünmüyor ama girdi zaten eleniyor.
+
+Elle karara bağlanınca **tek gerçek boşluk `calvert`in AUC alanıydı.**
+
+#### `calvert` — GFR korumalıydı, AUC değildi
+
+Araç `dose = AUC × (GFR + 25)` hesaplıyor. GFR tarafında belgede kayıtlı bir
+düzeltme var (125 kırpması, "sınırı koymamak sessiz bir aşırı doz demektir").
+AUC tarafında hiçbir kapı yoktu — oysa doz DOĞRUDAN AUC ile ölçekleniyor.
+
+Tarayıcıda ölçüldü (GFR 100):
+
+| AUC | ekranda |
+|---|---|
+| 5 | 625 mg — doğru |
+| **50** | **6250 mg** — tek fazladan hane, **on kat karboplatin** |
+| GFR `abc` + AUC 5 | **125 mg** — sessizce YETERSİZ doz |
+
+Alanın **kendi ipucu "Tipik: 4–6" diyor**; ekran beklediği aralığı yazıp 50'yi
+sessizce kabul ediyordu. Üçüncü satır ters yönde ve daha sinsi: GFR'ye düşen
+bir harf 0'a çevriliyor, doz `5 × 25 = 125 mg` oluyor ve kanser hastasına
+yetersiz doz hesaplanıyor — hiçbir uyarı olmadan.
+
+Sınırlar klinik eşik DEĞİL, makullük sınırı: yayımlanmış karboplatin
+protokollerinde AUC 1,5–7 olağan, kök hücre desteğiyle 12'ye çıkabilir.
+12 tavanı hiçbir gerçek protokolü reddetmiyor. GFR 1–200 ayrı bir makullük
+sınırı; 125 kırpması formülün kendi kuralı ve DOKUNULMADI.
+
+**Doğrulama altı vaka, ikisi negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| AUC 5 · GFR 100 | **625 mg** — değişmedi |
+| AUC 50 | **–** + "Makul bir değer bekleyen alan: hedef AUC (1–12 mg/mL·dak)" |
+| GFR `abc` | **–** + alan ADIYLA söyleniyor |
+| **negatif** — GFR 150 | **750 mg** + "GFR 150 → 125 ile sınırlandırıldı" — eski özellik sağlam |
+| sınır — AUC tam **12** | **1500 mg** geçiyor |
+| sınır — AUC **12,1** | düşüyor |
+
+Dördüncü satır belirleyici: yeni kapı, var olan kırpma özelliğini öldürmedi.
+
+### Aynı taramadan çıkan iki verdikt — ölçüldü, DEĞİŞTİRİLMEDİ
+
+| araç | saçma girdi | verdikt |
+|---|---|---|
+| `tft` | TSH 9999 | "TSH↑ 9999 mIU/L" — desen tanıma aracı, doz üretmiyor; saçma değer yine "yüksek" sınıfına düşüyor, yani karar zararlı yönde değişmiyor |
+| `hiperkalemi-tedavi` | K 9999 | en ağır banda düşüyor — yön doğru |
+
+İkisi de `tirads` / `homa-ir` ile aynı aile: **saçma girdi kararı zararlı yönde
+değiştirmiyorsa sınır koymak kozmetiktir.** Ayrım, çıktının bir SAYI mı yoksa
+bir TALİMAT mı olduğunda: `calvert` mg cinsinden doz basıyor, `tft` bir örüntü
+adı.
