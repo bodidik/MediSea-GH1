@@ -11367,3 +11367,42 @@ Doğru sonuç ancak ayrıştırmayı bırakıp **ekrandaki gerçek sayıları** 
 burada bir kez daha işledi — **davranışı ölç, kaynağı ayrıştırma.** Ayrıştırma
 bu oturumda dört kez sahte sonuç üretti (yuvarlama denetimi, eksik alan
 denetimi, `heart-score` nöbetçisi, bu tur iki kez).
+
+### Canlı arayüzdeki bağlantılar tarandı — 184/184 açılıyor
+
+`link-denetim` içerik JSON'larını tarıyor; **arayüz bileşenlerinin ürettiği
+bağlantıları görmüyor.** O boşluk kapatıldı: yedi ana yüzeyin sunucu
+HTML'inden bağlantılar toplanıp tek tek denendi.
+
+| ölçüt | sonuç |
+|---|---|
+| taranan yüzey | 7 (`/`, `/topics`, `/tools`, branş, konu, `/uyelik`, premium pano) |
+| benzersiz iç bağlantı | **184** |
+| 200 dönmeyen | **0** |
+| **pozitif kontrol** — olmayan adres | **404** (tarama kör değil) |
+
+Alt bilgi envanteri de kayda geçti (10 bağlantı): `/`, dört branş,
+`/tr/premium/ydus`, `/tools`, `/calisma-alanim`, `/tekrar`, `/uyelik`.
+Belgede kayıtlı 27 kırık adresin hepsi ÖLÜ KODDA (`nav.ts`, `ads.ts`,
+`HeaderClient`) ve bu taramada hiç görünmüyor — yani gerçekten ulaşılmıyorlar.
+
+### Arama panelinin klavye erişimi — yükseklik sınırı kimseyi tuzağa düşürmüyor
+
+Panele `max-h` + `overflow-y-auto` konduktan sonra sorulacak soru: alt
+kısımdaki sonuçlara klavyeyle ulaşılıyor mu? "kan" sorgusu (45 sonuç) ile
+ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| panel içten kaydırılabilir | evet |
+| `tabindex="-1"` ile engellenen sonuç | **0** |
+| odak sırası | kutu → "Aramayı temizle" → **ilk sonuç** (arada tek öge) |
+| son sonuca odaklanınca | panel **kendiliğinden kaydı** (scrollTop 4686) |
+
+Son satır belirleyici: sınırlı yükseklik, görünür alanın altındaki 40+ sonucu
+erişilemez YAPMIYOR — odak kabı sürüklüyor.
+
+### `heart-score` düzeltmesi canlıda
+
+Kardiyoloji branş sayfası artık `/tools/heart`e doğrudan bağlanıyor;
+`heart-score` geçişi **0**. Yönlendirme sıçraması kalktı.
