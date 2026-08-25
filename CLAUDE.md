@@ -11749,3 +11749,76 @@ aranarak yoklandı ve "0" çıktı. Bu sonuç **geçersiz**: cümle bir istemci
 bileşeninin içinde, yani sunucu HTML'inde değil JS parçasında. Belgede tam
 bu tuzak kayıtlı ("Dağıtımın indiğini İSTEMCİ tarafı bir işaretle yoklama").
 Doğru yol: formu `fetch` koşumuyla canlıda sürmek — bir sonraki tura kaldı.
+
+### ⚠ BU DOSYANIN KENDİ MALİYETİ ÖLÇÜLDÜ — karar kullanıcının
+
+Belgeye ölçüt uygulanınca çıktı. CLAUDE.md her oturumda bağlama yükleniyor:
+
+| ölçüt | değer |
+|---|---|
+| karakter | **557.654** |
+| satır | 11.752 |
+| `###` bölüm | **304** |
+| kaba token (3 krk/token) | **~186.000** |
+| ilk sürümden bugüne | 6.251 → 557.654 (**89 kat**) |
+| son 24 saatte dosyaya dokunan commit | **81** |
+
+**Bu bir kusur DEĞİL, bir ödünleşme** ve iki yönü de gerçek:
+
+- **Lehte:** bu oturumda belgedeki tuzaklar defalarca beni kurtardı —
+  `scrollWidth` sahte taşması, `innerText`in `uppercase` uygulaması, heredoc'un
+  kaçış silmesi, `<script>` bloklarının RSC yükü taşıması, "0 kusur ile 0 ölçüm
+  aynı görünür". Kayıt otomatik yüklendiği için işe yaradı.
+- **Aleyhte:** ~186 bin token her oturumun bağlamından düşüyor; dosya
+  büyüdükçe asıl işe kalan yer daralıyor.
+
+**Sayıların bayat görünmesi kusur DEĞİL.** Ölçüldü: "131 araç" 11 kez, "114
+araç" 5 kez geçiyor ve bugünkü değer 130. Ama bunlar TARİHSEL kayıtlar ve
+dosyanın kendi kuralı zaten şunu söylüyor: *"Bu bölümdeki sayılar ÖLÇÜM ANINA
+aittir; güncel değeri betikten al, belgeden değil."* Toplu düzeltmek geçmişi
+tahrif etmek olurdu — DOKUNULMADI.
+
+**Olası çare (uygulanmadı, karar ürün sahibinin):** dosyayı ikiye ayırmak —
+işletim kuralları ve güncel durum otomatik yüklenen `CLAUDE.md`de kalır,
+kapanmış sınıfların ölçüm kayıtları ayrı bir arşiv dosyasına taşınır ve
+gerektiğinde okunur. Kazanç bağlamda yer; risk, kazara bir dersin otomatik
+erişimden çıkması. Bu oturumun kanıtı ikinci riskin ciddi olduğunu gösteriyor,
+o yüzden tek başıma yapmadım.
+
+### Kayıt formu düzeltmesi CANLIDA doğrulandı
+
+Önceki turda yerelde ölçülen üç durum canlıda tekrarlandı (koşum yalnızca
+`/api/auth/register` ucunu yakalıyor, **veritabanına gidilmedi**):
+
+| senaryo | düğme | mesaj |
+|---|---|---|
+| HTML 500 (JSON değil) | açık | "Sunucudan beklenen yanıt gelmedi…" |
+| **negatif** — JSON 400 | açık | "Bu e-posta adresi zaten kayıtlı." |
+| **negatif** — ağ hatası | açık | "Bağlantı kurulamadı; hesabın oluşturulmadı." |
+
+Önceki hâlinde bu senaryoda düğme `disabled` kalıyor ve hiçbir mesaj
+çıkmıyordu.
+
+### Kayıt ucunun sunucu doğrulaması — kaynaktan görülen boşluk, SINANAMADI
+
+`/api/auth/register` yalnızca üç şeyi denetliyor: alanların boş olmaması,
+parolanın ≥6 karakter olması, e-postanın kayıtlı olmaması. **E-posta biçimi
+denetlenmiyor ve `trim` uygulanmıyor**; `name` için `!name` kontrolü boşluktan
+ibaret bir adı geçiriyor.
+
+İstemci tarafı `type="email"` + `required` taşıdığı için tarayıcı biçimi
+zaten eliyor — boşluk yalnızca uca DOĞRUDAN yapılan çağrılarda açık.
+
+**Sınanmadı ve düzeltilmedi:** boşluğu göstermek bir hesap OLUŞTURMAYI
+gerektirir, bu da üretim veritabanına yazmak demektir. Ayrıca bir biçim
+denetimi eklemek, bugün başarılı olan kayıtları reddedebilir — dönüşüm
+yüzeyinde ölçülmemiş bir davranış değişikliği. Ölçüm kaynaktan, karar ürün
+sahibinin.
+
+### Hareket azaltma desteği ölçüldü — kapsamlı
+
+`prefers-reduced-motion: reduce` bloğu `globals.css`te var ve evrensel
+seçiciyle bütün `animation`/`transition` sürelerini 0.01 ms'e çekiyor
+(sıfıra DEĞİL — `transitionend` olayları tetiklensin diye). Kapsam gerçekten
+geniş: depoda `transition-*` 719, `animate-*` 40, `duration-*` 64 kullanım
+var ve hiçbiri `motion-reduce:` varyantına ihtiyaç duymuyor. Sınıf kapalı.
