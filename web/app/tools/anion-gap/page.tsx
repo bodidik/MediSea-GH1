@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { anionGap, correctedAnionGap, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { anionGap, correctedAnionGap, parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /** * Anyon Açığı (Anion Gap) Gündüz Modu (Sakin Deniz)
  * Formül: AG = Na - (Cl + HCO3); Albumin düzeltmesi: AG + 2.5 * (4.0 - Albumin)
@@ -23,10 +23,6 @@ export default function AnionGapPage() {
   const albuminNum = parseLocaleNumber(albumin);
 
   const ag = useMemo(() => anionGap(naNum, clNum, hco3Num), [naNum, clNum, hco3Num]);
-  const agCorrected = useMemo(
-    () => (albuminNum > 0 ? correctedAnionGap(ag, albuminNum) : null),
-    [ag, albuminNum]
-  );
 
   /**
    * MAKULLÜK KAPISI — çöp girdiden klinik sınıflama üretilmemeli.
@@ -36,14 +32,43 @@ export default function AnionGapPage() {
    * altına **"Düşük Anyon Açığı"** yazıyordu — paraproteinemi ya da
    * laboratuvar hatası düşündüren bir sınıflama, hiçbir veri yokken.
    *
-   * Albümin İSTEĞE BAĞLI: girilmemişse düzeltme yapılmıyor, o yüzden
-   * boş olması makullüğü bozmuyor; ama girilmişse makul olmalı.
+   * ─────────────────────────────────────────────────────────────────
+   * OPSİYONEL ALANDAKİ YAZIM HATASI BİRİNCİL SONUCU SİLİYORDU.
+   *
+   * Albümin bu araçta İSTEĞE BAĞLI ve etiketi bunu açıkça söylüyor
+   * ("Albumin (g/dL) — opsiyonel"). Boş bırakılması makullüğü bozmuyordu,
+   * ama BOZUK bırakılması bozuyordu ve tek `makul` bayrağı bütün paneli
+   * kapatıyordu. Ölçüldü (Na 140 · Cl 100 · HCO₃⁻ 24, yani AG = 16):
+   *
+   *   albümin boş    ->  AG 16 · "Yüksek Anyon Açıklı"
+   *   albümin "abc"  ->  AG  – · "Değerleri girin"     ← DEĞERLER GİRİLİYDİ
+   *
+   * Düz anyon açığı yalnızca Na⁺, Cl⁻ ve HCO₃⁻ ister; üçü de geçerliyken
+   * sonucu saklamanın hiçbir gerekçesi yok. Üstelik "Değerleri girin"
+   * cümlesi yanlış: kullanıcı değerleri girmiş, araç onları okumamış.
+   *
+   * `abg` turunda ölçülen sınıfın aynısı ve çare de aynı: geçerlilik
+   * ÇEKİRDEK ve YARDIMCI diye ayrılıyor. Bozuk yardımcı alan girilmemiş
+   * sayılıyor, düzeltme düşüyor, düz AG duruyor ve alan ADIYLA söyleniyor.
    */
-  const makul =
+  const cekirdekMakul =
     naNum >= 90 && naNum <= 190 &&
     clNum >= 50 && clNum <= 150 &&
-    hco3Num >= 2 && hco3Num <= 60 &&
-    (albumin.trim() === "" || (albuminNum >= 0.5 && albuminNum <= 8));
+    hco3Num >= 2 && hco3Num <= 60;
+
+  /** boş · bozuk · geçerli — "boş"u "bozuk"tan ayırmak şart, yoksa
+   *  yazım hatası sessizce yutulur ve kullanıcı düzeltmenin uygulandığını sanır. */
+  const albDurum: "bos" | "bozuk" | "gecerli" =
+    albumin.trim() === ""
+      ? "bos"
+      : sayiGirildiMi(albumin) && albuminNum >= 0.5 && albuminNum <= 8
+        ? "gecerli"
+        : "bozuk";
+
+  const agCorrected = useMemo(
+    () => (cekirdekMakul && albDurum === "gecerli" ? correctedAnionGap(ag, albuminNum) : null),
+    [cekirdekMakul, albDurum, ag, albuminNum]
+  );
 
   const displayValue = agCorrected ?? ag;
   const interpretation =
@@ -113,6 +138,16 @@ export default function AnionGapPage() {
           <p className="text-[9px] text-slate-400 font-bold italic uppercase leading-relaxed mt-2">
             * Hipoalbüminemi anyon açığını gizleyebilir; her 1 g/dL albumin düşüşü için AG'ye +2.5 eklenir.
           </p>
+
+          {/* Bozuk albümin düz AG'yi DURDURMAZ; yalnızca düzeltme düşer ve söylenir. */}
+          {albDurum === "bozuk" && (
+            <div className="mt-3 bg-amber-50 border-2 border-amber-300 rounded-2xl p-3" role="alert">
+              <p className="text-[11px] leading-relaxed text-amber-900">
+                <strong>Albümin hesaba KATILMADI</strong> — beklenen aralık 0,5–8 g/dL.
+                Düzeltilmiş AG gösterilmiyor; aşağıdaki değer düzeltmesiz anyon açığıdır.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* SONUÇ PANELİ */}
@@ -121,7 +156,7 @@ export default function AnionGapPage() {
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">
              {agCorrected !== null ? "DÜZELTİLMİŞ ANYON AÇIĞI" : "ANYON AÇIĞI"}
            </span>
-           <div className="text-7xl font-black text-white">{makul ? displayValue : "–"}</div>
+           <div className="text-7xl font-black text-white">{cekirdekMakul ? displayValue : "–"}</div>
            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">mEq / L</span>
            {agCorrected !== null && (
              <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3">Düzeltmesiz AG: {ag} mEq/L</span>
@@ -131,7 +166,9 @@ export default function AnionGapPage() {
         {/* YORUMLAMA PANELİ */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {makul ? interpretation.label : "Değerleri girin"}
+             {cekirdekMakul
+               ? interpretation.label
+               : "Sodyum, klorür ve bikarbonat makul bir değer bekliyor"}
            </div>
         </div>
 

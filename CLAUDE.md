@@ -7063,3 +7063,66 @@ görülmeli, yoksa kapıyı kaldırmış olursun:
 
 Son satır elle doğrulandı: A-a = 0.21×713 − 60/0.8 − 70 = **4.73**, beklenen
 70/4+4 = **21.5**, P/F = 70/0.21 = **333**.
+
+### SINIF SÜPÜRÜLDÜ — "opsiyonel alandaki hata birincil sonucu siliyor", ikinci ve son örnek
+
+`abg`de bulunan sınıf (yardımcı alanın birincil yorumu susturması) 131 araçta
+tarandı. Ölçüt İKİ biçimi birden aradı ve ikisi de kaynaktan görülebiliyor:
+
+```
+A) alan adlarını bir diziye push edip  dizi.length === 0  ile her şeyi kapılamak
+B) 3+ konjonktörlü tek bir geçerlilik değişkenini 2+ ayrı JSX bloğuna kapı yapmak
+```
+
+**Ölçüt KÖR DEĞİL — pozitif kontrol yapıldı.** (A) güncel depoda 0 aday
+veriyor; düzeltme öncesi `abg` (`bc7e869`) tohumlanınca **YAKALANIYOR**
+(9 push + `.length === 0`). "0 aday" ile "0 ölçüm" ayrımı böyle kapandı.
+
+(B) sekiz aday üretti ve yedisi elle karara bağlandı — **hepsi meşru**:
+
+| araç | neden kusur değil |
+|---|---|
+| `news2` · `khorana` · `glasgow-blatchford` | TOPLAM skor: beş/dört/üç alanın hepsi TEK çıktıyı besliyor, kısmi skor üretilemez |
+| `meld-na` | tek sayı; `onDialysis ||` dalı zaten doğru |
+| `das28` | ESR/CRP bir KİP, iki çıktı değil — sınırlar kipe göre değişiyor |
+| `hba1c-eag` | tek girdi, üç blok aynı dönüşümün görünümü |
+| `fibromiyalji` · `perc` | `diagnosed`/`allNegative` geçerlilik kapısı değil, TANI sonucu |
+
+**Ayırt edici soru: bu alanlar AYRI çıktıları mı besliyor?** Toplam skorda
+cevap hayır ve tek kapı doğrudur; `abg`de (asit-baz · anyon açığı ·
+oksijenasyon) ve `anion-gap`te (düz AG · albümin düzeltmesi) cevap evet.
+
+Aynı turda ölçülüp temiz çıkanlar: `spot-urine` (FENa · FEÜre · TTKG · idrar
+anyon açığı · osmolal açık — her biri KENDİ kapısını taşıyor) ve `asdas`
+(`crpScore`/`esrScore` ayrı kapılı, bozuk CRP ESR varyantını öldürmüyor).
+
+#### Tek gerçek kusur: `anion-gap` — alanın etiketinde "opsiyonel" yazıyordu
+
+Albümin alanının kendi etiketi **"Albumin (g/dL) — opsiyonel"**. Boş
+bırakılması makullüğü bozmuyordu; BOZUK bırakılması bozuyordu ve tek `makul`
+bayrağı bütün paneli kapatıyordu. Ölçüldü (Na 140 · Cl 100 · HCO₃⁻ 24):
+
+| albümin alanı | ekranda (önce) |
+|---|---|
+| boş | AG **16** · "Yüksek Anyon Açıklı" |
+| `abc` ya da `99` | AG **–** · **"Değerleri girin"** |
+
+Düz anyon açığı yalnızca Na⁺, Cl⁻ ve HCO₃⁻ ister; üçü de geçerliyken sonucu
+saklamanın gerekçesi yok. Üstelik "Değerleri girin" cümlesi YANLIŞ: kullanıcı
+değerleri girmiş, araç onları okumamış. Çekirdek bozukken basılan metin de
+artık hangi alanların beklendiğini söylüyor.
+
+**Doğrulama 6 vaka, üç negatif kontrol dahil:**
+
+| ölçüt | sonuç |
+|---|---|
+| alb `abc` → düz AG | **16 duruyor** + amber "Albümin hesaba KATILMADI (0,5–8 g/dL)" |
+| alb `99` (sayı ama aralık dışı) | aynı — "bozuk" ikisini de kapsıyor |
+| **negatif 1** — alb 2.0 geçerli | Düzeltilmiş **21** · "Düzeltmesiz AG: 16" (elle 16 + 2,5×2 = 21) |
+| **negatif 2** — Na `abc` (çekirdek) | `–` · "Sodyum, klorür ve bikarbonat makul bir değer bekliyor" |
+| **negatif 3** — varsayılan form | AG **12** · "Normal Aralık" (140 − 104 − 24) |
+| alb boş | AG 16, uyarı YOK — yeni dal yersiz ateşlemiyor |
+
+İkinci satır ayırt edici olan: düzeltme hâlâ çalışıyor. Bir alanı "hesaba
+katma" dalına alırken, o alanın MEŞRU hâlinin işini yapmaya devam ettiğini
+ayrıca ölç — yoksa kapı, özelliği öldürmüş olur.
