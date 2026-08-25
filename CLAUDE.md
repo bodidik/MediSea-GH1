@@ -10800,3 +10800,85 @@ Son satır ayrı bir bulgu: kırmızı bir kapının arkasındaki adımlar hiç
 sınanmıyor. `ilgili-index` düştüğü sürece `arayuz`, `ic-bilesen`,
 `saydamlik`, `renk-cifti` ve `build` adımlarının CI'da geçtiği hiç
 görülmemişti — yerelde geçiyor olmaları bir varsayımdı, artık ölçüm.
+
+### Aynı sınıf UYGULAMADA da aranmalı — `readdirSync` sırası kullanıcıya ulaşıyor mu?
+
+Üretecin platform bağımlılığı bulunduktan sonra doğal soru: aynı körlük
+uygulamanın kendisinde de var mı? Sıralamasız `readdirSync` kullanan
+**15 dosya** sayıldı ve kullanıcıya LİSTE üretenler ayrıldı.
+
+| yüzey | sıra nereden geliyor | verdikt |
+|---|---|---|
+| `/topics` branş kartları | **`SPECIALTIES` dizisi** (küratörlü) | temiz — `readdirSync` yalnızca "içeriği var mı" süzgeci |
+| branş sayfası konu listesi | `order` (içerikten) → `localeCompare(…, "tr")` | temiz — yerel AÇIKÇA verilmiş, çalışma zamanına bırakılmamış |
+| sayaçlar (`icerik-sayaci`, `topic-counts`) | — | sıra önemsiz, toplama giriyor |
+
+Ayırt edici nokta ikinci satırda: `localeCompare` bu depoda iki kez kusur
+üretti (indeks üreteçlerinde), ama orada **yerel verilmiyordu**. Burada
+`"tr"` açıkça yazılı, yani sonuç çalışma zamanının varsayılan yereline
+bağlı değil. **`localeCompare` tek başına kusur değil — yerelsiz kullanımı
+kusur.**
+
+### Ana sayfa bağlantıları ölçüldü — çapa ve kategori sapması yok
+
+Ana sayfa hiç bu gözle taranmamıştı. Sunucu HTML'inden:
+
+| ölçüt | sonuç |
+|---|---|
+| `<h1>` · `<h2>` · `<h3>` | 1 · 3 · 15 |
+| iç bağlantı | 31 (varlıklar hariç) |
+| sayfa içi çapa (`#icerik`, `#branslar`) | **ikisinin de hedefi VAR** |
+| `?kategori=` değerleri | 6 tanesi de `/tools`taki 18 gerçek kategoriden biri — **sapma 0** |
+
+Kategori sapması olsaydı bedeli belgede kayıtlı sınıf olurdu: bağlantı
+çalışır ama liste BOŞ gelir.
+
+**Marka adına DOKUNULMADI:** ana sayfanın `<h1>`i "MediSea **Akademi**" ve
+"Akademi" uygulama kaynağında yalnızca o tek satırda geçiyor (`SITE_ADI`
+"MediSea"). İlk bakışta tutarsızlık gibi duruyor; kaynağa bakınca bilinçli
+bir tipografik kurgu (italik/düz kırılma + sarı ikinci satır). Ad kararı
+ürün tarafına ait — ölçüldü, not edildi, değiştirilmedi.
+
+### Rapor denetimleri taban değerinde — ve iki verdikt ÖLÇÜMLE yeniden sınandı
+
+CI'daki 13 denetimin yanında CI kapısı OLMAYAN 15 rapor denetimi de sürüldü.
+Hepsi belgedeki tabanda:
+
+| denetim | değer |
+|---|---|
+| `konu` | 456 dosya (410 görünür) · 17 kayıt insan kararı · 7 kısa hub |
+| `yetim` | 17 (3 ad sapması · 2 konusu yok · 12 okunmayan dizin) |
+| `asili` | 46 (%11.2) |
+| `bolme` · `bant` · `karar` · `esik-etiket` | 0 |
+| `eksik-alan` | 2 · `cop-kapi` 1 · `kapi-kapsam` 2 |
+| `olu` | 5 (4'ü belgede kayıtlı + `nutrition-needs` karara bağlandı) |
+| `payda` | 130 araç, 34 payda ilanı, 1 sapan (`findrisc`, verdikti yazılı) |
+
+**Bu oturumda dört araçta yuvarlama değiştirilmişti** (`pni` · `gnri` ·
+`asdas` · `ktv`); `yuvarlama-denetim` **dördünü de aday göstermiyor**, yani
+"bir kez yuvarla" düzeltmesi yeni bir taşma sınıfı açmamış.
+
+**`kapi-kapsam`ın iki adayı yeniden karara bağlandı** — çünkü belgedeki
+verdiktler ESKİ satır numarasına bağlıydı (`sodium:442` → bugün `488`) ve
+rapor kapı dışı değişken yerine İFADE adını yazıyor (`naN` → `adrogueHyper`).
+Aynı çift olduğu doğrulandı ve verdikt ölçümle sınandı:
+
+| girdi (45 y · 170 cm · 70 kg, hipernatremi kipi) | ekranda |
+|---|---|
+| Na **160** | Adrogué **−3.91** mEq/L · açık **5.7 L** · **119 mL/saat** |
+| Na **9999** | panel YOK · "serum Na⁺ (90–200 mEq/L)" |
+| Na **abc** | panel YOK · aynı sebep |
+
+Üç sayı da elde yeniden hesaplandı ve birebir tuttu — Watson TBW
+(erkek) = 2.447 − 0.09516×45 + 0.1074×170 + 0.3362×70 = **39.96 L**:
+
+```
+açık    = 39.96 × (160/140 − 1) = 5.71   ->  ekran 5.7
+Adrogué = (0 − 160) / (39.96 + 1) = −3.91 ->  ekran −3.91   (D5W, Na 0)
+hız     = 5710 mL / 48 saat = 119         ->  ekran 119
+```
+
+**Ders: bir verdikti satır numarasına bağlama.** Dosya değişince numara
+kayıyor ve "aynı aday mı, yeni aday mı" sorusu cevapsız kalıyor. Verdikt
+DEĞİŞKEN ve İFADE adıyla yazılmalı; bu turda ikisi de değişmiş görünüyordu
+ve yalnızca ölçüm ayırt etti.
