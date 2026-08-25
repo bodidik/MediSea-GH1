@@ -12308,3 +12308,84 @@ YOK — ölçüldü, sonraki turun işi olarak duruyor.
 Dördüncü satır bu değişikliğin en önemli ölçümü: vurgular karakter ofsetiyle
 saklandığı için okuma alanının metni değişseydi kayıtlı vurgular silinirdi.
 Sayı canlıda da birebir aynı.
+
+### PREMIUM KONU SAYFASI 320px'te 593px YATAY KAYIYORDU — kapı arkasında olduğu için hiç ölçülmemiş
+
+Premium tarafa içindekiler eklenirken çıktı ve **benim değişikliğim değildi.**
+
+Belgede "320px sınıfı ölçümle kapatıldı, bütün düzen ailelerinde kayma 0"
+yazıyor ve listede `(ydus)` premium düzeni de var. Ama o ölçüm **branş ve
+pano** sayfalarına aitti; konu sayfası `AccessGate` arkasında ve kapı
+açılmadan iframe'e alınamıyor. **Kapı arkasındaki bir yüzey, kapı açılmadan
+ölçülmüş sayılmaz** — belgede zaten kayıtlı olan kuralın düzen tarafındaki
+hâli.
+
+Ölçüldü (kapı geçici açılarak, 320px):
+
+| ölçüt | değer |
+|---|---|
+| yatay kayma | **593 px** |
+| belge genişliği | 898 px (görünüm 320) |
+| hesaplanan ızgara | **`652.406px 210px`** |
+
+İki kusur üst üsteydi:
+
+1. **Kırılma noktası yok** — `gridTemplateColumns: '1fr 210px'` satır içi
+   yazılmış ve satır içi stil medya sorgusu taşıyamıyor, yani 210px'lik
+   kenar çubuğu 320px'lik ekranda da yan yana duruyordu.
+2. **`1fr` min-content'in altına inemiyor** — ana kolon 652px'e şişiyordu.
+   Çare `minmax(0, 1fr)`.
+
+Kural `globals.css` sonuna alındı (`.premium-konu-izgara`), 900px altında
+tek kolon. Premium tarafın geri kalanı satır içi stil kullanmaya devam
+ediyor; taşınan tek şey medya sorgusu gerektiren bu kural.
+
+**Dört genişlikte ölçüldü — masaüstü düzeni korunuyor:**
+
+| genişlik | kayma | ızgara |
+|---|---|---|
+| 320 | **0** (önce 593) | tek kolon 273px |
+| 375 | 0 | tek kolon 328px |
+| 768 | 0 | tek kolon 721px |
+| 1280 | 0 | **738px + 210px** — iki kolon, değişmedi |
+
+**Kapsam ölçüldü:** `px` taşıyan sert ızgara premium ağacında yalnızca bu
+sayfadaydı (grep, `(ydus)` altı) — yani sınıf tek örnekli.
+
+#### A/B OLMASA KUSUR BANA YAZILIRDI
+
+Kayma ilk kez içindekiler eklendikten sonra ölçüldü ve taşan öge listesinin
+başında benim `<nav>`ım duruyordu (652px genişlik). Doğal okuma "TOC taşırdı"
+olurdu.
+
+Ayırt eden ölçüm A/B oldu: içindekiler koşulu geçici olarak `false &&` ile
+kapatılıp aynı sayfa yeniden ölçüldü — **kayma yine 593.** Yani `<nav>` 652px
+DEĞİLDİ, kapsayıcısı 652px'ti ve nav onu dolduruyordu.
+
+**Bir öge "taşıyor" görünüyorsa, önce KAPSAYICISININ genişliğini oku.**
+Taşan öge listesi sebebi değil sonucu gösterir.
+
+#### İçindekiler — premium tarafta da eklendi
+
+Aynı eşik (≥4 başlık **ve** ≥6000 karakter) ama premium tarafta beş kat sık:
+41 konunun **25'i (%61)**, açık tarafta 410'un 50'si (%12).
+
+| ölçüt | sonuç |
+|---|---|
+| çapa · bölüm kimliği | 23 · 23 · **benzersiz 23** · kırık **0** |
+| TOC `[data-readable]` dışında | evet |
+| **okuma alanı karakter sayısı** | **4 922 — TOC'lu ve TOC'suz ölçümde birebir aynı** |
+| dört genişlikte kırık çapa | 0 |
+
+Üçüncü satır kritik: vurgular karakter ofsetiyle saklandığı için okuma
+alanının metni değişseydi kayıtlı vurgular silinirdi. A/B ölçümü bunu da
+kanıtladı.
+
+Kimlik üreteci açık taraftaki konu sayfasıyla ORTAK (`app/lib/baslik.ts`),
+ve içindekiler ile gövde AYNI blok dizisinden besleniyor: iki yerde ayrı
+dizi kullanılsaydı (biri ham, öteki kısaltması açılmış) kimlikler ayrışabilir
+ve bağlantılar hiçbir yere gitmezdi. `kisaltmaAcBloklar` bugün `baslik`
+alanına dokunmuyor — ama kurgu buna güvenmiyor.
+
+**Kapı geri kondu ve doğrulandı:** sayfa yeniden "Erişim Kısıtlı" basıyor,
+kaynakta geçici ölçüm izi 0.

@@ -499,3 +499,36 @@ label:has(input.sr-only:focus-visible) {
 [data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-green-600   { color: rgb(22 163 74); }
 [data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-amber-600   { color: rgb(217 119 6); }
 [data-readable] :is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900) .text-rose-600    { color: rgb(225 29 72); }
+
+/* ------------------------------------------------------------------
+   PREMIUM KONU SAYFASI — İKİ KOLON DÜZEN
+
+   Düzen satır içi `gridTemplateColumns: '1fr 210px'` idi ve DAR EKRANDA
+   HİÇ ÇÖKMÜYORDU. Ölçüldü (320px, kapı geçici açılarak): hesaplanan ızgara
+   `652.406px 210px`, belge genişliği 898px ve sayfa **593px yatay
+   kayıyordu**.
+
+   İki ayrı kusur üst üsteydi:
+     1. Kırılma noktası yok — 210px'lik kenar çubuğu 320px'lik ekranda da
+        yan yana duruyordu.
+     2. `1fr` içeriğin MIN-CONTENT genişliğinin altına inemiyor; ana kolon
+        652px'e şişiyordu. Çare `minmax(0, 1fr)`.
+
+   Satır içi stil medya sorgusu taşıyamadığı için kural buraya alındı.
+   Premium tarafın geri kalanı satır içi stil kullanmaya devam ediyor.
+
+   Kayma bu sayfada hiç ölçülmemişti çünkü sayfa AccessGate arkasında:
+   belgede "premium düzeni 320px'te temiz" diye kayıtlı ölçüm branş ve pano
+   sayfalarına aitti, konu sayfasına değil. Kapı arkasındaki bir yüzey,
+   kapı açılmadan ölçülmüş sayılmaz.
+   ------------------------------------------------------------------ */
+.premium-konu-izgara {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 900px) {
+  .premium-konu-izgara { grid-template-columns: minmax(0, 1fr) 210px; }
+}

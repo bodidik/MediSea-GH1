@@ -6,7 +6,7 @@ import Link from 'next/link';
 import SoruSor from './SoruSor';
 import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
-import IcerikRenderer, { type IcerikBlok } from './IcerikBloklari';
+import IcerikRenderer, { bolumBasliklari, type IcerikBlok } from './IcerikBloklari';
 import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
 import { rotaMeta } from "@/lib/site";
 
@@ -130,6 +130,26 @@ export default async function KonuSayfasi({
   const moduller = veri.moduller ?? {};
 
   /**
+   * Bloklar BİR KEZ hazırlanıyor; hem içindekiler hem gövde AYNI diziden
+   * besleniyor.
+   *
+   * Neden önemli: bölüm kimlikleri başlık metninden türüyor. İki yerde ayrı
+   * diziden üretilseydi (biri ham, öteki kısaltması açılmış) kimlikler
+   * ayrışabilir ve içindekilerdeki bağlantılar hiçbir yere gitmezdi.
+   * `kisaltmaAcBloklar` bugün `baslik` alanına DOKUNMUYOR (yalnızca
+   * `satirlar[].metin` ve `bilgi_kutusu.metin`), yani bugün ayrışma yok —
+   * ama buna güvenmek kırılgan olurdu: kısaltma açılımı bir gün başlıkları
+   * da kapsarsa bu kurgu kendiliğinden doğru kalır.
+   */
+  const bloklar = kisaltmaAcBloklar(veri.icerik, new Set<string>());
+  const icindekiler = bolumBasliklari(bloklar);
+  const govdeUzunlugu = JSON.stringify(bloklar)
+    .replace(/<[^>]*>/g, " ")
+    .replace(/[^\p{L}\p{N} .,;:()/-]+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim().length;
+
+  /**
    * Sayılar konu dosyasının ilanından DEĞİL, gerçek içerik dosyalarından.
    *
    * İlana güvenildiğinde 38 hazır konunun 5'i yanlış sayı gösteriyordu ve
@@ -237,15 +257,67 @@ export default async function KonuSayfasi({
         </div>
 
         {/* İKİ KOLON DÜZEN */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 210px',
-          gap: '1.25rem',
-          alignItems: 'start',
-        }}>
+        {/* Düzen satır içi stildeydi ve DAR EKRANDA HİÇ ÇÖKMÜYORDU: ölçüldü,
+            320px'te sayfa 593px yatay kayıyordu (ızgara `652.406px 210px`).
+            Medya sorgusu satır içi yazılamadığı için kural `globals.css`
+            sonuna alındı; gerekçesi orada. */}
+        <div className="premium-konu-izgara">
 
           {/* ANA İÇERİK */}
           <div>
+            {/* İÇİNDEKİLER — `[data-readable]` KONTEYNERİNİN DIŞINDA.
+                Vurgular konteyner metnindeki KARAKTER OFSETİYLE saklanıyor;
+                içeri konsaydı ondan sonraki bütün ofsetler kayar ve deponun
+                kuralı gereği ("ofset çözülüyor ama metin tutmuyor" -> SİLİNİR)
+                kullanıcıların kayıtlı vurguları yok olurdu.
+
+                Eşik açık taraftaki konu sayfasıyla AYNI (>=4 başlık ve
+                >=6000 karakter) ama premium tarafta çok daha sık karşılanıyor:
+                ölçüldü, 41 konunun 25'i (%61) — açık tarafta 410'un 50'si
+                (%12). Premium gövdelerin ortancası 6 676 krk, açık tarafta
+                3 002. */}
+            {icindekiler.length >= 4 && govdeUzunlugu >= 6000 && (
+              <nav
+                aria-labelledby="premium-icindekiler"
+                style={{
+                  background: '#fff',
+                  border: '0.5px solid #b8cfe8',
+                  borderRadius: '12px',
+                  padding: '1rem 1.25rem',
+                  marginBottom: '1rem',
+                }}
+              >
+                <h2 id="premium-icindekiler" style={{
+                  fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em',
+                  textTransform: 'uppercase', color: '#1a3a6b', margin: '0 0 0.6rem',
+                }}>
+                  Bu sayfada
+                </h2>
+                <ol style={{
+                  listStyle: 'none', margin: 0, padding: 0,
+                  display: 'grid', gap: '0.35rem 1.25rem',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+                }}>
+                  {icindekiler.map((b, i) => (
+                    <li key={b.id} style={{ display: 'flex', gap: '7px', alignItems: 'baseline' }}>
+                      <span aria-hidden="true" style={{
+                        fontSize: '11px', fontWeight: 700, color: '#90b8e0',
+                        fontVariantNumeric: 'tabular-nums', flexShrink: 0,
+                      }}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <a href={`#${b.id}`} style={{
+                        fontSize: '14px', lineHeight: 1.4, color: '#1a4a8b',
+                        textDecoration: 'none', padding: '2px 0',
+                      }}>
+                        {b.baslik}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
+
             {/* data-readable: ReadingTools vurgulamayı bu blokla sınırlar */}
             <div data-readable>
               {/*
@@ -254,7 +326,7 @@ export default async function KonuSayfasi({
                 Küme burada kuruluyor, yani "ilk kullanım" bu konu sayfasının
                 tamamı için geçerli.
               */}
-              <IcerikRenderer bloklar={kisaltmaAcBloklar(veri.icerik, new Set<string>())} />
+              <IcerikRenderer bloklar={bloklar} />
             </div>
 
             {/* AI ASİSTAN — konuya soru sor */}

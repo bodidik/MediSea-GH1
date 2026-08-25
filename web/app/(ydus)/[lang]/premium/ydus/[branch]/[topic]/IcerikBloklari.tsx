@@ -12,6 +12,7 @@
  */
 
 import { kalinIsle } from '@/app/lib/metin';
+import { bolumKimlikleri } from '@/app/lib/baslik';
 
 export type MetinSatir = { yil?: string; metin: string };
 export type TabloSatir = { renk?: 'kirmizi' | 'yesil' | 'sari' | 'mavi'; hucreler: string[] };
@@ -78,10 +79,10 @@ const BLOK_BASLIK: React.CSSProperties = {
   borderBottom: '0.5px solid #d0e4f5',
 };
 
-function MetinBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'metin' }> }) {
+function MetinBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'metin' }>; id?: string }) {
   return (
     <div style={{ marginBottom: '1.25rem' }}>
-      {blok.baslik && <h3 style={BLOK_BASLIK}>{blok.baslik}</h3>}
+      {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
         {blok.satirlar.map((satir, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
@@ -111,7 +112,7 @@ function MetinBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'metin' }> }) {
   );
 }
 
-function TabloBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'tablo' }> }) {
+function TabloBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'tablo' }>; id?: string }) {
   /**
    * Sarmalayıcı `overflow: hidden` idi ve tablo `width: 100%` taşıyordu:
    * telefonda kolonlar okunmaz genişliğe sıkışıyordu (4 kolonlu bir tabloda
@@ -121,7 +122,7 @@ function TabloBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'tablo' }> }) {
   const enAzKolonGenisligi = 110;
   return (
     <div style={{ marginBottom: '1.25rem' }}>
-      {blok.baslik && <h3 style={BLOK_BASLIK}>{blok.baslik}</h3>}
+      {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
       <div style={{
         border: '0.5px solid #b8cfe8',
         borderRadius: '8px',
@@ -182,7 +183,7 @@ function TabloBlok({ blok }: { blok: Extract<IcerikBlok, { tip: 'tablo' }> }) {
   );
 }
 
-function BilgiKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu' }> }) {
+function BilgiKutusu({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu' }>; id?: string }) {
   const stil = KUTU_STILLLERI[blok.tur];
   return (
     <div style={{
@@ -211,12 +212,13 @@ function BilgiKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu'
           ÇİZGİ rengi, `etiketRenk` ise metin için seçilmiş.
           Ölçüldü: ek bilgi 10.45 · uyarı 6.38 · pratik 6.57. */}
       {blok.baslik && (
-        <h3 style={{
+        <h3 id={id} style={{
           fontSize: '15px',
           fontWeight: 700,
           lineHeight: 1.35,
           color: stil.etiketRenk,
           margin: '0 0 5px',
+          scrollMarginTop: '96px',
         }}>
           {blok.baslik}
         </h3>
@@ -228,13 +230,39 @@ function BilgiKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kutusu'
   );
 }
 
+/**
+ * Bölüm başlıkları ve KARARLI kimlikleri — içindekiler ile render AYNI
+ * kaynaktan besleniyor.
+ *
+ * İçindekiler `[data-readable]` konteynerinin DIŞINDA (sayfa dosyasında),
+ * başlıklar İÇİNDE render ediliyor. İki yerde ayrı ayrı id üretilseydi
+ * kaçınılmaz olarak ayrışırlardı — bu depoda tur tur avlanan sınıf.
+ * Bu yüzden ikisi de bu tek fonksiyonu çağırıyor.
+ *
+ * Kimlik üreteci açık taraftaki konu sayfasıyla ORTAK (`app/lib/baslik.ts`),
+ * yani Türkçe katlaması ve çakışma ekleri tek yerde.
+ */
+export function bolumBasliklari(bloklar: IcerikBlok[]): { id: string; baslik: string }[] {
+  const basliklar = bloklar.map((b) => ('baslik' in b && b.baslik ? b.baslik : ''));
+  const kimlikler = bolumKimlikleri(basliklar);
+  return bloklar
+    .map((b, i) => ({ id: kimlikler[i], baslik: basliklar[i] }))
+    .filter((x) => x.baslik);
+}
+
 export default function IcerikRenderer({ bloklar }: { bloklar: IcerikBlok[] }) {
+  /* Kimlikler BÜTÜN blok listesinden üretiliyor (başlıksızlar dahil), yani
+     indeksler `bolumBasliklari` ile birebir aynı sırayı taşıyor. */
+  const kimlikler = bolumKimlikleri(
+    bloklar.map((b) => ('baslik' in b && b.baslik ? b.baslik : ''))
+  );
   return (
     <>
       {bloklar.map((blok, i) => {
-        if (blok.tip === 'metin')        return <MetinBlok key={i} blok={blok} />;
-        if (blok.tip === 'tablo')        return <TabloBlok key={i} blok={blok} />;
-        if (blok.tip === 'bilgi_kutusu') return <BilgiKutusu key={i} blok={blok} />;
+        const id = 'baslik' in blok && blok.baslik ? kimlikler[i] : undefined;
+        if (blok.tip === 'metin')        return <MetinBlok key={i} blok={blok} id={id} />;
+        if (blok.tip === 'tablo')        return <TabloBlok key={i} blok={blok} id={id} />;
+        if (blok.tip === 'bilgi_kutusu') return <BilgiKutusu key={i} blok={blok} id={id} />;
         return null;
       })}
     </>
