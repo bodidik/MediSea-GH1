@@ -9626,3 +9626,54 @@ ayrıca ÖLÇÜLMÜŞTÜ (70 kg · Ağır Sepsis → 2450 kcal · 105,0 g; Obezi
 **Not edilmesinin sebebi: aday listesi büyüdüğünde sonraki tur bunu kovalar.**
 Bir denetimin aday sayısı artınca ilk soru "yeni kusur mu" değil, **"bu turda
 o dosyaya ben mi dokundum"** olmalı.
+
+### DÜZELTME — "`/tools` 133 bağlantı = 130 araç + 3 gezinme" YANLIŞTI
+
+Belgede iki ayrı turda `/tools` için "133 araç bağlantısı (130 + 3 gezinme)"
+yazılmıştı. O parantez bir ÖLÇÜM değil, benim varsayımımdı — ve yanlıştı.
+
+Ölçüldü: fazladan üç bağlantı gezinme değil, **çapraz listelenen üç araç**:
+
+| araç | birinci branş | ikinci branş |
+|---|---|---|
+| `corrected-calcium` | Nefroloji | Endokrinoloji & Metabolizma |
+| `ipi` | Onkoloji | Hematoloji |
+| `timi-ua` | Kardiyoloji | Acil & Kritik Bakım |
+
+**Kusur DEĞİL — çapraz listeleme bilinçli ve kaynakta belgeli.** `ToolsIcerik`
+içindeki yorum bunu birebir yazıyor:
+
+> *"Benzersiz araç sayılır, listeleme değil: bazı araçlar birden fazla branşta
+> görünüyor (ör. düzeltilmiş kalsiyum hem nefroloji hem endokrinde). Kayıtları
+> toplamak '117 araç' gibi gerçekte olmayan bir sayı üretiyordu."*
+
+Hem `toplamArac` hem canlı bölge sayacı `new Set(...)` ile benzersiz slug
+sayıyor, yani sayı ile liste ayrışmıyor.
+
+**Tasarım canlıda uçtan uca doğrulandı:**
+
+| görünüm | kart | benzersiz | sayaç | `h2` bölüm |
+|---|---|---|---|---|
+| Nefroloji süzgeci | 9 | 9 | 9 | 1 |
+| Endokrinoloji süzgeci | 9 | 9 | 9 | 1 |
+| **Tümü** | **133** | **130** | **130** | **18** |
+
+`corrected-calcium` her iki branş süzgecinde de çıkıyor. "Tümü" görünümündeki
+133 kart 18 ETİKETLİ bölüme dağılmış durumda — kullanıcı aynı aracı iki kez
+üst üste görmüyor, iki farklı branş başlığının altında görüyor.
+
+Kategori rozetlerinin toplamı da 133 (listeleme sayısı), "Tümü" rozeti 130
+(benzersiz araç). İki sayı FARKLI şeyleri sayıyor ve ikisi de doğru.
+
+**Aktarılabilir kural — bu, iki turda İKİNCİ kez oldu:** belgeye yazdığım bir
+sayının yanına koyduğum AÇIKLAMA, sayının kendisi kadar ölçülmüş değildi.
+`ToolShare 130/130` grep'in içe aktarma satırını saymasından geliyordu;
+`133 = 130 + 3 gezinme` de bir tahmindi. **Bir sayıyı ölçtükten sonra onun
+NEDEN o sayı olduğunu da ölç** — yoksa doğru sayının yanına yanlış bir sebep
+yazılıyor ve sonraki tur o sebebe güveniyor.
+
+### Meta denetim ve gerileme kontrolü — taban değerinde
+
+`yorum-korlugu-denetim` sürüldü: **14 denetimin 14'ü temiz**, yorum körü
+denetim yok ve **bayat denetim uyarısı yok** — yani bu oturumda eklenen
+`cop-kapi-denetim` listeye alınmış durumda.
