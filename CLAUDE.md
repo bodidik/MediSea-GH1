@@ -12452,3 +12452,59 @@ YÜZEY RENGİ farklı ve bunu ancak ikisini birden ölçmek gösteriyor.
 gösterdi ("Bu konunun incileri yok", "Bir vaka seçin") — yani onların gerçek
 motor hâli ölçülmedi ve "başlık var" DENMİYOR. Boş durumda ikisinde de `h1`
 1 çıkıyor, ama o başlık boş durumun başlığı.
+
+### VAKA ŞEMASI KARIŞIK — bir vakanın adı hiç basılmıyordu
+
+Geçen tur `inciler` ve `vaka-coz` "gerçek motor hâlinde ölçülmedi" diye açık
+bırakılmıştı. Doğru parametrelerle (`?branch=…&id=<vaka-dosyası>`) kapatıldı.
+
+**`inciler` TEMİZ:** gerçek içerikle `h1` **1** ("AML Onkolojik Aciller ve
+Nakil İncileri"), 320px'te kayma 0, 235 öge.
+
+**`vaka-coz` iki kusur taşıyordu ve ikincisi ancak birincisi düzeltilince
+göründü** — belgede kayıtlı "bir kusur ikincisini gizler" kalıbı:
+
+1. **Başlık ögesi yoktu.** Vakanın adı ekrandaydı ama düz bir `div`di;
+   `h1` ve `h2` sayısı **0**. Kardeş motorlarla (`quiz-coz`, `hizli-tekrar`)
+   aynı boşluk. `div` → `h1` yapıldı, görünüm değişmedi.
+2. **Ad `h1`e taşındıktan sonra metnin BOŞ olduğu görüldü.** Sebep şema:
+
+| şekil | vaka | motorun okuduğu `veri.baslik` |
+|---|---|---|
+| düz (`baslik` üst düzeyde) | **10 / 11** | dolu |
+| yalnızca `meta.baslik` | **1** (`endokrinoloji/feokromositoma-vaka-1`) | **undefined** |
+
+Yani o vakanın adı ("Rastlantısal Sol Adrenal Kitle — Kompozit Adrenal
+Tümör") en baştan beri ekrana hiç basılmıyordu; `div` boş çiziliyor ve
+kimse fark etmiyordu. **Boş bir `div` görünmez, boş bir `h1` ise ölçülebilir**
+— başlık ögesine çevirmek kusuru görünür kıldı.
+
+Bu, aynı oturumda üçüncü kez çıkan **"veri ilan ediyor, render yok sayıyor"**
+sınıfı (premium bilgi kutusu başlıkları · quiz seti adı · vaka adı).
+
+**İçerik dosyasına DOKUNULMADI** (içerik kullanıcının sorumluluğu); düzeltme
+okuma tarafında ve iki şekli de kabul ediyor (`{...meta, ...ham}` — üst düzey
+öncelikli, yani bugünkü çoğunluğun davranışı korunuyor). Aynı düzleştirme
+vaka SEÇİM LİSTESİNE de kondu: orası da künyeyi ham dosyadan okuyordu.
+
+**Doğrulama, negatif kontrolüyle:**
+
+| vaka | sonuç |
+|---|---|
+| `feokromositoma-vaka-1` (meta şekilli) | başlık **basılıyor**; `meta`da `zorluk`/`sure_dk` YOK, o yüzden yalnızca "Vaka" rozeti — uydurma yok |
+| **negatif** — `aml-ana-vaka-1` (düz şekilli) | **değişmedi**: başlık + "orta" + "~12 dk" + "Vaka" |
+
+#### ÖLÇÜM ARTEFAKTI — `grep 'veri\.[a-zA-Z]*'` alt çizgiyi kesiyor
+
+Bir ara "motor `veri.sure` okuyor ama dosyalarda `sure_dk` var, süre hiç
+basılmıyor" diye ikinci bir kusur raporlanacaktı. **Yanlıştı:** kaynakta
+`veri.sure_dk` yazıyor, benim desenim `[a-zA-Z]*` olduğu için `_` görünce
+duruyordu.
+
+Alan adı taraması yaparken karakter sınıfına `_` koy — yoksa
+`snake_case` alanlar yarım okunur ve olmayan bir ayrışma uydurulur.
+
+**Beş kapının beşi de geri kondu ve doğrulandı** (geçici iz 0, kapı çağrısı
+yerinde, canlıda "Erişim Kısıtlı"). `vaka-coz` yedekten KOPYALANMADI: aynı
+dosyada okuyucu düzeltmesi de vardı ve kopyalamak onu silerdi — kapı satırı
+tek tek geri yazıldı.

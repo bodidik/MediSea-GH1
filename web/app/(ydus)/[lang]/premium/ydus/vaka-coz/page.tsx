@@ -22,7 +22,25 @@ function vakaYukle(branch: string, id: string) {
       process.cwd(),
       'content', 'premium', 'ydus', 'vakalar', branch, `${id}.json`
     );
-    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+    const ham = JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+
+    /**
+     * VAKA ŞEMASI KARIŞIK — künye kimi dosyada DÜZ, kimi dosyada `meta` altında.
+     *
+     * ÖLÇÜLDÜ: 11 vakanın 10'u `baslik`/`zorluk`/`sure_dk` alanlarını üst
+     * düzeyde tutuyor, 1'i (`endokrinoloji/feokromositoma-vaka-1`) yalnızca
+     * `meta` altında. `VakaEngine` üst düzeyi okuduğu için o vakanın ADI
+     * EKRANA HİÇ BASILMIYORDU — başlık ögesi vardı ama metni boştu.
+     *
+     * Kusur ancak motor GERÇEK vaka verisiyle render edilince göründü:
+     * parametresiz açılışta sayfa "Bir vaka seçin" boş durumunu gösteriyor
+     * ve o hâlde kendi başlığı olduğu için sorun görünmüyor.
+     *
+     * İçerik dosyasına DOKUNULMUYOR (içerik kullanıcının sorumluluğu);
+     * düzeltme okuma tarafında ve iki şekli de kabul ediyor. Üst düzey
+     * öncelikli: bugün çoğunluk o ve mevcut davranış korunuyor.
+     */
+    return { ...(ham?.meta ?? {}), ...ham };
   } catch {
     return null;
   }
@@ -37,7 +55,10 @@ function vakaListele(branch: string, topic: string) {
       .map(dosya => {
         try {
           const veri = JSON.parse(fs.readFileSync(path.join(dir, dosya), 'utf-8'));
-          return { ...veri, id: dosya.replace('.json', '') };
+          /* Seçim listesi de künyeyi okuyor (`baslik`, `zorluk`, `sure_dk`);
+             `meta` şekilli dosyada başlık BOŞ görünürdü. Aynı düzleştirme
+             `vakaYukle`de de var — gerekçesi orada. */
+          return { ...(veri?.meta ?? {}), ...veri, id: dosya.replace('.json', '') };
         } catch { return null; }
       })
       .filter(Boolean);

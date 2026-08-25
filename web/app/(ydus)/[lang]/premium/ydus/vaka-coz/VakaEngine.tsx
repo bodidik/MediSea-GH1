@@ -397,9 +397,22 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
             ← Konuya dön
           </a>
           <div style={{ textAlign: 'right', marginLeft: '12px' }}>
-            <div style={{ fontSize: '15px', fontWeight: 700, color: '#1a2a3a', lineHeight: 1.3 }}>
+            {/**
+             * Vakanın adı zaten EKRANDAYDI ama düz bir `div`di: sayfa gerçek
+             * motor hâlinde render edilip ölçüldüğünde `h1` ve `h2` sayısı
+             * ikisi de **0**du — kardeş motorlar `quiz-coz` ve `hizli-tekrar`
+             * ile aynı boşluk. `inciler` ise kendi `h1`ini zaten taşıyor.
+             *
+             * Görünüm DEĞİŞMİYOR: `globals.css` h1'e serif yazı tipi ve
+             * 24px üst/alt boşluk veriyor (belgede kayıtlı tuzak), satır içi
+             * stil ikisini de açıkça geri alıyor. Yeni metin eklenmedi.
+             */}
+            <h1 style={{
+              fontFamily: 'inherit', fontSize: '15px', fontWeight: 700,
+              color: '#1a2a3a', lineHeight: 1.3, margin: 0,
+            }}>
               {veri.baslik}
-            </div>
+            </h1>
             <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end', marginTop: '4px', flexWrap: 'wrap' }}>
               {veri.zorluk && (
                 <span style={{
