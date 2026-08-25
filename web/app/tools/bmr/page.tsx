@@ -94,7 +94,7 @@ export default function BmrPage() {
           </div>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { label: "Yaş", value: age, set: setAge },
+              { label: "Yaş (yıl)", value: age, set: setAge },   /* kardeşleri "Boy (cm)" ve "Ağırlık (kg)" diyordu; yaş birimsizdi */
               { label: "Boy (cm)", value: height, set: setHeight },
               { label: "Ağırlık (kg)", value: weight, set: setWeight },
             ].map(({ label, value, set }) => (

@@ -113,6 +113,7 @@ function SayiAlani({
       <div className="relative">
         <input
           id={id}
+          aria-describedby={birim ? `${id}-birim` : undefined}
           type="text"
           inputMode="decimal"
           value={deger}
@@ -121,7 +122,7 @@ function SayiAlani({
           disabled={pasif}
           className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 pr-16 text-xl font-black text-blue-900 focus:border-blue-900 outline-none disabled:bg-slate-100"
         />
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-500">{birim}</span>
+        <span id={`${id}-birim`} className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-500">{birim}</span>
       </div>
     </div>
   );

@@ -7654,3 +7654,84 @@ madde SAYISI ayrı ayrı sayıldı:
 
 Son satır sınıfın özeti: **madde puanlarının tek tek doğru olması, toplamın
 tanımlı aralıkta kalacağını GARANTİ ETMEZ.** Ulaşılabilir tavanı ayrıca ölç.
+
+### BİRİM EKRANDA VAR AMA ERİŞİLEBİLİR ADDA YOK — 17 araç, çoğu infüzyon ailesi
+
+Belgede açıkça bırakılmış bir kapsam boşluğu vardı: *"dokuz araç, belirsiz
+birimli analiti olan en yüksek riskli kümeden seçildi; 131 aracın tamamı
+taranmadı — 'hepsi temiz' DENMİYOR."* Kapatıldı ve kusur çıktı.
+
+**Kaynak taraması iki kez yanılttı, ölçüm düzeltti.** İlk ölçüt yalnızca
+`label`/`etiket` dizesine baktı: 155 etiketin 106'sını "birimsiz" gösterdi —
+çünkü birim ayrı bir prop'ta (`birim="mmHg"`). Ölçüt tüm alan ögesini
+okuyacak şekilde daraltıldı: 192 alan, 37 aday. O 37'nin çoğu da sahteydi
+(sonuç satırları, onay kutuları, seçiciler; `(/μL)` ve `(0–28)` gibi zaten
+birim/ölçek taşıyan etiketler).
+
+Karar belgedeki kurala göre verildi: **adı TARAYICIDA HESAPLAT.**
+
+**Ölçüm gerçek kusuru gösterdi ve şekli farklıydı.** Bu ailede alan şöyle
+kuruluyor:
+
+```tsx
+<label htmlFor={id}>{etiket}</label>          {/* "PaCO₂" */}
+<div className="relative">
+  <input id={id} … />
+  <span className="absolute right-3 …">{birim}</span>   {/* "mmHg" — label DIŞINDA */}
+</div>
+```
+
+Birim `<label>`ın dışında olduğu için erişilebilir ada HİÇ girmiyor. Gören
+kullanıcı kutunun sağında "mmHg" görüyor; ekran okuyucu yalnızca "PaCO₂"
+duyuyor. Tarayıcıda ölçülen adlar:
+
+| araç | erişilebilir ad (önce) |
+|---|---|
+| `abg` | PaCO₂ · HCO₃⁻ · Na⁺ · Cl⁻ · PaO₂ · Hasta yaşı — **altısı da birimsiz** |
+| `vazoaktif-infuzyon` | Hasta ağırlığı · **Doz** · İlaç miktarı · Toplam hacim |
+| `sedasyon-infuzyon` | Ağırlık · **Doz** · İlaç miktarı · Hacim |
+| `heparin-nomogram` | Hasta ağırlığı · Heparin · Hacim |
+| `dka-infuzyon` | Hasta ağırlığı · Serum potasyum |
+
+**En pahalı iki hücre "Doz" olanlar.** Belgede kayıtlı: bu ailede birim
+TABANI ilaç bazında değişiyor (nitrogliserin mcg/**dk**, noradrenalin
+mcg/**kg**/dk, midazolam mg/**saat**) ve karıştırılırsa hata 60 ya da 70 kat.
+Bu ayrımı taşıyan tek şey ekrandaki birim etiketiydi ve ekran okuyucuya hiç
+ulaşmıyordu.
+
+**Çare tasarıma dokunmuyor:** birim `<span>`ine kimlik verildi, `<input>`e
+`aria-describedby` eklendi. Ad aynı kalıyor, birim AÇIKLAMA olarak
+duyuruluyor — girdi son eki için standart kalıp.
+
+```tsx
+<input id={id} aria-describedby={birim ? `${id}-birim` : undefined} … />
+<span id={`${id}-birim`} …>{birim}</span>
+```
+
+Ölçüldü (sonra):
+
+| araç | ad · açıklama |
+|---|---|
+| `abg` | PaCO₂ · **mmHg** · HCO₃⁻ · **mEq/L** · … · Hasta yaşı · **yıl** |
+| `vazoaktif-infuzyon` | Doz · **mcg/dk** |
+| `sedasyon-infuzyon` | Doz · **mg/kg/saat** |
+| `kalsiyum-infuzyon` | Glukonat dozu · g · Sulandırma · mL · Süre · dk |
+| `status-epileptikus` | Ağırlık · kg · Lakosamid dozu (sabit) · mg |
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| birimsiz alan (pH) açıklama alıyor mu | **hayır** — `birim ? … : undefined` koruması çalışıyor |
+| birim ekranda hâlâ görünüyor mu | **evet**, 4/4 span çizili (gizleme YAPILMADI) |
+| kimlik çakışması | yok — sayfadaki dört `-birim` kimliği benzersiz |
+| `arayuz-denetim` · `ic-bilesen-denetim` | ikisi de temiz |
+
+**DÖRT ARAÇ BİLEREK DIŞARIDA ve sebebi ölçüldü:** `ktv`, `osmolal-gap`,
+`sodium`, `spot-urine` alanı SARAN `<label>` kullanıyor, yani birim span'i
+zaten adın içinde ("Ultrafiltrasyon**Litre**"). Onlara dokunmak gereksiz bir
+ikinci duyuru üretirdi. **Aynı sınıfın iki yapısı var; hangisinde olduğunu
+ölçmeden düzeltme.**
+
+Yan bulgu: `bmr`in yaş alanı hiç birim taşımıyordu — kardeşleri "Boy (cm)" ve
+"Ağırlık (kg)" derken "Yaş" diyordu. "Yaş (yıl)" oldu.
