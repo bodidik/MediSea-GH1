@@ -7126,3 +7126,93 @@ artık hangi alanların beklendiğini söylüyor.
 İkinci satır ayırt edici olan: düzeltme hâlâ çalışıyor. Bir alanı "hesaba
 katma" dalına alırken, o alanın MEŞRU hâlinin işini yapmaya devam ettiğini
 ayrıca ölç — yoksa kapı, özelliği öldürmüş olur.
+
+### İKİ GERÇEKLİK AYRIŞMIŞTI — anyon açığı iki araçta iki ayrı sınır tablosuyla
+
+Anyon açığını `anion-gap` ve `abg` birlikte hesaplıyor. Formül (`AG + 2,5 ×
+(4 − albümin)`) ve yüksek eşiği (12) ikisinde de AYNIYDI — ama makullük
+sınırları ayrışmıştı ve sayıldı:
+
+| büyüklük | `abg` (`SINIRLAR`) | `anion-gap` (kendi sayfasında) |
+|---|---|---|
+| Na⁺ | 90–**200** | 90–**190** |
+| Cl⁻ | 50–150 | 50–150 (tek uyuşan) |
+| HCO₃⁻ | **1**–60 | **2**–60 |
+| albümin | 0,5–**7** | 0,5–**8** |
+
+Yani aynı albümin değeri bir araçta kabul, ötekinde ret ediliyordu. Depoda tur
+tur avlanan sınıfın ta kendisi; çare de her seferinde aynı: **tek kaynağa
+bağla.** `anion-gap` artık `SINIRLAR`ı ve `AG_UST`u `lib/asit-baz.ts`ten
+alıyor. Ekrandaki aralık metni de sabitten türüyor, yani metin ile kapı bir
+daha ayrışamaz.
+
+**Bu bir tekleştirme, "kusur düzeltmesi" DEĞİL — ve bedeli ölçülmeli.**
+`abg`deki `KOMPANZASYON_SABIT` turunda değerler zaten uyuşuyordu; burada
+uyuşmuyordu, yani tekleştirme davranışı üç noktada DEĞİŞTİRİYOR ve üçü de
+ölçüldü:
+
+| girdi | eskiden | şimdi |
+|---|---|---|
+| albümin 7,5 | geçerli, düzeltme uygulanıyordu | **bozuk** — düzeltme düşüyor, düz AG duruyor |
+| Na⁺ 195 | reddediliyordu | **geçerli** — AG 71 (195 − 100 − 24) |
+| HCO₃⁻ 1,5 | reddediliyordu | geçerli |
+
+Üçü de `anion-gap`i `abg`nin penceresine taşıyor; albümin tarafında sınır
+DARALIYOR (7 g/dL üstü fizyolojik olarak gerçekçi değil), sodyum ve
+bikarbonat tarafında genişliyor.
+
+**Sınır değeri üç noktadan ölçüldü** (belgedeki kural): albümin tam **7,0**
+geçiyor (düzeltilmiş AG = 16 + 2,5×(4−7) = **8,5**, bant "Normal Aralık"),
+**7,1** düşüyor ve mesaj **"0,5–7"** yazıyor. Son satır aynı anda iki şeyi
+birden doğruluyor: sabit ile metin aynı kaynaktan geliyor VE düşük AG eşiği
+(8) hâlâ çalışıyor.
+
+Negatif kontrol: varsayılan form 12 · "Normal Aralık" (değişmedi), albümin
+2,0 ile düzeltilmiş **21** · "Düzeltmesiz AG: 16" (değişmedi).
+
+**Düşük AG eşiği (8) yerel kaldı ve adlandırıldı** (`AG_ALT_YEREL`):
+`asit-baz.ts`te karşılığı YOK, çünkü orada yalnızca yüksek AG bir bulgu
+üretiyor. Karşılığı olmayan bir sabiti paylaşılan tabloya zorlamak, olmayan
+bir ortaklık uydurmak olurdu.
+
+### İki tarama gerçek kusur çıkarmadı — ama biri KÖRDÜ ve ölçüt düzeltildi
+
+Aynı turda iki sınıf tarandı ve ikisi de temiz çıktı. Not edilmelerinin
+sebebi sonuç değil, **ölçütlerin nasıl sınandığı**.
+
+**1) "Hesaplanamadı" olumsuz hükme düşüyor mu?** (`ktv`nin "YETERSİZ DİYALİZ",
+`kdigo-aki`nin "AKI Kriteri Yok" kusurlarının sınıfı.) Ölçüt: bir GEÇERLİLİK
+bayrağı doğrudan iki KLİNİK etiket arasında seçim yapıyorsa aday.
+
+İlk sürüm **0 aday** verdi ve pozitif kontrol DÜŞTÜ — düzeltme öncesi `ktv`
+(`965f402`) taranınca hiçbir şey bulmuyordu. İki ayrı körlük vardı:
+
+- **"İstem" süzgeci fazla genişti.** Tire (`—`) istem işareti sayılıyordu,
+  oysa normal bir etikette de geçiyor: *"YETERSİZ DİYALİZ **—** PROTOKOL
+  GÖZDEN GEÇİRİLMELİ"* bu yüzden eleniyordu. Tire yalnızca dizenin TAMAMI
+  tire ise istem sayılmalı.
+- **`\bOk` Türkçe/camelCase adlarda tutmuyor.** Bu depoda geçerlilik bayrağı
+  SONEK oluyor: `spOk` · `preOk` · `kiloMakul` · `heparinTamam`. `\b` bir
+  kelime sınırı istediği için `spOk` içindeki `Ok` hiç eşleşmiyordu.
+
+Düzeltilince pozitif kontrol geçti (`spOk && eOk && urrOk ? "SAĞLANDI" :
+"YETERSİZ DİYALİZ"` yakalanıyor) ve güncel depo **2 aday** verdi; ikisi de
+elle karara bağlandı ve sahte: `ktv`nin üç sonuç kartı da `value === null`
+dalını ZATEN taşıyor (hem zemin hem metin), `nrs-2002`deki dize ise
+kullanıcıya görünen bir etiket değil iç durum adı (`"eksik-ana"`/`"sonuc"`).
+
+**2) Bant merdiveninde AÇIKTA KALAN tam değer.** Ölçüt: aynı değişken aynı
+sabitle hem `<` hem `>` ile karşılaştırılıyorsa, tam o değer hiçbir dala
+girmiyordur. Sentetik tohumla iki yönlü sınandı (`< 4` + `> 4` yakalanıyor,
+`< 4` + `>= 4` yakalanmıyor). 131 araç · **693 karşılaştırma** ölçüldü,
+**3 aday** çıktı ve üçü de sahte:
+
+| aday | neden sahte |
+|---|---|
+| `wells-dvt` `pts` | `pts > 0` ile `pts < 0` bant merdiveni değil — artı puanlı ölçütleri eksi puanlı olandan ayırıyor; hiçbir ölçüt 0 puan taşımıyor |
+| `spot-urine` `v` | AYNI ADLI İKİ DEĞİŞKEN: biri 150 eşiğiyle, öteki TTKG fonksiyonunun parametresi (`v < 5` / `v > 7`) |
+| `sodium` `litersNeeded` | yön kapısı ile gösterim kapısı, merdiven değil |
+
+**Ölçütün sınırı yazılmalı: ad tabanlı ve KAPSAM KÖRÜ.** Farklı kapsamlardaki
+aynı adlı değişkenleri tek sayıyor, bu yüzden "kapsam tarandı" iddiası
+üretemez — yalnızca elle bakılacak satırı 693'ten 3'e indiriyor.

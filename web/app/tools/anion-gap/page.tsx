@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { anionGap, correctedAnionGap, parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { SINIRLAR, AG_UST, araliktaMi } from "@/app/tools/lib/asit-baz";
 
 /** * Anyon Açığı (Anion Gap) Gündüz Modu (Sakin Deniz)
  * Formül: AG = Na - (Cl + HCO3); Albumin düzeltmesi: AG + 2.5 * (4.0 - Albumin)
@@ -51,17 +52,40 @@ export default function AnionGapPage() {
    * ÇEKİRDEK ve YARDIMCI diye ayrılıyor. Bozuk yardımcı alan girilmemiş
    * sayılıyor, düzeltme düşüyor, düz AG duruyor ve alan ADIYLA söyleniyor.
    */
+  /**
+   * SINIRLAR VE EŞİK `lib/asit-baz.ts`TEN GELİYOR — iki gerçeklik vardı.
+   *
+   * Anyon açığını bu araç ve `abg` birlikte hesaplıyor. Formül (`AG + 2,5 ×
+   * (4 − albümin)`) ve yüksek eşiği (12) ikisinde de aynıydı, ama MAKULLÜK
+   * sınırları AYRIŞMIŞTI ve sayıldı:
+   *
+   *   büyüklük   abg (SINIRLAR)   anion-gap (eskiden burada)
+   *   Na⁺        90–200           90–190
+   *   Cl⁻        50–150           50–150   (tek uyuşan)
+   *   HCO₃⁻       1–60             2–60
+   *   albümin    0,5–7            0,5–8
+   *
+   * Yani aynı albümin değeri bir araçta kabul, ötekinde ret edilebiliyordu.
+   * Bu, depoda tur tur avlanan "aynı değer iki yerde ayrı tutuluyor"
+   * sınıfının ta kendisi; çare de her seferinde aynı: tek kaynağa bağla.
+   * `AG_UST` de artık elle yazılmıyor.
+   *
+   * Düşük AG eşiğinin (8) `asit-baz.ts`te karşılığı YOK — orada yalnızca
+   * yüksek AG bir bulgu üretiyor. O yüzden yerel kalıyor ama adlandırıldı.
+   */
+  const AG_ALT_YEREL = 8;
+
   const cekirdekMakul =
-    naNum >= 90 && naNum <= 190 &&
-    clNum >= 50 && clNum <= 150 &&
-    hco3Num >= 2 && hco3Num <= 60;
+    araliktaMi(naNum, SINIRLAR.na) &&
+    araliktaMi(clNum, SINIRLAR.cl) &&
+    araliktaMi(hco3Num, SINIRLAR.hco3);
 
   /** boş · bozuk · geçerli — "boş"u "bozuk"tan ayırmak şart, yoksa
    *  yazım hatası sessizce yutulur ve kullanıcı düzeltmenin uygulandığını sanır. */
   const albDurum: "bos" | "bozuk" | "gecerli" =
     albumin.trim() === ""
       ? "bos"
-      : sayiGirildiMi(albumin) && albuminNum >= 0.5 && albuminNum <= 8
+      : sayiGirildiMi(albumin) && araliktaMi(albuminNum, SINIRLAR.albumin)
         ? "gecerli"
         : "bozuk";
 
@@ -72,9 +96,9 @@ export default function AnionGapPage() {
 
   const displayValue = agCorrected ?? ag;
   const interpretation =
-    displayValue > 12
+    displayValue > AG_UST
       ? { label: "Yüksek Anyon Açıklı", color: "text-rose-700", bg: "bg-rose-50" }
-      : displayValue < 8
+      : displayValue < AG_ALT_YEREL
       ? { label: "Düşük Anyon Açığı", color: "text-amber-700", bg: "bg-amber-50" }
       : { label: "Normal Aralık", color: "text-emerald-700", bg: "bg-emerald-50" };
 
@@ -143,7 +167,7 @@ export default function AnionGapPage() {
           {albDurum === "bozuk" && (
             <div className="mt-3 bg-amber-50 border-2 border-amber-300 rounded-2xl p-3" role="alert">
               <p className="text-[11px] leading-relaxed text-amber-900">
-                <strong>Albümin hesaba KATILMADI</strong> — beklenen aralık 0,5–8 g/dL.
+                <strong>Albümin hesaba KATILMADI</strong> — beklenen aralık {String(SINIRLAR.albumin[0]).replace(".", ",")}–{String(SINIRLAR.albumin[1]).replace(".", ",")} g/dL.
                 Düzeltilmiş AG gösterilmiyor; aşağıdaki değer düzeltmesiz anyon açığıdır.
               </p>
             </div>
