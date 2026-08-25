@@ -49,6 +49,14 @@ export default function BmrPage() {
   };
   const girdiMakul = makul(age, 1, 120) && makul(height, 50, 250) && makul(weight, 1, 400);
 
+  /* SESSİZ BOŞLUK YERİNE SEBEP. Varsayılanlar geçerli (35/175/75), yani sebep
+     ancak kullanıcı bir alanı bozduğunda çıkıyor. */
+  const eksikAlan = [
+    !makul(age, 1, 120) && "yaş (1–120)",
+    !makul(height, 50, 250) && "boy (50–250 cm)",
+    !makul(weight, 1, 400) && "ağırlık (1–400 kg)",
+  ].filter(Boolean) as string[];
+
   const bmr = girdiMakul
     ? Math.round(sex === "m"
         ? 10 * w + 6.25 * h - 5 * a + 5
@@ -119,6 +127,15 @@ export default function BmrPage() {
             </div>
           </div>
         </div>
+
+        {eksikAlan.length > 0 && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+            <p className="text-[11px] font-bold text-slate-600">
+              Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}
+            </p>
+          </div>
+        )}
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-blue-900/80 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400/60">

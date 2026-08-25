@@ -41,6 +41,18 @@ export default function BmiPage() {
   const boyOk  = makul(height, 50, 250);
   const kiloOk = makul(weight, 1, 400);
 
+  /**
+   * SESSİZ BOŞLUK YERİNE SEBEP. Kapı konduktan sonra saçma bir girdide sonuç
+   * yalnızca "–" oluyordu; kullanıcı neyin yanlış olduğunu göremiyordu.
+   *
+   * Bu araçta VARSAYILANLAR GEÇERLİ (170/70), yani sebep ancak kullanıcı
+   * bir alanı bozduğunda çıkıyor — ayrı bir "girdi var mı" kapısı gerekmiyor.
+   */
+  const eksikAlan = [
+    !boyOk && "boy (50–250 cm)",
+    !kiloOk && "ağırlık (1–400 kg)",
+  ].filter(Boolean) as string[];
+
   const bmi    = boyOk && kiloOk ? Math.round((w / (h / 100) ** 2) * 10) / 10 : 0;
   /**
    * İDEAL AĞIRLIK — iki formül, ikisi de cinsiyete bağlı.
@@ -122,6 +134,15 @@ export default function BmiPage() {
             </label>
           </div>
         </div>
+
+        {eksikAlan.length > 0 && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+            <p className="text-[11px] font-bold text-slate-600">
+              Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}
+            </p>
+          </div>
+        )}
 
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">VÜCUT KİTLE İNDEKSİ</span>

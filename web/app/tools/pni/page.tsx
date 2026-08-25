@@ -44,6 +44,14 @@ export default function PniPage() {
   };
   const hasResult = makul(alb, 1, 7) && makul(lymp, 10, 100000);
 
+  /* SESSİZ BOŞLUK YERİNE SEBEP. Araç boş açılıyor, o yüzden sebep ancak
+     kullanıcı bir şey girdiyse basılıyor — bomboş formda susuluyor. */
+  const eksikAlan = [
+    !makul(alb, 1, 7) && "albümin (1–7 g/dL)",
+    !makul(lymp, 10, 100000) && "lenfosit (10–100000 /μL)",
+  ].filter(Boolean) as string[];
+  const girdiVar = [alb, lymp].some((x) => x.trim() !== "");
+
   // PNI = 10 × Albumin (g/dL) + 0.005 × Lenfosit (/μL)
   const pni = hasResult ? 10 * albN + 0.005 * lympN : null;
 
@@ -88,6 +96,14 @@ export default function PniPage() {
             </label>
           ))}
 
+          {girdiVar && eksikAlan.length > 0 && (
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+              <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+              <p className="text-[11px] font-bold text-slate-600">
+                Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}
+              </p>
+            </div>
+          )}
           {pni !== null && (
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">PNI</span>

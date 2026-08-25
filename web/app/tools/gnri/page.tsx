@@ -60,6 +60,20 @@ export default function GnriPage() {
   const kiloOk   = makul(weight, 20, 300);
   const boyOk    = makul(height, 50, 250);
 
+  /**
+   * SESSİZ BOŞLUK YERİNE SEBEP. Kapı konduktan sonra saçma bir girdide sonuç
+   * hiç basılmıyordu; kullanıcı neyin yanlış olduğunu göremiyordu.
+   *
+   * Bu araç BOŞ açılıyor (varsayılan yok), o yüzden sebep ancak kullanıcı bir
+   * şey girdiyse basılıyor — bomboş formda susuluyor.
+   */
+  const eksikAlan = [
+    !albOk && "albümin (1–7 g/dL)",
+    !kiloOk && "ağırlık (20–300 kg)",
+    !boyOk && "boy (50–250 cm)",
+  ].filter(Boolean) as string[];
+  const girdiVar = [alb, weight, height].some((x) => x.trim() !== "");
+
   const ibw = boyOk ? (heightN - 100) - (heightN - 150) / (sex === "m" ? 4 : 2.5) : null;
   const wRatio = ibw !== null && ibw > 0 && kiloOk ? Math.min(weightN / ibw, 1) : null;
 
@@ -121,6 +135,14 @@ export default function GnriPage() {
             </label>
           ))}
 
+          {girdiVar && eksikAlan.length > 0 && (
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+              <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
+              <p className="text-[11px] font-bold text-slate-600">
+                Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}
+              </p>
+            </div>
+          )}
           {ibw !== null && (
             <div className="grid grid-cols-2 gap-3">
               <div className="bg-slate-50 rounded-2xl p-4 text-center">
