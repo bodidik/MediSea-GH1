@@ -8868,3 +8868,69 @@ etki görmemesinde. `steroid-dose`'un `gluco` alanıyla aynı gizli tuzak.
 
 Tekleştirilmediler çünkü çalışan üç aracı aynı turda değiştirmek, ölçülmüş
 bir kusuru düzeltmek değil öngörülen bir riski kapatmak olurdu; kayda geçti.
+
+### DÜŞEN DAL SINIFI TARANDI — `berlin-ards` tek örnekmiş
+
+`berlin-ards` kusurunun şekli ölçüte çevrildi: **bir değişkenin alabileceği
+değer kümesi, onu sınayan üçlü zincirde test edilenlerden FAZLA** — sınanmayan
+değer sessizce son dala düşüyor.
+
+Ölçüt kümeyi tahmin etmiyor, KAYNAKTAN çıkarıyor: aynı dosyadaki seçenek
+dizilerinde tekrar eden anahtarların (`v` · `slug` · `key` · `id` · `pf` …)
+dize değerleri toplanıyor, sonra `x === "literal" ?` biçimindeki zincirlerle
+karşılaştırılıyor.
+
+130 araç · 17 üçlü zincir · **4 aday** — ve üçü tasarım gereği DOĞRU:
+
+| araç | sınanan | son dala düşen | verdikt |
+|---|---|---|---|
+| **`berlin-ards`** | mild · mod · severe | **no_ards** | **KUSURDU** — düzeltildi |
+| `sga` | A · B | C | doğru — SGA tam üç derece, son dal C |
+| `sodium` | tbw · hypo | hyper | doğru — üç kip, son dal `hiperHedefMakul` kullanıyor |
+| `digoksin-toksisitesi` | duzey · miktar | ampirik | doğru — ampirik kip sayısal girdi istemiyor, `hazir = true` |
+
+**Ayırt edici soru: son dala düşen değer, sınananlarla AYNI anlam kümesinden
+mi?** `sga`'da C bir SGA derecesi, `sodium`'da hyper bir kip. `berlin-ards`'ta
+ise `no_ards` bir ŞİDDET DEĞİL — "ARDS değil" demek, ve en ağır şiddete
+düşmesi hükmü tersine çeviriyordu.
+
+Düzeltme sonrası `berlin-ards`'ta kalan tek `pf` zinciri paylaşım parametresi
+(`pf === "mild" ? 1 : … : 0`) ve üç değeri de AÇIKÇA sınayıp `no_ards` için
+`0` veriyor — ölçüt onu haklı olarak işaretlemiyor.
+
+**Ölçüm tuzağı — yorum maskelemesi satır numaralarını bozdu, İKİNCİ KEZ.**
+Blok yorumları `" " * len(...)` ile doldurmak satır sonlarını da boşluğa
+çeviriyor; rapor dört adayın dördünde de yanlış satır gösterdi ve bir an
+"düzeltilmiş dosyada kusur duruyor" sanıldı. Maske satır sonlarını KORUMALI
+(`re.sub(r'[^\n]', ' ', ...)`). Belgede aynı ders `eksik-alan-denetim` için
+zaten kayıtlıydı.
+
+### BU OTURUMUN DÜZELTMELERİ CANLIDA DOĞRULANDI — 25 Ağustos 2026
+
+Çok sayıda klinik düzeltme gönderildi ve hiç sorulmamış soru yine aynıydı:
+**kullanıcıya ulaştı mı?** Tarayıcıyla canlıda ölçüldü (curl değil).
+
+| düzeltme | canlıda ölçülen | düzeltme öncesi |
+|---|---|---|
+| cetvel vurgusu (`gds-15`) | skor 10 → **"ORTA 9–11" vurgulu** | vurgulu hücre **0** |
+| `berlin-ards` cetveli | AĞIR ARDS → **"Ağır ≤ 100" vurgulu** | **0** |
+| `berlin-ards` P/F > 300 | **ARDS DEĞİL** · mortalite **—** · "Tanı kriterlerini karşılamıyor" | **AĞIR ARDS · %45** |
+| `calvert` AUC kapısı | AUC 50 → **sebep kartı, doz YOK** | 6250 mg |
+| `calvert` olağan vaka | AUC 5 · GFR 100 → **625 mg** | 625 mg (değişmedi) |
+| `calvert` GFR kırpması | GFR 150 → **750 mg** + "sınırlandırıldı" | aynı — özellik korundu |
+| `chads-vasc` dışlaması | ≥75 seçilince 65–74 **kapanıyor**, tavan **9** | tavan **10** (ölçek 0–9) |
+| `sledai2k` birleştirmesi | `/tools/sledai2k` → **`/tools/sle`**, 24 tanımlayıcı, tavan **105** | ayrı araç, 16 tanımlayıcı, tavan 61 |
+| `grace` "2.0" iddiası | hub metninde **YOK** | "GRACE 2.0 Skoru" |
+
+**Sayı mimarisi araç silindikten sonra da tutuyor** (`sledai2k` yönlendirildi,
+131 → 130): canlı `/tools` **"130 araç listeleniyor"**, 133 araç bağlantısı
+(130 + 3 gezinme), `<h1>` 1, `<h2>` 18. Elle güncellenen tek sayı yok.
+
+Dokuz ölçütün dokuzu da tuttu, yani bu oturumun dağıtım zinciri sağlam —
+en yeni commit bile (berlin-ards) ölçüm anında canlıdaydı.
+
+**Negatif kontroller canlı ölçümün İÇİNDE:** `calvert`in olağan vakası ve GFR
+kırpması değişmemiş, `chads-vasc`ta 65–74 tek başına hâlâ 1 puan veriyor,
+`berlin-ards`ın üç ARDS bandı düzeltme öncesiyle birebir aynı mortaliteyi
+basıyor. Bir düzeltmenin canlıda "çalıştığını" göstermek, ESKİ davranışın
+korunduğunu göstermeden yarım kalır.
