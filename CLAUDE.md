@@ -11949,3 +11949,106 @@ de gelebilirdi. Sayfa doğrudan okundu: basılı düğme **0**, ekranda
 **"SKOR – · 6 soru daha yanıtlanmalı"**. Yani sonuç dağıtımın inmesinden
 geliyor. Bir taramanın "artık temiz" demesi, düzeltmenin canlıda olduğunu
 GÖSTERMEZ — o ayrı bir ölçüm.
+
+### BRANŞ ŞERİDİ 34 ARAÇLIK DÖNEMDEN KALMIŞTI — iki branşta hub'la ortak araç SIFIR
+
+Branş sayfalarındaki "İlgili Hesaplayıcılar" şeridi `app/lib/tools.ts`
+içindeki ELLE yazılmış `BRANCH_TOOLS` listesinden besleniyordu. Liste 34
+araçlık dönemde doğruydu; kütüphane **130 araca** çıkarken güncellenmedi.
+
+Kusuru bulan şey bir denetim değil, **aynı ilişkinin İKİ yerde tutulduğunu
+fark etmek** oldu: hub kendi kategorilerini `TOOLS_DATABASE`te tutuyor,
+branş sayfası ayrı bir listeden okuyor. Canlıda karşılaştırıldı:
+
+| branş | branş şeridi | hub kategorisi | ortak |
+|---|---|---|---|
+| **hematoloji** | wells-dvt · has-bled · glasgow-blatchford | ipi · flipi · ipss-r · isth-dic · hscore | **0** |
+| **palyatif** | ecog | karnofsky · pps · ppi · pap-score · esas | **0** |
+| romatoloji | das28 · sle | 14 araç | 2 |
+| onkoloji | 4 araç | 7 araç | 2 |
+
+Yani hematoloji kütüphanesini okuyan biri, hematolojiye özgü **hiçbir**
+skora o sayfadan ulaşamıyordu; palyatif bakımın beş özel aracı da öyle.
+Deponun "elle yazılan liste içerik büyürken sessizce yalana dönüşür"
+kuralının araç tarafındaki hâli — ana sayfanın "6+ araç" derken 114 araç
+taşımasıyla aynı sınıf.
+
+**Çare listeyi elle düzeltmek DEĞİL — aynı kusur birkaç tur sonra geri
+gelirdi.** Eşleme `content/brans-arac.json`'a taşındı ve o dosya
+`arac-metadata.cjs` tarafından **hub'ın kendi kategori verisinden**
+üretiliyor. Elle tutulan tek şey 12 satırlık `BRANS_KATEGORI` haritası
+(içerik branşı → hub kategorisi); araç listeleri ondan türüyor.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| branştan ulaşılan benzersiz araç | **34** | **114** / 130 |
+| hematoloji · palyatif ortak araç | 0 · 0 | 5 · 5 |
+| `TOOLS` + `BRANCH_TOOLS` elle kayıt | 34 + 12 liste | **0** |
+| "Tümü →" hedefi | koşulsuz `/tools` | `/tools?kategori=<branşın kategorisi>` |
+
+**KRİTİK NEGATİF KONTROL: hiçbir araç KAYBOLMADI.** Eski listedeki 34
+slug'ın 34'ü de yeni eşlemede duruyor — yani değişiklik kapsamı yalnızca
+genişletti. Bir eşlemeyi türetmeye geçirirken sorulacak soru "yeni liste
+doğru mu" değil, **"eskisinin hiçbir üyesi düştü mü"**.
+
+Öteki negatif kontroller: `journal-club` (eşlemesi bilerek yok) şeridi hiç
+basmıyor ve sayfası sağlam (`h1` 1); ters bağlantı zenginleşti
+(`curb65` → enfeksiyon + göğüs, `ipi` → hematoloji + onkoloji,
+`karnofsky` → palyatif — sonuncusunun eskiden hiç branş bağlantısı YOKTU).
+
+**Şerit kırpılıyor ama kırpma GİZLEMİYOR:** 8 araçtan sonrası kesiliyor ve
+bağlantı gerçek sayıyı yazıyor ("Tümü (14) →"). Sayı elle yazılmıyor,
+listenin uzunluğundan geliyor.
+
+**Ulaşılamayan 16 araç KUSUR DEĞİL** ve sebebi yapısal: Nöroloji, Allerji &
+İmmünoloji, YBÜ ve Geriatri kategorilerinin içerik tarafında karşılık gelen
+bir branşı YOK, yani bağlanacak bir branş sayfası da yok. Hub ve aramadan
+ulaşılıyorlar.
+
+#### Nöbetçi: `arac-metadata.cjs --kontrol` artık bu dosyayı da doğruluyor
+
+Türetilmiş dosya committe duruyor (aynı `arac-index.json` kalıbı), yani
+bayatlayabilir — ve bayatlaması SESSİZ olurdu: yeni bir hematoloji skoru
+eklendiğinde şerit onu göstermez, hiçbir şey hata vermez.
+
+**Üç negatif kontrol, üçü de çıkış kodu 1 veriyor:** bir araç çıkarıldığında
+("araç listesi değişmiş: hematoloji"), bir branş silindiğinde ("eksik branş:
+palyatif"), dosya bozulduğunda ("okunamadı ya da bozuk"). Senkron dosyada 0.
+
+**ÇIKIŞ KODUNU BORU HATTINDA ÖLÇME — bu turda yine tuzağa düşüldü.**
+`node … --kontrol 2>&1 | head -3; echo $?` üç bozuk durumda da **0**
+bastı, çünkü `$?` `head`'in kodu. Belgede kayıtlı kural ("kapıyı sınayacaksan
+komutu TEK BAŞINA çalıştır") burada bir kez daha gerekti; tek başına
+çalıştırılınca 1/0 doğru çıktı.
+
+#### Araç ikonu kategoriden DEĞİL aracın kendi sayfasından okunuyor
+
+Kolay yol kategori ikonunu kullanmaktı ama o zaman nefrolojinin dokuz aracı
+da aynı glifi taşırdı — eski elle listede araçlar ayrı ikonlar taşıyordu ve
+bunu kaybetmek görsel bir gerileme olurdu. Üreteç her aracın `page.tsx`
+dosyasındaki rozetten (`w-14 h-14 …`, 130 araçta birebir aynı şekil) glifi
+okuyor; okunamazsa kategori ikonuna düşüyor, yani ayrıştırma kusuru sessiz
+bir boşluk üretmiyor.
+
+#### İstemci paketi maliyeti ÖLÇÜLDÜ, hisle karar verilmedi
+
+Üretilen JSON `ToolTopNav` (istemci) üzerinden 130 araç sayfasının
+paylaştığı chunk'a giriyor. "İkinci, küçük bir ters harita dosyası açayım mı"
+sorusu sayıyla kapatıldı:
+
+| | ham | gzip |
+|---|---|---|
+| `brans-arac.json` | 11 484 B | **2 560 B** |
+| eski elle `tools.ts` verisi | 5 253 B | **2 159 B** |
+
+Fark ~400 bayt (gzip). İkinci bir üretilmiş dosya ve ikinci bir modül açmaya
+değmez; tek kaynak korundu. Araç sayfası ilk yükü 120 kB — Next'in inceleme
+eşiği olan 130 kB'ın altında.
+
+**ÖLÇÜM TUZAĞI — "her branşta Tümü bağlantısı `infuzyon`a gidiyor" SAHTE
+alarmı.** Üretilen HTML'de `kategori=` arayıp `head -1` almak sayfa
+BAŞLIĞINDAKİ kategori kısayollarını yakalıyordu. Ayırt edici işaret sayımdı:
+branşın kendi kategorisi **iki kez**, ötekiler birer kez geçiyor. Çapa
+"Tümü" metnine bağlanınca her branş kendi kategorisini gösterdi. Belgedeki
+"aynı kelime birden çok yerde geçiyorsa çapayı benzersiz bir dizeye at"
+kuralı — bu kez `head -1` biçiminde.

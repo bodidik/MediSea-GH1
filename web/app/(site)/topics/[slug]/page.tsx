@@ -6,7 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSpecialty } from "@/app/lib/specialties";
 import { getTopicCounts } from "@/app/lib/topic-counts";
-import { getBranchTools } from "@/app/lib/tools";
+import { getBranchTools, getBranchToolCategory } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 import { ebeveyniCoz } from "@/lib/slug-eslestir";
 import { slugCoz } from "@/lib/slug";
@@ -92,8 +92,18 @@ export default async function BranchListPage({
 
   // Branşın kimlik bilgisi (başlık, ikon, renk) — ana sayfayla aynı ortak kaynaktan
   const specialty = getSpecialty(slug);
-  // Bu branşla ilişkili klinik hesaplayıcılar (varsa) — ana sayfadaki "Hızlı Erişim" ile aynı mantık
+  /* Bu branşla ilişkili klinik hesaplayıcılar (varsa).
+   *
+   * Liste `content/brans-arac.json`'dan geliyor ve o dosya hub'ın kendi
+   * kategori verisinden ÜRETİLİYOR — elle tutulan eski eşleme iki branşta
+   * hub'la hiç örtüşmüyordu (bkz. app/lib/tools.ts başlığı).
+   *
+   * Şerit kırpılıyor: türetilen liste bazı branşlarda 14-36 araç veriyor ve
+   * hepsini yatay bir şeride basmak okunmaz. Kırpma GİZLEMİYOR — "Tümü"
+   * bağlantısı gerçek sayıyı yazıyor ve SÜZÜLMÜŞ hub'a gidiyor. */
   const branchTools = getBranchTools(slug);
+  const seritAraclar = branchTools.slice(0, 8);
+  const aracKategorisi = getBranchToolCategory(slug);
 
   // 1. Ham dosyaları al
   const files = fs.readdirSync(branchDir).filter((f) => f.endsWith(".json"));
@@ -325,7 +335,7 @@ export default async function BranchListPage({
               <span className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
                 İlgili Hesaplayıcılar
               </span>
-              {branchTools.map((tool) => (
+              {seritAraclar.map((tool) => (
                 <Link
                   key={tool.slug}
                   href={`/tools/${tool.slug}`}
@@ -335,8 +345,13 @@ export default async function BranchListPage({
                   <span className="text-[11px] font-bold text-blue-950">{tool.name}</span>
                 </Link>
               ))}
-              <Link href="/tools" className="shrink-0 inline-block py-1.5 text-[11px] font-black text-blue-600 px-3 hover:underline uppercase tracking-tighter whitespace-nowrap">
-                Tümü →
+              <Link
+                href={aracKategorisi ? `/tools?kategori=${aracKategorisi}` : "/tools"}
+                className="shrink-0 inline-block py-1.5 text-[11px] font-black text-blue-600 px-3 hover:underline uppercase tracking-tighter whitespace-nowrap"
+              >
+                {branchTools.length > seritAraclar.length
+                  ? `Tümü (${branchTools.length}) →`
+                  : "Tümü →"}
               </Link>
             </div>
           </div>

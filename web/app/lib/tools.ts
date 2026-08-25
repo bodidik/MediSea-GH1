@@ -1,85 +1,58 @@
-// Klinik hesaplayıcıların (app/tools/*) branşlara göre eşlemesi.
-// Tek kaynak: hem branş sayfası (app/(site)/topics/[slug]/page.tsx) hem de
-// ileride başka yerler BURADAN okur — slug'lar gerçek app/tools/<slug> klasörleriyle
-// birebir eşleşmelidir (kırık link üretmemek için).
+// Klinik hesaplayıcıların branşlara göre eşlemesi.
 //
-// BU SÖZLEŞME BİR KEZ ÇİĞNENDİ ve elle fark edilmedi: "heart-score" burada
-// kaldı, oysa o araç `heart` ile birleştirilip klasörü SİLİNMİŞTİ. Kardiyoloji
-// branş sayfası ölü bir slug'a bağlanıyordu ve yalnızca next.config.js'teki
-// 308 yönlendirmesi sayesinde çalışıyordu — yönlendirme kaldırılsaydı kırık
-// bağlantı olurdu. Bu yüzden `arac-metadata.cjs --kontrol` (CI kapısı) artık
-// buradaki her slug'ın gerçek bir `app/tools/<slug>/page.tsx` taşıdığını da
-// doğruluyor.
+// KAYNAK ARTIK ELLE TUTULMUYOR. Bu dosya bir dönem iki liste taşıyordu:
+// 34 kayıtlık `TOOLS` ve branş başına elle yazılmış `BRANCH_TOOLS`. Liste o
+// 34 araçlık dönemde doğruydu; kütüphane 130 araca çıkarken güncellenmedi ve
+// SESSİZCE yalana döndü.
+//
+// ÖLÇÜLDÜ (canlı): branş sayfasının "İlgili Hesaplayıcılar" şeridi ile
+// hub'ın aynı branş kategorisi İKİ BRANŞTA HİÇ ÖRTÜŞMÜYORDU —
+//
+//   hematoloji : şerit wells-dvt · has-bled · glasgow-blatchford
+//                hub    ipi · flipi · ipss-r · isth-dic · hscore      ortak 0
+//   palyatif   : şerit ecog
+//                hub    karnofsky · pps · ppi · pap-score · esas      ortak 0
+//
+// Yani hematoloji kütüphanesini okuyan biri, hematolojiye özgü hiçbir skora
+// o sayfadan ulaşamıyordu; romatolojide 14 aracın 2'si görünüyordu.
+//
+// Eşleme artık `content/brans-arac.json` üzerinden geliyor ve o dosya
+// `scripts/arac-metadata.cjs` tarafından hub'ın kendi kategori verisinden
+// (`TOOLS_DATABASE`) ÜRETİLİYOR. `--kontrol` (CI kapısı) bayatlığı yakalıyor.
+// Yeni bir araç hub'a eklendiğinde branş şeridi kendiliğinden güncelleniyor.
+
+import bransArac from "@/content/brans-arac.json";
 
 export type ToolRef = { slug: string; name: string; icon: string };
 
-export const TOOLS: Record<string, ToolRef> = {
-  "wells-pe": { slug: "wells-pe", name: "Wells (PE)", icon: "🔍" },
-  "wells-dvt": { slug: "wells-dvt", name: "Wells (DVT)", icon: "🦵" },
-  "chads-vasc": { slug: "chads-vasc", name: "CHA₂DS₂-VASc", icon: "❤️" },
-  "has-bled": { slug: "has-bled", name: "HAS-BLED", icon: "🩸" },
-  "timi-ua": { slug: "timi-ua", name: "TIMI (UA/NSTEMI)", icon: "💔" },
-  "egfr": { slug: "egfr", name: "eGFR (2021)", icon: "🧪" },
-  "corrected-calcium": { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", icon: "🥛" },
-  "meld-na": { slug: "meld-na", name: "MELD-Na", icon: "🫁" },
-  "news2": { slug: "news2", name: "NEWS2", icon: "🚨" },
-  "qsofa": { slug: "qsofa", name: "qSOFA", icon: "🩺" },
-  "sofa": { slug: "sofa", name: "SOFA", icon: "🏥" },
-  "perc": { slug: "perc", name: "PERC", icon: "🫁" },
-  "curb65": { slug: "curb65", name: "CURB-65", icon: "🫁" },
-  "endocarditis": { slug: "endocarditis", name: "Duke Kriterleri", icon: "🦠" },
-  "infusion": { slug: "infusion", name: "İnfüzyon Hesabı", icon: "💉" },
-  "unit-converter": { slug: "unit-converter", name: "Birim Çevirici", icon: "🔄" },
-  "sle": { slug: "sle", name: "SLEDAI-2K", icon: "🦴" },
-  "nrs-2002": { slug: "nrs-2002", name: "NRS-2002", icon: "📋" },
-  "mna": { slug: "mna", name: "MNA (Kısa Form)", icon: "🍽️" },
-  "glim": { slug: "glim", name: "GLIM Kriterleri", icon: "⚖️" },
-  "nutrition-needs": { slug: "nutrition-needs", name: "Enerji & Protein", icon: "🍏" },
-  "anion-gap": { slug: "anion-gap", name: "Anyon Açığı", icon: "🧬" },
-  "corrected-sodium": { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", icon: "🧂" },
-  "hba1c-eag": { slug: "hba1c-eag", name: "HbA1c → Ort. Glukoz", icon: "📈" },
-  "bsa": { slug: "bsa", name: "Vücut Yüzey Alanı", icon: "📐" },
-  "ecog": { slug: "ecog", name: "ECOG Performans", icon: "🎗️" },
-  "gcs": { slug: "gcs", name: "Glasgow Koma Skalası", icon: "🧠" },
-  "heart": { slug: "heart", name: "HEART Skoru", icon: "💔" },
-  "child-pugh": { slug: "child-pugh", name: "Child-Pugh", icon: "🍺" },
-  "das28": { slug: "das28", name: "DAS28", icon: "🦴" },
-  "glasgow-blatchford": { slug: "glasgow-blatchford", name: "Glasgow-Blatchford", icon: "🩸" },
-  "ranson": { slug: "ranson", name: "Ranson Kriterleri", icon: "🍺" },
-  "kdigo-aki": { slug: "kdigo-aki", name: "KDIGO AKI Evrelemesi", icon: "💧" },
-  "psi-port": { slug: "psi-port", name: "PSI/PORT Skoru", icon: "🫁" },
-};
+type BransKaydi = { kategori: string; araclar: ToolRef[] };
+const VERI = bransArac as Record<string, BransKaydi>;
 
-// branş slug -> ilgili hesaplayıcı slug'ları (öncelik sırasına göre)
-export const BRANCH_TOOLS: Record<string, string[]> = {
-  "kardiyoloji": ["heart", "chads-vasc", "has-bled", "timi-ua"],
-  "nefroloji": ["egfr", "kdigo-aki", "corrected-calcium", "anion-gap", "unit-converter"],
-  "endokrinoloji": ["corrected-calcium", "hba1c-eag", "corrected-sodium", "anion-gap", "egfr", "unit-converter"],
-  "gastroenteroloji": ["meld-na", "child-pugh", "glasgow-blatchford", "ranson"],
-  "enfeksiyon": ["qsofa", "sofa", "curb65", "psi-port", "news2", "endocarditis"],
-  "gogus": ["curb65", "psi-port", "wells-pe", "perc"],
-  "hematoloji": ["wells-dvt", "has-bled", "glasgow-blatchford"],
-  "genel-dahiliye": ["news2", "qsofa", "sofa", "gcs", "infusion", "anion-gap", "corrected-sodium"],
-  "romatoloji": ["das28", "sle"],
-  "onkoloji": ["ecog", "bsa", "infusion", "nutrition-needs"],
-  "klinik-nutrisyon": ["nrs-2002", "mna", "glim", "nutrition-needs"],
-  "palyatif": ["ecog"],
-  // "journal-club" için ilişkili bir hesaplayıcı yok — bölüm gizlenir
-};
-
-/** Bir branşla ilişkili hesaplayıcıları döner; ilişki yoksa boş dizi (bölüm o zaman gizlenir). */
+/** Bir branşla ilişkili hesaplayıcılar; ilişki yoksa boş dizi (bölüm gizlenir). */
 export function getBranchTools(slug: string): ToolRef[] {
-  const slugs = BRANCH_TOOLS[slug] || [];
-  return slugs.map((s) => TOOLS[s]).filter(Boolean);
+  return VERI[slug]?.araclar ?? [];
 }
 
 /**
- * TERS EŞLEME: bir hesaplayıcının ilişkili olduğu branş slug'larını döner.
- * Araç sayfalarındaki üst navigasyon çubuğunda ("Branş Sayfası" linki) kullanılır.
- * Bir araç birden fazla branşta geçebilir (ör. düzeltilmiş kalsiyum: nefroloji + endokrinoloji).
+ * Branşın hub kategorisi — "Tümü →" bağlantısı SÜZÜLMÜŞ listeye gitsin diye.
+ *
+ * Bağlantı bir dönem koşulsuz `/tools`a gidiyordu: kullanıcı branş şeridinden
+ * çıkıp 130 aracın tamamıyla karşılaşıyor ve süzgeci elle bulmak zorunda
+ * kalıyordu. Kategori slug'ı da üretilen dosyadan geliyor, yani şeritteki
+ * araçlarla aynı kaynağa bağlı.
+ */
+export function getBranchToolCategory(slug: string): string | null {
+  return VERI[slug]?.kategori ?? null;
+}
+
+/**
+ * TERS EŞLEME: bir hesaplayıcının ilişkili olduğu branş slug'ları.
+ * Araç sayfalarındaki üst gezinme çubuğundaki "branş sayfası" bağlantısı
+ * bunu kullanıyor. Bir araç birden fazla branşta geçebilir (ör. curb65:
+ * göğüs + enfeksiyon).
  */
 export function getToolBranchSlugs(toolSlug: string): string[] {
-  return Object.entries(BRANCH_TOOLS)
-    .filter(([, tools]) => tools.includes(toolSlug))
-    .map(([branchSlug]) => branchSlug);
+  return Object.entries(VERI)
+    .filter(([, k]) => k.araclar.some((a) => a.slug === toolSlug))
+    .map(([brans]) => brans);
 }

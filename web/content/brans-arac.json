@@ -1,0 +1,682 @@
+{
+ "kardiyoloji": {
+  "kategori": "kardiyoloji",
+  "araclar": [
+   {
+    "slug": "chads-vasc",
+    "name": "CHA₂DS₂-VASc Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "has-bled",
+    "name": "HAS-BLED Skoru",
+    "icon": "🩸"
+   },
+   {
+    "slug": "timi-ua",
+    "name": "TIMI Skoru (UA/NSTEMI)",
+    "icon": "🫀"
+   },
+   {
+    "slug": "grace",
+    "name": "GRACE Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "endocarditis",
+    "name": "Duke Kriterleri",
+    "icon": "⚔️"
+   }
+  ]
+ },
+ "nefroloji": {
+  "kategori": "nefroloji",
+  "araclar": [
+   {
+    "slug": "egfr",
+    "name": "eGFR (CKD-EPI 2021)",
+    "icon": "🧪"
+   },
+   {
+    "slug": "kdigo-aki",
+    "name": "KDIGO AKI Evrelemesi",
+    "icon": "💧"
+   },
+   {
+    "slug": "sodium",
+    "name": "Sodyum Yönetimi",
+    "icon": "🧂"
+   },
+   {
+    "slug": "abg",
+    "name": "Asit-Baz Analizi (ABG)",
+    "icon": "🩸"
+   },
+   {
+    "slug": "ktv",
+    "name": "Kt/V — Daugirdas II",
+    "icon": "🩺"
+   },
+   {
+    "slug": "osmolal-gap",
+    "name": "Serum Osmolal Gap",
+    "icon": "🧪"
+   },
+   {
+    "slug": "spot-urine",
+    "name": "Spot İdrar Hesaplamaları",
+    "icon": "🧪"
+   },
+   {
+    "slug": "corrected-calcium",
+    "name": "Düzeltilmiş Kalsiyum",
+    "icon": "🥛"
+   },
+   {
+    "slug": "anion-gap",
+    "name": "Anyon Açığı",
+    "icon": "🧬"
+   }
+  ]
+ },
+ "endokrinoloji": {
+  "kategori": "endokrinoloji",
+  "araclar": [
+   {
+    "slug": "hba1c-eag",
+    "name": "HbA1c → Ortalama Glukoz",
+    "icon": "📈"
+   },
+   {
+    "slug": "homa-ir",
+    "name": "HOMA-IR",
+    "icon": "🦋"
+   },
+   {
+    "slug": "findrisc",
+    "name": "FINDRISC",
+    "icon": "🦋"
+   },
+   {
+    "slug": "bmi",
+    "name": "BMI & İdeal Vücut Ağırlığı",
+    "icon": "🦋"
+   },
+   {
+    "slug": "bmr",
+    "name": "BMR & TDEE",
+    "icon": "🦋"
+   },
+   {
+    "slug": "steroid-dose",
+    "name": "Steroid Eşdeğer Doz",
+    "icon": "🦋"
+   },
+   {
+    "slug": "corrected-sodium",
+    "name": "Düzeltilmiş Sodyum",
+    "icon": "🧂"
+   },
+   {
+    "slug": "corrected-calcium",
+    "name": "Düzeltilmiş Kalsiyum",
+    "icon": "🥛"
+   },
+   {
+    "slug": "tirads",
+    "name": "ACR TI-RADS",
+    "icon": "🦋"
+   },
+   {
+    "slug": "dst",
+    "name": "Deksametazon Süpresyon Testi (DST)",
+    "icon": "🦋"
+   },
+   {
+    "slug": "ogtt",
+    "name": "OGTT Yorumlama",
+    "icon": "🦋"
+   },
+   {
+    "slug": "acth-stim",
+    "name": "ACTH Stimülasyon Testi",
+    "icon": "🦋"
+   },
+   {
+    "slug": "tft",
+    "name": "Tiroid Fonksiyon Testi (TFT)",
+    "icon": "🦋"
+   },
+   {
+    "slug": "gh-test",
+    "name": "Büyüme Hormonu Testleri",
+    "icon": "🦋"
+   }
+  ]
+ },
+ "gastroenteroloji": {
+  "kategori": "hepatoloji-gastro",
+  "araclar": [
+   {
+    "slug": "meld-na",
+    "name": "MELD-Na Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "child-pugh",
+    "name": "Child-Pugh Sınıflaması",
+    "icon": "🍺"
+   },
+   {
+    "slug": "glasgow-blatchford",
+    "name": "Glasgow-Blatchford Skoru",
+    "icon": "🩸"
+   },
+   {
+    "slug": "rockall",
+    "name": "Rockall Skoru",
+    "icon": "🍺"
+   },
+   {
+    "slug": "ranson",
+    "name": "Ranson Kriterleri",
+    "icon": "🍺"
+   }
+  ]
+ },
+ "enfeksiyon": {
+  "kategori": "gogus-enfeksiyon",
+  "araclar": [
+   {
+    "slug": "curb65",
+    "name": "CURB-65 Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "psi-port",
+    "name": "PSI/PORT Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "cat-copd",
+    "name": "CAT Skoru",
+    "icon": "💨"
+   },
+   {
+    "slug": "mmrc",
+    "name": "mMRC Dispne",
+    "icon": "🫁"
+   },
+   {
+    "slug": "act",
+    "name": "ACT",
+    "icon": "🌬️"
+   },
+   {
+    "slug": "bode",
+    "name": "BODE İndeksi",
+    "icon": "📊"
+   },
+   {
+    "slug": "berlin-ards",
+    "name": "Berlin ARDS Kriterleri",
+    "icon": "🫁"
+   }
+  ]
+ },
+ "gogus": {
+  "kategori": "gogus-enfeksiyon",
+  "araclar": [
+   {
+    "slug": "curb65",
+    "name": "CURB-65 Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "psi-port",
+    "name": "PSI/PORT Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "cat-copd",
+    "name": "CAT Skoru",
+    "icon": "💨"
+   },
+   {
+    "slug": "mmrc",
+    "name": "mMRC Dispne",
+    "icon": "🫁"
+   },
+   {
+    "slug": "act",
+    "name": "ACT",
+    "icon": "🌬️"
+   },
+   {
+    "slug": "bode",
+    "name": "BODE İndeksi",
+    "icon": "📊"
+   },
+   {
+    "slug": "berlin-ards",
+    "name": "Berlin ARDS Kriterleri",
+    "icon": "🫁"
+   }
+  ]
+ },
+ "hematoloji": {
+  "kategori": "hematoloji",
+  "araclar": [
+   {
+    "slug": "ipi",
+    "name": "IPI Skoru",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "flipi",
+    "name": "FLIPI",
+    "icon": "🔵"
+   },
+   {
+    "slug": "ipss-r",
+    "name": "IPSS-R",
+    "icon": "🧬"
+   },
+   {
+    "slug": "isth-dic",
+    "name": "ISTH DIC Skoru",
+    "icon": "🩹"
+   },
+   {
+    "slug": "hscore",
+    "name": "HScore",
+    "icon": "🔥"
+   }
+  ]
+ },
+ "romatoloji": {
+  "kategori": "romatoloji",
+  "araclar": [
+   {
+    "slug": "das28",
+    "name": "DAS28 (ESR/CRP)",
+    "icon": "🦴"
+   },
+   {
+    "slug": "cdai",
+    "name": "CDAI",
+    "icon": "🦴"
+   },
+   {
+    "slug": "sdai",
+    "name": "SDAI",
+    "icon": "🦴"
+   },
+   {
+    "slug": "haq-di",
+    "name": "HAQ-DI",
+    "icon": "🦴"
+   },
+   {
+    "slug": "basdai",
+    "name": "BASDAI",
+    "icon": "🦴"
+   },
+   {
+    "slug": "asdas",
+    "name": "ASDAS-CRP/ESR",
+    "icon": "🦴"
+   },
+   {
+    "slug": "dapsa",
+    "name": "DAPSA",
+    "icon": "🦴"
+   },
+   {
+    "slug": "fibromiyalji",
+    "name": "Fibromiyalji 2016",
+    "icon": "🦴"
+   },
+   {
+    "slug": "sle",
+    "name": "SLEDAI-2K",
+    "icon": "🧬"
+   },
+   {
+    "slug": "rapid3",
+    "name": "RAPID3",
+    "icon": "⚡"
+   },
+   {
+    "slug": "gout-acr",
+    "name": "Gut ACR 2015",
+    "icon": "💎"
+   },
+   {
+    "slug": "essdai",
+    "name": "ESSDAI",
+    "icon": "💧"
+   },
+   {
+    "slug": "mrss",
+    "name": "mRSS",
+    "icon": "🖐️"
+   },
+   {
+    "slug": "behcet",
+    "name": "Behçet — ICBD 2014",
+    "icon": "👁️"
+   }
+  ]
+ },
+ "onkoloji": {
+  "kategori": "onkoloji",
+  "araclar": [
+   {
+    "slug": "bsa",
+    "name": "Vücut Yüzey Alanı (BSA)",
+    "icon": "📐"
+   },
+   {
+    "slug": "ecog",
+    "name": "ECOG Performans Durumu",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "calvert",
+    "name": "Calvert Formülü",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "mascc",
+    "name": "MASCC Risk İndeksi",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "khorana",
+    "name": "Khorana Skoru",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "anc",
+    "name": "ANC Hesaplama",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "ipi",
+    "name": "IPI Skoru",
+    "icon": "🎗️"
+   }
+  ]
+ },
+ "palyatif": {
+  "kategori": "palyatif",
+  "araclar": [
+   {
+    "slug": "karnofsky",
+    "name": "Karnofsky (KPS)",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "pps",
+    "name": "Palliative Performance Scale",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "ppi",
+    "name": "Palyatif Prognostik İndeks (PPI)",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "pap-score",
+    "name": "PaP Score",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "esas",
+    "name": "ESAS",
+    "icon": "🕊️"
+   }
+  ]
+ },
+ "klinik-nutrisyon": {
+  "kategori": "nutrisyon",
+  "araclar": [
+   {
+    "slug": "nrs-2002",
+    "name": "NRS-2002",
+    "icon": "🍏"
+   },
+   {
+    "slug": "must",
+    "name": "MUST",
+    "icon": "🍏"
+   },
+   {
+    "slug": "mna",
+    "name": "MNA® (Kısa Form)",
+    "icon": "👴"
+   },
+   {
+    "slug": "sga",
+    "name": "SGA",
+    "icon": "🍏"
+   },
+   {
+    "slug": "glim",
+    "name": "GLIM Kriterleri",
+    "icon": "📊"
+   },
+   {
+    "slug": "conut",
+    "name": "CONUT",
+    "icon": "🍏"
+   },
+   {
+    "slug": "pni",
+    "name": "PNI",
+    "icon": "🍏"
+   },
+   {
+    "slug": "gnri",
+    "name": "GNRI",
+    "icon": "🍏"
+   },
+   {
+    "slug": "refeeding-risk",
+    "name": "Refeeding Sendromu Riski",
+    "icon": "🍏"
+   },
+   {
+    "slug": "nutrition-needs",
+    "name": "Enerji & Protein Gereksinimi",
+    "icon": "⚖️"
+   }
+  ]
+ },
+ "genel-dahiliye": {
+  "kategori": "acil",
+  "araclar": [
+   {
+    "slug": "wells-pe",
+    "name": "Wells Skoru (PE)",
+    "icon": "🫁"
+   },
+   {
+    "slug": "wells-dvt",
+    "name": "Wells Skoru (DVT)",
+    "icon": "🦵"
+   },
+   {
+    "slug": "perc",
+    "name": "PERC Kriterleri",
+    "icon": "🔍"
+   },
+   {
+    "slug": "padua",
+    "name": "Padua Skoru",
+    "icon": "🩸"
+   },
+   {
+    "slug": "qsofa",
+    "name": "qSOFA Skoru",
+    "icon": "🚨"
+   },
+   {
+    "slug": "sofa",
+    "name": "SOFA Skoru",
+    "icon": "🩺"
+   },
+   {
+    "slug": "news2",
+    "name": "NEWS2 Skoru",
+    "icon": "🚨"
+   },
+   {
+    "slug": "gcs",
+    "name": "Glasgow Koma Skalası",
+    "icon": "🧠"
+   },
+   {
+    "slug": "ciwa-ar",
+    "name": "CIWA-Ar",
+    "icon": "🍺"
+   },
+   {
+    "slug": "4t-hit",
+    "name": "4T Skoru — HIT",
+    "icon": "🩸"
+   },
+   {
+    "slug": "heart",
+    "name": "HEART Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "timi-ua",
+    "name": "TIMI Skoru (UA/NSTEMI)",
+    "icon": "🫀"
+   },
+   {
+    "slug": "nihss",
+    "name": "NIHSS",
+    "icon": "🧠"
+   },
+   {
+    "slug": "rts",
+    "name": "RTS",
+    "icon": "🚑"
+   },
+   {
+    "slug": "canadian-ct",
+    "name": "Kanada BT Kural",
+    "icon": "🩻"
+   },
+   {
+    "slug": "charlson",
+    "name": "Charlson Komorbidite İndeksi",
+    "icon": "📋"
+   },
+   {
+    "slug": "unit-converter",
+    "name": "Birim Çevirici",
+    "icon": "🔄"
+   },
+   {
+    "slug": "nac-infuzyon",
+    "name": "NAC İnfüzyonu",
+    "icon": "💊"
+   },
+   {
+    "slug": "digoksin-toksisitesi",
+    "name": "Digoksin Toksisitesi",
+    "icon": "🫀"
+   },
+   {
+    "slug": "lipid-emulsiyon",
+    "name": "Lipid Emülsiyon (LAST)",
+    "icon": "🧴"
+   },
+   {
+    "slug": "naloksan-infuzyon",
+    "name": "Naloksan İnfüzyonu",
+    "icon": "💊"
+   },
+   {
+    "slug": "fomepizol",
+    "name": "Fomepizol Dozu",
+    "icon": "🧪"
+   },
+   {
+    "slug": "hiperkalemi-tedavi",
+    "name": "Hiperkalemi Tedavisi",
+    "icon": "⚡"
+   },
+   {
+    "slug": "potasyum-replasman",
+    "name": "Potasyum Replasmanı",
+    "icon": "🍌"
+   },
+   {
+    "slug": "magnezyum-infuzyon",
+    "name": "Magnezyum İnfüzyonu",
+    "icon": "⚡"
+   },
+   {
+    "slug": "kalsiyum-infuzyon",
+    "name": "Kalsiyum İnfüzyonu",
+    "icon": "🦴"
+   },
+   {
+    "slug": "fosfat-replasman",
+    "name": "Fosfat Replasmanı",
+    "icon": "🧬"
+   },
+   {
+    "slug": "bikarbonat-infuzyon",
+    "name": "Bikarbonat Açığı",
+    "icon": "🫧"
+   },
+   {
+    "slug": "vazoaktif-infuzyon",
+    "name": "Vazoaktif İnfüzyon",
+    "icon": "💧"
+   },
+   {
+    "slug": "sedasyon-infuzyon",
+    "name": "Sedasyon & Analjezi İnfüzyonu",
+    "icon": "💤"
+   },
+   {
+    "slug": "heparin-nomogram",
+    "name": "Heparin Nomogramı",
+    "icon": "🩹"
+   },
+   {
+    "slug": "antikoagulan-geri-dondurme",
+    "name": "Antikoagülan Geri Döndürme",
+    "icon": "🩹"
+   },
+   {
+    "slug": "tromboliz-doz",
+    "name": "Tromboliz Dozu (rt-PA)",
+    "icon": "🧠"
+   },
+   {
+    "slug": "status-epileptikus",
+    "name": "Status Epileptikus",
+    "icon": "⚡"
+   },
+   {
+    "slug": "dka-infuzyon",
+    "name": "DKA Kurulumu",
+    "icon": "🩸"
+   },
+   {
+    "slug": "infusion",
+    "name": "İnfüzyon Hesaplama",
+    "icon": "💉"
+   }
+  ]
+ }
+}

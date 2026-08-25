@@ -63,6 +63,120 @@ function araclariOku() {
   return [...bulunan.values()];
 }
 
+/**
+ * KATEGORİ YAPISIYLA okuma — `araclariOku` düz bir liste veriyor, burada
+ * araçların hangi kategoride durduğu da korunuyor.
+ *
+ * Buna ihtiyaç `app/lib/tools.ts` içindeki ELLE TUTULAN `BRANCH_TOOLS`
+ * listesinin bayatlaması yüzünden doğdu. ÖLÇÜLDÜ (canlı, 130 araçlık
+ * kütüphanede): branş sayfasının şeridi ile hub'ın aynı branş kategorisi
+ * İKİ BRANŞTA HİÇ ÖRTÜŞMÜYORDU —
+ *
+ *   hematoloji : şerit wells-dvt · has-bled · glasgow-blatchford
+ *                hub    ipi · flipi · ipss-r · isth-dic · hscore     ortak 0
+ *   palyatif   : şerit ecog
+ *                hub    karnofsky · pps · ppi · pap-score · esas     ortak 0
+ *
+ * Yani hematoloji kütüphanesini okuyan biri, hematolojiye özgü hiçbir skora
+ * o sayfadan ulaşamıyordu. Liste 34 araçlık dönemde yazılmış ve kütüphane
+ * 130'a çıkarken güncellenmemişti — deponun "elle yazılan liste içerik
+ * büyürken sessizce yalana dönüşür" kuralının araç tarafındaki hâli.
+ *
+ * Çare listeyi elle düzeltmek DEĞİL (aynı kusur geri gelir), TÜRETMEK:
+ * `content/brans-arac.json` buradan üretiliyor ve `--kontrol` bayatlığı
+ * yakalıyor.
+ */
+function kategorileriOku() {
+  const s = fs.readFileSync(KAYNAK, 'utf8');
+  const parcalar = s.split(/category:\s*"/).slice(1);
+  const cikti = [];
+  for (const p of parcalar) {
+    const tirnak = p.indexOf('"');
+    if (tirnak < 0) continue;
+    const ad = p.slice(0, tirnak);
+    const bas = p.match(/slug:\s*"([a-z0-9-]+)"\s*,\s*\n?\s*icon:\s*"([^"]*)"/);
+    if (!bas) continue;
+    // Kategori başlığının kendi slug/icon çifti üçlü desene uymaz, elenir.
+    const re = /slug:\s*"([^"]+)"\s*,\s*name:\s*"([^"]*)"\s*,\s*desc:\s*"([^"]*)"/g;
+    const items = [];
+    let m;
+    while ((m = re.exec(p))) items.push({ slug: m[1], name: m[2] });
+    cikti.push({ ad, slug: bas[1], icon: bas[2], items });
+  }
+  return cikti;
+}
+
+/**
+ * Aracın KENDİ ikonu — sayfasındaki rozetten okunuyor.
+ *
+ * Kategori ikonunu kullanmak kolay olurdu ama şeritteki her araç aynı
+ * gliften olurdu; bugünkü elle yazılmış listede araçlar ayrı ikonlar
+ * taşıyor ve bu görsel ayırt ediciliği kaybetmek gerileme olurdu.
+ *
+ * Rozetin şekli 130 araçta birebir aynı (`w-14 h-14 …`), belgede kayıtlı.
+ * İki yazım var: glif doğrudan, ya da bir iç `<span>` içinde. Okunamazsa
+ * kategori ikonuna düşülür — yani ayrıştırma kusuru sessiz bir boşluk
+ * üretmez.
+ */
+function aracIkonu(slug, yedek) {
+  try {
+    const p = fs.readFileSync(path.join(ARAC_DIZIN, slug, 'page.tsx'), 'utf8');
+    const m = p.match(/w-14 h-14[^>]*>([\s\S]{0,80}?)<\/div>/);
+    if (m) {
+      const glif = m[1].replace(/<[^>]*>/g, '').trim();
+      if (glif && glif.length <= 8) return glif;
+    }
+  } catch {
+    /* sayfa yoksa yedeğe düş */
+  }
+  return yedek;
+}
+
+/**
+ * İçerik branşı -> hub kategorisi. TEK ELLE TUTULAN eşleme bu ve 13 satır;
+ * araç listeleri ondan TÜRETİLİYOR, yani kütüphane büyüdükçe kendiliğinden
+ * güncelleniyor.
+ *
+ * Sıra önemli: şerit ilk kategorilerden başlayarak dolduruluyor ve arayüz
+ * onu kırpıyor. `journal-club` bilerek yok — ilişkili hesaplayıcısı olmayan
+ * tek branş, bölümü gizleniyor.
+ */
+const BRANS_KATEGORI = {
+  kardiyoloji: ['kardiyoloji'],
+  nefroloji: ['nefroloji'],
+  endokrinoloji: ['endokrinoloji', 'endokrin-testler'],
+  gastroenteroloji: ['hepatoloji-gastro'],
+  enfeksiyon: ['gogus-enfeksiyon'],
+  gogus: ['gogus-enfeksiyon'],
+  hematoloji: ['hematoloji'],
+  romatoloji: ['romatoloji'],
+  onkoloji: ['onkoloji'],
+  palyatif: ['palyatif'],
+  'klinik-nutrisyon': ['nutrisyon'],
+  'genel-dahiliye': ['acil', 'genel', 'infuzyon'],
+};
+
+function bransAracUret(sluglar) {
+  const kategoriler = new Map(kategorileriOku().map((k) => [k.slug, k]));
+  const cikti = {};
+  for (const [brans, katSluglari] of Object.entries(BRANS_KATEGORI)) {
+    const gorulen = new Set();
+    const araclar = [];
+    for (const ks of katSluglari) {
+      const kat = kategoriler.get(ks);
+      if (!kat) continue;
+      for (const it of kat.items) {
+        // Sayfası olmayan slug şeride girmez; ölü bağlantı üretmemek için.
+        if (!sluglar.has(it.slug) || gorulen.has(it.slug)) continue;
+        gorulen.add(it.slug);
+        araclar.push({ slug: it.slug, name: it.name, icon: aracIkonu(it.slug, kat.icon) });
+      }
+    }
+    if (araclar.length) cikti[brans] = { kategori: katSluglari[0], araclar };
+  }
+  return cikti;
+}
+
 /** "MUST" + "Malnutrition Universal Screening Tool — ..." -> "MUST — Malnutrition Universal Screening Tool" */
 function baslikUret(name, desc) {
   const pay = BASLIK_SINIRI - name.length - 3; // " — " için
@@ -234,8 +348,48 @@ function kontrolEt(sayfasiOlan) {
     return;
   }
 
+  /* BRANŞ-ARAÇ EŞLEMESİ de bayatlayabilir ve bayatlaması SESSİZDİR:
+     kütüphaneye yeni bir hematoloji skoru eklendiğinde branş şeridi onu
+     göstermez ve hiçbir şey hata vermez. Elle tutulan sürümde tam olarak bu
+     oldu (bkz. `kategorileriOku` başlığı). */
+  let bransFark = null;
+  try {
+    const mevcutBA = JSON.parse(
+      fs.readFileSync(path.join(KOK, 'content', 'brans-arac.json'), 'utf8')
+    );
+    const beklenenBA = bransAracUret(sluglar);
+    if (JSON.stringify(mevcutBA) !== JSON.stringify(beklenenBA)) {
+      const mb = Object.keys(mevcutBA);
+      const bb = Object.keys(beklenenBA);
+      bransFark = {
+        eksikBrans: bb.filter((x) => !mb.includes(x)),
+        fazlaBrans: mb.filter((x) => !bb.includes(x)),
+        degisen: bb.filter(
+          (x) =>
+            mb.includes(x) && JSON.stringify(mevcutBA[x]) !== JSON.stringify(beklenenBA[x])
+        ),
+      };
+    }
+  } catch {
+    bransFark = { okunamadi: true };
+  }
+
+  if (bransFark) {
+    console.error('content/brans-arac.json BAYAT — `node scripts/arac-metadata.cjs` çalıştır.');
+    if (bransFark.okunamadi) console.error('  dosya okunamadı ya da bozuk');
+    else {
+      if (bransFark.eksikBrans.length) console.error(`  eksik branş : ${bransFark.eksikBrans.join(', ')}`);
+      if (bransFark.fazlaBrans.length) console.error(`  fazla branş : ${bransFark.fazlaBrans.join(', ')}`);
+      if (bransFark.degisen.length) console.error(`  araç listesi değişmiş: ${bransFark.degisen.join(', ')}`);
+    }
+    process.exitCode = 1;
+    return;
+  }
+
   if (!eksik.length && !fazla.length && !degisen.length) {
-    console.log(`arac-index.json senkron (${beklenen.length} araç) · tools.ts slug'ları geçerli.`);
+    console.log(
+      `arac-index.json senkron (${beklenen.length} araç) · brans-arac.json senkron · tools.ts slug'ları geçerli.`
+    );
     return;
   }
   console.error('arac-index.json BAYAT — `node scripts/arac-metadata.cjs` çalıştır.');
@@ -336,6 +490,27 @@ function main() {
     ) + '\n'
   );
   console.log(`yazıldı: content/arac-index.json (${sayfasiOlan.length} araç)`);
+
+  /* Branş -> araç eşlemesi de üretiliyor; gerekçesi `kategorileriOku`
+     başlığında. Aynı sıfır koruması burada da geçerli: boş sonuç
+     "ilişki yok" değil "ayrıştırma bozuldu" demektir. */
+  const bransArac = bransAracUret(new Set(sayfasiOlan.map((a) => a.slug)));
+  if (Object.keys(bransArac).length === 0) {
+    console.error(
+      'HATA: branş-araç eşlemesi 0 branş üretti — kategori ayrıştırması bozuldu.\n' +
+        'content/brans-arac.json DEĞİŞTİRİLMEDİ.'
+    );
+    process.exitCode = 1;
+    return;
+  }
+  fs.writeFileSync(
+    path.join(KOK, 'content', 'brans-arac.json'),
+    JSON.stringify(bransArac, null, 1) + '\n'
+  );
+  const toplamBag = Object.values(bransArac).reduce((a, b) => a + b.araclar.length, 0);
+  console.log(
+    `yazıldı: content/brans-arac.json (${Object.keys(bransArac).length} branş, ${toplamBag} bağ)`
+  );
 
   console.log(`araç kaydı: ${araclar.length}`);
   console.log(`yazılan layout: ${yazilan}`);
