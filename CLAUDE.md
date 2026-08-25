@@ -9066,3 +9066,68 @@ basılı görünüyor. Ölçüt aday üretir; kararı **hükmün türü** verir.
 `psi-port` ayrıca kendi iki adımlı algoritmasını uyguluyor (Adım 1: 50 yaş
 altı, komorbiditesiz, vitalleri normal hasta puanlanmadan Sınıf I) — sayfanın
 alt notu da bunu yazıyor ve kod birebir uyguluyor.
+
+### 130 ARAÇ SAYFASI SUNUCU HTML'İNDE TARANDI — h1 · main · canonical · site haritası
+
+Belgede ölçüt yazılıydı (*"her sayfanın SUNUCU HTML'inde `<h1>` say; sıfır
+çıkan sayfa ya başlıksız ya da sunucuda hiç üretilmiyor demektir"*) ama
+araçlara hiç sürülmemişti — oysa site haritasındaki adreslerin çoğu onlar ve
+açık taraf huninin ağzı.
+
+**Üç ölçüt, 130 aracın 130'unda temiz:**
+
+| ölçüt | sonuç |
+|---|---|
+| HTTP durumu | 130/130 **200** |
+| sunucu HTML'inde `<h1>` | 130/130 **tam bir tane** |
+| sunucu HTML'inde `<main>` | 130/130 **tam bir tane** (çift landmark yok) |
+| canonical kendi slug'ını gösteriyor | **130/130** |
+| `localhost` canonical | **0** |
+| `noindex` taşıyan araç | **0** |
+
+En küçük gövdeler bile dolu: `gout-acr` 5817 · `pni` 6017 · `hba1c-eag` 6237
+bayt — yani araç sayfaları `"use client"` olmalarına rağmen sunucuda gerçekten
+basılıyor, kabuk değil.
+
+**Site haritası ↔ hub SENKRON ve bu bir tutarlılık kanıtı:** haritada
+**130 araç adresi**, hub'da **130 araç** — birebir. `sledai2k` haritada YOK
+(yönlendirildi, doğru). Toplam adres 558.
+
+Bu sayı bir dönem ayrışıyordu (belgede "115 araç" kayıtlı, hub'da 114 vardı).
+`sledai2k` birleştirmesinden sonra iki taraf da kendiliğinden hizalandı —
+"sayı yazma, saydır" mimarisinin araç SİLİNDİKTEN sonra da tuttuğunun ikinci
+kanıtı.
+
+**Ölçüm notu — `fetch` ile yönlendirme ölçme.** `/tools/sledai2k` bu taramada
+"Failed to fetch" verdi ve bir an kırık sanıldı. Değil: çapraz kaynaklı bir
+`fetch` 308 yanıtını izlerken CORS başlığı bulamıyor. Aynı adres tarayıcıyla
+GEZİLDİĞİNDE doğru çalışıyor (geçen tur ölçüldü: `/tools/sle`, h1 "SLEDAI-2K",
+24 tanımlayıcı, tavan 105). **Yönlendirmeyi `fetch` ile değil gezinmeyle ölç.**
+
+**Ölçüm tuzağı — blok başına 64 `fetch` zaman aşımına uğradı.** Belgede
+kayıtlı iframe sınırının `fetch` tarafındaki hâli; 33'erlik bloklar sorunsuz
+geçti. Bir taramayı bölmek zorunda kaldığında her bloğun **ölçtüğü sayıyı**
+ayrıca raporla — yoksa düşen blok "temiz" sanılır.
+
+### Formül–varyant ayrışması sınıfı tarandı — tek örnekmiş, o da düzeltilmiş
+
+`gnri`nin kusuru (ekranda basılan formül koddaki cinsiyet dalını yansıtmıyordu)
+ölçüte çevrildi: **dallanması OLAN ve ekranda formül BASAN araçlarda, formül
+satırı dala göre değişiyor mu?**
+
+Dallanması ve formül satırı olan **5 araç** çıktı ve yeni kusur yok:
+
+| araç | durum |
+|---|---|
+| `gnri` | formül satırı DİNAMİK — varyantı adıyla yazıyor ("Lorentz, kadın: … /2,5"); önceki turda düzeltilmiş |
+| `bmr` | cinsiyete göre dallanıyor (+5 / −161) ama ekranda KATSAYI hiç basmıyor, yalnızca yöntemi adlandırıyor ("Mifflin–St Jeor") — çelişki yok |
+| `antikoagulan-geri-dondurme` · `digoksin-toksisitesi` | formül satırları zaten şablon dizesi, seçilen değerlerden türüyor |
+| `sodium` | eşleşen satırlar formül değil, sıvı bölmesi açıklaması |
+
+**Ayrım: `gnri` bir KATSAYI ilan edip yanlışını basıyordu; `bmr` hiç ilan
+etmiyor.** İlan edilmeyen bir şey ayrışamaz — eksik şeffaflık kusur değil.
+
+Ölçüt iki kez çöpe çıktı: `>…<` deseni JSX metni sanıp KAYNAK KODU yakaladı
+(3 sahte aday), sonra deponun formül satırlarında kullandığı `×` işaretine
+bağlanınca liste karar verilebilir hâle geldi. Belgede zaten kayıtlı: bu
+depoda ekrana basılan formüller kaynak tarayan ölçütler için gürültü kaynağı.
