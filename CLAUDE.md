@@ -8080,3 +8080,83 @@ ayrı bir metin düğümü yok. Elle bakılan üç araçta (`egfr` · `anion-gap
 Kayda değer olan: **iki farklı kör ölçüt, iki farklı sahte liste üretti** ve
 ikisi de "eksik" diyordu. Bir kabuk parçasının varlığını ararken glifin
 metinden AYRI mı yoksa İÇİNDE mi olduğunu önce gör.
+
+### "SEÇİM PUANLA SAKLANIYOR" BEŞİNCİ KEZ — ve ad-bağımsız ölçütüm de kaçırdı
+
+`apache2` · `gout-acr` · `pap-score` · `nutrition-needs` derken beşincisi:
+`tirads`. Kompozisyon kategorisinde iki şık aynı puanı taşıyor ve ikisi
+klinik olarak AYRI şeyler:
+
+```
+"Kistik veya neredeyse tamamen kistik"  +0
+"Süngerimsi (spongiform)"               +0
+```
+
+Tarayıcıda ölçüldü — "Süngerimsi"e tıklandığında **iki düğme birden**
+`aria-pressed="true"`. Toplam puan doğru (ikisi de 0), ama kullanıcı hangi
+kompozisyonu seçtiğini göremiyor. Aracın kendi notu da ikisini AYRI ele
+alıyor: *"Spongiform nodüller ve tamamen kistik nodüller benign kabul
+edilir."*
+
+**ÖLÇÜT ÜÇÜNCÜ KEZ DARALTILDI — ve bu kez sebep DOLAYLILIK.** Geçen turda
+ad bağımlılığı kaldırılmıştı (`pts` yerine herhangi bir sayısal alan). Ama
+ölçüt hâlâ karşılaştırmayı `aria-pressed={…}` süslü parantezinin İÇİNDE
+arıyordu. `tirads`te karşılaştırma bir satır yukarı taşınmış:
+
+```tsx
+const isSelected = isMulti(cat) ? …includes(opt.v) : answers[cat.id] === opt.v;
+…
+<button aria-pressed={isSelected} …>
+```
+
+Belgede aynı ders `kapi-kapsam-denetim` için zaten kayıtlı: *"kapı DOLAYLI
+olabiliyor… kapıdaki her tanımlayıcının tanımı bir düzey açılınca 34 → 4
+oldu."* Şimdi aynısı vurgulama tarafında yaşandı.
+
+**Ölçütün üç kuşağı ve her birinin kaçırdığı:**
+
+| kuşak | ölçüt | kaçırdığı |
+|---|---|---|
+| 1 | `=== opt.pts\|value\|puan` | `nutrition-needs` (alan adı `kcal`) |
+| 2 | `=== X.<herhangi sayısal alan>`, `aria-pressed` içinde | `tirads` (karşılaştırma değişkene taşınmış) |
+| 3 | + bir düzey dolaylılık | — |
+
+Aktarılabilir kural: **bir kalıbı ararken hem ADI hem YERİ serbest bırak.**
+Karşılaştırma bir değişkende, bir yardımcı fonksiyonda ya da bir `useMemo`
+içinde olabilir; kalıbın kimliği "durum bir nesnenin sayısal alanıyla
+karşılaştırılıyor" olmasıdır, nerede yazıldığı değil.
+
+**Çoklu seçim kategorisi de aynı kusuru taşıyordu:** ekojen odaklar dizisi
+PUANLARI tutuyordu, yani aynı puanlı iki odak birbirini silerdi. O da indekse
+çevrildi.
+
+**Doğrulama, ikisi negatif kontrol ve elle hesaplı:**
+
+| seçim | sonuç |
+|---|---|
+| "Süngerimsi" | **tek** düğme basılı (önce iki) · TR1 |
+| "Kistik" | **tek** düğme basılı · TR1 |
+| **negatif** — Solid+Çok hipoekoik+Dikine+Lobüle+Punktat | **13 puan · TR5** (2+3+3+2+3) |
+| **negatif** — Solid+Hipoekoik+Enine+Düzgün+[Makro **ve** Punktat] | **7 puan · TR5** (2+2+0+0+**max(1,3)**) |
+
+Son satır belirleyici: çoklu seçimde İKİ odak birden basılı ve toplam yalnızca
+**3** sayıyor — yani dizi artık indeks tutuyor ama "en yüksek puan alınır"
+kuralı bozulmamış.
+
+### Ekranda ilan edilen HESAP KURALI ile kod — sınıf tarandı
+
+`haq-di` ve `murray` aynı sınıftan çıkınca ölçüt yazıldı: ekrana basılan
+metinlerde hesap kuralı bildiren kalıplar (`en az N olarak değerlendirilir` ·
+`bölünür` · `kullanılan parametre` · `hesaplanamaz` · `en yüksek … alınır` ·
+`ile sınırlandırılır`). 12 metin çıktı ve elle karara bağlandı:
+
+| araç | verdikt |
+|---|---|
+| `haq-di` · `murray` | bu oturumda düzeltildi |
+| `abg` · `anc` · `calvert` | kural UYGULANIYOR (ölçüldü) |
+| `psi-port` | **iki adımlı algoritma UYGULANIYOR** — Adım 1 kodda var, düşük riskli hasta puanlanmadan Sınıf I'e gidiyor |
+| `tirads` | kural uygulanıyor (kompozisyon 0 → TR1), ama seçim kusuru YUKARIDA |
+| `nutrition-needs` | *"obez hastada ideal ağırlık baz alınmalıdır"* — kullanıcıya TALİMAT; araç boy bilmediği için hesaplayamaz, doğru karar |
+| `cat-copd` · `essdai` · `gcs` · `status-epileptikus` | yorum/klinik notu, hesap kuralı değil |
+
+Ölçütün değeri: 12 metni okumak ucuz, ve sınıf iki kez gerçek kusur verdi.

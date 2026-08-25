@@ -100,13 +100,34 @@ export default function TiradsPage() {
   const [answers, setAnswers]   = React.useState<Record<CatId, number | number[]>>({} as Record<CatId, number | number[]>);
   const [size, setSize]         = React.useState("");
 
-  const setAnswer = (catId: CatId, optV: number, multi: boolean) => {
+  /**
+   * SEÇİM PUANLA DEĞİL İNDEKSLE SAKLANIYOR.
+   *
+   * Vurgulama `answers[cat.id] === opt.v` ile yapılıyordu, yani seçimin
+   * kimliği PUAN DEĞERİYDİ. Kompozisyon kategorisinde iki şık aynı puanı
+   * taşıyor ve ikisi de klinik olarak AYRI şeyler:
+   *
+   *   "Kistik veya neredeyse tamamen kistik"  +0
+   *   "Süngerimsi (spongiform)"               +0
+   *
+   * Tarayıcıda ölçüldü — "Süngerimsi"e tıklandığında İKİ düğme birden
+   * `aria-pressed="true"` oluyordu. Toplam puan doğru (ikisi de 0), ama
+   * kullanıcı hangi kompozisyonu seçtiğini göremiyor; ekran okuyucu tek
+   * grupta iki seçili düğme bildiriyor. Aracın kendi notu da spongiform ile
+   * kistiği AYRI ele alıyor ("Spongiform nodüller ve tamamen kistik
+   * nodüller benign kabul edilir").
+   *
+   * `apache2` · `pap-score` · `nutrition-needs` ile aynı sınıf, beşinci
+   * örnek. Çoklu seçim kategorisinde de aynı sorun vardı: dizi PUANLARI
+   * tutuyordu, yani aynı puanlı iki odak birbirini siler.
+   */
+  const setAnswer = (catId: CatId, optIdx: number, multi: boolean) => {
     if (!multi) {
-      setAnswers(prev => ({ ...prev, [catId]: optV }));
+      setAnswers(prev => ({ ...prev, [catId]: optIdx }));
     } else {
       setAnswers(prev => {
         const cur = (prev[catId] as number[] | undefined) ?? [];
-        const next = cur.includes(optV) ? cur.filter(x => x !== optV) : [...cur, optV];
+        const next = cur.includes(optIdx) ? cur.filter(x => x !== optIdx) : [...cur, optIdx];
         return { ...prev, [catId]: next };
       });
     }
@@ -116,14 +137,15 @@ export default function TiradsPage() {
   const isMulti = (cat: typeof CATEGORIES[number]) => "multi" in cat && !!cat.multi;
   const catNote = (cat: typeof CATEGORIES[number]) => ("note" in cat ? cat.note : undefined);
 
+  /* Durum artık İNDEKS tutuyor; puan seçenek dizisinden okunuyor. */
   const catScore = (cat: typeof CATEGORIES[number]): number | null => {
     const ans = answers[cat.id];
     if (ans === undefined) return null;
     if (isMulti(cat)) {
       const arr = ans as number[];
-      return arr.length === 0 ? null : Math.max(...arr);
+      return arr.length === 0 ? null : Math.max(...arr.map(i => cat.opts[i].v));
     }
-    return ans as number;
+    return cat.opts[ans as number].v;
   };
 
   const scores = CATEGORIES.map(c => catScore(c));
@@ -181,12 +203,12 @@ export default function TiradsPage() {
             </div>
             {catNote(cat) && <p className="text-[10px] font-bold text-slate-400 mb-3">{catNote(cat)}</p>}
             <div className="space-y-2 mt-3">
-              {cat.opts.map(opt => {
+              {cat.opts.map((opt, optIdx) => {
                 const isSelected = isMulti(cat)
-                  ? ((answers[cat.id] as number[] | undefined) ?? []).includes(opt.v)
-                  : answers[cat.id] === opt.v;
+                  ? ((answers[cat.id] as number[] | undefined) ?? []).includes(optIdx)
+                  : answers[cat.id] === optIdx;
                 return (
-                  <button aria-pressed={isSelected} key={opt.label} type="button" onClick={() => setAnswer(cat.id, opt.v, isMulti(cat))}
+                  <button aria-pressed={isSelected} key={opt.label} type="button" onClick={() => setAnswer(cat.id, optIdx, isMulti(cat))}
                     className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between gap-3
                       ${isSelected ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                     <span className={`text-sm font-bold leading-snug ${isSelected ? 'text-white' : 'text-blue-950'}`}>{opt.label}</span>
