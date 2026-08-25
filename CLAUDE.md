@@ -7864,3 +7864,77 @@ Dördüncü satır belirleyici: yeni kapı, var olan kırpma özelliğini öldü
 değiştirmiyorsa sınır koymak kozmetiktir.** Ayrım, çıktının bir SAYI mı yoksa
 bir TALİMAT mı olduğunda: `calvert` mg cinsinden doz basıyor, `tft` bir örüntü
 adı.
+
+### "PUANLA SAKLANAN SEÇİM" ÜÇÜNCÜ KEZ ÇIKTI — ve taramam onu ALAN ADI yüzünden kaçırmıştı
+
+`apache2` · `gout-acr` · `pap-score` derken dördüncüsü: `nutrition-needs`.
+Şablon düğmeleri `stressFactor === lvl.kcal` ile vurgulanıyordu, yani seçimin
+kimliği KCAL DEĞERİYDİ. İki şablon aynı kcal'i taşıyor:
+
+```
+"Akut Hastalık / Post-Op"      30 kcal/kg · 1,2 g/kg
+"Geriatrik / Malnütrisyonlu"   30 kcal/kg · 1,2 g/kg
+```
+
+Tarayıcıda ölçüldü — "Geriatrik"e tıklandığında **iki düğme birden**
+`aria-pressed="true"` oluyordu. Hesap doğru (ikisi de aynı katsayı), ama
+kullanıcı hangi şablonu seçtiğini göremiyor.
+
+**ÖLÇÜTÜM NEDEN KAÇIRDI:** `pap-score` turunda yazdığım tarama
+"puanla karşılaştırma" için `=== opt.pts|value|puan` biçimlerini arıyordu.
+Burada alan adı **`kcal`**. Yani ölçüt kusurun ŞEKLİNİ değil, o şeklin bir
+depodaki ADLANDIRMASINI arıyordu.
+
+Aktarılabilir kural: **bir kalıbı ararken alan ADINA bağlanma — kalıbın kendisi
+"bir dizi nesnenin sayısal alanıyla karşılaştırılan durum" biçimidir**, alan
+`pts`, `value`, `kcal`, `pro` ya da başka bir şey olabilir. Daha genel ölçüt:
+`durum === X.<herhangiSayısalAlan>` + aynı dizide o alanın tekrar eden değeri.
+
+Çare `pap-score` ile aynı: seçim İNDEKSLE saklanıyor.
+
+**KENDİ DÜZELTMEM İKİNCİ BİR AYRIŞMA AÇACAKTI — ölçümden önce kapatıldı.**
+Araçta şablonların yanında iki manuel sürgü var (kcal/kg ve g/kg). Seçim
+indekse taşınınca sürgüyle oynayan kullanıcıda şablon HÂLÂ seçili görünecekti,
+oysa değerler artık o şablonun değerleri değil. Sürgüler artık seçimi
+temizliyor (`setSecilenSablon(null)`).
+
+**Doğrulama beş vaka, üçü negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| açılış | tek şablon basılı ("Normal / Stabil") |
+| "Geriatrik" tıklandı | **tek** düğme basılı (önce iki) |
+| "Akut" tıklandı | **tek** düğme basılı — ikisi ayrışıyor |
+| **negatif** — sürgü 28'e çekildi | **hiçbir şablon basılı değil** |
+| **negatif** — 70 kg · Ağır Sepsis | **2450 kcal · 105,0 g** (70×35 · 70×1,5) |
+| **negatif** — 70 kg · Obezite | **1400 kcal · 140,0 g** (70×20 · 70×2,0) |
+
+ESPEN katsayıları da yayımlanmış hâliyle karşılaştırıldı ve doğru
+(25/30/35/30/20 kcal/kg · 1,0/1,2/1,5/1,2/2,0 g/kg). Obezitede protein hedefi
+ideal ağırlığa göre olmalı; araç bunu ZATEN söylüyor ("obez hastada 'ideal
+ağırlık' baz alınmalıdır") — ölçüldü, eksik değil.
+
+### Örnek değer ile aracın kendi sınırı — 37 alan ölçüldü, çelişki yok
+
+Bu oturumda ~20 araca makullük sınırı kondu. Kendi işimi sınamanın doğrudan
+yolu: **`placeholder="ör. N"` değeri, o alanın kapısından geçiyor mu?**
+Geçmiyorsa araç kendi örneğini reddediyor demektir.
+
+37 örnek değer ölçüldü, **0 çelişki**. Ölçüt kör değil: tohumlanmış bir
+karşıt örnek (`ör. 50` + kapı `1–12`) yakalanıyor.
+
+### Ekranda ilan edilen aralık ile kapı — tarandı, yeni kusur yok
+
+`calvert` ("Tipik: 4–6") ve `basdai` ("0–10 NRS") turlarının genellemesi:
+alan ipucunda aralık ilan eden metinleri bulup kapıyla karşılaştır. Yedi metin
+çıktı ve üçü de gerçek bir ilan değil:
+
+- `asdas` (0–10 NRS) — bu oturumda zaten 0–10'a bağlandı
+- `ogtt` ("< 100 normal · 100–125 BAG · ≥ 126 DM") — YORUM eşikleri, girdi
+  aralığı değil
+- `pni` ("N: 3,5–5,0 g/dL") — albüminin NORMAL referansı; kapı 1–7 ve bu
+  doğru, çünkü araç anormal değerleri kabul etmek ZORUNDA
+
+Son satır ölçütün sınırını gösteriyor: **ekranda görünen her aralık bir GİRDİ
+sınırı değildir.** Normal referans aralığı, yorum eşiği ve makullük sınırı üç
+ayrı şey; ölçüt üçünü de aynı biçimde yakalıyor ve ayrımı insan yapıyor.

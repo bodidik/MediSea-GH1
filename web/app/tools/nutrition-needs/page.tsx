@@ -15,6 +15,25 @@ export default function NutritionNeedsPage() {
   const [weight, setWeight] = useState<string>("");
   const [stressFactor, setStressFactor] = useState<number>(25); // kcal/kg default
   const [proteinFactor, setProteinFactor] = useState<number>(1.2); // g/kg default
+  /**
+   * ŞABLON SEÇİMİ KİMLİKLE (İNDEKSLE) SAKLANIYOR — puanla değil.
+   *
+   * Vurgulama `stressFactor === lvl.kcal` ile yapılıyordu, yani seçimin
+   * kimliği KCAL DEĞERİYDİ. İki şablon aynı kcal'i taşıyor:
+   *
+   *   "Akut Hastalık / Post-Op"      30 kcal/kg · 1.2 g/kg
+   *   "Geriatrik / Malnütrisyonlu"   30 kcal/kg · 1.2 g/kg
+   *
+   * Tarayıcıda ölçüldü — "Geriatrik"e tıklandığında İKİ düğme birden
+   * `aria-pressed="true"` oluyordu. Hesap doğru (ikisi de aynı katsayı),
+   * ama kullanıcı hangi şablonu seçtiğini göremiyor ve ekran okuyucu tek
+   * bir grupta iki seçili düğme bildiriyor.
+   *
+   * `pap-score` ve `apache2` ile birebir aynı sınıf; çare de aynı: seçimi
+   * KİMLİKLE sakla. Manuel sürgüyle oynanınca hiçbir şablon seçili
+   * görünmemeli, o yüzden `null` da geçerli bir durum.
+   */
+  const [secilenSablon, setSecilenSablon] = useState<number | null>(0);
 
   const weightNum = parseLocaleNumber(weight);
   /**
@@ -76,11 +95,11 @@ export default function NutritionNeedsPage() {
           <div className="space-y-4">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Klinik Durum (Şablonlar)</span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {stressLevels.map((lvl) => (
-                <button aria-pressed={stressFactor === lvl.kcal}
+              {stressLevels.map((lvl, i) => (
+                <button aria-pressed={secilenSablon === i}
                   key={lvl.label}
-                  onClick={() => { setStressFactor(lvl.kcal); setProteinFactor(lvl.pro); }}
-                  className={`p-4 rounded-xl border-2 text-left transition-all ${stressFactor === lvl.kcal ? 'border-blue-900 bg-blue-50 text-blue-900' : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'}`}
+                  onClick={() => { setSecilenSablon(i); setStressFactor(lvl.kcal); setProteinFactor(lvl.pro); }}
+                  className={`p-4 rounded-xl border-2 text-left transition-all ${secilenSablon === i ? 'border-blue-900 bg-blue-50 text-blue-900' : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'}`}
                 >
                   <div className="text-[10px] font-black uppercase mb-1">{lvl.label}</div>
                   <div className="text-xs font-bold">{lvl.kcal} kcal/kg | {lvl.pro} g/kg</div>
@@ -96,14 +115,17 @@ export default function NutritionNeedsPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase">Enerji (kcal/kg)</span>
                 <span className="text-sm font-black text-blue-900">{stressFactor}</span>
               </div>
-              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} onChange={(e)=>setStressFactor(Number(e.target.value))} className="w-full h-6 accent-blue-900" />
+              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} /* Sürgü oynatılınca hiçbir şablon seçili KALMAMALI: değerler artık şablonun
+                  değerleri değil. Yoksa düzeltme, kendi açtığı ikinci bir "ilan ile
+                  gerçek ayrışıyor" durumunu üretirdi. */
+                onChange={(e)=>{ setSecilenSablon(null); setStressFactor(Number(e.target.value)); }} className="w-full h-6 accent-blue-900" />
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-[10px] font-black text-slate-400 uppercase">Protein (g/kg)</span>
                 <span className="text-sm font-black text-blue-900">{proteinFactor}</span>
               </div>
-              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>setProteinFactor(Number(e.target.value))} className="w-full h-6 accent-amber-500" />
+              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>{ setSecilenSablon(null); setProteinFactor(Number(e.target.value)); }} className="w-full h-6 accent-amber-500" />
             </div>
           </div>
         </div>
