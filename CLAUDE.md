@@ -7590,3 +7590,67 @@ gibi genel dizeler olduğu için her yerle eşleşiyor).
 %92 aynı girdiyi alıyorsa ya biri ötekinin eksik kopyasıdır (`sledai2k`) ya da
 meşru bir ailedir (`cdai`/`sdai`) — ayrımı yapan şey eşiklerin ve formülün
 yayımlanmış hâlle karşılaştırılması.
+
+### BİRBİRİNİ DIŞLAYAN BANTLAR AYRI ONAY KUTUSU OLURSA TAVAN AŞILIR
+
+Yeni sınıf ve tek bir örneği çıktı. Şekil şu: aynı değişkenin bitişik bantları
+(yaş ≥75 / yaş 65–74) ayrı birer onay kutusu olarak duruyorsa kullanıcı ikisini
+birden işaretleyebilir ve skor, tanımlı tavanı aşar.
+
+**`chads-vasc` — sekiz kutunun sekizi işaretlendiğinde ekran "TOPLAM 10"
+basıyordu.** Yayımlanmış CHA₂DS₂-VASc azamisi **9**: yaş TEK bir basamaktır
+(≥75 → 2, 65–74 → 1, <65 → 0) ve bir hasta ikisinde birden olamaz.
+
+GKS'deki "297 / 15" ve MELD'deki eksi skorla aynı şekil — ekran, kendi
+ölçeğinin dışında bir sayı gösteriyor ve bunu söyleyecek kimse yok.
+
+Klinik etkisi dar ama gerçek: 65–74 kutusu işaretliyken doğum günü geçip ≥75
+de işaretlenirse skor bir puan şişer; paylaşılan adres de şişmiş değeri taşır.
+
+Çare `gcs` / `child-pugh` ile aynı yönde — **geçersiz BİLEŞİM en baştan
+kurulamıyor**, ve koruma İKİ kanalda birden: tıklamada (yeni açılan bant
+ötekini kapatır, kapatma serbest) ve ADRESTEN tohumlamada.
+
+**Doğrulama altı vaka:**
+
+| ölçüt | sonuç |
+|---|---|
+| hepsi + yaş ≥75 (65–74 hariç) | **TOPLAM 9** — yayımlanmış tavan, aşılamıyor |
+| yalnızca 65–74 | 1 |
+| ≥75 → sonra 65–74 tıkla | tek kutu kalıyor, 1 (son tıklanan kazanır) |
+| `?age75=1&age6574=1` | yalnızca ≥75, **TOPLAM 2** |
+| **negatif** — `?chf=1&age6574=1&female=1` | üç kutu geri geldi, **TOPLAM 3** |
+| bant mantığı | erkek 0 / kadın 1 düşük, ≥2 OAK — dokunulmadı |
+
+#### Sınıf tarandı: tek örnek
+
+Ölçüt: onay kutusu tabanlı bir araçta, AYNI ÖNEKİ paylaşan ve ikisi de sayı
+taşıyan iki etiket. 7 aday çıktı, altısı elle elendi:
+
+| aday | verdikt |
+|---|---|
+| `chads-vasc` "Yaş ≥ 75" / "Yaş 65–74" | **KUSUR — düzeltildi** |
+| `kdigo-aki` · `pap-score` · `ppi` | etiketler BANT adı, onay kutusu değil |
+| `refeeding-risk` "BMI < 16" / "BMI < 18.5" | **temiz** — NICE yapısı gruplu ve kural `≥1 yüksek VEYA ≥2 orta`; iç içe ölçüt işaretlense de sonucu değiştiremez (zaten ≥1 yüksek tetiklenmiş olur) |
+| `refeeding-risk` "%15" / "%10" kilo kaybı | aynı gerekçe |
+
+`refeeding-risk` ayrımı öğretici: **iç içe ölçütler TOPLAM skorda çift sayım
+üretir, GRUPLU EŞİK kuralında üretmez.** Ölçüt aday veriyor, kararı skorun
+birleştirme biçimi veriyor.
+
+### Saf onay-kutusu skorları yayımlanmış hâliyle karşılaştırıldı — kalanı temiz
+
+Aritmetiği basit olduğu için hiç bakılmamış bir kümeydi; madde puanları ve
+madde SAYISI ayrı ayrı sayıldı:
+
+| araç | ölçülen | yayımlanmış |
+|---|---|---|
+| `has-bled` | 9 madde × 1 → azami **9** | ✓ |
+| `wells-pe` | 3+3+1,5+1,5+1,5+1+1 → **12,5** | ✓ |
+| `wells-dvt` | 9 madde × 1, alternatif tanı **−2** → −2…9 | ✓ |
+| `timi-ua` | 7 ölçüt (yaş ≥65 · ≥3 KV risk · bilinen CAD ≥%50 · 7 günde ASA · 24 saatte ≥2 epizod · ST deviasyonu · pozitif belirteç) | ✓ |
+| `perc` | 8 ölçüt (yaş ≥50 · nabız ≥100 · SpO₂ <%95 · tek taraflı bacak şişliği · hemoptizi · yakın cerrahi/travma · önceki DVT/PE · östrojen) | ✓ |
+| `chads-vasc` | madde puanları doğruydu; kusur BİLEŞİMDEYDİ | — |
+
+Son satır sınıfın özeti: **madde puanlarının tek tek doğru olması, toplamın
+tanımlı aralıkta kalacağını GARANTİ ETMEZ.** Ulaşılabilir tavanı ayrıca ölç.

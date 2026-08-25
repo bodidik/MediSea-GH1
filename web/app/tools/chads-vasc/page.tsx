@@ -27,18 +27,52 @@ function readBool(param: string | null) { return param === "1" || param === "tru
 export default function ChadsVascPage() {
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
-  const [state, setState] = React.useState<State>({
-    cHF: readBool(search?.get("chf") || null),
-    htn: readBool(search?.get("htn") || null),
-    age75: readBool(search?.get("age75") || null),
-    dm: readBool(search?.get("dm") || null),
-    strokeTIA: readBool(search?.get("stroke") || null),
-    vascular: readBool(search?.get("vasc") || null),
-    age65to74: readBool(search?.get("age6574") || null),
-    female: readBool(search?.get("female") || null),
-  });
+  /**
+   * İKİ YAŞ BANDI BİRBİRİNİ DIŞLAR — tanım gereği, ve araç bunu bilmiyordu.
+   *
+   * CHA₂DS₂-VASc'ta yaş TEK bir basamaktır: ≥75 iki puan, 65–74 bir puan,
+   * <65 sıfır. Bir hasta ikisinde birden olamaz. Araç ikisini ayrı onay
+   * kutusu yaptığı için ikisi de işaretlenebiliyordu.
+   *
+   * Tarayıcıda ölçüldü — sekiz kutunun sekizi de işaretlendiğinde ekran
+   * **"TOPLAM 10"** basıyordu; oysa yayımlanmış azami **9**. GKS'deki
+   * "297 / 15" ve MELD'deki eksi skorla aynı şekil: ekran, kendi ölçeğinin
+   * dışında bir sayı gösteriyor.
+   *
+   * Klinik etkisi dar ama gerçek: 65–74 yaş kutusu işaretli bir hastada
+   * doğum günü geçip ≥75 kutusu da işaretlenirse skor 1 puan şişiyor. Eşik
+   * 2'de olduğu için sınırdaki bir hastayı (örn. yalnız kadın cinsiyet + 65–74
+   * = 2) bandın içinde tutmaya devam eder, ama sayı yanlıştır ve paylaşılan
+   * adres de yanlış taşınır.
+   *
+   * Çare `gcs`/`child-pugh` ile aynı yönde: geçersiz BİLEŞİM en baştan
+   * kurulamıyor. Hem tıklamada hem ADRESTEN tohumlamada uygulanıyor —
+   * `?age75=1&age6574=1` de artık iki bandı birden açmıyor.
+   */
+  const yasTekle = (s: State): State =>
+    s.age75 && s.age65to74 ? { ...s, age65to74: false } : s;
 
-  const toggle = (k: keyof State) => setState((s) => ({ ...s, [k]: !s[k] }));
+  const [state, setState] = React.useState<State>(() =>
+    yasTekle({
+      cHF: readBool(search?.get("chf") || null),
+      htn: readBool(search?.get("htn") || null),
+      age75: readBool(search?.get("age75") || null),
+      dm: readBool(search?.get("dm") || null),
+      strokeTIA: readBool(search?.get("stroke") || null),
+      vascular: readBool(search?.get("vasc") || null),
+      age65to74: readBool(search?.get("age6574") || null),
+      female: readBool(search?.get("female") || null),
+    })
+  );
+
+  const toggle = (k: keyof State) =>
+    setState((s) => {
+      const yeni = { ...s, [k]: !s[k] };
+      /* Yeni açılan yaş bandı ötekini kapatır; kapatma serbest. */
+      if (k === "age75" && yeni.age75) yeni.age65to74 = false;
+      if (k === "age65to74" && yeni.age65to74) yeni.age75 = false;
+      return yeni;
+    });
   const score = ITEMS.reduce((sum, it) => sum + (state[it.key] ? it.pts : 0), 0);
 
   let comment = "—";
