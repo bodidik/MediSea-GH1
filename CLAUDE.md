@@ -23,8 +23,44 @@ npm run typecheck  # CI 3. kapı
 npm run build      # CI 4. kapı
 ```
 
-CI (`.github/workflows/ci.yml`) her push ve PR'da sırayla
-`npm ci → lint → typecheck → build` çalıştırır. Dördü de geçmeden birleştirme yapma.
+### ⚠ CI ÜÇ ADIM DEĞİL — bu satır bir kez yanlış yazıldı ve 1,5 gün kırmızıya mal oldu
+
+Bu bölüm bir dönem *"CI sırayla `npm ci → lint → typecheck → build` çalıştırır"*
+diyordu. YANLIŞTI. `.github/workflows/ci.yml` **on beş adım** çalıştırıyor ve
+`build` EN SONDA:
+
+```
+npm ci → lint → typecheck
+  → link-denetim → soru-denetim
+  → arac-metadata --kontrol → baslik-index --kontrol → ilgili-index --kontrol
+  → arayuz-denetim (+ --negatif)
+  → ic-bilesen-denetim (+ --negatif)
+  → saydamlik-denetim --kapi (+ --negatif)
+  → renk-cifti-denetim --kapi (+ --negatif)
+  → build
+```
+
+Bedeli ölçüldü: `ilgili-index --kontrol` düştüğü için **97 koşum boyunca
+(1,5 gün) CI kırmızıydı** ve build CI'da hiç çalışmadı — ama her turda
+"dört kapı geçti" raporlanıyordu, çünkü yerelde yalnızca üç adım
+sürülüyordu. **Kapı senin çalıştırdığın komut değil, CI'ın çalıştırdığı
+komuttur.**
+
+Yerelde HEPSİNİ sürmenin yolu (`npm ci` BİLEREK yok — çalışan ortamı bozar):
+
+```bash
+cd web
+for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"; do
+  node scripts/$k >/dev/null 2>&1 && echo "OK    $k" || echo "DUSTU $k"
+done
+npm run lint && npm run typecheck
+NEXT_DIST_DIR=.next-verify npm run build
+```
+
+CI ilk hatada durduğu için **bir adımı düzeltmek arkasındakini açığa
+çıkarabilir**; yukarıdaki döngü durmadan hepsini sürüyor, yani tabloyu tek
+seferde veriyor. Gönderdikten sonra `gh run list --limit 3` ile sonucu
+GÖR — yeşil olduğunu varsayma.
 
 **Canlı `next dev` varken derleme doğrulaması:**
 
@@ -10746,3 +10782,21 @@ kusur üretmiyor ama `ilgili-index`e "dosya da platformdan bağımsız olmalı"
 diye yazıp burada yazmamak iki dosyayı ilkede çeliştirirdi. Kod noktasına
 çevrildi; içerik değişmediği ölçüldü (410 anahtar, küme aynı, **değeri
 değişen 0**, yalnızca 95 konum yer değiştirdi, git farkı 12 satır).
+
+#### GERÇEK LINUX'TA DOĞRULANDI — yerel taklidin öngördüğü çıktı
+
+Düzeltmenin gücü yerelde ancak taklitle ölçülebiliyordu (`readdirSync`
+sarmalanıp ters/karışık sıra verilerek). Gönderimden sonra CI gerçek bir
+Linux'ta çalıştı:
+
+| ölçüt | sonuç |
+|---|---|
+| koşum | **başarılı** — 98 koşumdur ilk yeşil |
+| adım | **20/20 yeşil**, iki iş (Web + Server) |
+| `ilgili-index --kontrol` | geçti — yani Linux ve Windows AYNI indeksi üretiyor |
+| **Build** | **çalıştı** — düzeltmeden önce CI'da hiç sıra gelmemişti |
+
+Son satır ayrı bir bulgu: kırmızı bir kapının arkasındaki adımlar hiç
+sınanmıyor. `ilgili-index` düştüğü sürece `arayuz`, `ic-bilesen`,
+`saydamlik`, `renk-cifti` ve `build` adımlarının CI'da geçtiği hiç
+görülmemişti — yerelde geçiyor olmaları bir varsayımdı, artık ölçüm.
