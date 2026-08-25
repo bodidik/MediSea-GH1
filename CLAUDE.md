@@ -7938,3 +7938,69 @@ alan ipucunda aralık ilan eden metinleri bulup kapıyla karşılaştır. Yedi m
 Son satır ölçütün sınırını gösteriyor: **ekranda görünen her aralık bir GİRDİ
 sınırı değildir.** Normal referans aralığı, yorum eşiği ve makullük sınırı üç
 ayrı şey; ölçüt üçünü de aynı biçimde yakalıyor ve ayrımı insan yapıyor.
+
+### KENDİ İŞİMİN TUTARLILIĞINI ÖLÇTÜM — sebep kartlarının çoğu DUYURULMUYORDU
+
+Bu oturumda ~15 araca "sessiz boşluk yerine sebep" kartı eklendi. Hepsinin
+aynı biçimde davrandığı VARSAYILMIŞTI; ölçüldü, davranmıyorlardı: kartların
+yalnızca beşi `role="alert"` taşıyordu, sekizi taşımıyordu.
+
+Bedeli dar ama gerçek: ekran okuyucuyla çalışan biri geçersiz bir değer
+yazdığında kart ekranda beliriyor ama HİÇBİR ŞEY duyulmuyor — yani sebep
+kartının varlık sebebi (kullanıcı neyin beklendiğini bilsin) o kullanıcı için
+hiç işlemiyordu.
+
+`role="alert"` bu kartlar için doğru seçim ve gerekçesi belgede zaten yazılı:
+**`alert` sonradan DOM'a eklenince duyurulur, bu yüzden KOŞULLU basılabilir;
+`status` böyle değil — bölge içerik değişmeden ÖNCE DOM'da bulunmalı.** Sebep
+kartları `{sebepGoster && (…)}` ile koşullu render ediliyor, yani `status`
+ilk mesajı kaçırırdı.
+
+Sekiz araç hizalandı: `acth-stim` · `basdai` · `bmi` · `bmr` · `gh-test` ·
+`gnri` · `pni` · `sodium`.
+
+**ÖLÇÜT İKİ KEZ YANILTTI ve ikisi de belgede kayıtlı tuzaklar:**
+
+- **Yorumlar sayıldı.** İlk tarama 24 "eksik" buldu; `abg`nin "Yorum
+  yapılmadı" eşleşmesi bir JSDoc satırındaydı ve gerçek render ZATEN
+  `role="alert"` taşıyordu. Bu depoda yorumlar kusurları alıntılıyor —
+  kaynak tarayan her ölçüt yorumları elemek zorunda.
+- **En yakın `<div>` doğru div değil.** Sebep metni iç bir `<p>`nin içinde;
+  `role` sarmalayıcıda olabiliyor. Ölçüt bir üst düzeye de bakacak şekilde
+  genişletildi. 24 → 8.
+
+**Doğrulama, ikisi negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| `bmi` boy 1700 | `role="alert"`: "Hesaplanamıyor · Şu alan makul bir değer bekliyor: boy (50–250 cm)" |
+| `basdai` altı alan 100 | `role="alert"`: "Altı sorunun altısı da 0–10 arası bir sayı bekliyor" |
+| **negatif** — bomboş form (ikisinde de) | `role="alert"` sayısı **0** — yersiz duyuru yok |
+| `arayuz-denetim` | kusur yok |
+
+Aktarılabilir kural: **bir kalıbı çok sayıda dosyaya yayarken, yaydığın şeyin
+HER KOPYASINI aynı ölçütle say.** "Aynı şeyi yaptım" varsayımı bu oturumda
+yanlış çıktı; sekiz kopya sessizce eksikti.
+
+### "Seçim puanla saklanıyor" sınıfı AD-BAĞIMSIZ ölçütle kapandı
+
+`nutrition-needs` turunda çıkan ders (ölçüt alan ADINA bağlanmamalı) ölçüte
+uygulandı: `aria-pressed` / `checked` içinde `durum === <nesne>.<HERHANGİ
+sayısal alan>` biçimi aranıyor, sonra o alanın aynı dizide TEKRAR eden değeri.
+
+168 dosya tarandı. Tek aday `apache2` ve **kusur değil**: on bir grupta tekrar
+eden `pts` var (fizyolojik merdivenler simetrik), ama karşılaştırma
+`sel[param.id]?.label === opt.label` ile ETİKET üzerinden yapılıyor; `pts` ile
+karşılaştıran tek grup olan yaş (0/2/3/5/6) benzersiz.
+
+Ölçütün kör olmadığı tohumla kanıtlandı: alan adı `kcal` olan sentetik bir
+kayıt yakalanıyor — yani `nutrition-needs`i kaçıran eski ölçütün körlüğü
+kapandı.
+
+### `apache2` mortalite merdiveni ve `ToolShare` iddiası — ikisi de doğrulandı
+
+- **`apache2`**: `<=4 %4 · <=9 %8 · <=14 %15 · <=19 %25 · <=24 %40 ·
+  <=29 %55 · <=34 %73 · >34 %85` — yayımlanmış Knaus tablosuyla birebir.
+- **`ToolShare`**: belge *"bugün sorguyu siliyor (`url.search = ""`)"* diyor.
+  Kaynakta doğrulandı, hâlâ öyle. `params` imzada bilerek duruyor (111 çağrı
+  yeri) ve dosyanın kendi yorumu bunu açıklıyor.

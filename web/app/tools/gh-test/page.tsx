@@ -163,7 +163,7 @@ export default function GhTestPage() {
         )}
 
         {sebepGoster && (
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+          <div role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Yorumlanamıyor</p>
             <p className="text-[11px] font-bold text-slate-600">
               {aktifAd} alanı makul bir değer bekliyor: 0–200 μg/L. Sıfır geçerlidir —

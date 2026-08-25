@@ -97,7 +97,7 @@ export default function PniPage() {
           ))}
 
           {girdiVar && eksikAlan.length > 0 && (
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <div role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
               <p className="text-[11px] font-bold text-slate-600">
                 Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}
