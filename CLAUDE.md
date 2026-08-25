@@ -9002,3 +9002,67 @@ alanı `0` diye paylaşmak, düzeltilen iddianın adres tarafındaki hâli olurd
 ölçütün sınırı yazılı: denetimli olup da durumu GERÇEK bir cevapla başlayan
 bir seçici aynı sorunu taşırdı — o eksen "sayısal varsayılan" taramasında
 ayrıca kapatılmıştı (30 araç, tek kusur `pap-score`).
+
+### "DOKUNULMAMIŞ FORMDAN SINIFLAMA" NE ZAMAN KUSUR? — 12 aday, yeni kusur YOK
+
+`glim` turundan sonra sınıf genelleştirildi: **skoru toplayıp bant basan
+araçlarda "tüm maddeler yanıtlandı mı" kapısı var mı?** Eksik form yapay
+düşük skor verir, o da güven veren bant demektir.
+
+**Ölçüt bir kez fazla dar çıktı ve sonuç güvenilmezdi.** İlk sürüm
+`.reduce(`/`sum`/`toplam =` VE bant anahtar kelimesi istiyordu; yalnızca
+**7 araç** eşleşti ve "2 aday" dedi. Depoda ~35 skor aracı var — yani rapor
+"0 kusur ile 0 ölçüm" tuzağının içindeydi. Genişletilmiş ölçüt (puanlı şık
+dizisi + sınıflama etiketi) **35 araç** ölçtü: 23'ünde kapı var, **12 aday**.
+
+**On ikisinin on ikisi de tasarım gereği doğru, ama üç ayrı gerekçeyle:**
+
+| kova | araçlar | gerekçe |
+|---|---|---|
+| saf onay kutusu | `has-bled` · `padua` · `wells-dvt` · `wells-pe` | işaretsiz = ölçüt YOK; belgede zaten doğrulanmış |
+| `null` başlıyor | `ecog` · `karnofsky` · `must` · `mna` | yanıt gelmeden hüküm basılmıyor |
+| varsayılan GÖRÜNÜR | `child-pugh` · `gcs` · `psi-port` · `kdigo-aki` | ölçüldü — aşağıda |
+
+#### Ayırt edici soru: varsayım EKRANDA görünüyor mu, ve hüküm NEGATİF bir iddia mı?
+
+İki ölçüt birlikte karar veriyor; tek başına hiçbiri yetmiyor.
+
+**1) Varsayım görünür mü?** Ölçüldü, sayıldı:
+
+| araç | dokunulmamış hâlde | basılı düğme / görünür değer |
+|---|---|---|
+| `child-pugh` | TOPLAM **5/15 · Class A · %100 sağkalım** | **5 grup, 5 düğme basılı** (`< 2`, `> 3.5`, `< 1.7`, `Yok`, `Yok`) |
+| `gcs` | **GKS 15 · E4 + V5 + M6 / 15 · Hafif** | **3 grup, 3 düğme basılı** |
+| `psi-port` | **Sınıf II · ~%0.6 · Ayaktan tedavi** | yaş kutusunda `65`, cinsiyet seçicide `Erkek`, 18 kutu görünür biçimde işaretsiz |
+
+Üçünde de araç hangi varsayımla konuştuğunu ekranda söylüyor. `gcs` bunu en
+açık yapıyor: sonuç satırı **bileşenleri yazıyor** ("E4 + V5 + M6 / 15"), yani
+skorun nereden geldiği gizli değil.
+
+Bu, `pap-score`/`ppi`/`rockall`/`findrisc` için verilmiş verdiktin aynısı ve
+`news2`/`sofa`/`meld-na` da aynı kovada (belgede kayıtlı: varsayılan normal
+vitallerden "Düşük" basmak doğru).
+
+**2) Hüküm ne tür bir iddia?** Asıl ayrım burada ve `glim` bu yüzden kusurdu:
+
+| hüküm türü | tamlık gerekir mi | örnek |
+|---|---|---|
+| **NEGATİF iddia** — "yok / karşılanmadı / kriter yok" | **EVET** | `glim` "Tanı Kriterleri Karşılanmadı" · `kdigo-aki` "AKI Kriteri Yok" |
+| görünür değerlerden HESAPLANAN derece | hayır | `gcs` 15 · `child-pugh` Class A · `psi-port` Sınıf II |
+
+Negatif bir iddia "değerlendirdik ve bulmadık" demektir; onu söylemek için
+gerçekten değerlendirmiş olman gerekir. Derecelendirme ise ekrandaki
+değerlerin aritmetiğidir ve o değerler görünüyorsa iddia dürüsttür.
+
+`glim`de İKİ ölçüt de düşüyordu: `<select>` kapalıyken "seçildi" ile
+"dokunulmadı" ayırt edilemiyordu VE hüküm negatif bir iddiaydı.
+
+**TUZAK — bu sınıfı "düzeltmek" araçları BOZABİLİR.** `gcs`ye
+"Seçiniz…" koymak yanlış olurdu: Glasgow her hastada üç bileşenin ÜÇÜ de
+gözlenerek verilir, "yanıtlanmamış göz açma" diye bir klinik durum yok.
+`child-pugh`ta da beş kategori zaten normal değerleriyle başlıyor ve hepsi
+basılı görünüyor. Ölçüt aday üretir; kararı **hükmün türü** verir.
+
+`psi-port` ayrıca kendi iki adımlı algoritmasını uyguluyor (Adım 1: 50 yaş
+altı, komorbiditesiz, vitalleri normal hasta puanlanmadan Sınıf I) — sayfanın
+alt notu da bunu yazıyor ve kod birebir uyguluyor.
