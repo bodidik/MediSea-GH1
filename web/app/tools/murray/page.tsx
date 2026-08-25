@@ -73,9 +73,33 @@ export default function MurrayPage() {
     Object.fromEntries(PARAMS.map(p => [p.id, null]))
   );
 
+  /**
+   * ARAÇ KURALINI İLAN EDİP UYGULAMIYORDU — ve tam da ilan ettiği hastayı
+   * skorlayamıyordu.
+   *
+   * Sayfanın altındaki not (DOĞRU, yayımlanmış Murray'in kuralı budur):
+   *
+   *   "Murray skoru = (Xray + PaO₂/FiO₂ + PEEP + Kompliyan) / KULLANILAN
+   *    PARAMETRE SAYISI. Ventilatöre bağlı olmayan hastalarda PEEP ve
+   *    kompliyan hesaplanamaz."
+   *
+   * Kod ise DÖRDÜNÜ birden zorunlu tutuyor ve HEP 4'e bölüyordu. Tarayıcıda
+   * ölçüldü: iki parametre yanıtlandığında ekran "Tüm 4 parametreyi
+   * tamamlayın" diyor — yani aracın kendi notunun tarif ettiği hasta
+   * (ventile olmayan) HİÇ skorlanamıyordu. Aynı ekranda, birbirini çürüten
+   * iki cümle.
+   *
+   * `haq-di` ile aynı sınıf: metin doğru, hesap eksik. Çare de aynı —
+   * ilan edilen kural uygulanıyor: kaç parametre yanıtlandıysa ona bölünüyor.
+   *
+   * ALT SINIR 2: ortalama en az iki bileşen ister ve akciğer grafisi ile
+   * PaO₂/FiO₂ her hastada elde edilebilir. Tek bileşenli bir "ortalama"
+   * yayımlanmış indeksin kastettiği şey değil.
+   */
   const answered = Object.values(sel).filter(v => v !== null).length;
-  const total = answered === PARAMS.length
-    ? Object.values(sel).reduce<number>((s, v) => s + (v ?? 0), 0) / PARAMS.length
+  const EN_AZ = 2;
+  const total = answered >= EN_AZ
+    ? Object.values(sel).reduce<number>((s, v) => s + (v ?? 0), 0) / answered
     : null;
 
   const band = total !== null ? getBand(total) : null;
@@ -156,7 +180,7 @@ export default function MurrayPage() {
           </div>
         ) : (
           <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 4 parametreyi tamamlayın</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">En az iki parametre seçin — ventilatöre bağlı olmayan hastada PEEP ve kompliyan boş bırakılır</p>
           </div>
         )}
 

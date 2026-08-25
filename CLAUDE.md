@@ -8004,3 +8004,79 @@ kapandı.
 - **`ToolShare`**: belge *"bugün sorguyu siliyor (`url.search = ""`)"* diyor.
   Kaynakta doğrulandı, hâlâ öyle. `params` imzada bilerek duruyor (111 çağrı
   yeri) ve dosyanın kendi yorumu bunu açıklıyor.
+
+### İLAN EDİLİP UYGULANMAYAN KURAL, İKİNCİ KEZ — `murray` kendi tarif ettiği hastayı skorlayamıyordu
+
+`haq-di` ile aynı sınıf. Sayfanın altındaki not doğru ve yayımlanmış Murray'in
+kuralını yazıyor:
+
+> "Murray skoru = (Xray + PaO₂/FiO₂ + PEEP + Kompliyan) / **kullanılan
+> parametre sayısı**. Ventilatöre bağlı olmayan hastalarda PEEP ve kompliyan
+> hesaplanamaz."
+
+Kod ise dördünü birden zorunlu tutuyor (`answered === PARAMS.length`) ve HEP
+4'e bölüyordu. Tarayıcıda ölçüldü — iki parametre yanıtlandığında ekran
+**"Tüm 4 parametreyi tamamlayın"** diyor. Yani aracın KENDİ notunun tarif
+ettiği hasta (ventile olmayan) hiç skorlanamıyordu, ve iki cümle aynı ekranda
+birbirini çürütüyordu.
+
+Çare `haq-di` ile aynı: ilan edilen kural uygulanıyor — kaç parametre
+yanıtlandıysa ona bölünüyor. **Alt sınır 2**, çünkü ortalama en az iki bileşen
+ister ve akciğer grafisi ile PaO₂/FiO₂ her hastada elde edilebilir; tek
+bileşenli bir "ortalama" yayımlanmış indeksin kastettiği şey değil.
+
+**Doğrulama, payda değişiminin GERÇEKTEN olduğunu gösteren çift dahil:**
+
+| seçim | skor | bant |
+|---|---|---|
+| iki parametre **[4, 0]** | **2,00** (4/2) | AĞIR |
+| dört parametre **[4, 0, 0, 0]** | **1,00** (4/4) | HAFİF-ORTA |
+| tek parametre | skor yok, istem metni | — |
+| **negatif** — dört parametre hepsi 2 | **2,00** — düzeltme öncesiyle birebir | AĞIR |
+
+İkinci satır belirleyici: aynı puan toplamı (4) iki farklı paydayla iki farklı
+skor veriyor. "Sonuç aynı kaldı" tek başına kanıt olmazdı — bu turda ilk ölçüm
+tam da öyle çıktı (iki ve dört parametre, hepsi "2" → ikisi de 2,00) ve payda
+değişiminin gerçekten olup olmadığını göstermiyordu. **Bir bölme düzeltmesini
+doğrularken, payın SABİT kalıp paydanın DEĞİŞTİĞİ bir vaka seç.**
+
+Boş durum metni de düzeltildi: "Tüm 4 parametreyi tamamlayın" → "En az iki
+parametre seçin — ventilatöre bağlı olmayan hastada PEEP ve kompliyan boş
+bırakılır", yani ekran artık kendi notuyla aynı şeyi söylüyor.
+
+Bant cetveli ayrıca yayımlanmış hâliyle karşılaştırıldı: 0 hasar yok ·
+0,1–1 hafif-orta · 1,1–2,5 ağır · >2,5 çok ağır — Murray'in >2,5 = ağır ARDS
+kesimiyle uyumlu, ortadaki ikiye bölme sunum tercihi.
+
+### Kendi süpürmemin HER KOPYASI sayıldı — 17/17 tam
+
+Geçen turda çıkan kural ("bir kalıbı çok dosyaya yayarken her kopyayı aynı
+ölçütle say") kendi birim düzeltmeme uygulandı. 17 aracın tamamı tarayıcıda
+tek tek gezildi:
+
+**43 sayısal alan · 42'sinde birim açıklaması · "span var ama açıklama yok"
+durumu SIFIR.** Tek açıklamasız alan `abg`nin pH'ı ve o doğru — pH birimsizdir.
+
+Bu kez boşluk çıkmadı; ama önceki turda sekiz kopya sessizce eksikti, yani
+ölçüm "her seferinde bir şey bulmak" için değil, **bulmadığını da kanıtlamak**
+için yapılıyor.
+
+### Araç kabuğu yeniden sayıldı — ve ölçütüm kör çıktı
+
+Bu oturumda ~25 araca dokunuldu; kabuk tutarlılığı yeniden sayıldı:
+
+| parça | sonuç |
+|---|---|
+| `ToolShare` | **130/130** |
+| `☀️` glifinde `aria-hidden` | **130/130** |
+| klinik uyarı | ölçüt KÖR ÇIKTI — aşağıda |
+
+Uyarı ölçütü önce anahtar kelime aradı (46 sahte aday), sonra "⚠️ glifinden
+sonra `>metin<`" aradı (18 sahte aday). İkisi de yanlış: bu depoda ⚠️ glifi
+metnin İÇİNDE duruyor (`⚠️ Formül: Na - (Cl + HCO₃)…`), yani gliften sonra
+ayrı bir metin düğümü yok. Elle bakılan üç araçta (`egfr` · `anion-gap` ·
+`news2`) uyarı yerinde.
+
+Kayda değer olan: **iki farklı kör ölçüt, iki farklı sahte liste üretti** ve
+ikisi de "eksik" diyordu. Bir kabuk parçasının varlığını ararken glifin
+metinden AYRI mı yoksa İÇİNDE mi olduğunu önce gör.
