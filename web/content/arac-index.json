@@ -291,8 +291,8 @@
  },
  {
   "slug": "grace",
-  "name": "GRACE 2.0 Skoru",
-  "desc": "AKS/NSTEMI hastane içi mortalite riski"
+  "name": "GRACE Skoru",
+  "desc": "AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0)"
  },
  {
   "slug": "haq-di",

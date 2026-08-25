@@ -99,7 +99,7 @@ const TOOLS_DATABASE = [
       { slug: "chads-vasc", name: "CHA₂DS₂-VASc Skoru", desc: "AF'de inme riski hesaplama" },
       { slug: "has-bled", name: "HAS-BLED Skoru", desc: "Antikoagülasyon kanama riski" },
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
-      { slug: "grace", name: "GRACE 2.0 Skoru", desc: "AKS/NSTEMI hastane içi mortalite riski" },
+      { slug: "grace", name: "GRACE Skoru", desc: "AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0)" },
       { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
     ]
   },

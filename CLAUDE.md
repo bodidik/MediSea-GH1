@@ -8485,3 +8485,59 @@ denetlenebilir durumda; hiçbiri kusur değil, hepsi insan kararı bekleyen
 kalıntı.**
 
 `arayuz-denetim` temiz, dört kapı geçti.
+
+### BİR DÜZELTMEYİ YAPTIĞIN YÜZEY, O İDDİANIN GEÇTİĞİ TEK YÜZEY OLMAYABİLİR
+
+`sledai2k` bulgusu kazara çıkmıştı: hub `sle`yi "SLE **Kriterleri** — sınıflama
+kriterleri" diye tanıtıyordu, sayfa ise bir **aktivite indeksiydi**. O tek
+örnekten bir ölçüt yapıldı ve 130 araca sürüldü: **kayıt adı** (`tools.ts`) ·
+**hub adı** (`ToolsIcerik.tsx`) · **sayfa `<h1>`** · **layout metadata
+başlığı** karşılaştırıldı.
+
+**40 araçta ad farkı çıktı ve 39'u kusur DEĞİL.** Fark ezici çoğunlukla
+kısaltma: "CURB-65" ↔ "CURB-65 Skoru", "SOFA" ↔ "SOFA Skoru", "Wells (DVT)" ↔
+"Wells Skoru (DVT)". Bir başlığın katalog kaydından kısa olması olağan.
+
+Ayırt edici soru **KATEGORİ mi değişiyor**: `sledai2k`de "sınıflama kriteri"
+ile "aktivite indeksi" farklı ŞEYLERDİ; ötekilerde aynı şeyin uzun ve kısa
+yazımı.
+
+#### Tek gerçek sapma KENDİ DÜZELTMEMDİ
+
+Önceki turda `grace` sayfasının başlığından yanlış "**2.0**" iddiası
+kaldırılmıştı (uygulanan sistem toplamsal GRACE **1.0**). Ama iddia dört
+yüzeyde birden geçiyordu ve yalnızca biri düzeltilmişti:
+
+| yüzey | önce | sonra |
+|---|---|---|
+| sayfa `<h1>` + alt başlık | önceki turda düzeltildi | "GRACE · Toplamsal Puan (1.0)" |
+| **hub kaydı** | "GRACE **2.0** Skoru" | "GRACE Skoru" |
+| **layout metadata / OpenGraph** | "GRACE **2.0** Skoru — …" | "GRACE Skoru — …" |
+| **`SoftwareApplication` şeması + breadcrumb** | "GRACE **2.0** Skoru" | "GRACE Skoru" |
+| **`arac-index.json`** | "GRACE **2.0** Skoru" | "GRACE Skoru" |
+
+Son üçü elle düzeltilmedi: hub kaydı değişince `arac-metadata.cjs` hepsini
+yeniden üretti. "Sayı yazma, saydır" mimarisinin ad tarafındaki karşılığı —
+**tek kayıt düzeltmesi beş yüzeye birden yayıldı.**
+
+Ölçüldü: `/tools` ve `/tools/grace` sayfalarında "GRACE 2.0" dizesi artık
+**yok**; sekme başlığı "GRACE Skoru — AKS/NSTEMI hastane içi mortalite".
+
+**Aktarılabilir kural: bir ADI ya da İDDİAYI düzeltirken, o dizeyi bütün
+depoda ara.** Bu depoda bir araç adı en az beş yerde geçiyor ve dördü
+üretilmiş dosya. Sayfayı düzeltip katalogu unutmak, kullanıcının aramada ve
+paylaşım kartında hâlâ eski iddiayı görmesi demek.
+
+### `behcet` doğrulandı — ICBD 2014 ile birebir
+
+Hub "Behçet — ICBD 2014" diyor; iddia ölçüldü:
+
+| madde | puan |
+|---|---|
+| oral ülser · genital ülser · göz tutulumu | 2 + 2 + 2 |
+| deri · nörolojik · vasküler · paterji | 1 + 1 + 1 + 1 |
+| **tavan** | **10** · eşik **≥ 4** |
+
+Yayımlanmış ICBD 2014 ile birebir. (Sayfa `<h1>`i yalnızca "Behçet Hastalığı"
+diyor ve ölçüt setinin adını taşımıyor — kusur değil, ama hub'daki kimlik
+sayfada görünmüyor.)

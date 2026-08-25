@@ -6,13 +6,13 @@ import type { ReactNode } from "react";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "GRACE 2.0 Skoru — AKS/NSTEMI hastane içi mortalite riski",
-  description: "GRACE 2.0 Skoru: AKS/NSTEMI hastane içi mortalite riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+  title: "GRACE Skoru — AKS/NSTEMI hastane içi mortalite",
+  description: "GRACE Skoru: AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/grace" },
   openGraph: {
     type: "website",
-    title: "GRACE 2.0 Skoru — AKS/NSTEMI hastane içi mortalite riski",
-    description: "GRACE 2.0 Skoru: AKS/NSTEMI hastane içi mortalite riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+    title: "GRACE Skoru — AKS/NSTEMI hastane içi mortalite",
+    description: "GRACE Skoru: AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0). Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/grace",
   },
 };
@@ -22,15 +22,15 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "GRACE 2.0 Skoru",
-          aciklama: "GRACE 2.0 Skoru: AKS/NSTEMI hastane içi mortalite riski. Ücretsiz klinik hesaplayıcı — MediSea.",
+          ad: "GRACE Skoru",
+          aciklama: "GRACE Skoru: AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0). Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/grace",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "GRACE 2.0 Skoru", yol: "/tools/grace" },
+          { ad: "GRACE Skoru", yol: "/tools/grace" },
         ])}
       />
       {children}
