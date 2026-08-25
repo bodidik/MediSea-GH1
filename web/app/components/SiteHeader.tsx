@@ -11,7 +11,8 @@ type SearchResult = {
   title: string;
   section: string;
   slug: string;
-  type: 'topic' | 'section';
+  type: 'topic' | 'section' | 'tool';
+  aciklama?: string;
 };
 
 /**
@@ -243,7 +244,7 @@ export default function SiteHeader() {
             <input
               type="text"
               aria-label="Sitede ara"
-              placeholder="Hastalık, semptom veya vaka ara..."
+              placeholder="Hastalık, hesaplayıcı veya skor ara…"
               className="h-10 w-full rounded-full border border-slate-200 bg-slate-50 pl-9 sm:pl-10 pr-9 sm:pr-10 text-sm font-medium outline-none focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 transition-all shadow-sm"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -289,7 +290,19 @@ export default function SiteHeader() {
 
           {/* SONUÇ PENCERESİ */}
           {isOpen && (
-            <div className="absolute top-full mt-2 w-full rounded-xl border border-slate-200 bg-white shadow-2xl py-2 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className={
+                /* DAR EKRANDA KUTUDAN TAŞAR. Ölçüldü: 320px'te başlık satırında
+                   logo 80px + sağ grup 150px `shrink-0` olduğu için arama kutusuna
+                   yalnızca 82px kalıyor; panel `w-full` olduğu için sonuçlar da
+                   82px genişlikte çiziliyor ve araç açıklamaları okunmuyordu.
+                   Mobilde panel görünüm penceresine sabitleniyor, `sm` ve üstünde
+                   eski davranış (kutuya hizalı) aynen sürüyor. */
+                "fixed left-2 right-2 top-[4.5rem] w-auto " +
+                "sm:absolute sm:left-auto sm:right-auto sm:top-full sm:mt-2 sm:w-full " +
+                "rounded-xl border border-slate-200 bg-white shadow-2xl py-2 " +
+                "max-h-[min(70vh,28rem)] overflow-y-auto overscroll-contain " +
+                "animate-in fade-in slide-in-from-top-2 duration-200"
+              }>
               {results.length > 0 ? (
                 <>
                   <div className="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-50/50 border-b border-slate-50 mb-1">
@@ -298,17 +311,34 @@ export default function SiteHeader() {
                   {results.map((result, index) => (
                     <Link
                       key={index}
-                      href={result.type === 'section' ? `/topics/${result.section}` : `/topics/${result.section}/${result.slug}`}
+                      href={
+                        result.type === 'tool'    ? `/tools/${result.slug}` :
+                        result.type === 'section' ? `/topics/${result.section}` :
+                                                    `/topics/${result.section}/${result.slug}`
+                      }
                       className="flex items-center gap-3 px-4 py-3 hover:bg-blue-50 group border-l-4 border-transparent hover:border-blue-500 transition-all"
                       onClick={() => setIsOpen(false)}
                     >
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-lg shrink-0 ${result.type === 'section' ? 'bg-orange-100 text-orange-600' : 'bg-blue-100 text-blue-600'}`}>
-                        {result.type === 'section' ? '📂' : '📄'}
+                      {/* Glif SÜSLEME: anlamı yanındaki başlık taşıyor, o yüzden
+                          erişilebilirlik ağacından çıkarılıyor (belgedeki kural). */}
+                      <div
+                        aria-hidden="true"
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-lg shrink-0 ${
+                          result.type === 'tool'    ? 'bg-emerald-100 text-emerald-700' :
+                          result.type === 'section' ? 'bg-orange-100 text-orange-600' :
+                                                      'bg-blue-100 text-blue-600'
+                        }`}
+                      >
+                        {result.type === 'tool' ? '🧮' : result.type === 'section' ? '📂' : '📄'}
                       </div>
-                      <div>
+                      <div className="min-w-0">
                         <p className="text-sm font-bold text-slate-800 group-hover:text-blue-700">{result.title}</p>
-                        <p className="text-xs text-slate-500 capitalize">
-                           {result.type === 'section' ? 'Ana Bölüm' : `${result.section} Rehberi`}
+                        {/* Araçta alt satır KENDİ tanımını gösteriyor; "tools Rehberi"
+                            demek yanlış olurdu (araç bir rehber değil). */}
+                        <p className={`text-xs text-slate-500 ${result.type === 'tool' ? 'truncate' : 'capitalize'}`}>
+                           {result.type === 'tool'    ? (result.aciklama || 'Klinik hesaplayıcı') :
+                            result.type === 'section' ? 'Ana Bölüm' :
+                                                        `${result.section} Rehberi`}
                         </p>
                       </div>
                     </Link>
@@ -327,8 +357,30 @@ export default function SiteHeader() {
                         </>
                       ) : (
                         <>
+                          {/* ÇIKIŞ YOLU ŞART. Belgedeki kural: her boş/hata durumu
+                              geri dönülecek bir bağlantı taşımalı, yoksa kullanıcı
+                              çıkmazda kalır. Ölçüldü: bu kart sıfır bağlantı
+                              taşıyordu ve "Farklı bir kelime deneyin" tek yönlendirmeydi. */}
                           <p className="text-sm font-medium">Sonuç bulunamadı.</p>
-                          <p className="text-xs text-slate-400 mt-1">Farklı bir kelime deneyin.</p>
+                          <p className="text-xs text-slate-400 mt-1">
+                            Farklı bir kelime deneyebilir ya da doğrudan göz atabilirsin.
+                          </p>
+                          <div className="mt-4 flex flex-wrap justify-center gap-2">
+                            <Link
+                              href="/topics"
+                              onClick={() => setIsOpen(false)}
+                              className="rounded-full bg-blue-50 px-4 py-2 text-xs font-bold text-blue-800 hover:bg-blue-100 transition-colors"
+                            >
+                              Kütüphane
+                            </Link>
+                            <Link
+                              href="/tools"
+                              onClick={() => setIsOpen(false)}
+                              className="rounded-full bg-emerald-50 px-4 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-100 transition-colors"
+                            >
+                              Klinik hesaplayıcılar
+                            </Link>
+                          </div>
                         </>
                       )}
                    </div>

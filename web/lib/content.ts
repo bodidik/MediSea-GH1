@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { aramaNormalize } from '@/app/lib/arama';
+import aracIndex from "@/content/arac-index.json";
 
 // 👇 TİP TANIMLAMALARI
 export type CanonicalDoc = {
@@ -122,7 +123,9 @@ export type SearchResult = {
   title: string;
   section: string;
   slug: string;
-  type: 'topic' | 'section';
+  type: 'topic' | 'section' | 'tool';
+  /** Yalnızca araçlarda: hub'daki kısa tanım. Konu sonuçlarında boş. */
+  aciklama?: string;
 };
 
 export async function searchContent(query: string): Promise<SearchResult[]> {
@@ -185,5 +188,44 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
       }
     }
   }
-  return results;
+
+  /**
+   * KLİNİK ARAÇLAR DA ARANIR.
+   *
+   * ÖLÇÜLDÜ (canlıda): arama yalnızca `content/canonical` ağacını geziyordu,
+   * yani 130 hesaplayıcının hiçbiri sitenin kendi aramasında görünmüyordu.
+   * En keskin vaka "Wells": sitede İKİ Wells hesaplayıcısı var
+   * (`wells-pe`, `wells-dvt`) ama arama **sıfır sonuç** dönüyor ve
+   * "Sonuç bulunamadı" diyordu — yani kullanıcıya sahip OLDUĞUMUZ şeyin
+   * olmadığı öğretiliyordu. "eGFR" üç konu getiriyor ama `/tools/egfr`yi
+   * getirmiyordu.
+   *
+   * Kaynak `content/arac-index.json`: `app/tools` klasörü çalışma zamanında
+   * OKUNAMAZ (sunucusuz ortamda kaynak dizin yok, bkz. getToolCount) —
+   * statik JSON içe aktarımı paketlenir ve her zaman güvenlidir.
+   *
+   * SIRALAMA: adı eşleşen araç konuların ÜSTÜNE, yalnızca açıklaması
+   * eşleşen araç ALTINA konuyor. Gerekçe ölçülebilir: "eGFR" yazan kişi
+   * büyük olasılıkla hesaplayıcıyı arıyor ve o, etiket üzerinden eşleşen
+   * üç konunun arkasında kalmamalı. Ters yönde risk yok — hiçbir aracın
+   * ADI "Addison" gibi konu terimlerini taşımıyor, o yüzden konu aramaları
+   * öne çıkmaya devam ediyor.
+   */
+  const aracAdEsleyen: SearchResult[] = [];
+  const aracAciklamaEsleyen: SearchResult[] = [];
+  for (const arac of aracIndex as { slug: string; name: string; desc?: string }[]) {
+    const adTuttu = aramaNormalize(arac.name).includes(cleanQuery);
+    const aciklamaTuttu = !adTuttu && aramaNormalize(arac.desc || '').includes(cleanQuery);
+    if (!adTuttu && !aciklamaTuttu) continue;
+    const kayit: SearchResult = {
+      title: arac.name,
+      section: 'tools',
+      slug: arac.slug,
+      type: 'tool',
+      aciklama: arac.desc,
+    };
+    (adTuttu ? aracAdEsleyen : aracAciklamaEsleyen).push(kayit);
+  }
+
+  return [...aracAdEsleyen, ...results, ...aracAciklamaEsleyen];
 }

@@ -10882,3 +10882,125 @@ hız     = 5710 mL / 48 saat = 119         ->  ekran 119
 kayıyor ve "aynı aday mı, yeni aday mı" sorusu cevapsız kalıyor. Verdikt
 DEĞİŞKEN ve İFADE adıyla yazılmalı; bu turda ikisi de değişmiş görünüyordu
 ve yalnızca ölçüm ayırt etti.
+
+### ARAMA 130 HESAPLAYICIYI HİÇ GÖRMÜYORDU — "Wells" sıfır sonuç veriyordu
+
+Belgede aramanın Türkçe normalizasyonu, ESC'si, canlı bölgesi ve temizleme
+düğmesi ölçülmüştü. Hiç sorulmamış soru şuydu: **arama NEYİ arıyor?**
+
+Ölçüldü (canlı):
+
+| sorgu | sonuç |
+|---|---|
+| **Wells** | **0** — oysa sitede `wells-pe` ve `wells-dvt` VAR |
+| eGFR | 3 konu, **0 araç** — `/tools/egfr` gelmiyor |
+| kalsiyum | 2 konu, 0 araç |
+| Addison | 5 konu (doğru) |
+
+`searchContent` yalnızca `content/canonical` ağacını geziyordu. Yani sitenin
+en büyük varlığı olan 130 hesaplayıcı, sitenin kendi aramasında **görünmez**.
+
+"Wells" vakası en keskini: kullanıcı iki Wells hesaplayıcısı olan bir sitede
+"Wells" yazıyor ve **"Sonuç bulunamadı"** görüyor — yani ona SAHİP OLDUĞUMUZ
+şeyin olmadığı öğretiliyor. Bu, deponun `/api` turunda kayıtlı *"uydurulmuş
+bir başarı yanlış varsayım üretir"* kuralının ayna hâli: uydurulmuş bir
+YOKLUK da yanlış varsayım üretiyor.
+
+**Kaynak `content/arac-index.json`** — `app/tools` klasörü çalışma zamanında
+okunamıyor (sunucusuz ortamda kaynak dizin yok, bkz. `getToolCount`); statik
+JSON içe aktarımı paketleniyor.
+
+**SIRALAMA KARARI ve gerekçesi:** adı eşleşen araç konuların ÜSTÜNE, yalnızca
+açıklaması eşleşen araç ALTINA konuyor. "eGFR" yazan kişi büyük olasılıkla
+hesaplayıcıyı arıyor ve etiketten eşleşen üç konunun arkasında kalmamalı.
+Ters yönde risk ölçüldü: hiçbir aracın ADI "Addison" gibi konu terimleri
+taşımıyor, o yüzden konu aramaları öne çıkmaya devam ediyor.
+
+| sorgu | önce | sonra |
+|---|---|---|
+| Wells | 0 | **2 araç** (`wells-dvt`, `wells-pe`) |
+| eGFR | 3 konu | **`/tools/egfr` İLK**, sonra aynı 3 konu |
+| Addison | 5 konu | **5 konu, 0 araç** — negatif kontrol, konu araması bozulmadı |
+
+### Aynı yüzeyde iki kusur daha — biri deponun kendi kuralını çiğniyordu
+
+**1) Sıfır sonuçta ÇIKIŞ YOLU YOKTU.** Kart şunu diyordu: *"🤔 Sonuç
+bulunamadı. Farklı bir kelime deneyin."* — ölçüldü: **sıfır bağlantı**.
+Belgedeki kural açık: *"Çıkış yolu ver. Her hata kartında geri dönülecek bir
+bağlantı olsun; yoksa kullanıcı çıkmazda kalır."* Artık iki çıkış var
+(Kütüphane · Klinik hesaplayıcılar).
+
+**2) AÇILIR PANELİN YÜKSEKLİK SINIRI YOKTU.** `max-height: none` ve
+`overflow: hidden`. Ölçüldü — "kan" sorgusu:
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| sonuç | 40 | 45 (araçlarla) |
+| panel yüksekliği | **6874 px** | **448 px** |
+| belge yüksekliği | **6934 px** | **1676 px** |
+| içten kaydırılabilir | hayır | **evet** |
+
+Yani tek bir arama, sayfayı 9,5 ekran boyuna uzatıyordu.
+
+### Dar ekranda panel KUTU KADAR dardı — 74 px
+
+Araç açıklamalarını ekleyince ölçülen üçüncü sorun. 320 px'te başlık satırı
+şöyle bölüşülüyor:
+
+```
+logo 80px (shrink-0) + arama 74px (flex-1) + Giriş/Üye Ol 150px (shrink-0)
+```
+
+Panel `w-full` olduğu için sonuçlar da 74 px genişlikte çiziliyordu; araç
+açıklaması okunmuyor, satır 136 px'e şişiyordu. Panel mobilde görünüm
+penceresine sabitlendi (`fixed left-2 right-2`), `sm` ve üstünde eski
+davranış (kutuya hizalı `absolute`) aynen sürüyor.
+
+| genişlik | panel | satır | konum |
+|---|---|---|---|
+| 320 px | 74 → **304 px** | 136 → **96 px** | `fixed` |
+| 1280 px | **215 px, kutuya hizalı** | — | `absolute` (değişmedi) |
+
+**Kimlik/dönüşüm düğmelerine (Giriş · Üye Ol) DOKUNULMADI** — 150 px'lik
+`shrink-0` sağ grup dar ekranda arama kutusunu 74 px'e sıkıştırıyor ve bu
+ölçülmüş bir kusur; ama hangi kontrolün öncelikli olduğu ürün kararı.
+Ölçüm burada, karar içerik/ürün sahibinin.
+
+**Negatif kontroller:** erişilebilir ad temiz ("Wells Skoru (DVT)Derin ven
+trombozu klinik olasılığı" — glif `aria-hidden`), canlı bölge sayıyı doğru
+söylüyor ("2 sonuç bulundu."), ESC hâlâ kapatıyor ve **sorguyu koruyor**,
+320 px'te gerçek yatay kaydırma 0.
+
+#### Ölçüm tuzağı: ESKİ DERLEMEYİ ölçtüm ve sağlık kontrolüm bunu gizledi
+
+Mobil düzeltmeyi yapıp yeniden derledim, sunucuyu `pkill -f "next start"` ile
+öldürüp yeniden başlattım, `curl` 200 döndü ve ölçtüm — **panel hâlâ 74 px**
+çıktı. Sebep düzeltmede değildi:
+
+- `pkill -f "next start"` süreci **öldürmedi** (gerçek süreç `node …/next
+  start`), eski sunucu portu tutmaya devam etti;
+- yeni örnek `EADDRINUSE` ile sessizce düştü;
+- `curl`ün aldığı **200 eski sunucudan** geliyordu, yani sağlık kontrolüm
+  yanlış sebeple geçti.
+
+Ayırt eden ölçüm, panelin GERÇEK `className`ini okumak oldu: eski dize
+duruyordu. **Bir düzeltmeyi ölçmeden önce, ölçtüğün sürecin o düzeltmeyi
+taşıdığını doğrula** — "sunucu cevap veriyor" bunu göstermez. Ucuz kanıt:
+sunulan CSS paketinin parmak izini derlemedekiyle karşılaştır
+(`curl … | grep -o "/_next/static/css/[a-z0-9]*\.css"`).
+
+#### `scrollWidth` yine sahte taşma üretti — belgedeki kural işledi
+
+320 px ölçümünde "6 taşan öge, 23 px kayma" çıktı ve bir an gerileme sanıldı.
+`23 = innerWidth(343) − clientWidth(320)`, yani belgede kayıtlı öykünme
+artefaktı. Gerçek kaydırma denemesi (`scrollTo(9999,0)` → `scrollX`) **0**
+verdi. İki ölçütü birlikte kullanma kuralı bu turda sahte bulguyu eledi.
+
+#### Kapsam dışı bırakılan: arama GİZLİ konuları da döndürüyor
+
+Ölçüldü: `searchContent` `meta.hidden` süzmüyor. "İnsidentaloma" araması
+gizli bir konuyu getiriyor ve o sayfa **200** dönüp düzgün çiziliyor —
+yani içerik kayıp değil, yalnızca listelerden çıkarılmış. Aramada
+görünmesi kayıp değil bir POLİTİKA sorusu (gizli konu hiç bulunamasın mı,
+yoksa yalnızca gezinmede mi gizlensin?). Ölçüldü, not edildi,
+DEĞİŞTİRİLMEDİ.
