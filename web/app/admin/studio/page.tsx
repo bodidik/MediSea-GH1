@@ -42,7 +42,7 @@ export default function ContentStudio() {
         {/* Üst Bar: Kaydetme Kontrolleri */}
         <div className="flex items-center justify-between mb-8 bg-slate-900 p-4 rounded-2xl border border-blue-900/30 sticky top-4 z-50 backdrop-blur-md">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-xl">✍️</div>
+            <div aria-hidden="true" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-xl">✍️</div>
             <div>
               <h1 className="text-sm font-black uppercase tracking-widest text-white">İçerik Stüdyosu</h1>
               <p className="text-[10px] font-bold text-slate-500 uppercase italic">Dosya: canonical/hematoloji/hematopoez.json</p>

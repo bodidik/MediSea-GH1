@@ -345,7 +345,7 @@ function AdimKarti({
                 padding: '.75rem 1.1rem', background: '#f0fbf5',
                 display: 'flex', alignItems: 'center', gap: '8px',
               }}>
-                <span style={{ fontSize: '1.1rem' }}>🏁</span>
+                <span aria-hidden="true" style={{ fontSize: '1.1rem' }}>🏁</span>
                 <span style={{ fontSize: '13px', fontWeight: 700, color: '#1a6640' }}>Vaka tamamlandı!</span>
               </div>
             )}

@@ -115,7 +115,7 @@ export default function ProfilePage() {
       <RequirePlan plan={role} min="P">
         <div className="rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white p-6 shadow-sm">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xl">🌟</span>
+            <span aria-hidden="true" className="text-xl">🌟</span>
             <h3 className="text-lg font-bold text-blue-950">Premium Analiz</h3>
           </div>
           <p className="text-sm font-medium text-slate-600">

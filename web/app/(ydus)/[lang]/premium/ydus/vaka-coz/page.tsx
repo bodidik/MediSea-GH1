@@ -64,7 +64,7 @@ export default async function VakaCozPage(props: {
     console.error('[vaka-coz] geçersiz branş parametresi:', branch);
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <div aria-hidden="true" style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
         <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu vaka açılamadı</h1>
         <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
           Adres eksik görünüyor. Vakalara konu sayfalarından ulaşabilirsin.
@@ -200,7 +200,7 @@ export default async function VakaCozPage(props: {
     console.error('[vaka-coz] geçersiz vaka parametresi:', { id, topic });
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <div aria-hidden="true" style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
         <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu vaka açılamadı</h1>
         <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
           Adres eksik görünüyor. Branş sayfasından vakalara ulaşabilirsin.
@@ -222,7 +222,7 @@ export default async function VakaCozPage(props: {
     console.error('[vaka-coz] vaka dosyası okunamadı:', `${branch}/${id}.json`);
     return (
       <div style={S}>
-        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
+        <div aria-hidden="true" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
         <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Vaka bulunamadı</h1>
         <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
           Bu vaka kaldırılmış ya da adresi değişmiş olabilir.

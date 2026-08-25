@@ -40,7 +40,7 @@ export default async function QuizCozPage(props: {
     console.error('[quiz-coz] geçersiz parametre:', { branch, id });
     return (
       <div style={S}>
-        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
+        <div aria-hidden="true" style={{ fontSize: '2rem', marginBottom: '1rem' }}>🧭</div>
         <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Bu quiz açılamadı</h1>
         <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
           Adres eksik görünüyor. Quizlere konu sayfalarından ulaşabilirsin.
@@ -67,7 +67,7 @@ export default async function QuizCozPage(props: {
     console.error('[quiz-coz] quiz dosyası okunamadı:', `${branch}/${id}.json`);
     return (
       <div style={S}>
-        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
+        <div aria-hidden="true" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔍</div>
         <h1 style={{ color: '#1a3a6b', fontSize: '18px', marginBottom: '.5rem' }}>Quiz bulunamadı</h1>
         <p style={{ color: '#4a6a8a', fontSize: '13px', marginBottom: '1.5rem', textAlign: 'center' }}>
           Bu quiz kaldırılmış ya da adresi değişmiş olabilir.

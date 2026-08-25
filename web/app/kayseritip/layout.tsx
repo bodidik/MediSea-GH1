@@ -22,7 +22,7 @@ export default async function KayseriTipLayout({ children }: { children: React.R
         position: 'sticky', top: 0, zIndex: 100,
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ fontSize: '20px' }}>🎓</span>
+          <span aria-hidden="true" style={{ fontSize: '20px' }}>🎓</span>
           <span style={{ fontWeight: 700, fontSize: '15px', letterSpacing: '.02em' }}>KayseriTıp</span>
           <span style={{
             fontSize: '10px', fontWeight: 600, padding: '2px 8px',

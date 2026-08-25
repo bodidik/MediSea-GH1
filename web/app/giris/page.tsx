@@ -60,7 +60,7 @@ function GirisFormu() {
         border: '0.5px solid #b8cfe8', borderRadius: '16px', padding: '2rem',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-          <div style={{ fontSize: '28px', marginBottom: '8px' }}>🩺</div>
+          <div aria-hidden="true" style={{ fontSize: '28px', marginBottom: '8px' }}>🩺</div>
           <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a3a6b', margin: 0 }}>MediSea'ya Giriş</h1>
         </div>
 

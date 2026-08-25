@@ -545,7 +545,7 @@ export default function NotePanel() {
           aria-label="Not defterini aç"
           className="fixed right-0 top-1/2 z-[54] flex -translate-y-1/2 flex-col items-center gap-1.5 rounded-l-2xl border border-r-0 border-slate-200 bg-white/95 px-2 py-4 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:pr-3 active:scale-95"
         >
-          <span className="text-base">📝</span>
+          <span aria-hidden="true" className="text-base">📝</span>
           <span className="text-[9px] font-black uppercase tracking-[0.2em] text-slate-500 [writing-mode:vertical-rl]">
             Not
           </span>
@@ -590,7 +590,7 @@ export default function NotePanel() {
 
             {/* başlık */}
             <header className="flex items-center gap-2 border-b border-slate-100 px-3 py-2.5">
-              <span className="text-base">📝</span>
+              <span aria-hidden="true" className="text-base">📝</span>
               <div className="min-w-0 flex-1">
                 <div className="text-[11px] font-black uppercase tracking-widest text-blue-950">
                   Not Defteri

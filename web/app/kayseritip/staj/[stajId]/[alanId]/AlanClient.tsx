@@ -134,7 +134,7 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
       {/* Dosya listesi */}
       {dosyalar.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '3rem 0', color: '#5a6a8a', fontSize: '14px' }}>
-          <div style={{ fontSize: '36px', marginBottom: '8px' }}>📂</div>
+          <div aria-hidden="true" style={{ fontSize: '36px', marginBottom: '8px' }}>📂</div>
           Bu alana henüz dosya yüklenmemiş.
         </div>
       ) : (

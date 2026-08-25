@@ -69,7 +69,7 @@ export default function SlaytViewer({ dosyaUrl, tip, baslik }: Props) {
             padding: '14px 18px', textDecoration: 'none', color: '#1a2a4a',
           }}
         >
-          <span style={{ fontSize: '22px' }}>⬇</span>
+          <span aria-hidden="true" style={{ fontSize: '22px' }}>⬇</span>
           <div>
             <div style={{ fontSize: '13px', fontWeight: 600 }}>Bilgisayara İndir</div>
             <div style={{ fontSize: '11px', color: '#5a6a8a' }}>PowerPoint ile aç</div>
@@ -86,7 +86,7 @@ export default function SlaytViewer({ dosyaUrl, tip, baslik }: Props) {
             padding: '14px 18px', textDecoration: 'none', color: '#1a2a4a',
           }}
         >
-          <span style={{ fontSize: '22px' }}>🌐</span>
+          <span aria-hidden="true" style={{ fontSize: '22px' }}>🌐</span>
           <div>
             <div style={{ fontSize: '13px', fontWeight: 600 }}>Online Görüntüle</div>
             <div style={{ fontSize: '11px', color: '#5a6a8a' }}>Microsoft Office Online (public URL gerekir)</div>

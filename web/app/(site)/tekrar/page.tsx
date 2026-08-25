@@ -271,7 +271,7 @@ export default function ReviewPage() {
         <div className="px-5 py-8 sm:px-8 sm:py-10">
           {card.kind === "sketch" ? (
             <div className="text-center">
-              <div className="mb-1 text-3xl">✍</div>
+              <div aria-hidden="true" className="mb-1 text-3xl">✍</div>
               <p className="mb-5 text-[15px] font-semibold leading-relaxed text-slate-700">
                 Bu konuda çizdiğin şemayı hatırla
               </p>

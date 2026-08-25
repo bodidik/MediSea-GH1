@@ -190,7 +190,7 @@ export default function StudyWorkspace() {
         {/* Boş durum */}
         {entries !== null && entries.length === 0 && (
           <div className="rounded-3xl border border-slate-100 bg-white p-10 text-center sm:p-16">
-            <div className="mb-3 text-4xl">🖍</div>
+            <div aria-hidden="true" className="mb-3 text-4xl">🖍</div>
             <h2 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
               Henüz not almadın
             </h2>

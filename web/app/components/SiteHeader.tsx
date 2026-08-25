@@ -343,7 +343,7 @@ export default function SiteHeader() {
             1280–1550 arasında sayfayı yatay kaydırıyordu. Bu aralıkta hamburger menüde. */}
         <div className="hidden 2xl:flex items-center gap-2 shrink-0 ml-2">
           <Link href="/tr/premium/ydus" className="bg-amber-400 hover:bg-amber-500 text-blue-950 text-xs font-black tracking-widest px-4 py-2.5 rounded-full flex items-center gap-2 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
-            PREMİUM YDUS <span>⚓</span>
+            PREMİUM YDUS <span aria-hidden="true">⚓</span>
           </Link>
           
           {/* KLİNİK ARAÇLAR AÇILIR MENÜ (DROPDOWN) */}
@@ -391,7 +391,7 @@ export default function SiteHeader() {
               
               <Link href="/tools" className="flex items-center justify-between px-3 py-2.5 hover:bg-slate-50 rounded-xl transition-colors group/item">
                 <span className="text-[10px] font-black tracking-widest text-slate-400 group-hover/item:text-slate-600">TÜM ARAÇLAR</span>
-                <span className="text-slate-300 group-hover/item:text-slate-500 group-hover/item:translate-x-1 transition-transform">→</span>
+                <span aria-hidden="true" className="text-slate-300 group-hover/item:text-slate-500 group-hover/item:translate-x-1 transition-transform">→</span>
               </Link>
             </div>
           </div>
@@ -509,7 +509,7 @@ export default function SiteHeader() {
                 onClick={() => setMenuOpen(false)}
                 className="bg-amber-400 hover:bg-amber-500 text-blue-950 text-xs font-black tracking-widest px-4 py-3 rounded-2xl flex items-center justify-center gap-2 transition-all"
               >
-                PREMİUM YDUS <span>⚓</span>
+                PREMİUM YDUS <span aria-hidden="true">⚓</span>
               </Link>
               <Link
                 href="/tools"

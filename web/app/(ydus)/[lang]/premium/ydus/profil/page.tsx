@@ -123,7 +123,7 @@ export default function ProfileDashboard() {
               Köprüüstüne Dön ➡️
             </Link>
             <Link href="/tr/premium/ydus/liderlik" className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold text-sm shadow-lg transition-all flex items-center gap-2">
-              <span>🏆</span> Liderlik Tablosu
+              <span aria-hidden="true">🏆</span> Liderlik Tablosu
             </Link>
           </div>
         </div>
@@ -171,11 +171,11 @@ export default function ProfileDashboard() {
           {/* 2. BRANŞ İLERLEME DURUMU */}
           <div className="lg:col-span-2 bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-800">
             <h2 className="text-xl font-black text-white mb-6 flex items-center gap-2">
-              <span className="text-2xl">📈</span> Branş Hakimiyeti
+              <span aria-hidden="true" className="text-2xl">📈</span> Branş Hakimiyeti
             </h2>
             {branslar.length === 0 ? (
               <div className="text-center py-6">
-                <span className="text-4xl block mb-3 opacity-50">🧭</span>
+                <span aria-hidden="true" className="text-4xl block mb-3 opacity-50">🧭</span>
                 <p className="text-slate-400 text-sm font-medium mb-4">
                   Henüz hiçbir konuda işaretin yok. Bir konuyu okuyup vurgulamaya
                   başladığında hakimiyetin burada birikmeye başlar.
@@ -230,12 +230,12 @@ export default function ProfileDashboard() {
           {/* 3. ROZETLER VE BAŞARILAR */}
           <div className="bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-800">
             <h2 className="text-xl font-black text-white mb-6 flex items-center gap-2">
-              <span className="text-2xl">🏆</span> Rozetler
+              <span aria-hidden="true" className="text-2xl">🏆</span> Rozetler
             </h2>
             
             {badges.length === 0 ? (
               <div className="text-center py-8">
-                <span className="text-4xl block mb-3 opacity-50">🛡️</span>
+                <span aria-hidden="true" className="text-4xl block mb-3 opacity-50">🛡️</span>
                 <p className="text-slate-500 text-sm font-medium">Henüz rozet kazanmadınız. Simülasyonları çözerek koleksiyonu tamamlayın!</p>
               </div>
             ) : (

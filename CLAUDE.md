@@ -8423,3 +8423,65 @@ Ayrıca aracın başındaki yorum, geçmiş bir kusuru birebir kaydediyor: puanl
 bir dönem TERSTİ ("Hipotansiyon Yok" işaretlenince puan ekleneceğine
 çıkarılıyordu) ve bütün olumlu özellikleri taşıyan hasta 12 alıp "YÜKSEK
 RİSK" çıkıyordu. Bugün ölçüldü — kapanmış.
+
+### ARAÇ DIŞI SÜSLEME GLİFLERİ SÜPÜRÜLDÜ — belgenin kendi iş listesindeki madde
+
+Belge bu maddeyi açıkça bırakmıştı: *"Araç DIŞINDA 56 öge (28 dosya)
+gizlenmemiş durumda ve SÜPÜRÜLMEDİ… Yapılacaksa ölçütü daralt: yanında ZATEN
+metin olan glifler güvenli adaydır, tek başına duranlar insan kararı ister."*
+
+**Sayım önce ULAŞILABİLİRLİKLE düzeltildi.** Ham tarama 104 glif buldu; alt
+çizgili (rotaya alınmayan) klasörler ve içe aktaranı olmayan bileşenler
+elenince **58**'e düştü:
+
+| elenen | sebep |
+|---|---|
+| `_endokrinoloji` · `_gastroenteroloji` · `_hematoloji` · `_romatoloji` … | rotaya alınmıyor |
+| `SimulatorEngine` · `PremiumVideoRecommendations` | yalnızca alt çizgili klasörlerden içe aktarılıyor |
+| `PremiumDailyProgram` · `StrategyMap` | sıfır içe aktaran |
+
+Belgedeki *"ölü koda düzeltme yaptım"* hatası bu turda tekrarlanmadı: içe
+aktaranlar ölçüldü, `ReadingHint` ve `NotePanel` canlı çıktı (`AppShell` ve
+`(ydus)/layout`), ötekiler ölü.
+
+**43 glif gizlendi, 14'ü BİLEREK bırakıldı.** İki koruma birden uygulandı:
+
+1. **Etkileşimli ögenin TEK içeriği mi?** Öyleyse gizlemek onu ADSIZ bırakır —
+   atlanıyor (`VakaEngine` 🔍 böyle).
+2. **Yanında görünür metin var mı?** Yoksa glif tek anlam taşıyıcı olabilir —
+   atlanıyor.
+
+**ÖLÇÜT İKİNCİ ŞEKLİ TANIMIYORDU — araç süpürmesindeki 98→131 dersinin
+aynısı.** İlk sürüm `>glif<` arasını en çok 12 karakter kabul ediyordu; glif
+KENDİ SATIRINDA yazılmışsa araya girinti ve satır sonu giriyor ve eşleşme
+düşüyor:
+
+```tsx
+<span className="w-9 h-9 …">
+  ✓
+</span>
+```
+
+`/uyelik`teki iki bölüm rozeti (`✓` ücretsiz, `★` premium) tam bu yüzden
+kaçmıştı — ikisi de hemen ardından gelen `<h2>`nin anlamını taşıdığı
+tartışmasız süslemeler. Ölçüt boşluk-dolgulu içeriği de tanıyınca üçü birden
+yakalandı.
+
+**NEGATİF KONTROL ÜÇ AYAKLI (belgedeki kural) ve üç sayfada ölçüldü:**
+
+| sayfa | ağaçta kalan glif | beklenen metin ağaçta | ekranda çizili gizli glif |
+|---|---|---|---|
+| 404 | **0** | ✓ | 3 |
+| `/uyelik` | 1 | ✓ | 4 |
+| `/` | 1 | ✓ | **21** |
+
+Üçüncü sütun kritik: `aria-hidden` görünümü DEĞİŞTİRMEZ; yanlışlıkla `hidden`
+yazılsaydı ikonlar kaybolurdu ve ilk iki ölçüm bunu göremezdi.
+
+Kalan tek glif iki sayfada da aynı: `SiteHeader`daki `🧪` (yanında "KLİNİK
+ARAÇLAR" yazıyor). Ölçütün "komşu metin" kontrolü orada fazla katı davranıyor
+— güvenli aday ama otomatik süpürmeye girmedi. **14 atlananın listesi
+denetlenebilir durumda; hiçbiri kusur değil, hepsi insan kararı bekleyen
+kalıntı.**
+
+`arayuz-denetim` temiz, dört kapı geçti.

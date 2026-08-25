@@ -56,7 +56,7 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
       padding: '1.25rem 1.5rem',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem' }}>
-        <span style={{ fontSize: '18px' }}>🤖</span>
+        <span aria-hidden="true" style={{ fontSize: '18px' }}>🤖</span>
         <h3 style={{ fontSize: '15px', fontWeight: 600, color: '#1a3a6b', margin: 0 }}>
           Bu konuya soru sor
         </h3>

@@ -105,7 +105,7 @@ export default function UyelikSayfasi() {
         {/* DURUM — dürüstlük burada başlıyor */}
         <div className="bg-amber-50 border-2 border-amber-300 rounded-[2rem] p-6 sm:p-8">
           <div className="flex items-start gap-4">
-            <span className="text-2xl">🚧</span>
+            <span aria-hidden="true" className="text-2xl">🚧</span>
             <div>
               <h2 className="text-base font-black uppercase tracking-wide text-amber-900 mb-2">
                 Premium henüz satışta değil
@@ -123,7 +123,7 @@ export default function UyelikSayfasi() {
         {/* ÜCRETSİZ */}
         <section className="bg-white rounded-[2rem] border border-slate-200 shadow-sm p-6 sm:p-8">
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-9 h-9 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-lg">
+            <span aria-hidden="true" className="w-9 h-9 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-lg">
               ✓
             </span>
             <h2 className="text-xs font-black uppercase tracking-[0.25em] text-emerald-800">
@@ -143,7 +143,7 @@ export default function UyelikSayfasi() {
         {/* PREMIUM */}
         <section className="bg-blue-950 rounded-[2rem] p-6 sm:p-8 text-white shadow-xl border-t-8 border-amber-400">
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-9 h-9 rounded-2xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-lg">
+            <span aria-hidden="true" className="w-9 h-9 rounded-2xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-lg">
               ★
             </span>
             <h2 className="text-xs font-black uppercase tracking-[0.25em] text-amber-400">

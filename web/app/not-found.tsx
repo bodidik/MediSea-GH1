@@ -66,7 +66,7 @@ export default function BulunamadiSayfasi() {
             href="/topics"
             className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
           >
-            <div className="text-2xl mb-2">📚</div>
+            <div aria-hidden="true" className="text-2xl mb-2">📚</div>
             <div className="text-sm font-black text-blue-950 uppercase italic">Kütüphane</div>
             <div className="text-[11px] text-slate-500 font-medium mt-1">
               Branşlara göre konu anlatımları
@@ -77,7 +77,7 @@ export default function BulunamadiSayfasi() {
             href="/tools"
             className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
           >
-            <div className="text-2xl mb-2">🧮</div>
+            <div aria-hidden="true" className="text-2xl mb-2">🧮</div>
             <div className="text-sm font-black text-blue-950 uppercase italic">Klinik Araçlar</div>
             <div className="text-[11px] text-slate-500 font-medium mt-1">
               Hesaplayıcılar ve skorlar
@@ -88,7 +88,7 @@ export default function BulunamadiSayfasi() {
             href="/"
             className="bg-white rounded-2xl border border-slate-200 p-5 hover:border-blue-900/30 hover:shadow-lg transition-all"
           >
-            <div className="text-2xl mb-2">⚓</div>
+            <div aria-hidden="true" className="text-2xl mb-2">⚓</div>
             <div className="text-sm font-black text-blue-950 uppercase italic">Ana Sayfa</div>
             <div className="text-[11px] text-slate-500 font-medium mt-1">
               Baştan başla

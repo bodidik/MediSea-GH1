@@ -80,7 +80,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <li>
                   {/* /premium diye bir rota yok; premium tanıtımı dil önekiyle duruyor. */}
                   <Link href="/tr/premium/ydus" className="flex items-center gap-2 py-1.5 text-amber-400 hover:text-amber-300 transition-colors">
-                    Premium YDUS <span className="text-amber-500">★</span>
+                    Premium YDUS <span aria-hidden="true" className="text-amber-500">★</span>
                   </Link>
                 </li>
                 <li><Link href="/tools" className="block py-1.5 hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>

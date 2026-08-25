@@ -190,20 +190,20 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                   <div className="bg-slate-950 text-white p-2 rounded-lg shadow-2xl border border-blue-900/30">
                     <div className="flex items-center justify-between mb-2 border-b border-slate-800 pb-1.5">
                       <span className="text-xs font-black text-green-400 uppercase tracking-widest flex items-center gap-2">
-                        <span>🎉</span> Vaka Tamamlandı
+                        <span aria-hidden="true">🎉</span> Vaka Tamamlandı
                       </span>
                     </div>
                     <div className="grid grid-cols-3 gap-2">
                       <Link href={data.navigation?.nextCase?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-blue-600 rounded-lg text-center border border-slate-800 hover:border-blue-500/50 transition-all group">
-                        <div className="text-base group-hover:scale-110 transition-transform">➡️</div>
+                        <div aria-hidden="true" className="text-base group-hover:scale-110 transition-transform">➡️</div>
                         <div className="text-[9px] text-slate-200 group-hover:text-blue-100 mt-1 font-bold uppercase tracking-widest">Sıradaki</div>
                       </Link>
                       <Link href={data.navigation?.pearls?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-yellow-600 rounded-lg text-center border border-slate-800 hover:border-yellow-500/50 transition-all group">
-                        <div className="text-base group-hover:scale-110 transition-transform">💎</div>
+                        <div aria-hidden="true" className="text-base group-hover:scale-110 transition-transform">💎</div>
                         <div className="text-[9px] text-slate-200 group-hover:text-yellow-100 mt-1 font-bold uppercase tracking-widest">Notlar</div>
                       </Link>
                       <Link href={data.navigation?.exit?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-red-600 rounded-lg text-center border border-slate-800 hover:border-red-500/50 transition-all group">
-                        <div className="text-base group-hover:scale-110 transition-transform">🏠</div>
+                        <div aria-hidden="true" className="text-base group-hover:scale-110 transition-transform">🏠</div>
                         <div className="text-[9px] text-slate-200 group-hover:text-red-100 mt-1 font-bold uppercase tracking-widest">Çıkış</div>
                       </Link>
                     </div>
@@ -259,7 +259,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
           {showResult && currentStage.explanation && (
             <div className="bg-slate-900 p-3 rounded-lg border border-slate-800 shadow-xl">
               <h4 className="font-black text-white text-xs mb-2 pb-1.5 border-b border-slate-800 uppercase tracking-widest flex items-center gap-2">
-                <span>🩺</span> Uzman Görüşü
+                <span aria-hidden="true">🩺</span> Uzman Görüşü
               </h4>
               <div 
                 className="text-[14px] text-slate-200 space-y-1.5 prose prose-sm prose-invert prose-blue leading-relaxed font-medium"

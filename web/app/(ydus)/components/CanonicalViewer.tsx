@@ -71,7 +71,7 @@ export default function CanonicalViewer({ data, branch, id }: { data: CanonicalD
             href={`/tr/admin/studio?branch=${branch}&id=${id}`}
             className="flex items-center gap-3 px-6 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-black shadow-2xl shadow-blue-900/40 border border-blue-400/30 transition-all active:scale-95 group"
           >
-            <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-xl group-hover:rotate-12 transition-transform">
+            <div aria-hidden="true" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-xl group-hover:rotate-12 transition-transform">
               ✍️
             </div>
             <div className="text-left">
