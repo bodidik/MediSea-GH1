@@ -11004,3 +11004,78 @@ yani içerik kayıp değil, yalnızca listelerden çıkarılmış. Aramada
 görünmesi kayıp değil bir POLİTİKA sorusu (gizli konu hiç bulunamasın mı,
 yoksa yalnızca gezinmede mi gizlensin?). Ölçüldü, not edildi,
 DEĞİŞTİRİLMEDİ.
+
+### HER ARAMA önce YANLIŞ bir "Sonuç bulunamadı" duyuruyordu
+
+Arama gecikmesini ölçerken beklenmedik bir şey çıktı: beş sonuçlu "Addison"
+sorgusu için ölçüm "Sonuç bulunamadı." okudu. `role="status"` bölgesi zaman
+içinde `MutationObserver` ile örneklenince sebep göründü:
+
+| ms | duyurulan |
+|---|---|
+| 0 | (boş) |
+| **8** | **"Sonuç bulunamadı."** ← arama HENÜZ BAŞLAMADI |
+| 340 | "Aranıyor…" |
+| 679 | "5 sonuç bulundu." |
+
+Sebep: `setLoading(true)` 300 ms'lik geciktirmenin İÇİNDE çağrılıyor. O
+pencerede `query.length >= 2`, `loading` hâlâ `false` ve `results` boş olduğu
+için durum ifadesi son dala düşüyordu. Ekran okuyucu kullanan biri **her
+aramada** önce yanlış bir "sonuç yok" duyuyordu.
+
+**Çare `loading`i öne almak DEĞİL** — o, geciktirmenin amacını bozar. Elde
+duran sonuçların HANGİ sorguya ait olduğu tutuluyor (`sonuclarSorgu`); sorgu
+değiştiği anda sonuçlar bayat sayılıyor ve durum "Aranıyor…" oluyor.
+
+| ölçüm | sonra |
+|---|---|
+| 5 sonuçlu sorgu | (boş) → **"Aranıyor…" 13 ms** → "5 sonuç bulundu." 911 ms |
+| **negatif** — sıfır sonuçlu sorgu | "5 sonuç bulundu." (bayat) → "Aranıyor…" 4 ms → **"Sonuç bulunamadı." 1201 ms** |
+
+İkinci satır belirleyici: gerçek "bulunamadı" hâlâ duyuruluyor, yani düzeltme
+mesajı susturmadı — yalnızca yanlış zamanda çıkmasını engelledi.
+
+### "866 ms sunucu" ÇIKARIMIM YANLIŞTI — isteği ölçmemiştim
+
+Aynı turda arama gecikmesi ölçüldü: uçtan uca ortalama **1166 ms**. 300 ms
+geciktirmeyi çıkarıp kalanı sunucuya atfettim ve "sorgu başına ~866 ms
+sunucu" diye yazmak üzereydim. **Yanlıştı.**
+
+`performance.getEntriesByType('resource')` ile sunucu eyleminin KENDİ isteği
+ölçüldü: istek yazma anından **484 ms** sonra başlıyor ve **22 ms** sürüyor.
+Yani kalan sürenin ezici çoğunluğu istemci tarafında — geciktirme, React
+yeniden çizimi ve **tarayıcı paneli gizliyken kısılan zamanlayıcılar**
+(belgede kayıtlı tuzak).
+
+**Kural: bir gecikmeyi parçalara ayırırken her parçayı AYRI ölç.** Toplamdan
+bilinen bir parçayı çıkarıp kalanı tek bir bileşene atfetmek, ölçüm değil
+varsayımdır.
+
+### Arama indeksi süreç ömrü boyunca bir kez kuruluyor
+
+`searchContent` HER SORGUDA `content/canonical` altındaki 456 JSON dosyasını
+açıp ayrıştırıyor, üstelik her başlığı ve etiketi yeniden normalleştiriyordu.
+Deponun sayaçları (`icerikSayilari`, `getToolCount`, `envanterAl`) zaten
+süreç başına bir kez hesaplanıp saklanıyor — arama o kurala uymayan tek
+yüzeydi. İndeks artık bir kez kuruluyor ve normalleştirme de orada yapılıyor.
+
+**Kazanç ORTAMA GÖRE çok farklı ve ikisi de ölçüldü:**
+
+| ortam | 1. sorgu | sonraki sorgular |
+|---|---|---|
+| yerel üretim derlemesi, **önbellekli** | 34 ms (indeks kurulumu dahil) | **23–27 ms** |
+| **canlı** (Vercel, önbelleksiz eski kod) | **1015 ms** (soğuk lambda) | **354–374 ms** |
+
+Yerelde dosyalar işletim sistemi önbelleğinden geldiği için kazanç ~10 ms;
+sunucusuz ortamda dosya okuma çok daha pahalı ve fark oradan gelecek. Ağ
+gidiş-dönüşü canlı sayılara dahil, o yüzden iki sütun birebir kıyaslanamaz —
+**canlı doğrulama dağıtımdan sonra yapılacak.**
+
+**Davranış korunuyor:** beş sorgunun sonuç sayıları önbellekten önce ve sonra
+birebir aynı (5 · 5 · 24 · 19 · 2). Sonuç SIRASI da bilerek değiştirilmedi —
+bölüm kaydı kendi konularının önünde, bölümler indeksteki sırayla. Önbellek
+yalnızca okumayı kaldırıyor.
+
+> **Not edilen, DEĞİŞTİRİLMEYEN:** sonuç sırası bugün dosya sistemi sırasına
+> dayanıyor (alaka düzeyine değil). Bunu değiştirmek bir ürün kararı —
+> alfabetik mi, alaka düzeyi mi? Ölçüldü, yazıldı, dokunulmadı.

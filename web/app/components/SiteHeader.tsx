@@ -100,6 +100,9 @@ export default function SiteHeader() {
      temizlemediği için önceki sorgunun sonuçları yeni sorgunun altında
      kalıyordu. İkisi de ölçüldü. */
   const [aramaHatasi, setAramaHatasi] = useState(false);
+  /* `results` HANGİ sorguya ait? Durum metni bunu bilmeden doğru olamıyor —
+     aşağıdaki nota bak. */
+  const [sonuclarSorgu, setSonuclarSorgu] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const menuButonRef = useRef<HTMLButtonElement>(null);
@@ -116,12 +119,34 @@ export default function SiteHeader() {
    * `alert`ten farklı olarak içerik değişmeden ÖNCE DOM'da bulunmak
    * zorunda; sonradan eklenirse ilk mesaj kaçar.
    */
+  /**
+   * SONUÇLAR GÜNCEL Mİ?
+   *
+   * ÖLÇÜLDÜ (canlı, `role="status"` bölgesi zaman içinde örneklenerek):
+   * beş sonucu olan "Addison" araması şu diziyi duyuruyordu —
+   *
+   *     0 ms   (boş)
+   *     8 ms   "Sonuç bulunamadı."   ← arama HENÜZ BAŞLAMADI
+   *   340 ms   "Aranıyor…"
+   *   679 ms   "5 sonuç bulundu."
+   *
+   * Sebep: `setLoading(true)` 300 ms'lik geciktirmenin İÇİNDE çağrılıyor.
+   * O pencerede `query.length >= 2`, `loading` hâlâ `false` ve `results`
+   * boş olduğu için ifade son dala düşüyordu. Yani ekran okuyucu kullanan
+   * biri HER aramada önce yanlış bir "sonuç yok" duyuyordu.
+   *
+   * Çare `loading`i öne almak DEĞİL (o, geciktirmenin amacını bozar):
+   * elde duran sonuçların HANGİ sorguya ait olduğunu bilmek. Sorgu
+   * değiştiği anda sonuçlar bayat sayılıyor ve durum "Aranıyor…" oluyor.
+   */
+  const sonuclarGuncel = sonuclarSorgu === query.trim();
+
   const aramaDurumu =
-    query.length < 2   ? "" :
-    loading            ? "Aranıyor…" :
-    aramaHatasi        ? "Arama şu an yapılamıyor." :
-    results.length > 0 ? `${results.length} sonuç bulundu.` :
-                         "Sonuç bulunamadı.";
+    query.length < 2            ? "" :
+    loading || !sonuclarGuncel  ? "Aranıyor…" :
+    aramaHatasi                 ? "Arama şu an yapılamıyor." :
+    results.length > 0          ? `${results.length} sonuç bulundu.` :
+                                  "Sonuç bulunamadı.";
 
   // Arama Motoru Mantığı
   useEffect(() => {
@@ -131,11 +156,13 @@ export default function SiteHeader() {
         try {
           const data = await searchAction(query);
           setResults(data);
+          setSonuclarSorgu(query.trim());
           setAramaHatasi(false);
         } catch (error) {
           // Teknik ayrıntı konsola; kullanıcıya BAYAT sonuç gösterilmez.
           console.error("Arama hatası", error);
           setResults([]);
+          setSonuclarSorgu(query.trim());
           setAramaHatasi(true);
         } finally {
           setLoading(false);
@@ -143,6 +170,7 @@ export default function SiteHeader() {
         }
       } else {
         setResults([]);
+        setSonuclarSorgu(query.trim());
         setAramaHatasi(false);
         setIsOpen(false);
       }

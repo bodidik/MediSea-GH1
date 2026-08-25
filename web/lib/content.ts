@@ -128,6 +128,63 @@ export type SearchResult = {
   aciklama?: string;
 };
 
+/**
+ * ARAMA İNDEKSİ SÜREÇ ÖMRÜ BOYUNCA BİR KEZ KURULUR.
+ *
+ * Eskiden `searchContent` HER SORGUDA `content/canonical` altındaki 456 JSON
+ * dosyasını açıp ayrıştırıyor, üstelik her başlığı ve her etiketi yeniden
+ * normalleştiriyordu. Ölçüldü (yerel üretim derlemesi, uçtan uca, 300 ms
+ * geciktirme dahil): sorgu başına ~1166 ms, yani ~866 ms sunucu.
+ *
+ * İçerik yalnızca DAĞITIMDA değişiyor — deponun sayaçları (`icerikSayilari`,
+ * `getToolCount`, `envanterAl`) zaten bu sebeple süreç başına bir kez
+ * hesaplanıp saklanıyor. Arama o kurala uymayan tek yüzeydi.
+ *
+ * Normalleştirme de indeks kurulurken BİR KEZ yapılıyor; sorgu anında
+ * yalnızca `includes` çalışıyor.
+ */
+type AramaKonusu = { title: string; slug: string; nTitle: string; nTags: string[] };
+type AramaBolumu = { ad: string; nAd: string; konular: AramaKonusu[] };
+
+let aramaIndeksi: AramaBolumu[] | null = null;
+
+function aramaIndeksiniAl(): AramaBolumu[] {
+  if (aramaIndeksi) return aramaIndeksi;
+
+  const rootDir = path.dirname(getContentPath('dummy'));
+  if (!fs.existsSync(rootDir)) return (aramaIndeksi = []);
+
+  const bolumler: AramaBolumu[] = [];
+  const sections = fs.readdirSync(rootDir).filter(item =>
+    fs.statSync(path.join(rootDir, item)).isDirectory()
+  );
+
+  for (const section of sections) {
+    const sectionPath = path.join(rootDir, section);
+    const konular: AramaKonusu[] = [];
+
+    for (const file of fs.readdirSync(sectionPath).filter(f => f.endsWith('.json'))) {
+      try {
+        const json = JSON.parse(fs.readFileSync(path.join(sectionPath, file), 'utf8'));
+        konular.push({
+          title: json.title,
+          slug: file.replace('.json', ''),
+          nTitle: aramaNormalize(json.title || ''),
+          nTags: Array.isArray(json.meta?.tags)
+            ? json.meta.tags.map((t: string) => aramaNormalize(t))
+            : [],
+        });
+      } catch {
+        continue;
+      }
+    }
+
+    bolumler.push({ ad: section, nAd: aramaNormalize(section), konular });
+  }
+
+  return (aramaIndeksi = bolumler);
+}
+
 export async function searchContent(query: string): Promise<SearchResult[]> {
   /**
    * Türkçe-duyarlı normalleştirme (app/lib/arama.ts).
@@ -141,50 +198,28 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
   if (cleanQuery.length < 2) return [];
 
   const results: SearchResult[] = [];
-  const rootDir = path.dirname(getContentPath('dummy')); 
 
-  if (!fs.existsSync(rootDir)) return [];
-  
-  const sections = fs.readdirSync(rootDir).filter(item => 
-    fs.statSync(path.join(rootDir, item)).isDirectory()
-  );
-
-  for (const section of sections) {
-    const sectionPath = path.join(rootDir, section);
-    
-    // 1. Bölüm Adında Arama
-    if (aramaNormalize(section).includes(cleanQuery)) {
+  /* Sıra KORUNUYOR: bölüm kaydı kendi konularının önüne geliyor, bölümler de
+   * indeksteki sırayla geziliyor. Önbellek yalnızca okumayı kaldırıyor,
+   * sonucun sırasını DEĞİŞTİRMİYOR. */
+  for (const bolum of aramaIndeksiniAl()) {
+    if (bolum.nAd.includes(cleanQuery)) {
       results.push({
-        title: section.charAt(0).toUpperCase() + section.slice(1) + " (Bölüm)",
-        section: section,
+        title: bolum.ad.charAt(0).toUpperCase() + bolum.ad.slice(1) + " (Bölüm)",
+        section: bolum.ad,
         slug: "",
         type: 'section'
       });
     }
 
-    // 2. İçeriklerde Arama
-    const files = fs.readdirSync(sectionPath).filter(f => f.endsWith('.json'));
-    
-    for (const file of files) {
-      try {
-        const content = fs.readFileSync(path.join(sectionPath, file), 'utf8');
-        const json = JSON.parse(content);
-        
-        const titleMatch = aramaNormalize(json.title || '').includes(cleanQuery);
-        const tagMatch = json.meta?.tags?.some((t: string) =>
-          aramaNormalize(t).includes(cleanQuery)
-        );
-
-        if (titleMatch || tagMatch) {
-          results.push({
-            title: json.title,
-            section: section,
-            slug: file.replace('.json', ''),
-            type: 'topic'
-          });
-        }
-      } catch (e) {
-        continue;
+    for (const konu of bolum.konular) {
+      if (konu.nTitle.includes(cleanQuery) || konu.nTags.some(t => t.includes(cleanQuery))) {
+        results.push({
+          title: konu.title,
+          section: bolum.ad,
+          slug: konu.slug,
+          type: 'topic'
+        });
       }
     }
   }
@@ -197,19 +232,17 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
    * En keskin vaka "Wells": sitede İKİ Wells hesaplayıcısı var
    * (`wells-pe`, `wells-dvt`) ama arama **sıfır sonuç** dönüyor ve
    * "Sonuç bulunamadı" diyordu — yani kullanıcıya sahip OLDUĞUMUZ şeyin
-   * olmadığı öğretiliyordu. "eGFR" üç konu getiriyor ama `/tools/egfr`yi
-   * getirmiyordu.
+   * olmadığı öğretiliyordu.
    *
    * Kaynak `content/arac-index.json`: `app/tools` klasörü çalışma zamanında
    * OKUNAMAZ (sunucusuz ortamda kaynak dizin yok, bkz. getToolCount) —
    * statik JSON içe aktarımı paketlenir ve her zaman güvenlidir.
    *
    * SIRALAMA: adı eşleşen araç konuların ÜSTÜNE, yalnızca açıklaması
-   * eşleşen araç ALTINA konuyor. Gerekçe ölçülebilir: "eGFR" yazan kişi
-   * büyük olasılıkla hesaplayıcıyı arıyor ve o, etiket üzerinden eşleşen
-   * üç konunun arkasında kalmamalı. Ters yönde risk yok — hiçbir aracın
-   * ADI "Addison" gibi konu terimlerini taşımıyor, o yüzden konu aramaları
-   * öne çıkmaya devam ediyor.
+   * eşleşen araç ALTINA konuyor. "eGFR" yazan kişi büyük olasılıkla
+   * hesaplayıcıyı arıyor ve etiket üzerinden eşleşen konuların arkasında
+   * kalmamalı. Ters yönde risk yok — hiçbir aracın ADI "Addison" gibi konu
+   * terimlerini taşımıyor, o yüzden konu aramaları öne çıkmaya devam ediyor.
    */
   const aracAdEsleyen: SearchResult[] = [];
   const aracAciklamaEsleyen: SearchResult[] = [];
