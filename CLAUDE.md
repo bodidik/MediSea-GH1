@@ -9886,3 +9886,60 @@ gösterdi: önceki koşumdan "> 300 mmHg" duruyordu ve sonuç "ARDS DEĞİL" ç�
 Taze sayfada tekrarlandı. Belgedeki "ardışık ölçüm bayat sonuç verir"
 kuralının bu turdaki hâli — **etiketin doğru olduğunu, basılı düğme SAYISINI
 okuyarak sına.**
+
+### Erken hükmün ÜÇÜNCÜ şekli: KAPI + SKOR karışımı — `gout-acr` çıkmaz sokaktı
+
+Önceki tur sınıfı iki şekle ayırmıştı (toplamsal skor → erken hüküm imkânsız;
+mantıksal kural → mümkün). Üçüncü bir şekil var: **bir GİRİŞ KAPISI ile bir
+SKORUN birleşimi.** Kapı düşerse skora hiç bakılmaz, yani hüküm erken belli
+olur.
+
+`gout-acr` bu şekli taşıyor ve ölçüldü (canlıda):
+
+| girdi | ekranda (önce) |
+|---|---|
+| giriş ölçütü **"Hayır"** | öge sayısı **96 → 96**, gövde metni **405 → 405 karakter** — hiçbir şey |
+
+ACR/EULAR 2015'te giriş ölçütü (periferik eklemde atak) karşılanmazsa
+sınıflama **hiç uygulanamaz**. Kullanıcı "Hayır" deyip **çıkmazda kalıyordu**:
+ne hüküm, ne açıklama, ne çıkış yolu.
+
+#### DOĞRU KART ZATEN YAZILMIŞTI — kapı ulaştırmıyordu
+
+Kaynakta tam olması gereken kart duruyor:
+
+> **KAPSAM DIŞI** · *"Periferik eklem atağı yok — gut sınıflandırma kriterleri
+> uygulanamaz"*
+
+Ama dış kapı `entry !== null && msu !== null` istiyordu ve **MSU sorusu
+`entry === true` ile kapılı**, yani `entry === false` iken `msu` asla
+`null` olmaktan çıkamıyor. Kart ulaşılmaz.
+
+`ktv`nin ölü "DEĞERLENDİRİLEMEDİ" dalıyla birebir aynı şekil: **doğru dal
+yazılmış, kapı oraya ulaştırmıyor.** Bu sınıfta "kod yok" değil "kod
+erişilmez" aranmalı.
+
+Yanındaki `isExcluded` değişkeni de hem YANLIŞ hem ÖLÜ idi
+(`msu === false && entry === false` — oysa `entry === false` tek başına
+yeterli, ve hiç okunmuyordu). Doğru tanımıyla yazılıp kapıya bağlandı.
+
+**Doğrulama — beş ölçüm, üçü negatif kontrol:**
+
+| girdi | sonuç |
+|---|---|
+| giriş "Hayır" | **KAPSAM DIŞI** kartı · "…kriterleri uygulanamaz" (öge 111 → 114) |
+| **negatif** — giriş "Evet" | MSU sorusu beliriyor (öge 192), kapsam dışı kartı YOK |
+| **negatif** — MSU pozitif | **"YETERLI TANI — MSU POZİTİF"** |
+| **negatif** — MSU yapılmadı + 1.MTP(+2) + tofüs(+4) + ürat ≥10(+4) = 10 | **"GUT ARTRİT — Kriterleri Karşılıyor"** |
+
+**İKİ ÖLÇÜM TUZAĞINA YİNE DÜŞÜLDÜ ve ikisi de belgede kayıtlı:**
+
+- **Seçili düğmeye ikinci kez basmak seçimi KALDIRIYOR.** Ardışık koşumda
+  giriş zaten "Evet"ti; tekrar tıklayınca kapandı ve MSU yolu ölçülemedi.
+- **Desen tahmin edildi.** MSU düğmesinin metni `Evet` değil
+  **"Evet — MSU Pozitif"**; `/^Evet$/` hiç tutmadı ve bir an "MSU yolu bozuk"
+  sanıldı. Düğme listesi BASILIP okununca görüldü.
+
+Yan doğrulama: düğme listesinde iki ayrı görüntüleme grubu (**USG çift kontur**
+ve **X-Ray erozyon**) yan yana duruyor — önceki turda ayrılan o iki alan
+canlıda ayrı ayrı puanlanabiliyor.

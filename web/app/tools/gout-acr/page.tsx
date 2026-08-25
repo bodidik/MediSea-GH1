@@ -143,7 +143,20 @@ export default function GoutACRPage() {
   };
 
   const isGout = msu === true || (entry === true && domainTotal >= 8);
-  const isExcluded = msu === false && entry === false;
+  /**
+   * GIRIS OLCUTU tek basina belirleyici: ACR/EULAR 2015'te periferik eklem
+   * atagi YOKSA siniflama olcutleri HIC UYGULANAMAZ -- MSU sorusuna bakmaya
+   * gerek yok, zaten sorulmuyor da (o soru `entry === true` ile kapili).
+   *
+   * Bir donem bu degisken `msu === false && entry === false` idi ve HIC
+   * OKUNMUYORDU; disari kapi ise `entry !== null && msu !== null` istiyordu.
+   * Sonuc: "KAPSAM DISI" karti KAYNAKTA VARDI ama ULASILAMIYORDU ve OLCULDU --
+   * giris olcutune "Hayir" denince oge sayisi (96) ve govde metni (405 krk)
+   * hic degismiyor, kullanici cikmazda kaliyordu. ktv'nin olu
+   * "DEGERLENDIRILEMEDI" daliyla ayni sekil: dogru dal yazilmis, kapi
+   * ulastirmiyor.
+   */
+  const isExcluded = entry === false;
   const showDomains = entry === true && msu !== true;
 
   return (
@@ -223,7 +236,7 @@ export default function GoutACRPage() {
           </div>
         )}
 
-        {entry !== null && msu !== null ? (
+        {isExcluded || (entry !== null && msu !== null) ? (
           msu === true ? (
             <div className="p-6 rounded-[2rem] border-2 border-dashed border-rose-400 bg-rose-50 flex items-center gap-4">
               <div className="w-20 h-20 rounded-2xl bg-rose-600 flex flex-col items-center justify-center shadow-lg shrink-0">
