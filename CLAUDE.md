@@ -6944,3 +6944,47 @@ adayın verdikti betiğin başına yazıldı:
 **Aktarılabilir kural: bir depoya kapı eklerken o deponun KAPI DENETİMLERİNİ
 de sür.** Kapılar denetimlerin tanıdığı biçimden saparsa denetim sessizce
 körleşir ve "aday" sayısı artışı kusur değil, ölçüt bayatlaması olur.
+
+### SESSİZ BOŞLUK SINIFI KAPANDI — kapı koymanın kendi bedeli
+
+Bu oturumda ~15 araca makullük kapısı kondu ve hepsi doğru kararlardı. Ama
+kapıların ortak bir yan etkisi vardı: **saçma ya da eksik girdide sonuç
+sessizce kayboluyordu.** Kullanıcı alanları doldurup hiçbir şey görmüyor ve
+hangi alanın beklendiğini bilmiyordu.
+
+Belgede kural zaten yazılıydı (`spot-urine` turundan): *"Hesaplanamıyorsa
+SEBEBİNİ söyle; sessiz boşluk kullanıcıyı yanıltır."* Kapılar konurken o kural
+uygulanmamıştı — yani sınıf, kendi düzeltmelerimin açtığı bir boşluktu.
+
+Sekiz araçta kapatıldı: `osmolal-gap` · `sodium` · `bmi` · `bmr` · `gnri` ·
+`pni` · `gh-test` · `acth-stim`. (`anc`, `das28`, `kdigo-aki`, `ktv`, `ogtt`,
+`asdas`, `dst` zaten sebep basıyordu.)
+
+**ÜÇ AYRI DURUM ÇIKTI ve üçü farklı çözüm istedi:**
+
+| durum | araç | çözüm |
+|---|---|---|
+| varsayılanlar GEÇERLİ | `bmi` · `bmr` | ayrı kapı gerekmiyor — sebep ancak kullanıcı bir alanı bozunca çıkar |
+| araç BOŞ açılıyor | `gnri` · `pni` · `osmolal-gap` · `acth-stim` | `girdiVar` kapısı; bomboş formda susulur |
+| araç ÇOK KİPLİ | `sodium` · `gh-test` | sebep KİP BAŞINA; her kip yalnızca kendi alanlarını ister |
+
+**VARSAYILANI OLAN ALAN "KULLANICI GİRDİ" SAYILMAZ.** `sodium`da `hyperTarget`
+"140" ile açılıyor; `girdiVar` listesine konunca koşul HER ZAMAN doğru oldu ve
+bomboş formda bile sebep basıldı. Ölçüldü ve düzeltildi.
+
+**AÇIKLAMA DA "HER DEĞER KENDİ GİRDİSİNE BAĞLI" KURALINA UYAR.** `acth-stim`de
+bazal kortizol bozuk ama pik geçerliyken yorum YİNE çıkıyor (pikten yapılıyor)
+ve ayrı bir not yalnızca Δ'nın hesaplanamadığını söylüyor. Sebebi toptan basıp
+geçerli yorumu gizlemek, kapının kendisini kusura çevirirdi.
+
+Eksik alan ADIYLA ve ARALIĞIYLA yazılıyor (`"boy (50–250 cm)"`), birden çok
+alan eksikse hepsi sayılıyor. `gh-test` ve `acth-stim`de metin ayrıca sıfırın
+GEÇERLİ olduğunu söylüyor — o araçlarda meşru sıfır bu oturumda düzeltilen
+kusurdu ve kullanıcı "0 yazamam" sanmamalı.
+
+Doğrulama 43 vaka, sekiz araçta; her araçta hem "tam vaka → sessiz" hem
+"bomboş form → sessiz" negatif kontrolüyle.
+
+**Aktarılabilir kural: bir kapı eklerken ekranın o kapı devredeyken NE
+GÖSTERDİĞİNİ de ölç.** Kapı doğru çalışsa bile, kullanıcıya "neden" demiyorsa
+iş yarım kalmış olur.

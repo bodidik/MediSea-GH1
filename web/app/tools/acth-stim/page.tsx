@@ -71,6 +71,18 @@ export default function ActhStimPage() {
     };
   };
   const interp = getInterp();
+
+  /**
+   * SESSİZ BOŞLUK YERİNE SEBEP. Pik alanları çöp ya da aralık dışıysa yorum
+   * kartı hiç çizilmiyordu ve kullanıcı neyin beklendiğini göremiyordu.
+   *
+   * Ölçüt "kullanıcı bir şey girmiş mi": bomboş formda susuluyor. Pik
+   * ZORUNLU (30. ya da 60. dakikadan en az biri), bazal opsiyonel — bazal
+   * yoksa yalnızca Δ hesaplanamıyor, yorum yine çıkıyor.
+   */
+  const girdiVar = [baseline, peak30, peak60].some((x) => x.trim() !== "");
+  const pikYazildi = [peak30, peak60].some((x) => x.trim() !== "");
+  const bazalBozuk = baseline.trim() !== "" && !bGirildi;
   const params = { dose: doseIdx, b, p30, p60 };
 
   return (
@@ -131,6 +143,25 @@ export default function ActhStimPage() {
             </div>
           )}
         </div>
+
+        {girdiVar && !interp && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Yorumlanamıyor</p>
+            <p className="text-[11px] font-bold text-slate-600">
+              {pikYazildi
+                ? "Pik kortizol alanı makul bir değer bekliyor: 0–200 μg/dL. Sıfır geçerlidir — ACTH'ye hiç yanıt olmaması gerçek bir bulgudur."
+                : "30. ya da 60. dakika kortizol değerinden en az biri gerekli (0–200 μg/dL)."}
+            </p>
+          </div>
+        )}
+        {girdiVar && interp && bazalBozuk && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[11px] font-bold text-slate-600">
+              Bazal kortizol makul aralığın dışında (0–200 μg/dL); yorum pik değerden
+              yapıldı ama artış farkı (Δ) hesaplanamadı.
+            </p>
+          </div>
+        )}
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>

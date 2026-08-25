@@ -68,6 +68,18 @@ export default function GhTestPage() {
   };
 
   const result = mode === "deficiency" ? getDefResult() : getExcessResult();
+
+  /**
+   * SESSİZ BOŞLUK YERİNE SEBEP. Makullük kapısı konduktan sonra çöp ya da
+   * aralık dışı bir değerde yorum kartı HİÇ çizilmiyordu; kullanıcı neyin
+   * yanlış olduğunu göremiyordu.
+   *
+   * KİP BAŞINA: her kip yalnızca KENDİ alanını istiyor. Araç boş açılıyor,
+   * o yüzden sebep ancak o kipin alanına bir şey girildiyse basılıyor.
+   */
+  const aktifHam   = mode === "deficiency" ? peak : nadir;
+  const aktifAd    = mode === "deficiency" ? "pik GH" : "nadir GH";
+  const sebepGoster = aktifHam.trim() !== "" && result === null;
   const params = { mode, stim: stimIdx, peak: peakN, nadir: nadirN, assay, age: ageIdx };
 
   return (
@@ -147,6 +159,16 @@ export default function GhTestPage() {
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
               <span className="text-[9px] font-bold text-slate-400 pl-1">75g glukoz sonrası 60–120. dakika en düşük GH değeri</span>
             </label>
+          </div>
+        )}
+
+        {sebepGoster && (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Yorumlanamıyor</p>
+            <p className="text-[11px] font-bold text-slate-600">
+              {aktifAd} alanı makul bir değer bekliyor: 0–200 μg/L. Sıfır geçerlidir —
+              tam baskılanma ya da hiç yanıt olmaması gerçek bir bulgudur.
+            </p>
           </div>
         )}
 
