@@ -571,13 +571,8 @@
  },
  {
   "slug": "sle",
-  "name": "SLE Kriterleri",
-  "desc": "Sistemik Lupus Eritematozus sınıflama kriterleri"
- },
- {
-  "slug": "sledai2k",
   "name": "SLEDAI-2K",
-  "desc": "SLE hastalık aktivite indeksi"
+  "desc": "Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105"
  },
  {
   "slug": "sodium",

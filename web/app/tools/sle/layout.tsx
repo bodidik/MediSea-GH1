@@ -6,13 +6,13 @@ import type { ReactNode } from "react";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "SLE Kriterleri — Sistemik Lupus Eritematozus sınıflama",
-  description: "SLE Kriterleri: Sistemik Lupus Eritematozus sınıflama kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+  title: "SLEDAI-2K — Lupus hastalık aktivite indeksi",
+  description: "SLEDAI-2K: Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sle" },
   openGraph: {
     type: "website",
-    title: "SLE Kriterleri — Sistemik Lupus Eritematozus sınıflama",
-    description: "SLE Kriterleri: Sistemik Lupus Eritematozus sınıflama kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+    title: "SLEDAI-2K — Lupus hastalık aktivite indeksi",
+    description: "SLEDAI-2K: Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105. Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/sle",
   },
 };
@@ -22,15 +22,15 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "SLE Kriterleri",
-          aciklama: "SLE Kriterleri: Sistemik Lupus Eritematozus sınıflama kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+          ad: "SLEDAI-2K",
+          aciklama: "SLEDAI-2K: Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105. Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/sle",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "SLE Kriterleri", yol: "/tools/sle" },
+          { ad: "SLEDAI-2K", yol: "/tools/sle" },
         ])}
       />
       {children}

@@ -7430,3 +7430,73 @@ etiketini** (`solunum/dk`) yakalıyor; bunlar hız çıktısı değil girdi etik
 Gerçek "dakika başına hız basan" küme belgedeki sekiz. Sayım düzeltmesi
 yaparken ölçütün GENİŞLEMİŞ olabileceğini de hesaba kat — bu turda önceki iki
 sayım düzeltmesi (11→15, 27→+17) gerçek boşluktu, bu üçüncüsü sahteydi.
+
+### AYNI İNDEKS İKİ ARAÇTA — biri EKSİKTİ ve hastalık aktivitesini sistematik olarak düşük gösteriyordu
+
+`grace` turunda açılan damar ("cetveli ekranda basmayan araçlarda merdiven hiç
+denetlenmiyor") tarandı: merdiveni olan 22 aracın 14'ü ekranda cetvel de
+basıyor (yani `bant-denetim` görüyor), **8'i basmıyor**. O sekiz tek tek
+yayımlanmış tanımla karşılaştırıldı:
+
+| araç | sonuç |
+|---|---|
+| `conut` | 0–1 / 2–4 / 5–8 / 9–12 — birebir |
+| `dapsa` | ≤4 / 5–14 / 15–28 / >28 — birebir |
+| `sdai` | ≤3,3 / 3,4–11 / 11,1–26 / >26 — birebir |
+| `ranson` | ≥3 %15 · ≥5 %40 · ≥7 >%50 — yayımlanmış mortalite eşleşmesiyle uyumlu |
+| `news2` · `gnri` | bu oturumda zaten ölçülmüştü |
+| `haq-di` | bantlar (<0,5 / <1,5 / <2,5) literatürde TEK BİR standarda oturmuyor — **değiştirilmedi**, beklentiyi kaynakla sınamadan dokunmak doğru olmaz |
+| `sle` | **aşağıdaki bulgu** |
+
+#### İki araç da `<h1>SLEDAI-2K</h1>` diyordu, biri 24 tanımlayıcı biri 16
+
+`heart-score` / `heart` kalıbının ikinci örneği. Fark tarayıcıda ölçüldü —
+her iki araçta da BÜTÜN kutular işaretlenerek:
+
+| yol | tanımlayıcı | tavan | ekranda (hepsi işaretli) |
+|---|---|---|---|
+| `/tools/sle` | **24** | **105** | "TOPLAM **105** · Çok Yüksek Aktivite" |
+| `/tools/sledai2k` | 16 | 61 | "SKOR **61** · YÜKSEK AKTİVİTE" |
+
+Yayımlanmış SLEDAI-2K **24 tanımlayıcı** taşır ve azami **105**'tir
+(8 puanlık 8 madde + 4 puanlık 6 + 2 puanlık 7 + 1 puanlık 3 = 64+24+14+3).
+`sle` bunu birebir uyguluyor; `sledai2k` 8 puanlık dört maddeyi (organik beyin
+sendromu · görme bozukluğu · kraniyal sinir tutulumu · lupus baş ağrısı) ve
+renal/serolojik maddelerin bir kısmını taşımıyor.
+
+**Bedeli tek yönlü ve sistematik:** eksik sürüm hiçbir hastada 61'i aşamıyor,
+yani ağır nöropsikiyatrik ya da renal lupusta aktivite olduğundan düşük
+çıkıyor. Üstelik her kutusu işaretli bir hastada bile kendi en üst bandına
+("Çok Yüksek") ulaşamıyor — ekran kendi cetveliyle çelişiyor.
+
+Karar `heart-score → heart` ile aynı: **tam olan tutuldu, eksik olan
+yönlendirildi** (`next.config.js`), adres kırılmıyor.
+
+**ÜÇÜNCÜ AYRIŞMA — hub, `sle`yi BAŞKA BİR ARAÇ sanıyordu.** Araç listesi onu
+*"SLE Kriterleri — Sistemik Lupus Eritematozus **sınıflama kriterleri**"* diye
+tanıtıyordu; sayfanın kendisi ise SLEDAI-2K aktivite indeksi. Yani kullanıcı
+sınıflama kriteri arayıp aktivite indeksine, aktivite indeksi arayıp EKSİK
+sürüme düşüyordu. Kayıt sayfanın gerçeğine hizalandı.
+
+**Tek kayıt düzeltmesi dört yüzeye birden yayıldı** — "sayı yazma, saydır"
+mimarisinin çalıştığının kanıtı: `arac-metadata.cjs` yeniden çalıştırılınca
+sayfanın `<title>`, açıklama, OpenGraph, `SoftwareApplication` şeması ve
+kırıntı (breadcrumb) adı kendiliğinden düzeldi.
+
+**Doğrulama:**
+
+| ölçüt | sonuç |
+|---|---|
+| `/tools/sledai2k` | **`/tools/sle`ye yönleniyor**, 200, h1 "SLEDAI-2K" |
+| `/tools/sle` | 200, h1 "SLEDAI-2K", tavan 105 |
+| hub sayacı | 131 → **130** ("130 araç listeleniyor") |
+| hub kaydı | tek SLE girdisi, "SLEDAI-2K · Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105" |
+| eski açıklama | ekranda **yok** |
+| `arac-metadata --kontrol` | senkron (130) |
+| `link-denetim` | CI kapısı temiz, uyarı sınıfı belgedeki 27'de |
+| derleme | 622/622 (bir sayfa eksildi, beklenen) |
+
+**Ölçüt not: "aynı işi yapan iki araç" taraması ucuz ve iki kez iş çıkardı.**
+Aday üretmenin yolu araç `<h1>`lerini saymak; aynı başlığı taşıyan iki slug
+varsa ya biri eksiktir ya biri kapısızdır. Bu depoda ikisi de görüldü
+(`heart-score` kapısızdı, `sledai2k` eksikti).

@@ -61,6 +61,27 @@ module.exports = {
       // beş kriter de yanıtlanmadan sonuç yok, "0/5 kriter" göstergesi var).
       // Kapılı olan tutuldu, öteki buraya yönlendirildi: adres kırılmıyor.
       { source: '/tools/heart-score', destination: '/tools/heart', permanent: true },
+      // AYNI İNDEKS İKİ AYRI ARAÇ OLARAK DURUYORDU — ikisinin de <h1>'i
+      // "SLEDAI-2K". Ama biri EKSİKTİ ve fark ölçüldü:
+      //
+      //   /tools/sle       24 tanımlayıcı · tavan 105   ← yayımlanmış SLEDAI-2K
+      //   /tools/sledai2k  16 tanımlayıcı · tavan  61
+      //
+      // Yayımlanmış SLEDAI-2K 24 tanımlayıcı taşır ve azami 105'tir
+      // (8 puanlık 8 madde + 4 puanlık 6 + 2 puanlık 7 + 1 puanlık 3).
+      // Eksik sürümde 8 puanlık dört madde yok (organik beyin sendromu,
+      // görme bozukluğu, kraniyal sinir tutulumu, lupus baş ağrısı) ve
+      // renal/serolojik maddelerin bir kısmı da eksik.
+      //
+      // Bedeli tarayıcıda ölçüldü: HER kutusu işaretlenmiş bir hastada
+      // /tools/sledai2k "SKOR 61 · YÜKSEK AKTİVİTE" basıyor — kendi en üst
+      // bandına bile ulaşamıyor. /tools/sle aynı durumda "105 · Çok Yüksek
+      // Aktivite" veriyor. Yani ağır nöropsikiyatrik ya da renal lupusta
+      // hastalık aktivitesi SİSTEMATİK olarak olduğundan düşük çıkıyordu.
+      //
+      // `heart-score → heart` ile aynı karar: TAM olan tutuldu, eksik olan
+      // buraya yönlendirildi. Adres kırılmıyor.
+      { source: '/tools/sledai2k', destination: '/tools/sle', permanent: true },
       //    DİKKAT 1: olumsuz ileri-bakış `(?!tr/)` biçiminde olmak zorunda.
       //    İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM yolun
       //    sonuna baktığı için koşul her zaman sağlanıyordu: /tr kendine
