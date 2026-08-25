@@ -22,6 +22,22 @@ const ITEMS: { id: string; q: string; scored: "evet" | "hayir" }[] = [
   { id: "q15", q: "Çoğu kişinin sizden daha iyi durumda olduğunu düşünüyor musunuz?", scored: "evet" },
 ];
 
+/**
+ * Bant cetveli BANDS'ten TURETILIR, elle yazilmaz.
+ * Bir donem cetvel ayri bir listeydi ({ l: "Normal", r: "0-4" }) ve aktif bant
+ * `b.l === band.label.split(" ")[0]` ile aranıyordu. Cetvel etiketi Baslik
+ * duzeninde ("Normal"), bant etiketi BUYUK harfti ("NORMAL") -- karsilastirma
+ * hicbir zaman tutmadi ve OLCULDU: hangi bantta olursan ol vurgulu hucre 0.
+ * Ekranda ikisi de `uppercase` sinifiyla ayni gorundugu icin fark edilmiyordu.
+ * Simdi ayni NESNE karsilastiriliyor (`b === band`), yani ayrisamaz.
+ */
+const BANDS = [
+  { max: 4,  aralik: "0–4",   label: "NORMAL",          sub: "Depresyon düşük olasılıklı",      color: "emerald" },
+  { max: 8,  aralik: "5–8",   label: "HAFİF DEPRESYON", sub: "Klinik değerlendirme önerilir",   color: "amber" },
+  { max: 11, aralik: "9–11",  label: "ORTA DEPRESYON",  sub: "Tedavi planlaması yapılmalı",     color: "amber" },
+  { max: 15, aralik: "12–15", label: "AĞIR DEPRESYON",  sub: "Acil psikiyatri değerlendirmesi", color: "rose" },
+];
+
 export default function GDS15Page() {
   const [sel, setSel] = React.useState<Record<string, "evet" | "hayir" | null>>(
     Object.fromEntries(ITEMS.map(i => [i.id, null]))
@@ -35,13 +51,7 @@ export default function GDS15Page() {
     ? ITEMS.reduce((s, i) => s + (sel[i.id] === i.scored ? 1 : 0), 0)
     : null;
 
-  const getBand = (v: number) =>
-    v <= 4  ? { label: "NORMAL",           sub: "Depresyon düşük olasılıklı", color: "emerald" } :
-    v <= 8  ? { label: "HAFİF DEPRESYON",  sub: "Klinik değerlendirme önerilir", color: "amber" } :
-    v <= 11 ? { label: "ORTA DEPRESYON",   sub: "Tedavi planlaması yapılmalı", color: "amber" } :
-              { label: "AĞIR DEPRESYON",   sub: "Acil psikiyatri değerlendirmesi", color: "rose" };
-
-  const band  = total !== null ? getBand(total) : null;
+  const band  = total !== null ? BANDS.find(b => total <= b.max)! : null;
   const COLOR = {
     emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
     amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
@@ -113,15 +123,10 @@ export default function GDS15Page() {
               </div>
             </div>
             <div className="grid grid-cols-4 gap-1 text-center text-[8px]">
-              {[
-                { l: "Normal", r: "0–4", col: "emerald" },
-                { l: "Hafif", r: "5–8", col: "amber" },
-                { l: "Orta", r: "9–11", col: "amber" },
-                { l: "Ağır", r: "12–15", col: "rose" },
-              ].map(b => (
-                <div key={b.l} className={`rounded-lg p-1.5 font-black uppercase
-                  ${b.l === band.label.split(" ")[0] ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
-                  <div>{b.l}</div><div className="font-bold normal-case">{b.r}</div>
+              {BANDS.map(b => (
+                <div key={b.label} className={`rounded-lg p-1.5 font-black uppercase
+                  ${b === band ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
+                  <div>{b.label.split(" ")[0]}</div><div className="font-bold normal-case">{b.aralik}</div>
                 </div>
               ))}
             </div>

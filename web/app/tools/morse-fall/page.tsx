@@ -53,10 +53,17 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   },
 ];
 
+/**
+ * `aralik` cetvel icin; cetvel BANDS'ten TURETILIR, elle yazilmaz.
+ * Bir donem cetvel ayri bir listeydi ({ l: "Düşük Risk", r: "< 25" }) ve aktif
+ * bant `b.l === band.label` ile araniyordu -- Baslik duzeni ile BUYUK harf
+ * karsilastirildigi icin hicbir zaman tutmadi. OLCULDU: skor 0 (DÜŞÜK RİSK) ve
+ * 125 (YÜKSEK RİSK) durumlarinin ikisinde de vurgulu hucre 0'di.
+ */
 const BANDS = [
-  { max: 24,  label: "DÜŞÜK RİSK",  color: "emerald", action: "İyi bakım uygulamaları yeterli" },
-  { max: 44,  label: "ORTA RİSK",   color: "amber",   action: "Standart düşme önleme protokolü uygula" },
-  { max: 999, label: "YÜKSEK RİSK", color: "rose",    action: "Yüksek riskli düşme önleme protokolü — bariyer, alarm, gözetim" },
+  { max: 24,  aralik: "< 25",  label: "DÜŞÜK RİSK",  color: "emerald", action: "İyi bakım uygulamaları yeterli" },
+  { max: 44,  aralik: "25–44", label: "ORTA RİSK",   color: "amber",   action: "Standart düşme önleme protokolü uygula" },
+  { max: 999, aralik: "≥ 45",  label: "YÜKSEK RİSK", color: "rose",    action: "Yüksek riskli düşme önleme protokolü — bariyer, alarm, gözetim" },
 ];
 
 const COLOR = {
@@ -140,14 +147,10 @@ export default function MorseFallPage() {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center text-[9px]">
-              {[
-                { l: "Düşük Risk", r: "< 25", col: "emerald" },
-                { l: "Orta Risk", r: "25–44", col: "amber" },
-                { l: "Yüksek Risk", r: "≥ 45", col: "rose" },
-              ].map(b => (
-                <div key={b.l} className={`rounded-xl p-2 font-black uppercase
-                  ${b.l === band.label ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
-                  <div>{b.l}</div><div className="font-bold normal-case">{b.r}</div>
+              {BANDS.map(b => (
+                <div key={b.label} className={`rounded-xl p-2 font-black uppercase
+                  ${b === band ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
+                  <div>{b.label}</div><div className="font-bold normal-case">{b.aralik}</div>
                 </div>
               ))}
             </div>

@@ -41,6 +41,18 @@ const ITEMS = [
   },
 ];
 
+/**
+ * Bant cetveli BANDS'ten TURETILIR. Bir donem cetvel ayri bir listeydi
+ * ({ l: "Sağlıklı", r: "0 pt" }) ve karsilastirma buyuk/kucuk harfe duyarliydi
+ * -- OLCULDU: SKOR 0/5 "SAĞLIKLI" ve 5/5 "KIRILGAN" durumlarinin ikisinde de
+ * vurgulu hucre 0'di. Simdi ayni NESNE karsilastiriliyor, ayrisamaz.
+ */
+const BANDS = [
+  { max: 0, aralik: "0 pt",   label: "SAĞLIKLI",     sub: "Kırılganlık bulgusu yok",             color: "emerald" },
+  { max: 2, aralik: "1–2 pt", label: "PRE-KIRILGAN", sub: "Kırılganlık riski mevcut — önlem al", color: "amber" },
+  { max: 5, aralik: "3–5 pt", label: "KIRILGAN",     sub: "Kapsamlı geriatrik değerlendirme",    color: "rose" },
+];
+
 export default function FrailPage() {
   const [sel, setSel] = React.useState<Record<string, boolean | null>>(
     Object.fromEntries(ITEMS.map(i => [i.id, null]))
@@ -54,12 +66,7 @@ export default function FrailPage() {
     ? ITEMS.reduce((s, i) => s + (sel[i.id] === true ? 1 : 0), 0)
     : null;
 
-  const getBand = (v: number) =>
-    v === 0 ? { label: "SAĞLIKLI",       sub: "Kırılganlık bulgusu yok",            color: "emerald" } :
-    v <= 2  ? { label: "PRE-KIRILGAN",   sub: "Kırılganlık riski mevcut — önlem al", color: "amber" } :
-              { label: "KIRILGAN",        sub: "Kapsamlı geriatrik değerlendirme",    color: "rose" };
-
-  const band = total !== null ? getBand(total) : null;
+  const band = total !== null ? BANDS.find(b => total <= b.max)! : null;
   const COLOR = {
     emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
     amber:   { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" },
@@ -134,14 +141,10 @@ export default function FrailPage() {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center text-[9px]">
-              {[
-                { l: "Sağlıklı", r: "0 pt", col: "emerald" },
-                { l: "Pre-Kırılgan", r: "1–2 pt", col: "amber" },
-                { l: "Kırılgan", r: "3–5 pt", col: "rose" },
-              ].map(b => (
-                <div key={b.l} className={`rounded-xl p-2 font-black uppercase
-                  ${b.l === band.label.split(" ")[0] || band.label === b.l ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
-                  <div>{b.l}</div><div className="font-bold normal-case">{b.r}</div>
+              {BANDS.map(b => (
+                <div key={b.label} className={`rounded-xl p-2 font-black uppercase
+                  ${b === band ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
+                  <div>{b.label}</div><div className="font-bold normal-case">{b.aralik}</div>
                 </div>
               ))}
             </div>

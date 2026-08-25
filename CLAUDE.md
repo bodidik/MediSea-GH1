@@ -8663,3 +8663,97 @@ aralığında verilir, yani araç o aralığın içinde ve KENDİ İÇİNDE tuta
 bugün uyuşuyor olabilir; asıl bedel, ileride hangi alanın okunduğunu bilmeyen
 birinin yanlış alanı düzeltip hiçbir etki görmemesidir. Ölü alan yalnızca
 gereksiz değil, **yanıltıcıdır**.
+
+### CETVELDEKİ "BURADASIN" İŞARETİ ÜÇ ARAÇTA HİÇ YANMIYORDU
+
+Bant cetveli (skorun hangi aralığa düştüğünü gösteren şerit) aktif bandı
+vurgulamak için kuruluyor. Üç araçta o vurgu **hiçbir zaman tutmuyordu** ve
+sebep deponun en çok tekrar eden sınıfıydı: cetvel, bant etiketlerinin
+**ikinci bir kopyasıydı** ve iki kopya harf düzeninde ayrışmıştı.
+
+```
+cetvel : { l: "Normal", r: "0–4" }            Başlık düzeni
+bant   : { label: "NORMAL", … }               BÜYÜK harf
+eşleşme: b.l === band.label.split(" ")[0]     harfe DUYARLI  ->  hiç tutmuyor
+```
+
+**Gözle görünmemesinin sebebi CSS:** iki taraf da `uppercase` sınıfı taşıyor,
+yani ekranda ikisi de "NORMAL" diye basılıyor. Ekrandaki metni karşılaştıran
+biri hiçbir fark göremez; ayrışma yalnızca KAYNAK dizede.
+
+**Ölçüldü — düzeltmeden önce, üç araçta da vurgulu hücre SIFIR:**
+
+| araç | sürülen durum | bant kartı | vurgulu cetvel hücresi |
+|---|---|---|---|
+| `gds-15` | 15 sorunun hepsi yanıtlı | ORTA / HAFİF DEPRESYON | **0 / 4** |
+| `frail` | 0/5 ve 5/5 | SAĞLIKLI · KIRILGAN | **0 / 3** |
+| `morse-fall` | 0 ve 125 puan | DÜŞÜK · YÜKSEK RİSK | **0 / 3** |
+
+Kullanıcı skorunu görüyor, bandını görüyor, ama cetvelde "buradasın" işareti
+yok — cetvelin tek işlevi buydu.
+
+**Çare harf düzenini eşitlemek DEĞİL** (o, iki kopyayı korur ve yarın yine
+ayrışır). Deponun kendi doğru kalıbı zaten dört araçta duruyor (`flipi` ·
+`barthel` · `cat-copd` · `ipss-r`): tek bir `BANDS` dizisi, hem bant bulma hem
+cetvel oradan besleniyor ve karşılaştırma **aynı nesne** üzerinden yapılıyor:
+
+```
+const band = BANDS.find(b => total <= b.max)
+{BANDS.map(b => … b === band ? vurgulu : sönük …)}
+```
+
+Etiket dizesi değil KİMLİK karşılaştırıldığı için ayrışma imkânı kalmıyor.
+Cetvelde gösterilen kısa ad (`b.label.split(" ")[0]`) artık bir GÖSTERİM
+dönüşümü — eşleşme anahtarı değil. `bmi`/`abg` turlarındaki
+"tekleştir, çıktının aynı kaldığını değil KOPYANIN kaybolduğunu ölç" kuralı
+burada da uygulandı:
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| elle yazılmış cetvel listesi | 3 | **0** |
+| harfe duyarlı `=== band.label` eşleşmesi | 3 | **0** |
+| kimlik karşılaştırması `b === band` | 0 | **3** |
+| ölü `col` alanı (hiç okunmuyordu) | 10 | **0** |
+
+**Doğrulama sınır değerlerinden yapıldı** — belgedeki "altı, tam kendisi,
+üstü" kuralı; bir cetvel düzeltmesinde asıl risk bandın bir kayması:
+
+| araç | skor | bant | vurgulanan hücre |
+|---|---|---|---|
+| `frail` | **1** | PRE-KIRILGAN | "PRE-KIRILGAN 1–2 pt" |
+| `frail` | **2** | PRE-KIRILGAN | "PRE-KIRILGAN 1–2 pt" |
+| `frail` | **3** | KIRILGAN | "KIRILGAN 3–5 pt" |
+| `gds-15` | 5 → 10 | HAFİF → ORTA | "HAFİF 5–8" → "ORTA 9–11" |
+| `morse-fall` | 0 · 25 · 125 | DÜŞÜK · ORTA · YÜKSEK | üçü de kendi hücresi |
+
+Her ölçümde vurgulu hücre **tam bir tane** — ne sıfır ne fazlası.
+
+**Ölçüm tarafında dört tuzağa düşüldü ve dördü de belgede zaten kayıtlıydı:**
+
+- **Desen tahmin etmek.** `frail`in düğmeleri `^(Evet|Hayır)$` değil
+  **"Evet (+1)" / "Hayır (0)"**; desen tutmadığı için hiçbir şey tıklanmadı,
+  bant hiç oluşmadı, cetvel hiç çizilmedi ve ölçüm "0 hücre" dedi. **"0 kusur"
+  ile "0 ölçüm" yine aynı göründü.**
+- **Türkçe alt dize.** `/KIRILGAN/` deseni sayfa başlığındaki
+  **"KIRILGANLIK"** içinde eşleşti; üstelik başlık kaynakta "Kırılganlık"
+  yazıyor ve `innerText` `uppercase` uyguladığı için büyük harfe dönüşüyor.
+  İki tuzak üst üste.
+- **`textContent` JSON-LD taşıyor.** Bant adını gövde metninden okurken
+  `<script type="application/ld+json">` içindeki açıklama metni de geliyor.
+- **Ardışık ölçüm bayatlıyor.** Tek koşumda üç bandı sırayla sürmek
+  çalışmadı: React yeniden çizince eski düğme referansları ölüyor, ve zaten
+  seçili bir düğmeye ikinci kez basmak seçimi KALDIRIYOR. Her bant taze
+  sayfayla yalıtıldı.
+
+**Kendi ölçütüm de yorum körlüğüne düştü.** Düzeltmeden sonra "kopya kayboldu
+mu" diye sayarken `grep` 3 eşleşme buldu — üçü de kusuru ANLATAN kendi yorum
+bloklarımın içindeydi. Yorumlar boşlukla doldurulunca sayı 0'a indi. Bu depoda
+yorumlar kusurları birebir alıntıladığı için **kaynak tarayan her ölçüt,
+kendi belgesini yakalama riski taşıyor.**
+
+**Aktarılabilir kural: bir GÖSTERGENİN çalıştığını, göstergeyi görmekle
+değil DEĞİŞTİĞİNİ görerek ölç.** Cetvel üç araçta da ekranda duruyordu, doğru
+etiketleri ve doğru aralıkları yazıyordu; eksik olan tek şey hangisinin aktif
+olduğuydu ve o, ancak iki farklı bant sürülüp karşılaştırılınca görünüyor.
+Bu, belgedeki "ölü denetim" sınıfının gösterge tarafındaki hâli — kontrolü
+ekrana koymak onu bağladığın anlamına gelmiyor.
