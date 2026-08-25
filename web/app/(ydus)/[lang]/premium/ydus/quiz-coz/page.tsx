@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
@@ -19,6 +20,19 @@ function quizYukle(branch: string, id: string) {
     return null;
   }
 }
+
+/**
+ * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
+ * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
+ * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
+ * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
+ * görseli miras kalsın.
+ */
+export const metadata: Metadata = {
+  title: "Soru Çöz — YDUS",
+  description: "YDUS soru setlerini çöz; her soruda çözüm ve açıklama.",
+  alternates: { canonical: "/tr/premium/ydus/quiz-coz" },
+};
 
 export default async function QuizCozPage(props: {
   params: Promise<{ lang: string }>;

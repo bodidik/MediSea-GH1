@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
@@ -43,6 +44,19 @@ function vakaListele(branch: string, topic: string) {
     return [];
   }
 }
+
+/**
+ * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
+ * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
+ * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
+ * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
+ * görseli miras kalsın.
+ */
+export const metadata: Metadata = {
+  title: "Vaka Çöz — YDUS",
+  description: "Adım adım klinik vaka oturumları; her adımda karar ve gerekçe.",
+  alternates: { canonical: "/tr/premium/ydus/vaka-coz" },
+};
 
 export default async function VakaCozPage(props: {
   params: Promise<{ lang: string }>;

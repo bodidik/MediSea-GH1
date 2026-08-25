@@ -10479,3 +10479,60 @@ dosyanın** bozuk olduğunu ayrıştır — hepsini suçlama.
 koymak yanlış iddiayı bütün alt sayfalara yayardı. Her rotaya AYRI `layout.tsx`
 açmak doğru çare ama üç yeni dosya demek — ölçüldü, gerekçesi yazıldı,
 bu turda YAPILMADI.
+
+### Premium metadata sınıfı KAPANDI — 11 rotanın 11'i, ve sıralama zorunluydu
+
+Önceki iki turda 9 branş + konu sayfaları + `inciler`/`hizli-tekrar`
+düzeltilmişti. Bu turda kalan altısı kapatıldı ve **rota sayımı önce
+eksikti**: `os.walk` ile tam liste çıkarılınca üç rota daha göründü —
+`quiz-coz` · `soru-cozum` · `vaka-coz`, üçü de SUNUCU bileşeni ve metadata'sız.
+
+> **Ölçüm notu:** `glob("**/page.tsx")` bu ağaçta SIFIR sonuç verdi, çünkü yol
+> `[lang]` içeriyor ve glob köşeli parantezi KARAKTER SINIFI sanıyor. Boş
+> sonuç bir bulgu değil, ölçütün sınanması gereken bir durumdur.
+
+| rota | çare | başlık |
+|---|---|---|
+| `quiz-coz` · `vaka-coz` · `soru-cozum` | doğrudan `metadata` | Soru Çöz · Vaka Çöz · Soru Çözüm Kokpiti |
+| `profil` · `liderlik` | **ayrı `layout.tsx`** (istemci bileşeni) | Profil · Liderlik Tablosu |
+| `/tr/premium` | ortak `[lang]/premium/layout.tsx` | Premium — Dahiliye YDUS |
+
+#### Sıralama olmadan son adım YAPILAMAZDI
+
+`/tr/premium` bir istemci bileşeni ve tek layout'u `ydus/` altının TAMAMINI
+sarıyor. Önceki turda buraya canonical koymak bilerek reddedilmişti: kendi
+metadata'sı olmayan her alt sayfaya yanlış iddia yayılırdı.
+
+Bu tur önce **on ydus rotasının onuna da kendi metadata'sı verildi**; ancak
+ondan sonra ortak layout güvenli hâle geldi — alt sayfalar kendi değerleriyle
+EZİYOR. Doğrulandı: pano, profil, branş ve konu sayfaları kendi canonical'ını
+koruyor.
+
+#### İKİNCİ YAN ETKİ, ölçümle yakalandı: düz dize başlık ŞABLONU ÖLDÜRÜYOR
+
+Layout'a `title: "Premium — Dahiliye YDUS"` (düz dize) konunca kökün
+`template: "%s · MediSea"` kuyruğu bu ağaç için DEVRE DIŞI kaldı:
+
+| yol | düz dize ile | şablon geri verilince |
+|---|---|---|
+| pano | "YDUS Hazırlık — Dahiliye" | **"YDUS Hazırlık — Dahiliye · MediSea"** |
+| `/tr/premium` | "MediSea Premium · MediSea" (tekrar) | **"Premium — Dahiliye YDUS · MediSea"** |
+
+Çare `title: { default, template }`. **Bir layout'a başlık koyarken alt
+sayfaların başlığına ne olduğunu da ölç** — düz dize sessizce kuyruğu siliyor.
+
+**Doğrulama, üçü negatif kontrol:**
+
+| yol | başlık | canonical | og:image |
+|---|---|---|---|
+| `/tr/premium` | Premium — Dahiliye YDUS · MediSea | kendi | var |
+| **negatif** — pano | YDUS Hazırlık — Dahiliye · MediSea | kendi | var |
+| **negatif** — `/profil` | Profil — YDUS · MediSea | kendi | var |
+| **negatif** — `…/romatoloji/sle` | Sistemik Lupus Eritematozus (SLE) — YDUS · MediSea | kendi | var |
+| `/liderlik` · `/quiz-coz` · `/vaka-coz` | kendi adları | kendi | var |
+
+`soru-cozum` ve `hizli-tekrar` parametresiz **404** veriyor (rota set kimliği
+istiyor) — bu değişiklikten önce de öyleydi.
+
+**Sonuç:** premium ağacındaki **11 rotanın 11'inde** kendi başlığı ve kendi
+canonical'ı var; hiçbiri artık kendini ana sayfanın kopyası ilan etmiyor.

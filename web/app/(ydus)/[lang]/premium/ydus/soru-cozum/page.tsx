@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
@@ -21,6 +22,19 @@ function vakaYukle(branch: string, id: string) {
     return null;
   }
 }
+
+/**
+ * Kendi metadata'sı OLMAK ZORUNDA: yoksa kök düzenin
+ * `alternates: { canonical: "/" }` değeri miras alınıyor ve sayfa kendini
+ * ana sayfanın kopyası ilan ediyor (kardeş branş sayfasındaki gerekçe).
+ * `openGraph` bilerek TANIMLANMIYOR — kökteki dosya tabanlı paylaşım
+ * görseli miras kalsın.
+ */
+export const metadata: Metadata = {
+  title: "Soru Çözüm Kokpiti — YDUS",
+  description: "Soru çözüm kokpiti: şık analizi ve karar gerekçeleri.",
+  alternates: { canonical: "/tr/premium/ydus/soru-cozum" },
+};
 
 export default async function SoruCozumPage(props: {
   params: Promise<{ lang: string }>;
