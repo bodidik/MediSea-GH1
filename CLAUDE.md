@@ -10211,3 +10211,46 @@ okunamazdı — çünkü JSX METİN DÜĞÜMLERİNİ (tırnaksız Türkçe kelim
 "göre", "yüksek") tanımlayıcı sanıyordu. Dizeleri boşaltmak yetmiyor; JSX'te
 metin tırnaksız duruyor. `>…<` arası boşaltılıp yalnızca BİLDİRİM konumları
 (`const`/`let`/`function` ardı) sayılınca 2619 → **4** oldu.
+
+### Üreteç bayatlaması sınandı — üç indeks de TAZE, ve çıkmaz sokak 9'dan 2'ye inmiş
+
+Belgede kayıtlı risk: **üreteç betikleri CI'da çalışmıyor**, yani biri araç ya
+da konu ekleyip betiği unutursa indeks sessizce bayatlıyor. Bugünkü durum
+ölçüldü — üçü de taze:
+
+| üreteç | ölçüm | sonuç |
+|---|---|---|
+| `arac-metadata.cjs --kontrol` | yazmadan karşılaştırır | **senkron (130 araç)** |
+| `baslik-index.cjs` | yeniden üretildi, `git diff` | **fark 0** (13 branş · 410 başlık) |
+| `ilgili-index.cjs` | yeniden üretildi, `git diff` | **fark 0** (410 konu · 1196 bağ) |
+
+"Yeniden üret ve farkı say" ölçütü burada güçlü: `--kontrol` kipi olmayan bir
+üreteçte bile bayatlığı kanıtlayabiliyor ve hiçbir şeyi bozmuyor.
+
+#### Çıkmaz sokak sayısı ölçüldü: **410 konunun 2'si**
+
+`ilgili-index` raporu "ilgilisi HİÇ olmayan: 2" diyor. Belgedeki kural gereği
+tek yola bakmak yetmez — **ilgili · çocuk · ebeveyn** üçü birden ölçüldü:
+
+| konu | branşta konu | çocuk | ebeveyn | ilgili |
+|---|---|---|---|---|
+| `genel-dahiliye/lenfadenopati-yaklasimi` | 2 | 0 | yok | yok |
+| `journal-club/journal-club` | 5 | 0 | yok | yok |
+
+Yani ikisi de **gerçek çıkmaz**: sayfadan ileri giden hiçbir iç bağ yok, yalnızca
+branş sayfasından gelinip orada kalınıyor. İkisi de branş düzeyinde giriş
+konusu (biri "Journal Club Ana Sayfası"), yani şaşırtıcı değil.
+
+**Bu sayı belgede bir dönem 9'du.** İçerik büyüdükçe ve üretecin yedekleri
+(kardeş → branş içi son çare) devreye girdikçe 2'ye inmiş: bu turda 64 konu
+kardeş yedeğiyle, 34 konu branş içi son çareyle kapanmış. **Kendini onaran
+okuma mimarisi ölçülebilir biçimde iş görüyor.**
+
+Kalan 2 bir KOD kusuru değil içerik kararı: ikisi de etiket taşıyor ama
+branşlarında akrabalık kuracak komşu yok (`genel-dahiliye` toplam 2 konu).
+
+**Ölçüm tuzağı — `hidden` alanı İÇ İÇE.** İlk sayımım 456 görünür konu dedi,
+oysa doğru sayı 410. Sebep: ben `j.hidden`e baktım, üreteç ise
+**`v?.meta?.hidden === true`**'ya bakıyor. Bir görünürlük ölçütünü yeniden
+yazma — **üretecin kendi ölçütünü OKU**, yoksa 46 konuluk bir sapma sessizce
+rapora giriyor.
