@@ -11699,3 +11699,53 @@ Bu depoda kapı iki biçimde HTML döndürüyor: middleware yönlendirmesi (200)
 sunucu hata sayfası (500). İkisi de `res.json()`u fırlatır; fırlatma
 `setYükleniyor(false)`dan ÖNCEyse arayüz kilitlenir ve kullanıcı hiçbir şey
 görmez — **sessiz kilit, yanlış mesajdan beterdir.**
+
+### Aynı sınıf SUNUCU tarafında da arandı — bir yanlış pozitif, altı dar durum
+
+İstemci tarafındaki `res.json()` sınıfı kapandıktan sonra aynı ölçüt `.ts`
+dosyalarına (API rotaları, lib) sürüldü: **7 aday**.
+
+**Biri yanlış pozitif ve sebebi ölçütün kendisiydi.**
+`api/protected/chunk/route.ts:43` korumasız göründü; gerçekte `try { … }
+catch { … }` bloğunun içinde. Ölçütüm saran `try`ı 700 karakterlik bir geri
+pencerede arıyor, o blok daha uzun. **Pencere tabanlı bir "korumalı mı"
+sınaması, uzun bloklarda sessizce yanlış pozitif üretir** — belgedeki
+"doğrulama betiği, doğruladığı betiğin hatasını paylaşmamalı" kuralının
+kapsam tarafındaki hâli.
+
+**Kalan altısı `await req.json()`** — yani GELEN isteğin gövdesi, dışarıdan
+gelen bir yanıt değil. Üçü de yönetim rotası ve parse **auth kontrolünden
+SONRA** geliyor:
+
+```ts
+if (!isAdmin(session)) return NextResponse.json({ error: 'Yetkisiz' }, { status: 403 });
+const { email, rol } = await req.json();   // buraya ancak yönetici ulaşır
+```
+
+Yani bozuk gövdeyle 500 alabilmek için kimliği doğrulanmış bir yönetici
+gerekiyor ve tek çağıran deponun kendi yönetim arayüzü. Dar durum;
+**değiştirilmedi.**
+
+### API yanıtlarında iç ayrıntı — 48 rota tarandı, iki yer bilerek bırakıldı
+
+Ölçüt: `NextResponse.json`/`Response.json` gövdesine `error.message`,
+`error.stack` ya da `String(e)` konması. 48 rotada **2 dosya** çıktı:
+`api/topics/route.ts` ve `api/topics/[slug]/route.ts` — ikisi de içerik
+dosyasına YAZAN uçlar ve `error.message`'ı 500 gövdesinde döndürüyor.
+
+Bir dosya yazma hatasında bu, sunucunun mutlak yolunu sızdırabilir
+(`EACCES: … C:\…\content\canonical\…`). Belgedeki kural "sistem içi ad
+geçmesin" diyor — **ama o kural SON KULLANICI için yazıldı.** Bu iki uç
+`yoneticiMi()` ile kapılı ve tek çağıranları yönetim arayüzü; orada gerçek
+hata mesajı operatörün ayıklama aracı.
+
+Gerilim gerçek, karar ürün sahibinin: son kullanıcı yüzeyi değil, o yüzden
+genelleştirmedim. Ölçüldü, yeri yazıldı, DEĞİŞTİRİLMEDİ.
+
+#### Ölçüm notu: dağıtımı İSTEMCİ dizesiyle yoklamak — belgede yazılı, yine yapıldı
+
+`/kayit` düzeltmesinin canlıya inip inmediği, eklediğim hata cümlesi HTML'de
+aranarak yoklandı ve "0" çıktı. Bu sonuç **geçersiz**: cümle bir istemci
+bileşeninin içinde, yani sunucu HTML'inde değil JS parçasında. Belgede tam
+bu tuzak kayıtlı ("Dağıtımın indiğini İSTEMCİ tarafı bir işaretle yoklama").
+Doğru yol: formu `fetch` koşumuyla canlıda sürmek — bir sonraki tura kaldı.
