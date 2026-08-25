@@ -296,52 +296,129 @@ function kontrolEt(sayfasiOlan) {
     (s) => m.has(s) && JSON.stringify(m.get(s)) !== JSON.stringify(b.get(s))
   );
 
-  /* İKİNCİ KAYNAK: app/lib/tools.ts.
+  /* ÖLÜ ARAÇ BAĞLANTISI NÖBETÇİSİ — arayüz kaynağının TAMAMI.
    *
-   * Orada elle tutulan bir eşleme var (TOOLS + BRANCH_TOOLS) ve branş
-   * sayfalarındaki "İlgili Hesaplayıcılar" şeridi ondan besleniyor. Dosyanın
-   * kendi başlığı slug'ların gerçek klasörlerle eşleşmesini şart koşuyor ama
-   * bunu doğrulayan hiçbir şey yoktu. ÖLÇÜLDÜ: `heart-score` orada kalmıştı,
-   * oysa araç `heart` ile birleştirilip klasörü silinmişti — kardiyoloji branş
-   * sayfası ölü bir slug'a bağlanıyor ve yalnızca 308 yönlendirmesi sayesinde
-   * çalışıyordu.
+   * ÖLÇÜLDÜ: `heart-score` `app/lib/tools.ts` içinde kalmıştı, oysa araç
+   * `heart` ile birleştirilip klasörü SİLİNMİŞTİ — kardiyoloji branş sayfası
+   * ölü bir slug'a bağlanıyor ve yalnızca next.config.js'teki 308
+   * yönlendirmesi sayesinde çalışıyordu.
    *
-   * `arac-index` karşılaştırması bunu GÖREMEZ: o yalnızca TOOLS_DATABASE ile
-   * indeksi karşılaştırıyor, tools.ts ÜÇÜNCÜ bir yer. */
+   * `link-denetim` bunu GÖREMEZ: o yalnızca içerik JSON'larını tarıyor,
+   * arayüz kaynağını değil.
+   *
+   * NÖBETÇİ BİR DÖNEM YALNIZCA `app/lib/tools.ts`e BAKIYORDU ve oradaki elle
+   * tutulan listeler (TOOLS + BRANCH_TOOLS) türetmeye geçirilince SESSİZ BİR
+   * NO-OP oldu: desenleri hiçbir şeye eşleşmiyor, hata da vermiyordu.
+   * Ölçüldü — eşleşen kayıt 0, `BRANCH_TOOLS` bloğu yok. Yani "0 kusur" ile
+   * "0 ölçüm" bir kez daha aynı görünüyordu, üstelik körlüğü açan şey
+   * nöbetçinin korumak için var olduğu refaktörün kendisiydi.
+   *
+   * Kapsam bu yüzden DARALTILMADI, genişletildi: `app`, `lib` ve `components`
+   * altındaki her `.ts`/`.tsx` dosyasında dize hâlinde yazılmış
+   * `"/tools/<slug>"` bağlantıları taranıyor (ölçüldü: 532 dosya, 520 bağ).
+   * ŞABLONLA KURULAN ADRESLER BU TARAMAYA GİRMEZ ve bu bir kapsam sınırı:
+   * `href={\`/tools/${slug}\`}` biçiminde yazılan bağlantıda slug hiçbir zaman
+   * düz dize olmaz. Bu yüzden AYRI bir liste denetimi var (aşağıda).
+   *
+   * Bu ayrımı POZİTİF KONTROL gösterdi: ana sayfanın vitrinine kasten
+   * `heart-score` konuldu ve tarama YAKALAMADI — oysa buradaki yorum onu
+   * kapsadığını yazıyordu. Yani nöbetçinin önlemek için var olduğu
+   * "ilan ile gerçek ayrışıyor" kusuru, nöbetçinin kendi yorumunda üretildi. */
   const sluglar = new Set(sayfasiOlan.map((t) => t.slug));
   const olu = [];
+  let taranan = 0;
+  let bulunanBag = 0;
   try {
-    const ts = fs.readFileSync(path.join(KOK, 'app', 'lib', 'tools.ts'), 'utf8');
     /* SIRA ÖNEMLİ: önce SATIR yorumu, sonra BLOK yorumu.
      *
-     * Ters sırada yapıldığında ÖLÇÜLDÜ: dosyanın ilk satırındaki
+     * Ters sırada yapıldığında ÖLÇÜLDÜ: bir dosyanın başlığındaki
      * "// ... (app/tools/<yıldız>) ..." metni SAHTE bir blok yorum açıyor ve
      * sonraki blok kapanışına kadar her şeyi yiyor — 5044 karakterlik dosya
      * 358'e indi, regex 0 eşleşme buldu ve nöbetçi SESSİZCE kör kaldı.
-     * Kusuru yalnızca pozitif kontrol gösterdi.
      *
      * Yorumlar SİLİNMİYOR, boşlukla dolduruluyor; satır sonları korunuyor. */
     const bosalt = (m) => m.replace(/[^\n]/g, ' ');
-    const govde = ts
-      .replace(/\/\/[^\n]*/g, bosalt)
-      .replace(/\/\*[\s\S]*?\*\//g, bosalt);
-    for (const m of govde.matchAll(/"([a-z0-9-]+)"\s*:\s*\{\s*slug:\s*"([a-z0-9-]+)"/g)) {
-      if (!sluglar.has(m[2])) olu.push('TOOLS -> "' + m[2] + '"');
-    }
-    const mb = govde.match(/BRANCH_TOOLS[^=]*=\s*\{([\s\S]*?)\n\};/);
-    if (mb) {
-      for (const satir of mb[1].matchAll(/"([a-z0-9-]+)"\s*:\s*\[([^\]]*)\]/g)) {
-        for (const s2 of satir[2].matchAll(/"([a-z0-9-]+)"/g)) {
-          if (!sluglar.has(s2[1])) olu.push('BRANCH_TOOLS.' + satir[1] + ' -> "' + s2[1] + '"');
+    const gez = (dizin) => {
+      for (const e of fs.readdirSync(dizin, { withFileTypes: true })) {
+        const yol = path.join(dizin, e.name);
+        if (e.isDirectory()) {
+          if (e.name === 'node_modules' || e.name.startsWith('.next')) continue;
+          gez(yol);
+        } else if (/\.tsx?$/.test(e.name)) {
+          taranan++;
+          const govde = fs
+            .readFileSync(yol, 'utf8')
+            .replace(/\/\/[^\n]*/g, bosalt)
+            .replace(/\/\*[\s\S]*?\*\//g, bosalt);
+          for (const m of govde.matchAll(/["'`]\/tools\/([a-z0-9-]+)/g)) {
+            bulunanBag++;
+            if (!sluglar.has(m[1])) olu.push(path.relative(KOK, yol) + ' -> /tools/' + m[1]);
+          }
         }
       }
+    };
+    for (const k of ['app', 'lib', 'components']) {
+      const d = path.join(KOK, k);
+      if (fs.existsSync(d)) gez(d);
     }
-  } catch {
-    console.error('UYARI: app/lib/tools.ts okunamadı, slug nöbetçisi çalışmadı.');
+  } catch (e) {
+    console.error('UYARI: arayüz kaynağı taranamadı, ölü slug nöbetçisi çalışmadı.', e.message);
+  }
+
+  /* ADI VERİLMİŞ ARAÇ LİSTELERİ — şablonla bağlantı kuran yerler.
+   *
+   * Ölçüldü: şablonla adres kuran dört dosya var ve yalnızca birinde statik
+   * bir ARAÇ slug listesi duruyor (ana sayfanın vitrini). Ötekiler ya
+   * türetilmiş veriden okuyor (branş sayfası), ya çalışma zamanı sonucundan
+   * (arama), ya da kaynağın kendisi (`ToolsIcerik.tsx`).
+   *
+   * `SiteHeader` bilerek DIŞARIDA: oradaki 15 `slug:` kaydı KATEGORİ ve BRANŞ
+   * slug'ı, araç değil — araç sayılsalardı 15 sahte kusur üretirlerdi.
+   *
+   * Liste ADIYLA aranıyor ve BULUNAMAZSA hata veriyor: adı değişen bir liste
+   * nöbetçiyi sessizce körleştirmesin. Bu koruma, bu dosyada bir kez gerçekten
+   * yaşanan körlüğün (üstteki nota bak) tekrarını engelliyor. */
+  const ARAC_LISTELERI = [{ dosya: path.join('app', '(site)', 'page.tsx'), ad: 'FEATURED_TOOLS' }];
+  for (const { dosya, ad } of ARAC_LISTELERI) {
+    try {
+      const src = fs.readFileSync(path.join(KOK, dosya), 'utf8');
+      const blok = src.match(new RegExp('const\\s+' + ad + '\\s*=\\s*\\[([\\s\\S]*?)\\n\\];'));
+      if (!blok) {
+        console.error(`HATA: ${dosya} içinde ${ad} listesi bulunamadı — nöbetçi körleşti.`);
+        process.exitCode = 1;
+        return;
+      }
+      const kayitlar = [...blok[1].matchAll(/slug:\s*"([a-z0-9-]+)"/g)];
+      if (kayitlar.length === 0) {
+        console.error(`HATA: ${ad} listesinde hiç slug okunamadı — desen bozuldu.`);
+        process.exitCode = 1;
+        return;
+      }
+      bulunanBag += kayitlar.length;
+      for (const k of kayitlar) {
+        if (!sluglar.has(k[1])) olu.push(dosya + ' -> ' + ad + ' -> "' + k[1] + '"');
+      }
+    } catch {
+      console.error(`HATA: ${dosya} okunamadı — nöbetçi çalışmadı.`);
+      process.exitCode = 1;
+      return;
+    }
+  }
+
+  /* "0 kusur" ile "0 ÖLÇÜM" ayrımı raporun İÇİNDE: tarama hiçbir dosya ya da
+     hiçbir bağlantı görmediyse temiz DEĞİL, KÖR demektir. Nöbetçiyi bir kez
+     köreltmiş olmanın bedeli tam olarak buydu. */
+  if (taranan === 0 || bulunanBag === 0) {
+    console.error(
+      `HATA: ölü slug nöbetçisi hiçbir şey ölçmedi (dosya ${taranan}, bağ ${bulunanBag}) — ` +
+        'tarama kapsamı ya da deseni bozuldu.'
+    );
+    process.exitCode = 1;
+    return;
   }
 
   if (olu.length) {
-    console.error('app/lib/tools.ts ÖLÜ SLUG taşıyor — sayfası olmayan araca bağlanıyor:');
+    console.error('ARAYÜZ ÖLÜ SLUG taşıyor — sayfası olmayan araca bağlanıyor:');
     for (const o of [...new Set(olu)]) console.error('  ' + o);
     console.error("Çare: slug'ı gerçek klasör adıyla değiştir (ya da kaydı kaldır).");
     process.exitCode = 1;
@@ -388,7 +465,7 @@ function kontrolEt(sayfasiOlan) {
 
   if (!eksik.length && !fazla.length && !degisen.length) {
     console.log(
-      `arac-index.json senkron (${beklenen.length} araç) · brans-arac.json senkron · tools.ts slug'ları geçerli.`
+      `arac-index.json senkron (${beklenen.length} araç) · brans-arac.json senkron · ${bulunanBag} araç bağlantısı (${taranan} dosya) geçerli.`
     );
     return;
   }

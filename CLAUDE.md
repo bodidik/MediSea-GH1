@@ -12068,3 +12068,57 @@ kuralı — bu kez `head -1` biçiminde.
 
 Son satır ayrı bir ölçüm ve gerekliydi: bir bağlantıyı süzülmüş adrese
 çevirmek, o adresin BEKLENEN içeriği gösterdiğini kanıtlamaz.
+
+### KENDİ REFAKTÖRÜM BİR NÖBETÇİYİ SESSİZCE KÖRLEŞTİRDİ
+
+Branş şeridi türetmeye geçirilince `app/lib/tools.ts` içindeki elle tutulan
+listeler (`TOOLS` + `BRANCH_TOOLS`) kalktı. `arac-metadata.cjs --kontrol`
+içindeki ölü-slug nöbetçisi **yalnızca o dosyaya bakıyordu** ve desenleri
+artık hiçbir şeye eşleşmiyordu.
+
+Ölçüldü: `TOOLS` desenine eşleşen kayıt **0**, `BRANCH_TOOLS` bloğu **YOK**.
+Nöbetçi hata vermiyor, sessizce geçiyordu — yani "0 kusur" ile "0 ölçüm" bir
+kez daha aynı görünüyordu ve körlüğü açan şey, nöbetçinin korumak için var
+olduğu refaktörün kendisiydi.
+
+**Kapsam daraltılmadı, GENİŞLETİLDİ.** Nöbetçi artık `app` · `lib` ·
+`components` altındaki her `.ts`/`.tsx` dosyasında düz dize hâlindeki
+`"/tools/<slug>"` bağlantılarını tarıyor: **532 dosya, 526 bağ.**
+`link-denetim` bunu göremez — o yalnızca içerik JSON'larını tarıyor.
+
+#### POZİTİF KONTROL, YENİ YAZDIĞIM YORUMU ÇÜRÜTTÜ
+
+Yorumda "ana sayfadaki `FEATURED_TOOLS` vitrini de artık kapsamda" yazmıştım.
+Ana sayfanın vitrinine kasten `heart-score` konuldu ve tarama **YAKALAMADI**.
+
+Sebep: ana sayfa bağlantıyı ``href={`/tools/${tool.slug}`}`` şablonuyla
+kuruyor, yani slug hiçbir zaman düz dize olarak yazılmıyor. **Nöbetçinin
+önlemek için var olduğu "ilan ile gerçek ayrışıyor" kusuru, nöbetçinin kendi
+yorumunda üretildi** — ve yalnızca pozitif kontrol gösterdi.
+
+Çare ayrı bir **adı verilmiş liste denetimi**: şablonla adres kuran dört
+dosya ölçüldü ve yalnızca birinde statik ARAÇ slug listesi var.
+
+| dosya | slug kaydı | verdikt |
+|---|---|---|
+| `app/(site)/page.tsx` | 6 | **`FEATURED_TOOLS` — doğrulanıyor** |
+| `app/(site)/topics/[slug]/page.tsx` | 0 | türetilmiş veriden okuyor |
+| `app/components/SiteHeader.tsx` | 15 | **KATEGORİ ve BRANŞ slug'ı** — araç sayılsalardı 15 sahte kusur |
+| `app/tools/ToolsIcerik.tsx` | 151 | kaynağın kendisi |
+
+Liste **ADIYLA** aranıyor ve bulunamazsa nöbetçi düşüyor — adı değişen bir
+liste onu bir daha sessizce körleştirmesin.
+
+**Dört kontrolün dördü de tek başına çalıştırılarak ölçüldü** (boru hattında
+`$?` `head`'in kodunu verir):
+
+| kontrol | çıkış |
+|---|---|
+| temiz depo | **0** · "526 araç bağlantısı (532 dosya) geçerli" |
+| ana sayfa vitrininde ölü slug (önce KAÇIRILIYORDU) | **1** |
+| liste adı değiştirildi | **1** · "nöbetçi körleşti" |
+| düz dize bağlantıda ölü slug | **1** |
+
+**Aktarılabilir kural: bir listeyi türetmeye geçirirken, o listeyi izleyen
+NÖBETÇİLERİ de say.** Kaldırdığın şey bir kusur kaynağı olabilir ama aynı
+zamanda bir denetimin ÖLÇÜM YÜZEYİdir; yüzey kaybolunca denetim susar, düşmez.
