@@ -27,10 +27,25 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   {
     id: "cytopenia",
     label: "Sitopeniler",
-    detail: "≥ 2 hücre serisinde sitopeni",
+    /**
+     * ÜÇÜNCÜ BASAMAK EKSİKTİ — ilan edilen tavan ile ulaşılabilen tavan
+     * arasındaki 10 puanlık fark tam olarak buradan geliyordu.
+     *
+     * Alt başlık "0–337" diyor; şıklardan hesaplanan azami 327 çıkıyordu.
+     * Yayımlanmış HScore'da sitopeni basamağı ÜÇ değerlidir:
+     *   1 seri = 0 · 2 seri = 24 · 3 seri = 34
+     * Araçta üçüncü şık yoktu ve "≥ 2 seri" etiketi 24 puanla pansitopeniyi
+     * de kapsıyordu — yani üç serisi birden düşük olan hasta 10 puan
+     * eksik alıyordu. Olasılık bantlarının sınırına yakın vakalarda bu
+     * bandı bir basamak aşağı kaydırır.
+     *
+     * Toplam artık 49+38+34+64+30+50+19+35+18 = 337, yani ilanla birebir.
+     */
+    detail: "Kaç hücre serisinde sitopeni var",
     options: [
       { label: "1 seri (veya yok)", pts: 0 },
-      { label: "≥ 2 seri", pts: 24 },
+      { label: "2 seri", pts: 24 },
+      { label: "3 seri (pansitopeni)", pts: 34 },
     ],
   },
   {
@@ -135,7 +150,24 @@ export default function HScorePage() {
         </div>
 
         <div className="bg-rose-50 border border-rose-200 rounded-2xl p-3">
-          <p className="text-[10px] font-bold text-rose-800">🔥 HScore ≥ 169 → HLH olasılığı %93+. Klinik şüphe yüksekse kemik iliği tetkiki ve erken uzman konsültasyonu planlanmalıdır.</p>
+          {/*
+            ŞERİT KENDİ CETVELİYLE ÇELİŞİYORDU.
+
+            Eski metin "HScore ≥ 169 → HLH olasılığı %93+" diyordu. Aracın
+            KENDİ olasılık cetveli ise 169–209 için %14–26, ≥240 için >%93
+            veriyor — yani şerit, en üst bandın olasılığını 169 eşiğine
+            atfediyordu. Ölçüldü: şerit KOŞULSUZ basılıyor, yani hiçbir
+            parametre yanıtlanmadan bile ekranda duruyor.
+
+            Karışıklığın kaynağı belli: 169'daki ~%93 bir OLASILIK değil
+            DUYARLILIK değeridir (Fardet 2014'te en iyi ayrım noktası).
+            İkisi farklı şeyler ve aynı ekranda iki ayrı sayı olarak
+            görünüyorlardı.
+
+            Şerit artık olasılık iddiası taşımıyor; eşiğin ne olduğunu
+            söylüyor ve olasılığı TEK KAYNAĞA — aşağıdaki cetvele — bırakıyor.
+          */}
+          <p className="text-[10px] font-bold text-rose-800">🔥 169, HScore&apos;un ayrım noktasıdır; üstünde HLH olasılığı belirgin artar (skora göre değişen değerler aşağıdaki cetvelde). Klinik şüphe yüksekse kemik iliği tetkiki ve erken uzman konsültasyonu planlanmalıdır.</p>
         </div>
 
         <div className="flex items-center justify-between px-1">
@@ -179,7 +211,7 @@ export default function HScorePage() {
                 <span className="text-3xl font-black text-white leading-none">{total}</span>
               </div>
               <div>
-                <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>HLH OLASILĞI: {prob.pct}</span>
+                <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>HLH OLASILIĞI: {prob.pct}</span>
                 <p className={`text-sm font-bold mt-1 ${c.text}`}>
                   {total >= 169 ? "HLH ile yüksek uyumlu — uzman değerlendirme acil" :
                    total >= 120 ? "Belirsiz — ek tetkik ve yakın izlem" :

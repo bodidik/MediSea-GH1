@@ -7500,3 +7500,93 @@ kırıntı (breadcrumb) adı kendiliğinden düzeldi.
 Aday üretmenin yolu araç `<h1>`lerini saymak; aynı başlığı taşıyan iki slug
 varsa ya biri eksiktir ya biri kapısızdır. Bu depoda ikisi de görüldü
 (`heart-score` kapısızdı, `sledai2k` eksikti).
+
+### CETVEL VE MERDİVEN TUTARLI OLABİLİR AMA İKİSİ DE YANLIŞ — `bant-denetim`in kör noktası
+
+`bant-denetim` ekrandaki cetvel ile koddaki merdivenin KAPSAYICILIĞINI
+karşılaştırıyor; ikisi aynı şekilde yanlışsa geçer. `grace` turunda cetvelsiz
+sekiz araç yayımlanmış tanımla karşılaştırılmıştı; bu tur **cetvel basan 14
+araç** da aynı ölçütten geçirildi.
+
+| araç | merdiven | yayımlanmışla |
+|---|---|---|
+| `abcd2` | ≤3 / ≤5 | 0–3 düşük · 4–5 orta · 6–7 yüksek ✓ |
+| `apache2` | ≤4/≤9/≤14/≤19/≤24/≤29/≤34 | beşerli mortalite basamakları ✓ |
+| `asdas` | <1,3 / <2,1 / <3,5 | ✓ |
+| `cdai` | ≤2,8 / ≤10 / ≤22 | ✓ |
+| `ciwa-ar` | <8 / <15 | ✓ |
+| `findrisc` | ≤6/≤11/≤14/≤20 | ✓ |
+| `mna` | ≥12 / ≥8 | 12–14 normal · 8–11 riskli · 0–7 malnütre ✓ |
+| `pap-score` · `pni` · `ppi` · `rockall` · `sdai` | — | ✓ |
+| `charlson` | ≤1 / ≤2 / ≤5 | nitel bant adları literatürde tek partisyona oturmuyor; 10 yıllık sağkalım üsteli (`0.983 ** exp(0.9×skor)`) doğru — **değiştirilmedi** |
+| `grace` | — | önceki turda düzeltildi |
+| **`hscore`** | — | **iki kusur, aşağıda** |
+
+#### `hscore` — ilan 337, ulaşılabilir 327: eksik olan tam bir basamaktı
+
+Alt başlık "0–337" diyor. Şık tablolarından hesaplanan azami **327** çıktı.
+Aradaki 10 puan tek bir yerden geliyordu: yayımlanmış HScore'da sitopeni
+basamağı **üç değerlidir** (1 seri 0 · 2 seri 24 · **3 seri 34**); araçta
+üçüncü şık yoktu ve `"≥ 2 seri"` etiketi 24 puanla pansitopeniyi de
+kapsıyordu. Yani üç serisi birden düşük olan hasta **10 puan eksik** alıyordu.
+
+Şık eklendi, etiketler ayrıştırıldı ("2 seri" / "3 seri (pansitopeni)").
+Tarayıcıda ölçüldü:
+
+| seçim | skor |
+|---|---|
+| hepsi en yüksek + **3 seri** | **337** — ilanla birebir |
+| hepsi en yüksek + **2 seri** | **327** — fark tam 10 |
+
+İkinci satır negatif kontrol: iki şık da çalışıyor, ayrı ayrı seçilebiliyor ve
+eski tavan artık iki-serili hastanın DOĞRU değeri.
+
+**`payda-denetim` bunu göremezdi**, çünkü tavan ilanı `/ N puan` biçiminde
+değil düz metin ("0–337"). Ölçüt aday üretemediği yerde sayım elle yapılır.
+
+#### Aynı araçta ikinci kusur: şerit kendi cetveliyle çelişiyordu
+
+Sayfanın tepesindeki KOŞULSUZ şerit — hiçbir parametre yanıtlanmadan bile
+ekranda — şunu diyordu: **"HScore ≥ 169 → HLH olasılığı %93+"**.
+
+Aracın KENDİ olasılık cetveli ise aynı sayfada şunu diyor:
+
+```
+< 169    < %5        169–209  %14–26        210–239  %57–93        ≥ 240  > %93
+```
+
+Yani şerit, en üst bandın olasılığını 169 eşiğine atfediyordu — iki band
+sapma. Karışıklığın kaynağı belli: 169'daki ~%93 bir OLASILIK değil
+**DUYARLILIK** değeri (Fardet 2014'te en iyi ayrım noktası). İkisi farklı
+şeyler ve aynı ekranda iki ayrı sayı olarak duruyorlardı.
+
+Şerit artık olasılık iddiası taşımıyor; eşiğin ne olduğunu söyleyip olasılığı
+TEK KAYNAĞA — cetvele — bırakıyor. Yan bulgu: sonuç rozetinde
+`HLH OLASILĞI` yazıyordu (eksik İ), düzeltildi.
+
+### "Aynı işi yapan iki araç" sınıfı ölçümle kapandı
+
+`sledai2k` bulgusunun ardından ölçüt bütün araçlara sürüldü: **130 aracın
+130'unda benzersiz `<h1>`**, yani başlık düzeyinde başka çift yok.
+
+Başlık eşleşmesi dar olduğu için ikinci bir ölçüt de sürüldü: **şık
+etiketlerinin küme benzerliği** (Jaccard). 84 aracın etiket dizisi var; en
+yüksek çift **`cdai` ~ `sdai` = 0,92** ve `cdai`in 11 etiketinin 11'i de
+`sdai`de geçiyor.
+
+**Bu bir kopya DEĞİL, yayımlanmış bir aile:** CDAI = SDAI eksi CRP. Ama tam
+bu yüzden eşiklerin kopyalanmış olma riski yüksekti ve kontrol edildi —
+ikisi de doğru ve FARKLI:
+
+```
+CDAI  = TJC + SJC + PtGA + PhGA          ≤2,8 / ≤10 / ≤22 / >22
+SDAI  = TJC + SJC + PtGA + PhGA + CRP    ≤3,3 / ≤11 / ≤26 / >26
+```
+
+Kalan 20 çift düşük benzerlikte gürültü (`findrisc`in beş etiketi "Evet/Hayır"
+gibi genel dizeler olduğu için her yerle eşleşiyor).
+
+**Ölçüt notu: yüksek benzerlik kusur DEĞİL, İNCELEME GEREKÇESİDİR.** İki araç
+%92 aynı girdiyi alıyorsa ya biri ötekinin eksik kopyasıdır (`sledai2k`) ya da
+meşru bir ailedir (`cdai`/`sdai`) — ayrımı yapan şey eşiklerin ve formülün
+yayımlanmış hâlle karşılaştırılması.
