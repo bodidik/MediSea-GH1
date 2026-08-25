@@ -9786,3 +9786,46 @@ oluşamıyor.
 **Kayda geçirilmesinin sebebi:** bu eksenler bir daha sorulmasın. Motor kodu
 değişmedikçe yeniden ölçmeye gerek yok — değişirse ölçülecek dört şey
 yukarıda adıyla duruyor.
+
+### 320px GERİLEME KONTROLÜ — bu oturumda eklenen bloklar dar ekranı bozmadı
+
+Bu oturumda ~30 araç dosyasına dokunuldu ve çoğuna **yeni DOM** eklendi: sebep
+kartları, `role="alert"` uyarı kutuları, boş `<option>`lu seçiciler, yeni onay
+kutuları, paylaş düğmeleri. Dar ekran ekseni bu eklemelerden sonra hiç
+ölçülmemişti.
+
+En çok DOM ekleyen dört araç canlıda, **320px görüntü penceresiyle** ve
+yalnızca varsayılan hâlde değil **yeni eklenen DALLAR çizdirilerek** ölçüldü:
+
+| araç | durum | ölçülen öge | taşan |
+|---|---|---|---|
+| `glim` | dokunulmamış | 135 | **0** |
+| `anaphylaxis` | dokunulmamış (sebep kartı) | 146 | **0** |
+| `anaphylaxis` | **tanı dalı** | 161 | **0** |
+| `canadian-ct` | bekleme mesajı | 159 | **0** |
+| `canadian-ct` | **BT GEREKLİ (Yüksek Risk)** | 165 | **0** |
+| `abg` | dokunulmamış | 178 | **0** |
+| `abg` | yorum çizili | 206 | **0** |
+| `abg` | **yardımcı alan bozuk (amber uyarı)** | 209 | **0** |
+
+Öge sayısının durumdan duruma artması, dalın GERÇEKTEN çizildiğinin kanıtı —
+belgedeki *"bir durumu ölçtüğünü sanmak için o durumun oluştuğunu ayrıca
+doğrula"* kuralı.
+
+**Yan doğrulama:** `abg`nin yardımcı-alan düzeltmesi canlıda çalışıyor —
+Na⁺ alanına `abc` yazıldığında asit-baz yorumu DURUYOR ve ayrı bir
+`role="alert"` kutusu "hesaba KATILMADI" diyor.
+
+#### Ölçüm notu — iki taşma ölçütünden BİRİ bu sayfalarda KÖR
+
+Belgede *"İKİ ölçüt birden gerekiyor; hangisinin tek başına yeteceği sayfaya
+göre değişiyor"* yazılı. Bu turda taze bir örnek çıktı:
+
+| ölçüt | 900px tohum eklendiğinde |
+|---|---|
+| kaydırma denemesi (`scrollTo(9999,0)` → `scrollX`) | **0** — hiç tepki vermedi |
+| öge başına `scrollWidth > clientWidth` | **0 → 2**, tohum kalkınca **0** |
+
+Yani bu araç sayfalarında kaydırma ölçütü tek başına kullanılsaydı, gerçek bir
+900px'lik taşma bile "temiz" raporlanırdı. **Pozitif kontrolü her koşuma koy;
+hangi ölçütün o sayfada işe yaradığını ancak o gösteriyor.**
