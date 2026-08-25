@@ -9943,3 +9943,44 @@ yeterli, ve hiç okunmuyordu). Doğru tanımıyla yazılıp kapıya bağlandı.
 Yan doğrulama: düğme listesinde iki ayrı görüntüleme grubu (**USG çift kontur**
 ve **X-Ray erozyon**) yan yana duruyor — önceki turda ayrılan o iki alan
 canlıda ayrı ayrı puanlanabiliyor.
+
+### Ön koşul kapısı sınıfı süpürüldü — tek örnekmiş, ve `nrs-2002` REFERANS uygulama
+
+`gout-acr` kusurunun şekli ("bir bölümü gizleyen ön koşul kapısı, olumsuz dalı
+ulaşılmaz bırakıyor") ölçüte çevrilip depo geneline sürüldü.
+
+**Dar ölçüt** (`{X === true && (` biçimindeki bölüm kapıları) tek eşleşme
+verdi: `gout-acr` — ve o da artık olumsuz dalını taşıyor.
+
+**Geniş ölçüt** (`{degisken && (` biçimindeki her kapı) 37 eşleşme verdi ama
+neredeyse hepsi **koşullu BİLDİRİM**: `tavanUygulandi` · `aralikDisi` ·
+`crKirpildi` · `sebepGoster`. Bunların olumsuz dalı OLMAMASI doğru — bir
+bildirim yalnızca koşul doğruyken çizilir.
+
+**Ayırt edici soru: kapı GİRDİ mi gizliyor, yoksa BİLDİRİM mi gösteriyor?**
+Girdi gizleyen kapı aşağı akıştaki durumu erişilemez yapar (o yüzden hüküm
+dalı ölür); bildirim gösteren kapı hiçbir şeyi engellemez.
+
+#### `nrs-2002` bu sınıfın doğru yapılmış hâli — iki yönde de ölçüldü
+
+| girdi | ekranda |
+|---|---|
+| dört ön tarama sorusuna da **"Hayır"** | ana tarama bölümü **gizleniyor** (öge 147 → 124) ve hüküm çıkıyor: **"Ön tarama negatif · Ana tarama gerekmiyor"** |
+| tek **"Evet"** (1/4) | ana tarama bölümü **zaten açık** (öge 157, sabit) — beklemiyor |
+
+Olumsuz dalın metni yalnızca "hüküm var" demekle kalmıyor, **gerekçeyi ve
+klinik çekinceyi** de veriyor:
+
+> *"Dört sorunun dördüne de 'Hayır' yanıtlandı. NRS-2002'de bu durumda ana
+> tarama yapılmaz; hasta haftalık aralıklarla yeniden taranır. **Büyük bir
+> ameliyat planlanıyorsa** koruyucu bir beslenme planı yine de değerlendirilir."*
+
+Yani sınıf tek örnekliymiş (`gout-acr`, düzeltildi) ve deponun kendi referansı
+zaten mevcuttu.
+
+**Ölçüm notu — gövde metni ölçütü KİRLETTİ, öge sayısı kurtardı.** Hüküm
+dedektörlerim (`/Ana Tarama/i`, `/haftalık/i`) sayfanın AÇIKLAMA ve ALT BİLGİ
+metnine takıldı ve açılışta bile `true` döndü. Ayırt edici sinyal **öge
+sayısı** oldu (147 → 124 → 157). Metin arayan bir dedektör yazarken sayfanın
+kendi açıklama metninin aynı kelimeleri taşıyıp taşımadığını önce kontrol et —
+bu depoda araçlar kendi kurallarını ekranda anlatıyor, yani bu tuzak yapısal.
