@@ -11906,3 +11906,46 @@ seçili olan varsayılanlar silinecek, çalışan üç araç bozulacaktı.
 Bu turda temiz çıkanlar (yeniden sürmeye gerek yok): `must` · `ecog` ·
 `karnofsky` · `dapsa` · `isth-dic` · `barthel` · `behcet` — dokunulmamış
 hâlde hiçbiri hüküm basmıyor.
+
+#### SINIF TAM KAPSAMLA KAPANDI — 130 aracın 130'u, dört mekanizmalı detektörle
+
+Yukarıdaki 19'luk örneklem `mna`yı buldu ama örneklemdi. Detektör üç körlüğü
+giderilmiş hâliyle **bütün araçlara** sürüldü. "Beyan edilmiş girdi" artık
+dört mekanizmanın toplamı:
+
+```
+beyan = aria-pressed="true"  +  input:checked  +  degeri olan <select>
+      +  input[type=range]   +  dolu text/number alani
+```
+
+Her araç için `h1` ve ölçülen öge sayısı da raporlandı — **"0 kusur" ile
+"0 ölçüm" ayrımı raporun içinde**; 130 aracın 130'u gerçekten yüklendi
+(öge sayısı 37–132 arası).
+
+**Sonuç: 13 aday, YENİ KUSUR YOK.** On üçünün de kontrol tipi tek tek
+SAYILDI (belgeye güvenilmedi):
+
+| aday | kontrol | verdikt |
+|---|---|---|
+| `chads-vasc` 8 · `curb65` 5 · `endocarditis` 7 · `has-bled` 9 · `ipi` 5 · `padua` 11 · `qsofa` 3 · `ranson` 11 · `sle` 24 · `timi-ua` 7 · `wells-dvt` 10 · `wells-pe` 7 | **saf onay kutusu** (başka girdi yok, seçici yok, `aria-pressed` düğme yok) | işaretsiz = ölçüt YOK, gerçek bir cevap |
+| `fibromiyalji` | 34 `aria-pressed` düğme, hiçbiri basılı değil | **hüküm BASMIYOR** — yalnızca WPI 0 · SS 0 · Toplam 0, yorum eklenmemiş |
+
+Son satır ayırt edici ve `mna`dan farkını gösteriyor: `fibromiyalji` de
+düğme tabanlı ve boş formda üç sıfır basıyor, ama o sıfırlara **hiçbir
+klinik etiket bağlı değil**. `mna`da 0'ın yanında "Malnütrisyon (Kötü
+Beslenme)" duruyordu. **Çıplak sayı bir hüküm değildir; hükmü yaratan şey
+sayıya iliştirilen etikettir.**
+
+`chads-vasc` ve `curb65` boş formda gerçek bir talimat basıyor
+("Antikoagülasyon önerilmez" · "Ayaktan tedavi düşünülebilir") ve bir an
+kusur sanıldı. Ayırt eden ölçüm kardeşlerine bakmak oldu: `has-bled`,
+`padua`, `wells-*` de birebir aynı şekli taşıyor, yani sınıf TEKDÜZE ve
+zaten karara bağlanmış — onay kutusu deyiminde "işaretlenmemiş" bir durum
+değil, bir cevaptır.
+
+**DÜZELTMENİN CANLIDA OLDUĞU AYRICA DOĞRULANDI — ve bu, taramanın pozitif
+kontrolü.** Süpürme `mna`yı "temiz" raporladı; bu, detektörün körleşmesinden
+de gelebilirdi. Sayfa doğrudan okundu: basılı düğme **0**, ekranda
+**"SKOR – · 6 soru daha yanıtlanmalı"**. Yani sonuç dağıtımın inmesinden
+geliyor. Bir taramanın "artık temiz" demesi, düzeltmenin canlıda olduğunu
+GÖSTERMEZ — o ayrı bir ölçüm.
