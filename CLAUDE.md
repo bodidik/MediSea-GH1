@@ -12293,3 +12293,18 @@ Geçici rota silindi ve doğrulandı: `/zz-olcum-kutu` 404, ana sayfa ve
 Yani açık tarafta içindekiler eklenmesini gerektiren durum premium tarafta
 beş kat yaygın. Premium konu sayfasında da sayfa içi çapa ve başlık `id`si
 YOK — ölçüldü, sonraki turun işi olarak duruyor.
+
+#### İçindekiler CANLIDA doğrulandı — ve kritik kontrol karakter sayısı
+
+| ölçüt | canlıda |
+|---|---|
+| uzun konu (`invazive-mantar-enfeksiyon`) | TOC **var** · 12 bölüm id · 12 çapa · kırık **0** |
+| **`addison` (7 bölüm, 4 888 krk)** | TOC **yok** ama **7 bölüm id var** — derin bağlantı her yerde, TOC yalnızca gerekince |
+| `behcet-vaskuler-tutulum` (tekrarlı başlık) | TOC var · **6 benzersiz id** |
+| **okuma alanı karakter sayısı** | **23 986** — değişiklik ÖNCESİYLE birebir |
+| TOC `[data-readable]` dışında mı | **evet** |
+| derin bağlantı (`…#bolum-…` ile açılış) | çalışıyor: 7 779 kaydırdı, başlık 96px (yapışkan çubuk 65px) |
+
+Dördüncü satır bu değişikliğin en önemli ölçümü: vurgular karakter ofsetiyle
+saklandığı için okuma alanının metni değişseydi kayıtlı vurgular silinirdi.
+Sayı canlıda da birebir aynı.
