@@ -8360,3 +8360,66 @@ kuralının bu turdaki hâli olurdu.
 
 Ayırt edici ölçüm zaten tavan değil, **aynı hastada kutunun açılıp
 kapanması** (40 ↔ 44): payda sabit, tek değişen kural.
+
+### "İLAN EDİLİP UYGULANMAYAN KURAL" SINIFI KAPANDI — ölçüt etiketleri de kapsayınca
+
+Sınıf bu oturumda üç kez iş çıkardı (`haq-di` · `murray` · `apache2`). İlk
+tarama yalnızca 40+ karakterlik GÖVDE metinlerine bakıyordu; `apache2`nin
+kuralı ise bir ALAN ETİKETİNDEYDİ (*"Kreatinin (Akut böbrek yetmezliği varsa
+×2)"*) ve o taramada hiç görünmedi.
+
+Ölçüt genişletildi: `label` · `detail` · `note` · `etiket` · `ipucu` · `sub` ·
+`title` dizeleri ve JSX düz metni, uzunluk sınırı olmadan. Kural kalıpları da
+genişletildi (`×2` · `iki kat` · `yarıya` · `bölünür` · `kullanılan …
+sayısı` · `ile sınırlandırılır` · `çıkarılır` · `eklenir` …).
+
+**12 ilan çıktı ve hepsi karara bağlandı — kapanmamış kural YOK:**
+
+| araç | ilan | durum |
+|---|---|---|
+| `haq-di` · `murray` · `apache2` | yardımcı araç · kullanılan parametre · ABY ×2 | bu oturumda UYGULANDI |
+| `anion-gap` | "+2,5 eklenir" | uygulanıyor (ölçüldü) |
+| `calvert` | "125 mL/dak ile sınırlandırılır" | uygulanıyor (ölçüldü) |
+| `osmolal-gap` | "etanol … eklenir" | uygulanıyor (ölçüldü) |
+| `tirads` | "en yüksek puan alınır" | uygulanıyor (çoklu seçimde max) |
+| **`magnezyum-infuzyon`** | "Dozu yarıya indirir" | **uygulanıyor — bu tur ölçüldü** |
+| `lipid-emulsiyon` | "idame hızı iki katına çıkarılabilir" | klinik SEÇENEK, aracın yapması gereken bir hesap değil; araç kümülatif tavanı ve tavana kalan süreyi zaten veriyor |
+| `digoksin-toksisitesi` | "hipokalemi beklenir" | **sahte** — "b**eklenir**" içinde "eklenir" |
+| `rass` | "u**yarıya**" | **sahte** — "uyarıya" içinde "yarıya" |
+
+Son iki satır belgede kayıtlı Türkçe alt dize tuzağının aynısı (`ağır` →
+"AĞIRLIK", `orta` → "Orta Aktif"). **Kural kalıbı ararken kelime sınırını
+elle kur; JS'in `\b`'si ASCII'ye göre çalışıyor ve Türkçe eklerde yanılıyor.**
+
+**`magnezyum-infuzyon` böbrek yetmezliği düğmesi ilk kez sürüldü:**
+
+| durum | Torsades acil dozu |
+|---|---|
+| böbrek normal | **2 g · 16,2 mEq · 8,1 mmol** |
+| böbrek yetmezliği | **1 g · 8,1 mEq · 4,1 mmol** — tam yarısı |
+
+Araç ayrıca "Dozlar yarıya indirildi" diyor ve nefroloji notunu açıyor, yani
+kural hem uygulanıyor hem görünür kılınıyor.
+
+### `mascc` uçtan uca doğrulandı — tavan, eşik ve DIŞLAYICI grup
+
+Febril nötropenide ayaktan tedavi kararını süren skor; hiç sürülmemişti.
+
+| girdi | ekranda |
+|---|---|
+| hepsi "Evet" + "Semptom yok" | **26 / 26 · Düşük risk** · "≥21 · ayaktan oral antibiyotik değerlendirilebilir" |
+| hipotansiyon **Hayır** (−5) + KOAH **Hayır** (−4) | **17 / 26 · Yüksek risk** · "hastane yatışı ve IV antibiyotik" |
+
+İkinci satır elle tutuyor (26 − 9 = 17) ve eşiğin iki yanını da gösteriyor.
+Yayımlanmış MASCC azamisi 26, eşik ≥21 — ikisi de birebir.
+
+**Hastalık yükü alanı özellikle kontrol edildi:** yayımlanmış MASCC'de bu alan
+İKİ DIŞLAYICI düzey taşır (semptom yok/hafif = 5, orta = 3). `chads-vasc`ta
+tam bu şekil kusur üretmişti (iki yaş bandı ayrı onay kutusuydu ve ikisi
+birden işaretlenebiliyordu). `mascc`te alan tek bir dışlayıcı seçici (5/3/0),
+yani sorun yok.
+
+Ayrıca aracın başındaki yorum, geçmiş bir kusuru birebir kaydediyor: puanlama
+bir dönem TERSTİ ("Hipotansiyon Yok" işaretlenince puan ekleneceğine
+çıkarılıyordu) ve bütün olumlu özellikleri taşıyan hasta 12 alıp "YÜKSEK
+RİSK" çıkıyordu. Bugün ölçüldü — kapanmış.
