@@ -79,7 +79,19 @@ export default function GnriPage() {
 
   // GNRI = 1.489 × Albumin (g/L) + 41.7 × (Weight / IBW)
   // Note: albumin must be in g/L (×10 from g/dL)
-  const gnri = albOk && wRatio !== null ? 1.489 * (albN * 10) + 41.7 * wRatio : null;
+  /**
+   * TEK SAYI: ekranda basilan deger ile bantlanan deger AYNI olmali.
+   * Bir donem bant HAM degerden, ekran `toFixed(1)` ile YUVARLANMIS degerden
+   * besleniyordu ve ikisi sinirda ayrisiyordu -- OLCULDU:
+   *   kadin, alb 3.566 / 55 kg / 165 cm -> ham 91.97 -> ekranda "92.0", bant "GNRI 82-91"
+   * Ekran kendi belirttigi araligin disinda bir sayi gosteriyordu ve ayni
+   * sayiyi goren iki hasta zit hukum aliyordu. Depo kalibi zaten uc kardes
+   * aracta var (meld-na `round(meldNa,0)`, rapid3 `parseFloat(...toFixed(1))`,
+   * scorad `Math.round`): BIR KEZ yuvarla, hem bas hem bantla.
+   */
+  const gnri = albOk && wRatio !== null
+    ? Math.round((1.489 * (albN * 10) + 41.7 * wRatio) * 10) / 10
+    : null;
 
   const getResult = (s: number) => {
     if (s > 98)    return { label: "RİSK YOK", sub: "GNRI > 98", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };

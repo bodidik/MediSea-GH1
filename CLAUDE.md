@@ -9131,3 +9131,75 @@ etmiyor.** İlan edilmeyen bir şey ayrışamaz — eksik şeffaflık kusur değ
 (3 sahte aday), sonra deponun formül satırlarında kullandığı `×` işaretine
 bağlanınca liste karar verilebilir hâle geldi. Belgede zaten kayıtlı: bu
 depoda ekrana basılan formüller kaynak tarayan ölçütler için gürültü kaynağı.
+
+### EKRANDAKİ SAYI KENDİ BANDININ DIŞINDAYDI — gösterim yuvarlaması sınırı geçiyordu
+
+Belgedeki `yuvarlama-denetim` "yuvarlanmış değer İKİNCİ BİR HESABA giriyor mu"
+diye bakıyor. Bu ayrı bir eksen: **ekranda basılan sayı, bandın kendi ilan
+ettiği aralığın dışında kalabiliyor.**
+
+Şekil şu — bant HAM değerden, ekran YUVARLANMIŞ değerden besleniyor:
+
+```
+ham  = 44.995        bant: 44.995 < 45  ->  "HAFIF RİSK · PNI 40–44.9"
+ekran = toFixed(1)   ->  "45.0"
+```
+
+Kullanıcı **"45.0"** görüyor, hemen altında **"PNI 40–44.9"** yazıyor. Üstelik
+aynı sayıyı gösteren iki hasta zıt hüküm alıyor ve ekranda onları ayırt edecek
+hiçbir şey yok. GKS'deki "297 / 15", MELD'deki eksi skor ve `berlin-ards`ın
+"> 300 mmHg → AĞIR ARDS"ı ile aynı sınıf: **dış bir kaynağa hiç bakmadan,
+yalnızca ekranın kendi içindeki çelişkiyle görülebilir.**
+
+**İki araçta ÖLÇÜLDÜ (düzeltmeden önce):**
+
+| araç | girdi | ham | ekranda | bant | bandın ilanı |
+|---|---|---|---|---|---|
+| `pni` | albümin 3,89 · lenfosit **1219** | 44,995 | **45.0** | HAFIF RİSK | **"PNI 40–44.9"** |
+| `pni` | albümin 3,89 · lenfosit **1220** | 45,000 | **45.0** | İYİ NÜTRİSYON | "PNI ≥ 45" |
+| `gnri` | kadın · alb 3,566 · 55 kg · 165 cm | 91,97 | **92.0** | ORTA RİSK | **"GNRI 82–91"** |
+
+**Ulaşılabilirlik uydurma değil:** lenfosit sayısı tam sayı olarak raporlanıyor
+ve albümin 2 ondalıkla; `10×3,89 + 0,005×1219 = 44,995` gerçek bir laboratuvar
+kombinasyonu. Pencere `pni`de 0,05 birim genişliğinde.
+
+**Çare YÖNÜ kardeş araçlar belirledi — klinik bir yargı vermeye gerek kalmadı.**
+Depo kalıbı zaten üç araçta duruyor:
+
+| araç | kalıp |
+|---|---|
+| `meld-na` | `const score = clamp(round(meldNa, 0), 6, 40)` |
+| `rapid3` | `const total = parseFloat((fn + pain + global).toFixed(1))` |
+| `scorad` | `Math.round(…)` |
+
+Üçü de **BİR KEZ yuvarlayıp** hem basıyor hem bantlıyor. `pni` ile `gnri`
+istisnaydı; onlar da aynı kalıba çekildi. Bu, `gnri`nin cinsiyet turunda
+kaydedilen kuralın tekrarı: **komşuda çözüm varsa, komşuda OLUP burada olmayan
+şey bir kusur adayıdır.**
+
+**Ödünleşme açıkça yazılmalı:** "bir kez yuvarla" sınırdaki hastayı bir üst
+banda taşıyor (44,995 → 45,0 → İYİ). Kayma 0,05 PNI birimi, yani albümindeki
+0,0034 g/dL'ye karşılık geliyor — girdilerin ölçüm hassasiyetinin çok altında.
+Alternatif (daha çok basamak basmak) çelişkiyi bir basamak derine iter, çözmez.
+
+**Doğrulama — negatif kontroller belgede KAYITLI değerlerle:**
+
+| ölçüt | sonuç |
+|---|---|
+| `pni` sınır (1219) | **"45.0" · İYİ NÜTRİSYON · "PNI ≥ 45"** — tutarlı |
+| `pni` 1200 | "44.9" · HAFIF RİSK · "40–44.9" — tutarlı, değişmedi |
+| `pni` belgedeki vaka (alb 3,0 · lenfosit 1200) | **36,0** — birebir |
+| `gnri` sınır | **"92.0" · DÜŞÜK RİSK · "GNRI 92–98"** — tutarlı |
+| `gnri` belgedeki kadın vakası (165/55/3,6) | **92,5 · DÜŞÜK RİSK** — birebir |
+| `gnri` belgedeki erkek vakası | **91,0 · ORTA RİSK** — birebir |
+
+**KAPSAM İDDİASI ÜRETİLMEDİ ve sebebi ölçütün sınırı.** Kaynak taraması
+"ekranda basılan değer" ile "bantlanan değer"i güvenilir eşleştiremiyor: çok
+satırlı `const` tanımlarını kaçırıyor (`gnri` ve `rapid3` kendi taramamda
+yanlış kovaya düştü) ve ikincil gösterimleri (ara değerler) skor sanıyor.
+
+Sonraki tur için ölçüt yazılı: **gösterim basamağı, bant eşiğinin
+basamağından KABA ya da eşitse ve skor sürekli girdiden geliyorsa aday.**
+2 ondalık basıp 1 ondalık eşik kullanan araçlar (`asdas` 1,3/2,1/3,5 ·
+`haq-di` 0,5/1,5/2,5 · `murray` 2,5 · `ktv` 1,0/1,2) aynı şekli taşıyor ama
+pencereleri on kat dar (0,005) ve **ÖLÇÜLMEDİLER — "temiz" DENMİYOR.**

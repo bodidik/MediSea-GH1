@@ -53,7 +53,17 @@ export default function PniPage() {
   const girdiVar = [alb, lymp].some((x) => x.trim() !== "");
 
   // PNI = 10 × Albumin (g/dL) + 0.005 × Lenfosit (/μL)
-  const pni = hasResult ? 10 * albN + 0.005 * lympN : null;
+  /**
+   * TEK SAYI: ekranda basilan deger ile bantlanan deger AYNI olmali.
+   * Bir donem bant HAM degerden, ekran `toFixed(1)` ile YUVARLANMIS degerden
+   * besleniyordu ve ikisi sinirda ayrisiyordu -- OLCULDU:
+   *   alb 3.89 + lenfosit 1219 -> ham 44.995 -> ekranda "45.0", bant "PNI 40-44.9"
+   * Ekran kendi belirttigi araligin disinda bir sayi gosteriyordu ve ayni
+   * sayiyi goren iki hasta zit hukum aliyordu. Depo kalibi zaten uc kardes
+   * aracta var (meld-na `round(meldNa,0)`, rapid3 `parseFloat(...toFixed(1))`,
+   * scorad `Math.round`): BIR KEZ yuvarla, hem bas hem bantla.
+   */
+  const pni = hasResult ? Math.round((10 * albN + 0.005 * lympN) * 10) / 10 : null;
 
   const getResult = (s: number) => {
     if (s >= 45)   return { label: "İYİ NÜTRİSYON DURUMU", sub: "PNI ≥ 45 — Düşük morbidite ve mortalite riski", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
