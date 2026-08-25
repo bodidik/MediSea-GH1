@@ -22,6 +22,24 @@ const BoolBtn = ({ val, cur, set, yes, no }: { val: boolean; cur: boolean | null
   </div>
 );
 
+/**
+ * TEK KAYNAK: siddet karti, bant cetveli ve mortalite ayni diziden okunur.
+ *
+ * Bir donem cetvel AYRI bir listeydi ({ l: "Hafif", r: "…", m: "%27" }) ve
+ * aktif bant `b.l === severity.label.split(" ")[0]` ile araniyordu. Cetvel
+ * etiketi Baslik duzeninde ("Hafif"), bant etiketi BUYUK harfti ("HAFİF
+ * ARDS") -- karsilastirma hicbir zaman tutmadi ve OLCULDU: HAFİF ve AĞIR
+ * ARDS durumlarinin ikisinde de vurgulu hucre 0'di. Mortalite yuzdesi de
+ * iki yerde ayri tutuluyordu. Simdi ayni NESNE karsilastiriliyor.
+ */
+const SIDDET = [
+  { pf: "mild",   kisa: "Hafif", label: "HAFİF ARDS", aralik: "PaO₂/FiO₂ 201–300", mortality: "%27", color: "amber",  peep: "PEEP ≥ 5 cmH₂O" },
+  { pf: "mod",    kisa: "Orta",  label: "ORTA ARDS",  aralik: "PaO₂/FiO₂ 101–200", mortality: "%32", color: "orange", peep: "PEEP ≥ 5 cmH₂O" },
+  { pf: "severe", kisa: "Ağır",  label: "AĞIR ARDS",  aralik: "PaO₂/FiO₂ ≤ 100",   mortality: "%45", color: "rose",   peep: "PEEP ≥ 5 cmH₂O" },
+];
+
+const ARDS_DEGIL = { pf: "no_ards", kisa: "—", label: "ARDS DEĞİL", aralik: "—", mortality: "—", color: "slate", peep: "—" };
+
 export default function BerlinARDSPage() {
   const [onset, setOnset]   = React.useState<boolean | null>(null);
   const [xray,  setXray]    = React.useState<boolean | null>(null);
@@ -31,12 +49,16 @@ export default function BerlinARDSPage() {
   const allAnswered = onset !== null && xray !== null && origin !== null && pf !== null;
   const meetsCriteria = onset && xray && origin;
 
-  type Severity = { label: string; mortality: string; color: string; peep: string };
-  const severity: Severity | null = !allAnswered ? null :
-    !meetsCriteria ? { label: "ARDS DEĞİL", mortality: "—", color: "slate", peep: "—" } :
-    pf === "mild"   ? { label: "HAFİF ARDS",  mortality: "%27",  color: "amber",   peep: "PEEP ≥ 5 cmH₂O" } :
-    pf === "mod"    ? { label: "ORTA ARDS",   mortality: "%32",  color: "orange",  peep: "PEEP ≥ 5 cmH₂O" } :
-                      { label: "AĞIR ARDS",   mortality: "%45",  color: "rose",    peep: "PEEP ≥ 5 cmH₂O" };
+  /**
+   * P/F > 300 ARDS'i DISLAR ve bu OLCULDU: uclu zincir "no_ards"i son dala
+   * dusuruyordu, yani uc kriteri de "evet" isaretleyip "> 300 mmHg — ARDS
+   * kriterini karsilamiyor" secen kullaniciya ekran "AĞIR ARDS · Mortalite
+   * ≈ %45" basiyordu. Berlin tanimi oksijenasyon esigini ZORUNLU kriter
+   * sayar; secilen sikkin kendi metni de bunu soyluyordu.
+   */
+  const severity = !allAnswered ? null
+    : (!meetsCriteria || pf === "no_ards") ? ARDS_DEGIL
+    : (SIDDET.find(x => x.pf === pf) ?? ARDS_DEGIL);
 
   const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
     slate:  { bg: "bg-slate-50",   border: "border-slate-200",  text: "text-slate-700",  badge: "bg-slate-600 text-white" },
@@ -129,16 +151,12 @@ export default function BerlinARDSPage() {
             </div>
             {meetsCriteria && (
               <div className="grid grid-cols-3 gap-2 text-center text-[9px]">
-                {[
-                  { l: "Hafif", r: "PaO₂/FiO₂ 201–300", m: "%27" },
-                  { l: "Orta",  r: "PaO₂/FiO₂ 101–200", m: "%32" },
-                  { l: "Ağır",  r: "PaO₂/FiO₂ ≤ 100",  m: "%45" },
-                ].map(b => (
-                  <div key={b.l} className={`rounded-xl p-2 font-black
-                    ${b.l === severity.label.split(" ")[0] ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
-                    <div className="uppercase">{b.l}</div>
-                    <div className="font-bold text-[8px] normal-case">{b.r}</div>
-                    <div className="font-bold text-[8px]">{b.m} mortalite</div>
+                {SIDDET.map(b => (
+                  <div key={b.pf} className={`rounded-xl p-2 font-black
+                    ${b === severity ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
+                    <div className="uppercase">{b.kisa}</div>
+                    <div className="font-bold text-[8px] normal-case">{b.aralik}</div>
+                    <div className="font-bold text-[8px]">{b.mortality} mortalite</div>
                   </div>
                 ))}
               </div>

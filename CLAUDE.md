@@ -8757,3 +8757,114 @@ etiketleri ve doğru aralıkları yazıyordu; eksik olan tek şey hangisinin akt
 olduğuydu ve o, ancak iki farklı bant sürülüp karşılaştırılınca görünüyor.
 Bu, belgedeki "ölü denetim" sınıfının gösterge tarafındaki hâli — kontrolü
 ekrana koymak onu bağladığın anlamına gelmiyor.
+
+### AYNI SINIF DÖRDÜNCÜ ARAÇTA — ve orada İKİNCİ, klinik bir kusuru gizliyordu
+
+Cetvel vurgusu sınıfı bir ölçüte çevrildi ve depo geneline sürüldü. Ölçüt iki
+kuşakta yazıldı; **birincisi fazla genişti ve sonucu okunamazdı:**
+
+- **1. kuşak — "aynı dosyada, Türkçe katlamayla eşit ama birebir farklı iki
+  dize".** 496 dosya · 3818 dize · **40 aday**. Çoğu sahte: `unit-converter`
+  gibi araçlarda `{ key: "glukoz", label: "Glukoz" }` aynı satırda duruyor ve
+  hiç karşılaştırılmıyor; `mrss`/`scorad`/`tnss`'te Başlık düzenindekiler ŞIK
+  etiketi, BÜYÜK olanlar BANT etiketi — farklı şeyler.
+- **2. kuşak — "`className` üçlüsünde DİZE karşılaştıran vurgu koşulu".**
+  423 tsx · 217 görsel üçlü · **48 dize karşılaştırması**. Bu ölçüt karar
+  verilebilir bir liste üretti.
+
+**Cetveli olan 29 aracın triyajı — dört kova ve çareleri farklı:**
+
+| kova | adet | araçlar |
+|---|---|---|
+| **KUSURLU** — vurgu hiç yanmıyor | **4** | `gds-15` · `frail` · `morse-fall` · **`berlin-ards`** |
+| yapısı gereği güvenli | 8 | `barthel` · `cat-copd` · `flipi` · `ipss-r` · `bode` (kimlik) · `act` · `isth-dic` · `uas7` (`active` skordan satır içi) |
+| çalışıyor ama İKİNCİ KOPYA taşıyor | 3 | `hscore` · `heart` · `rapid3` |
+| vurgu koşulu HİÇ YOK | 14 | cetvel bir efsane, "buradasın" göstergesi değil |
+
+Son kova kusur değil: cetvel orada referans olarak duruyor. (`asdas` için
+belgede zaten "eksik affordans, kusur değil" diye kayıtlı.)
+
+**`rapid3` bu sınıfın kanıtı gibi:** koşulu
+`band.label.includes(b.l.toUpperCase().split(" ")[0]) || (b.l === "Remisyon"
+&& band.label === "REMİSYON")`. İkinci dal bir YAMA — çünkü JS'te
+`"Remisyon".toUpperCase()` **"REMISYON"** veriyor (i → I), bant ise "REMİSYON"
+(İ). Yani birileri tam bu Türkçe katlama kusuruna çarpmış ve tek vakayı elle
+kapatmış. Ölçüldü, bugün çalışıyor (0/30 → "Remisyon ≤ 3", 30/30 → "Yüksek
+> 12").
+
+#### `berlin-ards` — ölü vurgu, ikinci bir kusuru GİZLİYORDU
+
+Cetvel vurgusu ölçülürken (bant "HAFİF ARDS" ve "AĞIR ARDS", vurgulu hücre
+**0**) aracın şıkları tek tek sürüldü. O sürüş sırasında çok daha ağır bir
+şey çıktı.
+
+Şiddet üçlü bir zincirle seçiliyordu ve zincir `pf === "no_ards"` dalını
+TAŞIMIYORDU:
+
+```
+pf === "mild" ? HAFİF : pf === "mod" ? ORTA : AĞIR      // no_ards da AĞIR'a düşüyor
+```
+
+Ölçüldü — üç kriter de "evet", oksijenasyon şıkkı **"> 300 mmHg — ARDS
+kriterini karşılamıyor"**:
+
+| | ekranda (önce) |
+|---|---|
+| bant | **AĞIR ARDS** |
+| mortalite | **Hastane Mortalitesi ≈ %45** |
+| PEEP | PEEP ≥ 5 cmH₂O altında değerlendirildi |
+
+**Ekran seçilen şıkkın kendi metniyle çelişiyordu**: şık "ARDS kriterini
+karşılamıyor" diyor, hüküm en ağır ARDS kategorisini ve %45 mortaliteyi
+basıyor. Berlin tanımında P/F ≤ 300 (PEEP ≥ 5 altında) ZORUNLU bir kriterdir;
+üstündeki değer ARDS'i dışlar, öteki üç kriter karşılansa bile.
+
+GKS'deki "297 / 15", MELD'deki eksi skor ve `hscore`'un "169 → %93" şeridiyle
+aynı sınıf: **dış bir kaynağa hiç bakmadan, yalnızca ekranın kendi içindeki
+çelişkiyle görülebilen kusur.**
+
+**Çare iki kusuru birden kapatıyor**, çünkü kökleri aynı: iki gerçeklik.
+Şiddet tablosu tek bir `SIDDET` dizisine alındı — bant kartı, cetvel VE
+mortalite yüzdesi (o da iki yerde ayrı duruyordu) oradan besleniyor. Zincir
+yerine tablo araması geldi ve `no_ards` açıkça dışlandı:
+
+```
+const severity = !allAnswered ? null
+  : (!meetsCriteria || pf === "no_ards") ? ARDS_DEGIL
+  : (SIDDET.find(x => x.pf === pf) ?? ARDS_DEGIL);
+```
+
+`?? ARDS_DEGIL` yedeği bilerek: tanınmayan bir `pf` değeri artık en ağır
+banda DEĞİL, en dar hükme düşüyor.
+
+**Doğrulama, dördü negatif kontrol:**
+
+| girdi | bant | mortalite | vurgulu hücre |
+|---|---|---|---|
+| P/F 201–300 | HAFİF ARDS | %27 | "Hafif · 201–300" |
+| P/F 101–200 | ORTA ARDS | %32 | "Orta · 101–200" |
+| P/F ≤ 100 | AĞIR ARDS | %45 | "Ağır · ≤ 100" |
+| **P/F > 300** | **ARDS DEĞİL** | **—** | **0** + "Tanı kriterlerini karşılamıyor" |
+| **negatif** — başlangıç > 7 gün | ARDS DEĞİL | — | 0 |
+| **negatif** — tek taraflı infiltrat | ARDS DEĞİL | — | 0 |
+| **negatif** — kardiyojenik ödem | ARDS DEĞİL | — | 0 |
+
+Son üç satır şart: yeni koşul (`|| pf === "no_ards"`) EKLEME, var olan üç
+dışlama yolunun yerini almıyor. İlk üç satır da negatif kontrol — mortalite
+yüzdeleri düzeltme öncesiyle birebir aynı.
+
+**Dördüncü satırdaki `0` artık DOĞRU davranış.** Aynı sayı düzeltmeden önce
+"cetvel bozuk" demekti, şimdi "hasta hiçbir ARDS bandında değil" demek.
+Bir göstergenin sıfır olması tek başına bir şey söylemiyor; **sıfırın hangi
+sebeple sıfır olduğunu ayırt etmek ölçümün kendisi.**
+
+#### Çalışan ama ikinci kopya taşıyan üç araç — ölçüldü, DEĞİŞTİRİLMEDİ
+
+`hscore` (`prob.pct === b.pct`, dört yüzde dizesi iki yerde), `heart`
+(eşikler `total <= 3` / `4–6` / `>= 7` hem cetvelde hem bant merdiveninde) ve
+`rapid3` (yukarıdaki yama). Üçü de bugün **uyuşuyor** ve ölçümle doğrulandı;
+kusur bugünün değerinde değil, ileride birinin tek kopyayı düzeltip hiçbir
+etki görmemesinde. `steroid-dose`'un `gluco` alanıyla aynı gizli tuzak.
+
+Tekleştirilmediler çünkü çalışan üç aracı aynı turda değiştirmek, ölçülmüş
+bir kusuru düzeltmek değil öngörülen bir riski kapatmak olurdu; kayda geçti.
