@@ -11465,3 +11465,70 @@ tarafındaki kök daha önce bilinçli eklenmiş (yorumu duruyor), araç tarafı
 turun dışında kalmış. Araç sayfalarında GÖRÜNÜR kırıntı olmadığı için ortada
 şema–ekran çelişkisi yok; 130 dosyalık üretilmiş diff'i kozmetik bir fark
 için açmaya değmez. Ölçüldü, yazıldı, bırakıldı.
+
+### SİTE HARİTASI HER DAĞITIMDA "152 SAYFA AZ ÖNCE DEĞİŞTİ" DİYORDU
+
+`dateModified` şemada doğru basılıyor mu diye bakılırken çıktı. Şema temiz
+(`"2026-03-14"`, geçerli ISO) ama harita aynı sinyali başka bir kaynaktan
+üretiyordu. Ölçüldü (canlı `sitemap.xml`):
+
+| ölçüt | değer |
+|---|---|
+| adres | 558 |
+| **derleme anının damgasını taşıyan** | **152** |
+| bunların dağılımı | 131 araç · 13 branş · `/` · `/topics` · `/tools` · `/uyelik` · premium tanıtım |
+| araç adresleri arasında BENZERSİZ tarih | **1** |
+
+Kod `lastModified: simdi` yazıyordu (`simdi = new Date()`), yani her dağıtım
+130 hesaplayıcının ve bütün hub sayfalarının "az önce değiştiğini" bildiriyordu.
+
+**Bu yalnızca gereksiz değil, ZARARLI.** Arama motoru `lastmod`u ancak
+tutarlı ve doğrulanabilir biçimde doğruysa kullanıyor; her dağıtımda 131
+adresin değiştiğini söyleyen bir harita sinyali sitenin TAMAMI için
+değersizleştiriyor — yani gerçek tarihini taşıyan 406 konu adresi de zarar
+görüyor.
+
+**Aynı ilke bu depoda ZATEN yazılıydı ve harita onun dışında kalmıştı:**
+`isoTarih()` ayrıştıramadığı değer için alanı hiç basmıyor — *"geçersiz bir
+tarih basmaktansa sinyali vermemek doğru; uydurma bir tarih arama motoruna
+yanlış tazelik bildirir."*
+
+Alan artık yalnızca GERÇEK kaynağı olan adreslerde basılıyor:
+
+| adres | kaynak |
+|---|---|
+| konu | içeriğin kendi `meta.updatedAt` değeri |
+| branş | o branştaki konuların **EN YENİSİ** |
+| `/topics` | bütün konuların en yenisi |
+| araç · `/` · `/tools` · `/uyelik` · premium | **alan YOK** |
+
+#### İkinci kusur negatif kontrolün İÇİNDEN çıktı
+
+Konu tarihlerinin değişmediğini doğrularken **dört konuda fark** göründü:
+`riedel-tiroiditi`, `hematolojik-maligniteler`, `lenfomalar`, `nhl-genel`.
+
+Sebep düzeltmem değildi: bu dördünde `meta.updatedAt` alanı HİÇ YOK ve
+`sonDegisiklik()` **`mtime` yedeğine** düşüyordu. Aynı dosyanın kendi yorumu
+`mtime`ın CI'da anlamsız olduğunu (checkout anı) zaten yazıyor — ama yedek
+yerinde duruyordu. Yani not doğruydu, kod notu uygulamıyordu.
+
+`mtime` yedeği kaldırıldı; tarih bilinmiyorsa alan basılmıyor.
+
+**Bu, negatif kontrolün ikinci bir kusur bulduğu tur.** "Değişmemeli" diye
+baktığım yerde değişen dört satır, düzeltmemin hatası değil ONDAN ÖNCE VAR
+OLAN bir kusurun görünür hâliydi.
+
+#### Doğrulama
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| adres sayısı | 558 | **558** (küme birebir aynı) |
+| `lastmod` taşıyan | 558 | 420 |
+| **derleme damgası taşıyan** | **152** | **0** |
+| branş tarihleri | 13'ü de aynı gün | **13 farklı gerçek tarih** |
+| **negatif** — gerçek tarihli konularda değişen | — | **0** |
+| XML iyi biçimli | — | evet |
+
+Branş satırı ayrıca bir kazanç: eskiden hepsi aynı damgayı taşıyordu, şimdi
+her branş kendi en yeni konusunun tarihini veriyor (endokrinoloji 2026-08-11,
+gastroenteroloji 2026-06-23, …) — yani sinyal hem dürüst hem ayırt edici.

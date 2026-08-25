@@ -43,28 +43,33 @@ function guvenliOku<T>(is: () => T, yedek: T): T {
 }
 
 /**
- * Konunun son değişiklik tarihi.
+ * Konunun son değişiklik tarihi — YALNIZCA içeriğin kendi `meta.updatedAt`
+ * değerinden. Alan yoksa `undefined` döner ve çağıran `lastmod`u hiç basmaz.
  *
- * Önce `meta.updatedAt` denenir, olmazsa dosyanın `mtime`'ı. Eskiden yalnızca
- * `mtime` kullanılıyordu ve gerekçesi "updatedAt serbest metin, güvenilmez"
- * idi — o gerekçe artık geçerli değil: `isoTarih()` Türkçe kısa/uzun ve
- * İngilizce kısa ay adlarının hepsini çeviriyor (ölçüldü: 456 konunun 452'si
- * çevriliyor, 4'ünde alan hiç yok, çevrilemeyen 0).
+ * Kaynak bir dönem `mtime` idi, gerekçesi "updatedAt serbest metin,
+ * güvenilmez" — o gerekçe geçersiz: `isoTarih()` Türkçe kısa/uzun ve
+ * İngilizce kısa ay adlarının hepsini çeviriyor (ölçüldü: 456 konunun
+ * 452'si çevriliyor, 4'ünde alan hiç yok, çevrilemeyen 0).
  *
- * Asıl sorun `mtime`'ın CI'da ANLAMSIZ olması: derleme makinesi depoyu
- * sıfırdan çekiyor ve bütün dosyalar checkout anını alıyor. Ölçüldü —
- * canlı site haritasındaki 543 girdinin tamamı aynı gün ve yalnızca iki
- * farklı dakika taşıyordu. Yani her adres "derleme anında değişti" diyordu
- * ve konu başına tazelik sinyali tümden ölüydü.
+ * `mtime` CI'da ANLAMSIZ: derleme makinesi depoyu sıfırdan çekiyor ve bütün
+ * dosyalar checkout anını alıyor. Ölçüldü — o dönem haritadaki 543 girdinin
+ * tamamı aynı gün ve yalnızca iki farklı dakika taşıyordu.
+ *
+ * ⚠ `mtime` YEDEK OLARAK DA KALDIRILDI. Not yukarıda duruyordu ama yedek
+ * yerinde kalmıştı ve bedeli ölçüldü: `meta.updatedAt` alanı OLMAYAN dört
+ * görünür konu (`endokrinoloji/riedel-tiroiditi`,
+ * `hematoloji/hematolojik-maligniteler`, `hematoloji/lenfomalar`,
+ * `hematoloji/nhl-genel`) canlıda `mtime`a düşüyor ve CI checkout anını
+ * aldığı için "BUGÜN değişti" diyorlardı. Uydurma bir tazelik sinyali,
+ * sinyalin yokluğundan daha kötü.
  */
-function sonDegisiklik(dosyaYolu: string): Date {
+function sonDegisiklik(dosyaYolu: string): Date | undefined {
   const iso = guvenliOku(() => {
     const veri = JSON.parse(fs.readFileSync(dosyaYolu, "utf-8"));
     return isoTarih(veri?.meta?.updatedAt);
   }, undefined);
 
-  if (iso) return new Date(`${iso}T00:00:00Z`);
-  return guvenliOku(() => fs.statSync(dosyaYolu).mtime, new Date());
+  return iso ? new Date(`${iso}T00:00:00Z`) : undefined;
 }
 
 function branslar(): string[] {
@@ -106,15 +111,67 @@ function araclar(): string[] {
   }, []);
 }
 
+/**
+ * BİLMEDİĞİMİZ TARİHİ UYDURMUYORUZ.
+ *
+ * `lastModified` bir dönem bütün konu-dışı adreslerde `new Date()` idi, yani
+ * her dağıtım "bu sayfa AZ ÖNCE değişti" diyordu. ÖLÇÜLDÜ (canlı sitemap):
+ * 558 adresin **152'si** derleme anının damgasını taşıyordu — 131 araç
+ * sayfasının 131'i, 13 branş, `/`, `/topics`, `/tools`, `/uyelik` ve premium
+ * tanıtım sayfası. Araç sayfaları arasında BENZERSİZ TARİH SAYISI 1'di.
+ *
+ * Bu yalnızca gereksiz değil, ZARARLI: arama motoru `lastmod`u ancak
+ * "tutarlı ve doğrulanabilir biçimde doğru" olduğunda kullanıyor. Her
+ * dağıtımda 131 adresin değiştiğini bildiren bir harita, sinyali sitenin
+ * TAMAMI için değersizleştiriyor — yani gerçek tarihini taşıyan 406 konu
+ * adresi de zarar görüyor.
+ *
+ * Aynı ilke bu depoda ZATEN yazılı: `isoTarih()` ayrıştıramadığı değer için
+ * alanı HİÇ BASMIYOR ("geçersiz bir tarih basmaktansa sinyali vermemek
+ * doğru"). Site haritası o kuralın dışında kalmıştı.
+ *
+ * Bugün alan yalnızca GERÇEK bir kaynağı olan adreslerde basılıyor:
+ *   konu       -> içeriğin kendi `meta.updatedAt` değeri
+ *   branş      -> o branştaki konuların EN YENİSİ
+ *   /topics    -> bütün konuların en yenisi
+ *   ötekiler   -> alan YOK (araç sayfaları, /, /tools, /uyelik, premium)
+ *
+ * `mtime` yedeği bilerek kullanılmıyor — üstteki nota bak: CI depoyu sıfırdan
+ * çekiyor ve bütün dosyalar checkout anını alıyor.
+ */
+function enYeni(tarihler: Date[]): Date | undefined {
+  const gecerli = tarihler.filter((d) => d instanceof Date && !Number.isNaN(d.getTime()));
+  if (!gecerli.length) return undefined;
+  return new Date(Math.max(...gecerli.map((d) => d.getTime())));
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteUrl();
-  const simdi = new Date();
   const kayitlar: Kayit[] = [];
 
-  kayitlar.push({ url: `${base}/`, lastModified: simdi, changeFrequency: "daily", priority: 1 });
-  kayitlar.push({ url: `${base}/topics`, lastModified: simdi, changeFrequency: "daily", priority: 0.9 });
-  kayitlar.push({ url: `${base}/tools`, lastModified: simdi, changeFrequency: "weekly", priority: 0.9 });
-  kayitlar.push({ url: `${base}/uyelik`, lastModified: simdi, changeFrequency: "monthly", priority: 0.6 });
+  /* Konular ÖNCE toplanıyor: branş ve /topics kayıtlarının tarihi onlardan
+     türüyor, yani sıralama zorunlu. */
+  const bransKonulari = new Map<string, { slug: string; dosya: string; tarih?: Date }[]>();
+  for (const brans of branslar()) {
+    bransKonulari.set(
+      brans,
+      konular(brans).map(({ slug, dosya }) => ({ slug, dosya, tarih: sonDegisiklik(dosya) }))
+    );
+  }
+  const tumTarihler = [...bransKonulari.values()]
+    .flat()
+    .map((k) => k.tarih)
+    .filter((d): d is Date => Boolean(d));
+
+  kayitlar.push({ url: `${base}/`, changeFrequency: "daily", priority: 1 });
+  kayitlar.push({
+    url: `${base}/topics`,
+    lastModified: enYeni(tumTarihler),
+    changeFrequency: "daily",
+    priority: 0.9,
+  });
+  kayitlar.push({ url: `${base}/tools`, changeFrequency: "weekly", priority: 0.9 });
+  kayitlar.push({ url: `${base}/uyelik`, changeFrequency: "monthly", priority: 0.6 });
 
   /**
    * YDUS tanıtım sayfası — robots.ts bu adresi bilerek taramaya AÇIK
@@ -125,7 +182,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
    */
   kayitlar.push({
     url: `${base}/tr/premium/ydus`,
-    lastModified: simdi,
     changeFrequency: "weekly",
     priority: 0.8,
   });
@@ -134,21 +190,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // /calisma-alanim ve /tekrar (kişisel araçlar; tarayıcıya boş görünürler),
   // /guidelines (henüz yer tutucu — aşağıda dizine kapatıldı).
 
-  for (const brans of branslar()) {
+  for (const [brans, liste] of bransKonulari) {
     kayitlar.push({
+      // Branşın tarihi UYDURULMUYOR: içindeki konuların en yenisi. Konu yoksa
+      // alan hiç basılmıyor.
       url: `${base}/topics/${brans}`,
-      lastModified: simdi,
+      lastModified: enYeni(liste.map((k) => k.tarih).filter((d): d is Date => Boolean(d))),
       changeFrequency: "weekly",
       priority: 0.8,
     });
 
-    for (const { slug, dosya } of konular(brans)) {
+    for (const { slug, tarih } of liste) {
       kayitlar.push({
         // Adres KODLANIR. Ham hâlinde basılınca `<loc>` içine boşluk giriyordu
         // ("…/topics/nefroloji/FGF-23 vs PTH") — bu geçersiz bir adres ve
         // arama motoru o girdiyi hata olarak işaretler.
         url: `${base}/topics/${yolKodla(brans)}/${yolKodla(slug)}`,
-        lastModified: sonDegisiklik(dosya),
+        lastModified: tarih,
         changeFrequency: "monthly",
         priority: 0.7,
       });
@@ -156,9 +214,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   for (const arac of araclar()) {
+    // Araç sayfasının GERÇEK bir değişiklik tarihi yok: içeriği koda gömülü ve
+    // `mtime` CI'da checkout anını veriyor. Alan basılmıyor.
     kayitlar.push({
       url: `${base}/tools/${arac}`,
-      lastModified: simdi,
       changeFrequency: "monthly",
       priority: 0.6,
     });
