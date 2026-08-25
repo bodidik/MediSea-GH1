@@ -8,20 +8,19 @@ type Steroid = {
   gluco: number;  // glukokortikoid etkinlik
   half: string;   // etki süresi
   mineralocorticoid: string;
-  pred: number;   // prednizon eşdeğeri mg
 };
 
 const STEROIDS: Steroid[] = [
-  { name: "Hidrokortizon",       gluco: 1,    half: "Kısa (8–12 saat)",    mineralocorticoid: "++",  pred: 0.25 },
-  { name: "Kortison",            gluco: 0.8,  half: "Kısa (8–12 saat)",    mineralocorticoid: "+",   pred: 0.2 },
-  { name: "Prednizon",           gluco: 4,    half: "Orta (12–36 saat)",   mineralocorticoid: "+/-", pred: 1 },
-  { name: "Prednizolon",         gluco: 4,    half: "Orta (12–36 saat)",   mineralocorticoid: "+/-", pred: 1 },
-  { name: "Metilprednizolon",    gluco: 5,    half: "Orta (12–36 saat)",   mineralocorticoid: "0",   pred: 1.25 },
-  { name: "Triamsinolon",        gluco: 5,    half: "Orta (12–36 saat)",   mineralocorticoid: "0",   pred: 1.25 },
-  { name: "Deksametazon",        gluco: 25,   half: "Uzun (36–72 saat)",   mineralocorticoid: "0",   pred: 6.25 },
-  { name: "Betametazon",         gluco: 25,   half: "Uzun (36–72 saat)",   mineralocorticoid: "0",   pred: 6.25 },
-  { name: "Fludrokortizon",      gluco: 10,   half: "Orta (12–24 saat)",   mineralocorticoid: "++++",pred: 2.5 },
-  { name: "Budesonid",           gluco: 40,   half: "Kısa (lokal etki)",   mineralocorticoid: "0",   pred: 10 },
+  { name: "Hidrokortizon",       gluco: 1,    half: "Kısa (8–12 saat)",    mineralocorticoid: "++" },
+  { name: "Kortison",            gluco: 0.8,  half: "Kısa (8–12 saat)",    mineralocorticoid: "+" },
+  { name: "Prednizon",           gluco: 4,    half: "Orta (12–36 saat)",   mineralocorticoid: "+/-" },
+  { name: "Prednizolon",         gluco: 4,    half: "Orta (12–36 saat)",   mineralocorticoid: "+/-" },
+  { name: "Metilprednizolon",    gluco: 5,    half: "Orta (12–36 saat)",   mineralocorticoid: "0" },
+  { name: "Triamsinolon",        gluco: 5,    half: "Orta (12–36 saat)",   mineralocorticoid: "0" },
+  { name: "Deksametazon",        gluco: 25,   half: "Uzun (36–72 saat)",   mineralocorticoid: "0" },
+  { name: "Betametazon",         gluco: 25,   half: "Uzun (36–72 saat)",   mineralocorticoid: "0" },
+  { name: "Fludrokortizon",      gluco: 10,   half: "Orta (12–24 saat)",   mineralocorticoid: "++++" },
+  { name: "Budesonid",           gluco: 40,   half: "Kısa (lokal etki)",   mineralocorticoid: "0" },
 ];
 
 export default function SteroidDosePage() {
@@ -31,10 +30,31 @@ export default function SteroidDosePage() {
   const doseNum = Math.max(0, parseFloat(dose) || 0);
   const fromSteroid = STEROIDS[from];
 
+  /**
+   * PREDNİZON EŞDEĞERİ ARTIK TÜRETİLİYOR — ikinci bir gerçeklik vardı.
+   *
+   * Tabloda her ilaç İKİ sayı taşıyordu: `gluco` (hidrokortizona göre bağıl
+   * glukokortikoid gücü, yayımlanmış büyüklük) ve `pred` (prednizon eşdeğeri).
+   * İkisi `pred = gluco / 4` ile bağlı ve ONUNDA DA tutuyordu — yani bugün
+   * bir ayrışma YOKTU.
+   *
+   * Ama `gluco` HİÇBİR YERDE OKUNMUYORDU: on ilaçta tanımlı, sıfır kullanan.
+   * Tehlike bugünün değeri değil, yarınki düzeltme: deksametazonun gücünü
+   * güncellemek isteyen biri doğal olarak ADLANDIRILMIŞ ve ANLAMLI alanı
+   * (`gluco`) değiştirir ve ekranda HİÇBİR ŞEY değişmez — hesap sessizce
+   * eski `pred` değerini kullanmaya devam eder. Belgedeki `arac-metadata`
+   * dersinin aynısı: eski yolu okumaya devam eden bir üreteç sessiz kalır.
+   *
+   * Artık tek kaynak `gluco`. `pred`e hiç ihtiyaç yok, çünkü bölmede 4'ler
+   * sadeleşiyor:
+   *   dose × (from.gluco/4) ÷ (target.gluco/4)  =  dose × from.gluco / target.gluco
+   */
+  const PREDNIZON_GLUCO = 4;
+  const predEsdeger = (s: Steroid) => s.gluco / PREDNIZON_GLUCO;
+
   const equiv = (steroid: Steroid) => {
-    if (!doseNum || !fromSteroid.pred) return "–";
-    const predEq = doseNum * fromSteroid.pred;
-    return Math.round((predEq / steroid.pred) * 10) / 10;
+    if (!doseNum || !fromSteroid.gluco || !steroid.gluco) return "–";
+    return Math.round((doseNum * fromSteroid.gluco / steroid.gluco) * 10) / 10;
   };
 
   return (
@@ -71,7 +91,7 @@ export default function SteroidDosePage() {
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 text-sm">
             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Prednizon eşdeğeri: </span>
             <span className="font-black text-blue-900">
-              {doseNum && fromSteroid ? Math.round(doseNum * fromSteroid.pred * 10) / 10 : "–"} mg
+              {doseNum && fromSteroid ? Math.round(doseNum * predEsdeger(fromSteroid) * 10) / 10 : "–"} mg
             </span>
           </div>
         </div>

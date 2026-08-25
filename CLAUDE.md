@@ -8601,3 +8601,65 @@ kriteri" ↔ "aktivite indeksi"), kelime farkı değil.
 **5. İçerik denetimleri tabanında:** `soru-denetim` yapısal kusur yok (CI
 kapısı temiz); `konu` 17 · `yetim` 17 · `asili` kayıtları içerik kararı ve
 kullanıcının işi — sapma yok.
+
+### ÖLÜ ALAN, SESSİZ BİR TUZAKTIR — `steroid-dose`'da yayımlanmış büyüklük hiç okunmuyordu
+
+Steroid eşdeğerlik tablosu her ilaç için İKİ sayı taşıyordu:
+
+```
+gluco : hidrokortizona göre bağıl glukokortikoid gücü   (yayımlanmış büyüklük)
+pred  : prednizon eşdeğeri                              (gluco / 4)
+```
+
+İkisi `pred = gluco / 4` ile bağlı ve **onunda da tutuyordu** — yani bugün bir
+ayrışma YOKTU. Kusur bugünün değerinde değil.
+
+**`gluco` HİÇBİR YERDE OKUNMUYORDU**: on ilaçta tanımlı, sıfır kullanan.
+Hesabın tamamı `pred` üzerinden dönüyordu.
+
+Tehlike yarınki düzeltmede: deksametazonun gücünü güncellemek isteyen biri
+doğal olarak **adlandırılmış ve anlamlı** alanı (`gluco`) değiştirir — ve
+ekranda hiçbir şey değişmez. Hesap sessizce eski `pred` değerini kullanmaya
+devam eder. Belgedeki `arac-metadata` dersinin aynısı: **eski yolu okumaya
+devam eden bir üreteç hata vermez, sessiz kalır.**
+
+Çare `abg`nin `KOMPANZASYON_SABIT` turuyla aynı: kopyayı kaldır, tek kaynağa
+bağla. `pred` veriden tamamen çıktı; bölmede 4'ler sadeleştiği için hesap da
+kısaldı:
+
+```
+dose × (from.gluco/4) ÷ (target.gluco/4)  =  dose × from.gluco / target.gluco
+```
+
+**Davranışın değişmediği ölçüldü — ve KOPYANIN GERÇEKTEN kaybolduğu ayrıca
+sayıldı** (belgedeki kural: "çıktının aynı kaldığını değil, kopyanın
+kaybolduğunu ölç"):
+
+| ölçüt | sonuç |
+|---|---|
+| veri satırında `pred:` | **0** (önce 10) |
+| `gluco` okuyan satır | **4** (önce 0 — alan ölüydü) |
+
+**Elle hesapla üç senaryo:**
+
+| kaynak | prednizon | hidrokortizon | metilprednizolon | deksametazon |
+|---|---|---|---|---|
+| prednizon 20 mg | 20 | **80** (×4) | **16** (×4/5) | **3,2** (÷6,25) |
+| deksametazon 4 mg | **25** (×6,25) | **100** (×25) | **20** (×25/5) | 4 |
+| metilprednizolon 40 mg | **50** (×1,25) | **200** (×5) | 40 | **8** (×5/25) |
+
+İlk satır düzeltme öncesiyle **birebir aynı** — yani tekleştirme davranışa
+dokunmadı. Ekrandaki "prednizon eşdeğeri" satırı da artık türetilen değerden
+besleniyor (deks 4 → 25, metilpred 40 → 50).
+
+**Tablonun kendisi de yayımlanmış hâliyle karşılaştırıldı ve tutarlı:**
+hidrokortizon 1 · kortizon 0,8 · prednizon/prednizolon 4 · metilprednizolon/
+triamsinolon 5 · deksametazon/betametazon 25 · fludrokortizon 10. Bu sistemde
+5 mg prednizon = 20 mg hidrokortizon = 4 mg metilprednizolon = 0,8 mg
+deksametazon; yayımlanmış tablolarda deksametazon eşdeğeri 0,75–0,8 mg
+aralığında verilir, yani araç o aralığın içinde ve KENDİ İÇİNDE tutarlı.
+
+**Aktarılabilir kural: türetilebilir bir alanı ayrıca saklama.** Değerler
+bugün uyuşuyor olabilir; asıl bedel, ileride hangi alanın okunduğunu bilmeyen
+birinin yanlış alanı düzeltip hiçbir etki görmemesidir. Ölü alan yalnızca
+gereksiz değil, **yanıltıcıdır**.
