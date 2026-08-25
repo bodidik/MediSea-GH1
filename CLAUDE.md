@@ -9754,3 +9754,35 @@ taşıyor; 1 kg alt sınırı ise yenidoğanı kabul eder. Platform dahiliye
 (erişkin) için yazılmış, yani ikisi de savunulabilir — ama **ikisinin bir
 arada olması savunulamaz.** Ölçüm ve liste burada; kapsam kararı içerik
 sahibinin.
+
+### Premium motorları KISMİ TAMAMLAMA ekseninde sınandı — beş eksen, hepsi temiz
+
+Bu oturumda araçlarda tekrar tekrar çıkan iki sınıf (**payda dürüst mü**,
+**erken/eksik hüküm**) premium motorlarına hiç sürülmemişti. Belgede
+`QuizEngine`in puanlaması yalnızca **tamamı cevaplanmış** hâlde ölçülmüş
+("%70 · 10 soruda 7 doğru"); kısmen cevaplanmış hâl hiç sorulmamıştı.
+
+Beş eksen kaynaktan sürüldü, hepsi temiz — **ve her birinin NEDEN temiz olduğu
+yapısal**, rastlantı değil:
+
+| eksen | bulgu |
+|---|---|
+| yüzdenin paydası | `cevaplanan.length` — **cevaplanmayan soru YANLIŞ sayılmıyor** |
+| özet metni | "{cevaplanan} soruda {doğru} doğru · {yanlış} yanlış" — toplam değil, cevaplanan |
+| soru atlanabiliyor mu | **hayır** — ilerletme düğmesi `{cevapVerildi && …}` bloğunun içinde; cevapsız dalda yalnızca "Bir seçenek işaretleyin" var |
+| `VakaEngine` son adım | "Sonraki Adım" düğmeleri `!isLast` ile kapılı; `Math.min(i+1, toplam−1)` yalnızca ek koruma, **ölü kontrol değil** |
+| `VakaEngine` durum sızıntısı | `sonrakiAcik` adım değişince sıfırlanıyor — `key={adimIndex}` ile yeniden mount |
+
+**Üçüncü satır ikinci satırı gereksiz kılıyor ve bu önemli:** soru
+atlanamadığı için sonuç ekranında `cevaplanan.length === sorular.length` her
+zaman doğru, yani başlıktaki **"Set tamamlandı"** iddiası da dürüst. Payda
+dürüst olsa bile atlama mümkün olsaydı başlık yalan söylerdi; iki koruma
+birbirini tamamlıyor.
+
+`VakaEngine` hiç PUAN tutmuyor — rehberli bir vaka yürüyüşü ve sonu
+"Vaka tamamlandı!". Yanlış olabilecek bir payda yok; sınıf orada tanım gereği
+oluşamıyor.
+
+**Kayda geçirilmesinin sebebi:** bu eksenler bir daha sorulmasın. Motor kodu
+değişmedikçe yeniden ölçmeye gerek yok — değişirse ölçülecek dört şey
+yukarıda adıyla duruyor.
