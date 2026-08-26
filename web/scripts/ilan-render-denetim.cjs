@@ -152,3 +152,92 @@ for (const r of rapor) {
   }
 }
 console.log('\ntoplam aday: ' + toplamAday);
+
+/* ──────────────────────────────────────────────────────────────────────
+   2) ŞEMA SAPMASI (set düzeyi)
+
+   Yukarıdaki ölçüt alanın OKUNUP okunmadığına bakıyor. Kaçırdığı biçim:
+   alan okunuyor ama BAZI dosyalarda BAŞKA DÜZEYDE duruyor.
+
+   Gerçek vaka: 39 quiz dosyası künyesini üst düzeyde taşıyor
+   (`{id, baslik, branch, topic}`), 1 dosya `meta` içinde
+   (`{meta:{quizId, baslik, branch, topicId}}`). Motor üst düzeyi okuyor,
+   yani o dosyada `veri.id` UNDEFINED kalıyordu ve ilerleme anahtarı
+   `quiz-progress-undefined` oluyordu. İlk ölçüt bunu göremez: `id` alanı
+   39 dosyada okunuyor, yani "okunmayan alan" listesine hiç girmiyor.
+
+   Ölçüt: dosyaların ÇOĞUNLUĞUNUN taşıdığı üst düzey anahtarı taşımayan
+   dosyaları bul. Eşik %70 ve en az 4 dosya — daha küçük kümede
+   "çoğunluk" anlamsız, o yüzden ÖLÇÜLMEDİ diye raporlanıyor
+   ("0 sapma" ile "0 ölçüm" ayrımı).
+
+   VERDIKTLER — dört sapma karara bağlandı, yeniden kovalanmasın:
+
+   quizzes/gogus-hastaliklari/tkp-quiz-1.json   künye `meta` içinde.
+       Doğduğu kusur: `quiz-progress-undefined` + boş `<h1>` + geri
+       bağlantısı branşa düşüyor. OKUYUCU DÜZELTİLDİ (`quizYukle`
+       normalleştiriyor, üst düzey öncelikli). Veri hâlâ sapıyor, o
+       yüzden liste onu göstermeye DEVAM EDİYOR — yeni bir yüzey aynı
+       dosyayı ham okursa kusur geri gelir.
+
+   vakalar/endokrinoloji/feokromositoma-vaka-1.json   künye `meta` içinde.
+       OKUYUCU DÜZELTİLDİ (`VakaEngine` + vaka seçim listesi `meta`yı
+       düzleştiriyor). Aynı gerekçeyle listede kalıyor.
+
+   quizzes/hematoloji/aml-quiz-1.json   İngilizce şema
+       (`questions`/`text`/`options`). `sorular` da yok, yani motor
+       `veri.sorular ?? []` ile boş listeye düşüyor ve DÜRÜST boş durum
+       basıyor (çökme yok). Ayrıca `yetim-denetim`de kayıtlı.
+
+   flashcards/nefroloji/hiperf-kbh.json   `accessLevel` yok.
+       ZARARSIZ: `accessLevel` bu depoda ÖLÜ ALAN — hiçbir içerik kodu
+       okumuyor, erişim `AccessGate` ile rota düzeyinde sağlanıyor.
+
+   ────────────────────────────────────────────────────────────────────── */
+const semaRapor = [];
+
+for (const g of ESLEME) {
+  const dosyalar = [];
+  jsonGez(path.join(KOK, g.veri), (j, p) => {
+    if (!j || typeof j !== 'object' || Array.isArray(j)) return;
+    dosyalar.push({
+      rel: path.relative(path.join(KOK, g.veri), p).split(path.sep).join('/'),
+      ust: new Set(Object.keys(j)),
+      meta: j.meta && typeof j.meta === 'object' ? Object.keys(j.meta) : null,
+    });
+  });
+
+  if (dosyalar.length < 4) {
+    semaRapor.push({ ad: g.ad, dosya: dosyalar.length, olculdu: false, sapan: [] });
+    continue;
+  }
+
+  const sayac = new Map();
+  for (const d of dosyalar) for (const k of d.ust) sayac.set(k, (sayac.get(k) || 0) + 1);
+  const cogunluk = [...sayac.entries()]
+    .filter(([, n]) => n / dosyalar.length >= 0.7)
+    .map(([k]) => k);
+
+  const sapan = [];
+  for (const d of dosyalar) {
+    const eksik = cogunluk.filter((k) => !d.ust.has(k));
+    if (eksik.length) sapan.push({ rel: d.rel, eksik, meta: d.meta });
+  }
+  semaRapor.push({ ad: g.ad, dosya: dosyalar.length, olculdu: true, cogunluk, sapan });
+}
+
+console.log('\n\nŞEMA SAPMASI (set düzeyi)\n');
+let toplamSapan = 0;
+for (const r of semaRapor) {
+  console.log('=== ' + r.ad + '  (' + r.dosya + ' dosya)');
+  if (!r.olculdu) { console.log('    ÖLÇÜLMEDİ — çoğunluk için en az 4 dosya gerekiyor.'); continue; }
+  console.log('    çoğunluk anahtarı: ' + r.cogunluk.join(', '));
+  if (!r.sapan.length) { console.log('    sapma yok.'); continue; }
+  for (const s of r.sapan) {
+    console.log('    SAPAN  ' + s.rel);
+    console.log('        eksik üst düzey anahtar: ' + s.eksik.join(', '));
+    if (s.meta) console.log('        ama `meta` içinde: ' + s.meta.join(', '));
+    toplamSapan++;
+  }
+}
+console.log('\ntoplam şema sapması: ' + toplamSapan);
