@@ -17,6 +17,7 @@ import {
   type ImportMode,
   type ImportPlan,
 } from "@/app/lib/study-backup";
+import { depoKullanilabilir } from "@/app/lib/study-index";
 
 export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
   const [usage, setUsage] = useState<ReturnType<typeof storageUsage> | null>(null);
@@ -24,6 +25,20 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
   const [text, setText] = useState<string | null>(null);
   const [mode, setMode] = useState<ImportMode>("merge");
   const [durum, setDurum] = useState<string | null>(null);
+  /**
+   * DEPO ENGELLİYKEN BU YÜZEY ULAŞILABİLİR HALE GELDİ.
+   *
+   * `collectAll` korumaya alınınca `/calisma-alanim` artık çökmüyor —
+   * ama bu, yedekleme düğmelerinin GÖRÜNÜR ve TIKLANABİLİR olması demek.
+   * Ölçüldü (canlı, depo fırlatacak şekilde sarmalanıp): "Yedek al"
+   * yakalanmamış hata fırlatıyor, öge sayısı değişmiyor ve kullanıcıya
+   * HİÇBİR ŞEY söylenmiyor — deponun kendi kuralının ihlali.
+   *
+   * Yani bir çökmeyi düzeltmek, arkasındaki sessiz başarısızlığı
+   * ULAŞILABİLİR yaptı. Kesişim ölçülmeden görülmezdi.
+   */
+  const [depoYok, setDepoYok] = useState(false);
+  useEffect(() => { setDepoYok(!depoKullanilabilir()); }, []);
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -31,19 +46,23 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
   }, []);
 
   const disariAktar = () => {
-    const { blob, name, ozet } = exportBackup();
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = name;
-    a.click();
-    URL.revokeObjectURL(url);
-    // Kart işareti yalnızca varsa yazılır: hiç flashcard çalışmamış kullanıcıya
-    // "0 kart işareti" demek bilgi değil gürültü.
-    const kartlar = ozet.kartIsareti ? ` · ${ozet.kartIsareti} kart işareti` : "";
-    setDurum(
-      `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar} yedeklendi`
-    );
+    try {
+      const { blob, name, ozet } = exportBackup();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = name;
+      a.click();
+      URL.revokeObjectURL(url);
+      // Kart işareti yalnızca varsa yazılır: hiç flashcard çalışmamış kullanıcıya
+      // "0 kart işareti" demek bilgi değil gürültü.
+      const kartlar = ozet.kartIsareti ? ` · ${ozet.kartIsareti} kart işareti` : "";
+      setDurum(
+        `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar} yedeklendi`
+      );
+    } catch {
+      setDurum("Tarayıcı bu site için veri saklamayı engellediğinden yedek alınamadı.");
+    }
   };
 
   const dosyaSecildi = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -76,16 +95,22 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
   }, [durum]);
 
   const onayla = () => {
-    if (!text) return;
-    const r = applyImport(text, mode);
-    setPlan(null);
-    setText(null);
-    if (r.ok) {
-      setUsage(storageUsage());
-      setDurum("Geri yükleme tamam.");
-      onChanged?.();
-    } else {
-      setDurum(r.hata ?? "Geri yükleme başarısız.");
+    try {
+      if (!text) return;
+      const r = applyImport(text, mode);
+      setPlan(null);
+      setText(null);
+      if (r.ok) {
+        setUsage(storageUsage());
+        setDurum("Geri yükleme tamam.");
+        onChanged?.();
+      } else {
+        setDurum(r.hata ?? "Geri yükleme başarısız.");
+      }
+    } catch {
+      setPlan(null);
+      setText(null);
+      setDurum("Tarayıcı bu site için veri saklamayı engellediğinden geri yükleme yapılamadı.");
     }
   };
 
@@ -231,13 +256,15 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
         <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={disariAktar}
-            className="rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-[10px] font-black uppercase tracking-widest text-slate-600 transition-all hover:border-blue-300 hover:text-blue-600"
+            disabled={depoYok}
+            className="rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-[10px] font-black uppercase tracking-widest text-slate-600 transition-all hover:border-blue-300 hover:text-blue-600 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-slate-200 disabled:hover:text-slate-600"
           >
             ↓ Yedek al (.json)
           </button>
           <button
             onClick={() => fileRef.current?.click()}
-            className="rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-[10px] font-black uppercase tracking-widest text-slate-600 transition-all hover:border-blue-300 hover:text-blue-600"
+            disabled={depoYok}
+            className="rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-[10px] font-black uppercase tracking-widest text-slate-600 transition-all hover:border-blue-300 hover:text-blue-600 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-slate-200 disabled:hover:text-slate-600"
           >
             ↑ Yedekten yükle
           </button>
@@ -248,6 +275,12 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
             onChange={dosyaSecildi}
             className="hidden"
           />
+          {depoYok && (
+            <p role="alert" className="w-full text-[10px] font-bold leading-snug text-rose-700">
+              Tarayıcın bu site için veri saklamayı engellediğinden yedekleme
+              kullanılamıyor. Site verisine izin verdiğinde kayıtların geri gelir.
+            </p>
+          )}
           {/* Koşullu basılmıyor: canlı bölge, içerik değişmeden ÖNCE DOM'da
               bulunmalı — sonradan eklenen bir bölgenin ilk mesajı kaçabiliyor.
               Boşken görünmez, yer kaplamıyor. */}
