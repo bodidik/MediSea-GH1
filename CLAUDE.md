@@ -13833,3 +13833,56 @@ kararı. Ölçüm, kapsam ve ayrım burada.
 Anahtarlar bastırılınca 75 kart göründü. Bu depoda şema iki dilli ve
 karışık (`sorular`/`questions`, `kartlar`/`cards`, `adimlar`/`stages`) —
 **bir sayıyı raporlamadan önce alanın gerçekten var olduğunu gör.**
+
+### "HESABINLA KORU" VAADİ SINANDI — ve hipotezim ölçümle çürüdü
+
+Arka uç (Express) canlıda hiç çalışmıyor. Buradan makul bir hipotez çıkıyordu:
+`/calisma-alanim` anonim kullanıcıya **"Ücretsiz hesapla koru →"** diyor; eğer
+senkron o ölü arka uca gidiyorsa vaat KARŞILANMIYOR demektir ve bu, dönüşüm
+yüzeyinde bir "ilan mı gerçek mi" kusuru olurdu.
+
+**Hipotez çürüdü.** `/api/study` arka uç vekili DEĞİL: doğrudan MongoDB'ye
+yazıyor (`StudyStat.findOneAndUpdate`) ve oturumsuzda dürüst
+`401 {ok:false,reason:"auth"}` dönüyor. Yani vaat mekanik olarak karşılanabilir.
+
+**Geriye tek soru kaldı: veritabanı canlıda gerçekten erişilebilir mi?**
+Hafızada bu "DOĞRULANAMADI" diye duruyordu, çünkü Mongo'ya dokunan bütün GET
+uçları kapı arkasında.
+
+#### Ayırt edici: TEK ÖLÇÜM değil, İKİ YOLUN FARKI
+
+NextAuth `authorize` içindeki HER hatayı `CredentialsSignin`e çeviriyor — yani
+yanıtın kendisi "kullanıcı yok" ile "veritabanı yok"u ayırmıyor. Süre de tek
+başına yetmiyor: hafızadaki ölçüt "URI yoksa ~0.3 sn" diyor ve canlı ölçüm
+365 ms çıkmıştı, yani tam o aralıkta.
+
+Çare iki yolu KARŞILAŞTIRMAK; ağ tabanı böylece sadeleşiyor:
+
+```
+email=""                       -> dogrulama erken dusuyor, Mongo'ya HIC gidilmiyor
+email=olmayan@example.invalid  -> authorize calisiyor, User.findOne var
+```
+
+| ortam | boş alan | DB'ye dokunan | fark |
+|---|---|---|---|
+| **canlı** | 283 ms | 715 ms (ilk deneme **1740 ms**) | **+432 ms** |
+| yerel, `MONGODB_URI=` boş | 0.21 sn | 0.21 sn | **0** |
+
+İki bağımsız işaret: fark VAR ve ilk denemede **soğuk bağlantı sıçraması**
+(1740 → ~370 ms) — belgede kayıtlı Mongo soğuk bağlantı imzasının aynısı.
+URI yokken `dbConnect` anında fırladığı için fark sıfır kalıyor.
+
+**Sonuç: `MONGODB_URI` yapılandırılmış ve Atlas erişilebilir.** Hafıza notu
+güncellendi.
+
+**Yazma YAPILMADI:** başarısız giriş bir okuma yolu (belgede kayıtlı) ve
+kullanılan e-posta `@example.invalid` — kayıt oluşturulmadı.
+
+**Yerelde tekrar üretirken bir tuzak:** `MONGODB_URI=` ile başlatılan üretim
+sunucusunda `/api/auth/csrf` **500** veriyor ve ilk bakışta "AUTH_SECRET
+eksik" sanılıyor. Sebep başka: `UntrustedHost`. `AUTH_TRUST_HOST=true` +
+`NEXTAUTH_URL` verilince düzeliyor. Hata metnini okumadan değişkeni suçlama.
+
+**Arayüz dalı da ölçüldü:** canlı giriş formu gerçek gönderimle sürüldü —
+`role="alert"` **"E-posta veya şifre hatalı."**, düğme kilitli kalmıyor,
+sayfa ayakta.
