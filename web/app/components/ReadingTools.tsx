@@ -30,6 +30,7 @@ import {
   type MarkStyle,
   type ReadingMark,
 } from "@/app/lib/reading-marks";
+import { panoyaKopyala } from "@/app/lib/pano";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
 
 type Anchor = { x: number; y: number; below: boolean };
@@ -74,6 +75,12 @@ export default function ReadingTools() {
    * yaptığında SÖYLÜYOR): sessizce eksiltmek güvensizlik üretir.
    */
   const [degistiBilgi, setDegistiBilgi] = useState(0);
+  const [panoHatasi, setPanoHatasi] = useState(false);
+  useEffect(() => {
+    if (!panoHatasi) return;
+    const t = setTimeout(() => setPanoHatasi(false), 4000);
+    return () => clearTimeout(t);
+  }, [panoHatasi]);
   const degistiTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const kisaTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -425,7 +432,9 @@ export default function ReadingTools() {
 
   const copy = () => {
     const text = selectedText();
-    if (text) navigator.clipboard?.writeText(text).catch(() => {});
+    /* Pano yoksa SESSIZCE kapanmasin: yardimci yedege dusuyor, sonuc
+       basarisizsa kullaniciya soyleniyor. */
+    if (text) void panoyaKopyala(text).then((ok) => { if (!ok) setPanoHatasi(true); });
     close();
   };
 
@@ -656,6 +665,21 @@ export default function ReadingTools() {
               ✕
             </button>
           )}
+        </div>
+      )}
+
+      {/* Pano uyarısı KENDİ kapsayıcısında: aşağıdaki vurgu yöneticisi
+          `marks.length > 0` ile kapılı, ama kopyalama VURGU GEREKTİRMİYOR.
+          Bir dönem uyarı o kapsayıcının içindeydi ve ölçüldüğünde hiç
+          görünmedi — sayfada vurgu yoksa kutu hiç render edilmiyordu. */}
+      {panoHatasi && (
+        <div
+          data-ms-ui
+          role="alert"
+          className="fixed bottom-5 left-1/2 z-[61] max-w-[280px] -translate-x-1/2 rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg animate-[msPop_.12s_ease-out]"
+        >
+          Tarayıcı panoya yazmayı engelledi. Metni seçili bırakıp
+          <strong className="font-black"> Ctrl/⌘ + C</strong> ile kopyalayabilirsin.
         </div>
       )}
 

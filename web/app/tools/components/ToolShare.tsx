@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { panoyaKopyala } from "@/app/lib/pano";
 
 type Params = Record<string, string | number | boolean | null | undefined>;
 
@@ -57,21 +58,10 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
   const copy = React.useCallback(async () => {
     const link = buildUrl();
     if (!link) return;
-    try {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(link);
-      } else {
-        const el = document.createElement("textarea");
-        el.value = link;
-        el.style.position = "fixed";
-        el.style.opacity = "0";
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand("copy");
-        document.body.removeChild(el);
-      }
-      setCopied(true);
-    } catch { /* no-op */ }
+    /* Pano yedegi ORTAK yardimcida (bkz. app/lib/pano.ts). Buradaki
+       execCommand yedegi bir donem YALNIZCA bu dosyada vardi; ayni
+       ihtiyaci olan uc cagri yeri onsuzdu. */
+    setCopied(await panoyaKopyala(link));
   }, [buildUrl]);
 
   React.useEffect(() => {

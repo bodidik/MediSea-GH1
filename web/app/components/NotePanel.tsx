@@ -20,6 +20,7 @@
 // bağımsız, panel genişliği değişince yeniden ölçeklenir, tek tek silinebilir.
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { panoyaKopyala } from "@/app/lib/pano";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
@@ -91,6 +92,15 @@ export default function NotePanel() {
   const [text, setText] = useState("");
   const [strokes, setStrokes] = useState<Stroke[]>([]);
   const [redo, setRedo] = useState<Stroke[]>([]);
+  /* Pano KURTARMA yolu: depo dolduğunda kullanıcıya "yazıyı kopyala"
+     deniyor. Kopyalama sessizce başarısız olursa not gerçekten
+     kayboluyordu — sonuç artık söyleniyor. */
+  const [panoOk, setPanoOk] = useState<boolean | null>(null);
+  useEffect(() => {
+    if (panoOk === null) return;
+    const t = setTimeout(() => setPanoOk(null), 3000);
+    return () => clearTimeout(t);
+  }, [panoOk]);
 
   const [ink, setInk] = useState(INKS[0]);
   const [nib, setNib] = useState(NIBS[1]);
@@ -648,12 +658,19 @@ export default function NotePanel() {
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   <button
-                    onClick={() => navigator.clipboard?.writeText(text).catch(() => {})}
+                    onClick={() => void panoyaKopyala(text).then(setPanoOk)}
                     disabled={!text.trim()}
                     className="rounded-lg bg-rose-600 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-rose-500 disabled:opacity-40"
                   >
                     Yazıyı kopyala
                   </button>
+                  {panoOk !== null && (
+                    <span role="alert" className={panoOk
+                      ? "self-center text-[10px] font-bold text-emerald-700"
+                      : "self-center text-[10px] font-bold text-rose-700"}>
+                      {panoOk ? "Kopyalandı" : "Kopyalanamadı — metni seçip Ctrl/⌘ + C"}
+                    </span>
+                  )}
                   {strokes.length > 0 && (
                     <button
                       onClick={exportPng}
@@ -742,7 +759,7 @@ export default function NotePanel() {
                   </span>
                   <div className="flex gap-1">
                     <button
-                      onClick={() => navigator.clipboard?.writeText(text).catch(() => {})}
+                      onClick={() => void panoyaKopyala(text).then(setPanoOk)}
                       disabled={!text}
                       className="rounded-lg px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-colors hover:bg-slate-100 disabled:opacity-30"
                     >
