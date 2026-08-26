@@ -16526,3 +16526,35 @@ bağlantı gizlendiğinde de duruyorlar. İkisi de kasıtlı (`truncate` ve
 ama ögenin KENDİ `overflow-x`ini ve `text-overflow: ellipsis` durumunu
 elemiyor; bu yüzden kasıtlı kaydırıcılar ve `truncate` metinler aday olarak
 çıkıyor. A/B olmadan bunlar "yeni kusur" sanılabilirdi.
+
+### DOĞRULAMA TURU — belgelenmiş bir iddia sınandı, kendi işim ölçüldü (kod değişmedi)
+
+**1. `(ydus)` düzeninin iddiası DOĞRU çıktı.** Yorum *"Okuma araçları —
+yalnızca `[data-readable]` taşıyan sayfalarda görünür"* diyor. Bu depoda
+"belgede yazması taşıdığı anlamına gelmez" kuralı var, o yüzden ölçüldü:
+
+| sayfa | `[data-readable]` | not tutamağı | okuma ipucu |
+|---|---|---|---|
+| premium pano | 0 | **0** | 0 |
+| premium branş | 0 | **0** | 0 |
+| **pozitif kontrol** — açık konu | 1 | **1** | 1 |
+
+Pozitif kontrol şart: yalnızca "0" görmek ölçütün kör olmasından da gelebilirdi.
+
+**2. `/uyelik` yapısı temiz** — huninin varış noktası, bugüne kadar yalnızca
+sayıları ölçülmüştü: `h1` 1 · `main` 1 · 14 başlık, **düzey atlaması 0** ·
+24px altı dokunma hedefi **0** · 375px taşma yok.
+
+**3. Bu oturumda eklediğim pano çıkışı sınandı:**
+
+| ölçüt | sonuç |
+|---|---|
+| kontrast | **7.5** (bileşik zemin `rgb(253,254,254)` hesaplanarak; `globals.css` slate-500'ü slate-600'e eziyor) |
+| dokunma hedefi | 29px |
+| odak sırası | **ilk durak** — klavye kullanıcısı için çıkış hemen erişilebilir |
+| 320px | taşma **yok**, iki grup tam bitişik (sol 16–128, sağ 128–304) |
+| **320px + uzun rozet** | "Free" → "Premium Üye" ile de taşma **yok** |
+
+Son satır ölçülmeliydi: sağ gruba 62px ekledim ve rozet metni plana göre
+uzuyor; başlık o genişlikte grupları bitişik gösteriyor, yani "bugün sığıyor"
+yeterli bir kanıt değildi.
