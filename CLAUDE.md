@@ -14508,3 +14508,48 @@ yapıldı: belgede kayıtlı tuzak — bileşen kuruluyken `removeItem` kalıcı
 değil, bellekteki liste geri yazılıyor. Bu turda o tuzağa bir kez düşüldü
 (temizlik sonrası 2 kayıt göründü) ve ancak yenileme sonrası doğru ölçüm
 alındı.
+
+### İKİ SEKME AÇIKSA İKİNCİSİ BİRİNCİNİN VURGUSUNU SİLİYORDU
+
+Vurgu kenar durumları serisinin üçüncüsü ve en pahalısı: **aynı konu iki
+sekmede açıkken** ne oluyor? Bu depoda olağan bir durum — aramadan ikinci kez
+açmak yeter.
+
+**ÖLÇÜLDÜ (canlı, gerçek arayüzle, iki ayrı gezinme bağlamı):**
+
+| adım | depo |
+|---|---|
+| A sekmesi sarı vurgu yapar | 1 kayıt (**sarı**) |
+| B sekmesi yeşil vurgu yapar | 1 kayıt (**YEŞİL**) — **sarı SİLİNDİ** |
+
+Sebep, deponun kendi kayıtlı sınıfının kardeşi: B'nin bellekteki listesi
+KURULDUĞU ANDAN kalma ve A'nınkini içermiyor; `commit` o listeyi olduğu gibi
+yazıyor.
+
+**Yoklama neden görmüyor:** iki yeniden boyama tetiği de (MutationObserver ve
+600 ms'lik yoklama) **KONTEYNER İMZASINA** bakıyor. Başka bir sekmenin depoya
+yazması DOM'u değiştirmiyor, imza aynı kalıyor ve `restore()` hiç çalışmıyor.
+
+**Çare `storage` olayı** — ve tam ihtiyaç duyulan sinyal o: yalnızca ÖTEKİ
+sekmelerde tetikleniyor. `restore()` zaten depodan okuyup yeniden boyuyor,
+yani belleği tazelemek için başka bir şey gerekmiyor. `key === null` (depo
+tümden temizlendi, yedekten "üzerine yaz") durumu da karşılanıyor.
+
+**Doğrulama — bir düzeltme, İKİ negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| A sarı → B yeşil | **2 kayıt** (`g` + `y`) — A hayatta |
+| iki bağlam senkron mu | **evet**, ikisinde de 2 `<mark>` |
+| **negatif** — A'da bir vurgu SİL | 1 kayıt, **silinen geri GELMEDİ** |
+| **negatif** — silme B'ye yansıdı mı | **evet**, B de 1 `<mark>`e indi |
+
+Üçüncü satır kritik: bu kusurun "birleştirerek" çözülmesi (depodaki listeyle
+birlik almak) silmeyi bozardı — silinen kayıt her yazmada geri dirilirdi.
+`storage` ile tazeleme birleştirme YAPMIYOR, yalnızca belleği gerçeğe
+eşitliyor; o yüzden silme doğru çalışmaya devam ediyor.
+
+**Ölçüm notu:** iki iframe'li kurulum panel gizliyken 30 sn sınırını iki kez
+aştı (zamanlayıcılar kısılıyor). Kurulum yarıya indirildi — **üst düzey sayfa
+A, tek iframe B** — ve ölçüm rahatça tamamlandı. `storage` olayı ayrı
+gezinme bağlamları arasında tetiklendiği için bu kurulum geçerli.

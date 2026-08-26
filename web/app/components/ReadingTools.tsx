@@ -222,8 +222,35 @@ export default function ReadingTools() {
       if (containerSignature() !== lastSig) restore();
     }, 600);
 
+    /**
+     * BAŞKA SEKME yazdı — yoklama bunu GÖREMEZ.
+     *
+     * Yukarıdaki iki tetik de KONTEYNER İMZASINA bakıyor; başka bir sekmenin
+     * depoya yazması DOM'u değiştirmediği için imza aynı kalıyor ve `restore`
+     * hiç çalışmıyordu. Sonuç ölçülen bir VERİ KAYBIYDI:
+     *
+     *   sekme A vurgu yapar  -> depoda 1 kayıt (sarı)
+     *   sekme B vurgu yapar  -> depoda 1 kayıt (YEŞİL) — A'nınki SİLİNDİ
+     *
+     * Sebep: B'nin bellekteki listesi kurulduğu andan kalma ve A'nınkini
+     * içermiyor; `commit` o listeyi olduğu gibi yazıyor. Aynı konuyu iki
+     * sekmede açmak bu depoda olağan (aramadan ikinci kez açmak yeter).
+     *
+     * `storage` olayı YALNIZCA öteki sekmelerde tetikleniyor, yani tam
+     * ihtiyaç duyulan sinyal bu. `restore()` zaten depodan okuyup yeniden
+     * boyuyor; belleği tazelemek için başka bir şey gerekmiyor.
+     */
+    const onStorage = (e: StorageEvent) => {
+      if (cancelled) return;
+      // `key === null` -> depo tümden temizlendi (yedekten "üzerine yaz")
+      if (e.key !== null && e.key !== "medisea:marks:v2:" + pathname) return;
+      restore();
+    };
+    window.addEventListener("storage", onStorage);
+
     return () => {
       cancelled = true;
+      window.removeEventListener("storage", onStorage);
       if (debounce) clearTimeout(debounce);
       clearInterval(poll);
       observer.disconnect();
