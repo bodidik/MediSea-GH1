@@ -13886,3 +13886,59 @@ eksik" sanılıyor. Sebep başka: `UntrustedHost`. `AUTH_TRUST_HOST=true` +
 **Arayüz dalı da ölçüldü:** canlı giriş formu gerçek gönderimle sürüldü —
 `role="alert"` **"E-posta veya şifre hatalı."**, düğme kilitli kalmıyor,
 sayfa ayakta.
+
+### CLS/LCP BU ORTAMDA ÖLÇÜLEMEZ — ve "CLS 0" sonucu SAHTE TEMİZDİR
+
+Okuma ağırlıklı bir üründe düzen kayması gerçek bir metrik ve hiç
+ölçülmemişti. Ölçülmeye çalışıldı; **ölçüt iki kez kör çıktı** ve üçüncü
+denemede sebebi kanıtlandı.
+
+**1. denemede** `performance.getEntriesByType('layout-shift')` kullanıldı ve
+dört sayfada da **CLS 0** çıktı. Sahteydi: layout-shift kayıtları varsayılan
+tamponda TUTULMUYOR, `PerformanceObserver` gerekiyor.
+
+**2. denemede** `PerformanceObserver` + `buffered:true` kuruldu ve
+**pozitif kontrol** eklendi (gövdenin başına 420px'lik bir öge sokup kaymayı
+kasten üretmek). Yine **0 kayıt** — yani ölçüt hâlâ kör. Ekran dışı iframe
+(`left:-9999px`) hiç boyanmadığı için kayma üretmiyor.
+
+**3. denemede** ölçüm gerçek sekmede, görünür sayfada yapıldı. Yine 0. Sebep
+kanıtlandı:
+
+| ölçüt | değer |
+|---|---|
+| `document.visibilityState` | **hidden** |
+| `paint` kaydı | **0** |
+| `largest-contentful-paint` kaydı | **0** |
+| `layout-shift` kaydı (tohumlu) | **0** |
+| **tohum gerçekten kaydırdı mı** | **EVET** — `h1` 197px → 577px |
+
+Son satır belirleyici: deney DOĞRU kurulmuştu, ölçülemeyen şey sonuçtu.
+Tarayıcı paneli gizli olduğu için sayfa hiç BOYANMIYOR; boyama olmayınca
+kayma da, LCP de, `paint` de raporlanmıyor.
+
+**Sonuç: bu ortamda CLS, LCP, paint ve longtask ölçülemez.** Buradan alınan
+"CLS 0" sonucu ürünün temiz olduğunu GÖSTERMEZ — ölçüm hiç çalışmamıştır.
+Belgede kayıtlı kardeş tuzaklar aynı kökten: `document.hasFocus()` false,
+CSS geçişleri ilerlemiyor, `<style>` enjeksiyonu etkisiz.
+
+#### Ölçülebilen taraf: yazı tipi kurulumu — sağlam
+
+CLS'in en yaygın kaynağı yazı tipi takası ve o taraf ÖLÇÜLEBİLİYOR:
+
+| ölçüt | değer |
+|---|---|
+| aile | Inter · Merriweather · JetBrains Mono + **üçünün "Fallback" karşılığı** |
+| kaynak | kendi origin'imiz (`/_next/static/media/*.woff2`) — çalışma anında Google YOK |
+| `font-display` | gerçek yüzlerde `swap`, metrik yedeklerinde `auto` |
+| CSS değişkenleri | `--font-sans/serif/mono` üçü de bağlı |
+| gerçek kullanım | `body` Inter · `h1` Merriweather · okuma alanı Inter |
+
+"Fallback" aileleri `next/font`un ürettiği **metrik uyarlamalı** yedekler
+(`size-adjust`) — yani takas anında satır yüksekliği kaymasın diye yapılan
+standart CLS azaltması zaten yerinde. Ölçülemeyen şey bunun SONUCU, kurulumun
+kendisi değil.
+
+**Aktarılabilir kural: bir performans metriği "iyi" çıktığında, o metriğin bu
+ortamda ÜRETİLDİĞİNİ ayrıca kanıtla.** Ucuz kanıt `paint` kaydı saymak: sıfırsa
+sayfa hiç boyanmamıştır ve boyamaya dayanan her metrik anlamsızdır.
