@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import { dbConnect } from '@/lib/db';
 import User from '@/lib/models/User';
+import { SIFRE_KISA_MESAJ, SIFRE_MIN } from '@/app/lib/kimlik';
 
 export async function POST(req: NextRequest) {
   try {
@@ -10,8 +11,8 @@ export async function POST(req: NextRequest) {
     if (!name || !email || !password) {
       return NextResponse.json({ error: 'Tüm alanlar zorunludur.' }, { status: 400 });
     }
-    if (password.length < 6) {
-      return NextResponse.json({ error: 'Şifre en az 6 karakter olmalıdır.' }, { status: 400 });
+    if (password.length < SIFRE_MIN) {
+      return NextResponse.json({ error: SIFRE_KISA_MESAJ }, { status: 400 });
     }
 
     await dbConnect();

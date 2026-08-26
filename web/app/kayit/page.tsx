@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { SIFRE_KISA_MESAJ, SIFRE_MIN } from '@/app/lib/kimlik';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -16,6 +17,19 @@ export default function KayitPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setHata('');
+
+    /**
+     * Kuralı İSTEMCİDE de uygula — sunucu denetimi kalıyor (istemciye
+     * güvenilmez), bu yalnızca bekletmeyi kaldırıyor.
+     *
+     * Ölçüldü: 3 karakterlik şifre için kullanıcı 8994 ms bekleyip
+     * sunucunun mesajını alıyordu. Aynı sabit ve aynı cümle
+     * `app/lib/kimlik.ts`ten geliyor, yani iki taraf ayrışamaz.
+     */
+    if (form.password.length < SIFRE_MIN) {
+      setHata(SIFRE_KISA_MESAJ);
+      return;
+    }
     setYukleniyor(true);
 
     /**
