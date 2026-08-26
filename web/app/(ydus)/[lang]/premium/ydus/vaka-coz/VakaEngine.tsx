@@ -26,7 +26,22 @@ interface Adim {
    */
   aciklama_kisa?: string;
   aciklama_detay?: string;
-  secenekAciklamalari: Record<string, string>;
+  /**
+   * İSTEĞE BAĞLI — tip bir dönem zorunlu diyordu ve YALANDI; bu kez bedeli
+   * boş bir kutu değil ÇÖKME oldu.
+   *
+   * Ölçüldü: `gogus-hastaliklari/sarkoidoz-vaka-1` dört adımının dördünde de
+   * bu alan YOK — yerine aynı şekli taşıyan `aciklamalar` var. Render
+   * korumasız `Object.entries(adim.secenekAciklamalari)` çağırdığı için şık
+   * tıklanınca TypeError fırlıyor ve hata sınırı 'BU SAYFA AÇILAMADI'
+   * basıyordu: ücretli bir vakanın TAMAMI kullanılamaz durumdaydı.
+   *
+   * İçerik dosyasına DOKUNULMADI; okuma tarafı iki adı da kabul ediyor —
+   * aynı vakadaki `meta` düzleştirmesiyle aynı karar.
+   */
+  secenekAciklamalari?: Record<string, string>;
+  /** `secenekAciklamalari` ile BİREBİR aynı şekil; 4 adımda bu adla duruyor. */
+  aciklamalar?: Record<string, string>;
   sonraki_bilgi?: string;
 }
 
@@ -93,6 +108,9 @@ function AdimKarti({
 
   const cevapVerildi = secim !== null;
   const dogruMu = secim === adim.dogru;
+  /* Şık açıklamaları iki addan biriyle gelebiliyor; hiç gelmeyebilir de.
+     Korumasız okuma bir vakayı ÇÖKERTİYORDU (bkz. Adim tipindeki not). */
+  const sikAciklamalari = adim.secenekAciklamalari ?? adim.aciklamalar;
 
   const secenek = useCallback((harf: string) => {
     if (cevapVerildi) return;
@@ -258,12 +276,14 @@ function AdimKarti({
               </p>
             )}
 
-            {/* Seçenek açıklamaları */}
+            {/* Seçenek açıklamaları — alan iki addan biriyle gelebiliyor ve
+                HİÇ gelmeyebilir; ikisi de karşılanıyor (bkz. tip yorumu). */}
+            {sikAciklamalari && (
             <div>
               <div style={{ fontSize: '10px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '.5rem' }}>
                 Seçenek Açıklamaları
               </div>
-              {Object.entries(adim.secenekAciklamalari).map(([harf, metin]) => {
+              {Object.entries(sikAciklamalari).map(([harf, metin]) => {
                 const isDogru = harf === adim.dogru;
                 return (
                   <div key={harf} style={{
@@ -285,6 +305,7 @@ function AdimKarti({
                 );
               })}
             </div>
+            )}
           </div>
 
           {/* Sonraki bilgi + devam */}

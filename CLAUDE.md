@@ -13569,3 +13569,62 @@ değil **NESNE** (`{"A": "...", "B": "..."}`), `dogru` da indeks değil HARF.
 Belgedeki kural yine kurtardı: **bir alanın adını ve TİPİNİ varsayma — önce
 anahtarları bastır.** Şema iki biçimli: 378 soru Türkçe (`metin`/`secenekler`/
 `dogru`), 10 soru İngilizce (`text`/`options`/`correctAnswer`, dizi + indeks).
+
+### ÜCRETLİ BİR VAKA ŞIK TIKLANINCA ÇÖKÜYORDU — alan adı sapması, beşinci kez
+
+Cevap anahtarı taraması vaka içeriğine sürülürken şema sayıları tutmadı ve
+oradan çıktı. (Çarpıklık orada da var: 35 vaka adımında **B %60**.)
+
+`VakaEngine`in `Adim` tipi `secenekAciklamalari`yi **zorunlu** sayıyordu ve
+render korumasız okuyordu:
+
+```tsx
+{Object.entries(adim.secenekAciklamalari).map(...)}   // koruma YOK
+```
+
+Ölçüldü: **`gogus-hastaliklari/sarkoidoz-vaka-1` dört adımının dördünde de o
+alan YOK** — yerine BİREBİR aynı şekli taşıyan `aciklamalar` var. Yani
+`Object.entries(undefined)` fırlıyor.
+
+**Bedeli tarayıcıda ölçüldü (geçici rota, gerçek veriyle):** şıkka tıklanınca
+öge sayısı 129 → 77'ye düşüyor ve ekranda hata sınırı beliriyordu:
+
+```
+⚓ BU SAYFA AÇILAMADI
+```
+
+Yani **ücretli bir vakanın tamamı kullanılamaz durumdaydı** ve kusur yalnızca
+kullanıcı bir şık seçtiğinde ortaya çıkıyordu.
+
+**Bu, aynı oturumda BEŞİNCİ "veri ilan ediyor, render yok sayıyor" örneği**
+(premium bilgi kutusu başlıkları · quiz seti adı · vaka adı · vaka `meta`
+şeması · şimdi şık açıklamaları). Öncekilerin bedeli görünmeyen içerikti;
+bunun bedeli ÇÖKME.
+
+**İçerik dosyasına DOKUNULMADI.** Düzeltme okuma tarafında ve iki adı da
+kabul ediyor — aynı dosyadaki `meta` düzleştirmesiyle aynı karar:
+
+```ts
+const sikAciklamalari = adim.secenekAciklamalari ?? adim.aciklamalar;
+{sikAciklamalari && ( … )}
+```
+
+Tip de gerçeğe hizalandı (`secenekAciklamalari?` + `aciklamalar?`). Aynı
+dosyanın üstünde bir dönem yazılmış not zaten şunu söylüyordu: *"tip bir dönem
+zorunlu diyordu ve YALANDI"* — o tur `aciklama_kisa`/`aciklama_detay` için
+görülmüş, `secenekAciklamalari` atlanmıştı.
+
+**Doğrulama, negatif kontrolüyle:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `sarkoidoz-vaka-1` şık tıklaması | **ÇÖKME** (öge 129→77) | çökme **yok**, öge 119→144 |
+| şık açıklamaları görünür mü | hayır | **evet** — "YANLIS — Primer hiperparatiroidizmde PTH…" |
+| **negatif** — `feokromositoma-vaka-1` (normal şema) | çalışıyordu | **değişmedi**: çökme yok, açıklamalar var, başlık yerinde |
+
+Son satır şart: takma ad desteği eklerken KANONİK adı okuyan vakaların
+bozulmadığı ayrıca ölçülmeli.
+
+**Vaka içeriğinde eksik alan sayımı da not** (render tarafı korumalı, boş kutu
+basmıyor): 35 adımın 12'sinde `aciklama_kisa`/`aciklama_detay`, 6'sında
+`sonraki_bilgi`, 17'sinde `baslik` yok. Bunlar içerik eksiği, kod kusuru değil.
