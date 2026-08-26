@@ -29,8 +29,33 @@ export default function DapsaPage() {
   /* `Number.isFinite(parseLocaleNumber(x))` ÇÖP GİRDİYİ GEÇİRİYORDU: fonksiyon
      "abc" için 0 döndürüyor ve 0 sonludur. Ölçüldü — alanlara harf yazmak
      "0 · REMİSYON" bastırıyordu. Kapı artık ham dizeye bakıyor. */
-  const dolu = (x: string) => sayiGirildiMi(x);
-  const hasResult = dolu(tjc) && dolu(sjc) && dolu(pain) && dolu(pga) && dolu(crp);
+  /**
+   * ÜST SINIR — etiket "(0–68)" / "(0–66)" / "(0–10 cm VAS)" ilan ediyordu
+   * ama kapı yalnızca "girildi mi" diyordu. Kardeş araçlar `cdai` ve `sdai`
+   * aynı kusuru taşıyordu ve orada ÖLÇÜLDÜ: 999 girilince skor 3996 çıkıyor,
+   * tek alana fazladan bir sıfır bandı YÜKSEK AKTİVİTE'ye kaydırıyordu.
+   *
+   * Sınırlar TANIMSAL: DAPSA'da TJC 68, SJC 66 eklemli sayımlardır (PsA'da
+   * daha geniş eklem seti), VAS 10 cm'dir. CRP mg/dL; 50 mg/dL = 500 mg/L,
+   * yani `das28`in CRP tavanıyla aynı yer. Sıfır MEŞRU (normal CRP,
+   * remisyondaki eklem sayısı) — alt sınır 0.
+   */
+  const araliktaMi = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const ALANLAR = [
+    { ham: tjc, ad: "TJC", alt: 0, ust: 68 },
+    { ham: sjc, ad: "SJC", alt: 0, ust: 66 },
+    { ham: pain, ad: "Ağrı VAS", alt: 0, ust: 10 },
+    { ham: pga, ad: "PGA", alt: 0, ust: 10 },
+    { ham: crp, ad: "CRP", alt: 0, ust: 50 },
+  ];
+  const hasResult = ALANLAR.every((a) => araliktaMi(a.ham, a.alt, a.ust));
+  const sorunlu = ALANLAR.filter((a) => a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust));
+  const eksik = ALANLAR.filter((a) => a.ham.trim() === "");
+  const sebepGoster = !hasResult && ALANLAR.some((a) => a.ham.trim() !== "");
 
   const getResult = () => {
     if (score <= 4)   return { label: "REMİSYON", sub: "DAPSA ≤ 4", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
@@ -80,6 +105,17 @@ export default function DapsaPage() {
           )}
         </div>
 
+
+        {sebepGoster && (
+          <div role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
+            <p className="text-[10px] font-black text-amber-700 uppercase tracking-widest">Hesaplanamıyor</p>
+            <p className="text-[11px] text-slate-700 leading-relaxed mt-2">
+              {sorunlu.length > 0
+                ? `Şu alan(lar) aralık dışında ya da sayı değil: ${sorunlu.map((a) => `${a.ad} (${a.alt}–${a.ust})`).join(" · ")}. Sıfır geçerlidir.`
+                : `Şu alan(lar) bekleniyor: ${eksik.map((a) => `${a.ad} (${a.alt}–${a.ust})`).join(" · ")}.`}
+            </p>
+          </div>
+        )}
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">AKTİVİTE SINIFI</div>
