@@ -174,7 +174,7 @@ export default function ReviewPage() {
         <Empty
           icon={depoYok ? "🔒" : "🖍"}
           title={depoYok ? "Tarayıcı depolaması engelli" : "Tekrar edilecek bir şey yok"}
-          body={depoYok ? "Tarayıcın bu site için veri saklamayı engelliyor; vurguların ve tekrar kartların okunamıyor. Site verisine izin verdiğinde kayıtların geri gelir — silinmediler." : "Tekrar kartları vurgularından türetilir. Bir konu okurken önemli bir cümleyi işaretlediğinde, o cümle otomatik olarak buraya kart olarak düşer."}
+          body={depoYok ? "Tarayıcın bu site için veri saklamayı engelliyor; vurguların ve tekrar kartların okunamıyor. Site verisine izin verdiğinde kayıtların geri gelir — silinmediler." : "Tekrar kartları vurgularından ve el çizimlerinden türetilir. Bir konu okurken önemli bir cümleyi işaretlediğinde o cümle boşluklu bir kart olur; not defterine yaptığın çizim de kart olarak düşer."}
           cta={{ href: "/topics", label: "Kütüphaneye git →" }}
         />
       </Shell>
@@ -400,7 +400,7 @@ function Shell({
                 Tekrar
               </h1>
               <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                Vurgularından türetilir
+                Vurgu ve çizimlerinden türetilir
               </p>
             </div>
           </div>
