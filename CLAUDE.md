@@ -15435,3 +15435,40 @@ Yan sonuç: geçen turda "ilgili-index ile gizliye bağ 0" diye yazdığım sonu
 **dayanaksızdı** — o ölçüm de aynı çözümleme hatasını taşıyordu ve 0'ı
 rastlantıyla buluyordu. Bu turda doğru çözümlemeyle yeniden ölçüldü ve
 gerçekten 0 çıktı.
+
+### "AYNI AD, FARKLI HEDEF" SINIFI SÜPÜRÜLDÜ — ikinci yüzey aramaydı
+
+İlgili konular listesinde düzeltilen sınıf öteki liste yüzeylerine sürüldü.
+Ölçüt: aynı listede iki bağlantının GÖRÜNÜR ADI birebir aynı, hedefleri
+farklı.
+
+| yüzey | ölçüm | sonuç |
+|---|---|---|
+| branş sayfaları | 13 branş · 99 konu bağı | çakışma **0** |
+| konu sayfası "İlgili Konular" | 408 liste | 4 çakışma → **düzeltildi** (önceki tur) |
+| **arama sonuçları** | canlı sorgu | **ÇAKIŞMA VAR → düzeltildi** |
+
+"Miyelodisplastik" araması aynı adlı iki sonuç veriyordu
+(`akut-lenfoblastik-losemi-all` ↔ `miyelodisplastik-sendrom-mds`). Kök yine
+`SENDE-KALANLAR`daki çift başlık kaydı; **içeriğe dokunulmadı**, ayrım sunum
+tarafında slug ile veriliyor — konu sayfasındaki çözümün aynısı.
+
+| ölçüt | sonuç |
+|---|---|
+| düzeltme sonrası | iki sonuç kendi slug'ını taşıyor, çakışma **0** |
+| **negatif** — "Addison" (5 sonuç) | slug etiketi **0** |
+| **negatif** — "Wells" (2 araç sonucu) | slug etiketi **0** |
+
+Ayrım yalnızca gerektiğinde beliriyor; olağan arama görünümü değişmedi.
+
+**Aktarılabilir kural: bir sunum kusurunu düzelttiğinde, AYNI VERİYİ gösteren
+öteki yüzeyleri say.** Bu veri (konu başlığı) üç yerde listeleniyor — branş
+sayfası, ilgili konular, arama — ve kusur ikisinde vardı. Tek yüzeyde
+düzeltip bırakmak, aynı kullanıcıya aynı karışıklığı başka kapıdan
+göstermek olurdu.
+
+**Ölçüm tuzağı — ardışık sorgu BAYAT sonuç verdi.** İki aramayı arka arkaya
+ölçtüğümde ikincisi birincinin sonuçlarını gösterdi (geciktirme henüz
+dönmemişti) ve bir an "iki farklı sorgu aynı sonucu veriyor" sanıldı.
+Belgede kayıtlı kural: her senaryoyu yalıt — aramada bu, kutuyu ÖNCE
+boşaltıp beklemek demek.
