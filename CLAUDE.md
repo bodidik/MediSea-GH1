@@ -13942,3 +13942,55 @@ kendisi değil.
 **Aktarılabilir kural: bir performans metriği "iyi" çıktığında, o metriğin bu
 ortamda ÜRETİLDİĞİNİ ayrıca kanıtla.** Ucuz kanıt `paint` kaydı saymak: sıfırsa
 sayfa hiç boyanmamıştır ve boyamaya dayanan her metrik anlamsızdır.
+
+### BAĞIMLILIK AÇIKLARI ÖLÇÜLDÜ — iki KRİTİK bu uygulamada ULAŞILAMIYOR
+
+Depo herkese açık ve bağımlılık güvenliğine hiç bakılmamıştı. `npm audit`
+(salt okuma) sürüldü:
+
+| paket | web | server |
+|---|---|---|
+| kritik | **2** | 0 |
+| yüksek | 6 | 8 |
+| orta | 0 | 4 |
+
+**Ama liste tek başına karar verdirmez — her açığın bu uygulamada
+ULAŞILABİLİR olup olmadığı ayrı bir soru.** Aynı "ilan mı gerçek mi"
+disiplini CVE'lere uygulandı:
+
+| paket | seviye | ulaşılabilir | gerekçe (ölçüldü) |
+|---|---|---|---|
+| `@auth/core` + `next-auth` | **KRİTİK ×2** | **HAYIR** | açık e-posta normalleştiricisinde; `normalizeIdentifier` YALNIZCA `lib/actions/signin/send-token.js` içinde çağrılıyor (sihirli bağlantı akışı). Uygulama **yalnızca Credentials** taşıyor — kaynakta (`auth.ts`) ve canlı `/api/auth/providers` çıktısında doğrulandı. |
+| **`next`** | **YÜKSEK** | **EVET** | "App Router Server Actions DoS". `app/actions.ts` `"use server"` taşıyor ve arama eylemi HER sayfadaki başlıktan çağrılıyor. Etkilenen aralık `>=13.0.0 <15.5.21`, kurulu **15.5.18**. |
+| `sharp` | yüksek | hayır/çok düşük | `next/image` kullanımı **0**, içerikte `<img>` **0** |
+| `postcss` | yüksek | hayır | derleme anı, girdi kendi CSS'imiz |
+| `brace-expansion` · `js-yaml` · `nanoid` | yüksek | hayır | araç zinciri |
+
+**Yani korkutucu görünen iki KRİTİK bu dağıtımda ulaşılamıyor; gerçekten
+geçerli olan tek şey `next`in YÜKSEK seviyeli DoS'u.**
+
+`server/` paketindeki 12 açık da kullanıcıya ulaşmıyor: Express arka ucu
+canlıda hiç çalışmıyor (belgede kayıtlı). Ama CI onu her gönderimde
+derliyor.
+
+#### YÜKSELTME UYGULANMADI — sebebi ölçüldü, komut hazır
+
+Sekiz açığın sekizinde de `fixAvailable` **semver-major DEĞİL**, yani
+`npm audit fix` güvenli görünüyor. Buna rağmen çalıştırılmadı: ölçüm anında
+**port 3000'de kullanıcının dev sunucusu çalışıyordu** ve belgede kayıtlı
+kural açık — Windows'ta çalışan bir dev sunucusu dosyaları tuttuğu için
+kurulum EPERM verip `node_modules`'ı bozabiliyor.
+
+Dev sunucusu kapalıyken çalıştırılacak komut:
+
+```bash
+cd web && npm audit fix && npm run lint && npm run typecheck && NEXT_DIST_DIR=.next-verify npm run build
+```
+
+Kilit dosyasının yedeği alındı; yükseltme sonrası kapılar düşerse geri dönüş
+`package-lock.json`u geri koyup `npm install` çalıştırmak.
+
+**Aktarılabilir kural: bir güvenlik raporunu SEVİYEYE göre değil
+ULAŞILABİLİRLİĞE göre sırala.** Bu turda iki KRİTİK, bir YÜKSEK'in altına
+düştü — ve ayrımı yapan şey, açığın anlattığı kod yolunun bu depoda çağrılıp
+çağrılmadığını KAYNAKTAN doğrulamak oldu.
