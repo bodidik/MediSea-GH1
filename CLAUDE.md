@@ -12617,3 +12617,34 @@ içerik/erişim politikası kararıdır; ölçüldü, kaydedildi, DEĞİŞTİRİ
 doğrulanmadı — `/admin/*` middleware ile `/giris`e yönlendiriliyor ve o kapıyı
 açmak auth katmanına dokunmak demek. Tip denetimi geçiyor ve etiketler ortak
 sözlükten türüyor; "ekranda görüldü" DENMİYOR.
+
+### OTURUM İÇİ GERİLEME TARAMASI — canlıda, ölçekte
+
+Bu oturumda konu sayfasına üç ayrı değişiklik yapıldı (içindekiler · bölüm
+kimlikleri · görünürlük rozeti tek kaynağa). Üçü de tek tek doğrulanmıştı;
+ÖLÇEKTE hiç bakılmamıştı.
+
+**Site haritasından eşit aralıklı 20 konu sayfası canlıda tarandı:**
+
+| ölçüt | sonuç |
+|---|---|
+| `<h1>` sayısı 1 olmayan | **0** |
+| `<main>` sayısı 1 olmayan (çift landmark) | **0** |
+| **kırık sayfa içi çapa** | **0** |
+| toplam bölüm kimliği | 105 |
+| içindekiler alan sayfa | 2 / 20 (%10 — eşikle tutarlı) |
+| gövdesi boş (<3000 bayt) | 0 |
+| istek hatası | 0 |
+
+**HİDRASYON ayrıca ölçüldü** — içindekiler sunucuda basılıp istemcide
+eşleşmezse kusur YALNIZCA konsolda görünür. Taze sekmede gerçek gezinmeyle
+üç yüzey tarandı: konu sayfası (TOC'lu) · branş sayfası (araç şeridi
+türetmesi) · araç sayfası. **Yeni konsol mesajı yok.**
+
+**"Log yok" körlükten gelmiyor:** `console.error` + `console.warn` tohumu
+atıldı ve **ikisi de yakalandı**. Sonraki sayfalarda yalnızca o iki tohum
+görünüyor, yani okuyucu çalışıyor ve sayfalar gerçekten sessiz.
+
+Aynı taramada `mna` düzeltmesi canlıda bir kez daha doğrulandı: basılı düğme
+**0**, büyük metin **"–"**, bant **"6 soru daha yanıtlanmalı"** — ve araç
+kabuğu değişiklikleri de yerinde (📚 Kütüphane bağlantısı, ARACI PAYLAŞ).
