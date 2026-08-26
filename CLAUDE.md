@@ -15061,3 +15061,53 @@ Kapı geri kondu ve doğrulandı ("Erişim Kısıtlı", `[data-readable]` 0).
 aynı bilgi küçük sınıf taşısaydı 14px'e çekilirdi. İkisi ayrı mekanizma
 (satır içi ↔ sınıf) ve premium başlıklar ≤11 karakter, büyük harf,
 harf aralıklı — yani etiket olarak tasarlanmış. Ölçüldü, gerekçesi yazıldı.
+
+### VURGU ÇUBUĞUNA KLAVYEYLE ULAŞMAK 25 TAB SÜRÜYORDU
+
+Çalışma döngüsünün çekirdeği hiç bu gözle ölçülmemişti: **klavye kullanıcısı
+vurgu yapabiliyor mu?** Belgede çubuğun düğme adları ve boyutları ölçülüydü;
+ULAŞILABİLİRLİĞİ ölçülmemişti.
+
+Mekanizma: çubuk `position: fixed`, yani GÖRSEL olarak seçimin yanında
+duruyor — ama **Tab sırası DOM'u izliyor** ve bileşen okuma alanından SONRA
+render ediliyor.
+
+| ölçüt (canlı, `addison`) | değer |
+|---|---|
+| çubuğun ilk düğmesinin belge sırası | **25. durak** |
+| okuma alanı içindeki odaklanabilir öge | **0** |
+| toplam odaklanabilir | 46 |
+
+Yani kullanıcı seçim yaptıktan sonra başlık, branş şeridi ve ilgili konu
+bağlantılarının tamamını geçmek zorundaydı.
+
+**İŞLEV BOZUK DEĞİLDİ — ve bu ayrıca ölçüldü.** Tab yolculuğu sırasında
+seçim kayboluyor (40 → 0 karakter), ama çubuk aralığı DURUMUNDA tuttuğu için
+düğmeye basılınca **doğru metinle 1 vurgu** oluşuyor ve ekranda 1 `<mark>`
+boyanıyor. Yani bedel yalnızca 25 tuş.
+
+Sağlığında ölçülenler (hepsi zaten doğruydu): çubuk `role="toolbar"` +
+`aria-label="Vurgulama araçları"`, sekiz düğmenin sekizi de adlı ve 32×32,
+**ESC kapatıyor** (`defaultPrevented: true`), ve çubuk hem kaydırmada hem odak
+taşınmasında hayatta kalıyor.
+
+**Çare dar:** çubuk AÇIKKEN ve odak DIŞINDAYKEN ilk Tab çubuğa gider.
+
+| ölçüt | sonuç |
+|---|---|
+| ilk Tab | **çubuğa gidiyor**, odak "Sarı" — 25 durak → **1** |
+| **negatif** — çubuk KAPALIYKEN Tab | yutulmuyor (ne `body`den ne bağlantıdan) |
+| **negatif** — çubuğun İÇİNDEYKEN Tab | yutulmuyor (sekiz düğme arasında doğal sıra) |
+| **negatif** — Shift+Tab | yutulmuyor |
+
+**Ölçüm tuzağı — negatif kontrolün KURULDUĞUNU doğrula.** İlk koşumda
+"çubuksuz Tab" kontrolü `true` verdi ve bir an düzeltme fazla geniş sanıldı;
+gerçekte çubuk hâlâ AÇIKTI (seçimi temizlemek onu kapatmıyor). ESC ile
+kapatılıp kapandığı DOĞRULANDIKTAN sonra kontrol doğru sonucu verdi. Bu,
+belgedeki *"bir durumu ölçtüğünü sanmak için o durumun GERÇEKTEN oluştuğunu
+ayrıca doğrula"* kuralının negatif kontrol tarafındaki hâli.
+
+İkinci tuzak: React etkisi çubukla AYNI commit'te bağlanıyor ama ölçüm
+hemen ardından dispatch edilirse henüz bağlı olmayabiliyor — ilk koşumda
+"ilk Tab yutulmadı, ikincisi yutuldu" gibi görünen sonuç bundandı. Bir olay
+işleyicisini ölçmeden önce bağlanmasını bekle.
