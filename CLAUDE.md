@@ -14333,3 +14333,48 @@ vurgunun kalan parçasını korumak (bölerek) ofset matematiği gerektiren bir
 `r.toString()` **boş** döndü; depo yine de değişmiş göründü. Sonuç bir bulgu
 gibi okunabilirdi. Aralığın metnini tıklamadan ÖNCE ölçüp boşsa DURDURAN bir
 kontrol konuldu; ancak ondan sonra alınan ölçüm kullanıldı.
+
+### ÇAPRAZ BLOK VURGUSU KUSURSUZ ÇALIŞIYOR — ama METİN ÇIKARIMI iki artık bırakıyor
+
+Vurgu kenar durumları serisinin ikincisi: kullanıcı **iki paragrafa yayılan**
+bir seçim yaparsa ne oluyor? Çok sık bir davranış, hiç sınanmamıştı.
+
+Ölçüldü — `<p>` içinden başlayıp `<li>` içinde biten 182 karakterlik seçim:
+
+| ölçüt | oluşturma | **yeniden yüklemeden sonra** |
+|---|---|---|
+| kayıt | 1 (uzunluk 182) | **1, uzunluk 182** |
+| `<mark>` | **8** (P · DIV · LI bloklarına yayılmış) | **8**, aynı bloklar |
+| boyanan metin | 40+1+20+32+21+10+18+40 = **182** | 182 |
+| **kayıttaki metinle birebir mi** | — | **EVET** |
+
+Yani boyayıcı blok sınırlarında doğru bölüyor, tek kayıt sekiz parçayı
+yönetiyor ve yeniden boyama bunu birebir geri kuruyor. **Sınıf temiz.**
+
+#### Ama saklanan METİN iki artık taşıyor
+
+Vurgunun `t` alanı `range.toString()`den geliyor ve o iki şeyi kaybediyor.
+Tekrar kartında ölçüldü:
+
+```
+…ACTH düşüktür.#Etiyoloji (Nedenler)Gelişmiş…
+```
+
+| artık | sebep |
+|---|---|
+| **`#` glifi** | bölüm başlığı süslemesi. `aria-hidden` taşıyor ama `textContent`e dahil — belgede kayıtlı tuzağın vurgu tarafındaki hâli |
+| **bloklar arası boşluk YOK** | `düşüktür.` + `#Etiyoloji` + `(Nedenler)` + `Gelişmiş` bitişik; React metin birleşmesinin aynısı |
+
+**DÜZELTİLMEDİ ve sebebi ciddi:** `t` alanı yalnızca gösterim değil, yeniden
+boyamanın DOĞRULAMA anahtarı. Belgede kayıtlı kural: *"ofset çözülüyor ama
+metin tutmuyorsa vurgu SİLİNİR."* Çıkarımı değiştirmek (boşluk eklemek ya da
+`aria-hidden` alt ağaçları elemek) yeni metni eski kayıtlarla uyuşmaz yapar ve
+**mevcut kullanıcıların bütün çapraz blok vurgularını siler.**
+
+Gösterim tarafında da düzeltilemiyor: kart yalnızca saklanan dizeyi görüyor,
+blok sınırları o dizeden geri kazanılamıyor ve `#` içerikteki meşru bir
+`#`ten ayırt edilemiyor.
+
+Yani bu, düzeltmesi verinin kendisinden daha pahalı olan bir artık: ölçüldü,
+mekanizması yazıldı, **bilerek bırakıldı**. Bir gün vurgu şeması sürüm
+atlarsa (`marks:v3`) doğru zaman o olur.
