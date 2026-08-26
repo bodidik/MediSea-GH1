@@ -200,24 +200,32 @@ export default async function KonuSayfasi({
     }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '1.5rem 1rem' }}>
 
-        {/* BREADCRUMB */}
-        <nav style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          fontSize: '12px',
-          marginBottom: '1.5rem',
-          color: '#4a6a8a',
-        }}>
-          <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
-            Ana sayfa
-          </Link>
-          <span>/</span>
-          <Link href={`/${lang}/premium/ydus/${branch}`} style={{ color: branchMeta.renk, textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
-            {branchMeta.label}
-          </Link>
-          <span>/</span>
-          <span style={{ color: '#4a6a8a' }}>{veri.meta.baslik}</span>
+        {/* Kırıntı yolu — açık taraftaki kalıpla AYNI: adlandırılmış
+            landmark + liste + aria-current. Ölçüldü: bu <nav> ADSIZDI ve
+            konu sayfasında İKİ nav landmark'ı olup yalnızca biri adlıydı,
+            yani ekran okuyucu ikisini ayırt edemiyordu.
+
+            "Ana sayfa" -> "YDUS Hazırlık": bağlantı site köküne değil
+            premium PANOSUNA gidiyor ve o sayfanın kendi <h1>'i
+            "YDUS Hazırlık". Etiket gittiği yeri söylemeliydi. */}
+        <nav aria-label="Kırıntı yolu" style={{ marginBottom: '1.5rem' }}>
+          <ol style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#4a6a8a', listStyle: 'none', margin: 0, padding: 0 }}>
+            <li>
+              <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
+                YDUS Hazırlık
+              </Link>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span aria-hidden="true">/</span>
+              <Link href={`/${lang}/premium/ydus/${branch}`} style={{ color: branchMeta.renk, textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
+                {branchMeta.label}
+              </Link>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page" style={{ color: '#4a6a8a' }}>{veri.meta.baslik}</span>
+            </li>
+          </ol>
         </nav>
 
         {/* HERO */}

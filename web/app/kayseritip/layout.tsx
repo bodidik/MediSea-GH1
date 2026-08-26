@@ -31,7 +31,7 @@ export default async function KayseriTipLayout({ children }: { children: React.R
             ÖZEL ALAN
           </span>
         </div>
-        <nav style={{ display: 'flex', gap: '4px' }}>
+        <nav aria-label="Kurum alanı gezinmesi" style={{ display: 'flex', gap: '4px' }}>
           {[
             { href: '/kayseritip', label: 'Ana Sayfa' },
             { href: '/kayseritip/staj/ic-hastaliklari-donem4', label: 'İç Hastalıkları D4' },
