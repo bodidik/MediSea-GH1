@@ -13093,3 +13093,60 @@ metinlerinden hiçbiri yok.
 Bu, belgedeki *"içe aktarılmış mı DEĞİL, rotadan ulaşılıyor mu"* kuralının
 paket tarafındaki hâli — ve yeni bir sınır ekliyor: **`"use server"` de bir
 sınırdır, graf yürüyen her ölçüt onu bilmek zorunda.**
+
+### ÇALIŞMA ALANI ÖLÇEKTE SÜRÜLDÜ — başarım sağlam, DARALTMA affordansı yok
+
+Çalışma araçları hep KÜÇÜK tohumlarla ölçülmüştü (birkaç vurgu, bir not).
+Aylarca çalışan bir kullanıcının biriktireceği hacim hiç sınanmamıştı.
+İki ölçekte tohumlandı ve sürüldü.
+
+**320 vurgu / 40 konu:**
+
+| ölçüt | değer |
+|---|---|
+| `/calisma-alanim` | 972 öge · 6.9 ekran · yatay kayma **0** · `h1` 1 |
+| kayıt gösterimi | **konuya göre gruplanmış** — 320 satır değil 40 kart |
+| `/tekrar` | 241 öge · sayaçlar 320/40 doğru · taşma yok |
+
+Gruplama iyi tasarım: 320 vurgu 320 satır olsaydı sayfa kullanılmazdı.
+
+**1600 vurgu / 200 konu (5 kat):**
+
+| ölçüt | değer |
+|---|---|
+| DOM hazır · yükleme | **582 ms · 1 746 ms** |
+| öge sayısı | 3 571 |
+| **uzun görev (longtask)** | **0** |
+| kaydırma tepkisi | **6 ms** |
+| yatay kayma | 0 |
+| depo | 234 KB / 301 anahtar |
+| **belge yüksekliği** | **24 658 px = 27 ekran** |
+
+**Başarım sorunu YOK.** Sayfa 1600 kayıtta bile takılmıyor.
+
+#### Ölçülen sınır: 27 ekran ve daraltacak bir şey yok
+
+Sayfadaki süzgeçler TÜR bazlı ("Tümü · Vurgular · Notlar") ve bir kapsama
+anahtarı ("Dokunmadığın 8 branşı da göster"). **Branşa göre daraltma ya da
+çalışma alanına özgü arama YOK**; başlık yapısı da düz (`h1` + 4 `h2`, konu
+başına `h3` yok). Ekran başına ~7.3 konu düşüyor, yani:
+
+| konu sayısı | ekran |
+|---|---|
+| 40 | ~5.5 |
+| **74** | **~10** |
+| 200 | 27 |
+
+**DEĞİŞTİRİLMEDİ.** Bu bir başarım kusuru değil, ölçek eşiği: bugünkü
+kullanıcıların kaç konuya dokunduğu bilinmiyor ve arama/branş süzgeci eklemek
+ölçülmüş bir kusuru düzeltmek değil, yeni bir tasarım yüzeyi açmak olurdu.
+Eşik burada yazılı; kullanıcı davranışı ölçülebilirse karar veriye dayanır.
+
+**Ölçüm tuzağı — takvimin boşalmasına yine aldanılabilirdi.** `/tekrar`
+ziyaretinden sonra `medisea:review:v1` **0 kayda** düştü. Belgede kayıtlı:
+`pruneStates()` karşılığı vurgusu olmayan yetim kartı siliyor ve benim
+tohumumun anahtar şeması gerçeğinden farklıydı — yani veri kaybı değil,
+TOHUM kusuru. Kartlar zaten vurgulardan üretildiği için sayfa 320 kartı
+doğru gösterdi.
+
+**Ölçüm izi temizlendi:** 301 `medisea:*` anahtarı silindi, kalan **0**.
