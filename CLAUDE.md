@@ -14238,3 +14238,42 @@ elemeden geçirecek bir listeye ihtiyaç duyar. Ürün/güvenlik kararı.
 geri sayım **hiç basılmıyor** (0 eşleşme). Dosyanın kendi notu kuralı yazıyor:
 *"uydurma bir tarih göstermektense hiçbir şey göstermemek doğrudur."* ÖSYM
 takvimi açıklanınca tek yapılacak şey tarihi bu dosyaya yazmak.
+
+### PREMIUM KENDİ İÇİNDE TEMİZ — ama sınav bankasında İKİ TEKRAR SORU var
+
+Benzerlik ölçütü ücretsiz↔ücretli karşılaştırmasında kullanılmıştı; **ücretli
+külliyatın KENDİ İÇİ** hiç ölçülmemişti.
+
+**Premium konu ↔ premium konu: temiz.** 41 konu, gövdeler 75–1933 kelime
+(ortanca 864), parmak izleri 71–1923 — yani ölçüm dejenere değil. **En yüksek
+çift benzerliği %1.5** (`men-sendromlari` ↔ `men1-sendromu`, akraba konular).
+
+Karşıtlık kayda değer: aynı ölçüt ücretsiz külliyatla **%61 ve %52** bulmuştu.
+Yani örtüşme premium'un kendi içinde değil, ÜCRETSİZ tarafla.
+
+#### Soru bankası: 378 soru, 2 gerçek tekrar
+
+| çift | benzerlik | verdikt |
+|---|---|---|
+| `hkp s8` ↔ `vip s9` (ikisi de doğru **C**) | **%41** | **TEKRAR** — aynı senaryo: 72 saatte bir rutin ventilatör devresi değişimi, aynı öğretim noktası |
+| `hkp s9` ↔ `vip s10` (ikisi de **C**) | %30 | **TEKRAR** — enteral beslenme + VİP önleme |
+| `kbh-hiperfosfatemi s1↔s2` | %33 | kusur DEĞİL — evre 3 ↔ evre 5 KBH, kasıtlı karşıtlık |
+| `membranoz-nefropati s3↔s4↔s5↔s6` | %29–32 | kusur DEĞİL — sekonder MN'nin dört ayrı nedeni (sifiliz · NSAİİ · GVHH · CIDP) |
+| `gebelik-tiroid s1↔s2` | %29 | kusur DEĞİL — farklı gebelik haftası ve tablo |
+
+**Ayırt edici: aynı DOSYADAKİ komşular kasıtlı varyant, ÇAPRAZ dosya çiftleri
+tekrar.** İki tekrarın ikisi de HKP↔VİP — örtüşen iki konu ve aynı iki önleme
+sorusu iki sete birden yazılmış. Bedeli mütevazı ama gerçek: iki seti de çözen
+aday aynı soruyu iki kez cevaplıyor.
+
+**İÇERİK DÜZELTİLMEDİ** — soruyu silmek ya da yeniden yazmak editoryal karar.
+
+#### Eşik seçimi ölçümün PARÇASI — ilk eşiğim gerçek tekrarı kaçırdı
+
+İlk tarama `>= %45` eşiğiyle **0 çift** buldu ve "temiz" görünüyordu. Gerçek
+tekrar **%41**deydi. Eşiği %28'e indirip **bandı OKUMAK** gerekti; okumadan
+sayıya bakılsaydı iki tekrar da gözden kaçardı.
+
+Ters yönde de doğru: %28 eşiği 7 çift getirdi ve 5'i kusur değildi. Yani ölçüt
+tek başına ne "temiz" ne "kusurlu" diyebiliyor — **sayı bandı daraltır, kararı
+metni okumak verir.**
