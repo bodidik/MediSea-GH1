@@ -15792,3 +15792,63 @@ CRLF**ti. Yama satır bazlı olduğu için karışık satır sonu üretebilirdi;
 `grep -c` ile CRLF satırı ile toplam satır KARŞILAŞTIRILINCA gerçek durum
 çıktı (943/943 = saf). Satır sonu iddiasını tek bir `grep -q` ile kurma —
 **say ve oranla.**
+
+### GİRDİ ANLAMBİLİMİ TARANDI — üç eksen temiz, dördüncüsünde kendi süpürmemin kapsamı eksikti
+
+Hiç bakılmamış bir eksen: telefonda başucunda kullanılan 130 hesaplayıcının
+girdileri doğru klavyeyi ve doğru ipuçlarını veriyor mu?
+
+**Üçü temiz ve yeniden ölçmeye gerek yok:**
+
+| eksen | ölçüm | sonuç |
+|---|---|---|
+| `inputMode` | 130 araç · 151 `<input>` · 104 sayısal | **104/104 var** |
+| `inputMode` DEĞERİ | 102 `decimal` · 2 `numeric` | doğru — iki `numeric` de YAŞ alanı (tam sayı) |
+| kimlik formları | `/giris` · `/kayit` | `email` · `current-password` · `name` · `new-password` — hepsi geçerli jeton |
+| Enter tuşu veri kaybettiriyor mu | 130 araçta `<form>` **0**; depo genelinde 7 form | 7'sinin 7'si `onSubmit` + `preventDefault` |
+
+İkinci satır önemli: `parseLocaleNumber` virgüllü ondalığı kabul ediyor ve
+`inputMode="numeric"` mobil klavyede virgülü GİZLER — yani yanlış değer
+telefonda ondalık girmeyi imkânsız kılardı. 102 alanda `decimal`, doğru.
+
+Dördüncü satır da bir sınıfın yokluğunu kanıtlıyor: araçlarda hiç `<form>`
+yok, dolayısıyla Enter'a basmak sayfayı yenileyip girilen değerleri
+silemiyor.
+
+**Ölçüt bir kez yanlış negatif verdi:** `/kayit` "autoComplete YOK" çıktı,
+çünkü alanlar döngüyle üretiliyor ve nitelik bir İFADE
+(`autoComplete={k === 'password' ? 'new-password' : k}`). Kaynağı okuyunca
+anahtarların `name`/`email`/`password` olduğu ve üretilen jetonların geçerli
+olduğu görüldü. **Harfi harfine dize arayan bir ölçüt, ifadeyle yazılmış
+niteliği göremez.**
+
+#### Gerçek bulgu: iki sebep kartı ekran okuyucuya DUYURULMUYORDU
+
+Belgede kayıtlı bir tur ~15 araca "sessiz boşluk yerine sebep" kartı eklemiş
+ve **sekizinin** `role="alert"` eksiğini kapatmıştı. Ama o süpürme yalnızca
+KENDİ EKLEDİĞİ kartları hizaladı; daha ÖNCEDEN sebep basan araçlar kapsam
+dışında kaldı.
+
+Ölçüt: koşullu render edilen (`{cond && (…)}`) ve kullanıcıya NEYİN eksik ya
+da geçersiz olduğunu söyleyen kart. 130 araç → **13 araç, 11'inde canlı
+bölge VAR, 2'sinde YOK** (`ktv`, `osmolal-gap`).
+
+`role="status"` DEĞİL `role="alert"`: bölge içerik değişmeden ÖNCE DOM'da
+olmadığı için `status` ilk mesajı kaçırır (belgede kayıtlı kural) ve 11
+emsalin 11'i de `alert` kullanıyor.
+
+| araç | durum | uyarı |
+|---|---|---|
+| `ktv` | boş form | 0 — sonuç da yok |
+| `ktv` | ters alanlar (post ≥ pre) | **çıkıyor** + "DEĞERLENDİRİLEMEDİ" |
+| `ktv` | **negatif** — geçerli seans | **0**, "SAĞLANDI" |
+| `osmolal-gap` | bomboş form | 0 |
+| `osmolal-gap` | kısmi giriş | eksik alanları **adıyla** sayıyor |
+| `osmolal-gap` | **negatif** — tam giriş | **0** |
+
+Ölçüt yeniden sürüldü: **13/13**.
+
+**Aktarılabilir kural, belgede ikinci kez:** bir kalıbı çok dosyaya yayarken
+o kalıbın HER KOPYASINI say — ama süpürmenin kapsamını "benim eklediklerim"
+diye çizersen, kalıbı zaten taşıyan eski kopyalar sessizce dışarıda kalır.
+Ölçüt "ne ekledim" değil **"bugün kaç yerde geçerli"** olmalı.
