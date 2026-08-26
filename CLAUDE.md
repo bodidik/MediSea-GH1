@@ -15253,3 +15253,45 @@ canlı 420 ile tutmadı. Sebep koddaydı: `for` döngüsünün içindeki `if (!u
 return;` bütün fonksiyondan çıkıyor ve dizin taramasını yarıda kesiyordu.
 `continue` yerine `return` yazmak sessizce EKSİK sayıyor — ve sayı tek başına
 makul göründüğü için ancak ikinci bir kaynakla karşılaştırınca fark ediliyor.
+
+### SAHTE YEDEK DEĞER SINIFI SÜPÜRÜLDÜ — tarih tarafı kapandı, kalanı meşru
+
+Uydurma tarih kusurunun biçimi genelleştirildi: **gerçek verinin yerine geçen
+sabit yedek** (`?? "..."` / `|| "..."` ile veri GİBİ görünen bir değer).
+534 dosya tarandı:
+
+| kova | sayı | verdikt |
+|---|---|---|
+| **TARİH gibi yedek** | **0** | sınıf kapandı (düzeltilen tek örnekti) |
+| SAYI gibi yedek | 15 | araç VARSAYILANLARI (`news2` 18/97/120/80/36.8, `sofa` 400/200/75/15) — ekranda GÖRÜNÜR, belgede "beyan edilmiş varsayım" olarak karara bağlı; kalanı API limit parametresi |
+| AD gibi yedek | 42 | çoğu hata etiketi ("Kaydetme hatası", "Yükleme hatası") |
+
+Ad kovasındaki iki aday tek tek bakıldı ve **ikisi de zararsız**: `profil`de
+`|| "Kaptan"` bir marka kişiliği varsayılanı (ad yoksa gösterilen selamlama,
+kullanıcı hakkında iddia değil); `YdusCockpit`teki `|| "Premium Üye"` ise
+`LiteProtected` filigranına giden bir ETİKET — kullanıcıya basılan bir plan
+rozeti değil.
+
+### CI KUYRUĞU: "koşum yok" ile "kapı düştü" AYNI GÖRÜNÜYOR
+
+Deponun doktrini *"gönderdikten sonra `gh run list` ile sonucu GÖR"* diyor.
+Bu tur o kontrol yapıldı ve liste şaşırtıcı çıktı: son dört commit'in HİÇ
+koşumu yoktu, listede bir `failure` ve bir `startup_failure` duruyordu.
+
+Ayrıştırıldı — üçü de kod kusuru DEĞİL:
+
+| gözlem | gerçek sebep |
+|---|---|
+| son commit'lerde koşum yok | **kuyruk gecikmesi** (~20 dk); sonra `in_progress` olarak belirdi |
+| `cancelled` koşumlar | `concurrency: cancel-in-progress` — hızlı ardışık push eskisini iptal ediyor |
+| `failure` (18 sn) | commit'i **yalnızca `CLAUDE.md`** değiştirmiş; kod yok, yani kapı düşüşü olamaz. Log boş → runner |
+| `startup_failure` | runner başlayamadı |
+
+**Ölçüt: bir koşumun `failure` olması kapının düştüğü anlamına gelmez.**
+Ayırt edici üç soru — (1) o commit KOD değiştirdi mi, (2) süre boru hattı için
+makul mü (18 sn'de `npm ci` bitmez), (3) sonraki bir koşum aynı ağacı yeşil
+geçti mi. Bu turda üçü de "altyapı" dedi ve güncel ağaç 16:32'de yeşil geçti.
+
+`cancel-in-progress` ayrıca yapısal bir sonuç doğuruyor: **ara commit'lerin
+tamamlanmış koşumu HİÇ olmayabilir.** Anlamlı ölçüt "her commit yeşil mi"
+değil, **"EN SON commit'in koşumu yeşil mi"**.
