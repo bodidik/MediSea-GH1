@@ -15583,3 +15583,44 @@ bitirdi; `tsc` iki satır ilerideki kodda hata verdi. Belgede aynı tuzak
 `**5 lb**/inç` biçiminde kayıtlı. **Bir yorum metnine desen/yol yazarken
 içinde `*/` olup olmadığına bak** — kalıbı düz metinle anlatmak en ucuz
 çare.
+
+### ÇÖKMEYİ DÜZELTMEK, ARKASINDAKİ SESSİZ BAŞARISIZLIĞI ULAŞILABİLİR YAPTI
+
+Kesişim dersinin en keskin örneği — ve bu kez kesişim **kendi düzeltmemle
+kendi bıraktığım borç** arasındaydı.
+
+Bu oturumda `collectAll` korumaya alınınca depo engelliyken
+`/calisma-alanim` artık çökmüyor. O turda `study-backup.ts`teki 14 korumasız
+çağrı bilerek bırakılmış ve gerekçesi yazılmıştı: *"kullanıcı eylemiyle
+çalışıyorlar ve depo engelliyken o düğmelere basmak zaten anlamsız."*
+
+**Gerekçe artık geçerli değildi:** sayfa açıldığı için yedekleme düğmeleri
+GÖRÜNÜR ve TIKLANABİLİR hale gelmişti.
+
+**Ölçüldü** (canlı, depo fırlatacak şekilde sarmalanıp):
+
+| ölçüt | sonuç |
+|---|---|
+| "Yedek al" tıklaması | **yakalanmamış hata** |
+| öge sayısı | 235 → **235** (hiçbir şey olmuyor) |
+| kullanıcıya mesaj | **yok** |
+| sayfa | ayakta |
+
+Sayfa çökmüyor çünkü **React hata sınırları olay işleyicisi hatalarını
+yakalamıyor** — yani kusur sessiz kalıyor.
+
+Çare iki katmanlı: depo yoksa iki düğme de **devre dışı ve sebebi yazılı**;
+ayrıca `disariAktar` ve `onayla` try/catch ile sarıldı (bileşende zaten bir
+`durum` mesajı varken sessiz kalmak yanlış olurdu).
+
+| ölçüt | sonuç |
+|---|---|
+| depo engelli | iki düğme **disabled**, not görünüyor, sayfa ayakta |
+| **negatif** — depo çalışırken | düğmeler **etkin**, not yok |
+| **negatif** — dışa aktarım gerçekten çalışıyor mu | **294 baytlık geçerli JSON**, tohumlanan vurgu içinde |
+
+**Aktarılabilir kural: bir çökmeyi düzelttiğinde, o çökmenin GİZLEDİĞİ
+yolları da say.** Çökme bir kapıydı; kaldırınca arkasındaki koridor
+yürünebilir oldu. Ve daha keskini: **bir borcu bırakırken yazdığın gerekçe,
+sonraki düzeltmenle geçersizleşebilir** — burada gerekçe "o düğmeye
+basılamaz"dı ve düzeltme tam olarak basılabilir yaptı.
