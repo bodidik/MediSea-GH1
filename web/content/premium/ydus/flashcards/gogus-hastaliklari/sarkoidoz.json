@@ -306,7 +306,7 @@
     },
     {
       "id": "card-51",
-      "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV_1 \\% predicted değeri kaç olmalıdır?",
+      "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV_1 % predicted değeri kaç olmalıdır?",
       "back": "≤ %50.",
       "tag": "Solunum Fonksiyonu"
     },

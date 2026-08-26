@@ -13994,3 +13994,62 @@ Kilit dosyasının yedeği alındı; yükseltme sonrası kapılar düşerse geri
 ULAŞILABİLİRLİĞE göre sırala.** Bu turda iki KRİTİK, bir YÜKSEK'in altına
 düştü — ve ayrımı yapan şey, açığın anlattığı kod yolunun bu depoda çağrılıp
 çağrılmadığını KAYNAKTAN doğrulamak oldu.
+
+### FLASHCARD BÜTÜNLÜĞÜ — yapısal olarak temiz, ama ekranda TERS BÖLÜ basılıyordu
+
+1641 kartın medyan uzunluğu bir dönem ölçülmüştü; **bozuk kart hiç
+aranmamıştı.** 21 set tarandı:
+
+| ölçüt | sonuç |
+|---|---|
+| şema | `id` · `front` · `back` · `tag` — **1641'inin dördü de dolu** |
+| **set içi çift kart `id`** | **0** |
+| çift set `id` | 0 |
+| `front` == `back` | 0 |
+| set içinde aynı `front` | 0 |
+| boş etiket | 0 |
+
+Çift `id` özellikle arandı: "biliyorum" işaretleri `medisea:kartlar:v1:<setId>`
+altında KART KİMLİĞİYLE saklanıyor, yani aynı kimlikten iki kart olsa biri
+işaretlenince öteki de işaretli görünürdü. Yok.
+
+**Tek sinyal: 112 kartta arka yüz 10 karakterden kısa.** İçerikleri okununca
+neredeyse hepsi meşru çıktı — olgu kartının doğru cevabı zaten kısa olur
+(`11q13.`, `Menin.`, `%70`, `7.2 yıl.`, `Ekzon 10.`). Kusur DEĞİL.
+
+#### Ama o okuma bir kaçış artığı gösterdi
+
+Bir arka yüz `\% 45.` diye duruyordu. Ham JSON'da `\%`, `JSON.parse` sonrası
+`\%` — ve `FlashcardPlayer` metni `renderMath` ile basıyor, o da **yalnızca
+`$...$` ayracını** işliyor, kaçış işlemiyor. Yani ters bölü ekrana basılıyordu.
+
+Sınıf bütün içerikte tarandı (`content/` altındaki her JSON, ayrıştırılmış
+dizede kalan ters bölü): **5 alan, 2 dosya, hepsi `\%`** ve hiçbiri `$...$`
+içinde değil. Ücretli içerikte görünür bir artık.
+
+**Düzeltildi (7 yerde) — ve bunu "içerik" saymadım:** `\%` → `%` bir yazım
+kararı değil, LaTeX'ten kalmış bir RENDER ARTIĞI; anlam değişmiyor. Aynı
+gerekçeyle mojibake de bu depoda düzeltilmişti.
+
+| ölçüt | sonuç |
+|---|---|
+| değişen satır | **5** (4 + 1) — hepsi yalnızca `\%` → `%` |
+| kart sayısı | 75 ve 75 — **korundu** |
+| kalan ters bölü | **0** |
+| `soru-denetim` (CI kapısı) | yapısal kusur yok |
+
+**Yazmadan ÖNCE doğrulama betiğe gömüldü:** yeni içerik `JSON.parse`tan
+geçiyor ve kart sayısı karşılaştırılıyor; ikisinden biri tutmazsa dosya
+yazılmıyor. Bu gerekliydi — ilk deneme tam da orada durdu (aşağıda).
+
+**TERS BÖLÜ TUZAĞI BU TURDA İKİ KEZ VURDU.** Belgede kayıtlı kural
+("kaçış taşıyan betiği kabuk dizesiyle yazma") iki kez ihlal edildi:
+
+1. `node -e` içindeki `/\[^ntr"\\/bfu]/` regex'i bozuldu → `SyntaxError`.
+2. Python heredoc'ta `'\\%'` tek ters bölüye indi; değiştirme ham dosyadaki
+   `\%`in İKİNCİ ters bölüsünü silip **geçersiz JSON** üretti.
+
+İkincisi tehlikeliydi ve yalnızca **yazma öncesi `JSON.parse` kontrolü**
+sayesinde dosyaya inmedi (`git diff` boştu, doğrulandı). Betik Write ile
+yeniden yazılıp ters bölü `String.fromCharCode(92)` ile kuruldu — kaynağa hiç
+ters bölü yazılmadı.
