@@ -15111,3 +15111,51 @@ ayrıca doğrula"* kuralının negatif kontrol tarafındaki hâli.
 hemen ardından dispatch edilirse henüz bağlı olmayabiliyor — ilk koşumda
 "ilk Tab yutulmadı, ikincisi yutuldu" gibi görünen sonuç bundandı. Bir olay
 işleyicisini ölçmeden önce bağlanmasını bekle.
+
+### SİTE VERİSİ ENGELLİYKEN İKİ ÇALIŞMA SAYFASI ÇÖKÜYORDU
+
+Hiç ölçülmemiş bir dayanıklılık ekseni: **`localStorage` ERİŞİLEMEZSE ne
+oluyor?** Chrome'da "tüm çerezleri engelle" ve kimi gizli kip kurulumlarında
+`localStorage`a **dokunmak bile** `SecurityError` fırlatıyor — bozuk veri
+değil, erişimin kendisi yok.
+
+**Kaynak taraması:** 533 dosyada 68 `localStorage` çağrısı, **18'i try
+DIŞINDA** — 14'ü `study-backup.ts` (kullanıcı eylemi), 4'ü `study-index.ts`
+(**yükleme yolu**). Kusur `collectAll`daydı: `readIndex`/`touchIndex`/`purge`
+korumalıydı ama `localStorage.length`, `.key(i)` ve `.getItem()` değildi.
+
+**Ölçüldü (canlı):**
+
+| yüzey | depo engelliyken |
+|---|---|
+| `/calisma-alanim` | **HATA SINIRI**, `h1` boş |
+| `/tekrar` | **HATA SINIRI**, `h1` boş |
+| konu sayfası | **AYAKTA** — `ReadingTools` zaten korumalı |
+
+**Ölçüm yöntemi kayda değer:** `Storage.prototype`in `getItem`/`setItem`/
+`removeItem`/`key`/`length` üyeleri fırlatacak şekilde sarmalanıyor, sonra
+**YUMUŞAK gezinmeyle** hedefe gidiliyor. Sert gezinme JS bağlamını sıfırlar
+ve override kaybolur — ilk denemede tam bu oldu ve ölçüm hiçbir şey sınamadı.
+Bağlantının yumuşak olup olmadığı `window` üzerine konan bir işaretle ayrıca
+doğrulandı.
+
+**Sessizce boş liste dönmek YETMEZ.** O zaman sayfa "Henüz not almadın" diyor
+— yani **yanlış sebep** bildiriyor, oysa kayıtlar duruyor ve yalnızca
+okunamıyor. `depoKullanilabilir()` eklendi; iki sayfa da durumu adıyla
+söylüyor: *"Tarayıcın bu site için veri saklamayı engelliyor… kayıtların geri
+gelir — silinmediler."*
+
+| ölçüt | sonuç |
+|---|---|
+| depo engelli — sayfalar | **AYAKTA**, doğru uyarı |
+| depo engelli — yanlış sebep basılıyor mu | **hayır** |
+| **negatif** — depo çalışırken uyarı | çıkmıyor |
+| **negatif** — depo çalışırken veri | tohumlanan kayıt görünüyor ("1 vurgu" + Sil) |
+
+Bayrak **efektte** okunuyor, render sırasında değil: sunucuda `localStorage`
+yok ve doğrudan çağırmak hidrasyon uyuşmazlığı üretirdi.
+
+**Kalan, DEĞİŞTİRİLMEYEN:** `study-backup.ts`teki 14 korumasız çağrı. Onlar
+kullanıcı eylemiyle (dışa aktar / içe aktar) çalışıyor ve depo engelliyken o
+düğmelere basmak zaten anlamsız; ayrıca yedekleme yüzeyi artık uyarının
+altında görünüyor. Ölçüldü, gerekçesi yazıldı.
