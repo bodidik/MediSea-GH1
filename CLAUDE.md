@@ -14664,3 +14664,69 @@ Var olmayan bir yola vurgu + not + dizin kaydı tohumlandı (hedef gerçekten
 Yani veri kaybı yok ve çıkmaz yok; kullanıcı ölü kaydı kendisi kaldırabiliyor.
 Kaydı otomatik silmek YANLIŞ olurdu — belgedeki kural gereği konteyneri
 bulunamayan vurgu silinmez (konu geçici olarak da yok olabilir).
+
+### KENDİ BASKI KURALIM, AYNI OTURUMDA EKLEDİĞİM İÇİNDEKİLERİ SÜPÜRÜYORDU
+
+Baskı stil sayfası (`@media print`) bu oturumda eklendi ve **doğrulanmamıştı**.
+Doğrulanınca yan etki çıktı: kural `nav` seçiyor, aynı oturumda eklenen
+içindekiler bloğu da bir `<nav>`.
+
+Kaynaktaki yorum kararı ZATEN kaydediyordu — *"İçindekiler (kâğıtta çapa işe
+yaramaz)"* — yani bilinçliydi. **Ama gerekçe eksikti:** bir TOC'un kâğıttaki
+değeri bağlantı değil **TASLAK**.
+
+**Karar zevkle değil SAYIYLA verildi** (canlıda ölçüldü):
+
+| ölçüt | değer |
+|---|---|
+| TOC yüksekliği | **376 px** |
+| belge yüksekliği | 12 272 px |
+| **oran** | **%3.06** |
+| TOC satırı | 12 bölüm adı |
+
+30 ekranlık bir klinik konuyu kâğıda basan kullanıcı, belgenin %3'ü karşılığında
+bütün taslağı kaybediyordu.
+
+Kural daraltıldı: `nav:not([data-baskida-goster])`, iki yüzeydeki TOC de
+işaretlendi (açık konu sayfası + premium konu sayfası).
+
+**Doğrulama ÜRETİLMİŞ ÇIKTIDA ve negatif kontrollü:**
+
+| ölçüt | sonuç |
+|---|---|
+| TOC'lu sayfada `<nav>` | 2 (branş şeridi + TOC) |
+| muafiyet alan öge | **tam 1** — ve `aria-labelledby=icindekiler-basligi` |
+| **negatif** — gezinme şeridi muafiyet aldı mı | **hayır** |
+| **negatif** — TOC'suz sayfa (`addison`) | muafiyet **0** |
+
+Premium konu sayfaları kapı arkasında olduğu için önceden ÜRETİLMİYOR;
+oradaki muafiyet derlenmiş parçada görünüyor ama **render edilerek
+doğrulanmadı** ve "ölçüldü" DENMİYOR.
+
+**Aktarılabilir kural: geniş bir seçici yazdığında, AYNI OTURUMDA eklediğin
+ögelerin de o seçiciye düşüp düşmediğini say.** Yorumda kararı kaydetmek
+yetmiyor — burada karar kayıtlıydı ve yine de yanlıştı, çünkü gerekçe
+ögenin *işlevini* değil *mekanizmasını* değerlendiriyordu.
+
+### Görünürden gizliye giden bağlantı — üç kanal tarandı, kullanıcı yolu YOK
+
+`hidden` bir içerik kararı: konu listelerden, site haritasından ve önceden
+üretilen sayfalardan çıkıyor, bu oturumda `noindex` de kondu. Ama sayfa hâlâ
+200 dönüyor — yani bir bağlantı oraya götürürse kullanıcı **yayımlanmamış
+içeriğe** düşer. Üç kanal ayrı sayıldı (çareleri farklı olurdu):
+
+| kanal | sonuç |
+|---|---|
+| içerik gövdesindeki elle yazılmış bağlantı | **0** |
+| `ilgili-index.json` | **0** |
+| görünür konunun **gizli ebeveyni** | 18 (5 benzersiz hub) |
+
+Üçüncü satır ilk bakışta kusur gibi ama **sayfa o ebeveyne bağlantı BASMIYOR**
+— canlıda ölçüldü: `parent` alanı veriye konuyor, render eden hiçbir yer yok.
+Bu 18 konu zaten `asili-denetim`in "ebeveyn var ama `hidden`" kovasında ve
+branş sayfasında "Diğer Konular" altında listeleniyor.
+
+Gizli hub'ın kendisi ölçüldü: **`noindex, follow`** (bu oturumun düzeltmesi
+ayakta) ve kendi görünür çocuklarına bağlanıyor. Yani hiyerarşi tek yönlü —
+aşağı bağlanıyor, yukarı bağlanmıyor — ve kullanıcıyı yayımlanmamış içeriğe
+götüren bir yol yok.
