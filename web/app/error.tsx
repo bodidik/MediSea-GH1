@@ -37,14 +37,25 @@ export default function KokHata({
   }, [error]);
 
   return (
-    <div className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
+    /**
+     * <main>: bu sınır KÖK düzeyinde, yani AppShell'in `<main id="icerik">`
+     * sarmalayıcısının ÜSTÜNDE devreye giriyor ve onu değiştiriyor.
+     * Ölçüldü (üretim derlemesi + gerçek fırlatan rota): hata ekranında
+     * main 0 · nav 0 · header 0 · h1 0 idi — sayfada tek bir landmark ve
+     * tek bir üst başlık yoktu.
+     *
+     * Bölüm sınırları (calisma-alanim, tekrar, guidelines) AppShell'in
+     * İÇİNDE çiziliyor; onlara <main> EKLENMEDİ, yoksa belgede kayıtlı
+     * "çift main landmark" kusuru oluşurdu.
+     */
+    <main className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
       <div className="mx-auto max-w-2xl rounded-3xl border border-slate-200 bg-white p-10 text-center sm:p-14">
         <div className="mb-3 text-4xl" aria-hidden="true">
           ⚓
         </div>
-        <h2 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
+        <h1 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
           Bu sayfa açılamadı
-        </h2>
+        </h1>
         <p className="mx-auto mb-6 max-w-md text-sm leading-relaxed text-slate-600">
           Bizim tarafımızda bir aksaklık oldu. Çalışman ve notların yerinde
           duruyor — bu sayfayı yeniden denemen yeterli.
@@ -70,6 +81,6 @@ export default function KokHata({
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

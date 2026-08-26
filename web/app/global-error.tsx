@@ -79,6 +79,17 @@ export default function GenelHata({
             Bizim tarafımızda bir aksaklık oldu. Çalışman ve notların
             tarayıcında duruyor, kaybolmadı.
           </p>
+          {/*
+            ÇIKIŞ YOLU ŞART. Ölçüldü: bu kartta bağlantı sayısı SIFIRDI —
+            yalnızca "Tekrar dene" vardı. Hata kalıcıysa (yeniden deneme
+            aynı hataya düşüyorsa) kullanıcı çıkmazda kalıyordu; deponun
+            hata kartı kuralı "her kartta geri dönülecek bir bağlantı".
+
+            <Link> DEĞİL düz <a>: bu sınır KÖK DÜZEN çizilemediğinde
+            devreye giriyor, yani istemci yönlendiricisi sağlam sayılamaz.
+            Tam sayfa yüklemesi tek güvenilir kaçış.
+          */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center" }}>
           <button
             onClick={reset}
             style={{
@@ -94,6 +105,27 @@ export default function GenelHata({
           >
             Tekrar dene
           </button>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages --
+              kural TAM SAYFA YÜKLEMESİNİ önlemek için var; burada yükleme
+              KASITLI. Bu sınır kök düzen çizilemediğinde devreye giriyor,
+              yani istemci yönlendiricisi ve bozuk istemci durumu sağlam
+              sayılamaz; yumuşak gezinme aynı bozuk ağaca geri dönebilir. */}
+          <a
+            href="/"
+            style={{
+              background: "#fff",
+              color: "#1a3a6b",
+              border: "1px solid #b8cfe8",
+              borderRadius: "999px",
+              padding: "10px 24px",
+              fontSize: "13px",
+              fontWeight: 700,
+              textDecoration: "none",
+            }}
+          >
+            Ana sayfaya dön
+          </a>
+          </div>
         </div>
       </body>
     </html>

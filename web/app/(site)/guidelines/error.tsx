@@ -28,9 +28,9 @@ export default function KilavuzHatasi({
     <div className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
       <div className="mx-auto max-w-2xl rounded-3xl border border-rose-200 bg-white p-10 text-center sm:p-14">
         <div aria-hidden="true" className="mb-3 text-4xl">⚠️</div>
-        <h2 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
+        <h1 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
           Kılavuz yüklenemedi
-        </h2>
+        </h1>
         <p className="mx-auto mb-6 max-w-md text-sm leading-relaxed text-slate-500">
           Sayfa açılırken bir sorun çıktı. Sorun bizde — birkaç saniye sonra
           yeniden denemek çoğu zaman yetiyor.
