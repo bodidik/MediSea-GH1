@@ -14553,3 +14553,54 @@ eşitliyor; o yüzden silme doğru çalışmaya devam ediyor.
 aştı (zamanlayıcılar kısılıyor). Kurulum yarıya indirildi — **üst düzey sayfa
 A, tek iframe B** — ve ölçüm rahatça tamamlandı. `storage` olayı ayrı
 gezinme bağlamları arasında tetiklendiği için bu kurulum geçerli.
+
+#### Sınıf süpürüldü: SEKİZ yazıcının yalnızca İKİSİ kırılgandı
+
+Çapraz sekme kaybı bulunduktan sonra depoya yazan bütün yollar tarandı.
+**Ayırt edici tek soru: yazıcı depoyu OKUYUP mu yazıyor, yoksa BELLEKTEKİ
+durumu mu?**
+
+| yazıcı | anahtar | kalıp | çapraz sekme |
+|---|---|---|---|
+| `touchIndex` | `index:v1` | `readIndex()` → değiştir → yaz | **güvenli** |
+| `grade()` | `review:v1` | `readStates()` → değiştir → yaz | **güvenli** |
+| günlük | `log:v1` | `readLog()` → değiştir → yaz | **güvenli** |
+| `pruneStates` | `review:v1` | `readStates()` → değiştir → yaz | **güvenli** |
+| `study-backup` | altısı birden | zaten tam yazma (kullanıcı onaylı) | tanım gereği |
+| `ReadingHint` | `hint:…` | tek bool | önemsiz |
+| **`ReadingTools`** | `marks:v2:<yol>` | **bellekteki liste** | **KIRILGANDI → düzeltildi** |
+| **`FlashcardPlayer`** | `kartlar:v1:<set>` | **bellekteki küme** | **KIRILGANDI → düzeltildi** |
+
+`NotePanel` ayrı bir durum: tek bir belge yazıyor (`{text, strokes}`) ve
+`dirty` bayrağı olmadan hiç yazmıyor. İki sekmede aynı notu düzenlemek her
+editörde son-yazan-kazanır; birleştirme metin için anlamlı değil.
+**Değiştirilmedi.**
+
+#### Flashcard düzeltmesi — birleştirme YANLIŞ olurdu
+
+`ReadingTools` ile aynı çare (`storage` dinleyicisi) ama iki farkla:
+
+- **Birleştirme reddedildi:** `toggleBilinen` işareti GERİ DE alabiliyor, yani
+  depodakiyle birlik almak kaldırılan işareti diriltirdi. (Belgede kayıtlı
+  "kart işaretlerinde birleşim gerekir" kuralı YEDEK BİRLEŞTİRME içindi —
+  canlı sekme senkronunda geçerli değil.)
+- **İÇERİK KARŞILAŞTIRMASI ŞART:** yazma etkisi `bilinen`e bağlı. Aynı kümeyi
+  yeni bir `Set` kimliğiyle koymak yazma → `storage` → öteki sekme → yazma…
+  döngüsü kurardı. Değişmemişse `prev` döndürülüyor.
+
+**Doğrulama (geçici rota, gerçek kart verisi, iki gezinme bağlamı):**
+
+| ölçüt | sonuç |
+|---|---|
+| A `card-2` işaretler, B `card-1` işaretler | **`["card-2","card-1"]`** — A hayatta |
+| **negatif** — A işareti GERİ ALIR | `["card-1"]`, **1.5 sn boyunca sabit** — dirilme yok |
+| **negatif** — B'nin arayüzü | aynı kart **işaretsiz** görünüyor — senkron |
+| **negatif** — ping-pong | 2.2 sn'de ek yazma **0** |
+
+Geçici rota silindi (`zz-olcum` izi 0), `typecheck` temiz.
+
+**Ölçüm notu:** iki tur boyunca depo "beklenmedik" göründü ve bir an ikinci
+bir kusur sanıldı. Sebep tahmin değil SAYIMDI: her çağrı bir TOGGLE yapıyor
+ve pariteyi kaybetmiştim. Adım adım (tıklama öncesi/300/700/1500 ms) ölçünce
+davranış tutarlı çıktı. **Durum makinesini test ederken her adımın hangi
+yönde çevirdiğini yaz** — yoksa kendi testin sana kusur uydurur.

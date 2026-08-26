@@ -132,6 +132,48 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     } catch {}
   }, [bilinen, depoAnahtari]);
 
+  /**
+   * BAŞKA SEKME yazdıysa belleği tazele.
+   *
+   * Yukarıdaki etki bellekteki kümeyi OLDUĞU GİBİ yazıyor. Aynı set iki
+   * sekmede açıksa ikinci sekmenin kümesi kurulduğu andan kalma olur ve
+   * birincinin işaretlerini siler. Aynı şekil `ReadingTools`ta ÖLÇÜLDÜ ve
+   * gerçek veri kaybı verdi (sekme A vurgu yapar, sekme B onu siler).
+   *
+   * BİRLEŞTİRME YANLIŞ OLURDU: `toggleBilinen` işareti geri de alabiliyor,
+   * yani depodakiyle birlik almak kaldırılan işareti diriltirdi. Doğru olan
+   * gerçeğe eşitlemek.
+   *
+   * İÇERİK KARŞILAŞTIRMASI ŞART: aynı kümeyi yeni bir `Set` kimliğiyle
+   * yazmak yazma etkisini tetikler, o da öteki sekmede `storage` üretir ve
+   * iki sekme birbirini sonsuza kadar tetikler. Değişmemişse `prev`
+   * döndürülüyor — render olmuyor, yazma olmuyor.
+   */
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      // key === null -> depo tümden temizlendi (yedekten "üzerine yaz")
+      if (e.key !== null && e.key !== depoAnahtari) return;
+      try {
+        const raw = localStorage.getItem(depoAnahtari);
+        const gecerli = new Set(cards.map((c) => c.id));
+        const okunan: unknown = raw ? JSON.parse(raw) : [];
+        const yeniKume = new Set(
+          (Array.isArray(okunan) ? okunan : []).filter(
+            (id): id is string => typeof id === "string" && gecerli.has(id)
+          )
+        );
+        setBilinen((prev) => {
+          if (prev.size === yeniKume.size && [...yeniKume].every((id) => prev.has(id))) return prev;
+          return yeniKume;
+        });
+      } catch {
+        /* bozuk kayıt — mevcut durumu koru */
+      }
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, [depoAnahtari, cards]);
+
   const card: Card | undefined = deck[index];
   const total = deck.length;
 
