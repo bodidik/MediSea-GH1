@@ -15392,3 +15392,46 @@ KESİŞİMLERİNİ ayrıca ölç.** Bu turda iki düzeltme de tek başına doğr
 kusur yalnızca ikisi bir araya gelince ortaya çıkıyordu. Aynı ders bu
 oturumda bir kez daha yaşandı: baskı kuralının `nav` seçicisi, yine bu
 oturumda eklenen içindekiler bloğunu süpürüyordu.
+
+### AYNI ADLI İKİ İLGİLİ BAĞLANTISI — ve üç ölçüm artefaktı
+
+Hiyerarşi bütünlüğü ilk kez tarandı ve **yapısal taraf temiz**: kendi kendine
+ebeveyn **0**, ebeveyn döngüsü **0**, ilgili listesinde çözülemeyen hedef
+**0**, gizli konuya bağ **0**.
+
+Gerçek kusur AD tarafındaydı: bir ilgili bağlantısının görünür adı
+`başlık` + (branş farklıysa) branş etiketi. İki kayıt bu adı paylaşıyorsa
+kullanıcı onları ayırt edemiyor ve ekran okuyucuda **aynı adlı iki bağlantı
+farklı yere gidiyor**.
+
+Ölçüldü: **408 ilgili listesinin 4'ünde** çakışma (hepsi hematoloji). Kökleri
+`SENDE-KALANLAR`daki içerik kayıtları — MDS başlıklı iki dosya ve iki ayrı
+"Demir Eksikliği" slug'ı. **İçeriğe dokunulmadı**; ayrım sunum tarafında slug
+ile veriliyor.
+
+| ölçüt | sonuç |
+|---|---|
+| çakışan liste | 4 / 408 |
+| düzeltme sonrası çakışma | **0** |
+| **negatif** — etiket eklenen sayfa | **tam 4** (8 etiket), içerik taramasının öngördüğüyle birebir |
+| **negatif** — çapraz branş vakası | görünümü **değişmedi** (branş etiketi zaten ayırıyordu) |
+
+#### ÜÇ ÖLÇÜM ARTEFAKTI ÜST ÜSTE — hepsi "kusur" gibi göründü
+
+Bu tur ölçüt kusurunun ne kadar kolay kusur uydurduğunun ders niteliğinde
+örneği oldu:
+
+| gördüğüm | gerçek |
+|---|---|
+| "1196 hedefin 1196'sı çözülemiyor" | indeks `{brans, slug, baslik}` **nesnesi** tutuyor, ben `brans/slug` dizesi arıyordum |
+| "2 konu kendine bağlanıyor" | `brans`ı atıp yeniden çözdüğüm için aynı-branş tercihi kendine düşüyordu |
+| "iki bağlantının metni birebir aynı" (çapraz branş) | metni **40 karakterde kırpmıştım**; branş alt etiketi kırpmanın ötesindeydi |
+
+Üçü de aynı kökten: **veriyi kendi varsayımıma göre yeniden yorumlamak.**
+Ölçüt indeksin GERÇEK şeklini okuyunca üç sahte bulgu da kayboldu ve geriye
+tek, dar, gerçek kusur kaldı.
+
+Yan sonuç: geçen turda "ilgili-index ile gizliye bağ 0" diye yazdığım sonuç
+**dayanaksızdı** — o ölçüm de aynı çözümleme hatasını taşıyordu ve 0'ı
+rastlantıyla buluyordu. Bu turda doğru çözümlemeyle yeniden ölçüldü ve
+gerçekten 0 çıktı.
