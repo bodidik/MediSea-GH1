@@ -57,9 +57,33 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
             overflow: 'hidden',
             background: '#fafcff',
           }}>
-            {/* Kategori başlığı — tıklanabilir */}
+            {/**
+             * Kategori başlığı — tıklanabilir akordeon tetikleyicisi.
+             *
+             * ÖLÇÜLDÜ (canlı): bu sayfada `h1` 1 ama **`h2` 0**du ve altı
+             * kategori tetikleyicisinin hiçbirinde `aria-expanded` YOKTU.
+             * Yani ekran okuyucuyla gezen kullanıcı ne başlık yapısıyla
+             * gezinebiliyor ne de bir bölümün açık mı kapalı mı olduğunu
+             * duyabiliyordu — düğme her iki durumda da aynı şeyi söylüyordu.
+             *
+             * Standart akordeon kalıbı: `<h2><button aria-expanded
+             * aria-controls>` + panelde eşleşen `id`.
+             *
+             * `<h2>` yalnızca ANLAM için: `globals.css` h2'ye serif yazı tipi
+             * ve 24px üst/alt boşluk veriyor (belgede kayıtlı tuzak), satır içi
+             * stil boyut/ağırlık/tipi devralarak hepsini geri alıyor —
+             * görünüm birebir aynı kalıyor.
+             */}
+            <h2 style={{
+              margin: 0,
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
+              fontWeight: 'inherit',
+            }}>
             <button
               onClick={() => toggle(kat.id)}
+              aria-expanded={!!acikMi}
+              aria-controls={`kategori-panel-${kat.id}`}
               style={{
                 width: '100%',
                 padding: '0.9rem 1.25rem',
@@ -86,7 +110,9 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                 <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
                   {hazirSayisi}/{kat.konular.length} konu
                 </span>
-                <span style={{
+                {/* Süsleme oku: durumu artık `aria-expanded` söylüyor, glif
+                    ekran okuyucuda saf gürültü. */}
+                <span aria-hidden="true" style={{
                   fontSize: '14px',
                   color: '#4a6a8a',
                   transform: acikMi ? 'rotate(180deg)' : 'rotate(0deg)',
@@ -97,10 +123,11 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                 </span>
               </div>
             </button>
+            </h2>
 
             {/* Konular — accordion */}
             {acikMi && (
-              <div style={{ padding: '0.5rem' }}>
+              <div id={`kategori-panel-${kat.id}`} style={{ padding: '0.5rem' }}>
                 {kat.konular.map((konu) => (
                   <Link
                     key={konu.id}

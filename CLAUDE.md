@@ -12648,3 +12648,41 @@ görünüyor, yani okuyucu çalışıyor ve sayfalar gerçekten sessiz.
 Aynı taramada `mna` düzeltmesi canlıda bir kez daha doğrulandı: basılı düğme
 **0**, büyük metin **"–"**, bant **"6 soru daha yanıtlanmalı"** — ve araç
 kabuğu değişiklikleri de yerinde (📚 Kütüphane bağlantısı, ARACI PAYLAŞ).
+
+### KAPISIZ PREMIUM SAYFALAR TARANDI — akordeon durumu ekran okuyucuya hiç bildirilmiyordu
+
+Kapı ARKASINDAKİ beş motor süpürülmüştü; **kapısız** premium sayfaları
+(tanıtım · pano · profil · liderlik · 9 branş) başlık ve taşma ekseninde hiç
+ölçülmemişti. Dokuzu canlıda tarandı ve künye tarafı temiz: **hepsi 200,
+`h1` 1, `main` 1**, gerçek gövde (6.5–23 KB).
+
+Ama branş sayfalarında **`h2` sayısı 0** çıktı — 6–14 kategori listeleyen bir
+sayfada hiçbir başlık yapısı yok. Kaynağa bakılınca üç boşluk daha göründü:
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| kategori başlığı `h2` içinde | **hayır** (`h2` 0) | **evet** (`h2` **6**) |
+| `aria-expanded` | **YOK** — açık/kapalı durumu hiç bildirilmiyordu | var, tıklamayla `true`↔`false` |
+| `aria-controls` + panel `id` | YOK | var, açıkken çözülüyor |
+| süsleme oku `▾` | ada karışıyordu | `aria-hidden` |
+
+İkinci satır en ağırı: ekran okuyucuyla gezen kullanıcı için düğme **açıkken
+ve kapalıyken aynı şeyi söylüyordu**, yani akordeonun durumu görünmüyordu.
+
+**Görünüm DEĞİŞMEDİ ve bu ölçüldü:** `<h2>` yalnızca anlam için eklendi;
+`globals.css` h2'ye serif ve 24px boşluk veriyor (belgede kayıtlı tuzak),
+satır içi stil boyut/ağırlık/tipi devralarak geri alıyor. Ölçüm: yazı tipi
+**system-ui**, boyut **16px**, üst boşluk **0px**.
+
+**Erişilebilir ad temiz:** emoji zaten `aria-hidden`di. İlk ölçümde emojinin
+adda görünmesi belgede kayıtlı `textContent` tuzağıydı — ad, `aria-hidden`
+alt ağaçları çıkarılarak hesaplandığında "Tiroid Hastalıkları…" çıkıyor.
+
+**Doğrulama:** 320 ve 1100px'te kayma **0**, `h2` 6, tetikleyici 6, dokunma
+hedefi 88/60px. Ölçüt kör değil — 900px'lik tohum eklenince 320px'te kayma
+0 → **595**.
+
+**Not edilen, düzeltilmeyen:** erişilebilir ad başlık ve açıklamayı boşluksuz
+birleştiriyor ("Tiroid HastalıklarıHipotiroidizm…"). Belgede kayıtlı React
+metin birleşmesi; anlaşılırlığı bozmuyor, araya metin düğümü eklemek görsel
+etki riski taşıyor. Ölçüldü, kaydedildi.
