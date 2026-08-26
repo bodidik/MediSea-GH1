@@ -13791,3 +13791,45 @@ Birincisi gerçek bir artık: slug bir ilaç vaat ediyor, gövde onu hiç anmıy
 **İÇERİK DÜZELTİLMEDİ** ve slug için ek bir gerekçe var: dosya adı bir ADRES;
 değiştirmek yönlendirme borcu doğurur (belgede kayıtlı karar). Liste burada,
 karar içeriğin sahibinin.
+
+### ⚠ İKİ PREMIUM KONU ÜCRETSİZ SÜRÜMÜYLE ÖRTÜŞÜYOR — biri ücretsizden KÜÇÜK
+
+Hiç sorulmamış bir soru: **ücretli içerik, ücretsiz içeriğin kopyası mı?**
+Aynı benzerlik yöntemi iki külliyat ARASINDA sürüldü (419 ücretsiz ↔ 40
+ücretli konu).
+
+**Sonuç iki aykırı, gerisi temiz:** eşiği (0.20) aşan 2 konu; üçüncü sıradaki
+benzerlik **%3.1**. Yani genel bir kopyalama kalıbı YOK.
+
+| ücretli konu | örtüşme | ücretsiz karşılık | ücretsiz sürüm |
+|---|---|---|---|
+| `endokrinoloji/men1-sendromu` | **%61** | aynı slug | **GÖRÜNÜR** (`index, follow`, canlı 200) |
+| `endokrinoloji/feokromositoma` | **%52** | `feokromositoma-ve-paraganglioma` | GİZLİ (`noindex`) ama **canlı 200** |
+
+**İki vaka AYNI ŞEY DEĞİL ve ayrımı sayılar veriyor:**
+
+| ölçüt | MEN1 | Feokromositoma |
+|---|---|---|
+| ücretli gövde | 9 605 krk | 15 367 krk |
+| ücretsiz gövde | 9 696 krk | **19 934 krk** |
+| oran | **0.99×** | **0.77×** |
+| ücretsiz sürüm aranabilir mi | **EVET** | hayır (gizli) |
+| ücretli tarafın EK değeri | 3 soru · **75 kart** · 5 vaka adımı | **1 soru · 2 vaka adımı** · kart yok |
+
+- **MEN1**: gövde ücretsiz sürümle aynı boyutta ve %61 örtüşüyor, üstelik
+  ücretsiz sürüm arama motoruna AÇIK. Ama ücretli tarafın gerçek katma değeri
+  gövde değil **75 flashcard**; yani "para verip aynı şeyi almak" demek
+  yanlış olur.
+- **Feokromositoma**: ücretsiz sürüm gizlenmiş (içerik premium'a taşınmış
+  gibi görünüyor) — ama **gizli ücretsiz sürüm ücretliden %30 DAHA BÜYÜK**
+  ve adresi çalışıyor. Ek değer de ince: 1 soru, 2 vaka adımı.
+
+**İÇERİK DÜZELTİLMEDİ** — ne yazılacağı ve neyin ücretli olacağı içerik/ürün
+kararı. Ölçüm, kapsam ve ayrım burada.
+
+**Ölçüm notu — alan adı ÜÇÜNCÜ kez tuzak kurdu.** Flashcard sayısı ilk
+ölçümde **0** çıktı; dizi alanının adı `kartlar` DEĞİL **`cards`**. Yani
+"premium tarafın ek değeri yok" diye yanlış bir sonuç raporlanabilirdi.
+Anahtarlar bastırılınca 75 kart göründü. Bu depoda şema iki dilli ve
+karışık (`sorular`/`questions`, `kartlar`/`cards`, `adimlar`/`stages`) —
+**bir sayıyı raporlamadan önce alanın gerçekten var olduğunu gör.**
