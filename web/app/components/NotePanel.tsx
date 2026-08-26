@@ -751,7 +751,13 @@ export default function NotePanel() {
                   placeholder={
                     "Bu sayfaya dair notların…\n\nVurgu araç çubuğundaki 🗒 düğmesiyle seçtiğin metni buraya alıntı olarak gönderebilirsin."
                   }
-                  className="flex-1 resize-none overscroll-contain px-4 py-3 text-[13px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-300"
+                  /* ODAK HALKASI: `outline-none` varsayılan halkayı kaldırıyor ve
+                     burada yerine hiçbir şey konmamıştı — odakta tek işaret imleçti.
+                     Ölçüldü: `outline-none` taşıyan 146 etkileşimli ögenin 145'i
+                     deponun halka kalıbını taşıyor, bu sonuncusu istisnaydı.
+                     `ring-inset`: alan panel gövdesini kapladığı için dıştan halka
+                     kenarlara taşardı. */
+                  className="flex-1 resize-none overscroll-contain px-4 py-3 text-[13px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-inset focus:ring-blue-700"
                 />
                 <footer className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 py-2">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
