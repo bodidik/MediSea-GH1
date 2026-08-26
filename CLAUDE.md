@@ -13730,3 +13730,64 @@ bu yüzden sahteydi ve yalnızca kaynağı OKUMAK ayırt etti.
 gerçekten reddedildiğini görmenin yolu onu göndermek; reddedilmiyorsa test
 üretim veritabanına YAZAR. Bu oturumun kuralı "üretim veritabanına yazma"
 olduğu için ölçüm kaynaktan yapıldı ve "davranışla doğrulandı" DENMİYOR.
+
+### İÇERİK KAZASI SINIFI: ÜÇ ÖLÇÜT DENENDİ, İKİSİ ÇÜRÜDÜ — ve çürüme veriyle gösterildi
+
+Belgede kayıtlı iki gerçek kaza var (`hiperkalsemi-ve-hiperparatiroidi.json`
+içinde asit-baz, `akut-lenfoblastik-losemi-all.json` içinde MDS) ve **ikisi de
+ÇİFT BAŞLIK sinyaliyle**, yani rastlantıyla bulunmuştu. Sınıfı doğrudan arayan
+bir ölçüt hiç denenmemişti. Üç ölçüt denendi.
+
+**1. GÖVDE BENZERLİĞİ (çalışıyor, depoya alındı).** 5-kelimelik parmak izleri +
+Jaccard. 428 konu · eşik 0.35 · **4 çift** — dördü de zaten bilinen çift-başlık
+kayıtları:
+
+```
+%100  endokrinoloji/kalsiyum-homeostazi-fizyoloji ↔ kalsiyum-metabolizmasi-ana [gizli]
+%100  endokrinoloji/lipid-ezetimibe ↔ kardiyoloji/lipid-ezetimibe
+% 99  hematoloji/demir-eksikligi-anemisi ↔ demir-eksikligi
+% 77  endokrinoloji/erkek-osteoporozu-ana-sayfa ↔ erkek-osteoporozu-testosteron
+```
+
+Yeni kaza yok. `scripts/benzer-govde-denetim.cjs` olarak kaydedildi — kopya
+içerik sınıfı için çalışan tek ölçüt bu.
+
+**2. BAŞLIK–gövde tutarlılığı (ÇÜRÜDÜ).** Belgedeki iki kazayı yakalamıyor,
+çünkü o dosyaların **BAŞLIĞI gövdeye göre düzeltilmiş**; yanlış kalan yalnızca
+DOSYA ADI. Ölçüldü: `hiperkalsemi-ve-hiperparatiroidi.json`in başlığı bugün
+**"Asit-Baz Denge Bozuklukları"** ve gövdesiyle uyumlu.
+
+**3. SLUG kelime SIKLIĞI (VERİYLE ÇÜRÜDÜ).** Varsayım makuldü: kazalı dosya
+slug terimini yalnızca geçerken anar. Ölçüm bunu çürüttü:
+
+| dosya | durum | slug teriminin sıklığı |
+|---|---|---|
+| `endokrinoloji/addison` | **SAĞLIKLI** | `addison` **2 kez** (‰3.1) |
+| `hiperkalsemi-ve-hiperparatiroidi` | **KAZALI** | `hiperkalsemi` **5 kez** (‰4.0) |
+
+Sağlıklı dosya kendi slug kelimesini kazalıdan **DAHA AZ** anıyor — eşik
+ayıramıyor. Sebep açık: sağlam bir konu kendi adını değil eşanlamlısını
+kullanıyor ("Addison" yerine "adrenal yetmezlik").
+
+**SONUÇ: bu kaza sınıfı sözlüksel ölçütle güvenilir biçimde bulunamıyor.**
+İki kazayı da bulan sinyal YAPISALDI (aynı başlığı taşıyan iki dosya). Üç
+ölçütün de gerekçesi `benzer-govde-denetim.cjs` başlığına yazıldı ki bir
+sonraki tur çürütülmüş ölçütü yeniden icat etmesin.
+
+#### Yan bulgu: 8 ADRES–İÇERİK ayrışması (kaza değil, çoğu hafif)
+
+Slug ölçütü kaza bulamadı ama başka bir şey gösterdi: dosya adı bir şey vaat
+edip gövdenin ondan hiç söz etmediği 8 konu. Üçü doğrudan sayımla doğrulandı:
+
+| konu | gövdede geçiş |
+|---|---|
+| **`enfeksiyon/dalbavansin-VISA-VRSA`** | `dalbavansin` **0** · `vrsa` 9 |
+| `enfeksiyon/antibiyotikler-ana-sayfa` | `antibiyotik` **0** · `antimikrobiyal` 1 · `direnç` 8 |
+| `romatoloji/buyuk-damar-vaskulitleri` | `büyük damar` **0** · `takayasu` 1 · `arterit` 3 |
+
+Son ikisi hafif (kategori adı ↔ hastalık adı, eşanlamlı terminoloji).
+Birincisi gerçek bir artık: slug bir ilaç vaat ediyor, gövde onu hiç anmıyor.
+
+**İÇERİK DÜZELTİLMEDİ** ve slug için ek bir gerekçe var: dosya adı bir ADRES;
+değiştirmek yönlendirme borcu doğurur (belgede kayıtlı karar). Liste burada,
+karar içeriğin sahibinin.

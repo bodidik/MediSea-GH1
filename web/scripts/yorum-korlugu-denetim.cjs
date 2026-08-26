@@ -62,6 +62,8 @@ const KAPSAM_DISI = new Set([
   // zaten kendisi yorum-maskeliyor. Sentetik tohumda `content/` olmadığı
   // için burada sınanamaz — kendi tarihsel kontrolü var (bkz. dosya başlığı).
   'ilan-render-denetim.cjs',
+  // Konu gövdelerini birbiriyle karşılaştırıyor: tamamen JSON.
+  'benzer-govde-denetim.cjs',
 ]);
 
 /** Hedef şekiller SADECE yorumda; kod tarafı tertemiz. */
