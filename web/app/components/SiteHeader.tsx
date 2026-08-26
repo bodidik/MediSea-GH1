@@ -574,7 +574,11 @@ export default function SiteHeader() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menü"
             aria-expanded={menuOpen}
-            aria-controls="ana-menu"
+            /* Panel KOŞULLU render ediliyor: kapalıyken `ana-menu` diye bir öge
+                YOK ve sabit bir `aria-controls` sitenin HER sayfasında var
+                olmayan bir kimliği gösteriyordu (ölçüldü: `cozuluyor: false`).
+                Sarkan bir atıf, atıf olmamasından kötü. */
+            aria-controls={menuOpen ? "ana-menu" : undefined}
             /* 36×36'dan 44×44'e: mobilde ana gezinme kontrolü bu düğme ve
                ölçümde dokunma hedefi önerilen 44px'in altındaydı. */
             className="2xl:hidden flex items-center justify-center w-11 h-11 rounded-full border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors shrink-0"

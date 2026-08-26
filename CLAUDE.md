@@ -13442,3 +13442,72 @@ medyası öykünülemiyor ve belgede kayıtlı olduğu üzere sayfaya `<style>`
 enjekte etmek de çalışmıyor. Doğrulanan üç şey: kural üretilen CSS paketinde
 VAR, seçiciler tam olarak hedeflenen 6 ögeyi tutuyor ve hiçbir içerik ögesini
 tutmuyor, ekran render'ı birebir aynı. "Kâğıtta şöyle görünüyor" DENMİYOR.
+
+### SARKAN `aria-controls` — sitenin HER sayfasında, ve biri BU OTURUMDA yazıldı
+
+Çift `id` taraması yapılırken çıktı. Çift kimlik **0** (temiz), ama aynı
+ölçüm atıfları da kontrol edince şu göründü:
+
+```
+aria-controls="ana-menu"  ->  o kimlikte öge YOK  (menü kapalıyken)
+```
+
+Panel koşullu render ediliyor (`menuOpen && …`), `aria-controls` ise SABİT
+yazılmıştı. Yani menü kapalıyken — yani **sitenin her sayfasında, varsayılan
+durumda** — düğme var olmayan bir kimliği gösteriyordu.
+
+**Aynı şekil premium branş akordeonlarında da vardı ve o kodu bu oturumda BEN
+yazdım.** Ölçüldü (`/tr/premium/ydus/hematoloji`): açık olan tek kategori
+çözülüyor, kapalı iki kategori **`cozuluyor: false`**.
+
+Sarkan bir atıf, atıf olmamasından kötü: ekran okuyucu ilişkilendiremediği bir
+kimlikle karşılaşıyor. Çare `aria-expanded`i BIRAKIP `aria-controls`u yalnızca
+panel gerçekten render edilmişken vermek (APG'de `aria-controls` disclosure
+için zaten isteğe bağlı).
+
+**Doğrulama, negatif kontrolüyle:**
+
+| durum | `aria-controls` | sarkan | `aria-expanded` |
+|---|---|---|---|
+| menü KAPALI | **0** (önce 1 sarkan) | 0 | **1 — korundu** |
+| menü AÇIK | 1 | 0 | 1 |
+| premium, ilk açık | 1 | 0 | **3 — korundu** |
+| premium, hepsi açık | 3 | **0** | 3 |
+
+Son sütun şart: `aria-controls`u koşullu yaparken `aria-expanded`i de
+düşürseydim açılır-kapanır anlamını tümden silmiş olurdum.
+
+**Sözdizimi tuzağı:** JSX açılış etiketinin İÇİNE `{/* … */}` yazılamaz
+(`TS1005`), ama düz `/* … */` yazılabilir — aynı dosyada zaten öyle
+kullanılıyordu. Nitelikler arasına yorum koyarken süslü parantezleri kaldır.
+
+### Araç sayfalarında `h2` YOK — ama süpürme BİLEREK yapılmadı
+
+Aynı turda ölçüldü: **130 araç sayfasının 130'unda `h1` 1**, ve
+`<h2>` kullanan yalnızca **10**, `<h3>` kullanan **1**. Yani 120 hesaplayıcıda
+belge yapısı tek başlıktan ibaret.
+
+Görsel olarak başlık gibi duran ögeler var (`text-[10px] font-black uppercase
+tracking-widest`) ve **130 dosyanın 130'u bu sınıf dizesini kullanıyor** — ama
+kalıp TEK BİÇİMLİ DEĞİL. Aynı dize beş ayrı şey için kullanılıyor:
+
+| kullanım | örnek |
+|---|---|
+| sayfa alt başlığı | `curb65` "Pnömoni Ciddiyet Analizi" |
+| alan etiketi | `bmi` "Boy (cm)" · "Ağırlık (kg)" |
+| **alan grubu başlığı** | `abg` "Elektrolitler — anyon açığı için" |
+| sonuç etiketi | `curb65` "SKOR" · "KLİNİK KARAR DESTEK" |
+| durum mesajı | `bmi` "Hesaplanamıyor" |
+
+Yalnızca üçüncüsü başlık olmalı; ötekileri başlığa çevirmek belge yapısını
+BOZAR. Doğru kalıp zaten depoda: `sofa` organ gruplarını `<h2>` ile yazıyor.
+
+**Mekanik süpürme reddedildi** — sınıf dizesi ayırt etmiyor, yani ölçüt ADAY
+bile üretemiyor; karar her sayfada metnin ne olduğunu okumayı gerektiriyor.
+Belgedeki "aday üretmek ile karar vermek AYRI" kuralı ve süsleme emojisi
+turundaki aynı gerekçe. Ölçüldü, kapsam yazıldı, DEĞİŞTİRİLMEDİ.
+
+Etkisinin sınırı da not: form yüzeylerinde ekran okuyucular öncelikle FORM
+KONTROLÜ ile geziniyor ve bu depoda **345 kontrolün 345'inin adı var**
+(ölçüldü) — yani başlık eksikliği yön bulmayı zorlaştırıyor, imkânsız
+kılmıyor.

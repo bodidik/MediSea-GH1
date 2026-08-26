@@ -83,7 +83,9 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
             <button
               onClick={() => toggle(kat.id)}
               aria-expanded={!!acikMi}
-              aria-controls={`kategori-panel-${kat.id}`}
+              /* Kapalı panel DOM'da yok — sarkan atıf bırakma (ölçüldü:
+                  kapalı akordeonlarda kimlik çözülmüyordu). */
+              aria-controls={acikMi ? `kategori-panel-${kat.id}` : undefined}
               style={{
                 width: '100%',
                 padding: '0.9rem 1.25rem',
