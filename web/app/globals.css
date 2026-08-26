@@ -312,13 +312,28 @@ mark.ms-hl-u {
 }
 
 @media (max-width: 640px) {
-  /* Telefonda satır daha kısa; taban biraz daha yukarı çekiliyor. */
+  /* Telefonda satır daha kısa; taban biraz daha yukarı çekiliyor.
+
+     ⚠ BU LİSTE BİR DÖNEM MASAÜSTÜ LİSTESİNDEN KISAYDI (5 ↔ 10) ve
+     ölçüldüğünde SIRALAMAYI TERSİNE ÇEVİRİYORDU: 375px'te
+     `text-[11px]` 15px basılırken `text-[11.5px]` 14px basıyordu —
+     yani DAHA KÜÇÜK ilan edilen sınıf DAHA BÜYÜK görünüyordu.
+     Kapsam: 410 görünür konunun 177'si (%43.2), 1120 geçiş
+     (1084 tanesi `text-[11.5px]`).
+
+     Liste artık masaüstü listesinden KOPYALANIYOR; ikisi ayrışırsa
+     aynı kusur geri gelir. */
   [data-readable] :is(
     .text-xs,
+    .text-\[9px\],
     .text-\[10px\],
+    .text-\[10\.5px\],
     .text-\[11px\],
+    .text-\[11\.5px\],
     .text-\[12px\],
-    .text-\[13px\]
+    .text-\[12\.5px\],
+    .text-\[13px\],
+    .text-\[13\.5px\]
   ) {
     font-size: 0.9375rem; /* 15px */
     line-height: 1.65;
