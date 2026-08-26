@@ -16093,3 +16093,55 @@ yalnızca ayraçlı iz olarak değil çip olarak render ediliyor.
 **Aktarılabilir kural: bir gerekçeyi "çelişki yok" diye kapatırken, çelişkinin
 OLMADIĞINI de ölç.** Eski not doğru sonuca yanlış yoldan varmıştı; ölçüm
 yapılmadığı için bir sonraki tur (bu tur) onu yeniden açmak zorunda kaldı.
+
+### DÖRDÜNCÜ KOPYA: premium kırıntısı ADSIZ landmark'tı, etiketi de yanlış hedef vaat ediyordu
+
+Geçen tur "üç sayfa türünde hizalandı" dedim. Kapsamı sayınca **dördüncü
+kopya** çıktı. Premium tarafta BreadcrumbList şeması **hiç yok** — ve bu
+doğru karar (sayfalar `noindex`, şema orada işe yaramaz). Ama GÖRÜNÜR iz var
+ve üç kusuru vardı:
+
+| kusur | ölçüm |
+|---|---|
+| `<nav>` **adsız** | konu sayfasında İKİ nav landmark'ı, yalnızca biri adlı (öteki içindekiler) → ekran okuyucu ayırt edemiyor |
+| liste yapısı ve `aria-current` yok | ayraçlar da `aria-hidden` değil |
+| ilk adım **"Ana sayfa"** | ama **premium panosuna** gidiyor; o sayfanın kendi `<h1>`'i **"YDUS Hazırlık"** |
+
+Üçüncüsü bir *ilan–gerçek* ayrışması: etiket gittiği yeri söylemiyordu.
+"Ana sayfa" diyen bir bağlantıya tıklayan kullanıcı site köküne değil YDUS
+panosuna düşüyordu.
+
+**Ölçüldü (tarayıcıda, kapı geçici açılıp geri konarak):**
+
+| ölçüt | sonuç |
+|---|---|
+| premium branş | nav **adlı**, `ol/li`, `aria-current` 1, kontrast **11.28**, dokunma hedefi 26px, 375px taşma **0** |
+| premium konu | **ADSIZ NAV 0** (önce 1), iki nav da adlı, üç adım doğru, taşma 0 |
+| kapı geri kondu | "Erişim Kısıtlı", `ZZ-OLCUM` izi **0** |
+
+#### Adsız landmark taraması — ve ölçüt YORUMLARI saydı
+
+Sınıfı genelleştirmek için depo geneli tarandı: `<nav>` açılış etiketini
+**süslü parantez dengesiyle** kesen bir ölçüt (düz regex `=>` okundaki `>`
+işaretinde kapanıyor).
+
+**İlk çalıştırma 13 nav / 5 adsız dedi ve YANLIŞTI:** bu depoda yorumlar
+kusurları birebir alıntılıyor ve tam o yorumlar `<nav>` dizesini taşıyordu
+(*"bu `<nav>` ADSIZDI"*, *"konu sayfalarında ikinci bir `<nav>` var"*).
+Yorumlar elenince **10 nav / 2 adsız**.
+
+Bu, belgede kayıtlı yorum körlüğünün bu oturumdaki **üçüncü** tekrarı — ve
+üçünde de kurban benim kendi dedektörümdü. Kaynak tarayan her ölçüt yorumları
+BOŞLUKLA doldurmak zorunda.
+
+Kalan iki adsızın verdikti:
+
+| yer | verdikt |
+|---|---|
+| `HeaderClient.tsx` | **ölü kod** (sıfır içe aktaran) — dokunulmadı |
+| `kayseritip/layout.tsx` | tek nav, ayırt edilebilirlik sorunu yok ama landmark adlandırıldı |
+
+**Aktarılabilir kural, ikinci kez aynı turda: "hizalandı" demeden önce
+KOPYAYI SAY.** Üç tur üst üste "son kopya" sanıldı; her seferinde sayım
+bir tane daha gösterdi (branş → araç şeması → premium). Sayım ucuz, kazara
+bulmak pahalı.
