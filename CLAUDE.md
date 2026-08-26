@@ -15699,3 +15699,39 @@ dönmek "hata yok" değil **"sonuç yok"** demektir — ve bu, deponun API
 kuralının (*"uydurulmuş bir başarı yanlış varsayım üretir"*) boşluk hâli.
 Ayrıca: **doğru yazılmış bir çağıran, yukarıdaki bir yutma yüzünden ölü
 kalabilir** — hata dalının ULAŞILABİLİR olduğunu ayrıca ölç.
+
+### BOZUK VURGU KAYDI SESSİZCE ATILIYOR, SONRAKİ KAYIT ONU KALICI SİLİYORDU
+
+Geçen turun dersi (*"yukarıdaki bir yutma yüzünden ölü kalan hata dalı"*)
+ölçüte çevrildi: **nötr yedek döndüren `catch` blokları** + çağıranında hata
+durumu olanlar. 534 dosya, **41 yutan catch**, **4 aday**.
+
+Üçü meşru: `panoyaKopyala`nın `false`u çağıran tarafından **kullanılıyor** (bu
+oturumda ölçüldü), `rangeFrom` ve `json` "çözülemedi" anlamında ve
+çağıranları o dalı doğru karşılıyor.
+
+Dördüncüsü gerçek kusurdu — **`loadMarks`**:
+
+| ölçüt (bozuk kayıt tohumlu) | önce |
+|---|---|
+| ekranda vurgu | 0 |
+| kullanıcıya uyarı | **yok** (`role="alert"` 0) |
+| **yeni vurgu yapılınca** | kaydetme bozuk kaydın **üzerine yazıyor** — veri kalıcı gidiyor |
+
+**Deponun kendi emsali bunun tersi** ve belgede *"sınıf kapalı"* diye
+kayıtlı: `UserContext` bozuk kaydı `ydus_premium_user_bozuk` anahtarına
+**taşıyıp** normale devam ediyor. Aynı davranış uygulandı; yedek anahtar
+`<anahtar>:bozuk`. Yedeğe yazmak da başarısız olursa ham kayda
+**dokunulmuyor** — en kötü ihtimalle eski davranışa dönülüyor.
+
+| ölçüt | sonra |
+|---|---|
+| yükleme sonrası | ana anahtar boş, **yedek ham dizeyi taşıyor** |
+| yeni vurgudan sonra | **yedek hâlâ hayatta** |
+| **negatif** — geçerli kayıt | yedek **oluşmuyor**, vurgu boyanıyor ve kayıtlı kalıyor |
+
+**Ölçüm tuzağı — Türkçe alt dize, bu kez kendi dedektörümde.** "Kullanıcıya
+uyarı var mı" ölçütüm `/bozuk/i` ile eşleşip **true** demişti; metin
+**"Elektrolit BOZUKLukları"** idi. `role="alert"` kutusu SAYILINCA gerçek
+sayı 0 çıktı. Anahtar kelime yerine **yapısal sinyal** kullan — bu ders
+belgede zaten üç kez kayıtlı ve dördüncü kez aynı yerden vurdu.
