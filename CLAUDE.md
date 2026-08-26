@@ -14801,3 +14801,42 @@ konumla işliyor (`key={adimIndex}`), yani bugün bir etkisi yok. Kayda geçti.
 şeması · vaka şık açıklamaları · şimdi quiz künyesi). `ilan-render-denetim`
 bunu yakalayamadı çünkü o ölçüt alanın OKUNUP okunmadığına bakıyor; buradaki
 alan okunuyor ama **yanlış düzeyden**.
+
+### `ilan-render-denetim` ŞEMA SAPMASINI GÖREMİYORDU — ölçüt eklendi
+
+Geçen turun kusuru (quiz künyesi `meta` içinde) yeni bir körlük gösterdi: var
+olan ölçüt alanın **okunup okunmadığına** bakıyor, **hangi düzeyden** okunduğuna
+bakmıyor. `id` alanı 39 dosyada okunduğu için "okunmayan alan" listesine hiç
+girmiyordu — yani yedinci örneği yine kazara bulmak gerekecekti.
+
+**Yeni ölçüt:** dosyaların ÇOĞUNLUĞUNUN taşıdığı üst düzey anahtarı taşımayan
+dosyaları bul. Eşik **%70 ve en az 4 dosya**; daha küçük kümede "çoğunluk"
+anlamsız olduğu için **ÖLÇÜLMEDİ** diye raporlanıyor — "0 sapma" ile "0 ölçüm"
+ayrımı denetimin İÇİNE kondu.
+
+| kontrol | sonuç |
+|---|---|
+| **tarihsel** (gerçek kusurla) | `tkp-quiz-1` **yakalanıyor** |
+| pozitif (tohumlu sapan dosya) | yakalanıyor |
+| negatif (temiz ağaç) | **0** |
+| az dosyalı tür (2 dosya) | "temiz" değil **ÖLÇÜLMEDİ** |
+
+**Dört sapma çıktı, dördü de karara bağlandı** ve betiğin başına yazıldı:
+
+| dosya | verdikt |
+|---|---|
+| `quizzes/gogus-hastaliklari/tkp-quiz-1` | okuyucu düzeltildi; **veri hâlâ sapıyor**, listede kalıyor |
+| `vakalar/endokrinoloji/feokromositoma-vaka-1` | okuyucu düzeltildi (`VakaEngine` + seçim listesi); aynı gerekçe |
+| `quizzes/hematoloji/aml-quiz-1` | İngilizce şema; `sorular` da yok, motor dürüst boş durum basıyor |
+| `flashcards/nefroloji/hiperf-kbh` | `accessLevel` yok — **ölü alan**, zararsız |
+
+İlk iki satır bir tasarım kararı: **okuyucu düzeltildi diye sapma listeden
+düşmüyor.** Denetim VERİNİN şeklini raporluyor, okuyucunun yeteneğini değil —
+yeni bir yüzey aynı dosyayı ham okursa kusur geri gelir.
+
+**Yan bulgu — 27 vaka adımı kimliksiz (7 dosyada):** `VakaEngine` adımları
+konumla işliyor (`key={adimIndex}`), yani bugün etkisi yok. Kayda geçti.
+
+**Aktarılabilir kural: bir denetim bir kusuru kaçırdığında, ölçütü kusurun
+BİÇİMİNE göre genişlet — o biçim büyük olasılıkla tek örnekli değildir.**
+Bu turda bir kusuru arayan ölçüt üç tane daha buldu.
