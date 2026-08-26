@@ -41,14 +41,43 @@ export function storageKey(pathname: string) {
   return KEY_PREFIX + pathname;
 }
 
+/**
+ * BOZUK KAYIT ATILMAZ, YEDEĞE TAŞINIR.
+ *
+ * Bir dönem `catch { return [] }` vardı ve gerekçesi "bozuk kayıt okuma
+ * deneyimini kilitlemesin"di — o kısmı doğru. Ama ölçüldü: bozuk kayıt
+ * tohumlanınca ekranda 0 vurgu çıkıyor, kullanıcıya HİÇBİR ŞEY
+ * söylenmiyor (`role="alert"` kutusu 0) ve kullanıcı YENİ bir vurgu
+ * yaptığı anda kaydetme bozuk kaydın ÜZERİNE yazıyor — veri kalıcı olarak
+ * gidiyordu.
+ *
+ * Deponun kendi emsali bunun tersi ve belgede "sınıf kapalı" diye
+ * kayıtlı: `UserContext` bozuk kaydı `ydus_premium_user_bozuk` anahtarına
+ * TAŞIYIP normale devam ediyor. Aynı davranış burada da uygulanıyor;
+ * yedek anahtar `<anahtar>:bozuk`.
+ *
+ * Yedeğe yazmak da başarısız olabilir (depo dolu/engelli) — o durumda
+ * ham kayda DOKUNULMUYOR, yani en kötü ihtimalle eski davranışa dönülüyor.
+ */
 export function loadMarks(pathname: string): ReadingMark[] {
+  const anahtar = storageKey(pathname);
+  let raw: string | null = null;
   try {
-    const raw = localStorage.getItem(storageKey(pathname));
-    if (!raw) return [];
+    raw = localStorage.getItem(anahtar);
+  } catch {
+    return []; // depo engelli — okunacak bir şey yok
+  }
+  if (!raw) return [];
+  try {
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? parsed : [];
   } catch {
-    // bozuk kayıt okuma deneyimini kilitlemesin
+    try {
+      localStorage.setItem(anahtar + ":bozuk", raw);
+      localStorage.removeItem(anahtar);
+    } catch {
+      // yedekleyemedik: ham kaydı OLDUĞU GİBİ bırak
+    }
     return [];
   }
 }
