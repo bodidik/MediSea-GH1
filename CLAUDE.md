@@ -13511,3 +13511,61 @@ Etkisinin sınırı da not: form yüzeylerinde ekran okuyucular öncelikle FORM
 KONTROLÜ ile geziniyor ve bu depoda **345 kontrolün 345'inin adı var**
 (ölçüldü) — yani başlık eksikliği yön bulmayı zorlaştırıyor, imkânsız
 kılmıyor.
+
+### ⚠ SINAV BANKASINDA CEVAP ANAHTARI ÇARPIK — hep "B" diyen %54 alıyor
+
+Hiç bakılmamış bir kalite sinyali. `soru-denetim` YAPIYI denetliyor (doğru
+cevap geçerli mi, şık var mı); **cevabın DAĞILIMINA** kimse bakmamıştı.
+
+378 premium sorusu ölçüldü (347'si 5 şıklı, 31'i 4 şıklı):
+
+| şık | soru | oran | beklenen (~%20) |
+|---|---|---|---|
+| **B** | **205** | **%54.2** | 76 |
+| **A** | **126** | **%33.3** | 76 |
+| C | 34 | %9.0 | 76 |
+| D | 11 | %2.9 | 76 |
+| E | 2 | **%0.5** | 76 |
+
+**A + B = %87.5.** Yani hiçbir soruyu okumadan hep "B" işaretleyen aday
+bankanın **%54'ünü** doğru yapıyor.
+
+Dosya düzeyinde daha keskin: **37 quiz dosyasının 16'sında bütün cevaplar TEK
+ŞIKTA**, 27'sinde en çok iki şık kullanılıyor.
+
+```
+A x10  enfeksiyon/gram-pozitif-bakteriyel-enfeksiyonlar-quiz-1.json
+B x10  nefroloji/adpkd-quiz-1.json
+A x10  nefroloji/asit-baz-dengesi-quiz-1.json
+B x10  romatoloji/ailesel-akdeniz-atesi-quiz-1.json          (+12 dosya daha)
+```
+
+Bedeli sınav hazırlığında doğrudan: araç, konuyu değil **kalıbı** öğretiyor.
+Üstelik ücretli içerik ve satış sayfası bu bankayı "378 açıklamalı soru" diye
+ilan ediyor.
+
+**İÇERİK DÜZELTİLMEDİ** — şık sırası içerik kararı ve kullanıcının
+sorumluluğunda. Ama kararı verebilmek için gereken ölçüm ve fizibilite burada:
+
+**Kod tarafında "şıkları karıştır" ÇÖZÜMÜ MÜMKÜN AMA BEDAVA DEĞİL.** Ölçüldü:
+
+| ölçüt | değer | anlamı |
+|---|---|---|
+| prozada harfe atıf yapan açıklama (`"B şıkkı…"`) | **5 / 378** | karıştırma bu 5'ini YANLIŞLAR |
+| harf anahtarlı şık açıklaması (`secenekAciklamalari`) | **378 / 378** | karıştırırken BİRLİKTE taşınmalı |
+| motorun okuma biçimi | `Object.entries(soru.secenekler)` + harfle eşleşen `secenekAciklamalari` | sıra doğrudan nesne sırasından geliyor |
+
+Ayrıca ilerleme kaydı cevabı HARFLE saklıyor (`quiz-progress-<id>`); karıştırma
+oturumdan oturuma değişirse geri yüklenen cevap yanlış şıkka düşer — yani
+karıştırma **quiz kimliğine bağlı KARARLI bir tohum** gerektirir.
+
+**En temiz çözüm veride:** JSON'da şıkların sırasını değiştirmek hem dağılımı
+düzeltir hem `secenekAciklamalari` kendiliğinden hizalı kalır (açıklama şıkla
+birlikte taşınır) hem de 5 proza atfı görünür kılar.
+
+**Ölçüm tuzağı — alan adı ÜÇÜNCÜ kez yanılttı.** İlk koşum "378 soruda şık
+sayısı `undefined`" dedi ve dağılım geçersiz sanıldı: `secenekler` bir DİZİ
+değil **NESNE** (`{"A": "...", "B": "..."}`), `dogru` da indeks değil HARF.
+Belgedeki kural yine kurtardı: **bir alanın adını ve TİPİNİ varsayma — önce
+anahtarları bastır.** Şema iki biçimli: 378 soru Türkçe (`metin`/`secenekler`/
+`dogru`), 10 soru İngilizce (`text`/`options`/`correctAnswer`, dizi + indeks).
