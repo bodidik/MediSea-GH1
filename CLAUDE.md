@@ -15350,3 +15350,45 @@ istek anı render'ına özgüydü.
 ilk ölçümde "200 + düzen başlığı" gibi göründü, çünkü yalnızca başlık
 çekilmişti; durum kodu ölçülünce **404** çıktı. 404 sayfaları da düzen
 metadata'sını miras alıyor, yani başlık tek başına "sayfa var" demek DEĞİL.
+
+### VURGULAR KÂĞITTA KAYBOLUYORDU — iki eklemenin KESİŞİMİ
+
+Bu oturumda baskı stili ve vurgu kontrastı **ayrı ayrı** düzeltildi; ikisinin
+kesişimi hiç ölçülmemişti.
+
+**Ölçüldü (canlı):**
+
+| ölçüt | değer |
+|---|---|
+| `print-color-adjust` | **`economy`** (varsayılan — tarayıcı arka planı basmaz) |
+| vurgunun görünürlüğü | **tamamen arka plan** (`background-image` gradyanı) |
+| `text-decoration` | `none` |
+| kenarlık | 0 |
+| baskı bloğunda `mark` hedefleyen kural | **YOK** |
+
+Yani bir konuyu vurgulayıp yazdıran kullanıcı **işaretlerinin hepsini
+kaybediyordu** — üstelik baskı stili tam da *"nöbetteki asistan kâğıda
+alıyor"* senaryosu için eklenmişti.
+
+Çare dar: `exact` **yalnızca `mark.ms-hl`e** veriliyor; sayfanın geri kalanı
+arka plansız basılmaya devam ediyor, yani mürekkep israfı olmuyor.
+
+**Doğrulama İKİ yöntemle:**
+
+| yöntem | sonuç |
+|---|---|
+| üretilmiş CSS | kural tam olarak `mark.ms-hl{print-color-adjust:exact}` — baskı bloğundaki **yedi seçiciden yalnızca o** taşıyor |
+| tarayıcı CSSOM | kural var, **gerçek bir `mark` seçiciye uyuyor**, `exact` taşıyan başka kural **0** |
+| **negatif** | gizlenen öge 6 (değişmedi), okuma alanı 1, `h1` 1 |
+
+**KAPSAM DÜRÜSTLÜĞÜ:** bu ortamda baskı ÇIKTISI gözlenemiyor (belgede
+kayıtlı). Doğrulanan şey kuralın varlığı, hedefi ve başka hiçbir şeyi
+hedeflemediği — *"kâğıtta şöyle görünüyor"* DENMİYOR. Kullanıcının yazıcı
+sürücüsü arka planı yine de düşürebilir; `bold` ve `u` varyantları arka plana
+bağlı olmadığı için her koşulda basılıyor.
+
+**Aktarılabilir kural: aynı oturumda İKİ ayrı yüzeye dokunduysan,
+KESİŞİMLERİNİ ayrıca ölç.** Bu turda iki düzeltme de tek başına doğruydu;
+kusur yalnızca ikisi bir araya gelince ortaya çıkıyordu. Aynı ders bu
+oturumda bir kez daha yaşandı: baskı kuralının `nav` seçicisi, yine bu
+oturumda eklenen içindekiler bloğunu süpürüyordu.
