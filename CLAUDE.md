@@ -14730,3 +14730,74 @@ Gizli hub'ın kendisi ölçüldü: **`noindex, follow`** (bu oturumun düzeltmes
 ayakta) ve kendi görünür çocuklarına bağlanıyor. Yani hiyerarşi tek yönlü —
 aşağı bağlanıyor, yukarı bağlanmıyor — ve kullanıcıyı yayımlanmamış içeriğe
 götüren bir yol yok.
+
+### İLERLEME ANAHTARI `quiz-progress-undefined` İDİ — künye `meta` içindeydi
+
+Yeni bir veri bütünlüğü ekseni: **ilerleme anahtarları içerik kimliğine bağlı**
+(`quiz-progress-<quiz.id>`, `medisea:kartlar:v1:<setId>`). İki dosya aynı
+kimliği taşırsa bir kullanıcının ilerlemesi ötekine sızar. Flashcard tarafı
+ölçülmüştü; quiz, vaka ve inci hiç bakılmamıştı.
+
+**Dört tür tarandı — yapısal çakışma 0:**
+
+| tür | dosya | öge | çakışan set kimliği | aynı dosyada çakışan öge |
+|---|---|---|---|---|
+| quiz | 40 | 388 soru | **0** | 0 |
+| flashcard | 21 | 1641 kart | 0 | 0 |
+| vaka | 11 | 35 adım | 0 | 0 |
+| inci | 2 | 13 inci | 0 | 0 |
+
+**Ama tarama künyesiz BİR quiz dosyası gösterdi** ve sebebi şema sapmasıydı:
+
+```
+kanonik : { id, baslik, branch, topic, sorular }                 39 dosya
+sapan   : { meta: { quizId, baslik, branch, topicId }, sorular }  1 dosya
+```
+
+Motor üst düzeyi okuyor (`veri.id`, `veri.baslik`, `veri.topic`). Ölçülen üç
+sonuç:
+
+| ölçüt | sapan dosyada (önce) |
+|---|---|
+| ilerleme anahtarı | **`quiz-progress-undefined`** |
+| `<h1>` | **BOŞ** |
+| geri bağlantısı | konuya değil **branşa** düşüyor |
+
+Birincisi zamanla büyüyen bir tuzak: künyesiz her quiz AYNI anahtarı paylaşır.
+Bugün tek dosya olduğu için çakışma YOK — ikincisi eklendiği gün bir
+kullanıcının cevapları öteki quize geri yüklenir.
+
+**Quiz ulaşılabilir:** `tkp` konusu premium'da var, `quiz: true` ilan ediyor ve
+envanter dosyayı adlandırma kuralıyla (`<topic>-quiz-1.json`) buluyor — yani
+ödeme yapan kullanıcı bu quizi açabiliyor.
+
+İçerik dosyasına **DOKUNULMADI** (içerik kullanıcının sorumluluğu); düzeltme
+okuma tarafında ve `VakaEngine`deki `meta` düzleştirmesiyle aynı karar. **Üst
+düzey ÖNCELİKLİ**, yani 39 kanonik dosyanın davranışı ve kayıtlı ilerlemeleri
+birebir korunuyor. Künyesiz dosyada son çare DOSYA ADI — benzersiz ve kararlı.
+
+**Doğrulama (kapı geçici açılıp GERÇEK motor render edilerek):**
+
+| ölçüt | sonuç |
+|---|---|
+| başlık | **"TKP Soru Bankası — Bölüm 1"** (önce boş) |
+| geri bağlantısı | `/tr/premium/ydus/gogus-hastaliklari/tkp` (önce branş) |
+| ilerleme anahtarı | **`quiz-progress-tkp-quiz-1`** |
+| **negatif** — kanonik quiz anahtarı | **`quiz-progress-quiz-endo-men-001`** korundu |
+| **negatif** — kanonik quiz başlığı | değişmedi |
+| `undefined` anahtar | **0** |
+
+Negatif kontrol şart: bir yükleyiciyi normalleştirirken asıl risk **var olan
+kullanıcı ilerlemesinin anahtarını değiştirmek** — o zaman düzeltme, kayıtlı
+ilerlemeyi sessizce siler.
+
+Kapı geri kondu ve doğrulandı ("Erişim Kısıtlı"), ölçüm izi 0.
+
+**Yan bulgu — 27 vaka adımı kimliksiz (7 dosyada):** `VakaEngine` adımları
+konumla işliyor (`key={adimIndex}`), yani bugün bir etkisi yok. Kayda geçti.
+
+**Bu, aynı oturumda ALTINCI "veri ilan ediyor, render yok sayıyor" örneği**
+(premium bilgi kutusu başlıkları · quiz seti adı · vaka adı · vaka `meta`
+şeması · vaka şık açıklamaları · şimdi quiz künyesi). `ilan-render-denetim`
+bunu yakalayamadı çünkü o ölçüt alanın OKUNUP okunmadığına bakıyor; buradaki
+alan okunuyor ama **yanlış düzeyden**.
