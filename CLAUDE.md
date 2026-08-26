@@ -12722,3 +12722,68 @@ her commit'te geçiyor.
 dizisi arandı ve "0 soru" çıktı; gerçekte **her dosya TEK bir soru**
 (`question`/`options`/`answer` üst düzeyde). Şema varsayımı yine yanılttı —
 belgedeki "bir alanın adını varsayma, önce anahtarları BASTIR" kuralı.
+
+### GİZLİ KONULAR ARAMA MOTORUNA AÇIKTI — dört mekanizmanın üçü uyguluyordu
+
+`meta.hidden` üç yerde uygulanıyordu: site haritası · `generateStaticParams` ·
+branş listeleri. **Dördüncü yerde — robots meta'sında — uygulanmıyordu.**
+
+ÖLÇÜLDÜ (canlı, değişiklikten önce):
+
+| sayfa | durum | robots | gövde |
+|---|---|---|---|
+| `feokromositoma-ve-paraganglioma` (GİZLİ) | 200 | **`index, follow`** | 45 KB |
+| `hipertiroidi-ve-graves-hastaligi` (GİZLİ) | 200 | **`index, follow`** | 20 KB |
+| `addison` (görünür, kıyas) | 200 | `index, follow` | 27 KB |
+| `/guidelines` (deponun emsali) | 200 | **`noindex, follow`** | 13 KB |
+
+Son satır belirleyici: `/guidelines` haritadan çıkarılmış **VE** noindex —
+belge bunu "iki mekanizma da aynı niyeti taşıyor" diye ÖVÜYOR. Gizli konular
+o kuralın dışında kalmıştı.
+
+**"Nasıl bulunur ki" savunması ölçümle çürüdü.** Görünür bir konunun
+içeriğinden gizli bir konuya bağlantı VAR:
+`subklinik-tiroid-hastaliklari` → `hipertiroidi-ve-graves-hastaligi`.
+Yani indekslenmiş bir sayfadan taranabilir bir yol açık.
+
+**Bedeli ÇİFT İÇERİK ve ölçüldü:** gizli başlıklarla görünür başlıklar
+arasında **14 örtüşme** var —
+`adrenal-medulla-hastaliklari` [gizli] ~ `adrenal-bez-hastaliklari` /
+`adrenal-korteks-hastaliklari`, `diabetes-insipidus` [gizli] ~
+`arka-hipofiz-bozukluklari-di-ve-siadh`, `ibh` [gizli] ~
+`bagirsak-hastaliklari`. Yayımlanmamış sayfalar kanonik sayfalarla
+yarışıyordu.
+
+Gizli konular artık `noindex, follow`. **404'e ÇEVRİLMEDİ:** adresle erişim
+bilinçli bir karar (kaynakta yazılı) ve paylaşılmış bağlantılar kırılmamalı;
+`follow` da `/guidelines` ile aynı gerekçeyle korundu.
+
+#### ⚠ `robots: undefined` MİRASI SİLİYOR — A/B olmasa fark edilmezdi
+
+İlk yazım `robots: gizli ? {...} : undefined` idi. A/B ölçümü yakaladı:
+
+| | görünür konuda robots meta |
+|---|---|
+| değişiklikten ÖNCE | **var** (`index, follow`, kök düzenden) |
+| ilk yazımdan SONRA | **YOK** |
+
+Next, anahtarı `undefined` değerle görünce "miras al" değil **"bu alanı
+kaldır"** diye yorumluyor. Davranışsal etkisi küçüktü (meta yoksa tarayıcı
+zaten indeksler) ama niyet edilmemiş bir değişiklikti.
+
+Çare koşullu YAYILIM: `...(gizli ? { robots: {...} } : {})` — anahtar
+yalnızca gizli konuda ekleniyor.
+
+**Doğrulama, üç negatif kontrolle:**
+
+| sayfa | robots |
+|---|---|
+| iki gizli konu | **`noindex, follow`** |
+| `addison` · TOC'lu konu · `M` rozetli konu | **`index, follow`** — geri geldi |
+
+Hepsinde `h1` 1 ve canonical kendi yolu. Derleme 622/622; gizli konu önceden
+üretilenler arasında **0** (yani `generateStaticParams` dışlaması bozulmadı).
+
+**Aktarılabilir kural: bir metadata alanını koşullu yazarken `undefined`
+GEÇME — anahtarı hiç ekleme.** Aksi hâlde ata düzenden gelen değeri sessizce
+siliyorsun ve bunu ancak DEĞİŞİKLİK ÖNCESİ/SONRASI karşılaştırması gösterir.

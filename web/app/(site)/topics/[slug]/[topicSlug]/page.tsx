@@ -133,10 +133,55 @@ export async function generateMetadata({
   const aciklama = ozetCikar(veri);
   const yol = `/topics/${slug}/${topicSlug}`;
 
+  /**
+   * GİZLİ KONU ARAMA MOTORUNA KAPALI — iki mekanizma aynı niyeti taşımalı.
+   *
+   * `meta.hidden` bugüne kadar ÜÇ yerde uygulanıyordu: site haritası,
+   * `generateStaticParams` ve branş listeleri. Dördüncü yerde — robots
+   * meta'sında — UYGULANMIYORDU.
+   *
+   * ÖLÇÜLDÜ (canlı, değişiklikten önce): 46 gizli konunun sayfaları
+   * `index, follow` ile ve TAM GÖVDEYLE basılıyordu
+   * (`feokromositoma-ve-paraganglioma` 45 KB, `hipertiroidi-ve-graves-
+   * hastaligi` 20 KB). Kıyas: `/guidelines` haritadan çıkarılmış VE
+   * `noindex, follow` — deponun kendi emsali.
+   *
+   * "Nasıl bulunur ki" savunması ölçümle çürüdü: GÖRÜNÜR bir konunun
+   * içeriğinden gizli bir konuya bağlantı VAR
+   * (`subklinik-tiroid-hastaliklari` -> `hipertiroidi-ve-graves-hastaligi`),
+   * yani taranabilir bir yol açık.
+   *
+   * Bedeli ÇİFT İÇERİK: gizli başlıklarla görünür başlıklar arasında 14
+   * örtüşme ölçüldü (`adrenal-medulla-hastaliklari` [gizli] ~
+   * `adrenal-bez-hastaliklari` / `adrenal-korteks-hastaliklari`). Yani
+   * yayımlanmamış sayfalar kanonik sayfalarla yarışıyordu.
+   *
+   * `follow` bilerek korunuyor (`/guidelines` de öyle): sayfa dizine
+   * girmiyor ama içindeki bağlantılar izlenmeye devam ediyor. Sayfa
+   * 404'e ÇEVRİLMİYOR — adresle erişim bilinçli bir karar (bkz.
+   * `generateStaticParams` notu) ve paylaşılmış bağlantılar kırılmamalı.
+   */
+  const gizli = veri?.meta?.hidden === true;
+
   return {
     title: baslik,
     description: aciklama || undefined,
     keywords: Array.isArray(veri?.meta?.tags) ? veri.meta.tags : undefined,
+    /**
+     * KOŞULLU YAYILIM ŞART — `robots: undefined` yazmak MİRASI SİLİYOR.
+     *
+     * İlk denemede `robots: gizli ? {...} : undefined` yazıldı ve A/B ölçümü
+     * yakaladı: değişiklikten ÖNCE görünür konu sayfasında robots meta'sı
+     * VARDI (kök düzenden gelen `index, follow`), SONRA hiç yoktu.
+     * Next, anahtarı `undefined` değerle görünce "miras al" değil "bu alanı
+     * kaldır" diye yorumluyor.
+     *
+     * Davranışsal etkisi küçüktü (meta yoksa tarayıcı zaten indeksler) ama
+     * niyet edilmemiş bir değişiklikti. Anahtar artık YALNIZCA gizli konuda
+     * ekleniyor; görünür konular kökün varsayılanını miras almaya devam
+     * ediyor.
+     */
+    ...(gizli ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: yol },
     openGraph: {
       type: "article",
