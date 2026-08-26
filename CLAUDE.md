@@ -15624,3 +15624,40 @@ yolları da say.** Çökme bir kapıydı; kaldırınca arkasındaki koridor
 yürünebilir oldu. Ve daha keskini: **bir borcu bırakırken yazdığın gerekçe,
 sonraki düzeltmenle geçersizleşebilir** — burada gerekçe "o düğmeye
 basılamaz"dı ve düzeltme tam olarak basılabilir yaptı.
+
+### "DEPOLAMA DOLU" HER ZAMAN DOĞRU DEĞİLDİ — kaydetme hatasının İKİ sebebi var
+
+Geçen turun ölçütü (*"bir çökmeyi düzeltince gizlediği yolları say"*) bu
+oturumun öteki düzeltmelerine sürüldü. Depo engelliyken konu sayfası ayakta
+kaldığı için **vurgu akışı da çalışır durumda** — orada ne olduğu ölçüldü.
+
+**İyi haber: yol zaten doğruydu.** Hata fırlamıyor, vurgu boyanıyor ve
+`role="alert"` kutusu çıkıyor — "kaydetme hatası yutulmaz" kuralı işliyor.
+
+**Ama mesaj YANLIŞ SEBEBİ söylüyordu:**
+
+> "Vurgular kaydedilemiyor. Tarayıcı depolaması **dolu** — … **Yer aç**"
+
+Gerçek sebep depo **engelli**. Kullanıcı boşuna yer açmaya çalışıyordu ve
+sunulan eylem işe yaramıyordu.
+
+**Kaynak iki sebebi ZATEN biliyordu:** `saveMarks`in `catch` yorumu *"kota
+dolu / gizli sekme"* diyor — ama fonksiyon `boolean` döndürüyor ve sebep
+yutuluyordu. Bilgi vardı, taşınmıyordu.
+
+Çare: `saveMarks` artık `"ok" | "dolu" | "engelli"` döndürüyor (kota hatası
+`QuotaExceededError` · `NS_ERROR_DOM_QUOTA_REACHED` · `code 22` · `1014` ile
+ayırt ediliyor) ve arayüz **sebebe göre farklı mesaj** basıyor — çünkü iki
+sebebin çaresi de farklı.
+
+| ölçüt | sonuç |
+|---|---|
+| depo engelli | *"…veri saklamayı engelliyor… izin verirsen kaydedilirler"* — "dolu" **geçmiyor** |
+| **negatif** — kota hatası tohumlandı | mesaj hâlâ *"depolaması dolu — Yer aç"* |
+| **negatif** — olağan kayıt | uyarı **yok**, 3 vurgu boyandı ve **3'ü de depoya yazıldı** |
+
+**Aktarılabilir kural: bir hata mesajı SEBEP iddia ediyorsa, o sebebin
+gerçekten ölçüldüğünü doğrula.** Burada mesaj tek bir sebebi varsayıyordu ve
+kod iki sebebi ayırt edebilecek bilgiye sahipti — yalnızca taşımıyordu.
+Yanlış sebep, sebepsizlikten kötü olabilir: kullanıcıyı işe yaramayan bir
+çareye yönlendiriyor.
