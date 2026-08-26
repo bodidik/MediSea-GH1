@@ -12787,3 +12787,43 @@ Hepsinde `h1` 1 ve canonical kendi yolu. Derleme 622/622; gizli konu önceden
 **Aktarılabilir kural: bir metadata alanını koşullu yazarken `undefined`
 GEÇME — anahtarı hiç ekleme.** Aksi hâlde ata düzenden gelen değeri sessizce
 siliyorsun ve bunu ancak DEĞİŞİKLİK ÖNCESİ/SONRASI karşılaştırması gösterir.
+
+#### `undefined` tuzağının kapsamı tarandı — bugün başka kurbanı yok
+
+`robots: undefined` dersinden sonra aynı kalıp bütün metadata alanlarında
+arandı. Kök düzen `title` · `description` · `robots` · `openGraph` · `twitter`
+tanımlıyor, yani miras silinebilecek dört alan var.
+
+| yer | alan | verdikt |
+|---|---|---|
+| konu sayfası | `keywords: … : undefined` | zararsız — kökte `keywords` YOK, silinecek miras yok |
+| `lib/jsonld.tsx` | `keywords`/`description` | JSON-LD nesnesi, Next metadata değil |
+| konu sayfası | **`description: aciklama \|\| undefined`** | **gizil tuzak, bugün ateşlemiyor** |
+
+Üçüncü satır ölçüldü: `ozetCikar` **410 görünür konunun 0'ında** boş dönüyor,
+yani `undefined` dalı hiç çalışmıyor. Ölçülmüş bir kusur olmadığı için
+DEĞİŞTİRİLMEDİ — ama bir konu yalnızca uyarı bölümlerinden ibaret kalırsa
+sayfa kökün açıklamasını kaybeder. (Kaybın yönü de belirsiz: genel bir site
+açıklaması mı yoksa hiç açıklama mı daha iyi, ölçümle verilecek bir karar
+değil.)
+
+#### Oturumun metadata işi ölçekte sınandı — 16 rota, eksik 0
+
+Bu oturumda metadata'ya çok dokunuldu (`rotaMeta`, 11 premium rota, kökün
+`openGraph`/`twitter` sadeleştirmesi, gizli konu `noindex`). Zincirin sağlam
+kaldığı canlıda ölçüldü:
+
+| ölçüt | eksik |
+|---|---|
+| `<title>` | **0 / 16** |
+| `description` | **0 / 16** |
+| `canonical` | **0 / 16** |
+| `og:title` | **0 / 16** |
+| `og:image` | **0 / 16** |
+
+Taranan: `/` · `/topics` · `/tools` · `/uyelik` · branş · konu · araç ·
+`/giris` · `/kayit` · `/profile` · `/tekrar` · `/calisma-alanim` ·
+`/guidelines` · `/tr/premium` · premium pano · premium branş.
+
+Açıklamalar sayfaya özgü ve sayılar sayılıyor (`/topics` → "13 branşta 410
+konu başlığı") — "sayı yazma, saydır" mimarisi metadata tarafında da ayakta.
