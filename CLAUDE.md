@@ -15516,3 +15516,30 @@ gözlenemediği için):
 yazdığını doğrula.** `outline-none` sınıf adı "outline yok" diyor, üretilen
 kural "saydam outline" diyor — ve ikisi farklı dize. Ölçüt sınıf ADINDAN
 değil ÜRETİLEN KURALDAN (ya da computed değerden) kurulmalı.
+
+### "Sessizce devre dışı bırakılmış etkileşim" sınıfı tarandı — iki eksen temiz
+
+Odak halkası bulgusunun mercegi ürünün çekirdek etkileşimlerine çevrildi:
+bir CSS özelliği bir etkileşimi SESSİZCE kapatıyor olabilir mi?
+
+| eksen | ölçüm | sonuç |
+|---|---|---|
+| **`user-select: none`** (metin seçilemez → **vurgulanamaz**) | kaynakta 2 kullanım, içerikte **0** | **temiz** |
+| **`pointer-events: none`** (tıklama yutulur) | 29 kullanım, etkileşimli ögede **0** | temiz |
+
+Birinci satır önemliydi: `select-none` taşıyan iki yerden biri
+`LiteProtected` — kokpitte vaka metnini saran filigran kalkanı. Eğer o metin
+`data-readable` içinde olsaydı sayfa "vurgulanabilir" ilan edip seçime izin
+vermiyor olurdu (bu depoda avlanan **ilan ↔ gerçek** sınıfı). Ölçüldü:
+`YdusCockpit`te `data-readable` **hiç yok**, yani ilan da yok — koruma
+bilinçli ve çelişkisiz. Öteki kullanım `BranchTemplate` ve o ölü kod.
+
+### Bu turun düzeltmeleri CANLIDA doğrulandı
+
+| düzeltme | canlıda |
+|---|---|
+| ilgili konular ad çakışması | 5 bağ, **çakışma 0**, iki MDS kaydı kendi slug'ıyla |
+| arama sonucu ad çakışması | 2 sonuç, **çakışma 0**, ikisi de slug taşıyor |
+| not defteri odak halkası | sınıf yerinde, **üç seçiciye de uyuyor** |
+
+Ölçüm izi temiz (`medisea:*` = 0).
