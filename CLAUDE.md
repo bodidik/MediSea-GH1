@@ -13398,3 +13398,47 @@ Mobil menü KOŞULLU render edildiği için sunucu HTML'inde görünmüyor; men�
 düğmesine basılıp (`aria-expanded` false→true) ölçüldü. **Sunucu HTML'inde
 "0 işaretli" görmek, işaretin olmadığı anlamına gelmez** — koşullu dalı
 çizdirmeden ölçme.
+
+### BASKI STİLİ HİÇ YOKTU — ve arka plan basılmadığı için iki blok BOŞ çıkıyordu
+
+Hiç bakılmamış bir yüzey. Kitlesi belli: nöbetteki asistan bir protokolü ya da
+hesaplayıcı çıktısını kâğıda alıyor.
+
+ÖLÇÜLDÜ (canlı, konu sayfası):
+
+| ölçüt | değer |
+|---|---|
+| `@media print` kuralı | **0** |
+| belge / okuma alanı | 2954px / 1880px → **%36'sı gezinme-süsleme** |
+| koyu zeminli büyük blok | **2** — alt bilgi 579.370 px², premium kartı 100.909 px² |
+| sabit konumlu katman | 2 (not tutamağı, okuma ipucu) |
+
+**Kritik nokta mürekkep israfı DEĞİL:** tarayıcılar varsayılan olarak arka
+planı basmaz, o iki bloğun yazısı da beyaz — yani kâğıtta **görünmez** iki
+şerit çıkıyor. Sabit katmanlar da metnin üstüne biniyor.
+
+**Kapsam bilerek dar ve ayrım ÖLÇÜMLE verildi:**
+
+- `nav` gizleniyor — branş şeridi, İçindekiler (kâğıtta çapa işe yaramaz) ve
+  araç sayfalarındaki `ToolTopNav`.
+- **`button` GİZLENMİYOR.** Klinik hesaplayıcılarda seçili şıklar düğmedir;
+  toptan gizlemek çıktıyı anlamsız yapardı. Ölçüldü: `/tools/bmi` ve
+  `/tools/curb65`'te baskıda gizlenen tek öge `NAV`, kalan `h1` 1 · girdi
+  4–5 · düğme 1 · paragraf 3–4 — yani **hesap kâğıtta duruyor.**
+- Premium tanıtım kartı `data-baskida-gizle` ile işaretlendi (reklam).
+
+**Doğrulama — kuralın SEÇİCİLERİ stylesheet'ten okunup canlı DOM'la
+eşleştirildi:**
+
+| ölçüt | sonuç |
+|---|---|
+| baskı kuralı | 6 |
+| baskıda gizlenecek öge | **6**: HEADER · NAV · A[promo] · BUTTON(sabit) · DIV(sabit) · FOOTER |
+| **negatif** — içerik gizleniyor mu (`h1`·`[data-readable]`·`main`·`p`) | **hiçbiri** |
+| **negatif** — ekran gerilemesi | promo görünür (266px), belge yüksekliği **2954 → 2954** |
+
+**KAPSAM DÜRÜSTLÜĞÜ: baskı ÇIKTISI doğrudan gözlenmedi.** Bu ortamda print
+medyası öykünülemiyor ve belgede kayıtlı olduğu üzere sayfaya `<style>`
+enjekte etmek de çalışmıyor. Doğrulanan üç şey: kural üretilen CSS paketinde
+VAR, seçiciler tam olarak hedeflenen 6 ögeyi tutuyor ve hiçbir içerik ögesini
+tutmuyor, ekran render'ı birebir aynı. "Kâğıtta şöyle görünüyor" DENMİYOR.

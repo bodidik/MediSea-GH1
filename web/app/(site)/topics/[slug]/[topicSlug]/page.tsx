@@ -654,7 +654,7 @@ export default async function TopicDetailPage({
                 * çıkmaz bir bağlantı ile sessizce kaybolan bir dönüşüm yüzeyi
                 * arasındaki üçüncü yol.
                 */}
-              <Link href={premiumHedef} className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
+              <Link href={premiumHedef} data-baskida-gizle className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
 
                 <span className="text-[10px] font-black text-amber-400 uppercase tracking-[0.3em] mb-4 block">

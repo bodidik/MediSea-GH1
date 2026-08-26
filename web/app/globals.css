@@ -532,3 +532,53 @@ label:has(input.sr-only:focus-visible) {
 @media (min-width: 900px) {
   .premium-konu-izgara { grid-template-columns: minmax(0, 1fr) 210px; }
 }
+
+/* ------------------------------------------------------------------
+   BASKI — asistan nöbette protokol çıktısı alıyor, sayfanın tamamını değil.
+
+   ÖLÇÜLDÜ (canlı, konu sayfası): `@media print` kuralı **0** idi ve
+   sonuçları somut:
+
+     belge 2954px, okuma alanı 1880px  -> sayfanın %36'sı gezinme/süsleme
+     koyu zeminli iki büyük blok       -> alt bilgi 579.370 px², premium
+                                          tanıtım kartı 100.909 px²
+     sabit konumlu iki katman          -> not tutamağı, okuma ipucu
+
+   Kritik nokta: tarayıcılar varsayılan olarak ARKA PLANI BASMAZ. O iki
+   bloğun yazısı beyaz olduğu için kâğıtta **görünmez** çıkıyor — yani
+   mürekkep israfı değil, boş şeritler. Sabit katmanlar da metnin üstüne
+   biniyor.
+
+   Kapsam bilerek dar: yalnızca GEZİNME ve süsleme gizleniyor.
+   - `nav` gizleniyor: branş şeridi, İçindekiler (kâğıtta çapa işe yaramaz)
+     ve araç sayfalarındaki ToolTopNav.
+   - `button` GİZLENMİYOR: klinik hesaplayıcılarda seçili şıklar düğmedir;
+     gizlemek çıktıyı anlamsız yapardı (araç sayfasında ölçüldü: header 0,
+     footer 0, nav 1, buton 2 — yani hesap kâğıtta kalıyor).
+   ------------------------------------------------------------------ */
+@media print {
+  header,
+  footer,
+  nav,
+  .fixed,
+  [data-baskida-gizle] {
+    display: none !important;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Okuma alanı kâğıtta tam genişlik; ekran için konan tavanlar kalksın. */
+  main, [data-readable] {
+    max-width: none !important;
+    width: auto !important;
+  }
+
+  /* Başlık sayfanın dibinde yalnız kalmasın, tablo/kod ortadan bölünmesin. */
+  h1, h2, h3, h4 { break-after: avoid-page; }
+  table, pre, blockquote, figure { break-inside: avoid; }
+
+  img { max-width: 100% !important; }
+}
