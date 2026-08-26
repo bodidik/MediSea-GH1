@@ -16038,3 +16038,58 @@ ebeveynini gösteriyor. Zinciri her sayfada tekrarlamak fazlalık olurdu.
 arıyordu; kırıntı VARDI ama adsız bir `<div>`di. Kaynağı okumak düzeltti.
 **Bir ögenin yokluğunu ARADIĞIN NİTELİKLE kanıtlama** — nitelik eksikse öge
 yok sanılıyor, ki burada asıl bulgu tam olarak o eksiklikti.
+
+### KIRINTI KALIBI ÜÇ SAYFA TÜRÜNDE HİZALANDI — biri KENDİ açtığım tutarsızlıktı
+
+Geçen tur konu sayfasının kırıntısını landmark'a aldım ve tek diziden
+ürettim. **Kapsamı saymadığım için branş sayfası geride kaldı**: düz bir
+`<div>` ve iki gerçeklik (şema dizisi + JSX ayrı ayrı yazılı). Ölçüldü —
+branş sayfası 3 basamaklı kırıntı İLAN ediyor ama `Kırıntı yolu` landmark'ı
+YOKTU.
+
+Bu, belgede iki tur önce yazdığım kuralın ihlali: *"bir kalıbı çok dosyaya
+yayarken HER KOPYASINI say."* Kuralı yazan tur, kuralı kendi işine
+uygulamamış.
+
+| ölçüt (branş sayfası) | sonuç |
+|---|---|
+| görünür ↔ şema | **birebir aynı** |
+| `aria-current="page"` | 1 |
+| liste yapısı | `ol/li` |
+| kontrast · dokunma hedefi | 7.06 · 32px |
+| 375px yatay taşma | 0 |
+
+#### Araç şemasının KÖKÜ de farklıydı
+
+`[Klinik Araçlar, <araç>]` ile başlıyordu, konu/branş şeması `[MediSea, …]`
+ile. Arama sonucunda **aynı sitenin iki sayfa türü FARKLI kökle** görünürdü.
+
+Üreteçte tek satır değişti, 130 layout yeniden üretildi — dosya başına **tam
+1 satır**. Site geneli ölçüldü: beş sayfa türünün beşinde de kök "MediSea".
+
+**Gerekçe ÜRETECE yazıldı, şablona değil.** Bir denemede şablona konan 4
+satırlık yorum **130 dosyaya kopyalandı** (130 × 5 satır); geri alındı.
+Kural: üretilen dosyaya giren her satır dosya sayısıyla çarpılır — açıklama
+üretecin kendi yorumunda durur.
+
+#### Araç sayfasında TRAIL yok ve bu bir eksik DEĞİL — ölçüldü
+
+Belgede bir dönem *"araç sayfalarında görünür kırıntı olmadığı için ortada
+şema–ekran çelişkisi yok"* yazıyordu. O gerekçe zayıftı (görünmeyen bir
+kırıntıyı ilan etmek Google'ın kılavuzuna göre zaten uyumsuz), ama **sonuç
+doğruydu** ve bu tur ölçümle gösterildi:
+
+| şema adımı | sayfadaki görünür karşılığı |
+|---|---|
+| MediSea | "🏠 Ana Sayfa" çipi → `/` |
+| Klinik Araçlar | "📂 Tüm Araçlar" çipi → `/tools` |
+| eGFR (CKD-EPI 2021) | **`<h1>`** |
+
+Araç şeridi bir **yardımcı çubuk** (Geri + Ana Sayfa + Tüm Araçlar +
+Kütüphane + Branş); iz biçimine çevirmek "Geri" düğmesini ve çip
+affordansını kaybettirirdi. Yani şemanın her adımının görünür karşılığı VAR,
+yalnızca ayraçlı iz olarak değil çip olarak render ediliyor.
+
+**Aktarılabilir kural: bir gerekçeyi "çelişki yok" diye kapatırken, çelişkinin
+OLMADIĞINI de ölç.** Eski not doğru sonuca yanlış yoldan varmıştı; ölçüm
+yapılmadığı için bir sonraki tur (bu tur) onu yeniden açmak zorunda kaldı.
