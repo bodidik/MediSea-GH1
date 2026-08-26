@@ -1,5 +1,6 @@
 "use client";
 
+import { GORUNURLUK } from "@/app/lib/gorunurluk";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
@@ -610,9 +611,16 @@ async function appendAndSave() {
                         value={(b.visibility || "V") as any}
                         onChange={(e) => setBlocks((prev) => prev.map((x, idx) => (idx === i ? { ...x, visibility: e.target.value as any } : x)))}
                       >
-                        <option value="V">V</option>
-                        <option value="M">M</option>
-                        <option value="P">P</option>
+                        {/* Etiketler `app/lib/gorunurluk.ts`ten geliyor.
+                            Eskiden burada ÇIPLAK HARFLER duruyordu (V/M/P) ve
+                            operatör hangi kodun açık sayfada hangi rozeti
+                            bastığını hiçbir yerden göremiyordu — aynı ilişki
+                            iki dosyada ayrı tutulduğu için de ayrışmıştı. */}
+                        {(Object.keys(GORUNURLUK) as (keyof typeof GORUNURLUK)[]).map((k) => (
+                          <option key={k} value={k}>
+                            {k} — {GORUNURLUK[k].aciklama}
+                          </option>
+                        ))}
                       </select>
                     </div>
 

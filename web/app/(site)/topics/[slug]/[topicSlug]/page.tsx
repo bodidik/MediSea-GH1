@@ -8,6 +8,7 @@ import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
 import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
 import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
+import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
@@ -467,7 +468,12 @@ export default async function TopicDetailPage({
                     <section key={idx} className="relative group">
                       {section.visibility !== 'V' && (
                         <span className="absolute -top-4 right-0 text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded bg-amber-100 text-amber-800">
-                          {section.visibility === 'M' ? 'Sadece Hekim' : 'Taslak'}
+                          {/* Eşleme `app/lib/gorunurluk.ts`te tek kaynakta:
+                              yönetim editörü de aynı sözlükten etiketleniyor.
+                              Eskiden burada satır içi yazılıydı ve editör
+                              çıplak harf gösterdiği için operatör hangi kodun
+                              hangi rozeti bastığını göremiyordu. */}
+                          {gorunurlukRozeti(section.visibility)}
                         </span>
                       )}
                       <h2

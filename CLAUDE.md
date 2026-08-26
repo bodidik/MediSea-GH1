@@ -12574,3 +12574,46 @@ yokla.**
 **Ölçüm izi temizlendi:** `medisea:*` anahtarları silindi ve **0** olduğu
 sayıldı. Silinenler arasında belgede "önceki turdan kalmış" diye kayıtlı
 `medisea:kartlar:v1:fc-endo-akromegali-001` de vardı — o kalıntı da kapandı.
+
+### YÖNETİM EDİTÖRÜ ÇIPLAK KOD HARFİ GÖSTERİYORDU — aynı ilişki iki yerde
+
+Açık taraf "veri ilan ediyor, render yok sayıyor" ekseninde tarandı ve
+**temiz çıktı**: 456 dosyadaki bütün alanlar tüketiliyor
+(`title` · `summary` · `meta.order/tags/updatedAt/parent/hidden` ·
+`sections.heading/html/text/visibility`), görünür konularda **2 057 bölümün
+0'ı başlıksız, 0'ı boş gövdeli**. Sınıf premium'a özgüymüş.
+
+Ama tarama başka bir ayrışma gösterdi — `visibility` kodu İKİ YERDE ayrı
+yorumlanıyordu:
+
+| yer | ne yapıyor |
+|---|---|
+| yönetim editörü | `<option>V</option> <option>M</option> <option>P</option>` — **çıplak harfler** |
+| konu sayfası | `visibility === 'M' ? 'Sadece Hekim' : 'Taslak'` |
+
+Yani operatör `P` seçtiğinde açık sayfada **"Taslak"** rozeti çıkacağını
+hiçbir yerden göremiyordu; editör kodun ANLAMINI değil KENDİSİNİ gösteriyordu.
+Deponun "aynı ilişki iki yerde ayrı tutulursa ayrışır" sınıfının **operatör**
+tarafındaki hâli.
+
+Eşleme `app/lib/gorunurluk.ts`e alındı; iki yüzey de oradan besleniyor.
+**Davranış değişmedi** — `V` rozetsiz, `M` "Sadece Hekim", `P` ve tanınmayan
+her değer "Taslak" (konu sayfasının eski eşlemesinin birebir aynısı).
+
+| ölçüt | sonuç |
+|---|---|
+| `aml-gilteritinib-ds-yonetimi` (1 `M` bölüm) | "Sadece Hekim" — değişmedi |
+| `aml-gilteritinib-midostaurin` (1 `M` bölüm) | "Sadece Hekim" — değişmedi |
+| **negatif** — `addison` (7 bölüm, hepsi `V`) | rozet **0** |
+| boş rozet | **0** |
+
+**⚠ ROZET BİR ERİŞİM KISITI DEĞİL, BEYAN — ve bu ölçüldü.** İçerikte `V`
+dışında yalnızca **2 bölüm** var, ikisi de `M` ve ikisi de GÖRÜNÜR konuda;
+içerikleri (728 ve 378 karakter) herkese basılıyor. `visibility` hiçbir yerde
+süzgeç olarak kullanılmıyor — yalnızca rozet üretiyor. Bunu değiştirmek
+içerik/erişim politikası kararıdır; ölçüldü, kaydedildi, DEĞİŞTİRİLMEDİ.
+
+**Kapsam dürüstlüğü:** yönetim editörünün yeni etiketleri RENDER EDİLEREK
+doğrulanmadı — `/admin/*` middleware ile `/giris`e yönlendiriliyor ve o kapıyı
+açmak auth katmanına dokunmak demek. Tip denetimi geçiyor ve etiketler ortak
+sözlükten türüyor; "ekranda görüldü" DENMİYOR.
