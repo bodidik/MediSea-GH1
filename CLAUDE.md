@@ -14840,3 +14840,60 @@ konumla işliyor (`key={adimIndex}`), yani bugün etkisi yok. Kayda geçti.
 **Aktarılabilir kural: bir denetim bir kusuru kaçırdığında, ölçütü kusurun
 BİÇİMİNE göre genişlet — o biçim büyük olasılıkla tek örnekli değildir.**
 Bu turda bir kusuru arayan ölçüt üç tane daha buldu.
+
+### VURGU KOYU KUTUDA METNİ OKUNMAZ YAPIYORDU — bant açık, zemini AÇIYOR
+
+Çalışma aracının çekirdek görseli hiç ölçülmemişti: **vurgulanan metin okunur
+kalıyor mu?**
+
+Mekanizma ters yönde çalışıyor. Fosforlu kalem bandı yarı saydam ve **AÇIK**:
+beyaz zeminde koyulaştırıyor (iyi), ama **koyu bir kutunun içinde zemini
+AÇIYOR** ve açık renkli yazıyla kontrast çöküyor.
+
+**Canlıda ölçüldü** (`hematoloji/aml` — renkli vurgu kullanan en yoğun konu;
+171 öge, 33 renk-zemin kombinasyonu): **13'ü eşiğin altına düşüyor.**
+
+| metin / zemin | vurgusuz | sarı bantta |
+|---|---|---|
+| açık rose / slate-900 | 6.63 | **1.55** |
+| açık indigo / indigo-900 | 5.73 | **1.78** |
+| açık emerald / slate-900 | 9.29 | **2.18** |
+
+**Kapsam dar DEĞİL:** 410 görünür konunun **203'ü (%49.5)** okuma alanında koyu
+kutu taşıyor, ayrıca iki premium vurgu yüzeyi (quiz kokpiti, inciler) baştan
+sona koyu.
+
+**Kaynaktaki yorum tam TERSİNİ iddia ediyordu** — *"Bu sayede hem açık zeminli
+hem koyu zeminli sayfalarda metin okunur kalır — iki ayrı tema seti
+gerekmez."* Gerekçe kapsamı (%45) doğru sayıyordu ama **bandın kendi rengini**
+hesaba katmıyordu. İddia ölçümle çürütüldü ve yorum düzeltildi.
+
+**ÇARE BELİRLENİMCİ OLMALI.** Bant yarı saydam olduğu için bileşke zemin
+ALTINDAKİ kutuya bağlıydı — yani aynı vurgu nereye konduğuna göre okunur ya da
+okunmaz oluyordu. Artık `mark` kendi **OPAK tabanını** ve **KOYU yazı rengini**
+veriyor.
+
+| bant | önce (koyu kutuda) | sonra |
+|---|---|---|
+| sarı | **1.55** | **13.88** |
+| yeşil | 1.93 | 13.21 |
+| mavi | 2.45 | 11.37 |
+| pembe | 2.59 | **10.95** |
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| beyaz zeminde aynı değerler mi | **evet** — 10.95–13.88, yani vurgu artık yerinden bağımsız |
+| fosforlu kalem görünümü duruyor mu | **evet**, `background-image` gradyanı yerinde |
+| açık sayfada zemin değişti mi | hayır — zaten beyazdı |
+
+Bedeli açıkça yazılı: koyu kutuda vurgu artık **beyaz tabanlı** bir kalem izi.
+Okunur ve sayfanın geri kalanıyla tutarlı; alternatifi (1.55 kontrastlı yazı)
+çok daha kötü.
+
+**Aktarılabilir kural: yarı saydam bir katmanın kontrast etkisi, ALTINDAKİ
+yüzeye bağlıdır — yani tek bir yüzeyde ölçmek o katmanı doğrulamaz.** Bu
+depoda aynı ders zemin tarafında kayıtlıydı ("degradeyi göremeyen ölçüm");
+buradaki hâli ÖN katman için: bandın kendisi açıksa koyu zeminde kontrastı
+düşürür, koyu ise açık zeminde.
