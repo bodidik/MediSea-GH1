@@ -602,16 +602,28 @@ export default function SiteHeader() {
             <div className="lg:hidden">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Branşlar</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {branches.map((branch) => (
-                  <Link
-                    key={branch.slug}
-                    href={`/topics/${branch.slug}`}
-                    onClick={() => setMenuOpen(false)}
-                    className="text-[13px] font-bold text-slate-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg px-3 py-2 transition-colors"
-                  >
-                    {branch.name}
-                  </Link>
-                ))}
+                {/* Masaüstü şeridi `hidden lg:flex`, yani TELEFONDA birincil
+                    gezinme burası — "şu an buradasın" işareti asıl burada
+                    gerekiyor. İki kanal: renk/zemin + alt çizgi. */}
+                {branches.map((branch) => {
+                  const buradaMi = suAnkiYol === `/topics/${branch.slug}`;
+                  return (
+                    <Link
+                      key={branch.slug}
+                      href={`/topics/${branch.slug}`}
+                      onClick={() => setMenuOpen(false)}
+                      aria-current={buradaMi ? "page" : undefined}
+                      className={
+                        "text-[13px] font-bold rounded-lg px-3 py-2 transition-colors " +
+                        (buradaMi
+                          ? "text-blue-800 bg-blue-50 underline underline-offset-4 decoration-2"
+                          : "text-slate-600 hover:text-blue-700 hover:bg-blue-50")
+                      }
+                    >
+                      {branch.name}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 

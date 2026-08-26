@@ -13356,3 +13356,45 @@ ayırt edilemez. `aria-label="Branşlar"` eklendi.
 
 "Tam 1" ölçütü şart: koşul yanlış yazılsaydı ya hiçbiri ya hepsi işaretlenirdi
 ve iki hata da "aria-current var" diye okunurdu.
+
+#### Sınıf süpürüldü — ve süpürme sırasında KENDİ ÖLÜ KODUMU ekledim
+
+Branş şeridi düzeltildikten sonra aynı ölçüt bütün gezinme yüzeylerine
+sürüldü. Kendine bağlanan 12 sayfanın kaynakları: başlık logosu · branş
+şeridi · **mobil menü** · `/tools` bağlantısı · alt bilgi.
+
+**En değerli kalan örnek mobil menüydü** ve sebebi ölçülebilir: masaüstü
+şeridi `hidden lg:flex`, yani **1024px altında hiç render edilmiyor** —
+telefonda birincil gezinme mobil menü. Orada "şu an buradasın" işareti hiç
+yoktu. Eklendi (aynı iki kanal: renk/zemin + alt çizgi).
+
+**`/tools` bağlantılarına eklediğim `aria-current` ÖLÜ KODDU — ölçüm
+yakaladı.** Üretilen çıktıda `/tools` sayfasında işaretli bağlantı **0**
+çıktı. Sebep belgede zaten yazılı: `app/tools/*` `(site)` grubunun DIŞINDA,
+yani **SiteHeader o sayfada hiç render edilmiyor** (`mask-edges` imzası
+`/tools` HTML'inde 0, branş sayfasında 1). Üstelik oradaki kendine bağlantı
+zaten işaretli: "Tümü" kategori çipi `aria-current="true"` taşıyor — ve o bir
+SÜZGEÇ olduğu için `"true"` doğru değer.
+
+İki ekleme geri alındı. **Bir kalıbı yayarken, o yüzeyde bileşenin GERÇEKTEN
+render edildiğini doğrula** — "aynı bileşende, aynı istemci kapsamında"
+olması yetmiyor.
+
+**Alt bilgi BİLEREK dışarıda:** `AppShell` bir SUNUCU bileşeni, `usePathname`
+kullanamıyor; işaretlemek için ayrı bir istemci `NavLink` bileşeni açmak
+gerekirdi. Alt bilgi ikincil bir landmark ve "neredeyim" sorusuna oradan
+cevap aranmıyor — ölçüldü, gerekçesi yazıldı, YAPILMADI.
+
+**Doğrulama tarayıcıda, iki genişlik ve iki negatif kontrol:**
+
+| sayfa · genişlik | işaretli | kontrast |
+|---|---|---|
+| `/topics/hematoloji` · **375** | **2** (şerit DOM'da ama gizli + mobil menü) | 8.72 · **8.01** |
+| `/topics/nefroloji` · 1280 | 1 (mobil liste `lg:hidden`) | 8.72 |
+| **negatif** — `/topics` · 375 | **0** | — |
+| **negatif** — `/uyelik` · 1280 | **0** | — |
+
+Mobil menü KOŞULLU render edildiği için sunucu HTML'inde görünmüyor; menü
+düğmesine basılıp (`aria-expanded` false→true) ölçüldü. **Sunucu HTML'inde
+"0 işaretli" görmek, işaretin olmadığı anlamına gelmez** — koşullu dalı
+çizdirmeden ölçme.
