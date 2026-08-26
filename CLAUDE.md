@@ -15014,3 +15014,50 @@ oldu ama `window.scrollX` yine 0 kaldı. Yani bu sayfada çalışan tek ölçüt
 Belgede kayıtlı "iki ölçüt birden gerekiyor" kuralının bir adım ötesi:
 **pozitif kontrolü ölçütün kendisini seçmek için kullan** — hangi ölçütün o
 sayfada iş gördüğünü ancak tohum gösteriyor.
+
+### Yazı boyutu tabanının KAPSAMI sayıldı — kaçan sınıf 0, ücretli yüzey de temiz
+
+Mobil taban kusuru bulunduktan sonra ölçüt genelleştirildi (belgedeki kural:
+*"bir denetim bir kusuru kaçırdığında ölçütü kusurun BİÇİMİNE göre genişlet"*).
+
+**1) Açık taraf — içerikteki HER boyut sınıfı taban listesiyle karşılaştırıldı.**
+410 konu, 11 benzersiz boyut sınıfı:
+
+| kova | sınıflar |
+|---|---|
+| kapsanan (taban uygulanıyor) | `text-[11px]` 3485 · `text-[11.5px]` 1084 · `text-xs` 641 · `text-[12px]` 179 · `text-[10px]` 44 · `text-[13px]` 41 · `text-[10.5px]` 29 · `text-[9px]` 7 |
+| kapsanmayan | `text-sm` 373 (14px) · `text-lg` 7 (18px) · `text-[14px]` 5 |
+
+**14px altında kalan kaçak: 0.** Kapsanmayanların hepsi zaten ≥14px, yani
+tabana ihtiyaçları yok. Sınıf kapalı.
+
+**2) Ücretli okuma yüzeyi — satır içi stil tabanı GÖRMEZ.** Belgede kayıtlı
+uyarı: `[data-readable]` tabanı CSS SINIFLARINA bakıyor, satır içi
+`style={{fontSize}}` ona uymuyor. Premium konu gövdesi satır içi stil
+kullanıyor, yani orada taban hiç işlemiyor.
+
+Kaynak taraması beş premium yüzeyde 14px altı satır içi boyut buldu
+(`page.tsx` 20, `QuizEngine` 20, `VakaEngine` 17, `IcerikBloklari` 3) — ama
+kaynak sayısı **karar vermiyor**: deponun kendi kuralı "okunan metin 15px,
+rozet/sayaç/düğme yazısı serbest" diyor.
+
+Kapı geçici açılıp gerçek sayfa render edildi (`romatoloji/behcet-hastaligi`,
+103 öge):
+
+| ölçüt | değer |
+|---|---|
+| boyut dağılımı | 9×11px · 16×12px · **50×14px · 18×15px · 10×16px** |
+| 14px altı öge | 25 |
+| **bunların EN UZUNU** | **11 karakter** ("Kriter Seti", "Basamaklar", "Pratik not") |
+
+Yani 14px altındaki her öge bir ETİKET (tablo başlığı, bilgi kutusu türü);
+**gövde metni 14–16px** ve açık tarafla aynı aralıkta. Ayırt edici ölçüt
+boyut değil **METİN UZUNLUĞU** oldu — "rozet mi gövde mi" sorusunun ölçülebilir
+karşılığı.
+
+Kapı geri kondu ve doğrulandı ("Erişim Kısıtlı", `[data-readable]` 0).
+
+**Not edilen, DEĞİŞTİRİLMEYEN:** premium tablo başlıkları 12px; açık tarafta
+aynı bilgi küçük sınıf taşısaydı 14px'e çekilirdi. İkisi ayrı mekanizma
+(satır içi ↔ sınıf) ve premium başlıklar ≤11 karakter, büyük harf,
+harf aralıklı — yani etiket olarak tasarlanmış. Ölçüldü, gerekçesi yazıldı.
