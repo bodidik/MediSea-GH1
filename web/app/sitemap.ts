@@ -186,6 +186,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   });
 
+  /**
+   * PREMIUM TANITIM SAYFASI (`/tr/premium`) — kardeşiyle AYNI durumda
+   * olmasına rağmen haritada yoktu.
+   *
+   * Ölçüldü (canlı): `robots.txt` kalıpları `/admin`, `/api`,
+   * dil önekli premium-ydus kalıbı ve `/premium`. `/tr/premium` bunların HİÇBİRİNE
+   * uymuyor (`/premium` kalıbı yolun BAŞINI eşliyor), yani taranabilir;
+   * sayfanın kendi robots meta'sı da `index, follow`. Buna karşılık
+   * haritada YOKTU — yukarıdaki `/tr/premium/ydus` kaydının kapattığı
+   * "iki dosya aynı niyeti taşıyıp farklı davranıyor" kusurunun ikinci
+   * örneği.
+   *
+   * Sayfa gerçek bir dönüşüm yüzeyi: 43 KB gövde, 7 iç bağlantı,
+   * "Neler dahil?" eylemi. Boş bir yer tutucu değil.
+   */
+  kayitlar.push({
+    url: `${base}/tr/premium`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
   // Bilerek DIŞARIDA: /giris ve /kayit (içerik değil, arama değeri yok),
   // /calisma-alanim ve /tekrar (kişisel araçlar; tarayıcıya boş görünürler),
   // /guidelines (henüz yer tutucu — aşağıda dizine kapatıldı).
