@@ -399,9 +399,19 @@ export default async function TopicDetailPage({
               <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
                 {topicItem.title}
               </h1>
-              <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                Güncelleme: {rawData.meta?.updatedAt || "06 MAR 2026"}
-              </div>
+              {/* TARİH UYDURULMAZ. Burada bir dönem `|| "06 MAR 2026"`
+                  yedeği vardı ve `meta.updatedAt` taşımayan 4 görünür konu
+                  CANLIDA o uydurma tarihi basıyordu (ölçüldü: lenfomalar,
+                  nhl-genel, riedel-tiroiditi, hematolojik-maligniteler).
+                  Aynı ilkenin site haritası tarafı `app/sitemap.ts`te
+                  kayıtlı: tarih bilinmiyorsa alan HİÇ basılmıyor —
+                  uydurma bir tazelik sinyali vermektense sinyal vermemek
+                  doğru. `isoTarih()` de ayrıştıramadığında undefined döner. */}
+              {rawData.meta?.updatedAt && (
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                  Güncelleme: {rawData.meta.updatedAt}
+                </div>
+              )}
             </div>
 
             {/* Alt Başlıklar Menüsü (Hub Çocukları) — konuyu bulana kadar menü açılmaya devam eder */}
