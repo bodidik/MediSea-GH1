@@ -14949,3 +14949,68 @@ yorum **tek bir "satır"** sayıldı ve blok bozuk yere taşındı. Ayrıca JSX
 Kural: bir dosyayı betikle düzenlerken **satır sonunu dosyadan oku ve aynısını
 yaz**; bölerken LF'e göre böl, CR'yi ayrıca kırp. Sonuç `git diff --stat` ile
 doğrulanmalı — bu turda 8 ekleme / 1 silme, yani yalnızca hedeflenen değişiklik.
+
+### SATIR UZUNLUĞU VE OKUMA BOYUTU ÖLÇÜLDÜ — bir kusur, bir tasarım kararı
+
+Okuma-öncelikli bir üründe hiç ölçülmemiş bir tipografi ekseni: **satır kaç
+karakter ve gövde metni kaç piksel?** Karakter sayımı `Range` istemci
+dikdörtgenleriyle yapıldı (gerçek satır kırılmaları), tahminle değil.
+
+**1280px, aynı sütun genişliği (806px), iki konu:**
+
+| konu | yazı | ortanca karakter | p90 | en uzun |
+|---|---|---|---|---|
+| `hematoloji/aml` | **14px** | 95 | 106 | 108 |
+| `endokrinoloji/addison` | **16px** | 82 | 92 | 94 |
+
+Fark içerikten geliyor: konu HTML'i gömülü `text-xs`/`text-[11.5px]` gibi
+sınıflar taşıyorsa taban kuralı onları 14px'e çekiyor; taşımayan konu 16px
+kalıyor. **238 / 410 görünür konu (%58) gömülü küçük sınıf taşıyor**, yani
+kütüphanenin çoğunluğu tabanda okunuyor.
+
+Gömülü sınıfların dağılımı da ölçüldü: `<p>` **2857**, başlık 1718, `<ul>`
+384 — ve **tablo içinde yalnızca 17 / 5484**. Yani bunlar süsleme değil,
+GÖVDE METNİ.
+
+#### KUSUR: telefonda DAHA KÜÇÜK ilan edilen sınıf DAHA BÜYÜK basılıyordu
+
+Taban iki kurala yazılmış (masaüstü 14px, telefon 15px) ama **mobil kuralın
+seçici listesi masaüstü listesinden kısaydı** (5 ↔ 10): ondalıklı varyantlar
+(`9px`, `10.5`, `11.5`, `12.5`, `13.5`) mobil listede yoktu.
+
+Ölçüldü (375px, canlı): `text-[11px]` → **15px**, `text-[11.5px]` → **14px**.
+Sıralama tersine dönüyor.
+
+| ölçüt | değer |
+|---|---|
+| etkilenen konu | **177 / 410 (%43.2)** |
+| toplam geçiş | 1120 (1084'ü `text-[11.5px]`) |
+| düzeltme sonrası (375px) | `text-[11.5px]` → **15px** |
+| **negatif** — masaüstü (1280) | **değişmedi**, hepsi 14px |
+| **negatif** — 320px belge genişliği | **320** (taşma yok) |
+
+Liste masaüstü listesinden birebir alındı; yorumda **ikisi ayrışırsa aynı
+kusurun geri geleceği** yazılı.
+
+#### DEĞİŞTİRİLMEYEN: masaüstünde 14 ↔ 16 tutarsızlığı
+
+Kütüphanenin %58'i 14px, %42'si 16px okunuyor. Bunu tekleştirmek 238 konunun
+görünümünü değiştirir ve iki yönü de savunulabilir: 16'ya çıkarmak okunurluğu
+artırır ama içerik yazarının GÖRELİ boyut niyetini (dipnot, ince yazı) daha
+da düzleştirir — zaten 14'e düzleşmiş durumda. Ölçüm, kapsam ve dağılım
+burada; karar içerik/tasarım sahibinin.
+
+#### Ölçüm tuzağı: bu sayfada TAŞMA ölçütlerinin İKİSİ DE kör olabiliyor
+
+900px'lik bir tohum `[data-readable]` içine konduğunda ne kaydırma ne öge
+düzeyi `scrollWidth` bir şey gösterdi. Sebep kusur değil: okuma kartı
+(`bg-white rounded-[2.5rem]`) **`overflow-x: hidden`** ile kırpıyor, yani
+içerik sayfayı taşıramıyor.
+
+Aynı tohum `main` düzeyine konunca **`documentElement.scrollWidth` 320 → 900**
+oldu ama `window.scrollX` yine 0 kaldı. Yani bu sayfada çalışan tek ölçüt
+`documentElement.scrollWidth`.
+
+Belgede kayıtlı "iki ölçüt birden gerekiyor" kuralının bir adım ötesi:
+**pozitif kontrolü ölçütün kendisini seçmek için kullan** — hangi ölçütün o
+sayfada iş gördüğünü ancak tohum gösteriyor.
