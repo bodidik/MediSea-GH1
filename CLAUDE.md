@@ -15159,3 +15159,53 @@ yok ve doğrudan çağırmak hidrasyon uyuşmazlığı üretirdi.
 kullanıcı eylemiyle (dışa aktar / içe aktar) çalışıyor ve depo engelliyken o
 düğmelere basmak zaten anlamsız; ayrıca yedekleme yüzeyi artık uyarının
 altında görünüyor. Ölçüldü, gerekçesi yazıldı.
+
+### PANO YOKSA "Kopyala" SESSİZCE HİÇBİR ŞEY YAPMIYORDU
+
+Depo engellenme sınıfının kardeşi: **güvenli bağlam (secure context)
+gerektiren API'ler**. Bu depo telefondan LAN üzerinden `http://<ip>:3000` ile
+bakmayı AÇIKÇA destekliyor (`-H 0.0.0.0` kararının gerekçesi) ve orada bu
+API'ler tanımsız.
+
+**Tarama (533 dosya):** `crypto.randomUUID` 0 · `crypto.subtle` 0 ·
+`serviceWorker` 0 · `Notification` 0 · `geolocation` 0 · `navigator.share` 0.
+Tek kullanım **`navigator.clipboard`** (5 yer) ve hepsi `?.` ile korumalı —
+yani ÇÖKME yok. Kusur başka:
+
+```js
+navigator.clipboard?.writeText(text).catch(() => {})
+```
+
+Güvensiz bağlamda `?.` kısa devre yapıyor: hiçbir şey kopyalanmıyor, hiçbir
+hata da görünmüyor. Düğmeye basılıyor, arayüz kapanıyor, pano değişmiyor —
+deponun kendi kuralının ihlali: *"Kaydetme hatası yutulmaz."*
+
+**En ağır çağrı yeri `NotePanel`in KOTA KURTARMA düğmesi:** depo dolduğunda
+kullanıcıya "yazıyı kopyala" deniyor; kopyalama sessizce başarısız olursa
+not gerçekten kayboluyor.
+
+`ToolShare` doğru yolu **zaten yazmıştı** (`execCommand` yedeği) — ama
+yalnızca kendi dosyasında. `app/lib/pano.ts` ile tekleştirildi; artık
+`navigator.clipboard` yalnızca o dosyada geçiyor ve üç çağrı yeri ona bağlı.
+
+**Ölçüldü** (güvensiz bağlam taklidi + `execCommand` sahtelenerek):
+
+| durum | sonuç |
+|---|---|
+| yedek **başarısız** | yedek çağrıldı, `role="alert"` uyarısı **ÇIKIYOR** (önce sessizdi) |
+| yedek **başarılı** | uyarı **çıkmıyor**, kopyalama gerçekleşiyor |
+| `ToolShare` başarılı | "ARAÇ BAĞLANTISI KOPYALANDI" |
+| **negatif** — `ToolShare` başarısız | "ARACI PAYLAŞ" kalıyor — **yalan söylemiyor** |
+
+**KENDİ DÜZELTMEMİN İLK YAZIMI ÖLÇÜMDE GÖRÜNMEDİ.** Uyarı kutusunu vurgu
+yöneticisinin içine koymuştum ve o kapsayıcı `marks.length > 0` ile kapılı —
+oysa **kopyalama vurgu gerektirmiyor**. Sayfada hiç vurgu yokken kutu hiç
+render edilmiyordu. Kendi kapsayıcısına alındı.
+
+Aktarılabilir kural: **bir geri bildirimi eklerken, tetikleyen eylemin
+KOŞULLARIYLA kutunun KOŞULLARININ aynı olduğunu doğrula.** Burada eylem
+koşulsuzdu, kutu koşulluydu — ve bunu yalnızca ölçüm gösterdi.
+
+**Yan kazanç:** `ToolShare`in "kopyalandı" dalı belgede *"pano yazma bu
+ortamda çalışmadı, dal hiç çizilmiyor"* diye kayıtlıydı. `execCommand` yedeği
+onu ÖLÇÜLEBİLİR yaptı.
