@@ -16682,3 +16682,64 @@ METİN ALANLARINI okuduğunu da yaz.** Bu depoda aynı bilgi en az dört yerde
 durabiliyor — `label` · `ph`/`placeholder` · JSX gövde metni · veri alanı
 (`max: 28`) — ve bir alanı okumayan ölçüt o alandaki kusuru sessizce
 "temiz" raporluyor.
+
+### ⚠ DİPNOT GÖRÜNMEYEN BİR BÜYÜKLÜĞÜN EŞİĞİNİ VERİYORDU — `rts`
+
+`cdai` bulgusunun VERİ tarafındaki biçimi arandı: **bir veri alanı sınır ilan
+ediyor ama kapı uygulamıyor mu?** 130 araçta **88 sınır alanı** tarandı,
+3 aday çıktı ve **üçü de kusur değildi**:
+
+| aday | verdikt |
+|---|---|
+| `dka-infuzyon` `alt: 15` / `ust: 20` | sınır değil DOZ ARALIĞI — çarpımda okunuyor (`kilo × ILK_SAAT_ML_KG.alt`) ve ekranda tek kaynaktan basılıyor; ölçüt yalnızca KARŞILAŞTIRMA aradığı için işaretledi |
+| `rts` `max: 4` (×3) | yalnızca gösterimde (`/ {p.max}`) — ama değerler DÜĞMEDEN geliyor, serbest girdi ve adres parametresi YOK; 4 aşılamıyor |
+
+**Ama `rts`i açmak çok daha ağır bir şey gösterdi.** Ekran yalnızca AĞIRLIKLI
+RTS'i basıyor (tavan **7.84**); dipnot ise *"RTS ≤ 11 (ham kodlar) travma
+merkezi sevkini önerir"* diyordu. 11 eşiği **T-RTS**'e (ham kod toplamı, 0–12)
+ait ve o sayı **hiçbir yerde gösterilmiyordu**.
+
+Canlıda ölçüldü (düzeltmeden önce):
+
+| kodlar | ekranda |
+|---|---|
+| 4, 4, 4 (en iyi hasta) | RTS **7.84** · HAFİF · %99.2 |
+| 0, 0, 0 | RTS 0.00 · KRİTİK · %22.3 |
+
+Ağırlıklı RTS 11'i **asla aşamaz**, yani dipnotun eşiği ekrandaki sayıya
+uygulanırsa **minimal yaralanmış hasta bile sevk ölçütünü karşılıyor**
+görünüyor. GKS'in "297 / 15", MELD'in eksi skoru ve `hscore`un "169 → %93"
+şeridiyle aynı sınıf: **dış bir kaynağa hiç bakmadan, yalnızca ekranın kendi
+içindeki çelişkiyle görülebilir.**
+
+**Yeni klinik iddia YOK:** T-RTS = g+s+r ve üç kod da zaten ekranda; eşik de
+aracın kendi dipnotunda yazılıydı. Yapılan tek şey ilan edilen kuralı
+UYGULANABİLİR kılmak — `haq-di` · `murray` · `apache2` ile aynı kalıp,
+**yedinci örnek**. Dipnot da artık iki ölçeği ayırıyor.
+
+**Doğrulama — sınır tam noktasından, üçü negatif kontrol:**
+
+| kodlar | T-RTS | sevk notu |
+|---|---|---|
+| 4, 4, 4 | **12 / 12** | **YOK** (12 > 11) |
+| 3, 4, 4 | **11 / 12** | **VAR** — tam sınır |
+| 0, 0, 0 | 0 / 12 | VAR |
+| **negatif** — ağırlıklı RTS ve hayatta kalma | **değişmedi** (7.84/%99.2 · 6.90/%98.3 · 0.00/%22.3) | elle hesapla birebir |
+| **negatif** — bantlar | HAFİF · ORTA · KRİTİK — değişmedi | |
+| **negatif** — 320px | taşma yok; ölçüt kör değil (900px tohum yakalanıyor) | |
+
+**Aktarılabilir kural: bir aracın dipnotu bir EŞİK veriyorsa, o eşiğin
+uygulandığı sayının EKRANDA olup olmadığını sor.** Bu, "ilan edilip
+uygulanmayan kural" sınıfının gösterim tarafındaki hâli: orada eksik olan
+GİRDİydi (yardımcı araç kutusu, ABY kutusu), burada eksik olan ÇIKTI.
+
+**Ölçüm notu — düğme metni tahmin edildi ve tutmadı.** `13–15` arandı, gerçek
+metin **`413–15`**: kod ile etiket bitişik birleşiyor (React metin
+birleşmesi, belgede kayıtlı). Düğme listesi BASILIP okununca göründü.
+
+**Yama tarafında bir tuzak: ÇAPA BELİRSİZDİ.** Eklemeyi
+`satirlar.indexOf('            </div>')` ile konumlandırmak, o dizenin
+dosyada birden çok yerde geçmesi yüzünden bloğu **ızgaradan ÖNCEYE**
+koyacaktı. Çare: önce ızgara satırını bul, kapanışı ONDAN SONRA ara.
+`sed`/`indexOf` ile yama yazarken çapanın dosyada **benzersiz** olduğunu
+ayrıca doğrula.
