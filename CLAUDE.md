@@ -13676,3 +13676,57 @@ görünebilir. Aday üretir, karar vermez.
 Denetim `--kok` ile yönlendirilebiliyor. `yorum-korlugu-denetim`in bayatlama
 koruması onu ilk çalıştırmada **doğru şekilde yakaladı**; içerik JSON taradığı
 için öteki beş içerik denetimiyle aynı kovaya, gerekçesiyle yazıldı.
+
+### İLK AÇILIŞ ve YAZMA UÇLARI ölçüldü — ikisi de temiz, ama ölçüt bir kez 11 SAHTE aday üretti
+
+**1. Veri yokken ilk açılış (çalışma döngüsünün giriş anı).** Çalışma
+yüzeyleri hep TOHUMLU ölçülmüştü; belgedeki *"varsayılan durumu da ölç"*
+kuralı bu yüzeye hiç uygulanmamıştı. Depo boşken (`medisea:*` = 0) ölçüldü:
+
+| yüzey | boş durum |
+|---|---|
+| `/calisma-alanim` | "🖍 HENÜZ NOT ALMADIN" + mekanizmayı anlatan metin + **"Kütüphaneye git →"** + 0/N sayaçlı branş kartları |
+| `/tekrar` | "🖍 TEKRAR EDİLECEK BİR ŞEY YOK" + "kartlar vurgulardan türetilir" + **"KÜTÜPHANEYE GİT →"** |
+| konu sayfası ipucu | `role="note"`, metin döngüyü tarif ediyor, düğmeler **"Anladım"** ve **"Kapat"** |
+
+Adsız kontrol: `/calisma-alanim` 35 kontrolde **0**, `/tekrar` 27'de **0**,
+konu sayfası (ipucu görünürken) 48'de **0**. Dokunma hedefleri 27px ve 24px —
+AA eşiğinin (24) üstünde.
+
+Yani boş durumların üçü de belgedeki üç ölçütü karşılıyor: sistem içi ad
+sızmıyor, kullanıcı suçlanmıyor, **çıkış yolu var**.
+
+**2. Yazma yapan API uçlarında yetki.** Belgede kayıtlı gerçek bir kusur var
+(`/api/topics` PUT'ta `yoneticiMi()` unutulmuştu ve gerçek içerik dosyası
+değiştirilebiliyordu). Merkezileştirme hâlâ tutuyor mu diye 48 rota tarandı.
+
+**İlk ölçüt 11 SAHTE aday üretti** — yalnızca üç yetki şeklini tanıyordu
+(`yoneticiMi` · `session` · `ADMIN_EMAIL`). Kaçırdıkları:
+
+- **ENV SIRRI ile yetki.** `/api/revalidate` `REVALIDATE_SECRET` doğruluyor
+  ve **anahtar tanımsızsa REDDEDİYOR** — yapılandırma eksikliği kapıyı
+  açmıyor, kapalı düşüyor. Doğru davranış, ama grep göremedi.
+- **VEKİL uçlar.** 9 uç yalnızca `backendBase`e proxy yapıyor; Express arka
+  ucu canlıda hiç çalışmadığı için dürüst 503 dönüyorlar (belgede kayıtlı
+  düzeltme). Orada yetki yerel bir mesele değil.
+
+Ayrım netleştirilince tablo şu:
+
+| kova | uç |
+|---|---|
+| yerel etki + yetki VAR | `topics` · `topics/[slug]` (`yoneticiMi`) · `admin/*` · `study` · `kayseritip/*` (oturum) · `revalidate` (env sırrı) |
+| yerel etki + yetki YOK ama **kasıtlı** | `auth/register` (kayıt herkese açık) |
+| vekil (yerel etki yok) | 9 uç → 503 |
+| rotaya alınmıyor (`/api/_*`) | 5 uç → 404 |
+
+**Yetkisiz YEREL yazma ucu: 0.**
+
+**Aktarılabilir kural: bir yetki taraması, yetkinin BÜTÜN biçimlerini
+tanımak zorunda.** Oturum, rol yardımcısı ve env sırrı ayrı şekiller; birini
+bilmeyen ölçüt korumalı bir ucu "açık" gösterir. Bu turda 11 adayın 11'i de
+bu yüzden sahteydi ve yalnızca kaynağı OKUMAK ayırt etti.
+
+**İstek göndererek sınanmadı ve sebebi yazılı:** yetkisiz bir POST'un
+gerçekten reddedildiğini görmenin yolu onu göndermek; reddedilmiyorsa test
+üretim veritabanına YAZAR. Bu oturumun kuralı "üretim veritabanına yazma"
+olduğu için ölçüm kaynaktan yapıldı ve "davranışla doğrulandı" DENMİYOR.
