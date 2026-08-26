@@ -15295,3 +15295,31 @@ geçti mi. Bu turda üçü de "altyapı" dedi ve güncel ağaç 16:32'de yeşil 
 `cancel-in-progress` ayrıca yapısal bir sonuç doğuruyor: **ara commit'lerin
 tamamlanmış koşumu HİÇ olmayabilir.** Anlamlı ölçüt "her commit yeşil mi"
 değil, **"EN SON commit'in koşumu yeşil mi"**.
+
+### Bu oturumun düzeltmeleri CANLIDA doğrulandı — dördü de kullanıcıya ulaştı
+
+Deponun standart sorusu: **kullanıcıya ulaştı mı?** Dört düzeltme canlıda
+tarayıcıyla sürüldü.
+
+| düzeltme | canlıda ölçülen | düzeltme öncesi |
+|---|---|---|
+| uydurma güncelleme tarihi | `lenfomalar` ve `riedel-tiroiditi`de "Güncelleme" satırı **hiç yok** | "06 MAR 2026" |
+| **negatif** — tarihi olan konu | `addison` "14 Mar 2026" basıyor | aynı |
+| klavyeyle çubuğa ulaşma | ilk Tab **çubuğa gidiyor**, odak "Sarı" | 25 durak |
+| **negatif** — çubuk kapalıyken Tab | yutulmuyor | — |
+| pano yedeği | yedek çağrılıyor, başarısızsa **uyarı çıkıyor** | sessizce hiçbir şey |
+| depo engelli uyarısı | sayfa ayakta, **doğru uyarı**, yanlış sebep yok | hata sınırı |
+
+Ölçüm izi temiz (`medisea:*` = 0).
+
+**KENDİ ÖLÇÜT KUSURUM — Türkçe alt dize, bu kez HATA SINIRI dedektöründe.**
+Depo ölçümünde `HATA_SINIRI: true` çıktı ve bir an "sayfa ayakta ama bir alt
+bileşen çöktü" sanıldı. Ölçüt `/BU SAYFA/i` idi ve okuma ipucundaki sıradan
+cümleye takılmıştı: *"**Bu sayfa**yı çalışabilirsin…"*. Hata sınırı YOK.
+
+Bu, belgede defalarca kayıtlı Türkçe alt dize tuzağının (`ağır` → "AĞIRLIK",
+`orta` → "Orta Aktif", `üre` → "süre") **dedektör tarafındaki** hâli — ve
+bu kez tuzağı yazan kuralın sahibi kurbanı oldu. Bir hata dedektörü yazarken
+ölçütü sayfanın KENDİ metniyle çakışmayacak biçimde seç: `role="alert"`
+kutusunun metni, öge sayısı ya da `h1`in boşluğu gibi yapısal sinyaller
+anahtar kelimeden güvenli.
