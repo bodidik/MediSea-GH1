@@ -16266,3 +16266,41 @@ kaynağa bakan bir gözden geçirme bunu göremezdi.
 şekilde: `main` 0 · `h1` 0 · çıkış 0, hidrasyondan sonra tam çiziliyor.
 Premium sayfalar zaten dinamik (auth) olduğu için orada `dynamicParams`
 seçeneği bile yok — sınıf aynı, çare yok, kapsam artık ölçülü.
+
+### OTURUM GERİLEME TARAMASI — 152 dosya değişti, taban bozulmadı
+
+Bu oturumda çok geniş bir yüzeye dokunuldu: beş depo okuyucusu güvenli
+kurtarmaya bağlandı, dört sayfa türünde kırıntı yolu yeniden yazıldı, hata ve
+404 sınırları düzeltildi, 130 araç layout'u yeniden üretildi. **152 dosya /
+1066 ekleme.** Tur tur doğrulandı ama bütün olarak hiç ölçülmemişti.
+
+| eksen | taban (belgede kayıtlı) | bugün |
+|---|---|---|
+| araç · konu · branş | 130 · 410 · 13 | **birebir** |
+| başlık · soru · kart | 41 · 378 · 1492 | **birebir** |
+| paylaşılan ilk yük | 102 kB | **102 kB** |
+| en ağır rota | 123 kB (`/calisma-alanim`) | **123 kB** |
+| 130 kB üstü rota | 0 | **0** |
+| araç rotası ortancası | — | 114 kB (en ağır 120) |
+| 16 yüzeyde `h1` | hepsi 1 | **16/16** |
+| 16 yüzeyde `main` | hepsi 1 | **16/16** |
+| **adsız nav landmark** | — | **0/16** |
+
+Paket satırı kayda değer: bu oturumda `depo.ts`, istemci bir `not-found`,
+kırıntı listeleri ve `brans-arac.json` eklendi — **ölçülebilir ağırlık
+getirmemişler.**
+
+Rapor denetimleri de tabanda: `bölme` 0 · `bant` 0 · `karar` 0 ·
+`kapı-kapsam` 0 yeni · `çöp-kapı` 1 · `eksik-alan` 2 · `eşik-etiket` 0 ·
+`ölü` 5 (dördü belgede karara bağlı) · `ilan-render` 4 şema sapması
+(verdiktleri betiğin başında).
+
+**Ölçüm tuzağı — `/tmp` node'da çözülmüyor.** Kabuk `grep` `/tmp/reg.log`
+dosyasını okuyor ama `node` onu `C:\tmp\reg.log` diye arıyor ve `ENOENT`
+veriyor. Git Bash'in `/tmp` eşlemesi node'a taşınmıyor; ölçüm betiğine dosya
+vereceksen **Windows yolu** kullan ya da scratchpad'e kopyala.
+
+**İkinci tuzak — kabuk `/` ile başlayan değişkeni YOL SANIYOR.** Etiket
+olarak geçirilen `"/${y:-}"` çıktıda `C:/Program Files/Git/topics` diye
+göründü; ölçüm doğruydu, yalnızca ETİKET bozulmuştu. Bir raporda yol gibi
+görünen beklenmedik bir önek varsa önce kabuğun dönüşümünü sor.
