@@ -16558,3 +16558,93 @@ sayıları ölçülmüştü: `h1` 1 · `main` 1 · 14 başlık, **düzey atlamas
 Son satır ölçülmeliydi: sağ gruba 62px ekledim ve rozet metni plana göre
 uzuyor; başlık o genişlikte grupları bitişik gösteriyor, yani "bugün sığıyor"
 yeterli bir kanıt değildi.
+
+### ALAN OKUNUYORDU AMA YANLIŞ İŞ İÇİN — `cdai` "max 28" yazıp 3996 kabul ediyordu
+
+Bu tur iki ölçütle başladı; birincisi temiz çıktı, ikincisi kusur buldu.
+
+**1) Sabit yazılmış SAYI ilanı ↔ dizi uzunluğu — TEMİZ.** Ölçüt `murray`
+kusurunun ("Tüm 4 parametreyi tamamlayın" derken kural "kullanılan parametre
+sayısına böl" diyordu) genel biçimi. 130 araçta **17 sayı ilanı**; 16'sı o
+uzunlukta bir diziyle birebir. Tek aday `rts` ("3 parametre") ve o da yanlış
+pozitif: RTS'in üç bileşeni ÜÇ AYRI dizi (`GCS_OPTS` · `SBP_OPTS` · `RR_OPTS`),
+yani ölçütün "tek dizi" varsayımı tutmuyor.
+
+**Sayacım önce +1 veriyordu ve bütün 23 aracı "sapan" gösteriyordu.** Sebep
+sondaki virgüldü: `{a}, {b},` üç öge sayılıyordu. Belgede kayıtlı tuzağın
+(`grep -c` tip anotasyonunu sayıyor) kardeşi. **Bir tarama ilk çalıştırmada
+neredeyse HER ŞEYİ işaretliyorsa, ölçüt kusurudur** — sistematik +1 kaymasının
+kendisi imzaydı.
+
+**2) Etiketin ilan ettiği ARALIK ↔ kapı — KUSUR.** Aynı fikir, farklı eksen:
+etiket "(0–28)" diyorsa hesap onu uyguluyor mu?
+
+#### `max` alanı VARDI, okunuyordu — ama yalnızca EKRANA basmak için
+
+```tsx
+{ label: "SJC — Şiş Eklem Sayısı (0–28)", …, max: 28 },   // veri
+<span …>max {max}</span>                                   // TEK okuyucu
+const hasResult = dolu(tjc) && dolu(sjc) && …              // karar: sınır YOK
+```
+
+Bu, `steroid-dose`un `gluco` alanıyla aynı aileden ama **daha sinsi bir
+biçim**: alan ölü DEĞİL, yani "sıfır okuyucu" ölçütü onu göremez. Okunuyor —
+sadece kararın değil GÖSTERİMİN parçası olarak. Sonuç, deponun en çok tekrar
+eden sınıfı: **aynı sayı iki gerçeklikte.**
+
+**Canlıda ölçüldü:**
+
+| girdi | ekranda | ilan |
+|---|---|---|
+| 28 / 28 / 10 / 10 | 76 · YÜKSEK AKTİVİTE | "Max: 28+28+10+10 = 76" ✓ |
+| **999 / 999 / 999 / 999** | **3996** · YÜKSEK AKTİVİTE | aynı sayfa "max 28" diyor |
+| **SJC 28 → 280** (tek fazladan sıfır) | **328** · YÜKSEK AKTİVİTE | — |
+
+İkinci satır GKS'in "297 / 15" ve MELD'in eksi skoruyla aynı şekil: **dış bir
+kaynağa hiç bakmadan, yalnızca ekranın kendi içindeki çelişkiyle görülebilir.**
+Üçüncü satır asıl klinik bedel — RA'da remisyondaki bir hasta tek bir yazım
+hatasıyla "YÜKSEK AKTİVİTE" alıyor ve o bant tedavi değişikliği kararını
+besliyor.
+
+**Sınırlar TANIMSAL, klinik eşik değil:** TJC/SJC 28 eklemli bir sayımdır,
+PGA/EGA 10 cm'lik VAS'tır. Yani bu, `calvert`in makullük sınırından farklı —
+üstü tartışma konusu değil, tanım gereği imkânsız.
+
+**Çare kardeş araçtan geldi ama BİREBİR kopyalanmadı.** `das28` aynı sınırı
+zaten uyguluyor (`Math.min(28, Math.max(0, …))`) — sessiz kıskaçla. Burada
+REDDEDİP sebebi yazmak seçildi: deponun `heparin-nomogram` kuralı
+(*"kırpıyorsan SÖYLE"*) ve `calvert`/`bmi`/`basdai`nin sebep kartı kalıbı bu
+yönde. Sessiz kıskaç, kullanıcının girdiği sayıyı haber vermeden değiştirir.
+
+**Doğrulama — yedi senaryo, dördü negatif kontrol:**
+
+| girdi | sonuç |
+|---|---|
+| meşru tavan 28/28/10/10 | **76 · YÜKSEK** — değişmedi |
+| saçma 999×4 | sonuç yok + sebep, **dört alan da ADIYLA** |
+| tek yazım hatası SJC 280 | sonuç yok, **YALNIZCA SJC işaretli** |
+| **negatif** — hepsi 0 | **0 · REMİSYON** — meşru sıfır korundu |
+| **negatif** — olağan 5/3/4/4 | **16 · ORTA** — elle hesapla birebir |
+| **negatif** — boş form | **sessiz**, uyarı YOK |
+| **negatif** — çöp girdi "abc" | yalnızca TJC işaretli — çöp koruması ayakta |
+
+Üçüncü satır ayırt edici: sebep kartı toptan "değerleri kontrol et" demiyor,
+**hangi alanın** sorunlu olduğunu söylüyor.
+
+`sdai` ayrıca sınır değerinden **üç noktadan** ölçüldü: CRP 10 → **86**
+(sayfanın ilan ettiği "max ~86" ile birebir), tam **50 geçiyor**, **50.1
+düşüyor**. CRP mg/dL ve 0–50 sınırı keyfî değil: 50 mg/dL = 500 mg/L, yani
+`das28`in CRP tavanıyla aynı yer.
+
+**Aktarılabilir kural: bir alanın OKUNUYOR olması, DOĞRU İŞ için okunduğunu
+göstermez.** "Sıfır okuyucu" ölçütü ölü alanı bulur; bu biçimi bulmaz. Doğru
+soru: *bu alan bir SINIR ilan ediyorsa, o sınırı UYGULAYAN kod var mı?*
+Ölçütü kurmanın ucuz yolu — etikette/veride geçen aralığı, aynı dosyadaki
+kapı ifadesiyle karşılaştır.
+
+**Not edilen, DEĞİŞTİRİLMEYEN:** `sdai`nin CRP tavanı 50 olduğu için
+ulaşılabilir skor 126'ya çıkıyor, oysa başlık "max ~86" diyor. Tilde bilerek
+orada — SDAI'de CRP tanım gereği sınırsız ve "~86" CRP≈10 varsayımının kısaltması.
+Ayrıca `das28` sessiz kıskaç kullanmaya devam ediyor; ölçüldü, kardeşlerinden
+farklı olduğu kayda geçti, ama çalışan bir aracı aynı turda değiştirmek
+ölçülmüş bir kusuru düzeltmek olmazdı.
