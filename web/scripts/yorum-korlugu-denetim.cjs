@@ -58,6 +58,10 @@ const KAPSAM_DISI = new Set([
   'link-denetim.cjs',    // içerikteki bağlantılar (JSON)
   'soru-denetim.cjs',    // quiz/kart yapısı (JSON)
   'yetim-denetim.cjs',   // yetim içerik dosyaları (JSON)
+  // İçerik alanlarını KODLA karşılaştırıyor: veri tarafı JSON, kod tarafını
+  // zaten kendisi yorum-maskeliyor. Sentetik tohumda `content/` olmadığı
+  // için burada sınanamaz — kendi tarihsel kontrolü var (bkz. dosya başlığı).
+  'ilan-render-denetim.cjs',
 ]);
 
 /** Hedef şekiller SADECE yorumda; kod tarafı tertemiz. */

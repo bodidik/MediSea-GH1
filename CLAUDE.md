@@ -13628,3 +13628,51 @@ bozulmadığı ayrıca ölçülmeli.
 **Vaka içeriğinde eksik alan sayımı da not** (render tarafı korumalı, boş kutu
 basmıyor): 35 adımın 12'sinde `aciklama_kisa`/`aciklama_detay`, 6'sında
 `sonraki_bilgi`, 17'sinde `baslik` yok. Bunlar içerik eksiği, kod kusuru değil.
+
+### "İLAN EDİYOR, RENDER YOK SAYIYOR" SINIFI ARTIK DENETİMLİ — `ilan-render-denetim.cjs`
+
+Sınıf bu oturumda **beş kez** çıktı ve sonuncusu ÇÖKMEYDİ. Altıncısını kazara
+bulmayı beklemek yerine ölçüte çevrildi: her içerik türünün alan adları
+toplanıp onu okuyan bileşenlerdeki okumalarla karşılaştırılıyor.
+
+| içerik | kayıt | alan | aday |
+|---|---|---|---|
+| premium konu | 596 | 10 | **0** |
+| **quiz sorusu** | 428 | 24 | 10 |
+| vaka adımı | 46 | 18 | **0** (bu turda düzeltildi) |
+| **flashcard** | 1662 | 8 | 1 |
+| **inci** | 15 | 8 | 1 |
+| açık konu bölümü | 2746 | 8 | **0** |
+
+**TARİHSEL KONTROL — ölçütün en güçlü doğrulaması.** Düzeltme ÖNCESİ
+`VakaEngine` (`HEAD~1`) ile sürüldüğünde `aciklamalar` alanını **4 kayıtta
+yakalıyor**; güncel depoda o satır temiz. Yani ölçüt sentetik tohumla değil
+GERÇEK bir kusurla sınandı.
+
+**12 adayın hepsi karara bağlandı, gerçek kusur YOK:**
+
+- **`accessLevel` (36 içerik dosyası) — ÖLÜ ALAN.** Hiçbir içerik kodu
+  okumuyor; erişim `AccessGate` ile ROTA düzeyinde sağlanıyor, yani sızıntı
+  değil. Ama `steroid-dose`un `gluco` alanıyla aynı tuzak, üstelik daha
+  sinsi: yönetim tarafındaki `accessLevel` **BAŞKA bir şey**
+  (`'V'|'M'|'P'`, veritabanı ezmesi, `/api/admin/access`). Biri bir flashcard
+  setine `accessLevel: "free"` yazıp ücretsiz örnek açtığını sanabilir —
+  hiçbir şey olmaz. Daha kötüsü, gating'in bu alandan geldiğini sanıp
+  `AccessGate`i kaldırabilir.
+- **İngilizce şema (10 kayıt)** — `hematoloji/aml-quiz-1.json`. Motor
+  `veri.sorular ?? []` ile karşılıyor ve `sorular.length === 0` dalında
+  dürüst boş durum + "← Konuya dön" bağlantısı basıyor. **Çökme YOK.**
+
+**Belgedeki "yetim" iddiası DÜZELTİLDİ:** o dosya için *"şema sapması
+kullanıcıya ulaşmıyor"* yazıyordu. Ulaşmıyor ama gerekçe eksikti — dosyaya bir
+bağlantı VAR (`_hematoloji/aml/page.tsx` → `?id=aml-quiz-1`), yalnızca o sayfa
+alt çizgili klasörde olduğu için rotaya alınmıyor. Yani adres kurulabilir;
+koruma "bağlantı yok" değil, motorun boş listeyi karşılaması.
+
+**Ölçütün sınırı dosyanın içinde yazılı:** kod tarafı METİNSEL taranıyor, yani
+`{...obj}` yayılımıyla ya da `obj[degisken]` ile okunan bir alan "okunmuyor"
+görünebilir. Aday üretir, karar vermez.
+
+Denetim `--kok` ile yönlendirilebiliyor. `yorum-korlugu-denetim`in bayatlama
+koruması onu ilk çalıştırmada **doğru şekilde yakaladı**; içerik JSON taradığı
+için öteki beş içerik denetimiyle aynı kovaya, gerekçesiyle yazıldı.
