@@ -16743,3 +16743,39 @@ dosyada birden çok yerde geçmesi yüzünden bloğu **ızgaradan ÖNCEYE**
 koyacaktı. Çare: önce ızgara satırını bul, kapanışı ONDAN SONRA ara.
 `sed`/`indexOf` ile yama yazarken çapanın dosyada **benzersiz** olduğunu
 ayrıca doğrula.
+
+#### Sınıf taraması YAZILDI ama SINIFI KAPATMIYOR — kapsam 19/130
+
+`rts` bulgusunun ölçütü betiğe alındı: **bant merdiveninin en büyük eşiği**
+aracın kullanıcıya gösterdiği ölçeğin üst ucudur; dipnotta bunun ÜSTÜNDE bir
+eşik geçiyorsa o eşik başka bir ölçeğe ait olabilir.
+
+**Pozitif kontrol geçti — sentetik tohumla değil GERÇEK kusurla:** düzeltme
+öncesi `rts` (`4a548c75~1`) taranınca *"bant tavanı 7.84 · eşik 11"* diye
+yakalanıyor.
+
+Ama kapsam dar ve bu **sonucun kendisinden daha önemli**:
+
+| ölçüm | değer |
+|---|---|
+| araç | 130 |
+| bant merdiveni SAPTANAN | **19** |
+| saptanamayan | **111** |
+| dipnot eşiği bant tavanını aşan | 2 (`rts` — düzeltilmiş metin) + 1 yanlış pozitif |
+
+Yanlış pozitif `flipi`: *"yaş (&gt; 60)"* bir YAŞ ölçütü, skor eşiği değil.
+Birim süzgeci sayının ARDINDAKİ kelimeye bakıyor, burada birim ÖNDE
+("yaş (> 60)").
+
+**Merdiven bu depoda en az üç biçimde yazılıyor** ve üçü de toplandığı hâlde
+111 araç dışarıda kalıyor — çoğu gerçekten merdivensiz (infüzyon
+hesaplayıcıları, çevirici) ama `curb65` · `heart` · `apache2` · `news2` ·
+`sofa` gibi merdiveni OLANLAR da listede.
+
+**Bu yüzden sınıf KAPALI DEĞİL ve "temiz" DENMİYOR.** Betik kapsam dışı
+listesini de basıyor; "0 aday" ile "0 ölçüm" ayrımı raporun içinde.
+
+Otomatik kapatmanın önündeki gerçek engel şu: dipnottaki eşiğin
+karşılaştırılması gereken şey, aracın **manşet olarak bastığı sayının
+tavanı** — ve o sayı çoğu araçta ancak aracı SÜREREK bulunuyor. `rts` de
+zaten taramayla değil, aracı açarak bulundu.
