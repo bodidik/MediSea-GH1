@@ -15735,3 +15735,60 @@ uyarı var mı" ölçütüm `/bozuk/i` ile eşleşip **true** demişti; metin
 **"Elektrolit BOZUKLukları"** idi. `role="alert"` kutusu SAYILINCA gerçek
 sayı 0 çıktı. Anahtar kelime yerine **yapısal sinyal** kullan — bu ders
 belgede zaten üç kez kayıtlı ve dördüncü kez aynı yerden vurdu.
+
+### AYNI SINIF ÜÇ DEPODA DAHA — not, tekrar takvimi ve günlük sessizce siliniyordu
+
+Geçen tur vurgularda kapatılan sınıf süpürüldü. Şekil **dört okuyucuda
+birden** vardı: `JSON.parse` hatası yutuluyor, nötr değer (`{}` / `[]` / `""`)
+dönüyor, kullanıcıya hiçbir şey söylenmiyor, ve kullanıcı o yüzeyde bir şey
+yaptığı anda kaydetme **bozuk kaydın üzerine yazıyor.**
+
+Bozuk kayıt tohumlanıp GERÇEK arayüzle sürüldü:
+
+| depo | ölçülen |
+|---|---|
+| **not defteri** | panel **BOŞ** açılıyor, `role="alert"` **0**; kullanıcı "burada notum yok" sanıp yazınca **ELLE YAZDIĞI not** gidiyor |
+| **tekrar takvimi** | `/tekrar` ZİYARETİ bozmuyor (prune boş kümede yazmıyor), ama ilk derecelendirmede **SM-2 geçmişi** gidiyor |
+| **çalışma günlüğü** | aynı derecelendirmede gidiyor |
+| başlık dizini | aynı şekil — ama yeniden üretilebilir, değeri düşük |
+
+İlk üçü **yeniden üretilemez** veri. Kurtarma artık tek kaynakta:
+`app/lib/depo.ts` (`guvenliOku` · `guvenliNesneOku` · `guvenliDiziOku`).
+
+**İKİNCİ BİÇİM DE KAPANDI — ve o, geçen turki kendi düzeltmemin boşluğuydu.**
+`loadMarks` yalnızca `JSON.parse` HATASINA bakıyordu; "geçerli JSON ama
+yanlış ŞEKİL" (dizi yerine nesne) hâlâ yedeksiz siliniyordu. Bu depoda o
+biçimin ölçülmüş örneği zaten kayıtlı (`strokes` alanına dize düşünce
+"10 çizgi" uydurması). Ölçüldü: `{"yanlis":"sekil"}` tohumu **yedeğe taşındı.**
+
+**`:bozuk` SON EKİNİN GÜVENLİ OLDUĞU ÖLÇÜLDÜ, VARSAYILMADI.** Yedek anahtar
+`medisea:marks:v2:<yol>:bozuk` biçiminde ve `collectAll` önek taraması onu
+bir YOL sanıyor — yani hayalet kart üretmesi beklenirdi:
+
+| ölçüt | sonuç |
+|---|---|
+| depodaki yedek anahtar | 4 |
+| Çalışma Alanım'da **hayalet bağlantı** | **0** |
+| gerçek kayıt görünüyor mu | evet |
+
+Sebep yapısal, rastlantı değil: yedeğin içeriği **tanım gereği**
+ayrıştırılamaz (yalnızca ayrıştırılamayan kayıt yedeklenir), o yüzden kayıt
+boş kalıp eleniyor. Dışa aktarım da sızdırmıyor — `readAll` `json<T>` ile
+okuyor, bozuk değer `null` dönüyor ve `Array.isArray(v) && v.length`
+süzgecinden düşüyor.
+
+**Negatif kontroller:** geçerli veriyle yedek anahtar **oluşmuyor (0)**,
+vurgu boyanıyor, not yeniden yüklemede **birebir geri geliyor**, takvim ve
+günlük bozulmuyor; yeni bir yazma mevcut yedeği **silmiyor**.
+
+**Ölçüm tuzağı — Türkçe harf, üçüncü kez aynı oturumda.** `/goster/i` deseni
+`/tekrar`daki **"Göster"** düğmesini bulamadı (JS `i` bayrağı `Ö`↔`o`
+katlamıyor) ve bir an "düğme yok" sanıldı. Düğme listesi BASILIP okununca
+göründü.
+
+**İkinci ölçüm tuzağı — satır sonu probu YANLIŞ sonuç verdi.**
+`head -c 4000 | grep -q $'\r'` dört dosyada da "LF" dedi; dosyalar **saf
+CRLF**ti. Yama satır bazlı olduğu için karışık satır sonu üretebilirdi;
+`grep -c` ile CRLF satırı ile toplam satır KARŞILAŞTIRILINCA gerçek durum
+çıktı (943/943 = saf). Satır sonu iddiasını tek bir `grep -q` ile kurma —
+**say ve oranla.**
