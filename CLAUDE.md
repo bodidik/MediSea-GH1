@@ -14604,3 +14604,63 @@ bir kusur sanıldı. Sebep tahmin değil SAYIMDI: her çağrı bir TOGGLE yapıy
 ve pariteyi kaybetmiştim. Adım adım (tıklama öncesi/300/700/1500 ms) ölçünce
 davranış tutarlı çıktı. **Durum makinesini test ederken her adımın hangi
 yönde çevirdiğini yaz** — yoksa kendi testin sana kusur uydurur.
+
+### ⚠ SLUG YENİDEN ADLANDIRMASI KULLANICI VURGULARINI YETİM BIRAKIYOR
+
+Vurgular yola göre saklanıyor (`medisea:marks:v2:<yol>`). Bir konu yeniden
+adlandırıldığında yönlendirme adresi kurtarıyor ama **anahtarı kurtarmıyor.**
+
+**ÖLÇÜLDÜ (canlı):**
+
+| adım | sonuç |
+|---|---|
+| eski yola vurgu tohumlandı | `…marks:v2:/topics/hematoloji/hodgkin-lenfoma` → **1 kayıt** |
+| eski adres ziyaret edildi | **`/topics/hematoloji/hodgkin`e yönlendi** (200) |
+| varılan sayfada | **kayıt 0 · mark 0** |
+
+Vurgu SİLİNMİYOR — eski anahtarda duruyor ve `/calisma-alanim`da kart olarak
+görünüyor (bağlantısı da çalışıyor, çünkü yönlendirme var). Ama konuyu açan
+kullanıcı kendi işaretlerini **göremiyor**.
+
+**KAPSAM TAM OLARAK ÖLÇÜLDÜ — `next.config.js`te 6 yönlendirme var:**
+
+| tür | adet | vurguyu etkiler mi |
+|---|---|---|
+| **konu** (`hodgkin-lenfoma` · `nhl` · `burkitt-lenfoma`) | **3** | **EVET** |
+| araç (`heart-score` · `sledai2k`) | 2 | **HAYIR** — araç sayfalarında `data-readable` yok (ölçüldü) |
+| dil öneki | 1 | hayır |
+
+Yani bugün etkilenebilecek yol sayısı **3**.
+
+#### Düzeltilmedi — gerekçe ve tasarım
+
+Ürün henüz satışta değil (`/uyelik`: "Premium henüz satışta değil"), yani bu üç
+yolda vurgusu olan gerçek kullanıcı büyük olasılıkla yok. Buna karşılık bir göç
+katmanı **kullanıcı verisini sessizce taşıyan** yeni bir yüzey açar.
+
+Yapılacaksa tasarımı şu ve **tek kaynak kuralına uymalı**: `next.config.js`teki
+`redirects()` zaten eski→yeni eşlemesini tutuyor; ikinci bir elle liste
+tutmak bu depoda tur tur avlanan "iki gerçeklik" kusurunu üretir. Doğrusu
+`arac-index.json` kalıbı — yönlendirmelerden üretilen bir `content/
+yonlendirme.json` ve istemcide "bu yolda kayıt yoksa bilinen eski yolu kontrol
+et" adımı.
+
+**Rename yaparken bilinmesi gereken:** `link-denetim` yönlendirmeyi meşru çözüm
+sayıyor ve haklı — ama o yalnızca BAĞLANTIYI kurtarıyor. Kullanıcı verisi ayrı
+bir borç ve yeniden adlandırma kararının parçası.
+
+#### Yan ölçüm: konusu SİLİNMİŞ vurgu — sayfa dürüst davranıyor
+
+Var olmayan bir yola vurgu + not + dizin kaydı tohumlandı (hedef gerçekten
+404). `/calisma-alanim`:
+
+| ölçüt | sonuç |
+|---|---|
+| sayfa ayakta / hata sınırı | **evet / yok** |
+| kayıt görünüyor mu | evet — "1 vurgu · ✎ 23 karakter not" |
+| bağlantı | 404'e gidiyor (ama 404 sayfası dürüst ve 38 çıkış bağlantılı) |
+| kullanıcı temizleyebiliyor mu | **evet**, kartta "SİL" düğmesi var |
+
+Yani veri kaybı yok ve çıkmaz yok; kullanıcı ölü kaydı kendisi kaldırabiliyor.
+Kaydı otomatik silmek YANLIŞ olurdu — belgedeki kural gereği konteyneri
+bulunamayan vurgu silinmez (konu geçici olarak da yok olabilir).
