@@ -15472,3 +15472,47 @@ göstermek olurdu.
 dönmemişti) ve bir an "iki farklı sorgu aynı sonucu veriyor" sanıldı.
 Belgede kayıtlı kural: her senaryoyu yalıt — aramada bu, kutuyu ÖNCE
 boşaltıp beklemek demek.
+
+### ODAK GÖRÜNÜRLÜĞÜ TARANDI — dedektör önce KÖRDÜ, sonra tek kusuru buldu
+
+Belgede *":focus bu ortamda gözlenemiyor"* kayıtlı ve bu eksen o yüzden hiç
+taranmamıştı. Ama asıl kusur ÖLÇÜLEBİLİR: **varsayılan halkayı KALDIRIP
+yerine bir şey koymayan** ögeler.
+
+**İlk dedektör kördü ve sebebi öğretici.** CSSOM'da `outline: none` arayan
+ölçüt **0** buldu. Tailwind'in `outline-none` sınıfı `none` DEĞİL
+**`2px solid transparent`** üretiyor — ölçüldü, ögenin computed
+`outlineStyle` değeri **`solid`**. Kaynakta ise **148 kullanım / 81 dosya**
+var. Yani "0 kural" ile "0 ölçüm" bir kez daha aynı görünmüştü.
+
+Düzeltilmiş ölçütle (açılış etiketini **süslü parantez dengesiyle** kesen
+tarayıcı — belgedeki `=>` tuzağı):
+
+| kova | sayı |
+|---|---|
+| `outline-none` taşıyan etkileşimli öge | 146 |
+| programatik odak hedefi (`tabIndex={-1}`) — muaf | 5 |
+| **göstergesi olmayan** | **1** |
+
+Tek istisna `NotePanel`in yazma alanı: odakta tek işaret imleçti. Çare depo
+kalıbına hizalanmak — `focus:ring-2 focus:ring-inset focus:ring-blue-700`.
+`inset`, çünkü alan panel gövdesini kaplıyor (419×662) ve dıştan halka
+kenarlara taşardı.
+
+**Doğrulama, belgedeki ÜÇ ÖLÇÜLEBİLİR HALKA ile** (odak boyaması
+gözlenemediği için):
+
+| halka | sonuç |
+|---|---|
+| Tailwind kuralı üretti mi | `ring-2` · `ring-inset` · `ring-blue-700` — **üçü de** üretilmiş CSS'te |
+| öge seçiciye uyuyor mu | **üçü de** `true` |
+| halka rengi çözülüyor mu | `--tw-ring-color` okunuyor |
+| ölçüt yeniden sürüldü | riskli **0** |
+
+**Kapsam dürüstlüğü:** odağın GERÇEKTEN boyandığı gösterilemedi
+(`document.hasFocus()` kısıtı belgede kayıtlı).
+
+**Aktarılabilir kural: bir CSS özelliğini ararken, çerçevenin onu NASIL
+yazdığını doğrula.** `outline-none` sınıf adı "outline yok" diyor, üretilen
+kural "saydam outline" diyor — ve ikisi farklı dize. Ölçüt sınıf ADINDAN
+değil ÜRETİLEN KURALDAN (ya da computed değerden) kurulmalı.
