@@ -12870,3 +12870,50 @@ programla geliyor.
 depoda KAÇ yerde geçerli olduğunu say.** Bu kural araç sayfaları için
 yazılmıştı ve site kabuğu ile sonradan eklenen içindekiler ondan habersiz
 kaldı — kuralı yazmak uygulamak değildir.
+
+### BELGEDE YAZILI AMA HİÇ TARANMAMIŞ ÜÇ KURAL SÜRÜLDÜ — üçü de temiz
+
+Atlama bağlantısı bulgusu ("kural yazmak uygulamak değildir") aynı şüpheyi
+öteki kurallara taşıdı. Belge üç kuralı daha kaydediyor ve **hiçbirinin
+tarama sonucu yazılı değildi.** Üçü de sürüldü.
+
+**1. `group-hover:` yazdıysan `group-focus-within:` de yaz.**
+Görünürlüğü açan hover varyantı taşıyan 7 yer bulundu:
+
+| yer | verdikt |
+|---|---|
+| konu sayfası · `ReadingTools` · `SiteHeader` | **focus karşılığı VAR** ✓ |
+| `premium/page.tsx` ×4 · `PremiumDailyProgram` | süsleme (`opacity-10`→`20` arka plan ikonu) — hiçbir şey gizlenmiyor |
+| admin ×2 | `opacity-80`→`100` metin, görünürlük kapısı değil |
+| **`TopicSidebar`** | tek gerçek boşluk — **ama ÖLÜ KOD** (sıfır içe aktaran, ölçüldü) |
+
+Ölü koda dokunulmadı; belgede kayıtlı ders ("ölü koda düzeltme yaptım —
+bağlı olduğunu doğrulamadan") tam bunun için var. **Kural ulaşılabilir her
+yerde uygulanmış.**
+
+**2. Tıklanabilir görünen her şey gerçekten tıklanabilir olsun.**
+82 `cursor-pointer`/`cursor:'pointer'` kullanımından etkileşimli OLMAYAN
+etikette duran 6'sı elle sınandı:
+
+| aday | verdikt |
+|---|---|
+| `vaka-coz` · `SectionsTable` · `kayseritip` ×2 | saran `<Link href>` — gerçek |
+| `BranchTemplate` | `onClick` var ama ÖLÜ KOD |
+| **`FlashcardPlayer`** | `onPointerUp` → hareket <10px ise `flip()` — **tıklama GERÇEKTEN çeviriyor** |
+
+Sonuncusu ilk bakışta sahte görünüyordu (çevresinde `onClick` yok); işleyici
+`onPointerDown`/`onPointerUp` çiftindeydi ve dokunuşu kaydırmadan ayırıyor.
+**Sahte tıklanabilir öge: 0.**
+
+**3. Dokunma hedefi en az 24px.**
+375px'te üç sayfa (ana · konu · araç), **133 etkileşimli öge**, 24px altı
+hedef **0**. Gizlenmiş onay kutuları için saran `<label>` ölçüldü, `sr-only`
+ögeler elendi — ikisi de belgede kayıtlı sahte-bulgu kaynakları.
+
+**Ölçüt kör değil:** 10×10 piksellik bir düğme tohumlandı → küçük hedef
+0 → **1**, tohum kalkınca yeniden **0**.
+
+**Aktarılabilir kural: belgeye bir kural yazdıktan sonra TARAMA SONUCUNU da
+yaz.** Yazılı ama taranmamış bir kural, uygulandığı sanılan bir kuraldır;
+bu üçünden biri gerçekten boşluk taşıyordu (ölü kodda) ve bunu ancak tarama
+gösterdi.
