@@ -83,3 +83,50 @@ export function listelenmeyenKategori(
     return null;
   }
 }
+
+/* ------------------------------------------------------------------ */
+
+/**
+ * Açık branş slug'ı -> PREMIUM branş slug'ı (karşılığı yoksa `null`).
+ *
+ * ÖLÇÜLEN KUSUR: açık konu sayfalarındaki premium tanıtım şeridi bağlantıyı
+ * `/tr/premium/ydus/${slug}` diye KURUYORDU, yani açık branş slug'ını
+ * doğrudan kullanıyordu. İki taraf aynı kümeyi taşımıyor:
+ *
+ *   açık branş  : 13  (genel-dahiliye · gogus · journal-club · klinik-nutrisyon · palyatif dahil)
+ *   premium branş: 9  (gogus premium tarafta `gogus-hastaliklari` adıyla duruyor)
+ *
+ * Sonuç canlıda ölçüldü: **24 konu sayfası 404 veren bir bağlantı**
+ * gösteriyordu (klinik-nutrisyon 9 · palyatif 5 · journal-club 5 · gogus 3 ·
+ * genel-dahiliye 2). Kart tıklanabilir, iddialı ve çıkmazdı.
+ *
+ * Varlık DOSYADAN okunuyor, bir listeden değil — premium branş eklendiğinde
+ * bağlantı kendiliğinden açılıyor, bu dosyayı kimsenin güncellemesi
+ * gerekmiyor. Elle tutulan tek şey ad sapması ve BİR tane:
+ */
+const PREMIUM_TAKMA_AD: Record<string, string> = {
+  // Açık taraf "gogus", premium taraf "gogus-hastaliklari" — aynı branş.
+  gogus: "gogus-hastaliklari",
+};
+
+let _premiumBranslar: Set<string> | null = null;
+
+function premiumBranslar(): Set<string> {
+  if (_premiumBranslar) return _premiumBranslar;
+  try {
+    const dizin = path.join(process.cwd(), "content", "premium", "ydus", "branches");
+    _premiumBranslar = new Set(
+      fs.readdirSync(dizin)
+        .filter((f) => f.endsWith(".json"))
+        .map((f) => f.slice(0, -5))
+    );
+  } catch {
+    _premiumBranslar = new Set();
+  }
+  return _premiumBranslar;
+}
+
+export function premiumBransSlug(acikSlug: string): string | null {
+  const aday = PREMIUM_TAKMA_AD[acikSlug] ?? acikSlug;
+  return premiumBranslar().has(aday) ? aday : null;
+}

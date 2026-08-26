@@ -13150,3 +13150,87 @@ TOHUM kusuru. Kartlar zaten vurgulardan üretildiği için sayfa 320 kartı
 doğru gösterdi.
 
 **Ölçüm izi temizlendi:** 301 `medisea:*` anahtarı silindi, kalan **0**.
+
+### TAM SİTE GRAFI ÇIKARILDI — 24 konu sayfası 404 VEREN bağlantı gösteriyordu
+
+Bağlantı bütünlüğü daha önce **7 yüzeyden 184 bağlantıyla** ölçülmüştü. Bu
+tur bütün site gezildi: site haritasındaki **558 adres** çekilip her birinin
+iç bağlantıları toplandı — 586 benzersiz hedef.
+
+**Ölçüt İKİ AŞAMALI olmak zorunda ve ilk aşama kusuru GİZLİYOR.** `curl -L`
+ile ölçülünce 266 bağlantının 266'sı da "200" veriyordu; `-L` yönlendirmeyi
+izlediği için ölü slug'lar sağlam görünüyor (belgede kayıtlı `heart-score`
+sınıfı). Ham durum ölçülünce tablo değişti:
+
+| durum | sayı | ne |
+|---|---|---|
+| 200 | 573 | temiz |
+| **404** | **5** | **gerçek kırık bağlantı** |
+| 308 | 3 | eski slug, yönlendirmeyle çalışıyor |
+| 400 / 000 | 5 | **ölçüm artefaktı** — Türkçe slug kodlanmadan istendi |
+
+#### Kusur: premium tanıtım şeridi AÇIK branş slug'ıyla bağlantı kuruyordu
+
+Her açık konu sayfasının kenarında bir premium şeridi var ve bağlantı
+`/tr/premium/ydus/${slug}` diye kuruluyordu. İki taraf aynı kümeyi taşımıyor:
+
+```
+açık branş   : 13   (genel-dahiliye · gogus · journal-club · klinik-nutrisyon · palyatif dahil)
+premium branş:  9   (gogus premium tarafta "gogus-hastaliklari" adıyla duruyor)
+```
+
+Canlıda ölçüldü — **24 konu sayfası 404'e bağlanıyordu:**
+
+| branş | sayfa | sebep |
+|---|---|---|
+| klinik-nutrisyon | 9 | premium karşılığı YOK |
+| palyatif · journal-club | 5 + 5 | premium karşılığı YOK |
+| **gogus** | **3** | premium karşılığı VAR, **adı farklı** |
+| genel-dahiliye | 2 | premium karşılığı YOK |
+
+Kart tıklanabilir, iddialı ("çıkmış tüm YDUS soruları") ve çıkmazdı.
+
+**Aynı kartta İKİ kusur daha vardı:**
+
+- **Başlık ham slug'dan basılıyordu** (`slug.replace(/-/g," ")`): ekranda
+  "YDUS **KLİNİK NUTRİSYON**" yazıyordu, doğrusu "KLİNİK **NÜTRİSYON**".
+  Doğru kaynak (`getSpecialty(slug).title`) aynı dosyada zaten içe
+  aktarılmıştı ve on satır yukarıda kullanılıyordu.
+- **Metin, premium içeriği OLMAYAN branşta da branşa özgü iddiada
+  bulunuyordu** — "ilan mı gerçek mi" sınıfı.
+
+**Çare varlığı DOSYADAN doğrulamak** (`premiumBransSlug`): premium branş
+dizini bir kez okunuyor, elle tutulan tek şey ad sapması ve o da BİR satır
+(`gogus → gogus-hastaliklari`). Yeni bir premium branş eklendiğinde bağlantı
+kendiliğinden açılıyor.
+
+**Karşılığı olmayan branşta kart KALDIRILMADI.** İki kolay yol da yanlıştı:
+çıkmaz bağlantı bırakmak kusurun kendisi, kartı silmek 21 sayfada dönüşüm
+yüzeyini sessizce yok etmek. Üçüncü yol: hedef premium ana sayfası, başlık
+"YDUS Hazırlık", metin branşa özgü iddia taşımıyor ("bu branşın modülü henüz
+hazırlanıyor").
+
+**Doğrulama üretilmiş çıktıda, ikisi negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| beş ölü hedefe bağlanan sayfa | **0** (önce 24) |
+| `gogus/sarkoidoz-ana` | → **`/gogus-hastaliklari`** · "YDUS Göğüs Hast." |
+| karşılığı olmayan branşlar | → `/tr/premium/ydus` · "YDUS Hazırlık" · branş iddiası **0** |
+| **negatif** — `hematoloji` | → `/hematoloji` · "YDUS Hematoloji" · branşa özgü metin **duruyor** |
+
+**Kalan iki bulgu karara bağlandı:**
+
+- **3 × 308** (`burkitt-lenfoma` · `hodgkin-lenfoma` · `nhl`, hepsi
+  `hematolojik-maligniteler` içeriğinden): yönlendirme gerçek sayfalara
+  varıyor ve `link-denetim` bunu bilerek kabul ediyor. Gizli borç ama
+  belgede kayıtlı meşru çözüm — DOKUNULMADI, üstelik içerik kullanıcının.
+- **5 × 400/000**: Türkçe slug'lar `curl`e kodlanmadan verilmişti. Kodlanınca
+  üçü de **200**. Aynı artefakt "yetim sayfa" ölçümünde de çıktı: site
+  haritası yüzde-kodlu, `href` ham Türkçe — iki taraf normalleştirilmeden
+  karşılaştırılınca beş sahte yetim üretiyor.
+
+**Aktarılabilir kural: bir bağlantı taramasında `-L` KULLANMA.** Yönlendirme
+izleyen bir ölçüt yalnızca "bugün açılıyor mu" sorusunu cevaplıyor; "doğru
+adrese mi bağlanıyor" sorusunu ancak HAM durum cevaplıyor. Bu depoda ikisinin
+farkı 5 kırık bağlantı ve 3 gizli borç.

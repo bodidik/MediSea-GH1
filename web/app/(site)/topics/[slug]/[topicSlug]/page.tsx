@@ -9,6 +9,7 @@ import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
 import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
+import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
@@ -283,6 +284,11 @@ export default async function TopicDetailPage({
     .replace(/\s+/g, " ")
     .trim().length;
   const icindekilerGoster = topicItem.sections.length >= 4 && govdeUzunlugu >= 6000;
+
+  /* Premium tanıtım şeridinin hedefi — dosyadan doğrulanıyor, açık branş
+     slug'ından türetilmiyor (bkz. premiumBransSlug: 24 sayfa 404 veriyordu). */
+  const premiumBrans = premiumBransSlug(slug);
+  const premiumHedef = premiumBrans ? `/tr/premium/ydus/${premiumBrans}` : "/tr/premium/ydus";
 
   // 2. OTOMATİK AĞAÇ YAPISI (Çocuklar ve Torunlar)
   const allFiles = fs.readdirSync(branchDir).filter(f => f.endsWith(".json"));
@@ -634,26 +640,44 @@ export default async function TopicDetailPage({
                 </div>
               )}
 
-              {/* Dinamik YDUS-Premium Tanıtımı */}
-             	      <Link href={`/tr/premium/ydus/${slug}`} className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
-                	      <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
-                
-              	       <span className="text-[10px] font-black text-amber-400 uppercase tracking-[0.3em] mb-4 block">
-               	          MediSea Premium
-                       </span>
-                
-                       <h4 className="text-xl font-black italic uppercase leading-tight mb-3">
-                          YDUS {slug.replace(/-/g, ' ')} 
-      	           </h4>
-                
-         	          <p className="text-sm text-blue-200 font-medium mb-6 leading-relaxed">
-                		 Bu branşla ilgili çıkmış tüm YDUS soruları ve çözümlü vaka analizleri Premium abonelere özel.
-                	      </p>
-                
-                       <div className="inline-block bg-amber-500 text-slate-900 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-full group-hover:bg-white transition-colors">
-                          İncele →
-           	         </div>
-                    </Link>
+              {/**
+                * YDUS-Premium tanıtımı.
+                *
+                * Bağlantı bir dönem `/tr/premium/ydus/${slug}` diye AÇIK branş
+                * slug'ıyla kuruluyordu. İki taraf aynı kümeyi taşımıyor (açık 13,
+                * premium 9 branş; "gogus" premium tarafta "gogus-hastaliklari")
+                * ve canlıda ölçüldü: **24 konu sayfası 404 veren bir bağlantı**
+                * gösteriyordu. Hedef artık dosyadan doğrulanıyor.
+                *
+                * Karşılığı olmayan branşta kart KALDIRILMIYOR, premium ana
+                * sayfasına gidiyor ve metin branşa özgü iddiada BULUNMUYOR —
+                * çıkmaz bir bağlantı ile sessizce kaybolan bir dönüşüm yüzeyi
+                * arasındaki üçüncü yol.
+                */}
+              <Link href={premiumHedef} className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
+
+                <span className="text-[10px] font-black text-amber-400 uppercase tracking-[0.3em] mb-4 block">
+                  MediSea Premium
+                </span>
+
+                {/* Başlık ham slug'dan DEĞİL branş künyesinden geliyor:
+                    "klinik-nutrisyon" -> "KLİNİK NUTRİSYON" yazıyordu,
+                    doğrusu "KLİNİK NÜTRİSYON". */}
+                <h4 className="text-xl font-black italic uppercase leading-tight mb-3">
+                  {premiumBrans ? `YDUS ${getSpecialty(slug).title}` : "YDUS Hazırlık"}
+                </h4>
+
+                <p className="text-sm text-blue-200 font-medium mb-6 leading-relaxed">
+                  {premiumBrans
+                    ? "Bu branşla ilgili çıkmış tüm YDUS soruları ve çözümlü vaka analizleri Premium abonelere özel."
+                    : "Çıkmış YDUS soruları, çözümlü vaka analizleri ve klinik inciler Premium abonelere özel. Bu branşın modülü henüz hazırlanıyor."}
+                </p>
+
+                <div className="inline-block bg-amber-500 text-slate-900 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-full group-hover:bg-white transition-colors">
+                  İncele →
+                </div>
+              </Link>
 
             </div>
 
