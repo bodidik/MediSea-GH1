@@ -340,6 +340,31 @@ export default async function TopicDetailPage({
       `${slug}/${topicSlug}`
     ] ?? [];
 
+  /**
+   * GÖRÜNÜR AD ÇAKIŞMASI — aynı adlı iki bağlantı, farklı hedef.
+   *
+   * Bağlantının görünür adı `başlık` + (branş farklıysa) branş etiketi.
+   * İki kayıt bu adı PAYLAŞIYORSA kullanıcı onları ayırt edemiyor ve
+   * ekran okuyucuda AYNI ADLI iki bağlantı farklı yere gidiyor.
+   *
+   * Ölçüldü (canlı, 408 ilgili listesi): çakışma 4 listede — hepsi
+   * hematolojide ve kökleri SENDE-KALANLAR listesindeki içerik kayıtları
+   * (MDS başlıklı iki dosya, iki ayrı "Demir Eksikliği" slug). İÇERİĞE
+   * DOKUNULMUYOR; ayrım sunum tarafında slug ile veriliyor.
+   *
+   * ÇAPRAZ BRANŞ vakası zaten ayrışıyor (branş etiketi basılıyor), o
+   * yüzden burada yakalanmıyor ve görünümü DEĞİŞMİYOR.
+   */
+  const ilgiliGorunurAd = (k: { baslik: string; brans: string }) =>
+    k.baslik + (k.brans !== slug ? "|" + k.brans : "");
+  const ilgiliAdSayaci = new Map<string, number>();
+  for (const k of ilgililer) {
+    const ad = ilgiliGorunurAd(k);
+    ilgiliAdSayaci.set(ad, (ilgiliAdSayaci.get(ad) ?? 0) + 1);
+  }
+  const ilgiliAdCakisiyor = (k: { baslik: string; brans: string }) =>
+    (ilgiliAdSayaci.get(ilgiliGorunurAd(k)) ?? 0) > 1;
+
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans">
       <JsonLd
@@ -641,6 +666,11 @@ export default async function TopicDetailPage({
                             {k.brans !== slug && (
                               <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-0.5">
                                 {getSpecialty(k.brans)?.title || k.brans}
+                              </span>
+                            )}
+                            {ilgiliAdCakisiyor(k) && (
+                              <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-0.5">
+                                {k.slug}
                               </span>
                             )}
                           </span>
