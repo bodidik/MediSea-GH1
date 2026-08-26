@@ -15852,3 +15852,73 @@ emsalin 11'i de `alert` kullanıyor.
 o kalıbın HER KOPYASINI say — ama süpürmenin kapsamını "benim eklediklerim"
 diye çizersen, kalıbı zaten taşıyan eski kopyalar sessizce dışarıda kalır.
 Ölçüt "ne ekledim" değil **"bugün kaç yerde geçerli"** olmalı.
+
+### KURTARMAK YETMEZ, SÖYLEMEK GEREKİR — ve hizalamam yeni bir kusur açtı
+
+Geçen turun kapanmamış yarısı: veri kurtarılıyor ama not defteri **BOŞ**
+açılıyor ve `role="alert"` **0**. Kullanıcı "burada notum yok" sanıp üstüne
+yazıyor. Deponun kendi kuralı bunu kusur sayıyor — *"hesaplanamıyorsa
+SEBEBİNİ söyle; sessizce boş bırakmak kullanıcıyı yanıltır."*
+
+Ayrıca **iki gerçeklik** vardı: aynı anahtarı `collectAll` `parseJson` ile,
+konu sayfası güvenli okuyucuyla okuyor. Hizalandı, ölü `parseJson` kaldırıldı.
+
+#### Hizalama BİR KUSUR AÇTI ve ölçüm yakaladı
+
+`collectAll`ın önek taraması `<önek><yol>:bozuk` anahtarını bir **YOL**
+sanıyor. `parseJson` ile zararsızdı (null dönüyordu); güvenli okuyucuya
+geçince onu da **taşımaya** kalktı:
+
+```
+medisea:marks:v2:/topics/hematoloji/aml:bozuk:bozuk:bozuk
+medisea:notes:v1:/topics/endokrinoloji/addison:bozuk:bozuk:bozuk:bozuk
+```
+
+Her ziyarette anahtar uzuyor ve sayaç şişiyordu. Veri hayatta ama anahtar
+sınırsız büyüyor.
+
+**Üç katmanda kapatıldı ve üçüncüsü GERÇEK bir sızıntıydı:**
+
+| katman | ne |
+|---|---|
+| `depo.ts` | **yedeğin yedeği olmaz** — `:bozuk` ile biten anahtar taşınmaz |
+| `study-index` | önek taraması yedek anahtarını atlıyor |
+| `study-backup` | aynı süzgeç — **artık "geçerli JSON ama yanlış ŞEKİL" kayıtları da yedeklendiği için** `{"yanlis":"sekil"}` gibi bir yedek NOT olarak dışa aktarılabilirdi |
+
+Üçüncü satır bir üstteki turun kaydını da düzeltiyor: orada *"yedek dışa
+aktarıma sızmıyor, çünkü içeriği tanım gereği ayrıştırılamaz"* yazılmıştı.
+O gerekçe **şekil denetimi eklenince geçersizleşti** — yedeklerin bir kısmı
+artık geçerli JSON. Ölçüldü ve süzgeç eklendi.
+
+`purge` da yedeği siliyor: onay metni "tüm vurgu ve notlar silinsin mi?"
+diyor; okunamamış bir kaydın kopyasını geride bırakmak kullanıcının sildiğini
+sanmasına yol açardı.
+
+#### Yedek artık ERİŞİLEBİLİR
+
+Kurtarma tek başına yarım kalıyordu: yedek, kullanıcının ulaşamadığı bir
+anahtarda duruyordu (dışa aktarıma da girmiyor). Not defteri artık uyarıyı
+ve **"Eski kaydı kopyala"** düğmesini gösteriyor — kota kurtarmasının
+("Yazıyı kopyala") birebir emsali.
+
+**Uyarı OTURUM KAPSAMLI, bilerek:** tehlike anı "kullanıcı boşu görüp
+yazıyor" anıdır. Yazdıktan sonra yeni kayıt sağlam; uyarıyı kalıcı tutmak
+gürültü olurdu.
+
+**Ölçüldü (tarayıcıda):**
+
+| ölçüt | sonuç |
+|---|---|
+| bozuk not | uyarı **çıkıyor**, kontrast **8.75**, düğme **HAM eski notu** kopyaladı |
+| ilk ziyaret | 2 kurtarıldı, anahtarlar **tek** `:bozuk` |
+| **ikinci ziyaret** | çift `:bozuk` **0**, uyarı **YOK** (oturum kapsamı doğru) |
+| dışa aktarım | geçerli-JSON yedek **sızmadı** |
+| silme | o yolun yedeği gitti, **başka yolun yedeği durdu** |
+| **negatif** | gerçek kayıt listede, hayalet bağlantı **0** |
+
+**Aktarılabilir kural: bir okuyucuyu "hizalamak" onu YAZAR yapabilir.**
+`parseJson` → `guvenliOku` değişimi okuma sözleşmesini korudu ama yan
+etkisini değiştirdi; aynı önek taraması artık depoya dokunuyordu. Bir
+yardımcıyı yaygınlaştırırken **çağrı yerinin verisinin o yardımcının
+varsayımına uyduğunu** ayrıca sor — burada varsayım "anahtar bir yoldur"du
+ve yedek anahtarları o varsayımı deliyordu.
