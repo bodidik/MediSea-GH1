@@ -12979,3 +12979,32 @@ dosyaya ne indiğini GÖR.
 Kusuru yakalayan şey raporun kendi çıktısıydı: çıktıyı okumasaydım "3 çift
 bulundu" deyip geçecektim ve denetim yanlış dizelerle çalışmaya devam
 edecekti.
+
+#### "Var olmayan alanı okuyan denetim" sınıfı tarandı — tek örnekmiş
+
+`konu-denetim` bulgusundan sonra bütün içerik denetimleri aynı ölçütten
+geçirildi: okuduğu alan adları GERÇEK veri envanteriyle (100 benzersiz alan,
+`content/canonical` + `content/premium`) karşılaştırıldı.
+
+| denetim | veride olmayan alan |
+|---|---|
+| `konu-denetim` | (düzeltildi) |
+| `yetim-denetim` · `asili-denetim` · `link-denetim` | **yok** |
+| `soru-denetim` | 3 aday — **üçü de SAHTE** |
+
+`soru-denetim`in üç adayı: `dosyaSayisi` ve `adimSayisi` betiğin kendi
+sayaçları; `harf` ise şık dizisinin ÜÇ biçimini birden karşılayan hoşgörülü
+bir dal (`["A","B"]` · `[{harf,metin}]` · düz metin) ve yoksa indeks harfine
+düşüyor. Yani varsayım değil tolerans.
+
+#### Turun düzeltmeleri canlıda doğrulandı
+
+| düzeltme | canlıda ölçülen |
+|---|---|
+| atlama bağlantısı (AppShell) | `MAIN tabindex="-1"` · odak hedefte · halka `none` |
+| içindekiler çapası | `H2 tabindex="-1"` · odak hedefte · başlık 96px |
+| gizli konu | **`noindex, follow`** |
+| **negatif** — görünür konu | **`index, follow`** — `robots: undefined` gerilemesi geri gelmemiş |
+
+Son satır ayrıca bir gerileme kontrolü: o değer, koşullu yayılıma geçilmeden
+önce SİLİNİYORDU.
