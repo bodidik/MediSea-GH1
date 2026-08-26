@@ -122,6 +122,23 @@ export default function YdusDashboardClient({
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {/*
+              AÇIK SİTEYE DÖNÜŞ. Ölçüldü: bu sayfadaki 16 bağlantının 16'sı da
+              premium içindeydi — premium ağacının KÖK düğümü kapalıydı ve
+              kütüphaneye yol yoktu. Kardeş sayfa /tr/premium bunu zaten
+              taşıyor (o tur "görünür bağlantı 0 → 10" ile ölçülmüştü);
+              pano o turun dışında kalmış.
+
+              Logo bloğu bağlantı YAPILMADI: adı "YDUS Hazırlık" ve hedefi
+              site kökü olurdu — bu oturumda premium kırıntısında düzeltilen
+              etiket–hedef uyumsuzluğunun aynısı.
+            */}
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1 py-1.5 text-[11px] font-semibold text-slate-500 transition-colors hover:text-blue-700"
+            >
+              <span aria-hidden="true">←</span> MediSea
+            </Link>
             <PlanBadge plan={plan} />
             {/*
               `aria-label`: bağlantının tek içeriği emoji olduğu için

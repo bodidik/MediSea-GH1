@@ -150,7 +150,17 @@ export default async function BransSayfasi({
             "YDUS Hazırlık". Etiket gittiği yeri söylemeliydi. */}
         <nav aria-label="Kırıntı yolu" style={{ marginBottom: '1.5rem' }}>
           <ol style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#4a6a8a', listStyle: 'none', margin: 0, padding: 0 }}>
+            {/* Kök "MediSea": açık taraf ve araç sayfaları da böyle
+                başlıyor. Ayrıca premium ağacının açık siteye TEK çıkışı —
+                ölçüldü, bu sayfalarda /, /topics ve /tools bağlantısı
+                sayısı SIFIRDI. */}
             <li>
+              <Link href="/" style={{ color: '#4a6a8a', textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
+                MediSea
+              </Link>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span aria-hidden="true">/</span>
               <Link href={`/${lang}/premium/ydus`} style={{ color: '#1a3a6b', textDecoration: 'none', fontWeight: 500, display: 'inline-block', padding: '4px 2px' }}>
                 YDUS Hazırlık
               </Link>
