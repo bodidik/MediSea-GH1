@@ -16213,3 +16213,56 @@ günlüğünü okumak** oldu (`EADDRINUSE`); kesin çözüm portu tutan PID'i
 ölçümde bir an `000` döndü ama ölmemişti, dosya değişiklikleri yüzünden
 YENİDEN DERLİYORDU; ikinci ölçümde 200. **Bir sunucunun öldüğüne tek bir
 zaman aşımıyla karar verme.**
+
+### KARDEŞ SINIF: premium konu 404'ü YANLIŞ SEBEP bildiriyordu
+
+Hata sınırları sürüldükten sonra kardeş sınıf (**not-found sınırları**) aynı
+ölçütle sayıldı. Dört sınırın üçü düzgün; `[branch]/[topic]` segmentinin
+KENDİ sınırı YOKTU ve istek kardeşine düşüyordu.
+
+**Ölçüldü** — `/tr/premium/ydus/hematoloji/olmayan-konu` (branş **VAR**, konu
+yok):
+
+| ölçüt | önce |
+|---|---|
+| `h1` | **"Branş bulunamadı"** ← yanlış sebep |
+| metin | "Aradığın branş için henüz içerik hazırlanmadı" |
+| çıkış yolu | **1** bağlantı, panoya ← yanlış hedef |
+
+Deponun kuralı: *yanlış sebep, sebepsizlikten kötü olabilir* — kullanıcıyı
+işe yaramayan bir çareye yönlendiriyor (burada: branşı sorgulamaya). Eksik
+olan KONU ve en yararlı yer o konunun BRANŞI, çünkü mevcut konuları orası
+listeliyor.
+
+**Açık taraf zaten doğruydu** ("Bu konu kütüphanede yok", 47 çıkış, branşa
+dönüş dahil) — sapma premium'a özgü.
+
+`not-found.tsx` params ALAMIYOR (kardeş dosyanın yorumu da bunu söylüyor), o
+yüzden branş ve dil YOLDAN okunuyor; yol beklenmedik biçimdeyse panoya
+düşülüyor — uydurma bir branş adresi üretmektense bir basamak yukarı
+göndermek doğru.
+
+| ölçüt | sonra |
+|---|---|
+| konu 404 | `h1` "Konu bulunamadı", `main` 1, **iki çıkış** (branş + pano), HTTP 404 |
+| **negatif** — branş 404 | "Branş bulunamadı" **korundu**, konu mesajı sızmadı |
+| **negatif** — gerçek sayfalar | `/hematoloji` 200, `/hematoloji/aml-ana` 200 |
+| 375px taşma | 0 |
+
+#### Kendi kusurumu ölçüm yakaladı — iki saat arayla aynı sınıf
+
+İlk yazımda `<main>` kullandım ve sayfada **main sayısı 2** oldu: bir tur önce
+hata sınırlarında *kendi uyardığım* "çift main landmark" kusuru. `(ydus)`
+düzeni zaten `<main>` basıyor; `<div>`e çevrildi.
+
+Kural yazmak uygulamak değil — ve bu turda kuralı yazan ile ihlal eden aynı
+tur oldu. Ayırt eden tek şey **render edilmiş çıktıda landmark saymak**tı;
+kaynağa bakan bir gözden geçirme bunu göremezdi.
+
+#### Yan ölçüm: dört premium 404'ü de sunucuda BOŞ gövde
+
+`/topics/…` 404'lerinin sunucu gövdesinin boş olduğu belgede kayıtlı
+(`dynamicParams` ödünleşmesi). Bu tur premium 404'leri de ölçüldü ve aynı
+şekilde: `main` 0 · `h1` 0 · çıkış 0, hidrasyondan sonra tam çiziliyor.
+Premium sayfalar zaten dinamik (auth) olduğu için orada `dynamicParams`
+seçeneği bile yok — sınıf aynı, çare yok, kapsam artık ölçülü.
