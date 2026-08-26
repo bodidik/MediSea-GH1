@@ -14438,3 +14438,47 @@ kullanıcı verisinin şemasının parçasıdır.** Bu depoda üç dönüşüm v
 (`kisaltmaAc` · `basliklariDuzenle` · `kalinIsle`); biri bile metnin
 uzunluğunu değiştirirse ondan sonraki bütün vurgular kayar. Artık kurtarma
 katmanı var, ama dönüşüm eklerken bu soru sorulmalı.
+
+#### KAPSAM DÜZELTMESİ — "üç dönüşüm de ofset uzayının parçası" GEVŞEKTİ
+
+Bir üstteki kayıt şöyle bitiyordu: *"bu depoda üç dönüşüm var (`kisaltmaAc` ·
+`basliklariDuzenle` · `kalinIsle`); biri bile metnin uzunluğunu değiştirirse
+ondan sonraki bütün vurgular kayar."* Yön doğruydu ama iddia ÖLÇÜLMEMİŞTİ.
+Ölçüldü ve tablo değişti.
+
+**1. `basliklariDuzenle` metni HİÇ değiştirmiyor.** Modül saf olduğu için
+`node --experimental-strip-types` ile doğrudan sürüldü: gerçek bir konunun
+bütün bölümleri dönüşümden geçirilip etiketler söküldü —
+**metni değişen bölüm 0**, toplam uzunluk birebir aynı. Yalnızca etiket
+DÜZEYİ değişiyor (`h4`→`h3`), metin değil. Ofsete etkisi **YOK**.
+
+**2. `kalinIsle` etkili — ve sandığımdan GENİŞ.** `**işaret**` → `<strong>`
+dönüşümü metinden 4 karakter eksiltiyor. Nerede etkili olduğu, o yüzeyde
+vurgu konteyneri (`data-readable`) olup olmadığına bağlı:
+
+| yüzey | `**` çifti | vurgu konteyneri | ofsete etkisi |
+|---|---|---|---|
+| **premium konu** | **466** | var | **EVET** |
+| **inciler** | **22** | var | **EVET** |
+| quiz | **0** | var (`soru:<id>`) | bugün no-op |
+| vaka | 5 | **YOK** | **etkisiz** |
+
+Son satır ayırt edici: vakada `**` var ama o yüzeyde vurgu yapılamıyor
+(`VakaEngine`de `data-readable` sayısı **0**), yani oradaki dönüşüm hiçbir
+kullanıcı verisini tehdit etmiyor.
+
+**3. `kisaltmaAc`** — bir üstteki kayıtta deneyle kanıtlandı.
+
+**Düzeltilmiş ifade:** dönüşüm sayısı değil, **dönüşüm × vurgu konteyneri
+KESİŞİMİ** önemli. Bugün iki kesişim var (açık konu × `kisaltmaAc`, premium
+konu/inciler × `kalinIsle`) ve premium tarafta **466 işaret** duruyor — yani
+içerik yazarının bir `**` eklemesi ya da silmesi o sayfadaki sonraki bütün
+vurguları kaydırabiliyordu.
+
+Bu, eklenen yeniden demirleme katmanının değerini de büyütüyor: koruma
+yalnızca sözlük değişikliğini değil, **içerik yazarının kalın işareti
+eklemesini de** karşılıyor.
+
+**Aktarılabilir kural: bir mekanizmayı belgeye yazarken KAÇ yerde geçerli
+olduğunu ölç — "üç dönüşüm var" demek üçünün de etkili olduğunu göstermez.**
+Bu turda üçün biri etkisiz çıktı, biri de sanılandan geniş.
