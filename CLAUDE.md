@@ -16485,3 +16485,44 @@ oluşmuyor.
 Ama şifresini unutan kullanıcının yolu kapalı. Kurmak e-posta altyapısı
 (gönderim sağlayıcısı, imzalı jeton, süre sınırı) gerektiriyor; ölçüldü,
 kapsamı yazıldı, **ürün kararı olarak bırakıldı**.
+
+### PREMIUM AĞACININ KÖK DÜĞÜMÜ KAPALIYDI — açık siteye yol yoktu
+
+Çıkmaz sınıfı (bir önceki tur `/giris`, `/kayit`, `/profile`) premium ağacına
+sürüldü. Açık siteye (`/` · `/topics` · `/tools` · `/uyelik`) bağlantı sayısı:
+
+| sayfa | açık siteye |
+|---|---|
+| `/tr/premium` (tanıtım) | 10 — **belgelenmiş turda düzeltilmiş** |
+| **`/tr/premium/ydus`** (pano) | **0** — 16 bağlantının 16'sı da premium içi |
+| `/tr/premium/ydus/<branş>` | **0** |
+| `/tr/premium/ydus/liderlik` | 0 (ama panoya bağlanıyor) |
+| `/tr/premium/ydus/profil` | 1 (`/topics`) |
+
+Yani aynı ağaç kendi içinde tutarsızdı: **tanıtım sayfası dışarı çıkabiliyor,
+ürünün KENDİSİ çıkamıyordu.**
+
+| değişiklik | ne |
+|---|---|
+| pano | yapışkan başlığa "← MediSea" |
+| branş + konu | kırıntı **kökü "MediSea"** oldu — hem çıkış yolu hem site geneli tutarlılık (açık taraf ve araçlar da böyle başlıyor) |
+
+**Logo bloğu bağlantı YAPILMADI:** adı "YDUS Hazırlık", hedefi site kökü
+olurdu — bu oturumda premium kırıntısında düzeltilen etiket–hedef
+uyumsuzluğunun aynısı. `liderlik` bilerek dokunulmadı: panoya bağlanıyor ve
+pano artık dışarı açılıyor, yani ağaç kapalı değil.
+
+| ölçüt (375px) | sonuç |
+|---|---|
+| pano çıkışı | 62×29, görünür, hedef ≥ 24 |
+| branş kırıntısı | `MediSea / YDUS Hazırlık / [Hematoloji]`, `aria-current` 1, hedefler 26px |
+| belge genişliği | 375 — taşma yok |
+
+**A/B ile ayırt edildi:** sayfadaki iki öge-içi taşma **benim değil** —
+bağlantı gizlendiğinde de duruyorlar. İkisi de kasıtlı (`truncate` ve
+`overflow-x-auto` kaydırıcı).
+
+**Ölçüt kusuru not edildi:** taşma dedektörüm ögenin ATALARINDA kırpma arıyor
+ama ögenin KENDİ `overflow-x`ini ve `text-overflow: ellipsis` durumunu
+elemiyor; bu yüzden kasıtlı kaydırıcılar ve `truncate` metinler aday olarak
+çıkıyor. A/B olmadan bunlar "yeni kusur" sanılabilirdi.
