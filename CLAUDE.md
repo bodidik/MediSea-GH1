@@ -15209,3 +15209,47 @@ koşulsuzdu, kutu koşulluydu — ve bunu yalnızca ölçüm gösterdi.
 **Yan kazanç:** `ToolShare`in "kopyalandı" dalı belgede *"pano yazma bu
 ortamda çalışmadı, dal hiç çizilmiyor"* diye kayıtlıydı. `execCommand` yedeği
 onu ÖLÇÜLEBİLİR yaptı.
+
+### DÖRT KONU UYDURMA GÜNCELLEME TARİHİ BASIYORDU — sitemap düzeltmesinin ARAYÜZ ikizi
+
+**Tarih/saat dilimi sınıfı tarandı ve temiz çıktı** (534 dosya):
+`toISOString().slice(0,10)` ile UTC gün anahtarı **0**, `getUTC*` **0** — beş
+gün anahtarının beşi de YEREL saat kullanıyor. Türkiye UTC+3 olduğu için gece
+çalışan kullanıcının günlüğü bir önceki güne düşmüyor.
+
+**Yazma ↔ okuma biçimi de uyuşuyor.** Yönetim ucu `toLocaleDateString('tr-TR',
+{day:'2-digit', month:'short', year:'numeric'})` yazıyor ("26 Ağu 2026") ve
+`isoTarih()` o biçimi tanıyor. Ay kısaltması ICU sürümüne göre değişebildiği
+için **12 ayın 12'si tek tek sürüldü** — hepsi çözülüyor (Oca · Şub · Mar ·
+Nis · May · Haz · Tem · Ağu · Eyl · Eki · Kas · Ara).
+
+**Ama okuma tarafında UYDURMA bir yedek vardı:**
+
+```jsx
+Güncelleme: {rawData.meta?.updatedAt || "06 MAR 2026"}
+```
+
+Canlıda ölçüldü: `meta.updatedAt` taşımayan **4 görünür konu** kullanıcıya
+**"06 MAR 2026"** diyordu — kendileriyle ilgisi olmayan bir tarih.
+
+Bu, bu oturumda site haritasında düzeltilen `mtime` yedeğinin **aynı sınıfı**
+ve o turda kaçırılmıştı. İlke `sitemap.ts`te zaten yazılıydı: *tarih
+bilinmiyorsa alan HİÇ basılmaz.* Aynı ilke ekranda uygulanmıyordu.
+
+| ölçüt | sonuç |
+|---|---|
+| üretilmiş çıktıda "06 MAR 2026" | **0 dosya** |
+| tarihi olmayan konu | "Güncelleme" satırı **hiç basılmıyor** |
+| **negatif** — `addison` | "Güncelleme: 14 Mar 2026" — değişmedi |
+| **negatif** — satırı taşıyan dosya | **812** = 406 konu × 2 çıktı biçimi |
+
+**ÜÇ BAĞIMSIZ YOL AYNI SAYIYA VARDI:** içerik taraması 406 görünür konuda
+`updatedAt` buluyor; üretilmiş çıktıda satır 812 (=406×2) dosyada; canlı site
+haritasında `lastmod` **420** = 406 + 13 branş + `/topics`. Bir sayıyı üç
+yoldan doğrulamak, o sayının ne saydığını da kanıtlıyor.
+
+**Ölçüm tuzağı — özyinelemeli gezicide `return`.** İlk sayımım 374 dedi ve
+canlı 420 ile tutmadı. Sebep koddaydı: `for` döngüsünün içindeki `if (!u)
+return;` bütün fonksiyondan çıkıyor ve dizin taramasını yarıda kesiyordu.
+`continue` yerine `return` yazmak sessizce EKSİK sayıyor — ve sayı tek başına
+makul göründüğü için ancak ikinci bir kaynakla karşılaştırınca fark ediliyor.
