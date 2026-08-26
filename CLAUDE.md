@@ -15922,3 +15922,58 @@ etkisini değiştirdi; aynı önek taraması artık depoya dokunuyordu. Bir
 yardımcıyı yaygınlaştırırken **çağrı yerinin verisinin o yardımcının
 varsayımına uyduğunu** ayrıca sor — burada varsayım "anahtar bir yoldur"du
 ve yedek anahtarları o varsayımı deliyordu.
+
+### BOZUK KAYIT SÜPÜRMESİ TAMAMLANDI — kapsamı SAYARAK, tahminle değil
+
+Sınıf dört turdur işleniyordu ve her tur "bir kopya daha" çıkıyordu. Bu tur
+kapsam **sayıldı**: `localStorage` okuyan **11 dosya**, beşi hâlâ güvenli
+okuyucuya bağlı değildi. Üçü gerçek boşluktu, ikisi değildi:
+
+| dosya | verdikt |
+|---|---|
+| `QuizEngine` | **KUSUR** — bozuk ilerleme atılıyordu, sonraki cevap onun üzerine yazıyordu (kullanıcının verdiği cevaplar gidiyor) |
+| `FlashcardPlayer` | **KUSUR** — bozuk işaret kümesi atılıyordu, ilk işaretlemede kaydetme üzerine yazıyordu |
+| `study-backup` (`readAll`) | **KUSUR** — bozuk kaydı düşürüyor, `applyImport` merge sonucunu yazıyor; **içe aktarım sırasında** kayıt gidiyordu |
+| `UserContext` | **EMSAL** — kendi kurtarması zaten var (`ydus_premium_user_bozuk`), belgedeki sınıfın kaynağı |
+| `study-sync` | düşük değer — `SYNC_META` yeniden üretilebilir (en kötü ihtimalle fazladan bir push), DOKUNULMADI |
+
+#### `guvenliCozumle` — şekli ÇAĞIRAN denetlediğinde
+
+Quiz ilerlemesi **sürüm geçişi** taşıyor: eski sürüm düz bir **SAYI**,
+yenisi nesne. `guvenliOku`nun katı şekil denetimi geçerli ESKİ kayıtları
+yedeğe taşıyıp kullanıcıya kaybolmuş gibi gösterirdi. Yeni yardımcı yalnızca
+ayrıştırma hatasında taşıyor; şekli çağıran denetliyor.
+
+**Bu kararın gerekçesi ölçüldü** — negatif kontrol: düz `3` kaydı yedeğe
+**taşınmadı**, ekran "4 / 10" diye doğru geri yükledi ve kayıt yeni biçimde
+yeniden yazıldı.
+
+Ölü `json<T>` kaldırıldı (sıfır çağıran) — `steroid-dose`un `gluco` dersi:
+ölü bir yardımcı yalnızca gereksiz değil, yanlış kullanıma davetiye.
+
+**Ölçüldü** (kapı geçici açılıp GERÇEK motorlarla, sonra kapı geri kondu):
+
+| ölçüt | sonuç |
+|---|---|
+| quiz bozuk | ana anahtar boş, yedek ham kaydı taşıyor; cevap verildikten sonra **yedek hayatta**, yeni ilerleme yazıldı |
+| kart bozuk | aynı; işaretleme sonrası yedek hayatta |
+| dışa aktarım | iki bozuk kayıt da yedeğe alındı, **geçerli vurgu aktarıldı** |
+| **negatif** — geçerli kayıtlar | yedek **oluşmadı**, "2 biliniyor" sayacı doğru |
+| **negatif** — eski sürüm | düz SAYI kayıt **taşınmadı**, doğru geri yüklendi |
+| kapı geri kondu mu | `/quiz-coz` yeniden **"Erişim Kısıtlı"**, `ZZ-OLCUM` izi 0 |
+
+**Aktarılabilir kural: bir sınıfı "kapattım" demeden önce KAPSAMI SAY.**
+Bu sınıf dört tur boyunca hep "son kopya" sanıldı; kopyalar tek tek, kazara
+bulundu. Tek bir tarama (`localStorage.getItem` + `JSON.parse` + `setItem`
+taşıyan dosyalar) beşini birden gösterdi — ve ikisinin neden kusur OLMADIĞINI
+da belgeledi, ki bir sonraki tur onları yeniden kovalamasın.
+
+**Ölçüm tuzağı — React metin birleşmesi, yine.** Quiz şıklarını
+`/^[A-E][)\s]/` ile aradım; ekranda **"ACushing Hastalığı…"** yazıyor (harf
+rozeti ile metin bitişik birleşiyor) ve desen tutmadı. "Şık yok" sanıldı;
+düğme listesi BASILIP okununca beşi de oradaydı.
+
+**İkinci tuzak — `git checkout` yanlış dizinden.** Doğrulama derlemesinin
+kirlettiği `next-env.d.ts` ve `tsconfig.json`u `web/` içinden `web/…` yoluyla
+geri almaya çalıştım; yol tutmadı ve dosyalar kirli kaldı. Belgede kayıtlı:
+bu geri alma **depo kökünden** yapılır.
