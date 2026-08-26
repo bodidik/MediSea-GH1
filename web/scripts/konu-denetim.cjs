@@ -35,6 +35,34 @@ const KOK = path.join(__dirname, '..', 'content', 'canonical');
    (`Ön-hipofiz-…` ↔ `on-hipofiz-…`); uygulamada `lib/slug-eslestir.ts` bunu
    okuma adımında çözüyor. Çocuk sayarken aynı normalleştirme gerekiyor,
    yoksa sapan referanslı konu "çocuğu yok" sanılır. */
+
+/**
+ * Sayfanın bastığı meta açıklamasının AYNASI (bkz. app/(site)/topics/…/page.tsx
+ * içindeki ozetCikar). Uyarı/künye bölümleri elenir; 🤖 ve ⚠️ ile başlayan
+ * başlıklar sayfada durur ama özete girmez.
+ */
+function uyariBolumuMu(b) {
+  const bas = String((b && (b.heading || b.title)) || "");
+  return /^\s*(🤖|⚠️|⚠)/u.test(bas);
+}
+
+function aciklamaUret(j, sinir) {
+  sinir = sinir || 155;
+  const hazir = (j && j.summary) || (j && j.meta && j.meta.summary);
+  const kaynak = hazir || (Array.isArray(j && j.sections)
+    ? j.sections.filter((s) => !uyariBolumuMu(s)).map((s) => (s && (s.text || s.html)) || "").join(" ")
+    : "");
+  /* ⚠ Bu satır bir kez `node -e` ile yazıldı ve `\s` KAYBOLDU: desen `/s+/g`
+     olarak indi, yani metindeki bütün "s" harflerini siliyordu ("Erkek
+     osteoporozu" → "Erkek o teoporozu"). Belgede kayıtlı ters-bölü tuzağı.
+     Kaçış taşıyan bir betiği kabuk dizesiyle yazma — Write/Edit kullan. */
+  const duz = String(kaynak).replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/gi, " ")
+    .replace(/\s+/g, " ").trim();
+  if (duz.length <= sinir) return duz;
+  const k = duz.slice(0, sinir);
+  return k.slice(0, k.lastIndexOf(" ")).trimEnd() + "…";
+}
+
 function normSlug(s) {
   return String(s || '').toLowerCase()
     .replace(/ı/g, 'i').replace(/ö/g, 'o').replace(/ü/g, 'u')
@@ -59,7 +87,26 @@ function konular() {
         slug: e.replace(/\.json$/, ''),
         yol: `${brans.name}/${e}`,
         baslik: (j.title || '').trim(),
-        aciklama: ((j.meta && j.meta.description) || j.description || '').trim(),
+        /**
+         * AÇIKLAMA, SAYFANIN GERÇEKTEN BASTIĞI DEĞER OLMALI.
+         *
+         * Burası bir dönem `meta.description || description` okuyordu ve
+         * ÖLÇÜLDÜ: bu depoda böyle bir alan HİÇ YOK — 456 dosyada sıfır.
+         * Yani "AYNI açıklamayı taşıyan konular" denetimi her zaman boş
+         * dizi üretiyor, hiçbir şey ölçmüyor ve sessizce "temiz" görünüyordu.
+         * Deponun kendi kuralının ("0 kusur ile 0 ölçüm aynı görünür") bir
+         * denetimin İÇİNDE tekrarı.
+         *
+         * Arama motoruna giden açıklama `ozetCikar()` ile üretiliyor:
+         * `summary`/`meta.summary` varsa o, yoksa UYARI BÖLÜMLERİ ELENMİŞ
+         * gövde. Uyarı elemesi kritik — o olmadan 11 konu birebir aynı
+         * "⚠️ Klinik Uyarı…" metnini açıklama olarak gösteriyordu (belgede
+         * kayıtlı, düzeltilmiş kusur).
+         *
+         * Burada o mantık AYNADAN uygulanıyor. Birebir aynı olması şart
+         * değil — amaç kırpma sınırını taklit etmek değil, ÇİFTLERİ görmek.
+         */
+        aciklama: aciklamaUret(j),
         gizli,
         bolum: Array.isArray(j.sections) ? j.sections.length : 0,
         ebeveyn: normSlug((j.meta && j.meta.parent) || ''),
@@ -186,6 +233,26 @@ const basliksiz = gorunur.filter((k) => !k.baslik);
 const bosGovde = gorunur.filter((k) => k.bolum === 0);
 const ciftBaslik = tekrarlar('baslik');
 const ciftAciklama = tekrarlar('aciklama');
+
+/**
+ * KÖRLÜK NÖBETÇİSİ — "0 çift" ile "0 ölçüm" aynı görünür.
+ *
+ * Bu denetim uzun süre sessizce hiçbir şey ölçmedi: açıklama alanı
+ * `meta.description`ten okunuyordu ve o alan bu depoda HİÇ YOK, yani
+ * karşılaştırılacak dize hep boştu ve rapor her zaman "0" diyordu.
+ * Kaynak `ozetCikar` aynasına çevrildikten sonra aynı veride 3 çift çıktı.
+ *
+ * Aynı körlük tekrarlamasın diye: açıklaması dolu olan konu sayısı sıfırsa
+ * bu bir "temiz" sonuç değil, ölçüm arızasıdır.
+ */
+const aciklamaliKonu = gorunur.filter((k) => k.aciklama).length;
+if (gorunur.length > 0 && aciklamaliKonu === 0) {
+  console.error(
+    `HATA: ${gorunur.length} görünür konunun HİÇBİRİNDE açıklama üretilemedi — ` +
+      'açıklama kaynağı ya da ayrıştırma bozuldu (çift açıklama denetimi kör).'
+  );
+  process.exitCode = 1;
+}
 
 // Ölçülen sayıyı da bas: "0 kusur" ile "0 öge" ekranda aynı görünür.
 console.log(`konu denetimi — ${hepsi.length} dosya (${gorunur.length} görünür) okundu`);

@@ -12917,3 +12917,65 @@ hedef **0**. Gizlenmiş onay kutuları için saran `<label>` ölçüldü, `sr-on
 yaz.** Yazılı ama taranmamış bir kural, uygulandığı sanılan bir kuraldır;
 bu üçünden biri gerçekten boşluk taşıyordu (ölü kodda) ve bunu ancak tarama
 gösterdi.
+
+### `konu-denetim`'in ÇİFT AÇIKLAMA DENETİMİ HİÇBİR ŞEY ÖLÇMÜYORDU
+
+Başlık/açıklama benzersizliği taranırken çıktı. Önce araçlar ölçüldü ve
+**tamamen temiz**: 130 araçta çift ad **0**, çift açıklama **0**, üretilen
+layout başlığı çifti **0**.
+
+Konu tarafında `ozetCikar` mantığıyla ölçüm **3 çift açıklama** buldu — ama
+`konu-denetim` "0" diyordu. Sebep denetimin kaynağıydı:
+
+```js
+aciklama: ((j.meta && j.meta.description) || j.description || '').trim()
+```
+
+**Bu depoda `description` diye bir alan HİÇ YOK** (456 dosyada sıfır; alan
+envanteri daha önce çıkarılmıştı: `title` · `meta` · `sections` · `summary`).
+Yani karşılaştırılan dize her zaman boştu ve rapor her zaman "0" veriyordu —
+deponun kendi kuralının ("0 kusur ile 0 ölçüm aynı görünür") bir denetimin
+İÇİNDE tekrarı, ölü-slug nöbetçisiyle aynı şekil.
+
+Kaynak, sayfanın gerçekten bastığı değerin aynasına çevrildi (`summary` →
+yoksa UYARI BÖLÜMLERİ ELENMİŞ gövde). Uyarı elemesi kritik: o olmadan 11 konu
+birebir aynı "⚠️ Klinik Uyarı…" metnini açıklama olarak gösteriyordu (belgede
+kayıtlı, düzeltilmiş kusur).
+
+**Bulunan 3 çift ve verdiktleri:**
+
+| çift | durum |
+|---|---|
+| `erkek-osteoporozu-ana-sayfa` ~ `…-testosteron` | hub ve çocuğu aynı girişi paylaşıyor — hafif |
+| `endokrinoloji/lipid-ezetimibe` ~ `kardiyoloji/lipid-ezetimibe` | **aynı konu iki branşta** — çift BAŞLIK olarak zaten SENDE-KALANLAR'da |
+| `hematoloji/demir-eksikligi-anemisi` ~ `…/demir-eksikligi` | **aynı branşta iki slug** — o da SENDE-KALANLAR'da |
+
+Yani ikisi kullanıcının takip listesinde, biri hafif. **İçerik dosyalarına
+dokunulmadı**; denetim artık sınıfı görüyor. Rapor 17 → **20 kayıt**.
+
+#### Körlük nöbetçisi eklendi ve iki yönlü sınandı
+
+Açıklaması dolu konu sayısı sıfırsa bu "temiz" değil ölçüm arızasıdır.
+
+| kontrol | çıkış |
+|---|---|
+| normal depo | **0** · "AYNI açıklamayı taşıyan konular: 3" |
+| açıklama kaynağı kasten bozuk | **1** · "410 görünür konunun HİÇBİRİNDE açıklama üretilemedi" |
+| geri alındı | **0** |
+
+#### ⚠ TERS-BÖLÜ TUZAĞI YİNE VURDU — bu kez `node -e` üzerinden
+
+Yardımcı fonksiyon `node -e` içindeki bir dizeyle yazıldı ve `\s` KAYBOLDU:
+desen `/s+/g` olarak indi, yani metindeki bütün **"s" harflerini siliyordu**.
+Rapor bunu açıkça gösterdi: *"Erkek o teoporozu; kemik mikromimari inin
+progre i…"*. Aynı şekilde `/^\s*(🤖|⚠️)/` → `/^s*(…)/` olmuş, yani uyarı
+elemesi de çalışmıyordu.
+
+Belgede bu tuzak heredoc için kayıtlıydı; **`node -e` de aynı kanal.** Kural
+genişletiliyor: **kaçış taşıyan bir betiği KABUK DİZESİYLE yazma** — heredoc,
+`node -e`, `python -c`, hepsi aynı. Write/Edit kullan ve yazdıktan sonra
+dosyaya ne indiğini GÖR.
+
+Kusuru yakalayan şey raporun kendi çıktısıydı: çıktıyı okumasaydım "3 çift
+bulundu" deyip geçecektim ve denetim yanlış dizelerle çalışmaya devam
+edecekti.
