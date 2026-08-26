@@ -14277,3 +14277,59 @@ sayıya bakılsaydı iki tekrar da gözden kaçardı.
 Ters yönde de doğru: %28 eşiği 7 çift getirdi ve 5'i kusur değildi. Yani ölçüt
 tek başına ne "temiz" ne "kusurlu" diyebiliyor — **sayı bandı daraltır, kararı
 metni okumak verir.**
+
+### ÇAKIŞAN VURGU ESKİSİNİ TÜMÜYLE SİLİYOR — kod bilerek yapıyordu, ama SESSİZCE
+
+Çalışma döngüsünün hiç sınanmamış kenar durumu: aynı metnin üstüne ikinci bir
+vurgu konursa ne oluyor?
+
+**Ölçüldü (canlı, gerçek arayüzle):** bir cümle sarıyla vurgulandı (70 karakter,
+1 kayıt, 1 `<mark>`), sonra o vurgunun İKİNCİ YARISINDAN başlayıp dışına taşan
+75 karakterlik bir seçim yeşille vurgulandı.
+
+| ölçüt | sonuç |
+|---|---|
+| kayıt | 1 (yeşil) — **sarı kayıt YOK** |
+| `<mark>` | 1, iç içe yok |
+| kaybolan | sarının, yeni seçimin KAPSAMADIĞI ilk 35 karakteri de |
+
+**Kod bunu bilerek yapıyor** ve gerekçesi sağlam — kesişen vurgular yeni
+vurgudan önce sökülüp siliniyor:
+
+```ts
+if (pending.hit.length) {
+  pending.hit.forEach(unpaint);
+  base = base.filter((m) => !pending.hit.includes(m.id));
+```
+
+İç içe `<mark>` ofsetleri bozar; değiştirme makul bir karar. **Kusur davranış
+değil, SESSİZLİK:** kullanıcı kendi işaretinin kaybolduğunu hiçbir yerden
+öğrenmiyordu. Deponun kendi ilkesi bunu zaten yazıyor — `heparin-nomogram`
+tavanı uyguladığında SÖYLÜYOR ("kiyasla 6000 Ü çıkıyordu; tavan uygulandı"),
+çünkü *sessizce eksiltmek güvensizlik üretir*.
+
+**Eklenen: geçici bir bildirim** (mevcut "kısa vurgu" kutusunun kalıbı).
+
+| ölçüt | sonuç |
+|---|---|
+| çakışan vurgu sonrası | **"Üst üste binen bir vurgunun yerini aldı — eskisi tümüyle kaldırıldı."** |
+| **negatif** — çakışmasız vurgu | uyarı **YOK** |
+| geçici mi | evet, ~4 sn sonra kayboluyor |
+| ekran okuyucu | `role="alert"` — koşullu render edildiği için doğru rol (`status` bölgenin ÖNCEDEN var olmasını ister) |
+
+**Yan düzeltme, aynı dosyanın kendi ilkesine göre:** var olan "bu vurgu tekrar
+kartı olmayacak" kutusunda **hiç rol yoktu**, yani görsel kullanıcı uyarılıyor
+ekran okuyucu kullanıcısı duymuyordu. Dosyanın hemen altındaki yorum tam bunu
+kusur sayıyor ("Sessiz başarısızlığın en kötü hâli: görsel kullanıcı
+uyarılıyor, öteki değil"). O kutu da `role="alert"` aldı ve ölçüldü —
+çalışıyor.
+
+**DAVRANIŞ DEĞİŞMEDİ:** çakışan vurgu hâlâ eskisinin yerini alıyor. Eski
+vurgunun kalan parçasını korumak (bölerek) ofset matematiği gerektiren bir
+özellik değişikliği olurdu; ölçüldü, kapsamı yazıldı, YAPILMADI.
+
+**Ölçüm tuzağı — ilk deneyim GEÇERSİZDİ ve sonucu neredeyse rapora giriyordu.**
+İlk çakışma denemesinde `Range` DOM yeniden boyanınca geçersizleşti ve
+`r.toString()` **boş** döndü; depo yine de değişmiş göründü. Sonuç bir bulgu
+gibi okunabilirdi. Aralığın metnini tıklamadan ÖNCE ölçüp boşsa DURDURAN bir
+kontrol konuldu; ancak ondan sonra alınan ölçüm kullanıldı.

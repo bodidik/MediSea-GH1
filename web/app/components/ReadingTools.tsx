@@ -61,6 +61,20 @@ export default function ReadingTools() {
   const [kayitHatasi, setKayitHatasi] = useState(false);
   /** Kısa vurgu bilgisi — geçici, 3 sn sonra kaybolur */
   const [kisaBilgi, setKisaBilgi] = useState(false);
+  /**
+   * Yeni vurgu, KESIŞEN eski vurguların yerini aldı — kaç tanesinin.
+   *
+   * ÖLÇÜLDÜ: bir cümle sarıyla vurgulanıp, İÇİNDEKİ bir öbek yeşille
+   * vurgulandığında sarı vurgu TAMAMEN siliniyor — yeni seçimin
+   * kapsamadığı kısmı da. Kod bunu bilerek yapıyor (iç içe `<mark>`
+   * ofsetleri bozar), ama SESSİZ yapıyordu: kullanıcı kendi işaretinin
+   * kaybolduğunu hiçbir yerden öğrenmiyordu.
+   *
+   * Deponun kendi ilkesi bunu zaten yazıyor (`heparin-nomogram` kırpma
+   * yaptığında SÖYLÜYOR): sessizce eksiltmek güvensizlik üretir.
+   */
+  const [degistiBilgi, setDegistiBilgi] = useState(0);
+  const degistiTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const kisaTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const barRef = useRef<HTMLDivElement>(null);
@@ -329,6 +343,13 @@ export default function ReadingTools() {
       if (kisaTimer.current) clearTimeout(kisaTimer.current);
       setKisaBilgi(true);
       kisaTimer.current = setTimeout(() => setKisaBilgi(false), 3500);
+    }
+
+    // Kesişen eski vurgular silindiyse kullanıcı BİLMELİ (bkz. degistiBilgi).
+    if (pending.hit.length) {
+      if (degistiTimer.current) clearTimeout(degistiTimer.current);
+      setDegistiBilgi(pending.hit.length);
+      degistiTimer.current = setTimeout(() => setDegistiBilgi(0), 4000);
     }
 
     close();
@@ -630,10 +651,24 @@ export default function ReadingTools() {
             </div>
           )}
 
+          {/* role="alert": kutu KOŞULLU render ediliyor; `status` bölgenin
+              içerik değişmeden ÖNCE DOM'da olmasını ister, `alert` sonradan
+              eklendiğinde duyurulur. Aynı dosyadaki kayıt-hatası kutusunun
+              gerekçesiyle birebir aynı. */}
           {kisaBilgi && (
-            <div className="max-w-[240px] rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-700 shadow-lg animate-[msPop_.12s_ease-out]">
+            <div role="alert" className="max-w-[240px] rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-700 shadow-lg animate-[msPop_.12s_ease-out]">
               Bu vurgu <strong className="font-black">tekrar kartı olmayacak</strong> —
               cümle düzeyinde (8+ karakter) vurgular kart olur.
+            </div>
+          )}
+
+          {degistiBilgi > 0 && (
+            <div role="alert" className="max-w-[240px] rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-700 shadow-lg animate-[msPop_.12s_ease-out]">
+              Üst üste binen{' '}
+              <strong className="font-black">
+                {degistiBilgi === 1 ? 'bir vurgunun' : degistiBilgi + ' vurgunun'}
+              </strong>{' '}
+              yerini aldı — eskisi tümüyle kaldırıldı.
             </div>
           )}
           {/*
