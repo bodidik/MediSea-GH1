@@ -12827,3 +12827,46 @@ Taranan: `/` · `/topics` · `/tools` · `/uyelik` · branş · konu · araç ·
 
 Açıklamalar sayfaya özgü ve sayılar sayılıyor (`/topics` → "13 branşta 410
 konu başlığı") — "sayı yazma, saydır" mimarisi metadata tarafında da ayakta.
+
+### ATLAMA BAĞLANTISI KURALI BİR YERDE UYGULANIYOR, BİR YERDE DEĞİLDİ
+
+Belgede kayıtlı kural: *"Hedef `<span tabIndex={-1}>` olmalı; odaklanabilir
+olmayan bir öğeye atlandığında tarayıcı görünümü kaydırır ama ODAĞI TAŞIMAZ,
+sonraki Tab yine gezinmenin başına döner."*
+
+ÖLÇÜLDÜ (canlı) — kural iki yerden yalnızca birinde uygulanıyordu:
+
+| yüzey | atlama hedefi | `tabindex` |
+|---|---|---|
+| araç sayfası | `<span id="arac-icerik">` | **-1** ✓ |
+| **site kabuğu** (ana sayfa · kütüphane · branş · konu…) | `<main id="icerik">` | **YOK** ✗ |
+
+Yani sitenin ezici çoğunluğunda atlama bağlantısı görünümü kaydırıyor ama
+odağı taşımıyordu — bağlantının varlık sebebi tam olarak buydu.
+
+**AYNI KUSUR KENDİ EKLEDİĞİM İÇİNDEKİLERDE DE VARDI.** Bölüm başlıklarına
+`id` verilmişti ama `tabIndex` verilmemişti. Ölçüldü: içindekiler
+bağlantısına tıklandığında sayfa kayıyor ve odak **`BODY`'ye** düşüyordu —
+ekran okuyucu varış noktasını duyurmuyor, klavye kullanıcısı nerede olduğunu
+bilmiyordu. Belgedeki kuralı yazan tur, kuralı kendi yeni koduna
+uygulamamıştı.
+
+**Doğrulama — önce/sonra:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| atlama: odak hedefte mi | **hayır** | **evet** (`MAIN tabindex=-1`) |
+| içindekiler: odak hedefte mi | **hayır (BODY)** | **evet** (`H2 tabindex=-1`) |
+| içindekiler: başlık ekranda | 96px (yapışkan çubuk 65px) | 96px — değişmedi |
+| odak halkası | — | **`none`** — ikisinde de |
+| **negatif** — araç sayfası kendi kalıbı | `span tabindex=-1` | **değişmedi** |
+| **negatif** — eşik altı konu (`addison`) | — | TOC yok, atlama çalışıyor |
+
+`focus:outline-none` bilerek: ikisi de GEZİNME HEDEFİ, etkileşimli denetim
+değil. Halka gerçekten gezilebilir ögelerin işi; buraya odak yalnızca
+programla geliyor.
+
+**Aktarılabilir kural: belgeye bir erişilebilirlik kuralı yazarken, o kuralın
+depoda KAÇ yerde geçerli olduğunu say.** Bu kural araç sayfaları için
+yazılmıştı ve site kabuğu ile sonradan eklenen içindekiler ondan habersiz
+kaldı — kuralı yazmak uygulamak değildir.

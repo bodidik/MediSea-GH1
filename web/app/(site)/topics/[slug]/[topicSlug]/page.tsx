@@ -521,9 +521,27 @@ export default async function TopicDetailPage({
                           {gorunurlukRozeti(section.visibility)}
                         </span>
                       )}
+                      {/**
+                       * `tabIndex={-1}` — içindekiler bağlantısının hedefi
+                       * ODAKLANABİLİR olmalı. Belgede kayıtlı kural:
+                       * odaklanabilir olmayan bir ögeye atlandığında tarayıcı
+                       * görünümü kaydırır ama odağı taşımaz.
+                       *
+                       * ÖLÇÜLDÜ (canlı, eklemeden önce): içindekiler
+                       * bağlantısına tıklandığında sayfa kayıyor ama odak
+                       * **BODY'ye** düşüyordu — yani ekran okuyucu varış
+                       * noktasını duyurmuyor ve klavye kullanıcısı nerede
+                       * olduğunu bilmiyordu.
+                       *
+                       * `focus:outline-none`: başlık bir gezinme hedefi,
+                       * etkileşimli bir denetim değil; halka görsel gürültü
+                       * olurdu. `scroll-mt-24` yapışkan başlığın altına
+                       * hizalıyor (ölçüldü: başlık 96px, çubuk 65px).
+                       */}
                       <h2
                         id={bolumKimligi[idx]}
-                        className="scroll-mt-24 text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
+                        tabIndex={-1}
+                        className="scroll-mt-24 focus:outline-none text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
                       >
                         {/*
                           Süsleme: ekran okuyucu bunu "kare" diye okuyup her

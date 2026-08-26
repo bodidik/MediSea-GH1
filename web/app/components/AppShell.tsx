@@ -24,7 +24,24 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <SiteHeader />
 
       {/* ANA İÇERİK (Sitenin ortası) */}
-      <main id="icerik" className="flex-1 w-full flex flex-col">
+      {/**
+       * `tabIndex={-1}` ATLAMA BAĞLANTISI İÇİN ŞART — belgede kayıtlı kural
+       * araç sayfalarında uygulanıyordu, site kabuğunda UYGULANMIYORDU.
+       *
+       * ÖLÇÜLDÜ (canlı):
+       *   araç sayfası : hedef `<span id="arac-icerik" tabindex="-1">`  ✓
+       *   site kabuğu  : hedef `<main id="icerik">`, tabindex YOK        ✗
+       *
+       * Kuralın gerekçesi belgede yazılı: odaklanabilir OLMAYAN bir ögeye
+       * atlandığında tarayıcı görünümü kaydırır ama ODAĞI TAŞIMAZ — sonraki
+       * Tab yine gezinmenin başına döner ve atlama bağlantısı hiçbir işe
+       * yaramaz. Ekran okuyucu da varış noktasını duyurmaz.
+       *
+       * `focus:outline-none`: `<main>` bütün sayfayı kapsıyor, çevresine
+       * halka çizmek görsel gürültü olurdu. Halka gerçekten gezilebilir
+       * ögelerin işi; buraya odak yalnızca programla (atlama ile) geliyor.
+       */}
+      <main id="icerik" tabIndex={-1} className="flex-1 w-full flex flex-col focus:outline-none">
         {children}
       </main>
 
