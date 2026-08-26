@@ -15543,3 +15543,43 @@ bilinçli ve çelişkisiz. Öteki kullanım `BranchTemplate` ve o ölü kod.
 | not defteri odak halkası | sınıf yerinde, **üç seçiciye de uyuyor** |
 
 Ölçüm izi temiz (`medisea:*` = 0).
+
+### Tam kapı döngüsü + robots/harita/canonical üçgeni — bir tutarsızlık çıktı
+
+Bu oturumda ~20 dosya değişti; belgenin öngördüğü **13 adımlık yerel kapı
+döngüsü** sürüldü: **13/13 yeşil**. Rapor denetimleri de belgedeki tabanda
+(`olu` 5 · `bölme` 0 · `bant` 0 · `karar` 0 · `kapı-kapsam` 2 ·
+`eksik-alan` 2) — bu oturum **yeni aday açmamış**.
+
+**Metadata üçgeni ölçüldü** (bu oturumda 11 premium rotaya kendi metadata'sı
+verildiği için gerileme riski vardı):
+
+| yön | ölçüm | sonuç |
+|---|---|---|
+| haritadaki adresler | 29 örnek | hepsi 200, `noindex` **0**, canonical sapan **0** |
+| **ters yön** | premium rotalar | **bir tutarsızlık** |
+
+`robots.txt` kalıpları: `/admin`, `/api`, dil önekli premium-ydus kalıbı ve
+`/premium`. **`/tr/premium` bunların hiçbirine uymuyor** (`/premium` kalıbı
+yolun BAŞINI eşliyor) ve sayfanın robots metası `index, follow` — yani
+taranabilir ve indekslenebilir. Buna karşılık **site haritasında YOKTU**.
+
+Bu, `sitemap.ts`in kendi yorumunda kapatılmış kusurun **ikinci örneği**:
+*"`/tr/premium/ydus` tanıtım sayfası taramaya açıkken haritada yoktu — iki
+dosya aynı niyeti taşıyıp farklı davranıyordu."* Aynı sınıf, kardeş adres.
+
+Sayfanın boş bir yer tutucu olmadığı ayrıca ölçüldü: **43 KB gövde, 7 iç
+bağlantı, `h1` var** — gerçek bir dönüşüm yüzeyi.
+
+| ölçüt | sonuç |
+|---|---|
+| harita | 558 → **559** (tam +1) |
+| `/tr/premium` | eklendi |
+| **negatif** — `/tr/premium/ydus` | yerinde, öteki adres sayısı değişmedi |
+
+**Ölçüm/yazma tuzağı — blok yorumu ERKEN KAPANDI, ikinci kez.** Yorumun
+içine yazdığım robots kalıbı bir `*/` dizisi taşıyordu ve JSDoc'u orada
+bitirdi; `tsc` iki satır ilerideki kodda hata verdi. Belgede aynı tuzak
+`**5 lb**/inç` biçiminde kayıtlı. **Bir yorum metnine desen/yol yazarken
+içinde `*/` olup olmadığına bak** — kalıbı düz metinle anlatmak en ucuz
+çare.
