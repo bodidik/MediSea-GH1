@@ -13294,3 +13294,65 @@ sayıyordu), branş sayfası "116 konu listelemeli" (üst düzey + yetim), ve ş
 bu. **Sayı ölçülüyor, SEBEBİ uyduruluyor.** Ölçüt sertleşiyor: bir sayıyı
 belgeye yazarken onun neyi saydığını da AYRICA ölç — "eşlenen" ile "render
 edilen" farklı büyüklükler.
+
+### GEZİNME BULUNULAN SAYFAYI SÖYLEMİYORDU — tık derinliği ve gizli konu ölçümleriyle birlikte
+
+Tam site grafı üç ölçüt daha üretti; ikisi temiz, biri kusur çıkardı.
+
+**1. Tık derinliği — ulaşılamayan sayfa 0.** Ana sayfadan BFS:
+
+| tık | sayfa |
+|---|---|
+| 0–1 | 23 |
+| 2 | 224 |
+| 3 | 193 |
+| 4 | 105 |
+| 5 | 13 |
+
+558'in 558'i ulaşılıyor, en derini **5 tık** ve 4+ derinlikteki **118 sayfanın
+118'i de KONU** (araç ve premium yok). Derinlik içeriğin kendi hiyerarşisi:
+`/` → `/topics` → branş → ebeveyn konu → çocuk → torun. Kısa yollar çoğu zaman
+içerik çapraz bağlarından geçiyor, iki tanesi branş bile atlıyor
+(`esansiyel-trombositoz` → `romatoloji/behcet-vaskuler-tutulum`).
+
+**2. Gizli konuya bağlanan görünür sayfa: 1 / 46.** Gizli 46 konunun 45'i
+gerçekten bağsız. Tek istisna `subklinik-tiroid-hastaliklari` →
+`hipertiroidi-ve-graves-hastaligi` (6 bölüm, 1966 karakter). Görünür
+karşılıkları gebeliğe özgü, yani yerini tutmuyor. Sayfa gizli (listelerden
+düşük, `noindex`) ama yayımlanmış bir sayfadan bağlı — **içerik kararı**
+(gizliliği kaldır ya da bağı çıkar), DOKUNULMADI.
+
+**3. Kendine bağlanan 12 sayfa — hepsi GEZİNME, ve kusuru orada buldu.**
+`/`, `/tools`, `/uyelik` ve 9 branş sayfası kendilerine bağlanıyor; kaynak
+başlıktaki branş şeridi, logo ve alt bilgi. Bu normal — ama belgede kayıtlı
+kural bir soru açıyor: *"gezinme için doğru olan `aria-current`"*.
+
+Ölçüldü: **uygulamada hiçbir GEZİNME bağlantısı `aria-current` taşımıyordu.**
+
+| yer | durum |
+|---|---|
+| başlık branş şeridi | **YOK** — 9 branş her sayfada aynı, hangisindesin belli değil |
+| `/tools` kategori çipi | var, ama o bir SÜZGEÇ (gezinme değil) — `"true"` doğru |
+| `LangSwitch` | var, ama **ölü kod** (sıfır içe aktaran) |
+
+Ekran okuyucuyla `/topics/hematoloji`de gezen kullanıcı, başlıkta Hematoloji
+dahil dokuz branşı duyuyor ve hiçbiri "şu an buradasın" demiyordu.
+
+**Çare iki kanallı:** `aria-current="page"` (aç/kapa değil GEZİNME olduğu için
+`"true"` değil `"page"`) **ve** görsel işaret renk + **alt çizgi** — yalnızca
+renkle kodlamak WCAG 1.4.1'e takılır. `text-blue-800` beyazda ~8.7 ve
+`globals.css` o tonu ezmiyor (slate-300/400/500 eziliyor, blue değil).
+
+Aynı blokta ikinci bir eksik: `<nav>` **adsızdı**. Konu sayfalarında artık
+ikinci bir `<nav>` var (İçindekiler); iki adsız landmark ekran okuyucuda
+ayırt edilemez. `aria-label="Branşlar"` eklendi.
+
+**Doğrulama üretilmiş çıktıda, negatif kontrolüyle:**
+
+| sayfa | `aria-current` |
+|---|---|
+| `/topics/hematoloji` · `/nefroloji` · `/romatoloji` | **tam 1**, ve doğru bağlantıda |
+| **negatif** — `/topics` · `/uyelik` | **0** |
+
+"Tam 1" ölçütü şart: koşul yanlış yazılsaydı ya hiçbiri ya hepsi işaretlenirdi
+ve iki hata da "aria-current var" diye okunurdu.

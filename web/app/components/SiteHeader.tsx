@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
 
@@ -84,6 +84,11 @@ async function cikisYap() {
 
 export default function SiteHeader() {
   const router = useRouter();
+  /* Gezinmede bulunulan sayfayı işaretlemek için — `aria-current` (bkz. aşağıdaki
+     branş şeridi). Ölçüldü: uygulamada hiçbir GEZİNME bağlantısı bunu
+     taşımıyordu; tek kullanım araç kategorisi süzgeciydi (o bir filtre, gezinme
+     değil) ve ölü koddaki `LangSwitch`. */
+  const suAnkiYol = usePathname();
   const { data: session, status } = useSession();
   // "loading" sırasında hiçbir şey basılmıyor: giriş yapmış kullanıcıya önce
   // "Giriş / Üye Ol" gösterip sonra adıyla değiştirmek, oturumun açık
@@ -252,20 +257,35 @@ export default function SiteHeader() {
             min-w-0 + shrink: yer daralınca şerit içeride kayar, header'ı taşırmaz.
             mask-edges: yalnızca kaydığı aralıkta (1024–1140) kenarları söndürür — bkz. globals.css.
             2xl'de aralık kısılır: vitrin butonları da geldiği için arama kutusuna yer bırakır. */}
-        <nav className="hidden lg:flex items-center gap-4 2xl:gap-3 overflow-x-auto no-scrollbar mask-edges min-w-0">
+        {/* `aria-label` ŞART: konu sayfalarında ikinci bir `<nav>` var
+            (İçindekiler). İki adsız landmark ekran okuyucuda ayırt edilemez. */}
+        <nav aria-label="Branşlar" className="hidden lg:flex items-center gap-4 2xl:gap-3 overflow-x-auto no-scrollbar mask-edges min-w-0">
           {/* py-1.5: bu bağlantılar 19.5px yüksekliğindeydi, AA eşiği 24px.
               Kusur telefon ölçümlerinde HİÇ görünmedi çünkü şerit
               `hidden lg:flex` — 1024px altında hiç render edilmiyor.
               Başlık h-16 (64px) olduğu için dikey boşluk düzeni bozmuyor. */}
-          {branches.map((branch) => (
-            <Link
-              key={branch.slug}
-              href={`/topics/${branch.slug}`}
-              className="inline-block py-1.5 text-[13px] font-bold text-slate-500 hover:text-blue-600 transition-colors whitespace-nowrap"
-            >
-              {branch.name}
-            </Link>
-          ))}
+          {branches.map((branch) => {
+            /* Bulunulan branş. `aria-current="page"` doğru değer: bu bir
+               GEZİNME bağlantısı, bir aç/kapa değil (belgede kayıtlı ayrım).
+               İşaret İKİ kanalda: renk + alt çizgi — yalnızca renkle
+               kodlamak WCAG 1.4.1'e takılır. */
+            const buradaMi = suAnkiYol === `/topics/${branch.slug}`;
+            return (
+              <Link
+                key={branch.slug}
+                href={`/topics/${branch.slug}`}
+                aria-current={buradaMi ? "page" : undefined}
+                className={
+                  "inline-block py-1.5 text-[13px] font-bold transition-colors whitespace-nowrap " +
+                  (buradaMi
+                    ? "text-blue-800 underline underline-offset-4 decoration-2"
+                    : "text-slate-500 hover:text-blue-600")
+                }
+              >
+                {branch.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* ORTA: ARAMA KUTUSU
