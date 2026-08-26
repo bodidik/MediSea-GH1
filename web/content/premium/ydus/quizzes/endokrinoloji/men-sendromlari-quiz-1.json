@@ -16,7 +16,7 @@
       },
       "dogru": "A",
       "aciklama_kisa": "Osilodrostat DOC'u yıkamayı keser; DOC MR'ı aktive eder → hipertansiyon + hipokalemi. Spironolakton hem MR'ı (DOC yolu) hem AR'ı (hiperandrojenizm) aynı anda bloke eden tek ajandır. K⁺ 4.5–5.0 hedeflenerek hERG-QTc sinerjik riski azaltılır.",
-      "aciklama_detay": "<p>Osilodrostat CYP11B1 ve CYP11B2'yi inhibe ederek kortizol sentezini keser; ama DOC (bir mineralokortikoid öncülü) birikir ve MR'ı aktive eder. Bu tablo hipertansiyon + hipokalemi ile ortaya çıkar.</p><p>Spironolakton'un iki mekanizması: (1) MR antagonizması → DOC kaynaklı Na⁺ retansiyonu bloke edilir; (2) AR antagonizması → hirsutizm/akne baskılanır. Eplerenon (B) MR-selektiftir, AR üzerine etkisi yoktur. Fludrokortizon (C) mineralokortikoid agonistidir — bu tabloyu ağırlaştırır. K⁺ 4.5–5.0 mmol/L hedeflenmesi hERG-QTc sinerjik riskini azaltır.</p>",
+      "aciklama_detay": "Osilodrostat CYP11B1 ve CYP11B2'yi inhibe ederek kortizol sentezini keser; ama DOC (bir mineralokortikoid öncülü) birikir ve MR'ı aktive eder. Bu tablo hipertansiyon + hipokalemi ile ortaya çıkar. Spironolakton'un iki mekanizması: (1) MR antagonizması → DOC kaynaklı Na⁺ retansiyonu bloke edilir; (2) AR antagonizması → hirsutizm/akne baskılanır. Eplerenon (B) MR-selektiftir, AR üzerine etkisi yoktur. Fludrokortizon (C) mineralokortikoid agonistidir — bu tabloyu ağırlaştırır. K⁺ 4.5–5.0 mmol/L hedeflenmesi hERG-QTc sinerjik riskini azaltır.",
       "secenekAciklamalari": {
         "A": "DOGRU — Spironolakton çift mekanizma: MR blokajı (DOC yolu) + AR blokajı (hiperandrojenizm). K⁺ korunması hERG-QTc riskini de azaltır.",
         "B": "YANLIS — Eplerenon MR-selektiftir; hiperandrojenizmi hedeflemez.",
@@ -40,7 +40,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "Feokromositoma medikal olarak hazırlanmadan herhangi bir cerrahi/anestezi intraoperatif ölümcül hipertansif kriz tetikleyebilir. Bu kural tüm MEN sendromlarında geçerlidir; boyun cerrahisinden önce mutlaka adrenalektomi tamamlanmalıdır.",
-      "aciklama_detay": "<p>Feokromositoma varlığında paratiroidektomi ya da başka herhangi bir cerrahi/anestezi girişimi, katekolamin fırtınası nedeniyle ölümcül hipertansif krize yol açabilir. Alfa blokaj (fenoksibenzamin veya doksazosin) en az 7–10 gün önce başlanmalı; beta blokaj yalnızca alfa blokajdan sonra eklenmeli.</p><p>Asemptomatik feokromositoma da kriz tetikleyebilir; cerrahi öncelik değişmez.</p>",
+      "aciklama_detay": "Feokromositoma varlığında paratiroidektomi ya da başka herhangi bir cerrahi/anestezi girişimi, katekolamin fırtınası nedeniyle ölümcül hipertansif krize yol açabilir. Alfa blokaj (fenoksibenzamin veya doksazosin) en az 7–10 gün önce başlanmalı; beta blokaj yalnızca alfa blokajdan sonra eklenmeli. Asemptomatik feokromositoma da kriz tetikleyebilir; cerrahi öncelik değişmez.",
       "secenekAciklamalari": {
         "A": "YANLIS — Hiperkalsemi şiddeti burada önceliği değiştirmez; anestezi riski feokromositomadan kaynaklanır.",
         "B": "DOGRU — Tüm MEN sendromlarında feokromositoma her zaman önce tedavi edilir.",
@@ -64,7 +64,7 @@
       },
       "dogru": "D",
       "aciklama_kisa": "Fludrokortizon'un IV formu yoktur; akut fazda >50 mg/gün HC mineralokortikoid reseptörlerini zaten doyurur. Fludrokortizon yalnızca HC dozu <50 mg/güne düşürüldüğünde ve oral beslenmeye geçildiğinde eklenir.",
-      "aciklama_detay": "<p>Adrenal krizde >50 mg/gün hidrokortizon mineralokortikoid reseptörlerini maksimum düzeyde uyarır — ek fludrokortizon gereksizdir. Üstelik fludrokortizon'un IV formu yoktur; oral bir ajandır. Akut fazda yanlışlıkla IV fludrokortizon verilmesi pratikte mümkün olmasa da kavram olarak doğru yanıt D'dir.</p>",
+      "aciklama_detay": "Adrenal krizde >50 mg/gün hidrokortizon mineralokortikoid reseptörlerini maksimum düzeyde uyarır — ek fludrokortizon gereksizdir. Üstelik fludrokortizon'un IV formu yoktur; oral bir ajandır. Akut fazda yanlışlıkla IV fludrokortizon verilmesi pratikte mümkün olmasa da kavram olarak doğru yanıt D'dir.",
       "secenekAciklamalari": {
         "A": "DOGRU — Acil HC IV bolus ilk adımdır.",
         "B": "DOGRU — Klinik şüphede laboratuvar beklenmez.",
@@ -88,7 +88,7 @@
       },
       "dogru": "D",
       "aciklama_kisa": "EJE 2025 MEN1 Sürveyans Kılavuzu: 40 yaşından itibaren her 2 yılda bir mamografi. Dens meme veya ailesel öyküde bireysel risk değerlendirmesiyle ek görüntüleme eklenir. Yıllık mamografi kümülatif radyasyon yükü nedeniyle tercih edilmez.",
-      "aciklama_detay": "<p>Kadın MEN1 taşıyıcılarında meme kanseri riski genel popülasyona kıyasla 2–3 kat artmıştır; tümörler daha erken yaşlarda ortaya çıkar. GTE (Goudet 2024) + Marburg protokolü ve EJE 2025 MEN1 Sürveyans Kılavuzu 40 yaşından itibaren her 2 yılda bir mamografiyi standart kabul eder. Dens meme veya kalıtsal öyküde bireysel risk analizine göre ultrasonografi veya MRG eklenir. Paylaşılan karar verme esastır.</p>",
+      "aciklama_detay": "Kadın MEN1 taşıyıcılarında meme kanseri riski genel popülasyona kıyasla 2–3 kat artmıştır; tümörler daha erken yaşlarda ortaya çıkar. GTE (Goudet 2024) + Marburg protokolü ve EJE 2025 MEN1 Sürveyans Kılavuzu 40 yaşından itibaren her 2 yılda bir mamografiyi standart kabul eder. Dens meme veya kalıtsal öyküde bireysel risk analizine göre ultrasonografi veya MRG eklenir. Paylaşılan karar verme esastır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tarama 40 yaşından başlar.",
         "B": "YANLIS — Kümülatif radyasyon yükü nedeniyle yıllık mamografi tercih edilmez.",
@@ -112,7 +112,7 @@
       },
       "dogru": "C",
       "aciklama_kisa": "MEN1 meme kanseri BRCA1/2 yolağından tamamen bağımsız bir mekanizmayla gelişir. Menin kaybı epigenetik/transkripsiyonel düzlemde işler; DNA tamir yolağı (BRCA) ile doğrudan ilişkisi yoktur.",
-      "aciklama_detay": "<p>MEN1 zeminindeki meme kanseri, BRCA1/2 yolağından bağımsız bir patogenetik mekanizmaya sahiptir. MEN1 ilişkili meme karsinogenezinin birincil sürücüsü menin'in tümör supresör fonksiyonunun yitirilmesidir — bu süreç BRCA'nın DNA tamir yolağından farklı, epigenetik ve transkripsiyonel bir düzlem üzerinde işler.</p><p>Not: Sporadik pNET'lerin ~%17'sinde germline BRCA2/CHEK2/MEN1 mutasyonları saptanabilir — bu durum aynı karsinogenetik yolağı paylaştıkları anlamına gelmez.</p>",
+      "aciklama_detay": "MEN1 zeminindeki meme kanseri, BRCA1/2 yolağından bağımsız bir patogenetik mekanizmaya sahiptir. MEN1 ilişkili meme karsinogenezinin birincil sürücüsü menin'in tümör supresör fonksiyonunun yitirilmesidir — bu süreç BRCA'nın DNA tamir yolağından farklı, epigenetik ve transkripsiyonel bir düzlem üzerinde işler. Not: Sporadik pNET'lerin ~%17'sinde germline BRCA2/CHEK2/MEN1 mutasyonları saptanabilir — bu durum aynı karsinogenetik yolağı paylaştıkları anlamına gelmez.",
       "secenekAciklamalari": {
         "A": "DOGRU ifade — Menin MLL aracılığıyla p21/p27 transkripsiyonunu destekler.",
         "B": "DOGRU ifade — Menin ER-α ile fiziksel etkileşime girer.",
@@ -136,7 +136,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "Sentetik ölümcüllük: iki yolaktan herhangi birinin tek başına kaybı hücreyi öldürmez; ikisinin birlikte inaktivasyonu öldürür. MEN1 kaybı + DHODH blokajı birlikte menin-defisyent tümör hücrelerini selektif olarak apoptozise yönlendirir. Bu LUMEN1 Faz II (NCT05605587) çalışmasının temelidir.",
-      "aciklama_detay": "<p>MEN1 mutasyonu tek başına tümör hücresini yaşatır; DHODH blokajı normal hücrelerde tolere edilir. Ancak menin kaybı, hücreyi DHODH'a bağımlı bir metabolik duruma sürükler — bu arka planda DHODH blokajı selektif olarak menin-defisyent tümör hücrelerini öldürür. LUMEN1 Faz II klinik çalışması (NCT05605587) Mayıs 2023'te başlatılmıştır.</p>",
+      "aciklama_detay": "MEN1 mutasyonu tek başına tümör hücresini yaşatır; DHODH blokajı normal hücrelerde tolere edilir. Ancak menin kaybı, hücreyi DHODH'a bağımlı bir metabolik duruma sürükler — bu arka planda DHODH blokajı selektif olarak menin-defisyent tümör hücrelerini öldürür. LUMEN1 Faz II klinik çalışması (NCT05605587) Mayıs 2023'te başlatılmıştır.",
       "secenekAciklamalari": {
         "A": "YANLIS — DHODH blokajı tüm hücrelerde eşit ölüm yaratmaz; selektivite MEN1 mutasyonundan kaynaklanır.",
         "B": "DOGRU — MEN1 kaybı + DHODH blokajı sentetik ölümcüllük oluşturur.",
@@ -160,7 +160,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "Menin hematopoietik dokularda onkogeniktir (endokrin dokulardaki tümör supresör rolünün tersi). Tedavi baskısı altında hücreler inhibitörün bağlanma cebini değiştiren somatik MEN1 mutasyonları kazanır; menin-MLL köprüsü yeniden kurulur ve diferansiasyon bloku geri döner.",
-      "aciklama_detay": "<p>MLL-r lösemide menin, MLL füzyon proteinini kromatin üzerine çapalar (LEDGF köprüsü) ve diferansiasyon blokunu sürdürür. Menin-MLL inhibitörleri bu köprüyü kopararak diferansiasyonu yeniden başlatmayı hedefler. Direnç mekanizması: tedavi baskısı altında hücreler inhibitörün bağlanma cebini değiştiren somatik MEN1 mutasyonları kazanır.</p>",
+      "aciklama_detay": "MLL-r lösemide menin, MLL füzyon proteinini kromatin üzerine çapalar (LEDGF köprüsü) ve diferansiasyon blokunu sürdürür. Menin-MLL inhibitörleri bu köprüyü kopararak diferansiasyonu yeniden başlatmayı hedefler. Direnç mekanizması: tedavi baskısı altında hücreler inhibitörün bağlanma cebini değiştiren somatik MEN1 mutasyonları kazanır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Germline mutasyonlar lösemi hücrelerine aktarılmaz; somatik edinimden söz edilmektedir.",
         "B": "DOGRU — Somatik MEN1 mutasyonları inhibitörün bağlanmasını engeller.",
@@ -184,7 +184,7 @@
       },
       "dogru": "C",
       "aciklama_kisa": "İnsülinomalar SSTR2'yi düşük eksprese eder; 68Ga-DOTATATE bu tuzak nedeniyle multifodal lezyonların büyük kısmını kaçırır. 68Ga-Exendin-4 PET/BT (GLP-1R hedefli) insülinomaya özgüdür ve üstün duyarlılık sağlar.",
-      "aciklama_detay": "<p>İnsülinomalar SSTR2 ekspresyonunu düşük düzeyde taşır; 68Ga-DOTATATE PET/BT bu nedenle yetersiz duyarlılık gösterir. Tek odak görüntülenmesi diğer insülinomaların olmadığı anlamına gelmez. 68Ga-Exendin-4 PET/BT insülinomalarda GLP-1R'yi hedef aldığından üstün duyarlılık sağlar. SACI de bölgesel lokalizasyon için güçlü bir alternatiftir.</p>",
+      "aciklama_detay": "İnsülinomalar SSTR2 ekspresyonunu düşük düzeyde taşır; 68Ga-DOTATATE PET/BT bu nedenle yetersiz duyarlılık gösterir. Tek odak görüntülenmesi diğer insülinomaların olmadığı anlamına gelmez. 68Ga-Exendin-4 PET/BT insülinomalarda GLP-1R'yi hedef aldığından üstün duyarlılık sağlar. SACI de bölgesel lokalizasyon için güçlü bir alternatiftir.",
       "secenekAciklamalari": {
         "A": "YANLIS — 68Ga-DOTATATE tek odak göstermesi diğer insülinomaların olmadığı anlamına gelmez.",
         "B": "YANLIS — MEN1 insülinomalarında multifodalitenin saptanması cerrahi stratejiyi doğrudan değiştirir.",
@@ -208,7 +208,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "MEN1'de hiperkalsemi gastrin salgısını doğrudan uyarır (kalsiyum-gastrin aksı). Paratiroidektominin ardından gastrin düzeyleri %50–70 olguda belirgin düşer. MEN1 gastrinomalarında önce paratiroidektomi standarttır (GTE 2020, ENETS 2023).",
-      "aciklama_detay": "<p>PTH fazlalığı → hiperkalsemi → gastrin hücreleri üzerinde sekretogog etki → serum gastrin yükselişi. Bu kalsiyum-gastrin aksı nedeniyle MEN1'de ZES tablosunun şiddetinin bir kısmı doğrudan hiperparatiroididizden kaynaklanır. Paratiroidektominin ardından gastrin düzeyleri belirgin biçimde düşebilir; ardından gastrinoma cerrahisi yeniden değerlendirilir.</p>",
+      "aciklama_detay": "PTH fazlalığı → hiperkalsemi → gastrin hücreleri üzerinde sekretogog etki → serum gastrin yükselişi. Bu kalsiyum-gastrin aksı nedeniyle MEN1'de ZES tablosunun şiddetinin bir kısmı doğrudan hiperparatiroididizden kaynaklanır. Paratiroidektominin ardından gastrin düzeyleri belirgin biçimde düşebilir; ardından gastrinoma cerrahisi yeniden değerlendirilir.",
       "secenekAciklamalari": {
         "A": "YANLIS — MEN1 gastrinomalarında Whipple kontroversiyel; multifodal yapı ve morbidite nedeniyle çoğu merkezde tercih edilmez.",
         "B": "DOGRU — Önce paratiroidektomi; kalsiyum-gastrin aksı nedeniyle gastrin dramatik düşebilir.",
@@ -232,7 +232,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "Tüm lezyonlar <2 cm, Ki-67 G1 (%3 ≤%10), FDG-PET negatif, duktus obstrüksiyonu yok → düşük-orta risk. Aktif izlem: ilk yıl 6 ayda bir pankreas MR, stabil seyirde 1–2 yıla seyrekleştirme. Büyüme hızı >5 mm/yıl veya >%20/yıl → cerrahiye yeniden değerlendirme.",
-      "aciklama_detay": "<p>NF-pNET yönetiminde 2 cm eşiği üç retrospektif kohorta (DutchMEN1 Study Group, Partelli ve ark., GTE meta-analizi) dayanan en güçlü kanıt düzeyini temsil eder. Bu hasta düşük-orta risk grubundadır; aktif izlem uygulanır. Cerrahi endikasyon: ≥2 cm, Ki-67 >%10, FDG-PET pozitif, duktus obstrüksiyonu veya hızlı büyüme.</p>",
+      "aciklama_detay": "NF-pNET yönetiminde 2 cm eşiği üç retrospektif kohorta (DutchMEN1 Study Group, Partelli ve ark., GTE meta-analizi) dayanan en güçlü kanıt düzeyini temsil eder. Bu hasta düşük-orta risk grubundadır; aktif izlem uygulanır. Cerrahi endikasyon: ≥2 cm, Ki-67 >%10, FDG-PET pozitif, duktus obstrüksiyonu veya hızlı büyüme.",
       "secenekAciklamalari": {
         "A": "YANLIS — Lezyonlar 2 cm altında; 1.6 cm eşiği geçmemiştir.",
         "B": "DOGRU — Aktif izlem standart; ilk yıl 6 ayda bir MR.",
@@ -256,7 +256,7 @@
       },
       "dogru": "C",
       "aciklama_kisa": "MEN1 somatotropinomalarının %4–11'i GH ile birlikte PRL ko-sekrete eder (plürihormonoal tümör). Prolaktin atlanırsa hipogonadizm ve infertilite sorunu gözden kaçar; ayrıca dopamin agonisti tedavisi planlaması etkilenir. MEN1 hipofiz adenomlarında her zaman PRL + IGF-1 birlikte ölçülmeli.",
-      "aciklama_detay": "<p>MEN1 zemininde gelişen hipofiz adenomları sporadik adenomlardan farklı davranır: daha büyük, daha invazif ve plürihormonoal olmaya daha yatkındır. MEN1 somatotropinomalarının %4–11'i GH ile birlikte prolaktin ko-sekrete eder. PRL yüksekliği hipogonadizm ve infertiliteye yol açar; dopamin agonisti (kabergolin) tedavisi planlamasını etkiler. Bu nedenle MEN1 hipofiz adenomlarında her zaman PRL ve IGF-1 birlikte ölçülmeli; tüm hipofiz aksenlerinin değerlendirilmesi atlanmamalıdır.</p>",
+      "aciklama_detay": "MEN1 zemininde gelişen hipofiz adenomları sporadik adenomlardan farklı davranır: daha büyük, daha invazif ve plürihormonoal olmaya daha yatkındır. MEN1 somatotropinomalarının %4–11'i GH ile birlikte prolaktin ko-sekrete eder. PRL yüksekliği hipogonadizm ve infertiliteye yol açar; dopamin agonisti (kabergolin) tedavisi planlamasını etkiler. Bu nedenle MEN1 hipofiz adenomlarında her zaman PRL ve IGF-1 birlikte ölçülmeli; tüm hipofiz aksenlerinin değerlendirilmesi atlanmamalıdır.",
       "secenekAciklamalari": {
         "A": "YANLIS — MEN1 somatotropinomalarında makroadenom ve invazivlik sporadik formlardan daha sık.",
         "B": "YANLIS — ACTH ko-sekresyonu somatotropinomalarda nadirdir.",

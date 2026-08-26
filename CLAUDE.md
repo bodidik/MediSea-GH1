@@ -14100,3 +14100,63 @@ turda tam o kontrol bozuk bir yazmayı durdurmuştu.
 alanların GERÇEKTEN basıldığını listele.** Bu depoda aynı JSON içinde tip
 ayrımcıları (`bilgi_kutusu`), CSS sınıfları ve HTML gövdeleri yan yana
 duruyor; hepsini taramak 222 adayın 217'sini sahte yapıyor.
+
+### İŞLEYİCİ UYUMU SINIFI KAPANDI — her yüzeyin metin işleyicisi FARKLI
+
+`\%` ve `FEV_1` bulguları aynı kökten geliyordu ve kök şuydu: **her yüzey
+metni başka bir işleyiciyle basıyor.** Kalıp tek tek değil sistematik tarandı.
+
+| yüzey | işleyici | anladığı tek şey |
+|---|---|---|
+| `FlashcardPlayer` | `renderMath` | `$...$` |
+| `QuizEngine` · `VakaEngine` | `kalinIsle` | `**kalın**` |
+| `PearlsViewer` | `kalinHtml` + `dangerouslySetInnerHTML` | HTML |
+
+Bir yüzey için yazılmış gösterim ötekinde **düz metin** olarak basılıyor.
+Ölçüt bu çaprazı arıyor:
+
+| yüzey | aranan | bulunan |
+|---|---|---|
+| flashcard (1641 kayıt) | `**kalın**` · HTML etiketi | **0** · **0** |
+| quiz (378 kayıt) | `$...$` · HTML etiketi | 0 · **11** |
+| vaka (35 kayıt) | `$...$` · HTML etiketi | 0 · 0 |
+
+#### Bulgu: 11 quiz açıklaması ekranda `<p>` gösteriyordu
+
+Hepsi tek dosyada (`endokrinoloji/men-sendromlari-quiz-1`), hepsi
+`aciklama_detay`, hepsi `<p>…</p>` ile TAM sarılı. `kalinIsle` React düğümü
+döndürüyor ve `dangerouslySetInnerHTML` KULLANMIYOR (dosyanın kendi yorumu
+bunu söylüyor), yani etiketler yorumlanmıyor — ekrana basılıyor.
+
+Üstelik gereksiz: motor `aciklama_detay`ı **zaten kendi `<p>`si içine sarıyor**.
+
+Etiket envanteri yalnızca `<p>`/`</p>` (14 çift / 11 alan, yani üç alan iki
+paragraflı). Çok paragraflılar tek boşlukla birleştirildi — kapsayıcı tek bir
+`<p>` ve normal `white-space` taşıdığı için satır sonu zaten görünmezdi.
+
+| ölçüt | sonuç |
+|---|---|
+| düzeltilen alan | 11 |
+| soru sayısı | 11 — korundu |
+| kalan `<p>` | **0** |
+| sınıf taraması (üç yüzey) | **üçü de temiz** |
+| `soru-denetim` (CI kapısı) | yapısal kusur yok |
+
+**Metin İÇERİĞİNİN değişmediği ayrıca kanıtlandı:** dönüşümden önce ve sonra
+etiketler sökülüp normalize edilen metinler karşılaştırıldı; biri bile
+farklıysa betik YAZMIYOR. Bir içerik dönüşümünde "sonuç çalışıyor" yetmez,
+**metnin aynı kaldığı** ölçülmeli.
+
+#### İlk deneme 11 alanlık düzeltmeyi 87 SATIRLIK farka çevirdi
+
+İlk sürüm dosyayı `JSON.stringify(…, null, 2)` ile yeniden yazdı. Sonuç doğru
+ama fark **87 ekleme / 22 silme** — çünkü bütün dosya yeniden biçimlendi.
+Bu depoda inceleme farkın küçüklüğüne dayanıyor (belgede "değişim yalnızca
+yorum satırında — 26 dosyanın her birinde TAM BİR satır" gibi ölçümler var).
+
+Geri alındı; ikinci sürüm ham metinde **yalnızca `"aciklama_detay"` değerinin
+içinde** oynadı. Fark: **11 satır, alan başına bir.**
+
+**Aktarılabilir kural: bir JSON içerik dosyasını `JSON.stringify` ile yeniden
+yazma.** Değer içi bir düzeltme, değer içinde kalmalı; yoksa gerçek değişiklik
+biçim gürültüsünün altında kaybolur.
