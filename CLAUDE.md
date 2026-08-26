@@ -16145,3 +16145,71 @@ Kalan iki adsızın verdikti:
 KOPYAYI SAY.** Üç tur üst üste "son kopya" sanıldı; her seferinde sayım
 bir tane daha gösterdi (branş → araç şeması → premium). Sayım ucuz, kazara
 bulmak pahalı.
+
+### HATA SINIRLARI İLK KEZ UÇTAN UCA SÜRÜLDÜ — landmark 0, başlık 0, çıkışsız `global-error`
+
+Yeni eksen: bir bileşen çökerse kullanıcı ne görüyor? Sınırlar bugüne kadar
+yalnızca KAYNAKTAN okunmuştu. Sürmenin yolu belgede zaten yazılı: dev kipi
+kendi hata katmanıyla sınırı gizliyor, `curl` ise istemci bileşenini hiç
+göstermiyor — **üretim derlemesi + gerçek fırlatan rota** gerekiyor.
+
+İki geçici rota kuruldu (`force-dynamic`, yoksa prerender derlemeyi düşürür).
+
+**Ölçüldü (ÖNCE):**
+
+| ölçüt | `/zz-hata` ve `/tools/zz-hata` |
+|---|---|
+| metin kalitesi | **temiz** — sistem içi ad yok, yığın izi yok, kullanıcı suçlanmıyor |
+| çıkış yolu | 2 bağlantı + "Tekrar dene" |
+| **landmark** | `main` **0** · `nav` 0 · `header` 0 |
+| **üst başlık** | `h1` **0** (kart `<h2>` kullanıyor) |
+
+Yani kart içeriksel olarak doğruydu ama sayfada **hiçbir landmark ve hiçbir
+üst başlık yoktu**. Sebep yapısal: kök sınır, AppShell'in
+`<main id="icerik">` sarmalayıcısının ÜSTÜNDE devreye giriyor ve onu
+değiştiriyor.
+
+| düzeltme | ne |
+|---|---|
+| `app/error.tsx` | `<main>` sarmalayıcı + `h2 → h1` |
+| üç bölüm sınırı | `h2 → h1` — **`<main>` EKLENMEDİ**, AppShell zaten sağlıyor; eklenirse belgede kayıtlı "çift main" kusuru olurdu |
+| `global-error.tsx` | **çıkış yolu eklendi** |
+
+#### `global-error` çıkmazdı — ve `<a>` burada BİLEREK
+
+Ölçüldü: o kartta **bağlantı sayısı SIFIRDI**, yalnızca "Tekrar dene" vardı.
+Hata kalıcıysa (yeniden deneme aynı hataya düşüyorsa) kullanıcı çıkmazda
+kalıyordu — deponun kendi hata kartı kuralı: *"her kartta geri dönülecek bir
+bağlantı olsun."*
+
+`<Link>` DEĞİL düz `<a>`: bu sınır **kök düzen çizilemediğinde** devreye
+giriyor, yani istemci yönlendiricisi ve istemci durumu sağlam sayılamaz;
+yumuşak gezinme aynı bozuk ağaca dönebilir. ESLint'in
+`no-html-link-for-pages` kuralı tam sayfa yüklemesini ÖNLEMEK için var —
+burada yükleme **kasıtlı**, o yüzden gerekçeli satır içi istisna yazıldı.
+
+**Ölçüldü (SONRA):** iki rotada da `main` **1** · `h1` **1** · çıkış yolu 2 ·
+sistem içi ad yok · 375px taşma yok. Başlık stili değişmedi (`globals.css`
+h1/h2/h3'e aynı kuralı uyguluyor). Geçici rotalar silindi, `.next/types`
+artığı 0.
+
+#### ⚠ `pkill -f "next start"` SUNUCUYU ÖLDÜRMÜYOR — ve ölçümü SESSİZCE bayatlatıyor
+
+Düzeltmeden sonraki ilk ölçüm **hâlâ `main 0 · h1 0`** dedi ve bir an
+"değişiklik inmedi" sanıldı. Sebep koddaydı değil ölçüm zincirindeydi:
+
+```
+pkill -f "next start"     -> gerçek süreç `node …/next start`, ÖLMEDİ
+yeni next start           -> EADDRINUSE ile sessizce düştü
+curl / tarayıcı           -> ESKİ derlemeyi ölçtü
+```
+
+Belgede aynı tuzak kayıtlıydı ve yine vuruldu. Ayırt eden şey **sunucu
+günlüğünü okumak** oldu (`EADDRINUSE`); kesin çözüm portu tutan PID'i
+`netstat -ano` ile bulup `taskkill //PID … //F` ile öldürmek.
+
+**Dikkat:** aynı makinede kullanıcının geliştirme sunucusu 3000'de çalışıyor —
+öldürme PID ile ve yalnızca ölçüm portuna (3100) yapılmalı. Bu turda 3000
+ölçümde bir an `000` döndü ama ölmemişti, dosya değişiklikleri yüzünden
+YENİDEN DERLİYORDU; ikinci ölçümde 200. **Bir sunucunun öldüğüne tek bir
+zaman aşımıyla karar verme.**
