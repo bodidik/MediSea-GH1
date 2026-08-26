@@ -332,6 +332,60 @@ export default async function TopicDetailPage({
 
   const bransAdi = getSpecialty(slug)?.title || slug;
 
+  /**
+   * ATA ZİNCİRİ — kırıntı yolunun eksik halkası.
+   *
+   * Ölçüldü: 410 görünür konunun 310'u görünür bir ebeveynin altında
+   * duruyor (181'inde İKİ ya da daha fazla ata var) ama kırıntı yolu
+   * branştan doğrudan konuya atlıyordu. Okuyucu `addison` sayfasında üç
+   * kat yukarıdaki "Adrenal Yetmezlik" hub'ının varlığını hiçbir yerden
+   * göremiyor ve ona çıkamıyordu: hiyerarşi tek yönlüydü — aşağı
+   * bağlanıyor, yukarı bağlanmıyordu.
+   *
+   * GİZLİ ATADA DURULUR: gizli konular listelerden ve site haritasından
+   * çıkarılmış, `noindex` taşıyor; görünür bir sayfadan oraya bağlanmak
+   * o kararı delerdi.
+   */
+  const atalar: { slug: string; title: string }[] = [];
+  {
+    const slugHarita = new Map(allTopics.map((t) => [t.slug, t]));
+    const gorulen = new Set<string>([topicSlug]);
+    let cur = slugHarita.get(topicSlug);
+    while (cur?.parent) {
+      const e = slugHarita.get(cur.parent);
+      // gorulen: ölçümde döngü YOK ama veri içerikten geliyor; sonsuz
+      // döngüyü veriye bırakmıyoruz.
+      if (!e || e.hidden || gorulen.has(e.slug)) break;
+      atalar.unshift({ slug: e.slug, title: e.title });
+      gorulen.add(e.slug);
+      cur = e;
+    }
+  }
+
+  /**
+   * Görünen kırıntı yolu ile JSON-LD şeması AYNI diziden üretilir.
+   *
+   * YALNIZCA EN YAKIN ATA gösteriliyor ve bu ÖLÇÜMLE seçildi. 375px'te,
+   * üç atası olan bir konuda (addison) kırıntı yüksekliği:
+   *
+   *   ata yok (eski hâli) : 55px  · h1 224px'te
+   *   YALNIZ EBEVEYN      : 91px  · h1 260px'te   <- seçilen
+   *   en yakın iki ata    : 126px · h1 295px'te
+   *   tam zincir          : 162px · h1 331px'te
+   *
+   * Tam zincir 107px'e mal oluyor ve başlığı ilk ekranın %40'ına itiyor.
+   * Ebeveyn tek başına eksik olan YETENEĞİ (yukarı çıkmak) veriyor;
+   * üstelik her sayfa KENDİ ebeveynini gösterdiği için hiyerarşi tek tek
+   * yürünebiliyor — zinciri her sayfada tekrarlamak fazlalık olurdu.
+   */
+  const kirintiAdimlari = [
+    { ad: "MediSea", yol: "/" },
+    { ad: "Kütüphane", yol: "/topics" },
+    { ad: bransAdi, yol: `/topics/${slug}` },
+    ...atalar.slice(-1).map((a) => ({ ad: a.title, yol: `/topics/${slug}/${a.slug}` })),
+    { ad: topicItem.title, yol: `/topics/${slug}/${topicSlug}` },
+  ];
+
   // İlgili konular: etiket akrabalığından önceden üretiliyor
   // (scripts/ilgili-index.cjs). Ebeveyn ve çocuklar dizinde zaten elenmiş
   // olduğu için burada tekrar bağlantı çıkmaz.
@@ -381,33 +435,36 @@ export default async function TopicDetailPage({
            aynı kök. Ölçüldü: branş sayfasının şeması Kütüphane'den,
            görüneni MediSea'den başlıyordu; iki sayfa türü de artık
            "MediSea / Kütüphane / …" izini paylaşıyor. */
-        veri={kirintiSemasi([
-          { ad: "MediSea", yol: "/" },
-          { ad: "Kütüphane", yol: "/topics" },
-          { ad: bransAdi, yol: `/topics/${slug}` },
-          { ad: topicItem.title, yol: `/topics/${slug}/${topicSlug}` },
-        ])}
+        veri={kirintiSemasi(kirintiAdimlari)}
       />
       <div className="max-w-[1400px] mx-auto">
 
-        {/* Üst Yönlendirme Çubuğu */}
-        {/* flex-wrap: kırıntı yolu sarmıyordu ve uzun konu başlıkları 375px'te
-            sayfayı yatay kaydırtıyordu (ölçüldü: scrollWidth 406, taşan öge
-            başlık span'i). Başlık artık satır atlayabiliyor. */}
-        <div className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-black uppercase tracking-widest text-slate-400">
-          {/* py-1.5: kırıntı yolu bağlantıları mobilde 16px yüksekliğindeydi,
-              yani dokunma hedefi olarak WCAG asgarisinin (24px) altında. */}
-          {/* İlk adım "MediSea": branş sayfasının görünen yolu da böyle
-              başlıyor. İkisi farklıyken kırıntı yolu sayfadan sayfaya kök
-              değiştiriyordu; ayrıca şema GÖRÜNEN yolla aynı olmak zorunda. */}
-          <Link href="/" className="py-1.5 hover:text-blue-600 transition-colors">MediSea</Link>
-          <span>/</span>
-          <Link href="/topics" className="py-1.5 hover:text-blue-600 transition-colors">Kütüphane</Link>
-          <span>/</span>
-          <Link href={`/topics/${slug}`} className="py-1.5 hover:text-blue-600 transition-colors">{bransAdi}</Link>
-          <span>/</span>
-          <span className="text-blue-900">{topicItem.title}</span>
-        </div>
+        {/* Kırıntı yolu bir GEZİNME landmark'ı: kardeş branş şeridi
+            (`aria-label="Branşlar"`) zaten öyle. Düz bir <div> ekran
+            okuyucuda "kırıntı yolu" diye duyurulmuyor ve listelenmiyordu. */}
+        <nav aria-label="Kırıntı yolu" className="mb-8">
+          {/* py-1.5: bağlantılar mobilde 16px yüksekliğindeydi, yani dokunma
+              hedefi WCAG asgarisinin (24px) altında.
+              flex-wrap: uzun konu başlıkları 375px'te sayfayı yatay
+              kaydırtıyordu (ölçüldü: scrollWidth 406). */}
+          <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] font-semibold text-slate-500">
+            {kirintiAdimlari.map((a, i) => {
+              const son = i === kirintiAdimlari.length - 1;
+              return (
+                <li key={a.yol} className="flex items-center gap-x-2">
+                  {i > 0 && <span aria-hidden="true">/</span>}
+                  {son ? (
+                    <span className="text-blue-900" aria-current="page">{a.ad}</span>
+                  ) : (
+                    <Link href={a.yol} className="py-1.5 hover:text-blue-600 transition-colors">
+                      {a.ad}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </nav>
 
         {/* Ana Izgara */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
