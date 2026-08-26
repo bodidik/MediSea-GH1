@@ -113,6 +113,30 @@ export default function SiteHeader() {
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
+
+  /**
+   * AYNI ADLI İKİ SONUÇ — farklı hedef.
+   *
+   * Bir sonucun görünür adı `başlık` + alt satır (branş/tür). İki kayıt
+   * bunu paylaşıyorsa kullanıcı ayırt edemiyor ve ekran okuyucuda aynı
+   * adlı iki bağlantı farklı yere gidiyor.
+   *
+   * Ölçüldü (canlı): "Miyelodisplastik" araması AYNI adlı iki sonuç
+   * veriyordu — hedefleri `akut-lenfoblastik-losemi-all` ve
+   * `miyelodisplastik-sendrom-mds`. Kök, SENDE-KALANLAR listesindeki çift
+   * başlık kaydı; İÇERİĞE DOKUNULMUYOR, ayrım sunumda slug ile veriliyor.
+   * Konu sayfasındaki "İlgili Konular" listesiyle aynı çare.
+   */
+  const sonucAdSayaci = React.useMemo(() => {
+    const m = new Map<string, number>();
+    for (const r of results) {
+      const ad = `${r.title}|${r.type}|${r.section ?? ""}`;
+      m.set(ad, (m.get(ad) ?? 0) + 1);
+    }
+    return m;
+  }, [results]);
+  const sonucAdiCakisiyor = (r: SearchResult) =>
+    (sonucAdSayaci.get(`${r.title}|${r.type}|${r.section ?? ""}`) ?? 0) > 1;
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   /* Arama BAŞARISIZ olduğunda "Sonuç bulunamadı" demek, kullanıcıya
@@ -401,7 +425,7 @@ export default function SiteHeader() {
                         <p className={`text-xs text-slate-500 ${result.type === 'tool' ? 'truncate' : 'capitalize'}`}>
                            {result.type === 'tool'    ? (result.aciklama || 'Klinik hesaplayıcı') :
                             result.type === 'section' ? 'Ana Bölüm' :
-                                                        `${result.section} Rehberi`}
+                                                        `${result.section} Rehberi`}{sonucAdiCakisiyor(result) ? ` · ${result.slug}` : ""}
                         </p>
                       </div>
                     </Link>
