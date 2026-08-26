@@ -130,3 +130,27 @@ export function bozukYedegiOku(anahtar: string): string | null {
     return null;
   }
 }
+
+/**
+ * Şekli ÇAĞIRAN denetleyecekse: yalnızca ayrıştırma hatasında yedeğe taşır.
+ *
+ * `guvenliOku` tek bir şekil bekliyor. Bazı kayıtlar SÜRÜM GEÇİŞİ taşıyor —
+ * quiz ilerlemesi eski sürümde düz bir SAYI, yenisinde nesne. Öyle bir yerde
+ * katı bir şekil denetimi, geçerli eski kayıtları yedeğe taşıyıp kullanıcıya
+ * kaybolmuş gibi gösterirdi.
+ */
+export function guvenliCozumle(anahtar: string): unknown {
+  let ham: string | null = null;
+  try {
+    ham = localStorage.getItem(anahtar);
+  } catch {
+    return null;
+  }
+  if (!ham) return null;
+  try {
+    return JSON.parse(ham);
+  } catch {
+    bozukKaydiTasi(anahtar, ham);
+    return null;
+  }
+}

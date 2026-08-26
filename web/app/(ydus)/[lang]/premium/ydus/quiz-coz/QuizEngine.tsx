@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
+import { guvenliCozumle } from '@/app/lib/depo';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -504,11 +505,15 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     : tumSorular;
 
   useEffect(() => {
+    /**
+     * Bozuk ilerleme kaydı ATILMAZ, yedeğe taşınır: aksi hâlde bir sonraki
+     * cevap kaydı onun ÜZERİNE yazıyor ve kullanıcının verdiği cevaplar
+     * kalıcı olarak gidiyordu. Bkz. app/lib/depo.ts
+     */
     try {
-      const raw = localStorage.getItem(storageKey);
-      if (!raw) return;
       // Eski sürüm yalnızca indeksi sayı olarak tutuyordu — ikisini de kabul et.
-      const kayit = JSON.parse(raw);
+      const kayit = guvenliCozumle(storageKey) as number | { i?: number; s?: Record<string, boolean> } | null;
+      if (kayit === null) return;
       const i = typeof kayit === 'number' ? kayit : kayit?.i;
       const s = typeof kayit === 'object' && kayit ? kayit.s : null;
       if (s && typeof s === 'object') setSonuclar(s);

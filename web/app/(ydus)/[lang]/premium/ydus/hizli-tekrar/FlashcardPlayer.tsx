@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { kisayolSusmali } from '@/app/lib/klavye';
+import { guvenliDiziOku } from '@/app/lib/depo';
 
 interface Card {
   id: string;
@@ -88,8 +89,8 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
   useEffect(() => {
     setDeck(shuffle(cards));
     try {
-      const raw = localStorage.getItem(depoAnahtari);
-      if (raw) {
+      const yuklenen = guvenliDiziOku<unknown>(depoAnahtari);
+      if (yuklenen) {
         /**
          * Depodaki kimlikler MEVCUT sete karşı süzülür.
          *
@@ -109,10 +110,14 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
          * depo kendi kendini temizliyor.
          */
         const gecerliIdler = new Set(cards.map((c) => c.id));
-        const yuklenen: unknown = JSON.parse(raw);
+        /**
+         * Bozuk kayıt ATILMAZ, yedeğe taşınır (yukarıdaki okuma) — yoksa
+         * ilk işaretlemede kaydetme etkisi onun üzerine yazıyor ve
+         * kullanıcının bütün "biliyorum" işaretleri gidiyordu.
+         */
         setBilinen(
           new Set(
-            (Array.isArray(yuklenen) ? yuklenen : []).filter(
+            yuklenen.filter(
               (id): id is string => typeof id === "string" && gecerliIdler.has(id)
             )
           )

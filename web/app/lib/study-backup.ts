@@ -13,7 +13,7 @@ import type { ReadingMark } from "@/app/lib/reading-marks";
 import type { CardState, StudyLog } from "@/app/lib/review-deck";
 import type { NoteDoc } from "@/app/lib/study-index";
 
-import { BOZUK_EK } from "@/app/lib/depo";
+import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -76,15 +76,6 @@ export type ImportPlan = {
 
 /* ── Okuma ─────────────────────────────────────────────────────────────── */
 
-function json<T>(raw: string | null): T | null {
-  if (!raw) return null;
-  try {
-    return JSON.parse(raw) as T;
-  } catch {
-    return null;
-  }
-}
-
 /**
  * Depodaki çalışma verisinin tamamı, tek nesne.
  *
@@ -108,10 +99,10 @@ export function readAll(): Backup {
      */
     if (k.endsWith(BOZUK_EK)) continue;
     if (k.startsWith(MARK_PREFIX)) {
-      const v = json<ReadingMark[]>(localStorage.getItem(k));
+      const v = guvenliDiziOku<ReadingMark>(k);
       if (Array.isArray(v) && v.length) marks[k.slice(MARK_PREFIX.length)] = v;
     } else if (k.startsWith(KART_PREFIX)) {
-      const v = json<string[]>(localStorage.getItem(k));
+      const v = guvenliDiziOku<string>(k);
       // Boş dizi taşınmaz: hiç işaretlenmemiş set, veri değil gürültüdür.
       if (Array.isArray(v) && v.length) {
         kartlar[k.slice(KART_PREFIX.length)] = v.filter((x) => typeof x === "string");
@@ -124,7 +115,7 @@ export function readAll(): Backup {
        * Ölçüldü: `strokes` yerine bir dize düştüğünde `.length` karakter
        * sayısını veriyor ve "10 çizgi" gibi UYDURMA bir sayı üretiyordu.
        */
-      const ham = json<NoteDoc>(localStorage.getItem(k));
+      const ham = guvenliNesneOku<NoteDoc>(k);
       const v = ham && typeof ham === "object"
         ? {
             ...ham,
@@ -142,9 +133,9 @@ export function readAll(): Backup {
     at: Date.now(),
     marks,
     notes,
-    review: json<Record<string, CardState>>(localStorage.getItem(REVIEW_KEY)) ?? {},
-    index: json<Record<string, IndexRow>>(localStorage.getItem(INDEX_KEY)) ?? {},
-    log: json<StudyLog>(localStorage.getItem(LOG_KEY)) ?? {},
+    review: guvenliNesneOku<Record<string, CardState>>(REVIEW_KEY) ?? {},
+    index: guvenliNesneOku<Record<string, IndexRow>>(INDEX_KEY) ?? {},
+    log: guvenliNesneOku<StudyLog>(LOG_KEY) ?? {},
     kartlar,
   };
 }
