@@ -213,6 +213,11 @@ mark.ms-hl {
   box-decoration-break: clone;
   transition: filter 0.15s ease;
 }
+/* Tekrar kartı vurguyu GÖSTERİYOR ama tıklanabilir değil; sahte imleç
+   affordansı bu depoda ayrıca avlanan bir kusur. */
+mark.ms-hl.ms-hl-statik { cursor: auto; }
+mark.ms-hl.ms-hl-statik:hover { filter: none; }
+
 mark.ms-hl:hover {
   filter: brightness(1.15) saturate(1.2);
 }

@@ -297,8 +297,15 @@ export default function ReviewPage() {
             <>
               <p className="text-[15px] leading-loose text-slate-700 sm:text-base">
                 {card.before && <span className="text-slate-400">{card.before} </span>}
+                {/* Bant tanımı TEK KAYNAK: `globals.css` içindeki `ms-hl-*`
+                    sınıfları. Burada bir dönem İKİNCİ BİR KOPYA duruyordu
+                    (sabit sarı gradyan) ve iki sonucu vardı: kullanıcının
+                    RENK SEÇİMİ tekrarda kayboluyordu, ve renkler değişince
+                    kart onları izlemiyordu.
+                    `ms-hl-statik`: kart metni tıklanabilir DEĞİL, o yüzden
+                    `.ms-hl`in imleç/hover affordansı geri alınıyor. */}
                 {revealed ? (
-                  <mark className="rounded bg-transparent bg-[linear-gradient(transparent_55%,rgba(250,204,21,.55)_55%)] font-semibold text-slate-900">
+                  <mark className={`rounded font-semibold ms-hl ms-hl-${card.st ?? "y"} ms-hl-statik`}>
                     {card.answer}
                   </mark>
                 ) : (

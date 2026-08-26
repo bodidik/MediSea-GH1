@@ -12,7 +12,7 @@
 // gider. Saklanan tek şey o kartın tekrar durumudur (aralık, kolaylık, vade).
 
 import { collectAll, type StudyEntry } from "@/app/lib/study-index";
-import type { ReadingMark } from "@/app/lib/reading-marks";
+import type { ReadingMark, MarkStyle } from "@/app/lib/reading-marks";
 import type { Stroke } from "@/app/components/StrokePreview";
 
 const STATE_KEY = "medisea:review:v1";
@@ -51,6 +51,9 @@ export type ReviewCard = {
   /** cloze: öncesi/sonrası bağlam — soru bundan kurulur */
   before: string;
   after: string;
+  /** Vurgunun stili — kartta AYNI renkle gosterilsin diye tasiniyor.
+      Dusurulurse kullanicinin renk secimi tekrarda kayboluyordu. */
+  st?: MarkStyle;
   /** sketch: el yazısı vuruşları */
   strokes?: Stroke[];
   state: CardState | null;
@@ -113,6 +116,7 @@ function clozeCard(e: StudyEntry, m: ReadingMark, states: Record<string, CardSta
     answer: m.t.replace(/\s+/g, " ").trim(),
     before: (m.b ?? "").trim(),
     after: (m.a ?? "").trim(),
+    st: m.st,
     state: states[m.id] ?? null,
   };
 }
