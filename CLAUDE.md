@@ -14160,3 +14160,34 @@ içinde** oynadı. Fark: **11 satır, alan başına bir.**
 **Aktarılabilir kural: bir JSON içerik dosyasını `JSON.stringify` ile yeniden
 yazma.** Değer içi bir düzeltme, değer içinde kalmalı; yoksa gerçek değişiklik
 biçim gürültüsünün altında kaybolur.
+
+#### Süpürmenin KENDİ boşluğu kapatıldı — beş yüzeyin beşi
+
+Yukarıdaki tarama BEŞ yüzeyden ÜÇÜNÜ kapsıyordu; premium konu blokları ve
+inciler dışarıda kalmıştı. Kendi süpürmemin kapsamı ölçülüp tamamlandı.
+
+| yüzey | işleyici | ölçülen | HTML | `$...$` |
+|---|---|---|---|---|
+| flashcard | `renderMath` | 1641 kayıt | 0 | — |
+| quiz | `kalinIsle` | 378 kayıt | **11 → düzeltildi** | 0 |
+| vaka | `kalinIsle` | 35 kayıt | 0 | 0 |
+| **premium konu** | `kalinIsle` | **41 dosya · 3390 metin alanı** | **0** | **0** |
+| **inciler** | `kalinHtml` + HTML | 13 içerik alanı | 0 (burada MEŞRU olurdu) | **0** |
+
+Premium konu tarafı geniş: `satirlar[].metin`, tablo `hucreler`, `kolonlar`,
+`bilgi_kutusu.metin` ve blok `baslik`ları — hepsi `kalinIsle`den geçiyor, yani
+oraya konacak bir `<p>` ekrana basılırdı. Yok.
+
+**"0" ÖLÇÜMLE KANITLANDI, VARSAYILMADI.** Gerçek bir premium konu kopyalanıp
+ilk bloğunun başlığına kasten `<p>TOHUM</p> ve $x^2$` konuldu; ölçüt aynı
+konuda **123 metin alanı** okuyup **iki tohumu da yakaladı**. Yani "0 kusur"
+ile "0 ölçüm" ayrımı yapıldı.
+
+Ayrıca `inciler` için beklenen sonuç TERSİ yönde: o yüzey `dangerouslySetInnerHTML`
+kullanıyor, yani orada HTML **kusur değil özellik** olurdu. 13 incinin
+hiçbirinde etiket yok — belgede kayıtlı gözlemin (`dangerouslySetInnerHTML`
+bugün karşılıksız duruyor) hâlâ geçerli olduğu doğrulandı.
+
+**Aktarılabilir kural: bir sınıfı süpürdüğünü söylerken KAÇ yüzey olduğunu
+say.** Bu turda süpürme 3/5 kapsamla "kapandı" diye yazılmıştı; kalan ikisi
+temiz çıktı ama bunu ancak ölçüm gösterdi.
