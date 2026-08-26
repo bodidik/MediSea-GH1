@@ -14378,3 +14378,63 @@ blok sınırları o dizeden geri kazanılamıyor ve `#` içerikteki meşru bir
 Yani bu, düzeltmesi verinin kendisinden daha pahalı olan bir artık: ölçüldü,
 mekanizması yazıldı, **bilerek bırakıldı**. Bir gün vurgu şeması sürüm
 atlarsa (`marks:v3`) doğru zaman o olur.
+
+### ⚠ SÖZLÜĞE TEK KELİME EKLEMEK KULLANICI VURGULARINI SİLİYORDU — ölçüldü ve KAPATILDI
+
+Vurgu ofsetleri konteynerin **RENDER EDİLMİŞ** metnine göre saklanıyor. Ama o
+metin, içerik dosyası hiç değişmeden de kayabiliyor: `kisaltmaAc` bölüm
+metnine render'dan ÖNCE uygulanıyor, yani **kısaltma sözlüğü ofset uzayının
+parçası.**
+
+`page.tsx` içindeki yorum bu kırılganlığı İÇİNDEKİLER için zaten yazıyordu
+(*"içeri konsaydı ondan sonraki bütün ofsetler kayardı"*) — sözlüğün aynı
+etkiyi yaptığı fark edilmemişti.
+
+**DENEYLE GÖSTERİLDİ** (yerel üretim derlemesi, vurgu ARAYÜZLE oluşturuldu):
+
+| adım | ölçüm |
+|---|---|
+| sözlükte `HIV` yokken vurgu | konteyner **5025** krk · `HIV` 1035'te · vurgu **1570**'te |
+| sözlüğe TEK girdi eklendi (`HIV: "insan immun yetmezlik virusu"`) | konteyner **5056** krk (+31) |
+| yeniden yükleme | **kayıt 0 · mark 0 — vurgu SESSİZCE SİLİNDİ** |
+
+Kullanıcı hiçbir şey yapmamıştı. Silme, belgede kayıtlı kuralın işlemesiydi:
+*"konteyner VAR ama metin tutmuyorsa vurgu düşer."* Kural doğru; eksik olan
+şey, düşmeden önce KURTARMAYI denemekti.
+
+#### Çare: silmeden önce YENİDEN DEMİRLE
+
+Kayıt zaten vurgulanan metni (`t`) saklıyor. Ofset tutmuyorsa gövdede o metin
+aranıyor:
+
+```ts
+const ilk = govde.indexOf(m.t);
+const tekEslesme = ilk >= 0 && govde.indexOf(m.t, ilk + 1) === -1;
+```
+
+**Ölçüt bilerek DAR: yalnızca TEK eşleşmede kurtar.** Metin iki yerde
+geçiyorsa demirlemek yanlış cümleyi işaretleyebilir ve bu, silmekten DAHA
+KÖTÜ olur — orada eski davranış (düşür) sürüyor.
+
+Demirleme olduğunda kayıt sayısı DEĞİŞMEDİĞİ için kaydetme koşuluna ayrı bir
+bayrak eklendi; yoksa yeni ofsetler diske yazılmazdı.
+
+**Doğrulama — bir kurtarma, İKİ negatif kontrol:**
+
+| tohum | beklenen | sonuç |
+|---|---|---|
+| geçerli metin, **bayat ofset** (1570 ↔ gerçek 1601) | kurtarılsın | **kurtarıldı**, yeni ofset **1601** yazıldı, boyanan metin birebir |
+| sayfada **hiç olmayan** metin | düşsün | **düştü** |
+| **belirsiz** metin (`" ve "`, gövdede **21 kez**) | düşsün | **düştü** — yanlış yere demirlenmedi |
+
+**Simetri de ölçüldü:** sözlük geri alınınca aynı kayıt 1601'den **1570'e geri
+demirlendi**. Yani mekanizma kaymanın iki yönünde de çalışıyor.
+
+Sözlük değişikliği ölçüm bitince geri alındı (`git diff` boş) ve normal akış
+yeniden sürüldü: vurgu oluşturma + yeniden yükleme, iki kayıt da boyandı.
+
+**Aktarılabilir kural: render tarafındaki her METİN DÖNÜŞÜMÜ, ofset tabanlı
+kullanıcı verisinin şemasının parçasıdır.** Bu depoda üç dönüşüm var
+(`kisaltmaAc` · `basliklariDuzenle` · `kalinIsle`); biri bile metnin
+uzunluğunu değiştirirse ondan sonraki bütün vurgular kayar. Artık kurtarma
+katmanı var, ama dönüşüm eklerken bu soru sorulmalı.

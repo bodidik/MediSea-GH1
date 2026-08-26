@@ -129,6 +129,8 @@ export default function ReadingTools() {
       const saved = loadMarks(pathname);
       const alive: ReadingMark[] = [];
       const shown = new Set<string>();
+      /** En az bir vurgu yeni ofsete demirlendi mi — kaydetmeyi tetikler. */
+      let demirlendi = false;
 
       for (const m of saved) {
         // "true" eski kayıtlardan gelir: keyOf bir dönem JSX'in değersiz
@@ -141,18 +143,47 @@ export default function ReadingTools() {
           alive.push(m);
           continue;
         }
-        const range = rangeFrom(root, m.s, m.e);
-        // konteyner var ama metin tutmuyor → içerik güncellenmiş, vurgu düşer
-        if (!range || range.toString() !== m.t) continue;
-        if (paint(range, m.id, m.st)) {
-          alive.push(m);
-          shown.add(m.id);
+        let range = rangeFrom(root, m.s, m.e);
+        let kayit = m;
+
+        /**
+         * OFSET TUTMUYOR — SİLMEDEN ÖNCE YENİDEN DEMİRLEMEYİ DENE.
+         *
+         * Ofsetler konteynerin RENDER EDİLMİŞ metnine göre saklanıyor ve o
+         * metin içerik dosyası değişmeden de kayabiliyor. ÖLÇÜLDÜ: kısaltma
+         * sözlüğüne TEK bir girdi eklemek (`HIV`) konteyneri 5025 → 5056
+         * karaktere çıkardı ve o noktadan SONRAKİ vurgu sessizce silindi —
+         * kullanıcı hiçbir şey yapmamışken.
+         *
+         * Kurtarma ölçütü DAR: metin gövdede TAM OLARAK BİR KEZ geçiyorsa
+         * oraya demirle. İki yerde geçiyorsa demirlemek yanlış cümleyi
+         * işaretleyebilir ve bu, silmekten DAHA KÖTÜ olur — o durumda eski
+         * davranış (düşür) sürüyor.
+         */
+        if (!range || range.toString() !== m.t) {
+          const govde = root.textContent ?? "";
+          const ilk = m.t ? govde.indexOf(m.t) : -1;
+          const tekEslesme = ilk >= 0 && govde.indexOf(m.t, ilk + 1) === -1;
+          const yeniRange = tekEslesme ? rangeFrom(root, ilk, ilk + m.t.length) : null;
+          if (yeniRange && yeniRange.toString() === m.t) {
+            range = yeniRange;
+            kayit = { ...m, s: ilk, e: ilk + m.t.length };
+            demirlendi = true;
+          } else {
+            continue;
+          }
+        }
+
+        if (paint(range, kayit.id, kayit.st)) {
+          alive.push(kayit);
+          shown.add(kayit.id);
         }
       }
 
       setMarks(alive);
       setPainted(shown);
-      if (alive.length !== saved.length) saveMarks(pathname, alive);
+      // Demirleme olduysa SAYI aynı kalır; yeni ofsetler yine de yazılmalı.
+      if (alive.length !== saved.length || demirlendi) saveMarks(pathname, alive);
     };
 
     // Açılışta içerik henüz basılmamış olabilir — birkaç kare bekle. Bu bekleme
