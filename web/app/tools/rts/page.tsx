@@ -88,6 +88,12 @@ export default function RTSPage() {
   const rts = ready ? calcRTS(gcs!, sbp!, rr!) : null;
   const band = rts !== null ? getBand(rts) : null;
   const c = band ? COLOR[band.color] : null;
+  /**
+   * T-RTS: ağırlıklı RTS ile AYNI kodlardan, ağırlıksız toplam (0–12).
+   * Dipnottaki "≤ 11 sevk" eşiği BUNA ait; ağırlıklı RTS 7.84'ü aşamadığı
+   * için o sayıya uygulanırsa her hasta ölçütü karşılıyor görünüyordu.
+   */
+  const hamToplam = ready ? gcs! + sbp! + rr! : null;
 
 
   return (
@@ -136,6 +142,17 @@ export default function RTSPage() {
                 </div>
               ))}
             </div>
+            {hamToplam !== null && (
+              <div className="bg-white/60 rounded-xl px-3 py-2 flex items-center justify-between">
+                <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest">Ham kod toplamı (T-RTS)</span>
+                <span className="text-sm font-black text-blue-900">{hamToplam} / 12</span>
+              </div>
+            )}
+            {hamToplam !== null && hamToplam <= 11 && (
+              <p className="text-[10px] font-bold text-amber-800 leading-relaxed">
+                T-RTS ≤ 11 — alan triyajında travma merkezine sevk ölçütü karşılanıyor.
+              </p>
+            )}
           </div>
         ) : (
           <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
@@ -150,7 +167,7 @@ export default function RTSPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              RTS = 0.9368×GCS + 0.7326×SKB + 0.2908×Solunum hızı (kodlanmış). RTS ≤ 11 (ham kodlar) travma merkezi sevkini önerir. Champion et al., J Trauma 1989.
+              Ağırlıklı RTS = 0.9368×GCS + 0.7326×SKB + 0.2908×Solunum hızı (kodlanmış), aralık 0–7.84 — prognoz içindir. Sevk ölçütü AYRI bir sayıya bakar: T-RTS (ham kod toplamı, 0–12) ≤ 11. Champion et al., J Trauma 1989.
             </p>
           </div>
         </div>
