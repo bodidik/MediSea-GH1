@@ -16443,3 +16443,45 @@ ve tanıdık kalması daha değerli.
 metni ile `aria-label="Kapat"` eşleşmiyordu. Ölçüt "görünür metinde HARF ya
 da RAKAM var mı" koşuluyla daraltılınca sıfıra indi. Bir WCAG ölçütünü
 otomatikleştirirken **ölçütün kendi kapsam tanımını** da koda geçir.
+
+### `/giris`, `/kayit` VE `/profile` ÇIKMAZDI — kütüphaneye yol yoktu
+
+Kimlik hattı ölçülürken çıktı. Sunucu HTML'inde bağlantı sayıldı:
+
+| sayfa | bağlantı | siteye dönüş |
+|---|---|---|
+| `/giris` | 1 → `/kayit` | **0** |
+| `/kayit` | 1 → `/giris` | **0** |
+| `/profile` | 2 → **ikisi de** `/uyelik` | **0** |
+
+Kullanıcı bu üç sayfa arasında dönüp duruyor; kütüphaneye ancak tarayıcının
+geri tuşuyla dönebiliyor. **Aynı kusur premium giriş sayfasında ölçülüp
+düzeltilmişti** (görünür bağlantı 0 → 10) — bu üç sayfa o turun dışında
+kalmış. "Kopyayı say" kuralının bir kez daha karşılığı.
+
+Üçü de `(site)` grubunun DIŞINDA, yani üst menü ve alt bilgi **bilerek** yok
+(odaklanmış yüzey, belgede kayıtlı karar). Çıkış yolu ise şart.
+
+**Kendi kusurumu ölçüm yakaladı:** ilk hâlde bağlantı **68×20 px**'di, yani
+WCAG asgarisi olan 24px'in ALTINDA. Dolgu eklendi → **72×32**.
+
+| ölçüt | sonra |
+|---|---|
+| 375px | görünür, 72×32, taşma yok |
+| 1280px | görünür, 72×32 |
+| kontrast | 5.65 |
+| **negatif** — form | `h1` 1 · `main` 1 · alan 2 · gönder düğmesi yerinde |
+
+Premium turunun dersi de uygulandı: bağlantı **genişlikten bağımsız görünür**
+(orada `hidden sm:inline` verilmiş ve mobilde çıkış yeniden kaybolmuştu).
+
+#### Yan ölçüm: parola kurtarma akışı YOK — ama yanlış vaat de yok
+
+Ne rota var (`api/auth` altında yalnızca `register` ve `[...nextauth]`), ne
+de herhangi bir yerde "şifremi unuttum" bağlantısı. Yani giriş sayfası
+**olmayan bir şeyi vaat etmiyor** — bu depoda avlanan ilan–gerçek sınıfı
+oluşmuyor.
+
+Ama şifresini unutan kullanıcının yolu kapalı. Kurmak e-posta altyapısı
+(gönderim sağlayıcısı, imzalı jeton, süre sınırı) gerektiriyor; ölçüldü,
+kapsamı yazıldı, **ürün kararı olarak bırakıldı**.
