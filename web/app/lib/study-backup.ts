@@ -13,6 +13,8 @@ import type { ReadingMark } from "@/app/lib/reading-marks";
 import type { CardState, StudyLog } from "@/app/lib/review-deck";
 import type { NoteDoc } from "@/app/lib/study-index";
 
+import { BOZUK_EK } from "@/app/lib/depo";
+
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
 const REVIEW_KEY = "medisea:review:v1";
@@ -98,6 +100,13 @@ export function readAll(): Backup {
   for (let i = 0; i < localStorage.length; i++) {
     const k = localStorage.key(i);
     if (!k) continue;
+    /**
+     * Yedek anahtarı (`…:bozuk`) bir YOL değil, dışa aktarıma girmemeli.
+     * İçeriği ayrıştırılamadığı sürece zaten eleniyordu — ama artık
+     * "geçerli JSON ama yanlış ŞEKİL" kayıtları da yedekleniyor ve
+     * `{"yanlis":"sekil"}` gibi bir yedek NOT olarak sızabilirdi.
+     */
+    if (k.endsWith(BOZUK_EK)) continue;
     if (k.startsWith(MARK_PREFIX)) {
       const v = json<ReadingMark[]>(localStorage.getItem(k));
       if (Array.isArray(v) && v.length) marks[k.slice(MARK_PREFIX.length)] = v;

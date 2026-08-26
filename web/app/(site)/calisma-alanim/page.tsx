@@ -8,6 +8,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { aramaEslesir } from "@/app/lib/arama";
 import Link from "next/link";
 import { collectAll, depoKullanilabilir, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
+import { kurtarilanSayisi } from "@/app/lib/depo";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
 import StudyCoverage from "@/app/components/StudyCoverage";
@@ -29,10 +30,14 @@ export default function StudyWorkspace() {
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
   const [depoYok, setDepoYok] = useState(false);
+  /** Bu oturumda okunamayıp yedeğe taşınan kayıt sayısı. */
+  const [kurtarilan, setKurtarilan] = useState(0);
 
   useEffect(() => {
     setEntries(collectAll());
     setDepoYok(!depoKullanilabilir());
+    // collectAll bozuk kayıtları yedeğe taşımış olabilir — SONRA okunmalı.
+    setKurtarilan(kurtarilanSayisi());
   }, []);
 
   const totals = useMemo(() => {
@@ -181,6 +186,19 @@ export default function StudyWorkspace() {
         <div className="mb-6">
           <SyncDurumu genis />
         </div>
+
+        {/* Kurtarılan kayıt SESSİZ kalmamalı: veri korundu ama kullanıcı onu
+            listede göremiyor ve dışa aktarıma da girmiyor. Sayıyı söylemek,
+            "kaydım kayboldu" ile "kaydım okunamadı"yı ayırıyor. */}
+        {kurtarilan > 0 && (
+          <div role="alert" className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+            <p className="text-[12px] font-semibold leading-snug text-amber-900">
+              {kurtarilan} kayıt okunamadı ve yedeğe alındı — <strong>silinmediler</strong>.
+              Bu kayıtlar listede ve yedek dosyasında yer almaz; ilgili konu sayfasını
+              açtığında not defteri eski kaydı kopyalamanı sağlar.
+            </p>
+          </div>
+        )}
 
         {/* Yükleniyor */}
         {entries === null && (

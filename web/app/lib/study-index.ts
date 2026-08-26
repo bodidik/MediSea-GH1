@@ -9,7 +9,7 @@
 
 import type { ReadingMark } from "@/app/lib/reading-marks";
 import { SPECIALTIES } from "@/app/lib/specialties";
-import { guvenliNesneOku } from "@/app/lib/depo";
+import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -69,16 +69,6 @@ export function pageTitle(): string {
 
 /* ── Toplama ───────────────────────────────────────────────────────────── */
 
-function parseJson<T>(raw: string | null): T | null {
-  if (!raw) return null;
-  try {
-    return JSON.parse(raw) as T;
-  } catch {
-    return null;
-  }
-}
-
-/** Depodaki tüm not ve vurguları tek listede, en yeni önce döndürür. */
 /**
  * Depodan okunan notu güvenli şekle sokar.
  *
@@ -138,14 +128,17 @@ export function collectAll(): StudyEntry[] {
     for (let i = 0; i < localStorage.length; i++) {
       const k = localStorage.key(i);
       if (!k) continue;
+      // Yedek anahtarı bir YOL değil: `<önek><yol>:bozuk` biçimi öneki
+      // tutuyor ama arkasındaki dize gerçek bir sayfa yolu değil.
+      if (k.endsWith(BOZUK_EK)) continue;
       if (k.startsWith(MARK_PREFIX)) paths.add(k.slice(MARK_PREFIX.length));
       else if (k.startsWith(NOTE_PREFIX)) paths.add(k.slice(NOTE_PREFIX.length));
     }
 
     const out: StudyEntry[] = [];
     for (const path of paths) {
-      const marks = parseJson<ReadingMark[]>(localStorage.getItem(MARK_PREFIX + path)) ?? [];
-      const note = notuDuzelt(parseJson<NoteDoc>(localStorage.getItem(NOTE_PREFIX + path)));
+      const marks = guvenliDiziOku<ReadingMark>(MARK_PREFIX + path) ?? [];
+      const note = notuDuzelt(guvenliNesneOku<NoteDoc>(NOTE_PREFIX + path));
 
       const hasNote = Boolean(note && (note.text?.trim() || note.strokes?.length));
       if (!marks.length && !hasNote) continue;
@@ -171,6 +164,13 @@ export function purge(path: string) {
   try {
     localStorage.removeItem(MARK_PREFIX + path);
     localStorage.removeItem(NOTE_PREFIX + path);
+    /**
+     * Yedek de gitmeli. Onay metni "tüm vurgu ve notlar silinsin mi?"
+     * diyor; okunamamış bir kaydın kopyasını geride bırakmak kullanıcının
+     * sildiğini sanmasına yol açar.
+     */
+    localStorage.removeItem(MARK_PREFIX + path + BOZUK_EK);
+    localStorage.removeItem(NOTE_PREFIX + path + BOZUK_EK);
   } catch {}
   dropFromIndex(path);
 }

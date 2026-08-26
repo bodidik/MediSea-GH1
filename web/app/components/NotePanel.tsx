@@ -24,7 +24,7 @@ import { panoyaKopyala } from "@/app/lib/pano";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
-import { guvenliNesneOku } from "@/app/lib/depo";
+import { bozukYedegiOku, guvenliNesneOku, kurtarildiMi } from "@/app/lib/depo";
 
 /** [x, y, basınç] — x ve y panel GENİŞLİĞİNE göre normalize (en-boy oranı korunur) */
 type Pt = [number, number, number];
@@ -110,6 +110,8 @@ export default function NotePanel() {
   const [dirty, setDirty] = useState(false);
   /** Depo dolu vb. nedenle son kaydetme başarısız oldu mu */
   const [kayitHatasi, setKayitHatasi] = useState(false);
+  /** Bu sayfanın notu bozuktu ve yedeğe taşındı mı (bu oturumda). */
+  const [kurtarildi, setKurtarildi] = useState(false);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const surfaceRef = useRef<HTMLDivElement>(null);
@@ -152,6 +154,7 @@ export default function NotePanel() {
     const doc = guvenliNesneOku<{ text?: string; strokes?: Stroke[] }>(KEY(pathname));
     setText(typeof doc?.text === "string" ? doc.text : "");
     setStrokes(Array.isArray(doc?.strokes) ? doc.strokes : []);
+    setKurtarildi(kurtarildiMi(KEY(pathname)));
     setRedo([]);
     setDirty(false);
   }, [pathname]);
@@ -650,6 +653,25 @@ export default function NotePanel() {
                 düşünce DOM'a giriyor. Duyurulmazsa ekran okuyucu kullanıcısı
                 notunun kaybolacağını hiç öğrenmiyor — ReadingTools'taki
                 vurgu uyarısında ölçülen kusurun birebir kardeşi. */}
+            {/* Kurtarma tek başına YETMEZ: veri korunuyor ama kullanıcı boş bir
+                defter görüp "burada notum yok" sanıyor ve üstüne yazıyor. Yedek
+                de kullanıcının ulaşamadığı bir anahtarda duruyordu — kopyalama
+                düğmesi onu erişilebilir kılıyor (kota kurtarmasının emsali). */}
+            {kurtarildi && (
+              <div role="alert" className="border-b border-amber-200 bg-amber-50 px-3 py-2.5">
+                <p className="mb-2 text-[11px] font-semibold leading-snug text-amber-900">
+                  Bu sayfadaki kayıtlı not okunamadı, bu yüzden defter boş açıldı.
+                  Eski kayıt SİLİNMEDİ — yedeğe alındı; aşağıya yazacağın not ayrıca saklanır.
+                </p>
+                <button
+                  onClick={() => void panoyaKopyala(bozukYedegiOku(KEY(pathname)) ?? "").then(setPanoOk)}
+                  className="rounded-lg bg-amber-700 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-amber-600"
+                >
+                  Eski kaydı kopyala
+                </button>
+              </div>
+            )}
+
             {kayitHatasi && (
               <div role="alert" className="border-b border-rose-200 bg-rose-50 px-3 py-2.5">
                 <p className="mb-2 text-[11px] font-semibold leading-snug text-rose-700">
