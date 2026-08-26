@@ -15977,3 +15977,64 @@ düğme listesi BASILIP okununca beşi de oradaydı.
 kirlettiği `next-env.d.ts` ve `tsconfig.json`u `web/` içinden `web/…` yoluyla
 geri almaya çalıştım; yol tutmadı ve dosyalar kirli kaldı. Belgede kayıtlı:
 bu geri alma **depo kökünden** yapılır.
+
+### HİYERARŞİ TEK YÖNLÜYDÜ — 310 konunun ebeveynine çıkış yolu yoktu
+
+Yeni eksen: **gezinme organizasyonu**. Ölçüldü — 410 görünür konunun
+**310'u (%76)** görünür bir ebeveynin altında duruyor, **181'inde iki ya da
+daha fazla ata** var (en derini 5). Ama kırıntı yolu branştan **doğrudan**
+konuya atlıyordu:
+
+```
+MediSea / Kütüphane / Endokrinoloji / Addison
+```
+
+Oysa gerçek yer üç kat aşağıda: *Adrenal Bez Hastalıkları → Adrenal Korteks
+Hastalıkları → Adrenal Yetmezlik → Addison*. Okuyucu o hub'ların varlığını
+hiçbir yerden göremiyor ve onlara çıkamıyordu — **içerik aşağı bağlanıyor,
+yukarı bağlanmıyordu.**
+
+Kırıntı artık en yakın atayı taşıyor ve **görünen yol ile JSON-LD şeması TEK
+diziden** üretiliyor (ölçüldü: ikisi birebir aynı).
+
+#### Kapsam ÖLÇÜMLE seçildi, tahminle değil
+
+375px'te, üç atası olan bir konuda:
+
+| değişken | kırıntı yüksekliği | `h1` üst kenarı |
+|---|---|---|
+| ata yok (eski hâli) | 55px | 224 |
+| **yalnız ebeveyn** | **91px** | **260** ← seçilen |
+| en yakın iki ata | 126px | 295 |
+| tam zincir | 162px | 331 |
+
+Tam zincir **107px**'e mal oluyor ve başlığı ilk ekranın %40'ına itiyor.
+Ebeveyn tek başına eksik olan YETENEĞİ (yukarı çıkmak) veriyor — ve zincirin
+tek tek yürünebildiği ayrıca ölçüldü: `adrenal-yetmezlik` sayfası da kendi
+ebeveynini gösteriyor. Zinciri her sayfada tekrarlamak fazlalık olurdu.
+
+#### İki yan düzeltme
+
+- Kırıntı artık bir **gezinme landmark'ı**: `<nav aria-label="Kırıntı yolu">`
+  + `<ol>/<li>` + son adımda `aria-current="page"`. Düz bir `<div>` ekran
+  okuyucuda kırıntı diye duyurulmuyor ve listelenmiyordu. Kardeş branş şeridi
+  (`aria-label="Branşlar"`) zaten landmark'tı — tutarsızlık.
+- Tipografi hafifletildi: `uppercase tracking-widest` ataları çok
+  genişletiyordu; masaüstünde **60px → 32px**, kontrast 7.24, dokunma
+  hedefi 32px.
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| atasız konu | 4 adım — eskisiyle aynı |
+| atası **GİZLİ** konu | 4 adım — gizli sayfa `noindex`, oraya bağlanmak o kararı delerdi |
+| 12 konuluk örneklem | ata bağlantısı **12/12**, HTTP **200 12/12** |
+| 375px yatay taşma | **0** (pozitif kontrol: 900px tohum yakalanıyor) |
+| görünen ↔ şema | **birebir aynı**, dört konuda da |
+
+**Ölçüm tuzağı — dedektör görünür kırıntıyı KAÇIRDI.** İlk tarama
+"görünür kırıntı yok" dedi, çünkü `aria-label` içinde "kırıntı/breadcrumb"
+arıyordu; kırıntı VARDI ama adsız bir `<div>`di. Kaynağı okumak düzeltti.
+**Bir ögenin yokluğunu ARADIĞIN NİTELİKLE kanıtlama** — nitelik eksikse öge
+yok sanılıyor, ki burada asıl bulgu tam olarak o eksiklikti.
