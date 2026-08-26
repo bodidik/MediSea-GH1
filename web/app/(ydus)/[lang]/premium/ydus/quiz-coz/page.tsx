@@ -10,13 +10,41 @@ export const revalidate = 86400;
 
 const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
 
+/**
+ * İKİ ŞEMA BİR ARADA — künye üst düzeyde YA DA `meta` içinde.
+ *
+ *   kanonik : { id, baslik, branch, topic, sorular }        39 dosya
+ *   sapan   : { meta: { quizId, baslik, branch, topicId }, sorular }   1 dosya
+ *
+ * Motor üst düzeyi okuyor; sapan dosyada `veri.id` ve `veri.baslik`
+ * UNDEFINED kalıyordu. Ölçülen üç sonuç:
+ *   - ilerleme anahtarı `quiz-progress-undefined` (künyesiz her quiz AYNI
+ *     anahtarı paylaşır; bugün tek dosya, yarın ikincisi eklenirse bir
+ *     kullanıcının cevapları öteki quize geri yüklenir),
+ *   - `<h1>` BOŞ basılıyor,
+ *   - `veri.topic` yok, geri bağlantısı konuya değil branşa düşüyor.
+ *
+ * İçerik dosyasına DOKUNULMUYOR (içerik kullanıcının sorumluluğu);
+ * düzeltme okuma tarafında — `VakaEngine`deki `meta` düzleştirmesiyle
+ * aynı karar. Üst düzey ÖNCELİKLİ, yani 39 kanonik dosyanın davranışı
+ * ve kayıtlı ilerlemeleri birebir korunuyor.
+ */
 function quizYukle(branch: string, id: string) {
   try {
     const dosyaYolu = path.join(
       process.cwd(),
       'content', 'premium', 'ydus', 'quizzes', branch, `${id}.json`
     );
-    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+    const ham = JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
+    const m = ham?.meta ?? {};
+    return {
+      ...ham,
+      // Künyesiz dosyada son çare DOSYA ADI: benzersiz ve kararlı.
+      id: ham.id ?? m.quizId ?? id,
+      baslik: ham.baslik ?? m.baslik ?? '',
+      branch: ham.branch ?? m.branch ?? branch,
+      topic: ham.topic ?? m.topicId,
+    };
   } catch {
     return null;
   }
