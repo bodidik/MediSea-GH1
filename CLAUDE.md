@@ -15323,3 +15323,30 @@ bu kez tuzağı yazan kuralın sahibi kurbanı oldu. Bir hata dedektörü yazark
 ölçütü sayfanın KENDİ metniyle çakışmayacak biçimde seç: `role="alert"`
 kutusunun metni, öge sayısı ya da `h1`in boşluğu gibi yapısal sinyaller
 anahtar kelimeden güvenli.
+
+### Dört eksen ölçüldü, dördü de TEMİZ — yeniden taramaya gerek yok
+
+Bu tur kusur çıkarmadı; sonuçlar burada ki aynı sorular tekrar sorulmasın.
+
+| eksen | ölçüm | sonuç |
+|---|---|---|
+| **başlık hiyerarşisi** | 25 konu · 347 başlık | düzey atlaması **0**, `h1` sorunu **0** |
+| **`<html lang>`** | 15 yüzey (açık · araç · premium · giriş/kayıt) | **15/15 `tr`**, sapma yok |
+| **premium slug çözümü** | `%73le` ↔ `sle` | **ikisi de aynı konuya çözülüyor** |
+| **premium 404** | olmayan konu / olmayan branş | **404 + `noindex`** — soft 404 yok |
+
+Birinci satır aynı zamanda **kendi eklemelerimin gerileme kontrolü**: bu
+oturumda içindekiler bloğu bir `<h2>` ekledi ve bölüm başlıkları da `<h2>` —
+taslak bozulmadı. Ölçüt kör değil, tohumlu `h2 → h5` atlaması yakalanıyor.
+
+**Premium slug bulgusu bir VARSAYIMI düzeltiyor.** Açık taraf `slugCoz()`
+kullanıyor, premium rotalar KULLANMIYOR — "komşuda olup burada olmayan şey
+kusur adayıdır" kuralına göre bu bir aday gibi görünüyordu. Ölçüm çürüttü:
+üretimde parametre zaten çözülüyor ve premium içerikte ASCII dışı slug
+**0**. Belgede kayıtlı kapsam düzeltmesiyle de tutarlı — o kusur `next dev`
+istek anı render'ına özgüydü.
+
+**Ölçüm tuzağı — `<title>` durum kodunu göstermez.** Olmayan premium konu
+ilk ölçümde "200 + düzen başlığı" gibi göründü, çünkü yalnızca başlık
+çekilmişti; durum kodu ölçülünce **404** çıktı. 404 sayfaları da düzen
+metadata'sını miras alıyor, yani başlık tek başına "sayfa var" demek DEĞİL.
