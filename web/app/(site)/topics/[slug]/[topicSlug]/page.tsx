@@ -451,6 +451,7 @@ export default async function TopicDetailPage({
             {icindekilerGoster && (
               <nav
                 aria-labelledby="icindekiler-basligi"
+                data-baskida-goster
                 className="mb-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
               >
                 <h2

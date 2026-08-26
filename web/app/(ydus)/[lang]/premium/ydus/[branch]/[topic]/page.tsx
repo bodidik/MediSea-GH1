@@ -279,6 +279,7 @@ export default async function KonuSayfasi({
             {icindekiler.length >= 4 && govdeUzunlugu >= 6000 && (
               <nav
                 aria-labelledby="premium-icindekiler"
+                data-baskida-goster
                 style={{
                   background: '#fff',
                   border: '0.5px solid #b8cfe8',

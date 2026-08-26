@@ -550,8 +550,8 @@ label:has(input.sr-only:focus-visible) {
    biniyor.
 
    Kapsam bilerek dar: yalnızca GEZİNME ve süsleme gizleniyor.
-   - `nav` gizleniyor: branş şeridi, İçindekiler (kâğıtta çapa işe yaramaz)
-     ve araç sayfalarındaki ToolTopNav.
+   - `nav` gizleniyor: branş şeridi ve araç sayfalarındaki ToolTopNav.
+     İçindekiler MUAF (`data-baskida-goster`): ölçüldü, belgenin %3ü ve 12 bölüm adı taşıyor — kâğıtta çapa değil TASLAK değeri var.
    - `button` GİZLENMİYOR: klinik hesaplayıcılarda seçili şıklar düğmedir;
      gizlemek çıktıyı anlamsız yapardı (araç sayfasında ölçüldü: header 0,
      footer 0, nav 1, buton 2 — yani hesap kâğıtta kalıyor).
@@ -559,7 +559,7 @@ label:has(input.sr-only:focus-visible) {
 @media print {
   header,
   footer,
-  nav,
+  nav:not([data-baskida-goster]),
   .fixed,
   [data-baskida-gizle] {
     display: none !important;
