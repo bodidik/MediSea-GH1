@@ -13234,3 +13234,63 @@ hazırlanıyor").
 izleyen bir ölçüt yalnızca "bugün açılıyor mu" sorusunu cevaplıyor; "doğru
 adrese mi bağlanıyor" sorusunu ancak HAM durum cevaplıyor. Bu depoda ikisinin
 farkı 5 kırık bağlantı ve 3 gizli borç.
+
+### YETİM SAYFA YOK — ama "branştan ulaşılan 114 araç" iddiası YANLIŞTI
+
+Tam site grafı çıkarılmışken (558 sayfa, 586 hedef) tersi de ölçüldü:
+**haritadaki hangi adrese hiç iç bağlantı gelmiyor?** Belge "çıkmaz sokak"ı
+(giden bağlantısı olmayan sayfa) ölçmüştü; gelen tarafı hiç ölçülmemişti.
+
+**Sonuç: yetim sayfa 0.** 558 adresin hepsine en az bir iç bağlantı geliyor.
+
+**Ölçüt kör değil:** haritaya hiçbir yerden bağlanmayan sahte bir adres
+konuldu ve **yakalandı** (1 yetim). Ayrıca ilk koşumda 5 sahte yetim çıkmıştı
+— harita yüzde-kodlu, `href` ham Türkçe; iki taraf da yüzde-kod çözülünce 0'a
+indi. **Bir küme farkı alırken iki tarafın da AYNI normalleştirmeden geçtiğini
+kanıtla.**
+
+Gelen bağlantı dağılımı:
+
+| gelen bağlantı | sayfa |
+|---|---|
+| 1 | **97** |
+| 2 | 133 |
+| 3–5 | 222 |
+| 6+ | 90 |
+| en çok | `/tools` 557 · `/` 557 · `/topics` 555 |
+
+#### Tek bağlantı alan 97 sayfanın ikisi de BEKLENEN — ama biri belgeyi çürüttü
+
+| tür | adet | tek kaynağı |
+|---|---|---|
+| araç | **58** | `/tools` hub'ı |
+| konu | 39 | **EBEVEYN konu sayfası** |
+
+39 konu doğru davranıyor: branş sayfası yalnızca üst düzey konuları listeliyor
+(belgede kayıtlı), çocuk konular ebeveynlerinden bağlanıyor. Yani tek bağlantı
+kanonik hiyerarşi yolunun ta kendisi.
+
+**58 araç ise belgedeki bir sayıyı çürüttü.** Branş şeridi turunda şu
+yazılmıştı: *"branştan ulaşılan benzersiz araç: 34 → **114** / 130"*. O sayı
+EŞLEMENİN büyüklüğü; şerit ise **8 araçta kırpılıyor.** Ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| `brans-arac.json` — benzersiz eşlenen araç | **114** (12 branş, 124 listeleme) |
+| branş sayfalarında RENDER EDİLEN benzersiz araç | **72** |
+| yalnızca hub'dan ulaşılan araç | **58** |
+
+Branş başına render: 8 · 8 · 8 · 8 · 7 · 7 · 7 · 5 · 5 · 5 · 5 · 0
+(`journal-club` bilerek eşlemesiz).
+
+**Kırpma KUSUR DEĞİL** — şerit gerçek sayıyı yazıp süzülmüş hub'a bağlanıyor
+("Tümü (14) →"), yani 42 araç iki tıkla ulaşılıyor, çıkmaz yok. Yanlış olan
+BELGEDEKİ İDDİAYDI: eşleme büyüklüğü ile render edilen erişim aynı sayı
+sanılmıştı.
+
+**Bu, bu depoda DÖRDÜNCÜ kez aynı hata:** `/tools` "133 = 130 + 3 gezinme"
+(gerçek sebep çapraz listeleme), `ToolShare 130/130` (grep içe aktarmayı
+sayıyordu), branş sayfası "116 konu listelemeli" (üst düzey + yetim), ve şimdi
+bu. **Sayı ölçülüyor, SEBEBİ uyduruluyor.** Ölçüt sertleşiyor: bir sayıyı
+belgeye yazarken onun neyi saydığını da AYRICA ölç — "eşlenen" ile "render
+edilen" farklı büyüklükler.
