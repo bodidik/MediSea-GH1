@@ -31,6 +31,7 @@ import {
   type ReadingMark,
 } from "@/app/lib/reading-marks";
 import { panoyaKopyala } from "@/app/lib/pano";
+import { KART_MAX, KART_MIN } from "@/app/lib/review-deck";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
 
 type Anchor = { x: number; y: number; below: boolean };
@@ -61,7 +62,8 @@ export default function ReadingTools() {
   /** Son kaydetme depo dolu olduğu için başarısız oldu mu */
   const [kayitHatasi, setKayitHatasi] = useState<"dolu" | "engelli" | null>(null);
   /** Kısa vurgu bilgisi — geçici, 3 sn sonra kaybolur */
-  const [kisaBilgi, setKisaBilgi] = useState(false);
+  /** Kart üretmeyen vurgunun SEBEBİ: metin çok kısa mı, çok uzun mu. */
+  const [kisaBilgi, setKisaBilgi] = useState<"kisa" | "uzun" | null>(null);
   /**
    * Yeni vurgu, KESIŞEN eski vurguların yerini aldı — kaç tanesinin.
    *
@@ -405,10 +407,19 @@ export default function ReadingTools() {
     setPainted((p) => new Set(p).add(id));
     commit([...base, { id, k, s, e, t, st, b: before, a: after }]);
 
-    if (t.trim().length < 8) {
+    /**
+     * Kart üretmeyen vurguda SEBEBİ söyle — İKİ sınır için de.
+     *
+     * Ölçüldü: uyarı yalnızca alt sınırda (`< 8`) çıkıyordu. Bir paragrafı
+     * vurgulayan kullanıcı (400 karakteri aşmak kolay) kart alamıyor ve
+     * bunu hiçbir yerden öğrenmiyordu — vurgu kaydediliyor ve boyanıyor,
+     * eksik olan yalnızca `/tekrar` tarafında görünüyor.
+     */
+    const uzunluk = t.trim().length;
+    if (uzunluk < KART_MIN || uzunluk > KART_MAX) {
       if (kisaTimer.current) clearTimeout(kisaTimer.current);
-      setKisaBilgi(true);
-      kisaTimer.current = setTimeout(() => setKisaBilgi(false), 3500);
+      setKisaBilgi(uzunluk < KART_MIN ? "kisa" : "uzun");
+      kisaTimer.current = setTimeout(() => setKisaBilgi(null), 3500);
     }
 
     // Kesişen eski vurgular silindiyse kullanıcı BİLMELİ (bkz. degistiBilgi).
@@ -778,7 +789,9 @@ export default function ReadingTools() {
           {kisaBilgi && (
             <div role="alert" className="max-w-[240px] rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] leading-snug text-amber-700 shadow-lg animate-[msPop_.12s_ease-out]">
               Bu vurgu <strong className="font-black">tekrar kartı olmayacak</strong> —
-              cümle düzeyinde (8+ karakter) vurgular kart olur.
+              {kisaBilgi === "kisa"
+                ? ` ${KART_MIN} karakterden kısa; cümle düzeyinde vurgular kart olur.`
+                : ` ${KART_MAX} karakterden uzun; daha kısa bir bölüm seçersen kart olur.`}
             </div>
           )}
 

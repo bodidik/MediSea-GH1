@@ -98,9 +98,21 @@ function writeStates(s: Record<string, CardState>) {
  * `t` idi. Bozuk kayıt artık "kullanılamaz" sayılıp atlanıyor, ötekiler
  * çalışmaya devam ediyor.
  */
+/**
+ * Vurgudan kart üretilebilmesi için gereken metin uzunluğu.
+ *
+ * DIŞA AKTARILIYOR: sınır bir dönem burada ve `ReadingTools`ta AYRI
+ * yazılıydı — kullanıcıya gösterilen uyarı yalnızca alt sınırı biliyordu
+ * ve metni "8+ karakter kart olur" diyordu, yani ÜST sınırı hem
+ * uygulamıyor hem yanlış anlatıyordu. Tek kaynak, ayrışmayı imkânsız
+ * kılıyor; uyarı metni de bu sayılardan türüyor.
+ */
+export const KART_MIN = 8;
+export const KART_MAX = 400;
+
 function usable(m: ReadingMark): boolean {
   const t = typeof m?.t === "string" ? m.t.trim() : "";
-  return t.length >= 8 && t.length <= 400;
+  return t.length >= KART_MIN && t.length <= KART_MAX;
 }
 
 function clozeCard(e: StudyEntry, m: ReadingMark, states: Record<string, CardState>): ReviewCard {
