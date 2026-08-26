@@ -59,7 +59,7 @@ export default function ReadingTools() {
   const [panelOpen, setPanelOpen] = useState(false);
   const [penMode, setPenMode] = useState(false);
   /** Son kaydetme depo dolu olduğu için başarısız oldu mu */
-  const [kayitHatasi, setKayitHatasi] = useState(false);
+  const [kayitHatasi, setKayitHatasi] = useState<"dolu" | "engelli" | null>(null);
   /** Kısa vurgu bilgisi — geçici, 3 sn sonra kaybolur */
   const [kisaBilgi, setKisaBilgi] = useState(false);
   /**
@@ -96,7 +96,8 @@ export default function ReadingTools() {
       setMarks(next);
       // Kaydetme başarısızsa (depo dolu) kullanıcı bunu BİLMELİ: ekranda vurgu
       // duruyor ama yenilemede kaybolacak.
-      setKayitHatasi(!saveMarks(pathname, next));
+      const sonuc = saveMarks(pathname, next);
+      setKayitHatasi(sonuc === "ok" ? null : sonuc);
       // Çalışma Alanım sayfası başlığı buradan okur
       if (next.length) touchIndex(pathname, pageTitle());
     },
@@ -805,11 +806,24 @@ export default function ReadingTools() {
           */}
           {kayitHatasi && (
             <div role="alert" className="max-w-[240px] rounded-xl border border-rose-300 bg-rose-50 px-3 py-2 text-[11px] leading-snug text-rose-700 shadow-lg">
-              <strong className="font-black">Vurgular kaydedilemiyor.</strong> Tarayıcı
-              depolaması dolu — yenilediğinde kaybolurlar.{" "}
-              <Link href="/calisma-alanim" className="font-bold underline">
-                Yer aç
-              </Link>
+              <strong className="font-black">Vurgular kaydedilemiyor.</strong>{" "}
+              {/* SEBEP AYRIMI: "dolu" ile "engelli" farklı çareler ister.
+                  Bir dönem ikisine de "depolaması dolu — Yer aç" deniyordu ve
+                  ölçüldü: depo ENGELLİYKEN de aynı mesaj çıkıyor, yani
+                  kullanıcı boşuna yer açmaya çalışıyordu. */}
+              {kayitHatasi === "dolu" ? (
+                <>
+                  Tarayıcı depolaması dolu — yenilediğinde kaybolurlar.{" "}
+                  <Link href="/calisma-alanim" className="font-bold underline">
+                    Yer aç
+                  </Link>
+                </>
+              ) : (
+                <>
+                  Tarayıcın bu site için veri saklamayı engelliyor — yenilediğinde
+                  kaybolurlar. Site verisine izin verirsen kaydedilirler.
+                </>
+              )}
             </div>
           )}
           <button

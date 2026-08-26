@@ -57,14 +57,34 @@ export function loadMarks(pathname: string): ReadingMark[] {
  * Vurguları saklar. BAŞARIYI DÖNDÜRÜR — çağıran taraf sessizce yutmamalı:
  * depo dolduğunda kullanıcıya kaydedildi demek, kaydetmemekten beterdir.
  */
-export function saveMarks(pathname: string, marks: ReadingMark[]): boolean {
+/**
+ * Kaydetme SONUCU — sebebiyle birlikte.
+ *
+ * Bir dönem `boolean` dönüyordu ve yorumu iki sebebi ZATEN biliyordu
+ * ("kota dolu / gizli sekme"), ama arayüz tek sebebi basıyordu:
+ * "Tarayıcı depolaması dolu — Yer aç". Ölçüldü (canlı, depo erişimi
+ * engellenerek): depo DOLU değil ENGELLİYKEN de aynı mesaj çıkıyordu,
+ * yani kullanıcı boşuna yer açmaya çalışıyordu. Bu depoda "yanlış sebep
+ * bildirme" ayrıca avlanan bir kusur.
+ */
+export type KayitSonuc = "ok" | "dolu" | "engelli";
+
+/** Kota hatası mı, erişim hatası mı? Tarayıcılar farklı ad/kod kullanıyor. */
+function kotaHatasiMi(e: unknown): boolean {
+  const h = e as { name?: string; code?: number };
+  return h?.name === "QuotaExceededError" ||
+    h?.name === "NS_ERROR_DOM_QUOTA_REACHED" ||
+    h?.code === 22 || h?.code === 1014;
+}
+
+export function saveMarks(pathname: string, marks: ReadingMark[]): KayitSonuc {
   try {
     if (marks.length === 0) localStorage.removeItem(storageKey(pathname));
     else localStorage.setItem(storageKey(pathname), JSON.stringify(marks));
     if (typeof window !== "undefined") window.dispatchEvent(new Event("medisea:changed"));
-    return true;
-  } catch {
-    return false; // kota dolu / gizli sekme
+    return "ok";
+  } catch (e) {
+    return kotaHatasiMi(e) ? "dolu" : "engelli";
   }
 }
 
