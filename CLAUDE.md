@@ -16304,3 +16304,46 @@ vereceksen **Windows yolu** kullan ya da scratchpad'e kopyala.
 olarak geçirilen `"/${y:-}"` çıktıda `C:/Program Files/Git/topics` diye
 göründü; ölçüm doğruydu, yalnızca ETİKET bozulmuştu. Bir raporda yol gibi
 görünen beklenmedik bir önek varsa önce kabuğun dönüşümünü sor.
+
+### PARAGRAF VURGULAYAN KULLANICI KART ALAMIYOR VE SEBEBİNİ ÖĞRENMİYORDU
+
+Tekrar takviminin sınırları incelenirken çıktı. `usable()` vurguyu
+**[8, 400]** karakterle sınırlıyor — makul bir süzgeç. Ama kullanıcıya
+SÖYLENEN yalnızca alt sınırdı:
+
+| durum | önce |
+|---|---|
+| `< 8` karakter | uyarı çıkıyor |
+| **`> 400` karakter** | **hiçbir şey** |
+
+400 karakter kabaca 2–3 cümle; bir paragrafı vurgulamak onu kolayca aşıyor.
+O durumda vurgu **kaydediliyor ve boyanıyor** — ekranda her şey yolunda
+görünüyor; eksik olan yalnızca `/tekrar` tarafında ortaya çıkıyor ve orada da
+hiçbir açıklama yok. Deponun kuralı: *hesaplanamıyorsa SEBEBİNİ söyle.*
+
+**Ayrıca iki gerçeklik vardı:** 8 ve 400 `review-deck`te, 8 ayrıca
+`ReadingTools`ta yazılıydı ve uyarı metni *"8+ karakter kart olur"* diyerek
+üst sınırı hem uygulamıyor hem **yanlış anlatıyordu**. Sınırlar
+`KART_MIN`/`KART_MAX` olarak dışa aktarıldı; süzgeç, tetik ve METİN aynı
+sayılardan türüyor — `SINIRLAR.albumin` turundaki çözümün aynısı.
+
+| ölçüt (tarayıcıda, gerçek arayüzle) | sonuç |
+|---|---|
+| 6 karakter | "**8 karakterden kısa**; cümle düzeyinde vurgular kart olur." |
+| 420 karakter | "**400 karakterden uzun**; daha kısa bir bölüm seçersen kart olur." — **önceden hiçbir şey** |
+| **negatif** — 70 karakter | uyarı **YOK**, kayıt 1, `/tekrar` "1 ÇALIŞILACAK · 1 YENİ" |
+
+**Yan ölçüm — SM-2 sınırları sağlam:** aralık `Math.min(365, …)` ile,
+`ease` `[1.3, 3.0]` arasında kırpılıyor. Kart 10 yıl sonrasına düşemiyor,
+ease sıfıra inemiyor. Bu eksen temiz, yeniden ölçmeye gerek yok.
+
+**Ölçüm tuzağı — HMR bayat kod çalıştırdı.** İlk koşum "uyarı yok" dedi ve
+YANLIŞTI: bileşen durumunun TİPİ değişmişti (`boolean` → `"kisa"|"uzun"|null`)
+ve HMR onu uygulamamıştı; sayfa eski kodu çalıştırıyordu. Yeniden yükleyince
+uyarı çıktı. **Bir durumun tipi değiştiğinde HMR'a güvenme — ölçümden önce
+sayfayı yenile.**
+
+**İkinci tuzak — `removeItem` bileşen kuruluyken kalıcı değil**, belgede
+kayıtlı ve yine vuruldu: ölçüm başında depo temizlendi ama `ReadingTools`
+bellekteki listeyi geri yazdı ve kayıt sayısı 1 yerine 4 çıktı. Temizlik
+YENİLEME ile kesinleşiyor.
