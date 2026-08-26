@@ -14482,3 +14482,29 @@ eklemesini de** karşılıyor.
 **Aktarılabilir kural: bir mekanizmayı belgeye yazarken KAÇ yerde geçerli
 olduğunu ölç — "üç dönüşüm var" demek üçünün de etkili olduğunu göstermez.**
 Bu turda üçün biri etkisiz çıktı, biri de sanılandan geniş.
+
+#### Yeniden demirleme CANLIDA doğrulandı
+
+Düzeltmeler yerelde ölçülmüştü; asıl soru her zaman aynı: **kullanıcıya
+ulaştı mı?** Canlı sitede sürüldü — vurgu ARAYÜZLE oluşturuldu, sonra ofseti
+elle bayatlatıldı (sözlük/işaret kaymasının taklidi):
+
+| ölçüt | sonuç |
+|---|---|
+| gerçek ofset | 83 |
+| bayatlatılan ofset | **-54** |
+| yeniden yüklemeden sonra | **kayıt 1 · mark 1 · ofset 83** |
+| boyanan metin = kayıttaki metin | **evet** |
+
+Düzeltmeden önce bu kayıt SİLİNİRDİ.
+
+**İki negatif kontrol de canlıda:** sayfada hiç olmayan metin **düştü**,
+belirsiz metin (`" ve "`, gövdede **21 kez**) **düştü** — yanlış yere
+demirlenmedi. Yani kurtarma katmanı canlıda hem çalışıyor hem fazla cömert
+değil.
+
+**Ölçüm izi temizlendi** (`medisea:*` = 0). Temizlik YENİLEME ile kalıcı
+yapıldı: belgede kayıtlı tuzak — bileşen kuruluyken `removeItem` kalıcı
+değil, bellekteki liste geri yazılıyor. Bu turda o tuzağa bir kez düşüldü
+(temizlik sonrası 2 kayıt göründü) ve ancak yenileme sonrası doğru ölçüm
+alındı.
