@@ -161,7 +161,7 @@ export default function OsmolalGapPage() {
             Ölçüt "kullanıcı bir şey girmiş mi": tamamen boş formda sessiz.
           */}
           {!hasCalc && girdiVar && (
-            <p className="mt-2 pt-2 border-t border-blue-200/50 text-[10px] font-bold text-blue-900/80">
+            <p role="alert" className="mt-2 pt-2 border-t border-blue-200/50 text-[10px] font-bold text-blue-900/80">
               Hesaplanamıyor — {eksikAlanlar.join(", ")} makul bir değer bekliyor.
               Formül üçünü de zorunlu ister; yalnızca etanol opsiyoneldir.
             </p>

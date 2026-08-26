@@ -210,7 +210,7 @@ export default function KtvPage() {
               {!degerlendirilebilir ? "DEĞERLENDİRİLEMEDİ — değerleri kontrol edin" : yeterli ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
             </p>
             {!degerlendirilebilir && (
-              <p className="mt-2 text-[11px] font-bold text-slate-600">
+              <p role="alert" className="mt-2 text-[11px] font-bold text-slate-600">
                 {preOk && postOk && post >= pre
                   ? "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — diyaliz üreyi azaltır. İki alan yer değiştirmiş olabilir."
                   : "Bir değer makul aralığın dışında: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L · ağırlık 20–300 kg."}
