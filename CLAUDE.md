@@ -16648,3 +16648,37 @@ orada — SDAI'de CRP tanım gereği sınırsız ve "~86" CRP≈10 varsayımın�
 Ayrıca `das28` sessiz kıskaç kullanmaya devam ediyor; ölçüldü, kardeşlerinden
 farklı olduğu kayda geçti, ama çalışan bir aracı aynı turda değiştirmek
 ölçülmüş bir kusuru düzeltmek olmazdı.
+
+#### Sınıf süpürüldü — `dapsa` da aynıydı, ve önceki tarama onu GÖREMEZDİ
+
+`cdai`/`sdai` düzeltildikten sonra ölçüt bütün araçlara sürüldü: **etiketin
+ilan ettiği ARALIK ↔ kapının uyguladığı sınır.**
+
+| ölçüm | değer |
+|---|---|
+| etikette aralık ilanı | 19 |
+| kapıda üst sınırı geçmeyen | **12 → düzeltmeden sonra 9** |
+| gerçek kusur | **3 (hepsi `dapsa`)** |
+| yanlış pozitif | 9 — `apache2` ve `scorad`da bunlar **ŞIK etiketi** ("GKS 10–12 (3–5 puan)", "Az (10–29%)"), girdi aralığı değil |
+
+`dapsa` şekli `cdai`/`sdai` ile birebir: etiket "(0–68)" / "(0–66)" /
+"(0–10 cm VAS)" diyor, kapı yalnızca "girildi mi" diyordu. Yedi senaryoyla
+ölçüldü (meşru tavan **164** = 68+66+10+10+10 elle birebir; tek yazım hatası
+yalnızca SJC'yi işaretliyor; hepsi 0 → REMİSYON; olağan vaka 9.5 → DÜŞÜK).
+
+**BELGEDE KAYITLI ÖNCEKİ TARAMA BU ÜÇÜNÜ GÖREMEZDİ.** O tur *"ekranda ilan
+edilen aralık ile kapı — tarandı, yeni kusur yok"* diye kapatılmıştı ve
+**7 metin** bulmuştu. Ölçütü alan İPUCU metinlerine bakıyordu; `cdai` ve
+`dapsa`nın aralığı **ETİKETTE** duruyor (`label: "SJC — … (0–28)"`) ve
+taramaya hiç girmiyordu.
+
+Yani "sınıf tarandı, temiz" sonucu ölçütün gördüğü YÜZEY kadar geçerliydi.
+Aynı hata bu belgede daha önce de kayıtlı (adres parametresi okuyan araç
+"11" sanılmıştı, dinamik anahtarlı biçim sayılınca 15 çıktı; sayısal
+varsayılan "27" sanılmıştı, `useState(24)` biçimi sayılınca +17 çıktı).
+
+**Kural sertleşiyor: bir sınıfı "tarandı" diye kapatırken ölçütün hangi
+METİN ALANLARINI okuduğunu da yaz.** Bu depoda aynı bilgi en az dört yerde
+durabiliyor — `label` · `ph`/`placeholder` · JSX gövde metni · veri alanı
+(`max: 28`) — ve bir alanı okumayan ölçüt o alandaki kusuru sessizce
+"temiz" raporluyor.
