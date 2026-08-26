@@ -16399,3 +16399,47 @@ olurdu. Vurguda uyarı doğru anda çıkıyor çünkü orada eylem TEK ve kesikl
 `/Vurgu ve çizimlerinden türetilir/` deseniyle aranınca **bulunamadı**; öge
 CSS'te `uppercase` ve `innerText` onu uyguluyor. `textContent` gerçeği
 gösterdi. Belgede kayıtlı tuzak, bu oturumda ikinci kez.
+
+### KISA ŞİFRE İÇİN KULLANICI 9 SANİYE BEKLEYİP SUNUCUDAN ÖĞRENİYORDU
+
+Kayıt formunda istemci tarafında **hiçbir** uzunluk denetimi yoktu —
+`minLength` yok, `pattern` yok, JS kontrolü yok; yalnızca `required`. Kural
+sunucuda duruyordu ve kullanıcı onu ancak gidiş-dönüşten sonra öğreniyordu.
+
+**Ölçüldü** (tarayıcıda, gerçek formla, 3 karakterlik şifre):
+
+| ölçüt | önce |
+|---|---|
+| mesaj | "Şifre en az 6 karakter olmalıdır." |
+| **süre** | **8994 ms** |
+
+Bu ölçüm yazma YAPMIYOR: uzunluk denetimi veritabanı erişiminden önce
+(belgede kayıtlı).
+
+Sabit ve **mesaj** artık `app/lib/kimlik.ts`te; sunucu ve istemci aynı
+yerden okuyor, yani "aynı kural iki yerde" ayrışması imkânsız. **Sunucu
+denetimi KALDI** — istemciye güvenilmez; değişiklik yalnızca bekletmeyi
+kaldırıyor.
+
+| ölçüt | sonra |
+|---|---|
+| kısa şifre | aynı mesaj, **ağa istek 0** (önce yanıt beklenmek zorundaydı) |
+| **negatif** — geçerli şifre | istek gidiyor (1), engellenmiyor — koşumla yakalandı, **gerçek uç çağrılmadı** |
+| **negatif** — sunucu | uca doğrudan POST hâlâ **400 + aynı mesaj** |
+
+`minLength` niteliği BİLEREK eklenmedi: tarayıcının kendi baloncuğu gönderimi
+kesip uygulamanın `role="alert"` kutusunu devre dışı bırakırdı; mesajın tek
+ve tanıdık kalması daha değerli.
+
+#### Aynı turda ölçülüp TEMİZ çıkan üç eksen
+
+| eksen | sonuç |
+|---|---|
+| **WCAG 2.5.3 (Label in Name)** | bu kod tabanında yüzeyi **yok**: etiketler ya görünür metin ya saran `<label>`; `aria-label` yalnızca ikonlarda (`✕` gibi) ve simgeler bu ölçütün kapsamı dışında |
+| **çift `id`** | 8 yüzeyde **0** — bu oturumda eklenen `bolum-*`, `<id>-birim`, `icindekiler-basligi`, `premium-icindekiler` dahil |
+| **sarkan ARIA atfı** | 8 yüzeyde **0** (`aria-labelledby` · `describedby` · `controls`) |
+
+**Ölçüt tuzağı — ilk `2.5.3` taraması bir SAHTE ihlal üretti:** `✕` görünür
+metni ile `aria-label="Kapat"` eşleşmiyordu. Ölçüt "görünür metinde HARF ya
+da RAKAM var mı" koşuluyla daraltılınca sıfıra indi. Bir WCAG ölçütünü
+otomatikleştirirken **ölçütün kendi kapsam tanımını** da koda geçir.
