@@ -155,6 +155,13 @@ export default async function BranchListPage({
   // detay sayfasındaki "Alt Başlıklar" menüsünde / "İleri Okuma"da yer alır)
   const mainTopics = topicList.filter(t => !t.parent && !t.hidden);
 
+  /** Görünen kırıntı yolu ile JSON-LD şeması AYNI diziden üretilir. */
+  const kirintiAdimlari = [
+    { ad: "MediSea", yol: "/" },
+    { ad: "Kütüphane", yol: "/topics" },
+    { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
+  ];
+
   // Her ana konunun kendi alt konusu var mı? (kaç tane) — kompakt kartta rozet olarak gösterilir
   const childCounts: Record<string, number> = {};
   for (const t of topicList) {
@@ -195,11 +202,7 @@ export default async function BranchListPage({
            diye başlıyordu; şema ise MediSea adımını atlıyordu. Ölçüldü —
            şema [Kütüphane, Hematoloji], görünen [MediSea, Kütüphane,
            Hematoloji]. Konu sayfasıyla da tutarlı: orada da aynı kök var. */
-        veri={kirintiSemasi([
-          { ad: "MediSea", yol: "/" },
-          { ad: "Kütüphane", yol: "/topics" },
-          { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
-        ])}
+        veri={kirintiSemasi(kirintiAdimlari)}
       />
 
       {/* --- BRANŞ HERO (branşın kendi renk/ikon kimliğiyle) --- */}
@@ -209,13 +212,29 @@ export default async function BranchListPage({
           {/* Breadcrumb */}
           {/* flex-wrap: konu sayfasındaki kırıntı yolu uzun başlıklarda 375px'te
               yatay kaydırma üretiyordu; aynı kalıp burada da var, aynı çare. */}
-          <div className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            <Link href="/" className="inline-block py-1.5 hover:text-blue-700 transition-colors">MediSea</Link>
-            <span>/</span>
-            <Link href="/topics" className="inline-block py-1.5 hover:text-blue-700 transition-colors">Kütüphane</Link>
-            <span>/</span>
-            <span className="text-blue-900">{specialty.title}</span>
-          </div>
+          {/* Konu sayfasıyla AYNI kalıp: gezinme landmark'ı + liste +
+              aria-current. İkisi ayrışırsa aynı rol iki sayfada farklı
+              duyurulur; ölçüldü — konu sayfası landmark'a alındığında bu
+              sayfa düz <div> olarak kalmıştı. */}
+          <nav aria-label="Kırıntı yolu" className="mb-4">
+            <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] font-semibold text-slate-500">
+              {kirintiAdimlari.map((a, i) => {
+                const sonAdim = i === kirintiAdimlari.length - 1;
+                return (
+                  <li key={a.yol} className="flex items-center gap-x-1.5">
+                    {i > 0 && <span aria-hidden="true">/</span>}
+                    {sonAdim ? (
+                      <span className="text-blue-900" aria-current="page">{a.ad}</span>
+                    ) : (
+                      <Link href={a.yol} className="inline-block py-1.5 hover:text-blue-700 transition-colors">
+                        {a.ad}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
 
           <div className="flex items-center gap-4 sm:gap-5">
             <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-3xl sm:text-4xl shrink-0">

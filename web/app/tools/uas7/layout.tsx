@@ -29,6 +29,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       />
       <JsonLd
         veri={kirintiSemasi([
+          { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
           { ad: "UAS7", yol: "/tools/uas7" },
         ])}

@@ -215,6 +215,17 @@ function aciklamaUret(name, desc) {
   return `${name}: ${govde}. Ücretsiz klinik hesaplayıcı — MediSea.`;
 }
 
+/**
+ * Üretilen layout dosyasının gövdesi.
+ *
+ * KIRINTI KÖKÜ "MediSea" — konu ve branş sayfalarıyla AYNI. Ölçüldü: araç
+ * şeması [Klinik Araçlar, <araç>] ile başlıyordu, konu şeması
+ * [MediSea, Kütüphane, <branş>, <konu>] ile; arama sonucunda aynı sitenin
+ * iki sayfa türü FARKLI kökle görünüyordu.
+ *
+ * GEREKÇE BURADA, ŞABLONDA DEĞİL: şablona konan her yorum satırı 130
+ * dosyaya kopyalanıyor (bir denemede 130 dosya × 5 satır oldu).
+ */
 function dosyaIcerigi({ slug, name, desc }) {
   const baslik = baslikUret(name, desc);
   const aciklama = aciklamaUret(name, desc);
@@ -251,6 +262,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       />
       <JsonLd
         veri={kirintiSemasi([
+          { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
           { ad: ${JSON.stringify(name)}, yol: ${JSON.stringify(yol)} },
         ])}
