@@ -175,7 +175,7 @@
     {
       "id": "card-29",
       "front": "Sarkoidozda spirometri ile obstrüksiyon tanısı hangi parametrenin düşüklüğü ile konur?",
-      "back": "FEV_1/FVC oranı.",
+      "back": "FEV₁/FVC oranı.",
       "tag": "Solunum Fonksiyonu"
     },
     {
@@ -306,7 +306,7 @@
     },
     {
       "id": "card-51",
-      "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV_1 % predicted değeri kaç olmalıdır?",
+      "front": "Sarkoidozda akciğer fonksiyonel bozukluğu 'şiddetli' olarak kabul edilmesi için FEV₁ % predicted değeri kaç olmalıdır?",
       "back": "≤ %50.",
       "tag": "Solunum Fonksiyonu"
     },
@@ -403,7 +403,7 @@
     {
       "id": "card-67",
       "front": "Sarkoidozda spirometri sonucu 'mümkün kısıtlama' (possible restriction) olarak değerlendirilmesi için hangi bulgu gereklidir?",
-      "back": "Normal FEV_1/FVC oranı ile birlikte düşük FVC.",
+      "back": "Normal FEV₁/FVC oranı ile birlikte düşük FVC.",
       "tag": "Solunum Fonksiyonu"
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "id": "card-72",
-      "front": "Sarkoidozda akciğer fonksiyonel şiddetini belirlemede FEV_1 z-skoru için 'orta derece' (moderate) sınırları nedir?",
+      "front": "Sarkoidozda akciğer fonksiyonel şiddetini belirlemede FEV₁ z-skoru için 'orta derece' (moderate) sınırları nedir?",
       "back": "-2.5 ile -4.0 arası.",
       "tag": "Solunum Fonksiyonu"
     },

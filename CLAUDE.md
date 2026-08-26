@@ -14053,3 +14053,50 @@ yazılmıyor. Bu gerekliydi — ilk deneme tam da orada durdu (aşağıda).
 sayesinde dosyaya inmedi (`git diff` boştu, doğrulandı). Betik Write ile
 yeniden yazılıp ters bölü `String.fromCharCode(92)` ile kuruldu — kaynağa hiç
 ters bölü yazılmadı.
+
+### AYNI SINIFIN İKİNCİSİ: `FEV_1` ekranda ALT ÇİZGİYLE basılıyordu
+
+`\%` artığı kapatılırken aynı kökten ikinci bir şekil göründü: `renderMath`
+**yalnızca `$...$` ayracını** işliyor, yani `$` dışında kalan her LaTeX
+gösterimi ekrana olduğu gibi çıkıyor.
+
+**Ölçüt İKİ KEZ daraltıldı ve ilki okunamaz bir liste verdi.** Bütün dize
+alanlarını tarayan ilk sürüm **222 aday** buldu; çoğu sahteydi:
+
+| sahte kaynak | örnek |
+|---|---|
+| alan DEĞERİ (kullanıcıya basılmıyor) | `tip: "bilgi_kutusu"` · `tur: "ek_bilgi"` |
+| HTML özniteliği | `text-[11.5px]` içindeki `t_fm` |
+| zaten HTML olarak render edilen gövde | `sections[].text` (varlık kodları doğru basılıyor) |
+
+Ölçüt **düz metin olarak basılan alanlara** daraltıldı (flashcard
+`front`/`back`, quiz `metin`/`aciklama_*`, vaka `soru`/`klinik_bilgi`):
+**222 → 5 aday.**
+
+| aday | verdikt |
+|---|---|
+| `FEV_1` ×4 (`sarkoidoz` flashcard'ları) | **GERÇEK** — düzeltildi |
+| `c.445+10_445+11delinsA>G` | **SAHTE** — HGVS genetik varyant gösterimi; alt çizgi orada ARALIK anlamına geliyor ve doğru |
+
+**Yazım kararı ev konvansiyonundan çıkarıldı, uydurulmadı.** İçerikte
+sayıldı: `PaCO₂` 12 · `HCO₃` 73 · `Na⁺` 28 · `H₂O` 8 · `SpO₂` 6 — yani **127
+gerçek Unicode alt/üst simge**. `FEV₁` hiç yok, `FEV1` iki yerde (biri
+üretilmiş araç açıklaması). Dosyanın kendisi de bir yerde `₂` kullanıyor.
+
+Bu yüzden `FEV_1` → **`FEV₁`**: artığı DÜZLEŞTİRMEK (`FEV1`) yerine yazarın
+niyetini (alt simge) korumak, hem de deponun baskın biçimine uymak.
+
+| ölçüt | sonuç |
+|---|---|
+| değişen satır | **4** |
+| kart sayısı | 75 — korundu |
+| kalan `FEV_1` | **0** |
+| `soru-denetim` (CI kapısı) · `lint` | temiz |
+
+Yazma öncesi `JSON.parse` + kart sayısı kontrolü yine gömülü tutuldu — geçen
+turda tam o kontrol bozuk bir yazmayı durdurmuştu.
+
+**Aktarılabilir kural: bir ölçüt "kullanıcıya basılan metin" arıyorsa, hangi
+alanların GERÇEKTEN basıldığını listele.** Bu depoda aynı JSON içinde tip
+ayrımcıları (`bilgi_kutusu`), CSS sınıfları ve HTML gövdeleri yan yana
+duruyor; hepsini taramak 222 adayın 217'sini sahte yapıyor.
