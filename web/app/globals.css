@@ -621,4 +621,22 @@ label:has(input.sr-only:focus-visible) {
   table, pre, blockquote, figure { break-inside: avoid; }
 
   img { max-width: 100% !important; }
+
+  /* VURGULAR KÂĞITTA KAYBOLUYORDU. Ölçüldü (canlı): `print-color-adjust`
+     varsayılanı `economy` ve vurgunun görünürlüğü TAMAMEN arka plana
+     dayanıyor — `background-image` gradyanı; `text-decoration: none`,
+     kenarlık 0. Yani bir konuyu vurgulayıp yazdıran kullanıcı
+     işaretlerinin hepsini kaybediyordu, üstelik bu baskı stili tam da
+     "nöbetteki asistan kâğıda alıyor" senaryosu için eklenmişti.
+
+     `exact` YALNIZCA vurguya veriliyor: sayfanın geri kalanı arka plansız
+     basılmaya devam ediyor, yani mürekkep israfı olmuyor.
+
+     Sınır dürüstçe yazılsın: kullanıcının yazıcı sürücüsü arka planı yine
+     de düşürebilir. `bold` ve `u` varyantları zaten arka plana bağlı
+     değil (font-weight / text-decoration), onlar her koşulda basılıyor. */
+  mark.ms-hl {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
 }
