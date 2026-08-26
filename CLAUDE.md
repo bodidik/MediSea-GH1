@@ -13008,3 +13008,48 @@ düşüyor. Yani varsayım değil tolerans.
 
 Son satır ayrıca bir gerileme kontrolü: o değer, koşullu yayılıma geçilmeden
 önce SİLİNİYORDU.
+
+### ERİŞİLEBİLİR AD SÜPÜRMESİ TEKRARLANDI — 345 kontrol, adsız 0
+
+Belgede ad hesaplama kuralı üç kez yanılttığı için kayıtlı
+(`htmlFor` araması · `closest('label')` · saran etiket). Kural olgun hâliyle
+altı yüzeye birden sürüldü ve **hepsi temiz**:
+
+| yüzey | ölçülen kontrol | gerçek adı olmayan |
+|---|---|---|
+| `/` · `/topics` · `/tools` · `/tools/mna` · `/calisma-alanim` · `/tekrar` | **345** | **0** |
+
+Ad TAM ZİNCİRLE hesaplandı: `aria-label` → `aria-labelledby` → `label[for]`
+→ saran `<label>` → `aria-hidden` alt ağaçları çıkarılmış içerik.
+
+#### ÖLÇÜTÜM İLK HÂLİNDE KURALI ÇİĞNİYORDU — tohum gösterdi
+
+İlk sürüm son çare olarak `title`ı kabul ediyordu. Pozitif kontrolde iki
+tohum atıldı: (1) yalnızca `aria-hidden` ikon taşıyan adsız düğme,
+(2) yalnızca `title="Kaldır"` taşıyan ikon düğmesi.
+
+Birincisi yakalandı, **ikincisi "(title)" diye AD SAYILDI** — oysa belgenin
+kendi kuralı: *"İkonlu düğmede `title` erişilebilir ad OLMAZ; hesaplama
+sırası içeriği `title`ın önüne koyuyor."* Yani ölçüt, belgedeki kuralı
+uygulamak yerine deliyordu ve title-only bir düğme sessizce temiz görünürdü.
+
+Ölçüt kurala hizalandı (`title` ad sayılmıyor) ve tarama tekrarlandı —
+sonuç yine 0, yani depoda title-only kontrol yok. **Ama "0" ancak doğru
+ölçütle anlamlı.**
+
+**Pozitif kontrol:** adsız düğme tohumlandı → 0 → **1**, tohum kalkınca
+yeniden **0**.
+
+#### Yan ölçüm: ana sayfanın ilk ekranı (375px)
+
+| ölçüt | değer |
+|---|---|
+| belge yüksekliği | 2 690px = **3.3 ekran** |
+| ilk ekranda eylem | 9 |
+| birincil eylemler | "⚓ Premium YDUS" 312×36 · "Hesaplayıcılar" 157×38 · "Branşlar ↓" 147×38 |
+| `h1` | "MediSea Akademi" 36px |
+
+Kayda değer bir gözlem: **`/tr/premium/ydus` ilk ekranda ÜÇ kez bağlı**
+(başlık rozeti · birincil düğme · kutucuk). Kusur değil — üçünün de adı
+farklı ve hepsi gerçek bağlantı — ama dar bir alanda aynı hedefe üç giriş,
+konumlandırma kararı olarak not edildi. DEĞİŞTİRİLMEDİ: ürün kararı.
