@@ -12686,3 +12686,39 @@ hedefi 88/60px. Ölçüt kör değil — 900px'lik tohum eklenince 320px'te kaym
 birleştiriyor ("Tiroid HastalıklarıHipotiroidizm…"). Belgede kayıtlı React
 metin birleşmesi; anlaşılırlığı bozmuyor, araya metin düğümü eklemek görsel
 etki riski taşıyor. Ölçüldü, kaydedildi.
+
+#### Akordeon düzeltmesi canlıda + CI durumu
+
+| ölçüt | canlıda (`/tr/premium/ydus/hematoloji`) |
+|---|---|
+| `h1` · `h2` | 1 · **3** (önce `h2` 0) |
+| `aria-expanded` taşıyan tetikleyici | 3 |
+| tıklama | `true` + panel VAR → `false` + panel YOK |
+| `h2` görünümü | system-ui · 16px · üst boşluk 0px — değişmedi |
+| erişilebilir ad | "Lösemiler…" — emoji yok |
+
+**CI AYRICA KONTROL EDİLDİ — bu oturumda 12 commit gönderildi ve CI'a hiç
+bakılmamıştı.** Belgede tam bu yüzden 97 koşumluk sessiz kırmızı kayıtlı.
+`gh run list`: **son 8 koşumun 8'i de başarılı**, yani 20 adımlı boru hattı
+(bu oturumda eklenen `brans-arac` ve genişletilmiş ölü-slug nöbetçileri dahil)
+her commit'te geçiyor.
+
+#### Aynı turda ölçülüp KUSUR ÇIKMAYANLAR
+
+- **Boş kategori yok.** 9 premium branşta 30 kategori, 57 konu ilanı; sıfır
+  konulu kategori **0**. Beş kategoride ilan var ama dosya yok — hepsi
+  `hazir:false`, yani soluk ve tıklanamaz, üstelik başlık zaten "0/N konu"
+  yazıyor. Çıkmaz sokak değil.
+- **`content/premium/ydus/questions/` — 12 dosya, hiçbir yerden okunmuyor.**
+  Tek okuyanı `app/api/_admin/…` ve alt çizgili API klasörleri rotaya
+  alınmıyor (404). **Yeni bulgu değil:** `yetim-denetim` bunu zaten
+  "HİÇBİR KODUN OKUMADIĞI DİZİN" başlığıyla raporluyor ve doğru gerekçeyi de
+  veriyor ("konu dosyası eklemek YETMEZ, dizini okuyan bir kod gerekiyor").
+  Denetim işini yapıyor; karar içerik/ürün tarafında.
+- `kaynaklar/` boş bir dizin ve okuyanı var (`lib/aiContext.ts`) — yetim
+  içerik yok.
+
+**Ölçüm notu:** `questions/` dosyalarını sayarken `sorular`/`questions`
+dizisi arandı ve "0 soru" çıktı; gerçekte **her dosya TEK bir soru**
+(`question`/`options`/`answer` üst düzeyde). Şema varsayımı yine yanılttı —
+belgedeki "bir alanın adını varsayma, önce anahtarları BASTIR" kuralı.
