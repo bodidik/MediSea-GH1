@@ -13053,3 +13053,43 @@ Kayda değer bir gözlem: **`/tr/premium/ydus` ilk ekranda ÜÇ kez bağlı**
 (başlık rozeti · birincil düğme · kutucuk). Kusur değil — üçünün de adı
 farklı ve hepsi gerçek bağlantı — ama dar bir alanda aynı hedefe üç giriş,
 konumlandırma kararı olarak not edildi. DEĞİŞTİRİLMEDİ: ürün kararı.
+
+### İSTEMCİ PAKETİNE HANGİ İÇERİK JSON'I GİRİYOR — geçişli olarak ölçüldü
+
+İlk düzey kontrol yanıltıyor: `app/lib/tools.ts`in başında `"use client"` yok
+ama onu `ToolTopNav` (istemci) içe aktarıyor, yani içindeki JSON tarayıcıya
+iniyor. Bu yüzden import zinciri yürünerek ölçüldü — 533 kaynak dosya,
+**250 `"use client"` dosyası**, graf üzerinden ulaşılan 295 modül.
+
+| JSON | ham | gzip | istemciye giriyor mu |
+|---|---|---|---|
+| `ilgili-index.json` | **189 KB** | 22 KB | **HAYIR** — yalnızca sunucu konu sayfası |
+| `baslik-index.json` | 39 KB | 12 KB | HAYIR — `/topics` + paylaşım kartı rotaları |
+| `arac-index.json` | 17 KB | 6 KB | **HAYIR** (aşağıdaki nota bak) |
+| `brans-arac.json` | 11 KB | **2.5 KB** | **EVET** — `ToolTopNav` üzerinden |
+| `sinav-takvimi.json` | 0.5 KB | — | statik içe aktaran yok |
+
+Yani tarayıcıya inen tek içerik dosyası `brans-arac.json` ve bedeli daha önce
+ölçülmüştü (gzip 2 560 B, eski elle listenin 2 159 B'siyle ~400 B fark).
+**En büyük dosya (`ilgili-index`, 189 KB) sunucuda kalıyor** — konu sayfası
+sunucu bileşeni ve sayfalar zaten içe aktarılmıyor.
+
+#### ⚠ YÜRÜYÜCÜM `"use server"` SINIRINI BİLMİYORDU — dört sahte bulgu
+
+Graf `arac-index.json`u "istemciye giriyor" diye raporladı; zincir
+`SiteHeader.tsx → app/actions.ts → lib/content.ts` idi. **Yanlıştı:**
+`app/actions.ts` `"use server"` ile başlıyor, yani bir SUNUCU EYLEMİ modülü —
+istemci onu içe aktarınca kodu değil bir referansı alıyor. (`lib/content.ts`
+zaten `fs` içe aktarıyor, tarayıcıda hiç çalışamaz.)
+
+Aynı graf üç JSON'ı daha işaretledi ve üçü de **alt çizgili klasörlerdeki
+ölü sayfalardan** geliyordu (`_hematoloji`, `_romatoloji`) — rotaya
+alınmadıkları için hiçbir pakete girmiyorlar.
+
+**Kaynak grafı ADAY üretir, kararı GERÇEK PAKET verir.** Doğrulama canlı
+chunk'larda yapıldı: ana sayfanın 10 istemci chunk'ında `arac-index`
+metinlerinden hiçbiri yok.
+
+Bu, belgedeki *"içe aktarılmış mı DEĞİL, rotadan ulaşılıyor mu"* kuralının
+paket tarafındaki hâli — ve yeni bir sınır ekliyor: **`"use server"` de bir
+sınırdır, graf yürüyen her ölçüt onu bilmek zorunda.**
