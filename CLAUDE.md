@@ -14191,3 +14191,50 @@ bugün karşılıksız duruyor) hâlâ geçerli olduğu doğrulandı.
 **Aktarılabilir kural: bir sınıfı süpürdüğünü söylerken KAÇ yüzey olduğunu
 say.** Bu turda süpürme 3/5 kapsamla "kapandı" diye yazılmıştı; kalan ikisi
 temiz çıktı ama bunu ancak ölçüm gösterdi.
+
+### İÇERİKTEKİ HAM HTML TARANDI — tehlikeli işaretleme 0, ama bir ASİMETRİ var
+
+İşleyici uyumu turunun açtığı soru: açık konu sayfası bölüm gövdesini
+`dangerouslySetInnerHTML` ile **ham** basıyor (`section.html`), üstelik
+`kalinHtml`den GEÇİRMEDEN. İki sonucu var ve ikisi de ölçüldü.
+
+**1. Asimetri: `**kalın**` açık tarafta İŞLENMEZ.** Premium konu, quiz, vaka
+ve inciler `**`ı `<strong>`a çeviriyor; açık konu sayfası çevirmiyor. Yani
+aynı işaret iki içerik yüzeyinde farklı davranır.
+
+Bugün bir kusur DEĞİL: 456 dosyada `heading`/`text`/`html` alanları tarandı
+(**4580 metin alanı**), `**` geçişi **0**. Ama açık tarafa `**kalın**` yazan
+biri onu ekranda yıldızlarla görür — kayda geçti.
+
+**2. Güvenlik: ham HTML basılıyorsa içeride ne var?** İçerik dosyalarını
+yönetim editörü YAZIYOR (`/api/topics` PUT) ve çıktı `dangerouslySetInnerHTML`
+ile basılıyor, yani bu gerçek bir yüzey.
+
+597 dosya · **2584 HTML taşıyan alan** tarandı:
+
+| desen | bulunan |
+|---|---|
+| `<script` · olay niteliği (`onX=`) · `javascript:` URL | **0** · **0** · **0** |
+| `<iframe` · `<object`/`<embed` · `<form` · `<style` | 0 · 0 · 0 · 0 |
+| `data:` URL · dış kaynak `src` · dış `href` | 0 · **0** · **0** |
+
+İçerik HTML'i yalnızca yapısal/anlamsal etiket taşıyor. Sıfır dış kaynak,
+belgede kayıtlı "canlı tek üçüncü taraf gömme KayseriTıp slayt görüntüleyicisi"
+tespitiyle de tutarlı.
+
+**"0" ÖLÇÜMLE KANITLANDI:** beş bölümlü bir tohum kuruldu (`<script>`,
+`onclick=`, `javascript:` bağlantısı, dış `src`, ve bir temiz satır); ölçüt
+5 alan okuyup **dört deseni de yakaladı**.
+
+**Not edilen, düzeltilmeyen:** koruma bugün YÖNETİM KAPISINDA, işaretlemede
+değil. Yani içerik editörüne erişen biri (ya da o yolu ele geçiren) script
+enjekte edebilir. Bir HTML temizleyici (sanitizer) eklemek savunmayı katmanlar
+ama ölçülmüş bir kusur değil, üstelik meşru etiketleri (tablo, liste, `strong`)
+elemeden geçirecek bir listeye ihtiyaç duyar. Ürün/güvenlik kararı.
+
+### Sınav takvimi — davranış belgedeki gibi
+
+`content/sinav-takvimi.json` **boş** (`"sinavlar": []`) ve canlı ana sayfada
+geri sayım **hiç basılmıyor** (0 eşleşme). Dosyanın kendi notu kuralı yazıyor:
+*"uydurma bir tarih göstermektense hiçbir şey göstermemek doğrudur."* ÖSYM
+takvimi açıklanınca tek yapılacak şey tarihi bu dosyaya yazmak.
