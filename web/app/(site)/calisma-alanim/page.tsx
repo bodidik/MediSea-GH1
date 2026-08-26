@@ -7,7 +7,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { aramaEslesir } from "@/app/lib/arama";
 import Link from "next/link";
-import { collectAll, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
+import { collectAll, depoKullanilabilir, purge, toMarkdown, type StudyEntry } from "@/app/lib/study-index";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
 import StudyCoverage from "@/app/components/StudyCoverage";
@@ -28,9 +28,11 @@ export default function StudyWorkspace() {
   const [entries, setEntries] = useState<StudyEntry[] | null>(null);
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
+  const [depoYok, setDepoYok] = useState(false);
 
   useEffect(() => {
     setEntries(collectAll());
+    setDepoYok(!depoKullanilabilir());
   }, []);
 
   const totals = useMemo(() => {
@@ -190,14 +192,12 @@ export default function StudyWorkspace() {
         {/* Boş durum */}
         {entries !== null && entries.length === 0 && (
           <div className="rounded-3xl border border-slate-100 bg-white p-10 text-center sm:p-16">
-            <div aria-hidden="true" className="mb-3 text-4xl">🖍</div>
+            <div aria-hidden="true" className="mb-3 text-4xl">{depoYok ? "🔒" : "🖍"}</div>
             <h2 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
-              Henüz not almadın
+              {depoYok ? "Tarayıcı depolaması engelli" : "Henüz not almadın"}
             </h2>
             <p className="mx-auto mb-6 max-w-md text-sm leading-relaxed text-slate-500">
-              Bir konu sayfasında metni seçtiğinde vurgulama çubuğu çıkar. Sağ kenardaki{" "}
-              <span className="font-bold text-slate-700">📝 Not</span> tutamağıyla da o sayfaya
-              özel yazı ve el çizimi notu tutabilirsin.
+              {depoYok ? "Tarayıcın bu site için veri saklamayı engelliyor; vurguların ve notların okunamıyor. Site verisine izin verdiğinde kayıtların geri gelir — silinmediler." : "Bir konu sayfasında metni seçtiğinde vurgulama çubuğu çıkar. Sağ kenardaki 📝 Not tutamağıyla da o sayfaya özel yazı ve el çizimi notu tutabilirsin."}
             </p>
             <Link
               href="/topics"

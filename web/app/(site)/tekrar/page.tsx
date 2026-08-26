@@ -25,6 +25,7 @@ import {
   type Grade,
   type ReviewCard,
 } from "@/app/lib/review-deck";
+import { depoKullanilabilir } from "@/app/lib/study-index";
 
 type Mode = "due" | "cram";
 
@@ -53,6 +54,11 @@ export default function ReviewPage() {
   const [mode, setMode] = useState<Mode>("due");
   /** Oturumda zorlanılan kartlar — sonunda kaynağa dönmek için listelenir */
   const [zorlananlar, setZorlananlar] = useState<ReviewCard[]>([]);
+  /* Depo engelliyse boş durum YANLIŞ sebep söylemesin (ölçüldü: eskiden
+     sayfa hata sınırına düşüyordu). Efektte okunuyor — sunucuda
+     `localStorage` yok ve doğrudan çağırmak hidrasyon uyuşmazlığı yapardı. */
+  const [depoYok, setDepoYok] = useState(false);
+  useEffect(() => { setDepoYok(!depoKullanilabilir()); }, []);
 
   const load = useCallback(() => {
     const d = buildDeck();
@@ -166,9 +172,9 @@ export default function ReviewPage() {
     return (
       <Shell>
         <Empty
-          icon="🖍"
-          title="Tekrar edilecek bir şey yok"
-          body="Tekrar kartları vurgularından türetilir. Bir konu okurken önemli bir cümleyi işaretlediğinde, o cümle otomatik olarak buraya kart olarak düşer."
+          icon={depoYok ? "🔒" : "🖍"}
+          title={depoYok ? "Tarayıcı depolaması engelli" : "Tekrar edilecek bir şey yok"}
+          body={depoYok ? "Tarayıcın bu site için veri saklamayı engelliyor; vurguların ve tekrar kartların okunamıyor. Site verisine izin verdiğinde kayıtların geri gelir — silinmediler." : "Tekrar kartları vurgularından türetilir. Bir konu okurken önemli bir cümleyi işaretlediğinde, o cümle otomatik olarak buraya kart olarak düşer."}
           cta={{ href: "/topics", label: "Kütüphaneye git →" }}
         />
       </Shell>

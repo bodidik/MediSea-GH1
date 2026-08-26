@@ -102,36 +102,67 @@ function notuDuzelt(note: NoteDoc | null): NoteDoc | null {
   };
 }
 
+/**
+ * DEPO ERİŞİLEBİLİR Mİ — site verisi engelliyken `localStorage`a DOKUNMAK
+ * bile SecurityError fırlatıyor (Chrome'da "tüm çerezleri engelle", kimi
+ * gizli kip kurulumları).
+ */
+export function depoKullanilabilir(): boolean {
+  try {
+    localStorage.getItem(INDEX_KEY);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * ⚠ BU FONKSİYON BİR DÖNEM KORUMASIZDI ve iki sayfayı ÇÖKERTİYORDU.
+ *
+ * `readIndex`/`touchIndex`/`purge` try/catch taşıyordu ama buradaki
+ * `localStorage.length`, `.key(i)` ve `.getItem()` çağrıları taşımıyordu.
+ * Ölçüldü (canlı, depo erişimi fırlatacak şekilde sarmalanıp yumuşak
+ * gezinmeyle): `/calisma-alanim` ve `/tekrar` HATA SINIRINA düşüyordu
+ * (h1 boş). Konu sayfaları etkilenmiyordu — `ReadingTools` zaten korumalı.
+ *
+ * Artık boş liste dönüyor; sayfalar `depoKullanilabilir()` ile durumu
+ * AYRICA söylüyor, çünkü sessizce "henüz not almadın" demek yanlış
+ * sebep bildirmek olurdu.
+ */
 export function collectAll(): StudyEntry[] {
-  const idx = readIndex();
-  const paths = new Set<string>();
+  try {
+    const idx = readIndex();
+    const paths = new Set<string>();
 
-  for (let i = 0; i < localStorage.length; i++) {
-    const k = localStorage.key(i);
-    if (!k) continue;
-    if (k.startsWith(MARK_PREFIX)) paths.add(k.slice(MARK_PREFIX.length));
-    else if (k.startsWith(NOTE_PREFIX)) paths.add(k.slice(NOTE_PREFIX.length));
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!k) continue;
+      if (k.startsWith(MARK_PREFIX)) paths.add(k.slice(MARK_PREFIX.length));
+      else if (k.startsWith(NOTE_PREFIX)) paths.add(k.slice(NOTE_PREFIX.length));
+    }
+
+    const out: StudyEntry[] = [];
+    for (const path of paths) {
+      const marks = parseJson<ReadingMark[]>(localStorage.getItem(MARK_PREFIX + path)) ?? [];
+      const note = notuDuzelt(parseJson<NoteDoc>(localStorage.getItem(NOTE_PREFIX + path)));
+
+      const hasNote = Boolean(note && (note.text?.trim() || note.strokes?.length));
+      if (!marks.length && !hasNote) continue;
+
+      out.push({
+        path,
+        title: idx[path]?.title || prettify(path),
+        branch: branchOf(path),
+        marks,
+        note: hasNote ? note : null,
+        at: idx[path]?.at ?? 0,
+      });
+    }
+
+    return out.sort((a, b) => b.at - a.at);
+  } catch {
+    return [];
   }
-
-  const out: StudyEntry[] = [];
-  for (const path of paths) {
-    const marks = parseJson<ReadingMark[]>(localStorage.getItem(MARK_PREFIX + path)) ?? [];
-    const note = notuDuzelt(parseJson<NoteDoc>(localStorage.getItem(NOTE_PREFIX + path)));
-
-    const hasNote = Boolean(note && (note.text?.trim() || note.strokes?.length));
-    if (!marks.length && !hasNote) continue;
-
-    out.push({
-      path,
-      title: idx[path]?.title || prettify(path),
-      branch: branchOf(path),
-      marks,
-      note: hasNote ? note : null,
-      at: idx[path]?.at ?? 0,
-    });
-  }
-
-  return out.sort((a, b) => b.at - a.at);
 }
 
 /** Bir sayfanın tüm çalışma verisini siler. */
