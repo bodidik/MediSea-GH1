@@ -15661,3 +15661,41 @@ gerçekten ölçüldüğünü doğrula.** Burada mesaj tek bir sebebi varsayıyo
 kod iki sebebi ayırt edebilecek bilgiye sahipti — yalnızca taşımıyordu.
 Yanlış sebep, sebepsizlikten kötü olabilir: kullanıcıyı işe yaramayan bir
 çareye yönlendiriyor.
+
+### ARAMA SUNUCU HATASINDA "Sonuç bulunamadı" DİYORDU — istemci doğruydu, sunucu yutuyordu
+
+"Yanlış sebep" sınıfı süpürüldü: **tek bir `catch`ten çıkıp belirli bir SEBEP
+iddia eden** kullanıcı mesajları arandı. 534 dosyada 7 aday; altısı meşru
+(`fetch` catch'inde "bağlantı kurulamadı", 500 gövdesinde "sunucu hatası",
+ulaşılmayan rota, ve `study-backup`in **hedgeli** "dolu olabilir"). Yedincisi
+gerçek kusurdu — ve şekli öğretici.
+
+`searchAction`in `catch` bloğu `console.error` yazıp **boş dizi**
+döndürüyordu; gerekçesi *"client tarafını çökertmemek"*. Bedeli: sunucu
+tarafında bir hata olduğunda kullanıcıya **"Sonuç bulunamadı"** deniyordu —
+yani içeriğin VAR OLMADIĞI öğretiliyordu.
+
+**Çağıran ZATEN doğru yazılmıştı.** `SiteHeader` bir `aramaHatasi` durumu
+tutuyor, bayat sonuçları temizliyor ve dürüst metin basıyor; yorumu tam bunu
+söylüyor: *"Arama BAŞARISIZ olduğunda 'Sonuç bulunamadı' demek kullanıcıya
+içeriğin var olmadığını ÖĞRETİR."* Ama o dal yalnızca eylem REDDEDİLİRSE
+çalışıyor — yutulan hata onu **ulaşılamaz** kılıyordu.
+
+> İstemcinin yorumu, sunucunun bozduğu bir sözdü.
+
+| ölçüt | sonuç |
+|---|---|
+| tohumlu sunucu hatası | canlı bölge **"Arama şu an yapılamıyor."** |
+| panel metni | *"Bu, aradığın konunun olmadığı anlamına gelmez — birazdan tekrar dene."* |
+| "Sonuç bulunamadı" | **basılmıyor**, sonuç bağı 0 |
+| **negatif** — olağan arama | 5 sonuç, uyarı yok |
+| **negatif** — GERÇEKTEN boş sorgu | "Sonuç bulunamadı", hata mesajı yok |
+
+Üç durum artık ayrışıyor: **sonuç var / gerçekten boş / başarısız.** Tohum
+birebir geri alındı (fark 0).
+
+**Aktarılabilir kural: bir hatayı yutarken NE İDDİA ETTİĞİNİ sor.** Boş dizi
+dönmek "hata yok" değil **"sonuç yok"** demektir — ve bu, deponun API
+kuralının (*"uydurulmuş bir başarı yanlış varsayım üretir"*) boşluk hâli.
+Ayrıca: **doğru yazılmış bir çağıran, yukarıdaki bir yutma yüzünden ölü
+kalabilir** — hata dalının ULAŞILABİLİR olduğunu ayrıca ölç.
