@@ -9,6 +9,7 @@
 
 import type { ReadingMark } from "@/app/lib/reading-marks";
 import { SPECIALTIES } from "@/app/lib/specialties";
+import { guvenliNesneOku } from "@/app/lib/depo";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -30,13 +31,13 @@ type IndexRow = { title: string; at: number };
 /* ── Dizin ─────────────────────────────────────────────────────────────── */
 
 function readIndex(): Record<string, IndexRow> {
-  try {
-    const raw = localStorage.getItem(INDEX_KEY);
-    const v = raw ? JSON.parse(raw) : null;
-    return v && typeof v === "object" ? v : {};
-  } catch {
-    return {};
-  }
+  /**
+   * Dizin YENİDEN ÜRETİLEBİLİR (kullanıcı sayfaları gezdikçe dolar), yani
+   * ötekiler kadar değerli değil. Yine de aynı kurtarmayı alıyor: aynı
+   * şekildeki iki okuyucudan birini korumasız bırakmak, sonraki turda
+   * "hangisi neden farklı" sorusunu doğurur.
+   */
+  return guvenliNesneOku<Record<string, IndexRow>>(INDEX_KEY) ?? {};
 }
 
 /** Sayfada bir şey kaydedildiğinde başlığı ve zamanı dizine işler. */

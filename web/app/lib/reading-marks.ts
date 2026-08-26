@@ -13,6 +13,8 @@
 // çözüm gibi sayfalarda yol değişmeden içerik değişir — sıra numarası orada
 // yanlış içeriğe yapışırdı, kimlik yapışmaz.
 
+import { guvenliDiziOku } from "@/app/lib/depo";
+
 export type MarkStyle = "y" | "g" | "b" | "p" | "bold" | "u";
 
 export type ReadingMark = {
@@ -60,26 +62,12 @@ export function storageKey(pathname: string) {
  * ham kayda DOKUNULMUYOR, yani en kötü ihtimalle eski davranışa dönülüyor.
  */
 export function loadMarks(pathname: string): ReadingMark[] {
-  const anahtar = storageKey(pathname);
-  let raw: string | null = null;
-  try {
-    raw = localStorage.getItem(anahtar);
-  } catch {
-    return []; // depo engelli — okunacak bir şey yok
-  }
-  if (!raw) return [];
-  try {
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    try {
-      localStorage.setItem(anahtar + ":bozuk", raw);
-      localStorage.removeItem(anahtar);
-    } catch {
-      // yedekleyemedik: ham kaydı OLDUĞU GİBİ bırak
-    }
-    return [];
-  }
+  /**
+   * Kurtarma PAYLAŞILAN yardımcıda (app/lib/depo.ts). Buradaki ilk sürüm
+   * yalnızca JSON.parse HATASINI yakalıyordu; "geçerli JSON ama DİZİ değil"
+   * durumu yedeksiz siliniyordu — aynı sınıfın ikinci biçimi.
+   */
+  return guvenliDiziOku<ReadingMark>(storageKey(pathname)) ?? [];
 }
 
 /**

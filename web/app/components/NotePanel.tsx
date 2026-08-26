@@ -24,6 +24,7 @@ import { panoyaKopyala } from "@/app/lib/pano";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
+import { guvenliNesneOku } from "@/app/lib/depo";
 
 /** [x, y, basınç] — x ve y panel GENİŞLİĞİNE göre normalize (en-boy oranı korunur) */
 type Pt = [number, number, number];
@@ -143,15 +144,14 @@ export default function NotePanel() {
 
   /* ── Kayıtlı notu yükle ──────────────────────────────────────────────── */
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(KEY(pathname));
-      const doc = raw ? JSON.parse(raw) : null;
-      setText(doc?.text ?? "");
-      setStrokes(Array.isArray(doc?.strokes) ? doc.strokes : []);
-    } catch {
-      setText("");
-      setStrokes([]);
-    }
+    /**
+     * Bozuk not ATILMAZ, yedeğe taşınır. Ölçüldü: bozuk kayıtta panel BOŞ
+     * açılıyor ve kullanıcıya hiçbir şey söylenmiyor; kullanıcı "burada
+     * notum yok" sanıp yazdığı anda ELLE YAZDIĞI eski not gidiyordu.
+     */
+    const doc = guvenliNesneOku<{ text?: string; strokes?: Stroke[] }>(KEY(pathname));
+    setText(typeof doc?.text === "string" ? doc.text : "");
+    setStrokes(Array.isArray(doc?.strokes) ? doc.strokes : []);
     setRedo([]);
     setDirty(false);
   }, [pathname]);

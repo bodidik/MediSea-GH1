@@ -12,6 +12,7 @@
 // gider. Saklanan tek şey o kartın tekrar durumudur (aralık, kolaylık, vade).
 
 import { collectAll, type StudyEntry } from "@/app/lib/study-index";
+import { guvenliNesneOku } from "@/app/lib/depo";
 import type { ReadingMark, MarkStyle } from "@/app/lib/reading-marks";
 import type { Stroke } from "@/app/components/StrokePreview";
 
@@ -64,13 +65,9 @@ const FRESH: CardState = { interval: 0, ease: 2.5, due: 0, streak: 0, seen: 0 };
 /* ── Durum deposu ──────────────────────────────────────────────────────── */
 
 function readStates(): Record<string, CardState> {
-  try {
-    const raw = localStorage.getItem(STATE_KEY);
-    const v = raw ? JSON.parse(raw) : null;
-    return v && typeof v === "object" ? v : {};
-  } catch {
-    return {};
-  }
+  // Bozuk kayıt ATILMAZ, yedeğe taşınır — yoksa ilk derecelendirme SM-2
+  // geçmişinin üzerine yazıyor (ölçüldü). Bkz. app/lib/depo.ts
+  return guvenliNesneOku<Record<string, CardState>>(STATE_KEY) ?? {};
 }
 
 function writeStates(s: Record<string, CardState>) {
@@ -302,13 +299,8 @@ export function dayKey(d = new Date()): string {
 }
 
 export function readLog(): StudyLog {
-  try {
-    const raw = localStorage.getItem(LOG_KEY);
-    const v = raw ? JSON.parse(raw) : null;
-    return v && typeof v === "object" ? v : {};
-  } catch {
-    return {};
-  }
+  // Çalışma günlüğü yeniden üretilemez: bozuk kayıt yedeğe taşınır.
+  return guvenliNesneOku<StudyLog>(LOG_KEY) ?? {};
 }
 
 /** Bir kart çalışıldığını günlüğe işler. */
