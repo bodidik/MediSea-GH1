@@ -181,11 +181,31 @@ button {
 }
 /* ── Okuma vurguları (ReadingTools) ──────────────────────────────────────
    Fosforlu kalem etkisi: metnin ÜSTÜNÜ kaplamak yerine alt %45'ini boyar.
-   Bu sayede hem açık zeminli (site) hem koyu zeminli (premium YDUS)
-   sayfalarda metin okunur kalır — iki ayrı tema seti gerekmez. */
+
+   ⚠ BU YORUM BİR DÖNEM ŞUNU İDDİA EDİYORDU ve ÖLÇÜMLE ÇÜRÜTÜLDÜ:
+   "hem açık hem koyu zeminli sayfalarda metin okunur kalır". Kapsamın
+   %45 olması yetmiyor, çünkü BANDIN KENDİSİ AÇIK: beyaz zeminde
+   koyulaştırıyor (iyi), ama KOYU bir kutunun içinde zemini AÇIYOR ve
+   açık renkli yazıyla kontrast çöküyor. Canlıda ölçüldü (hematoloji/aml,
+   33 renk-zemin kombinasyonu, 13'ü eşiğin altında):
+
+     açık rose / slate-900     vurgusuz 6.63  ->  sarı bantta 1.55
+     açık indigo / indigo-900  vurgusuz 5.73  ->  sarı bantta 1.78
+     açık emerald / slate-900  vurgusuz 9.29  ->  sarı bantta 2.18
+
+   Kapsam dar DEĞİL: 410 görünür konunun 203'ü (%49.5) okuma alanında
+   koyu kutu taşıyor, ayrıca iki premium vurgu yüzeyi (quiz kokpiti,
+   inciler) baştan sona koyu.
+
+   ÇARE BELİRLENİMCİ OLMALI: bant yarı saydam olduğu için bileşke zemin
+   ALTINDAKİ kutuya bağlıydı. Artık `mark` kendi OPAK tabanını ve KOYU
+   yazı rengini veriyor, yani vurgunun kontrastı nereye konduğundan
+   bağımsız. Açık sayfalarda görünüm değişmiyor (zemin zaten beyaz);
+   koyu kutuda vurgu beyaz tabanlı bir fosforlu kalem izi oluyor —
+   okunur ve sayfanın geri kalanıyla tutarlı. */
 mark.ms-hl {
-  background: none;
-  color: inherit;
+  background-color: #fff;
+  color: #111827;
   padding: 0;
   border-radius: 2px;
   cursor: pointer;
