@@ -124,6 +124,31 @@ export default function KayitPage() {
         width: '100%', maxWidth: '400px', background: '#fff',
         border: '0.5px solid #b8cfe8', borderRadius: '16px', padding: '2rem',
       }}>
+        {/*
+          SİTEYE DÖNÜŞ. Ölçüldü: bu sayfada tek bağlantı vardı ve o da
+          kardeş kimlik sayfasına gidiyordu — /giris ↔ /kayit ↔ /uyelik
+          arasında dönüp duran, kütüphaneye yolu OLMAYAN bir çıkmaz.
+          Aynı kusur premium giriş sayfasında ölçülüp düzeltilmişti
+          (görünür bağlantı 0 → 10); bu üç sayfa o turun dışında kalmış.
+
+          Bu sayfalar `(site)` grubunun DIŞINDA, yani üst menü ve alt bilgi
+          BİLEREK yok (odaklanmış yüzey). Çıkış yolu ise şart.
+
+          Genişlikten bağımsız görünür: premium turunda `hidden sm:inline`
+          verilmiş ve mobilde çıkış yeniden kaybolmuştu.
+        */}
+        <Link
+          href="/"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+            color: '#4a6a8a', textDecoration: 'none', fontSize: '13px',
+            fontWeight: 600, marginBottom: '0.75rem',
+            // 24px dokunma hedefi: dolgusuz hâli 20px ölçüldü (WCAG asgarisi 24).
+            padding: '6px 2px',
+          }}
+        >
+          <span aria-hidden="true">←</span> MediSea
+        </Link>
         <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
           <div aria-hidden="true" style={{ fontSize: '28px', marginBottom: '8px' }}>🩺</div>
           <h1 style={{ fontSize: '20px', fontWeight: 700, color: '#1a3a6b', margin: 0 }}>Hesap Oluştur</h1>

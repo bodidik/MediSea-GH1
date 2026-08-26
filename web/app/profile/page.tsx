@@ -47,6 +47,18 @@ export default function ProfilePage() {
   return (
     <div className="p-4 md:p-8 max-w-4xl mx-auto space-y-8">
 
+      {/*
+        SİTEYE DÖNÜŞ. Ölçüldü: bu sayfadaki iki bağlantının İKİSİ de
+        /uyelik'e gidiyordu — kütüphaneye yol yoktu. Sayfa `(site)`
+        grubunun dışında, yani üst menü ve alt bilgi bilerek yok.
+      */}
+      <Link
+        href="/"
+        className="inline-flex items-center gap-1.5 py-1.5 text-[13px] font-semibold text-slate-500 transition-colors hover:text-blue-700"
+      >
+        <span aria-hidden="true">←</span> MediSea
+      </Link>
+
       <div className="flex items-center justify-between gap-4 p-6 bg-white border border-slate-200 rounded-3xl shadow-sm">
         <div>
           <h1 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Profil Özeti</h1>
