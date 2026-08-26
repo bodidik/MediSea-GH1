@@ -498,6 +498,43 @@ export default function ReadingTools() {
     return () => document.removeEventListener("keydown", onEsc);
   }, [panelOpen, anchor, pending]);
 
+  /**
+   * ÇUBUĞA ULAŞMAK 25 TAB SÜRÜYORDU — ölçüldü, canlıda.
+   *
+   * Araç çubuğu `position: fixed`, yani GÖRSEL olarak seçimin yanında
+   * duruyor; ama Tab sırası DOM'u izliyor ve bileşen okuma
+   * alanından SONRA render ediliyor. Ölçüm (addison, canlı): çubuğun ilk
+   * düğmesi belge sırasında 25. durak, okuma alanının içinde odaklanabilir
+   * öge 0 — yani klavye kullanıcısı seçim yaptıktan sonra başlık, branş
+   * şeridi ve ilgili konu bağlantılarının tamamını geçmek zorundaydı.
+   *
+   * İşlev BOZUK DEĞİLDİ (uçtan uca ölçüldü: yolculukta seçim kayboluyor
+   * ama çubuk aralığı durumunda tuttuğu için doğru metinle vurgu
+   * oluşuyor) — bedel yalnızca 25 tuş.
+   *
+   * Çare: çubuk AÇIKKEN ve odak DIŞINDAYKEN ilk Tab çubuğa gider.
+   * Kapsam bilerek dar — Shift+Tab, değiştiriciler ve çubuğun İÇİNDEKİ
+   * Tab dokunulmadan bırakılıyor, yani sekiz düğme arasında ve çubuktan
+   * çıkışta doğal sıra sürüyor. `defaultPrevented` kontrolü ESC ile aynı
+   * gerekçeyle: başka bir yüzey Tab'ı zaten karşıladıysa ikinci kez
+   * tüketilmiyor.
+   */
+  useEffect(() => {
+    if (!anchor || !pending) return;
+    function onTab(e: KeyboardEvent) {
+      if (e.key !== "Tab" || e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
+      if (e.defaultPrevented) return;
+      const cubuk = barRef.current;
+      if (!cubuk || cubuk.contains(document.activeElement)) return;
+      const ilk = cubuk.querySelector("button");
+      if (!ilk) return;
+      e.preventDefault();
+      ilk.focus();
+    }
+    document.addEventListener("keydown", onTab);
+    return () => document.removeEventListener("keydown", onTab);
+  }, [anchor, pending]);
+
   const [odakBekliyor, setOdakBekliyor] = useState(false);
 
   useEffect(() => {
