@@ -14897,3 +14897,55 @@ yüzeye bağlıdır — yani tek bir yüzeyde ölçmek o katmanı doğrulamaz.**
 depoda aynı ders zemin tarafında kayıtlıydı ("degradeyi göremeyen ölçüm");
 buradaki hâli ÖN katman için: bandın kendisi açıksa koyu zeminde kontrastı
 düşürür, koyu ise açık zeminde.
+
+### TEKRAR KARTI VURGU RENGİNİ DÜŞÜRÜYORDU — bant tanımı ikinci kez yazılmıştı
+
+Önceki turda vurgu kontrastı düzeltilince doğal soru soruldu: **komşu yüzey
+kendi `<mark>` tanımını taşıyor mu?** Taşıyordu — sabit sarı gradyan, Tailwind
+sınıfıyla. İki sonucu vardı:
+
+| sonuç | mekanizma |
+|---|---|
+| kullanıcının **renk seçimi** tekrarda kayboluyordu | `ReadingMark` stili `st` alanında taşıyor, ama `clozeCard` onu **düşürüyordu** |
+| bant tanımı **İKİNCİ KOPYA** | `globals.css`teki renkler değişince kart onları izlemiyor |
+
+Birincisi bu oturumda altı kez çıkan **"veri ilan ediyor, render yok sayıyor"**
+sınıfının kart üreteci tarafındaki hâli: alan veride VAR, kart onu taşımıyor.
+İkincisi deponun en çok tekrar eden sınıfı ("iki gerçeklik").
+
+**Çare tek kaynağa bağlamak:** `ReviewCard` artık `st` taşıyor, kart
+`ms-hl ms-hl-${st}` sınıflarını kullanıyor. Kart metni tıklanabilir DEĞİL, o
+yüzden `.ms-hl`in imleç/hover affordansı `ms-hl-statik` ile geri alınıyor —
+sahte tıklanabilir öge bu depoda ayrıca avlanan bir kusur.
+
+**Ölçüldü** (dört renk tohumlanıp kartlar sırayla sürülerek):
+
+| kart | sınıf | bant | imleç |
+|---|---|---|---|
+| sarı | `ms-hl-y` | `rgba(250,204,21,.55)` | auto |
+| yeşil | `ms-hl-g` | `rgba(74,222,128,.5)` | auto |
+| mavi | `ms-hl-b` | `rgba(96,165,250,.5)` | auto |
+| pembe | `ms-hl-p` | `rgba(244,114,182,.5)` | auto |
+
+Düzeltme öncesi dördü de **sarı** basıyordu.
+
+**Negatif kontrol üç ayaklı:**
+
+| tohum | sonuç |
+|---|---|
+| `st: "bold"` | `ms-hl-bold`, ağırlık **800**, kontrast 10.35 |
+| `st: "u"` | `ms-hl-u`, **alt çizgi** var, 17.74 |
+| **`st` alanı OLMAYAN eski kayıt** | sarıya düşüyor, 17.74 — eski veriler bozulmuyor |
+
+Üçüncüsü şart: bir alanı karta taşırken o alanı taşımayan KAYITLI verinin
+davranışı ayrıca ölçülmeli.
+
+**Ölçüm/düzenleme tuzağı — KARIŞIK SATIR SONU.** Dosya CRLF, node betiğimin
+ürettiği blok LF idi; sonraki düzenleme CRLF'e göre bölünce yedi satırlık
+yorum **tek bir "satır"** sayıldı ve blok bozuk yere taşındı. Ayrıca JSX
+üçlü işlecinin dalına `{/* … */}` + öge koymak iki komşu ifade üretiyor
+(`TS1005`) — yorum üçlünün DIŞINDA durmalı.
+
+Kural: bir dosyayı betikle düzenlerken **satır sonunu dosyadan oku ve aynısını
+yaz**; bölerken LF'e göre böl, CR'yi ayrıca kırp. Sonuç `git diff --stat` ile
+doğrulanmalı — bu turda 8 ekleme / 1 silme, yani yalnızca hedeflenen değişiklik.
