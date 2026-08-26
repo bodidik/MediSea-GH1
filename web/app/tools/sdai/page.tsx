@@ -29,8 +29,35 @@ export default function SdaiPage() {
   /* `Number.isFinite(parseLocaleNumber(x))` ÇÖP GİRDİYİ GEÇİRİYORDU: fonksiyon
      "abc" için 0 döndürüyor ve 0 sonludur. Ölçüldü — alanlara harf yazmak
      "0 · REMİSYON" bastırıyordu. Kapı artık ham dizeye bakıyor. */
-  const dolu = (x: string) => sayiGirildiMi(x);
-  const hasResult = dolu(tjc) && dolu(sjc) && dolu(pga) && dolu(ega) && dolu(crp);
+  /**
+   * ÜST SINIR — ekran zaten "max 28" / "max 10" yazıyordu ama HESAP onu
+   * UYGULAMIYORDU. Ölçüldü (canlı): 999/999/999/999 -> skor "3996", oysa
+   * aynı sayfa tavanını ilan ediyor. Tek alana fazladan bir sıfır
+   * (SJC 28 -> 280) -> 328 ve bant YÜKSEK AKTİVİTE'ye kayıyor.
+   *
+   * Sınırlar TANIMSAL: TJC/SJC 28 eklemli bir sayımdır, PGA/EGA 10 cm'lik
+   * VAS'tır; üstü tanım gereği imkânsız. Kardeş araç `das28` aynı sınırı
+   * zaten uyguluyor (orada kıskaçla; burada REDDEDİP sebebini söylüyoruz,
+   * çünkü sessiz kırpma kullanıcının girdiğini haber vermeden değiştirir).
+   */
+  const araliktaMi = (ham: string, alt: number, ust: number) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const ALANLAR = [
+    { ham: tjc, ad: "TJC", alt: 0, ust: 28 },
+    { ham: sjc, ad: "SJC", alt: 0, ust: 28 },
+    { ham: pga, ad: "PGA", alt: 0, ust: 10 },
+    { ham: ega, ad: "EGA", alt: 0, ust: 10 },
+    /* CRP mg/dL: 50 mg/dL = 500 mg/L, kardeş araç das28'in CRP tavanıyla
+       aynı yer. Sıfır MEŞRU (normal CRP) — alt sınır 0. */
+    { ham: crp, ad: "CRP", alt: 0, ust: 50 },
+  ];
+  const hasResult = ALANLAR.every((a) => araliktaMi(a.ham, a.alt, a.ust));
+  const sorunlu = ALANLAR.filter((a) => a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust));
+  const eksik = ALANLAR.filter((a) => a.ham.trim() === "");
+  const sebepGoster = !hasResult && ALANLAR.some((a) => a.ham.trim() !== "");
 
   const getResult = () => {
     if (score <= 3.3)  return { label: "REMİSYON", sub: "SDAI ≤ 3.3", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
@@ -79,6 +106,17 @@ export default function SdaiPage() {
           )}
         </div>
 
+
+        {sebepGoster && (
+          <div role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
+            <p className="text-[10px] font-black text-amber-700 uppercase tracking-widest">Hesaplanamıyor</p>
+            <p className="text-[11px] text-slate-700 leading-relaxed mt-2">
+              {sorunlu.length > 0
+                ? `Şu alan(lar) aralık dışında ya da sayı değil: ${sorunlu.map((a) => `${a.ad} (${a.alt}–${a.ust})`).join(" · ")}. Sıfır geçerlidir.`
+                : `Şu alan(lar) bekleniyor: ${eksik.map((a) => `${a.ad} (${a.alt}–${a.ust})`).join(" · ")}.`}
+            </p>
+          </div>
+        )}
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">AKTİVİTE SINIFI</div>
