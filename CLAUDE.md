@@ -16347,3 +16347,55 @@ sayfayı yenile.**
 kayıtlı ve yine vuruldu: ölçüm başında depo temizlendi ama `ReadingTools`
 bellekteki listeyi geri yazdı ve kayıt sayısı 1 yerine 4 çıktı. Temizlik
 YENİLEME ile kesinleşiyor.
+
+### SESSİZ ELEME SINIFI SÜPÜRÜLDÜ — bir eksik ilan bulundu, dört eksen temiz
+
+Geçen turun sınıfı (kart üretmeyen girdinin sebebini söylememek) çalışma
+döngüsünün tamamına sürüldü.
+
+#### Bulunan: `/tekrar` kart kaynağını EKSİK ilan ediyordu
+
+`buildDeck` **iki** kaynaktan kart üretiyor — vurgular (`clozeCard`) ve el
+çizimleri (`sketchCard`). Arayüz yalnızca birini söylüyordu:
+
+| yer | önce |
+|---|---|
+| boş durum | "Tekrar kartları **vurgularından** türetilir." |
+| başlık altı rozet | "**Vurgularından** türetilir" |
+
+Not defterine çizim yapan kullanıcı kartının nereden geldiğini öğrenmiyor;
+ters yönde, yalnızca çizim yapan biri "vurgula" tavsiyesi alıyordu. İkisi de
+iki kaynağı sayıyor artık.
+
+#### Ölçülüp TEMİZ çıkan dört eksen — yeniden ölçmeye gerek yok
+
+| eksen | sonuç |
+|---|---|
+| **SM-2 sınırları** | aralık `Math.min(365, …)`, ease `[1.3, 3.0]` — kart 10 yıl sonrasına düşemiyor |
+| **`SyncDurumu` dürüstlüğü** | girişsizde "Yalnızca bu cihazda"; `tamam` yalnızca başarılı gönderimden sonra; `hata` → "Kaydedilemedi" |
+| **`StudyCoverage` matematiği** | `oran = r.toplam ? … : 0` sıfır korumalı; istek düşerse bölüm **hiç gösterilmiyor** (yorumu da doğru: *"yanlış sayı göstermekten iyidir"*) |
+| **`/api/branch-counts`** | 200 · 13 branş · toplam **410** — dosya sistemiyle birebir |
+
+#### Uydurma veri sınıfı: 12 uç sürüldü, hepsi dürüst
+
+`sections` · `user/me` · `premium/quiz/today` · `premium/daily-program` ·
+`protected/chunk` → **503 + `{ok:false, reason:"backend-unavailable"}`;
+`study` → 401; `topics`/`revalidate` → 405 (yalnızca yazma); `branch-counts`
+ve `auth/providers` → gerçek veriyle 200.
+
+**`/api/progress/*` 404 veriyor ve bu KUSUR DEĞİL:** dizin `_progress`, yani
+rotaya alınmıyor; tek çağıranı `StudyQuickActions` ve o **sıfır içe aktaranı
+olan ölü kod**. `/api/review/seed` ise gerçek ve dürüst (503).
+
+#### `sketchCard`ın sessiz elemesi — ölçüldü, DEĞİŞTİRİLMEDİ
+
+`strokes.length < 3` olan çizim kart üretmiyor ve kullanıcıya bir şey
+denmiyor. Vurgu turundakiyle aynı şekil ama **bedeli değil**: iki çizgilik
+bir karalama gerçek bir içerik kaybı sayılmaz, üstelik çizim SÜREKLİ bir
+eylem — "kart olmayacak" uyarısını çizerken basmak erken ve gürültülü
+olurdu. Vurguda uyarı doğru anda çıkıyor çünkü orada eylem TEK ve kesikli.
+
+**Ölçüm tuzağı — `innerText` yine `uppercase` uyguladı.** Yeni rozet metni
+`/Vurgu ve çizimlerinden türetilir/` deseniyle aranınca **bulunamadı**; öge
+CSS'te `uppercase` ve `innerText` onu uyguluyor. `textContent` gerçeği
+gösterdi. Belgede kayıtlı tuzak, bu oturumda ikinci kez.
