@@ -16951,3 +16951,68 @@ Belgede aynı ders zaten kayıtlıydı: meta testin kendi tohumu bir kez eksik
 beklediği ağaç şeklini ve şekilleri taşıdığını ayrıca doğrula.**
 
 Meta test şimdi 15 denetim sürüyor ve 15'i de temiz.
+
+### VERİ SİLME KARARININ VERİLDİĞİ PANEL "Invalid Date" BASIYORDU
+
+Yeni eksen: **tarih basımı korumalı mı?** Depoda `isNaN(...getTime())`
+biçiminde bir geçerlilik denetimi **hiç yoktu** (0 eşleşme), buna karşılık
+20 yerde `new Date(...).toLocale*` çağrısı var.
+
+Riskli olanlar kullanıcı verisinden besleniyor. Ölçüldü (canlı, gerçek
+dosya girdisiyle) — bozuk bir yedek içe aktarılınca kuru prova paneli:
+
+```
+1 sayfa · 1 vurgu · 0 not · 0 çizgi · Invalid Date
+[BİRLEŞTİR]  [ÜZERİNE YAZ]
+```
+
+Yani kullanıcının verisini **silip silmeyeceğine karar verdiği anda**,
+dosyanın ne zaman alındığını söyleyen alan çöp basıyordu.
+
+**Var olan `tarih > 0` kapısı yetmiyor** ve sebebi öğretici: kapı DEĞERE
+bakıyor, sonucun GEÇERLİ olup olmadığına değil. `typeof "number"` olan ama
+`Date` aralığının dışında kalan bir sayı (ör. `1e20`) kapıdan geçiyor.
+`NaN`, negatif ve dizeler zaten eleniyordu — açık olan tek şey bu dar bant.
+
+`app/lib/tarih.ts` → `gecerliTarih()` / `tarihYazisi()`: geçersizse `null`,
+çağıran alanı **hiç basmıyor**. Bir tire ya da "—" koymak da bir iddia
+olurdu ("tarih yok"), oysa gerçek olan "tarih okunamadı".
+
+Aynı ilke depoda zaten yazılıydı — `isoTarih()` site haritasında geçersiz
+tarihte alanı basmıyor, `GeriSayim` takvim boşken hiç çizmiyor. Eksik olan
+tutarlılıktı.
+
+| çağrı yeri | kaynak | ölçüldü mü |
+|---|---|---|
+| `StudyBackup` | içe aktarılan dosyanın damgası | **evet** |
+| `calisma-alanim` | kayıt kartının tarih rozeti | **evet** |
+| `profile` | sunucudan gelen `studiedAt` | hayır — canlı oturum gerekiyor |
+| `GeriSayim` | içerik takvimi | **kapsam dışı, eksik DEĞİL** — `kalanGunHesapla` NaN üretiyor ve `x.kalan >= 0` süzgeci eliyor |
+
+**Doğrulama — kayıt kartlarında tek ölçümde iki dal:**
+
+| kart | `at` | rozet |
+|---|---|---|
+| Addison | `1e20` (bozuk) | **YOK**, kart sağlam |
+| AML | geçerli | **"14 MAR 2026"** — negatif kontrol |
+
+İçe aktarma panelinde de aynı çift: bozuk damgada "Invalid Date" yok ve
+sayılar duruyor; geçerli damgada **"14.03.2026"** basılıyor.
+
+**ÜÇ TOHUM TUZAĞINA ÜST ÜSTE DÜŞÜLDÜ ve üçü de belgede kayıtlı kuralın
+tekrarı — "tohumu GERÇEK şemayla kur":**
+
+1. Yedeğe `v: 2` yazıldı; `parseBackup` yalnızca `v === 1` kabul ediyor,
+   dosya sessizce reddedildi ve panel hiç çizilmedi.
+2. "Kuru prova çizildi mi" ölçütüm `"vurgu"` kelimesini arıyordu — o kelime
+   sayfanın kendi boş durum metninde de geçiyor ve **sahte `true`** verdi.
+3. `medisea:index:v1` düz dize haritası olarak tohumlandı; gerçek şema
+   `{ [yol]: { title, at } }` ve `entry.at` oradan geliyor. Yanlış şemayla
+   **geçerli damgalı kart da rozet basmıyordu**, yani düzeltme "çalışıyor"
+   sanılabilirdi.
+
+Üçüncüsü en tehlikelisi: negatif kontrolün kendisi sessizce ölmüştü.
+**Bir negatif kontrol beklenen çıktıyı ÜRETMİYORSA, önce tohumu sına.**
+
+Ayrıca `innerText` yine `uppercase` uyguladı: panel başlığı kaynakta
+"Dosya içeriği", ekranda **"DOSYA İÇERİĞİ"** ve düz arama tutmadı.
