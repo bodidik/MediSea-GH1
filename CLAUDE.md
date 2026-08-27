@@ -19038,3 +19038,55 @@ içe aktarıyor:
 regex dosyaya `/\/g` olarak indi ve `SyntaxError` verdi. Çare kaçışı hiç
 yazmamak: `String.fromCharCode(92)` ve `/from +["']…/` gibi backslash
 içermeyen desenler. Bu oturumda ikinci kez.
+
+### DENETİM KAPSAMI SINIFI SÜRÜLDÜ — "yalnızca page.tsx" varsayımı bugün geçerli, PAYLAŞILAN kütüphane değil
+
+Geçen turun bulgusu (denetim iddiası ölçtüğünden geniş) genelleştirildi. Bu
+depoda o varsayım bir kez pahalıya mal olmuştu: `TOOLS_DATABASE`
+`page.tsx`ten `ToolsIcerik.tsx`e taşınınca `arac-metadata` 114 kayıtlık
+indeksi `[]` ile ezmişti.
+
+**Birinci ölçüm — "mantık page.tsx dışında" sınıfı BOŞ:**
+
+| ölçüt | sonuç |
+|---|---|
+| araç klasörü | **130** |
+| `page.tsx` dışında dosya taşıyan | **0** (`components`/`data`/`lib` araç değil) |
+| yerel kardeş dosya içe aktaran araç | **0** |
+
+**İkinci ölçüm — asıl kör nokta PAYLAŞILAN kütüphanelerde:**
+
+| kütüphane | içe aktaran araç |
+|---|---|
+| `app/tools/lib/calc-utils.tsx` | **59** |
+| `app/tools/lib/asit-baz.ts` | 2 |
+
+Per-araç denetimler (`bolme` · `kapi-kapsam` · `yuvarlama` · `bant` ·
+`karar`) bu dosyaları HİÇ görmüyor; oradaki korumasız bir bölme 59 aracı
+birden vururdu.
+
+**Ölçüldü ve BUGÜN BOŞ:** yorumlar ve dizeler boşaltılıp gerçek bölme
+işaretleri sayıldı — **20 bölme noktası, 19'u sabite** (10, 100, 3600,
+kappa, çevrim katsayısı). Tek hesaplanmış payda `deltaAG / deltaHCO3` ve
+**korumalı**: `deltaHCO3 <= 0` dalı (HCO₃⁻ 24'ün altına inmemiş) ayrı bir
+klinik mesajla ayrılmış, bölme yalnızca `else` içinde. Kodun kendi yorumu da
+bunu geçmiş bir kusur olarak kaydediyor.
+
+Bu, klinik olarak da doğru ayrım: delta oranının kullanıldığı mikst tabloda
+HCO₃⁻ tam 24 olabilir ve orada oran hesaplanmaz, eşlik eden alkaloz
+bildirilir.
+
+Kapsam `bolme-denetim.cjs` başlığına yazıldı — ölçüt `parseLocaleNumber`
+değişkenlerine dayandığı için kütüphaneye taşınamıyor (orada değerler
+parametre olarak geliyor); o dosyalar elle sürülmeli.
+
+**ÖLÇÜT BU TURDA ÜÇ KEZ KIRILDI ve üçü de aynı aileden:**
+
+| kırılma | imza |
+|---|---|
+| bölme sayacı 59 aracın 59'unda **0** dedi | tekdüze sıfır — ölçüt kusuru imzası (`ktv` gerçekte 8 taşıyor) |
+| heredoc kaçışı düşürdü ×2 | `SyntaxError: Unterminated group` |
+
+Üçüncüsü bu oturumda **üçüncü** tekrar. Kural sertleşiyor: kaçış taşıyan bir
+deseni heredoc'a hiç yazma — `String.fromCharCode(92)` ile kur ya da
+kaçışsız karşılığını seç.

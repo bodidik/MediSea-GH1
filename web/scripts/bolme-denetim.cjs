@@ -11,6 +11,27 @@
  *
  * KAPI DEĞİL RAPOR: ölçüt kaynaktan aday üretir, kararı insan verir.
  *
+ * ── KAPSAM: yalnızca `<araç>/page.tsx` — PAYLAŞILAN kütüphaneler DIŞARIDA ──
+ *
+ * Bu denetim araç sayfalarını tarıyor. Ama 59 araç hesabının bir kısmını
+ * `app/tools/lib/calc-utils.tsx`e, 2 araç `app/tools/lib/asit-baz.ts`e
+ * devrediyor ve o dosyalar bu taramaya HİÇ girmiyor. Oradaki korumasız bir
+ * bölme 59 aracı birden vururdu.
+ *
+ * Ölçüldü (yorumlar ve dizeler boşaltılıp gerçek bölme işaretleri sayılarak):
+ *
+ *   calc-utils : 12 bölme — HEPSİ sabite (10, 100, 3600, kappa, çevrim k)
+ *   asit-baz   :  4 bölme — üçü sabite (10, 10**b)
+ *                 biri HESAPLANMIŞ değere: `deltaAG / deltaHCO3`
+ *
+ * O tek nokta KORUMALI ve koruması klinik olarak da doğru: `deltaHCO3 <= 0`
+ * dalı (HCO₃⁻ 24'ün altına inmemiş) ayrı bir mesajla ayrılmış, bölme yalnızca
+ * `else` içinde. Yani kör nokta ölçüldü ve BUGÜN BOŞ.
+ *
+ * Kütüphaneye HESAPLANMIŞ bir paydayla bölme eklenirse bu denetim GÖRMEZ —
+ * ölçüt `parseLocaleNumber` değişkenlerine dayanıyor, kütüphanede değerler
+ * parametre olarak geliyor. O dosyalar elle sürülmeli.
+ *
  * ── AÇIK ADAYIN VERDİKTİ — YENİDEN KOVALAMAYIN ──────────────────────
  *
  *   ktv:103  /t  ->  KUSUR DEĞİL, ekran metni.
