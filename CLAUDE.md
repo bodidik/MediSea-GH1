@@ -17468,3 +17468,54 @@ altındaki webpack `eval` dizelerini getirdi — tek eşleşme **binlerce
 karakterlik** bir satır ve raporu okunamaz yaptı. Kaynak taraması yaparken
 `.next` (ve `.next-verify`) elenmeli; `--include=*.ts --include=*.tsx` bile
 yetmiyor, çünkü derlenmiş çıktı `.js` içinde kaynak metnini gömülü taşıyor.
+
+### "PARAMETRE TAŞIYAN BAĞLANTI, HEDEF ONU OKUYOR MU" — sınıf tarandı, canlıda 0
+
+`AccessGate` kusurunun mekanik hâli: bağlantı `?plan=premium` taşıyordu ama
+`/uyelik` `searchParams` almıyordu. **Okunmayan bir parametre var olmayan bir
+yetenek ima eder** — burada bir plan seçicisi.
+
+Ölçüt üç okuma biçimini birden sayıyor, yoksa sahte aday üretir: sunucu
+bileşeninde `searchParams` prop'u, istemcide `useSearchParams()`, ve bu depoya
+özgü `new URLSearchParams(window.location.search)` — `/tools` sonuncusunu
+**bilerek** kullanıyor (belgede kayıtlı: `useSearchParams` sayfayı sunucuda
+üretilmez yapıyor).
+
+| ölçüm | değer |
+|---|---|
+| taranan tsx | 539 |
+| sorgu taşıyan iç bağlantı | 40 |
+| rotası çözülen | 34 |
+| **hedefi parametreyi okumayan** | **10 — onu da ALT ÇİZGİLİ (ölü) klasörlerde** |
+
+Canlı yüzeyde **0**. (Ölü sayfaların hedefleri `/…/pearls`, `/flashcards`,
+`/quiz` — var olmayan rotalar; `link-denetim`in "27 kırık adres, hepsi ölü
+kodda" kaydıyla tutarlı.)
+
+#### ⚠ ÖLÇÜTÜN İLK SÜRÜMÜ GERÇEK KUSURU KAÇIRIYORDU — ve kendi koruması söyledi
+
+İlk sürüm `href=` ile başlayan LİTERALLERİ arıyordu. Tarihsel kontrol
+(düzeltme öncesi `AccessGate`) **"0 bağlantı"** dedi ve betiğin körlük koruması
+devreye girdi: *"hiç sorgu taşıyan bağlantı ölçülmedi — ölçüt kör"*.
+
+Sebep: gerçek kusurda adres bir **DEĞİŞKENE** atanıyordu
+(`const href = … : '/uyelik?plan=premium'`) ve JSX'te `href={href}` yazıyordu.
+Yani ölçüt kusurun ŞEKLİNİ değil, o şeklin bir YAZIM BİÇİMİNİ arıyordu.
+
+Belgede aynı ders başka ölçütler için üç kez kayıtlı (kapı dolaylı olabiliyor ·
+seçim karşılaştırması bir değişkene taşınmış olabiliyor · alan adı serbest).
+Şart kaldırıldı: artık sorgu taşıyan **her iç yol dizesi** aday, gürültüyü
+rota çözümlemesi eliyor.
+
+| kontrol | sonuç |
+|---|---|
+| **tarihsel** (düzeltme öncesi kaynak) | `/uyelik?plan` **yakalanıyor** |
+| **pozitif** (hedef `searchParams` okuyor) | işaretlenmiyor |
+| körlük koruması | "0 bağlantı" durumunda açıkça uyarıyor |
+
+**Aktarılabilir kural: bir taramanın "0 aday" sonucu, TARİHSEL kontrol
+geçmeden güvenilir değil.** Burada ilk sürüm hem "0 canlı aday" veriyordu hem
+de gerçek kusuru göremiyordu — ikisi aynı anda doğru görünüyordu.
+
+Ayrıca bu turda kendi yorumumda `**` + `/` dizisi blok yorumu erken kapattı
+(`SyntaxError`); belgede kayıtlı `**5 lb**/inç` tuzağının aynısı.
