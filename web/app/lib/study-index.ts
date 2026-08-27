@@ -9,7 +9,7 @@
 
 import type { ReadingMark } from "@/app/lib/reading-marks";
 import { SPECIALTIES } from "@/app/lib/specialties";
-import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
+import { BOZUK_EK, degistiBildir, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -173,6 +173,7 @@ export function purge(path: string) {
     localStorage.removeItem(NOTE_PREFIX + path + BOZUK_EK);
   } catch {}
   dropFromIndex(path);
+  degistiBildir();
 }
 
 /* ── Dışa aktarma ──────────────────────────────────────────────────────── */

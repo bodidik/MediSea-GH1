@@ -154,3 +154,28 @@ export function guvenliCozumle(anahtar: string): unknown {
     return null;
   }
 }
+
+/* ── Değişiklik duyurusu ─────────────────────────────────────────────────
+ *
+ * `study-sync` bu olayı dinleyip 5 sn'lik gecikmeli bir push planlıyor.
+ * Duyurmayan bir yazma yolu, verisi sunucuya YALNIZCA sayfa kapanırken
+ * (`pagehide` / `visibilitychange`) ulaşan bir yol demek.
+ *
+ * En pahalısı SİLME: birleştirme hiçbir şeyi silmiyor, yani silme sunucuya
+ * ulaşmazsa bir sonraki uzlaşmada kayıt GERİ GELİYOR. Ölçüldü (canlı):
+ * Çalışma Alanım'da bir kaydı silmek `medisea:changed` olayı üretmiyordu —
+ * olay sayısı 0, dinleyicinin çalıştığı elle gönderimle doğrulandı.
+ *
+ * Üç yazma yolu duyuruyordu (vurgu · not · derecelendirme), üçü duymuyordu
+ * (silme · flashcard işaretleri · yedekten geri yükleme). Aynı satırın üç
+ * kopyası da vardı; tek yere alındı.
+ *
+ * ⚠ `study-backup.write()` BİLEREK çağırmıyor: onu `pull()` de kullanıyor ve
+ * her uzlaşmadan sonra bir push planlamak trafiği ikiye katlardı. Duyuru
+ * KULLANICI EYLEMİNİN olduğu yerde (StudyBackup'ın onay düğmesi) yapılıyor.
+ */
+export function degistiBildir() {
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new Event("medisea:changed"));
+  }
+}

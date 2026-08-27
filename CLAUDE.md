@@ -17624,3 +17624,78 @@ iddiayı ürettiklerini ancak ikisini yan yana ölçmek gösteriyor.
 **beş dakika** harcadı — geçen turda belgelenen tuzağın birebir tekrarı, üstelik
 onu yazan tur tarafından. Bu ortamda `python3` YOK; stdin bekleyen bir komutu
 "varsa çalışır" diye bırakma.
+
+### ÜÇ YAZMA YOLU KENDİNİ DUYURMUYORDU — en pahalısı SİLME
+
+`study-sync` `medisea:changed` olayını dinleyip 5 sn'lik gecikmeli bir push
+planlıyor. Yeni eksen: **hangi yazma yolları bu olayı gönderiyor?**
+
+Altı yazma yolu var; **üçü duyuruyordu, üçü duymuyordu:**
+
+| yol | ne değişiyor | duyuru (önce) |
+|---|---|---|
+| `reading-marks` — vurgu | marks | ✓ |
+| `NotePanel` — not | notes | ✓ |
+| `review-deck` — derecelendirme | review + log | ✓ |
+| **`purge()` — SİLME** | marks + notes + index | **✗** |
+| **`FlashcardPlayer`** | kartlar | **✗** |
+| **`StudyBackup` — geri yükleme** | altı anahtar birden | **✗** |
+
+**CANLIDA ÖLÇÜLDÜ (düzeltmeden önce):** Çalışma Alanım'da bir kaydı silmek
+`medisea:changed` olayı üretmiyor — **olay sayısı 0**, silme ise gerçekleşiyor
+(vurgu depodan gidiyor, kart listeden düşüyor). "0" körlükten gelmiyor:
+aynı ölçümde elle bir olay gönderildi ve sayaç 0 → 1 oldu.
+
+**SİLME neden en pahalısı:** birleştirme hiçbir şeyi silmiyor. Silme sunucuya
+ulaşmazsa bir sonraki uzlaşmada kayıt **geri geliyor**. Güvenlik ağı yalnızca
+`pagehide` / `visibilitychange` — mobilde OS'un sekmeyi öldürmesi ya da bir
+çökme o ağı deliyor. Öteki beş yol duyurduğu için bu bir tasarım kararı
+değil, tutarsızlık.
+
+**Çare: tek yardımcı (`depo.ts` → `degistiBildir`), altı çağrı yeri.** Aynı
+satırın üç kopyası zaten vardı; tek yere alındı.
+
+**⚠ `study-backup.write()` BİLEREK çağırmıyor.** Onu `pull()` de kullanıyor
+ve her uzlaşmadan sonra bir push planlamak trafiği ikiye katlardı. Duyuru
+KULLANICI EYLEMİNİN olduğu yerde (onay düğmesi) yapılıyor. Aynı fonksiyon
+iki farklı niyetle çağrılıyorsa, yan etki fonksiyona değil ÇAĞIRANA konur.
+
+**Doğrulama — dördü negatif kontrol:**
+
+| ölçüm | önce | sonra |
+|---|---|---|
+| silme (`purge`) | **0** | **1** |
+| yedekten geri yükleme | — | **1** |
+| **negatif** — kuru prova (depoya yazmıyor) | — | **0** |
+| **negatif** — vurgu (mevcut yol, gerileme) | 1 | **1** |
+| **negatif** — sayfa yüklemesi | — | **0** |
+
+Yerleştirme de ölçüldü: üç yeni çağrı da eylemin GERÇEKTEN olduğu dala
+konuldu — silme `dropFromIndex`ten sonra, flashcard `setItem` başarılıysa
+(try'ın içinde), geri yükleme `r.ok` dalında.
+
+**Flashcard yolu CANLIDA SÜRÜLMEDİ** (kapı arkasında) — kaynak yerleşimi
+doğrulandı, "ölçüldü" DENMİYOR.
+
+#### Ölçüm tuzağı: önceki senaryodan KALAN dinleyici sayacı ikiye katladı
+
+Geri yükleme ilk ölçümde **2 olay** verdi ve bir an çift gönderim sanıldı.
+Sebep uygulamada değil ölçümdeydi: bir önceki senaryoda (silme) eklenen
+dinleyici hâlâ bağlıydı ve **aynı `window.__sayac` değişkenini** artırıyordu.
+Tek bir dispatch iki artış üretiyordu.
+
+Ayırt eden şey sayı değil **yığın izi** oldu: dinleyiciye `new Error().stack`
+konunca tek kaynak göründü (`onayla -> degistiBildir`) ve sayı 1 çıktı.
+
+Belgede kayıtlı "ardışık ölçüm bayat sonuç verir" kuralının dinleyici hâli:
+sayaç tabanlı bir ölçümde **her senaryo için taze bir sayfa ya da taze bir
+sayaç adı** kullan — ya da doğrudan kaynağı bastır.
+
+#### Yan bulgu: karma satır sonlu dosya 1 -> 3
+
+Belgede "tek karma dosya (`StudyBackup.tsx`)" kayıtlıydı. Bugün ölçüldü:
+`reading-marks.ts` (CR 354 / LF 364), `NotePanel.tsx` (934 / 965) ve
+`StudyBackup.tsx` (308 / 310) karma. `core.autocrlf=true` olduğu için
+commit'lenen blob tekdüze LF, yani depo içeriği temiz — ama **satır bazlı
+her betik bundan etkilenir**: bu oturumda tam bu yüzden 10 dosya yanlış
+yamalanmıştı. Bölerken LF'e göre böl, `\r`yi ayrıca kırp.

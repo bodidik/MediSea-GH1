@@ -12,7 +12,7 @@
 // gider. Saklanan tek şey o kartın tekrar durumudur (aralık, kolaylık, vade).
 
 import { collectAll, type StudyEntry } from "@/app/lib/study-index";
-import { guvenliNesneOku } from "@/app/lib/depo";
+import { degistiBildir, guvenliNesneOku } from "@/app/lib/depo";
 import type { ReadingMark, MarkStyle } from "@/app/lib/reading-marks";
 import type { Stroke } from "@/app/components/StrokePreview";
 
@@ -278,7 +278,7 @@ export function grade(cardId: string, g: Grade, now = Date.now()): CardState {
   const next = schedule(states[cardId] ?? null, g, now);
   states[cardId] = next;
   writeStates(states);
-  if (typeof window !== "undefined") window.dispatchEvent(new Event("medisea:changed"));
+  degistiBildir();
   return next;
 }
 

@@ -13,7 +13,7 @@
 // çözüm gibi sayfalarda yol değişmeden içerik değişir — sıra numarası orada
 // yanlış içeriğe yapışırdı, kimlik yapışmaz.
 
-import { guvenliDiziOku } from "@/app/lib/depo";
+import { degistiBildir, guvenliDiziOku } from "@/app/lib/depo";
 
 export type MarkStyle = "y" | "g" | "b" | "p" | "bold" | "u";
 
@@ -98,7 +98,7 @@ export function saveMarks(pathname: string, marks: ReadingMark[]): KayitSonuc {
   try {
     if (marks.length === 0) localStorage.removeItem(storageKey(pathname));
     else localStorage.setItem(storageKey(pathname), JSON.stringify(marks));
-    if (typeof window !== "undefined") window.dispatchEvent(new Event("medisea:changed"));
+    degistiBildir();
     return "ok";
   } catch (e) {
     return kotaHatasiMi(e) ? "dolu" : "engelli";

@@ -24,7 +24,7 @@ import { panoyaKopyala } from "@/app/lib/pano";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
-import { bozukYedegiOku, guvenliNesneOku, kurtarildiMi } from "@/app/lib/depo";
+import { bozukYedegiOku, degistiBildir, guvenliNesneOku, kurtarildiMi } from "@/app/lib/depo";
 
 /** [x, y, basınç] — x ve y panel GENİŞLİĞİNE göre normalize (en-boy oranı korunur) */
 type Pt = [number, number, number];
@@ -180,7 +180,7 @@ export default function NotePanel() {
         } else {
           localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes }));
           touchIndex(pathname, pageTitle());
-          window.dispatchEvent(new Event("medisea:changed"));
+          degistiBildir();
         }
       } catch {
         // Depo dolu. SESSİZCE GEÇMEK YASAK: aşağıda "Kaydedildi" yazan bir

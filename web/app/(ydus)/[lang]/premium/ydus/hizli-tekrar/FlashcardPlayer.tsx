@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { kisayolSusmali } from '@/app/lib/klavye';
-import { guvenliDiziOku } from '@/app/lib/depo';
+import { degistiBildir, guvenliDiziOku } from '@/app/lib/depo';
 
 interface Card {
   id: string;
@@ -134,6 +134,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     if (!yuklendi.current) return;
     try {
       localStorage.setItem(depoAnahtari, JSON.stringify([...bilinen]));
+      degistiBildir();
     } catch {}
   }, [bilinen, depoAnahtari]);
 

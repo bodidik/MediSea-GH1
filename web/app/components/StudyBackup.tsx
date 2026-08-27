@@ -18,6 +18,7 @@ import {
   type ImportPlan,
 } from "@/app/lib/study-backup";
 import { depoKullanilabilir } from "@/app/lib/study-index";
+import { degistiBildir } from "@/app/lib/depo";
 import { tarihYazisi } from "@/app/lib/tarih";
 
 export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
@@ -105,6 +106,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
         setUsage(storageUsage());
         setDurum("Geri yükleme tamam.");
         onChanged?.();
+        degistiBildir();
       } else {
         setDurum(r.hata ?? "Geri yükleme başarısız.");
       }
