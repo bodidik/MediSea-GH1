@@ -18537,3 +18537,55 @@ onlara karşı sına. İki sonuç türü var ve ikisi de kayda değer:
 İkincisi tehlikeli olan ve geçen turun kusuru tam olarak oydu. Bir renderer
 incelerken "burası çöker mi" değil, **"burası sessizce boş kalır mı"** diye
 sor.
+
+### "SESSİZCE BOŞ KALIR MI" ÖLÇÜTÜ AÇIK TARAFA SÜRÜLDÜ — temiz, ve KENDİ değişikliğim doğrulandı
+
+Geçen turun ölçütü (korumasız erişim → alan yanlış şekildeyse `undefined` →
+**sessizce boş render**) daha büyük yüzeye, kanonik içeriğe sürüldü. Konu ve
+branş sayfasının JSON'a yaptığı **her** erişim çıkarıldı; ikisi korumasız:
+
+| erişim | verdikt |
+|---|---|
+| `s.html.replace(...)` (gövde uzunluğu) | **güvenli** — NORMALLEŞTİRİLMİŞ listeden geçiyor (`html: s.text \|\| s.html \|\| ""`), ham JSON'dan değil |
+| `title: content.title` (`allTopics` künyesi) | korumasız, ama **456 dosyanın 456'sında dolu** |
+
+İçerik dört alanda birden ölçüldü: `title` yok **0** · `sections` dizi değil
+**0** · `heading` yok **0** · `html`/`text` ikisi de yok **0**.
+
+`content.title`ın kardeşleri KORUMALI (`content.title || file.replace(...)`
+ve `rawData.title || topicSlug.replace(...)`), yani bu üç okuma yerinden
+biri hizada değil. Bugün ölçülmüş bir kusur YOK; **DEĞİŞTİRİLMEDİ** —
+`bsaMosteller` ile aynı "dolu silah" kaydı: başlıksız bir konu eklenirse
+"Alt Başlıklar" listesinde **boş bir bağlantı** çizilir.
+
+#### Geçen turki kardeş süzgecim çıkmaz sokak açtı mı — hayır
+
+Belgedeki kural: *"bir düzeltmeden sonra AYNI aracı yeniden tara."* İlgili
+listesinden akrabayı elemek bir konunun listesini boşaltabilirdi.
+
+| ölçüt | taban | bugün |
+|---|---|---|
+| görünür konu | 410 | 410 |
+| **ilgilisi BOŞ** | 2 | **3** |
+| **GERÇEK çıkmaz** (ilgili + çocuk + ebeveyn ÜÇÜ de yok) | 2 | **0** |
+| bağ dağılımı | — | 1:102 · 2:84 · 3:70 · 4:78 · 5:36 · 6:37 |
+
+Üçüncü boş liste `genel-dahiliye/kikuchi-fujimoto-sle` ve sebebi yapısal:
+branşta **toplam 2 konu** var — ebeveyn ve tek çocuğu. Eskiden branş içi son
+çare onları birbirine bağlıyordu, yani "İlgili Konular" kutusu sayfanın
+kırıntısında ZATEN duran bağı tekrar ediyordu. Süzgeç onu kaldırdı; konuya
+çıkış yolu (ebeveyn bağı) duruyor.
+
+**Boş liste boş BAŞLIK basmıyor:** render `{ilgililer.length > 0 && (` ile
+kapılı — ölçüldü, kaynakta doğrulandı.
+
+**Belgedeki "2 gerçek çıkmaz" değeri BAYATTI ve düzeltiliyor:** o iki konu
+(`lenfadenopati-yaklasimi` · `journal-club`) bugün sırasıyla **1 ve 4 çocuk**
+taşıyor, yani içerik büyüdükçe kendiliğinden kapanmışlar. Bu, "sayılar ÖLÇÜM
+ANINA aittir" kuralının bir örneği — ama aynı zamanda şunu gösteriyor:
+**bir düzeltmenin yan etkisini ölçerken taban değeri de yeniden ölç**, yoksa
+içerikten gelen bir iyileşmeyi kendi değişikliğinin zararı sanabilirsin (ya
+da tersi: 2→3 artışını kusur sanmak).
+
+Üreteç ayrıca yeniden çalıştırıldı ve `git diff` **boş** — indeks taze, yani
+2→3 farkı benim commit ettiğim değişiklikten geliyor, bayatlıktan değil.
