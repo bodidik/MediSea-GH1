@@ -185,6 +185,21 @@ export default function SiteHeader() {
    */
   const sonuclarGuncel = sonuclarSorgu === query.trim();
 
+  const kutuRef = useRef<HTMLInputElement>(null);
+  /** Açılır penceredeki sonuç bağları — DOM sırasında. */
+  const sonuclar = () =>
+    Array.from(wrapperRef.current?.querySelectorAll<HTMLAnchorElement>("[data-arama-sonuc]") ?? []);
+
+  /* Sonuç bağlarında ok tuşu: liste içinde dolaş, ilkten yukarı çıkınca
+     kutuya dön. Gerçek DOM odağı kullanılıyor — `aria-activedescendant`
+     ve combobox rolleri gerekmiyor, çünkü hedefler zaten gerçek bağlar
+     ve ekran okuyucu odaklanan bağı kendisi duyuruyor. */
+  const sonucTusu = (e: React.KeyboardEvent, i: number) => {
+    const liste = sonuclar();
+    if (e.key === "ArrowDown") { e.preventDefault(); liste[Math.min(i + 1, liste.length - 1)]?.focus(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); (i === 0 ? kutuRef.current : liste[i - 1])?.focus(); }
+  };
+
   const aramaDurumu =
     query.length < 2            ? "" :
     loading || !sonuclarGuncel  ? "Aranıyor…" :
@@ -343,8 +358,24 @@ export default function SiteHeader() {
                  kullanamayan biri pencereyi kapatamıyordu.
                  Sorgu KORUNUYOR: ESC veri kaybettirmemeli (not defterinde de
                  aynı kural). Temizlemek için yanındaki düğme var. */
+              ref={kutuRef}
               onKeyDown={(e) => {
-                if (e.key === "Escape" && isOpen) { e.preventDefault(); setIsOpen(false); }
+                if (e.key === "Escape" && isOpen) { e.preventDefault(); setIsOpen(false); return; }
+                if (!isOpen) return;
+                /* ÖLÇÜLDÜ (canlı): 5 sonuç ekrandayken Enter ve ok tuşları
+                   HİÇ işlenmiyordu (defaultPrevented false, yol değişmiyor).
+                   Yani kullanıcı yazıyor, sonucu görüyor, evrensel "git"
+                   hareketini yapıyor ve hiçbir şey olmuyordu — bu depoda
+                   ayrı bir kusur sınıfı olan ÖLÜ KONTROL.
+
+                   Enter YALNIZCA sonuçlar güncel sorguya aitse çalışır:
+                   `sonuclarGuncel` olmadan, hâlâ uçan bir aramada BAYAT bir
+                   sonuca ışınlanmak olurdu. */
+                if (e.key === "ArrowDown") { e.preventDefault(); sonuclar()[0]?.focus(); return; }
+                if (e.key === "Enter" && sonuclarGuncel && !loading) {
+                  const ilk = sonuclar()[0];
+                  if (ilk) { e.preventDefault(); ilk.click(); }
+                }
               }}
             />
             
@@ -404,6 +435,11 @@ export default function SiteHeader() {
                                                     `/topics/${result.section}/${result.slug}`
                       }
                       className="flex items-center gap-3 px-4 py-3 hover:bg-blue-50 group border-l-4 border-transparent hover:border-blue-500 transition-all"
+                      /* Klavye gezinmesinin çapası. Sarmalayıcıdaki her <a>
+                         alınamaz: sıfır sonuç durumunda oraya "Kütüphane" ve
+                         "Klinik hesaplayıcılar" çıkış bağları da basılıyor. */
+                      data-arama-sonuc=""
+                      onKeyDown={(e) => sonucTusu(e, index)}
                       onClick={() => setIsOpen(false)}
                     >
                       {/* Glif SÜSLEME: anlamı yanındaki başlık taşıyor, o yüzden

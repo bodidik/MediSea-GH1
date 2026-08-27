@@ -18842,3 +18842,48 @@ Sunucu HTML'inde de ölçüldü: `/tools` ve `/tools/bmi` çıktısında "Geri"
 girilmiş olabilir mi" diye sor.** Site haritasındaki her adres bir giriş
 noktasıdır; bu depoda 130 araç sayfasının hepsi arama motoruna açık ve
 hepsinde bu düğme vardı.
+
+### ARAMA KUTUSUNDA ENTER VE OK TUŞLARI ÖLÜYDÜ
+
+Kullanıcının en sık yaptığı hareket hiç ölçülmemişti. Ölçüldü (canlı,
+`/topics/nefroloji` başlığındaki kutuya "addison" yazılıp **5 sonuç
+ekrandayken** tuş gönderilerek):
+
+| tuş | `defaultPrevented` | sonuç |
+|---|---|---|
+| **Enter** | **false** | yol DEĞİŞMEDİ — hiçbir şey olmuyor |
+| **ArrowDown / ArrowUp** | **false** | liste gezilemiyor |
+| Escape | true | pencere kapanıyor (önceki turda düzeltilmişti) |
+
+Kutu bir `<form>` içinde DEĞİL, yani Enter'ın varsayılan bir davranışı da
+yok. Kullanıcı yazıyor, sonucu görüyor, evrensel "git" hareketini yapıyor ve
+karşılığında hiçbir şey almıyordu — bu depoda ayrı bir kusur sınıfı olan
+**ölü kontrol**.
+
+**Çare gerçek DOM odağı, combobox rolleri DEĞİL.** Hedefler zaten gerçek
+`<a>` bağları; odaklanınca ekran okuyucu onları kendisi duyuruyor. Yani
+`role="combobox"` + `aria-activedescendant` makinesi gerekmeden davranış
+doğru oluyor. Bağlara `data-arama-sonuc` çapası kondu — sarmalayıcıdaki her
+`<a>` alınamazdı, çünkü SIFIR SONUÇ durumunda oraya "Kütüphane" ve "Klinik
+hesaplayıcılar" çıkış bağları basılıyor (önceki turda eklenmişti).
+
+**Enter YALNIZCA `sonuclarGuncel` iken çalışıyor.** O bayrak (yanlış
+duyuru turunda eklenmişti) sonuçların HANGİ sorguya ait olduğunu tutuyor;
+olmasaydı hâlâ uçan bir aramada **bayat bir sonuca ışınlanmak** olurdu.
+
+**Doğrulama beş ölçüt, ikisi negatif kontrol** (üretim derlemesi, gerçek
+tarayıcı):
+
+| ölçüt | sonuç |
+|---|---|
+| ArrowDown (kutudan) | 1. sonuç odakta |
+| ArrowDown (sonuçtan) | 2. sonuç odakta |
+| ArrowUp · ArrowUp | 1. sonuç → **arama kutusuna dönüyor** |
+| Enter (güncel sonuç) | **`/tools/wells-dvt`** — ilk sonuca gitti, `<h1>` "Wells (DVT)" |
+| **negatif** — sorgu değişti, sonuç BAYAT | Enter yutulmadı, yol **DEĞİŞMEDİ** |
+| **negatif** — ESC | pencere kapandı, **sorgu korundu** ("addison"), yol değişmedi |
+
+**Aktarılabilir kural: bir kontrolün klavye yüzeyini, o kontrolün EN SIK
+kullanılan hareketiyle sına.** Bu kutunun ESC'si, canlı bölgesi, temizleme
+düğmesi ve Türkçe normalizasyonu ayrı ayrı ölçülmüştü — ama "yazıp Enter'a
+basmak" hiç denenmemişti ve tam orası ölüydü.
