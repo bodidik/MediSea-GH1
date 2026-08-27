@@ -18500,3 +18500,40 @@ kararın aynısı.
 göründü. Blok dizisinin adı `bloklar` değil **`icerik`**. Sayının sıfır
 olması ölçütün kör olduğunu söylüyordu; anahtarlar bastırılınca 555 blok
 çıktı ve kusur ancak o zaman göründü.
+
+### SINIF SÜPÜRÜLDÜ — dört premium içerik türünün dördü de render beklentisine karşı ölçüldü
+
+Geçen turun kusuru ("render korumasız bir alan bekliyor, veri başka şekilde
+taşıyor") tek örnek mi diye sorulmadan kapatılamazdı. Her renderer'ın
+KORUMASIZ erişimleri çıkarıldı ve içerik onlara karşı sürüldü.
+
+| tür | ölçülen | korumasız beklenti | kusur |
+|---|---|---|---|
+| **premium konu bloğu** | 41 dosya · 555 blok | `satirlar[].metin` · `kolonlar` · `satirlar[].hucreler` · `KUTU_STILLLERI[tur]` | **48 satır → düzeltildi** (geçen tur) |
+| quiz | 40 dosya · **378 soru** | `Object.entries(soru.secenekler)` · `soru.metin` · `soru.dogru` | **0** |
+| vaka | 11 dosya · **35 adım** | `Object.entries(adim.secenekler)` · `adim.soru` · `adim.dogru` | **0** |
+| inciler | 2 dosya · **13 inci** | `pearl.id/level/title/content/trigger` | **0** |
+
+Ek olarak sınanıp temiz çıkanlar: quiz'de iki şıktan az soru **0**, `dogru`
+şıklar arasında olmayan soru **0**; vakada aynı ikisi **0**; incilerde çift
+`id` **0** (aynı sayfada iki kez `data-readable="pearl:<id>"` üretirdi).
+
+Yani dize-şekilli satır sınıfı **premium konu bloklarına özgüymüş** —
+ötekiler tek şekilli.
+
+**Kapsam dürüstlüğü:** düzeltme yerelde, kapı geçici açılarak gerçek sayfa
+render edilerek doğrulandı (45/45). **CANLIDA doğrulanamaz** — o sayfa
+`AccessGate` arkasında ve üretimde kapı açmak yapılmaz. CI yeşil.
+
+#### Ölçüt notu: renderer'ın KORUMASIZ erişimlerini çıkarmak ucuz ve verimli
+
+Bu sınıfın tarama ölçütü basit: renderer'da `x.y.map(`, `Object.entries(x.y)`,
+`SABIT[x.y]` gibi **koruması olmayan** erişimleri bul, sonra veriyi tam
+onlara karşı sına. İki sonuç türü var ve ikisi de kayda değer:
+
+- alan YOK → `TypeError` → sayfa çöker (hata sınırı yakalar, görünür)
+- alan YANLIŞ ŞEKİLDE → `undefined` → **sessizce boş render** (görünmez)
+
+İkincisi tehlikeli olan ve geçen turun kusuru tam olarak oydu. Bir renderer
+incelerken "burası çöker mi" değil, **"burası sessizce boş kalır mı"** diye
+sor.
