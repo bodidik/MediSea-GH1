@@ -17192,3 +17192,62 @@ Ayrıca bu, bir tur önce taranan **"undefined şablon dizesine sızıyor mu"**
 sınıfının bir örneği ve tarama onu **kaçırdı**: ölçüt yalnızca `.tsx`
 dosyalarına bakıyordu, bu bir `.ts` API rotası. **Bir sınıfı tararken
 uzantı süzgecinin kapsamı da bir kapsam iddiasıdır.**
+
+### ROTA `params` BİLDİRİMİ İLE KLASÖR SEGMENTİ — tarandı, tek sapma zaten kayıtlı
+
+Geçen turun kaçağı (`app/api/topics/route.ts` dinamik segment taşımadığı hâlde
+`slug` okuyor) ölçüte çevrildi. Üç sapma biçimi aranıyor:
+
+| biçim | anlamı |
+|---|---|
+| **A** rota dinamik DEĞİL ama `params`tan alan okunuyor | hep `undefined` |
+| **C** okunan ad klasör adıyla TUTMUYOR | hep `undefined` |
+| B segment var ama okunmuyor | zararsız, rapor |
+
+İkisi de **sessiz**: TypeScript görmüyor (tip bildirimi bir İDDİA, çağıran
+değil) ve çalışma zamanında hata da yok — yalnızca `undefined` üretiliyor.
+
+**393 rota/sayfa/düzen dosyası · 160'ı `params` geçiyor · A: 1 · C: 0 · B: 0.**
+Tek A bulgusu zaten belgede kayıtlı ölü PUT.
+
+Ölçüt kör değil: tohumlanan ağaçta **üç biçim de** yakalanıyor.
+
+Tarama hem `.ts` hem `.tsx` bakıyor — bir tur önce `.tsx`-only bir ölçüt tam
+bu kusuru kaçırmıştı.
+
+### Paylaşılan `.ts` kütüphanelerinde NaN — temiz, ama güvenlik ÇAĞIRANLARDA
+
+Araç sayfaları bir tur önce tarandı; paylaşılan modüller (bir kusurun birden
+çok aracı birden vuracağı yer) ölçülmemişti. 91 dosya:
+
+| dosya | işlem | verdikt |
+|---|---|---|
+| `asit-baz.ts` | `Math.pow(10, ph − 6.1)` | güvenli — pH sınırlı, taşma yok |
+| `calc-utils.tsx` | `Math.log ×2` · `Math.sqrt ×5` | **çağıranlar kapılı** |
+
+Üç riskli fonksiyonun üçünün de **tek çağıranı** var ve üçü de kapılı:
+`bsaMosteller` ← `bsa` (30–260 cm · 1–400 kg) · `das28Esr`/`das28Crp` ←
+`das28` (0–28 kıskacı + aralık kapısı) · `egfrCkdEpi2021` ← `egfr` (kendi
+`Number.isFinite` kapısı).
+
+**Not — güvenlik fonksiyonun İÇİNDE değil:** `bsaMosteller`in
+`if (!heightCm || !weightKg) return 0;` satırı bir kapı GİBİ duruyor ama
+negatifi geçiriyor (`sqrt(negatif)` → NaN). Bugün zararsız çünkü tek çağıran
+kapılı; ikinci bir çağıran eklenirse NaN ekrana ulaşır. `ToolShare.params`
+ile aynı "dolu silah" şekli. **Ölçüldü, DEĞİŞTİRİLMEDİ** — çalışan üç aracı
+ölçülmüş bir kusur olmadan değiştirmek doğru olmaz.
+
+### Arama kutusu düşmanca girdiyle sürüldü — temiz
+
+Uygulamadaki tek serbest metin girdisi. Kaynakta `new RegExp` yalnızca bir
+yerde ve **sözlükten** kuruluyor (kullanıcı girdisinden değil), yani ReDoS
+yüzeyi yok. Davranışla da doğrulandı (canlı):
+
+| sorgu | sonuç |
+|---|---|
+| `(((((` · `.*` | çökme yok, "Sonuç bulunamadı." — düz metin olarak ele alınıyor |
+| 2000 karakter | çökme yok, 320px'te taşma yok |
+| `<script>x</script>` | çökme yok, enjeksiyon yok (metin olarak basılıyor) |
+| **negatif** — `addison` | **5 sonuç**, canlı bölge "5 sonuç bulundu." |
+
+Konsol hatası: **0**.
