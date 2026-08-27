@@ -199,10 +199,26 @@ function main() {
         .sort((a, b) => b.s - a.s || (a.anahtar < b.anahtar ? -1 : a.anahtar > b.anahtar ? 1 : 0))
         .map((x) => konular.find((d) => d.anahtar === x.anahtar));
 
+      /*
+       * AKRABA ELEMESİ BURADA DA GEREKİYOR.
+       *
+       * Katı kural ebeveyni ve çocuğu zaten eliyor (yukarıdaki `continue`),
+       * ama bu son çare listesi `konular`dan DOĞRUDAN türüyordu ve yalnızca
+       * konunun kendisini eliyordu. Sonuç ekranda görünür bir tekrardı:
+       *
+       *   çocuk hub -> hem "Alt Başlıklar" hem "İlgili Konular"
+       *   ebeveyn   -> hem KIRINTI YOLU hem "İlgili Konular"
+       *
+       * Ölçüldü (410 konu, 1196 bağlantı): 2 konu kendi çocuğunu, 2 konu
+       * kendi ebeveynini listeliyordu; dördü de hub, yani hepsi bu daldan
+       * geliyordu.
+       */
       const merkezler = konular.filter(
         (d) =>
           d.brans === k.brans &&
           d.anahtar !== k.anahtar &&
+          d.slug !== k.parent &&
+          d.parent !== k.slug &&
           konular.some((c) => c.brans === d.brans && c.parent === d.slug)
       );
 

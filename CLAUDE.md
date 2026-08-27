@@ -17752,3 +17752,71 @@ olabilirdi.
 "Sayfada bir şey yaptım" ile "bu kaydı düzenledim" farklı olaylar; ikisini
 tek damgada topladığında, ilgisiz bir eylem ötekinin verisini eliyor. Damga
 kararın verildiği NESNENİN üstünde durmalı.
+
+### "İLGİLİ KONULAR" KENDİ ÇOCUĞUNU VE EBEVEYNİNİ LİSTELİYORDU — son çare dalı akrabayı elemiyordu
+
+Konu sayfasındaki üç bağlantı bölümü İKİ ayrı kaynaktan besleniyor:
+
+| bölüm | kaynak |
+|---|---|
+| Alt Başlıklar · İleri Okuma | hiyerarşi (aynı listenin bölünmesi, tanım gereği ayrık) |
+| İlgili Konular | `content/ilgili-index.json` (etiket akrabalığı) |
+
+Üreteç katı kuralda ebeveyni ve çocuğu **açıkça eliyor**
+(`ilgili-index.cjs`, skor döngüsündeki `continue`). Ama **son çare dalı**
+(`merkezler`) listeyi `konular`dan DOĞRUDAN türetiyor ve yalnızca konunun
+KENDİSİNİ eliyordu.
+
+**Ölçüldü — 410 konunun tamamı, 1196 bağlantı:**
+
+| ölçüt | önce |
+|---|---|
+| kendine bağlantı | 0 |
+| **İlgili ⊃ ÇOCUK** | **2** (`onkoloji/onkolojik-aciller` iki çocuğunu birden) |
+| **İlgili ⊃ EBEVEYN** | **2** |
+
+Bedeli ekranda görünür bir tekrar: çocuk hub hem "Alt Başlıklar"da hem
+"İlgili Konular"da; ebeveyn hem **KIRINTI YOLUNDA** (bu oturumda eklendi)
+hem "İlgili Konular"da.
+
+**Kök uydurulmadı, ölçüldü:** dört konunun dördü de HUB (kendi çocuğu var),
+yani hepsi `merkezler` dalından geliyor — `skorluAdaylar` güvenli, çünkü
+`skor` haritası zaten akrabayı hiç almıyor.
+
+Süzgeç katı kuralla aynı hâle getirildi (`d.slug !== k.parent &&
+d.parent !== k.slug`).
+
+**Doğrulama — ve KRİTİK negatif kontrol:**
+
+| ölçüt | sonra |
+|---|---|
+| İlgili ⊃ çocuk / ebeveyn / kendine | **0 · 0 · 0** |
+| toplam bağ | 1196 → **1194** |
+| anahtar | 408 → 407 |
+| boş liste | 0 |
+| **ÇIKMAZ SOKAK (üç yola birden bakarak)** | **0** |
+
+Son satır şart: son çare dalı zaten ÇIKMAZ SOKAĞI ÖNLEMEK için var,
+dolayısıyla oradan eleme yapmak yeni çıkmazlar üretebilirdi. Üretmedi —
+ilgili listesi kalmayan üç konunun üçünün de çocuğu ya da ebeveyni var.
+
+`ilgili-index --kontrol` (CI kapısı) senkron, `link-denetim` tabanda,
+derleme 622/622.
+
+**Aktarılabilir kural: bir eleme kuralını YEDEK dala da uygula.** Ana yol
+akrabayı eliyordu ve doğru görünüyordu; kusur, aynı listeyi üreten İKİNCİ
+yolun o kuralı bilmemesindeydi. Bu depoda aynı şekil daha önce de çıktı
+(`saydamlik-denetim` çok satırlı `className`i görmüyordu, `payda-denetim`
+tek şık dizisini tanımıyordu): **bir kuralı yazarken, aynı çıktıyı üreten
+kaç yol olduğunu say.**
+
+#### Aynı turda ölçülüp temiz çıkan iki eksen
+
+- **Bölümler arası örtüşme, üretilmiş çıktıdan** (canlı, 40 konu, 161
+  bölüm bağlantısı): "Alt Başlıklar" ve "İleri Okuma" birbirine hiç
+  karışmıyor, kendine bağlantı 0. Bu ikisi aynı listenin bölünmesi olduğu
+  için ayrıklık yapı gereği — ölçüm onu doğruladı.
+- **`/tekrar` oturum kuyruğu**: `dueCards` yalnızca vadesi gelen ya da hiç
+  çalışılmamış kartı alıyor, vadesi geçmişler önce; `again` kartı kuyruk
+  SONUNA taşıyıp aynı oturumda geri getiriyor, öteki dereceler ilerletiyor;
+  tazeleme kipi takvime hiç dokunmuyor. Kusur yok.

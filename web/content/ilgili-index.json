@@ -528,23 +528,23 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "men1-menin-molekuler-gelismeler",
-   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
+   "slug": "adrenal-bez-hastaliklari",
+   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-block-replace",
-   "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
+   "slug": "adrenal-korteks-hastaliklari",
+   "baslik": "Adrenal Korteks Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-mineralokortikoid",
-   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
+   "slug": "adrenal-yetmezlik",
+   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-yan-etkiler",
-   "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri"
+   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
+   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
   }
  ],
  "endokrinoloji/hipofiz-adenomlari": [
@@ -572,8 +572,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipotiroidi-hashimoto-miksoedem",
-   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
+   "slug": "men1-meme-kanseri-tarama",
+   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
   }
  ],
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
@@ -1619,23 +1619,23 @@
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
   {
    "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
-   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
+   "slug": "adrenal-bez-hastaliklari",
+   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-patofizyoloji-klinik",
-   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
+   "slug": "adrenal-korteks-hastaliklari",
+   "baslik": "Adrenal Korteks Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
+   "slug": "adrenal-yetmezlik",
+   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "diyabet-farmakolojik-tedavi",
-   "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
+   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
+   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
   }
  ],
  "endokrinoloji/siadh-avp-fizyolojisi": [
@@ -1843,13 +1843,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "diyabet-farmakolojik-tedavi",
-   "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
+   "slug": "prolaktinoma-yeni-biyobelirtecler",
+   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "erkek-osteoporozu-ana-sayfa",
-   "baslik": "Erkek Osteoporozu"
+   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
+   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -1935,8 +1935,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hiperfosfatemi-CKD",
-   "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
+   "slug": "men1-sendromu",
+   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -3224,13 +3224,6 @@
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
- "genel-dahiliye/kikuchi-fujimoto-sle": [
-  {
-   "brans": "genel-dahiliye",
-   "slug": "lenfadenopati-yaklasimi",
-   "baslik": "Lenfadenopati (LAP)"
-  }
- ],
  "gogus/sarkoidoz-ana": [
   {
    "brans": "endokrinoloji",
@@ -3728,8 +3721,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/hematopoez": [
@@ -4741,23 +4734,23 @@
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
   {
    "brans": "kardiyoloji",
+   "slug": "kalp-yetmezligi",
+   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "pcsk9-inhibitorleri",
-   "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "direncli-hipertansiyon-yeni-nesil",
-   "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler"
   }
  ],
  "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
@@ -4868,8 +4861,8 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
   }
  ],
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
@@ -5521,13 +5514,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "membranoz-nefropati-mn",
-   "baslik": "Membranöz nefropati"
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
   }
  ],
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
@@ -6305,23 +6298,18 @@
  "onkoloji/onkolojik-aciller": [
   {
    "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   },
   {
    "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
