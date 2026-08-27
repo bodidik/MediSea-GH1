@@ -178,7 +178,7 @@ export default function NotePanel() {
         if (!text.trim() && strokes.length === 0) {
           localStorage.removeItem(KEY(pathname));
         } else {
-          localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes }));
+          localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes, at: Date.now() }));
           touchIndex(pathname, pageTitle());
           degistiBildir();
         }

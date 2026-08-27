@@ -227,7 +227,7 @@ export function planImport(text: string): ImportPlan {
   for (const yol of Object.keys(gelen.notes)) {
     if (!mevcut.notes[yol]) {
       yeniNot++;
-    } else if (newerWins(gelen.index[yol]?.at, mevcut.index[yol]?.at)) {
+    } else if (newerWins(notZamani(gelen.notes[yol], gelen.index[yol]), notZamani(mevcut.notes[yol], mevcut.index[yol]))) {
       ezilecekNot++;
     } else {
       atlanacakNot++;
@@ -243,6 +243,27 @@ export function planImport(text: string): ImportPlan {
     ezilecekNot,
     atlanacakNot,
   };
+}
+
+/**
+ * NOTUN önceliğini belirleyen zaman.
+ *
+ * Bir dönem doğrudan `index[yol].at` kullanılıyordu ve o YANLIŞ kaynaktı:
+ * `touchIndex` yalnızca not kaydında değil VURGU kaydında da çalışıyor, yani
+ * damga "bu sayfada bir şey yaptım" demek, "bu notu düzenledim" değil.
+ *
+ * Ölçüldü (canlı arayüzle): B cihazında iki saat önce yazılmış bir not ve
+ * AZ ÖNCE yapılmış bir vurgu varken, A cihazının bir saat önce güncellenmiş
+ * notu birleştirmede ATLANIYORDU — ve panel gerekçeyi "buradaki daha yeni"
+ * diye yazıyordu, oysa buradaki NOT daha eskiydi.
+ *
+ * Artık notun kendi damgası varsa o kullanılıyor. Yoksa (eski kayıtlar)
+ * dizine düşülüyor: davranış geriye dönük olarak aynı kalıyor, yeni yazılan
+ * her not doğru tarafa geçiyor.
+ */
+function notZamani(doc: NoteDoc | undefined, satir: { at?: number } | undefined): number | undefined {
+  if (typeof doc?.at === "number") return doc.at;
+  return satir?.at;
 }
 
 /** Yedektekinin daha yeni olup olmadığı. Zaman bilinmiyorsa mevcut korunur. */
@@ -292,7 +313,7 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
     // notlar: daha yeni olan kazanır
     const notes: Record<string, NoteDoc> = { ...mevcut.notes };
     for (const [yol, doc] of Object.entries(gelen.notes)) {
-      if (!notes[yol] || newerWins(gelen.index[yol]?.at, mevcut.index[yol]?.at)) notes[yol] = doc;
+      if (!notes[yol] || newerWins(notZamani(doc, gelen.index[yol]), notZamani(mevcut.notes[yol], mevcut.index[yol]))) notes[yol] = doc;
     }
 
     // tekrar durumu: en son görülen kazanır

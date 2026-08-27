@@ -17699,3 +17699,56 @@ Belgede "tek karma dosya (`StudyBackup.tsx`)" kayıtlıydı. Bugün ölçüldü:
 commit'lenen blob tekdüze LF, yani depo içeriği temiz — ama **satır bazlı
 her betik bundan etkilenir**: bu oturumda tam bu yüzden 10 dosya yanlış
 yamalanmıştı. Bölerken LF'e göre böl, `\r`yi ayrıca kırp.
+
+### VURGU YAPMAK, ÖTEKİ CİHAZIN YENİ NOTUNU SİLDİRİYORDU — vekil damga
+
+Not birleştirmesi önceliği `index[yol].at` ile veriyordu. O damga notun
+değil **SAYFA ETKİNLİĞİNİN** zamanı: `touchIndex` iki yerden çağrılıyor —
+not kaydı (`NotePanel`) ve **VURGU kaydı** (`ReadingTools`).
+
+> **BEKLENTİ SINANDI.** İlk hipotezim "sayfayı ZİYARET etmek damgayı
+> güncelliyor" idi; `touchIndex` çağrı yerleri sayılınca yanlış çıktı —
+> ziyaret damgaya dokunmuyor. Kusur duruyor ama şekli farklı ve dar.
+
+**Ölçüldü (gerçek arayüzle, canlı import akışı):**
+
+| cihaz | not | dizin damgası |
+|---|---|---|
+| B (yerel) | 2 saat önce yazılmış ESKİ not | **az önce** — çünkü B'de VURGU yapıldı |
+| A (yedek) | 1 saat önce güncellenmiş YENİ not | 1 saat önce |
+
+Birleştirme sonucu: **"ESKI NOT (B cihazi)"** — A'nın yeni notu düştü.
+
+**Panel gerekçeyi de yanlış söylüyordu:** *"1 not atlanacak (buradaki daha
+yeni)."* Buradaki NOT daha eski; yeni olan buradaki VURGU. Kullanıcı
+kendinden emin, somut ve YANLIŞ bir gerekçe okuyup onaylıyor. `pull()`
+tarafında panel hiç yok — orada tamamen sessiz.
+
+**Çare: notun kendi damgası.** `NoteDoc.at` eklendi (isteğe bağlı),
+`NotePanel` kaydederken yazıyor, `notZamani()` önce notun kendi damgasına
+bakıp yoksa dizine düşüyor — yani eski kayıtlarda davranış birebir aynı
+kalıyor ve yeni yazılan her not doğru tarafa geçiyor.
+
+**Doğrulama — ikisi negatif kontrol:**
+
+| senaryo | kazanan | önce |
+|---|---|---|
+| ana vaka (iki notta da damga) | **A YENİ** | B ESKİ |
+| **negatif 1** — eski yedek, damgasız | B ESKİ | aynı (geriye dönük korundu) |
+| **negatif 2** — B'nin notu gerçekten yeni | B YENİ | aynı |
+
+İkinci satır şart: düzeltme "gelen her zaman kazansın" DEĞİL. Üçüncüsü de:
+gerçekten daha yeni olan yerel not hâlâ korunuyor.
+
+**Uçtan uca ayrıca ölçüldü:** gerçek not defterine yazılan bir not depoya
+`at` damgasıyla iniyor (damga makul, dizin damgası da yerinde).
+
+**Panel metni de düzeltildi:** *"(buradaki daha yeni)"* → *"(buradaki
+korunuyor)"*. İkincisi ne olduğunu söylüyor, doğrulanmamış bir SEBEP iddia
+etmiyor — eski notlarda vekil damgaya düşüldüğünde ilk ifade hâlâ yanlış
+olabilirdi.
+
+**Aktarılabilir kural: bir sıralama kararını VEKİL bir damgayla verme.**
+"Sayfada bir şey yaptım" ile "bu kaydı düzenledim" farklı olaylar; ikisini
+tek damgada topladığında, ilgisiz bir eylem ötekinin verisini eliyor. Damga
+kararın verildiği NESNENİN üstünde durmalı.

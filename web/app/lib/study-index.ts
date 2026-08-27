@@ -15,7 +15,23 @@ const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
 const INDEX_KEY = "medisea:index:v1";
 
-export type NoteDoc = { text: string; strokes: { c: string; w: number; p: [number, number, number][] }[] };
+/**
+ * `at` — NOTUN KENDİ düzenleme zamanı.
+ *
+ * Birleştirme bir dönem notun önceliğini `index[yol].at` ile veriyordu, ama
+ * o damga notun değil SAYFA ETKİNLİĞİNİN zamanı: `touchIndex` hem not
+ * kaydında hem VURGU kaydında çalışıyor. Sonuç ölçüldü — bir cihazda vurgu
+ * yapmak, o cihazın ESKİ notunu öteki cihazın YENİ notundan üstün kılıyor
+ * ve yeni not sessizce düşüyordu.
+ *
+ * İsteğe bağlı: alanı olmayan eski notlar dizin damgasına düşer, yani
+ * davranış geriye dönük olarak korunur.
+ */
+export type NoteDoc = {
+  text: string;
+  strokes: { c: string; w: number; p: [number, number, number][] }[];
+  at?: number;
+};
 
 export type StudyEntry = {
   path: string;

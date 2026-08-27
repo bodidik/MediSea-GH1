@@ -227,7 +227,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
                       </>
                     )}
                     {plan.atlanacakNot > 0 && (
-                      <> {plan.atlanacakNot} not atlanacak (buradaki daha yeni).</>
+                      <> {plan.atlanacakNot} not atlanacak (buradaki korunuyor).</>
                     )}
                   </>
                 ) : (
