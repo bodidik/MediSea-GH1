@@ -26,24 +26,38 @@ function kokIcinde(hedef: string, kok: string): boolean {
   return h === k || h.startsWith(k + path.sep);
 }
 
-function findCanonicalFile(slug: string, branch?: string | null): string | null {
+/**
+ * BELİRSİZ SLUG SESSİZCE ÇÖZÜLMEZ.
+ *
+ * Eski sürüm ilk eşleşmeyi döndürüyordu. Ölçüldü: 455 slug'ın 1'i iki
+ * branşta duruyor (`lipid-ezetimibe`) ve HİÇBİR yönetim ekranı `branch`
+ * göndermiyor — üçü de yalnızca `lang` ve `section` gönderiyor. Yani
+ * `readdirSync` sırası karar veriyordu: kardiyoloji sürümü düzenlenemez
+ * durumdaydı ve ona yapılan her düzenleme endokrinoloji dosyasına
+ * yazılıyordu.
+ *
+ * Bu yüzden fonksiyon TEK dosya değil ADAY LİSTESİ döndürüyor; kararı
+ * çağıran veriyor ve birden fazla aday varsa DURUYOR.
+ */
+function canonicalAdaylari(slug: string, branch?: string | null): string[] {
   const canonicalRoot = path.join(process.cwd(), "content", "canonical");
 
   if (branch) {
     const direct = path.join(canonicalRoot, branch, `${slug}.json`);
-    if (kokIcinde(direct, canonicalRoot) && fs.existsSync(direct)) return direct;
+    return kokIcinde(direct, canonicalRoot) && fs.existsSync(direct) ? [direct] : [];
   }
 
-  if (!fs.existsSync(canonicalRoot)) return null;
+  if (!fs.existsSync(canonicalRoot)) return [];
   const branches = fs.readdirSync(canonicalRoot).filter((d) =>
     fs.statSync(path.join(canonicalRoot, d)).isDirectory()
   );
+  const bulunan: string[] = [];
   for (const b of branches) {
     const candidate = path.join(canonicalRoot, b, `${slug}.json`);
     /* `slug` de rota parametresinden geliyor; aynı denetim ona da uygulanır. */
-    if (kokIcinde(candidate, canonicalRoot) && fs.existsSync(candidate)) return candidate;
+    if (kokIcinde(candidate, canonicalRoot) && fs.existsSync(candidate)) bulunan.push(candidate);
   }
-  return null;
+  return bulunan;
 }
 
 export async function GET(req: NextRequest, ctx: { params: Promise<{ slug: string }> }) {
@@ -130,14 +144,31 @@ export async function PUT(
 
   // İçerik Paneli artık ayrı bir backend'e değil, sitenin gerçekten okuduğu
   // content/canonical/{branch}/{slug}.json dosyasına doğrudan yazar.
-  const filePath = findCanonicalFile(slug, branch);
+  const adaylar = canonicalAdaylari(slug, branch);
 
-  if (!filePath) {
+  if (adaylar.length === 0) {
     return Response.json(
       { ok: false, error: `Dosya bulunamadı: ${branch ? `${branch}/` : ""}${slug}.json` },
       { status: 404 }
     );
   }
+
+  /* Belirsizlik sessizce çözülmez: hangi branş olduğu söylenmeden yazmak,
+     kullanıcının düzenlediğini sandığı dosyadan BAŞKASINI değiştirir. */
+  if (adaylar.length > 1) {
+    const branslar = adaylar.map((p) => path.basename(path.dirname(p)));
+    return Response.json(
+      {
+        ok: false,
+        error: `"${slug}" birden fazla branşta var: ${branslar.join(", ")}. ` +
+          `Hangisini düzenlediğinizi ?branch=<branş> ile belirtin.`,
+        branslar,
+      },
+      { status: 409 }
+    );
+  }
+
+  const filePath = adaylar[0];
 
   try {
     const payload = await req.json().catch(() => ({} as any));
