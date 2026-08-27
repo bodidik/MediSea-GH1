@@ -18655,3 +18655,73 @@ ikisi bir daha ayrışamaz. Ölçüldü: `akut-koroner-sendromlar` → yalnızca
 aranıyor). Git Bash'in kök eşlemesi node'a taşınmıyor; ölçüm betiğine dosya
 verirken `C:/Users/...` biçimini kullan. Belgede kayıtlı `/tmp` tuzağının
 aynısı, farklı kök.
+
+### RAPOR İÇERİK SAHİBİNİ İKİNCİ BİR KOPYA YAZMAYA YÖNLENDİRİYORDU — dördüncü asılı sınıfı
+
+`asili-denetim` yetimleri üç sınıfa ayırıyordu; **branşlar arası ebeveyn**
+ayrı bir sınıf olarak hiç ölçülmemişti. Ölçüldü ve bir tane çıktı:
+
+```
+endokrinoloji/lipid-ezetimibe   parent: "lipidoloji-guncel-kilavuz"
+   -> hub KARDİYOLOJİDE ZATEN VAR
+```
+
+Rapor bunu **"hiç yazılmamış üst başlıklar"** listesinde
+`endokrinoloji/lipidoloji-guncel-kilavuz ← 1 konu` diye gösteriyordu. Yani
+tavsiyeye uyan içerik sahibi var olan bir hub'ın **ikinci kopyasını**
+yazardı — ve bu depoda çift başlık zaten kayıtlı bir kusur sınıfı.
+
+Dördüncü sınıf eklendi (çaresi farklı: hub yazmak DEĞİL, konuyu taşımak ya
+da çapraz branşı kabul etmek). Sınıflandırma inceldi, **toplam DEĞİŞMEDİ**:
+
+| sınıf | önce | sonra |
+|---|---|---|
+| ebeveyn var ama gizli | 18 | 18 |
+| ebeveyn adı sapmış (kod onarıyor) | 1 | 1 |
+| **ebeveyn BAŞKA BRANŞTA** | — | **1** |
+| ebeveyn hiç yok | 27 | **26** |
+| **toplam asılı** | **46** | **46** |
+
+Negatif kontrol: sahte hub artık "yazılmamış" listesinde YOK (11 → 10 grup),
+çıkış kodu 0 (kapı değil rapor, davranış değişmedi).
+
+**"26" bir iş listesi olarak da okunabilir hâle geldi:** bu 26 konu
+**10 eksik hub**a bağlanıyor — `kardiyoloji-genel` ← 6 konu ·
+`benign-hematoloji` ← 5 · `nutrisyon-hastaliklari` ← 5 ·
+`farmakoloji-statin-miyopatisi-sams` ← 3 · `anemiler-genel-bakis` ← 2 ve
+beş tekil. Yani iş "27 başlık yaz" değil, **"10 hub yaz"**.
+
+**ÖLÇÜTÜM ÖNCE YANLIŞTI ve belgede kayıtlı kural kurtardı.** Ebeveyn
+çözümlemesini kendim yazdım (`toLocaleLowerCase` + noktalama sadeleştirme)
+ve `akromegali-ve-gigantizm`i "çözülemedi" diye raporladım. Gerçek çözücü
+(`lib/slug-eslestir.ts`) AKSANI da katlıyor (`ö→o`), benimki katlamıyordu.
+Kural: *"bir ölçütü yeniden yazma — uygulamanın kendi ölçütünü OKU."*
+Gerçek modül `node --experimental-strip-types` ile sürüldü.
+
+**İKİ BAĞIMSIZ YÖNTEM UYUŞTU:** gerçek çözücüyle 410 görünür konunun
+**311'inin** ebeveyni çözülüyor — bu, üretilmiş çıktıdan sayılan **311
+kırıntı ata bağlantısıyla** birebir aynı.
+
+#### Yan ölçüm: içerik HTML'inde bağlantı hijyeni — sınıf yok denecek kadar küçük
+
+`link-denetim` iç YOLLARI tarıyor; sayfa içi çapalar, dış bağlantılar ve
+metinsiz bağlantılar hiç ölçülmemişti. 456 dosya tarandı:
+
+| ölçüt | değer |
+|---|---|
+| içerikteki toplam `<a>` | **19** |
+| iç yol | 19 |
+| sayfa içi çapa (`#…`) · KIRIK çapa | 0 · **0** |
+| dış bağlantı | **0** |
+| `target=_blank` + `rel=noopener` yok | **0** |
+| metinsiz (görünmez) bağlantı | **0** |
+| boş `href` · yalnız `#` · `mailto:` | 0 · 0 · 0 |
+
+Yani içerik neredeyse hiç bağlantı taşımıyor — hiyerarşi ve "İlgili Konular"
+gezinmeyi tümüyle üstlenmiş durumda. Dış bağlantı sıfır olduğu için
+`rel="noopener"` sınıfı bu yüzeyde oluşamıyor.
+
+**Ölçüm tuzağı — `/c/...` yolu node'da çözülmüyor**, ikinci kez aynı oturumda:
+`C:\c\Users\...` diye aranıyor. Git Bash'in kök eşlemesi node'a taşınmıyor.
+Ayrıca göreli `import` ile modül çekerken derinlik saymak yerine
+`file:///C:/...` mutlak URL kullanmak daha güvenli.

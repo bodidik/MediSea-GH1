@@ -87,6 +87,7 @@ const asili = gorunur.filter((k) => k.parent && !gorunurAnahtar.has(`${k.brans}/
 
 const gizli = [];
 const sapmis = [];
+const baskaBrans = [];
 const yok = [];
 
 for (const k of asili) {
@@ -96,14 +97,33 @@ for (const k of asili) {
   }
   const hedef = sadelestir(k.parent);
   const eslesen = gorunur.find((x) => x.brans === k.brans && sadelestir(x.slug) === hedef);
-  if (eslesen) sapmis.push({ ...k, gercek: eslesen.slug });
-  else yok.push(k);
+  if (eslesen) { sapmis.push({ ...k, gercek: eslesen.slug }); continue; }
+
+  /* Ebeveyn BAŞKA BRANŞTA olabilir. Ayrı sınıf, çünkü ÇARESİ farklı:
+     "yazılmamış" diyen bir rapor içerik sahibini o hub'ı yeniden yazmaya
+     yönlendirir ve İKİNCİ BİR KOPYA doğar. Ölçüldü: lipid-ezetimibe
+     ebeveynini "lipidoloji-guncel-kilavuz" diye yazmış ve o hub kardiyolojide
+     ZATEN VAR — rapor onu "endokrinoloji/lipidoloji-guncel-kilavuz yazılmamış"
+     diye gösteriyordu. */
+  const disEslesen = gorunur.find((x) => x.brans !== k.brans && sadelestir(x.slug) === hedef);
+  if (disEslesen) { baskaBrans.push({ ...k, gercek: `${disEslesen.brans}/${disEslesen.slug}` }); continue; }
+
+  yok.push(k);
 }
 
 console.log(`görünür konu: ${gorunur.length} | asılı: ${asili.length} (%${((asili.length / gorunur.length) * 100).toFixed(1)})\n`);
 console.log(`1) ebeveyn VAR ama gizli : ${gizli.length}`);
 console.log(`2) ebeveyn adı sapmış    : ${sapmis.length}`);
-console.log(`3) ebeveyn hiç yok       : ${yok.length}`);
+console.log(`3) ebeveyn BAŞKA BRANŞTA : ${baskaBrans.length}`);
+console.log(`4) ebeveyn hiç yok       : ${yok.length}`);
+
+if (baskaBrans.length) {
+  console.log(`
+— ebeveyni başka branşta olanlar — hub YAZILMAMIŞ DEĞİL, başka yerde:`);
+  for (const k of baskaBrans)
+    console.log(`   ${k.brans}/${k.slug}
+       parent: "${k.parent}"  →  gerçek konum: "${k.gercek}"`);
+}
 
 if (sapmis.length) {
   console.log(`\n— adı sapmış olanlar — KOD BUNLARI ZATEN ONARIYOR, elle düzeltme gerekmez:`);
