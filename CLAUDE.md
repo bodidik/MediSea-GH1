@@ -17969,3 +17969,64 @@ durumu iki çağrı arasında zaten yerleşiyor.
 |---|---|
 | not damgası (vekil damga kusuru) | `at` alanı **var**, damga makul |
 | `ilgili-index` akraba elemesi | `onkolojik-aciller` → çocuk bağı **2 → 0** |
+
+### MARKDOWN DIŞA AKTARIMI KAPSAMINI SÖYLEMİYORDU — kayıplılığın yalnızca BİR boyutu yazılıydı
+
+Kullanıcının "notlarımı dışarı al" yolu hiç sürülmemişti. Sürüldü: altı depo
+ailesi tohumlanıp `↓ Markdown indir` tıklandı ve Blob yakalandı
+(`URL.createObjectURL` sarmalanarak — belgede kayıtlı yöntem).
+
+**İçerik tarafı temiz çıktı:**
+
+| ölçüt | sonuç |
+|---|---|
+| iki kayıt da var | ✓ |
+| branş adları çözülmüş | "Hematoloji" · "Endokrinoloji" (slug değil) |
+| vurgular birebir | ✓ (boşluk sadeleştirmesi tasarım gereği) |
+| çok satırlı not | satırlar korunuyor |
+| MIME | `text/markdown;charset=utf-8` |
+
+**Kusur, dosyanın NE OLMADIĞINI söylememesindeydi.** Dışa aktarım kayıplı ve
+bu belgede zaten kayıtlı — ama kayıp boyutlardan yalnızca BİRİ dosyanın
+içinde söyleniyordu:
+
+| kayıp boyut | dosyada anılıyor mu (önce) |
+|---|---|
+| el yazısı çizim | **EVET** — *"(3 çizgilik el yazısı çizim — sayfada saklı)"* |
+| tekrar takvimi | hayır |
+| çalışma günlüğü | hayır |
+| flashcard işaretleri | hayır |
+| kayıpsız yedeğe işaret | hayır |
+
+Yani ilke deponun kendi kodunda zaten uygulanmıştı, üç boyut için
+atlanmıştı. "Markdown indir"e notlarının yedeği diye basan kullanıcı,
+kaybettiğini dosyayı açtığında da öğrenemiyordu — ve **dosya tek başına
+yolculuk ediyor**, arayüzdeki hiçbir açıklama onunla gitmiyor.
+
+**Metin İÇERDİĞİNİ söylüyor, DIŞARIDA KALANI saymıyor.** İçerik kümesini
+`toMarkdown`ın kendisi tanımlıyor; dışarıda kalanlar `Backup` tipinde ve
+oraya alan eklenince bir sayım cümlesi sessizce bayatlardı. (`kartlar` bir
+dönem tam böyle eklenmişti.)
+
+**Doğrulama — dördü negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| kapsam notu | **var** |
+| **negatif** — vurgu metni | duruyor |
+| **negatif** — not metni | duruyor |
+| **negatif** — çizim satırı | duruyor |
+| **negatif** — konu başlığı | duruyor |
+
+İki indirme yolu (`Markdown indir` ve `Yedek al`) ayrıca karşılaştırıldı:
+ikisi de aynı kalıbı kullanıyor (ayrık `<a>` + hemen `revokeObjectURL`),
+yani aralarında bir ayrışma YOK — tek biçim, dokunulmadı.
+
+#### Aynı turda canlı doğrulanan iki düzeltme
+
+| düzeltme | canlıda |
+|---|---|
+| `GET /api/topics` | **401** (önce **405** — yani uç artık var, kapı çalışıyor) |
+| konu sayfasında Türkçe ay | **"10 Haz 2026"** · **"01 Tem 2026"** (önce Jun/Jul) |
+
+Böylece son dört turun dört düzeltmesi de canlıda doğrulanmış oldu.

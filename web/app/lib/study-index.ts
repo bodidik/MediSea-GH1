@@ -216,6 +216,30 @@ export function toMarkdown(entries: StudyEntry[]): string {
     lines.push("---", "");
   }
 
+  /**
+   * KAPSAMI DOSYANIN İÇİNDE SÖYLE — dosya tek başına yolculuk ediyor.
+   *
+   * Bu dışa aktarım kayıplı ve bu belgede zaten kayıtlı. Ama kayıp
+   * boyutlardan yalnızca BİRİ söyleniyordu: el yazısı çizim için satır
+   * içi bir not basılıyor, tekrar takvimi · çalışma günlüğü · flashcard
+   * işaretleri için hiçbir şey.
+   *
+   * Ölçüldü: altı depo ailesi tohumlanıp dışa aktarıldığında üretilen
+   * dosya üçünden hiç söz etmiyordu. "Markdown indir" düğmesine notlarının
+   * yedeği diye basan kullanıcı, kaybettiğini dosyayı açtığında da
+   * öğrenemiyor.
+   *
+   * Metin İÇERDİĞİNİ söylüyor, DIŞARIDA KALANI saymıyor: içerik kümesini
+   * bu fonksiyon tanımlıyor, dışarıda kalanlar ise `Backup` tipinde ve
+   * oraya alan eklenince bu cümle sessizce bayatlardı.
+   */
+  lines.push(
+    "*Bu dosya OKUMAK içindir: yalnızca vurgu metinlerin ve notların burada.*",
+    "*Kayıpsız kopya için Çalışma Alanım'daki \"Yedek al\" (JSON) düğmesini kullan —*",
+    "*el yazısı çizimler, tekrar takvimi ve çalışma günlüğü yalnızca orada taşınır.*",
+    ""
+  );
+
   return lines.join("\n");
 }
 
