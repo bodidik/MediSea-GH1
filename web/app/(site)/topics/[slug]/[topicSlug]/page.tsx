@@ -95,6 +95,39 @@ function uyariBolumuMu(bolum: any): boolean {
   return /^\s*(🤖|⚠️|⚠)/u.test(baslik);
 }
 
+/**
+ * HTML VARLIKLARINI ÇÖZ — bir dönem hepsi BOŞLUKLA değiştiriliyordu.
+ *
+ * `&[a-z]+;` → " " kuralı iki şeyi birden bozuyordu: karakteri siliyor
+ * (`&ge;` → " ", yani "kalsiyum ≥ 12" → "kalsiyum   12") ve kelimeyi
+ * ikiye bölüyordu (`hasta&apos;nın` → "hasta nın"). Sayısal varlıklar
+ * (`&#60;`) ise hiç ele alınmıyordu.
+ *
+ * İçerikte ölçüldü: **1195 adlı, 10 sayısal** varlık — en sıkları
+ * `&apos;` 263 · `&quot;` 208 · `&lt;` 167 · `&ge;` 161.
+ *
+ * Gövde `dangerouslySetInnerHTML` ile basıldığı için EKRANDA doğru
+ * görünüyordu; kusur yalnızca buradan üretilen meta açıklamada — yani
+ * arama sonucunda görünen metinde.
+ *
+ * Tanınmayan adlı varlık BOŞLUKLA değil KALDIRILARAK atılıyor: boşluk
+ * kelimeyi ikiye bölüyor, kaldırma en fazla bir karakter eksiltiyor.
+ */
+const VARLIK: Record<string, string> = {
+  apos: "'", quot: '"', amp: "&", lt: "<", gt: ">", nbsp: " ",
+  ge: "≥", le: "≤", plusmn: "±", times: "×", cong: "≅", plus: "+",
+  percnt: "%", deg: "°", micro: "µ", mu: "μ",
+  alpha: "α", beta: "β", gamma: "γ", kappa: "κ",
+  bull: "•", middot: "·", rarr: "→", ndash: "–", mdash: "—",
+};
+
+function varlikCoz(s: string): string {
+  return s
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&([a-zA-Z]+);/g, (_, ad) => VARLIK[ad.toLowerCase()] ?? "");
+}
+
 function ozetCikar(veri: any, sinir = 155): string {
   const hazir = veri?.summary || veri?.meta?.summary;
   const kaynak =
@@ -106,10 +139,27 @@ function ozetCikar(veri: any, sinir = 155): string {
           .join(" ")
       : "");
 
-  const duz = String(kaynak)
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&[a-z]+;/gi, " ")
+  /*
+   * SIRA ÖNEMLİ: önce ETİKET, sonra VARLIK.
+   *
+   * Ters sırada `&lt;` önce "<" olur ve etiket süzgeci ondan sonraki metni
+   * yer. İçerikte 167 `&lt;` ve 139 `&gt;` var, yani bu kuramsal değil.
+   */
+  const duz = varlikCoz(String(kaynak).replace(/<[^>]+>/g, " "))
     .replace(/\s+/g, " ")
+    /*
+     * ETİKET BOŞLUKLA DEĞİŞTİRİLİYOR ve noktalamadan önce boşluk bırakıyor.
+     *
+     * Ölçüldü (canlı, 25 konu): açıklamaların **5'i** böyleydi —
+     * "Primer Adrenal Yetmezlik (Addison Hastalığı) , adrenal korteksin…"
+     * Kaynak `<strong>…</strong>, adrenal` ve süzgeç etiketin yerine boşluk
+     * koyuyor. Arama sonucunda görünen metin bu.
+     *
+     * Yalnızca Türkçede ÖNÜNE boşluk almayan işaretler düzeltiliyor; `%`
+     * bilerek DIŞARIDA (Türkçede sayıdan önce gelir: "%20").
+     */
+    .replace(/\s+([,.;:!?)])/g, "$1")
+    .replace(/(\()\s+/g, "$1")
     .trim();
 
   if (duz.length <= sinir) return duz;

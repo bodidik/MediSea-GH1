@@ -18241,3 +18241,59 @@ ayracı hesaba katmalı.**
 
 Branş rozetleri canlıda **1,2,3,…** — ham `order` yerine gerçek sıra konumu
 basılıyor, yetim bölümü `•` korunmuş.
+
+### META AÇIKLAMA HTML VARLIKLARINI BOŞLUĞA ÇEVİRİYORDU — arama sonucunda görünen metin
+
+Konu sayfasının `description`ı `ozetCikar` ile üretiliyor ve iki kuralı vardı:
+etiketleri **boşlukla**, adlı varlıkları da **boşlukla** değiştir. Sayısal
+varlıklar (`&#60;`) hiç ele alınmıyordu.
+
+**Kapsam önce ölçüldü:** 410 görünür konunun yalnızca **10'unda** `summary`
+alanı dolu — yani 400 açıklama doğrudan GÖVDEDEN üretiliyor, ve gövdede
+**1195 adlı + 10 sayısal** varlık var (`&apos;` 263 · `&quot;` 208 ·
+`&lt;` 167 · `&ge;` 161 …).
+
+**Canlıda ölçüldü — 25 konunun 5'i (%20):**
+
+```
+Primer Adrenal Yetmezlik (Addison Hastalığı) , adrenal korteksin…
+                                            ^ noktalamadan önce boşluk
+```
+
+Kaynağı `<strong>…</strong>,` — etiketin yerine boşluk konuyor. Varlık
+tarafında iki ayrı bozulma: karakter siliniyor (`&ge;` → " ", yani
+"kalsiyum ≥ 12" → "kalsiyum   12") ve kelime ikiye bölünüyor
+(`%90&apos;ını` → "%90 ını").
+
+**Gövde ETKİLENMİYOR** — o `dangerouslySetInnerHTML` ile basıldığı için
+varlıklar ekranda doğru görünüyordu. Kusur yalnızca arama sonucunda
+görünen metindeydi.
+
+**SIRA ÖNEMLİ: önce etiket, sonra varlık.** Ters sırada `&lt;` "<" olur ve
+etiket süzgeci ondan sonraki metni yer — içerikte 167 `&lt;` var, yani
+kuramsal değil. Tanınmayan adlı varlık boşlukla değil KALDIRILARAK atılıyor
+(boşluk kelimeyi böler, kaldırma en fazla bir karakter eksiltir). `%`
+bilerek boşluk düzeltmesinin dışında: Türkçede sayıdan ÖNCE gelir.
+
+**Doğrulama — üretilmiş çıktının tamamı (423 açıklama):**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| noktalama öncesi boşluk | **5 / 25 (%20)** | **0 / 423** |
+| varlık kalıntısı | — | 0 |
+| boş açıklama | — | 0 |
+| çözülmüş uzunluk | — | min 29 · ortanca 151 · **max 155** (sınır korunuyor) |
+| **kesme/tırnak taşıyan açıklama** | 0 (hepsi boşluğa dönüyordu) | **75** |
+| özel karakter taşıyan (≥ ± β µ …) | 0 | 5 |
+| örnek | `%90 ını oluşturur` | **`%90'ını oluşturur`** |
+
+#### ⚠ Ölçüm tuzağı: HTML-KAÇIŞLI biçimi ölçmek
+
+İlk uzunluk ölçümü **max 171** dedi ve kırpma sınırının (155+1) delindiği
+sanıldı. Sebep: `content="…"` niteliğinde `"` → `&quot;`, `'` → `&#39;`
+olarak kaçıyor ve uzunluğu şişiriyor. Kaçışlar çözülünce max **155**.
+
+Üstelik bu şişme DÜZELTMENİN KENDİ SONUCU: tırnak ve kesme işaretleri artık
+açıklamada gerçekten yer alıyor (önce boşluğa dönüyorlardı). **Bir metni
+ölçerken hangi temsili okuduğunu sor** — ham HTML niteliği, çözülmüş metin
+değildir.
