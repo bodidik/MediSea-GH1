@@ -18083,3 +18083,62 @@ uğrayan çağrının yan etkisi · şimdi öteki origin). Ölçüm bitiminde
 **Panel açıkken yapılan temizlik kalıcı değil** (belgede kayıtlı): bileşen
 bellekteki listeyi geri yazıyor. Bu turda gezinme sonrası yeniden sayıldı —
 **0 anahtar**.
+
+### KIRINTI ŞEMASI DOĞRULANDI — 34 sayfa · 148 adım · kusur 0
+
+Bu oturumda kırıntı İKİ kez değiştirildi (konu sayfasına ATA adımı eklendi,
+araç şemasının kökü "Klinik Araçlar"dan "MediSea"ya çevrildi). Bir gerileme
+burada kendi işim olurdu; canlıda ölçüldü.
+
+| ölçüt | sonuç |
+|---|---|
+| kırıntı şeması olan sayfa | **34 / 34** |
+| toplam adım | 148 |
+| `position` 1..n boşluksuz | ✓ |
+| `item` mutlak ve üretim alan adında | ✓ |
+| boş `name` | 0 |
+| **kök adı** | **"MediSea" ×34** — tekleştirme üç sayfa türünde de indi |
+
+**"Şema ↔ görünen iz aynı" kontrolü GERÇEKTEN çalıştı** — sayfa türü başına
+ayrıca doğrulandı, yoksa tool sayfalarında `null` dönüp sessizce atlanabilirdi:
+
+| sayfa | şema | görünen |
+|---|---|---|
+| atası olan konu | 5 | **5** (MediSea / Kütüphane / Endokrinoloji / **Adrenal Yetmezlik** / Addison) |
+| atası olmayan konu | 4 | 4 |
+| branş | 3 | 3 |
+| araç | 3 | **yok** — belgede kayıtlı tasarım (çip çubuğu, iz değil) |
+
+### ADRES DAYANIKLILIĞI ÖLÇÜLDÜ — tek açık BÜYÜK HARF, ve "küçük harfe çevir" ÇAREYİ BOZAR
+
+Paylaşılan bağlantılar sık mangalanıyor; bu yüzey hiç ölçülmemişti.
+
+| istenen | sonuç |
+|---|---|
+| `/tools/bmi/` (sondaki eğik) | **308** → kanonik |
+| `//tools/bmi` (çift eğik) | **308** → kanonik |
+| `?utm_source=x` | 200 |
+| `#bolum` | 200 |
+| **`/tools/BMI`** | **404** |
+| **`/topics/Endokrinoloji/addison`** | **404** |
+
+**DEĞİŞTİRİLMEDİ — ve gerekçe ölçüldü.** Akla ilk gelen çare (middleware'de
+adresi küçük harfe çevirip yönlendirmek) bu depoda **10 konuyu birden
+kırardı**: slug'ların 10'u bilerek büyük harf taşıyor —
+`hematoloji/FL-t1(4-18)` · `nefroloji/FGF-23 vs PTH` ·
+`enfeksiyon/dalbavansin-VISA-VRSA` · `endokrinoloji/hiperfosfatemi-CKD` …
+
+Araç tarafında büyük harfli slug **0**, yani `/tools/*` güvenle
+küçültülebilirdi — ama yalnızca bir tarafa kural koymak kendi başına bir
+tutarsızlık olurdu.
+
+Doğru çare gerçek slug kümesine karşı **büyük/küçük harf duyarsız arama**
+(456 kayıtlık bir eşleme) — ölçülmüş bir kusur değil, öngörülen bir risk için
+fazla makine. Ölçüm ve gerekçe burada; biri ileride naif bir küçültme
+yönlendirmesi eklemesin diye yazıldı.
+
+#### Aynı turda canlı doğrulanan düzeltme
+
+Markdown dışa aktarımının kapsam notu **canlıda**: dosyanın son satırı
+*"el yazısı çizimler, tekrar takvimi ve çalışma günlüğü yalnızca orada
+taşınır."* — ve negatif kontrol olarak vurgu ile not metni yerinde duruyor.
