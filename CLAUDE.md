@@ -16779,3 +16779,76 @@ Otomatik kapatmanın önündeki gerçek engel şu: dipnottaki eşiğin
 karşılaştırılması gereken şey, aracın **manşet olarak bastığı sayının
 tavanı** — ve o sayı çoğu araçta ancak aracı SÜREREK bulunuyor. `rts` de
 zaten taramayla değil, aracı açarak bulundu.
+
+### HESAPLAYICI SONUCU EKRAN OKUYUCUYA HİÇ DUYURULMUYORDU — 130 aracın 130'u
+
+Belgede arama kutusunun canlı bölgesi kayıtlı; aynı eksen **araçlara hiç
+sürülmemişti**. Sürüldü:
+
+| ölçüt | araç |
+|---|---|
+| `role="alert"` taşıyan | 21 |
+| `role="status"` taşıyan | 22 |
+| `aria-live` taşıyan | **0** |
+| **sonucu DUYURAN** | **0 / 130** |
+
+Yani ekran okuyucuyla çalışan biri değer giriyor, ekranda skor ve bant
+çiziliyor, **hiçbir şey duyulmuyordu.**
+
+**42'si asimetrikti ve bu kendi açtığım tutarsızlıktı:** bu oturumda eklediğim
+sebep kartları (`role="alert"`) konuşuyor, SONUÇ susuyordu. Kalan 88'inde
+hiçbir canlı bölge yoktu.
+
+`app/tools/components/SonucDuyuru.tsx` — **koşulsuz** render edilen `sr-only`
+`role="status"`. Koşulsuz olması şart (belgede kayıtlı kural: `status` içerik
+değişmeden ÖNCE DOM'da bulunmalı); `alert` değil, çünkü sonuç acil bir
+kesinti değil.
+
+**YALNIZCA BANT ETİKETİ duyuruluyor, SAYI değil — ve bu bilinçli.** Serbest
+sayısal alanda skor HER TUŞ VURUŞUNDA değişiyor; sayıyı duyurmak "1", "1.",
+"1.2" diye gürültü üretirdi. Bant etiketi ancak eşik geçilince değişiyor ve
+metin aynı kaldığı sürece okuyucu yeniden duyurmuyor — hem anlamlı hem sessiz.
+
+**KAPSAM DAR VE ÖLÇÜLÜ:** yalnızca iki KATI ŞEKİL süpürüldü
+(`{result && (` → 8 araç, `{<skor> !== null && band && (c|colors) ? (` →
+23 araç). Kalan **99 araç** farklı şekiller taşıyor, mekanik süpürmeye uygun
+değil ve **"temiz" DENMİYOR**.
+
+#### ⚠ SÜPÜRME İLK TURDA 29 DOSYANIN 10'UNU YANLIŞ YERE YAMALADI — kapılar 8'ini GÖRMEDİ
+
+Kusur benim yorum maskemdeydi: blok yorumlar `m.replace(/[^\n]/g, " ")` ile
+boşaltılıyordu ve bu **`\r` karakterini de siliyor**. CRLF bir dosyada
+`temiz.split("\r\n")` daha AZ satır üretiyor (yorumun içindeki satırlar
+birleşiyor), yani `temiz` üzerinden bulunan indeks `ham` üzerinde **kayıyor** —
+kayma, o noktaya kadarki çok satırlı blok yorum satırı sayısı kadar
+(`must` 5, `apache2` 38).
+
+Belgede zaten kayıtlıydı: *"maske satır sonlarını KORUMALI"* — ve kuralı yazan
+oturum kuralı yeniden çiğnedi.
+
+**Asıl ders yakalamada:** `lint` ve `typecheck` yalnızca **2**'sini yakaladı
+(JSX tek-çocuk kuralını bozanlar). Kalan **8 yanlış yerleşim geçerli JSX**
+üretiyordu ve kapılardan geçti. Onları yalnızca **bağımsız bir yerleşim
+denetimi** gösterdi: *duyuru satırının HEMEN ARDINDAN beklenen açılış geliyor
+mu?* — 19 doğru, 10 yanlış.
+
+Süpürücü artık iki korumayı birden taşıyor: maske satır sonlarını koruyor
+**ve** yazdıktan sonra dosyayı yeniden okuyup yerleşimi doğruluyor; tutmuyorsa
+dosyayı GERİ ALIYOR. Yeniden sürüldüğünde **31/31 doğru**.
+
+**Aktarılabilir kural: toplu bir yerleştirmeyi kapılarla doğrulama.** Kapılar
+sözdizimini sınıyor, YERLEŞİMİ değil — ve bu depoda mekanik süpürmelerin
+kusuru neredeyse her zaman yerleşimde oluyor. Yerleştirmenin kendi arama
+mantığından BAĞIMSIZ bir sayım şart (belgedeki *"doğrulama betiği, doğruladığı
+betiğin hatasını PAYLAŞMAMALI"* kuralının süpürme tarafı).
+
+#### İkinci ölçüm tuzağı: doğrulamam DÖNGÜSELDİ
+
+"Duyuru ekrandaki bantla aynı mı" ölçümünde görünür bandı *en büyük yazı*
+diye seçtim; `sr-only` duyurunun yazı boyutu (16px) rozetinkinden (9px)
+büyük olduğu için ölçüm **duyurunun kendisini** okudu ve elbette eşleşti.
+`sr-only` elenince bağımsız okuma çıktı: duyuru `"Sonuç: ORTA RİSK"`,
+görünür rozet `"ORTA RİSK @9px"` — birebir.
+
+**Bir duyuruyu ekranla karşılaştırırken duyuruyu ölçümden ELE**; yoksa
+karşılaştırma kendini doğrular.
