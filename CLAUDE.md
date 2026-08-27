@@ -18934,3 +18934,53 @@ değişmeden ÖNCE DOM'da bulunmak zorunda (belgedeki kural). Sonuç bloğu
 
 Sıfır durum metni de zaten dürüsttü ("Farklı bir terim dene ya da aşağıdan
 branşa göz at") — eksik olan yalnızca duyuruydu.
+
+### KENDİ SÜPÜRMEMİN KAÇIRDIĞI KOPYA — not TEMİZLEME senkrona hiç bildirilmiyordu
+
+Yıkıcı eylemler envanteri çıkarıldı: depoya silme yazan **15 nokta**. Onüçü
+temiz — kullanıcıya dönük her silme onaylı (`purge` ve iki kurtarma yolu
+`confirm` istiyor), kalanlar kütüphane içi ya da OTOMATİK temizlik:
+
+| nokta | neden meşru |
+|---|---|
+| `NotePanel` `removeItem` | not BOŞALINCA anahtarı kaldırıyor |
+| `QuizEngine` `removeItem` | set BİTİNCE ilerlemeyi siliyor (yorumu, "son soruya geçerken siliyordu" kusurunu kaydediyor) |
+| `reading-marks` `removeItem` | son vurgu kalkınca anahtarı kaldırıyor |
+
+**Ama envanteri okurken bir kopya eksiği göründü** ve o benim daha önceki
+süpürmemden kalmıştı. `NotePanel`in kaydetme etkisi iki dallı:
+
+```
+if (not BOS)  removeItem(...)                    <- degistiBildir() YOKTU
+else          setItem(...) + touchIndex + degistiBildir()
+```
+
+Kardeş yazıcı `reading-marks.saveMarks` `degistiBildir()`i **iki dalın da
+ARDINDAN** çağırıyor; buradaki tek fark unutulmuş bir kopyaydı.
+
+**Bedeli tek yönlü ve bu depoda zaten kayıtlı:** senkron birleştirmesi
+hiçbir şeyi SİLMİYOR. Sunucuya bildirilmeyen bir silme, bir sonraki
+uzlaşmada notu GERİ GETİRİYOR — yani oturum açmış kullanıcı notunu
+temizliyor, not geri geliyor.
+
+**A/B ile ölçüldü — kaynak iddiası değil, DAVRANIŞ:**
+
+| ortam | not yazma | not TEMİZLEME |
+|---|---|---|
+| **canlı (eski kod)** | 1 olay | **0 olay** |
+| **yerel (düzeltilmiş)** | 1 olay | **1 olay** |
+
+Ek ölçütler: temizlemeden sonra not anahtarı gerçekten siliniyor, olay tam
+**bir** kez atılıyor (çift duyuru yok) ve `medisea:index:v1` KORUNUYOR.
+
+**`dropFromIndex` BİLEREK çağrılmıyor:** aynı sayfada vurgular duruyor
+olabilir ve dizin kaydı onlara da hizmet ediyor.
+
+**Aktarılabilir kural: bir yan etkiyi (duyuru, günlük, ölçüm) eklerken
+fonksiyonun KAÇ DALI olduğunu say.** Bu depoda "kopyayı say" kuralı dosya
+düzeyinde defalarca işledi; burada kopya aynı fonksiyonun ikinci dalıydı ve
+tek dala bakan bir gözden geçirme onu göremezdi.
+
+**Ölçüm izi:** hem test sunucusunda hem CANLI origin'de `medisea:*` silindi
+ve **yeniden yükledikten sonra 0** olduğu doğrulandı (bileşen kuruluyken
+yapılan silme kalıcı değil — belgede kayıtlı tuzak).

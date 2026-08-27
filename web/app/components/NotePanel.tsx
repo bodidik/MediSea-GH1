@@ -180,8 +180,16 @@ export default function NotePanel() {
         } else {
           localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes, at: Date.now() }));
           touchIndex(pathname, pageTitle());
-          degistiBildir();
         }
+        /* SİLME dalı da duyurulmalı — bir dönem yalnızca kaydetme dalı
+           duyuruyordu. Bedeli tek yönlü: senkron birleştirmesi hiçbir şeyi
+           SİLMİYOR, yani sunucuya ulaşmayan bir silme bir sonraki uzlaşmada
+           notu GERİ GETİRİYOR. Kardeş yazıcı (reading-marks.saveMarks) iki
+           dalı da duyuruyor; buradaki tek fark unutulmuş bir kopyaydı.
+
+           `dropFromIndex` BİLEREK çağrılmıyor: aynı sayfada vurgular
+           duruyor olabilir ve dizin kaydı onlara da hizmet ediyor. */
+        degistiBildir();
       } catch {
         // Depo dolu. SESSİZCE GEÇMEK YASAK: aşağıda "Kaydedildi" yazan bir
         // başlık var; hata yutulursa kullanıcıya notu güvendeymiş gibi
