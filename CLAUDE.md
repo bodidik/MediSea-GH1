@@ -16920,3 +16920,34 @@ değişiklik onu sessizce bozar:
 
 Üçüncüsü en yakın risk: `params` 111 çağrı yerinden geçiyor ve yalnızca
 `url.search = ""` satırı onu tutuyor.
+
+#### Bu durum artık NÖBETLİ — `scripts/sizinti-denetim.cjs`
+
+Ölçülmüş bir durumu korumanın deponun kendi idiomu: nöbetçiye çevir.
+Denetim dört şeyi birden tarıyor (araçlarda ağ · depo · adres çubuğu, artı
+depo genelinde üçüncü taraf ölçümleme) ve `ToolShare`in sorguyu hâlâ silip
+silmediğini ayrıca doğruluyor.
+
+**CI kapısı DEĞİL, rapor** — meşru bir istisna gerekebilir (bir aracın
+sunucudan referans tablosu çekmesi gibi).
+
+| kontrol | sonuç |
+|---|---|
+| negatif (kirli tohum) | **3/3 kanal** yakalandı |
+| pozitif (temiz tohum) | 0 bulgu — yorumdaki `fetch(`/`localStorage`/`pushState` **sayılmıyor** |
+| `ToolShare` koruması kaldırılınca | yakalandı |
+| boş ağaca yönlendirilince | *"HİÇ ÖLÇÜLMEDİ — temiz DEĞİL"* |
+| gerçek depo | 271 araç + 538 depo dosyası, dört kanal da **0** |
+
+**Meta teste kaydederken kayıt SAHTE OLMASIN diye üç şey birden gerekti:**
+listeye giriş, TOHUM'un yorum bloğunda sızıntı şekilleri, ve **ÜÇÜNCÜ ağaç
+şekli** `<kök>/app/tools/<araç>/page.tsx` — bu denetim yalnızca orayı tarıyor
+ve mevcut iki şekil (`<kök>/<araç>` ve `<kök>/app/**`) ona hiçbir dosya
+vermiyordu; raporu "0 ölçüldü" derdi ve meta test onu sınamış sayılırdı.
+
+Belgede aynı ders zaten kayıtlıydı: meta testin kendi tohumu bir kez eksik
+çıkmış ve `arayuz-denetim` tohumda sıfır öge ölçüp "temiz" görünmüştü.
+**Bir denetimi listeye eklemek, onu SINANIR yapmıyor — tohumun o denetimin
+beklediği ağaç şeklini ve şekilleri taşıdığını ayrıca doğrula.**
+
+Meta test şimdi 15 denetim sürüyor ve 15'i de temiz.
