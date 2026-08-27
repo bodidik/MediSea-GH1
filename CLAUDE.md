@@ -18984,3 +18984,57 @@ tek dala bakan bir gözden geçirme onu göremezdi.
 **Ölçüm izi:** hem test sunucusunda hem CANLI origin'de `medisea:*` silindi
 ve **yeniden yükledikten sonra 0** olduğu doğrulandı (bileşen kuruluyken
 yapılan silme kalıcı değil — belgede kayıtlı tuzak).
+
+### SIZINTI DENETİMİ KENDİ İDDİASINDAN DARDI — ve körlüğü BENİM düzeltmem açtı
+
+Yıkıcı eylem envanteri temiz çıktı: depoya silme yazan **15 noktanın**
+kullanıcıya dönük olanlarının hepsi `confirm` istiyor, kalanlar otomatik
+temizlik (not boşalınca, quiz bitince, son vurgu kalkınca).
+
+Yan ölçüm — **hayalet kart sınıfı YOK**: son vurgu kaldırılınca vurgu
+anahtarı siliniyor ama dizin kaydı duruyor. Tohumlandı (gerçek şemayla:
+`{ [yol]: { title, at } }`) ve `/calisma-alanim` **boş durumu** gösterdi:
+`collectAll` kayıtları dizinden değil vurgu/not ANAHTARLARINDAN kuruyor,
+yani bayat dizin kaydı hiçbir şey üretmiyor.
+
+#### Asıl bulgu: denetimin kapsamı
+
+`sizinti-denetim` "araç sayfalarında kalıcı depolama: **0**" diyordu ve bu
+artık DOĞRU DEĞİLDİ. Geçen turda "Geri" düğmesini düzeltirken
+`app/lib/gecmis.ts` (sessionStorage) iki araç yüzeyine bağlandı; denetim
+yalnızca `app/tools/**` içindeki **doğrudan** çağrıları taradığı için
+sessiz kaldı.
+
+İçerik zararsız (bir tam sayı — oturumun ilk geçmiş uzunluğu), ama raporun
+İDDİASI ölçtüğünden genişti. Bu depoda tekrar eden kusur sınıfı, bu kez
+denetimin kendisinde ve **tetikleyen benim değişikliğimdi**.
+
+Denetim artık araç dosyalarının içe aktardığı YEREL modülleri bir düzey
+açıyor:
+
+| kova | sayı |
+|---|---|
+| doğrudan ağ · depo · adres çubuğu | 0 · 0 · 0 |
+| **DOLAYLI depo/ağ erişimi** | **6 satır** — iki araç yüzeyinden `gecmis.ts`e |
+| üçüncü taraf ölçümleme | 0 |
+
+**Kusur SAYILMIYOR, raporlanıyor** — içeriği ayrı bir karar. Ama kapanış
+satırı da hizalandı: bu depoda bir rapor kuyrukta "temiz" derken gövdesinde
+27 kırık adres sayıyordu (`link-denetim`), o yüzden kuyruk artık dolaylı
+sayıyı da yazıyor.
+
+**Yeni kovanın KENDİ kontrolü var** — yoksa "0 dolaylı" körlükten de
+gelebilirdi. Tohumda bir araç sayfası, depoya dokunan yerel bir yardımcıyı
+içe aktarıyor:
+
+| kontrol | sonuç |
+|---|---|
+| negatif (kirli tohum) | 3 bulgu, **3/3 kanal** |
+| pozitif (temiz tohum) | 0 bulgu |
+| **dolaylı (içe aktarma tohumu)** | **1 bulgu** |
+| ToolShare koruması kaldırılınca | yakalandı |
+
+**Ölçüm/yazma tuzağı — ters bölü heredoc'ta yine düştü.** `/\/g` yazılan
+regex dosyaya `/\/g` olarak indi ve `SyntaxError` verdi. Çare kaçışı hiç
+yazmamak: `String.fromCharCode(92)` ve `/from +["']…/` gibi backslash
+içermeyen desenler. Bu oturumda ikinci kez.
