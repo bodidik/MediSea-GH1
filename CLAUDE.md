@@ -17091,3 +17091,54 @@ KARMA.
 Bu ölçütle depoda **tek karma dosya** bulundu (`StudyBackup.tsx`, iki satır)
 ve o da **zararsız**: `core.autocrlf=true` ve commit edilmiş blob tekdüze LF
 (CR=0). Yani karma durum yalnızca çalışma kopyasında; depo içeriği temiz.
+
+### "undefined" ekrana sızıyor mu — tarandı, temiz
+
+"Değer yok"un üçüncü biçimi. React `{x}` içinde `undefined` basmaz ama
+**şablon dizesi basar** (`${undefined}` → "undefined"), ve bu depoda
+`tsconfig` `strict: false` olduğu için tip denetimi bunu yakalamıyor.
+
+Ölçüt: ekrana giden bir şablon dizesinde `undefined` olabilen ifade
+(`?.` · dizi indeksi · `.find(`). 436 tsx · 1373 şablon satırı · **9 aday**.
+
+Sekizi sabit veri (`SINIRLAR.albumin[0]`, `TUZLAR[s].mmolPerMl`,
+`ilac.olagan[0]` gibi — hepsi tanımlı). Dokuzuncusu gerçek görünüyordu:
+
+```tsx
+{etohContrib !== null && ` + Etanol ${etohContrib.toFixed(1)} = ${calcOsmFull?.toFixed(1)}`}
+```
+
+`calcOsmFull` null olabiliyor (`calcOsm` null iken `etohContrib` dolu
+olabilir), yani `?.` → `undefined` → ekranda "undefined". **Ama blok
+`{calcOsm !== null && (` ile kapılı** ve o kapının içinde `etohContrib`
+non-null ise `calcOsmFull = calcOsm + etohContrib` — non-null. Yani `?.`
+savunmacı ama **ulaşılmaz**; kusur değil.
+
+Sınıf temiz: gerçek sızıntı **0**.
+
+### BU OTURUMUN DÜZELTMELERİ CANLIDA DOĞRULANDI — beşi indi, biri kuyrukta
+
+| düzeltme | canlıda ölçülen |
+|---|---|
+| `cdai` üst sınır | 999×4 → **skor YOK** + sebep kartı "TJC (0–28)…" |
+| `dapsa` üst sınır | SJC 660 → sonuç yok + sebep; **negatif** 3/2/2/2/0.5 → **9.5** |
+| `rts` T-RTS | kodlar 4/4/4 → **"12 / 12"**, yeni dipnot VAR, eski dipnot **YOK** |
+| sonuç duyurusu (31 araç) | `rts` **"Sonuç: HAFİF"** · `dapsa` **"Sonuç: DÜŞÜK AKTİVİTE"** |
+| tarih koruması | bozuk damgalı yedek → **"Invalid Date" YOK**, sayılar duruyor |
+| **`ktv` NaN** | **HENÜZ İNMEDİ** — son commit, dağıtım gecikmesi |
+
+#### ⚠ DAĞITIM YOKLAMASINDA AYNI TUZAĞA ÜÇ KEZ DÜŞÜLDÜ
+
+İlk yoklama sunucu HTML'inde `"Hesaplanamıyor"`, `"Ham kod toplamı"`,
+`"Daugirdas II tanımsız"` aradı ve **beşi de "inmemiş"** dedi — oysa üçü
+inmişti. Sebep belgede zaten iki kez kayıtlı:
+
+1. Bu dizeler **koşullu** render ediliyor; ilk HTML'de bulunmazlar.
+2. İstemci bileşeninin dizeleri **JS parçasında** durur, HTML'de değil.
+
+Sonra `?zz=` ile önbellek atlatılmaya çalışıldı: Vercel statik sayfada
+sorgu dizesini yok sayıyor, yanıt yine `x-vercel-cache: HIT`.
+
+**Çalışan tek yöntem DAVRANIŞ:** aracı sür, sonucu oku. `cdai` ve `ktv`
+aynı önbellekli derlemeden geliyor; cdai düzeltilmiş davranıyor, ktv
+davranmıyor — yani cephe ikisinin arasında ve `ktv` kuyrukta.
