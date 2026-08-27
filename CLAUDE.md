@@ -18725,3 +18725,59 @@ gezinmeyi tümüyle üstlenmiş durumda. Dış bağlantı sıfır olduğu için
 `C:\c\Users\...` diye aranıyor. Git Bash'in kök eşlemesi node'a taşınmıyor.
 Ayrıca göreli `import` ile modül çekerken derinlik saymak yerine
 `file:///C:/...` mutlak URL kullanmak daha güvenli.
+
+### DÖRT BRANŞTA "DİĞER KONULAR" KOVASI KÜRATÖRLÜ LİSTEDEN BÜYÜK
+
+Geçen turun 26 yetiminin kullanıcıya bedeli ölçüldü. Branş sayfası **üst
+düzey + yetim** listeliyor; kova küratörlü listeden büyükse hiyerarşi fiilen
+tersine dönmüş demektir:
+
+| branş | görünür | üst düzey | YETİM | çocuk |
+|---|---|---|---|---|
+| **gastroenteroloji** | 34 | **2** | **13** | 19 |
+| **klinik-nütrisyon** | 9 | **1** | **5** | 3 |
+| **kardiyoloji** | 35 | **3** | **9** | 23 |
+| **hematoloji** | 79 | **7** | **8** | 64 |
+| endokrinoloji | 116 | 10 | 8 | 98 |
+| nefroloji | 47 | 9 | 2 | 36 |
+| kalan 7 branş | — | — | **0** | — |
+| **TOPLAM** | **410** | **54** | **45** | **311** |
+
+Gastroenteroloji açan kullanıcı **2 küratörlü başlık ve 13 "diğer"** görüyor.
+Bu bir KOD kusuru değil — 10 eksik hub'ın (önceki tur) kullanıcı tarafındaki
+ölçüsü. Yedi branşta kova tümüyle boş, yani mekanizma da doğru çalışıyor.
+
+#### Düzeltilen: yetim kartı çocuk sayısını SÖYLEMİYORDU
+
+İki liste aynı veriyi gösteriyor ama kova kartı `childCounts` rozetini
+taşımıyordu. Ölçüldü: 45 yetimin **2'si** çocuk taşıyor —
+`nefroloji/diuretikler` **4**, `hematoloji/trombosit-hastaliklari-genel-bakis`
+**2**. Yani "Klinik Farmakoloji: Diüretikler" kartı dört alt başlık
+içerdiğini söylemiyordu; küratörlü kardeşleri söylüyor.
+
+Aynı `childCounts`, aynı gösterim — yeni veri ya da yeni iddia yok.
+
+**Doğrulama üretilmiş çıktıda, üçü negatif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| `diuretikler` (kova) | rozet **4** — önce yok |
+| `trombosit-hastaliklari-genel-bakis` (kova) | rozet **2** — önce yok |
+| **negatif** — öteki 7 kova kartı | rozet **yok** |
+| **negatif** — nefroloji ana liste | 9 kart, 5 rozet — değişmedi |
+| **negatif** — kart sayıları | nefroloji 9+2 · hematoloji 7+8 — içerikle birebir |
+
+#### ⚠ İKİ ÖLÇÜM TUZAĞI, İKİSİ DE BELGEDE KAYITLIYDI VE YİNE VURDU
+
+- **`python - << 'PY'` stdin'de asıldı — bu oturumda ÜÇÜNCÜ kez**, ve bu kez
+  `python … || node …` biçiminde YEDEK olarak yazdığım için. Bu ortamda
+  `python3` YOK ve `python -` hızlı düşmüyor, **beş dakika bloke ediyor**.
+  Kural sertleşiyor: `python -` biçimini yedek olarak bile yazma.
+- **700 karakterlik ölçüm penceresi kart kaybetti.** `<a …>[\s\S]{0,700}?</a>`
+  ile sayınca nefroloji "8 ana + 1 kova" göründü; gerçek sayı **9 + 2**.
+  Rozet EKLENDİĞİ için kart uzamıştı — yani düzeltmenin kendisi ölçütü
+  kırdı ve bir an "yetim render edilmiyor" sanıldı. Sınırsız pencereyle
+  (`<a ` … `</a>` ayırarak) sayı içerikle birebir tuttu.
+
+İkincisi genel bir kural veriyor: **bir düzeltmeden sonra ölçütünü de
+yeniden sına** — düzeltme çıktının şeklini değiştirmiş olabilir.

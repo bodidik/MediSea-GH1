@@ -345,7 +345,13 @@ export default async function BranchListPage({
               </span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
-              {asiliKonular.map((topic) => (
+              {asiliKonular.map((topic) => {
+                /* Yetimin de çocuğu olabilir ve rozet YOKTU: küratörlü kart
+                   "N alt başlık" derken aynı veriye sahip yetim kart susuyordu.
+                   Ölçüldü: 45 yetimin 2'si 6 çocuk taşıyor (diüretikler 4,
+                   trombosit hastalıkları 2). Aynı `childCounts`, aynı gösterim. */
+                const subCount = childCounts[topic.slug] || 0;
+                return (
                 <Link
                   key={topic.slug}
                   href={`/topics/${slug}/${topic.slug}`}
@@ -358,12 +364,18 @@ export default async function BranchListPage({
                     <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">
                       {topic.title}
                     </h3>
+                    {subCount > 0 && (
+                      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">
+                        {subCount} alt başlık
+                      </p>
+                    )}
                   </div>
                   <svg className={`w-4 h-4 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${specialty.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
