@@ -8,12 +8,30 @@ import path from "path";
 
 // content/canonical/{branch}/{slug}.json dosyasını bulur.
 // branch biliniyorsa doğrudan oraya bakar; bilinmiyorsa tüm branşları tarar.
+/**
+ * KAPSAMA DENETİMİ — çözülen yol kökün ALTINDA mı?
+ *
+ * `branch` sorgu dizesinden geliyor, yani tümüyle çağıranın denetiminde.
+ * Ölçüldü: `branch="../.."` + `slug="package"` -> `web/package.json`, ve o
+ * dosya VAR. Uç yalnızca var olan dosyaya yazıyor ama bu onu korumuyordu;
+ * `meta.updatedAt` eklenip geri yazılırdı.
+ *
+ * Çare karakter beyaz listesi DEĞİL: içerik slugları Türkçe karakter ve
+ * boşluk taşıyor (`ascit-sıvısı`, `FGF-23 vs PTH`), ASCII bir liste meşru
+ * konuları reddederdi. Kapsama denetimi karakterden bağımsız ve tam.
+ */
+function kokIcinde(hedef: string, kok: string): boolean {
+  const h = path.resolve(hedef);
+  const k = path.resolve(kok);
+  return h === k || h.startsWith(k + path.sep);
+}
+
 function findCanonicalFile(slug: string, branch?: string | null): string | null {
   const canonicalRoot = path.join(process.cwd(), "content", "canonical");
 
   if (branch) {
     const direct = path.join(canonicalRoot, branch, `${slug}.json`);
-    if (fs.existsSync(direct)) return direct;
+    if (kokIcinde(direct, canonicalRoot) && fs.existsSync(direct)) return direct;
   }
 
   if (!fs.existsSync(canonicalRoot)) return null;
@@ -22,7 +40,8 @@ function findCanonicalFile(slug: string, branch?: string | null): string | null 
   );
   for (const b of branches) {
     const candidate = path.join(canonicalRoot, b, `${slug}.json`);
-    if (fs.existsSync(candidate)) return candidate;
+    /* `slug` de rota parametresinden geliyor; aynı denetim ona da uygulanır. */
+    if (kokIcinde(candidate, canonicalRoot) && fs.existsSync(candidate)) return candidate;
   }
   return null;
 }
