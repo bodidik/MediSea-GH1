@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { aramaEslesir } from "@/app/lib/arama";
+import { siteIciGecmisVar } from "@/app/lib/gecmis";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
 const TOOLS_DATABASE = [
@@ -282,6 +283,10 @@ const TOOLS_DATABASE = [
  */
 export default function ToolsIcerik() {
   const router = useRouter();
+  /* Doğrudan giren kullanıcıda `router.back()` sekmeyi siteden ÇIKARIYORDU
+     (ölçüldü, bkz. app/lib/gecmis.ts). Sunucuda false — hidrasyon uyumlu. */
+  const [geriVar, setGeriVar] = useState(false);
+  useEffect(() => { setGeriVar(siteIciGecmisVar()); }, []);
 
   /**
    * Kategori ne sunucudan prop olarak ne de `useSearchParams()` ile geliyor —
@@ -363,6 +368,7 @@ export default function ToolsIcerik() {
 
         {/* NAVİGASYON */}
         <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest">
+          {geriVar && (
           <button
             type="button"
             onClick={() => router.back()}
@@ -371,6 +377,7 @@ export default function ToolsIcerik() {
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
             Geri
           </button>
+          )}
           <Link
             href="/"
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"

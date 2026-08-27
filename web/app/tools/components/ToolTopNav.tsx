@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { getToolBranchSlugs } from "@/app/lib/tools";
 import { getSpecialty } from "@/app/lib/specialties";
+import { siteIciGecmisVar } from "@/app/lib/gecmis";
 
 /**
  * Hesaplayıcı sayfalarının üst navigasyon çubuğu.
@@ -14,6 +15,10 @@ import { getSpecialty } from "@/app/lib/specialties";
  */
 export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
   const router = useRouter();
+  /* Sunucuda ve ilk istemci render'ında FALSE — böylece hidrasyon
+     uyuşmazlığı olmuyor; düğme yalnızca ölçüm geri gelirse beliriyor. */
+  const [geriVar, setGeriVar] = React.useState(false);
+  React.useEffect(() => { setGeriVar(siteIciGecmisVar()); }, []);
   const branchSlugs = getToolBranchSlugs(toolSlug);
 
   return (
@@ -40,6 +45,11 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         aria-label="Araç sayfası gezinmesi"
         className="flex flex-wrap items-center gap-2 mb-2 text-[10px] font-black uppercase tracking-widest"
       >
+      {/* Site içi geçmiş YOKSA çizilmez: doğrudan giren kullanıcıda
+          `router.back()` sekmeyi siteden ÇIKARIYORDU (ölçüldü). Yerine
+          bir hedef koymuyoruz — bu çubukta zaten "Tüm Araçlar", "Ana
+          Sayfa" ve "Kütüphane" var; ikinci bir kopya gürültü olurdu. */}
+      {geriVar && (
       <button
         type="button"
         onClick={() => router.back()}
@@ -48,6 +58,7 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
         Geri
       </button>
+      )}
 
       <Link
         href="/"

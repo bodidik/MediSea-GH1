@@ -18781,3 +18781,64 @@ Aynı `childCounts`, aynı gösterim — yeni veri ya da yeni iddia yok.
 
 İkincisi genel bir kural veriyor: **bir düzeltmeden sonra ölçütünü de
 yeniden sına** — düzeltme çıktının şeklini değiştirmiş olabilir.
+
+### ⚠ "GERİ" DÜĞMESİ KULLANICIYI SİTEDEN ATIYORDU — 130 araç sayfası + hub
+
+Hiç ölçülmemiş bir eksen: **geri gitme kontrolleri.** Depoda iki
+`router.back()` var ve ikisi de sitenin en yüksek trafikli GİRİŞ yüzeyinde —
+`ToolTopNav` (130 araç sayfasının hepsi) ve `/tools` hub'ı.
+
+Arama motorundan düşen kullanıcının geçmişinde bu site YOK. Ölçüldü (canlı,
+taze sekme, `/tools/bmi` doğrudan açılarak):
+
+| ölçüt | değer |
+|---|---|
+| `document.referrer` | **(yok)** — doğrudan giriş |
+| `history.length` | 2 (about:blank + sayfa) |
+| "Geri" tıklandıktan sonra | **sekme `about:blank`'e düştü** |
+
+Yani kullanıcı siteden ATILDI. Gerçek hayatta hedef Google olurdu — ürünün
+en çok ziyaret alan sayfalarında, tek tıkla çıkış.
+
+#### İki kolay sinyal de TEK BAŞINA yanlış — ikisi de denendi ve elendi
+
+| sinyal | neden yetmiyor |
+|---|---|
+| `document.referrer` | istemci gezinmesinde DEĞİŞMİYOR: Google'dan `/topics`'e girip oradan araca tıklayan kullanıcıda referrer hâlâ Google, oysa geri gitmek DOĞRU davranış |
+| `history.length` | tek başına anlamsız — kullanıcı o sekmede başka siteleri gezmiş olabilir |
+
+Doğru ölçüt **FARK**: oturumun İLK yüklemesindeki uzunluk kaydedilir
+(`app/lib/gecmis.ts`, `sessionStorage`); bugünkü uzunluk ondan büyükse
+aradaki her adım BU sitede atılmıştır. Kayıt kök `providers.tsx`ten
+yapılıyor — araç sayfaları `(site)` grubunun DIŞINDA ve ölçülen kusur tam
+oradaydı, yani kaydın kökte olması şart.
+
+**Depo engelliyse `false` dönüyor** (bu depoda ölçülmüş bir durum): düğme
+hiç çizilmez. Hiç geri gitmemek, kullanıcıyı siteden atmaktan iyidir.
+
+#### Yedek hedef KONULMADI — düğme gizleniyor
+
+"Geri"yi bir yedek adrese bağlamak (`/tools`) etiket–davranış ayrışması
+üretirdi: yazı "geri" der, iş "yukarı" olurdu. Üstelik o çubukta zaten
+**"Tüm Araçlar", "Ana Sayfa", "Kütüphane"** var; dördüncü bir kopya gürültü.
+Bu depoda ölü/yanıltıcı kontrol ayrı bir kusur sınıfı, o yüzden düğme
+yalnızca GERÇEKTEN çalışacağı durumda çiziliyor.
+
+Sunucuda ve ilk istemci render'ında `false` — hidrasyon uyuşmazlığı yok.
+
+**Doğrulama üç adımlı, ikisi negatif kontrol** (üretim derlemesi, gerçek
+tarayıcı):
+
+| adım | sonuç |
+|---|---|
+| 1) doğrudan giriş `/tools/bmi` | Geri **YOK**; çubuk 4 çiple tam |
+| 2) **negatif** — site içi gezinme (`/tools`) | `history.length` 3 > kayıtlı 2 → Geri **VAR** |
+| 3) **negatif** — Geri tıklandı | `/tools/bmi`e döndü, `<h1>` "BMI & İdeal Kilo" |
+
+Sunucu HTML'inde de ölçüldü: `/tools` ve `/tools/bmi` çıktısında "Geri"
+**0**, "Tüm Araçlar" ve öteki çipler yerinde.
+
+**Aktarılabilir kural: `router.back()` yazan her yerde "bu sayfaya DOĞRUDAN
+girilmiş olabilir mi" diye sor.** Site haritasındaki her adres bir giriş
+noktasıdır; bu depoda 130 araç sayfasının hepsi arama motoruna açık ve
+hepsinde bu düğme vardı.
