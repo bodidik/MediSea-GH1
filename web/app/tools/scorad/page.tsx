@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // SCORAD = A/5 + 7B/2 + C
 // A: vücut yüzey alanı tutulum % (0-100)      -> A/5   = 0-20
@@ -170,6 +171,7 @@ export default function SCORADPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-3`}>
             <div className="flex items-center gap-4">

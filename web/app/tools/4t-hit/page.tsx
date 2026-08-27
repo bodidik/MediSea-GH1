@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 type Option = { label: string; desc: string; pts: number };
 
@@ -136,6 +137,7 @@ export default function HitPage() {
         ))}
 
         {/* Sonuç */}
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && colors ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${colors.border} ${colors.bg} space-y-4`}>
             <div>

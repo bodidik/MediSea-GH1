@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // Revised Trauma Score (RTS) — GCS, SBP, RR coded values
 const GCS_OPTS = [
@@ -116,6 +117,7 @@ export default function RTSPage() {
         <Selector label="Sistolik Kan Basıncı" opts={SBP_OPTS} value={sbp} onChange={v => setSbp(v === -1 ? null : v)} />
         <Selector label="Solunum Hızı (/dak)" opts={RR_OPTS} value={rr} onChange={v => setRr(v === -1 ? null : v)} />
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {rts !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">

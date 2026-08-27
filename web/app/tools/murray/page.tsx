@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // Murray Akciğer Hasar Skoru — 4 parametre, her biri 0-4
 const PARAMS: { id: string; label: string; detail: string; opts: { label: string; pts: number }[] }[] = [
@@ -151,6 +152,7 @@ export default function MurrayPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">

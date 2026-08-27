@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // Puanlar ondalıklı
 const CYTOGENETICS = [
@@ -126,6 +127,7 @@ export default function IPSSRPage() {
         <Selector label="ANC (Mutlak Nötrofil)" detail="Absolut nötrofil sayısı (× 10⁹/L)"
           options={ANC} value={anc} onChange={setAnc} />
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">

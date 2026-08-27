@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const ITEMS = [
   { id: "age",    label: "Yaş",                  detail: "60 yaşın üzerinde olma",                options: [{ label: "≤ 60", pts: 0 }, { label: "> 60", pts: 1 }] },
@@ -85,6 +86,7 @@ export default function FLIPIPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">

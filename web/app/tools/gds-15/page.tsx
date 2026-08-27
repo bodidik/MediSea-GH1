@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // Yanıt "Evet" depresyon puanı veriyorsa scored=true, "Hayır" veriyorsa scored=false
 const ITEMS: { id: string; q: string; scored: "evet" | "hayir" }[] = [
@@ -109,6 +110,7 @@ export default function GDS15Page() {
           ))}
         </div>
 
+        <SonucDuyuru metin={band ? band.label : null} />
         {total !== null && band && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-3`}>
             <div className="flex items-center gap-4">

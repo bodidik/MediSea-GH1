@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const MODE_OPTS = [
@@ -172,6 +173,7 @@ export default function GhTestPage() {
           </div>
         )}
 
+        <SonucDuyuru metin={result ? result.label : null} />
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">YORUM</div>

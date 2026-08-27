@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const BMI_OPTS = [
   { v: 0, label: "> 20 kg/m²", sub: "Normal/Obez" },
@@ -89,6 +90,7 @@ export default function MustPage() {
           </div>
         )}
 
+        <SonucDuyuru metin={result ? result.label : null} />
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">MALNÜTRİSYON RİSKİ</div>
