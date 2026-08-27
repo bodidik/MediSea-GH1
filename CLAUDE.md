@@ -18297,3 +18297,50 @@ olarak kaçıyor ve uzunluğu şişiriyor. Kaçışlar çözülünce max **155**
 açıklamada gerçekten yer alıyor (önce boşluğa dönüyorlardı). **Bir metni
 ölçerken hangi temsili okuduğunu sor** — ham HTML niteliği, çözülmüş metin
 değildir.
+
+### SAYI İDDİALARI İKİ YÜZEYDE DAHA DOĞRULANDI — branş açıklaması ve PREMIUM sayaçları
+
+Meta açıklama düzeltmesinden sonra sorulan soru deponun kendi kuralıydı:
+**kopyayı say.** Açıklama üreten başka yüzey var mı, ve aynı kusuru taşıyor mu?
+
+**Branş sayfası açıklaması AYNI SINIFTA DEĞİL** — küratörlü bir metin
+(`specialties.ts`) artı hesaplanan bir sayı; HTML de varlık da içermiyor.
+Ama bir SAYI İDDİASI taşıyor ("N konu başlığıyla…") ve o hiç ölçülmemişti:
+
+| ölçüt | sonuç |
+|---|---|
+| branş açıklaması ↔ `/topics` kartı | **13 / 13 aynı** |
+| sapma | **0** |
+
+İkisi de `getTopicCounts()` okuyor, yani ayrışma imkânı zaten kapalı —
+ölçüm onu doğruluyor.
+
+#### Premium akordeon sayaçları — ücretli yüzeyde 31 sayı iddiası
+
+Premium branş sayfası her kategoride `N / M konu` basıyor. Üç sayı birden
+karşılaştırıldı: **ilan** (`hazir: true`) · **dosya** (konu dosyası var mı) ·
+**ekran**.
+
+| ölçüt | sonuç |
+|---|---|
+| branş · kategori | 9 · 30 |
+| **ilan ↔ dosya sapması** | **0** — her `hazir:true` konunun dosyası VAR |
+| ekran ↔ içerik | **9 branşın 8'i birebir** |
+| ölçülen sayaç | 31 |
+
+Tek "sapma" `gogus-hastaliklari`ndaydı: ekranda fazladan bir `1/1`. Kusur
+değil — başlığı **"Diğer Konular"** ve içinde `akciger-kanseri` var, yani
+belgede kayıtlı `listelenmeyenKategori()` onarımı çalışıyor (5 dosyanın
+listede olmayan teki). Sayacı da dürüst: 1 hazır / 1 toplam.
+
+**Ölçütün sınırı buradan çıktı:** içerik dosyalarından hesaplanan bir taban,
+KENDİNİ ONARAN bir okumanın eklediği kaydı bilemez. Bu depoda üç yerde
+onarım var (branş sayfası "Diğer Konular", premium branş, premium pano);
+onlara karşı ölçüm yaparken fazladan kaydın onarımdan mı yoksa kusurdan mı
+geldiği AYRICA sorulmalı.
+
+#### Aynı turda canlı doğrulanan düzeltme
+
+Meta açıklamadaki varlık/boşluk kusuru **canlıda kapandı**: noktalama öncesi
+boşluk **5/25 → 0/25**, ve `addison` artık
+*"…(Addison Hastalığı), adrenal korteksin…"* okunuyor.
