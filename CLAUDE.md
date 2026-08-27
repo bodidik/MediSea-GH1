@@ -17416,3 +17416,55 @@ editörün de değişmesi gerektiğini söylüyor.
   bir yazma dosyayı kırpar. Şiddeti düşüren şey `content/`in **git
   izlemesinde** olması: kırpılan dosya `git checkout` ile geri alınır.
   Öngörülen risk, ölçülmüş kusur değil — dokunulmadı.
+
+### ERİŞİM KARTI OLMAYAN BİR EYLEMİ VAAT EDİYORDU — sınıfın ÜÇÜNCÜ kopyası
+
+`AccessGate` kartı **giriş yapmış her premium-olmayan kullanıcıya, altı gated
+yüzeyin hepsinde** çıkıyor ve düğmesi **"Premium'a Geç"** → `/uyelik?plan=premium`
+diyordu. Canlıda ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| `/uyelik` ilk `h2` | **"Premium henüz satışta değil"** |
+| `?plan=premium` | **hiç okunmuyor** — sayfa `searchParams` almıyor |
+
+Yani düğme hem olmayan bir eylemi vaat ediyor hem de var olmayan bir plan
+seçicisi ima ediyordu.
+
+**Bu, belgede kayıtlı bir sınıfın ÜÇÜNCÜ kopyası.** Aynı kusur premium tanıtım
+sayfasında ve `RequirePlan`da bulunup düzeltilmişti ("Planları gör" → "Neler
+dahil?"); `AccessGate` o süpürmenin dışında kalmış. **Kopya sayıldı:**
+`"Neler dahil?"` üç yerde geçmesi gerekirken **ikisinde** geçiyordu.
+
+Etiket bilerek "Neler dahil?" — satış açıldığında da yanlışlaşmıyor. Gövdeye
+"henüz satışta değil" **yazılmadı**: lansmanda sessizce yalana dönecek ikinci
+bir gerçeklik olurdu.
+
+`/uyelik`in kendi baş yorumu bu zinciri zaten anlatıyordu (*"erişim
+kartındaki 'Premium'a Geç' düğmesi tam buraya gidiyordu"*) — etiket değişince
+bayatlamasın diye o da güncellendi.
+
+#### Erişim matrisi okundu — DEĞİŞTİRİLMEDİ
+
+| gereken | sonuç |
+|---|---|
+| `V` | herkes |
+| oturum yok | `need-login` |
+| `M` | `MONETIZATION_ENABLED=true` **değilse HERKESE açık** (ücretsiz dönem) |
+| `P` | yalnızca `plan === 'premium'` |
+| **varsayılan** | **`P`** — `ContentAccess` kaydı yoksa |
+
+İki gözlem kayda değer ve ikisi de **ürün kararı**, kusur değil:
+
+- **Ücretsiz dönem kaçışı yalnızca `M`de var, `P`de yok.** Asimetri bilinçli
+  görünüyor: içerik hazır olmadan premium açılmıyor.
+- **Varsayılan `P`** olduğu için `ContentAccess` koleksiyonu boşken **her**
+  premium konu kapalı. Bütün ölçümlerimde "Erişim Kısıtlı" görmemin sebebi bu.
+
+#### ⚠ Ölçüm notu: `.next` yapı çıktısı depo geneli grep'ini KİRLETİYOR
+
+`MONETIZATION_ENABLED` aramak için yapılan depo geneli grep, `.next/server`
+altındaki webpack `eval` dizelerini getirdi — tek eşleşme **binlerce
+karakterlik** bir satır ve raporu okunamaz yaptı. Kaynak taraması yaparken
+`.next` (ve `.next-verify`) elenmeli; `--include=*.ts --include=*.tsx` bile
+yetmiyor, çünkü derlenmiş çıktı `.js` içinde kaynak metnini gömülü taşıyor.
