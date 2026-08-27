@@ -17904,3 +17904,68 @@ bir an render'ı bozduğum sanıldı. Gerçekte çıktı
 `Güncelleme: <!-- -->14 Mar 2026` — statik metinle ara değer arasına React
 bir yorum düğümü koyuyor. **Üretilmiş HTML'de metin ararken araya yorum
 düğümü girebileceğini hesaba kat.**
+
+### KALEM NOTU UÇTAN UCA SÜRÜLDÜ — yakalama → depo → 64px önizleme → 520px tekrar kartı
+
+Çizim, tablet kullanımının çekirdek özelliği ve bugüne kadar yalnızca
+BOZUK VERİYLE sınanmıştı (`strokes` alanına dize düşünce "10 çizgi"
+uydurması). Gerçek çizim yolu hiç sürülmemişti. Sürüldü — canlıda, gerçek
+işaretçi olaylarıyla.
+
+**Yöntem:** canvas'a `pointerdown/move/up` gönderilip üç vuruş çizildi;
+biri bilerek **YATAY** — çünkü en-boy oranının korunup korunmadığını tek
+başına o gösteriyor.
+
+| ölçüt | sonuç |
+|---|---|
+| canvas genişliği | 386 px |
+| yatay vuruşun y'si | **sabit 0.103** = 40/386 |
+| yatay vuruşun x'i | 0.052 · 0.155 · 0.258 · 0.361 = (20·60·100·140)/386 |
+| **y neye göre normalize** | **GENİŞLİĞE** — en-boy oranı korunuyor |
+| nokta bileşeni | 3 (`[x, y, basınç]`) |
+| ekrandaki sayaç ↔ depo | 5 ↔ 5 |
+
+**İki render yüzeyi de ELDE HESAPLANANLA birebir çıktı** (`StrokePreview`in
+kuralı `p*W` ile yeniden hesaplandı, kod okunarak değil):
+
+| yüzey | W | ilk yol | viewBox | çizgi kalınlığı |
+|---|---|---|---|---|
+| Çalışma Alanım önizlemesi | 64 | `M3.3 6.6 L9.9 6.6 …` | `0 0 64 31.488` | 1.6 |
+| Tekrar kartı | 520 | `M27.0 53.6 L80.6 53.6 …` | `0 0 520 255.84` | 5.2 |
+
+Oran ikisinde de aynı: 31.488/64 = 255.84/520 = **0.492** = maxY + 0.08.
+Kalınlık da formülle tam: 4 × (520/400) = 5.2.
+
+Yani belgedeki iddia — *"64px önizleme ile 520px tekrar kartı aynı veriden
+çıkar"* — artık ÖLÇÜLMÜŞ durumda. **Kusur yok.**
+
+#### ⚠ ZAMAN AŞIMINA UĞRAYAN BİR ÇAĞRI, YAN ETKİSİZ DEĞİLDİR
+
+Depoda 5 vuruş çıktı, oysa son çağrıda 3 gönderilmişti. Bir an "vuruş
+çiftleniyor" sanıldı. Sebep ölçümdeydi: ondan ÖNCEKİ çağrı 30 sn'de zaman
+aşımına uğramıştı ama **ölmeden önce iki vuruş çizmişti**. Nokta sayıları
+bunu birebir gösteriyor: `[4,3] + [4,3,3]`.
+
+Belgedeki "ardışık ölçüm bayat sonuç verir" kuralının yeni biçimi:
+**başarısız dönen bir araç çağrısı da depoyu değiştirmiş olabilir.** Sayı
+beklenmedik çıktığında önce "bu durumu ben mi ürettim" diye sor.
+
+Zaman aşımının kendisi de kayıtlı bir tuzaktan geliyor: panel gizliyken
+zamanlayıcılar kısılıyor, yani `await bekle(…)` zincirleri 30 sn sınırını
+aşıyor. Çare beklemeleri kaldırıp ölçümü **ayrı çağrılara bölmek** — React
+durumu iki çağrı arasında zaten yerleşiyor.
+
+#### İki küçük ölçüm tuzağı daha
+
+- **"SVG'yi seç" 24×24 arama ikonunu getirdi.** Sayfada üç ikon SVG'si var;
+  çapa `viewBox`a atılmalı (`0 0 64…`), etikete değil.
+- **React metin birleşmesi, yine:** tekrar kartının düğmesi
+  `textContent` olarak **"Göster boşluk"** okunuyor ve `/^Göster$/` deseni
+  tutmuyor.
+
+#### Aynı turda canlı doğrulanan iki düzeltme
+
+| düzeltme | canlıda |
+|---|---|
+| not damgası (vekil damga kusuru) | `at` alanı **var**, damga makul |
+| `ilgili-index` akraba elemesi | `onkolojik-aciller` → çocuk bağı **2 → 0** |
