@@ -17366,3 +17366,53 @@ iki biçim birleşiyor.
 satırı bul ve KAÇ kaydın ona bağlı olduğunu say.** Burada tek bir `||`
 ifadesi 53 konunun görünürlüğünü taşıyor; "sadeleştirme" görünümlü bir
 düzenleme onları sessizce boşaltır.
+
+### İÇERİK EDİTÖRÜ GİDİŞ-DÖNÜŞÜ KAYIPSIZ — 456 dosya · 2290 bölüm · sapma 0
+
+Yönetim panelinin en pahalı sözü şu: bir konuyu açıp **hiçbir şey
+değiştirmeden** kaydedersen dosya aynı kalmalı. Hiç ölçülmemişti.
+
+Yöntem geçen turun yöntemi: PUT'un bölüm dönüşümü **gerçek kaynaktan**
+çıkarılıp (mantık yeniden yazılmadan) panelin okuma modeliyle birlikte 456
+içerik dosyasına uygulandı ve önce/sonra karşılaştırıldı.
+
+| ölçüt | sapma |
+|---|---|
+| gövde metni | **0** / 2290 |
+| başlık | **0** |
+| görünürlük | **0** |
+| bilinmeyen alan kaybı | **0** |
+
+Ölçüm dejenere değil: 120 bölüm `text` biçiminde ve dönüşüm onları
+`html`e taşıyor — yani ölçüt gerçekten iki dalı birden sürüyor.
+
+**POZİTİF KONTROL dört tohumla yapıldı** ve biri gizli bir riski gösterdi:
+
+| tohum | sonuç |
+|---|---|
+| `visibility: "M"` | korundu |
+| başlıksız bölüm | "Başlıksız Blok"a düşüyor — beklenen |
+| `text` biçimi | `html`e taşınıyor, metin korunuyor |
+| **`{ heading, html, kaynak: "Harrison" }`** | **`kaynak` DÜŞÜYOR** |
+
+**⚠ Editör TANIMADIĞI bölüm alanını sessizce düşürüyor.** Bugün zararsız —
+içerikte bölüm alanları yalnızca `heading` · `html`/`text` · `visibility` ve
+başka hiçbir alan yok (2290 bölümde ölçüldü). Ama içerik bir gün alan
+kazanırsa (`kaynak`, `yazar`, `guncelleme`), o konuyu panelden **tek bir
+kaydetme** alanı siler ve hiçbir kapı görmez.
+
+Kayıp iki yerde birden oluyor ve ikisi de düzeltilmeli: panel bloğu okurken
+alanı taşımıyor, uç da yazarken yalnızca bilinen anahtarları kuruyor.
+**Ölçüldü, DEĞİŞTİRİLMEDİ** — bugün düşecek alan yok; kayıt, alan eklenirse
+editörün de değişmesi gerektiğini söylüyor.
+
+#### Yan bulgular — ölçüldü, değiştirilmedi
+
+- **Ölü PUT `text` yazıyor, canlı PUT `html`.** `api/topics/route.ts`
+  (dinamik segmenti olmayan, hep 404 dönen uç) bölümleri `text: s.html`
+  diye yazıyor; canlı `[slug]` ucu ise `html: b.html || b.text || ""`.
+  Yani biçim kayması yalnızca ölü kodda.
+- **Yazma atomik değil** (`fs.writeFileSync` doğrudan hedefe). Yarıda kalan
+  bir yazma dosyayı kırpar. Şiddeti düşüren şey `content/`in **git
+  izlemesinde** olması: kırpılan dosya `git checkout` ile geri alınır.
+  Öngörülen risk, ölçülmüş kusur değil — dokunulmadı.
