@@ -18030,3 +18030,56 @@ yani aralarında bir ayrışma YOK — tek biçim, dokunulmadı.
 | konu sayfasında Türkçe ay | **"10 Haz 2026"** · **"01 Tem 2026"** (önce Jun/Jul) |
 
 Böylece son dört turun dört düzeltmesi de canlıda doğrulanmış oldu.
+
+### KALEM İŞ AKIŞININ DEĞİŞMEZLERİ ÖLÇÜLDÜ — genişlik bağımsızlığı ve geri al/yinele
+
+Çizim verisi panel GENİŞLİĞİNE göre normalize saklanıyor. Buradan sınanabilir
+bir değişmez çıkıyor: **panel genişliğini değiştirmek depoyu DEĞİŞTİRMEMELİ,
+ama tuvali yeniden ölçeklemeli.** Canlıda ölçüldü.
+
+| ölçüt | sonuç |
+|---|---|
+| panel genişliği | **386 → 686** |
+| depodaki vuruş JSON'u | **bayt bayt AYNI** |
+| yeni konumda boya (`getImageData`) | **var** |
+| **eski konumda boya** | **YOK** |
+
+Son satır ayırt edici olan: yalnızca "yeni konumda boya var" demek yeterli
+değil — çizim yeterince büyükse rastlantıyla da doğru çıkabilirdi. Eski
+konumun BOŞALMASI, tuvalin gerçekten ölçeklendiğini gösteriyor.
+
+**Geri al / yinele de temiz:** 6 → 5 → 4 (iki geri al) → 5 (bir yinele);
+`İleri al` düğmesi başlangıçta **pasif**, geri al sonrası etkin.
+
+#### ⚠ AYNI GÖREVDE İKİ TIKLAMA, İKİNCİ GERİ ALI YUTUYOR — artefakt, ürün kusuru DEĞİL
+
+İlk ölçümde iki `Geri al` tıklaması **tek** geri al etkisi verdi (6 → 5) ve
+bir an gerçek bir kusur sanıldı. Sebep ölçümdeydi: iki `.click()` AYNI JS
+görevinde çalıştırıldı, React güncellemeleri topladı ve aradaki render
+olmadı — `undo` ise `strokesRef.current` okuyor ve o ref yalnızca RENDER
+sırasında tazeleniyor. İkinci tıklama bayat listeden aynı sonucu hesaplayıp
+üzerine yazdı.
+
+**Ayırt eden ölçüm: aynı diziyi AYRI tool çağrılarında tekrarlamak.**
+Ayrı görevlerde her geri al etkili oldu (6 → 5 → 4). Yani insan tıklaması
+bu yolu hiç görmüyor; tıklamalar ayrı olay döngüsü turlarında.
+
+Ref tabanlı kurgu bilinçli ve dosyada gerekçesi yazılı (React güncelleyici
+fonksiyonlarını saf sayıp iki kez çalıştırabiliyor, içeride `setState`
+çağırmak vuruşu çiftliyordu). Ödünleşme burada: **aynı görev içinde art arda
+iki eylem bayat ref okur.** Ölçerken bunu bil, üründe bir kusur sanma.
+
+#### ⚠ TOHUMLADIĞIN ORIGIN'İ TEMİZLE — bu tur bir kez daha ısırdı
+
+Depoda 6 vuruş çıktı, oysa 3 çizilmişti. Üçü bir önceki turdan kalan
+tohumdu: o turda **localhost temizlendi ama CANLI temizlenmedi**. Ölçüm
+geçersiz olmadı (anlık görüntü alınıp karşılaştırıldı) ama sayı bir an
+"çiftleniyor" gibi göründü.
+
+Bu oturumda aynı aile üçüncü kez vurdu (biriken dinleyici · zaman aşımına
+uğrayan çağrının yan etkisi · şimdi öteki origin). Ölçüm bitiminde
+`medisea:*` sayımı **hangi origin'de tohumladıysan orada** yapılmalı.
+
+**Panel açıkken yapılan temizlik kalıcı değil** (belgede kayıtlı): bileşen
+bellekteki listeyi geri yazıyor. Bu turda gezinme sonrası yeniden sayıldı —
+**0 anahtar**.
