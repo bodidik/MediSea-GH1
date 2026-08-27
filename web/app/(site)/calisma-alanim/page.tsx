@@ -13,6 +13,7 @@ import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
 import StudyCoverage from "@/app/components/StudyCoverage";
 import SyncDurumu from "@/app/components/SyncDurumu";
+import { tarihYazisi } from "@/app/lib/tarih";
 
 type Filter = "all" | "marks" | "notes";
 
@@ -333,13 +334,11 @@ function EntryCard({
                 {entry.branch}
               </span>
             )}
-            {entry.at > 0 && (
+            {/* Aynı kapı, aynı kaynak: `at` içe aktarılan bir yedekten geliyor
+                ve `> 0` geçersiz bir damgayı elemiyordu. */}
+            {tarihYazisi(entry.at, { day: "2-digit", month: "short", year: "numeric" }) && (
               <span className="text-[9px] font-bold uppercase tracking-widest text-slate-300">
-                {new Date(entry.at).toLocaleDateString("tr-TR", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                })}
+                {tarihYazisi(entry.at, { day: "2-digit", month: "short", year: "numeric" })}
               </span>
             )}
           </div>

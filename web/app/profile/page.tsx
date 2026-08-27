@@ -8,6 +8,7 @@ import RequirePlan from "@/components/RequirePlan";
 import UpgradeCard from "@/components/UpgradeCard";
 import { type StudyNumbers, localStats, fetchServerStats } from "@/app/lib/study-stats";
 import { planCoz } from "@/app/lib/plan";
+import { tarihYazisi } from "@/app/lib/tarih";
 
 type Role = "V" | "M" | "P";
 
@@ -62,9 +63,11 @@ export default function ProfilePage() {
       <div className="flex items-center justify-between gap-4 p-6 bg-white border border-slate-200 rounded-3xl shadow-sm">
         <div>
           <h1 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Profil Özeti</h1>
-          {stats?.studiedAt && (
+          {/* Varlık kontrolü GEÇERLİLİK kontrolü değil: sunucudan gelen bozuk
+              bir damga "Invalid Date" bastırırdı. */}
+          {tarihYazisi(stats?.studiedAt, undefined, true) && (
             <div className="text-xs font-medium text-slate-500 mt-1">
-              Son Senkronizasyon: {new Date(stats.studiedAt).toLocaleString("tr-TR")}
+              Son Senkronizasyon: {tarihYazisi(stats?.studiedAt, undefined, true)}
             </div>
           )}
         </div>

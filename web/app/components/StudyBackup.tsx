@@ -18,6 +18,7 @@ import {
   type ImportPlan,
 } from "@/app/lib/study-backup";
 import { depoKullanilabilir } from "@/app/lib/study-index";
+import { tarihYazisi } from "@/app/lib/tarih";
 
 export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
   const [usage, setUsage] = useState<ReturnType<typeof storageUsage> | null>(null);
@@ -174,10 +175,14 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
               <p className="mb-3 text-[12px] leading-relaxed text-slate-600">
                 {plan.ozet!.sayfa} sayfa · {plan.ozet!.vurgu} vurgu · {plan.ozet!.not} not ·{" "}
                 {plan.ozet!.cizgi} çizgi
-                {plan.ozet!.tarih > 0 && (
+                {/* `> 0` YETMİYORDU: Date aralığının dışında kalan bir SAYI
+                    (ör. 1e20) kapıdan geçip "Invalid Date" bastırıyordu — hem de
+                    kullanıcının verisini silip silmeyeceğine karar verdiği panelde.
+                    Ölçüldü (canlı). Kapı artık sonucun GEÇERLİ olmasına bakıyor. */}
+                {tarihYazisi(plan.ozet!.tarih) && (
                   <span className="text-slate-400">
                     {" "}
-                    · {new Date(plan.ozet!.tarih).toLocaleDateString("tr-TR")}
+                    · {tarihYazisi(plan.ozet!.tarih)}
                   </span>
                 )}
               </p>
