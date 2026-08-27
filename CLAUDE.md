@@ -17142,3 +17142,53 @@ sorgu dizesini yok sayıyor, yanıt yine `x-vercel-cache: HIT`.
 **Çalışan tek yöntem DAVRANIŞ:** aracı sür, sonucu oku. `cdai` ve `ktv`
 aynı önbellekli derlemeden geliyor; cdai düzeltilmiş davranıyor, ktv
 davranmıyor — yani cephe ikisinin arasında ve `ktv` kuyrukta.
+
+### `branch` SORGU DİZESİNDEN GELİYORDU — yol içerik kökünün dışına çıkabiliyordu
+
+Hiç ölçülmemiş bir eksen: **dosya sistemine yazan uçlarda yol nasıl
+kuruluyor?** Beş uç yazıyor; üçü zaten temiz (`kayseritip` dosya/slayt uçları
+`path.basename` kullanıyor, `admin/access` dizin adını `readdirSync`ten
+alıyor). Kalan ikisi `content/canonical/<branş>/<konu>.json` yolunu istek
+verisinden kuruyor.
+
+**Canlı olanı `api/topics/[slug]`** ve `branch` değeri
+`req.nextUrl.searchParams.get("branch")` ile geliyor — tümüyle çağıranın
+denetiminde. Ölçüldü:
+
+| `branch` | `slug` | çözülen yol | dosya var mı |
+|---|---|---|---|
+| `endokrinoloji` | `addison` | `content/canonical/endokrinoloji/addison.json` | ✓ meşru |
+| **`../..`** | **`package`** | **`web/package.json`** | **VAR** |
+| `..` | `tsconfig` | `content/tsconfig.json` | — |
+
+**"Yalnızca var olan dosyaya yazıyor" bir koruma SANILABİLİR — değil.**
+`web/package.json` var; uç onu okuyup `meta.updatedAt` ekleyip geri yazardı.
+
+Yetki kapısı var, yani istismar yönetici oturumu gerektiriyor. Ama bu depoda
+o kapı bir dönem **tam bu uçlarda unutulmuştu** — dosyanın kendi yorumu
+yazıyor: *"yetkisiz bir PUT gerçek bir konuyu gerçekten değiştirdi."*
+**"Yalnızca yönetici" kalıcı bir güvence değil.**
+
+**Çare karakter beyaz listesi DEĞİL, KAPSAMA denetimi.** İçerik slug'ları
+Türkçe karakter ve boşluk taşıyor (`ascit-sıvısı`, `FGF-23 vs PTH`); ASCII bir
+liste meşru konuları reddederdi. Çözülen yolun kökün ALTINDA kaldığı
+doğrulanıyor — karakterden bağımsız ve tam.
+
+Doğrulama altı vakayla, ikisi meşru: `endokrinoloji/addison` ve
+`hematoloji/aml` **hâlâ çözülüyor**; `../..` · `..` · `../../..` ve karışık
+biçim `endokrinoloji/../../..` **reddediliyor**.
+
+#### Yan bulgu: `app/api/topics/route.ts`in PUT'u ÖLÜ
+
+Rota **dinamik segment taşımıyor**, yani `params` boş ve `slug` her zaman
+`undefined`. `path.join(baseDir, branch, "undefined.json")` hiçbir zaman
+bulunamıyor ve uç 404 dönüyor. Bütün çağıranlar `/api/topics/<slug>`
+kullanıyor (10 çağrı yeri sayıldı).
+
+İmzasını "düzeltmek" **çağıranı olmayan bir YAZMA ucunu diriltmek** olurdu —
+belgede kayıtlı `programs/routes.ts` kararının aynısı. Dokunulmadı.
+
+Ayrıca bu, bir tur önce taranan **"undefined şablon dizesine sızıyor mu"**
+sınıfının bir örneği ve tarama onu **kaçırdı**: ölçüt yalnızca `.tsx`
+dosyalarına bakıyordu, bu bir `.ts` API rotası. **Bir sınıfı tararken
+uzantı süzgecinin kapsamı da bir kapsam iddiasıdır.**
