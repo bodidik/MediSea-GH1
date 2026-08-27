@@ -17519,3 +17519,40 @@ de gerçek kusuru göremiyordu — ikisi aynı anda doğru görünüyordu.
 
 Ayrıca bu turda kendi yorumumda `**` + `/` dizisi blok yorumu erken kapattı
 (`SyntaxError`); belgede kayıtlı `**5 lb**/inç` tuzağının aynısı.
+
+### KIRINTI YOLU ÜRETİLMİŞ ÇIKTIDAN DOĞRULANDI — 410 sayfa · 311 ata bağlantısı · 0 kırık
+
+Bu oturumda 310 civarı konuya ata bağlantısı eklendi. Adres
+`/topics/<branş>/<ata>` biçiminde kuruluyor; ata BAŞKA branşta olsaydı 404
+olurdu.
+
+Kaynak okuması bunun **yapı gereği** güvenli olduğunu söylüyor: `allTopics`
+branş dizininden okunuyor (`fs.readdirSync(branchDir)`), yani ata her zaman
+aynı branşta; başka branştaki bir ebeveyn haritada bulunamayıp döngüyü
+kırıyor. Ama "yapı gereği" bir İDDİA — çıktıdan ölçmek ayrı bir şey.
+
+Üretilen HTML'lerden kırıntı bağlantıları çıkarılıp her hedefin gerçekten
+üretilmiş bir sayfa olduğu doğrulandı. Dört kusur biçimi birden sınanıyor:
+**yanlış branş · yanlış slug · gizli hedefe bağlanma · hiç üretilmemiş sayfa.**
+
+| ölçüm | değer |
+|---|---|
+| üretilmiş konu HTML | 426 |
+| kırıntı taşıyan sayfa | **410** |
+| `/topics/<branş>` bağlantısı | 410 |
+| **ATA bağlantısı** | **311** |
+| **kırık** | **0** |
+
+Kırılım basılmadan bu sonuç okunamazdı: "0 kırık" ile "0 ata bağlantısı"
+ekranda aynı görünür. 311 sayısı, kaynak tarafında ölçülen "310 konunun
+görünür bir atası var" değeriyle de tutuyor — iki bağımsız yol aynı yere
+çıkıyor.
+
+#### Ölçüm turunun iki maliyeti
+
+- `node -e "…"` kabuk dizesi kaçışları yine düşürdü (`\/` → `/`) ve
+  `SyntaxError` verdi. Belgede kayıtlı kural bir kez daha: kaçış taşıyan
+  betiği kabuk dizesiyle yazma — Write/Edit kullan.
+- Kalıntı bir `python - << 'PY'` yoklaması stdin'de asıldı ve **beş dakika**
+  harcadı (bu ortamda `python3` yok). Stdin bekleyen bir komutu "varsa
+  çalışır" diye bırakma; varlığını önce `command -v` ile sına.
