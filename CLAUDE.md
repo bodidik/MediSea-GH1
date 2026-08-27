@@ -18388,3 +18388,55 @@ Odak sonrası ögeyi adlandırırken `<main>`'in metni okundu ve
 `{"@context":"https://schema.org","@type":"MedicalW…` çıktı — JSON-LD
 script'i `<main>`'in İÇİNDE. Belgede kayıtlı `body.textContent` tuzağının
 aynısı, bir düzey içeride: **metin okurken `script` alt ağaçlarını ele.**
+
+### `/tools` KATEGORİ SÜZGECİ TAM KAPSAMLA ÖLÇÜLDÜ — üç durum, kusur yok
+
+Bugüne kadar yalnızca menüdeki altı kategori ve `infuzyon` sürülmüştü. On
+sekizin tamamı ve iki kenar durumu ölçüldü.
+
+**1. Rozet sayıları ve toplam.** 18 kategori, ilan edilen toplam **133
+listeleme = 130 benzersiz araç** — belgede kayıtlı çapraz listelemeyle
+(3 araç iki branşta) birebir.
+
+**2. Süzgeç ilan ettiği sayıyı basıyor mu?** Süzgeç HİDRASYONDAN SONRA
+istemcide uygulanıyor (sunucu HTML'i süzülmemiş tam listeyi taşıyor —
+belgede kayıtlı bilinçli karar), o yüzden ölçüm tarayıcıda yapıldı:
+
+| kategori | rozet | ekranda |
+|---|---|---|
+| `noroloji` | 1 | **1** |
+| `genel` | 2 | **2** |
+| `hematoloji` | 5 | **5** |
+| `infuzyon` | 19 | **19** |
+
+Kalan 14'ü YAPI GEREĞİ boş olamaz: rozet sayısı ile süzgeç AYNI veriyi aynı
+yüklemle okuyor, yani rozet ancak en az bir araç varsa çiziliyor. Bu
+gerekçe yazılıyor çünkü "18'ini ölçtüm" demek yanlış olurdu.
+
+**3. Var olmayan kategori** (bayat ya da manganmış paylaşılan bağlantı):
+`?kategori=olmayan-kategori` → **130 aracın tamamına düşüyor**. Boş sayfa
+yok, çıkmaz yok.
+
+**4. Kategori + arama BİRLİKTE** — hiç ölçülmemiş üçüncü durum:
+
+| adım | sonuç |
+|---|---|
+| `?kategori=infuzyon` | 19 araç |
+| + arama "kalsiyum" | **2 araç** — `kalsiyum-infuzyon` · `hiperkalemi-tedavi` (ikisi de kategoride VE eşleşiyor) |
+| **aramayı temizle** | **19'a döndü** — kategori KORUNDU, liste boşalmadı |
+
+Son satır belgede kayıtlı bir gerilemenin kontrolü: `/tools` bir tur boş
+arama kutusunda 114 aracın hepsini eliyordu.
+
+#### İki ölçüt kusuru — ikisi de "tek ifade varsaymak"
+
+- **Boş durum dedektörü sahte pozitif verdi:** `/sonuç|bulunamadı/i` deseni
+  bir ARAÇ AÇIKLAMASINDAKİ "SONUÇ BASMAZ" ifadesine takıldı.
+- **Sayaç dedektörü "kayboldu" dedi:** ölçüt `"N araç listeleniyor."`
+  arıyordu, oysa arama durumunda canlı bölge **`"N araç bulundu."`** diyor.
+  Bölge kaybolmuyor, İFADE değişiyor — ve ikisi de doğru.
+
+İkisi de aynı ders: **bir metin dedektörü tek bir ifadeyi varsayarsa,
+ifade değiştiğinde YOKLUK raporlar.** Bu depoda güvenilir sinyaller
+yapısal olanlar — `role="status"` bölgesinin kendisi, öge sayısı, kart
+sayısı.
