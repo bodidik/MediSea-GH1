@@ -19147,3 +19147,51 @@ oranı bağımsız olarak da tutuyor: 64'lük viewBox'ta `r=6` daire ≈ **%2.76
 `http://localhost:3100/apple-icon` yüklemek tarayıcı tarafından engelleniyor
 ve `img.onerror` "Event" diye düşüyor; hata mesajı sebebi söylemiyor. Sekme
 test sunucusuna alınınca ölçüm çalıştı.
+
+### OKUNABİLİRLİK İKİ EKSENDE ÖLÇÜLDÜ — iki tarafta da DUVAR YOK
+
+Hiç ölçülmemiş bir okuma ekseni: **iç yapısı olmayan uzun konu.** İçindekiler
+eşiği ≥4 bölüm VE ≥6000 karakter; 10 000 karakterlik ama 2 bölümlük bir konu
+hem TOC almaz hem okuyucuya çapa vermez.
+
+**Açık taraf — 410 konu:**
+
+| ölçüt | değer |
+|---|---|
+| bölüm sayısı dağılımı | 1:16 · 2:28 · 3:34 · 4:78 · **5:104** · 6:92 · 7+:27 |
+| TOC alan | 50 |
+| **UZUN ama TOC ALMAYAN** | **0** |
+| tek bölümlü konu | 16 — en uzunu **335 krk** (zaten kayıtlı iskelet konular) |
+
+Yani eşik içerikle örtüşüyor: uzunluk ve bölüm sayısı birlikte büyüyor.
+
+**Paragraf uzunluğu (4410 paragraf):** ortanca **216** · %90 399 · %99 599 ·
+en uzun 1506. 900 karakteri aşan yalnızca **2** paragraf. İyi düzenlenmiş
+bir külliyat — aktarılabilir bir kusur yok.
+
+**Ücretli taraf — 41 konu:**
+
+| ölçüt | değer |
+|---|---|
+| metin satırı | 346 · ortanca **277** · %99 603 · **en uzun 768** |
+| 900+ satır | **0** |
+| TOC alan | **29 / 41 (%71)** |
+| UZUN ama TOC ALMAYAN | **0** |
+| 4+ başlıklı ama kısa (TOC yok, doğru) | 11 |
+
+Yapısal gözlem: 41 premium konuda yalnızca **346 düzyazı satırı** var —
+gövdenin ağırlığı TABLO ve BİLGİ KUTUSUNDA. Yani premium içerik referans
+biçiminde yazılmış, açık taraf ise düzyazı.
+
+Belgede kayıtlı "25/41 (%61)" değeri ölçüm anına aitti; içerik büyümüş.
+
+#### ⚠ ÖLÇÜTÜ YENİDEN YAZMAK BU TURDA DA YANILTTI — üçüncü kez
+
+Premium TOC kapsamını önce KENDİ yaklaşımımla saydım (`JSON.stringify`
+uzunluğu) ve **37/41 (%90)** çıktı. Uygulamanın kendi ölçütü uzunluğu ayrıca
+TEMİZLİYOR (etiketleri sök, harf/rakam dışını at, boşlukları daralt) ve
+gerçek sayı **29/41 (%71)**. Yani yaklaşımım kapsamı **%19 fazla** gösteriyordu.
+
+Zincir birebir kopyalanınca sayı oturdu. Belgedeki kural bu oturumda üçüncü
+kez işledi: *"bir ölçütü yeniden yazma — uygulamanın kendi ölçütünü OKU."*
+(Öncekiler: ebeveyn çözümlemesi ve `isoTarih` sapı.)
