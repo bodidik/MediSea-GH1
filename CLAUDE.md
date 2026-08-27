@@ -18344,3 +18344,47 @@ geldiği AYRICA sorulmalı.
 Meta açıklamadaki varlık/boşluk kusuru **canlıda kapandı**: noktalama öncesi
 boşluk **5/25 → 0/25**, ve `addison` artık
 *"…(Addison Hastalığı), adrenal korteksin…"* okunuyor.
+
+### KONU SAYFASININ ODAK SIRASI ÖLÇÜLDÜ — kusur yok, ama sayılar kayda değer
+
+Kalem iş akışı bu ürünün ayırt edici özelliği; giriş noktası olan not
+tutamağına klavyeyle kaç Tab'da ulaşıldığı hiç ölçülmemişti.
+
+| ölçüt | değer |
+|---|---|
+| toplam odak durağı | **39** |
+| `<main>` İÇİNDE | **11** |
+| main dışında (başlık + alt bilgi) | 28 |
+| atlama bağlantısı | **1. durak** |
+| **not tutamağı** | **27. durak** — `<main>`'in DIŞINDA, `position: fixed` |
+| alt bilgi başlangıcı | 35 |
+
+Tutamak görsel olarak içeriğin yanında duruyor ama DOM'da geç; yani "görsel
+konum ≠ DOM konumu" sınıfı. **Kusur SAYILMADI:** öge erişilebilir, adlı ve
+alt bilgiden önce; WCAG'de durak sayısına dair bir ölçüt yok. Vurgu
+çubuğunda yapılan "ilk Tab çubuğa gitsin" düzeltmesi buraya UYGULANAMAZ —
+o çubuk yalnızca seçim sonrası beliriyor (geçici), tutamak ise her zaman
+ekranda ve normal Tab akışını kaçırmak yanlış olurdu.
+
+**Atlama bağlantısının işini yaptığı yapısal olarak doğrulandı:** hedef
+`<main id="icerik" tabindex="-1">` ve belge sırasında ondan sonraki ilk
+odaklanabilir öge main'in İÇİNDE (kırıntının ilk bağı). Yani atlamadan
+sonra gezinme başa dönmüyor.
+
+#### ⚠ Bu ortamda GERÇEK Tab tuşu sıralı gezinmeyi sürmüyor
+
+`computer key Tab` gönderildi ve odak `<main>`'de KALDI. Sebep belgede
+kayıtlı: `document.hasFocus()` **false** — panelin işletim sistemi odağı yok,
+dolayısıyla tuş sıralı gezinme üretmiyor.
+
+Bu yüzden yukarıdaki "atlamadan sonra main'e giriliyor" iddiası **yapısal**
+(DOM sırası), gözlenmiş DEĞİL — raporda öyle yazıyor. Odak sırasını bu
+ortamda ölçmenin çalışan yolu: seçiciyle odaklanabilir listeyi çıkar ve
+`compareDocumentPosition` ile sırala.
+
+#### Yeni tuzak biçimi: `main.textContent` de JSON-LD taşıyor
+
+Odak sonrası ögeyi adlandırırken `<main>`'in metni okundu ve
+`{"@context":"https://schema.org","@type":"MedicalW…` çıktı — JSON-LD
+script'i `<main>`'in İÇİNDE. Belgede kayıtlı `body.textContent` tuzağının
+aynısı, bir düzey içeride: **metin okurken `script` alt ağaçlarını ele.**
