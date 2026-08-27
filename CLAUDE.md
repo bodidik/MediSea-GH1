@@ -17016,3 +17016,78 @@ tekrarı — "tohumu GERÇEK şemayla kur":**
 
 Ayrıca `innerText` yine `uppercase` uyguladı: panel başlığı kaynakta
 "Dosya içeriği", ekranda **"DOSYA İÇERİĞİ"** ve düz arama tutmadı.
+
+### AYNI SINIF, İKİNCİ ÖRNEK — `ktv` ekranda "NaN" basıp %95 URR'li hastaya "YETERSİZ" diyordu
+
+"Invalid Date" sınıfının kardeşi arandı: **NaN / Infinity ekrana ulaşıyor
+mu?** Ölçüt — `Math.log` · `sqrt` · `pow` · `exp` taşıyıp `Number.isFinite`
+koruması olmayan araçlar. **7 aday**, altısı zararsız (argüman ya sınırlı ya
+sabit: `asdas` `log(crp+1)` ve `sqrt(esr)` kapılı, `charlson`/`rts` `exp`i
+sınırlı skordan, `infusion`/`meld-na`/`wells-pe` `pow(10, dp)` sabit).
+
+**Yedincisi gerçekti.** Canlıda ölçüldü — pre-BUN 100 · post-BUN 5 · 480 dk ·
+UF 2 L · 70 kg, **beşi de aracın KENDİ makullük sınırları içinde**:
+
+```
+spKt/V  NaN      eKt/V  NaN      URR  95%
+YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ
+```
+
+İki kusur birden ve **ikincisi daha ağır**: URR %95 mükemmel diyalizdir ve
+araç tersini söylüyordu — üstelik aynı ekranda %95 yazıyor. GKS'in "297 / 15"
+şekliyle aynı: dışarıdan hiçbir kaynağa bakmadan görülebilir.
+
+**Kök neden:** `ln` yalnızca pozitif argümanda tanımlı ve `yonDogru`
+(post < pre) bunu **garanti etmiyor**. `R − 0.008 × saat` ifadesi R yeterince
+küçükken eksiye düşüyor; uzun bir seansta (8–10 saat) çok iyi klerens tam
+bunu üretiyor.
+
+#### KAPATILMIŞ BİR KUSUR, YENİ BİR YOLDAN GERİ GELDİ
+
+Belgede kayıtlı düzeltme şuydu: *"hesaplanamayan değer YETERSİZ oluyordu"* →
+`degerlendirilebilir = spKtV !== null && …`. **NaN `null` DEĞİL**, o yüzden
+kapıdan geçiyor ve `NaN >= 1.2` false olduğu için doğrudan olumsuz hükme
+düşüyor.
+
+Yani kapı **DEĞERE** bakıyordu, **GEÇERLİLİĞE** değil — bir tur önce
+`tarih > 0` kapısında ölçülen dersin birebir aynısı, iki farklı dosyada
+iki tur arayla.
+
+**Aktarılabilir kural: bir kapı "hesaplanamadı"yı eliyorsa, elediği şeyin
+BÜTÜN biçimlerini saymalı.** `null` · `undefined` · `NaN` · `Infinity` ·
+`Invalid Date` — hepsi "değer yok" demek ve `!== null` yalnızca birini
+yakalıyor.
+
+Koruma **iki katmanlı** (belgedeki `sodium` kalıbı): hesap kapılanıyor VE
+gösterim sonlu olmayan değeri basmıyor. Yalnızca gösterimi kapatmak ileride
+başka bir yoldan gelen NaN'ı yine sızdırırdı.
+
+**Doğrulama — üçü negatif kontrol ve üçü de belgede KAYITLI değerlerle:**
+
+| girdi | sonuç |
+|---|---|
+| ln tanımsız vaka | **"—"** · DEĞERLENDİRİLEMEDİ · sebep kartı · **URR %95 duruyor** |
+| 60/20/240/2/70 | 1.28 · 1.12 · 67% · SAĞLANDI — birebir |
+| 85/22/240/2.5/70 | 1.59 · 1.38 · 74% — birebir |
+| 50/17/180/1.1/70 | 1.20 · 0.99 · 66% · YETERSİZ — birebir (sınır vakası) |
+
+İlk satırda URR'nin durması tasarım gereği: o değer yalnızca pre/post'a bağlı
+ve aracın kendi "organ başına geçerlilik" kuralı öyle diyor.
+
+#### ⚠ ÖLÇÜM YÖNTEMİ DÜZELTMESİ — `grep -c $'\r$'` bu kabukta YANLIŞ sayıyor
+
+Bu oturumda satır sonu doğrulamaları `grep -c $'\r$'` ile yapılmıştı ve
+komut **LF dosyada bile toplam satır sayısını** döndürüyor. `ktv` "CRLF=263/263"
+göründü; `tr -cd '\r' | wc -c` ile **CR sayısı 0** çıktı.
+
+Yani önceki commit mesajlarındaki "CRLF korundu" ölçümleri **geçersiz**.
+Yamaların kendisi doğru — onlar Node'da `ham.includes('\r\n')` ile saptıyor
+ve bu güvenilir. Ölçüm yanlıştı, düzeltme değil.
+
+**Doğru yöntem:** `tr -cd '\r' | wc -c` ile CR, `tr -cd '\n' | wc -c` ile LF
+say; eşitse CRLF, CR sıfırsa LF, ikisi de sıfırdan farklı ve eşit değilse
+KARMA.
+
+Bu ölçütle depoda **tek karma dosya** bulundu (`StudyBackup.tsx`, iki satır)
+ve o da **zararsız**: `core.autocrlf=true` ve commit edilmiş blob tekdüze LF
+(CR=0). Yani karma durum yalnızca çalışma kopyasında; depo içeriği temiz.
