@@ -14,7 +14,27 @@
 import { kalinIsle } from '@/app/lib/metin';
 import { bolumKimlikleri } from '@/app/lib/baslik';
 
-export type MetinSatir = { yil?: string; metin: string };
+/**
+ * Satır İKİ ŞEKİLDE yazılmış olabilir.
+ *
+ * Tip yalnızca `{ metin }` nesnesini biliyordu; veri ise bazı yerlerde DÜZ
+ * DİZE taşıyor. Render `satir.metin` okuduğu için dize satırlarda `undefined`
+ * çıkıyor, `kalinIsle(undefined)` de sessizce boş dönüyordu — yani satır
+ * ekranda BOŞ bir `<p>` olarak çiziliyordu.
+ *
+ * Ölçüldü: 346 metin satırının **48'i** dize ve toplam **14 154 karakter**
+ * klinik metin ücretli sayfalarda hiç görünmüyordu —
+ * `endokrinoloji/feokromositoma` 45 satır, `romatoloji/harrison-22-secme-sorular` 3.
+ *
+ * Ne `lint` ne `typecheck` ne `build` görebilir: premium sayfalar dinamik
+ * (auth okuyor), yani derlemede hiç render edilmiyorlar; tip de veriyi
+ * denetlemiyor, yalnızca İDDİA ediyor.
+ *
+ * İçerik dosyasına DOKUNULMADI — bu depoda içerik kullanıcının sorumluluğu
+ * ve aynı karar `VakaEngine`in `aciklamalar` takma adında ve quiz künyesinde
+ * de verilmişti: okuyucu iki şekli de kabul eder.
+ */
+export type MetinSatir = string | { yil?: string; metin: string };
 export type TabloSatir = { renk?: 'kirmizi' | 'yesil' | 'sari' | 'mavi'; hucreler: string[] };
 
 export type IcerikBlok =
@@ -84,7 +104,10 @@ function MetinBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'metin' }>; 
     <div style={{ marginBottom: '1.25rem' }}>
       {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-        {blok.satirlar.map((satir, i) => (
+        {blok.satirlar.map((ham, i) => {
+          // Düz dize de gelebiliyor (bkz. MetinSatir); tek şekle indiriliyor.
+          const satir = typeof ham === 'string' ? { metin: ham, yil: undefined } : ham;
+          return (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
             {satir.yil && (
               <span style={{
@@ -106,7 +129,8 @@ function MetinBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'metin' }>; 
               {kalinIsle(satir.metin)}
             </p>
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

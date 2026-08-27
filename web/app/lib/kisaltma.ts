@@ -82,9 +82,21 @@ export function kisaltmaAcBloklar<T>(bloklar: T[], gorulen: Set<string>): T[] {
     if (blok.tip === "metin" && Array.isArray(blok.satirlar)) {
       return {
         ...blok,
-        satirlar: blok.satirlar.map((s: Record<string, unknown>) =>
-          typeof s?.metin === "string" ? { ...s, metin: kisaltmaAc(s.metin, gorulen) } : s
-        ),
+        /*
+         * Satır DÜZ DİZE de olabiliyor (bkz. `MetinSatir`). Bu dal olmadan
+         * o satırlar kısaltma açılımını hiç almıyordu: render tarafı iki
+         * şekli de kabul ettiği için metin GÖRÜNÜR ama komşularının aldığı
+         * işlemi ALMAZ — aynı sayfada iki ayrı davranış.
+         *
+         * Dize şekli KORUNUYOR; tek şekle indirmeyi render yapıyor.
+         */
+        satirlar: blok.satirlar.map((s: unknown) => {
+          if (typeof s === "string") return kisaltmaAc(s, gorulen);
+          const o = s as Record<string, unknown>;
+          return typeof o?.metin === "string"
+            ? { ...o, metin: kisaltmaAc(o.metin as string, gorulen) }
+            : s;
+        }),
       } as T;
     }
 

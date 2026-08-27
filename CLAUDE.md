@@ -18440,3 +18440,63 @@ arama kutusunda 114 aracın hepsini eliyordu.
 ifade değiştiğinde YOKLUK raporlar.** Bu depoda güvenilir sinyaller
 yapısal olanlar — `role="status"` bölgesinin kendisi, öge sayısı, kart
 sayısı.
+
+### ÜCRETLİ SAYFADA 14 154 KARAKTER KLİNİK METİN EKRANA HİÇ BASILMIYORDU
+
+Premium sayfalar **dinamik** (auth okuyorlar), yani derlemede hiç render
+edilmiyorlar — kanonik içeriğin aksine orada build-time bir doğrulama YOK.
+Bu yüzden içerik ile render edicinin beklentisi ayrı ayrı ölçüldü.
+
+**Tip taraması temiz çıktı:** 41 dosya · 555 blok · yalnızca üç bilinen tip
+(`metin` 187 · `tablo` 194 · `bilgi_kutusu` 174), tanınmayan tip **0**.
+Tablo tarafı da temiz: kolonsuz/satırsız/hücresiz **0**, ve tırtıklı satır
+(hücre sayısı ≠ kolon sayısı) **0**.
+
+**Kusur ALAN ŞEKLİNDEYDİ.** Tip `satirlar: { metin: string }[]` diyor; veri
+bazı yerlerde **düz DİZE** taşıyor. Render `satir.metin` okuyor → `undefined`
+→ `kalinIsle(undefined)` sessizce boş dönüyor → satır ekranda **boş bir
+`<p>`**.
+
+| ölçüt | değer |
+|---|---|
+| toplam metin satırı | 346 |
+| **dize olarak yazılmış** | **48** |
+| **ekrana ulaşmayan metin** | **14 154 karakter** |
+| dosya | `endokrinoloji/feokromositoma` **45** · `romatoloji/harrison-22-secme-sorular` 3 |
+
+Kaybolan şey gerçek klinik prozaydı: *"Feokromositoma (PCC), adrenal
+medullanın kromafin hücrelerinden köken alan nöroendokrin tümörlerdir…"*
+
+**Hiçbir kapı göremez:** `lint`/`typecheck`/`build` üçü de geçiyor — tip
+veriyi DENETLEMİYOR, yalnızca İDDİA ediyor; ve sayfa derlemede hiç
+çizilmiyor. Aynı dosyada daha önce bulunan "6 bilgi kutusu başlığı hiç
+basılmıyordu" kusuruyla aynı kök.
+
+**İkinci ayrışma, düzeltirken bulundu:** `kisaltmaAcBloklar` da dizeyi
+atlıyordu (`typeof s?.metin === "string"` koruması). Yalnızca render
+düzeltilseydi o 48 satır GÖRÜNÜR ama komşularının aldığı kısaltma
+açılımını ALMAZDI — aynı sayfada iki davranış. İkisi de düzeltildi.
+
+**İçerik dosyasına DOKUNULMADI**; okuyucu iki şekli de kabul ediyor —
+`VakaEngine`in `aciklamalar` takma adında ve quiz künyesinde verilen
+kararın aynısı.
+
+**Doğrulama (kapı geçici açılıp gerçek sayfa render edilerek):**
+
+| ölçüt | sonuç |
+|---|---|
+| ekranda bulunan dize satır | **45 / 45** |
+| kapı geri kondu mu | evet — sayfa yeniden "Erişim Kısıtlı", `ZZ-OLCUM` izi **0**, dosya diff'i temiz |
+| derleme | 622/622 · paylaşılan ilk yük 102 kB |
+
+> İlk sayım **42/45** dedi ve üç satır kayıp sanıldı. Üçü de ORADAYDI:
+> ikisini KISALTMA AÇILIMI kaydırmıştı (anahtarım 45 karakterlik ham metindi),
+> birini de `<` → `&lt;` KAÇIŞI. **Üretilmiş HTML'de ham içerik dizesiyle
+> arama yaparken hem render dönüşümlerini hem kaçışları hesaba kat.**
+
+#### Ölçüm tuzağı: alan adını varsaymak — bu oturumda dördüncü kez
+
+İlk doğrulama koşumu **"metin 0 · tablo 0 · kutu 0"** dedi ve her şey temiz
+göründü. Blok dizisinin adı `bloklar` değil **`icerik`**. Sayının sıfır
+olması ölçütün kör olduğunu söylüyordu; anahtarlar bastırılınca 555 blok
+çıktı ve kusur ancak o zaman göründü.
