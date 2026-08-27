@@ -18194,3 +18194,50 @@ farkıyla ayrılan iki başlığı EŞİT sayar; öyle bir çift olsaydı sıra
 
 "Diğer Konular" listesi de aynı sıralı diziden filtreleniyor, yani o da
 belirlenimli.
+
+### "N ALT BAŞLIK" ROZETİ İLE KONU SAYFASI TUTUYOR — 36 kart, iki ayrı kod yolu
+
+Aynı ilişkiyi İKİ kod yolu sayıyor: branş sayfasının `childCounts`ı ve konu
+sayfasının `hubChildren` + `leafChildren` bölünmesi. Ayrışsalardı kullanıcı
+"3 alt başlık" okuyup tıklıyor ve başka bir sayı görüyordu — deponun tur tur
+avladığı "iki gerçeklik" sınıfı.
+
+Canlı çıktıdan 36 rozetli kart karşılaştırıldı: **35'i birebir**, biri
+sapıyor göründü (`hematolojik-maligniteler` rozet 6 · sayfa 12).
+
+**Sapma ÖLÇÜMDEYDİ, üründe değil.** İçerik verisinden sayıldı: o konunun
+doğrudan görünür çocuğu **tam 6** — rozet doğru. Fazladan 6 bağın kaynağı,
+metin çapalı HTML dilimimin **okuma gövdesini yutması**:
+
+```
+"Alt Başlıklar" @14835   <   [data-readable] @16691   <   "İleri Okuma" @24235
+```
+
+Gövde arada duruyor ve o konunun metni iç bağlantı taşıyor — üstelik üçü
+belgede kayıtlı ESKİ SLUG yönlendirmeleri (`hodgkin-lenfoma` · `nhl` ·
+`burkitt-lenfoma`). 35 sayfada fark etmedi çünkü gövdelerinde iki başlık
+arasında konu bağı yok.
+
+**Kayda değer sonuç: bu zayıflık YANLIŞ POZİTİF yönünde çalışıyor.** Gövdeye
+taşan bir dilim ancak olmayan bir örtüşme UYDURUR, gerçek olanı gizlemez —
+yani iki tur önceki "bölümler arası örtüşme 0" ölçümü hâlâ geçerli.
+
+**Aktarılabilir kural: metin çapalı bir HTML dilimi, iki çapa arasındaki HER
+ŞEYİ alır.** Bölüm bağlarını sayarken çapanın kapsayıcısını (bir `<nav>`,
+bir liste kökü) hedefle; iki başlık arasını dilimlemek, arada gövde varsa
+gövdeyi de sayar.
+
+#### React'in `<!-- -->` ayracı — ÜÇÜNCÜ kez aynı turda
+
+Rozet ölçütü ilk çalıştırmada **0 kart** ölçtü ve betiğin körlük koruması
+yakaladı. Sebep yine aynı: üretilen HTML `>2<!-- --> alt başlık<` biçiminde
+ve `>(\d+)\s*alt başlık<` deseni tutmuyor.
+
+Bu oturumda üçüncü tekrar (`Güncelleme:` · `Göster boşluk` · şimdi bu).
+**Üretilmiş HTML'de statik metinle ara değeri birlikte arayan HER desen bu
+ayracı hesaba katmalı.**
+
+#### Aynı turda canlı doğrulanan düzeltme
+
+Branş rozetleri canlıda **1,2,3,…** — ham `order` yerine gerçek sıra konumu
+basılıyor, yetim bölümü `•` korunmuş.
