@@ -17556,3 +17556,71 @@ görünür bir atası var" değeriyle de tutuyor — iki bağımsız yol aynı y
 - Kalıntı bir `python - << 'PY'` yoklaması stdin'de asıldı ve **beş dakika**
   harcadı (bu ortamda `python3` yok). Stdin bekleyen bir komutu "varsa
   çalışır" diye bırakma; varlığını önce `command -v` ile sına.
+
+### AYNI 401, İKİ ÇIKIŞ, İKİ FARKLI İDDİA — senkron göstergesi kalıcı olarak yalan söylüyordu
+
+Sunucu tarafı hiç okunmamıştı. `/api/study` birleştirme YAPMIYOR — `payload`
+toptan `$set` ile eziliyor, yani bütün birleştirme istemcide ve `reconciled`
+bayrağı tek koruma. O bayrağın çevresi ölçüldü.
+
+**Gerçek modül Node altında sürüldü** (mantık yeniden yazılmadan: dosyalar
+kopyalanıp yalnızca `@/app/lib/...` takma adı göreli yola çevrildi;
+`localStorage` ve `fetch` saplandı). Ölçüm, düzeltme öncesi:
+
+| senaryo | gösterge | giden PUT |
+|---|---|---|
+| **S1** `pull()` 401 aldı | **"Kaydediliyor…"** KALICI | **0** |
+| **S3** `doPush()` 401 aldı (kıyas) | "Yalnızca bu cihazda" | — |
+| **S4** oturum düşüp geri geldi | **"Kaydediliyor…"** KALICI | **0** |
+| **S2** olağan akış (negatif kontrol) | "Cihazlarına kaydedildi" | 1 |
+
+S1 ile S3 aynı HTTP durumunu iki farklı yerde ele alıyordu ve **yalnızca
+biri dürüsttü**: `doPush` 401'de `authOk`ı düşürüyor, `pull` düşürmüyordu.
+`authOk` true kaldığı için `schedulePush` göstergeyi "bekliyor" yapıyor,
+`doPush` ise uzlaşma olmadığından sessizce dönüyordu — sonuç, sonsuza kadar
+"Kaydediliyor…" diyen ve hiçbir şey göndermeyen bir gösterge.
+
+Bu, dosyanın KENDİ yorumlarının iki ayrı yerde kabul edilemez ilan ettiği
+şeyin ta kendisi (*"gösterge sonsuza kadar 'Kaydediliyor…' der ve kullanıcı
+kaydedildiğini sanır"*). Kural yazılıydı, üçüncü çıkışa uygulanmamıştı.
+
+**S4'ün kökü ayrı ve daha derin:** `useStudySync` `pull()`ı bir `pulled`
+ref'iyle koruyor ve o ref sayfa ömrü boyunca hiç sıfırlanmıyordu. Uzlaşma
+BİR KEZ deneniyor; başarısız olursa (401 · ağ hatası · 5xx) push kalıcı
+olarak ölü kalıyordu. Üstelik göstergenin yanındaki metin *"bir sonraki
+değişiklikte yeniden denenecek"* diyor — yani vaat karşılanmıyordu.
+
+Oturum düşüp geri gelmesi kuramsal değil: `/giris` `router.push` kullanıyor,
+yani istemci gezinmesi ve sağlayıcı HİÇ yeniden kurulmuyor.
+
+**Çare üç parçalı:**
+
+| ne | neden |
+|---|---|
+| `oturumDustu()` — tek 401 yolu | iki çıkış bir daha ayrışamaz |
+| `doPush`ın `!authOk` dalı artık "kapali" diyor | sessiz dönüş göstergeyi donduruyordu |
+| `!reconciled` iken `pull()` yeniden deneniyor | üç ölüm yolunu birden kapatıyor VE "yeniden denenecek" vaadini doğru yapıyor |
+
+**Doğrulama — altı senaryo, dördü negatif kontrol:**
+
+| senaryo | sonra |
+|---|---|
+| S1 `pull()` 401 | "Yalnızca bu cihazda" — **S3 ile birebir aynı** |
+| S4 oturum geri geldi | 1 GET (kendini onarma) -> **1 PUT · "Cihazlarına kaydedildi"** |
+| S5 `pull()` ağ hatası | "Kaydedilemedi" (dürüst), sonraki değişiklikte **1 PUT** |
+| **negatif** S3 | değişmedi |
+| **negatif** S2 olağan akış | değişmedi, 1 PUT |
+| **negatif S6 — KRİTİK** | uzlaşma UÇARKEN pushNow: **0 PUT**; uzlaşma bitince 1 PUT |
+
+Son satır bu turun en önemli ölçümü: eklenen yeniden deneme, tasarımın
+varlık sebebi olan korumayı (*"deposu boş bir cihaz sunucudaki yedeğin
+üzerine boş yük yazıyordu"*) zayıflatabilirdi. Zayıflatmadı.
+
+**Aktarılabilir kural: aynı HTTP durumunu iki yerde ele alıyorsan, ikisini
+de sür.** Kaynağa bakan bir gözden geçirme "401 karşılanmış" der; hangi
+iddiayı ürettiklerini ancak ikisini yan yana ölçmek gösteriyor.
+
+**Ölçüm maliyeti:** kalıntı bir `python - << 'PY'` heredoc'u stdin'de asılıp
+**beş dakika** harcadı — geçen turda belgelenen tuzağın birebir tekrarı, üstelik
+onu yazan tur tarafından. Bu ortamda `python3` YOK; stdin bekleyen bir komutu
+"varsa çalışır" diye bırakma.

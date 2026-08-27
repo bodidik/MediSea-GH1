@@ -11,6 +11,20 @@ export function useStudySync() {
   useEffect(() => {
     if (status !== "authenticated") {
       setAuthReady(false);
+      /*
+       * REF DE SIFIRLANMALI.
+       *
+       * `setAuthReady(false)` `reconciled`ı sıfırlıyor ama `pulled` ref'i
+       * sayfa ömrü boyunca `true` kalıyordu. Oturum düşüp GERİ GELDİĞİNDE
+       * (süre dolması + `/giris` üzerinden yeniden giriş — o sayfa
+       * `router.push` kullanıyor, yani sağlayıcı hiç yeniden kurulmuyor)
+       * `pull()` bir daha çağrılmıyor, uzlaşma hiç olmuyor ve push kalıcı
+       * olarak ölü kalıyordu.
+       *
+       * Ölçüldü: bu durumda gösterge "Kaydediliyor…"da donuyor ve giden
+       * PUT sayısı 0.
+       */
+      pulled.current = false;
       return;
     }
 

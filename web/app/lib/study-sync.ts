@@ -130,10 +130,53 @@ function markReconciled() {
   }
 }
 
+/**
+ * 401 — İKİ ÇIKIŞIN AYRIŞMAMASI İÇİN TEK YER.
+ *
+ * Ölçüldü (gerçek modül, dört senaryo): `doPush` 401'de `authOk`ı
+ * düşürüyordu, `pull` düşürmüyordu. Aynı HTTP durumu, iki farklı sonuç:
+ *
+ *   doPush 401 -> gösterge "Yalnızca bu cihazda"   (dürüst)
+ *   pull   401 -> gösterge "Kaydediliyor…" KALICI  (yalan, 0 PUT gidiyor)
+ *
+ * İkincisinde `authOk` true kaldığı için `schedulePush` göstergeyi
+ * "bekliyor" yapıyor, `doPush` ise uzlaşma olmadığı için sessizce dönüyordu.
+ * Bu dosyanın kendi kuralı: "gösterge sonsuza kadar 'Kaydediliyor…' der ve
+ * kullanıcı kaydedildiğini sanır."
+ */
+function oturumDustu() {
+  authOk = false;
+  reconciled = false;
+  bekleyenPush = false;
+  durumaGec("kapali");
+}
+
+/** Aynı anda ikinci bir uzlaşma isteği çıkmasın. */
+let pullUcuyor = false;
+
 async function doPush(): Promise<boolean> {
-  if (!authOk) return false;
+  // Sessizce dönmek göstergeyi `schedulePush`ın bıraktığı "Kaydediliyor…"
+  // durumunda dondurur; oturum yoksa bunu SÖYLE.
+  if (!authOk) { durumaGec("kapali"); return false; }
   if (!reconciled) {
     bekleyenPush = true;
+    /*
+     * UZLAŞMA BİR KEZ DENENİR VE BİR DAHA DENENMEZDİ.
+     *
+     * `useStudySync` `pull()`ı `pulled` ref'iyle koruyor ve o ref sayfa ömrü
+     * boyunca hiç sıfırlanmıyor. Uzlaşma ilk denemede başarısız olursa (401,
+     * ağ hatası, 5xx) push KALICI olarak ölü kalıyordu — üstelik göstergenin
+     * yanındaki metin "bir sonraki değişiklikte yeniden denenecek" diyor,
+     * yani vaat karşılanmıyordu.
+     *
+     * Burada yeniden denemek üç yolu birden kapatıyor ve o vaadi doğru
+     * yapıyor. Döngü riski yok: pull ya uzlaşıyor (reconciled=true) ya da
+     * 401'de `authOk`ı düşürüyor; ikisi de bu dalı bir daha çalıştırmıyor.
+     */
+    if (!pullUcuyor) {
+      pullUcuyor = true;
+      pull().finally(() => { pullUcuyor = false; });
+    }
     return false;
   }
 
@@ -156,7 +199,7 @@ async function doPush(): Promise<boolean> {
       body: JSON.stringify(data.body),
     });
 
-    if (r.status === 401) { authOk = false; durumaGec("kapali"); return false; }
+    if (r.status === 401) { oturumDustu(); return false; }
     if (!r.ok) { durumaGec("hata"); return false; }
 
     const meta = readMeta();
@@ -198,7 +241,7 @@ export async function pull(): Promise<PullResult> {
   if (!authOk) return { ok: false, reason: "auth" };
   try {
     const r = await fetch("/api/study");
-    if (r.status === 401) { durumaGec("kapali"); return { ok: false, reason: "auth" }; }
+    if (r.status === 401) { oturumDustu(); return { ok: false, reason: "auth" }; }
     // Uzlaşma başarısızsa push hiç yapılmayacak. Bunu söylemezsek gösterge
     // sonsuza kadar "Kaydediliyor…" der ve kullanıcı kaydedildiğini sanır.
     if (!r.ok) { durumaGec("hata"); return { ok: false, reason: "server" }; }
