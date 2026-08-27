@@ -18589,3 +18589,69 @@ da tersi: 2→3 artışını kusur sanmak).
 
 Üreteç ayrıca yeniden çalıştırıldı ve `git diff` **boş** — indeks taze, yani
 2→3 farkı benim commit ettiğim değişiklikten geliyor, bayatlıktan değil.
+
+### ⚠ "AÇIKÇA DOĞRU" BİR NORMALLEŞTİRME ÜRÜNÜ KÖTÜLEŞTİRDİ — denendi, ölçüldü, geri alındı
+
+Yeni eksen: **etiket sözlüğünün kendisi.** "İlgili Konular" akrabalığı
+etiketlerden çıkıyor, yani aynı kavramın iki yazımı akrabalığı sessizce
+böler. Üreteç zaten `toLocaleLowerCase('tr').trim()` uyguluyor — ama Türkçede
+`I -> ı` ve `İ -> i`, yani ASCII kısaltmalar **ayrı etiket kalıyor**.
+
+Ölçüldü — üretecin KENDİ normalleştirmesinden sonra hâlâ ayrı 5 küme:
+
+| küme | yazımlar | konu |
+|---|---|---|
+| `itp` | `"itp"`(4) · `"ıtp"`(1) | 5 |
+| `fgf23` | `"fgf-23"`(4) · `"fgf23"`(1) | 5 |
+| `sglt2i` | `"sglt2i"`(4) · `"sglt-2i"`(1) | 5 |
+| `ppi` | `"ppı"`(2) · `"ppi"`(1) | 3 |
+| `inclisiran` | iki yazım | 2 |
+
+Birleştirilseydi **15 yeni konu çifti** oluşacaktı. Katlama (`ı->i` + tire
+at) eklendi, indeks yeniden üretildi ve ÖNCE/SONRA karşılaştırıldı.
+
+**SONUÇ NET KAYIP:**
+
+| ölçüt | değer |
+|---|---|
+| bağ EKLENEN konu | **5** |
+| bağ **KAYBEDEN** konu | **9** |
+| toplam bağ | 1194 → **1183** |
+
+**Sebep ölçüldü, tahmin edilmedi.** Skor `1/adet` ile ağırlıklı ve tek ortak
+etiket ancak `NADIR_ESIGI` kadar seyrekse akrabalık sayılıyor. Kaybedilen
+bağların ortak etiketleri **TAM EŞİKTEYDİ**:
+
+```
+fgf-23   adet 4  + fgf23(1)   -> 5   eşiği aştı, akrabalık düştü
+sglt2i   adet 4  + sglt-2i(1) -> 5   aynı
+```
+
+Kaybedilenler klinik olarak da değerliydi: `hiperfosfatemi-CKD` ↔
+`FGF-23 vs PTH`, ve IgA nefropatisi ↔ membranöz nefropati kümesi.
+
+**Beklenen kazanç da GERÇEKLEŞMEDİ.** Hipotez "dört ITP konusu beşincisinden
+yalıtık" idi; ölçüm çürüttü — `trombositopeni-itp` zaten dördüne de bağlıydı,
+BAŞKA ortak etiketlerden. Katlama yalnızca sıralamayı değiştirdi.
+
+Geri alındı; indeks **bayt bayt** eski hâline döndü.
+
+**Aktarılabilir kural: bir normalleştirme "aynı şeyi birleştirmek" gibi
+görünüyorsa bile, o değeri TÜKETEN skorun anlambilimini sor.** Burada
+birleştirmek etiketi YAYGINLAŞTIRIYOR ve bu üreteçte yaygınlık =
+değersizlik. İki ayar (katlama ve `NADIR_ESIGI`) bağımsız değil; tek başına
+katlamak ürünü kötüleştiriyor.
+
+**Yan düzeltme TUTULDU — ve o olmasaydı düzeltme sessizce zarar verirdi:**
+`ELENEN` listesi `normalize()` ile DEĞİL ayrı bir `toLocaleLowerCase('tr')`
+ile kuruluyordu. Katlama eklenince `"tanı"` → `"tani"` olacak, liste
+`"tanı"` tuttuğu için eşleşme kaybolacak ve **elenen klinik niteliyiciler
+geri gelecekti** — yani belgede kayıtlı "Akut Koroner Sendromlar ~ Safra
+Kesesi Hastalıkları" saçmalığı. Liste artık `normalize()` ile kuruluyor;
+ikisi bir daha ayrışamaz. Ölçüldü: `akut-koroner-sendromlar` → yalnızca
+`akut-miyokardit`, safra kesesi YOK.
+
+**Ölçüm tuzağı — `/c/...` yolu node'da çözülmüyor** (`C:\c\Users\...` diye
+aranıyor). Git Bash'in kök eşlemesi node'a taşınmıyor; ölçüm betiğine dosya
+verirken `C:/Users/...` biçimini kullan. Belgede kayıtlı `/tmp` tuzağının
+aynısı, farklı kök.

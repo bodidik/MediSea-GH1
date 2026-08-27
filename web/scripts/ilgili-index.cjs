@@ -43,7 +43,10 @@ const ELENEN = new Set(
     'akut', 'kronik', 'acil', 'aciller', 'tanı', 'tedavi', 'yönetim',
     'patofizyoloji', 'farmakoloji', 'klinik', 'komplikasyon', 'komplikasyonlar',
     'ayırıcı tanı', 'prognoz', 'epidemiyoloji', 'tarama', 'izlem',
-  ].map((s) => s.toLocaleLowerCase('tr'))
+    /* ELENEN, normalize() ile kurulur — AYRI bir katlama kullanılsaydı
+       normalize genişlediğinde bu liste sessizce eşleşmez olurdu ve elenen
+       niteleyiciler geri gelirdi (bkz. yukarıdaki "Acil" vakası). */
+  ].map(normalize)
 );
 
 const EN_FAZLA = 6;      // sayfada gösterilecek ilgili konu sayısı
@@ -51,6 +54,32 @@ const ESIK = 0.08;       // bu skorun altındakiler zayıf sayılır, bağlanmaz
 /** Tek ortak etiket ancak BU kadar nadirse tek başına akrabalık sayılır. */
 const NADIR_ESIGI = 4;
 
+/**
+ * Etiket KİMLİĞİ — yalnızca eşleştirme için; ekranda bu değer basılmaz.
+ *
+ * ── DENENDİ ve ÖLÇÜMLE GERİ ALINDI: daha agresif katlama ───────────────────
+ * Sözlükte aynı kavramın iki yazımı var (ITP/İTP, PPI/PPİ, FGF-23/FGF23,
+ * SGLT-2i/SGLT2i, Inclisiran/İnclisiran) ve bunlar `toLocaleLowerCase('tr')`
+ * altında AYRI etiket kalıyor — Türkçede I->ı, İ->i. 5 küme, 15 konu çifti.
+ *
+ * "ı->i ve tireyi at" katlaması eklendi, indeks yeniden üretildi ve
+ * ÖNCE/SONRA karşılaştırıldı. Sonuç NET KAYIP: 5 konu bağ kazandı,
+ * 9 konu bağ KAYBETTİ (toplam 1194 -> 1183).
+ *
+ * Sebep ölçüldü, tahmin edilmedi: skor 1/adet ile ağırlıklı ve tek ortak
+ * etiket ancak NADIR_ESIGI kadar seyrekse akrabalık sayılıyor. Kaybedilen
+ * bağların ortak etiketleri TAM EŞİKTEYDİ:
+ *
+ *   fgf-23  adet 4  + fgf23(1)  -> 5  ->  eşiği aştı, akrabalık düştü
+ *   sglt2i  adet 4  + sglt-2i(1)-> 5  ->  aynı
+ *
+ * Yani etiketleri birleştirmek onları YAYGINLAŞTIRIYOR ve bu üreteçte
+ * yaygınlık = değersizlik. Beklenen kazanç (ITP ailesini birleştirmek) de
+ * gerçekleşmedi: o konular zaten BAŞKA ortak etiketlerden bağlıydı.
+ *
+ * Katlama istenirse NADIR_ESIGI de birlikte ayarlanmalı; ikisi bağımsız
+ * değil. Tek başına katlamak ürünü kötüleştiriyor.
+ */
 function normalize(s) {
   return String(s).toLocaleLowerCase('tr').trim();
 }
