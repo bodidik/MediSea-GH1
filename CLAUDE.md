@@ -17251,3 +17251,61 @@ yüzeyi yok. Davranışla da doğrulandı (canlı):
 | **negatif** — `addison` | **5 sonuç**, canlı bölge "5 sonuç bulundu." |
 
 Konsol hatası: **0**.
+
+### İÇERİK EDİTÖRÜ BELİRSİZ SLUG'DA SESSİZCE YANLIŞ DOSYAYI DÜZENLİYORDU
+
+Yol kapsama turunun devamı: aynı uçta ikinci bir kusur. **455 konu slug'ının
+1'i iki branşta duruyor** (`lipid-ezetimibe` → endokrinoloji, kardiyoloji) ve
+**hiçbir yönetim ekranı `branch` göndermiyor** — üç panel de yalnızca `lang`
+ve `section` gönderiyor.
+
+Yani yedek branş taraması devreye giriyor ve kararı **`readdirSync` sırası**
+veriyor; `endokrinoloji` önce geliyor. Sonuç: kardiyoloji sürümü panelden
+**düzenlenemiyor** ve ona yapılan her düzenleme **sessizce** endokrinoloji
+dosyasına yazılıyor. İçerik sahibinin kullandığı araç, düzenlediğini sandığı
+dosyadan başkasını değiştiriyordu.
+
+**Çare "ilk eşleşmeyi al" değil, belirsizliği SÖYLEMEK:**
+
+| aday | yanıt |
+|---|---|
+| 0 | 404 (değişmedi) |
+| **>1** | **409 + hangi branşlarda olduğu + `?branch=` önerisi** |
+| 1 | devam (değişmedi) |
+
+Depo ilkesinin aynısı: `heparin-nomogram` kırpmayı söylüyor, `ktv`
+hesaplanamadığında nedenini yazıyor.
+
+#### Kapı ARKASINDAKİ mantığı ölçmenin yolu: fonksiyonu KAYNAKTAN çıkar
+
+Üç kapı da 401 döndü — `yoneticiMi()` yetki denetimi her şeyden önce
+ateşleniyor (savunma katmanı doğru çalışıyor), yani mantık HTTP üzerinden
+**ölçülemiyor**.
+
+Çözüm: `kokIcinde` ve `canonicalAdaylari` **gerçek kaynak dosyadan** metin
+olarak çıkarılıp gerçek içerik ağacında sürüldü. Fonksiyonlar saf (yalnızca
+`fs` ve `path`), o yüzden `next/server` kurulumuna ihtiyaç duymuyorlar.
+**Mantık yeniden yazılmadı** — belgedeki *"doğrulama betiği, doğruladığı
+betiğin hatasını PAYLAŞMAMALI"* kuralı gereği.
+
+| ölçüt | sonuç |
+|---|---|
+| 455 slug, bağımsız dizin taramasıyla karşılaştırma | **sapma 0** |
+| `addison` | 1 aday — değişmedi |
+| `lipid-ezetimibe` | **2 aday** → 409 |
+| `lipid-ezetimibe` + `branch` | 1 aday — yeniden düzenlenebilir |
+| `../..` · `..` · `../../..` · `endokrinoloji/../../..` | **0 aday** — yol gezinmesi reddediliyor |
+| `endokrinoloji` + `addison` | 1 aday — meşru yol sağlam |
+
+Davranış değişikliği **tek slug**; 454'ü etkilenmiyor.
+
+**Aktarılabilir kural: kapı arkasındaki saf bir fonksiyonu ölçmek için uca
+istek atmaya çalışma — fonksiyonu kaynaktan ÇIKAR ve sür.** Yetki kapısı
+doğru çalıştığı için HTTP hep 401 döner ve ölçüm hiçbir şey sınamaz.
+
+#### Aynı turda ölçülüp TEMİZ çıkanlar
+
+| eksen | sonuç |
+|---|---|
+| quiz ilerlemesi ↔ değişen soru seti | **temiz** — `cevaplanan = sorular.filter(s => s.id in sonuclar)` MEVCUT listeden türüyor, hayalet kimlik sayılamıyor (flashcard'daki %240 kusuru burada oluşamaz); indeks de `i < tumSorular.length` ve `Math.min(...)` ile iki kez sınırlı |
+| `/api/study` yük sınırı | **temiz** — 8 MB tavanı İLAN EDİLMİŞ ve `Buffer.byteLength` ile GERÇEKTEN uygulanıyor (413); sayaçlar `sayi()` ile tip ve sınır denetiminden geçiyor; kimlik oturumdan |
