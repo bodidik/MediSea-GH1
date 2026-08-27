@@ -17309,3 +17309,60 @@ doğru çalıştığı için HTTP hep 401 döner ve ölçüm hiçbir şey sınam
 |---|---|
 | quiz ilerlemesi ↔ değişen soru seti | **temiz** — `cevaplanan = sorular.filter(s => s.id in sonuclar)` MEVCUT listeden türüyor, hayalet kimlik sayılamıyor (flashcard'daki %240 kusuru burada oluşamaz); indeks de `i < tumSorular.length` ve `Math.min(...)` ile iki kez sınırlı |
 | `/api/study` yük sınırı | **temiz** — 8 MB tavanı İLAN EDİLMİŞ ve `Buffer.byteLength` ile GERÇEKTEN uygulanıyor (413); sayaçlar `sayi()` ile tip ve sınır denetiminden geçiyor; kimlik oturumdan |
+
+### `text` / `html` İKİ BİÇİMİ — canlı yolların hepsi normalleştiriyor, ama TEK BİR SATIRA bağlı
+
+Yönetim ucu bölümleri **her zaman `text` olarak** yazıyor
+(`sections.map(s => ({ heading: s.title, text: s.html, … }))`). İçerikte ise
+dağılım şu:
+
+| şekil | bölüm |
+|---|---|
+| `{heading, html}` | **2170** |
+| `{heading, text}` | 110 |
+| `{heading, text, visibility}` | 10 |
+
+İlk bakışta bu bir felaket gibi duruyor: konu sayfası gövdeyi
+`dangerouslySetInnerHTML={{ __html: section.html }}` ile basıyor, yani
+`text`-only bir bölüm **boş** render edilir ve panelden kaydedilen her konu
+`html` anahtarını kaybeder.
+
+**BEKLENTİ TUTMADI ve önce beklenti sınandı** (belgedeki kural): `addison`
+7/7 `text`-only olduğu hâlde canlıda 5025 karakter basıyor. Sebep — sayfa
+render'dan ÖNCE normalleştiriyor:
+
+```tsx
+html: basliklariDuzenle(kisaltmaAc(s.text || s.html || "", …))
+```
+
+Yani `section.html` render'da kullanılan alan, dosyadaki alan DEĞİL; iki
+biçim de aynı yere düşüyor. Editörün `text` yazması **zararsız**.
+
+**⚠ AMA 53 KONU TAM OLARAK O `s.text ||` PARÇASINA BAĞLI.** Ölçüldü: 53
+dosyada bölümlerin tamamı `text`-only (`addison` 7/7, `adrenal-kriz` 6/6,
+`riedel-tiroiditi` 7/7, bütün onkoloji ve vaskülit ana sayfaları…). Biri
+normalleştirmeyi "sadeleştirip" yalnızca `html` okursa **53 konu bir anda
+boş gövdeyle yayınlanır** ve hiçbir kapı bunu görmez — dosyalar geçerli
+JSON, tipler doğru, derleme temiz.
+
+#### Tek anahtara bakan beş tüketici — hepsi ÖLÜ ya da sentetik veriyle besleniyor
+
+Asıl risk şuydu: aynı alanı okuyan başka bir yer yalnızca bir biçimi
+görüyor mu? Beş aday çıktı, beşi de karara bağlandı:
+
+| tüketici | okuduğu | verdikt |
+|---|---|---|
+| `lib/content.ts:80` `getSectionTopics` | yalnızca `text` | **ölü** — sıfır çağıran |
+| `components/TopicSidebar.tsx` | `getSidebarSections` | ölü — sıfır içe aktaran |
+| `lib/content.shared.ts` | yalnızca `text` | ölü — sıfır içe aktaran |
+| `components/AdminBar.tsx` | yalnızca `html` | ölü — sıfır içe aktaran |
+| `CanonicalViewer` → `/admin/studio` | yalnızca `text` | **sentetik veri** — sayfa `// Burada normalde bir fetch olur` diyip sabit bir örnek besliyor; gerçek içerik oradan geçmiyor |
+
+Yönetim panelleri ise ucun normalleştirilmiş çıktısını okuyor
+(`api/topics/[slug]:189` → `html: b.html || b.text || ""`), yani orada da
+iki biçim birleşiyor.
+
+**Aktarılabilir kural: bir alanın İKİ biçimi varsa, o biçimleri birleştiren
+satırı bul ve KAÇ kaydın ona bağlı olduğunu say.** Burada tek bir `||`
+ifadesi 53 konunun görünürlüğünü taşıyor; "sadeleştirme" görünümlü bir
+düzenleme onları sessizce boşaltır.
