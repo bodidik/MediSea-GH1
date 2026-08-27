@@ -16852,3 +16852,71 @@ görünür rozet `"ORTA RİSK @9px"` — birebir.
 
 **Bir duyuruyu ekranla karşılaştırırken duyuruyu ölçümden ELE**; yoksa
 karşılaştırma kendini doğrular.
+
+#### Duyuru süpürmesinin KAPSAMI dürüstçe: 31 / 130
+
+Kalan 99 aracın şekilleri incelendi ve **mekanik süpürmeye uygun bir alt küme
+kalmadı**. Sayımlar:
+
+| kova | araç |
+|---|---|
+| duyurusu VAR | **31** |
+| duyurusu yok, bant NESNESİ taşıyan | 40 |
+| duyurusu yok, bant nesnesi olmayan | 59 |
+
+**Son satır "bant yok" DEMEK DEĞİL** ve bu ayrım ölçümle görüldü: ilk ölçütüm
+`degisken.label` erişimi arıyordu ve `egfr`i kaçırdı — o araç bandı JSX içinde
+kuruyor (`return { label: "G1: Normal veya Yüksek", … }`). İkinci ölçüt onu
+yakaladı ama `curb65`/`chads-vasc` gibi etiketi satır içi kuranlar hâlâ
+dışarıda. Yani **59 rakamı bir üst sınır değil, ölçütün gördüğü kadarı.**
+
+Bu yüzden kalan iş "40 araç" diye kapatılamaz; her araç tek tek okunmalı.
+Süpürme 31'de durdu ve **"sınıf kapandı" DENMİYOR.**
+
+### KLİNİK ARAÇLARA GİRİLEN HASTA VERİSİ TARAYICI SEKMESİNDEN ÇIKMIYOR
+
+Hiç ölçülmemiş bir gizlilik ekseni. Bir dahiliye asistanı bu araçlara gerçek
+hasta değerleri giriyor (yaş, kilo, kreatinin, eklem sayısı); o veri nereye
+gidiyor?
+
+**Kaynak taraması — dört kanal, dördü de sıfır:**
+
+| kanal | araçlarda |
+|---|---|
+| ağ çağrısı (`fetch` · `XMLHttpRequest` · `sendBeacon` · WebSocket) | **0 dosya** |
+| depo (`localStorage` · `sessionStorage` · `document.cookie`) | **0 dosya** |
+| adres çubuğuna yazma (`history.pushState/replaceState` · `router.push/replace` · `location.* =`) | **0** |
+| üçüncü taraf ölçümleme (GA · gtag · posthog · sentry · mixpanel · hotjar · plausible) | **0 dosya, depo genelinde** |
+
+Harici `<script src>` ya da `next/script` kullanımı da **yok**.
+
+**Davranışla doğrulandı (canlı, `cdai`):** ayırt edici değerler girildi
+(17 · 13 · 9 · 7 → skor **46**, aritmetik de doğru) ve `fetch`/XHR/beacon ile
+`Storage.prototype.setItem` sarmalandı:
+
+| ölçüt | sonuç |
+|---|---|
+| girdi sonrası ağ çağrısı | **0** |
+| girdi sonrası depo yazma | **0** |
+| adres çubuğu / sorgu | değişmedi, sorgu boş |
+| çerez | yok |
+| var olan tek depo anahtarı | `ydus_premium_user` — `{xp:0,…}`, hasta verisi yok |
+| **paylaş düğmesi ne kopyalıyor** | `…/tools/cdai` — girilen dört değerin **hiçbiri yok** |
+
+**"0" körlükten gelmiyor:** pozitif kontrol olarak bir `fetch` ve bir
+`setItem` tetiklendi, **ikisi de yakalandı**.
+
+`ToolShare` hem `search` hem `hash` alanını siliyor; `params` imzada duruyor
+ama adrese hiç yazılmıyor (kaynaktaki yorum da bunu söylüyor ve ölçüm
+doğruladı).
+
+**Bu bir özellik değil, korunması gereken bir DURUM.** Bugün doğru; üç
+değişiklik onu sessizce bozar:
+
+1. bir ölçümleme betiği eklemek (girdi olaylarını da toplar),
+2. bir aracın durumu adrese yazması (tarayıcı geçmişine ve paylaşılan
+   bağlantıya hasta verisi düşer),
+3. `ToolShare`in `params`ı adrese koyması — o kod imzada HAZIR duruyor.
+
+Üçüncüsü en yakın risk: `params` 111 çağrı yerinden geçiyor ve yalnızca
+`url.search = ""` satırı onu tutuyor.
