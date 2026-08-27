@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import YoneticiDuzenleyici from "@/components/topics/YoneticiDuzenleyici";
-import { JsonLd, konuSemasi, kirintiSemasi } from "@/lib/jsonld";
+import { JsonLd, konuSemasi, kirintiSemasi, isoTarih } from "@/lib/jsonld";
+import { tarihYazisi } from "@/app/lib/tarih";
 import { slugCoz } from "@/lib/slug";
 import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
@@ -489,11 +490,36 @@ export default async function TopicDetailPage({
                   kayıtlı: tarih bilinmiyorsa alan HİÇ basılmıyor —
                   uydurma bir tazelik sinyali vermektense sinyal vermemek
                   doğru. `isoTarih()` de ayrıştıramadığında undefined döner. */}
-              {rawData.meta?.updatedAt && (
-                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                  Güncelleme: {rawData.meta.updatedAt}
-                </div>
-              )}
+              {/*
+                YUKARIDAKİ İLKE UYGULANIYOR — bir dönem YALNIZCA YAZILIYDI.
+                Kapı `updatedAt` DOLU MU diye bakıyordu, `isoTarih()` hiç
+                çağrılmıyordu ve ham dize basılıyordu.
+
+                Bedeli ölçüldü: 410 görünür konunun 29'u Türkçe sayfada
+                İNGİLİZCE ay adı gösteriyordu ("Güncelleme: 10 Jun 2026").
+                Kaynağı `toLocaleDateString('tr-TR', …)` — çıktısı çalışma
+                ortamının ICU verisine bağlı; dar ICU'da Türkçe adlar
+                İngilizceye düşüyor.
+
+                `isoTarih` iki biçimi de ayrıştırıyor (`AY_NO` Türkçe kısa/
+                uzun ve İngilizce kısaltmaları kapsıyor), `tarihYazisi` de
+                tek biçimde Türkçe basıyor. Öğlen saati bilerek: ISO gün
+                UTC gece yarısı olarak ayrıştırılıyor ve saat dilimi günü
+                bir geri kaydırabilir.
+              */}
+              {(() => {
+                const iso = isoTarih(rawData.meta?.updatedAt);
+                const yazi = tarihYazisi(iso ? `${iso}T12:00:00` : null, {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                });
+                return yazi ? (
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    Güncelleme: {yazi}
+                  </div>
+                ) : null;
+              })()}
             </div>
 
             {/* Alt Başlıklar Menüsü (Hub Çocukları) — konuyu bulana kadar menü açılmaya devam eder */}

@@ -17820,3 +17820,87 @@ kaç yol olduğunu say.**
   çalışılmamış kartı alıyor, vadesi geçmişler önce; `again` kartı kuyruk
   SONUNA taşıyıp aynı oturumda geri getiriyor, öteki dereceler ilerletiyor;
   tazeleme kipi takvime hiç dokunmuyor. Kusur yok.
+
+### ÇAĞRILAN YÖNTEM ↔ UCUN DIŞA AKTARDIĞI YÖNTEM — yeni ölçüt, iki bulgu
+
+Bir rota `GET` dışa aktarmıyorsa Next **405** döner ve **üç kapı da göremez**:
+kod geçerli, tipler doğru, derleme temiz — kusur yalnızca çalışma zamanında
+ve çoğu zaman bir `catch` içinde yutuluyor.
+
+Ölçüt: kaynaktaki `fetch("/api/…", { method })` çağrılarını çıkar, rota
+dosyasını çöz, o yöntemin dışa aktarılıp aktarılmadığına bak.
+**539 dosya · 48 rota · 41 çağrı · 38'i çözüldü.**
+
+| bulgu | sonuç |
+|---|---|
+| **yöntem dışa aktarılmamış** | **1** — `GET /api/topics` |
+| rotaya alınmayan uca çağrı | 0 |
+| rotası çözülemeyen | 3 (`/api/admin/*` — alt çizgili `_admin` altında, canlıda **404**; `/api/programs` zaten belgede ölü) |
+
+#### İçerik düzenleyicisinin listesinin çalışan kaynağı yoktu
+
+`app/admin/content/topics` önce `/api/topics/search`i deniyor, sonra
+`/api/topics`e düşüyor. Canlıda ölçüldü:
+
+```
+GET /api/topics         -> 405     (dosya yalnızca PUT dışa aktarıyor)
+GET /api/topics/search  -> 503     (Express arka ucu canlıda hiç çalışmıyor)
+```
+
+Hata yolu **dürüst** (`"Liste alınamadı"` gösteriliyor) — sessiz boş liste
+kusuru YOK; eksik olan ucun kendisiydi. Yazıldı; yanıt şekli uydurulmadı,
+çağıranın okuduğu alanlardan alındı.
+
+**Kapı arkasındaki kod GERÇEK HÂLİYLE sürüldü** (rota kopyalanıp yalnızca
+içe aktarımları saplandı — mantık yeniden yazılmadı): kapı 401; liste 456
+konu; `section`/`q`/`limit`/`sort` çalışıyor; **boş sorgu listeyi
+BOŞALTMIYOR** (`aramaEslesir`in belgede kayıtlı tuzağı); `lang=EN` boş;
+olmayan branş 0.
+
+> **Sap gerçekten zayıf olabilir — ve oldu.** `isoTarih` JSX taşıyan bir
+> `.tsx` içinde olduğu için saplandı ve sapım İngilizce ay adlarını
+> tanımıyordu; sıralama ölçümü 29 konuyu "tarihsiz" gösterdi. Gerçek
+> `AY_NO` tablosu okununca İngilizce kısaltmaları da kapsadığı görüldü.
+> **Bir sapla ölçüyorsan, sapın gerçekten zayıf olduğu yeri de yaz.**
+
+### KONU SAYFASI YORUMU İLKEYİ YAZIYOR, KOD UYGULAMIYORDU — 29 sayfada İngilizce ay
+
+Yukarıdaki sap tartışması gerçek bir kusuru açtı. "Güncelleme" satırının
+HEMEN ÜSTÜNDEKİ yorum şunu diyor:
+
+> *"tarih bilinmiyorsa alan HİÇ basılmıyor … `isoTarih()` de
+> ayrıştıramadığında undefined döner."*
+
+Kod `isoTarih`'i **hiç çağırmıyordu**: kapı yalnızca `updatedAt` DOLU MU
+diye bakıyor ve ham dize basılıyordu. Bu, deponun imza sınıfı —
+**ilan edilip uygulanmayan kural**, üstelik yorum çağırmadığı yardımcının
+adını veriyor.
+
+**Ölçüldü: 410 görünür konunun 29'u Türkçe sayfada İNGİLİZCE ay adı
+gösteriyordu** ("Güncelleme: 10 Jun 2026", "01 Jul 2026"). Kaynağı
+`toLocaleDateString('tr-TR', …)` — çıktısı çalışma ortamının ICU verisine
+bağlı ve dar ICU'da Türkçe adlar İngilizceye düşüyor.
+
+**İçerik dosyasına DOKUNULMADI**, dönüşüm render tarafında (`metin.tsx` ve
+`kisaltma.ts` ile aynı karar): `isoTarih` iki biçimi de ayrıştırıyor,
+`tarihYazisi` tek biçimde Türkçe basıyor.
+
+**Doğrulama — üretilmiş çıktının tamamı (426 konu HTML):**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| İngilizce ay | **29** | **0** |
+| Türkçe ay | — | **406** |
+| satırı olmayan | — | 20 (tarihi olmayan + gizli) |
+| örnek | `10 Jun 2026` | **`10 Haz 2026`** |
+| örnek | `01 Jul 2026` | **`01 Tem 2026`** |
+
+406 sayısı bağımsız bir yoldan da tutuyor: canlı site haritasındaki
+`lastmod` sayısı **420** = 406 konu + 13 branş + `/topics`.
+
+**Ölçüm tuzağı — React araya `<!-- -->` koyuyor.** İlk ölçüt
+`Güncelleme:\s*([^<]…)` idi ve **426 sayfanın 426'sında "satır yok"** dedi;
+bir an render'ı bozduğum sanıldı. Gerçekte çıktı
+`Güncelleme: <!-- -->14 Mar 2026` — statik metinle ara değer arasına React
+bir yorum düğümü koyuyor. **Üretilmiş HTML'de metin ararken araya yorum
+düğümü girebileceğini hesaba kat.**
