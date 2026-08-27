@@ -57,14 +57,30 @@ export async function AccessGate({ topicId, lang, branch }: Props) {
     erisim === 'need-login'  ? 'Bu içeriği görüntülemek için giriş yapmalısın.' :
     erisim === 'need-member' ? 'Bu içerik üye seviyesinde kilitlidir.' :
                                'Bu içerik Premium üyelere özeldir.';
+  /*
+   * ETİKET HEDEFİN BUGÜN ANLATTIĞI ŞEYE BAĞLI.
+   *
+   * Eski hâli "Premium'a Geç" -> `/uyelik?plan=premium` idi. Ölçüldü
+   * (canlı): `/uyelik` sayfasının ilk h2'si "Premium henüz satışta değil"
+   * ve `?plan` parametresi hiç okunmuyor (sayfa `searchParams` almıyor).
+   * Yani düğme OLMAYAN bir eylemi vaat ediyor ve var olmayan bir plan
+   * seçicisi ima ediyordu.
+   *
+   * Aynı kusur premium tanıtım sayfasında ve `RequirePlan`da bulunup
+   * düzeltilmişti; bu ÜÇÜNCÜ kopya o süpürmenin dışında kalmıştı.
+   *
+   * "Neler dahil?" bilerek seçildi: satış açıldığında da yanlışlaşmıyor.
+   * Gövdeye "henüz satışta değil" YAZILMADI — lansmanda sessizce yalana
+   * dönecek ikinci bir gerçeklik olurdu.
+   */
   const href =
     erisim === 'need-login'  ? '/giris' :
     erisim === 'need-member' ? '/uyelik' :
-                               '/uyelik?plan=premium';
+                               '/uyelik';
   const buton =
     erisim === 'need-login'  ? 'Giriş Yap' :
     erisim === 'need-member' ? 'Üye Ol' :
-                               "Premium'a Geç";
+                               'Neler dahil?';
 
   return (
     <div style={{

@@ -5,9 +5,15 @@ import { icerikSayilari } from "@/lib/icerik-sayaci";
 /**
  * Üyelik sayfası.
  *
- * Bu adres bir süre 404 veriyordu ve erişim kartındaki "Premium'a Geç"
- * düğmesi tam buraya gidiyordu: ücretsiz kullanıcı premium bir konuya
- * girip yükseltmek istediğinde boşluğa düşüyordu.
+ * Bu adres bir süre 404 veriyordu ve erişim kartındaki düğme tam buraya
+ * gidiyordu: ücretsiz kullanıcı premium bir konuya girip yükseltmek
+ * istediğinde boşluğa düşüyordu.
+ *
+ * O düğmenin ETİKETİ de sonradan düzeltildi. Bir dönem "Premium'a Geç"
+ * diyip `?plan=premium` ile buraya geliyordu; sayfanın ilk başlığı ise
+ * "Premium henüz satışta değil" ve `?plan` parametresi hiç okunmuyor.
+ * Etiket artık "Neler dahil?" — sayfanın BUGÜN anlattığı şey (bkz.
+ * lib/AccessGate.tsx).
  *
  * Sayfada fiyat YOK ve e-posta toplanmıyor. İkisi de bilinçli: satış
  * henüz açılmadı, olmayan bir fiyatı yazmak yanıltıcı olur; ön kayıt
