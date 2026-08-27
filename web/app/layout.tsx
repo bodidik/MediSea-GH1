@@ -30,6 +30,12 @@ import { JsonLd, organizasyonSemasi, siteSemasi } from "@/lib/jsonld";
  */
 export const viewport: Viewport = {
   colorScheme: "light",
+  /* Mobil tarayıcı çubuğunun rengi. Beyan YOKKEN tarayıcı kendi
+     varsayılanını kullanıyordu; marka rengi `app/icon.svg` ve
+     `opengraph-image.tsx` ile AYNI lacivert — üç yüzey de tek değerden
+     konuşsun diye. (Silinen ölü manifest burada #2563eb diyordu, yani
+     bağlansaydı dördüncü bir gerçeklik daha üretecekti.) */
+  themeColor: "#1a3a6b",
 };
 
 export const metadata: Metadata = {

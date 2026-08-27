@@ -19090,3 +19090,60 @@ parametre olarak geliyor); o dosyalar elle sürülmeli.
 Üçüncüsü bu oturumda **üçüncü** tekrar. Kural sertleşiyor: kaçış taşıyan bir
 deseni heredoc'a hiç yazma — `String.fromCharCode(92)` ile kur ya da
 kaçışsız karşılığını seç.
+
+### ÜÇLÜ ÖLÜ MANİFEST — ve `icon.svg`in KENDİ yorumunun tutmayan iddiası
+
+Hiç bakılmamış bir yüzey: **sekme ve ana ekran kimliği.** Ölçüldü:
+
+| ölçüt | durum |
+|---|---|
+| sekme simgesi (`/icon.svg`) | **VAR**, sayfada bağlı |
+| `/apple-icon.png` · `/favicon.ico` | 404 |
+| `theme-color` | **YOK** |
+| `public/manifest.webmanifest` | dosya VAR |
+
+Manifest **üç kere ölüydü**: (1) hiçbir yerden atıf almıyor — kaynakta
+`manifest` geçen tek satır yok, sayfanın `<link rel>` listesinde de yok;
+(2) ilan ettiği **üç ikonun üçü de dosya olarak YOK**
+(`/icon-192.png` · `/icon-512.png` · `/apple-touch-icon.png`); (3)
+`theme_color`u **#2563eb**, oysa marka rengi `icon.svg` ve
+`opengraph-image.tsx`te **#1a3a6b**.
+
+Yani biri onu bağlasa üç kırık ikon ve yanlış bir marka rengi canlıya
+çıkardı. Silindi — bu depoda "ölü kodu düzeltmek bazen onu diriltmektir"
+kuralı var ve bağlamak PWA kurulumu (`display: standalone`) açmak demekti,
+yani ölçülmüş bir kusuru düzeltmek değil yeni bir yüzey eklemek.
+
+#### `icon.svg` kendi kapsamını YANLIŞ ilan ediyordu
+
+Dosyanın kendi yorumu: *"SVG seçildi ki 16px sekme simgesinden **180px
+dokunma simgesine** kadar tek dosyayla net kalsın."* Ama **iOS
+`apple-touch-icon` için SVG kabul etmiyor**. Yani beyan edilen kapsamın
+yarısı gerçekleşmiyordu: tablete "Ana Ekrana Ekle" ile kaydedilen MediSea,
+simge yerine sayfanın küçültülmüş ekran görüntüsüyle duruyordu — ve bu
+üründe **tablet + kalem birinci sınıf bir kullanım**.
+
+`app/apple-icon.tsx` eklendi. **Yeni bir tasarım değil**: `icon.svg`teki
+mark birebir aynı (lacivert kare, iki deniz dalgası, altın vurgu), yalnızca
+iOS'un istediği biçimde üretiliyor. `next/og` bu depoda zaten paylaşım
+kartları için kullanılıyor, yeni bağımlılık yok.
+
+**Doğrulama — üretilmiş çıktı + PİKSEL ÖRNEKLEMESİ:**
+
+| ölçüt | sonuç |
+|---|---|
+| `/apple-icon` | 200 · **PNG imzası** · **180×180** · 3850 bayt |
+| sayfadaki bağ | `<link rel="apple-touch-icon" … sizes="180x180">` |
+| `theme-color` | **#1a3a6b** — üç yüzey artık tek renkten konuşuyor |
+| **negatif** — `icon` bağı | duruyor (`/icon.svg`, `sizes="any"`) |
+| **negatif** — ölü manifest | **404** |
+
+**Geçerli PNG "işaret çizildi" DEMEK DEĞİL** — boş bir lacivert kare de
+geçerli bir PNG olurdu ve Satori gömülü SVG'yi düşürebiliyor. Piksel
+sayıldı: **%83.8 lacivert · %6.2 beyaz (iki dalga) · %2.7 altın**. Altın
+oranı bağımsız olarak da tutuyor: 64'lük viewBox'ta `r=6` daire ≈ **%2.76**.
+
+**Ölçüm tuzağı — karışık içerik.** `https://` bir sayfadan
+`http://localhost:3100/apple-icon` yüklemek tarayıcı tarafından engelleniyor
+ve `img.onerror` "Event" diye düşüyor; hata mesajı sebebi söylemiyor. Sekme
+test sunucusuna alınınca ölçüm çalıştı.
