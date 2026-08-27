@@ -18887,3 +18887,50 @@ tarayıcı):
 kullanılan hareketiyle sına.** Bu kutunun ESC'si, canlı bölgesi, temizleme
 düğmesi ve Türkçe normalizasyonu ayrı ayrı ölçülmüştü — ama "yazıp Enter'a
 basmak" hiç denenmemişti ve tam orası ölüydü.
+
+### KOPYAYI SAY — üç süzgeç yüzeyinin ikisinde canlı bölge vardı, birinde yoktu
+
+Geçen turun dersi ("kontrolü EN SIK kullanılan hareketiyle sına") deponun
+"kopyayı say" kuralıyla birleştirildi: aramanın klavye yüzeyi düzeltildi, ama
+sitede **kaç arama kutusu var?**
+
+Ölçüldü — 10 arama benzeri girdi; yalnızca biri (düzeltilen başlık araması)
+tuş işliyor. Ama **hepsi aynı sınıfta değil** ve ayrım önemli:
+
+| tür | Enter'ın işi var mı |
+|---|---|
+| başlık araması (açılır sonuç penceresi) | **VAR** — düzeltildi |
+| SÜZGEÇ kutuları (liste zaten canlı daralıyor) | yok — sonuç ekranda, Tab ile erişilebilir |
+
+Süzgeçlerdeki asıl risk başkaydı: kutu bir `<form>` içindeyse Enter sayfayı
+yeniler ve yazılanı siler. Dört yüzeyde ölçüldü (`/topics` · `/tools` ·
+`/guidelines` · `/calisma-alanim`): **form içindeki girdi 0.** O sınıf boş.
+
+#### Bulunan: `KutuphaneArama`da canlı bölge YOKTU
+
+| yüzey | `role="status"` |
+|---|---|
+| başlık araması (`SiteHeader`) | 2 |
+| araç hub'ı (`ToolsIcerik`) | 2 |
+| **kütüphane süzgeci (`KutuphaneArama`)** | **0** |
+
+Yani ekran okuyucuyla yazan kullanıcı, liste daralırken hiçbir geri bildirim
+almıyordu — kardeş iki yüzeyde alıyordu.
+
+Bölge **koşulsuz** render ediliyor: `status`, `alert`ten farklı olarak içerik
+değişmeden ÖNCE DOM'da bulunmak zorunda (belgedeki kural). Sonuç bloğu
+`aranan.length >= 2` ile kapılı olduğu için bölge onun DIŞINDA duruyor.
+
+**Doğrulama, ikisi negatif kontrol** (üretim derlemesi, gerçek tarayıcı):
+
+| ölçüt | sonuç |
+|---|---|
+| bölge yazmadan ÖNCE DOM'da mı | **evet**, metni boş |
+| "tiroid" | **"14 konu bulundu."** |
+| "zzzqqq" | **"…için konu bulunamadı."** |
+| **negatif** — sıfır sonuçta çıkmaz var mı | **yok** — 13 branş bağı ekranda kalıyor |
+| **negatif** — sorgu silinince | bölge **susuyor** (bayat duyuru yok) |
+| sunucu HTML'i | `/topics` çıktısında 2 koşulsuz `role="status"` |
+
+Sıfır durum metni de zaten dürüsttü ("Farklı bir terim dene ya da aşağıdan
+branşa göz at") — eksik olan yalnızca duyuruydu.

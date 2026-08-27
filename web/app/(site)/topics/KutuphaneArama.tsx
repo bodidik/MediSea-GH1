@@ -59,8 +59,28 @@ export default function KutuphaneArama({
 
   const bransAdi = (slug: string) => branslar.find((b) => b.slug === slug)?.baslik || slug;
 
+  /* Ekran okuyucuya sonuç sayısını duyurur.
+
+     Ölçüldü: kardeş iki süzgeç yüzeyinin (başlık araması ve /tools) İKİSİNDE
+     de canlı bölge VAR, burada YOKTU — yani okuyucuyla yazan kullanıcı liste
+     daralırken hiçbir geri bildirim almıyordu.
+
+     `status` (alert değil): sonuç sayısı acil bir kesinti değil. Ve bölge
+     KOŞULSUZ render ediliyor — `status` içerik değişmeden ÖNCE DOM'da
+     bulunmak zorunda, sonradan eklenirse ilk mesaj kaçar (belgedeki kural).
+     Aşağıdaki sonuç bloğu `aranan.length >= 2` ile kapılı, o yüzden bölge
+     onun DIŞINDA duruyor. */
+  const durumMetni =
+    aranan.length < 2
+      ? ""
+      : sonuclar.length === 0
+        ? `"${sorgu}" için konu bulunamadı.`
+        : `${sonuclar.length} konu bulundu.`;
+
   return (
     <div>
+      <div role="status" aria-live="polite" className="sr-only">{durumMetni}</div>
+
       {/* ARAMA */}
       <div className="relative mb-8">
         <span aria-hidden="true" className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
