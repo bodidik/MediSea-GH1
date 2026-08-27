@@ -72,8 +72,23 @@ export default function KtvPage() {
 
   // Daugirdas II (Single Pool)
   const R    = hasAll ? post / pre : null;
-  const spKtV = hasAll && R !== null
-    ? -Math.log(R - 0.008 * tHours) + (4 - 3.5 * R) * (ufL / wt)
+  /**
+   * `ln` YALNIZCA POZİTİF argümanda tanımlı — ve `yonDogru` (post < pre)
+   * bunu GARANTİ ETMİYOR. `R - 0.008 x saat` ifadesi R yeterince küçükken
+   * eksiye düşüyor; uzun bir seansta (8-10 saat) çok iyi klerens tam bunu
+   * üretiyor.
+   *
+   * Ölçüldü (canlı): pre 100 · post 5 · 480 dk · UF 2 L · 70 kg — beşi de
+   * bu aracın KENDİ sınırları içinde — ekran "NaN" basıyor ve hüküm
+   * "YETERSİZ DİYALİZ" diyordu; oysa aynı ekranda URR %95 yazıyor.
+   *
+   * `spKtV !== null` kapısı NaN'ı geçiriyordu: kapı DEĞERE bakıyor,
+   * GEÇERLİLİĞE değil.
+   */
+  const lnIci = R !== null ? R - 0.008 * tHours : null;
+  const lnTanimli = lnIci !== null && lnIci > 0;
+  const spKtV = hasAll && R !== null && lnTanimli
+    ? -Math.log(lnIci as number) + (4 - 3.5 * R) * (ufL / wt)
     : null;
 
   // Equilibrated Kt/V (Daugirdas & Schneditz)
@@ -98,9 +113,13 @@ export default function KtvPage() {
    * ekranda "1.20" ama hukum "YETERSIZ DIYALIZ" (esik >= 1.2). Ekran, kendi
    * esigine esit bir sayi gosterirken yetersizlik ilan ediyordu.
    */
-  const spGos  = spKtV !== null ? Math.round(spKtV * 100) / 100 : null;
-  const eGos   = eKtV  !== null ? Math.round(eKtV  * 100) / 100 : null;
-  const urrGos = urr   !== null ? Math.round(urr) : null;
+  /* İKİNCİ KATMAN: `!== null` yetmez, SONLU olmalı. Yalnızca hesabı
+     kapatmak ileride başka bir yoldan gelen NaN'ı yine sızdırırdı
+     (belgedeki `sodium` kalıbı: gösterim VE hesap birlikte korunur). */
+  const sonlu = (x: number | null) => (x !== null && Number.isFinite(x) ? x : null);
+  const spGos  = sonlu(spKtV) !== null ? Math.round((spKtV as number) * 100) / 100 : null;
+  const eGos   = sonlu(eKtV)  !== null ? Math.round((eKtV  as number) * 100) / 100 : null;
+  const urrGos = sonlu(urr)   !== null ? Math.round(urr as number) : null;
 
   const spOk  = spGos  !== null && spGos  >= 1.2;
   const eOk   = eGos   !== null && eGos   >= 1.0;
@@ -116,7 +135,7 @@ export default function KtvPage() {
    * `kdigo-aki`deki "AKI Kriteri Yok" ile aynı sınıf: değerlendirememek ile
    * olumsuz değerlendirmek AYNI ŞEY DEĞİL.
    */
-  const degerlendirilebilir = spKtV !== null && eKtV !== null && urr !== null;
+  const degerlendirilebilir = sonlu(spKtV) !== null && sonlu(eKtV) !== null && sonlu(urr) !== null;
   const yeterli = degerlendirilebilir && spOk && eOk && urrOk;
 
   /* Sonuç panelinin çizilme ölçütü: kullanıcı beş alanı da doldurmuş, yani
@@ -213,6 +232,8 @@ export default function KtvPage() {
               <p role="alert" className="mt-2 text-[11px] font-bold text-slate-600">
                 {preOk && postOk && post >= pre
                   ? "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — diyaliz üreyi azaltır. İki alan yer değiştirmiş olabilir."
+                  : hasAll && !lnTanimli
+                  ? "Girilen değerlerle Daugirdas II tanımsız: seans süresine göre üre düşüşü formülün kapsadığı aralığın dışında. Süreyi ve BUN değerlerini birlikte kontrol edin — URR aşağıda yine de hesaplandı."
                   : "Bir değer makul aralığın dışında: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L · ağırlık 20–300 kg."}
               </p>
             )}
