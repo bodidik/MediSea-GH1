@@ -275,7 +275,7 @@ export default async function BranchListPage({
             */}
             <h2 className="sr-only">{specialty.title} konuları</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
-            {mainTopics.map((topic) => {
+            {mainTopics.map((topic, i) => {
               const subCount = childCounts[topic.slug] || 0;
               return (
                 <Link
@@ -283,8 +283,29 @@ export default async function BranchListPage({
                   href={`/topics/${slug}/${topic.slug}`}
                   className={`group flex items-center gap-3 p-3 bg-white border border-slate-100 rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] ${specialty.color}`}
                 >
+                  {/*
+                    ROZET SIRA NUMARASI, SIRALAMA ANAHTARI DEĞİL.
+
+                    Bir dönem ham `meta.order` basılıyordu ve bir dizi GİBİ
+                    görünüyordu — oysa o anahtar branştaki BÜTÜN konuları
+                    (çocuklar dahil) numaralıyor, bu sayfa ise yalnızca üst
+                    düzeyi listeliyor. Ölçüldü:
+
+                      endokrinoloji  0,1,1,2,3,4,4,5,6,10   (iki 1, iki 4)
+                      hematoloji     1,4,5,5,6,13,29        (boşluk + tekrar)
+                      nefroloji      1,1,2,2,4,5,6,6,7
+
+                    Yani okuyucu tekrar eden ve atlayan bir "sıra" görüyor,
+                    üstelik iki branşta 0'dan başlıyor. Sıralama HÂLÂ
+                    `order` ile yapılıyor; ekrana basılan şey artık listedeki
+                    gerçek konum.
+
+                    Yetim ("Diğer Konular") bölümü "•" basmaya devam ediyor:
+                    onlar küratörlü sıranın parçası değil ve bu ayrım zaten
+                    oradaydı.
+                  */}
                   <span className="text-[10px] font-black text-slate-300 group-hover:text-slate-400 transition-colors italic shrink-0 w-6 text-center">
-                    {topic.order < 999 ? topic.order : "•"}
+                    {i + 1}
                   </span>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">

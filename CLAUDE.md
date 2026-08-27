@@ -18142,3 +18142,55 @@ yönlendirmesi eklemesin diye yazıldı.
 Markdown dışa aktarımının kapsam notu **canlıda**: dosyanın son satırı
 *"el yazısı çizimler, tekrar takvimi ve çalışma günlüğü yalnızca orada
 taşınır."* — ve negatif kontrol olarak vurgu ile not metni yerinde duruyor.
+
+### BRANŞ SAYFASINDAKİ ROZET BİR DİZİ GİBİ GÖRÜNÜYORDU, DEĞİLDİ
+
+Konu kartının solundaki küçük sayı ham `meta.order` idi. O anahtar branştaki
+**BÜTÜN** konuları numaralıyor (çocuklar dahil); sayfa ise yalnızca ÜST
+DÜZEYİ listeliyor. Sonuç, tekrar eden ve atlayan bir "sıra":
+
+| branş | ekrandaki rozetler (önce) |
+|---|---|
+| endokrinoloji | `0,1,1,2,3,4,4,5,6,10` — iki 1, iki 4, **0'dan başlıyor** |
+| hematoloji | `1,4,5,5,6,13,29` |
+| nefroloji | `1,1,2,2,4,5,6,6,7` |
+| onkoloji | `1,1,2,4,4,11,12,16,19,22,23,25` |
+
+Ara değerler o sayfada listelenmeyen ÇOCUK konulara ait, ama okuyucu bunu
+göremiyor — gördüğü şey eksik ve tekrarlı bir numaralandırma.
+
+Bu, deponun *"sayı yazma, saydır"* kuralının ters yönü: burada bir sayı
+YAZILIYOR ve taşımadığı bir anlamı (sıra konumu) iddia ediyor.
+
+**Sıralama DEĞİŞMEDİ** — hâlâ `order`, sonra Türkçe başlık. Değişen yalnızca
+ekrana basılan şey: listedeki gerçek konum. Yetim ("Diğer Konular") bölümü
+`•` basmaya devam ediyor; onlar küratörlü sıranın parçası değil ve bu ayrım
+zaten oradaydı.
+
+**Doğrulama — üretilmiş çıktının tamamı (13 branş, 99 rozet):**
+
+| ölçüt | sonuç |
+|---|---|
+| rozetler 1..n boşluksuz/tekrarsız | **13/13** |
+| sapma | **0** |
+| **negatif** — yetim bölümü | `•` korundu (çıktıda görünüyor) |
+| **negatif** — liste uzunlukları | endokrinoloji 10 · hematoloji 7 · nefroloji 9 · onkoloji 12 — değişmedi |
+
+#### Aynı turda ölçülüp TEMİZ çıkan: sıralama belirlenimli
+
+Bu depoda `readdirSync` sırası bir kez CI'ı 97 koşum boyunca kırmıştı, o
+yüzden branş sayfasının sıralaması ayrıca sınandı:
+
+| ölçüt | sonuç |
+|---|---|
+| `meta.order` taşımayan görünür konu | 1 / 410 |
+| **`Number(order)` NaN olan** | **0** — NaN olsaydı karşılaştırıcı NaN döner ve sıra tanımsızlaşırdı |
+| tie-breaker | `localeCompare(…, "tr", …)` — yerel AÇIKÇA verilmiş |
+| **sırası belirsiz çift** (order eşit **ve** başlık `sensitivity:"base"` altında eşit) | **0 / 54 üst düzey konu** |
+
+Son satır ince bir eksen: `sensitivity: "base"` yalnızca büyük harf/aksan
+farkıyla ayrılan iki başlığı EŞİT sayar; öyle bir çift olsaydı sıra
+`readdirSync`e düşerdi. Yok.
+
+"Diğer Konular" listesi de aynı sıralı diziden filtreleniyor, yani o da
+belirlenimli.
