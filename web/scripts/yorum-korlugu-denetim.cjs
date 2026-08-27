@@ -45,6 +45,7 @@ const DENETIMLER = [
   { ad: 'renk-cifti-denetim', kok: (t) => ['--kok', t] },
   { ad: 'saydamlik-denetim', kok: (t) => ['--kok', t] },
   { ad: 'cop-kapi-denetim', kok: (t) => ['--kok', t] },
+  { ad: 'sizinti-denetim', kok: (t) => ['--kok', t] },
 ];
 
 /**
@@ -85,6 +86,8 @@ const TOHUM = [
   ' * Çöp kapı: const gecerli = ham.trim() !== "" && sayi >= 0 && sayi <= 100;',
   ' * Saydamlık: <p className="opacity-60 text-slate-500">uyarı</p> 3.46 veriyordu.',
   ' * Renk çifti: <span className="bg-amber-500 text-white">2.15</span>',
+  ' * Sızıntı: fetch("/api/log") · localStorage.setItem("hasta", cr) ·',
+  ' *          history.replaceState(null, "", "?cr=" + cr)',
   ' */',
   '',
   /**
@@ -128,6 +131,11 @@ fs.mkdirSync(path.join(T, 'zz-yorum'));
 fs.writeFileSync(path.join(T, 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
 fs.mkdirSync(path.join(T, 'app', 'zz-yorum'), { recursive: true });
 fs.writeFileSync(path.join(T, 'app', 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
+/* ÜÇÜNCÜ ŞEKİL: `sizinti-denetim` yalnızca `<kök>/app/tools` altını tarıyor;
+   yukarıdaki iki şekil ona hiçbir dosya vermiyor ve raporu "0 ölçüldü" derdi.
+   Meta testin kendi tohumu bu yüzden bir kez daha genişletildi. */
+fs.mkdirSync(path.join(T, 'app', 'tools', 'zz-yorum'), { recursive: true });
+fs.writeFileSync(path.join(T, 'app', 'tools', 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
 
 /**
  * BOŞ AĞAÇ — ölçüm kontrolünün dayanağı.
@@ -138,6 +146,7 @@ fs.writeFileSync(path.join(T, 'app', 'zz-yorum', 'page.tsx'), TOHUM, 'utf8');
 const B = fs.mkdtempSync(path.join(os.tmpdir(), 'yorumkor-bos-'));
 fs.mkdirSync(path.join(B, 'zz-yorum'));
 fs.mkdirSync(path.join(B, 'app', 'zz-yorum'), { recursive: true });
+fs.mkdirSync(path.join(B, 'app', 'tools', 'zz-yorum'), { recursive: true });
 
 const sur = (yol, kok) => {
   try { return execFileSync('node', [yol, ...kok], { encoding: 'utf8' }); }
