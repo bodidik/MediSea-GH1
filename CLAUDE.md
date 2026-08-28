@@ -19897,3 +19897,50 @@ havuza dönüyor — ayrı bir liste tutulmuyor.
 oturum üzerinden ulaştı; kullanıcının kararını doğrudan doğrulayamadım.
 Uygulandı çünkü tersine çevirmesi üç satır ve `'yapay zeka taslağı'` zaten
 `ELENEN`deydi — ama raporda böyle yazıyor.
+
+### İki düzeltme CANLIDA doğrulandı — araç kardeş bağları ve İlgili Konular
+
+Belgenin standart sorusu: **kullanıcıya ulaştı mı?** İki düzeltme de canlıda
+tarayıcıyla sürüldü.
+
+**1) Araç grafiği artık kopuk değil.** Site haritasından çekilen 130 araç
+sayfasının tamamı fetch edildi:
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| kardeş bloğu taşıyan araç | **0 / 130** | **129 / 130** |
+| toplam kardeş bağı | 0 | **686** |
+| **kendine bağ** | — | **0** |
+| istek hatası | — | 0 |
+
+`/tools/egfr` örneği: "Nefroloji kategorisinden" başlığı altında altı kardeş
+(`kdigo-aki` · `ktv` · `osmolal-gap` · `sodium` · `spot-urine` · `anion-gap`),
+kendisi listede yok.
+
+**Kardeşsiz kalan tek araç YAPISAL, kusur değil:** `abcd2` kategorisinde
+(Nöroloji) **tek üye**. Tarayıcıda doğrulandı — rozet "Nöroloji 1", canlı
+bölge "1 araç listeleniyor.", listede yalnızca `abcd2`. Kardeş üretmek için
+ikinci bir araç gerekiyor.
+
+**2) İlgili Konular düzeltmesi indi.**
+
+| sayfa | canlıda |
+|---|---|
+| `enfeksiyon/mantar-enfeksiyon-ana-sayfa` | dört ENFEKSİYON konusu (fosfomisin ×2 · glikopeptit · hücre duvarı) — **`anemiler` YOK** |
+| **negatif** — `hematoloji/anemiler` | dört hematoloji konusu (aplastik anemi · B12 ×2 · demir eksikliği) — öneri ALMAYA devam ediyor |
+
+İkinci satır şart: süreç etiketini elemek `anemiler`i öneri havuzundan
+düşürmedi, yalnızca saçma çapraz akrabalığı kaldırdı.
+
+#### ⚠ Ölçüm tuzağı: `/tools` kategori süzgeci HAM HTML'den okunamaz
+
+`?kategori=noroloji` adresini `fetch` ile çekince canlı bölge **"130 araç
+listeleniyor."** diyor — yani süzgeç uygulanmamış gibi görünüyor. Kusur değil:
+süzgeç belgede kayıtlı bir kararla **hidrasyondan SONRA istemcide** uygulanıyor
+(sunucu HTML'i süzülmemiş tam listeyi taşıyor, çünkü `useSearchParams`
+sayfayı sunucuda üretilmez yapıyordu).
+
+Yani bu sayfada kategori sayısını doğrulamak isteyen ölçüm **gerçekten
+gezinmek** zorunda; `fetch` her kategoride 130 döndürür ve bir an "süzgeç
+bozuk" sanılır. Aynı sayfanın ROZET sayıları ise sunucuda basılıyor ve
+fetch ile okunabiliyor — iki sayı farklı katmanlarda.
