@@ -412,16 +412,24 @@ export default async function TopicDetailPage({
   {
     const slugHarita = new Map(allTopics.map((t) => [t.slug, t]));
     const gorulen = new Set<string>([topicSlug]);
-    // ÇOK EBEVEYNLİDE YALNIZCA BİRİNCİL (dizinin ilki) izlenir: bir konunun
-    // tek bir kanonik kırıntı yolu olmalı. İkinci ebeveyni de yürüseydik
-    // aynı sayfa iki farklı ata zinciriyle görünür ve JSON-LD şeması da
-    // (görünen yolla AYNI diziden üretildiği için) çelişirdi.
+    // ÇOK EBEVEYNLİDE TEK BİR ZİNCİR izlenir: bir konunun tek kanonik
+    // kırıntı yolu olmalı. İki zinciri birden yürüseydik aynı sayfa iki
+    // farklı atayla görünür ve JSON-LD şeması da (görünen yolla AYNI
+    // diziden üretildiği için) çelişirdi.
+    //
+    // Zincir İLK GÖRÜNÜR ebeveynden gider, körü körüne `parentler[0]`dan
+    // değil: birincil ebeveyn GİZLİYSE `[0]`da durmak, görünür bir ikinci
+    // ebeveyn varken kırıntıyı boş bırakırdı — oysa konu o hub'ın çocuk
+    // listesinde görünüyor. Tek ebeveynli konularda ikisi AYNI şeydir
+    // (tek aday ya görünür ya değil), yani bugünkü davranış değişmiyor.
     let cur = slugHarita.get(topicSlug);
     while (cur?.parentler.length) {
-      const e = slugHarita.get(cur.parentler[0]);
+      const e = cur.parentler
+        .map((x) => slugHarita.get(x))
+        .find((k) => k && !k.hidden && !gorulen.has(k.slug));
       // gorulen: ölçümde döngü YOK ama veri içerikten geliyor; sonsuz
-      // döngüyü veriye bırakmıyoruz.
-      if (!e || e.hidden || gorulen.has(e.slug)) break;
+      // döngüyü veriye bırakmıyoruz (süzgeç yukarıda, burada son kontrol).
+      if (!e) break;
       atalar.unshift({ slug: e.slug, title: e.title });
       gorulen.add(e.slug);
       cur = e;

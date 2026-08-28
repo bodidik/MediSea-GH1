@@ -19723,3 +19723,34 @@ karşılaştırılabilir hâle geldi.
 yazılı** — 25 aday bir daha kovalanmasın. `--kontrol` iki yönlü: kod içindeki
 dizi yakalanıyor, **yalnızca YORUMDA geçen aynı şekil sayılmıyor** (bu depoda
 yorumlar kusurları birebir alıntılıyor).
+
+#### Çok ebeveynliliğin açtığı kenar durum: birincil ebeveyn GİZLİYSE kırıntı boş kalıyordu
+
+Kırıntı ata zinciri `parentler[0]`ı körü körüne izliyordu. Tek ebeveynli
+veride bu doğru; ama çok ebeveynlide birincil ebeveyn GİZLİYSE zincir orada
+duruyor ve **görünür bir ikinci ebeveyn varken kırıntı ata göstermiyordu** —
+oysa konu o hub'ın çocuk listesinde çiziliyor. Yani aynı ilişki bir yüzeyde
+var, ötekinde yok.
+
+Zincir artık **ilk GÖRÜNÜR** ebeveynden gidiyor. Tek ebeveynli konularda ikisi
+tanım gereği aynı şeydir (tek aday ya görünür ya değil).
+
+| kontrol | sonuç |
+|---|---|
+| **negatif** — 13 branş + 410 konu, canlı ↔ yerel | **fark 0** (kırıntıda ata taşıyan konu 337 ↔ 337) |
+| **pozitif** — `hepatit-b`ye `[viral-hepatitler(GİZLİ), karaciger-hastaliklari(görünür)]` | canlıda ata **YOK** → yerelde **`karaciger-hastaliklari` VAR** |
+| gizli ataya bağ | **yok** — "gizli atada durulur" kuralı korundu |
+| iki yön tutuyor mu | `karaciger-hastaliklari` çocukları: **hepatit-b** + karaciger-hastasina-yaklasim |
+
+Tohum geri alındı (`git diff content/` = 0 satır).
+
+**Ölçüm tuzağı — çapa BOŞLUKLU yazıldı, tohum hiç uygulanmadı.** İlk deneme
+`"parent": "viral-hepatitler"` arıyordu; içerik dosyaları **minified** ve
+gerçek biçim `"parent":"viral-hepatitler"` (boşluksuz). Betik `ÇAPA YOK` deyip
+düştü, dosya değişmedi ve derleme hiç çalışmadı — ama `;` ile zincirlendiği
+için ekrana `build: 1` bastı ve bir an "derleme düştü" sanıldı. Zincirde
+`&&` ile `;` karışımı, hangi adımın gerçekten koştuğunu gizliyor.
+
+**İkinci tuzak:** tohumlu derleme sürerken 3100 hâlâ **eski** derlemeyi
+sunuyordu ve `curl` 200 dönüyordu. Belgede kayıtlı "eski derlemeyi ölçtüm"
+tuzağı; bu turda ölçüm yapılmadan önce derleme bitişi ayrıca doğrulandı.
