@@ -20653,3 +20653,56 @@ kendisi**.
 **Kural: hesaplanmış stil ölçmeden önce sayfayı YENİDEN YÜKLE.** `fetch` ile
 `document` aynı turda farklı sürümleri gösterebiliyor ve ikisi de yetkili
 görünüyor — ayırt edici sinyal, ikisini AYNI ölçümde karşılaştırmak.
+
+### YUVALAMA KUSURU KONU SAYFASINA ÖZGÜYMÜŞ — 14 sayfa türü + 130 araç tarandı
+
+Geçen turda bulunan sınıf ("kardeş bölümler farklı düzeyde, atlama YOK")
+öteki yüzeylere sürüldü. Sayı dağılımı yetmez — atlamasız bir yuvalama
+hatası ancak taslağı OKUYARAK görülüyor.
+
+| ölçüt | sonuç |
+|---|---|
+| taranan sayfa türü | 14 (açık site · araç · premium · kimlik · çalışma) |
+| düzey atlaması | **0** |
+| `h1` sayısı 1 olmayan | **0** |
+| **kardeş bölümler farklı düzeyde** | **0** |
+
+İki karmaşık sayfanın taslağı elle okundu ve ikisi de doğru:
+
+```
+/topics/nefroloji      h1 > h2 "Nefroloji konuları" · h2 "Diğer Konular" (KARDEŞ)
+                            > h3 konu kartları
+/uyelik                h1 > h2 × 4 bölüm (KARDEŞ) > h3 özellik kartları
+```
+
+Yani geçen turki kusur **konu sayfasına özgüymüş**; öteki yüzeylerde
+kardeşler zaten aynı düzeyde.
+
+**`/uyelik` başlığındaki "ücretsiz,neyin" yine sahte bulgu** — belgede kayıtlı:
+sayfada `<br>` var, etiket sökme iki kelimeyi birleştiriyor. Aynı tuzağa
+ikinci kez düşülmedi çünkü kayıt okundu.
+
+#### Yan bulgu: kardeş bloğu 120 araç sayfasına İLK belge bölümünü verdi
+
+Belgede kayıtlıydı: *"130 araç sayfasının 130'unda `h1` 1, ama `<h2>` kullanan
+yalnızca 10"* — yani 120 hesaplayıcıda belge yapısı tek başlıktan ibaretti ve
+mekanik süpürme bilerek reddedilmişti (sınıf dizesi başlıkla etiketi ayırmıyor).
+
+Kardeş bloğu (`<h2>Nefroloji kategorisinden`) bunu yan etki olarak kapatmış.
+Canlıda ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| araç | 130 |
+| **`h2` taşıyan** | **129** |
+| `h2` taşımayan | **1 — `abcd2`** |
+| düzey atlaması | **0** |
+
+`abcd2` kategorisinde tek üye olduğu için kardeş bloğu almıyor; dolayısıyla
+belge taslağı hâlâ çıplak bir `h1`. Yapısal, kusur değil — ikinci bir Nöroloji
+aracı eklendiği gün kendiliğinden kapanır.
+
+**Aktarılabilir gözlem: bir gezinme eklemesi belge yapısını da düzeltebiliyor.**
+Reddedilen mekanik süpürmenin hedefi (120 sayfaya anlamlı bölüm başlığı) başka
+bir işin yan ürünü olarak, tek bir üreteç satırıyla ve insan kararı
+gerektirmeden karşılandı.
