@@ -20320,3 +20320,68 @@ DEĞİŞTİRİLMEDİ**, çünkü glif seçimi bir sunum kararı ve içerik fark�
 **Kalıcı çare ölçütte: klinik not taraması İKİ glifi de kabul etmeli.**
 Tek glife bağlanan her sürüm bu tek aracı sahte kusur olarak raporluyor —
 üç kez oldu, üçünde de kusur ölçütteydi.
+
+### PAYLAŞIM KARTLARI YENİ İÇERİKLE DOĞRULANDI — ve kartın İÇİNDEKİ metin PİKSEL SAYARAK ölçüldü
+
+14 yeni konu + yeniden üretilmiş başlık dizini, bu kırılgan rotanın taze
+sınavıydı. Belgede kayıtlı kırılma biçimi: *"başlık dizini anahtarı tutmuyor
+ve kart slug'ı yazıyla basıyordu."*
+
+| ölçüt | sonuç |
+|---|---|
+| kart HTTP · tip · boyut | **200 · image/png · 1200×630** (6 sayfada) |
+| `og:title` | gerçek başlık (slug değil) |
+| **başlık dizini** | **423 kayıt = 423 görünür konu** |
+| dizinde olmayan görünür konu | **0** |
+| dizinde olan GİZLİ konu | **0** |
+| dizinde olup dosyası olmayan | **0** |
+
+#### Kartın İÇİNDEKİ metni ölçmenin yolu: aynı origin + canvas + mürekkep sayımı
+
+Bu ortamda ekran görüntüsü alınamıyor (panel kompozit etmiyor), yani karta
+"bakmak" mümkün değil. Ama kart **aynı origin'de** olduğu için canvas'a
+çizilip piksel sayılabiliyor: zemin rengi sol üst köşeden alınıp başlık
+bandındaki (dikeyde %30–70) farklı pikseller sayılıyor.
+
+Mürekkep başlık uzunluğuyla ölçekleniyor — yani kart gerçekten başlığı basıyor:
+
+| konu | başlık uzunluğu | mürekkep |
+|---|---|---|
+| `kalp-yetersizligi-arni-etkilesimler` | 58 krk | **%7.26** |
+| `acth-aksi-ve-cushing-hastaligi` | 30 krk | %5.32 |
+| `respiratuvar-asidoz` | 19 krk | **%3.75** |
+
+**İlk gizli konu seçimim AYIRT EDİCİ DEĞİLDİ** ve bunu ölçüm gösterdi: o
+konunun slug'ı da başlığı da 30 karakter, yani mürekkep ikisini ayıramaz.
+Bir yedek yolu sınayacaksan iki dalın ÖLÇÜLEBİLİR biçimde farklı olduğu
+girdiyi seç.
+
+#### ⚠ GİZLİ konularda `og:title` ile KART birbirini tutmuyor — ve sebebi taşıyıcı
+
+Slug'ı 3, başlığı 47 karakter olan bir gizli konu (`gastroenteroloji/ibh`)
+seçilince ayrım netleşti:
+
+| yüzey | ne diyor |
+|---|---|
+| `og:title` metası | **"İnflamatuar Bağırsak Hastalıkları (ÜK ve Crohn)"** |
+| **kart görseli** | mürekkep **%0.67** — yani "ibh" basıyor |
+
+Sebep: kart rotası `fs` kullanamıyor (belgede kayıtlı), o yüzden başlığı
+statik `baslik-index.json`'dan okuyor — ve o dizin **gizli konuları bilerek
+eliyor** (`baslik-index.cjs:59`).
+
+**"Dizine gizlileri de ekle" ÇÖZÜM DEĞİL — dizin taşıyıcı.** Tüketiciler
+sayıldı: üç OG rotası ve **`topics/page.tsx`'in kendisi**. O sayfa hem konu
+listesini hem **branş sayaçlarını** bu dizinden kuruyor. Gizliler eklenirse:
+
+1. yayımlanmamış 46 konu kütüphane sayfasında **listelenir**,
+2. branş sayaçları **423 → 469** olur ve dört yüzeyde doğrulanmış sayı
+   mimarisi kırılır.
+
+Yani kartın slug'a düşmesi, dizinin gizliyi elemesinin **bedeli**.
+
+**DEĞİŞTİRİLMEDİ.** Şiddet düşük: gizli konular `noindex`, site haritasında
+yok ve görünür sayfalardan yalnızca **1** bağ alıyor (ölçüldü). Gerçekten
+kapatılmak istenirse doğru çare dizine gizli eklemek değil, **OG rotaları
+için AYRI bir dizin** (ya da `hidden` bayrağı taşıyan tek bir dizin ve
+tüketici tarafında süzme) — yani veri değil şema değişikliği.
