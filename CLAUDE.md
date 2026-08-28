@@ -19754,3 +19754,26 @@ için ekrana `build: 1` bastı ve bir an "derleme düştü" sanıldı. Zincirde
 **İkinci tuzak:** tohumlu derleme sürerken 3100 hâlâ **eski** derlemeyi
 sunuyordu ve `curl` 200 dönüyordu. Belgede kayıtlı "eski derlemeyi ölçtüm"
 tuzağı; bu turda ölçüm yapılmadan önce derleme bitişi ayrıca doğrulandı.
+
+#### Oturumun hiyerarşi yığını CANLIDA tek süpürmede doğrulandı
+
+Beş değişiklik ardarda gitti (çok ebeveyn · beraberlik bozucu sıralama · branş
+şeridi türevi · premium panosu türevi · kırıntı ilk-görünür-ata). Dördü mevcut
+içerikte kanıtlanmış no-op; asıl ölçüt **hiçbir şeyin gerilememesi**.
+
+Aynı anlık görüntü ölçütü (13 branş + 410 konu; her konuda Alt Başlıklar ·
+İleri Okuma · kırıntı bağları) üç kez sürüldü:
+
+| karşılaştırma | fark |
+|---|---|
+| oturum BAŞINDAKİ canlı ↔ son canlı | **4 konu** — hepsi sıralama düzeltmesi, **kümeler aynı** |
+| sıralama sonrası canlı ↔ son canlı | **0** |
+
+Canlı son durum: **410 konu · kırıntıda ata 337 · Alt Başlıklar 58 ·
+İleri Okuma 106.**
+
+**Aktarılabilir kural: art arda giden değişikliklerde her turun kendi
+doğrulaması yetmez.** Beş değişikliğin beşi de tek tek ölçülmüştü; yığının
+BÜTÜN olarak gerilemediğini ancak oturum başındaki tabanla karşılaştırmak
+gösteriyor — ve o taban ölçüm ilk turda alınmasaydı bugün yeniden
+kurulamazdı.
