@@ -21025,3 +21025,58 @@ Yani hiçbir genişlikte ikisi birden duyurulmuyor. **DEĞİŞTİRİLMEDİ.**
 ögenin AYNI ANDA erişilebilirlik ağacında olup olmadığını ölç.** Kaynak ya da
 ham HTML taraması ikisini de görür; ağaçta yalnızca biri vardır ve o zaman
 belirsizlik yoktur.
+
+### ⚠ BU ORTAMDA ERİŞİLEBİLİR AD İKİ YÖNTEMLE DE GÜVENİLİR ÖLÇÜLEMİYOR — bulgu ASKIDA
+
+Puan rozeti taşıyan seçim düğmelerinde ad birleşmesi arandı. **Sonuç bir kusur
+değil, bir ÖLÇÜM SINIRI** — ve bunu kaydetmek gerekiyor çünkü iki yöntem de
+inandırıcı ama çelişiyor.
+
+Şekil şu (`apache2`, 88 düğmenin 68'i):
+
+```
+<button><span class="w-4 h-4 flex">3</span>39–40.9</button>
+```
+
+| yöntem | verdiği ad |
+|---|---|
+| `textContent` (`aria-hidden` alt ağaçları çıkarılmış) | **"339–40.9"** |
+| tarayıcı panelinin `read_page` ağacı | **"39–40.9"** |
+
+Birincisi doğruysa ekran okuyucu "üç yüz otuz dokuz" diyor — gerçek bir kusur.
+İkincisi doğruysa rozet ada hiç girmiyor — kusur yok.
+
+#### Tohum, HAKEM SANDIĞIM yöntemi çürüttü
+
+Sayfaya üç düğme enjekte edilip ağaç yeniden okundu:
+
+| tohum | `textContent` | `read_page` |
+|---|---|---|
+| `<span>ZROZET</span>ZETIKET` | `ZROZETZETIKET` | **"ZETIKET"** |
+| **`<span aria-hidden>ZROZET</span>ZETIKET`** | `ZROZETZETIKET` | **"ZETIKET"** |
+| düz metin `ZROZET ZETIKET` | aynı | `ZROZET ZETIKET` |
+
+İlk iki satır **yalnızca `aria-hidden` ile ayrılıyor** ve araç ikisine de aynı
+adı veriyor. Yani `read_page` bu şekil için gerçek ad hesabını yapmıyor —
+öndeki `<span>`i koşulsuz atıyor. Hakem olarak kullanılamaz.
+
+`textContent` de hakem değil: accname sözleşmesinde ardışık düğümler
+birleştirilirken **blok düzeyi ögeler arasına boşluk konur**, ve rozet
+`display: flex`. Yani gerçek ad büyük olasılıkla **"3 39–40.9"** — doğru ve
+zararsız. Ama bu bir ÇIKARIM, ölçüm değil.
+
+**DEĞİŞTİRİLMEDİ.** 14 araçta 17 yeri etkileyen mekanik bir değişiklik,
+doğrulanamayan bir ölçüme dayanarak yapılmaz. Kusur varsa çaresi de belli
+(`aria-label={\`${opt.pts} puan — ${opt.label}\`}`), ama önce adın gerçekten
+nasıl hesaplandığı ölçülmeli — bu ortamda mümkün değil.
+
+**Aktarılabilir kural: `read_page` ağacındaki adları erişilebilir adın
+HAKEMİ sayma.** Bu depoda ad hesabı zaten üç kez yanılttı (`htmlFor` araması ·
+`closest('label')` · saran etiket) ve dördüncüsü bu: panelin ağacı da kendi
+çıkarımını yapıyor. Bir ad iddiası kuracaksan **tohumla sına** — `aria-hidden`
+taşıyan ve taşımayan iki kopya aynı adı veriyorsa yöntem kırıktır.
+
+Yan ölçüm (bu tarama sırasında, güvenilir olan kısım): 14 sayfa türünde
+**adsız düğme 0**, `title`ı ad yerine kullanan **0**, yalnızca glif taşıyan
+**0**; `apache2`de 88 düğmenin 86'sı `aria-pressed` taşıyor ve 24px altı
+dokunma hedefi **0**.
