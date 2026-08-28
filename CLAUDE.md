@@ -20616,3 +20616,40 @@ typecheck, `arayuz-denetim`, `ic-bilesen-denetim`, derleme 636/636).
 göstermez.** Atlama yalnızca `h(n) → h(n+2)` sıçramasını yakalar; kardeş
 bölümlerin FARKLI düzeyde olması atlamasız bir yuvalama hatasıdır. Ölçüt
 şu olmalı: **aynı işlevdeki bölümler aynı düzeyde mi?**
+
+#### Taslak düzeltmesi canlıda — ve `fetch` ile `document` AYNI TURDA çelişti
+
+Düzeltme üç sayfa şeklinde de indi (hub · yaprak · yeni hub): dört bölüm de
+`h2`, tanıtım `h3`, **düzey atlaması 0**, `h4` sayısı **0**.
+
+Görsel negatif kontrol, "önce" değerleriyle karşılaştırıldı — **yalnızca
+etiket değişti**:
+
+| öge | fark |
+|---|---|
+| İleri Okuma · İlgili Konular | `etiket: H3 → H2` (boyut · ağırlık · aile · **mt 24px** · mb · satır: aynı) |
+| premium tanıtımı | `etiket: H4 → H3` (**mt 16px korundu** — `mt-4` telafisi tuttu) |
+| Alt Başlıklar (kontrol) | **DEĞİŞMEDİ** |
+
+##### ⚠ Aynı turda `fetch` TAZE, `document` BAYAT olabilir
+
+İlk görsel ölçüm `İleri Okuma`yı hâlâ **H3** gösterdi ve bir an "düzeltme
+inmedi ya da bozuldu" sanıldı. Aynı turda yapılan `fetch` ölçümü ise h2
+diyordu. İkisi de doğruydu:
+
+| kaynak | ne gösteriyor |
+|---|---|
+| `fetch('/topics/…')` | **sunucudan taze** HTML — yeni dağıtım |
+| `document` | sekmede **dağıtımdan ÖNCE** yüklenmiş belge |
+
+Sekme bir önceki turda o adrese gitmişti; dağıtım aradan sonra indi. Yani
+belge eskiydi ve `getComputedStyle` eski ağacı ölçüyordu.
+
+Bu, belgede kayıtlı iki bayatlık tuzağından **farklı** bir biçim: orada
+sunucu eskiydi (`pkill` süreci öldürmemişti) ya da React henüz yeniden
+çizmemişti. Burada sunucu da React de doğru; eski olan **sekmedeki belgenin
+kendisi**.
+
+**Kural: hesaplanmış stil ölçmeden önce sayfayı YENİDEN YÜKLE.** `fetch` ile
+`document` aynı turda farklı sürümleri gösterebiliyor ve ikisi de yetkili
+görünüyor — ayırt edici sinyal, ikisini AYNI ölçümde karşılaştırmak.
