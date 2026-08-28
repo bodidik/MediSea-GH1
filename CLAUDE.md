@@ -19308,3 +19308,28 @@ oraya bağ sızdırmıyor.
 
 Böylece konu sayfasının üç bağlantı bölümünün üçü de ÜYELİK düzeyinde
 kapandı; yeniden ölçmeye gerek yok — ilgili kod değişmedikçe.
+
+#### Kapsam boşluğu kapatıldı: rozet yalnızca ÜST DÜZEYDE görünüyor, ara hub'lar ölçülmemişti
+
+Yukarıdaki 38 kart branş sayfasından geliyordu ve branş sayfası yalnızca üst
+düzey konuları listeliyor. Yani `hematolojik-maligniteler -> lenfomalar` gibi
+**ara düzey hub'lar** hiç ölçülmemişti — o sayfaların da kendi "Alt Başlıklar"
+ve "İleri Okuma" bölümleri var.
+
+Ölçüt rozete değil İÇERİĞE bağlandı (çocuğu olan her görünür konu):
+
+| ölçüt | değer |
+|---|---|
+| görünür konu | 410 |
+| ebeveyn kaydı taşıyan | 356 |
+| **çocuğu olan görünür konu (hub)** | **125** |
+| ölçülen | **125** |
+| üyelik sapması | **0** |
+| çözülemeyen ebeveyn kaydı | 16 (≈45 konu — belgede kayıtlı "asılı" sınıfları) |
+
+Kapsam **38 → 125**. Ölçüt bir önceki turda tohumla sınandığı için kör değil.
+
+**Aktarılabilir kural: bir listeyi RENDER EDİLMİŞ bir yüzeyden türetiyorsan,
+o yüzeyin kendi süzgecini de miras alırsın.** Rozet ölçütü sessizce "üst
+düzey" süzgecini taşıyordu ve kapsamı üçte bire indiriyordu; ölçütü içeriğe
+bağlamak bunu kaldırdı.
