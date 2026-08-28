@@ -19195,3 +19195,75 @@ gerçek sayı **29/41 (%71)**. Yani yaklaşımım kapsamı **%19 fazla** göster
 Zincir birebir kopyalanınca sayı oturdu. Belgedeki kural bu oturumda üçüncü
 kez işledi: *"bir ölçütü yeniden yazma — uygulamanın kendi ölçütünü OKU."*
 (Öncekiler: ebeveyn çözümlemesi ve `isoTarih` sapı.)
+
+### ÖLÇÜT SERTLEŞTİRİLDİ — bölüm sınırı DÜZ METİNLE aranmaz, ikinci biçim bir KONU ADIYDI
+
+Bir önceki tur "N alt başlık" rozetinin tek sapmasını (`hematolojik-maligniteler`
+rozet 6 · sayfa 12) ölçüm artefaktı diye kapatmış ama **ölçütü düzeltmemişti**.
+Düzeltilince ikinci bir artefakt biçimi çıktı ve o daha sinsiydi.
+
+**Birinci biçim — dilim GÖVDEYİ yutuyor.** Bayt konumlarıyla doğrulandı:
+
+```
+Alt Başlıklar @14951  <  [data-readable] @16807  <  İleri Okuma @24351
+```
+
+Yani "Alt Başlıklar" kartı okuma gövdesinden ÖNCE çiziliyor; iki başlık arası
+dilim 7.5 KB'lık gövdeyi ve içindeki **13 düzyazı konu bağını** da alıyordu
+(`/all` · `/kll` · `/hodgkin-lenfoma` · `/nhl` · `/burkitt-lenfoma` · `/aml`…).
+Gerçek kesimle **Alt Başlıklar 2 + İleri Okuma 4 = 6 = rozet**; sayfa kendi
+sayısını da basıyor (`>2<!-- --> kategori`). Ürün kusuru YOK.
+
+**İkinci biçim — sınır dizesi bir KONU ADININ içinde geçiyor.** Gövde sınırı
+eklenince yeni bir sapma belirdi (`polikistik-bobrek-hastaligi-pkd` rozet 3 ·
+sayfa 1). Sebep:
+
+```html
+<h3>ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar</h3>
+```
+
+Bu bir ÇOCUK KONUNUN adı ve "İleri Okuma" dizesini taşıyor; dilim orada
+**676 baytta erken kesiliyordu.** Gerçek bölüm başlığı 18.5 KB ilerideydi.
+
+| ölçüt sürümü | hematolojik-maligniteler | polikistik-bobrek-pkd |
+|---|---|---|
+| düz metin (1. sürüm) | **12** (rozet 6) | 3 ✓ |
+| + gövde sınırı (2. sürüm) | 6 ✓ | **1** (rozet 3) |
+| kapanış etiketi çapası (3. sürüm) | **6 ✓** | **3 ✓** |
+
+Çapalar artık `Alt Başlıklar</h2>` · `İleri Okuma</h3>` · `İlgili Konular</h3>`
+— üçü de üretilmiş HTML'de **tam bir kez** geçiyor (sayıldı). Konu adı bir
+kapanış etiketi taşımadığı için ikinci biçim kapanıyor.
+
+**Aktarılabilir kural: bir bölüm sınırını GÖRÜNEN METİNLE arama.** Bu depoda
+içerik başlıkları arayüz etiketleriyle aynı ifadeyi taşıyabiliyor ve ayrım
+yalnızca MARKUP'ta duruyor. İki artefaktın yönü de zıt: biri fazla sayıyor
+(gövdeyi yutuyor), öteki eksik sayıyor (erken kesiyor) — yani tek yönlü bir
+"yanlış pozitife çalışır" güvencesi de yanlıştı.
+
+#### ÜÇ BAĞIMSIZ YOL karşılaştırıldı — 38 kart, sapma 0
+
+Sertleştirilmiş ölçütün doğruluğu tek başına kanıt değil, çünkü ikisi de aynı
+HTML'i okuyor. Üçüncü yol eklendi: **içerik dosyalarından** `meta.parent`
+sayımı (canlıya hiç bakmıyor, `meta.hidden` eleniyor, ebeveyn adı aksan
+katlamasıyla çözülüyor).
+
+| ölçüt | değer |
+|---|---|
+| karşılaştırılan kart | **38** |
+| içerik = rozet = sayfa OLMAYAN | **0** |
+| **pozitif kontrol** (içerik gerçeğine sahte 99 tohumlandı) | **yakalandı** |
+
+İçerik yolunun kör olmadığı yapısal olarak da kesin: `norm()` çözemeseydi
+içerik sayısı her yerde 0 çıkar ve **38 kartın 38'i** işaretlenirdi.
+
+#### Aynı turda ÜÇ kayıtlı tuzak yeniden ısırdı
+
+| tuzak | bu turdaki hâli |
+|---|---|
+| `python - <<PY` bu ortamda asılıyor | **yedek olarak** yazdım, 2 dk bloke etti — "yedek olarak bile yazma" kuralı ihlal edildi |
+| heredoc ters bölü düşürüyor | `'[\s\S]{0,900}'` dosyaya `[\s\S]` indi → JS dizesinde `[sS]` → regex hiçbir şey tutmadı |
+| "0 kusur" ile "0 ölçüm" aynı görünür | körlük koruması **çalıştı**: rapor "0 kart ölçüldü — ölçüt kör" dedi ve sahte "temiz" sonucu engelledi |
+
+İkincisinin çaresi kaçışı hiç yazmamak: `[^]` (her karakter, satır sonu
+dahil) ters bölü içermiyor ve `[\s\S]` ile aynı işi görüyor.
