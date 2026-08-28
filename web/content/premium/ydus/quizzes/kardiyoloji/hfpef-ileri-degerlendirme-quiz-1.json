@@ -303,6 +303,38 @@
       ],
       "zorluk": "orta",
       "kaynak": "Kosiborod et al. N Engl J Med 2023 (STEP-HFpEF); SUMMIT Trial (Tirzepatide in obese HFpEF) 2024-2025"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış beş yaşında, obez (VKİ 34 kg/m²), tip 2 diyabet ve esansiyel hipertansiyon öyküsü olan kadın hasta, son aylarda giderek artan efor dispnesi şikâyetiyle kardiyoloji polikliniğine başvuruyor.\n\nFizik muayene:\nKan basıncı 145/85 mmHg\nNabız 88/dk, aritmik\nPretibial ödem (++)\nEKG: atriyal fibrilasyon\n\nİstirahat ekokardiyografisi:\nLVEF %55 (korunmuş)\nLAVI: 36 mL/m²\nPik TR hızı: 2.9 m/sn\nSeptal e′ hızı: 8 cm/sn\nOrtalama E/e′ oranı: 12\n\nLaboratuvar:\nNT-proBNP: 250 pg/mL (efor dispnesi şiddetine göre beklenenden düşük)\n\nBu hastanın Korunmuş Ejeksiyon Fraksiyonlu Kalp Yetersizliği (HFpEF) açısından değerlendirilmesi, tanısal skorlamaları ve yönetimi ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Ekokardiyografik ASE/EACVI kriterlerine göre hastada iki parametre pozitif, iki parametre negatif olduğundan mevcut bulgularla diyastolik fonksiyon durumu “belirsiz (indeterminate)” olarak sınıflandırılır.",
+        "B": "Hastanın H2FPEF (Mayo Clinic) skoru hesaplanırken, klinik parametreler içinde HFpEF olasılığına en yüksek puan katkısını atriyal fibrilasyon (3 puan) sağlayacaktır.",
+        "C": "Şiddetli dispneye rağmen NT-proBNP düzeyinin düşük (250 pg/mL) kalması, adipositlerdeki klerens reseptörlerinin artışına bağlı gelişen “natriüretik peptid (NP) eksikliği sendromu” ile açıklanabilir.",
+        "D": "HFA-PEFF algoritmasına göre hastanın “ara (intermediate) olasılıklı” grupta yer aldığı kabul edilirse, HFpEF tanısını kesinleştirmek için başvurulması gereken altın standart test Global Longitudinal Strain (GLS) analizi ile apikal sparing paterninin gösterilmesidir.",
+        "E": "Bu hastada sistemik venöz konjesyonun, serozal inflamasyonun ve sağ kalp yükünün değerlendirilmesinde CA-125 düzeyi kıymetli bir tamamlayıcı biyobelirteç olarak kullanılabilir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "HFA-PEFF algoritmasında ara olasılıklı grupta altın standart İNVAZİV HEMODİNAMİK EGZERSİZ TESTİdir (sağ kalp kateterizasyonu): PCWP istirahatte ≥ 15 mmHg veya egzersizde ≥ 25 mmHg tanıyı kesinleştirir. GLS ile apikal sparing kardiyak amiloidoza özgü bir paterndir; genel HFpEF tanısının hemodinamik referans testi değildir.",
+      "aciklama_detay": "Korunmuş ejeksiyon fraksiyonlu kalp yetersizliği (HFpEF), özellikle obezite, ileri yaş ve atriyal fibrilasyon gibi komorbiditelerin eşlik ettiği senaryolarda tanısı en zor konulan sendromlardan biridir. ESC’nin HFA-PEFF algoritmasında, istirahat ekokardiyografisi ve natriüretik peptid düzeyleri ile net bir sonuca varılamayan (ara/intermediate olasılıklı) hastalarda tanıyı ekarte etmek veya doğrulamak için altın standart yöntem İnvaziv Hemodinamik Egzersiz Testi’dir (sağ kalp kateterizasyonu). Kateterizasyonda pulmoner kapiller uç basıncının (PCWP) istirahatte ≥ 15 mmHg veya egzersiz sırasında ≥ 25 mmHg olarak saptanması HFpEF tanısını kesinleştirir.\n\nSeçenekte belirtilen Global Longitudinal Strain (GLS) ve apikal sparing paterni ise kardiyak amiloidozun spesifik bir bulgusu olup, genel HFpEF tanısını kesinleştiren nihai (altın standart) hemodinamik referans test değildir.\n\nBu vakada ASE/EACVI dört majör kriterinden LAVI (36 mL/m², eşik > 34) ve TR hızı (2.9 m/sn, eşik > 2.8) pozitif; septal e′ (8 cm/sn, eşik < 7) ve ortalama E/e′ (12, eşik > 14) negatiftir. Dört kriterden yalnızca ikisinin pozitif olması tabloyu belirsiz kategoriye sokar — ve tam da bu belirsizlik, invaziv hemodinamik değerlendirme ihtiyacını doğuran durumdur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — ASE/EACVI dört majör kriteri: LAVI > 34 mL/m², TR hızı > 2.8 m/sn, septal e′ < 7 cm/sn (veya lateral < 10) ve ortalama E/e′ > 14. Vakada LAVI (36) ve TR (2.9) pozitif iken septal e′ (8) ve E/e′ (12) negatiftir. Dört kriterden ikisinin pozitif olması “belirsiz (indeterminate)” kategoriyi tanımlar.",
+        "B": "DOGRU ifade — Toplam 9 puanlık H2FPEF skorlama sisteminde en yüksek ağırlığa sahip parametre atriyal fibrilasyondur (3 puan). Bunu obezite (VKİ > 30 kg/m²; 2 puan) izler; yaş, hipertansiyon, pulmoner hipertansiyon ve yüksek dolum basıncı (E/e′ > 9) 1’er puanlık katkı sağlar.",
+        "C": "DOGRU ifade — Obez HFpEF fenotipinde (özellikle VKİ > 30) artmış yağ dokusu üzerindeki natriüretik peptid klerens reseptörlerinin (NPR-C) aşırı ekspresyonu, dolaşımdaki BNP ve NT-proBNP düzeylerinin hızla yıkımına yol açar. Literatürde “NP eksikliği sendromu” olarak adlandırılır ve obez hastalarda kalp yetersizliği tanısının gözden kaçmasına neden olabilir.",
+        "D": "YANLIS ifade (doğru yanıt) — Ara olasılıklı HFA-PEFF grubunda altın standart, invaziv hemodinamik egzersiz testidir (PCWP istirahatte ≥ 15 mmHg, egzersizde ≥ 25 mmHg). GLS ile gösterilen apikal sparing paterni kardiyak amiloidoza özgüdür; genel HFpEF tanısının referans testi değildir.",
+        "E": "DOGRU ifade — Bir tümör belirteci olarak bilinen CA-125, kalp yetersizliğinde sistemik venöz dolgunluğun (sağ kalp disfonksiyonu) ve serozal inflamasyonun güçlü bir göstergesidir. Obeziteden, yaştan ve böbrek fonksiyonlarından NT-proBNP kadar etkilenmemesi, onu volüm durumunu değerlendirmede tamamlayıcı bir biyobelirteç yapar."
+      },
+      "etiketler": [
+        "HFpEF",
+        "HFA-PEFF Algoritması",
+        "H2FPEF Skoru",
+        "ASE/EACVI Diyastolik Kriterler",
+        "Natriüretik Peptid Eksikliği",
+        "CA-125",
+        "İnvaziv Egzersiz Hemodinamiği"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESC/HFA HFA-PEFF algoritması; ASE/EACVI diyastolik fonksiyon değerlendirme kılavuzu; H2FPEF (Mayo Clinic) skoru"
     }
   ]
 }
