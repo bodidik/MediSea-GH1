@@ -20846,3 +20846,38 @@ Yani 29 kullanımın hepsi süsleme `<div>` (bulanık leke) ve orada
 Modüller listesi `AccessGate` arkasında; düzeltmenin pakete girdiği derlenmiş
 istemci parçasında görüldü (`aria-disabled` ve `tabIndex` var), ama render
 edilmiş hâli ölçülmedi ve "canlıda doğrulandı" DENMİYOR.
+
+### İÇİNDEKİLER ↔ BÖLÜM KİMLİĞİ TAM EŞLEME — 64 sayfa, 497 madde, sapma 0
+
+Daha önce çapaların ÇÖZÜLDÜĞÜ ölçülmüştü (kırık çapa 0). Ölçülmeyen şey
+listenin **eksiksiz** olduğuydu: bir bölüm listeye girmezse sessizce
+kaybolur, listede olup gövdede olmayan bir madde de hiçbir yere gitmez.
+
+Ölçüt üç sapmayı birden arıyor: **eksik · fazla · çift**.
+
+| ölçüt | değer |
+|---|---|
+| içindekiler taşıyan konu | **64 / 64** (çevrimdışı ölçütün öngördüğü hepsi) |
+| toplam içindekiler maddesi | **497** |
+| listede olup gövdede olmayan | **0** |
+| gövdede olup listede olmayan | **0** |
+| çift madde | **0** |
+| istek hatası | 0 (Türkçe slug dahil — kodlandı) |
+
+Yan kazanç: **çevrimdışı ölçüt üretimi birebir öngörüyor.** 64 tahmin, 64
+gerçekleşme, tek bir yanlış yön yok — yani `sections.length >= 4 && açılmış
+uzunluk >= 6000` kuralı yeniden yazılmadan (`kisaltmaAc` doğrudan çağrılarak)
+üretimle aynı sonucu veriyor.
+
+**Negatif kontrol — ters yön de ölçüldü:**
+
+| eşik altı konu | içindekiler | **bölüm kimliği** |
+|---|---|---|
+| `arni-etkilesimler` · `respiratuvar-asidoz` · `cushing-patofizyoloji` · `arni-tedavisi` · `addison` · `anemiler` | **6'sında da YOK** | **7 · 5 · 8 · 6 · 7 · 5** |
+
+Sağ sütun tasarımın belkemiği: eşik yalnızca **affordansı** yönetiyor, derin
+bağlantıyı değil. İçindekiler almayan bir konuda da her bölümün kimliği var,
+yani `#bolum-…` adresi çalışıyor.
+
+Yani sınıf iki yönde de kapalı: öngörülen 64'ün 64'ünde liste var ve tam,
+eşik altındaki 6'nın 6'sında liste yok ama çapa yine çalışıyor.
