@@ -21344,3 +21344,93 @@ sayıya dönüşüyor.
 | seçili düğmeye ikinci kez basmak seçimi KALDIRIR | geçersiz koşumdan sonra setter aynı düğmeye bastı, 1. grup seçimsiz kaldı — kapı yakaladı, setter "zaten seçiliyse tıklama" yapıldı |
 | desen tahmin etme | sonuç panelini "SKOR" diye aradım; panel **"NIHSS 20/ 42"** diyor |
 | `python - <<PY` bu ortamda asılıyor | **yedek olarak** yazdım, 2 dk bloke etti — kendi kaydımdaki "yedek olarak bile yazma" kuralının üçüncü ihlali |
+
+### "AYNI BİRİM, İKİ SAYI" SINIFI SÜPÜRÜLDÜ — ve tarayıcım ÖNCE kördü, "0 çelişki" dedi
+
+`nihss` bulgusu (başlık "11 Alan", sayaç "15/15 alan") tek örnek mi diye
+130 araca sürüldü. Ölçüt: aynı dosyada **elle yazılmış `N <birim>`** ile
+**`{X.length} <birim>`** sayacı aynı birim kelimesini paylaşıp farklı sayı
+veriyor mu?
+
+| ölçüt | değer |
+|---|---|
+| taranan araç | 130 |
+| elle sayı ilan eden | 10 |
+| **birimli sayaç taşıyan** | **2** (`nihss` · `lawton-iadl`) |
+| çelişki | **0** — `nihss` düzeltildi, `lawton-iadl` zaten tutarlı (8 ↔ 8) |
+
+Yani sınıf tek örnekliymiş.
+
+#### ⚠ İLK SÜRÜM KÖRDÜ VE SEBEBİ TİP ANOTASYONUYDU
+
+İlk çalıştırma "0 çelişki" dedi ve **tarihsel kontrol bunu çürüttü**:
+düzeltme öncesi `nihss` (`HEAD~1`) taranınca da 0 çıkıyordu.
+
+Sebep dizi uzunluğu sayacındaydı:
+
+```
+const ITEMS: { id: string; label: string; options: { … }[] }[] = [
+                                                        ^^^ ILK "[" BURADA
+```
+
+Sayım `const`tan sonraki İLK `[` işaretinden başlıyor ve o, dizinin değil
+**TİP ANOTASYONUNUN** parçası. Derinlik hemen kapanıyor, uzunluk **0**
+dönüyor ve `if (u === 0) continue;` satırı kaydı sessizce atlıyordu.
+
+Bu, belgede kayıtlı iki tuzağın birleşimi: *"bir diziyi `grep -c` ile saymak,
+tip anotasyonu aynı anahtarı taşıyorsa bir fazla sayar"* (orada FAZLA
+sayıyordu, burada HİÇ saymıyor) ve *"0 kusur ile 0 ölçüm aynı görünür"*.
+
+İki düzeltme birden gerekti: sayım artık `=` işaretinden SONRAKİ ilk `[` ile
+başlıyor, **ve** uzunluğu hesaplanamayan sayaç ayrı bir kovaya
+(`OLÇÜLEMEYEN`) yazılıyor — "çelişki yok" ile "ölçemedim" bir daha aynı
+satıra düşmesin.
+
+Pozitif kontrol artık geçiyor: düzeltme öncesi `nihss` **yakalanıyor**
+(`elle:11 alan · türev(ITEMS):15`), güncel depoda 0.
+
+#### İkinci eksen: elle yazılmış TAVAN ↔ ulaşılabilir tavan
+
+Aynı fikrin daha değerli yarısı. Başlıkta `0–N Puan` ilan eden **7 araç**
+var; yedisi de bağımsız olarak yeniden hesaplandı:
+
+| araç | ilan | yapı | hesap |
+|---|---|---|---|
+| `dlqi` | 30 | ITEMS 10 × OPTIONS max 3 | **30** |
+| `tnss` | 12 | ITEMS 4 × OPTIONS max 3 | **12** |
+| `uas7` | 42 | DAYS 7 × (WHEAL 3 + ITCH 3) | **42** |
+| `cat-copd` | 40 | ITEMS 8 × ölçek max 5 (`[0,1,2,3,4,5]`) | **40** |
+| `rapid3` | 30 | (10×3)/3 + ağrı 10 + global 10 | **30** |
+| `flipi` | 5 | 5 madde × 1 | **5** |
+| `lawton-iadl` | 8 | 8 madde × 1 | **8** |
+
+**Sapma 0.** Beşi belgede `payda-denetim`in "elle karara bağlandı" kovasında
+duruyordu; burada İKİNCİ bir yöntemle bağımsız olarak doğrulandılar.
+
+**Tarayıcım da aynı kovada takıldı ve sebebi kayda değer:** ilk sürüm bu
+beşini "sapan" gösterdi (`dlqi` ilan 30, hesap 6). Şekil belgede zaten
+yazılı — **tek şık dizisi N madde boyunca yeniden kullanılıyor**, yani
+grup sayısı dizide değil MADDE listesinde duruyor. Tarayıcı `OPTIONS`ın dört
+kaydını dört grup sanıp 0+1+2+3 = 6 topluyordu.
+
+Bu şekil **ayrıştırılabilir** ve kuralı burada yazılı: bir dizinin her ögesi
+TAM BİR `pts` taşıyorsa o bir ŞIK listesidir, madde listesi değil; o zaman
+`ulaşılabilir = madde sayısı × Σ(ayrı şık listelerinin tavanı)`. `uas7` iki
+şık listesi (7 × (3+3)), `cat-copd` ise `pts` alanı hiç taşımıyor —
+ölçeği satır içi `[0,1,2,3,4,5]` dizisinden geliyor.
+
+`payda-denetim`in 23 kayıtlık "ayrıştırılamadı" kovasının bir bölümü bu
+kuralla kapanabilir; bu tur uygulanmadı çünkü checked-in bir denetimi
+değiştirmek kendi negatif/pozitif/tarihsel kontrollerini gerektiriyor.
+
+#### ⚠ TERS BÖLÜ TUZAĞI BU OTURUMDA YEDİNCİ KEZ
+
+Bu turda iki kez daha ısırdı: bir kez heredoc (`'\\'` → `'\'`,
+`SyntaxError: Invalid or unexpected token`), bir kez `node -e` içindeki
+tırnaklı dize (`'const\\s+'` → `'consts+'`,
+`Invalid regular expression: Unterminated character class`).
+
+İkincisi öğretici: regex **geçerli kalıyor** ama bambaşka bir şey arıyor
+olabilirdi — burada şansa sözdizimi hatası verdi. Kural sertleşiyor:
+**kaçış taşıyan bir betiği kabuk kanalıyla YAZMA**, ve kaçınılmazsa kaçışı
+hiç yazma — `String.fromCharCode(92)` ile kur.
