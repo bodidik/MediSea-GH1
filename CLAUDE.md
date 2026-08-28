@@ -19545,3 +19545,39 @@ yakalanıyor VE üç temiz kayıt (tek ebeveyn · çok ebeveyn · kök) işaretl
 
 Meta teste (`yorum-korlugu-denetim`) kapsam dışı olarak gerekçesiyle kaydedildi
 — JSON tarıyor, orada yorum kavramı yok.
+
+#### `ebeveyn-adaylari.cjs` — ÖNERİ üretir, KARAR VERMEZ (ve ilk turda kendini çürüttü)
+
+"Gereğinde bir konuyu 3-4 başka konuya child yap" isteğinin ölçülebilir yarısı.
+Ölçüt **tıbbi değil YAPISAL**: bir konunun "İlgili Konular" listesindeki
+konuların çoğu TEK BİR hub'ın çocuklarıysa o hub ikinci ebeveyn adayıdır.
+Akrabalık zaten `ilgili-index.cjs` tarafından etiket NADİRLİĞİNE göre
+ölçülmüş; burada yeni bir iddia üretilmiyor, var olan ölçüm hiyerarşiye
+çevriliyor.
+
+**ÖLÇÜT İKİ KEZ DARALTILDI ve ilki 6 adayın 5'ini çöpe attı:**
+
+| eleme | neden |
+|---|---|
+| önerilen hub konunun **ZATEN ATASI** | hiyerarşi onu kapsıyor — gereksiz (3 aday) |
+| önerilen hub konunun **TORUNU** | ters yön: hub değil alt konu (2 aday) |
+| **AD ÇAKIŞMASI** | hedef hub'da benzer başlıklı çocuk var |
+
+Eşik 3'te **6 → 1**, eşik 2'de 21 aday (2'si çakışma uyarılı).
+
+**TEK GÜÇLÜ ADAY UYGULANMADI — ve sebebi ölçüldü.**
+`men-adrenal-kriz-yonetimi` ("Akut Adrenal Kriz: Klinik Tablo ve Acil
+Müdahale Protokolü") bugün yalnızca `men-bilateral-adrenalektomi` altında
+duruyor; `adrenal-yetmezlik` hub'ı yapısal olarak güçlü bir aday. **Ama o
+hub'da ZATEN "Akut Adrenal Kriz (Addison Krizi)" (3754 krk) var.** İkincisini
+eklemek, bu oturumda kapatılan **"aynı ad, farklı hedef"** sınıfını doğrudan
+üretirdi — üstelik iki konu gerçekten kopya mı yoksa ayrı mı, bu bir İÇERİK
+kararı.
+
+Yani: mekanizma hazır ve doğrulandı, ama bugünkü veride **içerik kararı
+gerektirmeden uygulanabilecek tek bir çok-ebeveyn bağı yok.** Karar içerik
+sahibinin; araç kararı hazır hâle getiriyor.
+
+**Yan bulgu (içerik, dokunulmadı):** kardiyolojide `farmakoloji-statin-
+miyopatisi-sams` ve `lipidoloji-statin-miyopatisi-sams` diye İKİ hub var ve
+adaylar sürekli birinden ötekine işaret ediyor — kopya hub şüphesi.
