@@ -19944,3 +19944,51 @@ Yani bu sayfada kategori sayısını doğrulamak isteyen ölçüm **gerçekten
 gezinmek** zorunda; `fetch` her kategoride 130 döndürür ve bir an "süzgeç
 bozuk" sanılır. Aynı sayfanın ROZET sayıları ise sunucuda basılıyor ve
 fetch ile okunabiliyor — iki sayı farklı katmanlarda.
+
+### ⚠ `innerWidth: 0` MAKUL GÖRÜNEN SAHTE GEOMETRİ ÜRETİYOR — ve dokunma hedefi ölçütü bunu KENDİ BAŞINA yakalamıyor
+
+Kardeş bloğunun erişilebilirliği ölçülürken çıktı. Tarayıcı paneli
+boyutlandırılmadan açıldığında `window.innerWidth` ve
+`document.documentElement.clientWidth` **0** dönüyor — ama ölçüm bir hata
+vermiyor, **makul görünen sayılar** üretiyor:
+
+| ölçüt | boyutlandırılmamış | 1280px | 320px |
+|---|---|---|---|
+| `grid-template-columns` | **`0px`** | `359px 359px` | `246px` |
+| bağlantı geometrisi | **30×82 · 30×102 · 30×62** | 359×42 | 246×42 |
+| `scrollX` (kaydırma denemesi) | **200** | 0 | 0 |
+| taşan öge | **53** | — | 0 |
+
+**En sinsi yanı: dokunma hedefi ölçütü GEÇİYOR.** Ölçüt
+`r.height < 24 || r.width < 24` ve genişlik 30 çıktığı için "küçük hedef 0"
+raporluyor — yani ölçüm hem anlamsız hem TEMİZ görünüyor. Aynı koşumda
+`scrollX: 200` ve 53 taşan öge de gerçek bir yatay taşma sanılabilirdi.
+
+Belgede kayıtlı "0 kusur ile 0 ölçüm aynı görünür" kuralının geometri
+tarafındaki hâli — ama bir adım kötüsü: burada sayı sıfır DEĞİL, yanlış.
+
+**Koruma tek satır: geometri ölçen her betiğin başına `innerWidth > 0`
+kontrolü koy** ve tutmuyorsa ölçümü ÜRETME:
+
+```js
+if (!window.innerWidth) return { HATA: 'gorunum penceresi 0 — olcum gecersiz' };
+```
+
+`resize_window` ile `preset: "desktop"` vermek bu ortamda YETMEDİ (yine 0
+döndü); açık `width`/`height` gerekti.
+
+#### Kardeş bloğunun ölçülen değerleri (doğru geometriyle)
+
+| ölçüt | sonuç |
+|---|---|
+| nav landmark | **2** — "Araç sayfası gezinmesi" (4 bağ) + "Aynı kategoriden araçlar" (6 bağ) |
+| adsız nav · çakışan ad | **0 · 0** |
+| başlık düzeyi | h1 → h2, **atlama 0** |
+| kontrast (başlık ve altı bağ) | **7.58** |
+| dokunma hedefi | 1280px'te 359×42 · 320px'te 246×42 — **24 altı 0** |
+| 320px yatay taşma | **0** (pozitif kontrol: 900px tohum `scrollWidth`i 320 → 900 yapıyor) |
+
+Son satır bu sayfada hangi ölçütün iş gördüğünü de söylüyor: tohum eklendiğinde
+`scrollX` **0 kalıyor**, yalnızca `documentElement.scrollWidth` tepki veriyor.
+Belgede kayıtlı "iki ölçüt birden gerekiyor, hangisinin yeteceği sayfaya göre
+değişir" kuralı — araç sayfalarında çalışan tek ölçüt `scrollWidth`.
