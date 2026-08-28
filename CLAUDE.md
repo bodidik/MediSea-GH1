@@ -20434,3 +20434,42 @@ buluyor. İki yüzeyin sayısını eşitlemeye çalışmak, birini bozmak olurdu
 Türkçe normalleştirme **iki yüzeyde de** çalışıyor: `ilac` ile `İlaç` birebir
 aynı sonuç kümesini veriyor ve ikisi de yeni konuyu
 (`kalp-yetersizligi-arni-etkilesimler`) ilk sırada getiriyor.
+
+### HİYERARŞİ DEĞİŞMEZİ TAZE VERİYLE YENİDEN SINANDI — 13/13 branş, 100/100 kart, 39/39 rozet
+
+Bu değişmez merge ÖNCESİ ölçülmüştü (13/13 tam uyum). İçerik değiştiğinde
+yeniden sürmek gerekiyor, çünkü tek bir çözülmeyen `parent` kaydı bir konuyu
+"Diğer Konular" kovasına düşürür ve sayıyı sessizce kaydırır.
+
+Beklenen değerler **içerikten** hesaplanıp canlıyla karşılaştırıldı:
+
+| ölçüt | sonuç |
+|---|---|
+| branş sayfası | **13 / 13 sapma 0** |
+| toplam kart (üst düzey + yetim) | **100 / 100** |
+| rozetli kart | 39 |
+| **rozet ↔ konu sayfasındaki çocuk sayısı** | **39 / 39 sapma 0** |
+
+Rozet karşılaştırması üçüncü bir yoldan yapıldı: rozet branş sayfasından,
+çocuk sayısı konu sayfasının "Alt Başlıklar" + "İleri Okuma" bölümlerinden
+(kapanış etiketi çapalarıyla — düz metin çapası bu depoda iki kez sahte sapma
+üretmişti).
+
+#### Yeni içerik hiyerarşiye ÇOCUK olarak girdi — kovaya değil
+
+| | üst düzey | yetim | kart | konu |
+|---|---|---|---|---|
+| merge öncesi | 54 | 45 | 99 | 410 |
+| **merge sonrası** | **55** | **45** | **100** | **423** |
+
+Yani 13 yeni konu **+1 üst düzey kart** ve **+0 yetim** üretti; **12'si
+mevcut hiyerarşiye çocuk olarak bağlandı.** Tek yeni kart `bruselloz` ve o da
+kendi dört çocuğunu taşıyan bir hub.
+
+Bu kayda değer, çünkü bu depoda ters yön ölçülmüş bir sorun: dört branşta
+"Diğer Konular" kovası küratörlü listeden BÜYÜK (gastroenteroloji 2 ↔ 13).
+Yeni içerik o oranı kötüleştirmedi.
+
+**Yeniden ölçmeye gerek yok** — içerik değişmedikçe. Değiştiğinde ölçüt hazır:
+beklenen kart sayısı `üst düzey + yetim`, beklenen rozet `çözülen çocuk
+sayısı`, ikisi de `content/canonical`dan hesaplanıyor.
