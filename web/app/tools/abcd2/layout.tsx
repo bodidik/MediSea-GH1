@@ -2,8 +2,7 @@
 // Elle düzenleme — başlık ve açıklama app/tools/page.tsx içindeki
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
+import type { ReactNode } from "react";import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
@@ -35,6 +34,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
+
     </>
   );
 }

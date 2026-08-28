@@ -106,6 +106,44 @@ function kategorileriOku() {
   return cikti;
 }
 
+
+/**
+ * AYNI KATEGORİDEN KARDEŞ ARAÇLAR — araç sayfasının dip bağlantıları.
+ *
+ * Ölçüldü (canlı): 130 araç sayfasının 130'unda başka bir ARACA bağ YOKTU;
+ * araç grafiği tümüyle kopuktu. `/tools/egfr`ten `/tools/kdigo-aki`ye gitmek
+ * için hub'a dönmek gerekiyordu. 58 araca zaten YALNIZCA hub'dan ulaşılıyor.
+ *
+ * Seçim KARARLI KAYDIRMA: kategori alfabetik sıralanır, aracın KENDİ
+ * konumundan sonraki N kardeş alınır (başa sararak). Sabit ilk-N alınsaydı
+ * 19 araçlık bir kategoride hep aynı 6 araç bağ alırdı; kaydırma her araca
+ * farklı komşular verir ve her araç bağ ALIR. Aynı kalıp ilgili-index.cjs'in
+ * 'merkez listesi' yedeğinde de kullanılıyor.
+ *
+ * Bir araç birden çok kategoride listelenebiliyor (ölçüldü: 3 araç); İLK
+ * kategori kullanılır — dosya sırası kararlı olduğu için seçim de kararlı.
+ */
+const KARDES_SAYISI = 6;
+
+function kardesHarita() {
+  const harita = new Map();
+  for (const kat of kategorileriOku()) {
+    const sirali = kat.items.slice().sort(
+      (a, b) =>
+        a.name.localeCompare(b.name, 'tr', { sensitivity: 'base' }) ||
+        (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0)
+    );
+    sirali.forEach((it, i) => {
+      if (harita.has(it.slug)) return; // ilk kategori kazanır
+      const kardesler = [];
+      for (let k = 1; k < sirali.length && kardesler.length < KARDES_SAYISI; k++) {
+        kardesler.push(sirali[(i + k) % sirali.length]);
+      }
+      harita.set(it.slug, { kategoriAd: kat.ad, kardesler });
+    });
+  }
+  return harita;
+}
 /**
  * Aracın KENDİ ikonu — sayfasındaki rozetten okunuyor.
  *
@@ -226,17 +264,40 @@ function aciklamaUret(name, desc) {
  * GEREKÇE BURADA, ŞABLONDA DEĞİL: şablona konan her yorum satırı 130
  * dosyaya kopyalanıyor (bir denemede 130 dosya × 5 satır oldu).
  */
-function dosyaIcerigi({ slug, name, desc }) {
+function dosyaIcerigi({ slug, name, desc, kardesler = [], kategoriAd = '' }) {
   const baslik = baslikUret(name, desc);
   const aciklama = aciklamaUret(name, desc);
   const yol = `/tools/${slug}`;
+  const kardesImport = kardesler.length
+    ? 'import Link from "next/link";' + String.fromCharCode(10)
+    : '';
+  const kardesBlok = kardesler.length
+    ? `      <nav aria-label=${JSON.stringify('Aynı kategoriden araçlar')} className="bg-slate-50 px-4 pb-10 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            ${kategoriAd} kategorisinden
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+${kardesler
+  .map(
+    (k) =>
+      `            <li>
+              <Link href=${JSON.stringify('/tools/' + k.slug)} className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ${k.name}
+              </Link>
+            </li>`
+  )
+  .join('\n')}
+          </ul>
+        </div>
+      </nav>`
+    : '';
 
   return `// Bu dosya betikle üretildi: scripts/arac-metadata.cjs
 // Elle düzenleme — başlık ve açıklama app/tools/page.tsx içindeki
 // TOOLS_DATABASE'ten türetilir, betiği yeniden çalıştırmak üzerine yazar.
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
+import type { ReactNode } from "react";${kardesImport}import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: ${JSON.stringify(baslik)},
@@ -268,6 +329,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
+${kardesBlok}
     </>
   );
 }
@@ -512,6 +574,7 @@ function main() {
   let atlanan = 0;
   const sayfasiz = [];
 
+  const KARDESLER = kardesHarita();
   for (const arac of araclar) {
     const dizin = path.join(ARAC_DIZIN, arac.slug);
     if (!fs.existsSync(path.join(dizin, 'page.tsx'))) {
@@ -530,7 +593,8 @@ function main() {
       }
     }
 
-    fs.writeFileSync(hedef, dosyaIcerigi(arac));
+    const kk = KARDESLER.get(arac.slug);
+    fs.writeFileSync(hedef, dosyaIcerigi({ ...arac, kardesler: kk ? kk.kardesler : [], kategoriAd: kk ? kk.kategoriAd : '' }));
     yazilan++;
   }
 

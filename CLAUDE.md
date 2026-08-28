@@ -19777,3 +19777,63 @@ doğrulaması yetmez.** Beş değişikliğin beşi de tek tek ölçülmüştü; 
 BÜTÜN olarak gerilemediğini ancak oturum başındaki tabanla karşılaştırmak
 gösteriyor — ve o taban ölçüm ilk turda alınmasaydı bugün yeniden
 kurulamazdı.
+
+### ARAÇ GRAFİĞİ TÜMÜYLE KOPUKTU — 130 sayfanın 130'unda başka bir araca bağ YOK
+
+Ölçüldü (canlı, sunucu HTML'i): `/tools/egfr`ten `/tools/kdigo-aki`ye gitmenin
+tek yolu hub'a dönmekti. Sitenin en büyük varlığı (130 hesaplayıcı) ve arama
+motorunun en çok indirdiği yüzey, birbirine hiç bağlı değildi — üstelik
+belgede kayıtlı ölçüme göre **58 araca zaten YALNIZCA hub'dan ulaşılıyor.**
+
+| ölçüt | önce |
+|---|---|
+| başka araca giden bağı olan araç | **0 / 130** |
+| başka bir araçtan bağ ALAN araç | **0 / 130** |
+
+#### Çözüm deponun KENDİ makinesini kullanıyor — 130 dosyaya elle dokunulmadı
+
+`arac-metadata.cjs` zaten araç başına `layout.tsx` üretiyor (metadata +
+JSON-LD). Kardeş bloğu oraya kondu:
+
+- **sunucuda render ediliyor** — istemci paketine hiç girmiyor
+- **tek insertion point** — 130 dosyalık elle süpürme yok
+- veriyi üreteç zaten okuyor (`kategorileriOku()`)
+
+**Seçim KARARLI KAYDIRMA, sabit ilk-N DEĞİL.** Kategori alfabetik sıralanıp
+aracın KENDİ konumundan sonraki 6 kardeş alınıyor (başa sararak). Sabit ilk-6
+alınsaydı 19 araçlık bir kategoride hep aynı 6 araç bağ alırdı; kaydırma her
+araca farklı komşular verir **ve her araç bağ ALIR**. Aynı kalıp
+`ilgili-index.cjs`in "merkez listesi" yedeğinde de kullanılıyor.
+
+Bir araç birden çok kategoride listelenebiliyor (3 araç); **İLK** kategori
+kullanılıyor — dosya sırası kararlı olduğu için seçim de kararlı.
+
+#### Doğrulama
+
+| ölçüt | sonuç |
+|---|---|
+| kardeş bloğu olan araç | **129 / 130** |
+| bağ dağılımı | 6 bağ: 88 · 4 bağ: 39 · 1 bağ: 2 · 0: 1 |
+| kendine bağ · geçersiz hedef | **0 · 0** |
+| **ilk yük** (`/tools/egfr`) | **114 kB — tabanla birebir** (sunucu render'ı, paket maliyeti sıfır) |
+| erişilebilirlik ağacı | `navigation "Aynı kategoriden araçlar"` → `heading` → `list` → 6 adlı bağ |
+| başlık düzeyi | `h1` → `h2`, atlama yok |
+| 320px | bağ hedefi 246×42 · kontrast **7.58** · yatay kayma **0** |
+| 1280px | 2 kolon (359px), kart sol kenarı sayfa kapsayıcısıyla **birebir hizalı** (249 ↔ 249) |
+| `h2` tipografisi | Inter · 10px · üst boşluk **0px** — `globals.css`in "serif + 24px" tuzağı `font-sans mt-0` ile atlatıldı |
+
+Bağsız kalan tek araç `abcd2`: "Nöroloji" kategorisinde **tek başına**, yani
+blok hiç çizilmiyor — doğru davranış, kusur değil.
+
+**Var olan nöbetçi yeni bağları KENDİLİĞİNDEN kapsıyor:** `arac-metadata
+--kontrol` içindeki ölü-slug denetimi artık **526 → 1212** araç bağını
+doğruluyor. Yani bir araç silinirse 130 layout'taki kardeş bağları da CI'da
+düşer.
+
+**Kullanılmayan import bırakılmadı:** kardeşi olmayan araçta `next/link`
+import'u da üretilmiyor (`tsc --noUnusedLocals`: üretilen layout'larda **0**
+bulgu; kalan 7 bulgu belgede kayıtlı, hepsi `page.tsx`).
+
+**Ters bölü tuzağı bu turda ALTINCI kez ısırdı:** koşullu import'u heredoc'la
+yazarken `\n` GERÇEK satır sonuna dönüştü ve betik `SyntaxError` verdi. Çare
+kaçışı hiç yazmamak — `String.fromCharCode(10)`.
