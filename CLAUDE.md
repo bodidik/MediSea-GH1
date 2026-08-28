@@ -19272,3 +19272,39 @@ dahil) ters bölü içermiyor ve `[\s\S]` ile aynı işi görüyor.
 heredoc'la yazıldığı için iki tarafı da aynı çıktı ve anlamsızlaştı. Bu
 depodaki "yorum körlüğü" sınıfının belge tarafındaki hâli — kaçış taşıyan
 bir örneği BELGEYE yazarken de kanal bozuyor.
+
+#### Sertleşen çapayla üç bölümün ÜYELİĞİ de ölçüldü — sayı değil, hangi konu nerede
+
+Sayı tutması yeterli kanıt değil: iki çocuk yer değiştirse sayı aynı kalırdı.
+Sertleştirilmiş çapalarla üyelik karşılaştırıldı.
+
+**1) HUB / YAPRAK ayrımı.** Konu sayfası çocukları ikiye bölüyor — kendi
+çocuğu OLANLAR "Alt Başlıklar", olmayanlar "İleri Okuma". Ayrım yanlış olsaydı
+bir hub yaprak gibi sunulur ve alt ağacı gizlenirdi.
+
+| ölçüt | değer |
+|---|---|
+| karşılaştırılan konu | **38** |
+| üyelik sapması | **0** |
+| **pozitif kontrol** (hub kümesine sahte konu tohumlandı) | **yakalandı** |
+
+Beklenen kümeler canlıya hiç bakmadan, `content/canonical` altındaki
+`meta.parent` ilişkisinden kuruldu (`meta.hidden` elendi, ebeveyn adı aksan
+katlamasıyla çözüldü).
+
+**2) "İlgili Konular" ↔ `ilgili-index.json`.** Üçüncü kod yolu: üreteç →
+render. Sayfa kendi kırpmasını ya da süzgecini uygularsa üyelik ayrışır.
+
+| ölçüt | değer |
+|---|---|
+| indeks anahtarı | 407 |
+| eşit aralıklı örnek | **24** |
+| üyelik sapması | **0** |
+
+Bu ölçütün körlüğü yapısal olarak imkânsız: render kümesi boş dönseydi 24
+sayfanın 24'ü işaretlenirdi. Ayrıca dilim bölüm başlığından **belge sonuna**
+kadar açık ve "sayfada FAZLA" sayısı **0** — yani alt bilgi ya da RSC yükü
+oraya bağ sızdırmıyor.
+
+Böylece konu sayfasının üç bağlantı bölümünün üçü de ÜYELİK düzeyinde
+kapandı; yeniden ölçmeye gerek yok — ilgili kod değişmedikçe.
