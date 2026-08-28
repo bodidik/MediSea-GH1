@@ -20385,3 +20385,52 @@ yok ve görünür sayfalardan yalnızca **1** bağ alıyor (ölçüldü). Gerçe
 kapatılmak istenirse doğru çare dizine gizli eklemek değil, **OG rotaları
 için AYRI bir dizin** (ya da `hidden` bayrağı taşıyan tek bir dizin ve
 tüketici tarafında süzme) — yani veri değil şema değişikliği.
+
+### ⚠ SABİT UYKUYLA ÖLÇÜLEN ARAMA, HER SORGUDA BİR ÖNCEKİNİN SONUCUNU VERDİ — ve sahte bir kusur uyduracaktı
+
+Yeni içeriğin aranabilirliği ölçülürken çıktı. İlk koşum sorgular arasında
+**450 ms sabit uyku** kullandı. Sonuç tablosu makul görünüyordu ama **hepsi
+bir adım geriydi**:
+
+| sorgu | ölçümün gösterdiği | gerçekte |
+|---|---|---|
+| `bruselloz` | **0 sonuç** | 5 |
+| `ilac` | bruselloz sonuçları | 10 |
+| `metabolik asidoz` | ilaç sonuçları | — |
+| **`zzzqqq` (var olmayan)** | **3 sonuç** | 0 |
+
+Son satır tehlikeli olan: "arama saçma sorguya 3 sonuç döndürüyor" diye
+**gerçek olmayan bir kusur raporlanabilirdi.** Tek uyarı işareti canlı
+bölgenin her okumada **"Aranıyor…"** demesiydi — yani cevap henüz gelmemişti.
+
+Sebep belgede zaten kayıtlı: geciktirme 300 ms + sunucu eylemi, ve canlıda
+ölçülen süre **369–996 ms**; üstelik panel gizliyken zamanlayıcılar kısılıyor.
+450 ms hiçbir sorguya yetmiyor.
+
+**Çare sabit uykuyu büyütmek DEĞİL, yoklamak:** canlı bölge "Aranıyor…"
+demeyi bırakana kadar 200 ms'lik turlarla bekle. Ölçüm o zaman doğru
+sonuçları verdi (400–600 ms'de).
+
+Bu, belgedeki "ardışık ölçüm bayat sonuç verir" kuralının en sinsi biçimi:
+sonuçlar **boş değil, KAYMIŞ** — yani her satır tek başına inandırıcı
+görünüyor ve yalnızca sorguyla karşılaştırınca yanlış olduğu anlaşılıyor.
+
+#### Ölçümün kendisi: iki arama yüzeyi de yeni içeriği buluyor
+
+| sorgu | başlık araması (içerik tarar) | kütüphane süzgeci (başlık tarar) |
+|---|---|---|
+| `bruselloz` | **5** | **4** |
+| `ilac` (noktasız) | 10 (3'ü ARAÇ) | **3** |
+| `İlaç` (gerçek yazım) | — | **3 — aynı sonuçlar** |
+| `asidoz` | — | 2 (ikisi de yeni konu) |
+| `zzzqqq` | — | dürüst boş durum, sorgu yankılanıyor |
+| boş sorgu | — | canlı bölge **susuyor** (bayat duyuru yok) |
+
+**5 ↔ 4 farkı KUSUR DEĞİL, kapsam farkı.** Bulunmayan beşinci konunun
+başlığı *"Brucella'nın İntrasellüler Yaşam Döngüsü…"* — içinde "bruselloz"
+geçmiyor. Başlık süzgecinin onu bulmaması doğru; içerik araması gövdeden
+buluyor. İki yüzeyin sayısını eşitlemeye çalışmak, birini bozmak olurdu.
+
+Türkçe normalleştirme **iki yüzeyde de** çalışıyor: `ilac` ile `İlaç` birebir
+aynı sonuç kümesini veriyor ve ikisi de yeni konuyu
+(`kalp-yetersizligi-arni-etkilesimler`) ilk sırada getiriyor.
