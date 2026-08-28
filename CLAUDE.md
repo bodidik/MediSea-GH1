@@ -20556,3 +20556,63 @@ verisiyle de sürülmüş durumda.
 Ayrım **yalnızca gerektiğinde** beliriyor — aynı listedeki öteki kartlar
 (bempedoik asit, PCSK9, SAMS…) ek etiket taşımıyor, yani olağan görünüm
 değişmedi.
+
+### DÜZEY ATLAMASI YOKTU AMA YUVALAMA YANLIŞTI — "İlgili Konular" son klinik bölümün altında görünüyordu
+
+Konu sayfasının başlık taslağı ölçüldü ve kusur **atlama denetiminin
+göremeyeceği** biçimdeydi:
+
+| bölüm | önce | kardeşi |
+|---|---|---|
+| Alt Başlıklar | **h2** | — |
+| içerik bölümleri | h2 | — |
+| Bu sayfada (TOC) | h2 | — |
+| **İleri Okuma** | **h3** | h2 olmalı |
+| **İlgili Konular** | **h3** | h2 olmalı |
+
+`h2 → h3` bir ATLAMA değil, o yüzden bu oturumda sürülen "düzey atlaması 0"
+ölçümleri temiz veriyordu. Ama taslakta sonuç şu: **"İleri Okuma" ve "İlgili
+Konular", kendilerinden önceki son klinik bölümün ALT başlığı gibi görünüyor.**
+Başlık düzeyiyle gezen bir kullanıcı için gezinme bölümleri, ilgisiz bir
+klinik bölümün içine gömülü.
+
+#### Düzeltme bir ATLAMA açıyordu — komşuyu da taşımak zorunlu
+
+`İlgili Konular` h2 olunca hemen ardındaki premium tanıtım başlığı (`h4`)
+**h2 → h4 atlaması** üretiyordu. Yani tek başına iki etiketi değiştirmek
+kusuru başka bir kusura çeviriyordu; tanıtım da `h3`e alındı.
+
+**Görünüm riski ÖLÇÜLDÜ, varsayılmadı.** `globals.css` iki ayrı kural
+tutuyor:
+
+```
+h1,h2,h3  ->  serif, ağırlık 700, mt 1.5rem (24px)
+h4,h5,h6  ->  serif, ağırlık 400, mt 1rem   (16px)
+```
+
+Canlıdan alınan "önce" değerleriyle karşılaştırılınca:
+
+| öge | dönüşüm | üst boşluk | karar |
+|---|---|---|---|
+| İleri Okuma · İlgili Konular | h3 → h2 | 24px → **24px** | sınıf gerekmiyor |
+| **premium tanıtımı** | h4 → h3 | 16px → **24px** | **`mt-4` şart** |
+
+Ağırlık, satır yüksekliği ve alt boşluk zaten Tailwind sınıflarıyla eziliyor;
+**ezilmeyen tek özellik `margin-top`tu** ve yalnızca o telafi edildi.
+
+#### Doğrulama — üretilmiş çıktıda, dört sayfa şekli
+
+| sayfa | başlık | atlama | `h4` | promo `mt-4` |
+|---|---|---|---|---|
+| hub + TOC + İleri Okuma | 42 | **0** | **0** | var |
+| yaprak (TOC yok) | 15 | 0 | 0 | var |
+| yaprak, 7 bölüm | 12 | 0 | 0 | var |
+| yeni hub (`bruselloz`) | 46 | 0 | 0 | var |
+
+`h4` sayısı **1 → 0**; dört bölüm de artık h2. Kapılar temiz (lint,
+typecheck, `arayuz-denetim`, `ic-bilesen-denetim`, derleme 636/636).
+
+**Aktarılabilir kural: "düzey atlaması 0" taslağın DOĞRU olduğunu
+göstermez.** Atlama yalnızca `h(n) → h(n+2)` sıçramasını yakalar; kardeş
+bölümlerin FARKLI düzeyde olması atlamasız bir yuvalama hatasıdır. Ölçüt
+şu olmalı: **aynı işlevdeki bölümler aynı düzeyde mi?**

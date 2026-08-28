@@ -777,10 +777,15 @@ export default async function TopicDetailPage({
               {/* İleri Okuma: SADECE kılcal (kendi çocuğu olmayan) alt konular */}
               {leafChildren.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                  <h3 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
+                  {/* h2, h3 DEĞİL: "Alt Başlıklar" ve içerik bölümleri de h2.
+                      h3 kalınca taslakta bu bölüm son klinik bölümün ALT
+                      başlığı gibi görünüyordu — düzey atlaması yok ama
+                      yuvalama yanlıştı. Görünüm değişmiyor: globals.css
+                      h1,h2,h3'e aynı kuralı veriyor (ölçüldü, mt 24px). */}
+                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                     İleri Okuma
-                  </h3>
+                  </h2>
 
                   <ul className="space-y-4">
                     {leafChildren.map(child => (
@@ -803,10 +808,10 @@ export default async function TopicDetailPage({
               {/* İlgili Konular — etiket akrabalığından, branş sınırı gözetmeden */}
               {ilgililer.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                  <h3 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
+                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                     İlgili Konular
-                  </h3>
+                  </h2>
 
                   <ul className="space-y-4">
                     {ilgililer.map((k) => (
@@ -861,9 +866,13 @@ export default async function TopicDetailPage({
                 {/* Başlık ham slug'dan DEĞİL branş künyesinden geliyor:
                     "klinik-nutrisyon" -> "KLİNİK NUTRİSYON" yazıyordu,
                     doğrusu "KLİNİK NÜTRİSYON". */}
-                <h4 className="text-xl font-black italic uppercase leading-tight mb-3">
+                {/* h3, h4 DEĞİL: komşu bölümler h2'ye çıkınca h4 kalması
+                    h2 -> h4 ATLAMASI üretiyordu. `mt-4` şart — globals.css
+                    h4'e 1rem, h3'e 1.5rem üst boşluk veriyor; sınıf olmadan
+                    tanıtım kartının başlığı 16px'ten 24px'e kayardı. */}
+                <h3 className="text-xl font-black italic uppercase leading-tight mb-3 mt-4">
                   {premiumBrans ? `YDUS ${getSpecialty(slug).title}` : "YDUS Hazırlık"}
-                </h4>
+                </h3>
 
                 <p className="text-sm text-blue-200 font-medium mb-6 leading-relaxed">
                   {premiumBrans
