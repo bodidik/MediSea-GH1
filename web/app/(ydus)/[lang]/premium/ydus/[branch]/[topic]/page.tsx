@@ -417,6 +417,11 @@ export default async function KonuSayfasi({
                   <Link
                     key={key}
                     href={aktif ? href : '#'}
+                    /* Aynı kusur kardeş yüzeyde de vardı: etkin olmayan modül
+                       fareyle tıklanamıyor ama klavyeyle odaklanılabiliyordu.
+                       Bkz. KategorilerClient — orada ölçüldü. */
+                    tabIndex={aktif ? undefined : -1}
+                    aria-disabled={aktif ? undefined : true}
                     style={{
                       display: 'flex',
                       alignItems: 'center',

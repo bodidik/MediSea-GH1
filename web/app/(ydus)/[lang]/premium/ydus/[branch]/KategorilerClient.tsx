@@ -134,6 +134,14 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                   <Link
                     key={konu.id}
                     href={konu.hazir ? `/${lang}/premium/ydus/${branch}/${konu.id}` : '#'}
+                    /* Hazır olmayan kayıt FAREYLE tıklanamıyordu
+                       (pointerEvents: none) ama KLAVYEYLE tıklanabiliyordu:
+                       href="#" taşıyan bir <a> odak sırasında duruyor ve
+                       Enter sayfanın başına sıçratıyordu. Ölçüldü — 8. durak,
+                       aria-disabled yok, ekran okuyucu "bağlantı" diyordu.
+                       İki girdi kipi arasındaki bu tutarsızlık kapatıldı. */
+                    tabIndex={konu.hazir ? undefined : -1}
+                    aria-disabled={konu.hazir ? undefined : true}
                     style={{
                       display: 'flex',
                       alignItems: 'center',

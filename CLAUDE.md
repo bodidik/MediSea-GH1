@@ -20755,3 +20755,63 @@ Doğru çapa da ölçüldü, varsayılmadı: `MediSea Premium` dizesi 41 sayfan�
 **41'inde tam bir kez** geçiyor — `<h3>YDUS ` ise geçmiyor, çünkü içerik
 başlıkları da "YDUS" ile başlayabiliyor ("YDUS / Board Vaka Özeti",
 "BNP Tuzağı (YDUS Spotu)"). Çapa seçerken benzersizliği SAY.
+
+### "YAKINDA" KAYDI FAREYLE TIKLANAMIYOR AMA KLAVYEYLE TIKLANABİLİYORDU
+
+Belgede kayıtlı bir iddia sınandı: *"17 kayıt listede olup dosyası yok, ama
+hepsi `hazir: false` — soluk ve tıklanamaz, yani çıkmaz sokak değil."*
+
+**Sayısal yarısı birebir doğru** (içerikten ölçüldü):
+
+| ölçüt | değer |
+|---|---|
+| ilan edilen premium konu | 57 |
+| `hazir: true` | 40 |
+| **dosyası olmayan** | **17** |
+| bunlardan `hazir: true` olan | **0** |
+| dosyası var ama `hazir:false` | 0 |
+| dosyası var ama listede yok | 1 — `gogus-hastaliklari/akciger-kanseri` (onarımla kurtarılan bilinen kayıt) |
+
+**Ama "soluk" tarifi BAYAT.** Ölçüldü: opaklık **1**. Saydamlık daha önceki bir
+turda kontrast yüzünden zaten kaldırılmış (ad 1.89 · rozet 1.85 idi) ve
+kaynaktaki yorum da bunu söylüyor. Bugünkü işaretler: gri nokta, ince yazı,
+"YAKINDA" rozeti ve tıklanamazlık. Kontrastlar sağlam (ad **14.23**,
+rozet **4.96**).
+
+#### Gerçek kusur: iki girdi kipi arasında tutarsızlık
+
+| ölçüt | "YAKINDA" kaydı |
+|---|---|
+| `href` | **`#`** |
+| `pointer-events` | `none` → **fare tıklayamıyor** |
+| `tabIndex` | **0** |
+| odak sırasında | **EVET — 8. durak** |
+| `focus()` alıyor mu | **evet** |
+| `aria-disabled` | **YOK** |
+
+Yani fare kullanıcısı korunuyor, **klavye kullanıcısı korunmuyor**: öge odak
+sırasında bir durak tüketiyor, ekran okuyucuya "bağlantı" diye duyuruluyor ve
+Enter sayfayı `#`'e sıçratıyor.
+
+Bu, belgede kayıtlı `opacity-0` sınıfının aynası: orada öge **görünmez ama
+odaklanılabilir**di; burada **görünür ve fareye kapalı ama klavyeye açık.**
+İkisinin de kökü aynı — bir kontrolü yalnızca TEK kanalda devre dışı bırakmak.
+
+**Çare en küçük biçimde:** etiket değiştirilmedi (satır içi stil taşıdığı için
+düzen riski olurdu); hazır olmayan kayıt `tabIndex={-1}` ile odak sırasından
+çıkarıldı ve `aria-disabled` ile durumu beyan edildi. **Aynı kalıp kardeş
+yüzeyde de vardı** (konu sayfasının Modüller listesi) ve orası da düzeltildi.
+
+Kapılar temiz (lint · typecheck · `arayuz-denetim` · `ic-bilesen-denetim` ·
+derleme 636/636); iki nitelik de istemci parçasında görünüyor.
+
+#### İki ölçüm tuzağı
+
+- **Alan adı varsayıldı, sayı 0 çıktı.** Branş şemasında konu anahtarı `slug`
+  değil **`id`**, kök `kategoriler[].konular[]`. Anahtarlar bastırılınca 57
+  kayıt göründü. Belgedeki "alanın adını varsayma" kuralı, bu oturumda ikinci
+  kez.
+- **Akordeon katlı olduğu için canlıda yalnızca 17 bağ vardı.** Kapalı
+  bölümlerin ögeleri DOM'da yok; ilanı ölçmek için veriye gitmek gerekti.
+  Ayrıca akordeon tıklamasından SONRA aynı çağrıda `aria-expanded` okumak
+  bayat değer verdi — ayrı çağrıda `true` çıktı.
