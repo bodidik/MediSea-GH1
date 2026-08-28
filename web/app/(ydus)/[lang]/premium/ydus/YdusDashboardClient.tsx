@@ -244,6 +244,13 @@ export default function YdusDashboardClient({
                 </div>
                 <Link
                   href={`/${lang}/premium/ydus/${b.id}`}
+                  /* Görünür metin kısa kalıyor ama erişilebilir AD branşı
+                     taşıyor: bu kart dokuz kez basılıyor ve ölçüldüğünde
+                     dokuz bağlantının dokuzu da "Branşa git" adıyla
+                     duyuruluyordu — bağlantı listesiyle gezen kullanıcı
+                     hangisinin nereye gittiğini ayırt edemiyordu.
+                     Aynı çözüm Çalışma Alanım'daki "Sil" düğmelerinde de var. */
+                  aria-label={`${b.baslik} branşına git`}
                   className="mt-auto text-center text-xs font-medium py-2 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors"
                 >
                   Branşa git

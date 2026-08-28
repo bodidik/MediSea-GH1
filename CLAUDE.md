@@ -20978,3 +20978,50 @@ davranışsal kanıtı.
 birden ölç.** Viewport metasına bakıp "zoom serbest" demek yarım bir ölçüm;
 `touch-action` tek başına aynı sonucu verebiliyor ve meta taraması onu
 görmüyor.
+
+### DOKUZ BAĞLANTININ DOKUZU DA "Branşa git" ADIYLA DUYURULUYORDU
+
+Bağlantı metni kalitesi (WCAG 2.4.4) hiç ölçülmemişti. 13 sayfa türü,
+**483 bağlantı** tarandı; ad TAM ZİNCİRLE hesaplandı (`aria-label` →
+`aria-labelledby` → `aria-hidden` alt ağaçları çıkarılmış metin).
+
+| ölçüt | sonuç |
+|---|---|
+| adsız bağlantı | **0** |
+| zayıf ad (`tıkla`, `buraya`, `devamı`, `→`…) | **0** |
+| yalnızca glif taşıyan ad | **0** |
+| **aynı ad, FARKLI hedef** | **2 sınıf** |
+
+İlk üç satır kayda değer: kartlardaki `→` glifi `aria-hidden` taşıyor, yani
+ada karışmıyor.
+
+#### Gerçek kusur: premium panosunda dokuz özdeş bağlantı adı
+
+`/tr/premium/ydus` dokuz branş kartı basıyor ve her kartın bağlantısı
+**"Branşa git"** diyordu. Branş adı kartta `<p>` olarak görünüyor ama bir
+`<p>` kardeşi bağlantıya **programatik olarak bağlı değil** — yani bağlantı
+listesiyle gezen kullanıcı dokuz özdeş satır duyuyor.
+
+Çözüm depoda zaten vardı (Çalışma Alanım'daki üç "Sil" düğmesi aynı şekilde
+ayrılmıştı): görünür metin kısa kalıyor, `aria-label` branşı taşıyor —
+`"Nefroloji branşına git"`.
+
+#### İkinci çift KUSUR DEĞİL — ve gerekçesi ölçüldü
+
+Başlıkta "Nefroloji" ve "Romatoloji" iki farklı hedefe gidiyor:
+`/topics/<branş>` (Branşlar şeridi) ve `/tools?kategori=<branş>` (mobil menü).
+
+İlk bakışta aynı sınıf. Ama ikisi **erişilebilirlik ağacında birlikte
+bulunmuyor**:
+
+| genişlik | Branşlar şeridi | araç kategorisi |
+|---|---|---|
+| 1280 | ağaçta **var** | **ağaçta YOK** (ata `display` ile gizli) |
+| 375 | şerit `hidden lg:flex` | menü (açılınca) |
+
+Yani hiçbir genişlikte ikisi birden duyurulmuyor. **DEĞİŞTİRİLMEDİ.**
+
+**Aktarılabilir kural: "aynı ad farklı hedef" bulgusunu raporlamadan önce iki
+ögenin AYNI ANDA erişilebilirlik ağacında olup olmadığını ölç.** Kaynak ya da
+ham HTML taraması ikisini de görür; ağaçta yalnızca biri vardır ve o zaman
+belirsizlik yoktur.
