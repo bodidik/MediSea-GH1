@@ -20127,3 +20127,71 @@ ZİNCİRİNDEN geçip geçmediğini sor.** Bu turda ham metni ölçmek üç konu
 doğru, birinde yanlış cevap verdi — ve yanlış olan tam da sınırdakiydi.
 Ayrıca: bir sözlük değişikliğinden sonra "TOC alan konu 64 → 66" görürsen
 kusur arama, bu beklenen davranış.
+
+### İÇERİK MERGE'İNDEN SONRA NE ÖLÇÜLÜR — dört eksen, hepsi temiz çıktı
+
+İçerik dalı `main`'e düzenli olarak birleşiyor, ama "merge sonrası ne
+ölçülür" hiç yazılmamıştı. Bu tur dört eksen sürüldü; hiçbiri kusur vermedi
+ve liste tekrar kullanılabilir.
+
+#### 1) Silme ve yeniden adlandırma — YÖNLENDİRME BORCU var mı
+
+En pahalı sınıf: bir konu dosyası silinir ya da adı değişirse eski adres
+kırılır. `link-denetim` bunu ancak İÇERİKTEKİ bağlantılar için görür; dışarıya
+verilmiş bağlantıları ve arama motorunun bildiği adresleri görmez.
+
+```bash
+git diff --name-status -M <merge-tabani> <merge> -- web/content/canonical
+```
+
+| durum | sayı |
+|---|---|
+| A (ekleme) | 13 |
+| M (değişiklik) | 2 |
+| **D / R (silme / yeniden adlandırma)** | **0** |
+
+Değişen ikisinin alan farkı da ayrıca okundu: yalnızca `order: 5 → 4`.
+Ebeveyn, gizlilik ve başlık oynamamış — yani hiyerarşi kaymamış.
+
+#### 2) Yeni konular TARİH taşıyor mu
+
+| ölçüt | değer |
+|---|---|
+| görünür konu | 423 |
+| `meta.updatedAt` taşıyan | **419** |
+| tarihsiz | **4 — merge ÖNCESİYLE aynı dördü** |
+
+Yani 13 yeni konunun 13'ü de tarihli. Canlı harita birebir aynı sayıyı
+veriyor (423 konu / 419 lastmod / aynı dört tarihsiz) ve toplam
+`433 = 419 + 13 branş + /topics`.
+
+İki ayrıştırıcı da hizada: `bruselloz` sayfada **"20 Ağu 2026"** (Türkçe ay),
+tarihsiz dördü satırı **hiç basmıyor** — belgede kayıtlı "tarih bilinmiyorsa
+alan basılmaz" düzeltmesi yeni içerikle de ayakta.
+
+#### 3) Kopya içerik — ve EŞİĞİ İNDİREREK bandı oku
+
+`benzer-govde-denetim` varsayılan eşikte (0.35) **4 çift** buluyor; dördü de
+belgede kayıtlı ve kullanıcının takip listesinde.
+
+Ama bu depoda eşik seçimi bir kez gerçek bir tekrarı kaçırmıştı (soru
+bankasında %41'lik çift, eşik %45'ti). O yüzden eşik **0.15'e** indirildi:
+
+```
+eşik 0.35  ->  4 çift
+eşik 0.15  ->  4 çift   (AYNI dördü)
+```
+
+Yani 4. çiftten (%77) sonra band **boş**: 13 yeni konunun gövde örtüşmesi her
+şeyle %15'in altında — kardeş asit-baz konuları dahil. Eşiği indirmek ucuz ve
+"band boş mu" sorusunu tek koşumda cevaplıyor.
+
+#### 4) Yapısal entegrasyon
+
+Bir üstteki bölümde: kırık çapa 0, bölüm kimliği olmayan 0, ilgilisi olmayan
+0, çıkmaz sokak 0, `asili-denetim` 46 (merge öncesiyle birebir),
+`ebeveyn-denetim` 0 bulgu, iki indeks de senkron.
+
+**Aktarılabilir kontrol listesi:** silme/yeniden adlandırma → tarih →
+kopya (eşiği indirerek) → yapısal entegrasyon. Dördü de salt-okunur ve
+toplam birkaç dakika; içerik her birleştiğinde sürülebilir.
