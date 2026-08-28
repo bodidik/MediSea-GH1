@@ -19643,3 +19643,78 @@ için `kisa` ad alanı oraya kondu, başlıktaki slug kopyası silindi.
 Tek görünür değişiklik ŞERİDİN SIRASI: eskiden keyfiydi (Romatoloji, Gastro,
 Endokrin…), şimdi `SPECIALTIES`in alfabetik sırası. Türevden geldiği için
 öngörülebilir ve bir daha ayrışamaz.
+
+#### Sınıf taraması: elle yazılmış slug listeleri — 494 dosya, kalan tek aday premium panosu
+
+Sınıf bu oturumda üç kez kusur verdi (`ARAC_KATEGORILERI` · `app/lib/tools.ts` ·
+`SiteHeader.branches`), o yüzden ölçüt betiğe çevrildi: aynı dizide 3+ slug
+benzeri dize ya da 3+ `slug:` alanı, yorumlar boşlukla doldurulmuş.
+
+**494 ts/tsx, 26 aday.** Karara bağlananlar:
+
+| aday | verdikt |
+|---|---|
+| `ToolsIcerik.tsx` (151) · `specialties.ts` (13) | **kaynağın kendisi** |
+| araç sayfaları (`slug:` alanlı şık dizileri) | slug değil ŞIK kimliği |
+| `app/tools/data/ads.ts` (6 dizi, 46 slug) | **ölü kod** — belgede kayıtlı, 3 bağı zaten kırık |
+| `app/(site)/page.tsx` · `SiteHeader` araç kategorileri | nöbetçili / ölçütü beyan edilmiş |
+| `SecurePlayer` · API rotaları · `kayit` | HTTP başlığı, iframe izni, form alanı — slug değil |
+| **premium panosu `BRANCH_IDS`** | **düzeltildi — aşağıda** |
+
+#### Premium panosu ile branş sayfası AYNI ilişkiyi iki ayrı yoldan okuyordu
+
+`[branch]/page.tsx` branş listesini `generateStaticParams` içinde
+`readdirSync` ile **üretiyor**; pano ise dokuz kimliği **elle** tutuyordu.
+Sonuç: yeni bir `content/premium/ydus/branches/<x>.json` eklendiğinde branş
+sayfası açılıyor ama **panoda hiç görünmüyor.**
+
+Bugün 9/9 tutuyor (ölçüldü, iki yönde de sapma 0), yani bu bir gizli tuzak —
+kullanıcıya ulaşan bir kusur değil.
+
+Çare deponun kendi kalıbı: **küme dizinden, SIRA küratörlü listeden.**
+Listede olmayan branşlar sona **kod noktasına göre sıralı** ekleniyor
+(`readdirSync` sırası platforma bağlı — bu oturumda tam o kusur CI'ı kırmış
+sınıftandı). Dizin okunamazsa eski listeye düşülüyor.
+
+| ölçüt | sonuç |
+|---|---|
+| bugünkü çıktı ↔ eski hardcode | **birebir aynı** (9, aynı sıra) |
+| **pozitif kontrol** — varsayımsal yeni branş | listenin **sonuna** ekleniyor |
+
+Aynı düzeltmenin bir düzey aşağısı zaten vardı: `listelenmeyenKategori()`
+listede adı geçmeyen KONULARI görünür kılıyor. Bu, aynı "kendini onaran
+okuma" bir düzey yukarıda.
+
+#### Ters bölü tuzağı bu turda İKİ kez daha ısırdı — dördüncü ve beşinci
+
+| nerede | ne oldu |
+|---|---|
+| tarama betiği | `[/\]_` heredoc'ta `[/\]_` oldu → `SyntaxError` |
+| premium yaması | `/\.json$/` → **`/.json$/`** indi (nokta kaçışsız kaldı) |
+
+İkincisi sessizdi: bu dosya adlarında `.` zaten nokta olduğu için sonuç
+aynıydı ve hiçbir kapı görmezdi. Kaçışı hiç yazmayan karşılığıyla
+değiştirildi (`endsWith('.json')` zaten süzdüğü için `slice(0, -5)`).
+
+**Kural sertleşiyor: kaçış taşıyan bir betiği kabuk kanalıyla YAZMA** —
+heredoc, `node -e`, hepsi aynı. Write/Edit kullan, ya da kaçış gerektirmeyen
+karşılığını seç. Bu oturumda beş kez tekrarlandı.
+
+**Doğrulama — negatif VE pozitif, ikisi de render edilmiş çıktıdan:**
+
+| ölçüt | sonuç |
+|---|---|
+| **negatif** — yerel (türev) ↔ canlı (eski hardcode) | **9/9, SIRA DAHİL birebir** |
+| **pozitif** — `enfeksiyon` küratörlü sıradan çıkarıldı | **yine çizildi, listenin SONUNDA** |
+
+Pozitif kontrol kritikti: liste mantığını doğrudan hesaplamak "yeni branş
+sona ekleniyor" demeye yetmiyordu — kart gerçekten çiziliyor mu, `bransYukle`
+onu yükleyebiliyor mu, ancak render edilmiş çıktı gösteriyor. Tohum gerçek ve
+biçimi doğru bir branş dosyasıyla kuruldu (sentetik JSON değil), böylece
+"yüklenemedi de olabilir" belirsizliği hiç doğmadı.
+
+**Ölçüm tuzağı:** ilk ölçütüm `premium/ydus/([a-z0-9-]+)` deseniyle çalışıyordu
+ve DERLEME PARÇA adlarını da yakaladı (`layout-c4f4f8…`, `page-ac69…`,
+`not-found-…`), iki taraf "13" görünüp "küme aynı değil" dedi. Çapa `href`
+biçimine (`"/tr/premium/ydus/<slug>"`) bağlanınca sayı 9'a indi ve sıra da
+karşılaştırılabilir hâle geldi.

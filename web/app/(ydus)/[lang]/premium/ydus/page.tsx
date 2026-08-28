@@ -57,7 +57,37 @@ type NewestTopicRaw = NewestTopic & { mtimeMs: number };
 // İçerik dosyası henüz eklenmemiş, ilerleyen dönemde açılacak branşlar
 const LOCKED_BRANCHES: LockedBranch[] = [];
 
-const BRANCH_IDS = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji', 'onkoloji', 'enfeksiyon'];
+/**
+ * PANODAKİ BRANŞ SIRASI — küratörlü, ama LİSTE dizinden türer.
+ *
+ * Bu dizi bir dönem panonun TEK kaynağıydı ve elle tutuluyordu. Kardeş sayfa
+ * (`[branch]/page.tsx`) ise listeyi `readdirSync` ile ÜRETİYOR: yani aynı
+ * ilişki aynı özellikte iki ayrı yoldan okunuyordu. Yeni bir branş JSON'u
+ * eklendiğinde branş sayfası açılıyor ama PANODA hiç görünmüyordu.
+ *
+ * Şimdi: küme dizinden, SIRA buradan. Listede olmayan branşlar sona
+ * alfabetik ekleniyor — `listelenmeyenKategori()` ile aynı 'kendini onaran
+ * okuma' kalıbı, bir düzey yukarıda.
+ */
+const BRANS_SIRASI = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji', 'onkoloji', 'enfeksiyon'];
+
+function bransKimlikleri(): string[] {
+  let dosyalar: string[] = [];
+  try {
+    dosyalar = fs
+      .readdirSync(path.join(process.cwd(), 'content', 'premium', 'ydus', 'branches'))
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.slice(0, -5)); // '.json' zaten süzüldü — regex kaçışına gerek yok
+  } catch {
+    return BRANS_SIRASI; // dizin okunamazsa eski davranış
+  }
+  const kume = new Set(dosyalar);
+  const sirali = BRANS_SIRASI.filter((id) => kume.has(id));
+  // readdirSync sırası PLATFORMA bağlı (bkz. CLAUDE.md) — sona eklenenler
+  // kod noktasına göre sıralanır ki Linux ve Windows aynı çıktıyı versin.
+  const ek = dosyalar.filter((id) => !BRANS_SIRASI.includes(id)).sort();
+  return [...sirali, ...ek];
+}
 
 function bransYukle(id: string): BransVerisi | null {
   try {
@@ -128,7 +158,7 @@ export default async function YdusAnaSayfa({
   // olmayan içeriğe göndermek olurdu.
   const hazirKonular: { brans: string; id: string; baslik: string }[] = [];
 
-  for (const id of BRANCH_IDS) {
+  for (const id of bransKimlikleri()) {
     const veri = bransYukle(id);
     if (!veri) continue;
 
