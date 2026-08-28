@@ -20195,3 +20195,63 @@ Bir üstteki bölümde: kırık çapa 0, bölüm kimliği olmayan 0, ilgilisi ol
 **Aktarılabilir kontrol listesi:** silme/yeniden adlandırma → tarih →
 kopya (eşiği indirerek) → yapısal entegrasyon. Dördü de salt-okunur ve
 toplam birkaç dakika; içerik her birleştiğinde sürülebilir.
+
+### VURGULANABİLİR YÜZEY İLANI DOĞRU — ama VAKA açıklamaları çalışma döngüsünün DIŞINDA
+
+Belge dört bağlı yüzey ilan ediyor: konu detayı · premium YDUS konu sayfası ·
+inciler (`pearl:<id>`) · soru çözüm açıklaması (`soru:<id>`). Deponun kendi
+kuralı gereği ("belgede yazması taşıdığı anlamına gelmez") kaynaktan sayıldı —
+**ilan gerçek**, dördü de yerinde ve kimlik biçimleri de yazdığı gibi.
+
+Asıl bulgu komşu yüzeylerde:
+
+| gated motor | `data-readable` | açıklama alanı geçişi |
+|---|---|---|
+| `QuizEngine` | **2** (`soru:<id>`) | 10 |
+| `PearlsViewer` | **3** (`pearl:<id>`) | — |
+| **`VakaEngine`** | **0** | **16** |
+| `YdusCockpit` (soru-cozum) | 0 | 1 |
+| `FlashcardPlayer` | 0 | 0 |
+
+Yani aynı ücretli üründe iki kardeş motorun biri vurgulanabilir, öteki değil.
+Dışarıda kalan metin ölçüldü:
+
+| külliyat | dosya | açıklama alanı | karakter |
+|---|---|---|---|
+| quiz (**vurgulanabilir**) | 40 | 768 | 432 144 |
+| **vaka (vurgulanamaz)** | 11 | 113 | **41 092** |
+
+Yani ürünün ayırt edici döngüsü (**oku → vurgula → tekrar et → kaynağa dön**)
+41 bin karakterlik ücretli açıklama metnine hiç uzanmıyor.
+
+**YANLIŞ VAAT YOK — ve bu ölçüldü.** `(ydus)/layout.tsx` okuma araçlarını
+`[data-readable]` varlığına bağlıyor, yani vaka sayfasında ne seçim çubuğu ne
+not tutamağı çiziliyor. Kullanıcıya olmayan bir yetenek gösterilmiyor;
+eksik olan yetenek, tutarsız olan ilan değil.
+
+#### Kapatmanın önkoşulu KİMLİK — ve mevcut sözleşme onu KARŞILAMIYOR
+
+Vurgular **konteyner kimliği + karakter ofsetiyle** saklanıyor ve vaka
+adımları **yol değişmeden** içerik değiştiriyor — yani belgedeki "kimlik şart"
+durumunun tam örneği. Ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| vaka adımı | 35 |
+| kimliği olan | **8** |
+| **kimliksiz** | **27** (7 dosyanın hepsinde) |
+
+Daha keskin olan şu: kimliği olan sekizin kimliği **`adim-1` · `adim-2`**,
+yani **KONUMSAL**. Belge tam bu biçimi kusur olarak kaydediyor — *"sıra
+numarası orada yanlış içeriğe yapışır"*. Araya bir adım eklenirse `adim-2`
+başka bir metni işaret eder ve o adımdan sonraki bütün vurgular kayar.
+
+Yani önkoşul **"kimlik ekle" değil, "KARARLI kimlik ekle"**: ya içerikten
+türeyen ya da adım silinip eklendiğinde değişmeyen bir anahtar.
+
+**DEĞİŞTİRİLMEDİ.** İki sebep: (1) bu ölçülmüş bir kusur değil, ücretli bir
+yüzeye istenmemiş bir YETENEK EKLEMEK olurdu; (2) bugünkü kimlik sözleşmesiyle
+eklenirse vurgular sessizce yanlış adıma kayabilir — yani düzeltme, deponun en
+pahalı sınıflarından birini (kullanıcı verisinin sessizce bozulması) açardı.
+
+Ölçüm, kapsam ve önkoşul burada; karar içerik/ürün sahibinin.
