@@ -20056,3 +20056,74 @@ yanlış pozitif oranı %100.
 Bir sayfanın "bulunamadı" gösterip göstermediğini gövde metniyle sınayacaksan
 önce BİLİNEN SAĞLAM bir sayfayı aynı süzgeçten geçir; ateşliyorsa süzgeç
 kırıktır, sayfa değil.
+
+### 14 YENİ KONUNUN YAPISAL ENTEGRASYONU — temiz, ve KISALTMA SÖZLÜĞÜ içindekiler eşiğini de belirliyor
+
+Yeni içerik, bu oturumda yazılan üç özelliğin taze sınavıydı: içindekiler ·
+kırıntı ata zinciri · İlgili Konular. Canlıda ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| kırık sayfa içi çapa | **0 / 14** |
+| bölüm kimliği olmayan | **0** |
+| İlgili Konular alan | **14 / 14** (5–10 öneri) |
+| ÇIKMAZ SOKAK | **0** |
+| okuma alanı (`[data-readable]`) | 14/14 |
+| ata bağı olmayan | 1 — `bruselloz`, **kök konu olduğu için doğru** |
+
+#### Bir konu içindekiler bloğunu KISALTMA AÇILIMI sayesinde alıyor
+
+Ölçüm önce üç konuyu eşiğin altında gösterdi, canlıda ise **ikisi** TOC'suzdu.
+Sapma üründe değil ölçütümdeydi: `govdeUzunlugu` **`kisaltmaAc`'tan SONRA**
+hesaplanıyor (`page.tsx` satır 299 → 332), ben HAM metni ölçmüştüm.
+
+Gerçek fonksiyon sürülünce (yeniden yazılmadı — `node --experimental-strip-types`
+ile `app/lib/kisaltma.ts` doğrudan çağrıldı):
+
+| konu | ham | açılmış | TOC |
+|---|---|---|---|
+| `arni-etkilesimler` | 4873 | 5011 | yok |
+| **`arni-neprilisin-fizyolojisi`** | **5955** | **6027** | **VAR** |
+| `respiratuvar-asidoz` | 3739 | 3763 | yok |
+
+Yani o konu eşiği **27 karakterle** geçiyor ve bunu sağlayan şey kısaltma
+açılımı.
+
+#### Bağlaşımın kapsamı ölçüldü — sözlük artık ÜÇ tüketiciyi besliyor
+
+423 görünür konu, gerçek fonksiyonla tarandı:
+
+| ölçüt | değer |
+|---|---|
+| TOC alan konu | **64** (merge öncesi 50 — içerik büyüdü) |
+| **açılım sayesinde eşiği geçen** | **3** |
+| eşikten ±300 karakter içinde | **15** |
+| en dar marj | **+7** (`endokrinoloji/riedel-tiroiditi`) |
+
+Yani sözlüğe bir girdi eklemek ya da çıkarmak birkaç konunun içindekiler
+bloğunu açıp kapatabiliyor. Sözlüğün tüketicileri:
+
+1. render edilen metin,
+2. **vurgu karakter ofsetleri** — belgede kayıtlı; bu oturumda yeniden
+   demirleme kurtarma katmanı eklendi,
+3. **içindekiler eşiği** — bu tur ölçüldü.
+
+**KUSUR DEĞİL ve kurtarma da gerekmiyor**, çünkü eşik yalnızca AFFORDANSI
+yönetiyor: bölüm kimlikleri her konuda basılıyor, yani derin bağlantı eşikten
+bağımsız. Canlıda dört sınır vakası doğrulandı ve dördü de çevrimdışı
+tahminle birebir:
+
+| marj | TOC | bölüm kimliği |
+|---|---|---|
+| +7 (`riedel-tiroiditi`) | **var** | 7 |
+| +27 (`arni-neprilisin`) | **var** | 6 |
+| −41 (`cushing-patofizyoloji`) | yok | **8** |
+| −123 (`arni-tedavisi`) | yok | **6** |
+
+Son iki satır kritik: TOC yok ama kimlikler var.
+
+**Aktarılabilir kural: bir eşiği ölçerken, eşiğin ölçtüğü değerin RENDER
+ZİNCİRİNDEN geçip geçmediğini sor.** Bu turda ham metni ölçmek üç konuda
+doğru, birinde yanlış cevap verdi — ve yanlış olan tam da sınırdakiydi.
+Ayrıca: bir sözlük değişikliğinden sonra "TOC alan konu 64 → 66" görürsen
+kusur arama, bu beklenen davranış.
