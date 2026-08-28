@@ -408,11 +408,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "siadh-ods-derin-analiz",
    "baslik": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi"
   },
@@ -420,16 +415,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-ods-ve-relowering",
    "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
   }
  ],
  "endokrinoloji/he-vs-miksodem-psikozu": [
@@ -505,19 +490,19 @@
    "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "otiroid-hasta-sendromu-ntis",
    "baslik": "Ötiroid Hasta Sendromu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-fizyopatoloji",
-   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-asidoz",
-   "baslik": "Respiratuvar Asidoz"
   },
   {
    "brans": "onkoloji",
@@ -1046,6 +1031,11 @@
    "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı"
   },
   {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kombinasyon-stratejileri",
    "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
@@ -1105,6 +1095,11 @@
   }
  ],
  "endokrinoloji/men1-spironolakton-cift-mekanizma": [
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
   {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-kombinasyon-stratejileri",
@@ -1399,18 +1394,13 @@
  "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
   {
    "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
+   "slug": "dopamin-agonistleri-kalp-kapak",
+   "baslik": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+   "brans": "endokrinoloji",
+   "slug": "ektopik-prolaktin-salgisi",
+   "baslik": "Ektopik Prolaktin Salgısı"
   }
  ],
  "endokrinoloji/riedel-tiroiditi": [
@@ -1587,21 +1577,6 @@
    "brans": "endokrinoloji",
    "slug": "sglt2-hasta-gunler-kurali-sick-day",
    "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-tedavisi",
-   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-hipotansiyon",
-   "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetmezligi",
-   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
@@ -1973,6 +1948,106 @@
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
   }
  ],
+ "enfeksiyon/bruselloz": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve YDUS İpuçları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-tedavi-direnc-yeni-nesil",
+   "baslik": "Candidozyma auris: Tedavi Yönetimi, İlaç Direnci ve Yeni Nesil Antifungaller"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "cr-hvkp-endoftalmi-komplikasyonu",
+   "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
+  }
+ ],
+ "enfeksiyon/bruselloz-hematolojik-komplikasyonlar": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
+ "enfeksiyon/bruselloz-hepatobiliyer-tutulum": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
+ "enfeksiyon/bruselloz-intrasellular-patobiyoloji": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-tedavi-algoritmasi",
+   "baslik": "Bruselloz Tedavi Algoritması: Rejimler, Özel Popülasyonlar ve Fokal Tutulum"
+  }
+ ],
+ "enfeksiyon/bruselloz-tedavi-algoritmasi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+  }
+ ],
  "enfeksiyon/c-difficile-vankomisin-fidaksomisin": [
   {
    "brans": "enfeksiyon",
@@ -2252,6 +2327,11 @@
  "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
   {
    "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
   },
@@ -2259,11 +2339,6 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/fidaksomisin-ileri-duzey": [
@@ -2484,62 +2559,74 @@
  "enfeksiyon/invazive-mantar-enfeksiyon": [
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-klinik",
-   "baslik": "Candidozyma auris: Klinik Prezentasyon ve YDUS İpuçları"
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-tedavi-direnc-yeni-nesil",
-   "baslik": "Candidozyma auris: Tedavi Yönetimi, İlaç Direnci ve Yeni Nesil Antifungaller"
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "cr-hvkp-endoftalmi-komplikasyonu",
-   "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "cr-hvkp-hipervirulan-varyant",
-   "baslik": "CR-hvKP: Hipervirülan Varyant ve Kusursuz Fırtına"
+   "slug": "bruselloz-intrasellular-patobiyoloji",
+   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
   }
  ],
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-sinerji",
-   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+   "slug": "vanco-bobrek",
+   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-klinik-rehber",
-   "baslik": "Fosfomisin"
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "hucre-duvari-sentez-inhibitorleri",
-   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
+  }
+ ],
+ "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "prokalsitonin-yukselme-paterni",
+   "baslik": "Prokalsitonin (PCT) Sentez ve Salınım Dinamikleri"
   }
  ],
  "enfeksiyon/prokalsitonin-genel": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
+   "brans": "enfeksiyon",
+   "slug": "mantar-enfeksiyon-ana-sayfa",
+   "baslik": "Mantar Enfeksiyonları"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-derleme",
+   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+   "brans": "enfeksiyon",
+   "slug": "vanco-bobrek",
+   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
  ],
  "enfeksiyon/prokalsitonin-yukselme-paterni": [
@@ -2576,6 +2663,11 @@
    "brans": "enfeksiyon",
    "slug": "tigesiklin-uyarilar-yan-etkiler",
    "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
   },
   {
    "brans": "endokrinoloji",
@@ -3006,6 +3098,11 @@
   }
  ],
  "gastroenteroloji/karaciger-hastaliklari": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hepatobiliyer-tutulum",
+   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
@@ -3438,6 +3535,11 @@
   }
  ],
  "hematoloji/aplastik-anemi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz-hematolojik-komplikasyonlar",
+   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
+  },
   {
    "brans": "hematoloji",
    "slug": "trombositopeni-itp",
@@ -4629,38 +4731,28 @@
    "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
   }
  ],
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
   {
    "brans": "kardiyoloji",
-   "slug": "kalp-yetmezligi",
-   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipid-ezetimibe",
-   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-guncel-kilavuz",
-   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "pcsk9-inhibitorleri",
+   "baslik": "PCSK9 İnhibisyonu"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
+   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
   }
  ],
  "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
@@ -4771,8 +4863,8 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-guncel-kilavuz",
-   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+   "slug": "lipidoloji-statin-miyopatisi-sams",
+   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   }
  ],
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
@@ -4833,35 +4925,79 @@
    "baslik": "Kapak Hastalıkları (Aort Darlığı ve Mitral Yetersizlik)"
   }
  ],
+ "kardiyoloji/kalp-yetersizligi-arni-etkilesimler": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-neprilisin-fizyolojisi",
+   "baslik": "Neprilisin İnhibisyonu Fizyolojisi: Moleküler Mekanizmalar, Sistemik Etkiler ve Klinik İlişkiler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-ilac-etkilesimleri",
+   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  }
+ ],
+ "kardiyoloji/kalp-yetersizligi-arni-neprilisin-fizyolojisi": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
+  }
+ ],
  "kardiyoloji/kalp-yetersizligi-arni-tedavisi": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   },
   {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-hipotansiyon",
    "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kardiyak-amiloidoz",
+   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
   }
  ],
  "kardiyoloji/kalp-yetersizligi-hipotansiyon": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   },
   {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-arni-tedavisi",
    "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "kardiyak-amiloidoz",
+   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
   }
  ],
  "kardiyoloji/kalp-yetmezligi": [
   {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-arni-etkilesimler",
+   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "pcsk9-inhibitorleri",
+   "baslik": "PCSK9 İnhibisyonu"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-direncli-hipertansiyon",
+   "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "direncli-hipertansiyon-yeni-nesil",
+   "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler"
   }
  ],
  "kardiyoloji/kapak-hastaliklari": [
@@ -5321,14 +5457,26 @@
  ],
  "nefroloji/asit-baz-fizyopatoloji": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  }
+ ],
+ "nefroloji/asit-baz-kompanzasyon-ilkeleri": [
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-fizyopatoloji",
+   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
   },
   {
    "brans": "nefroloji",
-   "slug": "respiratuvar-asidoz",
-   "baslik": "Respiratuvar Asidoz"
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-asidoz",
+   "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
   }
  ],
  "nefroloji/bobrek-fosfor-homeostazi-fizyoloji": [
@@ -5346,6 +5494,28 @@
    "brans": "nefroloji",
    "slug": "kbh-mkb-kapsamli-inceleme",
    "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+  }
+ ],
+ "nefroloji/delta-anyon-acigi-delta-delta-orani": [
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-asidoz",
+   "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperkalsemi-ve-hiperparatiroidi",
+   "baslik": "Asit-Baz Denge Bozuklukları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
   }
  ],
  "nefroloji/diuretikler": [
@@ -5808,6 +5978,30 @@
    "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
   }
  ],
+ "nefroloji/metabolik-alkaloz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-osilodrostat-mineralokortikoid",
+   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-spironolakton-cift-mekanizma",
+   "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma"
+  }
+ ],
+ "nefroloji/metabolik-asidoz": [
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  }
+ ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
   {
    "brans": "nefroloji",
@@ -5948,7 +6142,7 @@
    "baslik": "Yeni Nesil ns-MRA Finerenon"
   }
  ],
- "nefroloji/respiratuvar-asidoz": [
+ "nefroloji/respiratuvar-alkaloz": [
   {
    "brans": "endokrinoloji",
    "slug": "hiperkalsemi-ve-hiperparatiroidi",
@@ -5956,8 +6150,40 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  }
+ ],
+ "nefroloji/respiratuvar-asidoz": [
+  {
+   "brans": "nefroloji",
    "slug": "asit-baz-fizyopatoloji",
    "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asit-baz-kompanzasyon-ilkeleri",
+   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-alkaloz",
+   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "metabolik-asidoz",
+   "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-alkaloz",
+   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
   }
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [
