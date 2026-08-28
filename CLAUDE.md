@@ -21132,3 +21132,109 @@ yazılacaktı.
 Yan not: 9 sınır vakasını tek çağrıda `setTimeout` ile sürmek **30 sn'de zaman
 aşımına uğradı** — panel gizliyken zamanlayıcılar kısılıyor (belgede kayıtlı).
 Ölçümü ayrı çağrılara bölmek hem hızlı hem güvenilir.
+
+### ⚠ BİR ARAÇ YANLIŞ KOVAYA KONDUĞU İÇİN ELLE DENETİMDEN KAÇMIŞ — `lawton-iadl`
+
+En az doğrulanmış araçlar sırasıyla sürülüyor. `lawton-iadl` sürülürken önce
+belgedeki bir iddia çürüdü.
+
+Cinsiyet dalı sınıfı kapatılırken iki kova kurulmuştu:
+
+| kova | ne yapıldı |
+|---|---|
+| **cinsiyet ALANI olan 9 araç** | dalları tek tek doğrulandı |
+| cinsiyete bağlı kavram geçip alanı OLMAYAN 11 aday | **elle bakıldı**, hepsi sabit eşik çıktı |
+
+`lawton-iadl` birinci kovada yazılıydı. Ölçüldü — **o araçta cinsiyet
+kontrolü YOK**:
+
+| araç | kod geçişi | `useState` | dal (`=== "m"` vb.) |
+|---|---|---|---|
+| bmi · bmr · findrisc · gnri · glasgow-blatchford | 2–13 | — | **DAL** |
+| egfr · psi-port | 6 · 9 | **DURUM** | — · DAL |
+| chads-vasc | 12 | — | — (onay kutusu) |
+| **`lawton-iadl`** | **1** | — | — |
+
+O tek geçiş bir JSX proza satırı: *"Kültürel ve cinsiyet faktörlerini hesaba
+katarak yorumlanmalıdır."* Yani araç ikinci kovanın tanımına uyuyor —
+**kavram geçiyor, alan yok.**
+
+**İddia BAYAT DEĞİL, BAŞTAN YANLIŞ:** dosyanın ilk commit'i (`7e937e81`)
+alınıp sayıldı, orada da geçiş **1**. Alan hiç var olmamış.
+
+Bedeli sınıflandırma hatasının kendisi: `lawton-iadl` yanlış kovada olduğu
+için **11 adayın elle denetiminden kaçtı** — "bu araçta cinsiyet dalı olmalı
+mı?" sorusu hiç sorulmadı. Bu tur soruldu ve aşağıda cevaplandı.
+
+**Aktarılabilir kural: bir sınıfı iki kovaya bölüp yalnızca birini elle
+denetliyorsan, ÜYELİĞİ de ölç.** Kova ataması bir ölçüm değil bir karardı ve
+denetlenen tarafın dışında kaldığı için kimse geri dönüp bakmadı.
+
+#### Aritmetik yayımlanmış Lawton-Brody ile BİREBİR
+
+Puanlama kaynaktan çıkarılıp ekranla ve yayımlanmış ölçekle karşılaştırıldı:
+
+| ölçüt | değer |
+|---|---|
+| madde | **8** |
+| toplam şık | **31** — grup boyları [4,4,4,5,3,5,3,3] |
+| madde başına 1 puanlı şık sayısı | **[3,1,1,4,2,3,1,2]** |
+| yayımlanmış Lawton-Brody (1969) deseni | **[3,1,1,4,2,3,1,2]** |
+| ulaşılabilir tavan | **8** — ilan "0–8 Puan" |
+
+Desen kaynaktan ve EKRANDAN ayrı ayrı çıkarıldı (rozet rakamı okunarak) ve
+ikisi birbirini tuttu; tutmasaydı ölçüm `OLÇÜM GEÇERSİZ` diye duruyordu.
+
+#### On altı sınır kararı İKİ ölçümle kapatıldı
+
+Tavan ölçümü her grubun **İLK** şıkkını tıklıyor, yani 1 puanlı öteki şıklar
+(ev bakımında 2., 3., 4.) hiç sürülmüş olmuyor. Kesim noktası şöyle kapatıldı:
+
+| kurulum | beklenen | ölçülen |
+|---|---|---|
+| her grupta **son 1 puanlı** şık — indeks [2,0,0,3,1,2,0,1] | 8 | **8/8 · BAĞIMSIZ** |
+| her grupta **ilk 0 puanlı** şık — indeks [3,1,1,4,2,3,1,2] | 0 | **0/8 · AĞIR BAĞIMLILIK** |
+
+İki indeks dizisi **bitişik** (her grupta `ilk0 = son1 + 1`, ölçüldü), yani
+ikisi birlikte sekiz grubun kesim noktasını tam olarak kanıtlıyor. Tek bir
+şıkkın puanı kaysa iki ölçümden biri 8 ya da 0 vermezdi.
+
+#### Bantlar ve boş form
+
+| skor | bant |
+|---|---|
+| 8 | BAĞIMSIZ |
+| **5** | KISMEN BAĞIMLI |
+| **4** | ORTA BAĞIMLILIK |
+| **3** | ORTA BAĞIMLILIK |
+| **2** | AĞIR BAĞIMLILIK |
+
+Her ölçümde ekrandaki skor, seçili şıkların ekrandan okunan puan toplamıyla
+karşılaştırıldı — sekizinde de tuttu. İki sınır (5/4 ve 3/2) da doğru.
+
+`total` yalnızca **sekizi de yanıtlanınca** hesaplanıyor
+(`answered === ITEMS.length ? … : null`), yani dokunulmamış formda hüküm
+basılmıyor — `mna`da düzeltilen sınıf burada zaten kapalı. Duyuru bölgesi de
+çalışıyor ("Sonuç: BAĞIMSIZ" / "Sonuç: AĞIR BAĞIMLILIK").
+
+#### ⚠ AÇIK MADDE — özgün ölçekteki ERKEK varyantı uygulanmıyor (karar bekliyor)
+
+Kaçan elle denetimin cevabı: Lawton & Brody'nin 1969 puanlamasında erkekler
+**yemek hazırlama, ev bakımı ve çamaşır** maddelerinden puanlanmaz — erkekte
+tavan **5**, kadında 8. Araç herkese 8 madde uyguluyor.
+
+**KUSUR SAYILMADI ve gerekçesi ölçülebilir:**
+
+- **İç çelişki YOK.** Araç "8 Madde · 0–8 Puan" ilan ediyor ve herkese 0–8
+  veriyor; bu depoda avlanan ilan–gerçek ayrışması oluşmuyor.
+- Özgün dışlama 1969'un toplumsal rol varsayımını taşıyor, işlevi değil;
+  güncel geriatrik kullanımda sekiz maddenin ikisine de uygulanması yaygın.
+- Aracın kendi notu zaten *"kültürel ve cinsiyet faktörlerini hesaba katarak
+  yorumlanmalıdır"* diyor — kullanıcıya TALİMAT, aracın yapmadığı bir hesap
+  iddiası değil (`nutrition-needs`in "obez hastada ideal ağırlık" notuyla
+  aynı sınıf).
+
+Uygulamak her erkek hastanın skorunu ve bandını değiştiren bir **klinik
+puanlama kararı** olurdu — `asdas`ın `−0.211` sabiti ve `essdai`nin eksik
+kutanöz düzeyiyle aynı kova. Ölçüm, kapsam ve gerekçe burada; karar içerik
+sahibinin.
