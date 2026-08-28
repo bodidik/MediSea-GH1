@@ -20706,3 +20706,52 @@ aracı eklendiği gün kendiliğinden kapanır.
 Reddedilen mekanik süpürmenin hedefi (120 sayfaya anlamlı bölüm başlığı) başka
 bir işin yan ürünü olarak, tek bir üreteç satırıyla ve insan kararı
 gerektirmeden karşılandı.
+
+### PREMIUM ŞERİDİ 41 SAYFADA DOĞRULANDI — ve tek turda ÜÇ ÇAPA HATASI sahte kusur üretti
+
+Belgede kayıtlı bir kusurun (24 konu sayfası premium şeridinde 404'e
+bağlanıyordu) içerik değiştikten sonraki durumu ölçüldü.
+
+**Sonuç temiz:** 13 branşın hepsinden 41 sayfa, **sapma 0**. Hem hedef hem
+metin iddiası doğru:
+
+| branş türü | hedef | metin |
+|---|---|---|
+| premium karşılığı VAR (9) | `/tr/premium/ydus/<branş>` | "Bu branşla ilgili çıkmış tüm YDUS soruları…" |
+| karşılığı YOK (4) | `/tr/premium/ydus` | branşa özgü iddia **yok** |
+
+Takma ad da çalışıyor: `gogus` → `/tr/premium/ydus/gogus-hastaliklari`,
+başlık "YDUS Göğüs Hast.". On benzersiz hedefin onu da **200**.
+
+#### Üç çapa hatası, üçü de inandırıcı bir sahte kusur üretti
+
+Bu tur, ölçüt kusurunun ne kadar kolay "bulgu" gibi göründüğünün üç ayrı
+örneğini verdi:
+
+| # | hata | ürettiği sahte sonuç |
+|---|---|---|
+| 1 | `href="/tr/premium/ydus…"` deseninin **İLK** eşleşmesi alındı | **21 sayfa "yanlış hedefe bağlanıyor"** — oysa yakalanan şey BAŞLIKTAKİ bağdı |
+| 2 | palyatif için **uydurma slug** kullanıldı | "bu branşta premium şeridi hiç yok" (sayfa 404'tü) |
+| 3 | pencere çapadan **İLERİ** açıldı | "başlık branşa özgü ama bağ genel" |
+
+Birincisinin imzası netti ve fark ettiren de o oldu: **21 sapmanın 21'i aynı
+yöndeydi.** Tekdüze sapma neredeyse her zaman ölçüt kusurudur.
+
+**Üçüncüsü yeni ve keskin:** kartın tamamını saran `<a>` etiketinin `href`'i,
+içerideki metin çapasından **259 karakter ÖNCE** geliyor. Yani metin
+çapasından ileriye bakan bir pencere, o kartın kendi bağlantısını **yapısal
+olarak göremez**.
+
+```
+<a href="/tr/premium/ydus/nefroloji">   <- href BURADA (capa - 259)
+  <span>MediSea Premium</span>          <- metin capasi
+  <h3>YDUS Nefroloji</h3>
+```
+
+**Kural: bir kartın bağlantısını metin çapasıyla ararken pencereyi İKİ YÖNE
+aç.** Sarmalayan bir bağlantıda `href` her zaman içerideki metinden öncedir.
+
+Doğru çapa da ölçüldü, varsayılmadı: `MediSea Premium` dizesi 41 sayfanın
+**41'inde tam bir kez** geçiyor — `<h3>YDUS ` ise geçmiyor, çünkü içerik
+başlıkları da "YDUS" ile başlayabiliyor ("YDUS / Board Vaka Özeti",
+"BNP Tuzağı (YDUS Spotu)"). Çapa seçerken benzersizliği SAY.
