@@ -19718,3 +19718,8 @@ ve DERLEME PARÇA adlarını da yakaladı (`layout-c4f4f8…`, `page-ac69…`,
 `not-found-…`), iki taraf "13" görünüp "küme aynı değil" dedi. Çapa `href`
 biçimine (`"/tr/premium/ydus/<slug>"`) bağlanınca sayı 9'a indi ve sıra da
 karşılaştırılabilir hâle geldi.
+
+Ölçüt `scripts/liste-adaylari.cjs` olarak kalıcı ve **verdiktler başında
+yazılı** — 25 aday bir daha kovalanmasın. `--kontrol` iki yönlü: kod içindeki
+dizi yakalanıyor, **yalnızca YORUMDA geçen aynı şekil sayılmıyor** (bu depoda
+yorumlar kusurları birebir alıntılıyor).
