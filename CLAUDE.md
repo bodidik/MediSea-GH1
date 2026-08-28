@@ -19387,3 +19387,29 @@ söylüyor ve belgede kayıtlı ölçümler bunu destekliyor: ulaşılamayan say
 311/311 çalışıyor.
 
 Karar kullanıcının: ağaç basılacaksa rozet de aynı turda hizalanmalı.
+
+#### Site haritası `lastmod` ↔ sayfadaki "Güncelleme" — iki ayrıştırıcı, sapma 0
+
+Aynı kaynak (`meta.updatedAt`) İKİ ayrı ayrıştırıcıdan geçiyor: harita
+`isoTarih()` ile `YYYY-MM-DD`, sayfa `tarihYazisi()` ile "14 Mar 2026". İçerikte
+tarih iki biçimde yazılabildiği için (İngilizce ve Türkçe ay kısaltması) bu
+gerçek bir ayrışma adayıydı.
+
+| ölçüt | değer |
+|---|---|
+| haritadaki konu adresi | 410 |
+| `lastmod` taşıyan | **406** |
+| eşit aralıklı örnek | 30 |
+| **sapma** | **0** |
+
+**İKİ YÖN DE ölçüldü** — sınıfın kolay kaçan yarısı ikincisi:
+
+| durum | sonuç |
+|---|---|
+| tarihi OLAN sayfa | harita ve sayfa **birebir**; pozitif kontrol `addison` → "Güncelleme: 14 Mar 2026" |
+| tarihi OLMAYAN 4 konu | haritada `lastmod` **yok** VE sayfada "Güncelleme" satırı **yok** |
+
+İkinci satır belgede kayıtlı düzeltmenin tarihsel kontrolü: o dört konu
+(`riedel-tiroiditi` · `hematolojik-maligniteler` · `lenfomalar` · `nhl-genel`)
+bir dönem sabit yazılmış **"06 MAR 2026"** basıyordu. Bugün ikisi de sessiz —
+"tarih bilinmiyorsa alan hiç basılmaz" ilkesi iki yüzeyde de uygulanıyor.
