@@ -18,6 +18,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { ebeveynListesi } = require('../lib/ebeveyn.cjs');
 
 const KOK = path.join(__dirname, '..');
 const ICERIK = path.join(KOK, 'content', 'canonical');
@@ -110,7 +111,7 @@ function konulariTopla() {
           brans,
           slug,
           baslik: (typeof v?.title === 'string' && v.title.trim()) || slug.replace(/-/g, ' '),
-          parent: v?.meta?.parent || null,
+          parentler: ebeveynListesi(v?.meta?.parent),
           etiketler: [...new Set(etiketler)],
         });
       } catch {
@@ -151,7 +152,7 @@ function main() {
       for (const diger of tersDizin[t]) {
         if (diger.anahtar === k.anahtar) continue;
         // Ebeveyn ve çocuklar sayfada zaten bağlı — tekrar etme.
-        if (diger.slug === k.parent || diger.parent === k.slug) continue;
+        if (k.parentler.includes(diger.slug) || diger.parentler.includes(k.slug)) continue;
         skor.set(diger.anahtar, (skor.get(diger.anahtar) || 0) + agirlik);
         ortakSayisi.set(diger.anahtar, (ortakSayisi.get(diger.anahtar) || 0) + 1);
         enNadirOrtak.set(diger.anahtar, Math.min(enNadirOrtak.get(diger.anahtar) ?? Infinity, n));
@@ -195,13 +196,14 @@ function main() {
      * gerçek akrabalığı olan konularda liste seyrelmiyor.
      */
     let liste = secilen;
-    if (!liste.length && k.parent) {
+    if (!liste.length && k.parentler.length) {
+      /* Çok ebeveynlide kardeşlik ölçütü: EN AZ BİR ortak ebeveyn. */
       liste = konular
         .filter(
           (d) =>
             d.anahtar !== k.anahtar &&
             d.brans === k.brans &&
-            d.parent === k.parent
+            d.parentler.some((e) => k.parentler.includes(e))
         )
         .slice(0, EN_FAZLA)
         .map((d) => ({ brans: d.brans, slug: d.slug, baslik: d.baslik }));
@@ -246,9 +248,9 @@ function main() {
         (d) =>
           d.brans === k.brans &&
           d.anahtar !== k.anahtar &&
-          d.slug !== k.parent &&
-          d.parent !== k.slug &&
-          konular.some((c) => c.brans === d.brans && c.parent === d.slug)
+          !k.parentler.includes(d.slug) &&
+          !d.parentler.includes(k.slug) &&
+          konular.some((c) => c.brans === d.brans && c.parentler.includes(d.slug))
       );
 
       /**

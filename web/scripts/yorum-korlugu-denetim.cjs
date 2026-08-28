@@ -65,6 +65,9 @@ const KAPSAM_DISI = new Set([
   'ilan-render-denetim.cjs',
   // Konu gövdelerini birbiriyle karşılaştırıyor: tamamen JSON.
   'benzer-govde-denetim.cjs',
+  // meta.parent şemasını (dize/dizi) denetliyor: tamamen JSON. Kendi
+  // --kontrol kipinde negatif VE pozitif tohumu var.
+  'ebeveyn-denetim.cjs',
 ]);
 
 /** Hedef şekiller SADECE yorumda; kod tarafı tertemiz. */

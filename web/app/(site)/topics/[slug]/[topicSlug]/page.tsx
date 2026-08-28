@@ -14,7 +14,7 @@ import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
-import { ebeveyniCoz } from "@/lib/slug-eslestir";
+import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -351,31 +351,42 @@ export default async function TopicDetailPage({
       return { 
         slug: file.replace(".json", ""), 
         title: content.title, 
-        parent: content.meta?.parent || null,
+        hamParent: content.meta?.parent ?? null,
+        parentler: [] as string[],
         hidden: content.meta?.hidden || false,
         order: content.meta?.order || 99
       };
     } catch (e) { return null; }
-  }).filter(Boolean) as {slug: string, title: string, parent: string | null, hidden: boolean, order: number}[];
+  }).filter(Boolean) as {slug: string, title: string, hamParent: unknown, parentler: string[], hidden: boolean, order: number}[];
 
   // Ebeveyn referansındaki yazım sapmasını onar — branş sayfasıyla AYNI
   // onarım. İkisi farklı davranırsa bir konu branş sayfasında bir başlığın
   // altında görünüp o başlığın kendi sayfasında görünmez; ölçümde tam olarak
   // bu oluyordu (akromegali, "Ön-" ve "on-" farkı yüzünden).
   const tumSluglar = new Set(allTopics.map(t => t.slug));
-  for (const t of allTopics) t.parent = ebeveyniCoz(t.parent, tumSluglar);
+  for (const t of allTopics) t.parentler = ebeveynleriCoz(t.hamParent, tumSluglar, t.slug);
 
   // Doğrudan çocukları bul ve sıraya (order) göre diz
   const childTopics = allTopics
-    .filter(t => t.parent === topicSlug && !t.hidden)
-    .sort((a, b) => a.order - b.order);
+    .filter(t => t.parentler.includes(topicSlug) && !t.hidden)
+    /* BERABERLİK BOZUCU ŞART — yoksa sıra `readdirSync`e düşer ve PLATFORMA
+       BAĞLI olur. Ölçüldü: journal-club'da iki konu da `order: 2` ve
+       Linux (Vercel) ile Windows (yerel) FARKLI sıra üretiyordu. Bu, CI'ı
+       97 koşum kırmış olan sınıfın ta kendisi (bkz. CLAUDE.md). Branş
+       sayfası zaten başlığa göre kırıyordu; buna slug da eklendi, çünkü
+       `sensitivity: "base"` iki başlığı eşit sayabiliyor. */
+    .sort((a, b) =>
+      a.order - b.order ||
+      a.title.localeCompare(b.title, "tr", { sensitivity: "base" }) ||
+      (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0)
+    );
 
   // Her çocuğun KENDİ çocuğu var mı diye bak (dinamik: parent-child grafiğinden çıkarılır)
   // - Kendi çocuğu OLAN bir alt konu = "hub" (menü) -> Menü ızgarasında gösterilir, tıklanınca kendi menüsünü/içeriğini açar
   // - Kendi çocuğu OLMAYAN bir alt konu = "kılcal" (leaf) -> İleri Okuma listesinde gösterilir
   const childrenWithDepth = childTopics.map(child => ({
     ...child,
-    hasOwnChildren: allTopics.some(t => t.parent === child.slug && !t.hidden)
+    hasOwnChildren: allTopics.some(t => t.parentler.includes(child.slug) && !t.hidden)
   }));
 
   const hubChildren = childrenWithDepth.filter(c => c.hasOwnChildren);
@@ -401,9 +412,13 @@ export default async function TopicDetailPage({
   {
     const slugHarita = new Map(allTopics.map((t) => [t.slug, t]));
     const gorulen = new Set<string>([topicSlug]);
+    // ÇOK EBEVEYNLİDE YALNIZCA BİRİNCİL (dizinin ilki) izlenir: bir konunun
+    // tek bir kanonik kırıntı yolu olmalı. İkinci ebeveyni de yürüseydik
+    // aynı sayfa iki farklı ata zinciriyle görünür ve JSON-LD şeması da
+    // (görünen yolla AYNI diziden üretildiği için) çelişirdi.
     let cur = slugHarita.get(topicSlug);
-    while (cur?.parent) {
-      const e = slugHarita.get(cur.parent);
+    while (cur?.parentler.length) {
+      const e = slugHarita.get(cur.parentler[0]);
       // gorulen: ölçümde döngü YOK ama veri içerikten geliyor; sonsuz
       // döngüyü veriye bırakmıyoruz.
       if (!e || e.hidden || gorulen.has(e.slug)) break;

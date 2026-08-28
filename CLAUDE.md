@@ -19413,3 +19413,135 @@ gerçek bir ayrışma adayıydı.
 (`riedel-tiroiditi` · `hematolojik-maligniteler` · `lenfomalar` · `nhl-genel`)
 bir dönem sabit yazılmış **"06 MAR 2026"** basıyordu. Bugün ikisi de sessiz —
 "tarih bilinmiyorsa alan hiç basılmaz" ilkesi iki yüzeyde de uygulanıyor.
+
+### ÇOK EBEVEYNLİ HİYERARŞİ — bir konu birden çok konunun çocuğu olabiliyor
+
+Kullanıcı istedi: *"parent child ilişkilerini koru… gereğinde bir konuyu 3-4
+başka konuya child yap."* `meta.parent` artık İKİ biçimi de kabul ediyor:
+
+```jsonc
+"parent": "hematolojik-maligniteler"                  // tek ebeveyn (eski, DEĞİŞMEDİ)
+"parent": ["hematolojik-maligniteler", "anemiler"]    // çok ebeveyn
+```
+
+**DİZİNİN İLKİ BİRİNCİLDİR** ve bu keyfi değil: kırıntı yolu ile JSON-LD şeması
+AYNI diziden üretiliyor. İkinci ebeveyni de yürüseydik aynı sayfa iki farklı
+ata zinciriyle görünür ve arama motoruna iki hiyerarşi bildirilirdi. Üyelik
+(hangi hub'ın çocuk listesinde görüneceği) ise TÜM ebeveynlerden gelir.
+
+Ayrıştırma **tek kaynakta**: `lib/ebeveyn.cjs`. CommonJS olması bilinçli —
+hem Next tarafı (TS, `@/lib/ebeveyn.cjs` ile) hem `scripts/*.cjs` aynı dosyayı
+okuyor. İki kopya bu depoda tekrar tekrar "iki gerçeklik" kusuru üretti.
+
+| yüzey | çok ebeveynli ölçüt |
+|---|---|
+| branş — ana konu listesi | `parentler.length === 0` |
+| branş — "N alt başlık" rozeti | konu **her** ebeveyninin rozetine sayılır |
+| branş — "Diğer Konular" (asılı) | **HİÇBİR** ebeveyni görünür değilse |
+| konu — Alt Başlıklar / İleri Okuma | `parentler.includes(...)` |
+| konu — kırıntı ata zinciri | yalnızca **birincil** (`parentler[0]`) |
+| `ilgili-index` — akraba elemesi | tüm ebeveynler |
+| `ilgili-index` — kardeş yedeği | **en az bir ortak** ebeveyn |
+| `asili-denetim` | + yeni sınıf: bir ebeveyni görünür, ötekisi çözülmüyor |
+
+**KENDİ KENDİNE EBEVEYN eleniyor** ama sessizce değil — `asili-denetim`
+raporluyor. Bugün içerikte 0 örnek var (ölçüldü, 2-döngü de 0); koruma elle
+yazılan yeni şema için. Elenmezse konu KENDİ çocuk listesinde görünürdü.
+
+**KAPSAM SINIRI: ebeveyn AYNI BRANŞTA olmalı.** İki sayfa da yalnızca kendi
+branş dizinini okuyor. `endokrinoloji/lipid-ezetimibe` ebeveynini
+`lipidoloji-guncel-kilavuz` diye yazmış ve o hub KARDİYOLOJİDE — çok ebeveyn
+bunu çözmüyor, `asili-denetim` onu ayrı sınıfta göstermeye devam ediyor.
+
+#### Doğrulama: RENDER EDİLMİŞ anlık görüntünün ÖNCE/SONRA farkı
+
+"Var olan ilişkiler bozulmadı" iddiası kaynak okuyarak kanıtlanamaz. Aynı
+ölçüt hem canlıya hem yerel üretim derlemesine sürüldü (13 branş + 410 konu;
+her konuda Alt Başlıklar · İleri Okuma · kırıntı bağları):
+
+| ölçüt | sonuç |
+|---|---|
+| birebir aynı kalan | **404 konu + 12 branş** |
+| tohumun değiştirdiği | 2 yüzey — **özellik çalışıyor** |
+| sıralama düzeltmesinin değiştirdiği | 4 konu — **küme aynı, yalnız sıra** |
+
+**Tohum (geçici, geri alındı):** `miyelodisplastik-sendrom-mds`ye ikinci
+ebeveyn olarak `anemiler` verildi.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `anemiler` İleri Okuma | 2 | **3** (MDS eklendi) |
+| `anemiler` rozeti | 6 | **7** |
+| **negatif** — `hematolojik-maligniteler` | MDS var | **değişmedi** |
+| **negatif** — MDS kırıntısı | `hematolojik-maligniteler` | **değişmedi** (birincil) |
+| **negatif** — "Diğer Konular" | 8 | **8** (konu kovaya DÜŞMEDİ) |
+| **negatif** — hematoloji kart kümesi | 15 | **15, aynı slug'lar** |
+
+Beşinci satır kritik: bir ebeveyni görünür olan konu kovaya girerse branş
+sayfasında **iki kez** listelenirdi.
+
+Tohum geri alındı (`git diff content/` = 0 satır), 13 denetim + lint +
+typecheck + build yeniden sürüldü.
+
+#### Doğrulama TURU BAŞKA BİR KUSUR BULDU: çocuk sıralaması PLATFORMA BAĞLIYDI
+
+Canlı ↔ yerel karşılaştırmasında `journal-club` sapıyordu — küme aynı, SIRA
+farklı. Sebep benim değişikliğim değildi:
+
+```
+journal-club/Kalp-yetm-ODI        order: 2
+journal-club/iptacopan-igan-faz3  order: 2   <- BERABERLİK
+```
+
+Konu sayfasının çocuk sıralaması `a.order - b.order` idi ve **beraberlik
+bozucu YOKTU**; sıra `readdirSync`e, yani işletim sistemine düşüyordu. Linux
+(Vercel) `Kalp-yetm-ODI`yi, Windows `iptacopan-igan-faz3`ü öne alıyordu.
+
+Bu, belgede kayıtlı ve **CI'ı 97 koşum boyunca kırmış** olan sınıfın ta
+kendisi — o tur `ilgili-index.cjs`te kapatılmış, konu sayfasında atlanmıştı.
+
+Branş sayfasında beraberlik bozucu VARDI (`title` + `sensitivity: "base"`)
+ama o da yetmiyor: `base` yalnızca büyük harf/aksan farkıyla ayrılan iki
+başlığı EŞİT sayıyor ve orada sıra yine platforma düşüyor. İkisine de son
+çare olarak **slug** eklendi (kod noktası, `localeCompare` DEĞİL — o da
+çalışma zamanının yereline bağlı).
+
+Ölçüldü: dört konuda sıra oturdu, kümeler birebir aynı kaldı.
+
+**Aktarılabilir kural: bir doğrulama karşılaştırması, doğrulamak için
+kurulduğu değişiklikten BAŞKA bir kusur gösterebilir.** Farkı "benim
+değişikliğim" diye kapatmadan önce, farkın MEKANİZMASINI ölç — burada iki
+konunun `order` değerini okumak yetti.
+
+#### Yama aracının kendi kusuru: satır sonu
+
+`deg` yardımcısı çapada satır sonu YOKSA düz eşleşme yapıyor ama KARŞILIK
+yeni satır içeriyorsa dosyaya LF iniyordu — ve branş sayfası saf CRLF.
+Sonuç: tek satırlık bir KARMA dosya. Ölçüldü (CR=421 / LF=422), düzeltildi,
+karşılık artık her zaman dosyanın kendi biçimine çevriliyor.
+
+Bu depoda dosyalar üç biçimde birden: `page.tsx` saf CRLF, `[topicSlug]/
+page.tsx` saf LF, `asili-denetim.cjs` **KARMA** (CR 147 / LF 149). Satır
+bazlı her yama bunu okumak zorunda.
+
+#### `ebeveyn-denetim.cjs` — şemanın kendi tutarlılığı (rapor, CI kapısı DEĞİL)
+
+Çok ebeveynli şema ELLE yazılıyor, yani yeni bir kusur yüzeyi açıldı. Denetim
+beş sınıf arıyor ve **içerik kararlarını yargılamıyor** (hangi konu hangi
+hub'ın altında olmalı — o kullanıcının):
+
+| sınıf | neden |
+|---|---|
+| kendi kendine ebeveyn | okuma adımı eliyor; sessiz elemek kusuru gizler |
+| **döngü** (a→b→…→a) | kırıntı `gorulen` ile kırılır ama hiyerarşi anlamsızlaşır |
+| çift ebeveyn kaydı | okuma adımı tekilliyor |
+| dize olmayan öge | sessizce düşer |
+| boş dizi `[]` | "ebeveyn yok" ile aynı; niyet belirsiz |
+
+`--kontrol` **iki yönlü**: dokuz kayıtlık tohumda beş kusur sınıfının beşi de
+yakalanıyor VE üç temiz kayıt (tek ebeveyn · çok ebeveyn · kök) işaretlenmiyor.
+Ölçüldü: negatif ✓ · pozitif ✓ · bugünkü içerikte **456 konu, 0 bulgu,
+0 çok ebeveynli**.
+
+Meta teste (`yorum-korlugu-denetim`) kapsam dışı olarak gerekçesiyle kaydedildi
+— JSON tarıyor, orada yorum kavramı yok.

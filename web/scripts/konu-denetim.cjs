@@ -28,6 +28,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { ebeveynListesi } = require('../lib/ebeveyn.cjs');
 
 const KOK = path.join(__dirname, '..', 'content', 'canonical');
 
@@ -109,7 +110,8 @@ function konular() {
         aciklama: aciklamaUret(j),
         gizli,
         bolum: Array.isArray(j.sections) ? j.sections.length : 0,
-        ebeveyn: normSlug((j.meta && j.meta.parent) || ''),
+        /* Çok ebeveynli olabilir; iskelet HUB ayrımı için hepsi sayılır. */
+        ebeveynler: ebeveynListesi(j.meta && j.meta.parent).map(normSlug),
         /* İÇERİK UZUNLUĞU — bölüm SAYISI yetmiyor.
          *
          * `bolum === 0` denetimi bir konuyu ancak HİÇ bölümü yoksa yakalıyor.
@@ -217,8 +219,8 @@ for (const k of hepsi) {
 const ISKELET_ESIK = 300;
 const cocukSayisi = {};
 for (const k of hepsi) {
-  if (k.ebeveyn) {
-    const anahtar = `${k.brans}/${k.ebeveyn}`;
+  for (const e of k.ebeveynler) {
+    const anahtar = `${k.brans}/${e}`;
     cocukSayisi[anahtar] = (cocukSayisi[anahtar] || 0) + 1;
   }
 }

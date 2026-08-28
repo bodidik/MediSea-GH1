@@ -50,3 +50,37 @@ export function ebeveyniCoz(ham: string | null | undefined, slugler: Iterable<st
   }
   return ham;
 }
+
+// ---------------------------------------------------------------------------
+// ÇOK EBEVEYNLİ HİYERARŞİ
+//
+// `meta.parent` dize ya da dizi olabilir. Ayrıştırma tek yerde
+// (`lib/ebeveyn.cjs`) duruyor — `scripts/*.cjs` de aynı dosyayı okuyor, yani
+// uygulama ile denetimler bir daha ayrışamaz.
+// ---------------------------------------------------------------------------
+import { ebeveynListesi as hamListe, birincilEbeveyn as hamBirincil } from "@/lib/ebeveyn.cjs";
+
+export { hamListe as ebeveynListesi, hamBirincil as birincilEbeveyn };
+
+/**
+ * Ham `meta.parent` (dize ya da dizi) -> gerçek slug'lara eşlenmiş ebeveyn dizisi.
+ * Sıra KORUNUR: ilk öge birincil ebeveyndir (kırıntı yolu ve "asılı" hesabı).
+ */
+export function ebeveynleriCoz(
+  ham: unknown,
+  slugler: Iterable<string>,
+  /** Konunun KENDİ slug'ı — verilirse listeden düşer. */
+  kendi?: string,
+): string[] {
+  const kume = slugler instanceof Set ? slugler : new Set(slugler);
+  const cikti: string[] = [];
+  for (const p of hamListe(ham)) {
+    const c = ebeveyniCoz(p, kume);
+    // KENDİ KENDİNE EBEVEYN elenir. Bugün içerikte 0 örnek var (ölçüldü) ama
+    // çok ebeveynli şema elle yazılıyor ve bir hub'ı kendi ebeveyn listesine
+    // koymak kolay: o zaman konu KENDİ çocuk listesinde görünürdü.
+    if (!c || c === kendi) continue;
+    if (!cikti.includes(c)) cikti.push(c);
+  }
+  return cikti;
+}

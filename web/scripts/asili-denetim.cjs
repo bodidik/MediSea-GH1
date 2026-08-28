@@ -24,6 +24,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { ebeveynListesi } = require("../lib/ebeveyn.cjs");
 
 const KOK = path.join(__dirname, "..", "content", "canonical");
 
@@ -39,7 +40,7 @@ for (const b of fs.readdirSync(KOK, { withFileTypes: true }).filter((d) => d.isD
     hepsi.push({
       brans: b.name,
       slug: f.replace(/\.json$/, ""),
-      parent: v?.meta?.parent || null,
+      parentler: ebeveynListesi(v?.meta?.parent),
       hidden: v?.meta?.hidden === true,
       hiddenHam: v?.meta?.hidden,
     });
@@ -83,14 +84,31 @@ const sadelestir = (s) =>
     .replace(/ı/g, "i").replace(/ğ/g, "g").replace(/ü/g, "u")
     .replace(/ş/g, "s").replace(/ö/g, "o").replace(/ç/g, "c");
 
-const asili = gorunur.filter((k) => k.parent && !gorunurAnahtar.has(`${k.brans}/${k.parent}`));
+/* ÇOK EBEVEYNLİ: bir konu ancak HİÇBİR ebeveyni görünür değilse asılıdır.
+   Bir ebeveyni bile görünüyorsa konu oradan bağlı — "Diğer Konular" kovasına
+   girerse aynı konu branş sayfasında iki kez listelenir. */
+const asili = gorunur.filter(
+  (k) => k.parentler.length && !k.parentler.some((e) => gorunurAnahtar.has(`${k.brans}/${e}`))
+);
+
+/* YENİ SINIF (yalnızca çok ebeveynlide oluşur): konu bir görünür ebeveynden
+   bağlı ama BAŞKA bir ebeveyn referansı çözülmüyor. Asılı DEĞİL — gezinmede
+   kaybolmuyor — ama sessiz bir yazım/eksik hub borcu. */
+const kismiAsili = [];
+for (const k of gorunur) {
+  if (!k.parentler.length) continue;
+  if (!k.parentler.some((e) => gorunurAnahtar.has(`${k.brans}/${e}`))) continue;
+  const kayip = k.parentler.filter((e) => !gorunurAnahtar.has(`${k.brans}/${e}`));
+  if (kayip.length) kismiAsili.push({ ...k, kayip });
+}
 
 const gizli = [];
 const sapmis = [];
 const baskaBrans = [];
 const yok = [];
 
-for (const k of asili) {
+for (const kk of asili) for (const parent of kk.parentler) {
+  const k = { ...kk, parent };
   if (tumAnahtar.has(`${k.brans}/${k.parent}`)) {
     gizli.push(k);
     continue;
@@ -116,6 +134,20 @@ console.log(`1) ebeveyn VAR ama gizli : ${gizli.length}`);
 console.log(`2) ebeveyn adı sapmış    : ${sapmis.length}`);
 console.log(`3) ebeveyn BAŞKA BRANŞTA : ${baskaBrans.length}`);
 console.log(`4) ebeveyn hiç yok       : ${yok.length}`);
+/* Kendi kendine ebeveyn: okuma adımı eliyor (konu kendi çocuk listesinde
+   görünmesin diye) ama sessiz elemek içerik kusurunu gizler. */
+const kendiEbeveyn = hepsi.filter((k) => k.parentler.some((e) => sadelestir(e) === sadelestir(k.slug)));
+if (kendiEbeveyn.length) {
+  console.log(`
+— KENDİ KENDİNE ebeveyn (okuma adımı eliyor) : ${kendiEbeveyn.length}`);
+  for (const k of kendiEbeveyn) console.log(`   ${k.brans}/${k.slug}`);
+}
+if (kismiAsili.length) {
+  console.log(`
+— KISMİ: bir ebeveyni görünür, ötekisi çözülmüyor (asılı DEĞİL) : ${kismiAsili.length}`);
+  for (const k of kismiAsili)
+    console.log(`   ${k.brans}/${k.slug}  →  çözülmeyen: ${k.kayip.join(', ')}`);
+}
 
 if (baskaBrans.length) {
   console.log(`

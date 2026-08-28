@@ -8,7 +8,7 @@ import { getSpecialty } from "@/app/lib/specialties";
 import { getTopicCounts } from "@/app/lib/topic-counts";
 import { getBranchTools, getBranchToolCategory } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
-import { ebeveyniCoz } from "@/lib/slug-eslestir";
+import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 import { slugCoz } from "@/lib/slug";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
@@ -121,7 +121,8 @@ export default async function BranchListPage({
           slug: file.replace(".json", ""),
           title: content.title || file.replace(".json", ""),
           order: Number(content.meta?.order ?? 999),
-          parent: content.meta?.parent || null,
+          hamParent: content.meta?.parent ?? null,
+          parentler: [] as string[],
           hidden: content.meta?.hidden || false,
         };
       } catch (err) {
@@ -130,7 +131,7 @@ export default async function BranchListPage({
         return null;
       }
     })
-    .filter(Boolean) as { slug: string; title: string; order: number; parent: string | null; hidden: boolean }[];
+    .filter(Boolean) as { slug: string; title: string; order: number; hamParent: unknown; parentler: string[]; hidden: boolean }[];
 
   // 2b. Ebeveyn referansındaki YAZIM sapmasını onar.
   //
@@ -143,17 +144,22 @@ export default async function BranchListPage({
   // eksikleri GİZLEMEZ, "Diğer Konular" ve asili-denetim.cjs onları
   // görmeye devam eder.
   const tumSluglar = new Set(topicList.map((t) => t.slug));
-  for (const t of topicList) t.parent = ebeveyniCoz(t.parent, tumSluglar);
+  for (const t of topicList) t.parentler = ebeveynleriCoz(t.hamParent, tumSluglar, t.slug);
 
   // 3. Stabil Sıralama: Önce Order (Sayısal), sonra Alfabetik (Türkçe-Base)
+  // Son çare olarak SLUG: `sensitivity: "base"` yalnızca büyük harf/aksan
+  // farkıyla ayrılan iki başlığı EŞİT sayıyor ve orada sıra yine
+  // `readdirSync`e — yani PLATFORMA — düşüyordu.
   topicList.sort((a, b) => {
     if (a.order !== b.order) return a.order - b.order;
-    return a.title.localeCompare(b.title, "tr", { sensitivity: "base" });
+    const t = a.title.localeCompare(b.title, "tr", { sensitivity: "base" });
+    if (t) return t;
+    return a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0;
   });
 
   // 4. SADECE ANA KONULARI LİSTELE (Alt konular burada görünmesin — onlar konu
   // detay sayfasındaki "Alt Başlıklar" menüsünde / "İleri Okuma"da yer alır)
-  const mainTopics = topicList.filter(t => !t.parent && !t.hidden);
+  const mainTopics = topicList.filter(t => t.parentler.length === 0 && !t.hidden);
 
   /** Görünen kırıntı yolu ile JSON-LD şeması AYNI diziden üretilir. */
   const kirintiAdimlari = [
@@ -163,11 +169,12 @@ export default async function BranchListPage({
   ];
 
   // Her ana konunun kendi alt konusu var mı? (kaç tane) — kompakt kartta rozet olarak gösterilir
+  // Çok ebeveynli bir konu, ebeveynlerinin HEPSİNİN rozetine sayılır — konu
+  // sayfasında da hepsinin çocuk listesinde göründüğü için iki taraf tutar.
   const childCounts: Record<string, number> = {};
   for (const t of topicList) {
-    if (t.parent && !t.hidden) {
-      childCounts[t.parent] = (childCounts[t.parent] || 0) + 1;
-    }
+    if (t.hidden) continue;
+    for (const e of t.parentler) childCounts[e] = (childCounts[e] || 0) + 1;
   }
 
   // ASILI KALAN KONULAR — ebeveyni olarak yazılan konu ya hiç yok ya da gizli.
@@ -182,10 +189,16 @@ export default async function BranchListPage({
   // konu kaybolmuyor, aşağıda listeleniyor. İçerik düzeldikçe bu bölüm
   // kendiliğinden boşalır.
   const slugKumesi = new Map(topicList.map((t) => [t.slug, t]));
+  //
+  // ÇOK EBEVEYNLİDE ÖLÇÜT: hiçbir ebeveyni görünür değilse asılıdır. Bir
+  // ebeveyni bile görünüyorsa konu oradan bağlı — kovaya girerse aynı konu
+  // sayfada iki kez listelenir.
   const asiliKonular = topicList.filter((t) => {
-    if (t.hidden || !t.parent) return false;
-    const ebeveyn = slugKumesi.get(t.parent);
-    return !ebeveyn || ebeveyn.hidden;
+    if (t.hidden || t.parentler.length === 0) return false;
+    return !t.parentler.some((e) => {
+      const ebeveyn = slugKumesi.get(e);
+      return ebeveyn && !ebeveyn.hidden;
+    });
   });
 
   return (
