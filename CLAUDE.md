@@ -19262,8 +19262,13 @@ içerik sayısı her yerde 0 çıkar ve **38 kartın 38'i** işaretlenirdi.
 | tuzak | bu turdaki hâli |
 |---|---|
 | `python - <<PY` bu ortamda asılıyor | **yedek olarak** yazdım, 2 dk bloke etti — "yedek olarak bile yazma" kuralı ihlal edildi |
-| heredoc ters bölü düşürüyor | `'[\s\S]{0,900}'` dosyaya `[\s\S]` indi → JS dizesinde `[sS]` → regex hiçbir şey tutmadı |
+| heredoc ters bölü düşürüyor | kaynağa ÇİFT ters bölüyle yazılan `[\\s\\S]{0,900}` dosyaya TEK ters bölüyle indi → JS dizesinde `[sS]` → regex hiçbir şey tutmadı |
 | "0 kusur" ile "0 ölçüm" aynı görünür | körlük koruması **çalıştı**: rapor "0 kart ölçüldü — ölçüt kör" dedi ve sahte "temiz" sonucu engelledi |
 
 İkincisinin çaresi kaçışı hiç yazmamak: `[^]` (her karakter, satır sonu
 dahil) ters bölü içermiyor ve `[\s\S]` ile aynı işi görüyor.
+
+**Tuzak, tuzağı ANLATAN cümleyi de bozdu:** yukarıdaki satır ilk yazımda
+heredoc'la yazıldığı için iki tarafı da aynı çıktı ve anlamsızlaştı. Bu
+depodaki "yorum körlüğü" sınıfının belge tarafındaki hâli — kaçış taşıyan
+bir örneği BELGEYE yazarken de kanal bozuyor.
