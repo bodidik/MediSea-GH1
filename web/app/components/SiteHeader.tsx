@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
+import { SPECIALTIES } from "@/app/lib/specialties";
 
 // Arama sonucu tipi
 type SearchResult = {
@@ -98,18 +99,24 @@ export default function SiteHeader() {
   const kullaniciAdi = (session?.user?.name || session?.user?.email || '').split(' ')[0];
   const plan = (session?.user as { plan?: string } | undefined)?.plan;
 
-  // Branşlar Listesi
-  const branches = [
-    { name: "Romatoloji", slug: "romatoloji" },
-    { name: "Gastro", slug: "gastroenteroloji" },
-    { name: "Endokrin", slug: "endokrinoloji" },
-    { name: "Nefroloji", slug: "nefroloji" },
-    { name: "Hematoloji", slug: "hematoloji" },
-    { name: "Kardiyoloji", slug: "kardiyoloji" },
-    { name: "Enfeksiyon", slug: "enfeksiyon" },
-    { name: "Göğüs", slug: "gogus" },
-    { name: "Onkoloji", slug: "onkoloji" },
-  ];
+  /**
+   * BRANŞ LİSTESİ — `SPECIALTIES`ten TÜREVDİR, elle tutulmaz.
+   *
+   * Burada bir dönem 9 slug'lık ikinci bir kopya duruyordu ve sessizce
+   * bayatlamıştı: `gogus` 3 konuyla İÇERİDE, `klinik-nutrisyon` 9 konuyla
+   * DIŞARIDAYDI ve beyan edilmiş bir ölçüt yoktu. Dört branş (21 konu)
+   * başlıktan hiç erişilemiyordu.
+   *
+   * İKİ FARKLI YÜZEY, İKİ FARKLI KISIT:
+   *   masaüstü şeridi — 1280px'te satır DOLU (kalan 16px, ölçüldü), o yüzden
+   *                     küratörlü: `baslikSeridi` bayrağı taşıyanlar.
+   *   mobil menü      — 2 kolonlu ızgara, dikey yer serbest: 13'ün 13'ü.
+   */
+  const seritBranslari = SPECIALTIES.filter((b) => b.baslikSeridi).map((b) => ({
+    name: b.kisa || b.title,
+    slug: b.slug,
+  }));
+  const tumBranslar = SPECIALTIES.map((b) => ({ name: b.kisa || b.title, slug: b.slug }));
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
@@ -303,7 +310,7 @@ export default function SiteHeader() {
               Kusur telefon ölçümlerinde HİÇ görünmedi çünkü şerit
               `hidden lg:flex` — 1024px altında hiç render edilmiyor.
               Başlık h-16 (64px) olduğu için dikey boşluk düzeni bozmuyor. */}
-          {branches.map((branch) => {
+          {seritBranslari.map((branch) => {
             /* Bulunulan branş. `aria-current="page"` doğru değer: bu bir
                GEZİNME bağlantısı, bir aç/kapa değil (belgede kayıtlı ayrım).
                İşaret İKİ kanalda: renk + alt çizgi — yalnızca renkle
@@ -669,7 +676,7 @@ export default function SiteHeader() {
                 {/* Masaüstü şeridi `hidden lg:flex`, yani TELEFONDA birincil
                     gezinme burası — "şu an buradasın" işareti asıl burada
                     gerekiyor. İki kanal: renk/zemin + alt çizgi. */}
-                {branches.map((branch) => {
+                {tumBranslar.map((branch) => {
                   const buradaMi = suAnkiYol === `/topics/${branch.slug}`;
                   return (
                     <Link

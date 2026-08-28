@@ -19597,3 +19597,49 @@ belirlenimli olması. Dağıtım indikten sonra aynı ölçüt canlıya sürüld
 Son satır belirleyici: hiçbir konu hiçbir yerde çocuk kazanmadı ya da
 kaybetmedi. Sıra artık `readdirSync`e değil `order → başlık → slug`
 zincirine bağlı, yani Linux ve Windows aynı çıktıyı üretiyor.
+
+### BAŞLIKTAKİ BRANŞ ŞERİDİ İKİNCİ BİR SLUG KOPYASIYDI — 4 branş (21 konu) menüden erişilemiyordu
+
+Araç kategorilerinde bulunan sınıfın (elle yazılan menü listesi sessizce
+bayatlıyor) branş tarafındaki hâli. `SiteHeader.tsx` dokuz branşı **elle**
+tutuyordu ve `SPECIALTIES` (13) ile ilişkisi yazılı değildi.
+
+Ölçüldü — liste ne tam, ne boyuta göre, ne de kendi kategori ölçütüne uygun:
+
+| branş | konu | başlıkta |
+|---|---|---|
+| endokrinoloji · hematoloji · nefroloji · enfeksiyon · kardiyoloji · gastroenteroloji · onkoloji · romatoloji | 116…11 | ✓ |
+| **gogus** | **3** | **✓** |
+| **klinik-nutrisyon** | **9** | **— DIŞARIDA** |
+| journal-club · palyatif | 5 · 5 | — |
+| genel-dahiliye | 2 | — |
+
+Yani 3 konuluk branş içeride, 9 konuluk branş dışarıda. `SPECIALTIES`in kendi
+`category` alanı da ölçüt değildi: liste "dahili 10" DEĞİL, "dahili eksi
+`genel-dahiliye`" idi. Toplam **21 konu** başlıktan hiç erişilemiyordu.
+
+**İKİ YÜZEY, İKİ FARKLI KISIT — ve ayrım ÖLÇÜMLE verildi:**
+
+| yüzey | kısıt | karar |
+|---|---|---|
+| masaüstü şeridi | 1280px'te satır DOLU: logo 105 + şerit 648 + arama 216 + kimlik 209 = 1249/1265, **kalan 16px** | küratörlü kalıyor (bir bağ ~58px, taşardı) |
+| mobil menü | 2 kolonlu ızgara, dikey yer serbest | **13'ün 13'ü** |
+
+Liste artık `SPECIALTIES`ten TÜREVDİR: `baslikSeridi` bayrağı ve dar şerit
+için `kisa` ad alanı oraya kondu, başlıktaki slug kopyası silindi.
+
+**Doğrulama — masaüstünde görsel gerileme SIFIR:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| şerit bağ sayısı | 9 | **9** |
+| nav genişliği | 648px | **648px** |
+| satırdaki kalan boşluk | 16px | **16px** |
+| şeritte `aria-current` | 1 | **1** |
+| **mobil menüdeki branş** | **9** | **13** |
+| 320px — dokunma hedefi | — | 136×36 (eşik 24) |
+| 320px — taşan öge / yatay kayma | — | **0 / 0** |
+
+Tek görünür değişiklik ŞERİDİN SIRASI: eskiden keyfiydi (Romatoloji, Gastro,
+Endokrin…), şimdi `SPECIALTIES`in alfabetik sırası. Türevden geldiği için
+öngörülebilir ve bir daha ayrışamaz.

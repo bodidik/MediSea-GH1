@@ -17,6 +17,24 @@ export type Specialty = {
   /** vurgu metin rengi (ok ikonu, "konulara git" vb.) */
   text: string;
   category: SpecialtyCategory;
+  /**
+   * Başlık şeridindeki KISA ad. Şerit dar: 1280px'te satırın kalan boşluğu
+   * 16px (ölçüldü), yani tam başlıklar sığmıyor. Verilmezse `title` kullanılır.
+   */
+  kisa?: string;
+  /**
+   * Masaüstü başlık şeridinde görünsün mü?
+   *
+   * ŞERİT BÜYÜYEMEZ: 1280px'te logo 105 + şerit 648 + arama 216 + kimlik 209
+   * = 1249 / 1265, kalan 16px. Bir bağ daha ~58px, yani taşar. O yüzden şerit
+   * KÜRATÖRLÜ — ama MOBİL menü 2 kolonlu ızgara ve orada 13 branşın 13'ü de
+   * listeleniyor; kimse gezinmeden düşmüyor.
+   *
+   * Bayrak burada duruyor ki başlık ikinci bir slug listesi tutmasın: o kopya
+   * bir dönem sessizce bayatladı (göğüs 3 konuyla İÇERİDE, klinik-nütrisyon
+   * 9 konuyla DIŞARIDA ve beyan edilmiş bir ölçüt yoktu).
+   */
+  baslikSeridi?: boolean;
 };
 
 // category: "dahili" (organ/sistem branşları) veya "destek" (multidisipliner / özel içerik)
@@ -31,6 +49,8 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-purple-50",
     text: "text-purple-600",
     category: "dahili",
+    kisa: "Endokrin",
+    baslikSeridi: true,
   },
   {
     title: "Enfeksiyon",
@@ -41,6 +61,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-teal-50",
     text: "text-teal-600",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Gastroenteroloji",
@@ -51,6 +72,8 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-orange-50",
     text: "text-orange-600",
     category: "dahili",
+    kisa: "Gastro",
+    baslikSeridi: true,
   },
   {
     title: "Genel Dahiliye",
@@ -71,6 +94,8 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-cyan-50",
     text: "text-cyan-600",
     category: "dahili",
+    kisa: "Göğüs",
+    baslikSeridi: true,
   },
   {
     title: "Hematoloji",
@@ -81,6 +106,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-rose-50",
     text: "text-rose-600",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Kardiyoloji",
@@ -91,6 +117,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-red-50",
     text: "text-red-600",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Nefroloji",
@@ -101,6 +128,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-emerald-50",
     text: "text-emerald-500",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Onkoloji",
@@ -111,6 +139,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-amber-50",
     text: "text-amber-600",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Romatoloji",
@@ -121,6 +150,7 @@ export const SPECIALTIES: Specialty[] = [
     bg: "bg-indigo-50",
     text: "text-indigo-600",
     category: "dahili",
+    baslikSeridi: true,
   },
   {
     title: "Klinik Nütrisyon",
