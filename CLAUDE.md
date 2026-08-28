@@ -20255,3 +20255,68 @@ eklenirse vurgular sessizce yanlış adıma kayabilir — yani düzeltme, deponu
 pahalı sınıflarından birini (kullanıcı verisinin sessizce bozulması) açardı.
 
 Ölçüm, kapsam ve önkoşul burada; karar içerik/ürün sahibinin.
+
+### 130 LAYOUT'U YENİDEN ÜRETTİM — gerileme kontrolü: kabuk 130/130, hesaplar birebir
+
+Kardeş bağları eklenirken 130 araç `layout.tsx`'i yeniden üretildi. Yapı
+doğrulanmıştı ama **hesapların hâlâ doğru çalıştığı ölçülmemişti** — kendi
+değişikliğimin gerileme kontrolü.
+
+**Hesaplar belgede kayıtlı değerlerle sürüldü, üçü de birebir:**
+
+| araç | girdi | ekranda | belgedeki değer |
+|---|---|---|---|
+| `corrected-calcium` | Ca 7.0 · alb 2.0 | **8.6** | 8.6 |
+| `egfr` | erkek 60y · Scr 1.0 | **86.2** · "G2: Hafif Azalmış" | 86.2 |
+| `cdai` | 5 / 3 / 4 / 4 | **16** · "ORTA AKTİVİTE" | 16 · ORTA |
+
+**Kabuk bütünlüğü — dört parça, canlıda 130 sayfada:**
+
+| parça | sonuç |
+|---|---|
+| `ARACI PAYLAŞ` | **130 / 130** |
+| `<h1>` tam bir tane | **130 / 130** |
+| `<main>` tam bir tane | **130 / 130** |
+| klinik not | **130 / 130** |
+| kardeş bloğu | 129 / 130 (`abcd2` yapısal — kategorisinde tek üye) |
+
+#### Bu oturumun iki düzeltmesi de canlıda
+
+**`SonucDuyuru` çalışıyor VE bayat sonucu duyurmuyor** — ikincisi kurulurken
+ayrıca ölçülmemişti:
+
+| durum | `role="status"` |
+|---|---|
+| geçerli girdi | **"Sonuç: ORTA AKTİVİTE"** (`sr-only`, görünmez) |
+| SJC 280 (aralık dışı) | **boşalıyor** |
+
+**`cdai` üst sınır düzeltmesi:** SJC'ye tek fazladan sıfır (28 → 280) girilince
+skor **basılmıyor** ve `role="alert"` **yalnızca SJC'yi** adıyla söylüyor:
+*"Şu alan(lar) aralık dışında ya da sayı değil: SJC (0–28). Sıfır geçerlidir."*
+
+Kapsam notu: `egfr` · `corrected-calcium` · `anion-gap` duyuru taşımıyor ve bu
+**beklenen** — süpürme iki katı şekli kapsamıştı ve belgede "sınıf kapandı
+DENMİYOR" diye yazılı.
+
+#### ⚠ KLİNİK UYARI DEDEKTÖRÜ ÜÇÜNCÜ KEZ YANLIŞ ÖLÇÜT KULLANDI
+
+Bu tur ölçüt **yalnızca ⚠️ glifini** arıyordu ve `egfr`i "uyarısı yok" diye
+işaretledi. Belgede bu dedektörün iki önceki yanlış sürümü zaten kayıtlı
+(anahtar kelime → 46 sahte; "⚠️ ardından `>metin<`" → 18 sahte). Bu üçüncüsü.
+
+Gerçek dağılım ölçüldü:
+
+| glif | araç |
+|---|---|
+| ⚠️ | **129** |
+| **ℹ️** | **1** (`egfr`) |
+| hiçbiri | **0** |
+
+`egfr`in notu özünde klinik bir uyarı: *"…Klinik kararlarda albüminüri ve
+hastanın bireysel durumu mutlaka göz önünde bulundurulmalıdır."* Yalnızca
+"hangi formül" bilgisiyle başladığı için ℹ️ seçilmiş olabilir — **ölçüldü,
+DEĞİŞTİRİLMEDİ**, çünkü glif seçimi bir sunum kararı ve içerik farkı gerçek.
+
+**Kalıcı çare ölçütte: klinik not taraması İKİ glifi de kabul etmeli.**
+Tek glife bağlanan her sürüm bu tek aracı sahte kusur olarak raporluyor —
+üç kez oldu, üçünde de kusur ölçütteydi.
