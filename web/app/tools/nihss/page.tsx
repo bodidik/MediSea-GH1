@@ -169,6 +169,23 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   },
 ];
 
+/*
+ * Başlık bir dönem "11 Alan · 0–42 Puan" diye ELLE yazılıydı ve sayaç
+ * `{ITEMS.length} alan` diyordu: ekranda AYNI KELİME iki farklı sayıyla
+ * görünüyordu (başlık 11, sayaç 15). İkisi de doğru — yayımlanmış NIHSS
+ * 11 MADDEDİR, ama 1a/1b/1c, 5a/5b ve 6a/6b ayrı satır olduğu için burada
+ * 15 puanlama SATIRI var. Kusur sayıların kendisi değil, birimin ortak
+ * olmasıydı; sayaç artık "satır" diyor.
+ *
+ * Ayrıca iki sayı da artık ITEMS'ten TÜRÜYOR: madde eklenirse başlık
+ * kendiliğinden güncellenir. Elle yazılan sayı bu depoda defalarca sessizce
+ * yalana döndü.
+ */
+const ALAN_SAYISI = new Set(
+  ITEMS.map(i => i.label.match(/^(\d+)/)?.[1]).filter(Boolean)
+).size;
+const TAVAN = ITEMS.reduce((s, i) => s + Math.max(...i.options.map(o => o.pts)), 0);
+
 const getBand = (v: number) =>
   v === 0       ? { label: "NORMAL",         color: "emerald", sub: "Nörolojik defisit yok" } :
   v <= 4        ? { label: "HAFİF",          color: "sky",     sub: "Hafif inme" } :
@@ -209,12 +226,12 @@ export default function NIHSSPage() {
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">NIHSS</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">NIH İnme Skalası · 11 Alan · 0–42 Puan</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">NIH İnme Skalası · {ALAN_SAYISI} Alan · 0–{TAVAN} Puan</p>
           </div>
         </div>
 
         <div className="flex items-center justify-between px-1">
-          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}/{ITEMS.length} alan</span>
+          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}/{ITEMS.length} satır</span>
           <div className="flex flex-wrap gap-0.5">
             {ITEMS.map(i => (
               <div key={i.id} className={`w-3 h-2 rounded-sm transition-all ${sel[i.id] !== null ? "bg-blue-900" : "bg-slate-200"}`} />
@@ -276,7 +293,7 @@ export default function NIHSSPage() {
           </div>
         ) : (
           <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm alanları tamamlayın</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm satırları tamamlayın</p>
           </div>
         )}
 

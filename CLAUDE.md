@@ -21238,3 +21238,109 @@ Uygulamak her erkek hastanın skorunu ve bandını değiştiren bir **klinik
 puanlama kararı** olurdu — `asdas`ın `−0.211` sabiti ve `essdai`nin eksik
 kutanöz düzeyiyle aynı kova. Ölçüm, kapsam ve gerekçe burada; karar içerik
 sahibinin.
+
+### BAŞLIK "11 ALAN" DERKEN SAYAÇ "15/15 ALAN" DİYORDU — aynı ekranda, aynı kelimeyle
+
+`payda-denetim` `nihss` için "42/42 (15 grup)" demişti; yani **toplam**
+doğrulanmıştı, **madde başına tavanlar** hiç karşılaştırılmamıştı. Yanlış bir
+dağılım da 42 toplayabilir — `hscore`da bulunan sınıfın aynısı (ilan 337,
+ulaşılabilir 327).
+
+**Dağılım temiz çıktı:**
+
+| ölçüt | değer |
+|---|---|
+| grup | **15** — boylar [4,3,3,3,4,4,5,5,5,5,3,3,4,3,3] |
+| madde başına tavan | **[3,2,2,2,3,3,4,4,4,4,2,2,3,2,2]** |
+| yayımlanmış NIHSS | **[3,2,2,2,3,3,4,4,4,4,2,2,3,2,2]** |
+| ulaşılabilir toplam | **42** |
+
+Desen kaynaktan VE ekrandan ayrı ayrı çıkarıldı, ikisi tuttu.
+
+#### Gerçek kusur: aynı ekranda iki farklı "alan" sayısı
+
+```
+başlık : NIH İnme Skalası · 11 Alan · 0–42 Puan     (elle yazılmış)
+sayaç  : {answered}/{ITEMS.length} alan  ->  "15/15 alan"
+```
+
+**İki sayı da tek tek doğru:** yayımlanmış NIHSS **11 maddedir** (1a/1b/1c
+madde 1'in, 5a/5b madde 5'in, 6a/6b madde 6'nın alt maddeleri) ve araçta
+**15 puanlama satırı** var. Kusur sayılarda değil, **birimin ortak
+olmasındaydı** — kullanıcı "11 Alan" okuyup 15 satır dolduruyor ve sayaç
+"15/15 alan" diyor.
+
+Kardeşlerinde bu çelişki yok: `lawton-iadl` başlıkta "8 Madde" diyor ve
+`ITEMS.length` de 8. `nihss` tek aykırıydı.
+
+**Çare birimi ayırmak, sayıyı değiştirmek DEĞİL:** sayaç artık "satır"
+diyor. Yayımlanmış ölçeğin "11 madde" kimliği korunuyor ve iki sayı artık
+açıkça farklı şeyleri sayıyor. Boş durum metni de hizalandı.
+
+**İkinci düzeltme aynı satırda: başlıktaki iki sayı da artık TÜRÜYOR.**
+`11` ve `42` elle yazılıydı — bu depoda elle yazılan sayı defalarca sessizce
+yalana döndü. `ALAN_SAYISI` etiketlerdeki benzersiz öncü sayıdan,
+`TAVAN` şık puanlarının toplamından geliyor.
+
+**Doğrulama — üretilmiş çıktı + pozitif kontrol:**
+
+| ölçüt | sonuç |
+|---|---|
+| başlık | "11 Alan · 0–42 Puan" — **görünüm değişmedi** |
+| sayaç | "0/15 **satır**" (önce "0/15 alan") |
+| `\d+/\d+ alan` kalıntısı | **0** |
+| boş durum | "Tüm **satırları** tamamlayın" |
+| kaynakta elle yazılmış "11 Alan" / "0–42" | **yok** (yalnız yorumda) |
+| **pozitif** — 11. madde çıkarılsa | **10** |
+| **pozitif** — 12. madde eklense | **12** |
+
+Son iki satır şart: değerler aynı kaldığı için "türetildi" iddiası tek başına
+gözlenemez — türetimin veriye TEPKİ VERDİĞİ ayrıca ölçülmeli.
+
+#### Dört bant sınırı da canlıda sürüldü
+
+Puanlama koduna dokunulmadığı için dağıtılmış sürümde ölçüldü. Her okumada
+ekrandaki skor, seçili şıkların **rozetlerinden** okunan toplamla
+karşılaştırıldı — sekizinde de tuttu (`tutuyorMu: true`).
+
+| skor | bant |
+|---|---|
+| 0 | NORMAL |
+| **4** | HAFİF |
+| **5** | ORTA |
+| **15** | ORTA |
+| **16** | ORTA-AĞIR |
+| **20** | ORTA-AĞIR |
+| **21** | AĞIR |
+| 42 | AĞIR |
+
+Katmanlama yayımlanmış NIHSS ile aynı (0 · 1–4 · 5–15 · 16–20 · 21–42).
+`total` yalnızca **15'i de yanıtlanınca** hesaplanıyor, yani dokunulmamış
+formda hüküm basılmıyor — `mna`da düzeltilen sınıf burada zaten kapalı.
+
+#### ⚠ ETİKET PUANI TEKRARLIYOR — `parseInt(textContent)` rakamı İKİYE KATLIYOR
+
+Şıklar `<span>3</span>` rozeti + `"3 — Yanıtsız…"` etiketi biçiminde, yani
+`textContent` **"33 — Yanıtsız…"** oluyor. İlk ölçütüm baştaki sayıyı
+`parseInt` ile okudu ve tavanları **[33,22,22,…]**, toplamı **462** buldu.
+
+Tehlikeli olan yanı: üretilen sayılar **makul görünüyor** — hata mesajı yok,
+tip hatası yok, yalnızca on kat büyük bir tablo. Yakalayan şey ölçütün kendi
+kapısı oldu (`kalan: 9`, yani hedefe ulaşılamadı).
+
+Doğru okuma rozet `<span>`inden. Kardeş araçlarda etiket puanı tekrar
+ETMİYOR (`lawton-iadl`: rozet "1" + "Numaraları kendisi arar"), yani bu
+biçim `nihss`e özgü ve ölçüt araçtan araca taşınamıyor.
+
+**Aktarılabilir kural: bir düğmenin puanını `textContent`ten okuma.** Bu
+depoda React metin birleşmesi zaten üç kez yanılttı (`Göster boşluk` ·
+`ACushing` · `413–15`); dördüncüsü burada ve **sessiz**, çünkü sonuç bir
+sayıya dönüşüyor.
+
+#### Bu turda üç kayıtlı tuzak yeniden ısırdı
+
+| tuzak | bu turdaki hâli |
+|---|---|
+| seçili düğmeye ikinci kez basmak seçimi KALDIRIR | geçersiz koşumdan sonra setter aynı düğmeye bastı, 1. grup seçimsiz kaldı — kapı yakaladı, setter "zaten seçiliyse tıklama" yapıldı |
+| desen tahmin etme | sonuç panelini "SKOR" diye aradım; panel **"NIHSS 20/ 42"** diyor |
+| `python - <<PY` bu ortamda asılıyor | **yedek olarak** yazdım, 2 dk bloke etti — kendi kaydımdaki "yedek olarak bile yazma" kuralının üçüncü ihlali |
