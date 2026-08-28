@@ -21080,3 +21080,55 @@ Yan ölçüm (bu tarama sırasında, güvenilir olan kısım): 14 sayfa türünd
 **adsız düğme 0**, `title`ı ad yerine kullanan **0**, yalnızca glif taşıyan
 **0**; `apache2`de 88 düğmenin 86'sı `aria-pressed` taşıyor ve 24px altı
 dokunma hedefi **0**.
+
+### EN AZ DOĞRULANMIŞ ARAÇ SÜRÜLDÜ — `khorana` temiz, sekiz sınır kararının sekizi de doğru
+
+Hangi aracın en az doğrulandığı sayıldı: 130 aracın **130'u** belgede geçiyor,
+ama geçiş sayısı çok farklı. En az geçenler (2'şer): `khorana` · `lawton-iadl` ·
+`mascc` · `nihss` · `rass` · `tft`. `khorana` bileşenli bir skor ve hiç
+bağımsız hesapla sürülmemişti.
+
+| ölçüm | ekranda | yayımlanmış Khorana |
+|---|---|---|
+| varsayılan (hepsi eşik altı) | **0 · DÜŞÜK ~%0.3–0.8** | ✓ |
+| tavan (pankreas +2, dördü de +1) | **6** | azami 6 ✓ |
+| ESA kutusu | **+1** | ✓ |
+| skor 2 | **ORTA ~%1.8–2** | ✓ |
+| skor ≥3 | **YÜKSEK ~%6.7–7.1** | ✓ |
+
+Lokalizasyon puanları da birebir: Diğer **0** · Mide/Pankreas **+2** ·
+Akciğer, Lenfoma, Jinekolojik, Mesane, Testis **+1**.
+
+#### Sekiz sınır kararı İKİ ölçümle kapatıldı
+
+Sınırları tek tek sürmek 8 ölçüm ister; hepsi **aynı anda** kurulunca iki
+ölçüm yetiyor:
+
+| kurulum | beklenen | ölçülen |
+|---|---|---|
+| `350 / 9.9 / 11.1 / 35` — dördü de ateşlemeli | 4 | **4** |
+| `349 / 10 / 11 / 24` — hiçbiri ateşlememeli | 0 | **0** |
+
+İkisi birlikte dört operatörü de kanıtlıyor: trombosit **≥350**, Hb **<10**,
+lökosit **>11**, BMI **≥35**. Tek bir operatör gevşek olsa (örn. `<=10`) ikinci
+ölçüm 0 yerine 1 verirdi.
+
+#### ⚠ GİRDİLER İKİ ÇAĞRI ARASINDA VARSAYILANA DÖNDÜ — ölçüm sessizce geçersizleşti
+
+Bir ölçüm "0" verdi ve doğru görünüyordu. Girdiler geri okununca dört alandan
+**üçünün varsayılana döndüğü** çıktı (`300/12/8/34.9`, oysa `349/10/11/34.9`
+yazılmıştı). Yani o "0" istenen sınırları değil, varsayılanları ölçmüştü —
+sonuç doğru ama **iddia yanlış** olacaktı.
+
+Ölçüm yeniden kuruldu ve okuma adımına bir kapı eklendi: **girdiler
+beklenenle birebir değilse skor hiç raporlanmıyor** (`OLÇÜM GEÇERSİZ`).
+Ondan sonraki değerler bu kapıdan geçti.
+
+Bu, belgedeki *"bir durumu ölçtüğünü sanmak için o durumun GERÇEKTEN
+oluştuğunu ayrıca doğrula"* kuralının en ucuz biçimi: **çıktıyı okurken
+girdiyi de oku.** Kapı olmadan bu tur yanlış bir "sınır doğrulandı" iddiası
+yazılacaktı.
+
+Yan not: 9 sınır vakasını tek çağrıda `setTimeout` ile sürmek **30 sn'de zaman
+aşımına uğradı** — panel gizliyken zamanlayıcılar kısılıyor (belgede kayıtlı).
+Ölçümü ayrı çağrılara bölmek hem hızlı hem güvenilir.
