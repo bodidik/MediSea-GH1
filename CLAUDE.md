@@ -20881,3 +20881,50 @@ yani `#bolum-…` adresi çalışıyor.
 
 Yani sınıf iki yönde de kapalı: öngörülen 64'ün 64'ünde liste var ve tam,
 eşik altındaki 6'nın 6'sında liste yok ama çapa yine çalışıyor.
+
+### `changefreq` VERİYLE ÇELİŞİYOR — ama arama motoru okumuyor, o yüzden DEĞİŞTİRİLMEDİ
+
+`lastmod` kusuru düzeltildikten sonra aynı ailedeki iki alan hiç
+ölçülmemişti. Site haritasının tamamı tarandı:
+
+| ölçüt | değer |
+|---|---|
+| adres | **572** |
+| `lastmod` taşıyan | **433** — yalnızca gerçek tarihi olanlar (düzeltme ayakta) |
+| `priority` taşıyan | **572** |
+| `changefreq` taşıyan | **572** |
+| **harita ↔ robots çelişkisi** | **0** |
+
+`priority` dağılımı `1 · 0.9 ×2 · 0.8 ×14 · 0.7 ×424 · 0.6 ×131`;
+`changefreq` dağılımı `daily 2 · weekly 15 · monthly 555`. İkisi de
+**sayfa türüne göre elle atanmış sabitler** (`sitemap.ts` 166–243).
+
+#### `priority` kusur DEĞİL, `changefreq` şekil olarak aynı sınıfta
+
+`priority` tanımı gereği **site içi göreli bir ipucu** — elle atanması onun
+amaçlanan kullanımı, uydurma değil.
+
+`changefreq` ise bir İDDİA ve veri onu çürütüyor:
+
+| ölçüt (419 tarihli konu) | değer |
+|---|---|
+| en yeni · en eski | 9 gün · 182 gün |
+| **ortanca yaş** | **148 gün** (~5 ay) |
+| son 31 günde güncellenen | **36 (%9)** |
+| ilan | 424 konu adresinde **`monthly`** |
+
+Yani konuların **%91'i** ilan edilen tempoda değişmiyor. Bu, `lastmod`
+düzeltmesinde uygulanan ilkenin (*"doğrulayamadığın sinyali verme"*) aynı
+DOSYADA komşu bir alana uygulanmamış hâli.
+
+**DEĞİŞTİRİLMEDİ ve gerekçesi ölçülebilir:** `changefreq` ve `priority`
+arama motorları tarafından **okunmuyor**. `lastmod` kusuru gerçek bir yanlış
+tazelik sinyali üretiyordu ve düzeltilmesi ölçülebilir bir kazançtı; burada
+alan inert, yani kaldırmak da düzeltmek de **kozmetik**. Bu depoda aynı
+karar `tirads`/`homa-ir` için de verilmişti: saçma değer kararı zararlı yönde
+değiştirmiyorsa sınır koymak kozmetiktir.
+
+Kayıt şunun için: bir sonraki tur bunu ne `lastmod` sınıfının açık bir örneği
+sansın, ne de gereksiz yere "düzeltsin". İlke uygulanmak istenirse tek satır
+(`changeFrequency` alanını hiç basmamak) yeter — ama ölçülebilir bir kazancı
+yok.
