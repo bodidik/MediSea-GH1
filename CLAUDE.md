@@ -19581,3 +19581,19 @@ sahibinin; araç kararı hazır hâle getiriyor.
 **Yan bulgu (içerik, dokunulmadı):** kardiyolojide `farmakoloji-statin-
 miyopatisi-sams` ve `lipidoloji-statin-miyopatisi-sams` diye İKİ hub var ve
 adaylar sürekli birinden ötekine işaret ediyor — kopya hub şüphesi.
+
+#### CANLIDA doğrulandı — aynı anlık görüntü ölçütü, dağıtımdan sonra
+
+Çok ebeveynli şema mevcut içerikte hiçbir davranışı değiştirmemeli (bugün
+0 çok ebeveynli konu var); değişmesi gereken tek şey sıralamanın
+belirlenimli olması. Dağıtım indikten sonra aynı ölçüt canlıya sürüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| değişen yüzey | **tam 4 konu** — hepsi beklenen sıralama düzeltmesi |
+| değişen branş sayfası | **0** |
+| **KÜME farkı (sıra yok sayılarak)** | **0 / 410** |
+
+Son satır belirleyici: hiçbir konu hiçbir yerde çocuk kazanmadı ya da
+kaybetmedi. Sıra artık `readdirSync`e değil `order → başlık → slug`
+zincirine bağlı, yani Linux ve Windows aynı çıktıyı üretiyor.
