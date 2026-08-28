@@ -19992,3 +19992,67 @@ Son satır bu sayfada hangi ölçütün iş gördüğünü de söylüyor: tohum 
 `scrollX` **0 kalıyor**, yalnızca `documentElement.scrollWidth` tepki veriyor.
 Belgede kayıtlı "iki ölçüt birden gerekiyor, hangisinin yeteceği sayfaya göre
 değişir" kuralı — araç sayfalarında çalışan tek ölçüt `scrollWidth`.
+
+### 14 YENİ KONU CANLIDA DOĞRULANDI — ve "sayfa bulunamadı" dedektörü SAĞLAM sayfalarda ateşledi
+
+İçerik dalı `main`'e birleşip dağıtıldı. Doğrulama **gözlem değil
+karşılaştırma** olarak kuruldu: beklenen değerler dağıtımdan ÖNCE içerikten
+hesaplandı, sonra canlıyla karşılaştırıldı.
+
+| ölçüt | dağıtımdan önce | beklenen | canlıda |
+|---|---|---|---|
+| görünür konu | 410 | 423 | **423** |
+| site haritası adresi | 559 | 572 | **572** |
+| branş · araç | 13 · 130 | değişmemeli | **13 · 130** |
+
+**14 yeni konunun 14'ü de sağlam:** hepsi 200, hepsinde tam bir `<h1>`
+(gerçek başlıkla), tek `<main>`, `index, follow`, gövde 93–169 KB.
+
+**`bruselloz` hiyerarşiye tam oturdu** — dağıtımdan önce veriden öngörülen
+davranışın birebir aynısı:
+
+| ölçüt | canlıda |
+|---|---|
+| enfeksiyon branş sayfası | **üst düzey kart** (5 kartın biri) |
+| rozet | **4 alt başlık** |
+| kendi sayfası | dört çocuğunu da listeliyor |
+| `mantar-enfeksiyon-ana-sayfa` | artık **bruselloz** öneriyor (`anemiler` yok) |
+
+**"Sayı yazma, saydır" mimarisi 14 konu eklendikten sonra da tutuyor:**
+
+| yüzey | konu | branş | araç | başlık | kart |
+|---|---|---|---|---|---|
+| ana sayfa | **423** | 13 | 130 | — | — |
+| `/topics` (13 kartın toplamı) | **423** | 13 | — | — | — |
+| `/uyelik` | **423** | 13 | — | 41 | 1492 |
+| `/tools` | — | — | **130** | — | — |
+
+Ana sayfadaki branş kırılımının toplamı da bağımsız olarak tutuyor:
+116+41+34+2+3+79+37+52+29+11+9+5+5 = **423**. Elle güncellenen tek sayı yok.
+
+#### ⚠ NOT-FOUND METNİ HER KONU SAYFASININ RSC YÜKÜNDE — dedektör 14/14 sağlam sayfada ateşledi
+
+Doğrulamaya konan `/Sayfa bulunamad|Bu konu kütüphanede yok/` süzgeci
+**14 yeni konunun 14'ünde de `true`** döndü ve bir an "sayfalar 404 içeriği
+basıyor" sanıldı.
+
+Kontrol üç sayfada birden yapıldı ve dedektörün kırık olduğunu gösterdi:
+
+| sayfa | HTTP | ham HTML'de | `<script>` çıkarılınca |
+|---|---|---|---|
+| yeni konu (`bruselloz`) | 200 | **true** | **false** |
+| **bilinen sağlam** (`addison`) | 200 | **true** | **false** |
+| **gerçek 404** | 404 | true | **false** |
+
+Sebep: not-found sınırının metni **her konu sayfasının RSC yükünde** taşınıyor.
+Üçüncü satır ayrıca belgede kayıtlı `dynamicParams` ödünleşmesini doğruluyor —
+gerçek 404'ün GÖRÜNÜR gövdesi boş, metin yalnızca yükte.
+
+Bu, kayıtlı `<script>` tuzağının en pahalı biçimi: öteki örneklerde tuzak
+sayıyı ŞİŞİRİYORDU, burada **her sağlam sayfayı kusurlu gösteriyor** — yani
+yanlış pozitif oranı %100.
+
+**Güvenilir sinyal HTTP durumu + `<script>` çıkarıldıktan sonraki `<h1>`.**
+Bir sayfanın "bulunamadı" gösterip göstermediğini gövde metniyle sınayacaksan
+önce BİLİNEN SAĞLAM bir sayfayı aynı süzgeçten geçir; ateşliyorsa süzgeç
+kırıktır, sayfa değil.
