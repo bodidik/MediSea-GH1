@@ -20815,3 +20815,34 @@ derleme 636/636); iki nitelik de istemci parçasında görünüyor.
   bölümlerin ögeleri DOM'da yok; ilanı ölçmek için veriye gitmek gerekti.
   Ayrıca akordeon tıklamasından SONRA aynı çağrıda `aria-expanded` okumak
   bayat değer verdi — ayrı çağrıda `true` çıktı.
+
+#### Düzeltme canlıda — ve "tek kanalda devre dışı" sınıfı kapandı
+
+| ölçüt | "YAKINDA" kaydı | **negatif** — hazır kayıtlar |
+|---|---|---|
+| `tabIndex` | **−1** | 0 |
+| `aria-disabled` | **true** | yok |
+| odak sırasında | **hayır** | evet |
+| `pointer-events` | none | auto |
+| opaklık | 1 | 1 |
+
+Sağ sütun şart: düzeltme yalnızca hazır OLMAYAN kaydı etkiledi; tıklanabilir
+konular odak sırasında ve niteliksiz kaldı, opaklık üçünde de 1 (görsel
+gerileme yok).
+
+**Sınıf tarandı ve tek örnekliymiş.** Ölçüt: `pointer-events: none` taşıyan
+ÖGE odaklanabilir mi?
+
+| ölçüt | değer |
+|---|---|
+| `pointer-events-none` kullanımı | **29** |
+| bunlardan odaklanabilir etikette (`a`/`button`/`input`/`Link`) | **0** |
+| satır içi `pointerEvents` | yalnızca düzeltilen **iki** dosyada |
+
+Yani 29 kullanımın hepsi süsleme `<div>` (bulanık leke) ve orada
+`pointer-events-none` doğru kullanım — leke tıklamayı yutmasın diye.
+
+**Kapsam dürüstlüğü: kardeş yüzey CANLIDA doğrulanmadı.** Konu sayfasının
+Modüller listesi `AccessGate` arkasında; düzeltmenin pakete girdiği derlenmiş
+istemci parçasında görüldü (`aria-disabled` ve `tabIndex` var), ama render
+edilmiş hâli ölçülmedi ve "canlıda doğrulandı" DENMİYOR.
