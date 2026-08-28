@@ -20536,3 +20536,23 @@ tuhaflık tamamen kazadan geliyor.
 **DEĞİŞTİRİLMEDİ** — içerik kullanıcının sorumluluğu ve slug bir ADRES
 (yeniden adlandırmak yönlendirme borcu doğurur). Ölçüm, kapsam ve iki çarenin
 farkı burada; karar içerik sahibinin.
+
+### AD AYRIMININ İKİ DALI DA CANLIDA SÜRÜLDÜ — aynı branş için slug, çapraz branş için etiket
+
+"Aynı ad, farklı hedef" düzeltmesi iki mekanizma taşıyor ve ikisi de gerçek
+veriyle sınanmamıştı. Aynı başlığı taşıyan çift **4 öneri listesinde** birlikte
+çıkıyor; dördü de canlıda ölçüldü, **çakışan ad 0**.
+
+| çift | aynı branş mı | ayrımı yapan | ekranda |
+|---|---|---|---|
+| `demir-eksikligi-anemisi` ↔ `demir-eksikligi` | **EVET** | **slug** | "…(DEA) · **demir-eksikligi**" |
+| `hiperkalsemi-…` ↔ `nefroloji/asit-baz-…` | hayır | branş etiketi | "… · **Endokrinoloji**" |
+| `endokrinoloji/lipid-ezetimibe` ↔ `kardiyoloji/lipid-ezetimibe` | hayır | branş etiketi | "… · **Endokrinoloji**" |
+
+Birinci satır belirleyici: **aynı branştaki çiftte etiket ayıramaz** ve yedek
+gerçekten devreye giriyor. O dal kurulurken tohumla sınanmıştı; artık üretim
+verisiyle de sürülmüş durumda.
+
+Ayrım **yalnızca gerektiğinde** beliriyor — aynı listedeki öteki kartlar
+(bempedoik asit, PCSK9, SAMS…) ek etiket taşımıyor, yani olağan görünüm
+değişmedi.
