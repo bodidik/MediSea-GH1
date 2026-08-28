@@ -20473,3 +20473,66 @@ Yeni içerik o oranı kötüleştirmedi.
 **Yeniden ölçmeye gerek yok** — içerik değişmedikçe. Değiştiğinde ölçüt hazır:
 beklenen kart sayısı `üst düzey + yetim`, beklenen rozet `çözülen çocuk
 sayısı`, ikisi de `content/canonical`dan hesaplanıyor.
+
+### YENİ İÇERİK, KAYITLI BİR İÇERİK KAZASINI GÖRÜNÜR YAPTI — ölçüldü, kod kusuru YOK
+
+Altı yeni asit-baz konusu eklenince belgede kayıtlı bir kaza ilk kez
+kullanıcıya görünür hâle geldi. Öneri kalitesi taranırken çıktı.
+
+`endokrinoloji/hiperkalsemi-ve-hiperparatiroidi.json` dosyasının **yalnızca
+slug'ı ve branşı** hiperkalsemi diyor:
+
+| alan | ne diyor |
+|---|---|
+| slug (adres) · branş | hiperkalsemi · **endokrinoloji** |
+| **başlık** | **"Asit-Baz Denge Bozuklukları"** |
+| etiketler | Nefroloji · Yoğun Bakım · Asit-Baz Dengesi · Kan Gazı Analizi |
+| gövde | asit-baz/pH/HCO₃ geçişi **77** · kalsiyum/PTH geçişi **0** |
+
+Yani başlık gövdeye göre düzeltilmiş, **adres ve branş düzeltilmemiş.**
+
+#### Görünür bedel ÖLÇÜLDÜ ve ikinci kaza dosyasıyla farkı büyük
+
+| kaza dosyası | kaç konunun öneri listesinde | çapraz branş |
+|---|---|---|
+| `hiperkalsemi-…` (gövdesi asit-baz) | **5** | **4** |
+| `akut-lenfoblastik-losemi-all` (gövdesi MDS) | **0** | 0 |
+
+Birincisi canlıda şöyle görünüyor — iki yeni nefroloji konusunda:
+
+> **"Asit-Baz Denge Bozuklukları · Endokrinoloji"**
+
+Öneri **doğru** (asit-baz ↔ asit-baz, motor etiketlerden çalışıyor); yanlış
+olan yalnızca kaydın nerede durduğu. Kullanıcı bir asit-baz konusunu
+"Endokrinoloji" etiketiyle görüyor ve tıklayınca hiperkalsemi adresine iniyor.
+
+İkinci kaza dosyası hiçbir listede yok, yani aynı sınıfın iki örneği çok
+farklı görünürlükte — **kaza sayısı tek başına bedeli anlatmıyor.**
+
+#### "Sil" DEĞİL "taşı" — ikizlerin gövde örtüşmesi DÜŞÜK
+
+İki kazanın da doğru branşta **aynı başlıklı** bir ikizi var. İlk bakışta
+kopya görünüyorlar; ölçüm çürüttü:
+
+| çift | başlık | gövde örtüşmesi |
+|---|---|---|
+| `hiperkalsemi-…` ↔ `nefroloji/asit-baz-denge-bozukluklari` | **birebir aynı** | **%9.2** |
+| `…-losemi-all` ↔ `hematoloji/miyelodisplastik-sendrom-mds` | birebir aynı | **%1.1** |
+
+Yani aynı konunun iki ayrı işlenişi — kopya değil. Çare "birini sil" değil,
+**taşı/yeniden adlandır (yönlendirmeyle)** ya da bilerek birleştir.
+
+#### Bu oturumda kurduğum ad ayrımı burada İŞ GÖRÜYOR
+
+Aynı başlığı taşıyan iki kayıt **4 öneri listesinde birlikte** çıkıyor.
+Ayrım devrede — canlıda ölçüldü, ikisinde de çakışan ad **0**:
+
+> "Asit-Baz Denge Bozuklukları · **Endokrinoloji**"
+> "Asit-Baz Denge Bozuklukları · **Nefroloji**"
+
+Yani kodda yeni bir kusur yok; branş etiketi iki kaydı ayırıyor. Görünen
+tuhaflık tamamen kazadan geliyor.
+
+**DEĞİŞTİRİLMEDİ** — içerik kullanıcının sorumluluğu ve slug bir ADRES
+(yeniden adlandırmak yönlendirme borcu doğurur). Ölçüm, kapsam ve iki çarenin
+farkı burada; karar içerik sahibinin.
