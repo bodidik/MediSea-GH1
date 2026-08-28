@@ -20928,3 +20928,53 @@ Kayıt şunun için: bir sonraki tur bunu ne `lastmod` sınıfının açık bir 
 sansın, ne de gereksiz yere "düzeltsin". İlke uygulanmak istenirse tek satır
 (`changeFrequency` alanını hiç basmamak) yeter — ama ölçülebilir bir kazancı
 yok.
+
+### YAKINLAŞTIRMA İKİ MEKANİZMADAN DA ENGELLENMİYOR — meta temiz, CSS de temiz
+
+Telefonla okunan bir üründe yakınlaştırmayı engellemek gerçek bir kusur
+(WCAG 1.4.4) ve **iki ayrı mekanizmadan** olabiliyor: viewport metası ya da
+CSS. İkisi de ölçüldü.
+
+**1) Belge düzeyi metalar — 16 yüzey:**
+
+| ölçüt | değer |
+|---|---|
+| `viewport` | `width=device-width, initial-scale=1` — **16/16 aynı** |
+| `user-scalable=no` / `maximum-scale=1` taşıyan | **0** |
+| viewport metası eksik | **0** |
+| `lang` | `tr` — 16/16 |
+| `charset` | `utf-8` — 16/16 |
+| `theme-color` | `#1a3a6b` — 16/16 |
+
+**2) CSS tarafı — meta izin verse de CSS engelleyebilir:**
+
+| ölçüt (konu sayfası) | değer |
+|---|---|
+| `touch-action` (html · body · okuma alanı) | **auto · auto · auto** |
+| zoom engelleyen `touch-action` taşıyan öge | **0** |
+| `text-size-adjust` | `100%` — otomatik şişmeyi kapatıyor, kullanıcı zoom'unu DEĞİL |
+| 40+ karakterlik metinde `user-select: none` | **0** (vurgulama her yerde çalışıyor) |
+
+#### Kalem kısıtı KAPSAMLI mı — not defteri açılarak ölçüldü
+
+Belgede kayıtlı: kalem algılanınca `touch-action` `pan-y`'ye geçiyor. Böyle
+bir kısıt bir ataya sızarsa sayfanın tamamında zoom ölür. Panel açıkken
+ölçüldü:
+
+| öge | boyut | `touch-action` |
+|---|---|---|
+| `html` · `body` | — | **auto** (değişmedi) |
+| not defteri paneli | 420×800 | **auto** |
+| **yeniden boyutlandırma tutamağı** | **12×800** | `none` — görünümün **%1'i** |
+
+Yani kısıt tek bir sürükleme tutamağında ve orada doğru (tutamağı sürüklerken
+sayfa kaymamalı). Sayfaya sızmıyor.
+
+**Yan negatif kontrol:** paneli yalnızca AÇMAK depoya hiçbir şey yazmadı
+(`medisea:*` anahtar sayısı **0**) — `dirty` bayrağının çalıştığının
+davranışsal kanıtı.
+
+**Aktarılabilir kural: aynı kullanıcı sonucunu üretebilen İKİ mekanizmayı
+birden ölç.** Viewport metasına bakıp "zoom serbest" demek yarım bir ölçüm;
+`touch-action` tek başına aynı sonucu verebiliyor ve meta taraması onu
+görmüyor.
