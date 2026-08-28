@@ -19333,3 +19333,57 @@ Kapsam **38 → 125**. Ölçüt bir önceki turda tohumla sınandığı için k�
 o yüzeyin kendi süzgecini de miras alırsın.** Rozet ölçütü sessizce "üst
 düzey" süzgecini taşıyordu ve kapsamı üçte bire indiriyordu; ölçütü içeriğe
 bağlamak bunu kaldırdı.
+
+### HUB SAYFASINDA OKUMA 2.49 EKRAN AŞAĞIDA BAŞLIYOR — ölçüldü, DEĞİŞTİRİLMEDİ
+
+Bu turda çıkan yapısal gözlem ölçüldü: "Alt Başlıklar" kartı okuma gövdesinden
+ÖNCE çiziliyor. Çok hub-çocuklu ve uzun gövdeli bir konuda okuyucu, düzyazıya
+ulaşmak için gezinme ızgarasını ve içindekileri geçmek zorunda.
+
+375px'te, gerçek tarayıcıda (y = belge başından piksel):
+
+| konu | hub çocuk | gövde (krk) | h1 | Alt Başl. | İçindekiler | **gövde** |
+|---|---|---|---|---|---|---|
+| `folikuler-lenfoma` (kıyas, hub çocuk YOK) | 0 | 15 817 | 224 | — | 400 | **875 = 1.08 ekran** |
+| `hipofiz-hastaliklari-ana` | 3 | 6 570 | 224 | 412 | 960 | 1297 = 1.60 |
+| `men1-sendromu` | 4 | 9 300 | 224 | 484 | 1254 | 1641 = 2.02 |
+| **`osteoporoz-ana-sayfa`** | **4** | **18 870** | 224 | 484 | 1278 | **2023 = 2.49** |
+
+Yani kart ~0.5–1.4 ekran bedel getiriyor. Kapsam DAR ve sayıldı — hub çocuk
+sayısı dağılımı: **0 → 67 konu · 1 → 40 · 2 → 11 · 3 → 3 · 4 → 4**. Yani
+2 ekranı aşan durum yalnızca en üstteki 7 konuda oluşabiliyor.
+
+Birinci satır ayırt edici: 8 çocuğun HEPSİ yaprak olduğu için o sayfada
+"Alt Başlıklar" kartı hiç çizilmiyor (yapraklar gövdeden SONRA, "İleri
+Okuma"da) — yani bedel çocuk sayısından değil HUB çocuk sayısından geliyor.
+
+**DEĞİŞTİRİLMEDİ.** Bir hub sayfasında alt başlıkları önce göstermek
+savunulabilir bir karar (sayfa bir dizin) ve sıralamayı değiştirmek 125 konu
+sayfasını birden etkiler. Ölçüm, kapsam ve en kötü vaka burada; sıralama
+kararı ürün tarafında.
+
+#### Kardeş oturumdan gelen öneri karara bağlandı — ürün kararı, ölçüm değil
+
+Paralel bir oturum şunu bildirdi: `/topics/<branş>` yalnızca kök konuları
+listeliyor, **410 görünür konunun 310'u (%76)** branş sayfasından linklenmiyor
+(`page.tsx` içindeki `topicList.filter(t => !t.parent && !t.hidden)`).
+
+**Ölçümü DOĞRU ve belgedeki sayılarla tutuyor** (54 üst düzey + 45 yetim ≈ 100
+linklenen). Ama iki sebeple tek başıma uygulanmadı:
+
+1. **Bilinçli bir kararın geri alınması.** Kaynaktaki yorum bunu açıkça
+   söylüyor ("alt konular burada görünmesin — Alt Başlıklar / İleri Okuma'da
+   yer alır") ve belgede branş sayfasının bu davranışı **13/13 tam uyuşma**
+   ile ayrıca doğrulanmış durumda. Gezinme yüzeyi bir tasarım kararıdır.
+2. **Rozet önerisi ölçülmüş bir tutarlılığı BOZAR.** Öneri rozetin torun
+   sayısını göstermesini istiyor; oysa bu turda rozetin İÇERİK GERÇEĞİ ve
+   KONU SAYFASI ile birebir tuttuğu ölçüldü (38 kart üçlü karşılaştırma,
+   125 hub üyelik). Rozeti torun sayısına çevirmek, konu sayfası da
+   değişmedikçe **yeni bir "iki gerçeklik" kusuru açar**.
+
+Ayrıca öneri "gezinme derinliği" dışında bir kayıp olmadığını kendisi de
+söylüyor ve belgede kayıtlı ölçümler bunu destekliyor: ulaşılamayan sayfa
+**0**, yetim sayfa **0**, en derin konu **5 tık**, kırıntı ata bağlantısı
+311/311 çalışıyor.
+
+Karar kullanıcının: ağaç basılacaksa rozet de aynı turda hizalanmalı.
