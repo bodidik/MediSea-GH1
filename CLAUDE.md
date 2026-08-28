@@ -19837,3 +19837,63 @@ bulgu; kalan 7 bulgu belgede kayıtlı, hepsi `page.tsx`).
 **Ters bölü tuzağı bu turda ALTINCI kez ısırdı:** koşullu import'u heredoc'la
 yazarken `\n` GERÇEK satır sonuna dönüştü ve betik `SyntaxError` verdi. Çare
 kaçışı hiç yazmamak — `String.fromCharCode(10)`.
+
+### SÜREÇ ETİKETİ SAÇMA AKRABALIK KURDU — ve taslaklar öneri HEDEFİ olmaya devam ediyordu
+
+Kardeş bir oturum iki bulgu bildirdi; **ikisi de bağımsız olarak yeniden
+ölçüldü** (sayıları devralmadım, kendi ölçümüm birkaç birim farklı çıktı).
+
+**1) `"Sınıflandırma"` etiketi ekranda görülen bir saçmalık üretti.**
+`enfeksiyon/mantar-enfeksiyon-ana-sayfa` sayfasının **TEK** önerisi
+`hematoloji/anemiler` idi. Tek ortak etiket `"Sınıflandırma"` ve o etiket
+kütüphanede **yalnızca 2 konuda** geçiyor → azami nadirlik → azami skor.
+
+Üreteç kusursuz çalışıyordu; kusur `ELENEN` listesindeydi. Liste
+`'yapay zeka taslağı'`, `'taslak'`, `'genel'` içeriyor ama
+**`'sınıflandırma'` ve `'kategori'` YOKTU.** Bu, belgede kayıtlı "Akut Koroner
+Sendromlar ~ Safra Kesesi Hastalıkları" vakasının aynısı: konuyu değil YAZIM
+DURUMUNU anlatan bir etiket akrabalık sinyali sayılıyordu.
+
+**2) `'yapay zeka taslağı'` ELENEN'deydi ama bu yetmiyordu.** O liste etiketi
+**akrabalık SİNYALİ** olmaktan çıkarıyor; konuyu **öneri HEDEFİ** olmaktan
+çıkarmıyor. Taslaklar öteki etiketleri üzerinden önerilmeye devam ediyordu.
+
+| ölçüm (bağımsız) | değer |
+|---|---|
+| `Yapay Zeka Taslağı` etiketli konu | **15** (hepsi hematoloji, gövde 2373–4749 krk) |
+| taslağa işaret eden öneri | **43** |
+| etkilenen konu sayfası | **28** |
+
+#### ELEME HAVUZDA YAPILIR, SONUÇ LİSTESİNDE DEĞİL
+
+Sonuç listesinden kırpılsaydı **5 sayfa önerisiz kalırdı**. Taslaklar
+`tersDizin`den (aday havuzu) çıkarılınca kardeş ve branş-içi yedek zinciri
+devreye giriyor ve o sayfalar doluyor.
+
+**`adet` de aynı popülasyondan kurulmalı — atlanınca ÇÖKTÜ.** `adet` nadirlik
+paydası ve `1/n` ağırlığı ters dizindeki adaylara uygulanıyor; ikisi farklı
+popülasyonu tarif ederse yalnızca taslaklarda geçen bir etikette `adet >= 2`
+olup ters dizin BOŞ kalıyor (`TypeError: tersDizin[t] is not iterable`).
+**Bir havuzu daraltırken, o havuzun AĞIRLIĞINI hesaplayan sayacı da daralt.**
+
+#### Doğrulama
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| taslağa işaret eden öneri | 43 | **0** |
+| toplam bağ | 1194 | **1176** — düşüş yalnız **18**, yedekler doldurdu |
+| `mantar-enfeksiyon-ana-sayfa` | `anemiler` (tek) | **4 gerçek enfeksiyon konusu** |
+| boş liste | 0 | **0** |
+| indeksten düşen anahtar | — | **0** |
+| **negatif** — taslak KENDİ önerisini alıyor mu | — | `dlbcl` 1 · `anemiler` 4 ✓ |
+| **negatif** — 5 riskli sayfa | — | 4 · 4 · 1 · 4 · 1 öneri |
+| **GERÇEK ÇIKMAZ** (ilgili + çocuk + ebeveyn üçü de yok) | — | **0 / 410** |
+
+Eleme **TEK YÖNLÜ**: taslak hedef olmuyor ama kendi sayfasında öneri almaya
+devam ediyor. Etiket kalkınca (içerik girilince) konu **kendiliğinden**
+havuza dönüyor — ayrı bir liste tutulmuyor.
+
+**Kapsam notu:** ikinci madde bir İÇERİK KÜRASYON kararıdır ve bana kardeş
+oturum üzerinden ulaştı; kullanıcının kararını doğrudan doğrulayamadım.
+Uygulandı çünkü tersine çevirmesi üç satır ve `'yapay zeka taslağı'` zaten
+`ELENEN`deydi — ama raporda böyle yazıyor.

@@ -996,11 +996,6 @@
    "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "sacli-hucreli-losemi-hcl",
-   "baslik": "Saçlı Hücreli Lösemi (HCL)"
   }
  ],
  "endokrinoloji/men1-menin-molekuler-gelismeler": [
@@ -2510,9 +2505,24 @@
  ],
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
   {
-   "brans": "hematoloji",
-   "slug": "anemiler",
-   "baslik": "Anemiler"
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-daptomisin-sinerji",
+   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-klinik-rehber",
+   "baslik": "Fosfomisin"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
   }
  ],
  "enfeksiyon/prokalsitonin-genel": [
@@ -3322,38 +3332,23 @@
  "hematoloji/akut-lenfoblastik-losemi-all": [
   {
    "brans": "hematoloji",
-   "slug": "miyelodisplastik-sendrom-mds",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "miyelodisplastik-sendrom-mds",
+   "baslik": "Miyelodisplastik Sendromlar (MDS)"
   }
  ],
  "hematoloji/all": [
   {
    "brans": "hematoloji",
-   "slug": "dlbcl",
-   "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "multiple-myelom",
-   "baslik": "Multipl Miyelom (MM)"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/allojenik-kok-hucre-nakli": [
-  {
-   "brans": "hematoloji",
-   "slug": "akut-lenfoblastik-losemi-all",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
   {
    "brans": "hematoloji",
    "slug": "miyelodisplastik-sendrom-mds",
@@ -3363,18 +3358,23 @@
  "hematoloji/aml": [
   {
    "brans": "hematoloji",
-   "slug": "all",
-   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+   "slug": "esansiyel-trombositoz-tani",
+   "baslik": "ET Tanısal Yaklaşımı: DSÖ/ICC Kriterleri ve Morfolojik Diferansiyasyon"
   },
   {
    "brans": "hematoloji",
-   "slug": "kll",
-   "baslik": "Kronik Lenfositik Lösemi (KLL)"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "sacli-hucreli-losemi-hcl",
-   "baslik": "Saçlı Hücreli Lösemi (HCL)"
+   "slug": "kml",
+   "baslik": "Kronik Miyeloid Lösemi (KML)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/aml-geriatrik-degerlendirme": [
@@ -3411,30 +3411,30 @@
  "hematoloji/aml-tedavi-algoritmasi": [
   {
    "brans": "hematoloji",
-   "slug": "kll",
-   "baslik": "Kronik Lenfositik Lösemi (KLL)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "hct-ci-geriatrik-degerlendirme",
    "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi"
   }
  ],
  "hematoloji/anemiler": [
   {
-   "brans": "enfeksiyon",
-   "slug": "mantar-enfeksiyon-ana-sayfa",
-   "baslik": "Mantar Enfeksiyonları"
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
   },
   {
    "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "besinsel-b12",
+   "baslik": "Besinsel B12 Vitamini Eksikliği"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "demir-eksikligi",
+   "baslik": "Demir Eksikliği Anemisi (DEA)"
   }
  ],
  "hematoloji/aplastik-anemi": [
@@ -3476,23 +3476,8 @@
  "hematoloji/burkitt": [
   {
    "brans": "hematoloji",
-   "slug": "dlbcl",
-   "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hodgkin",
-   "baslik": "Hodgkin Lenfoma (HL)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "nhl-genel",
    "baslik": "Non-Hodgkin Lenfomalar (NHL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "periferik-t-hucreli-lenfomalar",
-   "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)"
   }
  ],
  "hematoloji/demir-eksikligi": [
@@ -3517,26 +3502,11 @@
  "hematoloji/dlbcl": [
   {
    "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "all",
-   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "multiple-myelom",
-   "baslik": "Multipl Miyelom (MM)"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/esansiyel-trombositoz": [
-  {
-   "brans": "hematoloji",
-   "slug": "primer-miyelofibrozis",
-   "baslik": "Primer Miyelofibrozis (PMF)"
-  },
   {
    "brans": "hematoloji",
    "slug": "polisitemia-vera",
@@ -3602,21 +3572,6 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "dlbcl",
-   "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "all",
-   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "multiple-myelom",
-   "baslik": "Multipl Miyelom (MM)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "FL-t1(4-18)",
    "baslik": "t(14;18) Translokasyonunun Rolü"
   },
@@ -3624,6 +3579,21 @@
    "brans": "hematoloji",
    "slug": "POD24-FL-tedavi",
    "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-crebbp-mutasyonlari",
+   "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-t14-18-negatif",
+   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "m7-flipi-ngs-paneli",
+   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
   }
  ],
  "hematoloji/folat-eksikligi": [
@@ -3721,8 +3691,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/hematopoez": [
@@ -3733,18 +3703,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   }
  ],
  "hematoloji/hemofili-a": [
@@ -3788,20 +3758,30 @@
  "hematoloji/hemolitik-anemiler-genel-bakis": [
   {
    "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
+   "slug": "makrositer-anemiler",
+   "baslik": "Makrositer Anemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "talasemiler-ana",
+   "baslik": "Talasemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "yapim-azligi-anemiler",
+   "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
  "hematoloji/hodgkin": [
   {
    "brans": "hematoloji",
-   "slug": "periferik-t-hucreli-lenfomalar",
-   "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/immun-trombositopeni-itp": [
@@ -3848,25 +3828,25 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "lenfomalar",
    "baslik": "Lenfomalar (Hodgkin ve NHL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
   }
  ],
  "hematoloji/kll": [
   {
    "brans": "hematoloji",
-   "slug": "aml-tedavi-algoritmasi",
-   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/kml": [
@@ -3874,11 +3854,6 @@
    "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kronik-notrofilik-losemi-cnl",
-   "baslik": "Kronik Nötrofilik Lösemi (CNL)"
   }
  ],
  "hematoloji/kmt2d-crebbp-mutasyonlari": [
@@ -3958,11 +3933,6 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "kronik-notrofilik-losemi-cnl",
-   "baslik": "Kronik Nötrofilik Lösemi (CNL)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "polisitemia-vera",
    "baslik": "Polistemia Vera (PV) Kapsamlı Özeti"
   }
@@ -3970,8 +3940,18 @@
  "hematoloji/kronik-notrofilik-losemi-cnl": [
   {
    "brans": "hematoloji",
+   "slug": "esansiyel-trombositoz",
+   "baslik": "Esansiyel Trombositemi (ET)"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "kml",
    "baslik": "Kronik Miyeloid Lösemi (KML)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "polisitemia-vera",
+   "baslik": "Polistemia Vera (PV) Kapsamlı Özeti"
   }
  ],
  "hematoloji/kursun-zehirlenmesi-anemisi": [
@@ -3989,11 +3969,6 @@
  "hematoloji/lenfomalar": [
   {
    "brans": "hematoloji",
-   "slug": "akut-lenfoblastik-losemi-all",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
   },
@@ -4001,16 +3976,6 @@
    "brans": "hematoloji",
    "slug": "miyelodisplastik-sendrom-mds",
    "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "multiple-myelom",
-   "baslik": "Multipl Miyelom (MM)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "waldenstrom-makroglobulinemisi-wm",
-   "baslik": "Waldenström Makroglobulinemisi (WM)"
   }
  ],
  "hematoloji/losemiler": [
@@ -4023,21 +3988,6 @@
    "brans": "endokrinoloji",
    "slug": "men1-menin-lösemi-onkojen",
    "baslik": "Menin'in Çift Karakteri: Hematopoetik Dokularda Pro-Onkojenik Rol ve Lösemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "anemiler",
-   "baslik": "Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
   }
  ],
  "hematoloji/m7-flipi-ngs-paneli": [
@@ -4082,11 +4032,6 @@
    "brans": "hematoloji",
    "slug": "megaloblastik-anemi",
    "baslik": "Megaloblastik Anemiler (Genel)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
   },
   {
    "brans": "hematoloji",
@@ -4143,16 +4088,31 @@
  "hematoloji/mikrositer-anemiler": [
   {
    "brans": "hematoloji",
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "talasemiler-ana",
+   "baslik": "Talasemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "yapim-azligi-anemiler",
+   "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
  "hematoloji/miyelodisplastik-sendrom-mds": [
-  {
-   "brans": "hematoloji",
-   "slug": "akut-lenfoblastik-losemi-all",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
   {
    "brans": "hematoloji",
    "slug": "allojenik-kok-hucre-nakli",
@@ -4160,11 +4120,6 @@
   }
  ],
  "hematoloji/miyeloproliferatif": [
-  {
-   "brans": "hematoloji",
-   "slug": "primer-miyelofibrozis",
-   "baslik": "Primer Miyelofibrozis (PMF)"
-  },
   {
    "brans": "hematoloji",
    "slug": "esansiyel-trombositoz-ARES-ASA",
@@ -4179,40 +4134,40 @@
  "hematoloji/multiple-myelom": [
   {
    "brans": "hematoloji",
-   "slug": "all",
-   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+   "slug": "lenfomalar",
+   "baslik": "Lenfomalar (Hodgkin ve NHL)"
   },
   {
    "brans": "hematoloji",
-   "slug": "dlbcl",
-   "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)"
+   "slug": "losemiler",
+   "baslik": "Lösemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "ezh2-yabanil-tip-tedavi",
-   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+   "slug": "miyelodisplastik-sendrom-mds",
+   "baslik": "Miyelodisplastik Sendromlar (MDS)"
   }
  ],
  "hematoloji/nhl-genel": [
   {
    "brans": "hematoloji",
-   "slug": "burkitt",
-   "baslik": "Burkitt Lenfoma"
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
   },
   {
    "brans": "hematoloji",
-   "slug": "dlbcl",
-   "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)"
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
   },
   {
    "brans": "hematoloji",
-   "slug": "hodgkin",
-   "baslik": "Hodgkin Lenfoma (HL)"
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "periferik-t-hucreli-lenfomalar",
-   "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)"
+   "slug": "aml-tedavi-algoritmasi",
+   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
   }
  ],
  "hematoloji/olgunlasma-bozukluklari": [
@@ -4225,11 +4180,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
   },
   {
    "brans": "hematoloji",
@@ -4257,8 +4207,8 @@
  "hematoloji/periferik-t-hucreli-lenfomalar": [
   {
    "brans": "hematoloji",
-   "slug": "hodgkin",
-   "baslik": "Hodgkin Lenfoma (HL)"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/pernisiyoz-anemi": [
@@ -4357,11 +4307,6 @@
    "brans": "hematoloji",
    "slug": "esansiyel-trombositoz",
    "baslik": "Esansiyel Trombositemi (ET)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "primer-miyelofibrozis",
-   "baslik": "Primer Miyelofibrozis (PMF)"
   }
  ],
  "hematoloji/porfiriler-aip-pct": [
@@ -4389,13 +4334,13 @@
  "hematoloji/primer-miyelofibrozis": [
   {
    "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
+   "slug": "esansiyel-trombositoz",
+   "baslik": "Esansiyel Trombositemi (ET)"
   },
   {
    "brans": "hematoloji",
-   "slug": "esansiyel-trombositoz",
-   "baslik": "Esansiyel Trombositemi (ET)"
+   "slug": "miyeloproliferatif",
+   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
   },
   {
    "brans": "hematoloji",
@@ -4427,11 +4372,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
   },
   {
    "brans": "hematoloji",
@@ -4476,21 +4416,6 @@
    "brans": "hematoloji",
    "slug": "von-willebrand-hastaligi-vwd",
    "baslik": "von Willebrand Hastalığı (vWD)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "anemiler",
-   "baslik": "Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
   }
  ],
  "hematoloji/trombositopeni-itp": [
@@ -4547,11 +4472,6 @@
  "hematoloji/waldenstrom-makroglobulinemisi-wm": [
   {
    "brans": "hematoloji",
-   "slug": "akut-lenfoblastik-losemi-all",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "lenfomalar",
    "baslik": "Lenfomalar (Hodgkin ve NHL)"
   },
@@ -4564,11 +4484,6 @@
    "brans": "hematoloji",
    "slug": "miyelodisplastik-sendrom-mds",
    "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "multiple-myelom",
-   "baslik": "Multipl Miyelom (MM)"
   }
  ],
  "hematoloji/yapim-azligi-anemiler": [
@@ -4581,11 +4496,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "mikrositer-anemiler",
-   "baslik": "Mikrositer Anemiler"
   },
   {
    "brans": "hematoloji",

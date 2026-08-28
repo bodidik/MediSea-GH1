@@ -41,6 +41,12 @@ const ELENEN = new Set(
     'kardiyoloji', 'romatoloji', 'enfeksiyon', 'göğüs', 'göğüs hastalıkları',
     'palyatif', 'klinik nütrisyon', 'journal club', 'genel dahiliye',
     // klinik niteleyiciler
+    // SÜREÇ/META etiketleri — konuyu değil YAZIM DURUMUNU anlatıyorlar.
+    // Ölçüldü: 'Sınıflandırma' kütüphanede YALNIZCA 2 konuda geçiyor
+    // (enfeksiyon/mantar-enfeksiyon-ana-sayfa ve hematoloji/anemiler), yani
+    // azami nadirlik = azami skor. Sonuç ekranda görüldü: mantar
+    // enfeksiyonları sayfasının TEK önerisi 'Anemiler' idi.
+    'sınıflandırma', 'kategori',
     'akut', 'kronik', 'acil', 'aciller', 'tanı', 'tedavi', 'yönetim',
     'patofizyoloji', 'farmakoloji', 'klinik', 'komplikasyon', 'komplikasyonlar',
     'ayırıcı tanı', 'prognoz', 'epidemiyoloji', 'tarama', 'izlem',
@@ -103,15 +109,19 @@ function konulariTopla() {
         const v = JSON.parse(fs.readFileSync(path.join(dizin, dosya), 'utf-8'));
         if (v?.meta?.hidden === true) continue;
         const slug = dosya.replace(/\.json$/, '');
-        const etiketler = (Array.isArray(v?.meta?.tags) ? v.meta.tags : [])
-          .map(normalize)
-          .filter((t) => t && !ELENEN.has(t));
+        const hamEtiket = (Array.isArray(v?.meta?.tags) ? v.meta.tags : []).map(normalize);
+        const etiketler = hamEtiket.filter((t) => t && !ELENEN.has(t));
+        /* TASLAK: öneri HEDEFİ olmaz ama kendi sayfasında öneri ALIR.
+           Bayrak HAM etiketten okunuyor — 'yapay zeka taslağı' ELENEN'de
+           olduğu için süzülmüş listede zaten görünmez. */
+        const taslak = hamEtiket.includes(normalize('Yapay Zeka Taslağı'));
         konular.push({
           anahtar: `${brans}/${slug}`,
           brans,
           slug,
           baslik: (typeof v?.title === 'string' && v.title.trim()) || slug.replace(/-/g, ' '),
           parentler: ebeveynListesi(v?.meta?.parent),
+          taslak,
           etiketler: [...new Set(etiketler)],
         });
       } catch {
@@ -125,13 +135,32 @@ function konulariTopla() {
 function main() {
   const konular = konulariTopla();
 
-  // Etiket -> kaç konuda geçiyor
+  // Etiket -> kaç ADAY konuda geçiyor.
+  //
+  // Taslaklar burada da elenmeli: adet nadirlik PAYDASI ve 1/n ağırlığı ters
+  // dizindeki adaylara uygulanıyor. İkisi farklı popülasyonu tarif ederse
+  // ağırlık ile havuz ayrışır — ve yalnızca taslaklarda geçen bir etikette
+  // adet >= 2 olup ters dizin BOŞ kalır (ölçüldü: TypeError).
   const adet = {};
-  for (const k of konular) for (const t of k.etiketler) adet[t] = (adet[t] || 0) + 1;
+  for (const k of konular) {
+    if (k.taslak) continue;
+    for (const t of k.etiketler) adet[t] = (adet[t] || 0) + 1;
+  }
 
   // Etiket -> o etiketi taşıyan konular (tam tarama yerine ters dizin)
+  //
+  // TASLAKLAR HAVUZDA YOK. Eleme burada — SONUÇ listesinde değil: sonradan
+  // kırpılsaydı 5 sayfa önerisiz kalırdı (ölçüldü). Havuzdan çıkınca kardeş
+  // ve branş-içi yedek zinciri devreye giriyor ve o sayfalar doluyor.
+  //
+  // Eleme TEK YÖNLÜ: taslak konu hedef olmuyor ama kendi sayfasında öneri
+  // ALMAYA devam ediyor. Etiket kalkınca konu kendiliğinden havuza döner —
+  // ayrı bir liste tutulmuyor.
   const tersDizin = {};
-  for (const k of konular) for (const t of k.etiketler) (tersDizin[t] ||= []).push(k);
+  for (const k of konular) {
+    if (k.taslak) continue;
+    for (const t of k.etiketler) (tersDizin[t] ||= []).push(k);
+  }
 
   const sonuc = {};
   let bagliKonu = 0;
@@ -202,6 +231,7 @@ function main() {
         .filter(
           (d) =>
             d.anahtar !== k.anahtar &&
+            !d.taslak &&
             d.brans === k.brans &&
             d.parentler.some((e) => k.parentler.includes(e))
         )
@@ -248,6 +278,7 @@ function main() {
         (d) =>
           d.brans === k.brans &&
           d.anahtar !== k.anahtar &&
+          !d.taslak &&
           !k.parentler.includes(d.slug) &&
           !d.parentler.includes(k.slug) &&
           konular.some((c) => c.brans === d.brans && c.parentler.includes(d.slug))
