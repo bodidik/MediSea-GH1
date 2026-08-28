@@ -21434,3 +21434,72 @@ tırnaklı dize (`'const\\s+'` → `'consts+'`,
 olabilirdi — burada şansa sözdizimi hatası verdi. Kural sertleşiyor:
 **kaçış taşıyan bir betiği kabuk kanalıyla YAZMA**, ve kaçınılmazsa kaçışı
 hiç yazma — `String.fromCharCode(92)` ile kur.
+
+### ⚠ KENDİ ÖNERİMİ SINADIM VE ÇÜRÜDÜ — önerilen kural, denetimin DOĞDUĞU kusuru "temiz" gösterirdi
+
+Bir önceki tur şunu yazmıştı: *"`payda-denetim`in 23 kayıtlık 'ayrıştırılamadı'
+kovasının bir bölümü bu kuralla kapanabilir"* — kural: bir dizinin her ögesi
+TAM BİR `pts` taşıyorsa o bir ŞIK listesidir, o zaman
+`ulaşılabilir = madde sayısı × Σ(şık listesi tavanları)`.
+
+Bu bir ÖNERİYDİ, ölçüm değil. Bu tur ölçüldü — **denetime dokunmadan**, kural
+ayrı bir sandbox'ta uygulanıp düzeltme ÖNCESİ sürümlere sürüldü.
+
+| araç (düzeltme öncesi) | ilan | önerilen kuralın hesabı | GERÇEK ulaşılabilir |
+|---|---|---|---|
+| **`rapid3`** | 30 | **30** → "İLAN = HESAP, temiz" | **50** |
+| **`scorad`** | 103 | **618** | **85** |
+
+Birinci satır belirleyici: kural eklenseydi denetim, **doğduğu kusuru
+"güçlü kanıt temiz" diye raporlardı.** Bugünkü dürüst "ayrıştırılamadı"
+sonucundan çok daha kötü.
+
+Sebep ölçülebilir: `rapid3` skoru `funcSum + pain + global` ve `pain`/`global`
+**şık dizisinden değil sürgüden** geliyor — kural onları göremiyor, 10×3=30
+hesaplayıp ilanla eşitliyor. `scorad`da ise `AREA_OPTS`in "tavanı" **100**,
+çünkü o bir YÜZDE listesi, puan değil; kural 6×(3+100) = 618 üretiyor.
+
+**Kovadaki öteki araçlarda kural DOĞRU çalışıyor** — yani fikir tümüyle
+yanlış değil, KAPSAMI yanlıştı:
+
+| araç | kuralın hesabı | ilan |
+|---|---|---|
+| `dlqi` · `tnss` · `uas7` · `mrss` | 30 · 12 · 42 · 51 | aynı ✓ |
+| `cat-copd` · `gds-15` · `esas` · `ciwa-ar` | uygulanamıyor (şık listesi yok) | — |
+
+Yani 23'ün 4'ünü doğru kapatır, 2'sini **yanlış** kapatır. Net bakiye
+negatif: bir klinik denetimde tek bir sahte "temiz", dört doğru kapanıştan
+daha pahalı.
+
+**DENETİM DEĞİŞTİRİLMEDİ.** Bugünkü taban korunuyor: 130 araç · 35 payda
+ilanı · 11 eşit · 1 sapan (`findrisc`, verdikti yazılı) · 23 ayrıştırılamadı;
+`--kontrol` geçiyor.
+
+#### Kuralı GÜVENLİ yapmanın yolu — uygulanmadı, tasarımı burada
+
+Kusur kuralın kendisinde değil, **skor ifadesini hiç okumamasında**. Güvenli
+biçim şu ön koşulu ister: skor ifadesi şık gruplarının DÜZ TOPLAMI olmalı —
+
+* içinde `/` ya da `*` **yok** (ağırlık/bölme varsa reddet → `scorad`),
+* şık/madde dizilerinden gelmeyen tanımlayıcı **yok** (sürgü girdisi varsa
+  reddet → `rapid3`),
+* şık listesinin değerleri PUAN olmalı; yüzde/eşik listesi değil.
+
+Üçü de kaynaktan sınanabilir ve üçü de bu turda çürüyen iki vakayı elerdi.
+Uygulanmadı çünkü checked-in bir denetimi değiştirmek kendi negatif/pozitif/
+**tarihsel** kontrollerini gerektiriyor ve tarihsel kontrol tam olarak
+yukarıdaki iki vakadır — yani yazan kişi onları önce ölçmeli.
+
+**Aktarılabilir kural: bir denetime kapsam eklemeyi önerdiğinde, öneriyi
+denetimin DOĞDUĞU kusura sür.** Bu depoda "ayrıştırılamadı" kovası bir
+eksiklik gibi görünüyor; ölçüm onun bir KORUMA olduğunu gösterdi —
+*bilmediğini ayrı kovaya koymak*, tahmin etmekten iyidir.
+
+#### Yan doğrulama: iki kusurun kayıtlı sayıları bağımsız olarak tutuyor
+
+Belgedeki `rapid3 → 0–50` ve `scorad → 0–85` değerleri elle yeniden
+hesaplandı ve tuttu:
+
+* `rapid3`: FUNCTION_ITEMS 10 × 3 = 30, + ağrı 10 + global 10 = **50**
+* `scorad`: alan/5 → 20, 7×B/2 (B tavan 18) → 63, **C/10** → 2 = **85**
+  (düzeltilmişte C bölünmüyor: 20 + 63 + 20 = 103)
