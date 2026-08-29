@@ -23204,3 +23204,107 @@ Bu depoda kayıtlı "yorum körlüğü" sınıfının yama tarafındaki hâli. �
 Kayda değer olan şu: betik yanlış bir yamayı yazmadı — kontrolü tuttu ve
 dosyaları geri aldı. **Yerleştirme betiğine yazma-sonrası doğrulama + geri
 alma koymak, bu turda bir kez daha işini yaptı.**
+
+### ⚠ BAŞKA BİR QUİZ AÇMAK, ÖNCEKİ QUİZDEKİ VURGULARI SİLİYORDU
+
+Yeni eksen: **vurgu anahtarının İKİ yarısı da gerçekten benzersiz mi?**
+
+Bir vurgu `(yol, konteyner kimliği)` ile konumlanıyor. Belge kimliğin neden
+şart olduğunu zaten yazıyor: *"soru çözüm gibi sayfalarda YOL DEĞİŞMEDEN
+içerik değişir; sıra numarası orada yanlış içeriğe yapışır."* Çare olarak
+`data-readable={\`soru:${soru.id}\`}` konmuş. Ölçülmemiş olan şey o `id`nin
+**dosya dışında da benzersiz olup olmadığıydı.**
+
+| ölçüm | değer |
+|---|---|
+| quiz dosyası | 40 |
+| toplam soru | 389 |
+| **benzersiz soru `id`si** | **42** |
+| `s1` kaç dosyada geçiyor | **38** |
+| `s2` · `s3` | 37 · 37 |
+
+Ve bütün quizler **AYNI YOLDA** çalışıyor (`/tr/premium/ydus/quiz-coz`,
+kimlik sorguda). Yani anahtarın iki yarısı da çakışıyordu: 38 farklı quizin
+birinci sorusu `(/tr/premium/ydus/quiz-coz, soru:s1)` anahtarını paylaşıyor.
+
+#### Bedeli ölçüldü — kayıp SESSİZ ve kullanıcının hiçbir hatası yok
+
+Yerel üretim derlemesinde, kapı geçici olarak açılıp GERÇEK arayüzle sürüldü:
+
+| adım | ölçülen |
+|---|---|
+| SLE quizi, 1. soru cevaplandı, açıklamada vurgu yapıldı | 1 kayıt · ekranda 1 `<mark>` · konteyner `soru:s1` |
+| **ADPKD quizi açıldı, 1. soru cevaplandı** | konteyner yine **`soru:s1`** |
+| sonuç | **kayıt SİLİNDİ — depo anahtarı tümden kayboldu** |
+
+Silen şey bir kusur değil, belgede kayıtlı **doğru** kural: *"Silme yalnızca
+konteyner VAR ama metin tutmuyorsa olur."* Konteyner vardı (aynı kimlik),
+metin tutmuyordu (başka quiz) — kural işledi. Kusur kuralda değil,
+**kimliğin yeterince benzersiz olmamasındaydı.**
+
+Yani kullanıcı bir quizde işaretleme yapıp başka bir quiz açtığında
+işaretlerini kaybediyordu; ne bir uyarı var ne de geri alma.
+
+#### Çare: kimliğin SET yarısı
+
+`soru:${soru.id}` → **`soru:${setId}:${soru.id}`** (`setId = veri.id`, quizin
+kendi kimliği — ilerleme kaydının da anahtarı). Ölçüldü:
+`soru:quiz-roma-sle-001:s1` ↔ `soru:quiz-nefro-adpkd-001:s1`.
+
+Artık öteki quizde konteyner **BULUNAMIYOR** ve kuralın öteki yarısı devreye
+giriyor: *"Konteyneri kaybolan vurgu SİLİNMEZ, sadece boyanmaz."*
+
+**Doğrulama — tam gidiş dönüş, üç adım:**
+
+| adım | kayıt | ekranda `<mark>` |
+|---|---|---|
+| SLE quizinde vurgu | **1** | 1 |
+| **ADPKD quizi açıldı** | **1 — HAYATTA** (önce: silinmişti) | 0 (doğru: o konteyner yok) |
+| **SLE quizine dönüldü** | 1 | **1 — yeniden boyandı** |
+
+Üçüncü satır şart: ikinci satır tek başına "vurgu kalıcı olarak uykuya
+düştü" anlamına da gelebilirdi. Boyanan metin kayıttaki metinle **birebir**
+(`birebirMi: true`).
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| kapı geri kondu mu | quiz sayfası yeniden **"Erişim Kısıtlı"**, `data-readable` **0** |
+| geçici tohum izi | `page.tsx`te 0 (yedekten geri kondu, `git status` yalnız `QuizEngine.tsx`) |
+| ölçüm izi | `medisea:*` **0** |
+| lint · typecheck · build (637/637) · 13 CI adımı | hepsi geçti |
+| `ilan-render-denetim` | 4 şema sapması — taban değişmedi |
+
+#### Kardeş yüzey ölçüldü: **inciler TEMİZ**
+
+Aynı sınıf `PearlsViewer`da da olabilirdi (`pearl:${id}`, ve o sayfa da
+kimliği SORGUDAN alıyor). Ölçüldü: 2 dosya · 13 inci · **13 benzersiz id**
+(`p-aml-01` biçiminde) · **çakışan 0**. Yani orada kimlik zaten global.
+
+`VakaEngine` · `FlashcardPlayer` · `YdusCockpit` hiç `data-readable`
+taşımıyor (ölçüldü: 0), yani bu sınıf oralarda oluşamıyor.
+
+#### ⚠ AYNI KÖKTEN İKİNCİ KUSUR — NOT anahtarı hâlâ yalnızca YOL
+
+Ölçüldü (kaynaktan): `NotePanel`in depo anahtarı `medisea:notes:v1:${pathname}`
+ve `usePathname()` **sorguyu içermiyor**. Yani **40 quizin 40'ı tek bir not
+belgesini paylaşıyor**: A quizinde yazılan not B quizinde açılıyor ve
+üstüne yazılıyor.
+
+Aynı şey `inciler` için de geçerli (2 set, tek yol). Ayrıca `touchIndex`
+çıplak yolu dizine yazdığı için Çalışma Alanım'daki kart, parametresiz
+adrese — yani "bu quiz açılamadı" kartına — bağlanıyor.
+
+**BU TURDA DÜZELTİLMEDİ ve gerekçesi risk:** anahtara sorguyu katmak
+`useSearchParams()` gerektiriyor ve belgede kayıtlı kural açık — o kanca bir
+sayfayı SUNUCUDA ÜRETİLMEZ hâle getiriyor; `NotePanel` hem `AppShell`de hem
+`(ydus)` düzeninde, yani riski bütün siteye yayılır. Vurgu tarafındaki kayıp
+tek satırla ve yan etkisiz kapatılabiliyordu; not tarafı ayrı bir tur ve ayrı
+bir tasarım kararı (panel yalnızca kimliği olan yüzeylerde mi açılsın, yoksa
+anahtar başka bir yoldan mı zenginleşsin?).
+
+**Aktarılabilir kural: bir kimliği "benzersiz" saymadan önce HANGİ KÜMEDE
+benzersiz olduğunu say.** `soru.id` dosya içinde benzersizdi ve o yüzden
+doğru görünüyordu; anahtarın öteki yarısı (yol) da 40 quiz için ortak olunca
+iki yerel benzersizlik bir global çakışmaya dönüştü.

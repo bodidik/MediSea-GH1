@@ -56,6 +56,7 @@ function ZorlukBadge({ zorluk }: { zorluk?: string }) {
 /* ────────────────────────── SORU BİLEŞENİ ────────────────────────── */
 function SoruKarti({
   soru,
+  setId,
   soruNo,
   toplamSoru,
   onNext,
@@ -66,6 +67,8 @@ function SoruKarti({
   topic,
 }: {
   soru: Soru;
+  /** Vurgu konteyneri kimliğinin SET yarısı — aşağıdaki `data-readable` notu. */
+  setId: string;
   soruNo: number;
   toplamSoru: number;
   onNext: () => void;
@@ -308,10 +311,26 @@ function SoruKarti({
               </div>
             </div>
 
-            {/* Detaylı açıklama
-                data-readable: açıklama metni vurgulanabilir. Kimlik soruya bağlı —
-                sonraki soruya geçince vurgular karışmaz, o soruya ait kalır. */}
-            <div data-readable={`soru:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
+            {/* Detaylı açıklama — vurgulanabilir alan.
+                ⚠ KİMLİK SETİ DE İÇERMEK ZORUNDA. Burası `soru:${soru.id}`
+                diyordu ve o kimlik yalnızca DOSYA İÇİNDE benzersiz: 40 quiz
+                dosyasındaki 389 sorunun yalnızca 42 ayrı `id`si var, `s1` tek
+                başına 38 dosyada geçiyor. Bütün quizler AYNI yolda çalıştığı
+                için (`/tr/premium/ydus/quiz-coz`, kimlik sorguda) vurgu
+                anahtarının iki yarısı da çakışıyordu.
+
+                Bedeli ÖLÇÜLDÜ (yerel üretim derlemesi, gerçek arayüz): SLE
+                quizinin 1. sorusunda vurgu yapıldı (1 kayıt), sonra ADPKD
+                quizi açılıp 1. soru cevaplandı — konteyner VAR (`soru:s1`) ama
+                metin tutmuyor, dolayısıyla belgede kayıtlı ayıklama kuralı
+                devreye girdi ve vurgu SİLİNDİ (depo anahtarı tümden kayboldu).
+                Yani kullanıcı başka bir quiz açtığı için işaretlerini
+                kaybediyordu.
+
+                Set kimliği eklenince aynı durumda konteyner BULUNAMIYOR ve
+                kural "konteyneri kaybolan vurgu SİLİNMEZ, sadece boyanmaz"
+                diyor — kayıt hayatta kalıyor. */}
+            <div data-readable={`soru:${setId}:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
               {soru.aciklama_detay && (
                 <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
                   {kalinIsle(soru.aciklama_detay)}
@@ -669,6 +688,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
       <SoruKarti
         key={aktifSoru.id}
         soru={aktifSoru}
+        setId={veri.id}
         soruNo={soruIndex + 1}
         toplamSoru={sorular.length}
         onNext={ilerle}
