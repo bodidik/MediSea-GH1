@@ -23472,3 +23472,99 @@ kalıbı), yani yeniden çizim üretmiyor. Konteyneri olmayan sayfalarda maliyet
 içeriği TEK BAŞINA belirleyip belirlemediğini ölç.** Bu depoda aynı hata iki
 katmanda birden vardı: vurgularda konteyner kimliği dosya içinde benzersizdi
 (geçen tur düzeltildi), notlarda yol quiz'i ayırt etmiyordu (bu tur).
+
+### KENDİ DÜZELTMEM ÇALIŞMA KAYDINI İKİYE BÖLDÜ — vurgu ile not ayrı kimlik kullanıyordu
+
+Geçen tur not anahtarına sorgu eklendi. Bu turun ekseni **o değişikliğin
+TÜREV VERİYE etkisi** oldu: aynı kimlikten beslenen başka ne var?
+
+`collectAll` çalışma kartlarını depo anahtarlarından türetiyor — hem
+`marks:v2:<yol>` hem `notes:v1:<yol>` öneklerini tarayıp yolu çıkarıyor.
+Notlar sorgu taşımaya başlayınca vurgular hâlâ ÇIPLAK yolu kullanıyordu,
+yani aynı yüzey **iki ayrı kimlik** üretiyordu.
+
+**Canlıda ölçüldü** (gerçek şemayla tohumlanıp `/calisma-alanim` açılarak):
+
+| kart | bağlantı | içerik |
+|---|---|---|
+| "Sistemik Lupus Eritematozus (SLE) — Soru Seti 1" | `…quiz-coz?branch=…&id=…` — **çalışıyor** | not |
+| **"Soru Çöz"** | **`…quiz-coz`** — **ÇIKMAZ** ("Bu quiz açılamadı") | vurgu |
+
+Yani tek bir çalışma oturumu iki kart üretiyor ve biri açılmayan bir adrese
+gidiyordu. `purge(path)` de yarım kalıyordu: bir karttan silmek ötekinin
+verisine dokunmuyor.
+
+#### Çare: kimlik TEK KAYNAK
+
+`sayfaKimligi()` ve `suankiSorgu()` artık `reading-marks.ts`te; hem
+`ReadingTools` hem `NotePanel` oradan besleniyor. Geçen turun yerel kopyası
+kaldırıldı — iki bileşen ayrı hesaplasaydı ayrışma kaçınılmazdı (bu depoda
+"iki gerçeklik" sınıfının ta kendisi).
+
+`ReadingTools`in KENDİ 600 ms'lik yoklaması sorguyu da izliyor: `usePathname()`
+sorgu değişince tetiklenmiyor ve quiz A → quiz B geçişi tam olarak öyle bir
+geçiş.
+
+#### Eski çıplak kovadaki vurgular: OKUNUYOR ama TAŞINMIYOR
+
+Notlarda "kapsamlı anahtar boşsa eskisini oku" yeterliydi. Vurgularda
+**taşımak YANLIŞ olurdu**: çıplak kova birden çok quizin vurgusunu bir arada
+tutuyor (hepsi aynı yolda çalışıyordu), dolayısıyla hepsini bu quizin
+anahtarına kopyalamak **başka quizlerin vurgularını buraya yapıştırırdı.**
+
+Bu yüzden eski kayıt yalnızca BOYAMA için okunuyor ve o turda kaydetme
+yapılmıyor (`eskiKova` bayrağı).
+
+**Ölçüldü** — çıplak kovaya İKİ ayrı quizin vurgusu tohumlandı, SLE quizi
+açıldı:
+
+| ölçüt | sonuç |
+|---|---|
+| eski kova | **2 kayıt, ikisi de duruyor** |
+| taşınma oldu mu | **HAYIR** — sorgulu anahtar hiç oluşmadı |
+| ADPKD vurgusu SLE quizine yapıştı mı | **hayır** |
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| aynı quizde vurgu + not | **2 kart** (biri çıkmaz) | **1 kart** · "1 VURGU · ✎ 8 KARAKTER NOT" |
+| kartın bağlantısı | biri `…quiz-coz` (çıkmaz) | `…quiz-coz?branch=romatoloji&id=sle-quiz-1` |
+| depo anahtarları | marks çıplak, notes sorgulu | **ikisi de sorgulu, aynı kimlik** |
+| **negatif** — konu sayfası (sorgusuz) | `marks:v2:/topics/endokrinoloji/addison` | **değişmedi**, vurgu boyandı |
+| **negatif** — eski çıplak kova | — | duruyor, taşınmadı |
+| **negatif** — kapı geri kondu | — | quiz yeniden "Erişim Kısıtlı" |
+| lint · typecheck · build (637/637) · 13 CI adımı | — | hepsi geçti |
+
+#### Yan doğrulama: `/tekrar` kart kimlikleri ETKİLENMİYOR
+
+Bir kimlik değişikliğinden sonra sorulacak soru: **o kimlikten türeyen başka
+ne var?** Sayıldı:
+
+| türev | kaynağı | etkilendi mi |
+|---|---|---|
+| cloze kartı `id` | **vurgunun kendi `id`si** (8 karakterlik rastgele) | **hayır** |
+| `pruneStates` | deste kart id'leri | hayır |
+| **çizim kartı `id`** | **`sketch:<yol>`** | **evet** — sorgulu sayfalarda id değişiyor |
+
+Üçüncüsü kapsam olarak dar: yalnızca sorgu taşıyan bir sayfada ÇİZİM notu
+olan kullanıcıyı etkiler ve o yüzeyde not defteri iki commit öncesine kadar
+hiç açılmıyordu (ölçülmüş). Etkisi SM-2 durumunun sıfırlanması, veri kaybı
+değil — kart yeniden üretiliyor.
+
+**Aktarılabilir kural: bir kimliği değiştirdiğinde, o kimlikten TÜREYEN her
+şeyi say.** Bu turda türevlerden biri (çalışma kartı) kullanıcıya görünen bir
+kusur üretti, biri (çizim kartı id'si) sessiz ve dar, ikisi hiç etkilenmedi —
+ve fark yalnızca tek tek bakınca görülüyor.
+
+#### ⚠ CRLF, ölçüm aracının kendisini yanılttı
+
+Yama betiği "CAPA 0 KEZ" dedi ve çapa dosyada gözle görülüyordu. Sebep:
+dosya **CRLF**, çapalar LF ile kurulmuştu. Teşhisi geciktiren şey doğrulama
+yöntemiydi — `cat -A | sed` çıktısı satır sonlarını `[EOL]` diye gösterip
+`^M`i gizledi.
+
+Doğru tanı tek satır: `JSON.stringify(dosya.slice(i, i+130))` — ham dize
+`\r\n`i olduğu gibi gösteriyor. Betik artık LF kopyası üzerinde çalışıp
+sonunda dosyanın kendi biçimine çeviriyor ve yazma sonrası hem çapaları hem
+satır sonunu doğrulayıp tutmazsa GERİ ALIYOR.

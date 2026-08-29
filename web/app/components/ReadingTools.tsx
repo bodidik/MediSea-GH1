@@ -24,6 +24,8 @@ import {
   paint,
   rangeFrom,
   saveMarks,
+  sayfaKimligi,
+  suankiSorgu,
   scrollToMark,
   unpaint,
   unpaintAll,
@@ -52,6 +54,10 @@ const PALETTE: { st: MarkStyle; label: string; swatch: string }[] = [
 
 export default function ReadingTools() {
   const pathname = usePathname();
+  /** Adresin sorgusu — `usePathname()` görmüyor; aşağıdaki yoklama izliyor. */
+  const [sorgu, setSorgu] = useState(suankiSorgu);
+  /** Çalışma kimliği: sorgusuz sayfalarda `pathname` ile BİREBİR aynı. */
+  const sayfa = sayfaKimligi(pathname, sorgu);
   const [marks, setMarks] = useState<ReadingMark[]>([]);
   /** Şu an DOM'da gerçekten boyalı olanlar — listede diğerleri "başka bölümde" sayılır */
   const [painted, setPainted] = useState<Set<string>>(new Set());
@@ -98,12 +104,12 @@ export default function ReadingTools() {
       setMarks(next);
       // Kaydetme başarısızsa (depo dolu) kullanıcı bunu BİLMELİ: ekranda vurgu
       // duruyor ama yenilemede kaybolacak.
-      const sonuc = saveMarks(pathname, next);
+      const sonuc = saveMarks(sayfa, next);
       setKayitHatasi(sonuc === "ok" ? null : sonuc);
       // Çalışma Alanım sayfası başlığı buradan okur
-      if (next.length) touchIndex(pathname, pageTitle());
+      if (next.length) touchIndex(sayfa, pageTitle());
     },
-    [pathname]
+    [sayfa]
   );
 
   /* ── Kayıtlı vurguları geri boya ─────────────────────────────────────
@@ -136,7 +142,24 @@ export default function ReadingTools() {
       lastSig = containerSignature();
       unpaintAll();
 
-      const saved = loadMarks(pathname);
+      /**
+       * ESKİ ÇIPLAK YOLDAKİ VURGULAR KAYBOLMASIN — ama TAŞINMASIN da.
+       *
+       * Kimlik sorguyu da içerince, daha önce çıplak yola yazılmış vurguların
+       * anahtarı değişiyor. Onları yok saymak sessiz veri kaybı olurdu.
+       *
+       * Ama TAŞIMAK da yanlış: çıplak kova birden çok quizin vurgusunu bir
+       * arada tutuyor (hepsi aynı yolda çalışıyordu), dolayısıyla hepsini bu
+       * quizin anahtarına kopyalamak başka quizlerin vurgularını buraya
+       * yapıştırırdı. Bu yüzden eski kayıt YALNIZCA BOYAMA için okunuyor ve
+       * o turda kaydetme yapılmıyor (`eskiKova`).
+       */
+      let eskiKova = false;
+      let saved = loadMarks(sayfa);
+      if (!saved.length && sayfa !== pathname) {
+        const eski = loadMarks(pathname);
+        if (eski.length) { saved = eski; eskiKova = true; }
+      }
       const alive: ReadingMark[] = [];
       const shown = new Set<string>();
       /** En az bir vurgu yeni ofsete demirlendi mi — kaydetmeyi tetikler. */
@@ -193,7 +216,9 @@ export default function ReadingTools() {
       setMarks(alive);
       setPainted(shown);
       // Demirleme olduysa SAYI aynı kalır; yeni ofsetler yine de yazılmalı.
-      if (alive.length !== saved.length || demirlendi) saveMarks(pathname, alive);
+      // `eskiKova`: liste eski çıplak anahtardan geldi — yazmak onu bu quize
+      // TAŞIMAK olurdu (yukarıdaki gerekçe).
+      if (!eskiKova && (alive.length !== saved.length || demirlendi)) saveMarks(sayfa, alive);
     };
 
     // Açılışta içerik henüz basılmamış olabilir — birkaç kare bekle. Bu bekleme
@@ -229,6 +254,9 @@ export default function ReadingTools() {
     // tek bir querySelectorAll, imza aynıysa hiçbir iş yapmaz.
     const poll = setInterval(() => {
       if (cancelled) return;
+      // Sorgu değişimi de burada yakalanıyor: quiz A → quiz B geçişinde YOL
+      // aynı kalıyor ve `usePathname()` tetiklenmiyor.
+      setSorgu((o) => { const v = suankiSorgu(); return o === v ? o : v; });
       if (containerSignature() !== lastSig) restore();
     }, 600);
 
@@ -253,7 +281,7 @@ export default function ReadingTools() {
     const onStorage = (e: StorageEvent) => {
       if (cancelled) return;
       // `key === null` -> depo tümden temizlendi (yedekten "üzerine yaz")
-      if (e.key !== null && e.key !== "medisea:marks:v2:" + pathname) return;
+      if (e.key !== null && e.key !== "medisea:marks:v2:" + sayfa) return;
       restore();
     };
     window.addEventListener("storage", onStorage);
@@ -265,7 +293,7 @@ export default function ReadingTools() {
       clearInterval(poll);
       observer.disconnect();
     };
-  }, [pathname]);
+  }, [pathname, sayfa]);
 
   /* ── Seçim / tıklama dinleyicileri ──────────────────────────────────── */
   useEffect(() => {

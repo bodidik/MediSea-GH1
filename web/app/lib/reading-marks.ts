@@ -44,6 +44,36 @@ export function storageKey(pathname: string) {
 }
 
 /**
+ * SAYFANIN ÇALIŞMA KİMLİĞİ — yol tek başına yetmiyor.
+ *
+ * Ölçüldü: 40 quiz `/tr/premium/ydus/quiz-coz` yolunda çalışıyor ve kimlik
+ * SORGUDA; `inciler` de öyle. Yol tek başına anahtar yapıldığında bütün
+ * quizler tek bir kayıt paylaşıyor.
+ *
+ * Sorgu SIRALANIYOR: aynı içeriğe `?id=x&branch=y` ile gelmek kaydı ikiye
+ * bölmemeli. Sorgusuz sayfalarda sonuç `pathname` ile BİREBİR aynı — yani
+ * 400'ü aşkın konu sayfasının mevcut anahtarları hiç değişmiyor.
+ *
+ * ⚠ TEK KAYNAK: hem vurgular (`ReadingTools`) hem not defteri (`NotePanel`)
+ * buradan besleniyor. İkisi ayrı hesaplasaydı Çalışma Alanım aynı yüzey için
+ * İKİ kart üretirdi — bu bir dönem gerçekten oldu ve canlıda ölçüldü:
+ * biri notu taşıyan çalışan adrese, öteki vurguları taşıyan ÇIKMAZ çıplak
+ * yola bağlanıyordu.
+ */
+export function sayfaKimligi(pathname: string, sorgu: string): string {
+  if (!sorgu || sorgu === "?") return pathname;
+  const p = new URLSearchParams(sorgu);
+  const siralanmis = [...p.entries()].sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+  const s = new URLSearchParams(siralanmis).toString();
+  return s ? `${pathname}?${s}` : pathname;
+}
+
+/** Adresin sorgusu — SSR'de boş. Bileşenler `useState` başlangıcı olarak kullanır. */
+export function suankiSorgu(): string {
+  return typeof window === "undefined" ? "" : window.location.search || "";
+}
+
+/**
  * BOZUK KAYIT ATILMAZ, YEDEĞE TAŞINIR.
  *
  * Bir dönem `catch { return [] }` vardı ve gerekçesi "bozuk kayıt okuma

@@ -25,6 +25,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
 import { bozukYedegiOku, degistiBildir, guvenliNesneOku, kurtarildiMi } from "@/app/lib/depo";
+import { sayfaKimligi, suankiSorgu } from "@/app/lib/reading-marks";
 
 /** [x, y, basınç] — x ve y panel GENİŞLİĞİNE göre normalize (en-boy oranı korunur) */
 type Pt = [number, number, number];
@@ -34,32 +35,6 @@ type Paper = "cizgili" | "kareli" | "bos";
 
 const KEY = (p: string) => `medisea:notes:v1:${p}`;
 
-/**
- * Notun KİMLİĞİ — yol tek başına yetmiyor.
- *
- * Ölçüldü: 40 quizin 40'ı `/tr/premium/ydus/quiz-coz` yolunda çalışıyor,
- * kimlik SORGUDA. Anahtar yalnızca yol olduğu için hepsi TEK bir not
- * belgesini paylaşıyordu; SLE quizinde yazılan not ADPKD quizini açınca
- * panelde çıkıyor ve üstüne yazılıyordu (davranışla doğrulandı).
- *
- * Sorgu SIRALANIYOR: aynı içeriğe `?id=x&branch=y` ve `?branch=y&id=x` ile
- * gelmek notu ikiye bölmemeli.
- *
- * Sorgusuz sayfalarda sonuç DEĞİŞMİYOR (`pathname` aynen dönüyor) — yani
- * 400'ü aşkın konu sayfasının mevcut anahtarları olduğu gibi kalıyor;
- * göç gerektiren tek yüzey sorgu taşıyanlar.
- *
- * Yan kazanç: Çalışma Alanım kartları anahtardan yol türetiyor
- * (`collectAll`), dolayısıyla kart artık çıplak yola değil GERÇEKTEN
- * AÇILAN adrese bağlanıyor.
- */
-function sayfaKimligi(pathname: string, sorgu: string): string {
-  if (!sorgu || sorgu === "?") return pathname;
-  const p = new URLSearchParams(sorgu);
-  const siralanmis = [...p.entries()].sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
-  const s = new URLSearchParams(siralanmis).toString();
-  return s ? `${pathname}?${s}` : pathname;
-}
 const WIDTH_KEY = "medisea:notew";
 const PAPER_KEY = "medisea:notepaper";
 
@@ -113,7 +88,7 @@ export default function NotePanel() {
 
   const [enabled, setEnabled] = useState(false);
   /** Adresin sorgusu — aşağıdaki yoklama izliyor; `usePathname()` görmüyor. */
-  const [sorgu, setSorgu] = useState("");
+  const [sorgu, setSorgu] = useState(suankiSorgu);
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<Mode>("text");
   const [width, setWidth] = useState(420);
@@ -204,7 +179,7 @@ export default function NotePanel() {
         return o === v ? o : v;
       });
       setSorgu((o) => {
-        const v = window.location.search || "";
+        const v = suankiSorgu();
         return o === v ? o : v;
       });
     };
