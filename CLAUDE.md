@@ -22140,3 +22140,96 @@ kaldırılsa paylaşılan adrese inecek şey bu.
 Ayrıca 12 araç `params`ı `Object.fromEntries(...map(...))` ile kuruyor —
 ölü bir özellik için her render'da iş. Çökme riski yok (bilinen diziler
 üzerinde güvenli işlemler), maliyet önemsiz. Ölçüldü, **değiştirilmedi**.
+
+### GÖRÜNÜR ETİKET İLE ERİŞİLEBİLİR AD İKİ AYRI DİZEDEYDİ — biri çoktan ayrışmıştı
+
+Bu depoda alanların baskın kalıbı **saran `<label>`**: görünür `<span>` aynen
+erişilebilir ad oluyor, yani tek kaynak. Ölçüldü — 130 araçta 104 metin alanı:
+
+| kalıp | alan | kaynak sayısı |
+|---|---|---|
+| saran `<label>` | 74 | tek |
+| `id` + `label[for]` | 21 | tek |
+| **`<span>` + ayrı `aria-label`** | **9** | **iki** |
+
+Dokuzunda görünür etiket hiçbir şeye bağlı değil; ad ikinci bir dizede **elle**
+yazılmış. Sekizinde iki dize bugün birebir aynı — dokuzuncusu **ayrışmış**:
+
+| araç | görünür etiket | erişilebilir ad |
+|---|---|---|
+| `news2` — SpO₂ alanı | **"SpO₂ (%)"** | **"SpO2 yüzdesi"** |
+
+Yani ekranda okunanla ekran okuyucunun duyurduğu şey farklıydı. Bu aynı zamanda
+bir **WCAG 2.5.3 (Label in Name)** durumu: sesle denetim kullanan biri gördüğü
+sözcüğü söylüyor, kontrolün adı başka.
+
+**Aynı sayfadaki dört kardeş alan** ("Solunum Sayısı (dk)", "Sistolik KB
+(mmHg)", "Nabız (dk)", "Sıcaklık (°C)") adını görünür etiketten alıyor —
+sapan tek alan buydu.
+
+#### Çare: `aria-label` değil `aria-labelledby`
+
+Görünür `<span>`e kimlik verildi, girdi ona işaret ediyor. Böylece ad
+**görünür metnin kendisi**; ikinci bir dize kalmadı. Dokuz alanın dokuzu da
+bu kalıba alındı.
+
+**Saran `<label>` kullanılamıyordu** ve sebebi ölçülebilir: `news2`de aynı
+satırda "EK O₂" düğmesi var, `nutrition-needs`te sürgünün yanında değer
+göstergesi; saran etiket onları da kapsardı.
+
+**Sürgülerde ad yalnızca ETİKET span'ini gösteriyor, DEĞER span'ini değil** —
+değer zaten `aria-valuenow` ile taşınıyor ve ada katılsaydı sürgü her
+oynatıldığında ad değişirdi.
+
+**Doğru kalıp depoda ZATEN vardı:** `esas` aracı `aria-label={s.label}` yazıyor
+ve o değişken görünür `<span>`i de basıyor — tek kaynak, ayrışamaz.
+Dokuzu istisnaydı.
+
+#### Sınıf araç DIŞINDA da tarandı — bir kopya daha
+
+129 tsx, 48 alan. Kalan üç `aria-label` (üç arama kutusu) **kusur değil**:
+onlarda görünür etiket YOK, yalnızca ikon ve placeholder var — `aria-label`
+orada tek kaynağın kendisi.
+
+Gerçek kopya `kayseritip/.../AlanClient.tsx`teydi: iki alan hem görünür bir
+`<label>` hem aynı metni tekrarlayan bir `aria-label` taşıyordu. Orada
+`htmlFor`/`id` çifti kuruldu — **yan kazanç: etiket artık tıklanınca alana
+odaklanıyor** (bağ kurulmadığı için eskiden hiçbir şey yapmıyordu).
+
+#### Doğrulama
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| araçta elle yazılmış ad | **9** | **0** |
+| araç dışında (arama kutuları hariç) | 2 | **0** |
+| **pozitif kontrol** — düzeltme öncesi ağaç | ölçüt **9'u da yakalıyor** | — |
+| **negatif** — 74 saran label · 21 label[for] | değişmedi | değişmedi |
+| satır sonu (6 dosya, hepsi CRLF) | — | **korundu** |
+
+Ölçüt körlüğü ayrıca kapatıldı: `aria-labelledby` tanınmadan önce tarama
+düzeltilmiş dokuz alanı **"(AD YOK)"** diye raporluyordu — yani düzeltme
+kendi ölçütünü kırıyordu. Ölçüt genişletilmeden alınan sonuç sahte bir kusur
+listesi olurdu.
+
+#### Aynı turda ölçülüp TEMİZ çıkan üç eksen
+
+| eksen | sonuç |
+|---|---|
+| **`id` bütünlüğü** (130 araç, canlı HTML) | 238 id · **çift id 0** · sarkan `htmlFor` **0** · sarkan `aria-*` atfı **0** |
+| **aynı sayfada aynı adı taşıyan iki alan** | 30 araç · 111 alan · **çakışma 0** (adlar TARAYICIDA tam zincirle hesaplandı) |
+| `type="number"` / `min`/`max`/`step` | araçlarda `type="number"` **0**; üç `min/max` da `range` sürgüsünde, yani ölü nitelik yok |
+
+İkinci satır kayda değer: ham HTML'den 171 alanın **115'inin adı
+çözülemiyordu** (saran etiket), yani kaynak taraması bu sınıfı tek başına
+kapatamazdı. Ad tarayıcıda hesaplandı — belgedeki *"adı TAM ZİNCİRLE
+hesaplat"* kuralı.
+
+Üçüncü satır bir sınıfın YOKLUĞUNU kanıtlıyor: `type="number"` olsaydı
+tarayıcı Türkçe virgüllü ondalığı reddedip `parseLocaleNumber`ın virgül
+desteğini sessizce delerdi. 104 metin alanının 104'ü `type="text"` +
+`inputMode="decimal"`.
+
+**Ölçüm/yazma tuzağı — ters bölü, bu oturumda yedinci kez:** `node -e` içinde
+yazılan `f.replace(/\\/g,'/')` dosyaya tek ters bölüyle indi ve `SyntaxError`
+verdi. Kaçış taşıyan betiği kabuk kanalıyla yazma — Write kullan ya da
+kaçış istemeyen karşılığını seç (`f.split(path.sep).join('/')`).

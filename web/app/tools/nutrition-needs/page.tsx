@@ -80,8 +80,8 @@ export default function NutritionNeedsPage() {
           
           {/* Ağırlık Girişi */}
           <div className="space-y-3">
-            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Vücut Ağırlığı (kg)</span>
-            <input aria-label="Vücut Ağırlığı (kg)"
+            <span id="nn-kilo-l" className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Vücut Ağırlığı (kg)</span>
+            <input aria-labelledby="nn-kilo-l"
               type="text" inputMode="decimal"
               placeholder="Örn: 70"
               value={weight}
@@ -112,20 +112,23 @@ export default function NutritionNeedsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
             <div className="space-y-3">
               <div className="flex justify-between">
-                <span className="text-[10px] font-black text-slate-400 uppercase">Enerji (kcal/kg)</span>
+                <span id="nn-kcal-l" className="text-[10px] font-black text-slate-400 uppercase">Enerji (kcal/kg)</span>
                 <span className="text-sm font-black text-blue-900">{stressFactor}</span>
               </div>
-              <input aria-label="Enerji (kcal/kg)" type="range" min="15" max="40" value={stressFactor} /* Sürgü oynatılınca hiçbir şablon seçili KALMAMALI: değerler artık şablonun
+              {/* Ad yalnızca ETİKET span'ini gösteriyor, değer span'ini değil:
+                  değer zaten aria-valuenow ile taşınıyor ve ada katılsaydı
+                  sürgü her oynatıldığında ad değişirdi. */}
+              <input aria-labelledby="nn-kcal-l" type="range" min="15" max="40" value={stressFactor} /* Sürgü oynatılınca hiçbir şablon seçili KALMAMALI: değerler artık şablonun
                   değerleri değil. Yoksa düzeltme, kendi açtığı ikinci bir "ilan ile
                   gerçek ayrışıyor" durumunu üretirdi. */
                 onChange={(e)=>{ setSecilenSablon(null); setStressFactor(Number(e.target.value)); }} className="w-full h-6 accent-blue-900" />
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
-                <span className="text-[10px] font-black text-slate-400 uppercase">Protein (g/kg)</span>
+                <span id="nn-pro-l" className="text-[10px] font-black text-slate-400 uppercase">Protein (g/kg)</span>
                 <span className="text-sm font-black text-blue-900">{proteinFactor}</span>
               </div>
-              <input aria-label="Protein (g/kg)" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>{ setSecilenSablon(null); setProteinFactor(Number(e.target.value)); }} className="w-full h-6 accent-amber-500" />
+              <input aria-labelledby="nn-pro-l" type="range" min="0.8" max="2.5" step="0.1" value={proteinFactor} onChange={(e)=>{ setSecilenSablon(null); setProteinFactor(Number(e.target.value)); }} className="w-full h-6 accent-amber-500" />
             </div>
           </div>
         </div>

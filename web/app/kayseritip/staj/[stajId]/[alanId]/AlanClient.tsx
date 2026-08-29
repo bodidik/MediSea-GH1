@@ -131,15 +131,22 @@ export default function AlanClient({ stajId, alanId, baslangicDosyalar, yukleyeb
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Başlık</label>
-            <input aria-label="Başlık" value={baslik} onChange={e => setBaslik(e.target.value)} required
+            {/*
+              htmlFor/id çifti: ad GÖRÜNÜR etiketten geliyor. Bu iki alan bir
+              dönem hem görünür bir <label> hem de aynı metni ELLE tekrarlayan
+              bir aria-label taşıyordu — aynı adın iki kopyası, ayrışmaya açık.
+              Yan kazanç: etiket artık tıklanınca alana odaklanıyor (bağ
+              kurulmadığı için eskiden hiçbir şey yapmıyordu).
+            */}
+            <label htmlFor="kt-baslik" style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Başlık</label>
+            <input id="kt-baslik" value={baslik} onChange={e => setBaslik(e.target.value)} required
               placeholder="ör. Kronik Böbrek Hastalığı Slaytı"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>
 
           <div>
-            <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Açıklama (isteğe bağlı)</label>
-            <input aria-label="Açıklama (isteğe bağlı)" value={aciklama} onChange={e => setAciklama(e.target.value)}
+            <label htmlFor="kt-aciklama" style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>Açıklama (isteğe bağlı)</label>
+            <input id="kt-aciklama" value={aciklama} onChange={e => setAciklama(e.target.value)}
               placeholder="Kısa not"
               style={{ width: '100%', padding: '8px 11px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
           </div>

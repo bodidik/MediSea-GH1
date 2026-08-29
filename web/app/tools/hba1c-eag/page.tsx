@@ -60,8 +60,8 @@ export default function Hba1cEagPage() {
 
         {/* INPUT KARTI */}
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-2">
-          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">HbA1c (%)</span>
-          <input aria-label="HbA1c (%)"
+          <span id="hba1c-l" className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">HbA1c (%)</span>
+          <input aria-labelledby="hba1c-l"
             type="text" inputMode="decimal" value={a1c} onChange={(e) => setA1c(e.target.value)}
             className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 focus:border-blue-900 outline-none font-black text-xl transition-all"
           />
