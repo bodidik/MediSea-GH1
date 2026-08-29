@@ -24871,3 +24871,73 @@ istemekten farklı.
 | **negatif** — `h1` | 1 | 1 |
 | **negatif** — tablo render'ı | 6 kurgu isim + "Sen" | **6 kurgu isim + "Sen"** |
 | kapılar | — | lint · typecheck · build **637/637** |
+
+### BIRAKILMIŞ BİR SERİ GÜNLERCE "DEVAM EDİYOR" GÖRÜNÜYORDU — zamana bağlı değer sunucuda saklanıyordu
+
+Yeni eksen: **ekrandaki bir sayı `now`un fonksiyonu mu, ve öyleyse nereden
+geliyor?** Biriken bir sayacı (kaç vurgu, kaç kart) saklamak doğru; ama
+zamana bağlı bir değeri saklamak, onu SAKLANDIĞI ANA dondurur.
+
+`/tr/premium` iki böyle sayı basıyor: **"Çalışma Serisi — N Gün"** ve bekleyen
+kart sayısı (`due`). İkisi de `countsOf` içinde `now` ile hesaplanıyor, push
+anında `StudyStat`a yazılıyor, sonra `fetchServerStats` onları geri okuyup
+**yerel hesabın üstüne yazıyordu**.
+
+#### Ölçüldü — gerçek modüller sürülerek, aynı veri iki farklı `now` ile
+
+Modüller kopyalanıp yalnızca `@/app/lib/…` takma adı göreli yola çevrildi
+(mantık yeniden yazılmadı) ve `node --experimental-strip-types` ile sürüldü:
+
+| veri | push anında | bugün |
+|---|---|---|
+| 7 gün üst üste çalışılmış, sonra **3 gün ara** | `streakOf` **7** | `streakOf` **0** |
+| vadesi yarın olan tek kart | `due` 0 | 2 gün sonra `due` **1** |
+
+Yani seri kullanıcının **kendi davranışı hakkında yanlış bir iddiaya**
+dönüşüyor (bırakılmış seri günlerce "devam ediyor" görünür) ve bekleyen kart
+sayısı olduğundan **az** gösteriliyor — bir çalışma ürününde iş yükünü
+küçümsemek.
+
+Yan ölçüm, `streakOf`un kendisi doğru: **bir** gün ara verilmişken seri hâlâ
+**7** (bugün boşsa dünden başlıyor), iki gün sonra 0. Kusur hesapta değil,
+hesabın SAKLANMASINDA.
+
+#### Ayrım: biriken sayaç ↔ zamana bağlı değer
+
+`marks · notes · strokes · cards · pages` **birikimli** — `now`a bağlı
+değiller ve BAŞKA BİR CİHAZDA artmış olabilirler, o yüzden sunucudan
+alınmaya devam ediyor. `due` ve `streak` ise yerel (uzlaşmadan sonra
+birleşmiş) veriden yeniden hesaplanıyor.
+
+**SINIR bilerek yazıldı:** yerelde hiç veri yoksa (yeni cihaz, uzlaşma henüz
+inmemiş) yerel hesap 0 döner ve bu, bayat bir değerden daha yanıltıcı olurdu;
+o durumda sunucu değerine düşülüyor.
+
+#### Doğrulama — TARİHSEL kontrol (aynı test, `git HEAD` sürümüne karşı)
+
+| durum | ÖNCE | SONRA |
+|---|---|---|
+| **yerelde veri var** | **streak 7 · due 0** (bayat) | **streak 0 · due 1** (taze) |
+| **negatif** — yerel boş (yeni cihaz) | 7 · 0 | **7 · 0 — değişmedi** |
+| **negatif** — sunucu `ok:false` | yerel | **yerel** |
+| **negatif** — HTTP hatası | yerel | yerel |
+| **negatif** — `fetch` fırlatıyor | yerel | yerel |
+| **negatif** — birikimli sayaçlar | sunucudan (9 · 11) | **sunucudan (9 · 11)** |
+
+Son satır bu düzeltmenin asıl riskiydi: zamana bağlı ikisini yerelden alırken
+öteki beşini de yerele düşürmek, çok cihazlı kullanıcıda sayıları geriletirdi.
+
+Anonim kullanıcı etkilenmiyor — `fetchServerStats` yalnızca oturum varken
+çağrılıyor; sayfa tarayıcıda ölçüldü (`h1` 1, hata sınırı yok).
+Kapılar: lint · typecheck · build **637/637**.
+
+**Kapsam notu:** düzeltme oturum gerektirdiği için CANLIDA sürülmedi —
+üretim veritabanına yazmadan gerçek bir `StudyStat` kaydı oluşturulamıyor.
+Ölçüm gerçek modüller üzerinde ve tarihsel kontrolle yapıldı; "canlıda
+doğrulandı" DENMİYOR.
+
+**Aktarılabilir kural: bir sayıyı saklamadan önce `now`a bağlı olup olmadığını
+sor.** Bağlıysa saklanan şey bir DEĞER değil, bir ANLIK GÖRÜNTÜdür ve
+saklandığı andan itibaren yanlışlaşmaya başlar. Bu depoda aynı ilke site
+haritasında (`lastmod`) ve panoda ("yeni eklendi") ölçülmüştü; buradaki
+farkı, sayının kullanıcının KENDİ davranışını iddia etmesi.

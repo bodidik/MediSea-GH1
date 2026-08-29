@@ -52,19 +52,50 @@ export function localStats(): StudyNumbers {
   }
 }
 
+/**
+ * ZAMANA BAĞLI DEĞER SUNUCUDAN OKUNMAZ — çünkü sunucudaki bir ANLIK GÖRÜNTÜ.
+ *
+ * `streak` ve `due` `now`'un fonksiyonu; ikisi de push anında hesaplanıp
+ * `StudyStat`a yazılıyor (`study-sync.buildPayload` → `countsOf`). Bu sayfa
+ * onları geri okuyup YEREL hesabın üstüne yazıyordu, yani ekrandaki değer
+ * "son senkron anındaki" değerdi.
+ *
+ * Gerçek modüller sürülerek ölçüldü (aynı veri, iki farklı `now`):
+ *
+ *   7 gün üst üste çalışılmış, sonra 3 gün ara verilmiş bir günlük
+ *     push anında  streakOf -> 7
+ *     BUGÜN        streakOf -> 0        <- sunucu hâlâ 7 diyor
+ *   vadesi yarın olan tek kart
+ *     bugün        due -> 0
+ *     2 gün sonra  due -> 1             <- sunucu hâlâ 0 diyor
+ *
+ * Yani seri kullanıcının kendi davranışı hakkında YANLIŞ bir iddiaya
+ * dönüşüyor (bırakılmış bir seri günlerce "devam ediyor" görünüyor) ve
+ * bekleyen kart sayısı olduğundan AZ gösteriliyor.
+ *
+ * Biriken sayaçlar (marks/notes/strokes/cards/pages) sunucudan alınmaya devam
+ * ediyor: onlar `now`a bağlı değil ve BAŞKA BİR CİHAZDA artmış olabilir.
+ * Zamana bağlı iki değer ise yerel veriden yeniden hesaplanıyor.
+ *
+ * SINIR — bilerek: yerelde hiç veri yoksa (yeni cihaz, uzlaşma henüz
+ * yapılmamış) yerel hesap 0 döner ve bu, sunucudaki bayat değerden daha
+ * yanıltıcı olurdu. O durumda sunucu değerine düşülüyor; uzlaşma indikten
+ * sonraki ilk okumada yerel hesap devralıyor.
+ */
 export async function fetchServerStats(yerel: StudyNumbers): Promise<StudyNumbers> {
   try {
     const r = await fetch("/api/study");
     if (!r.ok) return yerel;
     const j = await r.json();
     if (!j.ok || !j.stat) return yerel;
+    const yerelVeriVar = yerel.pages > 0 || yerel.cards > 0;
     return {
       marks: j.stat.marks ?? yerel.marks,
       notes: j.stat.notes ?? yerel.notes,
       strokes: j.stat.strokes ?? yerel.strokes,
       cards: j.stat.cards ?? yerel.cards,
-      due: j.stat.due ?? yerel.due,
-      streak: j.stat.streak ?? yerel.streak,
+      due: yerelVeriVar ? yerel.due : (j.stat.due ?? yerel.due),
+      streak: yerelVeriVar ? yerel.streak : (j.stat.streak ?? yerel.streak),
       pages: j.stat.pages ?? yerel.pages,
       studiedAt: j.stat.updatedAt ?? null,
       source: "server",
