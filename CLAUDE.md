@@ -25760,3 +25760,117 @@ için `fontWeight: 'inherit'` ile 400 korundu.
 Kapılar: lint · typecheck · build **637/637**. İki kapı da geri kondu ve
 canlıda doğrulandı ("Erişim Kısıtlı"); kaynakta `ZZ_OLCUM` izi **0**.
 `VakaEngine` saf CRLF (532/532), `FlashcardPlayer` saf LF — ikisi de korundu.
+
+### ÇALIŞMA YÜZEYLERİ GERİ DÖNÜŞTE SÜZGECİ KAYBEDİYORDU — kaydırma geri yükleniyor, liste değişiyor
+
+Bu oturumda aynı sınıf iki kez kapatılmıştı (`/tools` arama terimi ·
+premium branş akordeonu `?acik=`). Ölçüt: **ekranda ne olduğunu belirleyen
+durum yalnızca istemcide mi yaşıyor?** Kalan iki çalışma yüzeyi hiç
+ölçülmemişti.
+
+Kaynaktan sayıldı — ikisinde de `location.search` · `useSearchParams` ·
+`replaceState` geçişi **0**:
+
+| sayfa | yalnızca istemcide yaşayan durum |
+|---|---|
+| `/calisma-alanim` | `filter` ("Tümü / Vurgular / Notlar") · `q` (arama) |
+| `/tekrar` | `branch` (branş şeridi) · `mode` ("Vadesi gelenler / Baştan sona çalış") |
+
+#### CANLIDA ölçüldü — `/calisma-alanim`
+
+"Notlar" süzgeci + "anemi" sorgusu (12 → 1 kayıt), 500px kaydırıldı, bir
+kayıt bağlantısına tıklanıp GERİ dönüldü:
+
+| ölçüt | ayrılırken | geri dönünce |
+|---|---|---|
+| sorgu | "anemi" | **""** |
+| süzgeç | Notlar | **Tümü** |
+| kayıt | 1 | **12** |
+| **kaydırma** | 500 | **500 — geri yüklendi** |
+
+Son satır zararı büyüten şey: tarayıcı kaydırmayı geri yüklüyor ama liste
+artık **başka bir liste**. Kullanıcı bırakmadığı bir listeye, anlamı olmayan
+bir yükseklikte dönüyor — `/tools`ta ölçülen kusurun birebir aynısı.
+
+`/tekrar` aynı şekli taşıyordu: "Nefroloji" + "Baştan sona çalış" seçilip
+karttaki kaynak bağlantısına gidilip dönüldüğünde ikisi de kayboluyor
+(ekran yeniden "Vadesi gelenler" + "Tümü"). Oturum ilerlemesinin sıfırlanması
+tasarım gereği (deste yeniden kuruluyor) ama **KURULUM kullanıcının seçimi.**
+
+#### Çare: deponun kendi kalıbı — `useSearchParams()` YOK
+
+Adres bir kez ELDEN okunuyor (`window.location.search`), sonra
+`history.replaceState` ile tazeleniyor. Bu depoda kayıtlı iki bedel de
+tekrarlanmıyor: `useSearchParams()` sayfayı sunucuda üretilmez yapıyor,
+sunucuda `searchParams` okumak rotayı dinamikleştiriyor.
+
+`adresOkundu` bayrağı **DURUM**, ref değil — belgede kayıtlı sınıf
+("yükleme bitmeden yazan etki değeri siler") ve orada `useRef` YETMEDİĞİ
+ölçülmüştü.
+
+| sayfa | parametre | varsayılan |
+|---|---|---|
+| `/calisma-alanim` | `?tur=marks\|notes` · `?ara=` | `tur=all` → parametre **silinir** |
+| `/tekrar` | `?brans=<ad>` · `?kip=cram` | `due` ve `Tümü` → **silinir** |
+
+Tanınmayan değer `/tools` kalıbıyla aynı: **varsayılana düşüyor ve geçersiz
+parametre adresten kalkıyor.** `/tekrar`da bu ayrıca bir dürüstlük kararı —
+destede olmayan bir branş süzgeci boş bir liste bırakır ve ekran "sıra boş"
+diyerek **yanlış sebep** bildirirdi.
+
+#### Doğrulama — dokuzu negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| `/calisma-alanim` geri dönüş | `?tur=notes&ara=anemi` · sorgu "anemi" · Notlar · **1 kayıt** · kaydırma 400 |
+| `/tekrar` geri dönüş | `?brans=Nefroloji&kip=cram` · **ikisi de basılı** |
+| **negatif** — sorgu silinince | `?tur=notes` (yalnız süzgeç kalıyor) |
+| **negatif** — varsayılana dönünce | adres **`/calisma-alanim`** · `/tekrar` — parametre yok |
+| **negatif** — paylaşılan adres | `?tur=marks&ara=behcet` → Vurgular + 1 kayıt (Türkçe normalizasyon da çalışıyor) |
+| **negatif** — `?tur=olmayan-tur` | **Tümü**, 6 kayıt, parametre adresten kalktı, hata sınırı yok |
+| **negatif** — `?brans=OlmayanBrans&kip=cram` | **Tümü** + cram korundu, geçersiz parametre kalktı |
+| **negatif** — geçmiş şişiyor mu | `/calisma-alanim` 1 → 1 · `/tekrar` 6 → 6 |
+| **negatif** — SUNUCU HTML'i | iki rotada da parametreli ve parametresiz **36295 bayt — birebir**, `h1` 1, `main` 1, `tur=`/`ara=`/`brans=`/`kip=` geçişi **0** |
+| **negatif** — rota tablosu | ikisi de **`○` statik** (124 kB · 116 kB) |
+| **negatif** — ilk yük | `/calisma-alanim` **124 kB → 124 kB** (yedekten ayrı derleme ile ölçüldü; sayfa parçası 8.05 → 8.25 kB) |
+
+#### KRİTİK NEGATİF KONTROL: cram kipi takvime hâlâ dokunmuyor
+
+Belgede kayıtlı değişmez: *"Tazeleme kipi takvimi DEĞİŞTİRMEZ."* Kip artık
+ADRESTEN de gelebildiği için o yol ayrıca sürüldü — `?kip=cram` ile girilip
+bir kart derecelendirildi:
+
+| ölçüt | sonuç |
+|---|---|
+| `medisea:review:v1` | **bayt bayt aynı** (220) |
+| `medisea:log:v1` | **değişmedi** |
+
+**Ayna kontrol şart** — yoksa "değişmedi" sonucu derecelendirmenin tümden
+ölü olmasından da gelebilirdi. Aynı kart NORMAL kipte derecelendirildi:
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| interval | 30 | **84** (30 × 2.8 — SM-2 birebir) |
+| streak | 4 | **5** |
+| günlük | 1 gün | **2 gün** (bugün eklendi) |
+
+#### Ölçüm tuzakları
+
+- **Ad çapası yanlış kutuyu yakaladı.** `input[type="search"], [aria-label*="ara" i]`
+  ölçütü BAŞLIKTAKİ aramayı (`"Sitede ara"`) buldu, sayfanın kendi süzgecini
+  (`"Kayıtlarında ara"`) değil — ölçümün arama yarısı geçersizdi ve yeniden
+  yapıldı. Bu depoda üç arama kutusu var; **çapa `aria-label`in tam
+  değerine bağlanmalı.**
+- **Aynı bayt sayısı tek başına kusur işareti değil.** İki farklı sayfa da
+  36295 bayt döndürdü; `<title>`ları farklı (`Tekrar` ↔ `Çalışma Alanım`),
+  yani belge farklı. Belgede kayıtlı "üç araç sayfası da 34 öge dedi"
+  vakasının aynısı.
+- **Tarayıcı panelinin GERİ düğmesi bu akışta çalışmadı** ("no back
+  history"), çünkü gezinme istemci tarafında yapıldı ve panelin kendi geçmiş
+  yığını boştu. `window.history.back()` doğru sonucu verdi.
+
+**Aktarılabilir kural: kaydırma geri yüklemesi, durumu geri yüklemeyen bir
+sayfada YARDIM ETMEZ — zarar verir.** Tarayıcı konumu koruyor ama içerik
+başka; kullanıcı tanımadığı bir listenin ortasına düşüyor. Bir sayfada geri
+dönüş davranışını ölçerken ikisini AYNI ölçümde oku: kaydırma korunuyor mu,
+ve o kaydırmanın gösterdiği liste aynı liste mi?

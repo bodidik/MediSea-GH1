@@ -30,9 +30,52 @@ export default function StudyWorkspace() {
   const [entries, setEntries] = useState<StudyEntry[] | null>(null);
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
+  /* Adres okunmadan URL'e YAZMAK, okunacak degeri siler. Bu depoda kayitli
+     sinif ("depoya yazan etki, yukleme bitmeden yazarsa veriyi SILER") ve
+     orada `useRef` YETMEDIGI olculmustu -- bayrak DURUM olmali. */
+  const [adresOkundu, setAdresOkundu] = useState(false);
   const [depoYok, setDepoYok] = useState(false);
   /** Bu oturumda okunamayıp yedeğe taşınan kayıt sayısı. */
   const [kurtarilan, setKurtarilan] = useState(0);
+
+  /**
+   * SUZGEC VE ARAMA ADRESE YANSITILIYOR -- sebebi CANLIDA OLCULDU.
+   *
+   * Suruldu: "Notlar" suzgeci + "anemi" sorgusu (1 kayit), 500px kaydirildi,
+   * bir bagliantiya tiklanip GERI donuldu. Sonuc: sorgu KAYBOLDU (kutu bos),
+   * suzgec "Tumu"ye dondu (12 kayit), ama kaydirma konumu GERI YUKLENDI (500).
+   * Yani kullanici birakmadigi bir listeye, anlami olmayan bir yukseklikte
+   * donuyordu -- /tools'ta olculen kusurun birebir aynisi.
+   *
+   * `useSearchParams()` KULLANILMIYOR: bu depoda olculmus bir kusur, sayfayi
+   * sunucuda uretilmez hale getiriyor. Adres bir kez ELDEN okunuyor ve
+   * `history.replaceState` ile tazeleniyor -- gezinme yok, gecmis sismiyor.
+   *
+   * Varsayilan degerlerde parametre SILINIYOR: adreste `?tur=all` birakmak,
+   * suzulmemis bir listeyi suzulmus gibi ilan etmek olurdu.
+   */
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    const t = p.get("tur");
+    if (t === "marks" || t === "notes") setFilter(t);
+    setQ(p.get("ara") ?? "");
+    setAdresOkundu(true);
+  }, []);
+
+  useEffect(() => {
+    if (!adresOkundu) return;
+    const p = new URLSearchParams(window.location.search);
+    const s = q.trim();
+    if (s) p.set("ara", s);
+    else p.delete("ara");
+    if (filter === "all") p.delete("tur");
+    else p.set("tur", filter);
+    const qs = p.toString();
+    const yeni = window.location.pathname + (qs ? `?${qs}` : "") + window.location.hash;
+    if (yeni !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, "", yeni);
+    }
+  }, [filter, q, adresOkundu]);
 
   useEffect(() => {
     setEntries(collectAll());

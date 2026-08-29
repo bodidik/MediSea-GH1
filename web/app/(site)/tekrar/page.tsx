@@ -60,6 +60,31 @@ export default function ReviewPage() {
   const [depoYok, setDepoYok] = useState(false);
   useEffect(() => { setDepoYok(!depoKullanilabilir()); }, []);
 
+  /**
+   * BRANS VE KIP ADRESE YANSITILIYOR -- kardes yuzeyde OLCULEN kusurun aynisi.
+   *
+   * Suruldu: "Nefroloji" + "Bastan sona calis" secilip karttaki kaynak
+   * baglantisina tiklanip GERI donuldu; iki secim de KAYBOLDU (ekran yeniden
+   * "Vadesi gelenler" + "Tumu"). Oturum ilerlemesinin sifirlanmasi tasarim
+   * geregi (deste yeniden kuruluyor) ama KURULUM kullanicinin secimi.
+   *
+   * `useSearchParams()` KULLANILMIYOR (bu depoda olculmus kusur: sayfayi
+   * sunucuda uretilmez hale getiriyor). Adres bir kez ELDEN okunuyor,
+   * `history.replaceState` ile tazeleniyor -- gezinme yok, gecmis sismiyor.
+   *
+   * Varsayilanlarda parametre siliniyor; taninmayan brans /tools kalibiyla
+   * ayni sekilde "Tumu"ye dusuyor (asagidaki dogrulama etkisi).
+   */
+  const [adresOkundu, setAdresOkundu] = useState(false);
+
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    if (p.get("kip") === "cram") setMode("cram");
+    const b = p.get("brans");
+    if (b) setBranch(b);
+    setAdresOkundu(true);
+  }, []);
+
   const load = useCallback(() => {
     const d = buildDeck();
     pruneStates(d);
@@ -98,6 +123,27 @@ export default function ReviewPage() {
   const stats = useMemo(() => (deck ? deckStats(buildDeck()) : null), [deck, tick]);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const branches = useMemo(() => (deck ? branchesOf(buildDeck()) : []), [deck, tick]);
+
+  /* Adresten gelen brans destede yoksa "Tumu"ye dusuyor: aksi halde bos bir
+     liste "sira bos" diye YANLIS bir sebep bildirirdi. */
+  useEffect(() => {
+    if (!branch || branches.length === 0) return;
+    if (!branches.some((b) => b.branch === branch)) setBranch(null);
+  }, [branch, branches]);
+
+  useEffect(() => {
+    if (!adresOkundu) return;
+    const p = new URLSearchParams(window.location.search);
+    if (branch) p.set("brans", branch);
+    else p.delete("brans");
+    if (mode === "cram") p.set("kip", "cram");
+    else p.delete("kip");
+    const qs = p.toString();
+    const yeni = window.location.pathname + (qs ? `?${qs}` : "") + window.location.hash;
+    if (yeni !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, "", yeni);
+    }
+  }, [branch, mode, adresOkundu]);
   const card = queue[idx] ?? null;
 
   const answer = useCallback(
