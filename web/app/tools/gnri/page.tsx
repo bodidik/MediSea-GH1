@@ -157,15 +157,19 @@ export default function GnriPage() {
           ].map(({ label, value, set, ph, ref, ok }) => (
             <label key={label} className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
+              {/* Sebep kartı alana BAĞLANDI: `aria-invalid` nedenini
+                  söylemiyordu. Atıf yalnızca kart render edilmişken
+                  veriliyor — sarkan ARIA atfı kusurdur. */}
               <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
                 aria-invalid={value.trim() !== "" && !ok ? true : undefined}
+                aria-describedby={girdiVar && eksikAlan.length > 0 && value.trim() !== "" && !ok ? "gnri-sebep" : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
               {ref && <span className="text-[9px] font-bold text-slate-400 pl-1">{ref}</span>}
             </label>
           ))}
 
           {girdiVar && eksikAlan.length > 0 && (
-            <div role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <div id="gnri-sebep" role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
               <p className="text-[11px] font-bold text-slate-600">
                 Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}

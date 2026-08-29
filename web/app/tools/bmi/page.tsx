@@ -129,21 +129,27 @@ export default function BmiPage() {
                   "geçersiz" değil "henüz girilmemiş". Sebep kartı zaten
                   role="alert" ile hangi alanın beklendiğini söylüyor; bu,
                   aynı bilgiyi ALANIN ÜSTÜNDE taşıyor. */}
+              {/* Sebep kartı alana BAĞLANDI: `aria-invalid` "geçersiz" diyor
+                  ama nedenini söylemiyordu. Atıf yalnızca kart GERÇEKTEN
+                  render edilmişken (`eksikAlan.length > 0`) veriliyor —
+                  sarkan bir ARIA atfı, atıf olmamasından kötüdür. */}
               <input type="text" inputMode="decimal" value={height} onChange={e => setHeight(e.target.value)}
                 aria-invalid={height.trim() !== "" && !boyOk ? true : undefined}
+                aria-describedby={eksikAlan.length > 0 && height.trim() !== "" && !boyOk ? "bmi-sebep" : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
             </label>
             <label className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Ağırlık (kg)</span>
               <input type="text" inputMode="decimal" value={weight} onChange={e => setWeight(e.target.value)}
                 aria-invalid={weight.trim() !== "" && !kiloOk ? true : undefined}
+                aria-describedby={eksikAlan.length > 0 && weight.trim() !== "" && !kiloOk ? "bmi-sebep" : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
             </label>
           </div>
         </div>
 
         {eksikAlan.length > 0 && (
-          <div role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+          <div id="bmi-sebep" role="alert" className="bg-slate-50 border border-slate-200 rounded-2xl p-4">
             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Hesaplanamıyor</p>
             <p className="text-[11px] font-bold text-slate-600">
               Şu alan{eksikAlan.length > 1 ? "lar" : ""} makul bir değer bekliyor: {eksikAlan.join(" · ")}

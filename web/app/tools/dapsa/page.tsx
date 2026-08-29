@@ -97,6 +97,7 @@ export default function DapsaPage() {
                 <input type="text" inputMode="decimal" value={a.ham}
                   onChange={e => a.set(e.target.value)} placeholder={a.ph}
                   aria-invalid={gecersiz ? true : undefined}
+                  aria-describedby={sebepGoster && gecersiz ? "dapsa-sebep" : undefined}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
               </label>
             );
@@ -112,7 +113,7 @@ export default function DapsaPage() {
 
 
         {sebepGoster && (
-          <div role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
+          <div id="dapsa-sebep" role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
             <p className="text-[10px] font-black text-amber-700 uppercase tracking-widest">Hesaplanamıyor</p>
             <p className="text-[11px] text-slate-700 leading-relaxed mt-2">
               {sorunlu.length > 0

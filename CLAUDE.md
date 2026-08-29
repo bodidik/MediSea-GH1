@@ -24421,3 +24421,75 @@ düğme (`↑ Yedekten yükle`) onu programla açıyor; `display:none` olduğu i
 odak sırasında da yok. Belgedeki *"gizlenen form kontrolü `hidden` ile
 gizlenmez"* kuralı, girdinin KENDİSİ kontrol olduğu durum için yazılmıştı
 (onay kutusu/radyo) — burada değil.
+
+### `aria-invalid` "GEÇERSİZ" DİYORDU, NEDENİNİ SÖYLEMİYORDU — sebep kartı alana bağlı değildi
+
+Bir önceki turda 6 araca `aria-invalid` konmuştu (22 alan) ve sebep kartı
+hangi alanın sorunlu olduğunu ADIYLA yazıyordu. Ölçülmeyen şey ikisinin
+**programatik bağıydı**: ekran okuyucu alanda "geçersiz" duyuyor, nedeni
+sayfanın başka bir yerindeki kartta kalıyordu.
+
+Kaynaktan sayıldı:
+
+| dosya | `aria-invalid` | hata bağı |
+|---|---|---|
+| `/giris` · `/kayit` | var | **`aria-describedby` + hata kutusu id'si** |
+| `bmi` · `cdai` · `dapsa` · `gnri` · `ktv` · `sdai` | var | **YOK (0)** |
+| depo geneli `aria-errormessage` | — | **0 kullanım** |
+
+Yani kimlik formları bağı ZATEN kuruyordu; sapan yer araçlardı — ve
+`aria-invalid`i oraya koyan da bu oturumdu.
+
+#### SARKAN ATIF, ATIF OLMAMASINDAN KÖTÜDÜR — `ktv` bunu prop'la çözüyor
+
+Sebep kartları KOŞULLU render ediliyor, yani `aria-describedby` de aynı
+koşula bağlanmalı. Beş araçta koşul aynı bileşende (`sebepGoster`,
+`eksikAlan.length > 0`); `ktv`de DEĞİL:
+
+```
+Input          modul duzeyinde bir bilesen (odak kusuru yuzunden oyle)
+sebep metni    sonuc panelinin ICINDE ve panel yalnizca BES ALAN DA doluyken ciziliyor
+```
+
+Yani `Input`un içinde `aria-describedby="ktv-sebep"` yazmak, "üç alan boş,
+biri çöp" durumunda **var olmayan bir id'ye** atıf yapardı. Karar çağırana
+taşındı (`sebepId` prop'u, yalnızca `tumAlanlarDolu && !degerlendirilebilir`
+iken veriliyor).
+
+#### Doğrulama — dört ayrı şekil, tarayıcıda
+
+| araç | senaryo | sonuç |
+|---|---|---|
+| `cdai` | SJC **280**, kalanı geçerli | yalnız SJC `aria-invalid` **ve** `describedby="cdai-sebep"`; hedef metni **"…aralık dışında ya da sayı değil: SJC (0–28)"** |
+| `bmi` | boy **1700** | `bmi-sebep` → "…makul bir değer bekliyor: boy (50–250 cm)" |
+| `gnri` | boy **1700** | `gnri-sebep` → aynı metin |
+| **`ktv`** | **tek alan çöp, kalanı BOŞ** | `aria-invalid` **var**, `describedby` **YOK** (panel çizilmemiş) — sarkan atıf **0** |
+| `ktv` | beş alan dolu, süre 9999 | `ktv-sebep` → "Bir değer makul aralığın dışında: BUN 2–300…" |
+
+**Negatif kontroller — hepsi belgede KAYITLI değerlerle:**
+
+| araç | geçerli girdi | sonuç | ARIA |
+|---|---|---|---|
+| `cdai` | 5/3/4/4 | **16 · ORTA AKTİVİTE** | invalid 0 · describedby 0 · kart yok |
+| `ktv` | 60/20/240/2/70 | **1.28 · 1.12 · %67 · SAĞLANDI** | 0 · 0 · yok |
+| `bmi` | 170/70 | **NORMAL · ideal 65.9 kg** | 0 · 0 · yok |
+| `gnri` | 3.6/55/165 | **ORTA RİSK** | 0 · 0 · yok |
+
+Ek ölçütler: **sarkan atıf her ölçümde 0**; geçerli alanlar hiçbir zaman
+`describedby` almıyor (yalnızca DOLU ve GEÇERSİZ olan alıyor); sunucu
+HTML'inde `*-sebep` geçişi **0** (kart yalnızca geçersiz girdide çiziliyor).
+
+`dapsa` ve `sdai` tarayıcıda sürülmedi — `cdai` ile birebir aynı şekil ve
+aynı yama. İstemci paketinde ikisinin de hem `id` hem `describedby` yarısı
+görülüyor (`"dapsa-sebep",ro…` ve `"dapsa-sebep":vo…`).
+
+Kapılar: lint · typecheck · build **637/637**. Satır sonu korundu
+(`bmi` saf CRLF 201/201, kalan beşi LF).
+
+#### Aktarılabilir kural
+
+**`aria-invalid` tek başına yarım bir bildirimdir.** "Geçersiz" der, NEDEN
+demez; neden başka bir ögedeyse `aria-describedby` ile bağlanmalı. Ve bağ
+kurulurken hedefin O ANDA render edildiği ayrıca sınanmalı — koşullu bir
+kartın id'sine koşulsuz atıf yapmak, bu depoda ayrı bir kusur sınıfı
+(sarkan ARIA atfı).

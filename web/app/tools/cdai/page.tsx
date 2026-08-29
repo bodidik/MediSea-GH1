@@ -102,6 +102,14 @@ export default function CdaiPage() {
                   <input type="text" inputMode="decimal" value={a.ham}
                     onChange={e => a.set(e.target.value)} placeholder={`${a.alt}–${a.ust}`}
                     aria-invalid={gecersiz ? true : undefined}
+                    /* `aria-invalid` "geçersiz" diyor ama NEDENİNİ söylemiyor:
+                       sebep kartı sayfanın başka bir yerinde ve alana bağlı
+                       değildi. `/giris` ve `/kayit` bu bağı ZATEN kuruyor
+                       (`aria-describedby` + hata kutusu id'si); sapan yer
+                       araçlardı. Atıf yalnızca kart GERÇEKTEN render
+                       edilmişken veriliyor — sarkan bir ARIA atfı, atıf
+                       olmamasından kötüdür. */
+                    aria-describedby={sebepGoster && gecersiz ? "cdai-sebep" : undefined}
                     className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
                   <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest w-16 text-right">max {a.ust}</span>
                 </div>
@@ -119,7 +127,7 @@ export default function CdaiPage() {
 
 
         {sebepGoster && (
-          <div role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
+          <div id="cdai-sebep" role="alert" className="bg-white p-6 rounded-[2rem] border-2 border-dashed border-amber-200 shadow-sm">
             <p className="text-[10px] font-black text-amber-700 uppercase tracking-widest">Hesaplanamıyor</p>
             <p className="text-[11px] text-slate-700 leading-relaxed mt-2">
               {sorunlu.length > 0

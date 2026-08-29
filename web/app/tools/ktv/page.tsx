@@ -13,12 +13,17 @@ import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 /* `ok` sayfanın kendi per-alan makullük bayrağını taşıyor; geçerlilik ikinci
    kez YAZILMIYOR. aria-invalid YALNIZCA dolu ama makul olmayan alanda —
    boş alan "geçersiz" değil "henüz girilmemiş". */
-const Input = ({ label, value, set, ph, unit, ok }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string; ok?: boolean }) => (
+/* `sebepId` BİLEREK prop: sebep metni sonuç panelinin içinde ve o panel
+   yalnızca beş alan da doluyken çiziliyor. Alan geçersiz ama panel henüz
+   yoksa (üç alan boş, biri çöp) atıf SARKAR — ve sarkan bir ARIA atfı, atıf
+   olmamasından kötüdür. O yüzden karar çağıranda veriliyor, burada değil. */
+const Input = ({ label, value, set, ph, unit, ok, sebepId }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string; ok?: boolean; sebepId?: string }) => (
   <label className="flex flex-col gap-1.5">
     <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
     <div className="relative">
       <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
         aria-invalid={ok === false && value.trim() !== "" ? true : undefined}
+        aria-describedby={sebepId && ok === false && value.trim() !== "" ? sebepId : undefined}
         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-12" />
       <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
     </div>
@@ -147,6 +152,10 @@ export default function KtvPage() {
      bir cevap BEKLİYOR. Boş formda panel hiç görünmüyor. */
   const tumAlanlarDolu = [preBun, postBun, time, uf, postWt].every((x) => x.trim() !== "");
 
+  /* Sebep metni SADECE bu koşulda DOM'da: alanlara verilen `aria-describedby`
+     de aynı koşula bağlı, yoksa atıf sarkar. */
+  const sebepGorunuyor = tumAlanlarDolu && !degerlendirilebilir;
+
   /* Sonuç metni TEK KAYNAK: hem panelde basılıyor hem ekran okuyucuya
      duyuruluyor. İkisine ayrı ayrı yazılsaydı bu depoda tur tur avlanan
      "iki gerçeklik" kusuru olurdu — metin bir yerde değişip ötekinde
@@ -191,12 +200,12 @@ export default function KtvPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Seans Parametreleri</p>
           <div className="grid grid-cols-2 gap-4">
-            <Input label="Pre-diyaliz BUN" value={preBun}  set={setPreBun}  ph="ör. 85"  unit="mg/dL" ok={preOk} />
-            <Input label="Post-diyaliz BUN" value={postBun} set={setPostBun} ph="ör. 22"  unit="mg/dL" ok={postOk} />
-            <Input label="Seans Süresi" value={time}    set={setTime}    ph="ör. 240" unit="dakika" ok={tOk} />
-            <Input label="Ultrafiltrasyon" value={uf}      set={setUf}      ph="ör. 2.5" unit="Litre" ok={ufOk} />
+            <Input label="Pre-diyaliz BUN" value={preBun}  set={setPreBun}  ph="ör. 85"  unit="mg/dL" ok={preOk} sebepId={sebepGorunuyor ? "ktv-sebep" : undefined} />
+            <Input label="Post-diyaliz BUN" value={postBun} set={setPostBun} ph="ör. 22"  unit="mg/dL" ok={postOk} sebepId={sebepGorunuyor ? "ktv-sebep" : undefined} />
+            <Input label="Seans Süresi" value={time}    set={setTime}    ph="ör. 240" unit="dakika" ok={tOk} sebepId={sebepGorunuyor ? "ktv-sebep" : undefined} />
+            <Input label="Ultrafiltrasyon" value={uf}      set={setUf}      ph="ör. 2.5" unit="Litre" ok={ufOk} sebepId={sebepGorunuyor ? "ktv-sebep" : undefined} />
           </div>
-          <Input label="Post-diyaliz Ağırlık" value={postWt} set={setPostWt} ph="ör. 70" unit="kg" ok={wtOk} />
+          <Input label="Post-diyaliz Ağırlık" value={postWt} set={setPostWt} ph="ör. 70" unit="kg" ok={wtOk} sebepId={sebepGorunuyor ? "ktv-sebep" : undefined} />
         </div>
 
         {/* Formül gösterimi */}
@@ -246,7 +255,7 @@ export default function KtvPage() {
               {sonucMetni}
             </p>
             {!degerlendirilebilir && (
-              <p role="alert" className="mt-2 text-[11px] font-bold text-slate-600">
+              <p id="ktv-sebep" role="alert" className="mt-2 text-[11px] font-bold text-slate-600">
                 {preOk && postOk && post >= pre
                   ? "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — diyaliz üreyi azaltır. İki alan yer değiştirmiş olabilir."
                   : hasAll && !lnTanimli
