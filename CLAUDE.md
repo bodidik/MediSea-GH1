@@ -22627,3 +22627,106 @@ hızlı düşmüyor, **iki dakika bloke ediyor** ve heredoc geri kalan satırlar
 yutuyor. Belgede kayıtlı kural (*"yedek olarak bile yazma"*) bu turda yine
 çiğnendi. Yama Write ile ayrı bir betiğe alınıp çalıştırıldı; betik ayrıca
 çapanın dosyada **benzersiz** olduğunu da doğruluyor.
+
+### AÇIK BIRAKILAN 44 ARAÇ SÜRÜLDÜ — duyuru ↔ panel, 45/46
+
+Belgede kendi elimle bırakılmış bir açık madde vardı: *"Kalan 44 sessiz araç
+sürülmedi ve 'temiz' DENMİYOR."* Statik tarama yalnızca **varsayılan durumu**
+görüyor; duyuru bölgesi varsayılanda BOŞ olan araçlarda hiçbir şey
+doğrulanmamıştı — yani bir duyuru YANLIŞ değişkene bağlansa görünmezdi.
+
+| kova | araç |
+|---|---|
+| duyurusu olan | **71** |
+| varsayılanda DOLU (statik olarak doğrulanmıştı) | 25 |
+| **varsayılanda SESSİZ** | **46** |
+| **bu turda sürülen** | **45** (40 canlı + 5 yerel) |
+| sürülemeyen | **1 — `uas7`** |
+
+Sürülen 45'in **45'inde duyurulan metin görünür panelde de var**. Karşılaştırma
+döngüsel değil: `role="status"` bloğu gövdeden çıkarıldıktan sonra aranıyor.
+
+Örnekler: `apache2` "ÇOK YÜKSEK" · `cam-icu` "DELİRYUM POZİTİF" ·
+`canadian-ct` "BT GEREKLİ (Yüksek Risk)" · `4t-hit` "YÜKSEK OLASILIK" ·
+`rass` **"+4 — Saldırgan"** (bu oturumun düzeltmesi canlıda) ·
+`tft` "TSH SALGILAYAN ADENOM / DİRENÇ" (yazım düzeltmesi de canlıda).
+
+#### POZİTİF KONTROL — ölçüt yanlış bağlamayı yakalıyor mu?
+
+"Duyurulan metin panelde var mı" ölçütü tek başına zayıf olabilirdi: yanlış
+bağlanmış bir etiket sayfanın başka bir yerinde (bant cetvelinde) yine
+geçebilirdi. Tohumla sınandı — panelde OLMAYAN bir duyuru enjekte edildi:
+
+| durum | `panelde` |
+|---|---|
+| tohumdan önce | (duyuru boş) |
+| **tohum eklendi** | **false — YAKALANDI** |
+| tohum kaldırıldı | (yeniden boş) |
+
+#### `uas7` neden sürülemedi — ve neden bu bir ürün kusuru DEĞİL
+
+Araç 7 günü **akordeon** olarak taşıyor: yalnızca AÇIK günün düğmeleri DOM'da
+(8 `aria-pressed`, 2 grup). Sonuç için 7 gün × 2 seçim gerekiyor ve gün
+başlığına basmak öncekini kapatıyor. Genel sürücü bunu tek geçişte yapamıyor.
+
+İki kayıtlı tuzak da aynı ölçümde yeniden ısırdı: **seçili bir düğmeye ikinci
+kez basmak seçimi KALDIRIYOR** (`basili` 2 → 0) ve panel gizliyken
+zamanlayıcılar kısıldığı için 7 günlük zincir **30 sn sınırını iki kez aştı**.
+
+Sürülemedi diye "temiz" DENMİYOR.
+
+#### Sürücünün kendi sınırı: genel değer her araca uymuyor
+
+İlk geçişte üç araç boş duyuru verdi (`osmolal-gap` · `pni` · `uas7`).
+İkisinde sebep sürücüydü: her metin alanına yazılan genel "5" o araçların
+makullük sınırının dışında (`osmolal-gap` ölçülen osmolalite 200–500,
+`pni` lenfosit). Araca özgü değerlerle sürülünce ikisi de çalıştı ve
+**belgede kayıtlı sonuçları** verdi:
+
+| araç | girdi | sonuç |
+|---|---|---|
+| `osmolal-gap` | 300 · 140 · 90 · 14 | **NORMAL OSMOLAL GAP** (açık 10.0) |
+| `pni` | 3.0 · 1200 | **ORTA RİSK** (PNI 36.0) |
+
+**Boş duyuru "temiz" değil "SÜRÜLEMEDİ" demek** — sürücü bunu ayrı kovaya
+koyduğu için iki araç sahte bir "temiz" olarak geçmedi.
+
+#### Aynı turda ölçülüp TEMİZ çıkan üç eksen
+
+**1) Şık açıklamalarının anahtarları şıklarla eşleşiyor mu?**
+Motorlar cevaptan sonra her şıkkın yanına kendi açıklamasını basıyor
+(`secenekAciklamalari[harf]`). Anahtar tutmazsa açıklama **sessizce** düşer —
+tip `Record<string,string>` olduğu için `tsc` de görmez.
+
+| tür | kayıt | şıkkı olmayan anahtar | açıklaması olmayan şık | doğru şıkkın açıklaması yok | boş metin |
+|---|---|---|---|---|---|
+| quiz | 39 dosya · **379 soru** | 0 | 0 | 0 | 0 |
+| vaka | 11 dosya · **35 adım** | 0 | 0 | 0 | 0 |
+
+`ilan-render-denetim` bunu göremez: o ALAN adlarına bakıyor, anahtar
+KARŞILIĞINA değil.
+
+**2) Premium kimlik bütünlüğü.** Rotalar DOSYA ADIYLA çalışıyor, branş
+dosyaları konuları `id` ile ilan ediyor — ikisi ayrışırsa sessiz bir ikinci
+gerçeklik doğar (bu oturumda `tkp-quiz-1` künyesinde tam bu olmuştu).
+
+9 branş · 30 kategori · 57 ilan · 41 konu dosyası: **aynı branşta çift
+kategori 0 · çift konu ilanı 0 · aynı id iki branşta 0 · dosya adı ↔ içerideki
+id farkı 0 · branş dosya adı ↔ id farkı 0.**
+
+**İkisi de tohumla sınandı** (gerçek içeriğin kopyasına kasten bozuk anahtar
+ve sapan bir `id` konularak): üç kusur sınıfı da **yakalandı**, tohum silindi
+ve `content/` diff'i temiz kaldı.
+
+**3) Paylaşım kartı bütünlüğü.** 151 sayfanın 151'inde `og:image` ·
+`width` · `height` · **`alt`** · `type` ve `twitter:image` · `twitter:image:alt`
+tam.
+
+**130 araç TEK bir kartı paylaşıyor** (`/tools/opengraph-image`, alt "MediSea
+klinik araçlar") — ve bu bir KARAR, eksiklik değil; gerekçesi kaynakta yazılı:
+*"Kart ortak, başlık kişisel."* Gerekçenin sınanabilir yarısı ölçüldü:
+**130 aracın 130'unda `og:title` BENZERSİZ** (çift 0). Yani paylaşılan
+bağlantı görselde ortak, metinde araca özel.
+
+Kıyas: site tarafında 21 sayfa **11 farklı** görsel kullanıyor (konu kartları
+başlığı görsele basıyor).
