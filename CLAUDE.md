@@ -25070,3 +25070,80 @@ görünüyor (canlıda doğrulandı, ikisi de orada). Başlıklar **ayrık**
 ("(Set 1)" / "(Set 2)"), yani bu oturumda kapatılan *"aynı ad, farklı hedef"*
 sınıfı burada oluşmuyor. Kategoriye alınmaları tek satırlık bir küratörlük
 kararı.
+
+### KİMLİK DEĞİŞTİ, YEDEKLEME YOLU YENİDEN SÜRÜLDÜ — uçtan uca temiz
+
+Bu oturumda çalışma verisinin KİMLİĞİ değişti: anahtar artık **yol + sıralanmış
+sorgu** (`…/quiz-coz?branch=…&id=…`). O turda yalnızca "sorgulu anahtar yedeğe
+giriyor mu" ölçülmüştü; **yedekten geri yükleme** hiç sürülmemişti — oysa
+`applyImport` altı ailenin her birini ayrı bir dalda birleştiriyor ve
+"üzerine yaz" kipi önek listesiyle SİLİYOR.
+
+Canlıda, gerçek arayüzle sürüldü (8 anahtar tohumlandı: iki vurgu · iki not ·
+tekrar · günlük · dizin · kart seti; vurgunun ve notun BİRER tanesi sorgulu).
+
+#### Dışa aktarım
+
+| ölçüt | sonuç |
+|---|---|
+| alanlar | `app · v · at · marks · notes · review · index · log · kartlar` — **altısı da** |
+| **sorgulu anahtarlar** | `marks` ve `notes` içinde, `?` ve `&` **bozulmadan** |
+| boyut · tip | 936 B · `application/json` |
+
+#### Birleştirme — kısmi silme sonrası
+
+İki vurgu anahtarı ve quiz notu silindi; kalan not YERELDE DAHA YENİ yapıldı.
+Kuru prova planı birebir şunu dedi:
+
+> **1 yeni sayfa, 2 yeni vurgu, 1 yeni not eklenecek. 1 not atlanacak
+> (buradaki korunuyor).**
+
+(Parantez içi ifade önceki bir turda düzeltilmişti: eskiden *"buradaki daha
+yeni"* diyordu ve vekil damga yüzünden yanlış olabiliyordu.)
+
+Onaydan sonra: **8 anahtar geri geldi**, vurgu sayıları 1+1 (çiftlenme yok),
+`YEREL YENİ NOT` korundu, quiz notu ve **1 çizgi** geri geldi, tekrar/günlük/
+kart seti değişmedi.
+
+**İDEMPOTENS:** aynı dosya ikinci kez birleştirildiğinde plan **"0 yeni sayfa,
+0 yeni vurgu, 0 yeni not"** diyor, anahtar sayısı 8'de kalıyor ve günlük
+`kart: 5` — yani **toplama değil, büyük olan kazanıyor** (kayıtlı kural).
+
+#### "Üzerine yaz" — kip adının söylediğini yapıyor
+
+Yedekte OLMAYAN üç anahtar tohumlandı (fazladan bir vurgu yolu, fazladan bir
+kart seti ve bir **`:bozuk` yedek anahtarı**). Onay metni ne yaptığını
+söylüyor: *"Bu cihazdaki tüm vurgu, not ve tekrar geçmişi silinip yerine
+yedektekiler yazılacak. Geri alınamaz."*
+
+| ölçüt | sonuç |
+|---|---|
+| fazladan vurgu · fazladan kart seti · **`:bozuk` yedek** | **üçü de SİLİNDİ** |
+| kalan anahtar | tam olarak yedekteki **8** |
+| addison notu | **yedektekine döndü** ("addison notu") — birleştirmenin tersi |
+
+Son satır iki kipin farkını ölçüyor: birleştirme yerel yeniyi korudu, üzerine
+yaz onu geri aldı. `:bozuk` anahtarının silinmesi de kayıtlı karara uygun —
+"tümü silinsin" diyen bir kipin okunamamış bir kaydın kopyasını bırakması
+kullanıcıyı yanıltırdı.
+
+#### Geri yüklenen veri EKRANDA da doğru
+
+| kart | bağlantı |
+|---|---|
+| **SLE Soru Seti 1** | `/tr/premium/ydus/quiz-coz?branch=romatoloji&id=sle-quiz-1` |
+| **Addison Hastalığı** | `/topics/endokrinoloji/addison` |
+
+Başlıklar geri yüklenen dizinden geliyor ve quiz kartı **sorguyu taşıyan
+çalışan adrese** gidiyor (bu oturumda düzeltilen "çıplak yola giden çıkmaz
+kart" kusuru geri gelmemiş). Kapsama sayacı ise hâlâ yalnızca `1/116
+Endokrinoloji` — quiz sayfası KONU sayısına girmiyor, yani `branchSlugOf`un
+bilerek sorguya bakmama kararı da ayakta.
+
+**Ölçüm izi temizlendi:** `medisea:*` anahtarları silindi ve GEZİNMEDEN SONRA
+yeniden sayıldı — **0** (bileşen kuruluyken yapılan silme kalıcı değil,
+kayıtlı tuzak).
+
+**Kusur çıkmadı.** Bu tur bir gerileme doğrulaması: kimlik değişikliği
+altı ailenin hiçbirinde yedekleme yolunu kırmamış, iki kipin anlamı da
+ayrık kalmış.
