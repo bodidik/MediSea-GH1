@@ -214,7 +214,11 @@ export default function YdusDashboardClient({
             <p className="text-2xl font-semibold text-slate-800">{overall.soru}</p>
           </div>
           <div className="bg-white rounded-xl border border-slate-200 p-4">
-            <p className="text-[11px] text-slate-400 mb-1 flex items-center gap-1"><Award size={12} /> Puanınız</p>
+            {/* "Puanınız" -> "Puanın": aynı kartın hemen altındaki branş
+                bağlantıları "Branşa git" diyor, geri sayım "konuları sindirerek
+                çalış" diyor. Ölçüldü — bu rotada 1 resmî dizeye karşılık 5
+                samimi dize vardı; depo genelinde oran 12 / 55. */}
+            <p className="text-[11px] text-slate-400 mb-1 flex items-center gap-1"><Award size={12} /> Puanın</p>
             <p className="text-2xl font-semibold text-slate-800">{xp ?? 0}<span className="text-sm text-slate-400 font-normal"> xp</span></p>
           </div>
         </div>

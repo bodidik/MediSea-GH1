@@ -176,8 +176,11 @@ export default async function VakaCozPage(props: {
             <div style={{ fontSize: '10px', fontWeight: 700, color: '#5a2a9b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '4px' }}>
               Klinik Vakalar
             </div>
+            {/* "seçin" -> "seç": aynı rotada VakaEngine cevaptan sonra
+                "— senin seçimin, yanlış" diyor. Ev üslubu samimi (ölçüldü:
+                55 samimi / 12 resmî dize). */}
             <h1 style={{ fontSize: '18px', fontWeight: 700, color: '#1a2a3a', margin: 0 }}>
-              Bir vaka seçin
+              Bir vaka seç
             </h1>
           </div>
 

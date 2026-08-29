@@ -24111,3 +24111,142 @@ Sayfa tarafı (kapı açıkken):
 - **`python - <<'PY'` bu oturumda BEŞİNCİ kez iş bozdu.** Bu ortamda `python`
   yok; heredoc kendinden sonraki satırları da yutuyor ve iki doğrulama
   komutum sessizce çalışmadı. Kural bir kez daha: yedek olarak bile yazma.
+
+### ÜÇ PREMIUM EKRANDA İKİ HİTAP YAN YANA — ve rozet kutusu OLMAYAN bir eyleme yönlendiriyordu
+
+Hiç ölçülmemiş bir eksen: **Türkçe hitap tutarlılığı** (samimi "sen" ↔ resmî
+"siz"). Aynı ürünün bir kutusu "notların", yanındaki "kazanmadınız" diyorsa
+ekran iki ayrı sesle konuşuyor demektir.
+
+#### Ölçütün KAPSAMI üç kez daraltıldı — ilk iki sürüm okunamaz liste verdi
+
+| sürüm | ölçüt | sonuç |
+|---|---|---|
+| 1 | bütün `.tsx` metinlerinde `-nız/-niz` ve emir kipleri | 147 resmî / 206 samimi — okunamaz |
+| 2 | yalnızca "Henüz…" boş durum cümleleri | 10 cümle, ama sonek eki yanılttı ("verin"/"kartın" **iyelik**, resmî değil) |
+| 3 | **yüksek kesinlikli sonek** (`-ınız/-iniz/-unuz/-ünüz`) + elle okuma | karar verilebilir |
+
+**En değerli eleme, ölçüt değil KAPSAM tarafındaydı.** 3. sürümün 38 bulgusu
+okununca çoğunun uygulamanın sesi OLMADIĞI görüldü:
+
+| kova | örnek | karar |
+|---|---|---|
+| **klinik ölçek maddesi (HASTAYA sorulur)** | `act` "Son 4 haftada ne sıklıkla nefes darlığı yaşadınız?" · `ciwa-ar` · `frail` · `haq-di` | **resmî DOĞRU — dokunulmadı** |
+| ölü kod (`_` klasörler) | simülasyon senaryoları | kapsam dışı |
+| **uygulama → kullanıcı** | asıl ölçüm yüzeyi | ölçüldü |
+
+Bir hitap taraması yaparken önce sor: **bu cümleyi kim, kime söylüyor?**
+`tools/` altındaki 23 resmî dize hasta sorusu; onları "tutarsız" saymak
+doğrulanmış ölçek maddelerini bozmak olurdu.
+
+#### Ev üslubu ÖLÇÜLDÜ, seçilmedi
+
+Uygulama → kullanıcı yüzeyinde (araçlar, yönetim ve kurum kapısı hariç):
+
+| hitap | dize | dosya |
+|---|---|---|
+| **samimi (sen)** | **55** | **31** |
+| resmî (siz) | 12 | 11 |
+
+Yani üslup zaten kararlı: 4.6 kat samimi. Değiştirilecek yön tartışma değil,
+sayının gösterdiği yön.
+
+#### Asıl ölçüt DOSYA değil ROTA — çünkü kullanıcı ekran görür
+
+Dosya düzeyinde "şu dosya resmî" demek işe yaramıyor: bir ekranda birden çok
+dosya render ediliyor. Ölçüt, her `page.tsx`ten başlayıp yerel içe aktarmaları
+geçişli izleyerek **rota başına** hitap topladı:
+
+| rota | dosya | SİZ | SEN |
+|---|---|---|---|
+| `/premium/ydus/profil` | 2 | 1 | 3 |
+| `/premium/ydus` (pano) | 7 | 1 | 5 |
+| `/premium/ydus/vaka-coz` | 3 | 2 | 1 |
+| **karışık rota** | — | **3** | — |
+
+Üçü de premium; açık taraf tekdüze samimi.
+
+En keskin örnek profil sayfası — **aynı ızgarada, yan yana iki boş durum**:
+
+```
+Branş Hakimiyeti : "Henüz hiçbir konuda işaretin yok ... hakimiyetin birikmeye başlar."
+Rozetler         : "Henüz rozet kazanmadınız. Simülasyonları çözerek koleksiyonu tamamlayın!"
+```
+
+#### ⚠ AYNI CÜMLEDE İKİNCİ KUSUR: rozet veren hiçbir canlı rota YOK
+
+Hitabı düzeltmek için cümleyi okuyunca çıktı. Rozet ilanı bir EYLEM
+söylüyor ("Simülasyonları çözerek"); o eylemin karşılığı sayıldı:
+
+| ölçüt | sonuç |
+|---|---|
+| rozet veren tek kod | `completeModule(id, score, badgeId)` |
+| onu çağıran | **yalnızca `SimulatorEngine`** |
+| `SimulatorEngine`i içe aktaran | **yalnızca `_endokrinoloji` · `_gastroenteroloji` · `_nefroloji`** — üçü de rotaya alınmıyor |
+| `premium/ydus/` altında `simulasyon` rotası | **yok** |
+| tanımlı rozet | 3 (`lupus_fatihi` · `varis_ustasi` · `dka_kaptani`) — tam o üç ölü sayfaya karşılık geliyor |
+
+Yani kullanıcıya **bugün yapılamayan** bir iş söyleniyor ve tamamlanamayacak
+bir koleksiyon vaat ediliyordu. Deponun imza sınıfı ("ilan mı gerçek mi"),
+bu kez boş durum metninde.
+
+Yeni metin ne olduğunu söylüyor, olmayan bir eylem istemiyor:
+**"Rozet koleksiyonu henüz açık değil. Hazır olduğunda kazandığın rozetler
+burada birikir."** — `/uyelik`in "Premium henüz satışta değil" ve sınav
+takviminin "tarih yoksa hiç basma" kararlarıyla aynı aile.
+
+#### Değişen dört dize
+
+| yer | önce | sonra |
+|---|---|---|
+| `profil` rozet kutusu | "Henüz rozet kazanmadınız… tamamlayın!" | "Rozet koleksiyonu henüz açık değil…" |
+| pano metrik kartı | **"Puanınız"** | **"Puanın"** |
+| `vaka-coz` boş durum | "Bir vaka seçin" | "Bir vaka seç" |
+| `VakaEngine` düğmesi | "…için tıklayın" | "…için tıkla" |
+
+#### Doğrulama — tarayıcıda, üçü negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| **karışık rota** | **3 → 0** |
+| depo geneli resmî dize | 12 → **8** |
+| `/premium/ydus/profil` (tarayıcı) | yeni metin **var**, eski **yok**, sayfada kalan resmî sonek **0**, `h1` 1 · `main` 1 |
+| `/premium/ydus` (tarayıcı) | **"Puanın"** basılıyor, "Puanınız" **yok**, kalan resmî sonek **0** |
+| **negatif** — komşu samimi cümle | "Henüz hiçbir konuda işaretin yok" **duruyor** |
+| **negatif** — önceki turun düzeltmesi | pano kartı hâlâ **"Hazır konu oranı"** |
+| **negatif** — klinik ölçek maddeleri | `tools/` altında **tek dosya değişmedi** (`git status` ile kanıtlandı) |
+| **negatif** — kapı | `vaka-coz` yeniden **"Erişim Kısıtlı"** |
+| kapılar | lint · typecheck · build **637/637** |
+| satır sonu | üç dosya LF, `VakaEngine` **saf CRLF (509/509)** — korundu |
+
+`vaka-coz` kapı arkasında olduğu için tarayıcıda ölçülemedi; doğrulama
+**dağıtılan sunucu paketinden** yapıldı — ve orada bir ölçüm tuzağı çıktı.
+
+#### ⚠ Derleme paketinde Türkçe karakter KAÇIŞLI duruyor
+
+`grep "Bir vaka seç" .next-verify/server` → **0 dosya**, ve bir an "dize
+pakete girmedi" sanıldı. Gerçek biçim:
+
+```
+Bir vaka se\xe7"        <- tirnak hemen ardindan: eski "seçin" GITTI
+yeni bilgiler i\xe7in tıkla"
+```
+
+Yani `ç` `\xe7` olarak kaçmış (ama `ı` kaçmamış — kaçış seçici). **Üretilmiş
+paket içinde Türkçe dize ararken ASCII güvenli bir parça kullan**; tam dizeyle
+arayan ölçüm sessizce "yok" der.
+
+#### Kalan 8 resmî dize — karara bağlandı, DEĞİŞTİRİLMEDİ
+
+| dize | verdikt |
+|---|---|
+| `BranchTemplate` · `PremiumGate` · `QuestionRun` | **ölü kod** (sırasıyla yalnız `_` klasörler · 0 içe aktaran · 0 içe aktaran) |
+| `ProtectedContent` | ölü — tek içe aktaranı `QuestionView`, o da ölü (`AddToSRButton`daki geçiş bir YORUM) |
+| `YdusCockpit` "geçebilirsiniz kaptan" · `SoruSor` "tekrar deneyin" ×2 · `AppShell` alt bilgi "en güçlü silahınız" | **canlı ama karışık değil** — bulundukları rotada tek hitap var |
+
+Ayrım bilinçli: bu tur **ölçülmüş tutarsızlığı** kapattı, tek üsluplu
+ekranlarda üslup seçmedi. Onlar bir kopya kararı, ölçüm değil.
+
+**Aktarılabilir kural: hitap tutarlılığını DOSYA değil ROTA düzeyinde ölç.**
+Dosya düzeyi ölçüm hem çok gürültülü (klinik ölçek maddeleri "resmî" çıkıyor)
+hem de asıl kusuru — aynı ekranda iki ses — göremiyor.

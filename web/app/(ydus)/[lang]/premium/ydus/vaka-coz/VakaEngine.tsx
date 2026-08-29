@@ -320,7 +320,7 @@ function AdimKarti({
                   textAlign: 'left', display: 'flex', alignItems: 'center', gap: '6px',
                 }}
               >
-                <span>🔍</span> Klinik seyir ve yeni bilgiler için tıklayın
+                <span>🔍</span> Klinik seyir ve yeni bilgiler için tıkla
               </button>
             )}
 

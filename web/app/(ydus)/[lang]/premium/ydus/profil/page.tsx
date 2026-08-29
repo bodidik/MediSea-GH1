@@ -236,7 +236,23 @@ export default function ProfileDashboard() {
             {badges.length === 0 ? (
               <div className="text-center py-8">
                 <span aria-hidden="true" className="text-4xl block mb-3 opacity-50">🛡️</span>
-                <p className="text-slate-500 text-sm font-medium">Henüz rozet kazanmadınız. Simülasyonları çözerek koleksiyonu tamamlayın!</p>
+                {/* Bu cümle iki kusur taşıyordu ve ikisi de ölçüldü:
+                    (1) HİTAP — "kazanmadınız / tamamlayın" resmî, oysa bu ekran
+                        birkaç santim yukarıda "işaretin yok ... hakimiyetin
+                        birikmeye başlar" diyor. Ölçüldü: uygulamanın kullanıcıya
+                        seslendiği metinlerde samimi 55 dize / 31 dosya, resmî 12
+                        dize / 11 dosya — ev üslubu "sen".
+                    (2) OLMAYAN BİR EYLEME YÖNLENDİRME — "Simülasyonları çözerek"
+                        diyor ama rozet veren TEK kod SimulatorEngine'in
+                        completeModule çağrısı ve o bileşen yalnızca alt çizgili
+                        (rotaya alınmayan) klasörlerden içe aktarılıyor. Yani
+                        hiçbir canlı rota rozet veremiyor; koleksiyon bugün
+                        tamamlanamaz. Üç rozet (lupus/varis/DKA) de tam o üç ölü
+                        simülasyon sayfasına karşılık geliyor.
+                    Yeni metin ne olduğunu söylüyor, yapılamayacak bir şey
+                    istemiyor. Simülasyonlar canlı bir rotaya bağlandığında bu
+                    cümle güncellenmeli. */}
+                <p className="text-slate-500 text-sm font-medium">Rozet koleksiyonu henüz açık değil. Hazır olduğunda kazandığın rozetler burada birikir.</p>
               </div>
             ) : (
               <div className="flex flex-col gap-4">
