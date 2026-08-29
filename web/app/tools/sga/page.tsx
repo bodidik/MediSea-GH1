@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 type SGARating = "A" | "B" | "C" | null;
 
@@ -122,6 +123,8 @@ export default function SgaPage() {
           <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Yanıtlanan: {answered}/{totalQ}</span>
           {global && <span className={`text-2xl font-black ${RESULT[global].color}`}>SGA-{global}</span>}
         </div>
+
+        <SonucDuyuru metin={global ? RESULT[global].label : null} />
 
         {global && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${RESULT[global].border} ${RESULT[global].bg}`}>

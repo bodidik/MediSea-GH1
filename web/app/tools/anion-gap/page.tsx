@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { anionGap, correctedAnionGap, parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 import { SINIRLAR, AG_UST, araliktaMi } from "@/app/tools/lib/asit-baz";
 
@@ -188,6 +189,8 @@ export default function AnionGapPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={cekirdekMakul ? interpretation.label : null} />
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
              {cekirdekMakul

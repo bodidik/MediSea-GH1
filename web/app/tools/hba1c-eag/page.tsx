@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { hba1cToEagMgdl, mgdlToMmol, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * HbA1c -> Tahmini Ortalama Glukoz (eAG) Gündüz Modu (Sakin Deniz)
@@ -76,6 +77,8 @@ export default function Hba1cEagPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={makul ? interpretation.label : null} />
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
              {makul ? interpretation.label : "HbA1c değerini girin"}

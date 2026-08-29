@@ -21919,3 +21919,77 @@ düzeltilen eksik-veri metni, hüküm değil. Doğru davranış.
 | `rockall` | **iki** hüküm değişkeni (`rPre` · `rPost`) — hangisinin duyurulacağı tasarım kararı |
 
 Bunlar "temiz" DEĞİL; ölçülmüş, şekli yazılmış bir kalan iş.
+
+### KALAN 10 ARAÇ KARARA BAĞLANDI — 6'sı eklendi, 4'ü tasarım kararı; 65 → 71
+
+Mekanik süpürmenin dışında kalan 10 araç tek tek okundu. Ortak sebep şuydu:
+hüküm `{X.label}` olarak değil **üçlü işlecin içinde** render ediliyor
+(`{makul ? interpretation.label : "Değerleri girin"}`), o yüzden ölçüt
+değişkeni bulamıyordu.
+
+| araç | duyuru ifadesi |
+|---|---|
+| `das28` · `glasgow-blatchford` · `hba1c-eag` | `makul ? interpretation.label : null` |
+| `anion-gap` | `cekirdekMakul ? interpretation.label : null` |
+| `sga` | `global ? RESULT[global].label : null` |
+| `ktv` | `tumAlanlarDolu ? sonucMetni : null` |
+
+Sonuç: duyurusu olan araç **65 → 71**, bağımsız yerleşim denetimi **71/71**,
+`role="status"` taşıyan üretilmiş HTML **80 → 86**.
+
+#### `ktv`de duyuru EKLEMEDEN ÖNCE tekleştirme gerekti
+
+Orada hüküm metni satır içi bir üçlü işleçti:
+
+```
+{!degerlendirilebilir ? "DEĞERLENDİRİLEMEDİ — …" : yeterli ? "…SAĞLANDI" : "YETERSİZ…"}
+```
+
+Duyuruya kopyalamak, bu depoda tur tur avlanan **"iki gerçeklik"** kusurunu
+üretirdi: metin bir yerde değişip ötekinde kalabilirdi. Önce tek kaynağa
+alındı (`const sonucMetni`), sonra hem panel hem duyuru oradan besleniyor.
+
+Sayıldı: üç hüküm metninin üçü de kaynakta artık **tam bir kez** geçiyor.
+Fark `+14 / −1`; kalan beş dosyada **+3 / −0**.
+
+#### Eklenmeyen 4 araç — gerekçe TASARIM, kapsam değil
+
+| araç | neden |
+|---|---|
+| `asdas` | **iki varyant** yan yana (ASDAS-CRP ve ASDAS-ESR), her biri kendi bandını basıyor. Hangisinin duyurulacağı ürün kararı. |
+| `rockall` | **iki hüküm** (`rPre` endoskopi öncesi · `rPost` sonrası) |
+| `spot-urine` | **altı** ayrı yorumlayıcı (PCR · ACR · FENa · FEÜre · UAG · UOG) — tek bir canlı bölge altısını taşıyamaz |
+| `ogtt` | hüküm modül düzeyinde bir ALT BİLEŞENDE ve araç üç kipli (DM · akromegali · GDM); duyuru kip başına konmalı |
+
+Dördü de "temiz" DEĞİL; ölçülmüş, şekli yazılmış kalan iş.
+
+#### ⚠ BELGE DÜZELTMESİ — `das28` "boş formda Değerleri girin basıyor" İDDİASI YANLIŞ
+
+Duyuru eklendikten sonra `das28`in boş formda **"Sonuç: Remisyon"** duyurduğu
+görüldü. Belgede kayıtlı iddia şuydu: *"das28'in 'boş formda 0 basıp
+Remisyon diyordu' kusuru kapanmış, artık `–` ve 'Değerleri girin' basıyor."*
+
+Ölçüldü — araç **dokunulmamış hâlde** şunu basıyor:
+
+```
+input degerleri : ["0","0","20","20"]     <- GORUNUR varsayilanlar
+panel           : DAS28-ESR 2.38 · Remisyon
+```
+
+Ve `useState<string>("20")` varsayılanları dosyanın **ilk hâlinden beri**
+orada. Yani iddia bir gerileme değil, **baştan yanlış**: "Değerleri girin"
+metni yalnızca GEÇERSİZ girdide çıkıyor (`makul` false), dokunulmamış formda
+değil.
+
+**Bugünkü davranış kusur DEĞİL** — girdiler görünür varsayılan taşıyor, yani
+duyurulan şey kullanıcının gördüğü değerlerin aritmetiği; belgedeki
+"beyan edilmiş varsayım" kovası (`news2` · `sofa` · `psi-port` ·
+`child-pugh` · `gcs`). Yanlış olan iddiaydı.
+
+**Aktarılabilir kural: "boş form" ile "geçersiz girdi" AYRI durumlar.** Bir
+aracın varsayılanı varsa onun boş formu yoktur; o araçta "boş formda ne
+basıyor" sorusunun cevabı "varsayılanların aritmetiği"dir. İki durumu tek
+etiket altında ölçmek bu belgede en az iki kez yanlış kayıt üretti.
+
+Aynı ölçüm `anion-gap` için de yapıldı ve orada da varsayılan var
+(140/104/24 → "Normal Aralık"), yani duyuru panelle birebir.

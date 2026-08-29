@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /**
@@ -142,6 +143,16 @@ export default function KtvPage() {
      bir cevap BEKLİYOR. Boş formda panel hiç görünmüyor. */
   const tumAlanlarDolu = [preBun, postBun, time, uf, postWt].every((x) => x.trim() !== "");
 
+  /* Sonuç metni TEK KAYNAK: hem panelde basılıyor hem ekran okuyucuya
+     duyuruluyor. İkisine ayrı ayrı yazılsaydı bu depoda tur tur avlanan
+     "iki gerçeklik" kusuru olurdu — metin bir yerde değişip ötekinde
+     kalabilirdi. */
+  const sonucMetni = !degerlendirilebilir
+    ? "DEĞERLENDİRİLEMEDİ — değerleri kontrol edin"
+    : yeterli
+      ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI"
+      : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ";
+
 
   const ResultCard = ({ label, value, target, unit, ok }: { label: string; value: number | null; target: string; unit: string; ok: boolean | null }) => (
     <div className={`rounded-2xl p-4 text-center border ${
@@ -222,11 +233,13 @@ export default function KtvPage() {
           çiziliyor ve hesaplanamıyorsa NEDENİ yazıyor. Boş formda hâlâ hiçbir
           şey basılmıyor (bkz. belgedeki "girdisiz de aç" kuralı).
         */}
+        <SonucDuyuru metin={tumAlanlarDolu ? sonucMetni : null} />
+
         {tumAlanlarDolu && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${!degerlendirilebilir ? 'bg-slate-50 border-slate-200' : yeterli ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ</div>
             <p className={`text-xl font-black italic tracking-tight ${!degerlendirilebilir ? 'text-slate-600' : yeterli ? 'text-emerald-700' : 'text-rose-700'}`}>
-              {!degerlendirilebilir ? "DEĞERLENDİRİLEMEDİ — değerleri kontrol edin" : yeterli ? "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" : "YETERSİZ DİYALİZ — PROTOKOL GÖZDEN GEÇİRİLMELİ"}
+              {sonucMetni}
             </p>
             {!degerlendirilebilir && (
               <p role="alert" className="mt-2 text-[11px] font-bold text-slate-600">
