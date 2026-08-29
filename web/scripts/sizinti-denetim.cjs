@@ -28,6 +28,23 @@
  * CI KAPISI DEĞİL — rapor. Meşru bir istisna gerekebilir (ör. bir aracın
  * sunucudan referans tablosu çekmesi); karar insanın.
  *
+ * ── VERDİKTLER (yeniden kovalanmasın) ───────────────────────────────────
+ *
+ * • `app/tools/ToolsIcerik.tsx` → `history.replaceState` — **MEŞRU.**
+ *   Yazılan şey HASTA VERİSİ DEĞİL, hub'ın ARAMA TERİMİ (`?ara=kalsiyum`).
+ *   Sebebi ölçüldü: terim yalnızca istemci durumunda yaşadığı için bir araç
+ *   açıp GERİ dönünce kayboluyordu (kutu boş, liste yeniden 130 kart) ama
+ *   kaydırma konumu geri yükleniyordu — kullanıcı bırakmadığı bir listeye
+ *   anlamsız bir yükseklikte dönüyordu.
+ *   Sınır önemli: bu HUB sayfası, araç sayfası değil. Hesaplayıcıların
+ *   kendisi hâlâ hiçbir kanala yazmıyor (bu raporda ağ 0 · depo 0) ve
+ *   `ToolShare` sorguyu silmeye devam ediyor.
+ *   Ödünleşme açıkça kabul edildi: arama terimi artık tarayıcı geçmişine ve
+ *   paylaşılan bağlantıya giriyor. Kabul edilebilir çünkü kutu bir ARAÇ
+ *   BULUCU ("kalsiyum", "wells"), klinik bir değer alanı değil.
+ *   Aynı düzeltme `/topics` kütüphane süzgecinde de var; bu betik oraya
+ *   bakmıyor (kapsam: `app/tools`).
+ *
  * Kullanım:
  *   node scripts/sizinti-denetim.cjs
  *   node scripts/sizinti-denetim.cjs --kok <dizin>

@@ -309,11 +309,57 @@ export default function ToolsIcerik() {
    *    tekrar çalışmaz; bu yüzden rozetler durumu KENDİ günceller.
    */
   const [kategori, setKategori] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  /* Adres okunmadan URL'e YAZMAK, okunacak değeri siler. Bu depoda kayıtlı
+     sınıf ("depoya yazan etki, yükleme bitmeden yazarsa veriyi SİLER") ve
+     orada `useRef` YETMEDİĞİ ölçülmüştü — bayrak DURUM olmalı. */
+  const [adresOkundu, setAdresOkundu] = useState(false);
 
   useEffect(() => {
-    setKategori(new URLSearchParams(window.location.search).get("kategori"));
+    const p = new URLSearchParams(window.location.search);
+    setKategori(p.get("kategori"));
+    setSearchTerm(p.get("ara") ?? "");
+    setAdresOkundu(true);
   }, []);
-  const [searchTerm, setSearchTerm] = useState("");
+
+  /**
+   * ARAMA TERİMİ ADRESE YANSITILIYOR — sebebi ÖLÇÜLDÜ.
+   *
+   * Canlıda sürüldü: "kalsiyum" yazıp (3 sonuç) bir aracı açıp GERİ tuşuna
+   * basınca sorgu KAYBOLUYOR (kutu boş, liste yeniden 130 kart) ama kaydırma
+   * konumu GERİ YÜKLENİYOR (400 → 400). İkisi birleşince en kötü hâl çıkıyor:
+   * kullanıcı bırakmadığı bir listeye, anlamı olmayan bir yükseklikte dönüyor.
+   *
+   * Kategori süzgeci aynı turda ölçüldü ve SAĞLAM: o adreste taşınıyor
+   * (`?kategori=acil`), yani geri dönüşte süzgeç de kaydırma da korunuyor.
+   * Ayrışan tek şey, yalnızca istemci durumunda yaşayan arama terimiydi.
+   *
+   * `useSearchParams()` KULLANILMIYOR (yukarıdaki nota bak) ve sunucu
+   * `searchParams` okumuyor — sayfa statik prerender olarak kalıyor.
+   * `history.replaceState` gezinme yapmıyor, yalnızca mevcut geçmiş kaydının
+   * adresini tazeliyor; geri dönüşte bileşen sıfırdan kurulup adresi okuyor.
+   *
+   * Boş sorguda parametre SİLİNİYOR — adreste `?ara=` bırakmak, boş kutuyla
+   * süzülmüş bir liste ilan etmek olurdu.
+   *
+   * `kategori` de bağımlılıkta: rozete tıklamak `/tools?kategori=x`e gezinip
+   * adresi baştan yazıyor, yani `ara` orada düşüyor ve yeniden eklenmesi
+   * gerekiyor. En kötü ihtimalle (etki, yönlendiricinin adresi yazmasından
+   * önce çalışırsa) adres `ara` taşımadan kalır — yazılan metin React
+   * durumunda olduğu için ekranda hiçbir şey kaybolmaz.
+   */
+  useEffect(() => {
+    if (!adresOkundu) return;
+    const p = new URLSearchParams(window.location.search);
+    const s = searchTerm.trim();
+    if (s) p.set("ara", s);
+    else p.delete("ara");
+    const q = p.toString();
+    const yeni = window.location.pathname + (q ? `?${q}` : "") + window.location.hash;
+    if (yeni !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, "", yeni);
+    }
+  }, [searchTerm, kategori, adresOkundu]);
 
   // Menüden gelen kategori bağlantısı burada karşılanıyor: /tools?kategori=nefroloji
   const aktifKategori = kategori;
@@ -443,10 +489,21 @@ export default function ToolsIcerik() {
           </div>
         </div>
 
-        {/* KATEGORİ SÜZGECİ */}
+        {/* KATEGORİ SÜZGECİ
+
+            Rozet adresleri arama terimini de TAŞIYOR. Sebebi ölçüldü: rozete
+            tıklamak `/tools?kategori=x`e gezinip adresi baştan yazıyor ve
+            `ara` orada düşüyordu. Yukarıdaki yansıtma etkisi bunu kurtaramaz —
+            etki, yönlendirici adresi yazmadan ÖNCE çalışıyor (ölçüldü: rozet
+            tıklamasından sonra adres `?kategori=nefroloji`, `ara` yok).
+            Gezinmenin kendisine terimi koymak yarışı tümden kaldırıyor.
+
+            Sunucu HTML'i DEĞİŞMİYOR: `searchTerm` hem sunucuda hem ilk
+            istemci render'ında boş, yani rozet adresleri orada eskisi gibi
+            `/tools?kategori=x`. */}
         <div className="flex flex-wrap gap-2">
           <Link
-            href="/tools"
+            href={aramaBos ? "/tools" : `/tools?ara=${encodeURIComponent(searchTerm.trim())}`}
             aria-current={!seciliKategori ? "true" : undefined}
             onClick={() => setKategori(null)}
             className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all ${
@@ -467,7 +524,11 @@ export default function ToolsIcerik() {
           {TOOLS_DATABASE.map(cat => (
             <Link
               key={cat.slug}
-              href={`/tools?kategori=${cat.slug}`}
+              href={
+                aramaBos
+                  ? `/tools?kategori=${cat.slug}`
+                  : `/tools?kategori=${cat.slug}&ara=${encodeURIComponent(searchTerm.trim())}`
+              }
               aria-current={seciliKategori === cat.slug ? "true" : undefined}
               onClick={() => setKategori(cat.slug)}
               className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all flex items-center gap-1.5 ${

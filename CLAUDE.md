@@ -23750,3 +23750,118 @@ doldurulması rota rota bir ödünleşme kararı.
 - **Ters bölü tuzağı sekizinci kez** — `node -e` içindeki `\$RC\(` deseni
   kabuk kanalında bozulup `Unterminated group` verdi. Kaçış taşıyan ölçüm
   betiği Write ile ayrı dosyaya yazıldı.
+
+### GERİ TUŞU: KAYDIRMA GERİ YÜKLENİYOR AMA ARAMA SORGUSU KAYBOLUYORDU
+
+Hiç ölçülmemiş bir eksen: **kullanıcının DÖNÜŞ yolu.** Bir konu okuyup ya da
+bir hesaplayıcı açıp geri döndüğünde ne buluyor?
+
+Önce sağlam olanlar ölçüldü (canlı, gerçek gezinmeyle):
+
+| ölçüt | sonuç |
+|---|---|
+| branş sayfasında 900px'e kaydır → konuya gir → GERİ | **900** — kaydırma birebir geri yükleniyor |
+| yeni sayfa nerede açılıyor | **en üstte** (`scrollY 0`) |
+| `history.scrollRestoration` | `auto` (tarayıcıya bırakılmış, doğru) |
+| `/tools` kategori süzgeci + kaydırma → araç → GERİ | **ikisi de korunuyor** (`?kategori=acil`, 15 kart, y 1200) |
+
+Dördüncü satır belirleyici: kategori **adreste taşınıyor** (rozetler gerçek
+`<Link>`), o yüzden geri dönüşte hem süzgeç hem kaydırma yerinde.
+
+#### Kusur: aynı sayfada ARAMA terimi adreste taşınmıyordu
+
+| adım (canlı, `/tools`) | ölçülen |
+|---|---|
+| "kalsiyum" yazıldı | 3 sonuç · `?ara=` YOK, adres hâlâ `/tools` |
+| y=400'e kaydırıldı, araç açıldı, GERİ | kutu **boş**, liste **130 kart**, ama **y=400 geri yüklendi** |
+
+İkisi birleşince en kötü hâl çıkıyor: kullanıcı **bırakmadığı bir listeye,
+anlamı olmayan bir yükseklikte** dönüyor. Kaydırma geri yüklemesi burada
+yardım etmiyor, zarar veriyor.
+
+**Aynı kusur kardeş yüzeyde de vardı** ve "kopyayı say" kuralı gereği ölçüldü:
+`/topics` kütüphane süzgecinde "tiroid" (27 sonuç bağlantısı) → konuya gir →
+GERİ ⇒ kutu boş, liste 13 branş kartına dönüyor.
+
+#### Çare: terimi ADRESE yansıt — ama `useSearchParams()` YOK
+
+Bu depoda kayıtlı iki bedel var ve ikisi de tekrarlanmamalı:
+`useSearchParams()` sayfayı sunucuda üretilmez yapıyor (`/tools` bir tur
+19 KB ve **sıfır bağlantı** ile servis edildi), sunucuda `searchParams`
+okumak ise rotayı dinamikleştiriyor (her istek CDN'de MISS).
+
+Üçüncü yol kullanıldı — sayfanın zaten kategori için kullandığı kalıp:
+adres **bir kez elden** okunuyor (`window.location.search`), sonra
+`history.replaceState` ile tazeleniyor. Gezinme yok, geçmiş şişmiyor, sayfa
+statik kalıyor.
+
+**Bayrak DURUM, ref değil.** Adres okunmadan URL'e yazmak, okunacak değeri
+siler — bu depoda kayıtlı sınıfın (`UserContext`) URL tarafındaki hâli ve
+orada `useRef` YETMEDİĞİ ölçülmüştü.
+
+#### ⚠ İLK YAZIM BİR YARIŞ TAŞIYORDU — ölçüm gösterdi
+
+Rozete tıklamak `/tools?kategori=x`e gezinip adresi baştan yazıyor. Yansıtma
+etkisi `kategori`ye bağlansa bile **yönlendiriciden ÖNCE** çalışıyor; ölçüldü:
+rozet tıklamasından sonra adres `?kategori=nefroloji`, `ara` **düşmüş**
+(kutu doluyken).
+
+Çare etkiyi zorlamak değil, **gezinmenin kendisine terimi koymak**: rozet
+`href`leri arama terimini taşıyor. Sunucu HTML'i değişmiyor, çünkü
+`searchTerm` hem sunucuda hem ilk istemci render'ında boş.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| rozet tıklaması sonrası adres | `?kategori=nefroloji` | **`?kategori=nefroloji&ara=kalsiyum`** |
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| `/tools`: ara → araç → GERİ | kutu **"kalsiyum"**, 3 sonuç, y **400** — hepsi korundu |
+| `/tools`: kategori+ara → araç → GERİ | `?kategori=nefroloji&ara=kalsiyum`, 1 sonuç, y 298 |
+| `/topics`: ara → konu → GERİ | kutu **"tiroid"**, 27 bağlantı, "14 konu bulundu." |
+| doğrudan `?ara=` ile geliş | ikisinde de kutu dolu ve liste süzülmüş (**paylaşılabilir arama**) |
+| **negatif** — sorgu silinince | `ara` adresten **kalkıyor**, `/tools` 130 kart, `/topics` 13 branş kartı |
+| **negatif** — kategori tek başına | `?kategori=acil` → 15 araç (değişmedi) |
+| **negatif** — SUNUCU HTML'i | `/tools` `○` statik · 133 araç bağı · 18 kategori bağı · `ara=` **0** · "130 araç listeleniyor" |
+| **negatif** — geçmiş şişiyor mu | 7 tuş vuruşu, `history.length` **10 → 10** |
+| **negatif** — odak | kutu her tuş vuruşunda **DOM'da ve odakta** |
+
+Yedinci satır bu turun en önemli kontrolü: kayıtlı gerileme ("boş arama
+kutusunda 114 aracın hepsi eleniyordu, hub'ın 117 bağlantısı arama
+motorundan da kayboldu") geri gelmedi.
+
+#### `sizinti-denetim` bu değişikliği DOĞRU şekilde yakaladı
+
+Denetim "adres çubuğuna yazma: 1" dedi ve `ToolsIcerik.tsx`i gösterdi —
+tam olarak var olma sebebi bu. Verdikt betiğin başına yazıldı: yazılan şey
+hasta verisi değil, **hub'ın arama terimi**; hesaplayıcıların kendisi hâlâ
+hiçbir kanala yazmıyor (ağ 0 · depo 0) ve `ToolShare` sorguyu silmeye devam
+ediyor. Ödünleşme açıkça kabul edildi — terim artık tarayıcı geçmişine ve
+paylaşılan bağlantıya giriyor; kutu bir ARAÇ BULUCU, klinik değer alanı değil.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN: içindekiler çapaları geçmişi büyütüyor
+
+Konu sayfasındaki her `#bolum-…` tıklaması bir geçmiş kaydı ekliyor.
+Ölçüldü (12 maddelik içindekiler): 5 tıklama ⇒ `history.length` **2 → 7**,
+yani sayfadan çıkmak için 6 GERİ gerekiyor.
+
+Bu **standart tarayıcı davranışı** (Wikipedia, MDN aynı) ve `replaceState`e
+çevirmek "önceki bölüme dön" yeteneğini öldürür — 31 ekranlık klinik
+metinlerde gerçek bir kayıp. Ölçüldü, not edildi, dokunulmadı.
+
+#### Yan negatif kontrol: kimlik değişikliği HASH'ten etkilenmiyor
+
+Bu oturumda çalışma kimliği yol + sıralanmış SORGU olmuştu; hash'li bir
+sayfada hiç sınanmamıştı. Ölçüldü — 12 çapa tıklamasından sonra, adreste
+`#bolum-4-2-…` varken not yazıldı:
+
+| ölçüt | sonuç |
+|---|---|
+| not anahtarı | `medisea:notes:v1:/topics/enfeksiyon/invazive-mantar-enfeksiyon` |
+| anahtarda `#` | **yok** |
+| dizin kaydı | aynı çıplak yol, başlık doğru |
+
+`suankiSorgu()` yalnızca `location.search` okuyor; hash kimliğe girmiyor.
+Girseydi her içindekiler tıklaması yeni bir not kovası açardı.

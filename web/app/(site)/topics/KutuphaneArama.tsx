@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { aramaNormalize } from "@/app/lib/arama";
 
@@ -47,6 +47,40 @@ export default function KutuphaneArama({
   branslar: BransKarti[];
 }) {
   const [sorgu, setSorgu] = useState("");
+  /**
+   * SORGU ADRESTE TAŞINIYOR — kardeş yüzeyle (`/tools`) aynı gerekçe.
+   *
+   * Ölçüldü: "tiroid" yazıp (27 sonuç bağlantısı) bir konuyu açıp GERİ tuşuna
+   * basınca kutu BOŞALIYOR ve liste 13 branş kartına dönüyordu. Kaydırma
+   * konumu ise tarayıcı tarafından geri yükleniyor — ikisi birleşince
+   * kullanıcı bırakmadığı bir sayfaya dönüyor.
+   *
+   * `useSearchParams()` KULLANILMIYOR: bu depoda ölçülmüş bir kusur, sayfayı
+   * sunucuda üretilmez hâle getiriyor. Adres bir kez ELDEN okunuyor ve
+   * `history.replaceState` ile tazeleniyor — gezinme yok, geçmiş şişmiyor,
+   * sayfa statik kalıyor.
+   *
+   * Bayrak DURUM (ref değil): adres okunmadan yazmak, okunacak değeri siler.
+   */
+  const [adresOkundu, setAdresOkundu] = useState(false);
+
+  useEffect(() => {
+    setSorgu(new URLSearchParams(window.location.search).get("ara") ?? "");
+    setAdresOkundu(true);
+  }, []);
+
+  useEffect(() => {
+    if (!adresOkundu) return;
+    const p = new URLSearchParams(window.location.search);
+    const s = sorgu.trim();
+    if (s) p.set("ara", s);
+    else p.delete("ara");
+    const q = p.toString();
+    const yeni = window.location.pathname + (q ? `?${q}` : "") + window.location.hash;
+    if (yeni !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, "", yeni);
+    }
+  }, [sorgu, adresOkundu]);
 
   const aranan = aramaNormalize(sorgu);
   const sonuclar = useMemo(() => {
