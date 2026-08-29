@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 const CANCER_OPTS = [["Diğer", 0], ["Mide, Pankreas", 2], ["Akciğer, Lenfoma, Jinekolojik, Mesane, Testis", 1]] as const;
@@ -117,6 +118,8 @@ export default function KhoranaPage() {
             <input type="checkbox" className="sr-only" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
           </label>
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // Canadian CT Head Rule — minor head injury (GCS 13-15 after witnessed LOC/amnesia/confusion)
 const HIGH_RISK = [
@@ -150,6 +151,8 @@ export default function CanadianCTPage() {
             ))}
           </div>
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         {result && r && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg}`}>

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const DOSE_OPTS = [
@@ -162,6 +163,8 @@ export default function ActhStimPage() {
             </p>
           </div>
         )}
+
+        <SonucDuyuru metin={interp ? interp.label : null} />
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>

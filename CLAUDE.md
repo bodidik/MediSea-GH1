@@ -21834,3 +21834,88 @@ Yani bu iş "bir satır ekle" değil; ölçülmüş bir iş kalemi olarak duruyo
 okumada "bulunamadı" çıktı: üretilen HTML `0<!-- -->/<!-- -->15 satır`
 biçiminde ve etiket süzgecim yorumu boşlukla değiştirince desen tutmadı.
 Yorumları etiketlerden ÖNCE çıkarınca "0/15 satır" göründü.
+
+### AÇIK SINIF KAPATILDI — 34 araca sonuç duyurusu, 31 → 65
+
+Geçen tur ölçülüp ertelenen iş kalemi: hüküm basan ama duyurmayan **≥44
+araç**. Erteleme gerekçesi belgede kayıtlıydı — önceki 31'lik süpürmede
+**10 dosya yanlış yere yamalanmış**, `lint`/`typecheck` yalnızca 2'sini
+yakalamıştı (kalan 8'i geçerli JSX üretiyordu). Bu tur o kontrol ÖNCE
+kuruldu.
+
+| ölçüt | değer |
+|---|---|
+| duyurusu olan araç | 31 → **65** |
+| bu turda eklenen | **34** (33 mekanik + `mna` elle) |
+| **geri alınan** | **0** |
+| bağımsız yerleşim denetimi | **65 / 65 tamam** |
+| dosya başına fark | **+3 / −0** — aykırı **0** |
+| üretilmiş çıktıda `role="status"` | 79 → **80** araç |
+
+#### Yerleşim ölçütü İKİ KEZ yazıldı — ilki 26 aracı kaçırıyordu
+
+v1 ekleme noktasını **hüküm değişkenine** bağlı arıyordu
+(`{result && (` gibi bir blok açılışı) ve yalnızca **9** araç buldu.
+Kalan 26'da hüküm panosu **koşulsuz bir kapsayıcıda** basılıyor — değişkene
+bağlı bir açılış yok.
+
+v2 sayfanın **üst düzey girintisine** bağlandı. Çapa `<ToolTopNav` satırı:
+130 aracın 130'unda var ve en dış JSX seviyesinde duruyor. Ekleme noktası,
+hükmün render edildiği satırdan yukarı çıkıp aynı girintiye sahip ilk açılış
+satırı. Kapsam **9 → 34**.
+
+#### Yazma mantığından BAĞIMSIZ yerleşim denetimi
+
+Uygulayıcı plandaki hedef metne bakıyor; denetim planı **hiç okumuyor**,
+yalnızca dosyanın kendi yapısına bakıyor:
+
+1. tam bir `<SonucDuyuru` ve tam bir import,
+2. duyuru satırının girintisi = `<ToolTopNav` satırının girintisi,
+3. duyurudan sonraki ilk boş olmayan satır bir JSX açılışı,
+4. duyurudaki değişken **üst düzey bir `const`** (map parametresi değil),
+5. duyuru, o değişkenin ilk render satırından **ÖNCE**.
+
+Uygulayıcı ayrıca her yazmadan sonra dosyayı yeniden okuyup yerleşimi
+doğruluyor ve tutmazsa **dosyayı geri alıyor**. Geri alınan: 0.
+
+#### Davranış ölçüldü — duyuru görünür panelle birebir
+
+Yerel üretim derlemesinde `charlson` sürüldü:
+
+| durum | duyuru | görünür panel |
+|---|---|---|
+| boş form | "Sonuç: DÜŞÜK" | RİSK DÜŞÜK |
+| 3 komorbidite | **"Sonuç: YÜKSEK"** | **RİSK YÜKSEK** · CCI 3 |
+
+Karşılaştırma **döngüsel değil**: `[role=status]` klondan çıkarıldı
+(belgede kayıtlı tuzak — duyuruyu ölçüme geri vermek kendini doğrular).
+
+**Boş formda hüküm duyuran iki araç KUSUR DEĞİL:** `bmi` "Sonuç: NORMAL",
+`egfr` "Sonuç: G1" diyor. Girdileri kontrol edildi — **görünür varsayılan
+taşıyorlar** (bmi 170/70, egfr 1.0/45), yani duyurulan şey kullanıcının
+gördüğü değerlerin aritmetiği. Belgedeki "beyan edilmiş varsayım" kovası
+(`news2` · `sofa` · `psi-port` · `child-pugh` · `gcs`).
+
+`mna`nın duyurusu ise **"Sonuç: 6 soru daha yanıtlanmalı"** — bu oturumda
+düzeltilen eksik-veri metni, hüküm değil. Doğru davranış.
+
+#### ⚠ İKİ KÖRLÜK BENDEYDİ, ÜRÜNDE DEĞİL
+
+- **`mna` "ToolTopNav importu yok" diye atlandı.** Kabuk sayıldı:
+  **130 / 130** araçta `<ToolTopNav` var. `mna` onu GÖRELİ yolla içe
+  aktarıyor (`../components/ToolTopNav`), benim ölçütüm takma ad biçimini
+  (`@/app/tools/components/…`) arıyordu. Elle, kendi biçimiyle eklendi.
+- **`mna` bölgesi üretilmiş çıktıda "YOK" göründü.** Değildi: kontrol
+  regex'im içeriği 30 karakterle kırpıyordu, metin 31 karakter. Belgedeki
+  *"ekrana basmak için kırptığın değeri ölçüme geri verme"* kuralı, bu kez
+  desen uzunluğunda.
+
+#### Kalan 10 araç — elle karar, gerekçesiyle
+
+| araç | neden mekanik değil |
+|---|---|
+| `anion-gap` · `asdas` · `das28` · `glasgow-blatchford` · `hba1c-eag` · `ktv` · `sga` · `spot-urine` | hüküm `{X.label}` olarak render edilmiyor (etiket satır içi kuruluyor) |
+| `ogtt` | üst düzey açılış bulunamadı |
+| `rockall` | **iki** hüküm değişkeni (`rPre` · `rPost`) — hangisinin duyurulacağı tasarım kararı |
+
+Bunlar "temiz" DEĞİL; ölçülmüş, şekli yazılmış bir kalan iş.

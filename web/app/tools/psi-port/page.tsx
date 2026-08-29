@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /**
@@ -184,6 +185,8 @@ export default function PsiPortPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={riskClass ? riskClass.label : null} />
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-3">
           <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${riskClass.bg} ${riskClass.color}`}>
             {riskClass.label} — 30 Günlük Mortalite {riskClass.mortality}

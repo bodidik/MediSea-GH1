@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function BmiPage() {
@@ -149,6 +150,8 @@ export default function BmiPage() {
           <div className="text-7xl font-black text-white drop-shadow-lg">{bmi || "–"}</div>
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">kg / m²</span>
         </div>
+
+        <SonucDuyuru metin={cat ? cat.label : null} />
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${cat.border} ${cat.bg}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">KATEGORİ</span>

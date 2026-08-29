@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 export default function HomaIrPage() {
@@ -59,6 +60,8 @@ export default function HomaIrPage() {
           <div className="text-7xl font-black text-white drop-shadow-lg">{homa || "–"}</div>
           <span className="text-[9px] font-bold text-amber-400 uppercase tracking-widest mt-2">Glukoz × İnsülin ÷ 405</span>
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-2">YORUM</span>

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const AGE_OPTS    = [["<30",0],["30–39",8],["40–49",25],["50–59",41],["60–69",58],["70–79",75],["80–89",91],["≥90",100]] as const;
 const HR_OPTS     = [["<50",0],["50–69",3],["70–89",9],["90–109",15],["110–149",24],["150–199",38],["≥200",46]] as const;
@@ -105,6 +106,8 @@ export default function GracePage() {
           <CheckRow label="ST Segment Değişikliği" sub="+28 puan" checked={s.st} onChange={() => setS(p => ({...p, st: !p.st}))} />
           <CheckRow label="Kardiyak Enzim Yüksekliği" sub="+14 puan" checked={s.enzymes} onChange={() => setS(p => ({...p, enzymes: !p.enzymes}))} />
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

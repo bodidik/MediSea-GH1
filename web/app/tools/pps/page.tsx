@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const PPS_TABLE = [
   { pps: 100, ambulation: "Tam",           activity: "Normal — hastalık yok",                    selfcare: "Tam",          intake: "Normal",              consciousness: "Uyanık/Net" },
@@ -81,6 +82,8 @@ export default function PpsPage() {
           <div className="text-7xl font-black text-white">{selected ?? "–"}</div>
           {row && <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">{row.consciousness}</span>}
         </div>
+
+        <SonucDuyuru metin={interp ? interp.label : null} />
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const CATEGORIES = [
   { id: "dress", label: "Giyinme & Bakım", items: ["Kendinizi giyinmek (düğme, fermuar dahil)", "Saçınızı yıkamak"] },
@@ -147,6 +148,8 @@ export default function HaqDiPage() {
             <span className="text-3xl font-black text-blue-900">{total.toFixed(2)}</span>
           )}
         </div>
+
+        <SonucDuyuru metin={result ? result.label : null} />
 
         {result && total !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>

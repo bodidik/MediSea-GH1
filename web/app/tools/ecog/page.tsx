@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * ECOG Performans Durumu Gündüz Modu (Sakin Deniz)
  * Kaynak: Eastern Cooperative Oncology Group Performance Status Scale
@@ -103,6 +104,8 @@ export default function EcogPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={interpretation ? interpretation.label : null} />
+
         {interpretation && (
           <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
              <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>

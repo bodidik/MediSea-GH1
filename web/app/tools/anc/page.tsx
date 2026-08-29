@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function AncPage() {
@@ -110,6 +111,8 @@ export default function AncPage() {
           <div className="text-7xl font-black text-white drop-shadow-lg">{girdiGecerli ? anc : "–"}</div>
           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">hücre / mm³</span>
         </div>
+
+        <SonucDuyuru metin={g ? g.label : null} />
 
         <div className={`p-6 rounded-[2rem] border-2 border-dashed shadow-sm text-center ${g.bg} ${g.border}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-1">NÖTROPENİ EVRELEMESİ</span>

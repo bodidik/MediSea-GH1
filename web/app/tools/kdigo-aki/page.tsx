@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /** * KDIGO AKI Evrelemesi Gündüz Modu (Sakin Deniz)
@@ -183,6 +184,8 @@ export default function KdigoAkiPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={stageMeta ? stageMeta.label : null} />
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${stageMeta.bg} ${stageMeta.color}`}>
              {stageMeta.label}

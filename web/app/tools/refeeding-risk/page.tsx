@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const HIGH_RISK_CRITERIA = [
   { id: "bmi_under16", label: "BMI < 16 kg/m²" },
@@ -124,6 +125,8 @@ export default function RefeedingRiskPage() {
         <CheckGroup title="Yüksek Riskli Kriterler (herhangi biri yeterli)" items={HIGH_RISK_CRITERIA} checked={high} set={setHigh} />
         <CheckGroup title="Orta Riskli Kriterler (≥2 tanesi yüksek risk)" items={MODERATE_RISK_CRITERIA} checked={mod} set={setMod} />
         <CheckGroup title="Özel Durumlar (yüksek risk olarak kabul edilir)" items={SPECIAL} checked={spec} set={setSpec} />
+
+        <SonucDuyuru metin={risk ? risk.label : null} />
 
         {risk && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${risk.border} ${risk.bg}`}>

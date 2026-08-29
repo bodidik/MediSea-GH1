@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const GRADES = [
   { value: 100, label: "100 — Normal",                     desc: "Şikayet yok, hastalık belirtisi yok" },
@@ -73,6 +74,8 @@ export default function KarnofskyPage() {
           <div className="text-7xl font-black text-white">{selected ?? "–"}</div>
           {selected !== null && <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">/ 100</span>}
         </div>
+
+        <SonucDuyuru metin={interp ? interp.label : null} />
 
         {interp && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${interp.border} ${interp.bg}`}>

@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * Glasgow Koma Skalası (GKS) Gündüz Modu (Sakin Deniz)
  * Toplam = Göz Açma (E, 1-4) + Sözel Yanıt (V, 1-5) + Motor Yanıt (M, 1-6)
@@ -140,6 +141,8 @@ export default function GcsPage() {
         </div>
 
         {/* YORUMLAMA PANELİ */}
+        <SonucDuyuru metin={interpretation ? interpretation.label : null} />
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
            <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
              {interpretation.label}

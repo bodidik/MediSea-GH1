@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { egfrCkdEpi2021, Sex, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * eGFR (CKD-EPI 2021) Gündüz Modu (Sakin Deniz)
@@ -117,6 +118,8 @@ export default function EgfrPage() {
         </div>
 
         {/* EVRELEME PANELİ */}
+        <SonucDuyuru metin={interpretation ? interpretation.label : null} />
+
         <div className={`p-6 rounded-[2rem] border border-blue-900/5 shadow-sm text-center ${interpretation.bg}`}>
            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest block mb-1 text-center">KDIGO EVRELEMESİ</span>
            <p className={`text-xl font-black italic tracking-tight ${interpretation.color}`}>

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
 import ToolTopNav from "../components/ToolTopNav";
+import SonucDuyuru from "../components/SonucDuyuru";
 
 /** * MediSea Donanması - Geriatri & Nütrisyon Üssü
  * MNA® - Mini Nutritional Assessment (Kısa Form)
@@ -148,6 +149,8 @@ export default function MNAPage() {
         </div>
 
         {/* SKOR PANELİ */}
+        <SonucDuyuru metin={result ? result.label : null} />
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-950 rounded-[2rem] p-6 text-center border-t-4 border-amber-400 shadow-xl">
             <span className="text-[10px] font-black text-blue-300 uppercase tracking-widest block mb-1">SKOR</span>

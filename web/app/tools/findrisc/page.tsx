@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const AGE_OPTS    = [["< 45 yaş", 0], ["45–54 yaş", 2], ["55–64 yaş", 3], ["≥ 65 yaş", 4]] as const;
 const BMI_OPTS    = [["< 25 kg/m²", 0], ["25–30 kg/m²", 1], ["≥ 30 kg/m²", 3]] as const;
@@ -101,6 +102,8 @@ export default function FindriscPage() {
           <RadioGroup label="Geçmişte Yüksek Kan Şekeri" opts={GLUHI_OPTS} value={glu} onChange={setGlu} />
           <RadioGroup label="Aile Öyküsü" opts={FAMHX_OPTS} value={fam} onChange={setFam} />
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

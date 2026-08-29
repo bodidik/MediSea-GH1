@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 function scoreAlbumin(alb: number) {
@@ -85,6 +86,8 @@ export default function ConutPage() {
             </div>
           )}
         </div>
+
+        <SonucDuyuru metin={result ? result.label : null} />
 
         {result && total !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>

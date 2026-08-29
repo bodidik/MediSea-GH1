@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // CAM-ICU: 4 özellik — Özellik 1 + Özellik 2 + (Özellik 3 VEYA Özellik 4) = Deliryum
 const FEATURES = [
@@ -134,6 +135,8 @@ export default function CAMICUPage() {
             </div>
           ))}
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         {result && r && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg}`}>

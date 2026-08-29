@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const CPS_OPTS = [
   ["Tahmini sağkalım > 12 hafta", 0],
@@ -132,6 +133,8 @@ export default function PapScorePage() {
           <RadioGroup label="Lökosit Sayısı" opts={WBC_OPTS} idx={wbcIdx} onChange={setWbcIdx} />
           <RadioGroup label="Lenfosit Yüzdesi" opts={LYM_OPTS} idx={lymIdx} onChange={setLymIdx} />
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

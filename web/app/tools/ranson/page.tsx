@@ -3,6 +3,7 @@
 import React, { useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * Ranson Kriterleri Gündüz Modu (Sakin Deniz)
  * Akut Pankreatit Şiddet Değerlendirmesi — Girişte 5, 48. saatte 6 kriter
@@ -108,6 +109,8 @@ export default function RansonPage() {
         </div>
 
         {/* SKOR VE ANALİTİK YORUM */}
+        <SonucDuyuru metin={interpretation ? interpretation.label : null} />
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>

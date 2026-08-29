@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const PPS_OPTS = [["≥ 60", 0], ["30–50", 2.5], ["10–20", 4]] as const;
 const INTAKE_OPTS = [["Normal veya hafif azalmış", 0], ["Orta derecede azalmış", 1], ["Ağır derecede azalmış (yudum/ağız bakımı)", 2.5]] as const;
@@ -91,6 +92,8 @@ export default function PpiPage() {
           <CheckRow label="İstirahat Dispnesi" sub="Dinlenirken nefes darlığı" pts={3.5} checked={dyspnea} onChange={() => setDyspnea(v => !v)} />
           <CheckRow label="Deliryum" sub="Deliryum veya bilinç bulanıklığı" pts={6} checked={delirium} onChange={() => setDelirium(v => !v)} />
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

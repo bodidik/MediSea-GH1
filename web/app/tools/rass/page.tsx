@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const LEVELS: { score: number; label: string; detail: string; color: string }[] = [
   /* +4 bir dönem "+3 — Çok Ajite" ile BİREBİR AYNI etiketi taşıyordu: on
@@ -82,6 +83,8 @@ export default function RASSPage() {
             );
           })}
         </div>
+
+        <SonucDuyuru metin={level ? level.label : null} />
 
         {selected !== null && level && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg}`}>

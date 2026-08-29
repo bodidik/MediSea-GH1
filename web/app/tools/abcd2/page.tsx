@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const DUR_OPTS = [["< 10 dakika", 0], ["10–59 dakika", 1], ["≥ 60 dakika", 2]] as const;
 const CLN_OPTS = [["Diğer semptomlar", 0], ["Konuşma bozukluğu (motor güç normal)", 1], ["Tek taraflı motor zayıflık", 2]] as const;
@@ -99,6 +100,8 @@ export default function Abcd2Page() {
           <SelectRow label="Semptom Süresi" opts={DUR_OPTS} value={dur} onChange={setDur} />
           <CheckRow label="Diyabetes Mellitus" sub="D — Diabetes" checked={dm} onChange={() => setDm(v => !v)} />
         </div>
+
+        <SonucDuyuru metin={r ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
