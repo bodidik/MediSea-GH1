@@ -23005,3 +23005,92 @@ kaynakta duruyordu.
   tarif etmek.
 - **`python - <<'PY'` bu ortamda yok** ve stdin'de asılıyor; bu oturumda
   dördüncü kez. Kural sertleşiyor: **yedek olarak bile yazma.**
+
+### HERKESTE AYNI OLAN 228 BAYT, HER ZİYARETTE YENİDEN ÜRETİLİYORDU
+
+Yeni eksen: **`force-dynamic` ilan eden bir rotanın gerekçesi var mı?**
+
+Ölçüt bu depoda ZATEN kayıtlı iki kuralın kesişimi:
+
+- *"`/tools` bir tur dinamik kaldı — üst üste üç istek MISS ve 155 KB'lık sayfa
+  her istekte yeniden üretildi"* (gerçek kusur), ve
+- *"hep MISS olan her rota bir performans kusuru DEĞİLDİR; önce yanıtın
+  KULLANICIYA ÖZEL olup olmadığına bak"* (karşı kural).
+
+İkisini birleştiren soru şu: rota `auth()` · `cookies()` · `headers()` ·
+`searchParams` · `nextUrl` gibi **isteğe bağlı** bir şey okuyor mu? Okumuyorsa
+dinamiklik gerekçesizdir.
+
+| kova | rota |
+|---|---|
+| **gerekçesi VAR** | `api/study` (auth · yazma) · `api/_guidelines` (vekil · Date) |
+| **gerekçe YOK** | **`api/branch-counts`** |
+
+Yani `force-dynamic` ilan eden üç rotadan ikisi haklı, biri değil — ve o biri
+**kendi yorumuyla çelişiyordu**:
+
+```
+// Not: Buradaki veri herkese açık içerik sayımıdır, kullanıcıya özel bir şey
+// içermez; oturum gerektirmez ve arka uca bağımlı değildir.
+export const dynamic = "force-dynamic";
+```
+
+Not "herkeste aynı" diyor, direktif "hiç önbelleğe alma" diyor.
+
+**Bedeli canlıda ölçüldü** — üç istek, üçü de:
+
+| ölçüt | değer |
+|---|---|
+| `x-vercel-cache` | **MISS · MISS · MISS** |
+| `cache-control` | `public, max-age=0, must-revalidate` |
+| gövde | **228 bayt**, herkeste birebir aynı |
+| süre | 0.93 · 0.37 · 0.47 sn |
+
+`/calisma-alanim` ya da premium profil açan **her ziyaretçi**, dağıtımdan
+dağıtıma değişmeyen 13 sayı için bir sunucusuz çağrı harcıyordu.
+
+**Kıyas aynı depoda duruyordu:** `sitemap.xml` de dosya sisteminden türüyor, o
+da herkese açık ve deploy'a bağlı — ve **PRERENDER → HIT**. İki eş veri, iki
+ayrı muamele.
+
+#### ⚠ DİREKTİFİ SİLMEK YETMEDİ — Next 15'te GET işleyicileri varsayılan olarak önbelleklenmiyor
+
+Beklentim "satırı kaldır, rota statikleşir" idi. Ölçüm çürüttü: `force-dynamic`
+kaldırıldıktan sonra rota tablosunda **hâlâ `ƒ`**. Next 15 GET rota
+işleyicilerinin önbellek varsayılanını tersine çevirmiş; statik üretim AÇIKÇA
+istenmek zorunda. Çare `export const dynamic = "force-static"`.
+
+Bu, belgedeki *"beklenti tutmadığında önce beklentiyi sına"* kuralının bu
+turdaki hâli — ve tek adımda kalınsaydı sonuç "düzelttim" diye raporlanacak,
+davranış hiç değişmemiş olacaktı.
+
+**Doğrulama:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| rota tablosu | **ƒ** /api/branch-counts | **○** (statik) |
+| üretilen sayfa | 636 | **637** |
+| yerel önbellek başlığı | — | `x-nextjs-cache: HIT` · `s-maxage=31536000` |
+| **gövde** | 228 bayt | **canlı gövdeyle BİREBİR aynı** (diff 0) |
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| `/api/study` hâlâ dinamik mi | **evet** — `ƒ`, ve `401 {"ok":false,"reason":"auth"}` |
+| `/calisma-alanim` kapsama bölümü çiziliyor mu | **evet** — tarayıcıda `0 / 423` · `0/116` · `0/79` · `0/52` · `0/41` · `0/37` (uçtaki JSON ile birebir) |
+| ağ | `GET /api/branch-counts` → **200** |
+| hata sınırı | yok · `h1` 1 |
+| `/calisma-alanim` · `/tekrar` · `/topics` | 200 · 200 · 200 |
+| 13 CI adımı + lint + typecheck + build | **hepsi geçti** |
+
+Tarayıcı konsolundaki tek hata `/api/auth/session` **500** ve o bir YEREL
+ortam artefaktı: ölçüm sunucusunda `AUTH_SECRET`/`NEXTAUTH_URL` yok (belgede
+kayıtlı `UntrustedHost` durumu). Canlıda o uç çalışıyor; değişiklikle ilgisi
+yok — kaynağı ağ günlüğünden adıyla doğrulandı.
+
+**Aktarılabilir kural: bir rotanın dinamik olması bir İDDİADIR — "bu yanıt
+isteğe göre değişir".** İddiayı sınamanın ucuz yolu, rotanın isteğe bağlı bir
+API okuyup okumadığını saymak. Bu depoda o soru bir kez sorulmadığı için 130
+araçlık hub bir tur boyunca her istekte yeniden üretilmişti; burada aynı soru
+228 baytlık bir sayaç için sorulmadan kalmıştı.
