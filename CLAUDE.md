@@ -21993,3 +21993,77 @@ etiket altında ölçmek bu belgede en az iki kez yanlış kayıt üretti.
 
 Aynı ölçüm `anion-gap` için de yapıldı ve orada da varsayılan var
 (140/104/24 → "Normal Aralık"), yani duyuru panelle birebir.
+
+### DUYURU ↔ GÖRÜNÜR PANEL TUTARLILIĞI — 40 dosyalık süpürmenin kendi doğrulaması
+
+Bir duyuru YANLIŞ değişkene bağlanmış olabilir: kod derlenir, kapılar geçer,
+yerleşim denetimi de geçer — çünkü hepsi ŞEKLE bakıyor. Tek ayırt edici ölçüm
+şu: **duyurulan metin, görünür panelde gerçekten var mı?**
+
+Üretilmiş çıktının tamamı tarandı (130 araç HTML):
+
+| ölçüt | değer |
+|---|---|
+| duyuru bölgesi olmayan | 59 (130 − 71) |
+| bölge VAR ama BOŞ | **46** — panel varsayılan durumda çizilmiyor |
+| **dolu duyuru** | **25** |
+| **görünür panelde VAR** | **25 / 25** |
+| tutmayan | **0** |
+
+Karşılaştırma **döngüsel değil**: `role="status"` bloğu gövdeden çıkarıldıktan
+sonra arandı (belgede kayıtlı tuzak — duyuruyu ölçüme geri vermek kendini
+doğrular).
+
+#### Beyanı olmayan 5 araç — beşi de temiz, ama DEDEKTÖR kusurluydu
+
+25 aracın 5'i "sıfır beyanla hüküm duyuruyor" göründü:
+`ipi` · `mna` · `ranson` · `sle` · `timi-ua`.
+
+Dedektör dört kanal sayıyordu: dolu `input`, **işaretli** kutu, basılı düğme,
+seçili `option`. Kontrol sayıları ölçülünce sebep çıktı:
+
+| araç | onay kutusu | basılı düğme | duyuru |
+|---|---|---|---|
+| `ipi` · `timi-ua` · `ranson` · `sle` | 5 · 7 · 11 · **24** | 0 | en düşük bant |
+| `mna` | 0 | **19** (hiçbiri basılı değil) | **"6 soru daha yanıtlanmalı"** |
+
+Dördü **saf onay kutusu** aracı ve belgede kayıtlı verdikt açık: *işaretsiz =
+ölçüt YOK, gerçek bir cevap.* Kullanıcı 24 işaretsiz kutu görüyor, skor 0,
+bant en düşük — ekrandan doğrulanabilir. `mna` ise hüküm DEĞİL, bu oturumda
+eklenen eksik-veri metnini duyuruyor.
+
+**Aktarılabilir kural: "beyan" kanalı SET EDİLMİŞ değeri değil GÖRÜNÜR
+KONTROLÜ saymalı.** İşaretsiz bir onay kutusu da bir beyandır; yalnızca
+`checked` sayan bir dedektör dört sağlam aracı kusurlu gösteriyor.
+
+#### 46 sessiz araç ancak SÜRÜLEREK doğrulanır — ikisi sürüldü
+
+Statik tarama yalnızca varsayılan durumu görüyor. En riskli iki araç seçildi:
+
+**`ktv`** — bu turda render'ı değiştirilen tek araç (hüküm metni tek kaynağa
+alındı). Üç durum:
+
+| girdi | duyuru | panelde |
+|---|---|---|
+| boş form | **yok** | — |
+| 60/20/240/2/70 | "HEMODİYALİZ YETERLİLİĞİ SAĞLANDI" | ✓ |
+| 100/5/480/2/70 | **"DEĞERLENDİRİLEMEDİ — değerleri kontrol edin"** | ✓ |
+
+Üçüncü satır aynı zamanda bu oturumdaki NaN düzeltmesinin hâlâ çalıştığını
+gösteriyor — tekleştirme üç dalın üçünü de korumuş.
+
+**`sga`** — dokuz gruplu düğme aracı:
+
+| durum | duyuru |
+|---|---|
+| boş form | yok |
+| dokuz grup da C | "SGA-C: AĞIR MALNÜTRİSYON" |
+| **negatif** — bir grup A'ya döndü | **değişmedi** (8/9 hâlâ C — SGA'da beklenen) |
+| **negatif** — dokuz grup da A | **"SGA-A: İYİ BESLENMİŞ"** |
+
+Üçüncü satır tek başına yetersiz olurdu ("duyuru donmuş" da olabilirdi);
+dördüncüsü hükmün gerçekten değiştiğini gösteriyor.
+
+Kalan 44 sessiz araç sürülmedi ve **"temiz" DENMİYOR**; statik tarafta
+tutarlılık 25/25, davranış tarafında 3 araç (bu tur `ktv` · `sga`, geçen tur
+`charlson`).
