@@ -24587,3 +24587,93 @@ yeniden "Erişim Kısıtlı"). Kapılar: lint · typecheck · build **637/637**.
 - **Cevap dağılımı**: yeni set A %48 · E %36 · B %12 · D %4 · **C hiç**.
   Banka geneli B %54.2 → **%51.5** (yeni set global dengeyi iyileştirdi ama
   kendi içinde başka yöne çarpık).
+
+### DENETİM "OKUNUYOR" DİYORDU, ALAN YALNIZCA ADIYLA GEÇİYORDU — üç ölü alan sahte temiz almıştı
+
+Geçen turun quiz künyesi düzeltmesinden sonra sorulan soru: **aynı sınıf öteki
+motorlarda da var mı?** Ölçüldü — flashcard ve inci geri bağlantısı
+(`.../${branch}/${id}`) konu dosyasına düşmeyen **4 set** var
+(`endokrinoloji/akromegali` · `nefroloji/hiperf-kbh` · `hematoloji/aml` ·
+`nefroloji/lupus-nefriti`). **Dördü de kusur DEĞİL:** o setlere bağlanan bir
+konu yok (modül kartı `id`yi KONUNUN kimliğinden kuruyor), yani hepsi
+`yetim-denetim`in zaten raporladığı yetim dosyalar. Ulaşılabilir bir setin
+geri bağlantısı yapı gereği geçerli.
+
+Ama aynı taramada `ilan-render-denetim` çalıştırıldı ve **"premium konu:
+okunmayan alan yok"** dedi. O rapor yanlıştı.
+
+#### Ölçüt üç kova değil İKİ kova kullanıyordu
+
+Alan okuması iki desenle aranıyor:
+
+```
+desen    : ozellik erisimi   ->  .alan   ["alan"]
+dogrudan : ciplak ad         ->  \balan\b
+```
+
+`dogrudan` bir YIKIM okumasını (`const { baslik } = veri`) kurtarmak için
+var. Ama aynı gevşeklik bir **tip bildirimini** ve veriyle ilgisi olmayan bir
+**yerel değişkeni** de "okundu" sayıyor.
+
+Ölçüldü — bugün yalnızca çıplak adla kurtulan **üç alan** var ve **üçü de
+veriden hiç okunmuyor**:
+
+| alan | kayıt | koddaki TEK geçişi |
+|---|---|---|
+| **premium konu . `istatistikler`** | **42 dosya** | tip + `const istatistikler = {…}` (değeri `envanterAl`den) |
+| flashcard . `description` | 21 dosya | **yalnızca `description?: string;`** tip bildirimi |
+| vaka adımı . `branch` | 10 kayıt | URL parametresi / prop — `veri.branch` hiç yok |
+
+#### `istatistikler` ÇOKTAN AYRIŞMIŞ — 42 dosyanın 5'i
+
+Konu sayfası ve pano sayıları `envanterAl`den alıyor (belgede kayıtlı
+düzeltme: *"İlana güvenildiğinde 38 hazır konunun 5'i yanlış sayı
+gösteriyordu"*). Dosyadaki alan o turdan beri **ölü** — ve ölü olduğu için
+sessizce kaymış:
+
+| konu | ilan | gerçek |
+|---|---|---|
+| `endokrinoloji/graves-hastaligi` | 10 | **0** |
+| `hematoloji/aml-ana` | 24 | **9** |
+| `endokrinoloji/hashimoto-tiroiditi` | 7 | 10 |
+| `gogus-hastaliklari/hkp` | 10 | 11 |
+| `kardiyoloji/hfpef-ileri-degerlendirme` | 10 | 11 |
+
+Kullanıcıya ulaşmıyor (ekranda envanter basılıyor), ama `steroid-dose`un
+`gluco` alanıyla **birebir aynı tuzak**: anlamlı görünen, hiç okunmayan,
+yanlış düzenlemeye davetiye çıkaran bir alan. Soru sayısını oradan düzelten
+biri hiçbir etki görmez.
+
+#### Çare ADAY üretmek değil — ÜÇÜNCÜ KOVA
+
+`dogrudan`ı tümden kaldırmak kolay ama yanlış: yarın yıkımla okunan meşru bir
+alan sahte kusur olurdu. (Yıkım hedefi olup olmadığına bakan bir ara ölçüt de
+denendi ve YETMEDİ — `vaka.branch` yıkım hedefi olarak eşleşiyor, çünkü
+`const { branch, id } = await searchParams` var; oysa okunan şey VERİ değil
+URL.)
+
+Denetim artık üç kova raporluyor: **okunuyor** (özellik erişimi) ·
+**ZAYIF** (yalnızca çıplak ad — elle bak) · **ADAY** (hiç geçmiyor).
+`payda-denetim`in "ayrıştırılamadı" kovasıyla aynı karar: **bilmediğini
+söylemek, tahmin etmekten iyidir.**
+
+Üç verdikt betiğin başına yazıldı — yeniden kovalanmasın.
+
+#### Doğrulama
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **ADAY sayısı** | **11** | **11** — yeni sahte kusur yok |
+| zayıf eşleşme | (görünmüyordu) | **3**, üçü de karara bağlı |
+| şema sapması | 4 | 4 |
+| **negatif** — meta test (`yorum-korlugu-denetim`) | 15/15 | **15/15 temiz** |
+| lint · typecheck | — | geçti |
+
+**İÇERİK DEĞİŞTİRİLMEDİ.** Kayan beş sayı bir içerik kararı: alan ya
+gerçeğe hizalanır ya da dosyalardan tümüyle kaldırılır (ekranda karşılığı
+zaten envanterden geliyor). Ölçüm ve kapsam burada; karar içerik sahibinin.
+
+**Aktarılabilir kural: bir tarayıcı "okunuyor" derken NEYİ eşleştirdiğini
+söylemeli.** Bu depoda "0 kusur ile 0 ölçüm aynı görünür" kuralı vardı;
+buradaki hâli bir adım sinsi — ölçüm yapılıyor, eşleşme GERÇEK bir okuma
+değil, ve rapor kendinden emin bir "temiz" basıyor.

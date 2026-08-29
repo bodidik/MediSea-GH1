@@ -22,6 +22,18 @@
  *     aml-quiz-1.json` İngilizce şeması. Motor `veri.sorular ?? []` ile
  *     karşılıyor ve dürüst boş durum + çıkış bağlantısı basıyor — çökme YOK.
  *
+ * ZAYIF EŞLEŞME KOVASI — karara bağlanmış üçü, yeniden kovalanmasın:
+ *   premium konu . istatistikler (42 dosya) : ÖLÜ ALAN. Konu sayfası da pano
+ *     da sayıları `envanterAl`den alıyor (kayıtlı düzeltme); dosyadaki alan
+ *     hiç okunmuyor. Ve ÇOKTAN AYRIŞMIŞ: 42 dosyanın 5'inde ilan edilen soru
+ *     sayısı gerçekle tutmuyor (graves 10↔0, hashimoto 7↔10, hkp 10↔11,
+ *     aml-ana 24↔9, hfpef 10↔11). Kullanıcıya ulaşmıyor ama `steroid-dose`un
+ *     `gluco` alanıyla aynı tuzak: birinin düzeltip hiçbir etki görmemesi.
+ *   flashcard . description (21 dosya) : ölü — okuyan dosyada TEK geçiş bir
+ *     tip bildirimi (`description?: string;`), hiçbir yerde render edilmiyor.
+ *   vaka adımı . branch (10 kayıt) : ölü — `vaka-coz` geri bağlantıyı URL
+ *     parametresinden kuruyor, dosyanın `branch`i hiç okunmuyor (kayıtlı).
+ *
  * Ölçütün sınırı YAZILI: kod tarafı metinsel taranıyor, yani bir alan
  * `{...obj}` yayılımıyla ya da `obj[degisken]` ile okunuyorsa "okunmuyor"
  * görünebilir. O yüzden bu ADAY üretir, karar vermez.
@@ -135,30 +147,56 @@ for (const g of ESLEME) {
     kod += yorumSil(fs.readFileSync(p, 'utf8')) + '\n';
   }
 
+  /**
+   * ÜÇ KOVA — çünkü iki kova bir kez SAHTE TEMİZ üretti.
+   *
+   * `desen` bir ÖZELLİK ERİŞİMİ arıyor (`.alan`, `["alan"]`); `dogrudan` ise
+   * yalnızca çıplak adın metinde geçmesine bakıyor. İkincisi bir yıkım
+   * okumasını (`const { baslik } = veri`) kurtarmak için var — ama aynı
+   * gevşeklik bir TİP BİLDİRİMİNİ (`description?: string;`) ya da veriyle
+   * ilgisi olmayan bir YEREL DEĞİŞKENİ (`const istatistikler = {...}`) de
+   * "okundu" sayıyor.
+   *
+   * Ölçüldü: bugün bare-identifier ile kurtulan ÜÇ alan var ve ÜÇÜ DE
+   * veriden hiç okunmuyor (aşağıdaki verdiktler). Yani kova "okunuyor"
+   * dediği her yerde haklı DEĞİLDİ.
+   *
+   * Çare adayı üretmek değil — o zaman yıkımla okunan meşru bir alan sahte
+   * kusur olurdu. Ayrı bir kovaya yazılıyor: `payda-denetim`in
+   * "ayrıştırılamadı" kovasıyla aynı karar — bilmediğini söylemek, tahmin
+   * etmekten iyidir.
+   */
   const okunmayan = [];
+  const zayif = [];
   for (const [k, n] of alan) {
     const desen = new RegExp('[."\'\\[]' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '["\'\\]]?');
     const dogrudan = new RegExp('\\b' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
     if (!desen.test(kod) && !dogrudan.test(kod)) okunmayan.push({ k, n });
+    else if (!desen.test(kod)) zayif.push({ k, n });
   }
 
-  rapor.push({ ad: g.ad, kayit, alanSayisi: alan.size, okunmayan, eksikDosya, alan });
+  rapor.push({ ad: g.ad, kayit, alanSayisi: alan.size, okunmayan, zayif, eksikDosya, alan });
 }
 
 console.log('İLAN–RENDER SÜPÜRMESİ\n');
 let toplamAday = 0;
+let toplamZayif = 0;
 for (const r of rapor) {
   console.log('=== ' + r.ad);
   console.log('    kayıt: ' + r.kayit + '   benzersiz alan: ' + r.alanSayisi);
   if (r.eksikDosya.length) console.log('    !! okunamayan kod dosyası: ' + r.eksikDosya.join(', '));
   if (r.alanSayisi === 0) { console.log('    !! SIFIR alan ölçüldü — eşleme yanlış olabilir'); continue; }
-  if (!r.okunmayan.length) { console.log('    okunmayan alan yok.'); continue; }
   for (const o of r.okunmayan.sort((a, b) => b.n - a.n)) {
     console.log('    ADAY  ' + o.k + '  (' + o.n + ' kayıtta)');
     toplamAday++;
   }
+  for (const z of r.zayif.sort((a, b) => b.n - a.n)) {
+    console.log('    ZAYIF ' + z.k + '  (' + z.n + ' kayıtta) — yalnızca çıplak ad geçiyor, özellik erişimi YOK');
+    toplamZayif++;
+  }
+  if (!r.okunmayan.length && !r.zayif.length) console.log('    okunmayan alan yok.');
 }
-console.log('\ntoplam aday: ' + toplamAday);
+console.log('\ntoplam aday: ' + toplamAday + '   ·   zayıf eşleşme: ' + toplamZayif);
 
 /* ──────────────────────────────────────────────────────────────────────
    2) ŞEMA SAPMASI (set düzeyi)
