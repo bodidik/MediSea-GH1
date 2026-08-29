@@ -25982,3 +25982,115 @@ alınabilir; o karar içerik sahibinin.
 tablonun NEDEN elle tutulduğunu sor.** Bu turda istenen satır bir semptomdu;
 tablonun kendisi kusurdu ve iki branşta çoktan ayrışmıştı. Eklenecek satır
 kusuru bir branş için kapatır, mekanizmayı bir sonraki branşa devrederdi.
+
+### ÜCRETLİ SAYFANIN AI KUTUSU HİÇ SÜRÜLMEMİŞTİ — yanıt geldiğinde ekran okuyucu susuyordu
+
+`SoruSor` her premium konu sayfasında (44 konu) render ediliyor ve bugüne
+kadar yalnızca METİNLERİ düzeltilmişti (geliştirici mesajı kaldırılmıştı,
+alan adı `aria-label`e alınmıştı). **Davranışı hiç sürülmemişti.**
+
+Kapı geçici açılıp gerçek sayfada ölçüldü. Önce sağlam olanlar:
+
+| ölçüt | sonuç |
+|---|---|
+| alan adı | "Konu hakkında soru" (placeholder'a düşmüyor) |
+| yükleme durumu | düğme `disabled` + "Yanıtlanıyor…" |
+| hata metni | *"Yapay zekâ yanıtı şu an alınamıyor…"* — sistem içi ad yok |
+| hata `role="alert"` | **var** |
+| hatadan sonra düğme | yeniden etkin |
+
+#### Kusur: BAŞARI ve BEKLEME sessizdi — sayfada canlı bölge SIFIRDI
+
+Ölçüldü (açılışta): premium konu sayfasının tamamında
+`[role="status"], [role="alert"], [aria-live]` sayısı **0**. `alert`
+yalnızca hata OLUŞUNCA basılıyor; başarı yolunda hiçbir bölge yok.
+
+Başarı yolu koşumla çizdirildi (`/api/ai/ask` sarmalandı — arka uç canlıda
+zaten çalışmıyor):
+
+| olay | ekranda | duyuru |
+|---|---|---|
+| gönderildi | düğme "Yanıtlanıyor…" | **yok** |
+| yanıt geldi | yanıt kartı çizildi (`cevapEkranda: true`) | **yok** |
+| sonda canlı bölge | — | **0** |
+
+Yani ekran okuyucuyla çalışan bir kullanıcı soruyu gönderiyor, bekliyor ve
+yanıt geldiğini **hiçbir yerden öğrenmiyor** — üstelik bu, kredi harcayan
+ücretli bir eylem. Bu depoda kapatılmış sınıfın (71 araç · `/tekrar` ·
+quiz sonuç ekranı · flashcard ve vaka bitiş ekranları) süpürülmemiş son
+yüzeyi.
+
+#### Çare: koşulsuz `sr-only` `role="status"`
+
+`alert` DEĞİL `status`: yanıt acil bir kesinti değil. Bölge **koşulsuz**
+basılıyor — belgede kayıtlı kural: `status` içerik değişmeden ÖNCE DOM'da
+bulunmak zorunda, sonradan eklenirse ilk mesaj kaçar.
+
+**Yanıt METNİ duyurulmuyor, yalnızca hazır olduğu.** Yanıt uzun bir proza;
+canlı bölgeden okutmak kullanıcıyı kesintisiz bir anlatıma mahkûm ederdi.
+Aynı karar `SonucDuyuru`da da alınmıştı (bant etiketi duyuruluyor, sayı
+değil). **Hata metni tekrarlanmıyor** — iki bölge birden duyurursa kullanıcı
+aynı cümleyi iki kez dinler.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| açılışta canlı bölge | **0** | **1** (metni boş, yazmadan ÖNCE DOM'da) |
+| başarı yolu duyuru dizisi | **yok** | `""` → **"Yanıt hazırlanıyor…"** → **"Yanıt hazır."** |
+| **negatif** — hata yolu | alert var | `status` "Yanıt hazırlanıyor…" → **""**, alert devralıyor |
+| **negatif** — hata metni tekrarı | — | **yok** (`TEKRAR_VAR_MI: false`) |
+| **negatif** — hatadan sonra düğme | etkin | **etkin** |
+| **negatif** — görünür metin | — | "Yanıt hazır" ekranda **yok** |
+| **negatif** — geometri | — | 1×1, `position:absolute`, `clip: rect(0,0,0,0)` — düzen dışı |
+| **negatif** — kapı geri kondu | — | sayfa yeniden **"Erişim Kısıtlı"**, `SoruSor` geçişi **0**, `ZZ_OLCUM` izi **0** |
+
+Yedinci satır bu değişikliğin tek görsel riskiydi: `sr-only` akış dışında
+olduğu için kutunun yerleşimine dokunamıyor.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN: klavye ipucu ilk yanıttan sonra kayboluyor
+
+Ölçüldü — "Ctrl/⌘ + Enter ile gönder" ipucu ile "Kalan hakkın: N" **aynı
+slotu** paylaşıyor; `kalan` bir sayı olur olmaz ipucu kalıcı olarak
+kayboluyor (`ipucuHalaVarMi: false`).
+
+Kusur SAYILMADI: kısayol çalışmaya devam ediyor, kaybolan şey yalnızca
+keşfedilebilirliği — ve o noktada kullanıcı düğmeyi zaten kullanmış oluyor.
+Kalan kredi ise kaybolmaması gereken bilgi; slot önceliği doğru. Ölçüldü,
+gerekçesi yazıldı.
+
+#### Aynı turda ölçülüp TEMİZ çıkan üç eksen
+
+**1) Atlama bağlantısı kapsamı.** Depoda yalnızca iki atlama bağlantısı var
+(`AppShell` → `#icerik`, `ToolTopNav` → `#arac-icerik`); `(ydus)`, `/giris`,
+`/kayit`, `/profile` hiç taşımıyor. **Kusur değil** — ölçüldü: premium
+panosunda 18 odaklanabilir ögenin **18'i de `<main>` içinde** (içerik
+öncesi durak **0**), premium branş sayfasında ilk konu bağlantısına
+**3 durakta** varılıyor (2 kırıntı + 1 akordeon). Atlanacak tekrarlayan bir
+blok yok; atlama bağlantısı orada boş bir kontrol olurdu.
+
+**2) İçerik merge kontrol listesi** (yeni `genel-dahiliye` branşı):
+
+| ölçüt | sonuç |
+|---|---|
+| silme / yeniden adlandırma | **0** (3 ekleme) |
+| `meta.guncelleme` taşımayan konu | **0 / 44** |
+| 464 soruluk bankaya karşı tekrar (eşik **0.12**) | **0 çift** |
+| şık kalitesi (çift · boş · harf öneki · görsel atfı · doğru şıkta) | **0 · 0 · 0 · 0 · 0** |
+| açıklama uzunluğu | min 4724 · ortanca 5734 · max 7394 |
+| **cevap dağılımı** | **A:5 B:5 C:5 D:5 E:5** |
+| quiz `id` çakışması | 0 |
+
+Eşik 0.35 yerine **0.12**'ye indirilerek sürüldü ve band yine boş — yani
+"tekrar yok" sonucu yüksek eşikten gelmiyor.
+
+**3) Sayı mimarisi merge sonrası** — üç yüzey birbirini tutuyor:
+
+| yüzey | başlık | soru |
+|---|---|---|
+| dosya sistemi | 44 | 464 − 10 yetim = **454** |
+| `/uyelik` | **44** | **454** |
+| pano üst bilgisi | **44/61** | **454** |
+| pano branş kırılımı toplamı | 44 / 61 | **454** |
+
+Yeni branş kırılımda **1/1 · 25 soru** olarak görünüyor.

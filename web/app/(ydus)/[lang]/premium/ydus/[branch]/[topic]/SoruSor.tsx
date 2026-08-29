@@ -65,6 +65,28 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
         Yapay zekâ yalnızca <strong>“{baslik}”</strong> konusunun içeriğine dayanarak yanıt verir.
       </p>
 
+      {/*
+        DURUM DUYURUSU — ölçüldü: bu sayfada canlı bölge sayısı SIFIRDI.
+        Ücretli yüzeyde kullanıcı soruyu gönderiyor, ekranda "Yanıtlanıyor…"
+        yazıyor ve ardından yanıt beliriyordu; ekran okuyucuya HİÇBİRİ
+        duyurulmuyordu. Hata dalı zaten `role="alert"` taşıyordu, yani
+        yalnızca BAŞARI ve BEKLEME sessizdi.
+
+        `status` — `alert` DEĞİL: yanıt acil bir kesinti değil. Bölge
+        KOŞULSUZ basılıyor, çünkü `status` içerik değişmeden ÖNCE DOM'da
+        bulunmak zorunda (sonradan eklenirse ilk mesaj kaçar).
+
+        Yanıt METNİ duyurulmuyor, yalnızca hazır olduğu: yanıt uzun bir
+        proza ve canlı bölgeden okutmak kullanıcıyı kesintisiz bir
+        anlatıma mahkûm ederdi. Aynı karar `SonucDuyuru`da da alınmıştı.
+
+        Hata metni burada TEKRARLANMIYOR — iki bölge birden duyurursa
+        kullanıcı aynı cümleyi iki kez dinler.
+      */}
+      <p role="status" className="sr-only">
+        {yukleniyor ? 'Yanıt hazırlanıyor…' : cevap ? 'Yanıt hazır.' : ''}
+      </p>
+
       <textarea
         value={soru}
         onChange={(e) => setSoru(e.target.value)}
