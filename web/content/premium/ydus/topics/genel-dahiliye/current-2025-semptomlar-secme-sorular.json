@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "id": "current-2025-semptomlar-secme-sorular",
+    "branch": "genel-dahiliye",
+    "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Semptomlar (Set 1)",
+    "altbaslik": "CURRENT Medical Diagnosis & Treatment 2025'in semptom bölümlerinin metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular",
+    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 25,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Bu Bölüm Hakkında",
+      "satirlar": [
+        "Bu bölümde, CURRENT Medical Diagnosis & Treatment 2025'in \"Sık Görülen Semptomlar\" bölümlerinin metnine doğrudan dayanan, board/YDUS tipi vaka-soru formatında sorular yer almaktadır.",
+        "Kaynağın ayırt edici yanı, semptomdan tanıya giden yolu olabilirlik oranları (LR), duyarlılık-özgüllük değerleri ve karar kurallarıyla vermesidir. Sorular bu sayısal çerçeveyi koruyacak biçimde hazırlanmıştır.",
+        "Her soru; klinik vaka kökü, beş seçenekli soru gövdesi, doğru cevabın detaylı klinik muhakemesi ve her bir çeldiricinin ayrı ayrı analizini içerir. Kaynak kitaptaki ilgili bölüm ve konu başlığı her soruda ayrıca belirtilir."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsanan Bölümler",
+      "satirlar": [
+        "Bölüm 2-03 — Dispne: artmış LVEDP'nin klinik öngörücüleri ve iki olasılık eşiği, nabız oksimetresinin iki istisnası (karbon monoksit ve methemoglobinemi), normal grafi ve EKG sonrası kalan tanılar, POCUS ile akciğer grafisinin karşılaştırması.",
+        "Bölüm 2-04 — Hemoptizi: masif hemoptizinin tanımı ve terapötik önceliği, bronşiyal dolaşımın rolü, normal grafide bronkoskopinin kanser verimi, traneksamik asit ve bronşiyal arter embolizasyonu.",
+        "Bölüm 2-05 — Göğüs Ağrısı: akut MI ile ilişkili olabilirlik oranları ve süre kuralları, HEART ve TIMI skorları ile yüksek duyarlıklı troponin protokolleri, aort diseksiyonu ile perikarditin muayene bulguları.",
+        "Bölüm 2-06 — Çarpıntı: üç klasik çarpıntı tanımı ve cannon A dalgaları, aritmik nedeni azaltan olabilirlik oranları, kardiyovasküler neden açısından yüksek risk göstergeleri.",
+        "Bölüm 2-07 — Alt Ekstremite Ödemi: Wells DVT skorlamasının üç adımı, kronik venöz yetmezliğin özgül deri bulguları ve diüretikten kaçınma kuralı, ilaca bağlı ödem.",
+        "Bölüm 2-08 — Ateş ve Hipertermi: 41.1°C eşiği ve diürnal varyasyon, nöroleptik malign sendrom ile serotonin sendromunun ayrımı, termometre duyarlılığı, santral ateş modeli.",
+        "Bölüm 2-09 — İstemsiz Kilo Kaybı: %5/6-12 ay eşiği, malign olmayan nedenlerin önceliği, ilk değerlendirme sonuçsuzsa izlem stratejisi ve iştah uyarıcılara karşı öneri.",
+        "Bölüm 2-10 — Yorgunluk ve SEID: SEID tanı ölçütlerinin üç zorunlu ve iki seçmeli bileşeni, egzersizin kanıtlanmış yararı, CPAP ve pitolisant.",
+        "Bölüm 2-11 — Akut Baş Ağrısı: gök gürültüsü baş ağrısı ve %43'lük subaraknoid kanama prevalansı, nörogörüntüleme endikasyonları, SNNOOP10 kırmızı bayrakları, postpartum baş ağrısı.",
+        "Bölüm 2-12 — Dizüri: vajinal semptomların yokluğunda LR 24.5 kuralı, dipstik olabilirlik oranları, negatif idrar tahliline rağmen tedavi endikasyonu, idrar kültürü eşiği."
+      ]
+    }
+  ]
+}
