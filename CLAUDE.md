@@ -23308,3 +23308,90 @@ anahtar başka bir yoldan mı zenginleşsin?).
 benzersiz olduğunu say.** `soru.id` dosya içinde benzersizdi ve o yüzden
 doğru görünüyordu; anahtarın öteki yarısı (yol) da 40 quiz için ortak olunca
 iki yerel benzersizlik bir global çakışmaya dönüştü.
+
+### NOT DEFTERİ SORU ÇÖZÜM SAYFASINDA HİÇ AÇILMIYORDU — arama 0,3 saniyede vazgeçiyordu
+
+Geçen turun açtığı iş kaleminin (not anahtarı çakışması) peşine düşerken,
+onu **ölçmeyi imkânsız kılan** daha büyük bir kusur çıktı: o yüzeyde not
+defteri hiç açılmıyor.
+
+`NotePanel` sayfanın "okuma sayfası" olup olmadığına `[data-readable]` var mı
+diye bakarak karar veriyor. Arama **20 animasyon karesi** (~0,3 sn) deneyip
+vazgeçiyor ve bir daha bakmıyordu (`tries++ < 20` … `else setEnabled(false)`).
+
+Ama o konteyner her yüzeyde AYNI ANDA belirmiyor:
+
+| yüzey | konteyner ne zaman | not tutamağı |
+|---|---|---|
+| konu sayfası (açık) | sunucu HTML'inde | **VAR** |
+| **soru çözüm (quiz)** | **kullanıcı bir şık işaretledikten SONRA** | **YOK** |
+
+Ölçüldü (yerel üretim derlemesi, kapı geçici açılıp gerçek arayüzle):
+cevaptan **2,5 saniye sonra bile** konteyner VAR, tutamak YOK. Yani not
+defteri, ücretli soru çözüm yüzeyinde fiilen ölü bir özellikti.
+
+**Kardeş bileşen bu sorunu zaten çözmüştü:** `ReadingTools` 600 ms'lik bir
+yoklama kullanıyor ve belgedeki gerekçesi kayıtlı — *"MutationObserver hızlı
+yoldur ama zamanlaması kaçabiliyor; 600 ms'lik bir yoklama garantidir."*
+Vurgu çubuğu bu yüzden quizde çalışıyordu, not defteri çalışmıyordu.
+
+Aynı yol `NotePanel`e de kondu. Yoklama **yalnızca konteyner bulunana kadar**
+sürüyor; bulununca duruyor.
+
+**Doğrulama, ikisi negatif kontrol:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| quiz — cevaptan önce | tutamak yok | **tutamak yok** (erken açılmıyor) |
+| quiz — cevaptan sonra | **tutamak YOK** | **tutamak VAR** |
+| **negatif** — konu sayfası | tutamak var | **var, anında**; not `medisea:notes:v1:/topics/…` altına yazıldı |
+| **negatif** — `/tools/bmi` (konteyner YOK) | — | 4 yoklama turu sonra da **tutamak YOK** |
+| kapı geri kondu mu | — | quiz sayfası yeniden "Erişim Kısıtlı", `data-readable` **0** |
+| lint · typecheck · build (637/637) · 13 CI adımı | — | hepsi geçti |
+
+Üçüncü satır kritik: yoklama süresiz olduğu için asıl risk, konteyneri
+olmayan sayfalarda paneli **yanlışlıkla açmaktı**. Açmıyor.
+
+#### ⚠ DÜZELTME, ARKASINDAKİ SESSİZ KUSURU ULAŞILABİLİR YAPTI
+
+Geçen tur not anahtarı çakışması **yalnızca kaynaktan** ölçülüp
+"düzeltilmedi" diye bırakılmıştı. Panel açılabilir olunca davranışla da
+ölçüldü ve doğrulandı:
+
+| adım | ölçülen |
+|---|---|
+| SLE quizinde not yazıldı | `medisea:notes:v1:/tr/premium/ydus/quiz-coz` → "SLE QUIZINDE YAZILAN NOT" |
+| **ADPKD quizi açıldı, panel açıldı** | panelde **"SLE QUIZINDE YAZILAN NOT"** |
+
+Yani 40 quiz tek bir not belgesini paylaşıyor; B quizinde yazmak A'nın notunu
+eziyor. Bu, belgede kayıtlı *"bir çökmeyi düzeltmek, arkasındaki sessiz
+başarısızlığı ulaşılabilir yapar"* kuralının bu turdaki hâli — ve dürüstlük
+gereği ödünleşme açıkça yazılmalı: **önce o yüzeyde hiç not alınamıyordu,
+şimdi alınabiliyor ama quizler arasında paylaşılıyor.**
+
+#### Anahtar düzeltmesi NEDEN bu turda yapılmadı — ölçülmüş bir engel var
+
+Geçen turun gerekçesi (`useSearchParams()` sayfayı sunucuda üretilmez hâle
+getirir) **aşılabilir**: depoda kayıtlı çözüm `/tools`ta zaten kullanılıyor —
+adresi bir kez `useEffect` içinde okumak. Ama bu turda ikinci bir engel
+ölçüldü:
+
+> `usePathname()` **sorgu değişince değişmiyor.** Panelin bütün yükle/kaydet
+> etkileri `[pathname]`e bağlı; anahtar sorguyu içerse bile quiz A'dan quiz
+> B'ye yalnızca sorgu değişerek geçildiğinde etkiler yeniden çalışmaz ve
+> panel eski notu göstermeye devam eder.
+
+Yani doğru çözüm "anahtara sorguyu ekle" değil, **panelin kimlik kaynağını
+değiştirmek** (adres değişimini de izleyen bir durum). Bu, çizim/kaydetme
+durumunu taşıyan 900 satırlık bir bileşende gerçek bir refaktör; ayrıca
+mevcut çakışık notlar için bir geçiş kararı gerekiyor (hangi quize aitti
+bilinemez — `bozukYedegiOku` kalıbındaki gibi "eski kaydı kopyala" uyarısı
+doğru şekil olabilir).
+
+Ölçüm, mekanizma ve tasarım kısıtı burada; anahtar değişikliği ayrı bir tur.
+
+**Aktarılabilir kural: bir yeteneğin "var" olduğunu, onu ORTAYA ÇIKARAN
+koşulun her yüzeyde aynı anda oluştuğunu varsayarak ölçme.** Burada iki
+bileşen aynı işareti (`[data-readable]`) arıyordu; biri yokladığı için
+çalışıyor, öteki tek seferlik baktığı için ölüydü — ve fark yalnızca
+işaretin GEÇ belirdiği yüzeyde görünüyordu.

@@ -125,22 +125,48 @@ export default function NotePanel() {
   strokesRef.current = strokes;
   redoRef.current = redo;
 
-  /* ── Sayfa okuma sayfası mı? ─────────────────────────────────────────── */
+  /* ── Sayfa okuma sayfası mı? ─────────────────────────────────────────────
+   *
+   * ⚠ ARAMA SÜRELİ OLAMAZ — konteyner SONRADAN belirebiliyor.
+   *
+   * Burası 20 animasyon karesi (~0.3 sn) deneyip vazgeçiyor ve bir daha
+   * bakmıyordu. Ölçüldü (yerel üretim derlemesi, gerçek arayüz): soru çözüm
+   * sayfasında `[data-readable]` yalnızca kullanıcı bir şık işaretledikten
+   * SONRA basılıyor (açıklama bloğu), yani pencere çoktan kapanmış oluyor —
+   * cevaptan 2,5 sn sonra bile konteyner VAR, not tutamağı YOK. Yani not
+   * defteri o yüzeyde hiç açılmıyordu.
+   *
+   * A/B: konteyneri sunucu HTML'inde gelen konu sayfasında tutamak VAR,
+   * cevaptan sonra beliren quiz sayfasında YOKTU.
+   *
+   * Kardeş bileşen bu sorunu zaten çözmüş: `ReadingTools` 600 ms'lik bir
+   * yoklama kullanıyor ve belgedeki gerekçe kayıtlı — "MutationObserver
+   * hızlı yoldur ama zamanlaması kaçabiliyor; 600 ms'lik bir yoklama
+   * garantidir". Aynı yol burada da kullanılıyor.
+   *
+   * Yoklama YALNIZCA konteyner bulunana kadar sürüyor; bulununca duruyor.
+   * Bulunmayan sayfalarda (araç sayfaları, listeler) tek yaptığı şey 600
+   * ms'de bir `querySelector` — ve panel açılmıyor (negatif kontrol edildi).
+   */
   useEffect(() => {
-    let tries = 0;
     let stop = false;
-    const check = () => {
-      if (stop) return;
-      const found = document.querySelector("[data-readable]");
-      if (found) return setEnabled(true);
-      if (tries++ < 20) requestAnimationFrame(check);
-      else setEnabled(false);
+    let zamanlayici: ReturnType<typeof setInterval> | null = null;
+
+    const bak = () => {
+      if (stop) return false;
+      if (!document.querySelector("[data-readable]")) return false;
+      setEnabled(true);
+      if (zamanlayici) { clearInterval(zamanlayici); zamanlayici = null; }
+      return true;
     };
+
     setEnabled(false);
     setOpen(false);
-    check();
+    if (!bak()) zamanlayici = setInterval(bak, 600);
+
     return () => {
       stop = true;
+      if (zamanlayici) clearInterval(zamanlayici);
     };
   }, [pathname]);
 
