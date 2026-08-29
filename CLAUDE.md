@@ -23639,3 +23639,114 @@ olarak kullananlar ve ondan ETİKET üretenler.** Anahtar tarafı sessizce
 çalışmaya devam ediyordu (önek eşleşmesi bozulmaz); kırılan taraf ekrana
 basan taraftı ve yalnızca gözle ya da render edilmiş çıktıyı okuyarak
 görülüyor.
+
+### `loading.tsx` DENENDİ VE REDDEDİLDİ — sunucuda basılan içeriği bir dönen çarka çeviriyor
+
+Hiç ölçülmemiş bir eksen: **gezinme sırasında kullanıcıya ne söyleniyor?**
+Depoda rota düzeyinde **tek** bir `loading.tsx` var ve nerede olduğu kayda
+değer.
+
+#### 1) Var olan tek iskelet ÖLÜ — üç ayrı sebeple
+
+`app/(site)/guidelines/loading.tsx` (`LoadingGuidelineDetail`, 12 kolonlu
+ızgara + 4 kart + kenar çubuğu):
+
+| ölçüt | sonuç |
+|---|---|
+| `/guidelines/page.tsx` async mı | **hayır** — senkron, veri okumuyor, önceden üretiliyor |
+| segmentin altında dinamik alt rota | **yok** |
+| `/guidelines`e giden CANLI bağlantı | **0** — iki kaynak da ölü kod (`app/config/nav.ts` ve `HeaderClient.tsx`, ikisinin de sıfır içe aktaranı var; üst menü ve alt bilgi `/guidelines`i hiç bilmiyor) |
+| iskeletin çizdiği yerleşim | sayfa küçük ve ortalanmış bir yer tutucu (168 öge), iskelet bir DETAY sayfası vaat ediyor |
+
+Yani askıya alınamayan, kimsenin bağlanmadığı bir rotada, var olmayan bir
+yerleşimin iskeleti duruyordu.
+
+**Silmenin bedeli ÖLÇÜLDÜ, varsayılmadı** — JS KAPALI iframe ile (bu oturumda
+`<noscript>` işinde kurulan yöntem: `sandbox="allow-same-origin"`, `allow-scripts`
+YOK) canlı ve yerel çıktı karşılaştırıldı:
+
+| | görünür metin | `h1` | iskelet |
+|---|---|---|---|
+| CANLI `/guidelines` (iskelet VAR) | **657 krk** | var | 0 |
+| YEREL `/guidelines` (iskelet SİLİNDİ) | **657 krk** | var | 0 |
+
+Birebir aynı — iskelet hiç devreye girmiyordu.
+
+#### 2) Askıya ALINAN rotalarda hiç yükleme durumu yok — boşluk ÖLÇÜLDÜ
+
+15 async sunucu sayfası var (ana sayfa · 410 konu · 13 branş · bütün premium
+ağacı · kayseritip) ve **hiçbirinde** `loading.tsx` yok. Boşluğun büyüklüğü
+canlıda, **MutationObserver ile** ölçüldü (bu ortamda boyama gözlenemiyor,
+ama DOM değişimi gözlenebiliyor):
+
+| yumuşak gezinme | yeni `h1` DOM'a girene kadar |
+|---|---|
+| branş → konu (statik, önceden üretilmiş) | **564 ms** |
+| premium pano → profil (dinamik, oturum okuyor) | **1661 ms** |
+
+O süre boyunca ekranda ESKİ sayfa duruyor.
+
+**Gezinmenin gerçekten YUMUŞAK olduğu ayrıca kanıtlandı** — ilk okumam
+"tam sayfa yüklemesi" diyordu ve YANLIŞTI. Ayırt edici ölçüt iki parçalı:
+tıklamadan önce `window`a konan işaret hayatta mı, ve
+`performance.getEntriesByType('navigation')[0].name` hâlâ ESKİ adres mi?
+İkisi de evet → yumuşak. `transferSize`a bakmak yanıltıyor: o değer belgenin
+İLK yüklemesine ait ve yumuşak gezinmeden sonra da orada duruyor.
+
+#### 3) Boşluğu doldurma denemesi — ve ÖLÇÜLEN GERİLEME
+
+Premium ağacına (`[lang]/premium/ydus/loading.tsx`) koyu zemine oturan,
+tek satırlık, sahte yerleşim çizmeyen bir yükleme durumu kondu. Mekanik
+olarak ÇALIŞTI:
+
+| ölçüt | sonuç |
+|---|---|
+| fallback DOM'a girdi | **166 ms** |
+| fallback DOM'dan çıktı | **180 ms** |
+| gerçek `h1` | 181 ms |
+| kontrast (taze öge ölçümü, `bg-slate-950` üstünde) | **9.78** |
+
+Ama sunucu çıktısı değişti ve JS KAPALI ölçümü kusuru gösterdi:
+
+| premium pano, JS KAPALI | görünür metin |
+|---|---|
+| loading.tsx YOKKEN (canlı) | **868 krk** — `h1`, ilerleme, 17 bağlantı |
+| **loading.tsx VARKEN (yerel)** | **11 krk — yalnızca "Yükleniyor…"** |
+
+Sebep akış (streaming): `loading.tsx` bir Suspense sınırı kuruyor, Next
+kabuğu + FALLBACK'i önce basıyor, gerçek içeriği `<div hidden>` içine koyup
+`$RC(...)` betiğiyle takas ediyor. Betik çalışmazsa takas olmuyor.
+
+Ham çıktıda imza net: `<!--$?--><template id="B:0">` + fallback, sonra
+gizli div ve `$RC` çağrısı. Geri alındıktan sonra: `<template>` **0**,
+`$RC` **0**, "Yükleniyor" **yok**, gizli div 2 → 1.
+
+**GERİ ALINDI.** Bu, aynı oturumda araçlara `<noscript>` şeridi eklerken
+kaydedilen kuralın ta kendisi — orada JS'siz kullanıcı ESKİ değerlerden
+hesaplanmış bir hüküm görüyordu; burada **hiçbir şey** görmeyecekti.
+1661 ms'lik geri bildirim boşluğu gerçek bir maliyet, ama sunucuda basılan
+910 karakterlik içeriği bir dönen çarkla değiştirmek daha büyük bir maliyet.
+
+**Aktarılabilir kural: `loading.tsx` bedava değil — sunucu render'ını
+ERTELER.** Bir segmente koymadan önce sor: bu sayfanın içeriği bugün
+sunucuda basılıyor mu? Basılıyorsa yükleme durumu onu JS'e bağımlı hâle
+getirir. Ölçmenin yolu tek satır: sunucu HTML'inde `<template id="B:` ve
+`$RC(` ara, ya da JS kapalı bir iframe'de görünür metni say.
+
+Kalan 15 segment "temiz" DEĞİL: boşluk ölçüldü ve kapsamı yazıldı, ama
+doldurulması rota rota bir ödünleşme kararı.
+
+#### Ölçüm tuzakları
+
+- **Next'in rota duyurucusu (`next-route-announcer`) bu ortamda ölçülemez.**
+  Yumuşak gezinmeden sonra içeriği BOŞ kalıyor ve odak `<body>`ye düşüyor —
+  ama `document.visibilityState` **hidden**, `paint` kaydı **0**, yani
+  duyurucunun efekt/zamanlayıcı tabanlı yolu hiç çalışmıyor olabilir. Buradan
+  "duyuru yok" sonucu ÇIKARILMADI.
+- **`.animate-pulse` iskelet dedektörü olarak KULLANILAMAZ.** İlk ölçüm
+  `/guidelines`te "iskelet DOM'da" dedi; yakalanan şey başlıktaki 6×6
+  piksellik dekoratif nokta (`w-1.5 h-1.5 bg-blue-400 animate-pulse`) idi.
+  Çapa iskeletin kendi imzasına (`.h-28.bg-gray-200`) bağlanınca 0'a indi.
+- **Ters bölü tuzağı sekizinci kez** — `node -e` içindeki `\$RC\(` deseni
+  kabuk kanalında bozulup `Unterminated group` verdi. Kaçış taşıyan ölçüm
+  betiği Write ile ayrı dosyaya yazıldı.
