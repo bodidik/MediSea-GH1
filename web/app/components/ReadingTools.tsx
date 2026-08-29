@@ -8,7 +8,7 @@
 // Giriş yöntemi fark etmez: PointerEvent sayesinde fare, parmak ve
 // aktif kalem (S Pen, M-Pen, Apple Pencil) aynı akıştan geçer.
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
@@ -44,6 +44,9 @@ type Pending = {
   /** Seçimin kestiği ya da tıklanan mevcut vurgular */
   hit: string[];
 };
+
+/** Seçim çubuğunun görünüm penceresi kenarına bırakacağı boşluk (px). */
+const CUBUK_KENAR = 8;
 
 const PALETTE: { st: MarkStyle; label: string; swatch: string }[] = [
   { st: "y", label: "Sarı", swatch: "#FACC15" },
@@ -584,6 +587,36 @@ export default function ReadingTools() {
     return () => document.removeEventListener("keydown", onTab);
   }, [anchor, pending]);
 
+  /**
+   * ÇUBUĞU GÖRÜNÜM PENCERESİNE KENETLE — sabit 150 sayısı BAYATLAMIŞTI.
+   *
+   * Konumlandırma `left: anchor.x` + `translateX(-50%)`, yani çubuk seçimin
+   * ortasına oturuyor ve kenetleme yarı genişliğini bilmek zorunda. Kod
+   * `clamp(anchor.x, 150, innerWidth - 150)` diyordu; çubuk zamanla düğme
+   * kazandı ve bugün 316px, yani yarı genişlik 158.
+   *
+   * Ölçüldü (canlı, 375px, Addison konusu):
+   *   satır BAŞINDAN seçim  -> çubuk left -8   -> "Sarı" düğmesi ULAŞILAMAZ
+   *   satır SONUNDAN seçim  -> çubuk right 383 -> "Kopyala" ULAŞILAMAZ
+   * İkisi de tam 8px taşıyor: 158 - 150.
+   *
+   * Genişlik artık ÖLÇÜLÜYOR, tahmin edilmiyor — düğme sayısı değiştiğinde
+   * (var olan bir vurguya tıklanınca dokuzuncu "Kaldır" düğmesi beliriyor)
+   * sayı kendiliğinden güncelleniyor. Yerleşim etkisi boyamadan ÖNCE
+   * çalıştığı için sıçrama olmuyor.
+   *
+   * Çubuk görünümden GENİŞSE kenetleme sınırları çaprazlanıyor; o durumda
+   * sola yaslanıyor (ilk düğmeler ulaşılabilir kalsın).
+   */
+  useLayoutEffect(() => {
+    const cubuk = barRef.current;
+    if (!cubuk || !anchor) return;
+    const yari = cubuk.offsetWidth / 2 + CUBUK_KENAR;
+    /* `clamp` sınırlar çaprazlandığında alt sınırı kazandırıyor — çubuk
+       görünümden genişse sola yaslanmasının sebebi bu. */
+    cubuk.style.left = `${clamp(anchor.x, yari, window.innerWidth - yari)}px`;
+  });
+
   const [odakBekliyor, setOdakBekliyor] = useState(false);
 
   useEffect(() => {
@@ -638,6 +671,8 @@ export default function ReadingTools() {
           aria-label="Vurgulama araçları"
           className="fixed z-[60] flex items-center gap-1 rounded-full border border-white/10 bg-blue-950/95 px-1.5 py-1.5 shadow-2xl shadow-blue-950/40 backdrop-blur-sm animate-[msPop_.12s_ease-out]"
           style={{
+            /* İlk boyamada makul bir tahmin; gerçek değeri yukarıdaki
+               yerleşim etkisi ÖLÇÜLEN genişlikle hemen üstüne yazıyor. */
             left: clamp(anchor.x, 150, window.innerWidth - 150),
             top: anchor.y,
             transform: anchor.below ? "translate(-50%, 0)" : "translate(-50%, -100%)",

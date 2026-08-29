@@ -26458,3 +26458,111 @@ yetmiyor.** Bu depodaki tek aykırı çıktı bir literal değil, çalışma zam
 kurulan bir `replace` idi; 185 literal geçişi sayan tarama onu "0 virgül"
 diye raporluyordu. Sözleşmeyi ÜRETİLMİŞ ÇIKTIDAN say — orada dönüşüm zaten
 uygulanmış oluyor.
+
+### VURGU ÇUBUĞU KENETLEMESİ BAYATLAMIŞTI — "Sarı" ve "Kopyala" ekran dışında kalıyordu
+
+Yeni eksen: **kayan/konumlanan katmanlar görünüm penceresine kenetleniyor
+mu?** Seçim çubuğu `left: anchor.x` + `translateX(-50%)` ile seçimin ortasına
+oturuyor, yani kenetleme onun **yarı genişliğini** bilmek zorunda. Kod şunu
+diyordu:
+
+```
+left: clamp(anchor.x, 150, window.innerWidth - 150)
+```
+
+**150 bir SABİTTİ ve çubuk zamanla düğme kazandı.** Bugün 8 düğmeyle
+**316px**, yani yarı genişlik **158** — kenetleme her iki kenarda tam
+**8px** eksik yer ayırıyordu.
+
+#### Canlıda ölçüldü — 375px, gerçek seçimle
+
+| seçim | çubuk | taşma | ULAŞILAMAYAN düğme |
+|---|---|---|---|
+| satır **başından** | left **−8** | sol 8px | **"Sarı"** (left −1) |
+| satır **sonundan** | right **383** | sağ 8px | **"Kopyala"** |
+| 320px, satır başından | right **328** | sağ 8px | **"Kopyala"** |
+
+Kaybolan düğme rastgele değil: **"Sarı" varsayılan vurgu rengi**, yani en çok
+kullanılan düğme. Ve bu, ürünün imza etkileşimi — tablet/telefon bu uygulamada
+birinci sınıf bir yüzey.
+
+**Dokuz düğmeli kip daha da kötüydü:** var olan bir vurguya tıklanınca
+"Vurguyu kaldır" beliriyor ve çubuk **352px** oluyor → yarı genişlik 176 →
+sabit 150 ile taşma **26px**.
+
+#### Çare: genişliği TAHMİN ETME, ÖLÇ
+
+`barRef` zaten vardı. Bir yerleşim etkisi (`useLayoutEffect`) gerçek
+`offsetWidth`i okuyup `left`i yeniden yazıyor; boyamadan önce çalıştığı için
+sıçrama yok. Düğme sayısı değiştiğinde sayı **kendiliğinden** güncelleniyor —
+sekiz ve dokuz düğmeli kip için ayrı bir sabit tutulmuyor.
+
+JSX'teki eski ifade ilk boyama tahmini olarak kaldı (yorumuyla birlikte);
+etkisi hemen üstüne yazıyor.
+
+**Çubuk görünümden GENİŞSE** sınırlar çaprazlanıyor. Mevcut `clamp` yardımcısı
+o durumda alt sınırı kazandırıyor (`Math.max(min, max)`), yani çubuk **sola
+yaslanıyor** ve ilk düğmeler ulaşılabilir kalıyor — 320px'te tam bu oluyor.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce (canlı) | sonra (yerel üretim) |
+|---|---|---|
+| 375px satır başı | left −8 · **"Sarı" ulaşılamaz** | left **8** · taşma 0 · **ulaşılamayan 0** |
+| 375px satır sonu | right 383 · **"Kopyala" ulaşılamaz** | right **367** · taşma 0 · ulaşılamayan 0 |
+| 375px **dokuz düğme** (352px) | taşma 26px olurdu | left 15 · right 367 · **9/9 ulaşılabilir** |
+| 320px (çubuk görünümden geniş) | right 328 · "Kopyala" ulaşılamaz | left **8** · **ulaşılamayan 0** (yalnız 4px dolgu taşıyor) |
+| **negatif** — 1280px ORTADAN seçim | — | çubuk ortası **369** = seçim ortası **369**, kenetleme DEVREYE GİRMİYOR |
+| **negatif** — çubuk seçimin üstünde mi | — | 10px yukarıda (değişmedi) |
+| **negatif** — vurgulama hâlâ çalışıyor mu | — | 2 kayıt · 2 `<mark>` · boyanan metin seçimle **BİREBİR** |
+| **negatif** — 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Beşinci satır bu düzeltmenin tek gerçek riskiydi: kenetleme fazla agresif
+olsaydı çubuk artık seçimi takip etmezdi.
+
+#### ⚠ ÖLÇÜM: ÇUBUK "BELİRMEDİ" SANILDI — animasyon donmuştu
+
+İlk koşum `[role="toolbar"]` bulup `offsetParent !== null` ile görünürlük
+sınadı ve "belirmedi" dedi. **İki ayrı hata:**
+
+1. Çubuk `position: fixed` — sabit konumlu ögede `offsetParent` **her zaman
+   null**. Görünürlük ölçütü olarak kullanılamaz.
+2. Opaklık `0` okundu ve gerçek sanıldı. Belgede kayıtlı tuzağın bir adım
+   ötesi: kayıt GEÇİŞ (`transition`) için yazılmıştı, buradaki
+   **ANİMASYON** (`animate-[msPop_.12s]`). Panel gizliyken
+   (`visibilityState: "hidden"`) animasyon da ilerlemiyor ve değer
+   keyframe'in BAŞLANGICINDA donuyor.
+
+`transition: none` tek başına yetmedi; `animation: none` eklenince opaklık
+**0 → 1** oldu. Yani ölçüm yapmadan önce **ikisini birden** kapat.
+
+#### Aynı turda ölçülüp TEMİZ çıkan üç eksen
+
+Üçü de iki tur önce eklenen tablo kabının **kendi gerileme kontrolü**:
+
+| eksen | sonuç |
+|---|---|
+| **tablo hücresinde vurgu** | 1 kayıt · 1 `<mark>` **`<td>` içinde** · yeniden yüklemede **birebir** geri geldi |
+| **ÇOK HÜCREYE yayılan vurgu** | 1 kayıt · **4 `<mark>`, dört ayrı hücrede** · yeniden yüklemede dördü de birebir |
+| **tablo vurgusu → tekrar kartı → kaynağa dönüş** | "Kart 1 / 2" · cloze doğru boşluğu açıyor · duyuru kayıtla eşleşiyor · kaynak bağlantısı konuya gidiyor |
+
+Yani `metin.tsx`/`kisaltma.ts`/`baslik.ts` gibi tablo kabı da okuma
+döngüsünü bozmamış.
+
+**Çok hücreli vurgunun saklanan metni bitişik çıkıyor** (`"…OdakBaşlıca
+Klinik Gücü…"`) — belgede kayıtlı `range.toString()` artefaktının yeni bir
+yüzeyi; orada verilen karar (DEĞİŞTİRME, yoksa var olan vurgular
+geçersizleşir) burada da geçerli.
+
+#### Ölçülüp ÇÜRÜTÜLEN iki hipotez
+
+- **"Baskıda tablo kolonları kırpılır."** `overflow-x: auto` baskıda da
+  kırpıyor ve baskı bloğunda `overflow` kuralı YOK. Ölçüldü: açık taraftaki
+  tablolar dar alana **sıkışıyor** (720px'te 6 tablonun 6'sında taşma 0),
+  premium tablolarda `minWidth = kolon × 110` ve **kolon dağılımı 2:99 ·
+  3:90 · 4:4 · 5:1**, yani en geniş tablo 550px — ~700px'lik baskı alanının
+  altında. **0 tablo** taşıyor.
+- **"Kırılamayan uzun jeton okuma kartından taşar."** Kart `overflow-x:
+  hidden` ile kırpıyor, yani taşan metin görünmez olurdu. Ölçüldü: 2153
+  bölümde 25+ karakterlik kırılamayan jeton **4 tane**, en uzunu **26
+  karakter** (`glikozilfosfatidilinositol`) — 320px'lik kartta rahat sığıyor.
