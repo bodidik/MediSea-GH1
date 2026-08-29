@@ -192,6 +192,65 @@ export default function BirimCeviriciSayfasi() {
     setKaynak((k) => k);
   };
 
+  /*
+    TAKAS DOM SIRASINDA YAPILIYOR, CSS `order` ile DEĞİL.
+    İki panel bir dönem `order-1`/`order-3` ile yer değiştiriyordu: ekranda
+    SI sola geçiyor ama Tab sırası DOM'u izlediği için önce SAĞDAKİ alana
+    gidiyordu. Ölçüldü (canlı, 1280px) — takastan sonra görsel sıra
+    [si, btn, gel], DOM sırası [gel, btn, si]: odak sırası ekranla
+    çelişiyordu (WCAG 2.4.3 · 1.3.2).
+
+    Anahtarlar SABİT ("gel"/"si"): React ögeleri sökmüyor, yalnızca yer
+    değiştiriyor — girdi durumu ve odak korunuyor.
+  */
+  const gelenekselPaneli = (
+    <div key="gel" className="space-y-3">
+      <label
+        htmlFor="birim-geleneksel"
+        className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block"
+      >
+        Geleneksel birim
+      </label>
+      <div className="relative">
+        <input
+          id="birim-geleneksel"
+          type="text"
+          inputMode="decimal"
+          value={gelenekselGosterim}
+          onChange={(e) => { setKaynak("geleneksel"); setGelenekselHam(e.target.value); }}
+          className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-4xl md:text-5xl font-black text-blue-900 p-4 pr-24 focus:border-amber-400 outline-none transition-all rounded-t-2xl"
+        />
+        <span className="absolute right-4 bottom-5 text-xs font-black text-blue-900/80 uppercase">
+          {analit.gelenekselBirim}
+        </span>
+      </div>
+    </div>
+  );
+
+  const siPaneli = (
+    <div key="si" className="space-y-3">
+      <label
+        htmlFor="birim-si"
+        className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block md:text-right"
+      >
+        SI birimi
+      </label>
+      <div className="relative">
+        <input
+          id="birim-si"
+          type="text"
+          inputMode="decimal"
+          value={siGosterim}
+          onChange={(e) => { setKaynak("si"); setSiHam(e.target.value); }}
+          className="w-full bg-blue-900 border-b-4 border-amber-400 text-4xl md:text-5xl font-black text-white p-4 pl-24 focus:border-white outline-none transition-all rounded-t-2xl shadow-xl md:text-right"
+        />
+        <span className="absolute left-4 bottom-5 text-xs font-black text-blue-200 uppercase">
+          {analit.siBirim}
+        </span>
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-10 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-8">
@@ -239,31 +298,10 @@ export default function BirimCeviriciSayfasi() {
         <div className="bg-white rounded-[2.5rem] border border-slate-200 p-8 md:p-10 shadow-sm relative overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-center relative z-10">
 
-            {/* Geleneksel taraf */}
-            <div className={`space-y-3 ${ters ? "order-3" : "order-1"}`}>
-              <label
-                htmlFor="birim-geleneksel"
-                className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] block"
-              >
-                Geleneksel birim
-              </label>
-              <div className="relative">
-                <input
-                  id="birim-geleneksel"
-                  type="text"
-                  inputMode="decimal"
-                  value={gelenekselGosterim}
-                  onChange={(e) => { setKaynak("geleneksel"); setGelenekselHam(e.target.value); }}
-                  className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-4xl md:text-5xl font-black text-blue-900 p-4 pr-24 focus:border-amber-400 outline-none transition-all rounded-t-2xl"
-                />
-                <span className="absolute right-4 bottom-5 text-xs font-black text-blue-900/80 uppercase">
-                  {analit.gelenekselBirim}
-                </span>
-              </div>
-            </div>
+            {ters ? siPaneli : gelenekselPaneli}
 
             {/* Yön oku — panelleri yer değiştirir */}
-            <div className="flex items-center justify-center order-2">
+            <div className="flex items-center justify-center">
               <button
                 type="button"
                 onClick={() => setTers((t) => !t)}
@@ -274,28 +312,7 @@ export default function BirimCeviriciSayfasi() {
               </button>
             </div>
 
-            {/* SI taraf */}
-            <div className={`space-y-3 ${ters ? "order-1" : "order-3"}`}>
-              <label
-                htmlFor="birim-si"
-                className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] block md:text-right"
-              >
-                SI birimi
-              </label>
-              <div className="relative">
-                <input
-                  id="birim-si"
-                  type="text"
-                  inputMode="decimal"
-                  value={siGosterim}
-                  onChange={(e) => { setKaynak("si"); setSiHam(e.target.value); }}
-                  className="w-full bg-blue-900 border-b-4 border-amber-400 text-4xl md:text-5xl font-black text-white p-4 pl-24 focus:border-white outline-none transition-all rounded-t-2xl shadow-xl md:text-right"
-                />
-                <span className="absolute left-4 bottom-5 text-xs font-black text-blue-200 uppercase">
-                  {analit.siBirim}
-                </span>
-              </div>
-            </div>
+            {ters ? gelenekselPaneli : siPaneli}
           </div>
 
           {/* Durum satırı: makul değilse SESSİZ KALMAZ */}

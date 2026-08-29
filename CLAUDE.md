@@ -22233,3 +22233,91 @@ desteğini sessizce delerdi. 104 metin alanının 104'ü `type="text"` +
 yazılan `f.replace(/\\/g,'/')` dosyaya tek ters bölüyle indi ve `SyntaxError`
 verdi. Kaçış taşıyan betiği kabuk kanalıyla yazma — Write kullan ya da
 kaçış istemeyen karşılığını seç (`f.split(path.sep).join('/')`).
+
+### TAKAS DÜĞMESİ EKRANI ÇEVİRİYOR AMA TAB SIRASINI ÇEVİRMİYORDU
+
+Yeni eksen: **görsel sıra ile DOM (Tab) sırası ayrışıyor mu?** CSS `order`,
+`flex-*-reverse`, `grid-flow-col` ve açık ızgara yerleşimi görünümü DOM'dan
+bağımsız değiştirebiliyor; o zaman klavye kullanıcısı ekranda gördüğü sırayla
+gezinemiyor (WCAG 2.4.3 · 1.3.2).
+
+Kaynak tarandı — bu depoda o mekanizmalardan yalnızca biri kullanılıyor:
+
+| mekanizma | kullanım |
+|---|---|
+| `order-N` | **3** (tek dosya: `unit-converter`) |
+| `flex-row-reverse` · `flex-col-reverse` · `grid-flow-col` · `flex-wrap-reverse` | 0 |
+| `col-start-` · `row-start-` · `gridColumn` · `gridRow` | 0 |
+| `float-left/right` | 1 — bir düğme ETİKETİNİN içinde, odaklanabilir değil |
+
+`unit-converter`in ortadaki ok düğmesi iki paneli yer değiştiriyor. Takas
+**yalnızca CSS**ti: DOM sırası hep `Geleneksel → düğme → SI` kalıyordu.
+
+**CANLIDA ÖLÇÜLDÜ (1280px):**
+
+| | görsel sıra | DOM sırası | ayrışma |
+|---|---|---|---|
+| takastan önce | gel · btn · si | gel · btn · si | yok |
+| **takastan sonra** | **si · btn · gel** | **gel · btn · si** | **VAR** |
+
+Yani takastan sonra Tab önce **sağdaki** alana, sonra düğmeye, sonra
+**soldaki** alana gidiyordu. Sol/sağ konumları da ölçüldü: SI 289'a, Geleneksel
+681'e geçiyor.
+
+#### Çare: takası DOM'da yap, `order` ile değil
+
+İki panel sabit anahtarlı (`"gel"` / `"si"`) değişkenlere alındı ve
+`{ters ? siPaneli : gelenekselPaneli}` biçiminde sırayla basılıyor. `order-*`
+sınıflarının üçü de kalktı.
+
+**Sabit anahtar şart:** React ögeleri anahtarla eşleştirdiği için **sökmüyor,
+yalnızca yer değiştiriyor** — girdi durumu ve odak korunuyor. Anahtarsız
+yazılsaydı her takasta iki `<input>` yeniden kurulurdu.
+
+**Doğrulama (üretim derlemesi, gerçek tarayıcı):**
+
+| ölçüt | sonuç |
+|---|---|
+| takas sonrası görsel ↔ DOM | **si · btn · gel ↔ si · btn · gel — ayrışma YOK** |
+| geri takas | gel · btn · si, ayrışma yok |
+| **DOM düğümü aynı mı** | **evet** — takastan önce ögeye konan işaret sağ kaldı, yani remount YOK |
+| **odak korundu mu** | **evet** — `birim-geleneksel` odaktayken takas edildi, odak orada kaldı |
+| **negatif** — değerler takas ediliyor mu | **hayır**: gel 100 / si 5.55 yerinde; birimler de panelleriyle taşındı (mg/dL ↔ mmol/L) |
+| **negatif** — çevrim hâlâ doğru mu | 180 mg/dL → **9.99** (elde 180/18.0182) |
+| **negatif** — ters yön, takas sonrası | SI 10 → **180.18** mg/dL (elde 10×18.0182) |
+| **negatif** — 320px | tek kolon, görsel = DOM, taşma **0**, düğme hedefi 48×48 |
+| pozitif kontrol (320px) | 900px tohum `scrollWidth`i büyütüyor |
+
+Değerlerin takas EDİLMEMESİ kayıtlı bir tasarım kararı ("140 mmol/L'yi mg/dL
+kutusuna koymak gibi olurdu") ve bu ölçümle korunduğu gösterildi.
+
+#### Ölçüt İKİ KEZ yanılttı — ikisi de aynı aileden
+
+**1. `order-[0-9]` deseni `border-2`yi sayıyordu.** İlk tarama **279** kullanım
+buldu; önüne "harf olmayan" koşulu konunca **5**'e indi. Eşleşmelerin
+**268'i `border-2`**, 4'ü `border-4`, 2'si `border-0`. Yani sınıf var
+olmayan bir yaygınlıkta görünüyordu.
+
+Bu, bu belgede tekrar eden alt dize tuzağının (`ağır` → "AĞIRLIK", `orta` →
+"Orta Aktif", `üre` → "süre") CSS sınıfı tarafındaki hâli.
+
+**2. Satır önceliğine göre GENEL sıralama, çok kolonlu kart düzeninde SAHTE
+ayrışma üretiyor.** `sofa` sayfası "2 ters" verdi; bakıldığında ikisi de
+SAĞ kolondaki bir kartın ögesi ile SOL kolondaki bir sonraki kartın ögesiydi.
+Kartlar yan yana ve farklı yükseklikte; Tab sırası kart kart ilerliyor,
+oysa satır öncelikli sıralama iki kartı iç içe geçiriyor.
+
+Ölçüt **aynı kapsayıcı içinde** karşılaştıracak biçimde daraltıldı:
+
+| sayfa | odaklanabilir | ters (kapsayıcı içi) |
+|---|---|---|
+| `unit-converter` · `abg` · `sofa` · `nihss` · `news2` · `glim` | 30 · 21 · 21 · 69 · 19 · 17 | **hepsi 0** |
+
+**TARİHSEL KONTROL — daraltılmış ölçüt kör değil:** aynı ölçüt CANLI
+(düzeltme öncesi) `unit-converter`e sürüldüğünde takastan sonra **ters: 2**
+veriyor, düzeltilmiş yerel derlemede **0**.
+
+**Aktarılabilir kural: odak sırası ölçümünde "görsel sıra"yı sayfa genelinde
+satır öncelikli kurma.** Çok kolonlu kart düzeninde DOM sırası bilerek kart
+yereldir ve genel sıralama her kart sınırında sahte bir ters üretir.
+Karşılaştırma kapsayıcı düzeyinde yapılmalı.
