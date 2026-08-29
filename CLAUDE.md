@@ -25874,3 +25874,25 @@ sayfada YARDIM ETMEZ — zarar verir.** Tarayıcı konumu koruyor ama içerik
 başka; kullanıcı tanımadığı bir listenin ortasına düşüyor. Bir sayfada geri
 dönüş davranışını ölçerken ikisini AYNI ölçümde oku: kaydırma korunuyor mu,
 ve o kaydırmanın gösterdiği liste aynı liste mi?
+
+#### CANLIDA doğrulandı — kusuru bulan ölçümün birebir tekrarı
+
+| ölçüt | önce (canlı) | sonra (canlı) |
+|---|---|---|
+| `/calisma-alanim` geri dönüş — sorgu | **""** | **"anemi"** |
+| süzgeç | **Tümü** | **Notlar** |
+| kayıt | **12** | **1** |
+| adres | `/calisma-alanim` | **`?tur=notes&ara=anemi`** |
+| kaydırma | 300 | 300 (değişmedi — zaten çalışıyordu) |
+| `/tekrar` geri dönüş | **Vadesi gelenler + Tümü** | **Baştan sona çalış + Nefroloji** |
+| adres | `/tekrar` | **`?brans=Nefroloji&kip=cram`** |
+| **negatif** — geçmiş | — | **20 → 20** (şişmiyor) |
+
+**Dağıtımın indiği İSTEMCİ PARÇASINDAN doğrulandı:** `/tekrar` sayfa
+chunk'ında `brans` ve `"kip"` dizeleri var. Bu depoda kayıtlı tuzağın
+(*"dağıtımı istemci tarafı bir işaretle yoklama"*) çevresinden dolaşmanın
+yolu: koşullu render edilen bir metni değil, **paketteki dize sabitini**
+ara — o minifikasyondan sağ çıkıyor ve sunucu HTML'inde bulunmuyor.
+
+Ölçüm izi temizlendi: iki origin'de de `medisea:*` sayımı **yenilemeden
+SONRA 0** (bileşen kuruluyken yapılan silme kalıcı değil — kayıtlı tuzak).
