@@ -1,0 +1,777 @@
+{
+  "id": "quiz-kaynak-harrison22-kc-001",
+  "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Karaciğer, Set 1",
+  "branch": "gastroenteroloji",
+  "topic": "harrison-22-kc-secme-sorular",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Elli iki yaşında erkek hasta, halsizlik ve iştahsızlık şikâyetiyle başvuruyor. Öyküsünde uzun yıllardır günde yaklaşık 6-8 standart içki tükettiği öğreniliyor.\n\nLaboratuvar:\nAST: 178 IU/L\nALT: 62 IU/L\nALP: normalin 1.5 katı\nTotal bilirubin: 2.4 mg/dL\nAlbümin: 3.1 g/dL\nINR: 1.4 (parenteral K vitamini ile düzelmiyor)\n\nBu hastanın aminotransferaz paterninin ve ALT düzeyinin AST'ye göre belirgin düşük kalmasının açıklaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "AST:ALT oranının 2'nin üzerinde olması alkole bağlı karaciğer hastalığı için düşündürücüdür; alkol kullananlarda ALT'nin düşük kalmasının nedeni alkole bağlı piridoksal fosfat eksikliğidir ve alkolik karaciğer hastalığında AST nadiren 300 IU/L'yi aşar.",
+        "B": "AST:ALT oranının 2'nin üzerinde olması yalnızca iskemik hepatiti gösterir; ALT düşüklüğü karaciğerdeki ALT rezervinin tükenmesine bağlıdır.",
+        "C": "ALT karaciğer dışında kalp kası, iskelet kası ve eritrositlerde de bulunduğundan alkolde ALT daha yüksek beklenir; buradaki patern ölçüm hatasıdır.",
+        "D": "AST:ALT oranı kronik viral hepatit ve MASLD'de tipik olarak 2'nin üzerindedir; alkolde ise bu oran daima 1'in altındadır.",
+        "E": "Aminotransferaz düzeyinin mutlak yüksekliği akut hepatoselüler hasarda prognostik önem taşır; bu hastadaki AST düzeyi karaciğer hasarının derecesini doğrudan yansıtır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "AST:ALT >2 alkole bağlı karaciğer hastalığı için düşündürücü, >3 ise yüksek düzeyde düşündürücüdür. Alkolde AST nadiren >300 IU/L olur ve ALT sıklıkla normaldir; ALT düşüklüğü alkole bağlı PİRİDOKSAL FOSFAT (B6) eksikliğinden kaynaklanır.",
+      "aciklama_detay": "Aminotransferazlar karaciğer hücre hasarının duyarlı göstergeleridir. AST karaciğer, kalp kası, iskelet kası, böbrek, beyin, pankreas, akciğer, lökosit ve eritrositlerde azalan yoğunlukta bulunurken ALT esas olarak karaciğerde bulunur ve bu nedenle karaciğer hasarı için daha özgüldür.\n\nPatern tanısal olarak yol göstericidir: akut hepatoselüler bozuklukların çoğunda ALT, AST'ye eşit veya ondan yüksektir. Kronik viral hepatit ve MASLD'de AST:ALT oranı tipik olarak 1'in ALTINDA seyreder; ancak siroz geliştikçe bu oran 1'in üzerine çıkar. AST:ALT oranının >2 olması alkolle ilişkili karaciğer hastalığı için düşündürücü, >3 olması ise yüksek düzeyde düşündürücüdür. Alkolle ilişkili hastalıkta AST nadiren 300 IU/L'yi aşar ve ALT çoğu zaman normaldir; serumdaki düşük ALT düzeyi alkole bağlı piridoksal fosfat eksikliğine bağlıdır.\n\nAyrıca dikkat edilmesi gereken bir nokta: aminotransferazların MUTLAK yüksekliği akut hepatoselüler bozukluklarda prognostik anlam taşımaz — karaciğer hücre hasarının derecesi ile aminotransferaz düzeyi arasındaki korelasyon zayıftır. Salınım için hücre nekrozu şart değildir; membran geçirgenliğindeki artış yeterlidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — AST:ALT >2 alkol için düşündürücü, >3 yüksek düzeyde düşündürücü; AST nadiren >300 IU/L; ALT düşüklüğü piridoksal fosfat eksikliğine bağlıdır.",
+        "B": "YANLIS ifade — AST:ALT >2 paterni iskemik hepatite özgü değildir; iskemik hasarda aminotransferazlar tipik olarak >1000 IU/L düzeyine çıkar. ALT düşüklüğünün nedeni rezerv tükenmesi değil, piridoksal fosfat eksikliğidir.",
+        "C": "YANLIS ifade — Karaciğer dışı dokularda (kalp kası, iskelet kası, eritrosit) bulunan enzim ALT değil AST'dir. ALT karaciğere daha özgüldür.",
+        "D": "YANLIS ifade — İlişki terstir: kronik viral hepatit ve MASLD'de AST:ALT tipik olarak <1'dir, alkolde ise >2'dir.",
+        "E": "YANLIS ifade — Aminotransferazların mutlak yüksekliği akut hepatoselüler bozukluklarda PROGNOSTİK ÖNEM TAŞIMAZ; hasar derecesi ile korelasyon zayıftır."
+      },
+      "etiketler": [
+        "AST/ALT oranı",
+        "alkolle ilişkili karaciğer hastalığı",
+        "piridoksal fosfat",
+        "aminotransferaz",
+        "karaciğer fonksiyon testleri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s2",
+      "metin": "Altmış dört yaşında asemptomatik kadın hastada rutin tetkikte izole alkalen fosfataz (ALP) yüksekliği saptanıyor. Aminotransferazlar, bilirubin, albümin ve INR normal. Hasta sarılık tariflemiyor.\n\nBu hastada ALP yüksekliğinin kaynağını belirlemek ve değerlendirmeyi yönlendirmek amacıyla izlenecek yaklaşım ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "ALP'nin karaciğer kaynaklı olduğunu doğrulamanın en kesin yolu elektroforezle izoenzim fraksiyonasyonudur; en yaygın ve pratik yol ise serum 5'-nükleotidaz veya GGT ölçümüdür.",
+        "B": "Altmış yaş üzerindeki kişilerde ALP normalin 1-1.5 katı düzeyde hafifçe yüksek olabilir; ayrıca kan grubu O ve B olan bireylerde yağlı bir öğün sonrası intestinal ALP kana geçerek düzeyi yükseltebilir.",
+        "C": "ALP'nin normalin dört katından fazla yükselmesi başlıca kolestatik karaciğer hastalıklarında, kanser ve amiloidoz gibi infiltratif hastalıklarda ve Paget hastalığı gibi hızlı kemik döngüsüyle giden durumlarda görülür.",
+        "D": "ALP yükselmesinin DÜZEYİ intrahepatik ve ekstrahepatik kolestazı birbirinden ayırmada güvenilir bir ölçüttür; ekstrahepatik tıkanıklıkta düzey belirgin olarak daha yüksektir.",
+        "E": "Sarılık ve aminotransferaz yüksekliği yokluğunda karaciğer kaynaklı izole ALP yüksekliği çoğu zaman erken kolestazı, daha seyrek olarak tümör ya da granülomla hepatik infiltrasyonu düşündürür."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "ALP yüksekliğinin DÜZEYİ intrahepatik ile ekstrahepatik kolestazı ayırmada YARDIMCI DEĞİLDİR. Kanser, koledok taşı, sklerozan kolanjit veya safra yolu darlığına bağlı tıkanma sarılığında bulunan değerler arasında esasen fark yoktur.",
+      "aciklama_detay": "Serum ALP karaciğer, kemik, plasenta ve daha seyrek olarak ince bağırsakta bulunan farklı izoenzimlerden oluşur. Fizyolojik yükselmeler: 60 yaş üzerinde hafif yükseklik (normalin 1-1.5 katı), kan grubu O ve B olanlarda yağlı öğün sonrası intestinal ALP girişi, hızlı kemik büyümesi olan çocuk ve ergenler, gebeliğin geç dönemi (plasental ALP).\n\nKaraciğer kaynaklı ALP yüksekliği kolestaz için tümüyle özgül değildir; üç kattan az yükselme hemen her tür karaciğer hastalığında görülebilir. Normalin DÖRT KATINDAN fazla yükselme başlıca kolestatik karaciğer bozukluklarında, infiltratif hastalıklarda (kanser, amiloidoz) ve hızlı kemik döngüsüyle giden kemik hastalıklarında (Paget) olur.\n\nİzole ALP yüksekliğinde kaynağı belirlemenin iki yolu vardır: en kesin olanı elektroforezle fraksiyonasyon, en yaygın ve kanıtı en sağlam olanı ise serum 5'-nükleotidaz veya GGT ölçümüdür. GGT endoplazmik retikulum ve safra kanalı epitelinde bulunduğundan karaciğerde daha yaygın dağılımlıdır ve kolestaz için ALP veya 5'-nükleotidaza kıyasla daha az özgüldür.\n\nKritik nokta: ALP yükselmesinin DÜZEYİ intrahepatik ve ekstrahepatik kolestazı ayırmaz. İlaca bağlı hepatit, PBK, sepsis ve karaciğer nakli reddi gibi intrahepatik kolestaz nedenlerinde de değerler benzer şekilde artar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — En kesin yol elektroforezle fraksiyonasyon; en yaygın, kanıtı sağlam ve erişilebilir yol 5'-nükleotidaz veya GGT ölçümüdür.",
+        "B": "DOGRU ifade — 60 yaş üzerinde normalin 1-1.5 katı yükseklik ve kan grubu O ile B'de yağlı öğün sonrası intestinal ALP girişi bilinen fizyolojik durumlardır.",
+        "C": "DOGRU ifade — Dört kattan fazla yükselme kolestatik, infiltratif (kanser, amiloidoz) ve hızlı kemik döngüsüyle giden hastalıklarda görülür.",
+        "D": "YANLIS ifade (doğru yanıt) — ALP düzeyi intrahepatik ile ekstrahepatik kolestazı AYIRMAZ. Kanser, koledok taşı, sklerozan kolanjit ve safra yolu darlığına bağlı tıkanma sarılığında değerler arasında esasen fark yoktur.",
+        "E": "DOGRU ifade — Sarılık ve aminotransferaz yüksekliği yokken karaciğer kaynaklı izole ALP yüksekliği çoğu zaman erken kolestazı, daha seyrek tümör veya granülom infiltrasyonunu düşündürür."
+      },
+      "etiketler": [
+        "alkalen fosfataz",
+        "5'-nükleotidaz",
+        "GGT",
+        "kolestaz",
+        "izoenzim"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s3",
+      "metin": "Yoğun bakımda izlenen bir hastada akut karaciğer hasarı gelişiyor. Klinisyen, karaciğerin BİYOSENTETİK fonksiyonunu akut olarak değerlendirmek istiyor.\n\nKaraciğerin sentez fonksiyonunu gösteren testler ve pıhtılaşma faktörleri ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Serum albümini yalnızca hepatositlerde sentezlenir ve yarı ömrü 18-20 gündür; bu yavaş döngü nedeniyle akut veya hafif hepatik disfonksiyonun iyi bir göstergesi değildir.",
+        "B": "Faktör VIII dışındaki pıhtılaşma faktörleri yalnızca hepatositlerde yapılır; faktör VIII vasküler endotel hücrelerinde üretilir.",
+        "C": "Pıhtılaşma faktörlerinin yarı ömrü albüminden çok daha kısadır (faktör VII için 6 saat, fibrinojen için 5 gün); bu nedenle pıhtılaşma faktörlerinin ölçümü hepatik sentez fonksiyonunun en iyi AKUT göstergesidir.",
+        "D": "Protrombin zamanının kontrole göre 5 saniyeden fazla uzaması ve parenteral K vitamini ile düzelmemesi akut viral hepatitte ve diğer akut/kronik karaciğer hastalıklarında kötü prognoz işaretidir.",
+        "E": "MELD 3.0 skoru INR, total bilirubin, kreatinin, albümin ve sodyumu içerir; ancak protrombin zamanı uzaması yalnızca karaciğer hastalığında görülür ve K vitamini eksikliğinde uzamaz."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Protrombin zamanı yalnızca karaciğer hastalığında değil, K VİTAMİNİ EKSİKLİĞİNE yol açan durumlarda da (tıkanma sarılığı, her tür yağ malabsorpsiyonu) uzar. Ayırt edici ölçüt parenteral K vitaminine YANIT: eksiklikte düzelir, hepatoselüler yetmezlikte düzelmez.",
+      "aciklama_detay": "Serum albümini yalnızca hepatositlerde sentezlenir ve 18-20 günlük uzun bir yarı ömre sahiptir (günde %4'ü yıkılır). Bu yavaş döngü nedeniyle akut viral hepatit, ilaca bağlı hepatotoksisite ve tıkanma sarılığı gibi akut durumlarda albüminde yalnızca minimal değişiklik görülür. Hepatitte albüminin 3 g/dL altına inmesi kronik karaciğer hastalığı olasılığını akla getirmelidir. Hipoalbüminemi karaciğere özgü değildir: protein malnütrisyonu, protein kaybettiren enteropati, nefrotik sendrom ve IL-1/TNF gibi sitokinlerin uzun süreli artışıyla giden kronik enfeksiyonlarda da görülür.\n\nFaktör VIII dışındaki tüm pıhtılaşma faktörleri yalnızca hepatositlerde yapılır; faktör VIII vasküler endotel hücrelerinde üretilir. Yarı ömürleri albüminden çok kısadır — faktör VII için 6 saat, fibrinojen için 5 gün. Bu hızlı döngü nedeniyle pıhtılaşma faktörlerinin ölçümü hepatik sentez fonksiyonunun EN İYİ AKUT göstergesidir. Protrombin zamanı faktör II, V, VII ve X'u birlikte ölçer; II, VII, IX ve X'un sentezi K vitaminine bağımlıdır.\n\nProtrombin zamanı hepatit ve sirozda uzayabildiği gibi, K vitamini eksikliğine yol açan tıkanma sarılığı ve her tür yağ malabsorpsiyonunda da uzar. Kontrole göre 5 saniyeden fazla uzama ve parenteral K vitamini ile düzelmemesi kötü prognoz işaretidir. INR; total bilirubin, kreatinin, albümin ve sodyum ile birlikte MELD 3.0 skorunun bileşenidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Albümin yalnızca hepatositlerde sentezlenir, yarı ömrü 18-20 gündür ve bu nedenle akut/hafif hepatik disfonksiyonun iyi göstergesi değildir.",
+        "B": "DOGRU ifade — Faktör VIII vasküler endotel hücrelerinde üretilir; kalan pıhtılaşma faktörleri yalnızca hepatositlerde yapılır.",
+        "C": "DOGRU ifade — Faktör VII yarı ömrü 6 saat, fibrinojen 5 gündür; hızlı döngü nedeniyle pıhtılaşma faktörleri hepatik sentez fonksiyonunun en iyi akut ölçüsüdür.",
+        "D": "DOGRU ifade — Kontrole göre >5 saniye uzama ve parenteral K vitamini ile düzelmeme kötü prognoz işaretidir.",
+        "E": "YANLIS ifade (doğru yanıt) — MELD 3.0 bileşenleri doğru sayılmış, ancak protrombin zamanı K vitamini eksikliğine yol açan durumlarda (tıkanma sarılığı, yağ malabsorpsiyonu) da uzar. Ayırt edici ölçüt parenteral K vitaminine yanıttır."
+      },
+      "etiketler": [
+        "protrombin zamanı",
+        "albümin",
+        "faktör VIII",
+        "MELD 3.0",
+        "K vitamini",
+        "sentez fonksiyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s4",
+      "metin": "Kırk yedi yaşında kadın hasta, ani başlayan sağ üst kadran ağrısı ile acil servise başvuruyor. Başvuru anındaki tetkiklerinde AST 1420 IU/L, ALT 1580 IU/L, ALP normalin 1.5 katı, total bilirubin 3.1 mg/dL saptanıyor. Hastada hipotansiyon, şok ya da ilaç/toksin maruziyeti öyküsü yok; viral belirteçler negatif.\n\nKırk sekiz saat sonra tekrarlanan tetkiklerde aminotransferazlar hızla gerileyerek AST 210, ALT 330 IU/L'ye inerken ALP normalin 4 katına yükseliyor ve bilirubin artmaya devam ediyor.\n\nBu klinik-biyokimyasal seyri en iyi açıklayan durum hangisidir?",
+      "secenekler": {
+        "A": "Akut viral hepatit; aminotransferazlardaki hızlı düşüş spontan iyileşmeyi göstermektedir.",
+        "B": "Koledok içine safra taşı geçişi; biliyer tıkanmanın akut fazında aminotransferazlar kısa süreliğine 1000-2000 IU/L aralığına çıkabilir, ancak hızla düşerek biyokimyasal testler tipik kolestaz paternine dönüşür.",
+        "C": "İskemik karaciğer hasarı; uzamış hipotansiyona bağlı sentrilobüler nekroz aminotransferazları bu düzeye çıkarır.",
+        "D": "Asetaminofen hepatotoksisitesi; bu düzeydeki aminotransferaz yüksekliği yalnızca doğrudan toksinlerle açıklanabilir.",
+        "E": "Primer biliyer kolanjit alevlenmesi; AMA pozitifliği beklenir ve aminotransferaz yüksekliği geçicidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tıkanma sarılığında aminotransferazlar genellikle belirgin yükselmez. Tek dikkat çekici İSTİSNA, safra taşının koledoğa geçtiği akut fazdır: aminotransferazlar KISA SÜRELİĞİNE 1000-2000 IU/L aralığına çıkar, sonra hızla düşer ve tablo hızla tipik kolestaz paternine evrilir.",
+      "aciklama_detay": "Aminotransferazların 1000 IU/L üzerine çıkması neredeyse yalnızca yaygın hepatoselüler hasarla giden bozukluklarda olur: (1) viral hepatit, (2) iskemik karaciğer hasarı (uzamış hipotansiyon veya akut kalp yetersizliği) ve (3) toksin ya da ilaca bağlı karaciğer hasarı.\n\nBuna karşılık tıkanma sarılığında aminotransferazlar genellikle belirgin şekilde yükselmez. Bunun dikkat çekici tek istisnası, safra taşının ana safra kanalına (koledok) geçtiği biliyer tıkanmanın AKUT fazıdır. Bu durumda aminotransferazlar kısa süreliğine 1000-2000 IU/L aralığına çıkabilir; ancak düzeyler HIZLA düşer ve biyokimyasal testler süratle kolestaza özgü patern haline evrilir — yani ALP belirgin yükselirken (sıklıkla normalin dört katından fazla) aminotransferazlar geriler.\n\nVakadaki seyir tam olarak budur: başlangıçta hepatoselüler görünümlü çarpıcı aminotransferaz yüksekliği, 48 saat içinde hızlı gerileme ve eş zamanlı olarak ALP ile bilirubinin yükselmesi. Bu 'geçiş' paterni, ani başlayan sağ üst kadran ağrısı ile birlikte koledok taşını güçlü şekilde düşündürür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Akut viral hepatitte aminotransferazlar 48 saatte bu hızda gerilemez ve ALP'nin normalin dört katına yükselmesi beklenmez; viral belirteçler de negatiftir.",
+        "B": "DOGRU — Koledoğa taş geçişinin akut fazında aminotransferazlar kısa süreliğine 1000-2000 IU/L'ye çıkar, hızla düşer ve tablo tipik kolestaz paternine evrilir.",
+        "C": "YANLIS — İskemik hasar için hipotansiyon veya akut kalp yetersizliği gerekir; vakada böyle bir öykü yoktur ve iskemik hasarda ALP'nin bu şekilde yükselmesi tipik değildir.",
+        "D": "YANLIS — Asetaminofen hasarında aminotransferazlar sıklıkla 10.000 IU/L'yi aşar ve karakteristik olarak bilirubin DÜŞÜK kalır; ayrıca ilaç maruziyeti öyküsü yoktur.",
+        "E": "YANLIS — PBK kronik kolestatik bir hastalıktır; ani sağ üst kadran ağrısı ve 1500 IU/L düzeyinde aminotransferaz yüksekliğiyle prezente olmaz."
+      },
+      "etiketler": [
+        "koledok taşı",
+        "kolestaz",
+        "aminotransferaz",
+        "tıkanma sarılığı",
+        "biliyer obstrüksiyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s5",
+      "metin": "Yirmi iki yaşında erkek hasta, rutin kontrolde saptanan hafif sarılık nedeniyle değerlendiriliyor. Total bilirubin 2.6 mg/dL, direkt fraksiyon %8. Aminotransferazlar, ALP, albümin ve INR normal. Hemoliz bulgusu yok; retikülosit, LDH ve haptoglobin normal. Hastanın sarılığının açlık, yorgunluk ve araya giren hastalıklarda belirginleştiği öğreniliyor.\n\nHastaya kolorektal kanser nedeniyle irinotekan (CPT-11) içeren kemoterapi planlanıyor.\n\nBu hastadaki durum ve irinotekan ilişkisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gilbert sendromu; Batı toplumlarında hastaların neredeyse tamamında UGT1A1 kodlayan bölge normaldir ancak promotor bölgede A(TA)7TAA insersiyonu için homozigotluk vardır. İrinotekanın aktif metaboliti SN-38 özgül olarak UGT1A1 ile glukuronidlendiğinden, bu hastalarda inatçı ishal ve miyelosupresyon dahil toksisiteler bildirilmiştir.",
+        "B": "Crigler-Najjar tip II; fenobarbital ile bilirubin normale iner ve irinotekan güvenle kullanılabilir.",
+        "C": "Dubin-Johnson sendromu; direkt bilirubin baskın olduğundan irinotekan metabolizması etkilenmez.",
+        "D": "Gilbert sendromu; UGT1A1 aktivitesi tümüyle yok olduğundan irinotekan kesin kontrendikedir ve kernikterus riski taşır.",
+        "E": "Rotor sendromu; OATP1B1/1B3 eksikliği nedeniyle irinotekan karaciğere alınamaz ve toksisite görülmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Gilbert sendromu: hafif indirekt hiperbilirubinemi, normal karaciğer testleri, hemoliz yok; stres/açlık/yorgunlukla artar. Batı'da neredeyse tüm hastalarda kodlayan bölge normaldir, promotorda A(TA)7TAA insersiyonu homozigottur. İrinotekanın aktif metaboliti SN-38 özgül olarak UGT1A1 ile glukuronidlenir — bu hastalarda inatçı ishal ve miyelosupresyon bildirilmiştir.",
+      "aciklama_detay": "Gilbert sendromu (GS) hafif konjuge olmamış hiperbilirubinemi, standart hepatik biyokimyasal testlerin normal olması ve normal hepatik histoloji (bazı hastalarda lipofussin pigmentinde hafif artış dışında) ile karakterizedir. Serum bilirubin çoğunlukla <3 mg/dL'dir. Değerler kişiden kişiye ve zaman içinde dalgalanır; STRES, YORGUNLUK, ALKOL KULLANIMI, KALORİ ALIMININ AZALMASI ve araya giren hastalıkla yükselir, kalori alımının artması veya enzim indükleyici ajanlarla düşer. Prevalans %8'e kadar bildirilmiştir.\n\nMoleküler temel: Avrupa ve ABD'de yapılan çalışmalarda hastaların neredeyse tamamının UGT1A1 kodlayan bölgesi NORMALDİR, ancak birinci ekzonun promotor bölgesinde fazladan bir TA insersiyonu (A[TA]7TAA yerine A[TA]6TAA) için homozigottur. UGT1A1 aktivitesi tipik olarak normalin %10-35'ine iner — tümüyle yok olmaz.\n\nİlaç etkileşimi açısından kritik nokta: GS'de glukuronidasyonla metabolize edilen çoğu ksenobiyotiğin işlenmesi normaldir. Başlıca istisna antitümör ajan İRİNOTEKAN'dır (CPT-11); aktif metaboliti SN-38 özgül olarak bilirubin-UDP-glukuronoziltransferaz ile glukuronidlenir. GS hastalarına CPT-11 verilmesi inatçı ishal ve miyelosupresyon dahil çeşitli toksisitelerle sonuçlanmıştır. Ayrıca HIV proteaz inhibitörleri indinavir ve atazanavir UGT1A1'i inhibe ederek özellikle önceden GS'si olanlarda belirgin hiperbilirubinemi yapar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tablo Gilbert sendromudur; promotordaki A(TA)7TAA homozigotluğu tipiktir ve SN-38'in UGT1A1 ile glukuronidlenmesi nedeniyle irinotekan toksisitesi (inatçı ishal, miyelosupresyon) bildirilmiştir.",
+        "B": "YANLIS — Crigler-Najjar tip II'de bilirubin çok daha yüksektir (genellikle 6-25 mg/dL) ve fenobarbital bilirubini normale İNDİRMEZ, yalnızca %25'ten fazla düşürür (normal değil, 3-5 mg/dL aralığına iner).",
+        "C": "YANLIS — Dubin-Johnson'da hiperbilirubinemi KONJUGE baskındır ve bilirubinüri vardır; bu hastada direkt fraksiyon %8'dir, yani konjuge olmayan hiperbilirubinemi söz konusudur.",
+        "D": "YANLIS — Gilbert sendromunda UGT1A1 aktivitesi tümüyle yok olmaz, normalin %10-35'ine iner; kernikterus GS'de GÖRÜLMEZ. İrinotekan kesin kontrendike değildir ancak dikkat gerektirir.",
+        "E": "YANLIS — Rotor sendromu konjuge hiperbilirubinemi ile seyreder. Ayrıca OATP1B1/1B3 eksikliği statin gibi ilaçların karaciğere alımını bozarak toksisite riskini ARTIRIR, azaltmaz."
+      },
+      "etiketler": [
+        "Gilbert sendromu",
+        "UGT1A1",
+        "A(TA)7TAA",
+        "irinotekan",
+        "SN-38",
+        "konjuge olmayan hiperbilirubinemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s6",
+      "metin": "Yenidoğan döneminden itibaren belirgin sarılığı olan bir çocuk değerlendiriliyor. Total bilirubin 24 mg/dL düzeyinde ve tamamına yakını konjuge olmayan fraksiyona ait. Aminotransferazlar ve ALP normal, hemoliz yok, karaciğer histolojisi normal.\n\nHastaya fenobarbital başlanıyor ve iki hafta sonra serum bilirubin düzeyinin %40 azalarak 14 mg/dL'ye indiği görülüyor. Safra örneği pigmentli olup en büyük fraksiyonu monoglukuronidler oluşturuyor.\n\nBu tabloyla ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Crigler-Najjar tip I; fenobarbital yanıtı tanıyı doğrular ve karaciğer nakli gerekmez.",
+        "B": "Crigler-Najjar tip II; fenobarbitale %25'ten fazla yanıt tip II'yi tip I'den ayırır. UGT1A1 aktivitesi tipik olarak normalin %10'una kadar azalmış ama SAPTANABİLİR düzeydedir ve safrada monoglukuronid oranı karakteristik olarak artmıştır.",
+        "C": "Gilbert sendromu; bu bilirubin düzeyleri GS için tipiktir ve fenobarbital yanıtı tanısaldır.",
+        "D": "Crigler-Najjar tip I; safranın pigmentli olması ve monoglukuronid baskınlığı tip I'in tanımlayıcı özelliğidir.",
+        "E": "Fizyolojik yenidoğan sarılığı; iki haftada gerileme beklenen seyirdir ve ek inceleme gerekmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Fenobarbitale %25'ten FAZLA yanıt Crigler-Najjar tip II'yi tip I'den ayırır. Tip II'de UGT1A1 normalin ~%10'una inmiştir ama saptanabilir; safra derin renklidir ve MONOGLUKURONİD oranı karakteristik olarak artmıştır. Tip I'de enzim yoktur, fenobarbitale yanıt YOKTUR, safra soluk/renksizdir.",
+      "aciklama_detay": "Crigler-Najjar tip I (CN-I) neonatal dönemde ortaya çıkan ve ömür boyu süren çarpıcı konjuge olmayan hiperbilirubinemi (20-45 mg/dL) ile karakterizedir. Diğer hepatik biyokimyasal testler normaldir, hemoliz yoktur, histoloji esasen normaldir. Safrada bilirubin glukuronidleri neredeyse yoktur ve karaciğer dokusunda saptanabilir UGT1A1 aktivitesi bulunmaz. Ne UGT1A1 aktivitesi ne de serum bilirubin düzeyi FENOBARBİTALE veya diğer enzim indükleyicilerine YANIT VERİR. Otozomal resesiftir. Fototerapi öncesinde hastaların çoğu bebeklik veya erken çocuklukta kernikterustan kaybediliyordu; günümüzde beyin hasarını ve ölümü önlemede en iyi seçenek erken karaciğer naklidir.\n\nCrigler-Najjar tip II (CN-II) tip I'den şu noktalarda ayrılır: (1) ortalama bilirubin düzeyleri daha düşüktür (genellikle ≤20 mg/dL); (2) kernikterus yalnızca seyrek görülür; (3) SAFRA DERİN RENKLİDİR ve bilirubin glukuronidleri mevcuttur — monoglukuronid oranında çarpıcı ve karakteristik bir artış vardır (ortalama %57); (4) karaciğerde UGT1A1 genellikle azalmış düzeyde de olsa BULUNUR (tipik olarak normalin %10'u); (5) çoğunlukla bebeklikte saptanmakla birlikte bazı olgularda ileri yaşlara kadar fark edilmeyebilir.\n\nAYIRT EDİCİ ÖLÇÜT: Fenobarbital gibi enzim indükleyicilerine yanıt olarak serum bilirubin konsantrasyonunun %25'TEN FAZLA azalması CN-II'yi CN-I'den ayırır. Fenobarbital altında bilirubin normale dönmez, tipik olarak 3-5 mg/dL aralığında seyreder. CN-II'de kernikterus insidansı düşük olmakla birlikte araya giren hastalık, açlık gibi bilirubini geçici yükselten durumlarda bebeklerde, adölesanlarda ve erişkinlerde bildirilmiştir; bu nedenle yatmadan önce tek doz fenobarbital tedavisi yaygın olarak önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — CN-I'de fenobarbitale YANIT YOKTUR; yanıt varlığı tip I tanısını dışlar.",
+        "B": "DOGRU — Fenobarbitale >%25 yanıt, saptanabilir UGT1A1 aktivitesi (~normalin %10'u), pigmentli safra ve monoglukuronid baskınlığı CN-II'nin tanımlayıcı özellikleridir.",
+        "C": "YANLIS — Gilbert sendromunda bilirubin tipik olarak <3 mg/dL, açlık ve hemoliz yokluğunda ≤4 mg/dL'dir; 24 mg/dL GS ile bağdaşmaz.",
+        "D": "YANLIS — Tip I'de safra SOLUK ya da RENKSİZDİR ve bilirubinin >%90'ı konjuge değildir; pigmentli safra ve monoglukuronid baskınlığı tip II özelliğidir.",
+        "E": "YANLIS — Fizyolojik yenidoğan sarılığında zirve düzeyler tipik olarak 5-10 mg/dL'dir ve 2 hafta içinde erişkin değerlerine iner; ömür boyu süren 24 mg/dL düzeyi fizyolojik değildir."
+      },
+      "etiketler": [
+        "Crigler-Najjar",
+        "UGT1A1",
+        "fenobarbital",
+        "monoglukuronid",
+        "kernikterus",
+        "konjuge olmayan hiperbilirubinemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s7",
+      "metin": "Yirmi sekiz yaşında kadın hasta, oral kontraseptif başlanmasının ardından belirginleşen sarılık nedeniyle değerlendiriliyor. Total bilirubin 3.8 mg/dL olup baskın olarak KONJUGE fraksiyona ait; idrarda bilirubin pozitif. Aminotransferazlar, ALP ve diğer rutin testler normal. Fizik muayene sarılık dışında olağan.\n\nYapılan karaciğer biyopsisinde sentrilobüler hepatositlerin lizozomlarında koyu, kaba granüler pigment birikimi saptanıyor; karaciğer makroskopik olarak siyah görünümde. İdrar koproporfirin incelemesinde toplam koproporfirin miktarı NORMAL, ancak %80'i izomer I olarak bulunuyor.\n\nBu tanı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Rotor sendromu; OATP1B1 ve OATP1B3 eksikliği vardır ve karaciğerde pigment birikimi tipiktir.",
+        "B": "Dubin-Johnson sendromu; kanaliküler MRP2 (ABCC2) ekspresyon defektine bağlıdır, otozomal resesiftir ve safra asidi metabolizması NORMAL olduğundan hastalarda kaşıntı görülmez.",
+        "C": "Progresif familyal intrahepatik kolestaz tip 3; MDR3 (ABCB4) mutasyonu ve yüksek GGT ile seyreder.",
+        "D": "Benign rekürren intrahepatik kolestaz; ataklar sırasında ALP ve konjuge bilirubin yükselir, kaşıntı belirgindir.",
+        "E": "Dubin-Johnson sendromu; MRP3 (ABCC3) mutasyonuna bağlıdır ve idrar toplam koproporfirin atılımı belirgin şekilde ARTMIŞTIR."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dubin-Johnson sendromu: hafif konjuge hiperbilirubinemi + bilirubinüri, karaciğerde koyu granüler pigment (siyah karaciğer), idrarda toplam koproporfirin NORMAL ama %80'i izomer I. Kanaliküler MRP2 (ABCC2) defekti; otozomal resesif. Safra asidi işlenmesi normal olduğu için KAŞINTI YOKTUR.",
+      "aciklama_detay": "Dubin-Johnson sendromu (DJS) düşük dereceli, baskın olarak konjuge hiperbilirubinemi ile karakterize selim bir bozukluktur. Total bilirubin tipik olarak 2-5 mg/dL'dir; araya giren hastalık, ORAL KONTRASEPTİF kullanımı ve GEBELİKLE artabilir — kadınlarda tablo bu durumlara kadar subklinik kalabilir. Hiperbilirubinemi konjuge fraksiyondaki artışa bağlı olduğundan BİLİRUBİNÜRİ karakteristik olarak vardır. Bilirubin dışındaki rutin testler (ALP, transaminazlar) normaldir.\n\nKardinal özellik sentrilobüler hepatositlerin lizozomlarında koyu, kaba granüler pigment birikimidir; karaciğer makroskopik olarak siyah görünebilir. Bu pigmentin normal atılamayan epinefrin metabolitlerinden kaynaklandığı düşünülür.\n\nMoleküler temel: kanaliküler membranda ATP bağımlı taşıyıcı olan MRP2 (ABCC2) ekspresyonunun bozulmasıdır; kalıtım otozomal resesiftir. Safra asitlerinin hepatoselüler alımı ve biliyer atılımı DJS'de NORMALDİR — bu hastaların serum ve safra safra asidi düzeyleri normaldir ve KAŞINTILARI YOKTUR. Bu, kolestatik sendromlardan ayırt edici önemli bir noktadır.\n\nTanısal koproporfirin bulgusu: normalde idrardaki koproporfirinin %75'i izomer III'tür. DJS'de toplam koproporfirin içeriği NORMAL, ancak %80'i izomer I'dir. Rotor sendromunda ise toplam idrar koproporfirin atılımı belirgin şekilde ARTMIŞTIR ve izomer I oranı yükselmekle birlikte genellikle %70'in altındadır. Rotor sendromu OATP1B1 (SLCO1B1) ve OATP1B3 (SLCO1B3) taşıyıcılarının eş zamanlı eksikliğine bağlıdır ve karaciğerde anormal pigmentasyon YOKTUR.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Rotor sendromunda karaciğerde artmış pigmentasyon YOKTUR ve karaciğer tümüyle normal görünür; ayrıca toplam idrar koproporfirini artmıştır.",
+        "B": "DOGRU — DJS kanaliküler MRP2 (ABCC2) defektine bağlı otozomal resesif bir bozukluktur; safra asidi işlenmesi normal olduğundan kaşıntı görülmez.",
+        "C": "YANLIS — PFIC tip 3 çocuklukta başlayan ŞİDDETLİ kolestazla seyreder; DJS'de kolestaz yoktur ve GGT normaldir.",
+        "D": "YANLIS — BRIC tekrarlayan kaşıntı ve sarılık atakları ile seyreder; ataklar arasında tüm testler normaldir. Bu vakada kaşıntı ve atak öyküsü yoktur, ayrıca siyah karaciğer BRIC'in özelliği değildir.",
+        "E": "YANLIS — Tanı doğru ancak mekanizma yanlış: DJS MRP2 (ABCC2) defektine bağlıdır, MRP3'e değil. Ayrıca DJS'de idrar TOPLAM koproporfirini NORMALDİR; artış Rotor sendromunun özelliğidir."
+      },
+      "etiketler": [
+        "Dubin-Johnson sendromu",
+        "MRP2",
+        "ABCC2",
+        "koproporfirin izomer I",
+        "konjuge hiperbilirubinemi",
+        "Rotor sendromu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s8",
+      "metin": "Çocukluk çağında başlayan şiddetli kolestazı olan üç ayrı hasta değerlendiriliyor. Her üçünde de progresif familyal intrahepatik kolestaz (PFIC) düşünülüyor.\n\nPFIC alt tipleri ve serum gama-glutamil transferaz (GGT) düzeyleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Üç PFIC tipinin de klinik fenotipi benzerdir; ancak yalnızca TİP 3 yüksek serum GGT düzeyi ile ilişkilidir. Tip 3, safra kanaliküsü boyunca fosfolipid atılımı için gerekli olan MDR3 (ABCB4) mutasyonuna bağlıdır.",
+        "B": "Yalnızca tip 1 (Byler hastalığı) yüksek GGT ile seyreder; tip 2 ve tip 3'te GGT normaldir.",
+        "C": "PFIC tip 2 BSEP (ABCB11) mutasyonuna bağlıdır ve karakteristik olarak yüksek GGT ile seyreder.",
+        "D": "Üç tipte de GGT belirgin şekilde yüksektir; ayrım yalnızca genetik analizle yapılabilir.",
+        "E": "PFIC tip 1 ve tip 2 aynı gendeki (ATP8B1) farklı mutasyonlardan kaynaklanır ve ikisi de yüksek GGT ile seyreder."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Üç PFIC tipinin klinik fenotipi benzerdir ama yalnızca TİP 3 yüksek GGT ile seyreder; tip 1 ve tip 2'de GGT normal ya da yalnızca hafif yüksektir. Tip 3, safra kanaliküsünden fosfolipid atılımı için gerekli MDR3 (ABCB4) mutasyonuna bağlıdır.",
+      "aciklama_detay": "Progresif familyal intrahepatik kolestaz (PFIC) fenotipik olarak ilişkili üç sendroma verilen addır.\n\nPFIC tip 1 (Byler hastalığı) erken bebeklikte, başlangıçta epizodik olabilen kolestazla ortaya çıkar. BRIC'in aksine Byler hastalığı çocukluk döneminde malnütrisyon, büyüme geriliği ve son dönem karaciğer hastalığına ilerler. FIC1 (ATP8B1) mutasyonunun sonucudur.\n\nPFIC tip 2, başlangıçta 'sister of P-glycoprotein' olarak adlandırılan, bugün safra tuzu atılım proteini (BSEP, ABCB11) olarak bilinen ve safra asitlerinin başlıca kanaliküler ihracatçısı olan proteindeki mutasyona bağlıdır. Bu proteinin bazı mutasyonları PFIC tip 2 yerine BRIC tip 2 fenotipiyle ilişkilidir.\n\nPFIC tip 3, safra kanaliküsü boyunca fosfolipidlerin normal hepatoselüler atılımı için gerekli olan MDR3 (ABCB4) mutasyonuyla ilişkilidir.\n\nAYIRT EDİCİ NOKTA: Üç PFIC tipinin klinik fenotipleri benzer olmakla birlikte, YALNIZCA TİP 3 yüksek serum GGT aktivitesi ile ilişkilidir. Buna karşılık semptomatik BRIC ile PFIC tip 1 ve tip 2'de bu enzimin aktivitesi normal ya da yalnızca hafif yüksektir.\n\nEk bilgi: Klinik olarak PFIC tanısı alan ve GGT'si normal olan hastaların yaklaşık üçte birinde FIC1 veya BSEP mutasyonu bulunamaz. Farnesoid X reseptörünü (FXR) kodlayan NR1H4 mutasyonu olanlarda BSEP ekspresyonunun yokluğuyla PFIC2 ile aynı sendrom görülür. Sıkı bağlantı proteini 2 (TJP2) ve onunla etkileşen USP53 mutasyonları da normal GGT düzeyleriyle giden şiddetli kolestazla ilişkilendirilmiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Yalnızca PFIC tip 3 yüksek GGT ile seyreder ve MDR3 (ABCB4) mutasyonuna bağlıdır; MDR3 kanaliküler fosfolipid atılımı için gereklidir.",
+        "B": "YANLIS — Tip 1 (Byler, ATP8B1/FIC1) NORMAL veya yalnızca hafif yüksek GGT ile seyreder; yüksek GGT tip 3'ün özelliğidir.",
+        "C": "YANLIS — PFIC tip 2 gerçekten BSEP (ABCB11) mutasyonuna bağlıdır, ancak GGT NORMAL ya da yalnızca hafif yüksektir.",
+        "D": "YANLIS — Üç tipte GGT yüksek değildir; GGT tam olarak bu üçünü ayırmaya yarayan pratik ölçüttür (tip 3 yüksek, tip 1 ve 2 normal).",
+        "E": "YANLIS — Tip 1 ATP8B1 (FIC1), tip 2 ise ABCB11 (BSEP) mutasyonuna bağlıdır; farklı genlerdir. Ayrıca ikisinde de GGT normaldir."
+      },
+      "etiketler": [
+        "PFIC",
+        "MDR3",
+        "ABCB4",
+        "BSEP",
+        "ABCB11",
+        "FIC1",
+        "GGT",
+        "kolestaz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s9",
+      "metin": "Otuz dört yaşında kadın hasta, acil servise bulantı, kusma ve karın ağrısı ile getiriliyor. Yakınları hastanın yaklaşık 20 saat önce çok sayıda ağrı kesici tablet aldığını belirtiyor.\n\nLaboratuvar:\nAST: 11.400 IU/L\nALT: 9.850 IU/L\nTotal bilirubin: 2.1 mg/dL\nINR: 2.8\nKreatinin: 2.4 mg/dL\n\nBu hastadaki hepatotoksisitenin mekanizması ve tedavisi ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Asetaminofenin küçük bir bölümü faz I reaksiyonuyla sitokrom P450 CYP2E1 aracılığıyla hepatotoksik metabolit NAPQI'ye dönüşür; NAPQI glutatyona bağlanarak zararsız merkaptürik aside çevrilir.",
+        "B": "N-asetilsistein glutatyon depolarını yenileyen sülfhidril donörü sağlar; tedaviye ilk 8 saat içinde başlanmalıdır, ancak aşırı dozdan 24-36 saat sonra verildiğinde bile en azından kısmen etkili olabilir.",
+        "C": "Aşırı yüksek aminotransferaz düzeylerinin DÜŞÜK bilirubin düzeyleriyle birlikte bulunması bu hiperakut hasarın karakteristik biyokimyasal imzasıdır ve asetaminofen şüphesini artırmalıdır.",
+        "D": "Kronik alkol kullananlarda CYP2E1 indüklenmesi ve glutatyon üretiminin baskılanması nedeniyle toksik asetaminofen dozu 2 g kadar düşük olabilir.",
+        "E": "Ağır asetaminofen hasarında akut böbrek hasarı nadirdir; geliştiğinde kalıcıdır ve genellikle uzun süreli diyaliz gerektirir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Ağır asetaminofen hasarı olan hastaların yaklaşık %75'inde akut böbrek hasarı GELİŞİR — nadir değildir. Ancak neredeyse her zaman KENDİNİ SINIRLAR; kalıcı değildir.",
+      "aciklama_detay": "Asetaminofen Batı dünyasında akut karaciğer yetmezliğinin en sık nedenidir ve doza bağlı sentrilobüler hepatik nekroza yol açar. Tek seferlik 10-15 g alım klinik karaciğer hasarı yapabilir; 25 g ve üzeri genellikle ölümcül fulminan hastalıkla ilişkilidir. Alımdan 4-12 saat sonra bulantı, kusma, ishal, karın ağrısı ve şok görülür; 24-48 saat sonra bu bulgular yatışırken karaciğer hasarı belirginleşir. Maksimal anormallikler ve karaciğer yetmezliği 3-5. günlerde ortaya çıkar ve 10.000 IU/L'yi aşan aminotransferaz düzeyleri seyrek değildir.\n\nMekanizma: Asetaminofen ağırlıklı olarak faz II reaksiyonuyla zararsız sülfat ve glukuronid metabolitlerine çevrilir; küçük bir bölümü ise faz I reaksiyonuyla sitokrom P450 CYP2E1 aracılığıyla hepatotoksik metabolit N-asetil-p-benzokinonimin'e (NAPQI) dönüşür. NAPQI 'hepatoprotektif' glutatyona bağlanarak zararsız, suda çözünen merkaptürik aside çevrilir ve böbrekten atılır. Aşırı NAPQI oluştuğunda ya da glutatyon düzeyleri düşük olduğunda glutatyon tükenir ve NAPQI hepatosit makromoleküllerine kovalan bağlanarak 'addükt' oluşturur.\n\nKronik alkol kullanımı CYP2E1'i indükler ve hepatik glutatyon üretimini baskılar; bu nedenle kronik alkol kullananlarda toksik doz 2 g kadar düşük olabilir.\n\nTanısal imza: Çok yüksek aminotransferaz düzeylerinin DÜŞÜK bilirubin düzeyleriyle birlikte bulunması bu hiperakut hasarın karakteristiğidir ve öykü net olmasa bile asetaminofen şüphesini artırmalıdır.\n\nTedavi: N-asetilsistein sülfhidril donör grupları sağlayarak glutatyonu yeniler. Tedaviye ilk 8 saat içinde başlanmalıdır ancak 24-36 saat sonra bile en azından kısmen etkili olabilir. IV yükleme dozu 140 mg/kg (1 saatte), ardından 15-20 doz boyunca 4 saatte bir 70 mg/kg. Erken arteriyel laktat >3.5 mmol/L karaciğer nakli gereksinimini öngörebilir.\n\nAkut böbrek hasarı ağır asetaminofen hasarı olanların YAKLAŞIK %75'İNDE görülür ancak neredeyse her zaman kendini sınırlar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Faz I / CYP2E1 aracılığıyla NAPQI oluşumu ve glutatyonla merkaptürik aside dönüşüm mekanizması doğru tanımlanmıştır.",
+        "B": "DOGRU ifade — NAC glutatyonu yeniler; ilk 8 saatte başlanmalı, 24-36 saat sonra bile kısmen etkili olabilir.",
+        "C": "DOGRU ifade — Çok yüksek aminotransferaz + düşük bilirubin bu hiperakut hasarın karakteristik biyokimyasal imzasıdır.",
+        "D": "DOGRU ifade — Alkol CYP2E1'i indükler ve glutatyon üretimini baskılar; kronik alkol kullananlarda toksik doz 2 g kadar düşük olabilir.",
+        "E": "YANLIS ifade (doğru yanıt) — Akut böbrek hasarı ağır olguların yaklaşık %75'inde GÖRÜLÜR (nadir değildir) ve neredeyse her zaman KENDİNİ SINIRLAR (kalıcı değildir)."
+      },
+      "etiketler": [
+        "asetaminofen",
+        "NAPQI",
+        "CYP2E1",
+        "N-asetilsistein",
+        "glutatyon",
+        "akut karaciğer yetmezliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s10",
+      "metin": "İlaca bağlı karaciğer hasarı (DILI) düşünülen bir hastada, hasarın hepatoselüler mi yoksa kolestatik mi olduğunu sınıflamak için R değeri hesaplanıyor. R değeri, ALT ve ALP'nin normalin üst sınırının katları cinsinden ifade edilen oranıdır.\n\nHastanın ALT değeri normalin üst sınırının 8 katı, ALP değeri normalin üst sınırının 1.2 katı olarak ölçülüyor.\n\nBu hastadaki hasar tipi ve R değerinin yorumlanması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "R ≈ 6.7'dir; R >5.0 HEPATOSELÜLER hasarla, R <2.0 kolestatik hasarla, R 2.0-5.0 arası ise miks hepatoselüler-kolestatik hasarla ilişkilidir.",
+        "B": "R ≈ 6.7'dir; R >5.0 KOLESTATİK hasarı gösterir çünkü ALP payda konumundadır.",
+        "C": "R ≈ 0.15'tir; bu değer kolestatik hasarı gösterir.",
+        "D": "R değeri yalnızca doğrudan toksik hasarda geçerlidir; idiyosenkratik reaksiyonlarda kullanılamaz.",
+        "E": "R ≈ 6.7'dir; ancak 5.0'ın üzerindeki değerler tanısal değildir ve yalnızca karaciğer biyopsisi ile sınıflama yapılabilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "R = (ALT / ALT üst sınırı) ÷ (ALP / ALP üst sınırı) = 8 ÷ 1.2 ≈ 6.7. R >5.0 hepatoselüler, R <2.0 kolestatik, R 2.0-5.0 arası miks hepatoselüler-kolestatik hasarı gösterir.",
+      "aciklama_detay": "İlaca bağlı karaciğer hasarında (DILI) hepatoselüler ve kolestatik reaksiyon ayrımı klinik olarak R DEĞERİ ile yapılır. R, alanin aminotransferazın (ALT) alkalen fosfataza (ALP) oranıdır; her ikisi de normalin ÜST SINIRININ KATLARI cinsinden ifade edilir.\n\nYorumlama:\n• R > 5.0 → HEPATOSELÜLER hasar\n• R < 2.0 → KOLESTATİK hasar\n• R = 2.0 - 5.0 → MİKS hepatoselüler-kolestatik hasar\n\nVakada R = 8 / 1.2 ≈ 6.7, yani hepatoselüler hasar.\n\nHepatoselüler hasar DILI'nin en sık formudur; karaciğer lobülünde noktasal (spotty) nekroz ve baskın olarak lenfositik infiltrasyonla karakterizedir ve akut hepatit A, B veya C'de görülene benzer. İzoniazid ve siprofloksasin gibi ajanlar viral hepatitten ayırt edilemeyen klinik ve morfolojik tablo yaratabilir.\n\nİlaca bağlı kolestaz hafiften giderek şiddetliye doğru dört başlık altında incelenir: (1) sınırlı hepatoselüler hasarla giden 'bland' kolestaz (östrojenler, 17-alfa substitüe androjenler); (2) inflamatuar kolestaz (amoksisilin-klavulanik asit — DILI olgularında en sık suçlanan antibiyotik; oksasilin, eritromisin estolat); (3) sklerozan kolanjit; (4) safra kanallarının kaybolması — 'duktopenik' kolestaz ya da vanishing bile duct sendromu (karbamazepin, levofloksasin).\n\nR değeri idiyosenkratik reaksiyonlarda da doğrudan toksik hasarda da kullanılabilen genel bir sınıflama aracıdır; biyopsi gerektirmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — R = 8 ÷ 1.2 ≈ 6.7; R >5.0 hepatoselüler, <2.0 kolestatik, 2.0-5.0 miks hasarı gösterir.",
+        "B": "YANLIS — Hesap doğru ancak yorum ters: R >5.0 HEPATOSELÜLER hasarı gösterir. ALP paydadadır ve ALP göreli olarak düşük kaldığında R yükselir.",
+        "C": "YANLIS — Hesap hatalı; R oranı ALT/ALP şeklindedir (8/1.2 ≈ 6.7), tersi değil.",
+        "D": "YANLIS — R değeri hasar tipini sınıflayan genel bir araçtır; idiyosenkratik ve doğrudan toksik hasarın her ikisinde de kullanılır.",
+        "E": "YANLIS — R değeri hasar tipini sınıflamak için kullanılan geçerli bir klinik ölçüttür; sınıflama için biyopsi zorunlu değildir."
+      },
+      "etiketler": [
+        "R değeri",
+        "DILI",
+        "hepatoselüler hasar",
+        "kolestatik hasar",
+        "ALT/ALP oranı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s11",
+      "metin": "Bir faz 3 klinik ilaç çalışmasında, araştırma ilacını alan katılımcılardan bazılarında sarılık geliştiği bildiriliyor. Çalışma güvenlik kurulu bu bulgunun taşıdığı anlamı değerlendiriyor.\n\nİlaç geliştirme sürecinde hepatotoksisitenin öngörülmesi ve \"Hy Yasası\" ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hy Yasası, klinik çalışmada sarılık ortaya çıkmasının daha ciddi karaciğer hasarını öngördüğünü belirtir; sarılık olguları ile karaciğer yetmezliği arasında yaklaşık 10:1 oran vardır (10 sarılıklı hastaya karşılık 1 akut karaciğer yetmezliği).",
+        "B": "Hy Yasası yalnızca aminotransferaz yüksekliğine dayanır; sarılık varlığının öngörücü değeri yoktur.",
+        "C": "Hy Yasası, sarılık gelişen her hastanın karaciğer nakli gerektireceğini öngörür.",
+        "D": "Hy Yasası idiyosenkratik reaksiyonların doza bağımlı olduğunu ve 100 mg altındaki günlük dozlarda görülmediğini belirtir.",
+        "E": "Hy Yasası troglitazon örneğiyle çürütülmüştür; günümüzde ilaç onay süreçlerinde kullanılmamaktadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hy Yasası (Hyman Zimmerman): faz 3 çalışmasında SARILIK ortaya çıkarsa daha ciddi karaciğer hasarı olasıdır ve sarılık olguları ile karaciğer yetmezliği arasında yaklaşık 10:1 oran vardır. Ağır hepatotoksisitenin en geçerli öngörücüsüdür.",
+      "aciklama_detay": "10.000 alıcıda birden daha seyrek görülen herhangi bir idiyosenkratik reaksiyon, en fazla birkaç bin katılımcı içeren klinik çalışmaların çoğunda fark edilmeden kalacaktır. FDA ve ilaç şirketleri ciddi toksisitenin en ince belirtilerini bile aramayı öğrenmiş ve daha ciddi toksisite için olası bir vekil gösterge olarak aminotransferaz yükselmesi gelişen katılımcı sayısını düzenli olarak izlemeye başlamıştır.\n\nAğır hepatotoksisitenin öngörücüsü olarak daha da geçerli olan bulgu ise klinik ilaç çalışmasına alınan hastalarda SARILIK ortaya çıkmasıdır — buna ilaç hepatotoksisitesi alanının öncülerinden Dr. Hyman Zimmerman'ın adına atfen 'HY YASASI' denir. Zimmerman, faz 3 çalışması sırasında sarılık ortaya çıkarsa daha ciddi karaciğer hasarının olası olduğunu, sarılık olguları ile karaciğer yetmezliği arasında YAKLAŞIK 10:1 ORAN bulunduğunu (yani 10 sarılıklı hastaya karşılık 1 akut karaciğer yetmezliği) fark etmiştir.\n\nİlaç geliştirme sırasında bu tür 'Hy Yasası olgularının' saptanması, özellikle katılımcılardan herhangi biri kötü bir sonlanım yaşarsa, sıklıkla onay alınamamasının habercisidir.\n\nTroglitazon örneği bu yasayı çürütmez, tam tersine değerini gösterir: PPAR-gama agonisti olan troglitazon tiazolidindion sınıfının ilkiydi. Geriye dönük bakıldığında faz 3 çalışmalarında Hy Yasası kapsamına giren sarılık olguları ortaya çıkmıştı, ancak ilaç piyasaya sürüldükten uzun süre sonrasına dek hiçbir karaciğer yetmezliği olgusu fark edilmedi. Bu durum toksik ilaçların belirlenmesinde ve piyasadan çekilmesinde pazarlama sonrası izlemin önemini vurgular. Troglitazon 2001'de piyasadan çekildikten sonra FDA tarafından tam onay almış hiçbir ilacın piyasadan çekilmesi gerekmemiştir.\n\nAyrıca not: idiyosenkratik toksisite yapan ajanların çoğu görece yüksek günlük dozlarda (tipik olarak 100 mg üzeri) verilir — bu doz için bir rol olduğunu düşündürür; ancak bu Hy Yasası'nın tanımı değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hy Yasası sarılığın ciddi karaciğer hasarını öngördüğünü ve sarılık ile karaciğer yetmezliği arasında yaklaşık 10:1 oran bulunduğunu belirtir.",
+        "B": "YANLIS — Tam tersi: aminotransferaz yüksekliği bir vekil göstergedir, SARILIK ise ağır hepatotoksisitenin daha geçerli öngörücüsüdür.",
+        "C": "YANLIS — Oran 10:1'dir; sarılık gelişen her hasta karaciğer yetmezliğine ya da nakle gitmez.",
+        "D": "YANLIS — Bu ifade idiyosenkratik toksisitede doz ilişkisine dair ayrı bir gözlemdir (çoğu ajan >100 mg/gün dozlarda verilir), Hy Yasası'nın tanımı değildir.",
+        "E": "YANLIS — Troglitazon örneği Hy Yasası'nı çürütmez; aksine faz 3'te Hy Yasası olguları görüldüğü hâlde gözden kaçtığını ve pazarlama sonrası izlemin önemini gösterir."
+      },
+      "etiketler": [
+        "Hy Yasası",
+        "DILI",
+        "ilaç geliştirme",
+        "troglitazon",
+        "hepatotoksisite",
+        "sarılık"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s12",
+      "metin": "Yirmi altı yaşında erkek hasta, vücut geliştirme amacıyla spor salonundan temin ettiği takviye ürünleri kullandıktan sonra gelişen sarılık ve kaşıntı ile başvuruyor.\n\nLaboratuvar:\nAST: 78 IU/L\nALT: 84 IU/L\nALP: normalin 2.5 katı\nTotal bilirubin: 24 mg/dL (baskın konjuge)\n\nKaraciğer biyopsisinde belirgin inflamasyon veya nekroz olmaksızın kolestaz saptanıyor.\n\nBu tabloyla ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Tablo anabolik steroid (androjen konjeneri) kullanımına bağlı derin kolestazdır; genç erkekte hepatitik değil KOLESTATİK profille giden sarılık neredeyse her zaman androjen konjenerlerinden kaynaklanır. Aminotransferazlar tipik olarak <100 IU/L kalırken bilirubin sıklıkla 20 mg/dL'yi aşar ve düzelme haftalar-aylar alır.",
+        "B": "Tablo asetaminofen hepatotoksisitesidir; bilirubin yüksekliği tanı koydurucudur.",
+        "C": "Tablo amoksisilin-klavulanat hepatotoksisitesidir; bu ajan izole kolestaz yapan tek ilaçtır.",
+        "D": "Anabolik steroidler yalnızca hepatoselüler nekroz yapar; kolestaz beklenmez ve bu tablo viral hepatiti düşündürür.",
+        "E": "Anabolik steroid kullanımına bağlı kolestazda kalıcı safra kanalı kaybı kuraldır ve hastaların çoğunda karaciğer nakli gerekir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Vücut geliştiricilerin kullandığı anabolik steroidler derin kolestaz yapar. Genç erkekte HEPATİTİK değil KOLESTATİK profille giden sarılık neredeyse her zaman androjen konjenerlerine bağlıdır. Aminotransferazlar genellikle <100 IU/L, ALP orta derecede yüksek, bilirubin sıklıkla >20 mg/dL; düzelme kuraldır ama haftalar-aylar alır.",
+      "aciklama_detay": "Tamamlayıcı ve alternatif ilaçların (CAM) yol açtığı en sık karaciğer hasarı biçimi, vücut geliştiricilerin kullandığı anabolik steroidlerle ilişkili DERİN KOLESTAZDIR. Spor salonlarında ve sağlıklı besin mağazalarında diyet takviyesi olarak satılan denetimsiz ürünler anabolik steroid içerebilir.\n\nTanısal anahtar: GENÇ BİR ERKEKTE, hepatitik değil KOLESTATİK laboratuvar profiliyle giden sarılık neredeyse her zaman çeşitli androjen konjenerlerinden birinin kullanımına bağlı çıkar. Bu ajanlar safra taşıma pompalarını zedeleyerek yoğun kolestaza yol açma potansiyeli taşır.\n\nTipik laboratuvar profili: serum aminotransferaz düzeyleri genellikle <100 IU/L, serum ALP düzeyleri orta derecede yüksek, bilirubin düzeyleri ise sıklıkla 20 mg/dL'yi AŞAR. Karaciğer dokusu incelemesinde belirgin inflamasyon ya da nekroz OLMAKSIZIN kolestaz görülür.\n\nSeyir: başlangıçta iştahsızlık, bulantı ve halsizlik olabilir, ardından bazı hastalarda kaşıntı gelişir. Başlangıç zamanı değişkendir ve düzelme — ki kuraldır — birçok hafta ile ay alabilir. Uzamış sarılık dışında kalıcı sekel görülmez; sarılık sıklıkla 10 hafta veya daha uzun sürer.\n\nEk bilgi: Anabolik steroidler kemik iliği yetmezliği tedavisinde reçeteyle de kullanılmıştır. Bu durumda seyrek hastalarda hepatik sentrizonal sinüzoidal dilatasyon ve peliozis hepatis, ayrıca hepatik adenom ve hepatoselüler karsinom bildirilmiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Genç erkekte kolestatik profille giden sarılık androjen konjenerlerini düşündürür; ALT <100 IU/L, bilirubin >20 mg/dL ve inflamasyonsuz kolestaz tipiktir.",
+        "B": "YANLIS — Asetaminofen hasarında aminotransferazlar çok yüksektir (sıklıkla >10.000 IU/L) ve karakteristik olarak bilirubin DÜŞÜK kalır; tablo tam tersidir.",
+        "C": "YANLIS — Amoksisilin-klavulanat DILI'nin en sık nedenidir ancak miks veya baskın kolestatik hasar yapar ve izole kolestaz yapan tek ilaç değildir; vakadaki öykü anabolik steroidi işaret eder.",
+        "D": "YANLIS — Anabolik steroidlerin karakteristik hasarı KOLESTAZDIR; hepatoselüler nekroz tipik değildir.",
+        "E": "YANLIS — Düzelme KURALDIR; haftalar-aylar sürse de uzamış sarılık dışında kalıcı sekel görülmez. Vanishing bile duct sendromu amoksisilin-klavulanat gibi ajanlarla ilişkilendirilmiştir."
+      },
+      "etiketler": [
+        "anabolik steroid",
+        "kolestaz",
+        "DILI",
+        "androjen konjeneri",
+        "vücut geliştirme takviyesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk sekiz yaşında kadın hasta, tekrarlayan idrar yolu enfeksiyonları nedeniyle yıllardır aralıklı olarak nitrofurantoin kullanıyor. Son aylarda gelişen halsizlik ve sarılık nedeniyle yapılan tetkiklerde ALT 420 IU/L, IgG yüksek, ANA ve düz kas antikoru (ASMA) pozitif saptanıyor. Karaciğer biyopsisi otoimmün hepatitle aynı histolojik bulguları gösteriyor.\n\nOtoimmün hepatit fenotipiyle giden ilaca bağlı karaciğer hasarı ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Nitrofurantoin, minosiklin, hidralazin ve metildopa; ANA pozitifliği olasılığı yüksek, otoimmün hepatit fenotipiyle giden dört ajandır.",
+        "B": "Nitrofurantoinde latent dönem çoğu toksik ajandan daha uzun olabilir; bunun bir nedeni ilacın kadınlarda tekrarlayan sistit için aralıklı ve yinelenen kullanımıdır.",
+        "C": "Otoantikorlar hasarın düzelmesinden sonra kaybolabilir; ancak otoimmün hasarın çözülmesi için glukokortikoid veya diğer immünsüpresif ilaçlar gerekebilir ve erken tanınmayan olgularda siroz görülebilir.",
+        "D": "Nitrofurantoin hepatotoksisitesine kronik öksürük ve nefes darlığıyla ortaya çıkan interstisyel pulmoner fibrozis eşlik edebilir ve ilacın kesilmesiyle yavaş düzelir.",
+        "E": "Benzer bir hastalık paterni minosiklinle de görülür; ancak minosiklin yalnızca ileri yaşta kullanıldığı için ergenlerde bu tablo bildirilmemiştir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Minosiklin ergenlerde AKNE tedavisi için tekrar tekrar kullanılır ve otoimmün hepatit benzeri tabloyu tam da bu grupta yapar. \"Yalnızca ileri yaşta kullanılır\" ifadesi yanlıştır.",
+      "aciklama_detay": "İdrar yolu enfeksiyonlarında yaygın kullanılan nitrofurantoin, ölümcül seyredebilen akut hepatite ya da daha sık olarak değişen şiddette KRONİK HEPATİTE yol açabilir; bu kronik tablo otoimmün hepatitten AYIRT EDİLEMEZ. Bu iki senaryo, ilacın kadınlarda tekrarlayan sistit tedavisi için sık ve yinelenen kullanımını yansıtıyor olabilir.\n\nToksik ajanların çoğu ilk alımdan sonraki 6 ay içinde hasar gösterirken, nitrofurantoinin latent dönemi kısmen bu aralıklı ve yinelenen kullanım nedeniyle daha uzun olabilir.\n\nNükleer bileşenlere, düz kasa ve mitokondriye karşı otoantikorlar görülür ve hasarın düzelmesinden sonra kaybolabilir; ancak otoimmün hasarın çözülmesi için glukokortikoid ya da başka bir immünsüpresif ilaç gerekebilir ve hızla tanınmayan olgularda siroz görülebilir. Histolojik bulgular otoimmün hepatitle özdeştir.\n\nEşlik eden akciğer tutulumu: kronik öksürük ve nefes darlığıyla ortaya çıkan interstisyel pulmoner fibrozis bulunabilir ve ilacın kesilmesiyle yavaş düzelir.\n\nBENZER HASTALIK PATERNİ minosiklinle de görülür — ve minosiklin tam olarak ERGENLERDE AKNE tedavisi için tekrar tekrar kullanılan bir ilaçtır. Ayrıca hidralazin ve metildopa ile de aynı tablo görülür.\n\nBu dört ajan (nitrofurantoin, minosiklin, hidralazin, metildopa), ANA pozitifliği olasılığı yüksek otoimmün hepatit fenotipiyle özgül olarak ilişkilendirilen ilaçlardır. Bu ajanlar orta-ağır kronik hepatitle ilişkilendirilmiştir; kortikosteroid kullanılabilir ve neredeyse her zaman 6 aylık tedavi sonrası kesilebilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Nitrofurantoin, minosiklin, hidralazin ve metildopa ANA pozitifliği olasılığı yüksek otoimmün hepatit fenotipiyle özgül olarak ilişkilendirilen dört ajandır.",
+        "B": "DOGRU ifade — Nitrofurantoinin latent dönemi çoğu ajandan uzun olabilir; nedeni kısmen kadınlarda tekrarlayan sistit için aralıklı ve yinelenen kullanımdır.",
+        "C": "DOGRU ifade — Otoantikorlar düzelmeyle kaybolabilir; immünsüpresif tedavi gerekebilir ve geç tanınan olgularda siroz görülebilir.",
+        "D": "DOGRU ifade — Kronik öksürük ve nefes darlığıyla giden interstisyel pulmoner fibrozis eşlik edebilir ve ilaç kesildiğinde yavaş düzelir.",
+        "E": "YANLIS ifade (doğru yanıt) — Minosiklin tam olarak ERGENLERDE AKNE tedavisi için tekrar tekrar kullanılır ve otoimmün hepatit benzeri tabloyu bu grupta yapar."
+      },
+      "etiketler": [
+        "nitrofurantoin",
+        "minosiklin",
+        "hidralazin",
+        "metildopa",
+        "otoimmün hepatit",
+        "DILI",
+        "ANA"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk dört yaşında erkek hasta, iki hafta içinde hızla gelişen sarılık, ateş ve halsizlik ile başvuruyor. Öyküsünde altı aydan uzun süredir günde 80-100 g alkol tükettiği ve son iki ayda hiç ara vermediği öğreniliyor. Muayenede hassas hepatomegali ve asit saptanıyor.\n\nLaboratuvar:\nAST: 186 IU/L\nALT: 92 IU/L\nTotal bilirubin: 9.4 mg/dL\nINR: 1.9\n\nBu hastada alkolle ilişkili hepatit tanısı ve laboratuvar ölçütleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Alkolle ilişkili hepatitte AST ve ALT yükselmeleri 400 IU/L'yi AŞMAZ, AST/ALT oranı >1.5'tir ve serum bilirubin >3 mg/dL'dir; hastalar semptom başlangıcından önce >6 ay boyunca yoğun içmiş ve <60 gün ara vermiştir.",
+        "B": "Alkolle ilişkili hepatitte aminotransferazlar tipik olarak 1000 IU/L'yi aşar; bu vakadaki düşük düzeyler tanıyı dışlar.",
+        "C": "AST/ALT oranının 1'in altında olması alkolle ilişkili hepatit için tanısaldır.",
+        "D": "Serum bilirubin düzeyinin normal olması alkolle ilişkili hepatitin tanımlayıcı özelliğidir; yükselme başka bir tanıyı düşündürür.",
+        "E": "Alkolle ilişkili hepatit tanısı için karaciğer biyopsisi her hastada zorunludur ve perkütan yol tercih edilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Alkolle ilişkili hepatit: >6 ay yoğun içme (kadın >40 g/gün, erkek >50-60 g/gün) + <60 gün abstinens; AST ve ALT 400 IU/L'yi AŞMAZ, AST/ALT >1.5, bilirubin >3 mg/dL. Hızlı sarılık, ateş, hassas hepatomegali tipiktir.",
+      "aciklama_detay": "Alkolle ilişkili hepatitli hastalar semptomların başlangıcından önce 6 aydan uzun süre yoğun içmişlerdir (kadınlarda >40 g/gün, erkeklerde >50-60 g/gün) ve 60 günden az abstinens dönemi vardır. Hızlı başlayan sarılıkla (serum bilirubin >3 mg/dL) başvururlar; buna sıklıkla ateş, halsizlik, hassas hepatomegali ve asit, bakteriyel enfeksiyon, varis kanaması, hepatik ensefalopati gibi hepatik dekompansasyon bulguları eşlik eder. Başvuru anında ağır olguların %12-26'sında enfeksiyon vardır. Tabloya sıklıkla SIRS ve hepatorenal sendroma sekonder akut böbrek hasarı eşlik eder.\n\nLABORATUVAR ÖLÇÜTLERİ: Basit hepatik steatozu olanlarda karaciğer testleri normal olabilir. Steatohepatit AST ve GGT yüksekliğiyle karakterizedir. ALD için karakteristik parametreler AST/ALT oranının >1 olması ve serum AST'nin nadiren >300 IU/L olmasıdır. Alkolle ilişkili HEPATİTTE ise AST ve ALT yükselmeleri 400 IU/L'yi AŞMAZ, AST/ALT oranı >1.5'tir ve serum bilirubin >3 mg/dL'dir.\n\nBİYOPSİ: Karaciğer biyopsisi alkolle ilişkili steatoz veya steatohepatit tanısı için seyrek olarak endikedir. Ancak karıştırıcı faktörler varlığında — olası iskemik hepatit (hipotansiyon, masif GİS kanaması, yakın zamanda kokain kullanımı, septik şok), DILI, otoimmün karaciğer hastalığı, alkol kullanımının belirsiz olması ya da ATİPİK LABORATUVAR TESTLERİ (AST <50 IU/L veya >400 IU/L, AST/ALT oranı <1.5) — TRANSJUGULER karaciğer biyopsisi tanıyı doğrulamak için önerilir. Perkütan biyopsinin kontrendikasyonları belirgin asit ve uzamış INR'dir; bu koşullarda biyopsi transjuguler yolla yapılır.\n\nAlkolle ilişkili hepatit tanısı alan hastaların çoğunda (%80) altta yatan siroz vardır ve klinik tanı alanların %10-20'sinde biyopside başka karaciğer hastalıkları bulunur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — AST ve ALT ≤400 IU/L, AST/ALT >1.5, bilirubin >3 mg/dL ve >6 ay yoğun içme + <60 gün abstinens ölçütleri doğru verilmiştir.",
+        "B": "YANLIS — Alkolle ilişkili hepatitte aminotransferazlar 400 IU/L'yi aşmaz; >1000 IU/L düzeyleri viral, iskemik veya toksik/ilaca bağlı hasarı düşündürür.",
+        "C": "YANLIS — Alkolde AST/ALT oranı >1 (hepatitte >1.5) olur; <1 oranı kronik viral hepatit ve MASLD'de tipiktir.",
+        "D": "YANLIS — Serum bilirubin >3 mg/dL alkolle ilişkili hepatitin TANIMLAYICI ölçütlerindendir; normal bilirubin tanıyla bağdaşmaz.",
+        "E": "YANLIS — Biyopsi her hastada zorunlu değildir; gerektiğinde de asit ve uzamış INR nedeniyle TRANSJUGULER yol tercih edilir, perkütan değil."
+      },
+      "etiketler": [
+        "alkolle ilişkili hepatit",
+        "AST/ALT oranı",
+        "transjuguler biyopsi",
+        "hepatik dekompansasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s15",
+      "metin": "Alkolle ilişkili hepatit tanısı konan bir hastada Maddrey diskriminant fonksiyonu (MDF) 38 olarak hesaplanıyor. Hastada aktif enfeksiyon, gastrointestinal kanama ve böbrek yetmezliği bulunmuyor. Prednizolon 40 mg/gün başlanıyor.\n\nYedinci günde hesaplanan Lille skoru 0.52 olarak bulunuyor.\n\nBu hastanın yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Lille skorunun 7. günde ≥0.45 olması glukokortikoidden fayda görmeyecek hastaları belirler; yanıtsız hastalarda glukokortikoid KESİLMELİ ve erken karaciğer nakli değerlendirilmelidir.",
+        "B": "Lille skoru ≥0.45 tedaviye iyi yanıtı gösterir; prednizolon 4 haftaya tamamlanmalıdır.",
+        "C": "Lille skoru yalnızca 28. günde hesaplanır; 7. gündeki değerin klinik karşılığı yoktur.",
+        "D": "Yanıtsız hastalarda pentoksifilin eklenmesi sağkalımı belirgin artırır ve önerilen yaklaşımdır.",
+        "E": "Glukokortikoid yanıtsızlığında 6 aylık abstinens tamamlanana kadar beklenmeli, erken karaciğer nakli kesinlikle düşünülmemelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Glukokortikoid tedavisinin 7. gününde Lille skorunun ≥0.45 olması, ağır alkolle ilişkili hepatitte tedaviden fayda görmeyecek hastaları belirler. Yanıtsızlarda glukokortikoid KESİLİR ve ERKEN KARACİĞER NAKLİ değerlendirilir.",
+      "aciklama_detay": "Alkolle ilişkili hepatitte kısa dönem mortalite Maddrey diskriminant fonksiyonu (MDF = 4.6 × [protrombin zamanının kontrolün üzerindeki uzaması, saniye] + serum bilirubin [mg/dL]), MELD skoru ya da ABIC (yaş-bilirubin-INR-kreatinin) skoru ile öngörülür.\n\nMDF <32 veya MELD ≤20 olanlar ORTA şiddette alkolle ilişkili hepatit olarak tanımlanır; 1 yıllık mortalite riski %20'dir. Bu hastalar alkol kullanım bozukluğu uzmanı, diyetisyen ve hepatologdan oluşan çok disiplinli ekiple izlenir. Enteral beslenme hedefi 35-40 kcal/kg, mikrobesin (özellikle çinko) ve vitamin (özellikle B1 ve K) takviyesi önerilir; hacim genişletmesi için intravenöz albümin tercih edilir.\n\nMDF ≥32 veya MELD >20 ise AĞIR alkolle ilişkili hepatiti tanımlar; 3 ayda %30 kısa dönem mortalite taşırlar ve glukokortikoid tedavisinden sağkalım yararı görürler. Glukokortikoid kontrendikasyonları: kontrolsüz enfeksiyon veya sepsis, akut böbrek hasarı ve hepatorenal sendrom, kontrolsüz üst GİS kanaması, eşlik eden hastalıklar (viral hepatit, HCC, pankreatit, DILI, aktif tüberküloz, HIV), çoklu organ yetmezliği ve şok. Enfeksiyon, sepsis ve GİS kanaması yeterince kontrol altına alındığında glukokortikoid kullanılabilir.\n\nGlukokortikoid, ağır alkolle ilişkili hepatitte tedavinin İLK 28 GÜNÜ içinde ölüm riskini azaltır ancak sonraki 6 ayda azaltmaz. Oral prednizolon 40 mg/gün, toplam 4 hafta tercih edilir; oral alamayanlarda metilprednizolon 32 mg/gün IV kullanılır. Glukokortikoidlere N-asetilsistein infüzyonu eklenmesi 1. ayda kısa dönem sağkalım yararı ekleyebilir.\n\nKRİTİK KARAR NOKTASI: Glukokortikoid tedavisinin 7. gününden sonra Lille skorunda düzelme olmaması (≥0.45) tedaviden fayda görmeyecek hastaları belirler. Yanıtsızlarda glukokortikoid KESİLMELİ ve ERKEN KARACİĞER NAKLİ düşünülmelidir. Tıbbi tedaviye yanıtsız ağır olgular yüksek 30 günlük mortaliteye sahiptir ve bu nedenle birçok merkezin nakil değerlendirmesi için istediği en az 6 aylık abstinensi tamamlayamazlar; erken karaciğer nakli, psikososyal profili mükemmel olan özenle seçilmiş hastalarda başarıyla uygulanabilir. Erken nakle uygun olmayan yanıtsızlarda destekleyici ya da palyatif bakım düşünülmelidir.\n\nPentoksifilin, TNF-alfa inhibitörleri, anabolik steroidler, propiltiourasil, antioksidanlar, kolşisin ve penisilamin gibi tedavilerin net yararı gösterilememiştir ve önerilmezler.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 7. günde Lille ≥0.45 yanıtsızlığı gösterir; glukokortikoid kesilir ve erken karaciğer nakli değerlendirilir.",
+        "B": "YANLIS — Lille ≥0.45 yanıtSIZLIĞI gösterir, iyi yanıtı değil; tedavi sürdürülmez, kesilir.",
+        "C": "YANLIS — Lille skoru tam olarak 7. günde hesaplanarak tedaviye devam kararını yönlendirir.",
+        "D": "YANLIS — Pentoksifilinin net yararı gösterilememiştir ve önerilmez.",
+        "E": "YANLIS — Yanıtsız ağır olgular yüksek 30 günlük mortalite nedeniyle 6 aylık abstinensi tamamlayamaz; ERKEN karaciğer nakli özenle seçilmiş hastalarda tam da bu nedenle uygulanır."
+      },
+      "etiketler": [
+        "Maddrey diskriminant fonksiyonu",
+        "Lille skoru",
+        "prednizolon",
+        "erken karaciğer nakli",
+        "alkolle ilişkili hepatit"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s16",
+      "metin": "Alkolle ilişkili karaciğer hastalığının (ALD) patogenezi, ilerleme risk faktörleri ve fibrozis değerlendirmesi ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Etanolün büyük bölümü hepatositlerde alkol dehidrogenaz 1 (ADH1) ile asetaldehite yükseltgenir; kronik alkol tüketimi ikinci bir enzim olan CYP2E1'in ekspresyonunu indükler.",
+        "B": "ALDH2'nin kalıtsal eksikliği Asya ülkelerinde yaygındır ve alkol tüketiminden sonra asetaldehit birikimine yol açarak bulantı ve ciltte kızarma (flushing) yapar.",
+        "C": "PNPLA3, MBOAT7 ve TM6SF2 genlerindeki polimorfizmler alkolle ilişkili siroz riskini ARTIRIRKEN, HSD17B13 ve FAF2 genetik varyantları ALD gelişme riskinin AZALMASI ile ilişkilidir.",
+        "D": "Günlük alkol tüketimi ya da yoğun içme hepatik steatoza yol açar, ancak bu bireylerin yalnızca %10-20'sinde ilerleyici karaciğer hastalığı ve siroz gelişir.",
+        "E": "Transient elastografide karaciğer sertliğinin <6 kPa olması ileri fibrozisi (F3) gösterirken, >12.5 kPa değerleri normal karaciğeri işaret eder."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Eşikler TERS verilmiştir. Karaciğer sertliği <6 kPa NORMAL karaciğeri gösterir; >8 kPa F3 ileri fibrozisi, >12.5 kPa ise F4 sirozu işaret eder.",
+      "aciklama_detay": "PATOGENEZ: Etanol üst gastrointestinal sistemde hızla emilir ve ağırlıklı olarak karaciğerde metabolize edilir. Portal ven yoluyla karaciğere ulaşan etanolün çoğunluğu hepatositlerde alkol dehidrogenaz 1 (ADH1) aracılığıyla asetaldehite yükseltgenir. Kronik alkol tüketimi, etanolü yine asetaldehite çeviren ikinci bir enzim olan CYP2E1'in ekspresyonunu indükler. Asetaldehitin doğrudan hücresel toksik etkilerine ek olarak, etanolün asetaldehite metabolizması reaktif oksijen türlerinin (ROS) oluşumuna yol açar ve lipid peroksidasyonu ile DNA hasarı üzerinden hepatositleri daha da zedeler. Asetaldehit daha sonra asetaldehit dehidrogenaz (ALDH) ile asetata yükseltgenir. ALDH2'nin KALITSAL EKSİKLİĞİ Asya ülkelerinde yaygındır ve alkol tüketiminden sonra asetaldehit birikimine yol açar; bu bireylerde bulantı ve ciltte kızarma (flushing) gelişir.\n\nRİSK FAKTÖRLERİ: Günlük alkol tüketimi ya da yoğun içme hepatik steatoza yol açar, ancak bu bireylerin YALNIZCA %10-20'sinde ilerleyici karaciğer hastalığı ve siroz gelişir. İlerlemede rol oynayan etkenler: alkol miktarı ve süresi, içme paterni (öğün dışı içme, binge), genetik etkenler (özellikle PNPLA3 polimorfizmi), kadın cinsiyet, sigara, obezite ve MASLD, viral hepatit ve hemokromatoz gibi kronik karaciğer hastalıkları, intestinal mikrobiyota.\n\nGENETİK: Alkolle ilişkili siroz riskini ARTIRAN polimorfizmler üç gende bulunmuştur: PNPLA3, MBOAT7 ve TM6SF2. Buna karşılık HSD17B13 ve FAF2 genetik varyantları ALD gelişme riskinin AZALMASI ile ilişkilidir.\n\nFİBROZİS DEĞERLENDİRMESİ: Alkolle ilişkili steatohepatitin fibroza ilerlemesi transient elastografi (FibroScan) gibi karaciğer sertliği ölçüm teknikleriyle tanınabilir. Karaciğer sertliği <6 kPa NORMAL karaciğeri gösterir; her fibrozis evresi için eşikler doğrulanmıştır: >8 kPa F3 İLERİ FİBROZİSİ, >12.5 kPa F4 SİROZU gösterir. FIB-4 skoru yaş, AST, ALT ve trombosit sayısına dayanan bir serum belirteç testidir ve <3.25 eşik değerinde ileri fibrozis ya da sirozu dışlamak için kullanılabilir.\n\nHİSTOLOJİ: Karaciğer biyopsisinde tipik olarak perisentral venler çevresinde (zon 3) büyük lipid damlacıkları içeren hepatositler (makroveziküler steatoz) görülür. Alkolle ilişkili steatohepatitin morfolojik özellikleri: hepatosit hasarı ve Mallory-Denk cisimcikleriyle balonlaşma, nekroz, mononükleer ve nötrofilik granülositlerle lobüler inflamasyon.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Etanolün çoğu ADH1 ile asetaldehite yükseltgenir; kronik tüketim CYP2E1'i indükler.",
+        "B": "DOGRU ifade — ALDH2 kalıtsal eksikliği Asya ülkelerinde yaygındır; asetaldehit birikimi bulantı ve flushing yapar.",
+        "C": "DOGRU ifade — PNPLA3, MBOAT7, TM6SF2 riski artırır; HSD17B13 ve FAF2 varyantları riski azaltır.",
+        "D": "DOGRU ifade — Steatoz gelişenlerin yalnızca %10-20'sinde ilerleyici hastalık ve siroz gelişir.",
+        "E": "YANLIS ifade (doğru yanıt) — Eşikler ters verilmiştir: <6 kPa NORMAL, >8 kPa F3 ileri fibrozis, >12.5 kPa F4 siroz."
+      },
+      "etiketler": [
+        "ALDH2",
+        "CYP2E1",
+        "PNPLA3",
+        "HSD17B13",
+        "transient elastografi",
+        "FIB-4",
+        "alkolle ilişkili karaciğer hastalığı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s17",
+      "metin": "Elli iki yaşında kadın hasta; vücut kitle indeksi 31 kg/m², tip 2 diyabet ve hipertansiyon öyküsü var. Ultrasonografide hepatik steatoz saptanıyor. Alkol tüketimi günde 25 g olarak öğreniliyor.\n\nSteatotik karaciğer hastalığı (SLD) yeni terminolojisi ve bu hastanın sınıflandırılması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hasta MetALD kategorisindedir; MASLD tanısı için alkol tüketimi kadınlarda <20 g/gün, erkeklerde <30 g/gün olmalıdır. MetALD ise metabolik disfonksiyonu olan ancak sosyal miktarda alkol tüketen (kadın 20-50 g/gün, erkek 30-60 g/gün) hastaları tanımlar.",
+        "B": "Hasta MASLD kategorisindedir; MASLD için alkol eşiği kadınlarda <50 g/gündür.",
+        "C": "Hasta ALD kategorisindedir; metabolik risk faktörü varlığında alkol miktarı ne olursa olsun tanı ALD'dir.",
+        "D": "MASLD ve MASH terimleri NAFLD ve NASH'in yerini almıştır; ancak yeni ölçütlerle tanımlanan popülasyon ile eski popülasyon arasında %50'den az örtüşme vardır.",
+        "E": "MetALD kategorisi kaldırılmıştır; steatotik karaciğer hastalığı yalnızca MASLD ve ALD olarak ikiye ayrılır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MASLD: hepatik steatoz + AZ alkol (kadın <20 g/gün, erkek <30 g/gün) + en az bir kardiyometabolik risk faktörü. MetALD: metabolik disfonksiyon + SOSYAL miktarda alkol (kadın 20-50, erkek 30-60 g/gün). Daha yüksek alkol (kadın ≥50, erkek ≥60 g/gün) metabolik risk faktörlerinden bağımsız olarak ALD'dir.",
+      "aciklama_detay": "TERMİNOLOJİ: Steatotik karaciğer hastalığı (SLD) şemsiye terimi altında, metabolik disfonksiyonla ilişkili steatotik karaciğer hastalığı (MASLD) ve metabolik disfonksiyonla ilişkili steatohepatit (MASH), tarihsel terimler olan nonalkolik yağlı karaciğer hastalığı (NAFLD) ve nonalkolik steatohepatitin (NASH) yerini almıştır. Yeni adlandırma, alkolü aşırı tüketmeyen kişilerdeki SLD'nin metabolik disfonksiyonla güçlü şekilde ilişkili olduğunu vurgularken 'nonalkolik' ve 'yağlı' terimlerinin taşıdığı damgalamayı en aza indirmeyi amaçlar.\n\nMASLD TANI ÖLÇÜTLERİ: (1) hepatik steatoz, (2) az alkol tüketimi — kadınlarda <20 g/gün, erkeklerde <30 g/gün, (3) bir ya da daha fazla kardiyometabolik risk faktörü (fazla kilo/obezite, hipertansiyon, dislipidemi, insülin direnci/tip 2 diyabet).\n\nMetALD: Metabolik disfonksiyon kanıtı olan ANCAK sosyal miktarda alkol tüketen (kadınlarda 20-50 g/gün, erkeklerde 30-60 g/gün) SLD hastaları için oluşturulmuş yeni bir alt kategoridir. Amacı bu bireylerin daha kişiselleştirilmiş yönetimini sağlamaktır.\n\nALD: Metabolik risk faktörlerinin varlığından BAĞIMSIZ olarak daha yüksek miktarda alkol kullanımı (kadınlarda ≥50 g/gün, erkeklerde ≥60 g/gün) ALD olarak tanımlanır.\n\nVakadaki hasta: BMI 31 (obezite), tip 2 diyabet ve hipertansiyon — metabolik disfonksiyon mevcut; alkol 25 g/gün — kadın için 20-50 g/gün aralığında. Dolayısıyla MetALD kategorisindedir.\n\nÖNEMLİ NOT: Epidemiyolojik veriler, tarihsel olarak NAFLD/NASH diye tanımlanan popülasyon ile yeni tanı ölçütleri kullanılarak MASLD/MASH kategorisine alınan popülasyon arasında NEREDEYSE TAM (en az %98) ÖRTÜŞME olduğunu göstermektedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hasta metabolik disfonksiyona sahip ve alkol tüketimi kadın için 20-50 g/gün aralığında olduğundan MetALD kategorisindedir; MASLD eşikleri de doğru verilmiştir.",
+        "B": "YANLIS — MASLD için kadınlarda eşik <20 g/gündür, <50 g/gün değil. Hasta 25 g/gün ile bu eşiği aşmaktadır.",
+        "C": "YANLIS — ALD tanımı kadınlarda ≥50 g/gün, erkeklerde ≥60 g/gündür; hasta bu eşiğin altındadır.",
+        "D": "YANLIS — Terminoloji değişimi doğru, ancak örtüşme oranı yanlış: eski ve yeni popülasyonlar arasında NEREDEYSE TAM (en az %98) örtüşme vardır.",
+        "E": "YANLIS — MetALD kaldırılmamış, aksine YENİ oluşturulmuş bir alt kategoridir."
+      },
+      "etiketler": [
+        "MASLD",
+        "MASH",
+        "MetALD",
+        "steatotik karaciğer hastalığı",
+        "terminoloji",
+        "kardiyometabolik risk"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s18",
+      "metin": "Birinci basamakta izlenen, tip 2 diyabeti ve obezitesi olan 58 yaşında bir hastada MASLD şüphesiyle ileri fibrozis açısından risk sınıflaması yapılıyor.\n\nMASLD'de noninvaziv testlerin (NIT) kullanımı ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "FIB-4 skoru yaş, ALT, AST ve trombosit sayısına dayanır; ileri hepatik fibrozisin dışlanmasında mükemmel negatif öngörü değerine sahiptir ve <1.3 düşük risk olarak kabul edilir.",
+        "B": "FIB-4 skoru ≥2.67 olan hastalar ileri fibrozis açısından orta-yüksek riskli olabilir ve kan ya da görüntüleme temelli ikincil bir NIT ile değerlendirilmelidir.",
+        "C": "VCTE ile ölçülen karaciğer sertliği (LSM) <8 kPa ileri fibrozisi dışlamak için kullanılabilir; 8-12 kPa arası fibrotik MASH ile ilişkili olabilir, >12 kPa ise ileri fibrozis olasılığının yüksek olduğunu gösterir.",
+        "D": "ELF paneli matriks döngüsünde rol alan üç bileşenden oluşur: hyalüronik asit, doku metalloproteinaz inhibitörü-1 ve N-terminal prokollajen III peptidi.",
+        "E": "Yüksek LSM değerleri her zaman güvenilirdir; obezite, tokluk durumu, ağır hepatik inflamasyon, hepatik konjesyon ve demir yüklenmesi testin özgüllüğünü ETKİLEMEZ."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Yüksek LSM değerleri DİKKATLE yorumlanmalıdır: obezite, tokluk durumu, ağır hepatik inflamasyon, hepatik konjesyon ve demir yüklenmesi testin ÖZGÜLLÜĞÜNÜ AZALTIR. Düşük LSM ise ileri fibrozisi dışlamada en değerlidir.",
+      "aciklama_detay": "MASLD/MASH hastalarının çoğu asemptomatik olduğundan, NIT'lerle risk sınıflamasının birincil amacı ileri fibrozisi OLMAYAN hastaları belirlemektir.\n\nFIB-4: Yaş, ALT, AST ve trombosit sayısına dayanan basit bir algoritmayla hesaplanır ve AST/trombosit oranı indeksi (APRI), BARD skoru, NAFLD fibrozis skoru gibi hesaplamalardan daha başarılıdır. İyi doğrulanmıştır ve ileri hepatik fibrozisin dışlanmasında mükemmel negatif öngörü değerine sahiptir (düşük risk: FIB-4 <1.3). FIB-4 <1.3 olan hastalar birinci basamakta izlenebilir; ancak iki veya daha fazla metabolik risk faktörü olanlar, özellikle prediyabet veya T2DM'si olanlar zamanla fibrozis ilerlemesi açısından artmış risk taşır ve genel sağlık değerlendirmeleriyle birlikte 1-2 yılda bir FIB-4 tekrarlanmalıdır. FIB-4'ün 65 yaş üstü ve 35 yaş altındaki hastalarda doğruluğu düşük olduğundan ikincil bir değerlendirme yapılmalıdır.\n\nFIB-4 ≥2.67 olanlar ileri hepatik fibrozis açısından orta ya da yüksek risk taşıyabilir ve kan ya da görüntüleme temelli ikincil bir NIT ile değerlendirilmelidir. Birinci basamakta ilk ikincil test olarak maliyet nedeniyle ELF paneli, VCTE ya da akustik radyasyon kuvveti impulsu gibi ultrason temelli yöntemler MRE'ye tercih edilir.\n\nVCTE eşikleri: LSM <8 kPa ileri fibrozisi dışlamak için kullanılabilir — özellikle FIB-4'ten sonra ardışık kullanıldığında. 8-12 kPa arası değerler fibrotik MASH ile ilişkili olabilir; >12 kPa ileri fibrozis olasılığının yüksek olduğunu gösterir (ancak pozitif öngörü değeri düşüktür, 0.34-0.71 aralığında). LSM portal hipertansiyonu da düşündürebilir. VCTE veya MRE'de karaciğer sertliğinde %20 artış hastalık ilerlemesi ve uzun dönem klinik sonlanımlarla ilişkili olabilir.\n\nKRİTİK UYARI: Düşük LSM ileri hepatik fibrozisi dışlamada en değerlidir çünkü LSM düşükken siroz son derece olası değildir. Ancak YÜKSEK LSM DİKKATLE YORUMLANMALIDIR; obezite, tokluk durumu, ağır hepatik inflamasyon, hepatik konjesyon ve/veya demir yüklenmesi gibi çeşitli etkenler testin ÖZGÜLLÜĞÜNÜ AZALTIR.\n\nELF paneli: matriks döngüsünde rol alan üç bileşenden oluşan tescilli bir kan testidir — hyalüronik asit, doku metalloproteinaz inhibitörü-1 ve N-terminal prokollajen III peptidi. FDA tarafından siroza ve karaciğerle ilişkili klinik olaylara ilerleme riski artmış MASLD hastalarında prognoz belirleme (ELF ≥9.8) amacıyla onaylanmıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — FIB-4 yaş, ALT, AST ve trombosite dayanır; mükemmel negatif öngörü değerine sahiptir ve <1.3 düşük risktir.",
+        "B": "DOGRU ifade — FIB-4 ≥2.67 orta-yüksek risk olabilir ve ikincil NIT ile değerlendirilmelidir.",
+        "C": "DOGRU ifade — VCTE eşikleri doğru verilmiştir: <8 kPa dışlama, 8-12 kPa fibrotik MASH, >12 kPa yüksek olasılık.",
+        "D": "DOGRU ifade — ELF paneli hyalüronik asit, TIMP-1 ve N-terminal prokollajen III peptidinden oluşur.",
+        "E": "YANLIS ifade (doğru yanıt) — Yüksek LSM dikkatle yorumlanmalıdır; obezite, tokluk, ağır inflamasyon, konjesyon ve demir yüklenmesi özgüllüğü AZALTIR."
+      },
+      "etiketler": [
+        "FIB-4",
+        "VCTE",
+        "ELF paneli",
+        "karaciğer sertliği",
+        "noninvaziv test",
+        "MASLD"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s19",
+      "metin": "MASLD spektrumunda hastalığın doğal seyri, fibrozis ilerlemesi ve risk sınıflaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "MASLD'de karaciğerle ilişkili morbidite ve mortalitenin birincil belirleyicisi FİBROZİS ŞİDDETİDİR. Eşleştirilmiş biyopsi kohortlarında ortalama fibrozis ilerleme hızı steatozda 14 yılda bir evre iken MASH'te 7 yılda bir evredir; MASH ve ≥F2 fibrozisi olanlar \"riskli MASH\" olarak tanımlanır.",
+        "B": "MASLD'de morbidite ve mortalitenin birincil belirleyicisi steatoz derecesidir; fibrozis evresinin prognostik değeri yoktur.",
+        "C": "Fibrozis ilerleme hızı steatoz ve MASH'te aynıdır; MASH'in fibrozis açısından ek riski gösterilememiştir.",
+        "D": "\"Riskli MASH\" tanımı MASH ve ≥F3 fibrozis birlikteliğini gerektirir; F2 evresinin klinik karşılığı yoktur.",
+        "E": "Siroz geri dönüşümsüzdür; MASLD'de sirozun gerileyebildiğine dair veri yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MASLD'de karaciğerle ilişkili morbidite ve mortalitenin birincil belirleyicisi FİBROZİS ŞİDDETİDİR. Ortalama ilerleme steatozda 14 yılda bir evre, MASH'te 7 yılda bir evredir. MASH + ≥F2 = \"riskli MASH\" (at-risk MASH).",
+      "aciklama_detay": "MASLD değişken klinik prognoza sahip bir karaciğer patolojisi spektrumunu kapsar. Aşikâr karaciğer hasarı ya da inflamasyon olmaksızın hepatositlerde trigliserid birikimi (hepatik steatoz) spektrumun klinik olarak en iyi huylu ucudur. Steatotik karaciğerler yıllarca stabil kalabilir, ancak inflamatuar hücrelerin ve hasarlı/ölmekte olan steatotik hepatositlerin biriktiği daha tehlikeli bir duruma (steatohepatit, MASH) geri dönüşümlü olarak geçebilir.\n\nMASH de stabil kalabilir, dalgalanabilir ya da zamanla şiddetlenebilir. Tekrarlayan veya uzamış MASH atakları, uyumsuz hale gelebilen rejeneratif yanıtları tetikler ve bu durum ilerleyici karaciğer fibrozisi ile primer karaciğer kanseri riskini artırır. Dolayısıyla KRONİK STEATOHEPATİT, MASLD'de hepatik fibrozisin birincil öngörücüsüdür.\n\nFİBROZİS ŞİDDETİ, MASLD'de karaciğerle ilişkili morbidite ve mortalitenin BİRİNCİL BELİRLEYİCİSİDİR. Fibrozisin ilerleme hızı pek çok etkenden etkilenir: eşlik eden hastalıkların varlığı ve şiddeti (örn. diyabet), genetik (lipid düzenleyici genlerin polimorfizmleri) ve çevresel etkenler (yüksek yağlı, yüksek şekerli diyetler). Boylamsal eşleştirilmiş karaciğer biyopsisi kohortlarının meta-analizleri, ortalama fibrozis ilerleme hızının STEATOZU olanlarda 14 YILDA BİR EVRE, MASH hastalarında ise 7 YILDA BİR EVRE olduğunu göstermektedir.\n\nFibrozis F2 ya da üzerine ilerledikten sonra MASH hastaları daha fazla fibrozis ilerlemesi ve dolayısıyla kötü klinik karaciğer sonlanımları açısından artmış risk altındadır. Bu nedenle MASH ve ≥F2 fibrozisi olan hastalar 'RİSKLİ MASH' (at-risk MASH) olarak tanımlanmıştır; bu tanı daha düzenli ve yoğun izlem ile MASH ve hepatik fibrozisi düzeltmeye/çözmeye yönelik tedavi girişimlerinin değerlendirilmesini tetikler.\n\nSirozlu hastalarda klinik dekompansasyona ilerleme yılda %3-20 arasındadır. MASLD ilişkili siroz geliştikten sonra primer karaciğer kanserinin yıllık insidansı %1-2'ye kadar çıkabilir. Bu nedenle siroz tanısı klinik yönetimi değiştirir: primer karaciğer kanseri için altı ayda bir tarama, Baveno ölçütlerine göre özofagus varisi taraması ve hepatik dekompansasyon bulgularının izlemi eklenir.\n\nÖNEMLİ: Siroz spektrumun karşı ucunda olmakla birlikte GERİLEYEBİLİR.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Fibrozis şiddeti birincil belirleyicidir; ilerleme hızları (steatoz 14 yıl, MASH 7 yıl) ve 'riskli MASH' tanımı (MASH + ≥F2) doğru verilmiştir.",
+        "B": "YANLIS — Birincil belirleyici steatoz derecesi değil FİBROZİS ŞİDDETİDİR; steatozun tek başına 10 yıllık karaciğerle ilişkili morbidite/mortalite olasılığı ihmal edilebilir düzeydedir.",
+        "C": "YANLIS — İlerleme hızları farklıdır: steatozda 14 yılda bir evre, MASH'te 7 yılda bir evre.",
+        "D": "YANLIS — 'Riskli MASH' tanımı MASH + ≥F2'dir, ≥F3 değil.",
+        "E": "YANLIS — Siroz GERİLEYEBİLİR; altta yatan neden ortadan kalktığında fibroziste gerileme görülebilir."
+      },
+      "etiketler": [
+        "riskli MASH",
+        "fibrozis ilerlemesi",
+        "MASLD doğal seyri",
+        "F2 fibrozis",
+        "hepatosellüler karsinom taraması"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s20",
+      "metin": "MASLD'nin risk faktörleri, ilişkili durumları ve laboratuvar değerlendirmesi ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Tip 2 diyabet MASLD edinimi, fibrozis ilerlemesi ve HCC için EN GÜÇLÜ risk faktörüdür; MASLD ile T2DM arasındaki ilişki çift yönlüdür ve MASLD T2DM riskini iki-beş kat artırır.",
+        "B": "MASLD fazla kilolu/obez bireylerde sık görülmekle birlikte ZAYIF bireylerde de ortaya çıkabilir; bu durum özellikle Asya etnik kökenli kişilerde yaygındır.",
+        "C": "Normal karaciğer enzimleri MASLD'yi DIŞLAMAZ; ayrıca aminotransferazlar için 'normal' aralıklar yapay olarak yüksektir — gerçek normal ALT erkeklerde 29-33 U/L, kadınlarda 19-25 U/L aralığındadır.",
+        "D": "MASLD prevalansı etnik gruplara göre değişir; belgelenmiş prevalans Afrikalı Amerikalılarda en düşük (%25), Hispanik ve Asyalı-Hintlilerde en yüksek (%50), beyazlarda ise ara düzeydedir (%30).",
+        "E": "MASLD tanısı için karaciğerin BÜYÜMÜŞ olması ve en az bir karaciğer testinin (ALP, bilirubin, albümin, protrombin zamanı) anormal olması zorunludur."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "MASLD'de karaciğer BÜYÜMEMİŞ olabilir ve karaciğer hastalığı semptom/bulguları yok olabilir. Aminotransferazlar dahil diğer karaciğer testleri (ALP, bilirubin, albümin, protrombin zamanı) TÜMÜYLE NORMAL olabilir.",
+      "aciklama_detay": "METABOLİK SENDROM: MASLD tanısı insülin direnci ve metabolik sendromla yakından ilişkilidir, ancak MASLD metabolik sendrom bileşenlerinin gelişiminden ÖNCE de ortaya çıkabilir. Android vücut yağ dağılımı (artmış trunkal subkutan ve visseral yağ depoları) MASLD/MASH için artmış risk taşır. T2DM; MASLD edinimi, fibrozis ilerlemesi ve HCC için EN GÜÇLÜ RİSK FAKTÖRÜDÜR. T2DM'li hastalarda MASLD prevalansı %30-75 arasındadır. İlişki ÇİFT YÖNLÜDÜR: MASLD insülin duyarlılığında azalmayla ilişkilidir ve T2DM riskini İKİ İLA BEŞ KAT artırır. Bu nedenle MASLD hastaları T2DM açısından taranmalıdır.\n\nZAYIF MASLD: MASLD yaygın olarak fazla kilo/obeziteyle ilişkili olsa da zayıf bireylerde (BMI <25 kg/m² ya da <23 kg/m²) de ortaya çıkabilir. Bu durum özellikle Asya etnik kökenli kişilerde yaygındır; zayıf MASLD prevalansı coğrafi olarak değişir (ABD'de %4 kadar düşük, Asya'da %19 kadar yüksek). Etnik kökenden bağımsız olarak zayıf MASLD hastalarında artmış visseral adipozite, insülin direnci, metabolik komorbiditeler, mikrobiyota değişiklikleri ve/veya sedanter yaşama bağlı azalmış kas kütlesi bulunur.\n\nETNİK DAĞILIM: Etnik ve ırksal etkenler karaciğer yağ birikimini etkiler; belgelenmiş MASLD prevalansı Afrikalı Amerikalılarda en düşük (%25), Hispanik ve Asyalı-Hintlilerde en yüksek (%50), beyazlarda ara düzeydedir (%30).\n\nENDOKRİN DİSFONKSİYON: Hipotiroidi, hipogonadizm, büyüme hormonu eksikliği ve polikistik over sendromunda MASLD oranları daha yüksek bildirilmiştir. Postmenopozal kadınlarda premenopozal kadınlara göre MASLD daha sıktır.\n\nLABORATUVAR — KRİTİK NOKTA: Karaciğerin BÜYÜMEMİŞ olabileceği ve MASLD hastalarında karaciğer hastalığı semptom/bulgularının BULUNMAYABİLECEĞİ vurgulanmalıdır. Ayrıca serum aminotransferazlar gibi diğer karaciğer testleri de (ALP, bilirubin, albümin, protrombin zamanı) TÜMÜYLE NORMAL olabilir. Normal karaciğer enzimleri MASLD'yi dışlamaz. Ayrıca aminotransferazlar için 'normal' aralıklar, tanı almamış karaciğer hastalığı olan kişilerin değerlerini de içerdiği için yapay olarak yüksektir; gerçek normal ALT erkeklerde 29-33 U/L, kadınlarda 19-25 U/L aralığındadır.\n\nMASLD için tek bir özgül kan testi bulunmadığından, tanıya duyulan güven hepatik steatoz bağlamında metabolik risk faktörlerinin tanımlanmasıyla sağlanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — T2DM en güçlü risk faktörüdür; ilişki çift yönlüdür ve MASLD T2DM riskini iki-beş kat artırır.",
+        "B": "DOGRU ifade — Zayıf MASLD özellikle Asya etnik kökenli bireylerde yaygındır.",
+        "C": "DOGRU ifade — Normal enzimler MASLD'yi dışlamaz; gerçek normal ALT erkekte 29-33, kadında 19-25 U/L'dir.",
+        "D": "DOGRU ifade — Prevalans Afrikalı Amerikalılarda %25, Hispanik ve Asyalı-Hintlilerde %50, beyazlarda %30'dur.",
+        "E": "YANLIS ifade (doğru yanıt) — Karaciğer büyümemiş olabilir ve ALP, bilirubin, albümin, protrombin zamanı dahil tüm karaciğer testleri NORMAL olabilir; bunlar tanı için zorunlu değildir."
+      },
+      "etiketler": [
+        "MASLD risk faktörleri",
+        "tip 2 diyabet",
+        "zayıf MASLD",
+        "gerçek normal ALT",
+        "metabolik sendrom"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s21",
+      "metin": "Sirozun tanımı, patogenezi ve geri dönüşümlülüğü ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Sirozda fibrozisin indüksiyonu hepatik STELLAT hücrelerin aktivasyonuyla gerçekleşir; bu da artmış miktarda kollajen ve diğer ekstraselüler matriks bileşenlerinin oluşumuna yol açar.",
+        "B": "Geçmişte sirozun asla geri dönüşümlü olmadığı düşünülüyordu; ancak sirozu yaratan altta yatan hasar ortadan kaldırıldığında fibroziste gerileme olabildiği anlaşılmıştır. Bu en belirgin şekilde kronik hepatit C'nin başarılı tedavisinde görülür.",
+        "C": "Alkolle ilişkili sirozda nodüller genellikle 3 mm'den küçüktür ve bu form MİKRONODÜLER siroz olarak adlandırılır; alkol kullanımının bırakılmasıyla daha büyük nodüller oluşarak mikst mikronodüler-makronodüler siroz ortaya çıkabilir.",
+        "D": "Asit, hepatik ensefalopati veya varis kanaması gelişen hastalar DEKOMPANSE olarak sınıflandırılır ve özellikle dekompansasyonlar iyi kontrol edilemiyorsa karaciğer nakli açısından değerlendirilmelidir.",
+        "E": "Sirozun komplikasyonları etiyolojiye göre kökten farklılık gösterir; bu nedenle asit, varis kanaması ve ensefalopatinin tedavisi altta yatan nedene göre tümüyle değişir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sirozun komplikasyonları ETİYOLOJİDEN BAĞIMSIZ OLARAK esasen AYNIDIR. Varis kanaması, asit, hepatik ensefalopati ve HCC yönetimi, sirozun nedeni ne olursa olsun farklılık göstermez.",
+      "aciklama_detay": "Siroz histopatolojik olarak tanımlanan, bazıları yaşamı tehdit edebilen çeşitli klinik belirti ve komplikasyonları olan bir durumdur. Geçmişte sirozun asla geri dönüşümlü olmadığı düşünülüyordu; ancak sirozu yaratan altta yatan hasar ortadan kaldırıldığında FİBROZİSTE GERİLEME olabildiği anlaşılmıştır. Bu en belirgin şekilde kronik hepatit C'nin başarılı tedavisinde görülür; ayrıca demir uzaklaştırıldıktan sonra hemokromatozlu hastalarda ve alkol kullanımını bırakan ALD hastalarında da fibrozis gerilemesi gözlenir.\n\nNedeni ne olursa olsun sirozun patolojik özellikleri, rejeneratif nodüllerin oluşumuyla birlikte mimari bozulmaya yol açacak düzeyde fibrozis gelişmesidir. Bu durum hepatoselüler kütlede ve dolayısıyla fonksiyonda azalmaya ve kan akımında değişikliğe neden olur. Fibrozisin indüksiyonu HEPATİK STELLAT HÜCRELERİN AKTİVASYONUYLA gerçekleşir; bu da artmış miktarda kollajen ve diğer ekstraselüler matriks bileşenlerinin oluşumuna yol açar.\n\nİleri fibrozis genellikle nodülariteyle birlikte köprüleşen fibrozisi içerir ve evre 3 olarak, siroz ise evre 4 olarak adlandırılır. Sirozlu hastaların karaciğer fonksiyonları değişkendir; klinisyenlerin STABİL, KOMPANSE sirozu olanlar ile DEKOMPANSE sirozu olanları ayırt etmesi gerekir. Asit, hepatik ensefalopati veya varis kanaması gelişen hastalar dekompanse olarak sınıflandırılır ve özellikle dekompansasyonlar iyi kontrol edilemiyorsa karaciğer nakli açısından değerlendirilmelidir.\n\nPortal hipertansiyon dekompanse sirozun önemli bir komplike edici özelliğidir ve asit ile özofagogastrik varislerden kanamanın gelişiminden sorumludur. Hepatoselüler fonksiyon kaybı sarılık, koagülasyon bozuklukları ve hipoalbüminemiye yol açar ve portosistemik ensefalopatinin nedenlerine katkıda bulunur.\n\nKRİTİK NOKTA: SİROZUN KOMPLİKASYONLARI ETİYOLOJİDEN BAĞIMSIZ OLARAK ESASEN AYNIDIR. Bununla birlikte hastaları karaciğer hastalığının nedenine göre sınıflandırmak yararlıdır: alkolle ilişkili siroz, kronik viral hepatite bağlı siroz, biliyer siroz, MASLD ve kardiyak siroz, kriptojenik siroz gibi daha az sık nedenler.\n\nALKOLLE İLİŞKİLİ SİROZ: Kronik alkol kullanımı, eşlik eden inflamasyon ve/veya nekroz olmaksızın fibrozis üretebilir. Fibrozis sentrilobüler, perisellüler veya periportal olabilir. Fibrozis belli bir dereceye ulaştığında normal karaciğer mimarisi bozulur ve karaciğer hücreleri rejeneratif nodüllerle yer değiştirir. Alkolle ilişkili sirozda nodüller genellikle <3 mm çapındadır — MİKRONODÜLER siroz. Alkol kullanımının bırakılmasıyla daha büyük nodüller oluşabilir ve mikst mikronodüler-makronodüler siroz ortaya çıkar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Fibrozis indüksiyonu hepatik stellat hücre aktivasyonuyla olur ve artmış kollajen/ekstraselüler matriks üretimine yol açar.",
+        "B": "DOGRU ifade — Siroz geri dönüşümlü olabilir; en belirgin örnek kronik hepatit C'nin başarılı tedavisidir.",
+        "C": "DOGRU ifade — Alkolde nodüller <3 mm (mikronodüler); alkol bırakıldığında mikst mikronodüler-makronodüler tabloya dönüşebilir.",
+        "D": "DOGRU ifade — Asit, hepatik ensefalopati veya varis kanaması dekompansasyonu tanımlar ve nakil değerlendirmesi gerektirir.",
+        "E": "YANLIS ifade (doğru yanıt) — Sirozun komplikasyonları etiyolojiden BAĞIMSIZ olarak esasen AYNIDIR ve yönetimleri de altta yatan nedene göre değişmez."
+      },
+      "etiketler": [
+        "siroz",
+        "hepatik stellat hücre",
+        "mikronodüler siroz",
+        "dekompansasyon",
+        "fibrozis gerilemesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s22",
+      "metin": "Elli iki yaşında kadın hasta, aylardır süren belirgin halsizlik ve akşamları artan kaşıntı şikâyetiyle başvuruyor. Muayenede ksantelazma ve gövdede hiperpigmentasyon dikkat çekiyor.\n\nLaboratuvar:\nALP: normalin 4.5 katı\nGGT: yüksek\nALT: normalin 1.5 katı\nIgM: yüksek\nAntimitokondriyal antikor (AMA): pozitif\n\nBu hastalık ve tedavisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Tanı primer biliyer kolanjittir; AMA hastaların ~%95'inde pozitiftir ve piruvat dehidrogenaz kompleksi gibi iç mitokondriyal membran proteinlerindeki lipoik asidi tanır. Ursodeoksikolik asit 13-15 mg/kg/gün verilir; hastalığı yavaşlatır ancak geri döndürmez ya da iyileştirmez.",
+        "B": "Tanı primer sklerozan kolanjittir; AMA pozitifliği tanı koydurucudur ve kolanjiyografi gerekmez.",
+        "C": "AMA negatifliği primer biliyer kolanjit tanısını kesin olarak dışlar; bu nedenle AMA testi tek başına yeterlidir.",
+        "D": "Ursodeoksikolik asit hastaların tamamında yeterli yanıt sağlar; yanıtsızlık durumu tanımlanmamıştır.",
+        "E": "Sarılık gelişmeden önce ortaya çıkan kaşıntı iyi prognoz göstergesidir ve hafif hastalığı işaret eder."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PBK: kadın baskın, ortanca yaş ~50, kolestatik enzim yüksekliği, IgM artışı, AMA ~%95 pozitif (piruvat dehidrogenaz kompleksi gibi iç mitokondriyal membran enzimlerindeki lipoik asidi tanır). UDCA 13-15 mg/kg/gün biyokimyasal ve histolojik özellikleri düzeltir — yavaşlatır ama geri döndürmez/iyileştirmez.",
+      "aciklama_detay": "Primer biliyer kolanjit (PBK) milyonda yaklaşık 100-200 kişide görülür; belirgin kadın baskınlığı vardır ve tanı anındaki ortanca yaş ~50'dir. Küçük ve orta boy safra kanallarında portal inflamasyon ve kolanjiyosit nekrozu ile karakterizedir.\n\nOTOANTİKORLAR: Antimitokondriyal antikorlar (AMA) PBK hastalarının yaklaşık %95'inde bulunur. Bu otoantikorlar iç mitokondriyal membran proteinlerindeki LİPOİK ASİDİ tanır — piruvat dehidrogenaz kompleksi (PDC), dallı zincirli 2-oksoasit dehidrogenaz kompleksi ve 2-oksoglutarat dehidrogenaz kompleksi enzimleri. Bu otoantikorlar PATOJENİK DEĞİLDİR, tanı koymada yararlı belirteçlerdir.\n\nAMA NEGATİF PBK: AMA testi PBK hastalarının %5-10 kadarında NEGATİF olabilir. Bu hastalar genellikle sp100 veya gp210 gibi diğer PBK'ye özgü otoantikorlar açısından pozitiftir. AMA negatif PBK'de karaciğer biyopsisi en önemli tanı aracıdır. AMA negatif ve kolestatik enzimleri olan hastalarda PSC kolanjiyografi ile dışlanmalıdır.\n\nKLİNİK: Hastaların çoğu asemptomatiktir. Semptomlar varsa en belirgini karaciğer hastalığının şiddeti ya da hastanın yaşıyla orantısız düzeyde HALSİZLİKTİR. Kaşıntı tanı anında hastaların ~%50'sinde görülür, aralıklı olabilir ve genellikle AKŞAMLARI en rahatsız edicidir. SARILIK GELİŞMEDEN ÖNCE ORTAYA ÇIKAN KAŞINTI AĞIR HASTALIĞI VE KÖTÜ PROGNOZU GÖSTERİR. PBK'ye özgü diğer bulgular hiperpigmentasyon, ksantelazma ve ksantomlardır (değişmiş kolesterol metabolizmasıyla ilişkili).\n\nLABORATUVAR: Kolestatik enzim anormallikleri — GGT ve ALP yüksekliği, aminotransferazlarda hafif yükselme. İmmünoglobulinler, özellikle IgM tipik olarak artmıştır. Hiperbilirubinemi genellikle siroz geliştikten sonra görülür. PBK hastalarının %10 kadarında otoimmün hepatit özellikleri de bulunur ('overlap' sendromu).\n\nTEDAVİ: Ursodeoksikolik asit (UDCA) hastalığın hem biyokimyasal hem histolojik özelliklerini düzelttiği gösterilmiştir — böylece hastalığı YAVAŞLATIR ancak GERİ DÖNDÜRMEZ ya da İYİLEŞTİRMEZ. Doz 13-15 mg/kg/gündür. En büyük düzelme tedaviye erken başlandığında görülür. PBK hastalarının %30-40'ı UDCA'ya yeterli yanıt vermez; bunların yarısından fazlası obetikolik asit, elafibranor veya seladelpar ile belirgin düzelme gösterir — ancak bu ilaçlar portal hipertansiyonlu siroz veya dekompansasyon varlığında kullanılmamalıdır.\n\nKaşıntı tedavisi: antihistaminikler, narkotik reseptör antagonistleri (naltrekson), SSRI'lar ve rifampin. Kolestiramin bazı hastalarda yararlıdır. Total bilirubin >2 mg/dL ise yağda çözünen vitamin (A, D, E, K) eksikliği taranmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PBK tanısı, AMA'nın ~%95 pozitifliği ve hedefi (PDC gibi enzimlerdeki lipoik asit), UDCA dozu (13-15 mg/kg/gün) ve yavaşlatıcı ama iyileştirici olmayan etkisi doğru verilmiştir.",
+        "B": "YANLIS — AMA pozitifliği PBK'yi düşündürür, PSC'yi değil. PSC tanısı safra ağacının GÖRÜNTÜLENMESİNİ (kolanjiyografi) gerektirir.",
+        "C": "YANLIS — AMA hastaların %5-10'unda NEGATİF olabilir; bu olgularda sp100/gp210 ve karaciğer biyopsisi kullanılır.",
+        "D": "YANLIS — Hastaların %30-40'ı UDCA'ya yeterli yanıt VERMEZ; bu grupta obetikolik asit, elafibranor veya seladelpar seçenekleri vardır.",
+        "E": "YANLIS — Sarılıktan ÖNCE ortaya çıkan kaşıntı AĞIR HASTALIĞI ve KÖTÜ PROGNOZU gösterir."
+      },
+      "etiketler": [
+        "primer biliyer kolanjit",
+        "antimitokondriyal antikor",
+        "ursodeoksikolik asit",
+        "IgM",
+        "kaşıntı",
+        "sp100",
+        "gp210"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s23",
+      "metin": "Kırk yaşında erkek hasta, kolestatik karaciğer enzim anormallikleri, halsizlik ve kaşıntı ile değerlendiriliyor. AMA negatif saptanıyor.\n\nPrimer sklerozan kolanjitin (PSC) tanısı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "PSC'de karaciğer biyopsisi değişiklikleri PATOGNOMONİK DEĞİLDİR; tanının konması safra ağacının GÖRÜNTÜLENMESİNİ gerektirir. Biyopside safra kanalı proliferasyonu, duktopeni ve fibröz kolanjit (perikolanjit) görülür; periduktal fibrozis tanıda yardımcı olabilir.",
+        "B": "PSC tanısı karaciğer biyopsisiyle kesinleştirilir; kolanjiyografi gereksizdir.",
+        "C": "PSC'de kaşıntının şiddeti hastalığın şiddetiyle doğru orantılıdır ve prognozu belirler.",
+        "D": "PSC yalnızca intrahepatik safra ağacını tutar; ekstrahepatik safra yolları korunur.",
+        "E": "PSC'de metabolik kemik hastalığı görülmez; bu özellik yalnızca primer biliyer kolanjite özgüdür."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PSC'de karaciğer biyopsisi değişiklikleri PATOGNOMONİK DEĞİLDİR; tanı safra ağacının GÖRÜNTÜLENMESİNİ gerektirir. Biyopside safra kanalı proliferasyonu, duktopeni ve fibröz kolanjit (perikolanjit) bulunur; periduktal fibrozis yardımcıdır.",
+      "aciklama_detay": "Primer sklerozan kolanjit (PSC), tüm biliyer ağacı tutan yaygın inflamasyon ve fibrozisle karakterize, kronik kolestaza yol açan bir sendromdur. Bu patolojik süreç sonuçta HEM İNTRA HEM DE EKSTRAHEPATİK biliyer ağacın obliterasyonuna yol açarak biliyer siroz, portal hipertansiyon ve karaciğer yetmezliğine ilerler.\n\nPBK'de olduğu gibi PSC'nin nedeni de bilinmemektedir; bakteriyel ve viral enfeksiyonlar, toksinler, genetik yatkınlık ve immünolojik mekanizmalarla ilgili çeşitli mekanizmalar üzerine kapsamlı araştırmalara karşın etiyoloji aydınlatılamamıştır.\n\nTANI — KRİTİK NOKTA: PSC'de KARACİĞER BİYOPSİSİ DEĞİŞİKLİKLERİ PATOGNOMONİK DEĞİLDİR ve PSC tanısının konması BİLİYER AĞACIN GÖRÜNTÜLENMESİNİ içermek zorundadır. PSC'de görülen patolojik değişiklikler safra kanalı proliferasyonunun yanı sıra duktopeni ve fibröz kolanjittir (perikolanjit). Biyopsi örneklerinde ara sıra görülen PERİDUKTAL FİBROZİS tanı koymada oldukça yardımcı olabilir. Hastalık ilerledikçe biliyer siroz PSC'nin son dönem belirtisidir.\n\nKLİNİK ÖZELLİKLER: PSC'nin olağan klinik özellikleri kolestatik karaciğer hastalığında görülenlerdir — halsizlik, kaşıntı, steatore, yağda çözünen vitamin eksiklikleri ve bunların sonuçları. PBK'de olduğu gibi halsizlik derin ve nonspesifiktir. KAŞINTI sıklıkla güçten düşürücü olabilir ve kolestazla ilişkilidir; ancak KAŞINTININ ŞİDDETİ HASTALIĞIN ŞİDDETİYLE KORELASYON GÖSTERMEZ.\n\nMetabolik kemik hastalığı, PBK'de görüldüğü gibi PSC'de de ORTAYA ÇIKABİLİR ve tedavi edilmelidir (kemik dansitometresi, oral kalsiyum ve D vitamini, kemik hastalığı saptandığında bifosfonat).\n\nAyırıcı tanı bağlamında: AMA negatif ve kolestatik karaciğer enzimleri olan hastalarda PSC kolanjiyografi ile dışlanmalıdır — bu, AMA negatif PBK ile PSC'yi ayırmanın yoludur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PSC'de biyopsi patognomonik değildir; tanı safra ağacının görüntülenmesini gerektirir. Periduktal fibrozis yardımcı bir bulgudur.",
+        "B": "YANLIS — Tam tersi: biyopsi tanı koydurucu değildir, kolanjiyografi zorunludur.",
+        "C": "YANLIS — PSC'de kaşıntının şiddeti hastalığın şiddetiyle KORELASYON GÖSTERMEZ.",
+        "D": "YANLIS — PSC HEM İNTRA HEM DE EKSTRAHEPATİK biliyer ağacı tutar ve her ikisinin de obliterasyonuna yol açar.",
+        "E": "YANLIS — Metabolik kemik hastalığı PSC'de de görülebilir ve PBK'de olduğu gibi tedavi edilmelidir."
+      },
+      "etiketler": [
+        "primer sklerozan kolanjit",
+        "kolanjiyografi",
+        "periduktal fibrozis",
+        "kolestaz",
+        "biliyer siroz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s24",
+      "metin": "Kronik viral hepatite bağlı siroz ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Hepatit C virüsüne maruz kalanların yaklaşık %80'i kronik hepatit C geliştirir ve bunların yaklaşık %20-30'unda 20-30 yıl içinde siroz gelişir.",
+        "B": "HCV sitopatik OLMAYAN bir virüstür ve karaciğer hasarı büyük olasılıkla immün aracılıdır; HCV genotip 3'te steatoz sıklıkla bulunur.",
+        "C": "Hepatit B'ye maruz kalan ERİŞKİNLERİN yaklaşık %5'i kronik hepatit B geliştirir ve bu hastaların yaklaşık %20'sinde siroz gelişir.",
+        "D": "Hepatit B tedavisinde entekavir ve tenofovir viral direnç riskinin daha düşük olması nedeniyle güçlü şekilde tercih edilir; interferon-alfa hepatit B tedavisinde kullanılabilir ancak SİROTİK hastalarda kullanılmamalıdır.",
+        "E": "Hepatit C sirozunda doğrudan etkili antiviral protokolleriyle tedavi başarı oranı düşüktür (<%50) ve tedavi süresi tipik olarak 48-72 haftadır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Hepatit C sirozunda doğrudan etkili antiviral (DAA) protokolleriyle tedavi HIGHLY BAŞARILIDIR (>%95 kür oranı), iyi tolere edilir ve süresi genellikle KISADIR (8-12 hafta).",
+      "aciklama_detay": "HEPATİT C: Hepatit C virüsüne (HCV) maruz kalanların yaklaşık %80'i kronik hepatit C geliştirir ve bunların yaklaşık %20-30'unda 20-30 yıl içinde siroz gelişir. Bu hastaların çoğunda eş zamanlı alkol kullanımı da bulunduğundan yalnızca hepatit C'ye bağlı sirozun gerçek insidansı bilinmemektedir. ABD'de yaklaşık 5-6 milyon kişi HCV'ye maruz kalmıştır ve 4-5 milyonu kronik viremiktir. Dünya genelinde yaklaşık 170 milyon kişide hepatit C vardır; Mısır gibi bazı bölgelerde nüfusun %15'ine varan oranda enfeksiyon bildirilmiştir.\n\nHCV SİTOPATİK OLMAYAN bir virüstür ve karaciğer hasarı büyük olasılıkla İMMÜN ARACILIDIR. Kronik hepatit C'ye bağlı karaciğer hastalığının ilerlemesi portal temelli fibrozis ile karakterizedir; köprüleşen fibrozis ve nodülarite gelişerek sonuçta siroza varır. Kronik hepatit C'ye bağlı sirozda karaciğer küçük ve büzüşmüştür; biyopside mikst mikro- ve makronodüler sirozun karakteristik özellikleri görülür. Ayrıca portal alanlarda interface hepatitiyle birlikte inflamatuar infiltrat bulunur. HCV GENOTİP 3 olan hastalarda STEATOZ sıklıkla mevcuttur.\n\nHEPATİT B: Hepatit B'ye maruz kalan ERİŞKİNLERİN yaklaşık %5'i kronik hepatit B geliştirir ve bu hastaların yaklaşık %20'sinde siroz gelişir. Hepatit B çekirdek (HBc) ve yüzey (HBs) antijeni için özel boyalar pozitif olur; HBsAg'yi işaret eden 'buzlu cam' (ground-glass) hepatositler bulunabilir. ABD'de yaklaşık 2 milyon hepatit B taşıyıcısı vardır; HBV'nin endemik olduğu bölgelerde (Asya, Güneydoğu Asya, Sahra altı Afrika) nüfusun %15'ine varan kısmı enfekte olabilir ve enfeksiyonu doğum sırasında dikey yolla edinmiştir. Dünya genelinde 300-400 milyondan fazla kişide hepatit B olduğu düşünülmektedir; bunların yaklaşık %25'inde sonuçta siroz gelişebilir.\n\nTEDAVİ: Kronik hepatit B'de antiviral tedavinin yararlı etkileri gösterilmiştir — aminotransferaz ve HBV DNA düzeylerini düşürerek viral supresyon sağlar, inflamasyon ve fibrozisi azaltarak histolojiyi düzeltir. Dekompanse karaciğer hastalığı olan hastalar hepatit B'ye yönelik antiviral tedaviyle kompanse hale gelebilir. Mevcut tedaviler lamivudin, adefovir, telbivudin, entekavir ve tenofovirdir; son ikisi VİRAL DİRENÇ RİSKİNİN DAHA DÜŞÜK olması nedeniyle güçlü şekilde tercih edilir. İnterferon-alfa hepatit B tedavisinde kullanılabilir ancak SİROTİKLERDE KULLANILMAMALIDIR.\n\nHepatit C'ye bağlı sirozu olan hastaların DOĞRUDAN ETKİLİ ANTİVİRAL (DAA) protokolleriyle tedavisi son derece başarılıdır (>%95 KÜR ORANI), iyi tolere edilir ve genellikle KISA SÜRELİDİR (8-12 HAFTA).",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — HCV'ye maruz kalanların ~%80'i kronikleşir; bunların ~%20-30'unda 20-30 yılda siroz gelişir.",
+        "B": "DOGRU ifade — HCV sitopatik olmayan bir virüstür, hasar immün aracılıdır; genotip 3'te steatoz sıktır.",
+        "C": "DOGRU ifade — Erişkinlerin ~%5'i kronikleşir, bunların ~%20'sinde siroz gelişir.",
+        "D": "DOGRU ifade — Entekavir ve tenofovir düşük direnç riski nedeniyle tercih edilir; interferon-alfa sirotiklerde kullanılmamalıdır.",
+        "E": "YANLIS ifade (doğru yanıt) — DAA protokolleriyle kür oranı >%95'tir ve tedavi süresi tipik olarak 8-12 haftadır, 48-72 hafta değil."
+      },
+      "etiketler": [
+        "hepatit C sirozu",
+        "hepatit B sirozu",
+        "doğrudan etkili antiviral",
+        "entekavir",
+        "tenofovir",
+        "genotip 3 steatoz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    },
+    {
+      "id": "s25",
+      "metin": "Uzun süredir alkol kullanan 55 yaşında erkek hastada kompanse siroz saptanıyor. Hasta alkolü bırakma konusunda destek istiyor ve ağrı kesici kullanımı hakkında soru soruyor.\n\nAlkolle ilişkili sirozun yönetimi ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Abstinens alkolle ilişkili karaciğer hastalığı tedavisinin köşe taşıdır; fosfatidiletanol (PEth) gibi yeni klinik biyobelirteçler yakın dönem alkol tüketimini değerlendirmede yardımcı olabilir.",
+        "B": "Alkol isteğini azaltan akamprosat kalsiyum ve baklofen gibi ilaçlarla elde edilen deneyim olumludur.",
+        "C": "Sirozlu hastalarda asetaminofen kullanımı sıklıkla önerilmez; ancak günde 2 g'dan fazla tüketilmediği sürece, aktif alkol kullanımı yoksa genellikle sorun yaşanmaz.",
+        "D": "Sirozu olan hastalar varis taraması için üst gastrointestinal endoskopi yaptırmalıdır; HCC taraması karaciğer ultrasonografisi ve serum alfa-fetoprotein ile 6 ayda bir önerilir.",
+        "E": "Sirozun komplikasyonları gelişmiş ve içmeye devam eden hastalarda 5 yıllık sağkalım %80'in üzerindedir; abstinensin prognoz üzerinde anlamlı etkisi gösterilememiştir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sirozun komplikasyonları gelişmiş ve İÇMEYE DEVAM EDEN hastalarda 5 yıllık sağkalım %50'nin ALTINDADIR. Abstinent kalanlarda prognoz belirgin şekilde DÜZELİR — özellikle karaciğer komplikasyonları geriledi ise.",
+      "aciklama_detay": "PROGNOZ: Sirozun komplikasyonları gelişmiş ve içmeye devam eden hastalarda 5 YILLIK SAĞKALIM %50'NİN ALTINDADIR. Buna karşılık ABSTİNENT kalan hastalarda prognoz BELİRGİN ŞEKİLDE DÜZELİR, özellikle karaciğer komplikasyonlarında gerileme olduğunda. Bununla birlikte abstinent kalan bazı bireyler düzelmez ve bu durumda karaciğer nakli geçerli bir seçenektir.\n\nTEDAVİ: Abstinens, alkolle ilişkili karaciğer hastalığı olan hastalarda tedavinin KÖŞE TAŞIDIR. Yakın dönem alkol tüketimini değerlendirmede yeni klinik biyobelirteçler — fosfatidiletanol (PEth) gibi — yardımcı olabilir. Ayrıca hastalar iyi beslenme ve gelişebilecek komplikasyonları yönetmek için uzun süreli tıbbi gözetim gerektirir. Asit ve ödem gelişimi, varis kanaması ya da portosistemik ensefalopati gibi komplikasyonların her biri özgül yönetim ve tedavi gerektirir.\n\nAlkol kullanımının kesilmesi anahtardır. Alkol isteğini azaltan ilaçlarla — akamprosat kalsiyum ve baklofen — elde edilen son deneyim olumludur.\n\nHastalar siroz varlığında bile gerekli diğer ilaçları kullanabilir. Sirozlu hastalarda ASETAMİNOFEN kullanımı sıklıkla önerilmez; ancak GÜNDE 2 g'DAN FAZLA tüketilmediği sürece, AKTİF ALKOL KULLANIMI YOKSA genellikle sorun yaşanmaz.\n\nKarazciğer nakli, alkol nüksü açısından yeterince düşük riskli görülen ve diğer tedavilere yanıt vermeyen hastalarda etkili bir uzun dönem tedavi olabilir.\n\nİZLEM: Alkolle ilişkili sirozu olan ve alkol tüketimi devam eden hastalar dekompansasyon ve hepatik ensefalopati, asit, varis kanaması, hepatorenal sendrom ile HCC gelişimi açısından risk altındadır. Sirozlu hastalar VARİS TARAMASI için üst gastrointestinal endoskopi yaptırmalıdır. HCC taraması sirozlu hastalarda KARACİĞER ULTRASONOGRAFİSİ VE SERUM ALFA-FETOPROTEİN ile 6 AYDA BİR önerilir. Varis kanaması, asit, hepatik ensefalopati ve HCC gibi siroz komplikasyonlarının yönetimi, farklı etiyolojiye bağlı sirozu olan hastalardan FARKLI DEĞİLDİR.\n\nAlkolle ilişkili dekompanse siroz ya da HCC için karaciğer nakli kesin bir tedavidir ve şu anda ABD'de karaciğer naklinin önde gelen endikasyonudur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Abstinens tedavinin köşe taşıdır; PEth gibi biyobelirteçler yakın dönem tüketimi değerlendirmede yardımcıdır.",
+        "B": "DOGRU ifade — Akamprosat kalsiyum ve baklofen ile elde edilen deneyim olumludur.",
+        "C": "DOGRU ifade — Günde 2 g'ı aşmayan asetaminofen, aktif alkol kullanımı yoksa genellikle sorun yaratmaz.",
+        "D": "DOGRU ifade — Varis için üst GİS endoskopisi; HCC için ultrasonografi + AFP ile 6 ayda bir tarama önerilir.",
+        "E": "YANLIS ifade (doğru yanıt) — İçmeye devam edenlerde 5 yıllık sağkalım %50'nin ALTINDADIR ve abstinens prognozu BELİRGİN ŞEKİLDE DÜZELTİR."
+      },
+      "etiketler": [
+        "alkolle ilişkili siroz",
+        "abstinens",
+        "fosfatidiletanol",
+        "akamprosat",
+        "baklofen",
+        "HCC taraması",
+        "asetaminofen"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
+    }
+  ]
+}
