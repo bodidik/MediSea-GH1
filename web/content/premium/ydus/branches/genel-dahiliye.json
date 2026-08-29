@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "genel-dahiliye",
+    "baslik": "Genel Dahiliye",
+    "aciklama": "Semptomdan tanıya giden yolu konu alan modül: dispne, göğüs ağrısı, ateş, baş ağrısı gibi başvuru şikâyetlerinin ayırıcı tanısı, tanısal testlerin olabilirlik oranları ve karar kuralları.",
+    "renk": "#1a4a5c",
+    "emoji": "🩺"
+  },
+  "kategoriler": [
+    {
+      "id": "semptoma-yaklasim",
+      "baslik": "Semptoma Yaklaşım",
+      "aciklama": "Başvuru şikâyetinden ayırıcı tanıya: sık semptomların değerlendirme algoritmaları",
+      "emoji": "🧭",
+      "konular": [
+        {
+          "id": "current-2025-semptomlar-secme-sorular",
+          "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Semptomlar (Set 1)",
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
+        }
+      ]
+    }
+  ]
+}
