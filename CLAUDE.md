@@ -23094,3 +23094,17 @@ isteğe göre değişir".** İddiayı sınamanın ucuz yolu, rotanın isteğe ba
 API okuyup okumadığını saymak. Bu depoda o soru bir kez sorulmadığı için 130
 araçlık hub bir tur boyunca her istekte yeniden üretilmişti; burada aynı soru
 228 baytlık bir sayaç için sorulmadan kalmıştı.
+
+#### CANLIDA doğrulandı — aynı ölçüt, dağıtımdan sonra
+
+Kusuru bulan ölçüm birebir tekrarlandı; en güçlü doğrulama biçimi bu, çünkü
+"önce" değeri aynı komutla alınmıştı:
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| `x-vercel-cache` (üç istek) | **MISS · MISS · MISS** | **PRERENDER · HIT · HIT** |
+| gövde | 228 bayt | **değişmedi** |
+
+**Negatif kontrol tarayıcıda:** `/calisma-alanim` kapsama bölümü canlıda
+`0 / 423` · `0/116` · `0/79` · `0/52` · `0/41` · `0/37` basıyor — uçtaki JSON
+ile birebir. `h1` 1, hata sınırı yok, ve ölçüm izi temiz (`medisea:*` **0**).
