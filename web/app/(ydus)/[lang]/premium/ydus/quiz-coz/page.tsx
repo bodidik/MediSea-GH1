@@ -32,6 +32,14 @@ export const dynamic = "force-dynamic";
 
 const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
 
+/** Konu dosyası GERÇEKTEN var mı? İlan yetmez — bkz. `quizYukle` içindeki `topic`. */
+function konuVar(branch: string, topic: string) {
+  if (!topic || !isValidParam(topic)) return false;
+  return fs.existsSync(
+    path.join(process.cwd(), 'content', 'premium', 'ydus', 'topics', branch, `${topic}.json`)
+  );
+}
+
 /**
  * İKİ ŞEMA BİR ARADA — künye üst düzeyde YA DA `meta` içinde.
  *
@@ -59,13 +67,38 @@ function quizYukle(branch: string, id: string) {
     );
     const ham = JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8'));
     const m = ham?.meta ?? {};
+
+    /**
+     * `topic` bir GERİ BAĞLANTI kaynağı: QuizEngine "← Konuya dön"u ondan
+     * kuruyor. İlanın doğru olduğu VARSAYILIYORDU ve bir dosyada değildi —
+     * ölçüldü (canlı):
+     *
+     *   gogus-hastaliklari/hkp-quiz-1  ->  topic: "hkp-vip"
+     *   /tr/premium/ydus/gogus-hastaliklari/hkp-vip  ->  404
+     *   .../hkp ve .../tkp                           ->  200
+     *
+     * Yani ücretli bir quizin tek çıkış bağlantısı çıkmaza gidiyordu.
+     * Üstelik bu sayfa DOĞRU konuyu zaten hesaplıyor: `AccessGate`e verilen
+     * `topicId` dosya adından türüyor (`hkp-quiz-1` -> `hkp`) ve o var. Aynı
+     * dosyada iki gerçeklik: kapı doğru konuyu biliyor, bağlantı bilmiyor.
+     *
+     * İçerik dosyasına DOKUNULMUYOR (içerik kullanıcının sorumluluğu);
+     * düzeltme okuma tarafında ve İLAN ÖNCELİKLİ — 40 dosyanın 39'unda ilan
+     * zaten doğru ve davranışları birebir korunuyor. İlan tutmuyorsa dosya
+     * adından türetilene, o da yoksa `undefined`a düşülüyor; motor o durumda
+     * zaten branş bağlantısına iniyor.
+     */
+    const ilan = ham.topic ?? m.topicId;
+    const dosyadan = id.replace(/-quiz-\d+$/, '');
+    const topic = konuVar(branch, ilan) ? ilan : konuVar(branch, dosyadan) ? dosyadan : undefined;
+
     return {
       ...ham,
       // Künyesiz dosyada son çare DOSYA ADI: benzersiz ve kararlı.
       id: ham.id ?? m.quizId ?? id,
       baslik: ham.baslik ?? m.baslik ?? '',
       branch: ham.branch ?? m.branch ?? branch,
-      topic: ham.topic ?? m.topicId,
+      topic,
     };
   } catch {
     return null;

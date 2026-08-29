@@ -24493,3 +24493,97 @@ demez; neden başka bir ögedeyse `aria-describedby` ile bağlanmalı. Ve bağ
 kurulurken hedefin O ANDA render edildiği ayrıca sınanmalı — koşullu bir
 kartın id'sine koşulsuz atıf yapmak, bu depoda ayrı bir kusur sınıfı
 (sarkan ARIA atfı).
+
+### ÜCRETLİ BİR QUİZİN TEK ÇIKIŞ BAĞLANTISI 404'E GİDİYORDU — künye ↔ dosya yeri
+
+İçerik dalı merge edildi (yeni bir gastroenteroloji soru seti). Belgedeki
+merge sonrası kontrol listesi ücretli tarafa uyarlanıp sürüldü; asıl bulgu
+listede olmayan bir eksenden çıktı: **motorlar geri bağlantıyı DOSYANIN
+KÜNYESİNDEN kuruyor — o künye doğru mu?**
+
+| tür | dosya | branch dizinden sapan | topic hedefi YOK | künye eksik |
+|---|---|---|---|---|
+| quiz | 41 | 0 | **1** | 1 (bilinen yetim) |
+| flashcard | 21 | 0 | 0 | 21 — **kusur DEĞİL** |
+| vaka | 11 | **2** | 0 | 0 |
+| inci | 2 | 0 | 0 | 2 |
+
+#### ÖNCE HANGİ ALANIN KULLANILDIĞI ÖLÇÜLDÜ — üç bulgunun ikisi inert
+
+Ham sayı yanıltıcı: bir alanın sapması ancak o alan OKUNUYORSA kusurdur.
+
+| motor | geri bağlantı kaynağı |
+|---|---|
+| `vaka-coz` · `hizli-tekrar` | **URL parametreleri** — dosyanın `branch`i hiç okunmuyor |
+| `FlashcardPlayer` | `topic` bir BAŞLIK olarak basılıyor (id değil) — şema öyle |
+| **`QuizEngine`** | **dosyanın `topic` alanı** (`backHref = .../${branch}/${topic}`) |
+
+Yani flashcard'ların 21 "künyesizliği" ve vakaların 2 sapan `branch`i bugün
+kullanıcıya ulaşmıyor. Gerçek olan tek bulgu quiz tarafındaydı.
+
+#### Bulgu — canlıda ölçüldü
+
+```
+gogus-hastaliklari/hkp-quiz-1   ->  topic: "hkp-vip"
+/tr/premium/ydus/gogus-hastaliklari/hkp-vip   ->  404
+/tr/premium/ydus/gogus-hastaliklari/hkp       ->  200
+/tr/premium/ydus/gogus-hastaliklari/tkp       ->  200
+```
+
+O quizin **tek** çıkış bağlantısı ("← Konuya dön") çıkmaza gidiyordu.
+
+**Aynı dosyada iki gerçeklik:** sayfa DOĞRU konuyu zaten hesaplıyor —
+`AccessGate`e verilen `topicId` dosya adından türüyor (`hkp-quiz-1` → `hkp`)
+ve o konu var. Kapı doğru konuyu biliyor, bağlantı bilmiyordu.
+
+#### Çare okuma tarafında ve İLAN ÖNCELİKLİ
+
+İçerik dosyasına dokunulmadı (`VakaEngine` `meta` düzleştirmesiyle aynı
+karar). `quizYukle` artık ilanın hedefini **dosya sisteminden doğruluyor**:
+
+```
+ilan geçerliyse   -> ilan          (40 dosyanın 39'unda böyle)
+değilse           -> dosya adından türetilen
+o da yoksa        -> undefined     (motor zaten branş bağlantısına iniyor)
+```
+
+Bu, deponun kayıtlı kuralının aynısı: *"İlan YETMEZ: hedef içerik gerçekten
+var mı?"* — premium konu sayfasındaki modül kartlarında da böyle çözülmüştü.
+
+#### Doğrulama — kapı geçici açılarak, üçü negatif kontrol
+
+| quiz | geri bağlantı | hedef |
+|---|---|---|
+| `hkp-quiz-1` | **`/gogus-hastaliklari/hkp`** (önce `hkp-vip`) | **200** |
+| eski hedef `hkp-vip` | — | **404** (bağlantı gerçekten taşındı) |
+| **negatif** — yeni set `harrison-22-kc-secme-sorular-quiz-1` | `/gastroenteroloji/harrison-22-kc-secme-sorular` | 200 |
+| **negatif** — kanonik `behcet-hastaligi-quiz-1` | `/romatoloji/behcet-hastaligi` | 200 |
+| **negatif** — yetim `aml-quiz-1` (topic yok) | **branş bağlantısı** | değişmedi |
+
+**Kapsam sayıldı:** 41 quizin **40'ında `topic` değişmiyor**, biri değişiyor,
+hiçbiri `undefined`a düşmüyor.
+
+Kapı geri kondu (`ZZ-OLCUM` izi **0**, dosya yedekle **birebir aynı**, sayfa
+yeniden "Erişim Kısıtlı"). Kapılar: lint · typecheck · build **637/637**.
+
+#### Merge sonrası kalan ölçümler — hepsi temiz
+
+| ölçüt | sonuç |
+|---|---|
+| quiz `id` benzersizliği (ilerleme anahtarı) | **41/41** |
+| aynı dosyada çift soru `id` (vurgu konteyneri) | **0** |
+| yapısal (doğru cevap şıkta mı, şık ≥2, açıklama anahtarları) | **0 kusur** |
+| yeni setin bankaya karşı TEKRARI (404 soru, eşik %20) | **0 çift** |
+| yeni set: 25 soru · 5 şık · açıklama ortanca **5838 krk** | bankanın ortancasının ~5 katı |
+| sayı yüzeyleri (içerik ↔ pano ↔ `/uyelik`) | **42 başlık · 404 soru** — üçü de aynı |
+
+#### İki içerik notu — DEĞİŞTİRİLMEDİ
+
+- **Yeni konu branş dosyasında listelenmiyor.** Kendini onaran okuma onu
+  "📌 Diğer Konular · 1/1 konu" altında görünür kılıyor (canlıda doğrulandı,
+  bağlantı çalışıyor). Ama kardeşi `romatoloji/harrison-22-secme-sorular`in
+  **kendi kategorisi var** ("Ders Kitaplarından Hazırlanmış Sorular"). Tek
+  satırlık bir küratörlük kararı.
+- **Cevap dağılımı**: yeni set A %48 · E %36 · B %12 · D %4 · **C hiç**.
+  Banka geneli B %54.2 → **%51.5** (yeni set global dengeyi iyileştirdi ama
+  kendi içinde başka yöne çarpık).
