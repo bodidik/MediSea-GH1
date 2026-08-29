@@ -24762,3 +24762,21 @@ aynı hata iki ayrı yüzeyde bulundu (site haritası `lastmod`, pano "yeni
 eklendi"). İçerik ne kadar kaba olursa olsun, tazeliği İÇERİĞİN KENDİ
 alanından oku — ve alanın hassasiyeti yetmiyorsa iddiayı o hassasiyete
 daralt, dosya sistemine kaçma.
+
+#### Canlıda doğrulandı — ve dağıtım yoklaması BİR KEZ yanlış "indi" dedi
+
+| ölçüt | önce (canlı) | sonra (canlı) |
+|---|---|---|
+| featured | SLE (2026-07) | **Feokromositoma (2026-08)** |
+| şerit | 5 kart, 4'ü eski | **4 kart, dördü de 2026-08** |
+| yeni merge edilen gastro seti | yok | **"…— Karaciğer" listede** |
+| **negatif** — metrik şeridi | %71 · 42 · 404 | **birebir aynı** |
+| **negatif** — branş kartı · `h1` | 10 · 1 | **10 · 1** |
+| **negatif** — SLE geçişi | 3 | **1** (artık rozetli değil) |
+
+**Yoklama tuzağı:** dağıtımın indiğini `grep -q "Feokromositoma"` ile
+yoklamak bir tur **yanlış pozitif** verdi — o dize sayfanın başka bir yerinde
+(çalışma planı listesinde) zaten geçiyor. Ölçüt featured kartının KENDİ
+metnine bağlanınca doğru çalıştı. Belgede kayıtlı "çapa benzersiz olmalı"
+kuralının dağıtım yoklaması tarafındaki hâli: yoklanan dize, değişikliğin
+GERÇEKLEŞTİĞİ yere ait olmalı.
