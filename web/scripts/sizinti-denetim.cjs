@@ -40,9 +40,22 @@ const os = require('os');
 /* Yorumlar bu depoda kusurları BİREBİR alıntılıyor; kaynak tarayan her
    ölçüt onları boşaltmak zorunda. Maske satır sonlarını KORUR — `\r` de
    silinirse CRLF dosyalarda satır numaraları kayıyor (ölçüldü: bir
-   süpürme 29 dosyanın 10'unu yanlış yere yamalamıştı). */
+   süpürme 29 dosyanın 10'unu yanlış yere yamalamıştı).
+
+   ⚠ ÖNÜNDEKİ KARAKTER ŞARTI ŞART: naif "çift eğik + satır sonuna kadar"
+   deseni bir URL'nin İÇİNDEKİ çift eğiği de yorum başlangıcı sanıyor ve
+   satırın GERİ KALANINI siliyor. Bu denetimde bedeli ölçüldü — aynı tohum,
+   tek fark değerin URL olması:
+
+     const r = "https://ornek.example/k"; localStorage.setItem(…)  ->  0 bulgu
+     const r = "kilavuz";                 localStorage.setItem(…)  ->  1 bulgu
+
+   Üçüncü taraf ölçümleme kanalı bundan YAPISAL olarak etkileniyordu: aranan
+   ad (`googletagmanager` vb.) neredeyse her zaman `//`den SONRA geliyor,
+   yani en olası sızıntı biçimi hiç görülmüyordu. Desen `arayuz-denetim`in
+   ölçülmüş biçimiyle aynı. */
 function yorumSil(s) {
-  const t = s.replace(/[/][/][^\r\n]*/g, (m) => ' '.repeat(m.length));
+  const t = s.replace(/(^|[^:"'`\\])[/][/][^\r\n]*/g, (m, o) => o + ' '.repeat(m.length - o.length));
   return t.replace(/[/][*][\s\S]*?[*][/]/g, (m) => m.replace(/[^\r\n]/g, ' '));
 }
 

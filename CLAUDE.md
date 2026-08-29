@@ -22862,3 +22862,146 @@ Dördüncü satırda ölçüt tuzağı: ham HTML'den 10 select "adsız" göründ
 bu depoda ad SARAN `<label>`den geliyor ve raw HTML onu çözemiyor. Ad
 tarayıcıda TAM ZİNCİRLE hesaplanınca **10'unun 10'u da adlı** çıktı
 (`Cinsiyet` · `Bilinç (AVPU)` · `Vazopresör` · `glim`in beş alanı…).
+
+### ⚠ YORUM AYIKLAYICISI URL'LERİ YİYOR — iki checked-in denetim SESSİZCE kördü
+
+Bu depoda "kaynak tarayan her ölçüt yorumları ELEMEK zorunda" kuralı defalarca
+kayıtlı. Bu turda o kuralın **uygulamasının kendisinde** bir körlük ölçüldü ve
+bedeli en tehlikeli biçimdeydi: **sahte temizlik.**
+
+Naif satır-yorumu deseni (`çift eğik + satır sonuna kadar`) bir **URL'nin
+İÇİNDEKİ** çift eğiği de yorum başlangıcı sanıyor ve satırın **geri kalanını**
+siliyor:
+
+```
+const base = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://127.0.0.1:4000";
+                                                          ^^ yorum sanildi
+ayiklamadan sonra:  const base = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http:
+```
+
+Yani ölçüt tam olarak **aradığı şeyi** siliyor.
+
+**Kusuru gösteren şey ölçümün kendisi değil, ÇELİŞKİSİ oldu:** "sabit yazılmış
+yerel adres" taraması 581 dosyada **0 bulgu** dedi; oysa `lib/backend.ts`
+gözle görülür biçimde `"http://127.0.0.1:4000"` taşıyor. Desen düzeltilince
+**0 → 4**.
+
+#### Kapsam ölçüldü: 61 satır
+
+| ölçüt (581 kod dosyası) | değer |
+|---|---|
+| kodda `://` taşıyan satır | **63** |
+| işaretten SONRA hâlâ kod olan | **61** |
+
+Çoğunluğu `<svg xmlns="http://www.w3.org/2000/svg" width=… viewBox=… fill=…>`
+— yani naif ayıklayıcı kullanan bir denetim, **her satır içi SVG'nin açılış
+etiketinin tamamını** göremiyordu (`aria-hidden`, `role`, boyut, sınıf).
+
+#### Checked-in denetimlerin üçü tarandı, ikisi kördü
+
+| denetim | desen | durum |
+|---|---|---|
+| `arayuz-denetim` | önünde `:"'\` OLMAYAN çift eğik | **güvenli** — zaten doğru yazılmış |
+| **`sizinti-denetim`** | `[/][/][^\r\n]*` | **KÖR** |
+| **`ilan-render-denetim`** | `\/\/[^\n]*` | **KÖR** |
+
+Doğru desen deponun kendi içinde ZATEN vardı; eksik olan tutarlılıktı.
+
+#### `sizinti-denetim`in ölçümleme kanalı YAPISAL olarak kördü
+
+En pahalı yeri bu. O kanal `googletagmanager` · `google-analytics` · `posthog`
+gibi adları arıyor — ve bir analitik betiği neredeyse her zaman **URL olarak**
+geliyor, yani aranan ad çift eğikten **SONRA** duruyor:
+
+```html
+<script src="https://www.googletagmanager.com/gtag/js?id=G-X" />
+                    ^^ burada kesiliyordu
+```
+
+Yani "üçüncü taraf ölçümleme: 0" sonucu **en olası sızıntı biçimi için
+imkânsızdı** — bulamayacağı bir şeyi bulamadığını raporluyordu.
+
+#### A/B: tek fark değerin URL olması
+
+İki tohum birebir aynı, yalnızca dize URL ya da değil:
+
+| tohum satırı | kalıcı depolama | ölçümleme |
+|---|---|---|
+| `const r = "https://ornek.example/k"; localStorage.setItem(…)` | **0** | **0** |
+| `const r = "kilavuz"; localStorage.setItem(…)` | **1** | **1** |
+
+Düzeltmeden sonra ilk satır da **1 / 1**.
+
+**Negatif kontroller — hiçbir yeni yanlış pozitif yok:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `sizinti-denetim` gerçek depo (271 araç · 541 dosya) | 0·0·0 · dolaylı 6 · ölçümleme 0 · ToolShare tamam | **birebir aynı** |
+| `sizinti-denetim --kontrol` | geçiyor | geçiyor (3/3 kanal · pozitif 0 · dolaylı 1 · ToolShare yakalandı) |
+| `ilan-render-denetim` gerçek depo | 4 şema sapması | **4** |
+| `yorum-korlugu-denetim` (meta test) | 15/15 temiz | **15/15 temiz** |
+
+**Aktarılabilir kural: yorum ayıklayıcısı yazarken çift eğiğin ÖNÜNDEKİ
+karaktere bak.** `:` `"` `'` `` ` `` `\` varsa o bir yorum değil. Bu depoda
+"0 kusur ile 0 ölçüm aynı görünür" kuralı vardı; buradaki hâli daha sinsi —
+**ölçüm YAPILIYOR, ölçülen metin sakatlanıyor** ve rapor kendinden emin bir
+"temiz" basıyor.
+
+### `backendBase()` TEK KAYNAK DİYORDU, BİR CANLI UÇ ATLIYORDU — ve ayrışma ZATEN olmuştu
+
+Yukarıdaki düzeltmenin açtığı 4 bulgu karara bağlandı:
+
+| yer | verdikt |
+|---|---|
+| `lib/backend.ts` | **tek kaynağın kendisi** |
+| `lib/site.ts` | **doğru** — üç basamaklı merdivenin son çaresi; ortadaki basamak (`VERCEL_PROJECT_PRODUCTION_URL`) belgede kayıtlı canlı site haritası kusurunu zaten kapatmış |
+| `app/api/programs/routes.ts` | **ölü** — çoğul dosya adı, rotaya alınmıyor (ölçüldü: `/api/programs` → **404**) |
+| **`app/api/programs/[...path]/route.ts`** | **CANLI ve yardımcıyı ATLIYOR** |
+
+Sayıldı: **34 uç `backendBase()` kullanıyor, 3'ü doğrudan env okuyor** —
+ikisi ölü kodda, biri canlı.
+
+Ve iki gerçeklik **zaten ayrışmıştı**: yardımcı `http://127.0.0.1:4000`,
+proxy `http://localhost:4000` diyordu.
+
+#### BEKLENTİM ÖLÇÜMLE ÇÜRÜDÜ — `localhost` ile `127.0.0.1` burada aynı
+
+Node 17'den beri DNS sonuçları yeniden sıralanmıyor, yani `localhost` IPv6'ya
+çözülüp yalnızca IPv4 dinleyen bir sunucuda düşebilir. Bunu **iddia etmek
+yerine ölçtüm** — IPv4-only bir dinleyici kurulup iki adres de denendi:
+
+| ölçüt | sonuç |
+|---|---|
+| `localhost` çözümü | **`::1` (IPv6) önce**, sonra `127.0.0.1` |
+| `http://127.0.0.1:<port>/` | BAŞARILI |
+| **`http://localhost:<port>/`** | **BAŞARILI** — undici IPv4'e düşüyor |
+
+Yani bugünkü bedeli **sıfır**. Değişiklik bir kusur düzeltmesi DEĞİL,
+`KOMPANZASYON_SABIT` ve `steroid-dose` turlarındaki gibi **ayrışma imkânının
+kaldırılması** — ama burada ayrışma kuramsal değil, iki farklı dize hâlinde
+kaynakta duruyordu.
+
+**Ölü `routes.ts`e DOKUNULMADI:** belgedeki kural gereği ölü kodu
+"düzeltmek" bazen onu diriltmektir; üstelik ölçüm sonrası da **404**.
+
+**Doğrulama — davranış değişmedi:**
+
+| ölçüt | sonuç |
+|---|---|
+| canlı bypass | **1 → 0** |
+| `/api/programs/deneme` | **503** · `{"ok":false,"reason":"backend-unavailable"}` — değişmedi |
+| `/api/programs` (ölü dosya) | **404** — hâlâ ölü |
+| **negatif** — kardeş vekil uç (`/api/user/me`) | 503, aynı şekil |
+| **negatif** — `/` · `/tools/bmi` · `/topics` | 200 · 200 · 200 |
+| kapılar | lint · typecheck · build (636/636) |
+| satır sonu | üç dosya da kendi biçimini korudu (CRLF · LF · CRLF) |
+
+#### Bu turda kayıtlı iki tuzak yeniden ısırdı
+
+- **Yorum metnine desen yazmak blok yorumu erken kapattı.** Ölçüt betiğinin
+  yorumuna `çift eğik + [^\n]*` deseni yazıldı ve içindeki `*/` dizisi JSDoc'u
+  orada bitirdi (`SyntaxError`). Belgede `**5 lb**/inç` biçiminde zaten
+  kayıtlı — **tuzağı ANLATAN cümle tuzağa düştü.** Çare deseni düz metinle
+  tarif etmek.
+- **`python - <<'PY'` bu ortamda yok** ve stdin'de asılıyor; bu oturumda
+  dördüncü kez. Kural sertleşiyor: **yedek olarak bile yazma.**

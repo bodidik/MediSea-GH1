@@ -92,9 +92,16 @@ function jsonGez(dizin, cb) {
   }
 }
 
-/** Yorumları BOŞLUKLA doldur (satır numarası korunsun; belgede kayıtlı kural). */
+/**
+ * Yorumları BOŞLUKLA doldur (satır numarası korunsun; belgede kayıtlı kural).
+ *
+ * Çift eğiğin ÖNÜNDEKİ karakter şartı olmadan bu maske bir URL'nin içindeki
+ * çift eğiği de yorum sanıyor ve satırın geri kalanını siliyor — yani aynı
+ * satırda URL'den SONRA gelen her alan okuması görünmez oluyor. Kardeş
+ * denetimde (`sizinti-denetim`) bedeli ölçüldü ve gerçek bir körlüktü.
+ */
 function yorumSil(src) {
-  let s = src.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length));
+  let s = src.replace(/(^|[^:"'`\\])\/\/[^\n]*/g, (m, o) => o + ' '.repeat(m.length - o.length));
   s = s.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '));
   return s;
 }

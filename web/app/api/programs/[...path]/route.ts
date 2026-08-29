@@ -1,8 +1,18 @@
 // FILE: web/app/api/programs/[...path]/route.ts
 import type { NextRequest } from "next/server";
+import { backendBase } from "@/lib/backend";
 
-const BACKEND =
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
+/**
+ * Arka uç adresi TEK KAYNAKTAN geliyor: `lib/backend.ts`.
+ *
+ * Burası kendi kopyasını tutuyordu ve iki gerçeklik ZATEN ayrışmıştı:
+ * yardımcı `http://127.0.0.1:4000`, burası `http://localhost:4000` diyordu.
+ * Ölçüldü — bu Node sürümünde ikisi de bağlanıyor (`localhost` önce `::1`
+ * çözülüyor ama undici IPv4'e düşüyor), yani bugünkü bedeli SIFIR. Kaldırılan
+ * şey davranış değil, ayrışma imkânı: 34 uç yardımcıyı kullanıyor, yalnızca
+ * bu canlı uç atlıyordu.
+ */
+const BACKEND = backendBase();
 
 /**
  * Ortak proxy işlevi: tüm HTTP metodları buradan geçer
