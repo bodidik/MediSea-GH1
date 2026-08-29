@@ -25355,3 +25355,119 @@ yolu CSS yorumuna yazıldı: içerik JSON'larındaki `class="..."` jetonlarında
 liste bir İDDİADIR — "kapsanması gereken her yüzey burada".** Bu depoda
 "ilan mı gerçek mi" sınıfı veri ve arayüz tarafında defalarca işledi; CSS
 tarafında ilk kez ölçüldü ve orada da bayatlamış çıktı.
+
+### `public/` HİÇ ÖLÇÜLMEMİŞTİ — orada kabuk DIŞINDA yayımlanmış bir slayt destesi duruyor
+
+Yeni eksen: **`web/public/` altında ne var, kime ulaşıyor, kim bağlanıyor?**
+Uygulamanın bütün rotaları tur tur ölçüldü; `public/` statik olarak sunulduğu
+ve Next'in rota tablosunda hiç görünmediği için tarama dışında kalmıştı.
+
+Envanter küçük ama tamamı ölçülmemiş: **4 dosya, 1.5 MB.**
+
+| dosya | boyut | kaynakta atıf |
+|---|---|---|
+| `slides/aml-patogenez.html` | 45 KB | **0** |
+| `images/romatoloji/SLE/SLE-malar-rush.jpg` | **1.4 MB** | **0** |
+| `images/romatoloji/SLE/membranöz-nefrit-SLE.jpg` | 18 KB | 0 |
+| `images/gastroenteroloji/akut-pankreatit/safratasi2.jpg` | 46 KB | 0 |
+
+Dördü de **canlıda 200 dönüyor** ve dördüne de uygulamadan hiçbir bağlantı
+yok. (İçerikte `<img>` sayısı **0** — bu belgede zaten kayıtlı, yani üç
+görsel hiçbir konuya bağlı değil.)
+
+#### Slayt destesi: 11 slaytlık, premium markalı, kapısız ve ORPHAN
+
+`/slides/aml-patogenez.html` başlığı **"AML Patogenezi — MediSea YDUS"**,
+ilk slaytta **"Hematoloji · YDUS Hazırlık"** etiketi var ve her slaytın alt
+bilgisinde "MediSea YDUS" yazıyor — yani ücretli ürünün adıyla markalanmış
+11 slaytlık, "uzman düzey" bir anlatım.
+
+**Kopya DEĞİL — ölçüldü:** 5-kelimelik parmak izi karşılaştırmasında 622
+içerik dosyasıyla ortak dizi sayısı **1** (tek eşleşme, `%0.1` Jaccard).
+Yani premium bir konunun kopyası değil, ayrı yazılmış özgün materyal.
+
+Yayın durumu ölçüldü:
+
+| ölçüt | sonuç |
+|---|---|
+| HTTP | **200**, `text/html` |
+| `robots` metası | **YOK** |
+| `robots.txt` yasağı | **YOK** (`/slides` hiçbir kalıba düşmüyor) |
+| site haritasında | **yok** |
+| gelen iç bağlantı | **0** |
+| canonical · `og:` etiketi | yok · **0** |
+
+Yani hem **taranabilir/indekslenebilir** hem **yetim**: arama motoru onu
+bulabilir, ama sitenin hiçbir yerinden ulaşılamıyor.
+
+#### İki ölçülmüş kusur — ikisi de gezinme/etkileşim, içerik değil
+
+**1) ÇIKMAZ SOKAK — sayfada bağlantı sayısı SIFIR.** Aramadan ya da
+paylaşılan bir bağlantıdan gelen okuyucunun siteye dönmesinin hiçbir yolu
+yok. Bu depoda kayıtlı kural: *"Çıkış yolu ver. Her kartta geri dönülecek
+bir bağlantı olsun; yoksa kullanıcı çıkmazda kalır."* — `/giris`, `/kayit`,
+`/profile`, premium giriş, araç hub'ı ve `global-error` için tek tek
+uygulanmıştı; `public/` altındaki bu sayfa süpürmelerin hiçbirine girmemişti.
+
+**2) GLOBAL KISAYOL ODAKTAKİ DÜĞMEYİ YUTUYOR — üstelik TERSİNİ yapıyor.**
+`keydown` işleyicisi Space'i koşulsuz yakalayıp `e.preventDefault()` ile
+ileri gidiyordu. Canlıda ölçüldü:
+
+| durum | önce |
+|---|---|
+| **"←" (geri) düğmesi odakta, Space** | **3 / 11 → 4 / 11 — İLERİ GİTTİ** |
+
+Düğmenin üstünde "geri" yazıyor, klavye "ileri" yapıyordu. Bu, belgede
+kayıtlı sınıfın (*"Global klavye kısayolları odaktaki ögeyi yutmamalı"*) en
+kötü biçimi: yutmakla kalmıyor, **zıt eylemi** çalıştırıyor.
+
+#### Çare — ikisi de kabuk/etkileşim düzeyinde, tek bir klinik satıra dokunulmadı
+
+- `#nav` çubuğuna **"MediSea"** bağlantısı (`href="/"`), destenin kendi
+  renk tokenlarıyla; `focus-visible` halkası var.
+- `keydown` işleyicisi `odakKontrolde(e)` ile kapılandı — Space yalnızca
+  odak `BUTTON/A/INPUT/TEXTAREA/SELECT` ya da `contentEditable` DEĞİLKEN
+  kısayol sayılıyor. Kural uygulamanın kendi yardımcısından
+  (`app/lib/klavye.ts` → `kisayolSusmali`) alındı; dosya statik olduğu için
+  içe aktaramıyor, kural birebir tekrarlandı ve gerekçesi yorumda yazılı.
+- İki düğmeye `aria-label` (`Önceki slayt` / `Sonraki slayt`) — adları
+  yalnızca `←`/`→` glifiydi ve belgede kayıtlı *"ikonlu düğmede içerik ad
+  olur, glif ad sayılmaz"* kuralına takılıyordu.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| çıkış bağlantısı | **0** | **1** · `href="/"` · 63×30 · kontrast **11.28** |
+| "←" odakta + Space | **3 → 4 (ileri)** | **3 → 3 — kısayol yutuldu** |
+| **negatif** — BODY odakta + Space | ileri | **ileri (kısayol yaşıyor)** |
+| **negatif** — ← / → ok tuşları | çalışıyor | **çalışıyor** (4→3, 3→4) |
+| **negatif** — düğme tıklaması | çalışıyor | **çalışıyor** (4→3→4) |
+| **negatif** — link odakta + Space | — | slayt **değişmedi** |
+| dokunma hedefi | 30×30 | link 63×30 · düğme 30×30 — **eşik 24 sağlanıyor** |
+
+Gezinme çubuğu genişliği **257 px** (içeriğe göre boyutlanıyor, ortalanmış),
+yani 320 px'lik ekranda da sığıyor. **Kapsam notu:** bu ortamda
+`resize_window` tutarsız değer veriyor (`clientWidth` 375 ama `innerWidth`
+602) ve destede `body{overflow:hidden}` olduğu için kaydırma denemesi de
+geçersiz; ölçüm doğrudan geometriyle yapıldı, "375 px'te ekran görüntüsü
+alındı" DENMİYOR.
+
+Kapılar: lint · build 637/637.
+
+#### DEĞİŞTİRİLMEYEN — ölçüldü, karar içerik/ürün sahibinin
+
+- **Deste indekslenebilir durumda.** `noindex` eklemek ya da `robots.ts`e
+  `Disallow: /slides` koymak bir YAYIN kararı: ücretli ürünün adıyla
+  markalanmış bir materyalin herkese açık kalması istenmiş de olabilir,
+  unutulmuş da. Çıkış bağlantısı iki senaryoda da doğru; indeksleme kararı
+  değil. Aynı şekilde `og:` etiketi de eklenmedi — paylaşılan bağlantı bugün
+  kartsız görünüyor.
+- **Üç görsel (1.46 MB) ulaşılmıyor.** Silmek içerik kararı; birini bir konuya
+  bağlamak da öyle. `SLE-malar-rush.jpg` tek başına **1.4 MB** ve hiçbir yerde
+  kullanılmıyor.
+
+**Aktarılabilir kural: rota tablosunda görünmeyen ama SUNULAN her şeyi de
+say.** Bu depoda 130 araç, 423 konu ve 11 premium rotası tek tek ölçüldü;
+`public/` altındaki dört dosya hiçbir taramaya girmedi çünkü hiçbiri bir
+rota değil. Sunucunun 200 döndürdüğü her adres bir yüzeydir.

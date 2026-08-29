@@ -15,6 +15,14 @@ body{font-family:system-ui,-apple-system,sans-serif;background:#fff;overflow:hid
 #counter{font-size:12px;font-weight:600;color:#1a3a6b;min-width:52px;text-align:center}
 .nbtn{background:none;border:.5px solid #b8cfe8;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:14px;color:#1a3a6b;display:flex;align-items:center;justify-content:center}
 .nbtn:hover{background:#f0f7ff}
+/* Siteye donus. Bu dosya public/ altinda duruyor ve uygulama kabugunun
+   DISINDA: header, alt bilgi, gezinme yok. Olculdu -> sayfada baglanti
+   sayisi SIFIRDI; arama sonucundan ya da paylasilan bir baglantidan gelen
+   okuyucunun siteye donmesinin hicbir yolu yoktu. */
+.homelink{font-size:11px;font-weight:600;color:#1a3a6b;text-decoration:none;padding:.35rem .6rem;border:.5px solid #b8cfe8;border-radius:50px;display:flex;align-items:center;min-height:30px;white-space:nowrap}
+.homelink:hover{background:#f0f7ff}
+.homelink:focus-visible{outline:2px solid #1d4ed8;outline-offset:2px}
+.nav-ayrac{width:.5px;height:18px;background:#d0e4f5}
 
 /* Layout */
 .wrap{max-width:1100px;margin:0 auto;width:100%;padding:2.5rem 4rem;flex:1;display:flex;flex-direction:column;justify-content:center}
@@ -734,9 +742,11 @@ ol.num li::before{content:counter(n);position:absolute;left:0;width:20px;height:
 </div><!-- /slideshow -->
 
 <div id="nav">
-  <button class="nbtn" id="p">←</button>
+  <a class="homelink" href="/">MediSea</a>
+  <span class="nav-ayrac"></span>
+  <button class="nbtn" id="p" aria-label="Önceki slayt">←</button>
   <span id="counter">1 / 11</span>
-  <button class="nbtn" id="n">→</button>
+  <button class="nbtn" id="n" aria-label="Sonraki slayt">→</button>
 </div>
 
 <script>
@@ -755,7 +765,20 @@ function show(i) {
 document.getElementById('n').onclick = () => show(cur + 1);
 document.getElementById('p').onclick = () => show(cur - 1);
 
+// Global kisayol odaktaki ogeyi YUTMAMALI. Olculdu: "←" dugmesi odaktayken
+// Space basmak slaytu ILERI goturuyordu -- dugmenin yazdiginin tam tersi.
+// Uygulamanin kendi yardimcisi (app/lib/klavye.ts -> kisayolSusmali) ayni
+// kurali uyguluyor; bu dosya statik oldugu icin ondan ice aktaramiyor,
+// kural burada birebir tekrarlaniyor.
+function odakKontrolde(e) {
+  const el = e.target;
+  if (!el || !el.tagName) return false;
+  if (el.isContentEditable) return true;
+  return ['BUTTON', 'A', 'INPUT', 'TEXTAREA', 'SELECT'].includes(el.tagName);
+}
+
 document.addEventListener('keydown', e => {
+  if (e.key === ' ' && odakKontrolde(e)) return;   // Space dugmenin/baglantinin isi
   if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); show(cur + 1); }
   if (e.key === 'ArrowLeft') show(cur - 1);
 });
