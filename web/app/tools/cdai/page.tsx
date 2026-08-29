@@ -44,11 +44,18 @@ export default function CdaiPage() {
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };
+  /*
+    ALAN LİSTESİ TEK KAYNAK.
+    Bir dönem İKİ liste vardı: burada geçerlilik (ham/ad/alt/ust), aşağıda
+    render (etiket/value/set/ph/max). Tavan sayıları (28/28/10/10) ikisinde
+    de elle yazılıydı — bu depoda tur tur avlanan "iki gerçeklik" şekli.
+    Şimdi girdi, sebep kartı ve `aria-invalid` aynı diziden besleniyor.
+  */
   const ALANLAR = [
-    { ham: tjc, ad: "TJC", alt: 0, ust: 28 },
-    { ham: sjc, ad: "SJC", alt: 0, ust: 28 },
-    { ham: pga, ad: "PGA", alt: 0, ust: 10 },
-    { ham: ega, ad: "EGA", alt: 0, ust: 10 },
+    { ham: tjc, set: setTjc, ad: "TJC", etiket: "TJC — Hassas Eklem Sayısı", alt: 0, ust: 28 },
+    { ham: sjc, set: setSjc, ad: "SJC", etiket: "SJC — Şiş Eklem Sayısı", alt: 0, ust: 28 },
+    { ham: pga, set: setPga, ad: "PGA", etiket: "PGA — Hasta Genel Değerlendirme", alt: 0, ust: 10, birim: "cm VAS" },
+    { ham: ega, set: setEga, ad: "EGA", etiket: "EGA — Hekim Genel Değerlendirme", alt: 0, ust: 10, birim: "cm VAS" },
   ];
   const hasResult = ALANLAR.every((a) => araliktaMi(a.ham, a.alt, a.ust));
   const sorunlu = ALANLAR.filter((a) => a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust));
@@ -81,21 +88,26 @@ export default function CdaiPage() {
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Değerlendirme (Max: 28+28+10+10 = 76)</p>
-          {[
-            { label: "TJC — Hassas Eklem Sayısı (0–28)", value: tjc, set: setTjc, ph: "0–28", max: 28 },
-            { label: "SJC — Şiş Eklem Sayısı (0–28)", value: sjc, set: setSjc, ph: "0–28", max: 28 },
-            { label: "PGA — Hasta Genel Değerlendirme (0–10 cm VAS)", value: pga, set: setPga, ph: "0–10", max: 10 },
-            { label: "EGA — Hekim Genel Değerlendirme (0–10 cm VAS)", value: ega, set: setEga, ph: "0–10", max: 10 },
-          ].map(({ label, value, set, ph, max }) => (
-            <label key={label} className="flex flex-col gap-2">
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-              <div className="flex gap-3 items-center">
-                <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-                  className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
-                <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest w-16 text-right">max {max}</span>
-              </div>
-            </label>
-          ))}
+          {ALANLAR.map((a) => {
+            /* aria-invalid YALNIZCA dolu ama geçersiz alanda. Boş alan
+               "geçersiz" değil, "henüz girilmemiş" — ikisini tek bayrağa
+               indirmek her açılışta dört alanı hatalı ilan ederdi. */
+            const gecersiz = a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust);
+            return (
+              <label key={a.ad} className="flex flex-col gap-2">
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">
+                  {a.etiket} ({a.alt}–{a.ust}{a.birim ? ` ${a.birim}` : ""})
+                </span>
+                <div className="flex gap-3 items-center">
+                  <input type="text" inputMode="decimal" value={a.ham}
+                    onChange={e => a.set(e.target.value)} placeholder={`${a.alt}–${a.ust}`}
+                    aria-invalid={gecersiz ? true : undefined}
+                    className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+                  <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest w-16 text-right">max {a.ust}</span>
+                </div>
+              </label>
+            );
+          })}
 
           {hasResult && (
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">

@@ -46,12 +46,15 @@ export default function DapsaPage() {
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };
+  /* ALAN LİSTESİ TEK KAYNAK — bkz. cdai: tavan sayıları bir dönem hem burada
+     hem render dizisinde elle yazılıydı. Girdi, sebep kartı ve `aria-invalid`
+     artık aynı diziden besleniyor. */
   const ALANLAR = [
-    { ham: tjc, ad: "TJC", alt: 0, ust: 68 },
-    { ham: sjc, ad: "SJC", alt: 0, ust: 66 },
-    { ham: pain, ad: "Ağrı VAS", alt: 0, ust: 10 },
-    { ham: pga, ad: "PGA", alt: 0, ust: 10 },
-    { ham: crp, ad: "CRP", alt: 0, ust: 50 },
+    { ham: tjc, set: setTjc, ad: "TJC", etiket: "TJC — Hassas Eklem Sayısı", alt: 0, ust: 68, ph: "0–68" },
+    { ham: sjc, set: setSjc, ad: "SJC", etiket: "SJC — Şiş Eklem Sayısı", alt: 0, ust: 66, ph: "0–66" },
+    { ham: pain, set: setPain, ad: "Ağrı VAS", etiket: "Hasta Ağrı Değerlendirme (0–10 cm VAS)", alt: 0, ust: 10, ph: "0–10" },
+    { ham: pga, set: setPga, ad: "PGA", etiket: "PGA — Hasta Genel Değerlendirme (0–10 cm VAS)", alt: 0, ust: 10, ph: "0–10" },
+    { ham: crp, set: setCrp, ad: "CRP", etiket: "CRP (mg/dL)", alt: 0, ust: 50, ph: "ör. 0.8" },
   ];
   const hasResult = ALANLAR.every((a) => araliktaMi(a.ham, a.alt, a.ust));
   const sorunlu = ALANLAR.filter((a) => a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust));
@@ -84,19 +87,20 @@ export default function DapsaPage() {
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">DAPSA = TJC + SJC + Ağrı + PGA + CRP</p>
-          {[
-            { label: "TJC — Hassas Eklem Sayısı (0–68)", value: tjc, set: setTjc, ph: "0–68" },
-            { label: "SJC — Şiş Eklem Sayısı (0–66)", value: sjc, set: setSjc, ph: "0–66" },
-            { label: "Hasta Ağrı Değerlendirme (0–10 cm VAS)", value: pain, set: setPain, ph: "0–10" },
-            { label: "PGA — Hasta Genel Değerlendirme (0–10 cm VAS)", value: pga, set: setPga, ph: "0–10" },
-            { label: "CRP (mg/dL)", value: crp, set: setCrp, ph: "ör. 0.8" },
-          ].map(({ label, value, set, ph }) => (
-            <label key={label} className="flex flex-col gap-2">
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-              <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-                className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
-            </label>
-          ))}
+          {ALANLAR.map((a) => {
+            /* aria-invalid YALNIZCA dolu ama geçersiz alanda: boş alan
+               "geçersiz" değil "henüz girilmemiş". */
+            const gecersiz = a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust);
+            return (
+              <label key={a.ad} className="flex flex-col gap-2">
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{a.etiket}</span>
+                <input type="text" inputMode="decimal" value={a.ham}
+                  onChange={e => a.set(e.target.value)} placeholder={a.ph}
+                  aria-invalid={gecersiz ? true : undefined}
+                  className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+              </label>
+            );
+          })}
 
           {hasResult && (
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">

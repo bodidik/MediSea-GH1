@@ -22535,3 +22535,95 @@ kutusu sonuç getirmiyor. Boş bir liste yanlış bir sayı kadar yanıltıcı d
 — ve o yüzeylerin boş durum metinleri zaten "henüz kayıt yok" diyor, ki
 JS'siz durumda bu **yanlış sebep** olurdu. Ölçüldü, kapsamı yazıldı,
 bu turda YAPILMADI.
+
+### KURAL BİR YÜZEYDE UYGULANIP KLİNİK ALANLARA HİÇ SÜPÜRÜLMEMİŞ — `aria-invalid`
+
+Belgede yazılı kural: *"Hata çıkıyorsa alana `aria-invalid`, mesaj kutusuna
+`role="alert"`."* Kural `/giris` ve `/kayit` için uygulanmış. Araç tarafı hiç
+ölçülmemişti:
+
+| ölçüt | değer |
+|---|---|
+| `aria-invalid` kullanan dosya (tüm `app/`) | **2** — `giris` · `kayit` |
+| **130 araçta `aria-invalid`** | **0** |
+| `role="alert"` sebep kartı taşıyan araç | **21** |
+
+Yani bu oturumda 21 araca "sessiz boşluk yerine sebep" kartı eklendi ve
+kartlar hangi alanın sorunlu olduğunu ADIYLA söylüyor — ama **alanın kendisi
+hiçbir şey söylemiyordu**. Ekran okuyucuyla çalışan biri kutunun içindeyken
+onun geçersiz olduğunu duymuyor; bilgi yalnızca sayfanın başka bir yerindeki
+kartta.
+
+#### Kapsam ölçüldü, tahmin edilmedi: per-alan geçerliliği OLAN araçlar
+
+`aria-invalid`i mekanik olarak 130 araca dağıtmak yanlış olurdu — çoğu araç
+alan başına geçerlilik HESAPLAMIYOR. Ölçüt: sayfada alan başına bir makullük
+bayrağı var mı?
+
+| şekil | araç |
+|---|---|
+| `ALANLAR` dizisi + `sorunlu` süzgeci | `cdai` · `dapsa` · `sdai` |
+| adlandırılmış bayrak (`boyOk`, `albOk`, `preOk`…) | `bmi` · `gnri` · `ktv` |
+| **kapsam** | **6 araç, 22 alan** |
+
+Kalanı "temiz" DEĞİL: onlarda alan başına bayrak yok, eklemek her aracın
+kendi hesabına dokunmak demek. Ölçüldü, kapsamı yazıldı.
+
+#### Yan bulgu: üç araç ALAN LİSTESİNİ İKİ KEZ tutuyordu
+
+`cdai`/`dapsa`/`sdai`de iki paralel dizi vardı — biri geçerlilik için
+(`ham`/`ad`/`alt`/`ust`), biri render için (`label`/`value`/`set`/`ph`/`max`).
+Tavan sayıları (28/28/10/10 · 68/66/10/10/50) **ikisinde de elle yazılıydı**;
+bu depoda tur tur avlanan **"iki gerçeklik"** şeklinin ta kendisi.
+
+Diziler birleştirildi: girdi, sebep kartı ve `aria-invalid` artık **aynı
+kaynaktan** besleniyor. Görünür etiketler ve aralık metinleri de o diziden
+türüyor.
+
+#### Anlambilim: BOŞ alan "geçersiz" DEĞİL
+
+`aria-invalid` yalnızca **dolu ama aralık dışı / sayı değil** olan alanda
+basılıyor. İkisini tek bayrağa indirmek her açılışta bütün alanları hatalı
+ilan ederdi — `/giris`teki kalıp da aynı (`hata ? true : undefined`).
+
+#### Doğrulama — 6 araç, gerçek tarayıcı, her ölçümde GİRDİ de geri okundu
+
+| araç | girdi | `aria-invalid` | sebep kartı |
+|---|---|---|---|
+| `cdai` | 5 / **280** / 4 / 4 | **yalnız SJC** | "SJC (0–28)" |
+| `dapsa` | 3 / **660** / 2 / 2 / 0.5 | **yalnız SJC** | 1 kart |
+| `sdai` | 3 / 2 / 2 / 2 / **70** | **yalnız CRP** | "CRP (0–50)" |
+| `bmi` | **1700** / 70 | **yalnız boy** | "boy (50–250 cm)" |
+| `gnri` | 3.6 / 55 / **1700** | **yalnız boy** | "boy (50–250 cm)" |
+| `ktv` | 85 / 22 / **9999** / 2.5 / 70 | **yalnız süre** | makul aralık listesi |
+
+**Negatif kontroller — hepsi belgede KAYITLI değerlerle:**
+
+| ölçüt | sonuç |
+|---|---|
+| `cdai` 5/3/4/4 | `aria-invalid` **0** · **CDAI 16 · ORTA AKTİVİTE** |
+| `dapsa` 3/2/2/2/0.5 | 0 · **DAPSA 9.5 · DÜŞÜK AKTİVİTE** |
+| `sdai` 3/2/2/2/10 | 0 · **SDAI 19 · ORTA AKTİVİTE** |
+| `bmi` 170/70 | 0 · **NORMAL** |
+| `gnri` 3.6/55/165 | 0 · **ORTA RİSK** (erkek dalı, belgede 91.0) |
+| `ktv` 60/20/240/2/70 | 0 · **HEMODİYALİZ YETERLİLİĞİ SAĞLANDI** |
+| **BOŞ form** (`cdai`) | `aria-invalid` **0** · uyarı **0** · sonuç yok |
+
+Son satır kritik: boş alanı hatalı ilan etmek, düzeltmenin kendi açacağı
+kusur olurdu.
+
+İlk üç satır ayrıca **birleştirmenin aritmetiği bozmadığının** kanıtı: üç
+skor da belgede kayıtlı değerle birebir. Bir listeyi tekleştirirken "sonuç
+aynı kaldı" tek başına yetmez — SAYIYI oku.
+
+Görünür etiketler de değişmedi ("TJC — Hassas Eklem Sayısı (0–28)" gibi):
+aralık metni artık `alt`/`ust` alanlarından türüyor, yani metin ile kapı bir
+daha ayrışamaz.
+
+#### ⚠ `python - <<'PY'` bu oturumda DÖRDÜNCÜ kez asıldı — yedek olarak yazıldığı için
+
+Komut `python - <<'PY' || node -e "…"` biçiminde yazıldı; bu ortamda `python`
+hızlı düşmüyor, **iki dakika bloke ediyor** ve heredoc geri kalan satırları
+yutuyor. Belgede kayıtlı kural (*"yedek olarak bile yazma"*) bu turda yine
+çiğnendi. Yama Write ile ayrı bir betiğe alınıp çalıştırıldı; betik ayrıca
+çapanın dosyada **benzersiz** olduğunu da doğruluyor.

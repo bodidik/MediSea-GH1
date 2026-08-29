@@ -10,11 +10,15 @@ import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
  * yeni bir bilesen kimligi olusur, React <input>u sokup yeniden takar ve
  * kullanici her tus vurusunda odagi kaybeder.
  */
-const Input = ({ label, value, set, ph, unit }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string }) => (
+/* `ok` sayfanın kendi per-alan makullük bayrağını taşıyor; geçerlilik ikinci
+   kez YAZILMIYOR. aria-invalid YALNIZCA dolu ama makul olmayan alanda —
+   boş alan "geçersiz" değil "henüz girilmemiş". */
+const Input = ({ label, value, set, ph, unit, ok }: { label: string; value: string; set: (v: string) => void; ph: string; unit: string; ok?: boolean }) => (
   <label className="flex flex-col gap-1.5">
     <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
     <div className="relative">
       <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
+        aria-invalid={ok === false && value.trim() !== "" ? true : undefined}
         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all pr-12" />
       <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[9px] font-black text-slate-400">{unit}</span>
     </div>
@@ -187,12 +191,12 @@ export default function KtvPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Seans Parametreleri</p>
           <div className="grid grid-cols-2 gap-4">
-            <Input label="Pre-diyaliz BUN" value={preBun}  set={setPreBun}  ph="ör. 85"  unit="mg/dL" />
-            <Input label="Post-diyaliz BUN" value={postBun} set={setPostBun} ph="ör. 22"  unit="mg/dL" />
-            <Input label="Seans Süresi" value={time}    set={setTime}    ph="ör. 240" unit="dakika" />
-            <Input label="Ultrafiltrasyon" value={uf}      set={setUf}      ph="ör. 2.5" unit="Litre" />
+            <Input label="Pre-diyaliz BUN" value={preBun}  set={setPreBun}  ph="ör. 85"  unit="mg/dL" ok={preOk} />
+            <Input label="Post-diyaliz BUN" value={postBun} set={setPostBun} ph="ör. 22"  unit="mg/dL" ok={postOk} />
+            <Input label="Seans Süresi" value={time}    set={setTime}    ph="ör. 240" unit="dakika" ok={tOk} />
+            <Input label="Ultrafiltrasyon" value={uf}      set={setUf}      ph="ör. 2.5" unit="Litre" ok={ufOk} />
           </div>
-          <Input label="Post-diyaliz Ağırlık" value={postWt} set={setPostWt} ph="ör. 70" unit="kg" />
+          <Input label="Post-diyaliz Ağırlık" value={postWt} set={setPostWt} ph="ör. 70" unit="kg" ok={wtOk} />
         </div>
 
         {/* Formül gösterimi */}

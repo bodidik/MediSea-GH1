@@ -125,12 +125,18 @@ export default function BmiPage() {
           <div className="grid grid-cols-2 gap-4">
             <label className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Boy (cm)</span>
+              {/* aria-invalid YALNIZCA dolu ama makul olmayan alanda: boş alan
+                  "geçersiz" değil "henüz girilmemiş". Sebep kartı zaten
+                  role="alert" ile hangi alanın beklendiğini söylüyor; bu,
+                  aynı bilgiyi ALANIN ÜSTÜNDE taşıyor. */}
               <input type="text" inputMode="decimal" value={height} onChange={e => setHeight(e.target.value)}
+                aria-invalid={height.trim() !== "" && !boyOk ? true : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
             </label>
             <label className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">Ağırlık (kg)</span>
               <input type="text" inputMode="decimal" value={weight} onChange={e => setWeight(e.target.value)}
+                aria-invalid={weight.trim() !== "" && !kiloOk ? true : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
             </label>
           </div>

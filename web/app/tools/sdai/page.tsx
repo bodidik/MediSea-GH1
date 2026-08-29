@@ -46,14 +46,17 @@ export default function SdaiPage() {
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };
+  /* ALAN LİSTESİ TEK KAYNAK — bkz. cdai: tavan sayıları bir dönem hem burada
+     hem render dizisinde elle yazılıydı. Girdi, sebep kartı ve `aria-invalid`
+     artık aynı diziden besleniyor. */
   const ALANLAR = [
-    { ham: tjc, ad: "TJC", alt: 0, ust: 28 },
-    { ham: sjc, ad: "SJC", alt: 0, ust: 28 },
-    { ham: pga, ad: "PGA", alt: 0, ust: 10 },
-    { ham: ega, ad: "EGA", alt: 0, ust: 10 },
+    { ham: tjc, set: setTjc, ad: "TJC", etiket: "TJC — Hassas Eklem Sayısı (0–28)", alt: 0, ust: 28, ph: "0–28" },
+    { ham: sjc, set: setSjc, ad: "SJC", etiket: "SJC — Şiş Eklem Sayısı (0–28)", alt: 0, ust: 28, ph: "0–28" },
+    { ham: pga, set: setPga, ad: "PGA", etiket: "PGA — Hasta Genel Değerlendirme (0–10 cm VAS)", alt: 0, ust: 10, ph: "0–10" },
+    { ham: ega, set: setEga, ad: "EGA", etiket: "EGA — Hekim Genel Değerlendirme (0–10 cm VAS)", alt: 0, ust: 10, ph: "0–10" },
     /* CRP mg/dL: 50 mg/dL = 500 mg/L, kardeş araç das28'in CRP tavanıyla
        aynı yer. Sıfır MEŞRU (normal CRP) — alt sınır 0. */
-    { ham: crp, ad: "CRP", alt: 0, ust: 50 },
+    { ham: crp, set: setCrp, ad: "CRP", etiket: "CRP (mg/dL)", alt: 0, ust: 50, ph: "ör. 1.5" },
   ];
   const hasResult = ALANLAR.every((a) => araliktaMi(a.ham, a.alt, a.ust));
   const sorunlu = ALANLAR.filter((a) => a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust));
@@ -86,19 +89,20 @@ export default function SdaiPage() {
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-5">
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">SDAI = TJC + SJC + PGA + EGA + CRP (max ~86)</p>
-          {[
-            { label: "TJC — Hassas Eklem Sayısı (0–28)", value: tjc, set: setTjc, ph: "0–28" },
-            { label: "SJC — Şiş Eklem Sayısı (0–28)", value: sjc, set: setSjc, ph: "0–28" },
-            { label: "PGA — Hasta Genel Değerlendirme (0–10 cm VAS)", value: pga, set: setPga, ph: "0–10" },
-            { label: "EGA — Hekim Genel Değerlendirme (0–10 cm VAS)", value: ega, set: setEga, ph: "0–10" },
-            { label: "CRP (mg/dL)", value: crp, set: setCrp, ph: "ör. 1.5" },
-          ].map(({ label, value, set, ph }) => (
-            <label key={label} className="flex flex-col gap-2">
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-              <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
-                className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
-            </label>
-          ))}
+          {ALANLAR.map((a) => {
+            /* aria-invalid YALNIZCA dolu ama geçersiz alanda: boş alan
+               "geçersiz" değil "henüz girilmemiş". */
+            const gecersiz = a.ham.trim() !== "" && !araliktaMi(a.ham, a.alt, a.ust);
+            return (
+              <label key={a.ad} className="flex flex-col gap-2">
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{a.etiket}</span>
+                <input type="text" inputMode="decimal" value={a.ham}
+                  onChange={e => a.set(e.target.value)} placeholder={a.ph}
+                  aria-invalid={gecersiz ? true : undefined}
+                  className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
+              </label>
+            );
+          })}
           {hasResult && (
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">SDAI SKORU</span>

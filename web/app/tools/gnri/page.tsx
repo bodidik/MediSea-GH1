@@ -146,14 +146,19 @@ export default function GnriPage() {
             <p className="text-[9px] font-bold text-blue-900/80 mt-1">İdeal ağırlık (Lorentz, {sex === "m" ? "erkek" : "kadın"}): Boy(cm) − 100 − (Boy − 150)/{sex === "m" ? "4" : "2,5"}</p>
           </div>
 
+          {/* `ok` alanı, sayfanın kendi per-alan makullük bayrağını taşıyor:
+              geçerlilik ikinci kez YAZILMIYOR, aynı kaynaktan okunuyor.
+              aria-invalid YALNIZCA dolu ama makul olmayan alanda — boş alan
+              "geçersiz" değil "henüz girilmemiş". */}
           {[
-            { label: "Albumin (g/dL)", value: alb, set: setAlb, ph: "ör. 3.5", ref: "N: 3.5–5.0 g/dL" },
-            { label: "Mevcut Ağırlık (kg)", value: weight, set: setWeight, ph: "ör. 58" },
-            { label: "Boy (cm)", value: height, set: setHeight, ph: "ör. 165" },
-          ].map(({ label, value, set, ph, ref }) => (
+            { label: "Albumin (g/dL)", value: alb, set: setAlb, ph: "ör. 3.5", ref: "N: 3.5–5.0 g/dL", ok: albOk },
+            { label: "Mevcut Ağırlık (kg)", value: weight, set: setWeight, ph: "ör. 58", ok: kiloOk },
+            { label: "Boy (cm)", value: height, set: setHeight, ph: "ör. 165", ok: boyOk },
+          ].map(({ label, value, set, ph, ref, ok }) => (
             <label key={label} className="flex flex-col gap-2">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
               <input type="text" inputMode="decimal" value={value} onChange={e => set(e.target.value)} placeholder={ph}
+                aria-invalid={value.trim() !== "" && !ok ? true : undefined}
                 className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
               {ref && <span className="text-[9px] font-bold text-slate-400 pl-1">{ref}</span>}
             </label>
