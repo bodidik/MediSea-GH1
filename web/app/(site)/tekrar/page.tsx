@@ -192,6 +192,7 @@ export default function ReviewPage() {
         onBranch={setBranch}
         mode={mode}
         onMode={setMode}
+        duyuru={done > 0 ? `Oturum tamamlandı. ${done} kart çalışıldı.` : undefined}
       >
         {/* Oturum özeti — zorlanılan kartlar kaynağına geri götürür.
             Döngünün kapandığı yer burası: oku → vurgula → tekrar et → oku. */}
@@ -231,6 +232,17 @@ export default function ReviewPage() {
       onBranch={setBranch}
       mode={mode}
       onMode={setMode}
+      /* Metin iki durumu ayırt ediyor, yani her geçiş TEK duyuru üretiyor.
+         Tek istisna bilinçli: oturumda TEK kart kalmışken "Bilemedim" kartı
+         aynı yere geri koyuyor — ekranda gerçekten yeni bir şey yok, o yüzden
+         duyuru da yok. */
+      duyuru={
+        revealed
+          ? card.kind === "sketch"
+            ? "Çizim gösterildi."
+            : `Yanıt: ${card.answer}`
+          : `Kart ${idx + 1} / ${queue.length}. ${card.branch ? `${card.branch} — ` : ""}${card.title}`
+      }
     >
       {/* ilerleme */}
       <div className="mb-4 flex items-center gap-3">
@@ -244,6 +256,7 @@ export default function ReviewPage() {
           {kalan} kaldı
         </span>
       </div>
+
 
       <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
         {/* künye */}
@@ -380,6 +393,7 @@ function Shell({
   onBranch,
   mode,
   onMode,
+  duyuru,
 }: {
   children: React.ReactNode;
   stats?: ReturnType<typeof deckStats> | null;
@@ -388,9 +402,28 @@ function Shell({
   onBranch?: (b: string | null) => void;
   mode?: Mode;
   onMode?: (m: Mode) => void;
+  /** Ekran okuyucuya oturumun durumunu bildiren metin. */
+  duyuru?: string;
 }) {
   return (
     <div className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
+      {/* Oturumun geçişleri SESSİZDİ ve ölçüldü (canlı, MutationObserver):
+          "Göster" yanıtı açıyor -> 0 duyuru; derece verilince kart değişiyor
+          ve sayaç düşüyor -> 0 duyuru; son kart bitince ekran özete geçiyor
+          -> 0 duyuru. Sayfadaki tek canlı bölge başlıktaki aramaya aitti ve
+          kartın DIŞINDAYDI.
+          Ücretli tarafta aynı sınıf zaten kapalıydı: QuizEngine ve VakaEngine
+          cevaptan sonra "Doğru cevap." / "Yanlış. Doğru cevap X." diyor.
+          Ücretsiz taraftaki çalışma döngüsü — ürünün imza akışı — susuyordu.
+
+          Bölge SHELL'de duruyor, kart görünümünde değil: `status` içerik
+          değişmeden ÖNCE DOM'da olmak zorunda (`alert`ten farkı bu) ve Shell
+          hem kart hem oturum-sonu dalında render edildiği için düğüm ayakta
+          kalıyor. Kart görünümüne konsaydı oturumun BİTTİĞİ duyurulamazdı —
+          bölge tam o anda sökülüyor olurdu. */}
+      <div role="status" aria-live="polite" className="sr-only">
+        {duyuru ?? ""}
+      </div>
       <div className="mx-auto max-w-2xl">
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div className="flex items-center gap-3">

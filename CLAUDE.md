@@ -24250,3 +24250,94 @@ ekranlarda üslup seçmedi. Onlar bir kopya kararı, ölçüm değil.
 **Aktarılabilir kural: hitap tutarlılığını DOSYA değil ROTA düzeyinde ölç.**
 Dosya düzeyi ölçüm hem çok gürültülü (klinik ölçek maddeleri "resmî" çıkıyor)
 hem de asıl kusuru — aynı ekranda iki ses — göremiyor.
+
+### ÜCRETSİZ TARAFIN İMZA AKIŞI SESSİZDİ — `/tekrar` oturumu hiçbir geçişi duyurmuyordu
+
+Araçlara `SonucDuyuru` süpürüldü (71 araç), premium motorlara duyuru zaten
+vardı. Aynı ölçüt çalışma yüzeylerine hiç sürülmemişti. Kaynaktan sayıldı:
+
+| yüzey | `role="status"` | `role="alert"` | `aria-live` |
+|---|---|---|---|
+| `QuizEngine` · `VakaEngine` | 1 · 1 | 0 | 0 |
+| `FlashcardPlayer` · `PearlsViewer` · `YdusCockpit` | 2 · 2 · 3 | 0 | 1 · 1 · 0 |
+| `ReadingTools` · `NotePanel` | 0 · 2 | 6 · 4 | 1 · 0 |
+| **`/tekrar/page.tsx`** | **0** | **0** | **0** |
+
+Premium motorlar cevaptan sonra **"Doğru cevap." / "Yanlış. Doğru cevap X."**
+diyor. Ücretsiz taraftaki tekrar oturumu — ürünün imza döngüsü — susuyordu.
+
+#### CANLIDA ölçüldü: üç geçiş, sıfır duyuru
+
+Vurgular gerçek arayüzle oluşturuldu (tohumla değil — belgedeki kural), sonra
+`/tekrar` sürüldü ve bütün canlı bölgeler `MutationObserver` ile izlendi:
+
+| eylem | ekranda olan | duyuru |
+|---|---|---|
+| "Göster" | yanıt açılıyor | **0** |
+| "Bildim" | kart değişiyor, sayaç 2 → 1 | **0** |
+| son kart | ekran oturum özetine geçiyor | **0** |
+
+Sayfadaki **tek** canlı bölge başlıktaki aramaya aitti ve kartın **DIŞINDA**.
+
+#### Bölge KART GÖRÜNÜMÜNE değil SHELL'e kondu — ve sebebi ölçülebilir
+
+`status` bölgesi içerik değişmeden **ÖNCE** DOM'da olmak zorunda (`alert`ten
+farkı bu, belgede kayıtlı). Kart görünümüne konsaydı üçüncü geçiş — oturumun
+BİTTİĞİ — hiç duyurulamazdı: o anda bölge sökülüyor olurdu. `Shell` hem kart
+hem oturum-sonu dalında render edildiği için düğüm ayakta kalıyor.
+
+Metin iki durumu ayırt ediyor, yani her geçiş **tek** duyuru üretiyor:
+
+| durum | duyuru |
+|---|---|
+| yanıt kapalı | `Kart 1 / 2. Endokrinoloji — Addison Hastalığı…` |
+| yanıt açık (vurgu kartı) | `Yanıt: <vurgulanan metin>` |
+| yanıt açık (çizim kartı) | `Çizim gösterildi.` |
+| oturum bitti | `Oturum tamamlandı. 2 kart çalışıldı.` |
+
+#### Doğrulama — dört geçiş, dördü de tek duyuru
+
+| ms | duyuru |
+|---|---|
+| 8618 | `Yanıt: korteksin harabiyeti veya disfonksiyonu sonucu glukokor…` |
+| 15372 | `Kart 2 / 2. Endokrinoloji — Addison Hastalığı (Primer Adrenal Yetmezlik)` |
+| 21520 | `Yanıt: yorgunluk ve bitkinlik (%100), iştahsızlık` |
+| 27713 | **`Oturum tamamlandı. 2 kart çalışıldı.`** |
+
+Öncesi: aynı dizide **0**.
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| bölge görünür mü | **1×1 px, `clip: rect(0,0,0,0)`, `position: absolute`** — ekranda yok |
+| yatay kayma / belge genişliği | **0** / 1265 (görünüm 1280) |
+| açılışta yersiz duyuru | **yok** — bölge mount'ta dolu ama gözlemci hiç tetiklenmedi |
+| **deste boşken sayfa açılışı** | bölge **BOŞ** — "Oturum tamamlandı" yalnızca `done > 0` iken çıkıyor, her ziyarette değil |
+| tazeleme (cram) kipi | duyurular çalışıyor (3 geçiş, 3 duyuru) |
+| **tazeleme kipi takvimi bozdu mu** | **HAYIR** — `medisea:review:v1` 180 bayt, **bayt bayt aynı** |
+| oturum özeti ekranı | görünür ("2 kart çalışıldı") |
+| kapılar | lint · typecheck · build **637/637** |
+| ölçüm izi | iki origin'de de `medisea:*` **0** (yenileme sonrası doğrulandı) |
+
+Beşinci satır ayırt edici: "oturum tamamlandı" cümlesi bir OLAYA bağlı, bir
+EKRANA değil — kart çalışmadan `/tekrar`a giren kullanıcıya söylenmiyor.
+
+Yedinci satır bu değişikliğin asıl riskiydi: duyuru metni `revealed` ve `idx`
+üzerinden kuruluyor, yani derecelendirme yoluna dokunmuş olsaydı takvim
+kayardı. Kaymadı.
+
+#### Bilinçli tek sessizlik
+
+Oturumda **tek kart kalmışken** "Bilemedim" kartı aynı yere geri koyuyor:
+`idx` ve `queue.length` değişmiyor, ekranda gerçekten yeni bir şey yok, o
+yüzden duyuru da yok. Bu bir kaçak değil — içerik değişmediğinde
+`status` bölgesinin susması doğru davranış.
+
+#### Ölçüm notu: `body.innerText` artık bu bölgeyi de içeriyor
+
+`sr-only` `display:none` DEĞİL (kırpılmış ama okunur), yani
+`document.body.innerText` çıktısında **"Kart 2 / 2. Endokrinoloji — …"**
+görünüyor. Bu depoda gövde metni okuyan ölçümler bir daha yanılmasın diye
+yazıldı: `/tekrar` gövdesinde kart künyesinin İKİ kez geçmesi kusur değil,
+biri ekran okuyucu bölgesi.
