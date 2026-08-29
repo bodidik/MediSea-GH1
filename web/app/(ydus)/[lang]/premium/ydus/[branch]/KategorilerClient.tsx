@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const ROZET_STILLERI: Record<string, { arka: string; renk: string; kenar: string }> = {
@@ -36,11 +36,77 @@ interface Props {
 }
 
 export default function KategorilerClient({ kategoriler, bransRenk, lang, branch }: Props) {
+  /* İlk render SUNUCUYLA AYNI olmalı (hidrasyon): varsayılan = ilk kategori
+     açık. Adresten gelen durum aşağıdaki mount effect'inde uygulanıyor. */
   const [acik, setAcik] = useState<Record<string, boolean>>(() => {
     const ilk: Record<string, boolean> = {};
     kategoriler.forEach((k, i) => { ilk[k.id] = i === 0; });
     return ilk;
   });
+
+  /**
+   * AÇIK KATEGORİLER ADRESTE TAŞINIYOR — sebebi ölçüldü.
+   *
+   * Canlıda sürüldü (`/tr/premium/ydus/nefroloji`): 4. kategori açılıp
+   * içindeki konuya girildi ve GERİ tuşuna basıldı. Akordeon durumu
+   * `[açık, kapalı, kapalı, AÇIK]` → `[açık, kapalı, kapalı, kapalı]`
+   * oldu; görünür konu bağı 3 → 2. Yani kullanıcı az önce girdiği konuyu
+   * göremiyor ve kategoriyi yeniden açmak zorunda kalıyor.
+   *
+   * Bu, aynı oturumda `/tools` ve `/topics` arama kutularında ölçülen
+   * sınıfın üçüncü örneği: EKRANDA NE OLDUĞUNU belirleyen durum yalnızca
+   * istemcide yaşıyor, tarayıcı ise kaydırma konumunu geri yüklüyor.
+   *
+   * `useSearchParams()` KULLANILMIYOR — bu depoda ölçülmüş bir kusur,
+   * sayfayı sunucuda üretilmez hâle getiriyor. Adres bir kez ELDEN okunuyor
+   * ve `history.replaceState` ile tazeleniyor: gezinme yok, geçmiş şişmiyor,
+   * rota `●` (SSG) kalıyor.
+   *
+   * Bayrak DURUM (ref değil): adres okunmadan yazmak, okunacak değeri siler.
+   *
+   * `acik` parametresi YOKSA varsayılan geçerli; VARSA (boş olsa bile) durumu
+   * tümüyle o belirliyor — böylece "hepsi kapalı" ile "varsayılan" ayrışıyor
+   * (`URLSearchParams.get` biri için `""`, öteki için `null` döndürüyor).
+   */
+  const [adresOkundu, setAdresOkundu] = useState(false);
+
+  useEffect(() => {
+    const ham = new URLSearchParams(window.location.search).get('acik');
+    if (ham !== null) {
+      const istenen = new Set(ham.split(',').filter(Boolean));
+      /* Bozuk bağlantıda VARSAYILANA dön: parametre dolu ama hiçbir kimlik
+         tutmuyorsa (kategori yeniden adlandırılmış ya da adres manganmış)
+         kullanıcıya dört kapalı kutu göstermek yerine ilk kategori açılır.
+         `/tools`taki kardeş karar da böyle: tanınmayan kategori 130 aracın
+         tamamına düşüyor. Boş `?acik=` bundan AYRI — o "hepsi kapalı" demek
+         ve aynen uygulanıyor. */
+      const tutan = kategoriler.some((k) => istenen.has(k.id));
+      if (istenen.size === 0 || tutan) {
+        const yeni: Record<string, boolean> = {};
+        kategoriler.forEach((k) => { yeni[k.id] = istenen.has(k.id); });
+        setAcik(yeni);
+      }
+    }
+    setAdresOkundu(true);
+  }, [kategoriler]);
+
+  useEffect(() => {
+    if (!adresOkundu) return;
+    const acikIdler = kategoriler.filter((k) => acik[k.id]).map((k) => k.id);
+    const varsayilan = kategoriler.length ? [kategoriler[0].id] : [];
+    const varsayilanMi =
+      acikIdler.length === varsayilan.length && acikIdler.every((v, i) => v === varsayilan[i]);
+
+    const p = new URLSearchParams(window.location.search);
+    if (varsayilanMi) p.delete('acik');
+    else p.set('acik', acikIdler.join(','));
+
+    const q = p.toString();
+    const yeni = window.location.pathname + (q ? `?${q}` : '') + window.location.hash;
+    if (yeni !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, '', yeni);
+    }
+  }, [acik, adresOkundu, kategoriler]);
 
   const toggle = (id: string) => setAcik(prev => ({ ...prev, [id]: !prev[id] }));
 

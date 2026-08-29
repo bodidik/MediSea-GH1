@@ -23865,3 +23865,99 @@ sayfada hiç sınanmamıştı. Ölçüldü — 12 çapa tıklamasından sonra, a
 
 `suankiSorgu()` yalnızca `location.search` okuyor; hash kimliğe girmiyor.
 Girseydi her içindekiler tıklaması yeni bir not kovası açardı.
+
+### AYNI SINIFIN ÜÇÜNCÜSÜ — premium branş akordeonu geri dönüşte kapanıyordu
+
+Geçen tur arama sorgusu için kurulan ölçüt ("ekranda ne olduğunu belirleyen
+durum yalnızca istemcide yaşıyor, tarayıcı ise kaydırma konumunu geri
+yüklüyor") ücretli tarafa sürüldü.
+
+Premium branş sayfası konuları KATEGORİ AKORDEONLARI altında tutuyor ve
+varsayılan olarak yalnızca ilki açık. Canlıda ölçüldü
+(`/tr/premium/ydus/nefroloji`): 4. kategori açıldı, içindeki konuya girildi,
+GERİ tuşuna basıldı.
+
+| ölçüt | önce |
+|---|---|
+| akordeon durumu | `[açık, kapalı, kapalı, AÇIK]` → **`[açık, kapalı, kapalı, kapalı]`** |
+| görünür konu bağı | 3 → **2** |
+| az önce girilen konu | **ekranda YOK** |
+
+Yani kullanıcı okuduğu konuya dönmek için kategoriyi yeniden açmak zorunda.
+Kaydırma konumu geri yükleniyor ama gösterdiği yerde artık başka içerik var.
+
+#### Kapsam ÖLÇÜLDÜ: 9 branş, 30 kategori, tek varsayılan açık
+
+| ölçüt | değer |
+|---|---|
+| branş dosyası | 9 |
+| kategori | 30 |
+| ilan edilen konu / hazır | 57 / 40 |
+| kategori başına hazır konu | 0→5 · 1→15 · 2→6 · 3→3 · 4→1 |
+| ilk kategori DIŞINDA hazır konu taşıyan branş | **8 / 9** |
+
+Son satır kusurun büyüklüğü: dokuz branşın sekizinde, varsayılan açık
+kategorinin dışında okunabilir konu var — yani akordeon açmak istisna değil
+olağan akış.
+
+#### Çare: açık kategoriler adreste
+
+Kalıp `/tools` ve `/topics` ile aynı: `useSearchParams()` YOK (bu depoda
+ölçülmüş bir kusur, sayfayı sunucuda üretilmez yapıyor), adres bir kez ELDEN
+okunuyor ve `history.replaceState` ile tazeleniyor. Rota `●` (SSG) kalıyor,
+geçmiş şişmiyor, ilk render sunucuyla aynı.
+
+**Üç durum ayrı ayrı ele alınıyor** ve ayrımı `URLSearchParams.get`
+sağlıyor (`null` ↔ `""`):
+
+| adres | anlamı | davranış |
+|---|---|---|
+| parametre YOK | varsayılan | ilk kategori açık |
+| `?acik=` (boş) | **hepsi kapalı** | aynen uygulanıyor |
+| `?acik=a,b` | o kimlikler açık | uygulanıyor |
+| `?acik=<geçersiz>` | bozuk/bayat bağlantı | **varsayılana dönülüyor** |
+
+Sonuncusu bilerek `/tools` ile hizalı (tanınmayan kategori 130 aracın
+tamamına düşüyor): dört kapalı kutu göstermek yerine ilk kategori açılıyor.
+Ama boş `?acik=` bundan AYRI tutuluyor — o kullanıcının kendi kararı.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| nefroloji: 4. kategori aç → konu → GERİ | `[açık,kapalı,kapalı,AÇIK]` **korundu**, 3 bağ, ziyaret edilen konu **görünür** |
+| endokrinoloji (6 kategori, ÜÇÜ açık) | `[açık,·,·,·,açık,açık]` korundu, 8 bağ, ziyaret edilen görünür |
+| **negatif** — varsayılana dönünce | parametre adresten **kalkıyor** (`/tr/premium/ydus/nefroloji`) |
+| **negatif** — hepsi kapatılınca | `?acik=` yazılıyor, 4 kapalı, konu bağı 0 |
+| **negatif** — geçersiz kimlik | **varsayılan**, sayfa ayakta, hata sınırı yok |
+| **negatif** — geçmiş şişiyor mu | üç aç/kapa, `history.length` **4 → 4** |
+| **negatif** — SUNUCU HTML'i | `h1` 1 · `h2` 4 · `aria-expanded` 1 açık / 4 · konu bağı 2 · `acik=` **0** |
+| rota tablosu | `● /[lang]/premium/ydus/[branch]` · `1d` — değişmedi |
+
+Yedinci satır kritik: sunucu çıktısı birebir eskisi, yani arama motorunun ve
+JS'siz kullanıcının gördüğü şey değişmedi.
+
+#### Yan bulgu: premium okuma yüzeyinde İLERİ giden yol yok — ölçüldü, DEĞİŞTİRİLMEDİ
+
+Premium konu sayfasının bağlantı envanteri çıkarıldı: kırıntı (MediSea /
+YDUS Hazırlık / branş), içindekiler çapaları, branşa ve panoya dönüş, ve dört
+modül kartı (quiz · hızlı tekrar · inciler · vaka). **Kardeş konuya ya da
+ilgili konuya tek bir bağ yok** — oysa açık tarafta konu sayfası Alt
+Başlıklar, İleri Okuma ve 5–10 İlgili Konu sunuyor.
+
+"Sonraki konu" eklemek düşünüldü ve **veri onu desteklemedi**: 30 kategorinin
+15'inde tek hazır konu var, 5'inde hiç yok; yalnızca 10 kategoride ≥2 konu
+bulunuyor. Yani bağ çoğu sayfada hiç çizilmezdi. Ölçüldü, kapsamı yazıldı,
+yapılmadı — içerik büyüdüğünde yeniden değerlendirilebilir.
+
+#### Ölçüm notu: hangi kategoriyi açacağını VERİDEN seç
+
+İlk deneme hematolojide yapıldı ve 2. kategori ("Lenfomalar") açıldığında
+görünür konu bağı **artmadı** — o kategorinin hazır konusu YOK, konular
+`hazir:false` olduğu için bağ değil düz metin olarak çiziliyor. Ölçüm
+"akordeon çalışmıyor" gibi görünüyordu.
+
+Branş dosyaları sayılıp ilk kategori DIŞINDA hazır konusu olan branşlar
+seçilince (nefroloji, endokrinoloji) ölçüm anlamlı hâle geldi. **Bir
+etkileşimi ölçerken, o etkileşimin gözlenebilir bir çıktı ürettiği veriyi
+önce SAY.**
