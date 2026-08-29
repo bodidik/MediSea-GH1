@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "harrison-22-kc-secme-sorular",
+    "branch": "gastroenteroloji",
+    "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Karaciğer",
+    "altbaslik": "Harrison 22. Baskı karaciğer bölümlerinin metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular",
+    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 25,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Bu Bölüm Hakkında",
+      "satirlar": [
+        "Bu bölümde, Harrison's Principles of Internal Medicine 22. Baskı'nın karaciğer ve safra yolları bölümlerinin metnine doğrudan dayanan, board/YDUS tipi vaka-soru formatında sorular yer almaktadır.",
+        "Her soru; klinik vaka kökü, beş seçenekli soru gövdesi, doğru cevabın detaylı klinik muhakemesi ve her bir çeldiricinin ayrı ayrı analizini içerir. Kaynak kitaptaki ilgili bölüm ve konu başlığı her soruda ayrıca belirtilir.",
+        "Sorular branş bazlı konu anlatımlarından bağımsız olarak, doğrudan kaynak metinden seçilip Türkçeleştirilmiş ve klinik vaka formatına uyarlanmıştır."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Set 1 — Kapsanan Bölümler",
+      "satirlar": [
+        "Bölüm 348 — Karaciğer Fonksiyonunun Değerlendirilmesi: aminotransferaz paternleri, alkalen fosfataz ve izoenzim ayrımı, sentez fonksiyonu testleri ve MELD 3.0.",
+        "Bölüm 349 — Hiperbilirubinemiler: Gilbert ve Crigler-Najjar sendromları, Dubin-Johnson ve Rotor sendromları, BRIC ve PFIC alt tipleri.",
+        "Bölüm 351 — Toksik ve İlaca Bağlı Hepatit: asetaminofen, R değeri, Hy Yasası, anabolik steroidler ve otoimmün hepatit fenotipiyle giden ilaçlar.",
+        "Bölüm 353 — Alkolle İlişkili Karaciğer Hastalığı: tanı ölçütleri, Maddrey ve Lille skorları, glukokortikoid kararı, genetik risk değiştiriciler.",
+        "Bölüm 354 — MASLD ve MASH: yeni terminoloji ve MetALD, FIB-4 ve elastografi eşikleri, \"riskli MASH\" kavramı.",
+        "Bölüm 355 — Siroz ve Komplikasyonları: sirozun geri dönüşümlülüğü, viral hepatite bağlı siroz, primer biliyer kolanjit ve primer sklerozan kolanjit."
+      ]
+    }
+  ]
+}
