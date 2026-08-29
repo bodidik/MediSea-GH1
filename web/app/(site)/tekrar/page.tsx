@@ -499,7 +499,18 @@ function Shell({
               [stats.ogrenilen, "Öğrenilen"],
               [stats.toplam, "Toplam"],
             ].map(([n, l]) => (
-              <div key={l as string} className="flex-1 px-3 py-2 text-center">
+              /* px-2: 320px'te dört etiket (ÇALIŞILACAK · YENİ · ÖĞRENİLEN ·
+               * TOPLAM) `tracking-widest` ile 298px istiyor, kap 286px veriyor
+               * ve `overflow-hidden` sonuncuyu 11px KIRPIYORDU — ölçüldü,
+               * "TOPLAM" yarım görünüyordu ve kaydırılamıyordu. Yatay dolgu
+               * 12px'ten 8px'e inince içerik 266px'e düşüyor. `sm` ve üstünde
+               * eski dolgu; orada kap zaten geniş.
+               *
+               * Kardeş şeritler (ana sayfa 3 öge, Çalışma Alanım kısa
+               * etiketler) ölçüldü ve taşmıyor — kusur bu şeridin UZUN
+               * etiketlerine özgü. Etiket eklenir ya da uzatılırsa aynı
+               * kırpma sessizce geri gelir. */
+              <div key={l as string} className="flex-1 px-2 py-2 text-center sm:px-3">
                 <div className="text-base font-black leading-none text-blue-950">{n}</div>
                 <div className="mt-0.5 text-[9px] font-bold uppercase tracking-widest text-slate-400">
                   {l}

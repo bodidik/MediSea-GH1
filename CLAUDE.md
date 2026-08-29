@@ -26799,3 +26799,107 @@ Yan ölçüm — seçim çubuğunun DİKEY ekseni **temiz**: eşik `rect.top > 9
 çubuk 45px; seçim üstteyken çubuk aşağı geçiyor (t143–b189, taşma 0), yukarı
 geçtiğinde yapışkan başlıkla 20px çakışıyor ama çubuk `z-60` > başlık `z-50`
 olduğu için **örtülen düğme 0**.
+
+### METİN ARALIĞI (WCAG 1.4.12) SÜRÜLDÜ — sınıf temiz, ama tarama BAŞKA bir kırpmayı açığa çıkardı
+
+Yeni eksen: kullanıcı kendi metin aralığını dayattığında içerik kayboluyor
+mu? Ölçüt resmî yer imi değerleri: `line-height 1.5` · `letter-spacing
+0.12em` · `word-spacing 0.16em` · paragraf aralığı `2em`.
+
+#### ⚠ ÖNCE BİR BELGE KAYDI ÇÜRÜTÜLDÜ — `<style>` enjeksiyonu ARTIK ÇALIŞIYOR
+
+Belgede kayıtlıydı: *"Bu ortamda sayfaya `<style>` enjekte etmek İŞE
+YARAMIYOR… `!important` ile bile hiçbir hesaplanmış değer değişmedi."* O
+kayıt bu ekseni **ölçülemez** gösteriyordu.
+
+Ölçüldü: enjeksiyondan önce paragraf `line-height 24.75px · letter-spacing
+normal`, sonra **`22.5px · 1.8px`**. Yani kural uygulanıyor.
+
+Eski kaydın yanlış olduğu ya da o turdaki koşula özgü olduğu anlaşılamadı —
+ama **bir ölçüm yönteminin "çalışmıyor" diye kaydedilmesi, o yöntemin bir
+daha hiç denenmemesine yol açıyor.** Yöntem kayıtları da tarih taşımalı ve
+yeniden sınanmalı.
+
+Not: sitenin kendi satır yüksekliği zaten 1.65 civarında, yani 1.5 uygulamak
+onu **düşürüyor**. Kırpmayı üreten şey harf/kelime aralığı ve paragraf
+boşluğu; bunlar yalnızca artırıyor.
+
+#### Sınıf temiz — altı yüzey ölçüldü
+
+Ölçüt dört kusur biçimini birden arıyor: `overflow:hidden` altında kırpma ·
+sabit yükseklikte dikey taşma · `text-overflow: ellipsis` ile kesilme ·
+`nowrap` metnin kendi kutusundan geniş olması.
+
+| yüzey | taban | 1.4.12 uygulanınca |
+|---|---|---|
+| konu sayfası (375) | temiz | **temiz** |
+| `apache2` — 88 düğme (375) | temiz | **temiz** |
+| `/tools` hub (320) | temiz | **temiz** |
+| premium pano (320) | 1 `truncate` (zaten kayıtlı) | aynı, yeni kayıp yok |
+| seçim çubuğu (320) | 315px | **315px, 8/8 düğme ulaşılabilir** |
+
+Seçim çubuğu kayda değer: düğmeleri glif olduğu için harf aralığı onu
+genişletmiyor — yani iki tur önce eklenen ölçülmüş kenetleme burada da
+yeterli.
+
+#### AMA `/tekrar` ŞERİDİ ZATEN KIRPIYORDU — 320px'te "TOPLAM" yarım
+
+Tarama `/tekrar`da tabanda bir kırpma buldu ve **1.4.12 onu ağırlaştırdı**
+(12px → 18px). Ölçüldü (canlı, 320px):
+
+| ölçüt | değer |
+|---|---|
+| kap `clientWidth` | **286** |
+| içerik `scrollWidth` | **298** |
+| `overflow-x` | **hidden** |
+| kırpılan öge | **"1 TOPLAM"** — sağ kenarı 315, kap 304'te bitiyor |
+| kaydırılabiliyor mu | **HAYIR** |
+
+Yani dördüncü istatistik yarım görünüyor ve ulaşmanın hiçbir yolu yok.
+Kusur 1.4.12'den DEĞİL, dört uzun etiketten (`ÇALIŞILACAK` · `ÖĞRENİLEN`,
+`tracking-widest`) geliyor; metin aralığı yalnızca görünür kıldı.
+
+Mekanizma: öğeler `flex-1` ama `min-width: auto` yüzünden `min-content`
+altına inemiyorlar; taşan kısmı kap sessizce kırpıyor.
+
+#### Kopya sayıldı — kusur BU şeride özgü
+
+Aynı desen (`flex … divide-x … overflow-hidden` + sayı/etiket çiftleri)
+üç yerde:
+
+| şerit | öge | etiketler | 320px'te |
+|---|---|---|---|
+| **`/tekrar`** | 4 | ÇALIŞILACAK · YENİ · ÖĞRENİLEN · TOPLAM | **taşma 12px** |
+| `/calisma-alanim` | 4 | Sayfa · Vurgu · Not · Çizgi | taşma **0** |
+| ana sayfa | 3 | Branş · Konu · Araç | taşma **0** |
+
+Yani sorun desende değil, **uzun etiket + dört sütun** birleşiminde.
+
+#### Çare: dar ekranda yatay dolgu 12px → 8px
+
+`px-2 sm:px-3`. Dört öge × iki yan × 4px = **32px** kazanç; taban 298 → 266,
+1.4.12 altında 304 → 272 (kap 286). `sm` ve üstünde dolgu değişmiyor.
+
+Alternatifler elendi: `min-w-0` etiketi kendi hücresinde sessizce keserdi;
+`overflow-x-auto` her ziyarette bir odak durağı ekler ve dört kısa istatistik
+için kaydırma UX'i yanlış; sarma `divide-x` ayraçlarını bozuyor.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| 320px taşma | **12px**, "TOPLAM" kırpık | **0**, kırpılan öge **0** |
+| 320px + 1.4.12 | **18px** | **0** |
+| **negatif** — 1280px dolgu | 12px | **12px**, taşma 0 |
+| **negatif** — 375px | taşma 0 | taşma 0 (dolgu 8px) |
+| **negatif** — kart akışı | — | "Göster" çalışıyor, 4 derecelendirme düğmesi, **ekran dışı 0**, canlı bölge yanıtı duyuruyor |
+| **negatif** — `belgeGenisligi` | 320 | 320, yatay kayma 0 |
+| 14 denetim + lint + typecheck + build | — | hepsi geçti |
+
+#### Ölçüm notu — `innerWidth` ile `clientWidth` bu ortamda AYRIŞIYOR
+
+320px'e ayarlanmış görünümde `window.innerWidth` **332**, `documentElement
+.clientWidth` **320** okundu. Uygulamanın kendi kenetlemesi `innerWidth`
+kullanıyor (gerçek tarayıcıda kaydırma çubuğunu içerdiği için doğru), ama
+"öge ekranda mı" ölçümü `clientWidth` ile yapılmalı — yoksa 12px'lik bir
+tolerans sahte "ulaşılabilir" sonucu üretir.
