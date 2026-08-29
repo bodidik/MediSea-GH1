@@ -26566,3 +26566,111 @@ geçersizleşir) burada da geçerli.
   hidden` ile kırpıyor, yani taşan metin görünmez olurdu. Ölçüldü: 2153
   bölümde 25+ karakterlik kırılamayan jeton **4 tane**, en uzunu **26
   karakter** (`glikozilfosfatidilinositol`) — 320px'lik kartta rahat sığıyor.
+
+### TELEFONDA NOT DEFTERİ AÇIKKEN VURGU ROZETİ EKRAN DIŞINA KAYIYOR AMA ODAKLANABİLİR KALIYORDU
+
+Bir önceki turun ekseninin (konumlanan katmanlar görünüm penceresine
+kenetleniyor mu?) kardeşi: **iki bileşen arasında CSS değişkeniyle taşınan bir
+geometri, iki tarafta AYNI şeyi mi söylüyor?**
+
+`NotePanel` genişliğini `--ms-note-w`ye yazıyor, `ReadingTools`taki vurgu
+rozeti o kadar sola kayıyor (`translateX(calc(-1 * var(--ms-note-w)))`).
+
+#### İKİ GERÇEKLİK — değişken HAM, render CLAMP'li
+
+```
+degisken :  `${width}px`                 <- ham durum (420)
+render   :  min(${width}px, 94vw)        <- panelin gercek genisligi
+```
+
+Canlıda ölçüldü (375px): panel **353px**, değişken **420px** — rozet
+panelden **67px fazla** kaydırılıyordu.
+
+#### Asıl kusur KAYMANIN KENDİSİYDİ — yer yok, yine de kayıyor
+
+375px'te panel ekranın %94'ünü kaplıyor, yani yanında rozete **yer kalmıyor**.
+Ölçüldü (canlı):
+
+| ölçüt | değer |
+|---|---|
+| rozet kutusu | **left −125 · right −65** |
+| görünümde mi | **HAYIR** |
+| `display` · `visibility` | **flex** · **visible** |
+| `aria-hidden` · `inert` | **yok** · **yok** |
+| **"Vurgularım (1)" düğmesi odaklanıyor mu** | **EVET** (`document.activeElement`) |
+
+Yani klavyeyle gezen kullanıcı **göremediği bir denetimin üstünde duruyor** —
+ve o denetim açıldığında içinde **"Vurguyu kaldır"** düğmeleri var. Belgede
+kayıtlı `opacity-0` sınıfının (*"görünmez ama odaklanılabilir — en kötüsü"*)
+birebir aynısı, bu kez `translateX` ile.
+
+#### Çare iki parçalı — çünkü tek başına biri yetmiyor
+
+Yalnızca değişkeni düzeltmek **yetmezdi**: doğru kayma (353) ile bile rozet
+`left −58`'de kalırdı — 375px'lik ekranda 353px'lik panelin yanında yalnızca
+22px boşluk var.
+
+| parça | ne |
+|---|---|
+| `--ms-note-w` | artık **gerçek** genişlik (`min(width, 94vw)`) |
+| `--ms-not-yer` | yan yana yer yoksa **`none`** → rozet `display:none` |
+
+`display:none` bilinçli: ögeyi odak sırasından **ve** erişilebilirlik
+ağacından da düşürüyor. Görsel durum zaten "rozet yok"tu; değişen tek şey
+artık gerçekten yok olması. Panel kapanınca geri geliyor.
+
+Eşik uydurulmadı, ölçüldü: rozet **60px**, iki yanında ~20px kenar → **100px**.
+Panel `min(420, 94vw)` olduğu için bu fiilen "görünüm < ~520px" demek — ama
+sabit yazılmadı, çünkü kullanıcı paneli masaüstünde **900px**'e kadar
+büyütebiliyor ve o zaman eşik kayıyor.
+
+Etki `resize` de dinliyor (eskiden yalnızca `[open, width]`e bağlıydı):
+telefon döndürüldüğünde ya da pencere daraltıldığında değer bayat kalmasın.
+
+#### Doğrulama — altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| 375px, panel açık — değişken | **420px** (panel 353) | **352.5px = panel genişliği** |
+| 375px — rozet | left −125 · **odaklanabilir** | **`display:none`** · kutu 0×0 |
+| 375px — **ekran dışında odaklanabilir öge** | **1** ("Vurgularım") | **0** |
+| 320px, panel açık | — | panel 301 · boş alan 19 · **gizli** · yatay kayma 0 |
+| **negatif** — panel KAPANDI | — | rozet **295–355**, `flex`, **odaklanabilir**, değişken `0px` |
+| **negatif** — 768px tablet | — | panel 420 · boş alan **348** · rozet 253–313 · **panelin solunda** |
+| **negatif** — 1280px masaüstü | rozet 765–825 | **765–825 — değişmedi**, panelin solunda |
+| **negatif** — rozet hâlâ çalışıyor mu | — | tıklanınca yönetici açılıyor (288px, 67–355 arası **sığıyor**), "Vurguyu kaldır" listede |
+| **negatif** — vurgu bozuldu mu | — | 1 kayıt · 1 `<mark>` · boyanan metin kayıtla **BİREBİR** |
+| **negatif** — 14 denetim + lint + typecheck + build | — | hepsi geçti |
+
+Yedinci satır bu düzeltmenin asıl riskiydi: eşik yanlış seçilseydi masaüstünde
+de rozet kaybolurdu.
+
+#### ⚠ İKİ ÖLÇÜM TUZAĞI
+
+**1) `resize_window` `window.resize` olayını ATMIYOR.** 1280 → 375
+boyutlandırmasından sonra değişken **420'de kaldı** ve bir an "dinleyici
+bağlanmamış" sanıldı. Ayırt edici ölçüm elle olay göndermek oldu:
+`window.dispatchEvent(new Event('resize'))` → değer anında **352.5**'e,
+`--ms-not-yer` **none**'a döndü. Yani kod doğru, olayı üretmeyen araçtı.
+
+Bu ortamda `resize` tepkisi ölçülecekse olay **elle atılmalı**; yoksa
+resize'a bağlı her kod ölü görünür.
+
+**2) `display:none` odağı ASENKRON bırakıyor.** 320px ölçümünde
+`activeElement === rozetDugmesi` **true** çıktı ve rozet `display:none`
+olmasına rağmen "hâlâ odaklanabilir" sanıldı. Gerçekte odak bir önceki
+adımdan (768px) KALMIŞTI; tarayıcı stil değişiminden hemen sonra henüz
+bırakmamıştı.
+
+Ayırt edici ölçüm: **önce `blur()`, sonra `focus()` dene.** O zaman
+`activeElement` **BODY** kalıyor ve `YENIDEN_ODAKLANDI: false` çıkıyor.
+Belgede kayıtlı *"ardışık ölçüm bayat sonuç verir"* kuralının odak
+tarafındaki hâli — ve bu kez bayat değer, düzeltmenin çalışmadığını
+söylüyordu.
+
+**Aktarılabilir kural: bir ögeyi görünümün dışına KAYDIRMAK onu gizlemek
+değildir.** `translateX`, `opacity-0` ve negatif konum üçü de aynı sonucu
+veriyor: görsel olarak yok, erişilebilirlik ağacında ve odak sırasında var.
+İki bileşen arasında geometri taşıyan bir değişken varsa, alıcı tarafın
+"yer var mı" sorusunu da sorması gerekiyor — kaydırma tek başına bir
+gizleme mekanizması değil.

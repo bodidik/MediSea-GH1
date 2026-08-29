@@ -762,8 +762,18 @@ export default function ReadingTools() {
       {marks.length > 0 && (
         <div
           data-ms-ui
-          // --ms-note-w: NotePanel açıkken genişliğini buraya yazar, rozet sola kayar
-          style={{ transform: "translateX(calc(-1 * var(--ms-note-w, 0px)))" }}
+          /* --ms-note-w  : NotePanel açıkken GERÇEK genişliğini yazar, rozet sola kayar.
+           * --ms-not-yer : panelin yanında rozete yer kalmıyorsa "none" olur.
+           *
+           * İkincisi ölçümle eklendi: 375px'te panel ekranın %94'ünü kaplıyor,
+           * yanında yer yok ve rozet tümüyle ekran dışına kayıyordu — ama
+           * odaklanabilir kalmaya devam ediyordu (belgede kayıtlı `opacity-0`
+           * sınıfının translate biçimi). `display:none` onu odak sırasından ve
+           * erişilebilirlik ağacından da düşürüyor. */
+          style={{
+            display: "var(--ms-not-yer, flex)",
+            transform: "translateX(calc(-1 * var(--ms-note-w, 0px)))",
+          }}
           className="fixed bottom-5 right-5 z-[55] flex flex-col items-end gap-2 transition-transform duration-300"
         >
           {panelOpen && (

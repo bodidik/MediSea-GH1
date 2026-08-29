@@ -80,6 +80,11 @@ const BOYUTLAR: [number, string, string][] = [
 
 /** Avuç, kalem ucundan çok daha geniş bir temas alanı bildirir. */
 const avucMu = (ev: React.PointerEvent) => ev.width > 35 || ev.height > 35;
+
+/** Panelin görünüm penceresinde kaplayabileceği en fazla oran — render ile AYNI. */
+const NOT_EN_FAZLA_VW = 0.94;
+/** Vurgu rozetinin panelin yanına sığması için gereken boşluk (px). */
+const ROZET_ICIN_GEREKEN = 100;
 /** Kalem kalktıktan sonra avucun tuvali kaydırmaması için ölü süre (ms). */
 const KALEM_OLU_SURE = 700;
 
@@ -275,10 +280,41 @@ export default function NotePanel() {
     return () => clearTimeout(t);
   }, [text, strokes, dirty, sayfa]);
 
-  /* ── Panel genişliğini FAB'lara duyur (ReadingTools rozetini kaydırır) ─ */
+  /* ── Panel genişliğini FAB'lara duyur (ReadingTools rozetini kaydırır) ─
+   *
+   * İKİ GERÇEKLİK VARDI: değişkene HAM `width` yazılıyordu ama panel
+   * `min(width, 94vw)` ile çiziliyor. Ölçüldü (canlı, 375px): panel 353px,
+   * değişken 420px — rozet panelden 67px FAZLA kaydırılıyordu.
+   *
+   * Daha ağırı, kaymanın kendisiydi: 375px'te panel ekranın %94'ünü
+   * kapladığı için yanında yer KALMIYOR. Rozet `left -125 / right -65`,
+   * yani tümüyle ekran dışında — ama `display` hâlâ `flex`, `visibility`
+   * `visible`, `aria-hidden` YOK. Ölçüldü: "Vurgularım (1)" düğmesi
+   * GERÇEKTEN odaklanıyor (`document.activeElement`), yani klavyeyle gezen
+   * kullanıcı GÖREMEDİĞİ bir denetimin üstünde duruyor ve o denetim vurgu
+   * SİLME düğmelerini açıyor. Belgede kayıtlı `opacity-0` sınıfının
+   * birebir aynısı, bu kez `translateX` ile.
+   *
+   * Çare iki parçalı: değişken GERÇEK genişliği taşıyor, ve yan yana yer
+   * yoksa rozet `display: none` ile tümden kaldırılıyor (odak sırasından ve
+   * erişilebilirlik ağacından da düşsün diye). Panel kapanınca geri geliyor.
+   */
   useEffect(() => {
-    document.documentElement.style.setProperty("--ms-note-w", open ? `${width}px` : "0px");
-    return () => document.documentElement.style.setProperty("--ms-note-w", "0px");
+    const kok = document.documentElement;
+    const yaz = () => {
+      const gercek = open ? Math.min(width, window.innerWidth * NOT_EN_FAZLA_VW) : 0;
+      kok.style.setProperty("--ms-note-w", `${gercek}px`);
+      /* Rozet ~60px, iki yanında ~20px kenar boşluğu istiyor. */
+      const yerVar = !open || window.innerWidth - gercek >= ROZET_ICIN_GEREKEN;
+      kok.style.setProperty("--ms-not-yer", yerVar ? "flex" : "none");
+    };
+    yaz();
+    window.addEventListener("resize", yaz);
+    return () => {
+      window.removeEventListener("resize", yaz);
+      kok.style.setProperty("--ms-note-w", "0px");
+      kok.style.setProperty("--ms-not-yer", "flex");
+    };
   }, [open, width]);
 
   /* ── Odak yönetimi ────────────────────────────────────────────────────
