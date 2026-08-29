@@ -21766,3 +21766,71 @@ türetilmiş (`{X.length}`) ve literal (`/4`). Türetilmiş biçimi arayan bir
 göremiyor.
 
 Bu turda kod değişmedi; üç ölçütün üçü de temiz çıktı ve kapsam ölçüldü.
+
+### AÇIK SINIFIN GERÇEK BÜYÜKLÜĞÜ ÖLÇÜLDÜ — "99 kalan" fazla saymış, gerçek sayı ≥44
+
+`SonucDuyuru` süpürmesi *"31 araca eklendi, 99 kalan, sınıf kapandı DENMİYOR"*
+diye bırakılmıştı. O 99 bir İŞ LİSTESİ olarak okunuyor ama hiç ölçülmemişti:
+kalan araçların kaçı gerçekten duyurulacak bir HÜKÜM basıyor?
+
+| ölçüt | değer |
+|---|---|
+| araç | 130 |
+| **hüküm üreten** | **≥ 75** |
+| duyurusu olan | 31 |
+| **AÇIK SINIF** | **≥ 44** |
+
+Yani kalan 99'un yaklaşık yarısı zaten hüküm basmıyor — çevirici, infüzyon
+hesaplayıcısı, sayı basan araçlar. Sınıf sanıldığından **küçük**.
+
+#### Ölçüt İKİ KEZ düzeltildi ve ilki ŞİŞMİŞTİ
+
+İlk ölçüt *"`{X.label}` render ediliyor mu"* idi ve **93 araç** buldu.
+Şişmişti: çoğu araçta ilk eşleşme ŞIK listesindeki `{item.label}` —
+hüküm değil, seçenek etiketi. Şekil dağılımı bastırılınca görüldü
+(61 aracın değişkeni `item` · `opt` · `it` · `o` gibi map parametreleriydi).
+
+Doğru ölçüt hüküm ÜRETECİNE bakıyor ve iki şekli birden sayıyor:
+
+| şekil | araç | örnek |
+|---|---|---|
+| fonksiyon: 2+ koşullu `return { label: … }` | 67 | `getBand` · `getRisk` · `interpret` |
+| dizi: `const BANDS = […]` + `.find(` | 8 | `flipi` · `barthel` · `cat-copd` |
+
+**Ölçütün kör noktası ÖLÇÜLDÜ, varsayılmadı:** duyurusu OLAN 31 aracın
+30'unu bu ölçüt hüküm üreteci olarak görüyor, biri (`4t-hit`) üçüncü bir
+şekil kullanıyor ve görülmüyor. Yani 75 bir ALT SINIR ve açık sınıf da
+en az 44 — rakamlar bu yüzden "≥" ile yazıldı.
+
+Bu, ölçütün kendi kapsamını sınamanın ucuz yolu: **zaten düzeltilmiş
+kümeyi ölçüte sür.** Ölçüt onların hepsini görmüyorsa, görmediği kadar
+eksik sayıyor demektir.
+
+#### Sweep bu turda YAPILMADI — gerekçe
+
+44 araçlık mekanik yerleştirme kendi turunu ve kendi kontrollerini
+gerektiriyor. Belgede kayıtlı ders açık: önceki 31'lik süpürmede
+**10 dosya yanlış yere yamalanmıştı** ve `lint`/`typecheck` bunların
+yalnızca 2'sini yakalamıştı — kalan 8'i geçerli JSX üretiyordu. Onları
+yalnızca **bağımsız bir yerleşim denetimi** gösterdi.
+
+Yani bu iş "bir satır ekle" değil; ölçülmüş bir iş kalemi olarak duruyor:
+**44 araç, şekli bilinen, kontrolü tarif edilmiş.**
+
+#### Bu oturumun üç düzeltmesi CANLIDA doğrulandı
+
+| düzeltme | canlıda ölçülen |
+|---|---|
+| `nihss` başlığı | "11 Alan · 0–42 Puan" (türetilmiş, **görünüm aynı**) |
+| `nihss` sayacı | **"0/15 satır"** · boş durum "Tüm **satırları** tamamlayın" · `N/N alan` kalıntısı **0** |
+| `rass` | "Saldırgan" **1** · "Çok Ajite" **1** (önce 2) · seviye **10** |
+| `tft` — TSH tek başına | başlık **EKSİK VERİ** · "Patern için hem TSH hem FT4 gerekli — **eksik: FT4**" · duyuru "Sonuç: DEĞERLENDİRİLEMEDİ" |
+| `tft` — assay önerisi | **YOK** (önce "Heterofil antikor, makro-TSH, assay interferansı") |
+| **negatif** — `tft` iki alan dolu | başlık **PATERN TANI** · **SUBKLİNİK HİPOTİROİDİZM** · "ÖRNEK NEDENLER" geri geldi |
+
+**CI 8/8 yeşil**, üç kod commit'i dahil.
+
+**Ölçüm notu — React `<!-- -->` ayracı, dördüncü kez.** `nihss` sayacı ilk
+okumada "bulunamadı" çıktı: üretilen HTML `0<!-- -->/<!-- -->15 satır`
+biçiminde ve etiket süzgecim yorumu boşlukla değiştirince desen tutmadı.
+Yorumları etiketlerden ÖNCE çıkarınca "0/15 satır" göründü.
