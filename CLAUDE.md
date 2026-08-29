@@ -21503,3 +21503,88 @@ hesaplandı ve tuttu:
 * `rapid3`: FUNCTION_ITEMS 10 × 3 = 30, + ağrı 10 + global 10 = **50**
 * `scorad`: alan/5 → 20, 7×B/2 (B tavan 18) → 63, **C/10** → 2 = **85**
   (düzeltilmişte C bölünmüyor: 20 + 63 + 20 = 103)
+
+### `rass`ın +4 VE +3 BASAMAĞI BİREBİR AYNI ADI TAŞIYORDU — "Çok Ajite" +3'ün adı
+
+Belgede kayıtlı önceki doğrulama şuydu: *"`rass` | Sessler 2002 | **doğru** —
++4…−5, tam 10 seviye"*. Yani **aralık** ve **seviye sayısı** ölçülmüş,
+**etiketler** hiç karşılaştırılmamıştı — `nihss`teki kalıbın aynısı (toplam
+doğrulanmış, dağılım değil).
+
+Ölçüldü:
+
+```
+{ score: 4, label: "+4 — Çok Ajite", detail: "…, personele saldırıyor" }
+{ score: 3, label: "+3 — Çok Ajite", detail: "…, endotrakeal tüpü çekiyor" }
+```
+
+Araç **Sessler et al., AJRCCM 2002**'yi ilan ediyor ve orada:
+
+| düzey | yayımlanmış ad | tanım |
+|---|---|---|
+| **+4** | **Combative** | personele yönelik acil tehlike |
+| +3 | Very agitated | tüp/kateter çekme, agresif |
+
+Yani "Çok Ajite" (**Very agitated**) **+3'ün adı** ve araç onu +4'e de
+vermişti. Kalan sekiz etiket yayımlanmış hâliyle birebir.
+
+**Detay alanları DOĞRUYDU** — kusur yalnızca addaydı ve +4'ün kendi detayı
+zaten *"personele saldırıyor"* diyor. Yeni etiket dışarıdan gelmedi: aracı
+KENDİ ölçüsüne hizalamak, `haq-di` · `murray` · `apache2` · `grace` ile aynı
+kalıp. Detaya dokunulmadı.
+
+**Kapsamı abartmamak gerekiyor:** iki satır görsel olarak ayırt edilebiliyordu
+(etiket önekinde "+4" ve "+3" var, üstelik solda ayrı bir rozet de basılıyor)
+ve sonuç paneli detayı da yazdığı için orada da ayrım vardı. Kusur
+"okunamıyor" değil, **ilan edilen kaynakla ayrışma**: on seviyeli bir
+ölçekte iki komşu basamak aynı adı taşıyor ve biri ötekinin adını kullanıyor.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| seviye | 10 | **10** |
+| "Çok Ajite" geçişi (üretilmiş çıktı) | **2** | **1** |
+| "Saldırgan" | 0 | **1** |
+| çift etiket | **1** | **0** |
+| **negatif** — kalan 9 etiket | — | **değişmedi** |
+| **negatif** — satır sonu | saf CRLF | **saf CRLF** |
+
+#### Sınıf süpürüldü: 130 araç · 267 grup · 1189 etiket
+
+Bu eksen daha önce taranmamıştı. Depoda kayıtlı tarama **aynı PUAN**
+eksenindeydi (`apache2` · `gout-acr` · `pap-score` · `nutrition-needs` ·
+`tirads`); bu ise **aynı AD**.
+
+| ölçüt | değer |
+|---|---|
+| taranan araç | 130 |
+| ölçülen grup | **267** |
+| ölçülen etiket | **1189** |
+| tekrar eden etiket | **2 aday — ikisi de YANLIŞ POZİTİF** |
+
+**Pozitif kontrol tohumla değil GERÇEK kusurla:** düzeltme öncesi `rass`
+sürülünce `2x "çok ajite"` yakalanıyor; güncel depoda o kayıt yok.
+
+#### ⚠ ÖLÇÜTÜN İKİ ZIT KÖRLÜĞÜ VAR VE İKİSİ DE GEREKLİ
+
+Etiketler karşılaştırılmadan önce baştaki sayı öneki soyuluyor
+(`"+4 — "`, `"3. "`). Bu **şart**, yoksa `rass` kaçardı: tam etiketler
+(`"+4 — Çok Ajite"` ↔ `"+3 — Çok Ajite"`) zaten farklı.
+
+Ama aynı soyma, önekin İÇERİĞİN KENDİSİ olduğu yerde ayırt ediciyi siliyor.
+İki adayın ikisi de bu yüzden sahte:
+
+```
+ogtt / iadpsg :  "Açlık" · "1. Saat" · "2. Saat"        -> soyunca 2x "saat"
+ogtt / cc     :  "Açlık" · "1. Saat" · "2. Saat" · "3. Saat" -> 3x "saat"
+```
+
+Yani ölçüt **ADAY** üretiyor, karar etiketleri okumakla veriliyor. Tam
+etiket karşılaştırması `ogtt`yi elerdi ama `rass`ı kaçırırdı; önek soyan
+karşılaştırma tersini yapıyor. Tek bir ölçütle iki tarafı birden kapatmak
+mümkün değil.
+
+**Aktarılabilir kural: bir normalleştirme ölçütü, sildiği şeyin bazı
+kayıtlarda AYIRT EDİCİ olabileceğini varsayarak yazılmalı.** Bu depoda aynı
+şekil daha önce arama tarafında da çıkmıştı (`aramaEslesir` boş sorguda
+`false` döndürüyor ve süzgeçte listeyi boşaltıyordu): bir yardımcının
+sözleşmesi tek bir çağrı yerinde doğru, ötekinde yanlış olabiliyor.

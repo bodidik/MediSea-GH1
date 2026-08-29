@@ -4,7 +4,14 @@ import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 const LEVELS: { score: number; label: string; detail: string; color: string }[] = [
-  { score: 4,  label: "+4 — Çok Ajite",   detail: "Agresif, endotrakeal tüpü veya kateterleri çekiyor, personele saldırıyor", color: "rose" },
+  /* +4 bir dönem "+3 — Çok Ajite" ile BİREBİR AYNI etiketi taşıyordu: on
+     seviyeli bir ölçekte iki komşu basamak seçim listesinde ayırt edilemiyordu.
+     Sayı da yanlış yerdeydi — araç Sessler 2002'yi ilan ediyor ve orada
+     +4 "Combative" (personele yönelik acil tehlike), +3 "Very agitated"
+     (tüp/kateter çekme). Yani "Çok Ajite" +3'ün adıydı.
+     Yeni etiket dışarıdan gelmedi: bu satırın KENDİ detayı "personele
+     saldırıyor" diyor. Detaya dokunulmadı. */
+  { score: 4,  label: "+4 — Saldırgan",   detail: "Agresif, endotrakeal tüpü veya kateterleri çekiyor, personele saldırıyor", color: "rose" },
   { score: 3,  label: "+3 — Çok Ajite",   detail: "Sık hareket, uyarılara rağmen endotrakeal tüpü çekiyor", color: "rose" },
   { score: 2,  label: "+2 — Ajite",        detail: "Sık, amaçsız hareketler, ventilatörle uyumsuz", color: "orange" },
   { score: 1,  label: "+1 — Huzursuz",     detail: "Kaygılı, hareketler hızlı ama agresif değil", color: "amber" },
