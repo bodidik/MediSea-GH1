@@ -136,6 +136,21 @@ jobs:
         - name: Renk çifti denetimi kendini sınıyor mu
           run: node scripts/renk-cifti-denetim.cjs --negatif
 
+        # DENETİMLERİN KENDİSİ ÇÜRÜYOR MU — meta test.
+        #
+        # Ölçüldü: `web/scripts` altında 30 betik var ve CI bunların yalnızca
+        # 9'unu çalıştırıyor. Kalan rapor denetimleri (ölü kod, bölme, bant,
+        # karar, kapı-kapsam, yuvarlama, sızıntı, ilan-render…) bu depoda
+        # kurumsal hafıza işlevi görüyor: bir kusur sınıfı kapandıktan sonra
+        # geri gelmesini onlar yakalıyor. Hiç çalıştırılmayan bir denetim
+        # sessizce çürür ve kimse fark etmez.
+        #
+        # Bu adım onları tohumlu bir ağaçta sürüyor ve ÜÇ çürüme biçimini
+        # birden tutuyor: betik yok · çöktü · tohumu ölçemedi (ve asıl amacı
+        # olan yorum körlüğü). Üçü de negatif kontrolle sınandı.
+        - name: Denetimler iş görüyor mu (meta test)
+          run: node scripts/yorum-korlugu-denetim.cjs
+
         - name: Build
           env:
             NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:4000' }}

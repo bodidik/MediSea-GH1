@@ -151,16 +151,27 @@ fs.mkdirSync(path.join(B, 'zz-yorum'));
 fs.mkdirSync(path.join(B, 'app', 'zz-yorum'), { recursive: true });
 fs.mkdirSync(path.join(B, 'app', 'tools', 'zz-yorum'), { recursive: true });
 
+/**
+ * ÇÖKME YUTULMAMALI — yoksa çürümüş bir betik "SINANAMADI" ya da "temiz"
+ * görünüyor. Bu test CI adımı olduğu için ayrımı bilmek zorunda: `status`
+ * sıfırdan farklıysa (ve denetimin kendi "kusur buldum" çıkışı değilse)
+ * betik ÇALIŞMIYOR demektir.
+ */
 const sur = (yol, kok) => {
-  try { return execFileSync('node', [yol, ...kok], { encoding: 'utf8' }); }
-  catch (e) { return (e.stdout || '') + (e.stderr || ''); }
+  try { return { cikti: execFileSync('node', [yol, ...kok], { encoding: 'utf8' }), coktu: false }; }
+  catch (e) {
+    const cikti = (e.stdout || '') + (e.stderr || '');
+    // Sözdizimi/modül hatası: node kendi yığın izini stderr'e basar.
+    const coktu = /^\s*(SyntaxError|ReferenceError|TypeError|Error: Cannot find module)/m.test(e.stderr || '');
+    return { cikti, coktu };
+  }
 };
 
 const sonuc = [];
 for (const d of DENETIMLER) {
   const yol = path.join(KOK, d.ad + '.cjs');
-  if (!fs.existsSync(yol)) { sonuc.push({ ad: d.ad, kor: false, durum: 'betik yok' }); continue; }
-  const cikti = sur(yol, d.kok(T));
+  if (!fs.existsSync(yol)) { sonuc.push({ ad: d.ad, kor: false, olctu: false, coktu: true, durum: 'BETİK YOK' }); continue; }
+  const { cikti, coktu } = sur(yol, d.kok(T));
   const kor = /zz-yorum/.test(cikti);
   /**
    * "0 KUSUR" İLE "0 ÖLÇÜM" AYNI GÖRÜNÜR — bu depoda defalarca yaşanmış tuzak.
@@ -175,14 +186,21 @@ for (const d of DENETIMLER) {
    * İki rapor birebir aynıysa tohum ölçülmemiştir. Bu ölçüt denetimin hangi
    * sayıyı bastığını bilmek zorunda değil, yani yeni denetimlerde de çalışır.
    */
-  const bosCikti = sur(yol, d.kok(B));
+  const bosCikti = sur(yol, d.kok(B)).cikti;
   const norm = (s) => s.split(T).join('<KOK>').split(B).join('<KOK>');
-  const olctu = norm(cikti) !== norm(bosCikti);
+  const olctu = !coktu && norm(cikti) !== norm(bosCikti);
   sonuc.push({
     ad: d.ad,
     kor,
     olctu,
-    durum: kor ? 'KÖR — yorumu kusur saydı' : olctu ? 'temiz' : 'SINANAMADI — tohumda hiç öge ölçmedi',
+    coktu,
+    durum: coktu
+      ? 'ÇÖKTÜ — betik çalışmıyor'
+      : kor
+        ? 'KÖR — yorumu kusur saydı'
+        : olctu
+          ? 'temiz'
+          : 'SINANAMADI — tohumda hiç öge ölçmedi',
   });
 }
 fs.rmSync(T, { recursive: true, force: true });
@@ -208,6 +226,24 @@ if (listeDisi.length) {
 if (korler.length) {
   console.log('KÖR denetim: ' + korler.map((s) => s.ad).join(', '));
   console.log('Çare: kaynağı okurken yorumları boşlukla doldur (satır numaraları korunsun).');
+}
+
+/**
+ * KAPI ÜÇ ÇÜRÜME BİÇİMİNİ BİRDEN TUTAR — yoksa yalnızca birini tutan bir kapı
+ * yanlış güven verir.
+ *
+ * Bu betik CI adımı: `scripts/` altındaki 30 betiğin YALNIZCA 9'unu CI
+ * çalıştırıyor (ölçüldü), yani kalan rapor denetimleri sessizce çürüyebilir
+ * ve kimse fark etmez. Buradaki liste onları tohumla sürüyor.
+ *
+ * Eskiden yalnızca KÖR olan düşürüyordu; ÇÖKTÜ ve BETİK YOK "?" basıp
+ * geçiyordu, SINANAMADI da öyle. Üçü de "bu denetim artık iş görmüyor"
+ * demek — deponun kendi kuralı: "0 kusur ile 0 ölçüm aynı görünür".
+ */
+const sorunlu = sonuc.filter((s) => !s.olctu || s.kor);
+if (sorunlu.length) {
+  console.log('İŞ GÖRMEYEN denetim: ' + sorunlu.map((s) => s.ad + ' (' + s.durum.split(' —')[0] + ')').join(', '));
+  console.log('Bir denetim tohumu ölçemiyorsa listeye ait değildir; ölçebiliyorsa çalışıyor olmalıdır.');
   process.exit(1);
 }
-console.log('yorum körü denetim yok.');
+console.log('yorum körü denetim yok; ' + sonuc.length + ' denetimin ' + sonuc.length + "'i tohumu ölçtü.");

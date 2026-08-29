@@ -25147,3 +25147,77 @@ kayıtlı tuzak).
 **Kusur çıkmadı.** Bu tur bir gerileme doğrulaması: kimlik değişikliği
 altı ailenin hiçbirinde yedekleme yolunu kırmamış, iki kipin anlamı da
 ayrık kalmış.
+
+### 30 DENETİMİN 9'U CI'DA — kalanı sessizce çürüyebilirdi, artık meta test kapıda
+
+Yeni eksen: **deponun kendi denetimleri korunuyor mu?** Bu depoda rapor
+denetimleri kurumsal hafıza işlevi görüyor — bir kusur sınıfı kapandıktan
+sonra geri gelmesini onlar yakalıyor. Ama hiç çalıştırılmayan bir denetim
+sessizce çürür.
+
+Ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| `web/scripts` altındaki betik | **30** |
+| **CI'ın çalıştırdığı** | **9** |
+| hiç çalışmayan | **21** |
+
+Önce çürüme var mı diye bakıldı: 19 rapor denetimi tek tek sürüldü (biri hariç
+— `plan-ver.cjs` kullanıcı planlarına dokunuyor, **bilerek çalıştırılmadı**).
+**Hepsi çıkış kodu 0, hata satırı 0.** Yani bugün çürümüş betik yok; kusur
+betiklerde değil, onları koruyan bir kapının olmamasındaydı.
+
+#### Meta testin kendi kapısı ÜÇ çürüme biçiminden yalnızca BİRİNİ tutuyordu
+
+`yorum-korlugu-denetim.cjs` 15 denetimi tohumlu bir ağaçta sürüyor ve
+gate-capable (`process.exit(1)`) — ama yalnızca **KÖR** durumunda. Kaynağı
+okununca üç sessiz geçiş yolu göründü:
+
+| durum | eski davranış |
+|---|---|
+| **BETİK YOK** (silinmiş/adı değişmiş) | `?` basıyor, **geçiyor** |
+| **ÇÖKTÜ** (sözdizimi/modül hatası) | `sur()` çökmeyi yutuyordu; `?` ya da "temiz", **geçiyor** |
+| **SINANAMADI** (tohumu ölçemedi) | `?` basıyor, **geçiyor** |
+| KÖR | exit 1 |
+
+Üçü de "bu denetim artık iş görmüyor" demek. Bir kapıyı CI'a koyup yalnızca
+dördün birini tutmasına izin vermek, deponun kendi kuralının ihlali olurdu:
+**"0 kusur ile 0 ölçüm aynı görünür."**
+
+`sur()` artık çökmeyi ayırt ediyor (`SyntaxError|ReferenceError|TypeError|
+Cannot find module` → `coktu`) ve kapı dördünü birden tutuyor.
+
+#### Doğrulama — üç negatif kontrol, üçü de gerçek bozma ile
+
+| deney | sonuç |
+|---|---|
+| bir denetim geçici olarak **yeniden adlandırıldı** | `? olu-denetim BETİK YOK` · **çıkış 1** |
+| bir denetime **sözdizimi hatası** enjekte edildi | `? olu-denetim ÇÖKTÜ — betik çalışmıyor` · **çıkış 1** |
+| **geri alındı** | `15 denetimin 15'i tohumu ölçtü` · **çıkış 0** |
+
+Üçüncü satır şart: kapı sertleştirilirken bugünkü temiz durumun hâlâ geçtiği
+ayrıca ölçülmeli. `git status` da dosyanın committe olan hâline döndüğünü
+doğruladı.
+
+#### CI adımı eklendi — 19 → 20
+
+Meta test artık `Build`ten hemen önce çalışıyor. Böylece 15 rapor denetimi
+her gönderimde tohumla sürülüyor: biri silinir, çöker, körleşir ya da tohumu
+ölçemez hâle gelirse **CI kırmızıya döner**.
+
+Süre: yerelde **38 s** (web işi ~2 dk 10 sn). Bedeli kabul edildi; alternatif,
+denetimlerin sessizce çürümesi.
+
+**Ölçüm sırasında doğrulanan yan gerçekler:**
+
+- CI'ın belgede yazan adım listesi **birebir doğru** — sapma yok.
+- "Server + Docker push" işinde Docker adımlarının **dördü de SKIPPED**
+  (`DOCKERHUB_TOKEN`/`USERNAME` tanımsız), yani her gönderimde ölü arka ucun
+  imajı yayımlanmıyor. İş gerçekten bir şey sınıyor: `server/package.json`
+  `lint` (eslint, `--max-warnings=0`) ve `test` (**6 test dosyası**) tanımlı.
+- Ama `server/` tarafında **tsconfig YOK** ve eslint yalnızca `.js/.cjs/.mjs`
+  tarıyor — belgede kayıtlı bozuk `scripts/seeds.ts` hiçbir kapıdan geçmiyor.
+  Bilerek dokunulmadı: onarmak veritabanına YAZAN bir betiği diriltmek olurdu.
+- `web/` tarafında test dosyası **0**; ürünün doğrulaması bu belgedeki
+  ölçümlere ve 20 CI adımına dayanıyor.
