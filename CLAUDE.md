@@ -23108,3 +23108,99 @@ Kusuru bulan ölçüm birebir tekrarlandı; en güçlü doğrulama biçimi bu, �
 **Negatif kontrol tarayıcıda:** `/calisma-alanim` kapsama bölümü canlıda
 `0 / 423` · `0/116` · `0/79` · `0/52` · `0/41` · `0/37` basıyor — uçtaki JSON
 ile birebir. `h1` 1, hata sınırı yok, ve ölçüm izi temiz (`medisea:*` **0**).
+
+### KAPI ARKASINDAKİ BEŞ SAYFA "BU YANITI 24 SAAT ÖNBELLEKLE" DİYORDU
+
+Bir önceki turun **aynası ve tehlikeli yönü**. Orada bedel maliyetti (gereksiz
+sunucusuz çağrı); burada bedel **doğruluk ve gizlilik**: statik üretilen bir
+yanıt bir kullanıcının durumunu herkese servis eder.
+
+Depo bu tuzağı adıyla kaydetmiş: *"premium konu sayfasının hep MISS olması
+KUSUR DEĞİL … biri ileride 'bu sayfa hep MISS, önbelleğe alalım' diye bir
+`revalidate` eklerse bir kullanıcının erişim durumu başkasına servis
+edilir."* Ölçüt o cümleden çıktı: **açık statik ilan (`force-static` ·
+`revalidate` · `fetchCache`) taşıyan rota, zincirinde kullanıcıya özel bir
+şey okuyor mu?**
+
+| kova | sonuç |
+|---|---|
+| açık statik ilan eden rota | **12** |
+| bunlardan zincirinde `auth()` olan | **5** — hepsi kapılı premium sayfa |
+| rota tablosunda STATİK görünüp zincirinde özel okuma olan | **0** |
+
+Beşi de `revalidate = 86400` diyordu: kapı arkasındaki, kişiye göre değişen
+bir sayfada "bu yanıtı 24 saat önbellekle" beyanı.
+
+#### ⚠ HİKÂYEMİ ÖLÇÜM İKİ KEZ DÜZELTTİ
+
+İlk anlatım şuydu: *"beyan bugün etkisiz çünkü `auth()` sayfayı dinamikleştiriyor
+— yani bir refaktör uzaklıkta bir sızıntı."* Bunu **iddia etmek yerine
+deneyle** sınadım ve iki kez yanıldığım çıktı.
+
+**Deney 1 — `AccessGate` ÇAĞRISI devre dışı, yeniden derlendi:** rota hâlâ `ƒ`
+ve yanıt hâlâ `private, no-cache, no-store` (üç istek).
+
+**Deney 2 — `AccessGate` çağrısı VE ithali tümüyle kaldırıldı:** yine `ƒ`,
+yine `no-store`. Yani `revalidate` **auth olmadan da işlemiyordu.**
+
+Ayırt edici olan `auth()` değil **`generateStaticParams`**: onu taşıyan kardeş
+sayfa aynı derlemede farklı davranıyor.
+
+| sayfa | `generateStaticParams` | ölçülen |
+|---|---|---|
+| `[branch]` | **var** | `● ` · `s-maxage=86400` · `x-nextjs-cache: HIT` |
+| `[branch]/[topic]` | **yok** | `ƒ` · `private, no-cache, no-store` |
+
+Deponun kendi kaydı bunu zaten söylüyordu (`[branch]/page.tsx` içindeki
+yorum: *"`[lang]` için üretilecek değerler bildirilmediği sürece rota dinamik
+kalıyor ve `revalidate` hiç işlemiyor"*) — ölçüm o notu doğruladı, benim
+hipotezimi değil.
+
+#### Sonuç: beyan ÖLÜ, ama ölü kalacağının garantisi YOK
+
+Bugünkü hâliyle `revalidate = 86400` beş sayfada da hiçbir şey yapmıyor.
+Tehlike, beyanın **etkinleşme koşulunun elde olmasında**: biri bu sayfalara
+`generateStaticParams` eklediği gün beyan sessizce devreye girer ve bir
+kullanıcının erişim durumu 24 saat boyunca herkese servis edilir.
+
+Bu, `steroid-dose`un `gluco` alanıyla aynı sınıf — anlamlı görünen, hiç
+okunmayan, ve yanlış kullanıma davetiye çıkaran bir beyan. Farkı: buradaki
+yanlış kullanımın bedeli çapraz kullanıcı sızıntısı.
+
+**Çare `revalidate`i silmek DEĞİL, gerçeği söylemek:**
+`export const dynamic = "force-dynamic"` hem bugünkü davranışı beyan ediyor
+hem o günü **yapısal olarak** imkânsız kılıyor.
+
+**Doğrulama — davranış değişmedi:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| beş sayfanın rota sembolü | `ƒ` | **`ƒ`** |
+| kapılı konu sayfası (3 istek) | `private, no-cache, no-store` | **aynı** |
+| üretilen sayfa | 637 | **637** |
+| ölçüt yeniden sürüldü | 12 ilan, 5'i özel okumalı | **7 ilan, özel okumalı 0** |
+
+**Negatif kontroller — dokunulmayan statik yüzeyler:**
+
+| ölçüt | sonuç |
+|---|---|
+| `[branch]` (auth okumuyor) | `●` · `s-maxage=86400` · **HIT** — değişmedi |
+| premium pano | `●` · `s-maxage=3600` · **HIT** — değişmedi |
+| kapılı konu sayfası tarayıcıda | `h1` **"Erişim Kısıtlı"** · `main` 1 · hata sınırı yok · `[data-readable]` **0** (içerik sızmıyor) |
+| `quiz-coz` gerçek parametreyle | aynı kapı kartı, 2 çıkış bağı |
+| lint · typecheck · build · 13 CI adımı | hepsi geçti |
+| satır sonu (5 dosya) | hepsi LF, korundu |
+
+#### Yama betiği KENDİ KONTROLÜNE takıldı — yorum körlüğünün yama tarafı
+
+İlk koşumda beş dosyanın beşi de **geri alındı**. Sebep kusurda değil
+doğrulama ölçütündeydi: eklenen açıklama yorumu çapayı **alıntılıyor**
+(`export const revalidate = 86400;`), dolayısıyla "çapa gitti mi" kontrolü
+dize aramasıyla yapılamıyordu.
+
+Bu depoda kayıtlı "yorum körlüğü" sınıfının yama tarafındaki hâli. Ölçüt
+**satır başındaki ifadeye** bağlandı ve beşi de geçti.
+
+Kayda değer olan şu: betik yanlış bir yamayı yazmadı — kontrolü tuttu ve
+dosyaları geri aldı. **Yerleştirme betiğine yazma-sonrası doğrulama + geri
+alma koymak, bu turda bir kez daha işini yaptı.**

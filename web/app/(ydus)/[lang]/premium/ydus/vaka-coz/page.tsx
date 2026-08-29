@@ -6,7 +6,29 @@ import VakaEngine from './VakaEngine';
 import { AccessGate } from '@/lib/AccessGate';
 import { rotaMeta } from "@/lib/site";
 
-export const revalidate = 86400;
+/**
+ * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
+ *
+ * Burası `export const revalidate = 86400;` diyordu: kapı arkasındaki,
+ * kişiye göre değişen bir sayfada "bu yanıtı 24 saat önbellekle" beyanı.
+ * Beyan ÖLÜYDÜ ve iki ayrı ölçümle gösterildi:
+ *
+ *   1) bugünkü hâliyle sayfa dinamik (auth okuyor) — revalidate işlemiyor;
+ *   2) `AccessGate` çağrısı VE ithali tümüyle kaldırılıp yeniden derlendi —
+ *      sayfa YİNE `private, no-cache, no-store` döndü (üç istek), yani
+ *      revalidate auth olmadan da işlemiyor.
+ *
+ * Ayırt edici olan `generateStaticParams`: onu taşıyan kardeş sayfa
+ * (`[branch]`) aynı derlemede `s-maxage=86400` ve `x-nextjs-cache: HIT`
+ * veriyor. Yani beyan bugün etkisiz, ama biri bu sayfaya
+ * `generateStaticParams` eklediği gün SESSİZCE etkinleşir ve bir
+ * kullanıcının erişim durumu 24 saat boyunca herkese servis edilir —
+ * belgede adı konmuş tuzağın ta kendisi.
+ *
+ * `force-dynamic` hem bugünkü gerçeği söylüyor hem de o günü yapısal
+ * olarak imkânsız kılıyor. Bugünkü davranış DEĞİŞMİYOR (ölçüldü).
+ */
+export const dynamic = "force-dynamic";
 
 const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
 
