@@ -22423,3 +22423,115 @@ Arama sonucunda başlık kırpması piksel tabanlı, karakter tabanlı değil; e
 uzun başlık sınırın yalnızca birkaç karakter üstünde ve başlık aynı zamanda
 sekme adı, yer imi adı ve paylaşım kartı başlığı. Kısaltmak bir ADLANDIRMA
 kararı — ölçüldü, kapsamı yazıldı, dokunulmadı.
+
+### JS DÜŞMÜŞSE HESAPLAYICI ÇALIŞIYOR GİBİ GÖRÜNÜYORDU — 25 araç sunucuda KLİNİK HÜKÜM basıyor
+
+Hiç ölçülmemiş bir eksen: **JavaScript çalışmazsa ekranda ne kalıyor?**
+Depoda `<noscript>` **sıfır** (151 sayfa tarandı: 130 araç + 21 site yüzeyi).
+
+Araçlar istemci bileşeni, yani hesap tarayıcıda yapılıyor. Ama sunucu HTML'i
+formu da, sonucu da taşıyor:
+
+| ölçüt (130 araç, canlı HTML) | değer |
+|---|---|
+| sunucuda `<input>` basan | **84** (toplam 451 girdi) |
+| sunucuda `<button>` basan | 130 |
+| `role="status"` bölgesi dolu | 40 |
+| **bunlardan KLİNİK HÜKÜM basan** | **25** |
+
+Yani JS düşmüşse sayfa çalışan bir hesaplayıcı **gibi görünüyor**: girdiler
+etiketli ve yazılabilir, ekranda bir hüküm duruyor. Kullanıcı kendi değerini
+yazıyor — hüküm **değişmiyor** ve varsayılandan gelen sayı onun girdisinin
+yanında kalıyor.
+
+Sunucuda basılan 25 hükmün içinde tedavi/yatış kararı besleyenler var:
+
+```
+psi-port            Sınıf II                  (ayaktan tedavi)
+glasgow-blatchford  Düşük Risk — Ayaktan Takip Değerlendirilebilir
+kdigo-aki           AKI Kriteri Yok
+child-pugh          Class A
+grace · timi-ua · khorana · ipi · findrisc · abcd2   DÜŞÜK RİSK
+```
+
+Bu, deponun API kuralının (*"uydurulmuş bir başarı, çağıranın üstüne kod
+yazdığı yanlış bir varsayım üretir"*) kullanıcıya dönük hâli. Senaryo da
+kuramsal değil: paket engellenmiş, ağ kopmuş ya da kurumsal vekil sunucu
+betikleri kesmiş olabilir — belgede `/giris` için zaten kayıtlı
+(*"JavaScript yavaş ya da düşmüşse kullanıcı beyaz sayfa görüyor"*).
+
+#### Çare TEK DOSYADA: `app/tools/layout.tsx`
+
+Şerit üreteçle 130 dosyaya kopyalanmadı; `/tools` altındaki her sayfayı saran
+ortak düzene kondu — **131 yüzey (130 araç + hub), tek kaynak**.
+
+Metin ne olduğunu SÖYLÜYOR ve çıkış yolu veriyor (deponun hata kartı kuralı):
+*"Ekranda bir sonuç görüyorsan o BAŞLANGIÇ değerlerine aittir — kendi
+değerlerine değil."* + `Kütüphaneye git` (konular JS'siz de okunur).
+
+`<Link>` kullanıldı, düz `<a>` değil: `next/link` JS'siz ortamda zaten düz bir
+`<a>` olarak basılıyor, yani çıkış her iki durumda da çalışıyor — ve depo
+kuralı (`no-html-link-for-pages`) korunuyor.
+
+#### JS KAPALI durumu GERÇEKTEN gözlendi — sandbox'lu iframe
+
+Bu ortamda tarayıcının JS'i kapatılamıyor. Çözüm: sayfayı `fetch` ile alıp
+`sandbox="allow-same-origin"` (ama **`allow-scripts` YOK**) bir iframe'e
+`srcdoc` olarak koymak. Betikler çalışmıyor, belge okunabiliyor — yani
+`<noscript>` içeriği GERÇEK ögelere dönüşüyor.
+
+| ölçüt (`psi-port`) | JS KAPALI | JS AÇIK |
+|---|---|---|
+| `<noscript>` içindeki öge | **1** | **0** (tarayıcı içeriği METİN olarak ayrıştırıyor) |
+| şerit metni gövdede | **var** | **yok** |
+| çıkış bağı | `/topics · Kütüphaneye git` | — |
+| **ekrandaki hüküm** | **"Sonuç: Sınıf II"** | "Sonuç: Sınıf II" |
+| `h1` · `main` | 1 · 1 | 1 · 1 |
+
+Dördüncü satır bulgunun kendi kanıtı: JS kapalıyken girdiler ve hüküm ekranda
+duruyor — şerit tam da bunu söylüyor.
+
+Beşinci satır negatif kontrol: JS açıkken sayfa birebir aynı, şerit
+erişilebilirlik ağacına ve odak sırasına hiç girmiyor.
+
+#### Kontrast ölçümü İKİ KEZ yanlış çıktı — çapa yanlış ögedeydi
+
+İlk ölçüm başlık 2.96, gövde **1.43** dedi ve bir an "şerit okunmaz" sanıldı.
+Zemin olarak `noscript > div` alınmıştı; o dış PADDING sarmalayıcısı ve
+`backgroundColor` değeri `rgba(0,0,0,0)`. Gerçek kutu bir düzey içeride
+(`noscript > div > div`, `rgb(255,251,235)` = amber-50).
+
+Doğru çapayla:
+
+| öge | kontrast |
+|---|---|
+| başlık (amber-800) | **6.84** |
+| gövde (blue-950) | **14.17** |
+| bağlantı (blue-900) | **9.99** |
+| **kenarlık (amber-500)** | **2.05** ← eşiğin altı |
+
+Son satır gerçek bir kusurdu: kutuyu sayfadan ayıran tek görsel sınır ve
+WCAG 1.4.11 metin dışı kontrast eşiği 3. `border-amber-600` ile **3.04**;
+130/130 üretilen HTML'de yeni değer, eski değer **0**.
+
+**Ders: bir kontrast ölçümünde ZEMİNİ hangi ögeden okuduğunu doğrula.**
+Şeffaf bir sarmalayıcı, ölçümü sessizce anlamsız yapıyor — ve bu turda
+sahte bir "okunmaz" bulgusu ile gerçek bir kenarlık kusuru aynı ölçümde
+yan yana duruyordu.
+
+#### Kapı tuzağı: `npm run lint | tail -2` çıkış kodunu YUTUYOR
+
+İlk koşumda lint `no-html-link-for-pages` ile **düştü** ama zincir devam etti
+ve derleme çalıştı; bildirimdeki çıkış kodu `tail`'in koduydu. Belgede
+kayıtlı tuzak (*"kapıyı sınayacaksan komutu TEK BAŞINA çalıştır"*) bu turda
+yeniden ısırdı. Kapılar borusuz yeniden sürüldü: lint 0 · typecheck 0 ·
+build 0 · `arayuz-denetim` temiz · `ic-bilesen-denetim` temiz.
+
+#### Kapsam: site yüzeyleri ölçüldü, ŞERİT KONULMADI
+
+21 site yüzeyinde de `<noscript>` yok. Ama oradaki bozulma başka: `/tekrar`
+ve `/calisma-alanim` JS'siz **boş** görünüyor (veri `localStorage`da), arama
+kutusu sonuç getirmiyor. Boş bir liste yanlış bir sayı kadar yanıltıcı değil
+— ve o yüzeylerin boş durum metinleri zaten "henüz kayıt yok" diyor, ki
+JS'siz durumda bu **yanlış sebep** olurdu. Ölçüldü, kapsamı yazıldı,
+bu turda YAPILMADI.
