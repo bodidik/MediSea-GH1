@@ -152,14 +152,29 @@ function TabloBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'tablo' }>; 
         olmasi gerekiyor: icinde odaklanabilir hicbir oge yok, yani Tab ile
         buraya gelinemiyordu ve kirpilan kolonlar erisilemez kaliyordu.
         Acik taraftaki ayni kusur `app/lib/tablo.ts` ile kapatildi.
+
+        AD SABIT OLAMAZ: 40 premium konunun 36'sinda 2+ tablo var (194 blok)
+        ve hepsi ayni adi tasiyordu -- ayni rolu paylasan landmark'lar ayirt
+        edilebilir ad ister. Blok basligi ZATEN gorunur bir <h3 id> olarak
+        basiliyor (194/194 dolu, sayfa ici cakisma 0), o yuzden ad
+        `aria-labelledby` ile ORADAN aliniyor: metin kopyalanmiyor, iki
+        gerceklik olusmuyor. Baslik yoksa genel etikete dusuluyor.
       */}
-      <div data-tablo-kaydir tabIndex={0} role="region" aria-label="Tablo (yatay kaydırılabilir)" style={{
-        border: '0.5px solid #b8cfe8',
-        borderRadius: '8px',
-        overflowX: 'auto',
-        overflowY: 'hidden',
-        WebkitOverflowScrolling: 'touch',
-      }}>
+      <div
+        data-tablo-kaydir
+        tabIndex={0}
+        role="region"
+        {...(id && blok.baslik
+          ? { 'aria-labelledby': id }
+          : { 'aria-label': 'Tablo (yatay kaydırılabilir)' })}
+        style={{
+          border: '0.5px solid #b8cfe8',
+          borderRadius: '8px',
+          overflowX: 'auto',
+          overflowY: 'hidden',
+          WebkitOverflowScrolling: 'touch',
+        }}
+      >
         <table style={{
           width: '100%',
           minWidth: `${blok.kolonlar.length * enAzKolonGenisligi}px`,

@@ -26219,3 +26219,149 @@ derlemesinde, kapı geçici açılarak yapıldı ve kapı geri kondu.
 `globals.css` `pre` ve `.prose pre` için `overflow-x: auto` veriyor — aynı
 sınıfın ikinci adayı. Ölçüldü: **içerikte `<pre>` sayısı 0**, yani kod
 bloğu hiç kullanılmıyor ve kural bugün ölü.
+
+### AYNI SAYFADA ÜÇ TANE "Tablo (yatay kaydırılabilir)" — kendi düzeltmemin açtığı sınıf
+
+Yeni eksen: **aynı sayfada aynı rolü paylaşan landmark'lar ayırt edilebilir
+ad taşıyor mu?** ARIA bunu istiyor (aynı rolden birden çok landmark varsa
+adları farklı olmalı), çünkü ekran okuyucunun landmark listesi ad üzerinden
+geziliyor — iki özdeş satır arasında hangisinde olduğunu söyleyecek hiçbir
+şey yok.
+
+Eksen bu turda seçildi çünkü **bir önceki tur bu sınıfı kendisi üretti**:
+tablolara klavye erişimi eklenirken her kaba SABİT bir ad verilmişti
+(`aria-label="Tablo (yatay kaydırılabilir)"`).
+
+**14 canlı yüzey tarandı** (ana sayfa · `/topics` · branş · konu · `/tools` ·
+araç · `/uyelik` · `/tekrar` · `/calisma-alanim` · `/giris` · premium pano ·
+premium branş…). Sonuç net ve ayrımı kayda değer:
+
+| landmark ailesi | durum |
+|---|---|
+| `nav` (Branşlar · Kırıntı yolu · Bu sayfada · Araç sayfası gezinmesi · Aynı kategoriden araçlar) | **14/14 sayfada benzersiz** |
+| adsız `banner` · `main` · `contentinfo` | **doğru** — sayfada tek olan landmark ad istemez |
+| **`region` (tablo kapları)** | **tekrar eden tek aile** |
+
+Yani gezinme adlandırması turlar boyunca doğru kurulmuş; kusur yalnızca en
+son eklenen ailedeydi.
+
+#### Kapsam: 6 açık konu + 36 premium konu
+
+| taraf | tablo | 2+ tablolu sayfa |
+|---|---|---|
+| açık | 63 (52 konuda) | **6** |
+| **premium** | **194 (40 konuda)** | **36** |
+
+Premium taraf çok daha ağır: 9 tablolu bir konuda dokuz özdeş landmark.
+
+**Canlıda ölçüldü (önce):**
+
+| sayfa | kap | benzersiz ad |
+|---|---|---|
+| `nefroloji/asit-baz-kompanzasyon-ilkeleri` | 3 | **1** |
+| `gogus/sarkoidoz-ayirici-tani` | 2 | **1** |
+| `enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi` | **6** | **1** |
+
+#### AD KAYNAĞI TAHMİNLE DEĞİL ÖLÇÜLEREK SEÇİLDİ
+
+Üç aday vardı; ikisi ölçümle elendi.
+
+| aday | kapsam | sayfa içi çakışma |
+|---|---|---|
+| **sıra numarası** ("Tablo 1", "Tablo 2") | 63/63 | 0 — ama **ad bilgi taşımıyor** |
+| tablonun **ilk `<th>`** metni | 63/63 | **2 sayfada VAR** |
+| **en yakın önceki başlık** (yoksa bölüm başlığı) | **63/63** | **0** |
+
+İkinci aday ilk bakışta doğru görünüyor ama ilk `<th>` çoğu zaman satır
+etiketi kolonudur ve aynı sayfada tekrar ediyor:
+`prokalsitonin` → `["Belirteç","Belirteç","Ölçüt","Ölçüt","Ölçüt","Biyobelirteç"]`,
+`asit-baz` → `["Bozukluk","Bozukluk","Sapma"]`.
+
+Kazanan kaynak hem benzersiz hem betimleyici: *"Tablo: Acil Müdahale
+Algoritması"*, *"Tablo: Önerilen Sürveyans Zaman Çizelgesi (Thakker ve ark.
+2012 Kılavuzu)"*. Dağılımı da ölçüldü — 63 adın **21'i satır içi başlıktan**,
+**42'si bölüm başlığından** geliyor; 2153 bölümün yalnızca **1'inde** iki
+tablo var ve orada ikincisinin kendi satır içi başlığı olduğu için o sayfada
+da çakışma yok.
+
+**Premium tarafta kaynak daha da iyi:** blok başlığı ZATEN görünür bir
+`<h3 id>` olarak basılıyor (194/194 dolu, sayfa içi çakışma **0**), yani ad
+`aria-labelledby` ile ORADAN alınıyor — metin kopyalanmıyor, **ikinci bir
+gerçeklik oluşmuyor**.
+
+#### Üç küçük karar, üçü de ölçümle
+
+- **Emoji soyuluyor.** Bölüm başlıkları `📊 5. Referans Çalışma Verileri`
+  gibi; ekran okuyucu o glifi "grafik artan çubuk grafik" diye okuyor. Baştaki
+  harf/rakam olmayan karakterler atılıyor, numaralandırma korunuyor.
+- **`\btablo` içeren başlığa önek EKLENMİYOR.** Ölçüldü: 63 adın **0'ı**
+  "Tablo" ile BAŞLIYOR ama **4'ü içinde geçiriyor** ("Klinik Tablo: Adrenal
+  Kriz Belirtileri", "Özet Karşılaştırma Tablosu"). Başa bakan bir koşul
+  yazılsaydı **hiç ateşlemeyen ölü bir dal** olurdu — bu depoda kayıtlı
+  `gluco`/`weight` tuzağı.
+- **Sıra eki son çare.** Ad tekrar ederse " (2)" alıyor. Bugün **0 tablo**
+  buna düşüyor, ama içerik büyüdüğünde tek koruma o.
+
+#### Saf modül 2153 bölüm üzerinde sürüldü
+
+| ölçüt | sonuç |
+|---|---|
+| değişen bölüm | 62 |
+| **METNİ değişen bölüm** | **0** — vurgu ofsetleri güvende |
+| `<table>` önce → sonra | **63 → 63** |
+| üretilen ad | **63** · genel etikete düşen **0** · sıra eki alan **0** |
+| **sayfa içi çakışan ad** | **0** |
+| idempotens hatası | 0 · ikinci geçiş ad **tüketmiyor** |
+
+#### POZİTİF KONTROL, BENİM BEKLENTİMİ İKİ KEZ ÇÜRÜTTÜ
+
+17 kenar durumunun ikisi ilk koşumda düştü ve **ikisi de benim
+beklentimdeydi**: kaçırma sınamasında "Tablo: " önekini unutmuşum
+(kod doğru), uzunluk tavanını 76 sanmışım (önek 7 + ad 70 = **77**, kod
+doğru). Belgedeki kural yine işledi — *beklenti tutmadığında önce beklentiyi
+sına.*
+
+**Üçüncüsü GERÇEK bir kusur buldu ve pozitif kontrolün değerini gösteriyor.**
+Vekil çifti sınaması ilk yazımda emojiyi kesim noktasının DIŞINA koyuyordu ve
+kendiliğinden geçiyordu — yani hiçbir şey sınamıyordu. Emoji tam kesim
+noktasına (indeks 68) taşınınca **düştü**: `slice` yüksek vekili bırakıp
+düşüğü atıyor ve nitelik geçersiz UTF-16 taşıyor (`"AAAA\ud83d…"`). Yalnız
+kalan vekil artık atılıyor.
+
+**Bir pozitif kontrol ateşlemiyorsa, kontrolün kendisi kırıktır.**
+
+#### Doğrulama — ÖNCE/SONRA aynı sayfada, altısı negatif kontrol
+
+| ölçüt | CANLI (önce) | YEREL (sonra) |
+|---|---|---|
+| `asit-baz-kompanzasyon-ilkeleri` | 3 kap, **1 benzersiz ad** | 3 kap, **3 benzersiz ad** |
+| `sarkoidoz-ayirici-tani` — tekrar eden landmark | **`region … x2`** | **yok** |
+| `prokalsitonin…` | 6 kap, **1 benzersiz ad** | 6 kap, **6 benzersiz ad** |
+| **negatif** — okuma alanı karakter sayısı | 12909 · 7838 · 8140 | **üçü de BİREBİR** |
+| **negatif** — tablosuz konu (`addison`, `anemiler`) | — | kap **0** |
+| **negatif** — `tabindex`/`role` | — | `0` / `region` — değişmedi |
+| **negatif** — landmark listesi | — | 8 landmark, **tekrar eden 0** |
+| üretilmiş çıktı (52 konu) | — | `<table>` 63 · kap **63** · kapsız **0** · genel etiket **0** · çakışma **0** |
+
+Dördüncü satır bu değişikliğin tek gerçek riskiydi ve üç sayfada birden
+ölçüldü: vurgular karakter ofsetiyle saklanıyor, okuma alanının metni
+değişseydi kayıtlı vurgular silinirdi. Nitelik `textContent`e girmiyor.
+
+#### Premium doğrulama — kapı geçici açılarak
+
+| ölçüt | sonuç |
+|---|---|
+| `romatoloji/sle` | 4 kap · 4 benzersiz ad · **sarkan atıf 0** · tekrar eden landmark 0 |
+| `gastroenteroloji/pankreas-kanseri` (**9 tablo**) | 9 kap · **9 benzersiz ad** · dokuzu da taşıyor |
+| **hedef doğru öge mi** | **9/9** — `aria-labelledby` her kabın HEMEN ÖNCEKİ `<h3>` kardeşini gösteriyor |
+| kapı geri kondu mu | evet — dosya yedekle **birebir**, `ZZ_OLCUM` izi **0**, `git diff` boş |
+
+Üçüncü satır şart: `aria-labelledby` yanlış bir id'yi gösterse ad yine
+"benzersiz" görünürdü ama komşu tablonun başlığını okurdu.
+
+**Aktarılabilir kural: bir landmark'a SABİT ad vermek, o landmark'ın sayfada
+tek olduğunu varsaymaktır.** Bu depoda gezinme landmark'ları turlar boyunca
+tek tek adlandırıldı ve hepsi benzersizdi; kusur, İÇERİKTEN türeyen ve
+sayısı önceden bilinmeyen bir aile eklenince oluştu. Ad kaynağı içerikle
+birlikte büyümeli — ve o kaynağın sayfa içinde çakışmadığı ÖLÇÜLMELİ, çünkü
+ilk akla gelen kaynak (ilk `<th>`) burada 2 sayfada çakışıyordu.

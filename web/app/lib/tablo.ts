@@ -24,13 +24,85 @@
 // saklandığı için bu şart, ve sarmalayıcı `<div>` de metin taşımıyor.
 // (Aynı gerekçe içindekiler bloğu eklenirken de ölçülmüştü.)
 //
-// `role="region"` + `aria-label`: `tabindex="0"` tek başına kaydırmayı açar
-// ama odaklanan kabın adı olmaz; ekran okuyucu adsız bir grup duyurur.
+// `role="region"` + ad: `tabindex="0"` tek başına kaydırmayı açar ama
+// odaklanan kabın adı olmaz; ekran okuyucu adsız bir grup duyurur.
+//
+// ─────────────────────────────────────────────────────────────────────────
+// AD SABİT OLAMAZ — aynı sayfada iki tablo varsa iki AYNI ADLI landmark
+// oluşuyordu. ARIA aynı rolü paylaşan landmark'ların ayırt edilebilir ad
+// taşımasını ister; iki "Tablo (yatay kaydırılabilir)" bölgesi arasında
+// gezinen kullanıcı hangisinde olduğunu bilemiyordu. Ölçüldü (canlı):
+// `asit-baz-kompanzasyon-ilkeleri` 3, `sarkoidoz-ayirici-tani` 2 özdeş ad.
+//
+// Ad kaynağı ÖLÇÜLEREK seçildi (63 tablo, 52 konu):
+//
+//   | kaynak                              | kapsam | sayfa içi çakışma |
+//   |-------------------------------------|--------|-------------------|
+//   | tablonun ilk `<th>` metni           | 63/63  | 2 sayfada VAR     |
+//   | en yakın önceki başlık (+ bölüm b.) | 63/63  | **0**             |
+//
+// İlk `<th>` çoğu zaman satır etiketi kolonudur ("Bozukluk", "Belirteç") ve
+// aynı sayfada tekrar ediyor; başlık hem benzersiz hem betimleyici
+// ("Acil Müdahale Algoritması"). Yine de son çare olarak sıra eki var:
+// ad tekrar ederse " (2)" alıyor.
 
 /** CSS ve ölçüm bu nitelikten tutunuyor. */
 const NITELIK = "data-tablo-kaydir";
-const ETIKET = "Tablo (yatay kaydırılabilir)";
-const EK = ` ${NITELIK} tabindex="0" role="region" aria-label="${ETIKET}"`;
+/** Adı çıkarılamayan tablo için — bu depoda ölçüldü: 0 tablo buna düşüyor. */
+const GENEL_ETIKET = "Tablo (yatay kaydırılabilir)";
+/** Uzun bir başlık ekran okuyucuda gürültü olur. */
+const AZAMI_AD = 70;
+
+function nitelikler(etiket: string): string {
+  return ` ${NITELIK} tabindex="0" role="region" aria-label="${etiket}"`;
+}
+
+/**
+ * Başlık HTML'inden ad üretir.
+ *
+ * Varlıklar ÖNCE çözülüp SONRA yeniden kaçırılıyor: `&amp;` taşıyan bir
+ * başlığı olduğu gibi niteliğe koymak `&amp;amp;` üretirdi, hiç kaçırmamak
+ * ise ham `&` bırakırdı.
+ */
+function adTemizle(ham: string): string {
+  const duz = ham
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0*39;|&apos;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Baştaki süsleme (emoji, madde işareti) ada girmemeli: ekran okuyucu onu
+  // "grafik artan çubuk grafik" diye okuyor. Rakam ve harf korunuyor, yani
+  // "📊 5. Referans Verileri" -> "5. Referans Verileri".
+  const suslemesiz = duz.replace(/^[^\p{L}\p{N}]+/u, "").trim();
+  // `slice` VEKİL ÇİFTİNİ ortadan bölebiliyor: kesim noktasında bir emoji
+  // varsa geriye yalnız yüksek vekil kalıyor ve nitelik geçersiz UTF-16
+  // taşıyor. Ölçüldü (68 harf + emoji): `"AAAA\ud83d…"`. Yalnız kalan vekil
+  // atılıyor.
+  const kirpik =
+    suslemesiz.length > AZAMI_AD
+      ? suslemesiz.slice(0, AZAMI_AD - 1).replace(/[\uD800-\uDBFF]$/, "").trimEnd() + "…"
+      : suslemesiz;
+
+  return kirpik
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Tablodan ÖNCEKİ en yakın başlığın metni (aynı bölüm içinde). */
+function oncekiBaslik(html: string, tabloBas: number): string {
+  const once = html.slice(0, tabloBas);
+  const hepsi = [...once.matchAll(/<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/g)];
+  if (!hepsi.length) return "";
+  return adTemizle(hepsi[hepsi.length - 1][1]);
+}
 
 /**
  * Tablo hemen öncesinde `overflow-x-auto` taşıyan bir `<div>` var mı?
@@ -53,13 +125,46 @@ function oncekiKaydiranSarmalayici(html: string, tabloBas: number): [number, num
   return [acilis, kirpik.length];
 }
 
+export type TabloAdBaglami = {
+  /** Bölümün kendi başlığı — bölüm içinde satır içi başlık yoksa ad buradan. */
+  bolumBasligi?: string;
+  /**
+   * SAYFA ömrü boyunca kullanılan adlar. Bölüm bölüm çağrıldığı için kümenin
+   * çağrı yerinde tutulması gerekiyor — `kisaltmaAc`taki `gorulenKisaltmalar`
+   * ile aynı kalıp.
+   */
+  kullanilanAdlar?: Set<string>;
+};
+
 /**
  * Bölüm HTML'indeki her `<table>`ı klavyeyle kaydırılabilir bir kaba alır.
  * Zaten `overflow-x-auto` sarmalayıcısı olan tabloda YENİ kap açmaz,
  * var olan kaba nitelikleri ekler.
  */
-export function tabloKaydir(html: string): string {
+export function tabloKaydir(html: string, baglam?: TabloAdBaglami): string {
   if (!html || html.indexOf("<table") === -1) return html;
+
+  const kullanilan = baglam?.kullanilanAdlar;
+  const bolumAdi = baglam?.bolumBasligi ? adTemizle(baglam.bolumBasligi) : "";
+
+  const etiketUret = (tabloBas: number): string => {
+    const ad = oncekiBaslik(html, tabloBas) || bolumAdi;
+    // "Tablo: Klinik Tablo: …" olmasın diye: başlık zaten "tablo" diyorsa
+    // önek eklenmiyor. Ölçüt BAŞTA değil İÇİNDE arıyor — ölçüldü, 63 adın
+    // 0'ı "Tablo" ile başlıyor ama 4'ü içinde geçiriyor ("Klinik Tablo: …",
+    // "Özet Karşılaştırma Tablosu"). Başa bakan bir koşul ölü kalırdı.
+    const taban = !ad ? GENEL_ETIKET : /\btablo/i.test(ad) ? ad : `Tablo: ${ad}`;
+    if (!kullanilan) return taban;
+    if (!kullanilan.has(taban)) {
+      kullanilan.add(taban);
+      return taban;
+    }
+    let n = 2;
+    while (kullanilan.has(`${taban} (${n})`)) n++;
+    const benzersiz = `${taban} (${n})`;
+    kullanilan.add(benzersiz);
+    return benzersiz;
+  };
 
   let sonuc = "";
   let imlec = 0;
@@ -85,10 +190,14 @@ export function tabloKaydir(html: string): string {
       if (html.slice(ab, ae).includes(NITELIK)) {
         sonuc += html.slice(imlec, tabloSonu);
       } else {
-        sonuc += html.slice(imlec, ae - 1) + EK + html.slice(ae - 1, tabloSonu);
+        sonuc += html.slice(imlec, ae - 1) + nitelikler(etiketUret(bas)) + html.slice(ae - 1, tabloSonu);
       }
     } else {
-      sonuc += html.slice(imlec, bas) + `<div${EK} style="overflow-x:auto">` + html.slice(bas, tabloSonu) + "</div>";
+      sonuc +=
+        html.slice(imlec, bas) +
+        `<div${nitelikler(etiketUret(bas))} style="overflow-x:auto">` +
+        html.slice(bas, tabloSonu) +
+        "</div>";
     }
     imlec = tabloSonu;
   }

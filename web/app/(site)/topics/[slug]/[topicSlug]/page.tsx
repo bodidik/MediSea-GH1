@@ -284,6 +284,13 @@ export default async function TopicDetailPage({
    */
   const gorulenKisaltmalar = new Set<string>();
 
+  /**
+   * Tablo bölgelerinin adları SAYFA ömrü boyunca benzersiz olmalı: aynı ad
+   * iki landmark'a verilirse ekran okuyucu ikisini ayırt edemiyor. Küme
+   * bölüm bölüm dolduğu için `gorulenKisaltmalar` gibi burada tutuluyor.
+   */
+  const kullanilanTabloAdlari = new Set<string>();
+
   const topicItem = {
     slug: topicSlug,
     branch: slug,
@@ -304,7 +311,11 @@ export default async function TopicDetailPage({
           html: tabloKaydir(
             basliklariDuzenle(
               kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar)
-            )
+            ),
+            {
+              bolumBasligi: s.heading || s.title || "",
+              kullanilanAdlar: kullanilanTabloAdlari
+            }
           ),
           visibility: s.visibility || "V"
         }))
