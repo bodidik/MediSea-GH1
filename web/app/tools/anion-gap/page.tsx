@@ -168,7 +168,17 @@ export default function AnionGapPage() {
           {albDurum === "bozuk" && (
             <div className="mt-3 bg-amber-50 border-2 border-amber-300 rounded-2xl p-3" role="alert">
               <p className="text-[11px] leading-relaxed text-amber-900">
-                <strong>Albümin hesaba KATILMADI</strong> — beklenen aralık {String(SINIRLAR.albumin[0]).replace(".", ",")}–{String(SINIRLAR.albumin[1]).replace(".", ",")} g/dL.
+                {/*
+                  Ondalik ayirici NOKTA: bu satir bir donem `.replace(".", ",")`
+                  ile virgul basiyordu ve uygulamanin TEK virgullu ciktisiydi.
+                  Olculdu -- icerik 2309 nokta / 71 virgul (71'in cogu kimyasal
+                  ad: 1,25(OH)2D, beta-(1,3)-D-glukan), arac ornek degerleri
+                  16 nokta / 0 virgul, arac gorunur metni 185 nokta / 0 virgul,
+                  130 aracin 129'u nokta. Dahasi AYNI EKRAN yedi satir yukarida
+                  "+2.5" diyordu. Kardes araclar (pni, gnri) AYNI sabiti
+                  (SINIRLAR.albumin) noktayla basiyor.
+                */}
+                <strong>Albümin hesaba KATILMADI</strong> — beklenen aralık {SINIRLAR.albumin[0]}–{SINIRLAR.albumin[1]} g/dL.
                 Düzeltilmiş AG gösterilmiyor; aşağıdaki değer düzeltmesiz anyon açığıdır.
               </p>
             </div>

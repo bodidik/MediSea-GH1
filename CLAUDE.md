@@ -26365,3 +26365,96 @@ tek tek adlandırıldı ve hepsi benzersizdi; kusur, İÇERİKTEN türeyen ve
 sayısı önceden bilinmeyen bir aile eklenince oluştu. Ad kaynağı içerikle
 birlikte büyümeli — ve o kaynağın sayfa içinde çakışmadığı ÖLÇÜLMELİ, çünkü
 ilk akla gelen kaynak (ilk `<th>`) burada 2 sayfada çakışıyordu.
+
+### AYNI EKRAN HEM "+2.5" HEM "0,5–7" DİYORDU — uygulamanın tek virgüllü çıktısı
+
+Yeni eksen: **sayı biçimlendirmesi tekdüze mi?** Türkçede ondalık ayırıcı
+virgül, binlik ayırıcı noktadır; bu depoda `parseLocaleNumber` GİRDİ tarafında
+ikisini de kabul ediyor ama ÇIKTI tarafı hiç ölçülmemişti.
+
+**Hipotezim ölçümle ÇÜRÜDÜ ve bu kayda değer.** Beklentim şuydu: bir araç
+`toLocaleString("tr-TR")` ile binlik ayırıcı basıyorsa (`4000` → `"4.000"`),
+o değeri başka bir aracın girdisine kopyalayan kullanıcı **1000 kat** hata
+alır — çünkü `parseLocaleNumber("4.000")` bugün **4.0** okuyor (belgede
+kayıtlı açık madde). Ölçüldü: **130 aracın 0'ında** sayısal
+`toLocaleString`/`Intl.NumberFormat` var. Zincir kurulmuyor.
+
+#### Ölçülen sözleşme: NOKTA — ve tek istisna
+
+| yüzey | nokta | virgül |
+|---|---|---|
+| araç örnek değerleri (`placeholder`) | **16** | **0** |
+| araç görünür metni (kaynak, literal) | **185** (54 araçta) | **0** |
+| içerik prozası (622 JSON) | **2309** | 71 |
+| araç çalışma zamanı çıktısı | **129 / 130** | **1** |
+
+İçerikteki 71'in ezici çoğunluğu **kimyasal adlandırma** — `1,25(OH)₂D` ·
+`β-(1,3)-D-glukan` · `1,20-eikozandiol`; üretilmiş çıktıda tek tek okundu ve
+gerçek ondalık yalnızca **2** (`%2,5` ve `%17,8`, ikisi de yazarın prozası,
+içerik kullanıcının sorumluluğunda).
+
+Tek kod istisnası `anion-gap`ti ve **statik metin taraması onu göremiyordu**,
+çünkü dönüşüm çalışma zamanında yapılıyordu:
+
+```
+{String(SINIRLAR.albumin[0]).replace(".", ",")}–{String(SINIRLAR.albumin[1]).replace(".", ",")}
+```
+
+#### Ayrışma İKİ DÜZEYDE birden ölçüldü
+
+**1) Kardeş araçlarla — AYNI sabit, iki ayrı gösterim.** `SINIRLAR.albumin`
+paylaşılan `lib/asit-baz.ts` sabiti ve üç araç onu ekrana basıyor. Canlıda
+yan yana ölçüldü:
+
+| araç | ekranda |
+|---|---|
+| `anion-gap` | "beklenen aralık **0,5–7** g/dL" |
+| `pni` | "albümin (**0.5–7** g/dL)" |
+
+**2) AYNI DOSYA, AYNI EKRAN — yedi satır arayla.** Albümin alanının hemen
+altındaki ipucu şunu diyor:
+
+> *"her 1 g/dL albumin düşüşü için AG'ye **+2.5** eklenir."*
+
+Yani araç kendi içinde çelişiyordu: bir satırda nokta, yedi satır sonra
+virgül. Bu, dış bir ölçüte hiç bakmadan görülebilecek bir tutarsızlık —
+GKS'nin "297 / 15"i ve MELD'in eksi skoruyla aynı aile, bu kez biçimde.
+
+#### Yön TARTIŞMAYLA DEĞİL SAYIYLA seçildi
+
+Virgül Türkçe tipografide doğru; ama uygulamanın ölçülen sözleşmesi nokta ve
+**girdi örnekleri kullanıcıya noktayı öğretiyor** (16 placeholder, 0 virgül).
+185 literal + 16 örnek + 2309 içerik geçişini virgüle çevirmek bir TASARIM
+kararı olurdu ve tek başına alınmaz; tek istisnayı hizalamak ise aracın kendi
+ölçüsüne dönmesi. `heart-score`/`sledai2k`/`rass` turlarındaki kalıbın aynısı.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra (yerel üretim) |
+|---|---|---|
+| bozuk albümin uyarısı | "beklenen aralık **0,5–7** g/dL" | "**0.5–7** g/dL" |
+| sayfada virgüllü ondalık | 1 | **0** |
+| **negatif** — aynı ekrandaki "+2.5" ipucu | var | **var** |
+| **negatif** — belgede KAYITLI vaka (Na 140 · Cl 100 · HCO₃ 24 · alb 2.0) | 21 · "Düzeltmesiz AG: 16" | **21 · 16 — birebir** |
+| **negatif** — varsayılan form | 12 · Normal Aralık | **12 · Normal Aralık** |
+| **negatif** — çekirdek alan bozuk (Na `abc`) | "–" + "Sodyum, klorür ve bikarbonat makul bir değer bekliyor" | **aynı** |
+| **negatif** — düz AG bozuk albümine rağmen basılıyor mu | evet | **evet** |
+| üretilmiş çıktı — 130 araç sayfası | — | **254 nokta · 0 virgül** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Dördüncü satır önemli: değişiklik yalnızca GÖSTERİMDE, aritmetikte değil —
+belgede kayıtlı iki sayı birebir çıktı.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN: liderlik XP'si
+
+`liderlik/page.tsx` `user.xp.toLocaleString("tr-TR")` ile **binlik** ayırıcı
+basıyor (`12500` → `12.500`). Depodaki tek sayısal `toLocaleString` bu ve
+**kusur değil**: Türkçede binlik ayırıcı noktadır, değer bir oyunlaştırma
+puanı ve hiçbir ayrıştırıcıya geri girmiyor. Kalan dört `toLocaleString`
+TARİH biçimlendirmesi. Ölçüldü, gerekçesi yazıldı.
+
+**Aktarılabilir kural: bir biçim sözleşmesini ararken KAYNAK METNİ taramak
+yetmiyor.** Bu depodaki tek aykırı çıktı bir literal değil, çalışma zamanında
+kurulan bir `replace` idi; 185 literal geçişi sayan tarama onu "0 virgül"
+diye raporluyordu. Sözleşmeyi ÜRETİLMİŞ ÇIKTIDAN say — orada dönüşüm zaten
+uygulanmış oluyor.
