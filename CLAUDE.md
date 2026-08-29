@@ -25667,3 +25667,96 @@ yazana bırakılması kararıyla aynı kovada; ölçüldü, gerekçesi koda yaz�
 Kapı geri kondu ve doğrulandı: canlıda sayfa yeniden **"Erişim Kısıtlı"**,
 kaynakta `ZZ_OLCUM` izi **0**, `page.tsx` yedekle birebir. Kapılar: lint ·
 typecheck · build 637/637. Dosya saf CRLF (770/770) — biçim korundu.
+
+### BİTİŞ EKRANI SINIFI SÜPÜRÜLDÜ — üç motorun üçünde de aynı boşluk, biri ÖLÜ KODDU
+
+Geçen tur `QuizEngine`in SONUÇ ekranında iki kusur bulundu (başlık yok ·
+duyuru yok) ve dersi netti: **koşullu render edilen bitiş dalı, soru
+durumunda alınan ölçümde görünmüyor.** Deponun "kopyayı say" kuralı gereği
+kardeş motorların bitiş dalları da sürüldü — kapı geçici açılıp gerçek
+içerikle.
+
+| motor | bitiş dalı | başlık | duyuru |
+|---|---|---|---|
+| `QuizEngine` | sonuç ekranı | geçen tur düzeltildi | geçen tur düzeltildi |
+| **`FlashcardPlayer`** | "set bitti" ekranı | **YOK** | **YOK** |
+| **`VakaEngine`** | "Vaka tamamlandı!" | (satır içi) | **YOK** — ve bayrağın kendisi 6 vakada HİÇ çıkmıyordu |
+
+#### Bulgu 1 — VAKA TAMAMLANMA BAYRAĞI İÇERİK ALANINA BAĞLIYDI
+
+Koşul `isLast && sonrakiAcik` idi. `sonrakiAcik` yalnızca "🔍 Klinik seyir…"
+düğmesiyle açılıyor, o düğme de `adim.sonraki_bilgi` **varsa** çiziliyor.
+Yani son adımda o alan yoksa bayrak hiç görünmüyordu.
+
+Ölçüldü — 11 vakanın **6'sında** son adımda `sonraki_bilgi` YOK:
+`feokromositoma-vaka-1` · `men1-sendromu-vaka-1` · `tkp-vaka-1` ·
+`vip-vaka-1` · `vip-vaka-2` · `vip-vaka-3`.
+
+Canlıda sürüldü (`tkp-vaka-1`): kullanıcı son soruyu cevaplıyor, açıklamayı
+okuyor ve **"Vaka tamamlandı" geçişi 0** — vakanın bittiğine dair hiçbir
+işaret yok. Tek çıkış "← Konuya dön" bağlantısı.
+
+Bu, deponun imza sınıfının içerik tarafındaki hâli: **bir DURUM göstergesi,
+onunla ilgisi olmayan bir içerik alanının varlığına bağlanmış.**
+
+#### Bulgu 2 — İKİ MOTORDA DA BİTİŞ DUYURULMUYORDU
+
+`VakaEngine`in `role="status"` bölgesi koşulsuz basılıyor ve her cevabı
+duyuruyor ("Yanlış. Doğru cevap B.") — ama tamamlanma bayrağı o bölgenin
+DIŞINDA ayrı bir `<div>`di. Ölçüldü (bayrağın ÇIKTIĞI `sarkoidoz-vaka-1`
+vakasında): bayrak ekranda **var**, duyuruda **yok**.
+
+`FlashcardPlayer`da durum `QuizEngine`inkiyle birebir aynıydı: kart
+görünümünde hem `h1` hem `role="status"` var ("Kart 1 / 65. Soru: …"), set
+bitince o görünüm tümden sökülüyor ve bitiş ekranında **başlık 0, canlı bölge
+0**.
+
+#### Çareler — üçü de mevcut kalıba hizalandı
+
+- **Vaka**: `vakaBitti = isLast && cevapVerildi && (sonrakiAcik ||
+  !adim.sonraki_bilgi)`. Alan VARSA davranış değişmiyor (önce "Vaka Sonu"
+  metni okunuyor, sonra bayrak); yoksa bayrak cevaptan hemen sonra çıkıyor.
+  Bayrak ve duyuru **aynı koşuldan** besleniyor — iki gerçeklik olmasın.
+- **Flashcard**: `<div>` → `<h1>` (görünüm satır içi ezmeyle korundu) ve skor
+  satırına `role="alert"`.
+- `status` değil `alert` seçimi ikisinde de aynı gerekçeyle: kart koşullu
+  render ediliyor, `status` ilk mesajı kaçırırdı.
+
+#### Doğrulama — canlıda değil YEREL ÜRETİM derlemesinde (kapı arkası), altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `tkp-vaka-1` (alan YOK) bayrak | **0** | **var** |
+| `tkp-vaka-1` duyuru | — | **"Yanlış. Doğru cevap B. Vaka tamamlandı."** |
+| **negatif** — aynı vakada 1. adım | — | bayrak **yok** (yalnız son adımda) |
+| **negatif** — `sarkoidoz-vaka-1` (alan VAR), adım 1–3 | bayrak yok | **bayrak yok** |
+| **negatif** — aynı vaka, son adım CEVAP sonrası | bayrak yok | **bayrak yok** — "Vaka Sonu" metni önce okunuyor |
+| **negatif** — aynı vaka, "Vaka Sonu" açıldıktan sonra | bayrak var | **bayrak var + duyuru** |
+| flashcard bitiş başlığı | **0** | **`h1` "İmmün Trombositopeni (İTP) · set bitti"** |
+| flashcard bitiş duyurusu | **0** | **`alert` "65 kartın 1 tanesini biliyorsun · 64 kart kaldı"** |
+| flashcard `h1` görünümü | — | 11px · **ağırlık 400** · system-ui · üst boşluk **0px** · uppercase · 0.88px · `rgb(74,106,138)` |
+| **negatif** — flashcard KART görünümü | `h1` + `status` | **değişmedi** |
+| her durumda `h1` sayısı | — | **tam 1** |
+
+Dördüncü ve beşinci satır bu düzeltmenin asıl riskiydi: bayrağı erkene almak,
+"Vaka Sonu" metnini okunmadan atlatabilirdi. Almadı.
+
+Dokuzuncu satır `globals.css`in h1 tuzağının (serif + 24px üst boşluk) satır
+içi ezmeyle karşılandığını gösteriyor — orijinal `<div>` ağırlık vermediği
+için `fontWeight: 'inherit'` ile 400 korundu.
+
+#### Ölçüm tuzakları
+
+- **"Biliyorum" ilerletmiyor, İŞARETLİYOR.** İlk sürücü onu ilerletme düğmesi
+  sanıp 80 tur döndü ve sayaç **1/65**'te kaldı; her tıklama işareti açıp
+  kapatıyordu. Çapa `^Sonraki` yapılınca 65 kart geçildi.
+- **`innerText` yine `uppercase` uyguladı**: bitiş metni kaynakta
+  "set bitti", ekranda "SET BİTTİ" ve `/set bitti/` deseni tutmadı.
+  `textContent` gerçeği verdi. Bu oturumda üçüncü tekrar.
+- **Vaka akışı iki basamaklı**: cevap → "🔍 Klinik seyir…" → "Sonraki Adım".
+  Bunu bilmeden yazılan sürücü aynı adımda takılı kalıyor ve "vaka
+  tamamlanmıyor" gibi görünüyor.
+
+Kapılar: lint · typecheck · build **637/637**. İki kapı da geri kondu ve
+canlıda doğrulandı ("Erişim Kısıtlı"); kaynakta `ZZ_OLCUM` izi **0**.
+`VakaEngine` saf CRLF (532/532), `FlashcardPlayer` saf LF — ikisi de korundu.

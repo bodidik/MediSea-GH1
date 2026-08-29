@@ -244,13 +244,37 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
             border: '0.5px solid #b8cfe8', borderRadius: '16px',
             background: '#f5f9ff', padding: '2rem', textAlign: 'center',
           }}>
-            <div style={{ fontSize: '11px', color: '#4a6a8a', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+            {/**
+              * BAŞLIK + DUYURU — bitiş ekranı bir dönem İKİSİNİ DE taşımıyordu
+              * (ölçüldü: `h1/h2/h3` 0, canlı bölge 0).
+              *
+              * Kart görünümünde ikisi de VAR: `h1` set adı, `role="status"`
+              * her kartta "Kart 1 / 65. Soru: …" diye duyuruyor. Set bitince
+              * o görünüm tümden sökülüyor ve ekran okuyucu tam da skorun
+              * açıklandığı anda susuyordu.
+              *
+              * Bu, aynı oturumda `QuizEngine`in sonuç ekranında kapatılan
+              * sınıfın ÜÇÜNCÜ kopyası (öteki ikisi: quiz sonucu, vaka
+              * tamamlanma bayrağı). Kopyayı say kuralı: bir bitiş ekranı
+              * düzeltilince kardeşleri de sayılmalı.
+              *
+              * `status` DEĞİL `alert`: bu kart koşullu render ediliyor, yani
+              * içerik değişmeden önce DOM'da bulunmuyor.
+              *
+              * Görünüm DEĞİŞMİYOR: `globals.css` h1'e serif + 24px üst boşluk
+              * veriyor, ikisi de satır içi ezmeyle geri alınıyor.
+              */}
+            <h1 style={{
+              fontSize: '11px', color: '#4a6a8a', letterSpacing: '0.08em',
+              textTransform: 'uppercase', fontFamily: 'inherit', fontWeight: 'inherit',
+              margin: 0, lineHeight: 'inherit',
+            }}>
               {topic} · set bitti
-            </div>
+            </h1>
             <div style={{ fontSize: '44px', fontWeight: 700, color: renk, margin: '0.5rem 0' }}>
               %{oran}
             </div>
-            <div style={{ fontSize: '13px', color: '#4a6a8a' }}>
+            <div role="alert" style={{ fontSize: '13px', color: '#4a6a8a' }}>
               {cards.length} kartın {bilinen.size} tanesini biliyorsun
               {bilinmeyenler.length > 0 && ` · ${bilinmeyenler.length} kart kaldı`}
             </div>

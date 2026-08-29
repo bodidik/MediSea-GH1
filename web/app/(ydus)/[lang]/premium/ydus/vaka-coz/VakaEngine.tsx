@@ -108,6 +108,10 @@ function AdimKarti({
 
   const cevapVerildi = secim !== null;
   const dogruMu = secim === adim.dogru;
+  /* Vaka BİTTİ sayılır: son adım cevaplandı VE okunacak bir "vaka sonu"
+     metni kalmadı (ya açıldı ya da hiç yok). Aşağıdaki bayrak ve sesli
+     duyuru AYNI koşuldan besleniyor — iki gerçeklik olmasın. */
+  const vakaBitti = isLast && cevapVerildi && (sonrakiAcik || !adim.sonraki_bilgi);
   /* Şık açıklamaları iki addan biriyle gelebiliyor; hiç gelmeyebilir de.
      Korumasız okuma bir vakayı ÇÖKERTİYORDU (bkz. Adim tipindeki not). */
   const sikAciklamalari = adim.secenekAciklamalari ?? adim.aciklamalar;
@@ -235,9 +239,8 @@ function AdimKarti({
           içerik değişmeden önce DOM'da bulunsun. */}
       <div role="status" className="sr-only">
         {cevapVerildi
-          ? dogruMu
-            ? 'Doğru cevap.'
-            : `Yanlış. Doğru cevap ${adim.dogru}.`
+          ? (dogruMu ? 'Doğru cevap.' : `Yanlış. Doğru cevap ${adim.dogru}.`) +
+            (vakaBitti ? ' Vaka tamamlandı.' : '')
           : ''}
       </div>
 
@@ -361,7 +364,27 @@ function AdimKarti({
               </button>
             )}
 
-            {isLast && sonrakiAcik && (
+            {/**
+              * TAMAMLANMA İŞARETİ İÇERİK ALANINA BAĞLIYDI — ölçüldü.
+              *
+              * Koşul bir dönem `isLast && sonrakiAcik` idi. `sonrakiAcik`
+              * yalnızca "🔍 Klinik seyir…" düğmesiyle açılıyor, o düğme de
+              * `adim.sonraki_bilgi` VARSA çiziliyor. Yani son adımda o alan
+              * yoksa bayrak HİÇ görünmüyordu:
+              *
+              *   11 vakanın 6'sında son adımda `sonraki_bilgi` YOK
+              *   -> feokromositoma-vaka-1 · men1-sendromu-vaka-1 ·
+              *      tkp-vaka-1 · vip-vaka-1 · vip-vaka-2 · vip-vaka-3
+              *
+              * Kullanıcı son soruyu cevaplıyor, açıklamayı okuyor ve vakanın
+              * bittiğine dair hiçbir işaret almıyordu. Canlıda sürülerek
+              * doğrulandı (tkp-vaka-1: "Vaka tamamlandı" 0 geçiş).
+              *
+              * `!adim.sonraki_bilgi` dalı eklendi: alan VARSA davranış
+              * DEĞİŞMİYOR (önce "Vaka Sonu" metni okunuyor, sonra bayrak),
+              * yoksa bayrak cevaptan hemen sonra çıkıyor.
+              */}
+            {vakaBitti && (
               <div style={{
                 padding: '.75rem 1.1rem', background: '#f0fbf5',
                 display: 'flex', alignItems: 'center', gap: '8px',
