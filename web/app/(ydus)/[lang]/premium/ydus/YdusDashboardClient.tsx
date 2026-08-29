@@ -175,7 +175,34 @@ export default function YdusDashboardClient({
         {/* METRİK KARTLARI */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
           <div className="bg-white rounded-xl border border-slate-200 p-4">
-            <p className="text-[11px] text-slate-400 mb-1">Genel ilerleme</p>
+            {/**
+              * ETİKET NE ÖLÇTÜĞÜNÜ SÖYLÜYOR — eskiden "Genel ilerleme" diyordu.
+              *
+              * Sayı KATALOG tamamlanmışlığı: `readyTopics / totalTopics`, yani
+              * ilan edilen 58 konunun 41'inin hazır olması. Kullanıcının
+              * çalışmasıyla hiçbir ilgisi yok ve kullanıcı ne yaparsa yapsın
+              * değişmiyor.
+              *
+              * Ölçüldü (canlı): dört metrik kartı yan yana duruyor —
+              *   "Genel ilerleme %71" · "Hazır konu 41/58" · "Toplam soru 379"
+              *   · "Puanınız 0 xp"
+              * Dördüncüsü kullanıcının KENDİ verisi. Bir çalışma uygulamasında
+              * "Puanınız"ın yanına konmuş etiketsiz bir "ilerleme" yüzdesi,
+              * ödeme yapan kullanıcıya kendi ilerlemesi gibi okunuyor — üstelik
+              * %71 gibi yüksek ve hiç düşmeyen bir sayı.
+              *
+              * İkinci işaret: sayı komşu kartın AYNISI (41/58 = %70.7 → 71).
+              * Yani kart yeni bir bilgi vermiyordu, yalnızca yanlış bir iddia
+              * taşıyordu.
+              *
+              * Kardeş yüzeyler zaten dürüst: branş kartları "12/16 konu hazır"
+              * diyor ve çubuğu o metnin hemen yanında.
+              *
+              * Kullanıcının gerçek ilerlemesini basmak AYRI bir iş: konu bazlı
+              * tamamlanma verisi yok (elde yalnızca `xp` ve `completedModules`
+              * var, ikisi de zaten ayrı yerlerde gösteriliyor).
+              */}
+            <p className="text-[11px] text-slate-400 mb-1">Hazır konu oranı</p>
             <p className="text-2xl font-semibold text-slate-800">%{progressPct}</p>
           </div>
           <div className="bg-white rounded-xl border border-slate-200 p-4">

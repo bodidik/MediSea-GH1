@@ -23961,3 +23961,73 @@ Branş dosyaları sayılıp ilk kategori DIŞINDA hazır konusu olan branşlar
 seçilince (nefroloji, endokrinoloji) ölçüm anlamlı hâle geldi. **Bir
 etkileşimi ölçerken, o etkileşimin gözlenebilir bir çıktı ürettiği veriyi
 önce SAY.**
+
+### "GENEL İLERLEME %71" KULLANICININ DEĞİL KATALOĞUN İLERLEMESİYDİ
+
+Yeni eksen: **ekrandaki bir sayının ETİKETİ, o sayının ne olduğunu söylüyor
+mu?** Bu depoda "ilan mı gerçek mi" sınıfı defalarca işledi ama hep bir
+İDDİA ile bir DOSYA arasındaydı; bu kez iddia ile ÖLÇÜLEN BÜYÜKLÜK arasında.
+
+Premium panosunda dört metrik kartı yan yana duruyor. Canlıda ölçüldü:
+
+| etiket | değer | ne ölçüyor |
+|---|---|---|
+| **Genel ilerleme** | **%71** | **KATALOG** — `readyTopics / totalTopics` |
+| Hazır konu | 41/58 | katalog |
+| Toplam soru | 379 | katalog |
+| Puanınız | 0 xp | **KULLANICININ kendi verisi** |
+
+Dördüncü kart kullanıcıya ait. Bir çalışma uygulamasında "Puanınız"ın yanına
+konmuş, niteleyicisi olmayan bir "ilerleme" yüzdesi, ödeme yapan kullanıcıya
+KENDİ ilerlemesi gibi okunuyor — üstelik %71 gibi yüksek ve kullanıcı ne
+yaparsa yapsın değişmeyen bir sayı. Ekranda hiçbir yerde "bu içerik
+hazırlığıdır" demiyordu.
+
+**İkinci işaret sayının kendisinde:** 41/58 = %70.7 → **71**, yani kart komşu
+kartın AYNISINI basıyor. Yeni bir bilgi vermiyor, yalnızca yanlış bir iddia
+taşıyordu.
+
+Etiket `Hazır konu oranı` oldu — sayı ve görünüm aynı, değişen yalnızca
+neyin ölçüldüğünün söylenmesi.
+
+#### KARDEŞ YÜZEYLER ZATEN DÜRÜSTTÜ — kopya sayıldı
+
+| yüzey | ölçülen | verdikt |
+|---|---|---|
+| pano — branş kartları | "12/16 konu hazır · 86 soru" + çubuk, ikisi yan yana | **dürüst** |
+| `FlashcardPlayer` | "%N" ve "N biliniyor" — işaretlenen kart oranı | dürüst (gerçekten kullanıcının) |
+| `/uyelik` | "Bildiklerini işaretle… **ilerlemen kayıtlı kalır**" | **doğru** — kart işaretleri `medisea:kartlar:v1:<set>` altında duruyor, yedeğe ve senkrona giriyor |
+| **profil sayfası** | `SEYİR MİLİ (XP) 0` · `ATEŞ SERİSİ 0 GÜN` · `BİTİRİLEN MODÜL 0 ADET` | **hepsi kullanıcının**; boş durumlar da dürüst ("Henüz hiçbir konuda işaretin yok") |
+
+Yani sınıf **tek örnekliymiş**: kullanıcıya ait olmayan tek sayı, kullanıcıya
+aitmiş gibi etiketlenen tek karttı.
+
+#### Gerçek ilerlemeyi basmak AYRI bir iş — ölçüldü, yapılmadı
+
+Panoda kullanıcı verisi olarak elde yalnızca `xp` ve `completedModules` var;
+ikisi de zaten gösteriliyor (biri kart olarak, öteki "N vaka tamamladınız"
+satırında). **Konu bazlı tamamlanma verisi YOK**, yani "şu ana kadar 12/41
+konu okudun" gibi bir kart bugün üretilemez. O bir özellik kararı; ölçüldü,
+kapsamı yazıldı, uydurulmadı.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| pano metrik şeridi | `Hazır konu oranı %71` · Hazır konu 41/58 · Toplam soru 379 · Puanınız 0 xp |
+| sayfada "Genel ilerleme" | **0** (yalnızca kaynaktaki gerekçe yorumunda) |
+| **negatif** — öteki üç kart | değişmedi |
+| **negatif** — branş kartları ve bağlantılar | 10 branş bağı, değişmedi |
+| **negatif** — 320px | etiket **tek satır** (105px kutuda), belge genişliği 320, yatay kayma **0** |
+| **negatif** — taşan öge | 2, ikisi de ÖNCEDEN var ve kasıtlı (`truncate` başlık ve `overflow-x-auto` şerit) |
+| kapılar | lint · typecheck · build 637/637 · 13 CI adımı |
+
+Beşinci satır bu değişikliğin tek görsel riskiydi: yeni etiket iki karakter
+uzun ve şerit mobilde iki kolona düşüyor. Ölçüldü — sarmıyor.
+
+#### Ölçüm notu: `%71` sunucu HTML'inde ARANMAZ
+
+Gerileme kontrolünde `%71` sunucu çıktısında **0** çıktı ve bir an değer
+kaybolmuş sanıldı. Sebep belgede kayıtlı: React statik metinle ara değeri
+`%<!-- -->71` diye ayırıyor. Değer tarayıcıda okunduğunda yerinde.
+Bu oturumda aynı tuzağın beşinci tekrarı.
