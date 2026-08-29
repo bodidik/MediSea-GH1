@@ -24341,3 +24341,83 @@ yüzden duyuru da yok. Bu bir kaçak değil — içerik değişmediğinde
 görünüyor. Bu depoda gövde metni okuyan ölçümler bir daha yanılmasın diye
 yazıldı: `/tekrar` gövdesinde kart künyesinin İKİ kez geçmesi kusur değil,
 biri ekran okuyucu bölgesi.
+
+### ADI YALNIZCA PLACEHOLDER OLAN ALAN — ve ÖNCEKİ AD TARAMASININ GÖREMEDİĞİ ŞEY
+
+Belgede kural yazılı: *"Placeholder ad yerine geçmez — yazmaya başlayınca
+kaybolur."* Ve bir tarama *"345 kontrolün 345'inin adı var"* demişti.
+
+İkisi çelişiyor ve sebebi ölçütün kendisinde: **tarayıcı, başka kaynak yoksa
+placeholder'ı ad olarak KABUL EDER.** Adı hesaplayan bir ölçüm o yüzden
+"adı var" der — deponun kendi kuralı ise onu ad saymıyor. Aynı tuzağın
+`title` biçimi belgede zaten kayıtlı; bu ikinci biçim.
+
+Yeni ölçüt placeholder'ı ayrı bir kova olarak raporluyor:
+`aria-label` → `aria-labelledby` → `label[for]` → saran `<label>` →
+**YALNIZCA PLACEHOLDER** → AD YOK.
+
+#### Üç gerçek kusur — üçü de canlı yüzeyde
+
+| yer | ad kaynağı (önce) | bedel |
+|---|---|---|
+| **`NotePanel` yazı alanı** | 130 karakterlik placeholder | ekran okuyucu odakta İKİ PARAGRAFLIK yönergeyi "alan adı" diye okuyor **ve kullanıcı bir şey yazdığı an alan TÜMDEN ADSIZ kalıyor** |
+| **`/calisma-alanim` süzgeci** | `"Ara…"` | yazdıktan sonra adsız |
+| **`SoruSor` (premium konu) soru alanı** | `"Örn: SMAD4 kaybının…"` | yazdıktan sonra adsız |
+
+Birincisi en ağırı: uygulamanın **yazma yüzeyi**, ve kusur tam da kullanıcı
+onu kullanmaya başlayınca ortaya çıkıyor.
+
+#### Kardeş kutular ZATEN adlıydı — sapan tek kutu
+
+| arama kutusu | ad |
+|---|---|
+| başlık | `aria-label="Sitede ara"` |
+| `/topics` kütüphane süzgeci | `aria-label="Kütüphanede konu ara"` |
+| `/tools` hub araması | `aria-label="Araçlarda ara"` |
+| **`/calisma-alanim`** | **yoktu → "Kayıtlarında ara"** |
+
+#### ⚠ KAYNAK TARAMASI ÜÇ SAHTE ADAY ÜRETTİ — dördüncü biçim
+
+Ölçüt 215 kontrol taradı, **40 aday** verdi. Ama saran `<label>`i kaynakta
+900 karakterlik bir geri pencereyle aramak yanılıyor: `anion-gap` · `asdas` ·
+`gh-test` "adsız" göründü, **tarayıcıda üçü de saran etiketten adlı çıktı**
+("Albumin (g/dL) — opsiyonel", "CRP (mg/L)", "Pik GH Değeri (μg/L)").
+
+Belgede bu ailenin üç biçimi zaten kayıtlıydı (kaynakta `htmlFor` aramak ·
+`closest('label')` · saran etiket aramak). Bu dördüncüsü: **kaynakta saran
+etiket saymak.** Kural değişmiyor — **adı TARAYICIDA hesaplat**, kaynak
+yalnızca aday üretir.
+
+#### Kalan 34 aday — karara bağlandı, DEĞİŞTİRİLMEDİ
+
+| kova | adet | gerekçe |
+|---|---|---|
+| `admin/*` | ~27 | middleware arkasında yönetici yüzeyi |
+| `components/topics/InlineTopicEditor` | 5 | yalnızca `YoneticiDuzenleyici` çağırıyor → yönetici render'ı |
+| `components/SectionsFilters` | 1 | **ölü kod** (sıfır içe aktaran) |
+
+#### Doğrulama — tarayıcıda, ikisi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `NotePanel` — alan BOŞKEN | 130 karakterlik placeholder | **"Not metni"** |
+| `NotePanel` — **YAZI YAZILDIKTAN SONRA** | **AD YOK** | **"Not metni"** |
+| `/calisma-alanim` süzgeci | `YALNIZCA PLACEHOLDER "Ara…"` | **`aria-label` "Kayıtlarında ara"** |
+| `SoruSor` (kapı arkasında) | placeholder | pakette `Konu hakkında soru",placehol…` |
+| **negatif** — placeholder duruyor mu | — | üçünde de **evet** (ipucu olarak kalıyor) |
+| **negatif** — süzgeç hâlâ çalışıyor mu | — | "zzzqqq" → boş durum, "addison" → kayıt geri geliyor |
+| **negatif** — başlık araması | "Sitede ara" | **değişmedi** |
+| kapılar | — | lint · typecheck · build **637/637** |
+| satır sonu | — | `calisma-alanim` ve `SoruSor` **saf CRLF**, `NotePanel` LF — korundu |
+
+İkinci satır bu turun asıl ölçümü: kusur yalnızca **alan doluyken** görünüyor,
+yani boş formu ölçen bir tarama onu göremez.
+
+#### Yan ölçüm: gizli dosya girdisi kusur DEĞİL
+
+`/calisma-alanim`daki yedek yükleme girdisi `class="hidden"` ve adsız. Kusur
+sayılmadı ve sebebi ölçüldü: girdi **kontrol değil**, görünür ve adlı bir
+düğme (`↑ Yedekten yükle`) onu programla açıyor; `display:none` olduğu için
+odak sırasında da yok. Belgedeki *"gizlenen form kontrolü `hidden` ile
+gizlenmez"* kuralı, girdinin KENDİSİ kontrol olduğu durum için yazılmıştı
+(onay kutusu/radyo) — burada değil.

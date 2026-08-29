@@ -851,6 +851,14 @@ export default function NotePanel() {
                     setText(e.target.value);
                     setDirty(true);
                   }}
+                  /* Alanın erişilebilir ADI yoktu: ad, aşağıdaki 130
+                     karakterlik placeholder'a düşüyordu. İki bedeli birden
+                     vardı — ekran okuyucu odakta iki paragraflık yönergeyi
+                     "alan adı" diye okuyor, VE kullanıcı bir şey yazdığı anda
+                     placeholder kaybolduğu için alan tümden ADSIZ kalıyordu.
+                     Yani kendi notuna dönen kullanıcı hiçbir etiket duymuyor.
+                     Placeholder ipucu olarak kalıyor; ad artık sabit. */
+                  aria-label="Not metni"
                   placeholder={
                     "Bu sayfaya dair notların…\n\nVurgu araç çubuğundaki 🗒 düğmesiyle seçtiğin metni buraya alıntı olarak gönderebilirsin."
                   }

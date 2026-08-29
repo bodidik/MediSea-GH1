@@ -69,6 +69,10 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
         value={soru}
         onChange={(e) => setSoru(e.target.value)}
         onKeyDown={tuslar}
+        /* Ad placeholder'a düşüyordu; kullanıcı yazmaya başlayınca placeholder
+           kaybolduğu için alan adsız kalıyordu. (Aynı kusur NotePanel'de ve
+           Çalışma Alanım süzgecinde de vardı — üçü bir arada ölçüldü.) */
+        aria-label="Konu hakkında soru"
         placeholder="Örn: SMAD4 kaybının prognostik önemi nedir?"
         maxLength={800}
         rows={3}

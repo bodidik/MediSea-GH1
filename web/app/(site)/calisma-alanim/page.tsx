@@ -280,6 +280,12 @@ export default function StudyWorkspace() {
               <input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
+                /* Adı YALNIZCA placeholder'dan geliyordu ve depo kuralı bunu
+                   kabul etmiyor: placeholder yazmaya başlayınca KAYBOLUYOR,
+                   yani alan dolduğu anda adsız kalıyor. Kardeş arama
+                   kutularının üçü de adlı ("Sitede ara" · "Kütüphanede konu
+                   ara" · "Araçlarda ara"); ölçüldü, sapan tek kutu buydu. */
+                aria-label="Kayıtlarında ara"
                 placeholder="Ara…"
                 className="min-w-[140px] flex-1 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-[12px] text-slate-700 outline-none transition-colors placeholder:text-slate-300 focus:border-blue-400"
               />
