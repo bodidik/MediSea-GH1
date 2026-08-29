@@ -24677,3 +24677,88 @@ zaten envanterden geliyor). Ölçüm ve kapsam burada; karar içerik sahibinin.
 söylemeli.** Bu depoda "0 kusur ile 0 ölçüm aynı görünür" kuralı vardı;
 buradaki hâli bir adım sinsi — ölçüm yapılıyor, eşleşme GERÇEK bir okuma
 değil, ve rapor kendinden emin bir "temiz" basıyor.
+
+### "YENİ EKLENDİ" ROZETİ DOSYA MTIME'INDAN GELİYORDU — canlıda altı rozetin BEŞİ yanlış
+
+Yeni eksen: **pano bir TAZELİK iddiası basıyor — o iddiayı ne üretiyor?**
+Premium panosu üstte bir "Yeni eklendi" kartı, altında "Diğer yeni eklenenler"
+şeridinde beş kart daha gösteriyor ve her birinde **"yeni" rozeti** var.
+
+Sıralama `fs.statSync(...).mtimeMs` ile yapılıyordu. Yanındaki yorum gerekçeyi
+de yazmıştı:
+
+> *"guncelleme alanı yalnızca ay hassasiyetinde olduğundan gerçek 'en son
+> eklenen' sırasını dosya sistemi değişiklik zamanı belirler"*
+
+Gerekçe **üretimde geçersiz**: Vercel her derlemede depoyu checkout ediyor,
+yani bütün `mtime`'lar derleme anı ve sıra içerik tazeliğini değil **checkout
+sırasını** yansıtıyor. Aynı sınıf `sitemap.ts`te zaten ölçülüp kaldırılmıştı
+(`mtime` yedeği, "CI'da anlamsız — checkout anı"); pano o turun dışında kalmış.
+
+#### Canlıda ölçüldü — rozet ile gerçek ayrışıyor
+
+| # | canlı panoda "yeni" | konu | `guncelleme` |
+|---|---|---|---|
+| **featured** | **Sistemik Lupus Eritematozus (SLE)** | `romatoloji/sle` | **2026-07** |
+| 1 | Behçet Hastalığı | `romatoloji/behcet-hastaligi` | 2026-07 |
+| 2 | Ders Kitaplarından… Set 1 | `romatoloji/harrison-22-secme-sorular` | **2026-08** |
+| 3 | Ailesel Akdeniz Ateşi | `romatoloji/ailesel-akdeniz-atesi` | 2026-07 |
+| 4 | IgA Nefropatisi | `nefroloji/iga-nefropatisi` | 2026-07 |
+| 5 | Membranöz Nefropati | `nefroloji/membranoz-nefropati` | 2026-07 |
+
+Altı rozetin **yalnızca biri** en yeni aya ait. Ters yönde daha keskin:
+`2026-08` olan beş konunun **dördü listede hiç yok** — feokromositoma, MEN
+sendromları, MEN1 ve **bu hafta merge edilen gastroenteroloji seti**.
+
+Yerelde bile bozuktu (checkout sırası daha "taze" göründüğü hâlde):
+`hashimoto-tiroiditi` (2026-07) ilk altıya iki ağustos konusunun ÖNÜNE
+giriyordu — yani `mtime` yalnızca üretimde değil, hiçbir yerde tazelik
+ölçmüyor.
+
+#### Çare: ay hassasiyetiyle YAŞA, tahmin etme
+
+`guncelleme` ay hassasiyetinde (42 dosyanın 42'sinde var; `2026-07` ×35 ·
+`2026-08` ×5 · `2025-01` ×2). Ay içinde sıralama keyfi olurdu, o yüzden liste
+**yalnızca EN YENİ AYI** gösteriyor: rozet hiçbir zaman daha eski bir aya
+takılmıyor. Az ama doğru bir liste, çok ama yanlış bir listeden iyi.
+
+Sıralama **belirlenimli** (branş+konu kimliği, kod noktası — `localeCompare`
+DEĞİL; o çalışma zamanı yereline bağlı ve bu depoda bir kez CI'ı 97 koşum
+boyunca kırdı). Kimsede `guncelleme` yoksa liste boşalır ve iki blok da hiç
+çizilmez — dürüst boş durum.
+
+`mtimeMs` boru hattı tümden kaldırıldı (`konuYukle` artık `statSync`
+çağırmıyor) — bu turda ölçülen "ölü alan" sınıfının aynısı, bir kopya daha.
+
+#### Doğrulama — üretim derlemesi, gerçek sayfa
+
+| ölçüt | önce (canlı) | sonra (yerel üretim) |
+|---|---|---|
+| featured | **SLE (2026-07)** | **Feokromositoma (2026-08)** |
+| şerit | 5 kart, 4'ü 2026-07 | **4 kart, dördü de 2026-08** |
+| en yeni ay dışından rozet | **5** | **0** |
+| yeni merge edilen gastro seti | **listede YOK** | **listede VAR** |
+| SLE geçişi | 3 | 1 (artık rozetli değil) |
+
+**POZİTİF KONTROL — türetim veriye tepki veriyor mu?** Bir konunun
+`guncelleme`si geçici olarak `2026-09` yapılıp yeniden derlendi:
+
+| ölçüt | sonuç |
+|---|---|
+| featured | **Cushing Sendromu** (tohumlanan konu) |
+| şerit | **0 kart** |
+| "Diğer yeni eklenenler" başlığı | **hiç çizilmiyor** (boş bölüm yok) |
+| metrik şeridi · `h1` | değişmedi · 1 |
+
+Tohum geri alındı (`git diff web/content/` = **0 satır**).
+
+**Negatif kontroller:** metrik şeridi canlı ile birebir aynı
+(`Hazır konu oranı %71 · Hazır konu 42 · Toplam soru 404`), branş kartı
+bağlantısı 10 → 10, `h1` 1, lint · typecheck · build **637/637**.
+
+**Aktarılabilir kural: bir TAZELİK iddiasını dosya sistemi zamanıyla
+üretme.** `mtime` derleme ortamında içerikle ilgisiz bir sayıdır ve bu depoda
+aynı hata iki ayrı yüzeyde bulundu (site haritası `lastmod`, pano "yeni
+eklendi"). İçerik ne kadar kaba olursa olsun, tazeliği İÇERİĞİN KENDİ
+alanından oku — ve alanın hassasiyeti yetmiyorsa iddiayı o hassasiyete
+daralt, dosya sistemine kaçma.

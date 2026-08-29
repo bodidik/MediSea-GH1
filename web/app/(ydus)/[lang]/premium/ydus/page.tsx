@@ -47,12 +47,21 @@ interface BransVerisi {
 }
 
 interface KonuVerisi {
+  /**
+   * ÖLÜ ALAN — hiçbir yerde okunmuyor, sayılar `envanterAl`den geliyor.
+   * 42 dosyanın 5'inde ilan gerçekle çoktan ayrışmış (ölçüldü). Tipte
+   * durmasının tek sebebi alanın veride bulunması; ona GÜVENME.
+   */
   istatistikler?: {
     soru?: number;
   };
+  meta?: {
+    /** "2026-07" — ay hassasiyetinde, içerik yazarı tarafından tutuluyor. */
+    guncelleme?: string;
+  };
 }
 
-type NewestTopicRaw = NewestTopic & { mtimeMs: number };
+type NewestTopicRaw = NewestTopic & { guncelleme: string | null };
 
 // İçerik dosyası henüz eklenmemiş, ilerleyen dönemde açılacak branşlar
 const LOCKED_BRANCHES: LockedBranch[] = [];
@@ -104,14 +113,10 @@ function bransYukle(id: string): BransVerisi | null {
   }
 }
 
-function konuYukle(branchId: string, topicId: string): (KonuVerisi & { mtimeMs: number }) | null {
+function konuYukle(branchId: string, topicId: string): KonuVerisi | null {
   try {
     const dosyaYolu = path.join(process.cwd(), 'content', 'premium', 'ydus', 'topics', branchId, `${topicId}.json`);
-    const veri = JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8')) as KonuVerisi;
-    // "guncelleme" alanı yalnızca ay hassasiyetinde (ör. "2026-07") olduğundan
-    // gerçek "en son eklenen" sırasını dosya sistemi değişiklik zamanı belirler
-    const mtimeMs = fs.statSync(dosyaYolu).mtimeMs;
-    return { ...veri, mtimeMs };
+    return JSON.parse(fs.readFileSync(dosyaYolu, 'utf-8')) as KonuVerisi;
   } catch {
     return null;
   }
@@ -185,7 +190,7 @@ export default async function YdusAnaSayfa({
           branchId: id,
           baslik: konu.baslik,
           soru,
-          mtimeMs: konuVerisi?.mtimeMs ?? 0,
+          guncelleme: konuVerisi?.meta?.guncelleme?.slice(0, 7) ?? null,
         });
       }
     }
@@ -201,7 +206,39 @@ export default async function YdusAnaSayfa({
     });
   }
 
-  newest.sort((a, b) => b.mtimeMs - a.mtimeMs);
+  /**
+   * "YENİ EKLENDİ" BİR İDDİA — ve dosya değişiklik zamanı onu üretemez.
+   *
+   * Burası `mtimeMs` ile sıralıyordu ve yanındaki yorum gerekçeyi de yazmıştı
+   * ("guncelleme yalnızca ay hassasiyetinde, gerçek sırayı dosya sistemi
+   * belirler"). Gerekçe ÜRETİMDE geçersiz: Vercel her derlemede depoyu
+   * checkout ediyor, yani bütün mtime'lar derleme anı ve sıra içerik
+   * tazeliğini değil checkout sırasını yansıtıyor. Aynı sınıf `sitemap.ts`te
+   * zaten ölçülüp kaldırılmıştı (`mtime` yedeği); pano o turun dışında kaldı.
+   *
+   * Canlıda ölçüldü — pano "Yeni eklendi" diye SLE'yi (2026-07) gösteriyor,
+   * "yeni" rozetli altı konunun yalnızca BİRİ en yeni aya ait ve gerçekten en
+   * yeni üç konu (feokromositoma, MEN sendromları, MEN1) listede hiç yok.
+   *
+   * Çare ay hassasiyetiyle yaşamak: `guncelleme`ye göre sırala ve YALNIZCA EN
+   * YENİ AYI göster. Ay içinde sıra keyfi olurdu, o yüzden "yeni" rozeti
+   * hiçbir zaman daha eski bir aya takılmıyor — az ama doğru bir liste,
+   * çok ama yanlış bir listeden iyidir. Kimsede `guncelleme` yoksa liste
+   * boşalır ve iki blok da hiç çizilmez (dürüst boş durum).
+   *
+   * Sıralama BELİRLENİMLİ: aynı ay içinde branş+konu kimliğine göre kod
+   * noktası sırası (`localeCompare` DEĞİL — o çalışma zamanı yereline bağlı
+   * ve bu depoda bir kez CI'ı 97 koşum boyunca kırdı).
+   */
+  const enYeniAy = newest.reduce<string | null>(
+    (m, t) => (t.guncelleme && (!m || t.guncelleme > m) ? t.guncelleme : m),
+    null,
+  );
+  const yeniler = enYeniAy ? newest.filter((t) => t.guncelleme === enYeniAy) : [];
+  yeniler.sort((a, b) =>
+    a.branchId === b.branchId ? (a.topicId < b.topicId ? -1 : a.topicId > b.topicId ? 1 : 0)
+      : a.branchId < b.branchId ? -1 : 1,
+  );
 
   const overall = branches.reduce(
     (acc, b) => ({
@@ -217,7 +254,7 @@ export default async function YdusAnaSayfa({
       lang={lang}
       branches={branches}
       lockedBranches={LOCKED_BRANCHES}
-      newest={newest.slice(0, 6).map(({ mtimeMs, ...rest }) => rest)}
+      newest={yeniler.slice(0, 6).map(({ guncelleme, ...rest }) => rest)}
       overall={overall}
       sinavlar={sinavlariOku()}
       hazirKonular={hazirKonular}
