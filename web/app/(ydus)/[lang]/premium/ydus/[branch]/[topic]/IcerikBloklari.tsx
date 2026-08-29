@@ -147,7 +147,13 @@ function TabloBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'tablo' }>; 
   return (
     <div style={{ marginBottom: '1.25rem' }}>
       {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
-      <div style={{
+      {/*
+        Kaydirilan kabin KLAVYEYLE de kaydirilabilmesi icin odaklanabilir
+        olmasi gerekiyor: icinde odaklanabilir hicbir oge yok, yani Tab ile
+        buraya gelinemiyordu ve kirpilan kolonlar erisilemez kaliyordu.
+        Acik taraftaki ayni kusur `app/lib/tablo.ts` ile kapatildi.
+      */}
+      <div data-tablo-kaydir tabIndex={0} role="region" aria-label="Tablo (yatay kaydırılabilir)" style={{
         border: '0.5px solid #b8cfe8',
         borderRadius: '8px',
         overflowX: 'auto',

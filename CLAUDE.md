@@ -26094,3 +26094,128 @@ Eşik 0.35 yerine **0.12**'ye indirilerek sürüldü ve band yine boş — yani
 | pano branş kırılımı toplamı | 44 / 61 | **454** |
 
 Yeni branş kırılımda **1/1 · 25 soru** olarak görünüyor.
+
+### TELEFONDA TABLO KOLONLARI HİÇBİR GİRDİ KİPİYLE ULAŞILAMIYORDU
+
+Yeni eksen: **yatay kaydırılan bölgeler klavyeyle kaydırılabiliyor mu?**
+Bir `overflow-x: auto` kabı, içinde odaklanabilir öge yoksa Tab ile
+ulaşılamaz; klavye kullanıcısı kırpılan kolonları hiç göremez (WCAG 2.1.1).
+Bu depoda çok sayıda kaydırma şeridi var ama hiç bu gözle ölçülmemişti.
+
+**Ölçüt ADAY DEĞİL AYRIM üretiyor:** içinde odaklanabilir öge OLAN bir şerit
+(kategori rozetleri, branş çipleri) zaten Tab'la kaydırılıyor — sorun yalnızca
+**yalnızca METİN taşıyan** kaplarda. Bu depoda o kaplar tablolar.
+
+#### Kusur İKİ katmanlı ve ikincisi çok daha ağır
+
+Canlıda, 375px'te ölçüldü:
+
+| katman | adet | ne oluyor |
+|---|---|---|
+| **sarmalı** tablo | 49 | `<div class="overflow-x-auto">` kayıyor ama **odaklanabilir değil** ve içinde odaklanabilir öge yok → klavyeyle ulaşılamıyor |
+| **sarmasız** tablo | **14** | okuma kartı `overflow-x: hidden` ile **KIRPIYOR** → hiçbir girdi kipiyle ulaşılamıyor |
+
+İkincisi `gogus/sarkoidoz-ayirici-tani` sayfasında sayıldı (canlı, 375px):
+
+| ölçüt | değer |
+|---|---|
+| tablo genişliği | **547 px** |
+| okuma kartı `clientWidth` | **342 px** |
+| kartın `overflow-x` değeri | **hidden** |
+| belge yatay kayması | **0** |
+| **görünmeyen kolon** | **3 kolonun 2'si** — "Primer Sarkoidoz Hastası" ve "CVID / GLILD Tablosu" |
+
+Yani bir ayırıcı tanı tablosunun karşılaştırma kolonları telefonda tümden
+yoktu. `kart.scrollLeft = 9999` PROGRAMLA çalışıyor (257px kayıyor) — içerik
+DOM'da, ama `overflow: hidden` olduğu için ne çubuk var, ne dokunmayla
+sürüklenebiliyor, ne klavyeyle.
+
+**Bu, daha önce alınan "320px'te kayma 0 · taşan öge 0" sonucunun ikinci
+yüzü:** sayfa taşmıyordu çünkü kart sessizce yutuyordu. Taşma ölçütü
+"belge kayıyor mu" diye sorduğu sürece bu sınıfı göremez.
+
+#### Çare: içerik dosyasına DOKUNMADAN, render tarafında
+
+`app/lib/tablo.ts` → `tabloKaydir()`. `metin.tsx` (kalın işareti),
+`kisaltma.ts` (kısaltma açılımı) ve `baslik.ts` (başlık düzeyleri) ile aynı
+karar — dönüşüm boru hattında.
+
+| durum | ne yapılıyor |
+|---|---|
+| zaten `overflow-x-auto` sarmalayıcısı var | o kaba `tabindex="0" role="region" aria-label` **eklenir** (yeni kap AÇILMAZ) |
+| sarmalayıcı yok | tablo `<div … style="overflow-x:auto">` ile **sarılır** |
+
+`role="region"` + `aria-label`: `tabindex="0"` tek başına kaydırmayı açar
+ama odaklanan kabın adı olmaz, ekran okuyucu adsız bir grup duyurur.
+
+Premium tarafta aynı kusur JSX'te vardı (`IcerikBloklari` tablo kabı
+`overflowX:'auto'` taşıyor ama odaklanabilir değildi) — aynı nitelikler
+oraya da kondu. `globals.css`e tek bir `:focus-visible` halkası eklendi;
+iki taraf da aynı `data-tablo-kaydir` niteliğinden tutunuyor.
+
+#### Saf modül 2386 bölüm üzerinde sürüldü — en kritik ölçüt METİN
+
+| ölçüt | sonuç |
+|---|---|
+| taranan bölüm | 2386 |
+| değişen bölüm | 68 |
+| `<table>` sayısı önce → sonra | **69 → 69** |
+| **METNİ değişen bölüm** | **0** — vurgu ofsetleri güvende |
+| yeni kap · var olan kaba nitelik | **14 · 55** (toplam 69) |
+| idempotens hatası | **0** |
+
+**İlk sürüm idempotent DEĞİLDİ** ve ölçüm gösterdi: kendi açtığım kap
+`style="overflow-x:auto"` taşıyor, sarmalayıcı sınaması ise yalnızca
+`overflow-x-auto` sınıfını arıyordu — ikinci çalıştırmada 14 tabloyu tekrar
+sarıyordu. Sınama üç biçimi de tanıyacak şekilde genişletildi.
+
+Kenar durumları (tablo yok · boş · sarmalı · sarmasız · iki tablo · kaydırmayan
+div · **dengesiz işaretleme**) tek tek sürüldü; dengesiz `<table>`a
+dokunulmuyor.
+
+#### Doğrulama — üretilmiş çıktı + tarayıcı, altısı negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| üretilen konu sayfası (tablolu) | **52** · `<table>` **63** · **kapsız kalan 0** |
+| `sarkoidoz-ayirici-tani` (375px) | 2 kap · `tabindex="0"` · `role="region"` · adlı · ikisi de taşıyor |
+| **ULAŞILABİLİR KOLON** | **3/3** (kaydırma taranarak) — önce 1/3 |
+| kap odaklanabilir mi | **evet** (`activeElement`), odak sırasında 32 durağın **16.**'sı |
+| premium konu (kapı geçici açık) | 4 tablo · **4 kap** · hepsi adlı ve odaklanabilir |
+| **negatif** — okuma alanı karakter sayısı | canlı ↔ yerel **3 konuda da BİREBİR** (13299 · 8391 · 5593) |
+| **negatif** — tablosuz konu | kap **0** (`addison`, `anemiler`) |
+| **negatif** — 375px belge yatay kayması | **0** (iki tarafta da) |
+| **negatif** — 1280px | tablolar sığıyor, belge kayması 0, kap görünümü değiştirmiyor (`margin/padding/border` sıfır) |
+| **negatif** — CSS kuralı | üretilen stil sayfasında **var** ve seçici gerçek ögeye **uyuyor** |
+| **negatif** — 14 denetim + lint + typecheck + build 638/638 | hepsi geçti |
+
+Altıncı satır bu değişikliğin tek gerçek riskiydi: vurgular karakter
+ofsetiyle saklanıyor ve okuma alanının metni değişseydi kayıtlı vurgular
+silinirdi. Değişmedi — sarmalayıcı `<div>` metin taşımıyor, nitelik de
+`textContent`e girmiyor.
+
+#### Ölçülen ödünleşme — GENİŞ ekranda boş bir odak durağı
+
+1280px'te tablolar sığıyor, yani kap taşmıyor ama **hâlâ odak sırasında**.
+Bu sayfada iki fazladan durak demek. Alternatifi (taşmayı ölçüp `tabindex`i
+JS ile koşullu vermek) JS kapalı kullanıcıyı yeniden dışarıda bırakırdı ve bu
+depoda o kullanıcı ölçülmüş bir kitle (`<noscript>` şeridi turu). Standart
+öneri de koşulsuz `tabindex="0"`; ödünleşme kabul edildi ve buraya yazıldı.
+
+#### Kapsam dürüstlüğü
+
+Odak halkasının **boyandığı gösterilemedi** — bu ortamda panelin işletim
+sistemi odağı yok (`document.hasFocus()` false), yani `:focus-visible`
+hiçbir ögeye uymuyor. Doğrulanan şey kuralın üretilen CSS'te bulunması ve
+seçicinin gerçek ögeye uyması. Aynı şekilde **native ok tuşu kaydırması** da
+sentetik olayla sürülemez; kanıtlanan şey kabın odaklanabilir, adlı ve
+gerçekten kaydırılabilir olması.
+
+Premium taraf **canlıda doğrulanamaz** (kapı arkasında); ölçüm yerel üretim
+derlemesinde, kapı geçici açılarak yapıldı ve kapı geri kondu.
+
+#### Yan ölçüm: `<pre>` sınıfı bu depoda YOK
+
+`globals.css` `pre` ve `.prose pre` için `overflow-x: auto` veriyor — aynı
+sınıfın ikinci adayı. Ölçüldü: **içerikte `<pre>` sayısı 0**, yani kod
+bloğu hiç kullanılmıyor ve kural bugün ölü.

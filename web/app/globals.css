@@ -680,3 +680,22 @@ label:has(input.sr-only:focus-visible) {
     -webkit-print-color-adjust: exact;
   }
 }
+
+/* ---------------------------------------------------------------
+   YATAY KAYDIRILAN TABLO KABI — odak halkası
+   ---------------------------------------------------------------
+   `data-tablo-kaydir` taşıyan kap `tabindex="0"` aldı (bkz.
+   app/lib/tablo.ts ve premium IcerikBloklari): içinde odaklanabilir
+   hiçbir öge olmadığı için klavye kullanıcısı orayı hiç kaydıramıyordu.
+
+   Odaklanabilir yaptığımız her ögenin GÖRÜNÜR bir odak durumu olmalı;
+   `:focus-visible` seçildi ki fareyle tıklandığında halka çıkmasın.
+   Bu depoda ölçülmüş bir kısıt var: tarayıcı panelinin işletim sistemi
+   odağı olmadığı için boyanma GÖZLENEMİYOR — doğrulama, kuralın
+   üretilen CSS'te bulunması ve seçicinin gerçek ögeye uyması ile
+   yapılıyor. */
+[data-tablo-kaydir]:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+  border-radius: 8px;
+}

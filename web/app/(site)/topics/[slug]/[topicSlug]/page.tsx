@@ -9,6 +9,7 @@ import { JsonLd, konuSemasi, kirintiSemasi, isoTarih } from "@/lib/jsonld";
 import { tarihYazisi } from "@/app/lib/tarih";
 import { slugCoz } from "@/lib/slug";
 import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
+import { tabloKaydir } from "@/app/lib/tablo";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
 import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
@@ -295,8 +296,15 @@ export default async function TopicDetailPage({
           // basliklariDuzenle: icerik HTML'i h4 ile basliyor ama bolum
           // basligi h2 -- araya h3 girmedigi icin 240 konuda 907 duzey
           // atlamasi olusuyordu (bkz. app/lib/baslik.ts).
-          html: basliklariDuzenle(
-            kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar)
+          // tabloKaydir: icerikteki tablolar klavyeyle kaydirilamiyordu;
+          // sarmalayicisi olmayan 14 tablo ise okuma kartinda KIRPILIYOR
+          // ve kolonlari hicbir girdi kipiyle ulasilamiyordu
+          // (bkz. app/lib/tablo.ts). Yalnizca NITELIK ekliyor, metni
+          // degistirmiyor -- vurgu ofsetleri bu yuzden kaymiyor.
+          html: tabloKaydir(
+            basliklariDuzenle(
+              kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar)
+            )
           ),
           visibility: s.visibility || "V"
         }))
