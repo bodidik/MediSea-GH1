@@ -25471,3 +25471,99 @@ Kapılar: lint · build 637/637.
 say.** Bu depoda 130 araç, 423 konu ve 11 premium rotası tek tek ölçüldü;
 `public/` altındaki dört dosya hiçbir taramaya girmedi çünkü hiçbiri bir
 rota değil. Sunucunun 200 döndürdüğü her adres bir yüzeydir.
+
+### İÇERİK HTML'İ TARAYICIDA YENİDEN YAPILANDIRILIYOR MU — üç yöntem, sınıf temiz
+
+Yeni eksen: konu içeriği kendi HTML'ini taşıyor ve `dangerouslySetInnerHTML`
+ile basılıyor. Tarayıcı geçersiz iç içeliği **sessizce onarıyor** — `<p>`
+içindeki bir blok ögesi `<p>`yi erken kapatıyor, tablo dışındaki bir `<td>`
+düşürülüyor, hücre dışındaki metin tablonun dışına taşınıyor. Sonuç: DOM
+ağacı kaynaktakinden FARKLI oluyor ve hiçbir kapı bunu görmüyor.
+
+Bu, bu oturumda düzeltilen koyu kart muafiyetiyle doğrudan ilgili: o kural
+İÇ İÇELİĞE bağlı (`[data-readable] :is(koyu…) :is(ikincil…)`). Tarayıcı bir
+kartı yeniden konumlandırsaydı muafiyet zinciri sessizce kopardı.
+
+#### 1) Kaynak ayrıştırıcısı — 622 dosya · 2202 gövde · 51 450 etiket
+
+| ölçüt | sonuç |
+|---|---|
+| `<li>` liste dışında | **0** |
+| `<td>/<th>/<tr>` tablo dışında | **0** |
+| tablo içinde hücre dışı düz metin (foster parenting) | **0** |
+| `<p>` içinde blok ögesi | **1 dosya** |
+| kapanmamış etiket | **1 dosya** (aynı dosya, `<p>`) |
+| fazla kapanış | 2 dosya — belgede zaten kayıtlı, zararsız |
+
+Tek yapısal kayıt `hematoloji/esansiyel-trombositoz`:
+`<p><strong>Sitoredüktif Terapi:</strong><ul>…` — tarayıcı `<p>`yi `<ul>`den
+önce kapatıyor ve ortaya **zaten amaçlanan** yapı çıkıyor (etiket paragrafı,
+ardından liste). Görünür bedel yok.
+
+#### 2) İKİNCİ YÖNTEM: kaynak etiket sayımı ↔ RENDER EDİLMİŞ DOM sayımı
+
+Ayrıştırıcının göremediği kayıpları (düşürülen etiket, taşınan düğüm) yakalar.
+Altı konu canlıda ölçüldü; render zinciri eleman EKLEMİYOR (`kisaltmaAc` metni
+metinle değiştiriyor, `basliklariDuzenle` yalnızca etiket ADINI değiştiriyor),
+yani sayılar birebir tutmalı.
+
+| konu | kaynak → DOM |
+|---|---|
+| `esansiyel-trombositoz` | ul 3→3 · li 12→12 · p 14→14 · strong 33→33 · em 7→7 |
+| `asit-baz-kompanzasyon-ilkeleri` | table 3→3 · tr 14→14 · td 39→39 · th 11→11 · p 35→35 · strong 84→84 |
+| `osteoporoz-postransplant-bifosfonat` | table 1→1 · tr 5→5 · td 14→14 · th 4→4 · ul 2→2 · li 4→4 |
+| `prokalsitonin-biyobelirtec-karsilastirmasi` | table 6→6 · tr 25→25 · td 74→74 · th 23→23 |
+| `men1-gastrinoma-zes` | table 2→2 · td 30→30 · li 8→8 · em 2→2 |
+| `anemiler` | ul 5→5 · li 13→13 · p 6→6 · strong 19→19 |
+
+**Sapma: 0.** `<p>` içindeki `<ul>` yeniden konumlanıyor ama eleman sayısı
+korunuyor — yani hiçbir içerik düşmüyor.
+
+Aynı ölçüm iki kayıtlı kaydı da doğruluyor: fazla `</em>` ve `</strong>`
+ayrıştırıcı tarafından ATILIYOR (kaynak `em` 2 → DOM `em` 2), yani "fazla
+kapanış zararsız" verdikti ayakta.
+
+Başlıklar da tutuyor: DOM'daki `h2` sayısı = bölüm sayısı (sayfanın
+eklediği), `h3` sayısı = içeriğin kendi başlık sayısı — `basliklariDuzenle`
+yeniden numaralaması birebir görülüyor.
+
+#### 3) ÜÇÜNCÜ YÖNTEM: ekranda kalan varlık kalıntısı
+
+Geçersiz bir HTML varlığı ekrana `&foo;` diye basılır. 8 konunun render
+edilmiş metni tarandı: **kalıntı 0**. İçerikte 1324 adlı + 10 sayısal varlık
+var (`&apos;` 263 · `&quot;` 216 · `&lt;` 208 · `&ge;` 161 · `&percnt;` 97…)
+ve hepsi karaktere çözülüyor.
+
+#### ⚠ ÖLÇÜT ÜÇ KEZ DÜZELTİLDİ — üçü de YANLIŞ POZİTİF üretiyordu
+
+| # | ölçütün dediği | gerçek |
+|---|---|---|
+| 1 | 5 "tırtıklı satır" (başlık 4 sütun, satır 3 hücre) | ikisi **`rowspan="2"`** — ilk sütun iki satırı kapsıyor |
+| 2 | aynı listede bir satır daha | **`colspan="2"`** — 3 hücre 4 sütunu kaplıyor |
+| 3 | 2 "bilinmeyen varlık" (`&cong;` · `&plus;`) | ikisi de **geçerli HTML5 varlığı** — eksik olan benim listemdi |
+
+Yani ham hücre sayımı bir tablo bütünlüğü ölçütü DEĞİL: `rowspan`/`colspan`
+sayılmadan alınan her sonuç sahte. Depoda `rowspan` 2 dosyada, `colspan` 1
+dosyada geçiyor — az ama ölçütü tümden geçersiz kılmaya yetiyor.
+
+Üçüncüsü ayrı bir ders: **bir "bilinen değerler" listesiyle geçerlilik
+ölçme.** Liste eksikse sonuç "geçersiz" olur ve bu kusur gibi görünür. Doğru
+ölçüt render edilmiş METNE bakmak — orada `&cong;` gerçekten **≅** olarak
+çıkıyor.
+
+#### Kapsam — bilerek dar
+
+Bu eksen yalnızca **açık taraf** için anlamlı: premium konu blokları yapısal
+JSON ve `kalinIsle` ile React düğümü olarak basılıyor, ham HTML hiç
+ayrıştırılmıyor. Premium `metin` alanları yine de taramaya dahil edildi
+(sayılar 622 dosyayı kapsıyor).
+
+**Yeniden ölçmeye gerek yok** — içerik değişmedikçe. Değiştiğinde ölçüt hazır:
+kaynak ayrıştırıcısı + DOM sayım karşılaştırması + varlık kalıntısı, ve
+tablo sayımında `rowspan`/`colspan` zorunlu.
+
+**Not:** `konu-denetim`in "etiket dengesi" kontrolü yalnızca satır içi vurgu
+etiketlerini (`strong/em/b/i/h1-h6`) kapsıyor; yukarıdaki `<p>`/`<ul>` kaydı
+ondan geçiyor. Detektör EKLENMEDİ — bu depoda kural açık: *öngörülen risk
+için denetim yazmak, ölçülen kusur için yazmakla aynı şey değil* ve bu sınıf
+bugüne kadar tek bir görünür kusur üretmedi.
