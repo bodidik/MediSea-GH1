@@ -26674,3 +26674,128 @@ veriyor: görsel olarak yok, erişilebilirlik ağacında ve odak sırasında var
 İki bileşen arasında geometri taşıyan bir değişken varsa, alıcı tarafın
 "yer var mı" sorusunu da sorması gerekiyor — kaydırma tek başına bir
 gizleme mekanizması değil.
+
+### OKUMA İPUCU KARTI ODAK DURAKLARINI TAMAMEN ÖRTÜYORDU — telefonda 5, %400 yakınlaştırmada 17
+
+Yeni eksen: **WCAG 1.4.10 Reflow ölçüsünde (320×256 CSS px = 1280×1024 @ %400
+yakınlaştırma) sabit katmanlar ne kadar yer kaplıyor, ve odaklanan bir öge
+onların ALTINDA kalıyor mu?** (WCAG 2.2 · **2.4.11 Focus Not Obscured**).
+
+Reflow'un kendisi temiz: 320×256'da **yatay kayma 0**, belge genişliği 320.
+Ama sabit/yapışkan katman sayıldığında toplam kaplama **%110** çıktı ve
+büyük parça okuma ipucu kartıydı.
+
+#### Kök neden: "şerit" tasarımı GENİŞLİĞE bağlıydı
+
+Kartın kendi yorumu bir tasarım kararını kaydediyor: eskiden sol altta
+310×175'lik bir kartmış, bir içerik kutusunun tamamını örttüğü için
+**şeride** çevrilmiş — *"öğretici değer duruyor, içerik görünür kalıyor."*
+
+Ama yerleşim yatay bir flex (`ikon | paragraf | Anladım | ✕`) ve paragraf
+sütunu dar ekranda eziliyor. Ölçüldü (canlı, 320px genişlik):
+
+| ölçüt | değer |
+|---|---|
+| paragraf sütunu | **105px** |
+| satır sayısı | **10** |
+| kart yüksekliği | **225px** |
+
+Yani "yalnızca alt kenarı kaplar" iddiası dar ekranda tutmuyordu — deponun
+imza sınıfının (*ilan mı gerçek mi*) yorum tarafındaki hâli.
+
+#### Bedel: TAMAMEN örtülen odak durağı
+
+Ölçüm yöntemi: her odaklanabilir öge sırayla `focus()` ediliyor, sonra
+ögenin dokuz noktasında `elementFromPoint` okunuyor; dokuzu da **başka** bir
+ögeyi veriyorsa o durak tamamen örtülü sayılıyor.
+
+| görünüm | kaplama | TAMAMEN ÖRTÜLÜ odak |
+|---|---|---|
+| **320×256** (%400 zoom) | **%81.2** | **17** |
+| **320×568** (küçük telefon) | %39.6 | **8** |
+| **375×812** (olağan telefon) | %18.9 | **5** |
+
+Son satır önemli: bu bir yakınlaştırma uç durumu DEĞİL, sıradan bir telefonda
+da oluyor. Örtülenler gezinme bağları (`Kütüphane`, kırıntı, "İleri Okuma"
+ve alt bilgi bağları) — kart `role="note"`, odak tuzağı YOK, yani klavyeyle
+gezen kullanıcı göremediği duraklardan geçiyor.
+
+#### Çare üç parçalı ve üçü de ölçümden çıktı
+
+| parça | ne |
+|---|---|
+| **dar ekranda yığıl** (`flex-col` → `sm:flex-row`) | paragraf tam genişliği alıyor: 105px/10 satır → **239px/4 satır** |
+| **`scroll-padding-bottom`** = kart yüksekliği + 20 | tarayıcı odaklanan ögeyi şeridin ÜSTÜNE hizalıyor |
+| **payı aşarsa gizle** (`EN_FAZLA_PAY = 0.35`) | kalan uç durumda kart `visibility:hidden` |
+
+İkinci parça olmadan yığma tek başına yetmiyordu: 320×568'de örtülen sayısı
+8 → **4**'e iniyordu, çünkü tarayıcı `block: nearest` ile ögeyi görünümün
+**ALT** kenarına hizalıyor ve şerit tam orada. Dört kalıntının dördü de
+(iki "İleri Okuma" bağı, iki alt bilgi bağı) `scroll-padding` ile kapandı.
+
+Üçüncü parça `visibility: hidden` — `display:none` değil, çünkü kart mount
+kalıp yeniden ölçülebiliyor; ikisi de ögeyi odak sırasından ve
+erişilebilirlik ağacından düşürüyor. **Depo anahtarı YAZILMIYOR:** kullanıcı
+göremediği bir karta ömür boyu bir kez olan ipucu hakkını harcamıyor, pencere
+büyüyünce kart geri geliyor.
+
+Eşik tahmin değil: kart yüksekliği 152–153px sabit (içerik sabit), yani
+320×568'de %26.8 (göster), 320×256'da %59.6 (gizle). 0.35 ikisini net ayırıyor.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| 320×256 — örtülen odak | **17** | **0** (kart gizli, düğmesi odaklanamıyor) |
+| 320×568 — örtülen odak | **8** | **0** |
+| 375×812 — örtülen odak | **5** | **0** |
+| 375×812 — paragraf | 160px · 6 satır | **293px · 3 satır** · kart 153 → 135 |
+| **negatif** — 1280×900 masaüstü | kart t806 l297 **672×82**, ikon 314, paragraf 342, düğmeler l834/l926 | **BİREBİR AYNI**, tek sıra |
+| **negatif** — 256 → 568 büyüyünce | — | kart **geri geliyor**, anahtar hâlâ `null` |
+| **negatif** — "Anladım" | — | kart sökülüyor, anahtar `"1"`, `scroll-padding` **temizleniyor** |
+| **negatif** — okuma alanı karakter sayısı | 5025 | **5025** — vurgu ofsetleri güvende |
+| **negatif** — 320px yatay kayma | — | **0** (pozitif kontrol: 900px tohum `scrollWidth`i 900 yapıyor) |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Beşinci satır bu değişikliğin tek görsel riskiydi ve masaüstü çıktısı
+piksel piksel aynı çıktı.
+
+#### ⚠ `transition-all` GEÇİŞİ `visibility`'yi de yutuyordu
+
+Ölçüm bir tur "kart gizli" dedi, oysa `className`de `invisible` YOKTU ve
+eşleşen bir CSS kuralı da yoktu. Sebep: `transition-all` **discrete** bir
+özellik olan `visibility`'yi de kapsıyor ve bu ortamda panel gizliyken
+geçişler ilerlemiyor — değer başlangıçta donuyor.
+
+Ayırt edici ölçüm belgede kayıtlı: `transition: none` + reflow → `hidden`
+**`visible`**'a döndü. Bu, kayıtlı tuzağın ikinci biçimi (birincisi
+`opacity`, ikincisi `animation`, üçüncüsü bu).
+
+Kalıcı çare geçişi daraltmak: `transition-[opacity,transform]`. Çıkış
+animasyonunun kullandığı iki özellik zaten bunlar; `visibility` artık
+geçişte değil, yani durumu belirlenimli.
+
+#### ⚠ Aynı turda ikinci bayat okuma
+
+`resize` gönderildikten SONRA aynı çağrıda `visibility` okundu ve hâlâ eski
+değerdi: `scroll-padding` doğrudan DOM yazması olduğu için anında değişiyor,
+`className` ise React'in yeniden çizimini bekliyor. Ayrı çağrıda doğru
+değer çıktı — belgede kayıtlı *"tıklamadan sonra AYNI karede DOM okumak
+eski durumu verir"* kuralının resize hâli.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN: yapışkan başlığın `scroll-padding-top`u
+
+Aynı sınıfın üst tarafı: `html`/`body`'de `scroll-padding-top` **`auto`**
+(yani yok) ve başlık 65px yapışkan. Klavyeyle GERİ giderken (Shift+Tab)
+tarayıcı ögeyi üst kenara hizalarsa 65px'ten kısa her öge başlığın altında
+kalır.
+
+**Gösterilemedi ve o yüzden düzeltilmedi:** bu ortamda gerçek Shift+Tab
+sürülemiyor (panelin işletim sistemi odağı yok), `element.focus()` ise
+Chrome'da ögeyi ORTALIYOR — ölçüldü, hedef `top 384`'te kaldı, yani
+başlığın altına hiç düşmedi. Mekanizma yazılı, kanıt yok.
+
+Yan ölçüm — seçim çubuğunun DİKEY ekseni **temiz**: eşik `rect.top > 96`,
+çubuk 45px; seçim üstteyken çubuk aşağı geçiyor (t143–b189, taşma 0), yukarı
+geçtiğinde yapışkan başlıkla 20px çakışıyor ama çubuk `z-60` > başlık `z-50`
+olduğu için **örtülen düğme 0**.
