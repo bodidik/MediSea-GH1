@@ -21675,3 +21675,94 @@ görünür; örüntü araçlarında sessizce "tanımsız/nadir" kovasına düş�
 orada bir KLİNİK ÖNERİ duruyor. Son çare dalını yazarken sor: buraya
 yalnızca gerçekten tanımsız bir kombinasyon mu düşüyor, yoksa eksik veri de
 mi?
+
+### SON ÇARE DALI SINIFI SÜPÜRÜLDÜ — tek örnekmiş; ve KENDİ eski taramamın kapsamı eksikmiş
+
+`tft` bulgusunun ("eksik veri son çare dalına düşüyor") üç ayrı ölçütle
+genellemesi. Üçünde de yeni kusur çıkmadı; değerli olan **kapsam**.
+
+#### 1) "Sınıflandıramadım" etiketli son çare — 3 aday, 2'si sahte
+
+Ölçüt: son çare dalı bir BANT ucu değil, "sınıflandıramadım" ailesinden bir
+etiket döndürüyor mu (`TANIMSIZ` · `BELİRSİZ` · `ATİPİK` · `UYUMSUZ` ·
+`DEĞERLENDİRİLEMEDİ` · `SINIFLANDIRILAMADI`).
+
+| araç | verdikt |
+|---|---|
+| `tft` | önceki turda düzeltildi |
+| `4t-hit` | **sahte** — "belirsiz" bir ŞIK etiketinin içinde ("5–10. günle uyumlu ama belirsiz…") |
+| `tirads` | **sahte** — `{ label: "Belirsiz", v: 0 }`, kompozisyon şıkkı |
+
+**Geniş ölçüt önce 83 aday üretmişti** ve okunamazdı: `getRisk`/`getResult`
+biçimindeki bant merdivenlerinin hepsi koşulsuz bir son dalla bitiyor
+(`YÜKSEK RİSK`, `EVRE 4`, `Sınıf V`) — orada son dal merdivenin UCU ve
+doğru. Ayırt edici olan, son çarenin bir bant mı yoksa "sınıflandıramadım"
+mı olduğu.
+
+#### 2) KOVASIZ GİRDİ — mekanik biçim, ölçüm yüzeyi çok dar
+
+`tft`nin kökü şuydu: aynı değişkenden türetilen üç bayrağın hiçbirine
+`0` uymuyor ve `parseLocaleNumber` boş alanı 0 döndürüyor.
+
+```
+ft4Low  = ft4 > 0 && ft4 < 0.8       ->  ft4 = 0 iken false
+ft4Norm = ft4 >= 0.8 && ft4 <= 1.8   ->  false
+ft4High = ft4 > 1.8                  ->  false
+```
+
+Ölçüt bunu doğrudan sınıyor: bayrak ifadeleri `0` ile değerlendiriliyor.
+
+| ölçüt | değer |
+|---|---|
+| taranan araç | 130 |
+| ölçülen bayrak | **11** |
+| 2+ bayraklı değişken grubu | **4** — `isth-dic` · `osmolal-gap` · `tft` (×2) |
+| 0 hiçbir kovaya düşmüyor | 2 (ikisi de `tft`) |
+
+**Pozitif kontrol gerçek kusurla:** düzeltme öncesi `tft` sürülünce `tsh` ve
+`ft4` **ikisi de** yakalanıyor.
+
+Güncel depoda da aynı iki kayıt çıkıyor ve bu **beklenen** — bayrakların
+ŞEKLİ değişmedi, değişen onların önüne konan kapı. Ölçüt şekli ölçüyor,
+korumayı değil.
+
+İki komşu kayıt karara bağlandı: `isth-dic` **kapılı** (bayraklar
+`total !== null` koşulunu kendi içinde taşıyor, `total` yalnızca dördü de
+yanıtlanınca hesaplanıyor); `osmolal-gap`ta gap 0 iken hiçbir toksik alkol
+önerisi çıkmaması **doğru davranış**.
+
+Yani şekil bu depoda gerçekten nadir: 130 aracın çoğu düğmeyle çalışıyor,
+sayısal aralık sınıflaması yapan çok az araç var.
+
+#### 3) ⚠ KAPSAM DÜZELTMESİ — "birimli sayaç taşıyan: 2" EKSİKTİ
+
+İki tur önce yazılan tarama sayaçları `{X.length} <birim>` biçiminde
+arıyordu ve **2 araç** bulmuştu. `isth-dic` okunurken şu göründü:
+
+```
+{answered}/4 parametre        <- payda LITERAL, {ITEMS.length} degil
+```
+
+Bu biçim o taramaya hiç girmemişti. Yeniden sayıldı:
+
+| ölçüt | değer |
+|---|---|
+| literal paydalı sayaç taşıyan araç | **20** |
+| **payda = gerçek madde sayısı** | **20 / 20** |
+| sapan | **0** |
+
+`4t-hit` 4 · `act` 5 · `behcet` 7 · `bode` 4 · `braden` 6 · `cam-icu` 4 ·
+`cat-copd` 8 · `dlqi` 10 · `essdai` 12 · `flipi` 5 · `gds-15` 15 ·
+`heart` 5 · `hscore` 9 · `ipss-r` 5 · `isth-dic` 4 · `lawton-iadl` 8 ·
+`morse-fall` 6 · `mrss` 17 · `murray` 4 · `tnss` 4.
+
+Yani sınıf temiz — ama **"2 araç" iddiası yanlıştı**: gerçek yüzey 22 araç.
+Bu, bu belgede tekrarlayan hatanın aynısı (adres parametresi okuyan araç
+"11" sanılmıştı, 15 çıktı; sayısal varsayılan "27" sanılmıştı, +17 çıktı).
+
+**Aktarılabilir kural: bir sayacı ararken PAYDANIN İKİ BİÇİMİNİ de say** —
+türetilmiş (`{X.length}`) ve literal (`/4`). Türetilmiş biçimi arayan bir
+ölçüt, elle yazılmış paydayı — yani tam da drift riski taşıyan biçimi —
+göremiyor.
+
+Bu turda kod değişmedi; üç ölçütün üçü de temiz çıktı ve kapsam ölçüldü.
