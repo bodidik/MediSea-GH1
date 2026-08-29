@@ -26903,3 +26903,138 @@ için kaydırma UX'i yanlış; sarma `divide-x` ayraçlarını bozuyor.
 kullanıyor (gerçek tarayıcıda kaydırma çubuğunu içerdiği için doğru), ama
 "öge ekranda mı" ölçümü `clientWidth` ile yapılmalı — yoksa 12px'lik bir
 tolerans sahte "ulaşılabilir" sonucu üretir.
+
+### BAĞLANTININ ADI, VAR OLAN BAŞKA BİR SAYFAYI SÖYLÜYORDU — sınıfın üçüncü örneği
+
+Yeni eksen: **bir bağlantının ADI, gittiği sayfanın KİMLİĞİNİ doğru söylüyor
+mu?** Depo bu sınıfın iki örneğini tek tek bulmuştu (premium kırıntısının
+ilk adımı "Ana sayfa" derken panoya gidiyordu; `AccessGate`in "Planları gör"
+düğmesi olmayan bir fiyat listesi vaat ediyordu) — ama sistematik hiç
+taranmamıştı.
+
+#### Ölçüt İKİ kuşakta yazıldı; birincisi karar verdiremiyordu
+
+**1. kuşak — "adın kelimeleri hedefin `<h1>`/`<title>`iyle örtüşüyor mu".**
+21 yüzey · 217 benzersiz hedef · 313 ad-hedef çifti · **26 aday**. Okunamaz:
+çoğu bağlam farkıydı ve üç ayrı sahte kova ürettiği görüldü —
+
+| sahte kova | örnek |
+|---|---|
+| **süzgeç bağlantısı** (sorgu atılıyor) | "Nefroloji" → `/tools?kategori=nefroloji` |
+| **eylem cümlesi** | "Neler dahil?" → `/uyelik` (h1 "Neyin ücretsiz, neyin Premium olduğu" — zaten o soruyu cevaplıyor) |
+| **kart metni** | "116 konu Endokrinoloji Diyabet, Tiroid, Adrenal" |
+
+**2. kuşak — keskin ölçüt:** bir bağlantının adı, sitede **VAR OLAN BAŞKA
+bir sayfanın kanonik adıysa** o bağlantı hedefini yanlış adlandırıyordur.
+Alt dize değil **TAM** eşleşme; kanonik ad listesi ilgili sayfanın kendi
+`<h1>`i ya da baskın gezinme etiketi.
+
+**637 bağlantı · 21 yüzey · BULGU 1.**
+
+#### ⚠ POZİTİF KONTROL ÖLÇÜTÜN KÖR OLDUĞUNU GÖSTERDİ
+
+İlk koşumda dokuz kanonik adın **yedisi 0 kez** eşleşti. Sebep katlamadaydı:
+liste ASCII yazılmıştı (`kutuphane` · `klinik araclar` · `uyelik`), katlama
+ise yalnızca `ı→i` yapıp öteki Türkçe harfleri koruyordu (`kütüphane` ·
+`klinik araçlar` · `üyelik`). Yani ölçüt **aradığı adların çoğunu hiç
+göremiyordu** ve "1 bulgu" sonucu rastlantıydı.
+
+Aksan katlaması eklendikten sonra pozitif kontrol anlamlı hâle geldi:
+
+```
+4x "ana sayfa" · 7x "kutuphane" · 11x "klinik araclar"
+12x "tum araclar" · 10x "uyelik" · 1x "ydus hazirlik"
+```
+
+Bulgu yine 1 — ama artık o "1" ölçülmüş bir sayı.
+
+**Kural: pozitif kontrolü ADAY ÜRETİMİYLE değil, ölçütün ARADIĞI ŞEYİ
+gerçekten bulabildiğiyle kur.** Buradaki ölçüt hiç bulgu üretmeseydi de
+"temiz" görünecekti; kör olduğunu yalnızca kanonik adların kullanım sayısı
+gösterdi.
+
+#### Bulgu: premium branş sayfasının dip düğmesi
+
+| ölçüt (canlı, `/tr/premium/ydus/nefroloji`) | değer |
+|---|---|
+| `/tr/premium/ydus`e giden bağlantı | **2** |
+| adları | **"YDUS Hazırlık"** ↔ **"← Ana sayfa"** |
+| aynı sayfada site köküne (`/`) giden bağlantı | **var — adı "MediSea"** |
+
+Yani "Ana sayfa" ne hedefini adlandırıyordu (o sayfanın `<h1>`i "YDUS
+Hazırlık") ne de gerçek ana sayfayı (`/`, `<h1>` "Medi Sea Akademi") —
+üstelik gerçek ana sayfa **aynı sayfada ayrı bir bağlantı olarak** duruyor.
+
+**Kırıntı yolu bir tur önce tam bu gerekçeyle düzeltilmişti** ve dosyanın
+kendi yorumu bunu yazıyor:
+
+> *"Ana sayfa" -> "YDUS Hazırlık": bağlantı site köküne değil premium
+> PANOSUNA gidiyor ve o sayfanın kendi `<h1>`'i "YDUS Hazırlık".*
+
+Kardeş bağlantı o turda atlanmış. Depo kuralının (**"kopyayı say"**) kendi
+düzeltmesinde çiğnenmiş hâli — ve bu, kuralın bu belgede üçüncü kez aynı
+biçimde işlemesi.
+
+#### Envanter: 14 bağlantı, tek hedef, 10 ayrı ad
+
+Premium ağacındaki her `/[lang]/premium/ydus` bağlantısı kaynaktan sayıldı:
+
+| ad | adet | verdikt |
+|---|---|---|
+| **"Ana sayfa" · "← Ana sayfa"** | **2** | **KUSUR** — var olan başka bir sayfayı adlandırıyor |
+| "YDUS Hazırlık" | 2 | **kanonik** — hedefin kendi `<h1>`i |
+| "YDUS ana sayfası" · "…sına dön" | 3 | dürüst (niteleyici var) |
+| "← YDUS panosuna dön" | 2 | dürüst |
+| "⚓ Mavi Vatan Lobi" · "🏠 Premium Lobi" · "Köprüüstüne Dön" | 5 | **marka sesi** — belgede korunması yazılı |
+
+Dört sayfada aynı sayfa içinde ad çelişkisi vardı; ikisi (branş ve konu)
+düzeltildi, ikisi (inciler, profil) marka sesi + hata kartı bağlamı olduğu
+için **bilerek bırakıldı**.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| branş sayfası — panoya giden adlar | "YDUS Hazırlık" ↔ **"← Ana sayfa"** | "YDUS Hazırlık" ↔ **"← YDUS Hazırlık"** |
+| konu sayfası (kapı geçici açık) | "YDUS Hazırlık" ↔ **"Ana sayfa"** | **ikisi de "YDUS Hazırlık"** |
+| konu sayfası dip düğme çifti | — | **"← Nefroloji" · "YDUS Hazırlık"** — her biri kendi hedefini adlandırıyor |
+| keskin ölçüt yeniden sürüldü | 1 | **0** (429 bağlantı) |
+| **negatif** — site kökü bağlantısı | "MediSea" | **değişmedi** |
+| **negatif** — `/tools`taki "🏠 Ana Sayfa" | `/`ye gidiyor | **değişmedi** (pozitif kontrolde 2x sayılıyor) |
+| **negatif** — 320px | — | belge 320, **yatay taşma 0**, düğme 118×32 tek satır, sağ kenar 134 |
+| **negatif** — okuma alanı | — | değişiklik `[data-readable]` **DIŞINDA** (8141 krk) |
+| **negatif** — kapı geri kondu | — | konu sayfası yeniden **"Erişim Kısıtlı"**, `ZZ_OLCUM` izi **0** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Yedinci satır bu değişikliğin tek gerçek riskiydi: etiket 11 → 15 karaktere
+uzadı ve dar ekranda taşabilirdi.
+
+#### YAN ENVANTER — ok glifi ada karışıyor: 52 bağlantı, 43'ü açık
+
+Düzeltmeden sonra branş sayfasında iki ad hâlâ birebir aynı değil
+("YDUS Hazırlık" ↔ "**←** YDUS Hazırlık"), çünkü ok glifi erişilebilir ada
+giriyor. Kapsam sayıldı: **879 bağlantının 52'si** yön oku taşıyor,
+yalnızca **9'u** `aria-hidden` ile sarmalıyor.
+
+**Toptan süpürme YANLIŞ olurdu** ve ölçüm bunu gösterdi: beş araç
+layout'unda ok **anlamsal** —
+
+```
+"HbA1c → Ortalama Glukoz"      ok "dönüşür" demek, gizlenirse anlam gider
+"Branşlar ↓"                    sayfa içi yön
+"← Konuya dön" (11 yer)         süsleme
+```
+
+Yani bu, deponun kayıtlı *"aday üretmek ile karar vermek AYRI"* kuralının
+bir örneği: her ok tek tek okunmalı. **Ölçüldü, kapsamı ve semantik
+istisnası yazıldı, SÜPÜRÜLMEDİ** — ayrı bir turun işi.
+
+#### Ölçüm/yazma notları
+
+- **Yedek düzeltmeden SONRA alındığı için geri yükleme düzeltmeyi de geri
+  getirdi**, ve yama betiğinin çapa sayacı çift uygulamayı doğru şekilde
+  reddetti (`ÇAPA SAYISI YANLIŞ: 0`). Bir yamaya yazma öncesi çapa sayımı
+  koymak, bu turda geri yüklemenin ne yaptığını da ölçtü.
+- **Ters bölü tuzağı yine ısırdı**: `node -e` içindeki `s[i-1] !== '\\'`
+  kabuk kanalında tek ters bölüye indi ve `SyntaxError` verdi. Betik Write
+  ile yazılıp kaçış `String.fromCharCode(92)` ile kuruldu.

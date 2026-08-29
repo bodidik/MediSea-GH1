@@ -240,7 +240,17 @@ export default async function BransSayfasi({
             background: '#f5f9ff',
             textDecoration: 'none',
           }}>
-            ← Ana sayfa
+            {/* "Ana sayfa" DEĞİL: bağlantı site köküne değil premium
+                PANOSUNA gidiyor ve o sayfanın kendi <h1>'i "YDUS Hazırlık".
+                Üstelik AYNI sayfada gerçek site köküne giden bir bağlantı
+                da var ("MediSea", kırıntının ilk adımı) — yani "Ana sayfa"
+                var olan BAŞKA bir sayfayı adlandırıyordu.
+
+                Ölçüldü: bu sayfada aynı hedefe giden iki bağlantı vardı ve
+                adları ayrışıyordu ("YDUS Hazırlık" ↔ "← Ana sayfa"). Aynı
+                kusur kırıntı yolunda bir tur önce düzeltilmiş, kardeş
+                bağlantı atlanmıştı. */}
+            ← YDUS Hazırlık
           </Link>
         </div>
 

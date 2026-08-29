@@ -428,7 +428,11 @@ export default async function KonuSayfasi({
                 background: '#f5f9ff',
                 textDecoration: 'none',
               }}>
-                Ana sayfa
+                {/* Kardeş branş sayfasıyla AYNI gerekçe: hedef site kökü
+                    değil premium panosu, o sayfanın <h1>'i "YDUS Hazırlık",
+                    ve bu sayfanın kırıntısı zaten öyle diyor. Yanındaki
+                    düğme de hedefini adıyla söylüyor ("← Nefroloji"). */}
+                YDUS Hazırlık
               </Link>
             </div>
           </div>
