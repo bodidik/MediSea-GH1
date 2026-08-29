@@ -450,13 +450,40 @@ function SonucEkrani({
           background: zemin, border: `1.5px solid ${renk}`, borderRadius: '16px',
           padding: '2rem 1.5rem', textAlign: 'center', marginBottom: '1.25rem',
         }}>
-          <div style={{ fontSize: '11px', fontWeight: 700, color: renk, textTransform: 'uppercase', letterSpacing: '.12em' }}>
+          {/**
+            * BAŞLIK — sonuç ekranı bir dönem BAŞLIKSIZDI (ölçüldü: `h1` 0,
+            * `h2`/`h3` 0). Soru görünümünde `h1` var (set adı) ama set bitince
+            * o görünüm tümden sökülüyor ve belgede tek bir başlık kalmıyordu;
+            * başlıkla gezen kullanıcı için ekranın adı yok.
+            *
+            * Bu, bu depoda dört premium motorda kapatılan sınıfın aynısı —
+            * orada ölçüm SORU durumunda alınmıştı, SONUÇ dalı hiç
+            * çizdirilmemişti. Koşullu render edilen dalı görmek için onu
+            * ayrıca sürmek gerekiyor.
+            *
+            * Görünüm DEĞİŞMİYOR: `globals.css` h1'e serif + 24px üst boşluk
+            * veriyor, ikisi de satır içi ezmeyle geri alınıyor.
+            */}
+          <h1 style={{
+            fontSize: '11px', fontWeight: 700, color: renk, textTransform: 'uppercase',
+            letterSpacing: '.12em', fontFamily: 'inherit', margin: 0, lineHeight: 'inherit',
+          }}>
             Set tamamlandı
-          </div>
+          </h1>
           <div style={{ fontSize: '48px', fontWeight: 800, color: renk, lineHeight: 1.1, margin: '.4rem 0' }}>
             %{yuzde}
           </div>
-          <div style={{ fontSize: '14px', fontWeight: 600, color: '#4a6a8a' }}>
+          {/**
+            * DUYURU — soru görünümünde her cevaptan sonra `role="status"` ile
+            * "Doğru cevap." duyuruluyor (ölçüldü). Set BİTTİĞİNDE o bölge
+            * sökülüyor ve ekran okuyucu tam da en önemli anda SUSUYORDU:
+            * ölçüldü, sonuç ekranında canlı bölge sayısı SIFIRDI.
+            *
+            * `status` DEĞİL `alert`: bu kart koşullu render ediliyor, yani
+            * içerik değişmeden önce DOM'da bulunmuyor — `status` ilk mesajı
+            * kaçırırdı. Depodaki sebep kartları da aynı gerekçeyle `alert`.
+            */}
+          <div role="alert" style={{ fontSize: '14px', fontWeight: 600, color: '#4a6a8a' }}>
             {cevaplanan.length} soruda {dogru} doğru · {yanlislar.length} yanlış
           </div>
         </div>
@@ -601,9 +628,17 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
    * bağlantı olmalı, yoksa kullanıcı çıkmazda kalıyor (aynı sayfanın
    * "Quiz bulunamadı" kartı bunu zaten yapıyordu; boş dal atlanmıştı).
    *
-   * İki yoldan buraya düşülüyor: quiz dosyası okunabilir ama `sorular`
-   * boş/başka şemada, ya da "yalnızca yanlışları çöz" kipinde saklanan
-   * kimlikler artık hiçbir soruyla eşleşmiyor (içerik düzenlenince olur).
+   * KAPSAM DÜZELTMESİ — burada bir dönem "yalnızca yanlışları çöz kipinde
+   * SAKLANAN kimlikler artık hiçbir soruyla eşleşmiyor" da yazıyordu.
+   * Ölçüldü: `aktifIdler` yalnızca bileşen durumu, depoya HİÇ yazılmıyor
+   * (kayıt şeması `{i, s}`). Yani o senaryo ulaşılamaz; buraya tek yoldan
+   * düşülüyor — quiz dosyası okunabiliyor ama `sorular` boş ya da başka
+   * şemada (İngilizce şemalı `aml-quiz-1` böyle).
+   *
+   * Aynı ölçümün yan sonucu: tekrar kipi SAYFA YENİLENİNCE kayboluyor ve
+   * tam listeye dönülüyor (ölçüldü: "1 / 2" → "1 / 10"). Veri kaybı yok,
+   * yanlış bir iddia da basılmıyor; `i` imlecinin son yazana bırakılması
+   * kararıyla aynı kovada.
    */
   if (sorular.length === 0) {
     return (

@@ -25567,3 +25567,103 @@ etiketlerini (`strong/em/b/i/h1-h6`) kapsıyor; yukarıdaki `<p>`/`<ul>` kaydı
 ondan geçiyor. Detektör EKLENMEDİ — bu depoda kural açık: *öngörülen risk
 için denetim yazmak, ölçülen kusur için yazmakla aynı şey değil* ve bu sınıf
 bugüne kadar tek bir görünür kusur üretmedi.
+
+### "YANLIŞLARI ÇÖZ" KİPİ İLK KEZ SÜRÜLDÜ — akış doğru, ama SONUÇ ekranı sessiz ve başlıksızdı
+
+Belge `QuizEngine`i "10 soru, 7 doğru 3 yanlış" ile ölçmüş ve kurtarma
+yollarının **sunulduğunu** yazmıştı — ama o iki düğmeye hiç basılmamıştı.
+Ücretli üründe gerçek bir kullanıcı akışı ve `i` imlecinin anlamını
+değiştirdiği belgede ayrıca kayıtlı, yani sürülmesi gerekiyordu.
+
+Kapı geçici açılıp gerçek quizle (`romatoloji/sle-quiz-1`, 10 soru) sürüldü.
+
+#### Akış TEMİZ — daraltma, sayaç ve sonuç sayıları birebir
+
+| adım | ölçülen |
+|---|---|
+| tam set (q3·q5·q7 bilerek yanlış) | **"%70 · 10 soruda 7 doğru · 3 yanlış"** |
+| düğme | **"Yanlış 3 soruyu tekrar çöz"** |
+| tekrar kipi | sayaç **1/3 → 2/3 → 3/3**, gösterilen üç soru tam olarak yanlış yapılanlar |
+| tekrar sonucu (üçüne de B) | **"%67 · 3 soruda 2 doğru · 1 yanlış"** — q3=B✓ q5=A✗ q7=B✓, birebir |
+| **negatif** — "Baştan çöz" | **1/10**, depo BOŞ, skor rozeti yok |
+| **negatif** — baştan sonra ilk cevap | depoda **tam 1 kayıt** — eski 10 cevap dirilmedi |
+
+Son satır geçen turun birleştirme düzeltmesinin (oku–değiştir–yaz) tarihsel
+kontrolü: birleştirme "baştan çöz"ü delmiyor, çünkü set bitince anahtar
+zaten siliniyor.
+
+#### Bulgu 1 — SONUÇ EKRANINDA HİÇ BAŞLIK YOKTU
+
+Ölçüldü: sonuç ekranında `h1` **0**, `h2`/`h3` **0**. Soru görünümünde `h1`
+var (set adı) ama set bitince o görünüm tümden sökülüyor ve belgede tek bir
+başlık kalmıyordu.
+
+Bu, bu oturumda **dört premium motorda kapatılan sınıfın aynısı** — ve o tur
+neden kaçırdığı öğretici: ölçüm SORU durumunda alınmıştı, SONUÇ dalı hiç
+çizdirilmemişti. Belgedeki kural (*"koşullu render edilen kartlar normal
+akışta görünmez; onları görmek için dalı ayrıca sürmek gerekir"*) kendi
+düzeltmemin kapsamında işlemiş.
+
+#### Bulgu 2 — SET BİTTİĞİNDE EKRAN OKUYUCU SUSUYORDU
+
+Soru görünümünde her cevaptan sonra `role="status"` ile "Doğru cevap." /
+"Yanlış. Doğru cevap X." duyuruluyor (ölçüldü). Set bittiğinde o bölge
+**sökülüyor** ve sonuç ekranında canlı bölge sayısı **SIFIR** — yani ekran
+okuyucu tam da en önemli anda, skorun açıklandığı anda susuyordu.
+
+`status` DEĞİL **`alert`** seçildi ve gerekçesi belgede kayıtlı: bu kart
+koşullu render ediliyor, yani içerik değişmeden önce DOM'da bulunmuyor;
+`status` ilk mesajı kaçırırdı. Depodaki sebep kartları da aynı gerekçeyle
+`alert`.
+
+#### Doğrulama — görünüm DEĞİŞMEDİ, dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| sonuç ekranı başlık | **0** | **`h1: "Set tamamlandı"`** |
+| sonuç ekranı canlı bölge | **0** | **`alert: "10 soruda 8 doğru · 2 yanlış"`** |
+| `h1` görünümü | — | 11px · 700 · **system-ui** · üst boşluk **0px** · uppercase · harf aralığı 1.32px |
+| **negatif** — soru görünümü | `h1` set adı · `status` | **değişmedi** |
+| **negatif** — tekrar kipi | 1/2 · `h1` set adı | **değişmedi** |
+| **negatif** — tekrar SONUCU | — | `h1` + `alert: "2 soruda 1 doğru · 1 yanlış"` (%50 ✓) |
+| **negatif** — her durumda `h1` sayısı | — | **tam 1** |
+
+Üçüncü satır kritik: `globals.css` `h1`e serif + 24px üst boşluk veriyor
+(belgede kayıtlı tuzak); ikisi de satır içi ezmeyle geri alındı ve ölçümle
+doğrulandı — `<div>`den `<h1>`e geçiş **görsel gerileme üretmiyor**.
+
+#### Yan bulgu — bir yorum ULAŞILAMAZ bir senaryo anlatıyordu
+
+Boş durum kartının yorumu şunu diyordu: *"'yalnızca yanlışları çöz' kipinde
+SAKLANAN kimlikler artık hiçbir soruyla eşleşmiyor (içerik düzenlenince
+olur)"*. Ölçüldü: **`aktifIdler` yalnızca bileşen durumu, depoya HİÇ
+yazılmıyor** (kayıt şeması `{i, s}`). Yani o senaryo ulaşılamaz; boş duruma
+tek yoldan düşülüyor — quiz dosyası okunabiliyor ama `sorular` boş ya da
+başka şemada (İngilizce şemalı `aml-quiz-1`). Yorum gerçeğe hizalandı;
+`plan.guard.js` kaydıyla aynı sınıf.
+
+#### Ölçülüp DEĞİŞTİRİLMEYEN: tekrar kipi sayfa yenilenince kayboluyor
+
+`aktifIdler` saklanmadığı için yenilemede tam listeye dönülüyor. Ölçüldü:
+tekrar kipinde "1 / 2" iken yenileme → **"1 / 10"**, skor rozeti "0✓ 1✗"
+(depoda gerçekten tek kayıt var: `{"i":0,"s":{"s5":false}}`).
+
+Veri kaybı YOK ve yanlış bir iddia basılmıyor — gösterilen sayı depodakiyle
+tutuyor. Saklamak yeni bir tehlike açardı (bayat kimlikler) ve tam da
+yukarıda ulaşılamaz olduğu ölçülen dalı canlandırırdı. `i` imlecinin son
+yazana bırakılması kararıyla aynı kovada; ölçüldü, gerekçesi koda yazıldı.
+
+#### Ölçüm tuzakları
+
+- **Çapa benzersiz olmalı.** İlerletme düğmesini `/Sonraki|Sonucu|Sonuç/i`
+  ile aramak, cevaplanmış bir ŞIKKIN açıklama metnindeki *"biyopsi **sonucu**
+  tedavi seçimini…"* ifadesine takıldı ve sürücü aynı soruda takılı kaldı.
+  Çapa `^(Sonraki soru|Sonucu gör)` yapılınca akış düzeldi. Bu depoda aynı
+  aile daha önce dört kez iş bozdu.
+- Sonuç ekranında **odak `<body>`de** kalıyor ve `body.innerText` JSON-LD ile
+  başlıyor (kayıtlı tuzak) — ölçüm `document.activeElement` metnine değil
+  başlık/rol sayımına bağlandı.
+
+Kapı geri kondu ve doğrulandı: canlıda sayfa yeniden **"Erişim Kısıtlı"**,
+kaynakta `ZZ_OLCUM` izi **0**, `page.tsx` yedekle birebir. Kapılar: lint ·
+typecheck · build 637/637. Dosya saf CRLF (770/770) — biçim korundu.
