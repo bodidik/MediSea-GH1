@@ -431,8 +431,8 @@ export default function ToolsIcerik() {
                  sonradan EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü
                  duyurur; koşullu basılsaydı ilk mesaj kaçardı.
 
-              2) Sayı BENZERSİZ slug üzerinden. Kayıtları toplamak "117 araç"
-                 gibi gerçekte olmayan bir sayı üretir, çünkü bazı araçlar
+              2) Sayı BENZERSİZ slug üzerinden. Kayıtları toplamak LİSTELEME
+                 sayısını verir, araç sayısını değil, çünkü bazı araçlar
                  iki branşta birden listeleniyor (aynı gerekçe toplamArac
                  hesabında da yazılı). */}
           <div role="status" aria-live="polite" className="sr-only">

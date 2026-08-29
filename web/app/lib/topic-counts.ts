@@ -59,7 +59,7 @@ export function getTopicCounts(): Record<string, number> {
 /**
  * Yayımlanmış klinik araç sayısı.
  *
- * Ana sayfada bu sayı "6+" olarak elle yazılıydı; gerçekte 114 araç var.
+ * Ana sayfada bu sayı "6+" olarak elle yazılıydı; gerçekte yüzden fazla araç var.
  * Sitenin en büyük varlığı olduğunun yirmide biri gibi gösteriliyordu.
  *
  * Sayı app/tools klasöründen DEĞİL, content/arac-index.json'dan okunuyor.

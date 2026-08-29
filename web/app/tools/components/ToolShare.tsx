@@ -12,11 +12,11 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
    * PAYLAŞILAN ADRES DEĞER TAŞIMAZ — ve bu bilerek.
    *
    * Burası bir dönem hesaplanan değerleri sorgu dizesine yazıyordu
-   * (`?scr=2.5&age=70&sex=female`). 111 araçta paylaş düğmesi var.
+   * (`?scr=2.5&age=70&sex=female`). Paylaş düğmesi araç sayfalarının TAMAMINDA var.
    * DÜZELTME — burası bir dönem "parametreleri geri okuyan araç SIFIR"
    * diyordu. YANLIŞTI; yeniden ölçüldü: ON BİR araç adres parametresi okuyor
    * (chads-vasc · curb65 · ecog · gcs · has-bled · meld-na · news2 · perc ·
-   * qsofa · sofa · timi-ua), geri kalan ~100 araç okumuyor.
+   * qsofa · sofa · timi-ua), geri kalanı okumuyor.
    *
    * Yani parametre yazmak yeniden açılsaydı sonuç TUTARSIZ olurdu: on bir
    * araçta değerler geri gelir, ötekilerde adres değer taşıdığı hâlde sayfa
@@ -44,7 +44,7 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
    * yapıp "Ağır (Entübasyon Eşiği ≤8)" basıyordu. Serbest girdinin yokluğu,
    * aracı güvenli GÖSTERİYOR ama güvenli YAPMIYOR.
    *
-   * `params` imzada BIRAKILDI: 111 çağrı yeri onu geçiriyor ve özellik
+   * `params` imzada BIRAKILDI: her araç sayfası onu geçiriyor ve özellik
    * yazıldığında yeniden gerekecek. Şu an bilerek kullanılmıyor.
    */
   const buildUrl = React.useCallback(() => {
@@ -81,7 +81,7 @@ export default function ToolShare({ params = {} }: { params?: Params }) {
             ? 'bg-emerald-700 text-white border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]' 
             /* text-slate-200: slate-300/400/500 globals.css'te AÇIK zemin için
                bir basamak koyulaştırılıyor; bu düğme KOYU (bg-slate-800), yani
-               kural burada ters çalışıp yazıyı 3.07'ye düşürüyordu. 111 araç
+               kural burada ters çalışıp yazıyı 3.07'ye düşürüyordu. Her araç
                sayfası bu düğmeyi kullanıyor. */
             : 'bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-blue-500/50 shadow-lg active:scale-95'}
         `}

@@ -6,7 +6,7 @@
  * metadata dışa aktaramaz. Next'te bu durumun standart çözümü, aynı klasöre
  * yalnızca metadata taşıyan bir sunucu layout'u koymaktır.
  *
- * Neden betik? 114 araç var ve liste büyüyor. Elle yazılan başlık, ilk yeni
+ * Neden betik? Araç sayısı yüzü aştı ve liste büyümeye devam ediyor. Elle yazılan başlık, ilk yeni
  * araçta eskimeye başlar; kaynak tek yerde (TOOLS_DATABASE) kalsın diye
  * başlıklar oradan türetiliyor.
  *

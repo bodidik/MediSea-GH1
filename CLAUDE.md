@@ -22067,3 +22067,76 @@ dördüncüsü hükmün gerçekten değiştiğini gösteriyor.
 Kalan 44 sessiz araç sürülmedi ve **"temiz" DENMİYOR**; statik tarafta
 tutarlılık 25/25, davranış tarafında 3 araç (bu tur `ktv` · `sga`, geçen tur
 `charlson`).
+
+### YORUMLARDAKİ ARAÇ SAYISI BAYATLAMIŞTI — ama düzeltme "sayıyı güncellemek" DEĞİL
+
+`ToolShare.tsx` okunurken göze çarptı: *"111 araçta paylaş düğmesi var."*
+Bugün 130. Depoda "sayı yazma, saydır" mimarisi ARAYÜZ için kurulmuş;
+**yorumlar o mimarinin dışında** ve elle yazıldıkları için sessizce
+bayatlıyorlar.
+
+Bu depoda bir kez pahalıya mal olmuştu: bir yorum var olmayan bir dosyaya
+atıf yapıyordu (`bkz. plan.guard.js`) ve okuyanı, olmayan bir kapının
+varlığına inandırmıştı.
+
+#### Ayrım ZAMAN KİPİNDE — sayı değil
+
+Bütün yorumlar tarandı (581 dosya · 4348 yorum bloğu) ve iki kovaya ayrıldı:
+
+| kova | ne yapıldı |
+|---|---|
+| **GEÇMİŞ ZAMANLI ölçüm kaydı** — *"114 aracın hepsi elendi"*, *"131 aracın 129'unda vardı"* | **17 kayıt, DOKUNULMADI** — sayı orada kaydın kendisi; değiştirmek geçmişi tahrif etmek olurdu |
+| **ŞİMDİKİ ZAMANLI iddia** — *"111 araçta paylaş düğmesi var"*, *"gerçekte 114 araç var"* | **9 kayıt, DÜZELTİLDİ** |
+
+Düzeltme **sayıyı 130 yapmak değil**; sayıyı iddiadan ÇIKARMAK. Yoksa bir
+sonraki araç eklendiğinde aynı yorum yine yalan söylerdi.
+
+| dosya | önce | sonra |
+|---|---|---|
+| `ToolShare` | "111 araçta paylaş düğmesi var" | "araç sayfalarının TAMAMINDA var" |
+| `ToolShare` | "111 çağrı yeri onu geçiriyor" | "her araç sayfası onu geçiriyor" |
+| `ToolShare` | "geri kalan ~100 araç okumuyor" | "geri kalanı okumuyor" |
+| `topic-counts` | "gerçekte 114 araç var" | "yüzden fazla araç var" |
+| `opengraph-image` | "altındaki 114 araç sayfası" · "114 ayrı görsel rotası" | "bütün araç sayfaları" · "araç sayısı kadar" |
+| `arac-metadata.cjs` | **"114 araç var ve liste büyüyor"** | "Araç sayısı yüzü aştı ve liste büyümeye devam ediyor" |
+| `ToolsIcerik` | *"'117 araç' gibi gerçekte olmayan bir sayı"* | "LİSTELEME sayısını verir, araç sayısını değil" |
+
+Sondan ikincisi öğretici: **betiğin VAROLUŞ GEREKÇESİNİ anlatan cümle,
+tarif ettiği kusuru kendi içinde taşıyordu** — "liste büyüyor" deyip yanına
+sabit bir sayı yazmak.
+
+Sonuç: şimdiki zamanlı bayat iddia **9 → 0**; geçmiş zamanlı 17 kayıt yerinde.
+`arac-metadata --kontrol` senkron (130 araç · 1212 bağlantı), kapılar temiz.
+
+#### ⚠ İLK TARAMAM EKSİK SAYDI — 8 dedi, gerçek 21
+
+İlk ölçüt Türkçe ek deseni istiyordu (`ara[çc](?:ta|te|da|de|in|ın…)`) ve
+**"114 araç sayfası"**, **"114 araç var"** gibi ek almamış biçimleri hiç
+görmedi: 8 buldu, gerçek yüzey **21**.
+
+Bu, bu oturumda dördüncü kez tekrarlayan hata: sayım ölçütün TANIDIĞI biçim
+kadar geniş çıkıyor (adres parametresi 11→15 · sayısal varsayılan 27→+17 ·
+sayaç paydası 2→22 · şimdi bu). **Türkçede bir sözcüğün ardından ek
+GELMEYEBİLİR; ek zorunlu tutan her desen sistematik olarak eksik sayar.**
+
+#### Yan envanter: `ToolShare.params` bir "dolu silah" ve boyutu ölçüldü
+
+Aynı dosyayı okurken `params`ın **destructure edilip gövdede hiç
+kullanılmadığı** görüldü. Koruma yerinde (`url.search = ""`) ve
+`sizinti-denetim` onu nöbetliyor. Ölçülmemiş olan şey büyüklüğüydü:
+
+| ölçüt | değer |
+|---|---|
+| `ToolShare` çağrı yeri | **130** |
+| `params` geçiren | **127** |
+| **ham hasta verisi taşıyan** | **22 araç** |
+| yalnızca türetilmiş/seçim | 105 |
+
+Ham taşıyanların içinde tam bir kan gazı paneli (`abg`: pH · HCO₃ · Na),
+tam bir tiroid paneli (`tft`: TSH · FT4 · FT3), `sodium` (yaş · boy · kilo ·
+Na) ve `osmolal-gap` (ölçülen osm · Na · glukoz · BUN) var. Yani koruma
+kaldırılsa paylaşılan adrese inecek şey bu.
+
+Ayrıca 12 araç `params`ı `Object.fromEntries(...map(...))` ile kuruyor —
+ölü bir özellik için her render'da iş. Çökme riski yok (bilinen diziler
+üzerinde güvenli işlemler), maliyet önemsiz. Ölçüldü, **değiştirilmedi**.

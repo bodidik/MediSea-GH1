@@ -2,9 +2,9 @@ import { ImageResponse } from "next/og";
 import { SITE_ADI } from "@/lib/site";
 
 /**
- * Klinik araçların paylaşım kartı — /tools ve altındaki 114 araç sayfası.
+ * Klinik araçların paylaşım kartı — /tools ve altındaki bütün araç sayfaları.
  *
- * Araç başına ayrı kart üretmek 114 ayrı görsel rotası demek olurdu; buna
+ * Araç başına ayrı kart üretmek araç sayısı kadar ayrı görsel rotası demek olurdu; buna
  * değmez, çünkü paylaşım önizlemesindeki BAŞLIK zaten araca özel
  * (layout'lardaki og:title). Kart ortak, başlık kişisel.
  *
