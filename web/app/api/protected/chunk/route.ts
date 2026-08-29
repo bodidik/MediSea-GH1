@@ -11,9 +11,28 @@ export async function GET(req: NextRequest) {
   const id = req.nextUrl.searchParams.get("id") || "sample";
 
   try {
-    // 1. AŞAMA: Token Alma İşlemi
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"; // Boş url hatasını önlemek için fallback eklendi
-    const tRes = await fetch(`${baseUrl}/api/protected/token`, { 
+    /**
+     * 1. AŞAMA: Token Alma İşlemi
+     *
+     * Origin İSTEKTEN geliyor, ortam değişkeninden DEĞİL.
+     *
+     * Burası `process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"`
+     * yazıyordu ve o değişken bu depoda BAŞKA HİÇBİR YERDE geçmiyor —
+     * `.env.example`de de, docker-compose'da da, CI'da da yok (ölçüldü:
+     * kodun okuduğu 24 değişkenden 8'i hiçbir yerde belgelenmemiş, bu
+     * onlardan biri). Yani üretimde her zaman yedeğe düşüyordu ve sunucusuz
+     * işlev KENDİ İÇİNDE localhost:3000'e istek atıyordu.
+     *
+     * Sonuç: uç 503 "backend-unavailable" döndürüyor ama ilk düşen şey arka
+     * uç DEĞİL, bu self-fetch. Belgedeki "yanlış sebep, sebepsizlikten kötü
+     * olabilir" kuralı — ve "localhost üretime sızdı" sınıfı (site haritası
+     * bir dönem canlıda `http://localhost:3000/...` basıyordu).
+     *
+     * `req.nextUrl.origin` her ortamda doğru: localhost, LAN IP (telefondan
+     * bakarken), önizleme dağıtımı ve üretim alan adı. Deponun `signOut`
+     * dersinin aynısı: hesabı yanlış yapan katmandan AL, doğru kaynaktan ver.
+     */
+    const tRes = await fetch(`${req.nextUrl.origin}/api/protected/token`, {
       headers: { cookie: cookies }, 
       cache: "no-store" 
     });

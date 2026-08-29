@@ -22730,3 +22730,135 @@ bağlantı görselde ortak, metinde araca özel.
 
 Kıyas: site tarafında 21 sayfa **11 farklı** görsel kullanıyor (konu kartları
 başlığı görsele basıyor).
+
+### CANLI BİR UÇ KENDİ İÇİNDE `localhost:3000`e İSTEK ATIYORDU — belgesiz ortam değişkeni
+
+Yeni eksen: **kodun okuduğu ortam değişkeni ile belgelenen değişken aynı mı?**
+"İlan mı gerçek mi" sınıfının YAPILANDIRMA tarafı — kod bir değişkeni okuyup
+hiçbir örnek/belge onu anmıyorsa, yeni bir dağıtımda o değişken **sessizce**
+eksik kalır ve yedek dal kalıcı hâle gelir.
+
+Ölçüldü (git'in izlediği 1377 dosya): kod **24 ortam değişkeni** okuyor;
+`.env.example` · `docker-compose.yml` · CI · `CLAUDE.md`'de aranınca **8'i
+hiçbir yerde belgelenmemiş**.
+
+Sekizinden **biri canlı web uygulamasında** ve gerçek bir kusur üretiyordu:
+
+```
+web/app/api/protected/chunk/route.ts:15
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+await fetch(`${baseUrl}/api/protected/token`, …)
+```
+
+`NEXT_PUBLIC_BASE_URL` bu depoda **başka hiçbir yerde geçmiyor** (ölçüldü:
+tek satır). Yani üretimde her zaman yedeğe düşüyor ve **sunucusuz işlev kendi
+içinde `localhost:3000`e istek atıyor.**
+
+Sonuç: uç `503 backend-unavailable` döndürüyor ama **ilk düşen şey arka uç
+DEĞİL, bu self-fetch.** Belgedeki *"yanlış sebep, sebepsizlikten kötü
+olabilir"* kuralı — ve *"localhost üretime sızdı"* sınıfı (site haritası bir
+dönem canlıda `http://localhost:3000/...` basıyordu).
+
+**Çare `NEXT_PUBLIC_BASE_URL`i belgelemek DEĞİL, hesabı doğru kaynaktan
+almak:** origin artık İSTEKTEN geliyor (`req.nextUrl.origin`). Bu, deponun
+`signOut` dersinin aynısı — *"bir katman senin yerine hedef HESAPLIYOR ve o
+hesap yanlışsa, hesabı elinden al."* Ortam değişkeni gerekmiyor; localhost,
+LAN IP (telefondan bakarken), önizleme dağıtımı ve üretim alan adı için
+tek başına doğru.
+
+#### Doğrulama — geçici ölçüm rotasıyla
+
+Kanıt yürütmeyle değil **yapıyla** kuruldu: bozuk yolu çalıştırmaya gerek yok,
+çünkü yedeğe düşüldüğü doğrudan ölçülebiliyor.
+
+| ölçüt (üretim derlemesi, **3100 portunda**) | sonuç |
+|---|---|
+| `process.env.NEXT_PUBLIC_BASE_URL` | **`null`** — yani yedek dal HER ZAMAN çalışıyordu |
+| yedeğin sabit hedefi | `http://localhost:3000` — sunucu **3100**'de |
+| `req.nextUrl.origin` | **`http://localhost:3100`** — sunulan origin |
+| `Host: 127.0.0.1:3100` ile aynı istek | origin yine `http://localhost:3100` (Next ana bilgisayarı normalleştiriyor) |
+| **negatif** — uç yanıtı | `{ok:false, reason:"backend-unavailable", id, content:null}` · **503** — şekil ve durum DEĞİŞMEDİ |
+
+İlk iki satır birlikte kusurun kanıtı: değişken yok, yedek sabit, sunucu
+başka portta. Son satır düzeltmenin sözleşmeyi bozmadığını gösteriyor.
+
+Geçici rota silindi (`zz-origin` izi **0**), silme sonrası `tsc` temiz
+(`.next/types` artığı kalmadı), kapılar geçti, satır sonu (CRLF) korundu.
+
+**Ucu çağıran arayüz YOK** (ölçüldü: 0 dosya) — yani düzeltme bugün kimseye
+ulaşan bir davranışı değiştirmiyor. Yine de yapıldı: sınıf "localhost üretime
+sızdı" ve bu depoda o sınıf bir kez canlı site haritasının tamamını
+geçersiz kılmıştı.
+
+#### Kalan 7 belgesiz değişken — hepsi `server/` tarafında
+
+`ADMIN_KEY` · `CONTENT_TOKEN_SECRET` · `DIAGNOSIS_EXTRACT_MODEL` ·
+`DIAGNOSIS_EXTRACT_MAX_TOKENS` · `ENV_FILE` · `LOGTAIL_SOURCE_TOKEN` ·
+**`MONGO_URI`**.
+
+Sonuncusu ayrıca bir **ad ayrışması**: 13 yer `MONGODB_URI` okuyor, 2 yer
+`MONGO_URI`. İkisi arasında iki karakter var ve ikisi de aynı şeyi tarif
+ediyor. Express arka ucu canlıda hiç çalışmıyor, o yüzden kullanıcıya
+ulaşan bir kusur değil — ama o betikleri çalıştıracak kişi için tuzak.
+
+Ters yönde 6 kayıt "belgelenmiş ama hiçbir kod okumuyor" çıktı ve **üçü
+yanlış pozitif**: `AUTH_SECRET` · `NEXTAUTH_URL` · `AUTH_TRUST_HOST`
+NextAuth'un KENDİ okuduğu değişkenler, bizim kodumuzda `process.env` ile
+geçmiyorlar. Kalan üçü (`CORS_ORIGIN` · `JWT_SECRET` · `VIDEO_HLS_SECRET`)
+`docker-compose.yml`de duruyor ve karşılıkları `server/` içinde farklı
+adlarla okunuyor.
+
+#### Yan bulgu: DEPOYA GİRMİŞ karakter kaybı — `server/scripts/seeds.ts`
+
+Bu depoda kayıtlı hasar sınıfının (heredoc / `node -e` kaçış ve özel karakter
+düşürüyor) **committe duran** hâli. Ölçüt tartışmasız: geçerli sözdiziminde
+modül yolu tırnaksız olamaz.
+
+```
+import dotenv from dotenv;
+const MONGO_URI = process.env.MONGO_URI  mongodb127.0.0.127017medknowledge;
+(async()={
+```
+
+Dosyada `:` **0**, `/` **0**, tırnak **4** (27 satırda). Yani bütün `"` `'`
+`:` `/` `|` `>` karakterleri silinmiş — `mongodb://127.0.0.1:27017/…`
+`mongodb127.0.0.127017…` olmuş, `=>` `=` olmuş.
+
+**717 kod dosyası tarandı, bozuk olan TEK bu dosya.** Şüpheli kova (import
+var ama hiç `:` yok) **boş**.
+
+`git log --follow`: dosya **ilk commit'ten beri** böyle — sonradan bozulmamış,
+bozuk doğmuş. `server/` için `tsconfig.json` da yok, yani hiçbir kapı onu
+denetlemiyor.
+
+**DÜZELTİLMEDİ ve gerekçesi kural:** bu bir seed betiği; onarmak **veritabanına
+YAZAN** bir betiği çalışır hâle getirmek olurdu. Deponun kendi kaydı bunu
+zaten yasaklıyor — *"Ölü kodu 'düzeltmek' bazen onu diriltmektir; ölçüt 'kod
+doğru mu' değil, 'bu değişiklik kullanıcıya ne yapar' olmalı."* Ölçüm, kapsam
+ve gerekçe burada; karar kullanıcının.
+
+#### Aynı turda ölçülüp TEMİZ çıkan dört eksen
+
+| eksen | sonuç |
+|---|---|
+| **depoya girmiş sır** (depo HERKESE AÇIK) | 1355 metin dosyası · 11 MB · **gerçek sır 0** |
+| **`<form>` içinde `type`siz `<button>`** | 8 form · 247 düğme · **0** (tıklayınca formu gönderirdi) |
+| **klavyeyle işletilemeyen tıklama hedefi** | 439 tsx · 264 `onClick` · **262'si `<button>`/`<a>`/bileşen** · 2 aday, ikisi de kusur değil |
+| **`<select>` erişilebilir adı** | 21 select · 97 option · **adsız 0** · çift option `value` 0 · çift option metni 0 |
+
+Birinci satırın ayrıntısı: `git ls-files` üzerinden tarandı (çalışma
+kopyasındaki `.env` dosyaları zaten `.gitignore`da ve izlenen tek `.env`
+`server/.env.example`). Bulunan 13 eşleşmenin 12'si açıkça örnek/yer tutucu;
+13'üncüsü `docker-compose.yml`deki `mongodb://mongo:27017/…` ve o bir
+**compose servis adı** — kimlik bilgisi taşımıyor. `docker-compose`daki üç
+sır da harfi harfine `change_me`.
+
+Üçüncü satırın iki adayı: `BranchTemplate.tsx` (accordion başlığı `<div
+onClick>`) — **ölü kod**, yalnızca alt çizgili klasörlerden içe aktarılıyor,
+rotaya alınmıyor; ve `NotePanel.tsx`in tam ekran karartma katmanı — tıklayınca
+kapatan bir scrim, klavye yolu ESC ile ZATEN var (belgede ölçülü).
+
+Dördüncü satırda ölçüt tuzağı: ham HTML'den 10 select "adsız" göründü, çünkü
+bu depoda ad SARAN `<label>`den geliyor ve raw HTML onu çözemiyor. Ad
+tarayıcıda TAM ZİNCİRLE hesaplanınca **10'unun 10'u da adlı** çıktı
+(`Cinsiyet` · `Bilinç (AVPU)` · `Vazopresör` · `glim`in beş alanı…).
