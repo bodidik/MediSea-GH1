@@ -33,6 +33,33 @@ type Mode = "text" | "draw";
 type Paper = "cizgili" | "kareli" | "bos";
 
 const KEY = (p: string) => `medisea:notes:v1:${p}`;
+
+/**
+ * Notun KİMLİĞİ — yol tek başına yetmiyor.
+ *
+ * Ölçüldü: 40 quizin 40'ı `/tr/premium/ydus/quiz-coz` yolunda çalışıyor,
+ * kimlik SORGUDA. Anahtar yalnızca yol olduğu için hepsi TEK bir not
+ * belgesini paylaşıyordu; SLE quizinde yazılan not ADPKD quizini açınca
+ * panelde çıkıyor ve üstüne yazılıyordu (davranışla doğrulandı).
+ *
+ * Sorgu SIRALANIYOR: aynı içeriğe `?id=x&branch=y` ve `?branch=y&id=x` ile
+ * gelmek notu ikiye bölmemeli.
+ *
+ * Sorgusuz sayfalarda sonuç DEĞİŞMİYOR (`pathname` aynen dönüyor) — yani
+ * 400'ü aşkın konu sayfasının mevcut anahtarları olduğu gibi kalıyor;
+ * göç gerektiren tek yüzey sorgu taşıyanlar.
+ *
+ * Yan kazanç: Çalışma Alanım kartları anahtardan yol türetiyor
+ * (`collectAll`), dolayısıyla kart artık çıplak yola değil GERÇEKTEN
+ * AÇILAN adrese bağlanıyor.
+ */
+function sayfaKimligi(pathname: string, sorgu: string): string {
+  if (!sorgu || sorgu === "?") return pathname;
+  const p = new URLSearchParams(sorgu);
+  const siralanmis = [...p.entries()].sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+  const s = new URLSearchParams(siralanmis).toString();
+  return s ? `${pathname}?${s}` : pathname;
+}
 const WIDTH_KEY = "medisea:notew";
 const PAPER_KEY = "medisea:notepaper";
 
@@ -85,6 +112,8 @@ export default function NotePanel() {
   const pathname = usePathname();
 
   const [enabled, setEnabled] = useState(false);
+  /** Adresin sorgusu — aşağıdaki yoklama izliyor; `usePathname()` görmüyor. */
+  const [sorgu, setSorgu] = useState("");
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<Mode>("text");
   const [width, setWidth] = useState(420);
@@ -112,6 +141,8 @@ export default function NotePanel() {
   const [kayitHatasi, setKayitHatasi] = useState(false);
   /** Bu sayfanın notu bozuktu ve yedeğe taşındı mı (bu oturumda). */
   const [kurtarildi, setKurtarildi] = useState(false);
+  /** Notun okundugu GERCEK anahtar (eski ortak kayda dusulmus olabilir). */
+  const [okunanAnahtar, setOkunanAnahtar] = useState<string>("");
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const surfaceRef = useRef<HTMLDivElement>(null);
@@ -124,6 +155,9 @@ export default function NotePanel() {
   const redoRef = useRef<Stroke[]>([]);
   strokesRef.current = strokes;
   redoRef.current = redo;
+
+  /** Not anahtarinin yol yarisi: sorgusuz sayfalarda pathname ile AYNI. */
+  const sayfa = sayfaKimligi(pathname, sorgu);
 
   /* ── Sayfa okuma sayfası mı? ─────────────────────────────────────────────
    *
@@ -144,29 +178,45 @@ export default function NotePanel() {
    * hızlı yoldur ama zamanlaması kaçabiliyor; 600 ms'lik bir yoklama
    * garantidir". Aynı yol burada da kullanılıyor.
    *
-   * Yoklama YALNIZCA konteyner bulunana kadar sürüyor; bulununca duruyor.
    * Bulunmayan sayfalarda (araç sayfaları, listeler) tek yaptığı şey 600
    * ms'de bir `querySelector` — ve panel açılmıyor (negatif kontrol edildi).
+   *
+   * AYNI YOKLAMA ADRESİN SORGUSUNU DA İZLİYOR. Sebebi ölçüldü:
+   * `usePathname()` sorgu değişince DEĞİŞMİYOR, dolayısıyla notun kimliğini
+   * sorguya bağlamak tek başına yetmez — quiz A'dan quiz B'ye yalnızca sorgu
+   * değişerek geçildiğinde etkiler yeniden çalışmazdı. `useSearchParams()`
+   * bilerek kullanılmıyor: belgede kayıtlı, o kanca alt ağacı sunucuda
+   * üretilmez hâle getiriyor ve bu bileşen hem `AppShell`de hem `(ydus)`
+   * düzeninde. Depodaki çözüm `/tools`ta zaten kullanılıyor — adresi
+   * doğrudan oku.
+   *
+   * Yoklama bilerek DURMUYOR: durursa sorgu değişimi kaçar. `setState`
+   * yalnızca değer GERÇEKTEN değişince çağrılıyor, yani yeniden çizim
+   * üretmiyor (`ReadingTools`in "imza aynıysa hiçbir iş yapmaz" kalıbı).
    */
   useEffect(() => {
     let stop = false;
-    let zamanlayici: ReturnType<typeof setInterval> | null = null;
 
     const bak = () => {
-      if (stop) return false;
-      if (!document.querySelector("[data-readable]")) return false;
-      setEnabled(true);
-      if (zamanlayici) { clearInterval(zamanlayici); zamanlayici = null; }
-      return true;
+      if (stop) return;
+      setEnabled((o) => {
+        const v = !!document.querySelector("[data-readable]");
+        return o === v ? o : v;
+      });
+      setSorgu((o) => {
+        const v = window.location.search || "";
+        return o === v ? o : v;
+      });
     };
 
     setEnabled(false);
     setOpen(false);
-    if (!bak()) zamanlayici = setInterval(bak, 600);
+    bak();
+    const zamanlayici = setInterval(bak, 600);
 
     return () => {
       stop = true;
-      if (zamanlayici) clearInterval(zamanlayici);
+      clearInterval(zamanlayici);
     };
   }, [pathname]);
 
@@ -177,13 +227,35 @@ export default function NotePanel() {
      * açılıyor ve kullanıcıya hiçbir şey söylenmiyor; kullanıcı "burada
      * notum yok" sanıp yazdığı anda ELLE YAZDIĞI eski not gidiyordu.
      */
-    const doc = guvenliNesneOku<{ text?: string; strokes?: Stroke[] }>(KEY(pathname));
+    let anahtar = KEY(sayfa);
+    let doc = guvenliNesneOku<{ text?: string; strokes?: Stroke[] }>(anahtar);
+
+    /**
+     * ESKİ ORTAK NOT KAYBOLMASIN.
+     *
+     * Kimlik sorguyu da içerince, daha önce çıplak yola yazılmış notların
+     * anahtarı değişiyor. Onları YOK SAYMAK sessiz veri kaybı olurdu; bu
+     * depoda kural açık — kullanıcının yazdığı hiçbir şey sessizce
+     * kaybolmaz. Bu yüzden kapsamlı anahtar BOŞSA eski anahtar okunuyor.
+     *
+     * Yalnızca OKUNUYOR: ilk düzenlemede not artık kapsamlı anahtara
+     * yazılıyor, yani içerik kaybolmadan yerine oturuyor. Eski kayıt
+     * silinmiyor — hangi quize ait olduğu bilinemez, dolayısıyla henüz
+     * düzenlenmemiş kardeş yüzeylerde görünmeye devam etmesi (bugünkü
+     * davranış) doğru olan.
+     */
+    if (!doc && sayfa !== pathname) {
+      const eski = guvenliNesneOku<{ text?: string; strokes?: Stroke[] }>(KEY(pathname));
+      if (eski) { doc = eski; anahtar = KEY(pathname); }
+    }
+
     setText(typeof doc?.text === "string" ? doc.text : "");
     setStrokes(Array.isArray(doc?.strokes) ? doc.strokes : []);
-    setKurtarildi(kurtarildiMi(KEY(pathname)));
+    setKurtarildi(kurtarildiMi(anahtar));
+    setOkunanAnahtar(anahtar);
     setRedo([]);
     setDirty(false);
-  }, [pathname]);
+  }, [pathname, sayfa]);
 
   /* ── Panel tercihleri (sayfadan bağımsız, bir kez okunur) ────────────── */
   useEffect(() => {
@@ -202,10 +274,10 @@ export default function NotePanel() {
       let ok = true;
       try {
         if (!text.trim() && strokes.length === 0) {
-          localStorage.removeItem(KEY(pathname));
+          localStorage.removeItem(KEY(sayfa));
         } else {
-          localStorage.setItem(KEY(pathname), JSON.stringify({ text, strokes, at: Date.now() }));
-          touchIndex(pathname, pageTitle());
+          localStorage.setItem(KEY(sayfa), JSON.stringify({ text, strokes, at: Date.now() }));
+          touchIndex(sayfa, pageTitle());
         }
         /* SİLME dalı da duyurulmalı — bir dönem yalnızca kaydetme dalı
            duyuruyordu. Bedeli tek yönlü: senkron birleştirmesi hiçbir şeyi
@@ -226,7 +298,7 @@ export default function NotePanel() {
       setDirty(false);
     }, 600);
     return () => clearTimeout(t);
-  }, [text, strokes, dirty, pathname]);
+  }, [text, strokes, dirty, sayfa]);
 
   /* ── Panel genişliğini FAB'lara duyur (ReadingTools rozetini kaydırır) ─ */
   useEffect(() => {
@@ -698,7 +770,7 @@ export default function NotePanel() {
                   Eski kayıt SİLİNMEDİ — yedeğe alındı; aşağıya yazacağın not ayrıca saklanır.
                 </p>
                 <button
-                  onClick={() => void panoyaKopyala(bozukYedegiOku(KEY(pathname)) ?? "").then(setPanoOk)}
+                  onClick={() => void panoyaKopyala(bozukYedegiOku(okunanAnahtar) ?? "").then(setPanoOk)}
                   className="rounded-lg bg-amber-700 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-amber-600"
                 >
                   Eski kaydı kopyala

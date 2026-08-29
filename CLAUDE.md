@@ -23395,3 +23395,80 @@ koşulun her yüzeyde aynı anda oluştuğunu varsayarak ölçme.** Burada iki
 bileşen aynı işareti (`[data-readable]`) arıyordu; biri yokladığı için
 çalışıyor, öteki tek seferlik baktığı için ölüydü — ve fark yalnızca
 işaretin GEÇ belirdiği yüzeyde görünüyordu.
+
+### İKİ TURDUR ERTELENEN NOT ÇAKIŞMASI KAPANDI — ve iki "engel"in ikisi de aşılabilirmiş
+
+40 quiz `/tr/premium/ydus/quiz-coz` yolunda çalışıyor, kimlik SORGUDA; not
+anahtarı ise yalnızca YOL idi. Geçen tur davranışla ölçülmüştü: SLE quizinde
+yazılan not ADPKD quizini açınca panelde çıkıyor ve üstüne yazılıyordu.
+
+Erteleme gerekçeleri iki turda iki farklıydı ve **ikisi de yeniden
+sınandığında düştü**:
+
+| gerekçe | sınandığında |
+|---|---|
+| *"`useSearchParams()` sayfayı sunucuda üretilmez yapar"* | doğru — ama depoda zaten çare var: `/tools` adresi bir kez ELDEN okuyor |
+| *"`usePathname()` sorgu değişince değişmiyor, etkiler yeniden çalışmaz"* | doğru — ama panelde **zaten 600 ms'lik bir yoklama var** (geçen turun düzeltmesi); sorguyu da o izleyebilir |
+
+Yani ikinci engeli aşan şey, geçen turda başka bir kusur için eklenen
+mekanizmaydı. Bir borcu ertelerken yazılan gerekçe, sonraki düzeltmeyle
+geçersizleşebiliyor — bu depoda kayıtlı kuralın üçüncü örneği.
+
+#### Kimlik: yol + SIRALANMIŞ sorgu
+
+```
+sorgusuz sayfa   ->  /topics/endokrinoloji/addison          (AYNEN eskisi)
+sorgulu sayfa    ->  /tr/premium/ydus/quiz-coz?branch=…&id=…
+```
+
+Sorgu sıralanıyor: aynı içeriğe `?id=x&branch=y` ile gelmek notu ikiye
+bölmemeli. **Sorgusuz sayfalarda anahtar DEĞİŞMİYOR** — 400'ü aşkın konu
+sayfasının mevcut notları olduğu gibi kalıyor, göç gerektiren tek küme sorgu
+taşıyanlar.
+
+#### Eski ortak not KAYBOLMUYOR — yalnızca okunuyor
+
+Kapsamlı anahtar boşsa çıplak yoldaki eski kayıt okunuyor. İlk düzenlemede
+not kapsamlı anahtara yazılıyor; eski kayıt SİLİNMİYOR, çünkü hangi quize ait
+olduğu bilinemez ve henüz düzenlenmemiş kardeş yüzeylerde görünmeye devam
+etmesi (bugünkü davranış) doğru olan.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| SLE quizinde not | `…quiz-coz?branch=romatoloji&id=sle-quiz-1` |
+| **ADPKD quizi açıldı** | panel **BOŞ** (önce "SLE QUIZINDE YAZILAN NOT") |
+| iki not bir arada | iki ayrı anahtar, iki ayrı içerik |
+| **negatif** — eski ortak not tohumlandı | panelde **görünüyor** ("ESKI ORTAK NOT") — veri kaybı yok |
+| **negatif** — düzenlendikten sonra | kapsamlı anahtara yazıldı, **eski kayıt duruyor** |
+| **negatif** — ters sıralı sorgu (`?id=…&branch=…`) | **aynı** anahtara düştü (sıralama çalışıyor) |
+| **negatif** — konu sayfası (sorgusuz) | `medisea:notes:v1:/topics/endokrinoloji/addison` — **değişmedi** |
+| **negatif** — kapı geri kondu | quiz yeniden "Erişim Kısıtlı" |
+| lint · typecheck · build (637/637) · 13 CI adımı | hepsi geçti |
+
+#### Yan kazanç: Çalışma Alanım kartı artık ÇALIŞAN adrese bağlanıyor
+
+`collectAll` yolu anahtardan türetiyor. Kimlik sorguyu da içerdiği için kart
+artık çıplak yola değil gerçek quiz adresine gidiyor. Ölçüldü:
+
+| bağlantı | sonuç |
+|---|---|
+| `…quiz-coz?branch=romatoloji&id=sle-quiz-1` | **200 · quiz başlığı basılıyor** |
+| `…quiz-coz` (çıplak, eski kayıttan) | 200 ama **"Bu quiz açılamadı"** kartı |
+
+İkinci satır belgede kayıtlı çıkmazın ta kendisi; artık yalnızca göç öncesi
+eski kayıtlar için kalıyor.
+
+#### Yoklama neden DURMUYOR
+
+Geçen turun yoklaması konteyner bulununca duruyordu. Sorgu değişimini
+izleyebilmek için artık durmuyor; `setState` yalnızca değer GERÇEKTEN
+değişince çağrılıyor (`ReadingTools`in "imza aynıysa hiçbir iş yapmaz"
+kalıbı), yani yeniden çizim üretmiyor. Konteyneri olmayan sayfalarda maliyet
+600 ms'de bir `querySelector` ve bir `location.search` okuması.
+
+**Aktarılabilir kural: bir kaydın anahtarını YOLDAN türetiyorsan, o yolun
+içeriği TEK BAŞINA belirleyip belirlemediğini ölç.** Bu depoda aynı hata iki
+katmanda birden vardı: vurgularda konteyner kimliği dosya içinde benzersizdi
+(geçen tur düzeltildi), notlarda yol quiz'i ayırt etmiyordu (bu tur).
