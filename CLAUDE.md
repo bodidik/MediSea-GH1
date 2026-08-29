@@ -25003,3 +25003,70 @@ sayılmış ve sekiz yazıcı karara bağlanmıştı; quiz ilerlemesi o listede
 olmasına rağmen "ilerleme kaydı" diye ayrı bir kova sayılıp incelenmemişti.
 Anahtar önekiyle sayım yapılsaydı (`medisea:*` **ve** `quiz-progress-*`)
 üçüncü yazıcı ilk turda görünürdü.
+
+### ŞIK KALİTESİ VE HAYALET GÖRSEL ATFI TARANDI — sınıf temiz, ama ölçüt ÜÇ KEZ sahte kusur üretti
+
+`soru-denetim` üç şeye bakıyor: doğru cevap şıklar arasında mı, en az iki şık
+var mı, mükerrer kimlik. Bakmadığı ve hiç ölçülmemiş dört şey:
+
+| ölçüt | neden kusur |
+|---|---|
+| aynı soruda **AYNI metinli iki şık** | soru cevaplanamaz olur |
+| **boş / yalnızca boşluk** şık | tıklanabilir ama okunamaz seçenek |
+| şık metni **kendi harf önekini** tekrarlıyor (`"A) …"`) | ekranda "AA) …" |
+| soru kökü **var olmayan bir görsele** atıf yapıyor | motorlar yalnızca metin basıyor; içerikte `<img>` **0** |
+
+Sonuç: **439 quiz sorusu · 2164 şık** ve **35 vaka adımı · 173 şık** —
+dört ölçütte de **0**.
+
+**POZİTİF KONTROL 4/4** (tohumlanmış sentetik dosya): aynı metinli iki şık ·
+boş şık · `"C) farkli"` · `"Resimde görülen…"` ve `"Şekil 2 de gösterilen…"`
+— dördü de yakalandı. Yani "0 kusur" ölçütün körlüğünden gelmiyor.
+
+#### ⚠ Ölçüt üç kez yanlış rapor verdi — üçü de kayıtlı ailelerden
+
+| sahte bulgu | sebep |
+|---|---|
+| **50 "boş şık"** (hepsi `hematoloji/aml-quiz-1`) | o dosya İNGİLİZCE şemada: `options: [{id, text}]`. Ölçüt `metin` arıyordu, `text` aramıyordu — **alan adını varsayma** ailesi |
+| **1 "harf öneki"** — `"D vitamini vermeden önce…"` | önek deseni harften sonra BOŞLUĞU da kabul ediyordu. Türkçede meşru bir metin |
+| **13 "görsel atfı"** | desen bare `şekilde` içeriyordu; 13'ünün 13'ünde de **zarf** ("benzer şekilde", "en doğru şekilde") — **%100 yanlış pozitif** |
+
+Üçü de düzeltilmeden bırakılsaydı 64 sahte kusurluk bir liste raporlanacaktı.
+Ayırt edici olan sayıya bakmak değil, eşleşmenin BAĞLAMINI bastırmaktı:
+`"…benzer şekilde menenjit geçirdiği…"` cümlesi tek satırda kararı verdi.
+
+Ölçüt son hâlinde `şekilde`yi HİÇ aramıyor; yalnızca numaralı/ismen atıflar
+(`Şekil 2`, `Resimde`, `görüntüde`, `grafikte`) aday sayılıyor.
+
+#### Merge sonrası kontrol listesi — yeni set (Harrison Karaciğer Set 2)
+
+| ölçüt | sonuç |
+|---|---|
+| silme / yeniden adlandırma | **0** (2 ekleme + 1 değişiklik: Set 1'in başlığı "(Set 1)" oldu) |
+| `meta.guncelleme` taşımayan konu | **0 / 43** (`2026-07` ×35 · `2026-08` ×6 · `2025-01` ×2) |
+| quiz künyesi ↔ konu dosyası | 2 bilinen kayıt (`hkp-quiz-1` okuyucu tarafında düzeltilmiş · `aml-quiz-1` yetim) — **yeni sapma yok** |
+| çift quiz `id` | 0 |
+| 429 soruluk bankaya karşı **tekrar** (eşik %15) | **0 çift** |
+| açıklama uzunluğu | min 5621 · ortanca **6372** · max 8194 |
+| **cevap dağılımı** | **A:5 B:5 C:5 D:5 E:5** |
+
+Son satır kayda değer: bir önceki merge turunda *"yeni setin cevap dağılımı
+A %48 · E %36 · C hiç"* diye bir içerik notu düşülmüştü; yeni set **tam
+dengeli** geldi. Ölçüm içerik tarafında karşılık bulmuş.
+
+**Sayılar canlıda üç yüzeyde birden tutuyor:** pano `Hazır konu 43 · Toplam
+soru 429`, `/uyelik` `43 başlık · 429 soru`, içerik dosyalarından sayılan
+değerle birebir. Elle güncellenen tek sayı yok.
+
+Yan gözlem: iki tur önce düzeltilen "yeni eklendi" listesi artık her iki
+Harrison setini de gösteriyor (ikisi de `2026-08`) — düzeltme yeni içerikle
+kendiliğinden çalışıyor.
+
+#### İçerik notu — DEĞİŞTİRİLMEDİ
+
+Gastroenteroloji branş dosyasında **iki Harrison seti de listelenmiyor**;
+ikisi de `listelenmeyenKategori()` onarımıyla "📌 Diğer Konular" altında
+görünüyor (canlıda doğrulandı, ikisi de orada). Başlıklar **ayrık**
+("(Set 1)" / "(Set 2)"), yani bu oturumda kapatılan *"aynı ad, farklı hedef"*
+sınıfı burada oluşmuyor. Kategoriye alınmaları tek satırlık bir küratörlük
+kararı.
