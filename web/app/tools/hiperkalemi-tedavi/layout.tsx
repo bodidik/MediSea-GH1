@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Hiperkalemi Tedavisi — Kaydıran ile çıkaranı ayırır",
-  description: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hiperkalemi-tedavi" },
   openGraph: {
     type: "website",
     title: "Hiperkalemi Tedavisi — Kaydıran ile çıkaranı ayırır",
-    description: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/hiperkalemi-tedavi",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Hiperkalemi Tedavisi",
-          aciklama: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/hiperkalemi-tedavi",
         })}
       />

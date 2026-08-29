@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Antikoagülan Geri Döndürme — Protamin, 4F-PCC, K",
-  description: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/antikoagulan-geri-dondurme" },
   openGraph: {
     type: "website",
     title: "Antikoagülan Geri Döndürme — Protamin, 4F-PCC, K",
-    description: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/antikoagulan-geri-dondurme",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Antikoagülan Geri Döndürme",
-          aciklama: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/antikoagulan-geri-dondurme",
         })}
       />

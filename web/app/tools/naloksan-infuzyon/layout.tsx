@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Naloksan İnfüzyonu — Saatlik hız uyandıran bolusun 2/3'ü",
-  description: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre değişir. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/naloksan-infuzyon" },
   openGraph: {
     type: "website",
     title: "Naloksan İnfüzyonu — Saatlik hız uyandıran bolusun 2/3'ü",
-    description: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre değişir. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/naloksan-infuzyon",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Naloksan İnfüzyonu",
-          aciklama: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre değişir. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/naloksan-infuzyon",
         })}
       />

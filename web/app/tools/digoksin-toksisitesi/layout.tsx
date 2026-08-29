@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Digoksin Toksisitesi — Fab flakon sayısı",
-  description: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/digoksin-toksisitesi" },
   openGraph: {
     type: "website",
     title: "Digoksin Toksisitesi — Fab flakon sayısı",
-    description: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/digoksin-toksisitesi",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Digoksin Toksisitesi",
-          aciklama: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/digoksin-toksisitesi",
         })}
       />

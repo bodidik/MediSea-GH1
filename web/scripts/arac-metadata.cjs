@@ -247,10 +247,35 @@ function baslikUret(name, desc) {
   return `${name} — ${ek}`;
 }
 
+/**
+ * Meta açıklama sınırı — KONU TARAFIYLA AYNI SAYI.
+ *
+ * `ozetCikar(veri, sinir = 155)` konu sayfalarında bu sınırı uyguluyor; araç
+ * tarafında HİÇ sınır yoktu. Ölçüldü: 130 açıklamanın 6'sı 160 karakteri
+ * aşıyordu (en uzunu 184). Arama sonucunda kırpılan yer tam da markalı kuyruk
+ * oluyordu — yani en uzun açıklamalarda "Ücretsiz klinik hesaplayıcı —
+ * MediSea." hiç görünmüyordu.
+ *
+ * Aynı politikanın iki yüzeyde iki ayrı değeri (biri 155, öteki yok) bu
+ * depoda tur tur avlanan "iki gerçeklik" sınıfı; sayı tek yerde duruyor.
+ */
+const ACIKLAMA_SINIRI = 155;
+const ACIKLAMA_KUYRUK = ' Ücretsiz klinik hesaplayıcı — MediSea.';
+
 function aciklamaUret(name, desc) {
   // Aranan terim başta dursun: sonuç listesinde ilk kelimeler okunuyor.
   const govde = desc.replace(/\s+/g, ' ').trim().replace(/[.]+$/, '');
-  return `${name}: ${govde}. Ücretsiz klinik hesaplayıcı — MediSea.`;
+  const bas = `${name}: `;
+  const yer = ACIKLAMA_SINIRI - bas.length - ACIKLAMA_KUYRUK.length - 1; // -1: gövde sonundaki nokta
+  if (govde.length <= yer) return `${bas}${govde}.${ACIKLAMA_KUYRUK}`;
+
+  // KELİME SINIRINDA kes: cümlenin ortasında kesmek arama sonucunda
+  // yarım bir sözcük bırakıyor.
+  let k = govde.slice(0, yer);
+  const bosluk = k.lastIndexOf(' ');
+  if (bosluk > yer * 0.6) k = k.slice(0, bosluk);
+  k = k.replace(/[\s,;:·—–-]+$/, '');   // "· …" gibi asili ayrac birakma
+  return `${bas}${k}…${ACIKLAMA_KUYRUK}`;
 }
 
 /**

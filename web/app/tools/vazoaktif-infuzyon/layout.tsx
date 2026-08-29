@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Vazoaktif İnfüzyon — Nitrogliserin, nitroprussid",
-  description: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim, torba karışımı düzenlenebilir. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/vazoaktif-infuzyon" },
   openGraph: {
     type: "website",
     title: "Vazoaktif İnfüzyon — Nitrogliserin, nitroprussid",
-    description: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim, torba karışımı düzenlenebilir. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/vazoaktif-infuzyon",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Vazoaktif İnfüzyon",
-          aciklama: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim, torba karışımı düzenlenebilir. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/vazoaktif-infuzyon",
         })}
       />

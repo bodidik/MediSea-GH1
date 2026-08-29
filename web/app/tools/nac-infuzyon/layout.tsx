@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "NAC İnfüzyonu — Parasetamol intoksikasyonunda IV",
-  description: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/nac-infuzyon" },
   openGraph: {
     type: "website",
     title: "NAC İnfüzyonu — Parasetamol intoksikasyonunda IV",
-    description: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/nac-infuzyon",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "NAC İnfüzyonu",
-          aciklama: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "NAC İnfüzyonu: Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/nac-infuzyon",
         })}
       />

@@ -7,12 +7,12 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Lipid Emülsiyon (LAST) — Bolus, idame ve kümülatif tavan",
-  description: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+  description: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/lipid-emulsiyon" },
   openGraph: {
     type: "website",
     title: "Lipid Emülsiyon (LAST) — Bolus, idame ve kümülatif tavan",
-    description: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+    description: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı… Ücretsiz klinik hesaplayıcı — MediSea.",
     url: "/tools/lipid-emulsiyon",
   },
 };
@@ -23,7 +23,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
       <JsonLd
         veri={aracSemasi({
           ad: "Lipid Emülsiyon (LAST)",
-          aciklama: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+          aciklama: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı… Ücretsiz klinik hesaplayıcı — MediSea.",
           yol: "/tools/lipid-emulsiyon",
         })}
       />

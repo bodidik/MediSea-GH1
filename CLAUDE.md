@@ -22321,3 +22321,105 @@ veriyor, düzeltilmiş yerel derlemede **0**.
 satır öncelikli kurma.** Çok kolonlu kart düzeninde DOM sırası bilerek kart
 yereldir ve genel sıralama her kart sınırında sahte bir ters üretir.
 Karşılaştırma kapsayıcı düzeyinde yapılmalı.
+
+### AYNI POLİTİKA İKİ YÜZEYDE — konu açıklaması 155'te kırpılıyor, ARAÇ açıklaması hiç kırpılmıyordu
+
+Meta açıklamalar ilk kez ölçüldü (151 sayfa, canlı HTML). Konu tarafında
+`ozetCikar(veri, sinir = 155)` bir sınır uyguluyor — araç tarafında **hiç
+sınır yoktu**:
+
+| yüzey | açıklama | min / ortanca / max |
+|---|---|---|
+| araç (130) | 130 | 77 / 108 / **184** |
+| site (21) | 21 | 37 / 87 / 163 |
+
+**Araç açıklamalarının 6'sı 160 karakteri aşıyordu** (`vazoaktif-infuzyon` 184
+· `antikoagulan-geri-dondurme` 182 · `lipid-emulsiyon` 171 · `naloksan-infuzyon`
+162 · `abg` 161 · `digoksin-toksisitesi` 161), 5'i daha 155–160 arasındaydı.
+
+**Kırpılan yer tam da MARKALI KUYRUK oluyordu.** Üreteç şu kalıbı kuruyor:
+
+```
+{ad}: {açıklama}. Ücretsiz klinik hesaplayıcı — MediSea.
+```
+
+Kuyruk sonda olduğu için arama sonucunda ilk kaybolan o; yani en uzun sekiz
+açıklamada "Ücretsiz klinik hesaplayıcı — MediSea." hiç görünmüyordu.
+
+Aynı politikanın iki yüzeyde iki ayrı değeri (biri 155, öteki yok) bu depoda
+tur tur avlanan **"iki gerçeklik"** sınıfı. Sayı tek yerde toplandı
+(`ACIKLAMA_SINIRI = 155`, konu tarafıyla AYNI) ve kırpma **kelime sınırında**
+yapılıyor; asılı ayraç (`· …`) bırakmıyor.
+
+#### Doğrulama — üretilmiş çıktının TAMAMI
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| >155 karakter | **11** | **0** |
+| markalı kuyruğu olmayan | — | **0** |
+| `og:description` ile farklı | — | **0** |
+| **JSON-LD ile farklı** | — | **0** |
+| kırpılan (`…`) | — | 8 |
+| en uzun | 184 | **154** |
+| **negatif** — değişen dosya | — | **tam 8 layout**, her biri 3 satır |
+| **negatif** — `bmi` (dokunulmayan) | 115 | **115** |
+| `arac-metadata --kontrol` | — | senkron (130 araç · 1212 bağ) |
+
+Son iki satır bu sınıfın kritik kontrolü: 130 layout yeniden ÜRETİLDİ ama
+yalnızca 8'i değişti — yani üreteç belirlenimli ve kırpma yalnızca sınırı
+aşanlara dokundu.
+
+**POZİTİF KONTROL fonksiyon düzeyinde ve GERÇEK kaynaktan** (yeniden
+yazılmadı — doğrulama betiği, doğruladığı betiğin hatasını paylaşmamalı):
+
+| vaka | sonuç |
+|---|---|
+| kısa açıklama | kırpılmıyor |
+| **tam sınırda (155)** | kırpılmıyor |
+| **bir karakter fazla** | **kırpılıyor**, sonuç 155 |
+| çok uzun | kelime sınırında kesiliyor, yarım sözcük yok |
+| ayraçla biten kesim | **asılı `·` yok** |
+
+Üçlü sınır vakası (tam/bir fazla) şart: değerler değişmeseydi "kırpma
+çalışıyor" iddiası gözlenemezdi — kırpmanın girdiye TEPKİ verdiği ayrıca
+ölçülmeli.
+
+#### ⚠ ÖLÇÜM ARTEFAKTI — "JSON-LD ile farklı: 130/130"
+
+İlk koşum bütün araçlarda JSON-LD açıklamasının meta ile uyuşmadığını
+söyledi. Sahteydi: ölçüt `"description":"…"` desenini HAM METİNDE arıyordu ve
+ilk eşleşme **Organization** bloğunun açıklamasıydı (site geneli metin).
+Bir araç sayfasında dört JSON-LD bloğu var (`Organization` · `WebSite` ·
+`SoftwareApplication` · `BreadcrumbList`).
+
+Bloklar ayrıştırılıp `@type === "SoftwareApplication"` olanı seçilince
+130 → **0**. Belgede kayıtlı *"çapa benzersiz olmalı"* kuralının JSON-LD
+tarafındaki hâli.
+
+#### Aynı turda ölçülüp TEMİZ çıkanlar
+
+| eksen | sonuç |
+|---|---|
+| **`aria-hidden` içinde ODAKLANABİLİR öge** | 151 sayfa · **847 `aria-hidden` ögesi** · **0** |
+| araç `<title>` çifti · açıklama çifti | 0 · 0 |
+| sayı mimarisi (soru) | `/uyelik` **379** · pano üst bilgisi **379** · premium meta **379** — üçü de TÜREV, sapma 0 |
+
+Birinci satır kayda değer: bu oturumlarda 130+ süsleme glifine `aria-hidden`
+süpürüldü ve süpürmenin bir SARMALAYICIYA düşüp düşmediği hiç ölçülmemişti.
+`aria-hidden` ögeyi erişilebilirlik ağacından çıkarır ama **odak sırasından
+çıkarmaz**; içinde bir düğme kalsaydı klavye kullanıcısı ekran okuyucunun hiç
+bahsetmediği bir kontrole odaklanırdı. Ölçüt kör değil — tohumlanan iki
+sarmalayıcı (`<div aria-hidden><button>` ve `<span aria-hidden><a href>`)
+**ikisi de yakalandı**.
+
+Üçüncü satır bir gerileme kontrolü: belgede kayıtlı **378** değeri ölçüm
+anına aitti, içerik büyüyünce üç yüzey birlikte **379**'a çıktı. Elle
+güncellenen tek sayı yok.
+
+#### Not edilen, DEĞİŞTİRİLMEYEN: 49 araç başlığı 60 karakteri aşıyor
+
+Başlık uzunluğu 27 / 58 / **66** (min/ortanca/max) ve **49'u 60'ın üstünde**.
+Arama sonucunda başlık kırpması piksel tabanlı, karakter tabanlı değil; en
+uzun başlık sınırın yalnızca birkaç karakter üstünde ve başlık aynı zamanda
+sekme adı, yer imi adı ve paylaşım kartı başlığı. Kısaltmak bir ADLANDIRMA
+kararı — ölçüldü, kapsamı yazıldı, dokunulmadı.
