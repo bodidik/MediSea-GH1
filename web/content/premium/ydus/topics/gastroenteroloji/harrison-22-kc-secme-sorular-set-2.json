@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "harrison-22-kc-secme-sorular-set-2",
+    "branch": "gastroenteroloji",
+    "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Karaciğer (Set 2)",
+    "altbaslik": "Harrison 22. Baskı karaciğer ve safra yolları bölümlerinin metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular — ikinci set",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 25,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Bu Bölüm Hakkında",
+      "satirlar": [
+        "Bu bölümde, Harrison's Principles of Internal Medicine 22. Baskı'nın karaciğer ve safra yolları bölümlerinin metnine doğrudan dayanan, board/YDUS tipi vaka-soru formatında sorular yer almaktadır.",
+        "Her soru; klinik vaka kökü, beş seçenekli soru gövdesi, doğru cevabın detaylı klinik muhakemesi ve her bir çeldiricinin ayrı ayrı analizini içerir. Kaynak kitaptaki ilgili bölüm ve konu başlığı her soruda ayrıca belirtilir.",
+        "Sorular branş bazlı konu anlatımlarından bağımsız olarak, doğrudan kaynak metinden seçilip Türkçeleştirilmiş ve klinik vaka formatına uyarlanmıştır."
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsanan Bölümler",
+      "satirlar": [
+        "Bölüm 347 — Karaciğer Hastalığı Olan Hastaya Yaklaşım: hepatosellüler, kolestatik ve karışık hastalık kalıpları; derecelendirme ile evreleme ayrımı; FIB-4, APRI, ELF ve elastografinin kısıtlılıkları.",
+        "Bölüm 350 — Akut Viral Hepatit: hepatit B serolojik kalıpları ve pencere dönemi, prekor ile kaçış mutantları, HDV koenfeksiyon-süperenfeksiyon ayrımı, gebelikte hepatit E, serum hastalığı benzeri sendrom, maruziyet sonrası profilaksi.",
+        "Bölüm 352 — Kronik Hepatit: kronikleşmenin yaşa bağımlılığı, tedavi eşikleri ve “gri bölge” istisnaları, HBeAg-negatif hastalıkta süresiz tedavi, HBV reaktivasyonu ve rituksimab, gebelikte tenofovir, kronik hepatit C’de DAA seçimi, otoimmün hepatitin alt tipleri ve tedavisi.",
+        "Bölüm 356 — Karaciğer Nakli: mutlak ve göreli kontrendikasyonlar, HIV koenfeksiyonunda nakil ölçütleri, hepatosellüler karsinomda boyut ve sayı eşikleri, akut ve kronik allogreft rejeksiyonu.",
+        "Bölüm 357 — Safra Kesesi ve Safra Yolları Hastalıkları: kolesterol taşı patogenezinin üç kusuru, asemptomatik safra taşının doğal seyri, akut kolesistit ve Mirizzi sendromu, Charcot triadı ile süpüratif kolanjit, Courvoisier kuralı."
+      ]
+    }
+  ]
+}

@@ -2,9 +2,12 @@
   "meta": {
     "id": "harrison-22-kc-secme-sorular",
     "branch": "gastroenteroloji",
-    "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Karaciğer",
+    "baslik": "Ders Kitaplarından Hazırlanmış Sorular — Karaciğer (Set 1)",
     "altbaslik": "Harrison 22. Baskı karaciğer bölümlerinin metnine doğrudan dayanan, board tipi vaka-soru formatında çözümlü sorular",
-    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
     "guncelleme": "2026-08"
   },
   "moduller": {
