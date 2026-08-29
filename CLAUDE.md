@@ -23568,3 +23568,74 @@ Doğru tanı tek satır: `JSON.stringify(dosya.slice(i, i+130))` — ham dize
 `\r\n`i olduğu gibi gösteriyor. Betik artık LF kopyası üzerinde çalışıp
 sonunda dosyanın kendi biçimine çeviriyor ve yazma sonrası hem çapaları hem
 satır sonunu doğrulayıp tutmazsa GERİ ALIYOR.
+
+### KİMLİK DEĞİŞTİ, ETİKET ÜRETİCİLERİ HABERSİZDİ — kart başlığı ham sorguyu basıyordu
+
+Önceki tur "bir kimliği değiştirdiğinde ondan TÜREYEN her şeyi say" diye
+bitmişti ve dört türev sayılmıştı (cloze kartı · `pruneStates` · çizim kartı ·
+çalışma kartı). Sayılmayan bir sınıf kalmış: **etiket üreticileri.**
+
+`study-index.ts` yolu düz bir dize sanıyor ve `split("/")` ile son parçayı
+alıyor. Kimlik sorgu taşımaya başlayınca o parça
+`quiz-coz?branch=romatoloji&id=sle-quiz-1` oldu.
+
+**Canlıda ölçüldü** (gerçek şemayla tohumlanıp `/calisma-alanim` açılarak):
+
+| yüzey | basılan |
+|---|---|
+| kart başlığı (dizin yedeği) | **"Quiz Coz?Branch=Romatoloji&İd=Sle Quiz 1"** |
+| branş rozeti | aynı dize |
+| `/tekrar` branş süzgeci düğmesi | aynı dize |
+
+Türkçe büyük harf katlaması üstüne bir de `id`yi **`İd`** yapıyor — yani
+çirkinliğin yanına yanlış harf biniyor.
+
+#### Çare: etiket üretmeden önce yolu AYIR
+
+`yolParcala()` yol ve sorguyu ayırıyor; üç üretici de ondan besleniyor.
+
+| üretici | davranış |
+|---|---|
+| `prettify` (başlık yedeği) | sorgudaki `id` varsa onu kullanır ("Sle Quiz 1"), yoksa yolun son parçası |
+| `branchOf` (rozet) | yol branş taşımıyorsa sorgudaki `branch`i çözer → **"Romatoloji"** |
+| **`branchSlugOf`** | **yalnızca yolu ayıklar, sorguya BAKMAZ** |
+
+Üçüncüsü bilerek farklı ve gerekçesi ölçülebilir: o değer `StudyCoverage`in
+kova anahtarı ("dokunulan KONU / branştaki konu"). Sorgudaki `branch` oradan
+da okunsaydı bir quiz çalışması KONU sayısına eklenir ve paydayı şişirirdi.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| kart başlığı | "Quiz Coz?Branch=…&İd=…" | **"Sle Quiz 1"** |
+| branş rozeti | aynı çirkin dize | **"Romatoloji"** |
+| `/tekrar` süzgeç düğmeleri | çirkin dize | **"Endokrinoloji 1" · "Romatoloji 1"** |
+| sayfada kalan `Branch=` / `İd=` | vardı | **0** |
+| **negatif** — konu kartı | "Addison Hastalığı" | **değişmedi** |
+| **negatif** — KAPSAMA hesabı | — | **1 / 423** ve **1/116** — quiz sayıya girmedi |
+| **negatif** — kart bağlantıları | — | ikisi de değişmedi |
+| lint · typecheck · build (637/637) · 13 CI adımı | — | hepsi geçti |
+
+Altıncı satır bu turun en önemli ölçümü: etiketi düzeltirken kapsama
+matematiğini bozmamak, iki üreticinin bilerek AYRIŞMASINI gerektiriyordu.
+
+#### Türev sweep'i tamamlandı: yedekleme de doğrulandı
+
+Önceki turda sayılmayan son tüketici `study-backup`tı. Ölçüldü (arayüzden
+"Yedek al", `URL.createObjectURL` sarmalanarak):
+
+| ölçüt | sonuç |
+|---|---|
+| yedek alanları | altısı da yerinde (`marks · notes · review · index · log · kartlar`) |
+| `marks` anahtarları | `/topics/endokrinoloji/addison` **ve** `…quiz-coz?branch=…&id=…` |
+| sorgulu anahtar yedeğe girdi mi | **evet** |
+
+Yani önek taraması sorgulu anahtarları da topluyor; kimlik değişikliği
+yedekleme yolunu kırmadı.
+
+**Aktarılabilir kural: bir kimliğin TÜKETİCİLERİ iki sınıftır — onu ANAHTAR
+olarak kullananlar ve ondan ETİKET üretenler.** Anahtar tarafı sessizce
+çalışmaya devam ediyordu (önek eşleşmesi bozulmaz); kırılan taraf ekrana
+basan taraftı ve yalnızca gözle ya da render edilmiş çıktıyı okuyarak
+görülüyor.

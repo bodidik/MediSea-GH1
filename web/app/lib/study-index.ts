@@ -245,27 +245,76 @@ export function toMarkdown(entries: StudyEntry[]): string {
 
 /* ── Yardımcılar ───────────────────────────────────────────────────────── */
 
-/** Yoldaki branş slug'ı (/topics/<slug>/... ya da /../ydus/<slug>/...). */
+/**
+ * ⚠ ÇALIŞMA YOLU ARTIK SORGU TAŞIYABİLİYOR.
+ *
+ * Kimlik `yol + sıralanmış sorgu` oldu (bkz. `reading-marks.sayfaKimligi`),
+ * çünkü 40 quiz aynı yolda çalışıyor ve birbirinin kaydını eziyordu. Ama
+ * buradaki ETİKET üreticileri yolu hâlâ düz bir dize sanıyordu: `split("/")`
+ * son parçayı `quiz-coz?branch=romatoloji&id=sle-quiz-1` diye alıyor ve
+ * ekrana basıyordu.
+ *
+ * Canlıda ölçüldü — Çalışma Alanım kartı:
+ *   başlık : "Quiz Coz?Branch=Romatoloji&İd=Sle Quiz 1"
+ *   rozet  : aynı dize
+ *
+ * (Türkçe büyük harf katlaması `id`yi `İd` yapıyor, yani çirkinliğin üstüne
+ * bir de yanlış harf biniyor.)
+ */
+function yolParcala(path: string): { yol: string; sorgu: URLSearchParams } {
+  const i = path.indexOf("?");
+  if (i < 0) return { yol: path, sorgu: new URLSearchParams() };
+  return { yol: path.slice(0, i), sorgu: new URLSearchParams(path.slice(i + 1)) };
+}
+
+/**
+ * Yoldaki branş slug'ı (/topics/<slug>/... ya da /../ydus/<slug>/...).
+ *
+ * SORGUYA BAKMIYOR ve bu BİLİNÇLİ: bu değeri `StudyCoverage` kapsama
+ * hesabında kova anahtarı olarak kullanıyor ("dokunulan KONU / branştaki
+ * konu"). Bir quiz konu değil; sorgudaki `branch` buradan da okunsaydı quiz
+ * çalışması konu sayısına eklenir ve paydayı aşabilirdi.
+ */
 export function branchSlugOf(path: string): string {
-  const seg = path.split("/").filter(Boolean);
+  const { yol } = yolParcala(path);
+  const seg = yol.split("/").filter(Boolean);
   const i = seg.indexOf("topics") !== -1 ? seg.indexOf("topics") : seg.indexOf("ydus");
   return i !== -1 ? (seg[i + 1] ?? "") : "";
 }
 
 function branchOf(path: string): string {
-  const seg = path.split("/").filter(Boolean);
+  const { yol, sorgu } = yolParcala(path);
+  const seg = yol.split("/").filter(Boolean);
   // /topics/<bransh>/<konu>  ·  /tr/premium/ydus/<bransh>/<konu>
   const i = seg.indexOf("topics") !== -1 ? seg.indexOf("topics") : seg.indexOf("ydus");
   const slug = i !== -1 ? seg[i + 1] : "";
-  if (!slug) return "";
+  const cozumle = (s: string) => SPECIALTIES.find((x) => x.slug === s);
+
   // Doğru yazımı branş kaydından al — slug'ı büyük harfe çevirmek Türkçe
   // karakterleri kaybettiriyordu ("gogus" → "Gogus", oysa "Göğüs Hast.").
-  const bilinen = SPECIALTIES.find((s) => s.slug === slug);
-  return bilinen ? bilinen.title : prettifySlug(slug);
+  const bilinen = slug ? cozumle(slug) : undefined;
+  if (bilinen) return bilinen.title;
+
+  /**
+   * Yol branş taşımıyorsa SORGUYA bak. Quiz ve inciler yüzeyleri branşı
+   * orada taşıyor (`?branch=romatoloji&id=…`); rozet bundan gerçek branş
+   * adını basabiliyor. Kapsama hesabı bunu KULLANMIYOR (yukarıdaki not).
+   */
+  const sorguBrans = sorgu.get("branch");
+  const sorgudan = sorguBrans ? cozumle(sorguBrans) : undefined;
+  if (sorgudan) return sorgudan.title;
+
+  return slug ? prettifySlug(slug) : "";
 }
 
 function prettify(path: string): string {
-  const last = path.split("/").filter(Boolean).pop() || path;
+  const { yol, sorgu } = yolParcala(path);
+  // Sorgulu yüzeylerde yolun son parçası her içerik için AYNI ("quiz-coz");
+  // ayırt edici olan `id`. Dizin kaydı varsa zaten o kullanılıyor, burası
+  // yalnızca yedek.
+  const id = sorgu.get("id");
+  if (id) return prettifySlug(id);
+  const last = yol.split("/").filter(Boolean).pop() || yol;
   return prettifySlug(last);
 }
 
