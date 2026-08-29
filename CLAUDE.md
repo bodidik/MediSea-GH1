@@ -25221,3 +25221,137 @@ denetimlerin sessizce çürümesi.
   Bilerek dokunulmadı: onarmak veritabanına YAZAN bir betiği diriltmek olurdu.
 - `web/` tarafında test dosyası **0**; ürünün doğrulaması bu belgedeki
   ölçümlere ve 20 CI adımına dayanıyor.
+
+### KOYU KART MUAFİYETİ ELLE YAZILIYDI VE BAYATLAMIŞTI — dört konuda kontrast 2.60
+
+Yeni eksen: **`globals.css`teki el yazısı kurallar gerçekten bir şeyi
+tutuyor mu?** Bu depoda `globals.css` turlar boyunca birikmiş ezmeler
+taşıyor (`koyu-yuzey`, `ms-hl`, baskı kuralları, `[data-readable]` tabanı) ve
+belgede kayıtlı bir ders var: *"belgede 'şu sayfa şu sınıfı taşıyor' yazması,
+taşıdığı anlamına gelmez."* Aynı soru CSS'in kendisine hiç sorulmamıştı.
+
+**Ölçüm iki kez daraltıldı ve ilki İKİ YÖNDE birden yanıldı:**
+
+| sürüm | ölçüt | hatası |
+|---|---|---|
+| 1 | sınıf adı kaynakta **herhangi bir yerde** geçiyor mu | `.preserve-3d`i "kullanılıyor" saydı — eşleşen şey CSS **DEĞERİ** (`transformStyle:'preserve-3d'`) |
+| 1 | utility öneki süzgeci | `.rotate-y-180`i **eledi** (`rotate` utility sanıldı) |
+| 2 | ad yalnızca `className`/`class` niteliğinin İÇİNDE | karar verilebilir |
+
+Yani ilk ölçüt hem sahte "temiz" hem sahte "yok" üretiyordu. Düzeltilmiş
+ölçüt: **48 benzersiz sınıf seçici, 685 917 karakterlik `className` metni**
+tarandı.
+
+#### Yan bulgu: 3B çevirme dörtlüsü ÖLÜ
+
+`.perspective-1000` · `.preserve-3d` · `.backface-hidden` · `.rotate-y-180`
+sınıflarının **dördü de kullanılmıyor**. `FlashcardPlayer` çevirmeyi
+tamamen SATIR İÇİ stille yapıyor ve doğru yapıyor (ölçüldü: ebeveynde
+`perspective: 1200px`, çeviricide `transformStyle: preserve-3d`, iki yüzde de
+`backfaceVisibility: hidden`, arka yüzde `rotateY(180deg)`).
+
+Kullanıcıya ulaşan bir kusur değil ama `steroid-dose`un `gluco` alanıyla
+**aynı tuzak**: çevirmeyi ayarlamak isteyen biri doğal olarak
+`globals.css`teki `.perspective-1000`i düzenler ve hiçbir etki görmez.
+Ölçüldü, kaydedildi; sınıflar **kaldırılmadı** — silmek bu turun ölçtüğü
+kusurla ilgisiz bir temizlik.
+
+#### Asıl bulgu: muafiyet listesi içeriğin palet'ini karşılamıyordu
+
+Okuma alanındaki ikincil renk koyulaştırması **AÇIK zemin varsayıyor** ve
+koyu kartların içinde ters çalışmasın diye bir muafiyet listesi var. Liste
+**elle yazılı** ve yalnızca beş sınıf taşıyordu:
+
+```
+:is(.bg-slate-800, .bg-slate-900, .bg-slate-950, .bg-gray-800, .bg-gray-900)
+```
+
+İçeriğin gerçekte kullandığı koyu zemin sınıfları sayıldı (622 içerik
+dosyası, 57 387 class jetonu):
+
+| durum | sınıf (dosya sayısı) |
+|---|---|
+| **LİSTEDE** | `bg-slate-900` 105 · `bg-slate-800` 87 · `bg-slate-950` 2 |
+| **listede YOK** | `bg-rose-900` **76** · `bg-indigo-900` 40 · `bg-emerald-900` 30 · `bg-rose-950` 18 · `bg-amber-900` 17 · `bg-blue-900` 7 · `bg-sky-900` 7 · `bg-rose-800` 7 · `bg-purple-900` 5 · `bg-indigo-800` 5 · `bg-emerald-800` 4 · `bg-amber-800` 4 · `bg-slate-700` 3 · `bg-red-900` 3 · `bg-amber-950` 2 · `bg-red-950` 1 · `bg-sky-950` 1 · `bg-emerald-950` 1 |
+
+**19 koyu zemin sınıfı listenin dışındaydı; 119 dosya böyle bir kart
+taşıyor.**
+
+#### "Birlikte geçiyor" YETMEZ — gerçek İÇ İÇELİK ölçüldü
+
+Aynı dosyada geçmeleri kusur değil; kural yalnızca ikincil yazı o kartın
+İÇİNDEYSE ters çalışıyor. Bu yüzden etiket derinliğiyle alt ağaç gezildi
+(2202 gövde):
+
+| durum | örnek | dosya |
+|---|---|---|
+| LİSTEDE olan kart içinde ikincil yazı (muafiyet **çalışıyor**) | 134 | 79 |
+| **listede OLMAYAN kart içinde ikincil yazı** | **4** | **4** |
+
+Dördü de `bg-rose-900`. Yani kapsam boşluğu 19 sınıflıktı ama **bugün
+ulaşan kusur dört konuda.**
+
+#### CANLIDA ölçüldü — 2.60
+
+| konu | kart | yazı rengi | zemin | kontrast |
+|---|---|---|---|---|
+| `enfeksiyon/dalbavansin-VISA-VRSA` | `bg-rose-900` | `rgb(100,116,139)` (slate-500) | `rgb(136,19,55)` | **2.60** |
+| `enfeksiyon/dalbavansin-derleme` | aynı | aynı | aynı | **2.60** |
+| `endokrinoloji/kbh-adinamizm-vaskuler-kalsifikasyon` | aynı | aynı | aynı | **2.60** |
+
+Kural orada **tam tersini** yapıyordu: `text-slate-300` yazıyı okunur
+kılmak yerine koyu rose zemine yaklaştırıyordu.
+
+#### Çare: aile listesi içeriğin ölçülen paletine göre genişletildi
+
+Mimari **değiştirilmedi** — iki kural da yerinde, yalnızca `:is()` listeleri
+büyüdü. Aileler **800/900/950 kademeleriyle birlikte** eklendi (slate'e
+ayrıca 700, çünkü içerikte kullanılıyor); tek kademe eklemek aynı ailede bir
+üst tonu açıkta bırakırdı.
+
+İkinci kural (koyu kartın İÇİNDEKİ açık kartta koyulaştırmayı geri getiren)
+**aynı listeyi** aldı — ayrışsalardı muafiyet açık kartlara sızardı ve
+belgede kayıtlı ters kusur (premium panosunda 21 yazı 2.56) geri gelirdi.
+
+> **Ölçüldü: o ikinci kural bugün İNERT.** İçerikte koyu kartın içinde açık
+> kart geçen konu **0** (CSS yorumu "4 konu" diyordu — içerik değişmiş).
+> Savunma amaçlı tutuldu, kusur değil.
+
+#### Doğrulama — üçü negatif kontrol
+
+| ölçüt | önce (canlı) | sonra (yerel üretim derlemesi) |
+|---|---|---|
+| `dalbavansin-VISA-VRSA` · `dalbavansin-derleme` · `kbh-adinamizm` | **2.60** | **8.34** |
+| `dalbavansin-mrsa-bakteriyemisi` | 2.60 | **6.44** |
+| **negatif** — `candidozyma-auris-klinik` (`bg-slate-900`, listede) | **12.02** | **12.02** |
+| **negatif** — `c-difficile-vankomisin-fidaksomisin` (listede) | **12.02** | **12.02** |
+| **negatif** — açık zeminde ikincil yazı (3 konu, 6 öge) | — | `rgb(71,85,105)` slate-600 · **7.58** — koyulaştırma duruyor |
+
+Beşinci satır bu değişikliğin asıl riskiydi: liste genişlerken açık zeminin
+koyulaştırması bozulsaydı ürünün okuma gövdesi bütünüyle etkilenirdi.
+
+**Ölçtüğüm derlemenin doğru olduğu ayrıca kanıtlandı** (belgede kayıtlı
+"eski derlemeyi ölçtüm" tuzağı): yerel CSS paketinde muafiyet seçicisinde
+`bg-rose-900` **2 kez** geçiyor, canlıda **0**; parmak izleri de farklı
+(`5b070c69…` ↔ `212867bb…`).
+
+Kapılar: lint · typecheck · build **637/637** · `arayuz` · `ic-bilesen` ·
+`saydamlik --kapi` · `renk-cifti --kapi` · meta test — hepsi geçti.
+`globals.css` saf LF; satır 642 → 682.
+
+#### Bu sınıf `renk-cifti-denetim`in KÖR NOKTASI ve sebebi yapısal
+
+Denetim renk çiftlerini **aynı öge/aynı sınıf dizesi** düzeyinde arıyor;
+buradaki kusur ise **ata kartın sınıfı × torun yazının sınıfı × CSS ezmesi**
+üçlüsünden doğuyor. Yani kaynakta iki ayrı ögede duran iki sınıf, üçüncü bir
+dosyadaki bir kuralla birleşince kusur oluyor — hiçbir statik çift taraması
+bunu göremez.
+
+**Liste bir daha bayatlarsa aynı kusur sessizce geri gelir.** Yeniden ölçmenin
+yolu CSS yorumuna yazıldı: içerik JSON'larındaki `class="..."` jetonlarından
+`bg-<aile>-(700|800|900|950)` desenine uyanları say ve listeyle karşılaştır.
+
+**Aktarılabilir kural: bir CSS kuralı bir SINIF LİSTESİ enumere ediyorsa, o
+liste bir İDDİADIR — "kapsanması gereken her yüzey burada".** Bu depoda
+"ilan mı gerçek mi" sınıfı veri ve arayüz tarafında defalarca işledi; CSS
+tarafında ilk kez ölçüldü ve orada da bayatlamış çıktı.
