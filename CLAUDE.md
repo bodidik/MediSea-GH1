@@ -24780,3 +24780,94 @@ yoklamak bir tur **yanlış pozitif** verdi — o dize sayfanın başka bir yeri
 metnine bağlanınca doğru çalıştı. Belgede kayıtlı "çapa benzersiz olmalı"
 kuralının dağıtım yoklaması tarafındaki hâli: yoklanan dize, değişikliğin
 GERÇEKLEŞTİĞİ yere ait olmalı.
+
+### LİDERLİK TABLOSU YAPILAMAYAN BİR İŞ İSTİYORDU — XP kazandıran hiçbir canlı yol yok
+
+Geçen turlarda profil sayfasındaki rozet kutusu düzeltilmişti ("Simülasyonları
+çözerek koleksiyonu tamamlayın!" → olmayan bir eylem). Deponun kendi kuralı
+şunu söylüyor: **kopyayı say.** Sayıldı ve bir kopya daha canlıda duruyordu.
+
+`/tr/premium/ydus/liderlik` (kapısız, herkese açık) şunu diyordu:
+
+> Örnek sıralama — aşağıdaki isimler tanıtım amaçlı, gerçek kullanıcı değil.
+> **Simülasyonları çöz, XP kazan, amiralliğe yüksel.**
+
+İlk cümle dürüst (mock isimler ilan edilmiş, kayıtlı). İkincisi bir TALİMAT ve
+karşılığı yok.
+
+#### Ulaşılabilirlik ÖLÇÜLDÜ — zincirin her halkası
+
+| halka | ölçüm |
+|---|---|
+| XP / rozet / `completedModules` yazan tek kod | **`completeModule`** (UserContext) |
+| onu çağıran | **tek bileşen: `SimulatorEngine`** |
+| `SimulatorEngine`i içe aktaran | **3 sayfa — üçü de `_endokrinoloji` · `_gastroenteroloji` · `_nefroloji`** |
+| alt çizgili klasör | **rotaya alınmıyor** |
+| `premium/ydus/` altında `simulasyon` rotası | **YOK** |
+
+Yani canlıda XP kazandıran hiçbir yol yok. Sonuç tarayıcıda görüldü: liderlik
+tablosu 6 kurgu isim + **"Sen"** satırı basıyor ve o satır kalıcı olarak
+**0 nm ve sonuncu**. Profilde de LEVEL 1 ve "BİTİRİLEN MODÜL 0" kalıcı.
+
+Yeni metin durumu söylüyor, yapılamayacak bir iş istemiyor: *"Sıralama henüz
+açık değil; XP kazandıran modüller hazır olduğunda kendi ilerlemen burada
+görünür."* — `/uyelik`in "Premium henüz satışta değil" ve sınav takviminin
+"tarih yoksa hiç basma" kararlarıyla aynı aile.
+
+#### Süpürme: 397 canlı tsx, 4 metin — ikisi zaten dürüst, biri ölü, biri sahte
+
+Ölçüt: alt çizgisiz dosyalarda, XP/rozet/modül/simülasyon anan VE bir EYLEM
+(çöz · kazan · tamamla · yüksel) isteyen kullanıcı metni; yorumlar elenmiş.
+
+| metin | verdikt |
+|---|---|
+| liderlik (bu tur) · profil rozet kutusu (önceki tur) | **düzeltilmiş, dürüst** |
+| `QuestionRun.tsx` "Çok yakında burada dinamik denemeler çözebileceksiniz" | **ölü kod** — sıfır içe aktaran |
+| `rapid3` "…30 saniyede tamamlanabilir. Parmenter & Pincus 2009" | **yanlış pozitif** — klinik atıf |
+
+**TARİHSEL KONTROL:** düzeltme öncesi liderlik metni (`git show HEAD:…`)
+ölçüte sürüldüğünde **yakalanıyor**, güncel dosyada o cümle yok.
+
+#### ⚠ ÖLÇÜM PENCERESİ KUSURU BULMADI — kusuru okuyarak buldum
+
+Süpürmenin ilk sürümü metin penceresini **180 karakterle** sınırlıyordu.
+Liderliğin iki cümlesi birlikte ~200 karakter, yani **eşleşmiyordu** —
+ölçüt "3 metin" deyip kusuru sessizce atlıyordu. Kusuru bulan şey ölçüt değil,
+sayfayı okumaktı; pencere 600'e çıkarılınca hem güncel metin hem tarihsel
+sürüm yakalandı.
+
+Belgede kayıtlı "ölçüm penceresini DAR tutmak sahte AYRIŞTIRILAMADI üretir"
+tuzağının bu turdaki hâli — ama burada bedeli daha kötü: sahte bir
+"ayrıştırılamadı" değil, sahte bir **TEMİZ**.
+
+#### ⚠ AYNI KÖKTEN LATENT BİR ÜÇÜNCÜ KOPYA — `CalismaPlani` sayacı
+
+Pano "Bugünün Programı" bloğunda **"N / M konu tamamlandı"** sayacı var ve
+`completedModules`tan besleniyor — yani yukarıdaki ölçüme göre **kalıcı olarak
+0 / 42**. Plan da hiç ilerlemiyor: `kalanKonular` daralamadığı için her gün
+aynı ilk N konu "bugünün programı" olarak gösterilir.
+
+**Bugün kullanıcıya ulaşmıyor** ve sebebi ayrı bir kayıtlı karar: sınav takvimi
+boş (`sinavlar: []`), bileşen de takvim yoksa hiçbir şey basmıyor. Canlıda
+doğrulandı — sayfada "Bugünün Programı" geçişi **0**.
+
+Yani bu bir "dolu silah": ÖSYM tarihi dosyaya yazıldığı gün blok görünür olacak
+ve o gün sayaç sıfırda donmuş, plan da sabit bir liste hâlinde çıkacak.
+Ölçüldü, mekanizması yazıldı, DEĞİŞTİRİLMEDİ — ilerlemeyi neyin işaretleyeceği
+(konuyu açmak mı, quizi bitirmek mi) bir ürün kararı.
+
+**Kapsam dışı bırakılan:** premium tanıtım sayfasındaki *"tam zamanlı YDUS/USMLE
+simülasyonu"* cümlesi bir SATIŞ metni ve `/uyelik` zaten "Premium henüz satışta
+değil" diyor — gelecekteki bir özelliği anlatmak, bugün yapılamayan bir işi
+istemekten farklı.
+
+#### Doğrulama
+
+| ölçüt | önce (canlı) | sonra (yerel üretim) |
+|---|---|---|
+| "Simülasyonları çöz…" | **var** | **yok** |
+| yeni cümle | — | **var** |
+| **negatif** — mock ilanı ("tanıtım amaçlı") | var | **var** |
+| **negatif** — `h1` | 1 | 1 |
+| **negatif** — tablo render'ı | 6 kurgu isim + "Sen" | **6 kurgu isim + "Sen"** |
+| kapılar | — | lint · typecheck · build **637/637** |

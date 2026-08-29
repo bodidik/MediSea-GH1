@@ -70,9 +70,27 @@ export default function LeadershipBoard() {
               bir sosyal kıyas; projenin sahte veri göstermeme kuralı
               arayüzde de geçerli. Sıralamanın kendisi (sahte rakipler
               kalsın mı) ayrı bir ürün kararı ve verilmedi. */}
+          {/*
+            İKİNCİ CÜMLE OLMAYAN BİR EYLEMİ İSTİYORDU — ve ölçüldü.
+
+            "Simülasyonları çöz, XP kazan, amiralliğe yüksel" diyordu. XP'yi
+            artıran tek kod `completeModule` ve onu çağıran tek bileşen
+            `SimulatorEngine`; o bileşeni içe aktaran ÜÇ sayfanın üçü de alt
+            çizgili klasörde (`_endokrinoloji` · `_gastroenteroloji` ·
+            `_nefroloji`), yani rotaya alınmıyor. `premium/ydus/` altında
+            `simulasyon` rotası da yok. Sonuç: canlıda XP kazandıran hiçbir
+            yol yok, her kullanıcının satırı kalıcı olarak 0 nm ve sonuncu.
+
+            Aynı sınıfın kardeşi profil sayfasındaki rozet kutusuydu ve o tur
+            düzeltilmişti; bu kopya süpürmenin dışında kalmış. Yeni metin
+            durumu söylüyor, yapılamayacak bir iş istemiyor — `/uyelik`in
+            "Premium henüz satışta değil" ve sınav takviminin "tarih yoksa
+            hiç basma" kararlarıyla aynı aile.
+          */}
           <p className="text-slate-400 font-medium relative z-10">
             Örnek sıralama — aşağıdaki isimler tanıtım amaçlı, gerçek kullanıcı değil.
-            Simülasyonları çöz, XP kazan, amiralliğe yüksel.
+            Sıralama henüz açık değil; XP kazandıran modüller hazır olduğunda kendi
+            ilerlemen burada görünür.
           </p>
         </div>
 
