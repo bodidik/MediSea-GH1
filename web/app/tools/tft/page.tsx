@@ -12,10 +12,35 @@ type Pattern = {
   bg: string;
   border: string;
   examples: string;
+  /* true ise bu bir PATERN değil, "veri eksik" bildirimi — başlık ve
+     "örnek nedenler" bloğu ona göre basılıyor. */
+  eksik?: boolean;
 };
 
 function interpret(tsh: number, ft4: number, ft3: number): Pattern | null {
   if (tsh === 0 && ft4 === 0) return null;
+
+  /* EKSİK VERİ ile TANIMSIZ PATERN AYNI ŞEY DEĞİL.
+   *
+   * FT4 boşken `ft4Low/Norm/High` üçü de false kalıyor ve hiçbir dal
+   * tutmuyordu; istek son çareye düşüyor ve araç "TANIMSIZ PATERN —
+   * heterofil antikor, makro-TSH, assay interferansı" diyordu. Ölçüldü:
+   * TSH 8.5 tek başına girildiğinde tam olarak bu çıkıyor; oysa FT4 de
+   * girilince doğru cevap SUBKLİNİK HİPOTİROİDİZM.
+   *
+   * Yani kullanıcı bir alanı henüz doldurmamışken araç ona NADİR bir
+   * laboratuvar artefaktı öneriyordu. Paternlerin dokuzu da FT4'e bakıyor;
+   * TSH ve FT4 olmadan patern kurulamaz. Bomboş formda hâlâ sessiz. */
+  if (tsh === 0 || ft4 === 0) {
+    const eksik = [tsh === 0 ? "TSH" : null, ft4 === 0 ? "FT4" : null].filter(Boolean).join(" ve ");
+    return {
+      eksik: true,
+      label: "DEĞERLENDİRİLEMEDİ",
+      detail: `Patern için hem TSH hem FT4 gerekli — eksik: ${eksik}`,
+      examples: "",
+      color: "text-slate-600", bg: "bg-slate-50", border: "border-slate-200",
+    };
+  }
 
   const tshLow  = tsh > 0 && tsh < 0.4;
   const tshNorm = tsh >= 0.4 && tsh <= 4.0;
@@ -32,8 +57,8 @@ function interpret(tsh: number, ft4: number, ft3: number): Pattern | null {
   if (tshHigh && ft4Norm) return { label: "SUBKLİNİK HİPOTİROİDİZM", detail: "TSH yüksek, FT4 normal", color: "text-sky-700", bg: "bg-sky-50", border: "border-sky-200", examples: "Hafif Hashimoto, iyot yetersizliği, ilaç etkisi" };
   if (tshNorm && ft4Norm) return { label: "ÖTİROİD", detail: "TSH ve FT4 normal sınırlarda", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200", examples: "Normal tiroid fonksiyonu" };
   if ((tshLow || tshNorm) && ft4Low) return { label: "SANTRAL HİPOTİROİDİZM", detail: "FT4 düşük, TSH düşük veya normal (baskılanmamış)", color: "text-violet-700", bg: "bg-violet-50", border: "border-violet-200", examples: "Hipofiz yetmezliği, kranyal radyasyon, hipotalamik hastalık" };
-  if (tshHigh && ft4High) return { label: "TSH SALGILIYAN ADENOM / DİRENÇ", detail: "TSH yüksek, FT4 yüksek — uygunsuz TSH salınımı", color: "text-purple-700", bg: "bg-purple-50", border: "border-purple-200", examples: "TSHoma, tiroid hormon direnci sendromu" };
-  return { label: "TANIMSIZ PATERN", detail: "Değerleri kontrol edin veya biyotindirfaz/assay girişimini değerlendirin", color: "text-slate-600", bg: "bg-slate-50", border: "border-slate-200", examples: "Heterofil antikor, makro-TSH, assay interferansı" };
+  if (tshHigh && ft4High) return { label: "TSH SALGILAYAN ADENOM / DİRENÇ", detail: "TSH yüksek, FT4 yüksek — uygunsuz TSH salınımı", color: "text-purple-700", bg: "bg-purple-50", border: "border-purple-200", examples: "TSHoma, tiroid hormon direnci sendromu" };
+  return { label: "TANIMSIZ PATERN", detail: "Değerleri kontrol edin veya biyotin veya assay girişimini değerlendirin", color: "text-slate-600", bg: "bg-slate-50", border: "border-slate-200", examples: "Heterofil antikor, makro-TSH, assay interferansı" };
 }
 
 export default function TftPage() {
@@ -103,13 +128,15 @@ export default function TftPage() {
         <SonucDuyuru metin={result ? result.label : null} />
         {result && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${result.border} ${result.bg}`}>
-            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">PATERN TANI</div>
+            <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">{result.eksik ? "EKSİK VERİ" : "PATERN TANI"}</div>
             <p className={`text-2xl font-black italic tracking-tight ${result.color}`}>{result.label}</p>
             <p className={`text-sm font-bold mt-1 ${result.color}`}>{result.detail}</p>
-            <div className="mt-3 pt-3 border-t border-current/10">
-              <span className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 block mb-1">ÖRNEK NEDENLER</span>
-              <p className={`text-[11px] font-bold ${result.color}`}>{result.examples}</p>
-            </div>
+            {!result.eksik && (
+              <div className="mt-3 pt-3 border-t border-current/10">
+                <span className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 block mb-1">ÖRNEK NEDENLER</span>
+                <p className={`text-[11px] font-bold ${result.color}`}>{result.examples}</p>
+              </div>
+            )}
           </div>
         )}
 

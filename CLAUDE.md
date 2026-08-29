@@ -21588,3 +21588,90 @@ kayıtlarda AYIRT EDİCİ olabileceğini varsayarak yazılmalı.** Bu depoda ayn
 şekil daha önce arama tarafında da çıkmıştı (`aramaEslesir` boş sorguda
 `false` döndürüyor ve süzgeçte listeyi boşaltıyordu): bir yardımcının
 sözleşmesi tek bir çağrı yerinde doğru, ötekinde yanlış olabiliyor.
+
+### `tft` TEK ALAN EKSİKKEN "ASSAY İNTERFERANSI" ÖNERİYORDU — eksik veri ile tanımsız patern aynı dala düşüyordu
+
+"En az doğrulanmış araç" listesinin sonuncusu. `tft` bir SKOR değil **örüntü
+tanıma** aracı, yani ekseni farklı: dal kapsaması ve düşen dal.
+
+**Yapı ilk bakışta eksik görünüyordu ve BEKLENTİM YANLIŞTI.** İlk çıkarımım
+7 örüntü buldu ve "santral (sekonder) hipotiroidizm yok" diye bir kusur
+adayı üretti. Kaynak okununca **dokuz dal** çıktı — `SANTRAL HİPOTİROİDİZM`
+ve son çare `TANIMSIZ PATERN` benim desenimden kaçmıştı. Belgedeki kural
+yine işledi: *beklenti tutmadığında önce beklentiyi sına.*
+
+#### Gerçek kusur: FT4 boşken hiçbir dal tutmuyor, istek SON ÇAREYE düşüyor
+
+```
+ft4Low  = ft4 > 0 && ft4 < 0.8      ->  ft4 = 0 iken false
+ft4Norm = ft4 >= 0.8 && ft4 <= 1.8  ->  false
+ft4High = ft4 > 1.8                 ->  false
+```
+
+FT4 hiçbir kovada olmadığı için sekiz klinik dalın sekizi de düşüyor ve
+fonksiyon son satıra varıyor. Canlıda ölçüldü:
+
+| girdi | ekranda (önce) |
+|---|---|
+| **TSH 8.5, FT4 boş** | **TANIMSIZ PATERN** · *"biyotin…/assay girişimini değerlendirin"* · ÖRNEK NEDENLER: **"Heterofil antikor, makro-TSH, assay interferansı"** |
+| FT4 1.2, TSH boş | aynı |
+| **TSH 8.5 + FT4 1.2** | **SUBKLİNİK HİPOTİROİDİZM** — doğru |
+
+Yani aynı hasta, tek alan eksikken **nadir bir laboratuvar artefaktına**
+yönlendiriliyordu; alan dolunca doğru ve çok daha sık olan cevap çıkıyor.
+Bu, belgede kayıtlı sınıfın örüntü tarafındaki hâli — `kdigo-aki`nin "AKI
+Kriteri Yok"u, `glim`in "Kriterleri Karşılanmadı"sı, `ktv`nin "YETERSİZ
+DİYALİZ"i: **"değerlendiremedim" ile "anormal bir şey buldum" aynı şey
+değil.**
+
+Var olan koruma yalnızca **ikisi birden** boşken çalışıyordu
+(`if (tsh === 0 && ft4 === 0) return null`), yani dokunulmamış form zaten
+sessizdi; açık olan tek alan doldurulmuş hâldi.
+
+Çare: TSH ya da FT4'ten biri eksikse patern kurulmuyor, **hangisinin eksik
+olduğu adıyla** söyleniyor ve "ÖRNEK NEDENLER" bloğu hiç basılmıyor
+(orada gösterilecek bir neden yok). Bomboş form hâlâ sessiz.
+
+#### Doğrulama: 32 kombinasyonluk TAM durum uzayı, önce/sonra
+
+Motor `interpret` saf bir fonksiyon; sayfadan **birebir kopyalanıp**
+(yeniden yazılmadan) Node altında sürüldü — TSH ve FT4 dört durumda
+(boş/düşük/normal/yüksek), FT3 iki durumda.
+
+| ölçüt | değer |
+|---|---|
+| ölçülen kombinasyon | **32** |
+| ulaşılan çıktı | 11 (8 klinik örüntü + tanımsız + değerlendirilemedi + panel yok) |
+| **ulaşılamayan dal** | **0** |
+| **DEĞİŞMEYEN kombinasyon** | **18 / 32** |
+| değişen | 12 (hepsi eksik alan) + 2 (yalnızca yazım) |
+
+Son iki satır negatif kontrolün kendisi: **hiçbir klinik örüntü
+değişmedi.** Değişenlerin 12'si "TANIMSIZ PATERN → DEĞERLENDİRİLEMEDİ" ve
+hepsinde TSH ya da FT4 boş.
+
+Eşleşmeler yayımlanmış TFT yorumuyla da birebir: TSH↓/FT4↑ primer hiper ·
+TSH↓/FT4 N/FT3 N subklinik hiper · TSH↓/FT4 N/FT3↑ T3 toksikozu ·
+TSH↑/FT4↓ primer hipo · TSH↑/FT4 N subklinik hipo · TSH N/FT4 N ötiroid ·
+TSH↓ veya N /FT4↓ santral hipo · TSH↑/FT4↑ TSHoma-direnç.
+
+**`TANIMSIZ PATERN` artık YALNIZCA ikisi de girilmişken ulaşılıyor** ve tek
+vakası TSH normal + FT4 yüksek — assay girişimi/TSHoma önerisinin klinik
+olarak doğru olduğu yer. Yani dal ölü değil, doğru yere daraltıldı.
+
+#### İki metin kusuru daha
+
+| önce | sonra |
+|---|---|
+| `TSH SALGILIYAN ADENOM` | **`TSH SALGILAYAN ADENOM`** |
+| `biyotindirfaz/assay girişimini` | **`biyotin veya assay girişimini`** |
+
+İkincisi Türkçede var olmayan bir kelime — bozulmuş bir parça, içerik
+kararı değil (deponun mojibake onarımlarıyla aynı sınıf: render artığı).
+
+**Aktarılabilir kural: bir örüntü tanıma aracında SON ÇARE dalı, eksik
+verinin de düştüğü yerdir.** Skor araçlarında eksik veri toplamı düşürür ve
+görünür; örüntü araçlarında sessizce "tanımsız/nadir" kovasına düşüyor ve
+orada bir KLİNİK ÖNERİ duruyor. Son çare dalını yazarken sor: buraya
+yalnızca gerçekten tanımsız bir kombinasyon mu düşüyor, yoksa eksik veri de
+mi?
