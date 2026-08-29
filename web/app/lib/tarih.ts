@@ -55,3 +55,32 @@ export function tarihYazisi(
   if (!d) return null;
   return saatDe ? d.toLocaleString("tr-TR", secenekler) : d.toLocaleDateString("tr-TR", secenekler);
 }
+
+/**
+ * AY KESİNLİĞİNDEKİ tarih için: `"2026-07"` → `"Tem 2026"`; geçersizse `null`.
+ *
+ * Neden ayrı bir fonksiyon: premium konu künyesi tarihi AY kesinliğinde
+ * tutuyor (`meta.guncelleme: "2026-07"`, 41 dosyanın 41'inde). Bunu
+ * `tarihYazisi` ile basmak GÜN uydururdu — `new Date("2026-07")` ayın
+ * birine çözülüyor ve ekranda "01 Tem 2026" çıkardı. Veride olmayan bir
+ * kesinliği ekrana yazmak, bu depoda tekrar tekrar avlanan "uydurma değer"
+ * sınıfının ta kendisi olurdu.
+ *
+ * Gün ORTASI seçiliyor (`15`, saat 12): ayın birinde ve UTC ayrıştırmasında
+ * saat dilimi kayması bir önceki aya düşürebiliyor. Açık taraf da aynı
+ * korumayı kullanıyor (`${iso}T12:00:00`).
+ *
+ * `\d{4}-\d{2}` dışındaki her şey `null` — çağıran o dalda alanı HİÇ
+ * basmamalı (modülün başındaki kural).
+ */
+export function ayYazisi(deger: unknown): string | null {
+  if (typeof deger !== "string") return null;
+  const m = deger.trim().match(/^(\d{4})-(\d{2})(?:-\d{2})?$/);
+  if (!m) return null;
+  const yil = Number(m[1]);
+  const ay = Number(m[2]);
+  if (!yil || ay < 1 || ay > 12) return null;
+  const d = new Date(yil, ay - 1, 15, 12, 0, 0);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString("tr-TR", { month: "short", year: "numeric" });
+}

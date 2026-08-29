@@ -24031,3 +24031,83 @@ Gerileme kontrolünde `%71` sunucu çıktısında **0** çıktı ve bir an değe
 kaybolmuş sanıldı. Sebep belgede kayıtlı: React statik metinle ara değeri
 `%<!-- -->71` diye ayırıyor. Değer tarayıcıda okunduğunda yerinde.
 Bu oturumda aynı tuzağın beşinci tekrarı.
+
+### ÜCRETLİ SAYFA HAM MAKİNE DİZESİ BASIYORDU — "Güncelleme: 2026-07"
+
+Bu oturumda açık taraftaki tarih zinciri iki kez düzeltilmişti (uydurma
+"06 MAR 2026" yedeği kaldırıldı, 29 konudaki İngilizce ay adı `tarihYazisi`e
+bağlandı). Ücretli taraf hiç ölçülmemişti.
+
+**Ölçüldü** (yerel üretim derlemesi, kapı geçici açılarak):
+
+| yüzey | ekranda |
+|---|---|
+| açık konu sayfası | `Güncelleme: 14 Mar 2026` · `20 Ağu 2026` |
+| **premium konu sayfası** | **`Güncelleme: 2026-07`** |
+
+Yani ödeme yapan kullanıcı makine dizesi, ücretsiz kullanıcı Türkçe tarih
+görüyordu. Kod `{veri.meta.guncelleme}` diyerek alanı HAM basıyordu:
+doğrulama yok, biçimlendirme yok — alana ne yazılırsa ekranda o.
+
+Veri tarafı sağlam ve tekdüze: **41 konu dosyasının 41'inde** `meta.guncelleme`
+var, üç benzersiz değer (`2026-07` ×35 · `2026-08` ×4 · `2025-01` ×2).
+
+#### `tarihYazisi` DEĞİL `ayYazisi` — çünkü gün UYDURUYOR
+
+Elde hazır bir yardımcı vardı ama doğru olan o değildi. Ölçüldü:
+
+```
+tarihYazisi("2026-07", {day,month,year})  ->  "01 Tem 2026"     <- veride OLMAYAN gün
+ayYazisi("2026-07")                       ->  "Tem 2026"
+```
+
+`new Date("2026-07")` ayın birine çözülüyor. Veride ay kesinliği varken
+ekrana gün basmak, bu depoda tur tur avlanan "uydurma değer" sınıfının ta
+kendisi olurdu.
+
+`ayYazisi` aynı modüle (`app/lib/tarih.ts`) kondu — ay adları, geçersizde
+`null` dönme sözleşmesi ve "geçersiz tarih basmaktansa alanı hiç basma"
+kuralı tek yerde kalıyor. Gün olarak ayın **15'i, saat 12** seçiliyor: ayın
+birinde UTC ayrıştırması bir önceki aya düşürebiliyor (açık taraf da aynı
+korumayı kullanıyor: `${iso}T12:00:00`).
+
+#### Doğrulama — 18 saf vaka + 3 sayfa + 3 negatif kontrol
+
+Modül saf olduğu için `node --experimental-strip-types` ile doğrudan sürüldü:
+
+| kova | vaka | sonuç |
+|---|---|---|
+| geçerli | `2026-07` · `2026-08` · `2025-01` · `2026-12` · `2026-07-15` | **Tem/Ağu/Oca/Ara 2026** ve tam tarih de ay olarak |
+| geçersiz | `2026-13` · `2026-00` · `0000-05` · `2026` · `Temmuz 2026` · `""` · `"   "` · `abc` · `<script>` · `null` · `undefined` · `12345` · `{}` | **13'ü de `null`** |
+| **toplam** | **18** | **hata 0** |
+
+Sayfa tarafı (kapı açıkken):
+
+| konu | sonra |
+|---|---|
+| `nefroloji/asit-baz-dengesi` | `2026-07` → **"Tem 2026"** |
+| `romatoloji/sle` | → "Tem 2026" |
+| `endokrinoloji/feokromositoma` | `2026-08` → **"Ağu 2026"** |
+
+**Negatif kontroller:**
+
+| ölçüt | sonuç |
+|---|---|
+| açık taraf değişti mi | `addison` **"14 Mar 2026"** · `bruselloz` **"20 Ağu 2026"** — birebir aynı |
+| tarihsiz açık konu | satır **hiç basılmıyor** (`lenfomalar`) — kayıtlı davranış korundu |
+| **kapı geri kondu mu** | premium konu sayfası yeniden **"Erişim Kısıtlı"**, `Güncelleme` YOK, `data-readable` **0** |
+| ölçüm izi | `ZZ-OLCUM` **0**; yedekle diff'te yalnızca iki kasıtlı değişiklik |
+| kapılar | lint · typecheck · build 637/637 · 13 CI adımı |
+
+#### Ölçüm/yöntem notları
+
+- **"Önce" hâli ölçülmeden düzeltilmedi.** Kapı geçici açılıp sayfa gerçek
+  veriyle render edildi ve `Güncelleme: "2026-07"` bizzat görüldü; kaynağa
+  bakıp "herhalde ham basıyor" denmedi.
+- **Test koşumunun kendi hatası vardı:** `JSON.stringify(undefined)`
+  `undefined` döndürüyor ve `.padEnd` üzerinde çöküyordu. 15 vaka geçmiş,
+  16.'da harness patlamıştı. Kusur ölçülen fonksiyonda değil ÖLÇÜMDEYDİ —
+  düzeltilip 18/18 alındı.
+- **`python - <<'PY'` bu oturumda BEŞİNCİ kez iş bozdu.** Bu ortamda `python`
+  yok; heredoc kendinden sonraki satırları da yutuyor ve iki doğrulama
+  komutum sessizce çalışmadı. Kural bir kez daha: yedek olarak bile yazma.

@@ -8,6 +8,7 @@ import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { bolumBasliklari, type IcerikBlok } from './IcerikBloklari';
 import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
+import { ayYazisi } from '@/app/lib/tarih';
 import { rotaMeta } from "@/lib/site";
 
 /**
@@ -573,10 +574,29 @@ export default async function KonuSayfasi({
               </div>
             )}
 
-            {/* GÜNCELLEME */}
-            {veri.meta.guncelleme && (
+            {/**
+              * GÜNCELLEME — ham dize DEĞİL, okunabilir ay.
+              *
+              * Ölçüldü (yerel üretim derlemesi, kapı geçici açılarak): sayfa
+              * `Güncelleme: 2026-07` basıyordu. Aynı bilgi AÇIK tarafta
+              * `Güncelleme: 10 Haz 2026` diye çıkıyor — yani ücretli yüzey
+              * makine dizesi, ücretsiz yüzey Türkçe tarih gösteriyordu.
+              *
+              * Ayrıca doğrulama YOKTU: `guncelleme` alanına ne yazılırsa
+              * ekrana o basılıyordu. Açık tarafta bu bir kez kusur üretmişti
+              * (29 konu Türkçe sayfada İngilizce ay adı gösteriyordu) ve
+              * çözümü `isoTarih`/`tarihYazisi` zincirine bağlamak olmuştu.
+              *
+              * `tarihYazisi` DEĞİL `ayYazisi`: veri ay kesinliğinde
+              * (`"2026-07"`, 41 dosyanın 41'inde) ve `tarihYazisi` gün
+              * uydururdu ("01 Tem 2026").
+              *
+              * Geçersiz değerde alan HİÇ basılmıyor — deponun kuralı:
+              * geçersiz bir tarih basmaktansa sinyali vermemek doğru.
+              */}
+            {ayYazisi(veri.meta.guncelleme) && (
               <div style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center' }}>
-                Güncelleme: {veri.meta.guncelleme}
+                Güncelleme: {ayYazisi(veri.meta.guncelleme)}
               </div>
             )}
           </div>
