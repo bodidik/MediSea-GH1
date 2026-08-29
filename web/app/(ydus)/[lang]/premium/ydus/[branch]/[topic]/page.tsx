@@ -36,17 +36,40 @@ import { rotaMeta } from "@/lib/site";
 export const dynamic = "force-dynamic";
 
 // --- BRANCH RENK SİSTEMİ ---
-const BRANCH_META: Record<string, { label: string; renk: string }> = {
-  hematoloji:           { label: 'Hematoloji',          renk: '#a01f1f' },
-  endokrinoloji:        { label: 'Endokrinoloji',        renk: '#8a4800' },
-  romatoloji:           { label: 'Romatoloji',           renk: '#1a5c2e' },
-  'gogus-hastaliklari': { label: 'Göğüs Hastalıkları',  renk: '#0d6b8a' },
-  gastroenteroloji: { label: 'Gastroenteroloji',   renk: '#4a1a7a' },
-  nefroloji:        { label: 'Nefroloji',          renk: '#1a3a6b' },
-  onkoloji:         { label: 'Onkoloji',           renk: '#5a1a6b' },
-  kardiyoloji:      { label: 'Kardiyoloji',        renk: '#1a4a6b' },
-  enfeksiyon:       { label: 'Enfeksiyon',         renk: '#1a5a3a' },
-};
+/**
+ * BRANS KUNYESI ELLE TUTULMUYOR -- olculmus bir ayrisma yuzunden.
+ *
+ * Burada 9 bransin adi ve rengi elle yaziliydi; ayni degerler branch
+ * JSON'larinda da duruyor ve `[branch]/page.tsx` ORADAN okuyor. Iki
+ * gerceklik ZATEN ayrismisti (kaynaktan sayildi, 10 brans):
+ *
+ *   enfeksiyon   JSON "Enfeksiyon Hastaliklari"  <->  kod "Enfeksiyon"
+ *   onkoloji     JSON "Tibbi Onkoloji"           <->  kod "Onkoloji"
+ *
+ * Bedeli kirinti yolunda gorunuyordu: brans sayfasi "Enfeksiyon
+ * Hastaliklari" diyor, ayni bransin konu sayfasi "Enfeksiyon" -- ayni
+ * hedefe giden iki bag, iki ayri ad. Ustelik yeni bir brans eklendiginde
+ * (genel-dahiliye) etiket ham slug'a dusuyordu.
+ *
+ * Artik kunye branch JSON'undan okunuyor: tek kaynak, ayrisma imkani yok
+ * ve yeni brans kod satiri gerektirmiyor. Dosya okunamazsa eski yedek
+ * davranisi (ham slug + varsayilan renk) suruyor.
+ */
+function bransKunyesi(branch: string): { label: string; renk: string } {
+  try {
+    const yol = path.join(
+      process.cwd(),
+      'content', 'premium', 'ydus', 'branches', `${branch}.json`
+    );
+    const j = JSON.parse(fs.readFileSync(yol, 'utf-8')) as { meta?: { baslik?: string; renk?: string } };
+    return {
+      label: j.meta?.baslik || branch,
+      renk: j.meta?.renk || DEFAULT_RENK,
+    };
+  } catch {
+    return { label: branch, renk: DEFAULT_RENK };
+  }
+}
 
 const DEFAULT_RENK = '#1a3a6b';
 
@@ -149,7 +172,7 @@ export default async function KonuSayfasi({
   const gate = await AccessGate({ topicId: topic, lang, branch });
   if (gate) return gate;
 
-  const branchMeta = BRANCH_META[branch] ?? { label: branch, renk: DEFAULT_RENK };
+  const branchMeta = bransKunyesi(branch);
   const moduller = veri.moduller ?? {};
 
   /**

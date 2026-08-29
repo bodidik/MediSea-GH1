@@ -25896,3 +25896,89 @@ ara — o minifikasyondan sağ çıkıyor ve sunucu HTML'inde bulunmuyor.
 
 Ölçüm izi temizlendi: iki origin'de de `medisea:*` sayımı **yenilemeden
 SONRA 0** (bileşen kuruluyken yapılan silme kalıcı değil — kayıtlı tuzak).
+
+### BRANŞ KÜNYESİ İKİ YERDE TUTULUYORDU — ve İKİSİ ZATEN AYRIŞMIŞTI
+
+İçerik oturumu yeni bir premium branş açtı (`genel-dahiliye`) ve üç yerde
+birer satırlık görünüm işi bildirdi. Önce **iddiası sürüldü**, sonra
+eklenecek satırlardan biri gerçek bir kusur açığa çıkardı.
+
+#### İddia doğrulandı: branş kod olmadan da çalışıyor
+
+Panoda ölçüldü (canlı, değişiklikten ÖNCE): `genel-dahiliye` kartı **var**,
+listenin sonunda (`bransKimlikleri()` dizini okuyor, `BRANS_SIRASI`de
+olmayan branş kod noktasına göre sona ekleniyor) ve tıklanabilir. Yani
+içerik kod beklemeden yayında.
+
+#### Ama künye tablosu ELLE tutuluyordu — ve iki branşta sapmıştı
+
+`[branch]/[topic]/page.tsx` içinde `BRANCH_META` dokuz branşın **adını ve
+rengini elle** yazıyordu; aynı değerler branş JSON'larında da duruyor ve
+`[branch]/page.tsx` **oradan** okuyor. Kaynaktan sayıldı (10 branş):
+
+| branş | JSON `meta.baslik` | koddaki `label` |
+|---|---|---|
+| **enfeksiyon** | **Enfeksiyon Hastalıkları** | **Enfeksiyon** |
+| **onkoloji** | **Tıbbi Onkoloji** | **Onkoloji** |
+| `genel-dahiliye` | Genel Dahiliye | **KAYIT YOK** → ham slug |
+| kalan 7 | — | aynı |
+
+Renkler onda onunda aynıydı; ayrışan yalnızca adlardı.
+
+**Bedeli kırıntı yolunda görünüyor** (kapı geçici açılıp gerçek içerikle
+ölçüldü): branş sayfası "Enfeksiyon Hastalıkları" diyor, aynı branşın konu
+sayfası kırıntısı ve "← geri" bağlantısı **"Enfeksiyon"** diyordu. Aynı
+hedefe giden iki bağ, iki ayrı ad — bu oturumda kapatılan *"aynı ad, farklı
+hedef"* sınıfının aynası.
+
+#### Çare: satır eklemek DEĞİL, ikinci gerçekliği kaldırmak
+
+Peer'in önerisi `BRANCH_META`ya bir satır eklemekti; o, kusuru tek branş
+için kapatıp mekanizmayı bırakırdı. Tablo tümden kaldırıldı — künye artık
+branş JSON'undan okunuyor (`bransKunyesi()`). Dosya zaten `fs`/`path` içe
+aktaran bir sunucu bileşeni, yani ek maliyet yok.
+
+| ölçüt | sonuç |
+|---|---|
+| elle yazılmış künye kaydı | **9 → 0** |
+| yeni branşın gerektirdiği kod satırı | **1 → 0** (künye tarafında) |
+| dosya okunamazsa | eski yedek davranışı (ham slug + `DEFAULT_RENK`) sürüyor |
+
+#### Doğrulama — kapı geçici açılıp, üçü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `enfeksiyon` konu kırıntısı | **Enfeksiyon** | **Enfeksiyon Hastalıkları** — branş sayfasıyla aynı |
+| `onkoloji` konu kırıntısı | **Onkoloji** | **Tıbbi Onkoloji** |
+| `genel-dahiliye` konu kırıntısı | (ham slug) | **Genel Dahiliye**, renk **#1a4a5c** (kendi rengi) |
+| "← geri" bağlantısı | — | **"← Enfeksiyon Hastalıkları"** |
+| **negatif** — `hematoloji` | Hematoloji · #a01f1f | **değişmedi** |
+| **negatif** — olmayan branş | — | **404**, çökme yok |
+| **negatif** — kapı geri kondu | — | iki konu sayfası da **"Erişim Kısıtlı"**, `ZZ_OLCUM` izi **0** |
+
+#### Pano ikonu: iki branş AYNI ikonu gösteriyordu
+
+`BRANCH_ICONS` bir lucide **bileşeni** eşliyor, yani JSON'dan türetilemez
+(JSON'daki `emoji` alanı ayrı bir görsel dil). Yedek `FlaskConical` ve o
+zaten `endokrinoloji`nin ikonu — ölçüldü, iki kartın SVG imzası **birebir
+aynıydı**.
+
+| kart | önce | sonra |
+|---|---|---|
+| `genel-dahiliye` | `M14 2v6…` (FlaskConical, endokrinolojiyle **aynı**) | `M11 2v2…circle` (Stethoscope) |
+| `endokrinoloji` | `M14 2v6…` | **değişmedi** |
+
+`Stethoscope` zaten içe aktarılmıştı, yeni import gerekmedi.
+
+#### `BRANS_SIRASI`: görünür bir değişiklik YOK, ama sıra artık BEYAN EDİLİYOR
+
+Branş listenin sonuna eklendi. Ölçüldü: pano sırası önce ve sonra **birebir
+aynı** (yedek zaten sona alfabetik ekliyordu). Değişen tek şey, sıranın
+rastlantısal değil ilan edilmiş olması. **Nerede duracağı bir küratörlük
+kararı** — "semptomdan tanıya" giriş niteliğinde bir modül ve başa da
+alınabilir; o karar içerik sahibinin.
+
+**Aktarılabilir kural: bir peer "şu tabloya bir satır ekle" dediğinde, önce
+tablonun NEDEN elle tutulduğunu sor.** Bu turda istenen satır bir semptomdu;
+tablonun kendisi kusurdu ve iki branşta çoktan ayrışmıştı. Eklenecek satır
+kusuru bir branş için kapatır, mekanizmayı bir sonraki branşa devrederdi.

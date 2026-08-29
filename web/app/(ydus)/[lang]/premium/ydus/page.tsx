@@ -78,7 +78,7 @@ const LOCKED_BRANCHES: LockedBranch[] = [];
  * alfabetik ekleniyor — `listelenmeyenKategori()` ile aynı 'kendini onaran
  * okuma' kalıbı, bir düzey yukarıda.
  */
-const BRANS_SIRASI = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji', 'onkoloji', 'enfeksiyon'];
+const BRANS_SIRASI = ['endokrinoloji', 'hematoloji', 'romatoloji', 'gogus-hastaliklari', 'gastroenteroloji', 'nefroloji', 'kardiyoloji', 'onkoloji', 'enfeksiyon', 'genel-dahiliye'];
 
 function bransKimlikleri(): string[] {
   let dosyalar: string[] = [];

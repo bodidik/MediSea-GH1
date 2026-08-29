@@ -54,6 +54,7 @@ const BRANCH_ICONS: Record<string, React.ElementType> = {
   kardiyoloji: HeartPulse,
   onkoloji: Microscope,
   enfeksiyon: Bug,
+  'genel-dahiliye': Stethoscope,
 };
 
 export default function YdusDashboardClient({
