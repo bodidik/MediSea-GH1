@@ -24941,3 +24941,65 @@ sor.** Bağlıysa saklanan şey bir DEĞER değil, bir ANLIK GÖRÜNTÜdür ve
 saklandığı andan itibaren yanlışlaşmaya başlar. Bu depoda aynı ilke site
 haritasında (`lastmod`) ve panoda ("yeni eklendi") ölçülmüştü; buradaki
 farkı, sayının kullanıcının KENDİ davranışını iddia etmesi.
+
+### İKİNCİ SEKME QUİZ CEVAPLARINI SİLİYORDU — süpürmenin atladığı üçüncü yazıcı
+
+Bu oturumda "bellekteki durumu olduğu gibi yazan yazıcı, öteki sekmenin
+verisini siler" sınıfı iki yerde kapatılmıştı: **vurgular** ve **flashcard
+işaretleri**. O turda depoya yazan sekiz yol sayılmış ve `QuizEngine`
+listede YOKTU — çünkü sayım `localStorage` ARAYAN dosyaları tarıyordu ve
+quiz ilerlemesi ayrı bir anahtar ailesinde (`quiz-progress-<id>`) duruyor.
+
+Ölçüldü (kapı geçici açılıp GERÇEK motorla, iki ayrı gezinme bağlamı):
+
+| adım | depo |
+|---|---|
+| B sekmesi depo BOŞKEN açıldı | — |
+| A dört soru cevapladı | `{"i":3,"s":{s1,s2,s3,s4}}` |
+| **B TEK soru cevapladı** | **`{"i":0,"s":{"s1":false}}`** |
+
+A'nın üç cevabı gitti ve sürdürme imleci 3'ten 0'a düştü. Kullanıcı sayfayı
+yenilediğinde dört soruluk ilerleme yerine tek cevapla 1. sorudan başlıyor.
+
+#### Çare `storage` dinleyicisi DEĞİL — deponun kendi güvenli yazıcı deyimi
+
+Vurgularda çare `storage` olayını dinleyip yeniden okumaktı; burada daha
+basit ve yarışsız bir yol var: **oku–değiştir–yaz**. Depoda güvenli sayılan
+yazıcılar (`touchIndex` · `grade` · günlük) zaten böyle çalışıyor.
+
+Cevaplar birleştirilebilir, çünkü **bir soru cevaplandıktan sonra
+değişmiyor** (motor başka şıkka tıklamayı yok sayıyor — daha önce ölçülmüş).
+Çakışmada yerel kazanıyor; `i` yalnızca bir sürdürme imleci ve son yazan
+kazanmaya devam ediyor.
+
+**Birleştirmenin "baştan çöz"ü DELMEDİĞİ ayrıca ölçüldü** — asıl risk buydu:
+naif bir birleştirme, sıfırlanan turda eski cevapları diriltir ve sonuç
+ekranını yalanlar. Delmiyor, çünkü iki sıfırlama yolu da yalnızca sonuç
+ekranından çağrılıyor ve oraya `bitti` ile gelinirken anahtar zaten
+siliniyor.
+
+#### Doğrulama — biri düzeltme, üçü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| A 4 cevap → B 1 cevap | **`s` 4 → 1 kayıt** | **4 kayıt korundu** (`s1..s4`) |
+| **negatif** — tek sekme, yenile | — | **3/10'dan devam**, üç cevap yerinde, depo değişmedi |
+| **negatif** — set bitince | — | anahtar **siliniyor** (`null`), sonuç "10 soruda 1 doğru · 9 yanlış" |
+| **negatif** — "Baştan çöz" sonrası ilk cevap | — | depoda **tam 1 cevap** — eski 10 diriltilmedi |
+
+Kalan ve bilerek bırakılan: `i` (sürdürme imleci) hâlâ son yazan kazanıyor —
+bir konum, veri değil. `max` almak cazip ama "yanlışları çöz" kipinde `i`
+DARALTILMIŞ listeye göre yazılıyor; iki kipin indeksini `max`'la karıştırmak
+bugün olmayan bir kusur üretirdi.
+
+Kapı geri kondu ve doğrulandı (sayfa yeniden **"Erişim Kısıtlı"**,
+`data-readable` 0, `ZZ-OLCUM` izi 0, `page.tsx` yedekle birebir). Ölçüm izi
+temizlendi (`localStorage` 0 anahtar). Kapılar: lint · typecheck · build
+**637/637**. Dosya saf CRLF (703 → 735 satır) — biçim korundu.
+
+**Aktarılabilir kural: bir sınıfı süpürürken kapsamı ARAMA DESENİNDEN değil,
+DEPO ANAHTARI AİLESİNDEN çıkar.** O turda `localStorage` geçen 11 dosya
+sayılmış ve sekiz yazıcı karara bağlanmıştı; quiz ilerlemesi o listede
+olmasına rağmen "ilerleme kaydı" diye ayrı bir kova sayılıp incelenmemişti.
+Anahtar önekiyle sayım yapılsaydı (`medisea:*` **ve** `quiz-progress-*`)
+üçüncü yazıcı ilk turda görünürdü.

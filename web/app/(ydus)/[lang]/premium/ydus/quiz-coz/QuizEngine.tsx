@@ -554,7 +554,39 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         return;
       }
       if (soruIndex === 0 && Object.keys(sonuclar).length === 0) return;
-      localStorage.setItem(storageKey, JSON.stringify({ i: soruIndex, s: sonuclar }));
+      /**
+       * OKU-DEĞİŞTİR-YAZ — bellekteki durumu OLDUĞU GİBİ yazmak ikinci bir
+       * sekmede verilen cevapları siliyordu.
+       *
+       * Ölçüldü (aynı quiz, iki ayrı gezinme bağlamı): B sekmesi depo BOŞKEN
+       * açıldı, A sekmesi dört soru cevapladı
+       * (`{"i":3,"s":{s1,s2,s3,s4}}`), sonra B TEK soru cevapladı ve depo
+       * `{"i":0,"s":{"s1":false}}` oldu — A'nın üç cevabı gitti, sürdürme
+       * imleci de 3'ten 0'a düştü.
+       *
+       * Aynı sınıf vurgularda ve flashcard işaretlerinde kapatılmıştı; quiz
+       * yazıcısı o süpürmenin dışında kalmış. Buradaki çare `storage`
+       * dinleyicisi değil, deponun kendi güvenli yazıcı deyimi
+       * (`touchIndex` · `grade` · günlük): oku, birleştir, yaz.
+       *
+       * Cevaplar BİRLEŞTİRİLEBİLİR çünkü bir soru cevaplandıktan sonra
+       * değişmiyor (motor başka şıkka tıklamayı yok sayıyor — ölçülmüş).
+       * Çakışmada YEREL kazanıyor; `i` yalnızca bir sürdürme imleci ve son
+       * yazan kazanmaya devam ediyor.
+       *
+       * "Baştan çöz" / "yanlışları çöz" bu birleştirmeyi DELMİYOR: iki yol da
+       * yalnızca sonuç ekranından çağrılıyor ve oraya `bitti` ile gelinirken
+       * anahtar zaten siliniyor, yani birleşecek eski kayıt kalmıyor.
+       */
+      const kayitli = guvenliCozumle(storageKey) as { i?: number; s?: Record<string, boolean> } | number | null;
+      const eski =
+        kayitli && typeof kayitli === 'object' && kayitli.s && typeof kayitli.s === 'object'
+          ? kayitli.s
+          : {};
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({ i: soruIndex, s: { ...eski, ...sonuclar } }),
+      );
     } catch {}
   }, [soruIndex, sonuclar, bitti, storageKey]);
 
