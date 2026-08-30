@@ -627,6 +627,7 @@ node scripts/yuvarlama-denetim.cjs   # yuvarlanmış değer ikinci hesaba giriyo
 node scripts/yuvarlama-denetim.cjs --kontrol
 node scripts/eksik-alan-denetim.cjs   # tablo alanı çoğunlukta dolu, birkaçında boş mu (CI kapısı DEĞİL)
 node scripts/eksik-alan-denetim.cjs --kontrol
+node scripts/kopya-bolum-denetim.cjs   # aynı konuda kopya bölüm/blok (CI kapısı DEĞİL)
 node scripts/yorum-korlugu-denetim.cjs   # denetimler YORUMU kusur sanıyor mu (meta denetim)
 node scripts/esik-etiket-denetim.cjs --negatif
 ```
@@ -27335,3 +27336,86 @@ saymak — bu turda iki çakışma, 14 araçlık sistematik bir yanlış bağlan
 açığa çıkardı. Ters yönde de geçerli: adların benzersiz olması, doğru
 ögeye bağlandığını göstermez (`hscore`in 9 adı benzersizdi ve hepsi
 yanlış `<p>`den geliyordu).
+
+### BİR KONUNUN %31'İ TEKRARDI — içindekilerde iki özdeş madde, farklı hedeflere
+
+Yeni eksen: **aynı sayfada aynı metin iki kez mi görünüyor?** Bu oturumda
+"aynı ad, farklı hedef" sınıfı ilgili konular, arama sonuçları ve seçenek
+grupları için kapatıldı — ama kendi kurduğum **içindekiler bloğu** hiç bu
+gözle ölçülmedi.
+
+Ölçüldü (canlı, 423 görünür konu · 497 içindekiler maddesi):
+
+| ölçüt | sonuç |
+|---|---|
+| içindekiler maddesi ÇAKIŞAN metin | **1 konu** |
+| içindekiler ÇAKIŞAN hedef (aynı çapa iki kez) | **0** |
+| okuma alanında çakışan başlık metni | 3 konu |
+
+Tek içindekiler çakışması `romatoloji/behcet-vaskuler-tutulum` ve sebebi
+sunum değil **VERİ**:
+
+```
+bolum 0  "🩸 1. Vasküler Tutulumun Doğası..."   govde 2016
+bolum 1  "🌊 2. Venöz Tutulum..."                govde 1519
+bolum 2  "🩸 1. Vasküler Tutulumun Doğası..."   govde 2016   <- 0 ile BIREBIR
+bolum 3  "🌊 2. Venöz Tutulum..."                govde 1519   <- 1 ile BIREBIR
+```
+
+**Kullanıcıya ulaşan bedel ölçüldü** (canlı): okuma alanı 6624 karakter,
+tekrarlanan iki bölüm 1221 + 864 = **2085 karakter, yani %31'i**. Okuyucu
+makalenin üçte birini iki kez okuyor; içindekilerde iki özdeş etiket var.
+
+**Çapalar sağlam** — bu oturumda konan `-2` son eki iş görüyor: altı maddenin
+altısı da çözülüyor, kırık çapa **0**. Yani navigasyon çalışıyor, ayırt
+edilemeyen şey ETİKET.
+
+> Yan gözlem: iki kopya bölümün RENDER uzunlukları 881 ↔ 864, yani **17
+> karakter fark**. Kaynakta ikisi de 1519. Farkı `kisaltmaAc` üretiyor —
+> kısaltma yalnızca SAYFADAKİ İLK kullanımda açılıyor. Kopya bölüm, o
+> kuralın çalıştığının kazara kanıtı oldu.
+
+#### Kapsam ÖLÇÜLDÜ — sınıf tek örnekli, premium temiz
+
+| külliyat | ölçülen | TAM KOPYA | başlık aynı gövde farklı |
+|---|---|---|---|
+| açık konu (`sections[]`) | 423 görünür · **2153 bölüm** | **1 konu · 2 bölüm** | **0** |
+| premium (`icerik[]`) | 44 dosya · **561 blok** | **0** | — |
+
+İkinci sütun ("başlık aynı, gövde farklı") **0** çıkması kayda değer: bugün
+içindekiler ayırt ediciliğini bozan tek şey gerçek kopya. Yani içindekiler
+etiketine bir ayrım eki eklemek **bugün ölü kod olurdu** — bu depoda
+öngörülen risk için kod yazmama kuralı gereği yapılmadı.
+
+#### İÇERİK DEĞİŞTİRİLMEDİ — denetim eklendi
+
+Kopya bölümü silmek bir içerik kararı ve yazarın işi (aynı gerekçeyle
+`hiperkalsemi-ve-hiperparatiroidi.json` içerik kazası da yalnızca
+raporlanmıştı). Bunun yerine sınıf kalıcı hâle getirildi:
+`scripts/kopya-bolum-denetim.cjs` — **CI kapısı DEĞİL, rapor**.
+
+`konu-denetim` bunu göremez ve sebebi yapısal: o **bölüm SAYISINA** ve
+**gövde UZUNLUĞUNA** bakıyor; iki bölüm birebir aynı olduğunda ikisi de
+ARTIYOR, yani orada hiç sinyal yok.
+
+Denetim iki şekli birden tarıyor (`sections[]` ve `icerik[]`) ve
+`--kontrol` **altı kontrolle** sınıyor:
+
+| kontrol | sonuç |
+|---|---|
+| negatif — TAM KOPYA yakalanıyor | ✓ |
+| negatif — BAŞLIK AYNI yakalanıyor | ✓ |
+| pozitif — temiz kayıt iki kovada da YOK | ✓ ✓ |
+| gizli konu ölçüme girmiyor | ✓ |
+| körlük — bölüm gerçekten ölçüldü | ✓ |
+
+Meta teste (`yorum-korlugu-denetim`) kapsam dışı olarak gerekçesiyle
+kaydedildi (tamamen JSON tarıyor); **15 denetimin 15'i** hâlâ tohumu
+ölçüyor ve bayatlama uyarısı yok.
+
+**Aktarılabilir kural: bir gezinme bloğu ürettiğinde, kaynağındaki verinin
+BENZERSİZ olduğunu varsayma.** İçindekiler kurulurken çapa çakışması
+düşünülüp `-2` eki konmuştu — yani teknik çakışma öngörülmüştü. Ama
+ETİKET çakışması düşünülmemişti ve o, çapadan farklı olarak kullanıcıya
+görünüyor. Bir liste üreten her kod için iki ayrı soru var: **hedefler
+benzersiz mi** ve **etiketler ayırt edilebilir mi**.

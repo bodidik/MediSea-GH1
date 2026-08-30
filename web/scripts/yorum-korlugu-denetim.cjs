@@ -68,6 +68,9 @@ const KAPSAM_DISI = new Set([
   // meta.parent şemasını (dize/dizi) denetliyor: tamamen JSON. Kendi
   // --kontrol kipinde negatif VE pozitif tohumu var.
   'ebeveyn-denetim.cjs',
+  // Konu bölümlerini/blokları kendi içinde karşılaştırıyor: tamamen JSON.
+  // Kendi --kontrol kipinde negatif, pozitif ve körlük tohumu var.
+  'kopya-bolum-denetim.cjs',
 ]);
 
 /** Hedef şekiller SADECE yorumda; kod tarafı tertemiz. */
