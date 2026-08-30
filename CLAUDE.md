@@ -28165,3 +28165,163 @@ Masaüstü satırı için `py-1` geri alındı: 18 özet × 4 px = **72 px** bü
 18 akordeon başlığı yan yana duruyor — aynı 18 kategori iki ayrı affordansla.
 Çipler URL süzgeci (`aria-current` + derin bağlantı), akordeon yerinde açıyor;
 ikisi de işlevsel ama mobilde tekrar. Birini kaldırmak bir tasarım kararı.
+
+### 57 SATIRLIK İNME SKALASINI DOLDURAN KULLANICI SKORU HİÇ GÖRMÜYORDU
+
+Yeni eksen: **sonuç, kullanıcı kontrolleri doldururken ekranda mı?** Bu depoda
+sonucun DOĞRULUĞU turlarca ölçüldü, KONUMU bir tur önce ölçüldü (`sle`
+panelini kontrollerin altına aldı) — ama "altında" olmak "görünür" olmak
+değil.
+
+Ölçüldü (canlı, 375px):
+
+| araç | belge | kontrol | panel |
+|---|---|---|---|
+| `ciwa-ar` | **6211 px = 7.6 ekran** | 57 | 5186 px |
+| `nihss` | **5920 px = 7.3 ekran** | 57 | 4805 px |
+| `haq-di` | 5236 px = 6.4 ekran | 84 | 4211 px |
+| `apache2` | 3743 px = 4.6 ekran | 87 | 2746 px |
+| **kıyas** — `bmi` | 2137 px = 2.6 ekran | 4 | **763 px** |
+
+Son satır ayırt edici: `bmi`de panel açılışta zaten görünüyor (763 < 812), yani
+sorun "araç uzun" değil **panel foldun altında kalıyor**. 130 aracın 12'sinde
+30'dan çok kontrol var, 4'ünde 60'tan çok.
+
+Geri bildirim döngüsü kopuktu: kullanıcı 57 satır dolduruyor, skor değişiyor,
+ekranda hiçbir şey görmüyor.
+
+#### EŞİK YOK — şerit kendi kendini ayarlıyor
+
+"Uzun araç" diye bir liste tutulmadı. Şerit yalnızca **panel foldun ALTINDAYKEN**
+çiziliyor (`panel.getBoundingClientRect().top >= innerHeight`):
+
+- kısa araçta panel zaten görünür → şerit hiç çıkmıyor (ölü katman yok),
+- kullanıcı paneli GEÇTİYSE sonucu zaten görmüştür → şerit yine çıkmıyor,
+- masaüstü/mobil ayrımı da gerekmiyor; kural görünüm yüksekliğinden türüyor.
+
+#### ŞERİT SAYIYI DEĞİL BANT ETİKETİNİ taşıyor — ve bu bir GÜVENLİK kararı
+
+`SonucDuyuru` zaten bant etiketini alıyor (71 çağrı yeri), yani şerit
+duyuruyla **AYNI tek kaynaktan** besleniyor. Skoru da basmak için ikinci bir
+değişken geçirmek gerekirdi ve o değişkenin adı araçtan araca farklı
+(`total` · `score` · `puan` · `r` · `band`…); mekanik bir süpürmenin yanlış
+değişkeni seçmesi, klinik bir hesaplayıcıda **ekrana yanlış sayı basmak**
+demektir — bu depoda tur tur avlanan sınıfın en pahalı hâli. Tam sonuç bir
+dokunuş uzakta: şeritteki düğme paneli görünüme getiriyor.
+
+Panel `nextElementSibling` ile bulunuyor — 71 çağrı yerinin hepsinde duyuru
+satırı panelin HEMEN ÖNÜNDE (yerleşim denetimiyle daha önce doğrulanmıştı) ve
+bu turda 12 araçta ayrıca ölçüldü (hepsinde `DIV.bg-white…`). Şeridin kendisi
+aynı fragment'ta render edildiği için kardeş aramasında ATLANIYOR
+(`data-sonuc-serit`) — yoksa panel yerine kendini bulurdu. Panel çözülemezse
+şerit hiç çıkmıyor: sessizce yanlış bir sonuç göstermektense hiç göstermemek
+doğru.
+
+#### ⚠ YENİ ORTAM TUZAĞI — sayfa gizliyken KAYDIRMA OLAYI da atılmıyor
+
+İlk yazım `IntersectionObserver` kullanıyordu. Çalışmadı ve sebebi üründe
+değildi. Ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| `document.visibilityState` | **hidden** |
+| `paint` kaydı | **0** |
+| **IntersectionObserver kaç kez ateşledi** | **0** |
+| **requestAnimationFrame** | **0** |
+| **`scroll` olayı** (üç ayrı kaydırma yöntemiyle) | **0** |
+| `scrollTo(0, 900)` gerçekten kaydırdı mı | **evet** (900) |
+| `scrollTop = 2400` | **evet** (2400) |
+| `scrollTo` + `behavior: smooth` | **HAYIR** — 900'de kaldı |
+| `getBoundingClientRect()` | **çalışıyor** |
+
+Yani bu ortamda **konum değişiyor ama olay atılmıyor**, ve boyamaya dayanan
+her geri çağırma ölü. Belgede kayıtlı `hasFocus` · geçiş · animasyon
+tuzaklarının kardeşi; yeni olan **scroll olayı** ve **smooth kaydırma**.
+
+Sonuç iki katmanlı:
+
+1. **Mekanizma değişti.** `IntersectionObserver` bırakıldı, kaydırma olayı +
+   `getBoundingClientRect` alındı. Gerekçe başarım değil **doğrulanabilirlik**:
+   düzen okuması boyamadan bağımsız çalışıyor.
+2. **Doğrulama yöntemi değişti.** Olay elle gönderiliyor
+   (`window.dispatchEvent(new Event("scroll"))`) — belgede `resize_window`
+   için kayıtlı yöntemin aynısı. Bu, işleyicinin verilen konum için DOĞRU
+   hesapladığını kanıtlıyor; tarayıcının olayı yayınladığı zaten bir tarayıcı
+   garantisi.
+
+Aynı sebeple düğme de "kaydırdı mı" ile değil **ÇAĞRI gözlenerek** doğrulandı
+(`Element.prototype.scrollIntoView` sarmalandı) — vurgu paneli turunda kayıtlı
+yöntem.
+
+#### `scroll-padding-bottom` TAHMİN EDİLMİYOR, ÖLÇÜLÜYOR
+
+Sabit bir alt şerit, odaklanan bir kontrolü altında bırakabilir (WCAG 2.4.11) —
+bu depoda `ReadingHint` tam bu yüzden 5–17 odak durağını örtmüştü. Şerit
+görünürken `documentElement.style.scrollPaddingBottom` = şeridin **ölçülen**
+`offsetHeight` + 16 (= 75 px), şerit kalkınca temizleniyor.
+
+| ölçüt (apache2, 375px, şerit görünürken) | değer |
+|---|---|
+| odak durağı | **99** |
+| şerit bandına düşen | 3 |
+| **TAMAMEN örtülen** | **0** |
+| `scroll-padding-bottom` | **75 px** (59 + 16) |
+
+#### Doğrulama — on ikisi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| `apache2` boş formda | şerit **yok** |
+| tepede (panel 2746) · kontroller arası (1600) | şerit **VAR**, 754–812, görünümün dibine sabit |
+| **negatif** — panel görünürken (2346) | şerit **yok**, `scroll-padding` **temizlendi** |
+| **negatif** — sayfanın en altında (2987) | şerit **yok** |
+| düğme | `scrollIntoView` çağrısı **hedef = panel**, `{block:"center", behavior:"smooth"}` |
+| düğme adı · boyut | "Sonuca git" · 100×37 (eşik 24) |
+| kontrast | **7.05** (SONUÇ) · **12.71** (bant) · **14.69** (düğme) |
+| şeritte canlı bölge var mı | **0** — çift duyuru yok (`role`/`aria-live` yok) |
+| **negatif** — `bmi` (kısa araç) | panel 763 < 812 → şerit **hiçbir durumda yok** |
+| **negatif** — `curb65` (SonucDuyuru YOK) | etkilenmiyor |
+| **negatif** — `nihss` | tepede VAR, panel görünürken yok |
+| **negatif** — 320px + 62 karakterlik bant (`glasgow-blatchford`) | **tam 2 satır**, yükseklik yine 59, yatay taşma **0** |
+| **negatif** — masaüstü 1280×900 | şerit görünüm genişliğinde (0–1265), dibe sabit, iç kap 768 px |
+| **negatif** — baskı | şeride uyan `@media print` kuralı **1** (`.fixed`) → kâğıda basılmıyor |
+| **negatif** — JS KAPALI (sunucu HTML'i) | üç araçta da şerit **0**, duyuru bölgesi **1** |
+| **negatif** — `bmi` aritmetiği | 170/70 → NORMAL · ideal **65.9** · Hamwi **66.7** (kayıtlı değerler) |
+| **negatif** — paket maliyeti | apache2 115 → **116 kB** · bmi 114 → **115 kB** · paylaşılan chunk **102 kB değişmedi** |
+| 14 denetim + lint + typecheck + build 638/638 | hepsi geçti |
+
+Sondan üçüncü satır önemli: JS'siz kullanıcı şeridi hiç görmüyor ve araç
+sayfalarındaki `<noscript>` şeridi (sonuç başlangıç değerlerine aittir) hâlâ
+tek uyarı — yani şerit o senaryoda ikinci bir yanlış iddia üretmiyor.
+
+#### KABUL EDİLEN ÖDÜNLEŞME
+
+Bant etiketi 2 satırdan uzunsa kırpılıyor (`line-clamp-2`). Bu depoda sessiz
+kırpma ayrı bir kusur sınıfı; burada kabul edildi çünkü tam metin **bir
+dokunuş uzakta** ve şeridin işi özet vermek. Ölçüldü: 320 px'te 62 karakterlik
+bant tam sığıyor, yani bugünkü etiketlerin çoğu kırpılmıyor.
+
+#### ⚠ `git stash pop` DOSYAYI CRLF'E ÇEVİRDİ
+
+Dosya saf LF'ti (151/0). Paket boyutu ölçümü için `git stash push` + `pop`
+yapıldı ve dosya **saf CRLF** olarak geri geldi (151/151) — `core.autocrlf=true`
+checkout'ta normalleştiriyor. `git diff --stat` bunu GÖSTERMİYOR (blob zaten
+LF'e normalleşiyor: indekste CR 0), yani gözden kaçardı.
+
+Bu, kayıtlı satır sonu tuzaklarının yeni bir kanalı — öncekiler yama betiğinin
+kendi yazımı ve `sed -i` idi. **Ölçüt aynı: yamadan VE her git işleminden
+sonra CR ile LF'i AYRI AYRI say.**
+
+#### Bu turda kayıtlı iki tuzak yeniden ısırdı, biri YENİ
+
+- **Python heredoc bu ortamda asılıyor** — bu oturumda beşinci kez, ve yine
+  "yedek olarak" yazıldığı için. Heredoc kendinden sonraki satırları da yuttu,
+  iki dakika bloke etti. Kural: **yedek olarak bile yazma.**
+- **Tek çağrıda çok araç sürmek 45 sn sınırını aşıyor.** Altı araçlık iframe
+  döngüsü iki kez zaman aşımına uğradı; araç başına bir çağrıya bölününce
+  sorunsuz geçti.
+- **YENİ: kabuk heredoc'u, içinde heredoc SÖZDİZİMİ geçen bir metni yazamadı**
+  (`unexpected EOF while looking for matching quote`) — tırnaklı sınırlayıcıya
+  rağmen. Bu belgeye tuzak ANLATAN bir metin yazarken kanalın o metni bozması,
+  kayıtlı "yorum körlüğü" ailesinin yazma tarafındaki hâli. Çare: markdown
+  parçasını Write ile yaz, `cat >> CLAUDE.md` ile ekle.
