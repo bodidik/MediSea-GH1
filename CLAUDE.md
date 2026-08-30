@@ -27786,3 +27786,86 @@ kabul et.** Rota grupları (`(site)`, `(ydus)`) yol adında görünüyor ve
 ASCII-güvenli sanılan her karakter sınıfı onları sessizce eliyor. Ucuz koruma:
 yoklamanın taradığı chunk sayısını değil, **aranan dosyanın listede olup
 olmadığını** doğrula.
+
+### 130 ARACIN 130'U KLİNİK UYARI TAŞIYORDU, 423 KONUNUN 359'U HİÇBİR ŞEY TAŞIMIYORDU
+
+Yeni eksen: **klinik metin taşıyan her yüzey sorumluluk ifadesi taşıyor mu?**
+Bu depoda araçların uyarısı defalarca ölçüldü (130/130, kabuktan geliyor) —
+ama aynı soru İÇERİK tarafına hiç sorulmadı.
+
+Ölçüldü:
+
+| yüzey | sorumluluk ifadesi |
+|---|---|
+| klinik araç | **130 / 130** (araç kabuğu basıyor) |
+| **açık konu** | **64 / 423** — başlıkta uyarı işareti 52, gövdede sorumluluk dili 15 |
+| **ikisi de YOK** | **359 konu (%85)** |
+| premium konu | 12 / 44 |
+| **alt bilgi (site geneli)** | **YOK** |
+
+Alt bilginin tam metni: *"© 2026 MediSea Eğitim Platformu. Tüm hakları
+saklıdır. Sürüm 2.0.1"* — tek bir sorumluluk cümlesi yok.
+
+**Render edilmiş konu sayfasında ölçüldü: `eğitim amaç|tıbbi tavsiye|hekim
+kararı|tanı koydurmaz|klinik karar|sorumluluk|yasal` desenlerinin eşleşme
+sayısı SIFIR.** Yani doz eşiği, tedavi basamağı ve tanı ölçütü anlatan 30
+ekranlık bir sayfada hiçbir yerde uyarı yok; aynı bilgiyi hesaplayan araç ise
+uyarıyı zorunlu tutuyor.
+
+#### Çare: 423 içerik dosyasına yazmak DEĞİL, kabuktan basmak
+
+Cümle içerik dosyalarına konmadı — **içerik kullanıcının sorumluluğu**. Deponun
+kendi kalıbı zaten kabuk tarafında: araçlarda uyarı `page.tsx` gövdesinde değil
+araç kabuğunda duruyor ve 130 dosyaya elle yazılmıyor.
+
+| yüzey | nereye kondu |
+|---|---|
+| açık site (`(site)` grubu) | **`AppShell` alt bilgisi** — 436 konu HTML'i dahil hepsini birden kapsıyor |
+| premium konu sayfası | sayfanın kendi künye bloğuna (`(ydus)` yerleşiminin alt bilgisi YOK) |
+
+Dil araçların ev sesinden alındı (`curb65`: *"Bu araç akademik referans
+amaçlıdır. Tedavi kararı verilirken klinik tablo, ek hastalıklar ve yerel
+pnömoni rehberleri esas alınmalıdır."*).
+
+**Metin TEK KAYNAKTA** (`app/lib/sorumluluk.ts`). İki yüzeye kopyalamak bu
+depoda tur tur avlanan "iki gerçeklik" sınıfını açardı — biri güncellenir,
+öteki kalırdı. Ölçüldü: iki dosyada da düz metin kopyası **yok**, ikisi de
+sabiti içe aktarıyor.
+
+#### Doğrulama — üretilmiş çıktı + tarayıcı, altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **konu sayfası HTML'i** | **0 / 436** | **436 / 436** |
+| premium konu sayfası (kapı geçici açık) | yok | **var** |
+| alt bilgi kontrastı | — | **10.01** (11px, `rgb(23,37,84)` üstünde) |
+| premium kontrastı | — | **5.65** (`#4a6a8a` beyazda — belgede kayıtlı ikincil ton) |
+| **negatif** — alt bilgi bağlantıları | 10 | **10** |
+| **negatif** — telif satırı | var | **var** |
+| **negatif** — premium `Güncelleme` satırı | "Tem 2026" | **değişmedi** |
+| **negatif** — premium `h1` | 1 | 1 |
+| **negatif** — 375 / 1280 yatay kayma | 0 | **0 · 0** (taşan öge 0) |
+| **negatif** — kapı geri kondu mu | — | **"Erişim Kısıtlı"**, `data-readable` **0**, `ZZ_OLCUM` izi **0** |
+| lint · typecheck · build 638/638 | — | hepsi geçti |
+
+#### Kapsam dışı kalanlar — her biri gerekçeli
+
+Üretilmiş çıktıda uyarı taşımayan 156 dosya tek tek sınıflandırıldı:
+
+| dosya | neden dışarıda |
+|---|---|
+| `/tools/*` (130) + `/tools` | araçların **kendi** uyarısı var (130/130, ölçülü); AppShell almıyorlar |
+| `/admin/*` (10) | yönetim yüzeyi, middleware arkasında |
+| `/giris` · `/kayit` · `/profile` | klinik metin taşımıyor |
+| premium branş listeleri + pano (11) | katalog/gezinme sayfaları, klinik proza yok |
+| `_not-found` | — |
+
+Yani klinik proza basan **her** yüzey artık uyarı taşıyor.
+
+**Aktarılabilir kural: bir ürün kuralını tek bir yüzey ailesinde uygulayıp
+oradaki kapsamı ölçmek, kuralın ÜRÜNDEKİ kapsamını ölçmek değildir.** Bu
+depoda araç uyarısı "130/130" diye üç ayrı turda doğrulanmıştı ve o sayı
+doğruydu; sorulmayan soru, aynı klinik bilginin **çok daha büyük** bir
+yüzeyde (423 konu) hiç uyarı taşımadığıydı. Ölçütü kurmanın ucuz yolu:
+kuralı sayfa başına değil **ürün genelinde** say ve payda olarak "klinik
+metin basan sayfa" al.

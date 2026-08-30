@@ -9,6 +9,7 @@ import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { bolumBasliklari, type IcerikBlok } from './IcerikBloklari';
 import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
 import { ayYazisi } from '@/app/lib/tarih';
+import { KLINIK_SORUMLULUK } from '@/app/lib/sorumluluk';
 import { rotaMeta } from "@/lib/site";
 
 /**
@@ -621,6 +622,16 @@ export default async function KonuSayfasi({
               * Geçersiz değerde alan HİÇ basılmıyor — deponun kuralı:
               * geçersiz bir tarih basmaktansa sinyali vermemek doğru.
               */}
+            {/* Klinik sorumluluk — KABUKTAN geliyor, icerikten degil.
+                Olculdu: 44 premium konunun 32sinde hicbir sorumluluk ifadesi
+                yok ve (ydus) yerlesiminin alt bilgisi de yok — yani acik
+                taraftaki alt bilgi bu sayfalari kapsamiyor.
+                Satir ici stil: bu yuzeyde globals.css tabanlari islemiyor,
+                boyut ve renk elle veriliyor (#4a6a8a beyazda 5.65). */}
+            <p style={{ fontSize: '11px', lineHeight: 1.6, color: '#4a6a8a', textAlign: 'center' }}>
+              {KLINIK_SORUMLULUK}
+            </p>
+
             {ayYazisi(veri.meta.guncelleme) && (
               <div style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center' }}>
                 Güncelleme: {ayYazisi(veri.meta.guncelleme)}

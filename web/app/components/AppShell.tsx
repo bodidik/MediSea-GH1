@@ -1,6 +1,7 @@
 import SiteHeader from "@/app/components/SiteHeader";
 import ReadingTools from "@/app/components/ReadingTools";
 import NotePanel from "@/app/components/NotePanel";
+import { KLINIK_SORUMLULUK } from "@/app/lib/sorumluluk";
 import ReadingHint from "@/app/components/ReadingHint";
 import Link from "next/link";
 import React from "react";
@@ -113,6 +114,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </div>
 
           </div>
+
+          {/* Klinik sorumluluk — bu satir ICERIK degil KABUK isi.
+              Olculdu: 423 gorunur konunun 359unda (%85) hicbir sorumluluk
+              ifadesi yok ve alt bilgi de sessizdi; oysa 130 aracin 130unda
+              ayni uyari ARAC KABUGU tarafindan basiliyor. 423 icerik
+              dosyasina metin yazmak yerine — icerik kullanicinin isi —
+              uyari, araclardaki gibi kabuktan geliyor ve (site) grubundaki
+              her sayfayi birden kapsiyor. Dil, araclarin ev sesinden alindi. */}
+          <p className="mt-10 text-[11px] leading-relaxed text-blue-100/90">
+            {KLINIK_SORUMLULUK}
+          </p>
 
           {/* Alt Bilgi (Copyright) */}
           <div className="pt-8 border-t border-blue-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-blue-400">
