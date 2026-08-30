@@ -816,11 +816,42 @@ export default function ReadingTools() {
                       onClick={() => görünür && scrollToMark(m.id)}
                       disabled={!görünür}
                       title={görünür ? "Vurguya git" : "Bu vurgu sayfanın şu an gösterilmeyen bir bölümünde"}
-                      className={`flex-1 text-left text-[12px] leading-snug line-clamp-2 ${
+                      className={`flex-1 text-left text-[12px] leading-snug ${
                         görünür ? "text-slate-600" : "cursor-default text-slate-400 italic"
                       }`}
                     >
-                      {m.t}
+                      <span className="line-clamp-2">{m.t}</span>
+                      {/*
+                        SEBEP `title`DA KALAMAZ — ölçüldü, üç kanalın üçü de
+                        kapalıydı:
+
+                          dokunmatik   hover yok, ipucu HİÇ görünmüyor
+                          klavye       düğme `disabled`, odak sırasında YOK
+                          ekran okuyucu  erişilebilir ad İÇERİKTEN geliyor
+                                       (hesaplama sırası içeriği title'ın
+                                       önüne koyuyor), yani ad yalnızca
+                                       vurgu metniydi — sebep hiç duyulmuyordu
+
+                        Ekranda tek işaret italik + soluk metindi; o
+                        "kullanılamaz" der ama NEDEN demez. Bu, deponun
+                        "hesaplanamıyorsa SEBEBİNİ söyle" kuralının vurgu
+                        panelindeki hâli.
+
+                        Not düğmenin İÇİNDE: hem görünür oluyor hem
+                        erişilebilir adın parçası oluyor — tek değişiklikle
+                        üç kanal birden kapanıyor. `line-clamp-2` metnin
+                        kendi span'ine indi, yoksa not da kırpılırdı.
+
+                        `disabled` KORUNDU: `aria-disabled` ile odaklanabilir
+                        yapmak her görünmeyen vurgu için yeni bir odak durağı
+                        ve tıklanınca hiçbir şey yapmayan bir kontrol
+                        üretirdi — ikisi de bu depoda ayrı birer kusur sınıfı.
+                      */}
+                      {!görünür && (
+                        <span className="mt-0.5 block text-[10px] not-italic text-slate-400">
+                          şu an bu sayfada görünmüyor
+                        </span>
+                      )}
                     </button>
                     {/*
                       İki koruma da klavye için, ikisi de ölçümle kondu.

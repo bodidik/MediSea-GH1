@@ -27038,3 +27038,125 @@ istisnası yazıldı, SÜPÜRÜLMEDİ** — ayrı bir turun işi.
 - **Ters bölü tuzağı yine ısırdı**: `node -e` içindeki `s[i-1] !== '\\'`
   kabuk kanalında tek ters bölüye indi ve `SyntaxError` verdi. Betik Write
   ile yazılıp kaçış `String.fromCharCode(92)` ile kuruldu.
+
+### YALNIZCA `title` İPUCUNDA YAŞAYAN BİLGİ — üç kanalın üçü de kapalıydı
+
+Yeni eksen: **`title` niteliğinde, başka hiçbir yerde bulunmayan bilgi var
+mı?** Depo `title`ın erişilebilir AD olmadığını ölçmüştü (*"içerik boş
+değilse `title` hiç devreye girmiyor"*); **bilgi taşıyıp taşımadığı** hiç
+sorulmamıştı.
+
+`title` üç kanalda birden zayıf:
+
+| kanal | durum |
+|---|---|
+| dokunmatik | hover yok — ipucu **HİÇ** gösterilmez |
+| klavye | odakta açılmaz (hiçbir büyük tarayıcıda) |
+| ekran okuyucu | içerik varsa ada girmez; "açıklama" olarak duyurulması ayara bağlı |
+
+Bu üründe birincisi belirleyici: tablet ve telefon birinci sınıf yüzey.
+
+#### Envanter — 49 `title=`, ama çoğu HTML niteliği DEĞİL
+
+461 dosya tarandı. Ham sayı yanıltıcı: `<PremiumCard title=…>` ·
+`<Section title=…>` · `<OptionRow title=…>` · `<Empty title=…>` React
+**prop**'u ve **görünür başlık** basıyor. Gerçek HTML nitelikleri
+`button` · `div` · `span` · `Link` · `iframe` üzerinde.
+
+**İçerik JSON'larında `title=` geçişi: 0** — yani yazar tarafında bu sınıf
+hiç oluşmuyor.
+
+#### Bulgu: vurgu panelindeki DEVRE DIŞI öge
+
+Konteyneri bulunamayan vurgu listede kalıyor ama boyanmıyor (belgede kayıtlı
+kural: *"Konteyneri kaybolan vurgu SİLİNMEZ, sadece boyanmaz"*). O satırın
+düğmesi `disabled` ve devre dışı olma **sebebi yalnızca `title`daydı**:
+
+```
+title={görünür ? "Vurguya git" : "Bu vurgu sayfanın şu an gösterilmeyen bir bölümünde"}
+```
+
+**Canlıda ölçüldü** — gerçek arayüzle bir vurgu yapılıp yanına konteyneri
+olmayan ikinci bir kayıt tohumlandı (depo 2, boyanan 1):
+
+| ölçüt | devre dışı öge |
+|---|---|
+| `disabled` | **true** → odak sırasında YOK |
+| erişilebilir ad | **yalnızca vurgu metni** — sebep yok |
+| sebep ekranda görünür mü | **HAYIR** |
+| tek kanal | `title` |
+| görsel işaret | italik + soluk metin |
+
+Yani kullanıcı soluk, tıklanamayan bir satır görüyor ve **neden** olduğunu
+öğrenmenin hiçbir yolu yok. İtalik "kullanılamaz" der, "bu vurgu şu an
+gösterilmeyen bir bölümde" DEMEZ.
+
+Durum kuramsal değil: quiz ve inci yüzeylerinde konteyner kimliği soruya
+bağlı (`soru:<setId>:<id>`), yani 3. sorunun açıklamasını vurgulayıp 5.
+soruya geçen kullanıcı tam bu ekranı görüyor.
+
+#### Çare: sebebi düğmenin İÇİNE koy — tek değişiklik, üç kanal
+
+Not düğmenin içinde bir blok `<span>`; böylece hem **görünür** oluyor hem
+**erişilebilir adın parçası**. `line-clamp-2` metnin kendi span'ine indi —
+yoksa not da kırpılırdı.
+
+**`disabled` KORUNDU.** `aria-disabled` ile odaklanabilir yapmak, her
+görünmeyen vurgu için yeni bir odak durağı ve tıklanınca hiçbir şey
+yapmayan bir kontrol üretirdi; ikisi de bu depoda ayrı birer kusur sınıfı.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| sebep EKRANDA | **yok** | **var** |
+| sebep erişilebilir ADDA | **yok** | **var** |
+| not kontrastı · boyut | — | **7.58** · 10px (eşik 4.5) |
+| not italik mi | — | **hayır** (`not-italic`; metin italik kalıyor) |
+| **negatif** — görünür öge | ad + kırpma | **değişmedi**, not YOK |
+| **negatif** — metin kırpması | `line-clamp: 2` | **2** (ikisinde de) |
+| **negatif** — 320px | — | belge 320, **yatay taşma 0**, öge 286×53 sığıyor |
+| **negatif** — `disabled` hâlâ engelliyor mu | — | **evet** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+#### ⚠ İKİ ÖLÇÜM BELİRSİZLİĞİ, İKİSİ DE KAPATILDI
+
+**1. Erişilebilir ad boşluksuz göründü.** `textContent` okuması
+`"…VURGU METNİşu an bu sayfada görünmüyor"` verdi ve bir an kelimeler
+birleşiyor sanıldı. İki span de **blok düzeyi** (`flow-root` ve `block`),
+yani accname hesabı aralarına boşluk koyar — `innerText` bunu gösteriyor:
+`"…VURGU METNİ şu an bu sayfada görünmüyor"`. `textContent` blok sınırını
+bilmiyor; belgede kayıtlı "React metin birleşmesi" tuzağının ayna hâli —
+burada **birleşme yok, ölçüt onu göremiyordu**.
+
+**2. "Görünür vurgu hâlâ kaydırıyor mu" ölçülemedi.** Tıklamadan sonra
+`scrollY` değişmedi; sebep üründe değil ortamda: `document.visibilityState`
+**hidden** ve yumuşak kaydırma kısılıyor (belgede kayıtlı).
+
+Ayırt edici ölçüm kaydırmayı değil **çağrıyı** gözlemek oldu —
+`Element.prototype.scrollIntoView` sarmalandı:
+
+| tıklanan | `scrollIntoView` çağrısı |
+|---|---|
+| **görünür** vurgu | **1 — hedef `MARK.ms-hl ms-hl-y`** |
+| **devre dışı** vurgu | **0 (sayı artmadı)** |
+
+İkisi birlikte hem tıklama yolunun sağlam olduğunu hem `disabled`ın hâlâ
+engellediğini gösteriyor. Sarmalayıcı ölçüm bitince geri alındı.
+
+#### Aynı eksende ölçülüp DEĞİŞTİRİLMEYEN
+
+**Ana sayfadaki 13 branş kartı açıklamalarını yalnızca `title`da taşıyor**
+(`TITLE_SAYFADA_BASKA_YERDE: false` ×13): *"ABH, KBH, Elektrolitler"* ·
+*"AKS, Kalp Yetersizliği, Aritmiler"* … Dokunmatikte hiç görünmüyor.
+
+Kusur sayılmadı ve gerekçesi ölçülebilir: aynı açıklamalar `/topics`
+kartlarında **görünür metin** olarak duruyor (ölçüldü), kartın taşıdığı
+zorunlu bilgi (branş adı + konu sayısı) zaten ekranda, ve `title` burada
+yalnızca fare kullanıcısına ek. Görünür basmak 13 kartlık kompakt ızgaranın
+satır yüksekliğini değiştiren bir **tasarım kararı** — ölçüm ve kapsam
+burada.
+
+`/tekrar`daki 14 günlük etkinlik grafiği de aynı sınıfta (her çubuğun günü
+ve kart sayısı yalnızca `title`da) ama **yalnızca oturum bitince** çiziliyor;
+ölçülmedi ve "temiz" DENMİYOR.
