@@ -27749,3 +27749,40 @@ GRAFİK BAŞINA yazılır.** 14 ayrı ad, ekran okuyucuda 14 ayrı duyuru demek 
 sparkline'ın taşıdığı bilgi zaten toplam; doğru birim `role="img"` + tek bir
 özet. Özeti görünür yapmak da bedava değil — asıl kazanç orada: dokunmatik
 kullanıcı da veriyi ilk kez görüyor.
+
+#### CANLIDA doğrulandı — ve dağıtım yoklaması PARANTEZ yüzünden kör kaldı
+
+375px'te, gerçek bir tekrar oturumu tamamlanarak:
+
+| ölçüt | canlıda |
+|---|---|
+| rol · sarkan atıf | **`img`** · **yok** |
+| erişilebilir ad | **"Son 14 gün · 6 günde 27 kart"** |
+| görünür özet | var (138 × 15 px, sağ kenar 342 < 375) |
+| çubuk · `title` taşıyan | **14 · 14** (fare dökümü korundu) |
+| örnek `title` | `2026-08-24: 3 kart` |
+| yatay kayma | 0 |
+
+Ölçüm izi iki origin'de de temizlendi (`medisea:*` = 0).
+
+**Ama dağıtım yoklaması 18 dakika boyunca "inmedi" dedi ve YANLIŞTI.** Yoklama
+`/tekrar` HTML'inden chunk adreslerini çıkarıp içlerinde işaret arıyordu; adres
+deseni `[a-zA-Z0-9._/-]*` idi ve bu depoda rota grubu **parantez taşıyor**:
+
+```
+/_next/static/chunks/app/(site)/tekrar/page-4e2e448a70e37f0f.js
+                         ^^^^^^  desende YOK
+```
+
+Yani asıl sayfa chunk'ı hiç taranmıyordu; tarama 13 chunk "ölçtüğü" için de
+boş görünmüyordu. Chunk doğrudan çekilince işaret **oradaydı** — dağıtım
+zaten inmişti.
+
+Bu, belgede kayıtlı *"0 kusur ile 0 ölçüm aynı görünür"* ailesinin dağıtım
+yoklaması tarafındaki hâli: **sayı sıfır değil, ama aranan yer listede yok.**
+
+**Aktarılabilir kural: bir adres desenini bu depoda yazarken parantezi de
+kabul et.** Rota grupları (`(site)`, `(ydus)`) yol adında görünüyor ve
+ASCII-güvenli sanılan her karakter sınıfı onları sessizce eliyor. Ucuz koruma:
+yoklamanın taradığı chunk sayısını değil, **aranan dosyanın listede olup
+olmadığını** doğrula.
