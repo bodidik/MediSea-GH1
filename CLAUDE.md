@@ -27669,3 +27669,83 @@ sonuç formun hemen altında.
 girdinin yanında GÖRÜNÜR olması da gerekiyor.** Bu ekseni ölçmenin ucuz yolu
 sonuç panelini aramak değil — `sr-only` canlı bölge zaten sonucun hemen
 önünde duruyor ve DOM'daki konumu tek başına cevabı veriyor.
+
+### 14 GÜNLÜK ETKİNLİK GRAFİĞİNİN VERİSİ ÜÇ KANALDA DA ULAŞILMAZDI — belgedeki açık madde kapatıldı
+
+Bu belgede bir tur *"yalnızca `title` ipucunda yaşayan bilgi"* sınıfı kapatılmış
+ve açık bir madde bırakılmıştı: *"`/tekrar`daki 14 günlük etkinlik grafiği de
+aynı sınıfta … ama yalnızca oturum bitince çiziliyor; ÖLÇÜLMEDİ ve 'temiz'
+DENMİYOR."* Bu tur ölçüldü.
+
+Grafiği çizdirmek için gerçek bir tekrar oturumu tamamlandı (iki vurgu
+tohumlanıp `/tekrar`da derecelendirildi). **Canlıda ölçülen (düzeltmeden önce):**
+
+| ölçüt | değer |
+|---|---|
+| çubuk | **14** |
+| çubuk boyutu | **6 × 4 px** |
+| metin taşıyan çubuk | **0** |
+| `aria-label` taşıyan çubuk | **0** |
+| `role` taşıyan çubuk | **0** |
+| odaklanabilir çubuk | **0** |
+| kabın `aria-label`i | **yok** (yalnız `title="Son 14 gün"`) |
+| verinin bulunduğu tek yer | **`title="2026-08-25: 9 kart"`** |
+
+Üç kanal da kapalı:
+
+| kanal | durum |
+|---|---|
+| dokunmatik | hover yok — ipucu **HİÇ** görünmez |
+| ekran okuyucu | rolü ve adı olmayan boş `<div>` — grafik erişilebilirlik ağacında **yok** |
+| klavye | `tabIndex −1` — odaklanamıyor |
+
+Toplam sayılar zaten metinle basılıyordu ("2 KART ÇALIŞILDI", "4 gündür üst
+üste"); ulaşılamayan şey **son 14 günün dökümüydü**.
+
+#### Çare: özet GÖRÜNÜR metin, grafik onu DEVRALIYOR
+
+14 çubuğun her birini tek tek adlandırmak (14 ayrı duyuru) bir sparkline için
+orantısız. Bunun yerine grafik `role="img"` oldu ve adını **görünür bir özet
+satırından** `aria-labelledby` ile alıyor:
+
+```
+Son 14 gün · 6 günde 27 kart
+```
+
+Tek kaynak: aynı dize hem ekranda hem erişilebilir adda. İkinci bir `aria-label`
+yazılsaydı bu depoda tur tur avlanan "iki gerçeklik" sınıfı açılırdı. Çubuk
+başına `title` **korundu** — fare kullanıcısı için gün dökümü hâlâ orada.
+
+Kaptaki `title="Son 14 gün"` kaldırıldı: aynı bilgiyi artık görünür satır
+söylüyor.
+
+#### Doğrulama — altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| grafiğin rolü / adı | yok / yok | **`img`** / **"Son 14 gün · 6 günde 27 kart"** |
+| sarkan `aria-labelledby` | — | **0** |
+| görünür özet | **yok** | var (138 × 15 px, tek satır) |
+| çubuk `title` sayısı | 14 | **14 — korundu** |
+| **pozitif** — kayıt yokken | — | **"Son 14 gün · kayıt yok"**, 14 çubuk da %12 |
+| **negatif** — en geniş vaka (14 gün × 3 hane) | — | "Son 14 gün · 14 günde 1491 kart" · **tek satır** · sağ kenar 342 < 375 · yatay kayma 0 |
+| **negatif** — 1280px | — | özet tek satır, sağ 952 < satır 968, kayma 0 |
+| **negatif** — satır yüksekliği (375 ve 1280) | 76 | **76 — değişmedi** |
+| **negatif** — çubuk yükseklikleri | oranlı | **12% · 33.3% · 100% · 22.2% · 77.8% · 44.4%** (max 9 karta göre) |
+| **negatif** — üst bilgi metni | "2 KART ÇALIŞILDI · N gündür…" | **değişmedi** |
+| **negatif** — tazeleme kipi günlüğe yazıyor mu | — | **HAYIR** (`log` 1491 → 1491, sonra `{}` → `{}`) |
+| lint · typecheck · build 638/638 | — | hepsi geçti |
+
+Beşinci satır tek başına ölçütün kör olmadığını gösteriyor: boş dal gerçekten
+farklı bir metin basıyor. Sondan ikinci satır ise bu turun yan kazancı —
+belgede kayıtlı "tazeleme kipi takvimi ve günlüğü DEĞİŞTİRMEZ" değişmezi
+iki ayrı tohumla bir kez daha doğrulanmış oldu.
+
+**Ölçüm notu:** 375px'te taşan tek öge alt bilgideki `w-96 blur-3xl` süsleme —
+kırpan atası var ve bu depoda kayıtlı yanlış pozitif. Yeni bir taşma yok.
+
+**Aktarılabilir kural: bir grafiğin erişilebilir karşılığı, çubuk başına değil
+GRAFİK BAŞINA yazılır.** 14 ayrı ad, ekran okuyucuda 14 ayrı duyuru demek ve
+sparkline'ın taşıdığı bilgi zaten toplam; doğru birim `role="img"` + tek bir
+özet. Özeti görünür yapmak da bedava değil — asıl kazanç orada: dokunmatik
+kullanıcı da veriyi ilk kez görüyor.

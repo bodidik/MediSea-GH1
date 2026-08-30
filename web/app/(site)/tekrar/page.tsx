@@ -589,6 +589,15 @@ function SessionSummary({ done, zorlananlar }: { done: number; zorlananlar: Revi
   const seri = streakOf(log);
   const gunler = recentDays(log, 14);
   const enYogun = Math.max(1, ...gunler.map((g) => g.kart));
+  // Grafik BILGI tasiyor: gun ve kart sayisi bir donem yalnizca title icindeydi.
+  // title dokunmatikte HIC gorunmuyor ve genel bir <div> uzerinde erisilebilir
+  // ada da girmiyor; ozet artik gorunur metin olarak basiliyor ve grafik onu
+  // aria-labelledby ile devraliyor (tek kaynak).
+  const aktifGun = gunler.filter((g) => g.kart > 0).length;
+  const toplamKart = gunler.reduce((t, g) => t + g.kart, 0);
+  const ozet = toplamKart
+    ? `Son 14 gün · ${aktifGun} günde ${toplamKart} kart`
+    : "Son 14 gün · kayıt yok";
 
   return (
     <div className="mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -606,15 +615,20 @@ function SessionSummary({ done, zorlananlar }: { done: number; zorlananlar: Revi
         </div>
 
         {/* son 14 gün — çubuk yüksekliği o günün kart sayısı */}
-        <div className="flex h-8 shrink-0 items-end gap-[3px]" title="Son 14 gün">
-          {gunler.map((g) => (
-            <div
-              key={g.gun}
-              title={`${g.gun}: ${g.kart} kart`}
-              className={`w-1.5 rounded-sm ${g.kart ? "bg-blue-950" : "bg-slate-100"}`}
-              style={{ height: g.kart ? `${Math.max(18, (g.kart / enYogun) * 100)}%` : "12%" }}
-            />
-          ))}
+        <div className="shrink-0">
+          <div role="img" aria-labelledby="tekrar-grafik-ozet" className="flex h-8 items-end gap-[3px]">
+            {gunler.map((g) => (
+              <div
+                key={g.gun}
+                title={`${g.gun}: ${g.kart} kart`}
+                className={`w-1.5 rounded-sm ${g.kart ? "bg-blue-950" : "bg-slate-100"}`}
+                style={{ height: g.kart ? `${Math.max(18, (g.kart / enYogun) * 100)}%` : "12%" }}
+              />
+            ))}
+          </div>
+          <div id="tekrar-grafik-ozet" className="mt-1 text-right text-[10px] font-bold text-slate-400">
+            {ozet}
+          </div>
         </div>
       </div>
 
