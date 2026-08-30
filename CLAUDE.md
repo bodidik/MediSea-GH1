@@ -27254,3 +27254,84 @@ yamanın mantığından BAĞIMSIZ, üretilmiş HTML'e bakan bir denetim gördü
 var mı · hedefin metni boş mu · sayfada çift id var mı). O denetimin kendi
 körlük koruması da işe yaradı: yol yanlışken "0 grup ölçüldü — TEMİZ
 SAYILMAZ" deyip düştü.
+
+### GRUP ADI SOL/SAĞ AYRIMINI TAŞIMIYORDU — süpürme YÖNERGEYE bağlanmıştı, başlığa değil
+
+Bir önceki tur 254 seçenek grubu ekledi ve bağımsız denetim dört şeyi
+sınıyordu (ad var mı · hedef var mı · metni boş mu · çift id var mı). Hiç
+sorulmayan beşinci soru: **aynı sayfadaki adlar birbirinden AYIRT EDİLEBİLİR
+mi?** Bu depoda aynı ders landmark tarafında zaten kayıtlı ("aynı rolden
+birden çok landmark varsa adları farklı olmalı") — gruplara uygulanmamıştı.
+
+Ölçüldü (canlı, 130 araç, 129 sayfa):
+
+| rol | örnek | sayfa içi ÇAKIŞAN ad |
+|---|---|---|
+| `nav` | 258 | **0** |
+| `region` | 0 | — |
+| **`group`** | **254** | **2 araç** |
+
+Çakışanlar:
+
+```
+nihss    "Kolu 45° (supine) veya 90° (oturur) kaldırıp 10 sn tutmasını isteyin" x2
+         "Bacağı 30° kaldırıp 5 sn tutmasını isteyin (supin pozisyon)"          x2
+ciwa-ar  "Gözlemle değerlendirin."                                             x2
+```
+
+`nihss` klinik olarak ağır: o dört grup **5a/5b (sol/sağ kol)** ve
+**6a/6b (sol/sağ bacak)**. Ekran okuyucuyla çalışan kullanıcı aynı yönergeyi
+iki kez duyuyor ve **hangi tarafı puanladığını bilemiyordu** — inme
+skalasında taraf, skorun kendisi kadar belirleyici.
+
+#### Kök neden SİSTEMATİK: yama bir KONUMA bağlanmıştı
+
+Süpürmenin katı şekli "seçenek div'inden HEMEN ÖNCEKİ `<p>`" idi. Kaynakta:
+
+```jsx
+<p ...>{item.label}</p>     // "5a. Motor Kol — Sol"   <- AYIRT EDİCİ olan
+<p ...>{item.detail}</p>    // "Kolu 45° ... isteyin"  <- yamanin BAGLANDIGI
+<div role="group" ...>
+```
+
+Yani ad, maddenin BAŞLIĞI değil YÖNERGESİ oldu. Çakışma yalnızca yönergenin
+tekrar ettiği iki araçta göründü; kapsam ölçülünce çok daha genişti:
+
+| ölçüt | değer |
+|---|---|
+| adı YÖNERGEDEN alan araç | **14** |
+| etkilenen grup | **74** |
+| örnek | `hscore` "Vücut Sıcaklığı" ⇄ *"Maksimum ateş düzeyi (°C)"* · `lawton-iadl` "Telefon Kullanma" ⇄ *"Arama yapma ve cevaplama becerisi"* · `braden` "Duyusal Algılama" ⇄ *"Basınçla ilgili rahatsızlığa yanıt verme"* |
+
+#### Çare: `aria-labelledby` bir LİSTE kabul ediyor
+
+İki `<p>` de kimlik alıyor, ad "başlık + yönerge" oluyor — `cat-copd`in iki
+kutuplu ölçeğinde bir tur önce verilen kararın aynısı. 15 araçta 18 kaynak
+noktası mekanik, `ciwa-ar` elle (orada başlık bir `<div>` içinde yuvalı,
+yani "hemen önceki kardeş `<p>`" şekline uymuyor).
+
+**Doğrulama — beşi negatif kontrol:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **sayfa içi çakışan grup adı** | **2 araç** | **0** |
+| `nihss` grup adları | *"Kolu 45° …"* ×2 | **"5a. Motor Kol — Sol …" · "5b. Motor Kol — Sağ …"** |
+| `ciwa-ar` | *"Gözlemle değerlendirin."* ×2 | "Paroksismal Terleme …" · "Ajitasyon …" |
+| şık adı + grup adı tekrar eden kontrol | 55 | **35** — `nihss` **20 → 0** |
+| adı boş grup · çift id · sarkan atıf | 0 · 0 · 0 | **0 · 0 · 0** |
+| **negatif** — 16 aracın GÖRÜNÜR METNİ (canlı ↔ yerel) | — | **16/16 BİREBİR AYNI** |
+| **negatif** — `ciwa-ar` aritmetiği | — | **67 / 67 · AĞIR YOKSUNLUK** (7×9+4, kayıtlı tavan) |
+| **negatif** — `nav` adları | 0 çakışma | **0** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Kalan **35 kontrol**, grubu HİÇ olmayan beş araçta: `canadian-ct` 14 ·
+`essdai` 10 · `anaphylaxis` 6 · `gcs` 3 · `child-pugh` 2. Yani **grubu olan
+araçlarda ayrım tamamlandı.**
+
+**Aktarılabilir kural: mekanik bir ARIA yerleştirmesi bir KONUMA bağlanır;
+o konumun AYIRT EDİCİ metni taşıdığı ayrı bir sorudur.** Bunu ölçmenin en
+ucuz yolu adı okumak değil, **sayfa içinde adların ÇAKIŞIP çakışmadığını**
+saymak — bu turda iki çakışma, 14 araçlık sistematik bir yanlış bağlanmayı
+açığa çıkardı. Ters yönde de geçerli: adların benzersiz olması, doğru
+ögeye bağlandığını göstermez (`hscore`in 9 adı benzersizdi ve hepsi
+yanlış `<p>`den geliyordu).

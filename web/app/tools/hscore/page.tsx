@@ -182,9 +182,9 @@ export default function HScorePage() {
         <div className="space-y-3">
           {ITEMS.map(item => (
             <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-              <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
+              <p id={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
               <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
-              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
+              <div role="group" aria-labelledby={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')} grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                 {item.options.map(opt => {
                   const active = sel[item.id] === opt.pts;
                   return (

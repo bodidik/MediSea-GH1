@@ -134,9 +134,9 @@ export default function MurrayPage() {
         <div className="space-y-3">
           {PARAMS.map(param => (
             <div key={param.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-              <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{param.label}</p>
+              <p id={`grp-0b-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{param.label}</p>
               <p id={`grp-0-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{param.detail}</p>
-              <div role="group" aria-labelledby={`grp-0-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
+              <div role="group" aria-labelledby={`grp-0b-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')} grp-0-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                 {param.opts.map(opt => (
                   <button aria-pressed={sel[param.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [param.id]: s[param.id] === opt.pts ? null : opt.pts }))}

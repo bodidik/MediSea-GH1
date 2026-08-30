@@ -132,9 +132,9 @@ export default function BradenPage() {
         <div className="space-y-3">
           {SUBSCALES.map(scale => (
             <div key={scale.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-              <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{scale.label}</p>
+              <p id={`grp-0b-${String(scale.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{scale.label}</p>
               <p id={`grp-0-${String(scale.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{scale.detail}</p>
-              <div role="group" aria-labelledby={`grp-0-${String(scale.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
+              <div role="group" aria-labelledby={`grp-0b-${String(scale.id).replace(/[^a-zA-Z0-9]+/g, '-')} grp-0-${String(scale.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                 {scale.opts.map(opt => (
                   <button aria-pressed={sel[scale.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [scale.id]: s[scale.id] === opt.pts ? null : opt.pts }))}

@@ -285,7 +285,7 @@ export default function AbgPage() {
         {/* Akut / kronik: hesapla bulunamaz, klinik bilgi gerekir */}
         {solunumVar && (
           <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-            <p className="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-1">
+            <p id={"grp-s0b"} className="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-1">
               Solunum bozukluğu akut mu, kronik mi?
             </p>
             <p id={"grp-s0"} className="text-[11px] text-slate-600 mb-3 leading-relaxed">
@@ -293,7 +293,7 @@ export default function AbgPage() {
               Seçim beklenen HCO₃⁻ aralığını, dolayısıyla mikst bozukluk kararını
               doğrudan değiştirir.
             </p>
-            <div role="group" aria-labelledby={"grp-s0"} className="flex gap-3">
+            <div role="group" aria-labelledby={`grp-s0b grp-s0`} className="flex gap-3">
               {(["akut", "kronik"] as const).map((t) => (
                 <button
                   key={t}

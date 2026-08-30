@@ -208,7 +208,7 @@ export default function CiwaArPage() {
           return (
             <div key={item.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
               <div className="flex items-start justify-between mb-1">
-                <p className="text-sm font-black text-blue-900">{item.label}</p>
+                <p id={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-sm font-black text-blue-900">{item.label}</p>
                 {cur !== undefined && (
                   <span className={`text-[10px] font-black rounded-lg px-2 py-1 border ${scoreColor(cur, max)}`}>
                     {cur}/{max}
@@ -216,7 +216,7 @@ export default function CiwaArPage() {
                 )}
               </div>
               <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-bold text-slate-400 italic mb-4">{item.question}</p>
-              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-2">
+              <div role="group" aria-labelledby={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')} grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-2">
                 {item.opts.map(opt => {
                   const sel = cur === opt.v;
                   return (
