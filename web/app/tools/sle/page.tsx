@@ -83,21 +83,6 @@ export default function SLEDAIPage() {
           <button onClick={reset} className="px-6 py-2 bg-white border border-slate-200 rounded-xl text-[10px] font-black text-blue-900 hover:bg-slate-50 transition-all uppercase tracking-widest">Sıfırla 🔄</button>
         </div>
 
-        {/* ANA SKOR PANELİ */}
-        <SonucDuyuru metin={interp ? interp.label : null} />
-
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="md:col-span-1 bg-blue-900 rounded-[2.5rem] p-8 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
-            <div className="text-6xl font-black text-white">{total}</div>
-          </div>
-          <div className={`md:col-span-3 rounded-[2.5rem] p-8 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${interp.bg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK AKTİVİTE DURUMU</span>
-            <p className={`text-3xl font-black italic tracking-tight ${interp.color}`}>
-              {interp.label}
-            </p>
-          </div>
-        </div>
 
         {/* KRİTER GRUPLARI */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -131,6 +116,22 @@ export default function SLEDAIPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* ANA SKOR PANELİ */}
+        <SonucDuyuru metin={interp ? interp.label : null} />
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="md:col-span-1 bg-blue-900 rounded-[2.5rem] p-8 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400">
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
+            <div className="text-6xl font-black text-white">{total}</div>
+          </div>
+          <div className={`md:col-span-3 rounded-[2.5rem] p-8 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${interp.bg}`}>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK AKTİVİTE DURUMU</span>
+            <p className={`text-3xl font-black italic tracking-tight ${interp.color}`}>
+              {interp.label}
+            </p>
+          </div>
         </div>
 
         {/* PAYLAŞIM VE UYARI */}

@@ -27576,3 +27576,96 @@ atayı ayrı bir bağlam saymak, ayrışmanın zaten çözüldüğü yerde sahte
 belirsizlik raporluyor. Aynı ders bu belgede kontrast tarafında da kayıtlı
 (*"zemin ATAdan değil en yakın DOLU zeminden gelir"*) — buradaki hâli
 erişilebilir ad tarafında.
+
+### SKOR PANELİ 24 ONAY KUTUSUNUN ÜSTÜNDEYDİ — kullanıcı kutuyu işaretliyor, ekranda hiçbir şey değişmiyordu
+
+Yeni eksen: **hesaplayıcının SONUCU, girdisini değiştirdiğinde ekranda mı?**
+Bir hesap makinesinde geri bildirim döngüsünün tamamı buna bağlı; bu depoda
+sonucun DOĞRULUĞU turlarca ölçüldü ama **konumu** hiç ölçülmedi.
+
+Ölçüt yapısal ve ucuz: `SonucDuyuru`nun `sr-only` `role="status"` bölgesi
+sonuç bölgesinin hemen ÖNÜNDE duruyor, yani DOM'daki konumu sonucun
+konumunu veriyor. Çapası olmayan araçlar için ikinci çapa boş durum kartı
+(`border-dashed`).
+
+| ölçüt | değer |
+|---|---|
+| çapası bulunan araç | **94 / 130** |
+| sonuç bölgesi kontrollerin **ALTINDA** | **91** |
+| ORTASINDA | 2 — **ikisi de yanlış pozitif** |
+| **ÜSTÜNDE** | **1 — `sle`** |
+
+İki "ortada" elle bakılıp elendi: `nrs-2002`de kesikli kart aşama-2 KAPI
+kartı (gerçek sonuç kartı en altta), `vazoaktif-infuzyon`da `border-dashed`
+bir `<input>` stilinin parçası, kart değil.
+
+#### Bedeli ÖLÇÜLDÜ — 375px'te sonuç 2178px yukarıda
+
+`sle` (SLEDAI-2K) 24 tanımlayıcılı bir onay kutusu listesi ve skor paneli
+listenin ÜSTÜNDE. Canlıda ölçüldü:
+
+| ölçüt | değer |
+|---|---|
+| skor paneli | top 351 · bottom 502 · `position: static` |
+| son kontrol | top 2908 |
+| aradaki mesafe | **2406 px ≈ 3 ekran** |
+| belge | 3642 px = 4.49 ekran |
+| **depoda `sticky` kullanan araç** | **0 / 130** |
+
+Son satır belirleyici: panel yapışkan değil ve olabileceği bir kalıp da yok.
+
+**Davranışla doğrulandı** — son tanımlayıcı ekranın ortasına kaydırılıp
+tıklandı:
+
+| ölçüt | önce (canlı) |
+|---|---|
+| işaretli kutu | 1 |
+| skor paneli `top` | **−2178** (görünümün tamamen dışında) |
+| ekranda skorla ilgili metin | **YOK** |
+| ekran okuyucuya duyuru | **VAR** — "Sonuç: Düşük Aktivite" |
+
+Son iki satır birlikte bu depodaki bir ilkeyi TERSİNE çeviriyor: kayıtlı
+kural *"sessiz başarısızlığın en kötü hâli: görsel kullanıcı uyarılıyor,
+öteki değil"* diyor — burada **gören kullanıcı uyarılmıyor, ekran okuyucu
+kullanıcısı uyarılıyordu.**
+
+#### Çare: yeni bir kalıp değil, EV KALIBINA hizalanma
+
+İki seçenek vardı ve biri ölçümle elendi: paneli **yapışkan** yapmak, hiçbir
+aracın kullanmadığı (0/130) bir kalıp açardı. Panel kriterlerin ALTINA
+taşındı — 129 aracın yaptığı şey.
+
+Taşıma satır düzeyinde yapıldı ve betik yazmadan önce **satır kümesinin
+değişmediğini** doğruladı (yalnızca bir boş satır eklendi); tutmasaydı
+dosyaya hiç yazmayacaktı.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| sonuç bölgesi konumu (üretilmiş HTML) | kontrollerin **üstünde** | **altında** |
+| 375px — son kontrol ↔ panel | **−2406** (panel yukarıda) | **+49 px** |
+| 375px — son kutu tıklanınca panel görünümde | **HAYIR** (top −2178) | **EVET** (top 482) |
+| 375px — ekrandaki metin | skor YOK | **"TOPLAM 1" · "Düşük Aktivite"** |
+| **negatif** — tavan (24 kutu) | — | **TOPLAM 105 · Çok Yüksek Aktivite** (kayıtlı tavan) |
+| **negatif** — belge yüksekliği 375 / 1280 | 3642 / 2332 | **3642 / 2332 — birebir** |
+| **negatif** — ızgaralar (1280) | panel 244×4 · kriter 500×500 | **birebir aynı** |
+| **negatif** — `h1` · `main` · yatay kayma | 1 · 1 · 0 | 1 · 1 · 0 |
+| **negatif** — duyuru | "Sonuç: Düşük Aktivite" | **değişmedi** |
+| lint · typecheck · build 638/638 | — | hepsi geçti |
+
+Altıncı satır kritik: belge yüksekliği iki genişlikte de **birebir aynı**,
+yani düzen bozulmadı — yalnızca sıra değişti. Masaüstünde de kazanç var:
+eski hâlde panel ile son kontrol arası **1387 px** (1.5 ekran).
+
+#### Kapsam: sınıf tek örnekli
+
+71 çapalı araçta son kontrol ile sonuç bölgesi arasındaki görünür metin
+ölçüldü — ortanca **178** karakter, %90'lık dilim 258, en büyük **694** ve
+o `sle`. Yani `sle` hem tek "üstte" hem de en uzak; kalan 70 aracın hepsinde
+sonuç formun hemen altında.
+
+**Aktarılabilir kural: bir hesaplayıcıda sonucun DOĞRU olması yetmiyor,
+girdinin yanında GÖRÜNÜR olması da gerekiyor.** Bu ekseni ölçmenin ucuz yolu
+sonuç panelini aramak değil — `sr-only` canlı bölge zaten sonucun hemen
+önünde duruyor ve DOM'daki konumu tek başına cevabı veriyor.
