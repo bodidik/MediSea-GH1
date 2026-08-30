@@ -28073,3 +28073,95 @@ başlıkları ayrı bir yüzey (`nTitle`/`nTags`) ve aynı gevşetmeyi oraya
 istemcide ve anında. Araç indeksi 130 kayıt / gzip 6 kB; başlık aramasının
 araç yarısını istemciye almak turu sıfırlar ama her sayfaya 6 kB ekler —
 ölçülmüş bir ödünleşme, ürün kararı.
+
+### `/tools` HUB'I MOBİLDE 25.9 EKRANDI — ilk ekranda tek hesaplayıcı yoktu
+
+Dikey bütçe ölçüldü (canlı, 375px):
+
+| parça | değer |
+|---|---|
+| belge | **21066 px = 25.9 ekran** |
+| **133 kart** | **14974 px — belgenin %71'i** |
+| kategori çipleri (18, saran) | **800 px** |
+| ilk araç kartı | **1403 px** — ilk ekranda tek araç yok |
+| arama kutusu | 301 px (yeri iyi) |
+
+#### Çare: kategoriler mobilde KATLI, ama sunucu HTML'i DEĞİŞMİYOR
+
+`<details>` seçildi ve gerekçesi ölçülebilir: **içerik kapalıyken de DOM'da
+kalıyor.** Koşullu render 133 bağlantıyı ağaçtan düşürürdü ve bu depoda
+`/tools`un sunucu HTML'inde sıfır bağlantıya düşmesi kayıtlı bir gerileme
+("19 KB, `<h1>` 0, araç bağlantısı 0").
+
+Başlangıç durumu `null` (hiçbiri kapalı) — sunucu ve ilk istemci render'ı
+aynı, hidrasyon uyuşmazlığı yok. Katlama yalnızca **mount'tan sonra ve dar
+görünümde** uygulanıyor; kapanan bölge zaten katlama anında ekranın altında
+olduğu için görünür sıçrama da yok.
+
+Çip satırı mobilde tek sıraya alındı (`overflow-x-auto`, `md:flex-wrap`).
+Kaydırma kabına ayrıca klavye erişimi gerekmiyor: içindeki her öge
+odaklanabilir bir bağlantı, yani Tab kabı zaten sürüyor — tablo kaplarında
+durum farklıydı, orada yalnızca metin vardı. Seçili çip `scrollIntoView` ile
+görünüme alınıyor, yoksa `?kategori=x` ile gelen kullanıcı hangi süzgecin
+açık olduğunu göremezdi.
+
+#### ⚠ NEGATİF KONTROL GERÇEK BİR KUSUR BULDU — zorla açma KALICI tercihe sızıyordu
+
+Arama sırasında eşleşen kategoriler zorla açılıyor (kapalı bir kategoride
+eşleşen aracı gizlemek aramayı sessizce bozardı: sayaç "3 araç bulundu"
+derken ekranda hiçbir kart olmazdı).
+
+Ama `open` prop'u `true` olunca tarayıcı **`toggle` olayı atıyor** ve
+işleyici o kategorileri kalıcı "kapalı" kümesinden **siliyordu**. Ölçüldü:
+
+| adım | önce | sonra |
+|---|---|---|
+| başlangıç | 0/18 açık | 0/18 |
+| "kalsiyum" ara | 3/3 | 3/3 |
+| **aramayı temizle** | **3/18 açık, 33 kart** | **0/18, 0 kart** |
+
+Yani geçici bir aramanın yan etkisi kalıcı hâle geliyordu. Çare: `zorlaAcik`
+iken toggle yok sayılıyor.
+
+**Kullanıcının ELLE açtığı kategori korunuyor** — ayrı ölçüldü: elle aç →
+ara → temizle ⇒ **1/18 açık** (seçim hayatta).
+
+#### ⚠ `getBoundingClientRect().height > 0` KAPALI `<details>` İÇİNDE GÖRÜNÜRLÜK ÖLÇMEZ
+
+İlk ölçüm "133 kart görünür" dedi, oysa belge 21066 → 4052'ye düşmüştü.
+Chrome kapalı `<details>` içeriğine `content-visibility` uyguluyor: düzen
+atlanıyor ama `getBoundingClientRect()` son bilinen kutuyu döndürüyor.
+
+`el.checkVisibility()` doğru cevabı veriyor: **0**. Bu depoda görünürlük
+ölçen her tarama bunu bilmek zorunda — `offsetParent` de yanıltıyor
+(kapalı details içinde hâlâ `true`).
+
+#### Doğrulama — dokuzu negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **375px belge** | **21066 px (25.9 ekran)** | **3151 px (3.9 ekran)** |
+| çip satırı | 800 px (saran) | **43 px** (tek sıra, kayan) |
+| ilk kategori başlığı | — | **554 px**, ilk ekranda **3 kategori** |
+| DOM'daki kart | 133 | **133** (hiçbiri düşmedi) |
+| gerçekten görünür kart (`checkVisibility`) | 133 | **0** |
+| dokunma hedefi (özet) | — | 327×72 |
+| **negatif** — SUNUCU HTML'i | 133 bağ · 18 `<details open>` · 18 `<summary>` · 19 `<h2>` | **birebir aynı** |
+| **negatif** — MASAÜSTÜ 1280 belge | **11442** (canlı) | **11442** — birebir |
+| **negatif** — masaüstü çip kabı · açık · görünür kart | 162 px · 18 · 133 | **162 px · 18 · 133** |
+| **negatif** — arama | "3 araç bulundu" | **3/3 açık, 4 kart görünür** |
+| **negatif** — aramayı temizle | — | **0/18, başlangıca dönüyor** |
+| **negatif** — elle açılan kategori | — | **korunuyor** |
+| **negatif** — `?kategori=nefroloji` | 9 araç | **9 araç, çip görünüme kaydı** |
+| **negatif** — sayaç | "130 araç listeleniyor" | **değişmedi** |
+| **negatif** — 375/1280 yatay kayma | 0 | **0 · 0** |
+| **negatif** — erişilebilir ad | — | "Klinik Nütrisyon (Beslenme)10" (emoji ve `›` `aria-hidden`) |
+| 16 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Masaüstü satırı için `py-1` geri alındı: 18 özet × 4 px = **72 px** büyüme
+üretiyordu ve bu depoda ölçüt "birebir aynı".
+
+**Not edilen, DEĞİŞTİRİLMEYEN:** üstteki 554 px'in içinde 18 kategori çipi ve
+18 akordeon başlığı yan yana duruyor — aynı 18 kategori iki ayrı affordansla.
+Çipler URL süzgeci (`aria-current` + derin bağlantı), akordeon yerinde açıyor;
+ikisi de işlevsel ama mobilde tekrar. Birini kaldırmak bir tasarım kararı.

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { aramaAnahtariKur, aramaAnahtariEslesir } from "@/app/lib/arama";
@@ -393,7 +393,58 @@ export default function ToolsIcerik() {
    * sayfa "0 araç listeleniyor" dedi ve hub'daki 117 araç bağlantısının
    * tamamı kayboldu — yani arama motoru için de sayfa boştu.
    */
+  /**
+   * MOBILDE KATEGORILER KATLI ACILIR.
+   *
+   * Olculdu (canli, 375px): belge 21066px = 25.9 EKRAN ve 133 kart tek
+   * basina 14974px — belgenin %71'i. Ilk arac karti 1403px'te, yani ilk
+   * ekranda tek bir hesaplayici yok.
+   *
+   * SUNUCU HTML'i DEGISMIYOR: baslangic durumu `null` (hicbiri kapali) ve
+   * ilk istemci render'i da oyle — hidrasyon uyusmazligi yok. Katlama
+   * yalnizca mount'tan SONRA, dar gorunumde uygulaniyor.
+   *
+   * `<details>` secildi cunku icerik kapaliyken de DOM'da KALIYOR: kosullu
+   * render 133 baglantiyi agactan dusururdu ve bu depoda `/tools`un sunucu
+   * HTML'inde sifir baglantiya dusmesi kayitli bir gerileme.
+   */
+  const [kapaliKategoriler, setKapaliKategoriler] = useState<Set<string> | null>(null);
+
+  const cipKabiRef = useRef<HTMLDivElement>(null);
+
+  /**
+   * SECILI CIP GORUNUME KAYDIRILIR.
+   *
+   * Mobilde cip satiri tek sira ve yatay kayiyor; 19 rozetin cogu ekran
+   * disinda. `?kategori=x` ile gelen kullanici hangi suzgecin acik oldugunu
+   * goremezdi — `aria-current` dogru ama gorsel isaret ulasilmaz kalirdi.
+   */
+  useEffect(() => {
+    const kap = cipKabiRef.current;
+    if (!kap) return;
+    const secili = kap.querySelector('[aria-current]');
+    if (secili && kap.scrollWidth > kap.clientWidth) {
+      secili.scrollIntoView({ block: "nearest", inline: "center" });
+    }
+  }, [seciliKategori]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.innerWidth >= 768) return;
+    setKapaliKategoriler(new Set(TOOLS_DATABASE.map((c) => c.slug)));
+  }, []);
+
   const aramaBos = !searchTerm.trim();
+
+  /**
+   * ARAMA ve KATEGORI SECIMI katlamayi EZER.
+   *
+   * Kapali bir kategoride eslesen araci gizlemek, aramayi sessizce bozardi:
+   * sayac "3 arac bulundu" derken ekranda hicbir kart olmazdi.
+   */
+  const zorlaAcik = !aramaBos || !!seciliKategori;
+  const acikMi = (slug: string) =>
+    zorlaAcik || !kapaliKategoriler || !kapaliKategoriler.has(slug);
 
   const filteredData = TOOLS_DATABASE
     .filter(cat => !seciliKategori || cat.slug === seciliKategori)
@@ -517,12 +568,17 @@ export default function ToolsIcerik() {
             Sunucu HTML'i DEĞİŞMİYOR: `searchTerm` hem sunucuda hem ilk
             istemci render'ında boş, yani rozet adresleri orada eskisi gibi
             `/tools?kategori=x`. */}
-        <div className="flex flex-wrap gap-2">
+        {/* MOBILDE TEK SIRA. Olculdu (375px): saran cip blogu 800px, yani
+            belgenin neredeyse bir ekrani yalnizca kategori rozetleriydi.
+            Kaydirma kabina KLAVYE ERISIMI ayrica gerekmiyor: icindeki her
+            oge odaklanabilir bir baglanti, yani Tab kabi zaten suruyor
+            (tablo kaplarinda durum farkliydi, orada metin vardi). */}
+        <div ref={cipKabiRef} className="flex gap-2 overflow-x-auto pb-2 -mb-2 md:flex-wrap md:overflow-visible md:pb-0 md:mb-0">
           <Link
             href={aramaBos ? "/tools" : `/tools?ara=${encodeURIComponent(searchTerm.trim())}`}
             aria-current={!seciliKategori ? "true" : undefined}
             onClick={() => setKategori(null)}
-            className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all ${
+            className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all shrink-0 whitespace-nowrap ${
               !seciliKategori
                 ? "bg-blue-950 text-white border-blue-950"
                 : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
@@ -547,7 +603,7 @@ export default function ToolsIcerik() {
               }
               aria-current={seciliKategori === cat.slug ? "true" : undefined}
               onClick={() => setKategori(cat.slug)}
-              className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all flex items-center gap-1.5 ${
+              className={`px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest border transition-all shrink-0 whitespace-nowrap flex items-center gap-1.5 ${
                 seciliKategori === cat.slug
                   ? "bg-blue-950 text-white border-blue-950"
                   : "bg-slate-50 text-slate-500 border-slate-200 hover:border-blue-900/30 hover:text-blue-900"
@@ -599,13 +655,35 @@ export default function ToolsIcerik() {
         {/* ARAÇ KARTLARI GRİD */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
           {filteredData.map((cat, idx) => (
-            <div key={idx} className="space-y-5">
-              <div className="flex items-center gap-3 pl-2">
+            <details
+              key={idx}
+              open={acikMi(cat.slug)}
+              onToggle={(e) => {
+                // ZORLA ACIK durumda toggle YOK SAYILIYOR. Olculdu: arama
+                // sirasinda `open` prop u true olunca tarayici toggle atiyor
+                // ve isleyici o kategorileri KALICI tercihten siliyordu —
+                // aramayi temizleyen kullanici 3 kategoriyi acik buluyordu.
+                if (zorlaAcik) return;
+                const acik = (e.currentTarget as HTMLDetailsElement).open;
+                setKapaliKategoriler((onceki) => {
+                  const yeni = new Set(onceki ?? []);
+                  if (acik) yeni.delete(cat.slug); else yeni.add(cat.slug);
+                  return yeni;
+                });
+              }}
+              className="space-y-5 [&[open]>summary_.ms-ok]:rotate-90"
+            >
+              {/* Baslik SUMMARY'nin icinde: belge taslagi korunuyor (h2),
+                  acma/kapama da klavyeyle calisiyor — summary dogustan
+                  odaklanabilir ve Enter/Space ile calisiyor. */}
+              <summary className="flex items-center gap-3 pl-2 cursor-pointer list-none marker:content-[''] rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
                 <div aria-hidden="true" className="w-9 h-9 rounded-2xl bg-blue-900/5 flex items-center justify-center border border-blue-900/10 shadow-sm text-xl">
                    {cat.icon}
                 </div>
                 <h2 className="text-xs font-black text-blue-900 uppercase tracking-[0.25em]">{cat.category}</h2>
-              </div>
+                <span className="text-[10px] font-black text-slate-400 tabular-nums">{cat.items.length}</span>
+                <span aria-hidden="true" className="ms-ok ml-auto mr-2 text-slate-300 transition-transform">›</span>
+              </summary>
 
               <div className="grid gap-4">
                 {cat.items.map((tool) => (
@@ -631,7 +709,7 @@ export default function ToolsIcerik() {
                   </Link>
                 ))}
               </div>
-            </div>
+            </details>
           ))}
         </div>
 
