@@ -27528,3 +27528,51 @@ farkı göstermiyor.
 sınıfının sekizini de tohumla kanıtla.** Bu turda asıl bulgu eksen değil,
 ekseni sürerken kapanan iştir; ama eksenin temiz olduğunu söyleyebilmek,
 ölçütün o kusurları GÖREBİLDİĞİNİ göstermeye bağlı.
+
+#### CANLIDA doğrulandı — ve ölçüm ilk turda 36 SAHTE tekrar üretti
+
+Aynı ölçüt dağıtımdan sonra canlıya sürüldü (130 araç sayfası, sunucu
+HTML'i + tarayıcıda hesaplanan ad):
+
+| ölçüt | canlıda |
+|---|---|
+| `role="group"` örneği | **284** (dağıtımdan önce 254) |
+| ölçülen düğme | **1424** |
+| çift id · sarkan atıf · adsız grup · ad çakışması | **0 · 0 · 0 · 0** |
+| **ÇİFT TEKRAR** | **0** |
+
+Beş aracın üçü tarayıcıda tek tek sürüldü ve negatif kontroller tuttu:
+`gcs` üç grup adlı ("Göz Açma (E)" · "Sözel Yanıt (V)" · "Motor Yanıt (M)");
+`canadian-ct` tek yüksek riskli ölçütle **"BT GEREKLİ (Yüksek Risk)"** ve
+duyuru çalışıyor; **`child-pugh` kayıtlı vakayla TOPLAM 9/15 · Class B ·
+%80** — yani `sed`in bozup geri çevrilen CRLF'i aritmetiğe dokunmamış.
+
+**AMA ilk canlı koşum "ÇİFT TEKRAR 36" dedi** ve iki dosya gösterdi
+(`haq-di` 32, `scorad` 4). Yerel ölçüm 0 diyordu; ikisinden biri yanlıştı.
+
+Sebep üründe değil ölçütteydi: **bu iki araç İÇ İÇE grup kullanıyor.**
+
+```
+scorad :  dis grup  "B — Yogunluk Kriterleri"      (bolum)
+             ic grup  "Eritem" · "Odem" · ...        (olcut basina)
+haq-di :  dis grup  "Giyinme & Bakim"             (kategori)
+             ic grup  her etkinlik                   (etkinlik basina)
+```
+
+İlk betik her düğmeyi **BÜTÜN ata gruplarına** yazıyordu, yani dış grubun
+adı altı ölçütün altısında da "0 — Yok" düğmesiyle eşleşiyordu. Oysa ekran
+okuyucu iç gruba girerken **iki adı da** duyuruyor — düğme zaten ayrışıyor.
+
+Düzeltilmiş ölçüt her düğmeyi **EN İÇTEKİ** gruba atıyor
+(`b.closest('[role="group"]')`) ve 36 → **0**.
+
+**Pozitif kontrol düzeltmeden SONRA kuruldu:** bir grubun içine ikinci kez
+aynı düğme tohumlandı → **yakalandı** (`Göz Açma (E) │ Spontan 4 x2`). Yani
+"0" körlükten gelmiyor.
+
+**Aktarılabilir kural: bir düğmenin bağlamını ölçerken ATA ZİNCİRİNİ değil
+EN YAKIN bağlamı al.** İç içe gruplar meşru ve bu depoda kullanılıyor; her
+atayı ayrı bir bağlam saymak, ayrışmanın zaten çözüldüğü yerde sahte
+belirsizlik raporluyor. Aynı ders bu belgede kontrast tarafında da kayıtlı
+(*"zemin ATAdan değil en yakın DOLU zeminden gelir"*) — buradaki hâli
+erişilebilir ad tarafında.
