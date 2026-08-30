@@ -166,10 +166,10 @@ export default function ESSDIAPage() {
           {DOMAINS.map(domain => (
             <div key={domain.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <div className="flex items-center justify-between mb-2">
-                <p className="font-black text-blue-900 uppercase italic text-sm">{domain.label}</p>
+                <p className="font-black text-blue-900 uppercase italic text-sm" id={`grp-${domain.id}`}>{domain.label}</p>
                 <span className="text-[8px] font-black text-slate-400 uppercase">Ağırlık ×{domain.weight}</span>
               </div>
-              <div className="space-y-1.5">
+              <div role="group" aria-labelledby={`grp-${domain.id}`} className="space-y-1.5">
                 {domain.options.map(opt => (
                   <button aria-pressed={sel[domain.id] === opt.pts} key={opt.level} type="button"
                     onClick={() => setSel(s => ({ ...s, [domain.id]: s[domain.id] === opt.pts ? null : opt.pts }))}

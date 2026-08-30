@@ -86,7 +86,7 @@ export default function AnaphylaxisPage() {
             <div key={cr.id} className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 rounded-xl bg-blue-900 text-white flex items-center justify-center font-black shrink-0">{cr.num}</div>
-                <p className="font-black text-blue-900 uppercase italic text-sm">{cr.title}</p>
+                <p className="font-black text-blue-900 uppercase italic text-sm" id={`grp-${cr.id}`}>{cr.title}</p>
               </div>
               <p className="text-[10px] text-slate-600 font-bold mb-2 leading-snug">{cr.desc}</p>
               <ul className="space-y-1 mb-4">
@@ -99,7 +99,7 @@ export default function AnaphylaxisPage() {
                   </li>
                 ))}
               </ul>
-              <div className="flex gap-2">
+              <div role="group" aria-labelledby={`grp-${cr.id}`} className="flex gap-2">
                 {([true, false] as const).map(v => (
                   <button aria-pressed={sel[cr.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [cr.id]: s[cr.id] === v ? null : v }))}

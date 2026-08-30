@@ -30,9 +30,9 @@ const CriterionRow = ({ item, value, onChange }: {
   value: boolean | null; onChange: (v: boolean | null) => void;
 }) => (
   <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm">
-    <p className="font-black text-blue-900 text-sm mb-0.5">{item.label}</p>
-    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">{item.detail}</p>
-    <div className="flex gap-2">
+    <p className="font-black text-blue-900 text-sm mb-0.5" id={`grp-${item.id}-a`}>{item.label}</p>
+    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2" id={`grp-${item.id}-b`}>{item.detail}</p>
+    <div role="group" aria-labelledby={`grp-${item.id}-a grp-${item.id}-b`} className="flex gap-2">
       {([true, false] as const).map(v => (
         <button aria-pressed={value === v} key={String(v)} type="button"
           onClick={() => onChange(value === v ? null : v)}

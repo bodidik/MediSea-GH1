@@ -27451,3 +27451,80 @@ davranışa dokunmadı.
 `git show --stat` satırına bak.** `Bin 0 -> N bytes` gören her metin dosyası
 kusurludur; sebebi neredeyse her zaman kazara bir kontrol karakteridir ve
 `tr -cd '\000' | wc -c` tek adımda söylüyor.
+
+### KİMLİK VE ARIA HİJYENİ TARANDI — temiz; ve belirsiz ad sınıfı 130 aracın 130'unda KAPANDI
+
+Yeni eksen: **bu oturum çok sayıda kimlik üretti** (`grp-*` · `bolum-*` ·
+`*-birim` · `*-sebep` · `icindekiler-basligi` · `premium-icindekiler`) ve konu
+gövdeleri kendi HTML'ini taşıyor. İkisi çakışırsa `aria-labelledby`,
+`aria-describedby` ve sayfa içi çapalar sessizce yanlış ögeyi gösterir.
+
+Ölçüldü (canlı, üretilmiş HTML):
+
+| yüzey | sayfa | kimlik | ÇİFT | SARKAN atıf |
+|---|---|---|---|---|
+| konu (eşit aralıklı örneklem) | 53 | 380 | **0** | **0** |
+| araç | **130** | **714** | **0** | **0** |
+
+**İçerik gövdeleri kendi kimliğini HİÇ taşımıyor** (`[data-readable]` içinde
+`bolum-` öneki dışında kimlik: **0**) — yani üretilen `bolum-*` kimliklerinin
+içerikle çakışma riski bugün yapısal olarak yok.
+
+İkinci yarı, **ARIA hijyeni** — 174 sayfada (130 araç + branş + site + 25
+konu) altı sınıf tarandı: geçersiz nitelik değeri · bilinmeyen `aria-*`
+niteliği · boş ad/atıf · pozitif `tabindex` · `role="list"` içinde `listitem`
+yok · `role="radiogroup"` içinde `radio` yok. **KUSUR 0.**
+
+**"0 kusur" körlükten gelmiyor** — sekiz sınıfın hepsini taşıyan bir tohum
+ayrıştırıldı ve **sekizi de yakalandı** (`aria-pressed="yes"` ·
+`aria-lablledby` · boş `aria-label` · `tabindex=3` · listitem'sız `role=list` ·
+radio'suz `role=radiogroup` · çift id · sarkan atıf).
+
+#### Aynı turda kapatılan ölçülmüş iş: kalan 5 araç
+
+Grup süpürmesinin dışında kalan beş araç (35 kontrol) tek tek okundu ve
+**kaçırılma sebepleri farklıydı** — mekanik şeklin sınırını gösteriyor:
+
+| araç | neden kaçtı | çare |
+|---|---|---|
+| `gcs` · `child-pugh` | etiket `<p>` değil **`<span>`** — yama yalnızca `<p>` arıyordu | `<span>` + `<div>`, deponun `nrs-2002` referans şekli |
+| `essdai` | etiket bir flex `<div>` içinde yuvalı, bitişik kardeş değil | `domain.id`den kimlik |
+| `anaphylaxis` | etiket ile şıklar arasında bir `<ul>` var | `cr.id`den kimlik |
+| `canadian-ct` | bileşen içinde, statik kimlik çift üretiyordu (bir tur önce geri alınmıştı) | `item.id`den kimlik; **başlık VE yönerge birlikte** bağlandı (`nihss` dersi) |
+
+**Doğrulama — dördü negatif kontrol:**
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `role="group"` örneği | 254 | **284** |
+| **şık adı + grup adı TEKRAR eden kontrol** | **35** | **0** |
+| adı boş grup · çift id · sarkan atıf · ad çakışması | 0 | **0 · 0 · 0 · 0** |
+| `gcs` grup adları | (grup yok) | **"Göz Açma (E)" · "Sözel Yanıt (V)" · "Motor Yanıt (M)"** |
+| `canadian-ct` grup adı | (grup yok) | **"GCS 2 saat sonra < 15 · Acil serviste 2 saat gözlem…"** (başlık+yönerge) |
+| **negatif** — 5 aracın GÖRÜNÜR METNİ (canlı ↔ yerel) | — | **5/5 BİREBİR AYNI** |
+| **negatif** — `gcs` aritmetiği | — | **E4 + V5 + M6 = 15 · Hafif** |
+| **negatif** — `child-pugh` (kayıtlı vaka 3·2·1·2·1) | — | **9 / 15 · Class B · ≈%80** |
+| **negatif** — `canadian-ct` erken hüküm | — | tek yüksek riskli ölçütle **"BT GEREKLİ (Yüksek Risk)"** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Yani **belirsiz şık adı sınıfı kapandı**: 130 aracın hiçbirinde artık aynı
+(grup adı, şık adı) çifti iki kez geçmiyor. 35 araçta hâlâ grup semantiği
+yok (252 şık düğmesi bir grubun dışında) — ama o düğmelerin adları sayfa
+içinde **zaten benzersiz**, yani belirsizlik üretmiyorlar.
+
+#### ⚠ `sed -i` CRLF'i sessizce LF'e çevirdi
+
+`child-pugh` saf CRLF'ti (187/187); beş dosyaya sed uygulandıktan sonra
+**CR=0**. `git diff --stat` bunu göstermiyor (autocrlf normalleştiriyor, fark
+yine 11 satır), yani gözden kaçardı. Ölçüm satır sonlarını AYRICA saydığı için
+yakalandı ve geri çevrildi.
+
+Bu depoda kayıtlı satır sonu tuzaklarının yeni bir kanalı: öncekiler yama
+betiğinin kendi yazımıydı (`deg` yardımcısı LF basıyordu), buradaki `sed -i`.
+**Ölçüt: yamadan sonra CR ve LF sayısını AYRI AYRI say** — `git diff` bu
+farkı göstermiyor.
+
+**Aktarılabilir kural: temiz çıkan bir ekseni raporlarken ölçütün SEKİZ
+sınıfının sekizini de tohumla kanıtla.** Bu turda asıl bulgu eksen değil,
+ekseni sürerken kapanan iştir; ama eksenin temiz olduğunu söyleyebilmek,
+ölçütün o kusurları GÖREBİLDİĞİNİ göstermeye bağlı.

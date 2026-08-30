@@ -126,8 +126,8 @@ export default function ChildPughPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6">
           {CATEGORIES.map((c) => (
             <div key={c.key} className="space-y-2">
-              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1">{c.title}</span>
-              <div className="grid gap-2">
+              <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest pl-1" id={`grp-${c.key}`}>{c.title}</span>
+              <div role="group" aria-labelledby={`grp-${c.key}`} className="grid gap-2">
                 {c.options.map((o) => (
                   <button aria-pressed={sel[c.key] === o.value}
                     key={o.value}
