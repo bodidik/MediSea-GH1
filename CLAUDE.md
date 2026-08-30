@@ -27884,3 +27884,85 @@ metin basan sayfa" al.
 Son iki satır kapsam kararının kanıtı: araç sayfaları AppShell almıyor ve
 alt bilgi orada hiç basılmıyor — ama o yüzeyde uyarı zaten araç kabuğundan
 geliyor, yani boşluk yok.
+
+### ARAMA MOTORUNDAN GELEN OKUYUCU 423 KONULUK KÜTÜPHANEYİ HİÇ GÖRMÜYORDU
+
+Yeni eksen — kullanıcının sorusu: **mobilde hesaplayıcılar ayrı bir uygulama mı
+olmalı, siteden mi görünmeli?** Karar ölçümle verildi, tercihle değil.
+
+**Ayrı app REDDEDİLDİ ve gerekçeleri ölçülebilir:**
+
+| gerekçe | ölçüm |
+|---|---|
+| trafik hedefiyle çelişir | 130 araç sayfası site haritasında ve indeksleniyor; app onları indeksten çıkarır |
+| kurulum sürtünmesi | bugün bağlantı → sonuç; tek seferlik bir doz hesabı için kimse app indirmez |
+| iki kod tabanı | 20 CI adımı + 30 denetim betiği + bütün ölçüm sermayesi ikiye bölünür |
+| zaten offline'a yakın | araçlar **sıfır ağ, sıfır depo** (`sizinti-denetim` nöbetçisi bunu koruyor) |
+
+Yani yol: **siteden görünen, mobil-öncelikli hesaplayıcılar.** PWA ("Ana Ekrana
+Ekle") ucuz bir ara adım olarak açık kalıyor — `apple-icon` zaten var.
+
+#### Mobil durum ölçüldü (canlı, 375px)
+
+| yüzey | belge | bulgu |
+|---|---|---|
+| `/tools/bmi` | 1784px = **2.2 ekran** | sağlıklı: girdi ilk ekranda (360px), sonuç 763px |
+| `/tools/apache2` | 3390px = 4.2 ekran | **sonuç 3.4 ekran aşağıda** — 86 düğme dolduruluyor, skor görünmüyor |
+| **`/tools` hub** | **20713px = 25.5 ekran** | **ilk ekranda tek araç yok** (ilk kart 1403px) |
+
+Ve araç sayfasının dibinde **siteye köprü yoktu**: 11 bağlantının hepsi ya üst
+çubukta ya kardeş araçlarda. Aramadan tek bir hesaplayıcıya düşen okuyucu
+423 konuluk kütüphaneyi hiç görmüyordu.
+
+#### Çare TEK DOSYADA — araçlar `(site)` grubunun DIŞINDA
+
+Araç sayfaları AppShell almıyor, yani alt bilgi oraya hiç basılmıyor. Ama
+`app/tools/layout.tsx` 130 aracı **ve** hub'ı birden sarıyor: köprü oraya
+kondu, 130 dosyaya elle yazılmadı.
+
+**`<footer>` `<main>`'in DIŞINDA** — `main`/`article`/`section` içinde
+yuvalanan bir footer `contentinfo` landmark'ı OLMUYOR. Ölçüldü: araç
+sayfalarında footer sayısı **SIFIRDI**, yani bu aynı zamanda eksik landmark'ı
+da kapatıyor.
+
+**Sayılar saydırılıyor** ve ana sayfayla AYNI kaynaktan (`getTopicCounts` +
+`SPECIALTIES` + `getToolCount`): elle yazılan sayı bu depoda tur tur sessizce
+yalana döndü. Ölçüldü — footer'da basılan üç sayı **13 · 423 · 130**.
+
+**Klinik sorumluluk cümlesi BİLEREK YOK:** 130 aracın 130'u kendi klinik
+uyarısını zaten taşıyor (ölçülü); ikincisi aynı sayfada gürültü olurdu.
+
+#### Yazarken iki kusur ölçümle yakalandı
+
+| kusur | neden |
+|---|---|
+| `mt-2` **ve** `mt-0` aynı `<h2>`de | ikisi de aynı özgüllük; kazanan üretilen CSS sırasına kalıyordu. `globals.css` h2'ye ELEMENT seçiciyle (0,0,1) boşluk veriyor, tek başına `.mt-2` (0,1,0) onu zaten yeniyor |
+| **"📂 Tüm hesaplayıcılar" bağlantısı** | bu düzen `/tools` HUB'ını da sarıyor; orada bağlantı **kendine** giderdi ve başlık ("bu hesaplayıcının") tekil kalırdı |
+
+İkincisi bu oturumda kapatılan *"bağlantının adı gittiği sayfayı doğru
+söylüyor mu"* sınıfının aynısı — bir düzen bileşeni yazarken **onu kaç farklı
+sayfanın sardığını** sor.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| araç HTML'inde köprü | 0 / 130 | **130 / 130** |
+| `contentinfo` landmark | **0** | **1** (`main` dışında) |
+| basılan sayılar | — | **13 · 423 · 130** (ana sayfayla aynı) |
+| h2 · gövde · bağlantı kontrastı | — | **14.69 · 10.01 · 14.69** |
+| h2 yazı tipi / üst boşluk | — | **Inter / 8px** (serif+24px tuzağı atlatıldı) |
+| dokunma hedefi (375) | — | 194×48 · 120×48 |
+| **negatif** — belge yüksekliği | 1784 | **1784 + 353 footer** — hiçbir şey kaymadı |
+| **negatif** — aracın KENDİ uyarısı | var | **var** |
+| **negatif** — üst çubuk + kardeş bloğu | 4 çip + 6 bağ | **değişmedi** |
+| **negatif** — sonuç paneli | var | **var** |
+| **negatif** — başlık düzeyi | h1→h2 | **h1→h2→h2, atlama yok** |
+| **negatif** — hub sayacı ve kartları | "130 araç listeleniyor" · 133 bağ | **değişmedi** |
+| **negatif** — hub'da kendine bağlantı | — | **0** |
+| **negatif** — 375 / 1280 yatay kayma | 0 | **0 · 0** (taşan öge 0, 1280'de ortalı 768px) |
+| **negatif** — ilk yük | 114 kB | **114 kB** (sunucu render'ı, paket maliyeti yok) |
+| lint · typecheck · build 638/638 · 6 denetim | — | hepsi geçti |
+
+**Sıradaki iki ölçülmüş iş** (yapılmadı, kapsamı yazıldı): hub'ın 25.5 ekranı
+ve uzun araçlarda sonucun 3.4 ekran aşağıda kalması.

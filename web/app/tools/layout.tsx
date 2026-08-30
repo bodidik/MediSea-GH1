@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { getToolCount } from "@/app/lib/topic-counts";
+import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
+import { SPECIALTIES } from "@/app/lib/specialties";
 
 /**
  * Klinik araçlar dizininin metadata'sı.
@@ -50,7 +51,13 @@ export async function generateMetadata(): Promise<Metadata> {
  * ToolTopNav'ın kendi içinde çözüldü.
  */
 export default function AraclarDuzen({ children }: { children: ReactNode }) {
+  // Ana sayfayla AYNI kaynak — iki yuzey ayrisamasin.
+  const konu = Object.values(getTopicCounts()).reduce((a, b) => a + b, 0);
+  const brans = SPECIALTIES.length;
+  const arac = getToolCount();
+
   return (
+    <>
     <main>
       {/*
         JS ÇALIŞMIYORSA SESSİZ KALMA.
@@ -98,5 +105,56 @@ export default function AraclarDuzen({ children }: { children: ReactNode }) {
       </noscript>
       {children}
     </main>
+
+      {/*
+        SITEYE KOPRU — araclar (site) grubunun DISINDA, yani AppShell'in alt
+        bilgisi buraya hic basilmiyor. Olculdu: /tools/bmi sayfasinda 11
+        baglantinin hepsi ust cubukta ya da kardes araclarda; aramadan tek bir
+        hesaplayiciya dusen okuyucu 423 konuluk kutuphaneyi HIC gormuyordu.
+
+        <footer> main'in DISINDA: main/article/section icinde yuvalanan bir
+        footer contentinfo landmark'i OLMUYOR. Olculdu: arac sayfalarinda
+        footer sayisi SIFIRDI — bu ayni zamanda eksik landmark'i da kapatiyor.
+
+        Sayilar SAYDIRILIYOR (ana sayfayla ayni kaynak): elle yazilan sayi bu
+        depoda tur tur sessizce yalana dondu.
+
+        Klinik sorumluluk cumlesi BILEREK YOK: 130 aracin 130'u kendi klinik
+        uyarisini zaten tasiyor (olculdu); ikincisi ayni sayfada gurultu olur.
+      */}
+      <footer className="border-t-4 border-blue-900 bg-blue-950 px-4 py-10 text-blue-100">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-300">
+            MediSea
+          </p>
+          {/* font-sans + mt-0: globals.css h2'ye serif ve 24px ust bosluk
+              veriyor; bu bir arayuz basligi, okuma basligi degil. */}
+          <h2 className="mt-2 font-sans text-xl font-black leading-tight tracking-tight text-white">
+            Hesaplayıcıların arkasında bir kütüphane var
+          </h2>
+          <p className="mt-3 text-sm font-semibold leading-relaxed text-blue-100/90">
+            MediSea, dahiliye asistanları ve uzmanları için Türkçe klinik kaynak:
+            {" "}
+            <strong className="text-white">{brans} branşta {konu} konu anlatımı</strong>{" "}
+            ve <strong className="text-white">{arac} hesaplayıcı</strong>. Ücretsiz,
+            kayıt gerekmez.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            <Link
+              href="/topics"
+              className="rounded-xl bg-white px-4 py-3 text-sm font-black text-blue-950 hover:bg-blue-50"
+            >
+              📚 Kütüphaneye göz at
+            </Link>
+            <Link
+              href="/uyelik"
+              className="rounded-xl border-2 border-blue-700 px-4 py-3 text-sm font-black text-white hover:bg-blue-900"
+            >
+              Neler dahil?
+            </Link>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
