@@ -27430,8 +27430,8 @@ web/scripts/kopya-bolum-denetim.cjs   Bin 0 -> 7959 bytes
 
 `Bin` yani git dosyayı **ikili** sayıyor ve bir daha hiçbir değişikliğinin
 diff'ini göstermeyecek. Sebep: karşılaştırma anahtarında ayraç olarak
-kullanmak istediğim ` ` **kaçış dizisi olarak değil, GERÇEK NUL
-karakteri olarak** dosyaya indi (`tr -cd '\000' | wc -c` → **1**).
+kullanmak istediğim NUL kaçış dizisi, kaçış olarak DEĞİL gerçek NUL
+karakteri olarak dosyaya indi (`tr -cd '\000' | wc -c` → **1**).
 
 Bu, belgede kayıtlı "kanal dosyayı bozuyor" ailesinin yeni bir üyesi —
 öncekiler heredoc ve `node -e`'nin ters bölü düşürmesiydi; buradaki kanal
