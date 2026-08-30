@@ -98,8 +98,8 @@ export default function UAS7Page() {
                 {expanded === i && (
                   <div className="px-4 pb-4 space-y-3 border-t border-slate-100 pt-3">
                     <div>
-                      <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kabarıklık (Pomf)</p>
-                      <div className="space-y-1">
+                      <p id={`grp-0-${String(i).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kabarıklık (Pomf)</p>
+                      <div role="group" aria-labelledby={`grp-0-${String(i).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1">
                         {WHEAL_OPTS.map(opt => (
                           <button aria-pressed={wheal[i] === opt.pts} key={opt.pts} type="button"
                             onClick={() => { const a = [...wheal]; a[i] = opt.pts; setWheal(a); }}
@@ -113,8 +113,8 @@ export default function UAS7Page() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kaşıntı Şiddeti</p>
-                      <div className="space-y-1">
+                      <p id={`grp-1-${String(i).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1.5">Kaşıntı Şiddeti</p>
+                      <div role="group" aria-labelledby={`grp-1-${String(i).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1">
                         {ITCH_OPTS.map(opt => (
                           <button aria-pressed={itch[i] === opt.pts} key={opt.pts} type="button"
                             onClick={() => { const a = [...itch]; a[i] = opt.pts; setItch(a); }}

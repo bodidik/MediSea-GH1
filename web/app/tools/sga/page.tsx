@@ -100,8 +100,8 @@ export default function SgaPage() {
             <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest">{sec.title}</p>
             {sec.questions.map(q => (
               <div key={q.id}>
-                <p className="text-sm font-bold text-blue-900 mb-2">{q.label}</p>
-                <div className="flex gap-2 flex-wrap">
+                <p id={`grp-0-${String(q.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-sm font-bold text-blue-900 mb-2">{q.label}</p>
+                <div role="group" aria-labelledby={`grp-0-${String(q.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2 flex-wrap">
                   {q.opts.map(o => (
                     <button aria-pressed={answers[q.id] === o.v} key={o.v} type="button" onClick={() => setAns(q.id, o.v as SGARating)}
                       className={`px-4 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all

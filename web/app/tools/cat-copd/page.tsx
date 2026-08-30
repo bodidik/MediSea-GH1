@@ -71,11 +71,11 @@ export default function CatCopdPage() {
           {ITEMS.map((item, idx) => (
             <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <div className="flex items-start justify-between gap-2 mb-3">
-                <p className="text-[10px] font-bold text-slate-600 flex-1 leading-snug">{item.a}</p>
+                <p className="text-[10px] font-bold text-slate-600 flex-1 leading-snug" id={`${item.id}-a`}>{item.a}</p>
                 <span className="text-[9px] font-black text-slate-400 shrink-0">Madde {idx + 1}</span>
-                <p className="text-[10px] font-bold text-slate-600 flex-1 text-right leading-snug">{item.b}</p>
+                <p className="text-[10px] font-bold text-slate-600 flex-1 text-right leading-snug" id={`${item.id}-b`}>{item.b}</p>
               </div>
-              <div className="flex gap-1 justify-center">
+              <div role="group" aria-labelledby={`${item.id}-a ${item.id}-b`} className="flex gap-1 justify-center">
                 {[0, 1, 2, 3, 4, 5].map(v => (
                   <button aria-pressed={sel[item.id] === v} key={v} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === v ? null : v }))}

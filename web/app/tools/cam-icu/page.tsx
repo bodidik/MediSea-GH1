@@ -121,8 +121,8 @@ export default function CAMICUPage() {
                 <p className="font-black text-blue-900 text-sm leading-snug">{feat.label}</p>
                 {feat.required && <span className="text-[8px] bg-rose-100 text-rose-700 font-black px-1.5 py-0.5 rounded-full shrink-0 mt-0.5">ZORUNLU</span>}
               </div>
-              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{feat.detail}</p>
-              <div className="flex gap-2">
+              <p id={`grp-0-${String(feat.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{feat.detail}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(feat.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2">
                 {([true, false] as const).map(v => (
                   <button aria-pressed={sel[feat.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [feat.id]: s[feat.id] === v ? null : v }))}

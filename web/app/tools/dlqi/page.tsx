@@ -81,10 +81,10 @@ export default function DLQIPage() {
           <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Son 1 haftanıza göre yanıtlayın</p>
           {ITEMS.map((item, idx) => (
             <div key={item.id} className="border border-slate-100 rounded-2xl p-3 bg-slate-50">
-              <p className="text-[11px] font-bold text-blue-950 mb-2 leading-snug">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[11px] font-bold text-blue-950 mb-2 leading-snug">
                 <span className="font-black text-slate-400 mr-1.5">{idx + 1}.</span>{item.q}
               </p>
-              <div className="flex gap-1.5">
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-1.5">
                 {OPTIONS.map(opt => (
                   <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}

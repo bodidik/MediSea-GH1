@@ -89,10 +89,10 @@ export default function GDS15Page() {
           <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Son bir haftanıza göre yanıtlayın</p>
           {ITEMS.map((item, idx) => (
             <div key={item.id} className="border border-slate-100 rounded-2xl p-3 bg-slate-50">
-              <p className="text-[11px] font-bold text-blue-950 mb-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[11px] font-bold text-blue-950 mb-2">
                 <span className="font-black text-slate-400 mr-1.5">{idx + 1}.</span>{item.q}
               </p>
-              <div className="flex gap-2">
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2">
                 {(["evet", "hayir"] as const).map(opt => {
                   const active = sel[item.id] === opt;
                   const scores = active && opt === item.scored;

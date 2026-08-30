@@ -27160,3 +27160,97 @@ burada.
 `/tekrar`daki 14 günlük etkinlik grafiği de aynı sınıfta (her çubuğun günü
 ve kart sayısı yalnızca `title`da) ama **yalnızca oturum bitince** çiziliyor;
 ölçülmedi ve "temiz" DENMİYOR.
+
+### 558 ŞIK DÜĞMESİ BAĞLAMSIZ DUYURULUYORDU — `cat-copd`de adları harfi harfine "0","1","2","3"
+
+Yeni eksen: **seçenek grupları programatik olarak adlandırılmış mı?** Bir
+soru satırının etiketi görsel olarak yanında duruyor ama `<fieldset>` /
+`role="group"` ile BAĞLI değilse, ekran okuyucu şıkları soruyu hiç anmadan
+okuyor — 15 satırlık bir ölçekte "Evet · Hayır" otuz kez arka arkaya.
+
+Ölçüldü (canlı, 130 araç):
+
+| ölçüt | değer |
+|---|---|
+| `<fieldset>` · `<legend>` · `role="radiogroup"` | **0 · 0 · 0** |
+| `role="group"` taşıyan dosya | **2** — `mascc` · `nrs-2002` |
+| seçenek grubu OLAN araç | **104** |
+| grup semantiği YOK | **102** · etkilenen kontrol **1529** |
+
+İkinci ve daha keskin ölçüm — **adı TEKRAR EDEN kontrol**: 73 araçta 1285
+şık düğmesi var, **28 aracın 558 kontrolü** aynı adı paylaşıyor:
+
+```
+76/76  haq-di    "Güçlük yok" x19 · "Biraz güçlük" x19 · "Çok güçlük" x19
+68/68  mrss      "0 Normal" x17
+62/62  rapid3
+48/48  cat-copd  "0" x8 · "1" x8 · "2" x8 · "3" x8
+40/40  dlqi      30/30  gds-15  ("Evet" x15 · "Hayır" x15)
+```
+
+**Doğru kalıp depoda ZATEN vardı** (`nrs-2002` ve `mascc`):
+`<span id={…}>{soru}</span>` + `<div role="group" aria-labelledby={…}>`.
+Eksik olan tutarlılıktı — ve **paylaşılan bir seçenek-grubu bileşeni yok**
+(`app/tools/components/` yalnızca AdBanner · SonucDuyuru · ToolShare ·
+ToolTopNav taşıyor), yani 102 araç grubu satır içi çiziyor.
+
+#### Süpürme KATI ŞEKLE bağlandı ve iki kez daraltıldı
+
+Ölçüt: `<p …>ETİKET</p>` HEMEN ardından `<div …>` ve o div'in bloğunda
+`aria-pressed` var. Kimlik, `<p>`yi GERÇEKTEN sarmalayan `key={EXPR}`den.
+
+**Beş kusur çıktı; ikisini kapılar yakaladı, ÜÇÜNÜ yalnızca bağımsız
+denetim gördü** — çünkü üçü de geçerli JSX üretiyor:
+
+| # | kusur | yakalayan |
+|---|---|---|
+| 1 | `key={…}` değeri `[^}]+` ile okunuyordu → şablon dizesindeki `${…}` yarıda kesti | **derleme** |
+| 2 | "en yakın ÖNCEKİ key=" **kapsamda olmayan** bir map değişkenini seçti (`apache2` → `opt.pts`) | **derleme** |
+| 3 | `scorad` — key bir CÜMLE (`Kaşıntı (pruritus)`), boşluklu id `aria-labelledby` tarafından **iki jetona bölündü** → SARKAN ATIF ×2 | **bağımsız denetim** |
+| 4 | `uas7` — iki grup aynı `key={i}` → **ÇİFT id** (`grp-0` ×2) | **bağımsız denetim** |
+| 5 | `canadian-ct` · `ipss-r` · `rts` — "statik" sanılan grup **çok kez render edilen bir bileşenin içinde** → düz kimlik 7×/5×/3× çiftlendi | **bağımsız denetim** |
+
+1 ve 2 için ölçüt düzeltildi (dengeli parantez + key'i taşıyan ögenin bloğu
+`<p>`yi gerçekten sarmalıyor mu). 3 ve 4 için kimlik **kaynak noktası
+indeksi + güvenli karaktere indirgeme** ile kuruldu. 5 için o üç araç
+**geri alındı** ve kalan iş olarak yazıldı — statik bir grubun tek örnekli
+olduğu KAYNAKTAN bilinemiyor.
+
+`cat-copd` mekanik şekle hiç uymadı ve **uymaması doğruydu**: iki kutuplu
+bir ölçek (`{item.a}` … `{item.b}`), tek kutupla adlandırmak yanlış olurdu.
+Elle yamalandı — iki `<p>` de kimlik aldı, ad ikisinden birden geliyor.
+
+#### Doğrulama — dördü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `role="group"` örneği | (2 dosya) | **254** |
+| **adı BOŞ grup** | — | **0** |
+| şık adı TEK BAŞINA tekrar eden kontrol | **558** | **558** (görünür etiketler değişmedi) |
+| **grup adıyla BİRLİKTE tekrar eden** | 558 | **55** — %90 ayrıldı |
+| `haq-di` | 76/76 | **0/76**, 27 grup, grupsuz şık **0** |
+| `cat-copd` | 48/48 | **0/48**, ad *"Hiç öksürmüyorum Her zaman öksürüyorum"* |
+| **negatif** — `haq-di` aritmetiği | — | 8/8 · **0.00 · MİNİMAL ENGELLİLİK** |
+| **negatif** — `cat-copd` aritmetiği | — | 8×3 = **CAT 24/40 · YÜKSEK ETKİ** |
+| **negatif** — 32 aracın GÖRÜNÜR METNİ (canlı ↔ yerel) | — | **32/32 BİREBİR AYNI** |
+| **negatif** — yatay taşma · taşan öge | — | 0 · 0 |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Sondan üçüncü satır bu süpürmenin asıl kanıtı: değişiklik yalnızca NİTELİK
+ekledi, hiçbir görünür içeriğe dokunmadı.
+
+#### KALAN İŞ — ölçüldü, "temiz" DENMİYOR
+
+**55 kontrol, 6 araç**: `nihss` 20/57 (kısmen) · `canadian-ct` 14/14 ·
+`essdai` 10/43 · `anaphylaxis` 6/6 · `gcs` 3/15 · `child-pugh` 2/15.
+Ayrıca **40 araçta hâlâ grup semantiği yok** — şekilleri farklı, mekanik
+süpürmeye uymuyor.
+
+**Aktarılabilir kural: toplu bir ARIA yerleştirmesini kapılarla doğrulama.**
+Kapılar sözdizimini sınıyor, İLİŞKİYİ değil — sarkan atıf, çift kimlik ve
+yanlış hedef üçü de geçerli JSX. Bu turda beş kusurun üçünü yalnızca
+yamanın mantığından BAĞIMSIZ, üretilmiş HTML'e bakan bir denetim gördü
+(her `role="group"` bir `aria-labelledby` taşıyor mu · hedef id gerçekten
+var mı · hedefin metni boş mu · sayfada çift id var mı). O denetimin kendi
+körlük koruması da işe yaradı: yol yanlışken "0 grup ölçüldü — TEMİZ
+SAYILMAZ" deyip düştü.

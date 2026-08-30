@@ -88,15 +88,15 @@ export default function HaqDiPage() {
         <div className="space-y-4">
           {CATEGORIES.map(cat => (
             <div key={cat.id} className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
-              <p className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{cat.label}</p>
-              <div className="space-y-4">
+              <p id={`grp-0-${String(cat.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-4">{cat.label}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(cat.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-4">
                 {cat.items.map((item, i) => {
                   const key = `${cat.id}_${i}`;
                   const val = scores[key] ?? -1;
                   return (
                     <div key={key}>
-                      <p className="text-sm font-bold text-blue-900 mb-2">{item}</p>
-                      <div className="flex gap-2 flex-wrap">
+                      <p id={`grp-1-${String(key).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-sm font-bold text-blue-900 mb-2">{item}</p>
+                      <div role="group" aria-labelledby={`grp-1-${String(key).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2 flex-wrap">
                         {SCORE_OPTS.map(opt => (
                           <button aria-pressed={val === opt.v} key={opt.v} type="button" onClick={() => setScore(key, opt.v)}
                             className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all

@@ -112,8 +112,8 @@ export default function FrailPage() {
                   <p className="text-[9px] text-slate-400 font-bold">{item.detail}</p>
                 </div>
               </div>
-              <p className="text-[11px] font-bold text-blue-950 mb-3 leading-snug">{item.q}</p>
-              <div className="flex gap-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[11px] font-bold text-blue-950 mb-3 leading-snug">{item.q}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2">
                 {([true, false] as const).map(val => (
                   <button aria-pressed={sel[item.id] === val} key={String(val)} type="button" onClick={() => toggle(item.id, val)}
                     className={`flex-1 py-2.5 rounded-xl border-2 text-[10px] font-black uppercase tracking-widest transition-all

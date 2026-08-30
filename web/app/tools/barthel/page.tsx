@@ -75,8 +75,8 @@ export default function BarthelPage() {
         <div className="space-y-3">
           {ITEMS.map(item => (
             <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-              <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">{item.label}</p>
-              <div className="flex flex-wrap gap-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">{item.label}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex flex-wrap gap-2">
                 {item.options.map(opt => {
                   const active = sel[item.id] === opt.pts;
                   return (

@@ -109,8 +109,8 @@ export default function SCORADPage() {
         {/* A: Alan */}
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">A — Tutulum Alanı</p>
-          <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Atopik dermatit lezyonlarının vücut yüzeyine oranı (kural-9 veya genel tahmini)</p>
-          <div className="space-y-1.5">
+          <p id={"grp-s0"} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Atopik dermatit lezyonlarının vücut yüzeyine oranı (kural-9 veya genel tahmini)</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="space-y-1.5">
             {AREA_OPTS.map(opt => (
               <button aria-pressed={area === opt.pts} key={opt.pts} type="button"
                 onClick={() => setArea(a => a === opt.pts ? null : opt.pts)}
@@ -127,12 +127,12 @@ export default function SCORADPage() {
         {/* B: Yoğunluk */}
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">B — Yoğunluk Kriterleri</p>
-          <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Temsili bir lezyonu değerlendirin · Her kriter 0–3</p>
-          <div className="space-y-3">
+          <p id={"grp-s1"} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Temsili bir lezyonu değerlendirin · Her kriter 0–3</p>
+          <div role="group" aria-labelledby={"grp-s1"} className="space-y-3">
             {INTENSITY_ITEMS.map(item => (
               <div key={item.id}>
-                <p className="text-[10px] font-black text-blue-900 mb-1">{item.label} <span className="text-slate-400 font-bold normal-case">— {item.detail}</span></p>
-                <div className="flex gap-1.5">
+                <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-black text-blue-900 mb-1">{item.label} <span className="text-slate-400 font-bold normal-case">— {item.detail}</span></p>
+                <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-1.5">
                   {INT_OPTS.map(opt => (
                     <button aria-pressed={intSel[item.id] === opt.pts} key={opt.pts} type="button"
                       onClick={() => setIntSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
@@ -157,8 +157,8 @@ export default function SCORADPage() {
             { label: "Uyku Bozukluğu", val: sleep, set: setSleep },
           ].map(({ label, val, set }) => (
             <div key={label} className="mb-3">
-              <p className="text-[10px] font-black text-blue-900 mb-2">{label}</p>
-              <div className="flex gap-1 flex-wrap">
+              <p id={`grp-1-${String(label).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-black text-blue-900 mb-2">{label}</p>
+              <div role="group" aria-labelledby={`grp-1-${String(label).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-1 flex-wrap">
                 {Array.from({ length: 11 }, (_, v) => (
                   <button aria-pressed={val === v} key={v} type="button" onClick={() => set(s => s === v ? null : v)}
                     className={`w-8 h-8 rounded-xl border-2 text-[10px] font-black transition-all

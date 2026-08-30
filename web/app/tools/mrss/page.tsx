@@ -91,8 +91,8 @@ export default function MRSSPage() {
           {REGIONS.map(region => (
             <div key={region.id} className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
-                <p className="text-[11px] font-black text-blue-900 w-full sm:w-40 sm:shrink-0">{region.label}</p>
-                <div className="flex gap-1 flex-1">
+                <p id={`grp-0-${String(region.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[11px] font-black text-blue-900 w-full sm:w-40 sm:shrink-0">{region.label}</p>
+                <div role="group" aria-labelledby={`grp-0-${String(region.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-1 flex-1">
                   {OPTS.map(opt => (
                     <button aria-pressed={sel[region.id] === opt.pts} key={opt.pts} type="button"
                       onClick={() => setSel(s => ({ ...s, [region.id]: s[region.id] === opt.pts ? null : opt.pts }))}

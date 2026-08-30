@@ -111,8 +111,8 @@ export default function HEARTPage() {
           {ITEMS.map(item => (
             <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
-              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
-              <div className="space-y-1.5">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                 {item.options.map(opt => (
                   <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}

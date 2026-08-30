@@ -232,8 +232,8 @@ export default function SodiumPage() {
 
         {/* Hasta bilgileri — her mod için ortak */}
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
-          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hasta Bilgileri</p>
-          <div className="flex gap-3">
+          <p id={"grp-s0"} className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Hasta Bilgileri</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="flex gap-3">
             {[{ v: "male", l: "Erkek" }, { v: "female", l: "Kadın" }].map(s => (
               <button aria-pressed={sex === s.v} key={s.v} type="button" onClick={() => setSex(s.v)}
                 className={`flex-1 py-3 rounded-xl border text-sm font-bold transition-all
@@ -325,8 +325,8 @@ export default function SodiumPage() {
               <InputField label="Hedef Na⁺" value={targetNa} set={setTargetNa} ph="ör. 130" unit="mEq/L" />
 
               <div>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Düzeltme Tipi</p>
-                <div className="flex gap-3">
+                <p id={"grp-s1"} className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Düzeltme Tipi</p>
+                <div role="group" aria-labelledby={"grp-s1"} className="flex gap-3">
                   {[
                     { v: "chronic" as const, l: "Kronik (≤8 mEq/L/gün)" },
                     { v: "acute" as const, l: "Akut / semptomatik (≤12 mEq/gün)" },
@@ -341,8 +341,8 @@ export default function SodiumPage() {
               </div>
 
               <div>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Kullanılacak Sıvı</p>
-                <div className="space-y-2">
+                <p id={"grp-s2"} className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Kullanılacak Sıvı</p>
+                <div role="group" aria-labelledby={"grp-s2"} className="space-y-2">
                   {INFUSATES.map((inf, i) => (
                     <button aria-pressed={infuseIdx === i} key={inf.label} type="button" onClick={() => setInfuseIdx(i)}
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between
@@ -427,8 +427,8 @@ export default function SodiumPage() {
             <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
               <InputField label="Hedef Na⁺" value={hyperTarget} set={setHyperTarget} ph="140" unit="mEq/L" />
               <div>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Serbest Su Kaynağı</p>
-                <div className="space-y-2">
+                <p id={"grp-s3"} className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Serbest Su Kaynağı</p>
+                <div role="group" aria-labelledby={"grp-s3"} className="space-y-2">
                   {INFUSATES.filter(inf => inf.na < 154).map((inf, i) => (
                     <button aria-pressed={fwFluid === INFUSATES.indexOf(inf)} key={inf.label} type="button" onClick={() => setFwFluid(INFUSATES.indexOf(inf))}
                       className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between

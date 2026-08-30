@@ -71,8 +71,8 @@ export default function BehcetPage() {
                 <p className="font-black text-blue-900 uppercase italic text-sm">{item.label}</p>
                 <span className={`text-[9px] font-black px-2 py-0.5 rounded-full ${item.pts === 2 ? "bg-blue-900 text-white" : "bg-slate-200 text-slate-600"}`}>+{item.pts} puan</span>
               </div>
-              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
-              <div className="flex gap-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2">
                 {([true, false] as const).map(v => (
                   <button aria-pressed={sel[item.id] === v} key={String(v)} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === v ? null : v }))}

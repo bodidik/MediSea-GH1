@@ -119,10 +119,10 @@ export default function RAPID3Page() {
           <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">İşlevsel Durum — Son 1 Hafta</p>
           {FUNCTION_ITEMS.map((item, idx) => (
             <div key={item.id} className="border border-slate-100 rounded-xl p-3 bg-slate-50">
-              <p className="text-[10px] font-bold text-blue-950 mb-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-bold text-blue-950 mb-2">
                 <span className="font-black text-slate-400 mr-1.5">{idx + 1}.</span>{item.q}
               </p>
-              <div className="flex gap-1.5">
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-1.5">
                 {FUNC_OPTS.map(opt => (
                   <button aria-pressed={func[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setFunc(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
@@ -137,8 +137,8 @@ export default function RAPID3Page() {
         </div>
 
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
-          <p className="font-black text-blue-900 uppercase italic text-sm mb-4">Ağrı (Son 1 Hafta) — 0 = Ağrı Yok · 10 = En Kötü Ağrı</p>
-          <div className="flex gap-1 flex-wrap">
+          <p id={"grp-s0"} className="font-black text-blue-900 uppercase italic text-sm mb-4">Ağrı (Son 1 Hafta) — 0 = Ağrı Yok · 10 = En Kötü Ağrı</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="flex gap-1 flex-wrap">
             {Array.from({ length: 11 }, (_, v) => (
               <button aria-pressed={pain === v} key={v} type="button" onClick={() => setPain(p => p === v ? null : v)}
                 className={`w-9 h-9 rounded-xl border-2 text-[11px] font-black transition-all
@@ -148,8 +148,8 @@ export default function RAPID3Page() {
         </div>
 
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
-          <p className="font-black text-blue-900 uppercase italic text-sm mb-4">Global Değerlendirme (Son 1 Hafta) — 0 = Çok İyi · 10 = Çok Kötü</p>
-          <div className="flex gap-1 flex-wrap">
+          <p id={"grp-s1"} className="font-black text-blue-900 uppercase italic text-sm mb-4">Global Değerlendirme (Son 1 Hafta) — 0 = Çok İyi · 10 = Çok Kötü</p>
+          <div role="group" aria-labelledby={"grp-s1"} className="flex gap-1 flex-wrap">
             {Array.from({ length: 11 }, (_, v) => (
               <button aria-pressed={global === v} key={v} type="button" onClick={() => setGlobal(g => g === v ? null : v)}
                 className={`w-9 h-9 rounded-xl border-2 text-[11px] font-black transition-all

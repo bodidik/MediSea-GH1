@@ -127,8 +127,8 @@ export default function BerlinARDSPage() {
 
           <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
             <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">4. Oksijenasyon (PaO₂/FiO₂)</p>
-            <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">PEEP veya CPAP ≥ 5 cmH₂O durumunda — entübe olmayan hastalarda CPAP ile CPAP ≥ 5</p>
-            <div className="space-y-1.5">
+            <p id={"grp-s0"} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">PEEP veya CPAP ≥ 5 cmH₂O durumunda — entübe olmayan hastalarda CPAP ile CPAP ≥ 5</p>
+            <div role="group" aria-labelledby={"grp-s0"} className="space-y-1.5">
               {[
                 { v: "no_ards", label: "> 300 mmHg",            sub: "ARDS kriterini karşılamıyor" },
                 { v: "mild",    label: "201–300 mmHg",           sub: "Hafif ARDS" },

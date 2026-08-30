@@ -114,10 +114,10 @@ export default function ACTPage() {
         <div className="space-y-3">
           {ITEMS.map((item, idx) => (
             <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-              <p className="text-[11px] font-bold text-blue-950 mb-3 leading-snug">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[11px] font-bold text-blue-950 mb-3 leading-snug">
                 <span className="font-black text-slate-400 mr-1.5">{idx + 1}.</span>{item.q}
               </p>
-              <div className="space-y-1.5">
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                 {item.options.map(opt => (
                   <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
                     onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}

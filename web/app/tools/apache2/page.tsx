@@ -231,8 +231,8 @@ export default function APACHE2Page() {
         <div className="space-y-2">
           {PHYSIO.map(param => (
             <div key={param.id} className="bg-white rounded-2xl border border-slate-200 p-3 shadow-sm">
-              <p className="font-black text-blue-900 uppercase italic text-[11px] mb-2">{param.label}{param.unit ? ` (${param.unit})` : ""}</p>
-              <div className="flex flex-wrap gap-1">
+              <p id={`grp-0-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="font-black text-blue-900 uppercase italic text-[11px] mb-2">{param.label}{param.unit ? ` (${param.unit})` : ""}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(param.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex flex-wrap gap-1">
                 {param.opts.map(opt => (
                   <button key={`${opt.pts}-${opt.label}`} type="button"
                     aria-pressed={sel[param.id]?.label === opt.label}
@@ -269,8 +269,8 @@ export default function APACHE2Page() {
         </div>
 
         <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-          <p className="font-black text-blue-900 uppercase italic text-sm mb-3">Yaş</p>
-          <div className="flex flex-wrap gap-1.5">
+          <p id={"grp-s0"} className="font-black text-blue-900 uppercase italic text-sm mb-3">Yaş</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="flex flex-wrap gap-1.5">
             {AGE_OPTS.map(opt => (
               <button key={opt.pts} type="button"
                 aria-pressed={age === opt.pts}
@@ -286,8 +286,8 @@ export default function APACHE2Page() {
         </div>
 
         <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
-          <p className="font-black text-blue-900 uppercase italic text-sm mb-3">Kronik Hastalık Puanı</p>
-          <div className="space-y-1.5">
+          <p id={"grp-s1"} className="font-black text-blue-900 uppercase italic text-sm mb-3">Kronik Hastalık Puanı</p>
+          <div role="group" aria-labelledby={"grp-s1"} className="space-y-1.5">
             {CHRONIC_OPTS.map(opt => (
               <button key={opt.label} type="button"
                 aria-pressed={chronic?.label === opt.label}

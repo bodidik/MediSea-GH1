@@ -215,8 +215,8 @@ export default function CiwaArPage() {
                   </span>
                 )}
               </div>
-              <p className="text-[10px] font-bold text-slate-400 italic mb-4">{item.question}</p>
-              <div className="space-y-2">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[10px] font-bold text-slate-400 italic mb-4">{item.question}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-2">
                 {item.opts.map(opt => {
                   const sel = cur === opt.v;
                   return (

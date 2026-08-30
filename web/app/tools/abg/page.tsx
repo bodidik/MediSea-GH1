@@ -288,12 +288,12 @@ export default function AbgPage() {
             <p className="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-1">
               Solunum bozukluğu akut mu, kronik mi?
             </p>
-            <p className="text-[11px] text-slate-600 mb-3 leading-relaxed">
+            <p id={"grp-s0"} className="text-[11px] text-slate-600 mb-3 leading-relaxed">
               Bu ayrımı sayılar veremez — böbrek yanıtı günler içinde oturur.
               Seçim beklenen HCO₃⁻ aralığını, dolayısıyla mikst bozukluk kararını
               doğrudan değiştirir.
             </p>
-            <div className="flex gap-3">
+            <div role="group" aria-labelledby={"grp-s0"} className="flex gap-3">
               {(["akut", "kronik"] as const).map((t) => (
                 <button
                   key={t}

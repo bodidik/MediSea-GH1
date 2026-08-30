@@ -178,8 +178,8 @@ export default function GoutACRPage() {
         {/* Adım 1: Giriş */}
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <p className="font-black text-blue-900 uppercase italic text-sm mb-1">Adım 1 — Giriş Kriteri</p>
-          <p className="text-[10px] text-slate-600 mb-3">Periferik eklem veya bursada ≥ 1 atak epizodu var mı?</p>
-          <div className="flex gap-2">
+          <p id={"grp-s0"} className="text-[10px] text-slate-600 mb-3">Periferik eklem veya bursada ≥ 1 atak epizodu var mı?</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="flex gap-2">
             {([true, false] as const).map(v => (
               <button key={String(v)} type="button" aria-pressed={entry === v}
                 onClick={() => setEntry(e => e === v ? null : v)}
@@ -194,8 +194,8 @@ export default function GoutACRPage() {
         {entry === true && (
           <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
             <p className="font-black text-blue-900 uppercase italic text-sm mb-1">Adım 2 — Yeterli Tanı</p>
-            <p className="text-[10px] text-slate-600 mb-3">Sinoviyal sıvı veya tofüs aspiratında MSU kristali görüldü mü?</p>
-            <div className="flex gap-2">
+            <p id={"grp-s1"} className="text-[10px] text-slate-600 mb-3">Sinoviyal sıvı veya tofüs aspiratında MSU kristali görüldü mü?</p>
+            <div role="group" aria-labelledby={"grp-s1"} className="flex gap-2">
               {([true, false] as const).map(v => (
                 <button key={String(v)} type="button" aria-pressed={msu === v}
                   onClick={() => setMsu(m => m === v ? null : v)}
@@ -213,8 +213,8 @@ export default function GoutACRPage() {
             {DOMAIN_ITEMS.map(item => (
               <div key={item.id} className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
                 <p className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
-                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
-                <div className="space-y-1.5">
+                <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
+                <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
                   {item.options.map((opt, i) => {
                     const active = item.single ? sel[item.id][0] === i : sel[item.id].includes(i);
                     return (

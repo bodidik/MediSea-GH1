@@ -80,8 +80,8 @@ export default function FibromiyaljiPage() {
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">WPI — Yaygın Ağrı İndeksi</p>
             <span className="text-2xl font-black text-blue-900">{wpiScore}<span className="text-sm text-slate-400">/19</span></span>
           </div>
-          <p className="text-[10px] font-bold text-slate-400 mb-4">Son 1 haftada ağrı hissetttiğiniz bölgeleri seçin</p>
-          <div className="flex flex-wrap gap-2">
+          <p id={"grp-s0"} className="text-[10px] font-bold text-slate-400 mb-4">Son 1 haftada ağrı hissetttiğiniz bölgeleri seçin</p>
+          <div role="group" aria-labelledby={"grp-s0"} className="flex flex-wrap gap-2">
             {WPI_AREAS.map(area => (
               <button aria-pressed={wpi.has(area)} key={area} type="button" onClick={() => toggleWpi(area)}
                 className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-wide transition-all
@@ -100,8 +100,8 @@ export default function FibromiyaljiPage() {
           </div>
           {SS_ITEMS.map(item => (
             <div key={item.id}>
-              <p className="text-sm font-bold text-blue-900 mb-2">{item.label}</p>
-              <div className="flex gap-2 flex-wrap">
+              <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-sm font-bold text-blue-900 mb-2">{item.label}</p>
+              <div role="group" aria-labelledby={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="flex gap-2 flex-wrap">
                 {SEVERITY.map(s => (
                   <button aria-pressed={sev[item.id] === s.v} key={s.v} type="button" onClick={() => setSevVal(item.id, s.v)}
                     className={`px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
@@ -119,8 +119,8 @@ export default function FibromiyaljiPage() {
           ))}
 
           <div className="pt-3 border-t border-slate-100">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Genel Bedensel Semptomlar (son 6 ay)</p>
-            <div className="flex flex-wrap gap-2">
+            <p id={"grp-s1"} className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Genel Bedensel Semptomlar (son 6 ay)</p>
+            <div role="group" aria-labelledby={"grp-s1"} className="flex flex-wrap gap-2">
               {SS_EXTRA.map(s => (
                 <button aria-pressed={extra.has(s)} key={s} type="button" onClick={() => toggleExtra(s)}
                   className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-wide transition-all
