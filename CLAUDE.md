@@ -27419,3 +27419,35 @@ düşünülüp `-2` eki konmuştu — yani teknik çakışma öngörülmüştü.
 ETİKET çakışması düşünülmemişti ve o, çapadan farklı olarak kullanıcıya
 görünüyor. Bir liste üreten her kod için iki ayrı soru var: **hedefler
 benzersiz mi** ve **etiketler ayırt edilebilir mi**.
+
+#### ⚠ Yeni denetim dosyası GİT tarafından İKİLİ sayıldı — kaynakta NUL bayt
+
+Commit çıktısı ele verdi:
+
+```
+web/scripts/kopya-bolum-denetim.cjs   Bin 0 -> 7959 bytes
+```
+
+`Bin` yani git dosyayı **ikili** sayıyor ve bir daha hiçbir değişikliğinin
+diff'ini göstermeyecek. Sebep: karşılaştırma anahtarında ayraç olarak
+kullanmak istediğim ` ` **kaçış dizisi olarak değil, GERÇEK NUL
+karakteri olarak** dosyaya indi (`tr -cd '\000' | wc -c` → **1**).
+
+Bu, belgede kayıtlı "kanal dosyayı bozuyor" ailesinin yeni bir üyesi —
+öncekiler heredoc ve `node -e`'nin ters bölü düşürmesiydi; buradaki kanal
+dosya YAZMA aracı ve bozulma sessiz: betik **doğru çalışıyor**, kapılar
+geçiyor, yalnızca git'in gözünde metin olmaktan çıkıyor.
+
+Çare ayracı kaldırmak DEĞİL — bir ayraç gerekiyordu, çünkü düz birleştirme
+belirsiz: başlık `"A B"` + gövde `"C"` ile başlık `"A"` + gövde `"B C"` aynı
+anahtarı üretir. Çözüm kodlamayı belirsizlikten kurtarmak:
+`JSON.stringify([h, g])` — kontrol karakteri yok, çakışma yok.
+
+**Negatif kontrol:** değişiklikten önce ve sonra denetimin çıktısı **birebir
+aynı** (`diff` farkı 0) ve altı `--kontrol` kontrolü geçiyor — yani düzeltme
+davranışa dokunmadı.
+
+**Aktarılabilir kural: yeni bir kaynak dosyayı commit ettikten sonra
+`git show --stat` satırına bak.** `Bin 0 -> N bytes` gören her metin dosyası
+kusurludur; sebebi neredeyse her zaman kazara bir kontrol karakteridir ve
+`tr -cd '\000' | wc -c` tek adımda söylüyor.
