@@ -27869,3 +27869,18 @@ doğruydu; sorulmayan soru, aynı klinik bilginin **çok daha büyük** bir
 yüzeyde (423 konu) hiç uyarı taşımadığıydı. Ölçütü kurmanın ucuz yolu:
 kuralı sayfa başına değil **ürün genelinde** say ve payda olarak "klinik
 metin basan sayfa" al.
+
+#### CANLIDA doğrulandı
+
+| ölçüt | canlıda |
+|---|---|
+| konu örneklemi (site haritasından eşit aralıklı) | **18 / 18** uyarı taşıyor |
+| alt bilgi kontrastı (375px) | **10.01** · 11px · sağ kenar 351 < 375 |
+| **negatif** — alt bilgi bağlantıları · telif satırı | **10** · **var** |
+| **negatif** — `/uyelik` · `/tekrar` | uyarı **var** (`(site)` grubu kapsanıyor) |
+| **negatif** — `/tools/bmi` | alt bilgi **0**, ama aracın **kendi** uyarısı yerinde |
+| **negatif** — 375px yatay kayma | **0** |
+
+Son iki satır kapsam kararının kanıtı: araç sayfaları AppShell almıyor ve
+alt bilgi orada hiç basılmıyor — ama o yüzeyde uyarı zaten araç kabuğundan
+geliyor, yani boşluk yok.
