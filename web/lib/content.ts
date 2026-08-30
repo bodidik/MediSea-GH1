@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { aramaNormalize } from '@/app/lib/arama';
+import { aramaNormalize, aramaAnahtariKur, aramaAnahtariEslesir } from '@/app/lib/arama';
 import aracIndex from "@/content/arac-index.json";
 
 // 👇 TİP TANIMLAMALARI
@@ -185,6 +185,18 @@ function aramaIndeksiniAl(): AramaBolumu[] {
   return (aramaIndeksi = bolumler);
 }
 
+/**
+ * Araç arama anahtarları — süreç ömrü boyunca BİR KEZ.
+ *
+ * `searchContent` her sorguda çağrılıyor; 130 kaydın anahtarını sorgu başına
+ * yeniden kurmak gereksiz iş. Aynı karar bölüm indeksinde de alınmıştı.
+ */
+const ARAC_KAYITLARI = (aracIndex as { slug: string; name: string; desc?: string }[]).map(a => ({
+  ...a,
+  adAnahtari: aramaAnahtariKur(a.name, a.slug),
+  aciklamaAnahtari: aramaAnahtariKur(a.desc),
+}));
+
 export async function searchContent(query: string): Promise<SearchResult[]> {
   /**
    * Türkçe-duyarlı normalleştirme (app/lib/arama.ts).
@@ -246,9 +258,11 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
    */
   const aracAdEsleyen: SearchResult[] = [];
   const aracAciklamaEsleyen: SearchResult[] = [];
-  for (const arac of aracIndex as { slug: string; name: string; desc?: string }[]) {
-    const adTuttu = aramaNormalize(arac.name).includes(cleanQuery);
-    const aciklamaTuttu = !adTuttu && aramaNormalize(arac.desc || '').includes(cleanQuery);
+  for (const arac of ARAC_KAYITLARI) {
+    // SLUG ad sayılıyor: adres biçimi çoğu zaman akılda kalan biçim ve bazı
+    // araçların adı Türkçe, slug'ı İngilizce (endocarditis -> Duke Kriterleri).
+    const adTuttu = aramaAnahtariEslesir(arac.adAnahtari, query);
+    const aciklamaTuttu = !adTuttu && aramaAnahtariEslesir(arac.aciklamaAnahtari, query);
     if (!adTuttu && !aciklamaTuttu) continue;
     const kayit: SearchResult = {
       title: arac.name,

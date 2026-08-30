@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { aramaEslesir } from "@/app/lib/arama";
+import { aramaAnahtariKur, aramaAnahtariEslesir } from "@/app/lib/arama";
 import { siteIciGecmisVar } from "@/app/lib/gecmis";
 
 // --- MEDISEA HESAPLAYICI VERİTABANI (SİSTEMATİK GÜNCELLEME) ---
@@ -281,6 +281,20 @@ const TOOLS_DATABASE = [
  * bileşeni olan /topics 98 KB ve 43 bağlantı basıyor. Yani 114 aracın hub
  * bağlantısı ilk tarama dalgasında hiç yoktu.
  */
+/**
+ * Arama anahtarları MODÜL DÜZEYİNDE bir kez kuruluyor.
+ *
+ * Süzgeç her tuş vuruşunda 130 aracı geziyor; anahtarı çağrı anında kurmak
+ * tuş başına yüzlerce normalleştirme demekti (Türkçe küçültme + NFKD + iki
+ * regex). Veri modül düzeyinde sabit, anahtar da öyle.
+ */
+const ARAC_ANAHTARI: Record<string, ReturnType<typeof aramaAnahtariKur>> =
+  Object.fromEntries(
+    TOOLS_DATABASE.flatMap(cat =>
+      cat.items.map(it => [cat.slug + "/" + it.slug, aramaAnahtariKur(it.slug, it.name, it.desc, cat.category)] as const)
+    )
+  );
+
 export default function ToolsIcerik() {
   const router = useRouter();
   /* Doğrudan giren kullanıcıda `router.back()` sekmeyi siteden ÇIKARIYORDU
@@ -390,16 +404,18 @@ export default function ToolsIcerik() {
        * klavyeden gelen "İ" harfini bozuyordu ve 290 kelime bulunamaz
        * haldeydi. Aksan katlaması sayesinde "gogus" da "Göğüs"ü buluyor.
        *
+       * SLUG da aranıyor ve eşleşme NOKTALAMAYA duyarsız (bkz. arama.ts):
+       * ölçüldü, 130 aracın 65'i kendi slug'ıyla, 106'sı noktalamasız kendi
+       * adıyla bulunamıyordu — "curb65", "chads", "childpugh" sıfır sonuç.
+       *
        * KATEGORİ ADI da aranıyor: araçların çoğu kısaltmayla adlandırılmış
        * (NYHA, CHA2DS2-VASc, GRACE…), bu yüzden "nefroloji" ya da "nütrisyon"
        * arayan kullanıcı hiçbir sonuç göremiyordu. Kategori zaten
        * yapılandırılmış veri; tıbbi bir karar gerektirmeden aranabilir.
        */
-      items: aramaBos ? cat.items : cat.items.filter(it =>
-        aramaEslesir(it.name, searchTerm) ||
-        aramaEslesir(it.desc, searchTerm) ||
-        aramaEslesir(cat.category, searchTerm)
-      )
+      items: aramaBos
+        ? cat.items
+        : cat.items.filter(it => aramaAnahtariEslesir(ARAC_ANAHTARI[cat.slug + "/" + it.slug], searchTerm)),
     })).filter(cat => cat.items.length > 0);
 
   // Benzersiz araç sayılır, listeleme değil: bazı araçlar birden fazla branşta

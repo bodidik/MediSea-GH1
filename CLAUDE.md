@@ -27966,3 +27966,110 @@ sayfanın sardığını** sor.
 
 **Sıradaki iki ölçülmüş iş** (yapılmadı, kapsamı yazıldı): hub'ın 25.5 ekranı
 ve uzun araçlarda sonucun 3.4 ekran aşağıda kalması.
+
+### 130 ARACIN 65'İ KENDİ SLUG'IYLA BULUNAMIYORDU — "curb65" sıfır sonuç veriyordu
+
+Kullanıcının bildirdiği ihtiyaç: **araç adının bir parçasını yazınca hızlı
+ulaşmak.** Ölçüldü — iki arama yüzeyi de araçları yalnızca `name` ve `desc`
+üzerinden, düz `includes` ile eşleştiriyordu:
+
+| ölçüt (130 araç) | bugün |
+|---|---|
+| kendi **slug**'ıyla bulunamayan | **65** |
+| slug'ın 6 harflik önekiyle bulunamayan | 44 |
+| slug'ın 4 harflik önekiyle bulunamayan | 25 |
+| kendi **adıyla** (noktalamasız) bulunamayan | **106** |
+
+Üç ayrı sebep var ve üçü de kullanıcının YAZDIĞI biçimi vuruyor:
+
+| sebep | örnek |
+|---|---|
+| **slug hiç aranmıyor** | `endocarditis` → "Duke Kriterleri" · `canadian-ct` → "Kanada BT Kural" · `corrected-calcium` → "Düzeltilmiş Kalsiyum" — adı Türkçe, slug'ı İngilizce |
+| **noktalama ve ALT/ÜST SİMGE** | "curb65" ↛ "CURB-65" · "childpugh" ↛ "Child-Pugh" · **"CHA₂DS₂-VASc" (U+2082)** ve **"ABCD² Skoru" (U+00B2)** — klavyeden yazılamayan karakterler |
+| **kısaltma adda hiç geçmiyor** | `gcs` → "Glasgow Koma Skalası" |
+
+**CANLIDA önce/sonra çifti** (başlık araması): `chads` · `curb65` · `apache2`
+üçü de **"Sonuç bulunamadı."** → düzeltmeden sonra üçü de doğru aracı
+getiriyor.
+
+#### Kural MELEZ ve eşiği ÖLÇÜMLE seçildi
+
+Tek bir "her şeyi sil" anahtarı kapsamı çözüyor ama **kelime sınırında yanlış
+pozitif** üretiyor: "PERC Kriterleri" → `perckriterleri` ve iki harflik `ck`
+sorgusu ona takılıyor (ölçüldü: `ck` 2 → 5). Yalnızca noktalamayı silip
+boşluğu koruyan yumuşak anahtar ise kapsamı çözmüyor (65 → 55).
+
+Bu yüzden iki anahtar var ve sıkıştırılmış olan **yalnızca sorgu 4+ harfken**
+deneniyor:
+
+| ölçüt | bugün | sert | yumuşak | **melez** |
+|---|---|---|---|---|
+| slug'ıyla bulunamayan | 65 | 0 | 55 | **0** |
+| adıyla bulunamayan | 106 | 0 | 106 | **0** |
+| `ck` (2 harf) | 2 | **5** | 2 | **2** |
+| `as` (2 harf) | 76 | **80** | 76 | **76** |
+
+Ve 1296 iki-harflik sorgunun tamamında melez kuralın toplam ek sonucu **85** —
+hepsi slug eşleşmesi, kelime sınırı artefaktı değil.
+
+#### ⚠ SİMETRİK BOZULMA TESTTEN GEÇER — ters bölü tuzağının dokuzuncu biçimi
+
+Heredoc `\s` kaçışını yine düşürdü: `[^a-z0-9\s]` dosyaya `[^a-z0-9s]` olarak
+indi, yani **regex her `s` harfini boşlukla değiştiriyordu.**
+
+Kayda değer olan şu: **17 davranış vakasının 17'si de GEÇTİ.** Çünkü bozulma
+SİMETRİK — hem içerik hem sorgu aynı bozuk kuraldan geçiyor, `s`'ler iki
+tarafta da siliniyor ve karşılaştırma tutuyor. `tsc` de temiz.
+
+Kusuru gösteren tek şey **anahtarın DEĞERİNİ basmak** oldu:
+
+```
+beklenen : "chads vasc cha2ds2 vasc skoru"
+gerçek   : "chad  va c cha2d 2 va c  koru"
+```
+
+**Aktarılabilir kural: bir normalleştirmeyi yalnızca "eşleşti mi" ile sınama.**
+İki tarafı da bozan bir kusur eşitlik testinden geçer; testin ÜRETİLEN ANAHTARI
+beklenen değerle karşılaştırması gerekiyor. Test artık üç anahtar değeri
+doğruluyor (biri sekme/satır sonu için).
+
+Çare kaçışı düzeltmek değil, **kaçış istemeyen karşılığını yazmak**:
+`[^a-z0-9 ]` ve `/ +/g`. Taban zaten küçültülmüş metin; sekme ve satır sonu
+önce boşluğa dönüyor, sonra tek boşluğa daralıyor — davranış aynı, ters bölü
+yok. Ölçüldü: `"a\tb\nc"` → `"a b c"`.
+
+#### Anahtarlar MODÜL DÜZEYİNDE bir kez kuruluyor
+
+Hub her tuş vuruşunda 130 aracı süzüyor; anahtarı çağrı anında kurmak tuş
+başına yüzlerce normalleştirme (Türkçe küçültme + NFKD + iki regex) demekti.
+`searchContent` de her sorguda çağrılıyor. İkisinde de tablo modül düzeyinde.
+
+**Anahtar KATEGORİ+SLUG ile kuruluyor** — ölçümle yakalanan gerileme: 3 araç
+iki kategoride birden listeleniyor (133 listeleme / 130 araç) ve yalnızca
+slug ile anahtarlanınca kategori adı sonuncusuna eziliyordu; "nefroloji"
+arayan kullanıcı çapraz listelenen aracı kendi kategorisinde göremezdi.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| hub: `chads` · `curb65` · `apache2` · `childpugh` · `4thit` · `anion` · `wellspe` | **0** | **1** (doğru araç) |
+| başlık araması (CANLI ↔ yerel) | **"Sonuç bulunamadı."** | 1 sonuç, `/tools/chads-vasc` |
+| **negatif** — konu araması | `addison` 5 · `wells` 2 | **5 · 2** |
+| **negatif** — kategori araması | `nefroloji` 9 | **9** |
+| **negatif** — boş sorgu | 133 kart / "130 araç listeleniyor" | **133 / 130** |
+| **negatif** — Türkçe katlama | `gogus`=`Göğüs` · `İDRAR`=`idrar` | **korundu** |
+| **negatif** — kısa sorgu genişlemesi | `ck` 2 · `as` 76 | **2 · 76** |
+| **negatif** — anahtar değeri | — | üç değer de beklenenle **birebir** |
+| **negatif** — 19 davranış vakası | — | **19/19** |
+| 15 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+**Kapsam BİLEREK dar:** melez kural yalnızca ARAÇ eşleştirmesinde. Konu
+başlıkları ayrı bir yüzey (`nTitle`/`nTags`) ve aynı gevşetmeyi oraya
+ölçmeden bağlamak, 423 konuda ölçülmemiş bir genişleme olurdu.
+
+**Not edilen, DEĞİŞTİRİLMEYEN — hız:** başlık araması bir sunucu eylemi
+(300 ms geciktirme + kayıtlı ölçümde 250–500 ms sunucu). Hub'ın süzgeci ise
+istemcide ve anında. Araç indeksi 130 kayıt / gzip 6 kB; başlık aramasının
+araç yarısını istemciye almak turu sıfırlar ama her sayfaya 6 kB ekler —
+ölçülmüş bir ödünleşme, ürün kararı.
