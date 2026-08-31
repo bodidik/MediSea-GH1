@@ -573,7 +573,34 @@ export default function ToolsIcerik() {
             Kaydirma kabina KLAVYE ERISIMI ayrica gerekmiyor: icindeki her
             oge odaklanabilir bir baglanti, yani Tab kabi zaten suruyor
             (tablo kaplarinda durum farkliydi, orada metin vardi). */}
-        <div ref={cipKabiRef} className="flex gap-2 overflow-x-auto pb-2 -mb-2 md:flex-wrap md:overflow-visible md:pb-0 md:mb-0">
+        {/* MOBILDE SUZGEC SERIDI — cip satiri orada gizli oldugu icin,
+            aktif suzgeci GOREBILMENIN ve KALDIRABILMENIN tek yolu bu.
+            Yalnizca bir kategori seciliyken ciziliyor; olagan gorunumde
+            ekranda hicbir sey yok. */}
+        {seciliKategori ? (
+          <div className="flex items-center gap-2 md:hidden">
+            <span className="min-w-0 flex-1 truncate rounded-full bg-blue-950 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white">
+              {TOOLS_DATABASE.find((c) => c.slug === seciliKategori)?.category}
+            </span>
+            <Link
+              href={aramaBos ? "/tools" : `/tools?ara=${encodeURIComponent(searchTerm.trim())}`}
+              onClick={() => setKategori(null)}
+              className="shrink-0 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-slate-500 transition-colors hover:border-blue-900/30 hover:text-blue-900"
+            >
+              Tümü{" "}
+              <span className="rounded-full bg-blue-900/10 px-1.5 font-bold tabular-nums">{toplamArac}</span>
+            </Link>
+          </div>
+        ) : null}
+
+        {/* CIP SATIRI ARTIK YALNIZCA MASAUSTUNDE. Olculdu (canli, 375px):
+            cip metinleri akordeon basliklariyla BIREBIR ayni
+            ("🍏Klinik Nütrisyon (Beslenme)10" ile "🍏Klinik Nütrisyon
+            (Beslenme)10›"), yani mobilde ayni 18 kategori iki ayri
+            affordansla duruyordu. Masaustunde akordeonlarin hepsi ACIK,
+            yani orada kompakt bir dizin yok ve cipler tek suzgec — bu
+            yuzden orada kaliyor. */}
+        <div ref={cipKabiRef} className="hidden gap-2 md:flex md:flex-wrap">
           <Link
             href={aramaBos ? "/tools" : `/tools?ara=${encodeURIComponent(searchTerm.trim())}`}
             aria-current={!seciliKategori ? "true" : undefined}

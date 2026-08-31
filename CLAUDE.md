@@ -28325,3 +28325,76 @@ sonra CR ile LF'i AYRI AYRI say.**
   rağmen. Bu belgeye tuzak ANLATAN bir metin yazarken kanalın o metni bozması,
   kayıtlı "yorum körlüğü" ailesinin yazma tarafındaki hâli. Çare: markdown
   parçasını Write ile yaz, `cat >> CLAUDE.md` ile ekle.
+
+### AYNI 18 KATEGORİ MOBİLDE İKİ AFFORDANSLA DURUYORDU — çip metinleri akordeon başlıklarıyla BİREBİR
+
+Bir tur önce hub'a `<details>` akordeonu eklenince not düşülmüştü: *"üstteki
+554 px'in içinde 18 kategori çipi ve 18 akordeon başlığı yan yana duruyor —
+aynı 18 kategori iki ayrı affordansla."* O tur bir tasarım kararı olarak
+bırakılmıştı; bu tur ölçülüp kapatıldı.
+
+**Tekrar ölçümle kanıtlandı, gözle değil** (canlı, 375px):
+
+| kaynak | metin |
+|---|---|
+| çip | `🍏Klinik Nütrisyon (Beslenme)10` · `🧪Nefroloji9` · `🦴Romatoloji14` |
+| akordeon başlığı | `🍏Klinik Nütrisyon (Beslenme)10›` · `🧪Nefroloji9›` · `🦴Romatoloji14›` |
+
+Yani ikon, ad ve sayı üçü de aynı; fark yalnızca akordeonun `›` süslemesi.
+
+**Gerekçe YER DEĞİL, TEKRAR.** Çip satırı bir tur önce tek sıraya alınmıştı ve
+bugün yalnızca **43 px** (belgenin **%1.3'ü**). Kaldırmanın kazancı ölçüldü ve
+mütevazı: belge **3151 → 3061**, ilk özet **554 → 463**, ilk ekrandaki kategori
+**3 → 4**. Asıl kazanç, sayfanın tepesinde aynı listenin iki kez durmaması.
+
+#### MASAÜSTÜNDE KALIYOR — ve sebebi ölçülebilir
+
+Masaüstünde akordeonların **18'i de AÇIK** (katlama yalnızca `innerWidth < 768`
+için uygulanıyor), yani orada kompakt bir dizin yok: 18 başlık 11442 px'e
+yayılmış durumda. Çipler orada tek süzgeç ve tek "Tümü" çıkışı. Mobil
+redundansı kaldırmak için masaüstündeki tek işlevi silmek gerekmiyor —
+`hidden md:flex` ikisini ayırıyor.
+
+#### KALDIRMAK BİR YETENEĞİ DE GÖTÜRÜYORDU — yerine konan şey
+
+Çipler yalnızca gezinme değil, **aktif süzgecin tek görünür işareti**:
+`?kategori=x` ile gelen kullanıcı (başlık menüsündeki altı kategori bağı tam
+bunu yapıyor) mobilde hangi süzgecin açık olduğunu göremez ve
+temizleyemezdi — sayfa 9 araç gösterirken sebebi ekranda yazmazdı.
+
+Bu yüzden mobilde **yalnızca süzgeç etkinken** iki ögeli bir şerit çiziliyor:
+seçili kategorinin adı + `Tümü <sayı>` çıkışı. Olağan görünümde ekranda
+hiçbir şey yok, yani ölü katman eklenmedi.
+
+#### SUNUCU HTML'İ DEĞİŞMİYOR
+
+Çip satırı `hidden` ile gizleniyor, **kaldırılmıyor** — 18 kategori bağı
+üretilen HTML'de duruyor. Ölçüldü: araç bağı **133**, kategori bağı **18**,
+`<details>` 18, `<summary>` 18, `h1` 1, `h2` 19 — hepsi bir öncekiyle birebir.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| 375px belge | 3151 | **3061** |
+| 375px ilk özet · ilk ekranda kategori | 554 · 3 | **463 · 4** |
+| 375px görünür kategori çipi | 18 + Tümü | **0** |
+| DOM'daki kategori bağı | 19 | **19** (crawl korundu) |
+| **375px `?kategori=nefroloji`** | çipte `aria-current` | **süzgeç şeridi**: "Nefroloji" 207×33 + "Tümü 130" 112×35 → `/tools` |
+| kontrast (şerit) | — | **14.69** (etiket) · **7.24** (Tümü) |
+| **negatif** — süzgeç yokken şerit | — | **çizilmiyor** |
+| **negatif** — "Tümü"ye tıklama | — | `/tools`, şerit yok, 0 akordeon açık, sayaç **130** |
+| **negatif** — arama + süzgeç birlikte | — | "Tümü" adresi terimi TAŞIYOR (`/tools?ara=kalsiyum`), 1 kart, "1 araç bulundu" |
+| **negatif** — MASAÜSTÜ 1280×900 | 11442 · çip kabı 162px · 18 çip · 133 kart | **birebir aynı** |
+| **negatif** — sunucu HTML | 133 · 18 · 18 · 18 · 1 · 19 | **birebir aynı** |
+| **negatif** — 375/1280 yatay kayma | 0 | **0 · 0** |
+| 15 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Beşinci satır bu değişikliğin asıl riskiydi: çipi kaldırmak, başlık menüsünden
+gelen kullanıcıyı süzgeci göremediği ve kaldıramadığı bir sayfada bırakırdı.
+
+**Aktarılabilir kural: bir affordansı "tekrar" diye kaldırırken, onun TEK
+BAŞINA taşıdığı işi ayrıca say.** Buradaki çip satırı üç şey yapıyordu —
+gezinme, aktif süzgeç göstergesi, ve URL durumu. Yalnızca birincisi
+akordeonla tekrarlanıyordu; ikincisinin yerine bir şey konmasaydı düzeltme
+kendi kusurunu üretirdi.
