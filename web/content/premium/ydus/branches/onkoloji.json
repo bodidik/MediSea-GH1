@@ -31,6 +31,23 @@
           "hazir": false
         }
       ]
+    },
+    {
+      "id": "solid-tumorler",
+      "baslik": "Solid Tümörler",
+      "aciklama": "Gastrointestinal ve diğer solid organ malignitelerinin epidemiyolojisi, moleküler patogenezi ve güncel tedavi protokolleri",
+      "emoji": "🧬",
+      "konular": [
+        {
+          "id": "pankreas-kanseri",
+          "baslik": "Pankreas Kanseri — Epidemiyoloji, Moleküler Patogenez ve İleri Tedaviler",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "id": "pankreas-kanseri",
+    "branch": "onkoloji",
+    "baslik": "Pankreas Kanseri",
+    "altbaslik": "Epidemiyoloji ve genetik sendromlar, PanIN moleküler patogenezi, klinik prezentasyon ve evreleme, KRAS/PARP/immünoterapi/TTFields ile ileri tedavi protokolleri, SMAD4 biyolojik rezektabilite ve yüksek riskli sürveyans",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 26,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Radyolojik Evreleme — Vasküler Kriterler",
+      "kolonlar": [
+        "Evre",
+        "Kritik Vasküler İlişki"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Rezektabl",
+            "Çölyak/SMA/ortak hepatik arterle temas yok; portal ven/SMV'de ≤180° sınırlı temas"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Sınırda Rezektabl",
+            "SMA/çölyak arterle <180° temas; portal ven/SMV'de rekonstrüksiyona uygun daralma/oklüzyon"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Lokal İleri (Anrezektabl)",
+            "Çölyak trunkus/SMA/ortak hepatik arterin >180° sarılması; SMV/portal vende tam oklüzyon"
+          ]
+        },
+        {
+          "hucreler": [
+            "Metastatik",
+            "Uzak organ (karaciğer, akciğer, periton) veya bölgesel olmayan uzak lenf nodu tutulumu"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; epidemiyoloji ve germline genetik sendromlar (STK11, CDKN2A, PRSS1, BRCA/PALB2/ATM, Lynch), PanIN moleküler patogenez modeli (KRAS erken, SMAD4/TP53 geç), klinik prezentasyon farkları (baş vs gövde/kuyruk), Trousseau sendromu, radyolojik evreleme, diyabet-PDAC çift yönlü ilişkisi (adrenomedullin, C-peptid/8 yıl kuralı, Tip 3c), KRAS hedefli tedaviler (G12C inhibitörleri, daraxonrasib, setidegrasib), PARP inhibitörleri (POLO çalışması), dMMR/MSI-H immünoterapisi, TTFields (PANOVA-3), NALIRIFOX/PAXG neoadjuvan protokolleri, RNA neoantijen aşıları, farmakolojik/çevresel risk faktörleri (inkretin ilaçlar, aspirin paradoksu), SMAD4/biyolojik rezektabilite ve yüksek riskli popülasyon sürveyans protokollerini (FPC dahil) kapsar."
+        }
+      ]
+    }
+  ]
+}
