@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "id": "bruselloz",
+    "branch": "enfeksiyon",
+    "baslik": "Bruselloz",
+    "altbaslik": "Mikrobiyoloji, epidemiyoloji, klinik prezentasyon ve fokal komplikasyonlar (osteoartiküler, kardiyovasküler, nörolojik, genitoüriner), hematolojik komplikasyonlar (OİHA, HLH, DİK), hepatobiliyer tutulum (CHSB, SBP), intrasellüler patobiyoloji ve tedavi algoritmaları",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 24,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Rejimleri (Komplikasyonsuz Erişkin, 6 Hafta)",
+      "kolonlar": [
+        "Rejim",
+        "Relaps Oranı"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": ["Doksisiklin + Streptomisin/Gentamisin (birinci tercih)", "%6.7"]
+        },
+        {
+          "hucreler": ["Doksisiklin + Rifampisin (tamamen oral alternatif)", "%18.2"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; Brucella tür ayrımı ve mikrobiyoloji, bulaş yolları, klinik prezentasyon ('büyük taklitçi', undulant fever), osteoartiküler/kardiyovasküler (endokardit)/nörolojik/genitoüriner fokal komplikasyonlar, tanısal serolojik testler (STA, prozon fenomeni, Brucellacapt), tedavi algoritması (birinci/ikinci tercih rejimler, relaps mekanizması, RB51 aşı suşu direnç inceliği), hematolojik komplikasyonlar (sitopeni mekanizmaları, Coombs-pozitif OİHA, HLH-2004 kriterleri, DİK/TAT-PAP fenotipi), hepatobiliyer tutulum (transaminitis, granülomatöz hepatit, CHSB/snowflake kalsifikasyon, sirotik zeminde SBP, hepatotoksisite yönetimi) ve intrasellüler patobiyolojiyi (BCV evreleri, T4SS, egress/gentamisin direnci mekanizması) kapsar."
+        }
+      ]
+    }
+  ]
+}

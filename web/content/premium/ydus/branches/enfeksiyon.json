@@ -49,6 +49,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "zoonotik-enfeksiyonlar",
+      "baslik": "Zoonotik Enfeksiyonlar",
+      "aciklama": "Hayvan kaynaklı bakteriyel enfeksiyonlar ve sistemik komplikasyonları",
+      "emoji": "🐄",
+      "konular": [
+        {
+          "id": "bruselloz",
+          "baslik": "Bruselloz",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,738 @@
+{
+  "id": "quiz-enf-bruselloz-001",
+  "baslik": "Bruselloz — Kapsamlı Soru Seti",
+  "branch": "enfeksiyon",
+  "topic": "bruselloz",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Bruselloza neden olan dört temel Brucella türü arasında, insanlar için EN VİRÜLAN ve EN SIK saptanan tür hangisidir ve rezervuar konağı nedir?",
+      "secenekler": {
+        "A": "B. canis — köpek rezervuarlı; pürüzsüz (smooth) LPS zinciri taşıdığı için serolojik olarak diğer türlerle aynı şekilde saptanır.",
+        "B": "Dört tür de eşit virülans ve sıklığa sahiptir, aralarında klinik önemli bir fark yoktur.",
+        "C": "B. melitensis — koyun, keçi ve deve rezervuarlı; insanlar için en virülan ve en sık saptanan tür.",
+        "D": "B. abortus — sığır rezervuarlı; genellikle hafif/orta şiddetli seyreder ve ilk izolasyonda %5-10 CO₂ gerektirir.",
+        "E": "B. suis — domuz rezervuarlı; en virülan ve en sık saptanan türdür."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "B. melitensis (koyun, keçi, deve rezervuarlı) insanlar için en virülan ve en sık saptanan Brucella türüdür.",
+      "aciklama_detay": "Brucella cinsi bakteriler; küçük (0.5-0.7 µm × 0.6-1.5 µm), sporsuz, kapsülsüz, hareketsiz, asidofilik ve aerobik Gram-negatif kokobasillerdir. Katalaz pozitiftir; oksidaz, üreaz ve H₂S üretimi suşa göre değişkenlik gösterir. Üremek için kan veya serum ilave edilmiş kompleks besiyerlerine ihtiyaç duyarlar.\n\nİnsanda enfeksiyona neden olan dört temel tür ve özellikleri:\n- B. melitensis: Rezervuarı koyun, keçi, deve. İNSANLAR İÇİN EN VİRÜLAN ve EN SIK SAPTANAN türdür.\n- B. suis: Rezervuarı domuz. Oldukça virülan; kronik süpüratif fokal lezyonlarla karakterizedir.\n- B. abortus: Rezervuarı sığır. Genellikle hafif/orta şiddetli seyirlidir. İlk izolasyonda %5-10 CO₂ gerektirir (bu, laboratuvar kültür koşullarını etkileyen pratik bir ayrıntıdır).\n- B. canis: Rezervuarı köpek. Sinsi başlangıçlı, sık relapslı, hafif seyirlidir. Pürüzsüz (smooth) LPS zinciri YOKTUR — bu farklı LPS yapısı, standart serolojik testlerde (Rose Bengal, STA gibi smooth LPS'e karşı geliştirilmiş testler) B. canis enfeksiyonunun saptanamamasına (yalancı negatiflik) yol açar, yani B. canis serolojik olarak AYRIŞIR, diğer türlerle aynı şekilde saptanmaz.\n\nB. melitensis'in en virülan ve en sık tür olması, klinik pratikte önemli sonuçlar doğurur: dünya genelinde bruselloz vakalarının çoğunluğu, koyun/keçi yetiştiriciliğinin yaygın olduğu bölgelerde (Akdeniz havzası, Orta Doğu, Orta Asya gibi) ve bu hayvanların ürünlerinin (pastörize edilmemiş süt, peynir) tüketimiyle ilişkilidir. Ayrıca B. melitensis, hematolojik komplikasyonlar arasında özellikle Coombs-pozitif otoimmün hemolitik anemi (OİHA) ile ve hepatobiliyer tutulumda hem difüz hepatosellüler hasar hem mikrogranülom oluşumuyla ilişkilendirilen türdür — yani tür tayini, beklenen komplikasyon profilini de öngörmede yardımcı olabilir.\n\nÇevre direnci açısından tüm türler ortak özellikler paylaşır: nemli toprakta >40 gün, taze peynirde 15-100 gün, +4°C sütte 6 hafta canlı kalabilirler; ancak pastörizasyon, ısıl işlem, iyonize radyasyon ve standart dezenfektanlara son derece duyarlıdırlar. Laboratuvarda aerosolizasyon riski çok yüksektir ve bu, laboratuvar edinimli enfeksiyonların başlıca nedenidir — Brucella, CDC Kategori B Biyolojik Silah Ajanı olarak sınıflandırılır ve BSL-3 laboratuvar şartları gerektirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — B. canis (köpek rezervuarlı) pürüzsüz LPS zinciri TAŞIMAZ, bu nedenle standart serolojik testlerde diğer türlerden FARKLI (ayrışan) sonuç verir; 'aynı şekilde saptanır' ifadesi yanlıştır.",
+        "B": "YANLIŞ — Dört tür arasında virülans, sıklık, klinik seyir ve hatta serolojik saptanabilirlik açısından belirgin farklar vardır; eşit olduğu iddiası yanlıştır.",
+        "C": "DOĞRU — B. melitensis (koyun, keçi, deve rezervuarlı) insanlar için en virülan ve en sık saptanan Brucella türüdür.",
+        "D": "YANLIŞ — B. abortus (sığır rezervuarlı) genellikle daha hafif/orta şiddetli seyirlidir; en virülan/en sık tür B. melitensis'tir, ayrıca ilk izolasyonda %5-10 CO₂ gerektirmesi doğru bir ayrıntı olsa da bu tür en virülan/en sık tür değildir.",
+        "E": "YANLIŞ — B. suis (domuz rezervuarlı) oldukça virülandır ve kronik süpüratif fokal lezyonlarla karakterizedir, ancak en virülan/en sık saptanan tür B. melitensis'tir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "Brucella melitensis",
+        "mikrobiyoloji",
+        "taksonomi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s2",
+      "metin": "Bruselloz bulaş yolları arasında EN SIK görülen mekanizma hangisidir?",
+      "secenekler": {
+        "A": "Sindirim yolu — pastörize edilmemiş süt, peynir, dondurma, tereyağı veya iyi pişmemiş et tüketimi.",
+        "B": "Doğrudan temas — enfekte hayvan materyaliyle mesleki maruziyet (veterinerler, besiciler, mezbaha işçileri).",
+        "C": "Solunum yolu / aerosolizasyon — laboratuvar kültür manipülasyonu sırasında.",
+        "D": "İnsandan insana bulaş — cinsel temas veya kan transfüzyonu yoluyla.",
+        "E": "Tüm bulaş yolları eşit sıklıkta görülür, biri diğerinden daha sık değildir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "En sık bulaş yolu sindirim yoludur — pastörize edilmemiş süt, peynir, dondurma, tereyağı veya iyi pişmemiş et tüketimi.",
+      "aciklama_detay": "Bruselloz, Akdeniz havzası, Orta Doğu, Orta Asya, Çin, Hindistan alt kıtası, Sahra Altı Afrika ve Latin Amerika'da ciddi bir halk sağlığı problemi olmaya devam etmektedir ve bulaş yolları sıklık sırasına göre üç ana kategoriye ayrılır.\n\n① Sindirim Yolu — EN SIK: Pastörize edilmemiş süt, peynir, dondurma, tereyağı veya iyi pişmemiş et tüketimi. Bu, bruselloz endemik bölgelerinde toplum kaynaklı vakaların büyük çoğunluğunu oluşturur ve halk sağlığı açısından en önemli önlenebilir bulaş yoludur — pastörizasyon programları ve gıda güvenliği denetimleri bu yolu doğrudan hedef alır.\n\n② Doğrudan Temas — Mesleki Risk: Enfekte hayvanların plasenta, uterus sıvıları, kan, idrar veya abortus materyali ile bütünlüğü bozulmuş cilt/mukoza teması. Veterinerler, besiciler, mezbaha işçileri ve kasaplar risk altındadır. Bu, MESLEKİ bir bulaş yoludur ve belirli meslek gruplarında (özellikle hayvan doğumuna/abortusuna müdahale eden veterinerlerde) yüksek risk oluşturur.\n\n③ Solunum Yolu / Aerosolizasyon: Laboratuvar çalışanlarında kültür manipülasyonu sırasında aerosol inhalasyonu veya enfekte hayvan barınaklarındaki havanın solunması. Bu yol, LABORATUVAR EDİNİMLİ enfeksiyonların başlıca nedenidir ve Brucella'nın yüksek aerosolizasyon riski nedeniyle BSL-3 laboratuvar şartları gerektirmesinin temel gerekçesidir.\n\nİnsandan İnsana Bulaş — Çok Nadir: Anne sütü, cinsel temas, perinatal geçiş, kan transfüzyonu ve kemik iliği transplantasyonu yoluyla BİLDİRİLMİŞTİR, ancak bu yol istisnai ve çok nadir vakalarla sınırlıdır — rutin klinik pratikte bruselloz tanılı bir hastanın izolasyonu veya temas önlemleri gerektirmez, bu da bulaş yollarının sıklık hiyerarşisinde en alt sırada olmasıyla tutarlıdır.\n\nBu sıralamanın (sindirim > doğrudan temas > solunum >> insandan insana) klinik/epidemiyolojik önemi, bir hastada bruselloz şüphesi varsa anamnezde önce beslenme öyküsünün (özellikle pastörize edilmemiş süt ürünleri tüketimi, endemik bölge seyahati) sorgulanması gerektiğidir; meslek öyküsü (veterinerlik, hayvancılık) ikinci sırada değerlidir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Sindirim yolu (pastörize edilmemiş süt ürünleri, iyi pişmemiş et) bruselloz için en sık bulaş yoludur.",
+        "B": "YANLIŞ — Doğrudan temas mesleki bir risk faktörüdür ancak sindirim yolundan daha az sıklıkta bulaş nedenidir; kanonik metin sindirim yolunu 'en sık' olarak sıralar.",
+        "C": "YANLIŞ — Solunum yolu/aerosolizasyon laboratuvar edinimli enfeksiyonların başlıca nedeni olsa da, genel bulaş yolları arasında en sık olan değildir; bu yol daha çok özel/mesleki bir risk grubunu ilgilendirir.",
+        "D": "YANLIŞ — İnsandan insana bulaş kanonik metinde 'çok nadir' olarak tanımlanır, en sık bulaş yolu olması mümkün değildir.",
+        "E": "YANLIŞ — Kanonik metin bulaş yollarını numaralandırarak (①②③) açık bir sıklık hiyerarşisi sunar; eşit sıklıkta olduğu iddiası yanlıştır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "epidemiyoloji",
+        "bulaş yolları",
+        "gıda kaynaklı enfeksiyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s3",
+      "metin": "Bruselloz, klinik prezentasyonunun nonspesifik ve değişken doğası nedeniyle enfeksiyon hastalıklarında hangi terimle anılır ve en sık görülen semptom-bulgu üçlüsü nedir?",
+      "secenekler": {
+        "A": "En sık görülen bulgu döküntüdür (%90'ın üzerinde), ateş ve artralji nadirdir.",
+        "B": "Ateş dalgalı (undulant) karakterde DEĞİLDİR, sabit ve sürekli yüksek seyreder.",
+        "C": "En sık laboratuvar bulgusu lökositozdur (%80'in üzerinde).",
+        "D": "'Büyük taklitçi' (great imitator) olarak adlandırılır; en sık görülen bulgular artralji (%80), ateş (%76) ve karakteristik küf kokulu gece terlemesi (%72)'dir.",
+        "E": "'Sessiz katil' (silent killer) olarak adlandırılır; en sık bulgu asemptomatik seyirdir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Bruselloz nonspesifik/değişken kliniği nedeniyle 'büyük taklitçi' olarak adlandırılır; en sık bulgular artralji (%80), ateş (%76) ve karakteristik küf kokulu gece terlemesi (%72)'dir; ateş dalgalı (undulant) karakterdedir.",
+      "aciklama_detay": "Nonspesifik ve değişken klinik tablosu nedeniyle bruselloz, enfeksiyon hastalıklarında 'büyük taklitçi' (great imitator) olarak adlandırılır — bu terim, hastalığın birçok farklı sistemi tutabilmesi ve pek çok başka hastalıkla (özellikle tüberküloz, lenfoma, romatolojik hastalıklar) karışabilmesi nedeniyle kullanılır.\n\nSüreye göre klinik sınıflandırma: subklinik (asemptomatik seropozitiflik), akut (<8 hafta), subakut (8-52 hafta) ve kronik (>1 yıl).\n\nSemptom ve bulgu sıklıkları (azalan sırayla):\n- Artralji: %80 (en sık semptom)\n- Ateş: %76\n- Gece terlemesi (karakteristik küf kokusu ile): %72\n- Halsizlik/Malaise: %68\n- Hepatomegali: %50\n- Splenomegali: %29\n- Lenfadenopati: değişken\n\nLaboratuvar bulgu sıklıkları:\n- ALT yüksekliği: %33\n- Anemi: %27\n- Rölatif lenfositoz: %24\n- Trombositopeni: %12\n- Lökopeni: %9\n- Lökositoz: %8 (yani lökositoz NADİRDİR, çoğu hastada lökopeni veya normal lökosit sayısı görülür — bu, bakteriyel enfeksiyonlarda beklenen 'lökositoz' paterninden sapma gösterir ve bruselloz tanısında ayırt edici bir ipucu olabilir)\n- Pansitopeni: <%1\n\nAteşin karakteri de klinik açıdan önemli bir ayırt edici özelliktir: ateş DALGALI (UNDULANT) karakterdedir; gün içinde yükselir, geceleri BOL TERLEMEYLE düşer. Bu 'undulant fever' terimi, brusellozun tarihsel bir eş anlamlısıdır (hastalığın eski adı 'undulant fever'dır). Myalji, iştahsızlık, belirgin kilo kaybı, baş ağrısı ve depresyon sıklıkla eşlik eder.\n\nBu semptom profilinin (yüksek oranda artralji + ateş + karakteristik gece terlemesi, ancak lökositozun NADİR olması) tanınması, klinisyeni özellikle endemik bölge/gıda öyküsü olan bir hastada bruselloz şüphesine yönlendirmelidir — çünkü bu kombinasyon, tipik piyojenik bakteriyel enfeksiyonlardan (genellikle lökositozla seyreden) farklı bir laboratuvar paterni sergiler.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Döküntü, kanonik metinde tanımlanan sıklık tablosunda yer almaz; en sık bulgular artralji ve ateştir, döküntü değil.",
+        "B": "YANLIŞ — Kanonik metin ateşin tam olarak DALGALI (undulant) karakterde olduğunu belirtir — gün içinde yükselip geceleri terlemeyle düştüğünü; sabit/sürekli yüksek seyir tanımı yanlıştır.",
+        "C": "YANLIŞ — Lökositoz kanonik metinde %8 gibi DÜŞÜK bir sıklıkla (yani NADİR) raporlanır; %80'in üzerinde olduğu iddiası yanlıştır, tam tersine lökopeni (%9) lökositozdan (%8) az farkla daha sık bile görülür.",
+        "D": "DOĞRU — Bruselloz 'büyük taklitçi' olarak adlandırılır; en sık bulgular artralji (%80), ateş (%76) ve karakteristik küf kokulu gece terlemesi (%72)'dir.",
+        "E": "YANLIŞ — Kanonik metin bu terimi 'sessiz katil' olarak tanımlamaz; ayrıca hastalık çoğunlukla belirgin semptomatik seyirlidir (artralji %80, ateş %76 gibi yüksek oranlarda), asemptomatik seyir en sık bulgu değildir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "klinik prezentasyon",
+        "undulant fever",
+        "büyük taklitçi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s4",
+      "metin": "Bruselloza bağlı sistemik/fokal komplikasyonlar arasında osteoartiküler tutulum, en sık komplikasyon olarak tanımlanır.\n\nSpondilodiskit tutulumunun en sık lokalizasyonu ve önemli ayırıcı tanısı nedir?",
+      "secenekler": {
+        "A": "Sakroiliit yalnızca yaşlı hastalarda, spondilodiskit ise yalnızca gençlerde görülür.",
+        "B": "En sık L4-L5 düzeyinde görülür; paravertebral/psoas apsesi eşlik edebilir ve tüberküloz (Tbc) spondilodiskitinden ayırt edilmelidir.",
+        "C": "En sık servikal bölgede (C1-C2) görülür ve romatoid artritten ayırt edilmelidir.",
+        "D": "Osteoartiküler tutulum bruselloz komplikasyonları arasında en NADİR görülenidir (<%1).",
+        "E": "Spondilodiskit yalnızca çocuklarda görülür, erişkinlerde bildirilmemiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bruselloz spondilodiskiti en sık L4-L5 düzeyinde görülür, paravertebral/psoas apsesi eşlik edebilir ve tüberküloz spondilodiskitinden (Pott hastalığı) ayırt edilmelidir.",
+      "aciklama_detay": "Brucella, retiküloendotelyal sisteme (karaciğer, dalak, kemik iliği, lenf düğümleri) afinite gösterdiğinden her organ sistemini tutabilir ve osteoartiküler tutulum, EN SIK komplikasyon olarak tanımlanır (%10-85 gibi geniş bir aralıkta bildirilmiştir — bu geniş aralık, farklı popülasyonlar ve tanı kriterleri arasındaki değişkenliği yansıtır).\n\nOsteoartiküler tutulumun üç ana formu:\n- Sakroiliit: Genç erişkinlerde tek taraflı kalça/uyluk ağrısı ile prezente olur.\n- Spondilodiskit: EN SIK L4-L5 düzeyinde görülür; paravertebral/psoas apsesi eşlik edebilir. TÜBERKÜLOZ (Tbc) SPONDİLODİSKİTİNDEN (Pott hastalığı) AYIRT EDİLMELİDİR — bu iki hastalık, görüntülemede (MRG'de vertebral destrüksiyon, apse formasyonu) benzer bulgular verebilir ve klinik olarak da her ikisi de subakut/kronik bel ağrısı, ateş, kilo kaybı ile seyredebilir. Ayırıcı tanı, endemik bölge/gıda öyküsü, serolojik testler (Brucella için) ve gerekirse doku/kültür örneklemesiyle yapılır.\n- Periferik Artrit: Diz, kalça, ayak bileği tutulumu — non-destrüktif monoartrit şeklinde seyreder. Protez eklem enfeksiyonuna yol açabilir (bu, protez eklemi olan hastalarda bruselloz şüphesinde akılda tutulması gereken önemli bir klinik senaryodur).\n\nBu bilginin klinik önemi, bel ağrısı + ateş + kilo kaybı ile başvuran, özellikle endemik bölgede yaşayan veya gıda öyküsü olan bir hastada, ayırıcı tanıda hem tüberküloz spondilodiskiti hem bruselloz spondilodiskitinin birlikte düşünülmesi gerektiğidir — bu iki hastalığın tedavisi tamamen farklıdır (antitüberküloz rejim vs. bruselloz'a özgü kombine antibiyoterapi, en az 12 hafta), bu nedenle doğru ayırıcı tanı tedavi başarısı için kritiktir.\n\nDiğer komplikasyon kategorileri de önemlidir ancak bu soruda odak osteoartiküler tutulumdur: kardiyovasküler (endokardit, <%1 ama mortalitenin en önemli nedeni), nörobruselloz (~%4), genitoüriner tutulum ve hematolojik/immünolojik komplikasyonlar (kemik iliği granülomu, HLH, DİK, OİHA/İTP, doku infarktları, Brucella SBP) kanonik metinde ayrı ayrı ele alınan diğer sistemik tutulum tipleridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin sakroiliiti genç erişkinlerle ilişkilendirir; spondilodiskitin yalnızca gençlerde görüldüğü şeklinde bir yaş kısıtlaması tanımlanmamıştır.",
+        "B": "DOĞRU — Spondilodiskit en sık L4-L5 düzeyinde görülür, paravertebral/psoas apsesi eşlik edebilir ve tüberküloz spondilodiskitinden ayırt edilmelidir.",
+        "C": "YANLIŞ — Kanonik metin en sık lokalizasyonu L4-L5 olarak tanımlar, servikal bölge değil; ayırıcı tanı tüberkülozdur, romatoid artrit değil.",
+        "D": "YANLIŞ — Kanonik metin osteoartiküler tutulumu EN SIK komplikasyon (%10-85) olarak tanımlar, en nadir görülen değil.",
+        "E": "YANLIŞ — Kanonik metin spondilodiskiti 'genç erişkinlerde' (sakroiliit bağlamında) ve genel osteoartiküler tutulum başlığı altında tanımlar; yalnızca çocuklara özgü olduğu iddiası desteklenmez."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "spondilodiskit",
+        "osteoartiküler tutulum",
+        "tüberküloz ayırıcı tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s5",
+      "metin": "Brucella endokarditi, tüm bruselloz komplikasyonları arasında insidansı <%1 ile nadir olmasına rağmen, bruselloz mortalitesinin EN ÖNEMLİ nedeni olarak tanımlanır.\n\nBu komplikasyonun yönetimi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Medikal (antibiyotik) tedavi tek başına yeterlidir, cerrahi girişim genellikle gerekmez.",
+        "B": "En sık mitral kapak tutulur ve tedavi yalnızca antikoagülasyondan ibarettir.",
+        "C": "Brucella endokarditinde mortalite oranı diğer bruselloz komplikasyonlarından daha düşüktür.",
+        "D": "Cerrahi kapak replasmanı önerilmez çünkü aktif enfeksiyon varlığında cerrahi kontrendikedir.",
+        "E": "En sık önceden hasarlı aort kapağı tutulur; erken cerrahi kapak replasmanı ile medikal tedavinin kombinasyonu mortaliteyi %33'ten %7'ye düşürür — medikal tedavi tek başına yetersizdir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Brucella endokarditinde en sık önceden hasarlı aort kapağı tutulur; erken cerrahi kapak replasmanı + kombine antibiyoterapi mortaliteyi %33'ten %7'ye düşürür — medikal tedavi tek başına yetersizdir, cerrahi şarttır.",
+      "aciklama_detay": "Kardiyovasküler tutulum — özellikle endokardit — bruselloz komplikasyonları arasında nispeten NADİR (<%1) olmasına rağmen, vakaların %84'ünde MORTALİTE NEDENİ olarak tanımlanır; yani bruselloza bağlı ölümlerin büyük çoğunluğu endokardit komplikasyonundan kaynaklanır. Bu, endokarditin nadir ama en tehlikeli bruselloz komplikasyonu olduğunu gösterir.\n\nKlinik özellikleri: En sık ÖNCEDEN HASARLI AORT KAPAĞI tutulur (yani genellikle altta yatan yapısal kapak hastalığı olan hastalarda gelişir — bu, diğer bakteriyel endokarditlerdeki 'risk faktörü olan kapak hastalığı zemininde enfeksiyon' paternine benzer). Hızlı kapak harabiyeti ve ağır kalp yetmezliğine yol açar — bu agresif seyir, tedavi kararının aciliyetini artırır.\n\nTedavi Yaklaşımı — Cerrahi + Üçlü Antibiyotik: Acil cerrahi kapak replasmanı + uzun süreli antibiyotik tedavisi GEREKTİRİR. Bu, medikal tedavinin TEK BAŞINA yetersiz kaldığı, cerrahinin ZORUNLU bir bileşen olduğu bir komplikasyondur. Kanıt: Erken cerrahi kapak replasmanı ile medikal tedavinin KOMBİNASYONU mortaliteyi %33'TEN %7'YE düşürmektedir — bu dramatik mortalite azalması (yaklaşık 5 kat), cerrahinin bu komplikasyonda neden 'şart' olarak tanımlandığını sayısal olarak gösterir.\n\nTedavi rejimi: Enfeksiyon hastalıkları + kardiyoloji + kalp damar cerrahisi ORTAK KARARI zorunludur (multidisipliner yaklaşım). Aminoglikozid (Streptomisin veya Gentamisin; ilk 1 ay) + Rifampisin + Doksisiklin (en az 12 hafta; kapak durumuna göre 4-6 aya kadar uzatılabilir — özellikle protez kapak varlığında daha uzun süre gerekir). Seftriaksiyon aminoglikozid yerine eklenebilir.\n\nBu vakadaki senaryo (mortalite azaltıcı cerrahi+medikal kombinasyon), Brucella endokarditinin diğer fokal komplikasyonlardan (spondilodiskit, nörobruselloz) farklı olarak, medikal tedaviye EK olarak ZORUNLU bir cerrahi bileşen içermesi bakımından benzersizdir — spondilodiskit veya nörobruselloz tedavisinde cerrahi yalnızca spesifik komplikasyonlarda (örn. spinal instabilite, drenaj gerektiren apse) düşünülürken, endokarditte cerrahi standart yaklaşımın merkezi bir parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 'medikal tedavi tek başına yetersizdir' ve 'acil cerrahi kapak replasmanı GEREKTİRİR' der; cerrahisiz yaklaşım standart değildir.",
+        "B": "YANLIŞ — En sık tutulan kapak AORT kapağıdır, mitral değil; tedavi yalnızca antikoagülasyon değil, kombine antibiyoterapi + cerrahidir.",
+        "C": "YANLIŞ — Kanonik metin endokarditi vakaların %84'ünde mortalite NEDENİ olarak tanımlar; bu, endokarditin diğer komplikasyonlara göre orantısız derecede YÜKSEK mortalite taşıdığını gösterir, daha düşük değil.",
+        "D": "YANLIŞ — Kanonik metin tam tersine erken cerrahi kapak replasmanının standart ve gerekli olduğunu, mortaliteyi dramatik şekilde azalttığını (%33→%7) belirtir; kontrendikasyon iddiası yanlıştır.",
+        "E": "DOĞRU — En sık aort kapağı tutulur; erken cerrahi kapak replasmanı + medikal tedavi kombinasyonu mortaliteyi %33'ten %7'ye düşürür, medikal tedavi tek başına yetersizdir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "Brucella endokarditi",
+        "kardiyovasküler komplikasyon",
+        "cerrahi tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s6",
+      "metin": "Nörobruselloz tanılı bir hastada, kranial nöropati bulguları en sık hangi iki kranial siniri tutar ve BOS bulguları hangi hastalıkla karışabilir?",
+      "secenekler": {
+        "A": "Nörobruselloz her zaman immün-aracılı vaskülit mekanizmasıyla gelişir, direkt bakteriyel invazyon rol oynamaz.",
+        "B": "En sık 6. sinir (N. abducens → diplopi) ve 8. sinir (N. vestibulocochlearis → işitme kaybı) tutulur; BOS'ta lenfositik pleositoz, yüksek protein, düşük glukoz saptanır ve tüberküloz menenjitle karışabilir.",
+        "C": "En sık 3. sinir (N. oculomotorius) ve 7. sinir (N. facialis) tutulur; BOS bulguları viral menenjit ile ayırt edilemez düzeyde benzerdir.",
+        "D": "Nörobruselloz yalnızca periferik nöropati şeklinde seyreder, kranial sinir tutulumu bildirilmemiştir.",
+        "E": "BOS'ta yüksek glukoz ve düşük protein saptanır, bu bulgu viral menenjiti taklit eder."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Nörobrusellozda kranial nöropati en sık 6. sinir (abducens→diplopi) ve 8. siniri (vestibulocochlearis→işitme kaybı) tutar; BOS'ta lenfositik pleositoz, yüksek protein, düşük glukoz saptanır ve tüberküloz menenjitle karışabilir.",
+      "aciklama_detay": "Nörobruselloz (~%4 sıklıkla görülür), direkt bakteriyel invazyon veya immün-aracılı vaskülit mekanizmasıyla gelişebilen bir merkezi sinir sistemi komplikasyonudur (yani mekanizma tek değildir, iki farklı patofizyolojik yol tanımlanmıştır).\n\nKlinik spektrum: akut/kronik menenjit, meningoensefalit, myelit, polinöropati, radikülopati şeklinde çok çeşitli prezentasyonlar gösterebilir — bu geniş klinik yelpaze de brusellozun 'büyük taklitçi' karakterinin bir yansımasıdır.\n\nKranial Nöropati: EN SIK tutulan kranial sinirler 6. sinir (N. abducens → bu sinirin tutulumu diplopiye — çift görmeye — yol açar, çünkü N. abducens lateral rektus kasını innerve eder) ve 8. sinir (N. vestibulocochlearis → bu sinirin tutulumu işitme kaybına ve/veya denge bozukluğuna yol açar) olarak tanımlanır.\n\nBOS Bulguları ve Ayırıcı Tanı: Nörobrusellozda BOS'ta LENFOSİTİK PLEOSİTOZ, YÜKSEK PROTEİN, DÜŞÜK GLUKOZ paterni saptanır. Bu spesifik BOS profili (lenfositik hücre artışı + protein yüksekliği + glukoz düşüklüğü), TÜBERKÜLOZ (Tbc) MENENJİTİYLE karışabilir — çünkü Tbc menenjiti de klasik olarak aynı BOS paternini (lenfositik pleositoz, yüksek protein, düşük glukoz) gösterir. Bu iki hastalığın ayrımı, bakteriyel menenjitte tipik olarak görülen nötrofilik pleositoz paterninden farklı olarak, her ikisinin de 'kronik/subakut lenfositik menenjit' görünümü vermesi nedeniyle zorlaşır.\n\nBu ayırıcı tanı zorluğunun klinik önemi büyüktür: Tbc menenjiti ve nörobruselloz, tedavileri TAMAMEN FARKLI olan iki hastalıktır (antitüberküloz kombine rejim vs. Seftriaksiyon+Rifampisin+Doksisiklin bazlı bruselloz rejimi, her ikisi de en az 12 hafta-6 ay), bu nedenle doğru tanı için epidemiyolojik öykü (endemik bölge, gıda/temas öyküsü), spesifik testler (Brucella serolojisi/kültürü vs. Tbc kültürü/PCR) mutlaka değerlendirilmelidir.\n\nTedavi süresi en az 12 hafta ile 6 ay arasında değişir; klinik bulgular ve BOS parametreleri TAMAMEN normale dönene dek sürdürülür — bu, kısa süreli (6 hafta) komplikasyonsuz bruselloz tedavisinden belirgin şekilde daha uzundur ve fokal tutulumun (bu durumda merkezi sinir sistemi tutulumunun) tedavi süresini nasıl uzattığının bir örneğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin nörobrusellozun 'direkt invazyon VEYA immün-aracılı vaskülit' ile geliştiğini belirtir — yani iki mekanizma tanımlanmıştır, yalnızca vaskülit değil.",
+        "B": "DOĞRU — En sık 6. sinir (abducens→diplopi) ve 8. sinir (vestibulocochlearis→işitme kaybı) tutulur; BOS bulguları (lenfositik pleositoz, yüksek protein, düşük glukoz) tüberküloz menenjitle karışabilir.",
+        "C": "YANLIŞ — Kanonik metin en sık tutulan sinirleri 6. ve 8. sinir olarak tanımlar, 3. ve 7. siniri değil; BOS bulguları da viral menenjitten çok Tbc menenjitiyle karışan bir paterne sahiptir.",
+        "D": "YANLIŞ — Kanonik metin kranial nöropatiyi açıkça nörobrusellozun bir bulgusu olarak tanımlar; periferik nöropati (polinöropati, radikülopati) de görülür ama kranial tutulum bildirilmemiş değildir.",
+        "E": "YANLIŞ — BOS bulguları tam tersidir: YÜKSEK protein ve DÜŞÜK glukoz (yüksek glukoz/düşük protein değil); bu profil viral değil tüberküloz menenjiti taklit eder."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "nörobruselloz",
+        "kranial nöropati",
+        "BOS bulguları",
+        "tüberküloz ayırıcı tanı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s7",
+      "metin": "Gebe bir kadında aktif bruselloz enfeksiyonu, tedavi edilmediğinde neden özellikle yüksek riskli bir durum oluşturur? Bu artmış riskin patofizyolojik temeli nedir?",
+      "secenekler": {
+        "A": "Risk artışı yalnızca üçüncü trimesterde görülür, ilk iki trimesterde herhangi bir risk yoktur.",
+        "B": "Eritritol, yalnızca erkek genitoüriner sisteminde (epididimoorşit gelişiminde) rol oynar, gebelikle ilgisi yoktur.",
+        "C": "Plasenta, Brucella'ya karşı tamamen geçirimsizdir, bu nedenle konjenital bruselloz hiçbir zaman bildirilmemiştir.",
+        "D": "Gebelikte plasentadaki eritritol bakteriyel tropizmi artırır → plasentit, abortus, intrauterin eksitus ve konjenital bruselloz riski belirgin artar.",
+        "E": "Gebelik, Brucella enfeksiyonuna karşı doğal bir koruma sağlar, risk artmaz."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Gebelikte plasentadaki eritritol bakteriyel tropizmi artırır; bu, plasentit, abortus, intrauterin eksitus ve konjenital bruselloz riskini belirgin şekilde artırır.",
+      "aciklama_detay": "Genitoüriner tutulum, bruselloz komplikasyonları arasında hem erkek hem kadın üreme sistemini etkileyen özel bir kategoridir ve gebelikte özellikle önemli sonuçlar doğurur.\n\nErkeklerde: Epididimoorşit (± prostat apsesi) şeklinde prezente olabilir.\n\nGebelikte — Eritritol Tropizmi: Gebelikte PLASENTADAKİ ERİTRİTOL, bakteriyel tropizmi ARTIRIR. Eritritol, bir şeker alkolüdür ve Brucella türlerinin (özellikle B. abortus ve B. melitensis gibi) tercih ettiği bir karbon kaynağıdır — bakteri, eritritol açısından zengin dokulara (plasenta, gebe uterusu, hayvanlarda fetal membranlar) özel bir afinite gösterir. Bu tropizm nedeniyle, gebelikte Brucella bakteriyemisi gelişen bir kadında bakteriler PLASENTAYA özel olarak yerleşme eğilimindedir.\n\nBu tropizmin klinik sonuçları AĞIRDIR: plasentit (plasenta enfeksiyonu ve inflamasyonu), ABORTUS (düşük), İNTRAUTERİN EKSİTUS (fetal ölüm) ve KONJENİTAL BRUSELLOZ (bebeğin doğuştan enfekte olması) riski BELİRGİN ŞEKİLDE ARTAR. Bu nedenle gebelikte tanı konan bruselloz, hem anne hem fetus için ciddi bir tehdit oluşturur ve ACİL tedavi başlanması gerekir.\n\nTedavi Etkisi: Kanonik metin özellikle vurgular ki, gebelikte bruselloz TEDAVİSİ SPONTAN ABORTUS RİSKİNİ BELİRGİN AZALTIR — yani erken tanı ve uygun antibiyoterapi, bu ciddi obstetrik komplikasyonu önemli ölçüde önleyebilir. Bu, gebelikte bruselloz şüphesinde tanının GECİKTİRİLMEMESİ gerektiğinin güçlü bir klinik gerekçesidir.\n\nGebelikte tedavi seçimi de bu riski yönetmek açısından özel dikkat gerektirir: Doksisiklin (teratojenik) ve aminoglikozidler (neonatal ototoksisite riski) KONTRENDİKEDİR. Bunun yerine <36. gebelik haftasında Rifampisin + TMP-SMX (folik asit suplementasyonuyla birlikte, ilk trimester nöral tüp defekti riskini azaltmak için) kullanılır; ≥36. haftada (doğuma yakın) TMP-SMX kernikterus riski nedeniyle kesilir ve Rifampisin monoterapi olarak sürdürülür, doğum sonrası Doksisiklin eklenerek standart şemaya tamamlanır.\n\nBu bilgi, eritritolün yalnızca gebelikle sınırlı olmadığını da gösterir — kanonik metin eritritolün 'bakteriyel tropizmi artırdığı' bir doku örneği olarak plasentayı tanımlar; bu, Brucella'nın neden özellikle üreme sistemi dokularına (hem gebelikte plasenta hem erkeklerde genitoüriner sistem) afinite gösterdiğini açıklayan ortak bir biyokimyasal tema oluşturur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin risk artışını gebelik dönemine (trimestere) göre sınırlamaz; eritritol tropizmi ve buna bağlı komplikasyon riski gebeliğin genelinde geçerli bir patofizyolojik mekanizmadır, tedavi yaklaşımı ise gebelik haftasına göre (36 hafta eşiği) farklılaşır.",
+        "B": "YANLIŞ — Eritritol kanonik metinde spesifik olarak gebelikte PLASENTA bağlamında tanımlanır (bakteriyel tropizmi artıran mekanizma olarak); erkek genitoüriner sistemiyle sınırlı bir kavram değildir.",
+        "C": "YANLIŞ — Kanonik metin konjenital brusellozu açıkça bir risk olarak tanımlar; plasentanın 'tamamen geçirimsiz' olduğu iddiası bu bilgiyle doğrudan çelişir.",
+        "D": "DOĞRU — Gebelikte plasentadaki eritritol bakteriyel tropizmi artırır; bu, plasentit, abortus, intrauterin eksitus ve konjenital bruselloz riskini belirgin artırır.",
+        "E": "YANLIŞ — Kanonik metin tam tersini gösterir: gebelik, eritritol tropizmi nedeniyle riski AZALTMAZ, ARTIRIR."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "gebelik",
+        "eritritol",
+        "konjenital bruselloz",
+        "genitoüriner tutulum"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s8",
+      "metin": "Bruselloz tanısında serolojik testlerin yorumlanması ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "STA (Wright) testinde ≥1:160 titre veya 2 haftada 4 kat titre artışı tanısaldır; ancak çok yüksek titrede prozon fenomeni yalancı negatif sonuca yol açabilir. Brucellacapt/Coombs testi, STA'nın negatif kalabildiği kronik/komplike olgularda non-aglütine (bloke edici) IgG antikorlarını saptar.",
+        "B": "Prozon fenomeni yalnızca düşük titrelerde görülür ve yalancı pozitifliğe yol açar.",
+        "C": "Rose Bengal testi kesin tanı koydurucudur, ek doğrulama testine gerek yoktur.",
+        "D": "Brucellacapt/Coombs testi yalnızca akut dönemde, STA pozitif olduğunda kullanılır.",
+        "E": "STA titresi ne olursa olsun, tek bir ölçüm tanı için yeterlidir; titre artışını göstermeye gerek yoktur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "STA (Wright) testinde ≥1:160 titre veya 2 haftada 4 kat titre artışı tanısaldır; çok yüksek titrede prozon fenomeni yalancı negatife yol açabilir. Brucellacapt/Coombs, STA'nın negatif kalabildiği kronik/komplike olgularda bloke edici IgG antikorlarını saptar.",
+      "aciklama_detay": "Bruselloz tanısında mikrobiyolojik izolasyon (kültür) ALTIN STANDART olmakla birlikte, pratikte serolojik testler daha sık kullanılır ve her birinin kendine özgü kullanım alanı ve tuzağı vardır.\n\nRose Bengal Kart: Hızlı, ucuz, DUYARLI bir TARAMA testidir — yani ilk basamak/tarama amaçlıdır, kesin tanı koydurmaz; pozitif sonuçlar doğrulama testleriyle (STA gibi) teyit edilmelidir.\n\nSTA (Wright) Testi: EN SIK kullanılan KANTİTATİF testtir. Tanısal eşikler: ≥1:160 TİTRE veya 2 HAFTADA 4 KAT TİTRE ARTIŞI (akut ve konvalesan dönem serumları karşılaştırılarak). ÖNEMLİ TUZAK — Prozon Fenomeni: ÇOK YÜKSEK TİTREDE (antikor konsantrasyonu aşırı yüksek olduğunda), antijen-antikor kompleksleri optimal oranın dışına çıkarak görünür aglütinasyonun OLUŞMAMASINA yol açabilir — bu, PROZON FENOMENİ olarak adlandırılır ve YALANCI NEGATİF bir sonuca (gerçekte çok yüksek antikor titresi olan bir hastada 'düşük/negatif' görünen bir test sonucuna) neden olabilir. Bu nedenle klinik şüphe güçlüyken ilk STA sonucu negatif/düşük çıkarsa, serum SERİ SEYRELTİLEREK tekrar test edilmelidir (prozonu aşmak için).\n\nBrucellacapt / Coombs: STA'NIN NEGATİF KALABİLDİĞİ KRONİK ve KOMPLİKE olgularda kullanılır. Bu test, NON-AGLÜTİNE (BLOKE EDİCİ) IgG ANTİKORLARINI saptar — kronik/komplike bruselloz olgularında (özellikle CHSB gibi fokal süpüratif formlarda), bakterinin intrasellüler odaklarda izole olması ve sistemik immün yanıtı baskılaması nedeniyle STA gibi standart aglütinasyon testleri yetersiz kalabilir; Coombs testi bu 'bloke edici' antikorları saptayarak tanısal boşluğu doldurur.\n\nELISA (IgM/IgG): Akut dönemde IgM ve IgG BİRLİKTE yükselir. Tedavi sonrası YÜKSEK KALAN IgG/IgA, fokal odak veya relaps düşündürür — yani ELISA yalnızca tanıda değil, tedavi sonrası takipte de (sınırlı da olsa) rol oynayabilir.\n\nMoleküler yöntemler (PCR — 16S rRNA veya spesifik DNA dizileri, MALDI-TOF, NGS) tanısal doğruluğu artıran tamamlayıcı araçlardır; MALDI-TOF özellikle Ochrobactrum gibi yakın cinslerden ayırt etmede ve epidemiyolojik sürveyansta değerlidir.\n\nBu serolojik test hiyerarşisinin (Rose Bengal tarama → STA doğrulama/kantitasyon → Brucellacapt/Coombs kronik/komplike olgularda → ELISA akut IgM/IgG ve sınırlı takip) doğru sırayla uygulanması, hem gereksiz yanlış negatif/pozitif sonuçları önler hem de tanı sürecini hızlandırır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — STA'da ≥1:160 titre veya 4 kat artış tanısaldır; çok yüksek titrede prozon fenomeni yalancı negatife yol açabilir; Brucellacapt/Coombs kronik/komplike olgularda bloke edici IgG'yi saptar.",
+        "B": "YANLIŞ — Prozon fenomeni tam tersine ÇOK YÜKSEK titrelerde görülür ve YALANCI NEGATİF (yalancı pozitif değil) sonuca yol açar.",
+        "C": "YANLIŞ — Rose Bengal bir TARAMA testidir, kesin tanı koydurucu değildir; pozitif sonuçlar STA gibi doğrulama testleriyle teyit edilmelidir.",
+        "D": "YANLIŞ — Brucellacapt/Coombs özellikle STA'NIN NEGATİF kaldığı kronik/komplike olgularda kullanılır — yani STA pozitif olduğunda değil, STA'nın yetersiz kaldığı durumlarda devreye girer.",
+        "E": "YANLIŞ — Tanı için ya tek bir yüksek titre (≥1:160) ya da 2 haftada 4 kat titre ARTIŞI gösterilmelidir; titre artışının gösterilmesi (paired serum) özellikle sınırda titrelerde tanısal değeri artırır, bu 'gereksiz' değildir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "serolojik tanı",
+        "STA Wright testi",
+        "prozon fenomeni",
+        "Brucellacapt"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s9",
+      "metin": "Komplikasyonsuz akut bruselloz tanılı, gebe olmayan bir erişkin hastada BİRİNCİ TERCİH tedavi rejimi ve bu rejimin oral rejime kıyasla klinik üstünlüğü nedir?",
+      "secenekler": {
+        "A": "Florokinolon monoterapisi (Siprofloksasin), asidik hücre içi ortamda mükemmel etkinlik gösterdiği için birinci basamak tercihtir.",
+        "B": "Tedavi süresi, komplikasyonsuz olgularda dahi en az 6 aydır.",
+        "C": "Doksisiklin + Streptomisin (aminoglikozid tabanlı, 6 hafta); meta-analizler bu rejimin tamamen oral Doksisiklin-Rifampisin rejimine kıyasla anlamlı derecede daha düşük relaps oranı sunduğunu gösterir (%6.7'ye karşı %18.2).",
+        "D": "Doksisiklin monoterapisi (6 hafta) yeterlidir, ikinci bir ajan eklenmesine gerek yoktur.",
+        "E": "Doksisiklin + Rifampisin (tamamen oral) rejimi, aminoglikozid tabanlı rejimden daha düşük relaps oranına sahiptir ve bu nedenle birinci tercihtir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Birinci tercih Doksisiklin+Streptomisin (aminoglikozid tabanlı, 6 hafta); meta-analizler bu rejimin tamamen oral Doksisiklin-Rifampisin rejimine kıyasla anlamlı düşük relaps oranı sunduğunu gösterir (%6.7'ye karşı %18.2).",
+      "aciklama_detay": "Bruselloz tedavisinin temel ilkeleri üç kardinal prensibe dayanır: (1) intrasellüler asidik vakuola nüfuz edebilen ajanlar seçmek, (2) MONOTERAPİ ASLA UYGULANMAMAK (yüksek relaps oranı riski nedeniyle) ve (3) fokal tutuluma göre tedavi süresini uzatmak.\n\nKomplikasyonsuz (Fokal Olmayan) Akut/Subakut Bruselloz — Gebe Olmayan Erişkin Hastalar (≥8 yaş):\n\nBirinci Tercih — Aminoglikozid Tabanlı: Doksisiklin 100 mg PO günde 2× (6 hafta) + Streptomisin 1 g IM/IV günde 1× (ilk 14-21 gün; ≤65 kg hastalar için 15 mg/kg/gün). Alternatif aminoglikozid: Gentamisin 5 mg/kg IV/IM günde 1× (ilk 7-10 gün).\n\nKlinik kanıt: Meta-analizler AMİNOGLİKOZİD TABANLI rejimlerin TAMAMEN ORAL Doksisiklin-Rifampisin rejimine kıyasla ANLAMLI DERECEDE daha yüksek klinik başarı ve DAHA DÜŞÜK relaps/başarısızlık oranı sunduğunu göstermektedir: %6.7'ye karşı %18.2 — bu yaklaşık 3 kat fark, aminoglikozid tabanlı rejimin neden BİRİNCİ TERCİH olarak belirlendiğini sayısal olarak açıklar.\n\nTamamen Oral Tercih (İKİNCİL, aminoglikozid kontrendikasyonu/uygulama zorluğunda): Doksisiklin + Rifampisin (6 hafta). Bu rejim daha PRATİK'tir (parenteral uygulama gerektirmez) ancak relaps oranı DAHA YÜKSEKTİR (%18.2), bu nedenle aminoglikozid mümkünse tercih edilmemesi gereken bir ikinci sırada durur.\n\nİkinci Seçenek Rejimler (direnç/intolerans/toksisite durumunda): Florokinolonlar (Siprofloksasin veya Levofloksasin) + Doksisiklin/Rifampisin — ANCAK florokinolonlar ASİDİK HÜCRE İÇİ VAKUOL ORTAMINDA ETKİNLİK KAYBI YAŞAYABİLDİĞİNDEN ilk basamakta TERCİH EDİLMEZLER (bu, birinci kardinal prensiple — intrasellüler penetrasyon önceliği — doğrudan bağlantılıdır). Doksisiklin + TMP-SMX de bir başka alternatiftir.\n\nMonoterapinin neden asla uygulanmadığı, relaps mekanizmasıyla ilişkilidir: relaps, genellikle DİRENÇLİ SUŞ GELİŞİMİNDEN DEĞİL, konak makrofajları içindeki bakterilerin TAM ERADİKE EDİLEMEMESİNDEN kaynaklanır — yani intrasellüler yerleşimli bakteriyi tek bir ajanla tamamen temizlemek zordur, bu nedenle kombinasyon tedavisi (farklı mekanizmalarla etki eden en az iki ajan) relaps riskini azaltmak için standarttır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Florokinolonlar asidik hücre içi vakuol ortamında etkinlik KAYBI yaşayabildiğinden ilk basamakta TERCİH EDİLMEZ; monoterapi olarak da değil, kombinasyon içinde ikinci seçenek olarak kullanılır.",
+        "B": "YANLIŞ — Komplikasyonsuz olgularda standart tedavi süresi 6 HAFTADIR; en az 6 ay süre, fokal tutulumlu (örn. nörobruselloz, endokardit) olgular için tanımlanmıştır, komplikasyonsuz olgular için değil.",
+        "C": "DOĞRU — Birinci tercih Doksisiklin+Streptomisin'dir; meta-analizler bu rejimin oral Doksisiklin-Rifampisin rejimine kıyasla anlamlı düşük relaps oranı (%6.7 vs %18.2) sunduğunu gösterir.",
+        "D": "YANLIŞ — Kanonik metin açıkça monoterapinin ASLA uygulanmaması gerektiğini vurgular; Doksisiklin tek başına yüksek relaps riski taşır.",
+        "E": "YANLIŞ — Tam tersine, tamamen oral Doksisiklin-Rifampisin rejiminin relaps oranı (%18.2) aminoglikozid tabanlı rejimden (%6.7) DAHA YÜKSEKTİR; bu nedenle oral rejim ikincil/alternatif konumdadır, birinci tercih değildir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "tedavi",
+        "doksisiklin",
+        "streptomisin",
+        "relaps oranı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s10",
+      "metin": "Bir veteriner hekim, canlı zayıflatılmış B. abortus RB51 aşı suşuyla temas ettikten sonra post-exposure profilaksi (PEP) düşünülüyor.\n\nBu spesifik senaryoda tedavi rejimi seçiminde nelere dikkat edilmelidir?",
+      "secenekler": {
+        "A": "RB51 suşu standart suşlarla aynı antibiyotik duyarlılığına sahiptir, rejim seçiminde herhangi bir değişiklik gerekmez.",
+        "B": "RB51 maruziyetinde profilaksiye hiç gerek yoktur çünkü bu suş insanlarda hastalık yapmaz.",
+        "C": "RB51 suşu yalnızca Streptomisine dirençlidir, Rifampisin bu durumda güvenle kullanılabilir.",
+        "D": "RB51 maruziyetinde Doksisiklin kontrendikedir, yalnızca Rifampisin monoterapisi uygulanmalıdır.",
+        "E": "RB51 suşu Rifampisine DOĞAL DİRENÇLİDİR; bu nedenle Rifampisin içeren standart PEP şeması yerine Doksisiklin + TMP-SMX (3 hafta) tercih edilmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "B. abortus RB51 aşı suşu Rifampisine doğal olarak dirençlidir; bu nedenle PEP veya tedavi planlanırken Rifampisin kullanılmamalı, Doksisiklin + TMP-SMX (3 hafta) tercih edilmelidir.",
+      "aciklama_detay": "Bu bilgi, kanonik metinde özellikle 'Klinik İnci' olarak vurgulanan, sınav açısından yüksek öneme sahip bir farmakolojik/mikrobiyolojik tuzaktır.\n\nB. abortus RB51 — Rifampisine DİRENÇLİ: Tedaviye başlarken maruziyetin canlı zayıflatılmış B. abortus RB51 aşı suşuna olup olmadığı MUTLAKA SORGULANMALIDIR; bu suş RİFAMPİSİNE DOĞAL DİRENÇLİDİR. RB51, hayvanlarda (özellikle sığırlarda) bruselloz aşılaması için kullanılan CANLI ZAYIFLATILMIŞ bir aşı suşudur (kanonik metinde 'Korunma ve Önleme' bölümünde B. abortus S19, RB51 ve B. melitensis Rev1 hayvan aşılama programlarında kullanılan suşlar olarak sayılır). Veteriner hekimler, hayvancılıkla uğraşanlar bu aşı sırasında yanlışlıkla kendilerini enjekte edebilir (iğne batması kazası) veya bu suşla enfekte sütleri tüketebilirler — bu durumda RB51'e maruz kalmış olurlar.\n\nBu durumda rejim seçimi: PEP (Post-Exposure Profilaksi) veya AKTİF ENFEKSİYON TEDAVİSİ planlanırken KESİNLİKLE RİFAMPİSİN KULLANILMAMALIDIR (çünkü bu suş rifampisine doğal dirençlidir, kullanılsa bile etkisiz kalır). PEP şeması (3 hafta): Doksisiklin 100 mg PO bid + TMP-SMX 1 DS PO bid.\n\nBu, STANDART laboratuvar aerosol maruziyetinden (RB51 dışı suşlar) FARKLIDIR: standart maruziyette PEP şeması Doksisiklin + RİFAMPİSİN 3 haftadır — yani RB51 dışı suşlarda Rifampisin standart PEP'in bir parçasıdır, ama RB51'de Rifampisin çıkarılıp yerine TMP-SMX konulur.\n\nKanonik metnin vurguladığı kritik sonuç: 'Yani suşun RB51 olup olmadığını sorgulamak, DOĞRUDAN REJİM SEÇİMİNİ DEĞİŞTİREN bir anamnez sorusudur.' Bu, klinik pratikte basit görünen bir anamnez detayının (hangi aşı suşuyla temas edildiği) tedavi başarısını doğrudan etkileyebileceğini gösteren öğretici bir örnektir — eğer klinisyen bu ayrımı sorgulamadan standart Rifampisin içeren rejimi başlarsa, tedavi başarısız olabilir çünkü RB51 bu ajana zaten dirençlidir.\n\nBu bilgi ayrıca genel tedavi prensiplerinden bir istisnayı temsil eder: kanonik metinde Doksisiklin+Rifampisin genellikle standart oral alternatif rejim olarak tanımlanırken, RB51 maruziyetinde bu kombinasyon işe yaramaz ve Doksisiklin+TMP-SMX'e geçilmesi gerekir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin özellikle RB51'in Rifampisine DİRENÇLİ olduğunu ve bu nedenle rejim seçiminin DEĞİŞTİRİLMESİ gerektiğini vurgular; 'aynı duyarlılık' iddiası doğrudan yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin RB51 maruziyeti için özel bir PEP şeması (Doksisiklin+TMP-SMX, 3 hafta) tanımlar; bu, profilaksinin gerekli olduğunu gösterir.",
+        "C": "YANLIŞ — RB51'in dirençli olduğu ajan Streptomisin değil RİFAMPİSİN'dir; Rifampisin bu durumda güvenle değil, ETKİSİZ olduğu için kullanılmamalıdır.",
+        "D": "YANLIŞ — RB51 maruziyetinde Doksisiklin KONTRENDİKE değildir, tam tersine PEP şemasının (Doksisiklin+TMP-SMX) bir parçasıdır; dışlanması gereken ajan Rifampisin'dir, Doksisiklin değil.",
+        "E": "DOĞRU — RB51 suşu Rifampisine doğal dirençlidir; PEP veya tedavide Doksisiklin + TMP-SMX (3 hafta) tercih edilmelidir, Rifampisin kullanılmamalıdır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "RB51",
+        "antibiyotik direnci",
+        "post-exposure profilaksi",
+        "rifampisin"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s11",
+      "metin": "Uygun kombine antibiyoterapi ile tedavi tamamlanmış bir bruselloz hastasında, tedaviden 4 ay sonra ateş ve halsizlik yeniden ortaya çıkıyor (relaps şüphesi).\n\nBrusellozda relaps mekanizması ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Relaps geliştiğinde rutin serolojik testlerin (STA) mutlak titre değeri, tedavi sonlandırma kararı için tek başına yeterlidir.",
+        "B": "Relaps (%5-15) genellikle ilk 6 ay içinde görülür ve genellikle dirençli suş gelişiminden değil, konak makrofajları içindeki bakterilerin tam eradike edilememesinden kaynaklanır; ilk kombine rejim (genellikle daha uzun süre) başarıyla tekrar uygulanabilir.",
+        "C": "Relaps her zaman antibiyotik direnci gelişimini gösterir, bu nedenle tamamen farklı bir antibiyotik sınıfına geçilmelidir.",
+        "D": "Relaps yalnızca tedaviden 12 aydan uzun süre sonra görülür, 6 ay içindeki nüksler relaps kabul edilmez.",
+        "E": "Relaps oranı %50'nin üzerindedir, bu nedenle ilk tedavi genellikle başarısız kabul edilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Relaps (%5-15) genellikle ilk 6 ay içinde görülür ve dirençli suş gelişiminden değil, konak makrofajları içindeki bakterilerin tam eradike edilememesinden kaynaklanır; ilk kombine rejim (genellikle daha uzun süre) başarıyla tekrar uygulanabilir.",
+      "aciklama_detay": "Bruselloz tedavisi sonrası relaps, tedaviye yanıt takibinin önemli bir bileşenidir ve mekanizması, tedavi başarısızlığından farklı bir kavram olarak anlaşılmalıdır.\n\nRelaps Sıklığı ve Zamanlaması: Relaps oranı %5-15 arasında bildirilir. Genellikle TEDAVİ TAMAMLANDIKTAN SONRA İLK 6 AY İÇİNDE görülür (nadiren 12 aya kadar uzayabilir). Bu vakadaki senaryo (tedaviden 4 ay sonra semptomların yeniden ortaya çıkması) tam olarak bu tipik relaps zaman penceresine uymaktadır.\n\nRelaps Mekanizması — KRİTİK AYRIM: Relaps, DİRENÇLİ SUŞ GELİŞİMİNDEN DEĞİL, konak makrofajları İÇİNDEKİ bakterilerin TAM ERADİKE EDİLEMEMESİNDEN kaynaklanır. Bu, bruselloz tedavisinde çok önemli bir kavramsal ayrımdır: bir hastada relaps geliştiğinde, klinisyenin ilk düşüncesi 'antibiyotik direnci gelişti, farklı bir ilaç denemeliyim' OLMAMALIDIR — çünkü mekanizma direnç değil, intrasellüler yerleşimli bakterinin (özellikle konak makrofajları içinde saklanan, ilaç penetrasyonunun kısmen sınırlı olduğu odaklardaki) tam temizlenememesidir.\n\nBu nedenle relaps tedavisi: İLK KOMBİNE REJİM (genellikle daha UZUN SÜRE ile) BAŞARIYLA TEKRAR UYGULANABİLİR. Yani aynı ilaç kombinasyonunu (örn. Doksisiklin+Streptomisin veya Doksisiklin+Rifampisin) tekrar başlatmak, ama bu sefer tedavi süresini uzatarak (örn. 6 hafta yerine daha uzun bir süre), genellikle başarılı bir yaklaşımdır — çünkü bakteri aynı ilaçlara hâlâ duyarlıdır, sorun ilacın etkisizliği değil, ilk tedavi süresinin/etkinliğinin tam eradikasyon için yetersiz kalmasıdır.\n\nSerolojik Takibin Sınırlı Rolü: Tedavi sonlandırma kararı TAMAMEN KLİNİK İYİLEŞMEYE dayanmalıdır; rutin serolojik testlerin (özellikle STA) takip rolü SINIRLIDIR — düşük titreler eradikasyon sonrası YILLARCA pozitif kalabilir. Bu nedenle bir hastada STA titresi tek başına 'relaps var/yok' kararı için kullanılamaz. Ancak antikor titrelerinde DÜŞÜŞ OLMAMASI veya TEKRAR YÜKSELMESİ (yani titrenin TRENDİ, mutlak değeri değil) fokal odak ya da relapsı DÜŞÜNDÜRÜR; bu durumda Brucellacapt, Coombs veya ELISA IgG klinikle KORELE EDİLMELİDİR — yani serolojik trend, klinik bulgularla BİRLİKTE yorumlanmalı, tek başına karar verici olmamalıdır.\n\nBu bilgilerin klinik önemi, bir hastada semptomların yeniden ortaya çıkması durumunda panik yaparak agresif bir ilaç değişikliğine gitmek yerine, bilinçli şekilde aynı kombinasyonu daha uzun süre tekrar uygulamanın (ve mutlak STA değerine değil, klinik seyre ve titre trendine odaklanmanın) doğru yaklaşım olduğunu göstermesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin STA'nın 'takip rolünün SINIRLI' olduğunu ve düşük titrelerin yıllarca pozitif kalabileceğini belirtir; mutlak titre tek başına yeterli bir karar aracı değildir, klinikle korelasyon şarttır.",
+        "B": "DOĞRU — Relaps (%5-15) genellikle ilk 6 ay içinde görülür ve dirençli suş gelişiminden değil, makrofaj içi bakterilerin tam eradike edilememesinden kaynaklanır; ilk kombine rejim (daha uzun süre) tekrar uygulanabilir.",
+        "C": "YANLIŞ — Kanonik metin açıkça relapsın DİRENÇLİ SUŞ GELİŞİMİNDEN DEĞİL, eradikasyon yetersizliğinden kaynaklandığını belirtir; tamamen farklı bir sınıfa geçme zorunluluğu yoktur, aynı rejim tekrar kullanılabilir.",
+        "D": "YANLIŞ — Relaps genellikle İLK 6 AY içinde görülür (nadiren 12 aya kadar); 6 ay içindeki nükslerin relaps kabul edilmediği iddiası tam tersini söylemektedir.",
+        "E": "YANLIŞ — Relaps oranı %5-15 arasındadır, %50'nin üzerinde değildir; bu oran ilk tedavinin genellikle BAŞARILI olduğunu, yalnızca küçük bir azınlıkta relaps geliştiğini gösterir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "relaps",
+        "tedavi takibi",
+        "serolojik takip"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz"
+    },
+    {
+      "id": "s12",
+      "metin": "Bruselloz seyrinde gelişen sitopenilerin (anemi, lökopeni, trombositopeni) altında yatan patofizyolojik mekanizmalar arasında hangisi YER ALMAZ?",
+      "secenekler": {
+        "A": "Kemik iliği infiltrasyonu ve non-kazeifiye granülom formasyonu — normal hematopoezi mekanik olarak baskılar.",
+        "B": "Hipersplenizm ve splenik sekestrasyon — reaktif splenomegali (hastaların %10-29'unda) hücrelerin dalak sinüzoidlerinde göllenmesine yol açar.",
+        "C": "Demir metabolizması disregülasyonu — sitokinler demirin makrofajlarda depolanmasına yol açarak fonksiyonel demir eksikliği/kronik hastalık anemisi oluşturur.",
+        "D": "Doğrudan kemik iliği baskılanması — akut bakteremi döneminde bakteriyel LPS benzeri yapıların hematopoetik kök hücreler üzerinde doğrudan inhibitör etkisi.",
+        "E": "Otoimmün nedenli T-hücre aracılı doğrudan kemik iliği kök hücre apoptozu — bu, tanımlanan dört mekanizmadan biri DEĞİLDİR."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kanonik metinde tanımlanan dört sitopeni mekanizması: kemik iliği infiltrasyonu/granülom, hipersplenizm/splenik sekestrasyon, demir metabolizması disregülasyonu ve doğrudan kemik iliği baskılanmasıdır; 'otoimmün T-hücre aracılı doğrudan apoptoz' bu dört mekanizma arasında tanımlanmamıştır (otoimmün mekanizmalar OİHA/İTP başlığı altında ayrıca ve antikor aracılı olarak ele alınır).",
+      "aciklama_detay": "Brucella cinsi bakteriler, insan vücuduna girdikten sonra özellikle retiküloendotelyal sistem (RES) organlarına — kemik iliği, dalak, karaciğer ve lenf düğümleri — tropizm gösteren fakültatif intrasellüler patojenlerdir. Bu RES afinitesi ve bakterinin hücre içi yaşam döngüsünün tetiklediği kronik inflamatuar süreçler, hafif laboratuvar değişikliklerinden hayatı tehdit eden hematolojik acillere uzanan geniş bir yelpazede klinik tablolara yol açar.\n\n550 olguluk geniş bir klinik kohortta (Makedonya) laboratuvar anormallik sıklıkları: Anemi %27, Trombositopeni %12, Lökopeni %9, Lökositoz %8, Ağır pansitopeni <%1.\n\nBrusellozda gözlenen anemi, lökopeni, trombositopeni ve pansitopeninin patofizyolojisi MULTİFAKTÖRİYELDİR ve kemik iliği mikroçevresinde ve periferde gelişen DÖRT temel mekanizma tanımlanır:\n\n① Kemik İliği İnfiltrasyonu ve Granülom Formasyonu: Fagosite edilen bakteriler kemik iliğine ulaşarak burada epitelyoid hücreler, lenfositler, lökositler ve dev hücrelerden zengin NON-KAZEİFİYE granülomlar oluşturur. Bu granülomatöz infiltrasyon ve stromal hiperselülerite, normal hematopoezi MEKANİK olarak baskılayabilir.\n\n② Hipersplenizm ve Splenik Sekestrasyon: Hastaların yaklaşık %10-29'unda REAKTİF SPLENOMEGALİ gelişir. Dalaktaki bu aşırı büyüme ve retiküloendotelyal hücre aktivasyonu; eritrosit, lökosit ve trombositlerin dalak sinüzoidlerinde GÖLLENMESİNE ve SEKESTRASYON yoluyla periferik kanda yıkılmasına yol açar.\n\n③ Demir Metabolizması Disregülasyonu: Kronik enfeksiyon uyarımıyla salınan sitokinler, demirin makrofajlarda DEPOLANMASINA ve periferik dolaşıma verilmesinin ENGELLENMESİNE neden olur — FONKSİYONEL DEMİR EKSİKLİĞİ/KRONİK HASTALIK ANEMİSİ tablosu oluşur.\n\n④ Doğrudan Kemik İliği Baskılanması ve Sepsis: Akut bakteremi döneminde bakteriyel endotoksin benzeri yapılar (özellikle pürüzsüz lipopolisakkaritler — smooth LPS) kemik iliğindeki hematopoetik kök hücreler üzerinde DOĞRUDAN İNHİBİTÖR etki gösterebilir.\n\nBu dört mekanizma (mekanik infiltrasyon, splenik sekestrasyon, demir metabolizması bozukluğu, doğrudan baskılanma) SİTOPENİLERİN genel açıklamasıdır. Buna karşılık, OTOİMMÜN mekanizmalar (OİHA — Coombs pozitif hemolitik anemi, İTP — immün trombositopeni) AYRI bir başlık altında ele alınır ve bunların mekanizması T-hücre aracılı doğrudan apoptoz DEĞİL, ANTİKOR (IgG/IgM) aracılı immünolojik yıkımdır (moleküler benzerlik/molecular mimicry yoluyla eritrosit membran antijenlerine karşı reaktif antikor oluşumu, ardından dalaktaki makrofajlarca fagositoz — ekstravasküler hemoliz). Bu nedenle 'T-hücre aracılı doğrudan apoptoz' hem genel sitopeni mekanizmaları arasında hem de OİHA/İTP'nin tanımlanan mekanizması olarak yer almaz — bu şık kanonik metinde tanımlanmamış bir mekanizmayı temsil eder.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ (bu tanımlanmış bir mekanizmadır) — Kemik iliği infiltrasyonu ve granülom formasyonu, kanonik metinde açıkça tanımlanan dört mekanizmadan biridir.",
+        "B": "YANLIŞ (bu tanımlanmış bir mekanizmadır) — Hipersplenizm/splenik sekestrasyon, kanonik metinde açıkça tanımlanan dört mekanizmadan biridir.",
+        "C": "YANLIŞ (bu tanımlanmış bir mekanizmadır) — Demir metabolizması disregülasyonu, kanonik metinde açıkça tanımlanan dört mekanizmadan biridir.",
+        "D": "YANLIŞ (bu tanımlanmış bir mekanizmadır) — Doğrudan kemik iliği baskılanması (LPS benzeri yapılar aracılığıyla), kanonik metinde açıkça tanımlanan dört mekanizmadan biridir.",
+        "E": "DOĞRU (istenen cevap — YER ALMAYAN mekanizma) — 'Otoimmün T-hücre aracılı doğrudan apoptoz', kanonik metinde tanımlanan dört sitopeni mekanizması arasında yer almaz; OİHA/İTP'nin gerçek mekanizması antikor (IgG/IgM) aracılı yıkımdır, T-hücre aracılı apoptoz değildir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "hematolojik komplikasyon",
+        "sitopeni",
+        "patofizyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brusellozun Hematolojik Komplikasyonları"
+    },
+    {
+      "id": "s13",
+      "metin": "Bruselloz tedavisi almakta olan bir hastada, antibiyotiğe rağmen derinleşen anemi (Hb 7 g/dL), belirgin retikülositoz, indirekt bilirubin yüksekliği, LDH artışı, haptoglobin düşüklüğü ve periferik yaymada şistosit/akantosit saptanıyor. Direkt Coombs (DAT) pozitif.\n\nBu tablo hangi tanıyı düşündürür ve dirençli olguda tedavi yaklaşımı nedir?",
+      "secenekler": {
+        "A": "Coombs-Pozitif Otoimmün Hemolitik Anemi (OİHA); sıklıkla B. melitensis ile ilişkilidir; çoğu olgu antibiyoterapiyle geriler, dirençli/hayatı tehdit eden olgularda kortikosteroid (Prednizolon 1 mg/kg/gün) + IVIG kombinasyonu dramatik iyileşme sağlar.",
+        "B": "Bu tablo DİK'i gösterir, tedavi yalnızca taze donmuş plazma transfüzyonundan ibarettir.",
+        "C": "Bu tablo demir eksikliği anemisini gösterir, tedavi oral demir replasmanıdır.",
+        "D": "Direkt Coombs pozitifliği brusellozla hiçbir zaman ilişkilendirilmemiştir, başka bir neden aranmalıdır.",
+        "E": "Bu tablo HLH'yi gösterir ve mutlaka HLH-94 kemoterapi protokolü (Etoposid) başlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bu tablo Coombs-Pozitif Otoimmün Hemolitik Anemi (OİHA)'yı gösterir; sıklıkla B. melitensis ile ilişkilidir. Çoğu olgu antibiyoterapiyle geriler; dirençli/hayatı tehdit eden olgularda kortikosteroid + IVIG dramatik iyileşme sağlar.",
+      "aciklama_detay": "Bruselloz, periferik kan hücrelerine karşı otoantikor üretimini tetikleyerek immünolojik yıkım mekanizmalarını aktive edebilir. Bu komplikasyonlar, standart antibiyotik tedavisine RAĞMEN derin sitopenilerin düzelmediği DİRENÇLİ vakalarda akla gelmelidir.\n\nCoombs-Pozitif Otoimmün Hemolitik Anemi (OİHA): Sıklıkla B. MELİTENSİS suşları ile ilişkilendirilen NADİR bir komplikasyondur; tüm hematolojik komplikasyonların yaklaşık %5.8-14.8'inde gözlenir.\n\nPatogenez: Bakteriyel antijenlerin MOLEKÜLER BENZERLİK (molecular mimicry) yoluyla eritrosit membran antijenlerine karşı sıcak veya soğuk tip reaktif IgG/IgM antikorlarının oluşumunu TETİKLEDİĞİ düşünülmektedir → dalaktaki makrofajlarca fagositoz (EKSTRAVASKÜLER hemoliz).\n\nTanı Kriterleri (bu hastadaki bulgular tam olarak bunlarla örtüşüyor): Antibiyotiğe rağmen DERİNLEŞEN anemi (Hb <8 g/dL), belirgin RETİKÜLOSİTOZ (kemik iliğinin kompanzatuar yanıtı), İNDİREKT BİLİRUBİN YÜKSEKLİĞİ (hemoliz sonucu artan bilirubin yükü), LDH ARTIŞI (hücre yıkımının genel göstergesi), HAPTOGLOBİN DÜŞÜKLÜĞÜ (serbest hemoglobinin haptoglobin tarafından bağlanıp tüketilmesi) ve periferik yaymada ŞİSTOSİT/AKANTOSİT. KESİN TANI Direkt Coombs (DAT) POZİTİFLİĞİ ile konur — bu, antikorların doğrudan eritrosit yüzeyine bağlandığını gösteren altın standart testtir.\n\nTedavi: ÇOĞU olgu UYGUN KOMBİNE ANTİBİYOTERAPİYLE GERİLER — yani bruselloz tedavisi başladığında (tetikleyici antijenik uyarı ortadan kalktığında), otoimmün süreç kendiliğinden düzelme eğilimindedir, bu her zaman ek immünsüpresif tedavi gerektirmez. DİRENÇLİ ve HAYATI TEHDİT EDEN olgularda (bu vakadaki gibi Hb 7 g/dL'ye kadar derinleşen anemi) KORTİKOSTEROİD (Prednizolon 1 mg/kg/gün) + IVIG kombinasyonu DRAMATİK ve HIZLI iyileşme sağlar.\n\nBu bilgi, İTP ile karşılaştırıldığında da netlik kazanır: İmmün Trombositopeni (İTP) kemik iliği megakaryosit sayısı normal/artmış olmasına rağmen periferde trombositlerin immünolojik olarak hızlı yıkılmasıyla karakterizedir; peteşi, purpura veya mukozal kanamalarla (diş eti kanaması, GİS kanama) prezante olabilir ve tedavisi de yine kortikosteroidler (dirençli olgularda IVIG — özellikle trombosit <10.000/µL veya ciddi kanama riski varlığında ilk tercih)'dir. Yani OİHA ve İTP, brusellozun iki paralel otoimmün komplikasyonu olarak benzer bir tedavi mantığını (önce antibiyoterapiye yanıtı bekle, dirençliyse steroid±IVIG) paylaşır — ancak biri eritrositleri, diğeri trombositleri hedef alır.\n\nBu vaka, brusellozun DİK veya HLH gibi diğer hematolojik komplikasyonlardan (farklı laboratuvar bulgu setleri gerektiren) ayırt edilmesi gereken, özgün ve karakteristik bir immünolojik komplikasyon örneğidir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Bu tablo Coombs-pozitif OİHA'yı gösterir; sıklıkla B. melitensis ilişkilidir; çoğu olgu antibiyoterapiyle geriler, dirençli olgularda kortikosteroid+IVIG dramatik iyileşme sağlar.",
+        "B": "YANLIŞ — DİK'in laboratuvar profili farklıdır (PT/aPTT uzaması, D-dimer yüksekliği, fibrinojen tüketimi); bu vakadaki Coombs pozitifliği, retikülositoz ve şistosit/akantosit paterni OİHA'ya özgüdür; tedavi de yalnızca plazma transfüzyonu değildir.",
+        "C": "YANLIŞ — Demir eksikliği anemisinde retikülositoz, indirekt bilirubin yüksekliği ve pozitif Coombs beklenmez; bu bulgular hemolitik süreci gösterir, demir eksikliğini değil.",
+        "D": "YANLIŞ — Kanonik metin Direkt Coombs pozitifliğini brusellozun OİHA komplikasyonunun kesin tanı kriteri olarak açıkça tanımlar; ilişkisiz olduğu iddiası doğrudan yanlıştır.",
+        "E": "YANLIŞ — HLH farklı bir tanı kümesidir (ateş, splenomegali, sitopeniler ≥2 seri, hipertrigliseridemi/hipofibrinojenemi, hemofagositoz, hiperferritinemi, düşük NK aktivitesi, yüksek sCD25); bu vakadaki spesifik hemoliz bulguları (Coombs pozitif, retikülositoz, şistosit) OİHA'yı gösterir, HLH'yi değil; ayrıca Brucella ilişkili HLH'de bile kemoterapi genellikle GEREKMEZ."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "otoimmün hemolitik anemi",
+        "Coombs testi",
+        "B. melitensis"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brusellozun Hematolojik Komplikasyonları"
+    },
+    {
+      "id": "s14",
+      "metin": "Bruselloz tanılı bir hastada ateş, splenomegali, iki seride sitopeni, ferritin 8500 µg/L, trigliserid 320 mg/dL ve kemik iliği biyopsisinde hemofagositoz saptanıyor — HLH-2004 kriterlerine göre HLH tanısı doğrulanıyor.\n\nBrucella ilişkili sekonder HLH'nin TEDAVİ yaklaşımı, primer/malignite/genetik nedenli HLH'den hangi açıdan farklıdır?",
+      "secenekler": {
+        "A": "Antibiyotik tedavisi HLH tablosunu etkilemez, yalnızca kemoterapi işe yarar.",
+        "B": "Brucella ilişkili HLH'de tedavi yalnızca splenektomiden ibarettir.",
+        "C": "Brucella ilişkili sekonder HLH genellikle HLH-94/HLH-2004 kemoterapi protokollerine (Etoposid vb.) GEREKSİNİM DUYULMADAN, sadece hedefli kombine anti-bruselloz tedavisi ile TAMAMEN KÜR sağlanabilir; ağır/organ yetmezlikli vakalarda kısa süreli steroid+IVIG eklenebilir.",
+        "D": "Brucella ilişkili HLH'de de diğer HLH tiplerinde olduğu gibi mutlaka HLH-94 protokolü (Etoposid) ilk basamak tedavidir.",
+        "E": "Brucella ilişkili HLH tedavi edilemez, hastalık her zaman fatal seyreder."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Brucella ilişkili sekonder HLH'nin en önemli özelliği; genellikle HLH-94/HLH-2004 kemoterapi protokollerine (Etoposid vb.) gereksinim duyulmadan, sadece hedefli kombine anti-bruselloz tedavisi ile tamamen kür sağlanabilmesidir.",
+      "aciklama_detay": "Hemofagositik Lenfohistiyositoz (HLH), retiküloendotelyal sistemde kontrolsüz T-hücresi ve makrofaj aktivasyonu ile karakterize, hayatı tehdit eden hiperenflamatuar bir sitokin fırtınası tablosudur. İntrasellüler patojenler arasında virüsler (özellikle EBV) ilk sırada gelse de, bakteriyel nedenler arasında Brucella önemli bir SEKONDER tetikleyicidir.\n\nHLH-2004 Kriterleri — Tanı İçin EN AZ 5'İ GEREKİR:\n- Ateş (genellikle dirençli ve yüksek)\n- Splenomegali\n- Periferik kan sitopenileri — en az İKİ seride (anemi, nötropeni veya trombositopeni)\n- Hipertrigliseridemi (≥265 mg/dL) ve/veya hipofibrinojenemi (≤150 mg/dL)\n- Kemik iliği, dalak veya lenf nodu biyopsisinde HEMOFAGOSİTOZ aktivitesi\n- Düşük veya hiç olmayan NK hücre aktivitesi\n- HİPERFERRİTİNEMİ (≥500 µg/L; brusellozda sıklıkla BİNLİ değerlere ulaşır — bu vakadaki 8500 µg/L bu paterne tam uyar)\n- Çözünür CD25 (sIL-2R) yüksekliği (≥2400 U/mL)\n\nPatofizyoloji: Brucella antijenlerinin Toll-benzeri reseptörleri (TLR) uyarması sonucu makrofajlardan aşırı miktarda IFN-γ, IL-6 ve IL-1β salınır; bu da doku harabiyetine ve multiorgan yetmezliğine yol açar.\n\nTedavi Yönetimi — KRİTİK AYRIM: Brucella'ya bağlı sekonder HLH'nin EN ÖNEMLİ klinik özelliği; PRİMER, MALİGNİTE veya GENETİK nedenli HLH tablolarından FARKLI olarak GENELLİKLE HLH-94/HLH-2004 KEMOTERAPİ protokollerine (Etoposid vb.) GEREKSİNİM DUYULMADAN, sadece HEDEFLİ KOMBİNE ANTİ-BRUSELLOZ TEDAVİSİ ile TAMAMEN KÜR SAĞLANABİLMESİDİR. Bu, HLH'nin genel yönetim algoritmasından önemli bir sapmadır — çünkü klasik HLH protokolleri (özellikle malignite/genetik kökenli olgularda) yoğun immünsüpresif kemoterapi gerektirirken, enfeksiyon-tetiklenmiş (özellikle bakteriyel, tedavi edilebilir) HLH'de altta yatan nedeni ortadan kaldırmak (bu durumda anti-bruselloz antibiyoterapi) genellikle YETERLİDİR.\n\nAncak KLİNİĞİ HIZLI İLERLEYEN ve ORGAN YETMEZLİĞİ GELİŞEN AĞIR vakalarda tedaviye KISA SÜRELİ steroid ve IVIG eklenmesi HAYATİ ÖNEM taşır — yani hafif-orta olgularda antibiyoterapi tek başına yeterliyken, ağır/organ yetmezlikli olgularda destekleyici immünmodülatör tedavi (steroid+IVIG, ama Etoposid gibi sitotoksik kemoterapi değil) eklenmesi gerekebilir.\n\nBu bilgi klinik pratikte çok önemlidir çünkü bir hastada HLH tanısı konduğunda, altta yatan nedeni araştırmadan doğrudan agresif HLH-94 kemoterapi protokolüne başlamak, eğer neden Brucella gibi tedavi edilebilir bir enfeksiyon ise gereksiz toksisiteye yol açabilir — bu nedenle HLH tanısı konan her hastada altta yatan TETİKLEYİCİ nedenin (enfeksiyon, malignite, otoimmün, genetik) araştırılması, tedavi stratejisini kökten değiştirebilecek kritik bir adımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin antibiyotik tedavisinin HLH tablosunu DÜZELTTİĞİNİ (tamamen kür sağladığını) açıkça belirtir; antibiyotiğin etkisiz olduğu iddiası doğrudan yanlıştır.",
+        "B": "YANLIŞ — Splenektomi, kanonik metinde Brucella ilişkili HLH tedavisi olarak tanımlanmamıştır; standart yaklaşım hedefli anti-bruselloz antibiyoterapisidir.",
+        "C": "DOĞRU — Brucella ilişkili sekonder HLH genellikle kemoterapiye gerek duymadan hedefli anti-bruselloz tedavisiyle tamamen kür sağlanır; ağır/organ yetmezlikli vakalarda kısa süreli steroid+IVIG eklenebilir.",
+        "D": "YANLIŞ — Kanonik metin özellikle Brucella ilişkili HLH'nin PRİMER/malignite/genetik nedenli HLH'den FARKLI olarak genellikle HLH-94 protokolüne İHTİYAÇ DUYMADIĞINI vurgular; bu, ayırt edici temel özelliktir.",
+        "E": "YANLIŞ — Kanonik metin tam tersine anti-bruselloz tedaviyle 'tamamen kür sağlanabildiğini' belirtir; fatal seyrin kaçınılmaz olduğu iddiası yanlıştır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "HLH",
+        "hemofagositik lenfohistiyositoz",
+        "HLH-2004 kriterleri",
+        "sekonder HLH"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brusellozun Hematolojik Komplikasyonları"
+    },
+    {
+      "id": "s15",
+      "metin": "Ağır bruselloz sepsisi tablosundaki bir hastada PT/aPTT uzaması, D-dimer yüksekliği, fibrinojen düşüklüğü saptanıyor (ISTH DİK skoru ≥5). Trombin-Antitrombin Kompleksi (TAT) belirgin yüksek, Plazmin-α₂-antiplazmin Kompleksi (PAP) nispeten baskılanmış bulunuyor. Hastada aktif klinik olarak anlamlı kanama YOK.\n\nBu TAT/PAP dengesizliği hangi DİK fenotipini gösterir ve buna yönelik antikoagülasyon yaklaşımı nedir?",
+      "secenekler": {
+        "A": "Bu bulgular DİK ile ilgisizdir, yalnızca rutin koagülasyon paneli hatası olarak değerlendirilmelidir.",
+        "B": "Aktif kanama olmadığı için antikoagülasyon KESİNLİKLE KONTRENDİKEDİR, bu hastalarda hiçbir zaman LMWH kullanılmaz.",
+        "C": "TAT ve PAP'ın her ikisinin de yüksek olması, dengeli bir fibrinoliz-koagülasyon durumunu gösterir ve tedavi gerektirmez.",
+        "D": "Pro-trombotik/hiperkoagüle faza meyilli bir DİK fenotipini gösterir; aktif anlamlı kanaması olmayan bu hastada yakın takip altında LMWH (örn. Nadroparin Kalsiyum) trombotik tıkanmaları ve doku infarktlarını önlemede etkilidir ve kan ürünü transfüzyon gereksinimini azaltabilir.",
+        "E": "TAT/PAP dengesizliği fibrinolitik/kanama eğilimli bir fenotipi gösterir, bu nedenle antifibrinolitik ajan (traneksamik asit) başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "TAT yüksekliği + PAP baskılanması, pro-trombotik/hiperkoagüle DİK fenotipini gösterir; aktif kanaması olmayan bu hastada yakın takip altında LMWH trombotik tıkanmaları önlemede etkilidir ve kan ürünü transfüzyon ihtiyacını azaltabilir.",
+      "aciklama_detay": "Bruselloz seyrinde koagülasyon anomalileri NADİR fakat mortalitesi OLDUKÇA YÜKSEK komplikasyonlardır. B. melitensis enfeksiyonları endotel hücrelerini doğrudan enfekte ederek veya salgıladığı pro-enflamatuar sitokinler aracılığıyla koagülasyon kaskadını bozabilir.\n\nDİK Kaskadı: Brucella LPS/Sepsis → SIRS ve sınırı aşmış sitokin salınımı → Sistemik endotel hasarı → Doku faktörü ekspresyonu & koagülasyon kaskadı aktivasyonu → Trombosit ve fibrinojen tüketimi (DİK skoru ≥5) → Yaygın mikrovasküler trombozlar / ağır kanama eğilimi.\n\nSistemik Endotel Hasarı: Brucella'nın endotelyal hücre içi invazyonu ve uyardığı lokal vaskülit (lökositoklastik vaskülit vb.), vasküler endotelde antikoagülan moleküllerin (trombomodulin, protein C) ekspresyonunu AZALTIRKEN prokoagülan doku faktörü ekspresyonunu İNDÜKLER.\n\nTüketim Koagülopatisi: Kontrolsüz aktivasyon mikrovasküler fibrin birikimlerine, bu da trombositlerin ve koagülasyon faktörlerinin (özellikle fibrinojen) hızla tüketilmesine neden olur. Sonuçta PT ve aPTT uzar; D-dimer dramatik olarak yükselir.\n\nFenotip Belirleme — TAT/PAP Dengesi: Trombin-Antitrombin Kompleksi (TAT) seviyelerinin BELİRGİN YÜKSEK, buna karşın Plazmin-α₂-antiplazmin Kompleksi (PAP) seviyelerinin NİSPETEN BASKILANMIŞ olması (TAT/PAP DENGESİZLİĞİ), hastanın PRO-TROMBOTİK/HİPERKOAGÜLE FAZA meyilli bir DİK FENOTİPİNE sahip olduğunu gösterir. Bu, DİK'in tek tip bir hastalık olmadığını, aynı ISTH skoru altında farklı FENOTİPLERE (bazı hastalarda fibrinoliz baskın/kanama eğilimli, bazı hastalarda pıhtılaşma baskın/tromboz eğilimli) sahip olabileceğini gösteren önemli bir kavramdır.\n\nKlinik Yönetim — ISTH Skoru ≥5 Aşikâr DİK: Hedefe yönelik tedavi: temel yaklaşım hızlıca KOMBİNE ANTİBİYOTERAPİ başlanmasıdır (altta yatan nedeni — Brucella enfeksiyonunu — tedavi etmek, DİK yönetiminin temelidir). Antikoagülasyon: AKTİF, KLİNİK OLARAK ANLAMLI KANAMASI OLMAYAN ancak PRO-TROMBOTİK DİK fenotipine sahip hastalarda, YAKIN TAKİP altında Düşük Molekül Ağırlıklı Heparin (LMWH; örn. Nadroparin Kalsiyum) TROMBOTİK TIKANMALARI ve DOKU İNFARKTLARINI ÖNLEMEDE ETKİLİDİR. Bu sayede taze donmuş plazma ve trombosit süspansiyonu TRANSFÜZYON GEREKSİNİMLERİ de anlamlı derecede AZALTILABİLİR.\n\nBu bilginin klinik önemi büyüktür: DİK tanısı konan HER hastada 'kanama riski var, antikoagülan verilemez' şeklinde otomatik bir yaklaşım YANLIŞTIR — özellikle TAT/PAP fenotip analizi hiperkoagüle bir profil gösteriyorsa VE aktif kanama yoksa, dikkatli/yakın izlemli LMWH kullanımı hem trombotik komplikasyonları (dalak infarktı, serebral infarkt, MI, bağırsak iskemisi gibi vasküler tablolar) önler hem de gereksiz kan ürünü transfüzyonunu azaltır. Bu, DİK yönetiminde 'tek reçete herkese uymaz, fenotipe göre bireyselleştirilmiş yaklaşım gerekir' prensibinin somut bir örneğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bu bulgular kanonik metinde tanımlanan DİK kaskadının (LPS/sepsis→endotel hasarı→koagülasyon aktivasyonu→tüketim) klasik laboratuvar yansımasıdır; laboratuvar hatası olarak değerlendirilmesi yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin açıkça aktif, klinik olarak anlamlı kanaması OLMAYAN pro-trombotik fenotipli hastalarda yakın takip altında LMWH kullanımının ETKİLİ olduğunu belirtir; 'kesinlikle kontrendike' iddiası doğrudan yanlıştır.",
+        "C": "YANLIŞ — TAT/PAP dengesi 'her ikisi de yüksek' değildir; TAT YÜKSEK, PAP BASKILANMIŞTIR — bu asimetri (dengesizlik) pro-trombotik fenotipi gösterir ve kanonik metinde tedavi (LMWH) gerektiren bir durum olarak tanımlanır, tedavisiz izlem önerilmez.",
+        "D": "DOĞRU — TAT yüksekliği + PAP baskılanması pro-trombotik/hiperkoagüle DİK fenotipini gösterir; aktif kanaması olmayan hastada yakın takipli LMWH trombotik tıkanmaları önler ve transfüzyon ihtiyacını azaltır.",
+        "E": "YANLIŞ — Bu bulgular fibrinolitik/kanama eğilimli değil PRO-TROMBOTİK bir fenotipi gösterir; antifibrinolitik ajan bu fenotipte uygun bir yaklaşım değildir, kanonik metinde de böyle bir tedavi tanımlanmamıştır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "DİK",
+        "koagülopati",
+        "TAT/PAP",
+        "LMWH"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brusellozun Hematolojik Komplikasyonları"
+    },
+    {
+      "id": "s16",
+      "metin": "Bruselloz nedeniyle karaciğer biyopsisi yapılan bir hastada, karaciğer parankiminde/portal alanlarda kazeifikasyon nekrozu İÇERMEYEN granülomlar (epitelyoid histiyositler, lenfositler, PMN'ler ve dev hücrelerden oluşan) saptanıyor.\n\nBu histopatolojik bulgu ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Non-kazeifiye granülomlar yalnızca dalak tutulumunda görülür, karaciğerde saptanmaz.",
+        "B": "Non-kazeifiye granülomlar bruselloz hepatik tutulumu için patognomiktir; B. abortus tipik olarak belirgin, organize non-kazeifiye granülomatöz hepatit oluşturma eğiliminde iken, B. suis klasik granülom yerine kronik süpüratif apseler ile karakterizedir.",
+        "C": "Kazeifikasyon nekrozu içermeyen granülomlar yalnızca tüberkülozda görülür, bruselloz için tipik değildir.",
+        "D": "Tüm Brucella türleri karaciğerde aynı histopatolojik paterni (organize non-kazeifiye granülom) oluşturur, türler arası fark yoktur.",
+        "E": "Bruselloz hepatik tutulumunda granülom formasyonu bildirilmemiştir, yalnızca diffüz nekroz görülür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Non-kazeifiye granülomlar bruselloz hepatik tutulumu için patognomiktir. B. abortus tipik olarak belirgin, organize non-kazeifiye granülomatöz hepatit oluşturma eğilimindedir; B. suis ise klasik granülom yapıları yerine kronik süpüratif apseler ve destrüktif lezyonlarla karakterizedir.",
+      "aciklama_detay": "Brucella cinsi bakteriler, retiküloendotelyal sistem (RES) hücrelerine (kemik iliği, dalak, lenf nodları ve karaciğer) yüksek afinite gösteren intrasellüler patojenlerdir. Karaciğer, vücuttaki en büyük RES organı olması sebebiyle, brusellozun klinik seyri boyunca sıklıkla ve geniş bir patolojik spektrumda etkilenir.\n\nKlinik Spektrum (hafiften ağıra): Asemptomatik hafif transaminaz yüksekliği (transaminitis) → Akut hepatit → Granülomatöz hepatit → Süpüratif abseler (CHSB) → uygun tedavi edilmediğinde karaciğer dekompansasyonu ve siroz.\n\nHistopatolojik Özellikler — Non-Kazeifiye Granülomlar (PATOGNOMİK BULGU): Karaciğer parankiminde veya portal alanlarda yerleşim gösteren, KAZEİFİKASYON NEKROZU İÇERMEYEN (noncaseating) granülomlar PATOGNOMİKTİR. Bu granülomlar; epitelyoid histiyositler, lenfositler, polimorfonükleer lökositler ve dev hücrelerin (Langhans benzeri) bir araya gelmesiyle oluşur.\n\n⚠️ Kritik ayırıcı tanı noktası: 'Non-kazeifiye' terimi burada önemlidir çünkü TÜBERKÜLOZUN karakteristik granülomları genellikle KAZEİFİYE (peynirimsi nekrozlu) iken, bruselloz granülomları KAZEİFİYE OLMAZ — bu histopatolojik ayrım, iki hastalığın biyopsi materyalinde ayırt edilmesine yardımcı olabilir (ancak tek başına kesin ayrım için yeterli değildir, klinik/mikrobiyolojik korelasyon gerekir).\n\nTürlere Göre Histopatolojik Varyasyonlar — bu, üç Brucella türünün karaciğerde FARKLI patolojik paternler oluşturduğunu gösterir:\n- B. abortus: TİPİK olarak belirgin, ORGANİZE non-kazeifiye GRANÜLOMATÖZ HEPATİT oluşturma eğilimindedir — yani bu tür klasik, iyi organize granülom formasyonuyla ilişkilidir.\n- B. melitensis: Hem DİFFÜZ hepatosellüler hasara/inflamasyona HEM DE küçük (MİKRO) granülomların oluşumuna yol açabilir. Parankimde nekrotizan fokal lezyonlar da bildirilmiştir — yani bu tür daha heterojen, karma bir patolojik tablo oluşturur.\n- B. suis: KLASİK GRANÜLOM YAPILARINDAN ZİYADE KRONİK SÜPÜRATİF APSELER ve DESTRÜKTİF DOKU LEZYONLARI ile karakterizedir — bu, B. suis'in diğer iki türden belirgin şekilde farklı, daha agresif/süpüratif bir hepatik patoloji oluşturduğunu gösterir.\n\nBu türe özgü patolojik farklılıklar, bir karaciğer biyopsi raporunda görülen spesifik histopatolojik paternin (organize granülom vs. diffüz+mikrogranülom vs. süpüratif apse), altta yatan Brucella türü hakkında (kesin olmasa da) bir ipucu verebileceğini gösterir — bu bilgi patoloji-mikrobiyoloji korelasyonu açısından değerlidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Non-kazeifiye granülomlar spesifik olarak KARACİĞER parankimi/portal alanlar bağlamında tanımlanmıştır (bu soruda karaciğer biyopsisinden bahsedilmektedir); yalnızca dalağa özgü olduğu iddiası yanlıştır.",
+        "B": "DOĞRU — Non-kazeifiye granülomlar bruselloz hepatik tutulumu için patognomiktir; B. abortus organize granülomatöz hepatit yapar, B. suis ise kronik süpüratif apselerle karakterizedir.",
+        "C": "YANLIŞ — Kazeifikasyon içermeyen (non-kazeifiye) granülomlar kanonik metinde brusellozun PATOGNOMİK bulgusu olarak tanımlanır; tüberkülozla ayrımın tam tersine bu granülomların kazeifiye OLMAMASI önemlidir.",
+        "D": "YANLIŞ — Kanonik metin üç türün (B. abortus, B. melitensis, B. suis) karaciğerde BELİRGİN ŞEKİLDE FARKLI histopatolojik paternler oluşturduğunu açıkça tanımlar; 'aynı patern' iddiası yanlıştır.",
+        "E": "YANLIŞ — Granülom formasyonu, kanonik metinde brusellozun hepatik tutulumunun ana histopatolojik bulgusu olarak (özellikle B. abortus'ta) açıkça tanımlanmıştır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "hepatobiliyer tutulum",
+        "granülomatöz hepatit",
+        "histopatoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu"
+    },
+    {
+      "id": "s17",
+      "metin": "Akut bruselloz döneminde önceden sağlıklı bir karaciğere sahip hastalarda, aminotransferaz (AST/ALT) yüksekliği ve klinik hepatit gelişme oranları ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Klinik hepatit (sarılık ile birlikte) hastaların %50'sinden fazlasında gelişir, yani brusellozun en sık klinik prezentasyonudur.",
+        "B": "Transaminaz yüksekliği brusellozda hiçbir zaman görülmez, karaciğer fonksiyon testleri her zaman normaldir.",
+        "C": "Akut ve kronik/subakut fazda karaciğer tutulum oranı birbirinden farksızdır.",
+        "D": "Transaminitis sıklığı hastaların %15-40'ında saptanır; akut fazda karaciğer tutulum oranı %77.6-90 arasındadır (subakut/kronik faza kıyasla anlamlı derecede daha sık); klinik hepatit (sarılık, hepatomegali, belirgin transaminaz yüksekliği) hastaların yaklaşık %3'ünde gelişir.",
+        "E": "Karaciğer tutulumu yalnızca kronik fazda görülür, akut fazda hiç bildirilmemiştir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Transaminitis sıklığı %15-40'tır; akut fazda karaciğer tutulum oranı %77.6-90 arasında olup subakut/kronik faza göre anlamlı derecede daha sıktır; klinik hepatit (sarılık ile) hastaların yaklaşık %3'ünde gelişir.",
+      "aciklama_detay": "Karaciğer tutulumunun en yaygın laboratuvar yansıması transaminaz (AST ve ALT) düzeylerinde gözlenen hafif ila orta dereceli artışlardır ve bu tutulumun epidemiyolojik oranları klinik önem taşır.\n\nEpidemiyolojik Oranlar:\n- Transaminitis sıklığı: Bruselloz hastalarının %15-40'INDA aminotransferaz yükseklikleri saptanır — yani bu, hastaların önemli bir kısmında (ancak çoğunluğunda değil) görülen, çoğunlukla HAFİF-ORTA dereceli bir bulgudur (tam bir 'aşikar hepatit' değil).\n- Akut fazda: Karaciğer tutulum oranı %77.6-90 ARASINDA bildirilmiştir; SUBAKUT/KRONİK FAZA KIYASLA ANLAMLI DERECEDE DAHA SIK ve BELİRGİNDİR. Bu, hastalığın erken (akut) döneminde karaciğer tutulumunun (en azından hafif transaminaz yüksekliği düzeyinde) çok yaygın olduğunu, ancak hastalık ilerleyip subakut/kronik faza geçtikçe bu tutulumun (göreceli olarak) daha az sıklıkta veya daha az belirgin hale geldiğini gösterir.\n- Klinik hepatit: Hastaların yaklaşık %3'ÜNDE sarılık, hepatomegali ve belirgin transaminaz yüksekliği gelişebilir — bu, TAM bir 'klinik olarak belirgin hepatit' tablosunun (yalnızca laboratuvar anormalliğinin ötesinde, sarılık gibi klinik bulgularla seyreden) NADİR olduğunu, çoğu hastada karaciğer tutulumunun sessiz/subklinik (yalnızca laboratuvarda görülen) düzeyde kaldığını gösterir.\n\nHücresel Ölüm Mekanizması: Brucella bakterileri hepatositlerle doğrudan etkileşime girerek konak hücrelerinde APOPTOZ yoluyla hücre ölümünü indükler ve bu da parankimal hasara (transaminitise) yol açar. Akut bakteremi ve yayılım döneminde karaciğere yoğun bakteri göçü ve metabolik yolların geçici inhibisyonu temel belirleyicilerdir — bu, karaciğer tutulumunun neden özellikle AKUT (yoğun bakteremik) dönemde en belirgin olduğunu açıklayan patofizyolojik mekanizmadır.\n\nBu bilgilerin klinik anlamı, bruselloz tanısı konan bir hastada rutin karaciğer fonksiyon testlerinin (AST/ALT) mutlaka değerlendirilmesi gerektiğidir — çünkü hafif-orta transaminaz yüksekliği çok yaygındır (%15-40, akut fazda %77.6-90'a kadar), ancak bu bulgu tek başına ALARM verici değildir çünkü çoğunlukla kendiliğinden düzelen, hafif bir tabloyu yansıtır; asıl dikkat edilmesi gereken, klinik hepatit bulgularının (sarılık, belirgin hepatomegali) gelişip gelişmediği (bu daha nadir, %3, ama daha ciddi bir alt gruptur) ve ilerleyen bölümlerde ele alınan daha ağır formların (granülomatöz hepatit, CHSB, SBP) gelişip gelişmediğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Klinik hepatit (sarılık ile) hastaların yalnızca yaklaşık %3'ünde gelişir, %50'nin üzerinde değil; bu nedenle brusellozun en sık klinik prezentasyonu değildir (en sık bulgular artralji %80, ateş %76'dır).",
+        "B": "YANLIŞ — Kanonik metin transaminitis sıklığını %15-40 (akut fazda %77.6-90'a kadar) olarak açıkça tanımlar; 'hiçbir zaman görülmez' iddiası doğrudan yanlıştır.",
+        "C": "YANLIŞ — Kanonik metin akut fazdaki tutulum oranının (%77.6-90) subakut/kronik faza kıyasla ANLAMLI DERECEDE DAHA SIK olduğunu açıkça belirtir; 'farksız' iddiası yanlıştır.",
+        "D": "DOĞRU — Transaminitis sıklığı %15-40'tır; akut fazda karaciğer tutulumu %77.6-90 (subakut/kronikten anlamlı sık); klinik hepatit hastaların yaklaşık %3'ünde gelişir.",
+        "E": "YANLIŞ — Kanonik metin karaciğer tutulumunun AKUT FAZDA özellikle sık (%77.6-90) olduğunu belirtir, yalnızca kronik fazda görüldüğü iddiası doğrudan yanlıştır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "hepatobiliyer tutulum",
+        "transaminitis",
+        "klinik hepatit"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu"
+    },
+    {
+      "id": "s18",
+      "metin": "Akut bruselloz enfeksiyonundan yıllar sonra reaktivasyon şeklinde ortaya çıkan, karaciğer veya dalakta fokal süpüratif apselerle karakterize bir hastada BT'de büyük kalsifiye odaklar ('kar tanesi kalsifikasyonu' — snowflake calcification) görülüyor; ancak serolojik testler (Rose Bengal, Wright STA) yalancı negatif veya çok düşük titrede çıkıyor.\n\nBu klinik tablo hangi tanıyı düşündürür ve tanısal zorluğunun nedeni nedir?",
+      "secenekler": {
+        "A": "CHSB, akut enfeksiyonla EŞ ZAMANLI ortaya çıkan bir formdur, reaktivasyonla ilgisi yoktur.",
+        "B": "Serolojik testlerin yalancı negatif çıkması bu durumda önemsizdir çünkü CHSB tanısı yalnızca klinik muayeneyle konur, görüntüleme veya seroloji gerekmez.",
+        "C": "Kronik Hepatosplenik Süpüratif Bruselloz (CHSB); bakterinin intrasellüler odaklarda izole olması ve sistemik immün yanıtı baskılaması nedeniyle serolojik testler yalancı negatif veya çok düşük titrede saptanabilir, bu durum tanı ve tedavide ciddi gecikmelere yol açar.",
+        "D": "Bu tablo akut bruselloz hepatitini gösterir, serolojik testlerin her zaman yüksek pozitif çıkması beklenir.",
+        "E": "Snowflake kalsifikasyon bulgusu hidatik kist (kist hidatik) için patognomiktir, bruselloz ile ilişkisi yoktur."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Bu tablo Kronik Hepatosplenik Süpüratif Bruselloz (CHSB)'yu gösterir; bakterinin intrasellüler odaklarda izole olması ve sistemik immün yanıtı baskılaması nedeniyle serolojik testler yalancı negatif/düşük titrede saptanabilir, bu tanı/tedavide ciddi gecikmelere yol açar.",
+      "aciklama_detay": "CHSB (Chronic Hepatosplenic Suppurative Brucellosis), akut enfeksiyondan YILLAR SONRA REAKTİVASYON şeklinde ortaya çıkabilen, karaciğer veya dalakta FOKAL SÜPÜRATİF APSELERLE karakterize AGRESİF bir fokal formdur — bu, brusellozun kronik seyrinin en agresif tezahürlerinden biridir ve akut enfeksiyonla eş zamanlı değil, gecikmeli (yıllar sonra) bir REAKTİVASYON olayı olarak ortaya çıkar.\n\nSnowflake (Kar Tanesi) Kalsifikasyonu: BT'de karaciğer parankimi içinde, ÇEVRELEYEN HİPODENS ÖDEM VEYA HİPOPERFÜZYON ALANI OLMAKSIZIN, büyük kalsifiye odaklar izlenir; bu görünüme 'kar tanesi kalsifikasyonu' (snowflake calcification) adı verilir. Bu, CHSB'nin karakteristik ve tanıya yardımcı bir radyolojik bulgusudur — 'çevreleyen ödem/hipoperfüzyon olmaması' ayrıntısı önemlidir çünkü bu, lezyonun AKTİF, akut bir inflamatuar süreçten ziyade daha KRONİK, YERLEŞMİŞ bir kalsifikasyon olduğunu gösterir.\n\nTanısal Zorluk — Yalancı Negatif Seroloji: CHSB olgularında BAKTERİNİN İNTRASELLÜLER ODAKLARDA İZOLE OLMASI ve SİSTEMİK İMMÜN YANITI BASKILAMASI nedeniyle serolojik testler (Rose Bengal, Wright STA) YALANCI NEGATİF veya ÇOK DÜŞÜK TİTREDE (örn. Coombs 1/80) SAPTANABİLİR; bu durum tanı ve tedavide CİDDİ GECİKMELERE yol açar. Bu, kronik/fokalize bruselloz formlarının klinik açıdan en tehlikeli özelliklerinden biridir: bakteri vücutta VAR olmasına rağmen (ve aktif hastalık yapmaya devam etmesine rağmen), standart serolojik taramalar bunu YAKALAYAMAYABİLİR — çünkü bakteri, sistemik immün yanıtı tetikleyecek düzeyde dolaşıma yayılmak yerine, lokalize/kapsüllenmiş süpüratif odaklarda 'saklanmıştır'.\n\nBu bilginin klinik önemi büyüktür: eğer bir klinisyen, karaciğer/dalak apsesi + snowflake kalsifikasyonu olan bir hastada standart serolojik testlere güvenip (negatif çıktığı için) brusellozu dışlarsa, tanı GECİKEBİLİR veya tamamen KAÇIRILABİLİR. Bu nedenle CHSB şüphesinde, negatif seroloji tek başına tanıyı DIŞLAMAMALI, gerekirse doku örneklemesi (biyopsi/kültür) veya daha spesifik testler (Brucellacapt gibi) düşünülmelidir — bu bilgi, kanonik metinde genel serolojik test bölümünde de vurgulanan 'Brucellacapt/Coombs testinin STA'nın negatif kalabildiği kronik/komplike olgularda kullanılması' prensibiyle doğrudan örtüşür.\n\nBu tablo, snowflake kalsifikasyonun hidatik kist gibi başka etiyolojilerle karışabileceği düşünülse de, kanonik metinde spesifik olarak CHSB'nin karakteristik bulgusu olarak tanımlanmıştır ve klinik bağlam (akut brusellozdan yıllar sonra reaktivasyon, süpüratif apse) bu tanıyı desteklemektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin CHSB'yi açıkça 'akut enfeksiyondan YILLAR SONRA REAKTİVASYON şeklinde' ortaya çıkan bir form olarak tanımlar; akutla eş zamanlı olduğu iddiası tam tersini söylemektedir.",
+        "B": "YANLIŞ — Kanonik metin BT bulgusunu (snowflake kalsifikasyon) ve serolojik test zorluğunu tanısal süreçte önemli unsurlar olarak tanımlar; 'yalnızca klinik muayeneyle tanı konur, görüntüleme/seroloji gerekmez' iddiası bu vurguyla çelişir.",
+        "C": "DOĞRU — Bu tablo CHSB'yi gösterir; bakterinin intrasellüler izolasyonu ve immün baskılama nedeniyle seroloji yalancı negatif/düşük titrede çıkabilir, bu tanı/tedavide ciddi gecikmelere yol açar.",
+        "D": "YANLIŞ — Bu tablo akut hepatit DEĞİL, KRONİK reaktivasyon formu CHSB'dir; ayrıca kanonik metin serolojik testlerin bu spesifik formda YALANCI NEGATİF çıkabileceğini vurgular, yüksek pozitiflik beklenmez.",
+        "E": "YANLIŞ — Snowflake kalsifikasyonu kanonik metinde spesifik olarak CHSB'nin (bruselloz kronik fokal formunun) karakteristik radyolojik bulgusu olarak tanımlanır; hidatik kist için patognomik olduğu iddiası kaynakta desteklenmez."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "CHSB",
+        "snowflake kalsifikasyon",
+        "kronik bruselloz",
+        "yalancı negatif seroloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu"
+    },
+    {
+      "id": "s19",
+      "metin": "Kronik viral hepatit (HBV) zemininde karaciğer sirozu ve asiti olan yaşlı bir hastada ateş ve karın ağrısı gelişiyor; asit sıvısı nötrofil sayısı 400 hücre/mm³ ve asit kültüründe Brucella üretiliyor, kan kültürü de pozitif çıkıyor.\n\nBu tablo (Brucella kaynaklı SBP) ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Brucella SBP yalnızca genç ve sağlıklı karaciğere sahip hastalarda görülür, sirotik zeminle ilişkisi yoktur.",
+        "B": "Asit sıvısında nötrofil sayısının SBP tanısı için önemi yoktur, yalnızca kültür pozitifliği yeterlidir.",
+        "C": "Brucella SBP'de periton boşluğuna ekilme yolu bağırsak translokasyonudur, hematojen bakteremi ile ilişkisizdir.",
+        "D": "Brucella SBP mortalitesi %0'dır, bu formun klinik önemi yoktur.",
+        "E": "Portal hipertansiyon ve asiti olan sirotik hastalarda RES filtreleme yeteneğinin bozulması nedeniyle bakteremi sırasında Brucella asit sıvısına hematojen yolla kolayca ekilir; kohort verilerinde kan kültürü pozitifliği %72.7 olup periton boşluğuna ekilmenin hematojen bakteremi yoluyla olduğunu doğrular. Mortalite %13.6; tedavi genellikle 6 haftadan uzun Doksisiklin+Rifampisin'dir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sirotik hastalarda RES filtreleme bozukluğu nedeniyle Brucella asit sıvısına hematojen yolla ekilir; kohortta kan kültürü pozitifliği %72.7 bu hematojen yolu doğrular. Mortalite %13.6; tedavi genellikle 6 haftadan uzun Doksisiklin+Rifampisin.",
+      "aciklama_detay": "Hepatobiliyer tutulumun en ağır formlarından biri, karaciğer sirozu olan hastalarda gelişen Brucella kaynaklı Spontan Bakteriyel Peritonit (SBP) tablosudur.\n\nPatofizyolojik Duyarlılık: Portal hipertansiyonu ve asiti olan SİROTİK hastalarda, RETİKÜLOENDOTELYAL SİSTEMİN FİLTRELEME YETENEĞİNİN BOZULMASI (immün disregülasyon) nedeniyle bakteremi esnasında patojenler asit sıvısına HEMATOJEN yolla KOLAYLIKLA EKİLİR (hematogenous seeding). Bu, sirotik hastaların neden Brucella SBP'ye özellikle YATKIN olduğunu açıklayan temel mekanizmadır — normalde RES (özellikle dalak ve karaciğer Kupffer hücreleri) dolaşımdaki bakterileri etkin şekilde temizlerken, siroz zemininde bu filtreleme fonksiyonu bozulduğu için bakteremi kontrol altına alınamaz ve asit sıvısına yayılır.\n\nKohort Analizi (33 Vaka: 22 SBP + 11 PDrP): SBP olgularının TAMAMINA YAKINI ileri yaşta ve altta yatan viral hepatit (HBV/HCV) veya alkole bağlı karaciğer sirozu olan hastalarda gelişmiştir. Kan kültürü pozitifliği %72.7: PERİTON BOŞLUĞUNA EKİLMENİN TRANSLOKASYON YERİNE HEMATOJEN BAKTEREMİ YOLUYLA GERÇEKLEŞTİĞİNİ DOĞRULAMAKTADIR — yani bu yüksek kan kültürü pozitiflik oranı, bakterinin bağırsaktan periton boşluğuna translokasyonla değil, sistemik kan dolaşımından (hematojen) asit sıvısına yerleştiğini gösteren güçlü bir kanıttır. Bu ayrım önemlidir çünkü klasik (bakteriyel) SBP genellikle bağırsak florasının translokasyonuyla açıklanırken, Brucella SBP farklı bir mekanizma (hematojen ekim) izler.\n\nTanı: Asit sıvısı nötrofil sayısı ≥250 hücre/mm³ + asit kültürü/seroloji ile Brucella'nın gösterilmesi. Bu vakadaki nötrofil sayısı (400 hücre/mm³) bu eşiği aşmaktadır ve kültür pozitifliği de tanıyı doğrulamaktadır.\n\nMortalite: SBP grubunda %13.6 — bu, brusellozun genel prognozuna kıyasla (çoğu komplikasyonsuz olgu tam iyileşir) belirgin şekilde daha yüksek bir mortalite oranıdır ve bu formun ciddiyetini gösterir.\n\nTedavi: Doksisiklin + Rifampisin kombinasyonu (ÇOĞUNLUKLA 6 HAFTADAN UZUN) — sirotik zemindeki bu ağır komplikasyon, standart komplikasyonsuz bruselloz tedavi süresinden (6 hafta) daha uzun bir tedavi gerektirebilir, bu da fokal/komplike tutulumlarda tedavi süresinin uzatılması genel prensibiyle uyumludur.\n\nBu bilginin klinik önemi, siroz + asit + ateş tablosu olan bir hastada, standart bakteriyel SBP etkenlerinin (E. coli, Klebsiella gibi) yanı sıra, özellikle endemik bölgede/gıda öyküsü varsa Brucella'nın da ayırıcı tanıda düşünülmesi gerektiğidir — bu, standart ampirik SBP tedavisinin (genellikle 3. kuşak sefalosporin) Brucella'yı kapsamayabileceği ve tanı gecikirse mortalitenin artabileceği anlamına gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin kohortun 'tamamına yakınının ileri yaşta ve altta yatan viral hepatit/alkole bağlı siroz' zemininde geliştiğini belirtir; genç ve sağlıklı karaciğerle sınırlı olduğu iddiası tam tersini söylemektedir.",
+        "B": "YANLIŞ — Kanonik metin tanı kriterlerinde açıkça asit sıvısı nötrofil sayısı ≥250 hücre/mm³ eşiğini kültür/seroloji ile BİRLİKTE tanımlar; nötrofil sayısının önemsiz olduğu iddiası yanlıştır.",
+        "C": "YANLIŞ — Kanonik metin %72.7 kan kültürü pozitifliğinin tam olarak HEMATOJEN bakteremi yoluyla ekilmeyi DOĞRULADIĞINI belirtir, bağırsak translokasyonunu değil; bu şık mekanizmayı tersine çevirmektedir.",
+        "D": "YANLIŞ — Kanonik metin SBP grubunda mortaliteyi %13.6 olarak açıkça belirtir; %0 olduğu ve klinik öneminin olmadığı iddiası doğrudan yanlıştır.",
+        "E": "DOĞRU — Sirotik hastalarda RES filtreleme bozukluğu nedeniyle hematojen ekim olur; kan kültürü pozitifliği %72.7 bunu doğrular; mortalite %13.6, tedavi genellikle 6 haftadan uzun Doksisiklin+Rifampisin'dir."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "spontan bakteriyel peritonit",
+        "siroz",
+        "hepatobiliyer tutulum"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu"
+    },
+    {
+      "id": "s20",
+      "metin": "Doksisiklin + Rifampisin ile bruselloz tedavisi başlanan bir hastada, tedavinin 3. haftasında ALT/AST değerleri normalin 6 katına yükseliyor; karaciğer sentez fonksiyonları (INR, albümin) bozulmaya başlıyor.\n\nBu durumda tedavi modifikasyonu ile ilgili hangi yaklaşım DOĞRUDUR?",
+      "secenekler": {
+        "A": "Enzimler normalin 5 katının üzerine çıktığı ve sentez fonksiyonları bozulduğu için Rifampisin (hepatotoksik potansiyeli en yüksek ajan) kesilmelidir; tercih edilen alternatif renal yolla atılan ve hepatotoksik olmayan Streptomisin (veya Gentamisin) + Doksisiklin kombinasyonudur.",
+        "B": "Enzim yüksekliği ne olursa olsun Rifampisin asla kesilmemelidir, hepatotoksisite brusellozda beklenen ve göz ardı edilmesi gereken bir bulgudur.",
+        "C": "Bu durumda Doksisiklin kesilmeli, Rifampisin monoterapiye devam edilmelidir.",
+        "D": "Karaciğer enzim yüksekliği yalnızca normalin 10 katını aştığında dikkate alınır, 6 kat yükseklik tedavi modifikasyonu gerektirmez.",
+        "E": "Bu durumda tedavi tamamen kesilmeli ve hiçbir antibiyotik verilmemelidir, bruselloz kendiliğinden iyileşecektir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Enzimler normalin 5 katının üzerine çıktığında ve sentez fonksiyonları bozulduğunda hepatotoksik Rifampisin kesilmelidir; tercih edilen alternatif hepatotoksik olmayan, renal yolla atılan Streptomisin (veya Gentamisin) + Doksisiklin kombinasyonudur.",
+      "aciklama_detay": "Brusellozun standart ilk seçenek tedavisi olan Doksisiklin + Rifampisin kombinasyonunda, RİFAMPİSİN'İN karaciğer üzerinde CİDDİ HEPATOTOKSİK POTANSİYELİ mevcuttur ve bu durum, altta yatan karaciğer hastalığı olan veya tedavi sırasında hepatotoksisite gelişen hastalarda özel bir yönetim algoritması gerektirir.\n\nHafif/Orta Hasarda Yaklaşım: Karaciğer SENTEZ FONKSİYONLARI KORUNMUŞ (INR normal, albümin stabil), SADECE TRANSAMİNAZ YÜKSEKLİĞİ (normalin <3-5 KATI) olan olgularda Rifampisin + Doksisiklin tedavisi YAKIN KARACİĞER ENZİMİ TAKİBİ altında BAŞLANABİLİR veya SÜRDÜRÜLEBİLİR — yani hafif-orta düzeydeki enzim yükseklikleri (henüz sentez fonksiyonunu bozmayan) otomatik olarak tedavi kesilmesini gerektirmez, yakın izlemle devam edilebilir.\n\nAğır Hasar veya Toksisite Durumunda Tedavi Modifikasyonu: Belirgin karaciğer YETMEZLİĞİ, SİROZ DEKOMPANSASYONU veya tedavi sırasında ENZİMLER NORMALİN 5 KATININ ÜZERİNE ÇIKARSA hepatotoksik ilaçlar (RİFAMPİSİN BAŞTA) KESİLMELİDİR. Bu vakada hasta hem enzim yüksekliği kriterini (6 kat, 5 katın üzerinde) hem de SENTEZ FONKSİYONU BOZULMASI (INR, albümin) kriterini karşılamaktadır — bu, kanonik metindeki 'ağır hasar' kategorisine tam olarak uymaktadır ve Rifampisin'in KESİLMESİ gerektiğini gösterir.\n\nTercih edilen alternatif: RENAL YOLLA ATILAN ve HEPATOTOKSİK OLMAYAN Streptomisin (veya Gentamisin) + Doksisiklin kombinasyonu. Bu seçim mantıklıdır çünkü Streptomisin/Gentamisin karaciğerden metabolize edilmez (böbrekten atılır), bu nedenle karaciğer yetmezliği olan bir hastada güvenle kullanılabilir — ANCAK bu durumda böbrek fonksiyonlarının normal olduğundan emin olunmalıdır (böbrek yetmezliğinde ise TERSİNE aminoglikozidlerden kaçınılıp Rifampisin+Doksisiklin tercih edilir — organ yetmezliği tipine göre TERSİNE bir seçim mantığı işler).\n\nEk seçenekler: Florokinolonlar (Levofloksasin vb.) veya TMP-SMX, karaciğer fonksiyonları gözetilerek kombinasyonlara eklenebilir — bu, aminoglikozid de kontrendike/uygun değilse kullanılabilecek diğer alternatiflerdir.\n\nBu bilginin klinik önemi, bruselloz tedavisi sırasında rutin karaciğer fonksiyon testi takibinin ZORUNLU olduğunu ve enzim yüksekliğinin derecesine (5 kat eşiği) VE sentez fonksiyonunun durumuna (INR, albümin) göre tedavi modifikasyonu kararının verilmesi gerektiğini göstermesidir — bu iki parametrenin (enzim düzeyi + sentez fonksiyonu) BİRLİKTE değerlendirilmesi, yalnızca tek bir laboratuvar değerine bakarak karar vermekten daha doğru bir klinik yaklaşımdır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Enzimler normalin 5 katının üzerine çıkıp sentez fonksiyonları bozulduğunda Rifampisin kesilmelidir; tercih edilen alternatif hepatotoksik olmayan Streptomisin/Gentamisin + Doksisiklin'dir.",
+        "B": "YANLIŞ — Kanonik metin açıkça belirgin hasar/toksisite durumunda Rifampisin'in KESİLMESİ gerektiğini belirtir; 'asla kesilmemeli' iddiası doğrudan yanlıştır.",
+        "C": "YANLIŞ — Kanonik metinde hepatotoksisite durumunda kesilmesi gereken ajan RİFAMPİSİN'dir (yüksek hepatotoksik potansiyeli nedeniyle), Doksisiklin değil; ayrıca Rifampisin monoterapisi zaten kardinal prensiplere (monoterapi asla) aykırıdır.",
+        "D": "YANLIŞ — Kanonik metin eşiği normalin 5 katı olarak tanımlar (10 kat değil); bu vakadaki 6 kat yükseklik zaten bu eşiği aşmaktadır ve dikkate alınmalıdır.",
+        "E": "YANLIŞ — Kanonik metin tedavinin tamamen kesilmesini değil, hepatotoksik ajanın (Rifampisin) DEĞİŞTİRİLİP alternatif bir kombinasyona (Streptomisin/Gentamisin+Doksisiklin) geçilmesini önerir; bruselloz tedavisiz kendiliğinden iyileşmez, aksine kombine antibiyoterapi esastır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "rifampisin",
+        "hepatotoksisite",
+        "tedavi modifikasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu"
+    },
+    {
+      "id": "s21",
+      "metin": "Brucella'nın intrasellüler yaşam döngüsünde, konak hücre içine alınan bakteriyi barındıran vakuolün kronolojik dönüşümü (eBCV → rBCV → aBCV) ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Vakuol dönüşümü rastgele bir sırada gerçekleşir, kronolojik bir evre sistemi yoktur.",
+        "B": "eBCV (endozomal BCV) LAMP-1/EEA-1/CD63/Rab7 taşır ve bakteri G1 arrestindedir (replikasyon yok); rBCV (replikatif BCV) Sec61B/Calnexin/Calreticulin taşır ve CD63/endozomal belirteçlerden yoksundur, bu evrede yoğun replikasyon olur; aBCV çift membranlıdır, LAMP-1 pozitif ama LC3'ten yoksundur ve egresyona hazırlık evresidir.",
+        "C": "Bakteri replikasyonu en yoğun şekilde eBCV evresinde, asitlenme sırasında gerçekleşir.",
+        "D": "rBCV, endozomal belirteçleri (CD63, Rab7) korumaya devam eder, ER/Golgi belirteçleri kazanmaz.",
+        "E": "aBCV, tek membranlı bir yapıdır ve LC3 pozitiftir, klasik otofagozomla aynıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "eBCV (LAMP-1/EEA-1/CD63/Rab7, G1 arresti) → rBCV (Sec61B/Calnexin/Calreticulin, CD63/endozomal belirteçler YOK, yoğun replikasyon) → aBCV (çift membran, LAMP-1+, LC3-, egresyona hazırlık) şeklinde kronolojik bir vakuol dönüşümü izlenir.",
+      "aciklama_detay": "Brucella cinsi bakterilerin patojenitesi; klasik endotoksinler, ekzotoksinler, kapsül veya sitolizinler gibi geleneksel virülans faktörlerinden YOKSUNDUR. Bakterinin patobiyolojisi, konak hücre içi (özellikle monositler, makrofajlar ve dendritik hücreler) savunma mekanizmalarından kaçma, bu hücrelerin içinde hayatta kalma ve replike olma yeteneğine dayanır. Bu süreç, vakuol membranının manipüle edilerek güvenli bir replikatif niş oluşturulduğu KRONOLOJİK bir dört evreli süreçtir.\n\n① Giriş ve Erken Dönem — eBCV Oluşumu (0-12. saat): Konak hücre tarafından internalize edilen bakteri, fagozom benzeri tek membranlı bir vakuol olan 'Brucella-containing vacuole' (BCV) içine hapsedilir. İlk 12 saat içinde bu vakuol, endositer yolağı ile kontrollü etkileşimler yaşayarak endozomal BCV (eBCV) yapısına dönüşür. Bu süreçte vakuol membranına LAMP-1, EEA-1, CD63 ve Rab7 gibi endozomal MATÜRASYON BELİRTEÇLERİ entegre olur. Lizozomal füzyonların ardından eBCV içi ASİTLENİR; suşların yaklaşık %10'u bu asitlenmeye direnç gösterip hayatta kalır. Bu asidik ortam bakteriyel replikasyonu GEÇİCİ olarak DURDURUR (G1 evresinde ARREST) ancak bir sonraki aşama için hayati virülans genlerinin ekspresyonu için asıl moleküler tetiği çeker.\n\n② Replikatif Nişin Kurulması — rBCV (8-12. saat): eBCV içindeki asitlik ve besin kısıtlılığı, VirB operonunu uyararak T4SS'i (Tip IV Salgı Sistemi) aktive eder. Salgılanan efektörler, eBCV'nin ENDOPLAZMİK RETİKULUM (ER) ve Golgi aygıtıyla doğrudan temas kurmasını sağlar. Vakuol, ER membranları ile sarılarak REPLİKASYONA İZİN VEREN rBCV yapısına dönüşür. rBCV, Sec61B, Calnexin, Calreticulin (ER belirteçleri) VE LAMP-1 taşır — ancak CD63 ve endozomal belirteçler (EEA-1, Rab7) BU EVREDE ARTIK YOKTUR, yani vakuol kimliği endozomal karakterden ER-benzeri karaktere DÖNÜŞMÜŞTÜR. Bu evrede bakteriyel hücre döngüsü yeniden başlar ve YOĞUN REPLİKASYON gerçekleşir.\n\n③ Efektör Aracılı Trafik/Metabolizma (12-48. saat): Bu evrede BspA/BspL (ERAD inhibisyonu), RicA/BspB/BspF (veziküler trafik manipülasyonu), BtpA/BtpB/BPE123 (enerji metabolizması/Warburg kayması) ve NyxA/NyxB/BspG/BspJ (nükleomodülinler) gibi geniş bir efektör repertuvarı, konak hücreyi bakteri lehine yeniden şekillendirir.\n\n④ Egress — aBCV Oluşumu (48-72. saat): 48-72 saatlik yoğun replikasyon sonrası rBCV'ler aBCV (otofajik BCV) yapılarına dönüşür. aBCV, OTOFAGOZOM BENZERİ ÇİFT MEMBRANLI yapılarla kuşatılır; bu vakuoller LAMP-1 POZİTİF olup KLASİK OTOFAJİK BELİRTEÇ LC3'TEN YOKSUNDUR (yani klasik otofagozomdan farklıdır — 'otofagozom benzeri' ama tam bir otofagozom değildir). Bu evre, bakterinin hücreden çıkışına (egresyon) hazırlıktır.\n\nBu üç vakuol tipinin (eBCV, rBCV, aBCV) farklı moleküler belirteç profilleri, Brucella'nın konak hücre içinde adım adım kimlik değiştiren bir 'kaçış rotası' izlediğini gösterir — her evre, bir öncekinden farklı bir hücresel kompartmanın kimliğini taklit ederek konak savunma mekanizmalarından kaçınmayı sağlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin dört evreyi (0-12. saat eBCV, 8-12. saat T4SS/rBCV, 12-48. saat efektör trafiği, 48-72. saat aBCV/egress) net bir zaman çizelgesiyle tanımlar; rastgele bir sıra iddiası yanlıştır.",
+        "B": "DOĞRU — eBCV (LAMP-1/EEA-1/CD63/Rab7, G1 arresti) → rBCV (Sec61B/Calnexin/Calreticulin, endozomal belirteç YOK, yoğun replikasyon) → aBCV (çift membran, LAMP-1+, LC3-, egresyona hazırlık) kronolojik dönüşümü doğrudur.",
+        "C": "YANLIŞ — Yoğun replikasyon eBCV evresinde DEĞİL, rBCV evresinde (ER teması sonrası) gerçekleşir; eBCV evresinde bakteri G1 arrestindedir, replikasyon durmuştur.",
+        "D": "YANLIŞ — rBCV, kanonik metne göre CD63 ve endozomal belirteçlerden (EEA-1, Rab7) YOKSUNDUR ve bunun yerine ER belirteçleri (Sec61B, Calnexin, Calreticulin) kazanır; endozomal kimliğini korumaz, ER-benzeri bir kimliğe dönüşür.",
+        "E": "YANLIŞ — aBCV ÇİFT membranlıdır (tek değil) ve LC3'TEN YOKSUNDUR (LC3 pozitif değil); bu nedenle klasik otofagozomla aynı DEĞİLDİR, yalnızca 'otofagozom benzeri' bir yapıdır."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "intrasellüler patobiyoloji",
+        "BCV",
+        "T4SS",
+        "mikrobiyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brucella'nın İntrasellüler Yaşam Döngüsü"
+    },
+    {
+      "id": "s22",
+      "metin": "Brucella'nın hücreden çıkış (egress) mekanizması, bakterinin ekstrasellüler antikorlardan ve hücre içine nüfuz edemeyen aminoglikozidlerden (örn. gentamisin) korunmasını sağlar.\n\nBu koruma mekanizmasının moleküler temeli nedir?",
+      "secenekler": {
+        "A": "Egress mekanizması, aminoglikozidlerin bakteriyi doğrudan öldürmesini kolaylaştırır, korumaz.",
+        "B": "Bakteriler hücreden çıkmadan önce tamamen parçalanır, canlı bakteri egresyonu gerçekleşmez.",
+        "C": "MVB belirteçleri (LBPA, CD63) yalnızca eBCV evresinde bulunur, egress mekanizmasıyla ilgisizdir.",
+        "D": "Bakteriler, LBPA ve CD63 gibi klasik çok veziküllü cisimcik (MVB) belirteçlerini taşıyan konak membranöz veziküller içinde, membran-kaplı olarak hücre dışına salınır — bu membranöz kılıf onları humoral immünite ve antikorlardan korur ('Truva Atı' mekanizması).",
+        "E": "Bakteriler hücre dışına çıplak (membransız) olarak salınır, koruma yalnızca kapsül tabakasından kaynaklanır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Bakteriler, LBPA/CD63 gibi klasik MVB belirteçlerini taşıyan konak membranöz veziküller içinde, membran-kaplı olarak hücre dışına salınır; bu membranöz kılıf onları antikorlardan ve hücre içine nüfuz edemeyen aminoglikozidlerden (gentamisin) korur — 'Truva Atı' mekanizması.",
+      "aciklama_detay": "Enfeksiyon döngüsünü tamamlamak ve sekonder enfeksiyon odakları oluşturmak için bakterinin hücreyi terk etmesi gerekir ve bu egress (hücre dışına çıkış) süreci, klinik açıdan çok önemli bir sonuç doğuran özel bir mekanizma içerir.\n\naBCV (Otofajik BCV) Oluşumu: 48-72 saatlik yoğun replikasyondan sonra rBCV'ler, otofagozom benzeri çift membranlı yapılarla kuşatılarak aBCV formuna dönüşür. Bu vakuoller LAMP-1 pozitif olup klasik otofajik belirteç LC3'ten yoksundur. Oluşumu konak otofaji proteinleri Beclin1 ve ULK1'e kesin olarak bağımlıdır.\n\nMitofajinin Rolü: Demir kısıtlılığı, konakta HIF-1α/BNIP3L aksı üzerinden mitokondriyal ağın fragmantasyonuna ve mitofajiye neden olur. BNIP3L susturulması, hücre dışına salınan bakteri miktarını ve yeniden enfeksiyon odaklarını YARI YARIYA düşürür — bu, mitofajinin aBCV oluşumunu ve hücreden çıkışı KOLAYLAŞTIRDIĞININ deneysel kanıtıdır.\n\nMVB ve Membran-Kaplı Çıkış — 'Truva Atı': Canlı video mikroskopisi çalışmaları, bakterilerin LBPA ve CD63 GİBİ KLASİK ÇOK VEZİKÜLLÜ CİSİMCİK (MVB) BELİRTEÇLERİNİ TAŞIYAN KONAK MEMBRANÖZ VEZİKÜLLER İÇİNDE dışarı salındığını göstermiştir. Bu MEMBRANÖZ KILIF, çıkan bakterileri HUMORAL İMMÜNİTE ELEMANLARINDAN, ANTİKORLARDAN ve HÜCRE İÇİNE NÜFUZ EDEMEYEN AMİNOGLİKOZİDLERDEN (örn. GENTAMİSİN) KORUR.\n\nBu mekanizmanın klinik önemi ÇOK BÜYÜKTÜR: Gentamisin gibi aminoglikozidler, konak HÜCRE İÇİNE zayıf penetre olan ajanlardır (bu, aslında intrasellüler patojenler için genel bir dezavantajdır). Normalde, bir bakteri hücre dışına 'çıplak' olarak çıksa, dolaşımdaki antikorlar veya ekstrasellüler antibiyotikler onu hedef alabilirdi. Ancak Brucella'nın konak MEMBRAN VEZİKÜLLERİ İÇİNDE 'kılıflanmış' şekilde çıkması — yani konağın KENDİ hücre zarı parçalarıyla kaplı olarak salınması — hem antikorları hem de (paradoksal olarak) hücre içine giremeyen aminoglikozidleri (ki bunlar zaten hücre dışındayken etkili olurdu, ama bakteri konak membranıyla 'gizlendiği' için tanınamaz) atlatmasını sağlar. Bu 'Truva Atı' benzetmesi, bakterinin konağın kendi hücresel malzemesini bir kamuflaj/koruyucu kalkan olarak kullanmasını vurgular.\n\nAmfizom Hipotezi: Otofajik aBCV'ler ile endozomal MVB'lerin füzyonu sonucu oluşan amfizomların, klasik dışı (unconventional) salgı mekanizmalarıyla dışarı salındığı ve bu iki ana egress yolağının amfizomlar üzerinden kesiştiği düşünülmektedir.\n\nBu bilginin en önemli KLİNİK yansıması, brusellozda AMİNOGLİKOZİD monoterapisinin neden yetersiz kaldığının moleküler bir açıklamasını sunmasıdır — bu, kanonik tedavi metninde vurgulanan 'monoterapi asla uygulanmaz' kardinal prensibinin altında yatan mekanizmalardan birini oluşturur: bakteri hem hücre içinde (asidik vakuol, T4SS efektörleri sayesinde) hem de hücre dışına çıkarken (membran-kaplı egress sayesinde) çeşitli savunma katmanlarıyla korunmaktadır, bu nedenle tek bir antibiyotik sınıfı (özellikle yalnızca hücre dışında etkili veya yalnızca hücre içine zayıf penetre olan bir ajan) tek başına yeterli olamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Egress mekanizması tam tersine bakteriyi aminoglikozidlerden KORUR, öldürmeyi kolaylaştırmaz — bu, kanonik metnin özellikle vurguladığı klinik açıdan önemli bir noktadır.",
+        "B": "YANLIŞ — Kanonik metin CANLI bakterilerin membran-kaplı olarak salındığını tanımlar (canlı video mikroskopisiyle gösterilmiştir); bakterinin çıkmadan önce tamamen parçalandığı iddiası yanlıştır.",
+        "C": "YANLIŞ — LBPA ve CD63 kanonik metinde özellikle EGRESS mekanizmasının (MVB aracılı membran-kaplı çıkış) belirteçleri olarak tanımlanır, eBCV evresiyle sınırlı değildir.",
+        "D": "DOĞRU — Bakteriler LBPA/CD63 taşıyan membranöz veziküller içinde salınır; bu membranöz kılıf onları antikorlardan ve hücre içine nüfuz edemeyen aminoglikozidlerden korur ('Truva Atı' mekanizması).",
+        "E": "YANLIŞ — Kanonik metin bakterinin ÇIPLAK değil, konak MEMBRANÖZ VEZİKÜLLERİ içinde 'kaplı/kılıflı' olarak salındığını açıkça belirtir; koruma kapsülden değil bu membranöz vezikülden kaynaklanır (Brucella zaten klasik kapsülden yoksundur)."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "egress mekanizması",
+        "MVB",
+        "gentamisin direnci",
+        "intrasellüler patobiyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brucella'nın İntrasellüler Yaşam Döngüsü"
+    },
+    {
+      "id": "s23",
+      "metin": "Brucella'nın konak makrofajlarda tetiklediği 'Warburg benzeri metabolik değişim' mekanizması ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Klasik aktive (M1) makrofajlarda oksidatif fosforilasyonu durdurup aerobik glikolizi uyararak laktat birikimine neden olur; bakteri bu laktatı ana karbon kaynağı olarak kullanır. Kronik enfeksiyonda ise alternatif aktive (M2) makrofajları yağ asidi oksidasyonuna kaydırarak replikasyon için sitozolik glukoz birikimini korur.",
+        "B": "Bu mekanizma yalnızca oksidatif fosforilasyonu artırır, glikolizle ilgisizdir.",
+        "C": "BtpA ve BtpB efektörleri yalnızca hücre dışında etki gösterir, konak metabolizmasıyla etkileşime girmez.",
+        "D": "M1 ve M2 makrofajlarda etki mekanizması tamamen aynıdır, farklılaşma yoktur.",
+        "E": "Bakteri glukozdan bağımsız olarak yalnızca protein katabolizmasını kullanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "M1 makrofajlarda oksidatif fosforilasyon durdurulup aerobik glikoliz uyarılarak laktat birikimi sağlanır (bakteri bunu karbon kaynağı olarak kullanır); kronik enfeksiyonda M2 makrofajları yağ asidi oksidasyonuna kaydırılarak sitozolik glukoz replikasyon için korunur.",
+      "aciklama_detay": "Brucella, konak hücresini kendi lehine yeniden şekillendirmek için geniş bir efektör protein repertuvarı kullanır ve bunlardan biri, enerji metabolizmasını manipüle eden BtpA, BtpB ve BPE123 efektörleridir.\n\nC. Enerji Metabolizması ve Warburg Kayması — BtpA, BtpB, BPE123:\n- BtpA ve BtpB: TIR-domain içeren efektörlerdir; dendritik hücre aktivasyonunu baskılayarak immün kaçış sağlar. Ayrıca konakta NAD⁺ HİDROLAZ AKTİVİTESİ göstererek ATP ve NAD⁺ seviyelerini DÜŞÜRÜR ve hücre içi enerji metabolizmasını bozar — bu, efektörlerin hem immünomodülatör (dendritik hücre baskılama) hem de doğrudan metabolik (NAD⁺ hidrolizi) etkileri olduğunu gösterir.\n\n- Warburg Benzeri Metabolik Değişim: KLASİK AKTİVE (M1) MAKROFAJLARDA oksidatif fosforilasyonu DURDURUP AEROBİK GLİKOLİZİ UYARARAK LAKTAT BİRİKİMİNE neden olur; bakteri bu LAKTATI ANA KARBON KAYNAĞI olarak kullanır. 'Warburg etkisi' terimi, kanser hücrelerinin oksijen varlığında bile glikolizi tercih etmesini tanımlayan klasik bir kavramdır (Otto Warburg tarafından tanımlanmıştır) — Brucella'nın burada M1 makrofajlarda BENZER bir metabolik kaymayı TETİKLEMESİ, bakterinin konak hücre metabolizmasını kendi replikasyonuna hizmet edecek şekilde 'yeniden programladığını' gösterir.\n\nKronik enfeksiyonda ise durum FARKLILAŞIR: ALTERNATİF AKTİVE (M2) MAKROFAJLARI YAĞ ASİDİ OKSİDASYONUNA KAYDIRARAK replikasyon için SİTOZOLİK GLUKOZ BİRİKİMİNİ KORUR. Bu, bakterinin M1 (akut/proinflamatuar) ve M2 (kronik/antiinflamatuar) makrofaj fenotiplerinde FARKLI metabolik manipülasyon stratejileri izlediğini gösterir — akut fazda M1 makrofajlarda glikolizi zorlayıp laktat üretimini artırırken, kronik fazda M2 makrofajlarında yağ asidi oksidasyonunu teşvik ederek glukozu 'kendine saklamış' olur (glukozu makrofajın kendi enerji üretimi için kullanmasını engelleyip bakterinin replikasyonuna ayırır).\n\nBu iki farklı stratejinin ortak amacı AYNIDIR: bakterinin kendi replikasyonu için gerekli KARBON KAYNAĞINI (laktat veya glukoz formunda) maksimize etmek, ancak bu amaca M1 ve M2 makrofaj ortamlarında FARKLI metabolik yollar üzerinden ulaşılır.\n\nBPE123: Konak glikolitik enzimi ALFA-ENOLAZI BCV membranına toplayıp aktivitesini artırarak glukoza erişimi maksimize eder — bu, glikoliz enzimlerinin doğrudan BCV membranına 'çekilmesi' yoluyla lokal glikoliz aktivitesinin artırılması anlamına gelir, yani bakteri kendi replikatif nişinin hemen çevresinde enerji üretimini yoğunlaştırır.\n\nBu metabolik manipülasyon mekanizmaları (BtpA/BtpB NAD⁺ hidrolizi, Warburg kayması M1'de, yağ asidi oksidasyonu kayması M2'de, BPE123 lokal glikoliz artışı), Brucella'nın konak hücreyi yalnızca vakuol/membran düzeyinde değil, BİYOKİMYASAL/METABOLİK düzeyde de kapsamlı şekilde yeniden şekillendirdiğini göstermektedir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — M1 makrofajlarda oksidatif fosforilasyon durdurulup glikoliz uyarılır (laktat, karbon kaynağı olarak kullanılır); kronik enfeksiyonda M2 makrofajları yağ asidi oksidasyonuna kaydırılarak glukoz korunur.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: mekanizma oksidatif fosforilasyonu DURDURUP glikolizi UYARIR (artırmaz, durdurur/kaydırır); glikolizle doğrudan ilgilidir.",
+        "C": "YANLIŞ — BtpA/BtpB, kanonik metinde konak İÇİNDE (NAD⁺ hidrolazı aracılığıyla intraselüler enerji metabolizması üzerinde) etki gösteren efektörler olarak tanımlanır; yalnızca hücre dışında etkili olduğu iddiası yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin M1 (glikoliz/laktat yönü) ve M2 (yağ asidi oksidasyonu yönü) makrofajlarında AÇIKÇA FARKLI metabolik manipülasyon stratejilerini tanımlar; 'tamamen aynı' iddiası yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin bakterinin laktat VE glukozu (BPE123 aracılığıyla alfa-enolaz toplanması yoluyla) karbon kaynağı olarak kullandığını tanımlar; yalnızca protein katabolizması kullanıldığı iddiası desteklenmez."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "Warburg etkisi",
+        "makrofaj metabolizması",
+        "intrasellüler patobiyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brucella'nın İntrasellüler Yaşam Döngüsü"
+    },
+    {
+      "id": "s24",
+      "metin": "Brucella'nın nükleomodülin efektörleri NyxA ve NyxB, konak çekirdeğinde hangi mekanizma üzerinden bakteriyel replikasyonu destekleyen özel odaklar (Bif — Brucella-induced foci) oluşturur?",
+      "secenekler": {
+        "A": "Bif oluşumu bakteriyel replikasyonu baskılayan, konak lehine bir savunma mekanizmasıdır.",
+        "B": "NyxA ve NyxB sitoplazmada kalır, çekirdeğe hiçbir zaman lokalize olmaz.",
+        "C": "Konak SUMO-spesifik proteazı SENP3 ile etkileşerek onun nükleol dışına çıkmasını sağlarlar; SENP3'ün yer değiştirmesi, çekirdekte Bif adı verilen, bakteriyel replikasyonu ve nükleolar protein modifikasyonunu destekleyen özel odakların oluşmasına yol açar.",
+        "D": "NyxA ve NyxB, çekirdek zarını tamamen parçalayarak kromatini doğrudan hedef alır.",
+        "E": "SENP3 proteazı, NyxA/NyxB etkisiyle nükleol İÇİNE (dışına değil) daha fazla birikir ve bu Bif oluşumunu engeller."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "NyxA/NyxB, konak SUMO-spesifik proteazı SENP3 ile etkileşerek onun nükleol dışına çıkmasını sağlar; bu yer değiştirme, çekirdekte Bif adı verilen bakteriyel replikasyonu destekleyen özel odakların oluşmasına yol açar.",
+      "aciklama_detay": "Brucella'nın konak hücre içi yaşam döngüsünün en sofistike yönlerinden biri, bakterinin yalnızca vakuol düzeyinde değil, doğrudan KONAK ÇEKİRDEĞİ düzeyinde de manipülasyon gerçekleştirebilmesidir.\n\nD. Nükleomodülinler ve Çekirdek İstilası — NyxA, NyxB, BspG, BspJ:\n\nNyxA / NyxB: DOĞRUDAN KONAK ÇEKİRDEĞİNE LOKALİZE OLAN nükleomodülinlerdir (yani bu efektörler, T4SS aracılığıyla konak sitoplazmasına enjekte edildikten sonra, sitoplazmada kalmayıp özel olarak ÇEKİRDEĞE taşınırlar — bu, bakteriyel efektörlerin konak hücrenin en korunaklı kompartmanına bile ulaşabildiğini gösteren dikkat çekici bir örnektir).\n\nMekanizma: NyxA/NyxB, konak SUMO-SPESİFİK PROTEAZI SENP3 İLE ETKİLEŞEREK ONUN NÜKLEOL DIŞINA ÇIKMASINI SAĞLARLAR. SENP3, normal koşullarda nükleol (çekirdekçik) içinde bulunan ve SUMO (Small Ubiquitin-like MOdifier) proteinlerini hedef proteinlerden ayıran (deSUMOylasyon yapan) bir enzimdir. NyxA/NyxB'nin bu proteazın YER DEĞİŞTİRMESİNE (nükleolden çıkmasına) neden olması, hücrenin normal SUMOylasyon/deSUMOylasyon dengesini bozar.\n\nBif (Brucella-induced foci) Oluşumu: SENP3'ün yer değiştirmesi, çekirdekte 'Bif' (Brucella-INDUCED FOCI) adı verilen, BAKTERİYEL REPLİKASYONU ve NÜKLEOLAR PROTEİN MODİFİKASYONUNU DESTEKLEYEN özel odakların OLUŞMASINA yol açar. Bu, bakterinin konak çekirdeğinin İÇİNDE, kendi replikasyonunu kolaylaştıran özel bir 'mikro-ortam' yarattığı anlamına gelir — bu, klasik bakteriyel patogenez mekanizmalarının çok ötesinde, konak epigenetik/protein modifikasyon makinesini doğrudan hedef alan gelişmiş bir moleküler strateji örneğidir.\n\nBspG / BspJ: Çekirdeğe lokalize olan, konak hücre APOPTOZUNU BLOKE EDEREK bakterinin intrasellüler hayatta kalışını UZATAN ADAY nükleomodülinlerdir. Bu, NyxA/NyxB'den farklı bir stratejidir: BspG/BspJ'nin amacı replikasyonu doğrudan desteklemek değil, konak hücrenin ÖLÜMÜNÜ (apoptoz) ENGELLEYEREK bakteriye daha uzun bir 'yaşam süresi/replikasyon penceresi' sağlamaktır.\n\nBu nükleomodülin efektörlerinin (NyxA/NyxB ve BspG/BspJ) her ikisi de aynı hedefe (konak çekirdeği) yönelmiş olsa da, İŞLEVSEL AMAÇLARI FARKLIDIR: NyxA/NyxB doğrudan REPLİKASYONU DESTEKLEYEN özel odaklar (Bif) oluştururken, BspG/BspJ konak hücre ÖLÜMÜNÜ ENGELLEYEREK (apoptoz blokajı) dolaylı bir katkı sağlar. Bu ikili strateji, Brucella'nın konak çekirdeği düzeyinde 'çok katmanlı' bir manipülasyon uyguladığını gösterir — hem aktif replikasyon desteği (Bif) hem de hücre ölümünden korunma (apoptoz blokajı) sağlanarak, bakterinin intrasellüler kalıcılığı maksimize edilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bif, kanonik metinde bakteriyel REPLİKASYONU DESTEKLEYEN bir yapı olarak tanımlanır — yani bakterinin lehine çalışan bir mekanizmadır, konak lehine bir savunma mekanizması değildir.",
+        "B": "YANLIŞ — Kanonik metin NyxA/NyxB'yi açıkça 'doğrudan konak çekirdeğine lokalize olan' nükleomodülinler olarak tanımlar; sitoplazmada kalıp çekirdeğe hiç lokalize olmadıkları iddiası doğrudan yanlıştır.",
+        "C": "DOĞRU — NyxA/NyxB, SENP3 ile etkileşerek onun nükleol dışına çıkmasını sağlar; bu yer değiştirme çekirdekte Bif adı verilen bakteriyel replikasyonu destekleyen özel odakların oluşmasına yol açar.",
+        "D": "YANLIŞ — Kanonik metin çekirdek zarının parçalanmasından bahsetmez; mekanizma spesifik olarak bir proteaz (SENP3) ile protein-protein etkileşimi ve onun lokalizasyon değişikliğidir, çekirdek zarının fiziksel yıkımı değildir.",
+        "E": "YANLIŞ — Kanonik metin tam tersini belirtir: SENP3, NyxA/NyxB etkisiyle nükleol DIŞINA çıkar (içine değil) ve bu yer değiştirme Bif oluşumunu SAĞLAR (engellemez)."
+      },
+      "etiketler": [
+        "enfeksiyon hastalıkları",
+        "bruselloz",
+        "nükleomodülin",
+        "SENP3",
+        "intrasellüler patobiyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Enfeksiyon Hastalıkları / Brucella'nın İntrasellüler Yaşam Döngüsü"
+    }
+  ]
+}
