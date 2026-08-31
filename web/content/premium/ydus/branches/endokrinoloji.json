@@ -48,6 +48,24 @@
             "YENİ",
             "SINAV SPOTU"
           ]
+        },
+        {
+          "id": "subklinik-tiroid-hastaliklari",
+          "baslik": "Subklinik Tiroid Hastalıkları",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
+        },
+        {
+          "id": "tiroid-nodul-kanser",
+          "baslik": "Tiroid Nodülleri ve Kanserleri",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     },

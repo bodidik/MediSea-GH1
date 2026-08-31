@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "id": "tiroid-nodul-kanser",
+    "branch": "endokrinoloji",
+    "baslik": "Tiroid Nodülleri ve Kanserleri",
+    "altbaslik": "TSH/USG ile ilk değerlendirme, ACR TI-RADS skorlaması, İİAB endikasyon eşikleri, Bethesda sitoloji sistemi, tiroid kanseri alt tipleri ve tedavi/takip stratejileri",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 10,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Bethesda Sistemi",
+      "kolonlar": [
+        "Kategori",
+        "Tanım",
+        "Yönetim"
+      ],
+      "satirlar": [
+        { "hucreler": ["I", "Tanısız / Yetersiz", "Tekrar İİAB"] },
+        { "hucreler": ["II", "Benign (sıklıkla kolloidal)", "Klinik izlem"] },
+        { "hucreler": ["III / IV", "Belirsiz (AUS/FLUS / Foliküler Neoplazi)", "Moleküler test veya cerrahi"] },
+        { "renk": "kirmizi", "hucreler": ["V / VI", "Malignite şüphesi / Malign", "Cerrahi (Tiroidektomi)"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; tiroid nodülüne ilk yaklaşım (TSH+USG, sıcak/soğuk nodül ayrımı), ACR TI-RADS skorlama kriterleri ve boyuta göre İİAB eşikleri, Bethesda sitoloji sınıflaması, tiroid kanseri alt tipleri (papiller, foliküler, medüller, anaplastik — sıklık, yayılım paterni, histopatoloji, genetik profil), medüller kanserde feokromositoma/MEN2 taraması, RAİ ablasyonu ve TSH supresyonunun yalnızca diferansiye kanserlerde etkili olması ve tiroglobulin ile takibi kapsar."
+        }
+      ]
+    }
+  ]
+}
