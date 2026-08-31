@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "id": "erkek-osteoporozu",
+    "branch": "endokrinoloji",
+    "baslik": "Erkek Osteoporozu",
+    "altbaslik": "Epidemiyoloji ve terapötik paradoks, östrojen/aromataz patofizyolojisi, sekonder osteoporoz taraması, T/Z-skoru referans standartları, testosteron replasmanı sınırları, ADT/prostat kanserinde denosumab endikasyonu ve Testosterone Trials kırık paradoksu",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 14,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Tanısal Eşikler",
+      "kolonlar": [
+        "Yaş Grubu",
+        "Ölçüt",
+        "Eşik"
+      ],
+      "satirlar": [
+        {
+          "hucreler": ["≥50 yaş", "T-skoru ('Genç Kadın' referansı)", "≤-2.5 osteoporoz, -1.0/-2.5 osteopeni"]
+        },
+        {
+          "hucreler": ["<50 yaş", "Z-skoru", "≤-2.0 + kırık VEYA ağır sekonder risk faktörü"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; erkek osteoporozunun epidemiyolojisini (yıllık kırıkların %39'u, terapötik paradoks — düşük tedavi oranına rağmen yüksek post-kırık mortalite), östrojen/aromataz merkezli patofizyolojiyi, sekonder osteoporoz taramasını (%40-60 oranı, zorunlu laboratuvar paneli), DXA tanısal standartlarını ('genç kadın' referans paradoksu, T vs Z-skoru ayrımı), testosteron replasman tedavisi endikasyon ve sınırlarını (kemik spesifik ajan ekleme eşikleri), farmakolojik tedavi başlama kriterlerini, ADT/prostat kanserinde denosumab endikasyonunu, denosumab rebound riskini, anabolik ajan/ardışık tedavi ilkesini, ilaç tatili kriterlerini ve Testosterone Trials çalışmasının kırık paradoksunun metodolojik açıklamasını kapsar."
+        }
+      ]
+    }
+  ]
+}

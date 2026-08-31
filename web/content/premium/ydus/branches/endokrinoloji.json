@@ -208,6 +208,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "erkek-osteoporozu",
+          "baslik": "Erkek Osteoporozu",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     }

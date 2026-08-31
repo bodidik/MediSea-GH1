@@ -1,0 +1,429 @@
+{
+  "id": "quiz-endo-erkek-osteoporozu-001",
+  "baslik": "Erkek Osteoporozu — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "erkek-osteoporozu",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Erkek osteoporozu epidemiyolojisi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Kalça kırığı sonrası mortalite erkeklerde kadınlardan DAHA DÜŞÜKTÜR.",
+        "B": "Kırık sonrası aktif antirezorptif/anabolik tedavi alma oranı erkeklerde kadınlarla eşit ve yüksektir (%50'nin üzerinde).",
+        "C": "Dünyada yıllık ~9 milyon osteoporotik frajilite kırığının %39'u erkek popülasyonda görülür; kırık pik insidansı erkeklerde kadınlara göre ~10 yıl daha geç ortaya çıkar; kalça kırığı sonrası ilk yıl mortalite riski erkeklerde kadınlara göre 2-3 kat daha fazladır.",
+        "D": "Osteoporotik kırıkların tamamına yakını (>%95) kadın popülasyonda görülür, erkeklerde klinik önemi yoktur.",
+        "E": "Erkeklerde kırık pik insidansı kadınlardan daha ERKEN ortaya çıkar."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Yıllık ~9 milyon osteoporotik kırığın %39'u erkeklerde görülür; kırık pik insidansı erkeklerde ~10 yıl daha geç başlar; ancak kalça kırığı sonrası ilk yıl mortalite riski erkeklerde kadınlara göre 2-3 kat daha fazladır — bu 'terapötik paradoksun' temelidir.",
+      "aciklama_detay": "Erkek osteoporozu; kemik mikromimarisinin progresif olarak bozulması, kemik kütlesinde kantitatif azalma ve iskelet kırılganlığının artması ile karakterize, klinik morbiditesi yüksek sistemik bir tablodur. Osteoporoz klinik pratikte çoğunlukla bir kadın hastalığı olarak algılansa da, epidemiyolojik veriler dünyada her yıl meydana gelen yaklaşık 9 MİLYON osteoporotik frajilite kırığının %39'UNUN ERKEK popülasyonda görüldüğünü ortaya koymaktadır — bu, genel klinik algının (osteoporozun 'kadın hastalığı' olduğu) hatalı olduğunu gösteren çarpıcı bir istatistiktir.\n\nYaşlanma süreciyle birlikte kırık insidansı her iki cinsiyette de artış sergiler; ancak erkeklerde osteoporotik kırık tepe noktası (pik insidans) kadınlara kıyasla YAKLAŞIK 10 YIL DAHA GEÇ ortaya çıkmaktadır. Mevcut istatistiklere göre 60 yaşındaki bir erkeğin yaşam boyu osteoporoza bağlı en az bir frajilite kırığı geçirme riski yaklaşık %25'tir.\n\nPost-Kırık Mortalite ve Terapötik Paradoks: Erkeklerdeki en önemli ve çarpıcı epidemiyolojik fark, kırık SONRASI gelişen erken dönem morbidite ve mortalite oranlarının kadınlara kıyasla DRAMATİK şekilde DAHA YÜKSEK olmasıdır. Özellikle kalça kırığı meydana geldikten sonraki ilk yılda erken ölüm riski, ileri yaş ve eşlik eden sistemik komorbiditelerin (kardiyovasküler, pulmoner vb.) fazlalığı nedeniyle erkeklerde kadınlara göre İKİ İLA ÜÇ KAT daha fazladır.\n\nKlinik Farkındalık Eksikliği ('Terapötik Paradoks'): Erkek popülasyondaki bu AŞIRI mortalite riskine ve hastalığın artan küresel sosyo-ekonomik yüküne RAĞMEN, kırık yaşandıktan sonraki süreçte aktif antirezorptif veya anabolik medikal tedavi alma oranı erkek hastalarda OLDUKÇA DÜŞÜK kalmaktadır (yaklaşık %9). Bu 'terapötik paradoks' terimi tam olarak bu çelişkiyi tanımlar: erkekler kırık sonrası daha yüksek mortalite riski taşımalarına rağmen (yani tedaviden daha çok yarar görebilecekleri bir grup olmalarına rağmen), pratikte çok daha az tedavi almaktadırlar. Bu, YDUS düzeyinde farkındalık gerektiren kritik bir klinik/halk sağlığı sorunudur ve klinisyenlerin erkek hastalarda da (kadın hastalardaki kadar titizlikle) kırık sonrası osteoporoz tedavisi başlatma eşiğini düşük tutması gerektiğini vurgular.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kalça kırığı sonrası mortalite erkeklerde kadınlardan 2-3 kat DAHA YÜKSEKTİR, daha düşük değil.",
+        "B": "YANLIŞ — Kanonik metin kırık sonrası tedavi alma oranını erkeklerde yaklaşık %9 gibi OLDUKÇA DÜŞÜK olarak tanımlar; kadınlarla eşit/yüksek olduğu iddiası yanlıştır.",
+        "C": "DOĞRU — %39'u erkek popülasyonda, pik insidans ~10 yıl geç, ama kalça kırığı sonrası ilk yıl mortalite erkeklerde 2-3 kat daha fazla — terapötik paradoksun temeli.",
+        "D": "YANLIŞ — Kanonik metin osteoporotik kırıkların %39'unun ERKEK popülasyonda görüldüğünü açıkça belirtir; 'kadınlarda >%95, erkekte önemsiz' iddiası doğrudan yanlıştır.",
+        "E": "YANLIŞ — Kırık pik insidansı erkeklerde kadınlara göre yaklaşık 10 yıl DAHA GEÇ ortaya çıkar, daha erken değil."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "epidemiyoloji",
+        "kalça kırığı mortalitesi",
+        "terapötik paradoks"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s2",
+      "metin": "Erkek iskeletinde kemik döngüsü ve rezorpsiyonunun asıl ana baskılayıcı hormonu hangisidir ve bu hormon nasıl üretilir?",
+      "secenekler": {
+        "A": "Östrojen; testosteronun periferik ve kemik dokusunda 'aromataz' enzimi ile östrojene dönüşümü sonucu elde edilir. Serum östrojen <10-15 pg/mL ve/veya total testosteron <200 ng/dL düzeylerinde kemik yıkımı hızlanır.",
+        "B": "Testosteron doğrudan (aromatize olmadan) rezorpsiyonu baskılayan ana hormondur, östrojenin rolü yoktur.",
+        "C": "Progesteron, erkek iskeletinde kemik döngüsünün ana baskılayıcısıdır.",
+        "D": "Parathormon (PTH), erkeklerde kemik rezorpsiyonunu baskılayan ana fizyolojik hormondur.",
+        "E": "Kalsitonin, erkek iskelet fizyolojisinde testosteron/östrojen aksından bağımsız olarak ana rolü oynar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Erkek iskeletinde kemik rezorpsiyonunun asıl ana baskılayıcısı östrojendir; testosteronun periferik/kemik dokusunda 'aromataz' enzimiyle östrojene dönüşümüyle elde edilir. Serum östrojen <10-15 pg/mL ve/veya total testosteron <200 ng/dL'de kemik yıkımı hızlanır.",
+      "aciklama_detay": "Erkeklerde erişkin iskelet bütünlüğünün ve kemik kalitesinin korunması; mekanik yüklenmenin (direnç egzersizleri vb.) yanı sıra cinsiyet steroidlerinin (hem androjenler hem de östrojenler) karmaşık kemik içi sinyal etkileşimine sıkı sıkıya bağlıdır. Kadınlardaki menopozal dönemde izlenen AKUT ve ANİ östrojen kesilmesinin AKSİNE, erkeklerde seks steroidlerinin endojen üretimi yaşlanma ile birlikte YAVAŞ, SİNSİ ve KADEMELİ bir düşüş sergiler — bu farklı kinetik profil, erkek osteoporozunun kadın osteoporozundan (özellikle post-menopozal osteoporozdan) neden farklı bir zaman çizelgesi izlediğini açıklar.\n\nHormonal Sinyalizasyon ve Dönüşüm Kinetiği:\n\nAndrojen Etkisi: Androjenler, PERİOSTEAL APOZİSYON mekanizmalarını doğrudan uyararak kemik BOYUTUNU, GEOMETRİSİNİ ve KORTİKAL KALINLIĞI yapısal olarak destekler — yani androjenlerin rolü daha çok kemiğin 'yapısal/geometrik' özelliklerini (boyut, şekil) şekillendirmektir.\n\nÖstrojenin SANTRAL Rolü: Erkek iskeletinde kemik döngüsü ve REZORPSİYONUNUN ASIL ANA BASKILAYICISI, testosteronun periferik ve kemik dokusunda 'AROMATAZ' ENZİMİ ile ÖSTROJENE DÖNÜŞMESİYLE elde edilen östrojen hormonu üzerinden gerçekleşir. Bu, erkeklerde de (kadınlardaki kadar merkezi olmasa da) östrojenin kemik metabolizmasındaki kritik rolünü gösteren, klasik bir 'sınav çeldiricisi' konusudur — pek çok kişi sezgisel olarak erkeklerde testosteronun ana koruyucu hormon olduğunu düşünebilir, ancak kanonik metin açıkça REZORPSİYONU BASKILAYAN ana mekanizmanın testosterondan DÖNÜŞTÜRÜLEN östrojen olduğunu vurgular.\n\nKritik Eşik Değerler: Serum ÖSTROJEN düzeyleri <10-15 pg/mL VE/VEYA total TESTOSTERON düzeyleri <200 ng/dL seviyelerine gerilediğinde, kemik remodeling dengesi YIKIM LEHİNE hızlanır ve AKTİF kemik kaybı tetiklenir. Bu ikili eşik (hem östrojen hem testosteron için ayrı sayısal değerler tanımlanması), her iki hormonun da klinik olarak izlenmesi ve değerlendirilmesi gerektiğini gösterir — ancak mekanistik olarak asıl 'aracı' molekül (rezorpsiyonu baskılayan) östrojendir, testosteron bu östrojenin kaynağıdır (aromataz yoluyla).\n\nBu bilginin klinik önemi, bir erkek hastada testosteron düzeyi ölçüldüğünde, bunun yalnızca 'androjen eksikliği' göstergesi değil, aynı zamanda dolaylı olarak 'östrojen üretim kapasitesi' göstergesi de olduğunun anlaşılmasıdır — çünkü testosteron, kemik koruyucu östrojenin ana prekürsörüdür.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Östrojen, testosteronun aromataz ile dönüşümüyle elde edilir ve erkek iskeletinde rezorpsiyonun ana baskılayıcısıdır; östrojen<10-15 pg/mL ve/veya testosteron<200 ng/dL'de kemik yıkımı hızlanır.",
+        "B": "YANLIŞ — Kanonik metin açıkça rezorpsiyonun ana baskılayıcısının testosterondan DÖNÜŞEN ÖSTROJEN olduğunu belirtir; testosteronun 'doğrudan, aromatize olmadan' bu rolü üstlendiği iddiası yanlıştır.",
+        "C": "YANLIŞ — Progesteron, kanonik metinde erkek iskelet fizyolojisinin ana baskılayıcı hormonu olarak tanımlanmamıştır.",
+        "D": "YANLIŞ — PTH kanonik metinde erkek iskeletinde rezorpsiyonu baskılayan ana fizyolojik hormon olarak tanımlanmamıştır; PTH genel olarak kemik döngüsünü düzenleyen farklı bir eksenin (kalsiyum homeostazisi) parçasıdır.",
+        "E": "YANLIŞ — Kalsitonin, kanonik metinde erkek osteoporozu patofizyolojisinin merkezi hormonu olarak tanımlanmamıştır; ana vurgu testosteron-östrojen aromatizasyon aksı üzerinedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "östrojen",
+        "aromataz",
+        "patofizyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s3",
+      "metin": "Osteoporotik erkeklerin yaklaşık ne kadarında altta yatan spesifik bir sekonder neden dökümante edilmektedir ve en sık iyatrojenik neden nedir?",
+      "secenekler": {
+        "A": "%40-60'ında sekonder neden saptanır; en sık iyatrojenik neden proton pompa inhibitörleridir.",
+        "B": "Sekonder osteoporoz oranı %5'in altındadır, erkeklerde neredeyse tamamı senil/idiyopatiktir.",
+        "C": "Sekonder osteoporoz yalnızca 70 yaş üzeri erkeklerde görülür, genç erkeklerde saptanmaz.",
+        "D": "%40-60'ında sekonder neden saptanır; en sık iyatrojenik neden kronik glukokortikoid kullanımıdır.",
+        "E": "Erkeklerde osteoporoz her zaman idiyopatiktir, sekonder neden hiçbir zaman saptanmaz."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Osteoporotik erkeklerin %40-60'ında altta yatan spesifik bir sekonder neden dökümante edilir; en sık iyatrojenik neden kronik glukokortikoid kullanımıdır.",
+      "aciklama_detay": "Epidemiyolojik taramalarda osteoporotik erkeklerin %40 İLA %60'INDA altta yatan spesifik bir sekonder neden (sekonder osteoporoz) dökümante edilmektedir. Kalan grup ise senil (yaşa bağlı) veya idiyopatik (genellikle 70 yaş altı) erkek osteoporozu olarak ayrılır. Bu oran, erkek osteoporozunun kadın (özellikle postmenopozal) osteoporozdan önemli bir farkını yansıtır — kadınlarda postmenopozal osteoporoz büyük ölçüde tek bir baskın mekanizmayla (östrojen kesilmesi) açıklanabilirken, erkeklerde vakaların önemli bir kısmı (yarısına yakını) altta yatan tanımlanabilir bir sekonder nedenle ilişkilidir; bu da erkek hastalarda sekonder neden taramasının neden bu kadar kritik olduğunu gösterir.\n\nSekonder osteoporoz nedenleri dört kategoride toplanır:\n\n- Endokrin: Primer/sekonder hipogonadizm (örn. prostat kanserinde Androjen Deprivasyon Tedavisi - ADT), hipertiroidi, primer hiperparatiroidizm, Cushing sendromu ve kontrolsüz Tip 1/2 diyabet.\n- İlaçlar: KRONİK GLUKOKORTİKOİD KULLANIMI (EN SIK İYATROJENİK NEDEN), antiepileptikler, GnRH agonistleri ve uzun dönem PPI (proton pompa inhibitörü) maruziyeti.\n- Gastrointestinal / Organ: Çölyak hastalığı ve malabsorpsiyon sendromları, kronik karaciğer/böbrek yetmezlikleri, D vitamini eksikliği, idiyopatik hiperkalsiüri.\n- Yaşam Tarzı: Aşırı alkol tüketimi, aktif sigara içiciliği, düşük vücut kitle indeksi (VKİ <20 kg/m²) ve kronik sedanter yaşam.\n\nBu listede ilaçlar kategorisinde AÇIKÇA belirtildiği üzere, KRONİK GLUKOKORTİKOİD KULLANIMI en sık iyatrojenik nedendir — PPI maruziyeti de listede yer alsa da, 'en sık' olarak nitelendirilen neden glukokortikoiddir. Bu bilgi, klinik pratikte sekonder osteoporoz taraması yapılırken hastanın ilaç öyküsünde önce ve özellikle glukokortikoid kullanımının (doz, süre, endikasyon) sorgulanması gerektiğini gösterir.\n\nBu geniş sekonder neden yelpazesi (endokrin, ilaç, GİS/organ, yaşam tarzı), erkek osteoporozu tanısı konan HER hastada sistematik bir sekonder neden taramasının (laboratuvar paneli dahil) neden zorunlu olduğunu açıklar — çünkü vakaların yarıya yakınında, tedavi edilebilir/düzeltilebilir bir altta yatan neden bulunabilir ve bu nedenin ele alınması, yalnızca semptomatik (kemik spesifik ilaç) tedaviden daha kapsamlı bir yaklaşımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — PPI maruziyeti sekonder neden listesinde yer alsa da, kanonik metinde EN SIK iyatrojenik neden olarak KRONİK GLUKOKORTİKOİD KULLANIMI özellikle belirtilmiştir, PPI değil.",
+        "B": "YANLIŞ — Sekonder osteoporoz oranı %5'in altında değil, %40-60 gibi yüksek bir orandadır; 'neredeyse tamamı senil/idiyopatik' iddiası tam tersini söylemektedir.",
+        "C": "YANLIŞ — Kanonik metin sekonder osteoporozu yaşa göre sınırlamaz; genç erkeklerde (50 yaş altı) de sekonder nedenler (özellikle ağır olanlar) tanı için özellikle aranır ve önemlidir.",
+        "D": "DOĞRU — Osteoporotik erkeklerin %40-60'ında sekonder neden saptanır; en sık iyatrojenik neden kronik glukokortikoid kullanımıdır.",
+        "E": "YANLIŞ — Kanonik metin açıkça %40-60'ında sekonder neden saptandığını belirtir; 'her zaman idiyopatik' iddiası doğrudan yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "sekonder osteoporoz",
+        "glukokortikoid",
+        "etyoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s4",
+      "metin": "62 yaşında bir erkek hastada DXA taramasında lomber vertebra T-skoru -2.7 saptanıyor. Cihazın referans veritabanı seçimiyle ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "DSÖ ve ISCD bu konuda çelişkili öneriler sunar, TEMD ise hiçbir görüş bildirmemiştir.",
+        "B": "DSÖ, ISCD ve TEMD standartlarına göre, 50 yaş üstü erkeklerde T-skoru hesaplanırken referans taban olarak 'Genç Kadın (Female)' popülasyon veritabanı kullanılır; bazı klinikler 'genç erkek' referansını tercih edebilse de evrensel standart kadın referansıdır.",
+        "C": "Erkeklerde T-skoru hiçbir zaman 'genç kadın' referans veritabanı ile hesaplanamaz, yalnızca 'genç erkek' veritabanı kullanılır.",
+        "D": "50 yaş üzeri erkeklerde T-skoru kullanılmaz, yalnızca Z-skoru geçerlidir.",
+        "E": "Referans veritabanı seçimi klinik sonucu hiçbir şekilde etkilemez, hangi veritabanı kullanılırsa kullanılsın T-skoru aynı çıkar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "DSÖ, ISCD ve TEMD standartlarına göre 50 yaş üstü erkeklerde T-skoru hesaplanırken referans taban olarak 'Genç Kadın (Female)' popülasyon veritabanı kullanılır; bu, klinik çalışma standardizasyonu ve kırık eşiklerinin kadın popülasyonuyla paralellik göstermesi nedeniyledir.",
+      "aciklama_detay": "Bu bilgi, kanonik metinde özellikle 'Klinik & YDUS Final Spot Bilgi Özeti' başlığı altında vurgulanan, sınavlarda sık çeldirici olarak kullanılan bir konudur.\n\n50 Yaş ve Üzeri Tanısal Kriterler (T-Skoru ve Referans Tartışması): 50 yaş ve üzerindeki erkeklerde tanısal değerlendirme T-skoru üzerinden yürütülür. Kemik mineral yoğunluğu cihazlarında yazılımsal referans veri tabanı olarak 'GENÇ KADIN (FEMALE)' popülasyon verilerinin baz alınması Dünya Sağlık Örgütü (DSÖ), Uluslararası Klinik Dansitometri Derneği (ISCD) ve Türkiye Endokrinoloji ve Metabolizma Derneği (TEMD) TARAFINDAN STANDART OLARAK ÖNERİLMEKTEDİR. T-skorunun ≤ -2.5 olması osteoporoz, -1.0 ile -2.5 arası ise osteopeni kabul edilir.\n\nDXA Cihazlarında 'Genç Kadın' Veritabanı Paradoksu: Sınavlarda çeldirici olarak erkeklerin T-skoru hesaplanırken referans popülasyonun ne seçilmesi gerektiği sorulur. DSÖ, ISCD ve TEMD standartlarına göre, 50 yaş üstü erkeklerde DXA cihazı üzerinden osteoporoz tanısı konurken yazılımsal referans taban olarak 'Genç Kadın (Female)' popülasyon veritabanı kullanılır. Klinik çalışmaların standardize edilmesi ve kırık eşiklerinin kadın popülasyonu ile paralellik göstermesi nedeniyle bu kural tıp otoriteleri tarafından EVRENSEL kabul edilmiştir.\n\nBu 'paradoksun' mantığı şudur: normalde bir T-skoru, bireyin kendi cinsiyetindeki 'genç erişkin pik kemik kütlesi' ile karşılaştırma yapılarak hesaplanır (kadınlarda genç kadın referansı, erkeklerde sezgisel olarak genç erkek referansı beklenir). Ancak erkek osteoporozunda, standardizasyon ve kırık eşiklerinin klinik çalışma verileriyle tutarlılığı gerekçesiyle, kadın referans veritabanının kullanılması evrensel standart haline gelmiştir.\n\nBu bilginin önemli bir nüansı da kanonik metinde belirtilir: 'Not: Bazı spesifik uzmanlık klinikleri; erkeklerde osteoporotik kırık ve kemik kaybı seyrinin kadınlara göre kronolojik olarak daha geriden gelmesi ve yürütülen bazı spesifik klinik ilaç çalışmalarının erkek referansları baz alınarak dizayn edilmiş olması gerekçesiyle, hesaplamada cinsiyete özgü 'genç erkek' referans tabanını klinik olarak tercih edebilmektedir.' Yani 'genç erkek' referans kullanımı TAMAMEN yanlış veya kullanılmayan bir yaklaşım değildir — bazı özel merkezler bunu tercih edebilir — ancak EVRENSEL/STANDART önerilen yaklaşım 'genç kadın' referansıdır.\n\nBu vakada 62 yaşındaki hasta 50 yaş üstü grubuna girdiği için, T-skoru hesaplaması (standart olarak) 'Genç Kadın' referans veritabanı kullanılarak yapılır ve T-skoru -2.7 olduğu için (≤-2.5 eşiğini aştığı için) osteoporoz tanısı konur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin DSÖ, ISCD VE TEMD'nin AYNI standardı (genç kadın referansı) önerdiğini belirtir; çelişkili öneriler sunduğu veya TEMD'nin görüş bildirmediği iddiası yanlıştır.",
+        "B": "DOĞRU — DSÖ, ISCD ve TEMD standartlarına göre 50 yaş üstü erkeklerde 'Genç Kadın' referans veritabanı standart olarak kullanılır; bazı klinikler 'genç erkek' referansını tercih edebilse de evrensel standart kadın referansıdır.",
+        "C": "YANLIŞ — Kanonik metin tam tersini belirtir: 'genç kadın' veritabanı EVRENSEL STANDART olarak önerilir; 'hiçbir zaman kullanılamaz' iddiası doğrudan yanlıştır.",
+        "D": "YANLIŞ — 50 yaş ÜZERİ erkeklerde tanısal değerlendirme T-SKORU üzerinden yürütülür; Z-skoru 50 yaş ALTINDAKİ genç erkek popülasyonu için kullanılır — bu iki grup ters çevrilmiş.",
+        "E": "YANLIŞ — Referans veritabanı seçimi T-skoru hesaplamasını doğrudan etkiler (bu nedenle standardize edilmesi gerekmiştir); 'hiçbir şekilde etkilemez' iddiası kanonik metnin özenle vurguladığı standardizasyon gerekçesiyle çelişir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "DXA",
+        "T-skoru",
+        "referans veritabanı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s5",
+      "metin": "45 yaşında bir erkek hastada DXA'da Z-skoru -2.3 saptanıyor, ancak hastada hiçbir frajilite kırığı öyküsü yok ve ağır bir sekonder risk faktörü de tanımlanmıyor.\n\nBu hastada osteoporoz tanısı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Z-skoru ≤-2.0 saptanması tek başına, ek kriter aranmaksızın, kesin osteoporoz tanısı koydurur.",
+        "B": "50 yaş altındaki erkeklerde de T-skoru kullanılır, Z-skoru bu grupta geçersizdir.",
+        "C": "45 yaşındaki bu hastada KMY ölçümü hiçbir klinik anlam taşımaz, sonuç göz ardı edilmelidir.",
+        "D": "Z-skoru yalnızca kadın hastalarda kullanılan bir parametredir, erkeklerde uygulanmaz.",
+        "E": "50 yaş altında T-skoru kullanılmaz, Z-skoru esas alınır; Z-skoru ≤-2.0 tek başına 'yaşa göre beklenenden düşük kemik kütlesi' anlamına gelir ancak absolut osteoporoz tanısı için düşük enerjili frajilite kırığı VEYA ağır sekonder risk faktörü eşlik etmelidir — bu hastada henüz bu ek kriter karşılanmadığı için kesin osteoporoz tanısı konulamaz."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "50 yaş altında T-skoru DEĞİL Z-skoru kullanılır; Z-skoru ≤-2.0 tek başına 'yaşa göre beklenenden düşük kemik kütlesi' demektir, absolut osteoporoz tanısı için ayrıca düşük enerjili frajilite kırığı VEYA ağır sekonder risk faktörü eşlik etmelidir.",
+      "aciklama_detay": "50 Yaş Altı Tanısal Kriterler (Z-Skoru ve Kısıtlılıklar): 50 yaşın altındaki genç erkek popülasyonunda TEK BAŞINA KMY ölçümleri osteoporoz tanısı koymak için KESİNLİKLE YETERLİ DEĞİLDİR ve bu grupta KESİNLİKLE T-SKORU parametresi KULLANILMAZ. Bunun yerine yaş, cinsiyet ve etnisiteye göre uyarlanmış Z-SKORU temel alınır.\n\nZ-Skoru Sınırı: Z-skorunun ≤-2.0 saptanması TEK BAŞINA 'yaşa göre beklenenden düşük kemik kütlesi' anlamına gelir — bu, henüz kesin bir 'osteoporoz' tanısı DEĞİLDİR, yalnızca beklenen normal aralığın altında bir kemik kütlesi olduğunu gösteren bir bulgudur. Bu GENÇ grupta ABSOLUT OSTEOPOROZ teşhisi ANCAK düşük KMY değerine (Z-skoru ≤-2.0) EŞLİK EDEN NET BİR DÜŞÜK ENERJİLİ FRAJİLİTE KIRIĞI VARLIĞINDA VEYA ÇOK AĞIR SEKONDER RİSK FAKTÖRLERİNİN (kronik yüksek doz glukokortikoid, derin hipogonadizm vb.) DÖKÜMANTE EDİLMESİ durumunda konulabilir.\n\nBu vakadaki hasta (45 yaş, Z-skoru -2.3, kırık öyküsü YOK, ağır sekonder risk faktörü TANIMLANMAMIŞ) tam olarak bu ara/eksik durumu temsil etmektedir: Z-skoru düşük kemik kütlesi kriterini karşılamaktadır (≤-2.0 eşiğinin altında, -2.3), ANCAK absolut osteoporoz tanısı için gereken İKİNCİ kriter (frajilite kırığı VEYA ağır sekonder risk faktörü) henüz karşılanmamıştır. Bu nedenle bu hastada şu anda 'yaşa göre beklenenden düşük kemik kütlesi' tanımlanabilir, ancak KESİN OSTEOPOROZ tanısı konulamaz.\n\nBu ayrımın klinik önemi büyüktür çünkü genç erkek popülasyonunda (50 yaş altı) düşük KMY tespiti daha dikkatli yorumlanmalıdır — bu yaş grubunda düşük KMY genellikle altta yatan CİDDİ bir sekonder nedeni (ağır hipogonadizm, kronik yüksek doz steroid kullanımı gibi) işaret eder ve bu hastalarda öncelikle etraflı bir sekonder neden araştırması yapılmalıdır. Kırık olmadan ve ağır sekonder neden tanımlanmadan yalnızca düşük Z-skoruna dayanarak 'osteoporoz' etiketi koymak, hem gereksiz tıbbileştirmeye hem de altta yatan asıl sorunun (sekonder nedenin) araştırılmasının atlanmasına yol açabilir.\n\nBu vakada doğru klinik yaklaşım, hastayı 'düşük kemik kütlesi' olarak izlemek ve zorunlu sekonder neden laboratuvar panelini (tam kan sayımı, kalsiyum, fosfor, albümin, kreatinin, ALP, 25(OH)D, iPTH, TSH, sabah açlık total testosteron) uygulayarak altta yatan bir neden aramaktır — eğer ağır bir sekonder neden bulunursa, o zaman kesin osteoporoz tanısı ve tedavi kararı verilebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 'absolut osteoporoz teşhisi ANCAK... frajilite kırığı varlığında VEYA çok ağır sekonder risk faktörlerinin dökümante edilmesi durumunda konulabilir' der; tek başına Z-skoru yeterli değildir.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: 50 yaş altında bu grupta KESİNLİKLE T-skoru KULLANILMAZ, Z-skoru esas alınır.",
+        "C": "YANLIŞ — KMY ölçümü bu yaş grubunda anlamlıdır ve Z-skoru üzerinden yorumlanır; klinik anlam taşımadığı iddiası yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin Z-skorunu spesifik olarak 50 yaş altındaki ERKEK popülasyonu bağlamında tanımlar; yalnızca kadınlara özgü olduğu iddiası desteklenmez.",
+        "E": "DOĞRU — 50 yaş altında Z-skoru kullanılır (T-skoru değil); Z-skoru ≤-2.0 tek başına düşük kemik kütlesi demektir, absolut osteoporoz için ayrıca kırık VEYA ağır sekonder risk faktörü gerekir — bu hastada henüz karşılanmamıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "Z-skoru",
+        "genç erkek",
+        "tanı kriterleri"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s6",
+      "metin": "Erkek osteoporozu tanısı konan bir hastada, sekonder etiyolojileri ekarte etmek amacıyla yapılması ABSOLUT ENDİKASYON olan laboratuvar panelinde hangi tetkik YER ALMAZ?",
+      "secenekler": {
+        "A": "Tiroid stimüle edici hormon (TSH) — panelin bir parçasıdır.",
+        "B": "Rutin serum PSA (prostat spesifik antijen) düzeyi — bu, zorunlu sekonder neden panelinde tanımlanmamıştır.",
+        "C": "Sabah açlık total testosteron düzeyi — hormonal aks kontrolü için panelin bir parçasıdır.",
+        "D": "İntakt parathormon (iPTH) — panelin bir parçasıdır.",
+        "E": "25(OH)D vitamini — panelin bir parçasıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Zorunlu sekonder neden laboratuvar paneli: tam kan sayımı, kalsiyum, fosfor, albümin, kreatinin, ALP dahil karaciğer enzimleri, 25(OH)D, iPTH, TSH ve sabah açlık total testosteron. Rutin PSA ölçümü bu panelde tanımlanmamıştır.",
+      "aciklama_detay": "Erkek hastada osteoporoz veya yaşa göre düşük kemik kütlesi SAPTANDIĞI ANDAN İTİBAREN sekonder etiyolojileri ekarte etmek amacıyla belirli laboratuvar tetkiklerinin yapılması ABSOLUT ENDİKASYONDUR.\n\nZorunlu Sekonder Neden Laboratuvar Paneli:\n- Tam kan sayımı (anemi/malignite yönünden)\n- Serum kalsiyum, fosfor, albümin\n- Kreatinin (GFR hesaplaması için)\n- Karaciğer enzimleri (ALP dahil)\n- 25(OH)D vitamini\n- İntakt parathormon (iPTH)\n- Tiroid stimüle edici hormon (TSH)\n- Hormonal aks kontrolü için SABAH AÇLIK TOTAL TESTOSTERON düzeyi\n\nKlinik şüphe varlığında panele ilaveten 24 saatlik idrar kalsiyumu (hiperkalsiüri taraması) ve doku transglutaminaz antikorları (çölyak dışlaması için) EKLENMELİDİR.\n\nBu geniş panelin mantığı, erkek osteoporozunun %40-60'ında sekonder bir neden bulunmasıyla doğrudan ilişkilidir — bu yüksek oran, sistematik bir tarama panelinin klinik gerekliliğini açıklar. Panelin her bir bileşeni, sekonder neden listesindeki farklı kategorilere karşılık gelir: tam kan sayımı (malignite/anemi taraması), kalsiyum/fosfor/albümin/iPTH (kalsiyum-PTH aksı bozuklukları, primer hiperparatiroidizm), kreatinin (böbrek yetmezliği), karaciğer enzimleri (karaciğer yetmezliği), 25(OH)D (D vitamini eksikliği), TSH (hipertiroidi) ve total testosteron (hipogonadizm) — bu, kanonik metinde sayılan sekonder neden kategorilerinin (endokrin, ilaç, GİS/organ, yaşam tarzı) laboratuvar karşılıklarını sistematik olarak tarayan bir yapı oluşturur.\n\nRutin PSA (prostat spesifik antijen) ölçümü, bu ZORUNLU sekonder neden panelinde YER ALMAZ — PSA, prostat kanseri taramasıyla ilgili ayrı bir klinik bağlamda (özellikle ADT alan veya testosteron replasmanı düşünülen hastalarda prostat kanseri açısından değerlendirme yapılırken) gündeme gelebilir, ancak bu, osteoporozun sekonder nedenini ARAŞTIRAN zorunlu laboratuvar panelinin standart bir bileşeni olarak tanımlanmamıştır.\n\nBu ayrım klinik pratikte önemlidir: bir klinisyen, erkek osteoporozu tanısı konan bir hastada sekonder neden taraması yaparken, PSA'yı bu spesifik amaçla (sekonder osteoporoz nedeni araştırması) rutin olarak istememeli; PSA ölçümü ayrı bir klinik endikasyona (örn. testosteron replasmanı planlanıyorsa kontrendikasyon taraması, veya yaşa uygun prostat kanseri taraması) dayanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ (bu panelin bir parçasıdır) — TSH, panelde açıkça yer alır.",
+        "B": "DOĞRU (istenen cevap — YER ALMAYAN test) — Rutin PSA ölçümü, kanonik metinde tanımlanan zorunlu sekonder neden laboratuvar panelinin bir parçası değildir.",
+        "C": "YANLIŞ (bu panelin bir parçasıdır) — Sabah açlık total testosteron, hormonal aks kontrolü için panelde açıkça yer alır.",
+        "D": "YANLIŞ (bu panelin bir parçasıdır) — İntakt parathormon (iPTH), panelde açıkça yer alır.",
+        "E": "YANLIŞ (bu panelin bir parçasıdır) — 25(OH)D vitamini, panelde açıkça yer alır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "sekonder neden taraması",
+        "laboratuvar paneli"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s7",
+      "metin": "Sabah açlık total testosteron düzeyi 150 ng/dL saptanan, belirgin libido kaybı ve erektil disfonksiyon yakınmaları olan, bazal DXA'da T-skoru -3.7 olan 58 yaşında bir erkek hastada tedavi yaklaşımı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "TRT bu hastada kontrendikedir çünkü T-skoru çok düşüktür, yalnızca kemik spesifik ajan kullanılmalıdır.",
+        "B": "T-skoru ≤-3.5 eşiği yalnızca kadın hastalar için geçerlidir, erkeklerde TRT+kemik ajanı kombinasyonu için özel bir eşik tanımlanmamıştır.",
+        "C": "Bu hastada testosteron düzeyi normal kabul edilir (150 ng/dL), TRT endikasyonu yoktur.",
+        "D": "Testosteron replasman tedavisi (TRT) endikedir (testosteron<200 ng/dL + hipogonadizm semptomları); ANCAK T-skoru ≤-3.5 olduğu için TRT'ye kırık azaltıcı etkinliği valide edilmiş bir kemik spesifik ajan (bisfosfonat, denosumab veya teriparatid) mutlak surette eklenmelidir.",
+        "E": "Yalnızca TRT yeterlidir, kemik spesifik ajan eklemeye gerek yoktur çünkü testosteron KMY'yi artırır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "TRT endikedir (testosteron<200 ng/dL + hipogonadizm semptomları); T-skoru ≤-3.5 olduğu için ilaç ekleme eşiklerinden birini karşılar ve TRT'ye mutlaka kemik spesifik bir ajan (bisfosfonat/denosumab/teriparatid) eklenmelidir.",
+      "aciklama_detay": "Hipogonadizm Yönetimi ve Testosteron Tedavi Sınırları:\n\nReplasman Endikasyonu: Sabah açlık serum total testosteron düzeyi <200 ng/dL saptanan, belirgin klinik hipogonadizm semptomları (libido kaybı, kronik yorgunluk, erektil disfonksiyon) taşıyan ve prostat karsinomu gibi absolut kontrendikasyonu bulunmayan erkek hastalarda testosteron replasman tedavisi (TRT) ABSOLUT ENDİKEDİR. Bu vakadaki hasta (testosteron 150 ng/dL <200 eşiği, belirgin hipogonadizm semptomları — libido kaybı ve erektil disfonksiyon) bu kriterleri karşılamaktadır, TRT endikedir.\n\nKlinik Etki Mekanizması: Androjen replasmanı; özellikle bazal KMY çok düşük olan, daha önce tedavi almamış hipogonadal erkeklerde trabeküler ve kortikal KMY değerlerini anlamlı olarak yukarı taşır — yani TRT'nin kemik üzerinde olumlu bir metabolik etkisi vardır.\n\n⚠️ İlaç Ekleme Eşikleri (KRİTİK): Testosteron replasmanının kırık riskini DOĞRUDAN azalttığını gösteren prospektif randomize kontrollü klinik kanıtlar YETERSİZDİR. Bu nedenle testosteron tedavisine başlanmış olsa dahi AŞAĞIDAKİ KRİTERLERİ karşılayan erkek hastalara, kırık azaltıcı etkinliği ABSOLUT VALİDE EDİLMİŞ kemik spesifik bir ajan (bisfosfonat, denosumab veya teriparatid) MUTLAK SURETTE EKLENMELİDİR:\n- Bazal DXA taramasında T-skoru ≤-3.5 olan hastalar.\n- T-skoru ≤-2.5 olup halihazırda en az bir düşük enerjili frajilite kırığı öyküsü bulunanlar.\n- Eş zamanlı olarak sistemik farmakolojik yüksek doz glukokortikoid alanlar.\n- En az 2 yıllık yeterli ve optimize TRT'ye rağmen KMY değerleri ≤-2.5 düzeyinde kalmaya devam eden erkekler.\n\nBu vakadaki hasta, bazal T-skoru -3.7 olduğu için (≤-3.5 eşiğinin altında) BİRİNCİ kriteri karşılamaktadır — bu nedenle TRT başlansa dahi, ayrıca kemik spesifik bir ajan (bisfosfonat, denosumab veya teriparatid) MUTLAKA eklenmelidir.\n\nBu ikili yaklaşımın (TRT + kemik spesifik ajan) mantığı, kanonik metinde açıkça vurgulanır: 'Testosteron Replasman Tedavisinin Kırık Limitasyonu — bazal T-skoru ≤-3.5 olan veya testosteron alırken frajilite kırığı geçiren bir erkeğe SADECE TESTOSTERON VERMEK TIBBİ BİR HATADIR; şemaya absolut olarak kemik spesifik bir antirezorptif (Bisfosfonat/Denosumab) veya anabolik eklenmelidir.' Bu, YDUS düzeyinde 'kesin sınav sorusu' olarak nitelendirilebilecek kritik bir klinik kural örneğidir — hipogonadizmi düzeltmek (TRT ile) osteoporozu tedavi etmek için TEK BAŞINA yeterli değildir, özellikle ağır osteoporozu (T≤-3.5) olan hastalarda.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — TRT bu hastada kontrendike değildir; hasta testosteron<200 ng/dL ve hipogonadizm semptomları kriterlerini karşılamaktadır, TRT endikasyonu vardır — ancak TEK BAŞINA yeterli değildir, kemik ajanı eklenmelidir.",
+        "B": "YANLIŞ — T-skoru≤-3.5 eşiği kanonik metinde spesifik olarak ERKEK hastalarda (bu bağlamda) TRT+kemik spesifik ajan kombinasyon kriteri olarak tanımlanmıştır.",
+        "C": "YANLIŞ — 150 ng/dL, <200 ng/dL eşiğinin altındadır ve hipogonadizmi gösterir; 'normal kabul edilir' iddiası kanonik metindeki eşiğe aykırıdır.",
+        "D": "DOĞRU — TRT endikedir (testosteron<200+semptomlar); T-skoru≤-3.5 olduğu için kemik spesifik bir ajan (bisfosfonat/denosumab/teriparatid) mutlaka eklenmelidir.",
+        "E": "YANLIŞ — Kanonik metin açıkça 'sadece testosteron vermek tıbbi bir hatadır' der; T-skoru≤-3.5 olan bu hastada kemik spesifik ajan eklenmesi ZORUNLUDUR."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "testosteron replasman tedavisi",
+        "hipogonadizm",
+        "kombine tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s8",
+      "metin": "Erkek popülasyonda sistemik farmakolojik kemik spesifik ajanlara başlama kriterleri arasında hangisi YER ALMAZ?",
+      "secenekler": {
+        "A": "Serum testosteron düzeyinin mutlak sayısal değeri (örn. <300 ng/dL) — bu, farmakolojik tedavi başlama kriterlerinden biri olarak tanımlanmamıştır.",
+        "B": "Minör travma ile gelişmiş klinik kalça veya vertebra kompresyon kırığı varlığı (densite ölçümünden bağımsız direkt tedavi).",
+        "C": "DXA'da T-skorunun ≤-2.5 olması (absolut densite eşiği).",
+        "D": "Osteopenide (T-skoru -1.0 ile -2.5 arası) FRAX'a göre 10 yıllık kalça kırığı riski ≥%3 veya majör osteoporotik kırık riski ≥%20.",
+        "E": ">3 ay süreyle prednizon ≥7.5 mg/gün veya eşdeğeri glukokortikoid kullanma planı/maruziyeti."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Farmakolojik tedavi başlama kriterleri: (1) KMY'den bağımsız frajilite kırığı, (2) T-skoru≤-2.5, (3) osteopenide FRAX eşiği (kalça≥%3 veya majör≥%20), (4) >3 ay ≥7.5mg/gün prednizon eşdeğeri. Testosteron düzeyinin mutlak sayısal değeri bu dört kritere dahil değildir (TRT endikasyonu ayrı bir eşiktir — <200 ng/dL).",
+      "aciklama_detay": "Erkek popülasyonda sistemik farmakolojik kemik spesifik ajanlara başlama kriterleri uluslararası kılavuzlar doğrultusunda ŞU NET DÖRT PARAMETREYE oturtulmuştur:\n\n1. KMY'DEN BAĞIMSIZ FRAJİLİTE KIRIĞI EŞİĞİ: Minör bir travma veya kendi boyu yüksekliğinden düşme neticesinde gelişmiş klinik kalça veya vertebra (omurga) kompresyon kırığı varlığı (bu durumda densite ölçüm sonucuna BAKILMAKSIZIN direkt tedavi başlanır) — bu, en 'acil' ve otomatik tedavi kriteridir çünkü bir frajilite kırığı zaten mevcut hastalığı kanıtlar.\n\n2. ABSOLUT DENSİTE EŞİĞİ: DXA taraması ile saptanmış absolut osteoporoz tablosu (T-skorunun ≤-2.5 olması).\n\n3. OSTEOPENİ ZEMİNİNDE FRAX SKORU EŞİĞİ: DXA'da osteopeni aralığında olan (T-skoru -1.0 ile -2.5 arasında saptanan) VE FRAX algoritmasına göre hesaplanan 10 yıllık kalça kırığı riski ≥%3 VEYA 10 yıllık majör osteoporotik kırık riski ≥%20 olarak saptanan erkek hastalar — bu, T-skoru henüz 'osteoporoz' eşiğine ulaşmamış ama FRAX ile hesaplanan gelecek kırık riski yüksek olan hastaları da tedaviye dahil eden bir kriterdir.\n\n4. İATROJENİK STEROİD MARUZİYETİ: Herhangi bir sistemik inflamatuar hastalık nedeniyle uzun süreli (>3 AY) farmakolojik dozda (örneğin prednizon ≥7.5 mg/gün veya eşdeğeri) glukokortikoid kullanma PLANI veya MARUZİYETİ olan erkek popülasyonu — bu kriter, henüz kırık veya düşük KMY olmasa dahi, gelecekteki yüksek riskli glukokortikoid kullanımının PROFİLAKTİK tedavi başlatma nedeni olabileceğini gösterir.\n\nBu dört kriterin hiçbirinde 'serum testosteron düzeyinin mutlak sayısal değeri' bir farmakolojik KEMİK SPESİFİK ajan başlama kriteri olarak YER ALMAZ. Testosteron düzeyi (özellikle <200 ng/dL eşiği), AYRI bir klinik kararın — Testosteron Replasman Tedavisi (TRT) BAŞLAMA endikasyonunun — kriteridir, kemik spesifik ajan (bisfosfonat, denosumab, teriparatid) başlama kriteri DEĞİLDİR. Bu iki karar (TRT başlatma vs. kemik spesifik ajan başlatma) BİRBİRİNDEN BAĞIMSIZ ama BİRBİRİNİ TAMAMLAYICI kararlardır — bir hastada testosteron düşük olabilir (TRT endikasyonu) ve AYRICA yukarıdaki dört kriterden biri karşılanabilir (kemik spesifik ajan endikasyonu), bu durumda her iki tedavi de (kombine olarak) uygulanabilir — ancak testosteron düzeyinin kendisi, kemik spesifik ajan başlama kararının DOĞRUDAN bir kriteri değildir.\n\nBu ayrım, klinik pratikte iki farklı 'eşik sistemi'nin (TRT eşiği vs. kemik ajanı eşiği) karıştırılmaması gerektiğini gösterir — bir hastanın testosteronu düşükse bu yalnızca TRT kararını tetikler; kemik spesifik ajan kararı ise T-skoru, kırık öyküsü, FRAX skoru veya glukokortikoid maruziyetine dayanır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU (istenen cevap — YER ALMAYAN kriter) — Testosteron düzeyinin mutlak sayısal değeri, kemik spesifik ajan başlama kriterleri arasında yer almaz; bu, ayrı bir karar olan TRT başlama endikasyonunun kriteridir.",
+        "B": "YANLIŞ (bu bir kriterdir) — KMY'den bağımsız frajilite kırığı, kanonik metinde açıkça tanımlanan dört kriterden biridir.",
+        "C": "YANLIŞ (bu bir kriterdir) — T-skoru≤-2.5 (absolut densite eşiği), kanonik metinde açıkça tanımlanan dört kriterden biridir.",
+        "D": "YANLIŞ (bu bir kriterdir) — Osteopenide FRAX eşiği (kalça≥%3 veya majör≥%20), kanonik metinde açıkça tanımlanan dört kriterden biridir.",
+        "E": "YANLIŞ (bu bir kriterdir) — >3 ay ≥7.5mg/gün prednizon eşdeğeri, kanonik metinde açıkça tanımlanan dört kriterden biridir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "tedavi eşiği",
+        "FRAX",
+        "glukokortikoid"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s9",
+      "metin": "Prostat kanseri nedeniyle Androjen Deprivasyon Tedavisi (ADT/GnRH agonisti) alan ve buna bağlı kırık riski dramatik olarak artan bir erkek hastada, kemik kütlesini korumak için kılavuzlarca öncelikle endike edilen ajan hangisidir?",
+      "secenekler": {
+        "A": "Romosozumab, ADT alan prostat kanseri hastalarında ilk seçenektir.",
+        "B": "ADT alan hastalarda kemik koruyucu hiçbir farmakolojik ajan endike değildir, yalnızca kalsiyum/D vitamini yeterlidir.",
+        "C": "Denosumab — altı ayda bir subkütan (60 mg) uygulanan RANKL inhibitörü; ADT alan prostat kanseri hastalarında kemik kütlesini korumak için özellikle endikedir.",
+        "D": "Oral alendronat, bu spesifik onkolojik grup için birinci tercih ve en güçlü kanıta sahip ajandır.",
+        "E": "Testosteron replasman tedavisi, ADT'nin etkisini nötralize etmek için eklenir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "ADT/GnRH agonisti alan prostat kanseri hastalarında, kılavuzlar tarafından öncelikle endike edilen ve onaylanan ajan 6 ayda bir uygulanan Denosumab monoklonal antikorudur.",
+      "aciklama_detay": "Denosumab Tedavisi ve Androjen Deprivasyon (ADT) Endikasyonu: Denosumab, altı ayda bir SUBKÜTAN (60 mg) yolla uygulanan RANKL İNHİBİTÖRÜDÜR.\n\nProstat Kanseri Hedefli Klinik Endikasyon: Prostat kanseri etiyolojisi nedeniyle Androjen Deprivasyon Tedavisi (ADT / GnRH agonistleri) alan ve buna bağlı olarak KALÇA VE VERTEBRA KIRIK RİSKİ DRAMATİK OLARAK ARTAN erkeklerde kemik kütlesini korumak için ÖZELLİKLE ENDİKEDİR.\n\nBu klinik senaryonun patofizyolojik zemini önemlidir: ADT/GnRH agonistleri, seks steroid düzeylerini (testosteron ve dolaylı olarak aromataz yoluyla üretilen östrojen) FARMAKOLOJİK OLARAK SIFIRA yaklaştırarak prostat kanseri büyümesini kontrol eder. Ancak bu, erkek iskeletinde kemik rezorpsiyonunun ana baskılayıcısı olan östrojen düzeyini de dramatik şekilde düşürdüğü için, ÇOK HIZLI ve AGRESİF bir kemik erimesine yol açar — bu, doğal yaşlanmayla gelişen yavaş/sinsi hormon düşüşünden tamamen farklı, ANİ ve İYATROJENİK bir hipogonadizm durumudur.\n\nKlinik & YDUS Final Spot Bilgi Özeti — Prostat Kanseri/ADT Tedavisinde Kemik Koruma (KESİN YDUS SORUSU): 'Prostat kanseri tedavisinde uygulanan Androjen Deprivasyon Tedavisi (ADT) / GnRH agonistleri, erkek hastada seks steroid düzeylerini sıfırlayarak çok hızlı ve agresif bir kemik erimesine yol açar. Bu spesifik onkolojik grupta, kırık riskini azaltmak ve KMY kazanımı sağlamak adına kılavuzlar tarafından ÖNCELİKLE ENDİKE EDİLEN ve ONAYLANAN ajan 6 ayda bir uygulanan DENOSUMAB monoklonal antikorudur.' Kanonik metin bu bilgiyi 'kesin YDUS sorusu' olarak özellikle işaretlemiştir.\n\nBu endikasyonun neden Denosumab'a özgü olduğu (bisfosfonat yerine) tam olarak açıklanmasa da, kanonik metinde Denosumab'ın diğer avantajları (GFR'den bağımsız metabolize edilmesi, subkütan/6 ayda bir uygulama kolaylığı) bu spesifik hasta grubunda (genellikle onkoloji takibinde olan, sık hastane ziyareti gerektirebilen hastalar) pratik ve tercih edilen bir seçenek olmasını destekler.\n\nTestosteron replasman tedavisi bu senaryoda AÇIKÇA UYGUNSUZDUR — çünkü ADT'nin amacı zaten prostat kanserini kontrol etmek için seks steroidlerini baskılamaktır; testosteron eklemek bu onkolojik tedavinin amacını doğrudan sabote eder ve prostat kanserini kötüleştirebilir. Bu nedenle bu vakada TRT kesinlikle kontrendikedir, kemik koruması Denosumab (veya alternatif olarak bisfosfonatlar) gibi hormon-bağımsız ajanlarla sağlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Romosozumab, kanonik metinde ADT alan prostat kanseri hastaları için tanımlanan bir ilk seçenek ajan değildir; bu spesifik endikasyon Denosumab'a aittir.",
+        "B": "YANLIŞ — Kanonik metin Denosumab'ı bu grup için 'özellikle endike' olarak tanımlar; farmakolojik ajanın gereksiz olduğu iddiası doğrudan yanlıştır.",
+        "C": "DOĞRU — ADT alan prostat kanseri hastalarında kılavuzlarca öncelikle endike edilen ajan 6 ayda bir uygulanan Denosumab'dır (kanonik metinde 'kesin YDUS sorusu' olarak işaretlenmiştir).",
+        "D": "YANLIŞ — Kanonik metin bu spesifik onkolojik grup için ÖNCELİKLE Denosumab'ı endike eder; alendronat genel erkek osteoporozunda birinci basamak olsa da, ADT'ye özgü endikasyon Denosumab'a aittir.",
+        "E": "YANLIŞ — Testosteron replasmanı, ADT'nin AMACINA (prostat kanserini kontrol için seks steroidlerini baskılamak) doğrudan aykırıdır; bu senaryoda kontrendikedir, kanonik metinde tanımlanan bir yaklaşım değildir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "denosumab",
+        "androjen deprivasyon tedavisi",
+        "prostat kanseri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s10",
+      "metin": "Denosumab tedavisi alan bir erkek hastada, ilaç dozu 2 hafta gecikiyor. Bu durumun potansiyel riski ve yönetimi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Denosumab dozunun gecikmesinin hiçbir klinik önemi yoktur, rebound etki yalnızca kadın hastalarda görülür.",
+        "B": "Denosumab kesildiğinde kemik kaybı riski yoktur, ilaç etkisiz şekilde vücuttan atılır.",
+        "C": "Rebound etkiden korunmak için Denosumab kesildiğinde hiçbir ek tedaviye gerek yoktur, kemik kendiliğinden korunur.",
+        "D": "Rebound riskinden kaçınmak için Denosumab'dan sonra teriparatid'e geçilmesi standart ve güvenli bir yaklaşımdır.",
+        "E": "Denosumab tedavisi sonlandırıldığında veya doz geciktiğinde osteoklastlarda aşırı bir aktivasyon patlaması (rebound etki) ile multipl vertebral kompresyon kırığı riski doğar; tedavi kesilecekse hasta korumasız bırakılmamalı, ardışık olarak zoledronik asit gibi kemiğe bağlanan bir bisfosfonata geçiş uygulanmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Denosumab kesildiğinde/gecikince rebound osteoklast aktivasyonu ve multipl vertebral kırık riski doğar; kesilecekse hasta ardışık olarak zoledronik asit gibi bir bisfosfonata geçirilmelidir.",
+      "aciklama_detay": "🚨 Rebound Uyarısı: Denosumab tedavisi SONLANDIRILDIĞINDA veya DOZ GECİKTİĞİNDE osteoklastlarda AŞIRI bir AKTİVASYON PATLAMASI (rebound etki) ile MULTİPL VERTEBRAL KOMPRESYON KIRIĞI riski doğar. Bu nedenle tedavi kesilecekse hasta KORUMASIZ BIRAKILMAMALI, ardışık olarak MUTLAKA zoledronik asit gibi KEMİĞE BAĞLANAN bir bisfosfonata geçiş senaryosu uygulanmalıdır.\n\nBu mekanizmanın altında yatan farmakolojik gerçek, Denosumab'ın (bisfosfonatlardan farklı olarak) KEMİK DOKUSUNA FİZİKSEL OLARAK BAĞLANMAMASIDIR — Denosumab bir monoklonal antikordur ve etkisi RANKL'a bağlanıp onu nötralize etmesine dayanır; ilaç dolaşımdan temizlendiğinde (yarı ömrü dolduğunda), RANKL inhibisyonu ORTADAN KALKAR ve önceden baskılanmış olan osteoklast öncüleri HIZLA ve YOĞUN ŞEKİLDE aktive olur — bu, 'rebound' (geri tepme) fenomenidir. Bisfosfonatlar ise kemik matriksine FİZİKSEL OLARAK bağlanır ve yıllarca kemik dokusunda kalarak kademeli bir etki azalması gösterir (bu nedenle bisfosfonat kesildiğinde ani bir rebound riski YOKTUR — bu, 'ilaç tatili' kavramının bisfosfonatlarda güvenle uygulanabilmesinin, ama Denosumab'da uygulanamamasının temel nedenidir).\n\nBu vakadaki senaryo (2 haftalık doz gecikmesi) tam olarak bu riskin tetikleyicisi olabilecek bir durumdur — kanonik metin 'doz geciktiğinde' ifadesini özellikle kullanarak, yalnızca TAM KESİLMENİN değil, DOZ GECİKMESİNİN de rebound riskini tetikleyebileceğini vurgular. Bu nedenle klinik pratikte Denosumab dozlama takviminin (6 ayda bir) titizlikle takip edilmesi ve gecikme durumunda hasta ile hızlıca iletişime geçilmesi önemlidir.\n\nEğer Denosumab'ın kalıcı olarak KESİLMESİ gerekiyorsa (örneğin yan etki, hasta tercihi, klinik karar), YÖNETİM STRATEJİSİ nettir: hasta ARDIŞIK OLARAK zoledronik asit gibi kemiğe bağlanan bir bisfosfonata GEÇİRİLMELİDİR — bu, bisfosfonatın kemik matriksine bağlanma özelliği sayesinde, Denosumab'ın kesilmesiyle ortaya çıkan osteoklast aktivasyon patlamasını 'yakalayıp' bastırmasını sağlar. Teriparatid'e (anabolik ajan) geçiş, Denosumab kesilmesi sonrası UYGUN bir strateji DEĞİLDİR çünkü anabolik ajanlar rezorpsiyonu baskılamaz, aksine bazı çalışmalarda Denosumab sonrası teriparatide geçişin kemik kaybını daha da hızlandırabileceği gösterilmiştir — bu nedenle E şıkkındaki yaklaşım (Denosumab sonrası teriparatid) kanonik metinde tanımlanan güvenli ardışık geçiş yönteminden (zoledronik asit) FARKLI ve UYGUNSUZ bir yaklaşımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin rebound riskini erkek hastalarda da açıkça tanımlar (bu bilgi 'Erkek Osteoporozu' kanonik dosyasında yer almaktadır); yalnızca kadın hastalara özgü olduğu iddiası yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: Denosumab kesildiğinde osteoklast aktivasyon patlaması ve kırık riski DOĞAR; 'hiçbir risk yoktur' iddiası doğrudan yanlıştır.",
+        "C": "YANLIŞ — Kanonik metin açıkça 'hasta korumasız bırakılmamalı, ardışık olarak mutlaka... bisfosfonata geçiş senaryosu uygulanmalıdır' der; 'hiçbir ek tedaviye gerek yok' iddiası bu uyarıyla doğrudan çelişir.",
+        "D": "YANLIŞ — Kanonik metin ardışık geçiş için ZOLEDRONİK ASİT gibi bir bisfosfonatı önerir, teriparatid'i değil; teriparatid rezorpsiyonu baskılamayan bir anabolik ajandır ve rebound'u önlemede uygun bir strateji değildir.",
+        "E": "DOĞRU — Denosumab kesildiğinde/gecikince rebound osteoklast aktivasyonu ve multipl vertebral kırık riski doğar; kesilecekse hasta zoledronik asit gibi bir bisfosfonata ardışık olarak geçirilmelidir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "denosumab",
+        "rebound etki",
+        "ardışık tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s11",
+      "metin": "Bazal T-skoru -3.2 olan, üç ayrı vertebral frajilite kırığı öyküsü bulunan ve birinci basamak bisfosfonat tedavisi altında olmasına rağmen kemik kaybı devam edip yeni kırık geliştiren bir erkek hastada tedavi yaklaşımı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Teriparatid yalnızca kadın hastalarda onaylıdır, erkeklerde kullanım endikasyonu yoktur.",
+        "B": "Bu profil (T-skoru≤-3.0, çoklu vertebral kırık, bisfosfonat altında progresyon) anabolik ajan (teriparatid/abaloparatid) için ilk seçenek veya kurtarma tedavisi endikasyonudur; anabolik tedavi süresi bittiğinde kemik yapım formasyonunun korunması için hasta gecikmeksizin antirezorptif bir ajana transfer edilmelidir.",
+        "C": "Bu hastada bisfosfonat dozunun artırılması tek çözümdür, anabolik ajana geçiş düşünülmemelidir.",
+        "D": "Anabolik ajanlar (teriparatid) kullanım süreleri bittiğinde herhangi bir ek tedaviye gerek yoktur, kazanılan kemik kütlesi kalıcıdır.",
+        "E": "Bu hasta profilinde anabolik ajanlar kontrendikedir çünkü hasta zaten çoklu kırık geçirmiştir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "T-skoru≤-3.0, çoklu vertebral kırık veya bisfosfonat altında progresyon olan çok yüksek riskli erkek hastalarda anabolik ajanlar (teriparatid/abaloparatid) ilk seçenek/kurtarma tedavisidir; tedavi bitiminde kazanılan formasyonun korunması için gecikmeksizin antirezorptif ajana geçilmelidir.",
+      "aciklama_detay": "Anabolik Ajanlar (Teriparatid / Abaloparatid) ile Formasyon Stimülasyonu: CİDDİ DERECEDE DERİN osteoporozu olan (BAZAL T-skoru ≤-3.0), anamnezinde ÇOKLU VERTEBRAL FRAJİLİTE KIRIĞI dökümante edilen VEYA birinci basamak bisfosfonat tedavisi altında olmasına RAĞMEN kemik kaybı DEVAM EDİP yeni kırık geliştiren ÇOK YÜKSEK RİSKLİ erkek hasta grubunda İLK SEÇENEK VEYA KURTARMA (RESCUE) TEDAVİSİ olarak tercih edilirler.\n\nBu vakadaki hasta profili (T-skoru -3.2 [≤-3.0 eşiğinin altında], ÜÇ ayrı vertebral kırık öyküsü [çoklu vertebral kırık kriteri] VE birinci basamak bisfosfonat ALTINDA yeni kırık gelişimi [tedavi başarısızlığı kriteri]) bu 'çok yüksek riskli' kategorinin ÜÇ kriterini de BİRDEN karşılamaktadır — bu, anabolik ajana geçiş için en güçlü klinik göstergedir.\n\nArdışık Geçiş Kuralı: Anabolik ajanların kullanım süreleri BİTTİĞİNDE, uyarılmış olan kemik yapım formasyonunun KORUNMASI ve rezorpsiyon dalgasının ENGELLENMESİ amacıyla hastalar GECİKMEKSİZİN antirezorptif (bisfosfonat/denosumab) bir ajana TRANSFER EDİLMELİDİR. Bu kural, anabolik ajanların kullanım süresinin sınırlı olması (teriparatid genellikle 2 yıla kadar kullanılır) ve tedavi kesildikten sonra kazanılan kemik kütlesinin, eğer bir antirezorptif ajanla 'sabitlenmezse' kaybedilebileceği gerçeğine dayanır — yani anabolik ajanın sağladığı formasyon kazanımı, tedavi sonrası kalıcı DEĞİLDİR, mutlaka bir sonraki antirezorptif fazla korunmalıdır.\n\nBu ardışık tedavi mantığı (bisfosfonat başarısızlığı → anabolik → sonra tekrar antirezorptif), erkek osteoporozu tedavi algoritmasının döngüsel/ilerleyici bir yapıya sahip olduğunu gösterir: birinci basamak (bisfosfonat) başarısız olursa, ikinci basamağa (anabolik) geçilir; anabolik tedavi de kendi başına 'kalıcı' bir çözüm değildir, sonrasında yeniden antirezorptif faza (üçüncü basamak, aslında birinci basamağa dönüş) geçilmesi gerekir.\n\nTeriparatid'in erkeklerde kullanımı da bu kanonik metinde açıkça onaylı ajanlar listesinde (alendronat, risedronat, zoledronik asit, denosumab, teriparatid) yer almaktadır — 'yalnızca kadınlarda onaylı' iddiası bu listeyle doğrudan çelişir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin teriparatid'i erkeklerde onaylı farmakolojik ajanlar arasında (alendronat, risedronat, zoledronik asit, denosumab, teriparatid) açıkça sayar; yalnızca kadınlarda onaylı olduğu iddiası yanlıştır.",
+        "B": "DOĞRU — Bu profil (T≤-3.0, çoklu vertebral kırık, bisfosfonat altında progresyon) anabolik ajan için ilk seçenek/kurtarma endikasyonudur; tedavi bitiminde formasyonun korunması için gecikmeksizin antirezorptif ajana geçilmelidir.",
+        "C": "YANLIŞ — Kanonik metin bu profil için anabolik ajanı 'ilk seçenek veya kurtarma tedavisi' olarak tanımlar; yalnızca bisfosfonat dozunu artırmak kanonik metinde önerilen bir strateji değildir.",
+        "D": "YANLIŞ — Kanonik metin açıkça anabolik tedavi sonrası hastaların 'gecikmeksizin antirezorptif... ajana transfer edilmesi' gerektiğini belirtir; kazanılan kemik kütlesinin ek tedavisiz kalıcı olduğu iddiası yanlıştır.",
+        "E": "YANLIŞ — Tam tersine, çoklu vertebral kırık öyküsü, anabolik ajan endikasyonunu DESTEKLEYEN bir kriterdir (kontrendikasyon değil, endikasyon güçlendiricisidir)."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "teriparatid",
+        "anabolik ajan",
+        "ardışık tedavi",
+        "tedavi başarısızlığı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s12",
+      "metin": "Testosterone Trials çalışmasında (medyan yaş 64, 5204 fonksiyonel hipogonadizmli erkek), transdermal testosteron kolunda plasebo koluna kıyasla klinik kırık sayısının beklenmedik şekilde daha yüksek olduğu (91'e karşı 64 olay; HR: 1.43) saptanmıştır.\n\nBu paradoksal bulgunun altında yatan gerçek nedene ilişkin hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Testosteron doğrudan kemik matriksini zayıflatarak kırık riskini biyolojik olarak artırır, bu nedenle kırık riski yüksek hastalarda kesinlikle kontrendikedir.",
+        "B": "Bu çalışmada majör osteoporotik kırıklar, klinik vertebral kırıklar ve kalça kırıklarının izole insidansında da testosteron grubunda anlamlı artış saptanmıştır.",
+        "C": "Çalışmanın dropout oranı çok düşüktü (%5'in altında), bu nedenle sonuçlar son derece güvenilirdir.",
+        "D": "Çalışma özellikle kırık riskini ve antifraktür etkinliği birincil sonlanım noktası olarak değerlendirmek üzere tasarlanmıştır.",
+        "E": "Risk artışının nedeni testosteronun kemik dokusunu biyolojik/yapısal olarak zayıflatması DEĞİLDİR — androjen replasmanı hem trabeküler hem kortikal KMY'yi anlamlı olarak ARTIRIR; asıl neden çalışmanın metodolojik limitasyonlarıdır (osteoporotik olmayan travmatik kırıkların dahil edilmesi, kırık odaklı olmayan tasarım, bilinmeyen bazal kemik sağlığı, %60 dropout oranı)."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Risk artışının nedeni testosteronun kemiği zayıflatması değildir (androjen KMY'yi artırır); asıl neden metodolojik limitasyonlardır — osteoporotik olmayan travmatik kırıkların dahil edilmesi, kırık-odaklı olmayan tasarım, bilinmeyen bazal kemik sağlığı ve %60 dropout oranı.",
+      "aciklama_detay": "Testosteron tedavisinin kırık riskini artırabileceğine dair klinik soru işaretleri, temel olarak yaşa bağlı fonksiyonel hipogonadizmi olan yaşlı erkeklerde KARDİYOVASKÜLER etkileri değerlendirmek üzere TASARLANMIŞ (yani kırık riski için tasarlanmamış) spesifik ve geniş ölçekli bir klinik çalışmanın (Testosterone Trials) bulgularından kaynaklanmaktadır.\n\nBiyolojik Gerçeklik: Kemik Kalitesi ve Yapısal Koruma: Söz konusu çalışmada gözlenen bu risk artışının nedeni, testosteron hormonunun kemik dokusunu biyolojik veya yapısal olarak ZAYIFLATMASI KESİNLİKLE DEĞİLDİR. Tam AKSİNE, androjen replasmanı hem trabeküler hem de kortikal kemik mineral yoğunluğunu (KMY) ANLAMLI ÖLÇÜDE ARTIRARAK iskelet yapısını metabolik olarak DESTEKLER.\n\nKırık Artışının Arkasındaki 4 Temel Metodolojik Faktör:\n\n1. Osteoporotik Olmayan Travmatik Kırıkların Değerlendirmeye Alınması: Genel klinik kırık sonlanım noktası SADECE düşük enerjili frajilite kırıklarını değil, CİDDİ/MAJÖR TRAVMALAR sonucu gelişen OSTEOPOROTİK OLMAYAN travmatik kırıkları da içermektedir. Testosteron, kas gücünü/enerjiyi/libidoyu/mobiliteyi artırarak hastaların günlük fiziksel aktivite düzeyini artırmış, bu da dış ortam travmalarına/kazalara daha fazla maruziyete yol açmış olabilir. Bu hipotezi destekleyen kritik bulgu: iskelet frajilitesinin GERÇEK göstergeleri olan MAJÖR OSTEOPOROTİK KIRIKLAR, KLİNİK VERTEBRAL KIRIKLAR ve KALÇA KIRIKLARININ İZOLE İNSİDANSINDA, testosteron ve plasebo grupları arasında HİÇBİR ANLAMLI FARKLILIK GÖZLENMEMİŞTİR.\n\n2. Çalışma Tasarımının Kırık Sonlanımları İçin Uygun Olmaması: Çalışma, BİRİNCİL SONLANIM NOKTASI olarak kırık riskini veya osteoporoz tedavisinin antifraktür etkinliğini değerlendirmek üzere SPESİFİK OLARAK TASARLANMAMIŞTIR (asıl amacı kardiyovasküler etkileri değerlendirmekti).\n\n3. Katılımcıların Bazal Kemik Sağlığı Verilerinin Bilinmemesi: Bazal KMY düzeyleri ve tahmini bazal risk profilleri (FRAX gibi) BAŞLANGIÇTA ÖLÇÜLMEMİŞTİR/BİLİNMEMEKTEDİR. Bu, karıştırıcı (confounding) bir etki yaratır.\n\n4. Tedaviye Uyumdaki Yüksek Bırakma (Dropout) Oranları (%60): Katılımcıların yaklaşık %60'I çalışma müdahalesini bırakmıştır. Bu YÜKSEK dropout oranı, elde edilen kırık verilerinin doğrudan yorumlanmasını ve genel popülasyona güvenle uyarlanmasını klinik olarak İMKANSIZ kılmaktadır.\n\nEndokrinoloji Pratiğinde TRT Konumlandırması: Testosteron tedavisinin kemik kalitesini bozarak kırık riskini artırdığına dair herhangi bir biyolojik/hücresel mekanizma söz konusu değildir; aksine kemik anabolizmasına doğrudan katkı sağlar. Ancak mevcut veriler, testosteron tedavisinin gerçek frajilite kırığı riskini TEK BAŞINA azalttığını KANITLAMAK için de YETERSİZDİR — bu nedenle kırık riski yüksek hipogonadal erkeklerde TRT tek başına yeterli bir 'osteoporoz tedavisi' olarak kabul EDİLMEZ, kırık önleyici etkinliği kanıtlanmış ajanlarla KOMBİNE edilmelidir (bu, s7'de ele alınan ilaç ekleme eşikleriyle doğrudan bağlantılıdır).",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 'testosteronun kemik dokusunu biyolojik/yapısal olarak zayıflatması KESİNLİKLE DEĞİLDİR' der ve androjenin KMY'yi ARTIRDIĞINI vurgular; doğrudan zayıflatma mekanizması iddiası yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: majör osteoporotik kırıklar, klinik vertebral kırıklar ve kalça kırıklarının İZOLE insidansında gruplar arasında HİÇBİR ANLAMLI FARKLILIK gözlenmemiştir.",
+        "C": "YANLIŞ — Dropout oranı %5'in altında değil, YAKLAŞIK %60 gibi ÇOK YÜKSEK bir orandı; bu, sonuçların güvenilirliğini AZALTAN bir faktördür, artıran değil.",
+        "D": "YANLIŞ — Kanonik metin açıkça çalışmanın 'birincil sonlanım noktası olarak kırık riskini... değerlendirmek üzere SPESİFİK OLARAK TASARLANMAMIŞ' olduğunu belirtir; kırık odaklı tasarlandığı iddiası tam tersini söylemektedir.",
+        "E": "DOĞRU — Risk artışının nedeni kemik zayıflaması değildir (testosteron KMY'yi artırır); asıl neden çalışmanın 4 metodolojik limitasyonudur (osteoporotik olmayan travma dahil edilmesi, uygun olmayan tasarım, bilinmeyen bazal sağlık, %60 dropout)."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "testosterone trials",
+        "TRT",
+        "epidemiyoloji",
+        "metodoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu: Seks Steroidleri Aksı"
+    },
+    {
+      "id": "s13",
+      "metin": "Stabil seyreden, oral bisfosfonat kullanan düşük-orta kırık riskli erkek bir hastada 'ilaç tatili' (drug holiday) kararı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yaklaşık 5 yıllık kesintisiz kullanım sonrasında atipik femur kırığı (AFF) veya çene osteonekrozu (ONJ) gibi nadir uzun dönem toksisite risklerinden korunmak amacıyla ilaç tatili seçeneği değerlendirilebilir — bu yaklaşım kadın popülasyonundaki yaklaşıma tam benzerdir.",
+        "B": "İlaç tatili kavramı yalnızca kadın hastalar için tanımlanmıştır, erkeklerde uygulanmaz.",
+        "C": "İlaç tatili, Denosumab kullanan hastalarda da bisfosfonatlardaki gibi güvenle uygulanabilir.",
+        "D": "İlaç tatili kararı yalnızca 1 yıllık kullanım sonrası, risk faktöründen bağımsız olarak otomatik verilir.",
+        "E": "Yüksek kırık riskli erkek hastalarda da ilaç tatili rutin olarak önerilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Stabil, oral bisfosfonat kullanan düşük-orta riskli erkek hastalarda yaklaşık 5 yıllık kesintisiz kullanım sonrası AFF/ONJ gibi nadir toksisite risklerinden korunmak için ilaç tatili değerlendirilebilir; bu yaklaşım kadın popülasyonundaki yaklaşıma tam benzerdir.",
+      "aciklama_detay": "Erkeklerde İlaç Tatili (Drug Holiday) Kriteri: Stabil seyreden, ORAL BİSFOSFONAT kullanan DÜŞÜK-ORTA KIRIK RİSKLİ erkek hastalarda, KADIN POPÜLASYONUNDAKİ YAKLAŞIMA TAM BENZER şekilde, yaklaşık 5 YILLIK KESİNTİSİZ KULLANIM sonrasında ATİPİK FEMUR KIRIĞI (AFF) veya ÇENE OSTEONEKROZU (ONJ) gibi UZUN DÖNEME BAĞLI NADİR toksisite risklerinden korunmak amacıyla bir 'ilaç tatili' seçeneği tümör/metabolizma konseylerinde DEĞERLENDİRİLMELİDİR.\n\nBu bilginin klinik önemi, bisfosfonatların kemik matriksine fiziksel olarak bağlanma özelliğiyle (uzun yarı ömür) doğrudan ilişkilidir: bisfosfonatlar kemikte yıllarca kaldığı için, tedavi kesilse dahi antirezorptif etki bir süre daha devam eder — bu, Denosumab'ın aksine (s10'da ele alınan rebound riskiyle), bisfosfonatlarda 'ilaç tatilinin' güvenle uygulanabilmesini sağlayan farmakokinetik bir özelliktir.\n\nİlaç tatili kararının şartları net şekilde tanımlanmıştır: (1) STABİL seyir (yani tedaviye iyi yanıt vermiş, KMY'de kayıp olmayan/artış gösteren hasta), (2) ORAL bisfosfonat kullanımı (İV zoledronik asit için farklı bir değerlendirme yapılabilir), (3) DÜŞÜK-ORTA kırık riski (yüksek riskli hastalarda ilaç tatili UYGUN DEĞİLDİR, çünkü bu hastalar sürekli korumaya ihtiyaç duyar), (4) EN AZ 5 YILLIK kesintisiz kullanım süresi (daha kısa sürede AFF/ONJ riski henüz belirgin şekilde artmamıştır, bu nedenle erken ilaç tatili gerekçesiz kalır).\n\nBu kriterlerin BİRLİKTE değerlendirilmesi önemlidir — örneğin yüksek riskli bir hastada (çoklu kırık öyküsü, çok düşük T-skoru) 5 yıl dolmuş olsa dahi ilaç tatili verilmesi UYGUN DEĞİLDİR, çünkü bu hastalarda tedavi kesintisinin getireceği kırık riski, AFF/ONJ gibi nadir yan etkilerin riskinden daha ağır basar. 'Tümör/metabolizma konseylerinde değerlendirilmelidir' ifadesi de, bu kararın basit bir otomatik protokol değil, MULTİDİSİPLİNER bir değerlendirme gerektirdiğini gösterir.\n\nBu bilgi, kadın osteoporozu yönetimindeki paralel yaklaşımla (bisfosfonat tedavisinde 3-5 yıl sonra ilaç tatili değerlendirmesi) tutarlıdır — kanonik metin bunu 'kadın popülasyonundaki yaklaşıma tam benzer şekilde' ifadesiyle açıkça vurgular, yani bu bir cinsiyete özgü farklı protokol değil, aynı prensibin erkek popülasyonuna uygulanmasıdır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Stabil, düşük-orta riskli, oral bisfosfonat kullanan erkek hastalarda ~5 yıl sonra AFF/ONJ riskinden korunmak için ilaç tatili değerlendirilebilir; kadın popülasyonundaki yaklaşıma tam benzer.",
+        "B": "YANLIŞ — Kanonik metin özellikle 'Erkeklerde İlaç Tatili' başlığı altında bu kavramı erkek hastalar için de açıkça tanımlar; yalnızca kadınlara özgü olduğu iddiası doğrudan yanlıştır.",
+        "C": "YANLIŞ — İlaç tatili kavramı bisfosfonatların uzun yarı ömrü/kemik bağlanma özelliğine dayanır; Denosumab'da ise tam tersine tedavi kesilmesi rebound riski taşır (s10) ve 'ilaç tatili' değil, ardışık bisfosfonat geçişi önerilir.",
+        "D": "YANLIŞ — Kanonik metin süreyi yaklaşık 5 yıl olarak tanımlar (1 yıl değil) ve karar risk düzeyine (düşük-orta) BAĞLIDIR, risk faktöründen bağımsız otomatik bir karar değildir.",
+        "E": "YANLIŞ — Kriterler açıkça DÜŞÜK-ORTA kırık riskli hastalarla sınırlıdır; yüksek riskli hastalarda ilaç tatili rutin olarak önerilmez, bu hastalar sürekli tedaviden daha çok fayda görür."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "ilaç tatili",
+        "bisfosfonat",
+        "atipik femur kırığı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s14",
+      "metin": "Bisfosfonat tedavisi altında olan bir erkek hastada üst gastrointestinal sistem hastalığı (aktif reflü, özofajit) nedeniyle oral formu tolere edemiyor.\n\nBu hastada tercih edilecek alternatif ve GFR ile ilişkili özel klinik senaryo hangisidir?",
+      "secenekler": {
+        "A": "Denosumab, böbrek yetmezliğinde kontrendikedir çünkü renal yoldan atılır.",
+        "B": "Zoledronik asit günlük oral formda uygulanır, intravenöz formu yoktur.",
+        "C": "Yılda bir kez intravenöz (IV) yolla uygulanan zoledronik asit (5 mg) güçlü bir alternatiftir; GFR kısıtlılığından bağımsız metabolize edilen Denosumab ise ileri evre kronik böbrek yetmezliği olan erkek hastalarda ilk basamakta güvenle tercih edilebilir.",
+        "D": "Oral bisfosfonat tolere edilemeyen hastalarda hiçbir alternatif yoktur, tedavi tamamen kesilmelidir.",
+        "E": "Zoledronik asit, böbrek yetmezliğinde tercih edilen ilk basamak ajandır çünkü GFR'den bağımsız metabolize edilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Üst GİS intoleransında yılda bir kez IV zoledronik asit güçlü bir alternatiftir; GFR kısıtlılığından bağımsız metabolize edilen Denosumab ise ileri evre KBY olan erkeklerde ilk basamakta güvenle tercih edilebilir.",
+      "aciklama_detay": "Farmakolojik Ajan Seçimi: Erkeklerde osteoporoz tedavisi için regülatör otoriteler (FDA) ve majör klinik onkoloji/endokrinoloji kılavuzları tarafından onaylanmış farmakolojik ajanlar; alendronat, risedronat, zoledronik asit, denosumab ve teriparatiddir.\n\n1. Bisfosfonat Grubu Protokolü (İlk Basamak Seçenek): Erkeklerde dökümante edilmiş yüksek klinik etkinlikleri ve geniş uzun dönem güvenlilik verileri nedeniyle ALENDRONAT ve RİSEDRONAT (ORAL formlar), kırık riskini düşürmede BİRİNCİ BASAMAK standart anti-rezorptif ajanlardır.\n\nİntravenöz Alternatif (Zoledronik Asit): Oral bisfosfonat formlarını ÜST GASTROİNTESTİNAL SİSTEM HASTALIKLARI (özofajit, özofagus darlığı, aktif reflü) nedeniyle TOLERE EDEMEYEN, ilaç uyumsuzluğu bulunan veya malabsorbsiyon defekti olan erkek hastalarda YILDA BİR KEZ İNTRAVENÖZ (IV) yolla uygulanan zoledronik asit (5 mg) SON DERECE GÜÇLÜ ve EFEKTİF bir alternatiftir. Bu vakadaki hasta (üst GİS hastalığı nedeniyle oral formu tolere edemeyen) tam olarak bu alternatif için tanımlanan hasta profiline uymaktadır.\n\n2. Denosumab Tedavisi — GFR ile İlişkisi: Altı ayda bir subkütan (60 mg) yolla uygulanan RANKL inhibitörüdür. GFR KISITLILIĞINDAN BAĞIMSIZ metabolize edildiği için, bisfosfonatların KONTRENDİKE OLDUĞU İLERİ EVRE KRONİK BÖBREK YETMEZLİĞİ bulunan erkek hastalarda İLK BASAMAKTA GÜVENLE TERCİH EDİLEBİLİR.\n\nBu iki alternatifin (zoledronik asit vs. Denosumab) klinik seçimi FARKLI hasta senaryolarına yöneliktir ve karıştırılmamalıdır:\n- Zoledronik asit: Oral bisfosfonatı TOLERE EDEMEYEN (GİS intoleransı) hastalar için — bu hastanın böbrek fonksiyonu normal olabilir, sorun GİS toleransıdır. ANCAK zoledronik asit de bir bisfosfonat olduğu için, böbrek fonksiyonu ÖNEMLİDİR (bisfosfonatlar renal yoldan atılır ve ağır böbrek yetmezliğinde dikkatli kullanılmalı veya kontrendike olabilir).\n- Denosumab: İLERİ EVRE KRONİK BÖBREK YETMEZLİĞİ olan hastalar için — bu, bisfosfonatların (hem oral hem IV formların) böbrek yetmezliğinde KONTRENDİKE olabileceği durumda devreye giren, GFR'den bağımsız metabolize edilen bir alternatiftir.\n\nBu vakadaki hastanın SORUNU özellikle GİS toleransıdır (böbrek yetmezliği belirtilmemiştir), bu nedenle burada birincil öneri zoledronik asit'tir. Ancak eğer hastada AYRICA ileri böbrek yetmezliği de olsaydı, o zaman Denosumab tercih edilecek ajan olurdu — çünkü zoledronik asit gibi bisfosfonatlar bu durumda uygun olmayabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin tam tersini belirtir: Denosumab GFR kısıtlılığından bağımsız metabolize edildiği için ileri böbrek yetmezliğinde İLK BASAMAKTA GÜVENLE tercih edilebilir; kontrendike olduğu iddiası yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin zoledronik asidin YILDA BİR KEZ İNTRAVENÖZ (IV) yolla uygulandığını açıkça belirtir; günlük oral formda uygulandığı iddiası doğrudan yanlıştır.",
+        "C": "DOĞRU — GİS intoleransında IV zoledronik asit güçlü bir alternatiftir; GFR kısıtlılığından bağımsız metabolize edilen Denosumab ise ileri KBY'de ilk basamakta güvenle tercih edilebilir.",
+        "D": "YANLIŞ — Kanonik metin oral bisfosfonat tolere edemeyen hastalar için açıkça IV zoledronik asit alternatifini tanımlar; 'hiçbir alternatif yok' iddiası yanlıştır.",
+        "E": "YANLIŞ — Zoledronik asit de bir BİSFOSFONATTIR ve renal yoldan atılır (GFR'den bağımsız DEĞİLDİR); GFR kısıtlılığından bağımsız metabolize edilen ajan DENOSUMAB'dır, zoledronik asit değil — bu şık iki ajanın özelliklerini karıştırmaktadır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "erkek osteoporozu",
+        "zoledronik asit",
+        "denosumab",
+        "kronik böbrek yetmezliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    }
+  ]
+}
