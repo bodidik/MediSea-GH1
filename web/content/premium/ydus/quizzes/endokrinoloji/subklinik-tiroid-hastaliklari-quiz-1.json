@@ -1,0 +1,282 @@
+{
+  "id": "quiz-endo-subklinik-tiroid-001",
+  "baslik": "Subklinik Tiroid Hastalıkları — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "subklinik-tiroid-hastaliklari",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "45 yaşında bir kadın hastanın tetkiklerinde sT4 ve sT3 normal referans aralığında, TSH ise 12 mIU/L olarak saptanıyor. Hastada hipotiroidi ile uyumlu semptom yok.\n\nBu laboratuvar profili hangi tanı ve evreyi tanımlar?",
+      "secenekler": {
+        "A": "Evre 2 (Şiddetli) Subklinik Hipotiroidizm — TSH ≥10 mIU/L, sT4/sT3 normal.",
+        "B": "Evre 1 (Hafif) Subklinik Hipotiroidizm — TSH 4.0-9.9 mIU/L arası.",
+        "C": "Aşikar (klinik) hipotiroidizm — TSH yüksek, sT4 düşük.",
+        "D": "Subklinik hipertiroidizm — TSH baskılı, sT4/sT3 normal.",
+        "E": "Ötiroid hasta sendromu — sistemik hastalığa ikincil TSH yüksekliği."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TSH ≥10 mIU/L ile sT4/sT3 normal sınırlarda olması Evre 2 (Şiddetli) Subklinik Hipotiroidizm tanımına uyar; Evre 1 (Hafif) SCH TSH 4.0-4.5 ile 9.9 mIU/L arasıdır.",
+      "aciklama_detay": "Subklinik Tiroid Hastalıkları, klinik bulguların silik olduğu ancak hücresel ve sistemik düzeyde hemodinamik, metabolik ve iskelet sistemi üzerinde ciddi komplikasyonlara zemin hazırlayabilen biyokimyasal bir spektrumu ifade eder. Tanı, klinik semptomlardan ziyade TAMAMEN laboratuvar parametrelerine dayanır.\n\nSubklinik Hipotiroidizm (SCH) tanımı: sT4 ve sT3 normal referans aralığındayken, TSH referans aralığın üzerindedir (genellikle >4.5 mIU/L). Bu tanım iki evreye ayrılır:\n- Evre 1 (Hafif SCH): TSH 4.0-4.5 ile 9.9 mIU/L arası.\n- Evre 2 (Şiddetli SCH): TSH ≥10 mIU/L.\n\nBu hastada TSH 12 mIU/L olup sT4/sT3 normaldir — bu, Evre 2 (Şiddetli) SCH tanımına tam olarak uymaktadır. Bu evre ayrımının klinik önemi büyüktür çünkü tedavi kararı doğrudan bu evrelemeye dayanır: TSH ≥10 mIU/L ise tüm hastalar standart olarak LT4 (levotiroksin) ile tedavi edilmelidir — semptomun varlığı/yokluğu bu eşikte tedavi kararını değiştirmez. Buna karşılık TSH 4.5-9.9 mIU/L arasında (Evre 1) ise tedavi kararı bireyselleştirilir: genç (<65-70 yaş), semptomatik veya yüksek riskli gebelik planlayan hastalarda tedavi düşünülür, ancak herkeste otomatik olarak başlanmaz.\n\nBu evrelemenin altında yatan klinik rasyonel, TSH ≥10 mIU/L düzeyinin kardiyometabolik ve iskelet sistemi riskleriyle güçlü şekilde ilişkilendirilmiş olmasıdır: bu düzeyde sol ventrikül diyastolik fonksiyon bozukluğu, artmış sistemik vasküler direnç, endotel disfonksiyonu, kalp yetmezliği ve dislipidemi riski belirgin artar; ayrıca Metabolik Sendrom (MetS) ve MASLD (metabolik ilişkili yağlı karaciğer hastalığı) ile çift yönlü bir ilişkiye sahiptir. Bu nedenle TSH ≥10 eşiği, yalnızca keyfi bir sayı değil, kanıtlanmış komplikasyon riskinin arttığı bir biyokimyasal dönüm noktasıdır.\n\nAyırıcı tanı açısından, aşikar (klinik) hipotiroidizmden farkı sT4/sT3'ün NORMAL kalmasıdır — aşikar hipotiroidide sT4 düşüktür. Ötiroid hasta sendromundan (NTIS) farkı ise bu hastanın altta yatan akut sistemik bir hastalığının olmaması ve rT3'ün bu tabloda değerlendirme dışı kalmasıdır; NTIS'te rT3 artmışken SCH'de bu parametre tanı kriteri değildir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — TSH ≥10 mIU/L ile sT4/sT3 normal olması Evre 2 (Şiddetli) SCH tanımına uyar ve bu eşikte tüm hastalar standart olarak LT4 ile tedavi edilir.",
+        "B": "YANLIŞ — Evre 1 (Hafif) SCH TSH 4.0-9.9 mIU/L aralığını tanımlar; bu hastanın TSH'ı 12 mIU/L olup bu aralığın üzerinde, yani Evre 2'dedir.",
+        "C": "YANLIŞ — Aşikar hipotiroidizmde sT4 DÜŞÜKtür; bu hastada sT4/sT3 normal olduğu belirtildiği için tanım subklinik kategoriye girer, aşikar değil.",
+        "D": "YANLIŞ — Subklinik hipertiroidizmde TSH BASKILIDIR (<0.4 mIU/L); bu hastada TSH YÜKSEKtir (12 mIU/L), tam tersi bir profil söz konusudur.",
+        "E": "YANLIŞ — Ötiroid hasta sendromu, altta yatan AKUT bir sistemik hastalığa (enfeksiyon, cerrahi, travma) ikincil gelişir ve rT3 yüksekliği ile karakterizedir; bu vakada böyle bir klinik bağlam veya rT3 verisi yoktur."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "TSH",
+        "evreleme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s2",
+      "metin": "72 yaşında bir hastada rutin tetkiklerde TSH 5.2 mIU/L (yaşa özgü referans aralığı kullanılmadan genel popülasyon eşiğine göre 'yüksek' olarak raporlanmış), sT4 normal saptanıyor.\n\nBu vakada yaşa özgü TSH referans aralıklarının kullanılmamasının epidemiyolojik sonucu ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yaşa özgü referans aralığı kullanımı, gerçek SCH prevalansını olduğundan düşük gösterir.",
+        "B": "Yaşa özgü TSH referans aralıkları kullanılmadığında (örn. 70 yaş üstünde) subklinik hipotiroidizm prevalansı yanlışlıkla %29.6 gibi yüksek oranlarda saptanabilirken, yaşa özgü aralıklar kullanıldığında bu oran %3'e düşer.",
+        "C": "Yaşla birlikte TSH'ın normal üst sınırı fizyolojik olarak aşağı kayar, bu nedenle yaşlılarda daha düşük bir TSH eşiği kullanılmalıdır.",
+        "D": "TSH referans aralığı yaştan bağımsızdır, bu nedenle yaşa özgü aralık kullanımı prevalans tahminini etkilemez.",
+        "E": "Bu fenomen yalnızca subklinik hipertiroidizmde görülür, subklinik hipotiroidizmde yaşla ilişkili bir referans aralığı kayması yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sağlıklı yaşlı bireylerde TSH'ın normal üst sınırı fizyolojik olarak yukarı kayar; yaşa özgü referans aralığı kullanılmazsa 70 yaş üstünde SCH prevalansı yanlışlıkla %29.6 gibi çıkabilirken, yaşa özgü aralıkla gerçek oran %3'e düşer.",
+      "aciklama_detay": "SCH'nin epidemiyolojisi ve demografik özellikleri, YDUS düzeyinde 'sınav spotu' olarak özellikle vurgulanan bir konudur ve bu 'yaş paradoksu' fenomeni bu alanın en kritik tuzağıdır.\n\nSCH Prevalansı ve Yaş Paradoksu: Subklinik hipotiroidizm erişkin popülasyonun yaklaşık %4-15'ini etkiler ve kadınlarda daha sık görülür. Prevalans yaşla artar; ANCAK sağlıklı bireylerde yaşla birlikte TSH'ın normal üst sınırı (set-point) FİZYOLOJİK OLARAK YUKARI kayar — yani yaşlı bireylerde biraz daha yüksek bir TSH değeri, genç bir bireyde olduğu gibi patolojik değil, o yaş grubu için normal bir fizyolojik adaptasyon olabilir.\n\nBu fizyolojik gerçeğin klinik ölçüm sonucu üzerindeki etkisi çarpıcıdır: yaşa özgü TSH referans aralıkları KULLANILMADIĞINDA (yani genç erişkinler için belirlenmiş standart bir referans aralığı tüm yaş gruplarına uygulandığında), örneğin 70 yaş üstü popülasyonda SCH prevalansı yanlışlıkla %29.6 gibi çok yüksek bir orana ulaşabilir. Ancak yaşa özgü referans aralıkları kullanıldığında (yani her yaş grubu için o gruba özgü normal TSH sınırları esas alındığında), bu oran gerçekçi bir düzeye, %3'e düşer.\n\nBu bulgunun klinik önemi devasadır: yaşa özgü referans aralığı kullanmayan bir klinisyen, yaşlı bir hastada gerçekte fizyolojik olan bir TSH yüksekliğini 'patolojik SCH' olarak yanlış etiketleyebilir ve gereksiz yere LT4 tedavisi başlayabilir. Gereksiz LT4 tedavisi, özellikle yaşlı hastalarda iyatrojenik subklinik hipertiroidizme (aşırı doz replasman) ve buna bağlı AF/kemik kaybı riskine yol açabileceğinden, bu 'aşırı tanı' (overdiagnosis) tuzağı ciddi klinik sonuçlar doğurabilir.\n\nSubklinik hipertiroidi tarafında da benzer bir yaşa bağlı prevalans artışı görülür ancak farklı bir mekanizmayla: subklinik hipertiroidi prevalansı tanı kriterlerine ve iyot alımına bağlı olarak %0.6 ile %16 arasında değişir; özellikle iyot eksikliği olan bölgelerde endemik özellik gösterir ve 70 yaş üzerinde prevalans %15'lere kadar çıkabilir — ancak bu artış, TSH alt sınırının yaşla değişmesinden değil, yaşlanmayla birlikte Toksik Adenom ve Toksik Multinodüler Guatr (TMNG) gibi otonom nodüler hastalıkların sıklığının gerçekten artmasından kaynaklanır. Bu nedenle bu vakadaki hastada (72 yaş, TSH 5.2, genel popülasyon eşiğine göre 'yüksek') klinisyenin ilk yapması gereken, yaşa özgü referans aralığına göre bu değerin gerçekten yüksek olup olmadığını yeniden değerlendirmektir; eğer yaşa özgü aralıkta normal sınırlar içindeyse, tedavi başlanmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Tam tersine, yaşa özgü referans aralığı kullanımı DAHA DOĞRU (ve genellikle daha DÜŞÜK) bir prevalans tahmini verir; yaşa özgü aralık kullanmamak prevalansı OLDUĞUNDAN YÜKSEK gösterir (%29.6 vs gerçek %3).",
+        "B": "DOĞRU — Yaşa özgü aralık kullanılmadığında 70 yaş üstünde SCH prevalansı yanlışlıkla %29.6'ya kadar çıkabilirken, yaşa özgü aralıkla gerçek oran %3'e düşer.",
+        "C": "YANLIŞ — TSH'ın normal üst sınırı yaşla AŞAĞI değil YUKARI kayar; bu nedenle yaşlılarda daha DÜŞÜK değil, daha ESNEK/YÜKSEK bir üst sınır kullanılması gerekir.",
+        "D": "YANLIŞ — Kanonik metin tam tersini gösterir: TSH referans aralığı yaşa GÜÇLÜ şekilde bağımlıdır ve bu, prevalans tahminini (%29.6 vs %3) dramatik şekilde etkiler.",
+        "E": "YANLIŞ — Bu fenomen (yaşla TSH üst sınırının yukarı kayması) spesifik olarak subklinik HİPOTİROİDİZM prevalans tahminini etkileyen bir durumdur; subklinik hipertiroidide prevalans artışının nedeni farklıdır (TMNG/toksik adenom sıklığının gerçek artışı)."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "yaş paradoksu",
+        "epidemiyoloji",
+        "TSH referans aralığı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s3",
+      "metin": "Subklinik hipotiroidizm (SCH) etyolojisinde en sık görülen ENDOJEN neden hangisidir?",
+      "secenekler": {
+        "A": "Amiodaron kullanımı",
+        "B": "Subakut tiroidit sonrası iyileşme dönemi",
+        "C": "Otoimmün Kronik Lenfositik Tiroidit (Hashimoto)",
+        "D": "Radyoaktif iyot (RAI) tedavisi",
+        "E": "Tiroid cerrahisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "SCH etyolojisi aşikar hipotiroidiyle benzerlik gösterir; en sık ENDOJEN neden otoimmün Kronik Lenfositik Tiroidit (Hashimoto)'tir.",
+      "aciklama_detay": "Subklinik hipotiroidizm nedenleri, aşikar (klinik) hipotiroidizmin nedenleriyle büyük ölçüde örtüşür ve iki kategoride değerlendirilebilir: endojen (bezin kendi patolojisinden kaynaklanan) ve iyatrojenik/eksojen (dışarıdan bir müdahale veya ajanın tetiklediği) nedenler.\n\nEndojen nedenler arasında EN SIK görülen, otoimmün Kronik Lenfositik Tiroidit'tir (Hashimoto tiroiditi) — bu, kronik otoimmün süreçte tiroid dokusunun kademeli olarak yıkılması sonucu, önce subklinik (kompanse) hipotiroidizm evresinde TSH yükselirken sT4/sT3'ün henüz normal sınırlarda kalabildiği bir tablo oluşturur; hastalık ilerledikçe bez rezervi tükendiğinde aşikar hipotiroidizme geçiş olur.\n\nDiğer nedenler ise daha çok iyatrojenik/prosedürel kaynaklıdır: radyoaktif iyot (RAI) tedavisi (genellikle Graves hastalığı veya toksik nodüler guatr tedavisinde kullanılan RAI'nin normal tiroid dokusunu da hasarlaması sonucu), tiroid cerrahisi (subtotal tiroidektomi sonrası kalan doku yetersizliği), baş-boyun radyoterapisi (örn. lenfoma veya baş-boyun kanseri tedavisinde), subakut tiroidit sonrası iyileşme dönemi (geçici bir fazdır, kendiliğinden düzelebilir) ve bazı ilaçlar (amiodaron — hem hipotiroidizm hem hipertiroidizm tetikleyebilen iyot içerikli bir antiaritmik, lityum — tiroid hormon sentezini ve salınımını inhibe eder, tirozin kinaz inhibitörleri ve immün kontrol noktası inhibitörleri — kanser tedavisinde kullanılan ve tiroidit tetikleyebilen ajanlar).\n\nBu etyolojik sıralamanın klinik önemi, bir hastada SCH saptandığında tanısal yaklaşımın nereden başlaması gerektiğini belirlemesidir: klinisyen öncelikle Hashimoto tiroiditi açısından Anti-TPO (tiroid peroksidaz antikoru) düzeyini değerlendirmelidir, çünkü bu hem en sık nedeni doğrulamak hem de prognostik bilgi elde etmek açısından değerlidir — Anti-TPO pozitifliği, SCH'nin aşikar hipotiroidiye ilerleme riskini artıran en güçlü prediktörlerden biridir (başlangıç TSH yüksekliğiyle birlikte). İkincil olarak, hastanın ilaç öyküsü (amiodaron, lityum, immünoterapi ajanları) ve geçmiş tıbbi/cerrahi öyküsü (RAI, cerrahi, radyoterapi) sorgulanmalıdır.\n\nBu etyolojik ayrımın subklinik hipertiroidi ile tam tersi bir yapı sergilemesi de önemli bir karşılaştırma noktasıdır: subklinik hipertiroidide en sık neden ENDOJEN değil EKSOJEN'dir (aşırı doz levotiroksin replasmanı veya TSH supresyon tedavisi), yani iki subklinik tablonun en sık neden kategorisi birbirinin tam tersidir — hipotiroidide endojen (Hashimoto) baskınken, hipertiroidide eksojen (iyatrojenik LT4 fazlalığı) baskındır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Amiodaron kullanımı ilaç ilişkili bir nedendir, en sık endojen neden olarak tanımlanan Hashimoto tiroiditinden farklıdır.",
+        "B": "YANLIŞ — Subakut tiroidit sonrası iyileşme dönemi geçici bir fazı tanımlar ve SCH nedenleri arasında sayılsa da, en sık görülen endojen neden değildir.",
+        "C": "DOĞRU — SCH etyolojisinde en sık görülen endojen neden otoimmün Kronik Lenfositik Tiroidit (Hashimoto)'tir.",
+        "D": "YANLIŞ — RAI tedavisi SCH nedenleri arasında sayılır ancak iyatrojenik/prosedürel bir nedendir, Hashimoto kadar sık görülen endojen bir neden değildir.",
+        "E": "YANLIŞ — Tiroid cerrahisi de iyatrojenik bir nedendir, en sık ENDOJEN neden değildir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "Hashimoto",
+        "etyoloji"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s4",
+      "metin": "Diferansiye tiroid kanseri nedeniyle total tiroidektomi geçirmiş ve TSH supresyon tedavisi (yüksek doz levotiroksin) alan bir hastanın kontrol tetkiklerinde TSH 0.05 mIU/L, sT4/sT3 normal sınırlarda saptanıyor.\n\nBu hastadaki subklinik hipertiroidi tablosunun etyolojisi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Bu tablo Toksik Multinodüler Guatr (TMNG) ile açıklanmalıdır, çünkü bu en sık endojen nedendir.",
+        "B": "TSH supresyon tedavisi subklinik hipertiroidiye yol açmaz, bu hastadaki TSH baskılanması başka bir nedenle araştırılmalıdır.",
+        "C": "Bu tablo yalnızca genç hastalarda görülür, 65 yaş üzeri hastalarda TSH supresyon tedavisi hipertiroidi oluşturmaz.",
+        "D": "Bu, subklinik hipertiroidinin EN SIK nedeni olan eksojen kategoriye girer; TSH supresyon tedavisi (diferansiye tiroid kanserinde) veya aşırı doz levotiroksin replasmanı, subklinik hipertiroidinin başlıca eksojen nedenidir.",
+        "E": "Bu tablo mutlaka altta yatan Graves hastalığını gösterir, çünkü subklinik hipertiroidinin tek nedeni otoimmün tiroid hastalığıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Subklinik hipertiroidinin en sık nedeni EKSOJEN kaynaklıdır: aşırı doz levotiroksin replasmanı veya diferansiye tiroid kanserinde uygulanan TSH supresyon tedavisi. Bu hastadaki tablo tam olarak bu kategoriye girer.",
+      "aciklama_detay": "Subklinik hipertiroidi nedenleri, subklinik hipotiroidinin tam tersi bir etyolojik ağırlık sergiler: en sık neden 'eksojen' kaynaklıdır, yani bezin kendi otonom patolojisinden değil, dışarıdan uygulanan tiroid hormonu fazlalığından kaynaklanır.\n\nEksojen (En Sık) Neden: Aşırı doz levotiroksin (LT4) replasmanı veya diferansiye tiroid kanserinde uygulanan TSH supresyon tedavisi. Bu ikinci durum (bu sorudaki hastanın senaryosu) özellikle önemlidir çünkü BİLİNÇLİ ve TEDAVİ AMAÇLI olarak uygulanan bir supresyondur — diferansiye (papiller/foliküler) tiroid kanserinde nüksü önlemek amacıyla TSH kasıtlı olarak baskılanır (genellikle <0.1 mU/L hedeflenir), çünkü TSH'nin kendisi rezidüel tiroid kanseri hücrelerinin büyümesini uyarabilen bir trofik faktördür. Bu nedenle bu hastada TSH 0.05 mIU/L olması bir 'yan etki' değil, tedavinin AMAÇLANAN sonucudur.\n\nEndojen nedenler ise yaşa göre değişir: genç hastalarda Graves hastalığı (otoimmün, TSH reseptör antikorlarının tiroid bezini otonom olarak uyarması) ön plana çıkarken, yaşlanmayla birlikte Toksik Adenom (otonom fonksiyon gösteren tek bir nodül) ve Toksik Multinodüler Guatr (TMNG — birden fazla otonom fonksiyon gösteren nodül) daha sık görülür. Bu yaşa bağlı endojen etyoloji dağılımı, subklinik hipertiroidi prevalansının yaşlılarda neden gerçekten arttığını da açıklar (SCH'deki 'yaş paradoksu'ndan farklı olarak, burada gerçek bir hastalık sıklığı artışı söz konusudur).\n\nBu vakadaki hastanın klinik yönetimi açısından önemli bir nokta, TSH supresyon tedavisi ile oluşturulan iyatrojenik subklinik hipertiroidinin, kanser nüksünü önleme faydasına karşı, uzun vadede kardiyovasküler (özellikle AF riski) ve iskelet sistemi (kemik kaybı) riskleri taşımasıdır. Bu nedenle TSH supresyon hedefinin derecesi (tam supresyon <0.1 vs hafif supresyon 0.1-0.5), hastanın kanser nüks riskine göre (yüksek riskli hastada daha agresif supresyon, düşük riskli hastada daha hafif supresyon) bireyselleştirilmelidir — bu, subklinik hipertiroidi yönetiminde 'fayda-risk dengesi'nin klasik bir örneğidir.\n\nAyırıcı tanı açısından bu hastada Graves hastalığı veya TMNG düşünülmesi gerekmez, çünkü hastanın klinik öyküsü (total tiroidektomi + TSH supresyon tedavisi) zaten TSH baskılanmasının nedenini açık şekilde ortaya koymaktadır — bu, ek görüntüleme veya antikor testine gerek kalmadan etyolojik tanının klinik bağlamdan çıkarılabildiği bir örnektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — TMNG endojen bir nedendir ve genellikle yaşlanmayla ilişkilendirilir; bu hastadaki tablo zaten TSH supresyon tedavisiyle açıklanabildiği için TMNG'yi düşünmeye gerek yoktur.",
+        "B": "YANLIŞ — Kanonik metin açıkça TSH supresyon tedavisinin (diferansiye tiroid kanserinde) subklinik hipertiroidinin EN SIK eksojen nedenlerinden biri olduğunu belirtir; bu iddia doğrudan yanlıştır.",
+        "C": "YANLIŞ — TSH supresyon tedavisi yaştan bağımsız olarak uygulanır ve etki gösterir; 65 yaş üzerinde ise kanonik metin bu durumun tedavi kararını (doğrudan tedavi önerisi) etkilediğini belirtir, hastalığın oluşmayacağını değil.",
+        "D": "DOĞRU — Subklinik hipertiroidinin en sık nedeni eksojendir: aşırı doz LT4 replasmanı veya diferansiye tiroid kanserinde TSH supresyon tedavisi; bu hastanın tablosu tam olarak bu kategoridir.",
+        "E": "YANLIŞ — Bu hastanın klinik öyküsü (tiroidektomi + TSH supresyon tedavisi) zaten TSH baskılanmasının nedenini açıklar; Graves hastalığı düşünmek gereksizdir ve kanonik metin subklinik hipertiroidinin TEK nedeninin otoimmün hastalık olmadığını, en sık nedenin eksojen olduğunu açıkça belirtir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipertiroidizm",
+        "TSH supresyonu",
+        "etyoloji",
+        "diferansiye tiroid kanseri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s5",
+      "metin": "SCH (subklinik hipotiroidizm) hastalarının aşikar hipotiroidiye ilerleme riskini öngören en güçlü prediktörler hangileridir?",
+      "secenekler": {
+        "A": "Hastanın yaşı tek başına, TSH değerinden bağımsız olarak en güçlü prediktördür.",
+        "B": "sT3 düzeyinin düşük olması, en güçlü prediktördür.",
+        "C": "rT3 düzeyinin yüksek olması, en güçlü prediktördür.",
+        "D": "Cinsiyet (erkek olmak), en güçlü prediktördür.",
+        "E": "Başlangıç TSH yüksekliği (>12-15 mIU/L) ve Anti-TPO pozitifliği."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "SCH hastalarında yılda yaklaşık %2-4 oranında aşikar hipotiroidiye geçiş izlenir; en güçlü prediktörler başlangıç TSH yüksekliği (>12-15 mIU/L) ve Anti-TPO pozitifliğidir.",
+      "aciklama_detay": "Subklinik tiroid hastalıklarının doğal seyri ve kalıcı aşikar hastalığa ilerleme potansiyeli, bu spektrumun en çok korkulan yönlerinden biridir ve klinik takip stratejisini doğrudan şekillendirir.\n\nAşikar Hastalığa Progresyon (SCH): SCH hastalarında yılda yaklaşık %2-4 oranında aşikar hipotiroidiye geçiş izlenir. Bu progresyon riskini öngören EN GÜÇLÜ prediktörler ikisi birlikte değerlendirildiğinde şunlardır: başlangıç TSH yüksekliği (>12-15 mIU/L) ve Anti-TPO pozitifliği. Bu iki faktörün birlikte bulunması (yüksek TSH + pozitif Anti-TPO), hastanın altta yatan aktif bir otoimmün süreç (Hashimoto tiroiditi) içinde olduğunu ve bez rezervinin giderek azaldığını gösterir — bu nedenle bu hastalarda progresyon riski daha yakın takip ve daha düşük eşikle tedavi kararı gerektirebilir.\n\nBu bilginin klinik kullanımı, SCH tanısı alan bir hastada yalnızca TSH düzeyine bakmakla kalmayıp, Anti-TPO testinin de değerlendirilmesi gerektiğini gösterir — çünkü aynı TSH düzeyine sahip iki hastadan Anti-TPO pozitif olanı, negatif olana kıyasla aşikar hipotiroidiye çok daha hızlı ilerleyebilir. Bu nedenle Anti-TPO pozitifliği, izlem sıklığını (örn. yıllık yerine 6 aylık kontrol) ve tedavi eşiğini (Evre 1 SCH'de tedavi kararı için 'yüksek riskli' kategoriye girmesi) etkileyebilecek bir risk stratifikasyon aracıdır.\n\nSubklinik hipertiroidi tarafında ise karşılaştırılabilir bir progresyon riski farklı bir eşikle tanımlanır: özellikle TSH <0.1 mIU/L olan şiddetli vakalarda aşikar hipertiroidiye ilerleme riski yıllık %5-8'dir — bu oran SCH'nin progresyon oranından (%2-4) daha yüksektir, yani subklinik hipertiroidi, subklinik hipotiroidiye kıyasla aşikar hastalığa daha hızlı ilerleme eğilimindedir.\n\nBu prediktörlerin klinik önemi, tedavi eşiği tartışmasıyla da bağlantılıdır: TSH ≥10 mIU/L (Evre 2 SCH) hastalarında zaten tedavi standarttır, bu nedenle progresyon prediktörleri özellikle Evre 1 SCH (TSH 4.5-9.9 mIU/L) hastalarında karar verirken değerlidir — yüksek TSH (>9 civarında, üst sınıra yakın) VE Anti-TPO pozitifliği olan bir Evre 1 hastada, tedaviye erken başlama eğilimi daha güçlü olabilir; buna karşılık düşük TSH (4.5-6 civarı) ve Anti-TPO negatif bir hastada izlem tercih edilebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin yaşı tek başına en güçlü prediktör olarak tanımlamaz; asıl vurgulanan prediktörler TSH düzeyi ve Anti-TPO pozitifliğidir.",
+        "B": "YANLIŞ — sT3 düzeyi SCH tanı kriterlerinde normal kalması beklenen bir parametredir (tanım gereği), progresyon prediktörü olarak tanımlanmamıştır; düşük sT3 daha çok NTIS'i düşündürür.",
+        "C": "YANLIŞ — rT3 yüksekliği, SCH'nin değil Ötiroid Hasta Sendromu'nun (NTIS) ayırt edici bir bulgusudur; SCH progresyon prediktörü olarak tanımlanmamıştır.",
+        "D": "YANLIŞ — Kanonik metin cinsiyeti progresyon prediktörü olarak tanımlamaz; kadın cinsiyeti SCH'nin genel prevalansının daha yüksek olduğu bir grup olarak geçer, progresyon riskinin prediktörü olarak değil.",
+        "E": "DOĞRU — En güçlü prediktörler başlangıç TSH yüksekliği (>12-15 mIU/L) ve Anti-TPO pozitifliğidir; bu ikisi birlikte otoimmün sürecin aktivitesini ve progresyon riskini gösterir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "Anti-TPO",
+        "progresyon riski"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s6",
+      "metin": "68 yaşında, TSH <0.1 mIU/L (tam baskılı) düzeyinde subklinik hipertiroidisi olan bir kadın hastada, en çok korkulan iki organ sistemi komplikasyonu hangileridir?",
+      "secenekler": {
+        "A": "Yalnızca hipertansiyon riski artar, AF veya kemik kaybı ile ilişkisi gösterilmemiştir.",
+        "B": "Atriyal Fibrilasyon (AF)/kalp yetmezliği riski ve artmış kemik döngüsüne bağlı kemik mineral yoğunluğu azalması (osteoporoz/kırık riski).",
+        "C": "Sol ventrikül diyastolik disfonksiyonu ve Metabolik Sendrom — bunlar subklinik hipertiroidinin değil subklinik hipotiroidinin komplikasyonlarıdır.",
+        "D": "Yalnızca psikiyatrik semptomlar (anksiyete, depresyon) beklenir, kardiyovasküler veya iskelet sistemi riski yoktur.",
+        "E": "Bu yaş ve TSH düzeyinde herhangi bir sistemik komplikasyon riski bulunmamaktadır, izlem yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TSH <0.1 mIU/L olan yaşlı (>65 yaş) hastalarda Atriyal Fibrilasyon (AF) ve kalp yetmezliği riski dramatik artar; ayrıca artmış kemik döngüsüne yol açarak özellikle postmenopozal kadınlarda kemik mineral yoğunluğunu azaltır ve osteoporoza/kırık riskine zemin hazırlar.",
+      "aciklama_detay": "Subklinik hipertiroidinin sistemik komplikasyonları, subklinik hipotiroidininkinden farklı bir organ sistemi profiline sahiptir ve bu ayrım YDUS düzeyinde 'klasik spot' olarak özellikle vurgulanır.\n\nSubklinik Hipertiroidi: AF ve Kemik Kaybı (Klasik Spot): TSH <0.1 mIU/L olan yaşlı (>65 yaş) hastalarda Atriyal Fibrilasyon (AF) ve kalp yetmezliği riski DRAMATİK olarak artar. Bu mekanizma, subklinik olarak da olsa kronik tiroid hormon fazlalığının kalbin elektriksel ve mekanik fonksiyonları üzerindeki kümülatif etkisinden kaynaklanır — tiroid hormonu miyokard üzerinde kronotropik ve inotropik etkiler gösterir, uzun süreli hafif fazlalık dahi atriyal dokuda elektriksel instabiliteye zemin hazırlayabilir.\n\nAyrıca subklinik hipertiroidi artmış kemik döngüsüne (bone turnover) yol açarak özellikle POSTMENOPOZAL KADINLARDA kemik mineral yoğunluğunu azaltır ve osteoporoza/kırık riskine zemin hazırlar. Bu, tiroid hormonunun osteoklastik aktiviteyi doğrudan uyarmasıyla ilişkilidir; postmenopozal kadınlar zaten östrojen eksikliği nedeniyle kemik kaybına yatkın olduğundan, subklinik hipertiroidinin eklenmesi bu riski katlayarak artırır.\n\nBu iki komplikasyon (AF ve kemik kaybı), bu sorudaki hastanın profiliyle (68 yaş, kadın, TSH tam baskılı <0.1) tam olarak örtüşmektedir ve bu nedenle bu hasta grubunda TEDAVİ doğrudan önerilir — kanonik metinde belirtildiği gibi, hasta ≥65 yaşındaysa subklinik hipertiroidi tedavisi doğrudan önerilir (65 yaş altında ise TSH <0.1 mIU/L olması tedavi için yeterlidir; 0.1-0.4 mIU/L arasındaki grupta ise kardiyovasküler hastalık, osteoporoz veya postmenopozal durum gibi ek risk faktörleri varsa tedavi devreye sokulur).\n\nBu, subklinik hipotiroidinin komplikasyon profilinden BELİRGİN şekilde farklıdır: subklinik hipotiroidide (özellikle TSH ≥10 mIU/L, Evre 2) sol ventrikül DİYASTOLİK fonksiyon bozukluğu, artmış sistemik vasküler direnç, endotel disfonksiyonu, kalp yetmezliği ve dislipidemi riski ön plandadır; ayrıca Metabolik Sendrom (MetS) ve MASLD ile ilişkilidir. Yani her iki subklinik tablo da kardiyovasküler riski artırsa da, MEKANİZMA ve SPESİFİK RİSK TİPİ farklıdır: hipotiroidide metabolik/diyastolik disfonksiyon ön plandayken, hipertiroidide aritmi (AF) ve kemik kaybı ön plandadır. Bu ayrımı karıştırmak, YDUS'ta sık düşülen bir tuzaktır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin spesifik olarak AF ve kemik kaybını vurgular; hipertansiyon riski bu bağlamda tanımlanan spesifik komplikasyon değildir.",
+        "B": "DOĞRU — TSH <0.1 mIU/L olan yaşlı (>65) hastalarda AF/kalp yetmezliği riski dramatik artar; ayrıca postmenopozal kadınlarda artmış kemik döngüsüyle osteoporoz/kırık riski oluşur.",
+        "C": "YANLIŞ — Sol ventrikül diyastolik disfonksiyonu ve MetS, subklinik HİPOTİROİDİNİN (özellikle TSH≥10) komplikasyonlarıdır; subklinik hipertiroidinin karakteristik komplikasyonları AF ve kemik kaybıdır — bu şık iki tabloyu birbirine karıştırmaktadır.",
+        "D": "YANLIŞ — Kanonik metin, kardiyovasküler (AF/kalp yetmezliği) ve iskelet sistemi (osteoporoz) risklerini açıkça 'en çok korkulan' komplikasyonlar olarak tanımlar; yalnızca psikiyatrik semptomlarla sınırlı değildir.",
+        "E": "YANLIŞ — Bu yaş ve TSH düzeyi kombinasyonu tam olarak yüksek riskli profildir; kanonik metin bu grupta doğrudan tedavi önerildiğini belirtir, komplikasyon riski yoktur iddiası yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipertiroidizm",
+        "atriyal fibrilasyon",
+        "osteoporoz",
+        "kardiyovasküler risk"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s7",
+      "metin": "63 yaşında semptomatik (yorgunluk, hafif kilo alımı) bir hastada TSH 8.2 mIU/L, sT4 normal saptanıyor. Anti-TPO pozitif.\n\nBu hastada tedavi kararı ile ilgili hangi yaklaşım DOĞRUDUR?",
+      "secenekler": {
+        "A": "65 yaş üzeri olduğu için tedavi doğrudan önerilir.",
+        "B": "Anti-TPO pozitifliği tek başına tedavi kararını etkilemez, yalnızca TSH düzeyi önemlidir.",
+        "C": "TSH 4.5-9.9 mIU/L aralığında (Evre 1 SCH) olduğu için tedavi otomatik zorunlu değildir, ancak hastanın genç yaşı (<65-70), semptomatik olması ve Anti-TPO pozitifliği (yüksek progresyon riski) tedaviyi destekleyen faktörlerdir — bireyselleştirilmiş karar verilmelidir.",
+        "D": "TSH ≥10 mIU/L olmadığı için bu hastada kesinlikle tedavi verilmemelidir, TSH düzeyi tek belirleyicidir.",
+        "E": "Bu hasta otomatik olarak tedavi dışı bırakılmalıdır çünkü SCH'de semptomlar tedavi kararını hiçbir zaman etkilemez."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "TSH 4.5-9.9 mIU/L (Evre 1 SCH) aralığında tedavi otomatik değildir; ancak genç yaş (<65-70), semptomatik olma ve Anti-TPO pozitifliği (yüksek progresyon riski) tedaviyi destekleyen faktörlerdir ve karar bireyselleştirilir.",
+      "aciklama_detay": "SCH tedavi yönetimine giriş, tedavi kararının hastanın yaşına, TSH'ın sapma derecesine, kardiyovasküler risk faktörlerine, kemik sağlığına ve semptomların varlığına göre MUTLAK SURETLE bireyselleştirilmesi gerektiği genel prensibine dayanır.\n\nSCH Tedavi Eşiği: TSH ≥10 mIU/L ise TÜM hastalar standart olarak LT4 ile tedavi edilmelidir — bu eşikte tedavi otomatik ve tartışmasızdır. TSH 4.5-9.9 mIU/L arasında (Evre 1 SCH) ise durum farklıdır: genç (<65-70 yaş), semptomatik veya yüksek riskli gebelik planlayan hastalarda tedavi DÜŞÜNÜLÜR — yani bu grupta tedavi kararı otomatik değil, hastanın bireysel özelliklerine göre şekillenir.\n\nBu vakadaki hasta (63 yaş — <65-70 kriterine uygun genç grupta, semptomatik — yorgunluk/kilo alımı, Anti-TPO pozitif — yüksek progresyon riski göstergesi) üç faktörün de tedaviyi DESTEKLER yönde olduğu bir profil sergilemektedir. Anti-TPO pozitifliği burada özellikle önemlidir çünkü bu, hastanın SCH'sinin aktif otoimmün (Hashimoto) kökenli olduğunu ve ilerleyici seyir gösterme olasılığının yüksek olduğunu gösterir — kanonik metinde Anti-TPO pozitifliği, aşikar hipotiroidiye progresyon riskinin en güçlü prediktörlerinden biri olarak tanımlanmıştır.\n\nBu üç faktörün (genç yaş, semptomatiklik, Anti-TPO pozitifliği) BİRLİKTE değerlendirilmesi, klinisyeni bu hastada tedavi başlama yönünde güçlü şekilde yönlendirir — ancak yine de bu, TSH ≥10 grubundaki gibi 'zorunlu' bir tedavi değil, hastayla paylaşılan karar verme sürecinin (shared decision making) parçası olan 'düşünülen' bir tedavidir. Eğer bu hasta asemptomatik olsaydı ve Anti-TPO negatif olsaydı, aynı TSH değerinde (8.2 mIU/L) izlem daha makul bir seçenek olabilirdi.\n\nBu vaka, SCH yönetiminin 'tek bir sayıya (TSH) bakarak karar verme' yaklaşımından, çok boyutlu bir klinik değerlendirmeye dayandığını göstermektedir — TSH düzeyi (evreleme) yalnızca başlangıç noktasıdır; yaş, semptom varlığı, Anti-TPO durumu, kardiyovasküler risk profili ve (kadın hastalarda) gebelik planı gibi ek faktörler nihai kararı şekillendirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 65 yaş üzeri direkt tedavi önerisi SUBKLİNİK HİPERTİROİDİ için tanımlanmıştır, SCH (subklinik hipotiroidizm) için değil; bu iki tablonun tedavi eşikleri karıştırılmamalıdır. Ayrıca hasta 63 yaşında, 65 üzeri değildir.",
+        "B": "YANLIŞ — Anti-TPO pozitifliği, aşikar hipotiroidiye progresyon riskinin en güçlü prediktörlerinden biri olarak tanımlanmıştır ve Evre 1 SCH'de tedavi kararını destekleyen önemli bir faktördür, göz ardı edilemez.",
+        "C": "DOĞRU — TSH 4.5-9.9 aralığında (Evre 1) tedavi otomatik değildir; genç yaş, semptomatiklik ve Anti-TPO pozitifliği tedaviyi destekleyen faktörlerdir, karar bireyselleştirilir.",
+        "D": "YANLIŞ — TSH ≥10 mIU/L yalnızca 'otomatik/zorunlu' tedavi eşiğidir; bunun altında (4.5-9.9) tedavi KESİNLİKLE verilmemelidir demek yanlıştır — burada tedavi 'düşünülür', TSH tek belirleyici değildir.",
+        "E": "YANLIŞ — Kanonik metin açıkça semptomatik olmanın Evre 1 SCH'de tedavi kararını destekleyen bir faktör olduğunu belirtir; semptomların hiçbir zaman etkisi olmadığı iddiası yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "tedavi eşiği",
+        "levotiroksin",
+        "Anti-TPO"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s8",
+      "metin": "58 yaşında, TSH 0.25 mIU/L (Evre 1, hafif subklinik hipertiroidi aralığında), sT4/sT3 normal olan bir kadın hastada osteoporoz öyküsü mevcut.\n\nBu hastada tedavi kararı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Bu hasta yalnızca TSH <0.1 mIU/L olduğunda tedavi edilebilir, 0.25 değeri hiçbir koşulda tedavi gerektirmez.",
+        "B": "Osteoporoz öyküsü subklinik hipertiroidi tedavi kararında dikkate alınan bir faktör değildir.",
+        "C": "Bu hastada tedavi kararı yalnızca yaşa göre verilir, osteoporoz gibi komorbiditeler etkisizdir.",
+        "D": "65 yaş altında olup TSH 0.1-0.4 mIU/L aralığında olduğu için tedavi otomatik değildir; ancak eşlik eden osteoporoz (risk faktörü) nedeniyle tedavi devreye sokulmalıdır.",
+        "E": "65 yaş altındaki tüm hastalarda TSH 0.1-0.4 mIU/L aralığında tedavi kesinlikle kontrendikedir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "65 yaş altında TSH 0.1-0.4 mIU/L aralığındaki grupta kardiyovasküler hastalık, osteoporoz veya postmenopozal durum gibi risk faktörleri eşlik ediyorsa tedavi devreye sokulur; bu hastada osteoporoz öyküsü bu eşiği karşılar.",
+      "aciklama_detay": "Subklinik hipertiroidi tedavi eşiği, üç kademeli bir karar ağacına dayanır ve bu ağaç yaş ile TSH düzeyinin kombinasyonunu, ek risk faktörleriyle birlikte değerlendirir.\n\nKademe 1 — 65 yaş ve üzeri: Hasta ≥65 yaşındaysa tedavi DOĞRUDAN önerilir (TSH düzeyinin hafif mi şiddetli mi olduğuna bakılmaksızın, yaşlı popülasyonda AF ve kemik kaybı riski zaten yüksek kabul edilir).\n\nKademe 2 — 65 yaş altı, TSH <0.1 mIU/L (Evre 2, şiddetli): Bu grupta da tedavi uygulanır — TSH'ın tam baskılı olması, yaştan bağımsız olarak tedavi endikasyonu oluşturur.\n\nKademe 3 — 65 yaş altı, TSH 0.1-0.4 mIU/L (Evre 1, hafif): Bu ARA grupta tedavi otomatik değildir; ancak kardiyovasküler hastalık, osteoporoz VEYA postmenopozal durum gibi risk faktörleri eşlik ediyorsa tedavi devreye sokulur.\n\nBu vakadaki hasta (58 yaş — 65 altı, TSH 0.25 — 0.1-0.4 aralığında/Evre 1, osteoporoz öyküsü mevcut) tam olarak Kademe 3'ün 'risk faktörü eşlik eden' alt grubuna girmektedir. Osteoporoz öyküsü, kanonik metinde AÇIKÇA tanımlanan üç risk faktöründen biridir (kardiyovasküler hastalık, osteoporoz, postmenopozal durum) ve bu hastanın zaten osteoporozu olması, subklinik hipertiroidinin kemik döngüsünü daha da artırıcı etkisiyle birleştiğinde, kırık riskini kümülatif olarak yükseltebilir. Bu nedenle bu hastada tedavi (genellikle antitiroid ilaç veya altta yatan nedene yönelik tedavi) devreye sokulmalıdır.\n\nBu üç kademeli sistemin mantığı şudur: TSH düzeyi arttıkça (daha fazla baskılanma) risk artar ve tedavi eşiği düşer (daha kolay tedavi kararı verilir); yaş arttıkça da risk artar ve tedavi eşiği düşer. En düşük risk kombinasyonu (genç yaş + hafif TSH baskılanması + ek risk faktörü yok) izlemi destekler; en yüksek risk kombinasyonu (yaşlı + şiddetli TSH baskılanması ± risk faktörleri) tedaviyi zorunlu kılar. Bu hastadaki senaryo, 'orta risk' kategorisinde olup, osteoporoz risk faktörünün varlığı kararı tedavi lehine çevirmektedir — eğer bu hastada osteoporoz öyküsü OLMASAYDI, aynı yaş ve TSH değerinde izlem tercih edilebilirdi.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — TSH <0.1 mIU/L yalnızca 65 yaş altı grupta tek başına (risk faktörü aranmaksızın) tedavi endikasyonu oluşturur; TSH 0.1-0.4 aralığı da risk faktörü eşliğinde (bu hastadaki gibi) tedavi gerektirebilir.",
+        "B": "YANLIŞ — Kanonik metin osteoporozu, kardiyovasküler hastalık ve postmenopozal durumla birlikte açıkça tedavi kararını etkileyen üç risk faktöründen biri olarak tanımlar.",
+        "C": "YANLIŞ — Tedavi kararı hem yaşa HEM de (65 yaş altı grupta) eşlik eden komorbiditelere (osteoporoz, kardiyovasküler hastalık, postmenopozal durum) göre verilir; yalnızca yaşa dayalı bir karar mekanizması değildir.",
+        "D": "DOĞRU — 65 yaş altı, TSH 0.1-0.4 aralığında tedavi otomatik değildir ancak osteoporoz gibi risk faktörü varlığında tedavi devreye sokulur; bu hastanın profili tam olarak bu duruma uyar.",
+        "E": "YANLIŞ — Kanonik metin bu grupta tedavinin 'kontrendike' olduğunu değil, risk faktörü YOKSA izlemin, risk faktörü VARSA tedavinin uygun olduğunu belirtir; kesin kontrendikasyon yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipertiroidizm",
+        "tedavi eşiği",
+        "osteoporoz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s9",
+      "metin": "İki hasta karşılaştırılıyor: Hasta 1'de TSH 6.5 mIU/L, sT4/sT3 normal, asemptomatik, Anti-TPO negatif, 40 yaşında. Hasta 2'de TSH 15 mIU/L, sT4/sT3 normal, 55 yaşında.\n\nBu iki hastanın tedavi yaklaşımı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hasta 1'de (Evre 1 SCH, asemptomatik, Anti-TPO negatif) tedavi bireyselleştirilmeli ve izlem de makul bir seçenektir; Hasta 2'de (TSH ≥10, Evre 2 SCH) semptom veya Anti-TPO durumundan bağımsız olarak standart LT4 tedavisi başlanmalıdır.",
+        "B": "Her iki hastada da TSH ≥4.5 olduğu için otomatik olarak aynı şekilde LT4 tedavisi başlanmalıdır.",
+        "C": "Hasta 2'nin TSH'ı daha yüksek olduğu için önce Anti-TPO sonucu beklenmeli, negatifse tedavi ertelenmelidir.",
+        "D": "Hiçbir hastada tedavi gerekmez çünkü ikisi de sT4/sT3 normal, yani ötiroiddir.",
+        "E": "Hasta 1'de tedavi zorunludur çünkü TSH 6.5, 4.5'in üzerindedir; Hasta 2'de ise TSH çok yüksek olduğu için önce aşikar hipotiroidi dışlanmalı, SCH tedavisi düşünülmemelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TSH ≥10 mIU/L (Evre 2 SCH, Hasta 2) tüm hastalarda standart tedavi gerektirirken, TSH 4.5-9.9 mIU/L (Evre 1 SCH, Hasta 1) grubunda tedavi bireyselleştirilir ve asemptomatik/Anti-TPO negatif bir hastada izlem de makul bir seçenektir.",
+      "aciklama_detay": "Bu karşılaştırmalı vaka, SCH'nin iki evresi arasındaki tedavi yaklaşımı farkını netleştirmek için tasarlanmıştır ve kanonik metindeki evreleme + tedavi eşiği bilgisinin doğrudan uygulamasıdır.\n\nHasta 1 Analizi: TSH 6.5 mIU/L, bu değer 4.0-4.5 ile 9.9 mIU/L aralığında olduğu için Evre 1 (Hafif) SCH tanımına girer. Bu evrede tedavi OTOMATİK değildir; genç (<65-70 yaş — bu hasta 40 yaşında, kriterine uygun), semptomatik VEYA yüksek riskli gebelik planlayan hastalarda tedavi düşünülür. Ancak bu hasta ASEMPTOMATİK ve Anti-TPO NEGATİF'tir (yani aktif otoimmün progresyon riski göstergesi yok) — bu nedenle izlem (tedavisiz takip, periyodik TSH kontrolü) bu hastada makul, hatta tercih edilebilir bir yaklaşımdır. Eğer bu hasta semptomatik olsaydı veya Anti-TPO pozitif olsaydı, tedavi lehine karar daha güçlü olurdu.\n\nHasta 2 Analizi: TSH 15 mIU/L, bu değer ≥10 mIU/L eşiğinin üzerinde olduğu için Evre 2 (Şiddetli) SCH tanımına girer. Bu evrede TÜM hastalar standart olarak LT4 ile tedavi edilmelidir — bu, hastanın semptomatik olup olmadığından, Anti-TPO durumundan veya yaşından (65 yaş altı olmasından) BAĞIMSIZ, otomatik bir tedavi endikasyonudur. Bu otomatik tedavi kuralının gerekçesi, TSH ≥10 mIU/L düzeyinin kanıtlanmış kardiyometabolik (sol ventrikül diyastolik disfonksiyonu, MetS, MASLD) ve genel aşikar hipotiroidiye ilerleme riskiyle güçlü şekilde ilişkilendirilmiş olmasıdır.\n\nBu iki hastanın karşılaştırması, SCH yönetiminde 'TSH ≥10 = otomatik tedavi, TSH 4.5-9.9 = bireyselleştirilmiş karar' kuralının pratikte nasıl uygulandığını gösteren öğretici bir örnektir. Her iki hastanın da sT4/sT3'ünün normal olması (yani 'biyokimyasal ötiroidi' görünümü vermesi), tedavi kararını ETKİLEMEZ — çünkü SCH tanımı zaten normal sT4/sT3 ile TSH yüksekliğinin BİRLİKTE bulunmasına dayanır; bu, hastaların 'ötiroid oldukları için tedaviye gerek yok' şeklinde yanlış yorumlanmasına yol açabilecek bir tuzaktır ve YANLIŞTIR.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Hasta 1 (Evre 1, asemptomatik, Anti-TPO negatif) için izlem makul bir seçenektir; Hasta 2 (Evre 2, TSH≥10) için semptom/Anti-TPO durumundan bağımsız standart LT4 tedavisi başlanmalıdır.",
+        "B": "YANLIŞ — Yalnızca TSH≥4.5 olması otomatik tedavi endikasyonu oluşturmaz; Evre 1 (4.5-9.9) grubunda karar bireyselleştirilir, yalnızca Evre 2 (≥10) grubunda otomatik tedavi vardır.",
+        "C": "YANLIŞ — Hasta 2'de TSH zaten ≥10 mIU/L eşiğini aştığı için Anti-TPO sonucundan bağımsız olarak tedavi endikasyonu vardır; Anti-TPO beklemek tedaviyi gereksiz yere geciktirir.",
+        "D": "YANLIŞ — SCH tanımı zaten sT4/sT3'ün normal (biyokimyasal olarak 'ötiroid görünümlü') olmasına dayanır; 'ötiroid olduğu için tedaviye gerek yok' yorumu SCH'nin tanımını yanlış anlamaktır — TSH yüksekliğinin kendisi tedavi kararının temelidir.",
+        "E": "YANLIŞ — Hasta 1'de TSH 6.5 olması TEK BAŞINA otomatik tedavi zorunluluğu oluşturmaz (Evre 1, bireyselleştirilmiş karar); Hasta 2'de TSH 15 ve sT4/sT3 normal olduğu zaten belirtildiği için aşikar hipotiroidi tanım gereği dışlanmıştır, ek dışlama gerekmez — SCH tedavisi doğrudan uygulanabilir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "tedavi eşiği",
+        "vaka karşılaştırması"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    }
+  ]
+}

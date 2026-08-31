@@ -1,0 +1,311 @@
+{
+  "id": "quiz-endo-tiroid-nodul-kanser-001",
+  "baslik": "Tiroid Nodülleri ve Kanserleri — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "tiroid-nodul-kanser",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Rutin muayenede tiroidde palpabl bir nodül saptanan bir hastada, tanısal algoritmanın İLK adımı ne olmalıdır?",
+      "secenekler": {
+        "A": "Serum TSH ölçümü ve Tiroid Ultrasonografisi.",
+        "B": "Doğrudan ince iğne aspirasyon biyopsisi (İİAB).",
+        "C": "Tiroid sintigrafisi, TSH sonucundan bağımsız olarak her nodülde ilk adımdır.",
+        "D": "Doğrudan tiroidektomi kararı verilir.",
+        "E": "Serum tiroglobulin ölçümü."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Palpabl veya rastlantısal saptanan her tiroid nodülünde ilk adım Serum TSH ölçümü ve Tiroid USG'dir.",
+      "aciklama_detay": "Tiroid nodüllerine yaklaşımda tanısal algoritma, gereksiz invaziv işlemleri önlemek ve malignite riskini doğru şekilde stratifiye etmek amacıyla belirli bir sıra izler.\n\nİlk Basamak — TSH ve Ultrasonografi: Palpabl VEYA rastlantısal (başka bir amaçla yapılan görüntülemede tesadüfen) saptanan HER tiroid nodülünde ilk adım Serum TSH ölçümü ve Tiroid USG'dir. Bu iki tetkik birlikte, nodülün fonksiyonel durumunu (TSH) ve morfolojik özelliklerini (USG) değerlendirerek sonraki adımların yönünü belirler.\n\nTSH sonucuna göre iki farklı yol izlenir:\n- TSH Düşükse: Nodül 'sıcak' (hiperfonksiyonel/otonom) olabilir. Bu durumda Tiroid Sintigrafisi istenir — sintigrafi, nodülün radyoaktif izotop tutup tutmadığını gösterir. Sıcak nodüllerin malignite riski ÇOK DÜŞÜKTÜR, bu nedenle biyopsi GENELLİKLE GEREKMEZ.\n- TSH Normal/Yüksekse: Bu durumda sintigrafiye gerek yoktur; USG özelliklerine göre biyopsi (İİAB) kararı verilir — yani ACR TI-RADS skorlaması ve nodül boyutu değerlendirilerek biyopsi endikasyonu belirlenir.\n\nBu algoritmanın mantığı, TSH düşüklüğünün (baskılanmasının) nodülün otonom fonksiyon gösterdiğine işaret etmesidir — otonom/hiperfonksiyonel nodüller neredeyse hiçbir zaman kötü huylu değildir, çünkü malign tiroid hücreleri tipik olarak normal tiroid hormon sentez/salgılama makinesini kaybeder. Bu nedenle TSH düşük bir hastada doğrudan biyopsiye gitmek yerine önce sintigrafi ile nodülün 'sıcak' olduğunu doğrulamak, gereksiz bir invaziv işlemi önler.\n\nBuna karşılık TSH normal veya yüksek olan bir hastada nodülün fonksiyonel otonomisi yoktur (yani TSH'nin baskılanmasına neden olacak kadar aktif hormon üretmiyor); bu durumda malignite riskini belirleyen asıl faktör USG morfolojisidir (ACR TI-RADS skorlaması) ve biyopsi kararı bu skorlamaya göre verilir. Bu iki yollu algoritma (TSH düşükse sintigrafi, TSH normal/yüksekse USG+TI-RADS ile biyopsi kararı), gereksiz biyopsileri önlerken malignite riski taşıyan nodülleri doğru şekilde yakalamayı amaçlar.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Palpabl veya rastlantısal saptanan her tiroid nodülünde ilk adım Serum TSH ölçümü ve Tiroid USG'dir.",
+        "B": "YANLIŞ — Doğrudan İİAB'a gitmek algoritmayı atlar; önce TSH ve USG ile fonksiyonel/morfolojik değerlendirme yapılmalı, biyopsi kararı bu sonuçlara göre verilmelidir.",
+        "C": "YANLIŞ — Sintigrafi yalnızca TSH DÜŞÜK olduğunda istenir; TSH normal/yüksekse sintigrafiye gerek yoktur, USG+TI-RADS'a göre biyopsi kararı verilir.",
+        "D": "YANLIŞ — Tiroidektomi kararı ancak biyopsi sonucuna (Bethesda kategorisi) göre, tanısal algoritmanın çok ilerisinde bir aşamada verilir; ilk adım değildir.",
+        "E": "YANLIŞ — Tiroglobulin ölçümü tiroidektomi SONRASI takip amaçlı kullanılan bir tümör markırıdır, ilk tanısal değerlendirme adımı değildir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid nodülü",
+        "TSH",
+        "ultrasonografi",
+        "tanı algoritması"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Nodüllerine Yaklaşım ve TI-RADS"
+    },
+    {
+      "id": "s2",
+      "metin": "ACR TI-RADS skorlama sistemine göre, bir tiroid nodülünün malignite şüphesini ARTIRAN ultrasonografik özellikler arasında hangisi YER ALMAZ?",
+      "secenekler": {
+        "A": "Noktasal ekojenik odaklar (mikrokalsifikasyonlar).",
+        "B": "Nodülün belirgin şekilde hiperekoik (parlak) olması.",
+        "C": "Çok hipoekoik olması.",
+        "D": "'Genişliğinden daha uzun' (taller-than-wide) şekil göstermesi.",
+        "E": "Ekstratiroidal yayılım veya düzensiz sınırlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ACR TI-RADS'ta malignite şüphesini artıran özellikler çok hipoekoik olma, taller-than-wide şekil, düzensiz sınır/ekstratiroidal yayılım ve mikrokalsifikasyonlardır (her biri +3 puan); hiperekoik olma bu kriterler arasında değildir.",
+      "aciklama_detay": "ACR TI-RADS (American College of Radiology Thyroid Imaging Reporting and Data System), tiroid nodüllerinin ultrasonografik özelliklerine göre 1 ile 5 arasında puanlandığı standardize bir biyopsi gereklilik skorlama sistemidir. Bu sistem, her ultrasonografik kategoride en şüpheli özelliğe göre puan verilerek toplam bir skor oluşturulmasına dayanır.\n\nMalignite şüphesini artıran (yüksek puanlı) bulgular şunlardır:\n- Ekojenite: Çok hipoekoik olması (+3 puan) — nodülün çevre tiroid dokusundan belirgin şekilde daha koyu (düşük ekojenite) görünmesi, malignite riskini artıran bir özelliktir.\n- Şekil: 'Genişliğinden daha uzun' (Taller-than-wide) olması (+3 puan) — yani nodülün anteroposterior çapının transvers çapından büyük olması (yuvarlak/oval değil, dik/vertikal büyüme paterni), malign nodüllerde daha sık görülür çünkü bu, nodülün doku planlarını 'aşarak' büyüdüğünü düşündürür.\n- Kenar: Ekstratiroidal yayılım veya düzensiz sınırlar (+3 puan) — düzgün, iyi sınırlı bir nodül genellikle benigndir; düzensiz, spiküle veya çevre dokuya invazyon gösteren sınırlar maligniteyi düşündürür.\n- Odaklar: Noktasal ekojenik odaklar/mikrokalsifikasyonlar (+3 puan) — özellikle papiller tiroid kanserinde görülen psammom cisimciklerinin ultrasonografik karşılığı olabilir.\n\nBu dört kritere ek olarak kompozisyon (kistik vs solid) de skorlamaya dahildir, ancak yukarıdaki dört özellik en yüksek şüphe puanını taşıyan (+3'er puan) özelliklerdir.\n\nHiperekoik (parlak, çevre dokudan daha açık) görünüm ise bu listede YER ALMAZ ve genel olarak malignite şüphesini artıran bir özellik olarak tanımlanmamıştır — TI-RADS ekojenite skalasında anekoik/kistik en düşük risk, hiperekoik/izoekoik orta düzey risk, hipoekoik ve özellikle 'çok hipoekoik' en yüksek risk olarak sıralanır. Bu nedenle bir nodülün hiperekoik olması, kanonik metinde tanımlanan 'malignite şüphesini artıran' spesifik dört kritere dahil değildir.\n\nBu skorlama sisteminin klinik kullanımı, elde edilen toplam puana göre nodülün TR1'den (benign) TR5'e (yüksek şüpheli) kadar bir kategoriye yerleştirilmesi ve bu kategoriye göre (nodül boyutuyla birlikte) biyopsi endikasyonunun belirlenmesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ (bu bir TI-RADS kriteridir) — Mikrokalsifikasyonlar, +3 puan ile malignite şüphesini artıran tanımlanmış bir özelliktir.",
+        "B": "DOĞRU (istenen cevap — YER ALMAYAN özellik) — Hiperekoik olma, TI-RADS'ta tanımlanan malignite şüphesini artıran dört özellik (hipoekoik, taller-than-wide, düzensiz sınır, mikrokalsifikasyon) arasında yer almaz.",
+        "C": "YANLIŞ (bu bir TI-RADS kriteridir) — Çok hipoekoik olma, +3 puan ile malignite şüphesini artıran tanımlanmış bir özelliktir.",
+        "D": "YANLIŞ (bu bir TI-RADS kriteridir) — Taller-than-wide şekil, +3 puan ile malignite şüphesini artıran tanımlanmış bir özelliktir.",
+        "E": "YANLIŞ (bu bir TI-RADS kriteridir) — Ekstratiroidal yayılım/düzensiz sınırlar, +3 puan ile malignite şüphesini artıran tanımlanmış bir özelliktir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid nodülü",
+        "TI-RADS",
+        "ultrasonografi",
+        "malignite riski"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Nodüllerine Yaklaşım ve TI-RADS"
+    },
+    {
+      "id": "s3",
+      "metin": "ACR TI-RADS kategorilerine göre biyopsi (İİAB) endikasyon eşikleri ile ilgili hangi eşleştirme DOĞRUDUR?",
+      "secenekler": {
+        "A": "1 cm altındaki tüm nodüllere, TI-RADS kategorisinden bağımsız olarak her zaman biyopsi yapılmalıdır.",
+        "B": "TR4 kategorisinde biyopsi eşiği ≥2.5 cm'dir.",
+        "C": "TR3 (hafif şüpheli) ≥2.5 cm; TR4 (orta şüpheli) ≥1.5 cm; TR5 (yüksek şüpheli) ≥1.0 cm.",
+        "D": "TR3, TR4 ve TR5 kategorilerinin hepsinde biyopsi eşiği aynıdır (≥1.0 cm).",
+        "E": "TR5 kategorisinde biyopsi eşiği TR3'ten daha yüksek boyuttur (TR5 ≥2.5 cm, TR3 ≥1.0 cm)."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "İİAB eşikleri TI-RADS kategorisine göre farklılaşır: TR3 (hafif şüpheli) ≥2.5 cm, TR4 (orta şüpheli) ≥1.5 cm, TR5 (yüksek şüpheli) ≥1.0 cm ise biyopsi endikedir — kategori 'şüphe düzeyi' arttıkça biyopsi için gereken minimum boyut eşiği küçülür.",
+      "aciklama_detay": "Her nodüle biyopsi yapılmaz — İİAB (ince iğne aspirasyon biyopsisi) endikasyonu, ACR TI-RADS kategorisi ile nodül boyutunun BİRLİKTE değerlendirilmesine dayanan bir eşik sistemine göre belirlenir.\n\nACR TI-RADS'a göre İİAB eşikleri:\n- TR3 (Hafif Şüpheli): ≥2.5 cm ise biyopsi endikedir.\n- TR4 (Orta Şüpheli): ≥1.5 cm ise biyopsi endikedir.\n- TR5 (Yüksek Şüpheli): ≥1.0 cm ise biyopsi endikedir.\n\nBu eşik sisteminin mantığı açıktır: nodülün ultrasonografik şüphe düzeyi (TI-RADS kategorisi) YÜKSELDİKÇE, biyopsi için gereken MİNİMUM BOYUT EŞİĞİ DÜŞER. Yani TR5 (en şüpheli görünüm) kategorisindeki bir nodülde, çok daha küçük bir boyutta (≥1.0 cm) dahi biyopsi endikasyonu doğarken; TR3 (daha az şüpheli görünüm) kategorisindeki bir nodülde biyopsi için daha büyük bir boyuta (≥2.5 cm) ulaşması beklenir. Bu, düşük şüpheli küçük nodüllerde gereksiz invaziv işlemi önlerken, yüksek şüpheli nodüllerde küçük boyutta bile erken tanıyı önceliklendiren akılcı bir stratejidir.\n\nÖnemli bir istisna kuralı da tanımlanmıştır: 1 cm ALTINDAKİ nodüllere, ÇOK YÜKSEK RİSKLİ özellikler (invazyon vb.) YOKSA GENELLİKLE biyopsi ÖNERİLMEZ — yani TR5 kategorisinde bile olsa, 1 cm'nin altındaki bir nodülde biyopsi rutin olarak yapılmaz, ancak ekstratiroidal invazyon gibi çok yüksek riskli ek bulgular varsa bu kural esnek bir şekilde değerlendirilebilir.\n\nBu eşik sisteminin klinik uygulaması şu şekilde işler: örneğin 1.8 cm boyutunda bir nodül TR4 kategorisindeyse (≥1.5 cm eşiğini aştığı için) biyopsi endikedir; aynı boyuttaki (1.8 cm) bir nodül TR3 kategorisindeyse (2.5 cm eşiğinin altında kaldığı için) biyopsi endike DEĞİLDİR, izlem önerilir. Bu, aynı fiziksel boyuttaki iki nodülün, yalnızca ultrasonografik morfolojik özelliklerine (TI-RADS kategorisine) göre farklı yönetim kararlarına yol açabileceğini gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 1 cm altındaki nodüllere, çok yüksek riskli özellikler yoksa GENELLİKLE biyopsi ÖNERİLMEDİĞİNİ belirtir; 'her zaman biyopsi' ifadesi yanlıştır.",
+        "B": "YANLIŞ — TR4 kategorisinde eşik ≥1.5 cm'dir, ≥2.5 cm değildir; ≥2.5 cm eşiği TR3 kategorisine aittir.",
+        "C": "DOĞRU — TR3 ≥2.5 cm, TR4 ≥1.5 cm, TR5 ≥1.0 cm eşikleri kanonik metinde tanımlanan İİAB endikasyon kriterleridir; şüphe düzeyi arttıkça eşik boyutu küçülür.",
+        "D": "YANLIŞ — Eşikler kategoriye göre FARKLIDIR (TR3: 2.5 cm, TR4: 1.5 cm, TR5: 1.0 cm), aynı değildir.",
+        "E": "YANLIŞ — Tam tersi doğrudur: TR5 (yüksek şüpheli) daha DÜŞÜK bir eşiğe (≥1.0 cm) sahiptir, TR3 (hafif şüpheli) daha YÜKSEK bir eşiğe (≥2.5 cm) sahiptir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid nodülü",
+        "TI-RADS",
+        "İİAB",
+        "biyopsi endikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Nodüllerine Yaklaşım ve TI-RADS"
+    },
+    {
+      "id": "s4",
+      "metin": "Tiroid nodülü biyopsisi sonucu Bethesda Sistemi'ne göre Kategori III (AUS/FLUS — Belirsiz Önemi Olan Atipi/Foliküler Lezyon) olarak raporlanan bir hastada bir sonraki adım ne olmalıdır?",
+      "secenekler": {
+        "A": "Doğrudan tiroidektomi, başka hiçbir ara adım gerekmeden.",
+        "B": "Tekrar İİAB, çünkü bu kategori 'tanısız/yetersiz' anlamına gelir.",
+        "C": "Radyoaktif iyot tedavisi doğrudan başlanır.",
+        "D": "Moleküler test veya cerrahi değerlendirme.",
+        "E": "Klinik izlem yeterlidir, ek işlem gerekmez (Kategori II'deki gibi yönetilir)."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Bethesda Kategori III/IV (Belirsiz — AUS/FLUS veya Foliküler Neoplazi), moleküler test veya cerrahi değerlendirme gerektirir; bu kategori 'benign' (izlem) ile 'malign şüpheli' (cerrahi) arasında ara bir belirsizlik grubunu temsil eder.",
+      "aciklama_detay": "Sitolojik Değerlendirme — Bethesda Sistemi, tiroid İİAB sonuçlarının standardize edilmiş şekilde raporlanmasını sağlayan altı kategorili bir sınıflandırma sistemidir ve her kategori kendine özgü bir yönetim algoritmasına bağlanır:\n\n- Kategori I (Tanısız/Yetersiz): Örnek sitolojik değerlendirme için yeterli değildir. Yönetim: Tekrar İİAB.\n- Kategori II (Benign): Sıklıkla kolloidal nodül. Yönetim: Klinik izlem — biyopsi tekrarlanmaz, periyodik USG takibi yeterlidir.\n- Kategori III/IV (Belirsiz — AUS/FLUS / Foliküler Neoplazi): Sitolojik örnekte kesin benign veya malign tanı konulamayan, ARA bir belirsizlik durumu. Yönetim: Moleküler test VEYA cerrahi değerlendirme.\n- Kategori V/VI (Malignite Şüphesi / Malign): Yönetim: Cerrahi (Tiroidektomi).\n\nBu hastadaki senaryoda (Kategori III, AUS/FLUS), yönetim ne 'kesin benign' (izlem) ne de 'kesin malign' (doğrudan cerrahi) kategorisine girer — bu, Bethesda sisteminin tam da 'belirsizlik' için tasarlanmış ara kategorisidir. Bu kategoride önerilen iki yaklaşımdan biri moleküler testtir: bu testler, nodülün hücresel/genetik profilini inceleyerek (örneğin BRAF, RAS gibi onkogen mutasyonlarının varlığını araştırarak) malignite olasılığını daha kesin bir şekilde belirlemeye çalışır ve bu şekilde gereksiz cerrahiyi önleyebilir ya da cerrahi kararını güçlendirebilir. Diğer seçenek ise doğrudan cerrahi değerlendirmedir — özellikle moleküler test erişilebilir değilse veya klinik/USG bulguları şüpheyi zaten güçlendiriyorsa, hasta doğrudan cerrahi konsültasyonuna yönlendirilebilir.\n\nBu belirsiz kategorinin klinik önemi, tiroid nodülü yönetiminde 'siyah-beyaz' bir karar mekanizması olmadığını, gri alanın (belirsiz sitoloji) da standart bir algoritmayla yönetildiğini göstermesidir. Kategori I ile karıştırılmamalıdır: Kategori I 'yetersiz örnek' anlamına gelir ve çözüm basitçe biyopsiyi TEKRARLAMAKTIR; Kategori III/IV ise 'yeterli örnek alındı ama sonuç belirsiz' anlamına gelir ve çözüm biyopsiyi tekrarlamak değil, ek bir tanısal katman (moleküler test) veya doğrudan cerrahi karardır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Doğrudan tiroidektomi (ara adım olmadan), Kategori V/VI (Malignite Şüphesi/Malign) için önerilen yönetimdir; Kategori III'te önce moleküler test veya cerrahi DEĞERLENDİRME (yani karar süreci) önerilir.",
+        "B": "YANLIŞ — Tekrar İİAB, Kategori I (Tanısız/Yetersiz) için önerilen yönetimdir; Kategori III 'belirsiz' anlamına gelir, 'yetersiz/tanısız' değildir — bu iki kategori karıştırılmamalıdır.",
+        "C": "YANLIŞ — Radyoaktif iyot tedavisi, kanonik metinde diferansiye tiroid kanseri CERRAHİSİ sonrası uygulanan bir tedavidir; Bethesda III kategorisinde doğrudan uygulanan bir ilk adım değildir.",
+        "D": "DOĞRU — Bethesda Kategori III/IV (Belirsiz) için önerilen yönetim moleküler test veya cerrahi değerlendirmedir.",
+        "E": "YANLIŞ — Klinik izlem, Kategori II (Benign) için önerilen yönetimdir; Kategori III belirsiz bir kategoridir ve yalnızca izlemle yönetilmez, ek değerlendirme gerektirir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid nodülü",
+        "Bethesda sistemi",
+        "sitoloji",
+        "AUS/FLUS"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Nodüllerine Yaklaşım ve TI-RADS"
+    },
+    {
+      "id": "s5",
+      "metin": "Tiroid sintigrafisinde radyoaktif izotop tutulumu göstermeyen ('soğuk') bir nodül ile, tutulum gösteren ('sıcak') bir nodülün malignite riski karşılaştırıldığında hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Sıcak nodüllerin malignite riski soğuk nodüllerden daha yüksektir.",
+        "B": "Sintigrafi tutulumu ile malignite riski arasında hiçbir ilişki gösterilmemiştir.",
+        "C": "Soğuk nodüllerin malignite riski %50'nin üzerindedir, yani soğuk nodüllerin çoğu malign kabul edilir.",
+        "D": "Sıcak nodüller yalnızca TSH normal olduğunda benign kabul edilir, TSH düşükse malignite riski taşırlar.",
+        "E": "Soğuk nodüller malignite riski taşır (%5-10), sıcak (hiperfonksiyonel) nodüller ise neredeyse daima benign karakterdedir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sintigrafide tutulumun olmaması (soğuk nodül) malignite riskini artırırken (%5-10), hiperfonksiyonel (sıcak) nodüller neredeyse daima benign karakterdedir.",
+      "aciklama_detay": "Tiroid sintigrafisi, TSH düşük (baskılı) olan hastalarda tanısal algoritmanın bir parçası olarak istenir ve nodülün radyoaktif izotop (genellikle Teknesyum-99m veya İyot-123) tutup tutmadığını görüntüler. Bu tutulum durumu, nodülün fonksiyonel/hormonal aktivitesini yansıtır ve malignite riskiyle güçlü bir ters ilişki içindedir.\n\nSıcak Nodül (Hiperfonksiyonel): Sintigrafide radyoaktif izotopu tutan, yani çevre tiroid dokusundan DAHA FAZLA aktivite gösteren nodül 'sıcak' olarak tanımlanır. Sıcak nodüller neredeyse daima BENİGN karakterdedir. Bu, malign tiroid hücrelerinin genellikle normal tiroid hormon sentez ve iyot tutma makinesini (Na/I simporter fonksiyonu dahil) kaybetmiş olmasıyla açıklanır — bir hücre kanserleştiğinde, genellikle diferansiye fonksiyonunu (iyot tutma, hormon üretme) kaybeder, bu nedenle otonom olarak aşırı aktif (sıcak) bir nodülün malign olma olasılığı çok düşüktür.\n\nSoğuk Nodül: Sintigrafide tutulumun OLMAMASI (soğuk nodül), malignite riskini ARTIRIR (%5-10 oranında). Bu, soğuk bir nodülün 'her zaman malign' olduğu anlamına gelmez — soğuk nodüllerin büyük çoğunluğu (%90-95) yine benigndir (örn. kolloidal nodül, kist) — ancak soğuk kategori, sıcak kategoriye kıyasla belirgin şekilde daha yüksek bir malignite olasılığı taşır ve bu nedenle soğuk nodüllerde (TSH normal/yüksek grup üzerinden) USG+TI-RADS değerlendirmesi ve gerekirse biyopsi ile ileri tetkik gerekir.\n\nBu bilginin klinik algoritmadaki yeri netleşir: TSH düşük olan bir hastada sintigrafi istenmesinin amacı, nodülün 'sıcak' olduğunu doğrulayarak (ve böylece düşük TSH'nin bu otonom nodülden kaynaklandığını göstererek) gereksiz bir biyopsiyi önlemektir. Eğer sintigrafide nodül sıcak çıkarsa, klinisyen rahatlıkla izlem veya (semptomatik hipertiroidi varsa) tedaviye yönelebilir; biyopsiye gerek kalmaz. Ancak TSH düşük olduğu halde sintigrafide nodül soğuk çıkarsa (nadir ama önemli bir senaryo — bu durumda TSH düşüklüğünün kaynağı başka bir mekanizma olabilir), bu durumda standart biyopsi algoritmasına (TI-RADS'a göre) dönülmelidir.\n\nBu %5-10'luk soğuk nodül malignite oranı ile TI-RADS TR5 kategorisindeki yüksek şüpheli nodüllerin çok daha yüksek malignite olasılığı (biyopsi endikasyonunun düşük boyut eşiğiyle de örtüşen bir risk düzeyi) birbirinden ayrı, tamamlayıcı risk stratifikasyon araçlarıdır — biri fonksiyonel (sintigrafi), diğeri morfolojik (USG/TI-RADS) değerlendirmeye dayanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Tam tersi doğrudur: sıcak nodüllerin malignite riski soğuk nodüllerden çok daha DÜŞÜKTÜR (neredeyse daima benign).",
+        "B": "YANLIŞ — Kanonik metin sintigrafi tutulumu ile malignite riski arasında AÇIK bir ilişki tanımlar (soğuk = %5-10 risk, sıcak = neredeyse daima benign); ilişkisiz olduğu iddiası yanlıştır.",
+        "C": "YANLIŞ — Soğuk nodüllerin malignite riski %5-10 civarındadır, %50'nin üzerinde değildir; soğuk nodüllerin ÇOĞUNLUĞU yine benigndir, yalnızca risk sıcak nodüllere göre görece daha yüksektir.",
+        "D": "YANLIŞ — Sintigrafi ile 'sıcak' olduğu doğrulanan bir nodül, TSH düzeyinden bağımsız olarak (sintigrafinin kendisi zaten TSH düşük olan hastalarda istendiği için) benign kabul edilir; TSH düşüklüğü sıcak nodülün beklenen bir sonucudur, ek malignite riski oluşturmaz.",
+        "E": "DOĞRU — Soğuk nodüller malignite riski taşır (%5-10), sıcak (hiperfonksiyonel) nodüller ise neredeyse daima benign karakterdedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid nodülü",
+        "sintigrafi",
+        "sıcak nodül",
+        "soğuk nodül"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Nodüllerine Yaklaşım ve TI-RADS"
+    },
+    {
+      "id": "s6",
+      "metin": "Tiroid kanserleri köken aldıkları hücrelere göre sınıflandırıldığında, foliküler hücre kaynaklı (diferansiye) alt tipler arasında en sık görülen ve en iyi prognoza sahip olan hangisidir?",
+      "secenekler": {
+        "A": "Tüm alt tipler eşit sıklıkta görülür, biri diğerinden daha sık değildir.",
+        "B": "Papiller Kanser (%85) — en sık görülen, en iyi prognozlu tip; radyasyon maruziyeti ile ilişkilidir, lenfatik yayılım sıktır.",
+        "C": "Foliküler Kanser (%10) — en sık ve en iyi prognozlu tiptir.",
+        "D": "Anaplastik Kanser (<%1) — en sık görülen tiptir.",
+        "E": "Medüller Kanser (%5) — foliküler hücre kaynaklıdır ve en sık görülen tiptir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Papiller Kanser (%85) foliküler hücre kaynaklı diferansiye tiroid kanserlerinin en sık görülen ve en iyi prognozlu alt tipidir; radyasyon maruziyeti ile ilişkilidir ve lenfatik yayılım sıktır.",
+      "aciklama_detay": "Tiroid kanserleri köken aldıkları hücrelere göre iki ana gruba ayrılır ve bu sınıflandırma, hem prognoz hem tedavi yaklaşımı açısından temel öneme sahiptir.\n\n1. Foliküler Hücre Kaynaklı (Diferansiye) tipler:\n- Papiller Kanser (%85): EN SIK görülen, EN İYİ prognozlu tip. Radyasyon maruziyeti ile ilişkilidir (özellikle çocukluk çağı baş-boyun radyasyonu risk faktörüdür). Lenfatik yayılım sıktır — yani bölgesel lenf nodlarına yayılma eğilimi yüksektir, ancak bu durum bile prognozu çok kötü etkilemez, 10 yıllık sağkalım hâlâ >%95'tir.\n- Foliküler Kanser (%10): Papillerden farklı olarak HEMATOJEN (kan yoluyla) yayılır (kemik, akciğer) — yani lenfatik değil, doğrudan kan dolaşımı yoluyla uzak metastaz yapma eğilimindedir.\n- Anaplastik Kanser (<%1): Çok NADİR ama ÇOK AGRESİF, hızla büyüyen, genellikle kür şansı düşük tip — diferansiye grubun en kötü prognozlu üyesidir.\n\n2. Parafoliküler (C Hücresi) Kaynaklı:\n- Medüller Kanser (%5): Kalsitonin salgılar (C hücreleri normalde kalsitonin üreten hücrelerdir). %25'i AİLESEL (MEN 2A/2B) geçişlidir — bu, medüller kanseri diğer tiroid kanserlerinden ayıran önemli bir genetik özelliktir.\n\nBu yüzdesel dağılım (%85 papiller, %10 foliküler, <%1 anaplastik, %5 medüller), tiroid kanseri ile karşılaşıldığında klinisyenin öncelikle papiller kanseri düşünmesi gerektiğini gösterir — bu hem en sık görülen hem de en iyi prognozlu tip olduğu için, çoğu tiroid kanseri tanısı alan hasta için genel prognoz beklentisi olumludur.\n\nBu dört alt tipin ayırt edici özellikleri (yayılım paterni, prognoz, ilişkili faktörler) yalnızca akademik bir sınıflandırma değil, doğrudan klinik yönetimi de etkiler: papiller/foliküler (diferansiye) kanserlerde radyoaktif iyot (RAİ) ablasyonu etkiliyken, medüller ve anaplastik kanserler iyot TUTMAZ ve RAİ bu tiplerde ETKİSİZDİR — bu, tanı anında histolojik alt tipin doğru belirlenmesinin tedavi planlamasında neden kritik olduğunu gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açık yüzdesel farklılıklar tanımlar (%85, %10, <%1, %5); alt tiplerin eşit sıklıkta olduğu iddiası yanlıştır.",
+        "B": "DOĞRU — Papiller Kanser (%85), foliküler hücre kaynaklı en sık görülen ve en iyi prognozlu tiptir; radyasyon maruziyeti ile ilişkilidir, lenfatik yayılım sıktır.",
+        "C": "YANLIŞ — Foliküler Kanser %10 oranındadır, papiller kanserden (%85) çok daha az sıklıkta görülür; en sık/en iyi prognozlu tip papillerdir.",
+        "D": "YANLIŞ — Anaplastik Kanser <%1 gibi ÇOK NADİR bir oranla görülür; en sık görülen tip değildir, aksine en nadir ve en kötü prognozlu tiptir.",
+        "E": "YANLIŞ — Medüller Kanser (%5), foliküler hücre kaynaklı DEĞİL, PARAFOLİKÜLER (C hücresi) kaynaklıdır; ayrıca en sık görülen tip de değildir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid kanseri",
+        "papiller kanser",
+        "sınıflandırma",
+        "epidemiyoloji"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    },
+    {
+      "id": "s7",
+      "metin": "Papiller tiroid kanserinin karakteristik histopatolojik bulguları ve genetik profili ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Papiller kanserde 10 yıllık sağkalım %50'nin altındadır, kötü prognozlu bir tiptir.",
+        "B": "Psammom cisimcikleri yalnızca medüller kanserde görülür, papiller kanserde görülmez.",
+        "C": "Psammom cisimcikleri (kalsifikasyonlar) ve 'buzlu cam' (Orphan Annie Eye) manzaralı çekirdekler tipiktir; BRAF mutasyonları sıktır ve daha agresif seyirle ilişkili olabilir. 10 yıllık sağkalım >%95'tir.",
+        "D": "Papiller kanserde karakteristik bulgu kalsitonin salgılanmasıdır, RET mutasyonu taranmalıdır.",
+        "E": "Papiller kanser hematojen yayılım gösterir, lenfatik yayılım nadirdir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Papiller tiroid kanserinin karakteristik bulguları psammom cisimcikleri ve 'buzlu cam' (Orphan Annie Eye) çekirdeklerdir; BRAF mutasyonları sıktır ve daha agresif seyirle ilişkilendirilebilir. 10 yıllık sağkalım >%95'tir.",
+      "aciklama_detay": "Papiller Tiroid Kanseri, en sık görülen tiroid kanseri alt tipi olarak (%85) karakteristik histopatolojik ve genetik özellikleriyle tanınır ve bu özellikler YDUS düzeyinde klasik 'imza bulgular' olarak sorulur.\n\nHistopatolojik Karakteristik Bulgular:\n- Psammom cisimcikleri (kalsifikasyonlar): Konsantrik, laminer kalsifiye yapılar; papiller kanserin patognomonik denilebilecek bir bulgusudur.\n- 'Buzlu cam' manzaralı çekirdekler ('Orphan Annie Eye' çekirdekleri): Nükleer kromatinin açık, boş/buzlu cam görünümü sergilemesi — bu isimlendirme, çizgi film karakteri Orphan Annie'nin boş, pupilsiz göz görünümüne benzetilmesinden gelir ve papiller kanserin tanısında en klasik mikroskobik bulgudur.\n\nPrognoz: 10 yıllık sağkalım >%95'tir — bu, papiller kanserin neden 'en iyi prognozlu' tip olarak tanımlandığını sayısal olarak gösterir. Lenfatik yayılım sık olsa da (bölgesel lenf nodu tutulumu), bu durum genel sağkalımı dramatik şekilde kötüleştirmez.\n\nGenetik Profil: BRAF mutasyonları SIKTIR ve DAHA AGRESİF seyirle ilişkili OLABİLİR. BRAF (özellikle V600E varyantı), papiller tiroid kanserinde en sık saptanan somatik mutasyondur ve bazı çalışmalarda BRAF pozitif tümörlerin daha yüksek nüks riski, ekstratiroidal yayılım eğilimi ve radyoaktif iyot direncine sahip olabileceği gösterilmiştir — yani BRAF durumu, aynı 'papiller kanser' tanısı içinde bile prognostik bir alt-stratifikasyon aracı olarak değerlendirilebilir.\n\nBu bulgular papiller kanseri diğer tiroid kanseri tiplerinden ayırt eder: kalsitonin salgılanması ve RET mutasyonu taraması MEDÜLLER kanserin karakteristiğidir (parafoliküler C hücresi kaynaklı), papiller kanserin değil. Hematojen (kan yoluyla) yayılım FOLİKÜLER kanserin daha karakteristik özelliğidir; papiller kanser öncelikle lenfatik yolla yayılır. Bu üç ayrımı (papiller: psammom cisimcikleri+buzlu cam çekirdek+lenfatik yayılım+iyi prognoz; foliküler: hematojen yayılım; medüller: kalsitonin+RET+MEN ilişkisi) net şekilde birbirinden ayırmak, tiroid kanseri alt tiplerini sorgulayan sınav sorularında kritik önem taşır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Papiller kanserde 10 yıllık sağkalım >%95 gibi çok YÜKSEK bir orandır, %50'nin altında değildir; papiller kanser EN İYİ prognozlu tiptir.",
+        "B": "YANLIŞ — Psammom cisimcikleri PAPİLLER kanserin karakteristik histopatolojik bulgusudur; medüller kanserde tanımlanan spesifik bir bulgu değildir.",
+        "C": "DOĞRU — Psammom cisimcikleri ve buzlu cam çekirdekler papiller kanserin karakteristik bulgularıdır; BRAF mutasyonları sık ve daha agresif seyirle ilişkilidir; 10 yıllık sağkalım >%95'tir.",
+        "D": "YANLIŞ — Kalsitonin salgılanması ve RET mutasyonu taraması MEDÜLLER kanserin karakteristik özellikleridir, papiller kanserin değil.",
+        "E": "YANLIŞ — Papiller kanserde LENFATİK yayılım sıktır; HEMATOJEN yayılım daha çok FOLİKÜLER kanserin karakteristik özelliğidir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid kanseri",
+        "papiller kanser",
+        "BRAF",
+        "histopatoloji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    },
+    {
+      "id": "s8",
+      "metin": "Medüller Tiroid Kanseri (MTK) tanısı alan bir hastada cerrahi planlanmadan ÖNCE mutlaka yapılması gereken tarama nedir ve bunun gerekçesi nedir?",
+      "secenekler": {
+        "A": "Radyoaktif iyot tutulum testi yapılmalıdır çünkü MTK iyot tutan bir tümördür.",
+        "B": "Tiroglobulin düzeyi ölçülmelidir çünkü MTK'nın tümör markırı tiroglobulindir.",
+        "C": "Papiller kanser taraması için BRAF mutasyon testi yapılmalıdır.",
+        "D": "Feokromositoma açısından tarama yapılmalıdır; MTK'nın %25'i ailesel (MEN 2A/2B) geçişlidir ve MEN 2 sendromunda feokromositoma birlikteliği görülebilir — tanınmamış bir feokromositoma cerrahi sırasında hipertansif krize yol açabilir.",
+        "E": "Yalnızca serum kalsiyum düzeyi ölçülür, başka bir tarama gerekmez."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MTK cerrahisinden önce hasta mutlaka Feokromositoma (MEN 2 birlikteliği) açısından taranmalıdır; MTK'nın %25'i ailesel (MEN 2A/2B) geçişlidir ve tanınmamış bir feokromositoma cerrahi stres altında hayatı tehdit eden hipertansif krize yol açabilir.",
+      "aciklama_detay": "Medüller Tiroid Kanseri (MTK), tiroid kanserlerinin %5'ini oluşturan, parafoliküler C hücrelerinden köken alan ve kalsitonin salgılayan bir alt tiptir. MTK'nın klinik yönetimi, diğer tiroid kanseri tiplerinden farklı, genetik/sendromik bir boyut taşır.\n\nGenetik Tarama Zorunluluğu: MTK saptanan HER hastada RET proto-onkogen mutasyonu taranmalıdır — çünkü %25'i AİLESEL (MEN 2A/2B) geçişlidir. Bu, sporadik görünen bir MTK vakasının dahi altta yatan bir germline RET mutasyonuna bağlı olabileceği ve bu durumun hem hastanın kendi ek endokrin tümör riskini hem de ailesinin genetik risk profilini etkileyebileceği anlamına gelir.\n\nCerrahi Öncesi Kritik Tarama — Feokromositoma: MTK cerrahisinden ÖNCE hasta MUTLAKA Feokromositoma (MEN 2 birlikteliği) açısından TARANMALIDIR. Bu, kanonik metinde 'Klinik İnci' olarak özellikle vurgulanan bir güvenlik önlemidir. Gerekçesi şudur: MEN 2A ve MEN 2B sendromları, MTK ile birlikte feokromositoma (adrenal medulladan köken alan, katekolamin salgılayan bir tümör) birlikteliği gösterebilir. Eğer bu feokromositoma TANINMADAN hasta tiroidektomi cerrahisine alınırsa, cerrahi stres (anestezi indüksiyonu, cerrahi manipülasyon) tanınmamış feokromositomayı katekolamin salınımını tetikleyerek HAYATİ TEHLİKE OLUŞTURAN bir hipertansif krize yol açabilir — bu, önlenebilir ama tanınmadığında ölümcül olabilecek bir cerrahi komplikasyondur.\n\nTakip Parametreleri: MTK takibinde Serum Kalsitonin ve CEA (karsinoembriyonik antijen) düzeyleri kullanılır — bunlar MTK'nın kendi tümör markırlarıdır (papiller/foliküler kanserde kullanılan Tiroglobulin'den farklıdır, çünkü MTK parafoliküler kaynaklıdır ve tiroglobulin salgılamaz).\n\nRAİ ve İyot İlişkisi: MTK, medüller ve anaplastik kanserler kategorisinde olduğu için İYOT TUTMAZ, RAİ (radyoaktif iyot) tedavisi bu tipte ETKİSİZDİR — bu nedenle radyoaktif iyot tutulum testi de tanı/tedavi amaçlı kullanılmaz.\n\nBu vakadaki doğru yaklaşım özetle: MTK tanısı → RET mutasyon taraması (genetik) VE feokromositoma taraması (cerrahi güvenlik) → feokromositoma varsa ÖNCE onun tedavisi (adrenalektomi veya alfa-blokaj) → SONRA tiroidektomi. Bu sıralama, cerrahi sırasında önlenebilir bir ölümcül komplikasyonu engellemek için kritik öneme sahiptir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — MTK iyot TUTMAYAN bir tümördür (medüller ve anaplastik kanserler RAİ'ye dirençlidir); radyoaktif iyot tutulum testi MTK'da anlamlı bir tanı/tedavi aracı değildir.",
+        "B": "YANLIŞ — MTK'nın tümör markırı Tiroglobulin DEĞİL, Kalsitonin ve CEA'dır; tiroglobulin diferansiye (papiller/foliküler) kanserlerin takip markırıdır.",
+        "C": "YANLIŞ — BRAF mutasyon testi papiller kanserle ilişkilidir; MTK'da taranması gereken genetik belirteç RET proto-onkogenidir, BRAF değil.",
+        "D": "DOĞRU — MTK cerrahisinden önce hasta mutlaka feokromositoma açısından taranmalıdır; MEN 2 birlikteliğinde tanınmamış feokromositoma cerrahi sırasında hipertansif krize yol açabilir.",
+        "E": "YANLIŞ — Serum kalsiyum ölçümü tek başına yeterli bir tarama değildir; kritik olan feokromositoma taramasıdır (katekolamin/metanefrin ölçümü), kalsiyum bu spesifik güvenlik endişesini karşılamaz."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid kanseri",
+        "medüller tiroid kanseri",
+        "feokromositoma",
+        "MEN2",
+        "RET mutasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    },
+    {
+      "id": "s9",
+      "metin": "Papiller tiroid kanseri nedeniyle total tiroidektomi ve radyoaktif iyot (RAİ) ablasyonu uygulanmış bir hastanın takibinde hangi tümör markırı kullanılır ve bu markırın yorumlanmasında hangi tuzağa dikkat edilmelidir?",
+      "secenekler": {
+        "A": "Serum Tiroglobulin (Tg) kullanılır; Tg düzeyinin yükselmesi nüksü gösterir, ancak Anti-Tg antikorları varlığında Tg ölçümü yanıltıcı olabilir.",
+        "B": "Serum Kalsitonin kullanılır, çünkü bu diferansiye tiroid kanserlerinin standart tümör markırıdır.",
+        "C": "CEA (karsinoembriyonik antijen) tek başına yeterlidir, Tiroglobulin ölçümüne gerek yoktur.",
+        "D": "Tiroglobulin ölçümü Anti-Tg antikoru varlığından etkilenmez, her koşulda güvenilir bir sonuç verir.",
+        "E": "Takipte hiçbir tümör markırı kullanılmaz, yalnızca fizik muayene yeterlidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Total tiroidektomi ve RAİ sonrası Serum Tiroglobulin (Tg) 'tümör markırı' olarak kullanılır; Tg düzeyinin yükselmesi nüksü gösterir. Ancak Anti-Tg antikorları varlığında Tg ölçümü yanıltıcı (güvenilmez) olabilir.",
+      "aciklama_detay": "Diferansiye tiroid kanserlerinin (papiller/foliküler) tedavisi üç aşamalı bir protokole dayanır: Cerrahi (total veya subtotal tiroidektomi ± lenf nodu metastazı varsa boyun disseksiyonu), Radyoaktif İyot (RAİ) Ablasyonu (cerrahi sonrası kalıntı dokuyu veya mikroskobik metastazları yok etmek için) ve TSH Supresyonu (Levotiroksin ile nüksü önlemek için TSH'nin baskılanması, genellikle <0.1 mU/L).\n\nBu tedavi tamamlandıktan sonra hastanın uzun dönem TAKİBİ için kullanılan araç Serum Tiroglobulin (Tg)'dir. Tiroglobulin, normal tiroid folikül hücreleri ve diferansiye tiroid kanseri hücreleri tarafından üretilen bir proteindir. Total tiroidektomi ve RAİ ablasyonu sonrası, teorik olarak vücutta tiroglobulin üretebilecek doku kalmamalıdır (hem normal hem malign tiroid dokusu yok edilmiştir) — bu nedenle bu aşamadan sonra saptanabilir Tg düzeyi, rezidüel veya nüks eden tiroid kanseri dokusunun varlığına işaret eder. Bu mantıkla, Tg düzeyinin YÜKSELMESİ nüksü GÖSTERİR ve bu, diferansiye tiroid kanseri takibinin temel taşıdır.\n\nAncak bu ölçümün önemli bir TUZAĞI vardır: Anti-Tg antikorları (tiroglobuline karşı gelişen otoantikorlar) VARLIĞINDA Tg ölçümü YANILTICI olabilir. Anti-Tg antikorları, laboratuvar ölçüm yöntemine (genellikle immünoassay) girişim yaparak Tg düzeyinin OLDUĞUNDAN DÜŞÜK ölçülmesine (yalancı düşük Tg) neden olabilir — yani gerçekte nüks eden bir tümör dokusu olsa bile, Anti-Tg antikorları varsa Tg düzeyi 'yanlışlıkla normal/düşük' çıkabilir ve nüks GÖZDEN KAÇABİLİR. Bu nedenle her Tg ölçümüyle BİRLİKTE Anti-Tg antikor düzeyinin de ölçülmesi standart pratiktir — eğer Anti-Tg pozitifse, Tg sonucu güvenilmez kabul edilmeli ve takip için alternatif yöntemler (örn. görüntüleme, Anti-Tg trendinin kendisinin izlenmesi) daha ağırlıklı değerlendirilmelidir.\n\nBu markır sistemi, medüller kanserin takip markırlarından (Kalsitonin ve CEA) tamamen farklıdır — çünkü medüller kanser parafoliküler C hücresi kaynaklıdır ve tiroglobulin üretmez; Tg yalnızca foliküler hücre kaynaklı (papiller/foliküler) diferansiye kanserlerin takibinde anlamlıdır. Bu ayrım, hangi tümör markırının hangi kanser tipinde kullanılacağını doğru eşleştirmek açısından kritik bir sınav noktasıdır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Serum Tiroglobulin (Tg) diferansiye tiroid kanseri takibinde kullanılır; Tg yükselmesi nüksü gösterir, ancak Anti-Tg antikorları varlığında ölçüm yanıltıcı olabilir.",
+        "B": "YANLIŞ — Kalsitonin, MEDÜLLER tiroid kanserinin tümör markırıdır, diferansiye (papiller/foliküler) tiroid kanserlerinin standart markırı değildir.",
+        "C": "YANLIŞ — CEA, medüller kanserde kalsitoninle birlikte kullanılan bir markırdır; diferansiye tiroid kanseri takibinde standart markır Tiroglobulindir, CEA değil.",
+        "D": "YANLIŞ — Kanonik metin açıkça Anti-Tg antikorları varlığında Tg ölçümünün YANILTICI olabileceğini belirtir; 'her koşulda güvenilir' ifadesi bu bilgiyle doğrudan çelişir.",
+        "E": "YANLIŞ — Serum Tiroglobulin özellikle bu amaçla ('tümör markırı' olarak) kullanılır; takip yalnızca fizik muayeneyle sınırlı değildir, laboratuvar markır takibi standart pratiğin parçasıdır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid kanseri",
+        "tiroglobulin",
+        "takip",
+        "Anti-Tg antikoru",
+        "diferansiye tiroid kanseri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    },
+    {
+      "id": "s10",
+      "metin": "Diferansiye (papiller/foliküler), medüller ve anaplastik tiroid kanserlerinin radyoaktif iyot (RAİ) tedavisine yanıtı ve TSH supresyon stratejisi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "RAİ, tüm tiroid kanseri tiplerinde (medüller ve anaplastik dahil) eşit derecede etkilidir.",
+        "B": "TSH supresyonu yalnızca medüller kanserde uygulanır, diferansiye kanserlerde gerekli değildir.",
+        "C": "Anaplastik kanser RAİ'ye en iyi yanıt veren tiroid kanseri tipidir.",
+        "D": "Medüller kanserde RAİ birinci basamak tedavidir, cerrahiye gerek yoktur.",
+        "E": "RAİ ablasyonu yalnızca diferansiye (papiller/foliküler) kanserlerde etkilidir; medüller ve anaplastik kanserler iyot tutmaz, RAİ bu tiplerde etkisizdir. TSH supresyonu ise (Levotiroksin ile, genellikle <0.1 mU/L) diferansiye kanserlerde nüksü önlemek için uygulanır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "RAİ ablasyonu yalnızca diferansiye (papiller/foliküler) kanserlerde etkilidir; medüller ve anaplastik kanserler iyot tutmadığı için RAİ etkisizdir. TSH supresyonu (Levotiroksin, genellikle <0.1 mU/L) diferansiye kanserlerde nüksü önlemek için uygulanır.",
+      "aciklama_detay": "Tiroid kanserinin tedavi yaklaşımı, histolojik alt tipe göre BELİRGİN şekilde farklılaşır ve bu farklılaşmanın temelinde hücrelerin iyot tutma kapasitesi (Na/I simporter fonksiyonu) yatar.\n\nCerrahi: Tüm tiroid kanseri tiplerinde temel tedavi total veya subtotal tiroidektomidir. Lenf nodu metastazı varsa boyun disseksiyonu eklenir — bu, histolojik tipten bağımsız ortak bir tedavi basamağıdır.\n\nRadyoaktif İyot (RAİ) Ablasyonu — Yalnızca Diferansiye Tiplerde Etkili: Diferansiye (Papiller/Foliküler) kanserlerde cerrahi sonrası kalıntı dokuyu veya mikroskobik metastazları yok etmek için kullanılır. Bunun nedeni, papiller ve foliküler kanser hücrelerinin (foliküler hücre kaynaklı oldukları için) normal tiroid dokusunun iyot tutma özelliğini kısmen korumasıdır — bu sayede radyoaktif iyot, bu hücreler tarafından seçici olarak tutulup onları hedefli şekilde yok edebilir.\n\n⚠️ Kritik istisna: MEDÜLLER ve ANAPLASTİK kanserler İYOT TUTMAZ, RAİ bu tiplerde ETKİSİZDİR. Medüller kanser parafoliküler (C hücresi) kaynaklıdır ve zaten iyot tutma fonksiyonuna sahip değildir; anaplastik kanser ise foliküler hücre kaynaklı olsa da, aşırı dediferansiye (fonksiyonunu tamamen kaybetmiş) bir tümör olduğu için iyot tutma kapasitesini kaybetmiştir. Bu nedenle bu iki tipte RAİ tedavisi denenmez; tedavi cerrahi, dış radyoterapi ve/veya sistemik kemoterapi/hedefe yönelik tedavilere dayanır.\n\nTSH Supresyonu — Yalnızca Diferansiye Tiplerde: Diferansiye kanserlerde NÜKSÜ ÖNLEMEK için Levotiroksin ile TSH baskılanır (genellikle <0.1 mU/L). Bu stratejinin mantığı, TSH'nin rezidüel diferansiye tiroid kanseri hücrelerinin büyümesini uyarabilen bir trofik faktör olmasıdır — TSH reseptörleri hem normal hem de diferansiye malign tiroid hücrelerinde eksprese edilir, bu nedenle TSH'yi baskılayarak bu büyüme sinyali ortadan kaldırılır. Medüller ve anaplastik kanser hücreleri TSH reseptörüne bu şekilde yanıt vermez (parafoliküler kaynaklı medüllerde zaten TSH reseptörü fonksiyonel değildir), bu nedenle bu tiplerde TSH supresyon stratejisi uygulanmaz.\n\nBu üç bilgi (cerrahi ortak, RAİ yalnızca diferansiye, TSH supresyonu yalnızca diferansiye) birlikte değerlendirildiğinde, tiroid kanseri tedavisinin 'diferansiye vs. diferansiye-olmayan (medüller/anaplastik)' ekseninde iki farklı tedavi felsefesine ayrıldığı görülür: diferansiye tiplerde iyot tutma ve TSH duyarlılığına dayalı hedefli, göreceli olarak daha az toksik stratejiler kullanılabilirken, medüller/anaplastik tiplerde bu araçlar işe yaramadığı için cerrahi ve sistemik/lokal tedavilere daha fazla bağımlı kalınır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça medüller ve anaplastik kanserlerin iyot TUTMADIĞINI ve RAİ'nin bu tiplerde ETKİSİZ olduğunu belirtir; 'eşit derecede etkili' ifadesi doğrudan yanlıştır.",
+        "B": "YANLIŞ — Tam tersi doğrudur: TSH supresyonu DİFERANSİYE kanserlerde (papiller/foliküler) uygulanan bir stratejidir, medüller kanserde TSH reseptör duyarlılığı bu şekilde işlemediği için uygulanmaz.",
+        "C": "YANLIŞ — Anaplastik kanser İYOT TUTMAYAN, RAİ'YE YANIT VERMEYEN bir tiptir; kanonik metinde RAİ'ye yanıt veren tipler diferansiye (papiller/foliküler) kanserlerdir.",
+        "D": "YANLIŞ — Medüller kanserde RAİ ETKİSİZDİR (iyot tutmadığı için); temel tedavi CERRAHİDİR (total/subtotal tiroidektomi ± boyun disseksiyonu), RAİ birinci basamak değildir ve cerrahiye ihtiyaç vardır.",
+        "E": "DOĞRU — RAİ yalnızca diferansiye (papiller/foliküler) kanserlerde etkilidir, medüller/anaplastik iyot tutmaz; TSH supresyonu (<0.1 mU/L) diferansiye kanserlerde nüksü önlemek için uygulanır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid kanseri",
+        "radyoaktif iyot",
+        "TSH supresyonu",
+        "medüller kanser",
+        "anaplastik kanser"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    }
+  ]
+}

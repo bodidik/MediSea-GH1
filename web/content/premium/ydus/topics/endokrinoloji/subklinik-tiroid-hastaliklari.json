@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "id": "subklinik-tiroid-hastaliklari",
+    "branch": "endokrinoloji",
+    "baslik": "Subklinik Tiroid Hastalıkları",
+    "altbaslik": "Subklinik hipotiroidizm ve hipertiroidi — evreleme, yaş paradoksu, etyoloji, progresyon riski, kardiyovasküler/iskelet komplikasyonları ve tedavi eşikleri",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 9,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Evreleme",
+      "kolonlar": [
+        "Tablo",
+        "Evre 1 (Hafif)",
+        "Evre 2 (Şiddetli)"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Subklinik Hipotiroidizm",
+            "TSH 4.0-4.5 ile 9.9 mIU/L",
+            "TSH ≥10 mIU/L — tedavi standart"
+          ]
+        },
+        {
+          "hucreler": [
+            "Subklinik Hipertiroidi",
+            "TSH 0.1-0.4 mIU/L",
+            "TSH <0.1 mIU/L — tedavi standart"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; subklinik hipotiroidizm ve subklinik hipertiroidinin biyokimyasal tanım/evrelemesini, yaşa özgü TSH referans aralığının epidemiyolojik etkisini (yaş paradoksu), etyolojik farkları (endojen Hashimoto vs eksojen LT4 fazlalığı), aşikar hastalığa progresyon prediktörlerini (TSH düzeyi, Anti-TPO), kardiyovasküler ve iskelet sistemi komplikasyonlarını (SCH'de diyastolik disfonksiyon/MetS, hipertiroidide AF/kemik kaybı) ve yaş+TSH+risk faktörüne dayalı tedavi eşiklerini kapsar."
+        }
+      ]
+    }
+  ]
+}
