@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "id": "transplantasyon-osteoporozu",
+    "branch": "endokrinoloji",
+    "baslik": "Transplantasyon Sonrası Osteoporoz",
+    "altbaslik": "Nakil öncesi değerlendirme, kalsinörin inhibitörü mekanizması ve takrolimus/siklosporin karşılaştırması, organ-spesifik bisfosfonat seçimi (kalp/akciğer istisnaları), renal güvenlik eşikleri, denosumab/kalsitriol alternatifleri ve mTOR inhibitörü/antimetabolit immünsüpresif rotasyonu",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-08"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 13,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "tablo",
+      "baslik": "Renal Güvenlik Eşikleri (İV Bisfosfonat)",
+      "kolonlar": [
+        "Eşik",
+        "Klinik Eylem"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": ["Kreatinin >2 mg/dL VEYA GFR <%30", "Doz yarıya düşür veya kes → denosumab/kalsitriol alternatifi"]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": ["GFR <30-35 mL/dk", "Bisfosfonat absolut kontrendike"]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti; nakil öncesi iskelet değerlendirmesi (DXA/VFA, sekonder neden giderme), akciğer nakli profilaksi istisnası, premenopozal kadınlarda bisfosfonat teratojenite kısıtlılığı, kalsitriol/HRT/denosumab alternatifleri, kök hücre nakli sonrası hipergonadotropik hipogonadizm, kalsinörin inhibitörlerinin osteoklastik rezorpsiyon mekanizması ve takrolimus-siklosporin karşılaştırması, erken faz (ilk 3-6 ay) kemik kaybı kinetiği, organ-spesifik bisfosfonat etkinlik farkları (kalp naklinde lomber omurga), renal güvenlik doz eşikleri ve mTOR inhibitörü/antimetabolit immünsüpresif rotasyon stratejilerini kapsar."
+        }
+      ]
+    }
+  ]
+}

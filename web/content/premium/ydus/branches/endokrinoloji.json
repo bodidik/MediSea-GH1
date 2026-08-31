@@ -217,6 +217,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "transplantasyon-osteoporozu",
+          "baslik": "Transplantasyon Sonrası Osteoporoz",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     }

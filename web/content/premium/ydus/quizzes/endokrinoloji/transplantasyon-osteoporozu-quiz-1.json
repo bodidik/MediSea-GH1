@@ -1,0 +1,401 @@
+{
+  "id": "quiz-endo-transplant-osteoporozu-001",
+  "baslik": "Transplantasyon Sonrası Osteoporoz — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "transplantasyon-osteoporozu",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Solid organ nakli planlanan bir hastada transplantasyon ÖNCESİ iskelet değerlendirmesi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Vertebral Kırık Değerlendirmesi (VFA), yalnızca semptomatik hastalarda (bel ağrısı olan) endikedir.",
+        "B": "Bazal laboratuvar paneli (kalsiyum, fosfor, iPTH, 25(OH)D) nakil öncesi dönemde gerekli değildir.",
+        "C": "Nakil öncesinde DXA ile omurga/kalça KMY ölçümü YAPILMALI; asemptomatik eski kompresyon kırıklarını taramak için vertebra grafileri veya Vertebral Kırık Değerlendirmesi (VFA) absolut istenmeli; hipogonadizm veya D vitamini eksikliği gibi sekonder nedenler nakil öncesinde agresif tedavi edilmelidir.",
+        "D": "İskelet değerlendirmesi yalnızca nakil SONRASI yapılır, nakil öncesi hiçbir tarama önerilmez.",
+        "E": "Sekonder osteoporoz nedenleri (hipogonadizm, D vitamini eksikliği) nakil sonrasına ertelenebilir, nakil öncesi acil düzeltme gerekmez."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Nakil öncesi DXA ile KMY ölçümü ve VFA/vertebra grafileriyle asemptomatik eski kırıkların taranması absolut istenmeli; sekonder nedenler (hipogonadizm, D vitamini eksikliği) nakil öncesinde agresif olarak tedavi edilmelidir.",
+      "aciklama_detay": "Solid organ (böbrek, karaciğer, kalp, akciğer vb.) ve hematopoetik kök hücre nakillerini takip eden özellikle ilk 3 ila 6 aylık dönem; yüksek doz glukokortikoidlerin ve kalsinörin inhibitörleri gibi immünsüpresif ajanların yoğun kullanımına bağlı olarak kemik döngüsünün aşırı hızlandığı, dramatik KMY kaybının yaşandığı ve frajilite kırığı riskinin ZİRVEYE ulaştığı kritik bir süreçtir. İskelet sağlığını korumak adına, stratejilerin TRANSPLANTASYON ÖNCESİ dönemden başlayarak PROAKTİF şekilde yönetilmesi gereklidir.\n\nGörüntüleme, Laboratuvar ve Sekonder Risk Faktörü Eliminasyonu: Transplantasyon planlanan TÜM adaylar, nakil öncesinde altta yatan kronik metabolik hastalıkların ve kemik kaybına zemin hazırlayan ilaçların iskelet üzerindeki potansiyel etkileri yönünden DETAYLICA TARANMALIDIR:\n\n- Anatomik ve Radyolojik Tarama: Nakil öncesinde DXA ile omurga ve kalça KMY ölçümleri YAPILMALI; klinikte gözden kaçabilecek ASEMPTOMATİK eski kompresyon kırıklarını taramak adına vertebra grafileri VEYA DXA ile Vertebral Kırık Değerlendirmesi (VFA) ABSOLUT İSTENMELİDİR. 'Asemptomatik' vurgusu kritiktir — bu tarama, hastanın bel ağrısı gibi semptomlar TARİFLEMEDİĞİ durumlarda dahi (rutin olarak) yapılmalıdır, çünkü vertebral kompresyon kırıkları sıklıkla klinik olarak sessizdir.\n\n- Bazal Laboratuvar Paneli: Süreç öncesi serum kalsiyum, fosfor, intakt parathormon (iPTH) ve 25(OH)D vitamini düzeyleri DÖKÜMANTE EDİLMELİDİR — bu, nakil sonrası izlemin bir 'bazal' referans noktası oluşturmasını sağlar ve nakil öncesinden var olan bozuklukların (örn. kronik böbrek/karaciğer yetmezliğine bağlı mineral metabolizması bozuklukları) tespit edilmesine olanak tanır.\n\n- Sekonder Nedenlerin Giderilmesi: Tarama esnasında hipogonadizm veya derin D vitamini eksikliği gibi sekonder osteoporoz nedenleri saptanırsa, hastalar TRANSPLANTASYON MASASINA ALINMADAN ÖNCE bu patolojiler AGRESİF OLARAK TEDAVİ EDİLMELİ ve eksiklikler YERİNE KONMALIDIR. Bu, çok önemli bir zamanlama prensibidir: müdahale nakil SONRASINA ertelenmez, nakil ÖNCESİNDE (mümkün olduğunca) düzeltilir — çünkü nakil sonrası ilk aylar zaten en agresif kemik kaybı dönemidir ve hasta bu döneme mümkün olan en iyi iskelet rezervi ile girmelidir.\n\nBu proaktif yaklaşımın mantığı, nakil sonrası dönemin (özellikle ilk 3-6 ay) kemik sağlığı açısından 'kritik pencere' olmasıdır — bu pencerede hem glukokortikoid hem kalsinörin inhibitörü etkisi kümülatif olarak en yoğun şekilde hissedilir, bu nedenle hastanın bu döneme girmeden önce mümkün olan en sağlam iskelet temeliyle (optimize edilmiş kalsiyum/D vitamini, düzeltilmiş hipogonadizm, bilinen bazal KMY ve kırık durumu) hazırlanması, sonraki yönetim kararlarını (profilaktik tedavi gereksinimi, hangi ajanın seçileceği) de doğrudan bilgilendirir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — VFA, ASEMPTOMATİK eski kompresyon kırıklarını taramak amacıyla tanımlanmıştır; yalnızca semptomatik hastalarla sınırlı olduğu iddiası kanonik metnin vurgusuyla çelişir.",
+        "B": "YANLIŞ — Bazal laboratuvar paneli (kalsiyum, fosfor, iPTH, 25(OH)D) kanonik metinde nakil öncesi dönemde açıkça 'dökümante edilmelidir' olarak tanımlanır; gerekli olmadığı iddiası yanlıştır.",
+        "C": "DOĞRU — Nakil öncesi DXA/VFA ile tarama absolut istenmeli; sekonder nedenler (hipogonadizm, D vitamini eksikliği) nakil öncesinde agresif olarak tedavi edilmelidir.",
+        "D": "YANLIŞ — Kanonik metin özellikle nakil ÖNCESİ dönemde proaktif tarama ve değerlendirmenin gerekliliğini vurgular; yalnızca nakil sonrası tarama yapılacağı iddiası yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin sekonder nedenlerin 'transplantasyon masasına alınmadan ÖNCE agresif olarak tedavi edilmesi' gerektiğini açıkça belirtir; sonraya ertelenmesi iddiası tam tersini söylemektedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "nakil öncesi değerlendirme",
+        "DXA",
+        "VFA"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s2",
+      "metin": "Akciğer nakli planlanan bir hastada, bisfosfonat profilaksisinin zamanlaması ile ilgili hangi ifade DOĞRUDUR (diğer solid organ nakillerinden farkı nedir)?",
+      "secenekler": {
+        "A": "Akciğer nakli, diğer solid organ nakillerine kıyasla çok daha ağır ve dramatik kemik kaybı sergilediğinden, uluslararası kılavuzlar bu hasta grubunda profilaktik zoledronik asidin TRANSPLANTASYON GERÇEKLEŞMEDEN HEMEN ÖNCE (veya nakil civarında) başlanmasını önerir — diğer solid organ nakillerinde ise böbrek fonksiyonları stabilize olur olmaz (tipik olarak ilk ay içinde) başlanır.",
+        "B": "Akciğer naklinde bisfosfonat profilaksisi diğer organlardan DAHA GEÇ (nakil sonrası 6. ay) başlatılır çünkü akciğer dokusu daha az etkilenir.",
+        "C": "Tüm solid organ nakillerinde bisfosfonat profilaksisi tam olarak aynı zamanlamada, nakilden 1 yıl sonra başlar.",
+        "D": "Akciğer naklinde bisfosfonat profilaksisi hiçbir zaman önerilmez, kontrendikedir.",
+        "E": "Akciğer nakli hastalarında iskelet etkilenimi diğer solid organ nakillerinden daha hafiftir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Akciğer nakli, diğer solid organ nakillerinden çok daha ağır kemik kaybı sergiler; bu nedenle profilaktik zoledronik asit nakil gerçekleşmeden hemen önce (veya nakil civarında) başlanır — diğer organlarda ise böbrek fonksiyonları stabilize olur olmaz (ilk ay içinde) başlanır.",
+      "aciklama_detay": "Bu bilgi, kanonik metinde özellikle 'Yüksek Sınav Potansiyeli' olarak işaretlenen bir istisna kuralıdır.\n\nStandart Zamanlama (Çoğu Solid Organ Nakli): Böbrek fonksiyonları nakil sonrasında STABİLİZE OLUR OLMAZ (tipik olarak POST-OP İLK AY içerisinde) bisfosfonat tedavisine başlanmalıdır.\n\n⚠️ Akciğer Naklinde Profilaksi İstisnası (Yüksek Sınav Potansiyeli): Solid organ nakillerinde bisfosfonat tedavisine GENEL KURAL OLARAK nakil sonrası böbrek fonksiyonları stabilize olunca (ilk 1 ay içinde) başlanır. ANCAK Akciğer Nakli (Lung Transplantation) BU KURALIN İSTİSNASIDIR. Akciğer nakli alıcılarında kortikosteroide bağlı iskelet yıkımı DİĞER ORGANLARA KIYASLA ÇOK DAHA DRAMATİK VE HIZLI seyrettiğinden, uluslararası kılavuzlar bisfosfonat (Zoledronik Asit) profilaksisinin TRANSPLANTASYON GERÇEKLEŞMEDEN HEMEN ÖNCE veya NAKİL ANINDA başlanmasını ABSOLUT OLARAK DİKTE EDER.\n\nBu istisnanın klinik gerekçesi, akciğer nakli hastalarının genellikle nakil öncesi kronik hastalıkları (KOAH, pulmoner fibrozis gibi) nedeniyle zaten daha sedanter, daha uzun süreli sistemik glukokortikoid kullanımına maruz kalmış ve genel olarak daha kırılgan bir iskelet profiline sahip olmalarıdır — bu, nakil sonrası eklenen agresif immünsüpresif rejimin (yüksek doz glukokortikoid + kalsinörin inhibitörü) etkisiyle birleştiğinde, akciğer naklini iskelet açısından EN YÜKSEK RİSKLİ solid organ nakli kategorisi haline getirir.\n\nBu bilgi ayrıca kanonik metinde bisfosfonat seçimi bağlamında da tekrarlanır: '🫁 Akciğer Nakli İstisnası: Akciğer nakli sonrasında iskelet sistemi, diğer tüm solid organ nakillerine kıyasla çok daha ağır etkilendiğinden ve dramatik düzeyde kemik kaybı sergilediğinden, uluslararası kılavuzlar bu hasta grubunda nakil öncesinde (veya nakil civarında) dahi doğrudan profilaktik zoledronik asit kullanılmasını absolut olarak önermektedir.'\n\nBu 'genel kural vs. istisna' yapısı (diğer organlarda post-op 1 ay bekleme, akciğerde pre-op/peri-op başlama), YDUS düzeyinde tipik bir 'istisna sorusu' formatıdır ve klinisyenin akciğer nakli olgularını diğer solid organ nakillerinden AYRI bir zamanlama protokolüyle değerlendirmesi gerektiğini vurgular.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Akciğer nakli en ağır kemik kaybını sergiler; profilaktik zoledronik asit nakil öncesinde/civarında başlanır, diğer organlarda ise böbrek fonksiyonları stabilize olunca (ilk ay) başlanır.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: akciğer nakli iskeleti DAHA AZ değil ÇOK DAHA AĞIR etkiler ve profilaksi DAHA GEÇ değil DAHA ERKEN (nakil öncesi/civarı) başlar.",
+        "C": "YANLIŞ — Kanonik metin standart zamanlamayı 'post-op ilk ay içinde' olarak tanımlar (1 yıl değil) ve akciğer naklinde bu bile daha erkene (nakil öncesi/civarı) çekilir; tüm organlarda aynı zamanlama olduğu iddiası yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin akciğer naklinde profilaktik zoledronik asit kullanımını 'absolut olarak önermektedir' der; kontrendike olduğu iddiası doğrudan yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin akciğer naklinde iskelet etkileniminin diğer solid organ nakillerine kıyasla ÇOK DAHA AĞIR olduğunu açıkça belirtir; 'daha hafif' iddiası tam tersini söylemektedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "akciğer nakli",
+        "zoledronik asit",
+        "profilaksi zamanlaması"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s3",
+      "metin": "Üreme çağında (premenopozal), böbrek nakli sonrası dönemde olan bir kadın hastada bisfosfonat kullanımı ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Premenopozal kadınlarda bisfosfonat kullanımı mutlak kontrendikedir, hiçbir koşulda kullanılamaz.",
+        "B": "Bisfosfonatların fetal etkisi yalnızca oral formlarda görülür, İV zoledronik asit bu açıdan tamamen güvenlidir.",
+        "C": "Bu risk yalnızca postmenopozal kadınlar için tanımlanmıştır, premenopozal kadınlarda önemi yoktur.",
+        "D": "Bisfosfonatların kemik mineral matriksine tutunma kapasitesi ve yarı ömrü aşırı uzundur; bu nedenle ilerleyen yıllarda gelişebilecek gebeliklerde fetüs iskeleti üzerinde teratojenik/toksik risk bilinmektedir. Bu grup hastalarda kullanım titiz değerlendirilmeli ve fetüse yönelik risk ile kemik kaybı/kırık riski şiddeti arasında sıkı fayda-zarar analizi yapılmalıdır.",
+        "E": "Bisfosfonatlar hızlı metabolize edilip vücuttan atıldığı için, gebelik planlanan premenopozal kadınlarda hiçbir özel önlem gerekmez."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Bisfosfonatların kemik matriksine tutunma süresi ve yarı ömrü aşırı uzundur; bu, ilerideki gebeliklerde fetüs iskeleti için teratojenik/toksik risk taşır. Premenopozal kadınlarda kullanım titizlikle değerlendirilmeli, fetal risk ile kemik kaybı şiddeti arasında sıkı fayda-zarar analizi yapılmalıdır.",
+      "aciklama_detay": "⚠️ Üreme Çağındaki (Premenopozal) Kadınlarda Kritik Kısıtlılık: Bisfosfonat grubu ajanların KEMİK MİNERAL MATRİKSİNE TUTUNMA KAPASİTELERİ ve YARI ÖMÜRLERİ AŞIRI UZUNDUR. Bu farmakokinetik özellik nedeniyle, İLERLEYEN YILLARDA gelişebilecek olası gebeliklerde FETÜS İSKELETİ üzerinde yaratabileceği potansiyel TERATOJENİK, TOKSİK ve kemik gelişimini engelleyici riskler bilinmektedir.\n\nBu riskin mekanizması, bisfosfonatların kemiğe bir kez bağlandıktan sonra YILLARCA (bazen 10 yıla kadar) orada kalması ve kemik döngüsü sırasında yavaş yavaş serbest kalmasıyla ilişkilidir. Bu nedenle bir kadın hasta bisfosfonat tedavisi aldıktan YILLAR SONRA gebe kalsa dahi, kemiklerinde depolanmış bisfosfonat hâlâ mevcuttur ve teorik olarak plasenta yoluyla fetal dolaşıma geçip gelişmekte olan fetal iskeleti etkileyebilir — bu, bisfosfonatların diğer birçok ilaçtan (kısa yarı ömürlü, gebelik öncesi kesildiğinde hızla temizlenen ilaçlardan) FARKLI kılan kritik bir özelliktir.\n\nDolayısıyla, ÜREME ÇAĞINDAKİ PREMENOPOZAL kadın nakil hastalarında bisfosfonat kullanımı SON DERECE TİTİZ değerlendirilmeli; FETÜSE YÖNELİK POTANSİYEL ZARAR RİSKİ ile kadındaki KEMİK KAYBININ ve KIRIK RİSKİNİN ŞİDDETİ arasında ÇOK SIKI bir FAYDA-ZARAR ANALİZİ yapılmalıdır. Bu, bisfosfonatın 'mutlak kontrendike' olduğu anlamına gelmez — kanonik metin 'titiz değerlendirilmeli' ve 'fayda-zarar analizi' ifadelerini kullanır, yani KARAR BİREYSELLEŞTİRİLİR: eğer kadının kemik kaybı/kırık riski ÇOK YÜKSEKSE (örneğin ağır steroid dozu, zaten mevcut vertebral kırık), bisfosfonat kullanımı yine de gerekçelendirilebilir; ancak risk daha düşükse alternatif stratejiler (kalsitriol, HRT, veya bisfosfonat kullanımının ertelenmesi/izlem) tercih edilebilir.\n\nBu bilgi, transplantasyon sonrası osteoporoz yönetiminde 'tek tip bir tedavi algoritmasının herkese uygulanamayacağını' gösteren önemli bir örnektir — hastanın cinsiyeti, yaşı VE üreme potansiyeli (gebelik planı olup olmadığı), tedavi seçiminde (bisfosfonat vs. alternatif ajanlar) belirleyici bir faktördür. Bu ayrım, YDUS düzeyinde özellikle genç premenopozal kadın hastalarla ilgili klinik senaryolarda dikkat edilmesi gereken bir tuzaktır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin 'titiz değerlendirilmeli' ve 'fayda-zarar analizi yapılmalıdır' ifadelerini kullanır; mutlak/kesin kontrendikasyon değil, bireyselleştirilmiş bir değerlendirme önerilir.",
+        "B": "YANLIŞ — Kanonik metin 'bisfosfonat grubu ajanların' genel olarak bu riski taşıdığını belirtir, oral formla sınırlamaz; İV zoledronik asit de bir bisfosfonattır ve aynı uzun kemik tutunum özelliğini taşır.",
+        "C": "YANLIŞ — Kanonik metin bu riski özellikle PREMENOPOZAL (üreme çağındaki) kadınlar bağlamında tanımlar; postmenopozal kadınlarda gebelik potansiyeli olmadığı için bu spesifik risk (fetal teratojenite) söz konusu değildir — risk esasen premenopozal grup için önemlidir.",
+        "D": "DOĞRU — Bisfosfonatların uzun kemik matriks tutunumu/yarı ömrü nedeniyle ileride gebelikte fetal teratojenik/toksik risk bilinir; premenopozal kadınlarda kullanım titizlikle değerlendirilmeli, fayda-zarar analizi yapılmalıdır.",
+        "E": "YANLIŞ — Kanonik metin tam tersini belirtir: bisfosfonatlar kemik matriksinde AŞIRI UZUN süre kalır (hızlı atılmaz), bu nedenle özel önlem/dikkat GEREKİR."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "bisfosfonat",
+        "premenopozal",
+        "gebelik",
+        "teratojenite"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s4",
+      "metin": "Bisfosfonat kullanımının kontrendike olduğu (GFR<30-35 mL/dk) bir kalp nakli hastasında, vertebral kompresyon kırıklarını azaltmak için kanıtlanmış olan ancak dar terapötik indeksi nedeniyle yakın takip gerektiren alternatif ajan hangisidir?",
+      "secenekler": {
+        "A": "Bu senaryoda testosteron replasmanı (cinsiyetten bağımsız olarak tüm hastalara) birinci basamak tercih edilen ajandır.",
+        "B": "Kalsitriol (aktif D vitamini, örn. 0.5 mcg/gün) — kalsiyum takviyesiyle kombine edildiğinde, özellikle kalp nakli sonrasında vertebral kompresyon kırık oranlarını anlamlı azaltır; ancak dar terapötik indeksi nedeniyle serum/idrar kalsiyum takibi ile nefrolitiazis/hiperkalsemi riskine karşı yakın izlem gerektirir.",
+        "C": "Standart doz D3 vitamini (kolekalsiferol) tek başına, kalsitriol ile eşdeğer bir kırık azaltıcı etkinliğe sahiptir ve yakın izlem gerektirmez.",
+        "D": "Bu senaryoda hiçbir alternatif ajan yoktur, hasta tedavisiz izlenmelidir.",
+        "E": "Kalsitriol geniş bir terapötik indekse sahiptir, hiçbir laboratuvar takibi gerektirmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kalsitriol (0.5 mcg/gün), kalsiyumla kombine edildiğinde özellikle kalp nakli sonrası vertebral kompresyon kırıklarını anlamlı azaltır; ancak dar terapötik indeksi nedeniyle nefrolitiazis/hiperkalsemi riskine karşı yakın serum/idrar kalsiyum takibi gerektirir.",
+      "aciklama_detay": "Alternatif Terapiler ve Spesifik Klinik Senaryolar: Bisfosfonat grubu ilaçların ABSOLUT KONTRENDİKE olduğu (GFR<30-35 mL/dk) veya hastalar tarafından tolere edilemediği durumlarda ALTERNATİF metabolik yolaklar optimize edilmelidir:\n\nKalsitriol (Aktif D Vitamini): Kalsiyum takviyesiyle KOMBİNE edilerek uygulanan kalsitriol protokolünün (örn. günde 0.5 mcg), kemik kaybını YAVAŞLATTIĞI ve ÖZELLİKLE KALP TRANSPLANTASYONU SONRASINDA gelişen vertebral kompresyon kırık oranlarını ANLAMLI ÖLÇÜDE AZALTTIĞI gösterilmiştir.\n\n* Kısıtlılık: Bu yaklaşım DÜZENLİ SERUM/İDRAR KALSİYUM TAKİBİ gerektirdiğinden, NEFROLİTİAZİS, HİPERKALSİYÜRİ ve HİPERKALSEMİ gelişimi açısından DAHA ZAHMETLİDİR.\n\nKalsitriolün (kalsitriol = 1,25-dihidroksivitamin D3, D vitamininin AKTİF/hormonal formu) standart D3 vitamini (kolekalsiferol — inaktif, karaciğer/böbrekte iki basamaklı hidroksilasyon gerektiren prekürsör form) ile ÖNEMLİ bir farkı vardır: kalsitriol doğrudan aktif hormondur ve bağırsaktan kalsiyum emilimini çok daha GÜÇLÜ ve HIZLI şekilde artırır — bu güçlü etki, hem terapötik yararı (kemik koruması) hem de riski (hiperkalsemi, hiperkalsiüri, nefrolitiazis) beraberinde getirir. Bu nedenle kalsitriol 'DAR TERAPÖTİK İNDEKSE' sahiptir, standart D3 vitamininin (geniş güvenlik marjına sahip, rutin kullanımda yakın laboratuvar takibi gerektirmeyen) aksine.\n\nKlinik & YDUS Spot Bilgi Özeti — Kalp Nakli Sonrası Kalsitriolün Yeri ve Klinik Takip Kısıtlılığı: 'Bisfosfonat kullanılamayan durumlarda kalsiyuma eklenen aktif D vitamini (Kalsitriol, 0.5 mcg/gün), özellikle kalp nakli hastalarında vertebral kompresyon kırıklarını azaltmada klinik olarak kanıtlanmıştır. Ancak bu ajanın DAR TERAPÖTİK İNDEKSİ nedeniyle tedavi altındaki hastaların 24 SAATLİK İDRAR KALSİYUMU ve SERUM KALSİYUM düzeyleri, NEFROKALSİNOZİS ve CİDDİ HİPERKALSEMİ riskine karşı YAKIN TAKİP EDİLMELİDİR.'\n\nBu vakada hasta (GFR<30-35 mL/dk, bisfosfonat kontrendike, kalp nakli sonrası) tam olarak kalsitriolün endike olduğu klinik senaryoyu temsil eder — ancak klinisyen, bu tedaviyi başlarken 'ücretsiz' bir alternatif olmadığını, kendine özgü ciddi bir izlem yükü (yakın kalsiyum takibi) getirdiğini bilmelidir.\n\nDiğer alternatifler (HRT, denosumab) de bu bölümde tanımlanmıştır ancak spesifik olarak 'kalp nakli sonrası vertebral kırık azaltma' kanıtı kalsitriole aittir; testosteron replasmanı ise cinsiyet-spesifik bir tedavidir (yalnızca hipogonadal erkeklerde), 'tüm hastalara cinsiyetten bağımsız' uygulanmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Testosteron replasmanı kanonik metinde SEMPTOMATİK ERKEKLERDE (hipogonadizm bağlamında) tanımlanır, cinsiyetten bağımsız tüm hastalara uygulanan bir ajan değildir; bu vakadaki kalp nakli hastasının cinsiyeti belirtilmemiştir ve spesifik kanıt kalsitriole aittir.",
+        "B": "DOĞRU — Kalsitriol (0.5 mcg/gün), kalsiyumla kombine edildiğinde kalp nakli sonrası vertebral kompresyon kırıklarını azaltır; dar terapötik indeksi nedeniyle yakın kalsiyum takibi gerektirir.",
+        "C": "YANLIŞ — Kanonik metin spesifik olarak KALSİTRİOL'ün (aktif D vitamini) kanıtını tanımlar, standart D3 vitamininin eşdeğer etkinliğe sahip olduğuna dair bir bilgi yer almaz; ayrıca kalsitriolün 'dar terapötik indeksi' olduğu, yakın takip GEREKTİRDİĞİ açıkça belirtilir.",
+        "D": "YANLIŞ — Kanonik metin bu senaryo için (bisfosfonat kontrendike durumunda) kalsitriol, HRT ve denosumab gibi alternatif metabolik yolakları açıkça tanımlar; 'hiçbir alternatif yok' iddiası yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin tam tersini belirtir: kalsitriol DAR terapötik indekse sahiptir ve nefrolitiazis/hiperkalsemi riski nedeniyle YAKIN takip gerektirir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "kalsitriol",
+        "kalp nakli",
+        "böbrek yetmezliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s5",
+      "metin": "Hematopoetik kök hücre nakli (HKHN) öncesi hazırlık rejiminde total beden ışınlaması (TBI) ve yüksek doz alkilleyici kemoterapi alan bir hastada, gelişen kalıcı gonadal yetmezliğe bağlı agresif kemik kaybını engellemek için etiyolojik tedavinin belkemiği nedir?",
+      "secenekler": {
+        "A": "Yalnızca yüksek doz bisfosfonat tedavisi yeterlidir, hormonal replasmana gerek yoktur.",
+        "B": "Bu hastalarda gonadal yetmezlik geçicidir ve kendiliğinden düzelir, tedavi gerekmez.",
+        "C": "Kalsitonin, bu spesifik hasta grubunda etiyolojik tedavinin belkemiğidir.",
+        "D": "TBI ve alkilleyici ajanlar gonadal fonksiyonu etkilemez, kemik kaybının nedeni yalnızca glukokortikoiddir.",
+        "E": "Premenopozal kadınlarda östrojen/progesteron, erkeklerde ise testosteron replasmanı (HRT) — hipergonadotropik hipogonadizmin doğrudan etiyolojik tedavisidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "HKHN hazırlık rejimindeki TBI ve yüksek doz alkilleyici kemoterapiler over/testis dokusunda kalıcı hasar yaratıp hipergonadotropik hipogonadizme yol açar; bu hastalarda etiyolojik tedavinin belkemiği premenopozal kadınlarda östrojen/progesteron, erkeklerde testosteron replasmanıdır.",
+      "aciklama_detay": "🔍 Kök Hücre Nakli Sonrası Gonadal Yetmezlik ve Kemik Koruma: Hematopoetik kök hücre nakli (HKHN) hastalarında hazırlık rejiminde uygulanan TOTAL BEDEN IŞINLAMASI (TBI) ve YÜKSEK DOZ ALKİLLEYİCİ KEMOTERAPİLER, OVER ve TESTİS DOKUSUNDA KALICI HASAR yaratarak HİPERGONADOTROPİK HİPOGONADİZME yol açar. Bu hastalarda gelişen AGRESİF kemik kaybını engellemek için SADECE klasik osteoporoz ilaçları DEĞİL; PREMENOPOZAL KADINLARDA ÖSTROJEN/PROGESTERON HRT, ERKEKLERDE İSE TESTOSTERON REPLASMANI ETİYOLOJİK TEDAVİNİN BELKEMİĞİDİR.\n\n'Hipergonadotropik hipogonadizim' terimi patofizyolojik olarak önemlidir: bu, GONADIN KENDİSİNİN hasar görmesi (primer gonadal yetmezlik) sonucu oluşan bir hipogonadizim tipidir — hipofiz/hipotalamus tarafında (santral) bir sorun yoktur, aksine gonadal hasar nedeniyle negatif geri bildirim kaybolduğu için hipofiz GnRH/LH/FSH salınımını kompanzatuar olarak ARTIRIR (bu nedenle 'HİPERgonadotropik' — yüksek gonadotropin düzeyleriyle karakterizedir). Bu, sekonder/santral hipogonadizmden (hipofiz/hipotalamus kaynaklı, düşük gonadotropin düzeyli) farklı bir mekanizmadır.\n\nBu bilginin klinik önemi, HKHN hastalarında (özellikle genç yaşta nakil olan, uzun beklenen yaşam süresi olan hastalarda) kemik kaybının nedeninin YALNIZCA immünsüpresif ilaçlar/glukokortikoid DEĞİL, aynı zamanda hazırlık rejiminin (TBI, alkilleyici ajanlar) DOĞRUDAN gonadal toksisitesi olduğunun anlaşılmasıdır. Bu iki farklı mekanizma (iyatrojenik ilaç etkisi + gonadal toksisite) BİRLİKTE değerlendirilmeli ve tedavi de her iki mekanizmayı hedeflemelidir — yalnızca bisfosfonat gibi antirezorptif bir ajanla tedavi etmek, altta yatan hormonal eksikliği düzeltmeden yalnızca semptomatik bir yaklaşım olur; bu nedenle kanonik metin 'sadece klasik osteoporoz ilaçları değil' ifadesiyle bu noktayı özellikle vurgular.\n\nBu senaryo, transplantasyon sonrası osteoporozun heterojen bir grup olduğunu ve her transplant tipinin (solid organ vs. HKHN) kendine özgü ek risk faktörleri taşıyabileceğini gösterir — HKHN hastalarında hazırlık rejiminin gonadotoksik etkisi, solid organ nakli hastalarında görülmeyen ek bir katman oluşturur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 'sadece klasik osteoporoz ilaçları değil' ifadesiyle hormonal replasmanın gerekliliğini vurgular; yalnızca bisfosfonatın yeterli olduğu iddiası yanlıştır.",
+        "B": "YANLIŞ — Kanonik metin bu yetmezliği 'kalıcı hasar' ve 'hipergonadotropik hipogonadizim' olarak tanımlar, geçici/kendiliğinden düzelen bir durum olarak değil.",
+        "C": "YANLIŞ — Kalsitonin, kanonik metinde bu spesifik hasta grubunun etiyolojik tedavisi olarak tanımlanmamıştır; belkemiği HRT/testosterondur.",
+        "D": "YANLIŞ — Kanonik metin TBI ve alkilleyici ajanların GONAD DOKUSUNDA KALICI HASAR yarattığını açıkça belirtir; kemik kaybının yalnızca glukokortikoide bağlı olduğu iddiası bu mekanizmayı göz ardı etmektedir.",
+        "E": "DOĞRU — TBI/alkilleyici kemoterapi hipergonadotropik hipogonadizme yol açar; etiyolojik tedavinin belkemiği premenopozal kadınlarda östrojen/progesteron, erkeklerde testosteron replasmanıdır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "kök hücre nakli",
+        "hipergonadotropik hipogonadizm",
+        "HRT"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s6",
+      "metin": "İleri evre böbrek disfonksiyonu olan bir nakil hastasında, bisfosfonat kontrendike olduğu için denosumab başlanıyor.\n\nBu tedavi ile ilgili özel risk yönetimi hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Denosumab böbrek fonksiyonundan bağımsız olduğu için, böbrek yetmezliği olan hastalarda hiçbir laboratuvar takibi gerekmez.",
+        "B": "Nakil sonrası erken evrede denosumab verileri kısıtlıdır; böbrek yetmezliği olanlarda derin hipokalsemi riski çok yüksektir, kalsiyum monitorizasyonu şarttır; ilaç kesildiğinde rebound kaybı önlemek için peşine mutlaka bisfosfonat (geçiş stratejisi) eklenmelidir.",
+        "C": "Denosumab böbrek yetmezliği olan hastalarda hipokalsemi riski taşımaz, kalsiyum takibi gerekmez.",
+        "D": "Denosumab kesildiğinde herhangi bir rebound etki riski yoktur, bisfosfonata geçiş gereksizdir.",
+        "E": "Nakil sonrası erken evrede denosumab kullanımına dair kapsamlı, kesinleşmiş veri mevcuttur, ek dikkat gerekmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Nakil sonrası erken evrede denosumab verileri kısıtlıdır; böbrek yetmezliğinde derin hipokalsemi riski yüksektir ve kalsiyum monitorizasyonu şarttır; ilaç kesildiğinde rebound kaybını önlemek için mutlaka bisfosfonata geçilmelidir.",
+      "aciklama_detay": "Denosumab Antikor Rotasyonu: İLERİ EVRE BÖBREK DİSFONKSİYONU gibi bisfosfonatların NET KONTRENDİKE olduğu nakil tablolarında güçlü bir RANKL inhibitörü olan DENOSUMAB tercih edilebilir.\n\n⚠️ Risk Yönetimi: Nakil sonrası ERKEN EVREDE denosumab VERİLERİ KISITLIDIR — bu, denosumabın nakil sonrası erken dönemdeki (yani en agresif kemik kaybı ve en yoğun immünsüpresyon dönemi) kullanımına dair klinik kanıt tabanının henüz solid organ nakli popülasyonunda bisfosfonatlar kadar güçlü olmadığı anlamına gelir — bu, denosumabın 'kullanılamayacağı' anlamına gelmez, ancak klinisyen bu ajanı kullanırken elindeki kanıtın sınırlarının farkında olmalıdır.\n\nBöbrek yetmezliği olanlarda DERİN HİPOKALSEMİ RİSKİ ÇOK YÜKSEKTİR; KALSİYUM MONİTORİZASYONU ŞARTTIR. Bu risk, denosumabın genel farmakolojik profilinden kaynaklanır: RANKL inhibisyonu ile osteoklastik aktiviteyi güçlü şekilde baskılar, bu da kemikten kalsiyum salınımını ANİDEN azaltır. Normal böbrek fonksiyonu olan hastalarda bu etki genellikle tolere edilebilir düzeydedir, ancak böbrek yetmezliği olan hastalarda (zaten sıklıkla mevcut olan sekonder hiperparatiroidizm, D vitamini metabolizması bozukluğu gibi ek risk faktörleriyle birleştiğinde) bu ani kalsiyum düşüşü DERİN ve TEHLİKELİ hipokalsemiye yol açabilir.\n\nİLAÇ KESİLDİĞİNDE REBOUND KAYBI ÖNLEMEK İÇİN PEŞİNE MUTLAKA BİSFOSFONAT (geçiş stratejisi) EKLENMELİDİR. Bu, erkek osteoporozu bölümünde de tanımlanan aynı 'denosumab rebound' prensibinin transplantasyon bağlamındaki tekrarıdır — Denosumab kemiğe fiziksel olarak bağlanmadığı için, ilaç etkisi kaybolduğunda (kesildiğinde veya doz geciktiğinde) osteoklast aktivasyonu 'geri teper' ve hızlı kemik kaybı/vertebral kırık riski oluşur. Bu risk, denosumabın hangi klinik bağlamda (erkek osteoporozu, transplantasyon, postmenopozal osteoporoz) kullanıldığından BAĞIMSIZ olarak evrensel bir farmakolojik özelliktir — bu ilacın kesin bir 'sınıf etkisi' uyarısıdır.\n\nBu vakadaki üç risk katmanı (kısıtlı erken-dönem veri, hipokalsemi riski böbrek yetmezliğinde, rebound riski kesim durumunda) birlikte, denosumabın transplantasyon hastalarında 'bisfosfonat kontrendike olduğunda kullanılabilecek ama dikkatli izlem gerektiren' bir ikinci basamak ajan olduğunu gösterir — birinci basamak seçim olarak sunulmaz, spesifik kontrendikasyon (ileri böbrek yetmezliği) durumunda devreye girer.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Böbrek fonksiyonundan bağımsız METABOLİZE EDİLMESİ, hipokalsemi riskinin böbrek yetmezliğinde TAKİP GEREKTİRMEDİĞİ anlamına GELMEZ; tam tersine bu hasta grubunda kalsiyum monitorizasyonu şarttır.",
+        "B": "DOĞRU — Erken dönem verileri kısıtlıdır; böbrek yetmezliğinde derin hipokalsemi riski yüksektir (kalsiyum takibi şart); kesim durumunda rebound için mutlaka bisfosfonata geçilmelidir.",
+        "C": "YANLIŞ — Kanonik metin böbrek yetmezliği olanlarda 'derin hipokalsemi riski çok yüksektir' der ve kalsiyum monitorizasyonunu 'şart' olarak tanımlar; risk taşımadığı iddiası doğrudan yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin rebound kaybını önlemek için 'peşine mutlaka bisfosfonat... eklenmelidir' der; rebound riski olmadığı iddiası bu uyarıyla çelişir.",
+        "E": "YANLIŞ — Kanonik metin nakil sonrası erken evrede denosumab verilerinin KISITLI olduğunu açıkça belirtir; 'kapsamlı, kesinleşmiş veri' iddiası tam tersini söylemektedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "denosumab",
+        "hipokalsemi",
+        "rebound etki"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Transplantasyon Sonrası Osteoporoz"
+    },
+    {
+      "id": "s7",
+      "metin": "Kalsinörin inhibitörlerinin (siklosporin ve takrolimus) kemik metabolizması üzerindeki etki mekanizması ve klinik izolasyon zorluğu ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Kalsinörin inhibitörleri osteoblastik kemik formasyonunu artırarak kemik kütlesini korur.",
+        "B": "Kalsinörin inhibitörlerinin kemik etkisi tek başına, glukokortikoid veya komorbiditeden bağımsız olarak kolayca izole edilebilir ve net olarak ölçülebilir.",
+        "C": "Kalsinörin inhibitörleri yalnızca osteoblastları etkiler, osteoklastik aktivite üzerinde hiçbir rolü yoktur.",
+        "D": "In vivo osteoklastik kemik rezorpsiyonunu patolojik düzeyde artırarak hızlı kemik kaybını tetiklerler; ancak insan iskelet metabolizması üzerindeki net izole etkilerini değerlendirmek güçtür çünkü eş zamanlı glukokortikoid maruziyeti ve kronik organ yetmezliği komorbiditeleri tabloyu ciddi şekilde komplike eder.",
+        "E": "Kalsinörin inhibitörleri kemik metabolizması üzerinde hiçbir etki göstermez, tamamen kemik-nötr ajanlardır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kalsinörin inhibitörleri in vivo osteoklastik rezorpsiyonu patolojik düzeyde artırır; ancak eş zamanlı glukokortikoid maruziyeti ve kronik organ yetmezliği komorbiditeleri nedeniyle net izole insan etkilerini değerlendirmek güçtür (polifarmasi faktörü).",
+      "aciklama_detay": "Kalsinörin inhibitörleri (siklosporin ve takrolimus), solid organ ve hematopoetik kök hücre transplantasyonu uygulanan hastalarda greft rejeksiyonunu engellemek ve greft sağkalımını desteklemek amacıyla klinik rutinde sıklıkla tercih edilen güçlü immünsüpresif ajanlardır. Ancak bu ilaçlar, kemik mineral metabolizması üzerinde sekonder osteoporoza doğrudan zemin hazırlayan ve iskelet sistemi üzerinde KATABOLİK etkileri NET TANIMLANMIŞ spesifik farmakolojik risk grupları arasında sınıflandırılmaktadır.\n\n🚨 İn Vivo Kemik Döngüsü (Turnover) Aktivasyonu: Kalsinörin inhibitörlerinin iskelet sistemi üzerindeki PRİMER patofizyolojik etkisi, in vivo olarak OSTEOKLASTİK KEMİK REZORPSİYONUNU (yıkımını) PATOLOJİK DÜZEYDE ARTIRARAK HIZLI KEMİK KAYBINI TETİKLEMELERİDİR. Hayvan modellerinde yürütülen in vivo deneysel araştırmalar, özellikle SİKLOSPORİN maruziyetinin kemik döngüsünü (turnover) AŞIRI DERECEDE HIZLANDIRDIĞINI ve REZORPSİYON LAKÜNLERİNİ GENİŞLETTİĞİNİ net olarak kanıtlamıştır.\n\nKlinik İzolasyon Güçlüğü (Polifarmasi Faktörü): Bu ajanların insan iskelet metabolizması üzerindeki NET onkofizyolojik ve izole etkilerini klinik olarak TEK BAŞINA değerlendirmek OLDUKÇA GÜÇTÜR. Çünkü transplantasyon alıcılarında izlenen agresif kemik erimesi tablosu; başta EŞ ZAMANLI YÜKSEK DOZ SİSTEMİK GLUKOKORTİKOİD MARUZİYETİ olmak üzere, kemik homeostazını bozan ÇOKLU İYATROJENİK İLAÇ KULLANIMLARI ve hastaların altta yatan KRONİK SİSTEMİK YETMEZLİK KOMORBİDİTELERİ ile ŞİDDETLİ bir biçimde KOMPLİKE haldedir.\n\nBu 'klinik izolasyon güçlüğü' kavramı, transplant hastalarında görülen osteoporozun MULTİFAKTÖRİYEL doğasını vurgular — bir hastada gözlenen kemik kaybını salt 'kalsinörin inhibitörünün etkisi' olarak etiketlemek YANLIŞTIR, çünkü aynı anda (1) yüksek doz glukokortikoid, (2) kalsinörin inhibitörü, (3) altta yatan kronik organ yetmezliğinin (üremi, siroz vb.) nakil ÖNCESİNDEN gelen kümülatif hasarı gibi ÇOKLU faktör aynı anda işlemektedir. Bu, hayvan modellerinde (tek değişkenli, kontrollü koşullarda) net gösterilen kalsinörin inhibitörü etkisinin, gerçek klinik ortamda (çok değişkenli, komplike hasta popülasyonunda) doğrudan ve saf şekilde gözlemlenmesinin zorluğunu açıklar.\n\nBu bilgi, klinisyenin bir transplant hastasında kemik kaybı gördüğünde, tek bir 'suçlu' ilacı (yalnızca kalsinörin inhibitörünü) hedef almak yerine, TÜM katkıda bulunan faktörleri (glukokortikoid dozu, komorbiditeler, beslenme durumu) bütüncül olarak değerlendirmesi gerektiğini gösterir — bu, tedavi stratejisinin de (yalnızca kalsinörin inhibitörünü değiştirmek değil, glukokortikoid titrasyonu + nutrisyonel destek + antirezorptif tedavi gibi çok yönlü bir yaklaşım) neden gerekli olduğunu açıklar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kalsinörin inhibitörleri OSTEOKLASTİK REZORPSİYONU ARTIRIR (yıkıcı etki), osteoblastik formasyonu artırıp kemiği koruyan bir mekanizma tanımlanmamıştır.",
+        "B": "YANLIŞ — Kanonik metin açıkça 'net onkofizyolojik ve izole etkilerini klinik olarak tek başına değerlendirmek oldukça güçtür' der; 'kolayca izole edilebilir' iddiası tam tersini söylemektedir.",
+        "C": "YANLIŞ — Kanonik metin özellikle OSTEOKLASTİK (yıkıcı) aktiviteyi hedef alır; 'yalnızca osteoblastları etkiler' iddiası mekanizmayı tersine çevirmektedir.",
+        "D": "DOĞRU — Kalsinörin inhibitörleri osteoklastik rezorpsiyonu patolojik düzeyde artırır; ancak eş zamanlı glukokortikoid maruziyeti ve komorbiditeler nedeniyle net izole insan etkisini değerlendirmek güçtür.",
+        "E": "YANLIŞ — Kanonik metin kalsinörin inhibitörlerini 'kemik mineral metabolizması üzerinde sekonder osteoporoza doğrudan zemin hazırlayan' ajanlar olarak tanımlar; kemik-nötr olduğu iddiası doğrudan yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "kalsinörin inhibitörleri",
+        "osteoklastik rezorpsiyon",
+        "polifarmasi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri"
+    },
+    {
+      "id": "s8",
+      "metin": "Siklosporin kullanan ve klinik takibinde agresif kemik kaybı dökümante edilen bir organ nakli hastasında, immünsüpresif rejim modifikasyonu düşünülüyor.\n\nKalsinörin inhibitörleri arası göreceli iskelet toksisitesi ile ilgili hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Her iki kalsinörin inhibitörü de (siklosporin ve takrolimus) in vivo olarak osteoklastik yıkımı artırıp kemik döngüsünü hızlandırır; ancak takrolimusun kemik dokusu üzerindeki olumsuz katabolik etkileri siklosporine kıyasla klinik ve yapısal olarak net biçimde daha hafif düzeyde seyreder — greft toleransı elverdiğinde siklosporinden takrolimusa geçiş kısmen daha lehte bir iskelet profili sunabilir.",
+        "B": "Siklosporin, takrolimustan kemik açısından daha güvenlidir; bu hastada takrolimustan siklosporine geçiş önerilmelidir.",
+        "C": "Her iki ajan da kemik üzerinde tamamen eşdeğer toksisiteye sahiptir, aralarında hiçbir fark yoktur.",
+        "D": "Takrolimus kemik üzerinde hiçbir olumsuz etki göstermez, tamamen kemik-nötr bir ajandır.",
+        "E": "Kalsinörin inhibitörleri arası rotasyon kararı, greft rejeksiyon riskinden tamamen bağımsız, yalnızca kemik verilerine göre verilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Her iki kalsinörin inhibitörü de osteoklastik yıkımı artırır; ancak takrolimusun kemik üzerindeki katabolik etkileri siklosporine kıyasla net biçimde daha hafiftir. Greft toleransı elverdiğinde siklosporinden takrolimusa geçiş kısmen daha lehte bir iskelet profili sunabilir.",
+      "aciklama_detay": "⚖️ Siklosporin ve Takrolimusun Karşılaştırmalı Profili ile Risk Stratifikasyonu: İmmünsüpresif rejimlerin kendi aralarındaki iskelet toksisitesi profilleri HOMOJEN OLMAYIP moleküler bazda ufak sapmalar ve klinik avantajlar sergilemektedir.\n\nAjanlar Arası Toksisite Karşılaştırması: Kalsinörin inhibitörü grubu ilaçlar iskelet matrisi üzerindeki hasar potansiyelleri yönünden birbiriyle kıyaslandığında; TAKROLİMUS AVANTAJI: Takrolimus kullanımına bağlı gelişen kemik dokusu üzerindeki olumsuz kemik erimesi ve mineralizasyon kusuru etkilerinin, SİKLOSPORİN molekülüne oranla klinik olarak DAHA HAFİF ve TOLERANS SINIRLARI içinde seyrettiği dökümante edilmiştir.\n\nBu bilgi, kalsinörin inhibitörü alternatifleri kanonik dosyasında da tekrarlanır: '1. Kalsinörin İnhibitörleri Arası Rotasyon: Siklosporinden Takrolimusa Geçiş — Göreceli Toksisite ve Modifikasyon Rasyoneli: Her ikisi de kalsinörin inhibitörü (CNI) sınıfı altında yer almasına karşın, takrolimusun kemik dokusu üzerindeki olumsuz, katabolik etkilerinin siklosporine kıyasla DAHA HAFİF DÜZEYDE SEYRETTİĞİ bildirilmektedir. Bu spesifik farmakodinamik fark nedeniyle; siklosporin kullanan ve klinik takibinde BELİRGİN, AGRESİF kemik kaybı dökümante edilen hastalarda, GREFTİN İMMÜNOLOJİK TOLERANSI ve REJEKSİYON RİSK PROFİLİ ELVERDİĞİ ÖLÇÜDE takrolimusa geçiş (switch) yapılması, kemik mikromimarisini ve trabeküler bütünlüğü korumak adına KISMEN DAHA LEHTE bir iskelet profili sunabilir.'\n\nKlinik & YDUS Spot Bilgi — İmmünsüpresif İlaçlar Arası İskelet Toksisitesi Kıyası (Net YDUS Sorusu): 'Onkoloji, nefroloji ve endokrinoloji ortak yan dal sınavlarında kalsinörin inhibitörlerinin kemik mineral metabolizması üzerindeki göreceli toksisite farkları sıklıkla çeldirici olarak sorgulanır. Her iki kalsinörin inhibitörü de in vivo olarak osteoklastik yıkımı artırıp kemik döngüsünü hızlandırsa da, Takrolimusun (FK506) kemik dokusu üzerindeki olumsuz katabolik etkileri Siklosporin A (CsA) molekülüne kıyasla klinik ve yapısal olarak net bir biçimde daha hafif düzeyde seyretmektedir.'\n\nÖNEMLİ SINIRLAMA — Rejeksiyon Riski ÖNCELİKLİDİR: 'İmmünsüpresif medikal rejimin net olarak belirlenmesinde veya mevcut kalsinörin inhibitörlerinin... rotasyonunda, klinisyen adına BİRİNCİL ve ABSOLUT BELİRLEYİCİ PARAMETRE HER ZAMAN İÇİN organ reddinin (greft rejeksiyonunun) KESİN OLARAK ÖNLENMESİDİR.' Bu, kemik toksisitesi verilerinin ROTASYON kararında bir FAKTÖR olduğunu ama TEK ve BİRİNCİL belirleyici olmadığını gösterir — yani bu vakada takrolimusa geçiş 'kısmen daha lehte' bir seçenek olsa da, bu karar mutlaka greftin immünolojik toleransı çerçevesinde (rejeksiyon riskini artırmayacak şekilde) verilmelidir; kemik sağlığı asla greft sağlığından önce gelemez.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Her iki ajan da osteoklastik yıkımı artırır; takrolimusun etkisi siklosporinden net biçimde daha hafiftir; greft toleransı elverdiğinde siklosporin→takrolimus geçişi lehte bir iskelet profili sunabilir.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: TAKROLİMUS, siklosporine kıyasla kemik açısından DAHA AVANTAJLIDIR (daha hafif toksisite); önerilen geçiş yönü siklosporinden takrolimusa'dır, tersi değil.",
+        "C": "YANLIŞ — Kanonik metin iki ajan arasında NET BİR FARK tanımlar (takrolimus daha hafif); 'tamamen eşdeğer, fark yok' iddiası yanlıştır.",
+        "D": "YANLIŞ — Takrolimus da (siklosporin gibi) bir kalsinörin inhibitörüdür ve olumsuz kemik etkileri vardır, yalnızca siklosporinden DAHA HAFİFTİR; 'tamamen kemik-nötr' iddiası yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin rotasyon kararında birincil/absolut belirleyicinin GREFT REJEKSİYON RİSKİ olduğunu açıkça belirtir; kemik verilerinin tek başına, rejeksiyon riskinden bağımsız karar verdirdiği iddiası yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "takrolimus",
+        "siklosporin",
+        "immünsüpresif rotasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Kalsinörin İnhibitörü Alternatifi İmmünsüpresif Stratejiler"
+    },
+    {
+      "id": "s9",
+      "metin": "Kalsinörin inhibitörü tedavisine bağlı kemik kaybının zaman kinetiği ile ilgili hangi ifade DOĞRUDUR ve bu, profilaktik tedavi zamanlamasını nasıl etkiler?",
+      "secenekler": {
+        "A": "Profilaktik antirezorptif tedavi, DXA'da anlamlı densite kaybı NETLEŞENE KADAR beklenip sonra başlatılmalıdır.",
+        "B": "Kemik kaybının zaman kinetiği klinik yönetimde önemsizdir, tedavi zamanlaması rastgele belirlenebilir.",
+        "C": "Kalsinörin inhibitörüne bağlı kemik kaybı, tedavinin başlatıldığı İLK AYLARDA (özellikle ilk 3-6 ay) EN AGRESİF ve HIZLI fazında ortaya çıkar; bu nedenle DXA densite kayıplarının netleşmesini beklemek klinik bir hatadır — riskli hastalarda profilaktik antirezorptif koruma, böbrek fonksiyonları stabilize olur olmaz PROAKTİF olarak (ilk ay içinde) devreye sokulmalıdır.",
+        "D": "Kalsinörin inhibitörüne bağlı kemik kaybı doğrusal ve sabit hızda ilerler, ilk aylarda diğer dönemlerden farklı bir agresiflik göstermez.",
+        "E": "En agresif kemik kaybı tedavinin 5. yılından sonra, geç dönemde ortaya çıkar; ilk aylar görece güvenlidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Kalsinörin inhibitörüne bağlı kemik kaybı ilk 3-6 ayda en agresif fazındadır; DXA kayıplarını beklemek klinik hatadır — profilaktik antirezorptif koruma böbrek fonksiyonları stabilize olur olmaz (ilk ay) proaktif olarak başlanmalıdır.",
+      "aciklama_detay": "Zaman Kinetiği ve Kümülâtif Hasar Faktörleri: Kalsinörin inhibitörlerine sekonder gelişen iskelet kütlesi kayıpları ve mikromimari bozulmalar BELİRLİ BİR KİNETİK TAKVİME göre progresyon gösterir:\n\n⚡ Erken Faz Agresyonu: İlaç maruziyetine bağlı kemik kaybı, hücresel düzeyde ÖZELLİKLE TEDAVİNİN BAŞLATILDIĞI İLK AYLARDA EN AGRESİF ve HIZLI FAZDA ortaya çıkmaktadır.\n\n⚡ Kombine Risk Faktörleri: Bu spesifik hasta popülasyonunda post-transplant dönemde gelişecek osteoporotik frajilite kırık riski; SADECE ilacın DİREKT farmakodinamik yıkım etkisine değil, aynı zamanda hastanın İLERİ YAŞINA ve nakil öncesi KRONİK ORGAN YETMEZLİĞİNİN (üremi, siroz vb.) iskelet sisteminde bıraktığı KÜMÜLATİF PRE-OPERATİF HASARA da yakından bağlıdır.\n\nKlinik & YDUS Spot Bilgi — Kalsinörin İnhibitörü Kemik Hasarının Zaman Kinetiği Ayrımı: 'Kalsinörin inhibitörü kullanan organ nakli hastalarında osteoporotik süreçlerin gelişim hızı DOĞRUSAL DEĞİLDİR. Bu ajanlara bağlı gelişen kemik erimesi ve frajilite hasarı, tedavinin başlatıldığı İLK AYLARDA (özellikle İLK 3-6 AY) EN AGRESİF, EN HIZLI ve EN YIKICI FAZINDA ortaya çıkar. Bu nedenle hastada DXA densite kayıplarının netleşmesini beklemek KLİNİK BİR HATADIR; riskli hastalarda profilaktik anti-rezorptif (bisfosfonat) koruması İLK AY İÇİNDE, böbrek fonksiyonları stabilize olur olmaz PROAKTİF olarak devreye sokulmalıdır.'\n\nBu bilginin klinik önemi ÇOK BÜYÜKTÜR: 'DXA densite kayıplarının netleşmesini beklemek klinik bir hatadır' ifadesi, klasik/reaktif tıbbi yaklaşımdan (önce hasarı gözlemle, sonra tedavi et) FARKLI, PROAKTİF bir yaklaşımı zorunlu kılar. Eğer klinisyen bir hastada 6 ay veya 1 yıl sonra kontrol DXA çekip 'anlamlı kayıp var mı' diye bakıp SONRA tedavi başlatmaya karar verirse, bu hasta zaten en agresif kemik kaybı döneminden (ilk 3-6 ay) HİÇBİR KORUMA OLMADAN geçmiş olur — bu dönemde geri dönüşü zor mikromimari hasar ve kırıklar oluşabilir.\n\nBu nedenle doğru yaklaşım, riskli hastaları (yüksek doz kalsinörin inhibitörü + glukokortikoid alan tüm nakil hastalarını) BAŞLANGIÇTAN İTİBAREN (ilk ay içinde, böbrek fonksiyonu stabilize olur olmaz) profilaktik antirezorptif tedaviyle korumaktır — bu, 'transplantasyon sonrası osteoporoz' ana bölümünde de tanımlanan genel profilaksi zamanlama kuralıyla (böbrek fonksiyonları stabilize olunca, tipik olarak ilk ay içinde bisfosfonat başlanması) TAM TUTARLIDIR ve bu iki kaynak birbirini pekiştirir.\n\nBu zaman kinetiği bilgisi, ayrıca hastanın risk profilinin (yaş, nakil öncesi organ yetmezliğinin kümülatif hasarı) da kemik kaybı hızını modüle ettiğini gösterir — yani yalnızca 'ilaç etkisi' değil, hastanın BAZAL durumu da erken dönem agresyonunun şiddetini belirler.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin açıkça 'DXA densite kayıplarının netleşmesini beklemek KLİNİK BİR HATADIR' der; bu şık tam olarak bu hatalı yaklaşımı önermektedir.",
+        "B": "YANLIŞ — Zaman kinetiği bilgisi doğrudan tedavi zamanlaması kararını (ilk ay içinde proaktif başlama) belirler; kanonik metin bu bilgiyi 'Net YDUS Sorusu'/yüksek klinik önem taşıyan bir spot olarak işaretler, önemsiz olduğu iddiası yanlıştır.",
+        "C": "DOĞRU — Kemik kaybı ilk 3-6 ayda en agresif fazındadır; DXA kayıplarını beklemek klinik hatadır — profilaktik koruma böbrek fonksiyonları stabilize olur olmaz (ilk ay) proaktif başlanmalıdır.",
+        "D": "YANLIŞ — Kanonik metin açıkça 'gelişim hızı DOĞRUSAL DEĞİLDİR' der ve ilk 3-6 ayı 'en agresif, en hızlı ve en yıkıcı faz' olarak tanımlar; sabit hızda ilerlediği iddiası yanlıştır.",
+        "E": "YANLIŞ — Kanonik metin en agresif fazı İLK AYLAR (3-6 ay) olarak tanımlar, 5. yıl sonrası değil; bu şık zaman çizelgesini tamamen tersine çevirmektedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "kalsinörin inhibitörleri",
+        "zaman kinetiği",
+        "profilaksi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri"
+    },
+    {
+      "id": "s10",
+      "metin": "Kalp nakli alıcılarında oral alendronat ile İV zoledronik asidin lomber omurga KMY üzerindeki etkinliği karşılaştırıldığında hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Kalp naklinde her iki ajan da lomber omurga KMY'sini eşit oranda artırır, aralarında fark yoktur.",
+        "B": "Karaciğer naklinde olduğu gibi kalp naklinde de her iki ajan lomber KMY'de net artış sağlar, aralarında bölgesel bir fark yoktur.",
+        "C": "İV zoledronik asit kalp naklinde lomber omurgada kemik kaybını durduramaz, oral alendronat bu bölgede üstündür.",
+        "D": "Kalça KMY'de zoledronik asit alendronattan belirgin üstündür, ancak lomber omurgada iki ajan eşdeğerdir.",
+        "E": "Kalp nakli alıcılarında lomber omurgada oral alendronat kemik kaybını durduramayıp net düşüşe neden olurken, İV zoledronik asit başlangıca göre %1.6 oranında anlamlı KMY artışı sağlamıştır — zoledronik asit omurga düzeyinde net olarak alendronata üstündür. Kalça KMY'de ise ikisi de benzer koruyucu etkinlik gösterir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kalp naklinde lomber omurgada oral alendronat kemik kaybını durduramayıp düşüşe yol açarken, İV zoledronik asit %1.6 anlamlı KMY artışı sağlamıştır — zoledronik asit omurga düzeyinde alendronata üstündür; kalça KMY'de ise ikisi benzer koruyucu etki gösterir.",
+      "aciklama_detay": "🏢 Solid Organ Nakillerinde KMY Değişim Dinamikleri: Klinik çalışmalarda İV zoledronik asit ile oral alendronatın karşılaştırıldığı başa baş veri setleri incelendiğinde, ORGAN TİPİNE ve ANATOMİK BÖLGEYE göre farklı sonuçlar saptanmıştır:\n\nKalp Nakli Alıcıları:\n- Kalça KMY: Oral alendronat ve İV zoledronik asit BENZER koruyucu etkinlik gösterir (kemik kaybını önlemede eşdeğer).\n- Lomber Omurga KMY: Oral alendronat yanıtı — Lomber KMY değerinde NET DÜŞÜŞ/KAYIP (yani alendronat bu bölgede kemik kaybını DURDURAMAMIŞTIR). İV Zoledronik asit yanıtı — Başlangıca göre %1.6 ORANINDA ANLAMLI KMY ARTIŞI (ÜSTÜNLÜK).\n\nKaraciğer Nakli Alıcıları: (Kontrast amaçlı) Kalça KMY: Benzer koruyucu bariyer. Lomber Omurga KMY: Her iki ajan da LOMBER KMY DEĞERİNDE NET ARTIŞ sağlar — yani karaciğer naklinde bu bölgesel fark GÖZLENMEZ, iki ajan da eşit derecede etkilidir.\n\nBu karşılaştırma, aynı iki ajanın (alendronat vs. zoledronik asit) FARKLI transplant tiplerinde FARKLI göreceli etkinlik sergileyebileceğini gösterir — kalp naklinde belirgin bir bölgesel (lomber omurga) üstünlük varken, karaciğer naklinde böyle bir fark yoktur. Bu, klinisyenin bisfosfonat seçimini yalnızca 'genel etkinlik' düşünerek değil, SPESİFİK TRANSPLANT TİPİNE göre bireyselleştirilmiş şekilde yapması gerektiğini gösterir.\n\nKlinik & YDUS Spot Bilgi — Kalp Naklinde Bölgesel Kemik Koruma Ayrımı (Üst Düzey YDUS Spotu): 'Klinik vaka sorularında bisfosfonatların solid organ nakillerindeki anatomik etkinlik farkları çeldirici olarak kullanılabilir. Karaciğer naklinde her iki ajan da lomber KMY'yi artırırken; Kalp Nakli (Heart Transplantation) alıcılarında oral alendronat grubu lomber omurgada kemik kaybını durduramayıp düşüşe neden olurken, İV Zoledronik asit başlangıca göre %1.6 oranında net omurga densite artışı sağlamıştır. Kalp naklinde zoledronik asit omurga düzeyinde net olarak alendronata üstündür.'\n\nBu bilgi, genel bölümde tanımlanan 'İV zoledronik asit tedavisi genellikle oral ajanlara tercih edilmektedir' önerisinin altında yatan SPESİFİK klinik kanıtlardan biridir — yalnızca 'hasta uyumu kolaylığı' değil, SPESİFİK organ tiplerinde (kalp naklinde omurga gibi) belgelenmiş ÜSTÜN etkinlik de zoledronik asidi tercih edilir kılan bir faktördür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin lomber omurgada AÇIK BİR FARK tanımlar (alendronat düşüş, zoledronik asit %1.6 artış); 'eşit oranda' iddiası yanlıştır.",
+        "B": "YANLIŞ — Bu bölgesel fark KALP naklinde tanımlanmıştır (karaciğer naklinde değil); kanonik metin karaciğer nakli için 'her iki ajan lomber KMY'yi artırır' derken, kalp nakli için özellikle bir bölgesel ayrım tanımlar.",
+        "C": "YANLIŞ — Kanonik metin tam tersini belirtir: İV zoledronik asit kalp naklinde lomber omurgada %1.6 ARTIŞ sağlar (kemik kaybını durduran/tersine çeviren ajan zoledronik asittir), alendronat değil.",
+        "D": "YANLIŞ — Kalça KMY'de kanonik metin ikisini de 'benzer koruyucu etkinlik' olarak tanımlar (üstünlük yok); asıl fark LOMBER OMURGADA gözlenir, kalçada değil — bu şık farkın konumunu ters çevirmektedir.",
+        "E": "DOĞRU — Kalp naklinde lomber omurgada alendronat düşüşü durduramaz, zoledronik asit %1.6 artış sağlar (zoledronik asit üstün); kalça KMY'de ikisi benzer etkinlik gösterir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "kalp nakli",
+        "zoledronik asit",
+        "alendronat",
+        "lomber KMY"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
+    },
+    {
+      "id": "s11",
+      "metin": "Post-transplant bisfosfonat tedavisi (özellikle İV zoledronik asit) alan bir hastanın laboratuvar takibinde serum kreatinin 2.3 mg/dL'ye yükseliyor.\n\nBu bulgu ile ilgili klinik eylem hangi ifade DOĞRUDUR?",
+      "secenekler": {
+        "A": "Kreatinin 2 mg/dL eşiği yalnızca teoriktir, klinik pratikte hiçbir doz modifikasyonu yapılmaz.",
+        "B": "Serum kreatinin 2 mg/dL üzerine çıktığında veya GFR %30 altına gerilediğinde, ilaç dozu acilen yarıya düşürülmeli veya bisfosfonat tamamen kesilerek denosumab ya da aktif D vitamini gibi alternatif metabolik yollara başvurulmalıdır.",
+        "C": "Kreatinin 2.3 mg/dL'ye yükselmesi klinik olarak önemsizdir, bisfosfonat aynı dozda devam ettirilebilir.",
+        "D": "Bu eşik yalnızca oral bisfosfonatlar için geçerlidir, İV formlarda kreatinin takibi gerekmez.",
+        "E": "Kreatinin yüksekliğinde tek eylem, ilaç dozunu iki katına çıkarmaktır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Serum kreatinin 2 mg/dL üzerine çıkarsa veya GFR %30 altına gerilerse, İV bisfosfonat dozu acilen yarıya düşürülmeli veya tamamen kesilip denosumab/aktif D vitamini gibi alternatiflere geçilmelidir.",
+      "aciklama_detay": "🚨 Greft Güvenliği: Renal Monitorizasyon ve Hipokalsemi Bariyeri: Organ nakli hastalarında hangi bisfosfonat sınıfı tercih edilirse edilsin, tedavinin güvenliliği ve NEFROTOKSİK HASARLARIN ENGELLENMESİ açısından greft organ veya doğal böbrek fonksiyonları STRİKT bir şekilde izlenmelidir.\n\n🔥 1. Renal Güvenlik ve Doz Modifikasyon Eşikleri: İV bisfosfonat uygulamalarında hastanın kreatinin klirensi HER DOZ ÖNCESİ ABSOLUT TAKİP EDİLMELİDİR:\n- Serum kreatinin düzeyi 2 mg/dL ÜZERİNE ÇIKARSA,\n- VEYA hesaplanan GFR değeri %30 ALTINA GERİLERSE;\n\nKlinik Eylem: İLAÇ DOZU ACİLEN YARIYA DÜŞÜRÜLMELİ VEYA bisfosfonat grubu TAMAMEN KESİLEREK denosumab ya da aktif D vitamini gibi ALTERNATİF METABOLİK YOLLARA BAŞVURULMALIDIR.\n\nBu vakadaki hasta (kreatinin 2.3 mg/dL) tam olarak bu eşiğin (>2 mg/dL) ÜZERİNDEDİR, bu nedenle acil doz modifikasyonu VEYA ilacın tamamen kesilip alternatif ajana (denosumab veya kalsitriol) geçiş kararı verilmelidir.\n\nBu eşiklerin klinik önemi, bisfosfonatların (özellikle İV formların) renal yoldan atılması ve böbrek fonksiyon bozukluğunda birikerek AKUT TÜBÜLER NEKROZ gibi NEFROTOKSİK hasara yol açabilmesidir — bu, organ nakli hastalarında ÇİFTE bir tehlike oluşturur: (1) hastanın kendi doğal böbreği zaten (özellikle böbrek nakli olmayan diğer solid organ nakli hastalarında) hasar görebilir VEYA (2) böbrek nakli hastasında GREFT böbreğin kendisi bu nefrotoksisiteden zarar görebilir — bu nedenle 'greft güvenliği' terimi özellikle vurgulanır.\n\nKlinik & YDUS Spot Bilgi — Greft Koruma: Bisfosfonat Kesim Sınırları (Nefroloji & Endokrin): 'Nakil sonrasında bisfosfonat kullanımında nefroloji ve endokrinoloji ortak kılavuz sınırları akut tubüler hasarı engellemek için ÇOK STRİKTİR. Doz modifikasyonu veya ilaç kesimini gerektiren absolut laboratuvar sınırları sınavlarda net olarak sorgulanır: Serum kreatinin >2 mg/dL VEYA GFR<%30 olduğu ANDAN İTİBAREN mevcut İV bisfosfonat şeması YARIYA İNMELİ veya ALTERNATİF MODALİTELER PLANLANMALIDIR.'\n\nBu eşik değerleri (kreatinin>2 mg/dL, GFR<%30), bu bölümde tanımlanan diğer bir eşikle (bisfosfonatın ABSOLUT KONTRENDİKE olduğu GFR<30-35 mL/dk eşiği) YAKINDIR ama tam olarak AYNI DEĞİLDİR — GFR%30 eşiği DOZ AYARLAMASI/kesim kararını tetiklerken, GFR 30-35 mL/dk eşiği (ana bölümde tanımlanan) TAM KONTRENDİKASYON'u tanımlar; bu iki eşik BİRLİKTE değerlendirildiğinde, GFR düştükçe önce doz ayarlaması, sonra (daha da düştüğünde) tam kontrendikasyon/alternatif ajana geçiş şeklinde KADEMELİ bir yönetim algoritması ortaya çıkar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin bu eşikleri 'sınavlarda net olarak sorgulanır' diyerek özellikle vurgular ve 'absolut laboratuvar sınırları' olarak tanımlar; teorik/uygulanmaz olduğu iddiası yanlıştır.",
+        "B": "DOĞRU — Kreatinin>2 mg/dL veya GFR<%30'da İV bisfosfonat dozu acilen yarıya düşürülmeli veya tamamen kesilip denosumab/aktif D vitamini gibi alternatiflere geçilmelidir.",
+        "C": "YANLIŞ — Kanonik metin bu eşiği (>2 mg/dL) 'absolut takip edilmelidir' ve doz modifikasyonu/kesim gerektiren bir eşik olarak tanımlar; önemsiz olduğu iddiası yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin bu eşiği spesifik olarak 'İV bisfosfonat uygulamalarında' bağlamında tanımlar; yalnızca oral formlar için geçerli olduğu iddiası tam tersini söylemektedir.",
+        "E": "YANLIŞ — Kanonik metin dozun YARIYA DÜŞÜRÜLMESİNİ veya KESİLMESİNİ önerir, İKİYE KATLANMASINI değil; doz artırma bu klinik senaryoda tehlikeli ve yanlış bir eylemdir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "zoledronik asit",
+        "renal güvenlik",
+        "nefrotoksisite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Post-Transplantasyon Kemik Kaybında Bisfosfonat Seçimi"
+    },
+    {
+      "id": "s12",
+      "metin": "Kemik güvenliği açısından kalsinörin inhibitörlerine (siklosporin/takrolimus) alternatif olarak değerlendirilebilecek antimetabolit ajanlar hangileridir ve deneysel kanıt neyi göstermektedir?",
+      "secenekler": {
+        "A": "Mikofenolat mofetil ve azatiyoprin, kalsinörin inhibitörlerinden daha güçlü kemik toksisitesi gösterir.",
+        "B": "Antimetabolit ajanların kemik metabolizması üzerindeki etkisi hiç araştırılmamıştır.",
+        "C": "MMF ve AZA yalnızca insan klinik çalışmalarında değerlendirilmiştir, hayvan modeli verisi mevcut değildir.",
+        "D": "Antimetabolitler kalsinörin yolağı üzerinden etki gösterir, bu nedenle aynı kemik toksisitesini taşırlar.",
+        "E": "Mikofenolat mofetil (MMF) ve azatiyoprin (AZA); sıçan modellerinde bu ajanların (rapamisin ile birlikte) toplam kemik hacmi üzerinde herhangi bir olumsuz/azaltıcı etki göstermediği saptanmış, kalsinörin inhibitörlerine kıyasla iskelet açısından daha güvenilir alternatifler olarak desteklenmiştir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "MMF ve azatiyoprin (AZA), sıçan modellerinde rapamisinle birlikte toplam kemik hacmi üzerinde olumsuz/azaltıcı etki göstermemiştir; kalsinörin inhibitörlerine kıyasla iskelet açısından daha güvenilir alternatifler olarak akademik olarak desteklenmektedir.",
+      "aciklama_detay": "2. Antimetabolitler ve Genişletilmiş İmmünsüpresif Alternatifler Matrisi: Kalsinörin yolağından TAMAMEN BAĞIMSIZ hücresel mekanizmalar üzerinden etki gösteren immünsüpresif moleküllerin kemik mineral metabolizması ve iskelet matrisi üzerindeki net etkileri spesifik olarak incelenmiştir.\n\nDeneysel Sıçan Modelleri ve Antimetabolit Güvenliği: Sıçan modelleri üzerinde yürütülen deneysel farmakoloji çalışmalarında; MİKOFENOLAT MOFETİL (MMF), RAPAMİSİN (SİROLİMUS) ve AZATİYOPRİN (AZA) kullanımının TOPLAM KEMİK HACMİ üzerinde HERHANGİ BİR OLUMSUZ VEYA AZALTICI ETKİ GÖSTERMEDİĞİ NET olarak saptanmıştır.\n\nKlinik Çıkarım: Bu veriler ışığında, MİKOFENOLAT MOFETİL ve AZATİYOPRİN gibi antimetabolit sınıfı ajanların, kemik kütlesini ve mineralizasyon dengesini kalsinörin inhibitörleri kadar AGRESİF bir şekilde OLUMSUZ ETKİLEMEDİĞİ ve iskelet sistemi açısından ÇOK DAHA GÜVENİLİR metabolik alternatifler olabileceği AKADEMİK OLARAK GÜÇLÜ ŞEKİLDE DESTEKLENMEKTEDİR.\n\nKlinik & YDUS Spot Bilgi — Antimetabolitlerin İskelet Güvenliği ve Klinik Üstünlüğü (YDUS Soru Kalıbı): 'Transplantasyon sonrası osteoporoz ve immünsüpresif modifikasyon sorularında ajanların kemik matrisine etkileri sıkça sorgulanır. Kalsinörin inhibitörleri (Siklosporin/Takrolimus) osteoklastik yıkımı doğrudan uyarırken; kalsinörin yolağından bağımsız çalışan Mikofenolat Mofetil (MMF) ve Azatiyoprin (AZA) gibi antimetabolit ajanlar kemik kütlesini ve hacmini agresif şekilde OLUMSUZ ETKİLEMEZLER. İskelet sistemi yönünden CNI grubuna göre net olarak daha güvenilir alternatiflerdir.'\n\nBu bilginin mekanizması, kalsinörin inhibitörlerinin (siklosporin/takrolimus) doğrudan osteoklastik rezorpsiyonu uyaran, KALSİNÖRİN-NFAT sinyal yolağı üzerinden çalışan bir farmakodinamik profile sahip olması ile ilişkilidir — bu yolak, hem T-hücre aktivasyonunda (immünsüpresif etki için istenen) hem de kemik hücrelerinde (osteoklast aktivasyonu, istenmeyen yan etki) rol oynar. Antimetabolitler (MMF, AZA) ise TAMAMEN FARKLI bir mekanizmayla (pürin sentezi inhibisyonu — hücre proliferasyonunu bloke ederek) immünsüpresyon sağlar ve bu yolak kemik hücrelerinde aynı doğrudan osteoklast-uyarıcı etkiyi göstermez — bu, neden antimetabolitlerin 'kalsinörin yolağından bağımsız' olarak kemik-güvenli olduğunu açıklayan mekanistik temeldir.\n\nBu bilginin klinik önemi, bir transplant hastasında ağır kemik kaybı gelişirse ve kalsinörin inhibitörü dozunun azaltılması/değiştirilmesi gerekiyorsa (rejeksiyon riski elverdiğince), MMF veya AZA gibi antimetabolit ajanlara geçişin (veya bu ajanlarla kombinasyonla kalsinörin inhibitörü dozunun azaltılmasının) kemik koruyucu bir strateji olarak düşünülebileceğini göstermesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kanonik metin tam tersini belirtir: MMF ve AZA kalsinörin inhibitörlerinden DAHA GÜVENİLİR alternatiflerdir, daha güçlü toksisite göstermezler.",
+        "B": "YANLIŞ — Kanonik metin sıçan modellerinde bu ajanların kemik etkisinin SPESİFİK OLARAK İNCELENDİĞİNİ ve 'net olarak saptandığını' belirtir; hiç araştırılmadığı iddiası yanlıştır.",
+        "C": "YANLIŞ — Kanonik metin araştırmayı SIÇAN (hayvan) modelleri üzerinde tanımlar; 'yalnızca insan klinik çalışmaları' iddiası kaynaktaki veri tipini yanlış tanımlamaktadır.",
+        "D": "YANLIŞ — Kanonik metin antimetabolitleri özellikle 'kalsinörin YOLAĞINDAN TAMAMEN BAĞIMSIZ' olarak tanımlar; aynı yolak/aynı toksisite iddiası doğrudan yanlıştır.",
+        "E": "DOĞRU — MMF ve AZA (rapamisin ile birlikte), sıçan modellerinde toplam kemik hacmini olumsuz etkilememiştir; kalsinörin inhibitörlerine kıyasla iskelet açısından daha güvenilir alternatifler olarak desteklenmektedir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "mikofenolat mofetil",
+        "azatiyoprin",
+        "antimetabolit"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Kalsinörin İnhibitörü Alternatifi İmmünsüpresif Stratejiler"
+    },
+    {
+      "id": "s13",
+      "metin": "mTOR inhibitörlerinin (rapamisin/sirolimus, everolimus) kemik metabolizması üzerindeki etkisi araştırılırken, hayvan modeli verileri ile ulusal klinik kılavuzların pozisyonu arasında bir çelişki gözleniyor.\n\nBu çelişki karşısında klinik yönetimde hangi yaklaşım DOĞRUDUR?",
+      "secenekler": {
+        "A": "Sıçan/hayvan modellerinde rapamisin kemik hacmi üzerinde olumsuz etki göstermemiş olsa dahi, ulusal klinik kılavuzlar mTOR inhibitörlerini (rapamisin/sirolimus, everolimus) insan fizyolojisinde kemik kaybına yol açabilen, kırık riskini körükleyen riskli immünsüpresif protokoller arasında sınıflandırır — klinik yönetimde hayvan verisine değil kılavuz uyarısına göre hareket edilmelidir.",
+        "B": "Hayvan modeli verisi her zaman insan klinik pratiğine doğrudan uygulanmalıdır, kılavuz uyarıları göz ardı edilebilir.",
+        "C": "mTOR inhibitörleri hiçbir kılavuzda riskli olarak sınıflandırılmamıştır, tamamen kemik-güvenli kabul edilir.",
+        "D": "Bu çelişki klinik önemi olmayan, göz ardı edilebilecek akademik bir ayrıntıdır.",
+        "E": "mTOR inhibitörleri yalnızca hayvan modellerinde test edilmiştir, insan kullanımı hiçbir zaman onaylanmamıştır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hayvan modellerinde rapamisin kemik hacmini olumsuz etkilememiş olsa da, ulusal kılavuzlar mTOR inhibitörlerini (sirolimus, everolimus) kemik kaybına/kırığa yol açabilen riskli immünsüpresif protokoller arasında sınıflandırır — klinik yönetim hayvan verisine değil kılavuz uyarısına göre yapılmalıdır.",
+      "aciklama_detay": "mTOR İnhibitörleri ve Ulusal Kılavuz Gerçekliği: Hayvan modellerinde kemik hacmini NEGATİF YÖNDE ETKİLEMEDİĞİ dökümante edilen rapamisin (sirolimus) gibi ajanların insanlardaki klinik kullanımında ve kombinasyon protokollerinde BAZI KRİTİK HUSUSLARA ABSOLUT DİKKAT EDİLMELİDİR.\n\n⚠️ Kılavuz Uyarısı: Güncel ULUSAL KILAVUZLAR; organ nakli sonrasında uygulanan glukokortikoidler ve kalsinörin inhibitörlerinin yanı sıra, GENEL ANLAMDA mTOR İNHİBİTÖRLERİNİN de (rapamisin/sirolimus VE everolimus) İNSAN FİZYOLOJİSİNDE KEMİK KAYBINA YOL AÇABİLEN, KIRIK RİSKİNİ KÖRÜKLEYEN İMMÜNSÜPRESİF PROTOKOLLER ARASINDA YER ALDIĞINI AÇIKÇA BELİRTMEKTEDİR.\n\nKlinik & YDUS Spot Bilgi — mTOR İnhibitörlerinde Hayvan Modeli vs. Ulusal Kılavuz Çelişkisi: 'Klinik sınavlarda EN TEHLİKELİ ÇELDİRİCİLERDEN BİRİ mTOR inhibitörlerinin kemik üzerindeki etkisidir. Sıçan/hayvan modellerinde yapılan deneysel çalışmalarda rapamisin (sirolimus) kemik hacmi üzerinde herhangi bir azaltıcı/olumsuz etki GÖSTERMEMİŞ olsa DAHİ; ulusal klinik kılavuzlarda mTOR inhibitörleri (rapamisin/sirolimus ve everolimus) insan fizyolojisinde NET OLARAK KEMİK KAYBINA yol açabilen RİSKLİ immünsüpresif protokoller kategorisinde SINIFLANDIRILMIŞTIR. Klinik yönetimde HAYVAN VERİSİNE DEĞİL, KILAVUZ UYARISINA göre hareket edilmelidir.'\n\nBu 'çelişki' bilgisi, tıp eğitiminde önemli bir metodolojik ders içerir: HAYVAN MODELİ VERİSİ ile İNSAN KLİNİK GERÇEKLİĞİ HER ZAMAN BİREBİR ÖRTÜŞMEZ. Sıçan modelleri, tek bir değişkeni (ajanın kendisi) izole edilmiş koşullarda test edebilirken, gerçek insan hastalarda (özellikle transplant popülasyonunda) çoklu faktörler (kombinasyon tedavileri, komorbiditeler, uzun dönem kümülatif etkiler, farklı doz rejimleri) devreye girer — bu nedenle bir ajanın hayvan modelinde 'güvenli' görünmesi, insan klinik pratiğinde kesin güvenlik garantisi ANLAMINA GELMEZ.\n\nBu bilginin sınav açısından önemi de vurgulanır: 'en tehlikeli çeldiricilerden biri' ifadesi, bu konunun sınavlarda YANLIŞ cevaba yönlendirmek için özellikle kullanılabileceğini gösterir — bir öğrenci yalnızca 'hayvan modelinde zararsız bulundu' bilgisini bilip bunu klinik pratik önerisi olarak yorumlarsa (mTOR inhibitörlerinin kemik-güvenli olduğunu düşünürse), YANLIŞ bir klinik karar verebilir. Doğru yaklaşım, GÜNCEL ULUSAL/ULUSLARARASI KILAVUZLARIN pozisyonunu ESAS ALMAK ve bunun hayvan verisiyle çelişse dahi kılavuzu takip etmektir — çünkü kılavuzlar, hayvan verisinin ötesinde daha geniş klinik gözlem/epidemiyolojik veriye dayanır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Hayvan modellerinde rapamisin kemiği olumsuz etkilemese de, ulusal kılavuzlar mTOR inhibitörlerini riskli immünsüpresif protokoller arasında sınıflandırır; klinik yönetim kılavuz uyarısına göre yapılmalıdır.",
+        "B": "YANLIŞ — Kanonik metin tam tersini belirtir: 'Klinik yönetimde hayvan verisine DEĞİL, KILAVUZ UYARISINA göre hareket edilmelidir'; hayvan verisinin doğrudan uygulanması gerektiği iddiası yanlıştır.",
+        "C": "YANLIŞ — Kanonik metin ulusal kılavuzların mTOR inhibitörlerini AÇIKÇA riskli/kemik kaybına yol açabilen protokoller kategorisinde sınıflandırdığını belirtir; 'hiçbir kılavuzda riskli sınıflandırılmadı' iddiası doğrudan yanlıştır.",
+        "D": "YANLIŞ — Kanonik metin bu çelişkiyi 'en tehlikeli çeldiricilerden biri' olarak, yani YÜKSEK klinik/sınav önemi taşıyan bir konu olarak işaretler; önemsiz olduğu iddiası yanlıştır.",
+        "E": "YANLIŞ — mTOR inhibitörleri (sirolimus, everolimus) kanonik metinde İNSAN klinik kullanımında/kombinasyon protokollerinde tanımlanır (organ nakli hastalarında kullanılan ajanlardır); yalnızca hayvan modelleriyle sınırlı olduğu iddiası yanlıştır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "transplantasyon osteoporozu",
+        "mTOR inhibitörleri",
+        "sirolimus",
+        "everolimus",
+        "kılavuz vs hayvan modeli"
+      ],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Kalsinörin İnhibitörü Alternatifi İmmünsüpresif Stratejiler"
+    }
+  ]
+}
