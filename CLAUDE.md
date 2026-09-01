@@ -28880,3 +28880,76 @@ ve tek genişlikte ölçülen kapsam iddiası eksiktir.** Bu depoda aynı ders
 kez de ölçüt tek MEKANİZMAYA bakıyordu (erişilebilir ad). Kapsam iddiası
 yazarken üçünü birden sor: hangi sayfalar, hangi genişlikler, hangi
 mekanizmalar?
+
+### ÜÇ MERCEK ÖLÇÜLDÜ, ÜÇÜ DE TEMİZ — ve biri KENDİ BULGUMU çürüttü
+
+Mobil geçişin devamında üç eksen sürüldü; hiçbiri kusur vermedi. Kayda
+geçmelerinin sebebi sonuç değil **kapsam**: ölçülmüş bir eksen yeniden
+ölçülmesin, ve üçüncüsü bu oturumda yazdığım yanlış bir iddiayı düzeltiyor.
+
+#### 1) 9px arayüz metni — kusur yok
+
+Okuma gövdesinin kendi tabanı var (`[data-readable]` içinde 14px, telefonda
+15px) ama ARAYÜZ etiketleri o tabanın dışında. Ölçüldü (375px, canlı,
+`[data-readable]` elenerek):
+
+| yüzey | 11px altı | 9px |
+|---|---|---|
+| ana sayfa | **43** | **27** |
+| branş sayfası | 9 | — |
+
+Sayı büyük ama içerik okununca sınıf temiz çıktı: 27 kaydın 26'sı **kısa
+mikro-etiket** (`Beta` · `Branş` · `Konu` · `Araç` · `Araçlar` · 13 tane
+`N konu` sayacı), hepsi kalın (700/900) ve kontrastları **7.20–14.69**.
+
+İki uç ayrıca bakıldı ve ikisi de eşiği geçiyor:
+
+| öge | kontrast |
+|---|---|
+| `10 branş` · `3 branş` (sayfanın en düşüğü) | **4.52** (eşik 4.5) |
+| 36 karakterlik tek cümle: *"Uzmanlık düzeyinde güncel anlatımlar"* | 7.20 |
+
+Sonuncusu etiket değil bir bölüm alt başlığı — ama kalın, kısa ve tek satır.
+9px tutarlı bir mikro-etiket dili (27 örnek); değiştirmek bir TİPOGRAFİ
+kararı, ölçülmüş bir kusur değil. **Dokunulmadı.**
+
+#### 2) Mobil menü — sağlıklı
+
+Masaüstü branş şeridi `hidden lg:flex`, yani telefonda birincil gezinme bu.
+İki genişlikte ölçüldü:
+
+| ölçüt | 320px | 375px |
+|---|---|---|
+| düğme hedefi | **44×44** | 44×44 |
+| `aria-expanded` | false → **true** | false → true |
+| görünür öge | 42 → **59** | 42 → 59 |
+| panel | y64 · **h588** · alt 652 | aynı |
+| **görünümü aşıyor mu** (812) | **HAYIR** | HAYIR |
+| yatay kayma | **0** | 0 |
+
+Tek "küçük hedef" atlama bağlantısı — belgede kayıtlı yanlış pozitif.
+
+#### 3) ⚠ KENDİ BULGUM ÇÜRÜDÜ — `/uyelik` "ilk ekranda 0 eylem"
+
+Bu oturumda `/uyelik` için şunu yazmıştım: *ilk ekranda hiç etkileşimli öge
+yok, sayfanın kendi CTA'sı y=2360'ta (2.9 ekran aşağıda).* İkinci yarısı
+doğru, **birincisi yanlıştı** — tarama `r.top >= başlıkYüksekliği` ile
+BAŞLIK ÇUBUĞUNU bilerek eliyordu.
+
+Ölçüldü (390px, üç yüzeyde):
+
+| ölçüt | `/` | konu | `/uyelik` |
+|---|---|---|---|
+| `position` | **sticky** | sticky | sticky · z50 |
+| **1500–1600px kaydırdıktan sonra `headerY`** | **0** | **0** | **0** |
+| **"Üye Ol"** | y**14** · 62×36 · `/kayit` | y14 | y14 |
+
+Yani kayıt eylemi `(site)` genelinde **kalıcı olarak bir dokunuş uzakta** ve
+kaydırmadan bağımsız. Sayfanın kendi satır içi CTA'sının aşağıda olması bir
+"önce anlat, sonra iste" kurgusu; boşluk değil.
+
+**Aktarılabilir kural: bir "ilk ekran" ölçümünde SABİT katmanları eleme.**
+Yapışkan bir başlık ilk ekranın parçasıdır ve çoğu zaman sayfanın en
+erişilebilir eylemini taşır. Eleyen bir ölçüt, olmayan bir dönüşüm boşluğu
+uydurur — bu turda tam olarak öyle oldu ve düzeltmeye kalkışsaydım var olan
+tek CTA'yı çoğaltmış olacaktım.
