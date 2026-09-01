@@ -57,10 +57,19 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
 
         <div className="mx-auto max-w-[1400px] px-6 py-12 md:py-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+          {/* Mobilde link gruplari YAN YANA. Olculdu (canli, /tekrar):
+              alt bilgi 962px yani 1.18 ekran ve o sayfanin %52.3u.
+              Uc blok alt alta yigiliyordu; ikisi (Kutuphane 4 bag,
+              Platform 5 bag) yan yana alininca 962 -> 741 (375px) ve
+              978 -> 757 (320px), yani -221px. Kolon 156/128px, tasma 0,
+              24px alti dokunma hedefi 0, yalnizca "Klinik Araclar &
+              Algoritmalar" iki satira sariyor. gap-x-4: 32px yatay
+              bosluk kolonu 120pxe dusurup ikinci bir bagi da sardiriyordu.
+              md ve ustunde 12 kolonlu duzen aynen duruyor. */}
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-12 md:gap-8 mb-12">
             
             {/* 1. Kolon: Logo ve Vizyon */}
-            <div className="md:col-span-5">
+            <div className="col-span-2 md:col-span-5">
               <Link href="/" className="inline-block font-black text-3xl tracking-tight text-white mb-4">
                 <span className="text-blue-500 italic">Medi</span>Sea
               </Link>

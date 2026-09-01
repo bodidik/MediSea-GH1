@@ -28953,3 +28953,100 @@ Yapışkan bir başlık ilk ekranın parçasıdır ve çoğu zaman sayfanın en
 erişilebilir eylemini taşır. Eleyen bir ölçüt, olmayan bir dönüşüm boşluğu
 uydurur — bu turda tam olarak öyle oldu ve düzeltmeye kalkışsaydım var olan
 tek CTA'yı çoğaltmış olacaktım.
+
+### ÇALIŞMA SAYFASININ %52'Sİ ALT BİLGİYDİ — üç blok mobilde alt alta yığılıyordu
+
+Yeni eksen: **her sayfada duran KABUK, kısa sayfalarda ne kadar yer
+kaplıyor?** Bu depoda alt bilgi bugüne kadar yalnızca içerik ekseninde
+ölçülmüştü (bağlantı sayısı, sorumluluk cümlesi, `noindex` kararı);
+GEOMETRİSİNE hiç bakılmamıştı.
+
+Ölçüldü (canlı, 375px):
+
+| yüzey | belge | alt bilgi | **oran** |
+|---|---|---|---|
+| **`/tekrar`** | 1839 (2.26 ekran) | **962** | **%52.3** |
+| `/calisma-alanim` | 2458 | 962 | %39.1 |
+| `/uyelik` | 3519 | 962 | %27.3 |
+| konu sayfası | 7591 | 962 | %12.7 |
+
+Yani ürünün imza çalışma yüzeyinin **yarısından fazlası** alt bilgiydi.
+Masaüstünde aynı blok 488px — mobilde tam iki katına çıkıyor.
+
+#### Anatomi: sebep üç blokun ALT ALTA yığılması
+
+| parça | 375px |
+|---|---|
+| ızgara (`grid-cols-1`, `gap-10`) | **681** |
+| — marka bloğu (1 bağ) | 179 |
+| — Kütüphane (4 bağ) | 193 |
+| — Platform (5 bağ) | 229 |
+| — iki boşluk × 40px | 80 |
+| sorumluluk cümlesi | 72 |
+| telif satırı | 49 |
+
+384px'lik ilk çocuk mutlak konumlu bir süsleme; yüksekliğe katkısı **yok**
+(ölçüldü — bu depoda taşma taramalarında kayıtlı yanlış pozitifin aynısı).
+
+#### Seçenek TARTIŞMAYLA DEĞİL ÖLÇÜLEREK seçildi
+
+Üç seçenek kaynağa dokunmadan tarayıcıda sürüldü (`/tekrar`, 375px):
+
+| seçenek | alt bilgi | kazanç |
+|---|---|---|
+| bugün | 962 | — |
+| A: boşluk 40 → 24 | 930 | **−32** |
+| B: iki link grubu YAN YANA | 749 | −213 |
+| **B + boşluk 16/32** | **741** | **−221** |
+
+A tek başına %3 — marjinal. B'nin kazancı yedi katı.
+
+Sarmalayıcı `<div>` EKLENMEDİ; Tailwind-yerel yol yeterli:
+`grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-12 md:gap-8` ve marka bloğu
+`col-span-2 md:col-span-5`. Yani mobilde marka tam genişlik, iki link
+grubu yan yana; **md ve üstünde 12 kolonlu düzen aynen duruyor.**
+
+**Yatay boşluk 16px, 32 DEĞİL — ve bu ölçümle seçildi:** 32px'te kolon
+320'de 120px'e düşüyor ve İKİ bağ birden iki satıra sarıyor (alt bilgi 777);
+16px'te kolon 128px ve yalnızca "Klinik Araçlar & Algoritmalar" sarıyor
+(757). Dikey boşluk 32'de kaldı — o, blokları ayıran şey.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| `/tekrar` 375px alt bilgi · oran | 962 · **%52.3** | **741 · %45.8** |
+| `/tekrar` 320px alt bilgi | 978 | **757** |
+| `/calisma-alanim` · `/uyelik` · konu | %39.1 · %27.3 · %12.7 | **%33.1 · %22.5 · %10.1** |
+| kolon genişliği (375 · 320) | — | 155.5 · **128** |
+| iki satıra saran bağ | — | **1** (aynı bağ, iki genişlikte de) |
+| **negatif** — MASAÜSTÜ 1280 alt bilgi | **488** | **488 — BİREBİR** |
+| **negatif** — masaüstü ızgara | 12 kolon · 32/32 | **12 kolon · 32/32** (`md:gap-8` kazanıyor) |
+| **negatif** — masaüstü marka · Kütüphane genişliği | 495 · 284 | **495 · 284** |
+| **negatif** — konu sayfası masaüstü belgesi | **3720** | **3720 — BİREBİR** |
+| **negatif** — okuma alanı karakter sayısı | 5025 | **5025 — BİREBİR** |
+| **negatif** — alt bilgi bağ sayısı · `h1` · `main` | 10 · 1 · 1 | **10 · 1 · 1** |
+| **negatif** — 24px altı dokunma hedefi · taşan öge | 0 · 0 | **0 · 0** |
+| **negatif** — 320/375/1280 yatay kayma | 0 | **0** |
+| üretilmiş çıktı | eski ızgara 442 sayfa | **yeni 442 · eski 0** |
+| 7 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+#### ⚠ YENİ ÖLÇÜM TUZAĞI — `scrollHeight` iframe YÜKSEKLİĞİNE de bağlı
+
+Masaüstü negatif kontrolünde ana sayfa **1365** çıktı, oysa iki tur önce
+kayıtlı değer **1453** idi ve bir an 88px'lik bir gerileme sanıldı.
+
+Ayrıştırıldı: `main` yüksekliği **tam 812** — yani iframe yüksekliğinin
+kendisi. Ana sayfanın gövdesi görünümden kısa ve `main` görünüme kilitli,
+dolayısıyla `65 + 812 + 488 = 1365`. Aynı sayfa **900px** yüksekliğinde
+ölçülünce **1453** — kayıtlı değerle birebir.
+
+Yani fark üründe değil ÖLÇÜM BAĞLAMINDAYDI: eski kayıt 1280×**900**'de
+alınmıştı. Bu depoda kayıtlı `clientWidth` kalibrasyonunun ikinci ekseni —
+**görünüme kilitli bir `main` taşıyan sayfada `scrollHeight` genişliğe
+değil YÜKSEKLİĞE de bağlıdır** ve turlar arası karşılaştırmada iki boyut
+birden sabitlenmeli.
+
+Ayırt edici kanıt tek satırdı: konu sayfasının masaüstü belgesi **3720** ve
+kayıtlı canlı değerle birebir aynı. Alt bilgi değişikliği masaüstünü
+etkileseydi orada da sapardı.
