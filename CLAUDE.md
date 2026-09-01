@@ -28583,3 +28583,69 @@ Geri çevrildi ve son hâl 441/441.
 Branş taraması üç kez zaman aşımına uğradı; 1–3 branşlık gruplara bölününce
 sorunsuz geçti. Bu oturumda kayıtlı sınırın (araç başına bir çağrı) branş
 tarafındaki hâli.
+
+### `truncate` KOPYALARI SAYILDI — ana sayfada 5, kütüphane aramasında 15 kesik başlık daha
+
+Branş kartı düzeltmesinden sonra deponun kendi kuralı uygulandı: **kopyayı
+say.** `truncate` kullanan 21 yer tarandı; içeriği KULLANICI VERİSİNDEN gelen
+ve açık `(site)` yüzeyinde duran iki kopya çıktı.
+
+| yüzey | içerik | 375px'te kesik | en kötü |
+|---|---|---|---|
+| **ana sayfa branş kartı** | 13 branş adı | **5 / 13** | "Literatür & Journal Club" 152px / 74px — **%51 gizli** |
+| **kütüphane araması** | konu başlığı | **15 / 24** | "Cushing Sendromu: Genetik, Farmakoloji ve…" 444px / 281px |
+
+İkincisi az önce düzeltilen branş kartıyla **aynı içeriği** listeliyor —
+yani aynı kusurun ikinci yüzeyi.
+
+#### ANA SAYFADA SARMA TEK BAŞINA YETMİYOR — iki ad TEK KELİME
+
+Ölçüldü: 2 kolonlu ızgarada metin kutusu yalnızca **74px** ve kesik beşin
+ikisi tek kelime — `Endokrinoloji` **87px**, `Gastroenteroloji` **109px**.
+Bunlar sarılamaz; `break-words hyphens-auto` gerekiyor (kök `lang="tr"`,
+15 yüzeyde ölçülü).
+
+**Tek kolona düşürmek DENENDİ ve ölçüldü** — kaynağa dokunmadan, tarayıcıda
+sınıf değiştirilerek:
+
+| seçenek | kutu | kesik | ana sayfa belgesi |
+|---|---|---|---|
+| bugün (2 kolon, truncate) | 74px | **5** | 2744 |
+| **tek kolon** | 237px | 2 | **3287 (+%20)** |
+| **2 kolon + sarma + heceleme** | 74px | **0** | **2796 (+%1.9)** |
+
+Yani pahalı olan seçenek daha kötü sonuç veriyordu.
+
+#### DERECE KURALI İKİ YÜZEYDE FARKLI — ve gerekçesi ölçülebilir
+
+| içerik türü | kural | uygulama |
+|---|---|---|
+| **sabit, kısa etiket kümesi** (13 branş adı) | kesiği **sıfırla** | `line-clamp-3` — maliyeti +52px |
+| **açık uçlu uzun içerik** (konu başlığı) | tarama için **2 satır tavanı** | `line-clamp-2` |
+
+Kütüphane aramasında gereken satır dağılımı 1:9 · 2:11 · 3:4 idi; 3'e
+çıkarmak bir sonuç listesini gürültülü yapardı ve tam başlık zaten bir
+dokunuş uzakta.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| ana sayfa 375px kesik | **5 / 13** | **0 / 13** |
+| ana sayfa 375px belge | 2744 | **2810** (+66px, **%2.4**) |
+| **negatif** — ana sayfa 1280px kesik | 2 | **0** |
+| **negatif** — ana sayfa 1280px belge | 1363 | **1365** (+2px) |
+| kütüphane araması 375px kesik | **15 / 24** | **4 / 24** |
+| kütüphane araması satır dağılımı | hepsi 1 satır (kesik) | **1 satır 9 · 2 satır 15** |
+| **negatif** — sonuç sayısı | 24 | **24** |
+| **negatif** — canlı bölge | — | **"24 konu bulundu."** |
+| **negatif** — ana sayfa bağ · `h1` | 26 · 1 | **26 · 1** |
+| **negatif** — 320/375/1280 yatay kayma | 0 | **0** |
+| 320px'te kalan kesik | — | 1 ("Literatür & Journal Club", kutu daha dar) |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+**Aktarılabilir kural: `truncate` bir GENİŞLİK varsayımıdır.** Bu depoda
+metin Türkçe, uzun ve çoğu zaman içerikten geliyor; mobilde kutu iki kolonda
+74px'e kadar iniyor. Bir `truncate` eklerken sorulacak iki şey var: metin
+sabit mi içerikten mi geliyor, ve **en dar kutuda kaç piksel gerekiyor** —
+ikincisi ancak ölçülerek bilinir.

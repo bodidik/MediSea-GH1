@@ -198,7 +198,24 @@ export default async function Home() {
                             {item.icon}
                           </div>
                           <div className="min-w-0 flex-1">
-                            <h3 className="text-[10.5px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">
+                            {/* line-clamp-3 + break-words, truncate DEĞİL.
+                                Ölçüldü (canlı, 375px): 2 kolonda metin kutusu
+                                yalnızca 74px ve 13 branş adının 5'i kesikti —
+                                "Literatür & Journal Club" 152px gerektirip
+                                %51'ini gizliyordu, "Gastroenteroloji" 109px ile
+                                %32'sini. Masaüstünde kesik olan 2.
+                                Sarma tek başına YETMİYOR: ikisi TEK KELİME
+                                (Endokrinoloji 87px, Gastroenteroloji 109px) ve
+                                74px'lik kutuya sığmıyorlar — o yüzden
+                                break-words + hyphens-auto (html lang="tr").
+                                Tek kolona düşürmek de denendi ve ÖLÇÜLDÜ:
+                                kutu 237px oluyor ama ana sayfa 2744 -> 3287
+                                (+%20). Sarma ise +52px (+%1.9) ve kesik SIFIR.
+                                Derece 3: bu SABİT ve kısa bir etiket kümesi
+                                (13 branş), yani kesiği sıfırlamak ucuz. Konu
+                                başlıkları gibi açık uçlu içerikte 2 tavanı
+                                kullanılıyor — orada 3 bütün kartları uzatırdı. */}
+                            <h3 className="text-[10.5px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 break-words hyphens-auto">
                               {item.title}
                             </h3>
                             {count > 0 && (

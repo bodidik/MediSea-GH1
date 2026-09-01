@@ -162,7 +162,15 @@ export default function KutuphaneArama({
                   className="group flex items-center gap-3 rounded-xl border border-slate-100 bg-white p-3 transition-all hover:-translate-y-0.5 hover:border-blue-900/30 hover:shadow-lg"
                 >
                   <div className="min-w-0 flex-1">
-                    <div className="truncate text-[13px] font-black uppercase italic leading-tight tracking-tight text-blue-950">
+                    {/* line-clamp-2, truncate DEĞİL — branş kartlarıyla aynı
+                        sınıf, aynı içerik (konu başlıkları). Ölçüldü (canlı,
+                        375px, "sendrom" sorgusu): 24 sonucun 15'i kesikti,
+                        en kötüsü 444px gerektirip 281px'lik kutuda duruyordu.
+                        Gereken satır: 1 satır 9 · 2 satır 11 · 3 satır 4.
+                        2 tavanı 24 sonucun 20'sini TAM gösteriyor; 3'e
+                        çıkarmak bir sonuç listesini gereksiz gürültülü yapar
+                        ve tam başlık zaten bir dokunuş uzakta. */}
+                    <div className="line-clamp-2 text-[13px] font-black uppercase italic leading-tight tracking-tight text-blue-950">
                       {k.baslik}
                     </div>
                     <div className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
