@@ -29050,3 +29050,35 @@ birden sabitlenmeli.
 Ayırt edici kanıt tek satırdı: konu sayfasının masaüstü belgesi **3720** ve
 kayıtlı canlı değerle birebir aynı. Alt bilgi değişikliği masaüstünü
 etkileseydi orada da sapardı.
+
+#### CANLIDA doğrulandı — ve aynı dönüşüm `/uyelik`te ÖLÇÜLÜP REDDEDİLDİ
+
+| ölçüt | önce (canlı) | sonra (canlı) |
+|---|---|---|
+| `/tekrar` 375px alt bilgi · oran | 962 · %52.3 | **741 · %45.8** |
+| `/tekrar` 320px | 978 | **757** |
+| kolon · boşluk (375 · 320) | — | 155.5 / **128** · 16/32 |
+| **negatif** — masaüstü 1280 alt bilgi | 488 | **488** |
+| **negatif** — masaüstü ızgara · marka · Kütüphane | 12 kolon · 495 · 284 | **birebir** |
+| **negatif** — konu sayfası masaüstü belgesi | **3720** | **3720** |
+| **negatif** — ana sayfa 1280×**900** | **1453** | **1453** |
+| **negatif** — okuma alanı · alt bilgi bağ · `h1` · `main` | 5025 · 10 · 1 · 1 | **birebir** |
+
+Son satırdan bir öncekisi, yukarıdaki yükseklik tuzağının canlı tarafındaki
+doğrulaması: aynı sayfa 812'de 1365, 900'de 1453 veriyor ve ikisi de doğru.
+
+**Aynı dönüşüm `/uyelik`te denendi ve SAYIYLA reddedildi.** Orada da iki
+ızgara mobilde tek kolona düşüyor (3 kart 400px, 4 kart 513px):
+
+| genişlik | 1 kolon | 2 kolon | kart genişliği |
+|---|---|---|---|
+| 375 | belge 3298 | **3101** (−197) | 293 → **141** |
+| **320** | belge 3564 | **3471** (−93) | 293 → **113** |
+
+320'de ilk ızgara 2 kolonda **BÜYÜYOR** (400 → 442): üç kart iki satıra
+düşüyor ve her satır sarmadan çok daha uzun oluyor. Kazanç küçük, bedel
+113px'lik kartlar.
+
+**Ayrım içerik TÜRÜNDE:** alt bilgi kısa ETİKET listesiydi (en uzunu
+"Klinik Araçlar & Algoritmalar"), `/uyelik` kartları başlık + açıklama
+prozası taşıyor. Aynı dönüşüm, zıt verdikt — ve ikisini de sayı verdi.
