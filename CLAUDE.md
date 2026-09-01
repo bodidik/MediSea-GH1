@@ -28793,3 +28793,90 @@ içeriği eliyor. Ölçüldü, kapsamı yazıldı, **dokunulmadı.**
 Miras alınan bir `margin` dolgunun içine sızıyor ve `padding` simetrik yazılmış
 olsa bile sonuç asimetrik oluyor. Ölçüt tek satır: ilk çocuğun `margin-top`u
 sıfır değil ve ebeveynin `padding-top`u varsa, ilan ile gerçek ayrışmıştır.
+
+### `truncate` SÜPÜRMESİ TEK GENİŞLİKTE ÖLÇÜLMÜŞTÜ — 320px'te 24 kırpma daha
+
+Bir önceki tur `truncate` sınıfını kapattı ve kapsam iddiasını **375px'te**
+ölçtü. Aynı ölçüt 320px'e sürüldü (iPhone SE ve benzerleri; belgede "320
+hâlâ yaygın" diye kayıtlı):
+
+| yüzey | 375px | **320px** |
+|---|---|---|
+| ana sayfa | 0 | **3** |
+| branş sayfaları (9 branş · 95 kart) | 2 | **21** |
+| `/topics` · `/uyelik` · `/tekrar` · `/tools` · `/calisma-alanim` · konu | 0 | **0** |
+
+Yani sınıf kapanmamıştı; **kapsam iddiası bir GENİŞLİĞE dayanıyordu.**
+
+#### Ana sayfa: kök neden ok glifiydi, kırpma değil
+
+320px'te 2 kolonlu ızgarada metin kutusu **45px**. Kartın sağındaki ok
+(`w-3` = 12px) artı `gap-2` (8px) o kutunun **20px'ini** yiyordu ve üç kayıt
+kesiliyordu: `"116 konu"` 49/45 · `"34 konu"` 47/45 · `"Literatür & Journal
+Club"` 4 satır isterken 3'e sığdırılıyordu.
+
+Çareler kaynağa dokunmadan tarayıcıda sürüldü:
+
+| seçenek | kutu | kesik | belge |
+|---|---|---|---|
+| bugün | 45 | **3** | 2921 |
+| ikon 32 → 28px | 49 | 1 | 2908 |
+| **ok `sm` altında gizli** | **65** | **0** | **2881 (−40)** |
+
+Ok gizlemek hem tek başına yeterli hem de sayfayı **kısaltıyor** — çünkü
+kutu genişleyince başlıklar daha az satıra sarıyor.
+
+**Gerekçe yer kazancı DEĞİL, okun ne olduğu:** sınıfı `group-hover:translate-x-0.5`,
+yani bir **hover affordansı** — ve dokunmatikte hover hiç ateşlemiyor.
+Kart zaten baştan sona bağlantı; ok hiçbir bilgi taşımıyor. Ölçüldü:
+erişilebilir ad `"Endokrinoloji116 konu"`, yani ok ada da girmiyor.
+
+Yan düzeltme: okta `aria-hidden` **yoktu**. Depo 109 araçta `☀️` glifini ve
+131 araç ikonunu bu kuralla süpürmüştü; bu ok o turların dışında kalmış.
+
+#### Branş sayfası: DERECE KUTU GENİŞLİĞİNE BAĞLI
+
+Önceki tur `line-clamp-2` seçti ve gerekçesi 375px'te ölçülen satır
+dağılımıydı (1:37 · 2:57 · 3:4 · 4+:2 → 94/100 tam). Ama **"2 satır" sabit
+bir METİN miktarı değil**: kutu 320px'te 33px, 1280px'te iki kat geniş.
+
+320px'te yeniden ölçüldü — 9 branş, 95 kart:
+
+| derece | kesik | oran | bedel (sayfa başına ort.) |
+|---|---|---|---|
+| clamp-2 (bugün) | **21** | %22 | — |
+| **clamp-3** | **5** | **%5.3** | **+38px (~%1.5)** |
+| clamp-4 | 2 | %2.1 | +50px |
+
+`line-clamp-3 sm:line-clamp-2`: 640px altında üç satır, üstünde iki.
+Masaüstünde clamp-2 zaten **0 kesik** veriyor, yani orada değişecek bir şey
+yok.
+
+#### Doğrulama — dokuzu negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| ana sayfa 320px kesik | **3** | **0** |
+| ana sayfa 320px metin kutusu | 45 | **65** |
+| ana sayfa 320px belge | 2921 | **2881** (kısaldı) |
+| ana sayfa 375px kesik · kutu | 0 · 73 | 0 · **93** |
+| branş 320px kesik (endo · nefro · kardiyo) | 5 · 4 · 4 | **2 · 0 · 0** |
+| branş 375px kesik (endo) | 2 | **1** |
+| **negatif** — ana sayfa 1280px | ok görünür · kutu 105 · belge **1453** | **ok görünür (12px) · 105 · 1453 — BİREBİR** |
+| **negatif** — branş 1280px | clamp **2** · kesik 0 · belge **2053** | **clamp 2 · 0 · 2053 — BİREBİR** |
+| **negatif** — `aria-hidden` | **yok** | **true** (iki genişlikte de) |
+| **negatif** — bağlantı sayısı (ana · branş) | 64 · 61 | **64 · 61** |
+| **negatif** — `h1` sayısı | 1 | 1 |
+| **negatif** — 320/375/1280 yatay kayma | 0 | **0** |
+| 7 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Yedinci ve sekizinci satır bu turun asıl riskiydi: iki değişiklik de
+`sm` altına sınırlı, masaüstü belgesi iki sayfada da **bayt bayt aynı**.
+
+**Aktarılabilir kural: `truncate` ve `line-clamp` bir GENİŞLİK varsayımıdır
+ve tek genişlikte ölçülen kapsam iddiası eksiktir.** Bu depoda aynı ders
+üç turda üç ayrı biçimde çıktı: örneklem tek SAYFAYDI (`İleri Okuma`
+`addison`da hiç çizilmiyordu), örneklem tek GENİŞLİKTİ (bu tur), ve bir
+kez de ölçüt tek MEKANİZMAYA bakıyordu (erişilebilir ad). Kapsam iddiası
+yazarken üçünü birden sor: hangi sayfalar, hangi genişlikler, hangi
+mekanizmalar?

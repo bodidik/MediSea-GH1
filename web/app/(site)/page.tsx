@@ -224,7 +224,16 @@ export default async function Home() {
                               </p>
                             )}
                           </div>
-                          <svg className={`w-3 h-3 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${item.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                          {/* Ok MOBİLDE gizli: bir HOVER affordansı ve dokunmatikte
+                              hover hiç ateşlemiyor. Ölçüldü (320px, canlı) — 12px ok
+                              + 8px boşluk, 2 kolonlu ızgarada metin kutusunun
+                              45px'inden 20'sini yiyordu ve 13 kartın 3'ü kesiliyordu
+                              ("116 konu" 49/45, "34 konu" 47/45, "Literatür &
+                              Journal Club" 4 satır isterken 3'e sığdırılıyordu).
+                              Gizlenince kutu 45 → 65, kesik 3 → 0 ve sayfa 40px
+                              KISALIYOR. sm ve üstünde hiçbir şey değişmedi.
+                              aria-hidden: süsleme glifi, deponun kendi kuralı. */}
+                          <svg aria-hidden="true" className={`hidden sm:block w-3 h-3 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${item.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                           </svg>
                         </Link>

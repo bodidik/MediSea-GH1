@@ -321,6 +321,14 @@ export default async function BranchListPage({
                     {i + 1}
                   </span>
                   <div className="min-w-0 flex-1">
+                  {/* line-clamp-3 sm:line-clamp-2 — DERECE KUTU GENİŞLİĞİNE BAĞLI.
+                      "2 satır" sabit bir METİN miktarı değil: kutu 320px'te 33px,
+                      1280px'te iki kat geniş. Bir dönem her genişlikte 2'ydi ve
+                      ölçüm 375px'te yapılmıştı — yani kapsam iddiası TEK GENİŞLİĞE
+                      dayanıyordu. 320px'te yeniden ölçüldü (9 branş, 95 kart):
+                      clamp-2 ile 21 başlık kesik (%22), clamp-3 ile 5 (%5.3);
+                      bedeli sayfa başına ortalama 38px (~%1.5). sm ve üstünde 2
+                      kalıyor — orada clamp-2 zaten 0 kesik veriyor. */}
                   {/* line-clamp-2, truncate DEĞİL. Bir dönem tek satırda
                       kesiliyordu ve ölçüldü (canlı, 375px, 13 branşın 100
                       konu kartı): başlıkların 63'ü kesikti, en kötüsü 737px
@@ -334,7 +342,7 @@ export default async function BranchListPage({
                       yalnızca 4 başlık için bütün kartları uzatırdı.
                       Izgara mobilde tek kolon, sm+ iki kolon ve satır
                       yüksekliği kendiliğinden hizalanıyor — raggedlik yok. */}
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-2">
+                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 sm:line-clamp-2">
                       {topic.title}
                     </h3>
                     {subCount > 0 && (
@@ -388,7 +396,7 @@ export default async function BranchListPage({
                   </span>
                   <div className="min-w-0 flex-1">
                   {/* line-clamp-2 gerekçesi yukarıda (küratörlü liste). */}
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-2">
+                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 sm:line-clamp-2">
                       {topic.title}
                     </h3>
                     {subCount > 0 && (
