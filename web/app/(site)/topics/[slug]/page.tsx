@@ -321,7 +321,20 @@ export default async function BranchListPage({
                     {i + 1}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">
+                  {/* line-clamp-2, truncate DEĞİL. Bir dönem tek satırda
+                      kesiliyordu ve ölçüldü (canlı, 375px, 13 branşın 100
+                      konu kartı): başlıkların 63'ü kesikti, en kötüsü 737px
+                      gerektirip 246px'lik kutuda duruyordu — yani %67'si
+                      gizliydi ("Akciğer Kanseri Epidemiyolojisi, Tarama
+                      Protokolleri ve Klin…"). Masaüstünde kesik olan 11 idi,
+                      yani kusur neredeyse tamamen MOBİLE özgüydü.
+                      Sarmaya izin verilince gereken satır sayısı ölçüldü:
+                      1 satır 37 · 2 satır 57 · 3 satır 4 · 4+ satır 2. Yani
+                      2 satır 100 başlığın 94'ünü TAM gösteriyor; 3'e çıkarmak
+                      yalnızca 4 başlık için bütün kartları uzatırdı.
+                      Izgara mobilde tek kolon, sm+ iki kolon ve satır
+                      yüksekliği kendiliğinden hizalanıyor — raggedlik yok. */}
+                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-2">
                       {topic.title}
                     </h3>
                     {subCount > 0 && (
@@ -374,7 +387,8 @@ export default async function BranchListPage({
                     •
                   </span>
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight truncate">
+                  {/* line-clamp-2 gerekçesi yukarıda (küratörlü liste). */}
+                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-2">
                       {topic.title}
                     </h3>
                     {subCount > 0 && (

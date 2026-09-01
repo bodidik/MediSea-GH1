@@ -28505,3 +28505,81 @@ Değişiklik yalnızca açık konu sayfasının `<h1>`i. Ölçüldü: premium ko
 sayfasının başlığı satır içi **22px** (zaten küçük), branş sayfasının `<h1>`i
 375px'te **24px**. Ana sayfa ve `/uyelik` başlıkları ayrı yüzeyler ve bu turda
 ölçülmedi — "temiz" DENMİYOR.
+
+### KÜTÜPHANE KARTLARININ 63'Ü BAŞLIĞINI MOBİLDE KESİYORDU — biri %67'sini gizliyordu
+
+Başlık düzeltmesinden sonra `(site)` yüzeyleri 375px'te toplu tarandı
+(yatay taşma · 24px altı dokunma hedefi · kırpılan öge). Dokunma hedefi
+**0**, belge yatay kayması **0** — ama branş sayfası **14 taşan öge**
+gösterdi, ötekiler yalnızca bilinen alt bilgi süslemesini.
+
+Konu kartı başlığı `truncate` taşıyordu: `nowrap` + `ellipsis`, 246px'lik
+bir kutuda. Ölçüldü (canlı, 13 branş, **100 konu kartı**):
+
+| genişlik | kesik başlık | en kötü |
+|---|---|---|
+| **375px** | **63 / 100 (%63)** | **737px gerekiyor, 246px var — %67'si gizli** |
+| 1280px | 11 / 100 (%11) | %47 |
+
+Yani kusur neredeyse tamamen **mobile özgüydü** ve kütüphaneye göz atmanın
+BİRİNCİL bilgisini kesiyordu:
+
+```
+"Ektopik ACTH Sendromu: Etiyopatogenez, Hücres…"        684px / 246px
+"Akciğer Kanseri Epidemiyolojisi, Tarama Protok…"       737px / 246px
+"Ezetimib: Hücresel Mekanizma, Majör Klinik Ça…"        536px / 246px
+```
+
+**"Aynı ad, farklı hedef" sınıfına DÖNÜŞMEMİŞ** — kesilmiş hâlleri ayrıca
+karşılaştırıldı, aynı listede özdeşleşen iki kart **0**. Yani kusur
+belirsizlik değil, sessiz bilgi kaybı.
+
+#### Derece TAHMİNLE değil, GEREKEN SATIR SAYILARAK seçildi
+
+Her başlığa sarma izni verilip gerçek satır sayısı ölçüldü (375px):
+
+| gereken satır | başlık |
+|---|---|
+| 1 | 37 |
+| **2** | **57** |
+| 3 | 4 |
+| 4+ | 2 |
+
+`line-clamp-2` 100 başlığın **94'ünü TAM** gösteriyor. 3'e çıkarmak yalnızca
+4 başlık için bütün kartları uzatırdı — kazanç/bedel oranı kötü.
+
+Izgara mobilde tek kolon, `sm`+ iki kolon; ızgara satırı kendiliğinden
+hizalandığı için raggedlik oluşmuyor. Aynı `truncate` iki yerdeydi (küratörlü
+liste ve "Diğer Konular" kovası), ikisi de değişti.
+
+#### Doğrulama — dokuzu negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| 375px kesik başlık | **63 / 100** | **6 / 100** |
+| 375px satır dağılımı | hepsi 1 satır (kesik) | **1 satır 37 · 2 satır 63** |
+| `/topics/endokrinoloji` 375px belge | 3237 | **3451** (+214px, **%6.6**) |
+| **negatif** — aynı sayfa 1280px | 2026 | **2053** (+27px, **%1.3**) |
+| **negatif** — 1280px kesik başlık | 11 | **0** (44 başlıkta: 38 tek satır, 6 iki satır) |
+| **negatif** — kart sayısı | 31 | **31** |
+| **negatif** — özdeş görünen kart | 0 | **0** |
+| **negatif** — 320/375/1280 yatay kayma | 0 | **0** (`docScrollW` = `clientW`) |
+| **negatif** — `h1` sayısı | 1 | 1 |
+| **pozitif** — dedektör kesilmeyi görüyor mu | — | **evet**, kalan 6'yı adıyla buluyor |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Masaüstü bedeli **+27px** (%1.3): orada zaten kesilen 11 başlık iki satıra
+sarıyor, kalan 89'u tek satırda duruyor.
+
+#### ⚠ `sed -i` CRLF'i YİNE düşürdü — bu oturumda ikinci kez
+
+Dosya saf CRLF'ti (427/427); `sed -i` sonrası **CR=0**. `git diff --stat`
+bunu göstermiyor (`core.autocrlf` blob'u normalleştiriyor), yani gözden
+kaçardı. Kayıtlı ölçüt işledi: **yamadan sonra CR ve LF'i AYRI AYRI say.**
+Geri çevrildi ve son hâl 441/441.
+
+#### Ölçüm notu — tek çağrıda 13 iframe 45 sn sınırını aşıyor
+
+Branş taraması üç kez zaman aşımına uğradı; 1–3 branşlık gruplara bölününce
+sorunsuz geçti. Bu oturumda kayıtlı sınırın (araç başına bir çağrı) branş
+tarafındaki hâli.
