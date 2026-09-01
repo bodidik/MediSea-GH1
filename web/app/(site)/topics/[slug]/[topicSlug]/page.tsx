@@ -565,13 +565,24 @@ export default async function TopicDetailPage({
           {/* --- SOL KOLON: İÇERİK --- */}
           <div className="lg:col-span-8 space-y-8">
             <div className="border-l-8 border-blue-900 pl-6 py-2">
-              {/* break-words: başlık 36px ve tıbbi terimler uzun. Ölçüldü —
+              {/* break-words: başlık büyük ve tıbbi terimler uzun. Ölçüldü —
                   H1'in KUTUSU 296px (sınır içinde) ama scrollWidth 353, yani
                   metin kutuyu taşıyor ve SAYFAYI yatay kaydırıyordu. Öge
                   kutularını tarayan ölçüm bunu göremez; ölçüt öge başına
                   scrollWidth > clientWidth. 137 konudan 26'sı bu yüzden
                   kayıyordu (7-62px, kayma başlık uzunluğuyla artıyor). */}
-              <h1 className="text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
+              {/* MOBİLDE 28px. Bir dönem her breakpoint'te 36px'ti ve
+                  Türkçe tıbbi başlıklar UZUN: 423 görünür konunun ortancası
+                  46 karakter, %90'lık dilim 71, en uzunu 110. Ölçüldü (375px,
+                  canlı) — 36px'te 44 karakterlik başlık 5 satır/180px, 73
+                  karakterlik 7 satır/252px, 110 karakterlik 10 satır/360px;
+                  yani en uzun başlık görünümün %44'ünü yiyordu ve okunabilir
+                  gövde 1.5 ekran aşağıda başlıyordu. 28px aynı başlıkları
+                  3/5/8 satıra indiriyor (84/140/224px). 26 ve 24px daha az ek
+                  kazanç verip başlığı daha çok küçültüyor, o yüzden seçilmedi.
+                  sm ve üstünde 36px'e, md'de 48px'e dönüyor — masaüstü
+                  görünümü DEĞİŞMEDİ. */}
+              <h1 className="text-[28px] sm:text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
                 {topicItem.title}
               </h1>
               {/* TARİH UYDURULMAZ. Burada bir dönem `|| "06 MAR 2026"`

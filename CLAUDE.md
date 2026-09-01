@@ -28398,3 +28398,110 @@ BAŞINA taşıdığı işi ayrıca say.** Buradaki çip satırı üç şey yapı
 gezinme, aktif süzgeç göstergesi, ve URL durumu. Yalnızca birincisi
 akordeonla tekrarlanıyordu; ikincisinin yerine bir şey konmasaydı düzeltme
 kendi kusurunu üretirdi.
+
+### BAŞLIK TELEFONDA 10 SATIRA ÇIKIYORDU — okuma gövdesi 1.5 ekran aşağıda başlıyordu
+
+Mobil geçişin `(site)` tarafı ölçüldü. İlk ekranın anatomisi (canlı, 375px,
+`addison`):
+
+| parça | y / yükseklik |
+|---|---|
+| başlık çubuğu | 0 / 65 |
+| kırıntı | 169 / 91 |
+| **`<h1>`** | **260 / 180** |
+| okunabilir gövde | **507** |
+
+Yani 812px'lik ilk ekranın **%62'si kabuk**, gövde ancak altında başlıyor.
+Baskın parça `<h1>`di: sınıf `text-4xl md:text-5xl`, yani **md altındaki her
+genişlikte 36px** — mobil için ayrı bir basamak yok.
+
+**Türkçe tıbbi başlıklar UZUN ve bu ölçüldü** (423 görünür konu):
+
+| ölçüt | değer |
+|---|---|
+| en kısa · ortanca | 8 · **46** |
+| %75 · %90 · %95 | 58 · **71** · 82 |
+| en uzun | **110** |
+| **45+ karakter** | **228 konu (%54)** |
+
+Üstelik başlık `uppercase italic`, yani aynı karakter sayısı daha geniş
+basılıyor.
+
+#### BOYUT TARTIŞMAYLA DEĞİL, SATIR SAYILARAK seçildi
+
+Üç temsili başlık canlıda tek tek ölçüldü — aday boyutlar ögeye uygulanıp
+satır sayısı okundu (375px):
+
+| başlık | **36px** | 32 | 30 | **28px** | 26 | 24 |
+|---|---|---|---|---|---|---|
+| 110 krk | 10 satır / **360px** | 9/288 | 8/240 | **8 / 224** | 7/182 | 6/144 |
+| 73 krk (%90) | 7 / **252** | 6/192 | 6/180 | **5 / 140** | 4/104 | 4/96 |
+| 44 krk (ortanca civarı) | 5 / **180** | 4/128 | 3/90 | **3 / 84** | 3/78 | 3/72 |
+
+En büyük tek adım **36 → 28**: üç başlıkta da 136 · 112 · 96 px kazandırıyor.
+26 ve 24px ek olarak yalnızca 42 · 36 · 6 px daha veriyor ama başlığı belirgin
+biçimde küçültüyor — o yüzden seçilmedi. `text-[28px] sm:text-4xl md:text-5xl`:
+**sm (640px) ve üstünde hiçbir şey değişmiyor.**
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| `addison` 375px — h1 | 36px · 5 satır · **180px** | **28px · 3 satır · 84px** |
+| `addison` 375px — **gövde başlangıcı** | **507** | **411** (95px erken) |
+| `men1-…-sinerji` (73 krk) — h1 · gövde | 252 · 618 | **140 · 506** |
+| `pankreas-…-inkretin` (110 krk) — h1 · gövde | 360 · 1195 | **224 · 1059** |
+| 320px en uzun başlık | **396px** | **280px** |
+| **negatif** — okuma alanı karakter sayısı | 5025 · 2589 · 10052 | **üçü de BİREBİR** |
+| **negatif** — `h2` · `h3` sayısı | 10 · 8 | **10 · 8** |
+| **negatif** — kırılma noktası | — | **639px → 28px, 640px → 36px** |
+| **negatif** — masaüstü 1280 | 48px · 96px · gövde 363 · okuma 2850 | **48px · 96px · 364 · 2852** |
+| **negatif** — 320/375 yatay kayma | 0 | **0** (taşan tek öge alt bilgideki `blur` süsleme, canlıda da var) |
+| **pozitif** — 900px tohum | — | `docScrollW` 320 → **900**, taşan 1 → **5** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Altıncı satır bu değişikliğin asıl riskiydi: vurgular karakter ofsetiyle
+saklanıyor ve okuma alanının metni değişseydi kayıtlı vurgular silinirdi.
+`<h1>` o konteynerin DIŞINDA, ölçüm bunu üç sayfada birden doğruladı.
+
+#### ⚠ İKİ SEKME KAYDIRMA ÇUBUĞUNU FARKLI ÇİZİYOR — canlı↔yerel karşılaştırması 15px KAYIYORDU
+
+Masaüstü negatif kontrolü ilk turda **47px'lik açıklanamayan bir fark** verdi
+(canlı belge 3739, yerel 3744) ve h1 iki tarafta da birebir aynıydı (48px,
+96px, y200/201). Fark ölçülünce okuma alanının İÇİNDE olduğu göründü:
+yazı boyutları ve satır yükseklikleri **birebir aynı**, ama **kolon genişliği
+709 ↔ 718**.
+
+Sebep üründe değildi. Aynı nötr belge (`srcdoc`, 5000px yüksek) iki sekmede
+ölçüldü:
+
+| sekme | `clientWidth` (1280px'lik iframe'de) |
+|---|---|
+| canlı ölçüm sekmesi (`tabs_create` ile açılan) | **1265** — 15px klasik kaydırma çubuğu |
+| yerel ölçüm sekmesi (oturumun ilk sekmesi) | **1280** — bindirmeli (overlay) çubuk |
+
+Yani iki sekme arasında yapılan HER canlı↔yerel karşılaştırması, içerik
+genişliğinde 15px'lik bir sapma taşıyor ve dar bir kolonda bu **bir satır**
+fark ettirebiliyor (ölçüldü: ilk paragraf 205 ↔ 179px).
+
+Çare iframe genişliğini `clientWidth` eşitlenecek şekilde seçmek: canlı
+sekmede 1295 → 1280, 390 → 375, 335 → 320. Eşitlendikten sonra masaüstü
+negatif kontrolü oturdu (okuma alanı 816 ↔ 816, yükseklik 2850 ↔ 2852).
+
+**Aktarılabilir kural: iki farklı sekmede alınan geometri ölçümleri
+karşılaştırılabilir DEĞİLDİR.** Ölçümden önce her sekmede aynı nötr belgeyle
+`clientWidth` kalibre et; kalibre edilmemiş bir "önce/sonra" tablosu, olmayan
+bir gerileme uydurabiliyor. Bu depoda kayıtlı `innerWidth ↔ clientWidth`
+ayrışmasının sekme tarafındaki hâli.
+
+**Yan not:** bu turdaki "önce" değerlerinin bir kısmı zaten AYNI sekmede
+(canlıya bakarken) alınmıştı, o yüzden mobil tablosu kalibrasyondan
+etkilenmiyor — ve iki bağımsız yol (aynı sekme · kalibre edilmiş ikinci sekme)
+`addison` için 507 ↔ 506 diyerek birbirini doğruladı.
+
+#### Kapsam
+
+Değişiklik yalnızca açık konu sayfasının `<h1>`i. Ölçüldü: premium konu
+sayfasının başlığı satır içi **22px** (zaten küçük), branş sayfasının `<h1>`i
+375px'te **24px**. Ana sayfa ve `/uyelik` başlıkları ayrı yüzeyler ve bu turda
+ölçülmedi — "temiz" DENMİYOR.
