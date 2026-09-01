@@ -28682,3 +28682,114 @@ takvimi boş olduğu için hiç çizilmiyor. **"Temiz" DENMİYOR.**
 
 Dördüncü satır kayda değer: masaüstünde ana sayfa belgesi **bayt bayt aynı**
 kaldı, yani üç yüzeydeki düzeltmenin de bedeli tümüyle mobilde.
+
+### KUTU `py-2` DİYOR, GERÇEK ÜST BOŞLUK 32px — aksan çubuğu 4 kat asimetrikti
+
+Mobil geçişin devamı: konu sayfasında `<h1>` 28px'e indikten sonra okuma
+gövdesi hâlâ 411px'te başlıyordu, yani 812px'lik ilk ekranın **%51'i kabuk**.
+Anatomi ölçüldü (canlı, 375px, `addison`):
+
+| parça | y | h |
+|---|---|---|
+| başlık çubuğu | 0 | 65 |
+| `main` üst dolgusu (`py-10`) | 65 | 40 |
+| kırıntı | 105 | **91** (3 satır) |
+| kırıntı `mb-8` | 196 | 32 |
+| **h1 kutusu** | **227** | **151** |
+| okuma gövdesi | **411** | — |
+
+Kutunun içine bakılınca sayı tuhaftı: kutu `border-l-8 … py-2` ilan ediyor
+(8px üst, 8px alt) ama **h1 kutunun üstünden 32px aşağıda** başlıyor, alt
+kenarda ise 8px kalıyor. Yani aksan çubuğu içeriğine göre **4 kat
+asimetrik** ve gövde 24px aşağı itilmiş.
+
+Sebep `globals.css`: `h1,h2,h3` için `margin-top: 1.5rem`. Dolgusu olan bir
+kutuda marj DIŞARI taşmıyor (padding çökmeyi engelliyor), içeride toplanıyor.
+Yani **kutunun ilan ettiği dolgu ile gerçek boşluk ayrışıyordu** — bu depoda
+tur tur avlanan "ilan mı gerçek mi" sınıfının CSS tarafındaki hâli.
+
+#### Kopya sayıldı — 12 yüzey, 4 örnek
+
+Ölçüt: bir başlık ebeveyninin İLK çocuğu VE ebeveynin üst dolgusu varsa,
+gerçek üst boşluk `padding-top + margin-top` olur.
+
+| yer | ilan | **gerçek** | alt |
+|---|---|---|---|
+| konu sayfası `<h1>` kutusu | 8 | **32** | 8 |
+| konu sayfası "İleri Okuma" | 32 | **56** | 32 |
+| konu sayfası "İlgili Konular" | 32 | **56** | 32 |
+| `/uyelik` "Şimdi ne yapabilirsin" | 24 | **48** | 24 |
+
+Dördü de `mt-0` aldı. Depoda kural zaten yazılıydı (*"bir arayüz etiketini
+`<h2>` yaparken `font-sans mt-0` ekle"*) — eksik olan tutarlılıktı.
+
+**"Alt Başlıklar" başlığı ölçüldü ve KUSUR DEĞİL:** ebeveyni dolgusuz
+(`flex … mb-5`), yani oradaki 24px kutunun içine sızan bir marj değil,
+iki bölüm arasındaki olağan aralık. Ölçüt (`padding-top >= 1`) onu doğru
+şekilde eliyor.
+
+#### ⚠ İLK TARAMA ÜÇ ÖRNEK BULDU — dördüncüsünü ÖRNEKLEM kaçırdı
+
+Tarama `addison` üzerinde yapıldı ve "İleri Okuma"yı bulamadı. Ölçüt
+kusurlu değildi: **o bölüm `addison`da hiç çizilmiyor** (yaprak çocuğu yok).
+Kardeş konularda (`bruselloz`, `hipofiz-hastaliklari-ana`) bölüm var ve
+kusur birebir orada.
+
+Belgede kayıtlı kuralın (*"koşullu render edilen kartlar normal akışta
+görünmez"*) tarama tarafındaki hâli: **bir ölçütü tek sayfada sürüp kapsam
+iddiası üretme** — sayfanın hangi dalları çizdiği örneklemin parçasıdır.
+
+#### İki alternatif ÖLÇÜLDÜ ve reddedildi
+
+Kırıntı 91px'le kabuğun en büyük ikinci parçası ve son maddesi **sayfanın
+kendi başlığı** — 60px altındaki `<h1>` ile birebir aynı (7 konuda da
+ölçüldü). İki seçenek kaynağa dokunmadan tarayıcıda sürüldü:
+
+| seçenek | kırıntı | okuma gövdesi |
+|---|---|---|
+| bugün (saran, 3 satır) | 91 | 410 |
+| **A: son maddeyi mobilde gizle** | 67 | 387 (−23) |
+| **D: tek satır + yatay kaydırma** | **124** | **444 (+34)** |
+
+**D ölçülebilir biçimde DAHA KÖTÜ:** `li`ler `nowrap` ama içlerindeki `<a>`
+blok, yani uzun başlık kendi içinde sarmaya devam ediyor; üstelik son madde
+343px'lik kabın 329'unda başlıyor, yani fiilen ekran dışında.
+
+**A yapılmadı ve gerekçesi SEO:** görünen kırıntı ile `BreadcrumbList`
+şeması AYNI diziden üretiliyor (dosyanın kendi yorumu). Son maddeyi yalnızca
+mobilde gizlemek, mobil-öncelikli indekslemede "şema görünür içeriği
+yansıtmalı" ilkesiyle çelişirdi — 23px için alınacak bir risk değil.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | önce (canlı) | sonra |
+|---|---|---|
+| h1 kutusu üst / alt | **32 / 8** | **8 / 8 — simetrik** |
+| kutu yüksekliği | 151 | **127** |
+| okuma gövdesi (375px) | **410** | **387** |
+| "İlgili Konular" ilan / gerçek | 32 / **56** | **32 / 32** |
+| `/uyelik` (375 · 1280) | 24/**48** · 32/**56** | **24/24 · 32/32** |
+| **negatif** — okuma alanı karakter sayısı | 5025 | **5025 — BİREBİR** |
+| **negatif** — masaüstü 1280 kutu | 32 / 8 | **8 / 8**, h1 48px · 96px |
+| **negatif** — h1 boyutu (375 · 1280) | 28 · 48 | **28 · 48** |
+| **negatif** — `/uyelik` bağ · `h1` | 35 · 1 | **35 · 1** |
+| **negatif** — 320/375/1280 yatay kayma | 0 | **0** |
+| **negatif** — arayüz taraması (4 yüzey, 37 başlık) | — | **dolgu yalanı 0** |
+| **TARİHSEL** — aynı ölçüt canlıda | — | **9 örnek yakalıyor** |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Altıncı satır bu değişikliğin asıl riskiydi: vurgular karakter ofsetiyle
+saklanıyor, okuma alanının metni değişseydi kayıtlı vurgular silinirdi.
+Son iki satır ölçütün kör olmadığını gösteriyor.
+
+#### Kapsam dışı: içerik HTML'inde 30+ aynı şekil
+
+`bruselloz`da aynı ölçüt `[data-readable]` İÇİNDE **30 `<h3>`** buluyor —
+içerik JSON'unun kendi dolgulu kutuları. Bunlar arayüz değil İÇERİK ve
+düzeltmeden önce de vardı. Ölçüt bu yüzden `closest('[data-readable]')` ile
+içeriği eliyor. Ölçüldü, kapsamı yazıldı, **dokunulmadı.**
+
+**Aktarılabilir kural: bir kutunun `padding` ilanı, gerçek boşluğu vermeyebilir.**
+Miras alınan bir `margin` dolgunun içine sızıyor ve `padding` simetrik yazılmış
+olsa bile sonuç asimetrik oluyor. Ölçüt tek satır: ilk çocuğun `margin-top`u
+sıfır değil ve ebeveynin `padding-top`u varsa, ilan ile gerçek ayrışmıştır.

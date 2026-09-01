@@ -564,6 +564,12 @@ export default async function TopicDetailPage({
           
           {/* --- SOL KOLON: İÇERİK --- */}
           <div className="lg:col-span-8 space-y-8">
+            {/* mt-0 — DOLGU NE DIYORSA O OLSUN. globals.css h1/h2/h3'e 24px
+                ust marj veriyor; o marj bu kutunun ICINE sizip py-2 ilanini
+                yalanliyordu. Olculdu (375px, canli, YEDI konuda da AYNI):
+                ust bosluk 32px, alt 8px — aksan cubugu icerigine gore 4 kat
+                asimetrik ve okuma govdesi 24px asagi itilmis. Ayni sizinti
+                asagidaki iki kart basliginda da var (32 ilan / 56 gercek). */}
             <div className="border-l-8 border-blue-900 pl-6 py-2">
               {/* break-words: başlık büyük ve tıbbi terimler uzun. Ölçüldü —
                   H1'in KUTUSU 296px (sınır içinde) ama scrollWidth 353, yani
@@ -582,7 +588,7 @@ export default async function TopicDetailPage({
                   kazanç verip başlığı daha çok küçültüyor, o yüzden seçilmedi.
                   sm ve üstünde 36px'e, md'de 48px'e dönüyor — masaüstü
                   görünümü DEĞİŞMEDİ. */}
-              <h1 className="text-[28px] sm:text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mb-3 break-words hyphens-auto">
+              <h1 className="text-[28px] sm:text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mt-0 mb-3 break-words hyphens-auto">
                 {topicItem.title}
               </h1>
               {/* TARİH UYDURULMAZ. Burada bir dönem `|| "06 MAR 2026"`
@@ -812,7 +818,7 @@ export default async function TopicDetailPage({
                       başlığı gibi görünüyordu — düzey atlaması yok ama
                       yuvalama yanlıştı. Görünüm değişmiyor: globals.css
                       h1,h2,h3'e aynı kuralı veriyor (ölçüldü, mt 24px). */}
-                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
+                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                     İleri Okuma
                   </h2>
@@ -838,7 +844,7 @@ export default async function TopicDetailPage({
               {/* İlgili Konular — etiket akrabalığından, branş sınırı gözetmeden */}
               {ilgililer.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 pb-4 mb-4 flex items-center gap-2">
+                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                     İlgili Konular
                   </h2>

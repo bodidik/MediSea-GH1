@@ -171,7 +171,7 @@ export default function UyelikSayfasi() {
 
         {/* NE YAPABİLİRSİN */}
         <section className="bg-white rounded-[2rem] border border-slate-200 shadow-sm p-6 sm:p-8">
-          <h2 className="text-xs font-black uppercase tracking-[0.25em] text-blue-900/80 mb-3">
+          <h2 className="text-xs font-black uppercase tracking-[0.25em] text-blue-900/80 mt-0 mb-3">
             Şimdi ne yapabilirsin
           </h2>
           <p className="text-sm text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
