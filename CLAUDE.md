@@ -28649,3 +28649,36 @@ metin Türkçe, uzun ve çoğu zaman içerikten geliyor; mobilde kutu iki kolond
 74px'e kadar iniyor. Bir `truncate` eklerken sorulacak iki şey var: metin
 sabit mi içerikten mi geliyor, ve **en dar kutuda kaç piksel gerekiyor** —
 ikincisi ancak ölçülerek bilinir.
+
+#### `truncate` SÜPÜRMESİ KAPANDI — 21 kullanım, üçü düzeltildi, kalanı gerekçeyle bırakıldı
+
+Üç düzeltmeden sonra kalan `truncate` kullanımları tek tek 375px'te sürüldü.
+**Ayırt edici ölçüt: kesilen bilgi AYNI EKRANDA başka bir yerde var mı?**
+
+| yüzey | kesik | gizlenen | verdikt |
+|---|---|---|---|
+| branş kartı · ana sayfa · kütüphane araması | 63 · 5 · 15 | %67'ye kadar | **düzeltildi** |
+| `wells-dvt` seçili kriter özeti | 2 / 10 | %11–23 | **bırakıldı** — tam etiket aynı sayfadaki onay kutusu listesinde |
+| `wells-pe` aynı özet | 1 / 7 | %7 | bırakıldı |
+| başlık araması açılır penceresi | 2 / 3 | ~%50 | **bırakıldı** — kesilen ARAÇ AÇIKLAMASI; adın kendisi tam görünüyor ve pencerenin 448px'lik yükseklik tavanı var, sarma sığan sonuç sayısını düşürürdü |
+| `/calisma-alanim` kapsama satırları | **0 / 5** | — | kesilen yok |
+| `/tekrar` | **0** | — | ellipsis taşıyan öge yok |
+
+Premium yüzeylerdeki dört kullanım (`liderlik` · pano · `CalismaPlani` ·
+`NotePanel`) bu turda ölçülmedi — kapı arkasında ve `CalismaPlani` sınav
+takvimi boş olduğu için hiç çizilmiyor. **"Temiz" DENMİYOR.**
+
+#### CANLIDA doğrulandı — üçü de
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| `/topics/endokrinoloji` 375px kesik | 12 / 18 | **2 / 18** (6 tek satır · 12 çift) |
+| aynı sayfa 1280px kesik | 2 | **0** (16 tek satır · 2 çift) |
+| ana sayfa 375px kesik | 5 / 13 | **0 / 13** |
+| **negatif** — ana sayfa 1280px belge | 1363 | **1363 — BİREBİR** |
+| kütüphane araması kesik | 15 / 24 | **4 / 24** |
+| **negatif** — arama canlı bölgesi | — | **"24 konu bulundu."** |
+| **negatif** — 375/1280 yatay kayma | 0 | **0** |
+
+Dördüncü satır kayda değer: masaüstünde ana sayfa belgesi **bayt bayt aynı**
+kaldı, yani üç yüzeydeki düzeltmenin de bedeli tümüyle mobilde.
