@@ -29981,3 +29981,22 @@ arasındaki boşluğun 47px yerine 15px olması.
 Kayıt şunun için: biri ileride bu bileşeni taşırsa ya da konumunu
 ayarlarsa, `top-1/2`'nin bu depoda **sayfa türüne göre 32px sapabildiğini**
 bilsin — ve konumu hesapla değil ÖLÇÜMLE doğrulasın.
+
+#### İki düzeltme CANLIDA doğrulandı
+
+Kusuru bulan ölçümlerin birebir tekrarı:
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| **içindekiler bağı yüksekliği** (375 · 1280) | 42.5 | **44.5** |
+| 24px altı hedef (12 bağ) | 6 (premium) · sınıf açık | **0** |
+| **BasaDon** — 375 · 320, `scrollY 4000` | (yoktu) | **44×44 · görünür · çakışma 0 · odak sırasında** |
+| tıklama | — | **`scrollY 0` · odak `MAIN#icerik`** |
+| erişilebilir ad | — | "Sayfanın başına dön" |
+| **negatif** — `scrollY 400` (eşik 1218) | — | **render edilmiyor** |
+| **negatif** — sayfa tepesinde | — | render edilmiyor |
+| **negatif** — 1280 | — | **0×0 · görünmez · odak sırasında YOK** |
+| **negatif** — okuma alanı karakter sayısı | 23986 | **23986 — dört ölçümde de birebir** |
+
+32px sapması canlıda da duruyor (`y 498`), yani yerel bir derleme artefaktı
+değil — yukarıda kayıtlı.
