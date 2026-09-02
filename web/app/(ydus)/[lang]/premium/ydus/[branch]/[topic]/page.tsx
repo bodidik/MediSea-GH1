@@ -12,6 +12,7 @@ import { ayYazisi } from '@/app/lib/tarih';
 import { KLINIK_SORUMLULUK } from '@/app/lib/sorumluluk';
 import { rotaMeta } from "@/lib/site";
 import KaydirDurumu from '@/app/components/KaydirDurumu';
+import BasaDon from '@/app/components/BasaDon';
 
 /**
  * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
@@ -388,6 +389,7 @@ export default async function KonuSayfasi({
             {/* Tablo kaplarina "devami var" durumu yazar (maskeyi globals.css cizer).
                 Premium tarafta 40 konunun 36'sinda 2+ tablo var. */}
             <KaydirDurumu />
+            <BasaDon />
 
             {/* data-readable: ReadingTools vurgulamayı bu blokla sınırlar */}
             <div data-readable>

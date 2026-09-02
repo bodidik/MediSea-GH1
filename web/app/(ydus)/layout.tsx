@@ -11,7 +11,7 @@ export default function YdusLayout({ children }: { children: React.ReactNode }) 
       */}
       <div className="ydus-premium-layout bg-slate-950 min-h-screen text-slate-100 selection:bg-blue-500/30">
         {/* Buraya AppShell sızamaz, SiteHeader gelemez. Tamamen izole! */}
-        <main className="relative z-10">
+        <main id="icerik" tabIndex={-1} className="relative z-10 focus:outline-none">
           {children}
         </main>
 

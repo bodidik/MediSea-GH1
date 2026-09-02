@@ -29878,3 +29878,106 @@ ve `curl` 200 döndürmeye devam etti.
 Ayırt edici adım sunucu günlüğünü okumak değil, **sunulan HTML'de
 değişikliği aramak** oldu (`padding:3px 0`). PID'i `netstat` ile bulup
 `taskkill` ile öldürdükten sonra ölçüm doğru değeri verdi.
+
+### 41.8 EKRANLIK KONUNUN BAŞINA DÖNMENİN YOLU YOKTU — ve premium'da bağlantı ÖLÜYDÜ
+
+Mobil geçişin devamı. Sayfa uzunluğu ilk kez üst uçtan ölçüldü (canlı, 320px):
+
+| ölçüt | değer |
+|---|---|
+| en uzun konu (`invazive-mantar-enfeksiyon`) | **33 953 px = 41.8 ekran** |
+| 375px'te | 27 457 px = 33.8 ekran |
+| **okuma gövdesi** | **30 709 px = belgenin %90'ı** |
+| içindekiler bloğu | sayfanın **başında** |
+
+Uzunluk kabuktan değil İÇERİKTEN geliyor, yani sıkıştırılacak bir şey yok —
+ve içindekilere dönmenin tek yolu 40 ekran geri kaydırmaktı. Android'de
+tarayıcının "başa dön" hareketi yok; yapışkan başlıkta da böyle bir eylem
+bulunmuyor (ölçüldü: logo `/` adresine gidiyor).
+
+`app/components/BasaDon.tsx` — eşik `1.5 × görünüm yüksekliği`.
+
+#### NEDEN BAĞLANTI, DÜĞME DEĞİL
+
+Hedef `<main id="icerik" tabindex="-1">`. Bağlantı üç şeyi birden bedavaya
+alıyor: kaydırma, **odağın ana içeriğe taşınması** (atlama bağlantısıyla
+aynı mekanizma) ve bu oturumda konan `scroll-padding-top: 96px` kuralı —
+yani hedef yapışkan başlığın altında kalmıyor. Ölçüldü: tıklamadan sonra
+`scrollY 0` ve `activeElement = MAIN#icerik`.
+
+#### ⚠ PREMIUM'DA HEDEF YOKTU — bağlantı ölü kontroldü
+
+Kapı geçici açılıp gerçek premium konu sayfası sürüldüğünde tıklama
+**hiçbir şey yapmadı**: `tiklamaSonrasi 4000` (değişmedi), odak `BODY`.
+
+Sebep `(ydus)/layout.tsx`: `<main className="relative z-10">` — **`id` yok,
+`tabIndex` yok.** Site kabuğu (`AppShell`) ikisini de basıyor, premium
+yerleşimi basmıyordu. Yani `#icerik` çapası orada hiçbir şeye çözülmüyordu.
+
+Bu, deponun kendi kayıtlı sınıfı: **ekranda duran ama hiçbir şeyi
+değiştirmeyen kontrol.** Kapsam sayılmadan yeni bir bileşeni iki yerleşime
+birden bağlamak, ikincisinde onu ölü doğurdu.
+
+`(ydus)/layout.tsx` site kabuğuyla hizalandı (`id="icerik" tabIndex={-1}
+focus:outline-none`). Ölçüldü: premium'da tıklama artık `scrollY 0` ve
+`MAIN#icerik` odakta; sayfada `id="icerik"` **tam 1** (çift kimlik yok).
+
+#### MASAÜSTÜNDE GİZLİ — çakışma ÖLÇÜLDÜ
+
+1280×900'de düğme yapışkan **"İlgili Konular" sütununun** üstüne biniyordu
+(`sticky top-32 space-y-8`, çakışma 1). `lg:hidden` kondu; gerekçe zaten
+mobil — masaüstünde hem Home tuşu hem o sütun var, üstelik sayfa orada
+çok daha kısa (12 216 px = 13.6 ekran).
+
+`display:none` olduğu için öge **odak sırasından da düşüyor** (ölçüldü:
+`odakSirasinda false`, `checkVisibility false`) — yani masaüstünde
+görünmez-ama-odaklanılabilir tuzağı oluşmuyor.
+
+#### NEDEN YOKLAMA
+
+Bu ortamda `scroll` olayı hiç atılmıyor (kayıtlı: kendi dinleyicim **0**
+olay saydı), yani yalnızca olaya bağlanan bir görünürlük kuralı
+DOĞRULANAMAZDI. `KaydirDurumu` ile aynı çözüm: olay dinleniyor (gerçek
+tarayıcıda anında) ve 600 ms'lik yoklama garantiyi veriyor.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| 320 · 375 açık konu | 44×44 · kontrast **10.36** · görünümde · çakışma **0** |
+| tıklama (açık) | `scrollY 4000 → 0` · odak **MAIN#icerik** · `mainTop 65` |
+| tıklama (premium, kapı açıkken) | `scrollY 4000 → 0` · odak **MAIN#icerik** · `mainTop 0` |
+| premium 320 · 375 | 44×44 · görünür · çakışma **0** |
+| **negatif** — eşiğin ÜSTÜNDE (`scrollY 400`, eşik 1218) | **render EDİLMİYOR** |
+| **negatif** — sayfa tepesinde | render edilmiyor |
+| **negatif** — 1280 (açık ve premium) | **0×0**, görünmez, odak sırasında **yok** |
+| **negatif** — sunucu HTML'i | `data-basa-don` **0** — hidrasyon uyuşmazlığı yok |
+| **negatif** — kısa sayfa (2411 px), dibe kaydırılmış | düğme var (eşik gerçekten aşılıyor) |
+| **negatif** — okuma alanı karakter sayısı | 23986 / 6143 — **birebir** |
+| **negatif** — kapı geri kondu | "Erişim Kısıtlı" · `ZZ_OLCUM` izi **0** · dosya yedekle **birebir** |
+| lint · typecheck · build 638/638 · 6 denetim | hepsi geçti |
+
+#### ⚠ AÇIKLANAMAYAN 32px — ölçüldü, kapatılamadı, KAYDA GEÇİRİLDİ
+
+Aynı bileşen açık konu sayfasında `rectTop 498`, premium konu sayfasında
+**466** okuyor. 466 aritmetiğin verdiği değer (`top 406px` + `translateY
+60`). İkinci yöntem farkın gerçek olduğunu doğruladı:
+
+| ölçüt (aynı belge, aynı an) | açık konu | premium |
+|---|---|---|
+| hesaplanan `top` · `transform` · `position` | 406px · ty60 · fixed | **birebir aynı** |
+| `innerHeight` · `clientHeight` · `visualViewport` | 812 · 812 · 812 | 812 · 812 · 812 |
+| **gerçek ögenin rect'i** | **498** | 466 |
+| **aynı sınıflarla `<body>`ye eklenen PROB** | **466** | 466 |
+| ata zincirinde `transform`/`filter`/`perspective`/`backdrop-filter`/`contain`/`content-visibility`/`will-change` | **hiçbiri** (8 ata) | hiçbiri |
+| iki farklı kaydırma konumunda rect | 498 · 498 (**sabit**) | 466 · 466 |
+
+Yani: aynı sayfada, aynı sınıflarla eklenen bir prob doğru değeri veriyor,
+gerçek öge 32px aşağıda duruyor ve hiçbir ata kapsayan blok üretmiyor.
+**Sebep bulunamadı.** İşlevsel bir kusur değil — öge iki sayfada da görünüm
+içinde, sabit, çakışmasız ve tıklanabilir; tek etkisi not tutamağıyla
+arasındaki boşluğun 47px yerine 15px olması.
+
+Kayıt şunun için: biri ileride bu bileşeni taşırsa ya da konumunu
+ayarlarsa, `top-1/2`'nin bu depoda **sayfa türüne göre 32px sapabildiğini**
+bilsin — ve konumu hesapla değil ÖLÇÜMLE doğrulasın.
