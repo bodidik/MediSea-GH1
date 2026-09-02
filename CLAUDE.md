@@ -29439,3 +29439,38 @@ düzeltildi; gören kullanıcı için hiçbir şey yapılmamıştı — ve o kul
 mobilde çoğunluk. Bir kaydırma kabı eklerken üç soruyu birden sor:
 odaklanılabiliyor mu · adı var mı · **kaydırılabilir olduğu GÖRÜNÜYOR mu.**
 
+
+#### Mobil menü düzeltmesi CANLIDA doğrulandı
+
+Kusuru bulan ölçüm birebir tekrarlandı (812×375, menü açık):
+
+| ölçüt | önce | canlıda |
+|---|---|---|
+| panel | y 64 → **438** (görünüm 375) | y 64 → **375**, `max-height: 311px`, `overflow-y: auto` |
+| görünümü aşıyor mu | evet | **hayır** |
+| kaydırılabilir mi | **hayır** | **evet** (içerik 373 > kap 311) |
+| görünmeyen bağlantı | **2** | 2 → **sona kaydırılınca 0** |
+| o iki bağlantı | "PREMİUM YDUS ⚓" · "🧪 KLİNİK ARAÇLAR" | ikisi de görünür (alt kenar 355 < 375) |
+| **negatif** — 375×812 portre | 588, kaydırılamaz | **588, kaydırılamaz**, `max-h` 748 |
+| **negatif** — 1280×900 masaüstü | 103 | **103**, `max-h` 836 |
+
+#### ⚠ `100dvh` ÖYKÜNMÜŞ GÖRÜNÜM DEĞİŞİNCE YENİDEN HESAPLANMIYOR
+
+Portre negatif kontrolü ilk turda **`max-height: 311px`** dedi ve bir an
+"düzeltme portrede de kısıtlıyor" sanıldı. Ölçüldü: `100dvh` **375** —
+yani hâlâ yatay ekranın değeri. `resize_window` görünümü değiştiriyor ama
+`dvh` tarayıcının viewport makinesinden geliyor ve elle `resize` olayı
+göndermek onu tazelemiyor. Sayfa YENİDEN YÜKLENİNCE `dvh` 812, `max-h`
+748px ve panel 588px — beklenen değerler.
+
+Bu, belgede kayıtlı `resize` tuzağının bir basamak ötesi: orada JS
+dinleyicisi tetiklenmiyordu, burada **CSS BİRİMİ** bayat kalıyor. Ölçüt:
+`dvh`/`svh`/`lvh` kullanan bir kuralı öykünme değiştirdikten sonra
+ölçeceksen **önce sayfayı yeniden yükle** — ve `100dvh` taşıyan bir sonda
+ile gerçek değeri bastır.
+
+Aynı turda `innerWidth: 0` tuzağı da yeniden ısırdı (`preset: "desktop"`
+sonrası): ölçüm `panel h: 1`, `max-height: 0px`, "16 görünmez bağlantı"
+gibi **makul görünen çöp** üretti. Kayıtlı koruma (`if (!innerWidth) →
+ölçüm geçersiz`) her geometri betiğinin başında durmalı.
+
