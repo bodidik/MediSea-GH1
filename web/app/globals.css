@@ -771,3 +771,39 @@ label:has(input.sr-only:focus-visible) {
     font-size: 16px;
   }
 }
+
+/* ---------------------------------------------------------------
+   YAPIŞKAN BAŞLIĞIN ALTINDA KALAN ODAK HEDEFİ — scroll-padding-top
+   ---------------------------------------------------------------
+   Başlık çubuğu `position: sticky; top: 0` ve 65px (375 · 812 · 1280
+   üçünde de ölçüldü). Tarayıcı bir ögeyi görünüme kaydırırken üst
+   kenara hizalarsa öge o çubuğun ALTINDA kalıyor — WCAG 2.4.11
+   (Focus Not Obscured).
+
+   Bu belgede sınıf bir dönem "mekanizma yazılı, kanıt yok" diye
+   kayıtlıydı: `element.focus()` Chrome'da ögeyi ORTALADIĞI için
+   hedef üst kenara hiç düşmüyordu. YATAY EKRANDA (812×375) kanıt
+   çıktı — görünüm kısa ve `ReadingHint` altta 155px
+   `scroll-padding-bottom` tuttuğu için tarayıcı ortalayamayıp üste
+   hizalıyor:
+
+     odaklanan alt bilgi bağlantısı  ->  y 36–68
+     yapışkan başlık                 ->  y  0–65   (z-50)
+     elementFromPoint(merkez)        ->  header.contains(...) = TRUE
+
+   30 odak durağının 2'si TAMAMEN örtülüydü.
+
+   ⚠ `scroll-margin-top` İLE `scroll-padding-top` TOPLANIR. Konu
+   başlıklarında `scroll-mt-24` (96px) vardı; global kural konurken
+   kaldırılmasaydı hedef 192px'e düşerdi. Aynı sebeple premium
+   `IcerikBloklari`ndeki üç `scrollMarginTop: '96px'` ve ana
+   sayfadaki `scroll-mt-16` de kaldırıldı.
+
+   Değer 96px, çünkü içindekiler bağlantılarının BUGÜNKÜ davranışı
+   o: başlık 96px'e oturuyor, çubuğun 31px altında. Tek mekanizma,
+   tek sayı — ve artık yalnızca çapalarda değil ODAK taşınmasında da
+   çalışıyor (atlama bağlantısı, Shift+Tab, `focus()`).
+   --------------------------------------------------------------- */
+html {
+  scroll-padding-top: 96px;
+}

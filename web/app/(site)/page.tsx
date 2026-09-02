@@ -140,7 +140,7 @@ export default async function Home() {
         </section>
 
         {/* ── SAĞ: BRANŞLAR ───────────────────────────────── */}
-        <section id="branslar" className="flex-1 overflow-y-auto px-4 sm:px-6 py-5 lg:py-6 scroll-mt-16">
+        <section id="branslar" className="flex-1 overflow-y-auto px-4 sm:px-6 py-5 lg:py-6">
 
           {/* Çalışma durumu — veri yoksa hiç görünmez */}
           <StudyStatus />

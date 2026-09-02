@@ -102,7 +102,7 @@ const BLOK_BASLIK: React.CSSProperties = {
 function MetinBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'metin' }>; id?: string }) {
   return (
     <div style={{ marginBottom: '1.25rem' }}>
-      {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
+      {blok.baslik && <h3 id={id} style={BLOK_BASLIK}>{blok.baslik}</h3>}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
         {blok.satirlar.map((ham, i) => {
           // Düz dize de gelebiliyor (bkz. MetinSatir); tek şekle indiriliyor.
@@ -146,7 +146,7 @@ function TabloBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'tablo' }>; 
   const enAzKolonGenisligi = 110;
   return (
     <div style={{ marginBottom: '1.25rem' }}>
-      {blok.baslik && <h3 id={id} style={{ ...BLOK_BASLIK, scrollMarginTop: '96px' }}>{blok.baslik}</h3>}
+      {blok.baslik && <h3 id={id} style={BLOK_BASLIK}>{blok.baslik}</h3>}
       {/*
         Kaydirilan kabin KLAVYEYLE de kaydirilabilmesi icin odaklanabilir
         olmasi gerekiyor: icinde odaklanabilir hicbir oge yok, yani Tab ile
@@ -263,7 +263,6 @@ function BilgiKutusu({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kut
           lineHeight: 1.35,
           color: stil.etiketRenk,
           margin: '0 0 5px',
-          scrollMarginTop: '96px',
         }}>
           {blok.baslik}
         </h3>

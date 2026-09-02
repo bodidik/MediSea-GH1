@@ -29201,3 +29201,90 @@ DENMİYOR.
 `SoruSor` kapı arkasında; değişiklik kaynakta ve derlenmiş pakette
 görüldü, **render edilmiş hâli ölçülmedi**.
 
+
+### YATAY EKRAN, "KANIT YOK" DİYE BIRAKILAN KUSURU KANITLADI — odak yapışkan başlığın altında kalıyordu
+
+Bu belgede bir sınıf **mekanizması yazılı, kanıtı yok** diye kayıtlıydı:
+
+> *"`html`/`body`'de `scroll-padding-top` **`auto`** (yani yok) ve başlık
+> 65px yapışkan… Gösterilemedi ve o yüzden düzeltilmedi: `element.focus()`
+> Chrome'da ögeyi ORTALIYOR — ölçüldü, hedef `top 384`'te kaldı."*
+
+Hiç ölçülmemiş bir eksen açıldı — **yatay ekran (812×375)** — ve kanıt
+oradan çıktı. Görünüm kısa ve `ReadingHint` altta 155px
+`scroll-padding-bottom` tuttuğu için tarayıcı ortalayamıyor, **üste**
+hizalıyor:
+
+| ölçüt (canlı, 812×375, konu sayfası) | değer |
+|---|---|
+| odaklanan alt bilgi bağlantısı | **y 36–68** |
+| yapışkan başlık | y 0–65 · `sticky` · **z-50** |
+| `elementFromPoint(merkez)` → `header.contains(...)` | **TRUE** |
+| `scroll-padding-top` (html · body) | **auto · auto** |
+| 30 odak durağının TAMAMEN örtülü olanı | **2** |
+
+WCAG 2.4.11 (Focus Not Obscured). Portrede de oluşabiliyor — tarayıcı
+üste hizaladığı her durumda (Shift+Tab, `scrollIntoView`, atlama
+bağlantısı) — ama orada ortalama davranışı sınıfı gizliyordu.
+
+#### ⚠ `scroll-margin-top` İLE `scroll-padding-top` TOPLANIR
+
+Global kuralı eklemek tek başına yetmiyor: konu başlıklarında zaten
+`scroll-mt-24` (96px) vardı ve ikisi toplanınca hedef **192px**'e
+düşerdi — yani düzeltme, içindekiler gezinmesini bozardı.
+
+O yüzden per-öge kurallar KALDIRILDI ve tek mekanizmaya indirildi:
+
+| yer | önce | sonra |
+|---|---|---|
+| konu bölüm başlıkları | `scroll-mt-24` | — |
+| premium `IcerikBloklari` | `scrollMarginTop: '96px'` ×3 | — |
+| ana sayfa `#branslar` | `scroll-mt-16` (**64px**) | — |
+| `html` | — | **`scroll-padding-top: 96px`** |
+
+96px seçildi çünkü içindekiler bağlantılarının **bugünkü** davranışı o.
+Ana sayfadaki 64px ise zaten kusurluydu: 65px'lik çubuğun **1px
+altında**, yani hedef başlık çubuğun arkasına düşüyordu.
+
+#### Doğrulama — altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **812×375 konu sayfası — tamamen örtülü odak** | **2 / 30** | **0 / 30** |
+| aynı sayfada odaklanan alt bilgi bağı | y 36–68, başlığın **altında** | **y 133–165**, `header.contains` **false** |
+| **negatif** — içindekiler çapası (3 madde) | 96px | **96px — BİREBİR**, `scroll-margin-top` artık 0 |
+| **negatif** — çapa sonrası başlık odakta mı | evet | **evet** |
+| **negatif** — okuma alanı karakter sayısı | 23986 | **23986 — BİREBİR** |
+| **negatif** — atlama bağlantısı | `main` odakta | **`main` odakta**, y 65 |
+| **negatif** — ana sayfa `#branslar` (375) | 64px hedeflenirdi | **96px** — çubuğun 31px altında |
+| **negatif** — ana sayfa masaüstü belgesi | **1453** | **1453 — BİREBİR** |
+| **negatif** — `/tools/apache2` 812×375 | — | gerçek örtülü **0** (aşağıya bak) |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+`/tools/apache2` ilk okumada "2 örtülü" dedi; ikisi de bu depoda kayıtlı
+**yanlış pozitif**: `sr-only` atlama bağlantısı (1×1 px, odakta açılıyor
+ama `document.hasFocus()` false olduğu için `:focus` uymuyor) ve `sr-only`
+onay kutusu (gerçek hedefi saran `<label>`). O sayfada sabit/yapışkan
+katman **hiç yok**.
+
+#### ⚠ TAILWIND'İN İÇERİK TARAYICISI YORUMLARI DA OKUYOR
+
+Düzeltmeyi anlatan yorumda `scroll-mt-24` dizesi geçiyordu ve JIT onu
+**aday sınıf** sayıp `scroll-margin-top:6rem` kuralını üretilmiş CSS'e
+geri koydu. Zararsız (hiçbir öge o sınıfı taşımıyor) ama bu depoda
+kayıtlı **yorum körlüğü** sınıfının yeni bir kanalı: orada kusuru
+ANLATAN yorum kaynak tarayan bir ÖLÇÜTÜ yanıltıyordu, burada
+DERLEYİCİYİ. Yorum sınıf adı yerine CSS özelliğinin adını yazacak
+şekilde değiştirildi; `scroll-margin` üretilen CSS'te **0**.
+
+#### ⚠ İÇ İÇE GÖRÜNÜM ÖYKÜNMESİ ÇÖP GEOMETRİ ÜRETİYOR
+
+Başlık yüksekliği ölçülürken tab 812×375'e öykünmüşken içine 375px'lik
+bir iframe konuldu ve `header` yüksekliği **894px**, `scroll-mt` **0px**
+çıktı. Sekme öykünmesi kaldırılıp aynı ölçüm tekrarlanınca üç genişlikte
+de **65px / 96px**.
+
+Bu depoda kayıtlı `clientWidth` kalibrasyonunun bir üst basamağı:
+**sekme zaten öykünüyorsa iframe içinde geometri ölçme.** Ölçüm ya üst
+düzeyde yapılmalı ya da öykünme kapatılmalı.
+

@@ -769,13 +769,15 @@ export default async function TopicDetailPage({
                        *
                        * `focus:outline-none`: başlık bir gezinme hedefi,
                        * etkileşimli bir denetim değil; halka görsel gürültü
-                       * olurdu. `scroll-mt-24` yapışkan başlığın altına
-                       * hizalıyor (ölçüldü: başlık 96px, çubuk 65px).
+                       * olurdu. Yapışkan başlığın altına hizalamayı artık
+                       * `html { scroll-padding-top: 96px }` yapıyor (bkz.
+                       * globals.css); buradaki ögeye özgü kural ONUNLA TOPLANIP
+                       * 192px'e çıkacağı için kaldırıldı.
                        */}
                       <h2
                         id={bolumKimligi[idx]}
                         tabIndex={-1}
-                        className="scroll-mt-24 focus:outline-none text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
+                        className="focus:outline-none text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
                       >
                         {/*
                           Süsleme: ekran okuyucu bunu "kare" diye okuyup her
