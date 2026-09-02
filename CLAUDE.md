@@ -29288,3 +29288,66 @@ Bu depoda kayıtlı `clientWidth` kalibrasyonunun bir üst basamağı:
 **sekme zaten öykünüyorsa iframe içinde geometri ölçme.** Ölçüm ya üst
 düzeyde yapılmalı ya da öykünme kapatılmalı.
 
+
+### MOBİL MENÜNÜN İKİ DÖNÜŞÜM BAĞLANTISI YATAY EKRANDA ULAŞILAMIYORDU
+
+Yatay ekran ekseni bir kusur daha verdi. Telefon yan çevrildiğinde
+görünüm **812×375** oluyor; masaüstü branş şeridi `hidden lg:flex`
+olduğu için birincil gezinme hâlâ mobil menü.
+
+Ölçüldü (canlı, 812×375, menü açık):
+
+| ölçüt | değer |
+|---|---|
+| panel | y **64 → 438** |
+| görünüm | **375** |
+| `max-height` · `overflow-y` | **none** · **visible** |
+| panel kendi içinde kaydırılabilir mi | **HAYIR** |
+| görünmeyen bağlantı | **2 / 15** |
+
+**Sayfayı kaydırmak KURTARMIYOR** — ayırt edici ölçüm bu oldu: başlık
+`sticky top-0` olduğu için panel de yerinde kalıyor.
+
+| sayfa kaydırması | panelin alt kenarı |
+|---|---|
+| 0 | 438 |
+| 400 | **438** |
+| 1200 | **438** |
+
+Yani iki bağlantı **kalıcı olarak ulaşılamaz** — ve ikisi de dönüşüm
+bağlantısı: **"PREMİUM YDUS ⚓"** ve **"🧪 KLİNİK ARAÇLAR"**.
+
+Çare `max-h-[calc(100dvh-4rem)] overflow-y-auto`. `4rem` başlığın
+ölçülen yüksekliği (64–65px; 375, 812 ve 1280'de aynı); `dvh` seçildi
+ki mobil tarayıcı çubuğu açılıp kapandığında değer doğru kalsın.
+
+**Kaba `tabindex` GEREKMİYOR ve bu ölçüldü:** içindeki her öge
+odaklanabilir bir bağlantı, yani Tab kabı kendiliğinden sürüyor. (Tablo
+kaplarında durum farklıydı — orada yalnızca metin vardı ve `tabindex="0"`
+şarttı.)
+
+#### Doğrulama — üçü negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| **812×375 panel** | y 64 → **438** (görünüm 375) | y 64 → **375**, `max-height: 311px` |
+| görünümü aşıyor mu | **evet** | **hayır** |
+| panel kaydırılabilir mi | hayır | **evet** (içerik 373 > kap 311) |
+| sona kaydırıldığında görünmeyen bağ | **2** | **0** — "🧪 KLİNİK ARAÇLAR" alt kenar 355 |
+| **klavye** — son bağa odaklanınca | — | panel **kendiliğinden 63px kaydı**, bağ görünümde |
+| **negatif** — 375×812 portre | panel 588, kaydırılamaz | **588, kaydırılamaz** (`max-h` 748 > 588) — değişmedi |
+| **negatif** — 1280×900 masaüstü | panel 103 | **103** (`max-h` 836) — değişmedi |
+| **negatif** — yatay ekranda 6 site yüzeyi | — | yatay kayma **0**, taşan öge **0**, `h1` 1, `main` 1 |
+| 12 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+#### ⚠ JSX YORUMU ÜÇLÜ/`&&` DALININ İÇİNE KONAMAZ — derleme düştü
+
+Yorum ilk yazımda `{menuOpen && (` parantezinin İÇİNE kondu ve derleme
+`Expected '</', got 'id'` ile düştü: parantez tek bir öge alabiliyor,
+`{/* … */}` + `<div>` iki komşu ifade demek.
+
+Bu, belgede zaten kayıtlı olan tuzağın aynısı (*"JSX üçlü işlecinin
+dalına `{/* … */}` + öge koymak iki komşu ifade üretiyor"*) ve bu turda
+yeniden ısırdı. Yorum `{menuOpen && (` satırının ÜSTÜNE, var olan JSX
+yorumunun içine taşındı.
+

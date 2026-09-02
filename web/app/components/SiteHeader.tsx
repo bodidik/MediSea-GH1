@@ -664,9 +664,26 @@ export default function SiteHeader() {
 
       </div>
 
-      {/* --- MOBİL / TABLET AÇILIR MENÜ --- */}
+      {/* --- MOBİL / TABLET AÇILIR MENÜ ---
+
+          YATAY EKRANDA PANEL GÖRÜNÜMÜ AŞIYORDU. Ölçüldü (canlı, 812x375):
+          panel y 64 -> 438, görünüm 375. Başlık `sticky top-0` olduğu için
+          panel sayfa kaydırılsa da yerinde kalıyor (scrollY 0 / 400 / 1200
+          üçünde de panelAlt 438) ve panelin kendisi de kaydırılamıyordu
+          (`overflow-y: visible`, `max-height: none`). Sonuç: 15 bağlantının
+          2'si KALICI OLARAK ULAŞILAMAZ — üstelik ikisi de dönüşüm
+          bağlantısı (Premium YDUS ve Klinik Araçlar).
+
+          4rem = başlık yüksekliği (64-65px; 375, 812 ve 1280'de ölçüldü).
+          `dvh` seçildi ki mobil tarayıcı çubuğu açılıp kapandığında da
+          doğru kalsın. Portrede taban zaten yetiyor (panel 588, görünüm
+          812), yani orada davranış değişmiyor.
+
+          Kaba ayrıca `tabindex` GEREKMİYOR: içindeki her öge odaklanabilir
+          bir bağlantı, yani Tab kabı kendiliğinden sürüyor. (Tablo
+          kaplarında durum farklıydı — orada yalnızca metin vardı.) */}
       {menuOpen && (
-        <div id="ana-menu" className="2xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
+        <div id="ana-menu" className="2xl:hidden border-t border-slate-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           <div className="max-w-[1800px] mx-auto px-5 py-5 space-y-5">
 
             {/* Branşlar (lg ve altı - üstteki nav gizliyken) */}
