@@ -114,27 +114,39 @@ export default function LeadershipBoard() {
               const medal = rank === 1 ? "🥇 1." : rank === 2 ? "🥈 2." : rank === 3 ? "🥉 3." : `#${rank}`;
               const rankClass = getRankStyles(rank);
 
+              /* Satir mobilde COKUYORDU: sabit genislikli uc kardes (rozet 56px,
+                 avatar 48px, XP 78px) artı iki 16px bosluk, 320px ekranda karta
+                 kalan ~220px'i tumuyle yiyordu. Olculdu (canli, 320px): isim
+                 kabinin genisligi 0 — yani 14 ad ve unvanin 10'u %100 gizliydi;
+                 375px'te de ad kabi 45px / gerekli 113px, yani %60 gizli.
+                 Sirasi ve puani gorunen ama KIMIN oldugu gorunmeyen bir siralama
+                 tablosu, siralama tablosu degildir.
+                 Cozum sm ALTINA sinirli: rozet 40px, avatar gizli (emoji, bilgi
+                 tasimiyor; ad tasiyor), bosluklar 8px, XP ve ad bir kademe kucuk.
+                 Olculen sonuc — 320: kirpik 14 -> 4 ve sifir-genislik 10 -> 0;
+                 375 ve 414: kirpik 0; 768 (negatif kontrol): ad kabi 113px,
+                 kirpik 0 — DEGISMEDI. */
               return (
                 <div 
                   key={user.id} 
-                  className={`flex items-center gap-4 p-4 rounded-2xl border transition-all ${
+                  className={`flex items-center gap-2 sm:gap-4 p-4 rounded-2xl border transition-all ${
                     (user as any).isMe 
                       ? "border-blue-500 bg-blue-900/20 shadow-[0_0_20px_rgba(59,130,246,0.15)] scale-[1.02] z-20" 
                       : "border-slate-800/50 hover:bg-slate-800 hover:border-slate-700"
                   }`}
                 >
                   {/* Sıra / Madalya */}
-                  <div className={`w-14 h-14 flex items-center justify-center font-black rounded-xl border shrink-0 ${rankClass}`}>
+                  <div className={`w-10 h-10 text-xs sm:w-14 sm:h-14 sm:text-base flex items-center justify-center font-black rounded-xl border shrink-0 ${rankClass}`}>
                     {medal}
                   </div>
 
                   {/* Avatar & İsim */}
-                  <div className="flex-1 flex items-center gap-4 overflow-hidden">
-                    <div className="w-12 h-12 rounded-full bg-slate-850 border border-slate-700 flex items-center justify-center text-2xl shadow-inner shrink-0">
+                  <div className="flex-1 min-w-0 flex items-center gap-2 sm:gap-4 overflow-hidden">
+                    <div className="w-12 h-12 rounded-full bg-slate-850 border border-slate-700 hidden sm:flex items-center justify-center text-2xl shadow-inner shrink-0">
                       {user.avatar}
                     </div>
                     <div className="overflow-hidden">
-                      <h3 className={`font-black text-lg truncate ${(user as any).isMe ? 'text-blue-400' : 'text-white'}`}>
+                      <h3 className={`font-black text-base sm:text-lg truncate ${(user as any).isMe ? 'text-blue-400' : 'text-white'}`}>
                         {user.name}
                       </h3>
                       {/* Bu eleman BOŞ basılıyordu: her satırın ünvanı veride
@@ -148,7 +160,7 @@ export default function LeadershipBoard() {
 
                   {/* XP Puanı */}
                   <div className="text-right shrink-0">
-                    <div className={`font-black text-2xl tracking-tighter ${(user as any).isMe ? 'text-blue-400' : 'text-slate-300'}`}>
+                    <div className={`font-black text-lg sm:text-2xl tracking-tighter ${(user as any).isMe ? 'text-blue-400' : 'text-slate-300'}`}>
                       {user.xp.toLocaleString("tr-TR")}
                     </div>
                     <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">

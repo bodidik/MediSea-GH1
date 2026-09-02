@@ -29539,3 +29539,82 @@ belirgin biçimde ÜSTÜNDE, yani ters yönde bir kusur. Çare bir `max-width`
 olurdu ama o, okuma kartının yerleşimini ve yanındaki blokları etkileyen
 bir tasarım kararı. Ölçüldü, kapsamı yazıldı; karar ürün tarafında.
 
+
+### SIRALAMA TABLOSU TELEFONDA KİMİN OLDUĞUNU GÖSTERMİYORDU — ad kabı 0px
+
+320px süpürmesinin bulgusu. Açık `(site)` tarafı altı yüzeyde **tamamen
+temiz** çıktı (belge 320 · yatay taşma 0 · kırpık 0 · küçük hedef 0), ama
+premium `/tr/premium/ydus/liderlik` **14 kırpık öge** gösterdi.
+
+Ayrıntı ölçülünce kırpma değil **çökme** çıktı:
+
+| genişlik | ad kabı | gerekli | kırpık | kabı **SIFIR** |
+|---|---|---|---|---|
+| **320** | **0** | 113 | 14 | **10** |
+| 375 | 45 | 113 | 13 | 0 |
+| 414 | 84 | 113 | 4 | 0 |
+| 768 | 113 | 113 | 0 | 0 |
+
+Yani 320px'te ad ve ünvanların onu **%100 gizliydi**, 375px'te ad %60
+gizli. Ekranda sıra numarası, avatar ve puan duruyor — **kimin olduğu
+durmuyordu.** Sırasını ve puanını gösterip adı göstermeyen bir sıralama
+tablosu, sıralama tablosu değildir.
+
+**Kök neden aritmetikte:** satır `flex items-center gap-4 p-4` ve esnek ad
+sütununun üç `shrink-0` kardeşi var — rozet **56** + avatar **48** + XP
+**78**, artı iki `gap-4` (32). 320px'te karta kalan ~220px'i tümüyle
+yiyorlar ve `flex-1` sütun sıfıra iniyor.
+
+#### Dört varyant ÖLÇÜLDÜ — "her şeyi küçült" YETMİYOR
+
+Kaynağa dokunmadan, canlı sayfada CSS enjekte edilerek (320px):
+
+| varyant | ad kabı / 113 | kırpık |
+|---|---|---|
+| bugün | **0** | 14 |
+| yalnızca küçült (rozet 44 · avatar 36 · gap 8 · XP 18px) | **35** | 13 |
+| avatar gizli, kalanı taban | 79 | 8 |
+| avatar 32px kalsın + dolgu 12 | 54 | 13 |
+| **küçült + avatar gizli + ad 16px** | **86** | **4** |
+
+İki ders: (1) tek başına küçültme %31'e çıkarıyor, yani yetersiz;
+(2) avatarı korumaya çalışan varyant, koruyan hiçbir şey kazandırmıyor —
+32px'lik bir emoji için adın yarısı gidiyor.
+
+**Avatar `sm` altında gizlendi** ve gerekçesi bilgi hiyerarşisi: `user.avatar`
+bir emoji, `user.name` kimliğin kendisi. 320px'te dekoratif bir glif ile adın
+tamamı arasında seçim yapılıyor.
+
+#### Doğrulama — üretim derlemesinde, altısı negatif kontrol
+
+| genişlik | önce (canlı) | sonra |
+|---|---|---|
+| **320** | kırpık **14** · sıfır **10** · en kötü **%0** | **kırpık 2 · sıfır 0 · en kötü %94** |
+| 375 | kırpık 13 · en kötü %40 | **kırpık 0** · ad kabı 107/107 |
+| 414 | kırpık 4 · en kötü %74 | **kırpık 0** |
+| **negatif** — 640 (kırılma noktası) | — | avatar **görünür** · rozet **56** · ad **18px** · XP **24px** |
+| **negatif** — 768 | ad kabı **113** · kırpık 0 | **113 · 0 — BİREBİR** |
+| **negatif** — 1280 | — | **birebir aynı** |
+| **negatif** — satır sayısı · "Sen" satırı | 7 · var | **7 · var** |
+| **negatif** — küçük dokunma hedefi · taşan öge · yatay kayma | 0 | **0 · 0 · 0** |
+| lint · typecheck · build 638/638 · 5 denetim | — | hepsi geçti |
+
+320px'te kalan iki kırpma **ünvan** (`"Büyük Amiral"` %95, `"Kıdemli Albay"`
+%94), yani bir karakterlik kesim; **adların hepsi tam.**
+
+#### Ölçüm notu — `querySelector('.tracking-tighter')` XP'yi değil BAŞLIĞI aldı
+
+XP boyutu ilk okumada 36 → 48px göründü ve bir an `text-2xl`in (24px) iki
+katı sanıldı. Çapa sayfadaki İLK `.tracking-tighter` ögesine düşmüştü ve o
+`<h1>` (`text-4xl sm:text-5xl` = tam 36 → 48). Çapa satırın kendi XP bloğuna
+bağlanınca gerçek değer çıktı: **18 → 24px**, blok 62 → 78px, yani taban
+davranışı korunuyor.
+
+Bu, bu depoda kayıtlı *"çapa benzersiz olmalı"* kuralının bir kez daha
+işlemesi — ve buradaki hâli sinsi, çünkü yakalanan sayı da kırılma noktasında
+**değişiyordu**, yani "doğru ögeyi ölçüyorum" izlenimi veriyordu.
+
+**Aktarılabilir kural: `flex-1` bir GENİŞLİK GARANTİSİ DEĞİLDİR.** Sabit
+genişlikli kardeşlerin toplamı kabı aşınca esnek sütun sıfıra iner ve
+`truncate` sessizce %100 gizler. Ölçüt tek satır: dar ekranda esnek sütunun
+`clientWidth`ini oku — sıfırsa, sayfa "kırpıyor" değil **çöküyor**.
