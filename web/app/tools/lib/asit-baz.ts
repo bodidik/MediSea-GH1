@@ -42,10 +42,44 @@ export const SINIRLAR = {
   na: [90, 200],
   cl: [50, 150],
   albumin: [0.5, 7],
+  laktat: [0.1, 30],
   pao2: [10, 700],
   fio2: [0.21, 1],
   yas: [0, 120],
 } as const;
+
+/**
+ * STANDART BAZ FAZLASI (SBE) — Siggaard-Andersen / Van Slyke.
+ *
+ *   SBE = 0.9287 × (HCO₃⁻ − 24.4 + 14.83 × (pH − 7.4))
+ *
+ * NEDEN: her kan gazı cihazı BE basıyor ve araçta yoktu. Ölçtüğü şey
+ * HCO₃⁻'ten FARKLI — HCO₃⁻ solunum kompanzasyonundan etkilenir (kronik
+ * solunum asidozunda böbrek onu yükseltir), SBE ise metabolik bileşeni
+ * pH'ı da hesaba katarak ayırır. İkisi aynı şeyi ölçmez.
+ *
+ * BULGU ÜRETMEZ. İkinci bir okuma olarak gösterilir ve HCO₃⁻ tabanlı
+ * sonuçla ayrıştığında bunu SÖYLER. Bu depoda "aynı karar iki kaynaktan"
+ * defalarca gerçek kusur ürettiği için bulgu listesinin tek kaynağı
+ * korunuyor: pH · PaCO₂ · HCO₃⁻ · AG.
+ */
+export const SBE_NORMAL_BANT = 2;
+export const SBE_FORMUL = "SBE = 0.9287 × (HCO₃⁻ − 24.4 + 14.83 × (pH − 7.4))";
+
+export function standartBazFazlasi(ph: number, hco3: number) {
+  return Math.round(0.9287 * (hco3 - 24.4 + 14.83 * (ph - 7.4)) * 10) / 10;
+}
+
+/**
+ * MUTLAK DELTA GAP eşiği: ΔAG − ΔHCO₃⁻.
+ *
+ * Delta ORANI zaten hesaplanıyor. İkisi aynı soruyu farklı ölçeklerde
+ * soruyor ve BÜYÜK deltalarda AYRIŞIYORLAR — örnek: ΔAG 20, ΔHCO₃⁻ 12
+ * için oran 1.67 ("saf") ama Δgap +8 ("eşlik eden alkaloz"). Bu yüzden
+ * ikisi de gösteriliyor, ayrıştıklarında söyleniyor ve BULGU LİSTESİNİ
+ * yalnızca ORAN kuruyor.
+ */
+export const DELTA_GAP_BANT = 6;
 
 export type BozuklukTip =
   | "metabolik-asidoz-ag"
@@ -87,6 +121,8 @@ export interface Girdi {
   na?: number | null;
   cl?: number | null;
   albumin?: number | null;
+  /** Laktat — yüksek anyon açığının ne kadarını açıkladığını ayrıştırır. */
+  laktat?: number | null;
   /** Solunum bozukluğu akut mu kronik mi — klinik bilgi, hesapla bulunamaz. */
   sure?: "akut" | "kronik";
 }
@@ -105,6 +141,20 @@ export interface Yorum {
   deltaHCO3: number | null;
   deltaOran: number | null;
   deltaYorum: string | null;
+  /** ΔAG − ΔHCO₃⁻. Orandan bağımsız ikinci okuma; bulgu üretmez. */
+  deltaGap: number | null;
+  deltaGapYorum: string | null;
+  /** Oran ile mutlak Δgap farklı sonuç veriyorsa açıklaması. */
+  deltaGapCelisi: string | null;
+  /** Standart baz fazlası — metabolik bileşenin solunumdan bağımsız ölçüsü. */
+  sbe: number | null;
+  sbeYonu: "asidoz" | "alkaloz" | "normal";
+  /** SBE, HCO₃⁻ tabanlı bulgularla ayrışıyorsa açıklaması. */
+  sbeCelisi: string | null;
+  /** Laktat girildiyse: değeri, laktat dışı AG ve yorumu. */
+  laktat: number | null;
+  laktatKalanAG: number | null;
+  laktatYorum: string | null;
   /** Henderson-Hasselbalch ile hesaplanan HCO₃⁻ ve ölçülenden farkı. */
   hhHesaplanan: number | null;
   hhTutarsiz: boolean;
@@ -271,6 +321,15 @@ export function yorumla(g: Girdi): Yorum {
     deltaHCO3: null,
     deltaOran: null,
     deltaYorum: null,
+    deltaGap: null,
+    deltaGapYorum: null,
+    deltaGapCelisi: null,
+    sbe: null,
+    sbeYonu: "normal",
+    sbeCelisi: null,
+    laktat: null,
+    laktatKalanAG: null,
+    laktatYorum: null,
     hhHesaplanan: null,
     hhTutarsiz: false,
     ozet: "",
@@ -307,6 +366,22 @@ export function yorumla(g: Girdi): Yorum {
         "(yüksek AG / normal AG) ve gizli asidoz ayrımı yapılamaz.",
     );
   }
+
+  /* ── Laktat ───────────────────────────────────────────────────────
+   * Laktat monovalan bir anyon: mmol/L = mEq/L, yani anyon açığına
+   * BİRE BİR katılır. Buradaki iş bir neden TAHMİN etmek değil, ölçülen
+   * bir anyonun açığın ne kadarını KAPLADIĞINI ayrıştırmak.            */
+  const lakHam = g.laktat ?? null;
+  const laktat =
+    lakHam !== null && araliktaMi(lakHam, SINIRLAR.laktat) ? yuvarla(lakHam, 2) : null;
+  let laktatKalanAG: number | null = null;
+  let laktatYorum: string | null = null;
+
+  /* ── Standart baz fazlası ─────────────────────────────────────────── */
+  const sbe = standartBazFazlasi(ph, hco3);
+  const sbeYonu: Yorum["sbeYonu"] =
+    sbe < -SBE_NORMAL_BANT ? "asidoz" : sbe > SBE_NORMAL_BANT ? "alkaloz" : "normal";
+  let sbeCelisi: string | null = null;
 
   /* ── Henderson-Hasselbalch tutarlılığı ────────────────────────────── */
   const hhHesaplanan = yuvarla(0.03 * pco2 * Math.pow(10, ph - 6.1));
@@ -528,6 +603,81 @@ export function yorumla(g: Girdi): Yorum {
     }
   }
 
+  /* ── Mutlak Δgap: oranın yanında İKİNCİ okuma ─────────────────────
+   * Bulgu ÜRETMEZ. Oran zaten bulgu üretiyor; ikisi de yaklaşık yöntem
+   * olduğu için ikinci bir kaynağın da bulgu üretmesi, aynı listeyi iki
+   * gerçeklikten beslemek olurdu.                                     */
+  let deltaGap: number | null = null;
+  let deltaGapYorum: string | null = null;
+  let deltaGapCelisi: string | null = null;
+
+  if (deltaAG !== null && deltaHCO3 !== null && deltaHCO3 > 0) {
+    deltaGap = yuvarla(deltaAG - deltaHCO3);
+    if (deltaGap > DELTA_GAP_BANT) {
+      deltaGapYorum = `Δgap +${deltaGap} (> +${DELTA_GAP_BANT}) → eşlik eden metabolik alkaloz`;
+    } else if (deltaGap < -DELTA_GAP_BANT) {
+      deltaGapYorum = `Δgap ${deltaGap} (< −${DELTA_GAP_BANT}) → eşlik eden normal anyon açıklı metabolik asidoz`;
+    } else {
+      deltaGapYorum = `Δgap ${deltaGap} (−${DELTA_GAP_BANT} … +${DELTA_GAP_BANT}) → ek bir metabolik bozukluk göstermiyor`;
+    }
+
+    const yon = (d: number, alt: number, ust: number) => (d < alt ? "nonag" : d > ust ? "alkaloz" : "saf");
+    const oranYon = deltaOran === null ? null : yon(deltaOran, 1, 2);
+    const gapYon = yon(deltaGap, -DELTA_GAP_BANT, DELTA_GAP_BANT);
+    if (oranYon !== null && oranYon !== gapYon) {
+      deltaGapCelisi =
+        "Oran ile mutlak Δgap farklı sonuç veriyor. İkisi de yaklaşık yöntem: " +
+        "büyük deltalarda oran, küçük deltalarda mutlak fark daha kararlıdır. " +
+        "Yukarıdaki bulgu listesi ORAN üzerinden kuruldu; ayrımı klinik tablo yapar.";
+    }
+  }
+
+  /* ── Laktat: yüksek AG'nin ne kadarını açıklıyor ──────────────────── */
+  if (laktat !== null && agEtkin !== null) {
+    laktatKalanAG = yuvarla(agEtkin - laktat);
+    if (agYuksek) {
+      laktatYorum =
+        laktatKalanAG > AG_UST
+          ? `Laktat açığın ${laktat} mEq/L'sini kaplıyor; laktat dışı anyon açığı ` +
+            `${laktatKalanAG} ve hâlâ ${AG_UST}'nin üstünde — açığı tek başına laktat ` +
+            "açıklamıyor, ikinci bir yüksek anyon açığı nedeni aranmalı."
+          : `Laktat dışı anyon açığı ${laktatKalanAG} (≤ ${AG_UST}) — yüksek anyon açığı ` +
+            "laktatla açıklanıyor.";
+    } else if (laktat >= 4) {
+      laktatYorum =
+        `Laktat ${laktat} mmol/L yüksek ama anyon açığı ${agEtkin} normal görünüyor. ` +
+        (albGecerli
+          ? "Albümin hesaba katıldı; laktatın açığa yansımaması eşlik eden bir " +
+            "hipokloremik/alkalotik süreçle olabilir."
+          : "Albümin girilmedi — hipoalbüminemi anyon açığını olduğundan küçük " +
+            "gösterir ve bu tabloyu üretebilir.");
+    } else {
+      laktatYorum = `Laktat ${laktat} mmol/L — anyon açığına belirgin katkısı yok.`;
+    }
+  } else if (laktat !== null) {
+    laktatYorum =
+      `Laktat ${laktat} mmol/L. Anyon açığı hesaplanamadığı için katkısı ayrıştırılamıyor ` +
+      "(Na⁺ ve Cl⁻ gerekli).";
+  }
+
+  /* ── SBE ile HCO₃⁻ tabanlı okumanın ayrışması ─────────────────────
+   * Kronik solunum bozukluğunda böbrek yanıtı baz depolarını GERÇEKTEN
+   * değiştirir, yani oradaki sapma bir kusur değil beklenen bulgudur.
+   * Bu yüzden not iki okumayı da anlatıyor, birini yanlış ilan etmiyor. */
+  const metAsidozBulgusu = bulgular.some((b) => b.tip.startsWith("metabolik-asidoz"));
+  const metAlkalozBulgusu = bulgular.some((b) => b.tip === "metabolik-alkaloz");
+  if (sbeYonu === "asidoz" && !metAsidozBulgusu) {
+    sbeCelisi =
+      `SBE ${sbe} mEq/L, yani baz açığı var — ama HCO₃⁻ tabanlı okuma metabolik ` +
+      "asidoz göstermiyor. Sınırdaki HCO₃⁻ değerlerinde SBE daha duyarlıdır; kronik " +
+      "solunum alkalozunda ise böbrek yanıtı SBE'yi eksiye çeker ve bu beklenen bir bulgudur.";
+  } else if (sbeYonu === "alkaloz" && !metAlkalozBulgusu) {
+    sbeCelisi =
+      `SBE +${sbe} mEq/L, yani baz fazlası var — ama HCO₃⁻ tabanlı okuma metabolik ` +
+      "alkaloz göstermiyor. Kronik solunum asidozunda böbrek yanıtı SBE'yi artıya " +
+      "çeker ve bu beklenen bir bulgudur; aksi hâlde sınırda bir metabolik alkaloz düşünün.";
+  }
+
   /* ── Özet ─────────────────────────────────────────────────────────── */
   const mikst = bulgular.length > 1;
   let ozet: string;
@@ -567,6 +717,15 @@ export function yorumla(g: Girdi): Yorum {
     deltaHCO3,
     deltaOran,
     deltaYorum,
+    deltaGap,
+    deltaGapYorum,
+    deltaGapCelisi,
+    sbe,
+    sbeYonu,
+    sbeCelisi,
+    laktat,
+    laktatKalanAG,
+    laktatYorum,
     hhHesaplanan,
     hhTutarsiz,
     ozet,

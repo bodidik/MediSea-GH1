@@ -30000,3 +30000,143 @@ Kusuru bulan ölçümlerin birebir tekrarı:
 
 32px sapması canlıda da duruyor (`y 498`), yani yerel bir derleme artefaktı
 değil — yukarıda kayıtlı.
+
+### ASİT-BAZ ARACINA ÜÇ İKİNCİ OKUMA — ve hiçbiri bulgu listesine DOKUNMUYOR
+
+Kullanıcı isteği: aracı "daha kalifiye" hâle getirmek. Eksen seçimi ölçümle
+yapıldı, özellik listesiyle değil — çünkü aracın kendi klinik uyarısı zaten
+şunu söylüyor: **sebep bu sayılardan çıkarılamaz.** Yani bir etiyoloji ayırıcı
+tanısı eklemek, aracın kendi ölçüsüyle çelişen bir iddia olurdu.
+
+Eklenen üç şey de **ölçülen değerlerden hesaplanabilir** ve üçü de İKİNCİ
+OKUMA: bulgu listesinin tek kaynağı pH · PaCO₂ · HCO₃⁻ · AG olarak kalıyor.
+
+| ekleme | ne veriyor |
+|---|---|
+| **SBE** (standart baz fazlası) | metabolik yükün pH'tan bağımsız ölçüsü — `0.9287 × (HCO₃⁻ − 24.4 + 14.83 × (pH − 7.4))` |
+| **laktat ayrıştırması** | anyon açığının ne kadarını laktat kaplıyor; kalan açık hâlâ yüksekse ikinci bir neden aranmalı |
+| **mutlak Δgap** | `ΔAG − ΔHCO₃⁻` — oranın küçük deltalarda kararsızlaştığı yerde ikinci ölçüt |
+
+#### TEK KAYNAK KURALI KORUNDU — ve bu ölçüldü
+
+Bu depoda tur tur avlanan sınıf *"aynı karar iki kaynaktan gelirse er geç
+ayrışır"*. Üç yeni okuma da o riski taşıyordu; üçü de bulgu ÜRETMİYOR.
+
+Kanıt tarayıcıdan: HAGMA vakasında (pH 7.20 · PaCO₂ 25 · HCO₃⁻ 10 · Na⁺ 140 ·
+Cl⁻ 100) **SBE −16.1** — büyük bir baz açığı — ve bulgu listesi yine tek
+satır: *"Yüksek anyon açıklı metabolik asidoz"*. SBE fazladan bir bulgu
+eklemiyor.
+
+Ayrışma olduğunda **susmuyor da**: iki okuma farklı sonuç verdiğinde
+"Çapraz kontrol — ikinci okuma ayrışıyor" kutusu çıkıyor ve **bulgu
+listesinin hangi okumadan kurulduğunu açıkça söylüyor**.
+
+#### Δgap ayrışması CANLIDA ölçüldü
+
+pH 7.20 · PaCO₂ 30 · HCO₃⁻ 12 · Na⁺ 140 · Cl⁻ 95:
+
+| okuma | sonuç |
+|---|---|
+| **Δ/Δ oranı** 1.75 | "1–2 → **saf** yüksek anyon açıklı metabolik asidoz" |
+| **mutlak Δgap** +9 | "> +6 → **eşlik eden metabolik alkaloz**" |
+
+İkisi zıt. Kutu metni: *"Oran ile mutlak Δgap farklı sonuç veriyor. İkisi de
+yaklaşık yöntem: büyük deltalarda oran, küçük deltalarda mutlak fark daha
+kararlıdır. Yukarıdaki bulgu listesi ORAN üzerinden kuruldu; ayrımı klinik
+tablo yapar."*
+
+#### SBE ÇELİŞKİSİ KUSUR DEĞİL, BEKLENTİ — ve metin bunu söylüyor
+
+Kronik solunum asidozunda böbrek yanıtı SBE'yi artıya çeker. Ölçüldü
+(pH 7.36 · PaCO₂ 60 · HCO₃⁻ 33 · kronik): **SBE +7.4** ama HCO₃⁻ tabanlı
+okuma metabolik alkaloz demiyor.
+
+Kutu bunu bir kusur gibi sunmuyor: *"Kronik solunum asidozunda böbrek yanıtı
+SBE'yi artıya çeker ve bu **beklenen bir bulgudur**; aksi hâlde sınırda bir
+metabolik alkaloz düşünün."* Yani ikinci okuma bağlamı biliyor.
+
+#### Laktat: AG'yi ayrıştırıyor, AG'nin yerini ALMIYOR
+
+| girdi | ekranda |
+|---|---|
+| AG 30 · laktat 12 | LAKTAT DIŞI AG **18** → *"laktat dışı anyon açığı 18 ve hâlâ 12'nin üstünde — açığı tek başına laktat açıklamıyor, **ikinci bir yüksek anyon açığı nedeni aranmalı**"* |
+| AG 30 · laktat 20 | kalan 10 → *"laktatla açıklanıyor"* |
+| AG normal · laktat 6 | albümin uyarısı (hipoalbüminemi AG'yi maskeler) |
+| **Na⁺/Cl⁻ YOK** · laktat 8 | *"ayrıştırılamıyor (Na⁺ ve Cl⁻ gerekli)"* — **sessiz boşluk yok** |
+
+Son satır bilerek: AG kartının koşulu `ag !== null || laktatYorum !== null`
+yapıldı, yoksa laktat girilip Na⁺/Cl⁻ girilmediğinde açıklama sessizce
+düşerdi.
+
+**Laktat makullük sınırı `[0.1, 30]`** — çöp girdi kartı hiç çizmiyor ve
+alan ADIYLA söyleniyor (ölçüldü: `abc` → amber uyarı *"Laktat … hesaba
+KATILMADI"*, asit-baz yorumu **ayakta**, Winter 21–25 değişmedi).
+
+#### Doğrulama — 45 saf vaka + tarayıcı, sekizi negatif kontrol
+
+Motor saf modül olduğu için `node --experimental-strip-types` ile doğrudan
+sürüldü: **45 / 45**.
+
+| ölçüt | sonuç |
+|---|---|
+| SBE elle hesapla (4 vaka) | 0 · −10.1 · 11.2 · −13.6 — birebir |
+| Δgap ayrışma / uyum | B1 çelişki **var** · B2 çelişki **yok** |
+| laktat dört dal | ikinci neden · laktatla açıklanıyor · albümin uyarısı · ayrıştırılamıyor |
+| **negatif** — laktat 99 (makul değil) | kart **yok**, yorum **yok** |
+| **negatif** — laktat girilmedi | üç alan da `null` |
+| **negatif** — AG yoksa Δgap de yok | `null` |
+| **negatif** — kronik/akut kompanzasyon (7 cetvel satırı) | **hepsi kayıtlı değerlerle birebir** |
+| **negatif** — çöp pH hâlâ eleniyor | `gecerli: false` |
+| **negatif** — SBE normal bantta → çelişki yok | `["normal", null]` |
+| **negatif** — met. alkaloz bulgusu varken SBE artı → çelişki yok | `null` |
+
+**TARİHSEL KONTROL — beklenti tutmadığında önce beklenti sınandı.** Bir vaka
+düştü: `pH 7.40 · PaCO₂ 40 · HCO₃⁻ 24 · Na⁺ 140 · Cl⁻ 100` iki bulgu
+veriyordu (`metabolik-asidoz-ag` + `metabolik-alkaloz`), ben tek bulgu
+bekliyordum. **Düzeltme ÖNCESİ motor** (`git show HEAD:…`) aynı girdiyle
+sürüldü: **birebir aynı çıktı.** Yani davranış kasıtlı (HCO₃⁻ 24 →
+`deltaHCO3 = 0` → `<= 0` dalı kompanze alkalozu ekliyor); yanlış olan
+beklentiydi.
+
+Tarayıcı tarafı (üretim derlemesi):
+
+| ölçüt | 320 | 375 | 1280 |
+|---|---|---|---|
+| yatay kayma | **0** | 0 | 0 |
+| kırpılan öge | **0** (yalnız `sr-only` atlama bağı — kayıtlı yanlış pozitif) | 0 | 0 |
+| 24px altı hedef | **0** | — | — |
+| elektrolit ızgarası | 1 kolon | 1 kolon | **4 kolon** (Na⁺ · Cl⁻ · Alb · Laktat) |
+| delta ızgarası | **2 kolon** | 2 kolon | **4 kolon** (ΔAG · ΔHCO₃⁻ · Δ/Δ · **Δgap**) |
+| çapraz kutu kontrastı | — | — | **8.87** |
+| `h1` | 1 | 1 | 1 |
+
+Referans cetveline iki satır eklendi (SBE ve Δgap formülleri) ve aralık
+cümlesi `· SBE ±2 mEq/L` ile bitiyor — **sabitten türüyor**, elle yazılmıyor.
+
+#### ⚠ `innerText` + `uppercase` + Türkçe `i→İ` — bu oturumda ÜÇÜNCÜ kez
+
+Çapraz kontrol kutusu ilk ölçümde **"yok"** göründü. Kutu oradaydı; başlığı
+`uppercase` ve `innerText` onu uyguluyor, üstelik Türkçede `i` **`İ`** oluyor:
+
+```
+textContent : "Çapraz kontrol — ikinci okuma ayrışıyor"
+innerText   : "ÇAPRAZ KONTROL — İKİNCİ OKUMA AYRIŞIYOR"
+```
+
+Aynı ölçümde ikinci bir çapa tuzağı daha çıktı: `Anyon açığı` deseni
+sayfanın **statik klinik uyarısını** yakaladı ve "AG hesaplanamıyor" sanıldı.
+İkisi de kayıtlı: **metin ararken `textContent` kullan, ve çapanın sayfada
+benzersiz olduğunu SAY.**
+
+#### ⚠ CRLF çapası — yama betiği hiçbir şey yazmadan çıktı
+
+Çapa `'  SBE_NORMAL_BANT,\n  SBE_FORMUL,'` idi; dosya **saf CRLF**, yani
+gerçek baytlar `\r\n`. Betik "ÇAPA" deyip düştü ve `DELTA_GAP_BANT` içe
+aktarılmadan kaldı — typecheck kırmızı.
+
+Kayıtlı çözüm uygulandı: LF kopyası üzerinde çalış, sonunda dosyanın KENDİ
+biçimine çevir, ve CR ile LF'i **ayrı ayrı** say (`636 / 636` — saf CRLF).
+
+Aynı koşumda `TSC=0` basıldı ve **yanıltıcıydı**: `npm run typecheck | tail`
+zincirinde `$?` `tail`'in kodudur. Kapı tek başına çalıştırılınca gerçek
+durum çıktı.

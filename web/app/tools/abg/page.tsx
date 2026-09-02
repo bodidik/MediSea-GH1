@@ -14,6 +14,9 @@ import {
   HCO3_ALT,
   HCO3_UST,
   AG_UST,
+  SBE_NORMAL_BANT,
+  SBE_FORMUL,
+  DELTA_GAP_BANT,
   type Bulgu,
   KOMPANZASYON_CETVELI,
 } from "@/app/tools/lib/asit-baz";
@@ -89,6 +92,7 @@ export default function AbgPage() {
   const [na, setNa] = React.useState("");
   const [cl, setCl] = React.useState("");
   const [alb, setAlb] = React.useState("");
+  const [laktat, setLaktat] = React.useState("");
   const [yas, setYas] = React.useState("");
   const [sure, setSure] = React.useState<"akut" | "kronik">("akut");
 
@@ -143,6 +147,7 @@ export default function AbgPage() {
   const oNa = oku(na, SINIRLAR.na);
   const oCl = oku(cl, SINIRLAR.cl);
   const oAlb = oku(alb, SINIRLAR.albumin);
+  const oLaktat = oku(laktat, SINIRLAR.laktat);
   const oYas = oku(yas, SINIRLAR.yas);
 
   const phN = oPh.deger;
@@ -153,6 +158,7 @@ export default function AbgPage() {
   const naN = oNa.deger;
   const clN = oCl.deger;
   const albN = oAlb.deger;
+  const laktatN = oLaktat.deger;
   const yasN = oYas.deger;
 
   const cekirdekVar = phN !== null && pco2N !== null && hco3N !== null;
@@ -167,6 +173,7 @@ export default function AbgPage() {
     bozukAd(oNa, "Na⁺"),
     bozukAd(oCl, "Cl⁻"),
     bozukAd(oAlb, "Albümin"),
+    bozukAd(oLaktat, "Laktat"),
     bozukAd(oPao2, "PaO₂"),
     bozukAd(oFio2, "FiO₂"),
     bozukAd(oYas, "Yaş"),
@@ -181,6 +188,7 @@ export default function AbgPage() {
           na: naN,
           cl: clN,
           albumin: albN,
+          laktat: laktatN,
           sure,
         })
       : null;
@@ -214,7 +222,7 @@ export default function AbgPage() {
               </h1>
             </div>
             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest leading-none mt-1">
-              Mikst bozukluk ayrımı · kompanzasyon · anyon açığı · delta-delta
+              Mikst bozukluk · kompanzasyon · anyon açığı · delta-delta · SBE · laktat
             </p>
           </div>
         </div>
@@ -245,10 +253,13 @@ export default function AbgPage() {
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest pt-2 border-t border-slate-100">
             Elektrolitler — anyon açığı için
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {/* Dört alan: sm'de 2x2, lg'de tek sıra. Öteki iki grup üç alan
+              taşıdığı için 3 kolonda kalıyor; burada laktat dördüncü. */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <SayiAlani id="ab-na" etiket="Na⁺" deger={na} ayarla={setNa} ipucu="ör. 138" birim="mEq/L" />
             <SayiAlani id="ab-cl" etiket="Cl⁻" deger={cl} ayarla={setCl} ipucu="ör. 102" birim="mEq/L" />
             <SayiAlani id="ab-alb" etiket="Albümin" deger={alb} ayarla={setAlb} ipucu="ör. 4.0" birim="g/dL" />
+            <SayiAlani id="ab-laktat" etiket="Laktat" deger={laktat} ayarla={setLaktat} ipucu="ör. 1.2" birim="mmol/L" />
           </div>
 
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest pt-2 border-t border-slate-100">
@@ -330,6 +341,14 @@ export default function AbgPage() {
                 { e: "pH", v: phN!.toFixed(2), d: y.phDurumu === "asidemi" ? "↓ asidemi" : y.phDurumu === "alkalemi" ? "↑ alkalemi" : "normal", ok: y.phDurumu === "normal" },
                 { e: "PaCO₂", v: `${pco2N}`, d: pco2N! > PCO2_UST ? "↑ yüksek" : pco2N! < PCO2_ALT ? "↓ düşük" : "normal", ok: pco2N! >= PCO2_ALT && pco2N! <= PCO2_UST },
                 { e: "HCO₃⁻", v: `${hco3N}`, d: hco3N! > HCO3_UST ? "↑ yüksek" : hco3N! < HCO3_ALT ? "↓ düşük" : "normal", ok: hco3N! >= HCO3_ALT && hco3N! <= HCO3_UST },
+                ...(y.sbe !== null
+                  ? [{
+                      e: "SBE",
+                      v: `${y.sbe > 0 ? "+" : ""}${y.sbe}`,
+                      d: y.sbeYonu === "asidoz" ? "↓ baz açığı" : y.sbeYonu === "alkaloz" ? "↑ baz fazlası" : "normal",
+                      ok: y.sbeYonu === "normal",
+                    }]
+                  : []),
                 ...(y.agEtkin !== null
                   ? [{ e: "Anyon açığı", v: `${y.agEtkin}`, d: y.agYuksek ? "↑ yüksek" : "normal", ok: !y.agYuksek }]
                   : []),
@@ -385,6 +404,24 @@ export default function AbgPage() {
               </div>
             )}
 
+            {/* ÇAPRAZ KONTROL: SBE ve mutlak Δgap bulgu ÜRETMEZ, yalnızca
+                ikinci bir okuma olarak konuşur. Bulgu listesinin tek kaynağı
+                pH · PaCO₂ · HCO₃⁻ · AG olarak kalıyor; bu kutular yalnızca
+                iki okuma ayrıştığında çıkıyor. */}
+            {(y.sbeCelisi || y.deltaGapCelisi) && (
+              <div className="rounded-2xl border-2 border-sky-300 bg-sky-50 p-4 space-y-2">
+                <div className="text-[9px] font-black uppercase tracking-widest text-sky-800">
+                  Çapraz kontrol — ikinci okuma ayrışıyor
+                </div>
+                {y.sbeCelisi && (
+                  <p className="text-[11px] leading-relaxed text-sky-900">{y.sbeCelisi}</p>
+                )}
+                {y.deltaGapCelisi && (
+                  <p className="text-[11px] leading-relaxed text-sky-900">{y.deltaGapCelisi}</p>
+                )}
+              </div>
+            )}
+
             {y.notlar.length > 0 && (
               <ul className="space-y-2 pt-1">
                 {y.notlar.map((n, i) => (
@@ -399,11 +436,16 @@ export default function AbgPage() {
         )}
 
         {/* ── Anyon açığı ve delta ──────────────────────── */}
-        {y && y.ag !== null && (
+        {/* Laktat girilip AG hesaplanamadığında da bir şey söylenmeli:
+            kart o yüzden ikisinden biri varken çiziliyor, AG ızgarası ayrıca
+            kapılı. Aksi hâlde "AG olmadan ayrıştırılamıyor" cümlesi hiç
+            görünmezdi — sessiz boşluk. */}
+        {y && (y.ag !== null || y.laktatYorum !== null) && (
           <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
             <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
               Anyon açığı &amp; delta-delta
             </p>
+            {y.ag !== null && (
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-2xl p-4 text-center bg-slate-50 border border-slate-200">
                 <div className="text-[9px] font-black uppercase tracking-widest mb-1 text-slate-600">
@@ -424,16 +466,41 @@ export default function AbgPage() {
                 </div>
               </div>
             </div>
+            )}
+
+            {y.laktatYorum && (
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 space-y-2">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-slate-600">
+                    Laktat
+                  </span>
+                  <span className="text-xl font-black text-blue-900">{y.laktat}</span>
+                  <span className="text-[9px] font-bold text-slate-600">mmol/L</span>
+                  {y.laktatKalanAG !== null && (
+                    <>
+                      <span aria-hidden="true" className="text-slate-400">·</span>
+                      <span className="text-[9px] font-black uppercase tracking-widest text-slate-600">
+                        Laktat dışı AG
+                      </span>
+                      <span className="text-xl font-black text-blue-900">{y.laktatKalanAG}</span>
+                    </>
+                  )}
+                </div>
+                <p className="text-[11px] leading-relaxed text-slate-700">{y.laktatYorum}</p>
+              </div>
+            )}
 
             {y.agYuksek && (
               <div className="border-t border-slate-100 pt-4 space-y-3">
                 {y.deltaOran !== null ? (
                   <>
-                    <div className="grid grid-cols-3 gap-3">
+                    {/* 320px'te dört kolon 51px'e düşüyordu (ölçüldü); 2x2. */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {[
                         { e: "ΔAG", v: y.deltaAG },
                         { e: "ΔHCO₃⁻", v: y.deltaHCO3 },
                         { e: "Δ/Δ", v: y.deltaOran },
+                        { e: "Δgap", v: y.deltaGap === null ? "—" : `${y.deltaGap > 0 ? "+" : ""}${y.deltaGap}` },
                       ].map((k) => (
                         <div key={k.e} className="bg-slate-50 rounded-2xl p-3 text-center border border-slate-200">
                           <div className="text-[9px] font-black text-slate-600 uppercase tracking-widest mb-1">{k.e}</div>
@@ -444,6 +511,11 @@ export default function AbgPage() {
                     <p className="rounded-xl px-4 py-3 text-[11px] font-bold bg-blue-50 border border-blue-200 text-blue-900">
                       {y.deltaYorum}
                     </p>
+                    {y.deltaGapYorum && (
+                      <p className="rounded-xl px-4 py-3 text-[11px] font-bold bg-slate-50 border border-slate-200 text-slate-700">
+                        {y.deltaGapYorum}
+                      </p>
+                    )}
                   </>
                 ) : (
                   <p className="rounded-xl px-4 py-3 text-[11px] font-bold bg-amber-50 border border-amber-300 text-amber-900">
@@ -518,11 +590,27 @@ export default function AbgPage() {
                 <span className="text-[11px] font-bold text-blue-900 font-mono">{r.formul}</span>
               </div>
             ))}
+            {/* SBE ve Δgap cetvele de yazılıyor: motorun kullandığı sabitlerden
+              TÜRÜYORLAR, yani ekrandaki formül ile hesap bir daha ayrışamaz. */}
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5 border-b border-slate-100">
+            <span className="text-[10px] font-black text-blue-900 uppercase tracking-widest w-full sm:w-48 sm:shrink-0">
+              Standart baz fazlası
+            </span>
+            <span className="text-[11px] font-bold text-blue-900 font-mono">{SBE_FORMUL}</span>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3 py-1.5">
+            <span className="text-[10px] font-black text-blue-900 uppercase tracking-widest w-full sm:w-48 sm:shrink-0">
+              Mutlak delta gap
+            </span>
+            <span className="text-[11px] font-bold text-blue-900 font-mono">
+              Δgap = ΔAG − ΔHCO₃⁻ (± {DELTA_GAP_BANT})
+            </span>
+            </div>
           </div>
           <p className="text-[11px] text-slate-700 leading-relaxed mt-4">
             Referans aralıkları: pH {PH_ALT}–{PH_UST} · PaCO₂ {PCO2_ALT}–{PCO2_UST} mmHg ·
-            HCO₃⁻ {HCO3_ALT}–{HCO3_UST} mEq/L · anyon açığı ≤{AG_UST}. Kendi
-            laboratuvarınızın aralıkları farklıysa yorum da değişir.
+            HCO₃⁻ {HCO3_ALT}–{HCO3_UST} mEq/L · anyon açığı ≤{AG_UST} · SBE ±{SBE_NORMAL_BANT}
+            {" "}mEq/L. Kendi laboratuvarınızın aralıkları farklıysa yorum da değişir.
           </p>
         </div>
 
