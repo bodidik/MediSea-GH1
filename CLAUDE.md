@@ -29703,3 +29703,31 @@ kısılıyor. Bayat okumalar ürün kusuru değil, ortam artefaktı.
 yüklenmez `data-kaydir="bas"` alıyor ve o niteliği yazabilecek tek şey
 bileşen — yani seçicinin şeridi GERÇEKTEN kapsadığı, tek bir okumayla ve
 zamanlayıcıya güvenmeden kanıtlanıyor.
+
+#### İki düzeltme CANLIDA doğrulandı — kart dolgusu ve liderlik satırı
+
+Kusurları bulan ölçümlerin birebir tekrarı; "önce" değerleri aynı komutla
+alınmıştı.
+
+**Okuma kartı dolgusu** (`/topics/endokrinoloji/addison`):
+
+| genişlik | dolgu | ortanca satır | belge |
+|---|---|---|---|
+| 320 | 32 → **20px** | 24 → **29 karakter** | 10.2 ekran |
+| 375 | 32 → **20px** | 32 → **34 karakter** | 8.6 ekran |
+| **negatif** — 640 | **32px** | 68 | — |
+| **negatif** — 1280 | **48px** | 90 | 4.6 ekran |
+| **negatif** — okuma alanı | — | **5025 karakter, dört genişlikte de birebir** | — |
+
+Son satır kritik: vurgular karakter ofsetiyle saklanıyor, metin değişseydi
+kayıtlı vurgular silinirdi.
+
+**Liderlik satırı** (`/tr/premium/ydus/liderlik`):
+
+| genişlik | önce | canlıda |
+|---|---|---|
+| **320** | kırpık **14** · sıfır **10** · en kötü **%0** | **kırpık 2 · sıfır 0 · en kötü %94** · "Dr. Barbaros" **102/102 tam** |
+| 375 | kırpık 13 · en kötü %40 | **kırpık 0** · ad 107/107 |
+| **negatif** — 640 | — | avatar **görünür** · rozet **56** · ad **18px** · XP **24px** |
+| **negatif** — 1280 | ad kabı **113** · kırpık 0 | **113 · 0 — birebir** |
+| **negatif** — satır sayısı · `h1` · yatay kayma | 7 · 1 · 0 | **7 · 1 · 0** |
