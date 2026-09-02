@@ -10,6 +10,7 @@ import { tarihYazisi } from "@/app/lib/tarih";
 import { slugCoz } from "@/lib/slug";
 import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { tabloKaydir } from "@/app/lib/tablo";
+import TabloKaydirDurumu from "@/app/components/TabloKaydirDurumu";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
 import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
@@ -704,6 +705,10 @@ export default async function TopicDetailPage({
                 </ol>
               </nav>
             )}
+
+            {/* Tablo kaplarina "devami var" durumu yazar (maskeyi globals.css cizer).
+                Olculdu: 375px'te 14 kabin 13'u tasiyor ve hicbir gorsel ipucu yoktu. */}
+            <TabloKaydirDurumu />
 
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
                 vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}

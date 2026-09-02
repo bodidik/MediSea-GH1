@@ -29351,3 +29351,91 @@ dalına `{/* … */}` + öge koymak iki komşu ifade üretiyor"*) ve bu turda
 yeniden ısırdı. Yorum `{menuOpen && (` satırının ÜSTÜNE, var olan JSX
 yorumunun içine taşındı.
 
+
+### TELEFONDA TABLONUN %57'Sİ GİZLİYDİ VE HİÇBİR İPUCU YOKTU
+
+Yeni eksen: **kaydırılan bir kabın "devamı var" işareti var mı?** Bu depoda
+tablolara klavye erişimi (`tabindex` + `role="region"`) ve ayırt edici ad
+verilmişti; GÖRÜNÜR affordans hiç ölçülmemişti.
+
+Mobil tarayıcı kaydırma çubuğunu ancak kaydırma sırasında gösteriyor, yani
+kap sessizce kırpıyor ve tablo TAM görünüyor.
+
+**Ölçüldü (canlı, 375px, 6 konu sayfası):**
+
+| ölçüt | değer |
+|---|---|
+| tablo kabı | 14 |
+| **taşan** | **13** |
+| en kötü — `sarkoidoz-ayirici-tani` | 550px tablonun **313px'i (%57)** gizli |
+| `prokalsitonin` | 584px'in **307px'i (%47)** gizli |
+| `kap.offsetHeight − clientHeight` | **0** — çubuk için yer ayrılmıyor |
+| `mask` · `box-shadow` · `background-image` · sağ kenarlık | **yok · yok · yok · 0px** |
+
+Yani karşılaştırma tablolarının yarısı — bu sitede tablonun VARLIK SEBEBİ —
+telefonda görünmüyordu ve kullanıcının kaydırmak için hiçbir sebebi yoktu.
+
+#### ÜÇ YOL DENENDİ VE ÖLÇÜMLE ELENDİ
+
+| yol | ölçüm | verdikt |
+|---|---|---|
+| `::-webkit-scrollbar` ile kalıcı çubuk | kap yüksekliği **değişmedi** (6/6) | mobil öykünmesinde klasik çubuk gelmiyor |
+| `animation-timeline: scroll(self inline)` | `CSS.supports` **true**, ama opaklık **her durumda 0** | bu ortamda animasyon motoru askıda — **doğrulanamayan gönderilmez** |
+| `background-attachment: local/scroll` gölge hilesi | satırların KENDİ opak zeminleri var | kabın zeminini tümden örtüyorlar |
+
+Üçüncüsü ayrıca ölçüldü ve karar verdirdi: **14 tablonun 9'unda koyu hücre
+var** (`rgb(30,41,59)` başlık satırı, `rgb(146,64,14)` amber) ve AYNI
+tabloda beyaz gövde satırları duruyor. Tek renkli bir gölge ikisinden
+birinde görünmez.
+
+`position: sticky` bir pseudo/gerçek öge de denendi ve ölçümle düştü:
+`h: 0` (yüzde yükseklik çözülmüyor) ve kaydırınca `x` 300 → **−7**, yani
+yapışmıyor.
+
+#### SEÇİLEN YOL — `mask-image`, çünkü ZEMİNDEN BAĞIMSIZ
+
+Fade, içeriğin KENDİ piksellerini saydamlaştırıyor; koyu başlık satırında
+da beyaz gövde satırında da aynı biçimde "devamı var" diyor. Ölçüldü:
+maske uygulandığında kap geometrisi **birebir aynı** (`w/h/scrollWidth/
+clientWidth` dördü de) ve okuma alanının metni değişmiyor.
+
+Durumu küçük bir istemci bileşeni (`TabloKaydirDurumu`) yazıyor —
+**DOM yapısı değişmiyor, yalnızca bir nitelik**:
+
+| durum | koşul | maske |
+|---|---|---|
+| (nitelik yok) | taşma ≤ 2px | **yok** — yanlış affordans üretilmiyor |
+| `bas` | başta | sağ kenar solar |
+| `orta` | ortada | iki kenar |
+| `son` | sonda | sol kenar |
+
+600 ms yoklama `ReadingTools`un kalıbı: yazı tipi geç yüklenince ya da
+başka bir konuya geçilince (aynı bileşen, yeni HTML) ölçüm bayatlıyor.
+İmza aynıysa nitelik yeniden yazılmıyor.
+
+**JS yoksa nitelik de yok** — bugünkü davranış, yani gerileme değil.
+Baskıda maske kapalı (kâğıtta kaydırma yok).
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| açık konu (375px) — taşan kap | 5 → **5'i de `bas` + maskeli** |
+| durum geçişleri | `bas` → **`orta`** → **`son`** → `bas` |
+| maske değerleri | üç durumda da beklenen gradyan |
+| **negatif** — taşmayan kap (aynı sayfa) | **nitelik YOK, maske YOK** |
+| **negatif** — MASAÜSTÜ 1280px | 6 kabın 6'sı taşmıyor → **nitelik 0, maske 0** |
+| **negatif** — okuma alanı karakter sayısı | **8140 — canlıyla BİREBİR** |
+| **negatif** — sayfa yatay kayması | **0** |
+| **negatif** — premium (kapı geçici açık) | 9 kap, **yalnız 1'i taşıyor** (premium tablolarda `minWidth = kolon × 110`), o da doğru maskeleniyor; `role`/`tabindex`/`aria-labelledby` **değişmedi** |
+| premium durum geçişleri | `bas` → `orta` → `son` → `bas` |
+| üretilen CSS | dört kural da var, `@media print` sıfırlaması dahil |
+| kapı geri kondu mu | **"Erişim Kısıtlı"**, `ZZ_OLCUM` izi **0**, dosya yedekle birebir |
+| 13 CI kapısı + meta test + lint + typecheck + build 638/638 | hepsi geçti |
+
+**Aktarılabilir kural: `overflow-x: auto` bir KAPASİTEDİR, AFFORDANS
+değil.** Bu depoda tablo kapları klavye ve ekran okuyucu için üç turda
+düzeltildi; gören kullanıcı için hiçbir şey yapılmamıştı — ve o kullanıcı
+mobilde çoğunluk. Bir kaydırma kabı eklerken üç soruyu birden sor:
+odaklanılabiliyor mu · adı var mı · **kaydırılabilir olduğu GÖRÜNÜYOR mu.**
+

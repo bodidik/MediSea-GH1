@@ -807,3 +807,51 @@ label:has(input.sr-only:focus-visible) {
 html {
   scroll-padding-top: 96px;
 }
+
+/* ---------------------------------------------------------------
+   TABLONUN "DEVAMI VAR" İŞARETİ — kenar maskesi
+   ---------------------------------------------------------------
+   İçerik tabloları `overflow-x: auto` bir kapta duruyor ve telefonda
+   neredeyse hepsi taşıyor, ama hiçbir görsel ipucu YOKTU: mobil
+   tarayıcı kaydırma çubuğunu ancak kaydırma sırasında gösteriyor,
+   yani tablo tam görünüyor.
+
+   Ölçüldü (canlı, 375px, 6 konu sayfası):
+     14 kabın 13'ü taşıyor
+     sarkoidoz-ayirici-tani   550px tablonun 313px'i (%57) gizli
+     prokalsitonin            584px tablonun 307px'i (%47) gizli
+     kap offsetHeight-clientHeight = 0, mask/box-shadow/background yok
+
+   NEDEN `mask-image`: fade, içeriğin KENDİ piksellerini saydamlaştırır,
+   yani ZEMİN RENGİNDEN BAĞIMSIZDIR. Bu şart, çünkü ölçüldü — 14
+   tablonun 9'unda koyu hücre var (`rgb(30,41,59)` başlık satırı,
+   `rgb(146,64,14)` amber) ve aynı tabloda beyaz gövde satırları da
+   duruyor. Tek renkli bir gölge ikisinden birinde görünmezdi; kabın
+   ZEMİNİNE çizilen klasik gölge hilesi ise satırların opak zemini
+   tarafından tümden örtülüyordu.
+
+   Durumu (`bas` / `orta` / `son`) `TabloKaydirDurumu` bileşeni yazıyor;
+   niteliği olmayan kap (taşmayan tablo) hiç maske almıyor, yani yanlış
+   bir affordans üretilmiyor. JS yoksa nitelik de yok: bugünkü davranış.
+
+   Baskıda maske kapalı — kâğıtta kaydırma diye bir şey yok ve fade
+   yalnızca kenardaki hücreyi soldururdu.
+   --------------------------------------------------------------- */
+[data-tablo-kaydir][data-kaydir='bas'] {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+[data-tablo-kaydir][data-kaydir='orta'] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
+[data-tablo-kaydir][data-kaydir='son'] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px);
+  mask-image: linear-gradient(to right, transparent, #000 28px);
+}
+@media print {
+  [data-tablo-kaydir][data-kaydir] {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
