@@ -29474,3 +29474,68 @@ sonrası): ölçüm `panel h: 1`, `max-height: 0px`, "16 görünmez bağlantı"
 gibi **makul görünen çöp** üretti. Kayıtlı koruma (`if (!innerWidth) →
 ölçüm geçersiz`) her geometri betiğinin başında durmalı.
 
+
+### TELEFONDA SATIR 24 KARAKTERE DÜŞÜYORDU — okuma kartının dolgusu
+
+Yeni eksen: **satır uzunluğu (measure).** Bu depoda yazı BOYUTU tabanı
+ölçülmüştü (okuma alanında 14px, telefonda 15px) ama satırın kaç karakter
+olduğu hiç sorulmamıştı.
+
+Ölçüm tahminle değil **gerçek satır kırılımlarıyla** yapıldı: paragrafın
+metin düğümü karakter karakter gezilip `getBoundingClientRect().top`
+değiştiği yerler satır sonu sayıldı.
+
+| genişlik | dolgu | metin kolonu | **karakter/satır** | belge |
+|---|---|---|---|---|
+| 375 | 32px | 277 | **32** | 29 918px (36.8 ekran) |
+| **320** | 32px | 222 | **24** | 38 337px (47.2 ekran) |
+| 1280 (kıyas) | 48px | 708 | **99** | 12 281px |
+
+24 karakter, Türkçe tıbbi metinde satır başına ~3 kelime demek
+("vorikonazol", "immünsüpresyon" tek başına yarım satır). Rahat aralık
+45–75; telefonda 35–45 pratik hedef.
+
+**Kök neden kartın dolgusu**, yazı boyutu değil: 375px'te sayfa kenarı 16px
++ kart dolgusu 32px = her yandan 48px, yani görünümün **%25.6'sı yatay
+boşluk**.
+
+#### Değer ÖLÇÜLEREK seçildi — dört aday sürüldü
+
+| dolgu | 375px karakter | 375px belge | 320px karakter | 320px belge |
+|---|---|---|---|---|
+| 32 (bugün) | 32 | 29 918 | 24 | 38 337 |
+| **20** | **36** | **27 457 (−%8.2)** | **28** | **33 977 (−%11.4)** |
+| 16 | 37 | 27 007 (−%9.7) | 29 | 32 944 (−%14.1) |
+| 12 | 39 | 26 246 (−%12.3) | — | — |
+
+16px bir karakter daha veriyor ama kartın **40px köşe yarıçapının** içine
+giriyor. 20px seçildi: `p-5 sm:p-8 md:p-12`.
+
+Kazanç yalnızca satırda değil **belgede**: aynı sayfa 36.8 → 33.8 ekran
+(375px), 47.2 → 41.8 ekran (320px). Dar satır yalnızca okumayı zorlaştırmıyor,
+sayfayı da uzatıyor.
+
+#### Doğrulama — beşi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| 375px karakter · belge | 32 · 29 918 | **36 · 27 433** |
+| 320px karakter · belge | 24 · 38 337 | **28 · 33 953** |
+| **negatif** — okuma alanı karakter sayısı | 23 986 | **23 986 — BİREBİR** (320 · 375 · 1280 üçünde de) |
+| **negatif** — tam 640px sınırında dolgu | 32px | **32px** — `sm` eşiği, eski tabanla aynı |
+| **negatif** — 1280px dolgu · kolon | 48px · 708 | **48px · 708** |
+| **negatif** — `h1` · içindekiler bağı | 1 · 12 | **1 · 12** |
+| **negatif** — yatay kayma (320/375/1280) | 0 | **0** |
+| 5 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Üçüncü satır bu değişikliğin tek gerçek riskiydi: vurgular karakter
+ofsetiyle saklanıyor ve okuma alanının metni değişseydi kayıtlı vurgular
+silinirdi. Dolgu metne dokunmuyor.
+
+#### Not edilen, DEĞİŞTİRİLMEYEN: masaüstünde satır ÇOK UZUN
+
+Aynı ölçüm 1280px'te **99 karakter** verdi — rahat aralığın (45–75)
+belirgin biçimde ÜSTÜNDE, yani ters yönde bir kusur. Çare bir `max-width`
+olurdu ama o, okuma kartının yerleşimini ve yanındaki blokları etkileyen
+bir tasarım kararı. Ölçüldü, kapsamı yazıldı; karar ürün tarafında.
+

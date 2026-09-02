@@ -711,8 +711,21 @@ export default async function TopicDetailPage({
             <TabloKaydirDurumu />
 
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
-                vurgulanabilir kabul eder (yönetici editörü hariç tutulur) */}
-            <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-8 md:p-12 space-y-10">
+                vurgulanabilir kabul eder (yönetici editörü hariç tutulur)
+
+                DOLGU TELEFONDA SATIRI 32 KARAKTERE DÜŞÜRÜYORDU. Ölçüldü
+                (canlı, gerçek satır kırılımları sayılarak):
+
+                  375px  dolgu 32 -> 32 karakter/satır, belge 29918px
+                         dolgu 20 -> 36 karakter,       belge 27457 (-%8.2)
+                  320px  dolgu 32 -> 24 karakter,       belge 38337px
+                         dolgu 20 -> 28 karakter,       belge 33977 (-%11.4)
+
+                Türkçe tıbbi metinde 24 karakter satır başına ~3 kelime
+                demek. `sm` (640px) ve üstünde dolgu DEĞİŞMİYOR; kazanç
+                tümüyle telefonda. 16px de ölçüldü (37 / 29 karakter,
+                -%9.7 / -%14.1) ama 40px köşe yarıçapının içine giriyor. */}
+            <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-5 sm:p-8 md:p-12 space-y-10">
               {/* Ziyaretçiye görünen hata kartı.
                   Eskiden site SAHİBİNE yazılmıştı: dosya yolu, "geçerli bir
                   JSON değil", "düzenleyici de kapalı" ve ham ayrıştırıcı
