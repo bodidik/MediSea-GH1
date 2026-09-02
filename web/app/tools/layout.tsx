@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import KaydirDurumu from "@/app/components/KaydirDurumu";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
@@ -59,6 +60,7 @@ export default function AraclarDuzen({ children }: { children: ReactNode }) {
   return (
     <>
     <main>
+      <KaydirDurumu />
       {/*
         JS ÇALIŞMIYORSA SESSİZ KALMA.
 

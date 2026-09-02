@@ -120,10 +120,10 @@ export default function SonucDuyuru({ metin }: { metin: string | null }) {
           className="fixed inset-x-0 bottom-0 z-40 border-t-2 border-blue-900 bg-blue-950/95 px-4 py-2.5 shadow-[0_-8px_24px_rgba(15,23,42,0.25)] backdrop-blur-sm"
         >
           <div className="mx-auto flex max-w-3xl items-center gap-3">
-            <span className="shrink-0 text-[9px] font-black uppercase tracking-[0.2em] text-blue-300">
+            <span className="hidden sm:inline shrink-0 text-[9px] font-black uppercase tracking-[0.2em] text-blue-300">
               Sonuç
             </span>
-            <span className="min-w-0 flex-1 text-[13px] font-bold leading-snug text-white line-clamp-2">
+            <span className="min-w-0 flex-1 text-[13px] font-bold leading-snug text-white line-clamp-3 sm:line-clamp-2">
               {metin}
             </span>
             <button

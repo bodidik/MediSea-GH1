@@ -29731,3 +29731,87 @@ kayıtlı vurgular silinirdi.
 | **negatif** — 640 | — | avatar **görünür** · rozet **56** · ad **18px** · XP **24px** |
 | **negatif** — 1280 | ad kabı **113** · kırpık 0 | **113 · 0 — birebir** |
 | **negatif** — satır sayısı · `h1` · yatay kayma | 7 · 1 · 0 | **7 · 1 · 0** |
+
+### 130 ARACIN TAMAMI 320px'te SÜPÜRÜLDÜ — iki kusur, biri BENİM eklediğim şeritte
+
+Liderlik ve pano düzeltmelerinden sonra aynı ölçüt bütün araç sayfalarına
+sürüldü. Ölçüt dört kusuru birden arıyor: **kırpılan/kesilen metin** ·
+**genişliği sıfıra düşen esnek sütun** · **ipucusuz yatay kaydırma kabı** ·
+yatay taşma ve eksik `h1`.
+
+**Pozitif kontrol ÖNCE kuruldu** (yoksa "0 kusur" ile "0 ölçüm" ayırt
+edilemezdi): sayfaya kırpılan bir metin ve ipucusuz bir kaydırma kabı
+tohumlandı, ölçüt **ikisini de yakaladı**.
+
+| ölçüt | değer |
+|---|---|
+| ölçülen araç | **130 / 130** |
+| çöken sayfa · eksik `h1` · yatay taşma | 0 · 0 · 0 |
+| **kusurlu** | **2** |
+
+Yedi açık `(site)` yüzeyi ve dört premium yüzeyi aynı ölçütle tarandı:
+**hepsi temiz**.
+
+#### 1) Sonuç şeridi hükmün son satırını kesiyordu — ve o şerit bu oturumda eklendi
+
+`glasgow-blatchford`, 320px: şerit içi 288px = "SONUÇ" etiketi **42** +
+bant **122** + "Sonuca git" **100** + iki boşluk. Bant üç satır istiyor
+(54px), `line-clamp-2` iki satır veriyor (36px) — yani **hükmün son satırı
+gizli**: *"Düşük Risk — Ayaktan Takip Değerlendirile…"*.
+
+Bu, liderlik ve "yeni eklendi" kartındaki **`flex-1` eziliyor** sınıfının
+üçüncü örneği; farkı, ezilen sütunun bu kez benim eklediğim bir katmanda
+olması.
+
+İki çare ölçüldü (320px):
+
+| varyant | bant | şerit yüksekliği |
+|---|---|---|
+| bugün | 36 / **54 gerekli** — kesik | 59 |
+| yalnızca `line-clamp-3` | 54 / 54 tam | **76 (+17)** |
+| **9px'lik "SONUÇ" etiketi `sm` altında gizli + clamp-3** | **36 / 36 tam** (sütun 122 → **176**) | **59 — değişmedi** |
+
+Üçüncüsü seçildi: aynı yükseklikte tam hüküm, **artı bir satır yedek**.
+Etiketin gizlenmesi bilgi kaybı değil — şeridin düğmesi zaten "Sonuca git"
+diyor ve 320px'te satırın %19'unu 9px'lik dekoratif bir etikete ayırıp
+hükmü kesmek yanlış ödünleşme.
+
+#### 2) Araç sayfalarındaki ELLE yazılmış tablo ipucu almıyordu
+
+İçerik tabloları `lib/tablo.ts` üzerinden `data-tablo-kaydir` + `tabindex`
++ `role` alıyor; araç sayfalarında **elle** yazılmış tablolar o boru
+hattından geçmiyor. 130 aracın tamamında tek örnek çıktı:
+
+| ölçüt (`kalsiyum-infuzyon`, 320px) | önce |
+|---|---|
+| kap / içerik | 238 / 440 → **%46 gizli** |
+| görsel ipucu | **yok** |
+| iç odaklanabilir öge | **0** → klavyeyle **ulaşılamıyor** |
+
+Aynı nitelikler elle eklendi ve `KaydirDurumu` **araç düzenine** bağlandı —
+tek satırla 130 araç kapsanıyor.
+
+#### Doğrulama — üretim derlemesinde, altısı negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `kalsiyum-infuzyon` 320 | ipucu yok · `tabindex` yok | **`data-kaydir="bas"` · maske · `tabindex="0"` · `role="region"` · adlı** |
+| **negatif** — aynı tablo 1280 | — | taşma yok → **durum yok, maske `none`** |
+| `glasgow-blatchford` 320 | 36 / 54 kesik | **36 / 36 tam**, sütun 176, şerit 59 |
+| `glasgow-blatchford` 375 | — | tam, sütun 231 |
+| **negatif** — 640 (kırılma noktası) | — | etiket **görünür** · clamp **2** · bant tek satır · şerit **59** |
+| **negatif** — 17 araç yeniden tarandı | — | kırpık 0 · ipucusuz 0 · `h1` 1 · taşma 0 |
+| lint · typecheck · build 638/638 · 7 denetim | — | hepsi geçti |
+
+#### ⚠ Yama betiği KARIŞIK satır sonu üretti — CR sayısı korunmasına RAĞMEN
+
+Betiğin koruması "CR sayısı değişmesin" idi ve **geçti** (623 → 623). Ama
+eklenen beş satır LF ile yazıldığı için dosya karıştı: **CR 623 / LF 629**.
+
+Yani toplam CR'yi karşılaştırmak yetmiyor — **eklenen satırlar sayıyı
+düşürmüyor, oranı bozuyor.** Doğru ölçüt ikisini birden okumak:
+`CR == LF` (saf CRLF) ya da `CR == 0` (saf LF). `git diff --stat` bunu
+göstermiyor, çünkü `core.autocrlf` blob'u normalleştiriyor.
+
+Bu, bu depoda kayıtlı satır sonu ailesinin dördüncü kanalı (öncekiler yama
+betiğinin kendi yazımı, `sed -i` ve `git stash pop`).

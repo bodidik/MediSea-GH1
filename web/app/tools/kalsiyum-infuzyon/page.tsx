@@ -545,7 +545,13 @@ export default function KalsiyumInfuzyonSayfasi() {
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
             İki tuz yan yana — 10 mL %10 ampul
           </p>
-          <div className="overflow-x-auto">
+          <div
+            data-tablo-kaydir
+            tabIndex={0}
+            role="region"
+            aria-label="Tablo: İki tuz yan yana — 10 mL %10 ampul"
+            className="overflow-x-auto"
+          >
             <table className="w-full text-left" style={{ minWidth: 440 }}>
               <thead>
                 <tr className="border-b border-slate-200">
