@@ -30140,3 +30140,41 @@ biçimine çevir, ve CR ile LF'i **ayrı ayrı** say (`636 / 636` — saf CRLF).
 Aynı koşumda `TSC=0` basıldı ve **yanıltıcıydı**: `npm run typecheck | tail`
 zincirinde `$?` `tail`'in kodudur. Kapı tek başına çalıştırılınca gerçek
 durum çıktı.
+
+#### Asit-baz eklemeleri CANLIDA doğrulandı — yerel ölçümlerle birebir
+
+| ölçüt (pH 7.20 · PaCO₂ 25 · HCO₃⁻ 10 · Na⁺ 140 · Cl⁻ 100 · laktat 12) | canlıda |
+|---|---|
+| verdikt | "Basit bozukluk: yüksek anyon açıklı metabolik asidoz — kompanzasyon beklenen aralıkta." |
+| **SBE** | **−16.1 ↓ baz açığı** |
+| **bulgu kartı sayısı** | **1** — SBE büyük bir baz açığı gösterdiği hâlde **fazladan bulgu YOK** (tek kaynak kuralı) |
+| laktat | "laktat dışı anyon açığı **18** … ikinci bir yüksek anyon açığı nedeni aranmalı" |
+| delta | ΔAG 18 · ΔHCO₃⁻ 14 · Δ/Δ 1.29 · **Δgap +4** |
+
+Ayrışma vakası (PaCO₂ 30 · HCO₃⁻ 12 · Cl⁻ 95, laktat boş):
+
+| okuma | canlıda |
+|---|---|
+| Δ/Δ 1.75 | "1–2 → **saf** yüksek anyon açıklı metabolik asidoz" |
+| Δgap **+9** | "> +6 → **eşlik eden metabolik alkaloz**" |
+| çapraz kutu | **var** — "Yukarıdaki bulgu listesi ORAN üzerinden kuruldu" |
+| **negatif** — laktat boş | laktat kartı **yok** |
+
+**Negatif kontrol — kayıtlı davranış değişmedi** (pH 7.36 · PaCO₂ 60 ·
+HCO₃⁻ 33 · kronik):
+
+| ölçüt | canlıda |
+|---|---|
+| verdikt | "Basit bozukluk: solunum asidozu — kompanzasyon beklenen aralıkta." |
+| kompanzasyon | **Beklenen 28–34 mEq/L · ölçülen 33** — kayıtlı değerle birebir |
+| formül | `ΔHCO₃⁻ = ΔPaCO₂/10 × 3.5` |
+| SBE | +7.4 ↑ baz fazlası · kutu kronik yanıtı **beklenen** diye açıklıyor |
+| **negatif** — Na⁺/Cl⁻ boş | AG kartı **yok** · laktat kartı **yok** |
+
+320px (tam vaka, üç yeni blok da ekranda):
+
+| ölçüt | değer |
+|---|---|
+| yatay kayma · kırpılan · 24px altı hedef | **0 · 0 · 0** |
+| elektrolit ızgarası · delta ızgarası | 1 kolon · **2 kolon** |
+| çapraz kutu · laktat kartı · `h1` | var · var · **1** |
