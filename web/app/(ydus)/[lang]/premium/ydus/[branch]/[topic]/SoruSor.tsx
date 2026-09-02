@@ -104,7 +104,7 @@ export default function SoruSor({ branch, topic, baslik }: Props) {
           border: '0.5px solid #b8cfe8',
           borderRadius: '8px',
           padding: '10px 12px',
-          fontSize: '13px',
+          fontSize: '16px',
           fontFamily: 'inherit',
           color: '#1a2a3a',
           resize: 'vertical',

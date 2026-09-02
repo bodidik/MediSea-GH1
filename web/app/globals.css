@@ -699,3 +699,75 @@ label:has(input.sr-only:focus-visible) {
   outline-offset: 2px;
   border-radius: 8px;
 }
+
+/* ---------------------------------------------------------------
+   DOKUNMATİKTE GİRDİ YAZI BOYUTU TABANI — 16px
+   ---------------------------------------------------------------
+   iOS Safari, odaklanan bir form alanının yazı boyutu 16px'in ALTINDA
+   ise sayfayı yakınlaştırır. Kullanıcı alana dokunuyor, ekran zıplıyor,
+   yazdıktan sonra elle uzaklaştırmak zorunda kalıyor. Bu üründe
+   tablet/telefon birinci sınıf yüzey, yani sınıf gerçek.
+
+   ÖLÇÜLDÜ (canlı, 375px): 231 girdi etiketinin 74'ü 16px altında.
+   En pahalıları dönüşüm ve veri girişi yüzeyleri:
+
+     /giris  · /kayit     e-posta ve şifre alanları  14px
+     SiteHeader           "Sitede ara" — HER sayfada 14px
+     KutuphaneArama       kütüphane süzgeci          14px
+     tools/sofa           8 alan                  14 ve 12px
+     tools/glim           5 seçici                   12px
+     tools/khorana        4 alan                     14px
+
+   BEDELİ ÖLÇÜLDÜ, tahmin edilmedi: kaynağa dokunmadan tarayıcıda
+   sürüldü — `glim` belgesi 2208 → 2234 (+26px, %1.2), `sofa`
+   2522 → 2533 (+11px), site yüzeylerinde fark SIFIR (arama kutuları
+   sabit yükseklikte). Kırpılan metin 0, yatay taşma 0.
+
+   ⚠ TABAN, SABİT DEĞER DEĞİL. `input { font-size: 16px }` yazmak
+   hesaplayıcılardaki `text-lg` (18px) ve `text-xl` (20px) sayısal
+   alanları KÜÇÜLTÜRDÜ — bunlar bilerek büyük. O yüzden kural
+   yalnızca 16px ALTINDAKİ sınıfları hedefliyor; okuma alanı
+   tabanıyla (yukarıda) aynı kalıp.
+
+   ⚠ `(pointer: coarse)`, `max-width` DEĞİL. Zıplamanın sebebi genişlik
+   değil DOKUNMATİK olması: iPad portrede 768px, yatayda 1024px ve
+   ikisinde de zıplıyor. Dar bir masaüstü penceresi ise zıplamıyor.
+
+   Özgüllük: `:is(input,select,textarea)` (0,0,1) + `:is(.text-sm,…)`
+   (0,1,0) = (0,1,1), yani Tailwind'in `.text-sm` (0,1,0) sınıfını
+   yener. `!important` gerekmiyor.
+
+   Liste 16px'in ALTINDAKİ boyutları sayar; bir tanesi eklenmezse o
+   sınıfı taşıyan alan sessizce zıplamaya devam eder. Bugün kullanımda
+   olanlar: text-sm (61) · text-xs (10) · text-[12px] (1) · text-[13px] (1).
+   Kalanlar ileride yazılacak alanlar için savunma amaçlı.
+
+   ⚠ SATIR İÇİ STİL BU KURALA UYMAZ — ve en pahalı üç alan öyleydi.
+   `style={{ fontSize: 14px }}` her seçiciyi yener. Ölçüldü: 16 girdi
+   satır içi boyut taşıyor ve 16sı da 16pxin altında. Üçü herkese açık
+   (/giris iki alan, /kayit üç alan tek stil nesnesinden) ve biri ücretli
+   (SoruSor yazma alanı, 13px) — dördü de KAYNAKTA 16pxe çekildi.
+   Kalan 12si yönetim (8) ve kurum kapısı (3) arkasında, kapsam dışı.
+   `placeholder:text-xs` gibi VARYANTLAR etkilenmiyor: ögedeki sınıf
+   adı `placeholder:text-xs`, `.text-xs` seçicisine uymuyor
+   (ölçüldü — `anion-gap` alanı 18px'te kalıyor).
+   --------------------------------------------------------------- */
+@media (pointer: coarse) {
+  :is(input, select, textarea):is(
+    .text-xs,
+    .text-sm,
+    .text-\[9px\],
+    .text-\[10px\],
+    .text-\[10\.5px\],
+    .text-\[11px\],
+    .text-\[11\.5px\],
+    .text-\[12px\],
+    .text-\[12\.5px\],
+    .text-\[13px\],
+    .text-\[13\.5px\],
+    .text-\[14px\],
+    .text-\[15px\]
+  ) {
+    font-size: 16px;
+  }
+}

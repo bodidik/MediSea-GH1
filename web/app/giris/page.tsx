@@ -107,7 +107,7 @@ function GirisFormu() {
               aria-invalid={hata ? true : undefined}
               aria-describedby={hata ? 'giris-hata' : undefined}
               style={{
-                width: '100%', padding: '10px 12px', fontSize: '14px',
+                width: '100%', padding: '10px 12px', fontSize: '16px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
                 boxSizing: 'border-box',
               }}
@@ -124,7 +124,7 @@ function GirisFormu() {
               aria-invalid={hata ? true : undefined}
               aria-describedby={hata ? 'giris-hata' : undefined}
               style={{
-                width: '100%', padding: '10px 12px', fontSize: '14px',
+                width: '100%', padding: '10px 12px', fontSize: '16px',
                 border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
                 boxSizing: 'border-box',
               }}

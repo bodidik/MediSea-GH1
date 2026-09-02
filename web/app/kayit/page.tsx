@@ -189,7 +189,7 @@ export default function KayitPage() {
                 aria-invalid={hata ? true : undefined}
                 aria-describedby={hata ? 'kayit-hata' : undefined}
                 style={{
-                  width: '100%', padding: '10px 12px', fontSize: '14px',
+                  width: '100%', padding: '10px 12px', fontSize: '16px',
                   border: '0.5px solid #b8cfe8', borderRadius: '8px', outline: 'none',
                   boxSizing: 'border-box',
                 }}

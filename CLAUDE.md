@@ -29082,3 +29082,122 @@ düşüyor ve her satır sarmadan çok daha uzun oluyor. Kazanç küçük, bedel
 **Ayrım içerik TÜRÜNDE:** alt bilgi kısa ETİKET listesiydi (en uzunu
 "Klinik Araçlar & Algoritmalar"), `/uyelik` kartları başlık + açıklama
 prozası taşıyor. Aynı dönüşüm, zıt verdikt — ve ikisini de sayı verdi.
+
+### GİRİŞ VE KAYIT FORMLARI iPHONE'DA SAYFAYI ZIPLATIYORDU — 74 girdi 16px altında
+
+Yeni eksen: **iOS Safari, odaklanan bir form alanının yazı boyutu 16px'in
+ALTINDA ise sayfayı yakınlaştırır.** Kullanıcı alana dokunuyor, ekran
+zıplıyor, yazdıktan sonra elle uzaklaştırmak zorunda kalıyor. Bu üründe
+tablet/telefon birinci sınıf yüzey ve bu eksen hiç ölçülmemişti.
+
+Önce ön koşul doğrulandı: `viewport` metası **zoom'u kapatmıyor**
+(`user-scalable=no` yok, 15 yüzeyde kayıtlı), yani sınıf gerçekten
+oluşabiliyor.
+
+Ölçüldü (kaynak taraması + canlı doğrulama): **231 girdi etiketi, 74'ü
+16px altında.**
+
+| yüzey | girdi | en pahalısı |
+|---|---|---|
+| **yönetim** (middleware arkası) | 38 | kapsam dışı |
+| **TOOLS** | 25 | `sofa` 8 alan (14 ve 12px) · `glim` 5 seçici (12px) · `khorana` 4 alan |
+| **SITE** | 11 | **`SiteHeader` "Sitede ara" — HER sayfada 14px** · kütüphane süzgeci · `NotePanel` yazma alanı 13px |
+| **satır içi stil** | 16 | **`/giris` 2 alan · `/kayit` 3 alan · `SoruSor` 13px** |
+
+En pahalıları **giriş ve kayıt formları**: kullanıcı e-posta alanına
+dokunuyor, sayfa yakınlaşıyor ve parolayı yatay kaymış bir düzende
+yazıyor — dönüşümün en kritik yüzeyinde.
+
+#### ⚠ TABAN, SABİT DEĞER DEĞİL — ilk akla gelen kural GERİLEME üretirdi
+
+`input { font-size: 16px }` yazmak hesaplayıcılardaki `text-lg` (18px) ve
+`text-xl` (20px) sayısal alanları **KÜÇÜLTÜRDÜ** — onlar bilerek büyük.
+Ölçüldü: `bmi` · `ktv` · `spot-urine` · `osmolal-gap` 18px, `abg` ·
+`news2` · `infusion` 16px.
+
+Bu yüzden kural okuma alanı tabanıyla **aynı kalıba** yazıldı: yalnızca
+16px ALTINDAKİ sınıfları listeliyor.
+
+```css
+@media (pointer: coarse) {
+  :is(input, select, textarea):is(.text-xs, .text-sm, .text-\[12px\], …) {
+    font-size: 16px;
+  }
+}
+```
+
+Özgüllük: `:is(input,select,textarea)` (0,0,1) + `:is(.text-sm,…)` (0,1,0)
+= **(0,1,1)**, yani Tailwind'in `.text-sm` (0,1,0) sınıfını yeniyor —
+`!important` gerekmiyor.
+
+**`(pointer: coarse)`, `max-width` DEĞİL.** Zıplamanın sebebi genişlik
+değil dokunmatik olması: iPad portrede 768px, yatayda 1024px ve ikisinde
+de zıplıyor; dar bir masaüstü penceresi ise zıplamıyor. Ve bu ortamda
+**iki yönde de doğrulanabiliyor** — `resize_window` mobil öngörünümü
+`pointer: coarse` yapıyor (`maxTouchPoints 5`), masaüstü `pointer: fine`.
+
+#### ⚠ SATIR İÇİ STİL BU KURALA UYMUYOR — ve en pahalı üç alan öyleydi
+
+Kural yazıldıktan ve derlendikten sonra `/giris` ölçüldü: **hâlâ 14px** ve
+ögenin sınıf listesi **BOŞ**. Boyut bir Tailwind sınıfından değil
+`style={{ fontSize: '14px' }}` satır içi stilinden geliyordu — o her
+seçiciyi yener.
+
+Bu, bu depoda premium motorlar için zaten kayıtlı olan tuzağın ta kendisi
+(*"satır içi stil bu tabanların HİÇBİRİNE uymaz… kural oraya hiç
+ulaşmıyor"*). Ölçüldü: **16 girdi satır içi boyut taşıyor ve 16'sı da
+16px'in altında.** Dördü kaynakta düzeltildi (`/giris` ×2 · `/kayit` ×1
+tek stil nesnesinden üç alan · `SoruSor` 13→16); kalan 12'si yönetim (8)
+ve kurum kapısı (3) arkasında, kapsam dışı.
+
+**Kural: bir yazı boyutu tabanını CSS'e yazdıktan sonra, hedeflediğin
+alanların boyutu GERÇEKTEN o sınıftan mı geliyor diye ölç.** Kaynak
+taraması "sınıf yok" diyordu ve ben onu "devralıyor" diye okumuştum;
+gerçekte satır içi stil vardı ve tarama onu ayrı bir kova olarak
+saymıyordu.
+
+#### Bedel ÖLÇÜLDÜ, tahmin edilmedi
+
+Kaynağa dokunmadan tarayıcıda sürülüp sonra gerçek derlemeyle
+doğrulandı (375px):
+
+| sayfa | önce | sonra | fark |
+|---|---|---|---|
+| `/tools/glim` | 2208 | **2254** | +46 (%2.1) |
+| `/tools/sofa` | 2522 | **2558** | +36 (%1.4) |
+| `/topics` · `/calisma-alanim` | — | **fark 0** | arama kutuları sabit yükseklikte |
+| `/giris` girdi yüksekliği | 43 | **46** | +3 |
+
+#### Doğrulama — dokuzu negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| `/giris` · `/kayit` girdileri (mobil) | **14px** | **16px** |
+| `SiteHeader` araması · kütüphane süzgeci | 14px | **16px** |
+| `NotePanel` yazma alanı (`text-[13px]`) | 13px | **16px** |
+| `glim` 5 seçici · `sofa` 8 alan · `khorana` 4 alan | 12/14px | **16px** |
+| **negatif** — `bmi` · `ktv` (18px) | 18 | **18 — küçülmedi** |
+| **negatif** — `abg` (16px) | 16 | **16** |
+| **negatif** — MASAÜSTÜ (`pointer: fine`) | glim 12 · sofa 12/14 · `/topics` 14 | **birebir aynı** |
+| **negatif** — masaüstü `/giris` · `/kayit` | — | 16px (satır içi, bilerek her genişlikte), form 334px, `h1` 1, `main` 1 |
+| **negatif** — okuma alanı karakter sayısı | 5025 | **5025 — BİREBİR** |
+| **negatif** — kırpılan metin · taşan öge · yatay kayma | — | **0 · 0 · 0** (320/375/1280) |
+| **negatif** — not paneli açmak depoya yazıyor mu | — | **hayır** (`medisea:*` 0) |
+| **negatif** — `placeholder:text-xs` varyantı | 18px | **18px** (`anion-gap` — varyant sınıf adı `.text-xs`e uymuyor) |
+| 14 denetim + lint + typecheck + build 638/638 | — | hepsi geçti |
+
+Sondan üçüncü satır ayırt edici: `anion-gap` taramada `text-lg+text-xs`
+diye göründü ve bir an kusur sanıldı; `text-xs` **placeholder varyantı**,
+alanın kendi boyutu 18px. Üretilen sınıf adı `placeholder:text-xs`
+olduğu için CSS seçicisi ona uymuyor.
+
+#### Kapsam dürüstlüğü
+
+iOS Safari'nin zıplaması **bu ortamda gözlenemez**. Doğrulanan şey ön
+koşul: viewport zoom'a izin veriyor, alanların hesaplanan boyutu artık
+dokunmatikte 16px ve masaüstünde değişmedi. "iPhone'da zıplamıyor"
+DENMİYOR.
+
+`SoruSor` kapı arkasında; değişiklik kaynakta ve derlenmiş pakette
+görüldü, **render edilmiş hâli ölçülmedi**.
+
