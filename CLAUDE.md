@@ -29618,3 +29618,88 @@ işlemesi — ve buradaki hâli sinsi, çünkü yakalanan sayı da kırılma nok
 genişlikli kardeşlerin toplamı kabı aşınca esnek sütun sıfıra iner ve
 `truncate` sessizce %100 gizler. Ölçüt tek satır: dar ekranda esnek sütunun
 `clientWidth`ini oku — sıfırsa, sayfa "kırpıyor" değil **çöküyor**.
+
+### PANODA ŞERİDİN %66'SI GİZLİYDİ, "YENİ EKLENDİ" KARTININ ADI %45 — ve ikisi AYNI sınıftan
+
+Liderlik düzeltmesinin ardından deponun kendi kuralı uygulandı: **kopyayı
+say.** Premium panosu 320px'te iki ayrı kusur gösterdi ve ikisi de bu
+oturumda ölçülmüş sınıfların ikinci örneği.
+
+| ölçüt (canlı, 320px) | değer |
+|---|---|
+| "Diğer yeni eklenenler" şeridi | kap **288** · içerik **848** → **%66 gizli** |
+| şeridin görsel ipucu | **YOK** |
+| "yeni eklendi" kartının başlığı | kap **105** · gerekli **190** → **%45 gizli** |
+| 375px'te aynı başlık | 160 / 190 → %16 gizli |
+| **1280 (kıyas)** | şerit taşmıyor · kırpık **0** |
+
+Birincisi tablolarda kapatılan **ipuçsuz yatay kaydırma** sınıfı; ikincisi
+liderlikte kapatılan **`flex-1` çöküyor** sınıfı — burada esnek başlık
+sütununun kardeşleri ikon (40) ve "Başla" rozeti (73), artı iki boşluk.
+
+#### İkinci bir mekanizma YAZILMADI — var olan genelleştirildi
+
+Tablolar için ölçülmüş `mask-image` çözümü (bileşen `data-kaydir` yazıyor,
+CSS maskeyi çiziyor) zaten duruyordu. Şeride ikinci bir kopya yazmak, bu
+depoda tur tur avlanan "iki gerçeklik" sınıfını açardı.
+
+| dosya | ne değişti |
+|---|---|
+| `TabloKaydirDurumu.tsx` → **`KaydirDurumu.tsx`** | ad kapsamı yansıtıyor (artık yalnızca tablo değil) |
+| bileşenin seçicisi | `[data-tablo-kaydir]` → `+ [data-kaydir-serit]` |
+| `globals.css` | maske artık **`[data-kaydir='…']`** durumuna bağlı, kabın TÜRÜNE değil |
+
+Şeride `tabindex` **verilmedi** ve gerekçesi ölçülü: içindeki beş öge de
+odaklanabilir bağlantı, yani Tab kabı zaten sürüyor. Tablolarda durum
+farklıydı — orada yalnızca metin vardı.
+
+#### Kart düzeltmesi İKİ parçalı, çünkü tek başına biri YETMİYOR
+
+Üç varyant kaynağa dokunmadan ölçüldü (320px, sütun 105px):
+
+| varyant | başlık tam görünür mü |
+|---|---|
+| bugün (`truncate`) | **hayır** — %45 gizli |
+| yalnızca 2 satıra sar | **hayır** — 105px'te üç satır gerekiyor |
+| **2 satır + "Başla" sözcüğü `sm` altında gizli** | **evet** (sütun 148) |
+
+"Başla" gizlenince kart bir Link olmaktan çıkmıyor; erişilebilir ad
+"Yeni eklendi · <başlık> · N soru" olarak duruyor ve ok zaten dekoratif.
+`line-clamp-2` koşulsuz konuldu: masaüstünde başlık zaten tek satır, yani
+görünüm değişmiyor ama çok uzun bir başlık artık 1 yerine 2 satırda
+kırpılıyor.
+
+#### Doğrulama — üretim derlemesinde, sekizi negatif kontrol
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| 320 — başlık | 105 / 190 · kırpık | **140 / 140 · tam görünür** (2 satır) |
+| 375 — başlık | 160 / 190 · kırpık | **190 / 190 · TEK satır**, kart **108 — büyümedi** |
+| 320 — kart yüksekliği | 108 | 128 |
+| şerit — üç durum | ipucu yok | **bas / orta / son**, her birinde doğru maske |
+| **negatif** — 640 (kırılma noktası) | — | **"Başla" görünür** · başlık 190/190 · kart 108 |
+| **negatif** — 1280 | — | şeritte `data-kaydir` **yok**, maske **none** (taşma yok) |
+| **negatif** — TABLOLAR (CSS seçicisi değişti) | — | 2 kap, ikisi de `data-kaydir` alıyor · `tabindex="0"` · `role="region"` · adlı · üç maske de doğru |
+| **negatif** — okuma alanı karakter sayısı | 12909 | **12909 — BİREBİR** |
+| **negatif** — `h1` · yatay kayma (4 genişlik) | 1 · 0 | **1 · 0** |
+| lint · typecheck · build 638/638 · 6 denetim · meta test 15/15 | — | hepsi geçti |
+
+#### ⚠ Bu ortamda ŞERİT DURUMU zamanlamayla ölçülemez
+
+Durum geçişlerini `scrollTo` + bekleme ile ölçmek tutarsız sonuç verdi:
+aynı dizide bazı adımlar doğru, bazıları bir tık bayat çıktı. Sebep
+ölçüldü:
+
+| ölçüt (gizli iframe) | değer |
+|---|---|
+| `document.visibilityState` | **hidden** |
+| kaba eklenen kendi dinleyicimin saydığı `scroll` olayı | **0** |
+
+Yani bu ortamda kaydırma olayı **hiç atılmıyor** (belgede kayıtlı) ve
+`data-kaydir`i güncelleyen tek şey 600 ms'lik yoklama — o da gizli sekmede
+kısılıyor. Bayat okumalar ürün kusuru değil, ortam artefaktı.
+
+**Ayırt edici kanıt zamanlamadan bağımsız olmalı:** şerit sayfa yüklenir
+yüklenmez `data-kaydir="bas"` alıyor ve o niteliği yazabilecek tek şey
+bileşen — yani seçicinin şeridi GERÇEKTEN kapsadığı, tek bir okumayla ve
+zamanlayıcıya güvenmeden kanıtlanıyor.

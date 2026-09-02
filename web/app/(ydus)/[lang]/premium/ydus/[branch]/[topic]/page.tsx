@@ -11,7 +11,7 @@ import { kisaltmaAcBloklar } from '@/app/lib/kisaltma';
 import { ayYazisi } from '@/app/lib/tarih';
 import { KLINIK_SORUMLULUK } from '@/app/lib/sorumluluk';
 import { rotaMeta } from "@/lib/site";
-import TabloKaydirDurumu from '@/app/components/TabloKaydirDurumu';
+import KaydirDurumu from '@/app/components/KaydirDurumu';
 
 /**
  * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
@@ -387,7 +387,7 @@ export default async function KonuSayfasi({
 
             {/* Tablo kaplarina "devami var" durumu yazar (maskeyi globals.css cizer).
                 Premium tarafta 40 konunun 36'sinda 2+ tablo var. */}
-            <TabloKaydirDurumu />
+            <KaydirDurumu />
 
             {/* data-readable: ReadingTools vurgulamayı bu blokla sınırlar */}
             <div data-readable>

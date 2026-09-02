@@ -837,20 +837,20 @@ html {
    Baskıda maske kapalı — kâğıtta kaydırma diye bir şey yok ve fade
    yalnızca kenardaki hücreyi soldururdu.
    --------------------------------------------------------------- */
-[data-tablo-kaydir][data-kaydir='bas'] {
+[data-kaydir='bas'] {
   -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
   mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
 }
-[data-tablo-kaydir][data-kaydir='orta'] {
+[data-kaydir='orta'] {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
   mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
 }
-[data-tablo-kaydir][data-kaydir='son'] {
+[data-kaydir='son'] {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 28px);
   mask-image: linear-gradient(to right, transparent, #000 28px);
 }
 @media print {
-  [data-tablo-kaydir][data-kaydir] {
+  [data-kaydir] {
     -webkit-mask-image: none;
     mask-image: none;
   }

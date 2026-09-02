@@ -2,6 +2,7 @@
 'use client';
 
 import React from 'react';
+import KaydirDurumu from '@/app/components/KaydirDurumu';
 import Link from 'next/link';
 import {
   Stethoscope, ChevronRight, Lock, PlayCircle, Award,
@@ -236,11 +237,11 @@ export default function YdusDashboardClient({
               </div>
               <div className="min-w-0">
                 <p className="text-[11px] text-slate-400">Yeni eklendi</p>
-                <p className="text-sm font-semibold text-slate-800 truncate">{featured.baslik} · {featured.soru} soru</p>
+                <p className="text-sm font-semibold text-slate-800 line-clamp-2">{featured.baslik} · {featured.soru} soru</p>
               </div>
             </div>
             <span className="flex-shrink-0 flex items-center gap-1 text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg group-hover:bg-blue-100 transition-colors">
-              Başla <ChevronRight size={14} />
+              <span className="hidden sm:inline">Başla</span> <ChevronRight size={14} />
             </span>
           </Link>
         )}
@@ -305,7 +306,8 @@ export default function YdusDashboardClient({
         {strip.length > 0 && (
           <>
             <h2 className="text-sm font-sans font-semibold text-slate-600 mt-0 mb-3">Diğer yeni eklenenler</h2>
-            <div className="flex gap-3 overflow-x-auto pb-2 mb-8">
+            <KaydirDurumu />
+            <div data-kaydir-serit className="flex gap-3 overflow-x-auto pb-2 mb-8">
               {strip.map((t) => (
                 <Link
                   key={t.topicId}

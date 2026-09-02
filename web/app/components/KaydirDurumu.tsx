@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * TABLO KAYDIRMA DURUMU — "devamı var" işaretini üretir.
+ * KAYDIRMA DURUMU — yatay kaydırılan her kapta "devamı var" işaretini üretir.
  *
  * ÖLÇÜLEN KUSUR: içerik tabloları `overflow-x: auto` bir kapta duruyor ve
  * telefonda neredeyse hepsi taşıyor — ama HİÇBİR görsel ipucu yok. Mobil
@@ -40,11 +40,11 @@
 
 import { useEffect } from 'react';
 
-const SECICI = '[data-tablo-kaydir]';
+const SECICI = '[data-tablo-kaydir], [data-kaydir-serit]';
 /** Kenar payı: alt piksel yuvarlamaları "sonda değiliz" dedirtmesin. */
 const PAY = 2;
 
-export default function TabloKaydirDurumu() {
+export default function KaydirDurumu() {
   useEffect(() => {
     const bagli = new WeakSet<HTMLElement>();
 
