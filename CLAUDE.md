@@ -29815,3 +29815,66 @@ göstermiyor, çünkü `core.autocrlf` blob'u normalleştiriyor.
 
 Bu, bu depoda kayıtlı satır sonu ailesinin dördüncü kanalı (öncekiler yama
 betiğinin kendi yazımı, `sed -i` ve `git stash pop`).
+
+### KAPI ARKASINDAKİ BEŞ MOTOR 320px'te SÜPÜRÜLDÜ — tek bulgu içindekiler bağı, 23.59px
+
+Açık taraf ve araçlar 320px'te temiz çıktıktan sonra kalan tek ölçülmemiş
+yüzey kapı arkasıydı. Kapılar geçici açıldı (bitince geri kondu) ve aynı
+dört ölçüt sürüldü.
+
+| yüzey | kırpık | sıfır sütun | ipucusuz kaydırma | küçük hedef |
+|---|---|---|---|---|
+| premium konu | 0 | 0 | 0 | **6** |
+| `quiz-coz` · `inciler` · `hizli-tekrar` | 0 | 0 | 0 | 0 |
+
+Altısı da **içindekiler bağı**: `23.59px` — eşiğin **0.41px** altında.
+Kaynağı satır yüksekliği 19.6 + 2px'lik dolgu.
+
+**WCAG 2.5.8 açısından ZATEN uygundu ve bu ölçüldü:** ölçüt "yetersiz
+hedefler, her birinin sınır kutusuna 24px çaplı bir daire yerleştirildiğinde
+daireler kesişmiyorsa" muaf diyor. Dikey adım 23.59 + 5.6 = **29.19 > 24**,
+yani daireler kesişmiyor. Değişiklik bir uygunluk düzeltmesi DEĞİL, deponun
+kendi kuralına (*"dokunma hedefi en az 24px"*) hizalanma.
+
+**Kopya sayıldı:** açık konu sayfasının içindekiler bağı da aynı ölçüde
+(`py-0.5`, tek satırlık bir başlıkta 23.25px). O sayfada bugün tek satırlık
+başlık yok — yani kusur görünmüyor ama sınıf orada. İki yüzey de `3px`
+dolguya alındı.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| premium içindekiler bağı | **23.59** | **25.59** |
+| premium küçük hedef | **6** | **0** |
+| açık içindekiler bağı (çok satırlı) | 42.5 | 44.5 |
+| premium nav yüksekliği (320 · 1280) | 227 · 139 | 239 · 145 |
+| açık nav yüksekliği (320) | 862 | **886** (belgenin %0.07'si) |
+| **negatif** — okuma alanı | 6143 · 23986 | **birebir** |
+| **negatif** — eşik altı konu (`addison`) | içindekiler yok | **değişmedi** |
+| **negatif** — `h1` · yatay kayma (320 ve 1280) | 1 · 0 | **1 · 0** |
+| kapı geri kondu mu | — | **"Erişim Kısıtlı"** · `ZZ_OLCUM` izi **0** |
+| lint · typecheck · build 638/638 · 5 denetim | — | hepsi geçti |
+
+#### ⚠ ÖLÇÜT `Math.round` YÜZÜNDEN İKİ FARKLI CEVAP VERDİ
+
+Aynı sayfa aynı genişlikte bir taramada **6**, bir başkasında **0** küçük
+hedef gösterdi ve bir an ölçüm kararsız sanıldı. Fark tek satırdaydı:
+
+```
+tarama : r.width < 24                 ->  23.59 kucuk SAYILIYOR
+detay  : Math.round(r.width) < 24     ->  24 kucuk SAYILMIYOR
+```
+
+Yani yuvarlama eşiğin **yanlış tarafına** düşürüyor. Alt piksel ölçen bir
+eşik denetiminde **yuvarlama yapılmaz** — ekrana basmak için yuvarlanan
+değeri ölçüme geri vermek, bu depoda kayıtlı kuralın eşik tarafındaki hâli.
+
+#### ⚠ ESKİ SUNUCU ÖLÇÜMÜ BAYATLATTI — dördüncü kez
+
+Dolgu değişikliğinden sonra ölçüm hâlâ **23.59** diyordu ve düzeltme
+çalışmıyor sanıldı. Sebep koddaydı değil zincirdeydi: 3100'de önceki
+derlemenin sunucusu duruyordu, yeni örnek `EADDRINUSE` ile sessizce düştü
+ve `curl` 200 döndürmeye devam etti.
+
+Ayırt edici adım sunucu günlüğünü okumak değil, **sunulan HTML'de
+değişikliği aramak** oldu (`padding:3px 0`). PID'i `netstat` ile bulup
+`taskkill` ile öldürdükten sonra ölçüm doğru değeri verdi.

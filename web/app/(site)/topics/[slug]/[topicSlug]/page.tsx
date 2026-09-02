@@ -696,7 +696,7 @@ export default async function TopicDetailPage({
                       </span>
                       <a
                         href={`#${bolumKimligi[idx]}`}
-                        className="text-blue-800 hover:text-blue-950 hover:underline py-0.5"
+                        className="text-blue-800 hover:text-blue-950 hover:underline py-[3px]"
                       >
                         {section.heading}
                       </a>

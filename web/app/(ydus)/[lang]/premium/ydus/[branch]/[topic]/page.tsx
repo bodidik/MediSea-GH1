@@ -375,7 +375,7 @@ export default async function KonuSayfasi({
                       </span>
                       <a href={`#${b.id}`} style={{
                         fontSize: '14px', lineHeight: 1.4, color: '#1a4a8b',
-                        textDecoration: 'none', padding: '2px 0',
+                        textDecoration: 'none', padding: '3px 0',
                       }}>
                         {b.baslik}
                       </a>
