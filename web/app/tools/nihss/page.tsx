@@ -4,22 +4,22 @@ import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
-const ITEMS: { id: string; label: string; detail: string; options: { label: string; pts: number }[] }[] = [
+const ITEMS: { id: string; label: string; detail: string; options: { label: string; pts: number; rozet?: string }[] }[] = [
   {
     id: "consciousness",
     label: "1a. Bilinç Düzeyi",
-    detail: "Yalnızca ilk yanıtı kaydedin — uyarı vermeyin",
+    detail: "Yanıt alınamıyorsa uyaranı ARTIRARAK değerlendirin (sesli → ağrılı)",
     options: [
-      { label: "0 — Uyanık, hemen yanıt veriyor", pts: 0 },
-      { label: "1 — Uyarıyla uyarılabilir, basit komutlara uyuyor", pts: 1 },
-      { label: "2 — Tekrar uyarıyla yanıt veriyor, stereotipik hareketler", pts: 2 },
-      { label: "3 — Yanıtsız, yalnızca refleks hareketleri veya hareketsiz", pts: 3 },
+      { label: "0 — Uyanık; canlı yanıt veriyor", pts: 0 },
+      { label: "1 — Uyanık değil; HAFİF uyaranla uyanıp komuta uyuyor/yanıtlıyor", pts: 1 },
+      { label: "2 — TEKRARLAYAN veya ağrılı uyaran gerekiyor; hareket STEREOTİPİK DEĞİL", pts: 2 },
+      { label: "3 — Yalnızca refleks/otonom yanıt veya tümüyle yanıtsız, flask", pts: 3 },
     ],
   },
   {
     id: "loc_questions",
     label: "1b. Bilinç Sorular",
-    detail: "Ay (şimdiki ay), yaş — entübe/afazik ise değerlendirilemez=1",
+    detail: "Ay ve yaş; yalnızca İLK yanıt sayılır, ipucu vermeyin — afazi/stupor 2, entübasyon/dil engeli 1",
     options: [
       { label: "0 — İkisi de doğru", pts: 0 },
       { label: "1 — Biri doğru", pts: 1 },
@@ -42,8 +42,8 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     detail: "Yalnızca yatay göz hareketi (okülosefal veya okülovestibüler manevra)",
     options: [
       { label: "0 — Normal", pts: 0 },
-      { label: "1 — Kısmi bakış paralizisi veya izole INO", pts: 1 },
-      { label: "2 — Zorunlu deviasyon veya total bakış paralizisi", pts: 2 },
+      { label: "1 — Kısmi bakış paralizisi (izole III/IV/VI parezisi dahil); zorunlu deviasyon YOK", pts: 1 },
+      { label: "2 — Zorunlu deviasyon veya okülosefalik manevrayla aşılamayan total bakış paralizisi", pts: 2 },
     ],
   },
   {
@@ -64,8 +64,8 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     options: [
       { label: "0 — Normal simetrik hareketler", pts: 0 },
       { label: "1 — Hafif (silinmiş NLF, asimetri ile gülme)", pts: 1 },
-      { label: "2 — Kısmi (alt yüz tam, üst kısmi felç)", pts: 2 },
-      { label: "3 — Komplet (bir veya iki taraflı)", pts: 3 },
+      { label: "2 — Kısmi; ALT yüzde tam veya tama yakın felç (üst yüz korunmuş)", pts: 2 },
+      { label: "3 — Komplet; bir veya iki tarafta ÜST ve alt yüzde hareket yok", pts: 3 },
     ],
   },
   {
@@ -73,11 +73,12 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     label: "5a. Motor Kol — Sol",
     detail: "Kolu 45° (supine) veya 90° (oturur) kaldırıp 10 sn tutmasını isteyin",
     options: [
-      { label: "0 — Düşmüyor (10 sn tutar)", pts: 0 },
-      { label: "1 — Düşüyor ama yatağa değmiyor", pts: 1 },
-      { label: "2 — Yerçekimine karşı gelemiyor", pts: 2 },
-      { label: "3 — Yerçekimine karşı hiç hareket yok", pts: 3 },
-      { label: "4 — Hareket yok", pts: 4 },
+      { label: "0 — Düşme yok; 10 sn boyunca tutuyor", pts: 0 },
+      { label: "1 — Düşme var; 10 sn dolmadan iniyor ama yatağa DEĞMİYOR", pts: 1 },
+      { label: "2 — Yerçekimine karşı BİR MİKTAR güç var; yatağa iniyor", pts: 2 },
+      { label: "3 — Yerçekimine karşı HİÇ güç yok; kol düşüyor", pts: 3 },
+      { label: "4 — Hiç hareket yok", pts: 4 },
+      { label: "Amputasyon veya eklem füzyonu — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
@@ -85,11 +86,12 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     label: "5b. Motor Kol — Sağ",
     detail: "Kolu 45° (supine) veya 90° (oturur) kaldırıp 10 sn tutmasını isteyin",
     options: [
-      { label: "0 — Düşmüyor (10 sn tutar)", pts: 0 },
-      { label: "1 — Düşüyor ama yatağa değmiyor", pts: 1 },
-      { label: "2 — Yerçekimine karşı gelemiyor", pts: 2 },
-      { label: "3 — Yerçekimine karşı hiç hareket yok", pts: 3 },
-      { label: "4 — Hareket yok", pts: 4 },
+      { label: "0 — Düşme yok; 10 sn boyunca tutuyor", pts: 0 },
+      { label: "1 — Düşme var; 10 sn dolmadan iniyor ama yatağa DEĞMİYOR", pts: 1 },
+      { label: "2 — Yerçekimine karşı BİR MİKTAR güç var; yatağa iniyor", pts: 2 },
+      { label: "3 — Yerçekimine karşı HİÇ güç yok; kol düşüyor", pts: 3 },
+      { label: "4 — Hiç hareket yok", pts: 4 },
+      { label: "Amputasyon veya eklem füzyonu — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
@@ -97,11 +99,12 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     label: "6a. Motor Bacak — Sol",
     detail: "Bacağı 30° kaldırıp 5 sn tutmasını isteyin (supin pozisyon)",
     options: [
-      { label: "0 — Düşmüyor (5 sn tutar)", pts: 0 },
-      { label: "1 — Düşüyor ama yatağa değmiyor", pts: 1 },
-      { label: "2 — Yerçekimine karşı gelemiyor", pts: 2 },
-      { label: "3 — Yerçekimine karşı hiç hareket yok", pts: 3 },
-      { label: "4 — Hareket yok", pts: 4 },
+      { label: "0 — Düşme yok; 5 sn boyunca 30°'de tutuyor", pts: 0 },
+      { label: "1 — Düşme var; 5 sn içinde iniyor ama yatağa DEĞMİYOR", pts: 1 },
+      { label: "2 — Yerçekimine karşı BİR MİKTAR güç var; yatağa iniyor", pts: 2 },
+      { label: "3 — Yerçekimine karşı HİÇ güç yok; bacak hemen düşüyor", pts: 3 },
+      { label: "4 — Hiç hareket yok", pts: 4 },
+      { label: "Amputasyon veya eklem füzyonu — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
@@ -109,11 +112,12 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
     label: "6b. Motor Bacak — Sağ",
     detail: "Bacağı 30° kaldırıp 5 sn tutmasını isteyin (supin pozisyon)",
     options: [
-      { label: "0 — Düşmüyor (5 sn tutar)", pts: 0 },
-      { label: "1 — Düşüyor ama yatağa değmiyor", pts: 1 },
-      { label: "2 — Yerçekimine karşı gelemiyor", pts: 2 },
-      { label: "3 — Yerçekimine karşı hiç hareket yok", pts: 3 },
-      { label: "4 — Hareket yok", pts: 4 },
+      { label: "0 — Düşme yok; 5 sn boyunca 30°'de tutuyor", pts: 0 },
+      { label: "1 — Düşme var; 5 sn içinde iniyor ama yatağa DEĞMİYOR", pts: 1 },
+      { label: "2 — Yerçekimine karşı BİR MİKTAR güç var; yatağa iniyor", pts: 2 },
+      { label: "3 — Yerçekimine karşı HİÇ güç yok; bacak hemen düşüyor", pts: 3 },
+      { label: "4 — Hiç hareket yok", pts: 4 },
+      { label: "Amputasyon veya eklem füzyonu — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
@@ -124,12 +128,13 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
       { label: "0 — Yok", pts: 0 },
       { label: "1 — Bir ekstremitede mevcut", pts: 1 },
       { label: "2 — İki ekstremitede mevcut", pts: 2 },
+      { label: "Amputasyon veya eklem füzyonu — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
     id: "sensory",
-    label: "8. Duygu",
-    detail: "İğne batırma ile bilinç bozukluğu / afazide yüz grimasına bakın",
+    label: "8. Duyu",
+    detail: "İğne batırma; bilinç bozukluğu / afazide yüz grimasına bakın — komada (1a=3) otomatik 2",
     options: [
       { label: "0 — Normal, kayıp yok", pts: 0 },
       { label: "1 — Hafif-orta kaybı veya etkilenen tarafta künt his", pts: 1 },
@@ -139,7 +144,7 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   {
     id: "language",
     label: "9. En İyi Dil",
-    detail: "Tanımlama kartı, cümle okuma, nesne adlandırma",
+    detail: "Tanımlama kartı, cümle okuma, nesne adlandırma — komada (1a=3) otomatik 3",
     options: [
       { label: "0 — Normal, kayıp yok", pts: 0 },
       { label: "1 — Hafif-orta afazi; anlaşılabilir ama güçlük var", pts: 1 },
@@ -150,11 +155,12 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   {
     id: "dysarthria",
     label: "10. Dizartri",
-    detail: "Standart kelime listesini okutun — entübe ise 1 puan",
+    detail: "Standart kelime listesini okutun; afaziden bağımsız değerlendirin",
     options: [
       { label: "0 — Normal", pts: 0 },
-      { label: "1 — Hafif-orta; en azından bazı kelimeler anlaşılabilir", pts: 1 },
-      { label: "2 — Ağır; konuşma anlaşılmaz / afazik", pts: 2 },
+      { label: "1 — Hafif-orta; bazı kelimeleri yutuyor, güçlükle de olsa anlaşılıyor", pts: 1 },
+      { label: "2 — Ağır; konuşma anlaşılmıyor veya anartrik/mutizm", pts: 2 },
+      { label: "Entübasyon veya başka fiziksel engel — değerlendirilemiyor", pts: 0, rozet: "UN" },
     ],
   },
   {
@@ -207,9 +213,22 @@ export default function NIHSSPage() {
   );
 
   const answered = Object.values(sel).filter(v => v !== null).length;
+  /*
+   * Seçim PUANLA değil İNDEKSLE saklanıyor. Yayımlanmış NIHSS'te altı maddede
+   * UN (değerlendirilemez) kategorisi var ve toplama 0 katıyor; puanla
+   * saklansaydı UN ile "0 —" şıkkı aynı değere düşer, ikisi birlikte yanıp
+   * birlikte sönerdi (bu depoda apache2 · gout-acr · pap-score ·
+   * nutrition-needs · tirads ile beş kez ölçülmüş sınıf).
+   */
   const total = answered === ITEMS.length
-    ? Object.values(sel).reduce<number>((s, v) => s + (v ?? 0), 0)
+    ? ITEMS.reduce((s, i) => s + (i.options[sel[i.id] as number]?.pts ?? 0), 0)
     : null;
+
+  /* Kırpma/varsayım SESSİZ kalmaz: UN seçilmişse toplamın nasıl kurulduğu yazılır. */
+  const unSayisi = ITEMS.filter(i => {
+    const oi = sel[i.id];
+    return oi !== null && i.options[oi]?.rozet === "UN";
+  }).length;
 
   const band = total !== null ? getBand(total) : null;
   const c = band ? COLOR[band.color] : null;
@@ -245,13 +264,13 @@ export default function NIHSSPage() {
               <p id={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="font-black text-blue-900 uppercase italic text-sm mb-0.5">{item.label}</p>
               <p id={`grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">{item.detail}</p>
               <div role="group" aria-labelledby={`grp-0b-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')} grp-0-${String(item.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} className="space-y-1.5">
-                {item.options.map(opt => (
-                  <button aria-pressed={sel[item.id] === opt.pts} key={opt.pts} type="button"
-                    onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === opt.pts ? null : opt.pts }))}
+                {item.options.map((opt, oi) => (
+                  <button aria-pressed={sel[item.id] === oi} key={oi} type="button"
+                    onClick={() => setSel(s => ({ ...s, [item.id]: s[item.id] === oi ? null : oi }))}
                     className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
-                      ${sel[item.id] === opt.pts ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
+                      ${sel[item.id] === oi ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
                     <span className={`w-5 h-5 rounded-lg flex items-center justify-center text-[9px] font-black shrink-0
-                      ${sel[item.id] === opt.pts ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.pts}</span>
+                      ${sel[item.id] === oi ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-400"}`}>{opt.rozet ?? opt.pts}</span>
                     {opt.label}
                   </button>
                 ))}
@@ -267,7 +286,7 @@ export default function NIHSSPage() {
               <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
                 <span className="text-[7px] font-black text-blue-300 uppercase">NIHSS</span>
                 <span className="text-4xl font-black text-white leading-none">{total}</span>
-                <span className="text-[8px] text-blue-300">/ 42</span>
+                <span className="text-[8px] text-blue-300">/ {TAVAN}</span>
               </div>
               <div>
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>{band.label}</span>
@@ -276,6 +295,11 @@ export default function NIHSSPage() {
                 {total >= 6 && <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Trombektomi: ≥ 6 puan ve büyük damar oklüzyonunda</p>}
               </div>
             </div>
+            {unSayisi > 0 && (
+              <p className="text-[10px] font-bold text-slate-600 bg-white/70 border border-slate-200 rounded-xl px-3 py-2 leading-relaxed">
+                {unSayisi} madde <span className="font-black">değerlendirilemedi (UN)</span> — toplam bu maddeler 0 sayılarak kuruldu. Hasta kaydında hangi maddelerin değerlendirilemediğini ayrıca belirtin.
+              </p>
+            )}
             <div className="grid grid-cols-5 gap-1 text-center text-[7px]">
               {[
                 { l: "Normal", r: "0" },
@@ -304,7 +328,7 @@ export default function NIHSSPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              NIHSS eğitim gerektiren standart bir nöroloji değerlendirmesidir. Posterior dolaşım inmelerinde duyarlılığı düşük olabilir. Brott et al., Stroke 1989.
+              NIHSS eğitim gerektiren standart bir nöroloji değerlendirmesidir. Posterior dolaşım inmelerinde duyarlılığı düşük olabilir. Değerlendirilemeyen (UN) maddeler toplama 0 katar ve hasta kaydında ayrıca belirtilmelidir. Brott et al., Stroke 1989.
             </p>
           </div>
         </div>
