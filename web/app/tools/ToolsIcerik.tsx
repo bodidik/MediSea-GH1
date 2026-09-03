@@ -209,7 +209,9 @@ const TOOLS_DATABASE = [
     icon: "🧠",
     items: [
       { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
+      { slug: "rankin", name: "Modifiye Rankin (mRS)", desc: "İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü" },
       { slug: "four", name: "FOUR Skoru", desc: "Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar" },
+      { slug: "fisher", name: "Fisher Skalası", desc: "SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan" },
       { slug: "abcd2", name: "ABCD² Skoru", desc: "TİA sonrası 2 günlük inme riski tahmini" },
     ]
   },

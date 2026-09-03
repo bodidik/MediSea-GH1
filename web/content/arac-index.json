@@ -235,6 +235,11 @@
   "desc": "Tip 2 diyabet 10 yıllık risk taraması"
  },
  {
+  "slug": "fisher",
+  "name": "Fisher Skalası",
+  "desc": "SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan"
+ },
+ {
   "slug": "flipi",
   "name": "FLIPI",
   "desc": "Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF"
@@ -523,6 +528,11 @@
   "slug": "qsofa",
   "name": "qSOFA Skoru",
   "desc": "Hızlı sepsis yatak başı değerlendirme"
+ },
+ {
+  "slug": "rankin",
+  "name": "Modifiye Rankin (mRS)",
+  "desc": "İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü"
  },
  {
   "slug": "ranson",

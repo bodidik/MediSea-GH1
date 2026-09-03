@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
-  description: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/abcd2" },
+  title: "Fisher Skalası — SAK'ta vazospazm riski",
+  description: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/fisher" },
   openGraph: {
     type: "website",
-    title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
-    description: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/abcd2",
+    title: "Fisher Skalası — SAK'ta vazospazm riski",
+    description: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/fisher",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ABCD² Skoru",
-          aciklama: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/abcd2",
+          ad: "Fisher Skalası",
+          aciklama: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/fisher",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ABCD² Skoru", yol: "/tools/abcd2" },
+          { ad: "Fisher Skalası", yol: "/tools/fisher" },
         ])}
       />
       {children}
@@ -41,11 +41,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/fisher" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Fisher Skalası
-              </Link>
-            </li>
             <li>
               <Link href="/tools/four" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FOUR Skoru
@@ -59,6 +54,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/nihss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 NIHSS
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/abcd2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ABCD² Skoru
               </Link>
             </li>
           </ul>
