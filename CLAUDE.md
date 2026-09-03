@@ -30330,3 +30330,90 @@ Hipernatremi ve negatif kontroller:
 
 320px'te kırpılan tek öge `sr-only` atlama bağlantısı — belgede kayıtlı
 yanlış pozitif.
+
+### KABUK DOĞRULANMIŞTI, MADDE METİNLERİ HİÇ KARŞILAŞTIRILMAMIŞTI — NIHSS
+
+NIHSS bu belgede üç kez geçiyor: başlık/sayaç birim çelişkisi düzeltildi,
+`ALAN_SAYISI` ve `TAVAN` türetildi, bant merdiveni yayımlanmış katmanlamayla
+(0 · 1–4 · 5–15 · 16–20 · 21–42) doğrulandı, grup semantiği 5a/5b sol/sağ
+ayrımıyla kapatıldı. Hiç sorulmamış soru şuydu: **şık METİNLERİ yayımlanmış
+ölçekle birebir mi?**
+
+Altı transkripsiyon kusuru çıktı. En ağırı dört motor satırında ve **yön
+tersine dönmüştü**:
+
+| seviye | yayımlanmış | bizdeki |
+|---|---|---|
+| 2 | yerçekimine karşı **BİR MİKTAR güç var**, yatağa iniyor | "Yerçekimine karşı gelemiyor" |
+| 3 | yerçekimine karşı **HİÇ güç yok**, uzuv düşüyor | "Yerçekimine karşı hiç hareket yok" |
+
+Yani 2. şık **3. seviyenin tanımını** taşıyordu ve iki şık Türkçede neredeyse
+aynı okunuyordu. Bedeli sistematik: uzuv başına 1 puan, 5a/5b/6a/6b'de
+**4 puana kadar düşük skorlama** — ve NIHSS'te 4 puan bir bant kaydırabiliyor
+(trombektomi eşiği 6).
+
+Kalan beşi:
+
+| madde | kusur |
+|---|---|
+| **8. "Duygu"** | doğrusu **"Duyu"** — kartın KENDİ şıkları zaten "duyu kaybı" diyordu, yani ayrışma **aynı kartın içindeydi** |
+| 1a / 2. seviye | "stereotipik hareketler" — yayımlanmış metin açıkça **"stereotipik DEĞİL"** diyor; stereotipik/refleks yanıt 3. seviyedir |
+| 1a detayı | "yalnızca ilk yanıtı kaydedin, uyarı vermeyin" — o **1b'nin** kuralı; 1a tam tersine uyaranı ARTIRMAYI gerektiriyor |
+| 1b detayı | afazi ile entübasyonu tek kovaya koyuyordu: **afazi/stupor 2**, entübasyon/dil engeli 1 |
+| 2 ve 4 | bakış (izole III/IV/VI parezisi) ve yüz felci (alt/üst yüz) ifadeleri yayımlanmış hâle hizalandı |
+
+Sonuç rozetindeki **`/ 42` ELLE yazılıydı** — `TAVAN` türetilmiş olmasına
+rağmen. Artık ondan geliyor.
+
+#### UN kategorisi eksikti — entübe hasta HİÇ skorlanamıyordu
+
+Yayımlanmış NIHSS'te altı maddede **UN (değerlendirilemez)** var: 5a · 5b ·
+6a · 6b (amputasyon/eklem füzyonu) ve 7 · 10 (10'da entübasyon). Bizde yoktu
+ve araç **15 satırın hepsi dolmadan hüküm vermiyor** — yani akut inmede
+olağan olan entübe hastada form hiç tamamlanamıyordu. Üstelik 10'un detayı
+"entübe ise 1 puan" diyordu; yayımlanmış kural **UN**, 1 değil.
+
+UN toplama **0** katıyor (MDCalc dahil yerleşik uzlaşı) ve bu **sessiz
+kalmıyor**: kaç maddenin değerlendirilemediği sonuç panelinde yazılıyor,
+klinik not da kuralı söylüyor — `heparin-nomogram`ın "neyi kırptığını söyle"
+kalıbı.
+
+#### UN eklemek ÖNCE bir refaktör gerektirdi
+
+UN'ın puanı 0 ve her maddede zaten bir "0 —" şıkkı var. Seçim **PUANLA**
+saklanıyordu (`sel[item.id] === opt.pts`, `key={opt.pts}`), yani ikisi
+**birlikte yanıp birlikte sönerdi** — bu depoda `apache2` · `gout-acr` ·
+`pap-score` · `nutrition-needs` · `tirads` ile **beş kez** ölçülmüş sınıf.
+Seçim indekse çevrildi; rozet `opt.rozet ?? opt.pts` ile UN'ı ayrı gösteriyor.
+
+Bugün NIHSS'te çift puan yoktu, yani şekil **latentti** — ama UN eklemek onu
+etkinleştiriyordu.
+
+#### Doğrulama — yerel üretim derlemesi ve CANLI, ikisi birebir
+
+| ölçüt | sonuç |
+|---|---|
+| tavan (her satırda en yüksek şık) | **42** · payda **`/ 42`** · AĞIR |
+| **5a: 4 → UN** | **42 → 38** (tam 4) · sayaç **15/15 satır** · **"1 madde değerlendirilemedi (UN)"** |
+| **UN tıklandığında** | 5a'da basılı düğme **1** — **"0" şıkkı YANMIYOR** |
+| **negatif** — hepsi 0 | **0 · NORMAL** · cetvelde "Normal 0" vurgulu · UN notu yok |
+| **negatif** — sınır 4 / 5 | **HAFİF (1–4)** / **ORTA (5–15)** |
+| **negatif** — eşik 5 / 6 | tPA ve trombektomi satırı **yok** / **VAR** |
+| **negatif** — boş form | hüküm yok · canlı bölge DOM'da ve **boş** |
+| **negatif** — başlık | **"11 Alan · 0–42 Puan"** — türev, UN eklenince değişmedi |
+| **negatif** — grup semantiği | 15 grup · adsız 0 · sarkan atıf 0 · **ad çakışması 0** |
+| 320px | yatay kayma **0** · kırpık **0** · 24px altı hedef **0** |
+| **pozitif kontrol** | tohumlanan kırpma **yakalanıyor** (1 / 0) |
+
+Sekizinci satır kritik: UN'ın puanı 0 olduğu için `Math.max` değişmiyor,
+yani başlıktaki türev sayı UN eklenmesinden etkilenmiyor — ölçümle
+doğrulandı, varsayılmadı.
+
+**Aktarılabilir kural: bir aracın KABUĞUNU doğrulamak, İÇERİĞİNİ
+doğrulamak değildir.** Bu araçta türetilmiş sayılar, bant merdiveni, grup
+adları ve erişilebilirlik üç ayrı turda ölçüldü ve hepsi temizdi; ölçülmeyen
+tek şey şıkların ne YAZDIĞIydı — ve orada iki komşu seviyenin tanımı yer
+değiştirmişti. Yayımlanmış bir ölçeği aktaran her araçta ayrı bir soru var:
+**şık metinleri kaynakla birebir mi?** Ucuz ölçüt, aynı kartın kendi içinde
+çelişip çelişmediğine bakmak — "8. Duygu" başlığı, şıklarındaki "duyu kaybı"
+ifadesiyle dış bir kaynağa hiç bakmadan çürütülebiliyordu.
