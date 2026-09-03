@@ -3,6 +3,13 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import {
+  GUNLUK_TAVAN,
+  IDRAR_SINIR,
+  ilk24Hedef,
+  suKlerensi,
+  desalinasyonRiski,
+} from "@/app/tools/lib/sodyum";
 
 const MODES = [
   { id: "tbw",  label: "TBW & Sıvı Bölmeleri", icon: "💧" },
@@ -67,6 +74,13 @@ export default function SodiumPage() {
   // Hyper-specific
   const [hyperTarget, setHyperTarget] = React.useState("140");
   const [fwFluid, setFwFluid]         = React.useState(0); // index of infusate for free water
+
+  /* İDRAR ELEKTROLİTLERİ — opsiyonel, yalnızca hiponatremi kipinde.
+     Hipernatremide idrar konsantrasyonu TANISAL (diyabet insipidus ayrımı)
+     ama tedavi hesabına girmiyor; oraya alan koymak ölü bir girdi olurdu. */
+  const [uNa, setUNa]         = React.useState("");
+  const [uK, setUK]           = React.useState("");
+  const [uHacim, setUHacim]   = React.useState("");
 
   const ageN    = parseLocaleNumber(age);
   const heightN = parseLocaleNumber(height);
@@ -153,7 +167,10 @@ export default function SodiumPage() {
     ? (infusateNa - naN) / (tbw + 1)
     : null;
 
-  const maxRate = rateMode === "chronic" ? 8 : 12; // mEq/L/day (conservative: 8 for chronic)
+  /* Tavan artık SABİTTEN geliyor. Eskiden burada düz sayı yazıyordu ve aynı
+     değerler düğme etiketlerinde de elle yazılıydı — iki gerçeklik. Etiketler
+     de aşağıda aynı sabitten türüyor, yani bir daha ayrışamazlar. */
+  const maxRate = rateMode === "chronic" ? GUNLUK_TAVAN.kronik : GUNLUK_TAVAN.akut;
   const deltaNeeded = naMakul && hedefMakul ? targetN - naN : null;
   const litersNeeded = adroguePerL && adroguePerL !== 0 && deltaNeeded
     ? deltaNeeded / adroguePerL
@@ -172,7 +189,7 @@ export default function SodiumPage() {
   const fwd = tbw && naMakul && hiperHedefMakul
     ? tbw * (naN / hyperTargetN - 1)
     : null;
-  const hyperMaxRate = 10; // mEq/L/day
+  const hyperMaxRate = GUNLUK_TAVAN.hiper;
   const hyperDelta = naMakul && hiperHedefMakul ? naN - hyperTargetN : null;
   const hyperHours = hyperDelta ? Math.abs(hyperDelta) / hyperMaxRate * 24 : null;
   const hyperMlPerHour = fwd && fwd > 0 && hyperHours ? (fwd * 1000) / hyperHours : null;
@@ -201,6 +218,67 @@ export default function SodiumPage() {
   const suFazlasi = fwd !== null && fwd <= 0;
   const sividYonTers = litersNeeded !== null && litersNeeded < 0;
 
+  /**
+   * İLAN EDİLİP UYGULANMAYAN KURAL — bu aracın en pahalı kusuruydu.
+   *
+   * Uyarı kutusu *"Kronik hiponatremide düzeltme hızı ≤8–10 mEq/L/gün (ODS
+   * riski)"* diyordu ve düğme etiketleri de tavanı yazıyordu. Ama ARİTMETİK
+   * yapılmıyordu: ekran hedefi ve toplam süreyi basıyor, **ilk 24 saatte
+   * nerede durulacağını** hiç söylemiyordu.
+   *
+   * Canlıda ölçüldü (65 y · 170 cm · 70 kg · Na 110 · hedef 130 · %3 NaCl):
+   *
+   *   Hedef Delta   +20 mEq/L
+   *   Gerekli Hacim 1.9 L
+   *   Hız           32 mL/saat  (≤8 mEq/gün)
+   *   süre          60 saat (2.5 gün)
+   *   ilk 24 saat   YOK
+   *
+   * Yani kullanıcı ekranda 130 hedefini görüyordu; ilk günün tavanının 118
+   * olduğunu hiçbir yerden öğrenemiyordu. ODS geri dönüşsüz ve tam bu sınırın
+   * aşılmasından oluyor.
+   *
+   * Bu YENİ bir klinik iddia DEĞİL — aracın kendi ilan ettiği tavanın
+   * aritmetiği. Hesap `ilk24Hedef` içinde ve saf modülde, yani tarayıcısız
+   * sürülebiliyor (29 vakayla ölçüldü).
+   */
+  const i24Hypo =
+    naMakul && hedefMakul ? ilk24Hedef(naN, targetN, maxRate) : null;
+  const i24Hyper =
+    naMakul && hiperHedefMakul ? ilk24Hedef(naN, hyperTargetN, hyperMaxRate) : null;
+
+  /**
+   * İDRAR OKUMASI — Adrogué-Madias'ın KÖR NOKTASI.
+   *
+   * Formül kapalı sistem varsayıyor: hasta idrar yapmıyor. Gerçekte böbrek suyu
+   * ve tuzu ayrı ayrı işliyor ve serum sodyumunu bağımsız olarak değiştiriyor.
+   * İdrar (Na+K) toplamı verilen sıvının sodyumunu AŞIYORSA net etki sodyumu
+   * DÜŞÜRMEK olur (desalinasyon) — SIADH'de izotonik salinin hiponatremiyi
+   * kötüleştirmesinin mekanizması budur.
+   *
+   * Bunlar İKİNCİ OKUMA: yukarıdaki Adrogué hacim/hız hesabına DOKUNMUYORLAR.
+   * İki okuma ayrıştığında çapraz kontrol kutusu çıkıyor ve hacim/hızın hangi
+   * varsayımla kurulduğunu açıkça söylüyor.
+   *
+   * `sayiGirildiMi` şart: idrar Na 0 MEŞRU bir değer (prerenal azotemide ölçüm
+   * sınırının altına iner), yani değere bakan bir kapı gerçek hastayı elerdi.
+   */
+  const idrarMakul = (ham: string, [alt, ust]: readonly [number, number]) => {
+    if (!sayiGirildiMi(ham)) return false;
+    const n = parseLocaleNumber(ham);
+    return n >= alt && n <= ust;
+  };
+  const uNaOk     = idrarMakul(uNa, IDRAR_SINIR.na);
+  const uKOk      = idrarMakul(uK, IDRAR_SINIR.k);
+  const uHacimOk  = idrarMakul(uHacim, IDRAR_SINIR.hacim);
+  const idrarBozuk = [uNa, uK, uHacim].some((x) => x.trim() !== "")
+    && !(uNaOk && uKOk && uHacimOk);
+
+  const klerens = uNaOk && uKOk && uHacimOk && naMakul
+    ? suKlerensi(parseLocaleNumber(uHacim), parseLocaleNumber(uNa), parseLocaleNumber(uK), naN)
+    : null;
+  const desal = klerens ? desalinasyonRiski(klerens.idrarTuz, infusateNa) : null;
+
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -214,7 +292,7 @@ export default function SodiumPage() {
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Sodyum Yönetimi</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">TBW · Hiponatremi · Hipernatremi Düzeltme Hesaplama</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">TBW · Hiponatremi · Hipernatremi · İlk 24 Saat Tavanı · İdrar Klerensi</p>
           </div>
         </div>
 
@@ -328,8 +406,10 @@ export default function SodiumPage() {
                 <p id={"grp-s1"} className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1 mb-2">Düzeltme Tipi</p>
                 <div role="group" aria-labelledby={"grp-s1"} className="flex gap-3">
                   {[
-                    { v: "chronic" as const, l: "Kronik (≤8 mEq/L/gün)" },
-                    { v: "acute" as const, l: "Akut / semptomatik (≤12 mEq/gün)" },
+                    /* Etiketler SABİTTEN türüyor — eskiden hem burada hem
+                       hesapta elle yazılıydı ve ayrışabilirlerdi. */
+                    { v: "chronic" as const, l: `Kronik (≤${GUNLUK_TAVAN.kronik} mEq/L/gün)` },
+                    { v: "acute" as const, l: `Akut / semptomatik (≤${GUNLUK_TAVAN.akut} mEq/gün)` },
                   ].map(o => (
                     <button aria-pressed={rateMode === o.v} key={o.v} type="button" onClick={() => setRateMode(o.v)}
                       className={`flex-1 py-3 px-3 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all
@@ -353,6 +433,38 @@ export default function SodiumPage() {
                   ))}
                 </div>
               </div>
+            </div>
+
+            {/* İDRAR ELEKTROLİTLERİ — opsiyonel ikinci okuma.
+                Girilmezse aşağıdaki hiçbir kutu çizilmiyor; Adrogué hesabı
+                bundan tümüyle bağımsız çalışmaya devam ediyor. */}
+            <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-4">
+              <div>
+                <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">İdrar Elektrolitleri <span className="text-slate-300">— opsiyonel</span></p>
+                <p className="text-[10px] font-bold text-slate-400 mt-1 leading-relaxed">
+                  Adrogué-Madias idrar kayıplarını hesaba katmaz. Bu üç değer girilirse
+                  formülün kör noktası ayrıca ölçülür.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <InputField label="İdrar Na⁺" value={uNa} set={setUNa} ph="ör. 60" unit="mEq/L" />
+                <InputField label="İdrar K⁺" value={uK} set={setUK} ph="ör. 30" unit="mEq/L" />
+                <InputField label="İdrar hacmi" value={uHacim} set={setUHacim} ph="ör. 1200" unit="mL/gün" />
+              </div>
+              {idrarBozuk && (
+                <div role="alert" className="bg-amber-50 border border-amber-200 rounded-2xl p-4">
+                  <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-1">İdrar okuması hesaba KATILMADI</p>
+                  <p className="text-[11px] font-bold text-amber-900">
+                    Şu alan(lar) makul bir değer bekliyor:{" "}
+                    {[
+                      !uNaOk && `idrar Na⁺ (${IDRAR_SINIR.na[0]}–${IDRAR_SINIR.na[1]} mEq/L)`,
+                      !uKOk && `idrar K⁺ (${IDRAR_SINIR.k[0]}–${IDRAR_SINIR.k[1]} mEq/L)`,
+                      !uHacimOk && `idrar hacmi (${IDRAR_SINIR.hacim[0]}–${IDRAR_SINIR.hacim[1]} mL/gün)`,
+                    ].filter(Boolean).join(" · ")}
+                    . Sıfır geçerlidir. Adrogué-Madias hesabı bundan etkilenmiyor.
+                  </p>
+                </div>
+              )}
             </div>
 
             {adroguePerL !== null && tbw && naMakul && (
@@ -406,9 +518,84 @@ export default function SodiumPage() {
                         <div className="text-[9px] font-bold text-amber-400">mL/saat</div>
                       </div>
                     </div>
+                    {/* İLK 24 SAAT — aracın kendi ilan ettiği tavanın aritmetiği.
+                        Klinisyenin BUGÜN yapacağı iş bu olduğu için hacim/hız
+                        ızgarasından sonra ve tam genişlikte duruyor. */}
+                    {i24Hypo && (
+                      <div className="bg-blue-900 rounded-2xl p-4">
+                        <div className="flex items-baseline justify-between gap-3 flex-wrap">
+                          <div>
+                            <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">İlk 24 saat güvenli hedefi</div>
+                            <div className="text-3xl font-black text-white">
+                              {i24Hypo.hedef} <span className="text-sm text-amber-400">mEq/L</span>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Günlük tavan</div>
+                            <div className="text-lg font-black text-white">≤{i24Hypo.tavan} mEq/L</div>
+                          </div>
+                        </div>
+                        <p className="text-[10px] font-bold text-blue-100 mt-3 leading-relaxed">
+                          {i24Hypo.tekGunde
+                            ? `Hedefe (${targetN.toFixed(0)} mEq/L) tek günde ulaşılıyor.`
+                            : `Hedefe (${targetN.toFixed(0)} mEq/L) ulaşmak ${i24Hypo.gun} gün sürer. İlk 24 saatte ${i24Hypo.hedef} mEq/L'yi AŞMAYIN — sonraki günün hedefi yeniden ölçümle belirlenir.`}
+                        </p>
+                      </div>
+                    )}
                     <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-center">
                       <span className="text-[10px] font-black text-amber-800">Yaklaşık süre: {hoursNeeded?.toFixed(0)} saat ({((hoursNeeded ?? 0) / 24).toFixed(1)} gün)</span>
                     </div>
+                  </div>
+                )}
+
+                {/* İDRAR OKUMASI — Adrogué hesabına DOKUNMUYOR.
+                    Yön ters olsa da (hacim/hız basılmasa da) idrar okuması
+                    geçerli, o yüzden `sividYonTers` bloğunun DIŞINDA. */}
+                {klerens && (
+                  <div className="border-t border-slate-100 pt-3 space-y-3">
+                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">İdrar Okuması — Elektrolitsiz Su Klerensi</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                      <div className="bg-slate-50 rounded-2xl p-4 text-center">
+                        <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">İdrar Na⁺+K⁺</div>
+                        <div className="text-2xl font-black text-blue-900">{klerens.idrarTuz}</div>
+                        <div className="text-[9px] font-bold text-slate-400">mEq/L</div>
+                      </div>
+                      <div className="bg-slate-50 rounded-2xl p-4 text-center">
+                        <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">EFWC</div>
+                        <div className={`text-2xl font-black ${klerens.yon === "tutuyor" ? "text-rose-700" : klerens.yon === "atiyor" ? "text-emerald-700" : "text-blue-900"}`}>
+                          {klerens.efwc > 0 ? "+" : ""}{klerens.efwc}
+                        </div>
+                        <div className="text-[9px] font-bold text-slate-400">mL/gün</div>
+                      </div>
+                      <div className="bg-slate-50 rounded-2xl p-4 text-center">
+                        <div className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Böbrek ne yapıyor</div>
+                        <div className="text-sm font-black text-blue-900 leading-tight pt-1">
+                          {klerens.yon === "tutuyor" ? "Serbest su TUTUYOR" : klerens.yon === "atiyor" ? "Serbest su ATIYOR" : "Nötr"}
+                        </div>
+                        <div className="text-[9px] font-bold text-slate-400 mt-1">
+                          {klerens.yon === "tutuyor" ? "Na kendiliğinden düşer" : klerens.yon === "atiyor" ? "Na kendiliğinden yükselir" : "belirgin etki yok"}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* ÇAPRAZ KONTROL: iki okuma ayrıştığında söylüyor.
+                        Adrogué yalnızca infüzatı ve TBW'yi biliyor; idrarın o
+                        sıvının tuzunu atıp suyunu tuttuğunu göremiyor. */}
+                    {desal?.risk && (
+                      <div className="rounded-2xl border-2 border-sky-300 bg-sky-50 p-4 space-y-2">
+                        <div className="text-[9px] font-black uppercase tracking-widest text-sky-800">
+                          Çapraz kontrol — desalinasyon riski
+                        </div>
+                        <p className="text-[11px] leading-relaxed text-sky-900">
+                          İdrar tuzu ({klerens.idrarTuz} mEq/L) seçilen sıvının sodyumunu
+                          ({infusateNa} mEq/L) <strong>{desal.fark} mEq/L aşıyor</strong>. Böbrek bu sıvının
+                          tuzunu atıp suyunu tutuyor olabilir; net etki serum sodyumunu
+                          <strong> düşürmek</strong> olur. Yukarıdaki hacim ve hız Adrogué-Madias ile
+                          kuruldu ve idrar kayıplarını hesaba KATMAZ — daha yüksek sodyumlu bir sıvıyı
+                          ya da eş zamanlı su kısıtlamasını değerlendirin.
+                        </p>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -502,6 +689,31 @@ export default function SodiumPage() {
                     </div>
                   ) : null;
                 })()}
+
+                {/* İLK 24 SAAT — hipernatremide de aynı kusur vardı: uyarı
+                    kutusu "≤10 mEq/L/gün" diyor, aritmetiği yapılmıyordu.
+                    Su fazlası varsa düzeltme yapılmıyor, şerit de basılmıyor. */}
+                {!suFazlasi && i24Hyper && (
+                  <div className="bg-blue-900 rounded-2xl p-4">
+                    <div className="flex items-baseline justify-between gap-3 flex-wrap">
+                      <div>
+                        <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">İlk 24 saat güvenli hedefi</div>
+                        <div className="text-3xl font-black text-white">
+                          {i24Hyper.hedef} <span className="text-sm text-amber-400">mEq/L</span>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-[9px] font-black text-blue-200 uppercase tracking-widest mb-1">Günlük tavan</div>
+                        <div className="text-lg font-black text-white">≤{i24Hyper.tavan} mEq/L</div>
+                      </div>
+                    </div>
+                    <p className="text-[10px] font-bold text-blue-100 mt-3 leading-relaxed">
+                      {i24Hyper.tekGunde
+                        ? `Hedefe (${hyperTargetN.toFixed(0)} mEq/L) tek günde ulaşılıyor.`
+                        : `Hedefe (${hyperTargetN.toFixed(0)} mEq/L) ulaşmak ${i24Hyper.gun} gün sürer. İlk 24 saatte ${i24Hyper.hedef} mEq/L'nin ALTINA inmeyin — daha hızlı düşüş beyin ödemi riski taşır.`}
+                    </p>
+                  </div>
+                )}
               </div>
             )}
           </div>
