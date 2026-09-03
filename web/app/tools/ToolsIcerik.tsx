@@ -208,6 +208,8 @@ const TOOLS_DATABASE = [
     slug: "noroloji",
     icon: "🧠",
     items: [
+      { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
+      { slug: "four", name: "FOUR Skoru", desc: "Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar" },
       { slug: "abcd2", name: "ABCD² Skoru", desc: "TİA sonrası 2 günlük inme riski tahmini" },
     ]
   },

@@ -250,6 +250,11 @@
   "desc": "Zorunlu potasyum/sodyum yükü — süreyi çoğu zaman fosfat değil potasyum sınırlıyor"
  },
  {
+  "slug": "four",
+  "name": "FOUR Skoru",
+  "desc": "Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar"
+ },
+ {
   "slug": "frail",
   "name": "FRAIL Skalası",
   "desc": "Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan"
