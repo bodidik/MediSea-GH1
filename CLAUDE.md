@@ -30178,3 +30178,155 @@ HCO₃⁻ 33 · kronik):
 | yatay kayma · kırpılan · 24px altı hedef | **0 · 0 · 0** |
 | elektrolit ızgarası · delta ızgarası | 1 kolon · **2 kolon** |
 | çapraz kutu · laktat kartı · `h1` | var · var · **1** |
+
+### SODYUM ARACI KENDİ İLAN ETTİĞİ ODS TAVANINI UYGULAMIYORDU
+
+Kullanıcı isteği: aracı asit-baz gibi "kalite olarak optimize etmek". Eksen
+özellik listesiyle değil ÖLÇÜMLE seçildi — ve seçici soru şuydu: **araç bir
+güvenlik sınırı İLAN ediyor, uyguluyor mu?**
+
+Uyarı kutusu *"Kronik hiponatremide düzeltme hızı ≤8–10 mEq/L/gün (ODS
+riski)"* diyor, düğme etiketleri de tavanı yazıyordu. Ama **aritmetik
+yapılmıyordu.** Canlıda ölçüldü (65 y · 170 cm · 70 kg · Na 110 · hedef 130 ·
+%3 NaCl):
+
+| kart | değer |
+|---|---|
+| Hedef Delta | **+20 mEq/L** |
+| Gerekli Hacim | 1.9 L |
+| Hız | 32 mL/saat (≤8 mEq/gün) |
+| süre | 60 saat (2.5 gün) |
+| **ilk 24 saat** | **YOK** |
+
+Yani kullanıcı ekranda **130** hedefini görüyordu; ilk günün tavanının
+**118** olduğunu hiçbir yerden öğrenemiyordu. ODS geri dönüşsüz ve tam bu
+sınırın aşılmasından oluyor.
+
+Bu, depoda tur tur avlanan **"ilan edilip uygulanmayan kural"** sınıfı
+(`haq-di` yardımcı araç · `murray` kullanılan parametre · `apache2` ABY ×2 ·
+`anaphylaxis` · `canadian-ct` · `rts` T-RTS) — ve klinik bedeli en ağır olanı.
+Aynı kusur **hipernatremi kipinde de** vardı (≤10 mEq/L/gün ilan ediliyor,
+aritmetiği yok).
+
+#### EKLENEN İKİ ŞEY DE İKİNCİ OKUMA — Adrogué hesabına DOKUNMUYOR
+
+Asit-baz turunun disiplini birebir uygulandı: yeni klinik iddia YAZILMADI,
+aracın kendi ilan ettiği kural uygulanabilir kılındı.
+
+| ekleme | ne veriyor |
+|---|---|
+| **ilk 24 saat güvenli hedefi** | ilan edilen günlük tavanın aritmetiği |
+| **idrar okuması (opsiyonel)** | Adrogué-Madias'ın kör noktası — elektrolitsiz su klerensi + desalinasyon |
+
+**Tek fonksiyon iki kipi de karşılıyor** (`ilk24Hedef`, yön işaretten
+çıkıyor): hiponatremide yükseliyor, hipernatremide düşüyor. İki kopya
+yazmak "iki gerçeklik" sınıfını açardı.
+
+#### DESALİNASYON — ölçülen ayrışma
+
+Adrogué-Madias **kapalı sistem** varsayıyor: hasta idrar yapmıyor. Gerçekte
+böbrek suyu ve tuzu ayrı işliyor. İdrar (Na+K) verilen sıvının sodyumunu
+AŞIYORSA net etki sodyumu DÜŞÜRMEK olur — SIADH'de izotonik salinin
+hiponatremiyi kötüleştirmesinin mekanizması budur.
+
+Ölçüldü (idrar Na 120 + K 40 = 160 · seçilen sıvı izotonik 154):
+
+| okuma | ne diyor |
+|---|---|
+| **Adrogué** | +1.13 mEq/L per L → **17.8 litre ver** |
+| **çapraz kontrol** | idrar tuzu 160 > 154 → **bu sıvı sodyumu DÜŞÜRÜR** |
+
+İkisi zıt. Kutu hacim ve hızın hangi varsayımla kurulduğunu söylüyor ve
+hesabı DEĞİŞTİRMİYOR — asit-baz'daki Δgap kutusunun aynısı.
+
+**İdrar alanı hipernatremide BİLEREK YOK:** orada idrar konsantrasyonu
+tanısal (diyabet insipidus ayrımı) ama tedavi hesabına girmiyor; alan
+koymak ölü bir girdi olurdu.
+
+#### Doğrulama — 29 saf vaka + tarayıcı, on dördü negatif kontrol
+
+Mantık saf modülde (`app/tools/lib/sodyum.ts`), yani
+`node --experimental-strip-types` ile doğrudan sürüldü: **29/29**.
+
+| ölçüt | sonuç |
+|---|---|
+| ilk24 hipo · hiper · tam sınır · sınırın bir üstü | dördü de birebir |
+| EFWC elde hesapla | `V × (1 − (UNa+UK)/SNa)` birebir |
+| desalinasyon dört dal | izotonik altı · üstü · %3 NaCl · D5W |
+| **negatif** — delta 0 · NaN · tavan 0 · tavan eksi · tavan Infinity | beşi de `null` |
+| **negatif** — idrar Na **0 MEŞRU** (prerenal) | hesaplanıyor, elenmiyor |
+| **negatif** — serum Na 0 → `null` | ✓ |
+
+Tarayıcı (yerel üretim derlemesi):
+
+| ölçüt | sonuç |
+|---|---|
+| ilk 24 saat hipo | **118 mEq/L** · "2.5 gün sürer, İlk 24 saatte 118'i AŞMAYIN" |
+| ilk 24 saat hiper | **155 mEq/L** · "ALTINA inmeyin — beyin ödemi riski" |
+| idrar okuması | Na+K 160 · EFWC −273 · "serbest su TUTUYOR" |
+| **negatif** — Adrogué hacim/hız | **+20 · 1.9 L · 32 mL/saat — canlıyla BİREBİR** |
+| **negatif** — tek günde hedef (128→132) | "tek günde ulaşılıyor", ilk24 = **132** |
+| **negatif** — idrar boş | kart ve çapraz kutu **çizilmiyor** |
+| **negatif** — çöp idrar girdisi | uyarı alan **ADIYLA**, Adrogué **AYAKTA** |
+| **negatif** — hiper su fazlası | şerit **basılmıyor**; gerçek hipernatremide geri geliyor |
+| **negatif** — 320px | yatay kayma 0 · kırpılan 0 · 24px altı hedef 0 |
+| **negatif** — 1280px | ızgara 3 kolon · kontrast **7.09–10.36** |
+
+Dördüncü satır bu turun asıl kanıtı: iki ikinci okuma da eklendikten sonra
+birincil hesap **rakam rakam** değişmedi.
+
+#### Yan tekleştirme
+
+Günlük tavanlar artık `GUNLUK_TAVAN` sabitinden geliyor. Eskiden hem hesapta
+(`rateMode === "chronic" ? 8 : 12`) hem düğme etiketlerinde (`"Kronik (≤8
+mEq/L/gün)"`) **elle yazılıydı** — bugün uyuşuyorlardı ama ayrışabilirlerdi.
+Etiketler de aynı sabitten türüyor.
+
+Uyarı kutusundaki *"≤8–10"* aralığı BİLEREK dokunulmadan bırakıldı: o
+kılavuz aralığı, düğme ise aracın UYGULADIĞI değer. İkisi farklı şeyler ve
+ikisi de doğru.
+
+#### ⚠ Geometri koruması ilk ölçümde ateşledi
+
+Canlıya gidip ölçüm yapılınca `innerWidth` **0** çıktı ve betik durdu.
+Belgede kayıtlı koruma (`if (!window.innerWidth) throw`) tam bunun için
+konmuştu — o olmasaydı ölçüm makul görünen çöp geometri üretecekti.
+`resize_window` ile açık genişlik verilince düzeldi.
+
+**Aktarılabilir kural: bir araç bir GÜVENLİK SINIRI yazıyorsa, o sınırın
+ARİTMETİĞİNİN yapılıp yapılmadığını ayrıca sor.** Bu depoda "ilan edilip
+uygulanmayan kural" sınıfı yedi kez çıktı; hepsinde metin doğruydu ve
+eksik olan hesaptı. Ölçütü kurmanın ucuz yolu: uyarı metnindeki sayıyı
+ekranda ARA — yoksa kural yalnızca yazıyor demektir.
+
+#### Sodyum eklemeleri CANLIDA doğrulandı — kusuru bulan ölçümün birebir tekrarı
+
+Aynı vaka (65 y · 170 cm · 70 kg · Na 110 · hedef 130 · %3 NaCl):
+
+| ölçüt | önce (canlı) | sonra (canlı) |
+|---|---|---|
+| **ilk 24 saat güvenli hedefi** | **YOK** | **118 mEq/L** |
+| cümle | — | "İlk 24 saatte 118 mEq/L'yi AŞMAYIN — sonraki günün hedefi yeniden ölçümle belirlenir." |
+| **negatif** — Adrogué hacim/hız | +10.32 · 38.1 · +20 · 1.9 L · 32 mL/saat | **BİREBİR AYNI** |
+
+Desalinasyon (idrar Na 120 + K 40 = 160 · izotonik 154):
+
+| ölçüt | canlıda |
+|---|---|
+| İdrar Na⁺+K⁺ · EFWC | 160 · **−273 mL/gün** |
+| Böbrek ne yapıyor | **Serbest su TUTUYOR** |
+| çapraz kutu | **var** — "idrar tuzu … sodyumunu 6 mEq/L aşıyor" |
+| Adrogué aynı ekranda | "+1.13 mEq/L per L · **17.8 litre**" — iki okuma zıt, kutu bunu söylüyor |
+
+Hipernatremi ve negatif kontroller:
+
+| ölçüt | canlıda |
+|---|---|
+| Na 165 → hedef 140 | **155 mEq/L** · "ALTINA inmeyin — beyin ödemi riski" |
+| **negatif** — Na 130 (su fazlası) | şerit **YOK** · "Serbest su açığı yok" uyarısı var |
+| **negatif** — idrar alanı hipernatremide | **YOK** (kapsam kararı ayakta) |
+| **negatif** — 320px | belge 320 · yatay kayma **0** · kırpılan **0** · 24px altı hedef **0** · `h1` 1 |
+| **negatif** — 320px'te ilk24 ve çapraz kutu | 118 mEq/L · kutu 238px sığıyor |
+
+320px'te kırpılan tek öge `sr-only` atlama bağlantısı — belgede kayıtlı
+yanlış pozitif.
