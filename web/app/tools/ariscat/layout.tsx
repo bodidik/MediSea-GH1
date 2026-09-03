@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "BODE İndeksi — KOAH 4 yıllık mortalite tahmini",
-  description: "BODE İndeksi: KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bode" },
+  title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",
+  description: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ariscat" },
   openGraph: {
     type: "website",
-    title: "BODE İndeksi — KOAH 4 yıllık mortalite tahmini",
-    description: "BODE İndeksi: KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bode",
+    title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",
+    description: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ariscat",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "BODE İndeksi",
-          aciklama: "BODE İndeksi: KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bode",
+          ad: "ARISCAT",
+          aciklama: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ariscat",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "BODE İndeksi", yol: "/tools/bode" },
+          { ad: "ARISCAT", yol: "/tools/ariscat" },
         ])}
       />
       {children}
@@ -41,6 +41,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Berlin ARDS Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bode" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BODE İndeksi
+              </Link>
+            </li>
             <li>
               <Link href="/tools/cat-copd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CAT Skoru
@@ -59,16 +69,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/psi-port" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 PSI/PORT Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ACT
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ARISCAT
               </Link>
             </li>
           </ul>

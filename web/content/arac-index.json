@@ -50,6 +50,11 @@
   "desc": "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini"
  },
  {
+  "slug": "ariscat",
+  "name": "ARISCAT",
+  "desc": "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması"
+ },
+ {
   "slug": "asdas",
   "name": "ASDAS-CRP/ESR",
   "desc": "Ankilozan Spondilit Hastalık Aktivite Skoru"

@@ -165,6 +165,7 @@ const TOOLS_DATABASE = [
       { slug: "act", name: "ACT", desc: "Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol" },
       { slug: "bode", name: "BODE İndeksi", desc: "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT" },
       { slug: "berlin-ards", name: "Berlin ARDS Kriterleri", desc: "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır" },
+      { slug: "ariscat", name: "ARISCAT", desc: "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması" },
     ]
   },
   {

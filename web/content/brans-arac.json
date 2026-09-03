@@ -221,6 +221,11 @@
     "slug": "berlin-ards",
     "name": "Berlin ARDS Kriterleri",
     "icon": "🫁"
+   },
+   {
+    "slug": "ariscat",
+    "name": "ARISCAT",
+    "icon": "🫁"
    }
   ]
  },
@@ -260,6 +265,11 @@
    {
     "slug": "berlin-ards",
     "name": "Berlin ARDS Kriterleri",
+    "icon": "🫁"
+   },
+   {
+    "slug": "ariscat",
+    "name": "ARISCAT",
     "icon": "🫁"
    }
   ]
