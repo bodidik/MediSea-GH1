@@ -232,7 +232,13 @@ export default function FourPage() {
                 const p = puan(b.id);
                 return (
                   <div key={b.id} className={`rounded-lg p-2 ${p === 0 ? "bg-rose-700 text-white" : "bg-white/60 text-slate-600"}`}>
-                    <div className="text-[8px] font-black uppercase tracking-widest opacity-70">{b.harf}</div>
+                    {/* Harf etiketi rengini DEVRALIR — ne opacity ne renk alfası.
+                        opacity getComputedStyle(el).color içinde görünmediği için
+                        kontrast ölçümünü kör ediyor (saydamlik-denetim CI kapısı);
+                        alfa ise ölçülebilir ama ÖLÇÜLDÜ ve düştü: white/70 → 3.65,
+                        slate-600/70 → 3.52 (8px için eşik 4.5). İkincillik boyut ve
+                        ağırlıkla veriliyor (8px ↔ 20px), renkle değil: 6.29 / 7.30. */}
+                    <div className="text-[8px] font-black uppercase tracking-widest">{b.harf}</div>
                     <div className="text-xl font-black leading-none">{p}</div>
                   </div>
                 );
