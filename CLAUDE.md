@@ -30417,3 +30417,97 @@ değiştirmişti. Yayımlanmış bir ölçeği aktaran her araçta ayrı bir sor
 **şık metinleri kaynakla birebir mi?** Ucuz ölçüt, aynı kartın kendi içinde
 çelişip çelişmediğine bakmak — "8. Duygu" başlığı, şıklarındaki "duyu kaybı"
 ifadesiyle dış bir kaynağa hiç bakmadan çürütülebiliyordu.
+
+### DENETİMİ GEÇMEK YETMİYOR — alfa ölçülebilir yaptı, ÖLÇÜM düşürdü
+
+FOUR skoru eklendi (`/tools/four`) ve **CI kırmızıya döndü**: düşen adım
+`saydamlik-denetim --kapi`. Yerelde lint · typecheck · build sürülmüştü,
+CI'ın çalıştırdığı 14 denetim sürülmemişti — belgede kayıtlı kuralın
+ihlali: **kapı senin çalıştırdığın komut değil, CI'ın çalıştırdığı
+komuttur.**
+
+Kusur benim yazdığım tek satırdaydı: bileşen cetvelinin harf etiketi
+`opacity-70` taşıyordu. Denetimin gerekçesi kayıtlı — CSS `opacity`
+rengi soldurur ama `getComputedStyle(el).color` değerine YANSIMAZ, yani
+saydam yazı bütün kontrast ölçümlerinde olduğundan koyu görünür.
+
+#### ⚠ İLK ÇARE KAPIYI YEŞİLE DÖNDÜRDÜ VE HÂLÂ KUSURLUYDU
+
+Denetimin kendi önerisi uygulandı (`opacity-70` → renk alfası) ve kapı
+geçti. Ama kontrast ÖLÇÜLÜNCE iki durum da eşiğin altında çıktı:
+
+| durum | renk | kontrast |
+|---|---|---|
+| rose-700 zemin | `text-white/70` | **3.65** |
+| beyaz zemin | `text-slate-600/70` | **3.52** |
+
+8px metin için eşik **4.5**. Yani alfa yalnızca **ölçülebilir** yapıyor;
+**geçmesi ayrı bir yükümlülük** ve denetim onu sormuyor.
+
+Bu, `saydamlik-denetim`in kayıtlı gerekçesinin tam olarak söylediği şey —
+o bir kontrast kapısı değil, kontrast ölçümünü KÖR EDEN bir kalıbın
+kapısı. Denetimi geçmek "kontrast iyi" demek değil, "artık ölçebilirsin"
+demek. **Bir denetimin önerdiği çareyi uyguladıktan sonra, denetimin
+ölçmediği şeyi ayrıca ölç.**
+
+#### Aday renkler ölçülerek elendi
+
+Sınıf adından hesaplanmadı — gerçek ögeler üzerinde, uygulamanın kendi
+CSS'i altında (`globals.css` ezmeleri dahil):
+
+| aday | rose-700 zemin | beyaz zemin |
+|---|---|---|
+| bugünkü alfa 0.70 | 3.65 ✗ | 3.52 ✗ |
+| alfa 0.85 | 4.84 | 5.00 |
+| `rose-100` / `slate-500` | 5.24 | **4.58 — eşiğe 0.08** |
+| `rose-200` | 4.46 ✗ | — |
+| **devral (alfa yok)** | **6.29** | **7.30** |
+
+`slate-500` teknik olarak geçiyor ama eşiğe 0.08 uzakta; içerik ya da
+zemin bir basamak oynasa sessizce düşerdi.
+
+#### Seçilen çare: renk DEVRALINIYOR — ikincillik başka kanalda
+
+Belgede kayıtlı ilke: *"Çare saydamlığı azaltmak değil, işareti BAŞKA
+KANALA taşımak… yazı ağırlığı — hepsi 'ikincil' der ve kontrasta hiç
+dokunmaz."* Harf etiketi zaten **8px ↔ 20px** boyut farkı, `font-black`,
+`uppercase`, `tracking-widest` taşıyor; hiyerarşiyi bunlar veriyor.
+
+Yan kazanç: koşullu sınıf tümden kalktı (`p === 0 ? … : …`), yani iki
+zemin için iki ayrı renk tutma zorunluluğu da bitti.
+
+**Ölçüldü — harf, aynı hücredeki SAYIYLA birebir aynı kontrastta:**
+
+| durum | harf | sayı |
+|---|---|---|
+| beyaz hücre (E · M · B) | **7.30** | 7.30 |
+| rose hücre (R=0) | **6.29** | 6.29 |
+| hepsi 0 | 6.29 ×4 | — |
+| alfa taşıyan öge | **0** | — |
+
+#### Negatif kontroller
+
+| ölçüt | sonuç |
+|---|---|
+| duyuru (R=0) | "Sonuç: E4 M4 B4 R0 — **KRİTİK BİLEŞEN**" — R≤1 dalı çalışıyor |
+| duyuru (hepsi 0) | "Sonuç: E0 M0 B0 R0 — **TÜM BİLEŞENLER 0**" — **tekrar YOK** |
+| beyin ölümü notu | var |
+| 320px | yatay kayma **0** · kırpık **0** · 24px altı hedef **0** · `h1` 1 |
+| pozitif kontrol | tohumlanan kırpma **yakalanıyor** (1 / 0) |
+| 14 denetim · lint · typecheck · build | 14/14 · 0 · 0 · **639/639** |
+
+İkinci satır ayrıca bu turdan önce ölçümle yakalanmış bir kendi kusurumun
+tarihsel kontrolü: sıfır durumunun etiketi bir dönem profille birebir
+aynıydı (`"E0 M0 B0 R0"`) ve canlı bölge cümleyi iki kez okuyordu.
+
+#### ⚠ ESKİ DERLEME GÜNLÜĞÜNÜ OKUDUM — sayı ele verdi
+
+`cd web && … npm run build > /tmp/b.log` zincirinde `cd` düştü, `&&`
+kısa devre yaptı, derleme HİÇ çalışmadı — ve grep bir ÖNCEKİ koşumun
+günlüğünü okuyup "638/638" gösterdi. Yakalayan şey sayının kendisiydi:
+638 FOUR'dan ÖNCEKİ değer, beklenen **639**.
+
+Çare iki adımlı ve ikisi de gerekli: günlüğü **önce sil** (`rm -f`), ve
+komutu **tek başına** çalıştırıp `pwd` ile dizini doğrula. Bu depoda
+kayıtlı "boru hattında `$?` `tail`'in kodudur" tuzağının kardeşi —
+burada bozulan çıkış kodu değil, **okunan dosyanın kendisi**.
