@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ACT — Astım Kontrol Testi",
-  description: "ACT: Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/act" },
+  title: "BAP-65 — KOAH alevlenmesinde şiddet sınıflaması",
+  description: "BAP-65: KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/bap65" },
   openGraph: {
     type: "website",
-    title: "ACT — Astım Kontrol Testi",
-    description: "ACT: Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/act",
+    title: "BAP-65 — KOAH alevlenmesinde şiddet sınıflaması",
+    description: "BAP-65: KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/bap65",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ACT",
-          aciklama: "ACT: Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/act",
+          ad: "BAP-65",
+          aciklama: "BAP-65: KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/bap65",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ACT", yol: "/tools/act" },
+          { ad: "BAP-65", yol: "/tools/bap65" },
         ])}
       />
       {children}
@@ -41,16 +41,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ARISCAT
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BAP-65
-              </Link>
-            </li>
             <li>
               <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Berlin ARDS Kriterleri
@@ -69,6 +59,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/curb65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CURB-65 Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/mmrc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                mMRC Dispne
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/psi-port" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                PSI/PORT Skoru
               </Link>
             </li>
           </ul>

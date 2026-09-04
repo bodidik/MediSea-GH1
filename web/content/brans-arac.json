@@ -226,6 +226,11 @@
     "slug": "ariscat",
     "name": "ARISCAT",
     "icon": "🫁"
+   },
+   {
+    "slug": "bap65",
+    "name": "BAP-65",
+    "icon": "🫁"
    }
   ]
  },
@@ -270,6 +275,11 @@
    {
     "slug": "ariscat",
     "name": "ARISCAT",
+    "icon": "🫁"
+   },
+   {
+    "slug": "bap65",
+    "name": "BAP-65",
     "icon": "🫁"
    }
   ]

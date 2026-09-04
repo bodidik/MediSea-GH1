@@ -60,6 +60,11 @@
   "desc": "Ankilozan Spondilit Hastalık Aktivite Skoru"
  },
  {
+  "slug": "bap65",
+  "name": "BAP-65",
+  "desc": "KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor"
+ },
+ {
   "slug": "barthel",
   "name": "Barthel ADL İndeksi",
   "desc": "Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100)"

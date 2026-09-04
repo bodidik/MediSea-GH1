@@ -167,6 +167,7 @@ const TOOLS_DATABASE = [
       { slug: "bode", name: "BODE İndeksi", desc: "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT" },
       { slug: "berlin-ards", name: "Berlin ARDS Kriterleri", desc: "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır" },
       { slug: "ariscat", name: "ARISCAT", desc: "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması" },
+      { slug: "bap65", name: "BAP-65", desc: "KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor" },
     ]
   },
   {
