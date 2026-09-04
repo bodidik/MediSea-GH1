@@ -2665,6 +2665,11 @@
    "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar"
   },
   {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-arni-etkilesimler",
    "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
@@ -3532,6 +3537,13 @@
    "brans": "hematoloji",
    "slug": "demir-eksikligi",
    "baslik": "Demir Eksikliği Anemisi (DEA)"
+  }
+ ],
+ "hematoloji/antikoagulasyon-stratejileri": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-ilac-etkilesimleri",
+   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
   }
  ],
  "hematoloji/aplastik-anemi": [
