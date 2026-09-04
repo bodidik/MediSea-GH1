@@ -125,6 +125,11 @@
   "desc": "Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri"
  },
  {
+  "slug": "caprini",
+  "name": "Caprini VTE",
+  "desc": "Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur"
+ },
+ {
   "slug": "cat-copd",
   "name": "CAT Skoru",
   "desc": "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü"

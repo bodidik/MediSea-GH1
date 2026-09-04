@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "4T Skoru — HIT — Heparine bağlı trombositopeni klinik",
-  description: "4T Skoru — HIT: Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/4t-hit" },
+  title: "Caprini VTE — Cerrahi hastada VTE risk modeli",
+  description: "Caprini VTE: Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/caprini" },
   openGraph: {
     type: "website",
-    title: "4T Skoru — HIT — Heparine bağlı trombositopeni klinik",
-    description: "4T Skoru — HIT: Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/4t-hit",
+    title: "Caprini VTE — Cerrahi hastada VTE risk modeli",
+    description: "Caprini VTE: Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/caprini",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "4T Skoru — HIT",
-          aciklama: "4T Skoru — HIT: Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/4t-hit",
+          ad: "Caprini VTE",
+          aciklama: "Caprini VTE: Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/caprini",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "4T Skoru — HIT", yol: "/tools/4t-hit" },
+          { ad: "Caprini VTE", yol: "/tools/caprini" },
         ])}
       />
       {children}
@@ -41,11 +41,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Acil & Kritik Bakım kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/caprini" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Caprini VTE
-              </Link>
-            </li>
             <li>
               <Link href="/tools/ciwa-ar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CIWA-Ar
@@ -69,6 +64,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/news2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 NEWS2 Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/nihss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                NIHSS
               </Link>
             </li>
           </ul>

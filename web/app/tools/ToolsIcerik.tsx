@@ -113,6 +113,7 @@ const TOOLS_DATABASE = [
       { slug: "wells-dvt", name: "Wells Skoru (DVT)", desc: "Derin ven trombozu klinik olasılığı" },
       { slug: "perc", name: "PERC Kriterleri", desc: "PE düşük risk dışlama protokolü" },
       { slug: "padua", name: "Padua Skoru", desc: "Yatan dahili hastalarda VTE profilaksi kararı" },
+      { slug: "caprini", name: "Caprini VTE", desc: "Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur" },
       { slug: "qsofa", name: "qSOFA Skoru", desc: "Hızlı sepsis yatak başı değerlendirme" },
       { slug: "sofa", name: "SOFA Skoru", desc: "Yoğun bakımda organ yetmezliği takibi" },
       { slug: "news2", name: "NEWS2 Skoru", desc: "Klinik kötüleşme erken uyarı sistemi" },
