@@ -102,7 +102,7 @@
  {
   "slug": "bode",
   "name": "BODE İndeksi",
-  "desc": "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT"
+  "desc": "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT; alevlenme öyküsü ayrıca okunuyor"
  },
  {
   "slug": "braden",

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const ITEMS = [
   {
@@ -48,11 +49,29 @@ const ITEMS = [
   },
 ];
 
+/* Tavan ŞIKLARDAN türüyor: elle yazılan payda bu depoda bir kez sessizce
+   bayatladı (nihss ekranda "/ 42" basıyordu ama tavan türetilmişti). */
+const TAVAN = ITEMS.reduce((s, i) => s + Math.max(...i.options.map(o => o.pts)), 0);
+
 const QUARTILES = [
   { min: 0, max: 2, label: "Q1 — Düşük Risk", os4: "%80+", color: "emerald" },
   { min: 3, max: 4, label: "Q2 — Orta-Düşük",  os4: "%67",  color: "sky" },
   { min: 5, max: 6, label: "Q3 — Orta-Yüksek", os4: "%57",  color: "amber" },
-  { min: 7, max: 10, label: "Q4 — Yüksek Risk", os4: "%18",  color: "rose" },
+  { min: 7, max: TAVAN, label: "Q4 — Yüksek Risk", os4: "%18",  color: "rose" },
+];
+
+/* İKİNCİ OKUMA — alevlenme öyküsü. BODE'nin bileşenleri arasında alevlenme
+   YOK (Celli, NEJM 2004): dört eksen de STABİL dönem ölçümü. Oysa GOLD
+   farmakolojik basamağı doğrudan alevlenme öyküsünden kuruyor (ABE
+   gruplaması), ve BODEx ile DOSE zaten bu boşluğu kapatmak için türetildi.
+   Sonuç ölçülebilir bir kör nokta: VKİ'si, spirometrisi, dispnesi ve yürüme
+   mesafesi iyi olan hasta Q1'de olabilir ve aynı yıl iki kez hastaneye
+   yatmış olabilir. Bu okuma SKORU DEĞİŞTİRMİYOR — değiştirdiği şey tedavi
+   basamağı ve o basamak kılavuzun kendi kuralı. */
+const ALEVLENME_SECENEKLERI: { kod: string; label: string; sub: string; agir: boolean }[] = [
+  { kod: "yok",  label: "0–1 orta alevlenme, hastane yatışı yok", sub: "Son 12 ayda · GOLD grup A veya B", agir: false },
+  { kod: "sik",  label: "≥ 2 orta alevlenme",                     sub: "Son 12 ayda · GOLD grup E",        agir: true  },
+  { kod: "yatis", label: "≥ 1 hastane yatışı gerektiren alevlenme", sub: "Son 12 ayda · GOLD grup E",       agir: true  },
 ];
 
 const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
@@ -74,6 +93,16 @@ export default function BODEPage() {
 
   const q = total !== null ? QUARTILES.find(b => total >= b.min && total <= b.max)! : null;
   const c = q ? COLOR[q.color] : null;
+
+  /* Seçim İNDEKSLE saklanıyor, puanla değil — bu alanın puanı yok ama kalıp
+     bu depoda altı kez kusur üretti (aynı puanlı iki şık tek düğme oluyordu). */
+  const [alevIdx, setAlevIdx] = React.useState<number | null>(null);
+  const alev = alevIdx === null ? null : ALEVLENME_SECENEKLERI[alevIdx];
+
+  /* Ayrışma KİMLİKTEN okunuyor, indeksten değil: cetvel sırası değişirse
+     koşul sessizce yanlış banda kaymasın. */
+  const dusukCeyrek = q?.label.startsWith("Q1") || q?.label.startsWith("Q2");
+  const ayrisiyor = !!(alev?.agir && dusukCeyrek);
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -122,13 +151,15 @@ export default function BODEPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={q ? `BODE ${total} — ${q.label}` : null} />
+
         {total !== null && q && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">
               <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
                 <span className="text-[8px] font-black text-blue-300 uppercase">BODE</span>
                 <span className="text-4xl font-black text-white leading-none">{total}</span>
-                <span className="text-[8px] text-blue-300">/ 10</span>
+                <span className="text-[8px] text-blue-300">/ {TAVAN}</span>
               </div>
               <div>
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>{q.label}</span>
@@ -152,6 +183,39 @@ export default function BODEPage() {
           </div>
         )}
 
+        <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
+          <p id="alev-baslik" className="font-black text-blue-900 uppercase italic text-sm mb-0.5">Alevlenme öyküsü <span className="text-slate-400 normal-case not-italic font-bold">— opsiyonel</span></p>
+          <p id="alev-detay" className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">BODE bileşeni DEĞİL · skoru değiştirmez, ayrıca okunur</p>
+          <div role="group" aria-labelledby="alev-baslik alev-detay" className="space-y-1.5">
+            {ALEVLENME_SECENEKLERI.map((o, i) => (
+              <button aria-pressed={alevIdx === i} key={o.kod} type="button"
+                onClick={() => setAlevIdx(alevIdx === i ? null : i)}
+                className={`w-full text-left px-3 py-2 rounded-xl border-2 text-[10px] font-bold transition-all
+                  ${alevIdx === i ? "border-blue-900 bg-blue-900 text-white" : "border-slate-100 bg-slate-50 text-slate-600 hover:border-blue-200"}`}>
+                <span className="block">{o.label}</span>
+                <span className={`block text-[9px] font-bold mt-0.5 ${alevIdx === i ? "text-blue-200" : "text-slate-400"}`}>{o.sub}</span>
+              </button>
+            ))}
+          </div>
+
+          {alev && q ? (
+            <div className={`mt-3 rounded-xl border-2 p-3 ${ayrisiyor ? "border-amber-300 bg-amber-50" : "border-slate-100 bg-slate-50"}`}>
+              <p className={`text-[9px] font-black uppercase tracking-widest ${ayrisiyor ? "text-amber-700" : "text-slate-500"}`}>
+                {ayrisiyor ? "Çapraz kontrol — iki okuma ayrışıyor" : "Çapraz kontrol"}
+              </p>
+              <p className="text-[11px] text-slate-700 leading-relaxed mt-1">
+                {ayrisiyor ? (
+                  <>BODE <span className="font-black text-blue-900">{q.label}</span> diyor, ama alevlenme yükü GOLD grup E karşılığı. BODE dört ekseni de STABİL dönemde ölçüyor; alevlenme öyküsü hem mortaliteyi hem yatış riskini bağımsız olarak yükseltiyor ve farmakolojik basamağı doğrudan o belirliyor. <span className="font-black">Skora dokunulmadı</span> — değişen şey tedavi basamağı.</>
+                ) : alev.agir ? (
+                  <>Alevlenme yükü yüksek ve BODE de <span className="font-black text-blue-900">{q.label}</span> — iki okuma <span className="font-black">aynı yönü</span> işaret ediyor.</>
+                ) : (
+                  <>Alevlenme yükü düşük; BODE <span className="font-black text-blue-900">{q.label}</span> ile <span className="font-black">iki okuma ayrışmıyor</span>.</>
+                )}
+              </p>
+            </div>
+          ) : null}
+        </div>
+
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
           <div className="flex justify-center border-b border-slate-100 pb-4 mb-4">
             <ToolShare params={sel as Record<string, number>} />
@@ -159,7 +223,7 @@ export default function BODEPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              BODE indeksi yalnızca FEV₁ kullanımına kıyasla KOAH mortalitesini daha iyi öngörür. Akciğer transplantasyonu ve pulmoner rehabilitasyon kararlarında referans alınır. Celli et al., NEJM 2004.
+              BODE indeksi yalnızca FEV₁ kullanımına kıyasla KOAH mortalitesini daha iyi öngörür. Akciğer transplantasyonu ve pulmoner rehabilitasyon kararlarında referans alınır. Dört eksenin dördü de STABİL dönem ölçümüdür: alevlenme öyküsü indekste yer almaz — BODEx ve DOSE tam bu boşluk için türetilmiştir, GOLD farmakolojik basamağı da alevlenme öyküsünden kurulur. Yukarıdaki alevlenme alanı bu yüzden skora katılmaz, ayrıca okunur. Celli et al., NEJM 2004.
             </p>
           </div>
         </div>

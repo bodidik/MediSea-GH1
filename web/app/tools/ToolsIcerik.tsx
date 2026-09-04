@@ -164,7 +164,7 @@ const TOOLS_DATABASE = [
       { slug: "cat-copd", name: "CAT Skoru", desc: "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü" },
       { slug: "mmrc", name: "mMRC Dispne", desc: "Modifiye Medical Research Council dispne ölçeği — Grade 0–4" },
       { slug: "act", name: "ACT", desc: "Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol" },
-      { slug: "bode", name: "BODE İndeksi", desc: "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT" },
+      { slug: "bode", name: "BODE İndeksi", desc: "KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT; alevlenme öyküsü ayrıca okunuyor" },
       { slug: "berlin-ards", name: "Berlin ARDS Kriterleri", desc: "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır" },
       { slug: "ariscat", name: "ARISCAT", desc: "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması" },
       { slug: "bap65", name: "BAP-65", desc: "KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor" },
