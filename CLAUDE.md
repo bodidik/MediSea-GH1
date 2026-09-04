@@ -30618,3 +30618,106 @@ değildir.** Bu araçta aritmetik, bant merdiveni ve yayımlanmış tanım daha
 önce tek tek ölçülmüştü; ölçülmeyen şey duyurunun, türetilmiş tavanın ve
 sonuç şeridinin orada olup olmadığıydı. Bir aracı "doğrulanmış" diye
 kapatırken hangi EKSENİN ölçüldüğünü de yaz — sonraki tur ötekini sorabilsin.
+
+### KALAN 58 ARAÇ SÜRÜLDÜ — 31'i hüküm üretiyor, 27'si sayı basıyor
+
+BODE turu bir kapsam boşluğu bırakmıştı: *"136 aracın 78'inde duyuru var,
+58'inde yok… kalan 58'in kaçının gerçekten hüküm ürettiği YENİDEN ÖLÇÜLMEDİ
+ve 'temiz' DENMİYOR."* Bu tur o 58'in **58'i de sürüldü.**
+
+| kova | araç |
+|---|---|
+| **HÜKÜM ÜRETİYOR** (bant/sınıf etiketi basıyor) | **31** |
+| — bunlardan belgede kayıtlı tasarım kararı | 4 (`asdas` · `rockall` · `spot-urine` · `ogtt`) |
+| — **gerekçesi olmayan gerçek boşluk** | **27** |
+| SAYI/DOZ basıyor (bant yok) | **27** |
+
+#### Hüküm üreten 31 — ölçülen çıktısıyla
+
+`abg` "Basit bozukluk: yüksek anyon açıklı metabolik asidoz" ·
+`anaphylaxis` "Kriter Karşılanmadı" · `asdas` "ORTA AKTİVİTE" ·
+`behcet` "BEHÇET DEĞİL" · `berlin-ards` "ARDS DEĞİL" ·
+`chads-vasc` "Orta-Yüksek risk; OAK önerilir" · `corrected-calcium`
+"Hipokalsemi" · `corrected-sodium` "Normal Sınırlar" · `curb65` "Yüksek
+Risk: Hastaneye yatış" · `dst` "SÜPRESİYON YETERSİZ" · `endocarditis`
+"KESİN ENDOKARDİT" · `fibromiyalji` "TANI KRİTERLERİ KARŞILANMIYOR" ·
+`glim` "Malnütrisyon Tanısı Kondu · EVRE 2" · `gout-acr` "KAPSAM DIŞI" ·
+`has-bled` "Yüksek Kanama Riski" · `hiperkalemi-tedavi` "HAYATİ TEHDİT
+EDEN" · `hscore` "HLH OLASILIĞI > %93" · `isth-dic` "AÇIK DIC ile Uyumlu" ·
+`mascc` "Yüksek risk" · `mmrc` "Grade 4 ÇOK AĞIR" · `news2` "YÜKSEK (Acil
+Müdahale)" · `nrs-2002` "Ön tarama negatif · Ana tarama gerekmiyor" ·
+`ogtt` · `padua` "YÜKSEK RİSK — Profilaksi Önerilir" · `perc` "PERC
+POZİTİF" · `qsofa` "Yüksek Risk" · `rockall` "ÇOK YÜKSEK" · `spot-urine` ·
+`tirads` "TR5 YÜKSEK ŞÜPHELİ" · `wells-dvt` "YÜKSEK RİSK ~%53" ·
+`wells-pe` "YÜKSEK RİSK > %60".
+
+#### Sayı basan 27 — duyurusuz olmaları DOĞRU
+
+Onaltısı infüzyon/doz ailesi (`antikoagulan-geri-dondurme` ·
+`bikarbonat-infuzyon` · `dka-infuzyon` · `fomepizol` · `fosfat-replasman` ·
+`heparin-nomogram` · `infusion` · `kalsiyum-infuzyon` · `lipid-emulsiyon` ·
+`magnezyum-infuzyon` · `nac-infuzyon` · `naloksan-infuzyon` ·
+`potasyum-replasman` · `sedasyon-infuzyon` · `status-epileptikus` ·
+`tromboliz-doz` · `vazoaktif-infuzyon`), kalanı saf hesap
+(`bmr` 1674 kcal · `bsa` 2.12 m² · `calvert` mg · `digoksin-toksisitesi`
+flakon · `meld-na` "SKOR 28" · `nutrition-needs` kcal/protein ·
+`sodium` L · `sofa` "TOPLAM 16" · `steroid-dose` mg · `unit-converter`).
+
+`meld-na` ve `sofa` özellikle kayda değer: ikisi de skor basıyor ama
+**bant etiketi YOK** — mortalite yalnızca statik bir referans satırında
+("0-2: %10, >11: %95"). Yani duyurulacak bir hüküm de yok.
+
+#### ÖLÇÜT ÜÇ KEZ ÇÖPE ÇIKTI — üçü de KAYNAK tarafında
+
+| sürüm | ölçüt | kusuru |
+|---|---|---|
+| v0 | kaynakta `return { label: … }` + BÜYÜK HARFLİ sınıflama dizesi | `curb65` · `news2` · `sofa` **"dize:0"** çıktı — desen kücük/büyük harfe duyarlıydı |
+| v1 | Türkçe katlamalı, JSX metni dahil | `ağır` deseni **"Ağırlık"** içinde eşleşti — 42 araç "hüküm adayı" |
+| v2 | tam kelime sınırı + KELİME düzeyi diff | bant **CETVELİNDE** zaten geçen hüküm kelimesi delta'dan siliniyordu (`wells-pe` "YÜKSEK" cetvelde de var) |
+| **v3** | **ÖGE düzeyi diff** — yeni eklenen ya da kendi metni değişen öge | çalışıyor |
+
+Yani kaynak taraması bu soruyu **cevaplayamadı**. Kayıtlı kural bir kez
+daha işledi: *davranışı ölç, kaynağı ayrıştırma.*
+
+**v3 ÖNCE KONTROLLERLE sınandı, sonra kullanıldı:** cevabı bilinen üç
+pozitif (`curb65` · `wells-pe` · `news2`) ve üç negatif (`unit-converter` ·
+`bsa` · `infusion`) sürüldü; altısını da doğru sınıfladı.
+
+#### "SÜRÜLEMEDİ" ile "HÜKÜM YOK" AYRI TUTULDU — 10 araç ikinci geçiş istedi
+
+Genel sürücü her metin alanına placeholder'daki sayıyı yazıyor; o değer
+aracın makullük kapısından geçmeyince ekranda **istem** kalıyor ve ölçüm
+"hüküm yok" gibi görünüyor. On araçta bu oldu ve ikinci geçişte araca özgü
+değerlerle sürüldü:
+
+| araç | genel sürücü | hedefli sürüş |
+|---|---|---|
+| **`news2`** | "Vitalleri girin" | 28·88·85·130·39 → **"17 · YÜKSEK (Acil Müdahale)"** |
+| **`corrected-sodium`** | "Değerleri girin" | 130·600 → **"138 · Normal Sınırlar"** |
+| **`dst`** | sonuç yok | kortizol 3.5 → **"SÜPRESİYON YETERSİZ"** |
+| **`berlin-ards`** | 1 kontrol sürüldü | 4/4 → **"ARDS DEĞİL"** |
+| **`mascc`** | "6 / 7 yanıtlandı" | 7/7 → **"Yüksek risk"** |
+| `bmr` · `bsa` · `calvert` · `meld-na` · `sofa` | istem/"–" | gerçek değerle **sayı** basıyor |
+
+Beşi hüküm üretiyormuş; genel sürücüye güvenilseydi **beş araç yanlış
+kovaya** yazılacaktı.
+
+#### ⚠ İKİ SÜRÜCÜ KUSURU DAHA
+
+**1) Grup başına tek tıklama yetmiyor.** `berlin-ards` dört sorusunu TEK
+`role="group"` içinde taşıyor; "her grupta son şıkkı seç" sürücüsü yalnızca
+bir soruyu yanıtladı ve araç "Yanıtlanmayan: …" dedi. Çare grubu yok sayıp
+**bütün `aria-pressed` düğmelerine sırayla basmak** — aynı satırdaki sonraki
+tıklama öncekini eziyor, sonuçta her satırın son şıkkı seçili kalıyor.
+
+**2) `<noscript>` gövdesi metne karışıyor.** Scripting AÇIKKEN tarayıcı
+`noscript` içeriğini METİN olarak ayrıştırıyor, yani `textContent` bu
+oturumda araçlara eklenen *"Hesaplama şu an çalışmıyor… değerleri girin"*
+şeridini de topluyor — ve o şerit **"girin"** içerdiği için "sürülemedi"
+bayrağını yanlış ateşliyordu. Metin çıkarıcıdan `NOSCRIPT` de elenmeli;
+belgede kayıtlı `script`/`style` elemesi tek başına yetmiyor.
+
+**Aktarılabilir kural: bir sürücünün "hüküm yok" demesi, aracın hüküm
+üretmediğini göstermez.** Ayırt edici ölçüt ekranda hâlâ bir İSTEM olup
+olmadığı; istem varsa sonuç "SÜRÜLEMEDİ" diye ayrı kovaya yazılmalı. Bu
+turda 58 aracın 10'u o kovaya düştü ve beşi gerçekte hüküm üretiyordu.
