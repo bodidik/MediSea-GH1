@@ -30511,3 +30511,110 @@ günlüğünü okuyup "638/638" gösterdi. Yakalayan şey sayının kendisiydi:
 komutu **tek başına** çalıştırıp `pwd` ile dizini doğrula. Bu depoda
 kayıtlı "boru hattında `$?` `tail`'in kodudur" tuzağının kardeşi —
 burada bozulan çıkış kodu değil, **okunan dosyanın kendisi**.
+
+### DOĞRULANMIŞ BİR ARAÇ, KABUK PARÇALARINDAN İKİSİNİ TAŞIMIYORDU — BODE
+
+BODE bu belgede zaten kayıtlı ve **yayımlanmış tanımıyla birebir doğrulanmış**
+durumdaydı (VKİ · FEV₁ · mMRC · 6DYT basamakları, çeyrekler 0–2/3–4/5–6/7–10,
+dört yıllık sağkalım %80/%67/%57/%18). Yani aritmetik ölçülmüştü; ölçülmeyen
+şey **son turlarda kurulan kabuk standardına uyup uymadığıydı.**
+
+İki parça eksikti ve ikisi de bu oturumda kapatılmış sınıflardan:
+
+| eksik | ölçülen bedel |
+|---|---|
+| `SonucDuyuru` | ekranda skor ve çeyrek basılıyor, ekran okuyucuya **hiçbir şey** duyurulmuyordu |
+| yapışkan sonuç şeridi | 320 px'te belge **3561 px (4.4 ekran)**, 14 kontrol, sonuç paneli **1531 px**'te, görünüm 812 — kullanıcı kontrolleri doldururken skoru göremiyordu |
+
+İkincisi duyurunun **yan kazancı**: `SonucDuyuru` şeridi kendisi taşıyor.
+
+**Tavan da elle yazılıydı** (`max: 10`). `TAVAN` artık şıklardan türüyor ve
+ekrandaki payda ile son çeyreğin üst sınırı ondan geliyor — `nihss` ekranda
+"/ 42" basarken tavanı türetilmiş olduğu için bu kayıt zaten vardı.
+
+**Seçim İNDEKSLE saklanıyor.** Alevlenme alanının puanı yok, yani şekil
+bugün LATENT — ama "aynı puanlı iki şık tek düğme olur" kalıbı bu depoda
+**altı kez** kusur üretti (`apache2` · `gout-acr` · `pap-score` ·
+`nutrition-needs` · `tirads` · `nihss`).
+
+#### İKİNCİ OKUMA — ölçeğin kendi kör noktası
+
+BODE'nin bileşenleri arasında **alevlenme YOK** (Celli, NEJM 2004): dört eksen
+de STABİL dönem ölçümü. Oysa GOLD farmakolojik basamağı doğrudan alevlenme
+öyküsünden kuruyor (ABE gruplaması) ve **BODEx ile DOSE zaten tam bu boşluğu
+kapatmak için türetildi.**
+
+Sonuç ölçülebilir: VKİ'si, spirometrisi, dispnesi ve yürüme mesafesi iyi olan
+hasta **Q1'de olabilir ve aynı yıl iki kez hastaneye yatmış olabilir.**
+
+Aynı disiplin `abg` (Δgap) · `sodium` (desalinasyon) · `rankin` · `ariscat` ·
+`caprini` · `bap65` turlarında ölçüldü: **ayrışırsa SÖYLÜYOR, hükmü
+kurmuyor.** Skor, çeyrek ve duyuru üç durumda da değişmedi.
+
+**Ayrışma metni ÇEYREĞİN KENDİSİNİ adlandırıyor** — `bap65` turunda ölçülen
+kusur (rozet "ORTA RİSK" derken metin "yüksek risk" diyordu) burada
+tekrarlamasın diye; ve koşul indeksten değil **kimlikten** okunuyor, cetvel
+sırası değişirse sessizce yanlış banda kaymasın.
+
+#### Doğrulama — sekizi negatif kontrol
+
+| ölçüt | sonuç |
+|---|---|
+| çeyrek matrisinin TAMAMI (girdi de geri okunarak) | 0→Q1 · 2→Q1 · 3→Q2 · 4→Q2 · 5→Q3 · 6→Q3 · 7→Q4 · 10→Q4 |
+| her okumada vurgulu cetvel hücresi | **tam 1** |
+| payda · tavan | **"/ 10"** türev · 10 ulaşılabilir |
+| ikinci okumanın üç durumu (Q1'de) | **skor 0'da, çeyrek Q1'de KALDI**, duyuru değişmedi |
+| **negatif** — Q2 | ayrışma **var**, metin "Q2 — Orta-Düşük" diyor |
+| **negatif** — Q3 · Q4 | ayrışma **YOK**, "iki okuma aynı yönü işaret ediyor" |
+| **negatif** — düşük alevlenme yükü | "iki okuma ayrışmıyor" |
+| **negatif** — seçim kaldırılınca | kutu kayboluyor, **skor değişmiyor (10)** |
+| **negatif** — boş form | hüküm yok · canlı bölge DOM'da ve **boş** · boş durum kartı |
+| kontrast (1280 · 320) | 88 · 87 öge, **kusur 0**, en düşük **4.84** |
+| yapı | `h1` 1 · `main` 1 · 5 grup — adsız 0 · ad çakışması 0 · sarkan ARIA 0 · çift id 0 |
+| 320 px | yatay kayma 0 · kırpılan 0 · 24 px altı hedef 0 |
+| şerit | panel aşağıdayken **var**, geçilince **yok** · `scroll-padding-bottom` **75 px** · tamamen örtülen odak **0/30** |
+| çeyrek cetveli 320 px'te | **TAŞMIYOR** (236 = 236) → kaydırma ipucu doğru şekilde çizilmiyor |
+| **pozitif kontrol** | tohumlanan 1.73 kontrast **yakalandı** (kaldırılınca 0) · 900 px tohum belgeyi 320 → 900 taşıdı |
+| hub negatif kontrolü | benzersiz **136**, listeleme 140, sayaç "136 araç listeleniyor", bode **bir kez** |
+| kapılar | 14 CI denetimi · lint · typecheck · **build 644/644** |
+
+#### ⚠ KAPSAM DÜZELTMESİ — "sonuç duyurusu sınıfı kapandı" İDDİASI EKSİKTİ
+
+Belgede kayıtlı: *"duyurusu olan araç 65 → 71"* ve kalan dört araç tasarım
+kararı olarak bırakılmıştı (`asdas` · `rockall` · `spot-urine` · `ogtt`).
+
+Ölçüldü: **136 aracın 78'inde duyuru var, 58'inde yok.** BODE bir hüküm
+üretiyordu (çeyrek + dört yıllık sağkalım) ve duyurusu YOKTU — yani o turun
+"hüküm üreten ≥75 araç" ölçütü onu görmemiş.
+
+Kalan 58'in kaçının gerçekten hüküm ürettiği (infüzyon hesaplayıcıları ve
+çevirici **sayı** basıyor, bant değil) bu turda YENİDEN ÖLÇÜLMEDİ ve
+**"temiz" DENMİYOR.**
+
+#### ⚠ İKİ ÖLÇÜM KUSURU — ikisi de ölçümde, üründe değil
+
+**1) Derleme günlüğü BEŞ GÜN ESKİYDİ ve "638/638" okudum.** Komut
+`cd web && rm -f log && … build` biçimindeydi; oturum dizini zaten `web`
+olduğu için `cd` düştü, `&&` kısa devre yaptı ve **`rm -f` de çalışmadı.**
+Yani kayıtlı çarenin ("günlüğü önce sil") kendisi `cd`nin arkasındaydı.
+
+Ele veren şey sayının kendisi oldu: beklenen **644**, okunan 638. `stat` ile
+dosya tarihi doğrulandı (2026-08-30). Çare mutlak yol
+(`cd /c/Users/hucig/Medknowledge/web &&`) ve `rm -f`i atlanamayacak yere
+koymak.
+
+**Aktarılabilir kural: bir temizlik adımını, düşebilecek bir komutun ARKASINA
+zincirleme.** `&&` kısa devre yaptığında yalnızca asıl iş değil, onu
+koruyan adım da atlanıyor — ve rapor bir öncekinin çıktısını okuyor.
+
+**2) Kontrast tarayıcısı zemin yürüyüşüne ÖGENİN EBEVEYNİNDEN başlıyordu**
+ve seçili düğmelerin **KENDİ opak zeminini** atlıyordu: beyaz yazı beyaz
+zeminde, **15 sahte kusur (k≈1.00)**. Belgede kayıtlı kural yakaladı —
+*"1.00 değeri neredeyse her zaman ölçüm artefaktıdır."* Yürüyüş ögenin
+kendisinden başlatılınca **15 → 0**.
+
+**Aktarılabilir kural: doğrulanmış bir ARAÇ, doğrulanmış bir KABUK demek
+değildir.** Bu araçta aritmetik, bant merdiveni ve yayımlanmış tanım daha
+önce tek tek ölçülmüştü; ölçülmeyen şey duyurunun, türetilmiş tavanın ve
+sonuç şeridinin orada olup olmadığıydı. Bir aracı "doğrulanmış" diye
+kapatırken hangi EKSENİN ölçüldüğünü de yaz — sonraki tur ötekini sorabilsin.
