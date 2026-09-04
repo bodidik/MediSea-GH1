@@ -30721,3 +30721,128 @@ belgede kayıtlı `script`/`style` elemesi tek başına yetmiyor.
 üretmediğini göstermez.** Ayırt edici ölçüt ekranda hâlâ bir İSTEM olup
 olmadığı; istem varsa sonuç "SÜRÜLEMEDİ" diye ayrı kovaya yazılmalı. Bu
 turda 58 aracın 10'u o kovaya düştü ve beşi gerçekte hüküm üretiyordu.
+
+### AÇIK SINIFIN KALAN 27'Sİ KAPANDI — ve iki ÖLÇÜM ARTEFAKTI sahte bulgu üretti
+
+Belgede ölçülüp ertelenen iş kalemi: hüküm basan ama duyurmayan **≥44
+araç**. Önceki tur sayımı daralttı (58 aracın 31'i hüküm üretiyor, 4'ü
+kayıtlı gerekçeli istisna) ve geriye **27 gerçek boşluk** kaldı. Bu tur
+kapatıldı: duyurusu olan araç **71 → 98**.
+
+Kalan 27 aracın **27'si de** ölçüldü: hepsi `role="status"` bölgesi
+taşıyor ve **dokunulmamış formda yanlış hüküm basan yok.**
+
+#### Yerleştirme ÜÇ ŞEKLE ayrıldı — tek desen üçünü karşılamıyor
+
+| grup | araç | şekil |
+|---|---|---|
+| **A** | 14 | hüküm ZATEN bir değişken → yalnızca duyuru |
+| **B** | 8 | hüküm satır içi ternary → **TEK `const karar`a hoist** |
+| **C** | 5 | çok durumlu hüküm (`perc` · `dst` · `glim` · `gout-acr` · `nrs-2002`) |
+
+B ve C'de metni duyuruya **kopyalamak** yerine hoist edilmesinin sebebi
+bu depoda tur tur avlanan **"iki gerçeklik"** sınıfı: kopyalansaydı panel
+ile duyuru ileride ayrışabilirdi. Denetim bunu ayrıca sınıyor —
+`const karar` varsa `karar` en az üç yerde geçmeli (tanım + panel +
+duyuru); ikide kalırsa panel onu okumuyor demektir.
+
+**`nrs-2002`de KOŞULLU bir `role="status"` KALDIRILDI.** Ön-negatif kartı
+kendi canlı bölgesini taşıyordu; `SonucDuyuru`nun **koşulsuz** bölgesi
+aynı işi daha doğru yapıyor (`status` içerik değişmeden ÖNCE DOM'da
+olmalı) ve iki bölge **çift duyuru** üretiyordu. Ölçüldü: duyuru sayısı
+her durumda **1**.
+
+#### ⚠ YERLEŞTİRME KAPILARLA DOĞRULANAMAZ — ve bu tur yine kanıtlandı
+
+Kayıtlı ders: önceki 31'lik süpürmede **10 dosya yanlış yamalanmış**,
+`lint`/`typecheck` yalnızca **2'sini** yakalamıştı — kalan 8'i **geçerli
+JSX** üretiyordu.
+
+Bu turda `dst` ve `glim` aynı şekilde düştü ve **ikisi de yamanın kendi
+denetimini geçmişti**:
+
+| araç | kusur |
+|---|---|
+| `dst` | sabit `return (` ile ilk JSX satırı ARASINA düştü — nav'dan önceydi, denetim geçti, derleme kırıldı |
+| `glim` | hedef satır bir **JSX yorumuydu** (`{/* … */}`) ve "JSX açılışı mı" sınamasını geçiyordu |
+
+İkisi de `git checkout` ile geri alındı ve denetime **iki yeni kontrol**
+eklendi: (1) sabit `return (` satırından ÖNCE mi, (2) sonraki öge
+aranırken **JSX yorumu atlanıyor mu**. Yani kusurlar denetimi
+sertleştirdi — sonraki tur için kalıcı koruma.
+
+Bağımsız yerleşim denetimi (yamaların mantığını **KULLANMAZ**, bütün
+ağacı tarar): **136 araç ölçüldü · 105 duyurulu · 0 kusurlu.**
+Pozitif kontrol: `qsofa`nın girintisi kasten 8 → 12 yapıldı, **yakalandı**
+(`girinti nav ile tutmuyor (12 != 8) · panel girintisi tutmuyor`).
+
+#### ⚠ DENETİMİN KENDİ KÖR NOKTASI — şablon dizesinde `$`
+
+Denetim `wells-dvt` ve `wells-pe`yi *"`$` üst düzey const/let değil"*
+diye kusurlu gösterdi. İkisi de sağlamdı: `metin` ifadesi bir şablon
+dizesi (`` `${activeZone.label} risk — …` ``) ve kök tanımlayıcı
+regex'im `[A-Za-z_$][\w$]*` **ilk olarak `$` işaretini** yakalıyordu.
+Tanımlayıcı **HARFLE** başlayacak şekilde daraltıldı (`[A-Za-z_][\w$]*`)
+→ 0 kusur.
+
+**Bir denetim ilk çalıştırmada aday üretiyorsa, önce ölçütü sına** —
+bu turda iki sahte kusur o kuralla elendi.
+
+#### ⚠ İKİ ÖLÇÜM ARTEFAKTI, İKİSİ DE "temiz"/"kusurlu" diye okunabilirdi
+
+**1) Sunucu taraması "27/27 duyuru BOŞ" dedi ve YANLIŞTI.** Grep deseni
+`Sonu&#231;:` (HTML varlığı) arıyordu; React **UTF-8 `ç`** basıyor.
+Tarayıcı ölçümü aynı anda `curb65` için "Sonuç: Düşük Risk…" gösteriyordu
+— iki yöntemin çelişmesi kusuru açığa çıkardı. Doğru desenle sekiz araç
+dokunulmamış formda hüküm duyuruyor.
+
+**2) Aynı tarama `wells-dvt`/`wells-pe` için "PANELDE YOK" dedi ve o da
+YANLIŞTI.** Etiketleri `sed 's/<[^>]*>/ /g'` ile boşluğa çevirmek metnin
+ortasına boşluk sokuyor; tarayıcının `innerText`i onu normalleştiriyor.
+Ölçüldü: **tam eşleşme `true`** ve iki parça da panelde.
+
+Yani tek bir sunucu-tarafı taraması bu turda **hem sahte temiz hem sahte
+kusur** üretti. Kayıtlı kural bir kez daha: **ölçüm şüpheliyse ikinci bir
+yöntemle doğrula** — ve HTML'de Türkçe metin ararken kodlamayı varsayma.
+
+#### Doğrulama — üç grubun üçünden de örnek, tarayıcıda sürülerek
+
+| araç | grup | ölçülen |
+|---|---|---|
+| `curb65` | A | boş → "Düşük Risk…" · 5 kutu → **"Yüksek Risk…"** |
+| `padua` | B | boş → "DÜŞÜK RİSK" · 11 kutu → **"YÜKSEK RİSK"** |
+| `nrs-2002` | C | ön-negatif → "Ana tarama gerekmiyor" · sonuç → **"Nütrisyonel risk var"** |
+| `gout-acr` | C | boş → **sessiz** · KAPSAM DIŞI · MSU POZİTİF · puan 5 → "Karşılanmadı" · **12 → "GUT ARTRİT"** |
+| `berlin-ards` | A | P/F ≤100 → "AĞIR ARDS" · **>300 → "ARDS DEĞİL"** |
+| `wells-dvt` | A | 4 ölçüt → **DÜŞÜK'ten YÜKSEK'e** |
+
+Hepsinde **duyuru sayısı 1** ve duyurulan metin görünür panelde de var.
+Karşılaştırma **döngüsel değil**: `[role="status"]`, `[role="alert"]` ve
+`.sr-only` klondan silindikten sonra arandı (kayıtlı tuzak — duyuruyu
+ölçüme geri vermek kendini doğrular).
+
+`gout-acr`ın puan 5 satırı ayrıca eşiği sınıyor: hüküm ≥8'de değişiyor,
+5'te değişmiyor.
+
+#### Negatif kontroller
+
+| ölçüt | sonuç |
+|---|---|
+| 27 aracın hepsinde `role="status"` | **var** |
+| dokunulmamış formda **yanlış** hüküm | **0** |
+| verdikt basan 8 araç | saf onay kutusu; sekizinde de metin **panelde görünüyor** (kayıtlı "beyan edilmiş varsayım" kovası) |
+| satır sonu — 27 dosya | hepsi **tekdüze** (saf CRLF ya da saf LF), karma **0** |
+| lint · typecheck · build | 0 · 0 · **645/645** |
+
+**Ölçüm tuzağı — geometri koruması ateşledi.** `gout-acr` ölçümünde
+`innerWidth` **0** çıktı ve betik durdu. Kayıtlı koruma
+(`if (!window.innerWidth) throw`) tam bunun için konmuştu; o olmasaydı
+ölçüm makul görünen çöp geometri üretecekti. Açık genişlik verilince
+düzeldi.
+
+**Aktarılabilir kural: bir kalıbı çok dosyaya yayarken, yayılan şeyin
+DOĞRU YERE gittiğini yamanın mantığından BAĞIMSIZ bir denetimle ölç.**
+Kapılar sözdizimini sınıyor, YERLEŞİMİ değil — ve bu depoda mekanik
+süpürmelerin kusuru neredeyse her zaman yerleşimde oluyor. Bu turda 5
+kusurdan (2 yerleşim + 1 ölçüt körlüğü + 2 ölçüm artefaktı) yalnızca
+ikisini kapılar gördü.
