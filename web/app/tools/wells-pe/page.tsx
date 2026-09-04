@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 type Item = { key: string; label: string; pts: number; sub?: string };
 
@@ -102,6 +103,8 @@ export default function WellsPEPage() {
         </div>
 
         {/* GRAFİK SKOR KARTI */}
+        <SonucDuyuru metin={`${activeZone.label} risk — ${activeZone.prob}`} />
+
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6">
 
           {/* Skor + risk özet */}

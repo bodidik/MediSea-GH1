@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const ITEMS = [
   { key: "cancer",    label: "Aktif Kanser",                    pts: 3, sub: "Metastaz veya kemoterapi/radyoterapi ≤6 ay" },
@@ -21,6 +22,7 @@ export default function PaduaPage() {
   const [sel, setSel] = React.useState<Record<string, boolean>>({});
   const score = ITEMS.reduce((s, it) => s + (sel[it.key] ? it.pts : 0), 0);
   const highRisk = score >= 4;
+  const karar = highRisk ? 'YÜKSEK RİSK — Profilaksi Önerilir' : 'DÜŞÜK RİSK — Rutin Takip';
   const params: Record<string, number> = {};
   ITEMS.forEach(it => { if (sel[it.key]) params[it.key] = 1; });
 
@@ -62,6 +64,8 @@ export default function PaduaPage() {
           </div>
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">SKOR</span>
@@ -71,7 +75,7 @@ export default function PaduaPage() {
             ${highRisk ? 'border-rose-200 bg-rose-50' : 'border-emerald-200 bg-emerald-50'}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KARAR</span>
             <p className={`text-2xl font-black italic tracking-tight ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
-              {highRisk ? 'YÜKSEK RİSK — Profilaksi Önerilir' : 'DÜŞÜK RİSK — Rutin Takip'}
+              {karar}
             </p>
             <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {highRisk ? 'Eşik: ≥4 puan · LMWH veya fondaparinuks değerlendir' : 'Eşik: <4 puan · Erken mobilizasyon'}

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const ITEMS = [
   {
@@ -63,6 +64,7 @@ export default function ISTHDICPage() {
     : isNonOvert
     ? { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-700",   badge: "bg-amber-700 text-white" }
     : null;
+  const karar = total === null ? null : isDIC ? "AÇIK DIC ile Uyumlu" : "Açık DIC ile Uyumsuz";
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -117,6 +119,8 @@ export default function ISTHDICPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         {total !== null && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">
@@ -127,7 +131,7 @@ export default function ISTHDICPage() {
               </div>
               <div>
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>
-                  {isDIC ? "AÇIK DIC ile Uyumlu" : "Açık DIC ile Uyumsuz"}
+                  {karar}
                 </span>
                 <p className={`text-sm font-bold mt-1 ${c.text}`}>
                   {isDIC

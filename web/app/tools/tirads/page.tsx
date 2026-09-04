@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 type CatId = "composition" | "echogenicity" | "shape" | "margin" | "foci";
@@ -237,6 +238,8 @@ export default function TiradsPage() {
         </div>
 
         {/* TI-RADS sonuç */}
+        <SonucDuyuru metin={tr ? `${tr.level} — ${tr.label}` : null} />
+
         {tr && total !== null && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${tr.border} ${tr.bg}`}>
             <div className="flex items-center gap-4 mb-4">

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
 import ToolTopNav from "../components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /**
  * MediSea Donanması - Nütrisyon Üssü
@@ -163,6 +164,10 @@ export default function NRS2002Page() {
       : !anaTamam
         ? "eksik-ana"
         : "sonuc";
+  const karar =
+    durum === "on-negatif" ? "Ana tarama gerekmiyor"
+      : durum === "sonuc" ? (toplam! >= 3 ? "Nütrisyonel risk var" : "Risk düşük — haftalık takip")
+        : null;
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -218,13 +223,15 @@ export default function NRS2002Page() {
         </div>
 
         {/* ÖN TARAMA NEGATİFSE ANA TARAMA GÖSTERİLMEZ */}
+        <SonucDuyuru metin={karar} />
+
         {durum === "on-negatif" ? (
-          <div className="bg-emerald-50 border-2 border-emerald-300 rounded-[2rem] p-6" role="status">
+          <div className="bg-emerald-50 border-2 border-emerald-300 rounded-[2rem] p-6">
             <span className="text-[10px] font-black text-emerald-800 uppercase tracking-widest block mb-2">
               Ön tarama negatif
             </span>
             <p className="text-xl font-black text-emerald-900 italic uppercase">
-              Ana tarama gerekmiyor
+              {karar}
             </p>
             <p className="text-[12px] text-emerald-900 leading-relaxed mt-2">
               Dört sorunun dördüne de &ldquo;Hayır&rdquo; yanıtlandı. NRS-2002&apos;de bu
@@ -294,7 +301,7 @@ export default function NRS2002Page() {
                     ${toplam! >= 3 ? "bg-rose-50 border-rose-300 text-rose-800" : "bg-emerald-50 border-emerald-300 text-emerald-800"}`}
                 >
                   <p className="text-xl font-black uppercase italic">
-                    {toplam! >= 3 ? "Nütrisyonel risk var" : "Risk düşük — haftalık takip"}
+                    {karar}
                   </p>
                   <p className="text-[12px] leading-relaxed mt-2">
                     {toplam! >= 3

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // ISG (International Study Group) 1990 Kriterleri: rekürran oral ülser + 2 minor kriter
 // ICBD 2014 puanlama sistemi: ≥ 4 puan = Behçet hastalığı
@@ -28,6 +29,7 @@ export default function BehcetPage() {
 
   const isBehcet = total !== null && total >= 4;
   const isPossible = total !== null && total === 3;
+  const karar = total === null ? null : isBehcet ? "BEHÇET HASTALIĞI" : isPossible ? "ŞÜPHELI (3 puan)" : "BEHÇET DEĞİL";
 
   const c = isBehcet
     ? { bg: "bg-rose-50", border: "border-rose-300", text: "text-rose-700", badge: "bg-rose-700 text-white" }
@@ -88,6 +90,8 @@ export default function BehcetPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         {total !== null ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
             <div className="flex items-center gap-4">
@@ -98,7 +102,7 @@ export default function BehcetPage() {
               </div>
               <div>
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full ${c.badge}`}>
-                  {isBehcet ? "BEHÇET HASTALIĞI" : isPossible ? "ŞÜPHELI (3 puan)" : "BEHÇET DEĞİL"}
+                  {karar}
                 </span>
                 <p className={`text-sm font-bold mt-1 ${c.text}`}>
                   {isBehcet ? "ICBD 2014 kriterlerine göre tanı konulabilir" :

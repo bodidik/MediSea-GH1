@@ -2,6 +2,7 @@
 
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolShare from "@/app/tools/components/ToolShare";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
@@ -320,6 +321,8 @@ export default function HiperkalemiTedaviSayfasi() {
             />
           </div>
         </div>
+
+        <SonucDuyuru metin={a ? a.ad : null} />
 
         {kTamam && a ? (
           <>

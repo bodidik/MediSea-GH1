@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * PERC Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -44,6 +45,7 @@ export default function PERCPage() {
   const allNegative =
     !st.age50 && !st.hr100 && !st.sao2_95 && !st.hemoptysis &&
     !st.estrogen && !st.priorVTE && !st.unilateralLeg && !st.recentSurgeryTrauma;
+  const karar = allNegative ? "PE DIŞLANABİLİR" : "PERC POZİTİF";
 
   const params = {
     age50: st.age50 ? 1 : "", hr100: st.hr100 ? 1 : "", sao2: st.sao2_95 ? 1 : "",
@@ -112,6 +114,8 @@ export default function PERCPage() {
         </div>
 
         {/* SONUÇ PANELİ */}
+        <SonucDuyuru metin={karar} />
+
         <div className={`rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 transition-all duration-500 relative overflow-hidden text-center
           ${allNegative ? 'bg-blue-900 border-amber-400' : 'bg-white border-rose-500 border-2'}
         `}>
@@ -125,14 +129,14 @@ export default function PERCPage() {
 
            {allNegative ? (
              <>
-               <div className="text-3xl font-black text-white italic tracking-tighter uppercase">PE DIŞLANABİLİR</div>
+               <div className="text-3xl font-black text-white italic tracking-tighter uppercase">{karar}</div>
                <p className="mt-3 text-xs font-bold text-amber-400 uppercase tracking-widest max-w-sm">
                  Düşük klinik şüphe + PERC Negatif → Görüntüleme önerilmez.
                </p>
              </>
            ) : (
              <>
-               <div className="text-3xl font-black text-rose-700 italic tracking-tighter uppercase">PERC POZİTİF</div>
+               <div className="text-3xl font-black text-rose-700 italic tracking-tighter uppercase">{karar}</div>
                <p className="mt-3 text-xs font-bold text-slate-500 uppercase tracking-widest max-w-sm">
                  Kriterlerden en az biri pozitif. D-dimer veya BT Anjiyo değerlendirilmeli.
                </p>

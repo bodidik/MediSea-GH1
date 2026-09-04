@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const GRADES = [
   { grade: 0, label: "Efor sırasında değil, yalnızca ağır egzersizde nefes darlığı", tag: "Minimal", color: "emerald" },
@@ -59,6 +60,8 @@ export default function MMRCPage() {
             </button>
           ))}
         </div>
+
+        <SonucDuyuru metin={g ? `${g.tag} — ${g.label}` : null} />
 
         {sel !== null && g && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} flex items-center gap-6`}>

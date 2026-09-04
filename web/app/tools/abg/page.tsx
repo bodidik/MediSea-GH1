@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 import {
   yorumla,
@@ -322,6 +323,8 @@ export default function AbgPage() {
         )}
 
         {/* ── YORUM ─────────────────────────────────────── */}
+        <SonucDuyuru metin={y ? y.ozet : null} />
+
         {!y ? (
           <div className="bg-white rounded-[2rem] border-2 border-dashed border-slate-200 p-8 text-center">
             <p className="text-sm font-bold text-slate-600" role="status">

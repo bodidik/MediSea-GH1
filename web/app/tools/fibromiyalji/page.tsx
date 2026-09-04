@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const WPI_AREAS = [
   "Çene sol", "Çene sağ",
@@ -56,6 +57,7 @@ export default function FibromiyaljiPage() {
     (wpiScore >= 4 && wpiScore <= 6 && ssScore >= 9) ||
     (wpiScore >= 0 && wpiScore <= 3 && ssScore >= 11)
   ) && Object.keys(sev).length === SS_ITEMS.length;
+  const karar = Object.keys(sev).length === SS_ITEMS.length ? (diagnosed ? "FİBROMİYALJİ TANISI KARŞILANIYOR" : "TANI KRİTERLERİ KARŞILANMIYOR") : null;
 
   const hadDuration = true; // assumed — user should confirm
 
@@ -151,11 +153,13 @@ export default function FibromiyaljiPage() {
           </div>
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         {Object.keys(sev).length === SS_ITEMS.length && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${diagnosed ? 'bg-rose-50 border-rose-200' : 'bg-emerald-50 border-emerald-200'}`}>
             <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">ACR 2016 KRİTERLERİ</div>
             <p className={`text-2xl font-black italic tracking-tight ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
-              {diagnosed ? "FİBROMİYALJİ TANISI KARŞILANIYOR" : "TANI KRİTERLERİ KARŞILANMIYOR"}
+              {karar}
             </p>
             <p className={`text-sm font-bold mt-1 ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
               {diagnosed

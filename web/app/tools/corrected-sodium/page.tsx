@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { correctedSodium, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * Hiperglisemide Düzeltilmiş Sodyum Gündüz Modu (Sakin Deniz)
@@ -24,6 +25,7 @@ export default function CorrectedSodiumPage() {
    * negatifte Na −6.7 + aynı etiket.
    */
   const makul = naNum >= 90 && naNum <= 190 && glucoseNum >= 20 && glucoseNum <= 2000;
+  const karar = !makul ? null : result > 145 ? "Düzeltilmiş Hipernatremi" : result < 135 ? "Düzeltilmiş Hiponatremi" : "Normal Sınırlar";
 
   const delta = useMemo(() => Math.round((result - naNum) * 10) / 10, [result, naNum]);
 
@@ -68,6 +70,8 @@ export default function CorrectedSodiumPage() {
         </div>
 
         {/* SONUÇ PANELİ */}
+        <SonucDuyuru metin={karar} />
+
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black">Na</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">DÜZELTİLMİŞ SODYUM</span>
@@ -85,7 +89,7 @@ export default function CorrectedSodiumPage() {
              result < 135 ? 'bg-amber-50 text-amber-700' :
              'bg-emerald-50 text-emerald-700'
            }`}>
-             {!makul ? "Değerleri girin" : result > 145 ? "Düzeltilmiş Hipernatremi" : result < 135 ? "Düzeltilmiş Hiponatremi" : "Normal Sınırlar"}
+             {karar ?? "Değerleri girin"}
            </div>
         </div>
 

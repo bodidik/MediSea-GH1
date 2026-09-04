@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // NIAID/FAAN 2006 - herhangi bir kriter karşılanırsa anafilaksi
 const CRITERIA = [
@@ -57,6 +58,7 @@ export default function AnaphylaxisPage() {
   const isAnaphylaxis = Object.values(sel).some(v => v === true);
   const kesinYok = Object.values(sel).every(v => v === false);
   const hukum: "var" | "yok" | null = isAnaphylaxis ? "var" : kesinYok ? "yok" : null;
+  const karar = hukum === null ? null : hukum === "var" ? "ANAFİLAKSİ TANILANDIRILDI" : "Kriter Karşılanmadı";
   const eksikKriterler = Object.entries(sel)
     .filter(([, v]) => v === null)
     .map(([k]) => k.replace("c", "Kriter "));
@@ -115,6 +117,8 @@ export default function AnaphylaxisPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         {hukum !== null ? (
           hukum === "var" ? (
             <div className="p-6 rounded-[2rem] border-2 border-dashed border-rose-400 bg-rose-50 space-y-3">
@@ -124,7 +128,7 @@ export default function AnaphylaxisPage() {
                   <span className="text-[9px] font-black text-white uppercase">ANAFİLAKSİ</span>
                 </div>
                 <div>
-                  <span className="text-[9px] font-black px-3 py-1 rounded-full bg-rose-700 text-white">ANAFİLAKSİ TANILANDIRILDI</span>
+                  <span className="text-[9px] font-black px-3 py-1 rounded-full bg-rose-700 text-white">{karar}</span>
                   <div className="mt-2 space-y-1">
                     {["Epinefrin IM — uyluk dış yüzü, 0.01 mg/kg (maks. 0.5 mg)", "Supin pozisyon, bacaklar elevasyona", "O₂ %100, IV erişim", "Antihistaminik + steroid (epinefrinin yerine geçmez)", "En az 4–6 saat gözlem"].map(t => (
                       <div key={t} className="flex items-start gap-2 text-[9px] text-rose-900 font-bold">
@@ -142,7 +146,7 @@ export default function AnaphylaxisPage() {
                 <span className="text-[8px] font-black text-white uppercase mt-1">Düşük</span>
               </div>
               <div>
-                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-emerald-700 text-white">Kriter Karşılanmadı</span>
+                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-emerald-700 text-white">{karar}</span>
                 <p className="text-sm font-bold text-emerald-700 mt-1">Mevcut bulgular anafilaksi tanı kriterlerini karşılamıyor. Alternatif tanıları değerlendirin.</p>
               </div>
             </div>

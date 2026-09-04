@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { correctedCalciumMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * Düzeltilmiş Kalsiyum (Payne Formülü) Gündüz Modu
@@ -33,6 +34,7 @@ export default function CorrectedCalciumPage() {
    * bir değer laboratuvardan gelmiş olamaz.
    */
   const makul = caNum >= 1 && caNum <= 25 && albNum >= 0.5 && albNum <= 8;
+  const karar = !makul ? null : result > 10.5 ? "Hiperkalsemi" : result < 8.5 ? "Hipokalsemi" : "Normal Sınırlar";
 
 
   const shareParams = { ca: caNum, alb: albNum };
@@ -76,6 +78,8 @@ export default function CorrectedCalciumPage() {
         </div>
 
         {/* SONUÇ PANELİ */}
+        <SonucDuyuru metin={karar} />
+
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black">Ca</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">HESAPLANAN DÜZELTİLMİŞ DEĞER</span>
@@ -90,7 +94,7 @@ export default function CorrectedCalciumPage() {
              result < 8.5 ? 'bg-amber-50 text-amber-700' : 
              'bg-emerald-50 text-emerald-700'
            }`}>
-             {!makul ? "Değerleri girin" : result > 10.5 ? "Hiperkalsemi" : result < 8.5 ? "Hipokalsemi" : "Normal Sınırlar"}
+             {karar ?? "Değerleri girin"}
            </div>
         </div>
 

@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 const PROTOCOLS = [
@@ -106,6 +107,7 @@ export default function DstPage() {
   const suppressed = hasResult && (bazalGerekli
     ? effectiveVal >= proto.cutoff      // yüzde süpresyon: YÜKSEK = baskılanmış
     : effectiveVal < proto.cutoff);     // kortizol: DÜŞÜK = baskılanmış
+  const karar = hasResult ? (suppressed ? "SÜPRESİYON YETERLİ" : "SÜPRESİYON YETERSİZ") : null;
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -185,6 +187,8 @@ export default function DstPage() {
         </div>
 
         {/* Sonuç */}
+        <SonucDuyuru metin={karar} />
+
         {hasResult && (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed transition-all
             ${suppressed ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
@@ -192,7 +196,7 @@ export default function DstPage() {
               SONUÇ — Eşik: {proto.id === "hddst" ? `%${proto.cutoff}` : `${proto.cutoff} ${proto.unit}`}
             </div>
             <p className={`text-xl font-black italic tracking-tight ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
-              {suppressed ? "✓ SÜPRESİYON YETERLİ" : "✗ SÜPRESİYON YETERSİZ"}
+              {suppressed ? "✓" : "✗"} {karar}
             </p>
             <p className={`text-sm font-bold mt-2 leading-relaxed ${suppressed ? 'text-emerald-700' : 'text-rose-700'}`}>
               {suppressed ? proto.low : proto.high}

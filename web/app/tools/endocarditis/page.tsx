@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * Enfektif Endokardit (Duke Kriterleri) Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -141,6 +142,8 @@ export default function EndocarditisToolPage() {
         </div>
 
         {/* ANALİZ SONUCU: AKADEMİK PANEL */}
+        <SonucDuyuru metin={interp} />
+
         <div className={`rounded-[2rem] border border-blue-900/10 p-8 shadow-sm relative overflow-hidden bg-white`}>
           <div aria-hidden="true" className="absolute top-0 right-0 p-4 opacity-10">
             <span className="text-8xl">🩺</span>

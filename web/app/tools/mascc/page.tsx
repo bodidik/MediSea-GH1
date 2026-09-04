@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /**
  * MASCC Risk İndeksi — febril nötropenide komplikasyon riski.
@@ -125,6 +126,7 @@ export default function MasccPage() {
     ? yuk! + OGELER.reduce((t, o) => t + (cevaplar[o.id] === "evet" ? o.puan : 0), 0)
     : null;
   const dusukRisk = skor !== null && skor >= ESIK;
+  const karar = tamam ? (dusukRisk ? "Düşük risk" : "Yüksek risk") : null;
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -207,6 +209,8 @@ export default function MasccPage() {
           ))}
         </div>
 
+        <SonucDuyuru metin={karar} />
+
         {tamam ? (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
@@ -224,7 +228,7 @@ export default function MasccPage() {
               <p
                 className={`text-2xl font-black italic tracking-tight ${dusukRisk ? "text-emerald-800" : "text-rose-800"}`}
               >
-                {dusukRisk ? "Düşük risk" : "Yüksek risk"}
+                {karar}
               </p>
               <p className={`text-sm font-bold mt-1 ${dusukRisk ? "text-emerald-800" : "text-rose-800"}`}>
                 {dusukRisk

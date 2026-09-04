@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
 import ToolTopNav from "../components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 /** * MediSea Donanması - Nütrisyon Üssü
  * GLIM - Global Leadership Initiative on Malnutrition
@@ -41,6 +42,10 @@ export default function GLIMPage() {
   const kesinYok = (fenotipTumu && !hasPhenotype) || (etiyolojiTumu && !hasEtiology);
   const hukum: "kondu" | "karsilanmadi" | null =
     isDiagnosed ? "kondu" : kesinYok ? "karsilanmadi" : null;
+  const karar =
+    hukum === "kondu" ? "Malnütrisyon Tanısı Kondu"
+      : hukum === "karsilanmadi" ? "Tanı Kriterleri Karşılanmadı"
+        : null;
 
   const eksikAlanlar = [
     phenotype.weight === null && "kilo kaybı",
@@ -144,13 +149,13 @@ export default function GLIMPage() {
         </div>
 
         {/* TANILAR VE ŞİDDET SONUCU */}
+        <SonucDuyuru metin={karar} />
+
         <div className={`rounded-[2.5rem] p-8 border-4 transition-all duration-500 ${isDiagnosed ? 'bg-blue-900 border-amber-400 shadow-2xl' : 'bg-slate-200 border-slate-300'}`}>
           <div className="text-center space-y-2">
             <span className={`text-[10px] font-black uppercase tracking-[0.4em] ${isDiagnosed ? "text-amber-400" : "text-amber-800"}`}>GLIM TANISAL SONUÇ</span>
             <h2 className={`text-3xl font-black italic uppercase break-words hyphens-auto ${isDiagnosed ? 'text-white' : 'text-slate-400'}`}>
-              {hukum === "kondu" ? "Malnütrisyon Tanısı Kondu"
-                : hukum === "karsilanmadi" ? "Tanı Kriterleri Karşılanmadı"
-                : "Değerlendirilemedi"}
+              {karar ?? "Değerlendirilemedi"}
             </h2>
             {hukum === null && (
               <p role="alert" className="text-[11px] font-bold text-slate-500 max-w-md mx-auto">

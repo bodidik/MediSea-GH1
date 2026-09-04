@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 // ACR/EULAR 2015 Gout Classification — entry criterion + domains
 // Entry criterion: ≥ 1 atak epizodu ile periferik eklem/bursa tutulumu
@@ -158,6 +159,11 @@ export default function GoutACRPage() {
    */
   const isExcluded = entry === false;
   const showDomains = entry === true && msu !== true;
+  const karar = !(isExcluded || (entry !== null && msu !== null)) ? null
+    : msu === true ? "YETERLI TANI — MSU POZİTİF"
+    : entry === false ? "KAPSAM DIŞI"
+    : domainTotal >= 8 ? "GUT ARTRİT — Kriterleri Karşılıyor"
+    : "Kriter Karşılanmadı";
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -236,6 +242,8 @@ export default function GoutACRPage() {
           </div>
         )}
 
+        <SonucDuyuru metin={karar} />
+
         {isExcluded || (entry !== null && msu !== null) ? (
           msu === true ? (
             <div className="p-6 rounded-[2rem] border-2 border-dashed border-rose-400 bg-rose-50 flex items-center gap-4">
@@ -244,7 +252,7 @@ export default function GoutACRPage() {
                 <span className="text-[8px] font-black text-white uppercase mt-1">GUT ARTRİT</span>
               </div>
               <div>
-                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-rose-700 text-white">YETERLI TANI — MSU POZİTİF</span>
+                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-rose-700 text-white">{karar}</span>
                 <p className="text-sm font-bold text-rose-700 mt-1">Sinoviyal sıvıda MSU kristali = Gut artrit tanısı kesindir</p>
               </div>
             </div>
@@ -252,7 +260,7 @@ export default function GoutACRPage() {
             <div className="p-6 rounded-[2rem] border-2 border-dashed border-slate-200 bg-slate-50 flex items-center gap-4">
               <div className="text-4xl">❌</div>
               <div>
-                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-slate-600 text-white">KAPSAM DIŞI</span>
+                <span className="text-[9px] font-black px-3 py-1 rounded-full bg-slate-600 text-white">{karar}</span>
                 <p className="text-sm font-bold text-slate-600 mt-1">Periferik eklem atağı yok — gut sınıflandırma kriterleri uygulanamaz</p>
               </div>
             </div>
@@ -266,7 +274,7 @@ export default function GoutACRPage() {
                 </div>
                 <div>
                   <span className={`text-[9px] font-black px-3 py-1 rounded-full ${domainTotal >= 8 ? "bg-rose-700 text-white" : "bg-slate-500 text-white"}`}>
-                    {domainTotal >= 8 ? "GUT ARTRİT — Kriterleri Karşılıyor" : "Kriter Karşılanmadı"}
+                    {karar}
                   </span>
                   <p className={`text-sm font-bold mt-1 ${domainTotal >= 8 ? "text-rose-700" : "text-slate-600"}`}>
                     {domainTotal >= 8 ? "ACR/EULAR 2015 kriterlerine göre gut artrit sınıflandırması yapılmıştır" : `${8 - domainTotal} puan daha gerekiyor`}

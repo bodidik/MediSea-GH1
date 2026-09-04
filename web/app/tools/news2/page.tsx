@@ -3,6 +3,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * NEWS2 Gündüz Modu (Sakin Deniz) Versiyonu
@@ -186,6 +187,8 @@ export default function NEWS2Page() {
         </div>
 
         {/* SONUÇ PANELİ */}
+        <SonucDuyuru metin={makul ? risk.label : null} />
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-8 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>

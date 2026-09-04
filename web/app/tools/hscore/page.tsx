@@ -2,6 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 
 const ITEMS: { id: string; label: string; detail: string; options: { label: string; pts: number }[] }[] = [
   {
@@ -202,6 +203,8 @@ export default function HScorePage() {
             </div>
           ))}
         </div>
+
+        <SonucDuyuru metin={prob ? `HLH olasılığı ${prob.pct}` : null} />
 
         {total !== null && prob && c ? (
           <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
