@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "antikoagulasyon-stratejileri",
+    "branch": "hematoloji",
+    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+    "altbaslik": "Board düzeyinde zorlayıcı klinik vakalar: kanser ilişkili tromboz + trombositopeni, kısa bağırsak sendromunda DOAC/VKA seçimi, antikoagülan ilişkili anormal uterus kanaması, Faktör Xa inhibitörü kanamasında reversiyon (andeksanet alfanın geri çekilmesi) ve dabigatran perioperatif yönetimi",
+    "rozetler": [
+      "SINAV SPOTU",
+      "YENİ"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "istatistikler": {
+    "soru": 5,
+    "flashcard": 0,
+    "inci": 0
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        {
+          "metin": "Bu soru seti, hematoloji ve iç hastalıkları Board sınavlarında karşılaşılabilecek beş ileri düzey klinik vaka üzerine kuruludur: kemoterapi ilişkili trombositopenisi olan kanser hastasında akut VTE yönetimi (trombosit sayısına göre ayarlanmış LMWH protokolü), stabil kısa bağırsak sendromu zemininde atriyal fibrilasyonda antikoagülan seçimi (ESPEN 2026 konsensüsü), reprodüktif yaştaki kadınlarda DOAC ilişkili anormal uterus kanaması riskinin ajanlar arası farkı, andeksanet alfanın Aralık 2025'te pazardan çekilmesi sonrası Faktör Xa inhibitörü kanamasında 4F-PCC ile reversiyon ve orta derecede böbrek yetmezliği olan hastada yüksek kanama riskli cerrahi öncesi dabigatran kesilme süresi."
+        }
+      ]
+    }
+  ]
+}

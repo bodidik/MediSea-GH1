@@ -1,0 +1,128 @@
+{
+  "id": "quiz-hem-antikoagulasyon-001",
+  "baslik": "Hematoloji ve İç Hastalıkları Board — Antikoagülasyon Stratejileri Vaka Testi",
+  "branch": "hematoloji",
+  "topic": "antikoagulasyon-stratejileri",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "54 yaşında, Evre IV Küçük Hücreli Dışı Akciğer Kanseri tanısıyla kemoterapi alan erkek hasta, sol bacakta şişlik ve ağrı şikayetiyle başvuruyor. Çift yönlü Doppler ultrasonografide sol femoral vende akut obstrüktif proksimal derin ven trombozu (DVT) saptanıyor. Hastanın yapılan tam kan sayımında trombosit sayısı 35.000/µL olarak ölçülüyor. Serum kreatinin düzeyi 0.9 mg/dL (normal) ve başka bir aktif kanama odağı saptanmıyor.\n\nBu hastada akut venöz tromboemboli (VTE) tedavisi için en uygun antikoagülasyon stratejisi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Trombosit sayısı < 50.000/µL olduğu için antikoagülan tedavi kontrendikedir; hemen geçici vena kava inferior (IVC) filtresi yerleştirilmelidir.",
+        "B": "Hastaya hemen terapötik dozda enoksaparin (1 mg/kg günde iki kez) başlanmalı ve trombosit transfüzyonları ile trombosit düzeyi sürekli > 100.000/µL üzerinde tutulmalıdır.",
+        "C": "Enoksaparin dozu %50 oranında azaltılarak (0.5 mg/kg günde iki kez) başlanmalı ve trombosit sayısı yakın takip edilmelidir.",
+        "D": "Rivaroksaban 15 mg günde iki kez (loading dozu) başlanmalıdır, çünkü DOAC'lar trombositopenik kanser hastalarında en güvenli seçenektir.",
+        "E": "Trombosit sayısı 25.000-50.000/µL aralığındaki hastalarda doz kararı trombositopeniden değil yalnızca böbrek fonksiyonundan etkilenir; bu hastada kreatinin normal olduğu için tam doz enoksaparin (1 mg/kg BID) güvenle başlanabilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Trombosit 25.000-50.000/µL arasında olduğunda LMWH dozu %50 azaltılarak (yarı doza düşürülerek) tedaviye devam edilir ve trombosit sayısı yakın takip edilir.",
+      "aciklama_detay": "Kanser hastalarında akut venöz tromboemboli (VTE) tedavisinde, eşlik eden trombositopeni varlığında trombosit sayısına göre ayarlanmış LMWH algoritması uygulanır.\n\nTrombosit sayısı 25.000 - 50.000/µL arasında olduğunda, LMWH (örn. enoksaparin) dozu %50 oranında (yarı doza) azaltılarak tedaviye güvenle devam edilir (0.5 mg/kg günde iki kez). Bu hastadaki trombosit değeri (35.000/µL) tam olarak bu aralıktadır.\n\nTrombosit sayısı < 25.000/µL altına inmediği sürece antikoagülan tedavi tamamen kesilmez (hold edilmez). Trombosit sayısı < 25.000/µL ise geçici olarak hold edilir.\n\nEğer terapötik antikoagülasyonu sürdürmek için trombosit desteği gerekiyorsa, hedef trombosit düzeyi 50.000/µL olmalıdır. 100.000/µL gibi yüksek hedefler gereksiz transfüzyon yüküne yol açar.\n\nAkut DVT varlığında IVC filtresi yalnızca antikoagülasyonun kesinlikle kontrendike olduğu (aktif majör kanama veya trombosit sayısı <25.000/µL olup transfüzyona yanıt vermeyen durumlar) durumlarda düşünülmelidir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Trombosit <50.000/µL antikoagülasyonu kontrendike kılmaz; doz azaltılarak tedaviye devam edilir. IVC filtresi yalnızca antikoagülasyonun kesinlikle kontrendike olduğu durumlarda düşünülür.",
+        "B": "Yanlış — Tam doz enoksaparin bu trombosit aralığında (25.000-50.000/µL) uygun değildir; ayrıca hedef trombosit düzeyi 100.000/µL değil 50.000/µL'dir, gereksiz transfüzyon yükü oluşturur.",
+        "C": "Doğru — Trombosit 25.000-50.000/µL aralığında; LMWH dozu %50 azaltılarak (0.5 mg/kg BID) devam edilir ve trombosit yakın takip edilir.",
+        "D": "Yanlış — DOAC'lar trombositopenik kanser hastalarında ilk tercih değildir; bu senaryoda kanıtlanmış strateji trombosit sayısına göre ayarlanmış LMWH protokolüdür.",
+        "E": "Yanlış — Trombosit sayısına göre ayarlanmış LMWH protokolü tam olarak trombositopeni DÜZEYİNE göre dozu belirler (kreatinin bu kararla ilgisizdir); trombosit 25.000-50.000/µL'de tam doz değil yarı doz kullanılır."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "kanser ilişkili tromboz", "trombositopeni", "enoksaparin"],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    },
+    {
+      "id": "s2",
+      "metin": "62 yaşında erkek hasta, akut superior mezenterik arter embolisine bağlı masif intestinal rezeksiyon öyküsüne sahiptir. Hastanın geriye kalan ince bağırsak uzunluğu yaklaşık 120 cm olup, stoması yoktur ve beslenmesini stabil şekilde oral yolla sürdürmektedir (\"stable short bowel syndrome\"). Hastada paroksismal atriyal fibrilasyon (AF) gelişiyor ve CHA2DS2-VASc skoru 4 (Yaş, Hipertansiyon, Diabetes Mellitus, Geçirilmiş İnme) olarak hesaplanıyor. Uzun dönem oral antikoagülasyon planlanıyor.\n\nEuropean Society for Clinical Nutrition and Metabolism (ESPEN) 2026 konsensüs raporu doğrultusunda, bu hastanın antikoagülasyon yönetimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Dabigatran eteksilat, diğer DOAC'lara göre daha stabil bir emilim profiline sahip olduğu için bu hastada ilk tercih edilmesi gereken oral antikoagülandır.",
+        "B": "Oral Vitamin K Antagonistleri (VKA - Warfarin), stabil kısa bağırsak sendromu olan hastalarda kullanılabilir ve INR monitorizasyonu sayesinde emilim takibi yapılabildiği için yüksek konsensüs onayı almıştır.",
+        "C": "DOAC'ların tamamı kısa bağırsakta tamamen ve sorunsuz absorbe edildiğinden, herhangi bir plazma ilaç düzeyi monitorizasyonu veya takibine gerek yoktur.",
+        "D": "Hastada intestinal emilim alanı azaldığı için standart DOAC dozlarının iki katı (örn. Apiksaban 10 mg BID) başlanması zorunludur.",
+        "E": "SBS varlığında oral antikoagülasyonun tamamı (VKA dahil) kontrendikedir; stabil hastalarda dahi tek güvenli seçenek parenteral LMWH'dir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Warfarin (VKA), gastrointestinal sistem boyunca mükemmel ve stabil bir emilim profiline sahiptir ve etkinliği INR takibiyle kolayca izlenebildiğinden, stabil SBS hastalarında yüksek konsensüs onayı (%94.7) ile önerilir.",
+      "aciklama_detay": "Kısa Bağırsak Sendromu (SBS) olan hastalarda antikoagülan ilaçların emilimi, anatomik rezeksiyonun genişliğine ve bağırsak transit süresine bağlı olarak ciddi değişkenlik gösterir.\n\nWarfarin (VKA), gastrointestinal sistem boyunca mükemmel ve stabil bir emilim profiline sahiptir. En önemlisi, ilacın biyolojik etkinliği INR takibi ile çok kolay ve güvenilir bir şekilde izlenebildiğinden, stabil SBS hastalarında antikoagülasyon gerektiğinde yüksek konsensüs onayı (%94.7 agreement) ile önerilmektedir.\n\nDabigatran eteksilat, çok düşük biyoyararlanımı (~%6.5), emilim için asidik çevre gereksinimi, büyük kapsül yapısı ve SBS hastalarında gösterilen suboptimal terapötik seviyeleri nedeniyle SBS hastalarında kesinlikle önerilmeyen oral ajandır.\n\nDOAC'lar stabil SBS'de kullanılabilse de emilimleri hastadan hastaya değişebilir. Bu nedenle ESPEN kılavuzu, DOAC başlanan SBS hastalarında en az bir kez kararlı durum (steady-state) pik plazma ilaç düzeyinin ölçülmesini (LC-MS/MS veya calibrated anti-Xa kromojenik testleri ile) önermektedir. Rutin olarak 'sorunsuz absorbe edilir' demek yanlıştır ve yalnızca orta derecede uzlaşı (%73.7 agreement) almıştır.\n\nDoz ayarlaması ampirik olarak iki katına çıkarılarak yapılmaz; standart doz başlanıp plazma düzeyi takibine göre klinik konsültasyon istenir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Dabigatran, çok düşük biyoyararlanımı, asidik çevre gereksinimi ve SBS hastalarında gösterilen suboptimal terapötik seviyeleri nedeniyle SBS hastalarında kesinlikle önerilmeyen oral ajandır.",
+        "B": "Doğru — Warfarin stabil emilim profiline sahiptir ve INR takibiyle emilim güvenilir şekilde izlenebildiğinden yüksek konsensüs onayı almıştır.",
+        "C": "Yanlış — DOAC'ların emilimi hastadan hastaya değişebilir; ESPEN kılavuzu en az bir kez steady-state pik plazma düzeyi ölçümünü önerir, rutin monitorizasyon gereksizliği yanlıştır.",
+        "D": "Yanlış — Doz ampirik olarak iki katına çıkarılmaz; standart doz başlanıp plazma düzeyi takibine göre karar verilir.",
+        "E": "Yanlış — ESPEN konsensüsü stabil SBS hastalarında oral tedaviyi (VKA veya izlemli DOAC) kullanılabilir kabul eder; oral antikoagülasyonun tümden kontrendike olduğu ve tek seçeneğin parenteral LMWH olduğu iddiası bu esnekliği göz ardı eder."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "kısa bağırsak sendromu", "warfarin", "ESPEN"],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    },
+    {
+      "id": "s3",
+      "metin": "32 yaşında kadın hasta, akut pulmoner emboli tanısıyla yatırılarak tedavi ediliyor. Taburculuk planlanırken idame antikoagülan tedavi seçimi tartışılıyor. Hastanın jinekolojik öyküsünde hafif düzeyde menorraji bulunuyor.\n\nAntikoagülan ilişkili Anormal Uterus Kanaması (AUB/HMB) üzerine yapılan 2026 tarihli güncel sistematik inceleme ve meta-analiz verilerine göre, bu hastanın yönetimi hakkında sınav düzeyinde hangi bilgi kesinlikle doğrudur?",
+      "secenekler": {
+        "A": "DOAC'lar, geleneksel LMWH/VKA tedavisi ile karşılaştırıldığında ISTH (Uluslararası Tromboz ve Hemostaz Derneği) kriterlerine göre tanımlanan \"Major Uterus Kanaması\" riskini anlamlı ölçüde artırmaktadır.",
+        "B": "Rivaroksaban kullanımı, LMWH/VKA grubuyla karşılaştırıldığında anormal uterus kanaması (AUB) riskini yaklaşık 2.7 kat artırarak en yüksek riski taşır; buna karşılık Dabigatran en düşük HMB riskine sahip oral ajan olarak öne çıkmaktadır.",
+        "C": "Apiksaban tedavisi alan kadınlarda AUB riski rivaroksabana kıyasla 2 kat daha yüksektir.",
+        "D": "Antikoagülan tedaviye başlamadan önce hastanın bazal anemi ve demir depolarının (ferritin) rutin olarak değerlendirilmesi, klinik çalışmalarda ve gerçek yaşam verilerinde mükemmel şekilde standardize edilmiştir ve takibe gerek yoktur.",
+        "E": "Tüm DOAC ajanları (rivaroksaban, dabigatran, apiksaban) AUB/HMB riski açısından birbirinin aynısıdır, ajan seçimi bu spesifik yan etki açısından fark yaratmaz."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Rivaroksaban, LMWH/VKA grubuna kıyasla AUB riskini 2.7 kat artırarak en yüksek riski taşır; Dabigatran en düşük HMB riskine sahip oral ajan olarak öne çıkar; Apiksaban da rivaroksabana kıyasla daha güvenli bir kanama profiline sahiptir.",
+      "aciklama_detay": "Reprodüktif yaştaki kadınlarda VTE tedavisi sırasında Anormal Uterus Kanaması (AUB) yönetimi son derece önemlidir.\n\n2026 yılında yayınlanan geniş kapsamlı meta-analize göre, DOAC'lar geleneksel VKA/LMWH grubuna kıyasla ISTH tanımlı major kanama riskini anlamlı şekilde ARTIRMAZKEN, tanımlanmamış / non-ISTH hafif adet kanamalarını (unspecified AUB) 2.68 kat artırmaktadır.\n\nDOAC'lar arasında AUB riski açısından ciddi heterojenlik vardır. Rivaroksaban, LMWH/VKA grubuna kıyasla AUB riskini 2.7 kat artırarak en yüksek riski taşır. Buna karşılık, doğrudan trombin inhibitörü olan Dabigatran en düşük ağır adet kanaması (HMB) riskine sahip oral ajan olarak saptanmıştır. Apiksaban da rivaroksabana kıyasla daha güvenli bir kanama profiline sahiptir (risk %31 daha düşüktür).\n\nKlinik çalışmalarda en büyük eksikliklerden biri, hastaların tedavi öncesi (bazal) anemi ve demir depolarının (ferritin) değerlendirilmesinin son derece yetersiz ve standart dışı olmasıdır; bu durum tedavi sırasında gelişen aneminin takibini zorlaştırmaktadır.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — DOAC'lar ISTH tanımlı major kanama riskini anlamlı şekilde artırmaz; artan risk tanımlanmamış/non-ISTH hafif adet kanamalarındadır (2.68 kat).",
+        "B": "Doğru — Rivaroksaban AUB riskini 2.7 kat artırarak en yüksek riski taşır; Dabigatran en düşük HMB riskine sahiptir; Apiksaban rivaroksabana kıyasla daha güvenlidir.",
+        "C": "Yanlış — Apiksaban rivaroksabana kıyasla DAHA GÜVENLİ (risk %31 daha düşük) bir profile sahiptir, daha yüksek değil.",
+        "D": "Yanlış — Klinik çalışmalardaki en büyük eksikliklerden biri tam olarak budur: bazal anemi/ferritin değerlendirmesi son derece yetersiz ve standart dışıdır, mükemmel standardize edilmiş değildir.",
+        "E": "Yanlış — Kanonik metin DOAC'lar ARASINDA (rivaroksaban, dabigatran, apiksaban) belirgin heterojenlik tanımlar; SBS ile ilgisi olmayan bu vakada 'tüm DOAC'lar eşit derecede güvenli' iddiası mevcut ajan farklarını göz ardı eder."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "anormal uterus kanaması", "rivaroksaban", "dabigatran"],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    },
+    {
+      "id": "s4",
+      "metin": "72 yaşında, soliter böbreği olan (Kreatinin Klerensi: 35 mL/dk) erkek hasta, non-valvular atriyal fibrilasyon nedeniyle Apiksaban 5 mg günde iki kez kullanmaktadır. Hasta acil servise travma sonrası gelişen, hemodinamik instabiliteye yol açan masif retroperitoneal kanama ile getiriliyor. Yakınları hastanın son apiksaban dozunu yaklaşık 1.5 saat önce aldığını belirtiyor.\n\nAndeksanet alfanın Aralık 2025 tarihi itibarıyla ABD pazarından üretici firma kararıyla geri çekildiği ve klinikte bulunmadığı göz önüne alınırsa, bu hastada en uygun akut hemostatik yönetim stratejisi ne olmalıdır?",
+      "secenekler": {
+        "A": "Apiksaban yüksek oranda diyaliz edilebildiğinden, hastaya hemen acil hemodiyaliz uygulanmalı ve clearance hızlandırılmalıdır.",
+        "B": "Son doz 2 saat içinde alındığı için oral/NG tüpten aktif kömür uygulanmalı ve hemostatik bypass sağlamak amacıyla hemen 4-Faktörlü Protrombin Kompleks Konsantresi (4F-PCC) 25-50 IU/kg dozunda IV verilmelidir.",
+        "C": "Spesifik antidot bulunmadığından, hastaya koagülasyonu düzeltmek için yüksek doz rekombinant aktive Faktör VIIa (rFVIIa) bolus olarak uygulanmalıdır.",
+        "D": "Hastaya acil olarak İdarusizumab 5 g IV infüzyon şeklinde uygulanmalıdır.",
+        "E": "Andeksanet alfa hâlâ ilk basamak tedavi seçeneğidir ve klinikte bulunmasa dahi başka bir merkezden acilen temin edilerek bu hastada derhal uygulanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Son doz 2 saat içinde alındığı için aktif kömür verilmeli; spesifik antidotun bulunmadığı/klinikte olmadığı Faktör Xa inhibitörü kanamalarında ilk tercih ve standart yaklaşım 4F-PCC (25-50 IU/kg IV)'dir.",
+      "aciklama_detay": "Andeksanet alfanın Aralık 2025'te ABD pazarından çekilmesiyle birlikte, Xa inhibitörlerine (Apiksaban, Rivaroksaban) bağlı majör kanamalarda yönetim algoritmaları güncellenmiştir.\n\nHasta apiksabanın son dozunu son 2 saat içinde aldığı için (gastrointestinal kanalda halen emilmemiş aktif ilaç bulunabileceğinden) oral veya nazogastrik tüp aracılığıyla aktif kömür verilmesi absorbsiyonu engellemek adına kılavuzlarca önerilir (Grade 2C).\n\nSpesifik antidotun olmadığı veya klinikte bulunmadığı durumlarda hayatı tehdit eden kanamalarda ilk tercih ve standart yaklaşım 4-Faktörlü Protrombin Kompleks Konsantresi (4F-PCC) 25-50 IU/kg IV dozunda uygulanmasıdır. PCC, pıhtılaşma kaskadındaki engeli 'bypass' ederek çalışır.\n\nDiyaliz edilebilirlik: Apiksaban ve rivaroksaban yüksek oranda plazma proteinlerine bağlandığı için (~%87-95) hemodiyaliz ile kandan uzaklaştırılamazlar. Sadece protein bağlama oranı düşük olan (~%35) Dabigatran diyaliz edilebilir.\n\nrFVIIa ve Taze Donmuş Plazma koagülopatiyi düzeltmede etkisiz bulunmuş olup, yüksek tromboz riskleri nedeniyle DOAC kanamalarında rutin kullanımlarından kaçınılmalıdır. İdarusizumab ise yalnızca Dabigatranın spesifik antidotudur, Faktör Xa inhibitörlerinde yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Apiksaban yüksek oranda protein bağlandığı (~%87-95) için diyaliz edilemez; diyaliz edilebilen ajan Dabigatran'dır.",
+        "B": "Doğru — Son doz 2 saat içinde alındığı için aktif kömür verilmeli; spesifik antidot yokluğunda ilk tercih 4F-PCC (25-50 IU/kg IV)'dir.",
+        "C": "Yanlış — rFVIIa koagülopatiyi düzeltmede etkisiz bulunmuştur ve yüksek tromboz riski nedeniyle DOAC kanamalarında rutin kullanımından kaçınılmalıdır.",
+        "D": "Yanlış — İdarusizumab yalnızca Dabigatranın spesifik antidotudur; Faktör Xa inhibitörü olan apiksabanda yeri yoktur.",
+        "E": "Yanlış — Andeksanet alfa Aralık 2025 itibarıyla üretici firma kararıyla ABD pazarından geri çekilmiştir; ilk basamak seçenek olarak kabul edilmesi ve acil temin edilmeye çalışılması güncel duruma aykırıdır, standart yaklaşım 4F-PCC'dir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "andeksanet alfa", "4F-PCC", "apiksaban", "kanama yönetimi"],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    },
+    {
+      "id": "s5",
+      "metin": "68 yaşında kadın hasta, atriyal fibrilasyon nedeniyle Dabigatran 150 mg günde iki kez kullanmaktadır. Hastanın laboratuvar incelemelerinde serum kreatinin düzeyi 1.5 mg/dL, hesaplanan Kreatinin Klerensi (CrCl) ise 38 mL/dk olarak saptanıyor. Hasta kanama riski yüksek olan elektif majör abdominal cerrahiye (kolon rezeksiyonu) alınacaktır.\n\nBu hastada perioperatif süreçte dabigatranın kesilmesi ve yönetimi ile ilgili en uygun strateji aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Dabigatran ameliyattan 24 saat önce kesilmeli ve ameliyata kadar terapötik dozda enoksaparin ile köprüleme (bridging) yapılmalıdır.",
+        "B": "Dabigatran böbreklerden çok az elimine edildiği için cerrahi kanama riskine bakılmaksızın ameliyattan sadece 48 saat önce kesilmesi yeterlidir.",
+        "C": "Hastanın Kreatinin Klerensinin 30-50 mL/dk aralığında olması ve cerrahinin yüksek kanama riski taşıması nedeniyle dabigatran ameliyattan 5 gün (120 saat) önce kesilmeli ve rutin köprüleme (bridging) tedavisinden kaçınılmalıdır.",
+        "D": "Dabigatran ameliyat sabahına kadar devam ettirilmeli, ameliyattan hemen önce 5 g İdarusizumab verilerek hasta cerrahiye alınmalıdır.",
+        "E": "Dabigatran, Faktör Xa inhibitörleriyle (apiksaban, rivaroksaban) aynı kesilme protokolüne tabidir; CrCl 30-50 mL/dk ve yüksek kanama riskli cerrahide 3 gün önce kesilmesi yeterlidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "CrCl 30-50 mL/dk ve yüksek kanama riskli cerrahide dabigatran ameliyattan en az 5 gün (120 saat) önce kesilmelidir; DOAC hastalarında elektif cerrahi öncesi rutin köprüleme yapılmaz.",
+      "aciklama_detay": "Perioperatif antikoagülasyon yönetiminde cerrahi kanama riski ve hastanın böbrek fonksiyonları (CrCl) temel belirleyicilerdir.\n\nDabigatran büyük oranda (%80-85) böbrekler yoluyla vücuttan atılır. Bu nedenle orta derecede renal yetmezliği (CrCl 30-50 mL/dk) olan hastalarda ilacın yarı ömrü belirgin şekilde uzar.\n\nKanama riski yüksek cerrahilerde, CrCl 30-50 mL/dk olan hastalarda dabigatrana bağlı perioperatif kanama riskini önlemek için ilacın ameliyattan en az 5 gün (120 saat) önce kesilmesi gerekir. (CrCl >50 mL/dk olsaydı 3 gün önce kesilmesi yeterli olacaktı.)\n\nKöprüleme (Bridging) Tedavisi: DOAC kullanan hastalarda elektif cerrahi öncesinde rutin köprüleme (heparin/LMWH ile) yapılmamalıdır. Çalışmalar (örn. PAUSE çalışması), DOAC kesilen hastalarda köprülemenin inme riskini azaltmadığını, aksine cerrahi alan kanamalarını ciddi düzeyde artırdığını net bir şekilde göstermiştir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Hem kesilme süresi (24 saat, oysa CrCl 30-50 mL/dk + yüksek kanama riski için gereken 5 gün/120 saattir) hem de köprüleme kararı yanlıştır; DOAC hastalarında elektif cerrahi öncesi rutin köprüleme yapılmaz.",
+        "B": "Yanlış — Dabigatran böbreklerden ÇOK YÜKSEK oranda (%80-85) elimine edilir, çok az değil; ayrıca cerrahi kanama riski ve renal fonksiyon kesilme süresini doğrudan belirler, göz ardı edilemez.",
+        "C": "Doğru — CrCl 30-50 mL/dk ve yüksek kanama riskli cerrahide dabigatran en az 5 gün (120 saat) önce kesilmeli; rutin köprüleme yapılmamalıdır.",
+        "D": "Yanlış — İdarusizumab acil reversiyon ajanıdır, elektif cerrahi öncesi rutin kullanım için tanımlanmamıştır; standart yaklaşım ilacı zamanında (5 gün önce) kesmektir.",
+        "E": "Yanlış — Dabigatran ve Faktör Xa inhibitörleri AYNI protokole tabi değildir: aynı CrCl (30-50 mL/dk) ve yüksek kanama riskli cerrahide Faktör Xa inhibitörleri 3 gün, Dabigatran ise böbrekten çok daha yüksek oranda (%80-85) elimine edildiği için 5 gün önce kesilmelidir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "dabigatran", "perioperatif yönetim", "bridging"],
+      "zorluk": "zor",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    }
+  ]
+}
