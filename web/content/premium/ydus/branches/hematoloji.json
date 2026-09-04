@@ -70,6 +70,12 @@
           "baslik": "İmmün Trombositopeni (ITP)",
           "rozetler": ["YENİ", "SINAV SPOTU"],
           "hazir": true
+        },
+        {
+          "id": "antikoagulasyon-stratejileri",
+          "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+          "rozetler": ["YENİ", "SINAV SPOTU"],
+          "hazir": true
         }
       ]
     }
