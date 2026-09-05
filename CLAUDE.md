@@ -805,4 +805,32 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | `truncate` | premium 4 kullanım ölçülmedi |
 | vaka adımı vurgulanabilirliği | önkoşul kararlı kimlik; bugünkü `adim-1` KONUMSAL |
 | `study-backup` | 14 korumasız `localStorage` çağrısı (kullanıcı eylemi) |
-| birim ilanı | 9 araç ölçüldü, 136'nın tamamı değil |
+| birim ilanı | **KAPANDI** — aşağıya bak |
+
+---
+
+## Birim ilanı — ÖLÇÜLDÜ, sınıf kapalı (5 Eylül 2026)
+
+Sayısal girdisi olan **60 araç / 172 girdi** tarandı (kaynaktaki 104
+`inputMode` yazımı döngüde 172 girdiye açılıyor — kapsamı SAY).
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| birim erişilebilir ADDA | 109 | 110 |
+| birim `aria-describedby` ile duyuruluyor | 40 | **44** |
+| **görünür ama duyurulmuyor** (kusur) | **4** | **0** |
+| birimsiz (pH · FiO₂ · NRS · eklem sayısı · INR · GKS · VAS) | 18 | 18 — meşru |
+
+Düzeltilen dördü: `fomepizol` · `nac-infuzyon` (kg span'inde `id` yoktu),
+`unit-converter` ×2 (**birim analite göre değişiyor**, etiket sabit "Geleneksel
+birim" diyordu — kreatinin mg/dL↔µmol/L canlıda doğrulandı), `acth-stim` ×3
+(μg/dL grup başlığındaydı, girdilere bağlı değildi).
+
+**Ölçüt üç kez yanlış pozitif verdi, üçü de kayıtlı tuzak:** `\b%\b` (yüzde
+sözcük karakteri değil) · `Ağırlıkkg`/`Boycm`/`UltrafiltrasyonLitre` (React
+metin birleşmesi) · `\bÜ\b` ve çıplak `dk` (**JS `\b` ASCII'ye göre çalışıyor**,
+`Ü` sınırı delmiyor). Beklenti tutmayınca önce ölçüt sınandı — yoksa dört
+sağlam araç "kusurlu" diye değiştirilecekti.
+
+Kalan: kapsam **açık taraftaki 60 araç**; premium yüzeylerde sayısal girdi
+taranmadı.

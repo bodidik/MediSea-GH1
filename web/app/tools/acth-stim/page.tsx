@@ -115,7 +115,7 @@ export default function ActhStimPage() {
         </div>
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
-          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Serum Kortizol Değerleri (μg/dL)</p>
+          <p id="acth-birim" className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Serum Kortizol Değerleri (μg/dL)</p>
           <div className="grid grid-cols-3 gap-4">
             {[
               { label: "Bazal (0. dk)", val: baseline, set: setBaseline, ph: "ör. 8" },
@@ -124,7 +124,7 @@ export default function ActhStimPage() {
             ].map(({ label, val, set, ph }) => (
               <label key={label} className="flex flex-col gap-2">
                 <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-1">{label}</span>
-                <input type="text" inputMode="decimal" value={val} onChange={e => set(e.target.value)} placeholder={ph}
+                <input aria-describedby="acth-birim" type="text" inputMode="decimal" value={val} onChange={e => set(e.target.value)} placeholder={ph}
                   className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:border-blue-900 outline-none font-bold text-lg transition-all" />
               </label>
             ))}

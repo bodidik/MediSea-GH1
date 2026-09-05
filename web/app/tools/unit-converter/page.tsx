@@ -214,13 +214,14 @@ export default function BirimCeviriciSayfasi() {
       <div className="relative">
         <input
           id="birim-geleneksel"
+          aria-describedby="birim-geleneksel-birim"
           type="text"
           inputMode="decimal"
           value={gelenekselGosterim}
           onChange={(e) => { setKaynak("geleneksel"); setGelenekselHam(e.target.value); }}
           className="w-full bg-slate-50 border-b-4 border-blue-900/10 text-4xl md:text-5xl font-black text-blue-900 p-4 pr-24 focus:border-amber-400 outline-none transition-all rounded-t-2xl"
         />
-        <span className="absolute right-4 bottom-5 text-xs font-black text-blue-900/80 uppercase">
+        <span id="birim-geleneksel-birim" className="absolute right-4 bottom-5 text-xs font-black text-blue-900/80 uppercase">
           {analit.gelenekselBirim}
         </span>
       </div>
@@ -238,13 +239,14 @@ export default function BirimCeviriciSayfasi() {
       <div className="relative">
         <input
           id="birim-si"
+          aria-describedby="birim-si-birim"
           type="text"
           inputMode="decimal"
           value={siGosterim}
           onChange={(e) => { setKaynak("si"); setSiHam(e.target.value); }}
           className="w-full bg-blue-900 border-b-4 border-amber-400 text-4xl md:text-5xl font-black text-white p-4 pl-24 focus:border-white outline-none transition-all rounded-t-2xl shadow-xl md:text-right"
         />
-        <span className="absolute left-4 bottom-5 text-xs font-black text-blue-200 uppercase">
+        <span id="birim-si-birim" className="absolute left-4 bottom-5 text-xs font-black text-blue-200 uppercase">
           {analit.siBirim}
         </span>
       </div>

@@ -74,6 +74,7 @@ function KiloAlani({
       <div className="relative">
         <input
           id="fomepizol-kilo"
+          aria-describedby="fomepizol-kilo-birim"
           type="text"
           inputMode="decimal"
           value={deger}
@@ -81,7 +82,7 @@ function KiloAlani({
           placeholder="ör. 70"
           className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 pr-14 text-2xl font-black text-blue-900 focus:border-blue-900 outline-none"
         />
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400">
+        <span id="fomepizol-kilo-birim" className="absolute right-4 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400">
           kg
         </span>
       </div>
