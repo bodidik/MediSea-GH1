@@ -802,9 +802,9 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | grup semantiği | 35 araçta `role="group"` yok (adları sayfa içinde benzersiz) |
 | `h2` yapısı | 120 araçta yalnızca kardeş bloğundan geliyor |
 | süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
-| `truncate` | premium 4 kullanım ölçülmedi |
+| `truncate` | **ÖLÇÜLDÜ** — aşağıya bak |
 | vaka adımı vurgulanabilirliği | önkoşul kararlı kimlik; bugünkü `adim-1` KONUMSAL |
-| `study-backup` | 14 korumasız `localStorage` çağrısı (kullanıcı eylemi) |
+| `study-backup` | 14 korumasız `localStorage` çağrısı — **ölçüldü, bilerek bırakıldı** (kullanıcı eylemiyle çalışıyor, depo engelli uyarısı zaten üstünde; gerekçe arşivde) |
 | birim ilanı | **KAPANDI** — aşağıya bak |
 
 ---
@@ -834,3 +834,32 @@ sağlam araç "kusurlu" diye değiştirilecekti.
 
 Kalan: kapsam **açık taraftaki 60 araç**; premium yüzeylerde sayısal girdi
 taranmadı.
+
+---
+
+## `truncate` / `line-clamp` premiumda — ÖLÇÜLDÜ (5 Eylül 2026)
+
+Üç kullanım (belgede "4" yazıyordu, içerik değişmiş). 320 · 375 · 414 · 768'de
+**gerçek veriyle** ölçüldü.
+
+| yer | bulgu |
+|---|---|
+| liderlik `h3`+`p` (12 öge) | 375+'ta kırpık **0**; 320'de 2 ünvan 5–6px taşıyor. "(sen)" işareti ad 5 karakterden uzunsa kesiliyor — **ama kimlik kaybı YOK**: satır ayrıca kenarlık + zemin + parıltı + `scale` taşıyor, ekran okuyucu da tam metni okuyor |
+| pano "Yeni eklendi" kartı | **KUSUR** — 320'de kap 140px, metin 3 satır istiyor / 2 gösteriyor; kesilen hep **sondaki soru sayısı** ("…ve Klinik" görünüyor, "Yönetim · 5 soru" gidiyor), kurtarma yolu yok |
+
+Çare iki parça: soru sayısı clamp'in **dışına** (üstteki küçük satıra) alındı —
+kart yüksekliği 375/768'de değişmedi; ve başlığa dar ekranda üçüncü satır
+verildi (`line-clamp-3 sm:line-clamp-2`).
+
+| ölçüt | 320 | 375 | 768 |
+|---|---|---|---|
+| başlık kırpık (önce → sonra) | var → **yok** | yok → yok | yok → yok |
+| soru sayısı görünür | **hayır → evet** | evet | evet |
+| kart yüksekliği | 128 → 148 (bir satır, kasıtlı) | 128 → **128** | 108 → **108** |
+
+**Negatif kontrol:** 240 karakterlik uydurma başlıkla clamp hâlâ bağlıyor
+(768'de 2 satır, 320'de 3) — yerleşim patlamıyor.
+
+**Ölçüm notu:** tohum adlar kısa olduğu için ilk tur "temiz" göründü. Kırpma
+bir GENİŞLİK varsayımı olduğundan eşik hesaplandı (canvas `measureText` ile
+kutu genişliği), veri olduğu gibi kabul edilmedi.

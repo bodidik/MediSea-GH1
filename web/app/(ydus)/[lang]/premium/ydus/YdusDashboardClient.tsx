@@ -236,8 +236,18 @@ export default function YdusDashboardClient({
                 <PlayCircle size={20} className="text-blue-600" />
               </div>
               <div className="min-w-0">
-                <p className="text-[11px] text-slate-400">Yeni eklendi</p>
-                <p className="text-sm font-semibold text-slate-800 line-clamp-2">{featured.baslik} · {featured.soru} soru</p>
+                {/* Soru sayısı `line-clamp-2`nin DIŞINDA duruyor. Bir dönem
+                    başlıkla aynı paragraftaydı ve dizenin SONUNDAYDI: 320px'te
+                    metin üç satır istiyor, kutu iki satır gösteriyordu, yani
+                    kesilen ilk şey her zaman sayının kendisiydi ("Antikoagülasyon
+                    Stratejileri ve Klinik" görünüyor, "Yönetim · 5 soru" gidiyor).
+                    Kırpılan metnin kurtarma yolu da yok. Kart yüksekliği aynı
+                    kaldı — sayı üstteki küçük satıra taşındı. */}
+                <p className="text-[11px] text-slate-400">Yeni eklendi · {featured.soru} soru</p>
+                {/* Dar ekranda kap 140px'e iniyor ve iki satır başlığa yetmiyor;
+                    üçüncü satır YALNIZCA orada açık. `sm` ve üstünde kap 195px+,
+                    iki satır yetiyor ve kart kompakt kalıyor. */}
+                <p className="text-sm font-semibold text-slate-800 line-clamp-3 sm:line-clamp-2">{featured.baslik}</p>
               </div>
             </div>
             <span className="flex-shrink-0 flex items-center gap-1 text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg group-hover:bg-blue-100 transition-colors">
