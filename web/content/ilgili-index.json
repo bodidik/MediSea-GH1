@@ -3556,6 +3556,11 @@
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
   {
+   "brans": "hematoloji",
+   "slug": "chase-less-skoru",
+   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
@@ -3607,6 +3612,13 @@
    "brans": "hematoloji",
    "slug": "nhl-genel",
    "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+  }
+ ],
+ "hematoloji/chase-less-skoru": [
+  {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
   }
  ],
  "hematoloji/demir-eksikligi": [
@@ -3820,8 +3832,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/hematopoez": [
@@ -3832,18 +3844,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "aml-tedavi-algoritmasi",
-   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
+   "slug": "megaloblastik-anemi",
+   "baslik": "Megaloblastik Anemiler (Genel)"
   },
   {
    "brans": "hematoloji",
-   "slug": "aml",
-   "baslik": "Akut Miyeloid Lösemi (AML)"
+   "slug": "miyeloproliferatif",
+   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
   },
   {
    "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/hemofili-a": [
@@ -3969,18 +3981,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
+   "slug": "lenfomalar",
+   "baslik": "Lenfomalar (Hodgkin ve NHL)"
   },
   {
    "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
+   "slug": "losemiler",
+   "baslik": "Lösemiler"
   }
  ],
  "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
@@ -4324,16 +4336,6 @@
  "hematoloji/nhl-genel": [
   {
    "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
    "baslik": "Hemolitik Anemiler"
   },
@@ -4341,6 +4343,16 @@
    "brans": "hematoloji",
    "slug": "immun-trombositopeni-itp",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kanama-bozukluklari",
+   "baslik": "Hemostaz ve Pıhtılaşma Bozuklukları"
   }
  ],
  "hematoloji/olgunlasma-bozukluklari": [
