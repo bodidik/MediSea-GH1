@@ -3805,8 +3805,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
   }
  ],
  "hematoloji/hematopoez": [
@@ -3817,18 +3817,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+   "slug": "aml-tedavi-algoritmasi",
+   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
   },
   {
    "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   },
   {
    "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
   }
  ],
  "hematoloji/hemofili-a": [
@@ -3905,6 +3905,28 @@
    "baslik": "İmmün Trombositopeni (ITP)"
   }
  ],
+ "hematoloji/inme-sonrasi-gizli-af": [
+  {
+   "brans": "hematoloji",
+   "slug": "miyeloproliferatif",
+   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  }
+ ],
  "hematoloji/itp-tanisal-yaklasim": [
   {
    "brans": "hematoloji",
@@ -3942,18 +3964,18 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
    "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "immun-trombositopeni-itp",
-   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "lenfomalar",
-   "baslik": "Lenfomalar (Hodgkin ve NHL)"
   }
  ],
  "hematoloji/kll": [
@@ -4265,23 +4287,23 @@
  "hematoloji/nhl-genel": [
   {
    "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "aml-tedavi-algoritmasi",
-   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
   }
  ],
  "hematoloji/olgunlasma-bozukluklari": [
