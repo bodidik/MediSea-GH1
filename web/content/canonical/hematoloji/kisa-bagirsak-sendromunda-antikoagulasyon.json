@@ -1,0 +1,36 @@
+{
+  "title": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama",
+  "meta": {
+    "updatedAt": "06 Eyl 2026",
+    "tags": [
+      "Hematoloji",
+      "Antikoagülasyon",
+      "Kısa Bağırsak Sendromu",
+      "Malabsorpsiyon",
+      "LMWH",
+      "Warfarin",
+      "İntestinal Adaptasyon",
+      "ESPEN"
+    ],
+    "parent": "antikoagulasyon-stratejileri",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "🧭 1. Çelişki Değil Tabakalama: Kararı Emilim Kapasitesi Verir",
+      "html": "<p>Kısa bağırsak sendromunda (KBS / SBS) antikoagülan seçimi hakkında dolaşan iki ifade — <em>\"warfarin ilk tercihtir\"</em> ve <em>\"subkutan LMWH tercih edilmelidir\"</em> — birbiriyle çelişmez. ESPEN 2026 multidisipliner uzlaşı raporu, kararı hastanın <strong>anatomik bütünlüğüne, emilim kapasitesine ve klinik stabilitesine</strong> göre iki gruba ayırır.</p><p>Ayrımın klinik ağırlığı yüksektir: yanlış grupta oral tedavi sürdürmek <strong>yetersiz antikoagülasyona</strong>, o da ölümcül olabilen rekürren mezenterik iskemi gibi masif tromboz nükslerine yol açar.</p><table class=\"min-w-full text-xs\"><thead><tr><th>Hasta grubu</th><th>Oral yol</th><th>Tercih edilen ajan</th></tr></thead><tbody><tr><td><strong>Stabil KBS</strong> (adaptasyon tamamlanmış, oral beslenme sürüyor)</td><td>Mümkün</td><td><strong>Warfarin</strong> (INR takipli)</td></tr><tr><td><strong>Yetersiz emilim</strong> (ultrashort bowel, yüksek debili stoma, instabil dönem)</td><td>Kontrendike</td><td><strong>Subkutan LMWH</strong></td></tr></tbody></table>"
+    },
+    {
+      "heading": "🍽️ 2. Stabil KBS: Oral Yolun Mümkün Olduğu Grup",
+      "html": "<p>Bu grup, masif rezeksiyonun ardından iyileşme sürecini tamamlamış, <strong>intestinal adaptasyonu (bağırsak uyumu)</strong> gerçekleşmiş ve beslenmesini stabil şekilde oral yolla sürdüren hastaları kapsar. Adaptasyon süreci cerrahiden sonra <strong>3 yıla kadar uzayabilir.</strong></p><p>Emilim kapasitesi azalmış olsa da gastrointestinal adaptasyon sayesinde oral ilaç emilimi hâlâ mümkündür; dolayısıyla <strong>oral uygulama yolu ilk olarak düşünülmelidir.</strong></p><p><strong>Warfarin (%94.7 uzlaşı — S18):</strong> Warfarin ince bağırsak segmentlerinden (duodenum ve proksimal jejunum) hızla ve yüksek oranda emilir. Ancak asıl avantajı emilim hızı değil, <strong>biyolojik etkinliğinin PT/INR ile ucuz ve güvenilir biçimde izlenebilmesidir.</strong> Emilimin değişken veya şüpheli olduğu stabil KBS hastasında INR takibi, ilacın yeterince emilip emilmediğini anlık olarak doğrular ve dozun kolayca titre edilmesini sağlar. Bu izlenebilirlik warfarini bu grupta <strong>ilk tercih edilen oral ajan</strong> yapar.</p><p><strong>DOAC'lar neden geride kalır (%73.7 uzlaşı — S19):</strong> DOAC'ların (apiksaban, rivaroksaban vb.) stabil KBS'de kullanımı klinik çalışmalarda gösterilmiş olsa da emilim düzeyleri hastadan hastaya değişir. Daha önemlisi, DOAC plazma düzeyini <strong>warfarindeki INR gibi rutin izleyebileceğimiz yaygın ve valide edilmiş bir test yoktur.</strong> Bu belirsizlik nedeniyle DOAC'lar VKA'nın gerisinde kalmıştır.</p><p><strong>Klinik not — dabigatran:</strong> Çok düşük biyoyararlanımı (<strong>%6.5</strong>), asidik ortam gereksinimi ve KBS hastalarında saptanan yetersiz terapötik plazma düzeyleri nedeniyle dabigatran eteksilat, bu hastalarda <strong>kesinlikle önerilmeyen ve kaçınılması gereken tek DOAC'tır.</strong></p>"
+    },
+    {
+      "heading": "💧 3. Yetersiz Emilim: Oral Yolun Kontrendike Olduğu Grup",
+      "html": "<p>Bu grup anatomik olarak aşırı kayba uğramış veya stabil olmayan hastaları tanımlar: <strong>ultrashort bowel</strong> (remnant jejunum &lt; 20 cm), <strong>yüksek debili stoma</strong> (high-output ostomy) veya akut cerrahi sonrası <strong>instabil dönem.</strong></p><p>Bu hastalarda intestinal transit süresi o kadar hızlı, aktif emilim yüzeyi o kadar azdır ki <strong>warfarin dâhil hiçbir oral antikoagülanın</strong> emilip terapötik düzeye ulaşması garanti edilemez.</p><p><strong>Non-oral yol (%100 uzlaşı — S21):</strong> ESPEN paneli, emilim kapasitesinin kesinlikle yetersiz olduğu bu yüksek riskli grupta oral yolun tamamen atlanarak <strong>non-oral (intravenöz veya subkutan) yolların</strong> tercih edilmesini oy birliğiyle kararlaştırmıştır.</p><p><strong>Subkutan LMWH:</strong> Düşük molekül ağırlıklı heparin (enoksaparin, dalteparin vb.) gastrointestinal emilimden tamamen bağımsızdır; subkutan dokudan doğrudan sistemik dolaşıma katılarak <strong>%100 biyoyararlanım</strong> sağlar ve hastayı emilim yetersizliğinin getirdiği tromboz riskinden korur. Emilimi yetersiz ya da şüpheli hastalarda tercih edilmesi gereken <strong>yegâne antikoagülan stratejidir.</strong></p>"
+    },
+    {
+      "heading": "🧮 4. Karar Algoritması",
+      "html": "<p><strong>1. Hasta stabil KBS mi?</strong> (adaptasyon tamamlanmış, oral beslenme sürüyor)</p><ul class=\"mb-4\"><li><strong>Evet →</strong> Oral tedaviyi düşün. <strong>Warfarin (INR takipli) ilk tercihtir</strong> (%94.7 uzlaşı).</li><li>DOAC kullanılacaksa (tercihen <strong>apiksaban veya rivaroksaban</strong>), emilimi doğrulamak için en az bir kez <strong>kararlı durum (steady-state) pik plazma ilaç düzeyi</strong> ölçülmelidir — calibrated anti-Xa veya LC-MS/MS ile (%89.5 uzlaşı — S35).</li><li><strong>Dabigatran kullanma.</strong></li></ul><p><strong>2. Hasta instabil KBS, ultrashort bowel (&lt; 20 cm) veya yüksek debili stomalı mı?</strong></p><ul class=\"mb-4\"><li><strong>Evet →</strong> Oral tedaviyi reddet. Gastrointestinal emilimi atlamak için <strong>terapötik dozda subkutan LMWH</strong> başla.</li><li>LMWH parenteral olduğu için <strong>emilim yönünden rutin anti-Xa takibine gerek yoktur</strong> (%94.7 uzlaşı — S37).</li></ul><p>Tedavi başlangıcında veya <strong>stoma çıktısı değiştiğinde</strong> hasta yeniden bu iki gruptan hangisine düştüğü açısından değerlendirilmelidir; adaptasyon ilerledikçe grup değişebilir.</p>"
+    }
+  ]
+}
