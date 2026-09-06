@@ -346,6 +346,8 @@ node scripts/arac-metadata.cjs   # yeni klinik araç eklendiğinde
 node scripts/arac-metadata.cjs --kontrol   # yazmadan: indeks bayat mı?
 node scripts/baslik-index.cjs    # yeni konu eklendiğinde (paylaşım kartı başlığı)
 node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağları)
+node scripts/arac-konu-index.cjs # yeni konu VEYA araç eklendiğinde (araç↔konu bağları)
+                                 # sonra arac-metadata.cjs — araç layout'u bu indeksi basıyor
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
 
@@ -984,3 +986,47 @@ sonrası gerçek `h2` korundu (n=2 — pozitif kontrol).
 
 Ölçüt tuzağı: ilk negatif kontrolü satır içinde yeniden yazdım ve eleme
 adımını atladım, sahte `h2` sayıldı. **Ölçütü yeniden yazma, aslını sür.**
+
+---
+
+## Araç ↔ konu bağları — huninin iki yönü (6 Eylül 2026)
+
+Amaç: aracı arama motorundan bulan kişi açık konulara, konuyu okuyan kişi
+hesaplayıcıya ulaşsın. Önce ölçüldü — **bugün iki yön de yoktu**: araç
+sayfası yalnızca BRANŞ sayfasına bağlanıyordu (`/topics/kardiyoloji`),
+konu sayfası hiç araç önermiyordu.
+
+Bağ elle yazılmaz: `scripts/arac-konu-index.cjs` konu metninde aracın adını
+arar. `--kontrol` ve `--kok` var, **CI'a kapı olarak eklendi** (dördüncü
+elle üretilen indeks).
+
+| ölçüt | değer |
+|---|---|
+| bağ · araç önerilen konu · konusu olan araç | **106 · 90 · 29** |
+| araç sayfasında | "Bu aracın geçtiği konular" (`arac-metadata.cjs` basıyor, 136 layout) |
+| konu sayfasında | "İlgili Hesaplayıcılar" |
+
+**Ölçüt ÜÇ kez yanlış pozitif verdi:**
+
+| tuzak | örnek | çare |
+|---|---|---|
+| Türkçe kelime çakışması | `ESAS` aracı **"esas"** kelimesiyle 10 sahte konuda | kısa BÜYÜK harf takma ad küçük/büyük **duyarlı** aranır |
+| parantez içi kısaltma | `(PPI)` proton pompa inhibitörü, `(DVT)` hastalığın kendisi | parantezin **içi** takma ad sayılmaz, yalnızca önü |
+| üç harfli kısaltma | `CAT` → kansere bağlı tromboz | 4 harften kısa büyük-harf takma ad elenir |
+
+**Nadirlik ayraç DEĞİL — denendi, çürütüldü.** `Anafilaksi` 9 konuda ve
+DOĞRU, `PPI` 10 konuda ve YANLIŞ. Ayraç sıklık değil, takma adın KAYNAĞI.
+(`ilgili-index` nadirlikle çalışıyor; aynı ilke buraya taşınmıyor.)
+
+Doğrulama üretim derlemesinin HTML'inden yapıldı — dev sunucusu başka bir
+oturuma aitti. Pozitif: `/tools/chads-vasc`te blok ve
+`/topics/hematoloji/antikoagulasyon-stratejileri` bağı var; konu sayfasında
+`chads-vasc` + `khorana`. **Negatif: eşleşmesi olmayan `bmi` ve `addison`
+sayfalarında blok hiç çizilmiyor.**
+
+Kapsam sınırı: bileşik adlı araçlar eşleşmiyor (`BMI & İdeal Vücut Ağırlığı`
+gibi) — kesinliği geri vermemek için genişletilmedi.
+
+**Yeni kapı ilk koşumunda iş gördü:** içerik dalından gelen
+`hematoloji/inme-sonrasi-gizli-af` konusu indeksi bayatlatmıştı, `--kontrol`
+düştü ve hangi konunun eksik olduğunu yazdı.

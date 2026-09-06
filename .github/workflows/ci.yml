@@ -92,6 +92,14 @@ jobs:
         - name: İlgili Konular indeksi senkron mu
           run: node scripts/ilgili-index.cjs --kontrol
 
+        # Araç ↔ konu bağları (content/arac-konu.json) DÖRDÜNCÜ elle üretilen
+        # dosya ve iki yüzeyi birden besliyor: konu sayfasındaki "İlgili
+        # Hesaplayıcılar" ve araç layout'undaki "Bu aracın geçtiği konular".
+        # Yeni bir konu ya da araç eklenip betik unutulursa bağ sessizce
+        # eksik kalır — huninin iki yönü de kapanır, hiçbir kapı görmez.
+        - name: Araç-konu bağ indeksi senkron mu
+          run: node scripts/arac-konu-index.cjs --kontrol
+
         # Arayüz kaynağındaki, ÜÇ KAPIDAN DA GEÇEN kusurlar: bozuk kodlama
         # (UTF-8 metnin CP1252 okunmuş hâli), alt niteliği olmayan görsel,
         # rel verilmeden açılan yeni sekme, <form> içinde varsayılan submit

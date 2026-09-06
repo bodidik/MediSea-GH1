@@ -124,6 +124,24 @@ function kategorileriOku() {
  * kategori kullanılır — dosya sırası kararlı olduğu için seçim de kararlı.
  */
 const KARDES_SAYISI = 6;
+/** Araç sayfasında gösterilecek en fazla ilgili konu. */
+const KONU_SAYISI = 4;
+/** `main()` ve `kontrolEt()` aynı haritayı görmeli — ikisi de dosyaIcerigi çağırıyor. */
+let ARAC_KONU = {};
+
+/**
+ * Araç → ilgili açık konu bağları. `scripts/arac-konu-index.cjs` üretir;
+ * yoksa blok hiç basılmaz (bağ uydurulmaz).
+ */
+function aracKonuHarita() {
+  try {
+    const p = path.join(KOK, 'content', 'arac-konu.json');
+    const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+    return d && d.aracKonu ? d.aracKonu : {};
+  } catch {
+    return {};
+  }
+}
 
 function kardesHarita() {
   const harita = new Map();
@@ -289,12 +307,39 @@ function aciklamaUret(name, desc) {
  * GEREKÇE BURADA, ŞABLONDA DEĞİL: şablona konan her yorum satırı 130
  * dosyaya kopyalanıyor (bir denemede 130 dosya × 5 satır oldu).
  */
-function dosyaIcerigi({ slug, name, desc, kardesler = [], kategoriAd = '' }) {
+function dosyaIcerigi({ slug, name, desc, kardesler = [], kategoriAd = '', konular = [] }) {
   const baslik = baslikUret(name, desc);
   const aciklama = aciklamaUret(name, desc);
   const yol = `/tools/${slug}`;
-  const kardesImport = kardesler.length
+  const kardesImport = kardesler.length || konular.length
     ? 'import Link from "next/link";' + String.fromCharCode(10)
+    : '';
+
+  /**
+   * İLGİLİ KONULAR — huninin ters yönü. Aracı arama motorundan bulan
+   * kişiye, o aracın geçtiği açık konular önerilir. Bağ elle yazılmaz:
+   * `scripts/arac-konu-index.cjs` konu metninde aracın adını arar.
+   */
+  const konuBlok = konular.length
+    ? `      <nav aria-label=${JSON.stringify('Bu aracın geçtiği konular')} className="bg-slate-50 px-4 pb-6 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            Bu aracın geçtiği konular
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+${konular
+  .map(
+    (k) =>
+      `            <li>
+              <Link href=${JSON.stringify('/topics/' + k.yol)} className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ${k.baslik}
+              </Link>
+            </li>`
+  )
+  .join('\n')}
+          </ul>
+        </div>
+      </nav>`
     : '';
   const kardesBlok = kardesler.length
     ? `      <nav aria-label=${JSON.stringify('Aynı kategoriden araçlar')} className="bg-slate-50 px-4 pb-10 font-sans">
@@ -354,6 +399,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
+${konuBlok}
 ${kardesBlok}
     </>
   );
@@ -600,6 +646,7 @@ function main() {
   const sayfasiz = [];
 
   const KARDESLER = kardesHarita();
+  ARAC_KONU = aracKonuHarita();
   for (const arac of araclar) {
     const dizin = path.join(ARAC_DIZIN, arac.slug);
     if (!fs.existsSync(path.join(dizin, 'page.tsx'))) {
@@ -619,7 +666,12 @@ function main() {
     }
 
     const kk = KARDESLER.get(arac.slug);
-    fs.writeFileSync(hedef, dosyaIcerigi({ ...arac, kardesler: kk ? kk.kardesler : [], kategoriAd: kk ? kk.kategoriAd : '' }));
+    fs.writeFileSync(hedef, dosyaIcerigi({
+      ...arac,
+      kardesler: kk ? kk.kardesler : [],
+      kategoriAd: kk ? kk.kategoriAd : '',
+      konular: (ARAC_KONU[arac.slug] || []).slice(0, KONU_SAYISI),
+    }));
     yazilan++;
   }
 

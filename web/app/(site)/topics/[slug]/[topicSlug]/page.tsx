@@ -17,6 +17,7 @@ import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
+import aracKonuIndex from "@/content/arac-konu.json";
 import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 
 /**
@@ -484,6 +485,11 @@ export default async function TopicDetailPage({
   // İlgili konular: etiket akrabalığından önceden üretiliyor
   // (scripts/ilgili-index.cjs). Ebeveyn ve çocuklar dizinde zaten elenmiş
   // olduğu için burada tekrar bağlantı çıkmaz.
+  /** Bu konuda adı geçen klinik araçlar (üretilmiş indeks — bkz. arac-konu-index.cjs). */
+  const ilgiliAraclar =
+    ((aracKonuIndex as { konuArac?: Record<string, { slug: string; name: string }[]> })
+      .konuArac?.[`${slug}/${topicSlug}`]) ?? [];
+
   const ilgililer =
     (ilgiliIndex as Record<string, { brans: string; slug: string; baslik: string }[]>)[
       `${slug}/${topicSlug}`
@@ -860,6 +866,32 @@ export default async function TopicDetailPage({
                     ))}
                   </ul>
 
+                </div>
+              )}
+
+              {/* İLGİLİ HESAPLAYICILAR — huninin ters yönü.
+                  Konu metni bir aracın adını gerçekten geçiriyorsa o araç
+                  buraya çıkar; bağ elle tutulmaz, `scripts/arac-konu-index.cjs`
+                  okur. Elle liste bu depoda tarihsel olarak bayatlıyor. */}
+              {ilgiliAraclar.length > 0 && (
+                <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
+                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    İlgili Hesaplayıcılar
+                  </h2>
+                  <ul className="space-y-2">
+                    {ilgiliAraclar.map((a) => (
+                      <li key={a.slug}>
+                        <Link
+                          href={`/tools/${a.slug}`}
+                          className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-emerald-700 transition-colors"
+                        >
+                          <span className="text-emerald-300 group-hover:text-emerald-500 mt-0.5" aria-hidden="true">→</span>
+                          <span className="leading-tight">{a.name}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
 

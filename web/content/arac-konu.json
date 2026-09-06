@@ -1,0 +1,1192 @@
+{
+  "uretilme": "scripts/arac-konu-index.cjs",
+  "konuArac": {
+    "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/cushing-sendromu-patofizyoloji-klinik": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/diyabetik-ketoasidoz-ve-hhs": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
+    "endokrinoloji/hashimoto-ensefaliti": [
+      {
+        "slug": "status-epileptikus",
+        "name": "Status Epileptikus",
+        "eslesen": "Status Epileptikus"
+      }
+    ],
+    "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "endokrinoloji/hipofiz-adenomlari": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/hipofiz-hastaliklari-ana": [
+      {
+        "slug": "dst",
+        "name": "Deksametazon Süpresyon Testi (DST)",
+        "eslesen": "Deksametazon Süpresyon Testi (DST)"
+      }
+    ],
+    "endokrinoloji/kalsiyum-homeostazi-fizyoloji": [
+      {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      }
+    ],
+    "endokrinoloji/kalsiyum-metabolizmasi-ana": [
+      {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      }
+    ],
+    "endokrinoloji/konjenital-adrenal-hiperplazi-cah": [
+      {
+        "slug": "acth-stim",
+        "name": "ACTH Stimülasyon Testi",
+        "eslesen": "ACTH Stimülasyon Testi"
+      }
+    ],
+    "endokrinoloji/men1-2025-kilavuz-degisimleri": [
+      {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      }
+    ],
+    "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "endokrinoloji/men1-osilodrostat-mineralokortikoid": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "endokrinoloji/men1-osilodrostat-protokol-adimlari": [
+      {
+        "slug": "acth-stim",
+        "name": "ACTH Stimülasyon Testi",
+        "eslesen": "ACTH Stimülasyon Testi"
+      }
+    ],
+    "endokrinoloji/men1-osilodrostat-yan-etkiler": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "endokrinoloji/miksodem-psikozu": [
+      {
+        "slug": "status-epileptikus",
+        "name": "Status Epileptikus",
+        "eslesen": "Status Epileptikus"
+      }
+    ],
+    "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/sglt2-inhibitorleri-kardiyorenal-metabolik": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/siadh-sendromu": [
+      {
+        "slug": "acth-stim",
+        "name": "ACTH Stimülasyon Testi",
+        "eslesen": "ACTH Stimülasyon Testi"
+      }
+    ],
+    "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "endokrinoloji/tiroid-nodullerine-yaklasim": [
+      {
+        "slug": "tirads",
+        "name": "ACR TI-RADS",
+        "eslesen": "ACR TI-RADS"
+      }
+    ],
+    "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "endokrinoloji/usp8-mutasyonu-ve-pasireotid": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "enfeksiyon/antibiyotikler-ana-sayfa": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "enfeksiyon/dalbavansin-derleme": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "enfeksiyon/fosfomisin-klinik-rehber": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "enfeksiyon/prokalsitonin-genel": [
+      {
+        "slug": "sofa",
+        "name": "SOFA Skoru",
+        "eslesen": "SOFA Skoru"
+      }
+    ],
+    "enfeksiyon/tigesiklin-derleme": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "enfeksiyon/tigesiklin-uyarilar-yan-etkiler": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "gastroenteroloji/ascit-sıvısı": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "gastroenteroloji/ascit-yonetimi": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "gastroenteroloji/kisa-bagirsak-sendromu": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "gastroenteroloji/pankreas-hastaliklari": [
+      {
+        "slug": "ranson",
+        "name": "Ranson Kriterleri",
+        "eslesen": "Ranson Kriterleri"
+      }
+    ],
+    "hematoloji/akut-lenfoblastik-losemi-all": [
+      {
+        "slug": "ipss-r",
+        "name": "IPSS-R",
+        "eslesen": "IPSS-R"
+      }
+    ],
+    "hematoloji/aml": [
+      {
+        "slug": "charlson",
+        "name": "Charlson Komorbidite İndeksi",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      },
+      {
+        "slug": "karnofsky",
+        "name": "Karnofsky (KPS)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "slug": "gds-15",
+        "name": "GDS-15",
+        "eslesen": "GDS-15"
+      }
+    ],
+    "hematoloji/aml-geriatrik-degerlendirme": [
+      {
+        "slug": "charlson",
+        "name": "Charlson Komorbidite İndeksi",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      },
+      {
+        "slug": "karnofsky",
+        "name": "Karnofsky (KPS)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "slug": "gds-15",
+        "name": "GDS-15",
+        "eslesen": "GDS-15"
+      }
+    ],
+    "hematoloji/antikoagulasyon-stratejileri": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      },
+      {
+        "slug": "khorana",
+        "name": "Khorana Skoru",
+        "eslesen": "Khorana Skoru"
+      }
+    ],
+    "hematoloji/demir-eksikligi": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "hematoloji/demir-eksikligi-anemisi": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "hematoloji/dlbcl": [
+      {
+        "slug": "ipi",
+        "name": "IPI Skoru",
+        "eslesen": "IPI Skoru"
+      }
+    ],
+    "hematoloji/folikuler-lenfoma": [
+      {
+        "slug": "flipi",
+        "name": "FLIPI",
+        "eslesen": "FLIPI"
+      }
+    ],
+    "hematoloji/gebelikte-immün-ITP-yonetimi": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
+    "hematoloji/hct-ci-geriatrik-degerlendirme": [
+      {
+        "slug": "charlson",
+        "name": "Charlson Komorbidite İndeksi",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      },
+      {
+        "slug": "karnofsky",
+        "name": "Karnofsky (KPS)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "slug": "gds-15",
+        "name": "GDS-15",
+        "eslesen": "GDS-15"
+      }
+    ],
+    "hematoloji/inme-sonrasi-gizli-af": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      }
+    ],
+    "hematoloji/kmt2d-crebbp-mutasyonlari": [
+      {
+        "slug": "flipi",
+        "name": "FLIPI",
+        "eslesen": "FLIPI"
+      }
+    ],
+    "hematoloji/m7-flipi-ngs-paneli": [
+      {
+        "slug": "flipi",
+        "name": "FLIPI",
+        "eslesen": "FLIPI"
+      }
+    ],
+    "hematoloji/makrositer-anemiler": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
+    "hematoloji/miyelodisplastik-sendrom-mds": [
+      {
+        "slug": "ipss-r",
+        "name": "IPSS-R",
+        "eslesen": "IPSS-R"
+      }
+    ],
+    "hematoloji/sistemik-mastositoz-sm": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "journal-club/iptacopan-igan-faz3": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "journal-club/sac-tmt-optitrop-lung04-nejm": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/akut-koroner-sendromlar": [
+      {
+        "slug": "grace",
+        "name": "GRACE Skoru",
+        "eslesen": "GRACE"
+      },
+      {
+        "slug": "timi-ua",
+        "name": "TIMI Skoru (UA/NSTEMI)",
+        "eslesen": "TIMI"
+      }
+    ],
+    "kardiyoloji/aprocitentan-kbh-ve-yasli": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/aritmiler-af-vt-vf": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      }
+    ],
+    "kardiyoloji/direncli-hipertansiyon-yeni-nesil": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/infektif-endokardit": [
+      {
+        "slug": "endocarditis",
+        "name": "Duke Kriterleri",
+        "eslesen": "Duke Kriterleri"
+      }
+    ],
+    "kardiyoloji/kalp-yetersizligi-arni-etkilesimler": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/kalp-yetersizligi-arni-tedavisi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/kalp-yetmezligi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "kardiyoloji/kardiyak-amiloidoz": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc"
+      }
+    ],
+    "kardiyoloji/lipid-ezetimibe-sakinca": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "klinik-nutrisyon/klinik-nutrisyon-ana-unite": [
+      {
+        "slug": "glim",
+        "name": "GLIM Kriterleri",
+        "eslesen": "GLIM Kriterleri"
+      },
+      {
+        "slug": "nrs-2002",
+        "name": "NRS-2002",
+        "eslesen": "NRS-2002"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "must",
+        "name": "MUST",
+        "eslesen": "MUST"
+      }
+    ],
+    "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri": [
+      {
+        "slug": "glim",
+        "name": "GLIM Kriterleri",
+        "eslesen": "GLIM Kriterleri"
+      }
+    ],
+    "nefroloji/aldosteron-mekanizmalari": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/asit-baz-denge-bozukluklari": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "nefroloji/asit-baz-kompanzasyon-ilkeleri": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "nefroloji/delta-anyon-acigi-delta-delta-orani": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "nefroloji/farmakoloji-finerenon": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/farmakoloji-finerenon-kalp-yetmezligi": [
+      {
+        "slug": "heart",
+        "name": "HEART Skoru",
+        "eslesen": "HEART"
+      }
+    ],
+    "nefroloji/iga-nefropatisi-berger": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/iga-nefropatisi-guncel-tedavi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/membranoz-nefropati-klinik": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/membranoz-nefropati-tedavi-yonetimi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/metabolik-asidoz": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/polikistik-bobrek-hastaligi-pkd": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/polikistik-bobrek-kardiyovaskuler": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/polikistik-bobrek-tedavi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/renal-tubuler-asidoz-rta-tipleri": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "nefroloji/respiratuvar-alkaloz": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "onkoloji/akciger-kanseri-ana-sayfa": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "onkoloji/febril-notropeni-mascc-indexi": [
+      {
+        "slug": "mascc",
+        "name": "MASCC Risk İndeksi",
+        "eslesen": "MASCC Risk İndeksi"
+      }
+    ],
+    "onkoloji/karaciger-kanserleri": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "onkoloji/khdak-tani-algoritma-evreleme": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "onkoloji/tls-rasburikaz-vs-allopurinol": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      }
+    ]
+  },
+  "aracKonu": {
+    "egfr": [
+      {
+        "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
+        "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/cushing-sendromu-patofizyoloji-klinik",
+        "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-adenomlari",
+        "baslik": "Hipofiz Nöroendokrin Tümörleri",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day",
+        "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/sglt2-inhibitorleri-kardiyorenal-metabolik",
+        "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+        "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/tirzepatid-kardiyorenal-koruma",
+        "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/usp8-mutasyonu-ve-pasireotid",
+        "baslik": "Cushing Hastalığı: USP8 Mutasyonu ve Pasireotid Yanıtı (İleri Okuma)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "anion-gap": [
+      {
+        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
+        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi",
+        "baslik": "Asit-Baz Denge Bozuklukları",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
+        "baslik": "Kısa Bağırsak Sendromu (KBS)",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
+        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
+        "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/metabolik-asidoz",
+        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/renal-tubuler-asidoz-rta-tipleri",
+        "baslik": "Renal Tübüler Asidoz (RTA) Tipleri",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
+    "potasyum-replasman": [
+      {
+        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
+        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
+        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
+        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "enfeksiyon/fosfomisin-klinik-rehber",
+        "baslik": "Fosfomisin",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "tft": [
+      {
+        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
+        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "eslesen": "Tiroid Fonksiyon"
+      },
+      {
+        "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
+        "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi",
+        "eslesen": "Tiroid Fonksiyon"
+      },
+      {
+        "yol": "hematoloji/makrositer-anemiler",
+        "baslik": "Makrositer Anemiler",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
+    "status-epileptikus": [
+      {
+        "yol": "endokrinoloji/hashimoto-ensefaliti",
+        "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı",
+        "eslesen": "Status Epileptikus"
+      },
+      {
+        "yol": "endokrinoloji/miksodem-psikozu",
+        "baslik": "Miksödem Psikozu (Asher Çılgınlığı) Klinik ve Patofizyolojik Kılavuzu",
+        "eslesen": "Status Epileptikus"
+      }
+    ],
+    "dst": [
+      {
+        "yol": "endokrinoloji/hipofiz-hastaliklari-ana",
+        "baslik": "Hipofiz Hastalıkları",
+        "eslesen": "Deksametazon Süpresyon Testi (DST)"
+      }
+    ],
+    "corrected-calcium": [
+      {
+        "yol": "endokrinoloji/kalsiyum-homeostazi-fizyoloji",
+        "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
+        "yol": "endokrinoloji/kalsiyum-metabolizmasi-ana",
+        "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
+        "yol": "endokrinoloji/men1-2025-kilavuz-degisimleri",
+        "baslik": "MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      }
+    ],
+    "acth-stim": [
+      {
+        "yol": "endokrinoloji/konjenital-adrenal-hiperplazi-cah",
+        "baslik": "Konjenital Adrenal Hiperplazi (CAH)",
+        "eslesen": "ACTH Stimülasyon Testi"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-protokol-adimlari",
+        "baslik": "Osilodrostat Block-and-Replace: Protokol Adımları ve Doz Şeması",
+        "eslesen": "ACTH Stimülasyon Testi"
+      },
+      {
+        "yol": "endokrinoloji/siadh-sendromu",
+        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
+        "eslesen": "ACTH Stimülasyon Testi"
+      }
+    ],
+    "tirads": [
+      {
+        "yol": "endokrinoloji/tiroid-nodullerine-yaklasim",
+        "baslik": "Tiroid Nodüllerine Yaklaşım ve TI-RADS",
+        "eslesen": "ACR TI-RADS"
+      }
+    ],
+    "child-pugh": [
+      {
+        "yol": "enfeksiyon/antibiyotikler-ana-sayfa",
+        "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-derleme",
+        "baslik": "Dalbavansin",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "enfeksiyon/tigesiklin-derleme",
+        "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
+        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-sıvısı",
+        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-yonetimi",
+        "baslik": "Asit Yönetimi ve Tıbbi Algoritmalar (AASLD/EASL Uyumlu)",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
+        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "Child-Pugh"
+      }
+    ],
+    "anaphylaxis": [
+      {
+        "yol": "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik",
+        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
+        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
+        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
+        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "hematoloji/demir-eksikligi",
+        "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "hematoloji/demir-eksikligi-anemisi",
+        "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "hematoloji/sistemik-mastositoz-sm",
+        "baslik": "Sistemik Mastositoz (SM)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
+        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "Anafilaksi"
+      }
+    ],
+    "sofa": [
+      {
+        "yol": "enfeksiyon/prokalsitonin-genel",
+        "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı",
+        "eslesen": "SOFA Skoru"
+      }
+    ],
+    "ranson": [
+      {
+        "yol": "gastroenteroloji/pankreas-hastaliklari",
+        "baslik": "Pankreas Hastalıkları: Akut, Kronik ve Neoplaziler",
+        "eslesen": "Ranson Kriterleri"
+      }
+    ],
+    "ipss-r": [
+      {
+        "yol": "hematoloji/akut-lenfoblastik-losemi-all",
+        "baslik": "Miyelodisplastik Sendromlar (MDS)",
+        "eslesen": "IPSS-R"
+      },
+      {
+        "yol": "hematoloji/miyelodisplastik-sendrom-mds",
+        "baslik": "Miyelodisplastik Sendromlar (MDS)",
+        "eslesen": "IPSS-R"
+      }
+    ],
+    "charlson": [
+      {
+        "yol": "hematoloji/aml",
+        "baslik": "Akut Miyeloid Lösemi (AML)",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      },
+      {
+        "yol": "hematoloji/aml-geriatrik-degerlendirme",
+        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      },
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "Charlson Komorbidite İndeksi"
+      }
+    ],
+    "gds-15": [
+      {
+        "yol": "hematoloji/aml",
+        "baslik": "Akut Miyeloid Lösemi (AML)",
+        "eslesen": "GDS-15"
+      },
+      {
+        "yol": "hematoloji/aml-geriatrik-degerlendirme",
+        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
+        "eslesen": "GDS-15"
+      },
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "GDS-15"
+      }
+    ],
+    "karnofsky": [
+      {
+        "yol": "hematoloji/aml",
+        "baslik": "Akut Miyeloid Lösemi (AML)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "yol": "hematoloji/aml-geriatrik-degerlendirme",
+        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "Karnofsky"
+      }
+    ],
+    "chads-vasc": [
+      {
+        "yol": "hematoloji/antikoagulasyon-stratejileri",
+        "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      },
+      {
+        "yol": "hematoloji/inme-sonrasi-gizli-af",
+        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      },
+      {
+        "yol": "kardiyoloji/aritmiler-af-vt-vf",
+        "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)",
+        "eslesen": "CHA2DS2-VASc Skoru"
+      },
+      {
+        "yol": "kardiyoloji/kardiyak-amiloidoz",
+        "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı",
+        "eslesen": "CHA2DS2-VASc"
+      }
+    ],
+    "khorana": [
+      {
+        "yol": "hematoloji/antikoagulasyon-stratejileri",
+        "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+        "eslesen": "Khorana Skoru"
+      }
+    ],
+    "ipi": [
+      {
+        "yol": "hematoloji/dlbcl",
+        "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)",
+        "eslesen": "IPI Skoru"
+      }
+    ],
+    "flipi": [
+      {
+        "yol": "hematoloji/folikuler-lenfoma",
+        "baslik": "Foliküler Lenfoma",
+        "eslesen": "FLIPI"
+      },
+      {
+        "yol": "hematoloji/kmt2d-crebbp-mutasyonlari",
+        "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi",
+        "eslesen": "FLIPI"
+      },
+      {
+        "yol": "hematoloji/m7-flipi-ngs-paneli",
+        "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri",
+        "eslesen": "FLIPI"
+      }
+    ],
+    "grace": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "GRACE"
+      }
+    ],
+    "timi-ua": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "TIMI"
+      }
+    ],
+    "endocarditis": [
+      {
+        "yol": "kardiyoloji/infektif-endokardit",
+        "baslik": "İnfektif Endokardit",
+        "eslesen": "Duke Kriterleri"
+      }
+    ],
+    "glim": [
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "GLIM Kriterleri"
+      },
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri",
+        "baslik": "GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart",
+        "eslesen": "GLIM Kriterleri"
+      }
+    ],
+    "must": [
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "MUST"
+      }
+    ],
+    "nrs-2002": [
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "NRS-2002"
+      }
+    ],
+    "heart": [
+      {
+        "yol": "nefroloji/farmakoloji-finerenon-kalp-yetmezligi",
+        "baslik": "Finerenon ve Kalp Yetmezliği",
+        "eslesen": "HEART"
+      }
+    ],
+    "mascc": [
+      {
+        "yol": "onkoloji/febril-notropeni-mascc-indexi",
+        "baslik": "MASCC Risk İndeksi ve Febril Nötropeni Risk Stratifikasyonu",
+        "eslesen": "MASCC Risk İndeksi"
+      }
+    ]
+  },
+  "olcum": {
+    "konu": 471,
+    "arac": 136,
+    "araciOlanKonu": 90,
+    "konusuOlanArac": 29,
+    "bag": 106
+  }
+}
