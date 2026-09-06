@@ -884,6 +884,50 @@ Uygulamanın kendi `envanterAl()`i sürüldü (ölçüt yeniden yazılmadı):
 vaka bağlantısı da 0'dı ve "Üyelik/Satın" 22 kez geçiyordu, yani ölçülen şey
 `AccessGate`di. Kapı arkasını ölçemediğin yerde **mekanizmayı** ölç.
 
+## 73 sayfada AI taslak uyarısı KESİKTİ (6 Eylül 2026)
+
+`benzer-govde` raporunu kovalarken çıktı. Konu sayfalarındaki `🤖` bloğu
+73 dosyada *"⚠️ Uyarı: MediSea"* diye bitiyordu — cümle yarım, okuyucu
+içeriğin yapay zekâ taslağı olduğunu **hiç öğrenmiyordu.** Canlıda doğrulandı
+(sunucu HTML'inde basılıyor, gizli değil).
+
+| varyant | dosya |
+|---|---|
+| `Uyarı: MediSea` (kesik) | 70 · biri bozuk HTML (`</strong>` eşleşmiyor, "HEmatoloji") |
+| `Uyarı: MediSea Akademik Modül` (kesik) | 3 |
+| yazarın kendi tam metni | 4 — **dokunulmadı** |
+
+Kullanıcı kararı: kısa uyarı, **taahhüt cümlesi olmasın**. Uygulanan metin —
+başlık `🤖 AI İçerik Uyarısı`, gövde *"Bu modül yapay zekâ (AI) tarafından
+oluşturulmuş bir taslaktır."* Sonuç: kesik 73 → **0**, yeni metin 73 dosyada.
+
+Başlık değişikliği ikinci bir kusuru da kapattı: `🤖` tek başına bir süsleme
+glifiydi ve İçindekiler'de yalnızca robot emojisi görünüyordu.
+
+**Biçim tuzağı — sayı tutmayınca yakalandı.** İlk sürüm ham metin değiştirmesi
+yaparken çok satırlı JSON bloğunu tek satıra indirdi: diff **73 ekleme / 133
+silme** çıktı. 1:1 olmayan bir diff biçim bozulmasıdır; geri alındı, eşleşmenin
+kendi girintisi ve satır sonu yeniden kullanıldı, diff **93/93** oldu.
+Betiğe üç nöbetçi kondu: `JSON.parse` · satır sayısı · CR sayısı.
+
+**Kalan tutarsızlık:** yazarın 4 dosyası iki ayrı biçimde
+(`🤖 AI Taslak Modülü` ×2 · `🤖 AI İçerik Uyarısı (Taslak Modülü)` ×2, ikincisi
+"yazarın notlarıyla güncellenecektir" taahhüdünü taşıyor). Aynı ilanın üç
+yazımı — birleştirmek metin kararı, kullanıcıya bırakıldı.
+
+---
+
+## `benzer-govde`: aynı konu iki kez yayında — KARAR BEKLİYOR
+
+`hematoloji/demir-eksikligi-anemisi` ↔ `hematoloji/demir-eksikligi`: başlık
+**birebir aynı** ("Demir Eksikliği Anemisi (DEA)"), 6 bölüm de aynı, fark
+tamamen kozmetik (`MCV < 80` ↔ `MCV <80`, bir noktalama). İkisi de yayında,
+ikisi de aynı ebeveynin (`mikrositer-anemiler`) altında ve **`order` ikisinde
+de 30** — yani ebeveyn sayfası aynı başlıklı iki çocuk listeliyor.
+Hangisinin kalacağı ve yönlendirme içerik kararı.
+
+---
+
 **Kalan yetimler — hepsi içerik kararı, DEĞİŞTİRİLMEDİ:**
 `pearls/nefroloji/lupus-nefriti` (3 inci, konu dosyası yok) ·
 `flashcards/endokrinoloji/akromegali` (79 kart, konu yok) ·
