@@ -1,0 +1,77 @@
+{
+  "title": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
+  "meta": {
+    "updatedAt": "06 Eyl 2026",
+    "tags": [
+      "Hematoloji",
+      "Antikoagülasyon",
+      "DOAC",
+      "Warfarin",
+      "VKA",
+      "Ajan Seçimi",
+      "Geçiş Protokolleri",
+      "Mekanik Kapak",
+      "Antifosfolipid Sendromu"
+    ],
+    "parent": "antikoagulasyon-stratejileri",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "💊 1. Etki Mekanizmaları",
+      "html": "<p>Geleneksel <strong>vitamin K antagonistleri</strong> (VKA; örn. warfarin) ve <strong>doğrudan etkili oral antikoagülanlar</strong> (DOAC; Faktör Xa inhibitörleri: apiksaban, rivaroksaban, edoksaban / doğrudan trombin inhibitörü: dabigatran) pıhtılaşma kaskadını farklı düzeylerde bloke eder.</p><p><strong>Warfarin (VKA):</strong> Karaciğerde fonksiyonel pıhtılaşma faktörlerinin (Faktör II, VII, IX, X) ve antikoagülan proteinlerin (Protein C ve S) sentezi için zorunlu olan <strong>epoksit redüktaz enzim kompleksini (VKORC1)</strong> inhibe eder. İn vivo ortamda pıhtılaşma faktörlerinin tüketilmesi zaman aldığından, warfarinin tam terapötik antikoagülasyon sağlaması <strong>3 ila 5 gün</strong> sürer. Tedavinin ilk günlerinde Protein C ve S'in kısa yarı ömürleri nedeniyle (özellikle Protein C ~6 saat) geçici bir <strong>prokoagülan (hiperkoagüle) evre</strong> oluşur; bu nedenle akut trombozlarda parenteral ajan ile örtüşme (overlap) şarttır.</p><p><strong>DOAC'lar:</strong> Doğrudan hedef odaklıdır. Apiksaban, rivaroksaban ve edoksaban serbest ve pıhtıya bağlı <strong>Faktör Xa</strong>'yı doğrudan inhibe eder. Dabigatran eteksilat bir ön ilaçtır; plazmada esterazlarla aktif formu olan dabigatrana dönüşerek serbest ve fibrin pıhtısına bağlı <strong>trombini (Faktör IIa)</strong> doğrudan inhibe eder. DOAC'lar oral alımdan <strong>2-4 saat sonra</strong> pik plazma konsantrasyonuna ve tam antikoagülan etkiye ulaşır.</p>"
+    },
+    {
+      "heading": "⚖️ 2. Farmakokinetik Karşılaştırma",
+      "html": "<table class=\"min-w-full text-xs\"><thead><tr><th>Parametre</th><th>Vitamin K antagonistleri (warfarin)</th><th>Doğrudan oral antikoagülanlar (DOAC)</th></tr></thead><tbody><tr><td><strong>Etki başlangıcı</strong></td><td>Yavaş (3-5 gün)</td><td>Hızlı (2-4 saat)</td></tr><tr><td><strong>Yarı ömür</strong></td><td>Uzun (36-42 saat)</td><td>Kısa (10-14 saat)</td></tr><tr><td><strong>Dozaj</strong></td><td>Değişken (INR takibine göre titre edilir)</td><td>Sabit / fiks doz (böbrek, yaş, kilo ayarlı)</td></tr><tr><td><strong>Rutin izlem</strong></td><td>Zorunlu (PT/INR)</td><td>Gerekmez</td></tr><tr><td><strong>Terapötik indeks</strong></td><td>Dar (INR 2.0-3.0 hedefi)</td><td>Geniş</td></tr><tr><td><strong>Diyet etkileşimi</strong></td><td>Çok fazla (yeşil yapraklı sebzeler - K vitamini)</td><td>Yok (rivaroksaban yemekle alınmalı)</td></tr><tr><td><strong>İlaç etkileşimi</strong></td><td>Çok fazla (CYP2C9 ve diyet)</td><td>Daha az (güçlü CYP3A4 ve P-gp inhibitör/indükleyicileri)</td></tr><tr><td><strong>Yarıda kesme etkisi</strong></td><td>Uzun sürede geriler (5 gün hold gerekir)</td><td>Hızlı geriler (24-48 saatte temizlenir)</td></tr></tbody></table>"
+    },
+    {
+      "heading": "⏳ 3. Doz Kaçırmanın Sonucu: Yarı Ömür Farkının Klinik Karşılığı",
+      "html": "<p><strong>Klinik uyarı (uyum ve yarıda kesme):</strong> Warfarinin yarı ömrü çok uzundur; bu nedenle <strong>birkaç dozun kaçırılması</strong> antikoagülan etkiyi dramatik olarak bozmaz. Ancak DOAC'ların yarı ömrü kısa olduğundan, <strong>tek bir dozun dahi kaçırılması hastayı hızla antikoagülasyon korumasından çıkarır</strong> ve tromboz riskini artırır. Uyum sorunu öngörülen hastada ajan seçimi bu farka göre değerlendirilmelidir.</p>"
+    },
+    {
+      "heading": "🎯 4. Etkinlik: İnme ve VTE Önlenmesi",
+      "html": "<ul class=\"mb-4\"><li><strong>İnme önleme (AF):</strong> Non-valvüler atriyal fibrilasyonda inme profilaksisi için yapılan çalışmalarda (<strong>RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF-TIMI 48</strong>) DOAC'ların inme ve sistemik emboliyi önlemede warfarine kıyasla <strong>non-inferior veya superior</strong> olduğu gösterilmiştir. <strong>Dabigatran 150 mg BID</strong> ve <strong>apiksaban 5 mg BID</strong> inme oranlarını azaltmada warfarine üstünlük sağlamıştır.</li><li><strong>VTE tedavisi ve sekonder profilaksi:</strong> DOAC'lar akut DVT/PE tedavisinde standart heparin/warfarin köprüsüne kıyasla benzer etkinlik profiline sahiptir. <strong>Apiksaban ve rivaroksaban</strong> parenteral başlangıç tedavisi gerektirmeyen <strong>monoterapilerdir.</strong></li></ul>"
+    },
+    {
+      "heading": "🩸 5. Güvenlik: Kanama Profili",
+      "html": "<ul class=\"mb-4\"><li><strong>İntrakraniyal hemoraji (ICH) üstünlüğü:</strong> DOAC'ların en belirgin güvenlik avantajı, intrakraniyal kanama riskini warfarine kıyasla <strong>%50'ye yakın oranda azaltmalarıdır.</strong> 2024 tarihli güncel bir meta-analiz, DOAC tedavisinin (özellikle apiksaban) intrakraniyal kanama riskinin <strong>tekli antiplatelet tedavi (aspirin) ile benzer düzeyde</strong> güvenli olduğunu ortaya koymuştur.</li><li><strong>Gastrointestinal kanama riski:</strong> Genel güvenlik üstünlüğüne rağmen <strong>dabigatran 150 mg, rivaroksaban 20 mg ve edoksaban 60 mg</strong> alan hastalarda gastrointestinal kanama riski warfarine göre daha yüksektir.</li><li><strong>Klinik not:</strong> <strong>Apiksaban (5 mg BID)</strong>, warfarine kıyasla ne majör kanamayı ne de Gİ kanama riskini anlamlı düzeyde artıran bir sinyal göstermeyen, DOAC'lar arasındaki <strong>en güvenli Gİ kanama profiline</strong> sahip ajandır.</li><li><strong>Yaşlı hastalar (≥ 75 yaş):</strong> Network meta-analizlerinde yaşlı AF hastalarında DOAC kullanımı, warfarine kıyasla tüm nedenlere bağlı mortaliteyi ve intrakraniyal kanama riskini azaltmada üstün bulunmuştur.</li></ul>"
+    },
+    {
+      "heading": "🤢 6. Ajana Özgü Yan Etkiler",
+      "html": "<p><strong>Dispepsi (dabigatran):</strong> Dabigatran, asidik emilim ortamı sağlamak üzere formülasyonunda <strong>tartarik asit çekirdeği</strong> içerir. Bu nedenle hastaların <strong>yaklaşık %10'unda</strong> ciddi dispepsi ve reflü benzeri şikâyetlere yol açar; bu etki warfarine kıyasla anlamlı derecede yüksektir ve tedavi bırakmanın sık nedenlerindendir.</p><p><strong>Anormal uterus kanaması (AUB / HMB):</strong> Reprodüktif yaştaki kadınlarda DOAC'lar arasında AUB riski açısından belirgin sınıf farklılığı vardır ve bu fark ajan seçimini doğrudan etkiler. Ayrıntılar, oranlar ve dozla ilgili yaklaşım için <strong>Antikoagülasyon Stratejileri</strong> sayfasının ilgili bölümüne bakınız.</p>"
+    },
+    {
+      "heading": "🚫 7. Warfarin'in Rakipsiz Olduğu Durumlar (DOAC Kontrendike)",
+      "html": "<p>Kılavuzlar genel popülasyonda DOAC'ları warfarine tercih etse de (Sınıf 1A), bazı klinik tablolarda warfarin hâlâ tek seçenektir.</p><ul class=\"mb-4\"><li><strong>Mekanik kalp kapakları:</strong> <strong>RE-ALIGN</strong> çalışmasında mekanik kalp kapağı olan hastalarda dabigatran kullanımı, warfarin grubuna kıyasla hem <strong>kapak trombozu / inme oranlarını</strong> hem de <strong>majör kanama riskini</strong> masif düzeyde artırdığından çalışma erken sonlandırılmıştır. Tüm mekanik kapaklarda DOAC'lar <strong>kesinlikle kontrendikedir.</strong></li><li><strong>Romatizmal mitral stenoz (orta-ileri derece):</strong> Yüksek sol atriyal basınç ve staz nedeniyle kardiyoemboli riski çok yüksektir; DOAC'ların etkinliği bu grupta kanıtlanmamıştır. <strong>Warfarin altın standarttır.</strong></li><li><strong>Antifosfolipid sendromu (APS):</strong> <strong>TRAPS</strong> çalışmasında üçlü pozitif (triple positive) APS hastalarında rivaroksaban kullanımı, warfarin grubuna kıyasla <strong>arteriyel tromboz (özellikle inme) ve majör kanama sıklığını</strong> anlamlı ölçüde artırmıştır. Arteriyel tromboz geçmişi olan veya yüksek riskli APS hastalarında tedavi <strong>warfarin</strong> ile hedef INR 2.0-3.0 (duruma göre 2.5-3.5) aralığında sürdürülmelidir.</li></ul>"
+    },
+    {
+      "heading": "✅ 8. DOAC'ın Tercih Edilmesi Gereken Durumlar",
+      "html": "<ul class=\"mb-4\"><li><strong>Non-valvüler atriyal fibrilasyon:</strong> İnme profilaksisinde DOAC'lar warfarine kesin olarak tercih edilmelidir.</li><li><strong>Stabil koroner arter hastalığı + AF:</strong> <strong>AFIRE</strong> çalışması bulguları uyarınca, 12 ayı doldurmuş stabil KAH ve AF birlikteliğinde <strong>DOAC monoterapisi</strong>, DOAC + tekli antiplatelet kombinasyonuna göre kanamaları azaltırken iskemik olayları benzer düzeyde önlediğinden standart tedavi olmalıdır.</li><li><strong>Venöz tromboemboli (DVT/PE):</strong> İlk 3-6 aylık tedavi ve uzatılmış profilaksi fazlarında DOAC'lar warfarinden daha güvenli ve konforludur.</li><li><strong>Düşük INR kararlılığı (TTR &lt; %70):</strong> Warfarin altında olup diyet veya ilaç etkileşimleri nedeniyle <strong>terapötik aralıkta kalma süresi (TTR)</strong> %70'in altında kalan hastalar mutlaka bir DOAC'a geçirilmelidir.</li></ul>"
+    },
+    {
+      "heading": "🧩 9. Özel Popülasyon: Aşırı Kilolu ve Obez Hastalar",
+      "html": "<p><strong>BMI ≥ 40 kg/m² veya kilo ≥ 120 kg:</strong> ISTH önerileri doğrultusunda bu hastalarda <strong>apiksaban veya rivaroksaban</strong> standart dozlarda kullanılabilir; <strong>dabigatran ve edoksabanın</strong> bu popülasyondaki klinik verisi yetersiz olduğundan kaçınılmalıdır.</p>"
+    },
+    {
+      "heading": "🔄 10. Geçiş (Switch) Protokolleri: Genel İlke",
+      "html": "<p>Bir antikoagülandan diğerine geçerken temel klinik amaç, <strong>antikoagülasyonda boşluk (gap) bırakmamak</strong> ve aynı zamanda <strong>supraterapötik düzeylere yol açarak kanama riskini artırmamaktır.</strong></p><p>Warfarin'den DOAC'a geçişte eşik INR değeri ajana göre değişir:</p><table class=\"min-w-full text-xs\"><thead><tr><th>Geçilecek ajan</th><th>Warfarin kesildikten sonra başlama eşiği</th></tr></thead><tbody><tr><td><strong>Dabigatran</strong></td><td>INR &lt; 2.0</td></tr><tr><td><strong>Apiksaban</strong></td><td>INR &lt; 2.0</td></tr><tr><td><strong>Edoksaban</strong></td><td>INR ≤ 2.5</td></tr><tr><td><strong>Rivaroksaban</strong></td><td>INR &lt; 3.0</td></tr></tbody></table><p><strong>Ters yönde (DOAC'tan warfarine) eşik yoktur, örtüşme vardır:</strong> warfarin yavaş etki gösterdiğinden DOAC doğrudan kesilemez; INR terapötik olana kadar iki ajan birlikte sürdürülür. Bu süreçte <strong>INR ölçümü mutlaka bir sonraki DOAC dozundan hemen önce (trog seviyesinde) yapılmalıdır</strong> — DOAC'lar INR'yi yapay olarak yükseltir.</p>"
+    },
+    {
+      "heading": "➡️ 11. Warfarin'den DOAC'a Geçiş",
+      "html": "<p>Warfarin kesilir, INR takibi yapılır ve her DOAC için tanımlanmış eşik değere ulaşıldığında tedavi başlatılır:</p><ul class=\"mb-4\"><li><strong>Dabigatran:</strong> Warfarin durdurulur; <strong>INR &lt; 2.0</strong> olduğunda başlanır.</li><li><strong>Apiksaban:</strong> Warfarin durdurulur; <strong>INR &lt; 2.0</strong> olduğunda başlanır.</li><li><strong>Edoksaban:</strong> Warfarin durdurulur; <strong>INR ≤ 2.5</strong> olduğunda başlanır.</li><li><strong>Rivaroksaban:</strong> Warfarin durdurulur; yetersiz koagülasyon dönemini önlemek amacıyla <strong>INR &lt; 3.0</strong> olduğunda derhal başlanır.</li></ul>"
+    },
+    {
+      "heading": "⬅️ 12. DOAC'tan Warfarin'e Geçiş",
+      "html": "<p><strong>Dabigatran'dan warfarine:</strong> Böbrek fonksiyonuna göre belirlenen gün sayısı kadar iki ilaç birlikte (overlap) kullanılır.</p><ul class=\"mb-4\"><li><strong>CrCl ≥ 50 mL/dk:</strong> Dabigatran kesilmeden <strong>3 gün önce</strong> warfarin başlanır.</li><li><strong>CrCl 30-50 mL/dk:</strong> Dabigatran kesilmeden <strong>2 gün önce</strong> warfarin başlanır.</li><li><strong>CrCl 15-30 mL/dk:</strong> Dabigatran kesilmeden <strong>1 gün önce</strong> warfarin başlanır.</li></ul><p>Dabigatran PT/INR testini yapay olarak uzatabileceğinden, bu geçişte INR ölçümü <strong>bir sonraki dabigatran dozundan hemen önce (trog seviyesinde)</strong> yapılmalıdır.</p><p><strong>Apiksaban veya rivaroksabandan warfarine — iki seçenek:</strong></p><ul class=\"mb-4\"><li><strong>Parenteral köprü (üretici önerisi):</strong> DOAC kesilir. Bir sonraki doz zamanında <strong>terapötik dozda parenteral antikoagülan (örn. LMWH)</strong> ile birlikte <strong>warfarin</strong> başlanır. INR terapötik düzeye (<strong>≥ 2.0</strong>) ulaştığında parenteral ajan kesilir, warfarin tek başına devam eder.</li><li><strong>Oral örtüşme (ASH önerisi):</strong> DOAC kesilmeden eş zamanlı olarak warfarin başlanır; <strong>INR terapötik olana dek iki oral ajan birlikte sürdürülür.</strong> Faktör Xa inhibitörleri INR'yi yapay olarak yükseltebileceğinden testler <strong>mutlaka bir sonraki DOAC dozundan hemen önceki trog döneminde</strong> yapılmalıdır.</li></ul><p><strong>Edoksabandan warfarine (doz azaltma seçeneği, ürün bilgisi):</strong> Edoksaban dozu <strong>yarıya düşürülür</strong> (60 mg alan hastada 30 mg'a, 30 mg alan hastada 15 mg'a) ve eş zamanlı olarak <strong>warfarin</strong> başlanır. INR haftalık olarak (bir sonraki edoksaban dozundan hemen önce) takip edilir; <strong>INR ≥ 2.0</strong> olduğunda edoksaban tamamen kesilir.</p>"
+    },
+    {
+      "heading": "🔁 13. DOAC'tan DOAC'a ve Parenteral Ajanlarla Geçiş",
+      "html": "<ul class=\"mb-4\"><li><strong>DOAC'tan farklı bir DOAC'a:</strong> Örtüşme dönemine gerek yoktur. Mevcut DOAC kesilir; <strong>bir sonraki dozun verilmesi gereken saat geldiğinde</strong> doğrudan yeni DOAC başlanır.</li><li><strong>LMWH'den DOAC'a:</strong> LMWH <strong>günde iki kez (BID)</strong> kullanılıyorsa son dozdan <strong>6-12 saat sonra</strong>; <strong>günde tek kez (QD)</strong> kullanılıyorsa son dozdan <strong>12-24 saat sonra</strong> ilk DOAC dozu verilir.</li><li><strong>İntravenöz UFH'den DOAC'a:</strong> Sürekli UFH infüzyonu <strong>kapatıldığı andan itibaren</strong> ilk DOAC dozu hemen verilebilir; örtüşme yapılması supraterapötik etkiye yol açacağından <strong>kontrendikedir.</strong></li></ul>"
+    },
+    {
+      "heading": "🚨 14. Acil Reversiyon",
+      "html": "<p>Antikoagülan alan ve majör / hayatı tehdit eden kanaması olan ya da acil cerrahiye girecek hastalarda reversiyon stratejisi hayati önem taşır: dabigatran için idarusizumab ve hemodiyaliz, Faktör Xa inhibitörleri için 4F-PCC, warfarin için vitamin K + 4F-PCC.</p><p>Ajan bazında dozlar, andeksanet alfanın güncel durumu, diyaliz edilebilirlik oranları ve özet tablo için:</p><div class=\"mt-2\"><a href=\"/topics/hematoloji/antikoagulasyon-stratejileri\" class=\"block p-5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300 hover:text-blue-800 transition-all\">Antikoagülasyon Stratejileri — kanama yönetimi ve reversiyon protokolleri <span class=\"float-right text-slate-300\">→</span></a></div>"
+    }
+  ]
+}

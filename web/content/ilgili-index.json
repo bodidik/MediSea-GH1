@@ -2665,11 +2665,6 @@
    "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar"
   },
   {
-   "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "kalp-yetersizligi-arni-etkilesimler",
    "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
@@ -2678,6 +2673,16 @@
    "brans": "endokrinoloji",
    "slug": "men1-insulinoma",
    "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "enfeksiyon/tigesiklin-uyarilar-yan-etkiler": [
@@ -3908,23 +3913,8 @@
  "hematoloji/inme-sonrasi-gizli-af": [
   {
    "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "hematoloji/itp-tanisal-yaklasim": [
@@ -4523,23 +4513,8 @@
  "hematoloji/trombofililer-hiperkoagulabilite": [
   {
    "brans": "hematoloji",
-   "slug": "hemofililer-ve-sekonder-hemostaz",
-   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "porfiriler-aip-pct",
-   "baslik": "Porfiriler (AİP ve PCT)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "von-willebrand-hastaligi-vwd",
-   "baslik": "von Willebrand Hastalığı (vWD)"
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "hematoloji/trombosit-hastaliklari-genel-bakis": [
@@ -4586,6 +4561,23 @@
    "brans": "hematoloji",
    "slug": "trombositopeni-itp",
    "baslik": "İmmün Trombositopeni (ITP)"
+  }
+ ],
+ "hematoloji/vka-doac-karsilastirma": [
+  {
+   "brans": "hematoloji",
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-ilac-etkilesimleri",
+   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   }
  ],
  "hematoloji/von-willebrand-hastaligi-vwd": [
