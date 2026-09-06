@@ -71,6 +71,40 @@ Dört alan da zorunlu — 35 enfeksiyon dosyasının **hepsi** bu kalıpta.
   (`text-sm leading-relaxed mb-4 text-slate-700`); yeni renk/boyut uydurma,
   okuma alanının kendi tabanları var.
 
+## Hub özet kalır, ayrıntı çocuk sayfada
+
+Bir başlık şişmeye başladığında **hub sayfayı özete indir, ayrıntıyı çocuk
+sayfaya taşı ve hub'a bir kart bağlantısı bırak.** Ayrıntı okumak isteyen
+oraya kayar; hızlı bakan özetle işini görür.
+
+**Kural: veri KOPYALANMAZ, TAŞINIR.** Aynı sayı ya da eşik iki dosyada
+dururken biri güncellenince öteki sessizce sapar (CLAUDE.md'deki "iki
+gerçeklik" sınıfı). Hub'da yalnızca karar satırı kalır, nicel ayrıntı ve
+çalışma verisi çocuğa gider.
+
+Kart bağlantısının deposdaki kalıbı (`losemiler.json`, `subklinik-tiroid-
+hastaliklari.json` de aynısını kullanıyor):
+
+```html
+<div class="mt-2"><a href="/topics/<branş>/<çocuk-slug>"
+   class="block p-5 bg-slate-50 border border-slate-200 rounded-2xl
+          text-slate-700 font-bold hover:bg-blue-50 hover:border-blue-300
+          hover:text-blue-800 transition-all">Ayrıntı: <ne bulacağı>
+   <span class="float-right text-slate-300">→</span></a></div>
+```
+
+Çocuğun `parent`'ı hub'ın slug'ı olmalı — o zaman kırıntı, branş sayfası
+ve "İlgili Konular" kendiliğinden bağlanır.
+
+**Doğrulaması:** taşınan veriyi bir dizeyle ara ve **iki dosyada birden
+geçmediğini** gör; sonra iki sayfayı da render edip bağlantının kurulduğunu
+ölç. `link-denetim.cjs` kırık adresi yakalar ama **kopyayı yakalamaz.**
+
+İlk uygulama: `antikoagulasyon-stratejileri` 6. bölümü özete indi,
+`inme-sonrasi-gizli-af` ayrıntıyı aldı (6 Eylül 2026).
+
+---
+
 ## Konu girdikten sonra çalıştırılacaklar
 
 ```bash
