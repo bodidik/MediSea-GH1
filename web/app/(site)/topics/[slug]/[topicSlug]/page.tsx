@@ -577,7 +577,7 @@ export default async function TopicDetailPage({
               çekiliyor, ekrandaki metin miktarı yine 16px dönemininkinden
               fazla kalıyor. Serbest kalan sütun kenar çubuğuna geçti (4 → 5),
               yoksa ızgarada boşluk kalırdı. */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-8 sm:max-w-[35rem]">
             {/* mt-0 — DOLGU NE DIYORSA O OLSUN. globals.css h1/h2/h3'e 24px
                 ust marj veriyor; o marj bu kutunun ICINE sizip py-2 ilanini
                 yalanliyordu. Olculdu (375px, canli, YEDI konuda da AYNI):
@@ -739,6 +739,37 @@ export default async function TopicDetailPage({
                 demek. `sm` (640px) ve üstünde dolgu DEĞİŞMİYOR; kazanç
                 tümüyle telefonda. 16px de ölçüldü (37 / 29 karakter,
                 -%9.7 / -%14.1) ama 40px köşe yarıçapının içine giriyor. */}
+            {/* SATIR UZUNLUĞU SABİTLENDİ — max-w-[70ch].
+                Sütunu 12'de 7'ye indirmek yetmedi: satır 1280px'te 91,
+                1440px'te 105 karakterdi, çünkü sınırlayan şey oran değil dış
+                kabın 1400px'i. Üst genişlik satırı ekran genişliğinden
+                BAĞIMSIZ kılıyor.
+
+                DEĞER ÖLÇÜMLE SEÇİLDİ, `ch` KULLANILMADI — iki kez yanılttı:
+
+                1. `ch` "0" karakterinin genişliği, düz metnin ortalama
+                   karakteri ondan DAR. Ölçüldü (14px): 1ch = 8.8px,
+                   ortalama karakter = 6.6px → `70ch` 70 değil **93**
+                   karakter veriyordu.
+                2. `ch` YAZI BOYUTUNA bağlı. Kısıt karttan sütuna taşınınca
+                   `ch` sütunun 16px'iyle hesaplandı (kartın 14px'iyle
+                   değil) ve satır 69'dan 79'a çıktı.
+
+                Bu yüzden değer sabit: 70 karakter × 6.6px = 462px metin,
+                + 96px dolgu (`box-sizing: border-box` dolguyu da kapsıyor)
+                ≈ **35rem**.
+
+                ÜST GENİŞLİK KARTTA DEĞİL SÜTUNDA: yalnızca okuma kartına
+                verilince kart, aynı sütundaki kardeşlerinden ("Alt
+                Başlıklar", "Bu Sayfada") dar kalıyor ve kenarları
+                hizalanmıyordu.
+
+                KIRILMA `sm:` (640px) — YAZI KURALIYLA AYNI NOKTA. Bir tur
+                `lg:` denendi ve ölçüm kusuru gösterdi: 768px tablette yazı
+                zaten 14px'e inmiş ama üst genişlik henüz devrede değildi,
+                satır **94 karakter** çıkıyordu — küçük yazı + uzun satır,
+                en kötü bileşim. `globals.css`teki 14px kuralı 641px'ten
+                başlıyor; ikisi ayrışırsa bu kusur geri gelir. */}
             <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-5 sm:p-8 md:p-12 space-y-10">
               {/* Ziyaretçiye görünen hata kartı.
                   Eskiden site SAHİBİNE yazılmıştı: dosya yolu, "geçerli bir
