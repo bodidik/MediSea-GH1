@@ -2681,6 +2681,11 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
@@ -2911,6 +2916,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-diyetsel-yag-riski",
    "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
   {
    "brans": "gastroenteroloji",
@@ -3913,6 +3923,11 @@
  "hematoloji/inme-sonrasi-gizli-af": [
   {
    "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
@@ -3966,6 +3981,38 @@
    "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
    "baslik": "Hemolitik Anemiler"
+  }
+ ],
+ "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak-beslenme",
+   "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "espen-enteral-beslenme-intoleransi",
+   "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "klinik-nutrisyon-ana-unite",
+   "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-ilac-etkilesimleri",
+   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   }
  ],
  "hematoloji/kll": [
@@ -4564,6 +4611,11 @@
   }
  ],
  "hematoloji/vka-doac-karsilastirma": [
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
   {
    "brans": "hematoloji",
    "slug": "trombofililer-hiperkoagulabilite",
@@ -5320,6 +5372,11 @@
    "brans": "klinik-nutrisyon",
    "slug": "peg-enteral-beslenme-refeeding",
    "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   }
  ],
  "klinik-nutrisyon/klinik-nutrisyon-ana-unite": [
@@ -5327,6 +5384,11 @@
    "brans": "klinik-nutrisyon",
    "slug": "enteral-parenteral",
    "baslik": "Ch 328: Nütrisyonel Destek Tedavisi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   }
  ],
  "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri": [
