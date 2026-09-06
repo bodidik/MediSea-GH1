@@ -429,6 +429,13 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "hematoloji/trombositopenide-antikoagulasyon": [
+      {
+        "slug": "4t-hit",
+        "name": "4T Skoru — HIT",
+        "eslesen": "4T Skoru"
+      }
+    ],
     "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
       {
         "slug": "egfr",
@@ -700,6 +707,41 @@
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
         "eslesen": "Anafilaksi"
+      }
+    ],
+    "romatoloji/behcet-hasar-indeksleri": [
+      {
+        "slug": "behcet",
+        "name": "Behçet — ICBD 2014",
+        "eslesen": "Behçet"
+      }
+    ],
+    "romatoloji/behcet-hastaligi-yonetimi": [
+      {
+        "slug": "behcet",
+        "name": "Behçet — ICBD 2014",
+        "eslesen": "Behçet"
+      }
+    ],
+    "romatoloji/behcet-vaskuler-tutulum": [
+      {
+        "slug": "behcet",
+        "name": "Behçet — ICBD 2014",
+        "eslesen": "Behçet"
+      }
+    ],
+    "romatoloji/hughes-stovin-sendromu": [
+      {
+        "slug": "behcet",
+        "name": "Behçet — ICBD 2014",
+        "eslesen": "Behçet"
+      }
+    ],
+    "romatoloji/norobehcet-tedavi-algoritmasi": [
+      {
+        "slug": "behcet",
+        "name": "Behçet — ICBD 2014",
+        "eslesen": "Behçet"
       }
     ]
   },
@@ -1118,6 +1160,13 @@
         "eslesen": "FLIPI"
       }
     ],
+    "4t-hit": [
+      {
+        "yol": "hematoloji/trombositopenide-antikoagulasyon",
+        "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar",
+        "eslesen": "4T Skoru"
+      }
+    ],
     "grace": [
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
@@ -1171,13 +1220,40 @@
         "baslik": "MASCC Risk İndeksi ve Febril Nötropeni Risk Stratifikasyonu",
         "eslesen": "MASCC Risk İndeksi"
       }
+    ],
+    "behcet": [
+      {
+        "yol": "romatoloji/behcet-hasar-indeksleri",
+        "baslik": "Behçet Sendromunda Hasar İndeksleri: BODI ve BDI",
+        "eslesen": "Behçet"
+      },
+      {
+        "yol": "romatoloji/behcet-hastaligi-yonetimi",
+        "baslik": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması",
+        "eslesen": "Behçet"
+      },
+      {
+        "yol": "romatoloji/behcet-vaskuler-tutulum",
+        "baslik": "Behçet Sendromunda Vasküler Tutulum ve YDUS Yönetimi",
+        "eslesen": "Behçet"
+      },
+      {
+        "yol": "romatoloji/hughes-stovin-sendromu",
+        "baslik": "Hughes-Stovin Sendromu: Vasküler Behçet Varyantı",
+        "eslesen": "Behçet"
+      },
+      {
+        "yol": "romatoloji/norobehcet-tedavi-algoritmasi",
+        "baslik": "Nöro-Behçet: Siklosporin Kontrendikasyonu ve Tedavi Algoritması",
+        "eslesen": "Behçet"
+      }
     ]
   },
   "olcum": {
     "konu": 475,
     "arac": 136,
-    "araciOlanKonu": 88,
-    "konusuOlanArac": 29,
-    "bag": 105
+    "araciOlanKonu": 94,
+    "konusuOlanArac": 31,
+    "bag": 111
   }
 }

@@ -23,6 +23,10 @@
  *  3. JS `\b` ASCII'ye göre çalışıyor — `Ü`, `ş`, `ı` sınırı delmiyor.
  *     Kelime sınırı ELLE kuruluyor.
  *
+ *  5. UZUN TİRE parantezle aynı işi görür. "4T Skoru — HIT" adının tek
+ *     takma adı kendisiydi; uzun tiresiyle birlikte hiçbir metinde
+ *     geçmediği için bu araç HİÇBİR konuya bağlanamıyordu (Behçet ve
+ *     Kt/V de aynı durumdaydı). Çare: tirenin de yalnızca ÖNÜ alınır. *
  *  4. Kısaltma BİLEŞİK ÖZEL ADIN parçası olabilir. `TIMI` aracı
  *     "ENGAGE AF-TIMI 48" ÇALIŞMA ADINDAN eşleşiyordu; sayfanın TIMI
  *     risk skoruyla ilgisi yok. Üç harf eleyicisi (tuzak 3 altındaki
@@ -69,6 +73,13 @@ function takmaAdlar(name) {
   // Parantezin yalnızca ÖNÜ. İÇİ alınmaz — tuzak 2.
   const par = temel.match(/^(.*?)\s*\([^)]*\)\s*$/);
   if (par) ekle(par[1]);
+  // UZUN TİRE de parantezle aynı işi görüyor: sağındaki niteleyici adın
+  // parçası değil (tuzak 5). "4T Skoru — HIT" · "Behçet — ICBD 2014" ·
+  // "Kt/V — Daugirdas II" — üçü de yalnızca tam adıyla aranıyordu ve o ad
+  // uzun tiresiyle birlikte metinde HİÇ geçmiyor, yani üç araç da hiçbir
+  // konuya bağlanamıyordu.
+  const tire = temel.match(/^(.*?)\s*[—–]\s*.+$/);
+  if (tire) ekle(tire[1]);
   for (const s of [...set]) ekle(s.replace(TUR, ""));
   return [...set].filter((a) => !belirsizKisaltma(a));
 }
