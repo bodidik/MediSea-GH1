@@ -26,18 +26,29 @@ npm run build      # CI 4. kapı
 ### ⚠ CI ÜÇ ADIM DEĞİL — bu satır bir kez yanlış yazıldı ve 1,5 gün kırmızıya mal oldu
 
 Bu bölüm bir dönem *"CI sırayla `npm ci → lint → typecheck → build` çalıştırır"*
-diyordu. YANLIŞTI. `.github/workflows/ci.yml` **on beş adım** çalıştırıyor ve
-`build` EN SONDA:
+diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün **yirmi bir adım**
+çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci), **on sekizi kapı**.
+Sıra şu ve `build` EN SONDA:
 
 ```
 npm ci → lint → typecheck
   → link-denetim → soru-denetim
   → arac-metadata --kontrol → baslik-index --kontrol → ilgili-index --kontrol
+  → arac-konu-index --kontrol
   → arayuz-denetim (+ --negatif)
   → ic-bilesen-denetim (+ --negatif)
   → saydamlik-denetim --kapi (+ --negatif)
   → renk-cifti-denetim --kapi (+ --negatif)
+  → yorum-korlugu-denetim
   → build
+```
+
+**BU SAYIYI OKUMA, SAYDIR** — liste bir kez 15 yazıyordu, gerçek 17'ydi;
+sonra `arac-konu-index` eklendi ve fark CI'ı kırmızıya düşürdü:
+
+```bash
+grep -c '^        - name:' .github/workflows/ci.yml   # Web + Server işleri
+sed -n '/name: Web/,/name: Server/p' .github/workflows/ci.yml | grep '- name:'
 ```
 
 Bedeli ölçüldü: `ilgili-index --kontrol` düştüğü için **97 koşum boyunca
@@ -50,7 +61,7 @@ Yerelde HEPSİNİ sürmenin yolu (`npm ci` BİLEREK yok — çalışan ortamı b
 
 ```bash
 cd web
-for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"; do
+for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol" "arac-konu-index.cjs --kontrol"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"          yorum-korlugu-denetim.cjs; do
   node scripts/$k >/dev/null 2>&1 && echo "OK    $k" || echo "DUSTU $k"
 done
 npm run lint && npm run typecheck
@@ -559,6 +570,7 @@ anında çalışan sayfalarda **sıfır** çıkıyordu. Sayımlar `content/`ten 
 ```
 link-denetim · soru-denetim
 arac-metadata --kontrol · baslik-index --kontrol · ilgili-index --kontrol
+arac-konu-index --kontrol
 arayuz-denetim (+ --negatif) · ic-bilesen-denetim (+ --negatif)
 saydamlik-denetim --kapi (+ --negatif) · renk-cifti-denetim --kapi (+ --negatif)
 yorum-korlugu-denetim   (meta test: 15 denetimi tohumlu agacta surer)
@@ -763,7 +775,7 @@ Yeni bir yüzeye dokunurken bunları sor. Hepsi bu depoda ölçüldü.
 | branş · açık konu | 13 · **423** |
 | klinik araç | **136** |
 | premium başlık · soru · kart · vaka | 44 · **454** · 1492 · 11 |
-| CI | **20 adım**, son koşumlar yeşil |
+| CI | Web işi **21 adım** (18 kapı), son koşumlar yeşil |
 | duyurusu olan araç | **105 / 136** |
 
 **Dört yüzey birbirini tutuyor** (ana sayfa · `/topics` · `/tools` ·
@@ -1002,21 +1014,39 @@ elle üretilen indeks).
 
 | ölçüt | değer |
 |---|---|
-| bağ · araç önerilen konu · konusu olan araç | **106 · 90 · 29** |
+| bağ · araç önerilen konu · konusu olan araç | **105 · 88 · 29** (6 Eyl 2026) |
 | araç sayfasında | "Bu aracın geçtiği konular" (`arac-metadata.cjs` basıyor, 136 layout) |
 | konu sayfasında | "İlgili Hesaplayıcılar" |
 
-**Ölçüt ÜÇ kez yanlış pozitif verdi:**
+**Ölçüt DÖRT kez yanlış pozitif verdi:**
 
 | tuzak | örnek | çare |
 |---|---|---|
 | Türkçe kelime çakışması | `ESAS` aracı **"esas"** kelimesiyle 10 sahte konuda | kısa BÜYÜK harf takma ad küçük/büyük **duyarlı** aranır |
 | parantez içi kısaltma | `(PPI)` proton pompa inhibitörü, `(DVT)` hastalığın kendisi | parantezin **içi** takma ad sayılmaz, yalnızca önü |
 | üç harfli kısaltma | `CAT` → kansere bağlı tromboz | 4 harften kısa büyük-harf takma ad elenir |
+| **bileşik özel ad** | `AF-TIMI 48` · `FINE-HEART` · `EGFR-mutant` · `m7-FLIPI` | tire ile alfanümerik komşuya bağlı geçiş sayılmaz (`serbestGecisVarMi`) |
 
 **Nadirlik ayraç DEĞİL — denendi, çürütüldü.** `Anafilaksi` 9 konuda ve
 DOĞRU, `PPI` 10 konuda ve YANLIŞ. Ayraç sıklık değil, takma adın KAYNAĞI.
 (`ilgili-index` nadirlikle çalışıyor; aynı ilke buraya taşınmıyor.)
+
+**Dördüncü tuzak neden ilk üçüne takılmadı (6 Eylül 2026):** TIMI · HEART ·
+FLIPI · eGFR **dörder harf**, üç harf eleyicisi tutmuyor. Eşiği dörde
+çıkarmak SOFA · PERC · FOUR · RASS · GNRI · ESAS gibi meşru araçları da
+elerdi — yapılmadı. En ağırı `eGFR`: takma ad tamamı büyük harf olmadığı
+için küçük/büyük **duyarsız** aranıyor, o yüzden onkogen `EGFR` ile eşleşti
+ve bir akciğer kanseri özetine böbrek hesaplayıcısı bağlandı. Çare dar:
+aynı takma ad metinde başka yerde SERBEST geçiyorsa bağ yine kurulur.
+
+Ölçüm: gerçek ağaçta bağ **109 → 105** (tam da o dördü); `chase-less-skoru`
+iki doğru bağını koruyor, `heart` 0'a düştü çünkü tek bağı zaten sahteydi.
+
+**TOHUM TUZAĞI — üç negatif kontrol de yanlışlıkla DÜŞTÜ.** Tohum konularını
+`"Bileşik TIMI"` diye adlandırmıştım; `govde` başlığı da içerdiği için
+serbest geçiş **başlıktan sızıyordu**. Kusur kodda değil tohumdaydı.
+**Tohumun kendi adı ölçülen dizeyi TAŞIMAMALI** — bu, `study-backup`
+ölçümündeki uydurma `sure` alanıyla aynı sınıf.
 
 Doğrulama üretim derlemesinin HTML'inden yapıldı — dev sunucusu başka bir
 oturuma aitti. Pozitif: `/tools/chads-vasc`te blok ve
