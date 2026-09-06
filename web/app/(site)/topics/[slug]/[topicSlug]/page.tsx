@@ -571,7 +571,13 @@ export default async function TopicDetailPage({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
           {/* --- SOL KOLON: İÇERİK --- */}
-          <div className="lg:col-span-8 space-y-8">
+          {/* OKUMA SÜTUNU 12'de 7 — bir dönem 8'di.
+              Gövde 14px'e inince satır 93 → 107 karaktere çıkmıştı; rahat
+              okuma aralığı 45–75. Sütun bir kademe darlatılarak satır geri
+              çekiliyor, ekrandaki metin miktarı yine 16px dönemininkinden
+              fazla kalıyor. Serbest kalan sütun kenar çubuğuna geçti (4 → 5),
+              yoksa ızgarada boşluk kalırdı. */}
+          <div className="lg:col-span-7 space-y-8">
             {/* mt-0 — DOLGU NE DIYORSA O OLSUN. globals.css h1/h2/h3'e 24px
                 ust marj veriyor; o marj bu kutunun ICINE sizip py-2 ilanini
                 yalanliyordu. Olculdu (375px, canli, YEDI konuda da AYNI):
@@ -834,7 +840,7 @@ export default async function TopicDetailPage({
           </div>
 
           {/* --- SAĞ KOLON: DİNAMİK SİDEBAR --- */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-5">
             
             <div className="sticky top-32 space-y-8">
               
