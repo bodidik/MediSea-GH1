@@ -401,13 +401,6 @@
         "eslesen": "CHA2DS2-VASc Skoru"
       }
     ],
-    "hematoloji/kmt2d-crebbp-mutasyonlari": [
-      {
-        "slug": "flipi",
-        "name": "FLIPI",
-        "eslesen": "FLIPI"
-      }
-    ],
     "hematoloji/m7-flipi-ngs-paneli": [
       {
         "slug": "flipi",
@@ -436,13 +429,6 @@
         "eslesen": "Anafilaksi"
       }
     ],
-    "hematoloji/vka-doac-karsilastirma": [
-      {
-        "slug": "timi-ua",
-        "name": "TIMI Skoru (UA/NSTEMI)",
-        "eslesen": "TIMI"
-      }
-    ],
     "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
       {
         "slug": "egfr",
@@ -451,13 +437,6 @@
       }
     ],
     "journal-club/iptacopan-igan-faz3": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      }
-    ],
-    "journal-club/sac-tmt-optitrop-lung04-nejm": [
       {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
@@ -611,13 +590,6 @@
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
-      }
-    ],
-    "nefroloji/farmakoloji-finerenon-kalp-yetmezligi": [
-      {
-        "slug": "heart",
-        "name": "HEART Skoru",
-        "eslesen": "HEART"
       }
     ],
     "nefroloji/iga-nefropatisi-berger": [
@@ -1141,26 +1113,9 @@
         "eslesen": "FLIPI"
       },
       {
-        "yol": "hematoloji/kmt2d-crebbp-mutasyonlari",
-        "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi",
-        "eslesen": "FLIPI"
-      },
-      {
         "yol": "hematoloji/m7-flipi-ngs-paneli",
         "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri",
         "eslesen": "FLIPI"
-      }
-    ],
-    "timi-ua": [
-      {
-        "yol": "hematoloji/vka-doac-karsilastirma",
-        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
-        "eslesen": "TIMI"
-      },
-      {
-        "yol": "kardiyoloji/akut-koroner-sendromlar",
-        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "TIMI"
       }
     ],
     "grace": [
@@ -1168,6 +1123,13 @@
         "yol": "kardiyoloji/akut-koroner-sendromlar",
         "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
         "eslesen": "GRACE"
+      }
+    ],
+    "timi-ua": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "TIMI"
       }
     ],
     "endocarditis": [
@@ -1203,13 +1165,6 @@
         "eslesen": "NRS-2002"
       }
     ],
-    "heart": [
-      {
-        "yol": "nefroloji/farmakoloji-finerenon-kalp-yetmezligi",
-        "baslik": "Finerenon ve Kalp Yetmezliği",
-        "eslesen": "HEART"
-      }
-    ],
     "mascc": [
       {
         "yol": "onkoloji/febril-notropeni-mascc-indexi",
@@ -1221,8 +1176,8 @@
   "olcum": {
     "konu": 474,
     "arac": 136,
-    "araciOlanKonu": 92,
-    "konusuOlanArac": 30,
-    "bag": 109
+    "araciOlanKonu": 88,
+    "konusuOlanArac": 29,
+    "bag": 105
   }
 }

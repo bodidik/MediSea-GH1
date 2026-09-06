@@ -23,6 +23,13 @@
  *  3. JS `\b` ASCII'ye göre çalışıyor — `Ü`, `ş`, `ı` sınırı delmiyor.
  *     Kelime sınırı ELLE kuruluyor.
  *
+ *  4. Kısaltma BİLEŞİK ÖZEL ADIN parçası olabilir. `TIMI` aracı
+ *     "ENGAGE AF-TIMI 48" ÇALIŞMA ADINDAN eşleşiyordu; sayfanın TIMI
+ *     risk skoruyla ilgisi yok. Üç harf eleyicisi (tuzak 3 altındaki
+ *     `belirsizKisaltma`) TIMI dört harf olduğu için tutmadı. Çare:
+ *     tire ile bir alfanümerik komşuya bağlanmış geçiş SAYILMAZ
+ *     (`AF-TIMI`, `TIMI-48`); aynı takma ad metinde başka bir yerde
+ *     serbest geçiyorsa bağ yine kurulur. *
  * NADİRLİK ÇALIŞMIYOR, denendi: `Anafilaksi` 9 konuda geçiyor ve DOĞRU,
  * `PPI` 10 konuda geçiyor ve YANLIŞ. Ayraç sıklık değil, takma adın
  * kaynağı (parantez içi mi, asıl ad mı).
@@ -80,6 +87,27 @@ const kisaltmaMi = (a) => a.length <= 6 && a === a.toLocaleUpperCase("tr");
 const belirsizKisaltma = (a) => kisaltmaMi(a) && a.replace(/[^A-Z0-9]/g, "").length <= 3;
 const desenle = (a) =>
   new RegExp(`(^|[^${HARF}])${kacir(a)}([^${HARF}]|$)`, kisaltmaMi(a) ? "" : "i");
+/**
+ * Tire ile bir alfanümerik komşuya bağlanmış geçiş, takma adın kendisi
+ * değil BİLEŞİK BİR ÖZEL ADIN parçasıdır (tuzak 4). Metinde en az bir
+ * SERBEST geçiş aranır; hiç yoksa bağ kurulmaz.
+ */
+const HARF_RE = new RegExp(`[${HARF}]`);
+function serbestGecisVarMi(a, govde) {
+  const re = new RegExp(kacir(a), kisaltmaMi(a) ? "g" : "gi");
+  for (let m; (m = re.exec(govde)); ) {
+    const bas = m.index;
+    const son = bas + m[0].length;
+    // Kelime sınırı (tuzak 3: `\b` ASCII'ye göre çalışıyor, elle kuruyoruz).
+    if (bas > 0 && HARF_RE.test(govde[bas - 1])) continue;
+    if (son < govde.length && HARF_RE.test(govde[son])) continue;
+    // Bileşik özel ad: "AF-TIMI" ya da "TIMI-48".
+    if (govde[bas - 1] === "-" && bas > 1 && HARF_RE.test(govde[bas - 2])) continue;
+    if (govde[son] === "-" && HARF_RE.test(govde[son + 1] || "")) continue;
+    return true;
+  }
+  return false;
+}
 
 function konulariOku() {
   const cikti = [];
@@ -120,7 +148,7 @@ function uret() {
     for (const a of adlar) {
       // En UZUN eşleşen takma ad en ayırt edicisidir.
       const bulunan = a.alias
-        .filter((x) => desenle(x).test(k.govde))
+        .filter((x) => desenle(x).test(k.govde) && serbestGecisVarMi(x, k.govde))
         .sort((x, y) => y.length - x.length)[0];
       if (!bulunan) continue;
       (konuArac[k.yol] ||= []).push({ slug: a.slug, name: a.name, eslesen: bulunan });
