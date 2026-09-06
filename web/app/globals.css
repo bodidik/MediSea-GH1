@@ -311,6 +311,29 @@ mark.ms-hl-u {
   line-height: 1.6;
 }
 
+/* ── OKUMA GÖVDESİ MASAÜSTÜNDE 14px ────────────────────────────────────
+   Gövde metni hiçbir boyut sınıfı taşımıyor, `body`den 16px miras alıyordu;
+   yukarıdaki taban yalnızca AÇIK boyut sınıflarını (`text-xs` vb.) yakalıyor,
+   sınıfsız paragrafı görmüyor.
+
+   İstenen "%80 görünüm" birebir uygulanamaz: 16px'in %80'i 12.8px ve bu
+   okuma alanının 14px tabanının ALTINDA kalır. Uygulanabilir en yakın
+   değer 14px (≈%87,5) — taban delinmiyor, aynı ekranda daha çok metin
+   görünüyor.
+
+   Yalnızca `min-width: 641px`: telefonda taban zaten 15px ve orada satır
+   kısa, küçültmenin kazancı yok.
+
+   Kapsam: `font-size` KAP üzerinde. Tailwind'in rem tabanlı boyut
+   sınıfları (`text-lg` özet kutusu, başlıklar, rozetler) etkilenmiyor —
+   yani hiyerarşi düzleşmiyor, yalnızca gövde küçülüyor. */
+@media (min-width: 641px) {
+  [data-readable] {
+    font-size: 0.875rem;  /* 14px — 16px'ten indi, tabanın tam üstünde */
+    line-height: 1.7;
+  }
+}
+
 @media (max-width: 640px) {
   /* Telefonda satır daha kısa; taban biraz daha yukarı çekiliyor.
 
