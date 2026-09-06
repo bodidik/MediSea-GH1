@@ -170,7 +170,45 @@ function uret() {
   for (const l of Object.values(konuArac)) l.sort((x, y) => y.eslesen.length - x.eslesen.length);
   for (const l of Object.values(aracKonu)) l.sort((x, y) => y.eslesen.length - x.eslesen.length);
   for (const k of Object.keys(konuArac)) konuArac[k] = konuArac[k].slice(0, KONU_BASINA);
-  for (const k of Object.keys(aracKonu)) aracKonu[k] = aracKonu[k].slice(0, ARAC_BASINA);
+
+  /**
+   * ARAÇ TARAFINDA KIRPMA BRANŞLARA YAYILIR — düz `slice` ÖLÇÜLDÜ ve
+   * kusurluydu. `egfr` 28 konuda geçiyor ve altı branşa yayılmış
+   * (nefroloji 10 · endokrinoloji 8 · kardiyoloji 5 · journal-club 2 ·
+   * onkoloji 2 · klinik-nutrisyon 1). Eşleşen takma ad hepsinde aynı
+   * ("eGFR") olduğu için sıralama eşitti ve eşitliği alfabetik yol sırası
+   * bozuyordu: sayfada gösterilen 8 konunun HEPSİ endokrinolojiydi, en
+   * ilgili branş olan nefroloji hiç görünmüyordu.
+   *
+   * Çare: branşlar arasında sırayla (round-robin) seç. Deterministik —
+   * `--kontrol` kararlı kalsın diye rastgelelik YOK. Branş sırası önce
+   * konu sayısına, eşitlikte ada göre.
+   *
+   * Aynı sınıf `ilgili-index`te de yaşandı ve orada kararlı bir kaydırmayla
+   * çözülmüştü; burada eksen branş.
+   */
+  for (const k of Object.keys(aracKonu)) {
+    const kovalar = new Map();
+    for (const x of aracKonu[k]) {
+      const brans = x.yol.split("/")[0];
+      (kovalar.get(brans) ?? kovalar.set(brans, []).get(brans)).push(x);
+    }
+    const sira = [...kovalar.entries()].sort(
+      (a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "tr")
+    );
+    const secilen = [];
+    for (let i = 0; secilen.length < ARAC_BASINA; i++) {
+      let eklendi = false;
+      for (const [, liste] of sira) {
+        if (i >= liste.length) continue;
+        secilen.push(liste[i]);
+        eklendi = true;
+        if (secilen.length === ARAC_BASINA) break;
+      }
+      if (!eklendi) break; // bütün kovalar tükendi
+    }
+    aracKonu[k] = secilen;
+  }
 
   return {
     uretilme: "scripts/arac-konu-index.cjs",

@@ -755,55 +755,55 @@
   "aracKonu": {
     "egfr": [
       {
+        "yol": "nefroloji/aldosteron-mekanizmalari",
+        "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları",
+        "eslesen": "eGFR"
+      },
+      {
         "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
         "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
+        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "onkoloji/akciger-kanseri-ana-sayfa",
+        "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
         "eslesen": "eGFR"
       },
       {
         "yol": "endokrinoloji/cushing-sendromu-patofizyoloji-klinik",
         "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon",
         "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-adenomlari",
-        "baslik": "Hipofiz Nöroendokrin Tümörleri",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day",
-        "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/sglt2-inhibitorleri-kardiyorenal-metabolik",
-        "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
-        "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/tirzepatid-kardiyorenal-koruma",
-        "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/usp8-mutasyonu-ve-pasireotid",
-        "baslik": "Cushing Hastalığı: USP8 Mutasyonu ve Pasireotid Yanıtı (İleri Okuma)",
-        "eslesen": "eGFR"
       }
     ],
     "anion-gap": [
       {
-        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
-        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
         "eslesen": "Anyon Açığı"
       },
       {
-        "yol": "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi",
-        "baslik": "Asit-Baz Denge Bozuklukları",
+        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
+        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
         "eslesen": "Anyon Açığı"
       },
       {
@@ -812,13 +812,13 @@
         "eslesen": "Anyon Açığı"
       },
       {
-        "yol": "nefroloji/asit-baz-denge-bozukluklari",
-        "baslik": "Asit-Baz Denge Bozuklukları",
+        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
+        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
         "eslesen": "Anyon Açığı"
       },
       {
-        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
-        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
+        "yol": "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi",
+        "baslik": "Asit-Baz Denge Bozuklukları",
         "eslesen": "Anyon Açığı"
       },
       {
@@ -844,6 +844,11 @@
         "eslesen": "Potasyum Replasmanı"
       },
       {
+        "yol": "enfeksiyon/fosfomisin-klinik-rehber",
+        "baslik": "Fosfomisin",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
         "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
         "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "Potasyum Replasmanı"
@@ -862,22 +867,17 @@
         "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
         "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
         "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "enfeksiyon/fosfomisin-klinik-rehber",
-        "baslik": "Fosfomisin",
-        "eslesen": "Potasyum Replasmanı"
       }
     ],
     "tft": [
       {
-        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
-        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
+        "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
-        "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi",
+        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
+        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
@@ -953,28 +953,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "enfeksiyon/dalbavansin-derleme",
-        "baslik": "Dalbavansin",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "yol": "enfeksiyon/tigesiklin-derleme",
-        "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
-        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
-        "eslesen": "Child-Pugh"
-      },
-      {
         "yol": "gastroenteroloji/ascit-sıvısı",
         "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "yol": "gastroenteroloji/ascit-yonetimi",
-        "baslik": "Asit Yönetimi ve Tıbbi Algoritmalar (AASLD/EASL Uyumlu)",
         "eslesen": "Child-Pugh"
       },
       {
@@ -983,8 +963,28 @@
         "eslesen": "Child-Pugh"
       },
       {
+        "yol": "onkoloji/karaciger-kanserleri",
+        "baslik": "Karaciğer Kanserleri",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-derleme",
+        "baslik": "Dalbavansin",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-yonetimi",
+        "baslik": "Asit Yönetimi ve Tıbbi Algoritmalar (AASLD/EASL Uyumlu)",
+        "eslesen": "Child-Pugh"
+      },
+      {
         "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
         "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "yol": "enfeksiyon/tigesiklin-derleme",
+        "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme",
         "eslesen": "Child-Pugh"
       }
     ],
@@ -995,23 +995,23 @@
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
-        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
-        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
-        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
-        "eslesen": "Anafilaksi"
-      },
-      {
         "yol": "hematoloji/demir-eksikligi",
         "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
+        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
+        "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
+        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
         "eslesen": "Anafilaksi"
       },
       {
@@ -1020,13 +1020,13 @@
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "hematoloji/sistemik-mastositoz-sm",
-        "baslik": "Sistemik Mastositoz (SM)",
+        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
+        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
-        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "yol": "hematoloji/sistemik-mastositoz-sm",
+        "baslik": "Sistemik Mastositoz (SM)",
         "eslesen": "Anafilaksi"
       }
     ],
@@ -1114,23 +1114,23 @@
         "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
-        "yol": "hematoloji/inme-sonrasi-gizli-af",
-        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
-        "eslesen": "CHA2DS2-VASc Skoru"
-      },
-      {
         "yol": "kardiyoloji/aritmiler-af-vt-vf",
         "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)",
         "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
-        "yol": "hematoloji/chase-less-skoru",
-        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
-        "eslesen": "CHA2DS2-VASc"
+        "yol": "hematoloji/inme-sonrasi-gizli-af",
+        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
+        "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
         "yol": "kardiyoloji/kardiyak-amiloidoz",
         "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı",
+        "eslesen": "CHA2DS2-VASc"
+      },
+      {
+        "yol": "hematoloji/chase-less-skoru",
+        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
         "eslesen": "CHA2DS2-VASc"
       }
     ],

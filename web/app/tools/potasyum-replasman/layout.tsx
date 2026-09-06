@@ -47,6 +47,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/topics/enfeksiyon/fosfomisin-klinik-rehber" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Fosfomisin
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/endokrinoloji/men1-hipokalemi-aritmojenik-sinerji" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı
               </Link>
@@ -54,11 +59,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/endokrinoloji/men1-osilodrostat-mineralokortikoid" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/endokrinoloji/men1-osilodrostat-yan-etkiler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri
               </Link>
             </li>
           </ul>

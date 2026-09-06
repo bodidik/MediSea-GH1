@@ -47,18 +47,18 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/dalbavansin-derleme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Dalbavansin
+              <Link href="/topics/gastroenteroloji/ascit-sıvısı" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/tigesiklin-derleme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tigesiklin (Tigecycline): İleri Düzey Derleme
+              <Link href="/topics/kardiyoloji/aprocitentan-kbh-ve-yasli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aprocitentan: İleri Yaş ve KBH (İleri Okuma)
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/tigesiklin-uyarilar-yan-etkiler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tigesiklin Tedavisinde Kritik Uyarılar
+              <Link href="/topics/onkoloji/karaciger-kanserleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Karaciğer Kanserleri
               </Link>
             </li>
           </ul>

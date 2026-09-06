@@ -47,18 +47,18 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Dalbavansin: Çapraz Duyarlılık ve Alternatifler
+              <Link href="/topics/hematoloji/demir-eksikligi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Demir Eksikliği Anemisi (DEA)
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/dalbavansin-mrsa-bakteriyemisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi
+              <Link href="/topics/kardiyoloji/lipid-ezetimibe-sakinca" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/tigesiklin-uyarilar-yan-etkiler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tigesiklin Tedavisinde Kritik Uyarılar
+              <Link href="/topics/onkoloji/tls-rasburikaz-vs-allopurinol" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol
               </Link>
             </li>
           </ul>

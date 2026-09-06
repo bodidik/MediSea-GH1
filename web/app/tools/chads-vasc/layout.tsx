@@ -47,13 +47,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/hematoloji/inme-sonrasi-gizli-af" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi
+              <Link href="/topics/kardiyoloji/aritmiler-af-vt-vf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aritmiler (Atriyal Fibrilasyon, VT/VF)
               </Link>
             </li>
             <li>
-              <Link href="/topics/kardiyoloji/aritmiler-af-vt-vf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Aritmiler (Atriyal Fibrilasyon, VT/VF)
+              <Link href="/topics/hematoloji/inme-sonrasi-gizli-af" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi
               </Link>
             </li>
             <li>

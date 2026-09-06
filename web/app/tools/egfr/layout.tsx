@@ -42,23 +42,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/topics/nefroloji/aldosteron-mekanizmalari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/cushing-sendromu-patofizyoloji-klinik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon
+              <Link href="/topics/kardiyoloji/aprocitentan-kbh-ve-yasli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aprocitentan: İleri Yaş ve KBH (İleri Okuma)
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/hipofiz-adenomlari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Hipofiz Nöroendokrin Tümörleri
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/endokrinoloji/sglt2-hasta-gunler-kurali-sick-day" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)
+              <Link href="/topics/journal-club/flaura2-osimertinib-kemoterapi-nejm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi
               </Link>
             </li>
           </ul>
