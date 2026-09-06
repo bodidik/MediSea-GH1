@@ -330,6 +330,18 @@
         "eslesen": "Khorana Skoru"
       }
     ],
+    "hematoloji/chase-less-skoru": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc"
+      },
+      {
+        "slug": "nihss",
+        "name": "NIHSS",
+        "eslesen": "NIHSS"
+      }
+    ],
     "hematoloji/demir-eksikligi": [
       {
         "slug": "anaphylaxis",
@@ -1091,6 +1103,11 @@
         "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
+        "yol": "hematoloji/chase-less-skoru",
+        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
+        "eslesen": "CHA2DS2-VASc"
+      },
+      {
         "yol": "kardiyoloji/kardiyak-amiloidoz",
         "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı",
         "eslesen": "CHA2DS2-VASc"
@@ -1101,6 +1118,13 @@
         "yol": "hematoloji/antikoagulasyon-stratejileri",
         "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
         "eslesen": "Khorana Skoru"
+      }
+    ],
+    "nihss": [
+      {
+        "yol": "hematoloji/chase-less-skoru",
+        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
+        "eslesen": "NIHSS"
       }
     ],
     "ipi": [
@@ -1195,10 +1219,10 @@
     ]
   },
   "olcum": {
-    "konu": 473,
+    "konu": 474,
     "arac": 136,
-    "araciOlanKonu": 91,
-    "konusuOlanArac": 29,
-    "bag": 107
+    "araciOlanKonu": 92,
+    "konusuOlanArac": 30,
+    "bag": 109
   }
 }
