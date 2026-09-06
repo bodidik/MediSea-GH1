@@ -916,12 +916,16 @@ export default async function TopicDetailPage({
                     <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                     İlgili Hesaplayıcılar
                   </h2>
-                  <ul className="space-y-2">
+                  {/* py-2.5: `py-1` ile dokunma hedefi 30px kalıyordu —
+                      asgari 24px'in üstünde ama tercih edilen 44'ün altında
+                      VE kardeş bloklardan ("İleri Okuma", "İlgili Konular")
+                      kısa; onlar 43px. Ölçülüp hizalandı. */}
+                  <ul className="space-y-1">
                     {ilgiliAraclar.map((a) => (
                       <li key={a.slug}>
                         <Link
                           href={`/tools/${a.slug}`}
-                          className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-emerald-700 transition-colors"
+                          className="group flex items-start gap-3 py-2.5 text-sm font-bold text-slate-700 hover:text-emerald-700 transition-colors"
                         >
                           <span className="text-emerald-300 group-hover:text-emerald-500 mt-0.5" aria-hidden="true">→</span>
                           <span className="leading-tight">{a.name}</span>
