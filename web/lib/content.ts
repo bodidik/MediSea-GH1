@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { aramaNormalize, aramaAnahtariKur, aramaAnahtariEslesir } from '@/app/lib/arama';
 import aracIndex from "@/content/arac-index.json";
+import aracKonuIndex from "@/content/arac-konu.json";
 
 // 👇 TİP TANIMLAMALARI
 export type CanonicalDoc = {
@@ -274,5 +275,48 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
     (adTuttu ? aracAdEsleyen : aracAciklamaEsleyen).push(kayit);
   }
 
-  return [...aracAdEsleyen, ...results, ...aracAciklamaEsleyen];
+  /**
+   * EŞLEŞEN KONULARIN ARAÇLARI DA GETİRİLİR.
+   *
+   * ÖLÇÜLDÜ (canlı arama kutusu, gerçek tuş vuruşuyla):
+   *
+   *   "atriyal fibrilasyon"  →  4 sonuç, ARAÇ 0
+   *   "kalp yetmezliği"      →  6 sonuç, ARAÇ 0
+   *
+   * Oysa AF'nin hesaplayıcısı var: CHA₂DS₂-VASc. Bulunamamasının sebebi
+   * aracın adının ve açıklamasının ("AF'de inme riski hesaplama") hastalığın
+   * TAM ADINI taşımaması. Kullanıcı klinik terimi yazıyor, araç kısaltmayla
+   * anılıyor.
+   *
+   * Çare eşanlamlı listesi DEĞİL — o elle tutulur ve bayatlar. Bağ zaten
+   * türetilmiş durumda: `content/arac-konu.json` (scripts/arac-konu-index.cjs)
+   * konu metninde aracın adını arıyor. Sorgu bir konuyu tutuyorsa, o konunun
+   * araçları da sonuca girer.
+   *
+   * SIRA: en sonda. Adı eşleşen araç en üstte, sonra konular, sonra
+   * açıklaması eşleşen araç, en sonda bu dolaylı bağlar — çünkü bunlar
+   * sorguyla DOĞRUDAN değil, bir konu üzerinden eşleşiyor.
+   */
+  const zatenVar = new Set([...aracAdEsleyen, ...aracAciklamaEsleyen].map((a) => a.slug));
+  const konuAraclari: SearchResult[] = [];
+  const konuAracHaritasi = (aracKonuIndex as {
+    konuArac?: Record<string, { slug: string; name: string }[]>;
+  }).konuArac ?? {};
+  for (const r of results) {
+    if (r.type !== 'topic' && r.type !== 'section') continue;
+    for (const a of konuAracHaritasi[`${r.section}/${r.slug}`] ?? []) {
+      if (zatenVar.has(a.slug)) continue;
+      zatenVar.add(a.slug);
+      const kayit = ARAC_KAYITLARI.find((x) => x.slug === a.slug);
+      konuAraclari.push({
+        title: a.name,
+        section: 'tools',
+        slug: a.slug,
+        type: 'tool',
+        aciklama: kayit?.desc,
+      });
+    }
+  }
+
+  return [...aracAdEsleyen, ...results, ...aracAciklamaEsleyen, ...konuAraclari];
 }
