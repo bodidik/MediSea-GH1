@@ -424,6 +424,13 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "hematoloji/vka-doac-karsilastirma": [
+      {
+        "slug": "timi-ua",
+        "name": "TIMI Skoru (UA/NSTEMI)",
+        "eslesen": "TIMI"
+      }
+    ],
     "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
       {
         "slug": "egfr",
@@ -1120,18 +1127,23 @@
         "eslesen": "FLIPI"
       }
     ],
+    "timi-ua": [
+      {
+        "yol": "hematoloji/vka-doac-karsilastirma",
+        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
+        "eslesen": "TIMI"
+      },
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "TIMI"
+      }
+    ],
     "grace": [
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
         "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
         "eslesen": "GRACE"
-      }
-    ],
-    "timi-ua": [
-      {
-        "yol": "kardiyoloji/akut-koroner-sendromlar",
-        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "TIMI"
       }
     ],
     "endocarditis": [
@@ -1183,10 +1195,10 @@
     ]
   },
   "olcum": {
-    "konu": 471,
+    "konu": 472,
     "arac": 136,
-    "araciOlanKonu": 90,
+    "araciOlanKonu": 91,
     "konusuOlanArac": 29,
-    "bag": 106
+    "bag": 107
   }
 }
