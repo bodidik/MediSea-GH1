@@ -863,3 +863,30 @@ verildi (`line-clamp-3 sm:line-clamp-2`).
 **Ölçüm notu:** tohum adlar kısa olduğu için ilk tur "temiz" göründü. Kırpma
 bir GENİŞLİK varsayımı olduğundan eşik hesaplandı (canvas `measureText` ile
 kutu genişliği), veri olduğu gibi kabul edilmedi.
+
+---
+
+## Ürünün BÜTÜN incileri ulaşılamıyordu (6 Eylül 2026)
+
+`yetim-denetim` raporu: `pearls — erişilebilir: 0 dosya / 0 inci`. İki inci
+dosyası var, ikisi de yetim. Sebep ad sapması: envanter
+`pearls/<branş>/<konu-slug>.json` arıyor, dosya `aml.json`, konu `aml-ana`.
+
+Uygulamanın kendi `envanterAl()`i sürüldü (ölçüt yeniden yazılmadı):
+
+| konu | önce | sonra |
+|---|---|---|
+| `hematoloji/aml-ana` (9 soru · 80 kart · 4 vaka) | inci **0**, `inciVar` false | inci **10**, `inciVar` **true** |
+| `pearls` erişilebilir (denetim) | **0 dosya / 0 inci** | **1 dosya / 10 inci** |
+
+**Ölçüm tuzağı — kapıyı içerik sandım.** İlk tur konu sayfasını `curl` ile
+ölçtü: "inci bağlantısı 0" çıktı. Negatif kontrol düştü — sayfada quiz, kart,
+vaka bağlantısı da 0'dı ve "Üyelik/Satın" 22 kez geçiyordu, yani ölçülen şey
+`AccessGate`di. Kapı arkasını ölçemediğin yerde **mekanizmayı** ölç.
+
+**Kalan yetimler — hepsi içerik kararı, DEĞİŞTİRİLMEDİ:**
+`pearls/nefroloji/lupus-nefriti` (3 inci, konu dosyası yok) ·
+`flashcards/endokrinoloji/akromegali` (79 kart, konu yok) ·
+`quizzes/hematoloji/aml-quiz-1` ve `flashcards/nefroloji/hiperf-kbh`
+(hedef ad ZATEN VAR — birleştirme kararı) · `questions/` dizini
+(12 dosya, hiçbir kod okumuyor; şema dönüşümü gerekir).

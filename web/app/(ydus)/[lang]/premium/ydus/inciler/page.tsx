@@ -117,7 +117,10 @@ export default async function PearlsPage({
   if (gate) return gate;
 
   try {
-    // 5. Dinamik Dosya Yolu: content/premium/ydus/pearls/hematoloji/aml.json
+    // 5. Dinamik Dosya Yolu: content/premium/ydus/pearls/hematoloji/aml-ana.json
+    //    (`id` KONU SLUG'IDIR. Dosya bir dönem `aml.json` adındaydı, konu ise
+    //    `aml-ana`; envanterAl `pearls/<branş>/<konu>.json` aradığı için
+    //    inciVar hep false kalıyordu ve on inci hiçbir yerden ulaşılamıyordu.)
     const filePath = path.join(
       process.cwd(), 
       `content/premium/ydus/pearls/${branch}/${id}.json`
