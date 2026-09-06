@@ -1,0 +1,40 @@
+{
+  "title": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
+  "meta": {
+    "updatedAt": "06 Eyl 2026",
+    "tags": [
+      "Hematoloji",
+      "Atriyal Fibrilasyon",
+      "İnme",
+      "CHASE-LESS",
+      "Risk Skorlaması",
+      "NIHSS",
+      "Kriptojenik İnme",
+      "Ritim Monitörizasyonu"
+    ],
+    "parent": "inme-sonrasi-gizli-af",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🧮 1. CHASE-LESS Neyi Öngörür",
+      "html": "<p><strong>CHASE-LESS skoru</strong>, iskemik inme veya geçici iskemik atak (GİA) geçiren hastalarda <strong>yeni tanı alacak (okült/gizli) atriyal fibrilasyon riskini</strong> tahmin etmek için geliştirilmiş bir klinik öngörü modelidir.</p><p>Kriptojenik inme veya belirlenemeyen kaynaklı embolik inme (ESUS) hastalarında gizli AF'yi saptamak, tedavi stratejisini antiplateletten antikoagülasyona kaydıracağı için sekonder profilakside belirleyicidir. <strong>2025 ACC Expert Consensus Decision Pathway (ECDP)</strong> kılavuzu, inme sonrası ritim izlemi gereken yüksek riskli hastaların taranmasında valide edilmiş skorlama sistemleri arasında CHASE-LESS'i öne çıkarmaktadır.</p>"
+    },
+    {
+      "heading": "📊 2. Skorlama Parametreleri ve Puan Değerleri",
+      "html": "<p>Skorun adı, içerdiği parametrelerin İngilizce baş harflerinden oluşan bir akronimdir. Bazı geleneksel risk faktörlerinin <strong>negatif puan</strong> alması modelin en özgün yanıdır.</p><table class=\"min-w-full text-xs\"><thead><tr><th>Harf</th><th>Risk faktörü</th><th>Klinik karşılığı</th><th>Puan</th></tr></thead><tbody><tr><td><strong>C</strong></td><td><strong>C</strong>oronary artery disease</td><td>Koroner arter hastalığı (KAH)</td><td><strong>+1</strong></td></tr><tr><td><strong>H</strong></td><td><strong>H</strong>eart failure</td><td>Konjestif kalp yetmezliği (KKY)</td><td><strong>+1</strong></td></tr><tr><td><strong>A</strong></td><td><strong>A</strong>ge</td><td>Yaş — her 10 yıllık artış için</td><td><strong>+1</strong></td></tr><tr><td><strong>S</strong></td><td>stroke <strong>S</strong>everity</td><td>İnme şiddeti — başvuru NIHSS 6-13</td><td><strong>+1</strong></td></tr><tr><td><strong>S</strong></td><td>stroke <strong>S</strong>everity</td><td>İnme şiddeti — başvuru NIHSS ≥ 14</td><td><strong>+4</strong></td></tr><tr><td><strong>-L</strong></td><td><strong>L</strong>ipidemia</td><td>Hiperlipidemi / hiperkolesterolemi</td><td><strong>-1</strong></td></tr><tr><td><strong>S</strong></td><td><strong>S</strong>ugar</td><td>Diabetes mellitus</td><td><strong>-1</strong></td></tr><tr><td><strong>S</strong></td><td>prior <strong>S</strong>troke</td><td>Geçirilmiş inme veya GİA öyküsü</td><td><strong>-1</strong></td></tr></tbody></table>"
+    },
+    {
+      "heading": "🔀 3. Negatif Puan Paradoksu: Neden Diyabet ve Hiperlipidemi Puan Düşürür",
+      "html": "<p>İlk bakışta ters görünen bu katsayılar, skorun <strong>ne öngördüğünü</strong> hatırlayınca yerine oturur: model inme riskini değil, <strong>inmenin arkasındaki mekanizmanın kardiyoembolik olma olasılığını</strong> tahmin eder.</p><p><strong>Patofizyolojik çözümleme:</strong> Hiperlipidemi, diyabet ve geçirilmiş inme öyküsü; <strong>büyük damar aterosklerozu</strong> (aterotrombotik inme) veya <strong>küçük damar tıkanıklığı</strong> (laküner inme) patolojileriyle doğrudan ilişkilidir. Bir hastada bu geleneksel aterosklerotik risk faktörleri baskınsa, inmenin etiyolojisinin aterotrombotik olma olasılığı artar — yani aranan şey gizli AF olmayabilir.</p><p>Aksine bu risk faktörleri <strong>yoksa</strong> (diyabeti ve lipid yüksekliği olmayan, ileri yaşta, kalp yetmezliği veya koroner hastalığı eşlik eden, inme tablosu ağır / NIHSS yüksek bir hasta), inmenin arkasında <strong>okült bir kardiyoembolik kaynak</strong> — yani yeni tanı alacak gizli bir AF — bulunma olasılığı belirgin biçimde yükselir. Modelde bu parametrelere negatif katsayı verilmesinin nedeni budur.</p>"
+    },
+    {
+      "heading": "📈 4. Validasyon: Diğer Risk Skorlarıyla Karşılaştırma",
+      "html": "<p>İnme sonrası AF gelişimini tahmin etmede kullanılan geleneksel skorlar (inme profilaksisinde kullanılan CHA2DS2-VASc veya genel popülasyonda AF gelişimini öngören HATCH) post-stroke okült AF'yi öngörmede suboptimal kalabilmektedir.</p><p><strong>Tayvan İnme Kayıt Defteri (Taiwanese Stroke Registry)</strong> verilerinde yapılan geniş validasyon çalışmalarında, post-stroke hastalarda yeni AF saptama gücü (C-istatistiği):</p><table class=\"min-w-full text-xs\"><thead><tr><th>Skor</th><th>C-istatistiği</th></tr></thead><tbody><tr><td><strong>CHASE-LESS</strong></td><td><strong>0.732 - 0.741</strong></td></tr><tr><td><strong>AS5F</strong></td><td>0.689 - 0.730</td></tr><tr><td><strong>CHA2DS2-VASc</strong></td><td>0.706</td></tr><tr><td><strong>CHADS2</strong></td><td>0.700</td></tr><tr><td><strong>HATCH</strong></td><td>0.653</td></tr></tbody></table><p>CHASE-LESS ve AS5F, okült AF tahmininde en yüksek korelasyonu gösteren iki skordur; ikisi de <strong>NIHSS ve yaş</strong> parametrelerini ortak olarak içerir.</p>"
+    },
+    {
+      "heading": "🩺 5. Klinik Kullanım ve Ayırt Edici Noktalar",
+      "html": "<ul class=\"mb-4\"><li><strong>Kullanım amacı:</strong> CHASE-LESS skoru yüksek olan hastalarda taburculuk sonrasında <strong>uzatılmış ritim takibi</strong> (eksternal patch monitör veya implante edilebilir kardiyak monitör) kararı öncelikli olarak düşünülmelidir. Cihaz seçimi, süreler ve çalışma verileri için <strong>İnme Sonrası Gizli AF</strong> sayfasına bakınız.</li><li><strong>Ortak prediktörler:</strong> Hem AS5F hem CHASE-LESS'te yeni AF gelişimini öngören en güçlü iki ortak belirteç <strong>ileri yaş</strong> ve <strong>başvuru anındaki NIHSS skorudur.</strong></li><li><strong>Ayırt edici nokta — hangi skor neyi belirler:</strong> <strong>CHA2DS2-VASc</strong>, AF tanısı KONMUŞ hastalarda antikoagülasyon başlama eşiğini belirler (Sınıf 1A endikasyon). <strong>CHASE-LESS</strong> ise henüz AF tanısı KONMAMIŞ post-stroke hastalarda <strong>AF tarama ve uzun dönem monitörizasyon önceliğini</strong> belirler. İkisi birbirinin yerine kullanılmaz.</li></ul>"
+    }
+  ]
+}
