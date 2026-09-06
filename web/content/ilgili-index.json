@@ -3935,6 +3935,11 @@
  "hematoloji/inme-sonrasi-gizli-af": [
   {
    "brans": "hematoloji",
+   "slug": "kanser-iliskili-tromboz",
+   "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
    "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
@@ -3998,6 +4003,13 @@
    "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
+  }
+ ],
+ "hematoloji/kanser-iliskili-tromboz": [
+  {
+   "brans": "hematoloji",
+   "slug": "trombositopenide-antikoagulasyon",
+   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
   }
  ],
  "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
@@ -4618,18 +4630,8 @@
  "hematoloji/trombositopenide-antikoagulasyon": [
   {
    "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+   "slug": "kanser-iliskili-tromboz",
+   "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
   }
  ],
  "hematoloji/trombositopeniler": [
