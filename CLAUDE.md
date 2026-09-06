@@ -800,7 +800,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 |---|---|
 | sonuç duyurusu | 136 aracın 31'inde yok; 27'si sayı basıyor (doğru), 4'ü kayıtlı tasarım kararı |
 | grup semantiği | 35 araçta `role="group"` yok (adları sayfa içinde benzersiz) |
-| `h2` yapısı | 120 araçta yalnızca kardeş bloğundan geliyor |
+| `h2` yapısı | **ÖLÇÜLDÜ, temiz** — 136 araç / 435 başlık, dört ölçütte de 0; aşağıya bak |
 | süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
 | `truncate` | **ÖLÇÜLDÜ** — aşağıya bak |
 | vaka adımı vurgulanabilirliği | önkoşul kararlı kimlik; bugünkü `adim-1` KONUMSAL |
@@ -928,9 +928,59 @@ Hangisinin kalacağı ve yönlendirme içerik kararı.
 
 ---
 
-**Kalan yetimler — hepsi içerik kararı, DEĞİŞTİRİLMEDİ:**
-`pearls/nefroloji/lupus-nefriti` (3 inci, konu dosyası yok) ·
-`flashcards/endokrinoloji/akromegali` (79 kart, konu yok) ·
-`quizzes/hematoloji/aml-quiz-1` ve `flashcards/nefroloji/hiperf-kbh`
-(hedef ad ZATEN VAR — birleştirme kararı) · `questions/` dizini
-(12 dosya, hiçbir kod okumuyor; şema dönüşümü gerekir).
+**İnci ekseni KAPANDI (6 Eylül 2026).** İkinci yetim de yerine kondu:
+`pearls/nefroloji/lupus-nefriti.json` → `pearls/romatoloji/sle.json`
+(dosyanın kendi kimliği `pearl-sle-nefrit-001`, hedef konu `romatoloji/sle`
+var, çarpışma yok). `romatoloji/sle` inci **0 → 3**.
+Denetim: `pearls — erişilebilir 2 dosya / 13 inci · yetim 0`
+(oturum başında **0 dosya / 0 inci**).
+
+---
+
+## Kalan yetimler AD sorunu DEĞİL, ŞEMA sorunu (6 Eylül 2026)
+
+"Yeniden adlandır, biter" sanılıyordu. Ölçüldü — üç ayrı şema var ve
+motorlar yalnızca birini okuyor:
+
+| dosya | şema | neden yetmez |
+|---|---|---|
+| `quizzes/hematoloji/aml-quiz-1` (10 soru) | `questions` · `text` · `options[]` · `correctAnswer` · `explanation` (HTML) | motor `sorular` · `metin` · `secenekler{}` · `dogru` okuyor. **Bu tam olarak motoru genişletince HTTP 500 veren dosya** (gerekçe `premium-envanter.ts`te) |
+| `questions/` 12 dosya | `question` · `options` · `answer` · `explanation` — **üçüncü şema**, her dosya TEK soru | motor tek dosyada `sorular[]` istiyor |
+| `flashcards/nefroloji/hiperf-kbh` (70 kart) | doğru şema | hedef `kbh-hiperfosfatemi` VAR ve **69 ön yüzün yalnızca 14'ü ortak** — ayrı iki set |
+| `flashcards/endokrinoloji/akromegali` (79 kart) | doğru şema | hiçbir slug altında `akromegali` konusu YOK |
+
+Üç ek kısıt ölçüldü: (1) envanter yalnızca `<konu>-quiz-1` okuyor, **ikinci
+quiz seti diye bir şey yok** — 10+9 soru tek dosyada birleşmeli; (2)
+`aciklama_detay` `kalinIsle` ile **metin** basılıyor, HTML yığını olduğu gibi
+konursa etiketler ekranda görünür; (3) şık açıklamaları yetim şemada yapısal
+değil, tek HTML dizesine gömülü — `secenekAciklamalari`ye ayırmak metni
+bölmek demek. Motor üç alanı da `&&` ile koruyor, yani çökme yok.
+
+Ayrıca: yetim quiz'e bağlantı VAR ama **ölü kodda** —
+`_hematoloji/aml/page.tsx` (alt çizgili klasör Next.js'te rota değil).
+
+**Karar içerik sahibinin:** birleştirme sırası, hangi setin kalacağı ve
+şık açıklamalarının bölünmesi tıbbi metin işi.
+
+---
+
+## Araç sayfalarında başlık hiyerarşisi — ÖLÇÜLDÜ, temiz (6 Eylül 2026)
+
+Kapsam tablosundaki "`h2` yapısı" satırı arşivde hiç geçmiyordu. Sunulan
+HTML tarandı (kaynak değil — başlıkların bir kısmı paylaşılan kabuktan
+geliyor).
+
+| ölçüt | sonuç |
+|---|---|
+| ölçülen araç · başlık | **136 · 435** (hata 0) |
+| `h1` yok · birden fazla `h1` | 0 · 0 |
+| hiç başlık yok | 0 |
+| seviye atlama (`h1→h3`) | **0** |
+| boş / yalnız süsleme glifi başlık | **0** |
+
+**Negatif kontrol tohumlandı, beşi de yakalandı:** h1 yok · iki h1 · `h1→h3`
+· yalnız glif · `<script>` içindeki sahte `h2` elendi (n=1) ama `<style>`
+sonrası gerçek `h2` korundu (n=2 — pozitif kontrol).
+
+Ölçüt tuzağı: ilk negatif kontrolü satır içinde yeniden yazdım ve eleme
+adımını atladım, sahte `h2` sayıldı. **Ölçütü yeniden yazma, aslını sür.**
