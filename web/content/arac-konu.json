@@ -401,6 +401,13 @@
         "eslesen": "CHA2DS2-VASc Skoru"
       }
     ],
+    "hematoloji/kanser-iliskili-tromboz": [
+      {
+        "slug": "khorana",
+        "name": "Khorana Skoru",
+        "eslesen": "Khorana Skoru"
+      }
+    ],
     "hematoloji/m7-flipi-ngs-paneli": [
       {
         "slug": "flipi",
@@ -1132,6 +1139,11 @@
         "yol": "hematoloji/antikoagulasyon-stratejileri",
         "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
         "eslesen": "Khorana Skoru"
+      },
+      {
+        "yol": "hematoloji/kanser-iliskili-tromboz",
+        "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi",
+        "eslesen": "Khorana Skoru"
       }
     ],
     "nihss": [
@@ -1250,10 +1262,10 @@
     ]
   },
   "olcum": {
-    "konu": 475,
+    "konu": 476,
     "arac": 136,
-    "araciOlanKonu": 94,
+    "araciOlanKonu": 95,
     "konusuOlanArac": 31,
-    "bag": 111
+    "bag": 112
   }
 }
