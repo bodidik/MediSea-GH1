@@ -3940,6 +3940,11 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "trombositopenide-antikoagulasyon",
+   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
@@ -4020,11 +4025,6 @@
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   }
  ],
  "hematoloji/kll": [
@@ -4615,6 +4615,23 @@
    "baslik": "İmmün Trombositopeni (İTP)"
   }
  ],
+ "hematoloji/trombositopenide-antikoagulasyon": [
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  }
+ ],
  "hematoloji/trombositopeniler": [
   {
    "brans": "hematoloji",
@@ -4625,23 +4642,18 @@
  "hematoloji/vka-doac-karsilastirma": [
   {
    "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombofililer-hiperkoagulabilite",
-   "baslik": "Trombofililer ve Hiperkoagülabilite"
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
   {
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   }
  ],
  "hematoloji/von-willebrand-hastaligi-vwd": [

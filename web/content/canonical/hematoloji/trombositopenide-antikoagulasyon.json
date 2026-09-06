@@ -1,0 +1,53 @@
+{
+  "title": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar",
+  "meta": {
+    "updatedAt": "06 Eyl 2026",
+    "tags": [
+      "Hematoloji",
+      "Antikoagülasyon",
+      "Trombositopeni",
+      "VTE",
+      "Doz Modifikasyonu",
+      "HIT",
+      "VITT",
+      "Kanser İlişkili Tromboz",
+      "Trombosit Transfüzyonu"
+    ],
+    "parent": "antikoagulasyon-stratejileri",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "⚖️ 1. Genel İlkeler ve Bazal Risk Değerlendirmesi",
+      "html": "<p>Trombositopeni hastayı kanamaya yatkın hâle getirir, ancak <strong>tromboembolik olaylara karşı koruyucu bir etki sağlamaz.</strong> Bu nedenle hem trombositopenisi hem antikoagülasyon endikasyonu olan hastanın yönetimi, tromboz nüksü/progresyonu riski ile kanama riskinin hassas dengelenmesine dayanır.</p><ul class=\"mb-4\"><li><strong>Korelasyon doğrusal değildir:</strong> Trombosit sayısı ile ciddi kanama riski arasında her zaman doğrusal bir ilişki yoktur. Yine de VTE veya AF nedeniyle antikoagüle edilen hastalarda <strong>hafif trombositopeni (&lt; 100.000/µL) varlığında bile</strong> ciddi kanama riski anlamlı derecede artar.</li><li><strong>Takip dinamik olmalı:</strong> Miyelosupresif kanser tedavisi alan hastalarda trombosit seyri oynaktır; tedavi planı öngörülen <strong>nadir (en düşük değer) dönemleri</strong> dikkate alınarak sürekli yeniden değerlendirilir.</li><li><strong>Ek kanama risk faktörleri taranır:</strong> ileri yaş (&gt; 75), yakın zamanda geçirilmiş majör kanama, allojenik kök hücre nakli, böbrek veya karaciğer yetmezliği, düşme riski. Bunların varlığında <strong>tam doz antikoagülasyondan kaçınılır.</strong></li><li><strong>Antiplatelet eklenmez:</strong> Trombosit &lt; 50.000/µL olan hastalarda, <strong>son 12 ayda koroner stent</strong> gibi mutlak bir endikasyon yoksa antikoagülana aspirin veya klopidogrel eklenmesinden kesinlikle kaçınılır.</li></ul>"
+    },
+    {
+      "heading": "🛡️ 2. Birincil VTE Profilaksisi: Trombosit Eşikleri",
+      "html": "<p>Hastanede yatan veya ayaktan izlenen kanser hastalarında <strong>primer tromboprofilaksi</strong> kararı trombosit sayısına göre kategorize edilir — bu eşikler tedavi eşiklerinden ayrıdır:</p><table class=\"min-w-full text-xs\"><thead><tr><th>Trombosit sayısı</th><th>Profilaksi kararı</th></tr></thead><tbody><tr><td><strong>≥ 50.000/µL</strong></td><td>Standart profilaksi (LMWH veya uygun DOAC) kısıtlama olmaksızın uygulanır.</td></tr><tr><td><strong>25.000 - 50.000/µL</strong></td><td>Bireyselleştirilir. Çok yüksek tromboembolik risk taşıyan (aktif yüksek riskli malignite, geçmiş VTE öyküsü) hastalarda profilaktik antikoagülasyon düşünülebilir.</td></tr><tr><td><strong>&lt; 25.000/µL</strong></td><td>Farmakolojik VTE profilaksisi <strong>önerilmez, uygulanmaz.</strong></td></tr></tbody></table>"
+    },
+    {
+      "heading": "🧭 3. Akut VTE Tedavisi: Karar Algoritması",
+      "html": "<p>Akut VTE (ilk 30 gün içindeki DVT veya PE) tanısı alan ve eş zamanlı trombositopenisi olan hastada yaklaşım, trombosit sayısının mutlak değerine <strong>ve</strong> trombozun progresyon riskine göre şekillenir:</p><table class=\"min-w-full text-xs\"><thead><tr><th>Trombosit</th><th>Progresyon riski</th><th>Yaklaşım</th></tr></thead><tbody><tr><td><strong>≥ 50.000/µL</strong></td><td>—</td><td><strong>Tam doz</strong> (terapötik) LMWH veya DOAC</td></tr><tr><td rowspan=\"2\"><strong>25.000 - 50.000/µL</strong></td><td><strong>Yüksek</strong><br>(akut proksimal DVT, segmental/merkez PE)</td><td>Trombosit transfüzyonuyla sayıyı <strong>≥ 50.000/µL</strong> tut ve <strong>tam doz</strong> ver</td></tr><tr><td><strong>Düşük-orta</strong><br>(izole distal DVT, subsegmental PE, kateter ilişkili, &gt; 30 gün subakut)</td><td><strong>Yarı doz</strong> (%50 azaltılmış) antikoagülasyon</td></tr><tr><td><strong>&lt; 25.000/µL</strong></td><td>—</td><td>Antikoagülan <strong>geçici olarak askıya alınır</strong></td></tr></tbody></table>"
+    },
+    {
+      "heading": "🔬 4. Trombosit 25.000-50.000/µL: Progresyon Riskine Göre Ayrım",
+      "html": "<p><strong>Yüksek progresyon / rekürrens riski</strong> — akut proksimal DVT veya segmental/merkez PE, ilk 30 gün:</p><ul class=\"mb-4\"><li>Bu hastalarda <strong>tromboza bağlı ölüm riski, kanama riskinden yüksektir.</strong></li><li>Önerilen yaklaşım: aktif trombosit transfüzyonu desteğiyle sayıyı <strong>≥ 50.000/µL</strong> üzerinde tutmak ve <strong>tam doz</strong> antikoagülasyon uygulamak.</li><li>Transfüzyon desteği pratik değilse veya trombositler transfüzyona rağmen 25.000-50.000/µL aralığında kalıyorsa <strong>yarı doz (modified-dose)</strong> antikoagülasyona geçilir.</li></ul><p><strong>Düşük ila orta progresyon riski</strong> — izole distal DVT, subsegmental PE, kateter ilişkili VTE veya 30 günden önce gelişmiş subakut VTE:</p><ul class=\"mb-4\"><li>Kanama endişesi ön plana çıktığından doz <strong>%50 oranında azaltılarak</strong> sürdürülür.</li><li><strong>Doz örnekleri:</strong> Enoksaparin 1 mg/kg BID yerine <strong>0.5 mg/kg BID</strong>; Dalteparin 200 U/kg QD yerine (ilk 30 gün için) <strong>100 U/kg QD.</strong></li></ul>"
+    },
+    {
+      "heading": "⛔ 5. Trombosit < 25.000/µL: Askıya Alma ve IVC Filtresi",
+      "html": "<ul class=\"mb-4\"><li>Bu düzeyde kanama riski kabul edilemez derecede yüksek olduğundan antikoagülan tedavi <strong>geçici olarak askıya alınır (hold).</strong></li><li>Hasta <strong>akut PE veya proksimal DVT</strong> dönemindeyse ve antikoagülasyonun kesilmesi hayati tehlike yaratıyorsa, agresif trombosit transfüzyonlarıyla sayı <strong>25.000-50.000/µL</strong> aralığının üzerine çıkarılarak yakın gözetim altında yarı doz veya tam doz antikoagülasyon denenebilir.</li><li>Antikoagülanın tutulduğu dönemde, akut proksimal DVT veya PE varlığında koruma amaçlı <strong>geçici vena kava inferior (IVC) filtresi</strong> yerleştirilmesi düşünülebilir.</li></ul>"
+    },
+    {
+      "heading": "🧬 6. Özel Senaryolar: Allojenik Nakil, ITP ve APS",
+      "html": "<p><strong>Allojenik hematopoetik kök hücre nakli (HCT):</strong> Nakil sonrası erken dönem trombositopenisinde ciddi kanama riski, VTE nüksü veya progresyonu riskinden <strong>çok daha yüksektir.</strong></p><p><strong>Klinik not:</strong> Bu hastalarda akut VTE gelişse dahi, agresif trombosit transfüzyonlarıyla tam doz antikoagülasyon vermeye çalışmak yerine <strong>doz modifikasyonlu (yarı doz veya profilaktik doz)</strong> antikoagülasyon tercih edilir. Trombositler nakil sonrası <strong>&gt; 50.000/µL</strong> seviyesine engrafte olduğunda tam doza geçiş planlanır.</p><p><strong>İmmün trombositopeni (ITP):</strong> ITP'de dolaşımdaki trombositler daha genç ve fonksiyonel olarak daha aktiftir (megatrombositler); bu nedenle çok düşük sayılarda bile spontan kanama nadirdir.</p><p><strong>Klinik not:</strong> ITP hastasında antikoagülasyon gerektiren acil bir durum (VTE veya AF) varsa, trombosit <strong>30.000-50.000/µL</strong> aralığında olsa dahi antikoagülasyon tolere edilebilir. Antikoagülasyonu başlatabilmek için IVIG, glukokortikoid (yüksek doz deksametazon) veya <strong>TPO-reseptör agonistleri</strong> gibi ITP tedavilerine, standart hedeflerden <strong>daha yüksek</strong> bir trombosit hedefiyle (örn. 50.000/µL) başlanması makuldür.</p><p><strong>Antifosfolipid sendromu (APS):</strong> Trombositopeni, APS hastasında arteriyel veya venöz tromboza karşı koruma sağlamaz. APS ve sekonder ITP birlikteliğinde terapötik antikoagülasyonu (tercihen warfarin) başlatabilmek için trombosit sayısı IVIG veya steroidlerle hızla <strong>&gt; 50.000/µL</strong> üzerine çıkarılmalıdır. Bu seviyenin altında transfüzyonlar (aktif kanama yoksa) <strong>otoantikorlar nedeniyle etkisiz</strong> olacağından ITP benzeri immünsüpresif tedaviler önceliklendirilir.</p>"
+    },
+    {
+      "heading": "🚨 7. HIT ve VITT: Kural Tersine Döner",
+      "html": "<p><strong>Kritik uyarı:</strong> Heparine bağlı trombositopeni (HIT) ve aşı ilişkili trombositopenik trombozda (VITT) trombositopeni derin olmasına rağmen <strong>masif tromboz riski</strong> vardır. Bu iki tabloda yukarıdaki eşik mantığı geçerli değildir.</p><ul class=\"mb-4\"><li>Trombosit sayısı ne kadar düşük olursa olsun <strong>antikoagülasyon kesilmez</strong>; aksine <strong>tam (terapötik) dozda heparinsiz</strong> bir ajanla sürdürülür: <strong>argatroban, bivalirudin, fondaparinuks</strong> veya DOAC'lar.</li><li>Patolojiyi tetikleyecek antikora bağlı aktivasyon riski nedeniyle <strong>rutin profilaktik trombosit transfüzyonlarından kesinlikle kaçınılır</strong>; transfüzyon yalnızca hayatı tehdit eden aktif kanamayla sınırlandırılır.</li></ul>"
+    },
+    {
+      "heading": "🧪 8. Destek Tedavileri ve Ajan Seçimi",
+      "html": "<ul class=\"mb-4\"><li><strong>TPO reseptör agonistleri akut dönemde uygun değildir:</strong> Akut VTE tedavisinde trombositi yükseltmek amacıyla TPO-RA (romiplostim, eltrombopag) kullanımı yararsızdır — etki başlangıcı <strong>günler ilâ haftalar</strong> alır. Acil durumda tek geçerli destek <strong>trombosit süspansiyonu transfüzyonudur.</strong></li><li><strong>DOAC güvenlik sınırı:</strong> Kanser ilişkili tromboz çalışmalarında edoksaban ve rivaroksaban gibi DOAC'ların, özellikle <strong>rezeke edilmemiş gastrointestinal tümörü</strong> olan trombositopenik hastalarda majör mukozal kanama riskini anlamlı ölçüde artırdığı gösterilmiştir. Bu nedenle trombositopenik kanser hastasında <strong>LMWH (enoksaparin / dalteparin)</strong> hâlâ en geniş tecrübeye sahip ve en güvenli yaklaşımdır.</li></ul>"
+    }
+  ]
+}
