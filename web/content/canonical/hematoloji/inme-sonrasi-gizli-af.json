@@ -1,0 +1,45 @@
+{
+  "title": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
+  "meta": {
+    "updatedAt": "06 Eyl 2026",
+    "tags": [
+      "Hematoloji",
+      "Antikoagülasyon",
+      "Atriyal Fibrilasyon",
+      "İnme",
+      "Kriptojenik İnme",
+      "ESUS",
+      "Subklinik AF",
+      "Kardiyak Monitörizasyon",
+      "Sekonder Profilaksi"
+    ],
+    "parent": "antikoagulasyon-stratejileri",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🧠 1. Klinik Önem ve Kapsam",
+      "html": "<p>İnme (stroke) veya geçici iskemik atak (GİA) sonrası gizli atriyal fibrilasyonun (AF) saptanması ve yönetimi, sekonder inme profilaksisinde <strong>antiplatelet tedaviden antikoagülan tedaviye geçiş kararını</strong> belirleyen en kritik klinik basamaklardan biridir.</p><p>Atriyal fibrilasyon, genel inme riskini <strong>yaklaşık 5 kat</strong> artırmakta ve tüm iskemik inmelerin <strong>yaklaşık yedide birinden (1/7)</strong> sorumlu olmaktadır.</p><p>İnme sonrası AF takibi; tanısal tarama araçları, izleme süreleri ve antikoagülasyon tedavi zamanlaması başlıkları altında sistematik bir protokole dayanır.</p>"
+    },
+    {
+      "heading": "📈 2. Akut Dönem Sonrası Ritim Takibi: Tarama Süresi ve Cihaz Seçimi",
+      "html": "<p>İnme geçiren bir hastada, inmenin etiyolojisini aydınlatmak amacıyla çok yönlü bir değerlendirme yapılmalıdır. <strong>Kriptojenik inme</strong> veya <strong>Belirlenemeyen Kaynaklı Embolik İnme (ESUS)</strong> tanısı alan hastalarda gizli (occult/covert) paroksismal AF sıklığı oldukça yüksektir.</p><p>Geleneksel 24-48 saatlik Holter monitörizasyonu, paroksismal ve asemptomatik AF ataklarını yakalamada sıklıkla yetersiz kalır. Ritim takibinde <strong>süre uzatıldıkça AF saptama olasılığı doğrusal olarak artar.</strong></p><ul class=\"mb-4\"><li><strong>İlk akut değerlendirme (kılavuz önerisi):</strong> Güncel kılavuzlar, bilinen AF'si olmayan akut iskemik inme veya GİA hastalarında <strong>ilk 24 saat boyunca kısa dönem EKG kaydı</strong>, ardından <strong>en az 72 saat boyunca kesintisiz EKG monitörizasyonu (telemetri)</strong> yapılmasını önermektedir (Sınıf 1 öneri).</li><li><strong>Uzatılmış eksternal monitörizasyon (wearable / patch monitor):</strong> Taburculuk sonrası dönemde paroksismal AF şüphesi devam eden hastalarda <strong>14 ila 30 günlük</strong> sürekli eksternal yama (patch) monitörleri veya mobil kardiyak ayaktan telemetri (MCOT) sistemleri kullanılmalıdır. <strong>EMBRACE</strong> (30 günlük monitör vs. 24 saatlik Holter), <strong>Find-AF</strong> (10 günlük vs. 24 saatlik Holter) ve <strong>EPACS</strong> (14 günlük vs. 24 saatlik Holter) randomize çalışmaları, uzatılmış eksternal takibin AF saptama oranını anlamlı derecede artırdığını göstermiştir.</li></ul>"
+    },
+    {
+      "heading": "🔁 3. İmplante Edilebilir Kardiyak Monitörler (ICM / Loop Recorder)",
+      "html": "<p>Eksternal takiplere rağmen kaynağı bulunamayan kriptojenik inme hastalarında uzun dönem sürekli izleme için altın standart <strong>implante edilebilir kardiyak monitörlerdir (ICM).</strong></p><ul class=\"mb-4\"><li><strong>CRYSTAL-AF:</strong> Kriptojenik inme hastalarında ICM kullanımının standart tedaviye kıyasla AF saptama oranını <strong>6. ayda %8.9'a karşı %1.4</strong>, <strong>12. ayda %12.4'e karşı %2.0</strong> ve <strong>36. ayda %30.0'a karşı %3.0</strong> düzeyine çıkardığını göstermiştir.</li><li><strong>STROKE-AF:</strong> Büyük arter aterosklerozu veya küçük damar hastalığına bağlı inme geçiren (yani kardiyoembolik dışı kabul edilen) hastalarda dahi 12 aylık ICM takibinde <strong>%12.1 oranında</strong> gizli AF saptanmıştır. Bu durum, patofizyolojilerin bir arada bulunabileceğini göstermektedir.</li><li><strong>PER DIEM:</strong> İnme sonrası 12. ayda yapılan kıyaslamada ICM'lerin eksternal döngü kaydedicilere (loop recorder) üstünlük sağladığını (<strong>%15.3'e karşı %4.7</strong>) doğrulamıştır.</li></ul>"
+    },
+    {
+      "heading": "⏱️ 4. Antikoagülasyona Başlama Zamanlaması: Genel İlke",
+      "html": "<p>İnme sonrası AF saptanan hastalarda antikoagülan tedaviye ne zaman başlanacağı, <strong>tekrarlayan iskemik inme riski</strong> ile <strong>hemorajik transformasyon (kanama) riski</strong> arasındaki hassas dengeye göre belirlenir.</p><p><strong>Parenteral heparin köprülemesinden kaçınma:</strong> Erken dönemde terapötik dozda intravenöz unfraksiyone heparin (UFH) veya düşük molekül ağırlıklı heparin (LMWH) kullanımı, tekrarlayan inmeyi azaltmadığı gibi <strong>semptomatik kafa içi kanama riskini ciddi ölçüde artırdığından</strong> genel olarak önerilmez.</p>"
+    },
+    {
+      "heading": "📏 5. İnfarkt Boyutuna Göre Zamanlama Protokolü",
+      "html": "<ul class=\"mb-4\"><li><strong>Geçici iskemik atak (GİA):</strong> Hemorajik risk olmadığından oral antikoagülasyon (OAC) <strong>hemen (ilk 24 saat içinde)</strong> başlanabilir.</li><li><strong>Hafif-orta dereceli infarkt:</strong> Medikal olarak stabil, kanama komplikasyonu olmayan hastalarda antikoagülan tedavi inmeden <strong>24 ila 96 saat (1-4 gün) sonra</strong> güvenle başlanabilir.</li><li><strong>Geniş infarkt, kontrolsüz hipertansiyon veya hemorajik transformasyon:</strong> Bu hastalarda OAC tedavisi <strong>en az 4 ila 7 gün</strong> (bazı durumlarda klinik tablonun ağırlığına göre 12-14 güne kadar) ertelenmelidir. Tedaviye başlamadan önce mutlaka beyin BT veya MRG görüntülemesi tekrarlanarak <strong>hemorajik transformasyonun olmadığı teyit edilmelidir.</strong></li></ul><p><strong>CATALYST meta-analizi:</strong> START, TIMING, ELAN ve OPTIMAS randomize çalışmalarını havuzlayan CATALYST meta-analiz verilerine göre, inme sonrası <strong>erken DOAC başlanması (≤ 4 gün)</strong>, geç başlanmasına (≥ 5 gün) kıyasla 30 günlük iskemik inme, semptomatik intraserebral kanama veya sınıflandırılamayan inme kompozit sonlanım noktasını anlamlı derecede azaltmıştır (<strong>%2.1'e karşı %3.0</strong>). Dolayısıyla hafif-orta iskemik olaylarda DOAC'ların ilk 4 gün içinde başlanması güvenli ve etkilidir.</p><p>Ertelenen süreçte, kanama komplikasyonu yoksa hastayı korumak adına antikoagülan başlanana kadar <strong>geçici olarak aspirin monoterapisi</strong> verilebilir; antikoagülan başlandığı an aspirin kesilir.</p>"
+    },
+    {
+      "heading": "📟 6. Cihazla İlişkili (Subklinik) AF'de Antikoagülasyon Eşikleri",
+      "html": "<p>Kalp pilleri, ICD'ler veya ICM'ler tarafından kaydedilen ve klinik olarak yüzey EKG'sinde görülmeyen <strong>subklinik AF (SCAF)</strong> veya <strong>atriyal yüksek hızlı epizotların (AHRE)</strong> varlığında tedavi kararı, epizodun süresine ve hastanın inme riskine göre belirlenir. ARTESiA ve NOAH-AFNET 6 çalışmaları ile 2023-2025 konsensüs kılavuzları doğrultusunda algoritma şöyledir:</p><ul class=\"mb-4\"><li><strong>Epizod süresi ≥ 24 saat:</strong> CHA2DS2-VASc skoru <strong>≥ 2</strong> olan hastalarda uzun dönem oral antikoagülasyon (OAC) başlanması makuldür (Sınıf 2a).</li><li><strong>Epizod süresi 5 dakika - 24 saat arası:</strong> CHA2DS2-VASc skoru <strong>≥ 3</strong> veya ek risk faktörü olan hastalarda OAC (örn. apiksaban) başlanması makul kabul edilebilir (Sınıf 2b).</li><li><strong>Epizod süresi &lt; 5 dakika:</strong> Başka bir kesin endikasyon yoksa, çok düşük AF yükü nedeniyle antikoagülasyon başlanması önerilmez (Sınıf 3).</li></ul><p><strong>İnme öyküsü olan hastalar:</strong> ARTESiA çalışmasının inme öyküsü olan hastalara yönelik alt grup analizinde; cihazla saptanan paroksismal subklinik AF'si olan ve daha önce inme/GİA geçirmiş hastaların <strong>aspirin tedavisi altındaki yıllık tekrarlayan inme riskinin %3.1</strong> olduğu saptanmıştır. Bu yüksek risk nedeniyle, inme öyküsü olan hastalarda subklinik AF süresi <strong>5 dakikanın üzerinde olduğu andan itibaren CHA2DS2-VASc skoru dikkate alınmaksızın</strong> antikoagülasyon (OAC) tedavisi kuvvetle önerilmektedir.</p>"
+    }
+  ]
+}
