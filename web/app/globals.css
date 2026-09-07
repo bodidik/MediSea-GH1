@@ -327,10 +327,22 @@ mark.ms-hl-u {
    Kapsam: `font-size` KAP üzerinde. Tailwind'in rem tabanlı boyut
    sınıfları (`text-lg` özet kutusu, başlıklar, rozetler) etkilenmiyor —
    yani hiyerarşi düzleşmiyor, yalnızca gövde küçülüyor. */
-@media (min-width: 641px) {
-  [data-readable] {
-    font-size: 0.875rem;  /* 14px — 16px'ten indi, tabanın tam üstünde */
-    line-height: 1.7;
+/* `@layer base`: bu bir TABAN, üstünlük değil. Kural bir dönem katmansızdı
+   ve `@tailwind utilities`ten SONRA geldiği için aynı özgüllükteki Tailwind
+   boyut sınıflarını EZİYORDU. Ölçüldü: `PearlsViewer`in okuma kabı
+   `text-[15px]` taşıyor ama hesaplanan boyut **14px** çıkıyordu — yazarın
+   açık kararı sessizce eziliyordu. Depoda kayıtlı `.prose`a düz `color`
+   yazma tuzağının aynısı, farklı özellikte.
+
+   Katman içinde kural utilities'e YENİLİYOR: boyut sınıfı taşımayan kap
+   (açık konu sayfası, quiz açıklaması) 14px alır, taşıyan kap (inciler)
+   kendi boyutunda kalır. */
+@layer base {
+  @media (min-width: 641px) {
+    [data-readable] {
+      font-size: 0.875rem;  /* 14px — 16px'ten indi, tabanın tam üstünde */
+      line-height: 1.7;
+    }
   }
 }
 
