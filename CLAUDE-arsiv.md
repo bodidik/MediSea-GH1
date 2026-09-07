@@ -30360,3 +30360,96 @@ Kapılar sözdizimini sınıyor, YERLEŞİMİ değil — ve bu depoda mekanik
 süpürmelerin kusuru neredeyse her zaman yerleşimde oluyor. Bu turda 5
 kusurdan (2 yerleşim + 1 ölçüt körlüğü + 2 ölçüm artefaktı) yalnızca
 ikisini kapılar gördü.
+
+---
+
+# CLAUDE.md'den tasinanlar (6 Eylul 2026)
+
+## Birim ilanı — ÖLÇÜLDÜ, sınıf kapalı (5 Eylül 2026)
+
+Sayısal girdisi olan **60 araç / 172 girdi** tarandı (kaynaktaki 104
+`inputMode` yazımı döngüde 172 girdiye açılıyor — kapsamı SAY).
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| birim erişilebilir ADDA | 109 | 110 |
+| birim `aria-describedby` ile duyuruluyor | 40 | **44** |
+| **görünür ama duyurulmuyor** (kusur) | **4** | **0** |
+| birimsiz (pH · FiO₂ · NRS · eklem sayısı · INR · GKS · VAS) | 18 | 18 — meşru |
+
+Düzeltilen dördü: `fomepizol` · `nac-infuzyon` (kg span'inde `id` yoktu),
+`unit-converter` ×2 (**birim analite göre değişiyor**, etiket sabit "Geleneksel
+birim" diyordu — kreatinin mg/dL↔µmol/L canlıda doğrulandı), `acth-stim` ×3
+(μg/dL grup başlığındaydı, girdilere bağlı değildi).
+
+**Ölçüt üç kez yanlış pozitif verdi, üçü de kayıtlı tuzak:** `\b%\b` (yüzde
+sözcük karakteri değil) · `Ağırlıkkg`/`Boycm`/`UltrafiltrasyonLitre` (React
+metin birleşmesi) · `\bÜ\b` ve çıplak `dk` (**JS `\b` ASCII'ye göre çalışıyor**,
+`Ü` sınırı delmiyor). Beklenti tutmayınca önce ölçüt sınandı — yoksa dört
+sağlam araç "kusurlu" diye değiştirilecekti.
+
+Kalan: kapsam **açık taraftaki 60 araç**; premium yüzeylerde sayısal girdi
+taranmadı.
+
+---
+
+## `truncate` / `line-clamp` premiumda — ÖLÇÜLDÜ (5 Eylül 2026)
+
+Üç kullanım (belgede "4" yazıyordu, içerik değişmiş). 320 · 375 · 414 · 768'de
+**gerçek veriyle** ölçüldü.
+
+| yer | bulgu |
+|---|---|
+| liderlik `h3`+`p` (12 öge) | 375+'ta kırpık **0**; 320'de 2 ünvan 5–6px taşıyor. "(sen)" işareti ad 5 karakterden uzunsa kesiliyor — **ama kimlik kaybı YOK**: satır ayrıca kenarlık + zemin + parıltı + `scale` taşıyor, ekran okuyucu da tam metni okuyor |
+| pano "Yeni eklendi" kartı | **KUSUR** — 320'de kap 140px, metin 3 satır istiyor / 2 gösteriyor; kesilen hep **sondaki soru sayısı** ("…ve Klinik" görünüyor, "Yönetim · 5 soru" gidiyor), kurtarma yolu yok |
+
+Çare iki parça: soru sayısı clamp'in **dışına** (üstteki küçük satıra) alındı —
+kart yüksekliği 375/768'de değişmedi; ve başlığa dar ekranda üçüncü satır
+verildi (`line-clamp-3 sm:line-clamp-2`).
+
+| ölçüt | 320 | 375 | 768 |
+|---|---|---|---|
+| başlık kırpık (önce → sonra) | var → **yok** | yok → yok | yok → yok |
+| soru sayısı görünür | **hayır → evet** | evet | evet |
+| kart yüksekliği | 128 → 148 (bir satır, kasıtlı) | 128 → **128** | 108 → **108** |
+
+**Negatif kontrol:** 240 karakterlik uydurma başlıkla clamp hâlâ bağlıyor
+(768'de 2 satır, 320'de 3) — yerleşim patlamıyor.
+
+**Ölçüm notu:** tohum adlar kısa olduğu için ilk tur "temiz" göründü. Kırpma
+bir GENİŞLİK varsayımı olduğundan eşik hesaplandı (canvas `measureText` ile
+kutu genişliği), veri olduğu gibi kabul edilmedi.
+
+## 73 sayfada AI taslak uyarısı KESİKTİ (6 Eylül 2026)
+
+`benzer-govde` raporunu kovalarken çıktı. Konu sayfalarındaki `🤖` bloğu
+73 dosyada *"⚠️ Uyarı: MediSea"* diye bitiyordu — cümle yarım, okuyucu
+içeriğin yapay zekâ taslağı olduğunu **hiç öğrenmiyordu.** Canlıda doğrulandı
+(sunucu HTML'inde basılıyor, gizli değil).
+
+| varyant | dosya |
+|---|---|
+| `Uyarı: MediSea` (kesik) | 70 · biri bozuk HTML (`</strong>` eşleşmiyor, "HEmatoloji") |
+| `Uyarı: MediSea Akademik Modül` (kesik) | 3 |
+| yazarın kendi tam metni | 4 — **dokunulmadı** |
+
+Kullanıcı kararı: kısa uyarı, **taahhüt cümlesi olmasın**. Uygulanan metin —
+başlık `🤖 AI İçerik Uyarısı`, gövde *"Bu modül yapay zekâ (AI) tarafından
+oluşturulmuş bir taslaktır."* Sonuç: kesik 73 → **0**, yeni metin 73 dosyada.
+
+Başlık değişikliği ikinci bir kusuru da kapattı: `🤖` tek başına bir süsleme
+glifiydi ve İçindekiler'de yalnızca robot emojisi görünüyordu.
+
+**Biçim tuzağı — sayı tutmayınca yakalandı.** İlk sürüm ham metin değiştirmesi
+yaparken çok satırlı JSON bloğunu tek satıra indirdi: diff **73 ekleme / 133
+silme** çıktı. 1:1 olmayan bir diff biçim bozulmasıdır; geri alındı, eşleşmenin
+kendi girintisi ve satır sonu yeniden kullanıldı, diff **93/93** oldu.
+Betiğe üç nöbetçi kondu: `JSON.parse` · satır sayısı · CR sayısı.
+
+**Kalan tutarsızlık:** yazarın 4 dosyası iki ayrı biçimde
+(`🤖 AI Taslak Modülü` ×2 · `🤖 AI İçerik Uyarısı (Taslak Modülü)` ×2, ikincisi
+"yazarın notlarıyla güncellenecektir" taahhüdünü taşıyor). Aynı ilanın üç
+yazımı — birleştirmek metin kararı, kullanıcıya bırakıldı.
+
+---
+

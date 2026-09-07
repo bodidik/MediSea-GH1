@@ -804,7 +804,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **güvenlik başlıkları** | CSP/XFO/nosniff yok; XFO eklemek deponun kendi iframe ölçüm yöntemini kırar |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
 | **`/tools` hub tekrarı** | 18 kategori çipi + 18 akordeon başlığı (mobilde çipler kaldırıldı, masaüstünde duruyor) |
-| **masaüstü satır uzunluğu** | okuma alanı 1280px'te 99 karakter (rahat aralık 45–75) |
+| **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, aşağıya bak |
 
 ---
 
@@ -823,60 +823,17 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 
 ---
 
-## Birim ilanı — ÖLÇÜLDÜ, sınıf kapalı (5 Eylül 2026)
+## Kapanan sınıflar — ayrıntısı arşivde
 
-Sayısal girdisi olan **60 araç / 172 girdi** tarandı (kaynaktaki 104
-`inputMode` yazımı döngüde 172 girdiye açılıyor — kapsamı SAY).
+Ölçüm tabloları `CLAUDE-arsiv.md`de ("CLAUDE.md'den taşınanlar" başlığı
+altında). Buradaki tek satır **verdikt**; sayı ya da yöntem gerekiyorsa
+arşivi aç.
 
-| ölçüt | önce | sonra |
-|---|---|---|
-| birim erişilebilir ADDA | 109 | 110 |
-| birim `aria-describedby` ile duyuruluyor | 40 | **44** |
-| **görünür ama duyurulmuyor** (kusur) | **4** | **0** |
-| birimsiz (pH · FiO₂ · NRS · eklem sayısı · INR · GKS · VAS) | 18 | 18 — meşru |
-
-Düzeltilen dördü: `fomepizol` · `nac-infuzyon` (kg span'inde `id` yoktu),
-`unit-converter` ×2 (**birim analite göre değişiyor**, etiket sabit "Geleneksel
-birim" diyordu — kreatinin mg/dL↔µmol/L canlıda doğrulandı), `acth-stim` ×3
-(μg/dL grup başlığındaydı, girdilere bağlı değildi).
-
-**Ölçüt üç kez yanlış pozitif verdi, üçü de kayıtlı tuzak:** `\b%\b` (yüzde
-sözcük karakteri değil) · `Ağırlıkkg`/`Boycm`/`UltrafiltrasyonLitre` (React
-metin birleşmesi) · `\bÜ\b` ve çıplak `dk` (**JS `\b` ASCII'ye göre çalışıyor**,
-`Ü` sınırı delmiyor). Beklenti tutmayınca önce ölçüt sınandı — yoksa dört
-sağlam araç "kusurlu" diye değiştirilecekti.
-
-Kalan: kapsam **açık taraftaki 60 araç**; premium yüzeylerde sayısal girdi
-taranmadı.
-
----
-
-## `truncate` / `line-clamp` premiumda — ÖLÇÜLDÜ (5 Eylül 2026)
-
-Üç kullanım (belgede "4" yazıyordu, içerik değişmiş). 320 · 375 · 414 · 768'de
-**gerçek veriyle** ölçüldü.
-
-| yer | bulgu |
+| sınıf | verdikt |
 |---|---|
-| liderlik `h3`+`p` (12 öge) | 375+'ta kırpık **0**; 320'de 2 ünvan 5–6px taşıyor. "(sen)" işareti ad 5 karakterden uzunsa kesiliyor — **ama kimlik kaybı YOK**: satır ayrıca kenarlık + zemin + parıltı + `scale` taşıyor, ekran okuyucu da tam metni okuyor |
-| pano "Yeni eklendi" kartı | **KUSUR** — 320'de kap 140px, metin 3 satır istiyor / 2 gösteriyor; kesilen hep **sondaki soru sayısı** ("…ve Klinik" görünüyor, "Yönetim · 5 soru" gidiyor), kurtarma yolu yok |
-
-Çare iki parça: soru sayısı clamp'in **dışına** (üstteki küçük satıra) alındı —
-kart yüksekliği 375/768'de değişmedi; ve başlığa dar ekranda üçüncü satır
-verildi (`line-clamp-3 sm:line-clamp-2`).
-
-| ölçüt | 320 | 375 | 768 |
-|---|---|---|---|
-| başlık kırpık (önce → sonra) | var → **yok** | yok → yok | yok → yok |
-| soru sayısı görünür | **hayır → evet** | evet | evet |
-| kart yüksekliği | 128 → 148 (bir satır, kasıtlı) | 128 → **128** | 108 → **108** |
-
-**Negatif kontrol:** 240 karakterlik uydurma başlıkla clamp hâlâ bağlıyor
-(768'de 2 satır, 320'de 3) — yerleşim patlamıyor.
-
-**Ölçüm notu:** tohum adlar kısa olduğu için ilk tur "temiz" göründü. Kırpma
-bir GENİŞLİK varsayımı olduğundan eşik hesaplandı (canvas `measureText` ile
-kutu genişliği), veri olduğu gibi kabul edilmedi.
+| **birim ilanı** (5 Eyl) | 60 araç / 172 girdi; görünür ama duyurulmayan **4 → 0**. Ölçüt üç kez yanlış pozitif verdi (`\b%\b` · React metin birleşmesi · ASCII `\b` ile `Ü`/`dk`). |
+| **`truncate` premiumda** (5 Eyl) | 3 kullanım; pano kartında 320px'te kaybolan soru sayısı düzeltildi, liderlikte kimlik kaybı YOK. Kırpma bir GENİŞLİK varsayımıdır — eşiği `measureText` ile hesapla. |
+| **AI taslak uyarısı** (6 Eyl) | 73 sayfada cümle yarımdı (*"⚠️ Uyarı: MediSea"*); kısa metinle tamamlandı, kesik **73 → 0**. Yazarın 4 dosyası iki ayrı biçimde duruyor — birleştirme metin kararı. |
 
 ---
 
@@ -897,39 +854,6 @@ Uygulamanın kendi `envanterAl()`i sürüldü (ölçüt yeniden yazılmadı):
 ölçtü: "inci bağlantısı 0" çıktı. Negatif kontrol düştü — sayfada quiz, kart,
 vaka bağlantısı da 0'dı ve "Üyelik/Satın" 22 kez geçiyordu, yani ölçülen şey
 `AccessGate`di. Kapı arkasını ölçemediğin yerde **mekanizmayı** ölç.
-
-## 73 sayfada AI taslak uyarısı KESİKTİ (6 Eylül 2026)
-
-`benzer-govde` raporunu kovalarken çıktı. Konu sayfalarındaki `🤖` bloğu
-73 dosyada *"⚠️ Uyarı: MediSea"* diye bitiyordu — cümle yarım, okuyucu
-içeriğin yapay zekâ taslağı olduğunu **hiç öğrenmiyordu.** Canlıda doğrulandı
-(sunucu HTML'inde basılıyor, gizli değil).
-
-| varyant | dosya |
-|---|---|
-| `Uyarı: MediSea` (kesik) | 70 · biri bozuk HTML (`</strong>` eşleşmiyor, "HEmatoloji") |
-| `Uyarı: MediSea Akademik Modül` (kesik) | 3 |
-| yazarın kendi tam metni | 4 — **dokunulmadı** |
-
-Kullanıcı kararı: kısa uyarı, **taahhüt cümlesi olmasın**. Uygulanan metin —
-başlık `🤖 AI İçerik Uyarısı`, gövde *"Bu modül yapay zekâ (AI) tarafından
-oluşturulmuş bir taslaktır."* Sonuç: kesik 73 → **0**, yeni metin 73 dosyada.
-
-Başlık değişikliği ikinci bir kusuru da kapattı: `🤖` tek başına bir süsleme
-glifiydi ve İçindekiler'de yalnızca robot emojisi görünüyordu.
-
-**Biçim tuzağı — sayı tutmayınca yakalandı.** İlk sürüm ham metin değiştirmesi
-yaparken çok satırlı JSON bloğunu tek satıra indirdi: diff **73 ekleme / 133
-silme** çıktı. 1:1 olmayan bir diff biçim bozulmasıdır; geri alındı, eşleşmenin
-kendi girintisi ve satır sonu yeniden kullanıldı, diff **93/93** oldu.
-Betiğe üç nöbetçi kondu: `JSON.parse` · satır sayısı · CR sayısı.
-
-**Kalan tutarsızlık:** yazarın 4 dosyası iki ayrı biçimde
-(`🤖 AI Taslak Modülü` ×2 · `🤖 AI İçerik Uyarısı (Taslak Modülü)` ×2, ikincisi
-"yazarın notlarıyla güncellenecektir" taahhüdünü taşıyor). Aynı ilanın üç
-yazımı — birleştirmek metin kararı, kullanıcıya bırakıldı.
-
----
 
 ## `benzer-govde`: aynı konu iki kez yayında — KARAR BEKLİYOR
 
@@ -1060,3 +984,111 @@ gibi) — kesinliği geri vermemek için genişletilmedi.
 **Yeni kapı ilk koşumunda iş gördü:** içerik dalından gelen
 `hematoloji/inme-sonrasi-gizli-af` konusu indeksi bayatlatmıştı, `--kontrol`
 düştü ve hangi konunun eksik olduğunu yazdı.
+
+---
+
+## Okuma satırı 70 karakterde sabitlendi (6 Eylül 2026)
+
+Üç adımda, her adım ölçülerek. Kullanıcı "%80 görünüm" istedi; birebir
+uygulanamadı — 16px'in %80'i 12.8px ve okuma alanının **14px tabanının**
+altında kalıyor.
+
+| adım | 1280px | 1440px |
+|---|---|---|
+| başlangıç (16px · 12'de 8) | 93 karakter | — |
+| gövde 14px (`min-width:641px`) | 107 | 105 |
+| sütun 12'de 7 | 91 | 105 |
+| **üst genişlik `sm:max-w-[35rem]`** | **70** | **70** |
+
+1920/1440/1280/768'de birebir 70; 640'ta 65 (16px); telefonda üst sınır
+ısırmıyor (40 karakter, 16px — mobil hiç değişmedi).
+
+**`ch` İKİ AYRI ŞEKİLDE YANILTTI — bu yüzden kullanılmadı:**
+
+1. `ch` "0" karakterinin genişliği; Türkçe düz metnin ortalama karakteri
+   ondan DAR. Ölçüldü (14px): 1ch = 8.8px, ortalama karakter = 6.6px →
+   `70ch` **93 karakter** veriyordu.
+2. `ch` YAZI BOYUTUNA bağlı. Kısıt karttan sütuna taşınınca `ch` sütunun
+   16px'iyle hesaplandı (kartın 14px'iyle değil), satır 69 → 79 çıktı.
+
+Değer bu yüzden sabit: 70 × 6.6 = 462px metin + 96px dolgu ≈ **35rem**.
+`box-sizing: border-box` dolguyu da kapsıyor.
+
+**Üst genişlik KARTTA DEĞİL SÜTUNDA:** yalnızca okuma kartına verilince
+kart, aynı sütundaki kardeşlerinden ("Alt Başlıklar", "Bu Sayfada") dar
+kalıyor ve kenarlar hizalanmıyordu.
+
+**Kırılma `sm:` (640px) — yazı kuralıyla AYNI nokta.** Bir tur `lg:`
+denendi: 768px tablette yazı zaten 14px'e inmişti ama üst genişlik devrede
+değildi, satır **94 karakter** çıkıyordu (küçük yazı + uzun satır). İkisi
+ayrışırsa kusur geri gelir.
+
+---
+
+## Kendi eklediğim blokları sınamak — biri düştü (6 Eylül 2026)
+
+"Yeni yüzey" kuralı kendi işime de uygulandı. İki blok: konu sayfasındaki
+"İlgili Hesaplayıcılar", araç sayfasındaki "Bu aracın geçtiği konular".
+
+| ölçüt | konu bloğu | araç bloğu |
+|---|---|---|
+| dokunma hedefi | **30px → 42px** (kardeşler 43/40) | 42–62px |
+| kontrast | 10.35 | 7.58 |
+| başlık · hiyerarşi | `h2` | `h2` · tek `h1`, atlama yok |
+| aynı ad / farklı hedef | yok | yok |
+
+**İLK ÖLÇÜM BAŞTAN SONA ÇÖPTÜ — `innerWidth: 0`.** Bütün genişlikler 0
+çıktı, bağlantılar "tıklanamaz" göründü. Beni yanlış sonuçtan kurtaran şey
+kusurun TEKİLLİĞİNİ sınamak oldu: **kardeş bloklar da 0 çıkıyordu**, yani
+sorun bloğumda değil ölçümdeydi. Betiğe `if (!innerWidth) throw` kondu.
+
+Yan bulgu, benim değil: mevcut "İleri Okuma" bloğunda bir bağlantı 30px —
+asgariyi (24) geçtiği için dokunulmadı.
+
+---
+
+## `egfr` sayfasındaki sekiz konunun sekizi de endokrinolojiydi (6 Eylül 2026)
+
+Bağlar tek sayfada ölçülmüştü; bütün indeks tarandı. İlk iki eksen temiz:
+ölü bağlantı 0/31 araç ve 0/95 konu; aynı ad/farklı hedef yok — üstelik
+**hiçbir konu gövdesi `/tools/` bağlantısı içermiyor**, yani bu blok
+konudan hesaplayıcıya giden TEK yol.
+
+Üçüncü eksende kusur vardı: `egfr` 28 konuda geçiyor, altı branşa yayılmış
+(nefroloji 10 · endokrinoloji 8 · kardiyoloji 5 · journal-club 2 ·
+onkoloji 2 · klinik-nutrisyon 1). Eşleşen takma ad hepsinde aynı (`eGFR`)
+olduğu için sıralama eşitti ve eşitliği **alfabetik yol sırası** bozuyordu:
+gösterilen 8 konunun hepsi endokrinolojiydi, en ilgili branş nefroloji
+hiç görünmüyordu.
+
+Çare: araç tarafındaki kırpma branşlar arasında **sırayla** (round-robin).
+Rastgelelik YOK — `--kontrol` kararlı kalmalı. Sonuç `{nefroloji 2,
+endokrinoloji 2, kardiyoloji 1, journal-club 1, onkoloji 1,
+klinik-nutrisyon 1}`; konu tarafı değişmedi (112 çift / 95 konu).
+
+**Kusur olmayan sınır:** 112 çiftin 89'u geri bağlanıyor, 23'ü tek yönlü —
+doğrudan araç başına 8'lik kapaktan. Ters yönde tek yönlü çift 0.
+
+---
+
+## Huninin ÜÇÜNCÜ yüzeyi: site içi arama (6 Eylül 2026)
+
+Konu ↔ araç bağlıydı ama arama kutusu bu bağı kullanmıyordu.
+
+| sorgu | önce | sonra |
+|---|---|---|
+| atriyal fibrilasyon | 4 sonuç · **araç 0** | 7 · **3** (`chads-vasc`, `khorana`, `nihss`) |
+| kalp yetmezliği | 6 · **0** | 8 · **2** (`child-pugh`, `egfr`) |
+| **addison** (negatif) | 5 · 0 | **5 · 0** — bağlı aracı yok, uydurulmadı |
+
+Sebep: AF'nin hesaplayıcısı CHA₂DS₂-VASc ama aracın adı da açıklaması da
+("AF'de inme riski") hastalığın TAM ADINI taşımıyor. Çare eşanlamlı listesi
+DEĞİL — bağ zaten türetilmiş (`arac-konu.json`); sorgu bir konuyu tutuyorsa
+o konunun araçları da sonuca giriyor, listenin en sonunda (dolaylı eşleşme).
+
+**ÖLÇÜM YÖNTEMİ ÜÇ KEZ YANILTTI, üçü de kayıtlı tuzak:** `.value` setter +
+`input` olayıyla programatik sürüş İKİ FARKLI yanlış cevap üretti (önce
+bayat sonuçlar, sonra 0) — panel odak istiyor; sabit bekleme bayat DOM
+okuttu ("atriyal fibrilasyon" sorgusuna malnütrisyon sonuçları döndü);
+`innerWidth: 0` bir tur tıklamayı reddettirdi. İlk 8 sorguluk tablo atıldı.
+**Uygulamayı kullanıcının yaptığı gibi sür: tıkla, seç, yaz.**
