@@ -125,7 +125,21 @@ function MetinBlok({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'metin' }>; 
                 {satir.yil}
               </span>
             )}
-            <p style={{ fontSize: '15px', lineHeight: 1.7, margin: 0, color: '#1a2a3a' }}>
+            {/* SATIR UZUNLUĞU — yalnızca DÜZ METİN sınırlanır.
+                Ölçüldü: premium okuma kabı 968px (maxWidth 1000 + 16px yan
+                dolgu) ve gövde 15px `system-ui`; ortalama karakter 6.66px →
+                satır **145 karakter**. Rahat aralık 45–75, açık taraf 70.
+
+                Kabı daraltmak çare DEĞİL: aynı kapta 200 tablo ve 200 liste
+                bloğu var, onlar genişliğe muhtaç. Bu yüzden sınır yalnızca
+                bu paragrafta.
+
+                Değer ölçümden: 70 × 6.66px = 466px ≈ 29rem. Açık taraftaki
+                35rem BURAYA UYMAZ — orada `max-width` 96px'lik kart dolgusunu
+                da kapsıyordu, bu paragrafın dolgusu yok. `ch` kullanılmadı:
+                "0" karakteri düz metnin ortalamasından geniş ve `ch` yazı
+                boyutuna bağlı (ikisi de bu depoda ölçülüp kayda geçti). */}
+            <p style={{ fontSize: '15px', lineHeight: 1.7, margin: 0, color: '#1a2a3a', maxWidth: '29rem' }}>
               {kalinIsle(satir.metin)}
             </p>
           </div>
@@ -238,6 +252,13 @@ function BilgiKutusu({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kut
       borderRadius: '0 8px 8px 0',
       padding: '0.8rem 1rem',
       marginBottom: '1rem',
+      /* Bilgi kutusu da DÜZ METİN taşıyor; sınır konmayınca ölçüldü:
+         932px genişlikte **136 karakter**. Sınır KUTUYA veriliyor, içindeki
+         paragrafa değil — kutunun kendi çerçevesi metni sarmalı, yoksa
+         968px'lik renkli bir bant içinde metin solda yarım kalırdı.
+         Değer: 466px metin + 32px yan dolgu ≈ 31rem (`MetinBlok`ta dolgu
+         olmadığı için orada 29rem). */
+      maxWidth: '31rem',
     }}>
       <div style={{
         fontSize: '11px',
