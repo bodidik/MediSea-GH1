@@ -146,7 +146,24 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                           kalıyordu. Vaka ve quiz motorları 15px basıyor. */}
                       <div
                         data-readable={`pearl:${pearl.id}`}
-                        className="text-[15px] text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none"
+                        /* SATIR UZUNLUĞU — `max-w-none` buradaydı, yani
+                           `prose`un kendi okunabilir genişlik sınırı BİLEREK
+                           kapatılmıştı. Ölçüldü (1440px, gerçek çizimde):
+                           kap 846px, gövde 15px → satır **120 karakter**.
+                           Rahat aralık 45–75; açık taraf 70, premium konu
+                           sayfası 67.
+
+                           Değer ölçümden: 846 / 120 = 7.05px ortalama
+                           karakter → 70 × 7.05 = 493px ≈ **31rem**. `ch`
+                           kullanılmadı; bu depoda iki kez yanılttı ("0"
+                           karakteri düz metnin ortalamasından geniş, ve `ch`
+                           yazı boyutuna bağlı). `prose`un varsayılan `65ch`i
+                           de bu yüzden geri açılmadı.
+
+                           `sm:` — dar ekranda üst sınır zaten ısırmıyor,
+                           ama kırılma açık taraftaki yazı/genişlik kuralıyla
+                           aynı noktada tutuluyor ki ikisi ayrışmasın. */
+                        className="text-[15px] text-slate-300/90 leading-relaxed font-medium prose prose-invert prose-p:mb-2 last:prose-p:mb-0 max-w-none sm:max-w-[31rem]"
                         // Bu alan ZATEN ham HTML basıyor; `kalinHtml` yalnızca
                         // `**` çiftini `<strong>`'a çeviriyor, yeni bir risk
                         // eklemiyor. React düğümü döndüren `kalinIsle`
