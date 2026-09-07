@@ -768,15 +768,23 @@ Yeni bir yüzeye dokunurken bunları sor. Hepsi bu depoda ölçüldü.
 
 ---
 
-## Güncel durum (5 Eylül 2026 ölçümü)
+## Güncel durum (6 Eylül 2026 ölçümü)
 
-| büyüklük | değer |
-|---|---|
-| branş · açık konu | 13 · **423** |
-| klinik araç | **136** |
-| premium başlık · soru · kart · vaka | 44 · **454** · 1492 · 11 |
-| CI | Web işi **21 adım** (18 kapı), son koşumlar yeşil |
-| duyurusu olan araç | **105 / 136** |
+Sayılar **canlı yüzeylerden** okundu (uygulamanın kendi sayacı sürüldü),
+belgeden kopyalanmadı.
+
+| büyüklük | değer | önceki (5 Eyl) |
+|---|---|---|
+| branş · açık konu | 13 · **430** | 423 |
+| klinik araç | **136** | 136 |
+| premium başlık · soru | **51** · **568** | 44 · 454 |
+| premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
+| araç ↔ konu bağı | **112 çift** · 95 konu · 31 araç | (yok) |
+| CI | Web işi **21 adım** (18 kapı), son koşumlar yeşil | 21 / 18 |
+| duyurusu olan araç | **105 / 136** (5 Eyl ölçümü, yenilenmedi) | 105 |
+
+`arac-konu-index` 476 konu dosyası sayıyor, yüzeyler 430 diyor — fark
+**gizli konular**; sayaç onları bilerek elemiyor. İki sayı çelişmiyor.
 
 **Dört yüzey birbirini tutuyor** (ana sayfa · `/topics` · `/tools` ·
 `/uyelik`) ve elle güncellenen tek sayı yok.
