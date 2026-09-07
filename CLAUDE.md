@@ -1100,3 +1100,35 @@ bayat sonuçlar, sonra 0) — panel odak istiyor; sabit bekleme bayat DOM
 okuttu ("atriyal fibrilasyon" sorgusuna malnütrisyon sonuçları döndü);
 `innerWidth: 0` bir tur tıklamayı reddettirdi. İlk 8 sorguluk tablo atıldı.
 **Uygulamayı kullanıcının yaptığı gibi sür: tıkla, seç, yaz.**
+
+---
+
+## Premium okuma satırı 145 karakter — ÖLÇÜLDÜ, DEĞİŞTİRİLMEDİ (6 Eylül 2026)
+
+Açık tarafta satır 70'e sabitlendi; kardeş yüzey ölçülmemişti.
+
+| ölçüt | değer |
+|---|---|
+| premium konu kabı | `maxWidth: 1000px` + 16px yan dolgu → **968px** |
+| gövde metni | 15px `system-ui`, ortalama karakter **6.66px** |
+| **satır** | **145 karakter** (rahat aralık 45–75; açık taraf 70) |
+
+**`globals.css`teki 14px kuralı buraya ULAŞMIYOR** — bu önce yanlış
+varsayıldı, sonra ölçüldü: premium blokların hepsi kendi boyutunu SATIR İÇİ
+veriyor (16/15/14/12/11px), yani kapsayıcıdaki `font-size` miras yoluyla
+etkilemiyor. Uzun satır benim değişikliğimden ÖNCE de vardı.
+
+**Naif çare işlemez:** kabı daraltmak içerikteki **200 tablo bloğunu** ezer
+(`icerik` blok dağılımı: 200 tablo · 200 liste · 168 düz metin). Cerrahi
+çare yalnızca düz metin bloklarına üst genişlik vermek olurdu.
+
+**DEĞİŞTİRİLMEDİ, sebebi ölçüm:** premium konu sayfası `AccessGate` arkasında
+ve oturumsuz "**Erişim Kısıtlı**" basıyor — yerleşim değişikliğini
+ÇİZDİREREK doğrulayamıyorum. Ücretli bir yüzeyde körlemesine yerleşim
+değiştirmek deponun "koşullu dalı çizdirmeden ölçme" kuralına aykırı.
+
+**Ölçüm tuzağı — kapı metnini yanlış aradım.** `curl` taraması
+"Üyelik|Satın Al" arıyordu, bu kapı ise "Erişim Kısıtlı" diyor; sayfa
+581 KB döndüğü için bir an "kapı yok, içerik geliyor" sanıldı. Kapıyı
+dizeyle değil, **beklenen içeriğin varlığıyla** ayırt et (`data-readable`
+0 çıkıyordu — asıl işaret oydu).
