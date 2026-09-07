@@ -330,7 +330,20 @@ function SoruKarti({
                 Set kimliği eklenince aynı durumda konteyner BULUNAMIYOR ve
                 kural "konteyneri kaybolan vurgu SİLİNMEZ, sadece boyanmaz"
                 diyor — kayıt hayatta kalıyor. */}
-            <div data-readable={`soru:${setId}:${soru.id}`} style={{ padding: '1rem 1.25rem' }}>
+            {/* SATIR UZUNLUĞU — dördüncü ve son okuma yüzeyi.
+                Ölçüldü (1440px, soru cevaplandıktan SONRA; açıklama koşullu
+                dal ve çizdirilmeden ölçülemiyor): ana açıklama 686px'te
+                **104 karakter**, beş şık açıklaması 629px'te 94–99. Rahat
+                aralık 45–75; açık konu 70 · premium konu 67 · inciler 71.
+
+                Sınır KABA veriliyor, tek tek paragraflara değil: altı ögenin
+                hepsi aynı kapta ve kapta genişliğe muhtaç hiçbir şey yok
+                (tablo 0 · görsel 0 · kod 0 — ölçüldü).
+
+                Değer: 466px metin + 40px yan dolgu ≈ 32rem. Medya sorgusu
+                gerekmiyor — telefonda kap zaten 512px'in altında kalıyor,
+                üst sınır ısırmıyor. */}
+            <div data-readable={`soru:${setId}:${soru.id}`} style={{ padding: '1rem 1.25rem', maxWidth: '32rem' }}>
               {soru.aciklama_detay && (
                 <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
                   {kalinIsle(soru.aciklama_detay)}
