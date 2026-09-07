@@ -165,10 +165,20 @@ function AdimKarti({
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: '#1a2a3a' }}>
 
       {/* KLİNİK BİLGİ KUTUSU */}
+      {/* SATIR UZUNLUĞU — beşinci okuma yüzeyi. Ölçüldü (1440px, adım
+          cevaplandıktan sonra): dokuz metin ögesi 634–691px'te **99–109
+          karakter**. Rahat aralık 45–75; açık konu 70 · premium konu 67 ·
+          inciler 71 · quiz 72.
+
+          Sınır METİN KUTULARINA veriliyor, dış kaba değil: aynı kap şık
+          DÜĞMELERİNİ de taşıyor ve onlar kontrol, metin bloğu değil —
+          quiz motorunda da aynı sınır çizildi.
+
+          Değer: 466px metin + ~38px yan dolgu ≈ 32rem. */}
       <div style={{
         background: '#f5f9ff', border: '0.5px solid #b8cfe8',
         borderLeft: '3px solid #1a3a6b', borderRadius: '0 10px 10px 0',
-        padding: '1rem 1.2rem', marginBottom: '1.2rem',
+        padding: '1rem 1.2rem', marginBottom: '1.2rem', maxWidth: '32rem',
       }}>
         <div style={{ fontSize: '10px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '.5rem' }}>
           Klinik Bilgi
@@ -179,7 +189,7 @@ function AdimKarti({
       {/* SORU */}
       <div style={{
         background: '#fff', border: '0.5px solid #d0e4f5', borderRadius: '10px',
-        padding: '.9rem 1.1rem', marginBottom: '1rem',
+        padding: '.9rem 1.1rem', marginBottom: '1rem', maxWidth: '32rem',
       }}>
         <div style={{ fontSize: '10px', fontWeight: 700, color: '#a01f1f', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '.4rem' }}>
           Soru {adimNo}
@@ -250,6 +260,7 @@ function AdimKarti({
           border: `1.5px solid ${dogruMu ? '#80c898' : '#e08080'}`,
           borderRadius: '12px', overflow: 'hidden',
           animation: 'fadeIn .25s ease',
+          maxWidth: '32rem',
         }}>
           {/* Sonuç başlığı */}
           <div style={{
