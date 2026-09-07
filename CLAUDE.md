@@ -842,26 +842,10 @@ arşivi aç.
 | **birim ilanı** (5 Eyl) | 60 araç / 172 girdi; görünür ama duyurulmayan **4 → 0**. Ölçüt üç kez yanlış pozitif verdi (`\b%\b` · React metin birleşmesi · ASCII `\b` ile `Ü`/`dk`). |
 | **`truncate` premiumda** (5 Eyl) | 3 kullanım; pano kartında 320px'te kaybolan soru sayısı düzeltildi, liderlikte kimlik kaybı YOK. Kırpma bir GENİŞLİK varsayımıdır — eşiği `measureText` ile hesapla. |
 | **AI taslak uyarısı** (6 Eyl) | 73 sayfada cümle yarımdı (*"⚠️ Uyarı: MediSea"*); kısa metinle tamamlandı, kesik **73 → 0**. Yazarın 4 dosyası iki ayrı biçimde duruyor — birleştirme metin kararı. |
+| **inci erişilebilirliği** (6 Eyl) | `pearls` **0 dosya / 0 inci → 2 / 13**, yetim 0. İki ad sapması düzeltildi. Kapı arkasını ölçemediğin yerde MEKANİZMAYI ölç (`envanterAl`). |
+| **araç başlık hiyerarşisi** (6 Eyl) | 136 araç / 435 başlık; `h1` yok · çift `h1` · seviye atlama · boş başlık — dördü de **0**. Beş tohumla negatif kontrol geçti. |
 
 ---
-
-## Ürünün BÜTÜN incileri ulaşılamıyordu (6 Eylül 2026)
-
-`yetim-denetim` raporu: `pearls — erişilebilir: 0 dosya / 0 inci`. İki inci
-dosyası var, ikisi de yetim. Sebep ad sapması: envanter
-`pearls/<branş>/<konu-slug>.json` arıyor, dosya `aml.json`, konu `aml-ana`.
-
-Uygulamanın kendi `envanterAl()`i sürüldü (ölçüt yeniden yazılmadı):
-
-| konu | önce | sonra |
-|---|---|---|
-| `hematoloji/aml-ana` (9 soru · 80 kart · 4 vaka) | inci **0**, `inciVar` false | inci **10**, `inciVar` **true** |
-| `pearls` erişilebilir (denetim) | **0 dosya / 0 inci** | **1 dosya / 10 inci** |
-
-**Ölçüm tuzağı — kapıyı içerik sandım.** İlk tur konu sayfasını `curl` ile
-ölçtü: "inci bağlantısı 0" çıktı. Negatif kontrol düştü — sayfada quiz, kart,
-vaka bağlantısı da 0'dı ve "Üyelik/Satın" 22 kez geçiyordu, yani ölçülen şey
-`AccessGate`di. Kapı arkasını ölçemediğin yerde **mekanizmayı** ölç.
 
 ## `benzer-govde`: aynı konu iki kez yayında — KARAR BEKLİYOR
 
@@ -909,27 +893,6 @@ Ayrıca: yetim quiz'e bağlantı VAR ama **ölü kodda** —
 şık açıklamalarının bölünmesi tıbbi metin işi.
 
 ---
-
-## Araç sayfalarında başlık hiyerarşisi — ÖLÇÜLDÜ, temiz (6 Eylül 2026)
-
-Kapsam tablosundaki "`h2` yapısı" satırı arşivde hiç geçmiyordu. Sunulan
-HTML tarandı (kaynak değil — başlıkların bir kısmı paylaşılan kabuktan
-geliyor).
-
-| ölçüt | sonuç |
-|---|---|
-| ölçülen araç · başlık | **136 · 435** (hata 0) |
-| `h1` yok · birden fazla `h1` | 0 · 0 |
-| hiç başlık yok | 0 |
-| seviye atlama (`h1→h3`) | **0** |
-| boş / yalnız süsleme glifi başlık | **0** |
-
-**Negatif kontrol tohumlandı, beşi de yakalandı:** h1 yok · iki h1 · `h1→h3`
-· yalnız glif · `<script>` içindeki sahte `h2` elendi (n=1) ama `<style>`
-sonrası gerçek `h2` korundu (n=2 — pozitif kontrol).
-
-Ölçüt tuzağı: ilk negatif kontrolü satır içinde yeniden yazdım ve eleme
-adımını atladım, sahte `h2` sayıldı. **Ölçütü yeniden yazma, aslını sür.**
 
 ---
 
@@ -1103,32 +1066,29 @@ okuttu ("atriyal fibrilasyon" sorgusuna malnütrisyon sonuçları döndü);
 
 ---
 
-## Premium okuma satırı 145 karakter — ÖLÇÜLDÜ, DEĞİŞTİRİLMEDİ (6 Eylül 2026)
+## Okuma satırı ÜÇ yüzeyde de aralıkta (6 Eylül 2026)
 
-Açık tarafta satır 70'e sabitlendi; kardeş yüzey ölçülmemişti.
+| yüzey | önce | sonra | kaldıraç |
+|---|---|---|---|
+| açık konu | 93 → 107 | **70** | 14px · sütun 12'de 7 · `sm:max-w-[35rem]` |
+| premium konu — düz metin | **145** | **67** | paragrafa `29rem` |
+| premium konu — bilgi kutusu | 136 | 65–74 | KUTUYA `31rem` (paragrafa verilseydi bant yarım kalırdı) |
+| inciler | 119–121 | **71** | `max-w-none` → `sm:max-w-[31rem]` |
+| premium tablolar | 966px | **966px — dokunulmadı** | — |
 
-| ölçüt | değer |
-|---|---|
-| premium konu kabı | `maxWidth: 1000px` + 16px yan dolgu → **968px** |
-| gövde metni | 15px `system-ui`, ortalama karakter **6.66px** |
-| **satır** | **145 karakter** (rahat aralık 45–75; açık taraf 70) |
+Dört farklı değer, hepsi ölçümden: her yüzeyde dolgu ve yazı farklı.
+**`ch` hiçbirinde kullanılmadı** (iki kez yanılttı; `prose`un `65ch`i de
+bu yüzden açılmadı). **Kırılma hepsinde `sm:`** — 14px kuralıyla aynı
+nokta; `lg:` denendi ve 768px'te satır 94 çıktı.
 
-**`globals.css`teki 14px kuralı buraya ULAŞMIYOR** — bu önce yanlış
-varsayıldı, sonra ölçüldü: premium blokların hepsi kendi boyutunu SATIR İÇİ
-veriyor (16/15/14/12/11px), yani kapsayıcıdaki `font-size` miras yoluyla
-etkilemiyor. Uzun satır benim değişikliğimden ÖNCE de vardı.
+**İki kendi kusurum:** (1) 14px kuralım katmansızdı ve incilerin
+`text-[15px]`ini eziyordu → `@layer base`. Ancak KARDEŞ YÜZEY ölçülünce
+görüldü. (2) Geçici ölçüm rotasını silmek `.next/types` artığı bırakıyor
+ve `typecheck` düşüyor; silmeyi derleme sürerken yapınca derleme de düştü.
 
-**Naif çare işlemez:** kabı daraltmak içerikteki **200 tablo bloğunu** ezer
-(`icerik` blok dağılımı: 200 tablo · 200 liste · 168 düz metin). Cerrahi
-çare yalnızca düz metin bloklarına üst genişlik vermek olurdu.
+**Kapı arkasını ölçmenin yolu:** geçici ölçüm rotası (`app/olcum-gecici`),
+bitince rota + `.next` artıkları silinir. **Kapıyı dizeyle arama** — bu
+kapı "Erişim Kısıtlı" diyor; ayırt edici işaret beklenen içeriğin
+yokluğuydu (`data-readable` 0).
 
-**DEĞİŞTİRİLMEDİ, sebebi ölçüm:** premium konu sayfası `AccessGate` arkasında
-ve oturumsuz "**Erişim Kısıtlı**" basıyor — yerleşim değişikliğini
-ÇİZDİREREK doğrulayamıyorum. Ücretli bir yüzeyde körlemesine yerleşim
-değiştirmek deponun "koşullu dalı çizdirmeden ölçme" kuralına aykırı.
-
-**Ölçüm tuzağı — kapı metnini yanlış aradım.** `curl` taraması
-"Üyelik|Satın Al" arıyordu, bu kapı ise "Erişim Kısıtlı" diyor; sayfa
-581 KB döndüğü için bir an "kapı yok, içerik geliyor" sanıldı. Kapıyı
-dizeyle değil, **beklenen içeriğin varlığıyla** ayırt et (`data-readable`
-0 çıkıyordu — asıl işaret oydu).
+Ayrıntılı tablolar ve ölçüm yöntemi arşivde.

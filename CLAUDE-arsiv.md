@@ -30453,3 +30453,103 @@ yazımı — birleştirmek metin kararı, kullanıcıya bırakıldı.
 
 ---
 
+## Ürünün BÜTÜN incileri ulaşılamıyordu (6 Eylül 2026)
+
+`yetim-denetim` raporu: `pearls — erişilebilir: 0 dosya / 0 inci`. İki inci
+dosyası var, ikisi de yetim. Sebep ad sapması: envanter
+`pearls/<branş>/<konu-slug>.json` arıyor, dosya `aml.json`, konu `aml-ana`.
+
+Uygulamanın kendi `envanterAl()`i sürüldü (ölçüt yeniden yazılmadı):
+
+| konu | önce | sonra |
+|---|---|---|
+| `hematoloji/aml-ana` (9 soru · 80 kart · 4 vaka) | inci **0**, `inciVar` false | inci **10**, `inciVar` **true** |
+| `pearls` erişilebilir (denetim) | **0 dosya / 0 inci** | **1 dosya / 10 inci** |
+
+**Ölçüm tuzağı — kapıyı içerik sandım.** İlk tur konu sayfasını `curl` ile
+ölçtü: "inci bağlantısı 0" çıktı. Negatif kontrol düştü — sayfada quiz, kart,
+vaka bağlantısı da 0'dı ve "Üyelik/Satın" 22 kez geçiyordu, yani ölçülen şey
+`AccessGate`di. Kapı arkasını ölçemediğin yerde **mekanizmayı** ölç.
+## Araç sayfalarında başlık hiyerarşisi — ÖLÇÜLDÜ, temiz (6 Eylül 2026)
+
+Kapsam tablosundaki "`h2` yapısı" satırı arşivde hiç geçmiyordu. Sunulan
+HTML tarandı (kaynak değil — başlıkların bir kısmı paylaşılan kabuktan
+geliyor).
+
+| ölçüt | sonuç |
+|---|---|
+| ölçülen araç · başlık | **136 · 435** (hata 0) |
+| `h1` yok · birden fazla `h1` | 0 · 0 |
+| hiç başlık yok | 0 |
+| seviye atlama (`h1→h3`) | **0** |
+| boş / yalnız süsleme glifi başlık | **0** |
+
+**Negatif kontrol tohumlandı, beşi de yakalandı:** h1 yok · iki h1 · `h1→h3`
+· yalnız glif · `<script>` içindeki sahte `h2` elendi (n=1) ama `<style>`
+sonrası gerçek `h2` korundu (n=2 — pozitif kontrol).
+
+Ölçüt tuzağı: ilk negatif kontrolü satır içinde yeniden yazdım ve eleme
+adımını atladım, sahte `h2` sayıldı. **Ölçütü yeniden yazma, aslını sür.**
+
+
+## Okuma satırı ÜÇ yüzeyde de aralıkta (6 Eylül 2026)
+
+Açık taraf kapandıktan sonra kardeş yüzeyler ölçüldü. Rahat aralık 45–75.
+
+| yüzey | önce | sonra | kaldıraç |
+|---|---|---|---|
+| açık konu | 93 → 107 (14px'e inince) | **70** | gövde 14px · sütun 12'de 7 · `sm:max-w-[35rem]` |
+| premium konu — düz metin | **145** | **67** | `MetinBlok` paragrafı `maxWidth: 29rem` |
+| premium konu — bilgi kutusu | 136 / 132 | 65–74 | kutuya `maxWidth: 31rem` |
+| inciler | 119–121 | **71** | `max-w-none` → `sm:max-w-[31rem]` |
+| premium tablolar | 966px | **966px — dokunulmadı** | — |
+
+**Dört farklı değer, hepsi ölçümden.** Tek bir sayı yok çünkü her yüzeyde
+dolgu ve yazı farklı: açık konu kartında `max-width` 96px dolguyu da
+kapsıyor (35rem); `MetinBlok` paragrafının dolgusu yok (29rem); bilgi
+kutusunun 16px yan dolgusu var ve sınır KUTUYA verilmeli, yoksa 968px'lik
+renkli bant içinde metin solda yarım kalır (31rem); incide kap 846px ve
+ortalama karakter 7.05px (31rem).
+
+**`ch` HİÇBİRİNDE kullanılmadı** — iki kez yanılttı: "0" karakteri düz
+metnin ortalamasından geniş (`70ch` = 93 karakter) ve `ch` yazı boyutuna
+bağlı (kısıt karta değil sütuna taşınınca 69 → 79). `prose`un varsayılan
+`65ch`i de bu yüzden geri açılmadı.
+
+**KIRILMA HEPSİNDE `sm:` (640px)** — `globals.css`teki 14px kuralıyla aynı
+nokta. Bir tur `lg:` denendi ve 768px tablette satır **94 karakter** çıktı:
+yazı zaten küçülmüş, üst genişlik henüz devrede değil. İkisi ayrışırsa
+kusur geri gelir.
+
+### İki kendi kusurum, ikisi de kayda geçiyor
+
+**1 — 14px kuralım yazarın kararını eziyordu.** Kural katmansızdı ve
+`@tailwind utilities`ten sonra geldiği için aynı özgüllükteki boyut
+sınıflarını eziyordu: incilerin kabı `text-[15px]` taşıyor ama **14px**
+basılıyordu. Depoda kayıtlı ".prose'a düz `color` yazma" tuzağının aynısı,
+farklı özellikte. Çare özgüllük değil KATMAN: kural `@layer base`e alındı,
+artık utilities'e yeniliyor. Boyut sınıfı taşımayan kap 14px alıyor
+(açık konu, quiz), taşıyan kap kendi boyutunda kalıyor (inciler).
+
+**Bu ancak KARDEŞ YÜZEY ölçülünce görüldü.** Daha önce "premium
+etkilenmiyor" demiştim; o yalnızca konu sayfası için doğruydu (orada
+bloklar satır içi stil kullanıyor). Tek yüzeyde ölçülen sonuç kardeşine
+taşınmaz.
+
+**2 — kendi temizliğim kapıyı İKİ KEZ düşürdü.** Geçici ölçüm rotası
+silinince `.next/types` artığı kalıyor ve `typecheck` "Cannot find module
+../../app/olcum-gecici/page.js" diyor; o silmeyi DERLEME SÜRERKEN yapınca
+derleme de düştü. Sıra: sunucuyu durdur → rotayı ve artıkları sil →
+sonra kapıları sür.
+
+### Kapı arkasını ölçmenin yolu
+
+Premium yüzeyler `AccessGate` arkasında ve oturumsuz "**Erişim Kısıtlı**"
+basıyor. Çare deponun kayıtlı yöntemi: **geçici ölçüm rotası**
+(`app/olcum-gecici/page.tsx`) bileşeni gerçek içerikle kapısız çizer,
+ölçüm biter, rota ve `.next` artıkları silinir.
+
+**Kapıyı DİZEYLE arama.** `curl` taraması "Üyelik|Satın Al" arıyordu, bu
+kapı "Erişim Kısıtlı" diyor; sayfa 581 KB döndüğü için bir an "içerik
+geliyor" sanıldı. Ayırt edici işaret **beklenen içeriğin varlığıydı** —
+`data-readable` sayısı 0 çıkıyordu.
