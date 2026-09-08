@@ -14,11 +14,28 @@ type Mode = typeof MODE_OPTS[number]["id"];
 const STIM_PROTOCOLS = [
   { id: "itt", label: "İnsülin Tolerans Testi (ITT)", cutoff: 3, note: "Altın standart. Hipoglisemi sırasında pik GH ölçülür. KKY ve epilepside kontrendike." },
   { id: "glucagon", label: "Glukagon Stimülasyon", cutoff: 3, note: "ITT kontrendike olduğunda. 150 dk'ya kadar ölçüm. Obez bireylerde yanıt zayıf." },
-  { id: "arginine", label: "Arginin ± GHRH", cutoff: 3, note: "GHRH+Arginin daha güçlü stimülandır; pik eşiği BMI'ye göre değişir (cutoff ~4–11 μg/L)." },
+  /* `cutoff: 3` artık KULLANILMIYOR — bu protokolde eşik BMI'den geliyor
+     (bkz. `BMI_OPTS` ve `bmiyeBagli`). Alan, tipi öteki protokollerle aynı
+     tutmak için duruyor; sayı olarak okunduğu tek yer yok. */
+  { id: "arginine", label: "Arginin ± GHRH", cutoff: 3, note: "GHRH+Arginin daha güçlü stimülandır; pik eşiği BMI'ye göre değişir — aşağıdan BMI aralığını seç." },
   { id: "clonidine", label: "Klonidin Stimülasyon", cutoff: 10, note: "Çocuklarda yaygın. Erişkinde daha az tercih edilir." },
 ] as const;
 
-const AGE_OPTS = [["≤ 25 yaş", 11.5], ["26–50 yaş", 8], ["> 50 yaş", 4]] as const;
+/**
+ * GHRH + ARGİNİN EŞİĞİ BMI'YE BAĞLI — bu dizi bir dönem `AGE_OPTS` adıyla
+ * duruyordu ve "yaş" etiketleri taşıyordu; DEĞERLER ise BMI eşikleriydi.
+ * Üstelik hiç okunmuyordu: `ageCutoff` hesaplanıp bırakılıyor, ekranda
+ * seçici bulunmuyor, hüküm sabit 3 μg/L uyguluyordu.
+ *
+ * Çelişki aracın KENDİ İÇİNDEydi: arginine protokolünün notu "pik eşiği
+ * BMI'ye göre değişir (cutoff ~4–11 μg/L)" derken kod 3 uyguluyordu.
+ * Klinik sonucu kaçırma yönünde: zayıf bir hastada pik 5 μg/L "YETERLİ
+ * GH YANITI — GH eksikliği dışlanır" basıyordu.
+ *
+ * Değerler depoda zaten duranlar; aracın kendi notundaki "~4–11" aralığına
+ * oturuyorlar, dışarıdan sayı getirilmedi.
+ */
+const BMI_OPTS = [["BMI < 25", 11.5], ["BMI 25–30", 8], ["BMI > 30", 4]] as const;
 
 export default function GhTestPage() {
   const [mode, setMode]         = React.useState<Mode>("deficiency");
@@ -26,12 +43,14 @@ export default function GhTestPage() {
   const [peak, setPeak]         = React.useState("");
   const [nadir, setNadir]       = React.useState("");
   const [assay, setAssay]       = React.useState<"sensitive" | "standard">("sensitive");
-  const [ageIdx, setAgeIdx]     = React.useState(1);
+  const [bmiIdx, setBmiIdx]     = React.useState(0);
 
   const peakN  = parseLocaleNumber(peak);
   const nadirN = parseLocaleNumber(nadir);
   const proto  = STIM_PROTOCOLS[stimIdx];
-  const ageCutoff = AGE_OPTS[ageIdx][1];
+  const bmiCutoff = BMI_OPTS[bmiIdx][1];
+  /** Eşik yalnızca GHRH+Arginin'de BMI'ye bağlı; öteki protokoller sabit. */
+  const bmiyeBagli = proto.id === "arginine";
   const supCutoff = assay === "sensitive" ? 0.4 : 1.0;
 
   const getDefResult = () => {
@@ -49,7 +68,7 @@ export default function GhTestPage() {
      * ikisini de 0 yapıyor. `sayiGirildiMi` "abc"yi ve boşu eler, "0"ı geçirir.
      */
     if (!(sayiGirildiMi(peak) && peakN >= 0 && peakN <= 200)) return null;
-    const cutoff = stimIdx === 3 ? 10 : proto.cutoff;
+    const cutoff = stimIdx === 3 ? 10 : bmiyeBagli ? bmiCutoff : proto.cutoff;
     if (peakN >= cutoff) return { label: "YETERLİ GH YANITI", sub: `Pik GH ≥ ${cutoff} μg/L — GH eksikliği dışlanır`, color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200" };
     return { label: "YETERSİZ GH YANITI", sub: `Pik GH < ${cutoff} μg/L — GH eksikliği ile uyumlu`, color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
@@ -81,7 +100,7 @@ export default function GhTestPage() {
   const aktifHam   = mode === "deficiency" ? peak : nadir;
   const aktifAd    = mode === "deficiency" ? "pik GH" : "nadir GH";
   const sebepGoster = aktifHam.trim() !== "" && result === null;
-  const params = { mode, stim: stimIdx, peak: peakN, nadir: nadirN, assay, age: ageIdx };
+  const params = { mode, stim: stimIdx, peak: peakN, nadir: nadirN, assay, bmi: bmiIdx };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -121,11 +140,40 @@ export default function GhTestPage() {
                     ${stimIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
                   <div className={`text-sm font-bold ${stimIdx === i ? 'text-white' : 'text-blue-950'}`}>{p.label}</div>
                   <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${stimIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>
-                    Eşik: {stimIdx === i && i === 3 ? "10" : p.cutoff} μg/L
+                    Eşik: {i === 3 ? "10" : p.id === "arginine" ? (stimIdx === i ? bmiCutoff : "4–11.5") : p.cutoff} μg/L
                   </div>
                 </button>
               ))}
             </div>
+
+            {/* BMI SEÇİCİSİ — YALNIZCA GHRH+Arginin'de çiziliyor.
+                Her zaman gösterilseydi öteki protokollerde hiçbir şeyi
+                değiştirmeyen bir kontrol olurdu; bu depoda kayıtlı kusur
+                sınıfı ("ekranda duran ama çıktıyı değiştirmeyen kontrol"). */}
+            {bmiyeBagli && (
+              <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
+                <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                  Vücut Kitle İndeksi — eşiği belirler
+                </p>
+                <div role="group" aria-label="Vücut kitle indeksi aralığı" className="grid grid-cols-3 gap-2">
+                  {BMI_OPTS.map(([etiket, esik], i) => (
+                    <button
+                      aria-pressed={bmiIdx === i}
+                      key={etiket}
+                      type="button"
+                      onClick={() => setBmiIdx(i)}
+                      className={`p-3 rounded-2xl border transition-all text-center
+                        ${bmiIdx === i ? 'bg-blue-900 border-blue-900 shadow-md' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}
+                    >
+                      <div className={`text-xs font-bold ${bmiIdx === i ? 'text-white' : 'text-blue-950'}`}>{etiket}</div>
+                      <div className={`text-[10px] font-bold uppercase tracking-widest mt-0.5 ${bmiIdx === i ? 'text-blue-200' : 'text-slate-400'}`}>
+                        {esik} μg/L
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm">
               <label className="flex flex-col gap-2">
