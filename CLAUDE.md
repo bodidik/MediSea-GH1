@@ -1066,23 +1066,40 @@ okuttu ("atriyal fibrilasyon" sorgusuna malnütrisyon sonuçları döndü);
 
 ---
 
-## Okuma satırı ÜÇ yüzeyde de aralıkta (6 Eylül 2026)
+## Okuma satırı — ALTI yüzeyin altısı da ölçüldü (6–7 Eylül 2026)
+
+Rahat aralık 45–75. Yüzeyler tek tek ölçüldü; **tek yüzeyde alınan sonuç
+kardeşine taşınmıyor** — bu oturumda üç kez böyle yanıldım.
 
 | yüzey | önce | sonra | kaldıraç |
 |---|---|---|---|
 | açık konu | 93 → 107 | **70** | 14px · sütun 12'de 7 · `sm:max-w-[35rem]` |
-| premium konu — düz metin | **145** | **67** | paragrafa `29rem` |
-| premium konu — bilgi kutusu | 136 | 65–74 | KUTUYA `31rem` (paragrafa verilseydi bant yarım kalırdı) |
+| premium konu — düz metin | 145 | **67** | paragrafa `29rem` |
+| premium konu — bilgi kutusu | 136 | 65–74 | KUTUYA `31rem` |
 | inciler | 119–121 | **71** | `max-w-none` → `sm:max-w-[31rem]` |
+| soru çözüm | 104 | **72** | okuma kabına `32rem` |
+| vaka çözüm | 99–109 | **73** | üç metin KUTUSUNA `32rem` |
+| hızlı tekrar kartı | 77 | **77 — DEĞİŞTİRİLMEDİ** | aşağıya bak |
 | premium tablolar | 966px | **966px — dokunulmadı** | — |
 
-Dört farklı değer, hepsi ölçümden: her yüzeyde dolgu ve yazı farklı.
-**`ch` hiçbirinde kullanılmadı** (iki kez yanılttı; `prose`un `65ch`i de
-bu yüzden açılmadı). **Kırılma hepsinde `sm:`** — 14px kuralıyla aynı
-nokta; `lg:` denendi ve 768px'te satır 94 çıktı.
+**Kart neden değiştirilmedi:** 3282 kart yüzü ölçüldü — ortalama 67
+karakter, medyan 71, en uzun 167. %58'i TEK satır, %42'si iki satıra
+taşıyor, yalnızca **8'i** üç satıra çıkıyor. Buradaki 77, öteki
+yüzeylerdeki 100–145 karakterlik SÜREKLİ metinle aynı kusur değil;
+daraltmak iki satırlık kartların bir kısmını üçe çıkarırdı. Ölçüldü,
+gerekçesi yazıldı, bırakıldı.
+
+**Altı farklı değer, hepsi ölçümden** — her yüzeyde dolgu ve yazı farklı.
+`ch` hiçbirinde kullanılmadı (iki kez yanılttı; `prose`un `65ch`i de bu
+yüzden açılmadı). Kırılma hepsinde `sm:` — 14px kuralıyla aynı nokta;
+`lg:` denendi ve 768px'te satır 94 çıktı.
+
+**Sınır KABA mı KUTUYA mı?** Aynı kapta kontrol (şık düğmesi) ya da tablo
+varsa kaba verilmez: premium konuda 200 tablo, vaka ve quizde şık
+düğmeleri var. Oralarda sınır metin kutusuna verilir.
 
 **İki kendi kusurum:** (1) 14px kuralım katmansızdı ve incilerin
-`text-[15px]`ini eziyordu → `@layer base`. Ancak KARDEŞ YÜZEY ölçülünce
+`text-[15px]`ini eziyordu → `@layer base`; ancak kardeş yüzey ölçülünce
 görüldü. (2) Geçici ölçüm rotasını silmek `.next/types` artığı bırakıyor
 ve `typecheck` düşüyor; silmeyi derleme sürerken yapınca derleme de düştü.
 
@@ -1090,5 +1107,10 @@ ve `typecheck` düşüyor; silmeyi derleme sürerken yapınca derleme de düşt�
 bitince rota + `.next` artıkları silinir. **Kapıyı dizeyle arama** — bu
 kapı "Erişim Kısıtlı" diyor; ayırt edici işaret beklenen içeriğin
 yokluğuydu (`data-readable` 0).
+
+**Sürüş yöntemi yüzeye göre değişiyor:** arama kutusunda programatik
+sürüş iki farklı yanlış cevap verdi, gerçek tuş vuruşu gerekti; quiz ve
+vaka düğmelerinde tersi — sentetik fare tıklaması cevap üretmedi,
+`.click()` üretti. Tek bir doğru yöntem yok, ikisini de dene.
 
 Ayrıntılı tablolar ve ölçüm yöntemi arşivde.
