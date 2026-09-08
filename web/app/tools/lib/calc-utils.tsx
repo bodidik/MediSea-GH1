@@ -68,6 +68,27 @@ function sayiNormalize(ham: string): string {
     return ham.replace(/\s/g, "");
   }
 
+  /* B2) Virgül yok, nokta ile 3'lü gruplar VE SON GRUP "000" ise nokta
+         GRUP ayırıcıdır.
+
+     ÖLÇÜLDÜ, canlı: `antikoagulan-geri-dondurme`de `5.000 Ü heparin`
+     **5** okunuyordu → 0.1 mg protamin, yani **500 KAT DÜŞÜK** doz; aktif
+     kanamada verilen bir geri döndürme ajanında, uyarı olmadan.
+
+     Bu dal neden BELİRSİZ DEĞİL — karşı kanıt arandı ve bulunamadı:
+     depoda hiçbir girdi alanı üç ondalık basamak istemiyor (en ince
+     `step` 0.1; üç basamaklı örnek değer yok; tek `toFixed(3)` bir
+     ÇIKTI — `ktv`de R oranı). Yani `5.000` hiçbir alanda "5" demek
+     değil; İngilizce okumada da değeri zaten 5'tir, o da "5" yazılır.
+
+     KAPSAM BİLEREK DAR: yalnızca son grup `000`. `2.500` ve `1.200`
+     DOKUNULMUYOR — orada 2.5 ve 1.2 meşru dozlar, yani gerçek
+     belirsizlik. Sessiz tahmin yeni bir yanlış sayı sınıfı açardı
+     (arşivdeki gerekçe). */
+  if (/^[+-]?\d{1,3}(?:\.\d{3})*\.000$/.test(ham)) {
+    return ham.replace(/\./g, "");
+  }
+
   /* C) Geri kalan her şey: ESKİ DAVRANIŞ birebir korunuyor. */
   return ham.replace(",", ".");
 }
