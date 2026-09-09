@@ -806,7 +806,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
-| **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
+| **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; ikisinin görünür bedeli canlıda ölçüldü. Yazım kararı sende, aşağıya bak |
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
@@ -1382,3 +1382,80 @@ Kapsam denetimi: kilo sınırı taşıyan 20 aracın **20'si** tek kaynakta; kal
 dört "elle" işareti yanlış pozitif (`essdai` kilo KAYBI etiketi, `glim`
 fenotip bayrağı, `bmi`/`gnri`de `kiloOk` kullanımı).
 
+---
+
+## İçerik kazaları — kapsam (9 Eylül 2026)
+
+477 dosya tarandı. **İçerik DEĞİŞTİRİLMEDİ** — bu bölüm yalnızca kapsam.
+
+### Ölçütün kendisi bir kez yanılttı
+
+Başlık/slug uyuşmazlığı arayan ilk tarama **28 dosya** işaretledi; okununca
+26'sı YANLIŞ POZİTİF çıktı — eşanlamlı ya da açılımlı başlıklar
+(`multiple-myelom` → "Multipl Miyelom", `buyuk-damar-vaskulitleri` → "Dev
+Hücreli Arterit ve Takayasu"). Gerçek kaza **2**.
+
+İkinci tarama "53 dosyanın gövdesi BOŞ" dedi. Yanlıştı: bölüm metni **iki
+şemada** duruyor — `html` (423 dosya · 2332 bölüm) ve `text` (53 dosya ·
+120 bölüm). Ölçüt yalnızca `html` okuyordu. İki şemayla yeniden ölçüldü:
+**boş gövde 0**. Sayfa da ikisini birden okuyor (`s.text || s.html`), yani
+kusur yok — ama bu, belgedeki "0 kusur ile 0 ölçüm aynı görünür" tuzağının
+bu depodaki bir kez daha doğrulanmasıydı.
+
+### Dört kaza
+
+**1. `endokrinoloji/hiperkalsemi-ve-hiperparatiroidi.json` — baştan sona asit-baz**
+
+Başlık "Asit-Baz Denge Bozuklukları", 5 bölümün 5'i asit-baz, gövdede
+`hiperkalsemi`/`hiperparatiroidi` **hiç geçmiyor**. Etiketler de içeriği
+izliyor (`Nefroloji · Asit-Baz Dengesi · Kan Gazı`), yani kaza türetilmiş
+indekse de bulaşmış: `ilgili-index`te **5 konuya bağlı, 5 konu da buna
+işaret ediyor**. `nefroloji/asit-baz-denge-bozukluklari.json` ile
+**başlığı birebir aynı** (gövdeler farklı: 9141 ↔ 5969 karakter, 5 bölümün
+3'ü ortak başlıklı) — yani daha DOLU asit-baz yazısı yanlış adreste duruyor.
+**Canlıda ölçüldü:** `/topics/endokrinoloji` branş sayfası bunu 2. sırada
+"Asit-Baz Denge Bozuklukları" diye listeliyor.
+
+**2. `hematoloji/akut-lenfoblastik-losemi-all.json` — MDS, üstelik ikizi var**
+
+Başlık "Miyelodisplastik Sendromlar (MDS)";
+`hematoloji/miyelodisplastik-sendrom-mds.json` ile neredeyse aynı
+(3942 ↔ 3954 karakter). ALL'in kendi doğru dosyası **zaten var**
+(`hematoloji/all.json`, "Akut Lenfoblastik Lösemi (ALL)", ebeveyn
+`losemiler`). İkisi de `hematolojik-maligniteler` çocuğu (order 14 ve 41).
+**Canlıda ölçüldü:** ebeveyn sayfası **aynı başlıklı İKİ bağlantı**
+gösteriyor, biri `/akut-lenfoblastik-losemi-all` adresine gidiyor —
+"aynı ad, farklı hedef" sınıfı.
+
+**3. `romatoloji/behcet-vaskuler-tutulum.json` — %33 kopya bölüm**
+
+`kopya-bolum-denetim` doğruluyor: bölüm 0↔2 ve 1↔3 **başlık VE gövde**
+olarak birebir aynı. 6282 karakterin 2100'ü kopya (**%33**; belgede %31
+yazıyordu).
+
+**4. YENİ — `content/canonical/hematoloji/title Foliküler Lenfoma (FL) Patoge.txt`**
+
+Uzantısı `.json` değil, açılış `{`i yok, kapanışı da bozuk (`[` yerine `]`
+beklenirken `[` yazılmış). Dosya adı içeriğin ilk satırından türemiş.
+İçeriği okundu: 10 Mar tarihli, tek bölümlük bir TASLAK; aynı yazı 11 Mar'da
+`FL-t1(4-18).json` olarak 4 bölümle düzgünce yayımlanmış. **Kayıp içerik
+yok**, artık dosya. Site onu görmüyor (uzantı `.json` değil) ama içerik
+ağacını kirletiyor ve her tam-ağaç taramasını düşürüyor.
+
+### Etki yarıçapı
+
+| eksen | 1 (hiperkalsemi) | 2 (ALL) |
+|---|---|---|
+| yayında mı | evet | evet |
+| site haritasında | evet (3 kazanın 3'ü de 585 adresin içinde) | evet |
+| gövdeden gelen bağlantı | yok | yok |
+| `ilgili-index` | 5 çıkan · **5 gelen** | 2 çıkan · 0 gelen |
+| `arac-konu` | var | var |
+| ebeveyn listesinde | branş sayfasında 2. sırada | **aynı başlıklı ikinci kayıt** |
+
+### Karar sende
+
+Dördü de içerik/adres kararı: 1 ve 2 için ya dosya doğru adrese taşınır
+(yönlendirme borcu doğar) ya da içerik gerçekten o adresin vaat ettiği
+konuyla değiştirilir; 3 için hangi kopyanın kalacağı; 4 için artık dosyanın
+silinmesi (git geçmişinde durur). Hiçbirine dokunmadım.
