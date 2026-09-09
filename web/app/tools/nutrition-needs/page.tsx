@@ -44,7 +44,7 @@ export default function NutritionNeedsPage() {
    *
    * Sınır klinik eşik değil makullük sınırı.
    */
-  const makul = kiloMakulMu(weight, "cocukDahil");
+  const makul = kiloMakulMu(weight);
 
   const energyResult = weightNum * stressFactor;
   const proteinResult = weightNum * proteinFactor;

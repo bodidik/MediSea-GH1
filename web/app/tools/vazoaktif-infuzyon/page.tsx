@@ -151,7 +151,7 @@ export default function VazoaktifInfuzyonSayfasi() {
   const mlNum = parseLocaleNumber(torbaMl);
 
   const kiloGerekli = ilac.kiloyaGore;
-  const kiloMakul = !kiloGerekli || (kiloMakulMu(kilo, "cocukDahil"));
+  const kiloMakul = !kiloGerekli || (kiloMakulMu(kilo));
   const dozMakul = doz.trim() !== "" && dozNum > 0 && dozNum <= 10000;
   const torbaMakul =
     torbaMg.trim() !== "" && mgNum > 0 && mgNum <= 100000 &&

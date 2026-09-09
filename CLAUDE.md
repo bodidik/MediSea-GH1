@@ -805,7 +805,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
 | **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
-| **kilo makullük sınırı** | **KOPYA KALDIRILDI, KARAR DURUYOR** (9 Eyl) — 18 değil **15** araç, iki değil **ÜÇ** kova. Hepsi tek kaynağa (`KILO_PROFIL`) bağlandı, davranış birebir aynı; hangi profilin doğru olduğu hâlâ senin kararın. Aşağıya bak |
+| **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
 | **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
@@ -1338,38 +1338,47 @@ eklediği başlıklarla birleşimi ayrı bir ölçümdür.
 
 ---
 
-## Kilo sınırı: üç kova tek kaynağa bağlandı, karar duruyor (9 Eylül 2026)
+## Kilo sınırı: 20 aracın hepsi 20–300, tek kaynaktan (9 Eylül 2026)
 
-Belge "18 araç iki kovada" diyordu. **Sayıldı** — 15 araç, ÜÇ kova:
+**KAPSAM ÜÇ KEZ BÜYÜDÜ — her turda ölçüt genişledi, tahmin değil.**
 
-| kova | araç |
+| tur | sayı | neyi kaçırmıştım |
+|---|---|---|
+| belge | 18 araç · 2 kova | — |
+| 1. tarama | 15 araç · 3 kova | yalnız `kiloNum >= N` biçimi |
+| 2. tarama | 19 araç · 3 kova | `makul(x, A, B)` biçimi (bmi · bmr · gnri · sodium) |
+| 3. tarama | **20 araç · 4 kova** | değişkeni `postWt` olan (`ktv`) ve **YEREL SABİT KOPYASI** taşıyan ikisi (`digoksin-toksisitesi` 20–300 · `lipid-emulsiyon` **10–300**) |
+
+Dördüncü kovayı `lipid-emulsiyon` açıyordu: kendi `KILO_ALT = 10` sabitini
+tutuyordu — yani kopya yalnız değerde değil, DEĞİŞKEN ADINDA bile aynıydı.
+"Kapsamı SAY, tahmin etme" kuralının bu depodaki kaçıncı doğrulaması
+olduğunu artık saymıyorum.
+
+**Kullanıcı kararı: hepsi `20–300`.** Gerekçe uydurulmadı, projenin kendi
+tanımından geliyor — MediSea "dahiliye asistanları ve uzmanları" için ve
+dahiliye erişkin hekimliğidir. Geniş aralık dokuz araçta 3 kg'lık bir
+yenidoğana SESSİZCE erişkin dozu üretiyordu; bu araçların hiçbirinde
+pediatrik dozlama yok. Alt sınır 20 kaseksik erişkini (25–30 kg) elemiyor.
+
+Tek kaynak `KILO_ALT`/`KILO_UST` + `kiloMakulMu`. **Arayüzdeki aralık
+metinleri de aynı sabitlerden türüyor** (8 yerde elle yazılıydı) — ilan ile
+gerçek artık birlikte hareket ediyor. Dört bayat yorum da sayıdan
+arındırıldı.
+
+Yan düzeltme: eski kapıların çoğu `trim() !== ""` kullanıyordu, çöp girdiyi
+geçiriyor ve yalnızca `parseLocaleNumber`ın 0 döndürmesi sayesinde aralığa
+takılıyordu — koruma TESADÜFİYDİ.
+
+Canlı ölçüm:
+
+| araç | ölçüm |
 |---|---|
-| `1–400` (8) | bikarbonat-infuzyon · bsa · dka-infuzyon · fomepizol · heparin-nomogram · nac-infuzyon · nutrition-needs · vazoaktif-infuzyon |
-| `20–300` (6) | antikoagulan-geri-dondurme · fosfat-replasman · kalsiyum-infuzyon · sedasyon-infuzyon · status-epileptikus · tromboliz-doz |
-| `1–300` (1) | infusion |
+| `nac-infuzyon` (eskiden 1–400) | 3 ✗ · 19 ✗ · **20 ✓** · **300 ✓** · 301 ✗ · 400 ✗; ekrandaki metin de "20–300 kg" yazıyor |
+| `lipid-emulsiyon` (eskiden 10–300) | 10 ✗ · 19 ✗ · **20 ✓** (30 mL bolus · 240 mL tavan) · **300 ✓** · 301 ✗ |
+| `tromboliz-doz` (zaten 20–300) | 19 ✗ · **20 ✓** · **300 ✓** · 301 ✗ — değişmedi |
 
-Yani aynı hasta bir hesaplayıcıda kabul edilip komşusunda reddediliyordu —
-"iki gerçeklik" sınıfının üç nüshalı hâli.
+Ölü değişken taraması: geçişten sonra kullanılmayan `kiloNum`/`weightNum` **0**.
+Kapsam denetimi: kilo sınırı taşıyan 20 aracın **20'si** tek kaynakta; kalan
+dört "elle" işareti yanlış pozitif (`essdai` kilo KAYBI etiketi, `glim`
+fenotip bayrağı, `bmi`/`gnri`de `kiloOk` kullanımı).
 
-`KILO_PROFIL` + `kiloMakulMu` eklendi; 15 aracın 15'i artık profili ADIYLA
-seçiyor (`yetiskin` · `cocukDahil` · `cocukDahilDarUst`). **DAVRANIŞ
-DEĞİŞMEDİ** — amaç kopyayı yok etmekti; hangi profilin doğru olduğu ürün
-kararı ve açık madde olarak duruyor. Karar verildiğinde değişecek yer
-**tek dosya**, 15 değil.
-
-Yan düzeltme: eski kapıların çoğu `trim() !== ""` kullanıyordu, yani çöp
-girdiyi geçiriyor ve yalnızca `parseLocaleNumber`ın 0 döndürmesi sayesinde
-aralığa takılıyordu — koruma TESADÜFİYDİ. Tek kaynak `sayiGirildiMi`
-kullanıyor.
-
-Sınır ölçümü canlıda, üç profilin üçü de (davranışın birebir aynı kaldığının
-kanıtı):
-
-| profil / araç | ölçüm |
-|---|---|
-| `cocukDahil` / nac-infuzyon | 0.9 ✗ · **1 ✓** · **400 ✓** · 401 ✗ · "abc" ✗ · boş ✗ |
-| `yetiskin` / tromboliz-doz | 19 ✗ · **20 ✓** · **300 ✓** · 301 ✗ · "abc" ✗ · boş ✗ |
-| `cocukDahilDarUst` / infusion | 0.9 ✗ · **1 ✓** (300 mL/sa) · **300 ✓** (90000) · 301 ✗ · "abc" ✗ |
-
-Ölü değişken taraması da yapıldı: geçişten sonra kullanılmayan
-`kiloNum`/`weightNum` **0**.

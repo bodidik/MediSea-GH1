@@ -145,7 +145,7 @@ export default function AntikoagulanGeriDondurmeSayfasi() {
   const heparinNum = parseLocaleNumber(heparinU);
   const enoksNum = parseLocaleNumber(enoksaparinMg);
 
-  const kiloTamam = kiloMakulMu(kilo, "yetiskin");
+  const kiloTamam = kiloMakulMu(kilo);
   const inrTamam = sayiGirildiMi(inr) && inrNum >= 1 && inrNum <= 20;
   const heparinTamam = sayiGirildiMi(heparinU) && heparinNum > 0 && heparinNum <= 100000;
   const enoksTamam = sayiGirildiMi(enoksaparinMg) && enoksNum > 0 && enoksNum <= 500;

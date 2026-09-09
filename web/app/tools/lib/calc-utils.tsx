@@ -146,39 +146,36 @@ export function binlikBelirsizMi(ham: string | number | undefined | null): boole
 }
 
 /**
- * 0d. KİLO MAKULLÜK ARALIĞI — TEK KAYNAK.
+ * 0d. KİLO MAKULLÜK ARALIĞI — TEK KAYNAK, TEK ARALIK.
  *
  * Sınırlar bir dönem 15 araçta ELLE yazılıydı ve ÜÇ kovaya ayrışmıştı
  * (ölçüldü): `1–400` sekiz araçta, `20–300` altı araçta, `1–300` birinde.
  * Aynı hasta bir hesaplayıcıda kabul edilip komşusunda reddediliyordu —
- * belgedeki "iki gerçeklik" sınıfı, üç nüshalı hâli.
+ * "iki gerçeklik" sınıfının üç nüshalı hâli.
  *
- * BU DEĞİŞİKLİK DAVRANIŞI DEĞİŞTİRMİYOR: her araç bugün uyguladığı profili
- * ADIYLA seçiyor. Amaç kopyayı yok etmek; hangi profilin doğru olduğu
- * (yani çocuk kilolarının dahiliye hesaplayıcılarına girip girmeyeceği)
- * ürün kararı ve AÇIK MADDE olarak duruyor. Karar verildiğinde değişecek
- * yer burası — 15 dosya değil.
+ * KULLANICI KARARI (9 Eylül 2026): hepsi `20–300`. Gerekçe uydurulmadı,
+ * projenin kendi tanımından geliyor — MediSea "dahiliye asistanları ve
+ * uzmanları" için ve dahiliye erişkin hekimliğidir. Geniş aralık dokuz
+ * araçta 3 kg'lık bir yenidoğana SESSİZCE erişkin dozu üretiyordu; bu
+ * araçların hiçbirinde pediatrik dozlama yok.
+ *
+ * Alt sınır 20: kaseksik bir erişkini (25–30 kg) elemiyor, ama okul öncesi
+ * çocuğu eliyor. Üst sınır 300: süperobez erişkini kapsıyor.
+ *
+ * Pediatrik bir araç eklenirse burada profil AÇARSIN — o araç kendi
+ * aralığını adıyla ister; sessizce genişletme.
  *
  * `sayiGirildiMi` kullanılıyor, `trim() !== ""` değil: ikincisi çöp girdiyi
  * geçiriyor ve yalnızca `parseLocaleNumber`ın 0 döndürmesi sayesinde
- * aralığa takılıyordu — yani koruma tesadüfiydi.
+ * aralığa takılıyordu — yani koruma TESADÜFİYDİ.
  */
-export const KILO_PROFIL = {
-  /** Yetişkin dahiliye: 20 kg altı ve 300 kg üstü değerlendirilmez. */
-  yetiskin: { alt: 20, ust: 300 },
-  /** Çocuk kilolarını da kabul eden geniş aralık. */
-  cocukDahil: { alt: 1, ust: 400 },
-  /** Geniş alt sınır, dar üst sınır — tek araçta böyleydi, korundu. */
-  cocukDahilDarUst: { alt: 1, ust: 300 },
-} as const;
+export const KILO_ALT = 20;
+export const KILO_UST = 300;
 
-export type KiloProfil = keyof typeof KILO_PROFIL;
-
-export function kiloMakulMu(ham: string, profil: KiloProfil): boolean {
+export function kiloMakulMu(ham: string): boolean {
   if (!sayiGirildiMi(ham)) return false;
-  const { alt, ust } = KILO_PROFIL[profil];
   const n = parseLocaleNumber(ham);
-  return n >= alt && n <= ust;
+  return n >= KILO_ALT && n <= KILO_UST;
 }
 
 /**

@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 /**
  * Digoksin toksisitesi — antidot (Fab) flakon sayısı.
@@ -40,7 +40,6 @@ const BIYOYARARLANIM = 0.8;
 const DUZEY_PAYDA = 100;
 
 /* Makullük sınırları — klinik sınır değil. Bunların dışında sayı BASILMAZ. */
-const KILO_ALT = 20, KILO_UST = 300;
 const DUZEY_ALT = 0.5, DUZEY_UST = 50;
 const MIKTAR_ALT = 0.1, MIKTAR_UST = 100;
 
@@ -126,7 +125,7 @@ export default function DigoksinToksisitesiSayfasi() {
   const duzeyNum = parseLocaleNumber(duzey);
   const miktarNum = parseLocaleNumber(miktar);
 
-  const kiloTamam = sayiGirildiMi(kilo) && kiloNum >= KILO_ALT && kiloNum <= KILO_UST;
+  const kiloTamam = kiloMakulMu(kilo);
   const duzeyTamam = sayiGirildiMi(duzey) && duzeyNum >= DUZEY_ALT && duzeyNum <= DUZEY_UST;
   const miktarTamam = sayiGirildiMi(miktar) && miktarNum >= MIKTAR_ALT && miktarNum <= MIKTAR_UST;
 

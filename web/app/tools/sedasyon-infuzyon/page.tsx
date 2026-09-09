@@ -211,7 +211,7 @@ export default function SedasyonInfuzyonSayfasi() {
   const torbaMgNum = parseLocaleNumber(torbaMg);
   const torbaMlNum = parseLocaleNumber(torbaMl);
 
-  const kiloTamam = !ilac.kiloyaGore || (kiloMakulMu(kilo, "yetiskin"));
+  const kiloTamam = !ilac.kiloyaGore || (kiloMakulMu(kilo));
   const makul =
     kiloTamam &&
     doz.trim() !== "" && dozNum > 0 && dozNum <= 100 &&

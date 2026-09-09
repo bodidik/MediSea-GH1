@@ -240,7 +240,7 @@ export default function StatusEpileptikusSayfasi() {
   const [lakosamidDoz, setLakosamidDoz] = React.useState("400");
 
   const kiloNum = parseLocaleNumber(kilo);
-  const kiloMakul = kiloMakulMu(kilo, "yetiskin");
+  const kiloMakul = kiloMakulMu(kilo);
   const lakoNum = parseLocaleNumber(lakosamidDoz);
   const lakoMakul = lakosamidDoz.trim() !== "" && lakoNum >= 50 && lakoNum <= 400;
 

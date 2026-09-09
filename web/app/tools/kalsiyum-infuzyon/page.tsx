@@ -237,7 +237,7 @@ export default function KalsiyumInfuzyonSayfasi() {
 
   const infMakul =
     infuzyonKipi &&
-    kiloMakulMu(kilo, "yetiskin") &&
+    kiloMakulMu(kilo) &&
     hiz.trim() !== "" && hizNum > 0 && hizNum <= 5 &&
     torbaG.trim() !== "" && torbaGNum > 0 && torbaGNum <= 50 &&
     torbaMl.trim() !== "" && torbaMlNum >= 50 && torbaMlNum <= 2000;

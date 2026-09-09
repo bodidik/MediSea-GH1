@@ -206,7 +206,7 @@ export default function FosfatReplasmanSayfasi() {
   const mmolKgNum = parseLocaleNumber(mmolKg);
 
   const makul =
-    kiloMakulMu(kilo, "yetiskin") &&
+    kiloMakulMu(kilo) &&
     mmolKg.trim() !== "" &&
     mmolKgNum > 0 &&
     mmolKgNum <= 2;

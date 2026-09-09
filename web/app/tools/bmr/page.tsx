@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 const ACTIVITY_OPTS = [
   { label: "Hareketsiz", sub: "Masa başı iş, egzersiz yok", factor: 1.2 },
@@ -39,7 +39,8 @@ export default function BmrPage() {
    * MELD mümkün değildir" ve `ktv`deki eksi Kt/V ile aynı sınıf. Bu bir
    * beslenme aracı olduğu için sayı bir plana girdi olabiliyor.
    *
-   * Sınırlar makullük sınırı: yaş 1–120 · boy 50–250 cm · kilo 1–400 kg
+   * Sınırlar makullük sınırı: yaş 1–120 · boy 50–250 cm · kilo
+   * `KILO_ALT`–`KILO_UST` (tek kaynak `calc-utils`; sayıyı buraya YAZMA)
    * (deponun öteki araçlarıyla aynı aile).
    */
   const makul = (ham: string, alt: number, ust: number) => {
@@ -47,14 +48,14 @@ export default function BmrPage() {
     const n = parseLocaleNumber(ham);
     return n >= alt && n <= ust;
   };
-  const girdiMakul = makul(age, 1, 120) && makul(height, 50, 250) && makul(weight, 1, 400);
+  const girdiMakul = makul(age, 1, 120) && makul(height, 50, 250) && kiloMakulMu(weight);
 
   /* SESSİZ BOŞLUK YERİNE SEBEP. Varsayılanlar geçerli (35/175/75), yani sebep
      ancak kullanıcı bir alanı bozduğunda çıkıyor. */
   const eksikAlan = [
     !makul(age, 1, 120) && "yaş (1–120)",
     !makul(height, 50, 250) && "boy (50–250 cm)",
-    !makul(weight, 1, 400) && "ağırlık (1–400 kg)",
+    !kiloMakulMu(weight) && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,
   ].filter(Boolean) as string[];
 
   const bmr = girdiMakul

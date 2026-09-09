@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 /**
  * Diyabetik ketoasidoz — sıvı, insülin ve potasyum kurulumu.
@@ -80,7 +80,7 @@ export default function DkaInfuzyonSayfasi() {
   const kiloNum = parseLocaleNumber(kilo);
   const kNum = parseLocaleNumber(potasyum);
 
-  const kiloMakul = kiloMakulMu(kilo, "cocukDahil");
+  const kiloMakul = kiloMakulMu(kilo);
   const kMakul = potasyum.trim() !== "" && kNum >= 1 && kNum <= 10;
 
   /** Potasyum dalı — sıra kararı burada veriliyor. */
@@ -213,7 +213,7 @@ export default function DkaInfuzyonSayfasi() {
         <div className="bg-blue-900 rounded-[2rem] p-6 shadow-xl space-y-3">
           {!kiloMakul ? (
             <p className="text-amber-300 text-sm font-bold py-6 text-center" role="status">
-              Hasta ağırlığını girin (1–400 kg). Potasyum sırayı belirlediği için
+              Hasta ağırlığını girin ({KILO_ALT}–{KILO_UST} kg). Potasyum sırayı belirlediği için
               onu da girin.
             </p>
           ) : (

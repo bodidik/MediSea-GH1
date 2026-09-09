@@ -47,7 +47,7 @@ export default function InfusionPage() {
   const concentrationMgMlNum = parseLocaleNumber(concentrationMgMl);
 
   const dozGirildi = doseMgKgMin.trim() !== "" && doseMgKgMinNum > 0 && doseMgKgMinNum <= 1000;
-  const kiloGecerli = kiloMakulMu(weightKg, "cocukDahilDarUst");
+  const kiloGecerli = kiloMakulMu(weightKg);
   const derisimGecerli = concentrationMgMl.trim() !== "" && concentrationMgMlNum > 0 && concentrationMgMlNum <= 1000;
   const dozHazir = dozGirildi && kiloGecerli && derisimGecerli;
   const mlPerHrFromDose = React.useMemo(() => {

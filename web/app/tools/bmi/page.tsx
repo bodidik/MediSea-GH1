@@ -3,7 +3,7 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 export default function BmiPage() {
   const [height, setHeight] = React.useState("170");
@@ -31,7 +31,8 @@ export default function BmiPage() {
    * girdisine bağlı" dersi). Ölçüldü — kilo "abc" iken BMI "–" ama ideal
    * ağırlık 65.9/66.7 basılıyor, ki doğrusu bu.
    *
-   * Sınırlar makullük sınırı: boy 50–250 cm · kilo 1–400 kg (deponun öteki
+   * Sınırlar makullük sınırı: boy 50–250 cm · kilo `KILO_ALT`–`KILO_UST`
+   * (tek kaynak `calc-utils`; sayıyı buraya YAZMA, oradan oku) (deponun öteki
    * araçlarıyla aynı aile). `sayiGirildiMi` ayrıca çöp girdiyi eliyor.
    */
   const makul = (ham: string, alt: number, ust: number) => {
@@ -40,7 +41,7 @@ export default function BmiPage() {
     return n >= alt && n <= ust;
   };
   const boyOk  = makul(height, 50, 250);
-  const kiloOk = makul(weight, 1, 400);
+  const kiloOk = kiloMakulMu(weight);
 
   /**
    * SESSİZ BOŞLUK YERİNE SEBEP. Kapı konduktan sonra saçma bir girdide sonuç
@@ -51,7 +52,7 @@ export default function BmiPage() {
    */
   const eksikAlan = [
     !boyOk && "boy (50–250 cm)",
-    !kiloOk && "ağırlık (1–400 kg)",
+    !kiloOk && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,
   ].filter(Boolean) as string[];
 
   const bmi    = boyOk && kiloOk ? Math.round((w / (h / 100) ** 2) * 10) / 10 : 0;

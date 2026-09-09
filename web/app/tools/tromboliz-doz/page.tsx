@@ -144,7 +144,7 @@ export default function TrombolizDozSayfasi() {
 
   const r = REJIMLER.find((x) => x.slug === rejimSlug)!;
   const kiloNum = parseLocaleNumber(kilo);
-  const kiloMakul = kiloMakulMu(kilo, "yetiskin");
+  const kiloMakul = kiloMakulMu(kilo);
   const hazir = r.kiloyaGore ? kiloMakul : true;
 
   const hamToplam = r.kiloyaGore ? (hazir ? kiloNum * r.mgKg! : 0) : r.sabitMg!;

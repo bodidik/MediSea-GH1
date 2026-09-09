@@ -3,7 +3,7 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 import { SINIRLAR } from "../lib/asit-baz";
 
 export default function GnriPage() {
@@ -50,7 +50,8 @@ export default function GnriPage() {
    * oranı 1'de tavanlıyor, yani 700 kg ile 70 kg AYNI sonucu (95.3) veriyor.
    * Yani saçma kilo kararı değiştirmiyor — tavan burada kazara bir koruma.
    *
-   * Sınırlar makullük sınırı: albümin SINIRLAR.albumin · kilo 20–300 kg ·
+   * Sınırlar makullük sınırı: albümin SINIRLAR.albumin · kilo
+   * `KILO_ALT`–`KILO_UST` (tek kaynak `calc-utils`) ·
    * boy 50–250 cm (deponun öteki araçlarıyla aynı aile).
    */
   const makul = (ham: string, altS: number, ustS: number) => {
@@ -69,7 +70,7 @@ export default function GnriPage() {
    * kanonik olan `SINIRLAR`a bağlandı. Mesaj metni de sabitten TÜRÜYOR.
    */
   const albOk    = makul(alb, ...SINIRLAR.albumin);
-  const kiloOk   = makul(weight, 20, 300);
+  const kiloOk   = kiloMakulMu(weight);
   const boyOk    = makul(height, 50, 250);
 
   /**
@@ -81,7 +82,7 @@ export default function GnriPage() {
    */
   const eksikAlan = [
     !albOk && `albümin (${SINIRLAR.albumin[0]}–${SINIRLAR.albumin[1]} g/dL)`,
-    !kiloOk && "ağırlık (20–300 kg)",
+    !kiloOk && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,
     !boyOk && "boy (50–250 cm)",
   ].filter(Boolean) as string[];
   const girdiVar = [alb, weight, height].some((x) => x.trim() !== "");

@@ -24,7 +24,7 @@ export default function BsaPage() {
    * "kemoterapi dozlama" için tanıtırken. Sınırlar klinik değil
    * makullük sınırı.
    */
-  const makul = heightNum >= 30 && heightNum <= 260 && kiloMakulMu(weight, "cocukDahil");
+  const makul = heightNum >= 30 && heightNum <= 260 && kiloMakulMu(weight);
 
   const shareParams = { h: heightNum, w: weightNum };
 

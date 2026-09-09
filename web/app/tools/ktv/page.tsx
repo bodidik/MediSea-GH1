@@ -3,7 +3,7 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 /**
  * MODUL DUZEYINDE tanimli. Sayfa bileseninin ICINDE tanimlanirsa her render'da
@@ -57,7 +57,8 @@ export default function KtvPage() {
    *    Belgedeki "eksi bir MELD mümkün değildir" sınıfının aynısı.
    *
    * 2) Makullük sınırı: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L ·
-   *    ağırlık 20–300 kg. Ölçüldü — 9999 dakika girildiğinde `R − 0.008×t`
+   *    ağırlık `KILO_ALT`–`KILO_UST` (tek kaynak `calc-utils`).
+   *    Ölçüldü — 9999 dakika girildiğinde `R − 0.008×t`
    *    eksiye düşüyor, `ln` tanımsız oluyor ve Kt/V "—" çıkıyordu.
    *
    * `sayiGirildiMi` ayrıca çöp girdiyi eliyor; boş alan zaten eleniyordu.
@@ -260,7 +261,7 @@ export default function KtvPage() {
                   ? "Post-diyaliz BUN, pre-diyaliz BUN'dan DÜŞÜK olmalı — diyaliz üreyi azaltır. İki alan yer değiştirmiş olabilir."
                   : hasAll && !lnTanimli
                   ? "Girilen değerlerle Daugirdas II tanımsız: seans süresine göre üre düşüşü formülün kapsadığı aralığın dışında. Süreyi ve BUN değerlerini birlikte kontrol edin — URR aşağıda yine de hesaplandı."
-                  : "Bir değer makul aralığın dışında: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L · ağırlık 20–300 kg."}
+                  : `Bir değer makul aralığın dışında: BUN 2–300 mg/dL · seans 30–600 dk · UF 0–10 L · ağırlık ${KILO_ALT}–${KILO_UST} kg.`}
               </p>
             )}
             {degerlendirilebilir && !yeterli && (

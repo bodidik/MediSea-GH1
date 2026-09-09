@@ -84,7 +84,7 @@ export default function BikarbonatSayfasi() {
   const hedefNum = parseLocaleNumber(hedef);
 
   const makul =
-    kiloMakulMu(kilo, "cocukDahil") &&
+    kiloMakulMu(kilo) &&
     olculen.trim() !== "" && olculenNum >= 1 && olculenNum <= 60 &&
     hedef.trim() !== "" && hedefNum >= 1 && hedefNum <= 60;
 

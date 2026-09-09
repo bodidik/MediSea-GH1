@@ -2,7 +2,7 @@
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 import {
   GUNLUK_TAVAN,
   IDRAR_SINIR,
@@ -121,7 +121,7 @@ export default function SodiumPage() {
 
   const yasMakul        = makul(age, 1, 120);
   const boyMakul        = makul(height, 50, 250);
-  const kiloMakul       = makul(weight, 1, 400);
+  const kiloMakul       = kiloMakulMu(weight);
   const naMakul         = makul(na, 90, 200);
   const hedefMakul      = makul(targetNa, 100, 170);
   const hiperHedefMakul = makul(hyperTarget, 100, 170);
@@ -141,7 +141,7 @@ export default function SodiumPage() {
   const temelEksik = [
     !yasMakul && "yaş (1–120)",
     !boyMakul && "boy (50–250 cm)",
-    !kiloMakul && "ağırlık (1–400 kg)",
+    !kiloMakul && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,
   ].filter(Boolean) as string[];
   /* VARSAYILANI OLAN ALAN SAYILMAZ. `hyperTarget` "140" ile açılıyor, yani
      listeye konsaydı `girdiVar` HER ZAMAN doğru olurdu ve bomboş formda bile

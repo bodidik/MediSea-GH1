@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 /**
  * N-asetilsistein (IV) infüzyon hesabı — parasetamol intoksikasyonu.
@@ -118,7 +118,7 @@ export default function NacInfuzyonSayfasi() {
    * ayrıştıramadığını 0'a çeviriyor ve araçlar boş formda somut klinik değer
    * basıyordu. Doz hesaplayan bir araçta bu kabul edilemez.
    */
-  const makul = kiloMakulMu(kilo, "cocukDahil");
+  const makul = kiloMakulMu(kilo);
   const kiloKullanilan = Math.min(kiloNum, KILO_TAVANI);
   const tavanUygulandi = makul && kiloNum > KILO_TAVANI;
 
@@ -212,7 +212,7 @@ export default function NacInfuzyonSayfasi() {
 
           {!makul ? (
             <p className="text-amber-300 text-sm font-bold py-6 text-center" role="status">
-              Hasta ağırlığını girin (1–400 kg).
+              Hasta ağırlığını girin ({KILO_ALT}–{KILO_UST} kg).
             </p>
           ) : (
             <div className="space-y-3">

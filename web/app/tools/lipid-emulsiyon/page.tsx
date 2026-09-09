@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 /**
  * Lipid emülsiyon (%20) — lokal anestezik sistemik toksisitesi (LAST).
@@ -43,7 +43,6 @@ const KUMULATIF_TAVAN_ML_KG = 12;
 const DOZ_AGIRLIK_TAVANI = 70;
 
 /* Makullük sınırı — klinik sınır değil. Bunun dışında sayı BASILMAZ. */
-const KILO_ALT = 10, KILO_UST = 300;
 
 const yuvarla = (n: number, b = 1) => Math.round(n * 10 ** b) / 10 ** b;
 
@@ -95,7 +94,7 @@ export default function LipidEmulsiyonSayfasi() {
   const [kilo, setKilo] = React.useState("");
 
   const kiloNum = parseLocaleNumber(kilo);
-  const kiloTamam = sayiGirildiMi(kilo) && kiloNum >= KILO_ALT && kiloNum <= KILO_UST;
+  const kiloTamam = kiloMakulMu(kilo);
 
   const dozKilo = kiloTamam ? Math.min(kiloNum, DOZ_AGIRLIK_TAVANI) : null;
   const tavanUygulandi = kiloTamam && kiloNum > DOZ_AGIRLIK_TAVANI;
