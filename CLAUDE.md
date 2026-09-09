@@ -812,7 +812,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
 | **güvenlik başlıkları** | **KISMEN KAPANDI** (9 Eyl) — dört güvenli başlık kondu, `X-Powered-By` kaldırıldı. CSP ve XFO bilerek DIŞARIDA, aşağıya bak |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
-| **`/tools` hub tekrarı** | 18 kategori çipi + 18 akordeon başlığı (mobilde çipler kaldırıldı, masaüstünde duruyor) |
+| **`/tools` hub tekrarı** | **ÖLÇÜLDÜ** (9 Eyl) — tekrar gerçek (18/18 metin birebir) ama çip TEK süzgeç; bedel 768–1024px'te yoğunlaşıyor. Tasarım kararı sende, aşağıya bak |
 | **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, aşağıya bak |
 
 ---
@@ -1561,3 +1561,48 @@ yazacaktım.
 14px tabanı burada UYGULANMAZ: o kural `[data-readable]` okuma alanları
 için: araç yüzeyi baştan beri 10–13px etiket ölçeğinde çalışıyor ve uyarı
 onunla aynı ölçekte.
+
+---
+
+## `/tools` hub tekrarı — ölçüm (9 Eylül 2026)
+
+Kod DEĞİŞTİRİLMEDİ; bu bölüm kararı beslemek için.
+
+**Tekrar gerçek:** masaüstünde 19 çip (18 kategori + "Tümü 136") ve 18
+akordeon başlığı var; çip metinlerinin **18'i 18'i** akordeon başlığıyla
+BİREBİR aynı (`🧪Nefroloji9` ↔ `🧪Nefroloji9›`).
+
+**Ama işlevleri farklı ve çip'inki benzersiz:**
+
+| affordans | ne yapıyor |
+|---|---|
+| çip | SÜZÜYOR — `?kategori=x`, öteki kategorileri kaldırıyor |
+| akordeon başlığı | KATLIYOR — yalnızca o kategoriyi kapatıyor |
+
+Süzgecin değeri ölçüldü: `/tools` **11686px** → `/tools?kategori=nefroloji`
+**2282px** (%80 kısalma), 18 akordeon → 1, `aria-current` doğru çipte.
+Masaüstünde akordeonların **18'i de açık** (katlama etkisi `innerWidth < 768`
+ile sınırlı — kod iddiası canlıda doğrulandı), yani orada kompakt bir dizin
+yok ve çip tek gezinme kısayolu.
+
+**Bedel genişliğe göre değişiyor — burası kararın ekseni:**
+
+| genişlik | çip satırı | ilk araç kartı | ekranda araç var mı |
+|---|---|---|---|
+| 768px | **290px** (5 satır) | **y=889** | **HAYIR** — 900px'lik ekranın tamamı krom |
+| 1024px | 205px | y=728 | evet, dar |
+| 1280px | 162px | y=665 | evet |
+
+**Klavye bedeli genişlikten bağımsız:** ilk hesaplayıcı bağlantısı
+**25. odak durağı** (183 durağın içinde); önünde 19 çip duruyor. Ekran
+okuyucu da aynı 18 adı arka arkaya iki kez okuyor.
+
+**Karar seçenekleri** (hiçbiri uygulanmadı):
+1. Çipleri `lg:` (1024px) üstüne almak — 768px'teki 290px'lik kromu
+   kaldırır, mobildeki karar zaten aynı gerekçeyle verilmişti.
+2. Çip satırını katlanabilir yapmak (varsayılan kapalı, "Kategoriler" düğmesi).
+3. Olduğu gibi bırakmak — tekrar görünür ama süzgeç gerçekten benzersiz.
+
+Ölçüm tuzağı: `innerWidth: 0` bu turda da ısırdı, betiğin başındaki guard
+yakaladı. Panel gizliyken `resize_window` ile açık bir boyut vermek gerekiyor;
+bitince `preset: "desktop"` ile geri alındı.
