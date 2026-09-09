@@ -806,7 +806,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
-| **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; ikisinin görünür bedeli canlıda ölçüldü. Yazım kararı sende, aşağıya bak |
+| **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; 4. (artık `.txt`) SİLİNDİ, kalan üçü yazım kararı. Aşağıya bak |
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
@@ -1433,14 +1433,20 @@ gösteriyor, biri `/akut-lenfoblastik-losemi-all` adresine gidiyor —
 olarak birebir aynı. 6282 karakterin 2100'ü kopya (**%33**; belgede %31
 yazıyordu).
 
-**4. YENİ — `content/canonical/hematoloji/title Foliküler Lenfoma (FL) Patoge.txt`**
+**4. `content/canonical/hematoloji/title Foliküler Lenfoma (FL) Patoge.txt`
+— SİLİNDİ (9 Eyl, kullanıcı kararı)**
 
-Uzantısı `.json` değil, açılış `{`i yok, kapanışı da bozuk (`[` yerine `]`
-beklenirken `[` yazılmış). Dosya adı içeriğin ilk satırından türemiş.
-İçeriği okundu: 10 Mar tarihli, tek bölümlük bir TASLAK; aynı yazı 11 Mar'da
-`FL-t1(4-18).json` olarak 4 bölümle düzgünce yayımlanmış. **Kayıp içerik
-yok**, artık dosya. Site onu görmüyor (uzantı `.json` değil) ama içerik
-ağacını kirletiyor ve her tam-ağaç taramasını düşürüyor.
+Uzantısı `.json` değil, açılış `{`i yok, kapanışı da bozuk. Dosya adı
+içeriğin ilk satırından türemiş. İçeriği silmeden ÖNCE okundu: 10 Mar
+tarihli, tek bölümlük bir TASLAK; aynı yazı 11 Mar'da `FL-t1(4-18).json`
+olarak 4 bölümle düzgünce yayımlanmış — **kayıp içerik yok**, git
+geçmişinde de duruyor.
+
+Silme sonrası ölçüldü: ağaç **477 → 476** dosya, ayrıştırılamayan **0**,
+dört üretilmiş indeksin dördü de `--kontrol`den geçiyor (yani artık dosya
+hiçbirinde YOKTU — siteye görünmezliği doğrulandı). Negatif kontrol:
+`/topics/hematoloji/FL-t1(4-18)` canlıda duruyor, dört bölümü de yerinde
+(2125 karakter) — yayımlanan yazıya değil taslağa dokunuldu.
 
 ### Etki yarıçapı
 
@@ -1455,7 +1461,7 @@ ağacını kirletiyor ve her tam-ağaç taramasını düşürüyor.
 
 ### Karar sende
 
-Dördü de içerik/adres kararı: 1 ve 2 için ya dosya doğru adrese taşınır
+Kalan üçü içerik/adres kararı: 1 ve 2 için ya dosya doğru adrese taşınır
 (yönlendirme borcu doğar) ya da içerik gerçekten o adresin vaat ettiği
-konuyla değiştirilir; 3 için hangi kopyanın kalacağı; 4 için artık dosyanın
-silinmesi (git geçmişinde durur). Hiçbirine dokunmadım.
+konuyla değiştirilir; 3 için hangi kopyanın kalacağı. Bunlara dokunulmadı.
+4. madde kullanıcı kararıyla silindi.
