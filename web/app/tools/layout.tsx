@@ -146,7 +146,7 @@ export default function AraclarDuzen({ children }: { children: ReactNode }) {
               href="/topics"
               className="rounded-xl bg-white px-4 py-3 text-sm font-black text-blue-950 hover:bg-blue-50"
             >
-              📚 Kütüphaneye göz at
+              <span aria-hidden="true">📚</span> Kütüphaneye göz at
             </Link>
             <Link
               href="/uyelik"

@@ -531,7 +531,7 @@ export default function SiteHeader() {
           {/* KLİNİK ARAÇLAR AÇILIR MENÜ (DROPDOWN) */}
           <div className="relative group">
             <Link href="/tools" className="bg-white hover:bg-slate-50 border border-slate-200 text-blue-950 text-xs font-black tracking-widest px-4 py-2.5 rounded-full flex items-center gap-2 transition-all shadow-sm hover:shadow-md">
-              <span>🧪</span> KLİNİK ARAÇLAR
+              <span aria-hidden="true">🧪</span> KLİNİK ARAÇLAR
               {/* Oku ekledik */}
               <svg className="w-3 h-3 text-slate-400 group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
@@ -731,7 +731,7 @@ export default function SiteHeader() {
                 onClick={() => setMenuOpen(false)}
                 className="bg-slate-50 hover:bg-slate-100 border border-slate-200 text-blue-950 text-xs font-black tracking-widest px-4 py-3 rounded-2xl flex items-center justify-center gap-2 transition-all"
               >
-                🧪 KLİNİK ARAÇLAR
+                <span aria-hidden="true">🧪</span> KLİNİK ARAÇLAR
               </Link>
             </div>
 

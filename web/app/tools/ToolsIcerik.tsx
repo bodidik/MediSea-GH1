@@ -514,7 +514,7 @@ export default function ToolsIcerik() {
             href="/"
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"
           >
-            🏠 Ana Sayfa
+            <span aria-hidden="true">🏠</span> Ana Sayfa
           </Link>
           {/* KÜTÜPHANEYE BAĞ. Ölçüldü (canlı): `/tools` sayfasında `<header>`
               YOK (AppShell almıyor), genel arama kutusu YOK ve `/topics`e
@@ -525,7 +525,7 @@ export default function ToolsIcerik() {
             href="/topics"
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all"
           >
-            📚 Kütüphane
+            <span aria-hidden="true">📚</span> Kütüphane
           </Link>
         </div>
 

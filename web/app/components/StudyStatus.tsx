@@ -51,6 +51,7 @@ export default function StudyStatus() {
           className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-xl ${
             acil ? "bg-yellow-400" : "bg-slate-100"
           }`}
+          aria-hidden="true"
         >
           {acil ? "⚡" : "📚"}
         </div>

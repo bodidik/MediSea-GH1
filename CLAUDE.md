@@ -824,7 +824,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | sonuç duyurusu | **KAPANDI** (9 Eyl) — `SonucDuyuru` bağlı olmayan 28 aracın 20'sinde kendi canlı bölgesi var, kalan 8'i SAYI basıyor (kayıtlı karar). Bant basıp hiçbir şey duyurmayan 3 araç bulundu ve bağlandı; aşağıya bak |
 | grup semantiği | **KAPANDI** (9 Eyl) — gerekçe kısmen ÇÜRÜDÜ: 70 radyonun 70'i `name`siz, yani native grup DEĞİLDİ. Aşağıya bak |
 | `h2` yapısı | **ÖLÇÜLDÜ, temiz** — 136 araç / 435 başlık, dört ölçütte de 0; aşağıya bak |
-| süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
+| süsleme glifi | **ÖLÇÜLDÜ + KISMEN KAPANDI** (9 Eyl) — kontrol adları temiz; okunan süsleme `/tools`ta **3 → 0**. Kalan ikisi İÇERİKTEN geliyor. Aşağıya bak |
 | `truncate` | **ÖLÇÜLDÜ** — aşağıya bak |
 | vaka adımı vurgulanabilirliği | **KAPANDI** (9 Eyl) — kimlik adım verisinden (`adim.adim`), aşağıya bak |
 | `study-backup` | 14 korumasız `localStorage` çağrısı — **ölçüldü, bilerek bırakıldı** (kullanıcı eylemiyle çalışıyor, depo engelli uyarısı zaten üstünde; gerekçe arşivde) |
@@ -1685,3 +1685,43 @@ dinleyicisine **hiç olay ulaşmadı** (`document.hasFocus()` true,
 tuzağı: bu panelde klavye olayı sayfaya inmiyor. Ölçülen şey `name`
 gruplamasının seçim bütünlüğünü bozmadığıdır; ok gezinmesi standart
 davranış olarak BEKLENİYOR ama burada kanıtlanmadı.
+
+---
+
+## Süsleme glifi: ölçüt canlıda kuruldu, okunan süsleme 3 → 0 (9 Eylül 2026)
+
+Belge "araç dışında 14 öge insan kararı bekliyor" diyordu. Önce **ölçütü
+kurmak** gerekti; kaynak taraması işe yaramadı (oklar `→`, yorum metni,
+`console.error` dizeleri, veri nesnelerindeki `icon:` alanları — 379 sahte
+aday). Doğru ölçüt DOM'da: emoji taşıyan METİN DÜĞÜMÜ, en yakın
+`aria-hidden` sarmalayıcısı var mı.
+
+**İki eksen ayrıldı ve ikisi de ölçüldü:**
+
+**1) Kontrol adları — TEMİZ.** Dört yüzeyde (`/`, `/tekrar`,
+`/calisma-alanim`, konu sayfası) 84 düğme/bağlantı/girdi ad zinciriyle
+hesaplandı: **adı boş 0, adı yalnızca glif 0.** Şüphelenilen `✕` düğmesinin
+`aria-label="Kapat"`ı var — ölçmeden kusur ilan edilseydi yanlış olurdu.
+
+**2) Metin içindeki süsleme — büyük ölçüde zaten korunuyordu, kalanı
+kapatıldı:**
+
+| yüzey | önce | sonra |
+|---|---|---|
+| `/tools` | 42 glifin **39**'u `aria-hidden`, **3 okunuyor** | **42/42 korumalı · 0 okunuyor** |
+| konu sayfası | 14 glifin 9'u korumalı, 5 okunuyor | 11 korumalı, **3 okunuyor** |
+
+Kapatılanlar (hepsi paylaşılan bileşen, yani yüksek kaldıraç):
+`SiteHeader` 🧪 (iki yerde) · `ToolTopNav` 🏠 📚 (**136 araç sayfası**) ·
+`ToolsIcerik` hub gezinmesi 🏠 📚 · `app/tools/layout` 📚 ·
+`ReadingHint` 🖍 · `StudyStatus` ⚡📚. Bağlantı adları artık
+"Ana Sayfa" / "Kütüphane" — glifsiz.
+
+**Kalan üçü İÇERİKTEN geliyor ve karar içerik sahibinin:** konu
+başlığındaki `🤖` (AI taslak işareti, bir `h2` içinde) ve `⚠️`
+(vurgu metninde) — glif orada anlam TAŞIYOR olabilir, kaldırmak metin
+kararıdır. Üçüncüsü `✕` ama düğmenin adı zaten "Kapat".
+
+**Ölçüm tuzağı:** ilk turda `/tools`ta "5 okunuyor" çıktı; ikisi
+`<script>` içindeki RSC yüküydü (belgede kayıtlı tuzak). `SCRIPT/STYLE/
+NOSCRIPT` elenince gerçek sayı 3'e indi.

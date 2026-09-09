@@ -64,7 +64,7 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         href="/"
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
-        🏠 Ana Sayfa
+        <span aria-hidden="true">🏠</span> Ana Sayfa
       </Link>
 
       <Link
@@ -82,7 +82,7 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         href="/topics"
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
-        📚 Kütüphane
+        <span aria-hidden="true">📚</span> Kütüphane
       </Link>
 
       {branchSlugs.map((slug) => {

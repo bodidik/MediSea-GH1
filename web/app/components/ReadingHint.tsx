@@ -137,7 +137,7 @@ export default function ReadingHint() {
       } ${cikis ? "translate-y-2 opacity-0" : "translate-y-0 opacity-100"}`}
     >
       <div className="flex min-w-0 flex-1 items-start gap-2 sm:items-center sm:gap-3">
-        <span className="shrink-0 text-base">🖍</span>
+        <span aria-hidden="true" className="shrink-0 text-base">🖍</span>
 
         {/* 13px: bu, ödeme hattı olan kişisel katmanı tanıtan TEK cümle ve
             ömür boyu bir kez görünüyor. 12px'te telefonda 130 karakterlik bir
