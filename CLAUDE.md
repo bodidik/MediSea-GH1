@@ -781,7 +781,7 @@ belgeden kopyalanmadı.
 | premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
 | araç ↔ konu bağı | **112 çift** · 95 konu · 31 araç | (yok) |
 | CI | Web işi **21 adım** (18 kapı), son koşumlar yeşil | 21 / 18 |
-| duyurusu olan araç | **105 / 136** (5 Eyl ölçümü, yenilenmedi) | 105 |
+| duyurusu olan araç | `SonucDuyuru` **108 / 136**; herhangi bir canlı bölge **128 / 136** (9 Eyl) | 105 |
 
 `arac-konu-index` 476 konu dosyası sayıyor, yüzeyler 430 diyor — fark
 **gizli konular**; sayaç onları bilerek elemiyor. İki sayı çelişmiyor.
@@ -820,7 +820,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 
 | eksen | ölçülmeyen |
 |---|---|
-| sonuç duyurusu | 136 aracın 31'inde yok; 27'si sayı basıyor (doğru), 4'ü kayıtlı tasarım kararı |
+| sonuç duyurusu | **KAPANDI** (9 Eyl) — `SonucDuyuru` bağlı olmayan 28 aracın 20'sinde kendi canlı bölgesi var, kalan 8'i SAYI basıyor (kayıtlı karar). Bant basıp hiçbir şey duyurmayan 3 araç bulundu ve bağlandı; aşağıya bak |
 | grup semantiği | 35 araçta `role="group"` yok (adları sayfa içinde benzersiz) |
 | `h2` yapısı | **ÖLÇÜLDÜ, temiz** — 136 araç / 435 başlık, dört ölçütte de 0; aşağıya bak |
 | süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
@@ -1114,3 +1114,33 @@ vaka düğmelerinde tersi — sentetik fare tıklaması cevap üretmedi,
 `.click()` üretti. Tek bir doğru yöntem yok, ikisini de dene.
 
 Ayrıntılı tablolar ve ölçüm yöntemi arşivde.
+
+---
+
+## Bant basıp duyurmayan üç araç (9 Eylül 2026)
+
+`SonucDuyuru` 105 araca bağlıydı; belge kalan 31'i "sayı basıyor, doğru"
+diye kaydetmişti. **Sayıldı, doğru değildi:** 31'in 20'sinde zaten kendi
+canlı bölgesi vardı (infüzyon aileleri), kalan 11'in **üçü kategorik BANT
+basıyordu** ve hiçbir şey duyurmuyordu — `asdas` · `ogtt` · `rockall`.
+Sekizi (`bsa` `digoksin-toksisitesi` `infusion` `meld-na` `nutrition-needs`
+`sofa` `spot-urine` `steroid-dose`) gerçekten sayı basıyor; kayıtlı karar
+onlarda geçerli.
+
+Duyuru metni panelin OKUDUĞU fonksiyondan geliyor, kopyalanmıyor: `ogtt`in
+üç yorumu (`dmYorum` · `gdmYorum` · `acroYorum`) modül düzeyine alındı.
+`asdas` iki varyantı da duyuruyor — belgede kayıtlı ayrışma aksi hâlde
+ekran okuyucudan gizlenirdi.
+
+| senaryo | duyuru | panel |
+|---|---|---|
+| rockall boş → tüm şıklar en yüksek | DÜŞÜK → **ÇOK YÜKSEK** | aynı |
+| asdas boş (negatif kontrol) | **""**, şerit yok | panel "Eksik veri" |
+| asdas ayrışan (2,1,2,1 · CRP 2 · ESR 20) | CRP İNAKTİF · **ESR ORTA** | aynı |
+| ogtt dm boş / 210-260 / 95-120 | "" / DİYABET MELLİTUS / NORMAL | aynı |
+| ogtt gdm ayrışan (93·170·150·130) | IADPSG tanı · **CC yok** | aynı |
+| ogtt akro nadir **0** (meşru sıfır) | "süpresyon yeterli" | aynı |
+| ogtt akro "abc" (çöp) | **""** | panel çizilmiyor |
+
+Ölçüm ortamında `innerWidth: 0` olduğu için ŞERİDİN görünürlüğü hakkında
+iddia yok — ölçülen yalnızca duyuru metni ile panel metninin aynı olması.

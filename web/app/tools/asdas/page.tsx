@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
@@ -109,6 +110,18 @@ export default function AsdasPage() {
     return { label: "ÇOK YÜKSEK AKTİVİTE", sub: "ASDAS ≥ 3.5", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
   };
 
+  /* İKİ VARYANT AYRIŞABİLİR (belgede kayıtlı: üç vakada bant farklı) —
+     duyuru bu yüzden hangi varyantın hangi banda düştüğünü söylüyor.
+     SAYI duyurulmuyor: girdiler serbest sayısal, skor her tuş vuruşunda
+     değişir ve duyuru "1", "1.", "1.2" diye gürültüye dönerdi. */
+  const bantlar = ([
+    ["ASDAS-CRP", crpScore],
+    ["ASDAS-ESR", esrScore],
+  ] as const).filter(([, s]) => s !== null) as ReadonlyArray<readonly [string, number]>;
+  const sonucMetni = bantlar.length
+    ? bantlar.map(([ad, s]) => `${ad}: ${getResult(s).label}`).join(" · ")
+    : null;
+
   const inputs = [
     { label: "Spinal Ağrı (0–10 NRS)", value: pain, set: setPain, ph: "0–10" },
     { label: "Sabah Tutukluluğu (0–10 NRS)", value: dur, set: setDur, ph: "0–10" },
@@ -155,6 +168,7 @@ export default function AsdasPage() {
           </div>
         </div>
 
+        <SonucDuyuru metin={sonucMetni} />
         <div className="grid grid-cols-2 gap-4">
           {[
             { label: "ASDAS-CRP", score: crpScore },

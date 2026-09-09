@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
@@ -23,18 +24,21 @@ type Ctx = typeof CONTEXTS[number]["id"];
  *
  * Gerçek 2. saat 210 (diyabet) olsaydı, tek yazım hatası "NORMAL" verecekti.
  */
+/* MODÜL DÜZEYİNDE: paneli çizen kod ile ekran okuyucuya duyurulan bant
+   AYNI fonksiyondan çıkıyor. Kopyalansaydı ikisi er geç ayrışırdı. */
+const dmYorum = (fg: number, h2: number | null) => {
+  const fgCat = fg < 100 ? 0 : fg < 126 ? 1 : 2;
+  const h2Cat = h2 === null ? -1 : h2 < 140 ? 0 : h2 < 200 ? 1 : 2;
+  const cat = Math.max(fgCat, h2Cat === -1 ? 0 : h2Cat);
+  if (cat === 0) return { label: "NORMAL", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",
+    /* Yalnızca GERÇEKTEN okunan değer hakkında iddia basılıyor. */
+    sub: h2 === null ? "Açlık < 100 mg/dL — 2. saat değeri girilmedi" : "Açlık < 100 mg/dL · 2.saat < 140 mg/dL" };
+  if (cat === 1) return { label: "PREDİYABET", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", sub: fg >= 100 && fg < 126 ? "Bozulmuş Açlık Glukozu (BAG)" : "Bozulmuş Glukoz Toleransı (BGT)" };
+  return { label: "DİYABET MELLİTUS", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200", sub: "Tanı doğrulama gerekli (semptom yoksa)" };
+};
+
 function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number | null }) {
-  const interpret = (fg: number, h2: number | null) => {
-    const fgCat = fg < 100 ? 0 : fg < 126 ? 1 : 2;
-    const h2Cat = h2 === null ? -1 : h2 < 140 ? 0 : h2 < 200 ? 1 : 2;
-    const cat = Math.max(fgCat, h2Cat === -1 ? 0 : h2Cat);
-    if (cat === 0) return { label: "NORMAL", color: "text-emerald-700", bg: "bg-emerald-50", border: "border-emerald-200",
-      /* Yalnızca GERÇEKTEN okunan değer hakkında iddia basılıyor. */
-      sub: h2 === null ? "Açlık < 100 mg/dL — 2. saat değeri girilmedi" : "Açlık < 100 mg/dL · 2.saat < 140 mg/dL" };
-    if (cat === 1) return { label: "PREDİYABET", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200", sub: fg >= 100 && fg < 126 ? "Bozulmuş Açlık Glukozu (BAG)" : "Bozulmuş Glukoz Toleransı (BGT)" };
-    return { label: "DİYABET MELLİTUS", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200", sub: "Tanı doğrulama gerekli (semptom yoksa)" };
-  };
-  const r = interpret(fasting, twoHour);
+  const r = dmYorum(fasting, twoHour);
   return (
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${r.border} ${r.bg}`}>
       <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">SONUÇ (ADA Kriterleri)</div>
@@ -55,7 +59,7 @@ function DmResult({ fasting, twoHour }: { fasting: number; twoHour: number | nul
   );
 }
 
-function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; oneHour: number; twoHour: number; threeHour: number }) {
+const gdmYorum = (fasting: number, oneHour: number, twoHour: number, threeHour: number) => {
   const iadpsg = [
     { label: "Açlık", val: fasting, cut: 92, ok: fasting > 0 && fasting < 92 },
     { label: "1. Saat", val: oneHour, cut: 180, ok: oneHour > 0 && oneHour < 180 },
@@ -69,13 +73,16 @@ function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; 
   ];
   const iadpsgPos = iadpsg.filter(i => i.val > 0 && i.val >= i.cut).length >= 1;
   const ccPos = cc.filter(i => i.val > 0 && i.val >= i.cut).length >= 2;
+  return [
+    { name: "IADPSG (75g OGTT — 1 anormal yeterli)", kisa: "IADPSG", items: iadpsg.map(i => ({ ...i, positive: i.val > 0 && i.val >= i.cut })), positive: iadpsgPos },
+    { name: "Carpenter-Coustan (100g OGTT — ≥2 anormal)", kisa: "Carpenter-Coustan", items: cc.map(i => ({ ...i, positive: i.val > 0 && i.val >= i.cut })), positive: ccPos },
+  ];
+};
 
+function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; oneHour: number; twoHour: number; threeHour: number }) {
   return (
     <div className="space-y-4">
-      {[
-        { name: "IADPSG (75g OGTT — 1 anormal yeterli)", items: iadpsg.map(i => ({ ...i, positive: i.val > 0 && i.val >= i.cut })), positive: iadpsgPos },
-        { name: "Carpenter-Coustan (100g OGTT — ≥2 anormal)", items: cc.map(i => ({ ...i, positive: i.val > 0 && i.val >= i.cut })), positive: ccPos },
-      ].map(({ name, items, positive }) => (
+      {gdmYorum(fasting, oneHour, twoHour, threeHour).map(({ name, items, positive }) => (
         <div key={name} className={`p-5 rounded-2xl border-2 border-dashed ${positive ? 'bg-rose-50 border-rose-200' : 'bg-emerald-50 border-emerald-200'}`}>
           <div className="text-[9px] font-black uppercase tracking-widest text-blue-900/80 mb-2">{name}</div>
           <p className={`text-lg font-black italic mb-3 ${positive ? 'text-rose-700' : 'text-emerald-700'}`}>
@@ -103,9 +110,13 @@ function GdmResult({ fasting, oneHour, twoHour, threeHour }: { fasting: number; 
  *
  * `null` = değerlendirilemedi (boş ya da çöp), 0 = gerçekten ölçülmüş sıfır.
  */
-function AcroResult({ nadir, assay }: { nadir: number | null; assay: "standard" | "sensitive" }) {
+const acroYorum = (nadir: number | null, assay: "standard" | "sensitive") => {
   const cutoff = assay === "sensitive" ? 0.4 : 1.0;
-  const suppressed = nadir !== null && nadir < cutoff;
+  return { cutoff, suppressed: nadir !== null && nadir < cutoff };
+};
+
+function AcroResult({ nadir, assay }: { nadir: number | null; assay: "standard" | "sensitive" }) {
+  const { cutoff, suppressed } = acroYorum(nadir, assay);
   return (
     <div className={`p-6 rounded-[2rem] border-2 border-dashed ${suppressed ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`}>
       <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2">
@@ -179,6 +190,27 @@ export default function OgttPage() {
   const h3Gecerli = glukozMakul(threeH);
 
 
+  /* DUYURU — üç bağlamın üçü de kendi panelinin yorum fonksiyonunu çağırıyor,
+     yani ekranda yazan ile duyurulan TEK KAYNAKTAN geliyor. Panel çizilmiyorsa
+     (`null`) duyuru da yok: SonucDuyuru boş metinde kap dışında hiçbir şey
+     basmıyor. Sayı duyurulmuyor — girdiler serbest, her tuş vuruşunda değişir. */
+  const sonucMetni =
+    ctx === "dm"
+      ? fGecerli
+        ? dmYorum(f, h2Gecerli ? h2 : null).label
+        : null
+      : ctx === "gdm"
+        ? fGecerli || h1Gecerli || h2Gecerli
+          ? gdmYorum(fGecerli ? f : 0, h1Gecerli ? h1 : 0, h2Gecerli ? h2 : 0, h3Gecerli ? h3 : 0)
+              .map(y => `${y.kisa}: ${y.positive ? "GDM tanısı" : "GDM yok"}`)
+              .join(" · ")
+          : null
+        : ghMakul(twoH)
+          ? acroYorum(h2, assay).suppressed
+            ? "GH süpresyonu yeterli — akromegali dışlanır"
+            : "GH süpresyonu yetersiz — akromegali ile uyumlu"
+          : null;
+
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
       <div className="max-w-3xl mx-auto space-y-6">
@@ -242,6 +274,7 @@ export default function OgttPage() {
           )}
         </div>
 
+        <SonucDuyuru metin={sonucMetni} />
         {ctx === "dm" && fGecerli && <DmResult fasting={f} twoHour={h2Gecerli ? h2 : null} />}
         {ctx === "gdm" && (fGecerli || h1Gecerli || h2Gecerli) && <GdmResult fasting={fGecerli ? f : 0} oneHour={h1Gecerli ? h1 : 0} twoHour={h2Gecerli ? h2 : 0} threeHour={h3Gecerli ? h3 : 0} />}
         {ctx === "acro" && <AcroResult nadir={ghMakul(twoH) ? h2 : null} assay={assay} />}

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 
 const AGE_OPTS      = [["< 60 yaş", 0], ["60–79 yaş", 1], ["≥ 80 yaş", 2]] as const;
@@ -128,6 +129,7 @@ export default function RockallPage() {
           </div>
         </div>
 
+        <SonucDuyuru metin={`${rPost.label} risk — post-endoskopi Rockall`} />
         <div className={`rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${rPost.border} ${rPost.bg}`}>
           <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK DEĞERLENDİRMESİ</span>
           <p className={`text-2xl font-black italic tracking-tight ${rPost.color}`}>{rPost.label}</p>
