@@ -810,7 +810,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
-| **güvenlik başlıkları** | CSP/XFO/nosniff yok; XFO eklemek deponun kendi iframe ölçüm yöntemini kırar |
+| **güvenlik başlıkları** | **KISMEN KAPANDI** (9 Eyl) — dört güvenli başlık kondu, `X-Powered-By` kaldırıldı. CSP ve XFO bilerek DIŞARIDA, aşağıya bak |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
 | **`/tools` hub tekrarı** | 18 kategori çipi + 18 akordeon başlığı (mobilde çipler kaldırıldı, masaüstünde duruyor) |
 | **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, aşağıya bak |
@@ -1292,3 +1292,46 @@ sayfa, doğru olanına bağlı), `khorana` (`SonucDuyuru` kardeşi).
 Toplu yerleştirme kapılarla doğrulanmaz — bağımsız yerleşim denetimi
 sürüldü: 9 aracın 9'unda tek kullanım, tek import, yorumda değil, ve
 `ham:` verilen 15 alanın 15'i o dosyada tanımlı `useState`. Kusur 0.
+
+---
+
+## Güvenlik başlıkları: güvenli dördü kondu, CSP/XFO dışarıda (9 Eylül 2026)
+
+Önce ölçüldü — `curl -sI` yanıtta yalnız `Vary`, `Cache-Control` ve
+`X-Powered-By: Next.js` gösteriyordu; güvenlik başlığı **sıfır**.
+
+Eklenenler (`next.config.js` → `headers()`), hepsi davranışı değiştirmeyen
+cinsten:
+
+| başlık | değer |
+|---|---|
+| `X-Content-Type-Options` | `nosniff` |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` (premium `?id=`/`?branch=` sorguları dışarı sızmasın) |
+| `Permissions-Policy` | `camera=(), microphone=(), geolocation=(), payment=()` |
+| `Strict-Transport-Security` | `max-age=63072000; includeSubDomains` (yerelde http olduğu için yok sayılır) |
+
+`poweredByHeader: false` de kondu — çerçeveyi ilan etmenin bedava bilgi
+olmasından başka bir işlevi yoktu.
+
+Permissions-Policy'nin hiçbir şeyi kırmadığı ÖLÇÜLDÜ, varsayılmadı: depo
+genelinde `getUserMedia` · `geolocation` · `payment` çağrısı **0**.
+
+**BİLEREK EKLENMEYENLER:** `X-Frame-Options` / CSP `frame-ancestors` —
+bu depo ölçümlerini iframe içinde yapıyor, çerçevelemeyi yasaklamak kendi
+doğrulama yöntemini kırardı; ve CSP `script-src` — Next satır içi
+önyükleme betiği basıyor, nonce'suz politika ya `unsafe-inline` ile
+anlamsız olur ya da sayfayı sessizce kırar.
+
+Ölçüm (dev sunucusu yeniden başlatıldı — `next.config.js` sıcak
+yüklenmiyor):
+
+| ölçüt | sonuç |
+|---|---|
+| dört başlık · dört yüzey (`/tools/bmi` · `/topics/...` · `/tr/premium/ydus` · `/sitemap.xml`) | **16/16 var** |
+| `X-Powered-By` | **gitti** |
+| negatif kontrol — `X-Frame-Options` / CSP | **0** (iframe ölçümü korunuyor) |
+| yönlendirme gerilemesi (blok redirects'in üstüne taşındı) | 4 yönlendirmenin 4'ü **308** ve doğru hedefe |
+
+Not: bu ölçüm dev sunucusundadır. `headers()` yapılandırması üretimde de
+aynı yoldan uygulanır ama **canlıda doğrulanmadı** — Vercel'in kendi
+eklediği başlıklarla birleşimi ayrı bir ölçümdür.

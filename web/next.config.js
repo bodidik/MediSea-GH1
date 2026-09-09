@@ -1,6 +1,7 @@
 // C:\Users\hucig\Medknowledge\web\next.config.js
 //
-// Bu dosya daha önce hiç yoktu; iki somut kusuru kapatıyor.
+// Bu dosya daha önce hiç yoktu. Aşağıdaki numaralı bölümlerin her biri
+// ölçülmüş bir kusuru kapatıyor; sayıyı buraya YAZMA, bölümleri SAY.
 
 const path = require('path');
 
@@ -23,7 +24,53 @@ module.exports = {
   //    derlemek için: NEXT_DIST_DIR=.next-verify npm run build
   distDir: process.env.NEXT_DIST_DIR || '.next',
 
-  // 4) Eskimiş konu adresleri.
+  // 4) `X-Powered-By: Next.js` — ölçüldü, her yanıtta duruyordu. Çerçeveyi
+  //    ve sürüm ailesini ilan etmek saldırgana bedava bilgi; kapatmanın
+  //    hiçbir maliyeti yok.
+  poweredByHeader: false,
+
+  // 5) GÜVENLİK BAŞLIKLARI — ölçüldü, HİÇBİRİ yoktu (curl ile: yanıtta yalnız
+  //    Vary/Cache-Control/X-Powered-By vardı).
+  //
+  //    Buradaki liste BİLEREK DAR. Eklenen dördü davranışı değiştirmez ve
+  //    ölçülebilir: uygulama kamera/mikrofon/konum/ödeme API'lerinin
+  //    hiçbirini kullanmıyor (depo geneli tarama: 0 çağrı), yani
+  //    Permissions-Policy hiçbir özelliği kırmıyor.
+  //
+  //    EKLENMEYENLER ve sebepleri:
+  //
+  //    · `X-Frame-Options` / CSP `frame-ancestors` — bu depo ÖLÇÜMLERİNİ
+  //      iframe içinde yapıyor (tarayıcı panelinde sayfayı çerçeveleyerek).
+  //      Çerçevelemeyi yasaklamak kendi doğrulama yöntemimizi kırardı.
+  //      Clickjacking riski gerçek ama bu sitede durum-değiştiren tek
+  //      tıklamalık bir yüzey yok; karar kullanıcının.
+  //
+  //    · CSP (`script-src` vb.) — Next satır içi önyükleme betiği basıyor;
+  //      nonce'suz bir politika ya `unsafe-inline` ile anlamsız olur ya da
+  //      sayfayı sessizce kırar. Nonce'lu CSP her rotanın render biçimini
+  //      etkiler; ölçülmeden konmaz.
+  async headers() {
+    return [
+      {
+        source: '/:yol*',
+        headers: [
+          // MIME tahminini kapatır: içerik türü yanlış ilan edilmiş bir
+          // dosyanın betik olarak çalıştırılmasını engeller.
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          // Dış sitelere yalnızca kaynak (origin) sızar, tam adres değil —
+          // premium sorgu parametreleri (`?id=`, `?branch=`) referrer ile
+          // dışarı gitmesin.
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=()' },
+          // Tarayıcı HSTS'i yalnızca HTTPS yanıtında dikkate alır; yerelde
+          // (http) yok sayılır, yani geliştirmeyi etkilemez.
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
+        ],
+      },
+    ];
+  },
+
+  // 6) Eskimiş konu adresleri.
   //
   // İçerik HTML'lerinin içindeki bağlantılar denetlendi (scripts/link-denetim.cjs):
   // 18 iç bağlantının 3'ü kırıktı. Hepsi hematolojik maligniteler sayfasından
@@ -33,7 +80,7 @@ module.exports = {
   // İçeriği düzenlemek yerine yönlendirme konuyor. İki sebep: içerik
   // kullanıcının alanı, ve eski adresler arama motorunda ya da birinin
   // yer imlerinde kalmış olabilir — 301 ikisini birden kurtarır.
-  // 5) Premium yolundaki [lang] parçası HER dizeyi kabul ediyordu.
+  // 7) Premium yolundaki [lang] parçası HER dizeyi kabul ediyordu.
   //
   //    Ölçüldü: /tr, /en, /fr, /zzz, /sayfa-yok — beşi de 200 dönüp aynı
   //    Türkçe sayfayı basıyordu. Yani sınırsız bir kopya adres alanı vardı;
