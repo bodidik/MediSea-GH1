@@ -807,7 +807,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | 18 araç iki kovada (1–400 ↔ 20–300) — çocuk kapsamı kararı |
 | **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
-| **premium `istatistikler` alanı** | ölü ve 5 dosyada çoktan sapmış |
+| **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
 | **güvenlik başlıkları** | CSP/XFO/nosniff yok; XFO eklemek deponun kendi iframe ölçüm yöntemini kırar |
@@ -1219,3 +1219,33 @@ Geri gerekirse git geçmişinde duruyor.
 
 Kapatılmayan yarısı: `/userstats` ucu bugün de YOK ve olmadığı bir daha
 İLAN edilmiyor. Gerekiyorsa yeni bir uç olarak yazılır.
+
+---
+
+## Ölü `istatistikler` alanı tipten çıkarıldı (9 Eylül 2026)
+
+Alan iki tipte duruyordu ve **hiçbir yerde okunmuyordu** — sayılar
+`envanterAl`den geliyor (`.istatistikler` için depo geneli tarama: 0 okuma).
+Tipte durması onu "güvenilebilir alan" gibi gösteriyordu; çıkarılınca ona
+uzanan her deneme derleme hatası oluyor.
+
+Sapma **uygulamanın kendi `envanterAl`i sürülerek** ölçüldü (geçici rota,
+ölçütü yeniden yazmadan). Belgede 5 yazıyordu, gerçek **7**:
+
+| dosya | ilan ≠ gerçek |
+|---|---|
+| endokrinoloji/graves-hastaligi | soru 10 ≠ **0** |
+| endokrinoloji/hashimoto-tiroiditi | soru 7 ≠ 10 |
+| gogus-hastaliklari/hkp | soru 10 ≠ 11 |
+| hematoloji/aml-ana | soru 24 ≠ **9** · inci 7 ≠ 10 |
+| hematoloji/kml | flashcard 12 ≠ **0** · inci 5 ≠ **0** |
+| kardiyoloji/hfpef-ileri-degerlendirme | soru 10 ≠ 11 |
+| romatoloji/sle | inci 0 ≠ **3** |
+
+51 konu dosyasının **51'i** de bu alanı ilan ediyor. İçerik dosyalarına
+DOKUNULMADI: içerik girişi ayrı worktree'de sürüyor, 51 JSON'u buradan
+düzenlemek o dalla çakışırdı. Alan okunmadığı için veride kalması zararsız.
+
+`.next/types` artığı yine ısırdı: geçici rota silindikten sonra `tsc`
+olmayan modülü arıyor — rotayla birlikte `.next/types/...` karşılığını da
+sil.

@@ -95,15 +95,10 @@ interface KonuVerisi {
     vaka?: boolean;
     video?: boolean;
   };
-  istatistikler?: {
-    soru?: number;
-    flashcard?: number;
-    inci?: number;
-    /* Vaka sayacı: moduller.vaka ile birlikte kullanılır. Mevcut içerik
-       JSON'larında henüz yok, o yüzden opsiyonel — arayüz zaten
-       `!== undefined` ile koruyor. */
-    vaka?: number;
-  };
+  /* `istatistikler` BİLEREK TİPTE DEĞİL — aşağıdaki `envanterAl` notuna bak.
+     Alan içerik dosyalarında var ama okunmuyor; tipte durması onu
+     güvenilir gösteriyordu. Ölçüldü: 51 dosyanın 7'sinde ilan gerçekle
+     ayrışmış. Panodaki ikizi de aynı sebeple kaldırıldı. */
   icerik: IcerikBlok[];
 }
 

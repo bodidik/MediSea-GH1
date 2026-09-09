@@ -48,13 +48,16 @@ interface BransVerisi {
 
 interface KonuVerisi {
   /**
-   * ÖLÜ ALAN — hiçbir yerde okunmuyor, sayılar `envanterAl`den geliyor.
-   * 42 dosyanın 5'inde ilan gerçekle çoktan ayrışmış (ölçüldü). Tipte
-   * durmasının tek sebebi alanın veride bulunması; ona GÜVENME.
+   * `istatistikler` alanı BİLEREK TİPTE DEĞİL.
+   *
+   * İçerik dosyalarında duruyor (51/51'i ilan ediyor) ama hiçbir yerde
+   * okunmuyor; sayılar `envanterAl`den geliyor. Tipte tutmak "güvenilebilir
+   * bir alan" izlenimi veriyordu ve ölçüldüğünde ilan gerçekle 51 dosyanın
+   * **7'sinde** ayrışmıştı (graves soru 10↔0 · hashimoto 7↔10 · hkp 10↔11 ·
+   * aml-ana soru 24↔9 ve inci 7↔10 · kml flashcard 12↔0 ve inci 5↔0 ·
+   * hfpef 10↔11 · sle inci 0↔3). Tipten çıkarılınca ona uzanan her deneme
+   * derleme hatası olur — istenen budur.
    */
-  istatistikler?: {
-    soru?: number;
-  };
   meta?: {
     /** "2026-07" — ay hassasiyetinde, içerik yazarı tarafından tutuluyor. */
     guncelleme?: string;
