@@ -66,7 +66,7 @@ const CheckRow = ({ label, sub, pts, checked, onChange }: { label: string; sub: 
 const RadioGroup = ({ label, opts, idx, onChange }: { label: string; opts: readonly (readonly [string, number])[]; idx: number; onChange: (i: number) => void }) => (
   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
     <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
-    <div className="grid gap-1.5">
+    <div role="radiogroup" aria-label={label} className="grid gap-1.5">
       {opts.map(([l, v], i) => (
         <label key={i} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
           ${idx === i ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
@@ -74,7 +74,7 @@ const RadioGroup = ({ label, opts, idx, onChange }: { label: string; opts: reado
             ${idx === i ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
             {idx === i && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
           </div>
-          <input type="radio" className="sr-only" checked={idx === i} onChange={() => onChange(i)} />
+          <input type="radio" name={label} className="sr-only" checked={idx === i} onChange={() => onChange(i)} />
           <span className={`text-[12px] font-bold flex-1 ${idx === i ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
           <span className={`text-[10px] font-black ${idx === i ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
         </label>

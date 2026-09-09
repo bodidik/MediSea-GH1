@@ -22,7 +22,7 @@ const FAMHX_OPTS  = [["Aile öyküsü yok", 0], ["2. derece akrabada diyabet", 3
 const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) => (
   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
     <span className="text-sm font-bold text-blue-900/80 block">{label}</span>
-    <div className="grid gap-1.5">
+    <div role="radiogroup" aria-label={label} className="grid gap-1.5">
       {opts.map(([l, v]) => (
         <label key={v + l} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
           ${value === v && l === opts.find(o => o[1] === value)?.[0] ? 'bg-blue-900 border-blue-900' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
@@ -30,7 +30,7 @@ const RadioGroup = ({ label, opts, value, onChange }: { label: string; opts: rea
             ${value === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
             {value === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
           </div>
-          <input type="radio" className="sr-only" checked={value === v} onChange={() => onChange(v)} />
+          <input type="radio" name={label} className="sr-only" checked={value === v} onChange={() => onChange(v)} />
           <span className={`text-[12px] font-bold flex-1 ${value === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
           <span className={`text-[10px] font-black ${value === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
         </label>
@@ -83,11 +83,11 @@ export default function FindriscPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
             <span className="text-sm font-bold text-blue-900/80 block mb-2">Cinsiyet</span>
-            <div className="flex gap-3">
+            <div role="radiogroup" aria-label="Cinsiyet" className="flex gap-3">
               {(["m", "f"] as const).map(v => (
                 <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center gap-2 p-3 rounded-xl border cursor-pointer transition-all
                   ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
-                  <input type="radio" className="sr-only" checked={sex === v} onChange={() => { setSex(v); setWaist(0); }} />
+                  <input type="radio" name="cinsiyet" className="sr-only" checked={sex === v} onChange={() => { setSex(v); setWaist(0); }} />
                   <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
                 </label>
               ))}

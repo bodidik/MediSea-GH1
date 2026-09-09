@@ -84,11 +84,16 @@ export default function BmrPage() {
         </div>
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-8 shadow-sm space-y-4">
-          <div className="flex gap-3">
+          {/* GRUP SEMANTİĞİ — ölçüldü: bu ikili sayfada HİÇBİR görünür başlık
+              taşımıyordu. Ekran okuyucu "Erkek, radyo düğmesi" diyor ve neyin
+              cinsiyeti sorulduğunu söylemiyordu. `name` de yoktu: `name`siz
+              radyolar NATIVE BİR GRUP DEĞİL — her biri ayrı sekme durağı olur
+              ve ok tuşları çalışmaz. */}
+          <div role="radiogroup" aria-label="Cinsiyet" className="flex gap-3">
             {(["m", "f"] as const).map(v => (
               <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex-1 flex items-center justify-center p-3 rounded-xl border cursor-pointer transition-all
                 ${sex === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-slate-50 border-slate-200 hover:border-blue-900/30'}`}>
-                <input type="radio" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
+                <input type="radio" name="cinsiyet" className="sr-only" checked={sex === v} onChange={() => setSex(v)} />
                 <span className={`text-sm font-bold ${sex === v ? 'text-white' : 'text-blue-900/80'}`}>{v === "m" ? "Erkek" : "Kadın"}</span>
               </label>
             ))}
@@ -109,7 +114,7 @@ export default function BmrPage() {
 
           <div>
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-2 pl-1">Aktivite Düzeyi</span>
-            <div className="grid gap-1.5">
+            <div role="radiogroup" aria-label="Aktivite Düzeyi" className="grid gap-1.5">
               {ACTIVITY_OPTS.map(opt => (
                 <label key={opt.factor} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all
                   ${factor === opt.factor ? 'bg-blue-900 border-blue-900' : 'bg-slate-50 border-slate-100 hover:border-blue-900/30'}`}>
@@ -117,7 +122,7 @@ export default function BmrPage() {
                     ${factor === opt.factor ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {factor === opt.factor && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="sr-only" checked={factor === opt.factor} onChange={() => setFactor(opt.factor)} />
+                  <input type="radio" name="aktivite" className="sr-only" checked={factor === opt.factor} onChange={() => setFactor(opt.factor)} />
                   <div className="flex-1">
                     <span className={`text-sm font-bold block ${factor === opt.factor ? 'text-white' : 'text-blue-900/80'}`}>{opt.label}</span>
                     <span className={`text-[9px] font-bold uppercase tracking-widest ${factor === opt.factor ? 'text-blue-200' : 'text-slate-400'}`}>{opt.sub}</span>

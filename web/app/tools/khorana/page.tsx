@@ -68,7 +68,7 @@ export default function KhoranaPage() {
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-3">
           <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
             <span className="text-sm font-bold text-blue-900/80 block">Kanser Lokalizasyonu</span>
-            <div className="grid gap-1.5">
+            <div role="radiogroup" aria-label="Kanser Lokalizasyonu" className="grid gap-1.5">
               {CANCER_OPTS.map(([l, v]) => (
                 <label key={v} className={`focus-within:ring-2 focus-within:ring-blue-700 focus-within:ring-offset-2 flex items-center gap-3 p-2.5 rounded-xl border cursor-pointer transition-all
                   ${cancerSite === v ? 'bg-blue-900 border-blue-900 text-white' : 'bg-white border-slate-100 hover:border-blue-900/30'}`}>
@@ -76,7 +76,7 @@ export default function KhoranaPage() {
                     ${cancerSite === v ? 'border-amber-400 bg-amber-400' : 'border-slate-300'}`}>
                     {cancerSite === v && <div className="w-1.5 h-1.5 rounded-full bg-blue-900" />}
                   </div>
-                  <input type="radio" className="sr-only" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
+                  <input type="radio" name="kanser-bolgesi" className="sr-only" checked={cancerSite === v} onChange={() => setCancerSite(v)} />
                   <span className={`text-[12px] font-bold flex-1 ${cancerSite === v ? 'text-white' : 'text-blue-900/80'}`}>{l}</span>
                   <span className={`text-[10px] font-black ${cancerSite === v ? 'text-amber-400' : 'text-slate-400'}`}>+{v}</span>
                 </label>

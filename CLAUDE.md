@@ -822,7 +822,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | eksen | ölçülmeyen |
 |---|---|
 | sonuç duyurusu | **KAPANDI** (9 Eyl) — `SonucDuyuru` bağlı olmayan 28 aracın 20'sinde kendi canlı bölgesi var, kalan 8'i SAYI basıyor (kayıtlı karar). Bant basıp hiçbir şey duyurmayan 3 araç bulundu ve bağlandı; aşağıya bak |
-| grup semantiği | 35 araçta `role="group"` yok (adları sayfa içinde benzersiz) |
+| grup semantiği | **KAPANDI** (9 Eyl) — gerekçe kısmen ÇÜRÜDÜ: 70 radyonun 70'i `name`siz, yani native grup DEĞİLDİ. Aşağıya bak |
 | `h2` yapısı | **ÖLÇÜLDÜ, temiz** — 136 araç / 435 başlık, dört ölçütte de 0; aşağıya bak |
 | süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
 | `truncate` | **ÖLÇÜLDÜ** — aşağıya bak |
@@ -1643,3 +1643,45 @@ akordeon zorla açık, 9 araç, belge 2279px.
 kabın SON kutusu döndü, belgede kayıtlı tuzak. Doğru ölçüt görünür
 öge sayısıydı (`checkVisibility`), o da 0 dedi: kategoriler kapalı,
 tasarımın istediği bu.
+
+---
+
+## Radyo grupları native grup değildi: 70/70 `name`siz (9 Eylül 2026)
+
+"Grup semantiği" kapsam boşluğunu kapatmaya giderken beklenmedik bir şey
+çıktı. Belgedeki gerekçe *"seçenek adları sayfa içinde benzersiz"*ti ve
+adlandırma tarafında büyük ölçüde DOĞRU: `kdigo-aki`de ad zinciri canlıda
+hesaplandı, altı kontrolün altısı da kendini anlatıyor
+("< 0.5 mL/kg/saat, 6–12 saat").
+
+**Ama gerekçenin görmediği bir eksen vardı.** Üretilen HTML sayıldı:
+7 araçta **70 radyo, 70'i `name` özniteliksiz.** `name`siz radyolar
+tarayıcı için TEK BİR GRUP DEĞİL — her biri ayrı sekme durağı olur ve
+ok tuşu gezinmesi hiç kurulmaz. `findrisc`te bu 9 grup yerine **23 durak**
+demekti.
+
+İkinci bulgu: `bmi` ve `bmr`de cinsiyet ikilisinin **hiçbir görünür başlığı
+yoktu** — ekran okuyucu "Erkek, radyo düğmesi" diyor, neyin sorulduğunu
+söylemiyordu (`findrisc`te aynı ikilinin görünür "Cinsiyet" başlığı var ama
+programatik bağı yoktu).
+
+Düzeltme: 7 araçta **70/70 radyoya `name`**, ve **24 `role="radiogroup"`**
+(görünür başlık varsa `aria-label` onu tekrarlıyor; `bmi`/`bmr` cinsiyetine
+"Cinsiyet" adı verildi — araç zaten Mifflin-St Jeor'da cinsiyet katsayısı
+kullanıyor, uydurma değil).
+
+| ölçüt | sonuç |
+|---|---|
+| `name` kapsamı | 0/70 → **70/70** |
+| `role="radiogroup"` | 0 → **24** |
+| `rockall` seçim bütünlüğü | 5 grup · 5 benzersiz ad · **tam 5 işaretli** · duyuru DÜŞÜK → ÇOK YÜKSEK · panel aynı |
+| `findrisc` seçim bütünlüğü | 9 grup · 9 ad · 23 radyo · **tam 9 işaretli** (öncesi ve sonrası) · "ÇOK YÜKSEK RİSK" |
+
+**OK TUŞU GEZİNMESİ DOĞRULANAMADI — ve bu raporda böyle yazılmalı.**
+Sentetik `KeyboardEvent` tarayıcının yerleşik radyo gezinmesini zaten
+tetiklemiyor; GERÇEK tuş de denendi (`computer` · Down) ve `keydown`
+dinleyicisine **hiç olay ulaşmadı** (`document.hasFocus()` true,
+`activeElement` doğru radyo, buna rağmen kuyruk boş). Yeni bir ortam
+tuzağı: bu panelde klavye olayı sayfaya inmiyor. Ölçülen şey `name`
+gruplamasının seçim bütünlüğünü bozmadığıdır; ok gezinmesi standart
+davranış olarak BEKLENİYOR ama burada kanıtlanmadı.
