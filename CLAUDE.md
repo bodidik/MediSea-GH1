@@ -803,7 +803,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
-| **`gout-acr` atak ekseni** | **İKİ ÇELİŞKİ ÖLÇÜLDÜ** (9 Eyl) — tavan **24** (yayımlanmış 23) ve eksen başlığı ile şıkları FARKLI şey soruyor. Aşağıya bak |
+| **`gout-acr` atak ekseni** | **KAPANDI** (10 Eyl) — eksen atak SAYISINI soruyor; tavan **24 → 23**, iki çelişki tek düzeltmeyle kapandı. Aşağıya bak |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
 | **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; 4. (artık `.txt`) SİLİNDİ, kalan üçü yazım kararı. Aşağıya bak |
@@ -1767,3 +1767,36 @@ seçildi, araç **120** bastı. Yayımlanmış tavan 123; fark, kutanöz alanın
 Yan not (kusur DEĞİL): `gout-acr` bütün puan eksenleri doldurulmuş olsa
 bile ADIM 2 yanıtlanana dek sonuç basmıyor — algoritmayı o soru
 dallandırdığı için doğru davranış.
+
+---
+
+## `gout-acr` zaman seyri ekseni düzeltildi (10 Eylül 2026)
+
+Eksen başlığı *"Tipik atak SAYISI"* diyor, şıkları *"Tipik atak
+ÖZELLİKLERİNDEN 1/2/3 tanesi"* diyordu. Üç atak geçiren de, TEK atağı üç
+tipik özellik taşıyan da +3 alıyordu: aynı puan, iki bambaşka klinik girdi.
+
+Şıklar atak sayısına çevrildi (**Bir tipik atak +1 · Tekrarlayan tipik
+ataklar +2**); "tipik"in tanımı — üç özellikten en az ikisi — şıkta değil
+`detail`de duruyor, çünkü özellikler ölçülen şey değil, tipikliğin KOŞULU.
+
+**İÇ TUTARLILIK KANITI — düzeltmenin doğruluğunu bu gösteriyor.** Eksenin
+tavanı 3'ten 2'ye inince aracın toplam tavanı da yerine oturdu:
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| bütün eksenler en yüksekte | **DOMAİN 24** | **DOMAİN 23** (yayımlanmış tavan) |
+| aritmetik | 2+3+**3**+4+4+0+4+4 | 2+3+**2**+4+4+0+4+4 |
+
+Yani iki ayrı çelişki (eksenin anlamı ve tavan) TEK bir düzeltmeyle
+kapandı — ikisinin aynı yerden geldiğinin kanıtı.
+
+Gerileme ölçümü (canlı, üç senaryo): MTP+2 · bir tipik atak+1 → **3**,
+"Kriter Karşılanmadı · 5 puan daha gerekiyor"; tekrarlayana geçince
+**4** (3+2 değil — tek seçim dışlayıcılığı sağlam); +tofüs+urat → **12**,
+"Kriterleri Karşılıyor". Eşik metni ve `≥ 8` kuralı değişmedi.
+
+Paylaşım bağlantısı etkilenmiyor: `ToolShare` yalnızca TOPLAMI taşıyor
+(`domain: domainTotal`), şık indeksi değil — şık kaldırmak eski bağlantıyı
+bozmuyor. Seçilmeyen `single` eksen zaten 0 katkı verdiği için ayrıca
+"Yok" şıkkı eklenmedi.

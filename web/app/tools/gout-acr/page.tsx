@@ -33,12 +33,33 @@ const DOMAIN_ITEMS = [
   },
   {
     id: "time_course",
+    /**
+     * EKSEN BAŞLIĞI İLE ŞIKLARI FARKLI ŞEY SORUYORDU — ölçüldü (canlı).
+     *
+     * Başlık "Tipik atak SAYISI" diyordu, şıklar ise "Tipik atak
+     * ÖZELLİKLERİNDEN 1/2/3 tanesi". Yani üç atak geçiren de, TEK atağı üç
+     * tipik özellik taşıyan da +3 alıyordu: aynı puan, iki bambaşka klinik
+     * girdi. Kullanıcı hangisini sayacağını bilemez.
+     *
+     * Bu eksende puan ATAK SAYISINDAN gelir; "tipik"in tanımı zaten üç
+     * özellikten en az ikisidir ve tanım `detail`de duruyor. Özellikler
+     * ölçülen şey değil, tipikliğin KOŞULU.
+     *
+     * İÇ TUTARLILIK KANITI: bu eksenin tavanı 3 iken aracın toplam tavanı
+     * **24** çıkıyordu (canlıda ölçüldü: bütün eksenler en yüksekte iken
+     * "DOMAİN 24 / ≥8"). Yayımlanmış tavan 23. Eksen 2'ye inince aritmetik
+     * tam oturuyor: 2 + 3 + 2 + 4 + 4 + 0 + 4 + 4 = 23. Yani iki ayrı
+     * çelişki (eksen anlamı ve tavan) TEK bir düzeltmeyle kapanıyor —
+     * düzeltmenin doğru olduğunun en güçlü işareti bu.
+     *
+     * Seçilmeyen `single` eksen 0 katkı veriyor (bkz. `domainTotal`), o
+     * yüzden ayrıca "Yok" şıkkı eklenmedi — davranış eskisiyle aynı.
+     */
     label: "Zaman Seyri",
-    detail: "Tipik atak sayısı (ağrı başlangıcından ≤ 24 saat, ≤ 14 günde tam gerileme, iki atak arası tamamen asemptomatik)",
+    detail: "TİPİK atak = şu üçünden en az İKİSİ: ağrı ≤ 24 saatte doruğa çıkıyor · belirtiler ≤ 14 günde tam geriliyor · ataklar arası tamamen asemptomatik. Puan ATAK SAYISINDAN gelir, özellik sayısından değil.",
     options: [
-      { label: "Tipik atak özelliklerinden 1 tanesi", pts: 1 },
-      { label: "Tipik atak özelliklerinden 2 tanesi", pts: 2 },
-      { label: "Tipik atak özelliklerinden 3 tanesi (klasik atak)", pts: 3 },
+      { label: "Bir tipik atak", pts: 1 },
+      { label: "Tekrarlayan tipik ataklar", pts: 2 },
     ],
     single: true,
   },
