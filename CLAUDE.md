@@ -801,7 +801,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
 | **`asdas` eksi sabit** | ESR varyantı eksi skor üretiyor, iki varyantın bandı 3 vakada ayrışıyor; sabitin kaynağı depoda yazılı değil |
 | **`essdai` kutanöz 3. düzey yok** | tavan 120 ↔ yayımlanmış 123; klinik tanım yazmak içerik kararı |
-| **`gh-test` BMI eşikleri** | dizi "yaş" diye adlandırılmış, değerler BMI'ye ait; sabit 3 μg/L kullanılıyor |
+| **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
 | **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
