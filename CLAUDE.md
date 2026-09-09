@@ -799,11 +799,11 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | madde | durum |
 |---|---|
 | **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
-| **`asdas` eksi sabit** | ESR varyantı eksi skor üretiyor, iki varyantın bandı 3 vakada ayrışıyor; sabitin kaynağı depoda yazılı değil |
-| **`essdai` kutanöz 3. düzey yok** | tavan 120 ↔ yayımlanmış 123; klinik tanım yazmak içerik kararı |
+| **`asdas` eksi sabit** | **İÇ ÇELİŞKİ ÖLÇÜLDÜ** (9 Eyl) — aynı girdide CRP **0.00**, ESR **−0.21**. Kaynak kararı sende, aşağıya bak |
+| **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
-| **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
+| **`gout-acr` atak ekseni** | **İKİ ÇELİŞKİ ÖLÇÜLDÜ** (9 Eyl) — tavan **24** (yayımlanmış 23) ve eksen başlığı ile şıkları FARKLI şey soruyor. Aşağıya bak |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
 | **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; 4. (artık `.txt`) SİLİNDİ, kalan üçü yazım kararı. Aşağıya bak |
@@ -1725,3 +1725,45 @@ kararıdır. Üçüncüsü `✕` ama düğmenin adı zaten "Kapat".
 **Ölçüm tuzağı:** ilk turda `/tools`ta "5 okunuyor" çıktı; ikisi
 `<script>` içindeki RSC yüküydü (belgede kayıtlı tuzak). `SCRIPT/STYLE/
 NOSCRIPT` elenince gerçek sayı 3'e indi.
+
+---
+
+## Klinik sabit maddelerinin İÇ tarafı ölçüldü (9 Eylül 2026)
+
+Bu üç madde "klinik kaynak kararı" diye duruyordu. Kararı veremem ama
+**iddianın iç tarafı ölçülebilir**: aracın kendi ekranı kendi koduyla
+çelişiyor mu. Üçü de uygulamanın kendisi sürülerek ölçüldü; kod
+DEĞİŞTİRİLMEDİ.
+
+**`asdas` — aynı hastada iki varyant tabanda ayrışıyor.** Dört NRS = 0,
+CRP = 0, ESR = 0 (meşru bir hasta: hiçbir yakınma yok) girildiğinde:
+
+| varyant | skor |
+|---|---|
+| ASDAS-CRP | **0.00** |
+| ASDAS-ESR | **−0.21** |
+
+İkisi de "İNAKTİF HASTALIK" bantlıyor (bant doğru), ama ekrana basılan
+**eksi bir hastalık aktivite skoru** geçerli bir ASDAS değeri değil.
+Yani ESR varyantının −0.211 sabiti tabanı eksiye indiriyor, CRP
+varyantının tabanı tam 0. Soru dar: **bu sabit hangi yayımlanmış
+denklemden geliyor?**
+
+**`essdai` — tavan ölçüldü: 120.** 12 alanın 12'sinde en yüksek düzey
+seçildi, araç **120** bastı. Yayımlanmış tavan 123; fark, kutanöz alanın
+3. düzeyinin bu araçta bulunmaması.
+
+**`gout-acr` — iki ayrı çelişki.**
+1. Bütün eksenler en yüksek seçilince araç **"DOMAİN 24 / ≥8"** basıyor;
+   yayımlanmış tavan 23. Aritmetik: 2 + 3 + 3 + 4 + 4 + 0 + 4 + 4.
+   Görüntüleme BİLEREK iki bağımsız 4 puanlık eksen (kodda yazılı).
+2. **Eksen başlığı ile şıkları farklı şey soruyor:** başlık
+   *"ZAMAN SEYRİ — TİPİK ATAK SAYISI"*, şıklar *"Tipik atak
+   ÖZELLİKLERİNDEN 1/2/3 tanesi"*. Üç atak geçiren de, tek atağı üç tipik
+   özellik taşıyan da +3 alıyor — aynı puan, iki farklı klinik girdi.
+   Bu, kaynak kararı beklemeden düzeltilebilecek tek parça: hangisinin
+   kastedildiği yazılınca metin tutarlı olur.
+
+Yan not (kusur DEĞİL): `gout-acr` bütün puan eksenleri doldurulmuş olsa
+bile ADIM 2 yanıtlanana dek sonuç basmıyor — algoritmayı o soru
+dallandırdığı için doğru davranış.
