@@ -175,7 +175,16 @@ function AdimKarti({
           quiz motorunda da aynı sınır çizildi.
 
           Değer: 466px metin + ~38px yan dolgu ≈ 32rem. */}
-      <div style={{
+      {/* data-readable — KİMLİK ADIM VERİSİNDEN, sıradan DEĞİL.
+          Vaka motoru adımları AYNI YOLDA gösteriyor (`?branch=&id=` sorguda,
+          `sayfaKimligi` onu zaten anahtara katıyor), yani sayfa içi kimliğin
+          ayırması gereken tek şey ADIM. Sıra numarası kullanılsaydı bir adım
+          eklendiğinde bütün vurgular bir adım kayardı — belgede kayıtlı
+          "seçim/konum kimlikle saklanır" kuralı.
+
+          Ölçüldü (11 dosya · 35 adım): `adim` alanı 35/35'te var ve dosya
+          içinde tekrarsız. `baslik` kimlik OLAMAZ — 35 adımın 17'sinde boş. */}
+      <div data-readable={`vaka:adim-${adim.adim}:klinik`} style={{
         background: '#f5f9ff', border: '0.5px solid #b8cfe8',
         borderLeft: '3px solid #1a3a6b', borderRadius: '0 10px 10px 0',
         padding: '1rem 1.2rem', marginBottom: '1.2rem', maxWidth: '32rem',
@@ -283,7 +292,12 @@ function AdimKarti({
           </div>
 
           {/* Detay */}
-          <div style={{ padding: '.9rem 1.1rem' }}>
+          {/* data-readable DIŞ kutuya DEĞİL buraya: dış kutunun başlığı
+              kullanıcının CEVABINA göre değişiyor ("Doğru!" ↔ "Yanlış —
+              Doğru cevap: C"), yani karakter ofsetleri aynı adımda iki farklı
+              değer alırdı ve vurgu ikinci gelişte kayardı. Bu kutunun içeriği
+              yalnızca adım verisine bağlı. QuizEngine'de de aynı yer. */}
+          <div data-readable={`vaka:adim-${adim.adim}:aciklama`} style={{ padding: '.9rem 1.1rem' }}>
             {adim.aciklama_detay && (
               <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
                 {kalinIsle(adim.aciklama_detay)}
@@ -501,7 +515,9 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
         <div style={{ marginBottom: '1.25rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
             <span style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b' }}>
-              Adım {adimIndex + 1} / {toplamAdim} — {adim.baslik}
+              {/* Ölçüldü: 35 adımın 17'sinde `baslik` YOK; koşulsuz tire
+                  "Adım 2 / 4 — " diye sarkan bir ayraç basıyordu. */}
+              Adım {adimIndex + 1} / {toplamAdim}{adim.baslik ? ` — ${adim.baslik}` : ''}
             </span>
             <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
               {Math.round(((adimIndex + 1) / toplamAdim) * 100)}%

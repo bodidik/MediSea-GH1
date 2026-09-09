@@ -147,7 +147,8 @@ değişir**; sıra numarası orada yanlış içeriğe yapışır. Değersiz yaz�
 `keyOf`) — aksi halde iki değersiz konteyner çakışırdı.
 
 Şu an bağlı yüzeyler: konu detayı, premium YDUS konu sayfası, inciler
-(`pearl:<id>`), soru çözüm açıklaması (`soru:<id>`).
+(`pearl:<id>`), soru çözüm açıklaması (`soru:<set>:<id>`), vaka adımı
+(`vaka:adim-<n>:klinik` ve `vaka:adim-<n>:aciklama`).
 
 ### Dosyalar
 
@@ -825,7 +826,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | `h2` yapısı | **ÖLÇÜLDÜ, temiz** — 136 araç / 435 başlık, dört ölçütte de 0; aşağıya bak |
 | süsleme glifi | araç dışında 14 öge insan kararı bekliyor |
 | `truncate` | **ÖLÇÜLDÜ** — aşağıya bak |
-| vaka adımı vurgulanabilirliği | önkoşul kararlı kimlik; bugünkü `adim-1` KONUMSAL |
+| vaka adımı vurgulanabilirliği | **KAPANDI** (9 Eyl) — kimlik adım verisinden (`adim.adim`), aşağıya bak |
 | `study-backup` | 14 korumasız `localStorage` çağrısı — **ölçüldü, bilerek bırakıldı** (kullanıcı eylemiyle çalışıyor, depo engelli uyarısı zaten üstünde; gerekçe arşivde) |
 | birim ilanı | **KAPANDI** — aşağıya bak |
 
@@ -1144,3 +1145,42 @@ ekran okuyucudan gizlenirdi.
 
 Ölçüm ortamında `innerWidth: 0` olduğu için ŞERİDİN görünürlüğü hakkında
 iddia yok — ölçülen yalnızca duyuru metni ile panel metninin aynı olması.
+
+---
+
+## Vaka adımı vurgulanabilir oldu (9 Eylül 2026)
+
+Açık maddede "önkoşul kararlı kimlik" yazıyordu. Kimlik adayları **sayıldı**
+(11 dosya · 35 adım):
+
+| aday | durum | karar |
+|---|---|---|
+| `veri.id` | 1 dosyada YOK, 8'inde dosya adıyla ayrışıyor | kullanılmadı — vaka kimliği zaten SORGUDA (`sayfaKimligi` anahtara katıyor) |
+| `adim.baslik` | **35 adımın 17'sinde BOŞ** | kimlik olamaz |
+| `adim.adim` | 35/35 var, dosya içinde tekrarsız | **seçildi** |
+
+İki konteyner: `vaka:adim-<n>:klinik` ve `vaka:adim-<n>:aciklama`. Açıklama
+sınırı DIŞ kutuya değil İÇ kutuya verildi — dış kutunun başlığı kullanıcının
+CEVABINA göre değişiyor ("Doğru!" ↔ "Yanlış — Doğru cevap: C"), ofsetler aynı
+adımda iki farklı değer alırdı.
+
+Canlıda sürüldü (kapı arkası olduğu için geçici ölçüm rotası `(ydus)` grubuna
+kondu — grup dışına konulunca `ReadingTools` HİÇ monte olmuyor ve ölçüm
+sessizce boş çıkıyor; rota ve `.next` artıkları silindi):
+
+| ölçüt | sonuç |
+|---|---|
+| adım 1'de gerçek vurgu (araç çubuğu, "Sarı") | kayıt `k: "vaka:adim-1:klinik"`, `<mark>` boyandı |
+| adım 2'ye geç | kayıt **1 (silinmedi)**, boyalı **0** — belgedeki kural aynen |
+| sayfayı yenile (adım 1) | **yeniden boyandı** |
+| **negatif kontrol — konumsal kimlikle (`k:"0"`, konteyner kimliksiz)** | adım 2'ye geçince kayıt **1 → 0**, depo anahtarı **silindi** |
+
+Negatif kontrolün ilk denemesi YANILTTI: kaydın `k`'sini "0" yapmak yetmiyor,
+çünkü konteyner hâlâ kimlikli olduğundan eşleşme "konteyner yok" dalına
+düşüyor ve kural silmiyor. Eski davranışı görmek için **konteynerin
+özniteliğini de değersiz bırakmak** gerekti.
+
+**Yan bulgu, ölçümden çıktı:** ilerleme çubuğu koşulsuz `— {adim.baslik}`
+basıyordu; 17 adımda başlık boş olduğu için "Adım 1 / 5 — " diye sarkan bir
+ayraç görünüyordu. Koşullu yapıldı (ölçüldü: `men1-sendromu-vaka-1` artık
+"Adım 1 / 5").
