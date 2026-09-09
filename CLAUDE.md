@@ -812,7 +812,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
 | **güvenlik başlıkları** | **KISMEN KAPANDI** (9 Eyl) — dört güvenli başlık kondu, `X-Powered-By` kaldırıldı. CSP ve XFO bilerek DIŞARIDA, aşağıya bak |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
-| **`/tools` hub tekrarı** | **ÖLÇÜLDÜ** (9 Eyl) — tekrar gerçek (18/18 metin birebir) ama çip TEK süzgeç; bedel 768–1024px'te yoğunlaşıyor. Tasarım kararı sende, aşağıya bak |
+| **`/tools` hub tekrarı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: çip eşiği `md:` → `lg:`. 768px'te sayfa **12498 → 1978px**, çip duvarı yerine 18 kategorilik katlanmış dizin. Aşağıya bak |
 | **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, aşağıya bak |
 
 ---
@@ -1606,3 +1606,40 @@ okuyucu da aynı 18 adı arka arkaya iki kez okuyor.
 Ölçüm tuzağı: `innerWidth: 0` bu turda da ısırdı, betiğin başındaki guard
 yakaladı. Panel gizliyken `resize_window` ile açık bir boyut vermek gerekiyor;
 bitince `preset: "desktop"` ile geri alındı.
+
+---
+
+## `/tools` çip eşiği `lg:`e taşındı (9 Eylül 2026)
+
+Kullanıcı kararı: ölçümdeki 1. seçenek. Çip satırı 768px'te 290px yer
+kaplıyor ve ilk araç kartını y=889'a itiyordu — 900px'lik bir ekranın
+TAMAMI krom.
+
+**Tek satırlık bir taşıma DEĞİLDİ; üç yer birden.** Yalnızca çipi taşımak
+768–1024 bandında NE çip NE katlanmış dizin bırakırdı: 12498px'lik sayfa,
+hiçbir kısayol yok. Üçü de artık tek sabite (`CIP_ESIGI = 1024`) bağlı:
+
+| yer | eskiden | şimdi |
+|---|---|---|
+| çip satırı | `md:flex` | `lg:flex` |
+| süzgeç şeridi (aktif kategoriyi gösterip kaldıran) | `md:hidden` | `lg:hidden` |
+| akordeon katlaması | `innerWidth < 768` | `< CIP_ESIGI` |
+
+Ölçüm — kazanç 768'de, gerileme hiçbir genişlikte yok:
+
+| genişlik | önce | sonra |
+|---|---|---|
+| **768** | çip 290px · ilk araç y=889 · belge **12498px** · akordeon 18 açık | çip **yok** · 18 başlıklı katlanmış dizin (8'i ilk ekranda) · belge **1978px** |
+| 1024 | çip 205px · y=728 | çip yok · katlanmış dizin |
+| **1280** | çip 162px · 19 çip · y=665 · odak durağı 25 · belge 11686px | **birebir aynı** (gerileme yok) |
+| 375 | çip yok · 18 kapalı · 3061px | **birebir aynı** |
+
+**Süzgeç yolu 768'de kırılmadı** — ölçüldü: `?kategori=nefroloji` ile
+şerit "Nefroloji" yazıyor, "Tümü 136" çıkış düğmesi görünür (35px),
+akordeon zorla açık, 9 araç, belge 2279px.
+
+**Ölçüm tuzağı:** katlanmış `<details>` içindeki bağlantıya
+`getBoundingClientRect` sorunca 768'de "ilk araç y=551" çıktı — kapalı
+kabın SON kutusu döndü, belgede kayıtlı tuzak. Doğru ölçüt görünür
+öge sayısıydı (`checkVisibility`), o da 0 dedi: kategoriler kapalı,
+tasarımın istediği bu.

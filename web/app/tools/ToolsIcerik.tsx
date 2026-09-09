@@ -302,6 +302,17 @@ const ARAC_ANAHTARI: Record<string, ReturnType<typeof aramaAnahtariKur>> =
     )
   );
 
+/**
+ * ÇİP EŞİĞİ — çip satırı, süzgeç şeridi ve akordeon katlaması ÜÇÜ DE bu tek
+ * sayıya bağlı. Tailwind `lg:` ile aynı nokta (1024px).
+ *
+ * Üçü ayrışırsa gezinme yüzeyi delinir: bir dönem çip `md:` (768px), katlama
+ * ise `< 768` idi ve eşik 1024'e taşınırken yalnızca çip taşınsaydı 768–1024
+ * bandında NE çip NE katlanmış dizin kalırdı — 12498px'lik sayfa, hiçbir
+ * kısayol yok.
+ */
+const CIP_ESIGI = 1024;
+
 export default function ToolsIcerik() {
   const router = useRouter();
   /* Doğrudan giren kullanıcıda `router.back()` sekmeyi siteden ÇIKARIYORDU
@@ -422,9 +433,10 @@ export default function ToolsIcerik() {
   /**
    * SECILI CIP GORUNUME KAYDIRILIR.
    *
-   * Mobilde cip satiri tek sira ve yatay kayiyor; 19 rozetin cogu ekran
-   * disinda. `?kategori=x` ile gelen kullanici hangi suzgecin acik oldugunu
-   * goremezdi — `aria-current` dogru ama gorsel isaret ulasilmaz kalirdi.
+   * Dar gorunumde cip satiri sarmadan once tek sira ve yatay kayiyordu;
+   * 19 rozetin cogu ekran disinda kaliyordu. `?kategori=x` ile gelen
+   * kullanici hangi suzgecin acik oldugunu goremezdi — `aria-current`
+   * dogru ama gorsel isaret ulasilmaz kalirdi.
    */
   useEffect(() => {
     const kap = cipKabiRef.current;
@@ -437,7 +449,7 @@ export default function ToolsIcerik() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (window.innerWidth >= 768) return;
+    if (window.innerWidth >= CIP_ESIGI) return;
     setKapaliKategoriler(new Set(TOOLS_DATABASE.map((c) => c.slug)));
   }, []);
 
@@ -580,12 +592,14 @@ export default function ToolsIcerik() {
             Kaydirma kabina KLAVYE ERISIMI ayrica gerekmiyor: icindeki her
             oge odaklanabilir bir baglanti, yani Tab kabi zaten suruyor
             (tablo kaplarinda durum farkliydi, orada metin vardi). */}
-        {/* MOBILDE SUZGEC SERIDI — cip satiri orada gizli oldugu icin,
-            aktif suzgeci GOREBILMENIN ve KALDIRABILMENIN tek yolu bu.
-            Yalnizca bir kategori seciliyken ciziliyor; olagan gorunumde
-            ekranda hicbir sey yok. */}
+        {/* SUZGEC SERIDI — cip esiginin ALTINDA. Cip satiri orada gizli
+            oldugu icin, aktif suzgeci GOREBILMENIN ve KALDIRABILMENIN tek
+            yolu bu; esik `lg:`e tasinirken serit de tasindi, yoksa 768-1024
+            bandinda `?kategori=x` ile gelen kullanici hangi suzgecin acik
+            oldugunu goremez ve kaldiramazdi. Yalnizca bir kategori
+            seciliyken ciziliyor; olagan gorunumde ekranda hicbir sey yok. */}
         {seciliKategori ? (
-          <div className="flex items-center gap-2 md:hidden">
+          <div className="flex items-center gap-2 lg:hidden">
             <span className="min-w-0 flex-1 truncate rounded-full bg-blue-950 px-4 py-2 text-[11px] font-black uppercase tracking-widest text-white">
               {TOOLS_DATABASE.find((c) => c.slug === seciliKategori)?.category}
             </span>
@@ -600,14 +614,21 @@ export default function ToolsIcerik() {
           </div>
         ) : null}
 
-        {/* CIP SATIRI ARTIK YALNIZCA MASAUSTUNDE. Olculdu (canli, 375px):
-            cip metinleri akordeon basliklariyla BIREBIR ayni
-            ("🍏Klinik Nütrisyon (Beslenme)10" ile "🍏Klinik Nütrisyon
-            (Beslenme)10›"), yani mobilde ayni 18 kategori iki ayri
-            affordansla duruyordu. Masaustunde akordeonlarin hepsi ACIK,
-            yani orada kompakt bir dizin yok ve cipler tek suzgec — bu
-            yuzden orada kaliyor. */}
-        <div ref={cipKabiRef} className="hidden gap-2 md:flex md:flex-wrap">
+        {/* CIP SATIRI YALNIZCA `lg:` USTUNDE (bkz. CIP_ESIGI).
+            Cip metinleri akordeon basliklariyla BIREBIR ayni (18'i 18'i),
+            yani cip'in gorundugu her genislikte ayni 18 kategori IKI ayri
+            affordansla duruyor.
+
+            Esik once `md:` (768px) idi; olculdu ve orada bedel agirdi:
+            cip satiri 290px (5 satir) ve ilk arac karti y=889, yani
+            900px'lik bir ekranin TAMAMI kromdu. 1024px'te 205px/y=728,
+            1280px'te 162px/y=665.
+
+            Cip KALDIRILMADI cunku islevi benzersiz: SUZUYOR (11686px ->
+            2282px), akordeon basligi ise yalnizca KATLIYOR. Esigin ustunde
+            akordeonlarin hepsi acik, yani orada kompakt bir dizin yok ve
+            cip tek gezinme kisayolu. */}
+        <div ref={cipKabiRef} className="hidden gap-2 lg:flex lg:flex-wrap">
           <Link
             href={aramaBos ? "/tools" : `/tools?ara=${encodeURIComponent(searchTerm.trim())}`}
             aria-current={!seciliKategori ? "true" : undefined}
