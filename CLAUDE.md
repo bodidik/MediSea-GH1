@@ -1465,3 +1465,39 @@ Kalan üçü içerik/adres kararı: 1 ve 2 için ya dosya doğru adrese taşın�
 (yönlendirme borcu doğar) ya da içerik gerçekten o adresin vaat ettiği
 konuyla değiştirilir; 3 için hangi kopyanın kalacağı. Bunlara dokunulmadı.
 4. madde kullanıcı kararıyla silindi.
+
+---
+
+## `esik-etiket` denetimi gürültü üretiyordu: 15 bulgunun 15'i yanlış (9 Eylül 2026)
+
+Rapor denetimlerini sürerken çıktı. Denetim gerçek bir kusurdan doğmuştu
+(`{ esik: 2, uKg: 25, etiket: "INR < 4" }` — INR 3 olan hastaya %40 fazla
+PCC) ama eşik alanı listesine **`puan` ve `skor` da girmişti.**
+
+Bedeli: `{ label: "61–74 yaş", puan: 2 }` gibi ayrık şık kayıtlarında
+etiketteki 61/74 ile PUANDAKİ 2 karşılaştırılıyor ve elbette tutmuyordu.
+**15 bulgunun 15'i bu şekildendi** — yani denetim karar değil gürültü
+üretiyordu ve raporu okuyan kişi gerçek bir kusuru bu yığının içinde
+kaçırırdı.
+
+Puan bir SINIR değil, seçeneğin katkısı. Ayrık şık listesinde ölçüt zaten
+uygulanamaz: sınırı kullanıcı okuyup şıkkı kendisi seçiyor. Denetimin
+doğduğu kusur kodun sayıyı KARŞILAŞTIRDIĞI alanlarda yaşıyor.
+
+| ölçüt | önce | sonra |
+|---|---|---|
+| ölçülen sınır-iddialı etiket | 21 | **6** |
+| bulgu | **15** (15'i yanlış pozitif) | **0** |
+| negatif kontrol (gerçek `INR < 4` kusuru) | yakalıyor | **yakalıyor** |
+| pozitif kontrol (doğru `INR 4-6` kaydı) | işaretlemiyor | işaretlemiyor |
+| **yeni pozitif kontrol** (`{ label: "61–74 yaş", puan: 2 }`) | — | **işaretlemiyor** |
+| `--kok` ile boş ağaç | — | 0 dosya · 0 etiket (yönlendirilebilir) |
+| `yorum-korlugu` meta testi | 15/15 | **15/15** |
+
+**Sıfır burada körlük DEĞİL:** denetim hâlâ 6 sınır-iddialı etiket ÖLÇÜYOR
+ve tohumlanmış gerçek kusuru yakalıyor. Belgedeki "0 kusur ile 0 ölçüm aynı
+görünür" tuzağının ayırt edici kontrolü budur.
+
+Yanlış pozitif üreten bir denetim, hiç denetim olmamasından beter: raporu
+okumayı bırakırsın. Yeni pozitif kontrol tam da bu şeklin geri sızmasını
+nöbetliyor.

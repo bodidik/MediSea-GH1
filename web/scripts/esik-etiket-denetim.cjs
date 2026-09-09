@@ -60,9 +60,21 @@ const SINIR_ISARETI = /[<>≤≥]|\d\s*[-–]\s*\d/;
 /** İç içe olmayan tek nesne değişmezi. */
 const NESNE = /\{[^{}\n]*\}/g;
 
-/** Sayısal eşik gibi duran alan: `esik: 4`, `sinir: 60`, `min: 2` … */
+/**
+ * Sayısal EŞİK gibi duran alan: `esik: 4`, `sinir: 60`, `min: 2` …
+ *
+ * `puan` ve `skor` BİLEREK LİSTEDE DEĞİL — ölçüldü, tek kaynakları buydu:
+ * `{ label: "61–74 yaş", puan: 2 }` gibi kayıtlarda etiketteki 61/74 ile
+ * puandaki 2 karşılaştırılıyor ve elbette tutmuyordu. **15 bulgunun 15'i
+ * bu şekildendi**, yani denetim karar değil GÜRÜLTÜ üretiyordu.
+ *
+ * Puan bir SINIR değil, seçeneğin katkısı: ayrık şık listelerinde ölçüt
+ * zaten uygulanamaz — sınırı kullanıcı okuyup şıkkı kendisi seçiyor.
+ * Denetimin doğduğu kusur (`{ esik: 2, etiket: "INR < 4" }`) kodun sayıyı
+ * KARŞILAŞTIRDIĞI alanlarda yaşıyor; ölçüt oraya bakmalı.
+ */
 const SAYISAL_ALAN =
-  /\b(esik|eşik|sinir|sınır|min|max|alt|ust|üst|deger|değer|puan|skor|thr|limit|kesim)\s*:\s*(-?\d+(?:\.\d+)?)/gi;
+  /\b(esik|eşik|sinir|sınır|min|max|alt|ust|üst|deger|değer|thr|limit|kesim)\s*:\s*(-?\d+(?:\.\d+)?)/gi;
 
 /** Etiket gibi duran alan: `etiket: "…"`, `ad: "…"`, `label: "…"` … */
 const ETIKET_ALAN =
@@ -134,6 +146,14 @@ if (process.argv.includes('--negatif')) {
     'const BASAMAK = [',
     '  { esik: 2, uKg: 25, etiket: "INR < 4" },',
     '  { esik: 6, uKg: 35, etiket: "INR 4-6" },',
+    '];',
+    /* İKİNCİ POZİTİF KONTROL — ayrık şık listesi. Buradaki sayı bir EŞİK
+       değil PUAN; ölçüt bunu işaretlerse `puan` alan listesine geri sızmış
+       demektir. Bir dönem sızmıştı ve gerçek ağaçtaki 15 yanlış pozitifin
+       TAMAMINI o üretiyordu. */
+    'const YAS = [',
+    '  { label: "≤ 40 yaş", puan: 0 },',
+    '  { label: "61–74 yaş", puan: 2 },',
     '];',
   ];
   fs.writeFileSync(gecici, satirlar.join('\n') + '\n', 'utf8');
