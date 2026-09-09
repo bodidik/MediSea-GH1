@@ -1501,3 +1501,37 @@ görünür" tuzağının ayırt edici kontrolü budur.
 Yanlış pozitif üreten bir denetim, hiç denetim olmamasından beter: raporu
 okumayı bırakırsın. Yeni pozitif kontrol tam da bu şeklin geri sızmasını
 nöbetliyor.
+
+---
+
+## Etiket dengesi: 4 bozuk bölümün YALNIZCA BİRİNİN görünür bedeli var (9 Eylül 2026)
+
+`konu-denetim` iki bozuk bölüm bildiriyor ve kendi çıktısında *"görünür
+bedeli AYRICA ölçülmeli"* diyor. O adım atıldı.
+
+**Kapsam denetimin bildirdiğinden geniş:** açık konu + premium'un tamamı
+tarandı (**611 dosya · 2462 HTML alanı**) ve **4** dengesizlik bulundu —
+`konu-denetim` yalnızca satır içi vurgu etiketlerine baktığı için `li` ve
+`p` dengesizliklerini görmüyor. Premium tarafı temiz.
+
+Ölçütü yazarken kendi tuzağıma düştüm: kendi kendini kapatan etiket sayacı
+`<br/>`yi `<b>` sanıyordu ve *"b açılış **-1**"* gibi eksili sayılar
+üretiyordu (65 sahte bulgu). Negatif sayı, ölçütün bozuk olduğunun kendi
+imzasıydı.
+
+| dosya · bölüm | dengesizlik | GÖRÜNÜR BEDEL (canlıda ölçüldü) |
+|---|---|---|
+| `endokrinoloji/gebelik-transient-tirotoksikoz` [0] | çift `<li>` (3↔2) | **VAR** — boş ama GÖRÜNÜR madde imi, 24.75px, üç maddenin 2.'si |
+| `hematoloji/miyeloproliferatif` [0] | `strong` 1↔0 | yok — tarayıcı `</p>`de kapatıyor, vurgu tam olarak istenen metinde |
+| `hematoloji/esansiyel-trombositoz` [4] | `p` 2↔1 | yok — `<ul>`, HTML5 kuralıyla `<p>`yi zaten kapatıyor (14 paragraf, 0 boş) |
+| `endokrinoloji/men1-gastrinoma-zes` [3] | fazladan `</em>` | yok — başıboş kapanış yok sayılıyor, italik tam 13 karakter |
+
+**Düzeltilen tek yer** çift `<li>` (yapısal, tıbbi metne dokunulmadı):
+madde 5 → 4, boş im **gitti**, kalan dört metnin uzunlukları birebir aynı
+(352 · 531 · 156 · 445) — yani içerik kaybı yok. Kalan üçü ölçüldü,
+bedeli olmadığı için **bilerek bırakıldı**; düzeltmek kozmetik olurdu ve
+içerik dosyasına gereksiz dokunuş demekti.
+
+Ders: "etiket dengesi bozuk" bir kusur DEĞİL, kusur ADAYIDIR. Tarayıcının
+kurtarma kuralları çoğunu görünmez kılıyor; hangisinin gerçek olduğunu
+ancak sayfayı çizdirip DOM'u okumak söylüyor.
