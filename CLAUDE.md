@@ -808,8 +808,8 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **kilo makullük sınırı** | 18 araç iki kovada (1–400 ↔ 20–300) — çocuk kapsamı kararı |
 | **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
 | **premium `istatistikler` alanı** | ölü ve 5 dosyada çoktan sapmış |
-| **`seeds.ts`** | committe bozuk (bütün iki nokta, eğik ve tırnaklar silinmiş); onarmak veritabanına YAZAN betiği diriltmek olur |
-| **`server/`** | tsconfig yok, eslint yalnız `.js` — hiçbir kapı görmüyor |
+| **`seeds.ts`** | committe bozuk (bütün iki nokta, eğik ve tırnaklar silinmiş); üstelik olmayan bir ağaca (`../src/models/…`) bakıyor. Onarmak veritabanına YAZAN betiği diriltmek olur — aşağıdaki ölü `.ts` maddesiyle birlikte karara bağlanmalı |
+| **`server/` kapı kapsamı** | **SATIR YANLIŞTI, ölçüldü** (9 Eyl): CI'ın Server işi `npm run lint` ve `npm test` çalıştırıyor ve ikisi de geçiyor (eslint temiz · **85 test**). Görmediği tek şey **4 `.ts` dosyası** — dördü de ÖLÜ, aşağıya bak |
 | **güvenlik başlıkları** | CSP/XFO/nosniff yok; XFO eklemek deponun kendi iframe ölçüm yöntemini kırar |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
 | **`/tools` hub tekrarı** | 18 kategori çipi + 18 akordeon başlığı (mobilde çipler kaldırıldı, masaüstünde duruyor) |
@@ -1184,3 +1184,29 @@ düşüyor ve kural silmiyor. Eski davranışı görmek için **konteynerin
 basıyordu; 17 adımda başlık boş olduğu için "Adım 1 / 5 — " diye sarkan bir
 ayraç görünüyordu. Koşullu yapıldı (ölçüldü: `men1-sendromu-vaka-1` artık
 "Adım 1 / 5").
+
+---
+
+## `server/`in dört `.ts` dosyası: kapı görmüyor çünkü hepsi ÖLÜ (9 Eylül 2026)
+
+Açık madde *"tsconfig yok, eslint yalnız `.js` — hiçbir kapı görmüyor"*
+diyordu. **Yarısı yanlıştı.** CI'ın Server işi `npm run lint` ve `npm test`
+sürüyor; yerelde ölçüldü: eslint temiz, **85 test geçiyor**. Kapının
+görmediği yüzey 129 kaynak dosyanın **4'ü** — ve dördü de erişilemez:
+
+| dosya | satır | durum |
+|---|---|---|
+| `routes/index.ts` | 3 | `router` ne tanımlı ne içe aktarılmış, `export` yok — modül değil, PARÇA. Hiçbir yerden içe aktarılmıyor |
+| `routes/userstats.routes.ts` | 6 | yalnızca yukarıdaki parçadan çağrılıyor |
+| `controllers/userstats.controller.ts` | 12 | uzantısız `../models/UserStat` içe aktarıyor — ESM'de zaten çözülmez |
+| `scripts/seeds.ts` | 26 | committe bozuk; ayrıca `../src/models/…` istiyor, **`server/src` diye bir dizin yok** |
+
+`server.js` 15 rota bağlıyor, `/userstats` bunların arasında **değil**.
+Yani `routes/index.ts` çalışan bir rotayı İLAN ediyor ama bağlamıyor —
+belgedeki "ilan mı gerçek mi" sınıfı. Node `type: "module"` altında `.ts`
+zaten yüklenemiyor; dosyalar hiçbir koşulda çalışmıyor.
+
+**Bilerek DEĞİŞTİRİLMEDİ.** İki yol da içerik/ürün kararı: dosyaları silmek
+(kapı boşluğu kendiliğinden kapanır) ya da `/userstats` ucunu gerçekten
+kurmak. Kapıyı `.ts`ye açmak tek başına çare değil — bugün gateleyeceği
+tek şey ölü kod, üstelik yeni bir ayrıştırıcı bağımlılığı gerektirir.
