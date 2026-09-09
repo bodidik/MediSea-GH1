@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Antikoagülan geri döndürme — ajanına göre doz, tavan ve zaman kuralı.
@@ -145,7 +145,7 @@ export default function AntikoagulanGeriDondurmeSayfasi() {
   const heparinNum = parseLocaleNumber(heparinU);
   const enoksNum = parseLocaleNumber(enoksaparinMg);
 
-  const kiloTamam = sayiGirildiMi(kilo) && kiloNum >= 20 && kiloNum <= 300;
+  const kiloTamam = kiloMakulMu(kilo, "yetiskin");
   const inrTamam = sayiGirildiMi(inr) && inrNum >= 1 && inrNum <= 20;
   const heparinTamam = sayiGirildiMi(heparinU) && heparinNum > 0 && heparinNum <= 100000;
   const enoksTamam = sayiGirildiMi(enoksaparinMg) && enoksNum > 0 && enoksNum <= 500;

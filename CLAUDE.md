@@ -805,7 +805,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
 | **`gout-acr` atak ekseni** | özellik sayısı ↔ atak sayısı; tavan 24 ↔ 23 |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
-| **kilo makullük sınırı** | 18 araç iki kovada (1–400 ↔ 20–300) — çocuk kapsamı kararı |
+| **kilo makullük sınırı** | **KOPYA KALDIRILDI, KARAR DURUYOR** (9 Eyl) — 18 değil **15** araç, iki değil **ÜÇ** kova. Hepsi tek kaynağa (`KILO_PROFIL`) bağlandı, davranış birebir aynı; hangi profilin doğru olduğu hâlâ senin kararın. Aşağıya bak |
 | **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
@@ -1335,3 +1335,41 @@ yüklenmiyor):
 Not: bu ölçüm dev sunucusundadır. `headers()` yapılandırması üretimde de
 aynı yoldan uygulanır ama **canlıda doğrulanmadı** — Vercel'in kendi
 eklediği başlıklarla birleşimi ayrı bir ölçümdür.
+
+---
+
+## Kilo sınırı: üç kova tek kaynağa bağlandı, karar duruyor (9 Eylül 2026)
+
+Belge "18 araç iki kovada" diyordu. **Sayıldı** — 15 araç, ÜÇ kova:
+
+| kova | araç |
+|---|---|
+| `1–400` (8) | bikarbonat-infuzyon · bsa · dka-infuzyon · fomepizol · heparin-nomogram · nac-infuzyon · nutrition-needs · vazoaktif-infuzyon |
+| `20–300` (6) | antikoagulan-geri-dondurme · fosfat-replasman · kalsiyum-infuzyon · sedasyon-infuzyon · status-epileptikus · tromboliz-doz |
+| `1–300` (1) | infusion |
+
+Yani aynı hasta bir hesaplayıcıda kabul edilip komşusunda reddediliyordu —
+"iki gerçeklik" sınıfının üç nüshalı hâli.
+
+`KILO_PROFIL` + `kiloMakulMu` eklendi; 15 aracın 15'i artık profili ADIYLA
+seçiyor (`yetiskin` · `cocukDahil` · `cocukDahilDarUst`). **DAVRANIŞ
+DEĞİŞMEDİ** — amaç kopyayı yok etmekti; hangi profilin doğru olduğu ürün
+kararı ve açık madde olarak duruyor. Karar verildiğinde değişecek yer
+**tek dosya**, 15 değil.
+
+Yan düzeltme: eski kapıların çoğu `trim() !== ""` kullanıyordu, yani çöp
+girdiyi geçiriyor ve yalnızca `parseLocaleNumber`ın 0 döndürmesi sayesinde
+aralığa takılıyordu — koruma TESADÜFİYDİ. Tek kaynak `sayiGirildiMi`
+kullanıyor.
+
+Sınır ölçümü canlıda, üç profilin üçü de (davranışın birebir aynı kaldığının
+kanıtı):
+
+| profil / araç | ölçüm |
+|---|---|
+| `cocukDahil` / nac-infuzyon | 0.9 ✗ · **1 ✓** · **400 ✓** · 401 ✗ · "abc" ✗ · boş ✗ |
+| `yetiskin` / tromboliz-doz | 19 ✗ · **20 ✓** · **300 ✓** · 301 ✗ · "abc" ✗ · boş ✗ |
+| `cocukDahilDarUst` / infusion | 0.9 ✗ · **1 ✓** (300 mL/sa) · **300 ✓** (90000) · 301 ✗ · "abc" ✗ |
+
+Ölü değişken taraması da yapıldı: geçişten sonra kullanılmayan
+`kiloNum`/`weightNum` **0**.

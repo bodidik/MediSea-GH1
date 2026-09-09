@@ -146,6 +146,42 @@ export function binlikBelirsizMi(ham: string | number | undefined | null): boole
 }
 
 /**
+ * 0d. KİLO MAKULLÜK ARALIĞI — TEK KAYNAK.
+ *
+ * Sınırlar bir dönem 15 araçta ELLE yazılıydı ve ÜÇ kovaya ayrışmıştı
+ * (ölçüldü): `1–400` sekiz araçta, `20–300` altı araçta, `1–300` birinde.
+ * Aynı hasta bir hesaplayıcıda kabul edilip komşusunda reddediliyordu —
+ * belgedeki "iki gerçeklik" sınıfı, üç nüshalı hâli.
+ *
+ * BU DEĞİŞİKLİK DAVRANIŞI DEĞİŞTİRMİYOR: her araç bugün uyguladığı profili
+ * ADIYLA seçiyor. Amaç kopyayı yok etmek; hangi profilin doğru olduğu
+ * (yani çocuk kilolarının dahiliye hesaplayıcılarına girip girmeyeceği)
+ * ürün kararı ve AÇIK MADDE olarak duruyor. Karar verildiğinde değişecek
+ * yer burası — 15 dosya değil.
+ *
+ * `sayiGirildiMi` kullanılıyor, `trim() !== ""` değil: ikincisi çöp girdiyi
+ * geçiriyor ve yalnızca `parseLocaleNumber`ın 0 döndürmesi sayesinde
+ * aralığa takılıyordu — yani koruma tesadüfiydi.
+ */
+export const KILO_PROFIL = {
+  /** Yetişkin dahiliye: 20 kg altı ve 300 kg üstü değerlendirilmez. */
+  yetiskin: { alt: 20, ust: 300 },
+  /** Çocuk kilolarını da kabul eden geniş aralık. */
+  cocukDahil: { alt: 1, ust: 400 },
+  /** Geniş alt sınır, dar üst sınır — tek araçta böyleydi, korundu. */
+  cocukDahilDarUst: { alt: 1, ust: 300 },
+} as const;
+
+export type KiloProfil = keyof typeof KILO_PROFIL;
+
+export function kiloMakulMu(ham: string, profil: KiloProfil): boolean {
+  if (!sayiGirildiMi(ham)) return false;
+  const { alt, ust } = KILO_PROFIL[profil];
+  const n = parseLocaleNumber(ham);
+  return n >= alt && n <= ust;
+}
+
+/**
  * 1. eGFR (CKD-EPI 2021) Hesaplayıcı - Race-Free Standartı
  */
 export function egfrCkdEpi2021(scr: number, age: number, sex: Sex): number {

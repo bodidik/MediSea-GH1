@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Sodyum bikarbonat — açık hesabı ve infüzyon kurulumu.
@@ -84,7 +84,7 @@ export default function BikarbonatSayfasi() {
   const hedefNum = parseLocaleNumber(hedef);
 
   const makul =
-    kilo.trim() !== "" && kiloNum >= 1 && kiloNum <= 400 &&
+    kiloMakulMu(kilo, "cocukDahil") &&
     olculen.trim() !== "" && olculenNum >= 1 && olculenNum <= 60 &&
     hedef.trim() !== "" && hedefNum >= 1 && hedefNum <= 60;
 

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import ToolShare from "../components/ToolShare";
 import ToolTopNav from "../components/ToolTopNav";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /** * MediSea Donanması - Nütrisyon Üssü
  * Enerji ve Protein Gereksinimi Hesaplayıcısı (ESPEN Bazlı)
@@ -44,7 +44,7 @@ export default function NutritionNeedsPage() {
    *
    * Sınır klinik eşik değil makullük sınırı.
    */
-  const makul = weight.trim() !== "" && weightNum >= 1 && weightNum <= 400;
+  const makul = kiloMakulMu(weight, "cocukDahil");
 
   const energyResult = weightNum * stressFactor;
   const proteinResult = weightNum * proteinFactor;

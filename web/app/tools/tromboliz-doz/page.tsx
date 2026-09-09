@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Alteplaz (rt-PA) doz hesaplayıcı — endikasyona göre.
@@ -144,7 +144,7 @@ export default function TrombolizDozSayfasi() {
 
   const r = REJIMLER.find((x) => x.slug === rejimSlug)!;
   const kiloNum = parseLocaleNumber(kilo);
-  const kiloMakul = kilo.trim() !== "" && kiloNum >= 20 && kiloNum <= 300;
+  const kiloMakul = kiloMakulMu(kilo, "yetiskin");
   const hazir = r.kiloyaGore ? kiloMakul : true;
 
   const hamToplam = r.kiloyaGore ? (hazir ? kiloNum * r.mgKg! : 0) : r.sabitMg!;

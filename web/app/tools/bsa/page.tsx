@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
-import { bsaMosteller, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { bsaMosteller, parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /** * Vücut Yüzey Alanı (BSA) Gündüz Modu (Sakin Deniz)
  * Formül (Mosteller): BSA (m²) = sqrt((boy_cm * kilo_kg) / 3600)
@@ -24,7 +24,7 @@ export default function BsaPage() {
    * "kemoterapi dozlama" için tanıtırken. Sınırlar klinik değil
    * makullük sınırı.
    */
-  const makul = heightNum >= 30 && heightNum <= 260 && weightNum >= 1 && weightNum <= 400;
+  const makul = heightNum >= 30 && heightNum <= 260 && kiloMakulMu(weight, "cocukDahil");
 
   const shareParams = { h: heightNum, w: weightNum };
 

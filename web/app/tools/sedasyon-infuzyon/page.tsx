@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Yoğun bakım sedasyon ve analjezi infüzyonları — doz ile pompa hızı çevrimi.
@@ -211,7 +211,7 @@ export default function SedasyonInfuzyonSayfasi() {
   const torbaMgNum = parseLocaleNumber(torbaMg);
   const torbaMlNum = parseLocaleNumber(torbaMl);
 
-  const kiloTamam = !ilac.kiloyaGore || (kilo.trim() !== "" && kiloNum >= 20 && kiloNum <= 300);
+  const kiloTamam = !ilac.kiloyaGore || (kiloMakulMu(kilo, "yetiskin"));
   const makul =
     kiloTamam &&
     doz.trim() !== "" && dozNum > 0 && dozNum <= 100 &&

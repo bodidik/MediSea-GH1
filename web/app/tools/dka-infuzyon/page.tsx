@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Diyabetik ketoasidoz — sıvı, insülin ve potasyum kurulumu.
@@ -80,7 +80,7 @@ export default function DkaInfuzyonSayfasi() {
   const kiloNum = parseLocaleNumber(kilo);
   const kNum = parseLocaleNumber(potasyum);
 
-  const kiloMakul = kilo.trim() !== "" && kiloNum >= 1 && kiloNum <= 400;
+  const kiloMakul = kiloMakulMu(kilo, "cocukDahil");
   const kMakul = potasyum.trim() !== "" && kNum >= 1 && kNum <= 10;
 
   /** Potasyum dalı — sıra kararı burada veriliyor. */

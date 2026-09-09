@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Kiloya göre IV fraksiyone olmayan heparin — yükleme ve idame.
@@ -97,7 +97,7 @@ export default function HeparinNomogramSayfasi() {
   const uNum = parseLocaleNumber(torbaU);
   const mlNum = parseLocaleNumber(torbaMl);
 
-  const kiloMakul = kilo.trim() !== "" && kiloNum >= 1 && kiloNum <= 400;
+  const kiloMakul = kiloMakulMu(kilo, "cocukDahil");
   const torbaMakul =
     torbaU.trim() !== "" && uNum > 0 && uNum <= 1_000_000 &&
     torbaMl.trim() !== "" && mlNum > 0 && mlNum <= 5000;

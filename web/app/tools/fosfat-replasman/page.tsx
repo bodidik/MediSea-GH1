@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * IV fosfat replasmanı — doz, zorunlu ko-iyon yükü, süre ve pompa hızı.
@@ -206,9 +206,7 @@ export default function FosfatReplasmanSayfasi() {
   const mmolKgNum = parseLocaleNumber(mmolKg);
 
   const makul =
-    kilo.trim() !== "" &&
-    kiloNum >= 20 &&
-    kiloNum <= 300 &&
+    kiloMakulMu(kilo, "yetiskin") &&
     mmolKg.trim() !== "" &&
     mmolKgNum > 0 &&
     mmolKgNum <= 2;

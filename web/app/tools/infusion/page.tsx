@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /** * İnfüzyon Hesapları Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -47,7 +47,7 @@ export default function InfusionPage() {
   const concentrationMgMlNum = parseLocaleNumber(concentrationMgMl);
 
   const dozGirildi = doseMgKgMin.trim() !== "" && doseMgKgMinNum > 0 && doseMgKgMinNum <= 1000;
-  const kiloGecerli = weightKg.trim() !== "" && weightKgNum >= 1 && weightKgNum <= 300;
+  const kiloGecerli = kiloMakulMu(weightKg, "cocukDahilDarUst");
   const derisimGecerli = concentrationMgMl.trim() !== "" && concentrationMgMlNum > 0 && concentrationMgMlNum <= 1000;
   const dozHazir = dozGirildi && kiloGecerli && derisimGecerli;
   const mlPerHrFromDose = React.useMemo(() => {

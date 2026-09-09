@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Fomepizol dozlama — metanol ve etilen glikol zehirlenmesi.
@@ -95,7 +95,7 @@ export default function FomepizolSayfasi() {
   const [diyaliz, setDiyaliz] = React.useState(false);
 
   const kiloNum = parseLocaleNumber(kilo);
-  const makul = kilo.trim() !== "" && kiloNum >= 1 && kiloNum <= 400;
+  const makul = kiloMakulMu(kilo, "cocukDahil");
 
   const doz = (b: Basamak) => ({
     ...b,

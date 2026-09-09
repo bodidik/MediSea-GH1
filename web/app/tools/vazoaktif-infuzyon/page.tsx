@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Vazoaktif ve antihipertansif infüzyonlar — doz ↔ mL/saat.
@@ -151,7 +151,7 @@ export default function VazoaktifInfuzyonSayfasi() {
   const mlNum = parseLocaleNumber(torbaMl);
 
   const kiloGerekli = ilac.kiloyaGore;
-  const kiloMakul = !kiloGerekli || (kilo.trim() !== "" && kiloNum >= 1 && kiloNum <= 400);
+  const kiloMakul = !kiloGerekli || (kiloMakulMu(kilo, "cocukDahil"));
   const dozMakul = doz.trim() !== "" && dozNum > 0 && dozNum <= 10000;
   const torbaMakul =
     torbaMg.trim() !== "" && mgNum > 0 && mgNum <= 100000 &&

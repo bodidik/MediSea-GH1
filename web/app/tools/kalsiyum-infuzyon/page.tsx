@@ -4,7 +4,7 @@ import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
 import BinlikUyari from "@/app/tools/components/BinlikUyari";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * IV kalsiyum — tuz seçimi, doz, süre ve pompa hızı.
@@ -237,7 +237,7 @@ export default function KalsiyumInfuzyonSayfasi() {
 
   const infMakul =
     infuzyonKipi &&
-    kilo.trim() !== "" && kiloNum >= 20 && kiloNum <= 300 &&
+    kiloMakulMu(kilo, "yetiskin") &&
     hiz.trim() !== "" && hizNum > 0 && hizNum <= 5 &&
     torbaG.trim() !== "" && torbaGNum > 0 && torbaGNum <= 50 &&
     torbaMl.trim() !== "" && torbaMlNum >= 50 && torbaMlNum <= 2000;

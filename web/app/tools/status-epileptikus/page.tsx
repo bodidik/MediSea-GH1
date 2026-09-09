@@ -3,7 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/calc-utils";
 
 /**
  * Status epileptikus — yükleme dozları ve HIZ SINIRLARI.
@@ -240,7 +240,7 @@ export default function StatusEpileptikusSayfasi() {
   const [lakosamidDoz, setLakosamidDoz] = React.useState("400");
 
   const kiloNum = parseLocaleNumber(kilo);
-  const kiloMakul = kilo.trim() !== "" && kiloNum >= 20 && kiloNum <= 300;
+  const kiloMakul = kiloMakulMu(kilo, "yetiskin");
   const lakoNum = parseLocaleNumber(lakosamidDoz);
   const lakoMakul = lakosamidDoz.trim() !== "" && lakoNum >= 50 && lakoNum <= 400;
 
