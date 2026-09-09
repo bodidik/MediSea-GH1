@@ -798,7 +798,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 
 | madde | durum |
 |---|---|
-| **Türkçe binlik ayırıcı** — `5.000 Ü` → 500 kat düşük protamin dozu | 3 vaka belirsiz DEĞİL (düzeltilebilir), 4.'sü (`1.200`) gerçek belirsizlik; `parseLocaleNumber` 42 aracın ortak sözleşmesi |
+| **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
 | **`asdas` eksi sabit** | ESR varyantı eksi skor üretiyor, iki varyantın bandı 3 vakada ayrışıyor; sabitin kaynağı depoda yazılı değil |
 | **`essdai` kutanöz 3. düzey yok** | tavan 120 ↔ yayımlanmış 123; klinik tanım yazmak içerik kararı |
 | **`gh-test` BMI eşikleri** | dizi "yaş" diye adlandırılmış, değerler BMI'ye ait; sabit 3 μg/L kullanılıyor |
@@ -1249,3 +1249,46 @@ düzenlemek o dalla çakışırdı. Alan okunmadığı için veride kalması zar
 `.next/types` artığı yine ısırdı: geçici rota silindikten sonra `tsc`
 olmayan modülü arıyor — rotayla birlikte `.next/types/...` karşılığını da
 sil.
+
+---
+
+## Belirsiz binlik artık sessiz değil (9 Eylül 2026)
+
+Ayrıştırıcının durumu ölçüldü (uygulamanın kendi `parseLocaleNumber`ı
+sürüldü, kopyası yazılmadı):
+
+| girdi | okunan | not |
+|---|---|---|
+| `5.000` · `10.000` | 5000 · 10000 | B2 dalı — belirsizlik yok |
+| `3 000` · `1 200` | 3000 · 1200 | B dalı — boşluk yalnızca grup olabilir |
+| `1.200` · `2.500` | **1,2 · 2,5** | GERÇEK belirsizlik, bilerek tahmin edilmiyor |
+
+Yani "düzeltilebilir üç vaka" çoktan kapanmış, belge bayattı. Kalan kusur
+tahminde değil **sessizlikte**: bin kat sapabilen bir okuma kullanıcıya
+söylenmeden doz hesabına giriyordu.
+
+`binlikBelirsizMi` + `BinlikUyari` eklendi. Ayrıştırıcının davranışı
+DEĞİŞMEDİ — 42 aracın sözleşmesi aynen duruyor; uyarı yalnızca okunan
+değeri söylüyor ve belirsizliği gidermenin yolunu veriyor
+(`1200` ya da `1 200`; ondalık için `1,2`).
+
+**Kapsam ölçütü:** meşru değeri 999'u AŞABİLEN alanlar — makullük kapısı
+1000+ kabul eden **9 araç** tarandı ve bağlandı. 0–10 NRS gibi alanlarda
+`1.200` zaten makullük kapısına takılıyor, uyarı gürültü olurdu.
+
+Canlı ölçüm (`antikoagulan-geri-dondurme`, heparin alanı):
+
+| girdi | uyarı |
+|---|---|
+| `1.200` · `2.500` | **çıkıyor**, okunan değeri doğru yazıyor (1,2 · 2,5) |
+| boş · `1200` · `1 200` · `5.000` | **çıkmıyor** (dört negatif kontrol) |
+
+Dört ayrı yerleşim şekli canlıda ayrı ayrı sürüldü — `antikoagulan`
+(koyu sonuç kartı), `heparin-nomogram`, `infusion` (iki hesaplayıcılı
+sayfa, doğru olanına bağlı), `khorana` (`SonucDuyuru` kardeşi).
+**`khorana`da duyuru DÜŞÜK → ORTA olarak çalışmayı sürdürüyor**, yani
+`SonucDuyuru`nun kardeş sözleşmesi kırılmadı (uyarı ondan ÖNCE duruyor).
+
+Toplu yerleştirme kapılarla doğrulanmaz — bağımsız yerleşim denetimi
+sürüldü: 9 aracın 9'unda tek kullanım, tek import, yorumda değil, ve
+`ham:` verilen 15 alanın 15'i o dosyada tanımlı `useState`. Kusur 0.

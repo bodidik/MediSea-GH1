@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
@@ -118,6 +119,8 @@ export default function KhoranaPage() {
             <input type="checkbox" className="sr-only" checked={esaUse} onChange={() => setEsaUse(v => !v)} />
           </label>
         </div>
+
+        <BinlikUyari girdiler={[{ ad: "Trombosit", ham: platelet }]} />
 
         <SonucDuyuru metin={r ? r.label : null} />
 

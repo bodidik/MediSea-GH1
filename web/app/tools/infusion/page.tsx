@@ -3,6 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /** * İnfüzyon Hesapları Gündüz Modu (Sakin Deniz) Versiyonu
@@ -105,6 +106,8 @@ export default function InfusionPage() {
                 <span className="text-[9px] text-blue-900/80 font-bold uppercase tracking-tighter">Standart Makro: 20 · Mikro: 60</span>
               </label>
             </div>
+
+            <BinlikUyari girdiler={[{ ad: "İnfüzyon hızı", ham: rateMlHr }]} />
 
             <div className="bg-blue-900 rounded-3xl p-6 flex flex-col items-center justify-center shadow-xl border-b-4 border-amber-400">
                <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-2">HESAPLANAN AKIŞ</span>

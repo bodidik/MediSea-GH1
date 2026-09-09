@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
@@ -273,6 +274,8 @@ export default function OgttPage() {
             </div>
           )}
         </div>
+
+        <BinlikUyari girdiler={[{ ad: "Açlık", ham: fasting }, { ad: "1. saat", ham: oneH }, { ad: "2. saat", ham: twoH }, { ad: "3. saat", ham: threeH }]} />
 
         <SonucDuyuru metin={sonucMetni} />
         {ctx === "dm" && fGecerli && <DmResult fasting={f} twoHour={h2Gecerli ? h2 : null} />}

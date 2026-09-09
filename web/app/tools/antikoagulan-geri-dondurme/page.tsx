@@ -3,6 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /**
@@ -267,6 +268,8 @@ export default function AntikoagulanGeriDondurmeSayfasi() {
             </div>
           )}
         </div>
+
+        <BinlikUyari girdiler={[{ ad: "Heparin dozu", ham: heparinU }]} />
 
         <div className="bg-blue-900 rounded-[2rem] p-6 shadow-xl space-y-4">
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.2em] block">

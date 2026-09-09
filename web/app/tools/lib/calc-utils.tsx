@@ -124,6 +124,28 @@ export function sayiGirildiMi(ham: string | number | undefined | null): boolean 
 }
 
 /**
+ * 0c. BELİRSİZ BİNLİK — "1.200" 1,2 mi 1200 mü?
+ *
+ * `sayiNormalize` bu girdiyi BİLEREK 1.2 okuyor: son grubu `000` olmayan
+ * nokta ayrımı gerçek belirsizlik ve sessiz tahmin yeni bir yanlış sayı
+ * sınıfı açardı (yukarıdaki B2 dalının gerekçesi). Ama "tahmin etme" kararı
+ * "sus" demek DEĞİL: bin katı sapabilen bir okuma, kullanıcıya söylenmeden
+ * doz hesabına girmemeli.
+ *
+ * Bu yardımcı yalnızca DURUMU bildiriyor, davranışı değiştirmiyor —
+ * `parseLocaleNumber`ın 42 araçlık sözleşmesi aynen duruyor.
+ *
+ * `x.000` KAPSAM DIŞI: orada belirsizlik yok, ayrıştırıcı zaten binlik
+ * okuyor. Boşluklu grup (`1 200`) da kapsam dışı, aynı sebeple.
+ */
+export function binlikBelirsizMi(ham: string | number | undefined | null): boolean {
+  if (typeof ham !== "string") return false;
+  const t = ham.trim();
+  if (!/^[+-]?\d{1,3}(?:\.\d{3})+$/.test(t)) return false;
+  return !t.endsWith(".000");
+}
+
+/**
  * 1. eGFR (CKD-EPI 2021) Hesaplayıcı - Race-Free Standartı
  */
 export function egfrCkdEpi2021(scr: number, age: number, sex: Sex): number {

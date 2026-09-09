@@ -3,6 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /**
@@ -260,6 +261,8 @@ export default function VazoaktifInfuzyonSayfasi() {
         </div>
 
         {/* SONUÇ */}
+        <BinlikUyari girdiler={[{ ad: "Doz", ham: doz }, { ad: "Torba ilaç miktarı", ham: torbaMg }, { ad: "Torba hacmi", ham: torbaMl }]} />
+
         <div className="bg-blue-900 rounded-[2rem] p-6 shadow-xl">
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.2em] block mb-3">
             Pompa hızı — {ilac.ad}

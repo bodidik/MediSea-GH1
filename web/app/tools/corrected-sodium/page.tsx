@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { correctedSodium, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
@@ -70,6 +71,8 @@ export default function CorrectedSodiumPage() {
         </div>
 
         {/* SONUÇ PANELİ */}
+        <BinlikUyari girdiler={[{ ad: "Glukoz", ham: glucose }]} />
+
         <SonucDuyuru metin={karar} />
 
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">

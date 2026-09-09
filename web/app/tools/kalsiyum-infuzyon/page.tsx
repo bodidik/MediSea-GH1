@@ -3,6 +3,7 @@
 import React from "react";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import ToolShare from "@/app/tools/components/ToolShare";
+import BinlikUyari from "@/app/tools/components/BinlikUyari";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 /**
@@ -451,6 +452,8 @@ export default function KalsiyumInfuzyonSayfasi() {
         </div>
 
         {/* ── Sonuç ─────────────────────────────────────── */}
+        <BinlikUyari girdiler={[{ ad: "Torba hacmi", ham: torbaMl }]} />
+
         <div className="bg-blue-900 rounded-[2rem] p-6 shadow-xl space-y-4">
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.2em] block">
             {kip.ad} · {t.ad}
