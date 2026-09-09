@@ -1535,3 +1535,29 @@ içerik dosyasına gereksiz dokunuş demekti.
 Ders: "etiket dengesi bozuk" bir kusur DEĞİL, kusur ADAYIDIR. Tarayıcının
 kurtarma kuralları çoğunu görünmez kılıyor; hangisinin gerçek olduğunu
 ancak sayfayı çizdirip DOM'u okumak söylüyor.
+
+---
+
+## Bugün eklediğim `BinlikUyari` yüzeyi sınandı (9 Eylül 2026)
+
+"Yeni yüzey" kuralı kendi işime uygulandı — 9 araca bağlanan uyarı kutusu
+ölçüldü (`antikoagulan-geri-dondurme`, `1.200` girdisiyle):
+
+| ölçüt | 1280px | 375px |
+|---|---|---|
+| kontrast | başlık **6.84** · gövde **8.75** | — |
+| yazı boyu | 11 / 12 / 13px (araç yüzeyinin kendi ölçeği) | aynı |
+| kutu | 768px | 343px, x=16 — belge taşması **yok**, kendi taşması **yok** |
+| başlık hiyerarşisi | kutunun içinde başlık **0**; sayfada h1 **1**, h2 **2** (değişmedi) | aynı |
+| canlı bölge çakışması | tek `role="alert"`; `khorana`da `SonucDuyuru` DÜŞÜK → ORTA çalışmayı sürdürüyor | — |
+
+**`innerWidth: 0` yine ısırdı ve guard yakaladı.** Betiğin başındaki
+`if (!innerWidth) throw` ilk denemede attı; panel gizliyken geometri
+ölçülemiyor. Çare `resize_window` ile açık bir görünüm boyutu vermek —
+ölçüm bitince `preset: "desktop"` ile geri alınır. Guard olmasaydı bütün
+genişlikler 0 çıkacak ve "kutu taşmıyor" diye YANLIŞ bir temiz rapor
+yazacaktım.
+
+14px tabanı burada UYGULANMAZ: o kural `[data-readable]` okuma alanları
+için: araç yüzeyi baştan beri 10–13px etiket ölçeğinde çalışıyor ve uyarı
+onunla aynı ölçekte.
