@@ -808,8 +808,8 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **kilo makullük sınırı** | 18 araç iki kovada (1–400 ↔ 20–300) — çocuk kapsamı kararı |
 | **içerik kazaları** | `hiperkalsemi-ve-hiperparatiroidi.json` baştan sona asit-baz, `akut-lenfoblastik-losemi-all.json` MDS; `behcet-vaskuler-tutulum` %31 kopya bölüm |
 | **premium `istatistikler` alanı** | ölü ve 5 dosyada çoktan sapmış |
-| **`seeds.ts`** | committe bozuk (bütün iki nokta, eğik ve tırnaklar silinmiş); üstelik olmayan bir ağaca (`../src/models/…`) bakıyor. Onarmak veritabanına YAZAN betiği diriltmek olur — aşağıdaki ölü `.ts` maddesiyle birlikte karara bağlanmalı |
-| **`server/` kapı kapsamı** | **SATIR YANLIŞTI, ölçüldü** (9 Eyl): CI'ın Server işi `npm run lint` ve `npm test` çalıştırıyor ve ikisi de geçiyor (eslint temiz · **85 test**). Görmediği tek şey **4 `.ts` dosyası** — dördü de ÖLÜ, aşağıya bak |
+| **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
+| **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
 | **güvenlik başlıkları** | CSP/XFO/nosniff yok; XFO eklemek deponun kendi iframe ölçüm yöntemini kırar |
 | **parola kurtarma** | akış YOK (yanlış vaat de yok) |
 | **`/tools` hub tekrarı** | 18 kategori çipi + 18 akordeon başlığı (mobilde çipler kaldırıldı, masaüstünde duruyor) |
@@ -1206,7 +1206,16 @@ Yani `routes/index.ts` çalışan bir rotayı İLAN ediyor ama bağlamıyor —
 belgedeki "ilan mı gerçek mi" sınıfı. Node `type: "module"` altında `.ts`
 zaten yüklenemiyor; dosyalar hiçbir koşulda çalışmıyor.
 
-**Bilerek DEĞİŞTİRİLMEDİ.** İki yol da içerik/ürün kararı: dosyaları silmek
-(kapı boşluğu kendiliğinden kapanır) ya da `/userstats` ucunu gerçekten
-kurmak. Kapıyı `.ts`ye açmak tek başına çare değil — bugün gateleyeceği
-tek şey ölü kod, üstelik yeni bir ayrıştırıcı bağımlılığı gerektirir.
+**KULLANICI KARARI: dördü de silindi.** Kapı boşluğu böylece kendiliğinden
+kapandı — `server/`de artık hiç `.ts` yok, yani eslint'in `--ext` listesi
+kaynağın TAMAMINI görüyor. `.ts` için ayrıştırıcı bağımlılığı eklemek
+gerekmedi.
+
+Silmeden önce dördü de okundu ve hiçbir yerden içe aktarılmadıkları
+`--include=*.js,*.mjs,*.cjs,*.json` taramasıyla doğrulandı (Dockerfile ve
+`package.json` betikleri dahil: sıfır referans). Silme sonrası ölçüm:
+eslint temiz · **85 test geçiyor** · `node --check server.js` temiz.
+Geri gerekirse git geçmişinde duruyor.
+
+Kapatılmayan yarısı: `/userstats` ucu bugün de YOK ve olmadığı bir daha
+İLAN edilmiyor. Gerekiyorsa yeni bir uç olarak yazılır.
