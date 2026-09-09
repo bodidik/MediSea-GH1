@@ -1800,3 +1800,41 @@ Paylaşım bağlantısı etkilenmiyor: `ToolShare` yalnızca TOPLAMI taşıyor
 (`domain: domainTotal`), şık indeksi değil — şık kaldırmak eski bağlantıyı
 bozmuyor. Seçilmeyen `single` eksen zaten 0 katkı verdiği için ayrıca
 "Yok" şıkkı eklenmedi.
+
+---
+
+## `payda` denetiminin tek SAPAN kaydı yanlış pozitifmiş (10 Eylül 2026)
+
+`payda-denetim` 136 aracın 34'ünün payda ilan ettiğini söylüyor ve tek bir
+sapma bildiriyordu: **`findrisc` — hesap 30, ilan 26**, notu da
+*"tarayıcıda elle doğrulanmalı"*. O adım atıldı.
+
+**Canlıda ölçüldü: 26 / 26.** Dokuz eksenin dokuzunda en yüksek şık
+seçildi, araç tam paydasını bastı. Sapmanın sebebi ölçütte: `findrisc`
+bel çevresini CİNSİYETE GÖRE iki ayrı eksende tutuyor ("Bel Çevresi
+(Erkek)" / kadın) ve aynı anda yalnız biri etkin. Statik tarama ikisini
+de toplayınca 26 yerine 30 çıkıyor — tam olarak bir bel ekseni (4 puan)
+fazla.
+
+Denetimin "AYRIŞTIRILAMADI — temiz DENMİYOR" kovasından iki araç da
+sürüldü, ikisi de temiz:
+
+| araç | ilan | ölçülen |
+|---|---|---|
+| `findrisc` | 26 | **26** (9 eksen en yüksekte) |
+| `gcs` | 15 | **15** (E4 + V5 + M6) |
+| `karnofsky` | 100 | **100** (en üst şık) |
+
+**Kalan 21 araç ÖLÇÜLMEDİ** (`ciwa-ar` 67 · `esas` 90 · `mrss` 51 ·
+`cat-copd` 40 · `dlqi` 30 · `rapid3` 30 · `glasgow-blatchford` 23 …).
+Genel bir "hepsini en yükseğe getir" sürücüsü denendi ve ÇALIŞMADI:
+`ciwa-ar`da puanı sıfır olan şıkları seçip skoru 0'da bıraktı, çünkü şık
+metnindeki ilk sayı puan olmayabiliyor. Her aracın kendi şık biçimi var;
+tek tek sürmek gerekiyor.
+
+**Ölçüm tuzağı — kendi ölçütüm iki kez yanılttı:** (1) `gcs`te
+`\d+\s*/\s*\d+` deseni ekrandaki *"M6 / 15"* ifadesine takılıp "6 / 15"
+dedi; araç aslında **"GKS TOPLAM SKOR 15 · E4 + V5 + M6 / 15"** yazıyor.
+(2) `karnofsky`de şık metni rozetle birleşip `100100` oluyor ve sıralama
+bozuluyor. İkisinde de kusur araçta değil ölçütteydi — ham metni
+okumadan "sapma var" denseydi iki sahte kusur raporlanmış olurdu.
