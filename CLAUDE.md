@@ -800,11 +800,11 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 |---|---|
 | **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
 | **`asdas` eksi sabit** | **E UYGULANDI** (10 Eyl) — denklemler ekranda, katsayılar tek kaynakta. Sabitin kendisi hâlâ kaynak kararı |
-| **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
+| **`essdai` kutanöz 3. düzey yok** | **ARİTMETİK KAPANDI** (10 Eyl) — eksik düzey tam 3 puan; 120 + 3 = **123**. Düzeyin klinik tanımı yazılırsa iş biter. Aşağıya bak |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | **ÖLÇÜLDÜ + ÖLÇÜT TEK KAYNAĞA ALINDI** (10 Eyl) — dal DEĞİŞTİRİLMEDİ; kapsam 260 bileşimin **8'i**. Aşağıya bak |
 | **`gout-acr` atak ekseni** | **KAPANDI** (10 Eyl) — eksen atak SAYISINI soruyor; tavan **24 → 23**, iki çelişki tek düzeltmeyle kapandı. Aşağıya bak |
-| **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
+| **`lawton-iadl` erkek varyantı** | **İÇ ÇELİŞKİ YOK** (10 Eyl) — araçta cinsiyet girdisi hiç yok, 8 madde herkese uygulanıyor ve bunu İDDİA da etmiyor (uyarı metni "cinsiyet faktörlerini hesaba katarak yorumlayın" diyor). Tümüyle kaynak kararı |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
 | **içerik kazaları** | **KAPSAM ÇIKARILDI** (9 Eyl) — üç değil **DÖRT** kaza; 4. (artık `.txt`) SİLİNDİ, kalan üçü yazım kararı. Aşağıya bak |
 | **premium `istatistikler` alanı** | **TİPTEN ÇIKARILDI** (9 Eyl) — ölü; sapma 5 değil **7** ölçüldü. İçerik dosyalarına dokunulmadı, aşağıya bak |
@@ -1990,3 +1990,33 @@ bunu klinisyene HATIRLATMA olarak yazıyor, ölçtüğünü iddia etmiyor.
 **Kendi hatam:** geçici dal silmesini geri alırken `git checkout --` kullandım
 ve aynı dosyadaki YENİ refaktörü de sildim. Aynı dosyada commit edilmemiş
 başka değişiklik varken geçici denemeyi böyle geri alma; yamayı elle çevir.
+
+---
+
+## `essdai`: eksik kutanöz düzeyi tam 3 puan (10 Eylül 2026)
+
+Aracın veri tablosu tarandı. `pts` değerleri ZATEN ağırlıklı (ör. Anayasal
+ağırlık 3 → `0/3/6`, yani düzey 0/1/2 × 3), bu yüzden azami toplam =
+`pts` tavanlarının toplamı = **120** — canlı ölçümle birebir.
+
+| alan | ağırlık | düzey | tavan |
+|---|---|---|---|
+| Kas | 6 | 4 | 18 = **3×w** |
+| Lenf · Pulmoner · Renal · PNS · CNS · Eklem · Hematolojik | — | 4 (CNS 3) | **3×w** |
+| **Kutanöz** | **3** | **3** | **6 = 2×w** |
+| Anayasal · Bez · Biyolojik | — | 3 | 2×w |
+
+Kutanöz alana öteki "tam" alanlar gibi bir üçüncü etkin düzey eklenseydi
+tavanı 6 → 9 olurdu ve **toplam tam 123** ederdi — yayımlanmış tavanın
+kendisi. Yani belgedeki 120 ↔ 123 farkının tamamını TEK bir eksik düzey
+açıklıyor; `gout-acr`daki gibi aritmetik, iddiayı bağımsız olarak
+doğruluyor.
+
+Anayasal · Bez · Biyolojik de 2×w'de duruyor ama bu beklenen: o alanların
+yayımlanmış indekste "yüksek" düzeyi yok. CNS ise 3 düzeyli görünüyor
+(`0/10/15`) çünkü düzey 1'i atlıyor — veri, alan başına düzey kümesini
+sadakatle modelliyor.
+
+**KOD DEĞİŞTİRİLMEDİ:** eksik düzeyin KLİNİK TANIMINI yazmak içerik kararı.
+Tanım verilirse iş tek satır: `cutaneous` alanına `{ level: 3, label: …,
+pts: 9 }` eklemek; ağırlık etiketi ve tavan zaten veriden türüyor.
