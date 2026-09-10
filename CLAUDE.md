@@ -769,14 +769,14 @@ Yeni bir yüzeye dokunurken bunları sor. Hepsi bu depoda ölçüldü.
 
 ---
 
-## Güncel durum (6 Eylül 2026 ölçümü)
+## Güncel durum (10 Eylül 2026 ölçümü)
 
 Sayılar **canlı yüzeylerden** okundu (uygulamanın kendi sayacı sürüldü),
 belgeden kopyalanmadı.
 
 | büyüklük | değer | önceki (5 Eyl) |
 |---|---|---|
-| branş · açık konu | 13 · **430** | 423 |
+| branş · açık konu | 13 · **433** | 430 (6 Eyl) |
 | klinik araç | **136** | 136 |
 | premium başlık · soru | **51** · **568** | 44 · 454 |
 | premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
@@ -2105,3 +2105,40 @@ bir hesap gerekiyor ve `MONGODB_URI` üretim kümesini gösteriyor.
 Sürülenler: `/api/auth/{session,providers,csrf}` 200, `/giris` · `/kayit` ·
 `/tools` · `/topics` 200, `lint` · `typecheck` · `build` temiz. Yani
 oturumsuz yol sağlam; oturumlu yol yalnızca tip ve derleme düzeyinde.
+
+---
+
+## Paralel oturumun birleştirmesi bitirildi — ve kendi hatam (10 Eylül 2026)
+
+Bir tur boyunca aynı çalışma ağacında **ikinci bir oturum** `icerik` dalını
+main'e birleştiriyordu. Sıradaki açık maddeye girmeden önce depo durumuna
+bakmak bunu ortaya çıkardı.
+
+**1. Yarım kalan birleştirme.** `.git/MERGE_HEAD` duruyordu, tek çözülmemiş
+dosya `content/arac-konu.json`. **Dokunmadım** — üretilmiş bir indeksin
+hangi tarafının kalacağı elle karar verilecek şey değil, yeniden üretilecek
+şey. Ben durumu incelerken öteki oturum birleştirmeyi bitirdi
+(`f8dc19f8`), ama **itmemişti**; yerel main 4 commit öndeydi.
+
+Birleştirilmiş ağaç sınandı ve itildi: dört üretilmiş indeksin dördü de
+`--kontrol`den geçiyor (yani çakışan dosya doğru çözülmüş), 18 kapı ·
+`lint` · `typecheck` · `build` temiz.
+
+**2. KENDİ HATAM — `git add <dizin>` başkasının işini süpürdü.**
+`git add CLAUDE.md web` yazdığım için `e123419d` commit'i bana ait olmayan
+iki dosyayı da taşıdı: `premium/ydus/[branch]/[topic]/page.tsx` ve
+`premium/ydus/hizli-tekrar/page.tsx` (**86 satır**) — paralel oturumun
+"bir konu birden fazla hızlı tekrar seti taşıyabiliyor" işi.
+
+Kayıp yok; iş main'de ve çalışıyor (ölçüldü: `asit-portal-hipertansiyon`
+77 + `-set-2` 80 kart, ikisi de okunuyor). Geri alma DENENMEDİ: yayımlanmış
+tarihi yeniden yazmak ya da revert etmek, çalışan bir işi bozma riski
+taşıyordu.
+
+**Kural: paylaşılan bir ağaçta `git add` ile DİZİN verme, dosyaları tek tek
+ekle.** Bu depoda içerik girişi ayrı bir oturumda sürüyor; hangi dosyanın
+kimin olduğunu `git status` söyler, `git add web` söylemez.
+
+**3. Sayı bayatlamıştı.** Üç yeni gastroenteroloji konusu geldi; uygulamanın
+kendi sayacı **433** diyor (belgede 430 yazıyordu), site haritası 585 → 588.
+Tablo güncellendi — sayı yine ölçümden alındı, kopyalanmadı.
