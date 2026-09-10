@@ -249,6 +249,30 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "gastroenteroloji/ascit-diuretik-tedavisi": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
+      {
+        "slug": "qsofa",
+        "name": "qSOFA Skoru",
+        "eslesen": "qSOFA Skoru"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "sofa",
+        "name": "SOFA Skoru",
+        "eslesen": "SOFA"
+      }
+    ],
     "gastroenteroloji/ascit-sıvısı": [
       {
         "slug": "child-pugh",
@@ -275,6 +299,13 @@
         "slug": "ranson",
         "name": "Ranson Kriterleri",
         "eslesen": "Ranson Kriterleri"
+      }
+    ],
+    "gastroenteroloji/tips-hasta-secimi": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
       }
     ],
     "hematoloji/akut-lenfoblastik-losemi-all": [
@@ -399,6 +430,13 @@
         "slug": "chads-vasc",
         "name": "CHA₂DS₂-VASc Skoru",
         "eslesen": "CHA2DS2-VASc Skoru"
+      }
+    ],
+    "hematoloji/kanser-iliskili-tromboz": [
+      {
+        "slug": "khorana",
+        "name": "Khorana Skoru",
+        "eslesen": "Khorana Skoru"
       }
     ],
     "hematoloji/m7-flipi-ngs-paneli": [
@@ -860,6 +898,11 @@
         "yol": "enfeksiyon/fosfomisin-klinik-rehber",
         "baslik": "Fosfomisin",
         "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
+        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
+        "eslesen": "Potasyum Replasmanı"
       }
     ],
     "tft": [
@@ -961,6 +1004,11 @@
         "eslesen": "Child-Pugh"
       },
       {
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "eslesen": "Child-Pugh"
+      },
+      {
         "yol": "gastroenteroloji/ascit-sıvısı",
         "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
         "eslesen": "Child-Pugh"
@@ -971,13 +1019,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
-        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "yol": "gastroenteroloji/tips-hasta-secimi",
+        "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar",
         "eslesen": "Child-Pugh"
       }
     ],
@@ -1028,6 +1071,18 @@
         "yol": "enfeksiyon/prokalsitonin-genel",
         "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı",
         "eslesen": "SOFA Skoru"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "eslesen": "SOFA"
+      }
+    ],
+    "qsofa": [
+      {
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "eslesen": "qSOFA Skoru"
       }
     ],
     "ranson": [
@@ -1131,6 +1186,11 @@
       {
         "yol": "hematoloji/antikoagulasyon-stratejileri",
         "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+        "eslesen": "Khorana Skoru"
+      },
+      {
+        "yol": "hematoloji/kanser-iliskili-tromboz",
+        "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi",
         "eslesen": "Khorana Skoru"
       }
     ],
@@ -1250,10 +1310,10 @@
     ]
   },
   "olcum": {
-    "konu": 475,
+    "konu": 479,
     "arac": 136,
-    "araciOlanKonu": 94,
-    "konusuOlanArac": 31,
-    "bag": 111
+    "araciOlanKonu": 98,
+    "konusuOlanArac": 32,
+    "bag": 117
   }
 }

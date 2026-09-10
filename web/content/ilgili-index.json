@@ -1034,16 +1034,6 @@
    "brans": "nefroloji",
    "slug": "metabolik-alkaloz",
    "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kombinasyon-stratejileri",
-   "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   }
  ],
  "endokrinoloji/men1-osilodrostat-protokol-adimlari": [
@@ -1099,16 +1089,6 @@
    "brans": "nefroloji",
    "slug": "metabolik-alkaloz",
    "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kombinasyon-stratejileri",
-   "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   },
   {
    "brans": "endokrinoloji",
@@ -1924,13 +1904,18 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "vankomisin-master-rehber",
    "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
   },
   {
    "brans": "enfeksiyon",
@@ -1941,11 +1926,6 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-mprf",
    "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-sinerji",
-   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
   }
  ],
  "enfeksiyon/bruselloz": [
@@ -2743,6 +2723,11 @@
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
   {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
    "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
@@ -2761,11 +2746,6 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-sinerji",
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "hucre-duvari-sentez-inhibitorleri",
-   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
   }
  ],
  "gastroenteroloji/akut-pankreatit": [
@@ -2790,7 +2770,86 @@
    "baslik": "Siroz ve Komplikasyonları"
   }
  ],
+ "gastroenteroloji/ascit-diuretik-tedavisi": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sıvısı",
+   "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "diuretikler",
+   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
+  },
+  {
+   "brans": "journal-club",
+   "slug": "Kalp-yetm-ODI",
+   "baslik": "Kardiyoloji-NEJM: Kalp Yetmezliği Çalışmalarında Oral Diüretik Yoğunlaştırması (ODI)"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-kbh-ve-yasli",
+   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
+   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  }
+ ],
+ "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sıvısı",
+   "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "hepatit-c",
+   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  }
+ ],
  "gastroenteroloji/ascit-sıvısı": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "tips-hasta-secimi",
+   "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "hepatit-c",
@@ -2805,11 +2864,6 @@
    "brans": "gastroenteroloji",
    "slug": "karaciger-hastasina-yaklasim",
    "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "siroz-ve-komplikasyonlari",
-   "baslik": "Siroz ve Komplikasyonları"
   }
  ],
  "gastroenteroloji/ascit-yonetimi": [
@@ -3098,6 +3152,16 @@
   },
   {
    "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
    "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
   },
@@ -3110,11 +3174,6 @@
    "brans": "gastroenteroloji",
    "slug": "karaciger-hastasina-yaklasim",
    "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "siroz-ve-komplikasyonlari",
-   "baslik": "Siroz ve Komplikasyonları"
   }
  ],
  "gastroenteroloji/karaciger-hastaliklari": [
@@ -3125,6 +3184,16 @@
   },
   {
    "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
    "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
   },
@@ -3132,9 +3201,24 @@
    "brans": "gastroenteroloji",
    "slug": "hepatit-c",
    "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "tips-hasta-secimi",
+   "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar"
   }
  ],
  "gastroenteroloji/karaciger-hastasina-yaklasim": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
@@ -3149,6 +3233,11 @@
    "brans": "gastroenteroloji",
    "slug": "siroz-ve-komplikasyonlari",
    "baslik": "Siroz ve Komplikasyonları"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "tips-hasta-secimi",
+   "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar"
   }
  ],
  "gastroenteroloji/kisa-bagirsak-sendromu": [
@@ -3298,6 +3387,16 @@
   },
   {
    "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "ascit-sıvısı",
    "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
   },
@@ -3317,6 +3416,38 @@
    "brans": "gastroenteroloji",
    "slug": "ozofagus-motilite-bozukluklari",
    "baslik": "Özofagus Motilite Bozuklukları"
+  }
+ ],
+ "gastroenteroloji/tips-hasta-secimi": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sıvısı",
+   "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "hepatit-c",
+   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastasina-yaklasim",
+   "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
   }
  ],
  "gastroenteroloji/yapisal-enfeksiyoz-ozofagus": [
@@ -4721,6 +4852,11 @@
    "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
   },
   {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+  },
+  {
    "brans": "nefroloji",
    "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
    "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
@@ -4884,30 +5020,30 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
-   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+   "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
+   "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
   }
  ],
  "kardiyoloji/aprocitentan-kombinasyon-stratejileri": [
   {
-   "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-mineralokortikoid",
-   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-direncsiz-kbh-kullanimi",
+   "baslik": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "men1-spironolakton-cift-mekanizma",
-   "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-kbh-ve-yasli",
+   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
   }
  ],
  "kardiyoloji/aritmiler-af-vt-vf": [
@@ -5634,24 +5770,9 @@
  ],
  "nefroloji/diuretikler": [
   {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
-   "baslik": "Finerenon ve Kalp Yetmezliği"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
-   "baslik": "Mineralokortikoid Reseptör Regülasyonu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-tedavi",
-   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "renal-arter-stenozu-ras",
-   "baslik": "Renal Arter Stenozu (RAS) ve Renovasküler Hipertansiyon"
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
   }
  ],
  "nefroloji/diyaliz-tedavisi": [
@@ -5722,21 +5843,6 @@
    "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-mineralokortikoid",
-   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-spironolakton-cift-mekanizma",
-   "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kombinasyon-stratejileri",
-   "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -5892,6 +5998,11 @@
    "brans": "nefroloji",
    "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
    "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-diuretik-tedavisi",
+   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
   },
   {
    "brans": "journal-club",

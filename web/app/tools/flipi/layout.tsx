@@ -47,11 +47,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/hematoloji/kmt2d-crebbp-mutasyonlari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/hematoloji/m7-flipi-ngs-paneli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri
               </Link>
