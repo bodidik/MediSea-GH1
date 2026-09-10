@@ -811,7 +811,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`seeds.ts`** | **KAPANDI** (9 Eyl) — kullanıcı kararıyla silindi; ölü `.ts` maddesine bak |
 | **`server/` kapı kapsamı** | **KAPANDI** (9 Eyl) — satır yanlıştı: CI zaten `lint` + `test` sürüyor (eslint temiz · **85 test**). Kapının görmediği 4 ölü `.ts` silindi, `server/`de artık `.ts` YOK |
 | **güvenlik başlıkları** | **KISMEN KAPANDI** (9 Eyl) — dört güvenli başlık kondu, `X-Powered-By` kaldırıldı. CSP ve XFO bilerek DIŞARIDA, aşağıya bak |
-| **parola kurtarma** | akış YOK (yanlış vaat de yok) |
+| **parola kurtarma** | **KURULDU** (10 Eyl) — Resend seçildi; akış uçtan uca hazır, **taşıyıcı anahtarı bekliyor**. Mutlu yol GERÇEK hesapla sınanmadı. Aşağıya bak |
 | **`/tools` hub tekrarı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: çip eşiği `md:` → `lg:`. 768px'te sayfa **12498 → 1978px**, çip duvarı yerine 18 kategorilik katlanmış dizin. Aşağıya bak |
 | **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, aşağıya bak |
 
@@ -2020,3 +2020,64 @@ sadakatle modelliyor.
 **KOD DEĞİŞTİRİLMEDİ:** eksik düzeyin KLİNİK TANIMINI yazmak içerik kararı.
 Tanım verilirse iş tek satır: `cutaneous` alanına `{ level: 3, label: …,
 pts: 9 }` eklemek; ağırlık etiketi ve tavan zaten veriden türüyor.
+
+---
+
+## Parola kurtarma akışı kuruldu (10 Eylül 2026)
+
+Kullanıcı kanalı seçti: **Resend**. Akış tam, tek eksik `RESEND_API_KEY` +
+`EPOSTA_GONDEREN`.
+
+| parça | dosya |
+|---|---|
+| jeton kaydı (TTL + tek kullanım) | `lib/models/SifreSifirlamaJetonu.ts` |
+| jeton üretimi/özeti, ömür, hız sınırı | `lib/sifre-sifirlama.ts` |
+| gönderim (SDK YOK, düz `fetch`) | `lib/eposta.ts` |
+| istek ucu | `app/api/auth/sifre-sifirlama/istek/route.ts` |
+| uygulama ucu | `app/api/auth/sifre-sifirlama/uygula/route.ts` |
+| sayfalar | `/sifremi-unuttum` · `/sifre-sifirla` |
+
+**Kararlar ve gerekçeleri:**
+
+- **Ham jeton saklanmıyor**, yalnızca SHA-256 özeti. Veritabanı okunabilir
+  hale gelse elde edilen değer işe yaramaz.
+- **Hesap sayımına kapalı**: adres kayıtlı olsun olmasın yanıt AYNI. Farklı
+  yanıt, siteyi "bu adres üye mi?" servisine çevirirdi.
+- **Ömür 60 dk · tek kullanım · kullanımda kullanıcının BÜTÜN jetonları
+  kapanıyor.** Yalnızca kullanılanı kapatmak yetmez: üç istek yapılmışsa
+  kalan ikisi hâlâ geçerli olurdu.
+- **Hız sınırı veritabanında** (15 dk'da 3), bellekte değil — sunucusuz
+  ortamda bellek sayacı örnek sayısıyla çarpılırdı.
+- **Taşıyıcı yoksa üretimde uç 503 döner**, "gönderdik" DEMEZ. Geliştirmede
+  bağlantı sunucu günlüğüne basılır. Bu, deponun kayıtlı "sessiz boşluk"
+  kusurunu baştan engelliyor: yanlış vaat yoksa akış da kurulmuyor.
+- **`robots.ts`e iki satır**: `/sifre-sifirla` adresi SIRRIN KENDİSİNİ
+  taşıyor (`?jeton=`), taranırsa jeton arama motoru günlüklerine düşer.
+- SDK eklenmedi: Resend'in HTTPS API'si düz bir POST, `fetch` yetiyor —
+  bu depoda `npm ci` çalışan ortamı bozduğu için bağımlılığın bedeli var.
+
+**Ölçüldü (negatif dallar, gerçek veriye DOKUNMADAN):**
+
+| senaryo | sonuç |
+|---|---|
+| kayıtlı olmayan adres | 200, **aynı metin** |
+| bozuk gövde / noktasız e-posta | 400 |
+| uydurma jeton | 400 "geçersiz ya da süresi dolmuş" |
+| kısa parola | 400, `kimlik.ts` sabitinden gelen mesaj |
+| jeton parametresi yok | 400 |
+| `/sifremi-unuttum` · `/sifre-sifirla` | 200, tek `h1`, alanlar `htmlFor` ile bağlı, `autocomplete` doğru |
+| jetonsuz `/sifre-sifirla` | `role="alert"` ile açıklama + yeni bağlantı yolu |
+| geçersiz jetonla gönderim | ekranda `role="alert"`, sunucu 400 |
+| `robots.txt` | iki yol da `Disallow` |
+
+**MUTLU YOL SINANMADI — ve bu bilerek.** `MONGODB_URI` **üretim Atlas
+kümesini** gösteriyor (`.../medisea`). Gerçek bir hesaba jeton üretmek ya da
+deneme kullanıcısı açmak canlı veriye dokunmak olurdu. Sınamanın iki temiz
+yolu var: (1) ayrı bir test veritabanı adresi, (2) tek kullanımlık bir
+hesabı açıp sonra silmek için açık onay.
+
+**KAPSANMAYAN — bilinen sınır:** JWT oturumları parola değişince
+GEÇERSİZLEŞMİYOR. Oturum `strategy: 'jwt'` ve `auth.config.ts` Edge'de
+çalıştığı için veritabanı okuyamıyor; iptal, `User`a bir sürüm alanı
+eklemeyi ve jwt geri çağrısını Node'a taşımayı gerektirir. Yani parolasını
+sıfırlayan kullanıcının ESKİ oturumu, süresi dolana dek açık kalır.

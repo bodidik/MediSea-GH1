@@ -157,7 +157,16 @@ function GirisFormu() {
           </button>
         </form>
 
-        <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '1.25rem' }}>
+        {/* PAROLA KURTARMA BAĞLANTISI — formun hemen altında, çünkü kullanıcı
+            burada başarısız oluyor. Ayrı bir satır: "Kayıt ol" ile aynı
+            cümleye sıkıştırmak iki farklı işi tek metne bindirirdi. */}
+        <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '1rem' }}>
+          <Link href="/sifremi-unuttum" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
+            Parolamı unuttum
+          </Link>
+        </p>
+
+        <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '0.25rem' }}>
           Hesabın yok mu?{' '}
           <Link href="/kayit" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
             Kayıt ol

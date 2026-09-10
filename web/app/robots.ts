@@ -20,6 +20,12 @@ export default function robots(): MetadataRoute.Robots {
         "/*/premium/ydus/",
         // Eski, dilsiz yol; bir dönem kullanılmıştı.
         "/premium",
+        // Parola sıfırlama: adres SIRRIN KENDİSİNİ taşıyor (?jeton=…).
+        // Taranırsa jeton arama motoru günlüklerine ve olası önbelleklere
+        // düşer. İstek sayfası da taranmasın; arama sonucundan gelen bir
+        // ziyaretçi için değeri yok, giriş sayfasından bağlantısı var.
+        "/sifre-sifirla",
+        "/sifremi-unuttum",
       ],
     },
     sitemap: `${base}/sitemap.xml`,
