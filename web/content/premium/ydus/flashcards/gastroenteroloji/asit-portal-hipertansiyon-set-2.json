@@ -1,0 +1,488 @@
+{
+  "id": "fc-gastro-asit-sivisi-002",
+  "accessLevel": "premium",
+  "topic": "Asit Sıvısı Özellikleri",
+  "description": "YDUS Gastroenteroloji serisi: Asit sıvısı analizi (SAAG, protein, hücre, ADA, amilaz, trigliserid), SBP/sekonder peritonit ayrımı, parasentez tekniği ve refrakter asit yönetimini kapsayan ikinci hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "card-1",
+      "front": "Sirozlu bir hastada yeni gelişen asit varlığında veya hastaneye yatışta yapılması gereken ilk tanısal işlem nedir?",
+      "back": "Diagnostik parasentez.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-2",
+      "front": "Serum-asit albümin gradyanı (SAAG) formülü nedir?",
+      "back": "SAAG = Serum albümin - Asit sıvısı albümin.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-3",
+      "front": "SAAG değerinin ≥ 1.1 g/dL olması hangi temel patofizyolojik süreci işaret eder?",
+      "back": "Portal hipertansiyon.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-4",
+      "front": "Spontan bakteriyel peritonit (SBP) tanısı için asit sıvısındaki polimorfonükleer lökosit (PMN) sayısı eşiği kaçtır?",
+      "back": "≥ 250 hücre/µL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-5",
+      "front": "Asit sıvısı analizinde PMN sayısı ≥ 250 hücre/µL olup kültürde tek bir organizma üremesi hangi tabloyu tanımlar?",
+      "back": "Spontan bakteriyel peritonit (SBP).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-6",
+      "front": "Asit sıvısı protein konsantrasyonu hangi değerin altında olduğunda SBP riski artar?",
+      "back": "1.5 g/dL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-7",
+      "front": "Sirozda asit yönetiminde önerilen günlük sodyum kısıtlaması miktarı nedir?",
+      "back": "2 g/gün (90 mmol/gün) altı.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-8",
+      "front": "Asit tedavisinde kullanılan spironolakton ve furosemid kombinasyonunun başlangıç doz oranı nedir?",
+      "back": "100 mg spironolakton : 40 mg furosemid.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-9",
+      "front": "Büyük hacimli parasentez (LVP) sonrası post-parasentez dolaşım disfonksiyonunu önlemek için albümin replasmanı hangi hacimden sonra zorunludur?",
+      "back": "5 Litre.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-10",
+      "front": "LVP sırasında çıkarılan her litre asit sıvısı için önerilen intravenöz albümin miktarı nedir?",
+      "back": "6-8 g.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-11",
+      "front": "Asit sıvısının 'süt görünümünde' (milky) olması hangi patolojiyi düşündürür?",
+      "back": "Şilöz asit (lenfatik obstrüksiyon veya travma).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-12",
+      "front": "Şilöz asit tanısında asit sıvısındaki trigliserid düzeyi hangi eşiğin üzerindedir?",
+      "back": "200 mg/dL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-13",
+      "front": "Asit sıvısının 'kanlı' görünümünde olması durumunda eritrosit sayısı tipik olarak hangi değerin üzerindedir?",
+      "back": "50,000 hücre/µL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-14",
+      "front": "Pankreatik asit tanısında asit sıvısındaki amilaz düzeyi genellikle hangi değerin üzerindedir?",
+      "back": "1000 U/L.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-15",
+      "front": "Maksimum diüretik tedaviye yanıtsız olan veya tedavi sonrası hızla nükseden asit türüne ne ad verilir?",
+      "back": "Refrakter asit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-16",
+      "front": "Diüretik doz artımını engelleyen komplikasyonlar (örneğin ensefalopati, AKI) nedeniyle asidin kontrol edilememesine ne ad verilir?",
+      "back": "Diüretik-intraktabl (dayanıksız) asit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-17",
+      "front": "Sirozda hipervolemik hiponatremi yönetimi için sıvı kısıtlaması hangi serum sodyum değerinin altında önerilir?",
+      "back": "125 - 130 mEq/L.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-18",
+      "front": "Hangi asit derecesi sadece ultrasonografi ile saptanabilir?",
+      "back": "Evre 1 (Hafif) asit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-19",
+      "front": "Belirgin abdominal distansiyon ve 'gerginlik' ile karakterize asit evresi kaçtır?",
+      "back": "Evre 3 (Büyük hacimli) asit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-20",
+      "front": "Asit sıvısında düşük SAAG (< 1.1 g/dL) ve yüksek protein (> 2.5 g/dL) birlikteliği hangi tanıyı destekler?",
+      "back": "Peritoneal karsinomatoz veya tüberküloz peritonit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-21",
+      "front": "Yüksek SAAG (≥ 1.1 g/dL) ve yüksek protein (> 2.5 g/dL) birlikteliği hangi kardiyak nedene işaret edebilir?",
+      "back": "Kalp yetmezliği veya konstrüktif perikardit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-22",
+      "front": "Portal hipertansiyona bağlı asitte asit sıvısı protein düzeyi neden genellikle düşüktür?",
+      "back": "Sirozda karaciğer sinüzoidlerinin 'kapillerizasyonu' nedeniyle protein sızıntısının azalması.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-23",
+      "front": "Kardiyak asitte SAAG değerinin yüksek olma nedeni nedir?",
+      "back": "Yüksek sinüzoidal basınç.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-24",
+      "front": "Refrakter asit veya hepatik hidrotoraks durumunda MELD skorundan bağımsız olarak hangi değerlendirme yapılmalıdır?",
+      "back": "Karaciğer transplantasyon değerlendirmesi.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-25",
+      "front": "Sirozda plevral boşlukta patolojik sıvı toplanmasına ne ad verilir?",
+      "back": "Hepatik hidrotoraks (HH).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-26",
+      "front": "Hepatik hidrotoraks tanısı için plevral sıvıda hangi enfeksiyon ekarte edilmelidir?",
+      "back": "Spontan bakteriyel ampiyem (SBE).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-27",
+      "front": "Transjugüler intrahepatik portosistemik şant (TIPS) için mutlak bir kardiyak kontrendikasyon nedir?",
+      "back": "Konjestif kalp yetmezliği veya ejeksiyon fraksiyonu < 30-35%.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-28",
+      "front": "Parasentez sonrası dolaşım disfonksiyonunu önlemede albümin infüzyonu için kullanılan albümin konsantrasyonu nedir?",
+      "back": "%20 - %25 albümin çözeltisi.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-29",
+      "front": "Asit kültüründe birden fazla mikroorganizma (polimikrobiyal) üremesi hangi tabloyu düşündürmelidir?",
+      "back": "Sekonder bakteriyel peritonit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-30",
+      "front": "Asit sıvısında glukozun < 50 mg/dL ve LDH düzeyinin serum üst sınırının üzerinde olması hangi durumu destekler?",
+      "back": "Sekonder bakteriyel peritonit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-31",
+      "front": "MELD 3.0 skorlamasında yer alan ve önceki sürümlere eklenen yeni laboratuvar parametresi nedir?",
+      "back": "Albümin.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-32",
+      "front": "Child-Pugh skorlamasında asit puanlaması nasıl yapılır?",
+      "back": "Asit yok (1 puan), hafif/orta (2 puan), şiddetli/refrakter (3 puan).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-33",
+      "front": "Asit sıvısında adenozin deaminaz (ADA) seviyesinin yüksekliği hangi enfeksiyonu düşündürür?",
+      "back": "Abdominal tüberküloz.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-34",
+      "front": "Büyük hacimli parasentezde albümin verilmeyen hastalarda en önemli risk nedir?",
+      "back": "Akut böbrek hasarı (AKI) ve artmış mortalite.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-35",
+      "front": "Asit sıvısı kültür verimini artırmak için sıvı nereye ekilmelidir?",
+      "back": "Yatak başında kan kültürü şişelerine.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-36",
+      "front": "Sirozda hipervolemik hiponatremiye yol açan temel nörohormonal mekanizma nedir?",
+      "back": "Arjinine vazopressin (AVP) salınımının artması ve böbrekte su geri emilimi.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-37",
+      "front": "Refrakter anasarka tedavisinde loop diüretiklere direnç varsa hangi ek ajan düşünülebilir?",
+      "back": "Metolazon (tiyazid diüretik).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-38",
+      "front": "Parasentez için trombosit sayısı veya INR değeri ne olmalıdır?",
+      "back": "Rutinde düzeltme önerilmez; işlem INR > 8 ve trombosit < 50,000 olsa dahi güvenle yapılabilir (DIC hariç).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-39",
+      "front": "Asit sıvısının 'bulanık' (turbid) görünmesi en başta neyi düşündürmelidir?",
+      "back": "Enfeksiyon (SBP).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-40",
+      "front": "Spontan bakteriyel peritonit tanısında kullanılan 'kültür negatif nötroasitik asit' tablosu nedir?",
+      "back": "PMN ≥ 250 hücre/µL olmasına rağmen asit kültüründe üreme olmaması.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-41",
+      "front": "Refrakter asitte TIPS takılmasının temel amacı nedir?",
+      "back": "Portal basıncı düşürerek asit üretimini azaltmak.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-42",
+      "front": "Semptomatik hepatik hidrotoraks tedavisinde göğüs tüpü takılması neden önerilmez?",
+      "back": "Yüksek morbidite ve mortalite riski nedeniyle.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-43",
+      "front": "Parasentez sonrası asit sızıntısını önlemek için hangi teknik uygulanmalıdır?",
+      "back": "Z-tekniği (iğnenin cilt altından kaydırılarak batırılması).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-44",
+      "front": "Sirozda serum sodyumu kaçın altına düştüğünde 'hiponatremi' tanısı konur?",
+      "back": "135 mEq/L.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-45",
+      "front": "Hangi ilaç grubu sirozda asit oluşumunu tetikleyebilir veya böbrek fonksiyonlarını bozabilir?",
+      "back": "NSAİD (Non-steroid anti-inflamatuar ilaçlar).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-46",
+      "front": "Asit sıvısında LDH düzeyinin serum LDH düzeyinden birkaç kat fazla olması neyi düşündürür?",
+      "back": "Sekonder peritonit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-47",
+      "front": "Spironolaktonun etkisini göstermesi için gereken süre yaklaşık ne kadardır?",
+      "back": "3-5 gün (uzun yarı ömrü nedeniyle).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-48",
+      "front": "Sirozda asit gelişimi mortaliteyi nasıl etkiler?",
+      "back": "Yıllık mortalite riskini %1 altından %15-20 üzerine çıkarır.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-49",
+      "front": "LVP sırasında krampları önlemek ve kan basıncını desteklemek için albümin hangi hızla verilmelidir?",
+      "back": "Dakikada 1-2 mL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-50",
+      "front": "Sirozlu hastada 'monomikrobiyal non-nötroasitik bakteriasit' ne demektir?",
+      "back": "PMN < 250 hücre/µL olup kültürde tek bir organizma üremesi.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-51",
+      "front": "Gebelikte parasentez yapılması kontrendike midir?",
+      "back": "Hayır, ancak dikkatli bir şekilde yapılmalıdır.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-52",
+      "front": "Asit sıvısı analizinde sitoloji ne zaman istenmelidir?",
+      "back": "Malignite şüphesi (karsinomatozis) varsa.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-53",
+      "front": "Peritoneal tüberkülozda asit sıvısı görünümü nasıldır?",
+      "back": "Berrak, bulanık veya hemorajik olabilir; lenfosit hakimiyeti vardır.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-54",
+      "front": "Hiponatremi hızı düzeltilirken hangi sendrom riski gözetilmelidir?",
+      "back": "Osmotik demiyelinizasyon sendromu.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-55",
+      "front": "Hangi diüretik hipokalemiye neden olma eğilimindedir?",
+      "back": "Furosemid (loop diüretiği).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-56",
+      "front": "Hangi diüretik hiperkalemiye neden olma eğilimindedir?",
+      "back": "Spironolakton (aldosteron antagonisti).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-57",
+      "front": "Asit varlığında fizik muayenede 'matite yer değiştirmesi' saptanabilmesi için asit miktarı en az ne kadar olmalıdır?",
+      "back": "1000 - 1500 mL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-58",
+      "front": "Ultrasonografi ile saptanabilen minimum asit miktarı nedir?",
+      "back": "100 mL.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-59",
+      "front": "Asit sıvısında gram boyama neden her zaman tanı koydurucu değildir?",
+      "back": "SBP'de bakteri konsantrasyonu düşüktür (duyarlılığı düşüktür).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-60",
+      "front": "Vazopressin reseptör antagonistleri (Vaptanlar) hangi durumda kullanılır?",
+      "back": "Şiddetli hiponatremi tedavisinde, genellikle transplant öncesi kısa süreli.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-61",
+      "front": "Parasentezde asit sıvısının 'koyu kahverengi' olması neyi işaret edebilir?",
+      "back": "Biliyer traktus perforasyonu.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-62",
+      "front": "Albümin infüzyonunun asit yönetimindeki temel onkotik amacı nedir?",
+      "back": "Sıvıyı damar içinde tutmak ve efektif dolaşım hacmini korumak.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-63",
+      "front": "Sirozda AKI tanısı için kreatinin artış eşiği nedir?",
+      "back": "48 saatte ≥ 0.3 mg/dL veya bazalin ≥ 1.5 katı artış.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-64",
+      "front": "Refrakter asit tanımı için sodyum kısıtlamasına rağmen idrar sodyum atılımı ne olmalıdır?",
+      "back": "< 78 mmol/gün.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-65",
+      "front": "Alfapump cihazının temel işlevi nedir?",
+      "back": "Asit sıvısını otomatik olarak peritondan mesaneye pompalamak.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-66",
+      "front": "Asit sıvısında yüksek glukoz düzeyi neyi gösterir?",
+      "back": "Enfeksiyon yokluğunu (bakteri tarafından tüketilmediğini).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-67",
+      "front": "Hangi asit derecesinde fizik muayenede abdominal distansiyon belirginleşir?",
+      "back": "Evre 2 asit.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-68",
+      "front": "Sirozda asit yönetiminde hangi diüretik daha uzun yarı ömre sahiptir?",
+      "back": "Spironolakton.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-69",
+      "front": "Hiponatremi tanısında psödohiponatremiyi dışlamak için neye bakılır?",
+      "back": "Serum osmolalitesi.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-70",
+      "front": "Hepatik ensefalopati gelişimini hiponatremi nasıl tetikler?",
+      "back": "Beyin hücrelerinde osmotik şişmeye neden olarak.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-71",
+      "front": "Hangi diüretik jinekomasti yapabilir?",
+      "back": "Spironolakton.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-72",
+      "front": "Refrakter asitte LVP sıklığı neye göre belirlenir?",
+      "back": "Asidin tekrarlama (rekürrens) hızına ve semptomlara göre.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-73",
+      "front": "İntravenöz furosemidin oral formuna göre potansiyel gücü nasıldır?",
+      "back": "Yaklaşık 2 kat daha güçlüdür.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-74",
+      "front": "Parasentez iğnesi için en güvenli karın bölgesi neresidir?",
+      "back": "Sol alt kadran (barsakların daha hareketli olması nedeniyle).",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-75",
+      "front": "Sirozda asit varlığı MELD skorunu nasıl etkiler?",
+      "back": "Doğrudan puan eklemez ancak sodyum ve albümin üzerinden mortalite riskini yansıtır.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-76",
+      "front": "Diüretik tedavisine bağlı 'kontraksiyon alkalozu' gelişirse hangi ilaç eklenebilir?",
+      "back": "Asetazolamid.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-77",
+      "front": "Asit sıvısında RBC > 10,000 hücre/µL ise PMN sayısı nasıl düzeltilir?",
+      "back": "Her 250 eritrosit için 1 nötrofil çıkarılır.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-78",
+      "front": "Sirozda hiponatremi varlığında hangi portal hipertansiyon ilacı kesilmelidir?",
+      "back": "Non-selektif beta-blokerler.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-79",
+      "front": "Hangi laboratuvar testi asit sıvısındaki enfeksiyonun polimikrobiyal olduğunu gösterir?",
+      "back": "Kültür.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    },
+    {
+      "id": "card-80",
+      "front": "SAAG < 1.1 g/dL saptandığında dışlanması gereken başlıca asit nedeni nedir?",
+      "back": "Portal hipertansiyon.",
+      "tag": "Gastroenteroloji / Asit Sıvısı"
+    }
+  ]
+}
