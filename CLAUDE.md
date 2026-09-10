@@ -1841,38 +1841,37 @@ okumadan "sapma var" denseydi iki sahte kusur raporlanmış olurdu.
 
 ---
 
-## Payda doğrulaması: 24 aracın 14'ü sürüldü, hepsi temiz (10 Eylül 2026)
+## Payda doğrulaması: 22 araç canlıda sürüldü — ve zaten yazılıydı (10 Eylül 2026)
 
-`payda-denetim`in "AYRIŞTIRILAMADI — temiz DENMİYOR" kovası tek tek
-sürüldü. Yöntem: aracı gizli bir `iframe`e yükle, her eksende en yüksek
-şıkkı seç, ekrandaki `N / ilan` kesrini oku. (`iframe` çalışıyor çünkü
-`X-Frame-Options` bilerek eklenmedi — deponun kendi ölçüm yöntemi bu.)
+`payda-denetim`in "AYRIŞTIRILAMADI" kovasındaki araçların hepsi gizli bir
+`iframe`e yüklenip her eksende en yüksek şık seçilerek sürüldü. Sonuç:
+**ilan = ulaşılabilir tavan, 22/22.**
 
-**İLAN = ULAŞILABİLİR TAVAN — 14 araç:**
-
-| araç | payda | araç | payda |
+| araç | ölçülen | araç | ölçülen |
 |---|---|---|---|
-| `ciwa-ar` | **67 / 67** | `ranson` | 5 / 5 |
-| `karnofsky` | 100 / 100 | `ipi` | 5 / 5 |
-| `findrisc` | 26 / 26 | `frail` | 5 / 5 |
-| `dlqi` | 30 / 30 | `bap65` | 3 / 3 |
-| `gcs` | 15 / 15 | `timi-ua` | 7 / 7 |
-| `gds-15` | 15 / 15 | `haq-di` | 8 / 8 |
-| `tnss` | 12 / 12 | `rts` | 12 / 12 |
+| `karnofsky` | 100/100 | `gcs` | 15/15 |
+| `esas` | 90/90 | `gds-15` | 15/15 |
+| `ciwa-ar` | 67/67 | `rts` | 12/12 |
+| `mrss` | 51/51 | `tnss` | 12/12 |
+| `cat-copd` | 40/40 | `conut` | 11/11 |
+| `dlqi` · `rapid3` | 30/30 | `haq-di` | 8/8 |
+| `findrisc` | 26/26 | `timi-ua` | 7/7 |
+| `glasgow-blatchford` | 23/23 | `ranson`·`ipi`·`frail` | 5/5 |
+| `fibromiyalji` | 19/19 | `bap65` | 3/3 |
+| `scorad` | 18/18 | | |
 
-**ÖLÇÜLEMEYEN 10 araç — "temiz" DENMİYOR:** `cat-copd` · `mrss` ·
-`rapid3` · `scorad` · `fibromiyalji` (şık puanı DOM'da rozet olarak
-durmuyor, jenerik sürücü sıfır puanlı şıkkı seçiyor) · `esas` (aralık
-kaydırıcısı, düğme yok) · `glasgow-blatchford` · `conut` · `spot-urine` ·
-`basdai` (sayısal girdi ister).
+`basdai` ve `spot-urine` listede OLMAMALI: "payda" sandıkları şey formül
+böleni — `(S5+S6)/2` ve `UGlukoz/18`.
 
-Aç gözlü sürücü (her şıkkı deneyip skoru okuyan) yazıldı ama **panelde
-zaman aşımına uğruyor**: gizli panelde `iframe` yüklemesi tek başına ~7 sn
-ve `innerText` okuması pahalı; `cat-copd`in 48 şıkkı 45 sn sınırını aşıyor.
-Bu araçlar tek tek, kendi şık biçimlerine göre sürülmeli.
+**AMA BU TURUN ASIL DERSİ BAŞKA: hepsi zaten betiğin başlığında yazılıydı.**
+`payda-denetim.cjs`in yorum bloğu o kovayı tek tek çözmüş, aritmetiğini
+yazmış (`cat-copd 8×5=40` · `esas 9×10=90` · `conut 6+3+2=11` …), sahte
+paydaları adıyla saymış ve `findrisc` verdiktini — *"birbirini dışlayan
+alternatif gruplar FAZLA sayılır"* — kaydetmiş. Üstelik açıkça
+**"O kova BEKLEYEN İŞ DEĞİL … Yeniden kovalamayın"** diyor.
 
-**YAN BULGU — denetimin "ilan" okuması da yanılabiliyor.** `basdai ilan 2`
-diyordu; kaynakta paydaya benzeyen tek şey `(q5 + q6) / 2`, yani sabah
-tutukluluğu ORTALAMASI. BASDAI'nin paydası yok (0–10). Yani bu araç
-listede olmamalıydı — "payda ilan eden 34 araç" sayısı da bu kadar kesin
-değil.
+Betiğin başlığını okumadan sürdüm ve iki tur harcayıp aynı verdiktlere
+vardım. Kazanç sıfır değil — kaynak okumasıyla değil ÇALIŞMA ZAMANINDA
+doğrulandı ve 22'sinde de tuttu — ama bedeli buna değmezdi. **Kural: bir
+denetimin çıktısını kovalamadan ÖNCE betiğin kendi başlığını oku;** bu
+depoda denetimler verdiktlerini kendi içlerinde taşıyor.
