@@ -126,7 +126,7 @@ const MODUL_BILGI = {
 };
 
 const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) => string> = {
-  flashcard: (l, b, t) => `/${l}/premium/ydus/hizli-tekrar?branch=${b}&id=${t}`,
+  flashcard: (l, b, t) => `/${l}/premium/ydus/hizli-tekrar?branch=${b}&topic=${t}`,
   inciler:   (l, b, t) => `/${l}/premium/ydus/inciler?branch=${b}&id=${t}`,
   quiz:      (l, b, t) => `/${l}/premium/ydus/quiz-coz?branch=${b}&id=${t}-quiz-1`,
   vaka:      (l, b, t) => `/${l}/premium/ydus/vaka-coz?branch=${b}&topic=${t}`,
@@ -465,14 +465,7 @@ export default async function KonuSayfasi({
                 if (!bilgi) return null;
                 // İlan YETMEZ: hedef içerik gerçekten var mı?
                 const aktif = ilan && (MODUL_VAR[key] ?? false);
-                /* Hızlı tekrar modülü İLK SETE gider: dosya adı her zaman
-                   `<konu>.json` olmak zorunda değil (yalnızca `-set-2` taşıyan
-                   bir konu `id=<konu>` ile 404 verirdi). Setlerin tamamı yan
-                   sütundaki istatistik listesinde tek tek bağlı. */
-                const href =
-                  key === 'flashcard' && envanter.flashcardSetleri.length > 0
-                    ? `/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${envanter.flashcardSetleri[0].id}`
-                    : MODUL_HREF[key]?.(lang, branch, topic) ?? '#';
+                const href = MODUL_HREF[key]?.(lang, branch, topic) ?? '#';
                 return (
                   <Link
                     key={key}

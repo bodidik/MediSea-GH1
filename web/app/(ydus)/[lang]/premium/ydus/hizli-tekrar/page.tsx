@@ -3,7 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import FlashcardPlayer from './FlashcardPlayer';
+import Link from 'next/link';
 import { AccessGate } from '@/lib/AccessGate';
+import { envanterAl } from '@/lib/premium-envanter';
 import { rotaMeta } from "@/lib/site";
 
 /**
@@ -46,6 +48,16 @@ interface FlashcardVeri {
 
 const isValidParam = (param: string) => /^[a-zA-Z0-9-]+$/.test(param);
 
+/**
+ * Set dosyasının kimliğinden KONU kimliğine iner: `asit-…-set-2` → `asit-…`.
+ *
+ * "Konuya dön" bağlantısı set kimliğini olduğu gibi kullanıyordu; ikinci set
+ * girer girmez o bağlantı var olmayan bir konu sayfasına (404) gidiyordu.
+ * Erişim kapısı da konu kimliğiyle sorulmalı — set başına ayrı bir erişim
+ * kaydı yok.
+ */
+const konuKimligi = (id: string) => id.replace(/-set-\d+$/, "");
+
 function flashcardYukle(branch: string, id: string): FlashcardVeri | null {
   try {
     const dosyaYolu = path.join(
@@ -75,13 +87,71 @@ export default async function HizliTekrarSayfasi({
   searchParams,
 }: {
   params: Promise<{ lang: string }>;
-  searchParams: Promise<{ branch?: string; id?: string }>;
+  searchParams: Promise<{ branch?: string; id?: string; topic?: string }>;
 }) {
   const { lang } = await params;
-  const { branch, id } = await searchParams;
+  const { branch, id, topic } = await searchParams;
 
-  if (!branch || !id || !isValidParam(branch) || !isValidParam(id)) notFound();
+  if (!branch || !isValidParam(branch)) notFound();
 
+  /**
+   * SET SEÇİMİ — `id` yerine `topic` verilirse.
+   *
+   * Bir konunun birden fazla hızlı tekrar seti olabiliyor; konu sayfasındaki
+   * modül kartı tek bir sete çakılı kalırsa okuyucu ötekileri hiç göremez.
+   * `topic` ile gelindiğinde tek set varsa doğrudan o set oynatılır (araya
+   * gereksiz bir tıklama girmez), birden fazlaysa seçim listesi çizilir.
+   */
+  if (!id) {
+    if (!topic || !isValidParam(topic)) notFound();
+
+    const setler = envanterAl(branch, topic).flashcardSetleri;
+    if (setler.length === 0) notFound();
+
+    const gate = await AccessGate({ topicId: topic, lang, branch });
+    if (gate) return gate;
+
+    if (setler.length === 1) {
+      return oynatici(branch, setler[0].id, lang);
+    }
+
+    const toplam = setler.reduce((t, s) => t + s.sayi, 0);
+    return (
+      <div style={{ minHeight: '100vh', background: '#fff', fontFamily: 'system-ui, -apple-system, sans-serif', color: '#1a2a3a' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto', padding: '1.5rem 1rem' }}>
+          <Link href={`/${lang}/premium/ydus/${branch}/${topic}`}
+            style={{ fontSize: '12px', color: '#4a6a8a', textDecoration: 'none', display: 'inline-block', padding: '8px 0' }}>
+            ← Konuya dön
+          </Link>
+          <h1 style={{ fontSize: '18px', fontWeight: 800, margin: '0.5rem 0 0.25rem' }}>Hızlı tekrar setleri</h1>
+          <p style={{ fontSize: '12px', color: '#4a6a8a', margin: '0 0 1rem' }}>
+            {setler.length} set · toplam {toplam} kart. Çalışmak istediğin seti seç.
+          </p>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {setler.map((set, i) => (
+              <li key={set.id}>
+                <Link href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${set.id}`}
+                  style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', minHeight: '44px', padding: '12px 14px', border: '0.5px solid #d0e4f5', borderRadius: '12px', background: '#fafcff', textDecoration: 'none', color: 'inherit' }}>
+                  <span style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0 }}>
+                    <span style={{ fontSize: '11px', color: '#4a6a8a', fontWeight: 600 }}>{i + 1}. set</span>
+                    <span style={{ fontSize: '13px', fontWeight: 700, color: '#1a3a6b' }}>{set.baslik}</span>
+                  </span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1a3a6b', flexShrink: 0 }}>{set.sayi} kart</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
+  if (!isValidParam(id)) notFound();
+  return oynatici(branch, id, lang, true);
+}
+
+/** Tek bir seti oynatır. `kapi` false ise erişim zaten sorulmuştur. */
+async function oynatici(branch: string, id: string, lang: string, kapi = false) {
   const veri = flashcardYukle(branch, id);
   if (!veri) notFound();
 
@@ -96,10 +166,14 @@ export default async function HizliTekrarSayfasi({
    */
   if (!Array.isArray(veri.cards) || veri.cards.length === 0) notFound();
 
-  const gate = await AccessGate({ topicId: id!, lang, branch: branch! });
-  if (gate) return gate;
+  const konu = konuKimligi(id);
 
-  const backHref = `/${lang}/premium/ydus/${branch}/${id}`;
+  if (kapi) {
+    const gate = await AccessGate({ topicId: konu, lang, branch });
+    if (gate) return gate;
+  }
+
+  const backHref = `/${lang}/premium/ydus/${branch}/${konu}`;
 
   return (
     <FlashcardPlayer

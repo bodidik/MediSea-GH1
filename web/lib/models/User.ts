@@ -10,6 +10,15 @@ export interface IUser extends Document {
   plan: UserPlan;
   institution: UserInstitution;
   trialEndsAt: Date | null;
+  /**
+   * Parolanın EN SON ne zaman değiştiğini damgalar; eski oturumları
+   * kapatmak için tek ölçüt bu (bkz. `auth.ts` jwt geri çağrısı).
+   *
+   * `updatedAt` KULLANILAMAZ: plan değişikliği, kurum ataması gibi
+   * parolayla ilgisi olmayan her yazma onu da ileri atar ve kullanıcının
+   * oturumu sebepsiz kapanırdı.
+   */
+  sifreDegistiAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -22,6 +31,7 @@ const UserSchema = new Schema<IUser>(
     plan:        { type: String, enum: ['free', 'member', 'premium'], default: 'free' },
     institution: { type: String, enum: ['kayseritip', null], default: null },
     trialEndsAt: { type: Date, default: null },
+    sifreDegistiAt: { type: Date, default: null },
   },
   { timestamps: true }
 );

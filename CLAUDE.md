@@ -2076,8 +2076,32 @@ deneme kullanıcısı açmak canlı veriye dokunmak olurdu. Sınamanın iki temi
 yolu var: (1) ayrı bir test veritabanı adresi, (2) tek kullanımlık bir
 hesabı açıp sonra silmek için açık onay.
 
-**KAPSANMAYAN — bilinen sınır:** JWT oturumları parola değişince
-GEÇERSİZLEŞMİYOR. Oturum `strategy: 'jwt'` ve `auth.config.ts` Edge'de
-çalıştığı için veritabanı okuyamıyor; iptal, `User`a bir sürüm alanı
-eklemeyi ve jwt geri çağrısını Node'a taşımayı gerektirir. Yani parolasını
-sıfırlayan kullanıcının ESKİ oturumu, süresi dolana dek açık kalır.
+**ESKİ OTURUM KAPATMA — sonradan eklendi (10 Eyl).** İlk turda açık
+bırakılmıştı: parola değişse bile eski JWT ömrü boyunca çalışıyordu, yani
+sıfırlama KOZMETİKTİ — hesabı ele geçirilmiş kullanıcı parolasını
+değiştirse de saldırganın oturumu ayakta kalırdı.
+
+Çare: `User.sifreDegistiAt` damgası (parola ile **aynı yazmada** basılıyor;
+ayrı çağrı olsaydı aradaki pencerede yeni parola geçerli ama eski oturum
+açık olurdu) ve `auth.ts` jwt geri çağrısında `damga > iat` ise jetonu
+düşürmek. `updatedAt` KULLANILMADI: plan/kurum değişikliği gibi parolayla
+ilgisi olmayan yazmalar oturumu sebepsiz kapatırdı.
+
+Maliyet sınırlı: her istekte veritabanına gidilmiyor, jetondaki
+`sonKontrol` damgasıyla en çok **5 dakikada bir** denetleniyor — bedeli,
+eski oturumun en fazla o kadar daha yaşaması. Veritabanına ulaşılamazsa
+oturum DÜŞÜRÜLMEZ (geçici kesinti bütün kullanıcıları atardı).
+
+⚠ **Kapsam sınırı bilerek:** denetim `auth.config.ts`e konulamaz, o dosya
+Edge'de yükleniyor ve orada mongoose yok. Yani `auth()` çağıran her yerde
+(sunucu bileşenleri, API uçları) çalışır, middleware'in kendi kapısında
+çalışmaz. Middleware yalnızca `/admin` ve `/kayseritip`i koruyor; ikisinin
+de ASIL yetki denetimi API uçlarında — ölçüldü: `/api/admin/access`
+yetkisizde **403**, `/admin/erisim` **307**, `_admin` klasörleri **404**
+(alt çizgi Next.js'te rota değil, o beş uç ölü kod).
+
+**Doğrulama sınırı:** oturum AÇIKKEN jwt geri çağrısı sürülmedi — gerçek
+bir hesap gerekiyor ve `MONGODB_URI` üretim kümesini gösteriyor.
+Sürülenler: `/api/auth/{session,providers,csrf}` 200, `/giris` · `/kayit` ·
+`/tools` · `/topics` 200, `lint` · `typecheck` · `build` temiz. Yani
+oturumsuz yol sağlam; oturumlu yol yalnızca tip ve derleme düzeyinde.

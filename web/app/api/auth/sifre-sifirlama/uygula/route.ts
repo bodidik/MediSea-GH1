@@ -60,7 +60,12 @@ export async function POST(req: NextRequest) {
     if (!kullanici) return gecersiz;
 
     const ozet = await bcrypt.hash(sifre, 12);
-    await User.updateOne({ _id: kullanici._id }, { $set: { password: ozet } });
+    /* Damga, parolayla AYNI yazmada basılıyor: ikisi ayrı çağrıda olsaydı
+       aradaki pencerede yeni parola geçerli ama eski oturum da açık kalırdı. */
+    await User.updateOne(
+      { _id: kullanici._id },
+      { $set: { password: ozet, sifreDegistiAt: new Date() } },
+    );
 
     kayit.kullanildiAt = new Date();
     await kayit.save();
