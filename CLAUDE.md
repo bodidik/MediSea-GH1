@@ -1838,3 +1838,41 @@ dedi; araç aslında **"GKS TOPLAM SKOR 15 · E4 + V5 + M6 / 15"** yazıyor.
 (2) `karnofsky`de şık metni rozetle birleşip `100100` oluyor ve sıralama
 bozuluyor. İkisinde de kusur araçta değil ölçütteydi — ham metni
 okumadan "sapma var" denseydi iki sahte kusur raporlanmış olurdu.
+
+---
+
+## Payda doğrulaması: 24 aracın 14'ü sürüldü, hepsi temiz (10 Eylül 2026)
+
+`payda-denetim`in "AYRIŞTIRILAMADI — temiz DENMİYOR" kovası tek tek
+sürüldü. Yöntem: aracı gizli bir `iframe`e yükle, her eksende en yüksek
+şıkkı seç, ekrandaki `N / ilan` kesrini oku. (`iframe` çalışıyor çünkü
+`X-Frame-Options` bilerek eklenmedi — deponun kendi ölçüm yöntemi bu.)
+
+**İLAN = ULAŞILABİLİR TAVAN — 14 araç:**
+
+| araç | payda | araç | payda |
+|---|---|---|---|
+| `ciwa-ar` | **67 / 67** | `ranson` | 5 / 5 |
+| `karnofsky` | 100 / 100 | `ipi` | 5 / 5 |
+| `findrisc` | 26 / 26 | `frail` | 5 / 5 |
+| `dlqi` | 30 / 30 | `bap65` | 3 / 3 |
+| `gcs` | 15 / 15 | `timi-ua` | 7 / 7 |
+| `gds-15` | 15 / 15 | `haq-di` | 8 / 8 |
+| `tnss` | 12 / 12 | `rts` | 12 / 12 |
+
+**ÖLÇÜLEMEYEN 10 araç — "temiz" DENMİYOR:** `cat-copd` · `mrss` ·
+`rapid3` · `scorad` · `fibromiyalji` (şık puanı DOM'da rozet olarak
+durmuyor, jenerik sürücü sıfır puanlı şıkkı seçiyor) · `esas` (aralık
+kaydırıcısı, düğme yok) · `glasgow-blatchford` · `conut` · `spot-urine` ·
+`basdai` (sayısal girdi ister).
+
+Aç gözlü sürücü (her şıkkı deneyip skoru okuyan) yazıldı ama **panelde
+zaman aşımına uğruyor**: gizli panelde `iframe` yüklemesi tek başına ~7 sn
+ve `innerText` okuması pahalı; `cat-copd`in 48 şıkkı 45 sn sınırını aşıyor.
+Bu araçlar tek tek, kendi şık biçimlerine göre sürülmeli.
+
+**YAN BULGU — denetimin "ilan" okuması da yanılabiliyor.** `basdai ilan 2`
+diyordu; kaynakta paydaya benzeyen tek şey `(q5 + q6) / 2`, yani sabah
+tutukluluğu ORTALAMASI. BASDAI'nin paydası yok (0–10). Yani bu araç
+listede olmamalıydı — "payda ilan eden 34 araç" sayısı da bu kadar kesin
+değil.
