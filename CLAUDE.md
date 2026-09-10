@@ -799,7 +799,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | madde | durum |
 |---|---|
 | **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
-| **`asdas` eksi sabit** | **İÇ ÇELİŞKİ ÖLÇÜLDÜ** (9 Eyl) — aynı girdide CRP **0.00**, ESR **−0.21**. Kaynak kararı sende, aşağıya bak |
+| **`asdas` eksi sabit** | **KAPSAM ÇIKARILDI** (10 Eyl) — eksi bölge %0.01, ama sabit 1.3 hedefini **%2.2 bileşimde** deviriyor. Seçenekler aşağıda |
 | **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
@@ -1875,3 +1875,47 @@ vardım. Kazanç sıfır değil — kaynak okumasıyla değil ÇALIŞMA ZAMANIND
 doğrulandı ve 22'sinde de tuttu — ama bedeli buna değmezdi. **Kural: bir
 denetimin çıktısını kovalamadan ÖNCE betiğin kendi başlığını oku;** bu
 depoda denetimler verdiktlerini kendi içlerinde taşıyor.
+
+---
+
+## `asdas` −0.211 sabiti: kapsam ve seçenekler (10 Eylül 2026)
+
+Kodun yorumu vakaları zaten sayıyordu; eksik olan ORAN'dı. 161.051 girdi
+bileşimi tarandı (NRS 0–10 dört alan × 11 ESR değeri). Tarama kaynaktan
+BİREBİR kopyalanan ifadelerle yapıldı ve **canlı araca karşı dört noktada
+doğrulandı** (0/0/0/0+ESR0 → 0.00 / −0.21 · 3,3,3,3+CRP5/ESR10 → 2.12 /
+1.76 · 4,3,4,3 → 2.35 / 2.03 · hepsi 10 → 6.29 / 6.19).
+
+| ölçüm | değer |
+|---|---|
+| ASDAS-ESR < 0 olan bileşim | **14 / 161.051 = %0.01** (hepsi ESR 0 + NRS'ler ~0); en düşük **−0.21** |
+| sabit VARKEN "inaktif hastalık" sayılan | %5,1 |
+| sabit YOKKEN "inaktif hastalık" sayılan | %2,9 |
+| **1.3 hedef eşiğini SABİT YÜZÜNDEN geçen** | **3.543 = %2,2** |
+| CRP↔ESR bandı ayrışması (varsayım: ESR ≈ 2×CRP) | sabitle **%23,7** · sabitsiz **%13,6** |
+| katsayılar birbirinin permütasyonu mu | **HAYIR** (CRP klinik toplam 0.362 · ESR 0.347) |
+
+**Üç şey netleşti:**
+1. Eksi skor bir KÖŞE vakası (%0.01), yaygın bir kusur değil — ama bir
+   hastalık aktivite indeksinin eksi çıkması kaynaktan bağımsız olarak yanlış.
+2. Asıl bedel eşikte: sabit, ASAS'ın tedavi hedefi olan 1.3'ü fiilen
+   1.511'e taşıyor ve **her 45 hastadan birini** "hedefe ulaştı" tarafına
+   geçiriyor (`[0,0,0,0] ESR 20` → sabitli 1.10 İNAKTİF, sabitsiz 1.31 aktif).
+3. Sabiti kaldırmak iki varyantı UYUŞTURMUYOR, yalnızca ayrışmayı yarıya
+   indiriyor (%23,7 → %13,6). Katsayılar da birbirinin karıştırılmış kopyası
+   DEĞİL — yani ESR varyantı ayrı bir denklem gibi duruyor, yanlış
+   aktarılmış bir CRP denklemi gibi değil.
+
+**Seçenekler (hiçbiri uygulanmadı):**
+
+| # | ne | sonuç |
+|---|---|---|
+| A | olduğu gibi bırak | eksi skor kalır; %2,2 sabit sayesinde "hedefte" |
+| B | `- 0.211`i kaldır | taban 0.00 olur (CRP ile aynı), ayrışma %13,6'ya iner — ama yayımlanmış bir denklemden terim ÇIKARMAK olur |
+| C | ekranda 0'a kırp | eksiyi gizler, eşik kayması ve %2,2 AYNEN kalır — sinyali maskeler, önermiyorum |
+| D | ESR varyantını kaldır | sınıfı tümden kapatır; ama CRP yokken ESR kullanılıyor |
+| E | formülü ekrana bas + kaynağı yaz | kusuru gidermez, ama sonraki okuyucu sabiti KAYNAKLA karşılaştırabilir |
+
+**Kaynak kararı gerekiyor:** B ile "düzeltilmiş sabit" arasında seçim,
+yayımlanmış ASDAS-ESR denkleminin hangisi olduğunu bilmeyi gerektiriyor ve
+o bilgi depoda hiçbir yerde yazılı değil.
