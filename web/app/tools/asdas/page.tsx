@@ -5,6 +5,27 @@ import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
+/**
+ * KATSAYILAR TEK KAYNAKTA — hem HESAP hem EKRANDAKİ FORMÜL buradan okuyor.
+ *
+ * Sebebi belgede kayıtlı "iki gerçeklik" sınıfı: formül ekrana ELLE
+ * yazılsaydı, biri katsayıyı değiştirdiğinde ekranda eski denklem kalırdı ve
+ * kullanıcı yanlış denklemi kaynağıyla karşılaştırırdı. Şimdi imkânsız —
+ * ikisi aynı nesneden türüyor.
+ */
+const KATSAYI = {
+  crp: { pain: 0.121, dur: 0.058, pat: 0.110, bk: 0.073, lab: 0.579, sabit: 0 },
+  esr: { pain: 0.113, dur: 0.086, pat: 0.069, bk: 0.079, lab: 0.293, sabit: -0.211 },
+} as const;
+
+/** Ekrandaki denklem metni — katsayılar yukarıdaki tek kaynaktan. */
+const formulMetni = (v: "crp" | "esr") => {
+  const k = KATSAYI[v];
+  const lab = v === "crp" ? `${k.lab} × ln(CRP + 1)` : `${k.lab} × √ESR`;
+  const kuyruk = k.sabit === 0 ? "" : ` ${k.sabit < 0 ? "−" : "+"} ${Math.abs(k.sabit)}`;
+  return `${k.pain} × Spinal ağrı + ${k.dur} × Sabah tutukluluğu + ${k.pat} × Hasta genel + ${k.bk} × Periferik + ${lab}${kuyruk}`;
+};
+
 export default function AsdasPage() {
   const [bk, setBk]     = React.useState("");
   const [pat, setPat]   = React.useState("");
@@ -65,7 +86,7 @@ export default function AsdasPage() {
    * hepsi BIR KEZ yuvarlayip hem basiyor hem bantliyor.
    */
   const crpScore  = klinikMakul && alanMakul(crp, 0, 500)
-    ? Math.round((0.121 * painN + 0.058 * durN + 0.110 * patN + 0.073 * bkN + 0.579 * Math.log(crpN + 1)) * 100) / 100
+    ? Math.round((KATSAYI.crp.pain * painN + KATSAYI.crp.dur * durN + KATSAYI.crp.pat * patN + KATSAYI.crp.bk * bkN + KATSAYI.crp.lab * Math.log(crpN + 1) + KATSAYI.crp.sabit) * 100) / 100
     : null;
   /**
    * ⚠ AÇIK SORU — `- 0.211` SABİTİ. Ölçüldü, DEĞİŞTİRİLMEDİ, karar bekliyor.
@@ -100,7 +121,7 @@ export default function AsdasPage() {
    * Klinik kaynak kararı kullanıcınındır.
    */
   const esrScore  = klinikMakul && alanMakul(esr, 0, 200)
-    ? Math.round((0.113 * painN + 0.293 * Math.sqrt(esrN) + 0.086 * durN + 0.069 * patN + 0.079 * bkN - 0.211) * 100) / 100
+    ? Math.round((KATSAYI.esr.pain * painN + KATSAYI.esr.lab * Math.sqrt(esrN) + KATSAYI.esr.dur * durN + KATSAYI.esr.pat * patN + KATSAYI.esr.bk * bkN + KATSAYI.esr.sabit) * 100) / 100
     : null;
 
   const getResult = (s: number) => {
@@ -203,6 +224,30 @@ export default function AsdasPage() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* KULLANILAN DENKLEMLER — ekranda, çünkü hesabın ne yaptığı
+            görünmeden kaynağıyla karşılaştırılamıyor. Metin `KATSAYI`den
+            türüyor; elle yazılmış bir kopya YOK. */}
+        <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
+          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Kullanılan Denklemler</p>
+          <div className="space-y-3">
+            {([
+              { ad: "ASDAS-CRP", v: "crp" as const },
+              { ad: "ASDAS-ESR", v: "esr" as const },
+            ]).map(({ ad, v }) => (
+              <div key={ad}>
+                <p className="text-[10px] font-black text-blue-900 uppercase tracking-widest">{ad}</p>
+                <p className="mt-1 text-[11px] leading-relaxed text-slate-700 break-words">{formulMetni(v)}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 text-[11px] leading-relaxed text-slate-600">
+            Aynı eşikler (1.3 · 2.1 · 3.5) iki varyanta da uygulanır. ASDAS-ESR
+            denklemindeki {Math.abs(KATSAYI.esr.sabit)} sabiti ASDAS-CRP&apos;de
+            yoktur; bu yüzden aynı hastada iki varyant farklı banda düşebilir.
+            Kılavuzlar ASDAS-CRP&apos;yi tercih eder.
+          </p>
         </div>
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-6">

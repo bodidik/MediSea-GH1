@@ -799,7 +799,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | madde | durum |
 |---|---|
 | **Türkçe binlik ayırıcı** | **KAPANDI** (9 Eyl) — düzeltilebilir üçü ayrıştırıcıda çözülmüş, gerçek belirsizlik artık SESSİZ DEĞİL: 9 araçta uyarı çıkıyor. Aşağıya bak |
-| **`asdas` eksi sabit** | **KAPSAM ÇIKARILDI** (10 Eyl) — eksi bölge %0.01, ama sabit 1.3 hedefini **%2.2 bileşimde** deviriyor. Seçenekler aşağıda |
+| **`asdas` eksi sabit** | **E UYGULANDI** (10 Eyl) — denklemler ekranda, katsayılar tek kaynakta. Sabitin kendisi hâlâ kaynak kararı |
 | **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
 | **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
@@ -1919,3 +1919,41 @@ doğrulandı** (0/0/0/0+ESR0 → 0.00 / −0.21 · 3,3,3,3+CRP5/ESR10 → 2.12 /
 **Kaynak kararı gerekiyor:** B ile "düzeltilmiş sabit" arasında seçim,
 yayımlanmış ASDAS-ESR denkleminin hangisi olduğunu bilmeyi gerektiriyor ve
 o bilgi depoda hiçbir yerde yazılı değil.
+
+---
+
+## `asdas`: denklemler ekrana basıldı (E seçeneği · 10 Eylül 2026)
+
+Kullanıcı kararı: sabit DEĞİŞTİRİLMEDİ, ama hesabın ne yaptığı görünür
+oldu — kaynağıyla karşılaştırmanın önkoşulu buydu.
+
+Katsayılar `KATSAYI` nesnesinde **tek kaynakta**; hem hesap hem ekrandaki
+denklem metni oradan türüyor. Formül ELLE YAZILSAYDI klasik "iki gerçeklik"
+olurdu: biri katsayıyı değiştirir, ekranda eski denklem kalır ve kullanıcı
+YANLIŞ denklemi kaynağıyla karşılaştırırdı.
+
+Ekranda:
+
+```
+ASDAS-CRP  0.121 × Spinal ağrı + 0.058 × Sabah tutukluluğu + 0.11 × Hasta
+           genel + 0.073 × Periferik + 0.579 × ln(CRP + 1)
+ASDAS-ESR  0.113 × … + 0.293 × √ESR − 0.211
+```
+
+Altına, ölçülmüş olanı söyleyen bir not: aynı eşikler iki varyanta da
+uygulanıyor, `0.211` sabiti CRP'de yok, bu yüzden aynı hastada bantlar
+ayrışabiliyor, kılavuzlar CRP'yi tercih ediyor.
+
+| ölçüt | sonuç |
+|---|---|
+| dört vakada skorlar | **birebir aynı** (0.00/−0.21 · 2.12/1.76 · 2.35/2.03 · 6.29/6.19) — davranış değişmedi |
+| `h1` / `h2` | 1 / 2 — değişmedi (blok `<p>` kullanıyor) |
+| yatay taşma | yok |
+
+**TEK KAYNAK KANITI, tesadüfen:** ekranda `0.110` değil **`0.11`** yazıyor —
+JavaScript sondaki sıfırı düşürüyor. Elle yazılmış bir metin `0.110`
+derdi; yani basılan denklemin gerçekten `KATSAYI`den türediği çıktının
+kendisinden görülüyor.
+
+Sabitin kendisi hâlâ AÇIK: kaldırmak mı, düzeltmek mi — yayımlanmış
+ASDAS-ESR denklemini bilmeyi gerektiriyor.
