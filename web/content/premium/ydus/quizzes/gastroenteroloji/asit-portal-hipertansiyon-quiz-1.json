@@ -483,6 +483,126 @@
       ],
       "zorluk": "orta",
       "kaynak": "Uluslararası hepatoloji kılavuzları — bakteriyasit yönetimi"
+    },
+    {
+      "id": "s17",
+      "metin": "52 yaşında erkek hasta, Hepatit B virüsü (HBV) ilişkili dekompanse karaciğer sirozu zemininde ilk kez gelişen orta derece (Evre 2) asit nedeniyle gastroenteroloji polikliniğine başvuruyor. Özgeçmişinde hipertansiyon veya böbrek hastalığı bulunmamaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 110/72 mmHg · nabız 76/dk; açıklığı aşağı bakan matite veren mobilize asit, **bacaklarda ödem saptanmıyor.** **Kan biyokimyası:** Na 137 mEq/L · K 4.2 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 2.1 mg/dL · Albümin 2.7 g/dL · INR 1.3. **Diagnostik parasentez:** SAAG 1.6 g/dL (yüksek gradyan) · Total protein 1.4 g/dL · PMN 60/mm³ (Gram boyama ve kültür negatif; SBP yok). Hastaya diyetle sodyum kısıtlaması (<2 g/gün) ve diüretik tedavisi başlanması planlanıyor. Siroza bağlı unkomplike asidin ilk basamak tedavisi, diüretik doz titrasyonu ve izlem hedefleri düşünüldüğünde, aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada bacak ödemi bulunmadığı için diüretik tedavisi altında hedeflenmesi gereken günlük maksimum kilo kaybı 1.0 kg olmalıdır; bu sınır aşılırsa intravasküler hacim depresyonu ve akut böbrek hasarı riski artar.",
+        "B": "Normokalemiyi korumak ve hızlı natriürez sağlamak amacıyla diüretik tedavisine tek doz sabah oral 100 mg Spironolakton ve 40 mg Furosemid kombinasyonu ile başlanması; yanıt alınamadığı takdirde 100:40 oranı korunarak dozların kademeli olarak artırılması önerilen temel yaklaşımdır.",
+        "C": "Diüretik tedavisine yanıtı değerlendirmede 24 saatlik idrar toplaması şarttır; spot idrarda sodyum/potasyum (Na/K) oranının ölçülmesi klinik pratikte yanıltıcı olduğu için kesinlikle önerilmez.",
+        "D": "Tedavi sırasında spironolaktona bağlı ağrılı jinekomasti gelişmesi durumunda, mineralokortikoid reseptör blokajını sürdürmek için spironolakton kesilip yerine tavan dozdaki furosemid monoterapisine geçilmelidir.",
+        "E": "Diüretik kullanımı sırasında serum sodyum düzeyi 132 mEq/L'ye düştüğünde tüm diüretik tedavisi derhal kesilmeli ve %3'lük hipertonik salin infüzyonu başlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Unkomplike sirotik asitte standart başlangıç, sabah tek doz 100 mg Spironolakton + 40 mg Furosemid (100:40); yanıtsızlıkta oran korunarak her 3-5 günde bir maksimum 400/160 mg'a kadar titre edilir.",
+      "aciklama_detay": "Siroza bağlı unkomplike asit tedavisinde diyetle sodyum kısıtlamasının (<2 g/gün veya 88 mEq/gün) yanında diüretik rejimine sabit 100:40 oranında (100 mg Spironolakton + 40 mg Furosemid) tek doz sabah oral kombinasyon ile başlanması önerilmektedir. Bu kombinasyon, spironolaktonun potasyum tutucu etkisi ile furosemidin potasyum kaybettirici etkisini dengeleyerek hastayı normokalemik tutar ve monoterapiye kıyasla çok daha hızlı natriürez sağlar. Klinik yanıt alınamadığında 100:40 oranı korunarak doz her 3-5 günde bir kademeli olarak maksimum 400 mg Spironolakton / 160 mg Furosemid düzeyine kadar artırılabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Diüretik tedavisi altında tolere edilebilir maksimum kilo kaybı periferik ödem varlığına göre değişir. Periferik ödemi olan hastalarda günde maksimum 1.0 kg tolere edilebilirken; periferik ödemi OLMAYAN hastalarda (vakamızdaki gibi) hedef günlük maksimum 0.5 kg'dır. Bu emilim sınırının üzerinde diürez sağlanması intravasküler hacim depresyonuna ve prerenal azotemiye yol açar.",
+        "B": "DOGRU — 100:40 sabit oranı normokalemiyi korur ve monoterapiden hızlı natriürez sağlar; yanıtsızlıkta oran bozulmadan kademeli doz artışı yapılır.",
+        "C": "YANLIS — 24 saatlik idrar toplanması teknik olarak zor ve hataya açık olduğundan, klinik pratikte spot idrar sodyum/potasyum (Na/K) oranı güvenilir bir alternatif olarak kullanılır. Spot idrarda Na/K oranının >1.0 olması, 24 saatlik idrar sodyum atılımının >78-80 mmol/gün olduğunu yüksek doğrulukla öngörür.",
+        "D": "YANLIS — Spironolaktona bağlı ağrılı jinekomasti geliştiğinde spironolakton kesilmelidir; ancak yerine yalnızca kıvrım diüretiği (furosemid) verilmez. Distal nefrondaki mineralokortikoid blokajını sürdürmek amacıyla spironolaktonun yerine Amilorid (10-40 mg/gün) geçilmelidir.",
+        "E": "YANLIS — Diüretik tedavisi sırasında hafif dilüsyonel hiponatremi (serum Na 126-135 mEq/L) sık görülür ve bu seviyelerde ilacın kesilmesine gerek yoktur. Diüretiğin derhal durdurulmasını gerektiren eşik, serum sodyumunun <120-125 mEq/L altına düşmesidir. Ayrıca sirotik hipervolemik hiponatremide hipertonik salin infüzyonu volüm yüklenmesini şiddetlendireceği için ağır semptomatik vakalar haricinde kontrendikedir."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Diüretik Titrasyonu",
+        "100:40",
+        "Kilo Kaybı Hedefi",
+        "Spot İdrar Na/K"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AASLD/EASL sirotik asit yönetim ilkeleri"
+    },
+    {
+      "id": "s18",
+      "metin": "48 yaşında erkek hasta, kronik alkol kullanımına sekonder gelişen Child-Pugh B (8 puan) karaciğer sirozu zemininde karın çevresinde son 2 aydır giderek artan şişlik (orta derece / Evre 2 asit) şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Hasta daha önce hiç asit atağı geçirmediğini ve herhangi bir diüretik veya profilaktik ilaç kullanmadığını belirtiyor. **Fizik muayene ve vital bulgular:** kan basıncı 115/72 mmHg · nabız 78/dk · ateş 36.5 °C; mobilize asit, pretibiyal ödem yok; ensefalopati bulgusu yok (Evre 0). **Kan biyokimyası:** Na 138 mEq/L · K 4.1 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 2.3 mg/dL · Albümin 2.8 g/dL · INR 1.3. **Diagnostik parasentez:** SAAG 1.7 g/dL (yüksek gradyan) · Total protein 1.6 g/dL · PMN 80/mm³ (Gram boyama ve kültür negatif; SBP ekarte edildi). Siroza bağlı ilk kez gelişen unkomplike asidin başlangıç tedavisi (initial therapy), diyet ve izlem stratejileri düşünüldüğünde, aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Sodyum kısıtlamasına (<2 g/gün) ek olarak, sıvı alımı da hastanın serum sodyum düzeyine bakılmaksızın başlangıç tedavisinde rutin olarak günlük maksimum 1000 mL ile kısıtlanmalıdır.",
+        "B": "Alkol kullanımına bağlı siroz vakalarında alkolün tamamen bırakılması, portal basınçta belirgin düşüş sağlayarak asit tablosunda aylar içerisinde tam çözülme veya dramatik gerileme sağlayabilir.",
+        "C": "Başlangıç diüretik tedavisinde spironolakton monoterapisinin tercih edilmesi, spironolakton ve furosemid kombinasyonuna kıyasla her zaman daha hızlı natriürez sağlar.",
+        "D": "Yemek lezzetini artırmak amacıyla hastaya potasyum bazlı tuz muadilleri (salt substitutes) kısıtlama olmaksızın serbestçe önerilebilir.",
+        "E": "Serum sodyumu 138 mEq/L olan ve diüretik tedavisine başlanan bu hastada, kilo kaybı sağlanamadığında yapılması gereken ilk müdahale %3'lük hipertonik salin infüzyonudur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Alkolik siroza bağlı asitte alkolün tamamen kesilmesi intrahepatik direnci ve portal basıncı düşürerek asidin aylar içinde gerilemesini ya da tümüyle çözülmesini sağlayabilir.",
+      "aciklama_detay": "Alkolik karaciğer sirozuna sekonder asit gelişen hastalarda temel tıbbi yaklaşımlardan biri alkol kullanımının tamamen kesilmesidir. Alkolün bırakılması, intrahepatik vasküler direnci ve portal venöz basıncı zamanla düşürerek asit sıvısının aylar içerisinde tamamen gerilemesine veya belirgin düzeyde kontrol altına alınmasına olanak tanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sirotik asit tedavisinde diyetle sodyum alımı günlük <2 gram (2000 mg) seviyesine kısıtlanmalıdır. Ancak sıvı kısıtlaması başlangıç tedavisinde rutin olarak uygulanmaz. Sıvı kısıtlaması yalnızca serum sodyum düzeyinin <120-125 mEq/L altına düştüğü ciddi dilüsyonel hiponatremi vakalarında gereklidir.",
+        "B": "DOGRU — Alkolün tamamen bırakılması portal basıncı düşürerek asidin aylar içinde gerilemesini veya tam çözülmesini sağlayabilir; alkolik siroza bağlı asitte temel tıbbi yaklaşımlardan biridir.",
+        "C": "YANLIS — Spironolakton monoterapisi hafif vakalarda kullanılabilse de, Spironolakton ve Furosemid kombinasyonu (100:40 mg başlangıç oranı) tercih edilen standart rejimdir. Kombinasyon tedavisi, monoterapiye kıyasla çok daha hızlı natriürez sağlar ve elektrolit imbalansı (hiperkalemi/hipokalemi) riskini dengeler.",
+        "D": "YANLIS — Sodyum kısıtlaması uygulanan siroz hastalarında, doktor onayı olmadan tuz muadillerinin (salt substitutes) kullanımı önerilmez. Bu ürünler sıklıkla yüksek miktarda potasyum içerir ve özellikle spironolakton gibi potasyum tutucu diüretik kullanan siroz hastalarında hayati risk taşıyan şiddetli hiperkalemiye yol açabilir.",
+        "E": "YANLIS — Serum sodyumu normal sınırlarda (138 mEq/L) olan bir hastada hipertonik salin endikasyonu kesinlikle yoktur. Hipertonik salin infüzyonu yalnızca akut semptomatik ağır hiponatremi durumlarında sınırlı şekilde değerlendirilir; dirençli asit veya kilo kaybı sağlanamaması durumunda volüm yüklenmesini ve ödemi şiddetlendireceği için kullanılmaz."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Alkol Kesilmesi",
+        "Sıvı Kısıtlaması",
+        "Tuz Muadili",
+        "Hiperkalemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AASLD/EASL sirotik asit yönetim ilkeleri"
+    },
+    {
+      "id": "s19",
+      "metin": "57 yaşında erkek hasta, MASH zemininde dekompanse karaciğer sirozu ve dirençli asit (refrakter asit) tanısıyla takip edilmektedir. Son 2 ay içerisinde 4 kez geniş hacimli parasentez (LVP) uygulanmıştır. Diyetle sodyum kısıtlamasına (<2 g/gün) uyum sağlayan hastanın diüretik tedavisi, 1 ay önce gelişen tekrarlayan Akut Böbrek Hasarı (AKİ) ve hiponatremi nedeniyle kesilmiştir. Özofagus varis kanaması ikincil profilaksisi için **Propranolol 40 mg 2x1** kullanmaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 86/52 mmHg (MAP 63 mmHg) · nabız 78/dk; masif gergin asit. **Laboratuvar:** Na 124 mEq/L · K 4.6 mEq/L · Kreatinin 1.5 mg/dL · Total bilirubin 2.8 mg/dL · Albümin 2.4 g/dL · INR 1.6 · MELD-Na 18 · Child-Pugh 9 (Child B). **Diagnostik parasentez:** SAAG 1.8 g/dL · PMN 70/mm³ (Gram boyama ve kültür negatif). **Ekokardiyografi:** LVEF %60, pulmoner hipertansiyon yok. Güncel kaynaklar ve uluslararası hepatoloji kılavuzları doğrultusunda, bu hastanın dirençli asit yönetimi ve medikal tedavisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada persistan sistolik hipotansiyon (SKB < 90 mmHg / MAP < 65 mmHg), hiponatremi (Na < 125 mEq/L) ve renal yetmezlik mevcuttur; bu nedenle Non-Selektif Beta-Bloker (Propranolol) tedavisi kesilmeli ve varis kanaması ikincil profilaksisi Endoskopik Bant Ligasyonu (EBL) ile sürdürülmelidir.",
+        "B": "Dirençli asit tedavisinde tekrarlayan geniş hacimli parasentez ihtiyacını tamamen ortadan kaldırmak amacıyla, kalıcı tünelli periton kateteri (indwelling peritoneal drain) yerleştirilmesi ilk basamak standart tedavi seçeneğidir.",
+        "C": "Oral alfa-1 adrenerjik agonist olan midodrin; sistemik arteriyel kan basıncını yükselterek ve renal sodyum atılımını artırarak geniş hacimli parasentez (LVP) ve albümin replasmanı uygulamasını tamamen gereksiz kılan tek küratif ajandır.",
+        "D": "Her LVP seansında boşaltılan asit sıvısı miktarı 5 litrenin üzerinde olsa dahi, post-parasentez dolaşım disfonksiyonunu (PICD) önlemek için intravenöz albümin yerine sentetik plazma genişleticileri (dekstran veya jelatin) eşit klinik etkinlikle kullanılmalıdır.",
+        "E": "Dirençli asit gelişen ve karaciğer rezervi korunmuş (MELD < 19) bu hastada Peritoneovenöz Şant (LeVeen / Denver şantı), yüksek greft açıklığı ve düşük komplikasyon oranı nedeniyle TIPS ve karaciğer naklinin önüne geçen öncelikli girişimsel yaklaşımdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hipotansiyon (MAP 63 mmHg), Na < 125 mEq/L ve renal yetmezlik birlikteliğinde NSBB kesilir; varis ikincil profilaksisi ilaçsız bırakılmaz, Endoskopik Bant Ligasyonu ile sürdürülür.",
+      "aciklama_detay": "Dirençli asitli siroz hastalarında, sistemik arteriyel vazodilatasyonun derinleşmesine bağlı olarak hemodinamik kompanzasyon bozulur. Sistolik kan basıncının < 90 mmHg (veya MAP < 65 mmHg) olması, dirençli hiponatremi (serum Na < 125 mEq/L), Akut Böbrek Hasarı (AKİ) veya Spontan Bakteriyel Peritonit (SBP) gelişmesi durumunda Non-Selektif Beta-Blokerlerin (NSBB — Propranolol/Nadolol) kardiyak debiyi baskılayarak perfüzyon basıncını düşürdüğü ve mortaliteyi artırdığı gösterilmiştir. Bu tür durumlarda NSBB tedavisi kesilmeli veya dozu azaltılmalı; varis kanaması profilaksisine ise non-farmakolojik yöntem olan Endoskopik Bant Ligasyonu (EBL) ile devam edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MAP 63 mmHg, Na 124 mEq/L ve kreatinin yüksekliği birlikteliğinde NSBB kesilir; ikincil profilaksi Endoskopik Bant Ligasyonu ile sürdürülür.",
+        "B": "YANLIS — Kalıcı tünelli periton kateterleri (indwelling peritoneal drains), sirotik dirençli asitte yüksek bakteriyel peritonit, persistan protein/sıvı kaybı ve kateter disfonksiyonu riski taşıdığı için rutin ilk basamak tedavi olarak önerilmez. Yalnızca karaciğer nakli veya TIPS adayı olmayan, son evre palyatif/bakımevi hastalarında seçilmiş bir alternatif olarak değerlendirilebilir.",
+        "C": "YANLIS — Midodrin (oral alfa-1 agonist), sistemik vasküler direnci ve MAP'ı artırarak idrar sodyum atılımını geçici olarak yükseltebilir. Ancak LVP ve IV albümin uygulamasını tamamen ortadan kaldıran veya hastalığı tek başına tedavi eden bir ajan değildir; diüretik toleranssızlığı/hipotansiyonu olan dirençli asit vakalarında yalnızca destekleyici bir yardımcı tedavi olarak kullanılabilir.",
+        "D": "YANLIS — 5 litrenin üzerindeki geniş hacimli parasentez (LVP) sonrasında PICD'yi, hiponatremiyi ve AKİ'yi önlemede en etkili ajan intravenöz insan albüminidir (çıkarılan asit sıvısının litresi başına 6–8 gram). Sentetik plazma genişleticileri (dekstran, poligelin vb.) albümin kadar etkili değildir ve klinik sonlanımları düzeltmede yetersiz kalmaktadır.",
+        "E": "YANLIS — Peritoneovenöz şantlar (LeVeen / Denver şantı), yüksek oranda şant tıkanması, Dissemine İntravasküler Koagülasyon (DİK), SBP ve enfeksiyon gibi ciddi komplikasyon riskleri taşıması nedeniyle günümüz modern hepatoloji pratiğinde neredeyse tamamen terk edilmiştir. Uygun adaylarda (MELD < 19, kardiyak yetmezliği olmayan) ilk basamak girişimsel seçenek TIPS, nihai çözüm Karaciğer Naklidir."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "NSBB",
+        "EBL",
+        "Peritoneovenöz Şant",
+        "PICD"
+      ],
+      "zorluk": "zor",
+      "kaynak": "EASL / Baveno VII — dekompanse sirozda NSBB kullanımı"
+    },
+    {
+      "id": "s20",
+      "metin": "60 yaşında erkek hasta, HCV ve kronik alkol kullanımına sekonder gelişen dekompanse karaciğer sirozu ve dirençli asit (refrakter asit) nedeniyle gastroenteroloji polikliniğine başvuruyor. Hasta son 3 aydır **her 2 haftada bir yaklaşık 6–7 litrelik geniş hacimli parasentez (LVP)** işlemine ihtiyaç duymaktadır. Özgeçmişinde son 6 ay içinde 3 kez hastaneye yatış gerektiren **Evre 2-3 Hepatik Ensefalopati (HE)** atakları mevcuttur. **Kan biyokimyası:** Kreatinin 1.6 mg/dL · BUN 38 mg/dL · Total bilirubin 3.8 mg/dL · Na 128 mEq/L · Albümin 2.2 g/dL · INR 1.9. **Skorlama:** MELD-Na 20 · Child-Turcotte-Pugh 11 (Child C). **TTE:** LVEF %55, hafif diyastolik disfonksiyon, pulmoner hipertansiyon yok. **Asit sıvısı analizi:** SAAG 1.8 g/dL · Total protein 1.0 g/dL · PMN 90/mm³ (SBP yok). Güncel gastroenteroloji kılavuzlarındaki refrakter asit yönetim algoritması göz önüne alındığında, bu hastanın ilerletilmiş klinik yönetimi ve tedavi stratejisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada tekrarlayan belirgin Hepatik Ensefalopati (HE) öyküsü ve yüksek MELD skoru (>19) bulunması nedeniyle TIPS uygulaması kontrendikedir; hasta Karaciğer Nakli adayı olarak değerlendirilmeli ve nakil/değerlendirme sürecinde i.v. albümin destekli periyodik Geniş Hacimli Parasentez (LVP) ile takip edilmelidir.",
+        "B": "Tekrarlayan parasentez ihtiyacını ortadan kaldırmak amacıyla, MELD ve ensefalopati durumuna bakılmaksızın karaciğer nakli öncesinde ilk basamak girişimsel tedavi olarak kalıcı tünelli periton kateteri (indwelling peritoneal drain) takılmalıdır.",
+        "C": "Refrakter asitte medikal tedavinin başarısız olduğu tüm hastalarda MELD skoru 20 olsa dahi ilk tercih edilmesi gereken standart prosedür doğrudan TIPS uygulamasıdır.",
+        "D": "LVP aralıklarını uzatmak amacıyla spironolakton dozu 800 mg/gün, furosemid dozu ise 320 mg/gün seviyesine çıkarılarak medikal diüretik tedavisi zorlanmalıdır.",
+        "E": "Periyodik LVP sırasında hastaya eş zamanlı oral alfa-1 agonist (midodrin) başlanması hâlinde, boşaltılan sıvı miktarı 5 litrenin üzerinde olsa bile intravenöz albümin infüzyonu yapılmasına gerek kalmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tekrarlayan Evre 2-3 HE ve MELD-Na 20, TIPS için kontrendikasyondur: hasta doğrudan nakil değerlendirmesine yönlendirilir ve bu sürede i.v. albümin destekli periyodik LVP ile takip edilir.",
+      "aciklama_detay": "Refrakter asit yönetiminde standart başlangıç tedavisi periyodik Geniş Hacimli Parasentez (LVP) ve i.v. albümin infüzyonudur. Hastanın sonraki basamakta TIPS açısından adaylığı değerlendirilir. Ancak tekrarlayan/kronik dirençli Hepatik Ensefalopati (HE) öyküsü bulunması, MELD skorunun >18–19 olması veya ciddi kardiyak yetmezlik varlığı TIPS uygulaması için önemli kontrendikasyonlar oluşturur ve yüksek post-TIPS mortalitesi ile ilişkilidir. Vakamızda MELD-Na skorunun 20 olması ve Evre 2-3 tekrarlayan HE öyküsü bulunması nedeniyle hasta TIPS için uygun bir aday değildir. Bu durumda hasta vakit kaybetmeden Karaciğer Nakli açısından değerlendirilmeli ve bu süreçte i.v. albümin eşliğinde periyodik LVP'lerle takip edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tekrarlayan Evre 2-3 HE öyküsü ve MELD-Na 20 TIPS'i dışlar; doğru yol nakil değerlendirmesi ve bu süreçte albümin destekli periyodik LVP'dir.",
+        "B": "YANLIS — Kalıcı tünelli periton kateterleri, karaciğer nakli adayı olan veya küratif tedavi şansı bulunan hastalarda ilk basamak olarak kesinlikle önerilmez. Kateterler yüksek enfeksiyon (peritonit/sepsis), masif protein kaybı ve kateter tıkanması riski taşır; yalnızca nakil veya TIPS adayı olmayan, palyatif bakıma alınan ve periyodik LVP yerine kateteri tercih eden hastalar için bir seçenektir.",
+        "C": "YANLIS — Refrakter asitte TIPS oldukça etkili bir portal basınç düşürücü yöntem olsa da; MELD skoru >19 olan veya ciddi HE öyküsü bulunan hastalarda TIPS sonrası karaciğer yetmezliği ve mortalite riski belirgin şekilde arttığından doğrudan TIPS uygulanması kontrendikedir.",
+        "D": "YANLIS — Sirozda önerilen maksimum diüretik dozları 400 mg/gün Spironolakton ve 160 mg/gün Furosemid'dir. Refrakter asit tanısı konulmuş bir hastada bu tavan dozların üzerine çıkılması natriüretik fayda sağlamaz; aksine şiddetli renal perfüzyon bozukluğu (AKİ), dirençli elektrolit imbalansı ve sistemik çöküşe neden olur.",
+        "E": "YANLIS — 5 litrenin üzerindeki LVP işlemlerinde PICD'yi önlemek için boşaltılan her litre asit sıvısı için 6–8 gram IV insan albümini verilmesi şarttır. Midodrin veya diğer oral ajanlar LVP sırasındaki albümin replasmanının yerini alamaz."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "TIPS Kontrendikasyonu",
+        "Karaciğer Nakli",
+        "LVP",
+        "Hepatik Ensefalopati"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Refrakter asit yönetim algoritması (UpToDate / güncel kılavuzlar)"
     }
   ]
 }
