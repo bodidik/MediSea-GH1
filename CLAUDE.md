@@ -802,7 +802,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **`asdas` eksi sabit** | **E UYGULANDI** (10 Eyl) — denklemler ekranda, katsayılar tek kaynakta. Sabitin kendisi hâlâ kaynak kararı |
 | **`essdai` kutanöz 3. düzey yok** | **TAVAN ÖLÇÜLDÜ** (9 Eyl) — 12 alanın 12'si en üstte iken araç **120** basıyor (yayımlanmış 123) |
 | **`gh-test` BMI eşikleri** | **KAPANDI** — 8 Eyl'de `7f352969` ile: `BMI_OPTS` seçicisi eklendi, eşik ona bağlandı (`BMI<25` 11,5 · `25–30` 8 · `>30` 4). Satır bayattı |
-| **`fibromiyalji` üçüncü tanı dalı** | ACR 2016'da YOK; WPI 0 + SS 11 tanı alıyor |
+| **`fibromiyalji` üçüncü tanı dalı** | **ÖLÇÜLDÜ + ÖLÇÜT TEK KAYNAĞA ALINDI** (10 Eyl) — dal DEĞİŞTİRİLMEDİ; kapsam 260 bileşimin **8'i**. Aşağıya bak |
 | **`gout-acr` atak ekseni** | **KAPANDI** (10 Eyl) — eksen atak SAYISINI soruyor; tavan **24 → 23**, iki çelişki tek düzeltmeyle kapandı. Aşağıya bak |
 | **`lawton-iadl` erkek varyantı** | 1969 puanlaması erkekte 5 madde; araç herkese 8 |
 | **kilo makullük sınırı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: hepsi **20–300**. 20 araç tek kaynakta (`KILO_ALT`/`KILO_UST`), arayüzdeki aralık metinleri de oradan türüyor. Aşağıya bak |
@@ -1957,3 +1957,36 @@ kendisinden görülüyor.
 
 Sabitin kendisi hâlâ AÇIK: kaldırmak mı, düzeltmek mi — yayımlanmış
 ASDAS-ESR denklemini bilmeyi gerektiriyor.
+
+---
+
+## `fibromiyalji` üçüncü dal: ölçüm + ölçüt metni tek kaynağa alındı (10 Eylül 2026)
+
+**Canlıda doğrulandı:** WPI **0** — hasta 19 bölgenin hiçbirinde ağrı
+bildirmemişken — SS azami olduğunda araç **"FİBROMİYALJİ TANISI
+KARŞILANIYOR"** basıyor. Aracın kendi alt başlığı WPI'yi "Yaygın Ağrı
+İndeksi" diye tanımlıyor. Sınır da ölçüldü: SS 12 ✓ · SS 11 ✓ · **SS 10 ✗**.
+
+Kapsam küçük: 260 (WPI 0–19 × SS 0–12) bileşiminin **8'i** yalnızca bu
+daldan tanı alıyor (WPI 0–3 × SS 11–12). Dal olmasa tanı alan bileşim
+124 → 116.
+
+**Dala DOKUNULMADI** — ACR 2016'da bulunup bulunmadığı kaynak kararı.
+
+**Ama yanında duran gerçek bir kusur kapatıldı:** ekrandaki ölçüt metni
+(`"WPI ≥ 7 + SS ≥ 5, veya …"`) ELLE YAZILMIŞ bir kopyaydı. Dallardan biri
+değişse ekranda eski ölçüt kalır, araç uygulamadığı bir kuralı İLAN
+ederdi. Artık karar da metin de tek bir `DALLAR` dizisinden türüyor.
+
+**Tek kaynak KANITLANDI, iddia edilmedi:** üçüncü dal diziden geçici
+olarak çıkarıldı → ekrandaki metinden `WPI ≤ 3` **kayboldu** ve aynı anda
+WPI 0 vakası "KARŞILANMIYOR"a döndü. Sonra geri alındı ve dört senaryo
+yeniden ölçüldü.
+
+Yan temizlik: `const hadDuration = true; // assumed` — hiç okunmayan ölü
+değişken, kaldırıldı. Aracın 3 aylık süre koşulu için girdisi yok; metin
+bunu klinisyene HATIRLATMA olarak yazıyor, ölçtüğünü iddia etmiyor.
+
+**Kendi hatam:** geçici dal silmesini geri alırken `git checkout --` kullandım
+ve aynı dosyadaki YENİ refaktörü de sildim. Aynı dosyada commit edilmemiş
+başka değişiklik varken geçici denemeyi böyle geri alma; yamayı elle çevir.

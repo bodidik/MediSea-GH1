@@ -52,14 +52,35 @@ export default function FibromiyaljiPage() {
   const ssExtra  = extra.size <= 3 ? extra.size : 3;
   const ssScore  = ssBase + ssExtra;
 
-  const diagnosed = (
-    (wpiScore >= 7 && ssScore >= 5) ||
-    (wpiScore >= 4 && wpiScore <= 6 && ssScore >= 9) ||
-    (wpiScore >= 0 && wpiScore <= 3 && ssScore >= 11)
-  ) && Object.keys(sev).length === SS_ITEMS.length;
+  /**
+   * TANI DALLARI TEK KAYNAKTA — hem KARAR hem EKRANDAKİ ÖLÇÜT METNİ buradan.
+   *
+   * Metin bir dönem elle yazılmış bir kopyaydı ("WPI ≥ 7 + SS ≥ 5, veya …").
+   * Dallardan biri değişse ekranda ESKİ ölçüt kalırdı ve araç, uygulamadığı
+   * bir kuralı İLAN ederdi — belgede kayıtlı "ilan mı gerçek mi" sınıfı.
+   * Artık ikisi aynı diziden türüyor; ayrışması imkânsız. ÖLÇÜLDÜ: üçüncü
+   * dal geçici olarak diziden çıkarıldığında ekrandaki ölçüt metninden de
+   * "WPI ≤ 3" kayboldu ve WPI 0 vakası aynı anda "KARŞILANMIYOR"a döndü.
+   *
+   * ⚠ ÜÇÜNCÜ DAL AÇIK MADDE, DEĞİŞTİRİLMEDİ: `WPI ≤ 3 + SS ≥ 11`.
+   * Ölçüldü (canlı): WPI **0** — hasta 19 bölgenin HİÇBİRİNDE ağrı
+   * bildirmemişken — SS azami olduğunda araç "FİBROMİYALJİ TANISI
+   * KARŞILANIYOR" basıyor. Aracın kendi alt başlığı WPI'yi "Yaygın Ağrı
+   * İndeksi" diye tanımlıyor. Kapsam küçük: 260 (WPI, SS) bileşiminin 8'i
+   * yalnızca bu daldan tanı alıyor (WPI 0–3 × SS 11–12). Dalın ACR 2016'da
+   * bulunup bulunmadığı KAYNAK kararı, kullanıcınındır.
+   */
+  const DALLAR = [
+    { kosul: (w: number, s: number) => w >= 7 && s >= 5, metin: "WPI ≥ 7 + SS ≥ 5" },
+    { kosul: (w: number, s: number) => w >= 4 && w <= 6 && s >= 9, metin: "WPI 4–6 + SS ≥ 9" },
+    { kosul: (w: number, s: number) => w <= 3 && s >= 11, metin: "WPI ≤ 3 + SS ≥ 11" },
+  ] as const;
+  const olcutMetni = DALLAR.map(d => d.metin).join(", veya ");
+
+  const diagnosed = DALLAR.some(d => d.kosul(wpiScore, ssScore))
+    && Object.keys(sev).length === SS_ITEMS.length;
   const karar = Object.keys(sev).length === SS_ITEMS.length ? (diagnosed ? "FİBROMİYALJİ TANISI KARŞILANIYOR" : "TANI KRİTERLERİ KARŞILANMIYOR") : null;
 
-  const hadDuration = true; // assumed — user should confirm
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -163,7 +184,7 @@ export default function FibromiyaljiPage() {
             </p>
             <p className={`text-sm font-bold mt-1 ${diagnosed ? 'text-rose-700' : 'text-emerald-700'}`}>
               {diagnosed
-                ? "WPI ≥ 7 + SS ≥ 5, veya WPI 4–6 + SS ≥ 9, veya WPI ≤ 3 + SS ≥ 11 — semptomlar ≥ 3 ay sürüyor olmalı"
+                ? `${olcutMetni} — semptomlar ≥ 3 ay sürüyor olmalı`
                 : "Mevcut değerlere göre fibromiyalji tanı eşiği karşılanmıyor"}
             </p>
           </div>
