@@ -52,13 +52,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/men1-hipokalemi-aritmojenik-sinerji" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı
+              <Link href="/topics/gastroenteroloji/ascit-diuretik-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/men1-osilodrostat-mineralokortikoid" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi
+              <Link href="/topics/endokrinoloji/men1-hipokalemi-aritmojenik-sinerji" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı
               </Link>
             </li>
           </ul>

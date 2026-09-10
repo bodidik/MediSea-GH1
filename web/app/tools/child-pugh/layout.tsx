@@ -47,8 +47,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/gastroenteroloji/ascit-sıvısı" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri
+              <Link href="/topics/gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)
               </Link>
             </li>
             <li>

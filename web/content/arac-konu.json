@@ -249,6 +249,30 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "gastroenteroloji/ascit-diuretik-tedavisi": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
+      {
+        "slug": "qsofa",
+        "name": "qSOFA Skoru",
+        "eslesen": "qSOFA Skoru"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "sofa",
+        "name": "SOFA Skoru",
+        "eslesen": "SOFA"
+      }
+    ],
     "gastroenteroloji/ascit-sıvısı": [
       {
         "slug": "child-pugh",
@@ -275,6 +299,13 @@
         "slug": "ranson",
         "name": "Ranson Kriterleri",
         "eslesen": "Ranson Kriterleri"
+      }
+    ],
+    "gastroenteroloji/tips-hasta-secimi": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
       }
     ],
     "hematoloji/akut-lenfoblastik-losemi-all": [
@@ -849,6 +880,11 @@
         "eslesen": "Potasyum Replasmanı"
       },
       {
+        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
+        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
         "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
         "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "Potasyum Replasmanı"
@@ -953,8 +989,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "Child-Pugh"
       },
       {
@@ -973,8 +1009,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "gastroenteroloji/ascit-yonetimi",
-        "baslik": "Asit Yönetimi ve Tıbbi Algoritmalar (AASLD/EASL Uyumlu)",
+        "yol": "gastroenteroloji/ascit-sıvısı",
+        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
         "eslesen": "Child-Pugh"
       },
       {
@@ -1035,6 +1071,18 @@
         "yol": "enfeksiyon/prokalsitonin-genel",
         "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı",
         "eslesen": "SOFA Skoru"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "eslesen": "SOFA"
+      }
+    ],
+    "qsofa": [
+      {
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "eslesen": "qSOFA Skoru"
       }
     ],
     "ranson": [
@@ -1262,10 +1310,10 @@
     ]
   },
   "olcum": {
-    "konu": 476,
+    "konu": 479,
     "arac": 136,
-    "araciOlanKonu": 95,
-    "konusuOlanArac": 31,
-    "bag": 112
+    "araciOlanKonu": 98,
+    "konusuOlanArac": 32,
+    "bag": 117
   }
 }
