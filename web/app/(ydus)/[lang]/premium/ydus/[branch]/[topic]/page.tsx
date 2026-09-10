@@ -465,7 +465,14 @@ export default async function KonuSayfasi({
                 if (!bilgi) return null;
                 // İlan YETMEZ: hedef içerik gerçekten var mı?
                 const aktif = ilan && (MODUL_VAR[key] ?? false);
-                const href = MODUL_HREF[key]?.(lang, branch, topic) ?? '#';
+                /* Hızlı tekrar modülü İLK SETE gider: dosya adı her zaman
+                   `<konu>.json` olmak zorunda değil (yalnızca `-set-2` taşıyan
+                   bir konu `id=<konu>` ile 404 verirdi). Setlerin tamamı yan
+                   sütundaki istatistik listesinde tek tek bağlı. */
+                const href =
+                  key === 'flashcard' && envanter.flashcardSetleri.length > 0
+                    ? `/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${envanter.flashcardSetleri[0].id}`
+                    : MODUL_HREF[key]?.(lang, branch, topic) ?? '#';
                 return (
                   <Link
                     key={key}
@@ -556,9 +563,29 @@ export default async function KonuSayfasi({
                     </div>
                   )
                 )}
-                {istatistikler.flashcard !== undefined && (
+                {/* Bir konunun birden fazla hızlı tekrar seti olabilir
+                    (`<konu>.json` + `<konu>-set-2.json`…). Tek settekiyle aynı
+                    satır korunur; birden fazlaysa toplam üstte durur ve HER SET
+                    kendi bağlantısını alır — okuyucu istediğini seçsin. */}
+                {envanter.flashcardSetleri.length > 1 ? (
+                  <div style={{ marginBottom: '2px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 6px' }}>
+                      <span style={{ color: '#4a6a8a' }}>🃏 Flashcard</span>
+                      <span style={{ fontWeight: 600, color: '#1a3a6b' }}>{istatistikler.flashcard}</span>
+                    </div>
+                    {envanter.flashcardSetleri.map((set) => (
+                      <Link key={set.id}
+                        href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${set.id}`}
+                        className="stat-link"
+                        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px', fontSize: '12px', padding: '6px 6px 6px 20px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
+                        <span style={{ color: '#4a6a8a' }}>{set.baslik}</span>
+                        <span style={{ fontWeight: 600, color: '#1a3a6b', flexShrink: 0 }}>{set.sayi}</span>
+                      </Link>
+                    ))}
+                  </div>
+                ) : istatistikler.flashcard !== undefined && (
                   envanter.flashcardVar ? (
-                    <Link href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${topic}`}
+                    <Link href={`/${lang}/premium/ydus/hizli-tekrar?branch=${branch}&id=${envanter.flashcardSetleri[0].id}`}
                       className="stat-link"
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', padding: '6px 6px', borderRadius: '6px', marginBottom: '2px', textDecoration: 'none', color: 'inherit' }}>
                       <span style={{ color: '#4a6a8a' }}>🃏 Flashcard</span>

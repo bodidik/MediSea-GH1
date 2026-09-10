@@ -23,9 +23,20 @@ import path from "path";
  * doğruyu gösterir — ölçüm kaynağı tek ve kendini düzeltir.
  */
 
+/** Hızlı tekrar setinin oynatıcıya verilecek kimliği ve okunabilir adı. */
+export type FlashcardSeti = {
+  /** `hizli-tekrar?id=` değeri — dosya adının uzantısız hâli. */
+  id: string;
+  /** Dosyanın kendi `topic` alanı; yoksa "Set N". */
+  baslik: string;
+  sayi: number;
+};
+
 export type Envanter = {
   soru: number;
   flashcard: number;
+  /** Birden fazla olabilir: `<konu>.json` + `<konu>-set-2.json`, `-set-3.json`… */
+  flashcardSetleri: FlashcardSeti[];
   inci: number;
   vaka: number;
   quizVar: boolean;
@@ -45,6 +56,52 @@ function vakaSayisi(kok: string, branch: string, topic: string): number {
   } catch {
     return 0;
   }
+}
+
+/**
+ * Hızlı tekrar setleri: `<konu>.json` birinci set, `<konu>-set-N.json` sonrakiler.
+ *
+ * Vaka tarafındaki `startsWith` kalıbı burada KULLANILMAZ: `asit` konusu
+ * `asit-portal-hipertansiyon` dosyasını da yutardı. Ad birebir eşleşmeli.
+ *
+ * Okunamayan ya da boş dosya listeye GİRMEZ — envanterin genel kuralı:
+ * oynatıcı `cards.map` çağırdığında çökmesin diye sayı da bağlantı da
+ * yalnızca gerçekten kart taşıyan dosyadan çıkar.
+ */
+function flashcardSetleriniBul(kok: string, branch: string, topic: string): FlashcardSeti[] {
+  const dizin = path.join(kok, "flashcards", branch);
+  let adlar: string[];
+  try {
+    if (!fs.existsSync(dizin)) return [];
+    adlar = fs.readdirSync(dizin);
+  } catch {
+    return [];
+  }
+
+  const kacinci = (ad: string): number | null => {
+    if (ad === `${topic}.json`) return 1;
+    const e = new RegExp(`^${topic}-set-(\\d+)\\.json$`).exec(ad);
+    return e ? Number(e[1]) : null;
+  };
+
+  return adlar
+    .map((ad) => ({ ad, sira: kacinci(ad) }))
+    .filter((x): x is { ad: string; sira: number } => x.sira !== null)
+    .sort((a, b) => a.sira - b.sira)
+    .map(({ ad, sira }) => {
+      const dosya = path.join(dizin, ad);
+      const sayi = diziUzunlugu(dosya, ["cards"]);
+      if (!sayi) return null;
+      let baslik = `Set ${sira}`;
+      try {
+        const veri = JSON.parse(fs.readFileSync(dosya, "utf-8"));
+        if (typeof veri?.topic === "string" && veri.topic.trim()) baslik = veri.topic.trim();
+      } catch {
+        /* başlık okunamadıysa "Set N" kalır; sayı zaten yukarıda doğrulandı. */
+      }
+      return { id: ad.replace(/\.json$/, ""), baslik, sayi };
+    })
+    .filter((s): s is FlashcardSeti => s !== null);
 }
 
 const KOK = () => path.join(process.cwd(), "content", "premium", "ydus");
@@ -85,20 +142,22 @@ export function envanterAl(branch: string, topic: string): Envanter {
    * yön bu: okunamayan dosya 0 sayılır, bağlantı hiç kurulmaz.
    */
   const soru = diziUzunlugu(path.join(kok, "quizzes", branch, `${topic}-quiz-1.json`), ["sorular"]);
-  const kart = diziUzunlugu(path.join(kok, "flashcards", branch, `${topic}.json`), ["cards"]);
+  const setler = flashcardSetleriniBul(kok, branch, topic);
+  const kart = setler.reduce((t, s) => t + s.sayi, 0);
   const inci = diziUzunlugu(path.join(kok, "pearls", branch, `${topic}.json`), ["pearls"]);
 
   const vaka = vakaSayisi(kok, branch, topic);
 
   return {
     soru: soru ?? 0,
-    flashcard: kart ?? 0,
+    flashcard: kart,
+    flashcardSetleri: setler,
     inci: inci ?? 0,
     vaka,
     // "Var" demek için dosyanın bulunması YETMEZ, içinde en az bir kayıt olmalı:
     // boş bir quize göndermek de çıkmaz sokaktır.
     quizVar: (soru ?? 0) > 0,
-    flashcardVar: (kart ?? 0) > 0,
+    flashcardVar: setler.length > 0,
     inciVar: (inci ?? 0) > 0,
     vakaVar: vaka > 0,
   };
