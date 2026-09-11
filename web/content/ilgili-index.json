@@ -2804,6 +2804,11 @@
  ],
  "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
   {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sivisi-analizi",
+   "baslik": "Asit Sıvısı Analizi: Parasentez, SAAG ve Ayırıcı Tanı Parametreleri"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
@@ -2827,11 +2832,13 @@
    "brans": "gastroenteroloji",
    "slug": "hepatit-c",
    "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
-  },
+  }
+ ],
+ "gastroenteroloji/ascit-sivisi-analizi": [
   {
    "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
   }
  ],
  "gastroenteroloji/ascit-sıvısı": [
