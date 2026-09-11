@@ -2804,6 +2804,11 @@
  ],
  "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
   {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sivisi-analizi",
+   "baslik": "Asit Sıvısı Analizi: Parasentez, SAAG ve Ayırıcı Tanı Parametreleri"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
@@ -2827,11 +2832,13 @@
    "brans": "gastroenteroloji",
    "slug": "hepatit-c",
    "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
-  },
+  }
+ ],
+ "gastroenteroloji/ascit-sivisi-analizi": [
   {
    "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+   "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
+   "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
   }
  ],
  "gastroenteroloji/ascit-sıvısı": [
@@ -3687,14 +3694,24 @@
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
   {
-   "brans": "hematoloji",
-   "slug": "chase-less-skoru",
-   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
   },
   {
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "chase-less-skoru",
+   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "hematoloji/aplastik-anemi": [
@@ -3750,6 +3767,11 @@
    "brans": "hematoloji",
    "slug": "antikoagulasyon-stratejileri",
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
   }
  ],
  "hematoloji/demir-eksikligi": [
@@ -3924,6 +3946,16 @@
    "brans": "hematoloji",
    "slug": "itp-tedavi",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "spontan-koroner-arter-disseksiyonu-scad",
+   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   }
  ],
  "hematoloji/gilteritinib-flt3-aml": [
@@ -4065,24 +4097,9 @@
  ],
  "hematoloji/inme-sonrasi-gizli-af": [
   {
-   "brans": "hematoloji",
-   "slug": "kanser-iliskili-tromboz",
-   "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombositopenide-antikoagulasyon",
-   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
   }
  ],
  "hematoloji/itp-tanisal-yaklasim": [
@@ -4787,6 +4804,16 @@
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "hematoloji/von-willebrand-hastaligi-vwd": [
@@ -4913,6 +4940,38 @@
    "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan"
   }
  ],
+ "kardiyoloji/aks-oac-antitrombotik-yonetim": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "chase-less-skoru",
+   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  }
+ ],
  "kardiyoloji/akut-kalp-yetersizligi": [
   {
    "brans": "kardiyoloji",
@@ -4976,6 +5035,11 @@
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
   {
    "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   },
@@ -4988,11 +5052,6 @@
    "brans": "kardiyoloji",
    "slug": "pcsk9-inhibitorleri",
    "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
-   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
   }
  ],
  "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
@@ -5107,6 +5166,33 @@
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   }
  ],
+ "kardiyoloji/gebelikte-akut-koroner-sendrom": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "spontan-koroner-arter-disseksiyonu-scad",
+   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-kardiyovaskuler",
+   "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
+  }
+ ],
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
   {
    "brans": "kardiyoloji",
@@ -5139,6 +5225,16 @@
  "kardiyoloji/hipertansiyon-ve-aciller": [
   {
    "brans": "kardiyoloji",
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
   },
@@ -5146,16 +5242,6 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-tedavi-ana",
    "baslik": "Klinik Lipidoloji tedavi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "pcsk9-inhibitorleri",
-   "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-direncli-hipertansiyon",
-   "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA"
   }
  ],
  "kardiyoloji/infektif-endokardit": [
@@ -5226,18 +5312,18 @@
   },
   {
    "brans": "kardiyoloji",
+   "slug": "lipidoloji-statin-miyopatisi-sams",
+   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "pcsk9-inhibitorleri",
    "baslik": "PCSK9 İnhibisyonu"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-direncli-hipertansiyon",
-   "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "direncli-hipertansiyon-yeni-nesil",
-   "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler"
   }
  ],
  "kardiyoloji/kapak-hastaliklari": [
@@ -5458,6 +5544,23 @@
    "baslik": "İmmün Aracılı Nekrotizan Miyopati (IMNM)"
   }
  ],
+ "kardiyoloji/spontan-koroner-arter-disseksiyonu-scad": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-kardiyovaskuler",
+   "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  }
+ ],
  "kardiyoloji/statin-intolerans-ezetimibe": [
   {
    "brans": "kardiyoloji",
@@ -5510,6 +5613,28 @@
    "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
+  }
+ ],
+ "kardiyoloji/uclu-tedavi-uzatma-risk-faktorleri": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "klinik-nutrisyon/enteral-parenteral": [
@@ -6256,6 +6381,16 @@
    "brans": "endokrinoloji",
    "slug": "tirzepatid-kardiyorenal-koruma",
    "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "spontan-koroner-arter-disseksiyonu-scad",
+   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   }
  ],
  "nefroloji/polikistik-bobrek-molekuler": [

@@ -6,21 +6,21 @@
   "sorular": [
     {
       "id": "s1",
-      "metin": "Sirozlu bir hastada portal ven basıncı ölçülüyor ve 14 mmHg olarak saptanıyor. Klinisyen, bu bulgunun asit gelişimindeki patofizyolojik kaskadın başlangıç noktası olduğunu açıklıyor.",
+      "metin": "Sirozlu bir hastada portal ven basıncı ölçülüyor ve 14 mmHg olarak saptanıyor. Klinisyen, bu bulgunun asit gelişimindeki patofizyolojik kaskadın başlangıç noktası olduğunu açıklıyor. Sirozda asit gelişiminin patofizyolojik kaskadı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "Portal hipertansiyon eşiği >10 mmHg'dır; bu düzeyin aşılması NO, endokannabinoid ve karbon monoksit gibi medyatörler aracılığıyla splanknik arteriyel vazodilatasyonu tetikleyerek asit patogenezinin ilk basamağını oluşturur.",
-        "B": "Portal hipertansiyon eşiği >20 mmHg'dır; 14 mmHg klinik olarak anlamsızdır ve asit patogenezini başlatmaz.",
-        "C": "Portal basınç artışı, doğrudan periton boşluğuna sıvı sızmasına yol açar; splanknik vazodilatasyon veya nörohümoral aktivasyon gibi ara basamaklara gerek yoktur.",
+        "A": "Portal hipertansiyon eşiği >20 mmHg'dır; 14 mmHg klinik olarak anlamsızdır ve asit patogenezini başlatmaz.",
+        "B": "Portal basınç artışı, doğrudan periton boşluğuna sıvı sızmasına yol açar; splanknik vazodilatasyon veya nörohümoral aktivasyon gibi ara basamaklara gerek yoktur.",
+        "C": "Portal hipertansiyon eşiği >10 mmHg'dır; bu düzeyin aşılması NO, endokannabinoid ve karbon monoksit gibi medyatörler aracılığıyla splanknik arteriyel vazodilatasyonu tetikleyerek asit patogenezinin ilk basamağını oluşturur.",
         "D": "Portal hipertansiyon, splanknik vazokonstriksiyona yol açarak efektif arteriyel kan hacmini artırır.",
         "E": "Portal basınç artışı yalnızca hepatik ensefalopati patogenezinde rol oynar, asit oluşumuyla ilgisi yoktur."
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "Portal hipertansiyon eşiği >10 mmHg'dır. Bu eşiğin aşılması NO/endokannabinoid/CO aracılı splanknik arteriyel VAZODİLATASYONU tetikler — bu, 'Periferik Arteriyel Vazodilatasyon Hipotezi'nin ilk ve tetikleyici basamağıdır.",
       "aciklama_detay": "İleri evre karaciğer hastalığı, hepatik mimarinin (rejeneratif nodüller ve fibrozis ile) bozulması sonucu intrahepatik vasküler direncin artmasına, dolayısıyla portal hipertansiyona (>10 mmHg eşik değeri) neden olur. Portal basınçtaki bu artış, nitrik oksit (NO), endokannabinoidler ve karbon monoksit gibi lokal ve sistemik medyatörlerin üretimini tetikleyerek belirgin bir splanknik arteriyel vazodilatasyona yol açar. Bu hastada portal basınç 14 mmHg olup >10 mmHg eşiğinin üzerindedir, bu nedenle asit patogenezinin ilk basamağı olan splanknik vazodilatasyon kaskadının tetiklenmesi beklenir. Bu kaskat, tek başına portal basınç artışının doğrudan sıvı sızıntısına yol açmadığını, aksine karmaşık bir vasküler ve nörohümoral aracılı süreç olduğunu gösterir: Portal HT → medyatör salınımı → splanknik vazodilatasyon → efektif arteriyel kan hacmi azalması → RAAS/SNS/ADH aktivasyonu → renal Na/su retansiyonu → asit oluşumu. Bu zincirin anlaşılması, tedavi stratejilerinin (örn. RAAS'ı hedefleyen spironolakton, portal basıncı düşüren TIPS) mantığını da açıklar.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Portal HT eşiği >10 mmHg; bu düzeyin aşılması splanknik vazodilatasyonu (medyatörler aracılığıyla) tetikleyerek kaskadı başlatır.",
-        "B": "YANLIS — Metinde açıkça eşik değer >10 mmHg olarak belirtilmiştir, >20 mmHg değil; 14 mmHg bu eşiğin üzerinde olup klinik olarak anlamlıdır.",
-        "C": "YANLIS — Portal basınç artışı DOĞRUDAN periton boşluğuna sızmaya yol açmaz; süreç splanknik vazodilatasyon → EAKH azalması → nörohümoral aktivasyon → renal Na/su retansiyonu şeklinde ARA BASAMAKLAR içeren bir kaskattır.",
+        "A": "YANLIS — Metinde açıkça eşik değer >10 mmHg olarak belirtilmiştir, >20 mmHg değil; 14 mmHg bu eşiğin üzerinde olup klinik olarak anlamlıdır.",
+        "B": "YANLIS — Portal basınç artışı DOĞRUDAN periton boşluğuna sızmaya yol açmaz; süreç splanknik vazodilatasyon → EAKH azalması → nörohümoral aktivasyon → renal Na/su retansiyonu şeklinde ARA BASAMAKLAR içeren bir kaskattır.",
+        "C": "DOGRU — Portal HT eşiği >10 mmHg; bu düzeyin aşılması splanknik vazodilatasyonu (medyatörler aracılığıyla) tetikleyerek kaskadı başlatır.",
         "D": "YANLIS — Portal hipertansiyon splanknik VAZODİLATASYONA (vazokonstriksiyona değil) yol açar ve bu, efektif arteriyel kan hacmini AZALTIR (artırmaz) — rölatif hipovolemi oluşturur.",
         "E": "YANLIS — Portal basınç artışı, metinde açıkça asit patogenezinin TEMEL VE İLK basamağı olarak tanımlanmıştır; hepatik ensefalopatiyle sınırlı değildir."
       },
@@ -36,22 +36,22 @@
     },
     {
       "id": "s2",
-      "metin": "Sirozlu bir hastada dolaşımdaki toplam kan hacminin normal veya artmış olduğu, ancak buna rağmen RAAS ve sempatik sinir sisteminin aşırı aktive olduğu gözleniyor. Klinisyen, bu paradoksal durumu açıklıyor.",
+      "metin": "Sirozlu bir hastada dolaşımdaki toplam kan hacminin normal veya artmış olduğu, ancak buna rağmen RAAS ve sempatik sinir sisteminin aşırı aktive olduğu gözleniyor. Klinisyen, bu paradoksal durumu açıklıyor. Bu paradoksal nörohümoral aktivasyonun mekanizması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "Splanknik yatağın genişlemesi, toplam kan hacmi artmış olsa dahi efektif arteriyel kan hacminin (EAKH) azalmasına (rölatif hipovolemi) yol açar; baroreseptörler bu azalmayı algılayarak RAAS, SNS ve ADH aktivasyonunu tetikler.",
-        "B": "RAAS aktivasyonu, toplam kan hacminden tamamen bağımsız, rastgele bir süreçtir ve splanknik vazodilatasyonla ilişkisi yoktur.",
-        "C": "Toplam kan hacmi arttığından, baroreseptörler bu artışı algılayarak RAAS'ı SUPRESE eder; bu hastada tanımlanan aktivasyon beklenmedik bir bulgudur.",
-        "D": "EAKH azalması yalnızca gerçek (mutlak) hipovolemi durumlarında, örneğin kanamada görülür; sirozda EAKH her zaman normaldir.",
+        "A": "RAAS aktivasyonu, toplam kan hacminden tamamen bağımsız, rastgele bir süreçtir ve splanknik vazodilatasyonla ilişkisi yoktur.",
+        "B": "Toplam kan hacmi arttığından, baroreseptörler bu artışı algılayarak RAAS'ı SUPRESE eder; bu hastada tanımlanan aktivasyon beklenmedik bir bulgudur.",
+        "C": "EAKH azalması yalnızca gerçek (mutlak) hipovolemi durumlarında, örneğin kanamada görülür; sirozda EAKH her zaman normaldir.",
+        "D": "Splanknik yatağın genişlemesi, toplam kan hacmi artmış olsa dahi efektif arteriyel kan hacminin (EAKH) azalmasına (rölatif hipovolemi) yol açar; baroreseptörler bu azalmayı algılayarak RAAS, SNS ve ADH aktivasyonunu tetikler.",
         "E": "Splanknik vazodilatasyon, dolaşımdaki kan hacmini merkezi dolaşıma yönlendirerek EAKH'yi artırır, bu da RAAS'ı baskılar."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "Splanknik vazodilatasyon, TOPLAM kan hacmi artmış olsa dahi EFEKTİF arteriyel kan hacmini (dolaşımdaki 'algılanan'/etkin hacim) azaltır — bu 'rölatif hipovolemi' baroreseptörler tarafından algılanıp RAAS/SNS/ADH aktivasyonunu tetikler. Bu, sirozdaki asit patogenezinin kilit paradoksudur.",
       "aciklama_detay": "Splanknik yatağın genişlemesi, dolaşımdaki toplam kan hacmi artmış olsa dahi efektif arteriyel kan hacminin (EAKH) azalması (rölatif hipovolemi) ile sonuçlanır. Sistemik dolaşımdaki bu azalma baroreseptörler tarafından algılanarak, vücudun kompanzasyon mekanizmalarını devreye sokmasına neden olur: Renin-anjiyotensin-aldosteron sisteminin (RAAS) aşırı aktivasyonu, Sempatik sinir sisteminin (SNS) ve arginin-vazopressin (ADH) salınımının uyarılması. Bu paradoksun anahtarı 'efektif' kavramındadır: splanknik vasküler yatak aşırı genişlediğinde, kan bu geniş alanda 'havuzlanır' ve arteriyel sistemde baroreseptörlerin algıladığı DOLU/GERGİN hacim (EAKH) azalır — bu, toplam vücut kan hacminin gerçekte NORMAL veya hatta ARTMIŞ olmasına rağmen gerçekleşir. Baroreseptörler (karotis sinüs, aortik ark, renal afferent arteriyol) yalnızca 'yerel algıladıkları' arteriyel doluluk/basıncı değerlendirir, toplam vücut hacmini değil. Bu nedenle EAKH azalması algılandığında, vücut sanki gerçek bir hipovolemi varmış gibi (kanama gibi) RAAS/SNS/ADH aktivasyonuyla yanıt verir — ancak bu yanıt, sirozdaki asıl problemi (splanknik havuzlanma) çözmediği için sodyum/su retansiyonu devam eder ve asit oluşumuna katkıda bulunur.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Splanknik vazodilatasyon EAKH'yi azaltır (rölatif hipovolemi); baroreseptörler bunu algılayıp RAAS/SNS/ADH'yi aktive eder — toplam hacim artmış olsa dahi.",
-        "B": "YANLIS — RAAS aktivasyonu RASTGELE DEĞİLDİR; doğrudan splanknik vazodilatasyona bağlı EAKH azalmasının bir SONUCUDUR, güçlü bir nedensel ilişki vardır.",
-        "C": "YANLIS — Baroreseptörler TOPLAM kan hacmini değil, EFEKTİF (arteriyel doluluk/basınç) hacmi algılar; bu azaldığından RAAS SUPRESE değil AKTİVE olur.",
-        "D": "YANLIS — Tam tersine, sirozdaki EAKH azalması 'rölatif/efektif' hipovolemidir (gerçek/mutlak hipovolemi değil); metin bu ayrımı açıkça vurgular, sirozda EAKH azalmıştır (normal değil).",
+        "A": "YANLIS — RAAS aktivasyonu RASTGELE DEĞİLDİR; doğrudan splanknik vazodilatasyona bağlı EAKH azalmasının bir SONUCUDUR, güçlü bir nedensel ilişki vardır.",
+        "B": "YANLIS — Baroreseptörler TOPLAM kan hacmini değil, EFEKTİF (arteriyel doluluk/basınç) hacmi algılar; bu azaldığından RAAS SUPRESE değil AKTİVE olur.",
+        "C": "YANLIS — Tam tersine, sirozdaki EAKH azalması 'rölatif/efektif' hipovolemidir (gerçek/mutlak hipovolemi değil); metin bu ayrımı açıkça vurgular, sirozda EAKH azalmıştır (normal değil).",
+        "D": "DOGRU — Splanknik vazodilatasyon EAKH'yi azaltır (rölatif hipovolemi); baroreseptörler bunu algılayıp RAAS/SNS/ADH'yi aktive eder — toplam hacim artmış olsa dahi.",
         "E": "YANLIS — Splanknik vazodilatasyon kanı MERKEZİ dolaşımdan splanknik yatağa 'çeker' (havuzlar), merkezi dolaşıma yönlendirmez; bu da EAKH'yi AZALTIR, artırmaz."
       },
       "etiketler": [
@@ -66,23 +66,23 @@
     },
     {
       "id": "s3",
-      "metin": "Asit tespit edilen bir sirozlu hastada eş zamanlı serum albümin 3.2 g/dL, asit sıvısı albümin 1.6 g/dL olarak ölçülüyor. Klinisyen, bu sonuçtan asidin etiyolojisi hakkında bir çıkarımda bulunuyor.",
+      "metin": "Asit tespit edilen bir sirozlu hastada eş zamanlı serum albümin 3.2 g/dL, asit sıvısı albümin 1.6 g/dL olarak ölçülüyor. Klinisyen, bu sonuçtan asidin etiyolojisi hakkında bir çıkarımda bulunuyor. Hesaplanan SAAG değeri ve asidin etiyolojisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "SAAG = 3.2 - 1.6 = 1.6 g/dL olup ≥1.1 g/dL eşiğinin üzerindedir; bu, asidin %97 doğrulukla portal hipertansiyon kaynaklı (siroz gibi) olduğunu gösterir.",
-        "B": "SAAG bu hastada hesaplanamaz çünkü hem serum hem asit albümini ölçülmüştür, SAAG yalnızca tek bir değerden hesaplanır.",
-        "C": "SAAG = 1.6 g/dL olup <1.1 g/dL eşiğinin altındadır; bu, asidin peritoneal karsinomatoz veya tüberküloz gibi portal hipertansif olmayan bir nedene bağlı olduğunu düşündürür.",
-        "D": "SAAG değeri, asidin enfekte olup olmadığını (SBP) doğrudan gösterir, etiyolojiyle ilgisi yoktur.",
-        "E": "Bu SAAG değeri, asidin kesinlikle pankreatik kaynaklı olduğunu kanıtlar."
+        "A": "SAAG bu hastada hesaplanamaz çünkü hem serum hem asit albümini ölçülmüştür, SAAG yalnızca tek bir değerden hesaplanır.",
+        "B": "SAAG = 1.6 g/dL olup <1.1 g/dL eşiğinin altındadır; bu, asidin peritoneal karsinomatoz veya tüberküloz gibi portal hipertansif olmayan bir nedene bağlı olduğunu düşündürür.",
+        "C": "SAAG değeri, asidin enfekte olup olmadığını (SBP) doğrudan gösterir, etiyolojiyle ilgisi yoktur.",
+        "D": "Bu SAAG değeri, asidin kesinlikle pankreatik kaynaklı olduğunu kanıtlar.",
+        "E": "SAAG = 3.2 - 1.6 = 1.6 g/dL olup ≥1.1 g/dL eşiğinin üzerindedir; bu, asidin %97 doğrulukla portal hipertansiyon kaynaklı (siroz gibi) olduğunu gösterir."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "SAAG = Serum albümin - Asit albümin = 3.2 - 1.6 = 1.6 g/dL. Bu değer ≥1.1 g/dL eşiğinin üzerinde olduğundan (YÜKSEK gradyan), asit %97 doğrulukla portal hipertansiyon kaynaklıdır (siroz, Budd-Chiari, kalp yetmezliği).",
       "aciklama_detay": "Serum-Asit Albümin Gradyanı (SAAG), eş zamanlı alınan serum albümin değerinden asit sıvısı albümin değerinin çıkarılmasıyla elde edilir. SAAG ≥1.1 g/dL (yüksek gradyan), asidin %97 doğrulukla portal hipertansiyon kaynaklı (siroz, Budd-Chiari, kalp yetmezliği) olduğunu kanıtlar. Bu hastada hesaplama şu şekildedir: SAAG = Serum Albümin - Asit Albümin = 3.2 g/dL - 1.6 g/dL = 1.6 g/dL. Bu değer 1.1 g/dL eşiğinin belirgin şekilde üzerinde olduğundan, YÜKSEK GRADYAN kategorisine girer ve asidin portal hipertansiyon (bu klinik bağlamda muhtemelen siroz) kaynaklı olduğunu %97 doğrulukla gösterir. SAAG'ın fizyolojik mantığı, portal hipertansiyonda sinüzoidal/splanknik kapiller basıncın artması nedeniyle albüminden zengin olmayan (düşük onkotik dirençli) sıvının periton boşluğuna sızmasına dayanır — bu nedenle asit sıvısındaki albümin düşük kalırken serum albümini görece yüksek kalır, ikisi arasındaki fark (gradyan) büyük olur. SAAG'ın <1.1 g/dL olduğu durumlarda ise (örn. peritoneal karsinomatozda), periton yüzeyindeki inflamasyon/tümör infiltrasyonu nedeniyle kapiller permeabilite artar ve albümin asit sıvısına daha serbest geçer, bu da serum ile asit albümini arasındaki farkı azaltır (düşük gradyan).",
       "secenekAciklamalari": {
-        "A": "DOGRU — SAAG=1.6 g/dL (≥1.1 eşiğinin üzerinde, yüksek gradyan) = %97 doğrulukla portal hipertansiyon kaynaklı asit.",
-        "B": "YANLIS — SAAG tam olarak İKİ DEĞERDEN (serum albümin - asit albümin) hesaplanır; bu, SAAG'ın standart ve zorunlu hesaplama yöntemidir.",
-        "C": "YANLIS — Hesaplama hatası: 3.2 - 1.6 = 1.6 g/dL'dir, bu değer <1.1 DEĞİL, ≥1.1 eşiğinin ÜZERİNDEDİR; dolayısıyla yüksek gradyan (portal HT kaynaklı) kategorisine girer, düşük gradyan değil.",
-        "D": "YANLIS — SAAG etiyolojik ayırıcı tanı (portal HT var mı yok mu) için kullanılır; SBP tanısı PMN sayımı (≥250/mm³) ile konulur, SAAG ile değil.",
-        "E": "YANLIS — Pankreatik asit tanısı AMİLAZ düzeyi (>1000 U/L) ile konulur, SAAG değeriyle değil; bu SAAG değeri (yüksek gradyan) portal HT'yi işaret eder, pankreatik kaynağı değil."
+        "A": "YANLIS — SAAG tam olarak İKİ DEĞERDEN (serum albümin - asit albümin) hesaplanır; bu, SAAG'ın standart ve zorunlu hesaplama yöntemidir.",
+        "B": "YANLIS — Hesaplama hatası: 3.2 - 1.6 = 1.6 g/dL'dir, bu değer <1.1 DEĞİL, ≥1.1 eşiğinin ÜZERİNDEDİR; dolayısıyla yüksek gradyan (portal HT kaynaklı) kategorisine girer, düşük gradyan değil.",
+        "C": "YANLIS — SAAG etiyolojik ayırıcı tanı (portal HT var mı yok mu) için kullanılır; SBP tanısı PMN sayımı (≥250/mm³) ile konulur, SAAG ile değil.",
+        "D": "YANLIS — Pankreatik asit tanısı AMİLAZ düzeyi (>1000 U/L) ile konulur, SAAG değeriyle değil; bu SAAG değeri (yüksek gradyan) portal HT'yi işaret eder, pankreatik kaynağı değil.",
+        "E": "DOGRU — SAAG=1.6 g/dL (≥1.1 eşiğinin üzerinde, yüksek gradyan) = %97 doğrulukla portal hipertansiyon kaynaklı asit."
       },
       "etiketler": [
         "SAAG",
@@ -96,21 +96,21 @@
     },
     {
       "id": "s4",
-      "metin": "Asit sıvısı analizinde SAAG 1.4 g/dL (yüksek gradyan), total protein 3.1 g/dL (yüksek) olarak saptanıyor. Klinisyen, bu kombinasyonun sirozdan farklı bir portal hipertansiyon nedenini düşündürdüğünü belirtiyor.",
+      "metin": "Asit sıvısı analizinde SAAG 1.4 g/dL (yüksek gradyan), total protein 3.1 g/dL (yüksek) olarak saptanıyor. Klinisyen, bu kombinasyonun sirozdan farklı bir portal hipertansiyon nedenini düşündürdüğünü belirtiyor. Bu asit sıvısı profilinin etiyolojik yorumu ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "SAAG ≥1.1 g/dL iken total proteinin ≥2.5 g/dL olduğu bu kombinasyon, post-sinüzoidal basınç artışını (örneğin konjestif kalp yetmezliği veya Budd-Chiari sendromu) yansıtır — saf sirotik asitte total protein tipik olarak <2.5 g/dL'dir.",
-        "B": "Bu kombinasyon (yüksek SAAG + yüksek protein), yalnızca peritoneal karsinomatozda görülür.",
-        "C": "Total protein değeri, SAAG sonucundan tamamen bağımsızdır ve hiçbir ek tanısal bilgi sağlamaz.",
+        "A": "Bu kombinasyon (yüksek SAAG + yüksek protein), yalnızca peritoneal karsinomatozda görülür.",
+        "B": "Total protein değeri, SAAG sonucundan tamamen bağımsızdır ve hiçbir ek tanısal bilgi sağlamaz.",
+        "C": "SAAG ≥1.1 g/dL iken total proteinin ≥2.5 g/dL olduğu bu kombinasyon, post-sinüzoidal basınç artışını (örneğin konjestif kalp yetmezliği veya Budd-Chiari sendromu) yansıtır — saf sirotik asitte total protein tipik olarak <2.5 g/dL'dir.",
         "D": "Yüksek SAAG + yüksek protein kombinasyonu, kesinlikle pankreatik asidi gösterir.",
         "E": "Bu bulgu kombinasyonu, düşük SAAG (portal hipertansif olmayan) asitin tipik profilidir."
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "SAAG ≥1.1 g/dL (portal HT var) + Total Protein ≥2.5 g/dL kombinasyonu, POST-SİNÜZOİDAL basınç artışını (kalp yetmezliği, Budd-Chiari gibi) yansıtır — bu, saf hepatik sinüzoidal kaynaklı (sirotik) asitten (protein tipik <2.5 g/dL) ayırt edici önemli bir bulgudur.",
       "aciklama_detay": "SAAG ≥1.1 g/dL iken total proteinin ≥2.5 g/dL olduğu durumlar, post-sinüzoidal basınç artışını (örn. kalp yetmezliği) yansıtır. Bu klinik ayrımın patofizyolojik temeli önemlidir: Saf sirotik (presinüzoidal/sinüzoidal) asitte, hasarlı hepatosit ve sinüzoidal endotel bariyeri nedeniyle protein geçirgenliği DÜŞÜKTÜR, bu nedenle asit sıvısındaki protein içeriği tipik olarak <2.5 g/dL'dir (düşük protein, yüksek SAAG kombinasyonu — klasik sirotik asit paterni). Ancak POST-sinüzoidal basınç artışı olan durumlarda (kalp yetmezliği, konstriktif perikardit, Budd-Chiari sendromu gibi hepatik venöz çıkış obstrüksiyonu), basınç artışı hepatik sinüzoidlerin DIŞINDA (santral ven/hepatik ven düzeyinde) gerçekleştiğinden, sinüzoidal protein geçirgenliği görece korunur ve daha protein-zengin bir sıvı periton boşluğuna sızar (total protein ≥2.5 g/dL). Bu nedenle 'yüksek SAAG (portal HT var) + yüksek protein (≥2.5)' kombinasyonu, klinisyene asidin saf hepatosellüler/sirotik bir süreçten ziyade post-sinüzoidal bir mekanizmadan (kardiyak veya vasküler çıkış obstrüksiyonu) kaynaklanabileceğini düşündürmesi gereken önemli bir ipucudur.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Yüksek SAAG+yüksek protein (≥2.5) kombinasyonu post-sinüzoidal basınç artışını (kalp yetmezliği, Budd-Chiari) yansıtır; saf siroz protein <2.5 g/dL ile karakterizedir.",
-        "B": "YANLIS — Peritoneal karsinomatoz DÜŞÜK SAAG (<1.1 g/dL) ile karakterizedir, bu hastada SAAG YÜKSEKTİR (1.4); dolayısıyla bu kombinasyon peritoneal karsinomatozla uyumlu değildir.",
-        "C": "YANLIS — Total protein, SAAG ile BİRLİKTE değerlendirildiğinde önemli ek tanısal bilgi sağlar (post-sinüzoidal vs sinüzoidal/presinüzoidal ayrımı); bağımsız/anlamsız değildir.",
+        "A": "YANLIS — Peritoneal karsinomatoz DÜŞÜK SAAG (<1.1 g/dL) ile karakterizedir, bu hastada SAAG YÜKSEKTİR (1.4); dolayısıyla bu kombinasyon peritoneal karsinomatozla uyumlu değildir.",
+        "B": "YANLIS — Total protein, SAAG ile BİRLİKTE değerlendirildiğinde önemli ek tanısal bilgi sağlar (post-sinüzoidal vs sinüzoidal/presinüzoidal ayrımı); bağımsız/anlamsız değildir.",
+        "C": "DOGRU — Yüksek SAAG+yüksek protein (≥2.5) kombinasyonu post-sinüzoidal basınç artışını (kalp yetmezliği, Budd-Chiari) yansıtır; saf siroz protein <2.5 g/dL ile karakterizedir.",
         "D": "YANLIS — Pankreatik asit tanısı AMİLAZ (>1000 U/L) ile konulur; SAAG+protein kombinasyonu pankreatik asit için tanısal bir profil değildir.",
         "E": "YANLIS — Düşük SAAG (<1.1 g/dL) tanımı bu hastada GEÇERLİ DEĞİLDİR; hastanın SAAG'ı 1.4 g/dL olup YÜKSEK gradyan (portal HT VAR) kategorisindedir."
       },
@@ -126,22 +126,22 @@
     },
     {
       "id": "s5",
-      "metin": "Sirozlu bir hastada asit ile birlikte yeni gelişen ateş ve karın ağrısı üzerine diagnostik parasentez yapılıyor. Asit sıvısında PMN (polimorfonükleer lökosit) sayısı 420 hücre/mm³ olarak saptanıyor, kültür sonucu henüz beklenmektedir.",
+      "metin": "Sirozlu bir hastada asit ile birlikte yeni gelişen ateş ve karın ağrısı üzerine diagnostik parasentez yapılıyor. Asit sıvısında PMN (polimorfonükleer lökosit) sayısı 420 hücre/mm³ olarak saptanıyor, kültür sonucu henüz beklenmektedir. Bu hastanın tanısı ve tedavi zamanlaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "PMN ≥250 hücre/mm³ olması Spontan Bakteriyel Peritonit (SBP) tanısını kesinleştirir; kültür sonuçları beklenmeksizin ampirik antibiyotik tedavisine derhal başlanmalıdır.",
-        "B": "PMN sayımı, SBP tanısı için yeterli değildir; tedaviye başlamadan önce mutlaka kültür pozitifliği beklenmelidir.",
-        "C": "PMN ≥250 hücre/mm³ eşiği yalnızca kanlı asit vakalarında geçerlidir, bu hastada uygulanamaz.",
-        "D": "Bu PMN değeri normal sınırlarda kabul edilir ve SBP'yi dışlar.",
+        "A": "PMN sayımı, SBP tanısı için yeterli değildir; tedaviye başlamadan önce mutlaka kültür pozitifliği beklenmelidir.",
+        "B": "PMN ≥250 hücre/mm³ eşiği yalnızca kanlı asit vakalarında geçerlidir, bu hastada uygulanamaz.",
+        "C": "Bu PMN değeri normal sınırlarda kabul edilir ve SBP'yi dışlar.",
+        "D": "PMN ≥250 hücre/mm³ olması Spontan Bakteriyel Peritonit (SBP) tanısını kesinleştirir; kültür sonuçları beklenmeksizin ampirik antibiyotik tedavisine derhal başlanmalıdır.",
         "E": "PMN sayımı yalnızca pankreatik asit tanısında kullanılan bir parametredir, SBP ile ilgisi yoktur."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "PMN ≥250 hücre/mm³ (bu hastada 420), kültür sonucu beklenmeden SBP tanısını KESİNLEŞTİRİR ve ampirik antibiyotik tedavisine DERHAL başlanmasını gerektirir — bu, SBP yönetiminde hayat kurtarıcı bir zaman-kritik eşik değerdir.",
       "aciklama_detay": "Asit sıvısında polimorfonükleer (PMN) lökosit sayısının ≥250 hücre/mm³ olması, kültür sonuçları beklenmeksizin tedaviye başlanmasını gerektiren Spontan Bakteriyel Peritonit (SBP) tanısını kesinleştirir. Bu hastada PMN sayısı 420 hücre/mm³ olup 250 eşiğinin belirgin şekilde üzerindedir, bu nedenle SBP tanısı KESİNDİR ve kültür sonucundan BAĞIMSIZ olarak ampirik antibiyotik tedavisi derhal başlatılmalıdır. Bu yaklaşımın klinik mantığı önemlidir: asit kültürleri, düşük bakteri yükü nedeniyle sıklıkla (vakaların ~%40'ında) YALANCI NEGATİF sonuç verebilir (kültür-negatif nötrositik asit de klinik olarak SBP gibi tedavi edilir), bu nedenle kültür sonucunun tanı için ZORUNLU olmadığı, PMN eşiğinin tek başına yeterli ve daha güvenilir bir tanısal kriter olduğu kabul edilir. Ayrıca SBP tedavisindeki gecikme mortaliteyi belirgin şekilde artırdığından (sepsis progresyonu, hepatorenal sendrom riski), PMN eşiğine dayalı hızlı ampirik tedavi başlatma yaklaşımı hayat kurtarıcı bir standarttır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — PMN ≥250/mm³ (420 bu eşiğin üzerinde) SBP tanısını kesinleştirir; kültür beklenmeden derhal ampirik tedavi başlanmalıdır.",
-        "B": "YANLIS — Tam tersine, metinde açıkça 'kültür sonuçları beklenmeksizin tedaviye başlanması' gerektiği vurgulanmıştır; kültür pozitifliği tanı/tedavi başlangıcı için ZORUNLU DEĞİLDİR.",
-        "C": "YANLIS — PMN ≥250/mm³ eşiği, kanlı olmayan standart asit örneklerinde uygulanan genel bir SBP tanı kriteridir; kanlı asitte düzeltme formülü kullanılabilir ama bu hastanın asidi kanlı olarak tanımlanmamıştır, eşik doğrudan uygulanabilir.",
-        "D": "YANLIS — 420 hücre/mm³, 250 hücre/mm³ eşiğinin BELİRGİN ÜZERİNDEDİR; bu normal DEĞİL, SBP tanısını KESİNLEŞTİREN patolojik bir değerdir.",
+        "A": "YANLIS — Tam tersine, metinde açıkça 'kültür sonuçları beklenmeksizin tedaviye başlanması' gerektiği vurgulanmıştır; kültür pozitifliği tanı/tedavi başlangıcı için ZORUNLU DEĞİLDİR.",
+        "B": "YANLIS — PMN ≥250/mm³ eşiği, kanlı olmayan standart asit örneklerinde uygulanan genel bir SBP tanı kriteridir; kanlı asitte düzeltme formülü kullanılabilir ama bu hastanın asidi kanlı olarak tanımlanmamıştır, eşik doğrudan uygulanabilir.",
+        "C": "YANLIS — 420 hücre/mm³, 250 hücre/mm³ eşiğinin BELİRGİN ÜZERİNDEDİR; bu normal DEĞİL, SBP tanısını KESİNLEŞTİREN patolojik bir değerdir.",
+        "D": "DOGRU — PMN ≥250/mm³ (420 bu eşiğin üzerinde) SBP tanısını kesinleştirir; kültür beklenmeden derhal ampirik tedavi başlanmalıdır.",
         "E": "YANLIS — PMN sayımı, metinde açıkça SBP tanısının TEMEL kriteri olarak tanımlanmıştır; pankreatik asit tanısı AMİLAZ ile konulur, PMN ile değil."
       },
       "etiketler": [
@@ -156,23 +156,23 @@
     },
     {
       "id": "s6",
-      "metin": "Evre 2 (orta dereceli) asiti olan, serum sodyumu 138 mEq/L (normal) olan bir sirozlu hastada medikal tedavi planlanıyor. Hasta, gereksiz kısıtlamalardan kaçınmak istediğini belirtiyor.",
+      "metin": "Evre 2 (orta dereceli) asiti olan, serum sodyumu 138 mEq/L (normal) olan bir sirozlu hastada medikal tedavi planlanıyor. Hasta, gereksiz kısıtlamalardan kaçınmak istediğini belirtiyor. Bu hastada sodyum ve sıvı kısıtlaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "Bu hastada günlük sodyum alımı 2 gramın (yaklaşık 88-90 mEq) altına kısıtlanmalıdır; ancak sıvı kısıtlaması gerekli DEĞİLDİR çünkü sıvı kısıtlaması yalnızca serum sodyumunun dilüsyonel olarak ≤120-125 mEq/L'ye düştüğü ciddi hiponatremi vakalarında uygulanır.",
-        "B": "Bu hastada hem sodyum hem sıvı kısıtlaması aynı anda, serum sodyum düzeyinden bağımsız olarak rutin uygulanmalıdır.",
-        "C": "Serum sodyumu normal olduğundan, bu hastada herhangi bir diyet kısıtlamasına gerek yoktur.",
-        "D": "Sıvı kısıtlaması, sodyum kısıtlamasından daha öncelikli ve her hastada zorunlu bir tedavi bileşenidir.",
-        "E": "Sodyum kısıtlaması yalnızca refrakter asit vakalarında uygulanır, Evre 2 asitte gerekli değildir."
+        "A": "Bu hastada hem sodyum hem sıvı kısıtlaması aynı anda, serum sodyum düzeyinden bağımsız olarak rutin uygulanmalıdır.",
+        "B": "Serum sodyumu normal olduğundan, bu hastada herhangi bir diyet kısıtlamasına gerek yoktur.",
+        "C": "Sıvı kısıtlaması, sodyum kısıtlamasından daha öncelikli ve her hastada zorunlu bir tedavi bileşenidir.",
+        "D": "Sodyum kısıtlaması yalnızca refrakter asit vakalarında uygulanır, Evre 2 asitte gerekli değildir.",
+        "E": "Bu hastada günlük sodyum alımı 2 gramın (yaklaşık 88-90 mEq) altına kısıtlanmalıdır; ancak sıvı kısıtlaması gerekli DEĞİLDİR çünkü sıvı kısıtlaması yalnızca serum sodyumunun dilüsyonel olarak ≤120-125 mEq/L'ye düştüğü ciddi hiponatremi vakalarında uygulanır."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "Sodyum kısıtlaması (<2g/gün) medikal tedavinin köşe taşıdır ve serum Na düzeyinden bağımsız olarak TÜM asitli hastalarda uygulanır. Sıvı kısıtlaması ise YALNIZCA serum Na ≤120-125 mEq/L'ye düştüğünde (ciddi dilüsyonel hiponatremi) gereklidir — bu hastada Na normal (138) olduğundan sıvı kısıtlamasına gerek yoktur.",
       "aciklama_detay": "Diyetle Sodyum Kısıtlaması: Medikal tedavinin köşe taşıdır. Günlük sodyum alımı kesinlikle 2 gramın (yaklaşık 88-90 mEq) altına düşürülmelidir. Sıvı kısıtlaması ise yalnızca serum sodyum seviyesinin dilüsyonel olarak ≤120-125 mEq/L'ye düştüğü ciddi hiponatremi vakalarında uygulanmalıdır. Bu ayrım klinik pratikte sıkça karıştırılan önemli bir noktadır: sodyum kısıtlaması ve sıvı kısıtlaması FARKLI ENDİKASYONLARA sahiptir ve otomatik olarak birlikte uygulanmamalıdır. Sodyum kısıtlaması, asit oluşumunun temel mekanizmasını (renal Na retansiyonu) doğrudan hedeflediğinden TÜM asitli sirozlu hastalarda (serum Na düzeyinden bağımsız olarak) standart bir tedavi bileşenidir. Sıvı kısıtlaması ise yalnızca belirgin dilüsyonel hiponatreminin (ADH aşırı salınımına bağlı serbest su tutulumunun sodyum tutulumunu aştığı, serum Na'yı düşüren durum) EŞLİK ETTİĞİ vakalarda uygulanır — gereksiz sıvı kısıtlaması hastanın yaşam kalitesini olumsuz etkileyebileceğinden, bu hastadaki gibi normal serum sodyumu olan hastalarda uygulanmamalıdır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Sodyum kısıtlaması (<2g/gün) her zaman uygulanır; sıvı kısıtlaması yalnızca Na ≤120-125 mEq/L'de gereklidir — bu hastada Na normal, sıvı kısıtlamasına gerek yok.",
-        "B": "YANLIS — Sıvı kısıtlaması RUTİN uygulanmaz; yalnızca ciddi dilüsyonel hiponatremi (Na ≤120-125 mEq/L) varlığında endikedir, serum sodyum düzeyinden BAĞIMSIZ değildir.",
-        "C": "YANLIS — Sodyum kısıtlaması, serum sodyum düzeyi NORMAL olsa dahi TÜM asitli hastalarda uygulanması gereken temel bir tedavi bileşenidir (medikal tedavinin köşe taşı); atlanmamalıdır.",
-        "D": "YANLIS — Tam tersine, SODYUM kısıtlaması medikal tedavinin köşe taşı ve TÜM hastalarda uygulanan öncelikli bileşendir; sıvı kısıtlaması yalnızca özel bir alt grupta (ciddi hiponatremi) gereklidir.",
-        "E": "YANLIS — Sodyum kısıtlaması Evre 2 (orta dereceli) asit dahil TÜM evrelerdeki asitli hastalarda medikal tedavinin temel taşıdır; yalnızca refrakter asitle sınırlı değildir."
+        "A": "YANLIS — Sıvı kısıtlaması RUTİN uygulanmaz; yalnızca ciddi dilüsyonel hiponatremi (Na ≤120-125 mEq/L) varlığında endikedir, serum sodyum düzeyinden BAĞIMSIZ değildir.",
+        "B": "YANLIS — Sodyum kısıtlaması, serum sodyum düzeyi NORMAL olsa dahi TÜM asitli hastalarda uygulanması gereken temel bir tedavi bileşenidir (medikal tedavinin köşe taşı); atlanmamalıdır.",
+        "C": "YANLIS — Tam tersine, SODYUM kısıtlaması medikal tedavinin köşe taşı ve TÜM hastalarda uygulanan öncelikli bileşendir; sıvı kısıtlaması yalnızca özel bir alt grupta (ciddi hiponatremi) gereklidir.",
+        "D": "YANLIS — Sodyum kısıtlaması Evre 2 (orta dereceli) asit dahil TÜM evrelerdeki asitli hastalarda medikal tedavinin temel taşıdır; yalnızca refrakter asitle sınırlı değildir.",
+        "E": "DOGRU — Sodyum kısıtlaması (<2g/gün) her zaman uygulanır; sıvı kısıtlaması yalnızca Na ≤120-125 mEq/L'de gereklidir — bu hastada Na normal, sıvı kısıtlamasına gerek yok."
       },
       "etiketler": [
         "Sodyum Kısıtlaması",
@@ -186,21 +186,21 @@
     },
     {
       "id": "s7",
-      "metin": "Evre 2 asiti olan bir hastada diüretik tedavisi başlanıyor. Klinisyen, RAAS aktivasyonunu doğrudan hedefleyen ve loop diüretiği ile kombine edilecek standart başlangıç dozunu belirliyor.",
+      "metin": "Evre 2 asiti olan bir hastada diüretik tedavisi başlanıyor. Klinisyen, RAAS aktivasyonunu doğrudan hedefleyen ve loop diüretiği ile kombine edilecek standart başlangıç dozunu belirliyor. Başlangıç diüretik rejimi ve doz titrasyonu ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "Sabah tek doz 100 mg Spironolakton + 40 mg Furosemid (100:40 oranı) ile başlanır; yanıta göre her 3-5 günde bir aynı oranda maksimum 400 mg/160 mg'a kadar titre edilir.",
-        "B": "Yalnızca Furosemid monoterapisi (loop diüretiği) ile başlanır, Spironolakton'a genellikle gerek yoktur.",
-        "C": "Spironolakton ve Furosemid, gece yatmadan önce eşit dozlarda (örn. 40 mg/40 mg) başlanmalıdır.",
+        "A": "Yalnızca Furosemid monoterapisi (loop diüretiği) ile başlanır, Spironolakton'a genellikle gerek yoktur.",
+        "B": "Spironolakton ve Furosemid, gece yatmadan önce eşit dozlarda (örn. 40 mg/40 mg) başlanmalıdır.",
+        "C": "Sabah tek doz 100 mg Spironolakton + 40 mg Furosemid (100:40 oranı) ile başlanır; yanıta göre her 3-5 günde bir aynı oranda maksimum 400 mg/160 mg'a kadar titre edilir.",
         "D": "Başlangıç dozu 400 mg Spironolakton + 160 mg Furosemid'dir, tedavi maksimum dozda başlatılır.",
         "E": "Titrasyon günlük olarak yapılmalı ve doz her gün iki katına çıkarılmalıdır."
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "Standart başlangıç: sabah TEK DOZ, Spironolakton 100 mg + Furosemid 40 mg (100:40 oranı). Titrasyon her 3-5 günde bir AYNI ORANDA, maksimum 400 mg/160 mg'a kadar. Bu 100:40 oranı, normokalemiyi korumak için önemlidir (spironolaktonun kaliyümü tutucu, furosemidin kaliyümü atıcı etkisini dengeler).",
       "aciklama_detay": "Diüretik Stratejisi: Proksimal ve distal nefronu hedef alan kombine diüretik rejimi en etkili yaklaşımdır. RAAS aşırı aktivasyonunu doğrudan bloke eden bir mineralokortikoid reseptör antagonisti (MRA) olan Spironolakton ve loop diüretiği olan Furosemid eş zamanlı olarak tercih edilir. Dozaj: Normokalemiyi korumak amacıyla genellikle sabahları tek doz 100 mg Spironolakton ve 40 mg Furosemid (100:40 oranı) ile başlanır. Klinik yanıt ve kilo kaybı hedefine göre, doz her 3-5 günde bir aynı oranda maksimum 400 mg/160 mg'a kadar titre edilebilir. Bu 100:40 sabit oranın korunması özellikle önemlidir çünkü spironolakton (aldosteron antagonisti olarak potasyum tutucu) ve furosemid (loop diüretiği olarak potasyum kaybettirici) zıt yönde kaliyum etkileri gösterir — bu iki ilacın SABİT ORANDA birlikte titre edilmesi, tedavi süresince serum potasyumunun dengeli (normokalemik) kalmasını sağlar. Tek başına furosemid kullanımı hem daha az etkilidir (RAAS aktivasyonunu hedeflemez) hem de hipokalemi riskini artırır; tek başına spironolakton ise etkisinin başlaması için günler gerektirdiğinden (aldosteron reseptör blokajı yavaş etkilidir) hızlı yanıt için loop diüretiği eklenmesi gerekir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Sabah tek doz Spironolakton 100mg+Furosemid 40mg (100:40 oranı) ile başla, her 3-5 günde aynı oranda max 400/160'a titre et.",
-        "B": "YANLIS — Furosemid MONOTERAPİSİ standart değildir; kombine rejim (Spironolakton+Furosemid) 'en etkili yaklaşım' olarak tanımlanmıştır, Spironolakton'un RAAS'ı hedefleyen etkisi gereklidir.",
-        "C": "YANLIS — İlaçlar GECE değil SABAH tek doz olarak verilir; ayrıca doz oranı EŞİT (40/40) değil 100:40'tır — bu ayrım normokalemiyi korumak için önemlidir.",
+        "A": "YANLIS — Furosemid MONOTERAPİSİ standart değildir; kombine rejim (Spironolakton+Furosemid) 'en etkili yaklaşım' olarak tanımlanmıştır, Spironolakton'un RAAS'ı hedefleyen etkisi gereklidir.",
+        "B": "YANLIS — İlaçlar GECE değil SABAH tek doz olarak verilir; ayrıca doz oranı EŞİT (40/40) değil 100:40'tır — bu ayrım normokalemiyi korumak için önemlidir.",
+        "C": "DOGRU — Sabah tek doz Spironolakton 100mg+Furosemid 40mg (100:40 oranı) ile başla, her 3-5 günde aynı oranda max 400/160'a titre et.",
         "D": "YANLIS — 400 mg/160 mg, tedavinin MAKSİMUM (başlangıç değil, titrasyon sonu) dozudur; başlangıç dozu çok daha düşüktür (100 mg/40 mg).",
         "E": "YANLIS — Titrasyon GÜNLÜK değil, her 3-5 GÜNDE BİR yapılır ve doz ikiye katlanmaz, aynı 100:40 oranı korunarak kademeli artırılır."
       },
@@ -216,22 +216,22 @@
     },
     {
       "id": "s8",
-      "metin": "Asitli sirozlu bir hastada eklem ağrısı için analjezik reçete edilmesi gerekiyor. Hasta yakınları, hastanın kronik olarak ibuprofen kullanmasının uygun olup olmadığını soruyor.",
+      "metin": "Asitli sirozlu bir hastada eklem ağrısı için analjezik reçete edilmesi gerekiyor. Hasta yakınları, hastanın kronik olarak ibuprofen kullanmasının uygun olup olmadığını soruyor. Bu hastada analjezik seçimi ve renal etkileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "NSAİİ'ler (ibuprofen dahil) böbrekte koruyucu prostaglandin sentezini inhibe ederek akut böbrek hasarını (AKI) tetiklediğinden asitli sirozda tamamen kontrendikedir; ACE inhibitörleri, ARB'ler ve aminoglikozitlerden de renal kan akımını bozdukları için kaçınılmalıdır.",
-        "B": "NSAİİ'ler asitli sirozda güvenlidir ve kronik ağrı yönetiminde ilk tercih olarak önerilir.",
-        "C": "NSAİİ'ler yalnızca refrakter asit vakalarında kontrendikedir, Evre 2 asitte güvenle kullanılabilir.",
-        "D": "ACE inhibitörleri ve ARB'ler asitli sirozda güvenlidir, yalnızca NSAİİ'lerden kaçınmak yeterlidir.",
+        "A": "NSAİİ'ler asitli sirozda güvenlidir ve kronik ağrı yönetiminde ilk tercih olarak önerilir.",
+        "B": "NSAİİ'ler yalnızca refrakter asit vakalarında kontrendikedir, Evre 2 asitte güvenle kullanılabilir.",
+        "C": "ACE inhibitörleri ve ARB'ler asitli sirozda güvenlidir, yalnızca NSAİİ'lerden kaçınmak yeterlidir.",
+        "D": "NSAİİ'ler (ibuprofen dahil) böbrekte koruyucu prostaglandin sentezini inhibe ederek akut böbrek hasarını (AKI) tetiklediğinden asitli sirozda tamamen kontrendikedir; ACE inhibitörleri, ARB'ler ve aminoglikozitlerden de renal kan akımını bozdukları için kaçınılmalıdır.",
         "E": "NSAİİ kontrendikasyonu yalnızca intravenöz formülasyonlar için geçerlidir, oral NSAİİ'ler güvenlidir."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "NSAİİ'ler böbrekte koruyucu prostaglandin sentezini inhibe ederek AKI'yi tetikler — asitli sirozda TAMAMEN KONTRENDİKEDİR. ACE inhibitörleri, ARB'ler ve aminoglikozitler de renal kan akımını bozdukları için kaçınılmalıdır. Bu, sirozdaki zaten bozulmuş renal perfüzyon dengesinin (splanknik vazodilatasyon+RAAS aktivasyonu) daha da kötüleşmesini önlemek içindir.",
       "aciklama_detay": "Non-steroid anti-inflamatuvar ilaçlar (NSAİİ'ler) böbrekte koruyucu prostaglandin sentezini inhibe ederek akut böbrek hasarını (AKI) tetiklediğinden asitli sirozda tamamen kontrendikedir. ACE inhibitörleri, ARB'ler ve aminoglikozit antibiyotiklerden de renal kan akımını bozdukları için kaçınılmalıdır. Bu kontrendikasyonun patofizyolojik temeli, sirozdaki renal hemodinamiğin özel kırılganlığına dayanır: asitli sirozlu hastalarda, splanknik vazodilatasyona bağlı EAKH azalması zaten RAAS ve sempatik sinir sistemi aktivasyonuna (afferent arteriyol vazokonstriksiyonuna) yol açmıştır. Bu durumda renal perfüzyon, KOMPANSATUVAR olarak artmış lokal prostaglandin (vazodilatör) sentezi ile kısmen korunmaktadır — prostaglandinler, sistemik vazokonstriktör etkilere (anjiyotensin II, norepinefrin) karşı afferent arteriyolü GENİŞLETEREK glomerüler filtrasyonu korur. NSAİİ'ler bu koruyucu prostaglandin sentezini BLOKE ettiğinde, kompanse edilmemiş vazokonstriksiyon etkisi baskın hale gelir ve şiddetli, genellikle geri dönüşü zor akut böbrek hasarı (AKI) tetiklenebilir. Benzer şekilde ACE inhibitörleri/ARB'ler (RAAS'ın sistemik etkilerini bloke ederek sistemik kan basıncını ve renal perfüzyon basıncını düşürebilir) ve aminoglikozitler (doğrudan nefrotoksik) de bu kırılgan dengeyi bozabileceğinden kaçınılmalıdır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — NSAİİ'ler koruyucu prostaglandin sentezini bloke ederek AKI tetikler, tamamen kontrendikedir; ACEi/ARB/aminoglikozitlerden de kaçınılmalıdır.",
-        "B": "YANLIS — Tam tersine, NSAİİ'ler metinde açıkça 'TAMAMEN KONTRENDİKE' olarak tanımlanmıştır; ilk tercih ağrı kesici olarak önerilmez, güvenli değildir.",
-        "C": "YANLIS — NSAİİ kontrendikasyonu asit EVRESİNDEN BAĞIMSIZDIR; metin 'asitli sirozda' genel bir ifade kullanır, yalnızca refrakter asitle sınırlandırmaz — Evre 2'de de kontrendikedir.",
-        "D": "YANLIS — ACE inhibitörleri ve ARB'ler de metinde AÇIKÇA kaçınılması gereken ilaçlar arasında sayılmıştır (renal kan akımını bozdukları için); yalnızca NSAİİ'lerle sınırlı değildir.",
+        "A": "YANLIS — Tam tersine, NSAİİ'ler metinde açıkça 'TAMAMEN KONTRENDİKE' olarak tanımlanmıştır; ilk tercih ağrı kesici olarak önerilmez, güvenli değildir.",
+        "B": "YANLIS — NSAİİ kontrendikasyonu asit EVRESİNDEN BAĞIMSIZDIR; metin 'asitli sirozda' genel bir ifade kullanır, yalnızca refrakter asitle sınırlandırmaz — Evre 2'de de kontrendikedir.",
+        "C": "YANLIS — ACE inhibitörleri ve ARB'ler de metinde AÇIKÇA kaçınılması gereken ilaçlar arasında sayılmıştır (renal kan akımını bozdukları için); yalnızca NSAİİ'lerle sınırlı değildir.",
+        "D": "DOGRU — NSAİİ'ler koruyucu prostaglandin sentezini bloke ederek AKI tetikler, tamamen kontrendikedir; ACEi/ARB/aminoglikozitlerden de kaçınılmalıdır.",
         "E": "YANLIS — NSAİİ kontrendikasyonu formülasyondan (oral/İV) bağımsızdır; mekanizma (prostaglandin sentez inhibisyonu) sistemik bir etkidir ve oral NSAİİ'ler de aynı riski taşır."
       },
       "etiketler": [
@@ -246,23 +246,23 @@
     },
     {
       "id": "s9",
-      "metin": "Maksimum diüretik dozuna (400 mg Spironolakton + 160 mg Furosemid) rağmen asiti hızla nüksedene, refrakter asit tanısı konan bir hastada geniş hacimli parasentez (LVP) ile 7 litre asit sıvısı boşaltılıyor. Klinisyen, hemodinamik komplikasyonu önlemek için ek bir tedavi uyguluyor.",
+      "metin": "Maksimum diüretik dozuna (400 mg Spironolakton + 160 mg Furosemid) rağmen asiti hızla nüksedene, refrakter asit tanısı konan bir hastada geniş hacimli parasentez (LVP) ile 7 litre asit sıvısı boşaltılıyor. Klinisyen, hemodinamik komplikasyonu önlemek için ek bir tedavi uyguluyor. Geniş hacimli parasentez sonrasında uygulanacak tedavi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "Çıkarılan her litre sıvı başına 6-8 gram intravenöz insan albümini infüzyonu, paracentesis-induced circulatory dysfunction (PICD) önlemek için standart medikal zorunluluktur; bu hastada 7 litre için yaklaşık 42-56 gram albümin infüze edilmelidir.",
-        "B": "LVP sonrası albümin infüzyonu yalnızca 10 litreden fazla sıvı boşaltıldığında gereklidir, 7 litre için gerekli değildir.",
-        "C": "PICD önlemek için albümin yerine izotonik salin infüzyonu eşdeğer etkinliğe sahiptir ve tercih edilmelidir.",
-        "D": "Albümin infüzyonu yalnızca hastanın serum albümini düşük olduğunda (<2.5 g/dL) gereklidir, bu bilgi olmadan karar verilemez.",
-        "E": "LVP sonrası albümin infüzyonu isteğe bağlıdır, klinik yanıta göre atlanabilir."
+        "A": "LVP sonrası albümin infüzyonu yalnızca 10 litreden fazla sıvı boşaltıldığında gereklidir, 7 litre için gerekli değildir.",
+        "B": "PICD önlemek için albümin yerine izotonik salin infüzyonu eşdeğer etkinliğe sahiptir ve tercih edilmelidir.",
+        "C": "Albümin infüzyonu yalnızca hastanın serum albümini düşük olduğunda (<2.5 g/dL) gereklidir, bu bilgi olmadan karar verilemez.",
+        "D": "LVP sonrası albümin infüzyonu isteğe bağlıdır, klinik yanıta göre atlanabilir.",
+        "E": "Çıkarılan her litre sıvı başına 6-8 gram intravenöz insan albümini infüzyonu, paracentesis-induced circulatory dysfunction (PICD) önlemek için standart medikal zorunluluktur; bu hastada 7 litre için yaklaşık 42-56 gram albümin infüze edilmelidir."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "Her çıkarılan litre başına 6-8 gram İV insan albümini, PICD önlemek için STANDART MEDİKAL ZORUNLULUKTUR — miktardan bağımsız olarak (>5L LVP sonrası) uygulanır. 7 litre için yaklaşık 42-56 gram albümin gerekir (7 × 6-8g).",
       "aciklama_detay": "Geniş Hacimli Parasentez (LVP): İlk ve en çok başvurulan tedavi yöntemidir. Tek seferde çok miktarda (genellikle >5 L) sıvı boşaltılır. Ancak sıvının hızla boşaltılması nedeniyle oluşabilen sarsıcı dolaşım disfonksiyonunu (PICD - Paracentesis Induced Circulatory Dysfunction) önlemek maksadıyla, çıkarılan her litre sıvı başına 6-8 gram intravenöz insan albümini infüze edilmesi standart medikal zorunluluktur. Bu hastada 7 litre sıvı boşaltıldığından, toplam albümin ihtiyacı 7 × 6-8 gram = yaklaşık 42-56 gram olarak hesaplanır. PICD'nin patofizyolojik temeli önemlidir: büyük hacimli parasentez, periton boşluğundaki basıncı ani şekilde düşürerek splanknik vasküler yatağın DAHA DA genişlemesine (zaten var olan splanknik vazodilatasyonun üzerine ek bir genişleme) yol açar — bu, EAKH'yi daha da azaltarak RAAS/SNS aktivasyonunu şiddetlendirir, hiponatremi, hepatorenal sendrom ve mortalite artışına yol açabilir. İnsan albümini infüzyonu, onkotik basıncı destekleyerek ve intravasküler hacmi genişleterek bu dolaşım disfonksiyonunu önler/hafifletir. Bu uygulama, sıvı miktarı (>5L eşiği aşıldığında) ile ilişkilidir, hastanın bazal serum albümin düzeyinden bağımsız olarak STANDART bir profilaktik önlemdir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Her litre için 6-8g İV albümin standart zorunluluktur; 7 litre için ~42-56 gram albümin gerekir.",
-        "B": "YANLIS — Albümin infüzyonu genellikle >5 litre boşaltıldığında (10 litre değil) endikedir; bu hastadaki 7 litre bu eşiği zaten aşmıştır, gerekli bir uygulamadır.",
-        "C": "YANLIS — İzotonik salin, albümine EŞDEĞER ETKİNLİKTE DEĞİLDİR; albüminin onkotik etkisi PICD önlemede kritik rol oynar, kristalloidler bu koruyucu etkiyi sağlamaz ve önerilen standart değildir.",
-        "D": "YANLIS — Albümin infüzyonu, hastanın bazal serum albümin düzeyinden BAĞIMSIZ olarak, çıkarılan sıvı MİKTARINA göre (>5L) standart uygulanan bir profilaktik önlemdir.",
-        "E": "YANLIS — Metinde açıkça 'standart medikal ZORUNLULUK' olarak tanımlanmıştır; isteğe bağlı veya atlanabilir bir uygulama değildir, >5L LVP sonrası rutin uygulanmalıdır."
+        "A": "YANLIS — Albümin infüzyonu genellikle >5 litre boşaltıldığında (10 litre değil) endikedir; bu hastadaki 7 litre bu eşiği zaten aşmıştır, gerekli bir uygulamadır.",
+        "B": "YANLIS — İzotonik salin, albümine EŞDEĞER ETKİNLİKTE DEĞİLDİR; albüminin onkotik etkisi PICD önlemede kritik rol oynar, kristalloidler bu koruyucu etkiyi sağlamaz ve önerilen standart değildir.",
+        "C": "YANLIS — Albümin infüzyonu, hastanın bazal serum albümin düzeyinden BAĞIMSIZ olarak, çıkarılan sıvı MİKTARINA göre (>5L) standart uygulanan bir profilaktik önlemdir.",
+        "D": "YANLIS — Metinde açıkça 'standart medikal ZORUNLULUK' olarak tanımlanmıştır; isteğe bağlı veya atlanabilir bir uygulama değildir, >5L LVP sonrası rutin uygulanmalıdır.",
+        "E": "DOGRU — Her litre için 6-8g İV albümin standart zorunluluktur; 7 litre için ~42-56 gram albümin gerekir."
       },
       "etiketler": [
         "Geniş Hacimli Parasentez",
@@ -276,22 +276,22 @@
     },
     {
       "id": "s10",
-      "metin": "Sık parasentez gerektiren, dirençli asiti olan bir hastada TIPS (Transjuguler İntrahepatik Portosistemik Şant) düşünülüyor. Hastanın Child-Pugh skoru C sınıfı (çok yüksek) ve geçmişte iki kez ciddi hepatik ensefalopati atağı öyküsü mevcut. Ayrı bir hastada ise ilk asit atağı yeni gelişmiş ve karaciğer rezervi iyi.",
+      "metin": "Sık parasentez gerektiren, dirençli asiti olan bir hastada TIPS (Transjuguler İntrahepatik Portosistemik Şant) düşünülüyor. Hastanın Child-Pugh skoru C sınıfı (çok yüksek) ve geçmişte iki kez ciddi hepatik ensefalopati atağı öyküsü mevcut. Ayrı bir hastada ise ilk asit atağı yeni gelişmiş ve karaciğer rezervi iyi. Her iki hastanın TIPS adaylığı ve nakil değerlendirmesi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
-        "A": "İlk hastada TIPS, yüksek Child-Pugh skoru ve ciddi hepatik ensefalopati öyküsü nedeniyle kontrendikedir; ikinci hastada ise ilk asit atağı sonrası MELD skorundan bağımsız olarak derhal karaciğer transplantasyonu adaylık değerlendirmesi yapılmalıdır çünkü transplantasyon refrakter asitin yegane tam küratif tedavisidir.",
-        "B": "TIPS, Child-Pugh skorundan veya hepatik ensefalopati öyküsünden bağımsız olarak tüm dirençli asit hastalarında güvenle uygulanabilir.",
-        "C": "İkinci hastada, ilk asit atağı sonrası transplantasyon değerlendirmesi yalnızca MELD skoru belirli bir eşiği aştığında yapılmalıdır, ilk atak tek başına yeterli bir tetikleyici değildir.",
-        "D": "TIPS, karaciğer rezervi düşük hastalarda özellikle tercih edilen, ensefalopati riskini azaltan bir tedavidir.",
+        "A": "TIPS, Child-Pugh skorundan veya hepatik ensefalopati öyküsünden bağımsız olarak tüm dirençli asit hastalarında güvenle uygulanabilir.",
+        "B": "İkinci hastada, ilk asit atağı sonrası transplantasyon değerlendirmesi yalnızca MELD skoru belirli bir eşiği aştığında yapılmalıdır, ilk atak tek başına yeterli bir tetikleyici değildir.",
+        "C": "TIPS, karaciğer rezervi düşük hastalarda özellikle tercih edilen, ensefalopati riskini azaltan bir tedavidir.",
+        "D": "İlk hastada TIPS, yüksek Child-Pugh skoru ve ciddi hepatik ensefalopati öyküsü nedeniyle kontrendikedir; ikinci hastada ise ilk asit atağı sonrası MELD skorundan bağımsız olarak derhal karaciğer transplantasyonu adaylık değerlendirmesi yapılmalıdır çünkü transplantasyon refrakter asitin yegane tam küratif tedavisidir.",
         "E": "Karaciğer transplantasyonu yalnızca TIPS başarısız olduktan sonra değerlendirmeye alınabilecek son basamak bir seçenektir."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "TIPS, yüksek MELD/Child-Pugh skoru VEYA şiddetli hepatik ensefalopati öyküsü olan hastalarda KONTRENDİKEDİR (birinci hasta). İlk asit atağı sonrası, MELD skorundan BAĞIMSIZ olarak, her hasta derhal nakil adaylığı değerlendirmesine alınmalıdır (ikinci hasta) — çünkü asit gelişimi dekompansasyonun başlangıcıdır ve nakil yegane küratif tedavidir.",
       "aciklama_detay": "TIPS (Transjuguler İntrahepatik Portosistemik Şant): İleri tedavi olarak portal ve sistemik dolaşım arasına stent yerleştirilerek portal basıncın mekanik olarak düşürülmesidir. Sık parasentez gerektiren dirençli asit vakalarında çok başarılıdır, ancak karaciğer rezervi çok düşük (MELD skoru ve Child-Pugh skoru yüksek) veya şiddetli hepatik ensefalopati öyküsü olan hastalarda kontrendikedir. Birinci hasta (Child-Pugh C + iki kez ciddi hepatik ensefalopati öyküsü) tam olarak bu kontrendikasyon profiline uymaktadır — TIPS, portosistemik şant oluşturarak karaciğerin toksin temizleme fonksiyonunu 'by-pass' ettiğinden, zaten düşük karaciğer rezervi ve ensefalopati eğilimi olan hastalarda ensefalopatiyi şiddetlendirebilir veya karaciğer yetmezliğini hızlandırabilir. Kesin Tedavi: Dekompanse evreye geçişin (asit gelişiminin) saptanması, hastalığın radikal çözüm gerektirdiğini kanıtlar. Bu nedenle ilk asit atağı sonrasında, MELD skorundan bağımsız olarak, medikal kontrendikasyonu bulunmayan her hasta derhal karaciğer transplantasyonu açısından adaylık değerlendirmesine tabi tutulmalıdır. İkinci hasta (yeni ilk asit atağı, iyi karaciğer rezervi) için bu ilke doğrudan geçerlidir — asit gelişimi, MELD skoru henüz düşük olsa dahi, dekompansasyonun başladığının ve prognozun kötüleştiğinin (medyan sağkalımın 12 yıldan 2 yıla düştüğünün) bir işaretidir, bu nedenle nakil değerlendirmesi GECİKTİRİLMEMELİ, MELD eşiği beklenmemelidir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Birinci hastada TIPS kontrendike (yüksek Child-Pugh+ensefalopati öyküsü); ikinci hastada MELD'den bağımsız derhal nakil değerlendirmesi gereklidir.",
-        "B": "YANLIS — TIPS, metinde açıkça 'karaciğer rezervi çok düşük (MELD/Child-Pugh yüksek) VEYA şiddetli hepatik ensefalopati öyküsü olan hastalarda KONTRENDİKEDİR' olarak tanımlanmıştır; tüm hastalarda güvenli değildir.",
-        "C": "YANLIS — Tam tersine, metinde açıkça 'MELD skorundan BAĞIMSIZ olarak' ifadesi kullanılmıştır; ilk asit atağının kendisi (MELD eşiğinden bağımsız) transplantasyon değerlendirmesini tetiklemek için yeterlidir.",
-        "D": "YANLIS — TIPS, karaciğer rezervi DÜŞÜK hastalarda TERCİH EDİLEN değil, tam tersine KONTRENDİKE bir tedavidir; ensefalopati riskini azaltmaz, artırabilir (portosistemik şant toksin temizlenmesini bypass eder).",
+        "A": "YANLIS — TIPS, metinde açıkça 'karaciğer rezervi çok düşük (MELD/Child-Pugh yüksek) VEYA şiddetli hepatik ensefalopati öyküsü olan hastalarda KONTRENDİKEDİR' olarak tanımlanmıştır; tüm hastalarda güvenli değildir.",
+        "B": "YANLIS — Tam tersine, metinde açıkça 'MELD skorundan BAĞIMSIZ olarak' ifadesi kullanılmıştır; ilk asit atağının kendisi (MELD eşiğinden bağımsız) transplantasyon değerlendirmesini tetiklemek için yeterlidir.",
+        "C": "YANLIS — TIPS, karaciğer rezervi DÜŞÜK hastalarda TERCİH EDİLEN değil, tam tersine KONTRENDİKE bir tedavidir; ensefalopati riskini azaltmaz, artırabilir (portosistemik şant toksin temizlenmesini bypass eder).",
+        "D": "DOGRU — Birinci hastada TIPS kontrendike (yüksek Child-Pugh+ensefalopati öyküsü); ikinci hastada MELD'den bağımsız derhal nakil değerlendirmesi gereklidir.",
         "E": "YANLIS — Karaciğer transplantasyonu değerlendirmesi TIPS'in başarısız olmasını BEKLEMEZ; metinde 'ilk asit atağı sonrasında... derhal' değerlendirmeye alınması gerektiği vurgulanmıştır, TIPS'ten önce veya bağımsız olarak başlatılabilir/başlatılmalıdır."
       },
       "etiketler": [
@@ -303,6 +303,457 @@
       ],
       "zorluk": "zor",
       "kaynak": "EASL Clinical Practice Guidelines 2018; Boyer et al. Hepatology 2016 (AASLD TIPS Guideline)"
+    },
+    {
+      "id": "s11",
+      "metin": "58 yaşında erkek hasta, alkole bağlı dekompanse karaciğer sirozu, dirençli karın şişliği, sağ yan ağrısı ve nefes darlığı şikâyetleriyle gastroenteroloji servisine yatırılıyor. Fizik muayenesinde masif asit, bacaklarda 2+ pitik ödem ve sağ akciğer bazalinde solunum seslerinin alınamadığı saptanıyor. **Kan biyokimyası:** Serum Na 121 mEq/L · K 4.8 mEq/L · Kreatinin 1.6 mg/dL · Total bilirubin 3.2 mg/dL · Albümin 2.1 g/dL · INR 1.8 · MELD-Na skoru 22. **Tanısal parasentez:** SAAG 1.7 g/dL · Total protein 1.1 g/dL · PMN 110/mm³ (Gram boyama ve kültür negatif). **Tanısal torasentez (sağ plevral efüzyon / hepatik hidrotoraks):** transüda niteliğinde, PMN 90/mm³ (SBE ekarte edildi). **TTE:** LVEF %42, orta derecede diyastolik disfonksiyon, RVSP 30 mmHg. **Vital bulgular:** kan basıncı 92/58 mmHg, nabız 88/dk. Hastalığın klinik seyri sırasında semptomatik rahatlama sağlamak amacıyla hastaya **6.5 litrelik geniş hacimli parasentez (LVP)** uygulanmıştır. AGA Sirozda Asit, Hacim Yüklenmesi ve Hiponatremi Yönetimi Klinik Uygulama Güncellemesi (Best Practice Advice) ilkeleri dikkate alındığında, bu hastanın klinik yönetimi ve tedavisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Transjuguler intrahepatik portosistemik şant (TIPS), refrakter asit ve hepatik hidrotoraks tedavisinde yüksek efektifliğe sahip olduğu için bu hastada vakit kaybetmeden ilk basamak girişimsel tedavi olarak uygulanmalıdır.",
+        "B": "Hepatik hidrotoraksın tekrarlamasını engellemek ve akciğer ekspansiyonunu sağlamak amacıyla sağ hemitoraksa tünelsiz kapalı göğüs tüpü (chest tube) drenajı takılmalıdır.",
+        "C": "6.5 litrelik geniş hacimli parasentez sonrasında, post-parasentez dolaşım disfonksiyonunu (PICD) ve renal fonksiyon bozukluğunu önlemek amacıyla boşaltılan her bir litre asit sıvısı için 6–8 gram intravenöz %20–25'lik insan albümini infüzyonu yapılmalıdır.",
+        "D": "Ciddi hipervolemik hiponatremi (121 mEq/L) varlığında, serum sodyum düzeyini yükseltmek amacıyla oral vasopressin V2 reseptör antagonisti (tolvaptan) süresiz idame tedavisi olarak başlanmalıdır.",
+        "E": "Hastanın MELD-Na skoru 22 olduğu ve karaciğer yetmezliği ileri düzeyde bulunduğu için diüretik yanıtı alınmadan karaciğer nakli değerlendirmesine başvurulması kontrendikedir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "5 litreden fazla asit boşaltıldığında, boşaltılan her litre için 6–8 g IV %20–25'lik insan albümini verilmesi standart yaklaşımdır (AGA BPA 6): PICD, elektrolit bozukluğu, renal yetmezlik ve mortalite artışı bu şekilde önlenir.",
+      "aciklama_detay": "AGA Best Practice Advice (BPA 6) ilkesine göre; 5 litreden fazla (büyük hacimli) asit sıvısı boşaltıldığında, post-parasentez dolaşım disfonksiyonunu (PICD), elektrolit bozukluklarını, renal yetmezliği ve mortalite artışını önlemek amacıyla boşaltılan her bir litre asit için 6–8 gram IV %20–25'lik insan albümini verilmesi standart yaklaşımdır. Ayrıca hipotansiyonu (92/58 mmHg), renal yetmezliği (kreatinin 1.6 mg/dL) ve hiponatremisi (121 mEq/L) olan bu hastada, 5 litrenin altındaki boşaltımlarda dahi albümin infüzyonu değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Refrakter asit ve hepatik hidrotoraks varlığında TIPS etkili bir seçenek olsa da (BPA 7), hasta seçimi son derece kritik öneme sahiptir. TIPS uygulanması için mutlak kontrendikasyonlar arasında konjestif kalp yetmezliği, sol ventrikül ejeksiyon fraksiyonunun (LVEF) <%50 olması, ağır diyastolik/kapak disfonksiyonu, kontrolsüz hepatik ensefalopati ve sepsis yer almaktadır. Vakamızda LVEF'nin %42 olması ve orta derecede diyastolik disfonksiyon bulunması TIPS uygulanmasını kesin olarak engeller. Ayrıca MELD skorunun >18–19 olması ve serum bilirubin düzeyinin >3 mg/dL olması da TIPS sonrası yüksek mortalite riski taşır.",
+        "B": "YANLIS — Siroza bağlı hepatik hidrotoraks vakalarında göğüs tüpü (chest tube) takılması masif sıvı-elektrolit kayıplarına, ciddi enfeksiyonlara, plevral kollateral kanamalarına ve yüksek morbidite/mortaliteye yol açtığı için KESİNLİKLE KONTRENDİKEDİR ve kaçınılmalıdır. Semptomatik hepatik hidrotoraks yönetiminde tekrarlayan terapötik torasentezler, duruma göre indwelling tünelli plevral kateterler veya nakil değerlendirmesi tercih edilir.",
+        "C": "DOGRU — 5 litreyi aşan LVP sonrasında her litre için 6–8 g IV %20–25'lik insan albümini verilir (BPA 6); bu hastada hipotansiyon, renal yetmezlik ve hiponatremi de bulunduğu için albümin desteği ayrıca güçlü endikedir.",
+        "D": "YANLIS — Selektif vasopressin reseptör antagonistleri (vaptanlar), siroza bağlı hipervolemik hiponatremide sodyum düzeylerini geçici olarak düzeltebilse de; hepatotoksisite ve mortalite artışı gibi ciddi yan etkileri nedeniyle rutin ve uzun dönem idame tedavisinde kullanımları terk edilmiştir. Vaptanlar günümüzde yalnızca karaciğer nakli bekleme listesindeki ağır hiponatremili hastalarda kısa süreli köprü tedavisi olarak sınırlı vakalarda düşünülebilir (BPA 10 & 11).",
+        "E": "YANLIS — AGA Best Practice Advice (BPA 4) açıkça belirtmektedir ki: Dirençli asit ve/veya hepatik hidrotoraks gelişen TÜM siroz hastaları, MELD skorundan bağımsız olarak derhal karaciğer nakli değerlendirmesine yönlendirilmelidir. Asit ve hepatik hidrotoraks varlığı, 1 yıllık mortaliteyi belirgin şekilde artıran ve MELD skorunun tek başına öngöremediği sistemik dekompansasyon kriterleridir."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "LVP",
+        "Albümin",
+        "Hepatik Hidrotoraks",
+        "TIPS",
+        "Hiponatremi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "AGA Clinical Practice Update — Sirozda Asit, Hacim Yüklenmesi ve Hiponatremi Yönetimi (Best Practice Advice)"
+    },
+    {
+      "id": "s12",
+      "metin": "62 yaşında erkek hasta, alkolik karaciğer sirozu zemininde gelişen nefes darlığı, belirgin karın şişliği, halsizlik ve idrar miktarında azalma (oligüri) şikâyetleriyle acil servise başvuruyor. **Fizik muayene ve vital bulgular:** kan basıncı 88/54 mmHg · nabız 96/dk · oda havasında SpO₂ %88 (hipoksemik); Evre 2 hepatik ensefalopati ile uyumlu konfüzyon ve asteriksis; masif gergin asit ve bacaklarda 2+ pitik ödem. **Kan biyokimyası:** Kreatinin 3.4 mg/dL (3 gün önceki bazal değeri 1.1 mg/dL) · BUN 62 mg/dL · Total bilirubin 5.8 mg/dL · Na 126 mEq/L · K 4.6 mEq/L · MELD skoru 32. **Diagnostik parasentez:** asit PMN sayısı 420/mm³ (SBP ile uyumlu). Hasta gastroenteroloji servisine yatırılarak SBP ön tanısıyla derhal intravenöz 3. kuşak sefalosporin (seftriakson) tedavisine alınıyor. AGA Sirozda Vazoaktif İlaçlar ve İntravenöz Albümin Kullanımı Rehberi (Garcia-Tsao et al., 2024) ilkeleri dikkate alındığında, bu hastanın akut böbrek hasarı (AKİ/HRS) ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "SBP tanısı konulan bu hastada, antibiyoterapiye ek olarak 1. gün 1.5 g/kg ve 3. gün 1.0 g/kg intravenöz albümin verilmesi Akut Böbrek Hasarı (AKİ) gelişimini ve mortalite riskini belirgin şekilde azaltır.",
+        "B": "Hastada hepatorenal sendrom (HRS-AKİ) tablosu düşünüldüğü için birinci basamak vazoaktif ajan olarak terlipressin tedavisi derhal başlanmalı ve oda havasında SpO₂ düzeyi %88 olmasına rağmen periferik yoldan infüzyona devam edilmelidir.",
+        "C": "Terlipressin uygulanamayan vakalarda splanknik vazodilatasyonu düzeltmek ve renal perfüzyonu sağlamak amacıyla oral midodrin monoterapisi birinci basamak vazoaktif seçenek olarak terlipressine eşdeğer klinik etkinlik sunar.",
+        "D": "SBP zemininde gelişen şiddetli sistemik vazodilatasyonu ve organ yetmezliğini geri çevirmek amacıyla, vazoaktif ilaçların (terlipressin veya noradrenalin) doğrudan SBP tedavisine rutin olarak eklenmesi önerilmektedir.",
+        "E": "Hastanın serum kreatinin değeri >3.0 mg/dL olduğu için AKİ ayırıcı tanısında 2 gün boyunca 1.0 g/kg/gün albümin ile hacim genişletmesi yapılmadan doğrudan diyaliz kararı alınmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SBP'de antibiyotiğe IV albümin (1. gün 1.5 g/kg, 3. gün 1.0 g/kg) eklenmesi AKİ ve mortaliteyi belirgin azaltır (AGA BPA 5). Hipoksemi (SpO₂ <%90) terlipressin için kontrendikasyondur.",
+      "aciklama_detay": "AGA Best Practice Advice 5 uyarınca; SBP tanısı konulan siroz hastalarında intravenöz albümin uygulaması (1. gün 1.5 g/kg ve 3. gün 1.0 g/kg) standart antibiyotik tedavisine mutlaka eklenmelidir. Yapılan çok merkezli randomize kontrollü çalışmalarda ve meta-analizlerde, antibiyoterapiye albümin eklenmesinin AKİ oranını (%30'lardan %10'lara) ve ölüm riskini belirgin şekilde düşürdüğü gösterilmiştir. Özellikle serum bilirubin düzeyi >4 mg/dL ve/veya başvuru anında AKİ/azotemi (kreatinin >1.5 mg/dL, BUN >30 mg/dL) bulunan yüksek riskli siroz hastalarında albümin infüzyonunun klinik faydası en üst düzeydedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — SBP'de antibiyoterapiye eklenen IV albümin (1. gün 1.5 g/kg, 3. gün 1.0 g/kg) AKİ gelişimini ve mortaliteyi belirgin şekilde azaltır; bilirubin >4 mg/dL ve başvuruda azotemi bulunan bu hasta en yüksek fayda grubundadır.",
+        "B": "YANLIS — Terlipressin, HRS-AKİ tedavisinde birinci basamak vazoaktif ilaç olmasına rağmen (Best Practice Advice 10); hipoksemisi (SpO₂ <%90) olan veya aktif koroner, periferik veya mezenterik iskemisi bulunan hastalarda kullanımı KESİNLİKLE KONTRENDİKEDİR (Best Practice Advice 12). CONFIRM çalışmasında terlipressin alan grupta solunum yetmezliği ve buna bağlı ölüm oranlarının belirgin şekilde arttığı gösterilmiştir. Hastamızın oda havasında SpO₂ düzeyi %88 olduğu için terlipressin başlanması kontrendikedir.",
+        "C": "YANLIS — HRS-AKİ tedavisinde midodrin ve oktreotid kombinasyonu, terlipressin veya noradrenalinden anlamlı derecede daha az etkilidir. Tek başına midodrin monoterapisinin ise HRS-AKİ tedavisinde yeri ve etkinliği gösterilmemiştir. Unkomplike asitte veya SBP zemininde midodrin kullanımı natriüretik yanıtı veya renal fonksiyonları düzeltmede yetersizdir.",
+        "D": "YANLIS — AGA Best Practice Advice 7 uyarınca; vazoaktif/vazokonstriktör ilaçlar (terlipressin, noradrenalin veya midodrin) unkomplike asitte, geniş hacimli parasentez sonrasında veya SBP tedavisinde rutin olarak KULLANILMAMALIDIR. SBP hastalarında vazokonstriktörlerin antibiyoterapiye eklenmesinin renal bozukluk veya mortalite üzerinde albümine ek bir üstünlük sağlamadığı saptanmıştır.",
+        "E": "YANLIS — AGA Best Practice Advice 8 uyarınca; AKİ ile başvuran asitli siroz hastalarında ilk basamak plazma/hacim genişletici seçenek intravenöz albümindir (2 ardışık gün boyunca 1 g/kg/gün, maksimum 100 g/gün). Albümin ile yapılan bu hacim genişletmesine yanıt alınamaması, HRS-AKİ tanısının temel kriterlerinden biridir. Doğrudan diyaliz kararı almak yerine öncelikle albümin yüklemesi ile prerenal azotemi ekarte edilmelidir."
+      },
+      "etiketler": [
+        "SBP",
+        "Albümin",
+        "HRS-AKİ",
+        "Terlipressin",
+        "Vazoaktif İlaçlar"
+      ],
+      "zorluk": "zor",
+      "kaynak": "AGA Clinical Practice Update — Sirozda Vazoaktif İlaçlar ve İntravenöz Albümin Kullanımı (Garcia-Tsao et al., 2024)"
+    },
+    {
+      "id": "s13",
+      "metin": "54 yaşında erkek hasta, dekompanse alkolik karaciğer sirozuna sekonder gelişen ve medikal tedaviye rağmen gerilemeyen karın şişliği şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Hasta son 3 haftadır diyetle sodyum kısıtlamasına (<2 g/gün veya <90 mmol/gün) tam uyum sağladığını ve reçete edilen maksimum doz diüretik tedavisini (**Spironolakton 400 mg/gün + Furosemid 160 mg/gün**) aksatmadan kullandığını belirtmektedir. **Kilo takibi:** son 4 günlük yakın izlemde ortalama toplam kilo kaybı sadece 0.2 kg. **24 saatlik idrar analizi:** idrar sodyum atılımı 18 mmol/gün (diyetle alınan günlük sodyum miktarının altında). **Kan biyokimyası:** Na 136 mEq/L · K 4.4 mEq/L · Kreatinin 1.1 mg/dL · BUN 18 mg/dL · Total bilirubin 2.2 mg/dL · Albümin 2.5 g/dL · INR 1.4. **Skorlamalar:** Child-Turcotte-Pugh (CTP) 8 (Child-Pugh B) · MELD 14. **Diagnostik parasentez:** SAAG 1.8 g/dL (yüksek gradyan) · Total protein 1.2 g/dL · PMN 80/mm³ (Gram boyama ve kültür negatif). Klinik tablo ve laboratuvar bulguları değerlendirildiğinde, bu hastanın asit sınıflandırması, patofizyolojisi ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Maksimum yoğun diüretik tedavisine (Spironolakton 400 mg/gün + Furosemid 160 mg/gün) ve diyetle sodyum kısıtlamasına rağmen 4 günde ortalama kilo kaybının <0.8 kg olması ve idrar sodyum atılımının alımın altında kalması nedeniyle bu tablo \"Diüretik-Dirençli Asit (Diuretic-Resistant Ascites)\" olarak tanımlanır.",
+        "B": "Asit sıvısı total protein düzeyinin <1.5 g/dL olması ve hastanın Child-Pugh B siroz tablosunda bulunması nedeniyle, daha önce SBP atağı geçirmemiş olsa dahi tek başına bu bulguyla sürekli oral florokinolon ile primer SBP profilaksisi başlanması şarttır.",
+        "C": "Hastada diüretik direnci geliştiği için spironolakton dozu 800 mg/gün'e, furosemid dozu ise 320 mg/gün'e yükseltilerek kombinasyon medikal tedavisine devam edilmelidir.",
+        "D": "Hastanın Child-Pugh skoru 8 ve MELD skoru 14 olduğu için Transjuguler İntrahepatik Portosistemik Şant (TIPS) uygulaması mutlak kontrendikedir ve tek tedavi seçeneği peritoneovenöz şanttır.",
+        "E": "Geniş hacimli parasentez (LVP) uygulandığında post-parasentez dolaşım disfonksiyonunu (PPCD) önlemek amacıyla albümin yerine oral vasopressin V2 reseptör antagonisti (vaptan) idame tedavisi başlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Maksimum diüretik + sodyum kısıtlamasına rağmen 4 günde <0.8 kg kilo kaybı ve idrar sodyumunun alımın altında kalması diüretik-DİRENÇLİ asidi tanımlar; diüretik-toleranssız asit ise yan etkiler nedeniyle etkin doza çıkılamamasıdır.",
+      "aciklama_detay": "Uluslararası kabul görmüş tanı kriterlerine göre; en az 1 hafta boyunca sodyum kısıtlamasına (<2 g/gün veya <90 mEq/gün) ve maksimum tolere edilen diüretik tedavisine (Spironolakton 400 mg/gün + Furosemid 160 mg/gün) rağmen asit sıvısının mobilize edilememesi veya erken nüksetmesi Refrakter Asit olarak tanımlanır. Refrakter asit iki alt grupta incelenir: (1) Diüretik-Dirençli Asit (Diuretic-Resistant Ascites): Yoğun diüretik tedavisine yanıt alınamaması; yani 4 günlük izlemde ortalama kilo kaybının <0.8 kg olması ve idrar sodyum atılımının diyetle alınan sodyum miktarının altında kalması durumudur. Vakadaki hastada 4 günlük kilo kaybı 0.2 kg ve idrar sodyumu 18 mmol/gün olduğundan klinik tablo diüretik-dirençli asit kriterlerine tam olarak uymaktadır. (2) Diüretik-Toleranssız Asit (Diuretic-Intractable Ascites): Diüretik kullanımına bağlı yan etkilerin (akut böbrek hasarı, elektrolit imbalansı, hepatik ensefalopati) gelişmesi nedeniyle efektif diüretik dozlarına çıkılamaması durumudur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 4 günlük izlemde ortalama kilo kaybı <0.8 kg (hastada 0.2 kg) ve idrar sodyum atılımının alımın altında kalması (18 mmol/gün) diüretik-dirençli asit kriterlerini tam olarak karşılar.",
+        "B": "YANLIS — Primer SBP profilaksisi verilebilmesi için asit sıvısı total protein düzeyinin <1.5 g/dL olmasına ek olarak; bozulmuş böbrek fonksiyonları (serum kreatinin ≥1.2 mg/dL, BUN ≥25 mg/dL veya serum Na ≤130 mmol/L) veya ileri karaciğer yetmezliği (Child-Pugh skoru ≥9 ve serum bilirubin ≥3 mg/dL) kriterlerinden en az birinin bulunması gereklidir. Hastada asit proteini 1.2 g/dL olmasına karşın kreatinin 1.1 mg/dL, Na 136 mEq/L, Child-Pugh skoru 8 ve bilirubin 2.2 mg/dL olduğundan primer profilaksi kriterleri henüz karşılanmamaktadır.",
+        "C": "YANLIS — Sirozda kılavuzlarca önerilen maksimum diüretik üst sınır dozları Spironolakton için 400 mg/gün ve Furosemid için 160 mg/gün'dür. Bu tavan dozların üzerine çıkılması natriüretik yanıt sağlamayacağı gibi renal hemodinamiyi bozarak ağır azotemi ve elektrolit bozukluklarına yol açar.",
+        "D": "YANLIS — Sık parasentez (her 2–4 haftada bir) gerektiren refrakter ve tekrarlayan asit vakalarında TIPS uygulaması etkili bir alternatif tedavi stratejisidir. TIPS değerlendirmesinde uygun karaciğer rezervi kriterleri CTP skorunun ≤11 veya MELD skorunun <19 olmasıdır. Hastanın CTP skoru 8 ve MELD skoru 14 olduğundan TIPS açısından uygun bir adaydır. Ayrıca peritoneovenöz şantlar yüksek komplikasyon oranları ve zayıf kanıt düzeyi nedeniyle önerilmemektedir.",
+        "E": "YANLIS — Geniş hacimli parasentez (LVP >5 litre) sonrasında post-parasentez dolaşım disfonksiyonunu (PPCD) ve renal fonksiyon bozukluklarını önlemek için standart yaklaşım, boşaltılan her litre asit sıvısı için 6–8 gram IV insan albümini verilmesidir. Vaptanların (vasopressin V2 reseptör antagonistleri) sirotik asit tedavisinde rutin kullanımı klinik olarak önerilmemektedir."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "Diüretik Direnci",
+        "İdrar Sodyumu",
+        "TIPS",
+        "SBP Profilaksisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Uluslararası Asit Kulübü (IAC) refrakter asit tanı kriterleri"
+    },
+    {
+      "id": "s14",
+      "metin": "65 yaşında kadın hasta, bilinen Hepatit C (HCV) ilişkili dekompanse karaciğer sirozu zemininde ani başlayan şiddetli karın ağrısı, dirençli ateş (38.8 °C), bulantı ve yaygın karın hassasiyeti (rebound) şikâyetleriyle acil servise getiriliyor. **Kan biyokimyası:** Lökosit 16.500/mm³ · Kreatinin 1.8 mg/dL · Serum glikozu 110 mg/dL · Serum LDH 220 U/L. **Diagnostik parasentez:** asit PMN sayısı 1.850/mm³ (nötrositik asit) · asit total proteini 3.2 g/dL · asit glikozu 22 mg/dL · asit LDH 850 U/L (serum seviyesinin yaklaşık 4 katı) · Gram boyamada hem Gram-negatif basiller hem de Gram-pozitif koklar dâhil çoklu mikroorganizma (polimikrobiyal). Klinik tablo ve asit sıvısı analiz bulguları değerlendirildiğinde, bu hastada \"Sekonder Bakteriyel Peritonit\" (perfore organ / intra-abdominal apse) ayırıcı tanısı ve tedavisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Asit sıvısında polimorfonükleer (PMN) lökosit sayısının ≥ 250/mm³ olması tek başına Spontan Bakteriyel Peritonit (SBP) tanısı koydurduğu için hastaya yalnızca intravenöz 3. kuşak sefalosporin başlanmalı; cerrahi konsültasyona veya ileri görüntülemeye gerek duyulmamalıdır.",
+        "B": "Asit sıvısında glikoz düzeyinin < 50 mg/dL olması, LDH seviyesinin belirgin yükselmesi ve kültür/Gram boyamada polimikrobiyal üreme saptanması Sekonder Bakteriyel Peritoniti işaret eder; derhal suda çözünür kontrastlı batın BT çekilmeli ve cerrahi konsültasyon istenmelidir.",
+        "C": "Sekonder bakteriyel peritonit düşünülen hastalarda mikrobiyolojik kültür sonucunu beklemek amacıyla antibiyoterapi başlangıcı en az 48 saat ertelenmelidir.",
+        "D": "Siroza bağlı gelişen tüm asit vakalarında asit sıvısı proteini her zaman > 3.5 g/dL olduğu için protein yüksekliği sekonder peritonit açısından ayırıcı bir parametre oluşturmaz.",
+        "E": "Asit sıvısındaki polimorfonükleer lökosit (PMN) sayısı ne kadar yüksek olursa olsun, kan kültürlerinde üreme olmaması durumunda peritonit tanısı tamamen dışlanır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Asit glikozu <50 mg/dL, LDH'nin serumun kat kat üzerine çıkması ve polimikrobiyal üreme üçlüsü sekonder bakteriyel peritoniti gösterir: ampirik antibiyotik sürerken suda çözünür kontrastlı batın BT ve acil cerrahi konsültasyon gerekir.",
+      "aciklama_detay": "Siroz hastalarında asit enfeksiyonu değerlendirilirken Spontan Bakteriyel Peritonit (SBP) ile bir organ perforasyonu veya intra-abdominal apse rüptürüne bağlı gelişen Sekonder Bakteriyel Peritonit ayrımının yapılması hayati önem taşır. SBP tipik olarak bağırsak bakterilerinin translokasyonuyla gelişen monomikrobiyal bir enfeksiyonken; Sekonder Bakteriyel Peritonit cerrahi müdahale gerektiren tablolardan kaynaklanır. Asit sıvısı analizinde (1) glikoz düzeyinin < 50 mg/dL olması, (2) laktat dehidrogenaz (LDH) düzeyinin belirgin şekilde yükselmesi, (3) Gram boyama veya kültürde birden fazla mikroorganizmanın (polimikrobiyal) saptanması Sekonder Bakteriyel Peritonit şüphesini kesinleştirir. Bu bulgular varlığında hastaya hızla direkt batın grafisi, suda çözünür kontrastlı batın bilgisayarlı tomografisi (BT) ve acil cerrahi konsültasyonu uygulanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Asit PMN sayısının ≥ 250/mm³ olması SBP'nin temel tanı kriteridir. Ancak asit sıvısında glikozun aşırı düşük (22 mg/dL), LDH'nin aşırı yüksek olması ve polimikrobiyal görünüm varlığı SBP tanısından uzaklaştırıp cerrahi kökenli Sekonder Peritonite yönlendirir. Bu vakada yalnızca sefalosporin verip cerrahi değerlendirmeyi atlamak mortaliteyi dramatik şekilde artırır.",
+        "B": "DOGRU — Glikoz <50 mg/dL, LDH'nin serum düzeyinin kat kat üzerine çıkması ve polimikrobiyal üreme sekonder bakteriyel peritoniti işaret eder; suda çözünür kontrastlı batın BT ve acil cerrahi konsültasyon gerekir.",
+        "C": "YANLIS — Asit enfeksiyonu şüphesi olan veya PMN sayısı ≥ 250/mm³ saptanan hastalarda kültür sonuçları beklenmeden derhal ampirik antibiyotik tedavisi (örn. 3. kuşak sefalosporin) başlanmalıdır. Diagnostik parasentezin ve antibiyotik tedavisinin geciktiği her saat mortalitede belirgin artışa yol açar.",
+        "D": "YANLIS — Sirotik asit sıvısında total protein düzeyi sıklıkla düşüktür (< 1.5 g/dL). Asit sıvısı protein düzeyinin düşük olması hastaları SBP gelişimi açısından artmış bir riske sokar. Sekonder peritonitte ise peritoneal inflamasyon ve kapiller geçirgenlik artışına bağlı olarak asit proteini sıklıkla yüksek saptanır.",
+        "E": "YANLIS — SBP tanısı için asit sıvısında PMN sayısının ≥ 250/mm³ olması yeterlidir. Kültürde veya kan kültüründe bakteri üremese dahi bu tablo \"Kültür-Negatif Nötrositik Asit (KNNA)\" olarak adlandırılır ve tıpkı klasik SBP gibi aynı ciddiyetle antibiyotik ile tedavi edilmelidir."
+      },
+      "etiketler": [
+        "Sekonder Peritonit",
+        "SBP Ayırıcı Tanı",
+        "Asit Glikoz/LDH",
+        "Polimikrobiyal"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Sekonder bakteriyel peritonit ayırıcı tanı ölçütleri (Runyon kriterleri)"
+    },
+    {
+      "id": "s15",
+      "metin": "56 yaşında erkek hasta, Hepatit B ve alkol kullanımına bağlı dekompanse karaciğer sirozu ve özofagus varis kanaması öyküsü nedeniyle ikincil profilaksi amacıyla **Karvedilol (12.5 mg/gün)** kullanmaktadır. Hasta son zamanlarda artan karın şişliği, halsizlik, idrar miktarında azalma ve baş dönmesi şikâyetleriyle polikliniğe başvuruyor. **Fizik muayene ve vital bulgular:** kan basıncı 84/52 mmHg (ortalama arter basıncı [MAP] 62 mmHg) · nabız 56/dk; masif gergin asit ve karında hafif yaygın hassasiyet. **Kan biyokimyası:** Na 128 mEq/L · Kreatinin 1.7 mg/dL (1 ay önceki bazal 0.9 mg/dL — AKİ gelişmiş) · Total bilirubin 3.5 mg/dL · Albümin 2.3 g/dL · INR 1.7. **Diagnostik parasentez:** SAAG 1.9 g/dL · Total protein 1.1 g/dL · PMN 380/mm³ (SBP ile uyumlu). Hasta gastroenteroloji servisine yatırılarak SBP tanısıyla intravenöz seftriakson ve 1. gün 1.5 g/kg IV albümin tedavisi başlanıyor. EASL Sirozda Asit ve Komplikasyonları Yönetimi Kılavuzu ile Baveno VII konsensus kararları dikkate alındığında, bu hastada kullanılmakta olan non-selektif beta-bloker (Karvedilol) tedavisi ve özofagus varis kanaması profilaksisi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada varis rekanaması riski çok yüksek olduğu için Karvedilol dozajı hemen iki katına çıkarılmalı ve sodyum kısıtlaması askıya alınmalıdır.",
+        "B": "Progresif hipotansiyon (sistolik kan basıncı <90 mmHg veya MAP <65 mmHg), AKİ ve SBP varlığı nedeniyle Karvedilol tedavisi geçici olarak KESİLMELİ; komplikasyonlar tamamen düzeldikten sonra hasta tekrar değerlendirilmelidir.",
+        "C": "Refrakter asidi ve SBP'si olan hastaların tamamında non-selektif beta-blokerler mortaliteyi düşürdüğü için kan basıncı düşüklüğüne bakılmaksızın tedaviye ömür boyu ara verilmeden devam edilmelidir.",
+        "D": "Karvedilol kesildikten sonra, hastanın varis kanaması profilaksisi tamamen sonlandırılmalı ve hiçbir alternatif girişimsel veya medikal yöntem uygulanmamalıdır.",
+        "E": "Non-selektif beta-blokerlerin kesilmesi SBP tedavisini olumsuz etkilediğinden, hasta taburcu edilene kadar ilaca parenteral yoldan devam edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Baveno VII / EASL: dekompanse sirozda progresif hipotansiyon (SKB <90 mmHg veya MAP <65 mmHg), SBP, sepsis, varis kanaması ya da AKİ geliştiğinde NSBB GEÇİCİ olarak kesilir; tablo düzelince düşük dozdan yeniden başlanabilir.",
+      "aciklama_detay": "Baveno VII Konsensus ilkeleri ve EASL Dekompanse Siroz Kılavuzu uyarınca; dekompanse sirozlu ve asitli hastalarda progresif hipotansiyon (sistolik kan basıncı <90 mmHg veya Ortalama Arter Basıncı [MAP] <65 mmHg) geliştiğinde ya da SBP, sepsis, varis kanaması veya Akut Böbrek Hasarı (AKİ) gibi interküren komplikasyonlar ortaya çıktığında Non-Selektif Beta-Bloker (NSBB — Karvedilol/Propranolol) tedavisi GEÇİCİ OLARAK KESİLMELİDİR. İleri evre siroz ve refrakter asitte NSBB'ler kardiyak debiyi baskılayarak renal perfüzyon basıncını düşürebilir ve AKİ/HRS riskini artırabilir. Komplikasyonlar ve hemodinami düzeldiğinde NSBB tedavisi düşük dozdan tekrar başlanabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hipotansiyon ve AKİ gelişen bir hastada Karvedilol dozunu artırmak kardiyak debiyi ve renal perfüzyonu daha da bozarak sistemik kollapsı derinleştirir ve mortaliteyi artırır.",
+        "B": "DOGRU — Hipotansiyon (MAP 62 mmHg), AKİ (kreatinin 0.9 → 1.7 mg/dL) ve SBP birlikteliğinde NSBB geçici olarak kesilir; hemodinami ve komplikasyonlar düzeldikten sonra düşük dozdan yeniden değerlendirilir.",
+        "C": "YANLIS — NSBB'ler kompanse sirozda ve erken portal hipertansiyonda dekompansasyonu önlemede oldukça yararlı olsa da; refrakter asit, SBP, ciddi hipotansiyon veya AKİ zemininde \"pencere hipotezi (window hypothesis)\" gereği renal perfüzyon basıncını düşürerek zararlı hâle gelebilir ve bu durumlarda kesinlikle kesilmeleri önerilir.",
+        "D": "YANLIS — NSBB tedavisi persistan hipotansiyon, AKİ veya tolere edilememe nedeniyle durdurulursa veya kontrendike hâle gelirse; hastanın varis kanaması sekonder profilaksisi ilaçsız bırakılmaz, non-farmakolojik yöntem olan Endoskopik Bant Ligasyonu (EBL) ile sürdürülür.",
+        "E": "YANLIS — NSBB'lerin akut SBP atağı, renal bozukluk (AKİ) ve hipotansiyon sırasında verilmeye devam edilmesi global dolaşım homeostazını bozar. Bu nedenle akut enfeksiyon ve hemodinamik bozulma tablosunda ilacın kesilmesi standart klinik yaklaşımdır."
+      },
+      "etiketler": [
+        "NSBB",
+        "Karvedilol",
+        "Baveno VII",
+        "SBP",
+        "AKİ",
+        "Varis Profilaksisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "EASL Dekompanse Siroz Kılavuzu · Baveno VII konsensus"
+    },
+    {
+      "id": "s16",
+      "metin": "50 yaşında kadın hasta, MASH (metabolik disfonksiyon ilişkili steatohepatit) zemininde gelişen dekompanse karaciğer sirozu ve bilinen orta derece (Evre 2) asiti nedeniyle rutin poliklinik kontrolüne başvuruyor. Hastanın ateş, karın ağrısı, bulantı veya zihinsel bulanıklık (ensefalopati) gibi **hiçbir şikâyeti bulunmamaktadır.** Fizik muayenede vital bulguları stabil (kan basıncı 114/70 mmHg · nabız 72/dk · ateş 36.6 °C), karında rahat mobilize olan asit ve pretibiyal 1+ ödem saptanıyor. **Kan biyokimyası:** Kreatinin 0.8 mg/dL · Na 138 mEq/L · Total bilirubin 1.8 mg/dL · Albümin 2.9 g/dL · INR 1.2 · MELD-Na 10 · Child-Turcotte-Pugh 6. **Rutin diagnostik parasentez:** asit PMN 110/mm³ (PMN < 250/mm³) · asit total proteini 1.8 g/dL (18 g/L) · yatak başı kan kültürü şişelerine ekilen asit kültüründe 48 saat sonra monomikrobiyal *Escherichia coli* üremesi. Klinik tablo, laboratuvar bulguları ve asit analizi değerlendirildiğinde, bu hastanın tanısı ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Asit sıvısında polimorfonükleer (PMN) lökosit sayısı < 250/mm³ olmasına karşın mikrobiyolojik kültürde bakteri üremesi \"Bakteriyasit (Bacterascites)\" olarak tanımlanır; hasta tamamen asemptomatik olduğundan hemen ampirik antibiyotik başlatmak yerine tekrarlayan parasentez ile asit analizinin kontrol edilmesi ve klinik izlem uygulanması doğru yaklaşımdır.",
+        "B": "Asit sıvısı kültüründe Gram-negatif enterik basil (E. coli) ürediği için PMN lökosit sayısına bakılmaksızın tüm hastalar derhal nozokomiyal peritonit protokolüne alınmalı ve geniş spektrumlu karbapenem (meropenem) + vankomisin kombinasyonu başlanmalıdır.",
+        "C": "Asit sıvısı total protein düzeyi > 1.5 g/dL (18 g/L) olan tüm siroz hastalarına MELD skorundan ve renal fonksiyonlardan bağımsız olarak ömür boyu norfloksasin ile sürekli primer SBP profilaksisi verilmelidir.",
+        "D": "Asemptomatik bakteriyasit saptanan hastalarda peritoneal sıvının mikroorganizmalardan temizlenmesi amacıyla acil cerrahi tünelli periton kateteri takılmalı veya göğüs tüpü yerleştirilmelidir.",
+        "E": "Bakteriyasit saptanan tüm dekompanse siroz hastalarında, asit boşaltımı yapılmasa dahi hepatorenal sendromu önlemek amacıyla tanı anında 5.0 g/kg ve 3. gün 3.0 g/kg dozunda yüksek doz intravenöz albümin infüzyonu yapılması rutin bir kuraldır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PMN < 250/mm³ + monomikrobiyal üreme = bakteriyasit. Asemptomatik hastada doğru yaklaşım hemen antibiyotik değil, kontrol parasentezi; PMN ≥ 250/mm³ olursa veya semptom gelişirse SBP tedavisi başlanır.",
+      "aciklama_detay": "Asit sıvısı analizinde polimorfonükleer (PMN) lökosit sayısının < 250/mm³ olması ancak mikrobiyolojik kültürde tek bir patojenin üremesi \"Bakteriyasit (Bacterascites)\" veya asit sıvısının geçici bakteriyel kolonizasyonu olarak adlandırılır. Bakteriyasit vakalarının bir kısmı kendiliğinden gerilerken (transient colonization), bir kısmı gerçek Spontan Bakteriyel Peritonite (SBP) ilerleyebilir. Hastanın semptomatik olması veya sistemik inflamasyon bulguları göstermesi durumunda derhal antibiyotik tedavisi başlanmalıdır. Ancak vakadaki hasta gibi tamamen asemptomatik olan bakteriyasit durumlarında, hemen antibiyotik başlamak yerine kontrol diagnostik parasentez yapılarak asit PMN sayısının ve kültürünün tekrar değerlendirilmesi uluslararası hepatoloji kılavuzlarınca önerilen standart yaklaşımdır. Tekrar parasentezde PMN ≥ 250/mm³ saptanırsa veya hastada klinik semptom gelişirse SBP tedavisi başlanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PMN < 250/mm³ iken tek tip üreme bakteriyasittir; asemptomatik hastada kontrol parasentezi ve klinik izlem önerilir, tekrar ölçümde PMN ≥ 250/mm³ olursa SBP gibi tedavi edilir.",
+        "B": "YANLIS — Asemptomatik bakteriyasit vakalarında doğrudan geniş spektrumlu karbapenem veya vankomisin gibi ağır antibiyotik rejimlerinin başlanması endike değildir. Geniş spektrumlu dirençli antibiyotik rejimleri (meropenem, teikoplanin, daptomisin vb.), sepsis/septik şok tablosundaki veya çoklu ilaca dirençli (MDR) organizma riski yüksek olan sağlık hizmeti ilişkili (HCA) / nozokomiyal SBP vakalarında tercih edilir.",
+        "C": "YANLIS — Sürekli primer SBP profilaksisi (norfloksasin 400 mg/gün) başlanabilmesi için hastanın asit sıvısı total protein düzeyinin < 1.5 g/dL (15 g/L) olması ve buna ek olarak ileri karaciğer yetmezliği (Child-Pugh ≥ 9 ve bilirubin ≥ 3 mg/dL) veya bozulmuş böbrek fonksiyonları (kreatinin ≥ 1.2 mg/dL, BUN ≥ 25 mg/dL veya Na < 130 mEq/L) kriterlerinden en az birini taşıması gereklidir. Vakamızda asit proteini 1.8 g/dL, bilirubin 1.8 mg/dL, kreatinin 0.8 mg/dL ve Child skoru 6 olduğundan primer profilaksi endikasyonu bulunmamaktadır.",
+        "D": "YANLIS — Bakteriyasit veya sirotik asit vakalarında periton kateteri takılması veya drenaj tüpleri yerleştirilmesi yüksek enfeksiyon ve perforasyon riskleri nedeniyle kontrendikedir. Göğüs tüpü yerleştirilmesi ise Spontan Bakteriyel Ampiyem (SBE) durumlarında bile masif sıvı kayıplarına yol açtığı için kesinlikle kaçınılması gereken bir uygulamadır.",
+        "E": "YANLIS — İntravenöz albümin infüzyonu, asit boşaltımı yapılmaksızın rutin bakteriyasitte bu dozlarda uygulanmaz. SBP tanısı kesinleşen (PMN ≥ 250/mm³) hastalarda ise hepatorenal sendrom (HRS) gelişme riskini ve mortaliteyi azaltmak amacıyla uygulanan standart albümin dozu 1. gün 1.5 g/kg ve 3. gün 1.0 g/kg'dır."
+      },
+      "etiketler": [
+        "Bakteriyasit",
+        "SBP",
+        "Kontrol Parasentezi",
+        "SBP Profilaksisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Uluslararası hepatoloji kılavuzları — bakteriyasit yönetimi"
+    },
+    {
+      "id": "s17",
+      "metin": "52 yaşında erkek hasta, Hepatit B virüsü (HBV) ilişkili dekompanse karaciğer sirozu zemininde ilk kez gelişen orta derece (Evre 2) asit nedeniyle gastroenteroloji polikliniğine başvuruyor. Özgeçmişinde hipertansiyon veya böbrek hastalığı bulunmamaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 110/72 mmHg · nabız 76/dk; açıklığı aşağı bakan matite veren mobilize asit, **bacaklarda ödem saptanmıyor.** **Kan biyokimyası:** Na 137 mEq/L · K 4.2 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 2.1 mg/dL · Albümin 2.7 g/dL · INR 1.3. **Diagnostik parasentez:** SAAG 1.6 g/dL (yüksek gradyan) · Total protein 1.4 g/dL · PMN 60/mm³ (Gram boyama ve kültür negatif; SBP yok). Hastaya diyetle sodyum kısıtlaması (<2 g/gün) ve diüretik tedavisi başlanması planlanıyor. Siroza bağlı unkomplike asidin ilk basamak tedavisi, diüretik doz titrasyonu ve izlem hedefleri düşünüldüğünde, aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada bacak ödemi bulunmadığı için diüretik tedavisi altında hedeflenmesi gereken günlük maksimum kilo kaybı 1.0 kg olmalıdır; bu sınır aşılırsa intravasküler hacim depresyonu ve akut böbrek hasarı riski artar.",
+        "B": "Normokalemiyi korumak ve hızlı natriürez sağlamak amacıyla diüretik tedavisine tek doz sabah oral 100 mg Spironolakton ve 40 mg Furosemid kombinasyonu ile başlanması; yanıt alınamadığı takdirde 100:40 oranı korunarak dozların kademeli olarak artırılması önerilen temel yaklaşımdır.",
+        "C": "Diüretik tedavisine yanıtı değerlendirmede 24 saatlik idrar toplaması şarttır; spot idrarda sodyum/potasyum (Na/K) oranının ölçülmesi klinik pratikte yanıltıcı olduğu için kesinlikle önerilmez.",
+        "D": "Tedavi sırasında spironolaktona bağlı ağrılı jinekomasti gelişmesi durumunda, mineralokortikoid reseptör blokajını sürdürmek için spironolakton kesilip yerine tavan dozdaki furosemid monoterapisine geçilmelidir.",
+        "E": "Diüretik kullanımı sırasında serum sodyum düzeyi 132 mEq/L'ye düştüğünde tüm diüretik tedavisi derhal kesilmeli ve %3'lük hipertonik salin infüzyonu başlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Unkomplike sirotik asitte standart başlangıç, sabah tek doz 100 mg Spironolakton + 40 mg Furosemid (100:40); yanıtsızlıkta oran korunarak her 3-5 günde bir maksimum 400/160 mg'a kadar titre edilir.",
+      "aciklama_detay": "Siroza bağlı unkomplike asit tedavisinde diyetle sodyum kısıtlamasının (<2 g/gün veya 88 mEq/gün) yanında diüretik rejimine sabit 100:40 oranında (100 mg Spironolakton + 40 mg Furosemid) tek doz sabah oral kombinasyon ile başlanması önerilmektedir. Bu kombinasyon, spironolaktonun potasyum tutucu etkisi ile furosemidin potasyum kaybettirici etkisini dengeleyerek hastayı normokalemik tutar ve monoterapiye kıyasla çok daha hızlı natriürez sağlar. Klinik yanıt alınamadığında 100:40 oranı korunarak doz her 3-5 günde bir kademeli olarak maksimum 400 mg Spironolakton / 160 mg Furosemid düzeyine kadar artırılabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Diüretik tedavisi altında tolere edilebilir maksimum kilo kaybı periferik ödem varlığına göre değişir. Periferik ödemi olan hastalarda günde maksimum 1.0 kg tolere edilebilirken; periferik ödemi OLMAYAN hastalarda (vakamızdaki gibi) hedef günlük maksimum 0.5 kg'dır. Bu emilim sınırının üzerinde diürez sağlanması intravasküler hacim depresyonuna ve prerenal azotemiye yol açar.",
+        "B": "DOGRU — 100:40 sabit oranı normokalemiyi korur ve monoterapiden hızlı natriürez sağlar; yanıtsızlıkta oran bozulmadan kademeli doz artışı yapılır.",
+        "C": "YANLIS — 24 saatlik idrar toplanması teknik olarak zor ve hataya açık olduğundan, klinik pratikte spot idrar sodyum/potasyum (Na/K) oranı güvenilir bir alternatif olarak kullanılır. Spot idrarda Na/K oranının >1.0 olması, 24 saatlik idrar sodyum atılımının >78-80 mmol/gün olduğunu yüksek doğrulukla öngörür.",
+        "D": "YANLIS — Spironolaktona bağlı ağrılı jinekomasti geliştiğinde spironolakton kesilmelidir; ancak yerine yalnızca kıvrım diüretiği (furosemid) verilmez. Distal nefrondaki mineralokortikoid blokajını sürdürmek amacıyla spironolaktonun yerine Amilorid (10-40 mg/gün) geçilmelidir.",
+        "E": "YANLIS — Diüretik tedavisi sırasında hafif dilüsyonel hiponatremi (serum Na 126-135 mEq/L) sık görülür ve bu seviyelerde ilacın kesilmesine gerek yoktur. Diüretiğin derhal durdurulmasını gerektiren eşik, serum sodyumunun <120-125 mEq/L altına düşmesidir. Ayrıca sirotik hipervolemik hiponatremide hipertonik salin infüzyonu volüm yüklenmesini şiddetlendireceği için ağır semptomatik vakalar haricinde kontrendikedir."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Diüretik Titrasyonu",
+        "100:40",
+        "Kilo Kaybı Hedefi",
+        "Spot İdrar Na/K"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AASLD/EASL sirotik asit yönetim ilkeleri"
+    },
+    {
+      "id": "s18",
+      "metin": "48 yaşında erkek hasta, kronik alkol kullanımına sekonder gelişen Child-Pugh B (8 puan) karaciğer sirozu zemininde karın çevresinde son 2 aydır giderek artan şişlik (orta derece / Evre 2 asit) şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Hasta daha önce hiç asit atağı geçirmediğini ve herhangi bir diüretik veya profilaktik ilaç kullanmadığını belirtiyor. **Fizik muayene ve vital bulgular:** kan basıncı 115/72 mmHg · nabız 78/dk · ateş 36.5 °C; mobilize asit, pretibiyal ödem yok; ensefalopati bulgusu yok (Evre 0). **Kan biyokimyası:** Na 138 mEq/L · K 4.1 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 2.3 mg/dL · Albümin 2.8 g/dL · INR 1.3. **Diagnostik parasentez:** SAAG 1.7 g/dL (yüksek gradyan) · Total protein 1.6 g/dL · PMN 80/mm³ (Gram boyama ve kültür negatif; SBP ekarte edildi). Siroza bağlı ilk kez gelişen unkomplike asidin başlangıç tedavisi (initial therapy), diyet ve izlem stratejileri düşünüldüğünde, aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Sodyum kısıtlamasına (<2 g/gün) ek olarak, sıvı alımı da hastanın serum sodyum düzeyine bakılmaksızın başlangıç tedavisinde rutin olarak günlük maksimum 1000 mL ile kısıtlanmalıdır.",
+        "B": "Alkol kullanımına bağlı siroz vakalarında alkolün tamamen bırakılması, portal basınçta belirgin düşüş sağlayarak asit tablosunda aylar içerisinde tam çözülme veya dramatik gerileme sağlayabilir.",
+        "C": "Başlangıç diüretik tedavisinde spironolakton monoterapisinin tercih edilmesi, spironolakton ve furosemid kombinasyonuna kıyasla her zaman daha hızlı natriürez sağlar.",
+        "D": "Yemek lezzetini artırmak amacıyla hastaya potasyum bazlı tuz muadilleri (salt substitutes) kısıtlama olmaksızın serbestçe önerilebilir.",
+        "E": "Serum sodyumu 138 mEq/L olan ve diüretik tedavisine başlanan bu hastada, kilo kaybı sağlanamadığında yapılması gereken ilk müdahale %3'lük hipertonik salin infüzyonudur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Alkolik siroza bağlı asitte alkolün tamamen kesilmesi intrahepatik direnci ve portal basıncı düşürerek asidin aylar içinde gerilemesini ya da tümüyle çözülmesini sağlayabilir.",
+      "aciklama_detay": "Alkolik karaciğer sirozuna sekonder asit gelişen hastalarda temel tıbbi yaklaşımlardan biri alkol kullanımının tamamen kesilmesidir. Alkolün bırakılması, intrahepatik vasküler direnci ve portal venöz basıncı zamanla düşürerek asit sıvısının aylar içerisinde tamamen gerilemesine veya belirgin düzeyde kontrol altına alınmasına olanak tanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sirotik asit tedavisinde diyetle sodyum alımı günlük <2 gram (2000 mg) seviyesine kısıtlanmalıdır. Ancak sıvı kısıtlaması başlangıç tedavisinde rutin olarak uygulanmaz. Sıvı kısıtlaması yalnızca serum sodyum düzeyinin <120-125 mEq/L altına düştüğü ciddi dilüsyonel hiponatremi vakalarında gereklidir.",
+        "B": "DOGRU — Alkolün tamamen bırakılması portal basıncı düşürerek asidin aylar içinde gerilemesini veya tam çözülmesini sağlayabilir; alkolik siroza bağlı asitte temel tıbbi yaklaşımlardan biridir.",
+        "C": "YANLIS — Spironolakton monoterapisi hafif vakalarda kullanılabilse de, Spironolakton ve Furosemid kombinasyonu (100:40 mg başlangıç oranı) tercih edilen standart rejimdir. Kombinasyon tedavisi, monoterapiye kıyasla çok daha hızlı natriürez sağlar ve elektrolit imbalansı (hiperkalemi/hipokalemi) riskini dengeler.",
+        "D": "YANLIS — Sodyum kısıtlaması uygulanan siroz hastalarında, doktor onayı olmadan tuz muadillerinin (salt substitutes) kullanımı önerilmez. Bu ürünler sıklıkla yüksek miktarda potasyum içerir ve özellikle spironolakton gibi potasyum tutucu diüretik kullanan siroz hastalarında hayati risk taşıyan şiddetli hiperkalemiye yol açabilir.",
+        "E": "YANLIS — Serum sodyumu normal sınırlarda (138 mEq/L) olan bir hastada hipertonik salin endikasyonu kesinlikle yoktur. Hipertonik salin infüzyonu yalnızca akut semptomatik ağır hiponatremi durumlarında sınırlı şekilde değerlendirilir; dirençli asit veya kilo kaybı sağlanamaması durumunda volüm yüklenmesini ve ödemi şiddetlendireceği için kullanılmaz."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Alkol Kesilmesi",
+        "Sıvı Kısıtlaması",
+        "Tuz Muadili",
+        "Hiperkalemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "AASLD/EASL sirotik asit yönetim ilkeleri"
+    },
+    {
+      "id": "s19",
+      "metin": "57 yaşında erkek hasta, MASH zemininde dekompanse karaciğer sirozu ve dirençli asit (refrakter asit) tanısıyla takip edilmektedir. Son 2 ay içerisinde 4 kez geniş hacimli parasentez (LVP) uygulanmıştır. Diyetle sodyum kısıtlamasına (<2 g/gün) uyum sağlayan hastanın diüretik tedavisi, 1 ay önce gelişen tekrarlayan Akut Böbrek Hasarı (AKİ) ve hiponatremi nedeniyle kesilmiştir. Özofagus varis kanaması ikincil profilaksisi için **Propranolol 40 mg 2x1** kullanmaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 86/52 mmHg (MAP 63 mmHg) · nabız 78/dk; masif gergin asit. **Laboratuvar:** Na 124 mEq/L · K 4.6 mEq/L · Kreatinin 1.5 mg/dL · Total bilirubin 2.8 mg/dL · Albümin 2.4 g/dL · INR 1.6 · MELD-Na 18 · Child-Pugh 9 (Child B). **Diagnostik parasentez:** SAAG 1.8 g/dL · PMN 70/mm³ (Gram boyama ve kültür negatif). **Ekokardiyografi:** LVEF %60, pulmoner hipertansiyon yok. Güncel kaynaklar ve uluslararası hepatoloji kılavuzları doğrultusunda, bu hastanın dirençli asit yönetimi ve medikal tedavisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada persistan sistolik hipotansiyon (SKB < 90 mmHg / MAP < 65 mmHg), hiponatremi (Na < 125 mEq/L) ve renal yetmezlik mevcuttur; bu nedenle Non-Selektif Beta-Bloker (Propranolol) tedavisi kesilmeli ve varis kanaması ikincil profilaksisi Endoskopik Bant Ligasyonu (EBL) ile sürdürülmelidir.",
+        "B": "Dirençli asit tedavisinde tekrarlayan geniş hacimli parasentez ihtiyacını tamamen ortadan kaldırmak amacıyla, kalıcı tünelli periton kateteri (indwelling peritoneal drain) yerleştirilmesi ilk basamak standart tedavi seçeneğidir.",
+        "C": "Oral alfa-1 adrenerjik agonist olan midodrin; sistemik arteriyel kan basıncını yükselterek ve renal sodyum atılımını artırarak geniş hacimli parasentez (LVP) ve albümin replasmanı uygulamasını tamamen gereksiz kılan tek küratif ajandır.",
+        "D": "Her LVP seansında boşaltılan asit sıvısı miktarı 5 litrenin üzerinde olsa dahi, post-parasentez dolaşım disfonksiyonunu (PICD) önlemek için intravenöz albümin yerine sentetik plazma genişleticileri (dekstran veya jelatin) eşit klinik etkinlikle kullanılmalıdır.",
+        "E": "Dirençli asit gelişen ve karaciğer rezervi korunmuş (MELD < 19) bu hastada Peritoneovenöz Şant (LeVeen / Denver şantı), yüksek greft açıklığı ve düşük komplikasyon oranı nedeniyle TIPS ve karaciğer naklinin önüne geçen öncelikli girişimsel yaklaşımdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hipotansiyon (MAP 63 mmHg), Na < 125 mEq/L ve renal yetmezlik birlikteliğinde NSBB kesilir; varis ikincil profilaksisi ilaçsız bırakılmaz, Endoskopik Bant Ligasyonu ile sürdürülür.",
+      "aciklama_detay": "Dirençli asitli siroz hastalarında, sistemik arteriyel vazodilatasyonun derinleşmesine bağlı olarak hemodinamik kompanzasyon bozulur. Sistolik kan basıncının < 90 mmHg (veya MAP < 65 mmHg) olması, dirençli hiponatremi (serum Na < 125 mEq/L), Akut Böbrek Hasarı (AKİ) veya Spontan Bakteriyel Peritonit (SBP) gelişmesi durumunda Non-Selektif Beta-Blokerlerin (NSBB — Propranolol/Nadolol) kardiyak debiyi baskılayarak perfüzyon basıncını düşürdüğü ve mortaliteyi artırdığı gösterilmiştir. Bu tür durumlarda NSBB tedavisi kesilmeli veya dozu azaltılmalı; varis kanaması profilaksisine ise non-farmakolojik yöntem olan Endoskopik Bant Ligasyonu (EBL) ile devam edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MAP 63 mmHg, Na 124 mEq/L ve kreatinin yüksekliği birlikteliğinde NSBB kesilir; ikincil profilaksi Endoskopik Bant Ligasyonu ile sürdürülür.",
+        "B": "YANLIS — Kalıcı tünelli periton kateterleri (indwelling peritoneal drains), sirotik dirençli asitte yüksek bakteriyel peritonit, persistan protein/sıvı kaybı ve kateter disfonksiyonu riski taşıdığı için rutin ilk basamak tedavi olarak önerilmez. Yalnızca karaciğer nakli veya TIPS adayı olmayan, son evre palyatif/bakımevi hastalarında seçilmiş bir alternatif olarak değerlendirilebilir.",
+        "C": "YANLIS — Midodrin (oral alfa-1 agonist), sistemik vasküler direnci ve MAP'ı artırarak idrar sodyum atılımını geçici olarak yükseltebilir. Ancak LVP ve IV albümin uygulamasını tamamen ortadan kaldıran veya hastalığı tek başına tedavi eden bir ajan değildir; diüretik toleranssızlığı/hipotansiyonu olan dirençli asit vakalarında yalnızca destekleyici bir yardımcı tedavi olarak kullanılabilir.",
+        "D": "YANLIS — 5 litrenin üzerindeki geniş hacimli parasentez (LVP) sonrasında PICD'yi, hiponatremiyi ve AKİ'yi önlemede en etkili ajan intravenöz insan albüminidir (çıkarılan asit sıvısının litresi başına 6–8 gram). Sentetik plazma genişleticileri (dekstran, poligelin vb.) albümin kadar etkili değildir ve klinik sonlanımları düzeltmede yetersiz kalmaktadır.",
+        "E": "YANLIS — Peritoneovenöz şantlar (LeVeen / Denver şantı), yüksek oranda şant tıkanması, Dissemine İntravasküler Koagülasyon (DİK), SBP ve enfeksiyon gibi ciddi komplikasyon riskleri taşıması nedeniyle günümüz modern hepatoloji pratiğinde neredeyse tamamen terk edilmiştir. Uygun adaylarda (MELD < 19, kardiyak yetmezliği olmayan) ilk basamak girişimsel seçenek TIPS, nihai çözüm Karaciğer Naklidir."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "NSBB",
+        "EBL",
+        "Peritoneovenöz Şant",
+        "PICD"
+      ],
+      "zorluk": "zor",
+      "kaynak": "EASL / Baveno VII — dekompanse sirozda NSBB kullanımı"
+    },
+    {
+      "id": "s20",
+      "metin": "60 yaşında erkek hasta, HCV ve kronik alkol kullanımına sekonder gelişen dekompanse karaciğer sirozu ve dirençli asit (refrakter asit) nedeniyle gastroenteroloji polikliniğine başvuruyor. Hasta son 3 aydır **her 2 haftada bir yaklaşık 6–7 litrelik geniş hacimli parasentez (LVP)** işlemine ihtiyaç duymaktadır. Özgeçmişinde son 6 ay içinde 3 kez hastaneye yatış gerektiren **Evre 2-3 Hepatik Ensefalopati (HE)** atakları mevcuttur. **Kan biyokimyası:** Kreatinin 1.6 mg/dL · BUN 38 mg/dL · Total bilirubin 3.8 mg/dL · Na 128 mEq/L · Albümin 2.2 g/dL · INR 1.9. **Skorlama:** MELD-Na 20 · Child-Turcotte-Pugh 11 (Child C). **TTE:** LVEF %55, hafif diyastolik disfonksiyon, pulmoner hipertansiyon yok. **Asit sıvısı analizi:** SAAG 1.8 g/dL · Total protein 1.0 g/dL · PMN 90/mm³ (SBP yok). Güncel gastroenteroloji kılavuzlarındaki refrakter asit yönetim algoritması göz önüne alındığında, bu hastanın ilerletilmiş klinik yönetimi ve tedavi stratejisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada tekrarlayan belirgin Hepatik Ensefalopati (HE) öyküsü ve yüksek MELD skoru (>19) bulunması nedeniyle TIPS uygulaması kontrendikedir; hasta Karaciğer Nakli adayı olarak değerlendirilmeli ve nakil/değerlendirme sürecinde i.v. albümin destekli periyodik Geniş Hacimli Parasentez (LVP) ile takip edilmelidir.",
+        "B": "Tekrarlayan parasentez ihtiyacını ortadan kaldırmak amacıyla, MELD ve ensefalopati durumuna bakılmaksızın karaciğer nakli öncesinde ilk basamak girişimsel tedavi olarak kalıcı tünelli periton kateteri (indwelling peritoneal drain) takılmalıdır.",
+        "C": "Refrakter asitte medikal tedavinin başarısız olduğu tüm hastalarda MELD skoru 20 olsa dahi ilk tercih edilmesi gereken standart prosedür doğrudan TIPS uygulamasıdır.",
+        "D": "LVP aralıklarını uzatmak amacıyla spironolakton dozu 800 mg/gün, furosemid dozu ise 320 mg/gün seviyesine çıkarılarak medikal diüretik tedavisi zorlanmalıdır.",
+        "E": "Periyodik LVP sırasında hastaya eş zamanlı oral alfa-1 agonist (midodrin) başlanması hâlinde, boşaltılan sıvı miktarı 5 litrenin üzerinde olsa bile intravenöz albümin infüzyonu yapılmasına gerek kalmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tekrarlayan Evre 2-3 HE ve MELD-Na 20, TIPS için kontrendikasyondur: hasta doğrudan nakil değerlendirmesine yönlendirilir ve bu sürede i.v. albümin destekli periyodik LVP ile takip edilir.",
+      "aciklama_detay": "Refrakter asit yönetiminde standart başlangıç tedavisi periyodik Geniş Hacimli Parasentez (LVP) ve i.v. albümin infüzyonudur. Hastanın sonraki basamakta TIPS açısından adaylığı değerlendirilir. Ancak tekrarlayan/kronik dirençli Hepatik Ensefalopati (HE) öyküsü bulunması, MELD skorunun >18–19 olması veya ciddi kardiyak yetmezlik varlığı TIPS uygulaması için önemli kontrendikasyonlar oluşturur ve yüksek post-TIPS mortalitesi ile ilişkilidir. Vakamızda MELD-Na skorunun 20 olması ve Evre 2-3 tekrarlayan HE öyküsü bulunması nedeniyle hasta TIPS için uygun bir aday değildir. Bu durumda hasta vakit kaybetmeden Karaciğer Nakli açısından değerlendirilmeli ve bu süreçte i.v. albümin eşliğinde periyodik LVP'lerle takip edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tekrarlayan Evre 2-3 HE öyküsü ve MELD-Na 20 TIPS'i dışlar; doğru yol nakil değerlendirmesi ve bu süreçte albümin destekli periyodik LVP'dir.",
+        "B": "YANLIS — Kalıcı tünelli periton kateterleri, karaciğer nakli adayı olan veya küratif tedavi şansı bulunan hastalarda ilk basamak olarak kesinlikle önerilmez. Kateterler yüksek enfeksiyon (peritonit/sepsis), masif protein kaybı ve kateter tıkanması riski taşır; yalnızca nakil veya TIPS adayı olmayan, palyatif bakıma alınan ve periyodik LVP yerine kateteri tercih eden hastalar için bir seçenektir.",
+        "C": "YANLIS — Refrakter asitte TIPS oldukça etkili bir portal basınç düşürücü yöntem olsa da; MELD skoru >19 olan veya ciddi HE öyküsü bulunan hastalarda TIPS sonrası karaciğer yetmezliği ve mortalite riski belirgin şekilde arttığından doğrudan TIPS uygulanması kontrendikedir.",
+        "D": "YANLIS — Sirozda önerilen maksimum diüretik dozları 400 mg/gün Spironolakton ve 160 mg/gün Furosemid'dir. Refrakter asit tanısı konulmuş bir hastada bu tavan dozların üzerine çıkılması natriüretik fayda sağlamaz; aksine şiddetli renal perfüzyon bozukluğu (AKİ), dirençli elektrolit imbalansı ve sistemik çöküşe neden olur.",
+        "E": "YANLIS — 5 litrenin üzerindeki LVP işlemlerinde PICD'yi önlemek için boşaltılan her litre asit sıvısı için 6–8 gram IV insan albümini verilmesi şarttır. Midodrin veya diğer oral ajanlar LVP sırasındaki albümin replasmanının yerini alamaz."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "TIPS Kontrendikasyonu",
+        "Karaciğer Nakli",
+        "LVP",
+        "Hepatik Ensefalopati"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Refrakter asit yönetim algoritması (UpToDate / güncel kılavuzlar)"
+    },
+    {
+      "id": "s21",
+      "metin": "61 yaşında erkek hasta, kronik alkol kullanımına sekonder dekompanse karaciğer sirozu ve masif asit öyküsü ile gastroenteroloji servisine yatırılıyor. Hasta son 2 gündür ateş, yaygın karın ağrısı ve hafif mental durum değişikliği (konfüzyon) şikâyetleri olduğunu belirtmektedir. **Kan biyokimyası:** Total bilirubin 4.5 mg/dL · BUN 36 mg/dL · Kreatinin 1.8 mg/dL · Na 128 mEq/L · Lökosit 14.200/mm³. **Yatak başı diagnostik parasentez:** asit lökosit sayısı 1.400 hücre/µL · asit PMN 450 hücre/µL (≥ 250 hücre/µL) · asit pH 7.28 · kan-asit pH gradyanı 0.14 · asit total proteini 0.8 g/dL (≤ 1.0 g/dL) · asit mikrobiyolojik kültürü (yatak başı kan kültürü şişelerine ekilen) sonuç bekleniyor. Kanıta dayalı tanı/tedavi verileri göz önüne alındığında, Spontan Bakteriyel Peritonit (SBP) ve Hepatorenal Sendrom (HRS) patofizyolojisi, tanısal göstergeleri ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "SBP atlatmış hastalarda 2 yıllık sağkalım oranı %80'in üzerinde olduğu için iyileşen hastaların karaciğer nakli değerlendirmesine alınması veya sekonder profilaksi verilmesi önerilmez.",
+        "B": "Tip 1 Hepatorenal Sendrom (HRS), böbrek parankim hastalığı ve şok varlığında saptanan kronik bir tablo olup serum kreatinin seviyesinin 6 ayda yavaşça yükselmesiyle karakterizedir ve 6 aylık mortalitesi %10'un altındadır.",
+        "C": "Asit sıvısında total protein düzeyinin ≤1 g/dL olması hastanın bağışıklık aktivitesini artırarak SBP gelişme riskini tamamen ortadan kaldırır.",
+        "D": "Yatan siroz hastalarında SBP gelişiminde en sık saptanan patojenler anaerobik Bacteroides fragilis türleri olup ilk tercih ampirik parenteral antibiyotik metronidazol monoterapisidir.",
+        "E": "Hastada asit lökosit sayısının >1000/µL (LR+ = 9.1), asit pH'sının <7.35 (LR+ = 9.0) ve kan-asit pH gradyanının ≥0.1 (LR+ = 11) olması SBP olasılığını belirgin şekilde artırır; ampirik parenteral antibiyotik tedavisi kültür sonuçları beklenmeden derhal başlanmalı ve bilirubin (>4 mg/dL), BUN (>30 mg/dL) ile kreatinin (>1 mg/dL) yükseklikleri nedeniyle tedaviye IV albümin eklenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Asit lökositi >1000/µL, asit pH <7.35 ve kan-asit pH gradyanı ≥0.1 SBP olasılığını güçlü artıran göstergelerdir; PMN ≥250/µL varlığında kültür beklenmeden ampirik antibiyotik başlanır ve yüksek riskli hastada (bilirubin >4, BUN >30, kreatinin >1) tedaviye IV albümin eklenir.",
+      "aciklama_detay": "Kanıta dayalı tanı verilerine göre; asit sıvısında lökosit sayısının >1000 hücre/µL (LR+ = 9.1) olması, asit pH düzeyinin <7.35 (LR+ = 9.0) saptanması ve kan-asit pH gradyanının ≥0.1 (LR+ = 11) olması SBP tanı olasılığını güçlü şekilde artıran biyokimyasal göstergelerdir. SBP şüphesi veya PMN ≥ 250 hücre/µL varlığında ampirik antibiyotik tedavisi mikrobiyolojik kültür sonuçları beklenmeden derhal başlatılmalıdır. Ayrıca klinik çalışmalarda ampirik antibiyotik tedavisine intravenöz albümin eklenmesinin, özellikle total bilirubin >4 mg/dL, BUN >30 mg/dL veya serum kreatinin >1 mg/dL olan yüksek riskli hastalarda böbrek disfonksiyonu gelişimini ve mortaliteyi belirgin şekilde azalttığı gösterilmiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — SBP atlatan hastalarda 1 yıllık nüks oranı yaklaşık %70 ve 2 yıllık sağkalım oranı yalnızca %30 civarındadır. Bu nedenle SBP atağından iyileşen tüm hastalara oral norfloksasin ile sekonder profilaksi başlanmalı ve hastalar vakit kaybetmeden karaciğer nakli değerlendirmesine yönlendirilmelidir.",
+        "B": "YANLIS — Tip 1 HRS, sıklıkla tetikleyici bir olay (SBP, GİS kanama vb.) sonrasında 2 haftadan kısa sürede serum kreatininin 2 katına çıkarak >2.5 mg/dL seviyesine ulaşmasıyla seyreden akut bir böbrek hasarıdır. Tanı kriterlerinde şokun bulunmaması ve parankimal böbrek hastalığının olmaması şarttır. Tip 1 HRS'de 6 aylık mortalite oranı %100'e yakındır.",
+        "C": "YANLIS — Asit sıvısı total protein düzeyinin ≤1 g/dL olması opsonik aktivite azlığı nedeniyle SBP gelişimi için tanımlanmış en önemli temel risk faktörlerinden biridir; enfeksiyon riskini ortadan kaldırmaz, belirgin şekilde ARTIRIR.",
+        "D": "YANLIS — Sirotik asit hastalarında SBP'ye en sık neden olan dört etken Escherichia coli, Streptococcus, Staphylococcus ve Klebsiella pneumoniae'dir. En iyi çalışılmış ampirik parenteral antibiyotik seçeneği IV sefotaksimdir.",
+        "E": "DOGRU — Üç gösterge de (lökosit >1000/µL, pH <7.35, kan-asit pH gradyanı ≥0.1) SBP olasılığını güçlü artırır; PMN 450/µL ile ampirik antibiyotik derhal başlar ve bilirubin 4.5 · BUN 36 · kreatinin 1.8 değerleri albümin eklenmesini gerektirir."
+      },
+      "etiketler": [
+        "SBP",
+        "Asit pH",
+        "Olabilirlik Oranı",
+        "HRS Tip 1",
+        "Albümin",
+        "Sekonder Profilaksi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Symptom to Diagnosis: An Evidence-Based Guide — Bölüm 17-4 (Ascites)"
+    },
+    {
+      "id": "s22",
+      "metin": "54 yaşında erkek hasta, MASH (metabolik disfonksiyon ilişkili steatohepatit) zemininde gelişen dekompanse karaciğer sirozu ve karın çevresinde giderek artan şişlik (orta derece / Evre 2 asit) ile **hafif bacak ödemi** şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Özgeçmişinde daha önce geçirilmiş asit atağı veya SBP öyküsü bulunmamaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 112/70 mmHg · nabız 74/dk · ateş 36.6 °C; mobilize asit ve pretibiyal 1+ ödem. **Kan biyokimyası:** Na 137 mEq/L · K 4.3 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 1.9 mg/dL · Albümin 2.8 g/dL · INR 1.3. **Asit sıvısı analizi:** SAAG 1.7 g/dL (yüksek gradyan) · Total protein 1.5 g/dL · PMN 70/mm³ (Gram boyama ve kültür negatif; SBP ekarte edildi). Hastaya diyetle sodyum kısıtlaması (<2 g/gün) ile birlikte oral kombinasyon diüretik tedavisi (Spironolakton 100 mg/gün + Furosemid 40 mg/gün) başlanması planlanmaktadır. Bu hastanın başlangıç diüretik tedavisi, izlem hedefleri, kilo kaybı sınırları ve ilaç etkileşimleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Diyetle sodyum kısıtlamasına (<2 g/gün) ek olarak, diüretik natriürezini hızlandırmak amacıyla serum sodyum düzeyinden bağımsız olarak günlük sıvı alımı rutin olarak <1000 mL ile kısıtlanmalıdır.",
+        "B": "Periferik bacak ödemi bulunan siroz hastalarında diüretik tedavisi altında hedeflenebilecek günlük maksimum kilo kaybı 1.0 kg iken; ödemi bulunmayan hastalarda intravasküler hacim depresyonunu ve renal yetmezliği önlemek için günlük kilo kaybı maksimum 0.5 kg ile sınırlandırılmalıdır.",
+        "C": "Diüretik tedavisi başlanan veya dozu artırılan ayaktan takip edilen hastalarda, biyokimyasal advers etkileri (elektrolit bozukluğu ve böbrek fonksiyon kaybı) değerlendirmek için ilk laboratuvar kontrolü en erken 3 ay sonra yapılmalıdır.",
+        "D": "Furosemid tedavisine standart dozlarda yetersiz yanıt alınan vakalarda alternatif loop diüretiklerine geçilmeden doğrudan \"diüretik-dirençli asit\" tanısı konulmalı ve diüretik tedavisi tamamen kesilmelidir.",
+        "E": "Siroza bağlı asiti olan hastalarda kas-iskelet ağrıları geliştiğinde, renal prostaglandin sentezini etkilemediği kabul edilen ibuprofen veya naproksen gibi non-steroid antiinflamatuvar ilaçlar (NSAİİ) ilk seçenek analjezik olarak güvenle reçete edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Günlük kilo kaybı sınırı ödem varlığına göre değişir: periferik ödemi OLAN hastada en çok 1.0 kg, ödemi OLMAYAN hastada en çok 0.5 kg — asidin peritondan damar yatağına emilim hızı sınırlıdır.",
+      "aciklama_detay": "Diüretik tedavisi altındaki siroz hastalarında diürezi zorlarken intravasküler hacim depresyonunu ve renal yetmezliği önlemek için günlük kilo kaybı sınırlarına kesinlikle uyulmalıdır. Periton boşluğundan vasküler yatağa asit sıvısı emilimi sınırlı olduğu için; periferik ödemi bulunmayan hastalarda günlük maksimum kilo kaybı 0.5 kg ile sınırlandırılmalıdır. Ancak bacaklarında periferik ödem bulunan hastalarda (ödem sıvısı intravasküler yatağa daha hızlı mobilize olabildiğinden) günde maksimum 1.0 kg'a kadar kilo kaybı tolere edilebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Siroza bağlı unkomplike asit tedavisinde diyetle sodyum kısıtlaması (<2 g/gün = 88 mEq/gün) standarttır. Ancak serum sodyum düzeyi 120–125 mEq/L'nin altına düşmediği sürece rutin sıvı kısıtlaması önerilmez. Serum sodyumu normal olan (137 mEq/L) bir hastada başlangıçta sıvı kısıtlaması diüretik etkinliğini artırmadığı gibi şiddetli susuzluk hissine ve uyumsuzluğa yol açar.",
+        "B": "DOGRU — Ödemi olan hastada günlük en çok 1.0 kg, ödemi olmayan hastada en çok 0.5 kg kilo kaybı hedeflenir; sınır, peritondan emilim kapasitesinin sınırlı olmasından gelir.",
+        "C": "YANLIS — Ayaktan takip edilen siroz hastalarında diüretik tedavisi başlandıktan veya dozu artırıldıktan 5 ila 7 gün sonra serum elektrolitleri ve böbrek fonksiyon testleri (kreatinin, BUN) kontrol edilmelidir. Biyokimyasal takibin 3 ay sonraya ertelenmesi diüretik ilişkili AKİ veya ciddi elektrolit bozukluklarının gözden kaçmasına neden olur.",
+        "D": "YANLIS — Furosemide yetersiz yanıt alınan vakalarda doğrudan \"diüretik-dirençli asit\" sonucuna varılmamalıdır. Asidin diüretiğe dirençli olduğuna karar vermeden önce biyoyararlanımı daha öngörülebilir ve yarı ömrü daha uzun olan torsemid (20 mg) veya bumetanid (1 mg) gibi alternatif bir loop diüretiği denenmelidir.",
+        "E": "YANLIS — Siroz ve asiti olan hastalarda NSAİİ kullanımından (ibuprofen, naproksen, indometasin vb.) KESİNLİKLE KAÇINILMALIDIR. NSAİİ'ler renal prostaglandin sentezini inhibe ederek böbrek kan akımını ve glomerüler filtrasyonu düşürür; bu durum şiddetli sodyum ve su tutulumuna, diüretik direncinin ağırlaşmasına ve akut böbrek hasarına yol açar."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Kilo Kaybı Hedefi",
+        "Diüretik İzlemi",
+        "Torsemid",
+        "NSAİİ Kontrendikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Ascites in adults with cirrhosis: Initial therapy"
+    },
+    {
+      "id": "s23",
+      "metin": "59 yaşında erkek hasta, dekompanse alkolik karaciğer sirozu zemininde gerilemeyen masif karın şişliği (asit) nedeniyle gastroenteroloji polikliniğine başvuruyor. Hastaya 2 haftadır diyetle sodyum kısıtlaması (<2 g/gün veya <90 mmol/gün) ile birlikte maksimum tolere edilen diüretik tedavisi (**Spironolakton 400 mg/gün + Furosemid 160 mg/gün**) uygulanmaktadır. **Kilo ve idrar takibi:** 4 günlük sıkı izlemde ortalama toplam kilo kaybı 0.3 kg, idrar sodyum atılımı alımın altında (<30 mEq/gün). **Kan biyokimyası:** Na 122 mEq/L (1 hafta önceki bazal 134 mEq/L — >10 mEq/L düşüş) · K 4.8 mEq/L · Kreatinin 2.2 mg/dL (1 hafta önceki bazal 1.1 mg/dL — %100 artış) · Total bilirubin 2.4 mg/dL · Albümin 2.5 g/dL · INR 1.5. **Skorlama ve ekokardiyografi:** MELD-Na 17 · Child-Pugh 9 (Child B); TTE LVEF %60, sağ kalp ve kapak fonksiyonları normal. **Nörolojik değerlendirme:** hepatik ensefalopati saptanmadı. Refrakter asit tanı ölçütleri, diüretik ilişkili komplikasyon eşikleri ve tedavi algoritması dikkate alındığında, bu hastanın tanısı ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastanın MELD skoru 17 olduğu ve karaciğer nakli adayı olarak değerlendirildiği için, periyodik geniş hacimli parasentez (LVP) ihtiyacını ortadan kaldırmak amacıyla ilk basamak girişimsel tedavi olarak kalıcı tünelli periton kateteri (indwelling peritoneal drain) takılmalıdır.",
+        "B": "Diüretik ilişkili böbrek fonksiyon bozukluğunu tanımlayabilmek için serum kreatinin seviyesindeki artışın en az >3.5 mg/dL üzerine çıkması ve hemodiyaliz ihtiyacının doğması şarttır.",
+        "C": "Hastada serum sodyumunun <125 mEq/L seviyesine düşmesi (>10 mEq/L kayıp) ve serum kreatininin %50'den fazla artarak >2.0 mg/dL seviyesine ulaşması nedeniyle klinik tablo \"Diüretik-Toleranssız Asit (Diuretic-Intractable Ascites)\" komplikasyon eşiklerini karşılar ve diüretik tedavisi kesilmelidir.",
+        "D": "Oral alfa-1 adrenerjik agonist olan midodrin (7.5 mg 3x1); ortalama arter basıncını ve idrar sodyum atılımını artırdığı için geniş hacimli parasentezde IV albümin replasmanının yerini tamamen alır.",
+        "E": "Diüretik tedavisine yanıt alınamayan dirençli asit vakalarında idrar sodyum atılımı <30 mEq/gün olsa dahi diüretik dozları tavan sınırların 2 katına çıkarılarak zorlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Na 134 → 122 mEq/L (>10 mEq/L düşüş ve <125) ve kreatinin 1.1 → 2.2 mg/dL (>%50 artış ve >2.0) diüretik ilişkili komplikasyon eşiklerini karşılıyor: tablo diüretik-TOLERANSSIZ asittir ve diüretik kesilir.",
+      "aciklama_detay": "Diüretik-Toleranssız Asit (Diuretic-Intractable Ascites), diüretik kullanımına sekonder gelişen ve efektif diüretik dozlarının kullanılmasını engelleyen komplikasyonlar nedeniyle mobilize edilemeyen veya nükseden asit tablosudur. Diüretik ilişkili komplikasyon eşikleri şöyle tanımlanır: (1) böbrek bozukluğu — bazale göre serum kreatininde >%50 artış ve kreatininin >2.0 mg/dL'ye ulaşması; (2) hiponatremi — serum sodyumunda >10 mEq/L düşüş ve sodyumun <125 mEq/L altına inmesi; (3) hiperkalemi — potasyumun >6.0 mEq/L üzerine çıkması; (4) hipokalemi — potasyumun <3.0 mEq/L altına düşmesi; (5) ensefalopati — başka tetikleyici neden olmaksızın gelişen hepatik ensefalopati. Vakada serum sodyumu 134'ten 122 mEq/L'ye düşmüş (>10 mEq/L kayıp ve <125) ve kreatinin %100 artarak 2.2 mg/dL'ye ulaşmıştır (>%50 artış ve >2.0). Bu bulgular diüretik-toleranssız asit ölçütlerini tam karşıladığından diüretik tedavisi durdurulmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalıcı tünelli periton kateterleri yalnızca karaciğer nakli veya TIPS adayı OLMAYAN, palyatif/bakımevi bakımı kararı alınan ve periyodik LVP yerine kateteri tercih eden hastalar için bir seçenektir. Nakil adayı hastalarda periton kateteri yerleştirilmesi yüksek bakteriyel peritonit, sepsis ve protein kaybı riski taşıdığı için önerilmez.",
+        "B": "YANLIS — Diüretik ilişkili böbrek fonksiyon bozukluğu için tanımlanan eşik kreatininin >3.5 mg/dL olması değil; bazale göre >%50 artarak >2.0 mg/dL seviyesine ulaşmasıdır. Diyaliz ihtiyacının doğması beklenmez.",
+        "C": "DOGRU — İki komplikasyon eşiği de aşılmış (hiponatremi ve böbrek bozukluğu); tablo diüretik-dirençli değil diüretik-TOLERANSSIZ asittir ve diüretik kesilir.",
+        "D": "YANLIS — Oral midodrin (7.5 mg 3x1) sistemik vasküler direnci ve ortalama arter basıncını artırarak idrar hacmi ile idrar sodyum atılımını yükseltebilir ve dirençli asitte yardımcı bir tedavi olarak kullanılabilir. Ancak LVP sırasında post-parasentez dolaşım disfonksiyonunu (PICD) önlemek için verilen IV albümin infüzyonunun yerini alamaz.",
+        "E": "YANLIS — Maksimum diüretik tedavisi (400 mg Spironolakton + 160 mg Furosemid) altında idrar sodyum atılımı <30 mEq/gün seviyesinde kalan vakalarda dozların daha da artırılması önerilmez; diüretikler fayda sağlamayacağı gibi renal hemodinamiyi bozar, tedavinin kesilmesi önerilir."
+      },
+      "etiketler": [
+        "Refrakter Asit",
+        "Diüretik Toleranssızlık",
+        "Hiponatremi Eşiği",
+        "Kreatinin Eşiği",
+        "Midodrin"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Ascites in adults with cirrhosis: Refractory ascites"
+    },
+    {
+      "id": "s24",
+      "metin": "52 yaşında erkek hasta, 3 yıldır hemodiyaliz programında olan Son Dönem Böbrek Yetmezliği (SDBY) tanısıyla takip edilmektedir. Son 4 aydır giderek artan masif karın şişliği, belirgin kaşeksi ve diyaliz seansları sırasında sık tekrarlayan hipotansiyon atakları şikâyetiyle gastroenteroloji polikliniğine sevk ediliyor. Fizik muayenesinde belirgin kas erimesi (kaşeksi) ve masif gergin asit saptanırken **bacaklarda minimal ödem** olduğu dikkati çekiyor. Özgeçmişinde **karaciğer hastalığı veya konjestif kalp yetmezliği öyküsü bulunmuyor.** **Kan biyokimyası:** Na 134 mEq/L · K 5.1 mEq/L · BUN 72 mg/dL · Kreatinin 8.4 mg/dL · Albümin 2.5 g/dL · Total bilirubin 0.8 mg/dL · ALT 14 U/L · AST 16 U/L. **Diagnostik parasentez:** asit sıvısı hafif hemorajik/bulanık görünümde; SAAG 0.8 g/dL (<1.1 g/dL, düşük gradyan) · asit total proteini 3.8 g/dL (>2.5 g/dL, yüksek protein) · PMN 80/mm³ (Gram boyama, kültür, ADA ve sitoloji negatif). **TTE:** LVEF %60, sağ kalp basınçları ve kapaklar normal. Bu hastanın tanısı, patofizyolojisi ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "SDBY hastalarında gelişen nefrojenik asitte SAAG her zaman >1.1 g/dL ve protein <1.5 g/dL olduğu için hastaya derhal sirotik refrakter asit protokolü uygulanmalı ve yüksek doz spironolakton başlanmalıdır.",
+        "B": "İleri derece kronik böbrek yetmezliği (KBY/SDBY) bulunan hastalarda refrakter asit nedeniyle TIPS yerleştirilmesi, renal fonksiyonları normal siroz hastalarıyla tamamen aynı güvenlik profiline sahip olup post-TIPS hepatik ensefalopati riskini artırmaz.",
+        "C": "SDBY zemininde gelişen tüm masif asit vakalarında renal replasman tedavisinin olumsuz etkilerini önlemek amacıyla ilk basamak standart yaklaşım kalıcı tünelli periton kateteri veya otomatize düşük akımlı asit (ALFA) pompası yerleştirilmesidir.",
+        "D": "Hastanın klinik tablosu (masif asit, kaşeksi, minimal bacak ödemi) ve asit analizinin düşük SAAG — yüksek protein (sıklıkla hemorajik görünüm) niteliğinde olması \"Nefrojenik Asit (Dialysis Ascites)\" tanısını destekler; medikal tedaviye, diüretiklere ve parasenteze yanıtı son derece kısıtlı olup bu hastalarda tek kesin (küratif) tedavi seçeneği Böbrek Naklidir.",
+        "E": "Nefrojenik asit vakalarında tekrarlayan geniş hacimli parasentezler ve IV albümin yüklemeleri hastaların %90'ında tam klinik remisyon sağladığı için renal transplantasyon değerlendirmesine gerek kalmaz."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Karaciğer hastalığı ve kalp yetmezliği olmayan diyaliz hastasında masif asit + kaşeksi + düşük SAAG/yüksek protein (sıklıkla hemorajik) tablosu nefrojenik asittir; medikal tedaviye dirençlidir ve tek küratif seçenek böbrek naklidir.",
+      "aciklama_detay": "Son Dönem Böbrek Yetmezliği (SDBY) olan ve diyaliz tedavisi alan hastalarda karaciğer sirozu veya konjestif kalp yetmezliği olmaksızın gelişen refrakter asit tablosu Nefrojenik Asit (Dialysis Ascites) olarak adlandırılır. (1) Klinik özellikler: masif asit, belirgin kaşeksi, diyaliz ilişkili hipotansiyon öyküsü ve belirgin bacak ödeminin olmaması/minimal olması tipiktir. (2) Asit sıvısı analizi: yapılan çalışmalarda nefrojenik asit sıvısının vakaların %60'ında düşük SAAG (<1.1 g/dL) ve yüksek protein (>2.5 g/dL) niteliğinde olduğu ve sıklıkla hafif hemorajik görünüm sergilediği bildirilmiştir. (3) Tedavi ve prognoz: tablo diüretiklere, tekrarlayan parasentezlere ve albümin infüzyonlarına oldukça dirençlidir ve kötü prognozludur; kanıtlanmış tek kesin ve etkili tedavisi böbrek naklidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Nefrojenik asitte klasik sirozun aksine sıvı sıklıkla düşük SAAG ve yüksek protein yapısındadır. Ayrıca SDBY hastalarında spironolakton kullanımı ağır ve ölüme yol açabilecek hiperkalemi riski taşıdığı için diüretik tedavisi son derece kısıtlıdır; rutin yüksek doz spironolakton kontrendikedir.",
+        "B": "YANLIS — İleri derecede KBY veya SDBY varlığı, siroz hastalarında TIPS sonrası mortalite artışı için bağımsız bir risk faktörüdür (aOR = 1.56). Ayrıca SDBY hastalarında böbreklerin amonyak yapım/atılım mekanizmaları bozulduğu ve sistemik inflamasyon yüksek olduğu için TIPS sonrası hepatik ensefalopati riski anlamlı derecede yüksektir.",
+        "C": "YANLIS — ALFA (automated low-flow ascites) pompası veya kronik tünelli periton kateterleri SDBY hastalarında ilk basamak standart tedavi değildir; ALFA pompası siroz dışı SDBY hastalarında yeterince çalışılmamış olup akut böbrek hasarı ve ciddi enfeksiyon riskleri taşır. Periton diyalizi bir seçenek olsa da ilk basamak yaklaşım böbrek nakli adaylık sürecidir.",
+        "D": "DOGRU — Karaciğer ve kalp hastalığı dışlanmış diyaliz hastasında düşük SAAG / yüksek protein profili nefrojenik asiti gösterir; küratif tedavi böbrek naklidir.",
+        "E": "YANLIS — Nefrojenik asit, medikal tedaviye, parasenteze ve albümin infüzyonlarına direnciyle bilinen ve yüksek mortaliteli bir tablodur. Bu önlemler yalnızca geçici palyasyon sağlar; sağkalımı ve asit remisyonunu sağlayan ana tedavi böbrek naklidir."
+      },
+      "etiketler": [
+        "Nefrojenik Asit",
+        "SDBY",
+        "Düşük SAAG",
+        "Böbrek Nakli",
+        "TIPS Riski"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Ascites in patients with end-stage renal disease: challenges and solutions from diagnosis to management"
+    },
+    {
+      "id": "s25",
+      "metin": "57 yaşında erkek hasta, kronik alkol kullanımına sekonder dekompanse karaciğer sirozu ve giderek artan karın şişliği şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Fizik muayenesinde asit varlığı değerlendirilmekte ve tanısal yaklaşımlar planlanmaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 110/68 mmHg · nabız 76/dk · ateş 36.6 °C; abdomende iki taraflı böğürlerde dolgunluk (bulging flanks) ve vurma ile matite (flank dullness). **Laboratuvar:** Na 136 mEq/L · K 4.2 mEq/L · Kreatinin 1.0 mg/dL · BUN 18 mg/dL · Total bilirubin 2.1 mg/dL · Albümin 2.7 g/dL · INR 1.4 · MELD-Na 13 · Child-Pugh 7 (Child B). Asidin fizik muayene bulguları, laboratuvar takibi ve tedavi ilkeleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Fizik muayenede perküsyon ile böğür matitesinin (flank dullness) ortaya çıkabilmesi için periton boşluğunda en az 100 mL serbest asit sıvısının birikmesi yeterlidir.",
+        "B": "Spontan Bakteriyel Peritonit (SBP) tanısıyla antibiyotik tedavisi başlanan hastalarda, 48. saatte yapılan kontrol diagnostik parasentezinde asit PMN lökosit sayısında bazale göre en az %75 düşüş saptanması tedavi yanıtı olarak kabul edilir.",
+        "C": "Siroza bağlı asiti olan hastalarda primer SBP profilaksisine başlanabilmesi için asit sıvısı total protein düzeyinin <2.5 g/dL olması ve Child-Pugh skorunun ≥6 olması tek başına yeterli şarttır.",
+        "D": "Refrakter asit tanısının konulabilmesi için hastanın diyetle sodyum kısıtlaması altında spironolakton 800 mg/gün ve furosemid 320 mg/gün yüksek diüretik tedavisine en az 1 ay boyunca yanıtsız kaldığı gösterilmelidir.",
+        "E": "Fizik muayenede asit varlığını tespit etmede pozitif olabilirlik oranı (LR+) en yüksek (LR+ = 6.0) ve özgüllüğü en fazla (%90) olan klinik muayene işareti belirgin sıvı dalgası (prominent fluid wave) testidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sıvı dalgası muayenenin en ÖZGÜL bulgusudur (özgüllük %90, LR+ 6.0); yer değiştiren matite ve böğür bulguları duyarlı ama özgül değildir (LR+ 2.0–2.7).",
+      "aciklama_detay": "Havuzlanmış veriye göre periton boşluğundaki asiti saptamada fizik muayene testlerinin tanısal değerleri şöyledir: Belirgin sıvı dalgası (prominent fluid wave) — duyarlılık %62, özgüllük %90, LR+ = 6.0 (pozitif olabilirlik oranı en yüksek parametre). Yer değiştiren matite (shifting dullness) — duyarlılık %77, özgüllük %72, LR+ = 2.7. Böğür matitesi (flank dullness) — duyarlılık %84, özgüllük %59, LR+ = 2.0. Böğür dolgunluğu (bulging flanks) — duyarlılık %81, özgüllük %59, LR+ = 2.0. Bu veriler doğrultusunda muayenede pozitif sıvı dalgası saptanması asit varlığını doğrulamada tanısal gücü en yüksek klinik bulgudur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Perküsyonla böğür matitesinin saptanabilmesi için periton boşluğunda ortalama ~1500 mL sıvı birikmiş olması gereklidir. Ultrasonografi ise 100 mL'nin altındaki çok daha küçük miktarlardaki serbest sıvıyı dahi saptayabilen en duyarlı yöntemdir.",
+        "B": "YANLIS — SBP tanısıyla parenteral antibiyotik başlanan hastalarda tedavinin 48. saatinde tekrarlanan diagnostik parasentezde asit PMN sayısında bazale göre en az %25 düşüş saptanması klinik tedavi yanıtı olarak kabul edilir.",
+        "C": "YANLIS — Primer SBP profilaksisi için asit total proteininin <1.5 g/dL olması şartına ek olarak; bozulmuş renal fonksiyonlar (kreatinin ≥1.2 mg/dL, BUN ≥25 mg/dL veya Na ≤130 mEq/L) veya ileri karaciğer yetmezliği (Child-Pugh ≥9 ve bilirubin ≥3 mg/dL) ölçütlerinden en az birinin bulunması gereklidir.",
+        "D": "YANLIS — Refrakter asit tanısı için hasta, diyetle sodyum kısıtlamasına (<90 mEq/gün) uyarken Spironolakton 400 mg/gün ve Furosemid 160 mg/gün TAVAN dozlarını en az 1 hafta süreyle kullanmış olmalıdır. Dozların 800/320 mg/gün gibi tavan üstü seviyelere çıkarılması ve 1 ay beklenmesi önerilmez.",
+        "E": "DOGRU — Sıvı dalgası duyarlılığı düşük (%62) ama özgüllüğü en yüksek (%90) bulgudur; LR+ 6.0 ile öteki muayene işaretlerinin (2.0–2.7) belirgin üstündedir."
+      },
+      "etiketler": [
+        "Fizik Muayene",
+        "Sıvı Dalgası",
+        "Olabilirlik Oranı",
+        "SBP Tedavi Yanıtı",
+        "Refrakter Asit Tanımı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ferri's Clinical Advisor — asit fizik muayene tanısal değerleri (Swartz havuzlanmış veri) · EASL/AASLD"
     }
   ]
 }

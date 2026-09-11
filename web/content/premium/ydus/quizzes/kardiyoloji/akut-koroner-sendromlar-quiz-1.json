@@ -1,0 +1,159 @@
+{
+  "id": "quiz-kardiyo-aks-001",
+  "baslik": "Akut Koroner Sendromlar — Soru Seti 1",
+  "branch": "kardiyoloji",
+  "topic": "akut-koroner-sendromlar",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "58 yaşında erkek hasta, 6 hafta önce geçirdiği akut anterolateral STEMI ve sol ön inen artere (LAD) uygulanan başarılı ilaç salınımlı stent (DES) PCI sonrasında rutin poliklinik kontrolüne çağrılıyor. Bilinen ek hastalığı **diabetes mellitus** olup, taburculuk sonrası tedavisinde **Atorvastatin 80 mg/gün (maksimal tolere edilen doz)**, tikagrelor 2×90 mg/gün, aspirin 100 mg/gün, ramipril 5 mg/gün ve metoprolol süksinat 50 mg/gün bulunmaktadır. **Açlık lipid paneli:** Total kolesterol 148 mg/dL · Trigliserid 135 mg/dL · HDL-K 43 mg/dL · **LDL-K 78 mg/dL (2.0 mmol/L)**. Hasta ilacını düzenli kullandığını, herhangi bir kas ağrısı veya yan etki hissetmediğini belirtmektedir. 2025 ACC/AHA/Multisociety Akut Koroner Sendromlar Kılavuzu ilkeleri doğrultusunda, bu hastanın uzun dönem lipid düşürücü tedavi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Maksimal tolere edilen yüksek yoğunluklu statin tedavisi altında LDL-K düzeyi <100 mg/dL hedefinde olduğu için mevcut Atorvastatin 80 mg/gün tedavisine aynen devam edilmeli, ek lipid düşürücü tedavi verilmemelidir.",
+        "B": "LDL-K düzeyi 70-100 mg/dL arasında olduğu için Atorvastatin dozu 40 mg/gün'e düşürülmeli ve yalnızca ezetimib 10 mg/gün eklenmelidir.",
+        "C": "Non-statin lipid düşürücü ajanlar (ezetimib veya PCSK9 inhibitörleri) yalnızca statin tedavisine tamamen dirençli olan veya LDL-K düzeyi ≥130 mg/dL seyreden olgularda endikedir; aksi durumda eklenmesi kontrendikedir (Sınıf 3: Zarar).",
+        "D": "Maksimal tolere edilen statin tedavisine rağmen LDL-K düzeyi ≥70 mg/dL (≥1.8 mmol/L) seyrettiği için, majör olumsuz kardiyovasküler olayları (MACE) daha da azaltmak amacıyla tedaviye non-statin bir lipid düşürücü ajanın (ezetimib veya PCSK9 inhibitörü) eklenmesi önerilir (Sınıf 1).",
+        "E": "Hastanın iskemik riski yüksek olduğundan mevcut statin kesilmeli, yalnızca yüksek doz PCSK9 inhibitörü monoterapisine geçilmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Maksimal tolere edilen statin altında LDL-K ≥70 mg/dL seyreden AKS hastasında non-statin ajan (ezetimib, PCSK9i, inklisiran, bempedoik asit) eklenmesi Sınıf 1 öneridir; statin dozu KORUNUR.",
+      "aciklama_detay": "Akut Koroner Sendrom geçiren hastalar, taburculuk sonrası ilk 1 yıl içerisinde tekrarlayan iskemik olaylar, miyokard enfarktüsü ve kardiyovasküler ölüm açısından en yüksek risk grubunu (very high / extreme risk) oluşturur. Bu nedenle plak stabilizasyonu, endotel disfonksiyonunun düzeltilmesi ve lipid çekirdeğinin küçültülmesi amacıyla çok daha agresif LDL-K hedefleri benimsenmiştir. 2025 ACC/AHA/Multisociety AKS Kılavuzu, önceki kılavuzlardaki 'yalnızca maksimal tolere edilen statin' yaklaşımından 'maksimal statin + non-statin kombine tedavi' yaklaşımına belirgin bir yönelim göstermiştir: maksimal tolere edilen statin altında LDL-K ≥70 mg/dL (≥1.8 mmol/L) saptanan AKS hastalarında non-statin bir ajanın (ezetimib, PCSK9 inhibitörleri [evolokumab, alirokumab], inklisiran veya bempedoik asit) eklenmesi Sınıf 1 (güçlü öneri) olarak bildirilmektedir. Genişletilmiş risk pencereleri: maksimal statin altında LDL-K 55-69 mg/dL (1.4 - <1.8 mmol/L) arasında olan AKS hastalarında dahi ek non-statin ajan Sınıf 2a (makul) kabul edilir; statin intoleransı olan AKS hastalarında ise non-statin tedavi doğrudan Sınıf 1'dir. İndeks yatış esnasında eşzamanlı statin + ezetimib başlanması da Sınıf 2b öneri olarak kılavuzda yer alır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Eski kılavuzlardaki <100 mg/dL hedefi veya tek başına statin yaklaşımı güncel AKS sekonder önleme ilkelerinde yetersiz kabul edilir. Maksimal statine rağmen LDL-K 78 mg/dL (≥70) olan bir AKS hastasında monoterapiyle yetinmek klinik açıktır; non-statin eklenmesi Sınıf 1 endikasyondur.",
+        "B": "YANLIS — Statin dozunu düşürmek (Atorvastatin 80 mg'dan 40 mg'a) vasküler pleiotropik etkileri ve plak stabilize edici yüksek statin gücünü zayıflatır. Doğru yaklaşım yüksek yoğunluklu statin dozunu KORUYARAK yanına ezetimib veya PCSK9i eklemektir.",
+        "C": "YANLIS — Non-statin ajanlar için '≥130 mg/dL eşiği' veya 'Sınıf 3 zarar' tanımlaması tamamen hatalıdır. AKS hastalarında ezetimib ve PCSK9i tedavisi güvenlidir ve kanıtlanmış MACE azaltıcı etkiye sahiptir.",
+        "D": "DOGRU — Maksimal tolere edilen statin altında LDL-K ≥70 mg/dL ise non-statin ajan eklenmesi Sınıf 1 öneridir; hastanın LDL-K'si 78 mg/dL ve statin dozu zaten maksimaldir.",
+        "E": "YANLIS — Statin intoleransı veya belirgin yan etki (miyopati, rabdomiyoliz) saptanmayan hiçbir hastada yüksek yoğunluklu statin kesilip monoterapiye geçilmez. Statinler lipid düşürücü etkilerinin yanı sıra pleiotropik anti-inflamatuvar ve anti-trombotik etkileri nedeniyle kombinasyonun temel direğidir."
+      },
+      "etiketler": [
+        "Sekonder Önleme",
+        "LDL Hedefi",
+        "Ezetimib",
+        "PCSK9 İnhibitörü",
+        "2025 AKS Kılavuzu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "2025 ACC/AHA/Multisociety Akut Koroner Sendromlar Kılavuzu"
+    },
+    {
+      "id": "s2",
+      "metin": "67 yaşında erkek hasta, bilinen non-valvüler **atriyal fibrilasyon** (başvuru öncesi CHA₂DS₂-VASc skoru 3, **apiksaban 2×5 mg/gün** kullanmakta) öyküsüyle acil servise 2 saattir devam eden tipik sıkıştırıcı göğüs ağrısı ile başvuruyor. Başvuru EKG'sinde **V2-V4'te 1.5 mm yatay (horizontal) ST depresyonu** saptanıyor; hs-cTnI düzeyi 99. persentil üst referans limitinin 25 katı bulunarak **NSTEMI** tanısı konuluyor. Acil koroner anjiyografide LAD proksimal-orta segmentte %90 darlık ve lezyon bifurkasyonunda trombüs izlenerek başarılı bir şekilde ilaç salınımlı stent (DES) ile PCI uygulanıyor. Anamnezinde veya laboratuvarında **majör kanama öyküsü ya da yüksek kanama riski (HBR) saptanmıyor.** 2025 ACC/AHA/Multisociety ve güncel kılavuz ilkeleri doğrultusunda, bu hastanın taburculuk sonrası antikoagülan ve antiplatelet tedavi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Aspirin, periprosedürel/indeks dönemi müteakip en geç 1 ila 4 hafta (1-30 gün) içinde kesilmeli; 12. aya kadar apiksaban + klopidogrel (ikili yol) ile devam edilmeli ve 12. aydan sonra yalnızca apiksaban monoterapisi sürdürülmelidir.",
+        "B": "Atriyal fibrilasyona bağlı inme riskini önlemek için oral antikoagülan (apiksaban) kesilmeli; stent trombozunu engellemek amacıyla 12 ay boyunca aspirin + prasugrel ile ikili antiplatelet tedavi (DAPT) verilmelidir.",
+        "C": "Sol ön inen artere stent konulduğu ve iskemik risk yüksek olduğu için aspirin + tikagrelor + apiksaban kombinasyonundan oluşan üçlü tedavi en az 6 ay boyunca kesintisiz uygulanmalıdır.",
+        "D": "Klopidogrelin ön ilaç olması ve bireysel yanıt değişkenliği nedeniyle P2Y12 inhibitörü olarak prasugrel seçilmeli; apiksaban ile kombine edilerek 12 ay boyunca ikili yol tedavisi şeklinde verilmelidir.",
+        "E": "Aspirin hemen kesilmeli, hastaya 12 ay boyunca yalnızca aspirin + klopidogrel (DAPT) verilmeli ve oral antikoagülan (apiksaban) koroner rekonstrüksiyon tamamlanana kadar 1 yıl süreyle tamamen askıya alınmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "OAC endikasyonu olan AKS-PCI hastasında sıra şudur: kısa üçlü tedavi (aspirin en geç 1-30 günde kesilir) → 12. aya kadar DOAC + klopidogrel → 12. aydan sonra tek başına DOAC. Antikoagülan HİÇBİR aşamada kesilmez.",
+      "aciklama_detay": "AKS geçiren ve PCI uygulanan atriyal fibrilasyonlu hastalarda rejim seçimi, iskemik stent trombozu/inme riski ile tedaviye bağlı majör kanama riski arasındaki hassas dengeye dayanır. (1) Aspirinin erken kesilmesi: uzun süreli OAC endikasyonu olan AKS hastalarında periprosedürel dönemde üçlü tedavi başlansa dahi aspirin en geç 1 ila 4 hafta (1-30 gün) içinde kesilmelidir; AUGUSTUS analizleri 30 günden sonra devam ettirilen aspirinin ek iskemik yarar sağlamaksızın majör kanama riskini anlamlı artırdığını göstermiştir. (2) P2Y12 seçimi: DOAC ile kombine edilecek ana ajan klopidogrel 75 mg/gün'dür; prasugrel ve tikagrelor OAC ile birlikte fatal ve intrakraniyal kanama riskini kabul edilemez düzeyde yükselttiği için rutin olarak önerilmez. (3) 12. aydan sonra: yeni iskemik olay yoksa antiplatelet kesilir ve hasta yalnızca tam doz DOAC ile izlenir; AFIRE çalışması 1. yıldan sonra tek başına OAC kullanımının iskemik olayları artırmadan kanama riskini belirgin azalttığını göstermiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Aspirin 1-30 gün içinde kesilir, 12. aya kadar apiksaban + klopidogrel sürdürülür, 12. aydan sonra apiksaban monoterapisine geçilir.",
+        "B": "YANLIS — CHA₂DS₂-VASc ≥2 olan hastada oral antikoagülanı kesip yalnızca DAPT (aspirin + prasugrel) vermek kardiyoembolik inmeye karşı yetersiz koruma sağlar. OAC endikasyonu olan hastalarda antikoagülasyon kesilmez.",
+        "C": "YANLIS — 6 ay kesintisiz üçlü tedavi majör ve fatal intrakraniyal kanama riskini dramatik artırır. Kılavuzlar, yüksek iskemik riskli veya kompleks PCI yapılan seçilmiş vakalarda dahi aspirin kullanımının en fazla 1 ay (30 gün) ile sınırlandırılmasını önerir. Ayrıca antikoagülan alan grupta tikagrelor gibi güçlü P2Y12 antagonistlerinin rutin kullanımı önerilmez.",
+        "D": "YANLIS — Prasugrel, oral antikoagülan ile kombine edildiğinde yüksek kanama komplikasyonları nedeniyle önerilmez; ayrıca geçirilmiş inme/GİA öyküsü olanlarda kesin kontrendikedir. OAC kombinasyonlarında güvenlilik profili kanıtlanmış olan klopidogrel ilk seçenektir.",
+        "E": "YANLIS — Yüksek inme riski taşıyan AF hastasında apiksabanın 1 yıl askıya alınması kabul edilemez bir kardiyoembolik risk yaratır. DAPT, sol atriyal apendiks kaynaklı tromboembolileri engellemede OAC'nin yerini tutamaz."
+      },
+      "etiketler": [
+        "AF + AKS",
+        "Üçlü Tedavi",
+        "İkili Yol",
+        "Apiksaban",
+        "Klopidogrel",
+        "AUGUSTUS"
+      ],
+      "zorluk": "zor",
+      "kaynak": "2025 ACC/AHA/Multisociety AKS Kılavuzu · AUGUSTUS · AFIRE"
+    },
+    {
+      "id": "s3",
+      "metin": "62 yaşında erkek hasta, acil servise 3 saattir süren şiddetli retrosternal göğüs ağrısı, soğuk terleme ve nefes darlığı ile getiriliyor. EKG'de **D2, D3 ve aVF'de 3 mm ST yükselmesi**, V1-V3'te resiprok ST depresyonu saptanarak akut inferior STEMI tanısıyla hızla kateter laboratuvarına alınıyor. **Acil koroner anjiyografi:** RCA orta segmentte akut trombotik tam tıkanıklık (culprit / IRA) · LAD orta segmentte %80 darlık (non-culprit) · LCx proksimal segmentte %75 darlık (non-culprit). Hasta iki senaryo altında değerlendiriliyor — **Senaryo I:** hemodinamik olarak stabil (KB 125/80 mmHg, nabız 76/dk, akciğerler doğal); RCA'ya DES ile TIMI 3 akım sağlanıyor. **Senaryo II:** soğuk/soluk ekstremiteler, oligüri, persistan hipotansiyon (KB 75/45 mmHg, nabız 118/dk) ve artmış laktat ile **kardiyojenik şok (SCAI Evre C)**. 2025 AKS kılavuz ilkeleri doğrultusunda, sorumlu olmayan damar (non-culprit / non-IRA) lezyonlarının reperfüzyon yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Senaryo I'de (hemodinamik olarak stabil STEMI), non-culprit lezyonlara PCI yapılması kontrendikedir; yalnızca sorumlu damara (RCA) PCI yapılmalı, non-culprit damarlar medikal izlenmelidir.",
+        "B": "Senaryo II'de (kardiyojenik şok tablosunda), iskemik miyokard kütlesini korumak amacıyla ilk seansta akut olarak tüm tıkanıklıklara (RCA, LAD ve LCx) tam multivessel PCI uygulanmalıdır.",
+        "C": "Senaryo I'de uygun non-culprit damarlara PCI uygulanması önerilir; işlem primer PCI esnasında veya indeks yatış süresince (19 gün içinde) gerçekleştirilebilir. Senaryo II'de (kardiyojenik şok) ise yalnızca sorumlu damara (IRA/RCA) PCI uygulanmalıdır.",
+        "D": "STEMI hastalarında non-culprit damar darlıklarının ciddiyetini ve reperfüzyon ihtiyacını belirlemek için primer PCI esnasında rutin FFR (kesirli akım rezervi) gibi invaziv fizyolojik değerlendirmelerin yapılması güçlü şekilde önerilmektedir.",
+        "E": "NSTE-AKS hastalarında kompleks olmayan çoklu damar hastalığı saptandığında, non-culprit lezyonların aynı seansta PCI ile açılması kesinlikle kontrendikedir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Hemodinamik olarak stabil STEMI + çok damar hastalığında TAM revaskülarizasyon önerilir (aynı seansta ya da ≤19 gün); kardiyojenik şokta ise akut fazda YALNIZCA sorumlu damara (IRA-only) PCI yapılır (CULPRIT-SHOCK).",
+      "aciklama_detay": "AKS geçiren hastaların yaklaşık %40-50'sinde infarkttan sorumlu lezyonun (IRA) yanı sıra diğer koroner damarlarda da anlamlı darlıklar saptanır. Yönetim hemodinamik duruma göre temelden farklılaşır. (1) Hemodinamik olarak stabil STEMI + çok damar hastalığı: uygun non-culprit damarlara da PCI uygulanarak tam revaskülarizasyon sağlanması güçlü şekilde önerilir; işlem primer PCI ile aynı seansta veya indeks yatış süresince ya da taburculuk sonrası ilk günlerde (19 gün içinde) aşamalı (staged) yapılabilir. (2) Kardiyojenik şok: akut fazda yalnızca infarkttan sorumlu damara PCI uygulanması güçlü öneridir. Gerekçe CULPRIT-SHOCK çalışmasıdır: şokta acil dönemde non-IRA lezyonlara müdahale kontrast yükünü, işlem süresini, akut böbrek hasarı riskini ve iyatrojenik komplikasyonları artırır; 30 günlük mortalite ve renal replasman tedavisi ihtiyacı yükselir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Stabil STEMI hastalarında non-culprit lezyonları medikal tedaviye bırakmak eskide kalmış bir yaklaşımdır. Başta COMPLETE olmak üzere güncel kanıtlar, non-culprit PCI yapılan grupta tekrarlayan MI ve iskemiye bağlı yeniden revaskülarizasyon oranlarının belirgin azaldığını göstermiştir.",
+        "B": "YANLIS — Kardiyojenik şokta tüm damarları acil açmaya çalışmak (immediate multivessel PCI) mortaliteyi ve akut böbrek yetmezliğini artırdığı için önerilmez; yalnızca IRA'ya PCI yapılır.",
+        "C": "DOGRU — Stabil STEMI'de tam revaskülarizasyon (aynı seansta veya ≤19 gün aşamalı), kardiyojenik şokta ise IRA-only PCI güçlü önerilerdir.",
+        "D": "YANLIS — Akut STEMI fazındaki sistemik mikrovasküler disfonksiyon, nörohumoral aktivasyon ve vasküler tonus değişiklikleri nedeniyle non-culprit lezyonların RUTİN invaziv fizyolojik değerlendirmesi (FFR/iFR) önerilmez; darlık derecesi anjiyografik ölçütlere göre değerlendirilir.",
+        "E": "YANLIS — NSTE-AKS hastalarında kompleks olmayan çok damar hastalığı varlığında non-culprit lezyonların aynı seansta PCI ile açılması düşünülebilir (zayıf öneri); kontrendike değildir."
+      },
+      "etiketler": [
+        "Çok Damar Hastalığı",
+        "Tam Revaskülarizasyon",
+        "CULPRIT-SHOCK",
+        "COMPLETE",
+        "Kardiyojenik Şok"
+      ],
+      "zorluk": "zor",
+      "kaynak": "2025 AKS kılavuz ilkeleri · COMPLETE · CULPRIT-SHOCK"
+    },
+    {
+      "id": "s4",
+      "metin": "64 yaşında erkek hasta, akut ST-yükselmesiz miyokard enfarktüsü (NSTEMI) tanısıyla yatırılıyor. Koroner anjiyografide **yaygın ince damar hastalığı** saptanıyor; lezyonlar cerrahi veya perkütan girişim için anatomik olarak uygun bulunmayarak **PCI/stent uygulanmadan medikal izlem** kararı alınıyor. Anamnezinde veya takibinde kronik oral antikoagülan kullanımı gerektiren ek bir hastalık (atriyal fibrilasyon, VTE vb.) **bulunmamaktadır**; kanama riski düşük değerlendirilmiştir. Taburculuk öncesi antitrombotik tedavi planlanmaktadır. Koroner içi trombüs persistanlığının patofizyolojisi ve oral antikoagülan/antitrombotik tedavi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Medikal izlenen AKS hastalarında koroner içi pıhtılaşma kaskad aktivasyonu ilk 24 saat içinde tamamen sona erdiğinden, 6. aydan sonra trombin jenerasyonu görülmez; bu nedenle antikoagülan tedavi eklenmesinin biyolojik gerekçesi bulunmamaktadır.",
+        "B": "Tam doz apiksaban (5 mg 2×1) tedavisi (APPRAISE-2), medikal izlenen AKS hastalarında kardiyovasküler ölümleri belirgin azaltmış ve majör kanama riskini artırmadığı için DAPT yanına eklenmesi gereken ilk tercih oral antikoagülandır.",
+        "C": "Stent uygulanmayan AKS hastalarında dabigatran (RE-DEEM) tedavisi iskemik olayları belirgin şekilde azalttığından DAPT rejimine rutin olarak eklenmesi önerilmektedir.",
+        "D": "Medikal izlenen AKS hastalarında kardiyovasküler mortalite yararı sağlamak için rivaroksabanın 5 mg 2×1 dozu tercih edilmelidir; 2.5 mg 2×1 dozunun ise mortalite üzerine anlamlı bir etkisi gösterilememiştir.",
+        "E": "DAPT (aspirin + klopidogrel) tedavisine çok düşük doz rivaroksaban (2.5 mg 2×1) eklenmesi (ATLAS ACS 2-TIMI 51), majör ve intrakraniyal kanama riskini artırmakla birlikte kardiyovasküler ve tüm nedenlere bağlı mortaliteyi anlamlı ölçüde azaltan tek DOAC stratejisidir; tam doz DOAC'lar (apiksaban 5 mg 2×1 — APPRAISE-2) ise iskemik sonlanımlarda azalma sağlamayıp majör kanamayı artırdığı için çalışma erken durdurulmuştur."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Stentlenmemiş, kronik OAC endikasyonu olmayan AKS hastasında DAPT'a eklenip mortaliteyi düşürdüğü gösterilen tek strateji ÇOK DÜŞÜK DOZ rivaroksaban 2.5 mg 2×1'dir; tam doz apiksaban (APPRAISE-2) iskemik yarar sağlamadan kanamayı artırmıştır.",
+      "aciklama_detay": "Stent uygulanmayan, medikal tedavi altındaki AKS hastalarında taburculuk sonrası tekrarlayan iskemik olayların temelinde persistan trombotik risk yatar: (1) akut olay sonrası trombin jenerasyonu biyobelirteçlerinin yüksekliği 6 aya kadar devam eder; (2) seri anjiyoskopik takiplerde infarkttan sorumlu plaklarda 1. ayda %64, 6. ayda %5, 18. ayda %12 oranında intrakoroner trombüs varlığı sürmektedir; (3) hassas plaklarda subklinik mikrorüptürler ve lokal koagülasyon aktivasyonu (Faktör Xa, Doku Faktörü) süregelir. Kanıtlar: ATLAS ACS 2-TIMI 51 — 15.526 AKS hastasında (yaklaşık %40'ı revaskülarize edilmemiş) DAPT'a eklenen rivaroksaban 2.5 mg 2×1, bileşik birincil sonlanımı azaltmış (%8.9 - %10.7); yalnızca 2.5 mg dozu kardiyovasküler mortaliteyi (%2.7 - %4.1) ve tüm nedenlere bağlı ölümleri (%2.9 - %4.5) düşürmüş, stent trombozunu %31 azaltmıştır; 5 mg 2×1 dozunda mortalite yararı yoktur. Her iki dozda TIMI majör kanama (%1.8 - %0.6) ve intrakraniyal kanama artmıştır. APPRAISE-2 — tam doz apiksaban (5 mg 2×1) iskemik sonlanımlarda azalma sağlamamış (%7.5 - %7.9), TIMI majör kanama masif artmış (%1.3 - %0.5) ve çalışma erken durdurulmuştur. RE-DEEM — dabigatranın DAPT üzerine eklenmesi doza bağımlı kanama artışı yapmış, etkinlik kanıtı gösterilememiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — AKS sonrasında koagülasyon kaskadı ve trombin jenerasyonu 24 saatle sınırlı kalmayıp en az 6 ay boyunca yüksek seyreder; anjiyoskopik çalışmalar 18. ayda bile plak üzerinde trombüs persistanlığı göstermektedir.",
+        "B": "YANLIS — APPRAISE-2'de tam doz apiksaban iskemik yarar sağlamamış (%7.5 - %7.9), aksine TIMI majör kanamaları anlamlı artırdığı için çalışma güvenlik gerekçesiyle erken sonlandırılmıştır.",
+        "C": "YANLIS — RE-DEEM çalışmasında dabigatran, DAPT alan MI hastalarında doza bağımlı kanama artışına yol açmış ve stent takılmayan AKS hastalarında etkinlik kanıtı bulunmadığı için önerilmemektedir.",
+        "D": "YANLIS — ATLAS ACS 2-TIMI 51'de mortaliteyi azaltan doz ÇOK DÜŞÜK doz olan 2.5 mg 2×1'dir; 5 mg 2×1 dozunda sağkalım avantajı gösterilememiştir. Tam antikoagülasyon dozu (20 mg/gün) AKS sonrası DAPT ile kombine edilmez.",
+        "E": "DOGRU — Çok düşük doz rivaroksaban (2.5 mg 2×1) DAPT'a eklendiğinde KV ve tüm nedenli mortaliteyi azaltan tek DOAC rejimidir; bedeli majör ve intrakraniyal kanamada artıştır. Tam doz apiksaban ise iskemik yarar sağlamadan kanamayı artırmıştır."
+      },
+      "etiketler": [
+        "Medikal İzlem",
+        "Rivaroksaban 2.5 mg",
+        "ATLAS ACS 2-TIMI 51",
+        "APPRAISE-2",
+        "RE-DEEM"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ATLAS ACS 2-TIMI 51 · APPRAISE-2 · RE-DEEM"
+    },
+    {
+      "id": "s5",
+      "metin": "52 yaşında kadın hasta; bilinen koroner arter hastalığı, diyabet veya sigara öyküsü **bulunmaksızın** acil servise 2 saattir devam eden istirahatte tipik retrosternal göğüs ağrısı ile başvuruyor. EKG'de prekordiyal derivasyonlarda hafif T dalga inversiyonları izleniyor; hs-cTnI düzeyi cinsiyete özgü 99. persentil URL'nin üzerinde saptanarak **NSTEMI** tanısı konuluyor. Acil koroner anjiyografide epikardiyal koroner arterlerde **%50'nin üzerinde tıkayıcı lezyon saptanmıyor.** Aynı klinikte iki hasta daha değerlendiriliyor — **Grup A:** 12 yıl önce CABG geçirmiş, kararsız angina ile başvuran erkek hasta. **Grup B:** PCI ve stent sonrası 24. saatte batıcı nitelikte, lokalize, EKG değişikliği veya troponin yüksekliği eşlik etmeyen göğüs ağrısı tanımlayan hasta. Evrensel MI tanımı ve AKS terminoloji/sınıflandırma ilkeleri doğrultusunda, bu hastalar ve klinik durumlar ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yüksek hassasiyetli troponin (hs-cTn) kullanımı sonrasında, klinik ve EKG olarak iskemisi olan ancak serum biyobelirteç yüksekliği saptanmayan kararsız angina vakalarının oranı belirgin şekilde artmış; NSTEMI tanısı ise azalmıştır.",
+        "B": "NSTE-AKS vakalarında anjiyografik olarak obstrüktif koroner arter hastalığı saptanmaması (≥%50 darlık olmaması) vakaların yaklaşık %9-14'ünde görülür; bağımsız öngördürücüler genç yaş, kadın cinsiyeti, geçirilmiş MI veya diyabetin olmaması ve EKG'de ST depresyonunun bulunmamasıdır.",
+        "C": "10 yıldan daha eski safen ven grefti (SVG) bulunan post-CABG hastalarında gelişen akut kararsız anjinal semptomların sorumlusu %90'ın üzerinde yerleşik (native) koroner arterlerdeki yeni rüptürlerdir; safen ven greftlerinin sorumluluğu son derece nadirdir.",
+        "D": "PCI sonrasında ilk 48 saatte stente bağlı aşırı gerilmeye (overexpansion) sekonder gelişen non-iskemik göğüs ağrısı, sıklıkla belirgin ST segment yükselmeleri ve troponin değerinde 5 katın üzerinde artış ile karakterizedir.",
+        "E": "Evrensel MI tanımına göre akut miyokard enfarktüsü tanısı konulabilmesi için serum troponin değerlerinin tek başına yüksek saptanması yeterlidir; iskemik semptom, EKG değişikliği veya görüntüleme bulgusu aranmaz."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "NSTE-AKS'lilerin %9-14'ünde anjiyografide obstrüktif lezyon yoktur; öngördürücüler genç yaş, kadın cinsiyet, DM ve geçirilmiş MI olmaması, ST depresyonu bulunmamasıdır. Mekanizma: vazospazm, hızla lizise uğrayan trombüs, mikrovasküler disfonksiyon (MINOCA), mikroembolizm, miyokardit.",
+      "aciklama_detay": "AKS klinikte her zaman obstrüktif aterosklerotik plak rüptürü ile seyretmez. (1) Büyük klinik çalışmalarda (PURSUIT, TACTICS-TIMI 18, CRUSADE) NSTE-AKS tanısı alan hastaların %9 ila %14'ünde anjiyografide normal koroner arterler veya %50-60'ın altında obstrüktif olmayan lezyonlar saptanır. (2) Bağımsız öngördürücüler: genç yaş, kadın cinsiyeti (TACTICS-TIMI 18'de kadınlarda %17, erkeklerde %9), başvuruda veya geçmişte MI öyküsünün olmaması, diyabet bulunmaması, önceden angina öyküsünün olmaması, sigara içilmemesi ve EKG'de ST depresyonunun olmaması. (3) Olası mekanizmalar: koroner vazospazm, hızlı lizise uğrayan geçici trombüsler, mikrovasküler disfonksiyon (INOCA/MINOCA), koroner mikroembolizasyon veya subklinik miyokardit.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — hs-cTn testlerinin kullanıma girmesiyle eskiden kararsız angina tanısı alan hastaların hemen tamamında mikroskobik miyonekroz saptanmış ve bu hastalar NSTEMI olarak yeniden sınıflandırılmıştır. Yani kararsız angina NADİRLEŞMİŞ, NSTEMI oranı ARTMIŞTIR.",
+        "B": "DOGRU — Obstrüktif olmayan koroner hastalığı NSTE-AKS'nin %9-14'ünde görülür; vakadaki hasta (genç, kadın, DM ve sigara yok, ST depresyonu yok) tam bu öngördürücü profile uyar.",
+        "C": "YANLIS — Tam tersi: safen ven grefti yaşı ≥10 yıl olan hastalarda akut iskemik semptomların sorumlusu %92 oranında greftin kendisindeki rüptür/trombüstür; yerleşik (native) koroner arterlerin sorumluluğu yalnızca %8'dir.",
+        "D": "YANLIS — Stent overexpansion'a bağlı ağrı NON-iskemiktir; sıklıkla lokalize/plöritik niteliktedir, EKG değişikliği ve troponin yüksekliği eşlik etmez. İşlem sonrası 48 saat içinde troponinin 5 katın üzerine çıkması ve EKG değişikliğinin eşlik etmesi periprosedürel MI (Tip 4a) göstergesidir.",
+        "E": "YANLIS — Tek başına troponin yüksekliği MI değil MİYOKARD HASARINI gösterir. MI tanısı için akut hs-cTn yükselme/düşme dinamiğine ek olarak en az bir iskemi kanıtı (iskemik semptom, yeni EKG değişikliği, patolojik Q dalgası, yeni RWMA/canlı doku kaybı veya intrakoroner trombüs) şarttır."
+      },
+      "etiketler": [
+        "MINOCA",
+        "Obstrüktif Olmayan KAH",
+        "Kararsız Angina",
+        "Safen Ven Grefti",
+        "Tip 4a MI"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Evrensel MI tanımı · PURSUIT · TACTICS-TIMI 18 · CRUSADE"
+    }
+  ]
+}

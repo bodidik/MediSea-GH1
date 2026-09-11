@@ -490,14 +490,24 @@
     ],
     "kardiyoloji/akut-koroner-sendromlar": [
       {
+        "slug": "timi-ua",
+        "name": "TIMI Skoru (UA/NSTEMI)",
+        "eslesen": "TIMI Skoru"
+      },
+      {
         "slug": "grace",
         "name": "GRACE Skoru",
         "eslesen": "GRACE"
       },
       {
-        "slug": "timi-ua",
-        "name": "TIMI Skoru (UA/NSTEMI)",
-        "eslesen": "TIMI"
+        "slug": "heart",
+        "name": "HEART Skoru",
+        "eslesen": "HEART"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
       }
     ],
     "kardiyoloji/aprocitentan-kbh-ve-yasli": [
@@ -571,6 +581,13 @@
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
+      }
+    ],
+    "kardiyoloji/uclu-tedavi-uzatma-risk-faktorleri": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
       }
     ],
     "klinik-nutrisyon/klinik-nutrisyon-ana-unite": [
@@ -796,8 +813,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
         "eslesen": "eGFR"
       },
       {
@@ -1234,11 +1251,18 @@
         "eslesen": "GRACE"
       }
     ],
+    "heart": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "HEART"
+      }
+    ],
     "timi-ua": [
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
         "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "TIMI"
+        "eslesen": "TIMI Skoru"
       }
     ],
     "endocarditis": [
@@ -1310,10 +1334,10 @@
     ]
   },
   "olcum": {
-    "konu": 479,
+    "konu": 484,
     "arac": 136,
-    "araciOlanKonu": 98,
-    "konusuOlanArac": 32,
-    "bag": 117
+    "araciOlanKonu": 99,
+    "konusuOlanArac": 33,
+    "bag": 120
   }
 }
