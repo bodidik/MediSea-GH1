@@ -3938,11 +3938,6 @@
    "baslik": "İmmün Trombositopeni (ITP)"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "spontan-koroner-arter-disseksiyonu-scad",
-   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
-  },
-  {
    "brans": "hematoloji",
    "slug": "itp-tanisal-yaklasim",
    "baslik": "İmmün Trombositopeni (İTP) Tanısal Yaklaşım ve Değerlendirme"
@@ -3951,6 +3946,16 @@
    "brans": "hematoloji",
    "slug": "itp-tedavi",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "spontan-koroner-arter-disseksiyonu-scad",
+   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   }
  ],
  "hematoloji/gilteritinib-flt3-aml": [
@@ -4960,6 +4965,11 @@
    "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "kardiyoloji/akut-kalp-yetersizligi": [
@@ -5154,6 +5164,33 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  }
+ ],
+ "kardiyoloji/gebelikte-akut-koroner-sendrom": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "spontan-koroner-arter-disseksiyonu-scad",
+   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-kardiyovaskuler",
+   "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
@@ -5509,6 +5546,11 @@
  ],
  "kardiyoloji/spontan-koroner-arter-disseksiyonu-scad": [
   {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  },
+  {
    "brans": "hematoloji",
    "slug": "gebelikte-immün-ITP-yonetimi",
    "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
@@ -5588,6 +5630,11 @@
    "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "klinik-nutrisyon/enteral-parenteral": [
@@ -6334,6 +6381,11 @@
    "brans": "endokrinoloji",
    "slug": "tirzepatid-kardiyorenal-koruma",
    "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   },
   {
    "brans": "kardiyoloji",
