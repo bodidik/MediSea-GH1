@@ -2,15 +2,20 @@
   "title": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri",
   "meta": {
     "updatedAt": "11 Eyl 2026",
-    "tags": ["Kardiyoloji", "AKS", "Üçlü Tedavi", "Stent Trombozu", "Kompleks PCI", "DOAC", "Klopidogrel", "Kanama Riski"],
+    "tags": [
+      "Kardiyoloji",
+      "AKS",
+      "Üçlü Tedavi",
+      "Stent Trombozu",
+      "Kompleks PCI",
+      "DOAC",
+      "Klopidogrel",
+      "Kanama Riski"
+    ],
     "parent": "akut-koroner-sendromlar",
     "order": 2
   },
   "sections": [
-    {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
     {
       "heading": "🧭 Varsayılan Yaklaşım ve Sapma Gerekçesi",
       "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Oral antikoagülan (OAC) tedavisi alan (atriyal fibrilasyon, mekanik kapak veya VTE nedeniyle) ve Akut Koroner Sendrom (AKS) ya da perkütan koroner girişim (PCI) geçiren hastalarda varsayılan (default) yaklaşım, kanama komplikasyonlarını en aza indirmek amacıyla <strong>üçlü tedaviyi (OAC + aspirin + P2Y12 inhibitörü)</strong> kısa tutmak (<strong>1 ila 4 hafta / 1-30 gün</strong>) ve ardından aspirini keserek <strong>İkili Yol Tedavisine (OAC + klopidogrel)</strong> geçmektir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ancak <strong>yüksek iskemik / stent trombozu riski</strong> taşıyan ve kanama riski kabul edilebilir düzeyde olan seçilmiş olgularda, iskemik korumayı artırmak amacıyla üçlü tedavi süresi <strong>1 aya (seçilmiş kompleks vakalarda 1-3 aya kadar)</strong> uzatılabilir. Aşağıdaki listeler bu sapmayı gerekçelendiren faktörleri toplar.</p>"

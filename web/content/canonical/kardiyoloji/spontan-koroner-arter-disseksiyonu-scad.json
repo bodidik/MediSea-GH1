@@ -2,15 +2,19 @@
   "title": "Spontan Koroner Arter Disseksiyonu (SCAD)",
   "meta": {
     "updatedAt": "11 Eyl 2026",
-    "tags": ["Kardiyoloji", "SCAD", "MINOCA", "Fibromüsküler Displazi", "Gebelik", "İntramural Hematom", "Saw Sınıflandırması"],
+    "tags": [
+      "Kardiyoloji",
+      "SCAD",
+      "MINOCA",
+      "Fibromüsküler Displazi",
+      "Gebelik",
+      "İntramural Hematom",
+      "Saw Sınıflandırması"
+    ],
     "parent": "akut-koroner-sendromlar",
     "order": 3
   },
   "sections": [
-    {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
     {
       "heading": "🧬 1. Tanım ve Hücresel / Vasküler Patofizyolojik Mekanizmalar",
       "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\"><strong>Spontan Koroner Arter Disseksiyonu (SCAD)</strong>; travmatik, iyatrojenik veya klasik aterosklerotik plak rüptürü/erozyonu zemininde gelişmeyen, koroner arter duvarı tabakalarının akut olarak ayrışması ile karakterize <strong>non-aterosklerotik</strong> bir vasküler tablodur. Epikardiyal koroner arterlerin medya ve adventisya tabakaları arasında pıhtı birikimi (<strong>intramural hematom — IMH</strong>) ve/veya intimal yırtılma neticesinde oluşan yalancı lümen (false lumen), gerçek lümene (true lumen) dıştan bası uygulayarak miyokardiyal perfüzyon bozukluğuna, miyonekroza (MINOCA / akut MI) veya ani kardiyak ölüme yol açar.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">SCAD, genç ve premenopozal kadınlarda görülen Akut Koroner Sendromların en önemli nedenlerinden biridir (<strong>50 yaş altı kadın MI'larının %10-35'i</strong>) ve gebelikle ilişkili enfarktüslerin ilk sıradaki etiyolojik kaynağıdır (<strong>&gt;%35</strong>).</p><p class=\"text-[10.5px] text-slate-500 mb-1\">Şema geniştir — yatayda kaydırarak görebilirsin.</p><div class=\"overflow-x-auto mb-4 border border-slate-200 rounded-xl bg-slate-50 p-3\"><pre class=\"text-[10px] leading-snug text-slate-700 font-mono\">                    [KORONER ARTER DUVAR İNSTABİLİTESİ]\n                                     │\n         ┌───────────────────────────┴───────────────────────────┐\n         ▼                                                       ▼\n [Inside-Out (içten dışa)]                        [Outside-In (dıştan içe)]\n - Primer intimal yırtık (intimal tear)            - Vasa vasorum kırılganlığı, mikro-rüptür\n - Kanın gerçek lümenden medyaya geçişi            - Primer intramural hematom (IMH) birikimi\n - İkincil yalancı lümen ve IMH oluşumu            - Yırtık olmaksızın gerçek lümene dıştan bası\n         │                                                       │\n         └───────────────────────────┬───────────────────────────┘\n                                     ▼\n                      [Gerçek lümen obstrüksiyonu &amp;\n                     miyokard iskemisi / MI (MINOCA)]</pre></div><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm h-full\"><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">&quot;Inside-Out&quot; — Primer İntimal Yırtılma</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Koroner arter intimasında meydana gelen primer bir yırtık, yüksek basınçlı arteriyel kanın gerçek lümenden medya tabakası içine sızmasına yol açar. Duvar içine dolan kan, medya boyunca longitudinal olarak ilerleyerek yalancı lümeni oluşturur ve intramural hematomu büyütür.</p></div></div><div><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm h-full\"><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">&quot;Outside-In&quot; — Primer İntramural Hematom</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Adventisya ve medyada yer alan, damar duvarını besleyen mikrovasküler ağın (<strong>vasa vasorum</strong>) akut rüptürü veya intramural mikro-kanaması sonucu gelişir. Primer intimal yırtık <strong>bulunmaz</strong>; doğrudan vasa vasorum kaynaklı kanama ile medya içinde büyüyen hematom, intimayı içeriye iterek gerçek lümeni tıkar. Yüksek çözünürlüklü IVUS ve OCT çalışmaları, vakaların önemli bir kısmında intimal flep olmaksızın izole IMH bulunduğunu göstererek bu hipotezi destekler.</p></div></div></div>"
