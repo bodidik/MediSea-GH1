@@ -634,6 +634,36 @@
       ],
       "zorluk": "zor",
       "kaynak": "Symptom to Diagnosis: An Evidence-Based Guide — Bölüm 17-4 (Ascites)"
+    },
+    {
+      "id": "s22",
+      "metin": "54 yaşında erkek hasta, MASH (metabolik disfonksiyon ilişkili steatohepatit) zemininde gelişen dekompanse karaciğer sirozu ve karın çevresinde giderek artan şişlik (orta derece / Evre 2 asit) ile **hafif bacak ödemi** şikâyetiyle gastroenteroloji polikliniğine başvuruyor. Özgeçmişinde daha önce geçirilmiş asit atağı veya SBP öyküsü bulunmamaktadır. **Fizik muayene ve vital bulgular:** kan basıncı 112/70 mmHg · nabız 74/dk · ateş 36.6 °C; mobilize asit ve pretibiyal 1+ ödem. **Kan biyokimyası:** Na 137 mEq/L · K 4.3 mEq/L · Kreatinin 0.9 mg/dL · Total bilirubin 1.9 mg/dL · Albümin 2.8 g/dL · INR 1.3. **Asit sıvısı analizi:** SAAG 1.7 g/dL (yüksek gradyan) · Total protein 1.5 g/dL · PMN 70/mm³ (Gram boyama ve kültür negatif; SBP ekarte edildi). Hastaya diyetle sodyum kısıtlaması (<2 g/gün) ile birlikte oral kombinasyon diüretik tedavisi (Spironolakton 100 mg/gün + Furosemid 40 mg/gün) başlanması planlanmaktadır. Bu hastanın başlangıç diüretik tedavisi, izlem hedefleri, kilo kaybı sınırları ve ilaç etkileşimleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Diyetle sodyum kısıtlamasına (<2 g/gün) ek olarak, diüretik natriürezini hızlandırmak amacıyla serum sodyum düzeyinden bağımsız olarak günlük sıvı alımı rutin olarak <1000 mL ile kısıtlanmalıdır.",
+        "B": "Periferik bacak ödemi bulunan siroz hastalarında diüretik tedavisi altında hedeflenebilecek günlük maksimum kilo kaybı 1.0 kg iken; ödemi bulunmayan hastalarda intravasküler hacim depresyonunu ve renal yetmezliği önlemek için günlük kilo kaybı maksimum 0.5 kg ile sınırlandırılmalıdır.",
+        "C": "Diüretik tedavisi başlanan veya dozu artırılan ayaktan takip edilen hastalarda, biyokimyasal advers etkileri (elektrolit bozukluğu ve böbrek fonksiyon kaybı) değerlendirmek için ilk laboratuvar kontrolü en erken 3 ay sonra yapılmalıdır.",
+        "D": "Furosemid tedavisine standart dozlarda yetersiz yanıt alınan vakalarda alternatif loop diüretiklerine geçilmeden doğrudan \"diüretik-dirençli asit\" tanısı konulmalı ve diüretik tedavisi tamamen kesilmelidir.",
+        "E": "Siroza bağlı asiti olan hastalarda kas-iskelet ağrıları geliştiğinde, renal prostaglandin sentezini etkilemediği kabul edilen ibuprofen veya naproksen gibi non-steroid antiinflamatuvar ilaçlar (NSAİİ) ilk seçenek analjezik olarak güvenle reçete edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Günlük kilo kaybı sınırı ödem varlığına göre değişir: periferik ödemi OLAN hastada en çok 1.0 kg, ödemi OLMAYAN hastada en çok 0.5 kg — asidin peritondan damar yatağına emilim hızı sınırlıdır.",
+      "aciklama_detay": "Diüretik tedavisi altındaki siroz hastalarında diürezi zorlarken intravasküler hacim depresyonunu ve renal yetmezliği önlemek için günlük kilo kaybı sınırlarına kesinlikle uyulmalıdır. Periton boşluğundan vasküler yatağa asit sıvısı emilimi sınırlı olduğu için; periferik ödemi bulunmayan hastalarda günlük maksimum kilo kaybı 0.5 kg ile sınırlandırılmalıdır. Ancak bacaklarında periferik ödem bulunan hastalarda (ödem sıvısı intravasküler yatağa daha hızlı mobilize olabildiğinden) günde maksimum 1.0 kg'a kadar kilo kaybı tolere edilebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Siroza bağlı unkomplike asit tedavisinde diyetle sodyum kısıtlaması (<2 g/gün = 88 mEq/gün) standarttır. Ancak serum sodyum düzeyi 120–125 mEq/L'nin altına düşmediği sürece rutin sıvı kısıtlaması önerilmez. Serum sodyumu normal olan (137 mEq/L) bir hastada başlangıçta sıvı kısıtlaması diüretik etkinliğini artırmadığı gibi şiddetli susuzluk hissine ve uyumsuzluğa yol açar.",
+        "B": "DOGRU — Ödemi olan hastada günlük en çok 1.0 kg, ödemi olmayan hastada en çok 0.5 kg kilo kaybı hedeflenir; sınır, peritondan emilim kapasitesinin sınırlı olmasından gelir.",
+        "C": "YANLIS — Ayaktan takip edilen siroz hastalarında diüretik tedavisi başlandıktan veya dozu artırıldıktan 5 ila 7 gün sonra serum elektrolitleri ve böbrek fonksiyon testleri (kreatinin, BUN) kontrol edilmelidir. Biyokimyasal takibin 3 ay sonraya ertelenmesi diüretik ilişkili AKİ veya ciddi elektrolit bozukluklarının gözden kaçmasına neden olur.",
+        "D": "YANLIS — Furosemide yetersiz yanıt alınan vakalarda doğrudan \"diüretik-dirençli asit\" sonucuna varılmamalıdır. Asidin diüretiğe dirençli olduğuna karar vermeden önce biyoyararlanımı daha öngörülebilir ve yarı ömrü daha uzun olan torsemid (20 mg) veya bumetanid (1 mg) gibi alternatif bir loop diüretiği denenmelidir.",
+        "E": "YANLIS — Siroz ve asiti olan hastalarda NSAİİ kullanımından (ibuprofen, naproksen, indometasin vb.) KESİNLİKLE KAÇINILMALIDIR. NSAİİ'ler renal prostaglandin sentezini inhibe ederek böbrek kan akımını ve glomerüler filtrasyonu düşürür; bu durum şiddetli sodyum ve su tutulumuna, diüretik direncinin ağırlaşmasına ve akut böbrek hasarına yol açar."
+      },
+      "etiketler": [
+        "Unkomplike Asit",
+        "Kilo Kaybı Hedefi",
+        "Diüretik İzlemi",
+        "Torsemid",
+        "NSAİİ Kontrendikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Ascites in adults with cirrhosis: Initial therapy"
     }
   ]
 }
