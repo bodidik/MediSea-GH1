@@ -4,13 +4,16 @@
     "branch": "kardiyoloji",
     "baslik": "Akut Koroner Sendromlar — İleri Klinik ve Patofizyolojik Referans",
     "altbaslik": "Plak rüptürü/erozyonu biyolojisi, OMI eşdeğeri EKG paternleri, GRACE/TIMI ile invaziv zamanlama, reperfüzyon pencereleri, antitrombotik protokoller ve SCAI şok evrelemesi",
-    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
     "guncelleme": "2026-09"
   },
   "moduller": {
     "flashcard": false,
     "inciler": false,
-    "quiz": false,
+    "quiz": true,
     "vaka": false,
     "video": false
   },
@@ -45,24 +48,48 @@
     {
       "tip": "tablo",
       "baslik": "Plak Rüptürü ↔ Plak Erozyonu — Ayırt Edici Biyoloji",
-      "kolonlar": ["Eksen", "Plak Rüptürü (~%60-75)", "Plak Erozyonu (~%25-40)"],
+      "kolonlar": [
+        "Eksen",
+        "Plak Rüptürü (~%60-75)",
+        "Plak Erozyonu (~%25-40)"
+      ],
       "satirlar": [
         {
           "renk": "kirmizi",
-          "hucreler": ["Zemin morfolojisi", "İnce kılıflı fibroaterom (TCFA), geniş nekrotik çekirdek", "Proteoglikandan zengin matriks (hyaluronan, versikan), SMC baskın"]
+          "hucreler": [
+            "Zemin morfolojisi",
+            "İnce kılıflı fibroaterom (TCFA), geniş nekrotik çekirdek",
+            "Proteoglikandan zengin matriks (hyaluronan, versikan), SMC baskın"
+          ]
         },
         {
-          "hucreler": ["Hücresel sürücü", "Makrofaj / T-lenfosit, MMP aracılı kolajen yıkımı", "TLR-2 ekspresyonu, endotel apoptozu, nötrofil / MPO"]
+          "hucreler": [
+            "Hücresel sürücü",
+            "Makrofaj / T-lenfosit, MMP aracılı kolajen yıkımı",
+            "TLR-2 ekspresyonu, endotel apoptozu, nötrofil / MPO"
+          ]
         },
         {
-          "hucreler": ["Tetikleyici", "Doku Faktörünün kana maruz kalması → Faktör VIIa/Xa, masif trombin", "De-endotelizasyon, akım bozulması"]
+          "hucreler": [
+            "Tetikleyici",
+            "Doku Faktörünün kana maruz kalması → Faktör VIIa/Xa, masif trombin",
+            "De-endotelizasyon, akım bozulması"
+          ]
         },
         {
           "renk": "sari",
-          "hucreler": ["Trombüs tipi", "Fibrin/eritrositten zengin **kırmızı trombüs**, sıklıkla tam tıkayıcı", "Trombositten zengin **beyaz trombüs**, sıklıkla subtotal"]
+          "hucreler": [
+            "Trombüs tipi",
+            "Fibrin/eritrositten zengin **kırmızı trombüs**, sıklıkla tam tıkayıcı",
+            "Trombositten zengin **beyaz trombüs**, sıklıkla subtotal"
+          ]
         },
         {
-          "hucreler": ["Tipik profil", "Klasik ateroskleroz yükü, STEMI'nin %55-75'i", "Premenopozal kadın, genç, sigara içen"]
+          "hucreler": [
+            "Tipik profil",
+            "Klasik ateroskleroz yükü, STEMI'nin %55-75'i",
+            "Premenopozal kadın, genç, sigara içen"
+          ]
         }
       ]
     },
@@ -83,7 +110,11 @@
     {
       "tip": "tablo",
       "baslik": "EKG Tanı Ölçütleri ve OMI (Oklüziv MI) Eşdeğerleri",
-      "kolonlar": ["Patern / Ölçüt", "Elektrokardiyografik tanı şartları", "Patofizyolojik ve klinik karşılığı"],
+      "kolonlar": [
+        "Patern / Ölçüt",
+        "Elektrokardiyografik tanı şartları",
+        "Patofizyolojik ve klinik karşılığı"
+      ],
       "satirlar": [
         {
           "renk": "kirmizi",
@@ -135,7 +166,10 @@
     {
       "tip": "tablo",
       "baslik": "NSTE-AKS — İnvaziv Strateji Zamanlaması",
-      "kolonlar": ["Zamanlama", "Tetikleyen ölçütler"],
+      "kolonlar": [
+        "Zamanlama",
+        "Tetikleyen ölçütler"
+      ],
       "satirlar": [
         {
           "renk": "kirmizi",
@@ -204,22 +238,42 @@
     {
       "tip": "tablo",
       "baslik": "AKS Sonrası Lipid Yönetimi — Basamaklı Algoritma",
-      "kolonlar": ["Basamak", "Uygulama", "Karar noktası"],
+      "kolonlar": [
+        "Basamak",
+        "Uygulama",
+        "Karar noktası"
+      ],
       "satirlar": [
         {
           "renk": "kirmizi",
-          "hucreler": ["1. Basamak", "Yüksek yoğunluklu statin: atorvastatin 80 mg veya rosuvastatin 40 mg", "4-6 hafta sonra LDL-C kontrolü"]
+          "hucreler": [
+            "1. Basamak",
+            "Yüksek yoğunluklu statin: atorvastatin 80 mg veya rosuvastatin 40 mg",
+            "4-6 hafta sonra LDL-C kontrolü"
+          ]
         },
         {
           "renk": "sari",
-          "hucreler": ["2. Basamak", "LDL-C ≥55 mg/dL ise ezetimib 10 mg ekle", "4-6 hafta sonra yeniden kontrol"]
+          "hucreler": [
+            "2. Basamak",
+            "LDL-C ≥55 mg/dL ise ezetimib 10 mg ekle",
+            "4-6 hafta sonra yeniden kontrol"
+          ]
         },
         {
-          "hucreler": ["3. Basamak", "LDL-C hâlâ ≥55 mg/dL ise PCSK9 yolağı: evolokumab / alirokumab / inklisiran", "Hedefe ulaşana dek izlem"]
+          "hucreler": [
+            "3. Basamak",
+            "LDL-C hâlâ ≥55 mg/dL ise PCSK9 yolağı: evolokumab / alirokumab / inklisiran",
+            "Hedefe ulaşana dek izlem"
+          ]
         },
         {
           "renk": "yesil",
-          "hucreler": ["Hedef", "LDL-C **<55 mg/dL** VE bazale göre **≥%50 düşüş**", "Hedefteyse tedaviye aynen devam"]
+          "hucreler": [
+            "Hedef",
+            "LDL-C **<55 mg/dL** VE bazale göre **≥%50 düşüş**",
+            "Hedefteyse tedaviye aynen devam"
+          ]
         }
       ]
     },
@@ -235,13 +289,52 @@
     {
       "tip": "tablo",
       "baslik": "SCAI Kardiyojenik Şok Evrelemesi",
-      "kolonlar": ["Evre", "Tanım", "Hemodinami / perfüzyon"],
+      "kolonlar": [
+        "Evre",
+        "Tanım",
+        "Hemodinami / perfüzyon"
+      ],
       "satirlar": [
-        { "renk": "yesil", "hucreler": ["A — At Risk", "Şok riski taşıyan hasta", "Normotansif, perfüzyon normal"] },
-        { "renk": "sari", "hucreler": ["B — Beginning", "Erken şok", "Hipotansiyon (SKB <90 mmHg) veya taşikardi var, doku hipoperfüzyonu YOK"] },
-        { "renk": "kirmizi", "hucreler": ["C — Classic ★", "Klasik kardiyojenik şok", "Doku hipoperfüzyonu (laktat ↑, oligüri, soğuk ekstremite); inotrop/pressör veya mekanik destek gerekir"] },
-        { "renk": "kirmizi", "hucreler": ["D — Deteriorating", "Kötüleşen şok", "İlk tedavi adımlarına rağmen bozulma sürüyor, destek artırılıyor"] },
-        { "renk": "kirmizi", "hucreler": ["E — Extremis", "Refrakter şok", "Dolaşım çöküşü, kardiyak arrest, masif vazopressör/MCS gereksinimi"] }
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "A — At Risk",
+            "Şok riski taşıyan hasta",
+            "Normotansif, perfüzyon normal"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "B — Beginning",
+            "Erken şok",
+            "Hipotansiyon (SKB <90 mmHg) veya taşikardi var, doku hipoperfüzyonu YOK"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "C — Classic ★",
+            "Klasik kardiyojenik şok",
+            "Doku hipoperfüzyonu (laktat ↑, oligüri, soğuk ekstremite); inotrop/pressör veya mekanik destek gerekir"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "D — Deteriorating",
+            "Kötüleşen şok",
+            "İlk tedavi adımlarına rağmen bozulma sürüyor, destek artırılıyor"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "E — Extremis",
+            "Refrakter şok",
+            "Dolaşım çöküşü, kardiyak arrest, masif vazopressör/MCS gereksinimi"
+          ]
+        }
       ]
     },
     {
@@ -252,19 +345,35 @@
     {
       "tip": "tablo",
       "baslik": "Akut MI Mekanik Komplikasyonları (ilk 1-7 gün)",
-      "kolonlar": ["Komplikasyon", "Tipik zemin", "Klinik tablo"],
+      "kolonlar": [
+        "Komplikasyon",
+        "Tipik zemin",
+        "Klinik tablo"
+      ],
       "satirlar": [
         {
           "renk": "kirmizi",
-          "hucreler": ["Papiller kas yırtılması ★", "İnferior MI — posteromedial papiller kasın TEKLİ kanlanması (PDA)", "Akut masif mitral yetmezliği, ani akciğer ödemi, kardiyojenik şok; acil cerrahi"]
+          "hucreler": [
+            "Papiller kas yırtılması ★",
+            "İnferior MI — posteromedial papiller kasın TEKLİ kanlanması (PDA)",
+            "Akut masif mitral yetmezliği, ani akciğer ödemi, kardiyojenik şok; acil cerrahi"
+          ]
         },
         {
           "renk": "kirmizi",
-          "hucreler": ["Ventriküler septal defekt", "Anteriyor veya inferior transmural nekroz", "Sol-sağ şant, şiddetli pansistolik üfürüm, bi-ventriküler şok"]
+          "hucreler": [
+            "Ventriküler septal defekt",
+            "Anteriyor veya inferior transmural nekroz",
+            "Sol-sağ şant, şiddetli pansistolik üfürüm, bi-ventriküler şok"
+          ]
         },
         {
           "renk": "kirmizi",
-          "hucreler": ["Sol ventrikül serbest duvar yırtılması", "Anteriyor/lateral duvar infarktı", "Masif hemoperikardiyum, akut tamponad, elektromekanik disosiasyon (PEA), ani arrest"]
+          "hucreler": [
+            "Sol ventrikül serbest duvar yırtılması",
+            "Anteriyor/lateral duvar infarktı",
+            "Masif hemoperikardiyum, akut tamponad, elektromekanik disosiasyon (PEA), ani arrest"
+          ]
         }
       ]
     },

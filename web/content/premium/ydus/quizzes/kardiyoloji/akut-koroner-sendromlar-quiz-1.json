@@ -1,0 +1,32 @@
+{
+  "id": "quiz-kardiyo-aks-001",
+  "baslik": "Akut Koroner Sendromlar — Soru Seti 1",
+  "branch": "kardiyoloji",
+  "topic": "akut-koroner-sendromlar",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "58 yaşında erkek hasta, 6 hafta önce geçirdiği akut anterolateral STEMI ve sol ön inen artere (LAD) uygulanan başarılı ilaç salınımlı stent (DES) PCI sonrasında rutin poliklinik kontrolüne çağrılıyor. Bilinen ek hastalığı **diabetes mellitus** olup, taburculuk sonrası tedavisinde **Atorvastatin 80 mg/gün (maksimal tolere edilen doz)**, tikagrelor 2×90 mg/gün, aspirin 100 mg/gün, ramipril 5 mg/gün ve metoprolol süksinat 50 mg/gün bulunmaktadır. **Açlık lipid paneli:** Total kolesterol 148 mg/dL · Trigliserid 135 mg/dL · HDL-K 43 mg/dL · **LDL-K 78 mg/dL (2.0 mmol/L)**. Hasta ilacını düzenli kullandığını, herhangi bir kas ağrısı veya yan etki hissetmediğini belirtmektedir. 2025 ACC/AHA/Multisociety Akut Koroner Sendromlar Kılavuzu ilkeleri doğrultusunda, bu hastanın uzun dönem lipid düşürücü tedavi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Maksimal tolere edilen yüksek yoğunluklu statin tedavisi altında LDL-K düzeyi <100 mg/dL hedefinde olduğu için mevcut Atorvastatin 80 mg/gün tedavisine aynen devam edilmeli, ek lipid düşürücü tedavi verilmemelidir.",
+        "B": "Maksimal tolere edilen statin tedavisine rağmen LDL-K düzeyi ≥70 mg/dL (≥1.8 mmol/L) seyrettiği için, majör olumsuz kardiyovasküler olayları (MACE) daha da azaltmak amacıyla tedaviye non-statin bir lipid düşürücü ajanın (ezetimib veya PCSK9 inhibitörü) eklenmesi önerilir (Sınıf 1).",
+        "C": "LDL-K düzeyi 70-100 mg/dL arasında olduğu için Atorvastatin dozu 40 mg/gün'e düşürülmeli ve yalnızca ezetimib 10 mg/gün eklenmelidir.",
+        "D": "Non-statin lipid düşürücü ajanlar (ezetimib veya PCSK9 inhibitörleri) yalnızca statin tedavisine tamamen dirençli olan veya LDL-K düzeyi ≥130 mg/dL seyreden olgularda endikedir; aksi durumda eklenmesi kontrendikedir (Sınıf 3: Zarar).",
+        "E": "Hastanın iskemik riski yüksek olduğundan mevcut statin kesilmeli, yalnızca yüksek doz PCSK9 inhibitörü monoterapisine geçilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Maksimal tolere edilen statin altında LDL-K ≥70 mg/dL seyreden AKS hastasında non-statin ajan (ezetimib, PCSK9i, inklisiran, bempedoik asit) eklenmesi Sınıf 1 öneridir; statin dozu KORUNUR.",
+      "aciklama_detay": "Akut Koroner Sendrom geçiren hastalar, taburculuk sonrası ilk 1 yıl içerisinde tekrarlayan iskemik olaylar, miyokard enfarktüsü ve kardiyovasküler ölüm açısından en yüksek risk grubunu (very high / extreme risk) oluşturur. Bu nedenle plak stabilizasyonu, endotel disfonksiyonunun düzeltilmesi ve lipid çekirdeğinin küçültülmesi amacıyla çok daha agresif LDL-K hedefleri benimsenmiştir. 2025 ACC/AHA/Multisociety AKS Kılavuzu, önceki kılavuzlardaki 'yalnızca maksimal tolere edilen statin' yaklaşımından 'maksimal statin + non-statin kombine tedavi' yaklaşımına belirgin bir yönelim göstermiştir: maksimal tolere edilen statin altında LDL-K ≥70 mg/dL (≥1.8 mmol/L) saptanan AKS hastalarında non-statin bir ajanın (ezetimib, PCSK9 inhibitörleri [evolokumab, alirokumab], inklisiran veya bempedoik asit) eklenmesi Sınıf 1 (güçlü öneri) olarak bildirilmektedir. Genişletilmiş risk pencereleri: maksimal statin altında LDL-K 55-69 mg/dL (1.4 - <1.8 mmol/L) arasında olan AKS hastalarında dahi ek non-statin ajan Sınıf 2a (makul) kabul edilir; statin intoleransı olan AKS hastalarında ise non-statin tedavi doğrudan Sınıf 1'dir. İndeks yatış esnasında eşzamanlı statin + ezetimib başlanması da Sınıf 2b öneri olarak kılavuzda yer alır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Eski kılavuzlardaki <100 mg/dL hedefi veya tek başına statin yaklaşımı güncel AKS sekonder önleme ilkelerinde yetersiz kabul edilir. Maksimal statine rağmen LDL-K 78 mg/dL (≥70) olan bir AKS hastasında monoterapiyle yetinmek klinik açıktır; non-statin eklenmesi Sınıf 1 endikasyondur.",
+        "B": "DOGRU — Maksimal tolere edilen statin altında LDL-K ≥70 mg/dL ise non-statin ajan eklenmesi Sınıf 1 öneridir; hastanın LDL-K'si 78 mg/dL ve statin dozu zaten maksimaldir.",
+        "C": "YANLIS — Statin dozunu düşürmek (Atorvastatin 80 mg'dan 40 mg'a) vasküler pleiotropik etkileri ve plak stabilize edici yüksek statin gücünü zayıflatır. Doğru yaklaşım yüksek yoğunluklu statin dozunu KORUYARAK yanına ezetimib veya PCSK9i eklemektir.",
+        "D": "YANLIS — Non-statin ajanlar için '≥130 mg/dL eşiği' veya 'Sınıf 3 zarar' tanımlaması tamamen hatalıdır. AKS hastalarında ezetimib ve PCSK9i tedavisi güvenlidir ve kanıtlanmış MACE azaltıcı etkiye sahiptir.",
+        "E": "YANLIS — Statin intoleransı veya belirgin yan etki (miyopati, rabdomiyoliz) saptanmayan hiçbir hastada yüksek yoğunluklu statin kesilip monoterapiye geçilmez. Statinler lipid düşürücü etkilerinin yanı sıra pleiotropik anti-inflamatuvar ve anti-trombotik etkileri nedeniyle kombinasyonun temel direğidir."
+      },
+      "etiketler": ["Sekonder Önleme", "LDL Hedefi", "Ezetimib", "PCSK9 İnhibitörü", "2025 AKS Kılavuzu"],
+      "zorluk": "orta",
+      "kaynak": "2025 ACC/AHA/Multisociety Akut Koroner Sendromlar Kılavuzu"
+    }
+  ]
+}
