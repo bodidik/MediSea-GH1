@@ -603,6 +603,37 @@
       ],
       "zorluk": "zor",
       "kaynak": "Refrakter asit yönetim algoritması (UpToDate / güncel kılavuzlar)"
+    },
+    {
+      "id": "s21",
+      "metin": "61 yaşında erkek hasta, kronik alkol kullanımına sekonder dekompanse karaciğer sirozu ve masif asit öyküsü ile gastroenteroloji servisine yatırılıyor. Hasta son 2 gündür ateş, yaygın karın ağrısı ve hafif mental durum değişikliği (konfüzyon) şikâyetleri olduğunu belirtmektedir. **Kan biyokimyası:** Total bilirubin 4.5 mg/dL · BUN 36 mg/dL · Kreatinin 1.8 mg/dL · Na 128 mEq/L · Lökosit 14.200/mm³. **Yatak başı diagnostik parasentez:** asit lökosit sayısı 1.400 hücre/µL · asit PMN 450 hücre/µL (≥ 250 hücre/µL) · asit pH 7.28 · kan-asit pH gradyanı 0.14 · asit total proteini 0.8 g/dL (≤ 1.0 g/dL) · asit mikrobiyolojik kültürü (yatak başı kan kültürü şişelerine ekilen) sonuç bekleniyor. Kanıta dayalı tanı/tedavi verileri göz önüne alındığında, Spontan Bakteriyel Peritonit (SBP) ve Hepatorenal Sendrom (HRS) patofizyolojisi, tanısal göstergeleri ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi KESİNLİKLE DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastada asit lökosit sayısının >1000/µL (LR+ = 9.1), asit pH'sının <7.35 (LR+ = 9.0) ve kan-asit pH gradyanının ≥0.1 (LR+ = 11) olması SBP olasılığını belirgin şekilde artırır; ampirik parenteral antibiyotik tedavisi kültür sonuçları beklenmeden derhal başlanmalı ve bilirubin (>4 mg/dL), BUN (>30 mg/dL) ile kreatinin (>1 mg/dL) yükseklikleri nedeniyle tedaviye IV albümin eklenmelidir.",
+        "B": "SBP atlatmış hastalarda 2 yıllık sağkalım oranı %80'in üzerinde olduğu için iyileşen hastaların karaciğer nakli değerlendirmesine alınması veya sekonder profilaksi verilmesi önerilmez.",
+        "C": "Tip 1 Hepatorenal Sendrom (HRS), böbrek parankim hastalığı ve şok varlığında saptanan kronik bir tablo olup serum kreatinin seviyesinin 6 ayda yavaşça yükselmesiyle karakterizedir ve 6 aylık mortalitesi %10'un altındadır.",
+        "D": "Asit sıvısında total protein düzeyinin ≤1 g/dL olması hastanın bağışıklık aktivitesini artırarak SBP gelişme riskini tamamen ortadan kaldırır.",
+        "E": "Yatan siroz hastalarında SBP gelişiminde en sık saptanan patojenler anaerobik Bacteroides fragilis türleri olup ilk tercih ampirik parenteral antibiyotik metronidazol monoterapisidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Asit lökositi >1000/µL, asit pH <7.35 ve kan-asit pH gradyanı ≥0.1 SBP olasılığını güçlü artıran göstergelerdir; PMN ≥250/µL varlığında kültür beklenmeden ampirik antibiyotik başlanır ve yüksek riskli hastada (bilirubin >4, BUN >30, kreatinin >1) tedaviye IV albümin eklenir.",
+      "aciklama_detay": "Kanıta dayalı tanı verilerine göre; asit sıvısında lökosit sayısının >1000 hücre/µL (LR+ = 9.1) olması, asit pH düzeyinin <7.35 (LR+ = 9.0) saptanması ve kan-asit pH gradyanının ≥0.1 (LR+ = 11) olması SBP tanı olasılığını güçlü şekilde artıran biyokimyasal göstergelerdir. SBP şüphesi veya PMN ≥ 250 hücre/µL varlığında ampirik antibiyotik tedavisi mikrobiyolojik kültür sonuçları beklenmeden derhal başlatılmalıdır. Ayrıca klinik çalışmalarda ampirik antibiyotik tedavisine intravenöz albümin eklenmesinin, özellikle total bilirubin >4 mg/dL, BUN >30 mg/dL veya serum kreatinin >1 mg/dL olan yüksek riskli hastalarda böbrek disfonksiyonu gelişimini ve mortaliteyi belirgin şekilde azalttığı gösterilmiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Üç gösterge de (lökosit >1000/µL, pH <7.35, kan-asit pH gradyanı ≥0.1) SBP olasılığını güçlü artırır; PMN 450/µL ile ampirik antibiyotik derhal başlar ve bilirubin 4.5 · BUN 36 · kreatinin 1.8 değerleri albümin eklenmesini gerektirir.",
+        "B": "YANLIS — SBP atlatan hastalarda 1 yıllık nüks oranı yaklaşık %70 ve 2 yıllık sağkalım oranı yalnızca %30 civarındadır. Bu nedenle SBP atağından iyileşen tüm hastalara oral norfloksasin ile sekonder profilaksi başlanmalı ve hastalar vakit kaybetmeden karaciğer nakli değerlendirmesine yönlendirilmelidir.",
+        "C": "YANLIS — Tip 1 HRS, sıklıkla tetikleyici bir olay (SBP, GİS kanama vb.) sonrasında 2 haftadan kısa sürede serum kreatininin 2 katına çıkarak >2.5 mg/dL seviyesine ulaşmasıyla seyreden akut bir böbrek hasarıdır. Tanı kriterlerinde şokun bulunmaması ve parankimal böbrek hastalığının olmaması şarttır. Tip 1 HRS'de 6 aylık mortalite oranı %100'e yakındır.",
+        "D": "YANLIS — Asit sıvısı total protein düzeyinin ≤1 g/dL olması opsonik aktivite azlığı nedeniyle SBP gelişimi için tanımlanmış en önemli temel risk faktörlerinden biridir; enfeksiyon riskini ortadan kaldırmaz, belirgin şekilde ARTIRIR.",
+        "E": "YANLIS — Sirotik asit hastalarında SBP'ye en sık neden olan dört etken Escherichia coli, Streptococcus, Staphylococcus ve Klebsiella pneumoniae'dir. En iyi çalışılmış ampirik parenteral antibiyotik seçeneği IV sefotaksimdir."
+      },
+      "etiketler": [
+        "SBP",
+        "Asit pH",
+        "Olabilirlik Oranı",
+        "HRS Tip 1",
+        "Albümin",
+        "Sekonder Profilaksi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Symptom to Diagnosis: An Evidence-Based Guide — Bölüm 17-4 (Ascites)"
     }
   ]
 }
