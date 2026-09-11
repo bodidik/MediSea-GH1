@@ -2,15 +2,19 @@
   "title": "Gebelikte Akut Koroner Sendrom Yönetimi",
   "meta": {
     "updatedAt": "11 Eyl 2026",
-    "tags": ["Kardiyoloji", "AKS", "Gebelik", "SCAD", "Peripartum", "Kardiyo-Obstetrik", "İlaç Güvenliği"],
+    "tags": [
+      "Kardiyoloji",
+      "AKS",
+      "Gebelik",
+      "SCAD",
+      "Peripartum",
+      "Kardiyo-Obstetrik",
+      "İlaç Güvenliği"
+    ],
     "parent": "akut-koroner-sendromlar",
     "order": 4
   },
   "sections": [
-    {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
     {
       "heading": "🧬 1. Patofizyoloji ve Etiyolojik Dağılım",
       "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Gebelikte gelişen Akut Koroner Sendrom (AKS); gebe kadının hayatını ve fetüsü eş zamanlı tehdit eden, etiyolojik dağılımı klasik popülasyondan belirgin şekilde farklılık gösteren son derece karmaşık bir tablodur. Maternal yaşın ilerlemesi (&gt;35-40 yaş), yardımcı üreme tekniklerinin (IVF) artması ve gebeliğe eşlik eden komorbiditelerin yaygınlaşması nedeniyle insidansı her 100.000 doğumda yaklaşık <strong>1.8 ila 18 vaka</strong> düzeyine yükselmiştir.</p><p class=\"text-[10.5px] text-slate-500 mb-1\">Şema geniştir — yatayda kaydırarak görebilirsin.</p><div class=\"overflow-x-auto mb-4 border border-slate-200 rounded-xl bg-slate-50 p-3\"><pre class=\"text-[10px] leading-snug text-slate-700 font-mono\">                     GEBELİKTE AKS ETİYOLOJİK DAĞILIMI\n                                     │\n         ┌───────────────────────────┼───────────────────────────┐\n         ▼                           ▼                           ▼\n      [SCAD]                    [Ateroskleroz]              [Tromboemboli /\n    (~%35 - 43)                   (~%20 - 35)                koroner spazm]\n  - En sık neden              - Rüptür / erozyon           - Hiperkoagülabilite\n  - 3. trimester/postpartum   - İleri yaş / DM / HT        - Paradoksal emboli\n  - Hormonal &amp; hemodinamik    - Klasik risk faktörleri     - Ergot türevi ilaçlar\n    vasküler harabiyet</pre></div><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Spontan Koroner Arter Disseksiyonu (SCAD):</strong> gebelikte ve peripartum dönemde gelişen MI vakalarının <strong>en sık nedenidir (%35-43)</strong>. Sıklıkla 3. trimesterde ve özellikle doğum sonrası ilk haftalarda gözlenir. Yüksek östrojen ve progesteron düzeyleri ekstrasellüler matriks remodelasyonuna, elastin lif yıkımına ve <em>vasa vasorum</em> kırılganlığına yol açar; relaksin hormonu ve artmış plazma hacmiyle birleştiğinde intramural hematom ve disseksiyonu tetikler.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aterosklerotik plak rüptürü / erozyonu:</strong> vakaların %20-35'inden sorumludur. İleri maternal yaş (&gt;35-40), kronik hipertansiyon, preeklampsi, pregestasyonel diyabet, sigara ve aile öyküsü ana risk faktörleridir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Koroner tromboemboli ve vazospazm:</strong> gebeliğin yarattığı fizyolojik hiperkoagülabilite zemininde gelişen intrakoroner trombüsler, patent foramen ovale (PFO) kaynaklı paradoksal emboliler veya koroner hiper-reaktiviteye bağlı vazospazmlar.</li></ul></div>"
