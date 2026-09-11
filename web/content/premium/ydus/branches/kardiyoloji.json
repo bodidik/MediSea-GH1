@@ -40,6 +40,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "koroner-arter-hastaligi",
+      "baslik": "Koroner Arter Hastalığı",
+      "aciklama": "Akut koroner sendromlar, iskemik EKG paternleri, reperfüzyon ve sekonder önleme",
+      "emoji": "🫀",
+      "konular": [
+        {
+          "id": "akut-koroner-sendromlar",
+          "baslik": "Akut Koroner Sendromlar — İleri Klinik ve Patofizyolojik Referans",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        }
+      ]
     }
   ]
 }
