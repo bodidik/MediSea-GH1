@@ -6,7 +6,7 @@
   "sorular": [
     {
       "id": "s1",
-      "metin": "Sirozlu bir hastada portal ven basıncı ölçülüyor ve 14 mmHg olarak saptanıyor. Klinisyen, bu bulgunun asit gelişimindeki patofizyolojik kaskadın başlangıç noktası olduğunu açıklıyor.",
+      "metin": "Sirozlu bir hastada portal ven basıncı ölçülüyor ve 14 mmHg olarak saptanıyor. Klinisyen, bu bulgunun asit gelişimindeki patofizyolojik kaskadın başlangıç noktası olduğunu açıklıyor. Sirozda asit gelişiminin patofizyolojik kaskadı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Portal hipertansiyon eşiği >20 mmHg'dır; 14 mmHg klinik olarak anlamsızdır ve asit patogenezini başlatmaz.",
         "B": "Portal basınç artışı, doğrudan periton boşluğuna sıvı sızmasına yol açar; splanknik vazodilatasyon veya nörohümoral aktivasyon gibi ara basamaklara gerek yoktur.",
@@ -36,7 +36,7 @@
     },
     {
       "id": "s2",
-      "metin": "Sirozlu bir hastada dolaşımdaki toplam kan hacminin normal veya artmış olduğu, ancak buna rağmen RAAS ve sempatik sinir sisteminin aşırı aktive olduğu gözleniyor. Klinisyen, bu paradoksal durumu açıklıyor.",
+      "metin": "Sirozlu bir hastada dolaşımdaki toplam kan hacminin normal veya artmış olduğu, ancak buna rağmen RAAS ve sempatik sinir sisteminin aşırı aktive olduğu gözleniyor. Klinisyen, bu paradoksal durumu açıklıyor. Bu paradoksal nörohümoral aktivasyonun mekanizması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "RAAS aktivasyonu, toplam kan hacminden tamamen bağımsız, rastgele bir süreçtir ve splanknik vazodilatasyonla ilişkisi yoktur.",
         "B": "Toplam kan hacmi arttığından, baroreseptörler bu artışı algılayarak RAAS'ı SUPRESE eder; bu hastada tanımlanan aktivasyon beklenmedik bir bulgudur.",
@@ -66,7 +66,7 @@
     },
     {
       "id": "s3",
-      "metin": "Asit tespit edilen bir sirozlu hastada eş zamanlı serum albümin 3.2 g/dL, asit sıvısı albümin 1.6 g/dL olarak ölçülüyor. Klinisyen, bu sonuçtan asidin etiyolojisi hakkında bir çıkarımda bulunuyor.",
+      "metin": "Asit tespit edilen bir sirozlu hastada eş zamanlı serum albümin 3.2 g/dL, asit sıvısı albümin 1.6 g/dL olarak ölçülüyor. Klinisyen, bu sonuçtan asidin etiyolojisi hakkında bir çıkarımda bulunuyor. Hesaplanan SAAG değeri ve asidin etiyolojisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "SAAG bu hastada hesaplanamaz çünkü hem serum hem asit albümini ölçülmüştür, SAAG yalnızca tek bir değerden hesaplanır.",
         "B": "SAAG = 1.6 g/dL olup <1.1 g/dL eşiğinin altındadır; bu, asidin peritoneal karsinomatoz veya tüberküloz gibi portal hipertansif olmayan bir nedene bağlı olduğunu düşündürür.",
@@ -96,7 +96,7 @@
     },
     {
       "id": "s4",
-      "metin": "Asit sıvısı analizinde SAAG 1.4 g/dL (yüksek gradyan), total protein 3.1 g/dL (yüksek) olarak saptanıyor. Klinisyen, bu kombinasyonun sirozdan farklı bir portal hipertansiyon nedenini düşündürdüğünü belirtiyor.",
+      "metin": "Asit sıvısı analizinde SAAG 1.4 g/dL (yüksek gradyan), total protein 3.1 g/dL (yüksek) olarak saptanıyor. Klinisyen, bu kombinasyonun sirozdan farklı bir portal hipertansiyon nedenini düşündürdüğünü belirtiyor. Bu asit sıvısı profilinin etiyolojik yorumu ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Bu kombinasyon (yüksek SAAG + yüksek protein), yalnızca peritoneal karsinomatozda görülür.",
         "B": "Total protein değeri, SAAG sonucundan tamamen bağımsızdır ve hiçbir ek tanısal bilgi sağlamaz.",
@@ -126,7 +126,7 @@
     },
     {
       "id": "s5",
-      "metin": "Sirozlu bir hastada asit ile birlikte yeni gelişen ateş ve karın ağrısı üzerine diagnostik parasentez yapılıyor. Asit sıvısında PMN (polimorfonükleer lökosit) sayısı 420 hücre/mm³ olarak saptanıyor, kültür sonucu henüz beklenmektedir.",
+      "metin": "Sirozlu bir hastada asit ile birlikte yeni gelişen ateş ve karın ağrısı üzerine diagnostik parasentez yapılıyor. Asit sıvısında PMN (polimorfonükleer lökosit) sayısı 420 hücre/mm³ olarak saptanıyor, kültür sonucu henüz beklenmektedir. Bu hastanın tanısı ve tedavi zamanlaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "PMN sayımı, SBP tanısı için yeterli değildir; tedaviye başlamadan önce mutlaka kültür pozitifliği beklenmelidir.",
         "B": "PMN ≥250 hücre/mm³ eşiği yalnızca kanlı asit vakalarında geçerlidir, bu hastada uygulanamaz.",
@@ -156,7 +156,7 @@
     },
     {
       "id": "s6",
-      "metin": "Evre 2 (orta dereceli) asiti olan, serum sodyumu 138 mEq/L (normal) olan bir sirozlu hastada medikal tedavi planlanıyor. Hasta, gereksiz kısıtlamalardan kaçınmak istediğini belirtiyor.",
+      "metin": "Evre 2 (orta dereceli) asiti olan, serum sodyumu 138 mEq/L (normal) olan bir sirozlu hastada medikal tedavi planlanıyor. Hasta, gereksiz kısıtlamalardan kaçınmak istediğini belirtiyor. Bu hastada sodyum ve sıvı kısıtlaması ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Bu hastada hem sodyum hem sıvı kısıtlaması aynı anda, serum sodyum düzeyinden bağımsız olarak rutin uygulanmalıdır.",
         "B": "Serum sodyumu normal olduğundan, bu hastada herhangi bir diyet kısıtlamasına gerek yoktur.",
@@ -186,7 +186,7 @@
     },
     {
       "id": "s7",
-      "metin": "Evre 2 asiti olan bir hastada diüretik tedavisi başlanıyor. Klinisyen, RAAS aktivasyonunu doğrudan hedefleyen ve loop diüretiği ile kombine edilecek standart başlangıç dozunu belirliyor.",
+      "metin": "Evre 2 asiti olan bir hastada diüretik tedavisi başlanıyor. Klinisyen, RAAS aktivasyonunu doğrudan hedefleyen ve loop diüretiği ile kombine edilecek standart başlangıç dozunu belirliyor. Başlangıç diüretik rejimi ve doz titrasyonu ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Yalnızca Furosemid monoterapisi (loop diüretiği) ile başlanır, Spironolakton'a genellikle gerek yoktur.",
         "B": "Spironolakton ve Furosemid, gece yatmadan önce eşit dozlarda (örn. 40 mg/40 mg) başlanmalıdır.",
@@ -216,7 +216,7 @@
     },
     {
       "id": "s8",
-      "metin": "Asitli sirozlu bir hastada eklem ağrısı için analjezik reçete edilmesi gerekiyor. Hasta yakınları, hastanın kronik olarak ibuprofen kullanmasının uygun olup olmadığını soruyor.",
+      "metin": "Asitli sirozlu bir hastada eklem ağrısı için analjezik reçete edilmesi gerekiyor. Hasta yakınları, hastanın kronik olarak ibuprofen kullanmasının uygun olup olmadığını soruyor. Bu hastada analjezik seçimi ve renal etkileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "NSAİİ'ler asitli sirozda güvenlidir ve kronik ağrı yönetiminde ilk tercih olarak önerilir.",
         "B": "NSAİİ'ler yalnızca refrakter asit vakalarında kontrendikedir, Evre 2 asitte güvenle kullanılabilir.",
@@ -246,7 +246,7 @@
     },
     {
       "id": "s9",
-      "metin": "Maksimum diüretik dozuna (400 mg Spironolakton + 160 mg Furosemid) rağmen asiti hızla nüksedene, refrakter asit tanısı konan bir hastada geniş hacimli parasentez (LVP) ile 7 litre asit sıvısı boşaltılıyor. Klinisyen, hemodinamik komplikasyonu önlemek için ek bir tedavi uyguluyor.",
+      "metin": "Maksimum diüretik dozuna (400 mg Spironolakton + 160 mg Furosemid) rağmen asiti hızla nüksedene, refrakter asit tanısı konan bir hastada geniş hacimli parasentez (LVP) ile 7 litre asit sıvısı boşaltılıyor. Klinisyen, hemodinamik komplikasyonu önlemek için ek bir tedavi uyguluyor. Geniş hacimli parasentez sonrasında uygulanacak tedavi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "LVP sonrası albümin infüzyonu yalnızca 10 litreden fazla sıvı boşaltıldığında gereklidir, 7 litre için gerekli değildir.",
         "B": "PICD önlemek için albümin yerine izotonik salin infüzyonu eşdeğer etkinliğe sahiptir ve tercih edilmelidir.",
@@ -276,7 +276,7 @@
     },
     {
       "id": "s10",
-      "metin": "Sık parasentez gerektiren, dirençli asiti olan bir hastada TIPS (Transjuguler İntrahepatik Portosistemik Şant) düşünülüyor. Hastanın Child-Pugh skoru C sınıfı (çok yüksek) ve geçmişte iki kez ciddi hepatik ensefalopati atağı öyküsü mevcut. Ayrı bir hastada ise ilk asit atağı yeni gelişmiş ve karaciğer rezervi iyi.",
+      "metin": "Sık parasentez gerektiren, dirençli asiti olan bir hastada TIPS (Transjuguler İntrahepatik Portosistemik Şant) düşünülüyor. Hastanın Child-Pugh skoru C sınıfı (çok yüksek) ve geçmişte iki kez ciddi hepatik ensefalopati atağı öyküsü mevcut. Ayrı bir hastada ise ilk asit atağı yeni gelişmiş ve karaciğer rezervi iyi. Her iki hastanın TIPS adaylığı ve nakil değerlendirmesi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "TIPS, Child-Pugh skorundan veya hepatik ensefalopati öyküsünden bağımsız olarak tüm dirençli asit hastalarında güvenle uygulanabilir.",
         "B": "İkinci hastada, ilk asit atağı sonrası transplantasyon değerlendirmesi yalnızca MELD skoru belirli bir eşiği aştığında yapılmalıdır, ilk atak tek başına yeterli bir tetikleyici değildir.",
@@ -606,7 +606,7 @@
     },
     {
       "id": "s21",
-      "metin": "61 yaşında erkek hasta, kronik alkol kullanımına sekonder dekompanse karaciğer sirozu ve masif asit öyküsü ile gastroenteroloji servisine yatırılıyor. Hasta son 2 gündür ateş, yaygın karın ağrısı ve hafif mental durum değişikliği (konfüzyon) şikâyetleri olduğunu belirtmektedir. **Kan biyokimyası:** Total bilirubin 4.5 mg/dL · BUN 36 mg/dL · Kreatinin 1.8 mg/dL · Na 128 mEq/L · Lökosit 14.200/mm³. **Yatak başı diagnostik parasentez:** asit lökosit sayısı 1.400 hücre/µL · asit PMN 450 hücre/µL (≥ 250 hücre/µL) · asit pH 7.28 · kan-asit pH gradyanı 0.14 · asit total proteini 0.8 g/dL (≤ 1.0 g/dL) · asit mikrobiyolojik kültürü (yatak başı kan kültürü şişelerine ekilen) sonuç bekleniyor. Kanıta dayalı tanı/tedavi verileri göz önüne alındığında, Spontan Bakteriyel Peritonit (SBP) ve Hepatorenal Sendrom (HRS) patofizyolojisi, tanısal göstergeleri ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi KESİNLİKLE DOĞRUDUR?",
+      "metin": "61 yaşında erkek hasta, kronik alkol kullanımına sekonder dekompanse karaciğer sirozu ve masif asit öyküsü ile gastroenteroloji servisine yatırılıyor. Hasta son 2 gündür ateş, yaygın karın ağrısı ve hafif mental durum değişikliği (konfüzyon) şikâyetleri olduğunu belirtmektedir. **Kan biyokimyası:** Total bilirubin 4.5 mg/dL · BUN 36 mg/dL · Kreatinin 1.8 mg/dL · Na 128 mEq/L · Lökosit 14.200/mm³. **Yatak başı diagnostik parasentez:** asit lökosit sayısı 1.400 hücre/µL · asit PMN 450 hücre/µL (≥ 250 hücre/µL) · asit pH 7.28 · kan-asit pH gradyanı 0.14 · asit total proteini 0.8 g/dL (≤ 1.0 g/dL) · asit mikrobiyolojik kültürü (yatak başı kan kültürü şişelerine ekilen) sonuç bekleniyor. Kanıta dayalı tanı/tedavi verileri göz önüne alındığında, Spontan Bakteriyel Peritonit (SBP) ve Hepatorenal Sendrom (HRS) patofizyolojisi, tanısal göstergeleri ve klinik yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Hastada asit lökosit sayısının >1000/µL (LR+ = 9.1), asit pH'sının <7.35 (LR+ = 9.0) ve kan-asit pH gradyanının ≥0.1 (LR+ = 11) olması SBP olasılığını belirgin şekilde artırır; ampirik parenteral antibiyotik tedavisi kültür sonuçları beklenmeden derhal başlanmalı ve bilirubin (>4 mg/dL), BUN (>30 mg/dL) ile kreatinin (>1 mg/dL) yükseklikleri nedeniyle tedaviye IV albümin eklenmelidir.",
         "B": "SBP atlatmış hastalarda 2 yıllık sağkalım oranı %80'in üzerinde olduğu için iyileşen hastaların karaciğer nakli değerlendirmesine alınması veya sekonder profilaksi verilmesi önerilmez.",
