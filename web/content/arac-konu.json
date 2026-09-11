@@ -583,6 +583,13 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "kardiyoloji/uclu-tedavi-uzatma-risk-faktorleri": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
     "klinik-nutrisyon/klinik-nutrisyon-ana-unite": [
       {
         "slug": "glim",
@@ -1327,10 +1334,10 @@
     ]
   },
   "olcum": {
-    "konu": 480,
+    "konu": 482,
     "arac": 136,
-    "araciOlanKonu": 98,
+    "araciOlanKonu": 99,
     "konusuOlanArac": 33,
-    "bag": 119
+    "bag": 120
   }
 }

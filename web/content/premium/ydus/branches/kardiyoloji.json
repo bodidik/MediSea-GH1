@@ -55,23 +55,6 @@
             "SINAV SPOTU"
           ],
           "hazir": true
-        },
-        {
-          "id": "aks-oac-antitrombotik-yonetim",
-          "baslik": "AKS + Oral Antikoagülan: Üçlü Tedaviden İkili Yola Geçiş",
-          "rozetler": [
-            "YENİ",
-            "SINAV SPOTU"
-          ],
-          "hazir": true
-        },
-        {
-          "id": "uclu-tedavi-uzatma-risk-faktorleri",
-          "baslik": "Üçlü Tedaviyi Uzatan Yüksek İskemi / Stent Trombozu Riski",
-          "rozetler": [
-            "YENİ"
-          ],
-          "hazir": true
         }
       ]
     }
