@@ -34,6 +34,13 @@
         "eslesen": "Tiroid Fonksiyon"
       }
     ],
+    "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
     "endokrinoloji/hashimoto-ensefaliti": [
       {
         "slug": "status-epileptikus",
@@ -924,13 +931,18 @@
     ],
     "tft": [
       {
+        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
+        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "eslesen": "Tiroid Fonksiyon"
+      },
+      {
         "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
         "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
-        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
@@ -1334,10 +1346,10 @@
     ]
   },
   "olcum": {
-    "konu": 486,
+    "konu": 487,
     "arac": 136,
-    "araciOlanKonu": 99,
+    "araciOlanKonu": 100,
     "konusuOlanArac": 33,
-    "bag": 120
+    "bag": 121
   }
 }
