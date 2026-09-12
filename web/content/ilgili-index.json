@@ -310,6 +310,11 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
@@ -335,6 +340,11 @@
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
@@ -523,35 +533,35 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-bez-hastaliklari",
-   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
+   "slug": "men1-osilodrostat-yan-etkiler",
+   "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-korteks-hastaliklari",
-   "baslik": "Adrenal Korteks Hastalıkları"
+   "slug": "men1-sendromu",
+   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-yetmezlik",
-   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
+   "slug": "osteoporoz-ana-sayfa",
+   "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
-   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+   "slug": "osteoporoz-organ-nakli-kaynakli",
+   "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri"
   }
  ],
  "endokrinoloji/hipertiroidi": [
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-ve-tiroid-yonetimi",
-   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
   },
   {
    "brans": "endokrinoloji",
@@ -589,8 +599,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-meme-kanseri-tarama",
-   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
+   "slug": "cushing-sendromu-patofizyoloji-klinik",
+   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
   }
  ],
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
@@ -656,11 +666,6 @@
    "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   },
   {
-   "brans": "hematoloji",
-   "slug": "aml-geriatrik-degerlendirme",
-   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
@@ -669,6 +674,16 @@
    "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml-geriatrik-degerlendirme",
+   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
   }
  ],
  "endokrinoloji/hirsutizm-ve-virilizasyon": [
@@ -1420,6 +1435,11 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/santral-hipotiroidizm": [
@@ -1576,23 +1596,23 @@
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-bez-hastaliklari",
-   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
+   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
+   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-korteks-hastaliklari",
-   "baslik": "Adrenal Korteks Hastalıkları"
+   "slug": "cushing-sendromu-patofizyoloji-klinik",
+   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-yetmezlik",
-   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
-   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+   "slug": "diyabet-farmakolojik-tedavi",
+   "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
   }
  ],
  "endokrinoloji/siadh-avp-fizyolojisi": [
@@ -1772,14 +1792,14 @@
  ],
  "endokrinoloji/subklinik-tiroid-hastaliklari": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hipertiroidi",
-   "baslik": "Hipertiroidi ve Tirotoksikoz"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "hiperlipidemi-log-dogrusal-risk",
    "baslik": "Sürekli ve Log-Doğrusal (Log-Linear) Risk Azalması Kuralı"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
   {
    "brans": "endokrinoloji",
@@ -1790,28 +1810,18 @@
    "brans": "endokrinoloji",
    "slug": "tiroid-yaslanmasi-fizyolojisi",
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/tiroid-hastaliklari-ana": [
   {
    "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -1836,14 +1846,14 @@
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   },
   {
-   "brans": "hematoloji",
-   "slug": "aml-geriatrik-degerlendirme",
-   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/tirzepatid-genel-profil": [
@@ -1897,8 +1907,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-sendromu",
-   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
+   "slug": "hiperprolaktinemi-ve-prolaktinoma",
+   "baslik": "Hiperprolaktinemi ve Prolaktinoma"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -1906,6 +1916,38 @@
    "brans": "endokrinoloji",
    "slug": "kalsiyum-homeostazi-fizyoloji",
    "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+  }
+ ],
+ "endokrinoloji/yaslida-hipertiroidizm": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
+   "baslik": "Hipotiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "riedel-tiroiditi",
+   "baslik": "Riedel Tiroiditi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "tiroid-hastaliklari-ana",
+   "baslik": "Tiroid Hastalıkları"
   }
  ],
  "enfeksiyon/antibiyotikler-ana-sayfa": [
@@ -3659,6 +3701,11 @@
    "brans": "endokrinoloji",
    "slug": "tiroid-yaslanmasi-fizyolojisi",
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "hematoloji/aml-gilteritinib-ds-yonetimi": [
@@ -3714,11 +3761,6 @@
    "brans": "enfeksiyon",
    "slug": "tigesiklin-ilac-etkilesimleri",
    "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "chase-less-skoru",
-   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
   },
   {
    "brans": "kardiyoloji",
@@ -3781,9 +3823,19 @@
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "aks-oac-antitrombotik-yonetim",
-   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+   "brans": "hematoloji",
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/demir-eksikligi": [
@@ -4109,9 +4161,24 @@
  ],
  "hematoloji/inme-sonrasi-gizli-af": [
   {
-   "brans": "kardiyoloji",
-   "slug": "aks-oac-antitrombotik-yonetim",
-   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+   "brans": "hematoloji",
+   "slug": "kanser-iliskili-tromboz",
+   "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombositopenide-antikoagulasyon",
+   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "hematoloji/itp-tanisal-yaklasim": [
@@ -4962,16 +5029,6 @@
    "brans": "hematoloji",
    "slug": "antikoagulasyon-stratejileri",
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "chase-less-skoru",
-   "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   },
   {
    "brans": "hematoloji",
