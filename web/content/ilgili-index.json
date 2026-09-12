@@ -308,6 +308,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
@@ -325,6 +330,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
@@ -339,11 +349,43 @@
    "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
   }
  ],
- "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
+ "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi": [
   {
    "brans": "endokrinoloji",
    "slug": "yaslida-hipertiroidizm",
    "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
+  }
+ ],
+ "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   },
   {
    "brans": "endokrinoloji",
@@ -354,6 +396,11 @@
    "brans": "endokrinoloji",
    "slug": "izole-maternal-hipotiroksinemi-yonetimi",
    "baslik": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/gebelikte-hipotiroidizm-yonetimi": [
@@ -560,18 +607,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "riedel-tiroiditi",
-   "baslik": "Riedel Tiroiditi"
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
   }
  ],
  "endokrinoloji/hipofiz-adenomlari": [
@@ -1433,13 +1475,33 @@
  "endokrinoloji/riedel-tiroiditi": [
   {
    "brans": "endokrinoloji",
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+   "slug": "hipotiroidi-hashimoto-miksoedem",
+   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
+   "baslik": "Hipotiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "otiroid-hasta-sendromu-ntis",
+   "baslik": "Ötiroid Hasta Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "santral-hipotiroidizm",
+   "baslik": "Santral Hipotiroidizm"
   }
  ],
  "endokrinoloji/santral-hipotiroidizm": [
@@ -1820,8 +1882,23 @@
  "endokrinoloji/tiroid-hastaliklari-ana": [
   {
    "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "yaslida-hipertiroidizm",
    "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -1921,13 +1998,13 @@
  "endokrinoloji/yaslida-hipertiroidizm": [
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
   },
   {
    "brans": "endokrinoloji",
@@ -1936,18 +2013,18 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
    "baslik": "Hipotiroidizm"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "riedel-tiroiditi",
-   "baslik": "Riedel Tiroiditi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "tiroid-hastaliklari-ana",
-   "baslik": "Tiroid Hastalıkları"
+   "slug": "tiroid-yaslanmasi-fizyolojisi",
+   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   }
  ],
  "enfeksiyon/antibiyotikler-ana-sayfa": [
@@ -4012,6 +4089,11 @@
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "gebelikte-akut-koroner-sendrom",
    "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
@@ -5242,14 +5324,19 @@
    "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   },
   {
-   "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-kardiyovaskuler",
    "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
   },
   {
    "brans": "kardiyoloji",
@@ -5620,14 +5707,19 @@
    "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   },
   {
-   "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-kardiyovaskuler",
    "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gebelikte-immün-ITP-yonetimi",
+   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
   }
  ],
  "kardiyoloji/statin-intolerans-ezetimibe": [
