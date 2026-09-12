@@ -305,6 +305,11 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
@@ -312,6 +317,11 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-transient-tirotoksikoz",
    "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
   {
    "brans": "endokrinoloji",
@@ -530,6 +540,28 @@
    "brans": "endokrinoloji",
    "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
    "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+  }
+ ],
+ "endokrinoloji/hipertiroidi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "riedel-tiroiditi",
+   "baslik": "Riedel Tiroiditi"
   }
  ],
  "endokrinoloji/hipofiz-adenomlari": [
@@ -1386,33 +1418,8 @@
  "endokrinoloji/riedel-tiroiditi": [
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-ve-tiroid-yonetimi",
-   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidi-hashimoto-miksoedem",
-   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "otiroid-hasta-sendromu-ntis",
-   "baslik": "Ötiroid Hasta Sendromu"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "subklinik-tiroid-hastaliklari",
-   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/santral-hipotiroidizm": [
@@ -1764,6 +1771,11 @@
   }
  ],
  "endokrinoloji/subklinik-tiroid-hastaliklari": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
+  },
   {
    "brans": "kardiyoloji",
    "slug": "hiperlipidemi-log-dogrusal-risk",
