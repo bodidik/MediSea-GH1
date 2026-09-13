@@ -1,0 +1,37 @@
+{
+  "id": "quiz-endo-hipertiroidi-001",
+  "baslik": "Hipertiroidi ve Tirotoksikoz — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hipertiroidi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "65 yaşında erkek hastaya 14 aydır dirençli ventriküler taşikardi nedeniyle amiodaron (200 mg/gün) tedavisi uygulanmaktadır. Hastanın özgeçmişinde iskemik kardiyomiyopatiye bağlı sol ventrikül ejeksiyon fraksiyonu (LVEF) %32'dir. Rutin takiplerinde TSH: <0.01 mU/L, sT4: 4.2 ng/dL, fT3: 7.8 pg/mL saptanıyor. Tiroid Doppler ultrasonografisinde gland avasküler, TRAb (TSI) negatif ve 99mTc-MIBI sintigrafisinde tutulum belirgin baskılanmış izlenerek Tip 2 Amiodaron İndüklü Tirotoksikoz (AİT) tanısı konuluyor.\n\nOral prednizon (40 mg/gün) tedavisi başlanmasına karşın 3. haftada yapılan kontrolde hastanın serbest T4 düzeylerinin yüksek seyrettiği (sT4: 3.9 ng/dL), kalp yetmezliği bulgularının NYHA Evre IV'e ilerlediği ve tekrarlayan ventriküler taşikardi atakları geliştirdiği gözleniyor.\n\nBu klinik tabloya sahip, ağır sol ventrikül disfonksiyonu (LVEF <%40) olan ve medikal tedaviye rağmen kardiyak dekompansasyon gösteren hastada, kardiyovasküler mortaliteyi düşürmede ve ötiroidiyi en hızlı sağlamada uluslararası endokrinoloji kılavuzları (ETA/ATA) tarafından en öncelikli önerilen yönetim adımı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Prednizon dozunu 80 mg/gün'e yükseltmek ve eş zamanlı terapötik plazma değişimi (plazmaferez) eklemek",
+        "B": "Tedaviye yüksek doz Metimazol (40 mg/gün) ve Potasyum Perklorat ekleyerek medikal tedavide ısrar etmek",
+        "C": "Acil Total Tiroidektomi uygulanması",
+        "D": "Amiodaron tedavisini derhal kesip yüksek doz iv esmolol infüzyonuna geçmek",
+        "E": "Radyoaktif İyot (131-I) ablasyon tedavisi uygulamak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "LVEF <%40 olan veya medikal tedavi altında kardiyak tablosu kötüleşen tüm AİT hastalarında kesin ve en hızlı tedavi yöntemi Total Tiroidektomidir.",
+      "aciklama_detay": "Tip 2 Amiodaron İndüklü Tirotoksikoz (AİT), amiodarona bağlı gelişen ve foliküler sitotoksik hasarla karakterize destrüktif tiroidittir. Ağır sol ventrikül disfonksiyonu (LVEF <%40) olan veya malign aritmilerle seyreden kardiyak dekompansasyonlu AİT olgularında medikal tedavinin yanıtını beklemek yüksek mortalite ile ilişkilidir.\n\nTotal Tiroidektominin Rolü: European Thyroid Association (ETA) ve American Thyroid Association (ATA) kılavuzlarına göre, LVEF <%40 olan veya medikal tedavi altında kardiyak tablosu kötüleşen tüm AİT (Tip 1 veya Tip 2) hastalarında kesin ve en hızlı tedavi yöntemi Total Tiroidektomidir. Yapılan geniş kohort çalışmalarda, sol ventrikül sistolik fonksiyonu bozuk hastalarda tiroidektominin medikal tedaviye kıyasla kardiyovasküler ve genel mortaliteyi belirgin derecede düşürdüğü kanıtlanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Medikal tedavinin yetersiz kaldığı veya hastanın kardiyak durumunun akut kötüleştiği vakalarda steroid dozunu artırmak ötiroidiyi sağlamada gecikmeye neden olur; mortalite riskini ortadan kaldırmaz.",
+        "B": "YANLIS — Medikal tedaviye antitiroid ilaç (tionamid) eklenmesi miks form düşünülüyorsa denenebilir; ancak kardiyak dekompansasyon gelişmiş LVEF <%40 olan olgularda medikal tedaviyle zaman kaybetmek kontrendikedir. Ayrıca AİT hastalarında tionamidlere bağlı agranülositoz riski genel hipertiroidi popülasyonuna kıyasla yaklaşık 10 kat daha yüksektir (%1.35 vs %0.14).",
+        "C": "DOGRU — ETA ve ATA kılavuzlarına göre, LVEF <%40 olan veya medikal tedavi altında kardiyak tablosu kötüleşen tüm AİT (Tip 1 veya Tip 2) hastalarında kesin ve en hızlı tedavi yöntemi Total Tiroidektomidir.",
+        "D": "YANLIS — Amiodaronun eliminasyon yarı ömrü yaklaşık 100 gündür; dolayısıyla ilacın kesilmesinin akut dönemde tirotoksikozu geriletmede klinik bir faydası yoktur. Aksine amiodaron ve dokudaki metabolitleri (desetilamiodaron) periferik T4-T3 dönüşümünü ve kardiyak T3 reseptör bağlanmasını kısmen bloke ettiği için, ilacın aniden kesilmesi doku düzeyindeki tirotoksikozu ve kardiyak aritmileri daha da şiddetlendirebilir.",
+        "E": "YANLIS — Amiodaron kullanımı vücuda masif miktarda inorganik iyot yüklediği için tiroid bezi iyoda doymuştur. Gerek Tip 1 gerekse Tip 2 AİT olgularında radyoaktif iyot tutulumu (RAIU) sıfıra yakın/baskılanmış olduğundan RAI ablasyonu tedavide etkisizdir ve uygulanamaz."
+      },
+      "etiketler": [
+        "Amiodaron İlişkili Tirotoksikoz",
+        "Tip 2 AİT",
+        "Total Tiroidektomi",
+        "LVEF",
+        "ETA/ATA"
+      ],
+      "zorluk": "zor"
+    }
+  ]
+}
