@@ -188,6 +188,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon"
+      }
+    ],
     "enfeksiyon/antibiyotikler-ana-sayfa": [
       {
         "slug": "child-pugh",
@@ -949,6 +956,11 @@
         "yol": "hematoloji/makrositer-anemiler",
         "baslik": "Makrositer Anemiler",
         "eslesen": "Tiroid Fonksiyon"
+      },
+      {
+        "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+        "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
+        "eslesen": "Tiroid Fonksiyon"
       }
     ],
     "status-epileptikus": [
@@ -1346,10 +1358,10 @@
     ]
   },
   "olcum": {
-    "konu": 487,
+    "konu": 488,
     "arac": 136,
-    "araciOlanKonu": 100,
+    "araciOlanKonu": 101,
     "konusuOlanArac": 33,
-    "bag": 121
+    "bag": 122
   }
 }
