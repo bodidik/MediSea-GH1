@@ -50,7 +50,7 @@ export async function generateMetadata(): Promise<Metadata> {
     brans > 0 && konu > 0
       ? `${brans} branşta ${konu} konu başlığı: `
       : "";
-  const aciklama = `${govde}dahiliye asistanları ve uzmanları için güncel Türkçe konu anlatımları. Ücretsiz, kayıt gerekmez.`;
+  const aciklama = `${govde}iç hastalıkları asistanları ve uzmanları için güncel Türkçe konu anlatımları. Ücretsiz, kayıt gerekmez.`;
 
   return {
     // DÜZ METİN BAŞLIK VERİLMEZ. Bir düzen `title: "Kütüphane"` yazarsa kökteki

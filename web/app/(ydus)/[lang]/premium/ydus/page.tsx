@@ -143,8 +143,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const s = icerikSayilari();
   return {
     ...rotaMeta({
-      baslik: 'YDUS Hazırlık — Dahiliye',
-      aciklama: `Dahiliye YDUS hazırlığı: ${s.premiumBrans} branşta ${s.premiumKonu} hazır konu, ` +
+      baslik: 'YDUS Hazırlık — İç Hastalıkları',
+      aciklama: `İç hastalıkları YDUS hazırlığı: ${s.premiumBrans} branşta ${s.premiumKonu} hazır konu, ` +
       `${s.premiumSoru} çözümlü soru, ${s.premiumKart} tekrar kartı ve klinik vaka ` +
       'oturumları. Vurgula, not al, aralıklı tekrarla çalış.',
       yol: '/tr/premium/ydus',

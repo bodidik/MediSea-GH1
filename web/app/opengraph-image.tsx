@@ -12,7 +12,7 @@ import { SITE_ADI } from "@/lib/site";
  * bir dosya yoksa en yakın üst segmentinki miras alınır.
  */
 
-export const alt = `${SITE_ADI} — Dahiliye için Türkçe klinik kaynak`;
+export const alt = `${SITE_ADI} — İç hastalıkları için Türkçe klinik kaynak`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -48,7 +48,7 @@ export default async function Image() {
 
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           <div style={{ color: "#ffffff", fontSize: 68, fontWeight: 700, lineHeight: 1.15 }}>
-            Dahiliye için Türkçe klinik kaynak
+            İç hastalıkları için Türkçe klinik kaynak
           </div>
           <div style={{ color: "#9db8dd", fontSize: 30, lineHeight: 1.4 }}>
             Güncel konu anlatımları · klinik hesaplayıcılar · YDUS hazırlık

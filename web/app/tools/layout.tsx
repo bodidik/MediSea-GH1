@@ -135,7 +135,7 @@ export default function AraclarDuzen({ children }: { children: ReactNode }) {
             Hesaplayıcıların arkasında bir kütüphane var
           </h2>
           <p className="mt-3 text-sm font-semibold leading-relaxed text-blue-100/90">
-            MediSea, dahiliye asistanları ve uzmanları için Türkçe klinik kaynak:
+            MediSea, iç hastalıkları asistanları ve uzmanları için Türkçe klinik kaynak:
             {" "}
             <strong className="text-white">{brans} branşta {konu} konu anlatımı</strong>{" "}
             ve <strong className="text-white">{arac} hesaplayıcı</strong>. Ücretsiz,

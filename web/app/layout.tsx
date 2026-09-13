@@ -41,7 +41,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: `${SITE_ADI} — Dahiliye için Türkçe klinik kaynak`,
+    default: `${SITE_ADI} — İç hastalıkları için Türkçe klinik kaynak`,
     // Alt sayfalar yalnızca kendi başlığını verir, kuyruk buradan eklenir.
     template: `%s · ${SITE_ADI}`,
   },

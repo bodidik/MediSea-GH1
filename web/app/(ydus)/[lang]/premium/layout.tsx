@@ -33,11 +33,11 @@ export const metadata: Metadata = {
    * "YDUS Hazırlık — Dahiliye" oluyordu. Şablon burada yeniden veriliyor.
    */
   title: {
-    default: "Premium — Dahiliye YDUS",
+    default: "Premium — İç Hastalıkları YDUS",
     template: "%s · MediSea",
   },
   description:
-    "MediSea Premium: dahiliye uzmanlık sınavına yönelik konu anlatımları, " +
+    "MediSea Premium: iç hastalıkları uzmanlık sınavına yönelik konu anlatımları, " +
     "çözümlü sorular, klinik vakalar ve aralıklı tekrar kartları.",
   alternates: { canonical: "/tr/premium" },
 };

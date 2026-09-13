@@ -61,7 +61,7 @@ export default async function Image() {
             Çıkmış sorular, çözümlü vakalar, hızlı tekrar
           </div>
           <div style={{ color: "#9db8dd", fontSize: 30, lineHeight: 1.4 }}>
-            Dahiliye yandal sınavına yoğun hazırlık — soru bankası · vaka analizi · inciler
+            İç hastalıkları yandal sınavına yoğun hazırlık — soru bankası · vaka analizi · inciler
           </div>
         </div>
 

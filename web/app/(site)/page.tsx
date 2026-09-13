@@ -75,7 +75,7 @@ export default async function Home() {
               <span className="text-yellow-400 not-italic block">Akademi</span>
             </h1>
             <p className="text-sm leading-relaxed text-blue-200/75 mb-6 font-medium">
-              Dahiliye asistanları ve uzmanları için klinik karar desteği, güncel konu anlatımları ve YDUS hazırlık platformu.
+              İç hastalıkları asistanları ve uzmanları için klinik karar desteği, güncel konu anlatımları ve YDUS hazırlık platformu.
             </p>
 
             {/* CTA */}

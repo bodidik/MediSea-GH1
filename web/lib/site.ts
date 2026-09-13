@@ -24,7 +24,7 @@ export function siteUrl(): string {
 
 export const SITE_ADI = 'MediSea';
 export const SITE_ACIKLAMA =
-  'Dahiliye asistanları ve uzmanları için Türkçe klinik kaynak: güncel konu anlatımları, ' +
+  'İç hastalıkları asistanları ve uzmanları için Türkçe klinik kaynak: güncel konu anlatımları, ' +
   'klinik hesaplayıcılar ve YDUS hazırlık materyali.';
 
 /**

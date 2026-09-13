@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ...rotaMeta({
     baslik: "Rehberler ve Kılavuzlar",
     aciklama:
-      "Dahiliye kılavuzlarının derlendiği bölüm — hazırlanıyor.",
+      "İç hastalıkları kılavuzlarının derlendiği bölüm — hazırlanıyor.",
     yol: "/guidelines",
   }),
   robots: { index: false, follow: true },
