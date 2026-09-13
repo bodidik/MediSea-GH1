@@ -890,3 +890,38 @@ html {
     mask-image: none;
   }
 }
+
+/* ---------------------------------------------------------------
+   OKUMA ÖLÇÜSÜ BLOKTA, KAPTA DEĞİL — şema ve tablo serbest.
+
+   Satır uzunluğu bir dönem SÜTUNA verilen `sm:max-w-[35rem]` ile
+   sabitleniyordu. Satır 70 karakterde kalıyordu (doğru), ama aynı kısıt
+   ASCII şemaları ve geniş tabloları da 560px'e sıkıştırıyordu. ÖLÇÜLDÜ
+   (1440px, konu sayfası): ızgara hücresi 792px, sütun 560px — sağında
+   232px kullanılmayan yer duruyordu ve 1344px'lik bir şemanın yalnızca
+   %33'ü görünüyordu; okuyucu şemayı 438px'lik bir pencereden kaydırarak
+   izlemek zorundaydı.
+
+   Şimdi kap hücrenin tamamını kullanıyor; üst genişlik yalnızca METİN
+   bloklarında. `overflow-x-auto` kabı (şema ve tablo bu kapta duruyor)
+   kasıtla muaf.
+
+   KIRILMA `sm:` (640px) — globals.css'teki 14px yazı kuralıyla AYNI nokta.
+   İkisi ayrışırsa küçük yazı + uzun satır bileşimi geri gelir (ölçülmüş
+   kusur: 768px'te 94 karakter).
+
+   DEĞER 35rem DEĞİL 29rem — ÖLÇÜLDÜ. 35rem sütuna verilen değerdi ve
+   kartın 2×48px dolgusunu DA kapsıyordu (70 karakter × 6.6px = 462px metin
+   + 96px dolgu ≈ 35rem). Kısıt dolgunun İÇİNE taşınınca aynı sayı 560px
+   METİN demek oluyor: ilk turda satır 70 yerine **85 karakter** çıktı.
+   Saf metin genişliği 462px ≈ 29rem — premium konu sayfasında ölçülen
+   değerin aynısı.
+   --------------------------------------------------------------- */
+@media (min-width: 640px) {
+  .ms-olcu > * {
+    max-width: 29rem;
+  }
+  .ms-olcu > .overflow-x-auto {
+    max-width: none;
+  }
+}

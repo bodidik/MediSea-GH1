@@ -577,7 +577,7 @@ export default async function TopicDetailPage({
               çekiliyor, ekrandaki metin miktarı yine 16px dönemininkinden
               fazla kalıyor. Serbest kalan sütun kenar çubuğuna geçti (4 → 5),
               yoksa ızgarada boşluk kalırdı. */}
-          <div className="lg:col-span-7 space-y-8 sm:max-w-[35rem]">
+          <div className="lg:col-span-7 space-y-8">
             {/* mt-0 — DOLGU NE DIYORSA O OLSUN. globals.css h1/h2/h3'e 24px
                 ust marj veriyor; o marj bu kutunun ICINE sizip py-2 ilanini
                 yalanliyordu. Olculdu (375px, canli, YEDI konuda da AYNI):
@@ -851,8 +851,18 @@ export default async function TopicDetailPage({
                         */}
                         <span className="text-blue-200" aria-hidden="true">#</span>{section.heading}
                       </h2>
-                      <div 
-                        className="text-slate-600 leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:mb-2 [&>strong]:text-blue-950 [&>strong]:font-black"
+                      {/* `ms-olcu` — ÖLÇÜ BLOKTA, KAPTA DEĞİL.
+                          Üst genişlik bir dönem SÜTUNA veriliyordu (35rem);
+                          satır 70 karakterde kalıyordu ama ŞEMA ve TABLO da
+                          o 560px'e sıkışıyordu. Ölçüldü (1440px): ızgara
+                          hücresi 792px, sütun 560px — sağında 232px BOŞ
+                          duruyordu ve 1344px'lik bir ASCII şemanın yalnızca
+                          %33'ü görünüyordu.
+                          Şimdi kap hücrenin tamamını kullanıyor, ölçü ise
+                          metin bloklarına veriliyor (globals.css) — satır
+                          yine 70 karakter, geniş bloklar serbest. */}
+                      <div
+                        className="ms-olcu text-slate-600 leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:mb-2 [&>strong]:text-blue-950 [&>strong]:font-black"
                         dangerouslySetInnerHTML={{ __html: section.html }}
                       />
                     </section>
