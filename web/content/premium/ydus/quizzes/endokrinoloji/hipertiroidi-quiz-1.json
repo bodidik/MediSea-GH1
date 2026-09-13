@@ -328,6 +328,96 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Iodinated radiocontrast agents in the treatment of hyperthyroidism"
+    },
+    {
+      "id": "s12",
+      "metin": "Erişkin veya pediatrik popülasyonda kaza sonucu ya da suisid amaçlı akut yüksek doz levotiroksin (L-Tiroksin / T4) alımı (akut levotiroksin intoksikasyonu/overdose) vakalarında klinik tablonun seyri ve farmakolojik müdahale seçenekleri değerlendirilmektedir.\n\nAkut L-tiroksin aşırı dozunda patofizyoloji, hormon metabolizması ve oral iyotlu radyokontrast ajanların (sodyum ipodat / iyopanoik asit) tedavi protokollerindeki yeri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Akut levotiroksin aşırı dozunda periferik dokulardaki 5'-monodeiyodinaz enzim inhibisyonunun klinik faydası son derece sınırlıdır; çünkü doku düzeyinde metabolik toksisiteden primer olarak sorumlu molekül T4'ün kendisidir.",
+        "B": "Akut levotiroksin intoksikasyonunda tiroid bezinden de novo hormon sentezini durdurmak primer hedef olduğundan, ilk basamak tedavi olarak tek başına yüksek doz tionamid (metimazol veya PTU) monoterapisi başlanmalıdır.",
+        "C": "Sodyum ipodat ve iyopanoik asit gibi oral iyotlu radyokontrast ajanlar, ekstratiroidal 5'-monodeiyodinaz enzimini propiltiourasilden (PTU) daha güçlü şekilde inhibe ederek T4'ün biyolojik olarak daha aktif olan T3'e dönüşümünü engellediklerinden, hem erişkin hem de pediatrik akut levotiroksin aşırı dozlarında (overdose) klinik ve fizyolojik parametreleri hızla düzeltmede etkili bir şekilde kullanılabilirler.",
+        "D": "Sodyum ipodat ve iyopanoik asit, içerdikleri serbest iyot nedeniyle tiroid folikül hücrelerinden tiroid hormonu salınımını uyardıklarından aşırı levotiroksin alımında kesinlikle kontrendikedir.",
+        "E": "Sodyum ipodat veya iyopanoik asit, aşırı levotiroksin alımındaki etkinliğine benzer şekilde Graves hipertiroidisinde de tek başına (monoterapi) güvenle kullanılabilir ve ilaç kesildikten sonra nüks riskini azaltır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Sodyum ipodat ve iyopanoik asit ekstratiroidal 5'-monodeiyodinazın en güçlü inhibitörleridir; PTU'dan daha etkili biçimde T4→T3 dönüşümünü engelledikleri için akut levotiroksin aşırı dozunda kullanılabilirler.",
+      "aciklama_detay": "Akut aşırı doz levotiroksin alımlarında (akut L-T4 intoksikasyonu), yüksek plazma T4 düzeylerinin biyolojik olarak çok daha güçlü olan T3'e dönüşümünü engellemek kilit terapötik hedeflerden biridir.\n\nOral kolesistografik iyotlu radyokontrast ajanlar (sodyum ipodat ve iyopanoik asit), ekstratiroidal 5'-monodeiyodinaz enziminin en güçlü inhibitörleridir. Bu ajanlar ekstratiroidal T4'ün daha potent bir tiroid hormonu olan T3'e dönüşümünü engellemede propiltiourasilden (PTU) belirgin derecede daha etkilidir. Bu farmakolojik özellikleri sayesinde hem erişkinlerde hem de pediatrik olgularda ortaya çıkan akut levotiroksin aşırı dozlarında yükselen T3 düzeylerini ve klinik/fizyolojik tirotoksikoz parametrelerini hızla kontrol altına almak amacıyla güvenle kullanılabilirler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Akut levotiroksin alımında plazmada T4 düzeyleri çok yüksek seviyelere ulaşsa da, nükleer reseptör afinitesi ve hücresel metabolik stimülasyon açısından asıl yüksek biyolojik aktiviteye ve toksisiteye sahip molekül T3'tür. Bu nedenle ekstratiroidal 5'-monodeiyodinaz enziminin inhibe edilerek T4'ün T3'e dönüşümünün bloke edilmesi hayati önem taşır.",
+        "B": "YANLIS — Akut eksojen levotiroksin alımında klinik tablonun kaynağı tiroid bezinin de novo hormon sentezlemesi değil, dışarıdan aşırı miktarda hazır hormon girmiş olmasıdır. Bu nedenle de novo sentezi engelleyen tionamidlerin monoterapi olarak verilmesi tablonun ana nedeni olan eksojen T4'ün T3'e dönüşümünü ve dolaşımdaki hormon seviyelerini tek başına hızla düşüremez.",
+        "C": "DOGRU — Sodyum ipodat ve iyopanoik asit ekstratiroidal 5'-monodeiyodinazı PTU'dan daha güçlü inhibe eder; akut levotiroksin aşırı dozunda erişkin ve pediatrik olgularda T3 düzeylerini ve klinik parametreleri hızla düzeltmek için kullanılabilirler.",
+        "D": "YANLIS — Sodyum ipodat ve iyopanoik asit, 5'-monodeiyodinaz inhibisyonunun yanı sıra farmakolojik dozda inorganik iyot açığa çıkararak tiroid bezinden depolanmış tiroid hormonlarının dolaşıma salınımını da bloke ederler (hormon salınımını uyarmazlar).",
+        "E": "YANLIS — Sodyum ipodat ve iyopanoik asit, Graves hastalığı, toksik adenom veya toksik multinodüler guatrda tek başına KESİNLİKLE kullanılmamalıdır. Çünkü açığa çıkan iyot, otonom tiroid dokusunda de novo hormon sentezi için hammadde sağlayarak daha şiddetli ve dirençli bir hipertiroidizme yol açabilir. Ayrıca Graves hastalığında monoterapi olarak kullanıldıklarında nüks oranı son derece yüksektir."
+      },
+      "etiketler": [
+        "Levotiroksin Aşırı Dozu",
+        "İyopanoik Asit",
+        "Sodyum İpodat",
+        "Deiyodinaz İnhibisyonu",
+        "Pediatrik Doz Aşımı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Iodinated radiocontrast agents in the treatment of hyperthyroidism"
+    },
+    {
+      "id": "s13",
+      "metin": "Hipertiroidizm tedavisinde inorganik iyot solüsyonlarının (Potasyum İyodür - SSKI, Lugol solüsyonu) etki mekanizmaları, endikasyonları, uygulama zamanlaması ilkeleri ve yan etki profili ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "İnorganik iyot uygulaması, Graves hastalarında foliküler epiteldeki natriyum-iyot semporterini (NIS) uyararak tiroid hormon salınımını ve sentezini kronik olarak baskılar; serum tiroid hormonlarındaki en güçlü inhibisyon tedavinin 1. ayında ortaya çıkar.",
+        "B": "Graves hastalığında tiroidektomi öncesinde yaklaşık 10 gün süreyle verilen potasyum iyodür (SSKI veya Lugol) tedavisinin temel amacı tiroid bezinin vaskülaritesini ve cerrahi kan kaybını azaltmaktır; inorganik iyot, de novo hormon sentezinde hammadde olarak kullanılmasını önlemek amacıyla tionamid verildikten en az 1 saat sonra uygulanmalıdır.",
+        "C": "Tiroid fırtınası krizinde oral veya rektal yoldan verilen iyot solüsyonları (SSKI / Lugol), tiroid bezinin tionamidlere karşı duyarlılığını artırmak amacıyla ilk tionamid dozundan en az 2 saat önce uygulanmalıdır.",
+        "D": "Radyoaktif iyot (RAI - 131-I) tedavisi uygulanan Graves hastalarında, adjüvan potasyum iyodür tedavisi RAI uygulamasından 24 saat sonra başlanmalı ve kalıcı ötiroidi sağlanana kadar en az 6 ay kesintisiz sürdürülmelidir.",
+        "E": "Uzun süreli oral iyot monoterapisi, gebelikteki Graves hipertiroidisinde ve toksik nodüler guatrlı yaşlı hastalarda ilk basamak rutin tedavi seçeneğidir (Grade 1A)."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tiroidektomi öncesi 10 güne kadar verilen SSKI/Lugol bezin vaskülaritesini ve intraoperatif kan kaybını azaltır; iyot, tionamidden EN AZ 1 SAAT SONRA verilmelidir.",
+      "aciklama_detay": "İnorganik iyot solüsyonları (SSKI, Lugol solüsyonu), tarihsel süreçte hipertiroidi tedavisinde ilk kullanılan ajanlardan biri olup günümüzde spesifik kısa süreli endikasyonlarda (tiroidektomi öncesi hazırlık, tiroid fırtınası acil tedavisi, RAI sonrası adjüvan kullanım) temel rol oynamaktadır.\n\nGraves hastalığı nedeniyle tiroidektomi planlanan ötiroid veya hipertiroidik hastalarda operasyon öncesinde 10 güne kadar verilen potasyum iyodür (SSKI veya Lugol) tedavisinin temel amacı tiroid bezinin kanlanmasını (vaskülaritesini) ve ameliyat esnasındaki intraoperatif kan kaybını azaltmaktır (Grade 2B). İyot tedavisi verilirken dikkat edilmesi gereken en kritik hücresel kural; inorganik iyodun, tionamid (metimazol veya PTU) verilmesinden EN AZ 1 SAAT SONRA uygulanması zorunluluğudur. İyot tionamidden önce veya aynı anda verilirse, sağlanan yüksek miktardaki iyot otonom folikül hücreleri tarafından yeni tiroid hormonu sentezi için hammadde olarak kullanılır ve tirotoksikoz krizini daha da şiddetlendirebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnorganik iyot, tiroid hormon salınımını organifikasyon inhibisyonundan bağımsız şekilde akut olarak (saatler içinde) bloke eder. Ayrıca yüksek doz iyot organifikasyonu inhibe eder (Wolff-Chaikoff etkisi). Serum tiroid hormon düzeyleri üzerindeki maksimal baskılayıcı etki 1 ayda değil, yaklaşık 10 günlük tedavi sonrasında tepe noktasına ulaşır. Bu süreden sonra kaçış fenomeni (escape phenomenon) gelişebilir.",
+        "B": "DOGRU — Tiroidektomi öncesi 10 güne kadar verilen SSKI/Lugol bezin vaskülaritesini ve intraoperatif kan kaybını azaltır; iyot tionamidden en az 1 saat sonra verilmelidir.",
+        "C": "YANLIS — Tiroid fırtınasında veya ağır tirotoksikozda iyot solüsyonları tionamidden önce kesinlikle verilemez. İyodun de novo hormon sentezinde substrat olmasını önlemek için ilk tionamid dozu alındıktan en az 1 saat sonra verilmesi şarttır.",
+        "D": "YANLIS — Radyoaktif iyot (RAI) tedavisi sonrasında hızlı hormonal kontrol sağlamak amacıyla verilecek adjüvan potasyum iyodür, RAI'den 24 saat sonra değil, RAI tedavisinden 1 HAFTA SONRA (7. günde) başlanmalıdır. RAI'den hemen sonra verilmesi radyonüklid tutulumunu olumsuz etkileyebilir.",
+        "E": "YANLIS — Kılavuzlar hipertiroidizmde rutin uzun süreli iyot tedavisini ÖNERMEMEKTEDİR (Grade 2C). Gebelikte iyot kullanımı fötal guatr ve fötal hipotiroidi riski nedeniyle tartışmalı olup rutin önerilmez. Toksik nodüler guatrda veya iyot eksikliği bölgesindeki Graves hastalarında ise tek başına verilmesi hipertiroidiyi alevlendirir."
+      },
+      "etiketler": [
+        "SSKI / Lugol",
+        "Preoperatif Hazırlık",
+        "Wolff-Chaikoff",
+        "Kaçış Fenomeni",
+        "İyot Zamanlaması"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Iodine in the treatment of hyperthyroidism"
+    },
+    {
+      "id": "s14",
+      "metin": "64 yaşında nodüler guatr öyküsü olan erkek hastaya koroner arter hastalığı şüphesiyle iyotlu radyokontrast madde kullanılarak koroner anjiyografi uygulanıyor. İşlemden 6 hafta sonra hastada yeni başlayan çarpıntı, tremor, sıcağa tahammülsüzlük ve 4 kg kilo kaybı gelişiyor. Laboratuvarda serum TSH: <0.01 mU/L (baskılı), serbest T4: 2.9 ng/dL (yüksek) ve serbest T3: 5.8 pg/mL (yüksek) tespit ediliyor.\n\nİyoda bağlı tiroid disfonksiyonu (Jod-Basedow fenomeni, Wolff-Chaikoff etkisi ve adaptasyon mekanizmaları) ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "İyot indüklü hipertiroidizm (Jod-Basedow fenomeni), sıklıkla otonom tiroid nodülü veya guatrı olan bireylerde iyot maruziyetini takiben de novo tiroid hormonu sentezinin kontrolsüz şekilde uyarılmasıyla gelişir; klinik tablo iyot maruziyetinden haftalar veya aylar sonra ortaya çıkabilir ve iyot kaynağı kesildiğinde genellikle 1 ila 18 ay içinde kendiliğinden sınırlanan (self-limited) bir seyir gösterir.",
+        "B": "İyotlu radyokontrast madde uygulamasını takiben çekilen 24 saatlik radyoaktif iyot tutulum testi (RAIU) daima <%1 olarak saptanır ve ağrısız (destruktif) tiroidit ile olan biyokimyasal ayrımı tamamen imkansız kılar.",
+        "C": "Yüksek doz iyot maruziyeti sonrasında gelişen akut Wolff-Chaikoff etkisinden kaçış (escape) mekanizması, natriyum-iyot semporteri (NIS) mRNA ve protein sentezinin aşırı uyarılmasıyla intratiroidal iyot birikiminin artması sonucu gerçekleşir.",
+        "D": "Nodüler guatrı olan ve subklinik hipertiroidisi bulunan yüksek riskli yaşlı hastalarda radyokontrastlı görüntüleme öncesinde rutin olarak tionamid (metimazol) ile koruyucu profilaksi verilmesi Grade 1A düzeyinde güçlü bir şekilde önerilmektedir.",
+        "E": "Hashimoto tiroiditi olan hastalarda gelişen iyot indüklü hipotiroidizmin temel fizyopatolojik mekanizması, natriyum-iyot semporterinin (NIS) süratle baskılanması ve akabinde Wolff-Chaikoff etkisinin hiç oluşmamasıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Jod-Basedow, otonom dokuda iyot yükünün de novo sentezi uyarmasıyla gelişir; haftalar-aylar sonra belirginleşir ve iyot kaynağı kesilince genellikle 1–18 ayda kendiliğinden sınırlanır.",
+      "aciklama_detay": "Tiroid bezinin iyot dengesindeki dalgalanmalara verdiği yanıtlar, altında yatan tiroid patolojisine (otonomi veya otoimmünite) bağlı olarak hipertiroidizm veya hipotiroidizm şeklinde ortaya çıkabilir.\n\nİyot indüklü hipertiroidizm (Jod-Basedow fenomeni), özellikle nodüler guatrı olan veya subklinik otonomi barındıran bireylerde yüksek doz iyoda (örneğin radyokontrast maddeler, amiodaron veya kelp/su yosunu takviyeleri) maruz kalınması sonucu gelişir. Otonom doku, artan iyot kaynağını kullanarak fizyolojik TSH denetiminden bağımsız olarak de novo tiroid hormonu sentezler. Bu tablo tek bir iyot yüklenmesinden haftalar veya aylar sonra klinik olarak belirginleşebilir. İyot maruziyeti sonlandırıldığında tablo genellikle 1 ila 18 ay içinde kendiliğinden sınırlanır (self-limited).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Otonom doku artan iyodu TSH denetiminden bağımsız kullanır; tablo haftalar-aylar sonra belirginleşir ve iyot kesilince genellikle 1–18 ayda kendiliğinden sınırlanır.",
+        "B": "YANLIS — Radyokontrast madde gibi tek dozluk akut eksojen iyot yüklenmesi, izotop dilüsyonu nedeniyle 24 saatlik RAIU değerini 2 ila 4 hafta boyunca %10'un altına düşürebilir; ancak ağrısız/destruktif tiroiditlerde görüldüğü gibi <%1 seviyesine geriletmesi son derece nadirdir. (Yalnızca amiodaron gibi sürekli ve kronik iyot maruziyetinde RAIU <%1 düzeyine inebilir).",
+        "C": "YANLIS — Aniden yüksek doz iyoda maruz kalındığında hormon organifikasyonunun geçici olarak durması Wolff-Chaikoff etkisidir. 2 ila 4 hafta içinde gerçekleşen kaçış (escape) mekanizması; natriyum-iyot semporteri (NIS) mRNA ve protein ekspresyonunun baskılanması sonucu intratiroidal iyot alımının azalmasıyla sağlanır (NIS artışı ile değil, azalması ile).",
+        "D": "YANLIS — Kılavuzlar, multinodüler guatrı veya sınırda düşük TSH düzeyleri olan yüksek riskli yaşlı hastalarda dahi kontrastlı görüntüleme öncesinde rutin tionamid profilaksisi verilmesini ÖNERMEMEKTEDİR (Grade 2C). Bunun yerine bu riskli olgularda radyokontrast uygulamadan 3 ila 4 hafta sonra tiroid fonksiyon testlerinin ölçülmesi önerilmektedir.",
+        "E": "YANLIS — Hashimoto tiroiditi veya geçirilmiş tiroid cerrahisi/RAI öyküsü olan hastalarda gelişen iyot indüklü hipotiroidizm; natriyum-iyot semporteri (NIS) aktivitesinin sürmesi nedeniyle akut Wolff-Chaikoff etkisinden kaçışın başarılamaması (failure to escape) ve organifikasyon blokajının devam etmesi sonucunda ortaya çıkar."
+      },
+      "etiketler": [
+        "Jod-Basedow",
+        "Wolff-Chaikoff",
+        "Kaçış Mekanizması",
+        "Radyokontrast",
+        "NIS"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Iodine-induced thyroid dysfunction"
     }
   ]
 }
