@@ -90,6 +90,36 @@
         "Proptozis"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s4",
+      "metin": "Aşikar tirotoksikoz, diffüz guatr ve belirgin bilateral ekzoftalmus bulguları ile başvuran 36 yaşında kadın hastada Graves tiroiditi tanısı konuluyor. Hastaya cerrahi veya ablasyon öncesinde antitiroid ilaç (tionamid) tedavisi başlanıyor.\n\nTiroid hastalıklarının patogenezi, histopatolojik özellikleri ve klinik-patolojik ayırıcı tanıları doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Graves tiroiditinde gelişen ekzoftalmus tüm hipertiroidi nedenlerinde görülebilirken, göz kapağı retraksiyonu (lid retraction) yalnızca Graves hastalığına özgüdür.",
+        "B": "Graves tiroiditinin histopatolojisinde foliküler epitelde hiperplazi, depolanmış kolloid miktarında belirgin azalma (tükenme) ve lenfoid folikül oluşumu gösteren fokal lenfosit infiltrasyonları izlenir.",
+        "C": "Hashimoto tiroiditinde görülen Hürthle (Askanazy) hücre değişimi, tiroid folikül hücrelerinin lizozomal enzimleri aşırı biriktirmesi sonucu gelişen açık vakuollü sitoplazma ile karakterizedir.",
+        "D": "Papiller tiroid adenokarsinomunda gözlenen amiloid stroma birikimi, kalsitonin hormonunun beta-pileli yapraklara polimerize olmasıyla oluşur.",
+        "E": "Foliküler tiroid adenokarsinomu birincil olarak servikal lenf düğümlerine lenfatik yolla yayılım gösterirken, papiller adenokarsinom sıklıkla kemik ve akciğere hematojen yolla metastaz yapar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Graves tiroiditinin klasik histopatolojisi: foliküler epitelde hiperplazi, kolloid tükenmesi ve germinal merkezli lenfoid foliküllerin eşlik ettiği fokal lenfosit infiltrasyonu.",
+      "aciklama_detay": "Tiroid hastalıklarının patofizyolojik, histopatolojik ve klinik ayırıcı tanıları temel patoloji kaynaklarında net kriterlerle tanımlanmıştır.\n\nGraves tiroiditinin klasik histopatolojisinde aciner/foliküler epitelde belirgin hiperplazi, folikül lümenlerinde depolanmış kolloid miktarında belirgin azalma/tükenme ve germinal merkezler içeren lenfoid folikül yapılarının eşlik ettiği fokal lenfosit infiltrasyonları izlenir. (Cerrahi öncesinde verilen antitiroid ilaçlar bu görünümü kısmen değiştirebilir).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ekzoftalmus, retro-orbital bağ ve yağ dokusunun (adipositlerin TSH reseptörü içermesi nedeniyle) lenfosit, mukopolisakkarit ve yağ ile infiltrasyonu sonucu gelişen ve Graves tiroiditine özgü olan bir bulgudur. Buna karşılık göz kapağı retraksiyonu (lid retraction), artmış sempatik tonusa ikincil olarak herhangi bir nedene bağlı hipertiroidizmde görülebilir.",
+        "B": "DOGRU — Foliküler epitelde hiperplazi, kolloid tükenmesi ve germinal merkezler içeren lenfoid foliküllerin eşlik ettiği fokal lenfosit infiltrasyonları Graves tiroiditinin klasik histopatolojisidir.",
+        "C": "YANLIS — Hashimoto tiroiditinde izlenen Hürthle (Askanazy veya onkositik) hücre değişimi; folikül epitel hücrelerinde mitokondri proliferasyonuna bağlı olarak gelişen eozinofilik granüler sitoplazma ve hücresel büyüme ile karakterizedir; lizozomal vakuolizasyon değildir.",
+        "D": "YANLIS — Kalsitonin hormonunun beta-pileli kırma yapraklara polimerize olmasıyla oluşan hiyalin amiloid stroma birikimi Medüller tiroid karsinomunun patognomonik özelliğidir. Papiller adenokarsinomda ise kalsifiye kürecikler (psammoma cisimcikleri) ve Orphan Annie tipi şeffaf çekirdekler izlenir.",
+        "E": "YANLIS — Papiller adenokarsinom yavaş seyirli olup birincil olarak tiroid içi ve servikal lenf nodlarına lenfatik yolla metastaz yapar. Foliküler adenokarsinom ise kapsül ve damar invazyonu (vasküler invazyon) göstererek birincil olarak kemik ve akciğerlere kan yoluyla (hematojen) metastaz yapar."
+      },
+      "etiketler": [
+        "Histopatoloji",
+        "Graves Tiroiditi",
+        "Hürthle Hücresi",
+        "Psammoma",
+        "Metastaz Yolu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Underwood's Pathology"
     }
   ]
 }
