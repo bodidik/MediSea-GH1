@@ -1,0 +1,147 @@
+{
+  "id": "pearl-rom-harrison-001",
+  "accessLevel": "premium",
+  "topic": "Romatoloji Klinik İncileri",
+  "pearls": [
+    {
+      "id": "p-rom-hr-01",
+      "level": "Board",
+      "title": "Antifosfolipid Sendromu (APS) & Trombotik Sınıflandırma",
+      "content": "**Antifosfolipid Sendromu (APS)**, tekrarlayan arteriyel veya venöz trombozlar, mikrovasküler tutulumlar ve gebelik morbiditesiyle seyreden edinsel bir trombofilidir. Hastalık tablosu primer olarak görülebileceği gibi en sık **Sistemik Lupus Eritematozus (SLE)** ile birliktelik gösterir. Üçten fazla organı aynı anda etkileyen ve hızla ilerleyen tablo ise **Katastrofik APS (CAPS)** olarak tanımlanır.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-02",
+      "level": "Board",
+      "title": "Spondiloartrit (SpA) Spektrumu & Aksiyel/Periferik Ayrımı",
+      "content": "2009 ASAS kriterlerine göre **Spondiloartrit (SpA)** ailesi **aksiyel (axSpA)** ve **periferik (pSpA)** olmak üzere iki ana kategoriye ayrılır. Sakroiliit varlığı aksiyel tutulumun merkezinde yer alırken; daktilit, entezit, sedef hastalığı (psöriyazis) ve inflamatuar bağırsak hastalığı (IBD) varlığı periferik SpA spektrumunu şekillendirir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-03",
+      "level": "Board",
+      "title": "Spondiloartritte HLA-B27 ve KIR Reseptör Etkileşimi",
+      "content": "SpA patogenezinde **HLA-B27** homodimerlerinin NK ve T hücre yüzeyindeki **KIR3DL1 ve KIR3DL2** reseptörleriyle peptide bağımsız etkileşimi, hücre içi proinflamatuar sinyal iletimini doğrudan uyararak hastalık yatkınlığına ve patolojisine katkıda bulunur [1.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-04",
+      "level": "Board",
+      "title": "Romatoid Artrit (RA) & Ekstraartiküler Tutulum Spektrumu",
+      "content": "**Romatoid Artrit (RA)**, en sık görülen kronik inflamatuar erozif poliaritrit olmasının yanı sıra; romatoid nodüller, vaskülit, akciğer tutulumu, perikardit ve periferik nöropati gibi geniş bir ekstraartiküler sistemik tutulum yelpazesine sahiptir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-05",
+      "level": "Board",
+      "title": "Dev Hücreli Arterit (GCA) Klinik Fenotipleri",
+      "content": "50 yaş üstü bireylerde yüksek ESR/CRP ve baş ağrısı ile karakterize olan **Dev Hücreli Arterit (GCA)**; kraniyal arterit, polimiyalji romatika (PMR), büyük damar tutulumu ve izole sistemik inflamasyon olmak üzere dört farklı klinik fenotip halinde (tek başına veya kombine) ortaya çıkabilir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-06",
+      "level": "Board",
+      "title": "Behçet Sendromu & Gastrointestinal Tutulumun Coğrafi Heterojenitesi",
+      "content": "**Behçet sendromu**, lökositoklastik venülit zemininde her çapta damarı tutabilen sistemik bir vaskülittir. Hastalığın gastrointestinal tutulumu Türkiye'de oldukça nadir izlenirken, Japonya'da ve Amerika Birleşik Devletleri'ndeki hastaların yaklaşık %30'unda belirgin bir klinik komponent olarak karşımıza çıkar.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-07",
+      "level": "Board",
+      "title": "Dermatomiyozit (DM) Histopatolojisi & Tip I İnferteron İmzası",
+      "content": "**Dermatomiyozit (DM)** biyopsisinde perimizyal ve perivasküler inflamatuar infiltrat (CD4+ dendritik hücreler, B hücreleri), kapillerlerde membran atak kompleksi (MAC) birikimi ve Tip I interferon ile regüle edilen **MHC-1 ve MxA** proteinlerinin aşırı ekspresyonu karakteristik patolojik bulgulardır.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-08",
+      "level": "Board",
+      "title": "Bağışıklık Aracılı Nekrotizan Miyopati (IMNM) & Otoantikor Sınırları",
+      "content": "**İmmün aracılı nekrotizan miyopati (IMNM)**; belirgin lökosit infiltrasyonu olmaksızın kas lifi nekrozuyla karakterizedir. Bu tabloda **anti-HMGCR** veya **anti-SRP** otoantikorları yüksek serum kreatin kinaz (CK) düzeyleriyle (&gt;10 kat) birlikte saptanır.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-09",
+      "level": "Board",
+      "title": "İnklüzyon Cisimciği Miyoziti (IBM) Dejeneratif Patobiyolojisi",
+      "content": "50 yaş üstü erkeklerde en sık görülen miyopati olan **İnklüzyon Cisimciği Miyoziti (IBM)**; parmak/bilek fleksörleri ve diz ekstansörlerinde asimetrik zayıflık, rimmed vakuoller ve nükleosistoplazmik transport bozukluğuna bağlı **TDP-43, p62 ve LC3** protein agregatlarının birikimiyle seyreder.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-10",
+      "level": "Board",
+      "title": "IBM ve Sjögren Sendromu Örtüşüm Tedavi Direnci",
+      "content": "İnflamatuar miyopatilerin diğer bağ dokusu hastalıklarıyla (SLE, skleroderma vb.) örtüşüm (overlap) sendromları genellikle immünosüpresif tedaviye iyi yanıt verirken; **Sjögren Sendromu ile eşlik eden IBM birlikteliği bu durumun tek istisnası olup immünoterapiye yanıtsızdır**.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-11",
+      "level": "Board",
+      "title": "Relapsing Polikondrit & VEXAS Sendromu",
+      "content": "Tekrarlayan kulak ve burun kondriti geçiren yaşlı erkek hastalarda progresif kemik iliği yetmezliği ve vakuollü myeloid öncüller eşlik ediyorsa, edinsel **UBA1** gen mutasyonu ile seyreden **VEXAS sendromu** mutlaka araştırılmalıdır.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-12",
+      "level": "Board",
+      "title": "MAGIC Sendromu (Mouth and Genital ulcers with Inflamed Cartilage)",
+      "content": "Relapsing Polikondrit lezyonlarına (kıkırdak inflamasyonu) Behçet sendromundaki gibi tekrarlayan oral-genital ülserler ve pathergy pozitifliği eşlik ettiğinde **MAGIC sendromu** adı verilir; bu hastalarda aortta büyük damar vasküliti ve anevrizmalar gelişebilir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-13",
+      "level": "Board",
+      "title": "Relapsing Polikondrit & Oküler Komplikasyonlar",
+      "content": "Relapsing Polikondrit hastalarında en sık görülen göz tutulumu **episklerit** olmakla birlikte; daha nadir görülen **sklerit** varlığı görme kaybı, skleromalazi ve glober rüptür riski nedeniyle acil oftalmolojik müdahale gerektirir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-14",
+      "level": "Board",
+      "title": "Sarkoidozda Akciğer Dışı Tutulum İmzaları",
+      "content": "Sarkoidoz hastalarının %95'inde akciğer tutulumu görülürken; %16 oranında cilt (lupus pernio vb.), %15 oranında periferik lenfadenopati, %12 oranında oküler/karaciğer tutulumu ve %4 oranında kalsiyum metabolizma bozukluğu (hiperkalsemi) eşlik eder.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-15",
+      "level": "Board",
+      "title": "IgG4-İlişkili Hastalık (IgG4-RD) & Tutulum Predileksiyonu",
+      "content": "**IgG4-İlişkili Hastalık (IgG4-RD)**; pankreas, tükürük bezleri (submandibuler/parotis), periorbital dokular, böbrekler ve retroperitonu sık tutan tümöfaktif bir fibroinflamatuar hastalıktır. Beyin parankimi, eklemler, kemik iliği ve bağırsak mukozası ise hastalıktan neredeyse hiç etkilenmez.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-16",
+      "level": "Board",
+      "title": "IgG4-RD Retroperitoneal Fibrozis & Renal Atrofi",
+      "content": "IgG4-RD retroperitoneal tutulum gösterdiğinde, tanı konulmadan önce belirgin fibrozis gelişerek üreteral sıkışmaya, hidronefroza ve postobstrüktif üropatiye yol açar; tubulointerstriyel nefrit zemininde gelişen renal atrofi etkin immünosüpresif tedaviye rağmen kalıcı kalabilir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-17",
+      "level": "Board",
+      "title": "Eklem Tutulum Tipleri ve Simetri Özellikleri",
+      "content": "Musküler-iskelet değerlendirmesinde: **Romatoid Artrit (RA)** poliaritriküler ve simetrik tutulum sergilerken; **Spondiloartrit, Reaktif Artrit ve Gut** sıklıkla asimetrik ve oligoartikülerdir. **Osteoartrit (OA)** ve **Psöriyatik Artrit** ise hem simetrik hem de asimetrik patern gösterebilir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-18",
+      "level": "Board",
+      "title": "Sinoviyal Sıvı Aspiratında Lökosit Hücre Sınırları",
+      "content": "Akut monoartrit değerlendirmesinde sinoviyal sıvıda lökosit sayısının **&gt;2000/µL** olması ortamda inflamatuar bir sürecin varlığını gösterir; **&gt;50.000/µL** olan ve nötrofil oranı %75'i aşan sıvılarda septik artrit olasılığı öncelikle değerlendirilmelidir.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-19",
+      "level": "Board",
+      "title": "Periferik Eklem Tutulum Haritası & Ayırıcı Tanı",
+      "content": "El bileği ve metakarpofalangeal (MKF) eklem tutulumları **RA, psödogut ve hemokromatozis** yönünden uyarıcıyken; distal interfalangeal (DİF) eklem tutulumu öncelikli olarak **Osteoartrit, Psöriyatik Artrit ve Reaktif Artrit** lezyonlarına işaret eder.",
+      "trigger": "Romatoloji"
+    },
+    {
+      "id": "p-rom-hr-20",
+      "level": "Board",
+      "title": "Romatizmal Hastalıklarda Etnik Demografi",
+      "content": "Polimiyalji romatika (PMR), Dev Hücreli Arterit (GCA) ve Granülomatöz Polianjiyitis (GPA) esas olarak beyaz ırkı etkilerken; **Sarkoidoz** ve **Sistemik Lupus Eritematozus (SLE)** Afrika kökenli bireylerde belirgin derecede daha yüksek sıklıkta görülür.",
+      "trigger": "Romatoloji"
+    }
+  ]
+}
