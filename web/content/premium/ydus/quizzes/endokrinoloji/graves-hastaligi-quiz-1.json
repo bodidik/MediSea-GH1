@@ -1,0 +1,66 @@
+{
+  "id": "quiz-endo-graves-001",
+  "baslik": "Graves Hastalığı — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "graves-hastaligi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "34 yaşında kadın hasta, aşikar Graves hipertiroidisi ve orta derecede diffüz guatr nedeniyle değerlendiriliyor. Tanı anında serbest T4: 3.8 ng/dL ve serum TRAb: 14 IU/L saptanıyor. Hastaya ilk basamak antitiroid ilaç (ATD) tedavisi başlanması planlanıyor. ATD tedavisi kesildikten sonra gelişebilecek nüks (rekürrens) riskini baseline aşamada en doğru şekilde öngörmek ve özellikle orta risk grubundaki hastalarda tedavi stratejisini (uzatılmış ATD idamesi veya ablasyon yönelimi) kişiselleştirmek amacıyla klinik ve genetik parametreleri entegre eden GREAT+ (Graves' Recurrent Events After Therapy Plus) skoru hesaplanmak isteniyor.\n\nKlasik klinik ve biyokimyasal parametrelere (yaş, guatr boyutu, tanı anındaki fT4 ve TRAb düzeyleri) ek olarak, GREAT+ skorlama sistemine dahil edilen genetik risk belirteçleri aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": {
+        "A": "HCP5 (rs3094228) ve CTLA4 (rs231775)",
+        "B": "PTPN22 (rs2476601) ve HLA alelleri (DRB1*03, DQA1*05, DQB1*02)",
+        "C": "TSHR (rs2239610) ve TG (E33SNP)",
+        "D": "CD40 (rs745307) ve FCRL3 varyantları",
+        "E": "DNMT1 (rs2228612) ve TNF-alfa (−238G>A)"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "GREAT+ skoru, klinik parametrelere immün düzenleyici PTPN22 (rs2476601) gen polimorfizmi ile HLA alellerinin (DRB1*03, DQA1*05 ve DQB1*02) genotiplenerek eklenmesiyle elde edilir.",
+      "aciklama_detay": "Graves hipertiroidisinde antitiroid ilaç (ATD) tedavisi sonrasında hastaların yaklaşık %50-60'ında nüks gelişmektedir. Nüks riskini öngörmede tekil klinik parametrelerin duyarlılığı sınırlı olduğundan multifaktöriyel skorlama sistemleri geliştirilmiştir.\n\nGREAT Skoru (Klinik Model): Hastanın yaşı, guatr boyutu, tanı anındaki serum serbest T4 (fT4) ve TSH reseptör antikor (TRAb) düzeylerini içerir.\n\nGREAT+ Skoru (Genomik İyileştirilmiş Model): Klinik parametrelere immün düzenleyici PTPN22 (rs2476601) gen polimorfizmi ile HLA alellerinin (DRB1*03, DQA1*05 ve DQB1*02) genotiplenerek eklenmesiyle elde edilir. GREAT+ skoru, özellikle klinik skorlamayla orta risk (Class II) grubunda kalan hastaların yaklaşık üçte birinde (%33) risk sınıflandırmasını değiştirerek tedavi stratejisinin bireyselleştirilmesine doğrudan katkı sağlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HCP5 (rs3094228) intronik varyantı, Graves hastalığına yatkınlık ve özellikle pediatrik/erken başlama yaşı (POGD) ile doza bağımlı olarak ilişkilidir. CTLA4 (rs231775) ise hipertiroidi şiddeti ve nüks ile ilişkili bulunsa da GREAT+ algoritmasının doğrudan bileşeni değildir.",
+        "B": "DOGRU — GREAT+ Skoru (Genomik İyileştirilmiş Model): Klinik parametrelere immün düzenleyici PTPN22 (rs2476601) gen polimorfizmi ile HLA alellerinin (DRB1*03, DQA1*05 ve DQB1*02) genotiplenerek eklenmesiyle elde edilir.",
+        "C": "YANLIS — TSHR (rs2239610) ve Tiroglobulin (TG E33SNP) gen polimorfizmleri, tanı anındaki yüksek TRAb ve hormon düzeyleriyle (hipertiroidinin bazal şiddeti) ilişkilendirilmiştir ancak GREAT+ skorunda yer almaz.",
+        "D": "YANLIS — CD40 genotip varyantları (ör. rs745307), hedefe yönelik tedavilerden anti-CD40 monoklonal antikoru (Iscalimab) yanıtını öngörmede önem taşıyan farmakogenetik belirteçlerdir; nüks skorlama sisteminde kullanılmaz.",
+        "E": "YANLIS — DNMT1 (DNA metiltransferaz 1) rs2228612 GG genotipi ve küresel DNA hipometilasyonu, ATD tedavisine dirençli/yanıtsız olgularla ilişkilidir. TNF-alfa varyantları ise daha çok orbitopati geliştirme riskiyle incelenmiştir."
+      },
+      "etiketler": [
+        "GREAT+ Skoru",
+        "Nüks Riski",
+        "PTPN22",
+        "HLA",
+        "Antitiroid İlaç"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s2",
+      "metin": "Medikal tedaviye rağmen serbest tiroid hormon düzeyleri tam olarak kontrol altına alınamamış aşikar Graves hipertiroidisi olan 45 yaşında kadın hastaya, elektif-acil koşullarda intraoperatif reküren laringeal sinir (RLN) nöromonitörizasyonu eşliğinde total tiroidektomi planlanmaktadır. Anestezi ve endokrinoloji ekipleri preoperatif ve intraoperatif anestezik/endokrinolojik yönetim parametrelerini değerlendirmektedir.\n\nBu hastanın perioperatif anestezik yönetimi, fizyopatolojik yanıtları ve olası intraoperatif komplikasyonları ile ilgili kaynak verileri doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hipertiroidik durumlarda uçucu inhalasyon anesteziklerinin Minimum Alveoler Konsantrasyon (MAC) gereksinimi belirgin şekilde artmıştır.",
+        "B": "Intraoperatif reküren laringeal sinir (RLN) monitörizasyonu yapılacak hastaların anestezi idamesi boyunca sürekli nöromüsküler blokör (kas gevşetici) infüzyonu sürdürülmelidir.",
+        "C": "Önceden bilinen hipertiroidi öyküsü olmayan ve intraoperatif dönemde şiddetli hipertermi, hemodinamik instabilite ve mental durum değişikliği gelişen bir hastada laboratuvar onayı alınana kadar şüpheli klinik tabloda Malign Hipertermi krizi yönetimi (dantrolen uygulaması ve inhalasyon anesteziklerinin kesilmesi) uygulanabilir.",
+        "D": "Retrosternal veya dev guatrlı hastalarda direkt laringoskopide zor entübasyonu öngören en güçlü tiroide spesifik faktör guatrın ağırlığı ve sternum arkasına uzanım miktarıdır.",
+        "E": "Hipertiroidik hastalarda anestezi indüksiyonu sırasında gelişen hipotansiyonun tedavisinde primer olarak katekolamin salınımını uyaran epedrin gibi indirekt etkili ajanlar tercih edilmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Intraoperatif tiroid fırtınası Malign Hipertermi tablosunu taklit edebilir; tanısı doğrulanmamış olguda iki protokolün eş zamanlı yürütülmesi akılcı ve önerilen yaklaşımdır.",
+      "aciklama_detay": "Tiroid hastalığı olan vakalarda perioperatif anestezik yönetim, hormon yüksekliğinin sistemik hemodinamik etkileri ve cerrahiye özgü komplikasyonlar (havayolu, RLN yaralanması, tiroid fırtınası) nedeniyle özel bir dikkat gerektirir.\n\nIntraoperatif dönemde gelişen tiroid fırtınası; hipertermi, belirgin taşikardi ve santral sinir sistemi bulguları ile Malign Hipertermi (MH) tablosunu taklit edebilir ve bu iki klinik durumun anestezi altında birbirinden ayrılması oldukça güçtür. Önceden hipertiroidi tanısı bulunmayan ve laboratuvar doğrulaması henüz yapılmamış olgularda bu tür bir kriz geliştiğinde, tiroid fırtınası tedavisine ek olarak Malign Hipertermi kriz protokolünün de (potantik inhalasyon anesteziklerinin kesilmesi ve iv dantrolen verilmesi) eş zamanlı yürütülmesi akılcı ve önerilen bir yaklaşımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sanılanın aksine hipertiroidi, güncel inhalasyon anesteziklerinin Minimum Alveoler Konsantrasyon (MAC) gereksinimini ARTIRMAZ. Ancak hipertiroidik hastalarda artmış kardiyak debi nedeniyle inhalasyon anesteziklerinin alım ve dağılım dinamikleri değiştiği için indüksiyon süresi gecikebilir.",
+        "B": "YANLIS — Cerrahi sırasında intraoperatif reküren laringeal sinir (RLN) nöromonitörizasyonu kullanılacaksa, vokal kord elektrot yanıtlarının doğru değerlendirilebilmesi için anestezi idamesi sırasında nöromüsküler blokör (kas gevşetici) kullanımından kesinlikle kaçınılmalıdır. İntübasyonda süksinilkolin gibi çok kısa etkili ajanlar veya sugammadaks ile etkisi hızla geri çevrilebilen rokuronyum tercih edilmelidir.",
+        "C": "DOGRU — Intraoperatif dönemde gelişen tiroid fırtınası; hipertermi, belirgin taşikardi ve santral sinir sistemi bulguları ile Malign Hipertermi (MH) tablosunu taklit edebilir ve bu iki klinik durumun anestezi altında birbirinden ayrılması oldukça güçtür.",
+        "D": "YANLIS — Tiroidektomi hastalarında yapılan çok merkezli meta-analizlerde, direkt laringoskopide zor entübasyonu öngören tek tiroide spesifik faktörün trakeal deviasyon olduğu saptanmıştır. Obstrüktif bulgu vermeyen dev veya substernal guatrlarda bezin boyutu ya da substernal uzanımı tek başına zor entübasyonu öngörmede yetersizdir ve standart havayolu yönetimini sıklıkla değiştirmez.",
+        "E": "YANLIS — Hipertiroidik hastaların sempatik sinir sistemine ve katekolaminlere duyarlılığının artmış olabileceği kabul edilir. Bu nedenle intraoperatif hipotansiyon geliştiğinde epedrin gibi nöronal depolardan katekolamin salınımını uyaran indirekt ajanlar yerine, doğrudan alfa-1 agonist etki gösteren fenilefrin gibi direkt etkili vazokonstriktörlerin tercih edilmesi önerilmektedir."
+      },
+      "etiketler": [
+        "Perioperatif Yönetim",
+        "Total Tiroidektomi",
+        "Tiroid Fırtınası",
+        "Malign Hipertermi",
+        "RLN Monitörizasyonu"
+      ],
+      "zorluk": "zor"
+    }
+  ]
+}
