@@ -242,6 +242,36 @@
       ],
       "zorluk": "zor",
       "kaynak": "Williams Textbook of Endocrinology — Hyperthyroid Disorders"
+    },
+    {
+      "id": "s9",
+      "metin": "31 yaşında, 10 haftalık gebe kadın hasta; boyunda sol tarafta ele gelen kitle şikayetiyle başvuruyor. Yapılan tiroid ultrasonografisinde sol lobda 22x18 mm boyutunda, mikrokalsifikasyonlar içeren, düzensiz sınırlı ve hipoekojen solid nodül tespit ediliyor. Serum TSH düzeyi: 1.2 mU/L (normal trimester aralığında) saptanıyor. Hastaya uygulanan ultrasonografi rehberliğinde ince iğne aspirasyon biyopsisi (İABİ) sonucu \"Papiller Tiroid Kanseri (Bethesda Kategori VI)\" olarak raporlanıyor.\n\nGebelikte saptanan tiroid nodülleri ve diferansiye tiroid kanserinin (DTC) klinik seyri, cerrahi zamanlaması, TSH süpresyon hedefleri ve izlem ilkeleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gebelikte tanı konulan diferansiye tiroid kanserleri maternal hormonların etkisiyle aşırı agresif bir seyir gösterdiğinden, gebeliğin kaçıncı haftasında olursa olsun ilk 48 saat içinde acil tiroidektomi yapılmalıdır; cerrahinin postpartum döneme ertelenmesi 20 yıllık nüks ve mortalite oranlarını belirgin şekilde artırır.",
+        "B": "Gebelikte saptanan biyopsi kanıtlı diferansiye tiroid kanserlerinde, hastalığın genellikle indolent seyri nedeniyle tiroidektominin postpartum döneme ertelenmesi 20 yıllık nüks veya uzak metastaz riski üzerinde olumsuz bir etki yaratmaz; ancak cerrahisi ertelenen gebelerde serum TSH düzeyini 0.1 ila 2.0 mU/L aralığında tutacak TSH süpresyon tedavisi uygulanmalı (Grade 2C) ve hasta her trimesterda ultrasonografi ile izlenmelidir. İlerleyici büyüme veya yaygın lenf nodu metastazı nedeniyle gebelikte cerrahi zorunlu hale gelirse en güvenli zaman penceresi 2. trimesterdir.",
+        "C": "Gebelikte tiroid nodülü saptanan hastalarda nodülün otonom fonksiyonunu ve malignite olasılığını değerlendirmek amacıyla 1. trimester sonunda düşük doz radyoaktif iyot (123-I veya 131-I) sintigrafisi güvenle uygulanabilir.",
+        "D": "TPO antikorları pozitif fakat ötiroid (TSH ≤4.0 mU/L) olan gebelerde TSH takibi yapılmasına gerek yoktur; çünkü bu hastaların gebelik boyunca subklinik hipotiroidizme ilerleme riski %0'dır ve postpartum tiroidit gelişmez.",
+        "E": "Gebelikte cerrahi tiroidektomi uygulanan kadınlarda maternal ve endokrinolojik komplikasyon oranları (maternal hipoparatiroidi, hipokalsemi, rekürren laringeal sinir hasarı) gebe olmayan bireylerle birebir aynıdır (%4'e karşı %4) ve cerrahın vaka hacminden etkilenmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "DTC indolent seyrettiği için tiroidektomi postpartuma ertelenebilir; ertelenen olguda TSH 0.1–2.0 mU/L aralığında tutulur ve her trimesterda USG yapılır. Zorunlu cerrahi için en güvenli pencere 2. trimesterdir.",
+      "aciklama_detay": "Gebelikte tiroid hastalıklarının, tiroid nodüllerinin ve tiroid kanserinin yönetimi; fetal organojenez, maternal-fetal hormon transferi ve gebeliğe özgü fizyolojik adaptasyonlar dikkate alınarak yürütülür.\n\nDiferansiye tiroid kanseri (DTC) gebelikte saptandığında, hastalığın indolent doğası göz önüne alınarak maternal ve fetal cerrahi komplikasyonları en aza indirmek amacıyla tiroidektomi sıklıkla postpartum döneme ertelenir. Retrospektif kohort çalışmalarında cerrahinin doğum sonrasına ertelenmesinin 20 yıllık takipte nüks veya uzak metastaz riskini artırmadığı gösterilmiştir. Cerrahisi ertelenen olgularda kılavuzlar serum TSH düzeyini 0.1 ila 2.0 mU/L arasında tutacak TSH süpresyon tedavisini ve her trimesterda ultrasonografik izlemi önermektedir (Grade 2C). Hızlı nodüler büyüme, obstrüksiyon veya belirgin servikal lenf nodu metastazı gelişimi gibi nadir durumlarda gebelikte cerrahi kaçınılmaz olursa, non-obstetrik ve tiroid cerrahisi için en güvenli zaman aralığı 2. trimesterdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Diferansiye tiroid kanserinin gebelikte saptanması acil tiroidektomi endikasyonu oluşturmaz. Uzun dönemli (20 yıllık) izlem çalışmalarında cerrahinin postpartum döneme ertelenmesinin genel prognozu ve sağkalımı olumsuz etkilemediği saptanmıştır.",
+        "B": "DOGRU — Cerrahi postpartuma ertelenebilir; ertelenen olguda TSH 0.1–2.0 mU/L hedefiyle süprese edilir, her trimesterda USG yapılır ve zorunlu cerrahi için en güvenli pencere 2. trimesterdir.",
+        "C": "YANLIS — Gebelikte radyonüklid tiroid sintigrafisi (123-I, 131-I veya Technetium-99m) KESİNLİKLE KONTRENDİKEDİR. Fetal tiroid dokusu 10-12. haftadan itibaren iyodu konsantre etme yeteneği kazandığından radyoizotoplar fetal tiroid ablasyonuna ve konjenital hipotiroidizme yol açar.",
+        "D": "YANLIS — Ötiroid olup TPO antikoru pozitif olan gebe kadınlar, gebelik sırasında subklinik hipotiroidi geliştirme (%20 vakada) ve postpartum dönemde postpartum tiroidit geliştirme açısından yüksek risk altındadır. Bu nedenle ilaçsız izlenen TPO pozitif gebelerde TSH düzeyi 1. trimesterda 4 haftada bir ve 2./3. trimesterda en az bir kez kontrol edilmelidir.",
+        "E": "YANLIS — Gebelikte gerçekleştirilen tiroid cerrahilerinde maternal komplikasyon (%11'e karşı %4) ve endokrin spesifik komplikasyon oranları (maternal hipoparatiroidi, hipokalsemi, rekürren laringeal sinir hasarı: %16'ya karşı %8) gebe olmayan kadınlara kıyasla anlamlı derecede daha yüksektir. Bu nedenle 2. trimesterda zorunlu cerrahi gerektiğinde operasyon yüksek vaka hacmine sahip uzman tiroid cerrahları tarafından yapılmalıdır."
+      },
+      "etiketler": [
+        "Gebelikte Tiroid Kanseri",
+        "Cerrahi Zamanlaması",
+        "TSH Süpresyonu",
+        "TPO Pozitif Gebe",
+        "Sintigrafi Kontrendikasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Overview of thyroid disease and pregnancy"
     }
   ]
 }

@@ -387,6 +387,66 @@
       ],
       "zorluk": "zor",
       "kaynak": "Management Aspects of Medical Therapy in Graves Disease (PMC, 2024/2025)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otoimmün tiroid hastalıklarının (Graves-Basedow hastalığı ve Hashimoto tiroiditi) hücresel ve moleküler patogenezi, immün sistem ve tiroid dokusuna özgü yatkınlık genleri (HLA-DR3, PTPN22, CD40, CTLA-4, FOXP3, TSHR, Tg), epigenetik modifikasyonlar ve çevresel tetikleyiciler ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "PTPN22 genindeki C1858T tek nükleotid polimorfizmi (SNP), kodon 620'de arjinin-triptofan (R620W) değişimine yol açarak lenfoid spesifik tirozin fosfataz (LYP) fonksiyonunu değiştirir; T ve B lenfosit reseptör sinyallemesini etkileyerek özellikle Kafkas popülasyonunda otoimmün tiroid hastalığı riskini artırır.",
+        "B": "TSHR geninin 1. intronunda yer alan rs179247 ve rs12101255 polimorfizmleri, yalnızca periferik tiroid dokusundaki hormon sentezini etkiler; timus içi TSHR ekspresyon düzeyini ve otoreaktif T lenfositlerinin santral tolerans (negatif seleksiyon) süreçlerini etkilemez.",
+        "C": "Besinsel iyot fazlalığının tiroid otoimmünitesini tetikleme mekanizmasında, tiroglobulin (Tg) molekülünün üç boyutlu yapısında hiçbir değişiklik gerçekleşmez ve Tg'nin antijenik potansiyeli azalır.",
+        "D": "CTLA-4 (CD152) molekülü, T lenfosit aktivasyonunun erken evresinde B7 ligandına bağlanarak CD28 molekülü ile sinerjik ko-stimülatör etki gösterir ve otoreaktif T lenfosit proliferasyonunu doğrudan uyarır.",
+        "E": "FOXP3 gen polimorfizmleri, düzenleyici T lenfositlerin (Treg) mutlak sayısal miktarını %90 oranında düşürerek etki gösterir; Treg hücrelerinin immünosüpresif baskılama fonksiyon kapasitesinde herhangi bir bozulmaya yol açmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PTPN22 C1858T (R620W), LYP enzim aktivitesini modüle ederek T/B hücre reseptör sinyallemesini etkiler ve özellikle Kafkas popülasyonunda AITD riskini artırır.",
+      "aciklama_detay": "Otoimmün tiroid hastalıkları (AITD); genetik yatkınlık, epigenetik mekanizmalar (DNA metilasyonu, histon modifikasyonları, mikroRNA'lar) ve çevresel faktörlerin (iyot, enfeksiyonlar, sigara vb.) etkileşimi sonucu immün toleransın bozulmasıyla ortaya çıkar.\n\nPTPN22 geni (kromozom 1p13.3-p13.1), lenfoid spesifik tirozin fosfataz (LYP) proteinini kodlar. Bu genin 1858. nükleotidindeki sitozin-timidin değişimi (C1858T), kodon 620'de arjinin yerine triptofan geçmesine (R620W) neden olur. Bu varyant, LYP enzim aktivitesini modüle ederek T ve B hücre reseptör sinyallemesini, periferik Treg genişlemesini ve otoreaktif B hücrelerinin periferik kaçışını etkiler. PTPN22 R620W SNP'si, Asyalıların aksine özellikle Kafkas ve karışık ırk popülasyonlarında otoimmün tiroid hastalığı riskini belirgin şekilde artırır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — PTPN22 C1858T (R620W) varyantı LYP enzim aktivitesini modüle eder; T/B hücre reseptör sinyallemesini, periferik Treg genişlemesini ve otoreaktif B hücrelerinin kaçışını etkileyerek özellikle Kafkas popülasyonunda riski artırır.",
+        "B": "YANLIS — TSHR geninin (14q31) 1. intronundaki rs179247 ve rs12101255 polimorfizmleri Graves riskinde anahtar rol oynar. Bu intronik SNP'ler; alternatif splicing ile çözünür TSHR izoformlarının (ST4/ST5) sentezini artırmanın yanı sıra timustaki TSHR mRNA ekspresyon seviyesini modüle eder; bu da TSHR antijenine karşı santral toleransı ve otoreaktif T lenfosit klonlarının timik negatif seleksiyonunu doğrudan etkiler.",
+        "C": "YANLIS — Aşırı iyot alımı, reaktif oksijen türlerinin uyardığı proteoliz ve iyotlanma artışı yoluyla tiroglobulin molekülünün üç boyutlu yapısını değiştirir. Bu durum, Tg üzerindeki gizli (kriptik) epitopların açığa çıkmasına, molekülün antijenitesinin artmasına ve otoreaktif T lenfositlerinin TPO/Tg antikor üretimini tetiklemesine yol açar.",
+        "D": "YANLIS — CTLA-4 (CD152), T lenfosit aktivasyonunu baskılayan inhibitör bir moleküldür. Antijen sunan hücreler üzerindeki B7 ligandına bağlanmak için ko-stimülatör CD28 molekülü ile yarışır. CTLA-4 fonksiyonu veya ekspresyonu azaldığında T lenfosit üzerindeki negatif frenleme kalkar ve kontrolsüz otoreaktif T lenfosit yanıtı gelişir.",
+        "E": "YANLIS — FOXP3 gen varyasyonlarında temel sorun, Treg hücrelerinin mutlak sayısal eksikliğinden ziyade immünosüpresif baskılama fonksiyonlarındaki yetersizliktir. FOXP3 asetilasyonundaki ve delesyonlarındaki bozukluklar, otoreaktif T hücrelerinin Treg baskılamasına direnç göstermesine ve immün tolerans kaybına zemin hazırlar."
+      },
+      "etiketler": [
+        "İmmünogenetik",
+        "PTPN22",
+        "CTLA-4",
+        "FOXP3",
+        "TSHR İntron 1"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Molecular Mechanisms in Autoimmune Thyroid Disease (PMC)"
+    },
+    {
+      "id": "s15",
+      "metin": "32 yaşında kadın hasta; doğum yaptıktan 6 ay sonra başlayan çarpıntı, belirgin kilo kaybı, sıcağa tahammülsüzlük ve ellerde ince tremor şikayetleriyle başvuruyor. Laboratuvar incelemesinde TSH: <0.01 mU/L (baskılı), serbest T4: 3.1 ng/dL (yüksek) ve TSH Reseptör Antikoru (TRAb): 14.2 IU/L (yüksek) tespit ediliyor.\n\nGraves hastalığının immün patogenezi, TSH reseptör antikorlarının (TRAb) özellikleri, gebelik/postpartum dönem etkileşimi ve tedavi yöntemlerinin antikor kinetiğine etkileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gebelik dönemi, regülatör T (Treg) hücrelerinin artışı ve T/B hücre fonksiyonlarının azalması ile hücresel/hümoral immün toleransın sağlandığı ve Graves hastalığının klinik olarak yatıştığı bir süreçtir; doğum sonrasında bu tolerans halinin ortadan kalkmasıyla (postpartum rebound) immün reaktivite artar ve genç kadınlarda yeni ortaya çıkan Graves vakalarının yaklaşık %30'unda son 12 ay içinde gebelik öyküsü mevcuttur.",
+        "B": "Radyoaktif iyot (131-I) tedavisi uygulanan Graves hastalarında serum TRAb konsantrasyonları ilk 24 saat içinde tamamen kaybolur; bu durum RAI sonrası tiroid orbitopatisinin (TED) aniden iyileşmesini açıklar.",
+        "C": "Graves hipertiroidisine yol açan uyarıcı TRAb'lar poliklonal IgG4 ve IgM yapısındadır; buna karşın anti-TPO ve anti-Tg antikorları oligoklonal karakterde olup yalnızca Graves hastalarına özgüdür.",
+        "D": "Cerrahi tiroidektomi sonrasında serum TRAb düzeyleri ekstratiroidal dokulardaki reseptörler nedeniyle 10 yıl boyunca yüksek seyretmeye devam eder ve hastaların yalnızca %10'unda 18. ayda negatifleşme görülür.",
+        "E": "TSH reseptörünün menteşe (hinge) bölgesine bağlanan nötral TRAb'lar, Gs-alfa alt birimini doğrudan uyararak hücre içi cAMP ve Protein Kinaz A (PKA) yolağını aşırı aktive eder ve folikül büyümesini uyarır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Gebelikte Treg artışı ve T/B baskılanmasıyla tolerans sağlanır, Graves yatışır; doğum sonrası rebound ile nüks tetiklenir — genç kadınlarda yeni Graves vakalarının ~%30'unda son 12 ayda gebelik öyküsü vardır.",
+      "aciklama_detay": "Graves hastalığı; TSH reseptörüne karşı gelişen otoantikorların folikül hücrelerini sürekli uyararak tiroid hormonu sentez ve salınımını artırması ile karakterize otoimmün bir tablodur.\n\nGebelik dönemi, desiduada ve sistemik dolaşımda regülatör T (Treg) hücrelerinin artması, hem T hem de B lenfosit fonksiyonlarının baskılanması ile immün toleransın hâkim olduğu bir süreçtir. Bu nedenle gebelik sırasında Graves hipertiroidisi sıklıkla geriler veya yatışır. Ancak doğum sonrasında bu baskılanmış immün toleranstan hızlı bir çıkış (rebound immün hiperaktivite) yaşanır. Bu durum postpartum tiroid hastalıklarının gelişimini veya nüksünü tetikler; nitekim genç kadınlarda yeni tanı alan Graves vakalarının yaklaşık %30'unda son 12 ay içinde gebelik öyküsü saptanmaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Gebelikte Treg artışı ve lenfosit baskılanmasıyla tolerans sağlanır; doğum sonrası rebound immün hiperaktivite Graves gelişimini/nüksünü tetikler.",
+        "B": "YANLIS — Radyoaktif iyot tedavisi sonrasında serum TRAb konsantrasyonları sıfırlanmaz; aksine doku yıkımına ikincil olarak tedaviden sonraki 3 ila 5. aylarda zirve yapacak şekilde yükselir ve yıllarca yüksek kalabilir. Bu geçici yükselme, RAI'yi takiben tiroid göz hastalığının ilk kez ortaya çıkmasını veya geçici olarak kötüleşmesini açıklayan temel mekanizmadır.",
+        "C": "YANLIS — Uyarıcı TRAb'lar tipik olarak IgG1 alt sınıfında ve oligoklonal yapıdadır; oligoklonalite patojenik neden-sonuç ilişkisini gösterir. Buna karşın anti-TPO ve anti-Tg antikorları poliklonal yapıda olup reaktif yanıtı yansıtır ve sağlıklı popülasyonda da görülebilir.",
+        "D": "YANLIS — Cerrahi tiroidektomi sonrasında ana antijenik uyarım odağı kaldırıldığı için serum TRAb düzeyleri hızla düşer ve ameliyattan 18 ay sonra hastaların %70 ila %80'inde tamamen kaybolur.",
+        "E": "YANLIS — TSH reseptörünün menteşe bölgesine bağlanan ve önceleri nötral antikor olarak adlandırılan antikorlar, TSH bağlanmasını veya cAMP/PKA yolağını uyarmazlar. Bu antikorlar alternatif hücre içi sinyal yollarını tetikleyerek tiroid folikül hücrelerinde apoptoza yol açabilirler. cAMP uyarımı ve hormon sentezi ise ektodomain bölgesindeki lösin-zengin tekrar alanına bağlanan uyarıcı TRAb'lar tarafından gerçekleştirilir."
+      },
+      "etiketler": [
+        "Graves Patogenezi",
+        "Postpartum Rebound",
+        "TRAb Kinetiği",
+        "Oligoklonalite",
+        "Nötral Antikorlar"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Pathogenesis of Graves' disease"
     }
   ]
 }

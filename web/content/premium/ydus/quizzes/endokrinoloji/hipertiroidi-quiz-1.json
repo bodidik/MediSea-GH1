@@ -448,6 +448,126 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Lab Interpretation: High free T4 in adults; Abnormal thyroid profile: Low TSH and high free T4 in adults"
+    },
+    {
+      "id": "s16",
+      "metin": "Hipertiroidizm ve Graves hastalığının santral ve periferik nörolojik komplikasyonları (tirotoksik miyopati, hareket bozuklukları, serebrovasküler olaylar) ile eşlik eden nöroimmünolojik hastalıklar (Miyastenia Gravis vb.) konusundaki klinik veriler doğrultusunda aşağıdaki ifadeden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Otoimmün tiroid hastalığı eşlik eden Miyastenia Gravis (MG) olgularında, tiroid hastalığı bulunmayan MG hastalarına kıyasla oküler MG oranı belirgin şekilde daha yüksek (%41'e karşı %21), buna karşın timik hastalık sıklığı (%27'ye karşı %60) ve asetilkolin reseptör antikoru (AChR-Ab) pozitifliği (%36'ya karşı %57) anlamlı derecede daha düşük saptanır.",
+        "B": "Tirotoksik miyopatide hastaların büyük çoğunluğunda belirgin kas atrofisi görülür, serum kreatin kinaz (CK) düzeyleri hastaların %80'inde 5 katın üzerinde yüksek saptanır ve derin tendon refleksleri (DTR) kaybolmuştur.",
+        "C": "Hipertiroidizme ikincil gelişen korea (hipertiroidik korea) vakalarında kraniyal MRG ve SPECT görüntülemede bazal ganglionlarda belirgin yapısal ve perfüzyon bozuklukları izlenir; BOS'ta dopamin metaboliti olan homovanillik asit (HVA) düzeyleri belirgin şekilde yüksek bulunur.",
+        "D": "Graves hastalığında serebral venöz tromboz (SVT) gelişiminden sorumlu temel mekanizma tirotoksikoza ikincil ortaya çıkan antikoagülan durumdur; özellikle faktör VIII düzeyleri baskılanır ve protein C aktivitesi 3 katına çıkar.",
+        "E": "Hipertiroidide amyotropik lateral sklerozu (ALS) taklit eden üst ve alt motor nöron bulguları (Basedow paraplejisi / motor nöron manifestasyonları) kalıcı nörodejenerasyonu yansıtır ve tiroit hormon düzeylerinin normale getirilmesiyle düzelme göstermez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Otoimmün tiroid hastalığı eşlik eden MG farklı bir fenotip sergiler: oküler MG daha sık (%41 vs %21), timik hastalık (%27 vs %60) ve AChR-Ab pozitifliği (%36 vs %57) daha düşüktür.",
+      "aciklama_detay": "Hipertiroidizm ve Graves hastalığı; santral nörolojik tablolardan (ensefalopati, nöropsikiyatrik bozukluklar, korea), nöromüsküler kavşak ve kas tutulumlarına (miyopati, MG birlikteliği) ve serebrovasküler komplikasyonlara (inme, serebral venöz tromboz) kadar geniş bir yelpazede nörolojik manifestasyonlara yol açabilir.\n\nMiyastenia Gravis (MG) ile otoimmün tiroid hastalıkları arasında ortak immünogenetik yatkınlık (örneğin HLA-DQ3 varlığı) mevcuttur. Otoimmün tiroid hastalığının eşlik ettiği MG olguları klinik ve laboratuvar olarak farklı bir fenotip sergiler: Bu hastalarda jeneralize MG'ye kıyasla oküler MG oranı daha yüksek (%41'e karşı %21), buna karşın timik hastalık görülme sıklığı (%27'ye karşı %60) ve serum asetilkolin reseptör antikoru pozitifliği (%36'ya karşı %57) belirgin şekilde daha düşük saptanmaktadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Otoimmün tiroid hastalığı eşlik eden MG'de oküler tutulum daha sık, timik hastalık ve AChR-Ab pozitifliği ise daha düşüktür.",
+        "B": "YANLIS — Hipertiroidik miyopati hastaların %60–80'inde (özellikle 40 yaş üstünde) proksimal kas güçsüzlüğü ile görülür. Ancak kas atrofisi sıklıkla yoktur. Serum kreatin kinaz düzeyleri genelde NORMALDİR (yalnızca aldolaz %30 olguda yükselebilir). Derin tendon refleksleri kaybolmaz; aksine normaldir veya gevşeme fazı kısalmış olarak artmıştır.",
+        "C": "YANLIS — Hipertiroidizme bağlı korea (%2'den az oranda görülen nadir bir komplikasyon) varlığında kraniyal MRG ve SPECT incelemeleri tamamen normaldir. Fizyopatolojide dopamin reseptör duyarlılığının artması ve buna bağlı dopamin turnover'ının azalması rol oynar; BOS'ta homovanillik asit düzeyleri artmış değil, DÜŞÜK saptanır.",
+        "D": "YANLIS — Graves hastalığında serebral venöz tromboz gelişimi antikoagülan bir duruma değil, tirotoksikozun indüklediği hiperkoagülabilite tablosuna dayanır. Hastalarda faktör VIII, plazma fibrinojen, faktör IX ve XI düzeyleri YÜKSELİR; antikoagülan özellikteki protein C aktivitesi ise AZALIR.",
+        "E": "YANLIS — Hipertiroidide piramidal yol bulguları ile alt motor nöron bulgularının birlikte görüldüğü ALS benzeri tablolar veya 'Basedow paraplejisi' kalıcı nörodejenerasyon değildir. Literatürde bildirilen ALS benzeri tablosu olan 19 hipertiroidi vakasının 16'sı antitiroid tedavi ile ötiroidizmin sağlanması sonucunda tamamen düzelmiştir."
+      },
+      "etiketler": [
+        "Nörolojik Komplikasyonlar",
+        "Miyastenia Gravis",
+        "Tirotoksik Miyopati",
+        "Korea",
+        "Serebral Venöz Tromboz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Neurologic manifestations of hyperthyroidism and Graves' disease"
+    },
+    {
+      "id": "s17",
+      "metin": "Tiroid hastalığı bulunan veya perioperatif dönemde tiroid disfonksiyonu saptanan hastaların non-tiroid cerrahi öncesi preoperatif değerlendirilmesi, elektif ve acil cerrahi yaklaşım ilkeleri ve medikal tedavi protokolleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Aşikar hipertiroidisi olan ve acil (urgent) non-tiroid cerrahiye giden Graves hastalarında; hipertiroidi şiddetli ise tionamidle (metimazol) de novo hormon sentezi baskılandıktan en az 1 saat sonra potasyum iyodür (SSKI) eklenmelidir; ancak toksik adenom/multinodüler guatrı olan ve ameliyat sonrasında oral veya rektal tionamid alamayacak hastalarda potasyum iyodür kullanımı kesinlikle KONTRENDİKEDİR.",
+        "B": "Subklinik hipotiroidizm (yüksek TSH, normal sT4) saptanan hastalarda kardiyovasküler komplikasyon riskini engellemek amacıyla tüm elektif non-tiroid cerrahiler hasta ötiroid hale getirilene kadar ertelenmelidir (Grade 1B).",
+        "C": "Ağır hipotiroidizm (miksödem koması riski olan, sT4 <0.5 ng/dL) zemininde acil cerrahiye giren hastalarda tiroid hormon replasmanı sadece oral yoldan verilmeli; IV T4 ve T3 kombinasyonu kardiyotoksisiteyi artırdığı için kontrendikedir.",
+        "D": "Kronik levotiroksin kullanan primer hipotiroidi hastalarında ameliyat sonrası 5-7 gün oral alım kesildiğinde, parenteral replasman günlük oral dozun %150'si (1.5 katı) olacak şekilde IV yoldan uygulanmalıdır.",
+        "E": "Antitiroid ilaçlara (tionamid) alerjisi veya intoleransı olan toksik multinodüler guatrlı bir hastada acil non-tiroid cerrahi öncesinde ötiroidi sağlamak için ilk tercih strateji beta-bloker ve potasyum iyodür (SSKI) kombinasyonudur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SSKI tionamidden en az 1 saat sonra eklenir; ameliyat sonrası tionamid alamayacak toksik adenom/MNG hastalarında ise iyot kesinlikle kontrendikedir (Jod-Basedow).",
+      "aciklama_detay": "Non-tiroid cerrahi geçirecek tiroid hastalarında perioperatif yönetim; hastalığın türü (hipertiroidi vs. hipotiroidi), klinik şiddeti ve cerrahinin aciliyet derecesine göre şekillendirilir.\n\nAşikar hipertiroidisi olup acil non-tiroid cerrahiye giden ve hipertiroidisi şiddetli seyreden Graves hastalarında; depolanmış hormon salınımını akut olarak engellemek amacıyla potasyum iyodür (SSKI), tionamid verildikten en az 1 saat sonra tedaviye eklenmelidir. Ancak toksik adenom veya toksik multinodüler guatrlı olgularda organifikasyon blokajı olmadan verilen iyot, de novo tiroid hormonu sentezinde hammadde olarak kullanılarak hipertiroidiyi daha da alevlendirir (Jod-Basedow etkisi). Bu nedenle, ameliyat sonrasında oral veya rektal tionamid tedavisine devam edemeyecek toksik MNG/adenom hastalarında potasyum iyodür kullanımı kesinlikle kontrendikedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — SSKI tionamidden en az 1 saat sonra eklenir; ameliyat sonrası tionamid alamayacak toksik adenom/MNG hastalarında iyot hiç kullanılmamalıdır.",
+        "B": "YANLIS — Subklinik hipotiroidizmi olan hastalarda yapılan çalışmalarda majör kardiyovasküler veya cerrahi komplikasyon riskinde anlamlı artış saptanmamıştır. Bu nedenle kılavuzlar subklinik hipotiroidizm saptanan olgularda hem elektif hem de acil non-tiroid cerrahilerin ERTELENMEMESİNİ önermektedir (Grade 2C).",
+        "C": "YANLIS — Ağır hipotiroidizmi veya miksödem koması riski bulunan ve acil cerrahiye girmek zorunda olan yüksek riskli olgularda; hızlı hormonal replasman sağlamak amacıyla hem IV Levotiroksin (200–300 mcg yükleme, ardından 50 mcg/gün) hem de eş zamanlı IV Liotironin (5–20 mcg yükleme, ardından 8 saatte bir 2.5–10 mcg) kombinasyonu önerilmektedir (Grade 2C).",
+        "D": "YANLIS — Kronik levotiroksin kullanan hastalar ameliyat sonrası 5-7 gün oral beslenemediğinde parenteral IV T4 replasmanına geçilebilir. Oral levotiroksinin gastrointestinal emilim oranı yaklaşık %70–80 olduğundan, verilecek IV T4 dozu hastanın günlük oral dozunun %70 ila %80'i kadar olmalıdır. Dozun 1.5 katına çıkarılması iyatrojenik tirotoksikoza yol açar.",
+        "E": "YANLIS — Tionamid alerjisi veya intoleransı olan Graves hastalarında beta-bloker + potasyum iyodür kombinasyonu kullanılabilir. Ancak toksik adenom veya toksik multinodüler guatrlı hastalarda tionamid koruması olmadan verilecek iyot hipertiroidiyi alevlendireceği için potasyum iyodür verilemez; bu hastalar preoperatif dönemde SADECE BETA-BLOKERLER ile tedavi edilmelidir."
+      },
+      "etiketler": [
+        "Perioperatif Yönetim",
+        "Non-tiroid Cerrahi",
+        "SSKI Zamanlaması",
+        "Miksödem Koması",
+        "IV Levotiroksin"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Nonthyroid surgery in the patient with thyroid disease"
+    },
+    {
+      "id": "s18",
+      "metin": "62 yaşında erkek hasta; 4 aydır devam eden halsizlik, efor dispnesi, 6 kg kilo kaybı ve bacaklarda çabuk yorulma şikayetiyle başvuruyor. Fizik muayenesinde nabız 92/dk (düzensiz), KB 145/70 mmHg, gözlerde kapak retraksiyonu ve bakış (stare/lid lag) mevcut; tiroid bezi hafif büyümüş palpe ediliyor. Laboratuvarda TSH: <0.01 mU/L, sT4: 2.4 ng/dL (yüksek), Total Kortizol: 11.2 mcg/dL (düşük-normal), SHBG düzeyi yüksek saptanıyor.\n\nErişkinlerde hipertiroidizmin organ sistemlerine yönelik klinik manifestasyonları, laboratuvar etkileşimleri ve yaşlı popülasyondaki özellikleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hipertiroidide serum Kortikosteroid Bağlayıcı Globülin (CBG) düzeyleri belirgin şekilde arttığı için total serum kortizol düzeyleri yalancı olarak yüksek saptanır; bu durum ACTH uyarım testinde adrenal yetmezliği maskeler.",
+        "B": "Hipertiroidide seks hormonu bağlayıcı globülin (SHBG) düzeyleri yükselir; erkeklerde bu durum yüksek total testosteron düzeylerine karşın serbest testosteronun normal veya düşük kalmasına ve artmış periferik östradiol dönüşümü nedeniyle jinekomasti ile erektil disfonksiyona yol açar.",
+        "C": "Hipertiroidizm zemininde kemik rezorpsiyonu uyarılır; trabeküler kemik kaybı kortikal kemik kaybından belirgin şekilde daha fazladır ve böbrekte kalsitriol (1,25-dihidroksivitamin D) sentezi ile kalsiyum emilimi 3 katına çıkar.",
+        "D": "Yaşlılarda görülen hipertiroidide (geriatrik/apatik hipertiroidi) klasik semptomlardan tremor ve sıcak intoleransı gençlere göre daha sık izlenirken, atriyal fibrilasyon ve kilo kaybı oranı anlamlı derecede daha düşüktür.",
+        "E": "Graves hastalığına bağlı hipertiroidide görülen timik hiperplazi (timus büyümesi), antitiroid tedavi ile hiçbir zaman gerilemez ve saptandığı anda derhal cerrahi timektomi (reseksiyon) gerektirir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SHBG artışı erkeklerde total testosteronu yükseltirken serbest testosteronu normal/düşük bırakır; artmış aromatizasyonla östradiol yükselir ve jinekomasti, libido kaybı, erektil disfonksiyon görülür.",
+      "aciklama_detay": "Erişkinlerde tirotoksikoz, tiroid hormonlarının dokulardaki reseptör düzeyindeki etkilerine bağlı olarak kardiyovasküler, nöroendokrin, metabolik ve hematolojik sistemlerde yaygın klinik ve biyokimyasal değişikliklere neden olur.\n\nHipertiroidide karaciğerden seks hormonu bağlayıcı globülin (SHBG) sentezi belirgin şekilde uyarılır. Erkek hastalarda SHBG artışına bağlı olarak total testosteron düzeyleri yüksek saptanır; ancak biyolojik olarak aktif olan serbest testosteron düzeyleri normal veya düşük kalır. Eş zamanlı olarak androjenlerin periferik dokularda östrojenlere dönüşümü (aromatizasyon) arttığından serum östradiol seviyeleri yükselir. Bu hormonal dengesizlik erkeklerde jinekomasti, libido azalması, erektil disfonksiyon ve sperm motilite bozukluklarına yol açar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hipertiroidide Kortikosteroid Bağlayıcı Globülin düzeyleri artmaz, tam aksine azalır. CBG azalmasına bağlı olarak ölçülen total serum kortizol düzeyleri yalancı olarak düşük çıkabilir. Çalışmalarda hipertiroidik hastaların %35'inde ACTH uyarım testi sonrasında total kortizol subnormal (<18 mcg/dL) bulunmuş, ancak serbest kortizol indeksi hastaların %89'unda normal kalmıştır.",
+        "B": "DOGRU — SHBG artışı total testosteronu yükseltirken serbest testosteron normal/düşük kalır; artmış aromatizasyon östradiolü yükseltir ve jinekomasti ile erektil disfonksiyona yol açar.",
+        "C": "YANLIS — Tiroid hormonu kemik rezorpsiyonunu doğrudan uyarır; ancak kortikal kemik yoğunluğundaki kayıp trabeküler kemiğe kıyasla daha fazladır. Artan rezorpsiyon serum kalsiyumunu hafif yükselterek PTH salınımını ve kalsidiolün kalsitriole dönüşümünü inhibe eder. Kalsitriol klerensinin de artmasıyla bağırsaktan kalsiyum emilimi azalır ve hiperkalsiüri gelişir.",
+        "D": "YANLIS — Yaşlı (geriatrik/apatik) hipertiroidi hastalarında klasik semptomlar (sıcak intoleransı, tremor, sinirlilik) gençlere kıyasla daha az görülür. Buna karşılık yaşlılarda kilo kaybı, dispne ve atriyal fibrilasyon sıklığı gençlere göre belirgin şekilde daha yüksektir.",
+        "E": "YANLIS — Graves hastalığında saptanan timik hiperplazi, TSH reseptörlerinin timositlerdeki uyarımına veya anjiyojeneze ikincil gelişir. Antitiroid ilaç, RAI veya cerrahi tedavi ile ötiroidizm sağlandığında 4 ila 25 ay içinde kendiliğinden geriler. Tedavi başlangıcından 3-4 ay sonra kontrol görüntüleme ile gerilemenin gösterilmesi yeterlidir; acil cerrahi timektomi gerekmez."
+      },
+      "etiketler": [
+        "Klinik Manifestasyonlar",
+        "SHBG",
+        "CBG ve Kortizol",
+        "Geriatrik Hipertiroidi",
+        "Timik Hiperplazi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Overview of the clinical manifestations of hyperthyroidism in adults"
+    },
+    {
+      "id": "s19",
+      "metin": "40 yaşında kadın hasta; 3 haftadır devam eden çarpıntı, tremor ve sıcağa tahammülsüzlük şikayetiyle başvuruyor. Fizik muayenesinde tiroid bezi diffüz hafif büyümüş ve hassassız saptanıyor. Laboratuvarda TSH: <0.01 mU/L, serbest T4: 2.8 ng/dL tespit ediliyor. Emzirme döneminde olan hastada sintigrafi / radyoizotop çalışması kontrendike olduğu için etiyolojik ayırıcı tanı amacıyla tiroid ultrasonografisi (USG) ve renkli Doppler USG incelemesi planlanıyor.\n\nTiroid hastalıklarında ultrasonografi ve renkli Doppler USG'nin klinik kullanım alanları, gri skala ultrasonografik özellikleri ve tirotoksikoz etiyolojisindeki yerleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gri skala ultrasonografide hipertiroidik Graves hastalığı ile kronik otoimmün tiroidit (Hashimoto tiroiditi) parenkim ekosunun görünümü birbirini kesin olarak dışlar; Graves hastalarında zemin daima hiperekojen izlenirken Hashimoto tiroiditinde hipoekojenite izlenir.",
+        "B": "Tedavi edilmemiş Graves hastalığında renkli Doppler USG'de tiroid kan akımı belirgin şekilde artmış izlenirken, subakut ve ağrısız tiroiditler ile Hashimoto tiroiditinde kan akımı düşük veya normal saptanır; renkli Doppler USG'deki toplam tiroid kan akımı değerleri radyoaktif iyot tutulumu (RAIU) ile anlamlı korelasyon gösterir ve emzirme/gebelik gibi radyoaktif sintigrafinin kontrendike olduğu durumlarda ayrımda klinik olarak faydalıdır.",
+        "C": "Amiodarona bağlı gelişen Tip 1 tirotoksikozda tiroid dokusunda kan akımı tamamen kaybolmuş veya belirgin azalmış izlenirken; destruktif tiroidit olan Tip 2 amiodaron tirotoksikozunda vaskülarite belirgin şekilde artmıştır.",
+        "D": "Otonom çalışan (sıcak) tiroid nodülleri, sintigrafik olarak soğuk alanlar içeren dejeneratif nodüllerden Doppler USG ile ayırt edilemez; çünkü sistolik tepe kan akım hızı (PSV) değerleri soğuk nodüllerle birebir aynıdır.",
+        "E": "Subakut granulomatöz (deQuervain) tiroiditin akut ağrılı fazında renkli Doppler USG incelemesinde tiroid bezinde Graves hastalığına benzer şekilde aşırı belirgin hipervaskülarite ve tiroid cehennemi (thyroid inferno) paterni izlenir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Doppler'de Graves'te kan akımı artmış, tiroiditlerde düşük/normaldir; toplam tiroid kan akımı RAIU ile korele olduğu için gebelik ve emzirmede etiyolojik ayrımda kullanılır.",
+      "aciklama_detay": "Tiroid ultrasonografisi ve renkli Doppler USG, tiroid hastalıklarında bezin anatomik yapısını, nodüler patolojileri ve doku perfüzyonunu değerlendirmede ilk tercih görüntüleme yöntemidir.\n\nRenkli Doppler USG incelemesinde; tedavi edilmemiş Graves hastalığında tiroid kan akımı belirgin şekilde artmış izlenirken, ağrısız/subakut tiroiditlerde ve Hashimoto tiroiditinde kan akımı normal veya düşük saptanır. Renkli Doppler ile ölçülen toplam tiroid kan akımı değerleri, radyoaktif iyot tutulumu ile anlamlı düzeyde korelasyon gösterir. Bu özellik, gebelik ve emzirme gibi radyoizotop çalışmalarının kesin kontrendike olduğu klinik durumlarda tirotoksikoz etiyolojisini belirlemede son derece değerli bir klinik araçtır. Ayrıca tionamid tedavisiyle ötiroidizm sağlandığında Doppler kan akımı derecesinde ve tiroid hacminde gerileme izlenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Konvansiyonel gri skala USG'de hem Graves hastalığı hem de Hashimoto tiroiditi diffüz parankimal heterojenite ve diffüz hipoekojenite sergiler. Gri skala görüntüleri benzer olup bu iki tabloyu gri skala ile ayırt etmek zordur; ayrım renkli Doppler USG kan akımı ölçümü ile sağlanır.",
+        "B": "DOGRU — Graves'te kan akımı artmış, tiroiditlerde düşük/normaldir; toplam tiroid kan akımı RAIU ile korele olduğu için sintigrafinin kontrendike olduğu durumlarda ayrımda kullanılır.",
+        "C": "YANLIS — Amiodarona bağlı tirotoksikoz ayrımında; altında tiroid nodülü/guatr yatan Tip 1 amiodaron tirotoksikozunda tiroid vaskülaritesi belirgin şekilde ARTMIŞTIR. Buna karşın destruktif tiroidit olan Tip 2 amiodaron tirotoksikozunda tiroid kan akımı DÜŞÜK veya YOKTUR.",
+        "D": "YANLIS — Otonom çalışan (sıcak) tiroid nodülleri, kistik/hemorajik dejenerasyona uğramış soğuk nodüler alanlardan renkli Doppler USG ile ayırt edilebilir. Otonom nodüller daha belirgin vasküler patern ve anlamlı derecede daha yüksek sistolik tepe kan akım hızı (PSV) değerleri sergilerler.",
+        "E": "YANLIS — Subakut granulomatöz (deQuervain) tiroiditin akut fazında USG'de sınırları net seçilemeyen hipoekojen alanlar görülür. Ancak renkli Doppler incelemesinde akut fazda bezde oldukça az / minimal kan akımı izlenir. Bu özellik, aşırı hipervasküler seyreden Graves hastalığından ayrımda temel kriterdir."
+      },
+      "etiketler": [
+        "Tiroid USG",
+        "Renkli Doppler",
+        "Tiroid İnfernosu",
+        "Gebelik ve Laktasyon",
+        "AİT Tip 1 vs Tip 2"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Overview of the clinical utility of ultrasonography in thyroid disease"
     }
   ]
 }
