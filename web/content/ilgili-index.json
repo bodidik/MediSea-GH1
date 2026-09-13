@@ -357,13 +357,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-ve-tiroid-yonetimi",
-   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
   },
   {
    "brans": "endokrinoloji",
@@ -371,22 +371,17 @@
    "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
+  },
+  {
    "brans": "hematoloji",
    "slug": "gebelikte-immün-ITP-yonetimi",
    "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "gebelikte-akut-koroner-sendrom",
-   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
   {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
@@ -399,8 +394,18 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "yaslida-hipertiroidizm",
    "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   }
  ],
  "endokrinoloji/gebelikte-hipotiroidizm-yonetimi": [
@@ -580,26 +585,31 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-yan-etkiler",
-   "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri"
+   "slug": "men1-meme-kanseri-tarama",
+   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-sendromu",
-   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
+   "slug": "men1-menin-molekuler-gelismeler",
+   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "osteoporoz-ana-sayfa",
-   "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları"
+   "slug": "men1-osilodrostat-block-replace",
+   "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "osteoporoz-organ-nakli-kaynakli",
-   "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri"
+   "slug": "men1-osilodrostat-mineralokortikoid",
+   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
   }
  ],
  "endokrinoloji/hipertiroidi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
@@ -607,13 +617,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "subklinik-tiroid-hastaliklari",
-   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   }
  ],
  "endokrinoloji/hipofiz-adenomlari": [
@@ -641,8 +651,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-patofizyoloji-klinik",
-   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
+   "slug": "osteoporoz-tedavisi",
+   "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
   }
  ],
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
@@ -716,16 +726,6 @@
    "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "aml-geriatrik-degerlendirme",
-   "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)"
   }
  ],
  "endokrinoloji/hirsutizm-ve-virilizasyon": [
@@ -1658,16 +1658,6 @@
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
   {
    "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
-   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-patofizyoloji-klinik",
-   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "diabetes-mellitus-ana",
    "baslik": "Diabetes Mellitus"
   },
@@ -1675,6 +1665,16 @@
    "brans": "endokrinoloji",
    "slug": "diyabet-farmakolojik-tedavi",
    "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "erkek-osteoporozu-ana-sayfa",
+   "baslik": "Erkek Osteoporozu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelik-ve-tiroid-yonetimi",
+   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
   }
  ],
  "endokrinoloji/siadh-avp-fizyolojisi": [
@@ -1860,11 +1860,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipertiroidi",
-   "baslik": "Hipertiroidi ve Tirotoksikoz"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
   },
@@ -1875,8 +1870,18 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "yaslida-hipertiroidizm",
    "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   }
  ],
  "endokrinoloji/tiroid-hastaliklari-ana": [
@@ -1892,13 +1897,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -1926,11 +1931,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/tirzepatid-genel-profil": [
@@ -1984,8 +1984,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hiperprolaktinemi-ve-prolaktinoma",
-   "baslik": "Hiperprolaktinemi ve Prolaktinoma"
+   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
+   "baslik": "Hipotiroidizm"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -2003,6 +2003,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelik-transient-tirotoksikoz",
+   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "gebelikte-hipertiroidizm-yonetimi",
    "baslik": "Gebelikte Hipertiroidizm"
   },
@@ -2010,21 +2015,28 @@
    "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+  }
+ ],
+ "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidi",
+   "baslik": "Hipertiroidi ve Tirotoksikoz"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "tiroid-yaslanmasi-fizyolojisi",
-   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   }
  ],
  "enfeksiyon/antibiyotikler-ana-sayfa": [
@@ -3768,21 +3780,6 @@
    "brans": "hematoloji",
    "slug": "hct-ci-geriatrik-degerlendirme",
    "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "tiroid-yaslanmasi-fizyolojisi",
-   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "hematoloji/aml-gilteritinib-ds-yonetimi": [
