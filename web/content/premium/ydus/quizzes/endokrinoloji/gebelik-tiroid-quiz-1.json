@@ -212,6 +212,36 @@
       ],
       "zorluk": "orta",
       "kaynak": "TEMD 2025; Haugen et al. Thyroid 2016"
+    },
+    {
+      "id": "s8",
+      "metin": "29 yaşında, 8 haftalık gebe kadın hasta; çarpıntı, kilo kaybı ve aşırı terleme şikayetleriyle başvuruyor. Fizik muayenesinde nabız 108/dk, ritmik; tiroid bezi diffüz ve yumuşak kıvamda 2 kat büyümüş palpe ediliyor. Orbitopati bulgusu saptanmıyor. Laboratuvarda serum TSH: <0.01 mU/L, serbest T4: 3.2 ng/dL (yüksek) ve serum TSH reseptör antikor (TRAb) düzeyi normal üst sınırının 4.5 katı olarak ölçülüyor. Hastaya gebelik hipertiroidisi (Graves hastalığı) tanısı konularak antitiroid ilaç (tionamid) tedavisi planlanıyor.\n\nGebelikte Graves hipertiroidisinin yönetimi, tionamidlerin teratojenite profilleri, fötal riskler ve maternal-fötal izlem hedefleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gebelikte tionamid tedavisinin birincil hedefi maternal serum TSH düzeyini trimester spesifik normal referans aralığına getirmektir; TSH baskılı kaldığı sürece ilaç dozu kademeli olarak artırılmalıdır.",
+        "B": "Metimazol (MMI) veya Karbimazol (CBZ) kullanımına bağlı gelişen teratojenik organ anomalileri (aplazya kutis, koanal/özofagus atrezisi, omfalosel, VSD) için kritik risk penceresi gebeliğin 6. ila 10. haftaları arasıdır; Propiltiourasil (PTU) ise teratojenik etki göstermeyen tamamen güvenli seçenektir.",
+        "C": "Gebelikte maternal serbest T4 düzeyinin gebe olmayan referans aralığının üst sınırında veya hemen üzerinde (at or just above the upper normal nonpregnant range) tutulması; fötal hipotiroidi ve iatrojenik fötal guatr gelişme riskini en aza indiren temel terapötik hedeftir.",
+        "D": "Gebelikte antitiroid ilaç yan etkilerini ve doz dalgalanmalarını engellemek amacıyla yüksek doz Metimazol ile birlikte Levotiroksin eklendiği \"Block-and-Replace\" (blok ve replasman) rejimi en güvenli kombinasyon stratejisidir.",
+        "E": "Maternal TRAb düzeylerinin gebelik boyunca yükselmesi fötal tiroid üzerinde etkisizdir; çünkü IgG yapısındaki maternal antikorlar plasenta bariyerini geçemez."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Gebelikte amaç anneyi hafif subklinik hipertiroidi tablosunda tutmaktır: maternal serbest T4, gebe olmayan referans aralığının üst sınırında veya hemen üzerinde, en düşük etkili tionamid dozuyla idame edilir.",
+      "aciklama_detay": "Gebelikte Graves hastalığının klinik ve farmakolojik yönetimi; maternal hipertiroidi komplikasyonları (preeklampsi, erken doğum, kalp yetmezliği) ile fötal iatrojenik hipotiroidi/guatr riskleri arasındaki hassas dengenin korunmasını gerektirir.\n\nGebelikte antitiroid ilaç (tionamid) tedavisinde temel amaç, anneyi hafif subklinik hipertiroidi tablosunda tutmaktır. Tionamidler plasentadan serbestçe geçerek fötal tiroid bezinde birikir ve yüksek dozlarda fötal hipotiroidi ile havayolu obstrüksiyonuna yol açabilecek fötal guatra neden olur. Bu nedenle maternal serbest T4 düzeyi, gebe olmayan referans aralığının üst sınırında veya hemen üzerinde tutulacak en düşük etkili tionamid dozuyla idame edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gebelikte antitiroid ilaç dozlamasında serum TSH düzeyini tamamen normale getirmeye çalışmak ciddi bir klinik hatadır. Gebelerde serum TSH düzeyi haftalarca/aylarca baskılı kalabilir; TSH'yi normale getirmek için ilaç dozunun artırılması fötal aşırı tedaviye ve derin fötal hipotiroidiye yol açar.",
+        "B": "YANLIS — Metimazol / Karbimazol embriyopatisi için en hassas teratojenik zaman aralığı organojenez dönemi olan gebeliğin 6. ila 10. haftalarıdır. Ancak sanılanın aksine PTU da tamamen teratojenden ari değildir. PTU kullanımı; MMI'ye kıyasla daha hafif seyirli olmakla birlikte, preauriküler sinüs/kistler ve üriner sistem malformasyonları riskinde artış ile ilişkilidir. Bu nedenle ilk trimesterda PTU tercih edilse de mümkün olan en düşük doz kullanılmalıdır.",
+        "C": "DOGRU — Maternal serbest T4'ün gebe olmayan referans aralığının üst sınırında veya hemen üzerinde tutulması, fötal hipotiroidi ve iatrojenik fötal guatr riskini en aza indiren temel terapötik hedeftir.",
+        "D": "YANLIS — Gebelikte \"Block-and-Replace\" tedavisi kesinlikle KONTRENDİKEDİR. Çünkü tionamidler plasentadan fötusa çok kolay geçerken, dışarıdan verilen levotiroksinin plasental geçişi son derece kısıtlıdır. Bu durum anne ötiroid görünürken fötusun ağır iatrojenik hipotiroidi ve guatr geliştirmesine yol açar.",
+        "E": "YANLIS — Maternal TRAb (IgG1 yapısında) plasentadan kolayca geçer. Özellikle gebeliğin herhangi bir döneminde maternal serum TRAb düzeylerinin normal üst sınırının 3 katından fazla olması fötal/neonatal tirotoksikoz açısından doğrudan risk oluşturur ve 2. ila 3. trimesterda yakın fötal ultrasonografik takip (fötal kalp hızı, kemik olgunlaşması ve fötal guatr takibi) gerektirir."
+      },
+      "etiketler": [
+        "Gebelikte Graves",
+        "Tionamid Teratojenitesi",
+        "Fötal Guatr",
+        "Block-and-Replace",
+        "TRAb Geçişi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Williams Textbook of Endocrinology — Hyperthyroid Disorders"
     }
   ]
 }

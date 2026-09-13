@@ -238,6 +238,96 @@
         "Kolestiramin"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s9",
+      "metin": "52 yaşında kadın hasta, bilinen toksik multinodüler guatr öyküsü olmasına karşın ilaçlarını düzensiz kullanmaktadır. Akut pnömoni nedeniyle acil servise getirilen hastada 39.5°C ateş, belirgin ajitasyon, 152/dk ritmik taşikardi, bulantı, kusma ve sarılık saptanıyor. Laboratuvarda TSH: <0.01 mU/L, sT4 ve sT3 düzeyleri belirgin yüksek tespit ediliyor. Klinik görünüm ve organ dekompansasyonu bulguları ile hastaya Tiroid Fırtınası (Thyroid Storm) tanısı konularak yoğun bakım ünitesinde akut resüsitasyon ve spesifik medikal tedavi protokolü başlatılıyor.\n\nTiroid fırtınasının klinik özellikleri, patofizyolojisi ve ilk basamak medikal tedavi protokolü ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Tiroid fırtınasında ilk basamak tionamid olarak Propiltiourasil (PTU) verilmesinden en az 1 saat SONRA potasyum iyodür (potasyum iyodid) verilmelidir; bu sıranın temel amacı iyodun aşırı hormon sentezi için hammadde olarak kullanılarak tirotoksikoz krizini alevlendirmesini önlemektir.",
+        "B": "Serum serbest T4 ve T3 konsantrasyonlarının mutlak yüksekliği tiroid fırtınası gelişimini doğrudan ve kesin olarak öngördüğü için tanı biyokimyasal hormon düzeylerine dayandırılır.",
+        "C": "Sintigrafi veya tomografi çekimi öncesinde verilen iyotlu radyokontrast maddeler tiroid fırtınasını tetiklemez, aksine tiroid hormon salınımını durdurduğu için tedavi edici etki gösterir.",
+        "D": "Beta-bloker tedavisinde metoprolol veya atenolol gibi kardiyoselektif ajanlar, periferik T4'ün T3'e dönüşümünü en güçlü inhibe eden ilaçlar oldukları için propranolole üstündür.",
+        "E": "Yoğun bakım ünitesinde tiroid fırtınası tanısı kesinleşen olgularda gastrointestinal emilimin korunması amacıyla tüm ilaçlar ve sıvılar mutlaka oral / nasogastrik tüp yoluyla verilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İyot, antitiroid ilaçtan en az 1 saat SONRA verilmelidir; aksi hâlde yüksek doz iyot otonom tiroid dokusunca organifiye edilip yeni hormon sentezinde hammadde olur (Jod-Basedow etkisi).",
+      "aciklama_detay": "Tiroid fırtınası, yüksek mortalite oranına (%10-%30) sahip, multisistem organ dekompansasyonu ile seyreden acil bir endokrinolojik tablodur.\n\nTiroid fırtınası tedavisinde inorganik iyot (potasyum iyodür), depolanmış tiroid hormonlarının dolaşıma salınımını akut olarak engeller (Plummer etkisi). Ancak iyot solüsyonu verilmeden önce de novo hormon sentezinin tionamidler ile engellenmiş olması kritik önem taşır. İyot, antitiroid ilaçtan (PTU veya Metimazol) en az 1 saat SONRA uygulanmalıdır; aksi takdirde verilen yüksek doz iyot, otonom/hiperaktif tiroid dokusu tarafından süratle organifiye edilerek yeni hormon sentezinde hammadde olarak kullanılır ve tirotoksikoz krizini şiddetlendirir (Jod-Basedow etkisi).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İyot solüsyonu, de novo hormon sentezi tionamidle engellendikten sonra (en az 1 saat sonra) verilmelidir; erken verilirse Jod-Basedow etkisiyle krizi şiddetlendirir.",
+        "B": "YANLIS — Serum serbest T4 ve T3 konsantrasyonlarının mutlak seviyesi, tirotoksikozun klinik şiddeti veya tiroid fırtınası gelişimi ile doğrudan korelasyon göstermez. Bu nedenle tanı biyokimyasal hormon rakamlarına değil; kardiyovasküler, santral sinir sistemi, gastrointestinal/hepatik ve termoregülasyon gibi klinik ve organ dekompansasyonu bulgularına dayandırılır.",
+        "C": "YANLIS — İyotlu radyokontrast maddelerin kullanımı, özellikle altta nodüler otonomi bulunan hastalarda tiroid fırtınasını tetikleyen en önemli faktörlerden biridir.",
+        "D": "YANLIS — Propranolol, non-selektif beta-bloker özelliği, kısa yarı ömrü ve IV uygulanabilmesinin yanı sıra yüksek dozlarında periferik Tip 1 deiyodinazı inhibe ederek T4'ün T3'e dönüşümünü azalttığı için tiroid fırtınasında üstün kabul edilen temel beta-blokerdir. Kardiyoselektif ajanlar (metoprolol veya atenolol) deiyodinaz inhibisyonu yapmazlar.",
+        "E": "YANLIS — Tiroid fırtınası hastalarında gastrik distansiyon, bulantı, kusma, diyare ve kardiyak dekompansasyon nedeniyle gastrointestinal emilim ciddi şekilde bozulur; bu yüzden yoğun bakım ünitesinde sıvı ve ilaçlar mümkün olan durumlarda IV yoldan verilmelidir."
+      },
+      "etiketler": [
+        "Tiroid Fırtınası",
+        "İyot Zamanlaması",
+        "Jod-Basedow",
+        "Propranolol",
+        "Tetikleyiciler"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Williams Textbook of Endocrinology — Hyperthyroid Disorders"
+    },
+    {
+      "id": "s10",
+      "metin": "Erişkinlerde hipertiroidizm etiyolojisi, tanısal testler, antitiroid ilaç (tionamid) tedavisi, nüks belirteçleri ve uzun dönem mortalite etkileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Graves hastalığında 12–18 aylık antitiroid ilaç (ATD) tedavisi sonrasında kalıcı remisyon oranı %70–80 seviyesindedir; nüksü önlemede yüksek doz Metimazol ile Levotiroksinin kombine edildiği \"blok ve replasman\" (block and replace) rejimi ilk basamak rutin tedavi olarak önerilmektedir.",
+        "B": "Gebelikte antitiroid ilaç kullanımına bağlı konjenital malformasyon riski incelendiğinde; Metimazol için mutlak teratojenite riski 1000 canlı doğumda 17.8 iken Propiltiourasil (PTU) için 10.2'dir; PTU kullanımına özgü malformasyonlar arasında aplazya kutis, özofagus atrezisi ve omfalosel yer alır.",
+        "C": "Aşikar hipertiroidizm tüm nedenli mortalitede %35–400 artış ile ilişkilidir ve artmış mortalite riski uygulanan tedavi yönteminden bağımsız olarak hastanın hipertiroidik kaldığı kumülatif süre ile doğrudan ilişkilidir; Graves hastalarında cerrahi tedavi, radyoaktif iyot (RAI) veya ATD tedavisine kıyasla tüm nedenli mortalite ve kardiyovasküler morbidite açısından daha yüksek klinik fayda sağlamaktadır.",
+        "D": "Graves hastalığı tanısında serum total T3:T4 oranının <20:1 olması beklenir ve biyotin (B7 vitamini) takviyesi alan hastalarda uygulanan immünölçümlerde yalancı yüksek TSH ile yalancı düşük sT4/sT3 düzeyleri elde edilir.",
+        "E": "Tionamid tedavisine bağlı hepatotoksisite riski en yüksek tedavinin 1. yılından sonra ortaya çıkar; kontrolsüz hipertiroidide bazal transaminaz (ALT/AST) düzeyleri normalin üst sınırının 5 katı olan hastalarda ATD kullanımı kesin kontrendikedir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Aşikar hipertiroidizm tüm nedenli mortalitede %35–400 artışla ilişkilidir; risk, tedavi yönteminden bağımsız olarak hipertiroidik geçirilen kümülatif süreyle doğru orantılıdır.",
+      "aciklama_detay": "Hipertiroidizm dünya genelinde erişkin popülasyonun yaklaşık %2.5'ini etkileyen, kardiyovasküler sistem, kemik metabolizması ve sağkalım üzerinde belirgin etkileri olan multisistemik bir tablodur.\n\nAşikar hipertiroidizm, ötiroid bireylere kıyasla tüm nedenli mortalitede %35 ila %400 ve kardiyovasküler mortalitede %20 artış ile ilişkilidir. Mortalitedeki bu artış, uygulanan tedavi seçeneğinden (ATD, RAI veya cerrahi) bağımsız olarak hastanın hipertiroidik geçirdiği kumülatif süre ile doğrudan korelasyon göstermektedir. Graves hastalığında her üç temel tedavi yöntemi (ATD, RAI, cerrahi) kardiyak aritmi ve kalp yetmezliği riskini azaltsa da; ağ tabanlı meta-analiz ve 10.992 hastayı içeren kohort verileri cerrahi tedavinin tüm nedenli mortaliteyi azaltmada ve kardiyovasküler sağkalımı iyileştirmede RAI ve ATD'ye kıyasla daha yüksek klinik fayda sağladığını ortaya koymuştur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Graves hastalığında 12–18 aylık standart ATD tedavisi sonrasında 1. yılda kalıcı remisyon oranı %30–50 civarındadır (TRAb pozitifliği devam ediyorsa bu oran %0–20'ye düşer). \"Blok ve replasman\" rejimi ise toksisite ve yan etki riskini artırdığı ve belirgin bir klinik üstünlüğü kanıtlanmadığı için rutin kullanımda önerilmemektedir.",
+        "B": "YANLIS — Gebelikte antitiroid ilaçların teratojenite verilerinde; Metimazol için mutlak anomalili doğum riski 1000 canlı doğumda 17.8 iken PTU için 10.2'dir. Ancak aplazya kutis, özofagus atrezisi, omfalosel ve ventriküler septal defekt (VSD) Metimazol kullanımına özgü anomalilerdir. PTU kullanımına özgü malformasyonlar ise yüz/boyun kistleri ve üriner sistem anomalileridir.",
+        "C": "DOGRU — Mortalite artışı tedavi yönteminden bağımsız olarak hipertiroidik geçirilen kümülatif süreyle ilişkilidir; kohort ve ağ meta-analiz verileri cerrahinin RAI ve ATD'ye kıyasla daha yüksek klinik fayda sağladığını göstermiştir.",
+        "D": "YANLIS — Graves hastalığı ve toksik nodüler guatrda de novo sentezlenen ve salınan T3 miktarı arttığı için serum total T3:T4 oranı tipik olarak >20:1 saptanır (tiroiditte lümendeki depolanmış T4 ağırlıklı hormon salındığı için oran <20:1'dir). Biyotin kullanan hastalarda biyotin-streptavidin temelli immünölçümlerde TSH yalancı DÜŞÜK, sT4 ve sT3 ise yalancı YÜKSEK saptanarak biyokimyasal olarak yalancı hipertiroidi tablosu oluşur.",
+        "E": "YANLIS — Antitiroid ilaçlara bağlı karaciğer hasarı (ve agranülositoz) riski en yüksek tedavinin ilk 90 günü içindedir. Kontrolsüz hipertiroidisi olan hastaların %55'inde tanı anında karaciğer enzimlerinde yükseklik mevcuttur; bazal transaminazlar normalin üst sınırının 5 katı olsa dahi ATD tedavisi başlandıktan sonra tirotoksikozun gerilemesiyle hastaların çoğunda karaciğer enzimleri normale dönmektedir."
+      },
+      "etiketler": [
+        "Mortalite",
+        "Remisyon Oranı",
+        "Teratojenite",
+        "T3:T4 Oranı",
+        "Hepatotoksisite"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hyperthyroidism: A Review — JAMA 2023"
+    },
+    {
+      "id": "s11",
+      "metin": "Aşırı tiroid hormonu sentezi veya salınımı ile giden tirotoksikoz durumlarında farmakolojik müdahaleler arasında yer alan oral iyotlu radyokontrast ajanların (iyopanoik asit / sodyum ipodat) etki mekanizmaları, klinik kullanım alanları, limitasyonları ve spesifik hasta gruplarındaki yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "İyotlu radyokontrast ajanlar, ekstratiroidal 5'-monodeiyodinaz enzimini inhibe ederek T4'ün T3'e dönüşümünü engellemede propiltiourasilden (PTU) daha zayıf etki gösterirler ve serum T3 düzeyini düşürme hızları PTU'ya göre belirgin derecede daha yavaştır.",
+        "B": "Graves hipertiroidisi, toksik adenom veya toksik multinodüler guatrı olan hastalarda iyotlu radyokontrast ajanların tek başına (monoterapi) kullanılması kontrendikedir; çünkü serbest kalan iyot otonom dokuda de novo hormon sentezi için hammadde sağlayarak daha şiddetli ve tedaviye dirençli hipertiroidizme yol açabilir.",
+        "C": "Tionamid alerjisi olan ve ameliyat planlanan Graves hastalarında; iyotlu radyokontrast ajan, beta-bloker ve glukokortikoidden oluşan üçlü kombinasyon tedavisi hastaları ortalama 4 ila 6 hafta içinde ötiroid duruma getirir.",
+        "D": "İnflamasyona bağlı hormon sızıntısının izlendiği subakut tiroidit krizinde tionamidler primer tedavi seçeneğidir; iyotlu radyokontrast ajanlar ise lümendeki hormon salınımını daha da artırdığı için bu dönemde kontrendikedir.",
+        "E": "İyotlu radyokontrast ajanların (ipodat / iyopanoik asit) uzun süreli kullanımı Graves hastalığında kalıcı remisyon sağlar ve ilaç kesildikten sonra metimazole verilen tedavi yanıtını belirgin şekilde artırır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İyotlu radyokontrast ajanlar otonom dokusu olan hastalarda tek başına kullanılmamalıdır; açığa çıkan inorganik iyot de novo sentez için hammadde olur. Önce tionamidle sentez bloke edilmelidir.",
+      "aciklama_detay": "Oral kolesistografik ajanlar olarak geliştirilen iyopanoik asit ve sodyum ipodat gibi iyotlu radyokontrast maddeler, tirotoksikoz yönetiminde güçlü ve hızlı etkili farmakolojik araçlardır.\n\nİyotlu radyokontrast ajanlar Graves hastalığı, toksik adenom veya toksik multinodüler guatrlı olgularda tek başına (monoterapi olarak) kesinlikle kullanılmamalıdır. Bu ajanların yapısından açığa çıkan farmakolojik miktardaki inorganik iyot, otonom tiroid dokusu tarafından de novo tiroid hormonu sentezinde hammadde (substrat) olarak kullanılır ve klinik tabloyu derinleştirerek daha şiddetli/dirençli bir hipertiroidizme yol açabilir. Bu ilaçların kullanılabilmesi için öncelikle bir tionamid (metimazol vb.) ile tiroid hormon sentezinin blokajı sağlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İyopanoik asit ve sodyum ipodat, T4'ün aktif T3'e ekstratiroidal dönüşümünü sağlayan 5'-monodeiyodinaz enziminin en güçlü inhibitörleridir. Bu ajanlar T4-T3 dönüşümünü engellemede propiltiourasilden belirgin derecede daha güçlüdür ve plazma T4 ile T3 konsantrasyonlarında PTU'ya kıyasla çok daha hızlı bir düşüş sağlarlar.",
+        "B": "DOGRU — Otonom tiroid dokusu bulunan olgularda monoterapi kontrendikedir; açığa çıkan inorganik iyot de novo hormon sentezinde substrat olarak kullanılır. Önce tionamidle sentez bloke edilmelidir.",
+        "C": "YANLIS — Tionamid alerjisi olan veya tionamidleri tolere edemeyen ve cerrahiye giden Graves hastalarında; iyotlu radyokontrast ajan, beta-bloker ve glukokortikoidden oluşan üçlü rejimin kullanılması hastaları 4-6 haftada değil, sadece 5 gün içinde hızlıca preoperatif ötiroid duruma getirebilir.",
+        "D": "YANLIS — Subakut tiroiditte iltihaplı bezden kana hormon sızıntısı olduğu için de novo sentezi engelleyen tionamidlerin hiçbir klinik faydası yoktur. Buna karşın iyotlu radyokontrast ajanlar hem periferik T3 oluşumunu engelledikleri hem de bezden hormon salınımını bloke ettikleri için subakut tiroiditin hipertiroidik fazında serum T3 düzeylerini hızla düşürür ve semptom kontrolü sağlarlar.",
+        "E": "YANLIS — İyotlu radyokontrast ajanların uzun süreli kullanımı dirençli hipertiroidizme yol açabilir. Graves hastalığında monoterapi olarak uzun süreli kullanıldıklarında kesilme sonrası nüks oranı oldukça yüksektir ve sonrasında başlanan metimazol tedavisine alınan yanıtı olumsuz etkilerler."
+      },
+      "etiketler": [
+        "İyopanoik Asit",
+        "Sodyum İpodat",
+        "Deiyodinaz İnhibisyonu",
+        "Preoperatif Hazırlık",
+        "Subakut Tiroidit"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Iodinated radiocontrast agents in the treatment of hyperthyroidism"
     }
   ]
 }
