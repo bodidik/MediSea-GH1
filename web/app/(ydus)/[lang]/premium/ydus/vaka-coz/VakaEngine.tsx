@@ -9,8 +9,14 @@ interface Adim {
   baslik: string;
   klinik_bilgi: string;
   soru: string;
-  secenekler: Record<string, string>;
-  dogru: string;
+  /**
+   * İSTEĞE BAĞLI — AÇIK UÇLU ADIM (13 Eyl 2026). Şık da doğru cevap da
+   * yoksa adım soru–yanıt biçiminde çalışır: "Yanıtı gör" düğmesi
+   * `aciklama_detay`ı açar, puanlama yok. Board vakaları (ör. Harrison GPA)
+   * şıksız geliyor; şık uydurmak içeriğe ekleme yapmak olurdu.
+   */
+  secenekler?: Record<string, string>;
+  dogru?: string;
   /**
    * İSTEĞE BAĞLI — tip bir dönem zorunlu diyordu ve YALANDI.
    *
@@ -104,10 +110,13 @@ function AdimKarti({
   isLast: boolean;
 }) {
   const [secim, setSecim] = useState<string | null>(null);
+  const [yanitAcik, setYanitAcik] = useState(false);
   const [sonrakiAcik, setSonrakiAcik] = useState(false);
 
-  const cevapVerildi = secim !== null;
-  const dogruMu = secim === adim.dogru;
+  /* Açık uçlu adım: şık yok → "cevap verildi" = yanıt açıldı; doğru/yanlış yok. */
+  const acikUclu = !adim.secenekler || Object.keys(adim.secenekler).length === 0;
+  const cevapVerildi = acikUclu ? yanitAcik : secim !== null;
+  const dogruMu = !acikUclu && secim === adim.dogru;
   /* Vaka BİTTİ sayılır: son adım cevaplandı VE okunacak bir "vaka sonu"
      metni kalmadı (ya açıldı ya da hiç yok). Aşağıdaki bayrak ve sesli
      duyuru AYNI koşuldan besleniyor — iki gerçeklik olmasın. */
@@ -203,7 +212,7 @@ function AdimKarti({
         <div style={{ fontSize: '10px', fontWeight: 700, color: '#a01f1f', textTransform: 'uppercase', letterSpacing: '.08em', marginBottom: '.4rem' }}>
           Soru {adimNo}
         </div>
-        <p style={{ fontSize: '15px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0 }}>
+        <p style={{ fontSize: '15px', lineHeight: 1.75, fontWeight: 500, color: '#1a2a3a', margin: 0, whiteSpace: 'pre-line' }}>
           {kalinIsle(adim.soru)}
         </p>
       </div>
@@ -218,8 +227,21 @@ function AdimKarti({
         `aria-disabled`, çünkü şıklar cevaptan sonra da OKUNABİLİR kalmalı
         (hangisinin doğru olduğu ve açıklaması orada).
       */}
+      {acikUclu && !cevapVerildi && (
+        <button
+          onClick={() => setYanitAcik(true)}
+          style={{
+            width: '100%', maxWidth: '32rem', padding: '.75rem 1.1rem', marginBottom: '.75rem',
+            background: '#1a3a6b', border: 'none', borderRadius: '10px', cursor: 'pointer',
+            fontSize: '13px', fontWeight: 700, color: '#fff',
+          }}
+        >
+          Yanıtı gör
+        </button>
+      )}
+      {!acikUclu && (
       <div style={{ marginBottom: '.75rem' }}>
-        {Object.entries(adim.secenekler).map(([harf, metin]) => (
+        {Object.entries(adim.secenekler ?? {}).map(([harf, metin]) => (
           <button
             key={harf}
             onClick={() => secenek(harf)}
@@ -252,13 +274,14 @@ function AdimKarti({
           </button>
         ))}
       </div>
+      )}
 
       {/* Sonucun sözlü karşılığı — gerekçesi QuizEngine'dekiyle aynı:
           ✅/❌ yalnızca gözle görülüyordu. Koşulsuz basılıyor ki canlı bölge
           içerik değişmeden önce DOM'da bulunsun. */}
       <div role="status" className="sr-only">
         {cevapVerildi
-          ? (dogruMu ? 'Doğru cevap.' : `Yanlış. Doğru cevap ${adim.dogru}.`) +
+          ? (acikUclu ? 'Yanıt açıldı.' : dogruMu ? 'Doğru cevap.' : `Yanlış. Doğru cevap ${adim.dogru}.`) +
             (vakaBitti ? ' Vaka tamamlandı.' : '')
           : ''}
       </div>
@@ -266,22 +289,22 @@ function AdimKarti({
       {/* CEVAP VERİLDİ → AÇIKLAMA */}
       {cevapVerildi && (
         <div style={{
-          border: `1.5px solid ${dogruMu ? '#80c898' : '#e08080'}`,
+          border: `1.5px solid ${acikUclu ? '#b8cfe8' : dogruMu ? '#80c898' : '#e08080'}`,
           borderRadius: '12px', overflow: 'hidden',
           animation: 'fadeIn .25s ease',
           maxWidth: '32rem',
         }}>
-          {/* Sonuç başlığı */}
+          {/* Sonuç başlığı — açık uçlu adımda doğru/yanlış yok, nötr "Yanıt" */}
           <div style={{
             padding: '.75rem 1.1rem',
-            background: dogruMu ? '#f0fbf5' : '#fff0f0',
+            background: acikUclu ? '#f5f9ff' : dogruMu ? '#f0fbf5' : '#fff0f0',
             display: 'flex', alignItems: 'center', gap: '9px',
-            borderBottom: `0.5px solid ${dogruMu ? '#80c898' : '#e08080'}`,
+            borderBottom: `0.5px solid ${acikUclu ? '#b8cfe8' : dogruMu ? '#80c898' : '#e08080'}`,
           }}>
-            <span style={{ fontSize: '1.25rem' }}>{dogruMu ? '✅' : '❌'}</span>
+            {!acikUclu && <span style={{ fontSize: '1.25rem' }}>{dogruMu ? '✅' : '❌'}</span>}
             <div>
-              <div style={{ fontSize: '14px', fontWeight: 700, color: dogruMu ? '#1a6640' : '#a01f1f' }}>
-                {dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
+              <div style={{ fontSize: '14px', fontWeight: 700, color: acikUclu ? '#1a3a6b' : dogruMu ? '#1a6640' : '#a01f1f' }}>
+                {acikUclu ? 'Yanıt ve Açıklama' : dogruMu ? 'Doğru!' : `Yanlış — Doğru cevap: ${adim.dogru}`}
               </div>
               {adim.aciklama_kisa && (
                 <div style={{ fontSize: '14px', color: '#4a6a8a', marginTop: '1px' }}>
@@ -299,7 +322,7 @@ function AdimKarti({
               yalnızca adım verisine bağlı. QuizEngine'de de aynı yer. */}
           <div data-readable={`vaka:adim-${adim.adim}:aciklama`} style={{ padding: '.9rem 1.1rem' }}>
             {adim.aciklama_detay && (
-              <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+              <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem', whiteSpace: 'pre-line' }}>
                 {kalinIsle(adim.aciklama_detay)}
               </p>
             )}
@@ -422,7 +445,7 @@ function AdimKarti({
         </div>
       )}
 
-      {!cevapVerildi && (
+      {!cevapVerildi && !acikUclu && (
         <p style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center', marginTop: '.4rem' }}>
           Bir seçenek işaretleyin
         </p>

@@ -202,13 +202,26 @@ function vakaDenetle(kusurlar) {
       }
 
       const siklar = sikKimlikleri(a?.secenekler ?? a?.options);
+      const dogru = a?.dogru ?? a?.correct ?? a?.correctAnswer;
+      const dogruYok = dogru === undefined || dogru === null || String(dogru).trim() === '';
+
+      /* AÇIK UÇLU ADIM (13 Eyl 2026): şık da doğru cevap da yok — motor
+         "Yanıtı gör" ile `aciklama_detay`ı açıyor. Meşru olması için yanıtın
+         KENDİSİ olmalı; yoksa düğme boş bir kutu açar. Şıksız ama doğru cevap
+         ilan eden adım tutarsızdır ve aşağıdaki şık kuralına düşer. */
+      if (siklar.length === 0 && dogruYok) {
+        if (!a?.aciklama_detay || String(a.aciklama_detay).trim().length < 5) {
+          kusurlar.push({ dosya: ad, kusur: `${yer}: açık uçlu adımın yanıtı (aciklama_detay) yok` });
+        }
+        return;
+      }
+
       if (siklar.length < 2) {
         kusurlar.push({ dosya: ad, kusur: `${yer}: şık sayısı ${siklar.length} (en az 2 olmalı)` });
         return;
       }
 
-      const dogru = a?.dogru ?? a?.correct ?? a?.correctAnswer;
-      if (dogru === undefined || dogru === null || String(dogru).trim() === '') {
+      if (dogruYok) {
         kusurlar.push({ dosya: ad, kusur: `${yer}: doğru cevap belirtilmemiş` });
       } else if (!siklar.includes(String(dogru).trim())) {
         kusurlar.push({
