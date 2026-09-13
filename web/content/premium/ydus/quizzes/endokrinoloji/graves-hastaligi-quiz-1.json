@@ -267,6 +267,36 @@
       ],
       "zorluk": "zor",
       "kaynak": "DeGroot's Endocrinology (Lee & Kahaly, Graves' Orbitopathy); ATA 2016 · ETA 2021"
+    },
+    {
+      "id": "s10",
+      "metin": "44 yaşında erkek hasta, 6 aydır devam eden aktif, orta-şiddetli Graves orbitopatisi (CAS: 5/7, belirgin bilateral proptozis [sağ 24 mm, sol 23 mm], rektus kaslarında kalınlaşmaya bağlı hafif diplopi) nedeniyle takip edilmektedir. Standart 12 haftalık IV metilprednizolon (kümülatif doz 4.5 g) tedavisi uygulanmasına karşın hastanın proptozisinde ve klinik aktivite skorunda belirgin gerileme sağlanamamış, hastalık aktifliğini (CAS: 4/7) korumuştur.\n\nAktif orta-şiddetli Graves orbitopatisinde biyolojik ve yeni nesil immünomodülatör tedavilerin (Teprotumumab, Mikofenolat, Tokilizumab, Rituksimab) etki mekanizmaları, klinik çalışma sonuçları ve yan etki profilleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Teprotumumab, IGF-1R'nin ekstrasellüler bölgesine bağlanan ve reseptörün hücre yüzeyinden neredeyse tamamen internalizasyonuna ve degradasyonuna yol açan insan IgG1 monoklonal antikoru olup, klinik çalışmalarda ortalama 2.5–3 mm proptozis gerilemesi sağlayarak tek duvarlı cerrahi orbital dekompresyona benzer bir etki gösterir.",
+        "B": "Mikofenolat (MMF/MPS), inosin monofosfat dehidrogenaz (IMPDH) inhibisyonu ile yalnızca B-hücre proliferasyonunu bloke eder; IV metilprednizolon ile kombine edildiğinde kardiyotoksisite ve ağır hepatotoksisite riskini belirgin şekilde artırır.",
+        "C": "Tokilizumab, doğrudan tiroid stimüle edici hormon reseptörünün (TSHR) transmembran bölgesine bağlanarak iyot organifikasyonunu bloke eden küçük molekül yapılı bir TSHR antagonistidir.",
+        "D": "Rituksimab (anti-CD20), hızlı B-hücre tükenmesi sağladığı için belirgin distiroid optik nöropati (DON) riski veya şüphesi olan Graves orbitopatisi hastalarında ilk basamak acil tedavi olarak önerilir.",
+        "E": "Selenyum desteği (sodyum selenit 100 µg günde 2 kez), özellikle ağır ve görmeyi tehdit eden (sight-threatening) aktif Graves orbitopatisi olgularında yüksek doz IV steroidlerle birlikte verilmesi gereken temel immünosüpresiftir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Teprotumumab IGF-1R'yi bloke etmekle kalmaz, reseptörün internalizasyonu ve lizozomal degradasyonuna yol açar; çalışmalarda ortalama 2.5–3 mm proptozis gerilemesi sağlamıştır (tek duvarlı dekompresyon düzeyinde yanıt).",
+      "aciklama_detay": "Graves orbitopatisinin (GED) patogenezinde TSH reseptörü (TSHR) ile İnsülin-Benzeri Büyüme Faktörü-1 reseptörü (IGF-1R) arasındaki fiziksel ve fonksiyonel sinyal kompleksi (crosstalk) temel rol oynar. Biyolojik ve hedefe yönelik ajanlar, glukokortikoide dirençli veya yanıtsız vakalarda yeni tedavi seçenekleri sunmaktadır.\n\nTeprotumumab (TPT), IGF-1R'nin ekstrasellüler domainine özgül bağlanan ve reseptörün ligand (IGF-1/IGF-2) aracılı aktivasyonunu bloke etmenin yanı sıra hücre yüzeyindeki IGF-1R'nin neredeyse tamamen internalizasyonuna ve lizozomal degradasyonuna neden olan tam insan IgG1 monoklonal antagonist antikordur. Evre II ve III çok merkezli çalışmalarda, Teprotumumab alan hastaların yaklaşık %80'inde proptoziste belirgin gerileme saptanmış; ortalama 2.5–3 mm proptozis azalması sağlanarak tek duvarlı cerrahi orbital dekompresyon düzeyinde yanıt elde edilmiştir. Ocak 2020'de FDA tarafından erişkin Graves orbitopatisi tedavisi için onaylanan ilk biyolojik ajandır. (Klinik çalışmalarda saptanan en belirgin yan etki, özellikle diyabetli hastalarda görülen ve antidiyabetik doz ayarlanmasıyla yönetilen hiperglisemidir [%10]).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Teprotumumab IGF-1R'nin ekstrasellüler domainine bağlanır, ligand aracılı aktivasyonu bloke eder ve reseptörün internalizasyonu ile lizozomal degradasyonuna yol açar; ortalama 2.5–3 mm proptozis gerilemesi sağlar.",
+        "B": "YANLIS — Mikofenolat (MMF/MPS), inosin monofosfat dehidrogenaz (IMPDH) enzimini inhibe ederek aktif lenfositlerde guanin nükleotid sentezini durdurur; bu yolla hem B hem de T hücreleri üzerinde ikili antiproliferatif etki gösterir. EUGOGO çok merkezli MINGO çalışmasında, IV metilprednizolon ile mikofenolat kombinasyonu monoterapiye göre daha yüksek ve sürdürülebilir klinik yanıt sağlamış, kardiyotoksisite veya ciddi organ toksisitesinde artışa yol açmamıştır.",
+        "C": "YANLIS — Tokilizumab (TCZ), TSH reseptörüne bağlanan bir TSHR antagonisti değil; inflamatuvar sürecin merkezinde yer alan IL-6 yolunu bloke eden tam insan IgG1 anti-IL-6 reseptör (IL-6R) monoklonal antikordur. Glukokortikoide dirençli aktif vakalarda CAS skorunda belirgin gerileme sağlar.",
+        "D": "YANLIS — Rituksimab uygulaması sonrasında gelişebilecek akut sitokin salınım sendromu, retro-orbital dokularda geçici ödem ve hacim artışına yol açarak subklinik veya belirgin distiroid optik nöropatide (DON) akut kötüleşmeye neden olabilir. Bu nedenle rituksimab, optik nöropati tehdidi olan vakalarda kontrendikedir / kesinlikle kaçınılmalıdır.",
+        "E": "YANLIS — Selenyum desteği (sodyum selenit 100 µg günde 2 kez, 6 ay süreyle); ağır veya görmeyi tehdit eden vakalarda değil, hafif dereceli (mild) ve kısa hastalık süresi olan aktif Graves orbitopatisinde yaşam kalitesini artırmak ve hastalığın ilerlemesini önlemek amacıyla önerilmektedir."
+      },
+      "etiketler": [
+        "Teprotumumab",
+        "IGF-1R",
+        "Biyolojik Tedavi",
+        "Tokilizumab",
+        "Rituksimab"
+      ],
+      "zorluk": "zor",
+      "kaynak": "DeGroot's Endocrinology (Lee & Kahaly, Graves' Orbitopathy)"
     }
   ]
 }
