@@ -195,7 +195,10 @@ function SoruKarti({
           <div style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '.5rem' }}>
             Soru {soruNo}
           </div>
-          <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500 }}>
+          {/* `pre-line`: içerik paragrafı `\n` ile ayırıyor (632 soru metninin
+              429'u). `normal` iken hepsi tek bloğa yapışıyordu. textContent
+              değişmiyor, yani vurgu ofsetleri etkilenmez. */}
+          <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500, whiteSpace: 'pre-line' }}>
             {kalinIsle(soru.metin)}
           </p>
           {soru.etiketler && soru.etiketler.length > 0 && (
@@ -345,7 +348,7 @@ function SoruKarti({
                 üst sınır ısırmıyor. */}
             <div data-readable={`soru:${setId}:${soru.id}`} style={{ padding: '1rem 1.25rem', maxWidth: '32rem' }}>
               {soru.aciklama_detay && (
-                <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem' }}>
+                <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', marginBottom: '1rem', whiteSpace: 'pre-line' }}>
                   {kalinIsle(soru.aciklama_detay)}
                 </p>
               )}
