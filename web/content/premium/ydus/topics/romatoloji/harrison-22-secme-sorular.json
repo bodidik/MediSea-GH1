@@ -11,7 +11,7 @@
     "flashcard": true,
     "inciler": true,
     "quiz": true,
-    "vaka": false,
+    "vaka": true,
     "video": false
   },
   "istatistikler": {
