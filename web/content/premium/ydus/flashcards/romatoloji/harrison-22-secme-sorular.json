@@ -2,7 +2,7 @@
   "id": "fc-rom-harrison-001",
   "accessLevel": "premium",
   "topic": "Ders Kitaplarından Hazırlanmış Sorular",
-  "description": "YDUS Romatoloji serisi: Harrison 22 kaynaklı 90 kartlık hızlı tekrar seti.",
+  "description": "YDUS Romatoloji serisi: Harrison 22 kaynaklı 88 kartlık hızlı tekrar seti.",
   "cards": [
     {
       "id": "hr-001",
@@ -305,21 +305,9 @@
       "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
     },
     {
-      "id": "hr-051",
-      "front": "İnnate immün sistemde patojenleri tanıyan germ hattı kodlu reseptörlerin genel adı nedir?",
-      "back": "Patern Tanıma Reseptörleri (PRRs).",
-      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
-    },
-    {
       "id": "hr-052",
       "front": "Antikor bağımlı hücresel sitotoksisiteyi (ADCC) uyaran ve antikorların Fc bölgesine bağlanan reseptörlerin genel adı nedir?",
       "back": "Ig fragman kristalize edilebilir (Fc) reseptörleri.",
-      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
-    },
-    {
-      "id": "hr-053",
-      "front": "Hücre içi debris ve hasarlı organelleri temizleyen lizozomal yıkım mekanizması nedir?",
-      "back": "Otofaji.",
       "tag": "Romatoloji / Harrison / Temel İmmünoloji"
     },
     {
