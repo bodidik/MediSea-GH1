@@ -122,7 +122,9 @@ const MODUL_BILGI = {
   inciler:   { etiket: 'Klinik inciler', emoji: '💎', renk: '#fffbe6' },
   quiz:      { etiket: 'Soru çöz', emoji: '📝', renk: '#fff0f0' },
   vaka:      { etiket: 'Vaka', emoji: '🏥', renk: '#f0fbf5' },
-  video:     { etiket: 'Video', emoji: '🎬', renk: '#f5f0ff' },
+  // `video` bilerek YOK (13 Eyl 2026, kullanıcı kararı): kısa vadede video
+  // çalışması yok, "Yakında" satırı bile gösterilmiyor. Konu dosyalarındaki
+  // `moduller.video` ilanı kalıyor; burada karşılığı olmadığı için çizilmez.
 };
 
 const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) => string> = {
@@ -130,7 +132,6 @@ const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) =
   inciler:   (l, b, t) => `/${l}/premium/ydus/inciler?branch=${b}&id=${t}`,
   quiz:      (l, b, t) => `/${l}/premium/ydus/quiz-coz?branch=${b}&id=${t}-quiz-1`,
   vaka:      (l, b, t) => `/${l}/premium/ydus/vaka-coz?branch=${b}&topic=${t}`,
-  video:     (l, b, t) => `/${l}/premium/ydus/${b}/${t}/video`,
 };
 
 // --- ANA SAYFA ---
@@ -222,17 +223,15 @@ export default async function KonuSayfasi({
    * graves-hastaligi/quiz (yorumda "düzeltildi" yazan tam olarak bu),
    * kml/flashcard, aml-ana ve kml'de inciler + video.
    *
-   * `video` her zaman kapalı: `MODUL_HREF.video` `/…/<konu>/video` adresine
-   * gidiyor ama depoda böyle bir rota YOK, yani ilan eden her konu 404'e
-   * bağlanıyordu. İçerik dosyaları (`content/premium/ydus/videos/`) duruyor;
-   * sayfa yazılırsa buradaki `false` kaldırılır (bkz. SENDE-KALANLAR).
+   * `video` modül listesinden tümden çıkarıldı (bkz. `MODUL_BILGI`). Eskiden
+   * `/…/<konu>/video` adresine gidiyordu ve depoda böyle bir rota YOK.
+   * İçerik dosyaları (`content/premium/ydus/videos/`) duruyor.
    */
   const MODUL_VAR: Record<string, boolean> = {
     quiz: envanter.quizVar,
     flashcard: envanter.flashcardVar,
     inciler: envanter.inciVar,
     vaka: envanter.vakaVar,
-    video: false,
   };
 
   return (
