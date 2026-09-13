@@ -297,6 +297,96 @@
       ],
       "zorluk": "zor",
       "kaynak": "DeGroot's Endocrinology (Lee & Kahaly, Graves' Orbitopathy)"
+    },
+    {
+      "id": "s11",
+      "metin": "Graves hastalığında konvansiyonel 12–18 aylık antitiroid ilaç (ATD) tedavisi sonrasında yaklaşık %50 oranında tirotoksikoz nüksü gözlenmesi nedeniyle, son yıllarda uzun süreli antitiroid ilaç kullanımı (LT-ATD / Long-term Thionamide, ≥5 yıl / ≥60 ay) ön plana çıkmıştır.\n\nGraves hastalığında uzun süreli antitiroid ilaç (LT-ATD) tedavisinin etkinliği, güvenliliği, TRAb dinamikleri ve radyoaktif iyot (RAI) ablasyonu ile karşılaştırmalı sonuçları hakkında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Konvansiyonel 12–18 aylık tedavi sonrası nüks oranının yüksek olmasına karşın, metimazol tedavisinin 24 ayı (2 yılı) aşacak şekilde uzatılması vaskülit ve agranülositoz gibi majör yan etki riskini 5 kat artırdığından kılavuzlarca kesin olarak kontrendike kabul edilir.",
+        "B": "Graves hastalığında düşük doz metimazol tedavisinin kesintisiz olarak ≥5 yıl (≥60 ay) boyunca sürdürülmesi (LT-ATD), hastaların %80'inden fazlasında kalıcı biyokimyasal remisyon (kür) sağlar; ilaç yan etkilerinin neredeyse tamamı tedavinin ilk yılında ortaya çıktığı için uzun dönem metimazol kullanımı radyoaktif iyota (RAI) kıyasla kalıcı hipotiroidiyi önleme, lipid profili ve kardiyovasküler parametreler açısından daha üstün klinik sonuçlar sunar.",
+        "C": "18 aylık metimazol tedavisi sonunda serum TRAb (TSH reseptör antikoru) düzeyi ≥0.9 IU/L saptanan hastaların tamamında ilaç derhal kesilmeli ve hasta doğrudan radyoaktif iyot ablasyonuna sevk edilmelidir.",
+        "D": "65 yaş üstü subklinik hipertiroidisi (TSH <0.1 mIU/L) olan hastalarda yapılan 5 yıllık randomize kontrollü çalışmada, radyoaktif iyot (RAI) alanların %94'ü ötiroid kalırken, metimazol (MMI) alanların %66'sında kalıcı hipotiroidi ve replasman ihtiyacı gelişmiştir.",
+        "E": "Çocuk ve adolesan Graves hastalarında uzun süreli metimazol kullanımı (≥5 yıl) yetişkinlere kıyasla nüks riskini engellemediği için çocukluk çağı Graves vakalarında 12. aydan sonra cerrahi veya RAI tek standart seçenektir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Metimazolün kesintisiz ≥60 ay sürdürülmesi hastaların %80'inden fazlasında kalıcı remisyon sağlar; majör yan etkilerin %96.5'i ilk yılda çıkar ve LT-ATD, RAI'ye kıyasla kalıcı hipotiroidiyi önler.",
+      "aciklama_detay": "Graves hastalığının tıbbi tedavisinde konvansiyonel 12–18 aylık tionamid kullanımını takiben hastaların yaklaşık %50'sinde tirotoksikoz nüksü gelişmektedir. Son klinik araştırmalar ve biyokimyasal izlem verileri, antitiroid ilaç tedavisinin 5 yıl ve üzerine uzatılmasının (LT-ATD) hem erişkinlerde hem de çocuklarda kalıcı remisyon oranlarını belirgin şekilde artırdığını ve ablasyon tedavilerine güvenli bir alternatif oluşturduğunu göstermektedir.\n\nMetimazol (MMI) tedavisinin kesintisiz olarak en az 60 ay (≥5 yıl) sürdürülmesi, ilaç kesildikten sonra hastaların %80'inden fazlasında kalıcı biyokimyasal remisyon sağlamaktadır. Tionamidlere bağlı majör yan etkilerin %96.5'i tedavinin ilk 1 yılı içinde ortaya çıkmaktadır; 1. yıldan sonra ek majör toksisite riski neredeyse yok denecek kadar düşüktür. Ayrıca RAI ve cerrahi ablasyon hastaların büyük çoğunluğunda ömür boyu levotiroksin tedavisi gerektiren kalıcı hipotiroidiye yol açarken; uzun süreli metimazol tedavisi kalıcı hipotiroidiyi önlemekte, daha stabil TSH düzeyleri sağlamakta, lipid profili, ekokardiyografik parametreler ve nöropsikolojik testlerde RAI'ye göre daha üstün sonuçlar sunmaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Konvansiyonel 12–18 aylık tedavi sonrası nüks oranı %50 civarındadır. Ancak tionamidlerin 2 yılı veya 5 yılı aşan uzun süreli kullanımı kontrendike değildir. Aksine, 1 yıldan uzun süreli ATD kullanan 1660 hastanın değerlendirildiği çalışmada görülen 141 advers olayın yalnızca 5'i (%3.5) 1. yıldan sonra meydana gelmiştir.",
+        "B": "DOGRU — ≥60 aylık kesintisiz metimazol hastaların %80'inden fazlasında kalıcı remisyon sağlar; majör yan etkiler ilk yılda toplanır ve LT-ATD, RAI'ye kıyasla kalıcı hipotiroidiyi önlemek dahil daha üstün klinik sonuçlar verir.",
+        "C": "YANLIS — 18 aylık metimazol tedavisi sonunda hastaların %80–90'ında serum TRAb düzeyi hâlen ≥0.9 IU/L seyredebilir. Bu durumda ilaç derhal kesilip hasta ablasyona yönlendirilmemeli; metimazol tedavisi en az 5 yıla (≥60 ay) tamamlanacak şekilde uzatılmalıdır. Çünkü hastaların yaklaşık %40'ında TRAb düzeylerinin kademeli olarak düşüp normale dönmesi 5-6 yıla kadar sürebilmektedir.",
+        "D": "YANLIS — 65 yaş ve üzeri subklinik hipertiroidisi olan 306 hastayı içeren 5 yıllık randomize kontrollü çalışmada; RAI uygulanan hastaların %66'sında kalıcı hipotiroidi gelişerek levotiroksin replasmanı gerekmiş, buna karşın düşük doz metimazol alan hastaların %94'ü ötiroid kalmıştır (şıktaki oranlar terstir).",
+        "E": "YANLIS — Juvenil (çocuk ve adolesan) Graves hastalarında da uzun süreli metimazol kullanımı (ortalama 5-8 yıl) oldukça etkilidir. 56 çocuk hastanın incelendiği RCT çalışmasında, 4 yıllık takip sonunda nüks oranı konvansiyonel grupta %67 iken, uzun süreli MMI grubunda yalnızca %12 olarak saptanmıştır."
+      },
+      "etiketler": [
+        "Uzun Süreli ATD",
+        "LT-MMI",
+        "Remisyon",
+        "RAI Karşılaştırması",
+        "Juvenil Graves"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Azizi et al. — Long-term thionamide antithyroid treatment of Graves' disease (Best Pract Res Clin Endocrinol Metab, 2023)"
+    },
+    {
+      "id": "s12",
+      "metin": "Graves hipertiroidisinde antitiroid ilaç (ATD) tedavisinin süresi, TSH reseptör antikoru (TRAb) kinetiği, 24 yıla varan çok uzun süreli metimazol (LT-MMI) kullanımı ve güncel klinik yönetim algoritmaları ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "18 aylık metimazol tedavisi sonunda ölçülen serum TRAb düzeyi 0.9 ila 4.4 IU/L arasında saptanan hastaların tamamında ilaç kesildiğinde nüks gelişmez; bu aralık tam immünolojik remisyonu gösterir.",
+        "B": "Graves hastalarında TSH reseptör antikorlarının (TRAb) kademeli olarak düşüp normale dönmesi hastaların yaklaşık %40'ında 5 ila 6 yıla kadar uzayabildiği için; 18 aylık standart tedavi sonunda TRAb ≥0.9 IU/L saptanan %80–90'lık hasta grubunda metimazol tedavisinin en az 5 yıla (≥60 ay) tamamlanması önerilmektedir.",
+        "C": "24 yıla varan kesintisiz çok uzun süreli metimazol (LT-MMI) tedavisinde hastaların günlük ilaç ihtiyacı zamanla artış gösterir ve 20. yılda ortalama günlük idame dozu 15 mg/gün seviyesine yükselir.",
+        "D": "Jüvenil (çocuk ve adolesan) Graves hastalarında 5 yıllık kesintisiz metimazol tedavisi tamamlandıktan sonra ilacın kesilmesini takiben 4. yıldaki nüks oranı %67 ile konvansiyonel tedavi alanlardan daha yüksek saptanmıştır.",
+        "E": "5 yılı aşan uzun süreli metimazol tedavisinde serum TRAb takibi tanısal değerini yitirir; çünkü serum TRAb düzeyleri 2. yıldan sonra hiçbir zaman 1.7 IU/L seviyesinin altına inmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hastaların ~%40'ında TRAb'nin normale dönmesi 5–6 yıl sürer; 18. ayda TRAb ≥0.9 IU/L kalan %80–90'lık grupta tedavi ≥60 aya tamamlanmalıdır.",
+      "aciklama_detay": "Graves hastalığının immünopatojenik temeli olan TSH reseptör antikorları (TRAb), hastalığın aktivitesi ve antitiroid ilaç kesilmesi sonrasındaki nüks riski ile doğrudan ilişkilidir. Konvansiyonel 12–18 aylık tedaviler sonrasında görülen yüksek nüks oranlarının temel nedeni, antikor kinetiğinin hastaların önemli bir kısmında bu süre içinde henüz normale dönmemiş olmasıdır.\n\nUzun süreli izlem çalışmalarında (Okamura ve ark.), Graves hastalarının yaklaşık %40'ında serum TRAb düzeylerinin 5 ila 6 yıl boyunca dalgalanma gösterdiği ve kademeli olarak düşerek ancak 6. yıldan sonra normale döndüğü gösterilmiştir. Bu nedenle geliştirilen yeni klinik yönetim algoritmasına göre; 18 aylık antitiroid ilaç kullanımı sonrasında yapılan değerlendirmede hastaların sadece %10–20'sinde TRAb <0.9 IU/L seviyesine inmekte (bu grupta ilaç kesilebilir), %80–90'lık büyük grupta ise TRAb ≥0.9 IU/L olarak yüksek kalmaktadır. TRAb düzeyi yüksek seyreden bu grupta ilacın kesilmesi yerine tedavinin kesintisiz olarak en az 5 yıla (≥60 ay) tamamlanması önerilmektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Carella ve arkadaşlarının 2. kuşak ölçümlerle yaptığı analizde; 18 aylık metimazol tedavisi sonunda serum TRAb düzeyi <0.9 IU/L olan hastaların tamamı remisyonda kalırken, TRAb düzeyi 0.9 ila 4.4 IU/L arasında olan hastalarda ilaç kesildikten sonra %53 oranında nüks saptanmıştır (TRAb >4.4 IU/L olanlarda nüks %85'tir).",
+        "B": "DOGRU — TRAb'nin normale dönmesi hastaların ~%40'ında 5–6 yıl sürebilir; 18. ayda TRAb ≥0.9 IU/L kalan %80–90'lık grupta tedavi ≥60 aya tamamlanmalıdır.",
+        "C": "YANLIS — 24 yıla varan kesintisiz metimazol tedavisinde günlük ihtiyaç artmaz, kademeli olarak düşer. Ortalama günlük doz 1. yılda 5.4 mg iken; 8. yılda 3.2 mg, 16. yılda 3.2 mg ve 24. yılda 2.8 mg seviyesine geriler. 24. yılda hastaların önemli bir kısmı günde ≤2.5 mg veya haftada 2-6 kez 1.25–2.5 mg idame dozlarıyla ötiroid kalmaktadır.",
+        "D": "YANLIS — Jüvenil Graves hastalarında yapılan randomize kontrollü çalışmada (Azizi ve ark.); ilaç kesildikten 4 yıl sonraki nüks oranı konvansiyonel (18–24 ay) grupta %67 iken, uzun süreli grupta yalnızca %12 olarak bulunmuştur.",
+        "E": "YANLIS — Çok uzun süreli metimazol tedavisinde serum TRAb titreleri zamanla düşmeye devam eder; başlangıçta ortalama 15 IU/mL olan TRAb düzeyi 2. yılda 1.2 IU/mL'ye, 8. yılda 1.1 IU/mL'ye, 24. yılda ise 0.9 IU/mL'ye gerilemiştir. Ayrıca tedavinin 6. yılından sonra hiçbir hastada serum TRAb düzeyi 1.7 IU/mL üzerinde saptanmamıştır."
+      },
+      "etiketler": [
+        "TRAb Kinetiği",
+        "LT-MMI",
+        "Nüks Öngörüsü",
+        "İdame Dozu",
+        "Juvenil Graves"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Azizi et al. — Long-term thionamide antithyroid treatment of Graves' disease (Best Pract Res Clin Endocrinol Metab, 2023)"
+    },
+    {
+      "id": "s13",
+      "metin": "Graves hastalığında (GD) antitiroid ilaç (ATD) tedavisi alan olgularda tedavi süresinin uzatılması, nüks riskini öngören klinik ve genetik skorlama sistemleri (GREAT ve GREAT+), uzun dönem metimazol (LT-MMI) kullanımının radyoaktif iyot (RAI) ile karşılaştırmalı klinik sonuçları ve hedefe yönelik kombinasyon tedavileri değerlendirilmektedir.\n\nGraves hastalığının medikal yönetimi ve remisyon öngörü parametreleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "GREAT (Graves Recurrent Events After Therapy) skorlama sisteminde hastalar yalnızca aile öyküsü ve sigara kullanımına göre sınıflandırılır; yaş, tiroid hacmi veya TSH reseptör antikoru (TRAb) düzeyleri bu skora dahil edilmez.",
+        "B": "Graves hastalığında antitiroid ilaç (ATD) tedavisinin 24 ayın ötesinde uzatıldığı vakalarda, 24 aydan sonraki her ilave bir yıllık tedavi süresi kalıcı remisyon oranında %16'lık bir artış sağlar; 5 ila 10 yıl (60–120 ay) uzun dönem metimazol alanlarda nüks oranı 48. ayda %15 iken, kısa dönem (18–24 ay) alanlarda %51'dir.",
+        "C": "Uzun süreli metimazol (LT-MMI) tedavisi gören hastalarda advers etki oranı %80'in üzerinde olup majör yan etkilerin (agranülositoz, hepatotoksisite) %90'ı tedavinin 3. yılından sonra gelişir.",
+        "D": "Nüks eden diffüz toksik guatrlı olgularda uzun süreli ATD kullanımı radyoaktif iyot (RAI) ile karşılaştırıldığında; duygudurum, kognitif fonksiyonlar ve kardiyak parametreler açısından RAI tedavisi LT-ATD'ye belirgin üstünlük gösterir.",
+        "E": "Metimazol tedavisine haftalık 10 mg düşük doz metotreksat (MTX) eklenmesi, TRAb antikor düzeylerinin normale dönme süresini uzatır ve ilaç kesilme (discontinuation) oranlarını belirgin şekilde düşürür."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "24 ayın ötesindeki her ilave yıl kalıcı remisyonu %16 artırır; 60–120 ay tedavi alanlarda 48. ay nüksü %15, 18–24 ay alanlarda %51'dir.",
+      "aciklama_detay": "Graves hastalığında konvansiyonel 12–18 aylık antitiroid ilaç (ATD) tedavisi sonrasında nüks oranlarının %20 ile %70 arasında seyretmesi, tedavinin 24 ayın ötesine (5-10 yıl) uzatılması konseptini ön plana çıkarmıştır.\n\nUzun dönem ATD tedavisi alan hastaların metaanaliz ve klinik izlem sonuçlarına göre, 24 aylık ATD kullanımının ötesinde her ilave 1 yıllık tedavi süresi kalıcı remisyon oranında %16'lık bir artış sağlamaktadır. 302 Graves hastasının dahil edildiği randomize çalışmada, metimazolü 18–24 ay alan grupta ilaç kesildikten sonra 12. ve 48. aylardaki nüks oranları sırasıyla %43 ve %51 iken; 60–120 ay (5–10 yıl) alan grupta nüks oranları 12. ayda yalnızca %8 ve 48. ayda %15 olarak saptanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — GREAT skorlama sistemi klinik parametreler olarak yaş, guatr boyutu/tiroid hacmi, serum serbest T4 ve TBI/TRAb düzeylerini temel alır. GREAT+ skoru ise bu klinik parametrelere ilaveten genetik belirteçleri (PTPN22 ve HLA değişimleri) ekleyerek nüks riskini (Sınıf I'de %12-34 iken Sınıf III'te %53-74) öngörür.",
+        "B": "DOGRU — 24 ayın ötesindeki her ilave yıl kalıcı remisyon oranını %16 artırır; 60–120 ay tedavi alanlarda 48. ayda nüks %15, 18–24 ay alanlarda %51'dir.",
+        "C": "YANLIS — Uzun dönem ATD tedavisinde toplam advers etki oranı %80 değil, %19.1 civarındadır ve bunların büyük çoğunluğu döküntü, mide intoleransı ve artralji gibi hafif yan etkilerden oluşur. Şiddetli/majör reaksiyonlar hastaların yalnızca %1.5'inde görülür ve agranülositoz vakalarının neredeyse tamamı tedavinin ilk 3 ayı içinde ortaya çıkar.",
+        "D": "YANLIS — Nüks eden diffüz toksik guatrlı hastalarda yapılan karşılaştırmalı çalışmalarda; uzun süreli antitiroid ilaç tedavisi radyoaktif iyota kıyasla duygudurum, kognitif fonksiyonlar, kardiyak fonksiyonlar ve tiroid disfonksiyonu gelişme sıklığı açısından RAI'den DAHA ÜSTÜN bulunmuştur.",
+        "E": "YANLIS — Metimazol tedavisine haftalık 10 mg düşük doz metotreksat eklenmesi, immunomodülatör etki göstererek yalnız MMI kullanımına kıyasla TRAb düzeylerinin daha HIZLI gerilemesini ve daha yüksek oranda ilacın başarıyla kesilmesini sağlamıştır."
+      },
+      "etiketler": [
+        "GREAT / GREAT+",
+        "Tedavi Süresi",
+        "Remisyon Artışı",
+        "Metotreksat Kombinasyonu",
+        "LT-ATD vs RAI"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Management Aspects of Medical Therapy in Graves Disease (PMC, 2024/2025)"
     }
   ]
 }
