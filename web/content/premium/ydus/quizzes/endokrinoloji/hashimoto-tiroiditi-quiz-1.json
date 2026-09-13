@@ -303,6 +303,36 @@
       ],
       "zorluk": "kolay",
       "kaynak": "Garber et al. Thyroid 2012; TEMD 2025"
+    },
+    {
+      "id": "s11",
+      "metin": "Primer hipotiroidi veya diferansiye tiroid kanseri nüks önleme tedavisi nedeniyle levotiroksin (L-T4) replasman/süpresyon tedavisi alan yetişkin bir hastada, izlem sırasında saptanan düşük TSH ve/veya yüksek serbest T4 (sT4) düzeylerinin biyokimyasal değerlendirilmesi, doz titrasyonu ilkeleri ve laboratuvar etkileşimleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Primer hipotiroidi nedeniyle L-T4 alan ve TSH düzeyi hafif subnormal (0.05 – 0.3 mU/L) saptanan bir hastada, aşırı tedavinin derecesini netleştirmek için mutlaka serbest T4 düzeyi ölçülmeli ve doz %50 oranında azaltılmalıdır.",
+        "B": "Primer hipotiroidi takibinde L-T4 kullanan bir hastada TSH <0.05 mU/L ve serbest T4 düzeyi referans aralığı ortalamasının iki katı (örneğin normal aralığı 0.9–1.9 ng/dL olan bir testte sT4: 2.8 ng/dL) saptandığında, hedef orta-normal (mid-normal) serbest T4 seviyesine ulaşmak için L-T4 dozu %50 oranında azaltılabilir ve TSH 6 ila 8 hafta sonra yeniden değerlendirilmelidir.",
+        "C": "Diferansiye tiroid kanseri nedeniyle TSH süpresyon tedavisi (hedef TSH <0.05 mU/L) alan bir hastada serbest T4 hafif yüksek saptandığında, TSH hedefini korumak mümkün olmasa dahi L-T4 dozu derhal yarı yarıya (%50) azaltılarak serbest T4 normal aralığın alt sınırına çekilmelidir.",
+        "D": "Reçetesiz satılan biyotin (5–10 mg/gün) takviyeleri alan bireylerde, biyotinillenmiş antikor içeren ticari immünölçüm yöntemlerine bağlı gelişen yalancı tirotoksikoz tablosunun (yalancı düşük TSH, yalancı yüksek sT4) ortadan kalkması için tiroid testleri biyotin kesildikten 12 saat sonra tekrarlanmalıdır.",
+        "E": "Gebelerde 2. ve 3. trimesterlarda bağlayıcı protein (TBG) değişimlerine bağlı olarak otomatize serbest T4 ölçümleri ile TSH arasında çelişki saptandığında, tanıyı doğrulamak amacıyla serbest T3 tek başına yeterlidir; Total T4 ölçümü yapılması kontrendikedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TSH <0.05 mU/L ve sT4 referans ortalamasının iki katı ise L-T4 dozu %50 azaltılabilir; her doz değişiminden 6–8 hafta sonra TSH ve sT4 tekrarlanır.",
+      "aciklama_detay": "Primer hipotiroidizm ve tiroid kanseri izleminde levotiroksin (L-T4) tedavisinin titrasyonu, serbest T4 ve TSH düzeylerinin birlikte yorumlanmasını gerektirir.\n\nPrimer hipotiroidi tedavisi gören hastalarda TSH <0.05 mU/L olarak aşırı baskılandığında ve serbest T4 düzeyi normal referans aralığı ortalamasının iki katına çıktığında (örneğin 0.9–1.9 ng/dL referans aralığında sT4: 2.8 ng/dL), aşırı tedaviyi düzeltmek ve hedef orta-normal serbest T4 seviyesine ulaşmak için L-T4 dozunun %50 oranında azaltılması gerekebilir. Yapılan tüm doz ayarlamalarından 6 ila 8 hafta sonra ilave doz ihtiyacını belirlemek amacıyla TSH (ve sT4) düzeyleri tekrarlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — L-T4 alan primer hipotiroidi hastalarında TSH hafif subnormal (0.05 – 0.3 mU/L) saptandığında serbest T4 ölçümü yapılması gerekli değildir. Bu vakalarda L-T4 dozunun günde 12 ila 25 mcg azaltılması genellikle yeterli olmaktadır.",
+        "B": "DOGRU — TSH <0.05 mU/L ve sT4 referans ortalamasının iki katı ise doz %50 azaltılabilir; kontrol 6–8 hafta sonra yapılır.",
+        "C": "YANLIS — Tiroid kanserinde TSH süpresyonu (hedef TSH <0.05 mU/L) hedeflendiğinde serbest T4 hafif yüksek seyredebilir. Eğer serbest T4 sadece hafif yüksekse, TSH'yi hedefte tutarken L-T4 dozunu azaltmak mümkün olmayabilir. Doz indirimi yalnızca serbest T4 çok yüksek olduğunda ve TSH hedefini koruyabilecek en düşük doza çekilecek şekilde planlanır.",
+        "D": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
+        "E": "YANLIS — Gebeliğin 2. ve 3. trimesterlarında bağlayıcı proteinlerdeki (TBG) değişimler ve diğer faktörler nedeniyle otomatize serbest T4 ölçümleri güvensiz olabilir. Serbest T4 ölçümü ile TSH arasında çelişki saptandığında tanıyı netleştirmek için Total T4 düzeyinin de ölçülmesi önerilmektedir."
+      },
+      "etiketler": [
+        "L-T4 Titrasyonu",
+        "TSH Süpresyonu",
+        "Primer Hipotiroidi",
+        "Biyotin İnterferansı",
+        "Doz Azaltma"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Lab Interpretation: Low TSH and high free T4 in adults; High free T4 in adults"
     }
   ]
 }
