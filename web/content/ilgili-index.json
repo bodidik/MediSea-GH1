@@ -154,6 +154,23 @@
    "baslik": "Polikistik Over Sendromu (PCOS)"
   }
  ],
+ "endokrinoloji/amiodaron-iliskili-tirotoksikoz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  }
+ ],
  "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh": [
   {
    "brans": "endokrinoloji",
@@ -305,21 +322,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipertiroidi",
-   "baslik": "Hipertiroidi ve Tirotoksikoz"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
@@ -352,6 +354,11 @@
  "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi": [
   {
    "brans": "endokrinoloji",
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "yaslida-hipertiroidizm",
    "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   },
@@ -366,19 +373,14 @@
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
-  },
-  {
    "brans": "hematoloji",
    "slug": "gebelikte-immün-ITP-yonetimi",
    "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
@@ -391,21 +393,6 @@
    "brans": "endokrinoloji",
    "slug": "izole-maternal-hipotiroksinemi-yonetimi",
    "baslik": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
-   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   }
  ],
  "endokrinoloji/gebelikte-hipotiroidizm-yonetimi": [
@@ -614,11 +601,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
   },
   {
    "brans": "endokrinoloji",
@@ -1887,23 +1869,23 @@
  "endokrinoloji/tiroid-hastaliklari-ana": [
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
-   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
   },
   {
    "brans": "endokrinoloji",
    "slug": "diabetes-mellitus-ana",
    "baslik": "Diabetes Mellitus"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -1998,18 +1980,13 @@
  "endokrinoloji/yaslida-hipertiroidizm": [
   {
    "brans": "endokrinoloji",
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
    "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelik-transient-tirotoksikoz",
-   "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
   },
   {
    "brans": "endokrinoloji",
@@ -2025,13 +2002,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   },
   {
    "brans": "endokrinoloji",
