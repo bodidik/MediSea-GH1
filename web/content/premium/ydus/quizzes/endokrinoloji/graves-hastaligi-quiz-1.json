@@ -61,6 +61,35 @@
         "RLN Monitörizasyonu"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s3",
+      "metin": "48 yaşında kadın hasta, Graves hipertiroidisi tanısıyla takip edilmektedir. Son birkaç aydır her iki gözde retro-oküler basınç hissi, göz hareketleriyle ağrı, konjonktival hiperemi, göz kapağında kızarıklık ve ödem şikayetleri gelişmiştir. Özgeçmişinde aktif sigara kullanımı öyküsü bulunmaktadır.\n\nGraves Orbitopatisinin (Tiroid Göz Hastalığı) immünopatogenezi, risk faktörleri, Klinik Aktivite Skoru (CAS) ve evreleme sistemleri ile ilgili kaynak verileri doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Sigara kullanımı orbitadaki ekstraoküler kas hacminde belirgin artışa yol açarken, orbital bağ dokusu hacmi üzerinde herhangi bir değişiklik oluşturmaz.",
+        "B": "Orbital fibroblastlarda TSH reseptörü (TSHR) ile İnsülin-Benzeri Büyüme Faktörü-1 reseptörü (IGF-1R) arasındaki fonksiyonel çapraz etkileşim (crosstalk), hidrofilik glikozaminoglikan (GAG - hyalüronik asit) sentezini ve adipogenezi sinerjik olarak uyarır.",
+        "C": "İlk başvuru değerlendirmesinde kullanılan 7 parametreli Klinik Aktivite Skorunda (CAS) puanın ≥5 olması hastalığın aktif olduğunu gösterir.",
+        "D": "Görmeyi tehdit eden (sight-threatening) Graves orbitopatisi tanısı konulabilmesi için proptozis düzeyinin ırka özgü üst sınırın en az 5 mm üzerinde olması ve kalıcı diplopi bulunması şarttır.",
+        "E": "Beyaz ırktan kadın popülasyonunda ekzoftalmometre ile ölçülen proptozis için normalin üst sınırı 23 mm kabul edilmektedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Orbital fibroblastlarda TSHR, IGF-1R ile fonksiyonel bir kompleks oluşturur; bu çapraz etkileşim hyalüronik asit salgılanmasını ve adipogenezi sinerjik olarak uyarır.",
+      "aciklama_detay": "Graves orbitopatisi (Tiroid Göz Hastalığı), retro-oküler dokuların otoimmün inflamatuvar bir hastalığıdır.\n\nOrbitopatinin temel otoantijeni orbital fibroblastlarda ve pre-adipositlerde eksprese edilen TSH reseptörüdür (TSHR). TSHR, hücre zarında IGF-1 reseptörü (IGF-1R) ile fonksiyonel bir kompleks oluşturur. Uyarılmış T ve B hücrelerinin varlığında TSHR ve IGF-1R arasındaki sinyalleşme çapraz etkileşimi (crosstalk), orbital fibroblastlardan hidrofilik glikozaminoglikan (GAG; ağırlıklı olarak hyalüronik asit) salgılanmasını ve adipogenezi sinerjik olarak uyarır. Doku içi biriken hyalüronik asidin su tutma kapasitesi retro-oküler ödeme, kas kalınlaşmasına ve proptozise yol açar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sigara kullanımı orbitopati gelişiminde kanıtlanmış güçlü bir risk faktörüdür. Ancak moleküler çalışmalar, sigara dumanının extraoküler kas hacmini değil, doğrudan orbital bağ dokusu hacmini artırdığını ve fibroblastlardan GAG üretimini doza bağımlı olarak uyararak adipogenezi tetiklediğini göstermiştir.",
+        "B": "DOGRU — TSHR, hücre zarında IGF-1R ile fonksiyonel bir kompleks oluşturur; aralarındaki sinyalleşme çapraz etkileşimi orbital fibroblastlardan hyalüronik asit salgılanmasını ve adipogenezi sinerjik olarak uyarır.",
+        "C": "YANLIS — İlk muayenede (önceki veriler yokken) kullanılan 7 noktalı Klinik Aktivite Skorunda (CAS) puanın 3 ve üzerinde (CAS ≥ 3) olması hastalığın aktif olduğunu gösterir. İmmünosüpresif ve biyolojik tedavilere (steroid, teprotumumab vb.) yanıtı öngörmede CAS ≥ 3 barajı kullanılır.",
+        "D": "YANLIS — Görmeyi tehdit eden (sight-threatening) Graves orbitopatisi tanısı; proptozis veya diplopi derecesiyle değil, distiroid optik nöropati (orbital apeks basısı) ve/veya korneyal ülserasyon / perforasyon bulunmasıyla tanımlanır ve acil müdahale gerektirir. Belirgin proptozis (≥3 mm) ve diplopi varlığı orta-şiddetli evre kriterleridir.",
+        "E": "YANLIS — Ekzoftalmometrik ölçümde normalin üst sınırı ırk ve cinsiyete göre değişkenlik gösterir: Beyaz ırk kadınlarında normal üst sınır 19 mm (erkeklerde 21 mm) kabul edilir. 23 mm olan değer ise Siyah ırk kadınları için üst sınırdır (Siyah erkeklerde 24 mm)."
+      },
+      "etiketler": [
+        "Graves Orbitopatisi",
+        "TSHR / IGF-1R",
+        "CAS",
+        "Sigara",
+        "Proptozis"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
