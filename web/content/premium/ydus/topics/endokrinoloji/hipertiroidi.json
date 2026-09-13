@@ -1,0 +1,830 @@
+{
+  "meta": {
+    "id": "hipertiroidi",
+    "branch": "endokrinoloji",
+    "baslik": "Hipertiroidi ve Tirotoksikoz",
+    "rozetler": [
+      "YENİ"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Terminolojik Ayrım: Tirotoksikoz vs. Hipertiroidizm",
+      "satirlar": [
+        {
+          "metin": "Klinik pratikte sıklıkla birbirinin yerine kullanılsa da, **tirotoksikoz** ve **hipertiroidizm** fizyopatolojik olarak iki ayrı kavramı temsil eder:"
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İki Kavramın Ayrımı",
+      "kolonlar": [
+        "Kavram",
+        "Tanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Tirotoksikoz",
+            "Kaynağından bağımsız olarak, dolaşımdaki serbest tiroid hormonlarının (serbest T4 ve/veya serbest T3) doku düzeyinde yüksek olmasına bağlı gelişen tüm klinik, biyokimyasal ve metabolik sendromdur. Bu durum tiroid bezinin aşırı hormon sentezinden kaynaklanabileceği gibi, foliküler yıkım (tiroiditler), eksojen hormon alımı veya ektopik tiroid dokusuna da bağlı olabilir."
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Hipertiroidizm",
+            "Yalnızca tiroid bezinin foliküler hücrelerinden **de novo (artmış yeni) tiroid hormonu sentez ve salgılanması** ile karakterize tirotoksikoz durumlarını ifade eder."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Etiyoloji ve Fizyopatolojik Sınıflandırma",
+      "satirlar": [
+        {
+          "metin": "Tirotoksikoz etiyolojisi, tiroid bezinin yeni hormon sentezleyip sentezlemediğine göre iki ana sınıfa ayrılır. Bu ayırım, tanısal süreçte **24 saatlik radyoaktif iyot tutulumu (RAIU)** ve **renkli Doppler ultrasonografi (RDUS)** kanlanma paternleri ile netleştirilir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tirotoksikoz Etiyolojisi — RAIU ve Doppler Paternine Göre",
+      "kolonlar": [
+        "Patern",
+        "Mekanizma",
+        "Etiyolojiler"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Yüksek / Normal RAIU veya Artmış Doppler Akışı",
+            "De Novo Hormon Sentezi = Gerçek Hipertiroidi",
+            "**Otoimmün:** Graves Hastalığı (TSHR Agonizması) · **Otonom Nodüler:** Toksik MNG, Toksik Adenom · **TSH Aracılı:** TSH Salgılayan Hipofiz Adenomu · **hCG Aracılı:** Gestasyonel Tirotoksikoz, Koryokarsinom"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Düşük / Baskılanmış RAIU veya Avasvüler Akım",
+            "Yıkıcı Tiroiditler, Ekstratiroidal / Eksojen",
+            "**Yıkıcı Tiroiditler:** Subakut (de Quervain), Sessiz/Ağrısız, Postpartum, Radyasyon · **İlaç Kaynaklı:** Amiodaron (Tip 2), İmmün Kontrol Noktası İnhibitörleri, TKI · **Eksojen:** Faktisöz / İatrojenik T4/T3 · **Ektopik:** Struma Ovarii, Metastatik Ca"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "A. Yüksek / Normal RAIU veya Artmış Doppler Akışı İle Giden Durumlar (Gerçek Hipertiroidizm)",
+      "kolonlar": [
+        "Etiyoloji",
+        "Mekanizma",
+        "Klinik / YDUS Notu"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Graves Hastalığı",
+            "TSH reseptörüne karşı gelişen stimülan antikorların (TRAb/TSI) reseptörü sürekli aktif kılmasıyla seyredir.",
+            "İyot yeterli bölgelerde aşikar hipertiroidizmin en sık etiyolojik nedenidir. *(Ayrı başlıkta detaylandırılmıştır).*"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Otonom Tiroid Nodülleri (Toksik Multinodüler Guatr ve Toksik Adenom)",
+            "TSH reseptörü (*TSHR*) veya Gs-alfa (*GNAS*) genlerindeki **somatik kazanılmış aktive edici mutasyonlar** sonucu TSH uyarısından bağımsız, otonom hormon sentezi gerçekleşir.",
+            "Özellikle ileri yaş grupta ve hafif-orta derecede iyot eksikliği olan coğrafyalarda prevalansı yüksektir."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "TSH Aracılı Hipertiroidi (Santral / Sekonder)",
+            "TSH salgılayan hipofiz adenomu (TSHoma) veya Tiroid Hormon Direnci (THD-beta) gibi nadir durumlarda görülür.",
+            "TSH düzeyinin baskılanmamış (normal veya yüksek) olmasıyla primer formlardan ayrılır."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "hCG Aracılı Hipertiroidi",
+            "Aşırı yükselen hCG molekülünün alfa alt birim benzerliği nedeniyle TSH reseptörlerini uyarması sonucu oluşur.",
+            "Gebeliğin ilk trimesterinde, molar gebelikte veya koryokarsinomda görülür."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "B. Düşük / Baskılanmış RAIU veya Azalmış Doppler Akışı İle Giden Durumlar (Tiroiditler ve Ekstratiroidal Kaynaklar)",
+      "kolonlar": [
+        "Grup",
+        "Alt Tipler",
+        "Mekanizma / Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yıkıcı (Destrüktif) Tiroiditler",
+            "*Subakut Granülomatöz (de Quervain) Tiroidit:* Viral enfeksiyonlar sonrası gelişen ağrılı tiroidit fazı. · *Sessiz / Ağrısız ve Postpartum Tiroidit:* Otoimmün zeminli, ağrısız tirotoksik faz. · *İlaç İndüklü Tiroiditler:* **Amiodaron Tip 2 AİT** (doğrudan sitotoksik etki), **İmmün Kontrol Noktası İnhibitörleri** (anti-PD-1, anti-CTLA-4) ve **Tirozin Kinaz İnhibitörleri** (Sunitinib, Sorafenib).",
+            "Folikül epitel bütünlüğünün bozulmasıyla depolanmış tiroid hormonlarının dolaşıma sızması sonucu gelişir; yeni hormon sentezi yoktur."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Eksojen Tiroid Hormonu Maruziyeti",
+            "*İatrojenik veya Faktisöz Tirotoksikoz:* Zayıflama amacıyla veya supraklinik replasmanla dışarıdan aşırı levotiroksin (T4) ya da liotironin (T3) alımı.",
+            "—"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Ektopik Tiroid Doku Kaynakları",
+            "*Struma Ovarii:* Over teratomu içerisinde fonksiyonel tiroid dokusu bulunması. · *Metastatik Fonksiyonel Foliküler Tiroid Karsinomu*.",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyoloji ve Sistemik Organ Etkileri",
+      "satirlar": [
+        {
+          "metin": "Tiroid hormonları (özellikle biyolojik aktif form olan **T3**), nükleer tiroid hormon reseptörlerine (**TR-alfa1** ve **TR-beta**) bağlanarak gen ekspresyonunu düzenler. Doku düzeyindeki T3 yüksekliği bazal metabolizma hızını, oksijen tüketimini ve Na+/K+-ATPaz aktivitesini artırır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "T3 Hormonunun Hedef Doku Etkileri",
+      "kolonlar": [
+        "Sistem",
+        "Moleküler Etki",
+        "Klinik Yansıma"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kardiyovasküler",
+            "TR-α1 Uyarımı · SERCA2a ↑ / PLB ↓",
+            "SVR Düşüşü↓ · Kardiyak Debi↑ · Atriyal Fibrilasyon"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "İskelet",
+            "TR-β1 / TR-α Osteoklast uyarımı",
+            "Kemik Döngüsü↑ · Kortikal Kayıp · Hiperkalsiüri"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Nöromüsküler",
+            "Artmış Sym. Tonus / Tremor",
+            "Proksimal Miyopati · Paralizi (TPP)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Metabolik / GİS",
+            "Bazal Met. BGH↑ · Lipit Düşüşü↓",
+            "Kilo Kaybı / İştah↑ · Hiperdefekasyon · Glukoz Labilite"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Reprodüktif",
+            "SHBG Artışı↑ · Estradiol / Tes. Aromatisasyonu↑",
+            "Oligomenore / Jinekomasti"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sistem Sistem Klinik Karşılıklar",
+      "satirlar": [
+        {
+          "metin": "**Kardiyovasküler Sistem:** T3, miyositlerde SERCA2a ekspresyonunu artırırken fosfolambanı baskılar. Periferik vasküler direnç (SVR) düşer, venöz dönüş ve kardiyak debi (CO) belirgin artar. Sistolik kan basıncı yükselip diyastolik düştüğü için **genişlemiş nabız basıncı** oluşur. Dinlenme taşikardisi, premature atriyal kompleksler ve özellikle yaşlı popülasyonda **Atriyal Fibrilasyon (AF)** (%10-25) görülür."
+        },
+        {
+          "metin": "**İskelet Sistemi ve Kalsiyum Metabolizması:** T3, osteoklastik kemik rezorpsiyonunu doğrudan uyararak kemik döngüsünü hızlandırır. Özellikle **kortikal kemik mineral yoğunluğunda (BMD) kayıp**, osteoporoz ve kırık riski artar. Yıkıma bağlı gelişen hafif hiperkalsemi PTH'yi baskılar; bağırsak kalsiyum emilimi düşerken **hiperkalsiüri** ortaya çıkar."
+        },
+        {
+          "metin": "**Nöromüsküler Sistem:** Sempatik hiperaktiviteye bağlı ince el tremoru, anksiyete, duygu-durum labilitesi ve hiperrefleksi gelişir. Omuz ve kalça kuşağında belirgin **proksimal miyopati** izlenir. Özellikle Asya kökenli erkeklerde, yüksek karbonhidratlı beslenme veya egzersiz sonrası gelişen **Tirotoksik Periyodik Paralizi (TPP)** acil bir nöromüsküler tablodur."
+        },
+        {
+          "metin": "**Apatetik (Maskeli) Tirotoksikoz:** Geriatrik yaş grubunda klasik sempatik bulgular (taşikardi, tremor, anksiyete) siliktir. Tabloya apati, kognitif gerileme, belirgin kilo kaybı, proksimal kas atrofisi ve dirençli atriyal fibrilasyon hakimdir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanısal Algoritma ve Laboratuvar Değerlendirmesi",
+      "satirlar": [
+        {
+          "metin": "Tirotoksikoz şüphesinde tanısal süreç basamaklı olarak yürütülür."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanısal Algoritma — Serum TSH'den Etiyolojiye",
+      "kolonlar": [
+        "Basamak",
+        "Bulgu",
+        "Yorum / Sonraki Adım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Serum TSH Ölçümü",
+            "TSH Baskılı (<0.1 mU/L)",
+            "sT4 ve sT3 Ölçümü → sT4 ve/veya sT3 Yüksek: **Aşikar Tirotoksikoz** · sT4 & sT3 Normal: **Subklinik Tirotoksikoz**"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Serum TSH Ölçümü",
+            "TSH Normal (Ötiroidi)",
+            "—"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Serum TSH Ölçümü",
+            "TSH Yüksek (Nadir Tablo)",
+            "sT4 & sT3 Ölçümü → sT4/sT3 Yüksek: **TSHoma / THD** · sT4/sT3 Normal: **Biyotin İnterferansı**"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Etiyoloji Tayini — TRAb / TSI",
+            "Graves Ayırımı",
+            "Pozitif: **GD** · Negatif ise sintigrafi / Doppler ile devam"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Etiyoloji Tayini — RAIU / Sintigrafi",
+            "Nodüler Bez / Tiroidit",
+            "Diffüz Yüksek: **Graves** · Odaksal Yüksek: **tMNG / TA** · Baskılanmış / Sıfır: **Tiroidit / Eksojen T4 / İyot Yükü**"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Etiyoloji Tayini — Renkli Doppler USG",
+            "Gebelikte / İyot Yükünde",
+            "Hipervasküler (Inferno): **Graves / TMNG** · Avasvüler / Düşük: **Tiroidit**"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "A. Birincil Biyokimyasal Profil ve Ayırıcı Tanı Kriterleri",
+      "satirlar": [
+        {
+          "metin": "**Serum TSH ve Serbest Hormonlar (fT4 / fT3):** Primer tirotoksikozda TSH baskılıdır (<0.1 mU/L)."
+        },
+        {
+          "metin": "**Serum Total T3 / Total T4 Oranı (ng/mcg):** Etiyolojik ayırımda son derece değerlidir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Birincil Biyokimyasal Profil",
+      "kolonlar": [
+        "Tablo",
+        "TSH",
+        "fT4 / fT3"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Aşikar Hipertiroidi",
+            "Baskılı",
+            "fT4 ve/veya fT3 yüksektir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "T3 Tirotoksikozu",
+            "Baskılı",
+            "fT4 normal ancak fT3 yüksektir (özellikle erken evre otonom nodüllerde)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Subklinik Hipertiroidi",
+            "Baskılı (<0.1 mU/L veya 0.1-0.4 mU/L aralığı)",
+            "fT4 ve fT3 tamamen normaldir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyolojik Ayırımda Belirleyici Testler",
+      "kolonlar": [
+        "Test",
+        "Ölçüt",
+        "Yorum"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Serum Total T3 / Total T4 Oranı (ng/mcg)",
+            "**T3 / T4 Oranı > 20**",
+            "Hipertiroidizmi (de novo sentez artışını; Graves, tMNG, Toksik Adenom) destekler."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Serum Total T3 / Total T4 Oranı (ng/mcg)",
+            "**T3 / T4 Oranı < 20**",
+            "Yıkıcı tiroiditleri (depo sızmasını) veya eksojen T4 alımını destekler."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Serum Tiroglobulin (Tg) Düzeyi",
+            "Düşük RAIU saptanan vakalarda",
+            "**Faktisöz tirotoksikozu (Tg baskılı / düşük)**, **destrüktif tiroiditlerden veya ekstratiroidal kaynaklardan (Tg yüksek)** ayırmada belirleyicidir."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Biyotin (Vitamin B7) İnterferansı",
+            "Yüksek doz biyotin (≥5-10 mg/gün)",
+            "Yüksek doz biyotin kullanımı, laboratuvar immünölçüm yöntemlerinde biyotin-streptavidin etkileşimini bozarak TSH'yi yalancı düşük, fT4 ve fT3'ü yalancı yüksek gösterebilir. Test öncesi biyotin **en az 48 saat önce kesilmelidir**."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Özel Etiyolojik Durumlar ve Ayırıcı Tanı Püf Noktaları",
+      "satirlar": [
+        {
+          "metin": "Amiodaron ağırlıkça %37 oranında iyot içeren son derece lipofilik bir moleküldür. Gelişen tirotoksikoz iki ana patojenik mekanizmaya ayrılır ve yönetimi tamamen farklıdır:"
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "A. Amiodaron İlişkili Tirotoksikoz (AİT): Tip 1 vs. Tip 2",
+      "kolonlar": [
+        "Parametre / Özellik",
+        "Tip 1 AİT (Hipertiroidizm)",
+        "Tip 2 AİT (Destrüktif Tiroidit)"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Temel Patoloji",
+            "İyot yüküne bağlı de novo hormon sentez artışı (Jod-Basedow)",
+            "Amiodaronun doğrudan foliküler sitotoksik etkisi / Yıkım"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Altta Yatan Hastalık",
+            "tMNG, Toksik Adenom, Gizli Graves",
+            "Genellikle yok (Ötiroid parankim)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Başlangıç Süresi",
+            "Erken evre (Ortalama 3.5 ay)",
+            "Geç evre (Ortalama 30 ay) veya ilaç kesildikten aylar sonra"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Renkli Doppler USG",
+            "**Hipervasküler / Artmış parenkimal kanlanma**",
+            "**Avasvüler / Baskılanmış kanlanma**"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "99mTc-MIBI Sintigrafi",
+            "**Tutulum korunmuş / yüksek**",
+            "**Tutulum belirgin azalmış / kaybolmuş**"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "İlk Basamak Tedavi",
+            "**Antitiroid İlaçlar** (Metimazol 30-40 mg/gün ± Perklorat)",
+            "**Oral Glukokortikoidler** (Prednizon 30-40 mg/gün)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Ayırt Edilemeyen / Miks Vakalar",
+      "metin": "Metimazol + Prednizon kombine başlanır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "İyot İndüklü Tirotoksikoz (Jod-Basedow Fenomeni)",
+      "satirlar": [
+        {
+          "metin": "Otonom odakları bulunan (tMNG, Toksik Adenom) bireylerin, radyokontrast maddeler (BT, anjiyografi) veya iyotlu preparatlarla karşılaşması sonucu gelişir. Otonom nodüller otoregülasyonu (Wolff-Chaikoff etkisi) kaybettiği için aşırı iyodu hammadde olarak kullanıp kontrolsüz hormon sentezler. Kontrast maruziyetinden **2 ila 12 hafta sonra** ortaya çıkar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tedavi Stratejileri ve Yöntemler",
+      "satirlar": [
+        {
+          "metin": "Tirotoksikoz yönetimi semptomatik kontrol ve primer etiyolojiye yönelik spesifik tedaviden oluşur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tirotoksikoz Tedavisi — Dört Kol",
+      "kolonlar": [
+        "Yöntem",
+        "Ajanlar",
+        "Kritik Notlar"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Semptomatik Kontrol (Beta Blokerler)",
+            "Propranolol / Atenolol",
+            "Adrenerjik Tonus↓ · Propranolol ile T4-T3 Dönüşümü↓"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Antitiroid İlaçlar (Tionamidler)",
+            "Metimazol (İlk Tercih) · PTU (Fırtına / 1.Tri)",
+            "TPO İnhibisyonu · Relaps Riski Var"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Radyoaktif İyot (RAI - 131-I)",
+            "Kalıcı Ablasyon",
+            "Hipotiroidi Gelişir · Gebelikte Kontrendike · Oftalmopatide Risk! (Steroid Profilaksisi)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Cerrahi (Tiroidektomi)",
+            "Total Tiroidektomi",
+            "Büyük Guatr / Bası · Şüpheli Nodül · Hızlı Kür İsteği · Preop İyot/ATD"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "A. Semptomatik Tedavi: Beta-Adrenerjik Blokörler",
+      "satirlar": [
+        {
+          "metin": "Tüm semptomatik tirotoksik hastalarda kontrendikasyon yoksa derhal başlanmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Beta-Adrenerjik Blokörler — Ajanlar ve Dozlar",
+      "kolonlar": [
+        "Ajan",
+        "Doz",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Atenolol",
+            "25-50 mg/gün",
+            "Beta-1 selektif olması ve günde tek doz kullanımı nedeniyle sık tercih edilir."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Propranolol",
+            "40-160 mg/gün",
+            "Non-selektif beta blokerdir. Yüksek dozlarında (≥160 mg/gün) ek olarak **periferik T4'ün T3'e dönüşümünü (Tip 1 deiyodinazı) inhibe eder**; tiroid fırtınasında ilk tercihtir."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "*Beta Bloker İntoleransında:*",
+            "Diltiazem veya verapamil",
+            "Kalp hızını kontrol etmek için kalsiyum kanal blokerleri verilebilir."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "B. Antitiroid İlaçlar (Tionamidler)",
+      "satirlar": [
+        {
+          "metin": "Tionamidler (Metimazol, Propiltiourasil), tiroid peroksidaz (**TPO**) enzimini inhibe ederek iyodun organifikasyonunu ve tiroglobulin ile kenetlenmesini engeller."
+        },
+        {
+          "metin": "**Metimazol (MMI):** Günde tek doz kullanımı, daha hızlı eütroidi sağlaması ve PTU'ya göre belirgin düşük hepatotoksisite riski nedeniyle **gebelik dışı tüm vakalarda ilk seçenektir**."
+        },
+        {
+          "metin": "**Propiltiourasil (PTU):** Ek olarak periferik dokularda Tip 1 deiyodinazı inhibe eder. Fulminan karaciğer yetmezliği riski taşıdığı için kullanımı; **tiroid fırtınası**, **gebeliğin ilk trimesterı** ve MMI alerjisi ile sınırlandırılmıştır."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Majör Yan Etki — Agranülositoz",
+      "metin": "Mutlak nötrofil sayısının <500/microL olmasıdır. Hastalara boğaz ağrısı veya ateş geliştirdiklerinde ilacı derhal kesip tam kan sayımı yaptırmaları tembihlenmelidir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "C. İyot Solüsyonları (Potasyum İyodür - SSKI / Lugol)",
+      "satirlar": [
+        {
+          "metin": "Aşırı doz inorganik iyot, depolanmış hormonların salınımını hızla inhibe eder ve geçici olarak hormon sentezini durdurur (akut Wolff-Chaikoff etkisi)."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Kritik Altın Kural",
+      "metin": "İyot solüsyonları (SSKI/Lugol), otonom nodüllerde verilen iyodun yeni hormon sentezinde hammadde olarak kullanılmasını (Jod-Basedow alevlenmesi) önlemek amacıyla **antitiroid ilaçtan en az 1 saat SONRA verilmelidir**."
+    },
+    {
+      "tip": "metin",
+      "baslik": "D. Subklinik Hipertiroidizmde Tedavi Endikasyonları",
+      "satirlar": [
+        {
+          "metin": "Subklinik hipertiroidi (normal fT4/fT3, TSH <0.5 mU/L) varlığında tedavi kararı TSH baskılanmasının derecesine ve risk faktörlerine göre verilir:"
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Subklinik Hipertiroidizm — TSH Düzeyine Göre Karar",
+      "kolonlar": [
+        "TSH Düzeyi",
+        "Kime",
+        "Karar"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Ağır Baskılanmış TSH (<0.1 mU/L - Grade 2)",
+            "**Yaşı ≥65 olan tüm bireylerde**, kardiyovasküler hastalığı/riski olanlarda, osteoporozu bulunanlarda veya semptomatik hastalarda",
+            "**Tedavi VERİLMELİDİR**"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Hafif Baskılanmış TSH (0.1 - 0.4 mU/L - Grade 1)",
+            "Birey ≥65 yaşında ise ve kardiyak/kemik risk faktörleri taşıyorsa veya sintigrafide otonom sıcak nodül saptanmışsa",
+            "**Tedavi değerlendirilmelidir**"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Endokrinolojik Acil: Tiroid Fırtınası (Thyroid Storm)",
+      "satirlar": [
+        {
+          "metin": "Tirotoksikozun hayatı tehdit eden, multisistem organ dekompansasyonu ile seyreden en ağır klinik tablosudur. Sıklıkla enfeksiyon, cerrahi, travma, antitiroid ilacın aniden kesilmesi veya iyot yüklenmesi gibi bir tetikleyiciyle ortaya çıkar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanısal Yaklaşım",
+      "satirlar": [
+        {
+          "metin": "Tanı klinik parametrelere dayanır (**Burch-Wartofsky Skorlama Sistemi**; ≥45 puan tiroid fırtınasını destekler)."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Burch-Wartofsky Skorlama Sistemi (≥45 puan tiroid fırtınasını destekler)",
+      "kolonlar": [
+        "Eksen",
+        "Bulgular"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "*Termoregülasyon:*",
+            "Belirgin yüksek ateş / hiperpreksi (38.5-40°C+)."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "*Kardiyovasküler:*",
+            "Şiddetli taşikardi (>140/dk), atriyal fibrilasyon, pulmoner ödem ve kardiyojenik şok."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "*Santral Sinir Sistemi:*",
+            "Ajitasyon, deliryum, psikoz, stupor veya koma."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "*Gastrointestinal / Hepatik:*",
+            "Sarılık (kötü prognostik), bulantı, kusma, diyare."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tiroid Fırtınasında Beşli Tedavi Protokolü",
+      "kolonlar": [
+        "Basamak",
+        "İlaç ve Doz",
+        "Açıklama"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "1. ADRENERJİK BLOKAJ",
+            "Propranolol: 60-80 mg oral (4-6 saatte bir) veya IV Esmolol yükleme/infüzyonu.",
+            "—"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "2. HORMON SENTEZİNİN ENGELENMESİ (ANTİTİROİD İLAÇ)",
+            "Propiltiourasil (PTU): 500-1000 mg yükleme, ardından 250 mg (4 saatte bir) (Veya Metimazol 20 mg 4-6 saatte bir).",
+            "PTU periferik T4-T3 dönüşümünü de engeller."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "3. HORMON SALINIMININ BLOKE EDİLMESİ (İYOT SOLÜSYONLARI)",
+            "SSKI (5 damla 6 saatte bir) veya Lugol solüsyonu (4-8 damla 6-8 saatte bir).",
+            "**KRİTİK KURAL: İyot, antitiroid ilaçtan EN AZ 1 SAAT SONRA verilmelidir!**"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "4. PERİFERİK T4-T3 DÖNÜŞÜMÜNÜN İNHİBİSYONU VE SÜRRENAL DESTEK",
+            "Hidrokortizon: 300 mg IV yükleme, ardından 100 mg (8 saatte bir).",
+            "—"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "5. ENTEROHEPATİK DOLAŞIMIN KESİLMESİ",
+            "Kolestiramin: 4 g oral (6 saatte bir)",
+            "Atılan hormonların emilimini engeller."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "baslik": "Dirençli Vakalar",
+      "metin": "Dirençli vakalarda plazmaferez (terapötik plazma değişimi) dolaşımdaki antikor ve hormonları hızla uzaklaştırmak için köprü tedavisi olarak kullanılabilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Etiyolojik ve Tanısal Karşılaştırma Özeti",
+      "kolonlar": [
+        "Klinik / Tanısal Özellik",
+        "Graves Hastalığı",
+        "Toksik MNG / Toksik Adenom",
+        "Yıkıcı Tiroiditler"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Temel Mekanizma",
+            "TRAb / TSI ile TSHR agonizması",
+            "Somatik mutasyonlarla fokal otonomi",
+            "Folikül parçalanması ve depo sızması"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "RAIU / Sintigrafi",
+            "Diffüz homojen yüksek tutulum",
+            "Odaksal sıcak nodül(ler) / Asimetrik",
+            "Baskılanmış / Sıfıra yakın tutulum"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Renkli Doppler USG",
+            "Parankimal hipervaskülarite (Inferno)",
+            "Otonom nodül vaskülaritesi",
+            "Avasvüler / Akım azalmış"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Serum T3 / T4 Oranı",
+            "> 20 (ng/mcg)",
+            "> 20 (ng/mcg)",
+            "< 20 (ng/mcg)"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Birincil Tedavi Yaklaşımı",
+            "Antitiroid İlaçlar / RAI / Cerrahi",
+            "RAI Ablasyonu veya Cerrahi",
+            "Beta Bloker (Destek tedavisi)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "baslik": "Özet",
+      "metin": "Tirotoksikoz yönetiminde en kritik ilk adım; de novo sentez artışı ile seyreden hipertiroidizm durumlarını, yıkıcı tiroidit süreçlerinden ve eksojen kaynaklardan doğru ayırt etmektir."
+    }
+  ]
+}

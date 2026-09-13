@@ -14,6 +14,14 @@
       "emoji": "🦋",
       "konular": [
         {
+          "id": "hipertiroidi",
+          "baslik": "Hipertiroidi ve Tirotoksikoz",
+          "rozetler": [
+            "YENİ"
+          ],
+          "hazir": true
+        },
+        {
           "id": "santral-hipotiroidizm",
           "baslik": "Santral Hipotiroidizm",
           "rozetler": [
