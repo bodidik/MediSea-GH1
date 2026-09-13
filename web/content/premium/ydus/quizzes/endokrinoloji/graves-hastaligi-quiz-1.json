@@ -149,6 +149,124 @@
         "ATX-GD-59"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s6",
+      "metin": "46 yaşında kadın hasta; her iki gözde öne doğru fırlama (proptozis), çift görme (diplopi) ve göz çevresinde dolgunluk şikayetleriyle başvuruyor. Yapılan muayenede bilateral üst kapak retraksiyonu ve kısıtlı göz hareketleri saptanıyor. Çekilen orbital bilgisayarlı tomografi (BT) ve manyetik rezonans görüntülemede (MRG) ekstraoküler kasların (EOM) gövde (belly) kısımlarında genişleme izlenirken, tendon yapışma yerlerinin (insertion) korunduğu (sparing) tespit ediliyor.\n\nGraves Orbitopatisinin (Tiroid Göz Hastalığı - GED) klinik ve radyolojik değerlendirmesi, MRG sekans özellikleri ve radyolojik ayırıcı tanıları ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "İdiyopatik Orbital İnflamasyon (İOİ / orbital psödötümör), Graves orbitopatisinin aksine sıklıkla ekstraoküler kasların tendon yapışma yerlerini (tendinous insertions) de kapsar ve ağrılı inflamatuvar seyir gösterir.",
+        "B": "3 Tesla MRG'de uygulanan Dixon-T2 ağırlıklı görüntüleme (Dixon-T2WI), inflamasyonlu ekstraoküler kasları saptamada konvansiyonel T1 ve T2 sekanslarına kıyasla daha düşük duyarlılığa ancak daha yüksek özgüllüğe sahiptir.",
+        "C": "Graves orbitopatisine bağlı gelişen Kompresif Optik Nöropatide (KON), görme alanındaki bozulmayı (mean deviation - MD) en güçlü öngören radyolojik parametre inferior rektus kasının alanındaki artıştır.",
+        "D": "Orbital lenfoma vakalarında ekstraoküler kas tutulumu tipik olarak bilateral, ağrısız ve tendon yapışma yerlerinin korunduğu homojen bir tutulum paterni gösterir.",
+        "E": "BT incelemesinde Hounsfield Ünitesi (HU) yoğunluk ölçümlerinde, ekstraoküler kaslardaki yağ infiltrasyonuna bağlı olarak Graves hastalarının kas densitesi sağlıklı kontrollere göre belirgin derecede daha yüksek (daha pozitif HU) saptanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Graves orbitopatisinde kas gövdesi genişler, tendon yapışma yerleri korunur (tendon sparing); İdiyopatik Orbital İnflamasyonda ise tendon yapışma yerleri de tutulur ve tablo ağrılıdır.",
+      "aciklama_detay": "Graves Orbitopatisi (GED), erişkinlerde en sık görülen orbital patolojidir. Klinik tanının doğrulanması, hastalık aktivitesinin değerlendirilmesi ve ayırıcı tanıların yapılması aşamasında BT ve MRG kilit rol oynar.\n\nİdiyopatik Orbital İnflamasyon (İOİ / orbital psödötümör), ekstraoküler kas tutulumu yapan hastalıkların radyolojik ayırıcı tanısında öne çıkar. Graves orbitopatisinde kas gövdesi (belly) genişlerken tendon yapışma yerleri karakteristik olarak korunur (tendon sparing). Buna karşılık İOİ'de inflamatuvar süreç ekstraoküler kasların tendon yapışma yerlerini de tutar (tendon involvement); retro-bulber yağ dokusuna, sklera-göz küresi bileşkesine ve kavernöz sinüse doğru uzanım gösterebilen ağrılı bir tablo oluşturur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Graves orbitopatisinde tendon yapışma yerleri korunurken, İdiyopatik Orbital İnflamasyonda tendon yapışma yerleri de tutulur; retro-bulber yağ dokusuna, sklera-göz küresi bileşkesine ve kavernöz sinüse uzanabilen ağrılı bir tablodur.",
+        "B": "YANLIS — 3 Tesla MRG'de Dixon-T2WI sekansı, Graves orbitopatisinde inflamasyonlu ekstraoküler kasların tespiti açısından konvansiyonel T1, T2 ve yağ baskılı T2WI sekanslarına kıyasla hem daha yüksek duyarlılığa (%100 vs. %94.7) hem de daha yüksek özgüllüğe (%71.2 vs. %68.5) sahiptir. Ayrıca artefakt oluşturma oranı belirgin derecede düşüktür.",
+        "C": "YANLIS — Kompresif Optik Nöropati (KON) gelişen Graves hastalarında BT ve MRG'de yapılan çok değişkenli regresyon analizleri; görme alanı bozulmasını (mean deviation - MD) toplam kas alanından veya inferior rektustan ziyade süperior rektus-levatör kas kompleksinin alanındaki artışın bağımsız ve en güçlü şekilde öngördüğünü göstermiştir.",
+        "D": "YANLIS — Primer orbital lenfomalar ekstraoküler kasları tuttuğunda sunum tipik olarak tek taraflı (unilateral) ve ağrısızdır; Graves'in aksine tendon yapışma yerlerinde kalınlaşma ve tendon tutulumu eşlik eder.",
+        "E": "YANLIS — Ekstraoküler kaslardaki yağ infiltrasyonu Hounsfield Ünitesi (HU) densitesini düşürür (yağ dokusu negatif HU değerine sahiptir). Bu nedenle GED hastalarının ekstraoküler kas HU densitesi (−40.4 HU), sağlıklı kontrollerin kas densitesine (−34.8 HU) kıyasla anlamlı derecede daha düşük (daha negatif) ölçülür."
+      },
+      "etiketler": [
+        "Graves Orbitopatisi",
+        "Orbital Görüntüleme",
+        "Tendon Sparing",
+        "Dixon-T2WI",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s7",
+      "metin": "Graves orbitopatisinin (GED) klinik derecelendirme ve aktivite skorlama sistemleri (CAS, EGOGO, NO SPECS, VISA), radyolojik görüntüleme sekansları (BT ve MRG) ve ayırıcı tanıya giren diğer orbital patolojiler ile ilgili kaynak verileri doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Clinical Activity Score (CAS) sisteminde periorbital inflamasyona ait 7 parametrelik ilk değerlendirmede skorun ≥4 olması, kortikosteroid tedavisinin etkinliğini öngörmede %80 pozitif tahmin değerine (PPV) sahiptir.",
+        "B": "VISA derecelendirme sisteminde inflamasyon parametreleri üzerinden 10 puanlık ölçekte skorun ≥3 olması, progresif inflamasyonu gösterir ve agresif immunomodülatör tedavi gerektirir.",
+        "C": "Graves orbitopatili hastalarda üst göz kapağı retraksiyonu (upper eyelid retraction) yaklaşık %40 oranında görülür ve primer olarak izole inferior rektus kası büyümesi ile korelasyon gösterir.",
+        "D": "Primer orbital lenfoma vakalarında ekstraoküler kas tutulumu tipik olarak bilateral, ağrısız ve tendon yapışma yerlerinin korunduğu (tendon sparing) bir patern sergiler.",
+        "E": "3 Tesla MRG'de uygulanan Dixon-T2 ağırlıklı görüntüleme (Dixon-T2WI), konvansiyonel T1 ve T2 sekanslarına kıyasla inflamasyonlu ekstraoküler kasları saptamada daha düşük duyarlılığa sahiptir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İlk başvuruda CAS ≥4 olması, kortikosteroid tedavisinin başarısını öngörmede %80 pozitif tahmin değerine (ve %64 negatif tahmin değerine) sahiptir.",
+      "aciklama_detay": "Graves orbitopatisinde (GED) hastalık aktivitesinin değerlendirilmesi, tedavi stratejisinin belirlenmesi ve radyolojik ayırıcı tanıların yapılması klinik süreçlerin temelini oluşturur.\n\nClinical Activity Score (CAS), periorbital yumuşak doku inflamasyonuna ait 7 farklı klinik belirti ve semptomu puanlayan ikili bir skorlama sistemidir. İlk başvuru değerlendirmesinde CAS puanının 4 ve üzerinde (≥4) olması, uygulanacak immünosüpresif kortikosteroid tedavisinin başarısını öngörmede %80 pozitif tahmin değerine (PPV) ve %64 negatif tahmin değerine (NPV) sahiptir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İlk başvuru değerlendirmesinde CAS ≥4, kortikosteroid tedavisinin başarısını öngörmede %80 PPV ve %64 NPV taşır.",
+        "B": "YANLIS — VISA (Vision, Inflammation, Strabismus, Appearance) sisteminde 10 üzerinden hesaplanan inflamasyon skorunda, puanın 4'ün altında (<4) olması durumunda hastalar konservatif izlenir; puanın 5 ve üzerinde (≥5) olması progresif inflamasyonu gösterir ve daha agresif bir medikal rejimi gerektirir.",
+        "C": "YANLIS — Graves orbitopatili hastaların %80'inden fazlasında üst göz kapağı retraksiyonu gelişir. Bu bulgu izole inferior rektus ile değil, süperior rektus-levatör kas kompleksinin büyümesi ile doğrudan korelasyon gösterir. (İnferior rektus genel olarak en sık büyüyen kas kabul edilse de izole süperior rektus-levatör kompleksi tutulumu hastaların %30'unda görülür).",
+        "D": "YANLIS — Orbital lenfomada ekstraoküler kas tutulumu genellikle tek taraflı (unilateral) ve ağrısızdır; Graves'in aksine tendon kalınlaşması ve tendon yapışma yerlerinin tutulumu eşlik eder.",
+        "E": "YANLIS — 3 Tesla MRG'de uygulanan Dixon-T2WI sekansı, konvansiyonel T1, T2 ve yağ baskılı T2WI sekanslarına kıyasla inflamasyonlu ekstraoküler kasları saptamada daha yüksek duyarlılığa (%100 vs. %94.7) ve daha yüksek özgüllüğe (%71.2 vs. %68.5) sahiptir. Ayrıca artefakt gösterme oranı anlamlı derecede daha düşüktür."
+      },
+      "etiketler": [
+        "CAS",
+        "VISA",
+        "NO SPECS",
+        "Kapak Retraksiyonu",
+        "Graves Orbitopatisi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s8",
+      "metin": "Gebe olmayan 38 yaşında kadın hasta, 3 aydır devam eden aşırı halsizlik, kilo kaybı, çarpıntı ve sıcağa tahammülsüzlük şikayetleriyle başvuruyor. Muayenede diffüz guatr saptanıyor. Laboratuvarda TSH: <0.01 mU/L, sT4: 2.8 ng/dL (normal üst sınırının ~2 katı, orta-şiddetli hipertiroidi) ve TRAb (TSH reseptör antikoru) pozitif tespit ediliyor. Göz muayenesinde hafif kapak retraksiyonu dışında orta-şiddetli aktif orbitopati saptanmıyor.\n\nGebe olmayan erişkinlerde Graves hipertiroidisinin tedavi seçenekleri, ilaç dozajları, seyir ve izlem ilkeleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Gebe olmayan erişkinlerde metimazol ile ötiroidizme ulaşma süresi propiltiourasille (PTU) karşılaştırıldığında belirgin şekilde daha uzundur; bu nedenle hızlı hormonal kontrol gerektiren vakalarda ilk tercih PTU olmalıdır.",
+        "B": "Metimazol tedavisinin 6. ayından sonra serum TSH düzeyi halen baskılı (<0.01 mU/L) seyreden hastaların, 1-2 yıllık antitiroid tedavi tamamlandıktan sonra ilaç kesildiğinde kalıcı remisyona girme olasılığı son derece düşüktür.",
+        "C": "Karbimazol, vücutta metimazole metabolize olan bir ön-ilaç olup eşdeğer metimazol düzeyi elde etmek için gereken karbimazol dozu metimazol dozundan %40 daha düşüktür (10 mg karbimazol ~15 mg metimazole denktir).",
+        "D": "Graves hipertiroidisi tedavisi sonrasında hastaların kilo alma eğilimi ile ilgili olarak; radyoaktif iyot (RAI) tedavisi sonrası hipotiroidi gelişen hastalar, antitiroid ilaçla tedavi edilenlere kıyasla belirgin şekilde daha az kilo alırlar.",
+        "E": "Antitiroid ilaç (tionamid) tedavisi başlanan hastaların izleminde, tedavi başlangıcından 2-4 hafta sonra ölçülen serum TSH düzeyi ötiroidiye yanıtı değerlendirmede en duyarlı biyokimyasal parametredir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "6 aydan uzun tedaviye rağmen TSH'nin baskılı kalması, 1-2 yıl sonunda ilaç kesildiğinde kalıcı remisyon ihtimalinin çok düşük olduğunu öngörür.",
+      "aciklama_detay": "Gebe olmayan erişkinlerde Graves hipertiroidisinin yönetimi; antitiroid ilaçlar (tionamidler), radyoaktif iyot (RAI) ablasyonu ve cerrahi (total/yakın total tiroidektomi) olmak üzere üç ana tedavi seçeneğini kapsar.\n\nAntitiroid ilaç (tionamid) tedavisi alan hastalarda 6 aydan uzun süren tedaviye rağmen serum TSH düzeylerinin halen baskılı kalması, ilacın 1-2 yıl sonunda kesilmesini takiben hastanın kalıcı remisyona girme ihtimalinin son derece düşük olduğunu öngörür. Benzer şekilde, 1 yılı aşkın tedaviye rağmen serum TRAb / TSI düzeylerinin yüksek kalması da ilaç kesildikten sonra nüks riskinin yüksek olduğunu gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Klinik çalışmalarda metimazol ile ötiroidi durumuna (normal sT4 ve sT3) ulaşma süresi ortalama 5.8 hafta iken, PTU ile bu süre 16.8 haftadır. Metimazol, ötiroidiyi PTU'ya kıyasla belirgin şekilde daha hızlı sağladığı, günde tek doz kullanılabildiği ve hepatotoksisite riski daha düşük olduğu için gebeliğin 1. trimesterı dışındaki tüm vakalarda primer tercihtir.",
+        "B": "DOGRU — 6 aydan uzun tedaviye rağmen TSH'nin baskılı kalması kalıcı remisyon ihtimalinin çok düşük olduğunu öngörür; 1 yılı aşkın tedaviye rağmen TRAb/TSI yüksekliği de nüks riskini gösterir.",
+        "C": "YANLIS — Karbimazol vücutta metimazole dönüşür; ancak eşdeğer metimazol dozu sağlamak için gereken karbimazol miktarı metimazol dozundan yaklaşık %40 daha YÜKSEKTİR. Örneğin, 10 mg karbimazol yaklaşık 6 mg metimazole denktir.",
+        "D": "YANLIS — Hipertiroidi tedavisi sonrasında kilo alımı sık görülür (erkeklerde ortalama 8 kg, kadınlarda 5.5 kg). Ancak sanılanın aksine, radyoaktif iyot (RAI) tedavisi sonrasında hipotiroidi gelişen hastalar, antitiroid ilaçla tedavi edilenlere kıyasla anlamlı derecede DAHA FAZLA kilo almaktadır.",
+        "E": "YANLIS — Antitiroid ilaç tedavisi veya RAI sonrasında serum TSH düzeyleri hasta ötiroid hale geldikten sonra bile haftalarca (bazen aylarca) baskılı kalmaya devam edebilir. Bu nedenle erken dönem izlemde TSH düzeylerine güvenilmemeli; tedaviye yanıt ve doz ayarlaması birincil olarak serum serbest T4 (sT4) ve total T3 düzeyleri üzerinden yapılmalıdır."
+      },
+      "etiketler": [
+        "Antitiroid İlaç",
+        "Remisyon Öngörüsü",
+        "Metimazol vs PTU",
+        "Karbimazol",
+        "İzlem"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Graves' hyperthyroidism in nonpregnant adults: Overview of treatment"
+    },
+    {
+      "id": "s9",
+      "metin": "42 yaşında kadın hasta, 1 yıldır devam eden Graves hipertiroidisi nedeniyle radyoaktif iyot (RAI - 131-I) ablasyon tedavisi adayı olarak değerlendirilmektedir. Hastanın öyküsünden aktif sigara kullanıcısı olduğu (15 paket/yıl) ve geçmişinde inaktif moderate-to-severe (orta-şiddetli) Graves orbitopatisi öyküsü bulunduğu öğreniliyor. Fizik muayenesinde göz bulguları inaktif (CAS: 1/7) seyretmektedir.\n\nGraves hastalarında Radyoaktif İyot (RAI) tedavisi sonrası orbitopati gelişimi/ilerlemesi ve Glukokortikoid (GC) profilaksisi yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "RAI tedavisi sonrasında serum TSH reseptör antikor (TRAb) titreleri tedaviden sonraki ilk 1 hafta içinde tepe noktasına ulaşır ve 3. ayda tedavi öncesi düzeylere geriler.",
+        "B": "İnaktif orta-şiddetli Graves orbitopatisi olan ve eş zamanlı ek risk faktörleri (aktif sigara kullanımı vb.) taşıyan bir hastada RAI tedavisi planlandığında, ATA (2016) kılavuzu rutin glukokortikoid profilaksisi önermezken (No), ETA (2021) kılavuzu steroid profilaksisini net olarak önermektedir (Yes).",
+        "C": "RAI ilişkili orbitopati profilaksisinde en iyi valide edilmiş standart rejim olan oral prednizolon (0.3–0.5 mg/kg/gün), RAI uygulamasından 2 hafta önce başlanmalı ve toplam 12 hafta boyunca sürdürülmelidir.",
+        "D": "Aktif orta-şiddetli veya görmeyi tehdit eden (sight-threatening) Graves orbitopatisi bulunan hastalarda yüksek doz intravenöz steroid profilaksisi eşliğinde RAI ablasyonu ilk tercih seçenek olarak uygulanmalıdır.",
+        "E": "RAI tedavisine ikincil de novo orbitopati gelişme veya mevcut orbitopatinin alevlenme riski, hipertiroidi süresi 5 yılı aşan olgularda 5 kat artar ve bu grupta rutin profilaksi zorunludur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İnaktif orta-şiddetli GO öyküsü + ek risk faktörü taşıyan hastada RAI düşünülürse ATA (2016) glukokortikoid profilaksisini gerekli görmez, ETA (2021) ise net olarak önerir.",
+      "aciklama_detay": "Graves hipertiroidisinde radyoaktif iyot (RAI) ablasyonu, immunojenik tiroid dokusu yıkımına bağlı olarak dolaşıma otoantijen salınımını tetikleyen ve orbitopati (GO) alevlenmesi/de novo gelişimi açısından yaklaşık 4 kat risk artışına yol açan bir tedavidir.\n\nKılavuzlar arasındaki yaklaşım farklılıkları incelendiğinde; inaktif orta-şiddetli GO öyküsü olan ve eş zamanlı ek risk faktörleri (sigara, yüksek TRAb vb.) bulunan bir hastada RAI düşünüldüğünde: ATA (2016) kılavuzu glukokortikoid profilaksisini gerekli görmezken (No), ETA (2021) kılavuzu bu yüksek riskli grupta glukokortikoid profilaksisi verilmesini net olarak önermektedir (Yes).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — RAI tedavisi sonrasında gelişen tiroid otoimmünite alevlenmesi 1. haftada tepe noktasına ulaşmaz. TRAb titreleri RAI sonrasında 2 ila 3 kat artış gösterir, tedaviden sonraki 3. ayda tepe noktasına ulaşır ve kademeli olarak 1 yıl içinde tedavi öncesi seviyelere geriler.",
+        "B": "DOGRU — İnaktif orta-şiddetli GO öyküsü olan ve ek risk faktörü taşıyan hastada RAI düşünüldüğünde ATA (2016) profilaksiyi gerekli görmez, ETA (2021) ise glukokortikoid profilaksisini net olarak önerir.",
+        "C": "YANLIS — Standart ve en iyi valide edilmiş oral prednizolon profilaksi rejimi (0.3–0.5 mg/kg/gün); RAI'den 2 hafta önce değil, RAI uygulamasından 1 ila 3 gün sonra başlanır. İlk 4 hafta tam doz verilip takip eden 4 haftada kademeli azaltılarak toplam 8 haftada tamamlanır. (Düşük doz oral prednizolon ise düşük riskli olgular için saklanır).",
+        "D": "YANLIS — Aktif orta-şiddetli veya görmeyi tehdit eden (sight-threatening / DON) Graves orbitopatisi varlığında RAI tedavisi kesinlikle kontrendikedir / kaçınılmalıdır.",
+        "E": "YANLIS — İtalyan çok merkezli çalışma verilerine göre; hipertiroidi süresi 5 yıldan uzun olan Graves hastalarında RAI sonrası orbitopati alevlenme veya de novo GO gelişme riski artmamaktadır. Bu nedenle 5 yılı aşan vakalarda rutin glukokortikoid profilaksisine ihtiyaç duyulmayabilir."
+      },
+      "etiketler": [
+        "RAI",
+        "Glukokortikoid Profilaksisi",
+        "ATA 2016",
+        "ETA 2021",
+        "Graves Orbitopatisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "DeGroot's Endocrinology (Lee & Kahaly, Graves' Orbitopathy); ATA 2016 · ETA 2021"
     }
   ]
 }
