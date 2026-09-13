@@ -120,6 +120,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "Underwood's Pathology"
+    },
+    {
+      "id": "s5",
+      "metin": "Graves hastalığının immünopatogenezi, TSH reseptörüne (TSH-R) karşı gelişen otoantikorların (TSAb) immünokimyasal özellikleri, TSH-R post-translasyonel işlenmesi ve güncel biyolojik/hedefe yönelik tedavi molekülleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "TSAb (Tiroid Uyarıcı Antikorlar) yüksek afiniteli olup tipik olarak kappa (κ) hafif zincir ve IgG1 alt sınıfı kısıtlılığı gösterir; bu durum otoimmün sürecin başlamasından sonra klinik hastalığın hızla ortaya çıkmasını açıklar.",
+        "B": "TSH reseptörü post-translasyonel işlenme sırasında menteşe bölgesinden cleavage (kesilme) uğrayarak soluble (çözünür) B alt birimini dolaşıma salar; bu soluble B alt birimi TSAb'yi holoreseptörden daha zayıf bağlar.",
+        "C": "Multiple skleroz tedavisinde kullanılan anti-CD20 monoklonal antikoru rituksimab sonrasında gelişen immün rekonstitüsyon fazında vakaların %80'inde geçici ve tedaviye dirençli Graves hipertiroidisi oluşur.",
+        "D": "Graves hipertiroidisinde yeni geliştirilen Iscalimab (CFZ533), TSH reseptörünün transmembran domenine bağlanan ve adrenerjik reseptör sinyallemesini doğrudan bloke eden bir küçük molekül (small molecule) antagonistidir.",
+        "E": "TSH reseptör peptid kombinasyonu olan ATX-GD-59, B hücre klonlarını doğrudan sitotoksik lizisle ortadan kaldırarak serum immunoglobülin konsantrasyonunu hızla düşürür."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TSAb yüksek afiniteli olup kappa hafif zincir ve IgG1 alt sınıfı kısıtlılığı gösterir; bu oligoklonal B-hücre kökeni hastalığın hızlı ortaya çıkışını açıklar.",
+      "aciklama_detay": "Graves hastalığında TSH reseptörüne karşı gelişen stimülan otoantikorların (TSAb) hücresel ve moleküler özellikleri, hastalığın klinik seyri ve yeni geliştirilen hedefe yönelik tedaviler açısından temel oluşturur.\n\nTSAb otoantikorları yüksek afiniteye sahip olup sınırlı sayıda B-hücresi klonundan türediklerini düşündürecek şekilde belirgin bir kappa (κ) hafif zincir ve IgG1 alt sınıfı kısıtlılığı (restriction) sergiler. Bu oligoklonal/kısıtlı B-hücre kökeni, otoimmün süreç başladıktan sonra klinik hastalığın yavaş ilerleyen otoimmün hipotiroidizmin aksine çok daha hızlı şekilde ortaya çıkmasını açıklar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — TSAb yüksek afiniteli olup sınırlı sayıda B-hücresi klonundan türediğini düşündüren kappa (κ) hafif zincir ve IgG1 alt sınıfı kısıtlılığı sergiler.",
+        "B": "YANLIS — TSH reseptörü post-translasyonel işlenme sırasında menteşe bölgesinden (hinge region) enzimatik kesilmeye uğrayarak dolaşıma soluble (çözünür) A alt birimini (A subunit) salgılar. Açığa çıkan bu çözünür A alt birimi, TSAb'yi membran üzerindeki tam holoreseptörden daha güçlü (more strongly) bağlar ve otoantikor afinite matürasyonunda anahtar rol oynar.",
+        "C": "YANLIS — Multiple skleroz tedavisinde lenfosit tükenmesine yol açan ve ardından gelen yeni T-hücre genişlemesi (immün rekonstitüsyon) fazında hastaların yaklaşık 3'te 1'inde (%33) Graves hastalığı gelişimini tetikleyen ajan anti-CD20 rituksimab değil, CD52'ye karşı geliştirilmiş monoklonal antikor olan Alemtuzumab'dır.",
+        "D": "YANLIS — Iscalimab (CFZ533), TSH-R transmembran antagonisti olan küçük bir molekül değildir; B hücreleri ve antijen sunan hücreler (APC) üzerindeki CD40-CD154 immünolojik sinaps yolunu bloke eden Fc-silent anti-CD40 monoklonal antikordur (tedavisiz Graves hastalarında ~%80 klinik yanıt sağlamıştır).",
+        "E": "YANLIS — ATX-GD-59, B hücrelerini sitotoksik yıkıma uğratan bir monoklonal antikor değil; TSH reseptörüne özel regülatör T hücrelerini (Treg) uyararak TSH-R'ye karşı gelişen otoimmün yanıtı spesifik olarak baskılamak amacıyla tasarlanmış TSH-R peptid (apitop) kombinasyonudur."
+      },
+      "etiketler": [
+        "İmmünopatogenez",
+        "TSAb",
+        "A Alt Birimi",
+        "Iscalimab",
+        "ATX-GD-59"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
