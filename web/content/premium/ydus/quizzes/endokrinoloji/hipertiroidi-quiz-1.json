@@ -179,6 +179,65 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Disorders that cause hyperthyroidism"
+    },
+    {
+      "id": "s7",
+      "metin": "28 yaşında Hispanik etnisiteye sahip kadın hasta, gebe kalma öncesi rutin kontrolleri sırasında yapılan kan tetkiklerinde rastlantısal olarak serbest T4 yüksekliği saptanması üzerine endokrinoloji polikliniğine sevk ediliyor. Hastanın hiçbir tirotoksikoz semptom veya bulgusu (çarpıntı, kilo kaybı, tremor, sıcağa tahammülsüzlük) bulunmamaktadır. Fizik muayenesinde tiroid bezi normal büyüklükte ve yapıda palpe ediliyor.\n\nLaboratuvar incelemesinde; 3. kuşak TSH: 2.1 mU/L (normal), Total T4: 18.5 mcg/dL (belirgin yüksek), otomatize direkt serbest T4 immünölçümü: 2.8 ng/dL (yüksek), Total T3: 115 ng/dL (normal) saptanıyor. Aile öyküsü sorgulandığında annesinin ve teyzesinin de asemptomatik olarak benzer laboratuvar test yüksekliğine sahip olduğu öğreniliyor.\n\nFamilial Dysalbuminemic Hyperthyroxinemia (FDH - Ailesel Dizalbümineamik Hipertiroksinemi) şüphesi olan bu hastanın moleküler patofizyolojisi, laboratuvar ikilemleri ve tanısal yaklaşımı ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "ALB geninde saptanan varyantlar albüminin hem T4 hem de T3'e olan afinitesini eşit oranda artırarak total T4 ve total T3 düzeylerini eş zamanlı yüksek gösterir.",
+        "B": "İşaretli T3 kullanılarak yapılan klasik T3 uptake testinde, işaretli T3 anormal albümine yüksek afiniteyle bağlandığı için T3 uptake değeri oldukça düşük ölçülür ve serbest T4 indeksi yalancı normal çıkar.",
+        "C": "Otomasyona dayalı direkt serbest T4 immünölçüm yöntemlerinin çoğu albümin bağlama değişikliklerinden olumsuz etkilenerek yalancı yüksek sonuç verir; klinik olarak kafa karıştırıcı vakalarda gerçek eütroidi durumunu doğrulamak için denge diyalizi / tandem kütle spektrometresi (LC-MS/MS) ile serbest T4 ölçümü veya T4 uptake testi uygulanabilir.",
+        "D": "FDH'ye yol açan ALB gen varyantlarından R218P mutasyonunda total T4 seviyeleri hafif (normalin 1.2-1.5 katı) yükselir ve kortizol bağlama kapasitesi etkilenmez.",
+        "E": "Hastanın serbest T4 düzeylerini referans aralığına indirmek ve potansiyel fötal komplikasyonları önlemek amacıyla düşük doz Metimazol (5 mg/gün) tedavisi başlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "FDH'de hasta ötiroiddir ve TSH normaldir; rutin direkt serbest T4 immünölçümleri anormal albüminden etkilenip yalancı yüksek ölçer. Doğrulama denge diyalizi / LC-MS/MS ya da T4 uptake testiyle yapılır.",
+      "aciklama_detay": "Familial Dysalbuminemic Hyperthyroxinemia (FDH), serum tiroid hormonu bağlayıcı protein bozukluklarına bağlı gelişen en sık eütroid hipertiroksinemi nedenlerinden biridir. TSH normal iken total T4'ün yüksek ölçülmesi klinik pratikte gereksiz antitiroid ilaç tedavilerine yol açabileceği için doğru tanınması hayati önem taşır.\n\nFDH olgularında hastalar klinik olarak tamamen ötiroiddir ve TSH düzeyleri normaldir. Ancak laboratuvarda otomasyona dayalı rutin \"direkt\" serbest T4 immünölçüm kiti metodolojileri, ortamdaki anormal albümin konsantrasyonundan ve bağlama değişiminden olumsuz etkilenerek serbest T4 düzeyini yalancı olarak (spuriously) yüksek ölçer. Tanıda belirsizlik olan veya şüpheli olgularda hastanın gerçek eütroid durumunu doğrulamak için denge diyalizi / tandem kütle spektrometresi (LC-MS/MS) ile serbest T4 ölçümü veya işaretli T3 yerine işaretli T4 kullanılarak yapılan T4 uptake testi uygulanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — FDH, albümin geninde (ALB) kazanılmış fonksiyon (gain-of-function) varyantları sonucu gelişir; ancak bu anormal albümin yalnızca T4'e olan afiniteyi artırır, T3'e olan afiniteyi artırmaz. Bu nedenle hastaların Total T4 düzeyleri yüksek iken Total T3 düzeyleri tamamen normaldir.",
+        "B": "YANLIS — T3 uptake testinde kullanılan işaretli T3, FDH'deki anormal albümine bağlanamaz (çünkü anormal albümin T3'ü bağlamaz), yalnızca serbest proteinlere ve reçineye normal şekilde bağlanır. Bu nedenle T3 uptake (ve THBR) değeri düşük çıkmaz, normal kalır. Yüksek Total T4 ile normal T3 uptake çarpıldığında hesaplanan serbest T4 indeksi (FT4I) de yalancı yüksek elde edilir.",
+        "C": "DOGRU — Rutin direkt serbest T4 immünölçüm yöntemleri anormal albüminden etkilenerek yalancı yüksek ölçer; şüpheli olgularda denge diyalizi / LC-MS/MS ile serbest T4 ölçümü veya işaretli T4 ile yapılan T4 uptake testi uygulanır.",
+        "D": "YANLIS — FDH'ye yol açan ALB gen varyantları arasında R218P mutasyonu klinik olarak farklılık gösterir; bu varyantta serum Total T4 düzeyleri normalin üst sınırının 11 ila 17 katına kadar aşırı yükselebilir, Total T3 2 kata kadar artabilir ve bu mutant albümin fazla kortizolü de bağlayabilir.",
+        "E": "YANLIS — FDH biyokimyasal ve genetik bir varyasyondur; hastanın serbest (unbound) tiroid hormonu doku düzeyinde normal olduğu için hastalar ötiroiddir. TSH normal olduğu sürece herhangi bir antitiroid ilaç (Metimazol/PTU) veya cerrahi/ablasyon tedavisi verilemez (tedavi KONTRENDİKEDİR)."
+      },
+      "etiketler": [
+        "Ötiroid Hipertiroksinemi",
+        "FDH",
+        "Serbest T4 İnterferansı",
+        "LC-MS/MS",
+        "ALB Geni"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Euthyroid hyperthyroxinemia and hypothyroxinemia"
+    },
+    {
+      "id": "s8",
+      "metin": "42 yaşında kadın hasta; son 2 aydır devam eden aşırı kilo kaybı, çarpıntı, anksiyete ve sıcağa tahammülsüzlük şikayetleriyle endokrinoloji polikliniğine başvuruyor. Hastanın fizik muayenesinde tiroid bezi palpe edilmiyor (guatr yok) ve orbitopati bulgusu saptanmıyor.\n\nLaboratuvar incelemesinde; serum TSH: <0.01 mU/L (belirgin baskılı), serbest T4: 3.4 ng/dL (yüksek) ve serbest T3: 6.2 pg/mL (yüksek) tespit ediliyor. Tanısal değerlendirme amacıyla yapılan 24 saatlik radyoaktif iyot tutulumu (RAIU) <%1 (baskılanmış) olarak ölçülüyor. Hastadan istenen anti-tiroglobulin (Anti-Tg) antikor testi pozitif saptandığı için immunometrik yöntemle ölçülen serum tiroglobulin (Tg) düzeyinin yalancı düşük olabileceği değerlendiriliyor.\n\nEksojen hipertiroidizm (tirotoksikosis faktitiya), etiyolojisi, laboratuvar ayırıcı tanısı ve yönetimi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Desike tiroid ekstresi (tiroid ekstraktı) kullanan eksojen tirotoksikoz olgularında serum T3/T4 oranı, levotiroksin (T4) alanlara göre daha düşük olup nodüler guatrdaki hormonal paternin aksine bir seyir gösterir.",
+        "B": "Radyoaktif iyot tutulumu (RAIU) <%1 olan ve Anti-Tg antikor pozitifliği nedeniyle serum tiroglobulin ölçümü güvenilmeyen şüpheli faktisöz tirotoksikoz vakalarında tanıyı doğrulamak amacıyla dışkıda (fekal) T4 ölçümü yapılabilir; fekal T4 düzeyleri eksojen T4 alımında 12 ila 24 kat artış gösterir.",
+        "C": "Aşırı levotiroksin (T4) alımına bağlı eksojen hipertiroidide ilaç kesildikten sonra serum T4 konsantrasyonu yaklaşık 24 saat içinde %50 oranında geriler.",
+        "D": "Sığır tiroid dokusunun kıymaya karışması sonucu gelişen toplumsal salgınlarda (\"hamburger tiroiditi / hipertiroidizmi\") aşırı hormon sentezi nedeniyle 24 saatlik RAIU ve serum tiroglobulin düzeyleri belirgin yüksek izlenir.",
+        "E": "Eksojen tiroid hormonu alımında enterohepatik dolaşımı keserek T4 ve T3'ün bağırsaktan geri emilimini engellemek amacıyla kolestiramin kullanımı kontrendikedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Anti-Tg pozitifliği nedeniyle Tg ölçümü güvenilmeyen şüpheli faktisöz olgularda fekal T4 ölçümü tanıyı doğrular; eksojen T4 alımında fekal T4 atılımı 12–24 kat artar.",
+      "aciklama_detay": "Eksojen hipertiroidizm, dışarıdan aşırı miktarda tiroid hormonu alımı (tedavi amaçlı, zayıflama takviyeleri veya faktisöz kullanım) sonucu gelişen tirotoksikoz tablosudur.\n\nEksojen tirotoksikozda TSH baskılanmasına bağlı olarak 24 saatlik tiroid radyoaktif iyot tutulumu (RAIU) <%1 seviyesine inmektedir. Düşük RAIU ile seyreden diğer nedenlerden (tiroiditler, struma ovarii, iyot indüklü tirotoksikoz) ayrımda serum tiroglobulin (Tg) düzeyinin baskılı/düşük olması kilit rol oynar. Ancak Anti-Tg antikor varlığında immunometrik Tg ölçümleri yalancı düşük sonuç verebilir. Bu tür şüpheli ve tanısı belirsiz faktisöz tirotoksikoz olgularında dışkıda (fekal) T4 ölçümü tanısal doğrulama sağlar; nitekim eksojen T4 alımında fekal T4 atılımı normal bireylere kıyasla 12 ila 24 kat artış gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Desike tiroid ekstresi (hayvansal tiroid dokusu) yüksek oranda T3 içerdiği için, bu preparatları alan hastalarda serum T3/T4 oranı ötiroid bireylerden ve sadece levotiroksin (T4) kullananlardan daha yüksektir. Bu yüksek T3/T4 oranı, Graves hastalığı veya toksik nodüler guatrdaki yüksek T3/T4 oranına benzerlik gösterir.",
+        "B": "DOGRU — Şüpheli ve tanısı belirsiz faktisöz tirotoksikoz olgularında dışkıda (fekal) T4 ölçümü tanısal doğrulama sağlar; eksojen T4 alımında fekal T4 atılımı normal bireylere kıyasla 12 ila 24 kat artar.",
+        "C": "YANLIS — Levotiroksin (T4) tedavisi kesildiğinde, T4'ün uzun yarı ömrü nedeniyle serum T4 konsantrasyonunun %50 oranında düşmesi yaklaşık 7 gün sürer. Yarı ömrü yaklaşık 1 gün olan ve 24 saatte %50 klerens gösteren hormon T3'tür.",
+        "D": "YANLIS — Mezbaha kesimlerinde sığır tiroid dokusunun kıymaya karışmasıyla oluşan salgınlarda (\"hamburger tiroiditi\") dışarıdan hazır tiroid hormonu alındığı için TSH ve 24 saatlik RAIU <%1 olarak baskılanır; serum tiroglobulini de düşüktür. Bezde de novo hormon sentezi veya inflamatuvar yıkım yoktur.",
+        "E": "YANLIS — Eksojen tirotoksikoz vakalarında, bağırsak lümeninde T4 ve T3'ü bağlayarak enterohepatik dolaşımı kesmek ve hormon klerensini hızlandırmak amacıyla kolestiramin (günde 4 kez 4 g) tedavide güvenle kullanılır."
+      },
+      "etiketler": [
+        "Faktisöz Tirotoksikoz",
+        "Fekal T4",
+        "Tiroglobulin",
+        "Anti-Tg İnterferansı",
+        "Kolestiramin"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
