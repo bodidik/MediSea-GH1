@@ -499,7 +499,12 @@ export default async function KonuSayfasi({
                       width: '26px',
                       height: '26px',
                       borderRadius: '6px',
-                      background: bilgi.renk,
+                      /* İçeriği olmayan modül SOLUK görünsün (kullanıcı
+                         isteği): simge gri tonlu, ad açık renk. Saydamlık
+                         yerine renk — yukarıdaki notta ölçülen kontrast
+                         kaybı geri gelmesin (#5b6b7b / #f5f7fa = 5.10). */
+                      background: aktif ? bilgi.renk : '#eceff3',
+                      filter: aktif ? undefined : 'grayscale(1)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -508,7 +513,7 @@ export default async function KonuSayfasi({
                     }}>
                       {bilgi.emoji}
                     </div>
-                    <span style={{ fontSize: '12px', fontWeight: 500, color: '#1a2a3a', flex: 1 }}>
+                    <span style={{ fontSize: '12px', fontWeight: aktif ? 500 : 400, color: aktif ? '#1a2a3a' : '#5b6b7b', flex: 1 }}>
                       {bilgi.etiket}
                     </span>
                     {!aktif && (
