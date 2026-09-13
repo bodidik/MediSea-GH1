@@ -1,0 +1,488 @@
+{
+  "id": "fc-rom-still-001",
+  "accessLevel": "premium",
+  "topic": "Erişkin Başlangıçlı Still Hastalığı",
+  "description": "YDUS Romatoloji serisi: Erişkin başlangıçlı Still hastalığı — tanı kriterleri, biyobelirteçler, MAS komplikasyonu ve tedavi basamaklarını kapsayan 80 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "es-001",
+      "front": "Güncel EULAR/PReS önerilerine göre sistemik juvenil idiyopatik artrit (sJIA) ve erişkin başlangıçlı Still hastalığı (AOSD) arasındaki ilişki nasıl tanımlanmaktadır?",
+      "back": "Farklı yaşlarda ortaya çıkan aynı hastalık spektrumu (kontinuum) olarak kabul edilir.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-002",
+      "front": "Erişkin başlangıçlı Still hastalığı terimi ilk kez hangi yıl ve kim tarafından tıp literatürüne kazandırılmıştır?",
+      "back": "1971 yılında Eric Bywaters tarafından.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-003",
+      "front": "Still hastalığında görülen ateşin en tipik özelliği nedir?",
+      "back": "Günde bir veya iki kez ≥ 39°C üzerine çıkan 'spiking' (hörgüçlü) ateş.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-004",
+      "front": "Still hastalığına özgü deri döküntüsünün rengi ve temel özelliği nedir?",
+      "back": "Somon pembesi renginde, ateşle birlikte ortaya çıkıp kaybolan (evanesan) maküler/makülopapüler döküntü.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-005",
+      "front": "Cildin çizilmesi veya basıya maruz kalmasıyla döküntünün uyarılması fenomenine ne ad verilir?",
+      "back": "Koebner fenomeni.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-006",
+      "front": "Still hastalığında boğaz ağrısının (faranjit) olası patofizyolojik nedeni nedir?",
+      "back": "Krikotiroid perikondriti veya aseptik non-eksüdatif faranjit.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-007",
+      "front": "AOSD tanısında en yaygın kullanılan ve en yüksek sensitiviteye sahip sınıflama kriterleri hangisidir?",
+      "back": "Yamaguchi kriterleri.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-008",
+      "front": "Yamaguchi kriterlerine göre major tanı kriterleri nelerdir?",
+      "back": "Ateş (≥ 39°C, ≥ 1 hafta), artralji/artrit (≥ 2 hafta), tipik döküntü ve lökositoz (≥ 10.000/mm³, ≥ %80 nötrofil).",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-009",
+      "front": "Fautrel kriterlerini Yamaguchi kriterlerinden ayıran en önemli laboratuvar parametresi nedir?",
+      "back": "Glikozile ferritin düzeyinin ≤ %20 olması.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-010",
+      "front": "Still hastalığında serum ferritin düzeyinin tanısal değeri için sıklıkla telaffuz edilen eşik değer nedir?",
+      "back": "Normalin üst sınırının 5 katı veya >3000 ng/mL üzerindeki değerler.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-011",
+      "front": "Still hastalığının patogenezinde merkezi rol oynayan ve inflamatuar kaskadı başlatan temel sitokinler nelerdir?",
+      "back": "IL-1, IL-6 ve IL-18.",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-012",
+      "front": "Still hastalığının en korkulan ve hayatı tehdit eden hiperinflamatuar komplikasyonu nedir?",
+      "back": "Makrofaj Aktivasyon Sendromu (MAS).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-013",
+      "front": "MAS gelişen bir hastada eritrosit sedimentasyon hızında (ESH) beklenen paradoksal değişiklik nedir?",
+      "back": "Fibrinojen tüketimine bağlı olarak ESH'de ani düşüş.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-014",
+      "front": "Still hastalığında MAS tanısı için kullanılan ve ILAR tarafından geliştirilen skorlama sistemi nedir?",
+      "back": "MAS/sJIA (MS) skoru.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-015",
+      "front": "Patogenezde IFN-γ yolağının aktivasyonunu gösteren ve MAS için umut verici bir biyobelirteç olan sitokin hangisidir?",
+      "back": "IL-18.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-016",
+      "front": "MAS tanısında IL-18 ile birlikte değerlendirilen IFN-γ ilişkili kemokin hangisidir?",
+      "back": "CXCL9.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-017",
+      "front": "S100 protein ailesinden olan ve nötrofil aktivasyonunu gösteren hangi biyobelirteç Still hastalığı tanısında değerlidir?",
+      "back": "S100A8/A9 (Kalsiprotektin).",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-018",
+      "front": "Still hastalığına bağlı interstisyel akciğer hastalığı (LD) riski ile ilişkili olduğu saptanan HLA alleli hangisidir?",
+      "back": "HLA-DRB1*1501.",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-019",
+      "front": "Hastalığın seyrine göre tanımlanan üç ana fenotip nedir?",
+      "back": "Monosiklik (öz-sınırlı), polisiklik (intermitan) ve kronik artiküler.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-020",
+      "front": "Erişkinlerde çocuklara oranla daha sık bildirilen Still semptomları nelerdir?",
+      "back": "Boğaz ağrısı (faranjit), miyalji ve kilo kaybı.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-021",
+      "front": "Still hastalığı tedavisinde 'fırsat penceresi' (window of opportunity) kavramı neyi ifade eder?",
+      "back": "Biyolojik tedavilerin erken başlanmasının klinik inaktivasyona daha hızlı ulaşılmasını sağlaması.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-022",
+      "front": "Hafif seyirli AOSD vakalarında (sistemik bulgusu az olan) ilk basamak tedavi seçeneği nedir?",
+      "back": "Non-steroidal anti-inflamatuar ilaçlar (NSAİİ).",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-023",
+      "front": "Still hastalığı tedavisinde kullanılan ve kısa yarı ömrü nedeniyle özellikle MAS şüphesinde tercih edilen IL-1 inhibitörü hangisidir?",
+      "back": "Anakinra.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-024",
+      "front": "AOSD için FDA onaylı olan tek biyolojik ajan hangisidir?",
+      "back": "Kanakinumab.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-025",
+      "front": "Kronik artiküler seyirli vakalarda biyolojik ajanlardan önce hangi geleneksel sentetik DMARD tercih edilir?",
+      "back": "Metotreksat.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-026",
+      "front": "MAS tedavisinin temelini oluşturan ilaç grubu nedir?",
+      "back": "Yüksek doz glukokortikoidler (puls steroid tedavisi dahil).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-027",
+      "front": "Still hastalığında görülen artritin radyolojik olarak en karakteristik özelliği nedir?",
+      "back": "El bileğinde perikapitat karpal daralma ve ankiloz.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-028",
+      "front": "MAS gelişen bir hastada kemik iliği aspirasyonunda görülen patognomonik bulgu nedir?",
+      "back": "Hematopoetik hücreleri fagosite eden iyi diferansiye makrofajlar (histiyositler).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-029",
+      "front": "Still hastalığında görülen ferritin yüksekliğinin mekanizması nedir?",
+      "back": "Pro-inflamatuar sitokinlerin etkisiyle makrofajlardan aşırı salınım.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-030",
+      "front": "MAS gelişimi sırasında karaciğer fonksiyon testlerinde (AST, ALT, LDH) nasıl bir değişim beklenir?",
+      "back": "Belirgin ve hızlı bir yükseliş.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-031",
+      "front": "Still hastalığında antinükleer antikor (ANA) ve romatoid faktör (RF) pozitifliği sıklığı nasıldır?",
+      "back": "Genellikle negatiftir (< %10 vakada düşük titrede pozitif olabilir).",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-032",
+      "front": "MAS tanısı konmuş bir Still hastasında fibrinojen düzeyindeki düşüş neyin göstergesidir?",
+      "back": "Disseminize İntravasküler Koagülasyon (DİK) gelişimi.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-033",
+      "front": "Fautrel kriterlerinde yer alan glikozile ferritin düşüklüğünün eşik değeri kaçtır?",
+      "back": "≤ %20.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-034",
+      "front": "Still hastalığı olan hastalarda demir yüklenmesinden bağımsız olarak görülen anemi tipi hangisidir?",
+      "back": "Kronik hastalık anemisi.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-035",
+      "front": "EULAR 2023 önerilerine göre 'klinik inaktif hastalık' (CID) hedefi tedavinin kaçıncı ayında glukokortikoidsiz olarak başarılmalıdır?",
+      "back": "Altıncı ayda.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-036",
+      "front": "Still hastalarında IL-1 ve IL-6 inhibitörlerine dirençli durumlarda hangi ilaç grubu denenebilir?",
+      "back": "JAK inhibitörleri.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-037",
+      "front": "Still hastalığında perikardit görülme sıklığı yaklaşık yüzde kaçtır?",
+      "back": "Yaklaşık %30 (üçte bir).",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-038",
+      "front": "Still hastalığının ayırıcı tanısında dışlanması gereken en önemli malignite grubu hangisidir?",
+      "back": "Lenfomalar.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-039",
+      "front": "MAS'da görülen sitopenilerin temel nedeni nedir?",
+      "back": "İnterferon-gamma aracılı kemik iliği supresyonu ve aktif hemofagositoz.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-040",
+      "front": "Still hastalarında görülen lökositozda hangi hücre tipi baskındır?",
+      "back": "Nötrofiller (sola kayma ile birlikte).",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-041",
+      "front": "Still hastalığında splenomegali varlığı hangi durum için bir risk faktörü veya uyarıcı bulgudur?",
+      "back": "MAS gelişimi.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-042",
+      "front": "Still hastalığı tanısında kullanılan S100A12 biyobelirtecinin diğer adı nedir?",
+      "back": "EN-RAGE.",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-043",
+      "front": "MAS patogenezinde yer alan ve hedeflenebilir bir enzim olan 'Adenozin Deaminaz 2' (ADA2) aktivitesi MAS sırasında nasıl değişir?",
+      "back": "Belirgin şekilde artar.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-044",
+      "front": "Still hastalığına eşlik eden hemofagositoz tanısında soluble IL-2 reseptör (CD25) düzeyi nasıl bir seyir izler?",
+      "back": "Aşırı yüksek seyreder.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-045",
+      "front": "Still hastalığında karaciğer biyopsisi bulguları özgün müdür?",
+      "back": "Hayır; minimal anormallikten fulminan nekroza kadar değişen non-spesifik bulgular görülür.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-046",
+      "front": "Still hastalığı döküntüsünde biyopsi yapılırsa histopatolojik olarak ne görülmesi beklenir?",
+      "back": "Süperfisyal dermiste hafif perivasküler lenfohistiyositik infiltrasyon.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-047",
+      "front": "MAS sırasında görülen hipofibrinojenemi, sedimentasyon hızını (ESH) _____ yönde etkiler.",
+      "back": "Düşürücü.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-048",
+      "front": "Still hastalığında IL-18 yüksekliği hangi akciğer komplikasyonu ile güçlü ilişkilidir?",
+      "back": "İnterstisyel akciğer hastalığı (LD).",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-049",
+      "front": "Still hastalığında ferritin yüksekliği ile hastalık aktivitesi arasında nasıl bir ilişki vardır?",
+      "back": "Ferritin düzeyi genellikle hastalık aktivitesi ile koreledir.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-050",
+      "front": "AOSD'de kadın-erkek dağılımı nasıldır?",
+      "back": "Yaklaşık olarak eşittir (1:1 oranı).",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-051",
+      "front": "Still hastalığında kronik artiküler fenotipte hangi eklem tutulumu daha agresif seyredebilir?",
+      "back": "Kalça ve omuz eklemleri.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-052",
+      "front": "MAS tanısı için kullanılan HScore sisteminde yer alan parametrelerden biri nedir?",
+      "back": "Trigliserid yüksekliği.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-053",
+      "front": "Erişkin Still hastalığında tanı koymadan önce ateşin en az kaç gün sürmesi beklenir?",
+      "back": "7 gün.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-054",
+      "front": "Still hastalığında trombosit sayısı genellikle nasıl etkilenir?",
+      "back": "Reaktif trombositoz görülür.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-055",
+      "front": "Still hastalığı tanısı esasen klinik bulgulara dayanan bir _____ tanısıdır.",
+      "back": "Dışlama.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    },
+    {
+      "id": "es-056",
+      "front": "Still hastalığı tedavisinde biyolojik ajanlara geçiş için kullanılan 'adım tedavisi' (step-up) yaklaşımı yerini neye bırakmaktadır?",
+      "back": "Erken biyolojik tedavi (top-down benzeri) yaklaşımına.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-057",
+      "front": "Still hastalığında görülen plevral efüzyon genellikle ne tür bir vasıftadır?",
+      "back": "Eksüdatif vasıfta.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-058",
+      "front": "MAS şüphesi olan bir Still hastasında hangi koagülasyon testi mutlaka istenmelidir?",
+      "back": "D-dimer ve fibrinojen.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-059",
+      "front": "Still hastalığında MAS riski hangi yaş grubundaki çocuklarda daha yüksektir?",
+      "back": "2 yaş altındaki çocuklarda.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-060",
+      "front": "Still hastalığında 'amyloidosis' (AA tipi) gelişimi hangi fenotipte daha sıktır?",
+      "back": "Sürekli aktif seyreden kronik fenotipte.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-061",
+      "front": "Still hastalığı patogenezinde nötrofillerin rolü nedir?",
+      "back": "Aşırı aktive olurlar ve NET (nötrofil ekstrasellüler tuzak) salınımı ile inflamasyonu artırırlar.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-062",
+      "front": "Tedavide kullanılan IL-6 inhibitörü Tokilizumab'ın Still hastalığındaki temel yan etkisi nedir?",
+      "back": "MAS gelişimini maskeleyebilmesi veya nadiren tetikleyebilmesi.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-063",
+      "front": "Still hastalığında abdominal ağrının olası nedenleri nelerdir?",
+      "back": "Mezentetik lenfadenit, aseptik peritonit veya akut pankreatit.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-064",
+      "front": "MAS sırasında görülen sitopenilerde genellikle kaç hücre serisi etkilenir?",
+      "back": "En az iki hücre serisi (bositopeni veya pansitopeni).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-065",
+      "front": "Still hastalığı tanısında kullanılan S100A8/A9 heterokompleksinin diğer yaygın adı nedir?",
+      "back": "Kalsiprotektin.",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-066",
+      "front": "Still hastalığında görülen deri lezyonları genellikle kaşıntılı mıdır?",
+      "back": "Hayır, tipik döküntü non-pruritiktir.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-067",
+      "front": "Still hastalığı olan hastalarda hangi viral enfeksiyon MAS gelişimini tetikleyebilir?",
+      "back": "Epstein-Barr Virüs (EBV).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-068",
+      "front": "Still hastalığı ile ilişkili interstisyel akciğer hastalığında bronkoalveoler lavajda (BAL) hangi hücreler baskındır?",
+      "back": "Lenfositler (CD4+ ve CD8+).",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-069",
+      "front": "AOSD'li hastalarda trigliserid düzeyindeki ani yükseliş neye işaret eder?",
+      "back": "MAS (Makrofaj Aktivasyon Sendromu) başlangıcına.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-070",
+      "front": "Still hastalığı tanısında kullanılan IL-18 ölçümünde hangi formun ölçülmesi daha değerlidir?",
+      "back": "Serbest IL-18 (ancak rutin testler genellikle total IL-18 ölçer).",
+      "tag": "Romatoloji / Still / Patogenez"
+    },
+    {
+      "id": "es-071",
+      "front": "Still hastalığında görülen ateş paternine ne ad verilir?",
+      "back": "Kotidyen (her gün tekrarlayan) ateş.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-072",
+      "front": "Still hastalığında eklem tutulumu simetrik mi asimetrik mi olma eğilimindedir?",
+      "back": "Genellikle simetrik polartrit şeklindedir.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-073",
+      "front": "Erişkin Still hastalarında mortalitenin en sık nedeni nedir?",
+      "back": "MAS (Makrofaj Aktivasyon Sendromu).",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-074",
+      "front": "Still hastalığı tanısında ferritin/ESH oranı neyi ayırt etmede yardımcı olabilir?",
+      "back": "MAS ile enfeksiyon ayrımında.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-075",
+      "front": "Still hastalığında biyolojik tedaviye yanıt alınamayan vakalara ne ad verilir?",
+      "back": "Zor tedavi edilen (D2T - Difficult-to-treat) Still hastalığı.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-076",
+      "front": "Still hastalığında görülen deri döküntüsü vücudun hangi bölgelerinde daha yoğundur?",
+      "back": "Gövde ve ekstremitelerin proksimal kısımları.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-077",
+      "front": "Still hastalığı olan bir hastada sedimentasyon hızının normale düşmesi her zaman iyileşme belirtisi midir?",
+      "back": "Hayır, MAS'a bağlı fibrinojen tüketimini (tüketim koagülopatisi) gösterebilir.",
+      "tag": "Romatoloji / Still / MAS"
+    },
+    {
+      "id": "es-078",
+      "front": "Still hastalığında kullanılan kalsinörin inhibitörü hangisidir?",
+      "back": "Siklosporin A.",
+      "tag": "Romatoloji / Still / Tedavi"
+    },
+    {
+      "id": "es-079",
+      "front": "AOSD hastalarında 'monosiklik' seyir genellikle ne kadar sürede iyileşme ile sonuçlanır?",
+      "back": "Genellikle bir yıl içinde tamamen düzelir.",
+      "tag": "Romatoloji / Still / Klinik"
+    },
+    {
+      "id": "es-080",
+      "front": "Still hastalığı tanısında 'prokalsitonin' düzeyinin önemi nedir?",
+      "back": "Genellikle düşüktür; yüksekliği Still'den ziyade bakteriyel enfeksiyonu düşündürür.",
+      "tag": "Romatoloji / Still / Tanı ve Laboratuvar"
+    }
+  ]
+}

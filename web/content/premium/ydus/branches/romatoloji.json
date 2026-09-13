@@ -23,6 +23,14 @@
           "hazir": true
         },
         {
+          "id": "eriskin-still-hastaligi",
+          "baslik": "Erişkin Başlangıçlı Still Hastalığı",
+          "rozetler": [
+            "YENİ"
+          ],
+          "hazir": true
+        },
+        {
           "id": "pfapa",
           "baslik": "PFAPA Sendromu",
           "rozetler": [
