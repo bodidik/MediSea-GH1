@@ -1,0 +1,488 @@
+{
+  "id": "fc-endo-hipertiroidi-001",
+  "accessLevel": "premium",
+  "topic": "Hipertiroidi ve Tirotoksikoz",
+  "description": "YDUS Endokrinoloji serisi: tirotoksikoz tedavisi — antitiroid ilaçlar, radyoaktif iyot, cerrahi hazırlık, tiroid fırtınası ve gebelik yönetimini kapsayan 80 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "ht-001",
+      "front": "Tiyonamid grubu antitiroid ilaçların (ATİ) temel etki mekanizması nedir?",
+      "back": "İnorganik iyotun organifikasyonunu inhibe ederek tiroid hormon sentezini azaltmak.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-002",
+      "front": "Propiltiourasilin (PTU), metimazolden (MMI) farklı olarak periferik dokulardaki ek etkisi nedir?",
+      "back": "Tip 1 deiyodinazı inhibe ederek T4'ün T3'e dönüşümünü azaltmak.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-003",
+      "front": "Metimazol (MMI) ve Propiltiourasil (PTU) arasındaki doz eşdeğerliği nasıldır?",
+      "back": "100 mg PTU, yaklaşık 5-10 mg MMI'ya (15-20:1 oranında) eşdeğerdir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-004",
+      "front": "Gebelikte hipertiroidi tedavisinde, ilk trimesterde tercih edilen spesifik ilaç hangisidir?",
+      "back": "Propiltiourasil (PTU) (metimazole göre daha düşük embriyopati riski nedeniyle).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-005",
+      "front": "Tiroid fırtınasında PTU'nun MMI'ya tercih edilmesinin farmakodinamik nedeni nedir?",
+      "back": "T4'ten T3'e periferik dönüşümü inhibe etme yeteneği.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-006",
+      "front": "Graves hastalarında ATİ tedavisi sonrası remisyon olasılığını artıran klinik faktörler nelerdir?",
+      "back": "Kadın cinsiyet, küçük guatr, TRAb negatifliği veya düşük titresi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-007",
+      "front": "ATİ tedavisi başlanan bir hastada, takibe erken dönemde TSH yerine neden fT4 ve T3 ile devam edilmelidir?",
+      "back": "TSH düzeylerinin tedaviye rağmen uzun süre suprese (baskılı) kalabilmesi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-008",
+      "front": "Graves hastalarında ATİ kesildikten sonra nüks riskini öngörmek için kullanılan GREAT skoruna hangi genetik faktörlerin eklenmesi önerilir?",
+      "back": "PTPN22 (rs2476601) ve HLA alelleri (DRB1*03, DQA1*05, DQB1*02).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-009",
+      "front": "Hangi genetik varyant, Graves hastalığının (GH) Kafkas popülasyonlarında daha erken yaşta ortaya çıkmasıyla (dose-dependent) ilişkilidir?",
+      "back": "HLA kompleks P5 (HCP5) genindeki rs3094228 polimorfizmi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-010",
+      "front": "Tiroid fırtınası tedavisinde iyot çözeltileri (SSKI veya Lugol) neden ATİ verilmesinden en az 1 saat sonra başlanmalıdır?",
+      "back": "İyotun yeni hormon sentezi için substrat olarak kullanılmasını (Jod-Basedow fenomeni) önlemek için.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-011",
+      "front": "Propranololün tiroid fırtınasında tercih edilme sebebi nedir?",
+      "back": "Adrenerjik blokajın yanı sıra yüksek dozlarda periferik T4-T3 dönüşümünü inhibe etmesi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-012",
+      "front": "Tiroid fırtınasında hipertermi yönetimi için neden asetaminofen tercih edilirken salisilatlar (aspirin) kontrendikedir?",
+      "back": "Salisilatlar tiroid bağlayıcı proteinlere bağlanmada T4 ile yarışarak serbest hormon miktarını artırabilir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-013",
+      "front": "Graves orbitopatisi (GO) olan bir hastada Radyoaktif İyot (RAI) tedavisi uygulanacaksa hangi önlem alınmalıdır?",
+      "back": "Oral glukokortikoid (steroid) profilaksisi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-014",
+      "front": "RAI tedavisi sonrası kadınların gebeliği en az ne kadar süre ertelemesi önerilir?",
+      "back": "4 ile 6 ay.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-015",
+      "front": "RAI tedavisi sonrası erkeklerin baba olma planını en az ne kadar süre ertelemesi önerilir?",
+      "back": "Sperm siklusunun tamamlanması için 3-4 ay.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-016",
+      "front": "Amiodarona bağlı tirotoksikoz Tip 1 tedavisinde ana yaklaşım nedir?",
+      "back": "Antitiroid ilaçlar (ATİ).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-017",
+      "front": "Destrüktif tiroidit kaynaklı Amiodarona bağlı tirotoksikoz Tip 2 tedavisinde ana yaklaşım nedir?",
+      "back": "Glukokortikoidler (kortikosteroidler).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-018",
+      "front": "Gebelikte 'block-and-replace' (blokla ve yerine koy) rejimi neden önerilmez?",
+      "back": "ATİ'ler plasentayı kolayca geçerken levotiroksinin geçmemesi sonucu fötal hipotiroidi ve guatr riski.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-019",
+      "front": "Tiroid cerrahisi öncesi hazırlıkta iyot çözeltilerinin (Lugol/SSKI) kullanım amacı nedir?",
+      "back": "Tiroid bezinin vaskülaritesini (kanlanmasını) ve sertliğini azaltarak operasyonu kolaylaştırmak.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-020",
+      "front": "Laktasyon dönemindeki bir kadında RAI tedavisi planlanıyorsa, emzirme kesildikten sonra ne kadar beklenmelidir?",
+      "back": "Memedeki NIS (Sodyum-İyot Simporter) aktivasyonunun normale dönmesi için 6 hafta.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-021",
+      "front": "Graves hipertiroidisinde yeni bir tedavi seçeneği olan Iscalimab'ın hedefi nedir?",
+      "back": "CD40 yolunu bloke eden bir monoklonal antikordur.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-022",
+      "front": "Toksik multinodüler guatr (TMNG) veya toksik adenomda (TA) Graves hastalığının aksine neden kalıcı tedavi (RAI veya cerrahi) ön plandadır?",
+      "back": "Bu durumlarda ATİ tedavisi ile spontan remisyon olasılığının olmaması.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-023",
+      "front": "Hangi biyobelirteç Graves hastalığı için en spesifiktir ve ayırıcı tanıda 'altın standart' kabul edilir?",
+      "back": "TSH reseptör antikorları (TRAb).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-024",
+      "front": "Miksödem koması tedavisinde steroidler neden tiroid hormon replasmanından önce veya eş zamanlı verilmelidir?",
+      "back": "Eşlik edebilecek sekonder adrenal yetmezliğin presipite olmasını önlemek için.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-025",
+      "front": "Tiroid fırtınası tanısında kullanılan Burch-Wartofsky skalasında ≥45 puan neyi ifade eder?",
+      "back": "Tiroid fırtınası tanısını (tiroid krizini) düşündürür.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-026",
+      "front": "Gebelikte ATİ tedavisi alan bir annede hedef maternal fT4 düzeyi ne olmalıdır?",
+      "back": "Normal aralığın üst sınırında veya hemen üzerinde.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-027",
+      "front": "Gravesli bir gebede fötal hipertiroidizm riski ne zaman başlar?",
+      "back": "Tipik olarak maternal TRAb'ların plasentayı geçmeye başladığı 18-20. gebelik haftasında.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-028",
+      "front": "Tiroid fırtınası tedavisinde plazmaferezin rolü nedir?",
+      "back": "Diğer tedavilere yanıtsız vakalarda sitokin, antikor ve serbest hormonları hızlıca temizlemek.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-029",
+      "front": "Gebelikte cerrahi tedavi kaçınılmaz ise en uygun zaman hangisidir?",
+      "back": "İkinci trimester.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-030",
+      "front": "Bile asidi sekestranları (örneğin kolestiramin) hipertiroidi tedavisinde nasıl bir avantaj sağlar?",
+      "back": "Tiroid hormonlarının enterohepatik dolaşımını engelleyerek atılımını artırır.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-031",
+      "front": "Subklinik hipertiroidisi olan yaşlı veya kardiyovasküler hastalığı olan bireylerde tedavi eşiği nedir?",
+      "back": "TSH düzeyinin <0.1 mU/L olması.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-032",
+      "front": "Hangi farmakolojik ajan iyot içeriği nedeniyle hem Wolf-Chaikoff etkisine hem de iyoda bağlı tirotoksikoza yol açabilir?",
+      "back": "Amiodaron.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-033",
+      "front": "Tiroid fırtınasında kullanılan IV Esmolol'ün avantajı nedir?",
+      "back": "Çok kısa yarı ömre sahip olması ve yan etki durumunda hızla kesilebilmesi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-034",
+      "front": "Graves hastalığında radyoiyot alımı (uptake) paterni nasıldır?",
+      "back": "Diffüz ve artmış iyot tutulumu.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-035",
+      "front": "Gebelikte maternal Graves hastalığı varlığında yenidoğanda görülen tirotoksikozun temel sebebi nedir?",
+      "back": "Maternal TSH reseptör antikorlarının (TRAb) plasental geçişi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-036",
+      "front": "Proton pompa inhibitörleri levotiroksin (LT4) tedavisini nasıl etkiler?",
+      "back": "Mide asiditesini azaltarak LT4 emilimini bozarlar ve doz artışı gerektirebilirler.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-037",
+      "front": "Tiroid fırtınasında deksametazon veya hidrokortizon kullanımının hormonal amacı nedir?",
+      "back": "T4'ten T3'e periferik dönüşümü inhibe etmek.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-038",
+      "front": "Graves hastalığında genetik yatkınlığın (heritabilite) yaklaşık oranı nedir?",
+      "back": "Yaklaşık %70.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-039",
+      "front": "Atenolol'ün Graves hastalığı semptomatik tedavisindeki standart başlangıç dozu nedir?",
+      "back": "Günde 25-50 mg.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-040",
+      "front": "Tiroid fırtınasında gastrointestinal sistemde ne tür ciddi bir bulgu görülebilir?",
+      "back": "Açıklanamayan sarılık (ikter).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-041",
+      "front": "Lityum karbonatın tiroid fırtınası tedavisindeki mekanizması nedir?",
+      "back": "Tiroid bezinden hormon salınımını inhibe etmesi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-042",
+      "front": "Radyografik kontrast ajanlar (örneğin iopanoik asit) hipertiroidide hangi mekanizmayla etki eder?",
+      "back": "Periferik T4-T3 dönüşümünü güçlü bir şekilde bloke ederler.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-043",
+      "front": "Graves hastalığında hangi immünomodülatör ajan B hücrelerini hedef alarak kullanılır?",
+      "back": "Ritüksimab (Anti-CD20).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-044",
+      "front": "Hiperemezis gravidarumdaki geçici tirotoksikozun temel patofizyolojik sorumlusu nedir?",
+      "back": "HCG (İnsan koryonik gonadotropini) hormonunun TSH reseptörlerini uyarması.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-045",
+      "front": "Graves hastalarında hangi göz bulgusu RAI tedavisi için 'kesin kontrendikasyon' teşkil eder?",
+      "back": "Görme tehdidi olan veya orta-ciddi aktif Graves orbitopatisi.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-046",
+      "front": "Metimazolün nadir görülen fakat en ciddi yan etkisi nedir?",
+      "back": "Agranülositoz.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-047",
+      "front": "PTU kullanımı sırasında hangi organ toksisitesi riski metimazole göre daha yüksektir?",
+      "back": "Hepatotoksisite (Ciddi karaciğer yetmezliği).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-048",
+      "front": "Pediyatrik Graves hastalarında (POGD) erişkinlere göre ATİ tedavisine yanıt nasıldır?",
+      "back": "Tedaviye yanıt daha düşüktür ve nüks oranları (yaklaşık %68) daha yüksektir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-049",
+      "front": "Tiroid doppler ultrasonunda Graves hastalığını düşündüren temel bulgu nedir?",
+      "back": "İntraparankimal vaskülaritede (kanlanmada) diffüz artış ('tiroid cehennemi').",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-050",
+      "front": "Graves hastalığında dermopati (pretibial miksödem) görülme sıklığı nasıldır?",
+      "back": "Nadirdir, hastaların yaklaşık %1-5'inde görülür.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-051",
+      "front": "Biliyer sistem hastalıklarında kullanılan kolestiramin, levotiroksin emilimini nasıl etkiler?",
+      "back": "LT4'ü bağlayarak emilimini azaltır; ilaçlar arasında en az 4 saat fark olmalıdır.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-052",
+      "front": "Tiroid hormon direnci (THD) olan hastalarda taşikardi kontrolü için hangi ajan tercih edilir?",
+      "back": "Atenolol.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-053",
+      "front": "THD'de neden propranolol kullanımı önerilmez?",
+      "back": "Periferik T4-T3 dönüşümünü baskılayarak direnç tablosunu kötüleştirebileceği için.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-054",
+      "front": "Hangi genetik belirteç Graves orbitopatisi (GO) gelişiminde majör risk artışıyla ilişkilendirilmiştir (GWAS verisi)?",
+      "back": "MACROD2 genindeki rs6110809 varyantı.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-055",
+      "front": "Amiodaronun tiroid hormonu üzerine etkilerinden biri olan 'rT3' (reverse T3) seviyesi nasıl değişir?",
+      "back": "5'-deiyodinaz inhibisyonu sonucu artar.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-056",
+      "front": "Graves tanılı bir hastada TSH normal, fT4 yüksek ise ilk akla gelen durum nedir?",
+      "back": "Tiroid hormon direnci veya laboratuvar interferansı (ancak Graves ise TSH suprese olmalıdır).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-057",
+      "front": "Tiroid cerrahisi planlanan Graves hastasında preoperatif 'eutiroidi' sağlamak için ne kadar süre ATİ kullanılmalıdır?",
+      "back": "Genellikle 6-8 hafta.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-058",
+      "front": "Graves hastalarında hangi gen varyantı DNA metilasyonu (epigenetik) üzerinden ATİ yanıtını etkileyebilir?",
+      "back": "DNMT1 genindeki rs2228612 varyantı.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-059",
+      "front": "Tiroid fırtınasında kalp hızı kontrolü için hedef nabız aralığı nedir?",
+      "back": "Dakikada 60-90 atım.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-060",
+      "front": "Metimazol (MMI) tedavisi altındaki bir hastada boğaz ağrısı ve ateş gelişirse ne yapılmalıdır?",
+      "back": "İlaç derhal kesilmeli ve tam kan sayımı (lökosit formülü) görülmelidir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-061",
+      "front": "Gebelikte hipertiroidi tedavisinde ikinci trimesterde neden PTU'dan MMI'ya geçiş düşünülür?",
+      "back": "PTU'nun potansiyel hepatotoksisite riskini azaltmak için.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-062",
+      "front": "İyot eksikliği olan bölgelerde hipertiroidinin en sık sebebi nedir?",
+      "back": "Toksik multinodüler guatr (TMNG).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-063",
+      "front": "Graves hastalarında sigara içimi hangi komplikasyonun riskini majör olarak artırır?",
+      "back": "Graves orbitopatisi (GO).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-064",
+      "front": "RAI tedavisi sonrası gelişen hipotiroidi genellikle ne zaman ortaya çıkar?",
+      "back": "İlk 6 ay içinde.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-065",
+      "front": "Hangi tiroid kanseri türünde serum kalsitonin düzeyi operasyon genişliğini belirlemede kritiktir?",
+      "back": "Medüller Tiroid Kanseri (MTK).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-066",
+      "front": "Dopamin infüzyonu alan bir yoğun bakım hastasında TSH düzeyi nasıl etkilenir?",
+      "back": "TSH sekresyonunun santral inhibisyonu nedeniyle düşük/baskılı izlenir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-067",
+      "front": "Gravesli gebede blok-replasman tedavisi neden izole fötal hipertiroidi tedavisinde tek endikasyondur?",
+      "back": "ATİ plasentayı geçerek fötal tiroidi baskılarken, LT4 anneyi ötiroid tutar.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-068",
+      "front": "THD-beta mutasyonu taşıyan gebe bir kadında mutasyonu taşımayan fötusta ne görülebilir?",
+      "back": "Fötal tirotoksikoz (yüksek maternal hormon seviyeleri nedeniyle).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-069",
+      "front": "Tiroid fırtınasında kullanılan IV propranolol dozu nedir?",
+      "back": "0.5-1 mg yavaş puşe, ardından 15 dakikalık aralarla 1-2 mg.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-070",
+      "front": "Radyoaktif iyot uptake testi hangi durumda 'en düşük' (suprese) izlenir?",
+      "back": "Sessiz tiroidit veya ekzojen tiroid hormonu kullanımı.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-071",
+      "front": "Graves hastalığında tiroid bezinin palpasyonunda duyulabilen üfürüme (thrill) ne ad verilir?",
+      "back": "Sistolik üfürüm veya Graves üfürümü (artmış kan akımı nedeniyle).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-072",
+      "front": "Serum tiroglobulin ölçümü hipertiroidi ayırıcı tanısında hangi durumda yararlıdır?",
+      "back": "Ekzojen tiroid hormonu kullanımı (tiroglobulin düşük çıkar) ile Graves ayrımında.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-073",
+      "front": "THD tedavisinde kullanılan, T3'e göre mutant reseptörlere afinitesi daha yüksek olan analog nedir?",
+      "back": "Triiyodotiroasetik asit (TRIAC).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-074",
+      "front": "Gebelikte hipertiroidi tanısında TSH için popülasyona dayalı 'trimester spesifik' alt sınır genellikle hangi aralıktadır?",
+      "back": "0.03-0.1 mU/L.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Gebelik"
+    },
+    {
+      "id": "ht-075",
+      "front": "Graves hastalarında rs2476601 polimorfizmi hangi gende yer alır ve GH riskiyle ilişkilidir?",
+      "back": "PTPN22 (Protein tirozin fosfataz non-reseptör tip 22).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-076",
+      "front": "İmmün rejenerasyon tedavileri (İRT) sonrası en sık görülen tiroid disfonksiyonu nedir?",
+      "back": "Graves Hastalığı (GH).",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-077",
+      "front": "Hangi genetik varyant (rs3761549) polonya popülasyonunda POGD riskini sadece kız çocuklarında artırır?",
+      "back": "FOXP3 geni varyantı.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Genetik"
+    },
+    {
+      "id": "ht-078",
+      "front": "Metimazol (MMI) başlangıç dozu serbest T4 düzeyi üst sınırın 2-3 katı ise ne olmalıdır?",
+      "back": "Günde 30-40 mg.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    },
+    {
+      "id": "ht-079",
+      "front": "Tiroid fırtınası şüphesi olan bir hastada tedaviye ne zaman başlanmalıdır?",
+      "back": "Laboratuvar sonuçları beklenmeksizin, klinik şüphe oluşur oluşmaz.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Acil"
+    },
+    {
+      "id": "ht-080",
+      "front": "Graves hipertiroidisinde kemik metabolizması nasıl etkilenir?",
+      "back": "Kemik yıkımı artar ve osteoporoz riski yükselir.",
+      "tag": "Endokrinoloji / Tirotoksikoz / Tedavi"
+    }
+  ]
+}
