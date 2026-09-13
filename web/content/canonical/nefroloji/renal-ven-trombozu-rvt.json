@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji: Hiperkoagülabilite Odağı",
       "html": "<p>Renal Ven Trombozu (RVT), bir veya her iki renal vende pıhtı oluşumudur. En sık <strong>Nefrotik Sendrom</strong> zemininde gelişir. Böbrekten aşırı miktarda Antitrombin III, Protein C ve S kaybı olması, böbreği pıhtılaşmaya karşı savunmasız bırakır.</p><ul class=\"mb-4\"><li><strong>Membranöz Glomerülonefrit:</strong> RVT riskinin en yüksek olduğu nefrotik tablodur (%30-40 vakada görülür).</li><li><strong>Diğer Nedenler:</strong> Renal Hücreli Karsinom (venöz invazyon), dehidratasyon (bebeklerde), antifosfolipid sendromu ve oral kontraseptif kullanımı.</li></ul>"
     },

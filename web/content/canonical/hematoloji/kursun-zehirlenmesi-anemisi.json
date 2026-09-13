@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji ve Hem Sentezi İnhibisyonu",
       "html": "<p><strong>Kurşun Zehirlenmesi (Plumbizm)</strong>, kurşunun vücutta birikerek özellikle hematopoietik ve nörolojik sistemlerde toksik etkiler yaratması durumudur. Hematolojik açıdan kurşun, hemoglobinin temel yapıtaşı olan <strong>Hem (Heme) sentez yolağındaki</strong> iki kritik enzimi doğrudan inhibe eder:</p><ul class=\"mb-4\"><li><strong>ALA Dehidrataz (Aminolevülinik Asit Dehidrataz):</strong> Bu enzimin inhibisyonu sonucu kanda ve idrarda ALA birikimi (artışı) gözlenir.</li><li><strong>Ferroşelataz:</strong> Mitokondri içinde demirin (Fe+2) protoporfirin halkasına eklenerek Hem molekülünü oluşturmasını sağlayan enzimdir. İnhibe olduğunda demir halkaya giremez ve mitokondride birikir; aynı zamanda <strong>Serbest Eritrosit Protoporfirini (FEP)</strong> kanda yükselir.</li></ul><p>Demirin porfirin halkasına entegre edilememesi, sitoplazmada yetersiz hemoglobin sentezine ve sonuç olarak <strong>mikrositik ve hipokromik</strong> (bazen normositik) bir anemiye yol açar.</p>"
     },

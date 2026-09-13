@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Prezantasyon",
       "html": "<p><strong>Kronik Lenfositik Lösemi (KLL)</strong>, morfolojik olarak olgun (matür) ancak immünolojik olarak inkompetan klonal B lenfositlerin kan, kemik iliği, lenf düğümleri ve dalakta birikmesiyle karakterize indolent bir lenfoproliferatif hastalıktır. Batı toplumlarında erişkinlerde en sık görülen lösemi tipidir. Medyan tanı yaşı 70 civarındadır.</p><p><strong>Klinik Bulgular:</strong> Hastaların büyük çoğunluğu (%70-80) asemptomatiktir ve tanı rutin hemogramda saptanan <strong>izole lenfositoz</strong> ile konur. Semptomatik hastalarda ağrısız, lastik kıvamında lenfadenopati (servikal, aksiller), splenomegali ve hepatomegali görülür. İleri evrelerde kemik iliği yetmezliğine bağlı anemi ve trombositopeni gelişir.</p><p><strong>İmmün Disfonksiyon:</strong> KLL sadece bir tümör değil, aynı zamanda bir bağışıklık kusurudur. Hipogammaglobulinemiye sekonder <strong>tekrarlayan enfeksiyonlar</strong> (pnömoni, herpes zoster) majör morbidite nedenidir. Ayrıca hastaların %10-25'inde <strong>Otoimmün Hemolitik Anemi (Otoimmün HA)</strong> veya İmmün Trombositopeni (İTP) gibi otoimmün komplikasyonlar izlenir.</p>"
     },

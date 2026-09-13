@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji: Sekonder Hemostaz ve Koagülasyon Kaskadı",
       "html": "<p>Primer hemostaz sonucu oluşan geçici trombosit tıkacının, çözünmeyen ve sağlam bir <strong>çapraz bağlı fibrin ağına</strong> dönüştürülerek sabitlenmesi işlemine <strong>Sekonder Hemostaz</strong> denir. Bu süreç, karaciğerde sentezlenen inaktif proenzimlerin (koagülasyon faktörlerinin) şelale (kaskad) şeklinde birbirini aktive etmesiyle gerçekleşir.</p><p>Koagülasyon kaskadı klasik olarak üç yolağa ayrılır:</p><ul class=\"mb-4\"><li><strong>İntrinsik (İç) Yolak:</strong> Faktör XII, XI, IX ve VIII'i içerir. Laboratuvarda <strong>aPTT (Aktive Parsiyel Tromboplastin Zamanı)</strong> ile ölçülür.</li><li><strong>Ekstrinsik (Dış) Yolak:</strong> Doku Faktörü (TF) ve Faktör VII'yi içerir. Laboratuvarda <strong>PT (Protrombin Zamanı)</strong> ile ölçülür.</li><li><strong>Ortak Yolak:</strong> İki yolağın birleştiği, Faktör X, V, II (Protrombin) ve I (Fibrinojen) içeren son aşamadır. Her iki test (PT ve aPTT) tarafından da değerlendirilir.</li></ul>"
     },

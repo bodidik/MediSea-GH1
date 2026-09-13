@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Multipl Miyelom (MM)</strong>, kemik iliğinde klonal (kanserleşmiş) plazma hücrelerinin kontrolsüz çoğalması ve genellikle kana veya idrara monoklonal bir immünglobulin (M-proteini / Paraprotein) salgılamasıyla karakterize bir B hücreli malignitedir.</p><p>Neoplastik plazma hücreleri, kemik iliğini istila ederek normal kan yapımını bozar (anemi) ve osteoklastları aşırı aktive edip osteoblastları baskılayarak kemik yıkımına (litik lezyonlar ve hiperkalsemi) neden olur. Ayrıca salgılanan serbest hafif zincirler (Bence-Jones proteinleri) böbrek tübüllerini tıkayarak <strong>Kast (Cast) Nefropatisi</strong> adı verilen akut böbrek yetmezliğine yol açar.</p>"
     },

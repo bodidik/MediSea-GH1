@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Miyelodisplastik Sendromlar (MDS)</strong>, hematopoietik kök hücrelerin klonal bir bozukluğu olup, kemik iliğinde artmış apoptoz (inefektif hematopoez) sonucu gelişen periferik kan sitopenileri, hücresel morfolojide displazi ve <strong>Akut Miyeloid Lösemiye (AML) transforme olma riski</strong> ile karakterize heterojen bir hastalık grubudur.</p><p>Hastaların kemik iliği genellikle hiperselülerdir (hücreden zengindir), ancak üretilen hücreler defektif olduğu için kemik iliği içinde erken yıkıma uğrarlar (apoptoz). Bu paradoksal durum, periferik kanda anemi, nötropeni ve/veya trombositopeni olarak yansır.</p>"
     },

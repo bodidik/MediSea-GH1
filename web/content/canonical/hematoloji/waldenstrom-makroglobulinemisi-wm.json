@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI Taslak Modülü",
-      "html": "<p><em>⚠️ <strong>Uyarı:</strong> Bu modül Yapay Zeka (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Genetik Patogenez",
       "html": "<p><strong>Waldenström Makroglobulinemisi (WM)</strong>, kemik iliğinin lenfoplazmasitik hücreler (B lenfositler ve plazma hücreleri arası geçiş formları) tarafından infiltre edildiği ve kanda <strong>monoklonal IgM tipi paraprotein (makroglobulin)</strong> üretiminin eşlik ettiği indolent (yavaş seyirli) bir B hücreli lenfomadır.</p><p>Hastalığın patogenezinde iki temel genetik imza öne çıkar:</p><ul class=\"mb-4\"><li><strong>MYD88 L265P Mutasyonu:</strong> Vakaların >%90'ında saptanır. Hastalığın temel sürücüsüdür ve NF-κB yolağını sürekli aktif tutar. (Tanısal olarak Multipl Miyelom ve diğer B-hücreli lenfomalardan ayrımda çok değerlidir).</li><li><strong>CXCR4 WHIM Mutasyonları:</strong> Vakaların ~%30-40'ında görülür. İbrutinib gibi BTK inhibitörlerine karşı direnç veya gecikmiş yanıt ile ilişkilidir.</li></ul>"
     },

@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>İmmün Trombositopeni (ITP)</strong>, bağışıklık sisteminin trombosit yüzeyindeki glikoproteinlere (en sık <strong>GpIIb/IIIa</strong> veya GpIb/IX) karşı patolojik <strong>IgG yapısında otoantikorlar</strong> üretmesi sonucu gelişen, izole trombositopeni (<100.000/microL) ile karakterize edinsel bir otoimmün hastalıktır.</p><p>Hastalığın temelinde iki ana mekanizma yatar:</p><ul class=\"mb-4\"><li><strong>Artmış Yıkım:</strong> Otoantikorlarla kaplanan trombositler, dalaktaki (ve karaciğerdeki) makrofajların Fc reseptörleri tarafından tanınarak fagosite edilir ve hızla yıkılır.</li><li><strong>Azalmış Üretim:</strong> Aynı otoantikorlar kemik iliğindeki megakaryositlere de bağlanarak onların olgunlaşmasını ve trombosit üretimini (megakaryopoez) baskılar. Bu nedenle ITP sadece bir yıkım değil, aynı zamanda bir üretim eksikliği hastalığıdır.</li></ul>"
     },

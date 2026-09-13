@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve DSÖ Kriterleri",
       "html": "<p><strong>Anemi</strong>, dolaşımdaki kırmızı kan hücrelerinin (eritrosit) kitlesinde veya hemoglobin (Hb) konsantrasyonunda azalma olması durumudur. Bu durum, dokulara oksijen taşınmasını bozarak doku hipoksisine yol açar.</p><p>Dünya Sağlık Örgütü (DSÖ) kriterlerine göre deniz seviyesinde anemi sınırları şunlardır:</p><ul class=\"mb-4\"><li><strong>Erişkin Erkek:</strong> Hemoglobin < 13 g/dL</li><li><strong>Erişkin Kadın (Gebe olmayan):</strong> Hemoglobin < 12 g/dL</li><li><strong>Gebe Kadın:</strong> Hemoglobin < 11 g/dL</li></ul>"
     },

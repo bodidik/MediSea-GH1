@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Viyolojik Alt Tipler",
       "html": "<p><strong>Burkitt Lenfoma</strong>, germinal merkez B hücrelerinden köken alan, son derece agresif (yüksek dereceli) bir Non-Hodgkin Lenfomadır. İnsanlarda bilinen en hızlı replike olan tümördür. Üç ana klinik varyantı bulunur:</p><ul class=\"mb-4\"><li><strong>Endemik (Afrika) Tip:</strong> Neredeyse tamamı <em>Epstein-Barr Virüsü (EBV)</em> ile ilişkilidir. Genellikle çocuklarda çene, yüz kemikleri ve orbita tutulumu ile prezante olur. Sıtma (malarya) endemik bölgeleriyle örtüşür.</li><li><strong>Sporadik Tip:</strong> Batı toplumlarında görülür. EBV birlikteliği daha düşüktür (~%20-30). En sık <strong>ileoçekal bölge</strong> (ileoçekal intussusepsiyon yapabilir), overler ve retroperitoneal alan gibi abdominal tutulumla gelir.</li><li><strong>İmmünyetmezlik İlişkili Tip:</strong> Genellikle HIV pozitif hastalarda (özellikle CD4 sayısı nispeten yüksekken dahi) veya solid organ nakli alıcılarında görülür.</li></ul>"
     },

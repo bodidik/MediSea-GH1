@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Miyelodisplastik Sendromlar (MDS)</strong>, inefektif (etkisiz) hematopoez, periferik sitopeniler ve kemik iliğinde genellikle hiperselülerite ile karakterize klonal hematopoietik kök hücre hastalıklarıdır. Normal kan hücresi yapımı bozulduğu için hücreler kemik iliğinde olgunlaşmadan (apoptoza uğrayarak) ölür, bu da periferde sitopeniye yol açar. MDS, zaman içinde artan bir oranda <strong>Akut Miyeloid Lösemiye (AML)</strong> transforme olma riski taşır.</p><p>Hastalığın temelinde epigenetik regülatörler (<em>TET2, ASXL1, DNMT3A</em>), RNA splaysom genleri (<em>SF3B1, SRSF2, U2AF1</em>) ve transkripsiyon faktörlerindeki (<em>RUNX1, TP53</em>) somatik mutasyonlar yatar.</p>"
     },

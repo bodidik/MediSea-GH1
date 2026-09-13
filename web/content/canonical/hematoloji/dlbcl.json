@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Klinik Prezantasyon",
       "html": "<p><strong>Diffüz Büyük B Hücreli Lenfoma (DLBCL)</strong>, normal lenfositlerin en az iki katı büyüklüğündeki atipik B hücrelerinin lenf nodu mimarisini tamamen silerek (diffüz) büyümesiyle karakterize, agresif ancak <strong>kürabl (şifa sağlanabilen)</strong> bir Non-Hodgkin Lenfomadır. Tüm NHL vakalarının %30-40'ını oluşturur.</p><p><strong>Klinik:</strong> Hastalar genellikle boyun, koltuk altı veya kasıkta <strong>hızla büyüyen, ağrısız lenfadenopati</strong> ile başvurur. %30-40 vakada <strong>ekstranodal tutulum</strong> (en sık gastrointestinal sistem [mide], kemik, SSS, testis, tiroid) görülür. Ateş, gece terlemesi ve kilo kaybından oluşan <strong>B semptomları</strong> ve artmış serum LDH seviyesi hastaların yaklaşık üçte birinde tabloya eşlik eder.</p>"
     },

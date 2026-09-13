@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Primer Miyelofibrozis (PMF)</strong>, klonal megakaryosit ve granülosit proliferasyonu ile karakterize, BCR-ABL1 negatif bir miyeloproliferatif neoplazmdır. Kemik iliğindeki fibrozis (bağ dokusu artışı) klonal <em>değildir</em>; neoplastik megakaryositlerden salınan pro-fibrotik sitokinlerin (<strong>TGF-β, PDGF, bFGF</strong>) reaktif (poliklonal) fibroblastları aşırı uyarması sonucu gelişir.</p><p>Hastaların yaklaşık %90'ında üç majör sürücü mutasyondan biri saptanır: <strong>JAK2 V617F (~%60)</strong>, <strong>CALR (~%25)</strong> veya <strong>MPL (~%5)</strong>. Kalan %10'luk kesim 'üçlü-negatif' (triple-negative) olarak adlandırılır ve en kötü prognoza sahip gruptur.</p>"
     },

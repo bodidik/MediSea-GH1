@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji ve Moleküler Temel",
       "html": "<p><strong>Orak Hücreli Anemi (OHA)</strong>, beta-globin genindeki (Kromozom 11) nokta mutasyonu sonucu gelişen otozomal resesif geçişli bir hemoglobinopatidir. Mutasyon sonucunda, beta-globin zincirinin 6. pozisyonundaki hidrofilik glutamik asit yerine hidrofobik valin aminoasiti geçer. Bu değişiklik <strong>Hemoglobin S (HbS)</strong> adı verilen anormal hemoglobin varyantını oluşturur.</p><p>HbS molekülleri, deoksijenize (oksijensiz) ortamlarda, asidozda, dehidratasyonda veya enfeksiyon durumlarında birbirleriyle hidrofobik bağlar kurarak polimerize olurlar. Bu polimerler (taktiodler), eritrosit iskeletini bozarak hücrenin karakteristik <strong>orak (sickle)</strong> veya hilal şeklini almasına neden olur. Başlangıçta oksijenlenme ile geri dönebilen (reversibl) bu şekil değişikliği, tekrarlayan ataklar sonucu membran hasarına yol açarak kalıcı (irreversibl) orak hücrelerin oluşumuyla sonuçlanır.</p>"
     },

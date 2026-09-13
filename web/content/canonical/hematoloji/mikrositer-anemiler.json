@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji: Neden Küçülürler?",
       "html": "<p>Eritrositlerin ortalama hacminin (MCV) <strong>80 fL'nin altında</strong> olmasına mikrositoz denir. Mikrositer anemilerin temelinde tek bir ortak mekanizma yatar: <strong>Hemoglobin sentezindeki kusur.</strong></p><p>Hemoglobin molekülü üç ana bileşenden oluşur: <strong>Demir + Porfirin (Halkası) + Globin (Zincirleri)</strong>. Bu üçünden herhangi birinin eksikliği veya sentez kusuru, hücrenin sitoplazmasını yeterince dolduramamasına ve hücre bölünmesi sırasında eritrositin giderek küçülmesine neden olur.</p>"
     },

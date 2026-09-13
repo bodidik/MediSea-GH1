@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Genel Özellikler",
       "html": "<p><strong>Periferik T-Hücreli Lenfomalar (PTCL)</strong>, post-timik (olgun) T hücrelerinden ve NK (Doğal Katil) hücrelerinden köken alan, agresif seyirli ve heterojen bir Non-Hodgkin Lenfoma (NHL) grubudur. Genel olarak B-hücreli lenfomalardan daha kötü prognoza sahiptirler. Hücresel kökene göre T-helper (CD4+), sitotoksik T (CD8+) veya NK hücresi fenotipi gösterebilirler.</p><p>Hastalarda B semptomları (ateş, gece terlemesi, kilo kaybı), jeneralize lenfadenopati ve kemik iliği, deri, karaciğer, dalak gibi <strong>ekstranodal tutulumlar</strong> çok sıktır. Ayrıca bu hastalarda makrofaj aktivasyon sendromu / <strong>Hemofagositik Lenfohistiyositoz (HLH)</strong> gelişme riski oldukça yüksektir.</p>"
     },

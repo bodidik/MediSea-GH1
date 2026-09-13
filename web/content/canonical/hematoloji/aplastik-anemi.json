@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Aplastik Anemi (AA)</strong>, hematopoietik kök hücrelerin (HSC) hasarlanması ve sayılarının dramatik şekilde azalması sonucu, kemik iliğinin kan hücrelerini üretememesi ve yağ dokusu ile yer değiştirmesi (hiposelüler ilik) ile karakterize, hayatı tehdit eden bir kemik iliği yetmezliği sendromudur.</p><p>Hastalığın temelinde <strong>immün aracılı bir yıkım</strong> yatar. Genetik veya çevresel bir tetikleyici, otoreaktif sitotoksik T hücrelerini (CD8+) aktive eder. Bu T hücreleri, Fas ligandı (FasL) ve İnterferon-gama (IFN-gama) / TNF-alfa gibi sitokinler salgılayarak kök hücrelerde apoptozu indükler. Sonuç olarak periferik kanda üç serinin de eksikliği (<strong>pansitopeni</strong>) gelişir.</p>"
     },

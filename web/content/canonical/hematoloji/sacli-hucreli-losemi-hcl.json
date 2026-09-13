@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI Taslak Modülü",
-      "html": "<p><em>⚠️ <strong>Uyarı:</strong> Bu modül Yapay Zeka (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Genetik Patogenez",
       "html": "<p><strong>Saçlı Hücreli Lösemi (Hairy Cell Leukemia - HCL)</strong>, sitoplazmik uzantılara (saçsı saçaklara) sahip, nadir görülen indolent (yavaş seyirli) bir matür B-hücreli lenfoproliferatif hastalıktır.</p><p>Hastalığın genetik imzası tek ve çok nettir: Klasik HCL vakalarının <strong>>%95'inde BRAF V600E mutasyonu</strong> saptanır. Bu mutasyon, hücre içi BRAF-MEK-ERK (MAP kinaz) sinyal yolağını sürekli aktif hale getirerek hücrenin apoptozdan kaçmasını ve kontrolsüz çoğalmasını sağlar.</p>"
     },

@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Hodgkin Lenfoma (HL)</strong>, germinal merkez B hücrelerinden köken alan, ancak tipik B hücre belirteçlerini kaybetmiş, dev, çok çekirdekli (baykuş gözü / owl-eye) <strong>Reed-Sternberg (RS)</strong> hücreleri ve mononükleer <strong>Hodgkin</strong> hücreleri ile karakterize bir lenfomadır. İşin ilginç yanı, tümör kitlesinin %99'u reaktif T hücreleri, eozinofiller, makrofajlar ve plazma hücrelerinden oluşurken, neoplastik hücreler sadece %1-2'lik bir kısmı oluşturur.</p><p>Hastalığın patogenezinde <strong>Epstein-Barr Virüsü (EBV)</strong> enfeksiyonu (özellikle mikst selüler tipte) ve 9p24.1 gen amplifikasyonu (<strong>PD-L1 ve PD-L2 aşırı ekspresyonu</strong> ile immün sistemden kaçış) kritik rol oynar.</p>"
     },

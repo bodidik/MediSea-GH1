@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Etyoloji: Böbreğin İnfarktüsü",
       "html": "<p>Renal infarkt, renal arterin veya dallarının tıkanması sonucu böbrek parankiminde iskemik nekroz gelişmesidir. En sık neden <strong>Kardiyak Kaynaklı Tromboembolilerdir</strong>.</p><ul class=\"mb-4\"><li><strong>Atrial Fibrilasyon (AF):</strong> En yaygın emboli kaynağıdır.</li><li><strong>Diğer Nedenler:</strong> Valvüler kalp hastalıkları, vejetasyonlar (Endokardit), ventriküler trombus (MI sonrası) ve aortik ateromlar.</li><li><strong>Hiperkoagülabilite:</strong> Antifosfolipid sendromu ve maligniteler.</li></ul>"
     },

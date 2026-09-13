@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Sınıflandırma",
       "html": "<p><strong>Otoimmün Hemolitik Anemi (AİHA)</strong>, bağışıklık sisteminin eritrosit yüzeyindeki antijenlere karşı otokorlar (otoantikorlar) üretmesi ve bu antikorların eritrositlerin erken yıkımına (hemoliz) yol açmasıyla karakterize edinsel bir hastalıktır.</p><p>Hastalık, otoantikorların eritrositlere en ideal bağlandığı sıcaklığa (termal amplitüd) göre iki ana gruba ayrılır:</p><ul class=\"mb-4\"><li><strong>Sıcak Tip AİHA (Warm AİHA):</strong> Olguların %70-80'ini oluşturur. Sorumlu antikor <strong>IgG</strong> yapısındadır ve 37°C'de (vücut ısısında) maksimum reaktivite gösterir.</li><li><strong>Soğuk Tip AİHA (Cold Agglutinin Disease / KHA):</strong> Olguların %20-30'udur. Sorumlu antikor <strong>IgM</strong> yapısındadır ve 0-4°C'de (özellikle ekstremitelerde) optimum bağlanma gösterir.</li></ul>"
     },

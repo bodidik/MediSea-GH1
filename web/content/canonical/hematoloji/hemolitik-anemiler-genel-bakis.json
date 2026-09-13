@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Temel Kavramlar",
       "html": "<p><strong>Hemolitik Anemiler</strong>, eritrositlerin normal ömürlerini (yaklaşık 120 gün) tamamlamadan, fizyolojik olmayan bir hızda ve erken yıkıma uğraması (hemoliz) sonucu gelişen anemilerdir. Kemik iliği, bu yıkımı kompanse etmek amacıyla eritropoietin uyarısıyla üretimini 6-8 katına kadar artırabilir (hiperproliferatif yanıt). Yıkım hızının, kemik iliğinin maksimum üretim kapasitesini aştığı noktada klinik anemi tablosu ortaya çıkar.</p>"
     },

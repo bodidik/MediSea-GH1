@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Prezantasyon",
       "html": "<p><strong>Akut Lenfoblastik Lösemi (ALL)</strong>, B veya T lenfoid öncül hücrelerinin (lenfoblastların) kemik iliği, periferik kan ve ekstramedüller organlarda klonal proliferasyonuyla karakterize agresif bir hematolojik malignitedir. Olguların %80-85'i <strong>B-ALL</strong>, %15-20'si ise <strong>T-ALL</strong> kökenlidir.</p><p><strong>Klinik Bulgular:</strong> Kemik iliği yetmezliğine bağlı anemi (yorgunluk), nötropeni (enfeksiyon) ve trombositopeni (kanama) bulgularıyla başvurur. ALL, AML'ye kıyasla <strong>ekstramedüller tutulumu</strong> (özellikle Santral Sinir Sistemi [SSS] ve testisler) çok daha sık yapar. Hastalarda yaygın lenfadenopati, hepatosplenomegali ve şiddetli kemik ağrıları görülür. T-ALL vakaları sıklıkla genç erkeklerde <strong>büyük mediastinal kitle</strong> (vena kava süperior sendromu, plevral efüzyon) ve yüksek lökosit sayısıyla prezante olur.</p>"
     },

@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Hayati Sınıflandırma Farkı (WHO / ICC 2022)",
       "html": "<p><strong>Kronik Eozinofilik Lösemi (CEL)</strong>, kemik iliğinde eozinofilik öncüllerin otonom ve klonal proliferasyonu sonucu periferik kanda kalıcı hipereozinofili ve buna bağlı uç organ hasarı ile karakterize bir Miyeloproliferatif Neoplazmdır (MPN).</p><p>⚠️ <strong>Klinik Uyarı:</strong> Güncel WHO ve ICC kılavuzlarında, eozinofili ile seyreden hastalıklar genetik temellerine göre kesin çizgilerle ayrılmıştır:</p><ul class=\"mb-4\"><li><strong>Eozinofili ve Tirozin Kinaz Gen Rearranjmanları Olan Miyeloid/Lenfoid Neoplaziler:</strong> <em>PDGFRA, PDGFRB, FGFR1, JAK2, FLT3</em> veya <em>ETV6::ABL1</em> mutasyonları saptanan hastalar CEL'den ayrılarak <strong>müstakil bir hastalık grubu</strong> olarak sınıflandırılır.</li><li><strong>CEL, NOS (Başka Türlü Adlandırılamayan):</strong> Yukarıdaki tirozin kinaz füzyonlarının <em>bulunmadığı</em>, ancak klonalitenin genetik (örn. <em>ASXL1, TET2, SRSF2</em> mutasyonları) veya sitogenetik olarak ispatlandığı YA DA periferik kanda/kemik iliğinde blast artışının (%2-19) saptandığı gruptur.</li></ul>"
     },

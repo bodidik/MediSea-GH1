@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji ve Oksidatif Stres",
       "html": "<p><strong>Glukoz-6-Fosfat Dehidrogenaz (G6PD) Eksikliği</strong>, X kromozomuna bağlı (X-linked) resesif geçiş gösteren, dünyada en sık karşılaşılan eritrosit enzim defektidir. Erkeklerde (hemizigot) tam klinik tablo görülürken, kadınlar genellikle taşıyıcıdır.</p><p>Olgun eritrositlerde mitokondri bulunmadığı için enerji ve koruyucu molekül sentezi kısıtlıdır. G6PD enzimi, <strong>Heksoz Monofosfat Şantının</strong> (Pentoz Fosfat Yolağı) ilk ve hız kısıtlayıcı basamağıdır. Bu yolak, <strong>NADPH</strong> üreterek hücre içi glutatyonu redükte (aktif) formda tutar. Redükte glutatyon, eritrositi serbest oksijen radikallerinin ve peroksitlerin (oksidatif stresin) yıkıcı etkilerinden koruyan yegane kalkandır. G6PD eksikliğinde NADPH üretilemez, okside edici ajanlar hemoglobinin sülfhidril gruplarına saldırır ve hemoglobini denatüre eder.</p>"
     },

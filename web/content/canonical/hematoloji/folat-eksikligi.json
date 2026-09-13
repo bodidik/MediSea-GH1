@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji",
       "html": "<p><strong>Folat (B9 Vitamini) Eksikliği</strong>, DNA sentezinin bozulması sonucu hücre çekirdeğinin olgunlaşamaması, ancak sitoplazmanın (RNA ve protein sentezinin devam etmesiyle) büyümeye devam etmesi tablosu olan <strong>Megaloblastik Anemilerin</strong> en sık görülen iki nedeninden biridir (diğeri B12 eksikliğidir).</p><p>Folat, vücutta pürin ve pirimidin (timidilat) sentezi için elzem olan tek karbon (metil) vericisidir. Eksikliğinde eritrosit öncüllerinde hücre bölünmesi yavaşlar, bu da periferik kana dev (makrositik, MCV > 100 fL) ve dayanıksız (kısa ömürlü) eritrositlerin çıkmasına yol açar.</p>"
     },

@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Patofizyoloji: Kristal Fırtınası",
       "html": "<p>Kolesterol Emboli Sendromu, büyük arterlerdeki (aort gibi) aterosklerotik plaklardan kopan mikroskobik kolesterol kristallerinin küçük arterleri (150-200 μm) tıkamasıdır.</p><ul class=\"mb-4\"><li><strong>Tetikleyici Faktörler:</strong> %90 vakada invaziv vasküler girişimler (Anjiyografi, stent, cerrahi) veya antikoagülan/trombolitik tedavi sonrası gelişir.</li><li><strong>Mekanizma:</strong> Kristaller sadece tıkanıklık yapmaz; aynı zamanda şiddetli bir yabancı cisim inflamatuar yanıtı başlatarak damar lümeninin tamamen kapanmasına (fibrozis) yol açar.</li></ul>"
     },

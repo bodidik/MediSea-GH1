@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji: Neden Büyürler?",
       "html": "<p>Eritrositlerin ortalama hacminin (MCV) <strong>100 fL'nin üzerinde</strong> (bazen 115-120 fL'lere kadar çıkar) olmasına makrositoz denir. Makrositer anemiler, kemik iliğindeki üretim kusurunun doğasına göre klinik ve morfolojik olarak iki dev ana gruba ayrılır: <strong>Megaloblastik</strong> ve <strong>Non-Megaloblastik</strong> anemiler.</p>"
     },

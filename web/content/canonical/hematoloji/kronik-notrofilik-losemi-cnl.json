@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı (Taslak Modülü)",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül, kütüphanenin altyapısını hızla kurmak amacıyla Yapay Zeka (AI) tarafından oluşturulmuş güncel bir taslaktır. İlerleyen süreçte yazarın (kendi) özgün, derinlemesine klinik tecrübeleri ve notlarıyla güncellenecektir.</em></p>"
-    },
-    {
       "heading": "Tanım ve Genetik Patogenez",
       "html": "<p><strong>Kronik Nötrofilik Lösemi (CNL)</strong>, periferik kanda ve kemik iliğinde displazi olmaksızın olgun (matür) nötrofillerin sürekli ve belirgin proliferasyonu ile karakterize, oldukça nadir görülen bir BCR-ABL1 negatif Miyeloproliferatif Neoplazmdır (MPN).</p><p><strong>CSF3R Mutasyonu:</strong> CNL patogenezinin mutlak merkezinde Koloni Uyarıcı Faktör 3 Reseptörü (<em>CSF3R</em>) genindeki aktive edici mutasyonlar yatar. Olguların %80-100'ünde, özellikle membran proksimal bölgesinde yer alan <strong>CSF3R T618I</strong> mutasyonu saptanır. Bu mutasyon, reseptörün liganddan (G-CSF) bağımsız olarak sürekli aktif kalmasına ve alt akım <strong>JAK-STAT yolağını</strong> aşırı uyarmasına neden olur. Kötü prognozla ilişkili <em>ASXL1</em> ve <em>SETBP1</em> mutasyonları da sıklıkla (%50-60) CSF3R'ye eşlik eder.</p>"
     },

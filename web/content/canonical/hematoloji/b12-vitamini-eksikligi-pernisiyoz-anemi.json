@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji ve Emilim Fizyolojisi",
       "html": "<p><strong>B12 Vitamini (Kobalamin)</strong>, DNA sentezinde (timidin üretimi) ve sinir sisteminde miyelin kılıfının bütünlüğünün korunmasında elzem olan, hayvansal kaynaklı bir vitamindir. Eksikliği, kemik iliğinde inefektif eritropoeze (megaloblastik anemi) ve sinir sisteminde demyelinizasyona yol açar.</p><p><strong>Emilim Mekanizması:</strong> B12 vitamininin emilimi oldukça spesifik ve çok basamaklı bir süreçtir:</p><ol class=\"mb-4\"><li>Mide asidi ve pepsin, besinlerdeki B12'yi proteinlerden ayırır. Tükürükten salgılanan <em>Haptokorrin (R-binder)</em> B12'ye bağlanarak onu mide asidinden korur.</li><li>Midenin <strong>paryetal hücrelerinden</strong> salgılanan <strong>İntrinsik Faktör (IF)</strong> duodenuma geçer. Pankreas enzimleri haptokorrini yıkar ve B12, İntrinsik Faktör ile birleşir.</li><li>B12-IF kompleksi, spesifik reseptörler (Kübilin) aracılığıyla <strong>terminal ileumdan</strong> emilir.</li></ol>"
     },

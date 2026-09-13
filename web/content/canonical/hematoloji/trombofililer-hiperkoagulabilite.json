@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Patofizyoloji: Virchow Triadı",
       "html": "<p><strong>Trombofili (Hiperkoagülabilite)</strong>, hemostaz dengesinin kanama yerine patolojik pıhtılaşma (tromboz) lehine bozulduğu kalıtsal veya edinsel bozuklukları tanımlar. Tromboz riskini belirleyen üç temel evrensel faktör (Virchow Triadı) şunlardır:</p><ul class=\"mb-4\"><li><strong>Endotel Hasarı:</strong> Travma, cerrahi, inflamasyon, sigara ve hipertansiyon endotelin antitrombotik yapısını bozar.</li><li><strong>Kan Akımında Staz (Durgunluk):</strong> Uzun süreli immobilizasyon (yatak istirahatı, uzun uçuşlar), obezite, gebelik ve atriyal fibrilasyon kan akımını yavaşlatarak prokoagülan faktörlerin birikmesine neden olur.</li><li><strong>Kanın Hiperkoagülabilitesi:</strong> Pıhtılaşma faktörlerinin aşırı aktivitesi veya doğal antikoagülanların (Protein C, S, Antitrombin) eksikliğidir. Trombofili panelleri doğrudan bu maddeyi inceler.</li></ul>"
     },

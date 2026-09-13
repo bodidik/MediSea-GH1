@@ -8,10 +8,6 @@
   },
   "sections": [
     {
-      "heading": "🤖 AI İçerik Uyarısı",
-      "html": "<p><em>⚠️ <strong>Klinik Uyarı:</strong> Bu modül yapay zekâ (AI) tarafından oluşturulmuş bir taslaktır.</em></p>"
-    },
-    {
       "heading": "Tanım ve Primer Hemostaz Fizyolojisi",
       "html": "<p>Trombositler (kan pulçukları), kemik iliğindeki megakaryositlerin sitoplazmik parçalanmasıyla oluşan, çekirdeksiz ve disk şeklinde hücresel elemanlardır. <strong>Primer hemostazın</strong> (vasküler hasar sonrası ilk tıkaç oluşumu) temel aktörleridir.</p><p>Primer hemostaz üç ana aşamada gerçekleşir:</p><ol class=\"mb-4\"><li><strong>Adezyon (Yapışma):</strong> Endotel hasarlandığında açığa çıkan subendotelyal kollajene bağlanan von Willebrand Faktör (vWF) üzerinden, trombositler <strong>Glikoprotein Ib/IX/V (GpIb)</strong> reseptörleriyle bölgeye tutunur.</li><li><strong>Aktivasyon ve Sekresyon:</strong> Tutunan trombositler aktive olarak şekil değiştirir ve granüllerini (ADP, Tromboksan A2, Serotonin) salgılayarak diğer trombositleri bölgeye çağırır.</li><li><strong>Agregasyon (Kümelenme):</strong> Aktive olan trombositler, yüzeylerindeki <strong>Glikoprotein IIb/IIIa (GpIIb/IIIa)</strong> reseptörlerinin konformasyonel değişimi sayesinde fibrinojen molekülleri aracılığıyla birbirlerine çapraz bağlanır ve sağlam bir primer trombosit tıkacı oluşturur.</li></ol>"
     },
