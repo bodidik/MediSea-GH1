@@ -306,6 +306,36 @@
       ],
       "zorluk": "orta",
       "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Tiroid Kanserleri: Patoloji, Cerrahi ve Takip"
+    },
+    {
+      "id": "s11",
+      "metin": "56 yaşında kadın hasta; 5 yıldır takip edilen asemptomatik, ötiroid nodüler guatr nedeniyle kontrole başvuruyor. Yapılan fizik muayenesinde sol tiroid lobunda belirginleşme tespit ediliyor. Laboratuvar tetkiklerinde TSH: 1.4 mU/L (normal) ve serbest T4: 1.1 ng/dL (normal) olarak saptanıyor. Seriye ait tiroid ultrasonografilerinin karşılaştırılmasında, 2 yıl önceki USG'de 32x24 mm olan baskın nodülün boyutunun bu kontrol ultrasonografisinde 40x31 mm'ye (iki boyutta %20'nin üzerinde büyüme) ulaştığı ve toplam tiroid hacminin arttığı tespit ediliyor. İğne biyopsisi (İABİ) benign nodüler guatr ile uyumlu sonuçlanan hastada semptom veya retrosternal/brakiyosefalik uzanım saptanmıyor.\n\nÖtiroid benign nodüler guatrın takibi, büyüyen guatrlara yaklaşım ve tedavi seçeneklerinin (cerrahi, radyoaktif iyot, levotiroksin süpresyonu, termal ablasyon) karşılaştırmalı klinik özellikleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Seri görüntülemelerde iki boyutta %20 artış gösteren benign guatrlarda aktif tedavi önerilir (Grade 2C); obstrüktif bulgular veya kozmetik kaygıları olan/büyüyen ötiroid nodüler guatrlarda ilk tercih tedavi seçeneği cerrahidir (Grade 2C) ve total/yakına yakın tiroidektomi, subtotal tiroidektomiye kıyasla doku nüksü riskini belirgin şekilde azaltır (%0.2'ye karşı %8.4).",
+        "B": "Nontoksik benign nodüler guatrda levotiroksin (L-T4) ile TSH süpresyon tedavisi guatr hacminde %50'nin üzerinde kalıcı küçülme sağladığı için kılavuzlarca birincil medikal tedavi seçeneği olarak güçlü şekilde önerilmektedir.",
+        "C": "Brakiyosefalik ven seviyesinin altına uzanım gösteren (substernal) asemptomatik nodüler guatr olgularında ultrason rehberliğinde termal ablasyon (RFA) ilk basamak tercih edilecek yöntemdir.",
+        "D": "Nontoksik nodüler guatr nedeniyle radyoaktif iyot (RAI - 131-I) tedavisi verilen hastaların takibinde ultrasonografi ve İABİ biyopsisi tam bir benign görünüm sağlar ve biyopsi karmaşasını tamamen ortadan kaldırır.",
+        "E": "Asemptomatik, stabil ötiroid benign guatrlı hastaların yıllık izleminde tiroid ultrasonografisi her 6 ayda bir zorunlu olarak tekrarlanmalı ve L-T4 replasmanı rutin olarak başlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İki boyutta %20 artış anlamlı büyümedir ve aktif tedavi gerektirir; tercih cerrahidir ve total/yakına yakın tiroidektomi nüksü subtotale göre belirgin azaltır (%0.2'ye karşı %8.4).",
+      "aciklama_detay": "Benign ötiroid nodüler guatrlarda klinik yönetim; hastanın semptom durumuna (obstrüktif bulgular, bası), substernal uzanıma, büyüme hızına ve komorbiditelerine göre belirlenmektedir.\n\nSeri tiroid ultrasonografilerinde nodül veya guatr boyutunda iki boyutta %20 artış saptanması anlamlı büyüme olarak kabul edilir ve bu hastalarda takip yerine aktif tedaviye geçilmesi önerilir (Grade 2C). Büyüyen veya bası/kozmetik semptom oluşturan ötiroid benign guatrlarda tercih edilen temel tedavi cerrahidir (Grade 2C). Cerrahi teknik olarak total veya yakına yakın tiroidektomi, subtotal tiroidektomiye göre üstündür; randomize çalışmalar içeren Cochrane derlemesinde doku nüksü ve tekrarlayan guatr oranı total tiroidektomi sonrası %0.2 iken, subtotal tiroidektomi sonrası %8.4 olarak saptanmıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İki boyutta %20 büyüme aktif tedavi eşiğidir; tercih cerrahidir ve total/yakına yakın tiroidektomi nüksü subtotale kıyasla belirgin azaltır.",
+        "B": "YANLIS — Nontoksik benign guatrda L-T4 ile TSH süpresyonunun rolü son derece kısıtlı ve tartışmalıdır. Karşılaştırmalı randomize çalışmada L-T4 süpresyonu guatr hacminde yalnızca klinik olarak önemsiz %5'lik bir küçülme sağlarken (RAI'de %41 küçülme), L-T4 kesildiğinde bu etki de kaybolmaktadır. Ayrıca iyatrojenik tirotoksikoz riski ve lomber kemik mineral yoğunluğunda kayıp (%3.6 azalma) nedeniyle rutin kullanımı önerilmemektedir.",
+        "C": "YANLIS — Brakiyosefalik ven seviyesinin altına uzanan substernal guatrlarda ameliyatın zorlaşması ve tiroid kanseri takibinin imkânsızlaşması nedeniyle ilk tercih CERRAHİDİR. Termal ablasyon tekniklerinin uygulanabilmesi için guatrın boyun ekstansiyondayken sternal çentiğin üstünde kalması şarttır ve substernal uzanımda ablasyon verisi yetersizdir.",
+        "D": "YANLIS — Radyoaktif iyot tedavisi sonrasında nodüler tiroid dokusu ultrasonografide ve İABİ sitolojisinde yalancı şüpheli özellikler kazanır. Bu durum yanıltıcı biyopsi sonuçlarına ve hastayı rahatlatmak adına ikincil cerrahi ihtiyacına yol açabilir.",
+        "E": "YANLIS — Asemptomatik, stabil ötiroid benign guatr hastalarında yıllık takipte TSH ve serbest T4 ölçümü ile semptom/fizik muayene yapılır. Tiroid ultrasonografisi her 6 ayda bir değil; başlangıçta yıllık, doku boyutu stabil seyrettiğinde ise 2 ila 5 yılda bir tekrarlanır. Ayrıca ötiroid hastaya L-T4 verilmesi gerekmez."
+      },
+      "etiketler": [
+        "Benign Guatr",
+        "Büyüme Ölçütü",
+        "Total Tiroidektomi",
+        "L-T4 Süpresyonu",
+        "Termal Ablasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Overview of the management of benign goiter"
     }
   ]
 }
