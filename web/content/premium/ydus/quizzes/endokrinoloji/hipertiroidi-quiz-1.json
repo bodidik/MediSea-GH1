@@ -32,6 +32,93 @@
         "ETA/ATA"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s2",
+      "metin": "32 yaşında kadın hasta, yeni tanı aşikar Graves hipertiroidisi nedeniyle değerlendiriliyor. Şiddetli çarpıntı, tremor ve sıcağa tahammülsüzlük şikayetleri olan hastada semptomatik kontrol amacıyla beta bloker tedavisi planlanıyor. Tıbbi değerlendirmesinde hastanın 8 haftalık gebe olduğu tespit ediliyor.\n\nHipertiroidi tedavisinde beta blokerlerin farmakolojik özellikleri, periferik tiroid hormonu metabolizmasına etkileri ve gebelikteki güvenlik profilleri ile ilgili kaynak verileri doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yüksek doz propranolol (>160 mg/gün), 5'-monodeiodinaz inhibisyonu ile serum T3 düzeylerini hızlıca (ilk 24 saat içinde) %30 oranında düşürür ve akut tiroid fırtınasında T3 düzeyini indirmede ana tedavi seçeneğidir.",
+        "B": "Sotalol ve nadolol, yüksek lipid çözünürlükleri sayesinde periferik dokularda yoğunlaşarak serum T3 konsantrasyonlarını belirgin şekilde azaltan beta blokerlerdir.",
+        "C": "Gebelikte hipertiroidiye bağlı semptom kontrolü gerektiğinde, fetal büyüme kısıtlılığı (küçük bebek) riski nedeniyle atenololden ziyade en düşük doz ve en kısa süreyle metoprolol veya propranolol kullanımı tercih edilir.",
+        "D": "Astım veya kronik obstrüktif akciğer hastalığı (KOAH) gibi bağıl kontrendikasyonu olan hastalarda non-selektif beta bloker olan propranolol ilk tercih olarak başlanmalı ve doz 200 mg/gün'e kadar çıkılmalıdır.",
+        "E": "Gebelikte tionamid tedavisine eklenen propranololün, tek başına tionamid kullanımına kıyasla spontan düşük riskini belirgin şekilde azalttığı gösterilmiştir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Gebelikte atenolol fetal büyüme kısıtlılığı ile ilişkilidir; semptom kontrolü gerektiğinde kardiyoselektif metoprolol (genellikle 25–50 mg/gün) veya propranolol mümkün olan en düşük dozda ve en kısa süreyle tercih edilmelidir.",
+      "aciklama_detay": "Hipertiroidide artmış beta-adrenerjik reseptör sayısı ve duyarlılığı nedeniyle beta blokerler semptomatik kontrolde ilk basamakta yer alır. Ancak gebelik, komorbiditeler ve periferik deiodinaz inhibisyonu açısından spesifik özellikleri mevcuttur.\n\nGebelikte atenolol kullanımı fetal büyüme kısıtlılığı ve küçük bebek (intrauterin gelişme geriliği) doğumu ile ilişkili bulunmuştur. Ayrıca genel olarak beta bloker kullanımına bağlı neonatal hipoglisemi, bradikardi ve solunum depresyonu bildirilmiştir. Bu nedenle gebelikte semptom kontrolü gerektiginde, kardiyoselektif metoprolol (genellikle 25–50 mg/gün) veya propranolol mümkün olan en düşük dozda ve en kısa süreyle tercih edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yüksek doz propranolol (>160 mg/gün), 5'-monodeiodinaz enzimini inhibe ederek T4'ün T3'e dönüşümünü engeller ve serum T3 düzeyini %30'a kadar düşürebilir. Ancak bu etki yavaş ortaya çıkar (7 ila 10 gün sürer) ve ilacın terapötik etkisine katkısı oldukça sınırlıdır. Tiroid fırtınası gibi akut durumlarda deiodinaz inhibisyonu gerekiyorsa, yavaş etkili propranolol yerine Propiltiourasil (PTU) veya iyotlu radyokontrast ajanlar tercih edilir.",
+        "B": "YANLIS — Propranolol yüksek lipid çözünürlüğüne sahip olduğu için dokularda birikerek deiodinaz inhibisyonu yapabilir. Buna karşın sotalol ve nadolol serum T3 konsantrasyonlarında herhangi bir düşüşe yol açmaz. Atenolol, alprenolol ve metoprolol ise T3 düzeylerinde yalnızca minimal bir azalmaya neden olur.",
+        "C": "DOGRU — Gebelikte atenolol kullanımı fetal büyüme kısıtlılığı ve küçük bebek (intrauterin gelişme geriliği) doğumu ile ilişkili bulunmuştur. Bu nedenle kardiyoselektif metoprolol (genellikle 25–50 mg/gün) veya propranolol mümkün olan en düşük dozda ve en kısa süreyle tercih edilmelidir.",
+        "D": "YANLIS — Astım, KOAH, şiddetli periferik vasküler hastalık veya Raynaud fenomeni gibi bağıl (rölatif) kontrendikasyonu bulunan hastalarda non-selektif propranolol yerine beta-1 selektif olan atenolol veya metoprolol çok daha iyi tolere edilir.",
+        "E": "YANLIS — Gebelikte hipertiroidi nedeniyle tionamid tedavisi alan kadınlarda, tedaviye propranolol eklenmesinin tek başına tionamid kullanımına kıyasla spontan düşük (spontaneous abortion) riskini artırdığı bildirilmiştir."
+      },
+      "etiketler": [
+        "Beta Bloker",
+        "Gebelik",
+        "Atenolol",
+        "Deiyodinaz İnhibisyonu",
+        "Semptomatik Tedavi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s3",
+      "metin": "Aşikar veya subklinik hipertiroidizmi bulunan hastalarda tiroid hormonlarının iskelet sistemi, kemik mikromimarisi ve mineral metabolizması üzerindeki hücresel, histomorfometrik ve biyokimyasal etkileri değerlendirilmektedir.\n\nHipertiroidik kemik hastalığının patogenezi, histomorfometrik özellikleri ve mineral metabolizmasında meydana gelen ikincil değişiklikler ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hipertiroidizmde hızlanan kemik remodelling sürecinde osteoklastik yıkım trabeküler kemikte kortikal kemiğe kıyasla belirgin şekilde daha fazladır; ilyak kanat kemik biyopsilerinde trabeküler kemik hacminde %40 azalma görülür.",
+        "B": "Hipertiroidik kemik kayıplarında nükleer T3 reseptörlerinden baskın olarak tiroid reseptör-alfa-1 (TR-α1) aracılığıyla osteoklastik rezorpsiyon uyarılır ve normalde yaklaşık 200 gün olan kemik remodelling döngü süresi yarıya iner.",
+        "C": "Artmış kemik rezorpsiyonuna bağlı dolaşıma kalsiyum salınımı artar; bu durum serum PTH düzeylerini uyararak 25-hidroksivitamin D'nin 1,25-dihidroksivitamin D'ye (kalsitriol) dönüşümünü artırır ve bağırsaktan kalsiyum emilimini yükseltir.",
+        "D": "Postmenopozal kadınlarda TSH baskılayıcı levotiroksin tedavisi sırasında eş zamanlı verilen östrojen replasman tedavisi kemik mineral yoğunluğu üzerindeki koruyucu etkisini kaybederek kemik kaybını şiddetlendirir.",
+        "E": "Hipertiroidili hastaların ilyak kanat kemik biyopsilerinde osteoid hacminde belirgin artış izlenir ve tabloya sıklıkla osteomalazi eşlik eder."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tiroid hormonu kemik rezorpsiyonunu ağırlıklı olarak TR-α1 üzerinden uyarır; normalde ~200 gün süren remodeling döngü süresi yarıya iner (~100 gün) ve her döngüde net mineralize kemik kaybı olur.",
+      "aciklama_detay": "Tiroid hormonları (özellikle T3), kemik dokusundaki nükleer reseptörler üzerinden kemik döngüsü ve mineral metabolizması üzerinde doğrudan ve güçlü etkilere sahiptir.\n\nTiroid hormonu kemik rezorpsiyonunu doğrudan nükleer T3 reseptörleri — ağırlıklı olarak osteoblast ve osteoklast hatlarında bulunan tiroid reseptör-alfa-1 (TR-α1) — aracılığıyla uyarır. Aşikar hipertiroidizmde osteoklastik rezorpsiyon, osteoblastik remineralizasyonun ötesinde uyarılır. Normalde yaklaşık 200 gün süren remodeling döngü süresi yarıya iner (~100 gün) ve her bir döngüde net mineralize kemik kaybı gerçekleşir. (Hipotiroidizmde ise döngü süresi ~700 güne uzar).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlyak kanat kemik biyopsilerinin histomorfometrik incelemeleri, hipertiroidizmin trabeküler kemikten ziyade kortikal kemik üzerinde çok daha fazla yıkıcı etki gösterdiğini doğrulamıştır. Hipertiroidik hastalarda trabeküler kemik hacmindeki azalma yalnızca %2.7 oranındayken, kortikal kemikte osteoklastik rezorpsiyon yüzeyinde %40 artış ve kortikal porozitede %32 artış saptanmıştır.",
+        "B": "DOGRU — Tiroid hormonu kemik rezorpsiyonunu doğrudan nükleer T3 reseptörleri — ağırlıklı olarak TR-α1 — aracılığıyla uyarır; normalde yaklaşık 200 gün süren remodeling döngü süresi yarıya iner (~100 gün).",
+        "C": "YANLIS — Kemik rezorpsiyonu sonucu dolaşıma kalsiyum geçişinin artması serum PTH düzeylerini baskılar. Düşük serum PTH düzeyleri, 25-hidroksivitamin D'nin aktif form olan 1,25-dihidroksivitamin D'ye (kalsitriol) dönüşümünü azaltır. Kalsitriol üretimindeki düşüş ve artmış kalsitriol metabolizması nedeniyle bağırsaktan kalsiyum emilimi azalır ve dışkıyla kalsiyum kaybı gelişir. Baskılanan PTH aynı zamanda böbrekten kalsiyum atılımını (hiperkalsiüri) artırarak negatif kalsiyum dengesine yol açar.",
+        "D": "YANLIS — Yüksek doz veya suprafizyolojik levotiroksin (T4) tedavisi alan postmenopozal kadınlarda eş zamanlı östrojen replasman tedavisi (ERT) koruyucu etki gösterir ve tiroid hormonuna bağlı gelişebilecek kemik kaybını engeller.",
+        "E": "YANLIS — Hipertiroidili hastaların histomorfometrik biyopsi değerlendirmelerinde osteoid hacminde herhangi bir değişiklik saptanmamıştır (osteomalazi eşlik etmez). Kemik kaybı mineralize kemik dokusunun doğrudan hızlı kaybı şeklinde gerçekleşir."
+      },
+      "etiketler": [
+        "Kemik Metabolizması",
+        "TR-α1",
+        "Histomorfometri",
+        "Kortikal Kemik",
+        "Hiperkalsiüri"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s4",
+      "metin": "58 yaşında kadın hasta; çarpıntı, efor dispnesi, sıcağa tahammülsüzlük ve sistolik hipertansiyon ile başvuruyor. Laboratuvar incelemesinde TSH: <0.01 mU/L, serbest T4 ve serbest T3 düzeyleri belirgin yüksek saptanıyor. Ekokardiyografik değerlendirmede hiperdinamik sol ventrikül, artmış kardiyak debi, azalmış sistemik vasküler direnç ve ortalama pulmoner arter basıncı 42 mmHg (pulmoner hipertansiyon) tespit ediliyor.\n\nHipertiroidizmin kardiyovasküler hemodinamik etkileri, hücresel mekanizmaları ve klinik yönetimi ile ilgili kaynak verileri doğrultusunda aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Kardiyak miyosit içerisine taşınan temel tiroid hormonu tiroksin (T4) olup, nükleer reseptörlerden TR-beta2 izoformuna bağlanarak SERCA ekspresyonunu baskılar ve fosfolamban ekspresyonunu artırır.",
+        "B": "Hipertiroidizmde sistemik dolaşımda belirgin vasküler direnç düşüşü görülürken, pulmoner vasküler dirençte paralel bir düşüş gerçekleşmemesi artmış kardiyak debi zemininde reversibl pulmoner hipertansiyona yol açabilir.",
+        "C": "Atriyal fibrilasyon gelişen ve warfarin tedavisi başlanan hipertiroidik hastalarda, tiroid hormon yüksekliği K vitaminine bağımlı pıhtılaşma faktörlerinin klerensini yavaşlattığı için warfarin duyarlılığı azalır.",
+        "D": "Hipertiroidiye bağlı akut atriyal fibrilasyonda hız kontrolü sağlamak amacıyla intravenöz diltiazem veya verapamil infüzyonu kullanılması kardiyovasküler kollaps riskini önleyen en güvenli yöntemdir.",
+        "E": "T3 ve T4'ün integrin alfa-v beta-3 reseptörleri üzerinden gösterdiği nongenomik etkiler, hipertiroidizmdeki kardiyovasküler yanıtların ve gen ekspresyon değişikliklerinin %90'ından fazlasını oluşturur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aşikar hipertiroidisi olan hastaların yaklaşık %50'sinde pulmoner hipertansiyon izlenebilir; sistemik vasküler direnç düşerken pulmoner yatakta benzer düşüşün olmaması ve artmış kardiyak debi PAB'ı yükseltir. Tablo ötiroidizmle geriler.",
+      "aciklama_detay": "Tiroid hormonlarının kardiyovasküler sistem, miyosit gen ekspresyonu ve periferik vasküler yapı üzerindeki etkileri spesifik fizyopatolojik mekanizmalarla düzenlenmektedir.\n\nAşikar hipertiroidisi olan hastaların yaklaşık %50'sinde pulmoner hipertansiyon izlenebilir. Sistemik dolaşımda belirgin bir vasküler direnç düşüşü (SVR azalması) gerçekleşmesine rağmen, pulmoner vasküler yatakta benzer bir direnç düşüşünün olmaması ve belirgin şekilde artan kardiyak debi pulmoner arter basıncının yükselmesine neden olur. Bu tablo genellikle ötiroidizm sağlandığında tamamen geriler (reversibldir).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kardiyak miyosit içine taşınan ana tiroid hormonu T4 değil, triyodotironindir (T3). T3 nükleer reseptörlerden ağırlıklı olarak TR-alfa1 izoformuna bağlanır. Genomik etkiyle kalsiyum bisikletini düzenleyen SERCA2 ekspresyonunu artırırken, onun inhibitörü olan fosfolamban ekspresyonunu azaltır ve alfa-miyozin ağır zincir sentezini uyarır.",
+        "B": "DOGRU — Sistemik vasküler direnç düşerken pulmoner yatakta benzer bir düşüşün olmaması ve artmış kardiyak debi, reversibl pulmoner hipertansiyona yol açabilir.",
+        "C": "YANLIS — Hipertiroidizm, K vitaminine bağımlı pıhtılaşma faktörlerinin yıkımını ve klerensini hızlandırır. Bu durum hastaların warfarin duyarlılığını artırır (daha düşük warfarin dozları ile hedef INR'ye ulaşılır).",
+        "D": "YANLIS — Hipertiroidik tirotoksik hastalarda intravenöz kalsiyum kanal blokerlerinin (diltiazem, verapamil) kullanılması oldukça tehlikelidir. Bu ajanların vazodilatör ve negatif inotropik etkilerinin birleşimi belirgin hipotansiyona, kardiyojenik şoka ve kardiyovasküler kollapsa yol açabilir. Hız kontrolünde primer olarak beta blokerler (örneğin propranolol, atenolol veya kısa etkili esmolol) tercih edilmelidir.",
+        "E": "YANLIS — Plazma zarı integrin alfa-v beta-3 reseptörleri aracılığıyla gerçekleşen nongenomik etkiler kardiyovasküler yanıtların küçük ancak fizyolojik bir bileşenini oluşturur. Kardiyovasküler etkilerin büyük çoğunluğu nükleer T3 reseptörleri aracılığıyla gerçekleşen genomik gen transkripsiyonu ile düzenlenir."
+      },
+      "etiketler": [
+        "Kardiyovasküler",
+        "Pulmoner Hipertansiyon",
+        "SERCA2",
+        "Warfarin",
+        "Atriyal Fibrilasyon"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
