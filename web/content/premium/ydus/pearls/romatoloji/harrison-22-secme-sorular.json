@@ -21,14 +21,14 @@
       "id": "p-rom-hr-03",
       "level": "Board",
       "title": "Spondiloartritte HLA-B27 ve KIR Reseptör Etkileşimi",
-      "content": "SpA patogenezinde **HLA-B27** homodimerlerinin NK ve T hücre yüzeyindeki **KIR3DL1 ve KIR3DL2** reseptörleriyle peptide bağımsız etkileşimi, hücre içi proinflamatuar sinyal iletimini doğrudan uyararak hastalık yatkınlığına ve patolojisine katkıda bulunur [1.",
+      "content": "SpA patogenezinde **HLA-B27** homodimerlerinin NK ve T hücre yüzeyindeki **KIR3DL1 ve KIR3DL2** reseptörleriyle peptide bağımsız etkileşimi, hücre içi proinflamatuar sinyal iletimini doğrudan uyararak hastalık yatkınlığına ve patolojisine katkıda bulunur.",
       "trigger": "Romatoloji"
     },
     {
       "id": "p-rom-hr-04",
       "level": "Board",
       "title": "Romatoid Artrit (RA) & Ekstraartiküler Tutulum Spektrumu",
-      "content": "**Romatoid Artrit (RA)**, en sık görülen kronik inflamatuar erozif poliaritrit olmasının yanı sıra; romatoid nodüller, vaskülit, akciğer tutulumu, perikardit ve periferik nöropati gibi geniş bir ekstraartiküler sistemik tutulum yelpazesine sahiptir.",
+      "content": "**Romatoid Artrit (RA)**, en sık görülen kronik inflamatuar erozif poliartrit olmasının yanı sıra; romatoid nodüller, vaskülit, akciğer tutulumu, perikardit ve periferik nöropati gibi geniş bir ekstraartiküler sistemik tutulum yelpazesine sahiptir.",
       "trigger": "Romatoloji"
     },
     {
@@ -48,7 +48,7 @@
     {
       "id": "p-rom-hr-07",
       "level": "Board",
-      "title": "Dermatomiyozit (DM) Histopatolojisi & Tip I İnferteron İmzası",
+      "title": "Dermatomiyozit (DM) Histopatolojisi & Tip I İnterferon İmzası",
       "content": "**Dermatomiyozit (DM)** biyopsisinde perimizyal ve perivasküler inflamatuar infiltrat (CD4+ dendritik hücreler, B hücreleri), kapillerlerde membran atak kompleksi (MAC) birikimi ve Tip I interferon ile regüle edilen **MHC-1 ve MxA** proteinlerinin aşırı ekspresyonu karakteristik patolojik bulgulardır.",
       "trigger": "Romatoloji"
     },
@@ -91,7 +91,7 @@
       "id": "p-rom-hr-13",
       "level": "Board",
       "title": "Relapsing Polikondrit & Oküler Komplikasyonlar",
-      "content": "Relapsing Polikondrit hastalarında en sık görülen göz tutulumu **episklerit** olmakla birlikte; daha nadir görülen **sklerit** varlığı görme kaybı, skleromalazi ve glober rüptür riski nedeniyle acil oftalmolojik müdahale gerektirir.",
+      "content": "Relapsing Polikondrit hastalarında en sık görülen göz tutulumu **episklerit** olmakla birlikte; daha nadir görülen **sklerit** varlığı görme kaybı, skleromalazi ve glob rüptürü riski nedeniyle acil oftalmolojik müdahale gerektirir.",
       "trigger": "Romatoloji"
     },
     {
@@ -112,14 +112,14 @@
       "id": "p-rom-hr-16",
       "level": "Board",
       "title": "IgG4-RD Retroperitoneal Fibrozis & Renal Atrofi",
-      "content": "IgG4-RD retroperitoneal tutulum gösterdiğinde, tanı konulmadan önce belirgin fibrozis gelişerek üreteral sıkışmaya, hidronefroza ve postobstrüktif üropatiye yol açar; tubulointerstriyel nefrit zemininde gelişen renal atrofi etkin immünosüpresif tedaviye rağmen kalıcı kalabilir.",
+      "content": "IgG4-RD retroperitoneal tutulum gösterdiğinde, tanı konulmadan önce belirgin fibrozis gelişerek üreteral sıkışmaya, hidronefroza ve postobstrüktif üropatiye yol açar; tubulointerstisyel nefrit zemininde gelişen renal atrofi etkin immünosüpresif tedaviye rağmen kalıcı kalabilir.",
       "trigger": "Romatoloji"
     },
     {
       "id": "p-rom-hr-17",
       "level": "Board",
       "title": "Eklem Tutulum Tipleri ve Simetri Özellikleri",
-      "content": "Musküler-iskelet değerlendirmesinde: **Romatoid Artrit (RA)** poliaritriküler ve simetrik tutulum sergilerken; **Spondiloartrit, Reaktif Artrit ve Gut** sıklıkla asimetrik ve oligoartikülerdir. **Osteoartrit (OA)** ve **Psöriyatik Artrit** ise hem simetrik hem de asimetrik patern gösterebilir.",
+      "content": "Musküler-iskelet değerlendirmesinde: **Romatoid Artrit (RA)** poliartiküler ve simetrik tutulum sergilerken; **Spondiloartrit, Reaktif Artrit ve Gut** sıklıkla asimetrik ve oligoartikülerdir. **Osteoartrit (OA)** ve **Psöriyatik Artrit** ise hem simetrik hem de asimetrik patern gösterebilir.",
       "trigger": "Romatoloji"
     },
     {
