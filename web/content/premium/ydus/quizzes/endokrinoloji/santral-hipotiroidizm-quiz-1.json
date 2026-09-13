@@ -211,6 +211,36 @@
       ],
       "zorluk": "orta",
       "kaynak": "Economidou et al. Hormones 2011; Persani et al. Eur J Endocrinol 2018"
+    },
+    {
+      "id": "s8",
+      "metin": "45 yaşında erkek hasta; 2 yıl önce geçirilmiş makroadenom rezeksiyonu ve radyoterapi öyküsü nedeniyle hipopitüiterizm ve sekonder (santral) hipotiroidizm tanısıyla levotiroksin (L-T4) replasman tedavisi altındadır. Rutin kontrollerinde serum TSH: <0.01 mU/L (baskılı) ve otomatize serbest T4: 2.1 ng/dL (yüksek, normal aralık: 0.8–1.8 ng/dL) olarak saptanıyor. Hasta klinik olarak hafif çarpıntı ve tremor tanımlamaktadır.\n\nYetişkinlerde anormal tiroid fonksiyon testlerinin (yüksek serbest T4 ve anormal TSH) laboratuvar yorumlanması, spesifik hasta gruplarında (santral hipotiroidizm, gebelik, biyotin kullanımı) izlem ilkeleri ve doz ayarlama stratejileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yüksek doz biyotin (5–10 mg/gün) takviyesi alan bireylerde biyotinile antikor içeren immünölçüm yöntemlerine ikincil yalancı TSH düşüklüğü ve serbest T4 yüksekliği saptandığında, ilacın kesilmesinden 12 saat sonra testlerin tekrarlanması güvenilir sonuç almak için yeterlidir.",
+        "B": "Santral (sekonder) hipotiroidizm tanılı hastalarda levotiroksin replasman tedavisinin izlemi ve doz ayarlaması serum TSH düzeyi ile yapılamaz; çünkü serum serbest T4 düzeyini normale getiren dozlarda TSH hastaların neredeyse tamamında <0.1 mU/L seviyesine baskılanır. Tedavinin takibi klinik semptomlar ve serum serbest T4 düzeyini normal referans aralığının orta-üst yarısında (slightly higher than mid-normal) tutacak şekilde yapılmalıdır.",
+        "C": "Primer hipotiroidi nedeniyle takip edilen bir hastada TSH <0.05 mU/L ve serbest T4 seviyesi referans ortalamasının iki katı (örneğin 2.8 ng/dL) saptandığında levotiroksin dozu %12–25 oranında azaltılmalı ve TSH 2 hafta sonra kontrol edilmelidir.",
+        "D": "Yüksek serbest T4 ile birlikte serum TSH düzeyinin normal (baskılanmamış) veya yüksek saptandığı durumlarda ayırıcı tanıda öncelikle Graves hastalığı ve toksik multinodüler guatr düşünülmeli; TSH salgılayan hipofiz adenomu (TSHoma) seçeneği kesin olarak dışlanmalıdır.",
+        "E": "Gebelerde 2. ve 3. trimesterda serum serbest T4 immünölçüm yöntemleri bağlayıcı protein değişimlerinden kesinlikle etkilenmez; bu nedenle TSH ile serbest T4 arasında uyumsuzluk saptandığında total T4 ölçümü yapılması gereksiz ve kontrendikedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Santral hipotiroidizmde TSH izlem parametresi olamaz: sT4'ü normale getiren dozlarda TSH neredeyse tüm hastalarda <0.1 mU/L'ye baskılanır. Titrasyon klinik + sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
+      "aciklama_detay": "Yetişkinlerde yüksek serbest T4 ve anormal TSH profillerinin değerlendirilmesinde, hastanın primer hipertiroidizm, levotiroksin replasmanı, santral hipotiroidizm veya gebelik gibi klinik durumları ile test etkileşimlerinin doğru analizi kritik önem taşır.\n\nHipofiz veya hipotalamus hastalıklarına bağlı santral (sekonder) hipotiroidizm vakalarında levotiroksin replasmanı izlenirken serum TSH düzeyi izlem parametresi olarak kullanılamaz. Serum serbest T4 konsantrasyonunu normal aralığa getiren replasman dozlarında dahi serum TSH düzeyi hastaların neredeyse tamamında <0.1 mU/L seviyesine baskılanır. Bu nedenle tedavinin titrasyonu, hastanın klinik semptomları ve serum serbest T4 düzeyinin normal referans aralığının orta-üst yarısında tutulması hedeflenerek yapılır; serbest T4 yüksek saptandığında L-T4 dozu azaltılmalı ve 6-8 hafta sonra serbest T4 seviyesi yeniden kontrol edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
+        "B": "DOGRU — Santral hipotiroidizmde sT4'ü normale getiren dozlarda TSH neredeyse tüm hastalarda <0.1 mU/L'ye baskılanır; titrasyon klinik semptomlar ve sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
+        "C": "YANLIS — Primer hipotiroidi takibinde serbest T4 belirgin şekilde yüksekse (referans ortalamasının yaklaşık 2 katı), levotiroksin dozunun hafif azaltılması (%12-25) yetersiz kalır; dozun yaklaşık %50 oranında azaltılması gerekebilir. Doz ayarlaması sonrasında kontrol 2 hafta sonra değil, doku dengelenmesi için 6 ila 8 hafta sonra yapılmalıdır.",
+        "D": "YANLIS — Yüksek serbest T4 ile birlikte serum TSH'nin baskılanmamış veya yüksek saptanması durumunda primer hipertiroidi (Graves veya toksik MNG) düşünülmez (primer hipertiroidide TSH tam baskılıdır). Bu tabloda ayırıcı tanıda TSHoma, Tiroid Hormonu Direnci (RTH), erken dönem amiodaron kullanımı veya immünölçüm interferansları (heterofil antikorlar) yer alır.",
+        "E": "YANLIS — Gebeliğin 2. ve 3. trimesterlarında bağlayıcı proteinlerdeki (özellikle TBG) belirgin değişimler nedeniyle otomatize direkt serbest T4 immünölçümleri güvensiz sonuçlar verebilir. Serbest T4 ile TSH ölçümleri arasında uyumsuzluk saptandığında, gebelikteki gerçek tiroid durumunu değerlendirmek için Total T4 düzeyinin de ölçülmesi önerilmektedir."
+      },
+      "etiketler": [
+        "Santral Hipotiroidizm",
+        "L-T4 Titrasyonu",
+        "TSH Yorumu",
+        "Biyotin İnterferansı",
+        "Gebelikte sT4"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Lab Interpretation: High free T4 in adults; Abnormal thyroid profile: Low TSH and high free T4 in adults"
     }
   ]
 }

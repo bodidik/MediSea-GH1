@@ -418,6 +418,36 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Iodine-induced thyroid dysfunction"
+    },
+    {
+      "id": "s15",
+      "metin": "Erişkinlerde serum tiroid hormon testi bozukluklarının değerlendirilmesi, serbest T4 (sT4) yüksekliğine eşlik eden TSH seviyelerinin klinik yorumlanması, immünölçüm interferansları (biyotin kullanımı), amiodaron tedavisinin erken dönem etkileri ve gebelikteki fizyolojik adaptasyonlar ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Amiodarone tedavisinin ilk 3-6 ayında, alt yapısında tiroid hastalığı bulunmayan bireylerde TSH ve serbest T4 düzeylerinin her ikisi de aşırı derecede baskılanır ve serbest T4 hiçbir zaman normal üst sınırın üzerine çıkmaz.",
+        "B": "Yüksek serbest T4 ile birlikte serum TSH düzeyinin normal (baskılanmamış) veya yüksek saptandığı ve hipertiroidi semptomları gösteren hastalarda ayırıcı tanıda TSH salgılayan hipofiz adenomu (TSHoma) ve Tiroid Hormonu Direnci (RTH) düşünülmelidir; tanıyı netleştirmek için TSH, serbest T4 ve total/serbest T3 testleri tekrarlanmalıdır.",
+        "C": "Reçetesiz satılan ve 5–10 mg/gün biyotin takviyesi alan bireylerde gelişen yalancı tirotoksikoz (biyotinillenmiş antikor interferansına bağlı yalancı düşük TSH ve yalancı yüksek sT4) tablosunu doğrulamak için biyotin kesildikten 12 saat sonra testlerin tekrarlanması yeterlidir.",
+        "D": "Gebelikte 16. haftadan itibaren artan tiroksin bağlayıcı globülin (TBG) düzeylerine bağlı olarak Total T4 ve Total T3 düzeylerinin normal üst sınırı, gebe olmayan kadınların referans aralığı üst sınırının 3 katına kadar yükselir.",
+        "E": "Santral (sekonder) hipotiroidizm tanısıyla levotiroksin replasmanı alan hastalarda serbest T4 düzeyi normal aralığın üst yarısına getirildiğinde TSH düzeyi de normale döneceğinden, tedavi takibi ve doz ayarlaması primer olarak serum TSH düzeyine göre yapılır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yüksek sT4'e karşın TSH'nin baskılanmaması fizyolojik olarak uygunsuzdur; ayırıcı tanıda TSHoma ve Tiroid Hormonu Direnci (RTH) yer alır, testler T3 ile birlikte tekrarlanmalıdır.",
+      "aciklama_detay": "Yetişkinlerde serbest T4 yüksekliği saptandığında, tablonun TSH ile birlikte değerlendirilmesi ve immünölçüm interferansları ile sekonder/tertiyer patolojilerin doğru ayırt edilmesi kritik önem taşır.\n\nSerum serbest T4 düzeyinin yüksek olmasına karşın serum TSH düzeyinin baskılanmayıp normal referans aralığında veya yüksek saptanması fizyolojik olarak uygunsuzdur. Klinik hipertiroidi semptomları (çarpıntı, tremor, sıcağa tahammülsüzlük) olan bu tür hastalarda primer ayırıcı tanıda TSH salgılayan hipofiz adenomu (TSHoma) ve Tiroid Hormonu Direnci (RTH) yer alır. Tanısal doğrulamada TSH ve serbest T4 düzeyleri tekrarlanmalı, eş zamanlı serbest veya total T3 ölçülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Amiodaron tedavisi başlangıcında (özellikle ilk 3-6 ayda) tiroid dokusu normal olan hastalarda geçici olarak serbest T4 düzeyleri yükselir (veya normalin üst sınırında kalır) ve TSH düzeyleri geçici olarak yüksek veya normal saptanabilir. TSH düzeyi 3 ila 6 ay içinde normale dönerken serbest T4 hafif yüksek seyretmeye devam edebilir.",
+        "B": "DOGRU — Yüksek sT4 ile baskılanmamış/yüksek TSH bileşimi fizyolojik olarak uygunsuzdur; ayırıcı tanıda TSHoma ve RTH yer alır, testler T3 ile birlikte tekrarlanır.",
+        "C": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
+        "D": "YANLIS — Gebeliğin 7. haftasından itibaren TBG artışına bağlı olarak total hormon düzeylerinin üst sınırı haftalık %5 oranında artar. Gebeliğin 16. haftasında Total T4 ve Total T3 düzeylerinin normal üst sınırı, gebe olmayan referans aralığı üst sınırının 3 katına değil, 1.5 katına kadar yükselir.",
+        "E": "YANLIS — Hipofizer veya hipotalamik patolojilere bağlı santral (sekonder) hipotiroidizmde levotiroksin replasmanı izlenirken serum TSH düzeyi kullanılamaz. Serum serbest T4 düzeyini normale getiren levotiroksin dozlarında TSH hastaların neredeyse tamamında <0.1 mU/L seviyesine baskılanır. Bu nedenle santral hipotiroidide tedavi takibi serbest T4 düzeyini normal aralığın üst %50'sinde tutacak şekilde ayarlanır."
+      },
+      "etiketler": [
+        "Uygunsuz TSH",
+        "TSHoma",
+        "Tiroid Hormon Direnci",
+        "Amiodaron Erken Dönem",
+        "Gebelikte TBG"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Lab Interpretation: High free T4 in adults; Abnormal thyroid profile: Low TSH and high free T4 in adults"
     }
   ]
 }
