@@ -1,0 +1,548 @@
+{
+  "id": "fc-rom-harrison-001",
+  "accessLevel": "premium",
+  "topic": "Ders Kitaplarından Hazırlanmış Sorular",
+  "description": "YDUS Romatoloji serisi: Harrison 22 kaynaklı 90 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "hr-001",
+      "front": "Adaptif immün sistemde spesifik antijen tanınması hangi hücreler ve reseptörler aracılığıyla gerçekleşir?",
+      "back": "T ve B lenfositleri tarafından eksprese edilen klonotipik reseptörler aracılığıyla gerçekleşir.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-002",
+      "front": "B hücreleri tarafından üretilen ve antijen tanıma molekülü olarak görev yapan immünoglobulin yapısındaki molekül nedir?",
+      "back": "Antikor.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-003",
+      "front": "Antijen sunan hücrelerin (APC) temel grubunda hangi üç hücre tipi yer alır?",
+      "back": "Dendritik hücreler, makrofajlar ve B hücreleri.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-004",
+      "front": "Apoptoz ile nekroz arasındaki temel enflamatuar fark nedir?",
+      "back": "Apoptoz aşırı enflamasyona yol açmazken, nekroz enflamatuar yanıtları indükler.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-005",
+      "front": "Otoenflamatuar hastalıkları otoimmün hastalıklardan ayıran temel özellik nedir?",
+      "back": "Otoenflamatuar hastalıklarda otoreaktif B veya T hücreleri gibi adaptif immün sistem aktivasyonu kanıtı bulunmaz.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-006",
+      "front": "İnnate immün sistem hücrelerinin mikobakteri gibi hücre içi ajanları kontrol etmek için kullandığı lizozomal yıkım yolu nedir?",
+      "back": "Otofaji.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-007",
+      "front": "B hücrelerinin antijenle etkileşime girip antikor salgılayan hücrelere dönüşmesini sağlayan yüzey kompleksi nedir?",
+      "back": "B-hücre reseptörü (BCR).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-008",
+      "front": "Enflamasyonu IL-10 gibi sitokinler salgılayarak inhibe eden özel B hücresi popülasyonu nedir?",
+      "back": "B regülatör hücreleri.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-009",
+      "front": "CD4 T hücrelerinin adaptif immünitedeki temel fonksiyonel rolü nedir?",
+      "back": "B hücrelerine antikor yapımı için yardım etmek.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-010",
+      "front": "Tümör hücrelerini ve patojenle enfekte hücreleri doğrudan öldüren T lenfosit alt kümesi hangisidir?",
+      "back": "CD8 T hücresi (sitotoksik T lenfosit).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-011",
+      "front": "İmmün hücre hareketini ve dolaşım yollarını belirleyen çözünür moleküllere ne ad verilir?",
+      "back": "Kemokinler.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-012",
+      "front": "Patojenleri lize eden veya fagositoz için hedefleyen plazma enzim serisi nedir?",
+      "back": "Kompleman sistemi.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-013",
+      "front": "Enflamasyonu ve doku hasarını başlatan, misfold proteinler veya havadaki partikül madde birikintilerine ne ad verilir?",
+      "back": "Kristalopati (Crystallopathies).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-014",
+      "front": "Hücre içi stres veya mikrobiyal ürünlerin algılanmasını IL-1β ve IL-18 aktivasyonuna bağlayan sitoplazmik kompleks nedir?",
+      "back": "Enflamazom.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-015",
+      "front": "İnnate lenfoid hücrelerden (ILC) ILC1, ILC2 ve ILC3 sırasıyla hangi CD4 T hücre alt gruplarının fonksiyonel analoglarıdır?",
+      "back": "Sırasıyla TH1, TH2 ve TH17 hücrelerinin analoglarıdır.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-016",
+      "front": "MHC sınıf I molekülü eksprese etmeyen malign veya virüsle enfekte hücreleri öldüren innate lenfoid hücre tipi hangisidir?",
+      "back": "Doğal katil (NK) hücreleri.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-017",
+      "front": "NK T hücreleri hangi tip antijenleri tanır?",
+      "back": "Bakteriyel, viral, fungal ve protozoal enfeksiyöz ajanların lipid antijenlerini tanırlar.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-018",
+      "front": "Patojenlerin eksprese ettiği invaryant moleküler yapılara (PAMP) bağlanan konak hücre reseptörlerine ne ad verilir?",
+      "back": "Patern tanıma reseptörleri (PRR).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-019",
+      "front": "T-hücre bitkinliği (exhaustion) durumuna yol açan temel tetikleyici nedir?",
+      "back": "Antijenin uzun süreli varlığı (persistansı).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-020",
+      "front": "TLR4 sinyal yolunda lipopolisakkarit (LPS) tanınması sonrası kullanılan adaptör moleküller nelerdir?",
+      "back": "TRIF/TRAM ve MYD88/TIRAP.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-021",
+      "front": "Endozomda çift sarmallı RNA (dsRNA) tanınmasından sorumlu olan Toll-benzeri reseptör hangisidir?",
+      "back": "TLR3.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-022",
+      "front": "Hangi TLR endozomda CpG motiflerini tanıyarak sinyal iletir?",
+      "back": "TLR9.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-023",
+      "front": "TLR sinyal yolağında NF-κB aktivasyonu hangi sitokinlerin üretimiyle sonuçlanır?",
+      "back": "Enflamatuar sitokinler ve kemokinler.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-024",
+      "front": "Lenfoid öncü hücreden (lymphoid precursor) köken alan ancak antijen sunumu yapabilen myeloid benzeri hücre hangisidir?",
+      "back": "Plazmasitoid dendritik hücre.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-025",
+      "front": "CD4 T hücrelerinin TH1 alt grubuna farklılaşmasını sağlayan ana transkripsiyon faktörü nedir?",
+      "back": "T-bet.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-026",
+      "front": "T regülatör hücrelerin (Treg) gelişiminden sorumlu olan kritik transkripsiyon faktörü hangisidir?",
+      "back": "Fox3p.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-027",
+      "front": "Romatoid Artrit (RA) gelişiminde TH17 hücreleri tarafından salgılanan ve doku hasarına katkıda bulunan temel sitokinler nelerdir?",
+      "back": "IL-17A, IL-17F, TNF-α, IL-6 ve GM-CSF.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-028",
+      "front": "Sistemik Lupus Eritematozus (SLE) hastalarında Histon H2A-H2B-DNA kompleksine karşı antikor saptanması neyi düşündürür?",
+      "back": "İlaca bağlı lupus veya sistemik lupus eritematozus tanısını destekler.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-029",
+      "front": "Granülomatöz polianjiit (Wegener) tanısında hangi otoantikor spesifik bir laboratuvar bulgusudur?",
+      "back": "Proteinaz 3 (PR3-ANCA).",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-030",
+      "front": "Romatoid Artrit'te (RA) tipik eklem sertliği (morning stiffness) süresi ne kadardır?",
+      "back": "Genellikle 1 saatten uzun sürer.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-031",
+      "front": "RA'da ilk tutulan eklemler genellikle vücudun hangi bölgelerindedir?",
+      "back": "Ellerin ve ayakların küçük eklemleri.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-032",
+      "front": "Henüz RA sınıflama kriterlerini tam olarak karşılamayan ancak enflamatuar artriti olan hastalara ne ad verilir?",
+      "back": "Diferansiye olmamış (undifferentiated) enflamatuar artrit.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-033",
+      "front": "RA hastasında 38.3°C üzerinde ateş saptanması öncelikle hangi iki durumu düşündürmelidir?",
+      "back": "Sistemik vaskülit veya enfeksiyon.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-034",
+      "front": "2010 ACR/EULAR kriterlerine göre kesin RA tanısı için minimum skor kaç olmalıdır?",
+      "back": "≥ 6 puan.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-035",
+      "front": "RA sınıflamasında seroloji skorlamasında 'yüksek pozitif' RF veya anti-CCP değeri neye göre tanımlanır?",
+      "back": "Normal üst sınırın (ULN) 3 katından fazla olması.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-036",
+      "front": "RA tanısında kullanılan anti-CCP antikorlarının romatoid faktöre (RF) göre temel üstünlüğü nedir?",
+      "back": "Daha yüksek tanısal spesifiteye sahip olması.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-037",
+      "front": "RA'da direkt grafilerde saptanan en erken karakteristik radyolojik bulgu nedir?",
+      "back": "Periartiküler osteopeni.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-038",
+      "front": "RA yönetimindeki 'Treat-to-Target' (hedefe yönelik tedavi) stratejisinin ana hedefi nedir?",
+      "back": "Düşük hastalık aktivitesi veya klinik remisyon sağlamak.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-039",
+      "front": "RA tedavisinde ilk basamakta genellikle hangi DMARD ajanı tercih edilir?",
+      "back": "Metotreksat.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-040",
+      "front": "Akut Romatizmal Ateş (ARA) tanısında kullanılan Jones kriterlerinden 'majör' olanlar nelerdir?",
+      "back": "Kardit, artrit, kore, eritema marginatum ve subkutan nodüller.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-041",
+      "front": "Ekosunda mitral kapakta 'hokey sopası' (hockey stick) veya dirsek deformitesi görülmesi hangi hastalığı düşündürür?",
+      "back": "Kronik romatizmal kalp hastalığı.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-042",
+      "front": "Psoriyatik Artrit (PsA) için patognomonik sayılabilecek radyolojik deformite nedir?",
+      "back": "Kalem-külah (pencil-in-cup) deformitesi.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-043",
+      "front": "Spondiloartrit (SpA) patogenezinde genetik yatkınlık sağlayan en önemli HLA geni hangisidir?",
+      "back": "HLA-B27.",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-044",
+      "front": "PsA tanısında kullanılan CASPAR kriterlerine göre tanı için kaç puan gereklidir?",
+      "back": "≥ 3 puan.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-045",
+      "front": "PsA tanısında 'daktilit' bulgusu CASPAR kriterlerinde nasıl puanlanır?",
+      "back": "Mevcut daktilit veya romatolog tarafından kaydedilmiş daktilit öyküsü 1 puan kazandırır.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-046",
+      "front": "Polimiyalji Romatika (PMR) tanısında hangi iki laboratuvar belirtecinin yüksek olması beklenir?",
+      "back": "ESR (sedimentasyon) ve/veya CRP.",
+      "tag": "Romatoloji / Harrison / Polimiyalji Romatika"
+    },
+    {
+      "id": "hr-047",
+      "front": "PMR hastasında romatoid faktör (RF) ve anti-CCP sonuçlarının ne olması beklenir?",
+      "back": "Negatif olması beklenir.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-048",
+      "front": "Ailevi Akdeniz Ateşi (FMF) hastalarında ciltte görülen karakteristik döküntü nedir?",
+      "back": "Erizipel benzeri (erysipeloid) eritem.",
+      "tag": "Romatoloji / Harrison / Ailevi Akdeniz Ateşi"
+    },
+    {
+      "id": "hr-049",
+      "front": "Antinükleer Antikor (ANA) testinde 'periferik' veya 'rim' paterni saptanması hangi hastalık için yüksek spesifiteye sahiptir?",
+      "back": "Sistemik Lupus Eritematozus (anti-dsDNA ile ilişkili).",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-050",
+      "front": "ANA testinde 'sentromerik' patern görülmesi hangi klinik tabloyu düşündürür?",
+      "back": "Limited kutanöz sistemik skleroz (CREST sendromu).",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-051",
+      "front": "İnnate immün sistemde patojenleri tanıyan germ hattı kodlu reseptörlerin genel adı nedir?",
+      "back": "Patern Tanıma Reseptörleri (PRRs).",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-052",
+      "front": "Antikor bağımlı hücresel sitotoksisiteyi (ADCC) uyaran ve antikorların Fc bölgesine bağlanan reseptörlerin genel adı nedir?",
+      "back": "Ig fragman kristalize edilebilir (Fc) reseptörleri.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-053",
+      "front": "Hücre içi debris ve hasarlı organelleri temizleyen lizozomal yıkım mekanizması nedir?",
+      "back": "Otofaji.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-054",
+      "front": "Spondiloartritli hastalarda görülen 'entezit' nedir?",
+      "back": "Ligaman veya tendonların kemiğe yapışma yerindeki enflamasyon.",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-055",
+      "front": "RA'da eklem aralığı daralması neyin dolaylı bir göstergesidir?",
+      "back": "Artiküler kıkırdak kaybının.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-056",
+      "front": "PsA hastalarında tırnaklarda görülen tipik değişiklikler nelerdir?",
+      "back": "Onikoliz, pitting (çukurlanma) ve hiperkeratoz.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-057",
+      "front": "Relapsig Polikondrit (RP) hastalarının yönetiminde hangi branşların dahil olduğu multidisipliner bir ekip gereklidir?",
+      "back": "Romatoloji, KBB (otolaringoloji) ve göğüs hastalıkları (pulmonoloji).",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-058",
+      "front": "Büyük damar vasküliti şüphesinde tanıyı doğrulamak için hangi görüntüleme yöntemleri kullanılır?",
+      "back": "MR anjiyografi veya BT anjiyografi.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-059",
+      "front": "ARA tanısında yüksek riskli popülasyonlarda 'minör' kriter olarak kabul edilen ateş sınırı kaçtır?",
+      "back": "≥ 38°C.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-060",
+      "front": "Ankilozan Spondilit (AS) tanısı için sakroiliak eklem grafisinde ne saptanmalıdır?",
+      "back": "Kesin sakroiliit (definite sacroiliitis).",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-061",
+      "front": "SpA özelliklerinden olan 'IBP' kısaltması neyi ifade eder?",
+      "back": "Enflamatuar bel ağrısı (inflammatory back pain).",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-062",
+      "front": "PsA'da 'ray' dağılımı gösteren kemik ankilozu ne demektir?",
+      "back": "Aynı parmaktaki tüm eklemlerin tutulması.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-063",
+      "front": "RA'da sinovit ve kemik erozyonlarını saptamada direkt grafiye göre daha duyarlı olan ultrason tekniği nedir?",
+      "back": "Güç (Power) Doppler ultrasonografi.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-064",
+      "front": "İmmün sistemde büyüme ve aktivasyonu düzenleyen, enflamatuar yanıtları mediye eden çözünür proteinler grubu nedir?",
+      "back": "Sitokinler.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-065",
+      "front": "CD3 kompleksinin sinyal iletim bileşeni nedir?",
+      "back": "T-hücre reseptörü (TCR) ile ilişkili sinyal molekülleri.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-066",
+      "front": "RA tedavisinde kullanılan biyolojik ajanlar genellikle hangi sitokini hedefler?",
+      "back": "TNF-α (veya diğer pro-enflamatuar sitokinler).",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-067",
+      "front": "Jones kriterlerinde 'poliartralji' hangi popülasyon için majör kriter olarak kabul edilebilir?",
+      "back": "Orta ve yüksek riskli popülasyonlar için.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-068",
+      "front": "FMF'de görülen 'protracted febrile myalgia' hangi organ sistemini etkiler?",
+      "back": "Kas iskelet sistemini (kaslar).",
+      "tag": "Romatoloji / Harrison / Ailevi Akdeniz Ateşi"
+    },
+    {
+      "id": "hr-069",
+      "front": "ANA testinde 'nükleolar' patern hangi hastalıklarda görülme eğilimindedir?",
+      "back": "Diffüz kutanöz sistemik skleroz veya enflamatuar miyozit.",
+      "tag": "Romatoloji / Harrison / Otoantikorlar, SLE ve Vaskülit"
+    },
+    {
+      "id": "hr-070",
+      "front": "RA'da romatoid faktörün (RF) seronegatif olması hastalığı dışlar mı?",
+      "back": "Hayır, hastaların %25'inde RF negatif saptanabilir.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-071",
+      "front": "Spondiloartritlerde bağırsak bariyer bütünlüğünün kaybı hangi sitokinin aşırı üretimine yol açabilir?",
+      "back": "IL-17 (veya IL-23/IL-17 aksı aktivasyonu).",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-072",
+      "front": "RA dışı kronik enfeksiyonlarda (TB, hepatit) hangi serolojik test düşük titrede pozitifleşebilir?",
+      "back": "Romatoid Faktör (RF).",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-073",
+      "front": "SpA'da aksiyel tutulum şüphesinde, direkt grafi normalse hangi görüntüleme istenmelidir?",
+      "back": "Sakroiliak eklem MRG.",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-074",
+      "front": "PMR tedavisinde kullanılan ana ilaç grubu nedir?",
+      "back": "Düşük doz glukokortikoidler (prednizon).",
+      "tag": "Romatoloji / Harrison / Polimiyalji Romatika"
+    },
+    {
+      "id": "hr-075",
+      "front": "Spondiloartritlerde görülen daktilitin halk arasındaki adı nedir?",
+      "back": "Sosis parmak (sausage digit).",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-076",
+      "front": "ARA'da kardit tanısı klinik bulgu olmasa bile ne ile konulabilir?",
+      "back": "Ekokardiyografi ile saptanan subklinik kardit.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-077",
+      "front": "RA'da kullanılan metotreksat tedavisine yanıtsızlık durumunda bir sonraki adım nedir?",
+      "back": "DMARD kombinasyon tedavisine geçmek veya biyolojik ajan eklemek.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-078",
+      "front": "PsA sınıflamasında 'negatif RF' kaç puan değerindedir?",
+      "back": "1 puan.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-079",
+      "front": "Hücre yüzeyindeki CD4 molekülü hangi MHC sınıfı ile etkileşime girer?",
+      "back": "MHC sınıf II.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-080",
+      "front": "İnnate immünitede bakteri flagellinini tanıyan yüzey reseptörü hangisidir?",
+      "back": "TLR5.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-081",
+      "front": "ARA'da sedimentasyon (ESR) hızı düşük riskli popülasyonda kaçın üzerinde olmalıdır?",
+      "back": "≥ 60 mm/saat.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-082",
+      "front": "RA patogenezinde osteoklast (OC) aktivasyonunu uyaran temel ligand nedir?",
+      "back": "RANK-L.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-083",
+      "front": "TLR sinyalinde hem TRIF hem MYD88 yollarını kullanan tek TLR hangisidir?",
+      "back": "TLR4.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    },
+    {
+      "id": "hr-084",
+      "front": "ARA kore (Sydenham) tablosu tanısı için ARA'nın diğer majör kriterleri şart mıdır?",
+      "back": "Hayır, kore tek başına ARA tanısı koydurabilir.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-085",
+      "front": "SpA'da kullanılan 'JAKi' kısaltması hangi ilaç grubunu ifade eder?",
+      "back": "Janus Kinaz inhibitörleri.",
+      "tag": "Romatoloji / Harrison / Spondiloartritler"
+    },
+    {
+      "id": "hr-086",
+      "front": "FMF'de artrit genellikle kaç eklemi etkiler?",
+      "back": "Genellikle tek eklemi etkiler (akut monoartrit).",
+      "tag": "Romatoloji / Harrison / Ailevi Akdeniz Ateşi"
+    },
+    {
+      "id": "hr-087",
+      "front": "PsA radyolojisinde görülen 'fluffy' yeni kemik oluşumu neyi ifade eder?",
+      "back": "Erozyon bölgelerine yakın düzensiz kemik yapımı.",
+      "tag": "Romatoloji / Harrison / Psoriyatik Artrit"
+    },
+    {
+      "id": "hr-088",
+      "front": "ARA tanısı için Jones kriterlerine ek olarak neyin kanıtı mutlaka gereklidir?",
+      "back": "Geçirilmiş Grup A Streptokok enfeksiyonu kanıtı.",
+      "tag": "Romatoloji / Harrison / Akut Romatizmal Ateş"
+    },
+    {
+      "id": "hr-089",
+      "front": "RA'da subkondral kemik erozyonları en sık hangi eklemlerde görülür?",
+      "back": "El bilekleri, MCP ve PIP eklemleri ile ayak MTP eklemleri.",
+      "tag": "Romatoloji / Harrison / Romatoid Artrit"
+    },
+    {
+      "id": "hr-090",
+      "front": "Adaptif immünitede 'klonotipik reseptör' ifadesi ne anlama gelir?",
+      "back": "Gelişim sırasında genetik olarak yeniden düzenlenen ve her hücre klonuna özgü olan reseptör.",
+      "tag": "Romatoloji / Harrison / Temel İmmünoloji"
+    }
+  ]
+}

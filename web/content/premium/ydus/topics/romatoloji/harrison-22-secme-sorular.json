@@ -8,7 +8,7 @@
     "guncelleme": "2026-08"
   },
   "moduller": {
-    "flashcard": false,
+    "flashcard": true,
     "inciler": false,
     "quiz": true,
     "vaka": false,
