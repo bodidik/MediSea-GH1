@@ -99,14 +99,14 @@
           "hucreler": [
             "Graves Hastalığı",
             "TSH reseptörüne karşı gelişen stimülan antikorların (TRAb/TSI) reseptörü sürekli aktif kılmasıyla seyredir.",
-            "İyot yeterli bölgelerde aşikar hipertiroidizmin en sık etiyolojik nedenidir. *(Ayrı başlıkta detaylandırılmıştır).*"
+            "İyot yeterli bölgelerde aşikar hipertiroidizmin en sık etiyolojik nedenidir. (Ayrı başlıkta detaylandırılmıştır)."
           ]
         },
         {
           "renk": "mavi",
           "hucreler": [
             "Otonom Tiroid Nodülleri (Toksik Multinodüler Guatr ve Toksik Adenom)",
-            "TSH reseptörü (*TSHR*) veya Gs-alfa (*GNAS*) genlerindeki **somatik kazanılmış aktive edici mutasyonlar** sonucu TSH uyarısından bağımsız, otonom hormon sentezi gerçekleşir.",
+            "TSH reseptörü (TSHR) veya Gs-alfa (GNAS) genlerindeki **somatik kazanılmış aktive edici mutasyonlar** sonucu TSH uyarısından bağımsız, otonom hormon sentezi gerçekleşir.",
             "Özellikle ileri yaş grupta ve hafif-orta derecede iyot eksikliği olan coğrafyalarda prevalansı yüksektir."
           ]
         },
@@ -141,7 +141,7 @@
           "renk": "kirmizi",
           "hucreler": [
             "Yıkıcı (Destrüktif) Tiroiditler",
-            "*Subakut Granülomatöz (de Quervain) Tiroidit:* Viral enfeksiyonlar sonrası gelişen ağrılı tiroidit fazı. · *Sessiz / Ağrısız ve Postpartum Tiroidit:* Otoimmün zeminli, ağrısız tirotoksik faz. · *İlaç İndüklü Tiroiditler:* **Amiodaron Tip 2 AİT** (doğrudan sitotoksik etki), **İmmün Kontrol Noktası İnhibitörleri** (anti-PD-1, anti-CTLA-4) ve **Tirozin Kinaz İnhibitörleri** (Sunitinib, Sorafenib).",
+            "**Subakut Granülomatöz (de Quervain) Tiroidit:** Viral enfeksiyonlar sonrası gelişen ağrılı tiroidit fazı. · **Sessiz / Ağrısız ve Postpartum Tiroidit:** Otoimmün zeminli, ağrısız tirotoksik faz. · **İlaç İndüklü Tiroiditler:** **Amiodaron Tip 2 AİT** (doğrudan sitotoksik etki), **İmmün Kontrol Noktası İnhibitörleri** (anti-PD-1, anti-CTLA-4) ve **Tirozin Kinaz İnhibitörleri** (Sunitinib, Sorafenib).",
             "Folikül epitel bütünlüğünün bozulmasıyla depolanmış tiroid hormonlarının dolaşıma sızması sonucu gelişir; yeni hormon sentezi yoktur."
           ]
         },
@@ -149,7 +149,7 @@
           "renk": "sari",
           "hucreler": [
             "Eksojen Tiroid Hormonu Maruziyeti",
-            "*İatrojenik veya Faktisöz Tirotoksikoz:* Zayıflama amacıyla veya supraklinik replasmanla dışarıdan aşırı levotiroksin (T4) ya da liotironin (T3) alımı.",
+            "**İatrojenik veya Faktisöz Tirotoksikoz:** Zayıflama amacıyla veya supraklinik replasmanla dışarıdan aşırı levotiroksin (T4) ya da liotironin (T3) alımı.",
             "—"
           ]
         },
@@ -157,7 +157,7 @@
           "renk": "sari",
           "hucreler": [
             "Ektopik Tiroid Doku Kaynakları",
-            "*Struma Ovarii:* Over teratomu içerisinde fonksiyonel tiroid dokusu bulunması. · *Metastatik Fonksiyonel Foliküler Tiroid Karsinomu*.",
+            "**Struma Ovarii:** Over teratomu içerisinde fonksiyonel tiroid dokusu bulunması. · Metastatik Fonksiyonel Foliküler Tiroid Karsinomu.",
             "—"
           ]
         }
@@ -571,7 +571,7 @@
         {
           "renk": "sari",
           "hucreler": [
-            "*Beta Bloker İntoleransında:*",
+            "**Beta Bloker İntoleransında:**",
             "Diltiazem veya verapamil",
             "Kalp hızını kontrol etmek için kalsiyum kanal blokerleri verilebilir."
           ]
@@ -679,28 +679,28 @@
         {
           "renk": "kirmizi",
           "hucreler": [
-            "*Termoregülasyon:*",
+            "**Termoregülasyon:**",
             "Belirgin yüksek ateş / hiperpreksi (38.5-40°C+)."
           ]
         },
         {
           "renk": "kirmizi",
           "hucreler": [
-            "*Kardiyovasküler:*",
+            "**Kardiyovasküler:**",
             "Şiddetli taşikardi (>140/dk), atriyal fibrilasyon, pulmoner ödem ve kardiyojenik şok."
           ]
         },
         {
           "renk": "sari",
           "hucreler": [
-            "*Santral Sinir Sistemi:*",
+            "**Santral Sinir Sistemi:**",
             "Ajitasyon, deliryum, psikoz, stupor veya koma."
           ]
         },
         {
           "renk": "sari",
           "hucreler": [
-            "*Gastrointestinal / Hepatik:*",
+            "**Gastrointestinal / Hepatik:**",
             "Sarılık (kötü prognostik), bulantı, kusma, diyare."
           ]
         }
