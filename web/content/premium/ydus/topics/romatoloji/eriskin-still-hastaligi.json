@@ -9,7 +9,7 @@
     "guncelleme": "2026-09"
   },
   "moduller": {
-    "flashcard": false,
+    "flashcard": true,
     "inciler": false,
     "quiz": false,
     "vaka": false,
