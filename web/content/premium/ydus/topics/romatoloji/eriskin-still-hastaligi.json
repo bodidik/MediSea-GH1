@@ -1,0 +1,488 @@
+{
+  "meta": {
+    "id": "eriskin-still-hastaligi",
+    "branch": "romatoloji",
+    "baslik": "Erişkin Başlangıçlı Still Hastalığı (EBSH / AOSD)",
+    "rozetler": [
+      "YENİ"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım ve Hastalık Sürekliliği (Continuum) Konsepti",
+      "satirlar": [
+        {
+          "metin": "Erişkin Başlangıçlı Still Hastalığı (AOSD), nedeni tam olarak bilinmeyen, doğal bağışıklık sisteminin aşırı aktivasyonu ve profilaktik/otoreaktif sitokin salınımı ile seyreden nadir, poligenik bir otoinflamatuar hastalıktır. Tarihsel olarak çocuklarda Sir George Still (1897) tarafından tanımlanan Sistemik Jovenil İdiyopatik Artrit (sJIA) ile Eric Bywaters (1971) tarafından tanımlanan erişkin formu ayrı hastalıklar olarak kabul edilmekteydi."
+        },
+        {
+          "metin": "Ancak son genetik, transkriptomik ve klinik çalışmalar, sJIA ile AOSD'nin aynı patogenetik yolağı paylaştığını ve aynı hastalığın farklı yaş spektrumundaki (yaş eşiği 16) tezahürleri olduğunu ortaya koymuştur. Güncel 2023 EULAR/PReS önerileri, yaş sınırına dayalı ayrımı kaldırarak her iki formu ortak olarak **Still Hastalığı** adı altında tek bir hastalık sürekliliği (continuum) olarak tanımlamaktadır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İmmünopatofizyoloji ve Yeni Biyobelirteçler",
+      "satirlar": [
+        {
+          "metin": "Still Hastalığının temelinde doğal bağışıklık hücrelerinin (özellikle nötrofiller ve makrofajlar) kontrolsüz aktivasyonu yer alır. Enfeksiyöz veya çevresel tetikleyiciler (PAMP/DAMP) Toll-benzeri reseptörlere (TLR) ve inflamozomlara (özellikle NLRP3) bağlanarak katlayıcı bir sitokin fırtınasını başlatır."
+        },
+        {
+          "metin": "**Sistemik kaskatta rol oynayan ana sitokinler:** IL-1β, IL-6, IL-18, TNF-α ve IFN-γ kaskadın temel yürütücüleridir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanısal ve Prognostik Biyobelirteçler",
+      "kolonlar": [
+        "Biyobelirteç",
+        "Ne gösterir"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Serum IL-18",
+            "Hastalık aktivitesini yansıtan ve özellikle Makrofaj Aktivasyon Sendromu (MAS) gelişim meylini gösteren en özgül biyobelirteçlerden biridir."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "S100 Proteinleri (Calprotectin / S100A8/A9 ve S100A12)",
+            "Nötrofil aktivasyonunu ve inflamasyon yükünü gösteren duyarlı parametrelerdir."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "CXCL9 ve Adenozin Deaminaz 2 (ADA2) Aktivitesi",
+            "IFN-γ yolağının aktivasyonunu gösterir; özellikle MAS komplikasyonunun saptanmasında yüksek duyarlılık ve özgüllüğe sahiptir."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Dört Kardinal Semptom",
+      "kolonlar": [
+        "Bulgu",
+        "Özellikleri"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yüksek Pik Yapan Ateş (Quotidian Fever)",
+            "Genellikle öğleden sonra veya akşam saatlerinde aniden >39°C'ye çıkan, günde tek (bazen çift) pik yapan ve pikler arasında saatler içinde kendiliğinden normale dönen karakterize ateş kalıbıdır."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Somon Pembesi evanescent (Geçici) Makülopapüler Döküntü",
+            "Ateş pikleri sırasında belirginleşen, ateş düştükçe kaybolan, kaşıntısız, gövde ve proksimal ekstremitelerde yerleşen döküntüdür. Koebner fenomeni (cilde sürtünme veya basınç uygulanan yerlerde döküntünün ortaya çıkması) pozitiftir."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Kas-Eklem Tutulumu",
+            "Şiddetli artralji ve/veya artrit görülür. Erken dönemde oligoartiküler ve geçici olabilir; ancak kronikleşen olgularda el bileklerinde perikapitat kıkırdak kaybı ve el bileği kemiklerinde ankiloz (interkarpal füzyon) patognomonik bir radyolojik bulgudur."
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Nötrofilik Lökositoz",
+            "Lökosit sayısı sıklıkla >10.000/mm³ (olguların büyük kısmında >15.000/mm³) olup, çomak oranında artış ile nötrofil oranı ≥%80'dir."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Diğer Organ ve Sistem Manifestasyonları",
+      "kolonlar": [
+        "Bulgu",
+        "Ayrıntı"
+      ],
+      "satirlar": [
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Odinofaji / Boğaz Ağrısı",
+            "Hastaların %70-90'ında ateş öncesinde veya alevlenmelerde görülür. Nedeni kültür-negatif krikotiroid perikondrit veya aseptik non-ekssudatif faranjittir."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Hepatosplenomegali ve Lenfadenopati",
+            "Symmetrical servikal lenfadenopati ve reaktif hepatosplenomegali sıktır."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Serozit ve Myalji",
+            "Plevrit, perikardit (hastaların yaklaşık %10-30'unda) ve yaygın debilitating kas ağrıları eşlik edebilir."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Zamansal Seyir Fenotipleri",
+      "kolonlar": [
+        "Fenotip",
+        "Sıklık",
+        "Seyir"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Monosiklik / Monofazik",
+            "%19-44",
+            "Tek bir atak halinde <1 yıl sürer, sistemik bulgular baskındır ve kalıcı remisyonla sonuçlanır."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Polisiklik / İntermitan",
+            "%10-41",
+            "Alevlenme ve remisyon dönemleriyle seyreder; sonraki ataklar genellikle ilk ataktan daha hafiftir."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Kronik Artiküler",
+            "%35-57",
+            "Persistan aktif hastalık seyri gösterir; artiküler semptomlar ve erozif eklem yıkımı ön plandadır."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "baslik": "Klinik Dikotomi",
+      "metin": "Hastalık **Sistemik Ağırlıklı** (yüksek ateş, rash, organomegali, aşırı ferritin, IL-1/IL-18 yolağı baskınlığı) ve **Kronik Artiküler** (romatoid artrit benzeri poliaritrit, IL-6/IL-17 yolağı baskınlığı) olmak üzere iki ana klinik alt tipe ayrılmaktadır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Laboratuvar Profili",
+      "kolonlar": [
+        "Parametre",
+        "Bulgu"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Akut Faz Yanıtı",
+            "ESR (>100 mm/saat) ve CRP düzeyleri aşırı yüksektir."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Aşırı Hiperferritinemi",
+            "Serum ferritin düzeyleri sıklıkla >1000 ng/mL, hatta %60 olguda >3000–10.000 ng/mL seviyelerine ulaşır."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Glikozile Ferritin Oranı ≤%20",
+            "Karaciğer ferritin glikozilasyon mekanizmasının doygunluğu nedeniyle düşer. Aşırı ferritin yüksekliği ile birleştiğinde %90–93 özgüllüğe ulaşır."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Transaminaz Yüksekliği",
+            "Hastaların çoğunda AST, ALT ve LDH enzimlerinde ılımlı/belirgin yükselme görülür."
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Otoantikorlar",
+            "ANA ve RF kural olarak negatif veya çok düşük pozitifliktedir."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yamaguchi Kriterleri (1992)",
+      "kolonlar": [
+        "Grup",
+        "Kriterler"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "MAJÖR KRİTERLER",
+            "1. Ateş ≥39°C (en az 1 hafta süren) · 2. Artralji veya Artrit (en az 2 hafta süren) · 3. Tipik Somon Pembesi evanescent Döküntü · 4. Lökositoz (≥10.000/mm³) ve ≥%80 Granülosit/Nötrofil"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "MİNÖR KRİTERLER",
+            "1. Boğaz ağrısı / Faranjit · 2. Lenfadenopati ve/veya Splenomegaly · 3. Anormal Karaciğer Enzim Düzeyleri (AST/ALT/LDH) · 4. Negatif ANA ve RF testleri"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "DIŞLAMA KRİTERLERİ",
+            "İnfeksiyonlar, Maligniteler (özellikle Lenfoma), Otommun hast."
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "TANI KURALI",
+            "En az 2'si majör olmak üzere toplam ≥5 kriter (dışlama zorunlu)."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Diğer Tanı Ölçütleri",
+      "satirlar": [
+        {
+          "metin": "**Fautrel Kriterleri (2002):** Yamaguchi'ye ek olarak Glikozile Ferritin ≤%20 ve spesifik majör/minör serolojik parametreleri içerir; dışlama kriteri gerektirmez (4 majör veya 3 majör + 2 minör yeterlidir)."
+        },
+        {
+          "metin": "**2023 EULAR/PReS Operasyonel Tanımlamaları:** Erken tanı ve tedaviyi geciktirmemek adına artrit bulunması zorunlu değildir; şiddetli artralji mevcudiyeti tanısal değerlendirme için yeterli kabul edilmiştir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Hayatı Tehdit Eden Kritik Komplikasyonlar: Makrofaj Aktivasyon Sendromu (MAS / İkincil HLH)",
+      "satirlar": [
+        {
+          "metin": "Still hastalığının en korkulan, mortalitesi yüksek (%10–40) akut komplikasyonudur. T lenfositlerin ve makrofajların kontrolsüz proliferasyonu ile sitokin fırtınasına yol açar."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "MAS Tanısal Uyarıcı İpuçları",
+      "kolonlar": [
+        "İpucu",
+        "Açıklama"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Düşmeyen sürekli yüksek ateş",
+            "—"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Pansitopeni veya hücresel serilerde ani düşüş",
+            "—"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Serum ferritininin dramatik artışı",
+            "Sıklıkla >5000–10.000 ng/mL"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "ESR'de paradoksal düşüş",
+            "Fibrinojen tüketimine bağlı olarak; yüksek CRP'ye rağmen ESR'nin normale/düşüğe gerilemesi"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Karaciğer disfonksiyonu, belirgin D-dimer artışı ve hipertrigliseridemi",
+            "—"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Kemik iliği aspirasyonunda/biyopsisinde hemofagositoz varlığı",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Still-İlişkili Akciğer Hastalığı (LD / PAP)",
+      "metin": "Son yıllarda tanımlanan; interstisyel akciğer hastalığı (ILD) ve Pulmoner Alveolar Proteinozis (PAP) tablosu ile seyreden komplikasyondur. HLA-DRB1*15:01 alleli varlığı, genç yaş, yüksek IL-18 seviyeleri ve tekrarlayan MAS atakları en önemli risk faktörleridir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tedavi Stratejisi ve Hedefe Yönelik Yaklaşım (Treatment-to-Target: T2T)",
+      "satirlar": [
+        {
+          "metin": "2023 EULAR-PReS uluslararası uzlaşı kararlarına göre tedavide ana ilke, kortikosteroit maruziyetini en aza indirerek en kısa sürede **Klinik İnaktif Hastalık (CID)** ve nihai olarak **ilaçsız remisyon** elde etmektir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tedavi Algoritması — Hastalık Ağırlığına Göre",
+      "kolonlar": [
+        "Klinik durum",
+        "İlk adım",
+        "Sonraki adım"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Yüksek hastalık aktivitesi / organ tutulumu / MAS riski",
+            "Yüksek doz glukokortikoid (IV pulse)",
+            "Erken biyolojik tedavi (IL-1i veya IL-6i başlanması)"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Hafif hastalık seyri — yanıt var",
+            "NSAİİ (1-2 hafta)",
+            "Takip / idame"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Hafif hastalık seyri — yanıt yetersiz",
+            "NSAİİ (1-2 hafta)",
+            "Erken biyolojik tedavi (IL-1i / IL-6i)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "T2T Hedef Zaman Çizelgesi",
+      "kolonlar": [
+        "Zaman",
+        "Hedef"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "7. Gün",
+            "Ateşin tamamen kontrol altına alınması ve CRP'de >%50 düşüş."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "4. Hafta",
+            "Ateşsizlik, aktif eklem sayısında >%50 azalma, CRP normalleşmesi."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "3. Ay",
+            "Düşük doz glukokortikoid (<0.1 mg/kg/gün prednizon eşdeğeri) altında CID."
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "6. Ay",
+            "Glukokortikoid kullanımı olmadan tam CID (remisyon)."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Farmakoterapi Basamakları",
+      "kolonlar": [
+        "Basamak",
+        "Ajanlar",
+        "Notlar"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Erken Biyolojik Tedavi — IL-1 İnhibitörleri (Fırsat Penceresi / Window of Opportunity)",
+            "Anakinra (100 mg/gün SC; MAS durumunda IV yüksek dozlar), Canakinumab ve Rilonacept",
+            "Anakinra, kısa yarılanma ömrü (6 saat) ve enfeksiyon maskeleme riskinin düşük olması nedeniyle tanı karmaşasında ve ilk biyolojik seçiminde önceliklidir."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "Erken Biyolojik Tedavi — IL-6 İnhibitörleri",
+            "Tocilizumab (veya Sarilumab)",
+            "Özellikle sistemik inflamasyonun yanı sıra belirgin artiküler tutulumu olan olgularda yüksek etkinlik gösterir."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Glukokortikoidler",
+            "1 mg/kg/gün prednizon veya 1000 mg/gün IV metilprednizolon pulse",
+            "Şiddetli sistemik semptomlar, serozit, perikardit veya MAS tehdidinde başlanır; hedef en kısa sürede azaltılarak kesilmesidir."
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Sentetik DMARD'lar (csDMARDs)",
+            "Metotreksat (MTX)",
+            "Sistemik semptomlardan ziyade kronik artiküler fenotipte eklem hasarını önlemek ve steroid dozunu azaltmak (steroid-sparing) amacıyla kullanılır."
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "MAS Tedavi Protokolü",
+            "Yüksek doz IV metilprednizolon pulse + yüksek doz IV Anakinra + Siklosporin A ilk basamaktır",
+            "Dirençli olgularda anti-IFN-γ ajanı Emapalumab veya JAK inhibitörleri (Tofasitinib, Ruxolitinib, Baricitinib) eklenir."
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Dirençli (Refrakter) Olgularda Seçenekler",
+            "JAK inhibitörleri (Tofasitinib, Barisitinib) · TNF inhibitörleri (Infliximab, Etanercept) · Rituksimab, Abatasept, Tadekinig alfa (IL-18BP) ve MAS825 (bispesifik anti-IL-1β/IL-18)",
+            "TNF inhibitörleri sistemik bulgularda yetersizdir, yalnızca dirençli kronik artrit formunda düşünülür."
+          ]
+        }
+      ]
+    }
+  ]
+}
