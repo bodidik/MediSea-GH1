@@ -119,6 +119,66 @@
         "Atriyal Fibrilasyon"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s5",
+      "metin": "Yoğun bakım ünitesinde sepsis ve akut solunum yetmezliği nedeniyle takip edilmekte olan 68 yaşında erkek hastada, yeni başlayan dirençli taşikardi ve ajitasyon üzerine tiroid fonksiyon testleri isteniyor. Laboratuvar değerlendirmesinde; 3. kuşak ölçüm yöntemiyle serum TSH: <0.01 mU/L (belirgin baskılı), serbest T4: 1.4 ng/dL (normal referans aralığın orta-üst sınırında) ve total T3: 42 ng/dL (düşük) saptanıyor.\n\nKritik yoğun bakım hastalarında non-tiroidal hastalık sendromu (ötiroid hasta sendromu) varlığında eşlik eden tirotoksikozun tanısı, laboratuvar parametrelerinin yorumlanması ve yönetim stratejisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Yoğun bakım hastalarında saptanan 0.1 – 0.4 mU/L arasındaki tespit edilebilir ancak subnormal TSH değerleri gerçek hipertiroidizm için son derece özgüldür (spesifiktir) ve derhal antitiroid ilaç başlanmalıdır.",
+        "B": "Kritik hastalarda serum serbest T4 düzeyinin normal referans aralığının ortasında/üstünde yer alması, belirgin baskılanmış TSH (<0.01 mU/L) varlığında eşlik eden bir hipertiroidizmi güçlü şekilde destekler ve hastaya iyileşme döneminde yeniden değerlendirilmek üzere antitiroid tedavi başlanmalıdır.",
+        "C": "Non-tiroidal hastalıklarda periferik T4'ün T3'e dönüşümünün baskılanmasıyla ortaya çıkan tablo \"T3-toksikozu\" olarak adlandırılır ve bu durumda antitiroid tedavi kontrendikedir.",
+        "D": "Yüksek doz glukokortikoid alan kritik hastalarda TSH baskılandığı için serbest T4 ve T3 yüksek saptansa dahi tirotoksikoz tanısı kesin olarak dışlanır.",
+        "E": "Yoğun bakımda TSH baskılanması saptanan tüm kritik hastalarda etiyolojik ayırım için ilk basamakta 24 saatlik radyoaktif iyot tutulum testi (RAIU) uygulanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ağır hastada serbest T4'ün normal aralığın ortasında/üst sınırında kalması (beklenenden yüksek olması), belirgin TSH baskılanmasıyla birleştiğinde eşlik eden hipertiroidizmi güçlü şekilde destekler.",
+      "aciklama_detay": "Kritik yoğun bakım hastalarında eşlik eden tirotoksikozun tanısı oldukça karmaşıktır. Ağır non-tiroidal hastalıklar; taşikardi, tremor, halsizlik ve ajitasyon gibi klinik bulgularla tirotoksikozu taklit edebileceği veya maskeleyebileceği gibi, hormon düzeylerinde de belirgin sapmalara yol açar.\n\nKritik hastalarda plazma hacmi artışı, bağlayıcı proteinlerde azalma ve T4-T3 dönüşümünün inhibisyonu nedeniyle serum T4 ve T3 düzeyleri genellikle düşük veya düşük-normal seyretme eğilimindedir. Bu nedenle, ağır hasta bir bireyde serbest T4 düzeyinin normal referans aralığının ortasında veya üst sınırında kalması (beklenenden yüksek olması), 3. kuşak hassas kitlerle saptanan belirgin TSH baskılanmasıyla (<0.01 mU/L) birleştiğinde eşlik eden hipertiroidizm olasılığını güçlü şekilde destekler. Bu vakalarda antitiroid ilaç (ATD) tedavisi başlanmalı ve hasta non-tiroidal hastalıktan kurtulup stabil hale geldikten sonra durum yeniden değerlendirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yoğun bakım hastalarında saptanan 0.1 – 0.4 mU/L arasındaki tespit edilebilir ancak subnormal TSH değerleri, gerçek bir tiroid disfonksiyonundan ziyade öncelikle non-tiroidal hastalık sendromunun kendi seyriyle uyumludur. Bu hastalara rutin antitiroid tedavi başlanmaz.",
+        "B": "DOGRU — Ağır hastada serbest T4'ün normal aralığın ortasında veya üst sınırında kalması, belirgin TSH baskılanmasıyla (<0.01 mU/L) birlikte eşlik eden hipertiroidizmi destekler; ATD başlanır ve hasta stabilleştikten sonra yeniden değerlendirilir.",
+        "C": "YANLIS — Eşlik eden non-tiroidal hastalık veya amiodaron kullanımı gibi durumlarda periferik Tip 1 deiyodinaz inhibisyonuna bağlı T4'ün T3'e dönüşümünün azalması sonucu yüksek serbest T4, normal T3 ve düşük TSH ile seyreden tablo \"T4-toksikozu\" olarak tanımlanır. T3-toksikozu ise aksine izole T3 yüksekliği ile seyreder.",
+        "D": "YANLIS — Yüksek doz glukokortikoidler (örn. >20 mg/gün prednizon) veya dopamin kullanımı TSH salınımını baskılayabilir. Ancak serum serbest T4 ve/veya T3 düzeyleri de yüksekse hipertiroidi tanısı dışlanmaz, aksine primer hipertiroidizm doğrulanır.",
+        "E": "YANLIS — Kritik yoğun bakım hastalarında radyoaktif iyot tutulum testi (RAIU) ilk basamakta uygulanmaz; radyonüklid görüntüleme öncesinde klinik muayene, biyokimyasal kanıtlar ve gebelik/emzirme veya son zamanlarda iyotlu kontrast madde maruziyeti (iyot yükü) gibi durumlar değerlendirilmelidir."
+      },
+      "etiketler": [
+        "Non-tiroidal Hastalık Sendromu",
+        "Yoğun Bakım",
+        "T4-toksikozu",
+        "TSH Yorumu",
+        "RAIU"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Diagnosis of hyperthyroidism"
+    },
+    {
+      "id": "s6",
+      "metin": "Primer hipertiroidizmin sık görülen otoimmün (Graves) ve otonom nodüler (Toksik MNG / Toksik Adenom) etiyolojileri dışındaki nadir görülen spesifik nedenler, moleküler patofizyolojileri ve tanısal özellikleri değerlendirilmektedir.\n\nNadir hipertiroidi nedenleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Pulmoner arteriyel hipertansiyon (PAH) tedavisi için epoprostenol (prostaglandin I2) alan hastalarda gelişen hipertiroidizm tablosunda radyoaktif iyot tutulumu (RAIU) sıfıra yakın baskılanmış izlenir ve TSH reseptör antikorları (TSI) daima pozitif saptanır.",
+        "B": "Cushing sendromu cerrahisi sonrasında, yetersiz kortikosteroid replasmanı uygulanan dönemlerde geçici olarak TSH aracılı (TSH-mediated) hafif hipertiroidizm gelişebileceği bildirilmiştir.",
+        "C": "Toksik tiroid adenomlarında ve toksik multinodüler guatr nodüllerinde saptanan somatik TSHR gen mutasyonları sadece hücre içi (intrasellüler) C-terminal uzantıda yer alır; ekstrasellüler domainde mutasyon izlenmez.",
+        "D": "TSH salgılayan hipofiz adenomlarında (TSHoma) transfenoidal cerrahi sonrası iyileşme veya kürün sağlanıp sağlanmadığını öngören en güvenilir biyokimyasal kriter, postoperatif 24. saatte serum TSH düzeyinin tamamen ölçülemeyecek seviyeye (<0.01 mU/L) inmesidir.",
+        "E": "Otosozomal dominant geçiş gösteren non-otoimmün germline TSHR aktivasyon mutasyonuna sahip hastalarda serum TSH düzeyleri yüksek veya uygunsuz normal seyreder."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Cushing cerrahisi sonrası yetersiz kortikosteroid replasmanında kortizolün TSH üzerindeki tonik baskısı kalkar; geçici TSH hipersekresyonu ve TSH aracılı hafif hipertiroidizm gelişebilir.",
+      "aciklama_detay": "Hipertiroidizm etiyolojisinde Graves ve nodüler otonomi en sık nedenler olsa da, TSH aracılı, ilaç indüklü ve germline/somatik mutasyonlara bağlı nadir tabloların doğru tanınması tedavi yönetimini doğrudan belirler.\n\nCushing sendromu nedeniyle adrenalektomi/hipofizektomi geçiren hastalarda, postoperatif dönemde yetersiz kortikosteroid replasmanı verildiğinde kortizolün TSH üzerindeki fizyolojik tonik baskılanması ortadan kalkar. Bu duruma ikincil olarak geçici TSH hipersekresyonu ve TSH aracılı (TSH-mediated) hafif hipertiroidizm / uygunsuz TSH salınımı sendromu gelişebileceği literatürde gösterilmiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Pulmoner arteriyel hipertansiyon (PAH) nedeniyle epoprostenol (prostaglandin I2) infüzyonu alan hastalarda hipertiroidizm gelişebileceği bildirilmiştir. Ancak sanılanın aksine bu hastalarda radyoaktif iyot tutulumu (RAIU) yüksek saptanır ve tiroid stimüle edici immünoglobulin (TSI/TRAb) düzeyleri negatiftir.",
+        "B": "DOGRU — Cushing cerrahisi sonrası yetersiz kortikosteroid replasmanı verildiğinde kortizolün TSH üzerindeki fizyolojik tonik baskılanması ortadan kalkar; geçici TSH hipersekresyonu ve TSH aracılı hafif hipertiroidizm gelişebilir.",
+        "C": "YANLIS — Toksik adenomlarda ve toksik MNG nodüllerinde saptanan konstitütif aktif somatik TSHR gen mutasyonları en sık transmembran domainde yer almakla birlikte, ekstrasellüler domainde de (örneğin Ser281Ile mutasyonu) saptanabilmektedir.",
+        "D": "YANLIS — TSH salgılayan hipofiz makroadenomlarında cerrahi başarısını ve kür ihtimalini gösteren biyokimyasal kriter; cerrahiden 1 hafta sonra serum TSH konsantrasyonunun <0.2 mU/L seviyesine gerilemesidir.",
+        "E": "YANLIS — TSHR geninde germline aktivasyon mutasyonları sonucu gelişen otozomal dominant non-otoimmün hipertiroidizmde, üretilen yüksek tiroid hormonları hipofiz üzerinde negatif geri bildirim oluşturur; dolayısıyla hastalar uygun şekilde baskılanmış TSH düzeyleri ile seyrederler."
+      },
+      "etiketler": [
+        "Nadir Etiyoloji",
+        "TSH Aracılı Hipertiroidi",
+        "TSHR Mutasyonu",
+        "TSHoma",
+        "Epoprostenol"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Disorders that cause hyperthyroidism"
     }
   ]
 }
