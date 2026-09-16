@@ -19,6 +19,7 @@ import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 import aracKonuIndex from "@/content/arac-konu.json";
 import { ebeveynleriCoz } from "@/lib/slug-eslestir";
+import { htmlKapat } from "@/lib/icerik-html";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -313,7 +314,9 @@ export default async function TopicDetailPage({
           // degistirmiyor -- vurgu ofsetleri bu yuzden kaymiyor.
           html: tabloKaydir(
             basliklariDuzenle(
-              kisaltmaAc(s.text || s.html || "", gorulenKisaltmalar)
+              // htmlKapat: kapatılmamış biçim etiketi kabın DIŞINA sızmasın
+              // (gerekçe ve ölçüm lib/icerik-html.ts). Metni değiştirmez.
+              kisaltmaAc(htmlKapat(s.text || s.html || ""), gorulenKisaltmalar)
             ),
             {
               bolumBasligi: s.heading || s.title || "",
