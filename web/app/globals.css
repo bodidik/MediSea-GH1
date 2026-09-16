@@ -92,6 +92,47 @@ h4, h5, h6 {
   margin-bottom: 0.75rem;
 }
 
+/* SAYFA BAŞLIĞI — Akdeniz sığlığı bandı (16 Eylül 2026, kullanıcı isteği)
+
+   Sitenin imza başlığı (büyük harf · italik serif · lacivert) 154 dosyada
+   aynı sınıf dizisiyle yazılıyor; görsellik TEK kuraldan geliyor, dosyalara
+   dokunulmadı. Bant marka paletinden: lacivert derin su #1a3a6b üstünde
+   uçuk turkuaz sığlık. `text-decoration` seçildi, arka plan değil: konu
+   başlıkları 2–4 satıra kırılıyor ve bant her satırın KENDİ genişliğini
+   izliyor; blok arka planı tek şerit olurdu.
+
+   Koyu zeminli başlıklar (ana sayfa, premium, liderlik, stüdyo) `text-white`
+   taşıyor ve bilerek dışarıda: uçuk bant beyaz yazının kontrastını düşürür.
+
+   Ölçüldü (bant üstü kontrast, büyük yazı eşiği 3): lacivert 11.13 ·
+   blue-900 7.84 · /tools "ARAÇLAR" (koyulaşmış slate-600) 5.74 ·
+   /topics "Anlatımları" (slate-500) 3.60.
+
+   `word-spacing`: sıkı harf aralığı + italik eğim boşluğu yutuyordu;
+   /tools'ta "KLİNİK ARAÇLAR" bitişik okunuyordu. 60px'te harf sonu → kelime
+   başı 11 → 20px. Gerçek 375px pencerede /uyelik başlığı satır sayısını
+   korudu (3 → 3). */
+:root {
+  --akdeniz-sigligi: #bfe8e6;
+}
+
+h1.uppercase.italic:not(.text-white) {
+  text-decoration-line: underline;
+  text-decoration-color: var(--akdeniz-sigligi);
+  text-decoration-thickness: 0.36em;
+  text-underline-offset: -0.24em;
+  text-decoration-skip-ink: none;
+  word-spacing: 0.14em;
+}
+
+/* `truncate` = overflow:hidden. İtalik son harfin sağa taşan ucu ve
+   `leading-none` ile üstte sınırda kalan "İ" noktası kırpılıyordu
+   (/topics/hematoloji: "HEMATOLOJİ"). Mürekkebe pay bırak. */
+h1.uppercase.italic.truncate {
+  padding-right: 0.14em;
+  padding-block: 0.12em;
+}
+
 /* Paragraflar */
 p {
   margin: 0.75rem 0;
