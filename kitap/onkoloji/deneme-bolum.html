@@ -224,6 +224,11 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
 :root { --brans: #7A4B12; --brans-koyu: #5A360B; --brans-acik: #F5EBDD; --brans-orta: #DFC49B; }
 .sekil-blok { margin-bottom: 4.5mm; }
 .acilis .icindekiler { columns: 1 !important; }
+ol.tekrar { columns: 2; column-gap: 8mm; margin: 0; padding: 0; list-style: none; counter-reset: t; }
+ol.tekrar li { break-inside: avoid; counter-increment: t; display: grid; grid-template-columns: 6mm 1fr; column-gap: 1mm; padding: 1.7mm 0; border-bottom: .5pt solid var(--ince); font-size: 8pt; line-height: 1.3; }
+ol.tekrar li::before { content: counter(t); grid-row: span 2; font: 700 9pt/1.2 var(--serif); color: var(--brans); }
+ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--brans-koyu); margin-top: .5mm; }
+.bw span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
 </style>
 </head>
 <body>
@@ -234,20 +239,16 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <div class="seri">MediSea · Hızlı Bakış</div>
     <div class="bolum-no">Bölüm 6 · Deneme baskısı</div>
     <h1>Onkoloji</h1>
-    <div class="alt">Febril nötropeni</div>
+    <div class="alt">Febril nötropeni ve pankreas kanseri</div>
   </div>
   <div class="govde">
     <div>
       <h2>Bu bölümde</h2>
       <ol class="icindekiler">
         <li class="grup">Kısım 1 · Febril nötropeni</li>
-        <li><div><span>Febril nötropeni</span><small>Açık sayfa + anlatı</small></div><em>2</em></li>
-        <li><div><span>İlk 60 dakika</span><small>Karar yolu</small></div><em>5</em></li>
-        <li><div><span>MASCC ve CISNE</span><small>Başvuru</small></div><em>6</em></li>
-        <li><div><span>Ampirik tedavi</span><small>Karar yolu</small></div><em>7</em></li>
-        <li><div><span>Dirençli ateş ve antifungal</span><small>Başvuru</small></div><em>8</em></li>
-        <li><div><span>Profilaksi ve G-CSF</span><small>Başvuru</small></div><em>9</em></li>
-        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>10</em></li>
+        <li><div><span>İlk 60 dakika, MASCC/CISNE, ampirik tedavi, profilaksi</span><small>Açık sayfa · anlatı · iki karar yolu · dört başvuru</small></div><em>2</em></li>
+        <li class="grup">Kısım 2 · Pankreas kanseri</li>
+        <li><div><span>Pankreas duktal adenokarsinomu</span><small>Kapak · açık sayfa · anlatı · üç karar yolu · dört başvuru · tekrar</small></div><em>11</em></li>
       </ol>
     </div>
     <div class="okuma-kilavuzu">
@@ -822,6 +823,777 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
   </div>
 
   <div class="folyo"><b>10</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 11 · KISIM 2 KAPAĞI ================= -->
+<section class="sayfa sag kisim">
+  <div class="tirnak">Onkoloji</div>
+  <div class="bant">
+    <div class="kisim-no">Kısım 2 · Pankreas kanseri</div>
+    <h1>Pankreas duktal adenokarsinomu</h1>
+    <div class="alt">Geç konuşan tümör, erken karar isteyen hekim</div>
+  </div>
+  <div class="govde">
+    <div class="kurallar">
+      <h2>Altı altın kural</h2>
+      <ol>
+        <li><span>Tanı anında olguların <b>%80–85’i anrezektabl</b>; 5 yıllık sağkalım <b>%10–12</b>.</span></li>
+        <li><span>50 yaş sonrası <b>atipik yeni başlangıçlı diyabet</b> gizli bir PDAC’ın ilk bulgusu olabilir.</span></li>
+        <li><span><b>CA 19-9 tarama testi değildir</b>; Lewis-negatif %10’da hep yalancı negatif.</span></li>
+        <li><span>Sistemik tedavi planlanan <b>her</b> hastada önce doku tanısı (EUS-İİAB).</span></li>
+        <li><span>Her hastaya <b>germline test</b>; BRCA/PALB2’de platin, platine yanıtta olaparib.</span></li>
+        <li><span>Tarama yalnız yüksek riskte, <b>radyasyonsuz</b>: yıllık EUS ve MRG/MRCP.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Bu kısımda</h2>
+      <ol class="icindekiler">
+        <li><div><span>Pankreas kanseri</span><small>Açık sayfa</small></div><em>12</em></li>
+        <li><div><span>Diyabet ve PDAC: çift yönlü ilişki</span><small>Anlatı</small></div><em>14</em></li>
+        <li><div><span>Moleküler harita</span><small>Başvuru</small></div><em>15</em></li>
+        <li><div><span>Tanı ve evreleme</span><small>Karar yolu</small></div><em>16</em></li>
+        <li><div><span>Lokalize hastalıkta tedavi</span><small>Karar yolu</small></div><em>17</em></li>
+        <li><div><span>Metastatik hastalık ve hassas tıp</span><small>Karar yolu</small></div><em>18</em></li>
+        <li><div><span>Yeni ufuklar: RAS, TTFields, aşılar</span><small>Başvuru</small></div><em>19</em></li>
+        <li><div><span>Tarama ve risk faktörleri</span><small>Başvuru</small></div><em>20</em></li>
+        <li><div><span>Palyasyon ve vakadan karara</span><small>Başvuru</small></div><em>21</em></li>
+        <li><div><span>Kırk soruda pankreas kanseri</span><small>Hızlı tekrar</small></div><em>22</em></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12 · AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Gastrointestinal tümörler</span></div>
+  <div class="ust-etiket">Pankreas · Açık sayfa</div>
+  <h1 class="konu">Pankreas kanseri</h1>
+  <p class="giris">Pankreas malignitelerinin <b>%90’dan fazlası</b> duktal epitelden köken alan adenokarsinomdur (PDAC). Medyan tanı yaşı 71; 2030’a kadar kansere bağlı ölümlerde <b>ikinci sıraya</b> yükselmesi bekleniyor.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Tanıda <b>%80–85 anrezektabl</b> (lokal ileri ya da metastatik); yalnız %15–20 rezektabl.</li>
+      <li>En güçlü değiştirilebilir risk: <b>sigara</b> (riski 2 kata kadar artırır).</li>
+      <li>Olguların <b>%10–15’i</b> kalıtsal: BRCA1/2, PALB2, ATM, STK11, CDKN2A, PRSS1, Lynch.</li>
+      <li>Baş tümörü <b>ağrısız sarılıkla erken</b>, gövde/kuyruk <b>sırt ağrısıyla geç</b> konuşur.</li>
+      <li>Temel araç <b>pankreas protokolü BT</b>; doku için <b>EUS-İİAB</b> altın standart.</li>
+      <li>Kür şansı veren tek seçenek <b>R0 rezeksiyon</b> + 6 ay adjuvan kemoterapi.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Normal duktustan invaziv karsinoma</div>
+    <div class="serit-zincir">
+      <div><b>Erken PanIN</b><span>Telomer kısalması + <b>KRAS</b> aktivasyonu (&gt;%90, kodon 12)</span></div>
+      <div><b>İlerleyen PanIN</b><span><b>CDKN2A (p16)</b> kaybı: hücre döngüsü freni gider</span></div>
+      <div><b>Yüksek dereceli PanIN</b><span><b>TP53</b> ve <b>SMAD4 (DPC4)</b> inaktivasyonu</span></div>
+      <div class="son"><b>İnvaziv PDAC</b><span>SMAD4 kaybı: uzak metastaz eğilimi ve agresif seyir</span></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 2.</b> PanIN ilerleme modeli, kolondaki adenom-karsinom dizisinin pankreastaki karşılığıdır. Kistik öncüller (İPMN, MCN) aynı yolu KRAS, TP53 ve SMAD4’ün yanında <b>GNAS</b> ve <b>RNF43</b> anormallikleriyle izler.</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>%90+</strong><span>PDAC payı ve KRAS mutasyonu</span></div>
+    <div><strong>%80–85</strong><span>tanıda anrezektabl</span></div>
+    <div><strong>%10–12</strong><span>5 yıllık genel sağkalım</span></div>
+    <div><strong>%60–70</strong><span>baş yerleşimi</span></div>
+    <div><strong>4 kat</strong><span>50 yaş sonrası yeni diyabette risk</span></div>
+    <div><strong>&gt;500 U/mL</strong><span>CA 19-9: kötü prognoz, gizli metastaz</span></div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · kilo kaybı</div><p>Hızlı kilo kaybı iki mekanizmanın toplamıdır: kanser kaşeksisi ve ana kanal tıkanmasına bağlı ekzokrin yetmezlik (steatore). İkincisi enzim replasmanıyla düzelir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotu</div><p>Gezici tromboflebit (<b>Trousseau sendromu</b>) pankreas kanserinin patognomonik paraneoplastik bulgusudur.</p></div>
+  </div>
+
+  <div class="blok">
+    <h2>Ne zaman pankreası düşünelim?</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>Sarılık</b><span>Ağrısız, ilerleyici; koyu idrar, akolik gaita, kaşıntı</span></div>
+      <div><b>Sırt ağrısı</b><span>Epigastrik, sırta vuran, öne eğilmekle azalan</span></div>
+      <div><b>Yeni diyabet</b><span>50 yaş sonrası, dirençli, kilo kaybıyla</span></div>
+      <div><b>Gezici tromboz</b><span>Tekrarlayan yüzeyel tromboflebit ya da VTE</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu tuzak"><div class="ad">Tuzak · CA 19-9 ile tarama</div><p>CA 19-9 asemptomatik kişide tarama testi değildir; benign kolestaz ve kolanjitte de yükselir, Lewis-negatif kişide hiç yükselmez.</p></div>
+    <div class="kutu kural"><div class="ad">Altın kural · konsey</div><p>Rezektabilite ve tedavi sırası tek hekimin değil, cerrah, onkolog, radyasyon onkoloğu, radyolog ve patoloğun kararıdır.</p></div>
+  </div>
+
+  <div class="folyo"><b>12</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 13 · AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Pankreas kanseri</span><span>Gastrointestinal tümörler</span></div>
+
+  <div class="blok">
+    <h2>Risk faktörleri</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:40mm">Sigara ★</td><td>En önemli değiştirilebilir faktör; riski <b>2 kata kadar</b> artırır. Pankreas kanseri ölümlerinin %11–32’sinden sorumlu tutuluyor</td></tr>
+        <tr><td class="bas">Metabolik ve diyet</td><td>Obezite, fiziksel inaktivite, kırmızı ve işlenmiş et, ağır alkol (günde ≥3 kadeh)</td></tr>
+        <tr><td class="bas">Diyabet ★</td><td><b>Uzun süreli</b> diyabet riski ~1,5–2 kat artırır; <b>50 yaş sonrası yeni başlangıçlı</b> diyabet ise tümörün habercisi olabilir (~4 kat)</td></tr>
+        <tr><td class="bas">İnflamasyon</td><td>Herediter ve sporadik kronik pankreatit; <i>Helicobacter pylori</i></td></tr>
+        <tr><td class="bas">Mesleki</td><td>Klorlu hidrokarbon çözücüler, ağır metaller</td></tr>
+        <tr><td class="bas">Kan grubu</td><td>A, B ve AB grubunda O’ya göre hafif artış</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Kalıtsal sendromlar (%10–15)</h2>
+    <table class="tb">
+      <thead><tr><th style="width:52mm">Sendrom</th><th style="width:36mm">Gen</th><th>Not</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Herediter meme-over kanseri</td><td>BRCA1, <b>BRCA2</b>, PALB2</td><td>Ailesel kümelenmenin en önemli nedeni BRCA2; PALB2 riski ~15 kat artırır</td></tr>
+        <tr><td class="bas">Ataksi-telanjiektazi</td><td>ATM</td><td>Risk 8–9 kat</td></tr>
+        <tr><td class="bas">Peutz-Jeghers</td><td>STK11 (LKB1)</td><td>Yaşam boyu risk ~%36</td></tr>
+        <tr><td class="bas">FAMMM</td><td>CDKN2A (p16)</td><td>p16-Leiden delesyonunda risk %21’e dek</td></tr>
+        <tr><td class="bas">Herediter pankreatit</td><td>PRSS1, SPINK1</td><td>Yaşam boyu risk %25–44</td></tr>
+        <tr><td class="bas">Lynch</td><td>MLH1, MSH2, MSH6, EPCAM</td><td>Medüller histoloji ipucu olabilir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Yerleşime göre klinik</h2>
+    <div class="bw" style="grid-template-columns:1fr 1fr">
+      <div><b>Baş (%60–70) · erken</b><span>Başta dispepsi, bulantı, halsizlik. Koledok basısıyla <b>ağrısız obstrüktif sarılık</b>, koyu idrar, akolik gaita, kaşıntı, steatore</span></div>
+      <div><b>Gövde/kuyruk (%20–25) · geç</b><span>Uzun süre sessiz. Çölyak ve SMA çevresi pleksus invazyonuyla <b>sırta vuran, öne eğilmekle hafifleyen</b> inatçı epigastrik ağrı ya da metastaz bulguları</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural</div><p>Pankreas kanseri tanısı alan <b>her hastaya</b>, aile öyküsünden bağımsız olarak germline genetik test önerilir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>En sık metastaz yerleri: karaciğer, periton, akciğer.</p>
+        <p>Pannikülit + pankreas tümörü: asiner hücreli karsinom.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Tanıya giden sıra</h2>
+    <div class="serit-zincir">
+      <div><b>Şüphe</b><span>Sarılık, sırt ağrısı, yeni diyabet, kilo kaybı, Trousseau</span></div>
+      <div><b>Pankreas protokolü BT</b><span>Kitle, vasküler temas, metastaz</span></div>
+      <div><b>Evre ve konsey</b><span>Rezektabl, sınırda, lokal ileri ya da metastatik</span></div>
+      <div class="son"><b>Doku + germline</b><span>Sistemik tedavi öncesi EUS-İİAB; her hastaya genetik test</span></div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Riskin büyüklüğü</h2>
+    <div class="bw" style="grid-template-columns:repeat(5,1fr)">
+      <div><b>2 kat</b><span>Sigara</span></div>
+      <div><b>1,5–2 kat</b><span>Uzun süreli diyabet</span></div>
+      <div><b>4 kat</b><span>50 yaş sonrası yeni diyabet</span></div>
+      <div><b>~15 kat</b><span>PALB2</span></div>
+      <div><b>8–9 kat</b><span>ATM</span></div>
+    </div>
+  </div>
+
+  <div class="kutu inci"><div class="ad">Klinik inci · öncü olgu</div><p>Herediter meme-over kanseri (BRCA) ailesinde görülen bir pankreas kanseri “öncü” (sentinel) olgu sayılabilir. Aynı ailedeki BRCA1/2 taşıyıcıları için sürveyansın aile öyküsü şartını da bu olgu karşılar.</p></div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>13</b></div>
+</section>
+
+<!-- ================= 14 · ANLATI ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Anlatı</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Anlatı</div>
+  <h1 class="konu orta">Diyabet ve PDAC: çift yönlü ilişki</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Birinci yön: diyabet nedendir</h2>
+      <p>Uzun süreli tip 1 ve tip 2 diyabet pankreas kanseri riskini yaklaşık <b>1,5–2,08 kat</b> artırır. Burada suçlu hiperglisemiden çok <b>hiperinsülinemidir</b>: insülin, reseptör düzeyinde mitojenik etki gösterir. Tanıdan 10 yıl ya da daha önce saptanan yüksek glukoz ve insülin düzeyleri PDAC riskiyle ilişkilidir. Adiponektin düşüklüğü de tümörijenezi kolaylaştırır.</p>
+
+      <h2>Sekiz yıl kuralı</h2>
+      <p>Tip 2 diyabet tanısından sonraki <b>ilk 8 yıl</b> risk tavandadır; sonra düşer. Açıklama beta hücre rezervinin tükenmesidir: endojen insülin sentezinin göstergesi olan <b>C-peptid</b> düştükçe risk de azalır. Glukoz yüksek kalmaya devam ettiği hâlde riskin inmesi, tümörijenik ana faktörün hiperglisemi değil hiperinsülinemi olduğunu gösterir.</p>
+
+      <h2>İkinci yön: diyabet sonuçtur</h2>
+      <p>PDAC hastalarının yaklaşık <b>%85’inde</b> tanı anında diyabet ya da glukoz intoleransı vardır. Tümör hücreleri dolaşıma <b>adrenomedullin</b> taşıyan eksozomlar salgılar; bu vazodilatör peptid beta hücrelerinde insülin sekresyonunu doğrudan baskılar. Glukoz metabolizmasındaki bozulma olguların %55–85’inde tanıdan önceki iki yılda başlar; asemptomatik hastaların ~%20’sinde atipik yeni diyabet, tanıdan medyan <b>6,5 ay</b> önce gelişir.</p>
+
+      <h2>Kanıt: tümör çıkınca diyabet geriler</h2>
+      <p>Pankreatoduodenektomi sonrası <b>yeni başlangıçlı</b> diyabeti olanların <b>%57’sinde</b> diyabet tamamen geriler; uzun süreli diyabeti olanlarda prevalans değişmez. Sekretuar blokaj tümörle birlikte ortadan kalkar.</p>
+
+      <h2>Tip 3c: en riskli kohort</h2>
+      <p>Pankreatojenik (tip 3c) diyabet, özellikle kronik pankreatit zemininde, PDAC açısından <b>en yüksek riskli</b> gruptur. Üstelik tüm tip 3c olgularının yaklaşık <b>%30’u</b> doğrudan pankreas adenokarsinomunun sonucudur. Diyabetin eşlik ettiği PDAC, daha kötü patolojik özellikler ve daha kısa sağkalımla seyreder.</p>
+
+      <h2>Hangi ilaçla izleyelim?</h2>
+      <p>GLP-1 mimetikleri ve DPP-4 inhibitörleri, metformin gibi konvansiyonel ajanlardan farklı olarak pankreas kanserinde <b>~3 kat</b> risk artışıyla ilişkilendirildi. Endişenin kaynağı GLP-1 reseptör agonistleriyle görülen pankreatit ve hayvan modellerindeki kolumnar hücre atipisidir. Geniş kohortlar ise bu sinyali doğrulamıyor. Pratik sonuç bireysel tartıdır: tekrarlayan pankreatit, ailesel pankreas kanseri ya da medüller tiroid kanseri öyküsü olan hastada bu ajanlar ihtiyatla reçete edilir.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Kırmızı bayraklar</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Yaş</td><td>50 yaşından sonra ani başlangıç</td></tr>
+          <tr><td class="bas">Direnç</td><td>Diyet, egzersiz ve standart ilaçlara açıklanamayan yanıtsızlık</td></tr>
+          <tr><td class="bas">Kaşeksi</td><td>Önceden sağlıklı kiloda açıklanamayan kilo kaybı</td></tr>
+          <tr><td class="bas">İnsülin</td><td>50 yaş sonrası primer insüline bağımlı yeni diyabet: risk <b>4 kat</b></td></tr>
+        </tbody>
+      </table>
+      <div class="kutu tuzak"><div class="ad">Tuzak · herkesi görüntülemek</div><p>USPSTF, yalnız atipik yeni diyabet var diye tüm yaşlı erişkinlere evrensel görüntüleme <b>önermez</b>.</p></div>
+      <div class="kutu kural"><div class="ad">Altın kural · 2 hafta</div><p>Bilinen genetik yatkınlığı olan bireyde yeni diyabet, maskelenmiş neoplazi sayılır: <b>en geç 2 hafta içinde</b> EUS, MRCP ya da pankreas protokolü BT.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>14</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 15 · BAŞVURU: MOLEKÜLER HARİTA ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Başvuru</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Başvuru</div>
+  <h1 class="konu orta">Moleküler harita</h1>
+
+  <div class="blok">
+    <h2>Dört sürücü gen</h2>
+    <table class="tb">
+      <thead><tr><th style="width:30mm">Gen</th><th style="width:22mm">Kromozom</th><th style="width:26mm">Sıklık</th><th>Zaman ve anlam</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">KRAS</td><td>—</td><td>&gt;%90</td><td>En erken olay (PanIN-1), en sık kodon 12. Varyantların çoğu <b>G12D</b> ve G12V; G12C yalnız %1–2</td></tr>
+        <tr><td class="bas">CDKN2A (p16)</td><td>9p</td><td>~%95</td><td>Homozigot delesyonda komşu <b>MTAP</b> geni de sıklıkla gider</td></tr>
+        <tr><td class="bas">TP53</td><td>17p</td><td>%75–85</td><td>Yüksek dereceli PanIN’de</td></tr>
+        <tr><td class="bas">SMAD4 (DPC4)</td><td>18q</td><td>~%50</td><td>Yüksek dereceli PanIN’de; <b>uzak metastaz ve kötü prognoz</b> göstergesi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>SMAD4: TGF-β frenini kaybeden tümör</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Görevi</b><span>TGF-β reseptöründen gelen sinyali çekirdeğe taşıyan ortak aracı (<b>co-SMAD</b>); proliferasyonu frenler</span></div>
+      <div><b>Kaybın yolu</b><span><b>%30</b> homozigot delesyon · <b>%20</b> intragenik mutasyon + heterozigotluk kaybı</span></div>
+      <div><b>Nasıl bakılır?</b><span>Biyopsi ya da rezeksiyon materyalinde <b>immünohistokimya</b>: boyanma kaybı</span></div>
+    </div>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Aynı yolakta SMAD3, TGFβR1 ve TGFβR2 mutasyonları da görülür. SMAD4 <b>prediktif değil prognostik</b> bir belirteçtir: BRCA ya da NTRK gibi bir ilaçla eşleşmez.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Kistik ve nadir tümörlerin imzası</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:52mm">İPMN</td><td><b>GNAS</b> (kist gelişimine özgü); kist sıvısında TP53 ya da SMAD4 malignite lehine</td></tr>
+        <tr><td class="bas">Müsinöz lezyon (kist sıvısı)</td><td>Yüksek <b>CEA</b></td></tr>
+        <tr><td class="bas">Seröz kistadenom</td><td><b>VHL</b>; neredeyse her zaman benign</td></tr>
+        <tr><td class="bas">Solid psödopapiller neoplazi</td><td><b>CTNNB1</b> (β-katenin), neredeyse tamamında</td></tr>
+        <tr><td class="bas">İntraduktal onkositik papiller neoplazi</td><td>PRKACA ya da PRKACB translokasyonları</td></tr>
+        <tr><td class="bas">Pankreatoblastom</td><td>Çocukluk çağı; maternal 11p kaybı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · soğuk tümör</div><p>Pankreatik stellat hücrelerin kurduğu yoğun desmoplastik stroma hem kemoterapinin iletimini hem T-hücre girişini engeller; TGF-β mikroçevrede T-hücre aktivitesini baskılar.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>E-kadherin kaybı: epitelyal-mezenkimal geçiş ve invaziv fenotip.</p>
+        <p>Epigenetik susturmanın en sık yolu promoter hipermetilasyonu.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Prediktif mi, prognostik mi?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Belirteç</th><th style="width:26mm">Tür</th><th>Karara etkisi</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">BRCA1/2, PALB2</td><td>Prediktif</td><td>Platin duyarlılığı, PARP inhibitörü</td></tr>
+        <tr><td class="bas">MSI-H / dMMR</td><td>Prediktif</td><td>İmmün kontrol noktası inhibitörü</td></tr>
+        <tr><td class="bas">NTRK füzyonu</td><td>Prediktif</td><td>Entrektinib, larotrektinib</td></tr>
+        <tr><td class="bas">KRAS G12C · G12D</td><td>Prediktif</td><td>G12C inhibitörleri · G12D için klinik çalışma</td></tr>
+        <tr><td class="bas">SMAD4 kaybı</td><td><b>Prognostik</b></td><td>İlaç seçtirmez; lokal mi sistemik mi önceliğini değiştirir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>15</b></div>
+</section>
+
+<!-- ================= 16 · KARAR YOLU: TANI VE EVRELEME ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Yaklaşım</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Karar yolu</div>
+  <h1 class="konu orta">Tanı ve evreleme</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Pankreas protokolü BT</h3>
+        <p>İnce kesitli, <b>arteriyel + portal venöz</b> fazlı multidedektör BT temel tanı ve evreleme aracıdır: vasküler temas ve uzak metastaz aynı incelemede.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Gerekirse MRG/MRCP</h3>
+        <p>Kistik bileşen varsa ya da BT’de karaciğerde netleşmeyen lezyon varsa eklenir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Doku tanısı: kime zorunlu?</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Zorunlu</b><span>Neoadjuvan <b>ya da</b> palyatif sistemik tedavi planlanan <b>her</b> hasta</span></div>
+          <div><b>Mutlak değil</b><span>Tipik prezentasyonlu, rezektabl, doğrudan küratif cerrahiye gidecek hasta</span></div>
+        </div>
+        <p style="margin-top:1.2mm">Yöntem <b>EUS-İİAB/İİB</b>: yüksek duyarlılık ve peritona tümör ekimi riskinin ortadan kalkması.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Rezektabiliteyi sınıfla (NCCN)</h3>
+        <p style="margin-bottom:1.2mm">Belirleyici damarlar: çölyak trunkus, SMA, ortak hepatik arter, portal ven ve SMV.</p>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:30mm">Rezektabl</td><td>Çölyak, SMA, ortak hepatik arterle temas <b>yok</b>; SMV/PV ile temas yok ya da konturu bozmayan <b>≤180°</b></td></tr>
+            <tr><td class="bas">Sınırda (BRPC)</td><td>SMA/çölyakla <b>&lt;180°</b> temas; SMV/PV’de <b>&gt;180°</b> sarma, kontur bozulması ya da segmental oklüzyon — ama <b>rekonstrüksiyon mümkün</b></td></tr>
+            <tr><td class="bas">Lokal ileri (LAPC)</td><td>Çölyak/SMA/ortak hepatik arteri <b>&gt;180°</b> sarma; rekonstrüksiyona izin vermeyen venöz oklüzyon ya da trombüs</td></tr>
+            <tr><td class="bas">Metastatik</td><td>Karaciğer, akciğer, periton ya da bölgesel olmayan lenf nodu (ör. para-aortik)</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kenar-sutun">
+        <div class="ad">CA 19-9</div>
+        <div class="spotlar">
+          <p>En duyarlı serum belirteci ama <b>tarama testi değil</b>.</p>
+          <p>Yeri: tanıda prognoz, tedavi yanıtı, nüks izlemi.</p>
+          <p>&gt;500 U/mL: kötü prognoz ve olası gizli metastaz.</p>
+          <p>Lewis-negatif (a−b−) %10: fukoziltransferaz yok, değer hep sıfıra yakın.</p>
+          <p>Benign yükseklik: kolanjit, siroz, kolestaz, safra taşı.</p>
+        </div>
+      </div>
+
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">AJCC 8 · akılda kalanlar</div>
+        <div class="spotlar">
+          <p>T1: ≤2 cm · T3: &gt;4 cm</p>
+          <p>N2: ≥4 pozitif bölgesel lenf nodu</p>
+        </div>
+      </div>
+
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak · normal CA 19-9</div><p>Görüntüsü tipik bir kitlede normal CA 19-9 tanıyı dışlamaz; önce Lewis-negatif fenotip düşünülür.</p></div>
+
+      <div class="kutu kural" style="margin-top:3mm"><div class="ad">Altın kural · biyopsi yolu</div><p>Doku EUS eşliğinde alınır: duyarlılığı yüksektir ve peritona tümör ekimi riskini ortadan kaldırır.</p></div>
+    </aside>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Evreden ilk hamleye</div>
+    <div class="serit-zincir">
+      <div><b>Rezektabl</b><span>Cerrahi → 6 ay adjuvan; yüksek riskte neoadjuvan tartışılır</span></div>
+      <div><b>Sınırda (BRPC)</b><span>Doku tanısı → neoadjuvan 4–6 ay → cerrahi değerlendirme</span></div>
+      <div><b>Lokal ileri (LAPC)</b><span>İndüksiyon kemoterapisi ± RT; seçilmişte TTFields</span></div>
+      <div class="son"><b>Metastatik</b><span>Doku + germline → performansa göre kemoterapi → moleküler ekleme</span></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 3.</b> Dört evre dört farklı ilk adım demektir. Sınırı belirleyen, tümörün damarı sarma açısı ve venin rekonstrükte edilip edilemeyeceğidir.</div>
+  </div>
+
+  <div class="adim"><div class="no">5</div><div>
+    <h3>Tedaviden önce moleküler kimlik</h3>
+    <p>Germline panel (BRCA1/2, PALB2, ATM, MLH1, MSH2, MSH6, EPCAM) her hastada; metastatik hastada tümörde MSI-H/dMMR, NTRK füzyonu ve KRAS varyantı. Sonuç hem rejimi (platin) hem idameyi (olaparib) hem de ailenin taranmasını belirler.</p>
+  </div></div>
+
+  <div class="folyo"><b>16</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 17 · KARAR YOLU: LOKALİZE HASTALIK ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Yaklaşım</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Karar yolu</div>
+  <h1 class="konu orta">Lokalize hastalıkta tedavi</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Kararı konsey verir</h3>
+        <p>Cerrah, tıbbi onkolog, radyasyon onkoloğu, radyolog, patolog ve gastroenterolog. Hastalık görünürde lokalize olsa da <b>mikrometastatiktir</b>: sistemik kontrol esastır.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Rezektabl: önce cerrahi</h3>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:30mm">Baş, unsinat</td><td>Pankreatoduodenektomi (klasik ya da <b>pilor koruyucu</b> Whipple)</td></tr>
+            <tr><td class="bas">Gövde, kuyruk</td><td><b>Splenektomili distal pankreatektomi</b> (standart); SMA solundaki nodlar için RAMPS</td></tr>
+            <tr><td class="bas">Hedef</td><td><b>R0</b>: makro ve mikroskobik tümörsüz sınır — en önemli prognostik hedef</td></tr>
+            <tr><td class="bas">Lenf nodu</td><td>Rutin genişletilmiş lenfadenektomi yok; evreleme için <b>en az 15–16</b> nod</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Sınırda ve lokal ileri: önce sistemik</h3>
+        <p>Preoperatif <b>4–6 ay</b> mFOLFIRINOX ya da gemsitabin + nab-paklitaksel, gerekirse ardışık RT — altın standart. Yüksek riskli rezektabl olgularda da giderek benimseniyor. Neoadjuvan öncesi tıkanma sarılığı <b>biliyer stentle</b> çözülür. İndüksiyon sonrası rezeke edilemeyen LAPC’de lokal kontrol için irreversibl elektroporasyon bir seçenek.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Adjuvan: 6 ay</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>mFOLFIRINOX</b><span>R0/R1 + ECOG 0–1: ilk seçenek; <b>PRODIGE 24</b>’te en yüksek sağkalım</span></div>
+          <div><b>Gemsitabin + kapesitabin</b><span>ESPAC-4 alternatifi</span></div>
+          <div><b>S-1</b><span>JASPAC-01; özellikle Asya popülasyonu</span></div>
+        </div>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural · BRCA/PALB2</div><p>Germline BRCA1/2 ya da PALB2 varyantında <b>platin içeren</b> FOLFIRINOX mutlak tercihtir; fit hastada adjuvan standart da aynı rejimi gösterir.</p></div>
+
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Biyolojik rezektabilite · SMAD4</div>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas">SMAD4 kaybı</td><td>Erken hematojen metastaz (karaciğer), kısa OS: <b>neoadjuvan sistemik öncelik</b>; ağır vasküler rekonstrüksiyonun kazancı sınırlı</td></tr>
+            <tr><td class="bas">SMAD4 korunmuş</td><td>Lokal-bölgesel nükse yatkın: lokal kontrol ve RT’den daha çok yarar beklenir</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak · SMAD4 cerrahiyi yasaklar mı?</div><p>Hayır. Anatomik rezektabilite ölçütlerini değiştirmez ve RT endikasyonunu tek başına belirlemez; kanıtlar çelişkili. RT kararı hâlâ R0/R1, vasküler temas ve indüksiyon yanıtına göre verilir.</p></div>
+    </aside>
+  </div>
+
+  <div class="blok">
+    <h2>Patoloji raporunda neye bakılır?</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>R0</b><span>Makroskobik ve mikroskobik olarak tümörsüz sınır</span></div>
+      <div><b>R1</b><span>Rezeksiyon sınırına 1 mm mesafede tümör hücresi</span></div>
+      <div><b>Lenf nodu</b><span>En az 15–16 nod; N2 = ≥4 pozitif nod</span></div>
+      <div><b>Operasyon sırasında</b><span>Sınırlar için frozen section</span></div>
+    </div>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Pilor koruyucu Whipple, postoperatif fonksiyonel iyileşmeyi hızlandırmak ve yatış süresini kısaltmak için tercih edilebilir.</p>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · neden önce kemoterapi?</div><p>Sınırda ve lokal ileri hastalıkta neoadjuvan tedavinin üç hedefi vardır: gizli mikrometastazları erken yok etmek, tümörü küçültmek ve <b>R0</b> olasılığını artırmak.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Adjuvan süre 6 ay; R0/R1 + ECOG 0–1’de mutlak endikasyon.</p>
+        <p>Rutin genişletilmiş lenfadenektomi önerilmez.</p>
+        <p>Kür şansı sunan tek seçenek cerrahidir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>17</b></div>
+</section>
+
+<!-- ================= 18 · KARAR YOLU: METASTATİK ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Yaklaşım</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Karar yolu</div>
+  <h1 class="konu orta">Metastatik hastalık ve hassas tıp</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Doku ve germline test</h3>
+        <p>Sistemik tedaviden önce histolojik kanıt. Germline panel her hastada: <b>BRCA1, BRCA2, PALB2, ATM, MLH1, MSH2, MSH6, EPCAM</b>. Tümörde moleküler profil: MSI-H/dMMR, NTRK, KRAS varyantı.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Birinci basamak: performansa göre</h3>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:36mm">ECOG 0–1</td><td>mFOLFIRINOX, <b>NALIRIFOX</b> (lipozomal irinotekan, 5-FU, lökovorin, oksaliplatin) ya da gemsitabin + nab-paklitaksel</td></tr>
+            <tr><td class="bas">FOLFIRINOX’u kaldıramayan orta performans</td><td>Gemsitabin + nab-paklitaksel</td></tr>
+            <tr><td class="bas">Progresyon</td><td>Çapraz geçiş: FOLFIRINOX → gemsitabin bazlı; gemsitabin → lipozomal irinotekan bazlı</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Moleküler alt gruba göre ekle</h3>
+        <table class="tb">
+          <thead><tr><th style="width:38mm">Bulgu</th><th>Ajan</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">Germline BRCA1/2 + platine ≥16 hafta progresyonsuz</td><td><b>Olaparib idamesi</b> (POLO: PFS 3,8 → 7,4 ay)</td></tr>
+            <tr><td class="bas">Somatik ya da germline BRCA1/2, PALB2 + platin duyarlılığı</td><td>Rukaparib idamesi</td></tr>
+            <tr><td class="bas">MSI-H / dMMR (&lt;%1)</td><td>Pembrolizumab ya da dostarlimab; seçilmişte nivolumab + ipilimumab</td></tr>
+            <tr><td class="bas">NTRK füzyonu</td><td>Entrektinib, larotrektinib</td></tr>
+            <tr><td class="bas">KRAS G12C (%1–2)</td><td>Adagrasib, sotorasib</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu inci"><div class="ad">Klinik inci · sentetik letalite</div><p>BRCA mutasyonu homolog rekombinasyonu bozar; PARP inhibitörü tek sarmal onarımını da kapatınca tümör hücresi DNA hasarını onaramaz. Aynı kusur tümörü <b>platine</b> de duyarlı kılar.</p></div>
+
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak · herkese immünoterapi</div><p>Anti-PD-1/PD-L1 monoterapisi dMMR/MSI-H dışındaki hastalarda <b>etkisizdir</b>: tümör immünolojik olarak soğuktur.</p></div>
+
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>BRCA1/2, PALB2 varyantı PDAC’ın %3–5’inde.</p>
+          <p>POLO çalışması: germline BRCA, platin sonrası idame.</p>
+          <p>FOLFIRINOX’taki “I” irinotekan.</p>
+          <p>BRCA/PALB2’de platin bazlı rejimler (ör. gemsitabin + sisplatin) özellikle etkili.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="blok">
+    <h2>Çalışma sözlüğü</h2>
+    <table class="tb">
+      <thead><tr><th style="width:30mm">Çalışma</th><th style="width:40mm">Ortam</th><th>Mesaj</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">PRODIGE 24</td><td>Adjuvan, fit hasta</td><td>mFOLFIRINOX en yüksek genel sağkalım</td></tr>
+        <tr><td class="bas">ESPAC-4</td><td>Adjuvan</td><td>Gemsitabin + kapesitabin</td></tr>
+        <tr><td class="bas">JASPAC-01</td><td>Adjuvan, Asya</td><td>S-1</td></tr>
+        <tr><td class="bas">nITRO</td><td>Neoadjuvan, sınırda</td><td>NALIRIFOX: %65 R0, OS 32 ay</td></tr>
+        <tr><td class="bas">POLO</td><td>Metastatik, gBRCA</td><td>Olaparib idamesi: PFS 3,8 → 7,4 ay</td></tr>
+        <tr><td class="bas">PANOVA-3</td><td>Lokal ileri</td><td>TTFields: OS 14 → 16, ağrısız sağkalım 9 → 16 ay</td></tr>
+        <tr><td class="bas">KRYSTAL-1 · CodeBreak 100</td><td>Refrakter, KRAS G12C</td><td>Adagrasib %33 · sotorasib %21 ORR</td></tr>
+        <tr><td class="bas">RASolute 302</td><td>Refrakter, pan-RAS</td><td>Daraxonrasib OS 13 / 7 ay</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><b>18</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 19 · BAŞVURU: YENİ UFUKLAR ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Başvuru</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Başvuru</div>
+  <h1 class="konu orta">Yeni ufuklar: RAS, TTFields, aşılar</h1>
+
+  <div class="blok">
+    <h2>“Hedeflenemez” KRAS artık hedef</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Ajan · çalışma</th><th style="width:30mm">Hedef</th><th>Bulgular</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Adagrasib · KRYSTAL-1</td><td>G12C</td><td>21 refrakter hasta; ORR <b>%33</b>, PFS 5 ay, OS 8 ay</td></tr>
+        <tr><td class="bas">Sotorasib · CodeBreak 100</td><td>G12C</td><td>38 hasta; ORR <b>%21</b>, DCR %84, PFS 4 ay, OS 7 ay; derece ≥3 toksisite %16 (diyare, yorgunluk, transaminaz)</td></tr>
+        <tr><td class="bas">Daraxonrasib (RMC-6236) · faz I/II</td><td>Pan-RAS(ON)</td><td>Kohort %39 G12D, %31 G12V, %17 G12R; 300 mg/gün ile ORR %35, PFS 9 ay, OS 13 ay</td></tr>
+        <tr><td class="bas">Daraxonrasib · RASolute 302</td><td>Pan-RAS(ON)</td><td>Gemsitabin + nab-paklitaksele karşı OS <b>13 / 7 ay</b>, PFS 7 / 4 ay, derece ≥3 toksisite %44 / %58</td></tr>
+        <tr><td class="bas">Setidegrasib</td><td>G12D</td><td>Araştırma aşamasında; standart protokol yok, hastalar klinik çalışmaya yönlendirilir</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">G12C hattında divarasib ve glecirasib de çalışılıyor. Daraxonrasib FDA incelemesinde; yanıtsız hastalarda genişletilmiş erişim protokolüyle kullanılıyor.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Daraxonrasib nasıl çalışır?</h2>
+    <div class="serit-zincir">
+      <div><b>Kovalent değil</b><span>Eski G12C inhibitörlerinden farklı bağlanma</span></div>
+      <div><b>Aktif form</b><span>GTP’ye bağlı RAS(ON); mutant ve yabanıl KRAS/HRAS/NRAS</span></div>
+      <div><b>Üçlü kompleks</b><span>Hücre içinde <b>siklofilin A</b> ile tri-complex</span></div>
+      <div class="son"><b>Sinyal durur</b><span>RAS’ın efektöre bağlanması mekanik olarak engellenir</span></div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Farmakolojik olmayan ve bağışıklık temelli yaklaşımlar</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>TTFields · PANOVA-3</b><span>Alternatif elektrik alanı mitotik iğ dinamiğini bozar. LAPC’de gemsitabin + nab-paklitaksele eklenince OS <b>14 → 16 ay</b>, ağrısız sağkalım <b>9 → 16 ay</b></span></div>
+      <div><b>NALIRIFOX · nITRO</b><span>Neoadjuvan uygulamada sınırda rezektabl hastalarda <b>%65 R0</b>, medyan OS <b>32 ay</b>. PAXG (kapesitabin, sisplatin, nab-paklitaksel, gemsitabin) perioperatif çalışılıyor</span></div>
+      <div><b>RNA neoantijen aşıları</b><span>Hastaya özgü mutant KRAS peptitlerini sunar; uzun ömürlü <b>CD8+ T-hücre</b> yanıtıyla soğuk tümörü “sıcak” yapmayı hedefler</span></div>
+    </div>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Klinik fazlarda incelenen diğerleri: mezotelin hedefli CAR-T, GM-CSF aşıları, stromayı hedefleyen CD40 agonist antikorlar.</p>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu tuzak"><div class="ad">Tuzak · “KRAS mutantsa G12C inhibitörü”</div><p>PDAC’ta KRAS mutasyonu çoğunlukla <b>G12D</b> ve G12V’dir; G12C inhibitörleri hastaların yalnız %1–2’sine uyar. Çoğunluğun umudu pan-RAS ve G12D ajanlarıdır.</p></div>
+    <div class="kutu kural"><div class="ad">Altın kural · araştırma ajanı</div><p>Refrakter G12D hastada kılavuz onaylı bir protokol yoktur: hasta setidegrasib ve benzerlerini içeren <b>klinik çalışmaya</b> yönlendirilir.</p></div>
+  </div>
+
+  <div class="blok">
+    <h2>Kime hangi RAS stratejisi?</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>G12C (%1–2)</b><span>Kovalent G12C inhibitörleri: adagrasib, sotorasib; divarasib, glecirasib çalışmada</span></div>
+      <div><b>G12D (en sık)</b><span>Seçici G12D inhibitörü setidegrasib — araştırma aşamasında</span></div>
+      <div><b>G12D, G12V, G12R birlikte</b><span>Pan-RAS(ON) inhibitörü daraxonrasib: varyantın kendisinden bağımsız</span></div>
+    </div>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Sotorasibde tedaviyi değiştirmeyi gerektiren başlıca sorunlar hepatotoksisite, diyare ve yorgunluk; daraxonrasibde en sık döküntü (%14), stomatit (%12) ve diyare (%5).</p>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>19</b></div>
+</section>
+
+<!-- ================= 20 · BAŞVURU: TARAMA VE RİSK ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Başvuru</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Başvuru</div>
+  <h1 class="konu orta">Tarama ve risk faktörleri</h1>
+
+  <div class="blok">
+    <h2>Kimi, ne zaman tarayalım?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:42mm">Grup</th><th style="width:40mm">Aile öyküsü şartı</th><th>Başlangıç</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Peutz-Jeghers (STK11)</td><td><b>Aranmaz</b></td><td>30–35 yaş ya da ailedeki en genç olgudan 10 yıl önce</td></tr>
+        <tr><td class="bas">FAMMM (CDKN2A)</td><td><b>Aranmaz</b></td><td>40 yaş ya da en genç tanıdan 10 yıl önce</td></tr>
+        <tr><td class="bas">Herediter pankreatit (PRSS1)</td><td><b>Aranmaz</b></td><td>40 yaş ya da ilk pankreatit atağından 20 yıl sonra</td></tr>
+        <tr><td class="bas">BRCA1/2, PALB2, ATM, Lynch</td><td><b>Şart</b>: ≥1 birinci ya da ikinci derece akrabada PDAC</td><td>50 yaş ya da en genç etkilenen akrabadan 10 yıl önce</td></tr>
+        <tr><td class="bas">Ailesel pankreas kanseri (FPC)</td><td>Tanımın kendisi öyküdür (aşağıda)</td><td>50 yaş ya da en genç tanıdan 10 yıl önce</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Genel popülasyonda tarama <b>önerilmez</b> (USPSTF). ASGE, BRCA1/2 taşıyıcılarında öykü olmadan da taramaya şartlı alan açar; genel uzlaşı soy ağacı birlikteliğini arar.</p>
+  </div>
+
+  <div class="blok">
+    <h2>FPC: iki ölçütten biri</h2>
+    <div class="bw" style="grid-template-columns:1fr 1fr">
+      <div><b>Ölçüt 1</b><span>Aynı soy ağacı kanadında PDAC’lı <b>en az iki</b> akraba; bunlardan biri taranacak kişinin <b>birinci derece</b> akrabası</span></div>
+      <div><b>Ölçüt 2</b><span>Aynı kanatta <b>en az üç</b> akraba (derece gözetmeksizin) — ama <b>en az biri birinci derece</b></span></div>
+    </div>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">FPC bilinen bir mutasyon gerektirmez; öykü temelli klinik tanıdır.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Nasıl taranır?</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Yöntem</b><span>Yıllık <b>EUS</b> ve <b>MRG/MRCP</b>, dönüşümlü</span></div>
+      <div><b>Neden BT değil?</b><span>Ömür boyu yıllık izlemde biriken radyasyon ve sekonder malignite. EUS 2 cm’den küçük tümörlerde BT’den duyarlı</span></div>
+      <div><b>Hedef</b><span>İleri kitleyi değil, kistik öncülü <b>yüksek dereceli displazi</b> evresinde yakalamak; yüksek hacimli merkezde</span></div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Tartışmalı ilaç sinyalleri</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:38mm">İnkretin temelli ajanlar</td><td>GLP-1 mimetikleri (eksenatid) ve DPP-4 inhibitörleri (sitagliptin) metformine göre <b>~3 kat</b> risk artışıyla ilişkilendirildi. Geniş kohortlar doğrulamıyor: Sun (65.328 hasta) OR 0,78; Dankner (33.370) HR 0,50; Wang (344.550) DPP-4i ile olumsuz etki yok. Tirzepatidde RCT meta-analizleri genel kanser riskini artırmıyor, ama PDAC’ın ~20 yıllık latent dönemi kesin yargıyı erken kılıyor</td></tr>
+        <tr><td class="bas">Aspirin ve NSAİİ</td><td>Nurses’ Health Study: ≥4 yıl, haftada ≥14 tablet aspirinde RR <b>1,86</b>. Diğer geniş kohortlar (20+ yıl, ayda &gt;30 kez) ilişki bulmadı — <b>çelişkili</b></td></tr>
+        <tr><td class="bas">Koruyucu diyet</td><td>Sağlıklı beslenme yönergelerine yüksek uyum, özellikle VKİ ≥25’te: HR <b>0,85</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu tuzak"><div class="ad">Tuzak · her mutasyonda öykü aramak</div><p>Peutz-Jeghers, FAMMM ve herediter pankreatitte ailede hiç pankreas kanseri olmasa da tarama başlar. Öykü şartı yalnız BRCA1/2, PALB2, ATM ve Lynch içindir.</p></div>
+    <div class="kutu kural"><div class="ad">Altın kural · merkez</div><p>Sürveyans bulgularının yorumu zordur: pankreas hastalıklarında uzmanlaşmış, yüksek hacimli multidisipliner merkezde yürütülür.</p></div>
+  </div>
+
+  <div class="folyo"><b>20</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 21 · BAŞVURU: PALYASYON VE VAKADAN KARARA ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Başvuru</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Başvuru</div>
+  <h1 class="konu orta">Palyasyon ve vakadan karara</h1>
+
+  <div class="blok">
+    <h2>Palyatif ve destekleyici bakım</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:40mm">Tıkanma sarılığı</td><td>İlk planda ERCP ile <b>kendiliğinden genişleyen metalik stent</b> (SEMS)</td></tr>
+        <tr><td class="bas">Nöropatik sırt ağrısı</td><td>Analjeziye ek <b>EUS rehberliğinde çölyak pleksus nörolizi</b>: opioid ihtiyacını ve yan etkilerini azaltır; inatçı ağrıda her evrede yapılabilir</td></tr>
+        <tr><td class="bas">Gastrik çıkış tıkanması</td><td>Enteral metalik stent ya da gastrojejunostomi</td></tr>
+        <tr><td class="bas">Steatore, kaşeksi</td><td><b>Pankreatik enzim replasmanı ampirik</b> başlanır — fekal elastaz beklenmez</td></tr>
+        <tr><td class="bas">VTE (Trousseau)</td><td><b>DMAH</b> (enoksaparin) güvenli ve etkili</td></tr>
+        <tr><td class="bas">Kemik metastazı ağrısı</td><td>Palyatif radyoterapi</td></tr>
+        <tr><td class="bas">İzlem</td><td>Rezeksiyon sonrası CA 19-9 yükselişi nüks ya da progresyon; en sık nüks lokal yatak ve karaciğer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:86mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>58 yaş, aile öyküsü yok, diyet ve egzersize dirençli yeni diyabet</td><td>Gizli PDAC’ın ilk bulgusu olabilir (risk ~4 kat)</td></tr>
+        <tr><td>55 yaş, BRCA2 taşıyıcısı, yeni diyabet</td><td>En geç 2 hafta içinde EUS, MRCP ya da pankreas protokolü BT</td></tr>
+        <tr><td>Ağrısız sarılık, akolik gaita, kaşıntı</td><td>Pankreas başı tümörü: koledok basısı</td></tr>
+        <tr><td>SMV’yi 200° saran, konturu bozan ama rekonstrükte edilebilir tümör; arter teması yok</td><td>Sınırda rezektabl</td></tr>
+        <tr><td>Tipik, rezektabl baş kitlesi; doğrudan Whipple planlanıyor</td><td>Preoperatif biyopsi mutlak değil</td></tr>
+        <tr><td>Sınırda rezektabl, neoadjuvan planlanıyor</td><td>Önce EUS-İİAB ile doku tanısı</td></tr>
+        <tr><td>Tipik kitle, CA 19-9 normal</td><td>Lewis-negatif fenotip</td></tr>
+        <tr><td>R0 Whipple, ECOG 1, germline BRCA2</td><td>6 ay mFOLFIRINOX (PRODIGE 24 + platin gerekçesi)</td></tr>
+        <tr><td>Metastatik, germline BRCA1, FOLFIRINOX’la 16 hafta stabil</td><td>Olaparib idamesi</td></tr>
+        <tr><td>Metastatik, MSI-H / dMMR</td><td>Pembrolizumab</td></tr>
+        <tr><td>Biyopside SMAD4 kaybı, sınırda rezektabl</td><td>Neoadjuvan sistemik tedaviye öncelik</td></tr>
+        <tr><td>Peutz-Jeghers, ailede pankreas kanseri yok</td><td>Sürveyans başlar; öykü aranmaz</td></tr>
+        <tr><td>Teyzeler ve anne tarafı dede PDAC; birinci derece akraba yok</td><td>FPC ölçütü karşılanmıyor</td></tr>
+        <tr><td>Opioide dirençli sırt ağrısı, LAPC</td><td>EUS rehberliğinde çölyak pleksus nörolizi</td></tr>
+        <tr><td>Steatore, kilo kaybı ve DVT</td><td>Ampirik enzim replasmanı + DMAH</td></tr>
+        <tr><td>Refrakter metastatik, KRAS G12D</td><td>Klinik çalışma (setidegrasib, pan-RAS ajanları)</td></tr>
+        <tr><td>Refrakter metastatik, KRAS G12C</td><td>Adagrasib ya da sotorasib</td></tr>
+        <tr><td>Lokal ileri, gemsitabin + nab-paklitaksel alıyor</td><td>TTFields eklenmesi (PANOVA-3)</td></tr>
+        <tr><td>Whipple sonrası izlemde CA 19-9 yükseliyor</td><td>Nüks ya da progresyon araştırılır</td></tr>
+        <tr><td>Pankreas tümörü ve ağrılı subkütan nodüller</td><td>Asiner hücreli karsinom düşün</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="kutu kural"><div class="ad">Altın kural · palyasyonun dört ayağı</div><p>Safrayı aç (metal stent) · ağrıyı kes (çölyak pleksus nörolizi) · beslenmeyi koru (ampirik enzim) · pıhtıyı önle (DMAH).</p></div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>21</b></div>
+</section>
+
+<!-- ================= 22 · HIZLI TEKRAR ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Pankreas kanseri · Hızlı tekrar</span></div>
+  <div class="ust-etiket">Pankreas kanseri · Hızlı tekrar</div>
+  <h1 class="konu orta">Kırk soruda pankreas kanseri</h1>
+
+  <ol class="tekrar">
+    <li><span>Pankreas malignitelerinde PDAC payı?</span><b>%90’dan fazla</b></li>
+    <li><span>Tanıda anrezektabl oranı?</span><b>%80–85</b></li>
+    <li><span>5 yıllık genel sağkalım?</span><b>%10–12</b></li>
+    <li><span>Medyan tanı yaşı?</span><b>71</b></li>
+    <li><span>En önemli değiştirilebilir risk?</span><b>Sigara (2 kata kadar)</b></li>
+    <li><span>Kalıtsal olgu oranı?</span><b>%10–15</b></li>
+    <li><span>Peutz-Jeghers geni?</span><b>STK11 (LKB1)</b></li>
+    <li><span>FAMMM geni?</span><b>CDKN2A (p16)</b></li>
+    <li><span>Herediter pankreatit geni?</span><b>PRSS1 (SPINK1)</b></li>
+    <li><span>En erken moleküler olay?</span><b>KRAS aktivasyonu + telomer kısalması</b></li>
+    <li><span>KRAS’ta en sık kodon ve varyant?</span><b>Kodon 12; G12D</b></li>
+    <li><span>SMAD4 kromozomu ve kayıp oranı?</span><b>18q; ~%50</b></li>
+    <li><span>SMAD4 kaybının anlamı?</span><b>Uzak metastaz, kötü prognoz</b></li>
+    <li><span>İPMN’ye özgü mutasyon?</span><b>GNAS</b></li>
+    <li><span>Baş tümörünün klasik bulgusu?</span><b>Ağrısız obstrüktif sarılık</b></li>
+    <li><span>Gövde/kuyrukta ağrının nedeni?</span><b>Çölyak pleksus invazyonu</b></li>
+    <li><span>Patognomonik paraneoplastik bulgu?</span><b>Trousseau sendromu</b></li>
+    <li><span>Temel görüntüleme?</span><b>Pankreas protokolü (çok fazlı) BT</b></li>
+    <li><span>Doku tanısında altın standart?</span><b>EUS-İİAB/İİB</b></li>
+    <li><span>Biyopsi kime zorunlu?</span><b>Sistemik tedavi planlanan herkese</b></li>
+    <li><span>CA 19-9’un yeri?</span><b>Prognoz, yanıt, nüks — tarama değil</b></li>
+    <li><span>Normal CA 19-9’un açıklaması?</span><b>Lewis-negatif fenotip (%10)</b></li>
+    <li><span>Sınırda rezektablda arter teması?</span><b>SMA/çölyakla &lt;180°</b></li>
+    <li><span>Lokal ileriyi tanımlayan?</span><b>Arteri &gt;180° sarma; rekonstrükte edilemeyen ven</b></li>
+    <li><span>En önemli prognostik cerrahi hedef?</span><b>R0 rezeksiyon</b></li>
+    <li><span>Çıkarılması gereken lenf nodu?</span><b>En az 15–16</b></li>
+    <li><span>Adjuvan süre ve ilk seçenek?</span><b>6 ay; mFOLFIRINOX (PRODIGE 24)</b></li>
+    <li><span>BRPC/LAPC’de standart?</span><b>Neoadjuvan 4–6 ay kemoterapi ± RT</b></li>
+    <li><span>BRCA/PALB2’de rejim?</span><b>Platin içeren FOLFIRINOX</b></li>
+    <li><span>Olaparib idamesinin şartı?</span><b>Germline BRCA + platine ≥16 hafta yanıt (POLO)</b></li>
+    <li><span>MSI-H / dMMR’de?</span><b>Pembrolizumab</b></li>
+    <li><span>KRAS G12C inhibitörleri?</span><b>Adagrasib (%33 ORR), sotorasib (%21)</b></li>
+    <li><span>Daraxonrasibin eşi?</span><b>Siklofilin A ile üçlü kompleks, RAS(ON)</b></li>
+    <li><span>RASolute 302 OS?</span><b>13 ay / 7 ay</b></li>
+    <li><span>PANOVA-3 kazancı?</span><b>OS 14→16, ağrısız sağkalım 9→16 ay</b></li>
+    <li><span>nITRO’da R0 ve OS?</span><b>%65; 32 ay</b></li>
+    <li><span>Aile öyküsü aranmadan taranan üç sendrom?</span><b>Peutz-Jeghers, FAMMM, herediter pankreatit</b></li>
+    <li><span>Tarama yöntemi?</span><b>Yıllık EUS + MRG/MRCP, radyasyonsuz</b></li>
+    <li><span>Diyabette 8 yıl kuralının dersi?</span><b>Suçlu hiperinsülinemi (C-peptid)</b></li>
+    <li><span>Paraneoplastik diyabetin aracısı?</span><b>Eksozomal adrenomedullin</b></li>
+  </ol>
+
+  <div class="folyo"><b>22</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
 </section>
 
 <script>

@@ -20,6 +20,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 - **Açıkta VE premiumda bilgisi olanları** tercih et. Az bilgisi olanı, açık + premium tam hazır olmayanı **elleme**.
 - Kaynak: açık ana sayfa + onun **ileri okuma** (alt) sayfaları + premium konu, quiz, kart. Dışarıdan bilgi ekleme.
 - Kaynaklar birbirini tutmuyorsa kitapta **premium** sürümünü kullan, tutarsızlığı günlüğe yaz (düzeltme kullanıcının).
+- **Yapay zeka yer tutucularını ATLA** (kullanıcı, 16 Eylül): "AI taslak", "🤖", "⚠️ Uyarı: MediSea…", "bu bölüm yapay zeka ile…", "[eklenecek]", "Lorem", "TODO", "örnek metin", içeriği olmayan kapsam paragrafları ve yarım/kopuk cümleler kitaba alınmaz. Her turda kaynaklar yer tutucu desenleriyle taranır, bulunanlar günlüğe yazılır.
 
 ## Teknik kurallar
 
@@ -64,7 +65,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 28 | (endokrin) Feokromositoma ve paraganglioma | feokromositoma-ve-paraganglioma (25 KB) | feokromositoma + quiz | BİTTİ (endokrin s. 81–92) |
 | 29 | (enfeksiyon) CRKP | crkp-enfeksiyonu (18 KB) | crkp + quiz + 80 kart | BİTTİ (enfeksiyon s. 25–36) |
 | 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
-| 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | SIRADA |
+| 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | BİTTİ (s. 11–22) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -453,3 +454,36 @@ Kaynak tutarsızlıkları ve gözlemler:
 - Transplantasyon kaynakları **renal eşikte iki ayrı sayı veriyor**: premium konu "kreatinin &gt;2 mg/dL ya da GFR &lt;%30 → doz yarıya indir/kes", quiz "GFR &lt;30–35 mL/dk → bisfosfonat kontrendike". İkisi ayrı satır olarak s.102'ye kondu; hangisinin hangi klinik durumda geçerli olduğu kaynaklarda net değil — **kullanıcı kararı**.
 - Transplantasyon premium konusu da (bruselloz ve antikoagülasyonda olduğu gibi) gerçek konu metni yerine **kapsam paragrafı** taşıyor; içeriğin tamamı quizden geldi.
 - Açık `erkek-osteoporozu-testosteron` sayfası neredeyse yalnız **başlıklardan** oluşuyor; Testosterone Trials bölümünün gövdesi premium quizde.
+
+### Tur 31 — (onko) Pankreas kanseri · onkoloji s. 11–22 (Kısım 2)
+Sayfalar: 11 kısım kapağı · 12–13 açık sayfa (Şekil 2: PanIN → PDAC zinciri; sayılarla; ne zaman düşünelim; risk faktörleri; kalıtsal sendromlar; yerleşime göre klinik; tanıya giden sıra; riskin büyüklüğü) · 14 anlatı (diyabet–PDAC çift yönlü ilişki, 8 yıl kuralı, adrenomedullin, tip 3c, inkretin sorusu; kenarda kırmızı bayraklar ve 2 hafta kuralı) · 15 başvuru (dört sürücü gen, SMAD4, kistik/nadir tümör imzaları, prediktif–prognostik ayrımı) · 16 karar yolu (BT, MRG, doku tanısı, NCCN rezektabilite, moleküler kimlik; Şekil 3: evreden ilk hamleye; CA 19-9 ve AJCC kenarı) · 17 karar yolu (lokalize hastalık: cerrahi, neoadjuvan, adjuvan, SMAD4 ve biyolojik rezektabilite, patoloji raporu) · 18 karar yolu (metastatik: performansa göre rejim, moleküler alt gruba göre ajan, çalışma sözlüğü) · 19 başvuru (KRAS inhibitörleri tablosu, daraxonrasib mekanizması, TTFields, nITRO, RNA aşıları) · 20 başvuru (kimi ne zaman tarayalım, FPC iki ölçüt, tarama yöntemi, tartışmalı ilaç sinyalleri) · 21 başvuru (palyatif bakım + 20 senaryoluk vakadan karara) · 22 hızlı tekrar (40 soru).
+Son ölçüm: **onkoloji 22 sayfanın hiçbirinde taşma yok**; Kısım 2'de en dolu s.13 ve s.22 (−9 mm), en boş s.19 (−47 mm). İki doldurma turu gerekti (ilk taslak −55…−97 mm).
+Bölüm açılışı: Kısım 1 içindekileri tek satıra indirildi, Kısım 2 eklendi; alt başlık "Febril nötropeni ve pankreas kanseri".
+Kaynaklar: premium `topics/gastroenteroloji/pankreas-kanseri` + `quizzes/gastroenteroloji/…-quiz-1` (10 soru) + `quizzes/onkoloji/…-quiz-1` (26 soru) + `flashcards/gastroenteroloji/pankreas-kanseri` (80 kart) · açık `canonical/onkoloji/pankreas-kanseri-ana-sayfa` + 9 ileri okuma (diabetes, ileri-tedaviler, kras-mutasyonu, neden-ilaç-vs, neden-inkretin, rna-asilar, setidegrasib-protokolu, smad4, surveyans).
+
+**Bu turda uygulanan yeni kural — yapay zeka yer tutucuları atlandı** (kaynak tarandı, şunlar kitaba ALINMADI):
+- premium `topics/onkoloji/pankreas-kanseri`: gerçek konu metni yok; yalnız bir evreleme tablosu + "Bu soru seti … kapsar" **kapsam paragrafı**.
+- `pankreas-kanseri-ileri-tedaviler`: "3." bölümün yerinde ana sayfanın evreleme bölümü **birebir kopyalanmış** (numaralama 1-2-📸-4-5-6 atlıyor) ve kopyanın içine anlamsız bir **"SMA modulation"** ifadesi girmiş; ayrıca "çalışmalaramda" bozuk sözcüğü.
+- `pankreas-kanseri-setidegrasib-protokolu`: 6 KB'lık sayfada **hiç veri yok** (ORR/PFS/OS yok); "NEJM 2026 çalışması" başlığı ve "en birincil klinik kaynaktır" gibi dolgu cümleleri. Kitaba yalnız "G12D seçici, araştırma aşamasında, klinik çalışmaya yönlendir" alındı.
+- `pankreas-kanseri-smad4` (31 KB): aynı içerik (SMAD4 kaybı → sistemik; korunmuş → lokal) **dört ayrı başlık altında tekrarlanıyor**; "Resepsiyonel Karşılaştırma" ve "Makro-Modality Optimizasyon" gibi anlamsız başlıklar. Tek kez özetlendi.
+- `pankreas-kanseri-surveyans`: FPC tanımında bozuk metin **"en least iki"**.
+- `pankreas-kanseri-rna-asilar`: 6 KB'ın neredeyse tamamı aynı cümlenin (mutant KRAS → CD8+ T hücre) farklı kelimelerle tekrarı; tek cümleye indirildi.
+- `pankreas-kanseri-neden-inkretin`: "NK-kβ" bozuk yazımı; ilgili in vitro gemsitabin sinerjisi iddiası alınmadı.
+- flashcard 14: "FAMMM" kartının metninde **Kiril harfler** (Fаmiliаl, Mеlаnоmа — görünüşte Latin, kodda Kiril). Kitaba Latin yazımla alındı; kart düzeltme adayı.
+
+Kaynak tutarsızlıkları:
+- **İnkretin ajanlar — KULLANICI KARARI:** premium onko quiz (s.22) ve açık risk/diyabet sayfaları "GLP-1 mimetikleri ve DPP-4 inhibitörleri riski ~3 kat artırır" diyor; açık `neden-inkretin` sayfası geniş kohortlarda artış **bulunmadığını** yazıyor (Sun OR 0,78; Dankner HR 0,50; Wang DPP-4i etkisiz). Kitapta premium ifade + kohort verisi yan yana (s.14, s.20).
+- **FPC tanımı:** açık ana sayfa "en az bir birinci derece akraba", premium gastro "≥2 akraba (en az biri 1. derece)", onko quiz iki ölçüt (≥2 birinci derece / ≥3 akraba, en az biri birinci derece). Kitapta onko quiz (premium) tanımı (s.20).
+- **Lenf nodu sayısı:** premium "en az 15–16", açık "en az 16". Kitapta premium.
+- **Distal pankreatektomi:** premium "splenektomili (standart)", açık "± splenektomi". Kitapta premium.
+- **Tarama başlangıç yaşı:** premium "genellikle 50", açık ana sayfa "40–50", sürveyans sayfası sendroma göre (PJS 30–35, FAMMM 40, PRSS1 40/atak+20 yıl, BRCA 50). Kitapta sendrom tablosu.
+- **Sigara riski:** premium ve ana sayfa "2 kat", açık risk sayfası "en az 1,5 kat". Kitapta premium.
+- **Olaparib şartı:** onko quiz "en az 16 hafta", ileri tedaviler sayfası ve gastro quiz "4 ay". Kitapta 16 hafta.
+- **BRPC arter teması:** premium "<180°", kart 28 "≤180°". Kitapta premium.
+- **Daraxonrasib FDA durumu:** KRAS sayfası "FDA incelemesinde, genişletilmiş erişim", ileri tedaviler sayfası "genişletilmiş erişim onaylandı". Kitapta KRAS sayfası.
+- Kart 35 BRCA/PALB2'de platin örneği olarak "gemsitabin + sisplatin" veriyor; premium FOLFIRINOX diyor. İkisi de yazıldı (s.18).
+
+**Tur sırasında bulunan iki şablon kusuru ve düzeltmesi:**
+- **Endokrin dosyasında `ol.tekrar` stili hiç yoktu.** s.80, 92 ve 104'teki tekrar listeleri iki sütunlu düzen yerine düz liste olarak basılıyordu; bu yüzden sayfalar kısa ölçülmüş ve üzerlerine fazladan içerik eklenmişti (s.80 ve 92 "Kırk soruda" başlığına rağmen **48 soru**, s.104 fazladan iki kutu). Stil eklenince üç sayfa +41…+49 mm taştı. Düzeltme: s.80 ve 92'den en ayrıntılı 8'er soru çıkarıldı (başlıkla uyumlu 40), s.104'ün iki kutusu s.99 ve s.101'e taşındı, uzun cevaplar kısaltıldı. Stil onkoloji dosyasına da eklendi. **104 sayfanın hiçbirinde taşma yok.**
+  Çıkarılan sorular — s.80: IgG1 alt sınıfı, Hashimoto kanlanması, biyotin 48 saat, iyot 1 saat, Lugol, MMI–PTU dönüşümü, yaşlıda MMI dozu, pediatrik relaps %68. s.92: mikrofeokromositoma, insidans, paroksizm süresi, ayakta eşikler, MIBG'nin yeri, maternal damgalama, magnezyum sülfat, tiramin. (Hepsinin bilgisi kendi sayfalarında duruyor.)
+- **Küçük kutu (`.bw`) içindeki kalın vurgular başlık gibi basılıyordu** (`.bw b` kuralı içteki `<b>`'yi de büyük harf blok yapıyordu; ör. s.16'da "YA DA", "HER" ayrı satır). Dokuz bölüm dosyasına `.bw span b` satır içi kuralı eklendi; etkilenen yerler endokrin 14, onkoloji 18, enfeksiyon 9, hematoloji 6, nefroloji 1. Kural yalnızca yüksekliği azaltır; onkoloji yeniden ölçüldü, taşma yok.

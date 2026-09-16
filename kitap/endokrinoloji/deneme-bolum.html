@@ -219,6 +219,11 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
 .dal-kutu.son b { color: var(--spot); }
 .adim .protokol .p .no { font-size: 11pt; }
 
+ol.tekrar { columns: 2; column-gap: 8mm; margin: 0; padding: 0; list-style: none; counter-reset: t; }
+ol.tekrar li { break-inside: avoid; counter-increment: t; display: grid; grid-template-columns: 6mm 1fr; column-gap: 1mm; padding: 1.7mm 0; border-bottom: .5pt solid var(--ince); font-size: 8pt; line-height: 1.3; }
+ol.tekrar li::before { content: counter(t); grid-row: span 2; font: 700 9pt/1.2 var(--serif); color: var(--brans); }
+ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--brans-koyu); margin-top: .5mm; }
+.bw span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
 </style>
 </head>
 <body>
@@ -4601,7 +4606,6 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>Tirotoksikoz ile hipertiroidizm farkı?</span><b>Tirotoksikoz sendrom, hipertiroidizm de novo sentez artışı</b></li>
     <li><span>İyot yeterli bölgede en sık neden?</span><b>Graves hastalığı</b></li>
     <li><span>Graves’in mekanizması?</span><b>TRAb/TSI ile TSH reseptör agonizması</b></li>
-    <li><span>Antikorun alt sınıfı?</span><b>IgG1</b></li>
     <li><span>Toksik nodüllerde mekanizma?</span><b>TSHR ya da GNAS’ta somatik aktive edici mutasyon</b></li>
     <li><span>TSH baskılanmamış tirotoksikoz?</span><b>TSHoma ya da tiroid hormon direnci</b></li>
     <li><span>hCG aracılı tirotoksikoz nerede?</span><b>Gebeliğin ilk trimesteri, molar gebelik, koryokarsinom</b></li>
@@ -4612,9 +4616,7 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>3. nesil TRAb performansı?</span><b>Duyarlılık %97,7 · özgüllük %99,5</b></li>
     <li><span>TBII ile TSI farkı?</span><b>TBII uyarıcı/bloke ayıramaz; TSI doğrudan uyarıcıyı ölçer</b></li>
     <li><span>Doppler’de Graves bulgusu?</span><b>Tiroid infernosu (hipervaskülarite)</b></li>
-    <li><span>Hashimoto’da kanlanma?</span><b>Azalmış</b></li>
     <li><span>Biyotin interferansı ne yapar?</span><b>TSH yalancı düşük, sT4/sT3 yalancı yüksek</b></li>
-    <li><span>Biyotin kaç saat önce kesilir?</span><b>En az 48 saat</b></li>
     <li><span>Beta blokerde ilk tercihler?</span><b>Atenolol 25–50 mg; fırtınada propranolol</b></li>
     <li><span>Propranolol yüksek dozda ek etkisi?</span><b>Tip 1 deiyodinaz inhibisyonu (T4→T3 ↓)</b></li>
     <li><span>Tionamidlerin hedefi?</span><b>Tiroid peroksidaz</b></li>
@@ -4623,10 +4625,8 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>PTU’nun kritik yan etkisi?</span><b>Fulminan karaciğer yetmezliği</b></li>
     <li><span>Agranülositoz tanımı?</span><b>Mutlak nötrofil &lt;500/µL</b></li>
     <li><span>Hasta neyle uyarılır?</span><b>Boğaz ağrısı/ateşte ilacı kes, tam kan sayımı</b></li>
-    <li><span>İyot solüsyonu ne zaman verilir?</span><b>Antitiroid ilaçtan en az 1 saat sonra</b></li>
     <li><span>RAI kontrendikasyonları?</span><b>Gebelik, laktasyon, orta-ağır/görmeyi tehdit eden orbitopati</b></li>
     <li><span>Cerrahide en sık metabolik komplikasyon?</span><b>Hipokalsemi</b></li>
-    <li><span>Ameliyat öncesi vaskülariteyi ne azaltır?</span><b>Lugol solüsyonu</b></li>
     <li><span>GREAT skorunun bileşenleri?</span><b>Yaş, guatr boyutu, sT4, TRAb</b></li>
     <li><span>Orbitopati sıklığı?</span><b>%25–50</b></li>
     <li><span>Aktif hastalık eşiği?</span><b>CAS ≥3</b></li>
@@ -4640,12 +4640,9 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>Gestasyonel geçici tirotoksikozda TRAb?</span><b>Negatif — antitiroid ilaç verilmez</b></li>
     <li><span>Gebelikte hipertiroidinin en sık nedeni?</span><b>Graves (%85–90)</b></li>
     <li><span>Metimazol embriyopatisi hangi haftalarda?</span><b>6–10. haftalar, %2–4</b></li>
-    <li><span>Metimazol–PTU doz dönüşümü?</span><b>1 mg MMI ≈ 15–20 mg PTU</b></li>
     <li><span>Gebelikte sT4 hedefi?</span><b>Referansın üst sınırında</b></li>
     <li><span>Yaşlıda en sık etiyoloji?</span><b>Toksik multinodüler guatr</b></li>
-    <li><span>Yaşlıda başlangıç metimazol dozu?</span><b>5–15 mg/gün (düşük doz)</b></li>
     <li><span>RAI öncesi yaşlıda ne şarttır?</span><b>Metimazolle ötiroidi sağlamak</b></li>
-    <li><span>Pediatrik Graves relaps oranı?</span><b>%68</b></li>
   </ol>
 
   <div class="folyo"><b>80</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
@@ -5273,19 +5270,15 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
   <ol class="tekrar">
     <li><span>Feokromositoma nereden köken alır?</span><b>Adrenal medulla kromafin hücreleri</b></li>
     <li><span>Paraganglioma?</span><b>Ekstraadrenal otonomik gangliyon zinciri</b></li>
-    <li><span>1 cm’den küçük lezyonun adı?</span><b>Mikrofeokromositoma</b></li>
-    <li><span>Yıllık insidans?</span><b>Milyonda 2–8</b></li>
     <li><span>Adrenal insidentalomada sıklık?</span><b>%5–7</b></li>
     <li><span>Hipertansiyon oranı?</span><b>%90–95 (%5–15 normotansif)</b></li>
     <li><span>Klasik triad ve oranları?</span><b>Baş ağrısı %80, çarpıntı %70, terleme %60</b></li>
     <li><span>Triadın birlikte görülme oranı?</span><b>~%20</b></li>
-    <li><span>Paroksizm süresi?</span><b>15–20 dakika</b></li>
     <li><span>Geroula skorunda eşik?</span><b>≥3 → olasılık 5,8 kat</b></li>
     <li><span>En hassas tarama testi?</span><b>Plazma serbest metanefrinler</b></li>
     <li><span>Duyarlılık ve negatif prediktif değer?</span><b>%96–100 · &gt;%99</b></li>
     <li><span>Daha yüksek özgüllüklü test?</span><b>24 saatlik idrar fraksiyone metanefrinler (%98)</b></li>
     <li><span>Supine dışlama eşikleri?</span><b>Metanefrin &lt;0,3 · normetanefrin &lt;0,66 nmol/L</b></li>
-    <li><span>Ayakta alınan örnekte eşikler?</span><b>&lt;0,5 ve &lt;0,9 nmol/L</b></li>
     <li><span>3-metoksitiramin neyi gösterir?</span><b>Dopaminerjik tümörler ve metastaz riski</b></li>
     <li><span>Metanefrini yükselten ilaçlar?</span><b>TCA, levodopa, sempatomimetik, antipsikotik, MAO inhibitörü</b></li>
     <li><span>Böbrek yetmezliğinde hangi değer yanıltır?</span><b>Normetanefrin (~2 kat yüksek)</b></li>
@@ -5296,13 +5289,11 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>SDHx’te tercih edilen fonksiyonel görüntüleme?</span><b>⁶⁸Ga-DOTATATE PET/BT</b></li>
     <li><span>SDHB dediferansiye metastatik hastalıkta?</span><b>¹⁸F-FDG PET/BT</b></li>
     <li><span>Sporadik ve SDHx dışı kalıtsal tümörde?</span><b>¹⁸F-FDOPA PET/BT</b></li>
-    <li><span>MIBG’nin bugünkü yeri?</span><b>¹³¹I-MIBG tedavisine uygunluğu değerlendirmek</b></li>
     <li><span>Germline mutasyon oranı?</span><b>%30–40</b></li>
     <li><span>Küme 1 genleri ve fenotipi?</span><b>SDHx, VHL, FH, EPAS1 — noradrenerjik/dopaminerjik</b></li>
     <li><span>Küme 2 genleri ve fenotipi?</span><b>RET, NF1, TMEM127, MAX, HRAS — adrenerjik</b></li>
     <li><span>Fenotipi belirleyen enzim?</span><b>PNMT</b></li>
     <li><span>SDHB’de metastaz potansiyeli?</span><b>%35–75</b></li>
-    <li><span>Maternal damgalama hangi genlerde?</span><b>SDHD ve SDHAF2</b></li>
     <li><span>Preoperatif blokaj süresi?</span><b>En az 7–14 gün</b></li>
     <li><span>İlk tercih alfa bloker?</span><b>Doksazosin</b></li>
     <li><span>Tuz hedefi ve ameliyat öncesi sıvı?</span><b>≥5000 mg/gün; 2 L %0,9 NaCl</b></li>
@@ -5315,9 +5306,7 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>Laparoskopik cerrahi sınırı?</span><b>&lt;5–6 cm ve invazyon yoksa</b></li>
     <li><span>Bilateral riskte cerrahi tercih?</span><b>Korteks koruyucu adrenalektomi</b></li>
     <li><span>İntraoperatif krizde ajanlar?</span><b>Sodyum nitroprussid, fentolamin, nikardipin</b></li>
-    <li><span>Hangi elektrolit infüzyonu atakları azaltır?</span><b>Magnezyum sülfat</b></li>
     <li><span>Kriz tetikleyen antiemetik?</span><b>Metoklopramid</b></li>
-    <li><span>Tiramin içeren gıdalar?</span><b>Fermente peynir ve şarap</b></li>
     <li><span>Küme 3’ün genleri?</span><b>CSDE1, UBTF::MAML3 füzyonları</b></li>
   </ol>
 
@@ -5744,6 +5733,15 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <div class="kutu inci"><div class="ad">Klinik inci · dört ölçüt “veya”dır</div><p>Kırık, T-skoru, FRAX ve steroid ölçütlerinden <b>herhangi biri</b> tek başına tedavi endikasyonu doğurur; hepsinin birden karşılanması gerekmez.</p></div>
   </div>
 
+  <div class="kutu tuzak"><div class="ad">En sık dört çeldirici</div>
+    <div class="spotlar">
+      <p>“Genç erkek” referans veritabanı — doğrusu genç kadın.</p>
+      <p>Panelde PSA — yoktur.</p>
+      <p>50 yaş altında T-skoru — Z-skoru kullanılır.</p>
+      <p>Denosumabda ilaç tatili — yalnızca bisfosfonatlara özgüdür.</p>
+    </div>
+  </div>
+
   <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>99</b></div>
 </section>
 
@@ -5877,6 +5875,8 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     </div>
   </div>
 
+  <div class="kutu kural"><div class="ad">Altın kural · sınav gecesi</div><p>Erkek osteoporozunda üç sayı yeter: <b>%39</b> (kırık payı), <b>%40–60</b> (sekonder neden), <b>≤−3,5</b> (TRT’ye ajan ekleme eşiği).</p></div>
+
   <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>101</b></div>
 </section>
 
@@ -6009,7 +6009,7 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>Kalça kırığı sonrası mortalite?</span><b>Erkekte 2–3 kat yüksek</b></li>
     <li><span>Rezorpsiyonun ana baskılayıcısı?</span><b>Östrojen</b></li>
     <li><span>Östrojen nasıl üretilir?</span><b>Testosteronun aromatazla dönüşümü</b></li>
-    <li><span>Yıkımın hızlandığı eşikler?</span><b>Östradiol &lt;10–15 pg/mL, testosteron &lt;200 ng/dL</b></li>
+    <li><span>Yıkımın hızlandığı eşikler?</span><b>E2 &lt;10–15 pg/mL · T &lt;200 ng/dL</b></li>
     <li><span>Kadınla temel patofizyolojik fark?</span><b>Ani kesilme değil, kademeli azalma</b></li>
     <li><span>Sekonder neden oranı?</span><b>%40–60</b></li>
     <li><span>En sık iyatrojenik neden?</span><b>Kronik glukokortikoid</b></li>
@@ -6018,20 +6018,20 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>&lt;50 yaşta hangi skor?</span><b>Z-skoru (T-skoru kullanılmaz)</b></li>
     <li><span>Z-skoru eşiği ve anlamı?</span><b>≤−2,0: yaşa göre düşük kemik kütlesi</b></li>
     <li><span>Genç erkekte osteoporoz tanısı için ek şart?</span><b>Frajilite kırığı ya da ağır sekonder risk</b></li>
-    <li><span>DXA taranacak yaş grupları?</span><b>≥70; 50–69 risk faktörlüler; 50 sonrası kırık geçirenler</b></li>
+    <li><span>DXA taranacak yaş grupları?</span><b>≥70 · riskli 50–69 · 50 sonrası kırık</b></li>
     <li><span>Anlamlı boy kaybı?</span><b>Gençliğe göre 4–6 cm, izlemde 2–3 cm</b></li>
     <li><span>Panelde yer almayan test?</span><b>Rutin PSA</b></li>
-    <li><span>Panelde yer alan hormonal testler?</span><b>iPTH, TSH, sabah açlık total testosteron, 25(OH)D</b></li>
+    <li><span>Panelde yer alan hormonal testler?</span><b>iPTH, TSH, sabah testosteron, 25(OH)D</b></li>
     <li><span>Şüpheye göre eklenenler?</span><b>24 saatlik idrar kalsiyumu, doku transglutaminaz antikorları</b></li>
     <li><span>Kalsiyum hedefi?</span><b>50–70 yaş 1000 mg; &gt;70 yaş 1200 mg/gün</b></li>
     <li><span>D vitamini idamesi?</span><b>800–1500 IU/gün</b></li>
-    <li><span>TRT endikasyonu?</span><b>Testosteron &lt;200 ng/dL + semptomlar + kontrendikasyon yok</b></li>
+    <li><span>TRT endikasyonu?</span><b>T &lt;200 ng/dL + semptom, kontrendikasyon yok</b></li>
     <li><span>TRT’ye kemik ajanı ekleme eşikleri?</span><b>T ≤−3,5 ya da T ≤−2,5 + kırık</b></li>
     <li><span>Kemik ajanı ölçütlerinde yer almayan?</span><b>Testosteron düzeyinin mutlak değeri</b></li>
     <li><span>Kırıkla gelen hastada densite şartı?</span><b>Yok: kalça/vertebra kırığında doğrudan tedavi</b></li>
     <li><span>FRAX eşikleri?</span><b>Kalça ≥%3, majör kırık ≥%20</b></li>
     <li><span>Steroid ölçütü?</span><b>&gt;3 ay, prednizon ≥7,5 mg/gün ya da eşdeğeri</b></li>
-    <li><span>Erkekte onaylı ajanlar?</span><b>Alendronat, risedronat, zoledronik asit, denosumab, teriparatid</b></li>
+    <li><span>Erkekte onaylı ajanlar?</span><b>Alendronat, risedronat, zoledronat, denosumab, teriparatid</b></li>
     <li><span>Birinci basamak?</span><b>Oral bisfosfonatlar (alendronat, risedronat)</b></li>
     <li><span>Oral tolere edilemiyorsa?</span><b>Yılda bir 5 mg zoledronik asit</b></li>
     <li><span>Denosumab dozu ve hedefi?</span><b>6 ayda bir 60 mg subkütan; RANKL</b></li>
@@ -6039,24 +6039,12 @@ ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
     <li><span>ADT alan prostat kanserinde?</span><b>Denosumab öncelikli</b></li>
     <li><span>Denosumab kesilince risk?</span><b>Rebound: multipl vertebral kırık</b></li>
     <li><span>Rebounddan korunma?</span><b>Zoledronik asit gibi bisfosfonata ardışık geçiş</b></li>
-    <li><span>Anabolik ajan endikasyonu?</span><b>T ≤−3,0, çoklu vertebral kırık ya da bisfosfonat altında progresyon</b></li>
+    <li><span>Anabolik ajan endikasyonu?</span><b>T ≤−3,0 · çoklu vertebra kırığı · tedavide progresyon</b></li>
     <li><span>Anabolik bitince?</span><b>Gecikmeksizin antirezorptife geçiş</b></li>
-    <li><span>İlaç tatili kime, ne zaman?</span><b>Stabil, düşük-orta riskli oral bisfosfonat hastasında ~5 yıl sonra</b></li>
+    <li><span>İlaç tatili kime, ne zaman?</span><b>Stabil, düşük-orta risk; oral bisfosfonatta ~5 yıl</b></li>
     <li><span>İlaç tatilinin gerekçesi?</span><b>Atipik femur kırığı ve çene osteonekrozu riski</b></li>
     <li><span>Kontrol DXA ne zaman ve nasıl?</span><b>1–2 yıl sonra, aynı cihazda</b></li>
   </ol>
-
-  <div class="iki-sutun">
-    <div class="kutu kural"><div class="ad">Altın kural · sınav gecesi</div><p>Erkek osteoporozunda üç sayı yeter: <b>%39</b> (kırık payı), <b>%40–60</b> (sekonder neden), <b>≤−3,5</b> (TRT’ye ajan ekleme eşiği).</p></div>
-    <div class="kutu tuzak"><div class="ad">En sık dört çeldirici</div>
-      <div class="spotlar">
-        <p>“Genç erkek” referans veritabanı — doğrusu genç kadın.</p>
-        <p>Panelde PSA — yoktur.</p>
-        <p>50 yaş altında T-skoru — Z-skoru kullanılır.</p>
-        <p>Denosumabda ilaç tatili — yalnızca bisfosfonatlara özgüdür.</p>
-      </div>
-    </div>
-  </div>
 
   <div class="folyo"><b>104</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
 </section>
