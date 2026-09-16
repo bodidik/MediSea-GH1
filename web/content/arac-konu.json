@@ -682,6 +682,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "nefroloji/iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
     "nefroloji/membranoz-nefropati-klinik": [
       {
         "slug": "egfr",
@@ -1358,10 +1365,10 @@
     ]
   },
   "olcum": {
-    "konu": 488,
+    "konu": 489,
     "arac": 136,
-    "araciOlanKonu": 101,
+    "araciOlanKonu": 102,
     "konusuOlanArac": 33,
-    "bag": 122
+    "bag": 123
   }
 }

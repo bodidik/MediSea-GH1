@@ -5056,11 +5056,6 @@
    "brans": "journal-club",
    "slug": "sac-tmt-optitrop-lung04-nejm",
    "baslik": "NEJM: EGFR-Mutant KHDAK'de Yeni Standart Adayı Sacituzumab Tirumotecan"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "iga-nefropatisi-mest-c-iskdc",
-   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
   }
  ],
  "journal-club/sac-tmt-optitrop-lung04-nejm": [
@@ -6221,6 +6216,11 @@
  ],
  "nefroloji/iga-nefropatisi-guncel-tedavi": [
   {
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri",
+   "baslik": "İleri Okuma: IgA Nefropatisinde Yeni Nesil B-Hücresi Tedavileri"
+  },
+  {
    "brans": "journal-club",
    "slug": "iptacopan-igan-faz3",
    "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan"
@@ -6232,21 +6232,23 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "iga-nefropatisi-mest-c-iskdc",
-   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "membranoz-nefropati-tedavi-yonetimi",
    "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
   }
  ],
  "nefroloji/iga-nefropatisi-mest-c-iskdc": [
   {
-   "brans": "journal-club",
-   "slug": "iptacopan-igan-faz3",
-   "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan"
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-guncel-tedavi",
+   "baslik": "İleri Okuma: IgA Nefropatisi -Tedavi"
   },
+  {
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri",
+   "baslik": "İleri Okuma: IgA Nefropatisinde Yeni Nesil B-Hücresi Tedavileri"
+  }
+ ],
+ "nefroloji/iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri": [
   {
    "brans": "nefroloji",
    "slug": "iga-nefropatisi-guncel-tedavi",
