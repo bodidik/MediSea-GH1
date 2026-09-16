@@ -303,6 +303,140 @@
       ],
       "zorluk": "zor",
       "kaynak": "Barratt et al. Kidney Int 2024; Mathur et al. J Am Soc Nephrol 2024 (APPLAUSE-IgAN)"
+    },
+    {
+      "id": "s11",
+      "metin": "IgA Nefropatisi (IgAN) tanısı alan 24 yaşındaki erkek hastanın patogenetik süreçleri ve hedefe yönelik tedavi seçenekleri hücresel düzeyde incelenmektedir. Hastalığın başlangıcında mukoza ilişkili lenfoid dokularda (GALT/NALT) gerçekleşen B hücresi aktivasyonunun, sistemik dolaşıma anormal yapılı antikorların salınmasına ve glomerüler immün kompleks birikimine yol açtığı bilinmektedir.\n\nIgA nefropatisinin patogenezini açıklayan \"Dört Vuruş Hipotezi\" (Four-Hit Hypothesis) ve moleküler hedefler ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Hit 1 (1. Vuruş): Distal ileumdaki Peyer plaklarında (GALT) yer alan B hücrelerinin BAFF ve APRIL sitokinleri ile uyarılması sonucu sentezlenen, menteşe bölgesinde galaktoz eksikliği bulunan Galaktoz-Eksik IgA1 (Gd-IgA1) düzeyinin dolaşımda artmasıdır.",
+        "B": "Hit 2 (2. Vuruş): Dolaşımdaki nefrijenik Gd-IgA1 moleküllerinin açığa çıkan terminal N-asetilgalaktozamin (GalNAc) epitoplarına karşı immün sistemin spesifik IgG ve/veya IgA tipi otoantikorlar üretmesidir.",
+        "C": "Hit 3 (3. Vuruş): Nefrijenik Gd-IgA1 moleküllerinin spesifik otoantikorlarla birleşerek dolaşan yüksek molekül ağırlıklı immün kompleksleri (CICs) oluşturmasıdır.",
+        "D": "Hedefe Yönelik Tedaviler: Nefecon (TRF-budesonid) GALT'taki B hücrelerini baskılayarak Hit 1'i hedeflerken; Sibeprenlimab, Atacicept ve İptacopan sırasıyla APRIL, BAFF/APRIL ve Kompleman Faktör B basamaklarına müdahale eder.",
+        "E": "Hit 4 (4. Vuruş): Dolaşan immün komplekslerin mesangiumda birikmesi; öncelikli olarak Klasik Yolak aktivasyonu (C1q birikimi) üzerinden glomerüler inflamasyon yaratır ve C3 birikimi görülmez."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Klasik kompleman yolağının spesifik göstergesi olan C1q birikimi IgAN vakalarının büyük çoğunluğunda negatiftir veya hafiftir. Buna karşın, böbrek biyopsilerinin %90'ından fazlasında mesangiumda IgA ile birlikte C3 birikimi saptanır.",
+      "aciklama_detay": "IgA nefropatisinin Hit 4 (4. Vuruş) basamağında glomerüler hasarı tetikleyen ana kompleman yolları Alternatif Yolak ve Lektin Yolağıdır. Klasik kompleman yolağının spesifik göstergesi olan C1q birikimi IgAN vakalarının büyük çoğunluğunda negatiftir veya hafiftir. Buna karşın, böbrek biyopsilerinin %90'ından fazlasında mesangiumda IgA ile birlikte C3 birikimi saptanır. Bu nedenle Classic pathway / C1q baskınlığı ifadesi ve C3 birikiminin görülmediği iddiası tamamen yanlıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU ifade — Hit 1, barsak ilişkili lenfoid dokuda (GALT) Toll-like reseptörlerin (TLR) aktivasyonu ve BAFF (B-cell activating factor) ile APRIL (A proliferation-inducing ligand) aşırı salınımı sonucu B hücrelerinin sınıf değişimi yapması ve menteşe (hinge) O-glikan zincirlerinde galaktoz eksikliği olan Gd-IgA1 üretmesi sürecidir.",
+        "B": "DOGRU ifade — Hit 2, galaktozu eksik menteşe bölgesinde açığa çıkan terminal N-asetilgalaktozamin (GalNAc) artıklarının vücut tarafından \"yabancı antijen\" olarak algılanarak bunlara karşı spesifik IgG (veya IgA) otoantikorlarının oluşturulmasıdır.",
+        "C": "DOGRU ifade — Hit 3, Gd-IgA1 antijenleri ile anti-Gd-IgA1 otoantikorlarının birleşerek dolaşımda nefrijenik potansiyele sahip immün kompleksler (CIC) meydana getirmesidir.",
+        "D": "DOGRU ifade — Modern tedavi ajanları patogenezin spesifik basamaklarını hedefler:\n• Nefecon (TRF-budesonid): Distal ileumda Peyer plaklarını hedef alarak lokal B hücre aktivasyonunu baskılar ve Gd-IgA1 sentezini (Hit 1) azaltır.\n• Sibeprenlimab / Zigakibart: Monoklonal anti-APRIL antikorlarıdır.\n• Atacicept / Telitacicept: TACI-Fc füzyon proteinleri olup hem BAFF hem APRIL sinyallerini bloke ederek patojenik B/plazma hücresi sağkalımını durdurur.\n• İptacopan: Alternatif kompleman yolağındaki Faktör B'yi inhibe ederek Hit 4 inflamasyonunu engeller.",
+        "E": "YANLIS ifade (doğru yanıt) — Klasik kompleman yolağının spesifik göstergesi olan C1q birikimi IgAN vakalarının büyük çoğunluğunda negatiftir veya hafiftir. Buna karşın, böbrek biyopsilerinin %90'ından fazlasında mesangiumda IgA ile birlikte C3 birikimi saptanır."
+      },
+      "etiketler": [
+        "Moleküler Patogenez",
+        "Dört Vuruş Hipotezi",
+        "Hücresel Hedefler"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s12",
+      "metin": "Persistent persistan mikroskopik hematüri ve 1.8 g/gün proteinürisi bulunan 30 yaşındaki kadın hastaya yapılan böbrek biyopsisinde ışık mikroskopisinde şu bulgular saptanmıştır:\n• Glomerüllerin %65'inde mesangiyal matriks ve hücre artışı (mesangiyal alanda >4 hücre/alan).\n• Glomerüler kapiller lümenlerde endokapillar tıkanmaya yol açan hücresel proliferasyon (3 glomerülde).\n• Glomerüler yumağın %30'unu tutan segmental skleroz ve Bowman kapsülüne yapışıklık.\n• Tübüler atrofi ve interstisyel fibrozis alanı korteksin %15'ini kapsamaktadır.\n• Biyopsi kesitlerindeki glomerüllerin %30'unda hücresel/fibroselüler kresent (yarımay) izlenmiştir.\n\nHastanın Oxford MEST-C skorlaması ve lezyonların prognostik değerleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Hastanın MEST-C skoru M1, E1, S1, T0, C2 olarak derecelendirilir ve T skoru (Tübülointerstisyel fibrozis) renal kitle kaybını ve SDBY gidişatını öngörmede çoklu değişkenli analizlerde en güçlü ve tutarlı bağımsız faktördür.",
+        "B": "E1 (Endokapiller proliferasyon) varlığı, immünsüpresif tedavi alsa da almasa da böbrek yetmezliğine gidişte her koşulda T skoru kadar geri dönüşsüz kronik skarı temsil eder.",
+        "C": "C2 skoru (%25'ten fazla glomerülde kresent), hastaya aktif immünsüpresif tedavi verilmesi durumunda prognoz üzerindeki olumsuz etkisini tamamen kaybeder.",
+        "D": "KDIGO 2021/2025 Kılavuzları, Oxford MEST-C skorunun tek başına immünsüpresif tedavi başlanması kararı için prospektif klinik çalışmalarda doğrulanmış ana yönlendirici ölçüt olduğunu bildirmektedir.",
+        "E": "S1 (Segmental glomerüloskleroz) lezyonu biyopsilerde tamamen homojendir; podosit hipertrofisi veya \"tip lesion\" varlığı immünsüpresif yanıtı değiştirmeyen pasif bir bulgudur."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Literatürde ve meta-analizlerde böbrek fonksiyonlarının kaybı (eGFR'de %50 düşüş veya ESKD) ile en tutarlı ve en güçlü bağımsız korelasyon gösteren MEST-C parametresi T skorudur (Tübülointerstisyel fibrozis ve atrofi).",
+      "aciklama_detay": "Skorlama Değerlendirmesi:\n• Mesangiyal proliferasyon >%50 glomerülde olduğu için M1.\n• Kapiller lümeni daraltan hücresel proliferasyon mevcut olduğu için E1.\n• Segmental skleroz / kapsüler yapışıklık olduğu için S1.\n• Tübülointerstisyel fibrozis/atrofi <%25 olduğu için T0.\n• Kresent varlığı glomerüllerin %30'unda (>%25) olduğu için C2.\n\nPrognostik Güç: Literatürde ve meta-analizlerde böbrek fonksiyonlarının kaybı (eGFR'de %50 düşüş veya ESKD) ile en tutarlı ve en güçlü bağımsız korelasyon gösteren MEST-C parametresi T skorudur (Tübülointerstisyel fibrozis ve atrofi).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Literatürde ve meta-analizlerde böbrek fonksiyonlarının kaybı (eGFR'de %50 düşüş veya ESKD) ile en tutarlı ve en güçlü bağımsız korelasyon gösteren MEST-C parametresi T skorudur (Tübülointerstisyel fibrozis ve atrofi).",
+        "B": "YANLIS — E1 (Endokapiller proliferasyon), immünsüpresif tedavi almayan hastalarda kötü prognozla ilişkilidir; ancak immünsüpresif tedavi alan grupta bu olumsuz ilişki ortadan kalkar. Bu durum E1 lezyonunun tedaviye yanıt verebilen, aktif ve geri döndürülebilir (reversible) bir inflamatuar süreç olduğunu gösterir.",
+        "C": "YANLIS — Kresent varlığında C1 skoru (%1-24) tedavi almayanlarda risk yaratırken; C2 skoru (glomerüllerin >%25'inde kresent varlığı), hastanın immünsüpresif tedavi alıp almadığına bakılmaksızın bağımsız bir şekilde kötü böbrek sağkalımını öngörür.",
+        "D": "YANLIS — KDIGO kılavuzları, Oxford MEST-C skorunun veya Uluslararası IgAN Tahmin Aracı'nın prospektif klinik çalışmalarda tedavi kararlarını yönlendirmek amacıyla dizayn edilmediğini belirterek, bu skorların tek başına immünsüpresyon başlama kararı için kullanılmasını açıkça önermemektedir (discourage eder).",
+        "E": "YANLIS — S1 lezyonu alt tiplendirildiğinde, eşlik eden podosit hipertrofisi veya \"tip lesion\" varlığı olan hastaların ciddi podosit hasarına sahip olduğu ve bu hastaların immünsüpresyondan (örneğin glukokortikoidlerden) belirgin yarar gördüğü gösterilmiştir."
+      },
+      "etiketler": [
+        "Histopatoloji",
+        "Oxford MEST-C Skorlaması",
+        "Prognostik Göstergeler"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s13",
+      "metin": "29 yaşındaki erkek hastaya 8 ay önce biyopsi ile primer IgA Nefropatisi tanısı konmuştur (MEST skoru: M1 E0 S0 T0 C0). Hastaya tanı anında yaşam tarzı değişiklikleri, tuz kısıtlaması, maksimum tolere edilebilir dozda ARB (Valsartan 320 mg/gün) ve SGLT2 inhibitörü (Dapagliflozin 10 mg/gün) başlanmıştır. 8 aylık uyumlu tedaviye rağmen poliklinik kontrolünde:\n• Kan Basıncı: 116/72 mmHg\n• eGFR: 72 mL/min/1.73m² (Başlangıç: 75 mL/min/1.73m²)\n• 24 Saatlik İdrar Proteinürisi: 1.6 g/gün (Başlangıç: 1.8 g/gün)\n• İdrar Mikroskopisi: Her sahada 15-20 dairesi bozuk (dismorfik) eritrosit.\n\nGüncel klinik çalışma verileri (DAPA-CKD, PROTECT, NefIgArd, TESTING, APPLAUSE-IgAN) ve KDIGO önerileri ışığında bu hastanın yönetimi için en uygun yaklaşım aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "İdrar proteinürisi 3.5 g/gün altında olduğu için destekleyici bakım yeterlidir; ek bir spesifik tedavi verilmemeli ve hasta takipten çıkarılmalıdır.",
+        "B": "Yüksek doz İntravenöz Siklofosfamid ve Plazmaferez derhal kombine edilmelidir.",
+        "C": "TESTING çalışması protokolü gereği, hastaya profilaksi verilmeksizin 1 mg/kg/gün sistemik yüksek doz oral prednizolon başlanmalı ve 6 ay kesintisiz sürdürülmelidir.",
+        "D": "DAPA-CKD ve PROTECT çalışmaları nefron kaybına ikincil süreçleri baskılasa da, immünolojik odaklı riski devam eden bu hastada patojene ve hastalığa spesifik TRF-Budesonid (Nefecon), Sparsentan (DEARA) veya klinik çalışma kapsamında B hücresi/kompleman blokerleri (ör. İptacopan, Sibeprenlimab) tedaviye eklenmelidir.",
+        "E": "SGLT2 inhibitörleri IgA nefropatisinde proteinüriyi düşürmediği için Dapagliflozin kesilmeli, yerine Rituksimab monoterapisi başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Optimal destekleyici bakıma rağmen (3-6 ay süresince) proteinürisi >0.75 - 1 g/gün seyreden ve eGFR kaybı riski taşıyan hastalarda hedefe yönelik spesifik tedaviler indikasyon alır.",
+      "aciklama_detay": "Modern IgAN tedavi konsepti iki ana sütun üzerinden yürütülmektedir:\n1. Nefron Kaybını ve Hemodinamik Stresi Engelleme: Maksimum RAS blokajı + SGLT2i (Dapagliflozin/Empagliflozin) + Çift Endotelin/Anjiyotensin reseptör antagonisti (Sparsentan - DEARA) veya Atrasentan.\n2. İmmünolojik / Patojenik Süreci Durdurma: Optimal destekleyici bakıma rağmen (3-6 ay süresince) proteinürisi >0.75 - 1 g/gün seyreden ve eGFR kaybı riski taşıyan hastalarda hedefe yönelik spesifik tedaviler indikasyon alır:\n• TRF-Budesonid (Nefecon): NefIgArd çalışmasında 9 aylık kullanım ile 2 yıllık eGFR kaybını anlamlı ölçüde yavaşlatmıştır (+5.05 mL/dk korunma).\n• Sparsentan (PROTECT Çalışması): İrbesartana kıyasla proteinüride ekstra %40 düşüş sağlamış ve kronik eGFR eğimini korumuştur.\n• İptacopan (APPLAUSE-IgAN Çalışması): Alternatif kompleman Faktör B inhibitörü olarak proteinüride %38.3 düşüş ve eGFR koruması göstermiştir.\n• Sibeprenlimab / Atacicept: APRIL/BAFF aksını hedefleyen yeni nesil antikor/füzyon proteinleridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Eski anlayışta >1 g/gün proteinüri sınır kabul edilse de, güncel kohort verileri zaman ağırlıklı proteinürisi 0.44-0.88 g/gün olan hastaların dahi %30'unun 10 yıl içinde ESKD'ye ilerlediğini göstermiştir. 1.6 g/gün proteinüri yüksek riskli kabul edilir ve ek tedavi gerektirir.",
+        "B": "YANLIS — Siklofosfamid ve plazmaferez kombinasyonu rutin IgAN'de kullanılmaz; yalnızca Rapidly Progressive Glomerulonephritis (RPGN / Kresentik IgAN) gibi kriz tablolarında tipleşir.",
+        "C": "YANLIS — TESTING çalışmasının ilk evresinde yüksek doz metilprednizolon (0.8 mg/kg/gün) verilmiş ancak ciddi enfeksiyonlar (Pnömosistis jirovecii dâhil) ve ölümler nedeniyle çalışma durdurulmuştur. Çalışmanın ikinci evresinde azaltılmış doz steroid (0.4 mg/kg/gün) ile birlikte mütlaka P. jirovecii profilaksisi (Ko-trimoksazol) verilerek güvenlilik sağlanabilmiştir. Profilaksisiz yüksek doz steroid vermek malpraktis düzeyinde tehlikelidir.",
+        "D": "DOGRU — Optimal destekleyici bakıma rağmen (3-6 ay süresince) proteinürisi >0.75 - 1 g/gün seyreden ve eGFR kaybı riski taşıyan hastalarda hedefe yönelik spesifik tedaviler indikasyon alır.",
+        "E": "YANLIS — SGLT2 inhibitörleri (DAPA-CKD IgAN alt grubunda) renal kompozit sonlanım riskini %71 oranında azaltmıştır. Ayrıca Rituksimab (anti-CD20), IgAN'de yapılan randomize kontrollü çalışmada (Lafayette et al.) proteinüri ve eGFR üzerinde hiçbir fayda sağlamamıştır (B hücreleri tükenirken plazma hücreleri Gd-IgA1 üretmeye devam eder)."
+      },
+      "etiketler": [
+        "Tedavi Paradigmaları",
+        "Klinik Çalışmalar",
+        "KDIGO Kılavuz Yaklaşımları"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s14",
+      "metin": "38 yaşında erkek hastaya, primer IgA nefropatisine bağlı SDBY nedeniyle canlı akraba dışı vericiden böbrek nakli yapılmıştır. Nakilden 3.5 yıl sonra hastanın rutin takiplerinde mikroskopik hematüri ve idrar protein/kreatinin oranında 0.9 g/g yükselme tespit ediliyor. Serum kreatinin değeri 1.1 mg/dL'den 1.5 mg/dL'ye yükseliyor. Yapılan transplant böbrek biyopsisinde immünofloresan incelemede mesangiumda baskın granüler IgA ve C3 birikimi görülüyor.\n\nRenal transplantasyon hastalarında rekürren (tekrarlayan) IgA Nefropatisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Transplant böbrekte IgA birikimi şeklinde histolojik rekürrens oranı son derece düşüktür (<%5) ve nakil böbrek kaybına hiçbir zaman yol açmaz.",
+        "B": "Rekürren IgAN tanısı biyopsi yapılmaksızın sadece idrarda hematüri görülmesiyle kesinleştirilir ve biyopsi yapılması kontrendikedir.",
+        "C": "Canlı akraba vericilerden yapılan nakillerde HLA tam uyumu (0 mismatch) olması rekürren IgAN riskini tamamen ortadan kaldırır.",
+        "D": "Transplant böbrek biyopsisinde Oxford MEST-C skorlaması uygulanmaz; MEST-C skorunun nakil böbrek sağkalımı ile hiçbir korelasyonu yoktur.",
+        "E": "Transplantasyon anında serumda ölçülen yüksek düzeydeki Gd-IgA1-spesifik IgG otoantikor seviyeleri, nakil sonrası nüks gelişimi için bağımsız bir risk faktörüdür."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Çalışmalar (örneğin Berthoux ve ark.), nakil öncesinde veya transplantasyon anında alıcının serumunda ölçülen Gd-IgA1-spesifik IgG otoantikor düzeylerinin yüksek olmasının, transplant böbrekte IgAN rekürrensi gelişme riskini yaklaşık 3 kat artırdığını (RR: 2.96) göstermiştir.",
+      "aciklama_detay": "Çalışmalar (örneğin Berthoux ve ark.), nakil öncesinde veya transplantasyon anında alıcının serumunda ölçülen Gd-IgA1-spesifik IgG otoantikor düzeylerinin yüksek olmasının, transplant böbrekte IgAN rekürrensi gelişme riskini yaklaşık 3 kat artırdığını (RR: 2.96) göstermiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Transplantasyon sonrası histolojik rekürrens %50-60 gibi oldukça yüksek oranlarda görülür. Uzun dönem takip verilerine (örneğin TANGO kohortu) göre rekürren IgAN, 10-15 yıllık süreçte greft kayıplarının %7-10 veya daha fazlasından sorumludur ve benign bir tablo değildir.",
+        "B": "YANLIS — Rekürren IgAN tanısının altın standardı transplant böbrek biyopsisidir. İdrarda hematüri saptanması tek başına yeterli değildir; cerrahi, ürolojik nedenler veya rejeksiyonlar da hematüri yapabileceği için ayırıcı tanı için biyopsi şarttır.",
+        "C": "YANLIS — Akraba vericilerden yapılan nakillerde ve özellikle 0 HLA mismatch olan durumlarda rekürrens riski azalmaz, aksine bazı serilerde artmış veya benzer bulunmuştur. Bunun nedeni alıcı ile verici arasındaki ortak genetik yatkınlık ve immünolojik moleküler benzerliklerdir. Canlı akraba nakli kontrendike değildir ancak rekürrens açısından yakından izlenmelidir.",
+        "D": "YANLIS — Nükle edilmiş veya güncellenmiş Oxford MEST-C sınıflandırması transplant böbrek biyopsilerinde de geçerlidir; yüksek M, S, T ve C skorları greft kaybı ve progresyon ile güçlü şekilde koreledir.",
+        "E": "DOGRU — Çalışmalar (örneğin Berthoux ve ark.), nakil öncesinde veya transplantasyon anında alıcının serumunda ölçülen Gd-IgA1-spesifik IgG otoantikor düzeylerinin yüksek olmasının, transplant böbrekte IgAN rekürrensi gelişme riskini yaklaşık 3 kat artırdığını (RR: 2.96) göstermiştir."
+      },
+      "etiketler": [
+        "Renal Transplantasyon",
+        "IgAN Rekürrensi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s15",
+      "metin": "62 yaşında tip 2 diyabet ve kronik Staphylococcus aureus osteomiyeliti öyküsü olan erkek hasta; bacaklarda ödem, makroskopik hematüri ve hipertansiyon ile başvuruyor.\n• Serum Kreatinin: 3.2 mg/dL (1 ay önce: 1.0 mg/dL)\n• Serum C3 Düzeyi: 42 mg/dL (Belirgin Düşük / Hipokomplementemi)\n• Serum C4 Düzeyi: Normal\nBöbrek biyopsisinde ışık mikroskopisinde yaygın nötrofil infiltrasyonu içeren endokapiller proliferasyon; immünofloresan incelemede glomerüler kapiller duvar boyunca ve mesangiumda kaba granüler baskın IgA ve C3 boyanması; elektron mikroskopisinde ise subepitelyal yerleşimli dev \"hörgüç\" (hump-like) elektron-yoğun birikimler saptanıyor.\n\nBu hastadaki tabloyu (Stafilokok İlişkili IgA-Dominant Enfeksiyon Sonrası Glomerülonefrit) primer IgA Nefropatisinden (IgAN) ayıran en karakteristik özellikler ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Primer IgAN hastalarında serum C3 düzeyleri hemen her zaman belirgin düşüktür (hipokomplementemi), enfeksiyon sonrası GN'de ise C3 her zaman normaldir.",
+        "B": "Primer IgAN'de elektron mikroskopisinde karakteristik ana bulgu subepitelyal dev \"hump\" birikimleridir.",
+        "C": "Stafilokok ilişkili IgA-dominant enfeksiyon sonrası GN; yaşlı/diyabetik hastalarda görülmesi, hipokomplementemi varlığı, nötrofilik kapiller tutulum ve subepitelyal hörgüç (hump) birikimleri ile primer IgAN'den ayrılır.",
+        "D": "IgA Vasküliti (IgAV / Henoch-Schönlein), böbrek biyopsisindeki ışık ve immünofloresan mikroskopisi bulguları ile primer IgAN'den %100 kesinlikle ayırt edilebilir.",
+        "E": "Monoklonal IgA birikimli proliferatif glomerülonefrit (PGNMID-IgA) vakalarında biyopside poliklonal kappa ve lambda hafif zincir boyanması izlenir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "IgA-PIGN'de serum C3 düzeyi düşüktür (hipokomplementemi), primer IgAN'de ise serum C3 düzeyi neredeyse daima normaldir. IgA-PIGN'de subepitelyal dev hörgüçler (humps) görülürken, primer IgAN'de birikimler esas olarak mesangiyal alandadır.",
+      "aciklama_detay": "İkincil IgA Dominant Enfeksiyon Sonrası GN (IgA-PIGN): Özellikle yaşlı, diyabetik veya kronik stafilokokal (örneğin osteomiyelit, endokardit, derin apse) enfeksiyonu olan bireylerde gelişir.\n\nKarakteristik Farkları:\n1. Kompleman: IgA-PIGN'de serum C3 düzeyi düşüktür (hipokomplementemi), primer IgAN'de ise serum C3 düzeyi neredeyse daima normaldir.\n2. Histoloji: IgA-PIGN'de belirgin nötrofil lökosit infiltrasyonu ve kapiller duvar boyunca boyanma vardır.\n3. Elektron Mikroskopisi: IgA-PIGN'de subepitelyal dev hörgüçler (humps) görülürken, primer IgAN'de birikimler esas olarak mesangiyal alandadır.\n\nUzmanlık Sınavları İçin \"Board Gold\" Özet Tablosu (Özellik / Parametre — Primer IgA Nefropatisi (IgAN) — Stafilokok İlişkili IgA-PIGN — IgA Vasküliti (IgAV) Nefriti):\n• Klinik Sunum — Sinfarenjitik hematüri, asemptomatik hematüri/proteinüri — Yaşlı/diyabetik hastada akut böbrek hasarı, ödem — Çocuk/gençte purpura, artralji, GI ağrı + hematüri\n• Serum C3 Düzeyi — Normal — Düşük (Hipokomplementemi) — Normal\n• EM Birikim Yeri — Baskın Mesangiyal — Subepitelyal Dev Hörgüçler (Humps) — Baskın Mesangiyal (IgAN ile aynı)\n• En Güçlü Histolojik Prognostik Gösterge — Oxford T Skoru (Tübülointerstisyel fibrozis) — Enfeksiyonun kontrolü ve doku hasarı — Kresent Oranı (ISKDC evrelemesi)\n• Spesifik İmmünolojik Ajanlar — Nefecon, Sparsentan, İptacopan, APRIL/BAFF blokerleri — Antibiyoterapi + Destekleyici — Steroid / İmmünsüpresifler (Şiddetli nefritte)",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İfadenin tam tersi doğrudur. Primer IgAN'de serum C3 düzeyi genellikle normaldir; enfeksiyon sonrası GN'de ise C3 düşüktür.",
+        "B": "YANLIS — Primer IgAN'de elektron mikroskopik birikimler mesangial alana (mesangial matrix) sınırlıdır. Subepitelyal hörgüçler (humps) post-streptokokal veya stafilokokal post-enfeksiyöz GN'nin ayırıcı özelliğidir.",
+        "C": "DOGRU — IgA-PIGN'de serum C3 düzeyi düşüktür (hipokomplementemi), primer IgAN'de ise serum C3 düzeyi neredeyse daima normaldir. IgA-PIGN'de subepitelyal dev hörgüçler (humps) görülürken, primer IgAN'de birikimler esas olarak mesangiyal alandadır.",
+        "D": "YANLIS — IgA Vasküliti (IgAV) nefriti ile primer IgAN'in böbrek biyopsisi bulguları (ışık, İF ve EM) birbirinin tamamen aynısıdır ve histolojik olarak ayırt edilemezler. Ayırıcı tanı renal biyopsi ile değil, ekstrarenal sistemik bulguların (palpabl purpura, artralji, karın ağrısı) varlığı ile konur.",
+        "E": "YANLIS — Monoklonal IgA birikimli PGNMID tablosunda boyanma poliklonal değil, monotiptiktir (sadece IgA-kappa veya sadece IgA-lambda kısıtlılığı)."
+      },
+      "etiketler": [
+        "IgA Birikimli Glomerülopatiler",
+        "İkincil Nedenler",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
