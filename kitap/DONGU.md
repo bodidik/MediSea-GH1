@@ -487,3 +487,16 @@ Kaynak tutarsızlıkları:
 - **Endokrin dosyasında `ol.tekrar` stili hiç yoktu.** s.80, 92 ve 104'teki tekrar listeleri iki sütunlu düzen yerine düz liste olarak basılıyordu; bu yüzden sayfalar kısa ölçülmüş ve üzerlerine fazladan içerik eklenmişti (s.80 ve 92 "Kırk soruda" başlığına rağmen **48 soru**, s.104 fazladan iki kutu). Stil eklenince üç sayfa +41…+49 mm taştı. Düzeltme: s.80 ve 92'den en ayrıntılı 8'er soru çıkarıldı (başlıkla uyumlu 40), s.104'ün iki kutusu s.99 ve s.101'e taşındı, uzun cevaplar kısaltıldı. Stil onkoloji dosyasına da eklendi. **104 sayfanın hiçbirinde taşma yok.**
   Çıkarılan sorular — s.80: IgG1 alt sınıfı, Hashimoto kanlanması, biyotin 48 saat, iyot 1 saat, Lugol, MMI–PTU dönüşümü, yaşlıda MMI dozu, pediatrik relaps %68. s.92: mikrofeokromositoma, insidans, paroksizm süresi, ayakta eşikler, MIBG'nin yeri, maternal damgalama, magnezyum sülfat, tiramin. (Hepsinin bilgisi kendi sayfalarında duruyor.)
 - **Küçük kutu (`.bw`) içindeki kalın vurgular başlık gibi basılıyordu** (`.bw b` kuralı içteki `<b>`'yi de büyük harf blok yapıyordu; ör. s.16'da "YA DA", "HER" ayrı satır). Dokuz bölüm dosyasına `.bw span b` satır içi kuralı eklendi; etkilenen yerler endokrin 14, onkoloji 18, enfeksiyon 9, hematoloji 6, nefroloji 1. Kural yalnızca yüksekliği azaltır; onkoloji yeniden ölçüldü, taşma yok.
+
+---
+
+### 16 Eylül · IgAN s.18 eki (içerik oturumu, döngü dışı)
+
+Açık siteye yeni ileri okuma sayfası girdi: `nefroloji/iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri` (parent `iga-nefropatisi-berger`). Kitabın IgAN kısmında eksik kalan dört nokta **ekleme olarak** s.18 "Yeni nesil ajanlar"a kondu; mevcut satırlar yeniden yazılmadı:
+
+- Anti-CD38 satırına bortezomib (proteazom inhibitörü).
+- Yeni blok **BAFF/APRIL reseptör ağı** (BAFF-R · TACI · BCMA); BAFF-R satırında seçici anti-APRIL farkı (IgG ve aşı yanıtı korunur).
+- "Üç sınıfı karıştırma" listesine 4. madde: rituksimab tuzağı (uzun ömürlü plazma hücreleri CD20 taşımaz).
+- Kanıt tablosunda APRIL/BAFF, anti-CD38 satırına çalışma adları (ENVISION, VISIONARY, BEYOND · ORIGIN, RUBY-3 · IGNAZ).
+
+Ölçüm: ilk denemede ayrı Tuzak kutusu + spot satırıyla s.18 **15,9 mm taştı**; kutu listeye, spot tabloya alındı → **3,9 mm boş**, 50 sayfanın hiçbirinde taşma yok. Baskı önizlemesi (`--sayfa 18-18`) temiz.
