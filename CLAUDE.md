@@ -677,6 +677,7 @@ Ayrıntısı arşivde; burada tanıma imzası var.
 | iki sekme, iki kaydırma çubuğu | `clientWidth` 1265 ↔ 1280 → canlı↔yerel karşılaştırması 15px kayar; **nötr belgeyle kalibre et** |
 | `scrollHeight` yüksekliğe de bağlı | görünüme kilitli `main` varsa iki boyutu birden sabitle |
 | sekme öykünürken iframe içinde ölçme | çöp geometri |
+| iframe'de 320px taşma ölçümü | iframe'in klasik kaydırma çubuğu 15px yer → sayfaya **305px** kalır, sahte taşma; gerçek pencerede (`resize_window`) ölç ya da önce `documentElement.clientWidth` oku |
 | pano yazma / `<style>` enjeksiyonu | pano çalışmıyor; `<style>` **artık çalışıyor** (eski kayıt çürütüldü) |
 | kapalı `<details>` içinde görünürlük | `getBoundingClientRect` son kutuyu döndürür — `el.checkVisibility()` |
 
@@ -2142,3 +2143,20 @@ kimin olduğunu `git status` söyler, `git add web` söylemez.
 **3. Sayı bayatlamıştı.** Üç yeni gastroenteroloji konusu geldi; uygulamanın
 kendi sayacı **433** diyor (belgede 430 yazıyordu), site haritası 585 → 588.
 Tablo güncellendi — sayı yine ölçümden alındı, kopyalanmadı.
+
+---
+
+## Başlık kuralı ve etiket sızıntısı onarıcısı (16 Eylül 2026)
+
+Ağustos'ta main'e girmemiş iki dal güncel main üzerinde yeniden uygulandı ve ölçüldü.
+
+| değişiklik | ölçüt | önce | sonra |
+|---|---|---|---|
+| **Serif başlık okuma alanına daraltıldı** (`globals.css`, `:where(.prose,[data-readable])`) | 8 açık sayfada okuma alanı DIŞINDA serif h2–h6 | **63** | **0** |
+| | okuma alanı başlıkları (serif · boşluk) | 14 · 24/20px | 14 · 24/20px (aynı) |
+| | sayfa yüksekliği (arayüz etiketinin 24px boşluğu kalktı) | — | hematoloji −315 · tools −184 · konu −80px; ekranda düzen sağlam |
+| **`htmlKapat`** (`lib/icerik-html.ts`, konu sayfasında ham içeriğe) | 2436 bölüm, DOMParser ile kap dışına sızan biçim ögesi | 1 bölüm | **0** |
+| | kap içi metin (vurgu ofsetleri) | — | **0 fark** |
+| | negatif kontrol: kanca kapalı, canlı `miyeloproliferatif` | **24 kalın öge** kap dışında | kanca açık: 0 |
+
+**Dalın onarıcısı olduğu gibi YETMİYORDU:** `<p><strong>a</p>` biçimini (biçim ögesi üst etiketin kapanışıyla örtük kapanıyor) görmüyordu; bugünkü tek sızıntı tam da buydu, onarıcıdan sonra da sızıyordu (1 → 1). Kapanış dalı düzeltildi; 4 sızan tohum 0'a indi, 3 temiz tohum (dengeli · blok bağlantı · tablo) değişmedi. Dalın koyu kart listesine `bg-rose-900/950` ekleyen kısmı zaten main'deydi, tekrarlanmadı.

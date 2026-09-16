@@ -34,8 +34,35 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Başlıklar */
-h1, h2, h3 {
+/* Başlıklar
+
+   Yazı tipi ve dikey boşluk OKUMA ALANINA daraltıldı. Boyut ve ağırlık zaten
+   Tailwind sınıflarından geliyordu; ezilmeyen tek şey yazı tipi ve boşluktu.
+
+   Ölçüldü (5 açık sayfa, yerel dev): 81 başlığın 81'i Merriweather ile ve
+   24px üst boşlukla basılıyordu, oysa 70'i `text-xs` / `text-[9px]` /
+   `text-[10.5px]` gibi sınıflar taşıyan ARAYÜZ ETİKETİ — okuma başlığı değil.
+   9px'lik bir Merriweather etiket çevresindeki Inter arayüzle uyumsuz;
+   üstelik 24px üst boşluk flex satırlarında hizayı kaydırıyordu.
+
+   `h1` BİLEREK kapsam dışı. Sayfa başlığı (konu adı, araç adı — 181 tane)
+   okuma alanının DIŞINDA duruyor: konu detayında `[data-readable]` sarmalayıcı
+   `<h1>`'den sonra başlıyor. Kural h1'i de kapsasaydı bütün sayfa başlıkları
+   Inter'e dönerdi — bu ayrı bir tasarım kararı. Flag'lenen 70 etiketin
+   tamamı h2-h6 seviyesinde.
+
+   Seçiciler `:where()` ile sarıldı, çünkü ÖZGÜLLÜK burada iki yönlü kısıtlı:
+   - Tailwind preflight `h1..h6 { margin: 0 }` diyor, özgüllüğü (0,0,1).
+     Kural bunun ALTINDA kalırsa boşluk hiç uygulanmaz.
+   - Ama `mb-5` gibi yardımcı sınıflar (0,1,0) KAZANMALI; konu sayfasındaki
+     içerik başlıkları boşluğunu tam olarak böyle veriyor (ölçüldü: 20px).
+   `:where(...)` özgüllüğe 0 katar, `:is(h2, h3)` (0,0,1) verir — toplam
+   (0,0,1), yani preflight'ı geçer, yardımcı sınıfa yenilir. İkisi de sağlanır.
+
+   Aynı sebeple eski `.prose h1, .prose h2, .prose h3` kopyası kaldırıldı:
+   (0,1,1) özgüllüğüyle `font-sans` kaçış kapısını da eziyordu ve bu kural
+   onun işini zaten yapıyor. */
+h1 {
   font-family: var(--font-serif);
   font-weight: 700;
   line-height: 1.25;
@@ -43,10 +70,24 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
+h2, h3 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 h4, h5, h6 {
-  font-family: var(--font-serif);
   font-weight: 400;
   line-height: 1.4;
+}
+
+:where(.prose, [data-readable]) :is(h2, h3) {
+  font-family: var(--font-serif);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+:where(.prose, [data-readable]) :is(h4, h5, h6) {
+  font-family: var(--font-serif);
   margin-top: 1rem;
   margin-bottom: 0.75rem;
 }
@@ -128,8 +169,13 @@ button {
   line-height: 1.7;
 }
 
+/* Yalnızca AĞIRLIK. Yazı tipi bildirimi buradan alınıp yukarıdaki okuma alanı
+   kuralına taşındı, ama ağırlık burada kalmak zorunda: Tailwind typography
+   eklentisi `.prose :where(h1)` için 800, `:where(h3)` için 600 veriyor ve
+   (0,1,0) özgüllüğüyle daha düşük bir kuralı yener. Bildirim silinseydi
+   premium `.prose` yüzeylerindeki başlık ağırlıkları sessizce kayardı —
+   bu turun konusu yazı tipi ve boşluktu, ağırlık değil. */
 .prose h1, .prose h2, .prose h3 {
-  font-family: var(--font-serif);
   font-weight: 700;
 }
 
