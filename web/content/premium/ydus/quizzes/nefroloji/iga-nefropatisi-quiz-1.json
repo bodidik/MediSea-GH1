@@ -9,18 +9,18 @@
       "metin": "IgA nefropatisi patogenezinde 'Dört Vuruş Hipotezi' araştırılıyor. Bir hastanın serumunda IgA1 molekülünün menteşe (hinge) bölgesindeki O-glikan zincirlerinde galaktoz eksikliği saptanıyor.\n\nBu bulgu hipotezin hangi aşamasını temsil eder ve kaynağı nedir?",
       "secenekler": {
         "A": "Vuruş 4 — glomerüler birikim; kaynağı böbrek mesangiyal hücreleridir.",
-        "B": "Vuruş 1 — patojenik Gd-IgA1 (galaktoz eksikliği olan IgA1) üretimi; mukozal kaynaklıdır (özellikle GALT ve NALT).",
-        "C": "Vuruş 2 — otoantikor gelişimi; kaynağı dalak germinal merkezleridir.",
+        "B": "Vuruş 2 — otoantikor gelişimi; kaynağı dalak germinal merkezleridir.",
+        "C": "Vuruş 1 — patojenik Gd-IgA1 (galaktoz eksikliği olan IgA1) üretimi; mukozal kaynaklıdır (özellikle GALT ve NALT).",
         "D": "Vuruş 3 — immün kompleks oluşumu; kaynağı karaciğer Kupffer hücreleridir.",
         "E": "Bu bulgu dört vuruş hipotezinin bir parçası değildir, ayrı bir patoloji olarak değerlendirilmelidir."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Galaktoz eksikliği olan IgA1 (Gd-IgA1) üretimi Vuruş 1'dir; mukozal lenfoid dokulardan (GALT, NALT) kaynaklanır. Bu patogenezin başlangıç noktasıdır.",
       "aciklama_detay": "Dört Vuruş Hipotezinin ilk aşamasında (Vuruş 1), genetik, epigenetik ve mukozal çevresel faktörlerin (mikrobiyota vb.) etkisiyle IgA1'in menteşe bölgesindeki O-glikan zincirlerinde galaktoz eksikliği oluşur. Bu şekilde ortaya çıkan galaktoz eksikliği olan IgA1 (Gd-IgA1) molekülleri dolaşımda artar ve mukozal kaynaklıdır — özellikle bağırsak ilişkili lenfoid doku (GALT) ve nazofarinks ilişkili lenfoid doku (NALT). Sonraki aşamalarda (Vuruş 2: otoantikor gelişimi, Vuruş 3: immün kompleks oluşumu, Vuruş 4: glomerüler birikim/hasar) bu başlangıç molekülü üzerine inşa edilir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Vuruş 4 glomerüler birikim/hasar aşamasıdır, Gd-IgA1 üretimini değil sonucunu tanımlar.",
-        "B": "DOGRU — Gd-IgA1 üretimi = Vuruş 1; mukozal kaynak (GALT/NALT).",
-        "C": "YANLIS — Otoantikor gelişimi Vuruş 2'dir ve Gd-IgA1'e karşı gelişir, dalak germinal merkezi spesifik bir kaynak olarak tanımlanmamıştır.",
+        "B": "YANLIS — Otoantikor gelişimi Vuruş 2'dir ve Gd-IgA1'e karşı gelişir, dalak germinal merkezi spesifik bir kaynak olarak tanımlanmamıştır.",
+        "C": "DOGRU — Gd-IgA1 üretimi = Vuruş 1; mukozal kaynak (GALT/NALT).",
         "D": "YANLIS — İmmün kompleks oluşumu Vuruş 3'tür; karaciğer Kupffer hücreleri bu sürecin kaynağı değildir.",
         "E": "YANLIS — Bu bulgu tam olarak dört vuruş hipotezinin ilk ve temel basamağıdır."
       },
@@ -99,20 +99,20 @@
       "metin": "Yirmi iki yaşında erkek hasta, üst solunum yolu enfeksiyonu semptomlarının BAŞLANGICI ile EŞ ZAMANLI olarak (aynı gün) gelişen kola renginde koyu idrar yakınmasıyla başvuruyor. Benzer öykü 8 ay önce de yaşanmış ve kendiliğinde düzelmiş.\n\nBu klinik tablo IgA nefropatisinin hangi karakteristik özelliğiyle uyumludur ve bu özellik onu hangi tanıdan ayırt eder?",
       "secenekler": {
         "A": "Nefrotik sendrom; minimal değişiklik hastalığından ayrılır çünkü ödem yoktur.",
-        "B": "'Sinfarenjitik' makroskopik hematüri; enfeksiyonla EŞ ZAMANLI (gecikmesiz) ortaya çıkması, tipik olarak enfeksiyondan 1-3 hafta SONRA gelişen postenfeksiyöz/poststreptokoksik glomerülonefritten onu ayırt eder.",
+        "B": "Bu tablo yalnızca pediatrik hastalarda görülür, 22 yaşındaki bir hastada IgAN düşünülmemelidir.",
         "C": "Kresentik glomerülonefrit; ANCA ilişkili vaskülitten ayrımı yalnızca biyopsi ile mümkündür, klinik özellik ayırt edici değildir.",
         "D": "Bu tablo IgAN için atipiktir; tekrarlayan makroskopik hematüri IgAN'de görülmez.",
-        "E": "Bu tablo yalnızca pediatrik hastalarda görülür, 22 yaşındaki bir hastada IgAN düşünülmemelidir."
+        "E": "'Sinfarenjitik' makroskopik hematüri; enfeksiyonla EŞ ZAMANLI (gecikmesiz) ortaya çıkması, tipik olarak enfeksiyondan 1-3 hafta SONRA gelişen postenfeksiyöz/poststreptokoksik glomerülonefritten onu ayırt eder."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Sinfarenjitik hematüri = enfeksiyonla EŞ ZAMANLI makroskopik hematüri, IgAN'nin ayırıcı tezahürüdür. Postenfeksiyöz GN'de ise hematüri enfeksiyondan 1-3 hafta SONRA (latent periyot ile) gelişir — bu zamanlama farkı ayırıcı tanıda kritiktir.",
       "aciklama_detay": "IgA nefropatisinin en ayırıcı klinik tezahürlerinden biri, bir üst solunum yolu veya gastrointestinal enfeksiyon sırasında (enfeksiyonla EŞ ZAMANLI, 'synpharyngitic' = 'sin-farenjitik') alevlenen ataklar halindeki makroskopik hematüridir. Bu zamanlama, poststreptokoksik/postenfeksiyöz glomerülonefritten temel ayırıcı özelliktir — postenfeksiyöz GN'de tipik olarak enfeksiyondan 1-3 hafta SONRA (latent bir dönemin ardından, immün kompleks oluşumu için gereken süre) hematüri/nefritik tablo gelişir. Tekrarlayan ataklar (bu vakada 8 ay arayla iki atak) da IgAN ile tipik uyumludur ve genç erişkinlerde sık görülür.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tabloda nefrotik sendrom bulgusu (masif proteinüri, ödem, hipoalbüminemi) tanımlanmamıştır; hematüri ön plandadır.",
-        "B": "DOGRU — Sinfarenjitik hematüri (eş zamanlı) postenfeksiyöz GN'den (gecikmeli, 1-3 hafta sonra) zamanlama ile ayrılır.",
+        "B": "YANLIS — IgAN sıklıkla genç erişkinlerde (2.-3. dekat) görülür; 22 yaş tipik başvuru yaş aralığındadır.",
         "C": "YANLIS — Bu vakada kresentik GN bulgusu (hızlı ilerleyen böbrek yetmezliği) tanımlanmamıştır; klinik tablo basit tekrarlayan hematüri atağıdır.",
         "D": "YANLIS — Tekrarlayan makroskopik hematüri ile alevlenen ataklar tam olarak IgAN'nin karakteristik, sık görülen bir tezahürüdür.",
-        "E": "YANLIS — IgAN sıklıkla genç erişkinlerde (2.-3. dekat) görülür; 22 yaş tipik başvuru yaş aralığındadır."
+        "E": "DOGRU — Sinfarenjitik hematüri (eş zamanlı) postenfeksiyöz GN'den (gecikmeli, 1-3 hafta sonra) zamanlama ile ayrılır."
       },
       "etiketler": [
         "Sinfarenjitik Hematüri",
@@ -129,19 +129,19 @@
       "metin": "IgA nefropatisi tanılı bir hasta, optimize edilmiş RAS blokajı altında 18 aydır takip ediliyor. Zaman ağırlıklı ortalama proteinürisi 0.65 g/gün olarak ölçülüyor — klasik '>1 g/gün yüksek risk' eşiğinin altında. Hekim bu hastanın düşük riskli olduğunu düşünüyor.\n\nGüncel kanıtlara göre bu yaklaşımın sınırlılığı nedir?",
       "secenekler": {
         "A": "Bu yaklaşım doğrudur; 1 g/gün altındaki proteinüri IgAN'de ESKD riskini pratik olarak sıfırlar.",
-        "B": "Optimize RAS blokajına rağmen zaman ağırlıklı proteinürisi 0.44-0.88 g/gün arasında olan hastaların dahi %30'unun 10 yıl içinde ESKD geliştirdiği gösterilmiştir; bu nedenle 1 g/gün eşiği tek başına güvenli bir 'düşük risk' garantisi vermez.",
+        "B": "Bu hastanın gerçek riskini yalnızca Oxford MEST-C skoru belirler, proteinüri düzeyinin hiçbir katkısı yoktur.",
         "C": "Proteinüri düzeyi IgAN'de prognozla hiçbir şekilde ilişkili değildir, tamamen göz ardı edilebilir.",
-        "D": "Bu hastanın gerçek riskini yalnızca Oxford MEST-C skoru belirler, proteinüri düzeyinin hiçbir katkısı yoktur.",
+        "D": "Optimize RAS blokajına rağmen zaman ağırlıklı proteinürisi 0.44-0.88 g/gün arasında olan hastaların dahi %30'unun 10 yıl içinde ESKD geliştirdiği gösterilmiştir; bu nedenle 1 g/gün eşiği tek başına güvenli bir 'düşük risk' garantisi vermez.",
         "E": "0.65 g/gün proteinüri, IIgAN-PT (International IgAN Prediction Tool) hesaplamasına dahil edilmeyen bir parametredir."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Optimize RAS blokajına rağmen 0.44-0.88 g/gün proteinürisi olan hastaların %30'u 10 yılda ESKD geliştirir — 'düşük' görünen proteinüri düzeyleri bile önemli risk taşıyabilir; >1 g/gün eşiğine güvenmek yanıltıcı olabilir.",
       "aciklama_detay": "Geleneksel olarak >1 g/gün proteinüri IgAN'de 'yüksek risk' barajı olarak kabul edilmiştir. Ancak güncel çalışmalar, optimize edilmiş RAS blokajına rağmen zaman ağırlıklı (time-averaged) proteinürisi 0.44 ile 0.88 g/gün arasında değişen — yani klasik eşiğin altında kalan — hastaların dahi %30'unun 10 yıl içinde ESKD geliştirdiğini göstermiştir. Bu bulgu, tek başına 1 g/gün eşiğine dayanan risk stratifikasyonunun yetersiz olduğunu, daha kapsamlı araçların (İIgAN-PT gibi eGFR, yaş, ırk, kan basıncı, proteinüri, RAS inhibitörü kullanımı ve Oxford MEST skorunu birleştiren) kullanılması gerektiğini vurgular. Düşük görünen proteinüri düzeyi yanlış güvenceye yol açmamalıdır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tam tersine, bu düzey proteinüri bile önemli (%30) ESKD riski taşıyabilir; sıfır risk garantisi yoktur.",
-        "B": "DOGRU — 0.44-0.88 g/gün proteinüri bile %30 10 yıllık ESKD riski taşır; eşik-temelli yaklaşım yanıltıcı olabilir.",
+        "B": "YANLIS — MEST-C skoru önemli bir bileşendir ancak tek başına yeterli değildir; proteinüri de İIgAN-PT'ye dahildir.",
         "C": "YANLIS — Proteinüri prognozla güçlü şekilde ilişkilidir; IIgAN-PT'nin bir bileşenidir, göz ardı edilemez.",
-        "D": "YANLIS — MEST-C skoru önemli bir bileşendir ancak tek başına yeterli değildir; proteinüri de İIgAN-PT'ye dahildir.",
+        "D": "DOGRU — 0.44-0.88 g/gün proteinüri bile %30 10 yıllık ESKD riski taşır; eşik-temelli yaklaşım yanıltıcı olabilir.",
         "E": "YANLIS — Proteinüri düzeyi İIgAN-PT hesaplama aracının doğrudan bir bileşenidir."
       },
       "etiketler": [
@@ -158,18 +158,18 @@
       "id": "s6",
       "metin": "IgA nefropatili bir hastada progresyon riskini azaltmak amacıyla RAS blokajına ek tedavi planlanıyor. Non-immünsüpresif bir renal hemodinamik modülatör olan SGLT2 inhibitörü ekleniyor.\n\nSGLT2 inhibitörlerinin IgAN'de progresyon riskini azaltmasının mekanizması ve destekleyici kanıt hangisidir?",
       "secenekler": {
-        "A": "SGLT2 inhibitörleri doğrudan Gd-IgA1 üretimini baskılayarak IgAN'ye özgü immünolojik bir etki gösterir.",
-        "B": "Spesifik olmayan bir mekanizma ile — tübüloglomerüler geri bildirim yoluyla glomerül içi basıncı azaltarak — etki gösterirler; DAPA-CKD ve EMPA-KIDNEY çalışmaları IgAN alt grubunda progresyon riskini anlamlı ölçüde (dapagliflozin için ~%71) azalttığını göstermiştir.",
+        "A": "Spesifik olmayan bir mekanizma ile — tübüloglomerüler geri bildirim yoluyla glomerül içi basıncı azaltarak — etki gösterirler; DAPA-CKD ve EMPA-KIDNEY çalışmaları IgAN alt grubunda progresyon riskini anlamlı ölçüde (dapagliflozin için ~%71) azalttığını göstermiştir.",
+        "B": "SGLT2 inhibitörleri doğrudan Gd-IgA1 üretimini baskılayarak IgAN'ye özgü immünolojik bir etki gösterir.",
         "C": "SGLT2 inhibitörleri yalnızca eşlik eden diyabeti olan IgAN hastalarında etkilidir, diyabetik olmayanlarda fayda gösterilmemiştir.",
         "D": "SGLT2 inhibitörleri kompleman sistemini doğrudan inhibe ederek mesangiyal hasarı önler.",
         "E": "SGLT2 inhibitörlerinin IgAN'de kullanımı deneyseldir; herhangi bir randomize kontrollü çalışma verisi yoktur."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "SGLT2 inhibitörleri IgAN'ye özgü olmayan bir mekanizmayla (tübüloglomerüler geri bildirim → glomerül içi basınç azalması) etki gösterir. DAPA-CKD ve EMPA-KIDNEY, IgAN alt grubunda anlamlı progresyon azalması (dapagliflozin ~%71) göstermiştir.",
       "aciklama_detay": "SGLT2 inhibitörleri (dapagliflozin, empagliflozin), IgAN patogenezine özgü immünolojik bir mekanizma yerine, tüm proteinürik kronik böbrek hastalıklarında ortak olan spesifik olmayan bir hemodinamik mekanizma ile etki gösterir: tübüloglomerüler geri bildirimin (TGF) restorasyonu yoluyla glomerül içi (intraglomerüler) basıncı azaltırlar. Bu, hiperfiltrasyona bağlı ilerleyici nefron kaybını yavaşlatır. DAPA-CKD ve EMPA-KIDNEY çalışmaları, diyabetik olsun olmasın çeşitli proteinürik KBH etiyolojilerini (IgAN dahil) kapsamış ve IgAN alt grubunda progresyon riskini (dapagliflozin için yaklaşık %71 ve empagliflozin için de anlamlı oranda) azalttığını göstermiştir. Bu nedenle KDIGO kılavuzları SGLT2 inhibitörlerini RAS blokajına ek non-immünsüpresif temel tedavi olarak önerir.",
       "secenekAciklamalari": {
-        "A": "YANLIS — SGLT2 inhibitörlerinin Gd-IgA1 üretimini baskıladığına dair bir mekanizma tanımlanmamıştır; etki hemodinamiktir.",
-        "B": "DOGRU — Hemodinamik (TGF restorasyonu) mekanizma; DAPA-CKD/EMPA-KIDNEY IgAN alt grup verisi.",
+        "A": "DOGRU — Hemodinamik (TGF restorasyonu) mekanizma; DAPA-CKD/EMPA-KIDNEY IgAN alt grup verisi.",
+        "B": "YANLIS — SGLT2 inhibitörlerinin Gd-IgA1 üretimini baskıladığına dair bir mekanizma tanımlanmamıştır; etki hemodinamiktir.",
         "C": "YANLIS — Fayda diyabetik olmayan proteinürik KBH hastalarında da (IgAN dahil) gösterilmiştir; diyabetle sınırlı değildir.",
         "D": "YANLIS — Kompleman inhibisyonu SGLT2 inhibitörlerinin mekanizması değildir; bu, İptacopan/Avacopan gibi ayrı bir ajan sınıfının etki mekanizmasıdır.",
         "E": "YANLIS — DAPA-CKD ve EMPA-KIDNEY, IgAN alt grubu dahil randomize kontrollü çalışma verisi sunmuştur; deneysel değildir."
@@ -219,18 +219,18 @@
       "metin": "IgA nefropatili bir hasta, FDA onaylı ilk spesifik IgAN ajanı olan Hedefe Yönelik Salınımlı (TRF) Budesonid (Nefecon) ile tedavi ediliyor.\n\nBu ilacın etki mekanizması ve NefIgArd çalışmasının temel bulgusu hangisidir?",
       "secenekler": {
         "A": "TRF-Budesonid sistemik dolaşıma yüksek oranda geçerek glomerüler inflamasyonu doğrudan baskılar; NefIgArd'da yalnızca tedavi sırasında etkili olup ilaç kesildiğinde etkisi hemen kaybolmuştur.",
-        "B": "TRF-Budesonid, distal ileumdaki Peyer plaklarında bulunan patojenik B hücrelerini lokal olarak baskılayarak Vuruş 1'e (Gd-IgA1 üretimine) müdahale eder; NefIgArd çalışmasında 9 aylık tedavi sonrası 15 aylık ilaçsız izlemde dahi plaseboya kıyasla eGFR korunması gösterilmiştir.",
-        "C": "TRF-Budesonid'in etki mekanizması Vuruş 4'e (glomerüler birikime) yöneliktir; doğrudan mesangiyal hücreleri hedefler.",
+        "B": "TRF-Budesonid'in etki mekanizması Vuruş 4'e (glomerüler birikime) yöneliktir; doğrudan mesangiyal hücreleri hedefler.",
+        "C": "TRF-Budesonid, distal ileumdaki Peyer plaklarında bulunan patojenik B hücrelerini lokal olarak baskılayarak Vuruş 1'e (Gd-IgA1 üretimine) müdahale eder; NefIgArd çalışmasında 9 aylık tedavi sonrası 15 aylık ilaçsız izlemde dahi plaseboya kıyasla eGFR korunması gösterilmiştir.",
         "D": "TRF-Budesonid, aktif karaciğer ilk geçiş metabolizması olmadığı için sistemik glukokortikoidlerle aynı yan etki profiline sahiptir.",
         "E": "NefIgArd çalışması TRF-Budesonid'in plaseboya üstünlüğünü gösterememiştir; bu nedenle FDA onayı almamıştır."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "TRF-Budesonid, ileal Peyer plaklarındaki B hücrelerini lokal baskılayarak Vuruş 1'i (Gd-IgA1 üretimini) hedefler. NefIgArd: 9 ay tedavi + 15 ay ilaçsız izlemde dahi eGFR korunması sürdü (+5.05 mL/dk/1.73m² fark) — kalıcı etki.",
       "aciklama_detay": "TRF-Budesonid (Nefecon), patogenezin 1. Vuruşuna (Hit 1 — patojenik Gd-IgA1 üretimi) müdahale etmek üzere tasarlanmış hedefe yönelik salınımlı bir formülasyondur; distal ileumdaki Peyer plaklarında yoğunlaşan patojenik B hücrelerini lokal olarak baskılayarak Gd-IgA1 seviyesini düşürür. NefIgArd çalışmasında, 9 aylık tedavinin ardından 15 aylık ilaçsız izlem döneminde DAHİ plaseboya kıyasla eGFR korunması sürdürülmüştür (+5.05 mL/dk/1.73 m² fark) — bu, ilacın yalnızca semptomatik değil, hastalığın kök nedenine (mukozal Gd-IgA1 üretimi) kalıcı bir etki gösterdiğini destekler. Özellikle aktif karaciğer ilk geçiş (first-pass) metabolizması sayesinde ilaç büyük ölçüde lokal etki gösterir ve sistemik glukokortikoid yan etkilerinden büyük ölçüde kaçınılır — bu, FDA onayının önemli bir gerekçesidir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tam tersine, ilk geçiş metabolizması sistemik maruziyeti AZALTIR (lokal etki); ve etkisi ilaç kesildikten sonra da (15 ay) sürmüştür.",
-        "B": "DOGRU — Lokal ileal B hücre baskısı → Vuruş 1 hedeflemesi; NefIgArd'da ilaçsız izlemde dahi eGFR korunması sürdü.",
-        "C": "YANLIS — Mekanizma Vuruş 1'e (mukozal IgA üretimine) yöneliktir, Vuruş 4'e (glomerüler birikime) değil; mesangiyal hücreleri doğrudan hedeflemez.",
+        "B": "YANLIS — Mekanizma Vuruş 1'e (mukozal IgA üretimine) yöneliktir, Vuruş 4'e (glomerüler birikime) değil; mesangiyal hücreleri doğrudan hedeflemez.",
+        "C": "DOGRU — Lokal ileal B hücre baskısı → Vuruş 1 hedeflemesi; NefIgArd'da ilaçsız izlemde dahi eGFR korunması sürdü.",
         "D": "YANLIS— Aktif ilk geçiş metabolizması SİSTEMİK glukokortikoid yan etkilerinden KAÇINILMASINI sağlar, aynı profili taşımaz.",
         "E": "YANLIS — NefIgArd, TRF-Budesonid'in plaseboya üstünlüğünü açıkça göstermiştir; bu FDA onayının temelidir."
       },
@@ -333,7 +333,7 @@
     },
     {
       "id": "s12",
-      "metin": "Persistent persistan mikroskopik hematüri ve 1.8 g/gün proteinürisi bulunan 30 yaşındaki kadın hastaya yapılan böbrek biyopsisinde ışık mikroskopisinde şu bulgular saptanmıştır:\n• Glomerüllerin %65'inde mesangiyal matriks ve hücre artışı (mesangiyal alanda >4 hücre/alan).\n• Glomerüler kapiller lümenlerde endokapillar tıkanmaya yol açan hücresel proliferasyon (3 glomerülde).\n• Glomerüler yumağın %30'unu tutan segmental skleroz ve Bowman kapsülüne yapışıklık.\n• Tübüler atrofi ve interstisyel fibrozis alanı korteksin %15'ini kapsamaktadır.\n• Biyopsi kesitlerindeki glomerüllerin %30'unda hücresel/fibroselüler kresent (yarımay) izlenmiştir.\n\nHastanın Oxford MEST-C skorlaması ve lezyonların prognostik değerleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "metin": "Persistan mikroskopik hematüri ve 1.8 g/gün proteinürisi bulunan 30 yaşındaki kadın hastaya yapılan böbrek biyopsisinde ışık mikroskopisinde şu bulgular saptanmıştır:\n• Glomerüllerin %65'inde mesangiyal matriks ve hücre artışı (mesangiyal alanda >4 hücre/alan).\n• Glomerüler kapiller lümenlerde endokapillar tıkanmaya yol açan hücresel proliferasyon (3 glomerülde).\n• Glomerüler yumağın %30'unu tutan segmental skleroz ve Bowman kapsülüne yapışıklık.\n• Tübüler atrofi ve interstisyel fibrozis alanı korteksin %15'ini kapsamaktadır.\n• Biyopsi kesitlerindeki glomerüllerin %30'unda hücresel/fibroselüler kresent (yarımay) izlenmiştir.\n\nHastanın Oxford MEST-C skorlaması ve lezyonların prognostik değerleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Hastanın MEST-C skoru M1, E1, S1, T0, C2 olarak derecelendirilir ve T skoru (Tübülointerstisyel fibrozis) renal kitle kaybını ve SDBY gidişatını öngörmede çoklu değişkenli analizlerde en güçlü ve tutarlı bağımsız faktördür.",
         "B": "E1 (Endokapiller proliferasyon) varlığı, immünsüpresif tedavi alsa da almasa da böbrek yetmezliğine gidişte her koşulda T skoru kadar geri dönüşsüz kronik skarı temsil eder.",
@@ -374,7 +374,7 @@
       "secenekAciklamalari": {
         "A": "YANLIS — Eski anlayışta >1 g/gün proteinüri sınır kabul edilse de, güncel kohort verileri zaman ağırlıklı proteinürisi 0.44-0.88 g/gün olan hastaların dahi %30'unun 10 yıl içinde ESKD'ye ilerlediğini göstermiştir. 1.6 g/gün proteinüri yüksek riskli kabul edilir ve ek tedavi gerektirir.",
         "B": "YANLIS — Siklofosfamid ve plazmaferez kombinasyonu rutin IgAN'de kullanılmaz; yalnızca Rapidly Progressive Glomerulonephritis (RPGN / Kresentik IgAN) gibi kriz tablolarında tipleşir.",
-        "C": "YANLIS — TESTING çalışmasının ilk evresinde yüksek doz metilprednizolon (0.8 mg/kg/gün) verilmiş ancak ciddi enfeksiyonlar (Pnömosistis jirovecii dâhil) ve ölümler nedeniyle çalışma durdurulmuştur. Çalışmanın ikinci evresinde azaltılmış doz steroid (0.4 mg/kg/gün) ile birlikte mütlaka P. jirovecii profilaksisi (Ko-trimoksazol) verilerek güvenlilik sağlanabilmiştir. Profilaksisiz yüksek doz steroid vermek malpraktis düzeyinde tehlikelidir.",
+        "C": "YANLIS — TESTING çalışmasının ilk evresinde yüksek doz metilprednizolon (0.8 mg/kg/gün) verilmiş ancak ciddi enfeksiyonlar (Pnömosistis jirovecii dâhil) ve ölümler nedeniyle çalışma durdurulmuştur. Çalışmanın ikinci evresinde azaltılmış doz steroid (0.4 mg/kg/gün) ile birlikte mutlaka P. jirovecii profilaksisi (Ko-trimoksazol) verilerek güvenlilik sağlanabilmiştir. Profilaksisiz yüksek doz steroid vermek malpraktis düzeyinde tehlikelidir.",
         "D": "DOGRU — Optimal destekleyici bakıma rağmen (3-6 ay süresince) proteinürisi >0.75 - 1 g/gün seyreden ve eGFR kaybı riski taşıyan hastalarda hedefe yönelik spesifik tedaviler indikasyon alır.",
         "E": "YANLIS — SGLT2 inhibitörleri (DAPA-CKD IgAN alt grubunda) renal kompozit sonlanım riskini %71 oranında azaltmıştır. Ayrıca Rituksimab (anti-CD20), IgAN'de yapılan randomize kontrollü çalışmada (Lafayette et al.) proteinüri ve eGFR üzerinde hiçbir fayda sağlamamıştır (B hücreleri tükenirken plazma hücreleri Gd-IgA1 üretmeye devam eder)."
       },
@@ -402,7 +402,7 @@
         "A": "YANLIS — Transplantasyon sonrası histolojik rekürrens %50-60 gibi oldukça yüksek oranlarda görülür. Uzun dönem takip verilerine (örneğin TANGO kohortu) göre rekürren IgAN, 10-15 yıllık süreçte greft kayıplarının %7-10 veya daha fazlasından sorumludur ve benign bir tablo değildir.",
         "B": "YANLIS — Rekürren IgAN tanısının altın standardı transplant böbrek biyopsisidir. İdrarda hematüri saptanması tek başına yeterli değildir; cerrahi, ürolojik nedenler veya rejeksiyonlar da hematüri yapabileceği için ayırıcı tanı için biyopsi şarttır.",
         "C": "YANLIS — Akraba vericilerden yapılan nakillerde ve özellikle 0 HLA mismatch olan durumlarda rekürrens riski azalmaz, aksine bazı serilerde artmış veya benzer bulunmuştur. Bunun nedeni alıcı ile verici arasındaki ortak genetik yatkınlık ve immünolojik moleküler benzerliklerdir. Canlı akraba nakli kontrendike değildir ancak rekürrens açısından yakından izlenmelidir.",
-        "D": "YANLIS — Nükle edilmiş veya güncellenmiş Oxford MEST-C sınıflandırması transplant böbrek biyopsilerinde de geçerlidir; yüksek M, S, T ve C skorları greft kaybı ve progresyon ile güçlü şekilde koreledir.",
+        "D": "YANLIS — Güncellenmiş Oxford MEST-C sınıflandırması transplant böbrek biyopsilerinde de geçerlidir; yüksek M, S, T ve C skorları greft kaybı ve progresyon ile güçlü şekilde koreledir.",
         "E": "DOGRU — Çalışmalar (örneğin Berthoux ve ark.), nakil öncesinde veya transplantasyon anında alıcının serumunda ölçülen Gd-IgA1-spesifik IgG otoantikor düzeylerinin yüksek olmasının, transplant böbrekte IgAN rekürrensi gelişme riskini yaklaşık 3 kat artırdığını (RR: 2.96) göstermiştir."
       },
       "etiketler": [
